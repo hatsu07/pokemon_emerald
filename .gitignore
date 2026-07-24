@@ -32,7 +32,8 @@ build/
 *.ddump
 .idea/
 porymap.project.cfg
-.vscode/
+.vscode/*
+!.vscode/settings.json
 .ropeproject/
 .ccls-cache/
 __pycache__/

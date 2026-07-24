@@ -1,0 +1,9 @@
+{
+  "git.autoRepositoryDetection": "openEditors",
+  "git.repositoryScanMaxDepth": 0,
+  "git.ignoredRepositories": [
+    "agbcc",
+    "PokeEm-expansion-CanuseJP",
+    "pokeemerald"
+  ]
+}
