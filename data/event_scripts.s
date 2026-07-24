@@ -820,38 +820,7 @@ gUnknown_8277048: @ 0x8277048
 gUnknown_8277071: @ 0x8277071
 	.incbin "baserom_jp.gba", 0x277071, 0x24
 
-	.globl gUnknown_8277095
-gUnknown_8277095: @ 0x8277095
-	.incbin "baserom_jp.gba", 0x277095, 0x6d
-
-	.globl gUnknown_8277102
-gUnknown_8277102: @ 0x8277102
-	.incbin "baserom_jp.gba", 0x277102, 0xf2
-
-	.globl gUnknown_82771F4
-gUnknown_82771F4: @ 0x82771F4
-	.incbin "baserom_jp.gba", 0x2771f4, 0xc
-
-	.globl gUnknown_8277200
-gUnknown_8277200: @ 0x8277200
-	.incbin "baserom_jp.gba", 0x277200, 0x13
-
-	.globl gUnknown_8277213
-gUnknown_8277213: @ 0x8277213
-	.incbin "baserom_jp.gba", 0x277213, 0x11
-
-	.globl gUnknown_8277224
-gUnknown_8277224: @ 0x8277224
-	.incbin "baserom_jp.gba", 0x277224, 0x9
-
-	.globl gUnknown_827722D
-gUnknown_827722D: @ 0x827722D
-	.incbin "baserom_jp.gba", 0x27722d, 0x38
-
-	.globl gUnknown_8277265
-gUnknown_8277265: @ 0x8277265
-	.incbin "baserom_jp.gba", 0x277265, 0x8b
-
+	.include "data/text/birch_speech.inc"
 	.globl gUnknown_82772F0
 gUnknown_82772F0: @ 0x82772F0
 	.incbin "baserom_jp.gba", 0x2772f0, 0x8

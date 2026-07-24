@@ -3,6 +3,7 @@ LD := tools/binutils/bin/arm-none-eabi-ld
 OBJCOPY := tools/binutils/bin/arm-none-eabi-objcopy
 SHA1SUM := sha1sum -c
 GBAFIX := tools/gbafix/gbafix
+PREPROC := tools/preproc/preproc
 
 ASFLAGS := -mcpu=arm7tdmi
 
@@ -31,5 +32,11 @@ $(ELF): %.elf: $(OBJFILE) ld_script_jp.txt
 	$(LD) -T ld_script_jp.txt -Map $*.map -o $@ $(OBJFILE) -L tools/agbcc/lib -lgcc -lc
 	$(GBAFIX) -t"$(TITLE)" -c$(GAMECODE) -m01 --silent $@
 
-$(OBJFILE): %.o: %.s
+# data/*.s は .string / charmap.txt を preproc 経由でアセンブル
+data/%.o: data/%.s charmap.txt
+	$(PREPROC) $< charmap.txt | $(AS) $(ASFLAGS) -o $@ -
+
+data/event_scripts.o: data/text/birch_speech.inc
+
+asm/%.o: asm/%.s
 	$(AS) $(ASFLAGS) -o $@ $<

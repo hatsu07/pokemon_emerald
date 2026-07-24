@@ -2349,7 +2349,7 @@ _080306F6:
 	.align 2, 0
 _080306FC: .4byte 0x082D2910
 _08030700: .4byte 0x02021C7C
-_08030704: .4byte 0x08277095
+_08030704: .4byte gText_Birch_Welcome
 _08030708: .4byte 0x0803070D
 	thumb_func_end Task_NewGameBirchSpeech_WaitForSpriteFadeInWelcome
 
@@ -2424,7 +2424,7 @@ _08030798:
 	bx r0
 	.align 2, 0
 _080307A0: .4byte 0x02021C7C
-_080307A4: .4byte 0x08277102
+_080307A4: .4byte gText_Birch_MainSpeech
 _080307A8: .4byte 0x03005B60
 _080307AC: .4byte 0x0803090D
 	thumb_func_end Task_NewGameBirchSpeech_MainSpeech
@@ -2636,7 +2636,7 @@ _0803093E:
 	.align 2, 0
 _08030944: .4byte 0x020229B8
 _08030948: .4byte 0x02021C7C
-_0803094C: .4byte 0x082771F4
+_0803094C: .4byte gText_Birch_AndYouAre
 _08030950: .4byte 0x03005B60
 _08030954: .4byte 0x08030959
 	thumb_func_end Task_NewGameBirchSpeech_AndYouAre
@@ -2890,7 +2890,7 @@ Task_NewGameBirchSpeech_BoyOrGirl: @ 0x08030B08
 	bx r0
 	.align 2, 0
 _08030B38: .4byte 0x02021C7C
-_08030B3C: .4byte 0x08277200
+_08030B3C: .4byte gText_Birch_BoyOrGirl
 _08030B40: .4byte 0x03005B60
 _08030B44: .4byte 0x08030B49
 	thumb_func_end Task_NewGameBirchSpeech_BoyOrGirl
@@ -3159,7 +3159,7 @@ Task_NewGameBirchSpeech_WhatsYourName: @ 0x08030D14
 	bx r0
 	.align 2, 0
 _08030D44: .4byte 0x02021C7C
-_08030D48: .4byte 0x08277213
+_08030D48: .4byte gText_Birch_WhatsYourName
 _08030D4C: .4byte 0x03005B60
 _08030D50: .4byte 0x08030D55
 	thumb_func_end Task_NewGameBirchSpeech_WhatsYourName
@@ -3309,7 +3309,7 @@ Task_NewGameBirchSpeech_SoItsPlayerName: @ 0x08030E44
 	bx r0
 	.align 2, 0
 _08030E74: .4byte 0x02021C7C
-_08030E78: .4byte 0x08277224
+_08030E78: .4byte gText_Birch_SoItsPlayer
 _08030E7C: .4byte 0x03005B60
 _08030E80: .4byte 0x08030E85
 	thumb_func_end Task_NewGameBirchSpeech_SoItsPlayerName
@@ -3563,7 +3563,7 @@ _08031060:
 _08031068: .4byte 0x03005B60
 _0803106C: .4byte 0x020205AC
 _08031070: .4byte 0x02021C7C
-_08031074: .4byte 0x0827722D
+_08031074: .4byte gText_Birch_YourePlayer
 _08031078: .4byte 0x0803107D
 	thumb_func_end Task_NewGameBirchSpeech_ReshowBirchLotad
 
@@ -3757,7 +3757,7 @@ _080311F0:
 	bx r0
 	.align 2, 0
 _080311F8: .4byte 0x02021C7C
-_080311FC: .4byte 0x08277265
+_080311FC: .4byte gText_Birch_AreYouReady
 _08031200: .4byte 0x08031205
 	thumb_func_end Task_NewGameBirchSpeech_AreYouReady
 
