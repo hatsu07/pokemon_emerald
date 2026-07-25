@@ -18,6 +18,10 @@
 |---|---|
 | [docs/hacking.md](docs/hacking.md) | **ハック方法・ファイル対応表**（どれを直すと何が変わるか） |
 | [docs/text_editing.md](docs/text_editing.md) | 日本語セリフ（`.string`）の編集手順 |
+| [docs/text_extraction_guide.md](docs/text_extraction_guide.md) | **テキスト抽出ガイド**（自動化ツール使用方法） |
+| [docs/rom_structure.md](docs/rom_structure.md) | **ROM構造ドキュメント**（incbinブロック一覧・テキスト化候補） |
+| [docs/font_graphics.md](docs/font_graphics.md) | **フォント・グラフィック解析**（文字コード・フォントデータ） |
+| [docs/event_scripts.md](docs/event_scripts.md) | **イベント・スクリプト仕様**（コマンド一覧・変数・フラグ） |
 | [INSTALL.md](INSTALL.md) | ビルド環境（上流ドキュメント由来） |
 
 ---
@@ -91,12 +95,15 @@
 - [x] `.string` ビルド連携（`tools/preproc` + `Makefile`）
 - [x] オダマキ博士オープニングセリフのテキスト化（`data/text/birch_speech.inc`）
 - [x] セリフ参照のシンボル化（`asm/main_menu.s` → `gText_Birch_*`）
+- [x] ミシロタウンNPC 3件のテキスト化（`data/text/littleroot_town.inc`）
+- [x] オダマキ研究所テキスト 25件のテキスト化（`data/text/birch_lab.inc`）
+- [x] テキスト分離後の Matching 確認（`make compare`）
 - [x] ハックガイド作成（[docs/hacking.md](docs/hacking.md)）
 - [x] テキスト編集ドキュメント（[docs/text_editing.md](docs/text_editing.md)）
-- [ ] その他セリフ・名前テーブルのテキスト化
-- [ ] ROM構造の網羅的ドキュメント
-- [ ] フォント・グラフィック解析
-- [ ] イベント・スクリプト仕様の整理
+- [ ] その他セリフ・名前テーブルのテキスト化（候補一覧は [docs/rom_structure.md](docs/rom_structure.md#今後のテキスト化候補) 参照）
+- [x] ROM構造の網羅的ドキュメント（[docs/rom_structure.md](docs/rom_structure.md)）
+- [x] フォント・グラフィック解析（[docs/font_graphics.md](docs/font_graphics.md)）
+- [x] イベント・スクリプト仕様の整理（[docs/event_scripts.md](docs/event_scripts.md)）
 
 ### Phase 3 - Modding
 
@@ -104,11 +111,13 @@
 - [ ] マップ / イベント追加基盤
 - [ ] ポケモン・技・アイテム等のデータ編集基盤
 
-**最新更新**: 2026-07-24
+**最新更新**: 2026-07-25
 
 - Phase 1 (Matching) 完了
 - SHA-1: `d7cf8f156ba9c455d164e1ea780a6bf1945465c2`（オリジナルと一致）
-- Phase 2: オダマキOPセリフを `.string` 化。最初のセリフは `data/text/birch_speech.inc` の `gText_Birch_Welcome`
+- Phase 2: オダマキOP・ミシロタウンNPC 3件・オダマキ研究所テキスト 25件を `.string` 化
+- テキスト分離後も `make compare` で Matching を確認済み
+- `data/text/*.inc` の変更時に `data/event_scripts.o` が再ビルドされる
 - ハック手順は [docs/hacking.md](docs/hacking.md) に集約
 
 ---
@@ -116,7 +125,7 @@
 ## ビルド（要約）
 
 ```sh
-# 日本版ROMを baserom_jp.gba として配置したうえで
+# 日本版ROMを baserom.gba として配置したうえで
 make -j$(nproc)
 ```
 

@@ -13,13 +13,17 @@
 |---|---|---|
 | `gText_Birch_Welcome` | `data/text/birch_speech.inc` | オダマキ博士・最初のあいさつ |
 | `gText_Birch_MainSpeech` ほか | 同上 | オープニング一連のセリフ |
+| `gText_LittlerootTown_*` | `data/text/littleroot_town.inc` | ミシロタウンのNPC 3人 |
+| `gText_BirchLab_Aide_*` | `data/text/birch_lab.inc` | オダマキ研究所の助手セリフ（25件） |
+| `gText_BirchLab_Birch_*` | 同上 | オダマキ研究所の博士セリフ |
+| `gText_BirchLab_May_*` / `gText_BirchLab_Brendan_*` | 同上 | オダマキ研究所のライバルセリフ |
+| `gText_BirchLab_*` (環境テキスト) | 同上 | 研究所の機器・本棚の説明 |
 
 ## 例: 最初のセリフ
 
 ```asm
 gText_Birch_Welcome::
-	.string "さあ　ぼうけんの　じかん！\pポケットモンスターの　せかいへ\nようこそ！\p..."
-	.space 1 @ Welcome 枠は 86 バイト。短い分をパディング
+	.string "いやー　おまたせ　おまたせ！\pポケットモンスターの　せかいへ\nようこそ！\p..."
 ```
 
 オリジナル冒頭は `いやー　おまたせ　おまたせ！` です。
@@ -44,7 +48,6 @@ gText_Birch_Welcome::
 | ラベル | 枠サイズ |
 |---|---|
 | `gText_Birch_Welcome` | 86 バイト |
-| `gText_Birch_Pokemon` | 23 バイト |
 | `gText_Birch_MainSpeech` | 0xF2 バイト |
 | `gText_Birch_AndYouAre` | 0xC バイト |
 | `gText_Birch_BoyOrGirl` | 0x13 バイト |
@@ -63,6 +66,23 @@ gText_Birch_Welcome::
 tools/preproc/preproc /tmp/test.s charmap.txt | grep -o '0x[0-9A-Fa-f]\+' | wc -l
 ```
 
+## 共通の追加方法
+
+他のテキストも同じ流れで追加できます。
+
+```asm
+	.globl gText_Example
+gText_Example::
+	.string "ここは新しいテキストです。$"
+	.space 0x40 - (. - gText_Example)
+```
+
+- `gText_Example` がシンボル名
+- `0x40` が元データの占有サイズ
+- `"..."` が表示文
+
+サイズが足りない場合は `.space` で埋めます。長い文は別途再配置が必要です。
+
 ## ビルド
 
 ```sh
@@ -70,4 +90,18 @@ make -j$(nproc)
 ```
 
 `data/*.s` は Makefile により preproc 経由でアセンブルされます。  
-`birch_speech.inc` を変えたあとは `data/event_scripts.o` が再ビルドされます。
+`data/text/*.inc` を変えたあとは `data/event_scripts.o` が再ビルドされます。
+
+## 検証済みの状態
+
+現在のテキスト分離後のROMは、`make compare` でオリジナルROMとのSHA-1一致を確認済みです。
+
+### テキスト化済みファイル一覧
+
+| ファイル | テキスト数 | 内容 |
+|---|---|---|
+| `data/text/birch_speech.inc` | 8件 | オダマキ博士オープニング |
+| `data/text/littleroot_town.inc` | 3件 | ミシロタウンNPC |
+| `data/text/birch_lab.inc` | 25件 | オダマキ研究所（助手・博士・ライバル・環境） |
+
+新しいテキストを追加する手順は [text_extraction_guide.md](text_extraction_guide.md) を参照してください。

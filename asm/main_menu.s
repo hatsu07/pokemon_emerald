@@ -6075,4 +6075,3 @@ _080324DC:
 _080324E4: .4byte 0x03005B60
 _080324E8: .4byte 0x08030E45
 	thumb_func_end Task_NewGameBirchSpeech_ReturnFromNamingScreenShowTextbox
-
