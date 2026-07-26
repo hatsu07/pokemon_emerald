@@ -18,6 +18,115 @@ if TABLE_SIZE % ENTRY_SIZE:
 
 NUM_SPECIES = TABLE_SIZE // ENTRY_SIZE
 
+TYPE_NAMES = {
+    0: "TYPE_NORMAL",
+    1: "TYPE_FIGHTING",
+    2: "TYPE_FLYING",
+    3: "TYPE_POISON",
+    4: "TYPE_GROUND",
+    5: "TYPE_ROCK",
+    6: "TYPE_BUG",
+    7: "TYPE_GHOST",
+    8: "TYPE_STEEL",
+    9: "TYPE_MYSTERY",
+    10: "TYPE_FIRE",
+    11: "TYPE_WATER",
+    12: "TYPE_GRASS",
+    13: "TYPE_ELECTRIC",
+    14: "TYPE_PSYCHIC",
+    15: "TYPE_ICE",
+    16: "TYPE_DRAGON",
+    17: "TYPE_DARK",
+}
+
+GENDER_RATIO_NAMES = {
+    0x00: "GENDER_MALE_ONLY",
+    0x1F: "GENDER_FEMALE_12_5",
+    0x3F: "GENDER_FEMALE_25",
+    0x7F: "GENDER_FEMALE_50",
+    0xBF: "GENDER_FEMALE_75",
+    0xDF: "GENDER_FEMALE_87_5",
+    0xFE: "GENDER_FEMALE_ONLY",
+    0xFF: "GENDERLESS",
+}
+
+GROWTH_RATE_NAMES = {
+    0: "GROWTH_MEDIUM_FAST",
+    1: "GROWTH_ERRATIC",
+    2: "GROWTH_FLUCTUATING",
+    3: "GROWTH_MEDIUM_SLOW",
+    4: "GROWTH_FAST",
+    5: "GROWTH_SLOW",
+}
+
+EGG_GROUP_NAMES = {
+    0: "EGG_GROUP_NONE",
+    1: "EGG_GROUP_MONSTER",
+    2: "EGG_GROUP_WATER_1",
+    3: "EGG_GROUP_BUG",
+    4: "EGG_GROUP_FLYING",
+    5: "EGG_GROUP_FIELD",
+    6: "EGG_GROUP_FAIRY",
+    7: "EGG_GROUP_GRASS",
+    8: "EGG_GROUP_HUMAN_LIKE",
+    9: "EGG_GROUP_WATER_3",
+    10: "EGG_GROUP_MINERAL",
+    11: "EGG_GROUP_AMORPHOUS",
+    12: "EGG_GROUP_WATER_2",
+    13: "EGG_GROUP_DITTO",
+    14: "EGG_GROUP_DRAGON",
+    15: "EGG_GROUP_UNDISCOVERED",
+}
+
+ABILITY_NAMES = {
+    0: "ABILITY_NONE", 1: "ABILITY_STENCH", 2: "ABILITY_DRIZZLE",
+    3: "ABILITY_SPEED_BOOST", 4: "ABILITY_BATTLE_ARMOR",
+    5: "ABILITY_STURDY", 6: "ABILITY_DAMP", 7: "ABILITY_LIMBER",
+    8: "ABILITY_SAND_VEIL", 9: "ABILITY_STATIC",
+    10: "ABILITY_VOLT_ABSORB", 11: "ABILITY_WATER_ABSORB",
+    12: "ABILITY_OBLIVIOUS", 13: "ABILITY_CLOUD_NINE",
+    14: "ABILITY_COMPOUND_EYES", 15: "ABILITY_INSOMNIA",
+    16: "ABILITY_COLOR_CHANGE", 17: "ABILITY_IMMUNITY",
+    18: "ABILITY_FLASH_FIRE", 19: "ABILITY_SHIELD_DUST",
+    20: "ABILITY_OWN_TEMPO", 21: "ABILITY_SUCTION_CUPS",
+    22: "ABILITY_INTIMIDATE", 23: "ABILITY_SHADOW_TAG",
+    24: "ABILITY_ROUGH_SKIN", 25: "ABILITY_WONDER_GUARD",
+    26: "ABILITY_LEVITATE", 27: "ABILITY_EFFECT_SPORE",
+    28: "ABILITY_SYNCHRONIZE", 29: "ABILITY_CLEAR_BODY",
+    30: "ABILITY_NATURAL_CURE", 31: "ABILITY_LIGHTNING_ROD",
+    32: "ABILITY_SERENE_GRACE", 33: "ABILITY_SWIFT_SWIM",
+    34: "ABILITY_CHLOROPHYLL", 35: "ABILITY_ILLUMINATE",
+    36: "ABILITY_TRACE", 37: "ABILITY_HUGE_POWER",
+    38: "ABILITY_POISON_POINT", 39: "ABILITY_INNER_FOCUS",
+    40: "ABILITY_MAGMA_ARMOR", 41: "ABILITY_WATER_VEIL",
+    42: "ABILITY_MAGNET_PULL", 43: "ABILITY_SOUNDPROOF",
+    44: "ABILITY_RAIN_DISH", 45: "ABILITY_SAND_STREAM",
+    46: "ABILITY_PRESSURE", 47: "ABILITY_THICK_FAT",
+    48: "ABILITY_EARLY_BIRD", 49: "ABILITY_FLAME_BODY",
+    50: "ABILITY_RUN_AWAY", 51: "ABILITY_KEEN_EYE",
+    52: "ABILITY_HYPER_CUTTER", 53: "ABILITY_PICKUP",
+    54: "ABILITY_TRUANT", 55: "ABILITY_HUSTLE",
+    56: "ABILITY_CUTE_CHARM", 57: "ABILITY_PLUS",
+    58: "ABILITY_MINUS", 59: "ABILITY_FORECAST",
+    60: "ABILITY_STICKY_HOLD", 61: "ABILITY_SHED_SKIN",
+    62: "ABILITY_GUTS", 63: "ABILITY_MARVEL_SCALE",
+    64: "ABILITY_LIQUID_OOZE", 65: "ABILITY_OVERGROW",
+    66: "ABILITY_BLAZE", 67: "ABILITY_TORRENT",
+    68: "ABILITY_SWARM", 69: "ABILITY_ROCK_HEAD",
+    70: "ABILITY_DROUGHT", 71: "ABILITY_ARENA_TRAP",
+    72: "ABILITY_VITAL_SPIRIT", 73: "ABILITY_WHITE_SMOKE",
+    74: "ABILITY_PURE_POWER", 75: "ABILITY_SHELL_ARMOR",
+    76: "ABILITY_CACOPHONY", 77: "ABILITY_AIR_LOCK",
+}
+
+BODY_COLOR_NAMES = {
+    0: "BODY_COLOR_RED", 1: "BODY_COLOR_BLUE",
+    2: "BODY_COLOR_YELLOW", 3: "BODY_COLOR_GREEN",
+    4: "BODY_COLOR_BLACK", 5: "BODY_COLOR_BROWN",
+    6: "BODY_COLOR_PURPLE", 7: "BODY_COLOR_GRAY",
+    8: "BODY_COLOR_WHITE", 9: "BODY_COLOR_PINK",
+}
+
 
 def read_u16(data: bytes, offset: int) -> int:
     return int.from_bytes(data[offset:offset + 2], "little")
@@ -59,21 +168,40 @@ def _load_species_file(path: Path, names: dict[int, str], *, override: bool) -> 
 def load_species_names(root: Path) -> dict[int, str]:
     names: dict[int, str] = {}
     _load_species_file(root / "constants/species_constants.inc", names, override=False)
-    _load_species_file(root / "constants/species_rom_order.inc", names, override=True)
     return names
+
+
+def format_enum(value: int, names: dict[int, str], width: int = 2) -> str:
+    return names.get(value, f"0x{value:0{width}X}")
+
+
+def format_body_color(value: int) -> str:
+    color = value & 0x7F
+    name = BODY_COLOR_NAMES.get(color)
+    if name is None:
+        return f"0x{value:02X}"
+    if value & 0x80:
+        return f"{name}_FLIP"
+    return name
 
 
 def format_entry(label: str, e: dict[str, int | bytes]) -> str:
     values = [
         str(e["hp"]), str(e["attack"]), str(e["defense"]), str(e["speed"]),
-        str(e["sp_attack"]), str(e["sp_defense"]), f"0x{e['type1']:02X}",
-        f"0x{e['type2']:02X}", str(e["catch_rate"]), str(e["base_exp"]),
+        str(e["sp_attack"]), str(e["sp_defense"]),
+        format_enum(int(e["type1"]), TYPE_NAMES),
+        format_enum(int(e["type2"]), TYPE_NAMES),
+        str(e["catch_rate"]), str(e["base_exp"]),
         f"0x{e['ev_yield']:04X}", f"0x{e['item1']:04X}", f"0x{e['item2']:04X}",
-        f"0x{e['gender_ratio']:02X}", str(e["egg_cycles"]),
-        str(e["base_friendship"]), f"0x{e['growth_rate']:02X}",
-        f"0x{e['egg_group1']:02X}", f"0x{e['egg_group2']:02X}",
-        f"0x{e['ability1']:02X}", f"0x{e['ability2']:02X}",
-        f"0x{e['safari_flee_rate']:02X}", f"0x{e['body_color_and_flip']:02X}",
+        format_enum(int(e["gender_ratio"]), GENDER_RATIO_NAMES),
+        str(e["egg_cycles"]), str(e["base_friendship"]),
+        format_enum(int(e["growth_rate"]), GROWTH_RATE_NAMES),
+        format_enum(int(e["egg_group1"]), EGG_GROUP_NAMES),
+        format_enum(int(e["egg_group2"]), EGG_GROUP_NAMES),
+        format_enum(int(e["ability1"]), ABILITY_NAMES),
+        format_enum(int(e["ability2"]), ABILITY_NAMES),
+        str(e["safari_flee_rate"]),
+        format_body_color(int(e["body_color_and_flip"])),
     ]
     return f"\tbase_stats {label}, " + ", ".join(values)
 
@@ -82,7 +210,19 @@ def generate_inc(rom_data: bytes, species_names: dict[int, str]) -> str:
     table = rom_data[TABLE_ROM_OFFSET:TABLE_ROM_END_OFFSET]
     if len(table) != TABLE_SIZE:
         raise ValueError(f"ROM is too short: got {len(table)} table bytes")
-    lines = [".globl gUnknown_82F0D54", "gUnknown_82F0D54: @ 0x082F0D54", ""]
+    lines = [
+        "@ Generated by tools/extract_base_stats.py. Do not edit by hand.",
+        "@ Fields: HP, Atk, Def, Speed, SpAtk, SpDef, Type1, Type2,",
+        "@ CatchRate, BaseExp, EVYield, Item1, Item2, Gender, EggCycles,",
+        "@ Friendship, GrowthRate, EggGroup1, EggGroup2, Ability1, Ability2,",
+        "@ SafariFleeRate, BodyColorAndFlip",
+        '.include "constants/type_constants.inc"',
+        '.include "constants/base_stats_constants.inc"',
+        "",
+        ".globl gUnknown_82F0D54",
+        "gUnknown_82F0D54: @ 0x082F0D54",
+        "",
+    ]
     for species_id in range(NUM_SPECIES):
         start = species_id * ENTRY_SIZE
         entry = parse_entry(table[start:start + ENTRY_SIZE], species_id)
