@@ -2,4266 +2,4268 @@
 @ Fields: Effect, Power, Type, Accuracy, PP, SecondaryEffectChance,
 @ Target, Priority, Flags, Padding[3]
 .include "constants/type_constants.inc"
+.include "constants/battle_move_effect_constants.inc"
+.include "constants/battle_move_constants.inc"
 
 .globl gBattleMoves
 gBattleMoves: @ 0x082ED220
 
 	@ MOVE_NONE
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 0
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_POUND
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 40
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 35
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_KARATE_CHOP
-	.byte 0x2B
+	.byte EFFECT_HIGH_CRITICAL
 	.byte 50
 	.byte TYPE_FIGHTING
 	.byte 100
 	.byte 25
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DOUBLE_SLAP
-	.byte 0x1D
+	.byte EFFECT_MULTI_HIT
 	.byte 15
 	.byte TYPE_NORMAL
 	.byte 85
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_COMET_PUNCH
-	.byte 0x1D
+	.byte EFFECT_MULTI_HIT
 	.byte 18
 	.byte TYPE_NORMAL
 	.byte 85
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MEGA_PUNCH
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 80
 	.byte TYPE_NORMAL
 	.byte 85
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_PAY_DAY
-	.byte 0x22
+	.byte EFFECT_PAY_DAY
 	.byte 40
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FIRE_PUNCH
-	.byte 0x04
+	.byte EFFECT_BURN_HIT
 	.byte 75
 	.byte TYPE_FIRE
 	.byte 100
 	.byte 15
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ICE_PUNCH
-	.byte 0x05
+	.byte EFFECT_FREEZE_HIT
 	.byte 75
 	.byte TYPE_ICE
 	.byte 100
 	.byte 15
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_THUNDER_PUNCH
-	.byte 0x06
+	.byte EFFECT_PARALYZE_HIT
 	.byte 75
 	.byte TYPE_ELECTRIC
 	.byte 100
 	.byte 15
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SCRATCH
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 40
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 35
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_VICE_GRIP
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 55
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 30
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_GUILLOTINE
-	.byte 0x26
+	.byte EFFECT_OHKO
 	.byte 1
 	.byte TYPE_NORMAL
 	.byte 30
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_RAZOR_WIND
-	.byte 0x27
+	.byte EFFECT_RAZOR_WIND
 	.byte 80
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SWORDS_DANCE
-	.byte 0x32
+	.byte EFFECT_ATTACK_UP_2
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 30
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CUT
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 50
 	.byte TYPE_NORMAL
 	.byte 95
 	.byte 30
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_GUST
-	.byte 0x95
+	.byte EFFECT_GUST
 	.byte 40
 	.byte TYPE_FLYING
 	.byte 100
 	.byte 35
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_WING_ATTACK
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 60
 	.byte TYPE_FLYING
 	.byte 100
 	.byte 35
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_WHIRLWIND
-	.byte 0x1C
+	.byte EFFECT_ROAR
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte -6
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FLY
-	.byte 0x9B
+	.byte EFFECT_SEMI_INVULNERABLE
 	.byte 70
 	.byte TYPE_FLYING
 	.byte 95
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BIND
-	.byte 0x2A
+	.byte EFFECT_TRAP
 	.byte 15
 	.byte TYPE_NORMAL
 	.byte 75
 	.byte 20
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SLAM
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 80
 	.byte TYPE_NORMAL
 	.byte 75
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_VINE_WHIP
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 35
 	.byte TYPE_GRASS
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_STOMP
-	.byte 0x96
+	.byte EFFECT_FLINCH_MINIMIZE_HIT
 	.byte 65
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DOUBLE_KICK
-	.byte 0x2C
+	.byte EFFECT_DOUBLE_HIT
 	.byte 30
 	.byte TYPE_FIGHTING
 	.byte 100
 	.byte 30
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MEGA_KICK
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 120
 	.byte TYPE_NORMAL
 	.byte 75
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_JUMP_KICK
-	.byte 0x2D
+	.byte EFFECT_RECOIL_IF_MISS
 	.byte 70
 	.byte TYPE_FIGHTING
 	.byte 95
 	.byte 25
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ROLLING_KICK
-	.byte 0x1F
+	.byte EFFECT_FLINCH_HIT
 	.byte 60
 	.byte TYPE_FIGHTING
 	.byte 85
 	.byte 15
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SAND_ATTACK
-	.byte 0x17
+	.byte EFFECT_ACCURACY_DOWN
 	.byte 0
 	.byte TYPE_GROUND
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HEADBUTT
-	.byte 0x1F
+	.byte EFFECT_FLINCH_HIT
 	.byte 70
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 15
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HORN_ATTACK
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 65
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 25
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FURY_ATTACK
-	.byte 0x1D
+	.byte EFFECT_MULTI_HIT
 	.byte 15
 	.byte TYPE_NORMAL
 	.byte 85
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HORN_DRILL
-	.byte 0x26
+	.byte EFFECT_OHKO
 	.byte 1
 	.byte TYPE_NORMAL
 	.byte 30
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TACKLE
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 35
 	.byte TYPE_NORMAL
 	.byte 95
 	.byte 35
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BODY_SLAM
-	.byte 0x06
+	.byte EFFECT_PARALYZE_HIT
 	.byte 85
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 15
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_WRAP
-	.byte 0x2A
+	.byte EFFECT_TRAP
 	.byte 15
 	.byte TYPE_NORMAL
 	.byte 85
 	.byte 20
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TAKE_DOWN
-	.byte 0x30
+	.byte EFFECT_RECOIL
 	.byte 90
 	.byte TYPE_NORMAL
 	.byte 85
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_THRASH
-	.byte 0x1B
+	.byte EFFECT_RAMPAGE
 	.byte 90
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 100
-	.byte 0x04
+	.byte MOVE_TARGET_RANDOM
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DOUBLE_EDGE
-	.byte 0xC6
+	.byte EFFECT_DOUBLE_EDGE
 	.byte 120
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TAIL_WHIP
-	.byte 0x13
+	.byte EFFECT_DEFENSE_DOWN
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 30
 	.byte 0
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_POISON_STING
-	.byte 0x02
+	.byte EFFECT_POISON_HIT
 	.byte 15
 	.byte TYPE_POISON
 	.byte 100
 	.byte 35
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TWINEEDLE
-	.byte 0x4D
+	.byte EFFECT_TWINEEDLE
 	.byte 25
 	.byte TYPE_BUG
 	.byte 100
 	.byte 20
 	.byte 20
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_PIN_MISSILE
-	.byte 0x1D
+	.byte EFFECT_MULTI_HIT
 	.byte 14
 	.byte TYPE_BUG
 	.byte 85
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_LEER
-	.byte 0x13
+	.byte EFFECT_DEFENSE_DOWN
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 30
 	.byte 0
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BITE
-	.byte 0x1F
+	.byte EFFECT_FLINCH_HIT
 	.byte 60
 	.byte TYPE_DARK
 	.byte 100
 	.byte 25
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_GROWL
-	.byte 0x12
+	.byte EFFECT_ATTACK_DOWN
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 40
 	.byte 0
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ROAR
-	.byte 0x1C
+	.byte EFFECT_ROAR
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte -6
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SING
-	.byte 0x01
+	.byte EFFECT_SLEEP
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 55
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SUPERSONIC
-	.byte 0x31
+	.byte EFFECT_CONFUSE
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 55
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SONIC_BOOM
-	.byte 0x82
+	.byte EFFECT_SONICBOOM
 	.byte 1
 	.byte TYPE_NORMAL
 	.byte 90
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DISABLE
-	.byte 0x56
+	.byte EFFECT_DISABLE
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 55
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ACID
-	.byte 0x45
+	.byte EFFECT_DEFENSE_DOWN_HIT
 	.byte 40
 	.byte TYPE_POISON
 	.byte 100
 	.byte 30
 	.byte 10
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_EMBER
-	.byte 0x04
+	.byte EFFECT_BURN_HIT
 	.byte 40
 	.byte TYPE_FIRE
 	.byte 100
 	.byte 25
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FLAMETHROWER
-	.byte 0x04
+	.byte EFFECT_BURN_HIT
 	.byte 95
 	.byte TYPE_FIRE
 	.byte 100
 	.byte 15
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MIST
-	.byte 0x2E
+	.byte EFFECT_MIST
 	.byte 0
 	.byte TYPE_ICE
 	.byte 0
 	.byte 30
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_WATER_GUN
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 40
 	.byte TYPE_WATER
 	.byte 100
 	.byte 25
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HYDRO_PUMP
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 120
 	.byte TYPE_WATER
 	.byte 80
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SURF
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 95
 	.byte TYPE_WATER
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ICE_BEAM
-	.byte 0x05
+	.byte EFFECT_FREEZE_HIT
 	.byte 95
 	.byte TYPE_ICE
 	.byte 100
 	.byte 10
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BLIZZARD
-	.byte 0x05
+	.byte EFFECT_FREEZE_HIT
 	.byte 120
 	.byte TYPE_ICE
 	.byte 70
 	.byte 5
 	.byte 10
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_PSYBEAM
-	.byte 0x4C
+	.byte EFFECT_CONFUSE_HIT
 	.byte 65
 	.byte TYPE_PSYCHIC
 	.byte 100
 	.byte 20
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BUBBLE_BEAM
-	.byte 0x46
+	.byte EFFECT_SPEED_DOWN_HIT
 	.byte 65
 	.byte TYPE_WATER
 	.byte 100
 	.byte 20
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_AURORA_BEAM
-	.byte 0x44
+	.byte EFFECT_ATTACK_DOWN_HIT
 	.byte 65
 	.byte TYPE_ICE
 	.byte 100
 	.byte 20
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HYPER_BEAM
-	.byte 0x50
+	.byte EFFECT_RECHARGE
 	.byte 150
 	.byte TYPE_NORMAL
 	.byte 90
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_PECK
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 35
 	.byte TYPE_FLYING
 	.byte 100
 	.byte 35
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DRILL_PECK
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 80
 	.byte TYPE_FLYING
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SUBMISSION
-	.byte 0x30
+	.byte EFFECT_RECOIL
 	.byte 80
 	.byte TYPE_FIGHTING
 	.byte 80
 	.byte 25
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_LOW_KICK
-	.byte 0xC4
+	.byte EFFECT_LOW_KICK
 	.byte 1
 	.byte TYPE_FIGHTING
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_COUNTER
-	.byte 0x59
+	.byte EFFECT_COUNTER
 	.byte 1
 	.byte TYPE_FIGHTING
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x01
+	.byte MOVE_TARGET_DEPENDS
 	.byte -5
-	.byte 0x11
+	.byte FLAG_MAKES_CONTACT | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SEISMIC_TOSS
-	.byte 0x57
+	.byte EFFECT_LEVEL_DAMAGE
 	.byte 1
 	.byte TYPE_FIGHTING
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_STRENGTH
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 80
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ABSORB
-	.byte 0x03
+	.byte EFFECT_ABSORB
 	.byte 20
 	.byte TYPE_GRASS
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MEGA_DRAIN
-	.byte 0x03
+	.byte EFFECT_ABSORB
 	.byte 40
 	.byte TYPE_GRASS
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_LEECH_SEED
-	.byte 0x54
+	.byte EFFECT_LEECH_SEED
 	.byte 0
 	.byte TYPE_GRASS
 	.byte 90
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_GROWTH
-	.byte 0x0D
+	.byte EFFECT_SPECIAL_ATTACK_UP
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 40
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_RAZOR_LEAF
-	.byte 0x2B
+	.byte EFFECT_HIGH_CRITICAL
 	.byte 55
 	.byte TYPE_GRASS
 	.byte 95
 	.byte 25
 	.byte 0
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SOLAR_BEAM
-	.byte 0x97
+	.byte EFFECT_SOLAR_BEAM
 	.byte 120
 	.byte TYPE_GRASS
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_POISON_POWDER
-	.byte 0x42
+	.byte EFFECT_POISON
 	.byte 0
 	.byte TYPE_POISON
 	.byte 75
 	.byte 35
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_STUN_SPORE
-	.byte 0x43
+	.byte EFFECT_PARALYZE
 	.byte 0
 	.byte TYPE_GRASS
 	.byte 75
 	.byte 30
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SLEEP_POWDER
-	.byte 0x01
+	.byte EFFECT_SLEEP
 	.byte 0
 	.byte TYPE_GRASS
 	.byte 75
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_PETAL_DANCE
-	.byte 0x1B
+	.byte EFFECT_RAMPAGE
 	.byte 70
 	.byte TYPE_GRASS
 	.byte 100
 	.byte 20
 	.byte 100
-	.byte 0x04
+	.byte MOVE_TARGET_RANDOM
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_STRING_SHOT
-	.byte 0x14
+	.byte EFFECT_SPEED_DOWN
 	.byte 0
 	.byte TYPE_BUG
 	.byte 95
 	.byte 40
 	.byte 0
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DRAGON_RAGE
-	.byte 0x29
+	.byte EFFECT_DRAGON_RAGE
 	.byte 1
 	.byte TYPE_DRAGON
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FIRE_SPIN
-	.byte 0x2A
+	.byte EFFECT_TRAP
 	.byte 15
 	.byte TYPE_FIRE
 	.byte 70
 	.byte 15
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_THUNDER_SHOCK
-	.byte 0x06
+	.byte EFFECT_PARALYZE_HIT
 	.byte 40
 	.byte TYPE_ELECTRIC
 	.byte 100
 	.byte 30
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_THUNDERBOLT
-	.byte 0x06
+	.byte EFFECT_PARALYZE_HIT
 	.byte 95
 	.byte TYPE_ELECTRIC
 	.byte 100
 	.byte 15
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_THUNDER_WAVE
-	.byte 0x43
+	.byte EFFECT_PARALYZE
 	.byte 0
 	.byte TYPE_ELECTRIC
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_THUNDER
-	.byte 0x98
+	.byte EFFECT_THUNDER
 	.byte 120
 	.byte TYPE_ELECTRIC
 	.byte 70
 	.byte 10
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ROCK_THROW
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 50
 	.byte TYPE_ROCK
 	.byte 90
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_EARTHQUAKE
-	.byte 0x93
+	.byte EFFECT_EARTHQUAKE
 	.byte 100
 	.byte TYPE_GROUND
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x20
+	.byte MOVE_TARGET_FOES_AND_ALLY
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FISSURE
-	.byte 0x26
+	.byte EFFECT_OHKO
 	.byte 1
 	.byte TYPE_GROUND
 	.byte 30
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DIG
-	.byte 0x9B
+	.byte EFFECT_SEMI_INVULNERABLE
 	.byte 60
 	.byte TYPE_GROUND
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TOXIC
-	.byte 0x21
+	.byte EFFECT_TOXIC
 	.byte 0
 	.byte TYPE_POISON
 	.byte 85
 	.byte 10
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CONFUSION
-	.byte 0x4C
+	.byte EFFECT_CONFUSE_HIT
 	.byte 50
 	.byte TYPE_PSYCHIC
 	.byte 100
 	.byte 25
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_PSYCHIC
-	.byte 0x48
+	.byte EFFECT_SPECIAL_DEFENSE_DOWN_HIT
 	.byte 90
 	.byte TYPE_PSYCHIC
 	.byte 100
 	.byte 10
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HYPNOSIS
-	.byte 0x01
+	.byte EFFECT_SLEEP
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 60
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MEDITATE
-	.byte 0x0A
+	.byte EFFECT_ATTACK_UP
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 0
 	.byte 40
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_AGILITY
-	.byte 0x34
+	.byte EFFECT_SPEED_UP_2
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 0
 	.byte 30
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_QUICK_ATTACK
-	.byte 0x67
+	.byte EFFECT_QUICK_ATTACK
 	.byte 40
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 30
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 1
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_RAGE
-	.byte 0x51
+	.byte EFFECT_RAGE
 	.byte 20
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TELEPORT
-	.byte 0x99
+	.byte EFFECT_TELEPORT
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_NIGHT_SHADE
-	.byte 0x57
+	.byte EFFECT_LEVEL_DAMAGE
 	.byte 1
 	.byte TYPE_GHOST
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MIMIC
-	.byte 0x52
+	.byte EFFECT_MIMIC
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x02
+	.byte FLAG_PROTECT_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SCREECH
-	.byte 0x3B
+	.byte EFFECT_DEFENSE_DOWN_2
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 85
 	.byte 40
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DOUBLE_TEAM
-	.byte 0x10
+	.byte EFFECT_EVASION_UP
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 15
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_RECOVER
-	.byte 0x20
+	.byte EFFECT_RESTORE_HP
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HARDEN
-	.byte 0x0B
+	.byte EFFECT_DEFENSE_UP
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 30
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MINIMIZE
-	.byte 0x6C
+	.byte EFFECT_MINIMIZE
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SMOKESCREEN
-	.byte 0x17
+	.byte EFFECT_ACCURACY_DOWN
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CONFUSE_RAY
-	.byte 0x31
+	.byte EFFECT_CONFUSE
 	.byte 0
 	.byte TYPE_GHOST
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_WITHDRAW
-	.byte 0x0B
+	.byte EFFECT_DEFENSE_UP
 	.byte 0
 	.byte TYPE_WATER
 	.byte 0
 	.byte 40
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DEFENSE_CURL
-	.byte 0x9C
+	.byte EFFECT_DEFENSE_CURL
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 40
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BARRIER
-	.byte 0x33
+	.byte EFFECT_DEFENSE_UP_2
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 0
 	.byte 30
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_LIGHT_SCREEN
-	.byte 0x23
+	.byte EFFECT_LIGHT_SCREEN
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 0
 	.byte 30
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HAZE
-	.byte 0x19
+	.byte EFFECT_HAZE
 	.byte 0
 	.byte TYPE_ICE
 	.byte 0
 	.byte 30
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x02
+	.byte FLAG_PROTECT_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_REFLECT
-	.byte 0x41
+	.byte EFFECT_REFLECT
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FOCUS_ENERGY
-	.byte 0x2F
+	.byte EFFECT_FOCUS_ENERGY
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 30
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BIDE
-	.byte 0x1A
+	.byte EFFECT_BIDE
 	.byte 1
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x23
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_METRONOME
-	.byte 0x53
+	.byte EFFECT_METRONOME
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 10
 	.byte 0
-	.byte 0x01
+	.byte MOVE_TARGET_DEPENDS
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MIRROR_MOVE
-	.byte 0x09
+	.byte EFFECT_MIRROR_MOVE
 	.byte 0
 	.byte TYPE_FLYING
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x01
+	.byte MOVE_TARGET_DEPENDS
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SELF_DESTRUCT
-	.byte 0x07
+	.byte EFFECT_EXPLOSION
 	.byte 200
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 5
 	.byte 0
-	.byte 0x20
+	.byte MOVE_TARGET_FOES_AND_ALLY
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_EGG_BOMB
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 100
 	.byte TYPE_NORMAL
 	.byte 75
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_LICK
-	.byte 0x06
+	.byte EFFECT_PARALYZE_HIT
 	.byte 20
 	.byte TYPE_GHOST
 	.byte 100
 	.byte 30
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SMOG
-	.byte 0x02
+	.byte EFFECT_POISON_HIT
 	.byte 20
 	.byte TYPE_POISON
 	.byte 70
 	.byte 20
 	.byte 40
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SLUDGE
-	.byte 0x02
+	.byte EFFECT_POISON_HIT
 	.byte 65
 	.byte TYPE_POISON
 	.byte 100
 	.byte 20
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BONE_CLUB
-	.byte 0x1F
+	.byte EFFECT_FLINCH_HIT
 	.byte 65
 	.byte TYPE_GROUND
 	.byte 85
 	.byte 20
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FIRE_BLAST
-	.byte 0x04
+	.byte EFFECT_BURN_HIT
 	.byte 120
 	.byte TYPE_FIRE
 	.byte 85
 	.byte 5
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_WATERFALL
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 80
 	.byte TYPE_WATER
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CLAMP
-	.byte 0x2A
+	.byte EFFECT_TRAP
 	.byte 35
 	.byte TYPE_WATER
 	.byte 75
 	.byte 10
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SWIFT
-	.byte 0x11
+	.byte EFFECT_ALWAYS_HIT
 	.byte 60
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SKULL_BASH
-	.byte 0x91
+	.byte EFFECT_SKULL_BASH
 	.byte 100
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SPIKE_CANNON
-	.byte 0x1D
+	.byte EFFECT_MULTI_HIT
 	.byte 20
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CONSTRICT
-	.byte 0x46
+	.byte EFFECT_SPEED_DOWN_HIT
 	.byte 10
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 35
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_AMNESIA
-	.byte 0x36
+	.byte EFFECT_SPECIAL_DEFENSE_UP_2
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_KINESIS
-	.byte 0x17
+	.byte EFFECT_ACCURACY_DOWN
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 80
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SOFT_BOILED
-	.byte 0x9D
+	.byte EFFECT_SOFTBOILED
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x18
+	.byte FLAG_SNATCH_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HI_JUMP_KICK
-	.byte 0x2D
+	.byte EFFECT_RECOIL_IF_MISS
 	.byte 85
 	.byte TYPE_FIGHTING
 	.byte 90
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_GLARE
-	.byte 0x43
+	.byte EFFECT_PARALYZE
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 75
 	.byte 30
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DREAM_EATER
-	.byte 0x08
+	.byte EFFECT_DREAM_EATER
 	.byte 100
 	.byte TYPE_PSYCHIC
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_POISON_GAS
-	.byte 0x42
+	.byte EFFECT_POISON
 	.byte 0
 	.byte TYPE_POISON
 	.byte 55
 	.byte 40
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BARRAGE
-	.byte 0x1D
+	.byte EFFECT_MULTI_HIT
 	.byte 15
 	.byte TYPE_NORMAL
 	.byte 85
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_LEECH_LIFE
-	.byte 0x03
+	.byte EFFECT_ABSORB
 	.byte 20
 	.byte TYPE_BUG
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_LOVELY_KISS
-	.byte 0x01
+	.byte EFFECT_SLEEP
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 75
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SKY_ATTACK
-	.byte 0x4B
+	.byte EFFECT_SKY_ATTACK
 	.byte 140
 	.byte TYPE_FLYING
 	.byte 90
 	.byte 5
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TRANSFORM
-	.byte 0x39
+	.byte EFFECT_TRANSFORM
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BUBBLE
-	.byte 0x46
+	.byte EFFECT_SPEED_DOWN_HIT
 	.byte 20
 	.byte TYPE_WATER
 	.byte 100
 	.byte 30
 	.byte 10
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DIZZY_PUNCH
-	.byte 0x4C
+	.byte EFFECT_CONFUSE_HIT
 	.byte 70
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 20
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SPORE
-	.byte 0x01
+	.byte EFFECT_SLEEP
 	.byte 0
 	.byte TYPE_GRASS
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FLASH
-	.byte 0x17
+	.byte EFFECT_ACCURACY_DOWN
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 70
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_PSYWAVE
-	.byte 0x58
+	.byte EFFECT_PSYWAVE
 	.byte 1
 	.byte TYPE_PSYCHIC
 	.byte 80
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SPLASH
-	.byte 0x55
+	.byte EFFECT_SPLASH
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 40
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ACID_ARMOR
-	.byte 0x33
+	.byte EFFECT_DEFENSE_UP_2
 	.byte 0
 	.byte TYPE_POISON
 	.byte 0
 	.byte 40
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CRABHAMMER
-	.byte 0x2B
+	.byte EFFECT_HIGH_CRITICAL
 	.byte 90
 	.byte TYPE_WATER
 	.byte 85
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_EXPLOSION
-	.byte 0x07
+	.byte EFFECT_EXPLOSION
 	.byte 250
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 5
 	.byte 0
-	.byte 0x20
+	.byte MOVE_TARGET_FOES_AND_ALLY
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FURY_SWIPES
-	.byte 0x1D
+	.byte EFFECT_MULTI_HIT
 	.byte 18
 	.byte TYPE_NORMAL
 	.byte 80
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BONEMERANG
-	.byte 0x2C
+	.byte EFFECT_DOUBLE_HIT
 	.byte 50
 	.byte TYPE_GROUND
 	.byte 90
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_REST
-	.byte 0x25
+	.byte EFFECT_REST
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 0
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ROCK_SLIDE
-	.byte 0x1F
+	.byte EFFECT_FLINCH_HIT
 	.byte 75
 	.byte TYPE_ROCK
 	.byte 90
 	.byte 10
 	.byte 30
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HYPER_FANG
-	.byte 0x1F
+	.byte EFFECT_FLINCH_HIT
 	.byte 80
 	.byte TYPE_NORMAL
 	.byte 90
 	.byte 15
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SHARPEN
-	.byte 0x0A
+	.byte EFFECT_ATTACK_UP
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 30
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CONVERSION
-	.byte 0x1E
+	.byte EFFECT_CONVERSION
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 30
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TRI_ATTACK
-	.byte 0x24
+	.byte EFFECT_TRI_ATTACK
 	.byte 80
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 20
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SUPER_FANG
-	.byte 0x28
+	.byte EFFECT_SUPER_FANG
 	.byte 1
 	.byte TYPE_NORMAL
 	.byte 90
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SLASH
-	.byte 0x2B
+	.byte EFFECT_HIGH_CRITICAL
 	.byte 70
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SUBSTITUTE
-	.byte 0x4F
+	.byte EFFECT_SUBSTITUTE
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_STRUGGLE
-	.byte 0x30
+	.byte EFFECT_RECOIL
 	.byte 50
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 1
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SKETCH
-	.byte 0x5F
+	.byte EFFECT_SKETCH
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 1
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TRIPLE_KICK
-	.byte 0x68
+	.byte EFFECT_TRIPLE_KICK
 	.byte 10
 	.byte TYPE_FIGHTING
 	.byte 90
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_THIEF
-	.byte 0x69
+	.byte EFFECT_THIEF
 	.byte 40
 	.byte TYPE_DARK
 	.byte 100
 	.byte 10
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SPIDER_WEB
-	.byte 0x6A
+	.byte EFFECT_MEAN_LOOK
 	.byte 0
 	.byte TYPE_BUG
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MIND_READER
-	.byte 0x5E
+	.byte EFFECT_LOCK_ON
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_NIGHTMARE
-	.byte 0x6B
+	.byte EFFECT_NIGHTMARE
 	.byte 0
 	.byte TYPE_GHOST
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FLAME_WHEEL
-	.byte 0x7D
+	.byte EFFECT_THAW_HIT
 	.byte 60
 	.byte TYPE_FIRE
 	.byte 100
 	.byte 25
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SNORE
-	.byte 0x5C
+	.byte EFFECT_SNORE
 	.byte 40
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 15
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CURSE
-	.byte 0x6D
+	.byte EFFECT_CURSE
 	.byte 0
 	.byte TYPE_MYSTERY
 	.byte 0
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FLAIL
-	.byte 0x63
+	.byte EFFECT_FLAIL
 	.byte 1
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CONVERSION_2
-	.byte 0x5D
+	.byte EFFECT_CONVERSION_2
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 30
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_AEROBLAST
-	.byte 0x2B
+	.byte EFFECT_HIGH_CRITICAL
 	.byte 100
 	.byte TYPE_FLYING
 	.byte 95
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_COTTON_SPORE
-	.byte 0x3C
+	.byte EFFECT_SPEED_DOWN_2
 	.byte 0
 	.byte TYPE_GRASS
 	.byte 85
 	.byte 40
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_REVERSAL
-	.byte 0x63
+	.byte EFFECT_FLAIL
 	.byte 1
 	.byte TYPE_FIGHTING
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SPITE
-	.byte 0x64
+	.byte EFFECT_SPITE
 	.byte 0
 	.byte TYPE_GHOST
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_POWDER_SNOW
-	.byte 0x05
+	.byte EFFECT_FREEZE_HIT
 	.byte 40
 	.byte TYPE_ICE
 	.byte 100
 	.byte 25
 	.byte 10
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_PROTECT
-	.byte 0x6F
+	.byte EFFECT_PROTECT
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 3
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MACH_PUNCH
-	.byte 0x67
+	.byte EFFECT_QUICK_ATTACK
 	.byte 40
 	.byte TYPE_FIGHTING
 	.byte 100
 	.byte 30
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 1
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SCARY_FACE
-	.byte 0x3C
+	.byte EFFECT_SPEED_DOWN_2
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 90
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FAINT_ATTACK
-	.byte 0x11
+	.byte EFFECT_ALWAYS_HIT
 	.byte 60
 	.byte TYPE_DARK
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SWEET_KISS
-	.byte 0x31
+	.byte EFFECT_CONFUSE
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 75
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BELLY_DRUM
-	.byte 0x8E
+	.byte EFFECT_BELLY_DRUM
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SLUDGE_BOMB
-	.byte 0x02
+	.byte EFFECT_POISON_HIT
 	.byte 90
 	.byte TYPE_POISON
 	.byte 100
 	.byte 10
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MUD_SLAP
-	.byte 0x49
+	.byte EFFECT_ACCURACY_DOWN_HIT
 	.byte 20
 	.byte TYPE_GROUND
 	.byte 100
 	.byte 10
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_OCTAZOOKA
-	.byte 0x49
+	.byte EFFECT_ACCURACY_DOWN_HIT
 	.byte 65
 	.byte TYPE_WATER
 	.byte 85
 	.byte 10
 	.byte 50
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SPIKES
-	.byte 0x70
+	.byte EFFECT_SPIKES
 	.byte 0
 	.byte TYPE_GROUND
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x40
+	.byte MOVE_TARGET_OPPONENTS_FIELD
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ZAP_CANNON
-	.byte 0x06
+	.byte EFFECT_PARALYZE_HIT
 	.byte 100
 	.byte TYPE_ELECTRIC
 	.byte 50
 	.byte 5
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FORESIGHT
-	.byte 0x71
+	.byte EFFECT_FORESIGHT
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 40
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DESTINY_BOND
-	.byte 0x62
+	.byte EFFECT_DESTINY_BOND
 	.byte 0
 	.byte TYPE_GHOST
 	.byte 0
 	.byte 5
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_PERISH_SONG
-	.byte 0x72
+	.byte EFFECT_PERISH_SONG
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 5
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ICY_WIND
-	.byte 0x46
+	.byte EFFECT_SPEED_DOWN_HIT
 	.byte 55
 	.byte TYPE_ICE
 	.byte 95
 	.byte 15
 	.byte 100
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DETECT
-	.byte 0x6F
+	.byte EFFECT_PROTECT
 	.byte 0
 	.byte TYPE_FIGHTING
 	.byte 0
 	.byte 5
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 3
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BONE_RUSH
-	.byte 0x1D
+	.byte EFFECT_MULTI_HIT
 	.byte 25
 	.byte TYPE_GROUND
 	.byte 80
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_LOCK_ON
-	.byte 0x5E
+	.byte EFFECT_LOCK_ON
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_OUTRAGE
-	.byte 0x1B
+	.byte EFFECT_RAMPAGE
 	.byte 90
 	.byte TYPE_DRAGON
 	.byte 100
 	.byte 15
 	.byte 100
-	.byte 0x04
+	.byte MOVE_TARGET_RANDOM
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SANDSTORM
-	.byte 0x73
+	.byte EFFECT_SANDSTORM
 	.byte 0
 	.byte TYPE_ROCK
 	.byte 0
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_GIGA_DRAIN
-	.byte 0x03
+	.byte EFFECT_ABSORB
 	.byte 60
 	.byte TYPE_GRASS
 	.byte 100
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ENDURE
-	.byte 0x74
+	.byte EFFECT_ENDURE
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 3
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CHARM
-	.byte 0x3A
+	.byte EFFECT_ATTACK_DOWN_2
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ROLLOUT
-	.byte 0x75
+	.byte EFFECT_ROLLOUT
 	.byte 30
 	.byte TYPE_ROCK
 	.byte 90
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FALSE_SWIPE
-	.byte 0x65
+	.byte EFFECT_FALSE_SWIPE
 	.byte 40
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 40
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SWAGGER
-	.byte 0x76
+	.byte EFFECT_SWAGGER
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 90
 	.byte 15
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MILK_DRINK
-	.byte 0x9D
+	.byte EFFECT_SOFTBOILED
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x0A
+	.byte FLAG_PROTECT_AFFECTED | FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SPARK
-	.byte 0x06
+	.byte EFFECT_PARALYZE_HIT
 	.byte 65
 	.byte TYPE_ELECTRIC
 	.byte 100
 	.byte 20
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FURY_CUTTER
-	.byte 0x77
+	.byte EFFECT_FURY_CUTTER
 	.byte 10
 	.byte TYPE_BUG
 	.byte 95
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_STEEL_WING
-	.byte 0x8A
+	.byte EFFECT_DEFENSE_UP_HIT
 	.byte 70
 	.byte TYPE_STEEL
 	.byte 90
 	.byte 25
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MEAN_LOOK
-	.byte 0x6A
+	.byte EFFECT_MEAN_LOOK
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ATTRACT
-	.byte 0x78
+	.byte EFFECT_ATTRACT
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SLEEP_TALK
-	.byte 0x61
+	.byte EFFECT_SLEEP_TALK
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 10
 	.byte 0
-	.byte 0x01
+	.byte MOVE_TARGET_DEPENDS
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HEAL_BELL
-	.byte 0x66
+	.byte EFFECT_HEAL_BELL
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 5
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_RETURN
-	.byte 0x79
+	.byte EFFECT_RETURN
 	.byte 1
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_PRESENT
-	.byte 0x7A
+	.byte EFFECT_PRESENT
 	.byte 1
 	.byte TYPE_NORMAL
 	.byte 90
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FRUSTRATION
-	.byte 0x7B
+	.byte EFFECT_FRUSTRATION
 	.byte 1
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SAFEGUARD
-	.byte 0x7C
+	.byte EFFECT_SAFEGUARD
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 25
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_PAIN_SPLIT
-	.byte 0x5B
+	.byte EFFECT_PAIN_SPLIT
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SACRED_FIRE
-	.byte 0x7D
+	.byte EFFECT_THAW_HIT
 	.byte 100
 	.byte TYPE_FIRE
 	.byte 95
 	.byte 5
 	.byte 50
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MAGNITUDE
-	.byte 0x7E
+	.byte EFFECT_MAGNITUDE
 	.byte 1
 	.byte TYPE_GROUND
 	.byte 100
 	.byte 30
 	.byte 0
-	.byte 0x20
+	.byte MOVE_TARGET_FOES_AND_ALLY
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DYNAMIC_PUNCH
-	.byte 0x4C
+	.byte EFFECT_CONFUSE_HIT
 	.byte 100
 	.byte TYPE_FIGHTING
 	.byte 50
 	.byte 5
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MEGAHORN
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 120
 	.byte TYPE_BUG
 	.byte 85
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DRAGON_BREATH
-	.byte 0x06
+	.byte EFFECT_PARALYZE_HIT
 	.byte 60
 	.byte TYPE_DRAGON
 	.byte 100
 	.byte 20
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BATON_PASS
-	.byte 0x7F
+	.byte EFFECT_BATON_PASS
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 40
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ENCORE
-	.byte 0x5A
+	.byte EFFECT_ENCORE
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_PURSUIT
-	.byte 0x80
+	.byte EFFECT_PURSUIT
 	.byte 40
 	.byte TYPE_DARK
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_RAPID_SPIN
-	.byte 0x81
+	.byte EFFECT_RAPID_SPIN
 	.byte 20
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 40
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SWEET_SCENT
-	.byte 0x18
+	.byte EFFECT_EVASION_DOWN
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_IRON_TAIL
-	.byte 0x45
+	.byte EFFECT_DEFENSE_DOWN_HIT
 	.byte 100
 	.byte TYPE_STEEL
 	.byte 75
 	.byte 15
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_METAL_CLAW
-	.byte 0x8B
+	.byte EFFECT_ATTACK_UP_HIT
 	.byte 50
 	.byte TYPE_STEEL
 	.byte 95
 	.byte 35
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_VITAL_THROW
-	.byte 0x4E
+	.byte EFFECT_VITAL_THROW
 	.byte 70
 	.byte TYPE_FIGHTING
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte -1
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MORNING_SUN
-	.byte 0x84
+	.byte EFFECT_MORNING_SUN
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 5
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SYNTHESIS
-	.byte 0x85
+	.byte EFFECT_SYNTHESIS
 	.byte 0
 	.byte TYPE_GRASS
 	.byte 0
 	.byte 5
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MOONLIGHT
-	.byte 0x86
+	.byte EFFECT_MOONLIGHT
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 5
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HIDDEN_POWER
-	.byte 0x87
+	.byte EFFECT_HIDDEN_POWER
 	.byte 1
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CROSS_CHOP
-	.byte 0x2B
+	.byte EFFECT_HIGH_CRITICAL
 	.byte 100
 	.byte TYPE_FIGHTING
 	.byte 80
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TWISTER
-	.byte 0x92
+	.byte EFFECT_TWISTER
 	.byte 40
 	.byte TYPE_DRAGON
 	.byte 100
 	.byte 20
 	.byte 20
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_RAIN_DANCE
-	.byte 0x88
+	.byte EFFECT_RAIN_DANCE
 	.byte 0
 	.byte TYPE_WATER
 	.byte 0
 	.byte 5
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SUNNY_DAY
-	.byte 0x89
+	.byte EFFECT_SUNNY_DAY
 	.byte 0
 	.byte TYPE_FIRE
 	.byte 0
 	.byte 5
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CRUNCH
-	.byte 0x48
+	.byte EFFECT_SPECIAL_DEFENSE_DOWN_HIT
 	.byte 80
 	.byte TYPE_DARK
 	.byte 100
 	.byte 15
 	.byte 20
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MIRROR_COAT
-	.byte 0x90
+	.byte EFFECT_MIRROR_COAT
 	.byte 1
 	.byte TYPE_PSYCHIC
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x01
+	.byte MOVE_TARGET_DEPENDS
 	.byte -5
-	.byte 0x10
+	.byte FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_PSYCH_UP
-	.byte 0x8F
+	.byte EFFECT_PSYCH_UP
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_EXTREME_SPEED
-	.byte 0x67
+	.byte EFFECT_QUICK_ATTACK
 	.byte 80
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 1
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ANCIENT_POWER
-	.byte 0x8C
+	.byte EFFECT_ALL_STATS_UP_HIT
 	.byte 60
 	.byte TYPE_ROCK
 	.byte 100
 	.byte 5
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SHADOW_BALL
-	.byte 0x48
+	.byte EFFECT_SPECIAL_DEFENSE_DOWN_HIT
 	.byte 80
 	.byte TYPE_GHOST
 	.byte 100
 	.byte 15
 	.byte 20
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FUTURE_SIGHT
-	.byte 0x94
+	.byte EFFECT_FUTURE_SIGHT
 	.byte 80
 	.byte TYPE_PSYCHIC
 	.byte 90
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ROCK_SMASH
-	.byte 0x45
+	.byte EFFECT_DEFENSE_DOWN_HIT
 	.byte 20
 	.byte TYPE_FIGHTING
 	.byte 100
 	.byte 15
 	.byte 50
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_WHIRLPOOL
-	.byte 0x2A
+	.byte EFFECT_TRAP
 	.byte 15
 	.byte TYPE_WATER
 	.byte 70
 	.byte 15
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BEAT_UP
-	.byte 0x9A
+	.byte EFFECT_BEAT_UP
 	.byte 10
 	.byte TYPE_DARK
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FAKE_OUT
-	.byte 0x9E
+	.byte EFFECT_FAKE_OUT
 	.byte 40
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 1
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_UPROAR
-	.byte 0x9F
+	.byte EFFECT_UPROAR
 	.byte 50
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 100
-	.byte 0x04
+	.byte MOVE_TARGET_RANDOM
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_STOCKPILE
-	.byte 0xA0
+	.byte EFFECT_STOCKPILE
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SPIT_UP
-	.byte 0xA1
+	.byte EFFECT_SPIT_UP
 	.byte 100
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x22
+	.byte FLAG_PROTECT_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SWALLOW
-	.byte 0xA2
+	.byte EFFECT_SWALLOW
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HEAT_WAVE
-	.byte 0x04
+	.byte EFFECT_BURN_HIT
 	.byte 100
 	.byte TYPE_FIRE
 	.byte 90
 	.byte 10
 	.byte 10
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HAIL
-	.byte 0xA4
+	.byte EFFECT_HAIL
 	.byte 0
 	.byte TYPE_ICE
 	.byte 0
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x02
+	.byte FLAG_PROTECT_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TORMENT
-	.byte 0xA5
+	.byte EFFECT_TORMENT
 	.byte 0
 	.byte TYPE_DARK
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FLATTER
-	.byte 0xA6
+	.byte EFFECT_FLATTER
 	.byte 0
 	.byte TYPE_DARK
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_WILL_O_WISP
-	.byte 0xA7
+	.byte EFFECT_WILL_O_WISP
 	.byte 0
 	.byte TYPE_FIRE
 	.byte 75
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MEMENTO
-	.byte 0xA8
+	.byte EFFECT_MEMENTO
 	.byte 0
 	.byte TYPE_DARK
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FACADE
-	.byte 0xA9
+	.byte EFFECT_FACADE
 	.byte 70
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FOCUS_PUNCH
-	.byte 0xAA
+	.byte EFFECT_FOCUS_PUNCH
 	.byte 150
 	.byte TYPE_FIGHTING
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte -3
-	.byte 0x03
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SMELLING_SALT
-	.byte 0xAB
+	.byte EFFECT_SMELLINGSALT
 	.byte 60
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FOLLOW_ME
-	.byte 0xAC
+	.byte EFFECT_FOLLOW_ME
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 3
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_NATURE_POWER
-	.byte 0xAD
+	.byte EFFECT_NATURE_POWER
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 95
 	.byte 20
 	.byte 0
-	.byte 0x01
+	.byte MOVE_TARGET_DEPENDS
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CHARGE
-	.byte 0xAE
+	.byte EFFECT_CHARGE
 	.byte 0
 	.byte TYPE_ELECTRIC
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TAUNT
-	.byte 0xAF
+	.byte EFFECT_TAUNT
 	.byte 0
 	.byte TYPE_DARK
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x02
+	.byte FLAG_PROTECT_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HELPING_HAND
-	.byte 0xB0
+	.byte EFFECT_HELPING_HAND
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 5
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TRICK
-	.byte 0xB1
+	.byte EFFECT_TRICK
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ROLE_PLAY
-	.byte 0xB2
+	.byte EFFECT_ROLE_PLAY
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_WISH
-	.byte 0xB3
+	.byte EFFECT_WISH
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x02
+	.byte FLAG_PROTECT_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ASSIST
-	.byte 0xB4
+	.byte EFFECT_ASSIST
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x01
+	.byte MOVE_TARGET_DEPENDS
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_INGRAIN
-	.byte 0xB5
+	.byte EFFECT_INGRAIN
 	.byte 0
 	.byte TYPE_GRASS
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SUPERPOWER
-	.byte 0xB6
+	.byte EFFECT_SUPERPOWER
 	.byte 120
 	.byte TYPE_FIGHTING
 	.byte 100
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MAGIC_COAT
-	.byte 0xB7
+	.byte EFFECT_MAGIC_COAT
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x01
+	.byte MOVE_TARGET_DEPENDS
 	.byte 4
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_RECYCLE
-	.byte 0xB8
+	.byte EFFECT_RECYCLE
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_REVENGE
-	.byte 0xB9
+	.byte EFFECT_REVENGE
 	.byte 60
 	.byte TYPE_FIGHTING
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte -4
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BRICK_BREAK
-	.byte 0xBA
+	.byte EFFECT_BRICK_BREAK
 	.byte 75
 	.byte TYPE_FIGHTING
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_YAWN
-	.byte 0xBB
+	.byte EFFECT_YAWN
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_KNOCK_OFF
-	.byte 0xBC
+	.byte EFFECT_KNOCK_OFF
 	.byte 20
 	.byte TYPE_DARK
 	.byte 100
 	.byte 20
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ENDEAVOR
-	.byte 0xBD
+	.byte EFFECT_ENDEAVOR
 	.byte 1
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ERUPTION
-	.byte 0xBE
+	.byte EFFECT_ERUPTION
 	.byte 150
 	.byte TYPE_FIRE
 	.byte 100
 	.byte 5
 	.byte 0
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SKILL_SWAP
-	.byte 0xBF
+	.byte EFFECT_SKILL_SWAP
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_IMPRISON
-	.byte 0xC0
+	.byte EFFECT_IMPRISON
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x02
+	.byte FLAG_PROTECT_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_REFRESH
-	.byte 0xC1
+	.byte EFFECT_REFRESH
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_GRUDGE
-	.byte 0xC2
+	.byte EFFECT_GRUDGE
 	.byte 0
 	.byte TYPE_GHOST
 	.byte 100
 	.byte 5
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SNATCH
-	.byte 0xC3
+	.byte EFFECT_SNATCH
 	.byte 0
 	.byte TYPE_DARK
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x01
+	.byte MOVE_TARGET_DEPENDS
 	.byte 4
-	.byte 0x10
+	.byte FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SECRET_POWER
-	.byte 0xC5
+	.byte EFFECT_SECRET_POWER
 	.byte 70
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DIVE
-	.byte 0x9B
+	.byte EFFECT_SEMI_INVULNERABLE
 	.byte 60
 	.byte TYPE_WATER
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ARM_THRUST
-	.byte 0x1D
+	.byte EFFECT_MULTI_HIT
 	.byte 15
 	.byte TYPE_FIGHTING
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CAMOUFLAGE
-	.byte 0xD5
+	.byte EFFECT_CAMOUFLAGE
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TAIL_GLOW
-	.byte 0x35
+	.byte EFFECT_SPECIAL_ATTACK_UP_2
 	.byte 0
 	.byte TYPE_BUG
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_LUSTER_PURGE
-	.byte 0x48
+	.byte EFFECT_SPECIAL_DEFENSE_DOWN_HIT
 	.byte 70
 	.byte TYPE_PSYCHIC
 	.byte 100
 	.byte 5
 	.byte 50
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MIST_BALL
-	.byte 0x47
+	.byte EFFECT_SPECIAL_ATTACK_DOWN_HIT
 	.byte 70
 	.byte TYPE_PSYCHIC
 	.byte 100
 	.byte 5
 	.byte 50
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FEATHER_DANCE
-	.byte 0x3A
+	.byte EFFECT_ATTACK_DOWN_2
 	.byte 0
 	.byte TYPE_FLYING
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TEETER_DANCE
-	.byte 0xC7
+	.byte EFFECT_TEETER_DANCE
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x20
+	.byte MOVE_TARGET_FOES_AND_ALLY
 	.byte 0
-	.byte 0x02
+	.byte FLAG_PROTECT_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BLAZE_KICK
-	.byte 0xC8
+	.byte EFFECT_BLAZE_KICK
 	.byte 85
 	.byte TYPE_FIRE
 	.byte 90
 	.byte 10
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MUD_SPORT
-	.byte 0xC9
+	.byte EFFECT_MUD_SPORT
 	.byte 0
 	.byte TYPE_GROUND
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ICE_BALL
-	.byte 0x75
+	.byte EFFECT_ROLLOUT
 	.byte 30
 	.byte TYPE_ICE
 	.byte 90
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_NEEDLE_ARM
-	.byte 0x96
+	.byte EFFECT_FLINCH_MINIMIZE_HIT
 	.byte 60
 	.byte TYPE_GRASS
 	.byte 100
 	.byte 15
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SLACK_OFF
-	.byte 0x20
+	.byte EFFECT_RESTORE_HP
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HYPER_VOICE
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 90
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_POISON_FANG
-	.byte 0xCA
+	.byte EFFECT_POISON_FANG
 	.byte 50
 	.byte TYPE_POISON
 	.byte 100
 	.byte 15
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CRUSH_CLAW
-	.byte 0x45
+	.byte EFFECT_DEFENSE_DOWN_HIT
 	.byte 75
 	.byte TYPE_NORMAL
 	.byte 95
 	.byte 10
 	.byte 50
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BLAST_BURN
-	.byte 0x50
+	.byte EFFECT_RECHARGE
 	.byte 150
 	.byte TYPE_FIRE
 	.byte 90
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HYDRO_CANNON
-	.byte 0x50
+	.byte EFFECT_RECHARGE
 	.byte 150
 	.byte TYPE_WATER
 	.byte 90
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_METEOR_MASH
-	.byte 0x8B
+	.byte EFFECT_ATTACK_UP_HIT
 	.byte 100
 	.byte TYPE_STEEL
 	.byte 85
 	.byte 10
 	.byte 20
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ASTONISH
-	.byte 0x96
+	.byte EFFECT_FLINCH_MINIMIZE_HIT
 	.byte 30
 	.byte TYPE_GHOST
 	.byte 100
 	.byte 15
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x13
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_WEATHER_BALL
-	.byte 0xCB
+	.byte EFFECT_WEATHER_BALL
 	.byte 50
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_AROMATHERAPY
-	.byte 0x66
+	.byte EFFECT_HEAL_BELL
 	.byte 0
 	.byte TYPE_GRASS
 	.byte 0
 	.byte 5
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FAKE_TEARS
-	.byte 0x3E
+	.byte EFFECT_SPECIAL_DEFENSE_DOWN_2
 	.byte 0
 	.byte TYPE_DARK
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_AIR_CUTTER
-	.byte 0x2B
+	.byte EFFECT_HIGH_CRITICAL
 	.byte 55
 	.byte TYPE_FLYING
 	.byte 95
 	.byte 25
 	.byte 0
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_OVERHEAT
-	.byte 0xCC
+	.byte EFFECT_OVERHEAT
 	.byte 140
 	.byte TYPE_FIRE
 	.byte 90
 	.byte 5
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ODOR_SLEUTH
-	.byte 0x71
+	.byte EFFECT_FORESIGHT
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 40
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ROCK_TOMB
-	.byte 0x46
+	.byte EFFECT_SPEED_DOWN_HIT
 	.byte 50
 	.byte TYPE_ROCK
 	.byte 80
 	.byte 10
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SILVER_WIND
-	.byte 0x8C
+	.byte EFFECT_ALL_STATS_UP_HIT
 	.byte 60
 	.byte TYPE_BUG
 	.byte 100
 	.byte 5
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_METAL_SOUND
-	.byte 0x3E
+	.byte EFFECT_SPECIAL_DEFENSE_DOWN_2
 	.byte 0
 	.byte TYPE_STEEL
 	.byte 85
 	.byte 40
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_GRASS_WHISTLE
-	.byte 0x01
+	.byte EFFECT_SLEEP
 	.byte 0
 	.byte TYPE_GRASS
 	.byte 55
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_TICKLE
-	.byte 0xCD
+	.byte EFFECT_TICKLE
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x36
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_COSMIC_POWER
-	.byte 0xCE
+	.byte EFFECT_COSMIC_POWER
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_WATER_SPOUT
-	.byte 0xBE
+	.byte EFFECT_ERUPTION
 	.byte 150
 	.byte TYPE_WATER
 	.byte 100
 	.byte 5
 	.byte 0
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SIGNAL_BEAM
-	.byte 0x4C
+	.byte EFFECT_CONFUSE_HIT
 	.byte 75
 	.byte TYPE_BUG
 	.byte 100
 	.byte 15
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SHADOW_PUNCH
-	.byte 0x11
+	.byte EFFECT_ALWAYS_HIT
 	.byte 60
 	.byte TYPE_GHOST
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_EXTRASENSORY
-	.byte 0x96
+	.byte EFFECT_FLINCH_MINIMIZE_HIT
 	.byte 80
 	.byte TYPE_PSYCHIC
 	.byte 100
 	.byte 30
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SKY_UPPERCUT
-	.byte 0xCF
+	.byte EFFECT_SKY_UPPERCUT
 	.byte 85
 	.byte TYPE_FIGHTING
 	.byte 90
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SAND_TOMB
-	.byte 0x2A
+	.byte EFFECT_TRAP
 	.byte 15
 	.byte TYPE_GROUND
 	.byte 70
 	.byte 15
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SHEER_COLD
-	.byte 0x26
+	.byte EFFECT_OHKO
 	.byte 1
 	.byte TYPE_ICE
 	.byte 30
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MUDDY_WATER
-	.byte 0x49
+	.byte EFFECT_ACCURACY_DOWN_HIT
 	.byte 95
 	.byte TYPE_WATER
 	.byte 85
 	.byte 10
 	.byte 30
-	.byte 0x08
+	.byte MOVE_TARGET_BOTH
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BULLET_SEED
-	.byte 0x1D
+	.byte EFFECT_MULTI_HIT
 	.byte 10
 	.byte TYPE_GRASS
 	.byte 100
 	.byte 30
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_AERIAL_ACE
-	.byte 0x11
+	.byte EFFECT_ALWAYS_HIT
 	.byte 60
 	.byte TYPE_FLYING
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ICICLE_SPEAR
-	.byte 0x1D
+	.byte EFFECT_MULTI_HIT
 	.byte 10
 	.byte TYPE_ICE
 	.byte 100
 	.byte 30
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_IRON_DEFENSE
-	.byte 0x33
+	.byte EFFECT_DEFENSE_UP_2
 	.byte 0
 	.byte TYPE_STEEL
 	.byte 0
 	.byte 15
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BLOCK
-	.byte 0x6A
+	.byte EFFECT_MEAN_LOOK
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x16
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_HOWL
-	.byte 0x0A
+	.byte EFFECT_ATTACK_UP
 	.byte 0
 	.byte TYPE_NORMAL
 	.byte 0
 	.byte 40
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DRAGON_CLAW
-	.byte 0x00
+	.byte EFFECT_HIT
 	.byte 80
 	.byte TYPE_DRAGON
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_FRENZY_PLANT
-	.byte 0x50
+	.byte EFFECT_RECHARGE
 	.byte 150
 	.byte TYPE_GRASS
 	.byte 90
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BULK_UP
-	.byte 0xD0
+	.byte EFFECT_BULK_UP
 	.byte 0
 	.byte TYPE_FIGHTING
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_BOUNCE
-	.byte 0x9B
+	.byte EFFECT_SEMI_INVULNERABLE
 	.byte 85
 	.byte TYPE_FLYING
 	.byte 85
 	.byte 5
 	.byte 30
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MUD_SHOT
-	.byte 0x46
+	.byte EFFECT_SPEED_DOWN_HIT
 	.byte 55
 	.byte TYPE_GROUND
 	.byte 95
 	.byte 15
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_POISON_TAIL
-	.byte 0xD1
+	.byte EFFECT_POISON_TAIL
 	.byte 50
 	.byte TYPE_POISON
 	.byte 100
 	.byte 25
 	.byte 10
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_COVET
-	.byte 0x69
+	.byte EFFECT_THIEF
 	.byte 40
 	.byte TYPE_NORMAL
 	.byte 100
 	.byte 40
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x12
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_VOLT_TACKLE
-	.byte 0xC6
+	.byte EFFECT_DOUBLE_EDGE
 	.byte 120
 	.byte TYPE_ELECTRIC
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_MAGICAL_LEAF
-	.byte 0x11
+	.byte EFFECT_ALWAYS_HIT
 	.byte 60
 	.byte TYPE_GRASS
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_WATER_SPORT
-	.byte 0xD2
+	.byte EFFECT_WATER_SPORT
 	.byte 0
 	.byte TYPE_WATER
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_CALM_MIND
-	.byte 0xD3
+	.byte EFFECT_CALM_MIND
 	.byte 0
 	.byte TYPE_PSYCHIC
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_LEAF_BLADE
-	.byte 0x2B
+	.byte EFFECT_HIGH_CRITICAL
 	.byte 70
 	.byte TYPE_GRASS
 	.byte 100
 	.byte 15
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x33
+	.byte FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DRAGON_DANCE
-	.byte 0xD4
+	.byte EFFECT_DRAGON_DANCE
 	.byte 0
 	.byte TYPE_DRAGON
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x10
+	.byte MOVE_TARGET_USER
 	.byte 0
-	.byte 0x08
+	.byte FLAG_SNATCH_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_ROCK_BLAST
-	.byte 0x1D
+	.byte EFFECT_MULTI_HIT
 	.byte 25
 	.byte TYPE_ROCK
 	.byte 80
 	.byte 10
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_SHOCK_WAVE
-	.byte 0x11
+	.byte EFFECT_ALWAYS_HIT
 	.byte 60
 	.byte TYPE_ELECTRIC
 	.byte 0
 	.byte 20
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_WATER_PULSE
-	.byte 0x4C
+	.byte EFFECT_CONFUSE_HIT
 	.byte 60
 	.byte TYPE_WATER
 	.byte 100
 	.byte 20
 	.byte 20
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_DOOM_DESIRE
-	.byte 0x94
+	.byte EFFECT_FUTURE_SIGHT
 	.byte 120
 	.byte TYPE_STEEL
 	.byte 85
 	.byte 5
 	.byte 0
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x00
+	.byte 0
 	.byte 0x00, 0x00, 0x00
 
 	@ MOVE_PSYCHO_BOOST
-	.byte 0xCC
+	.byte EFFECT_OVERHEAT
 	.byte 140
 	.byte TYPE_PSYCHIC
 	.byte 90
 	.byte 5
 	.byte 100
-	.byte 0x00
+	.byte MOVE_TARGET_SELECTED
 	.byte 0
-	.byte 0x32
+	.byte FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED
 	.byte 0x00, 0x00, 0x00
