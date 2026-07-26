@@ -7,7 +7,17 @@ import struct
 from pathlib import Path
 
 ROM_BASE = 0x08000000
+TABLE_ROM_ADDR = 0x082ED220
+TABLE_ROM_END = 0x082EE2C4
+TABLE_ROM_OFFSET = TABLE_ROM_ADDR - ROM_BASE
+TABLE_ROM_END_OFFSET = TABLE_ROM_END - ROM_BASE
 ENTRY_SIZE = 12
+TABLE_SIZE = TABLE_ROM_END_OFFSET - TABLE_ROM_OFFSET
+
+if TABLE_SIZE % ENTRY_SIZE:
+    raise RuntimeError("battle move table size is not divisible by 12")
+
+NUM_MOVES = TABLE_SIZE // ENTRY_SIZE
 
 TYPE_NAMES = {
     0: "TYPE_NORMAL",
@@ -163,36 +173,19 @@ def verify_round_trip(
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(
-        description="Extract the fixed-size battle move table from the Japanese Emerald ROM"
-    )
+    parser = argparse.ArgumentParser(description="Extract the battle move table from the Japanese Emerald ROM")
     parser.add_argument("--rom", default="baserom.gba")
-    parser.add_argument(
-        "--address",
-        required=True,
-        type=lambda value: int(value, 0),
-        help="ROM address of gBattleMoves, for example 0x08XXXXXX",
-    )
-    parser.add_argument(
-        "--count",
-        required=True,
-        type=int,
-        help="number of 12-byte move entries to extract",
-    )
     parser.add_argument("--output", default="data/pokemon/battle_moves.inc")
     parser.add_argument("--moves", default="constants/move_constants.inc")
     args = parser.parse_args()
 
-    if args.count <= 0:
-        parser.error("--count must be greater than zero")
-
     root = Path(__file__).resolve().parent.parent
     rom_data = (root / args.rom).read_bytes()
-    verify_round_trip(rom_data, args.address, args.count)
+    verify_round_trip(rom_data, TABLE_ROM_ADDR, NUM_MOVES)
     output = generate_inc(
         rom_data,
-        args.address,
-        args.count,
+        TABLE_ROM_ADDR,
+        NUM_MOVES,
         load_move_names(root / args.moves),
     )
 
@@ -200,10 +193,9 @@ def main() -> int:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(output, encoding="utf-8")
 
-    table_size = args.count * ENTRY_SIZE
     print(f"generated: {output_path}")
-    print(f"entries: {args.count}, bytes: {table_size} (0x{table_size:X})")
-    print(f"address: 0x{args.address:08X}")
+    print(f"entries: {NUM_MOVES}, bytes: {TABLE_SIZE} (0x{TABLE_SIZE:X})")
+    print(f"address: 0x{TABLE_ROM_ADDR:08X}-0x{TABLE_ROM_END:08X}")
     print("raw round-trip: OK")
     return 0
 

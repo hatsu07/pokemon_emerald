@@ -6,7 +6,7 @@
 .globl gBattleMoves
 gBattleMoves: @ 0x082ED220
 
-	@ MOVE_INTERNAL_0
+	@ MOVE_NONE
 	.byte 0x00
 	.byte 0
 	.byte TYPE_NORMAL
@@ -18,7 +18,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_1
+	@ MOVE_POUND
 	.byte 0x00
 	.byte 40
 	.byte TYPE_NORMAL
@@ -30,7 +30,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_2
+	@ MOVE_KARATE_CHOP
 	.byte 0x2B
 	.byte 50
 	.byte TYPE_FIGHTING
@@ -42,7 +42,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_3
+	@ MOVE_DOUBLE_SLAP
 	.byte 0x1D
 	.byte 15
 	.byte TYPE_NORMAL
@@ -54,7 +54,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_4
+	@ MOVE_COMET_PUNCH
 	.byte 0x1D
 	.byte 18
 	.byte TYPE_NORMAL
@@ -66,7 +66,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_5
+	@ MOVE_MEGA_PUNCH
 	.byte 0x00
 	.byte 80
 	.byte TYPE_NORMAL
@@ -78,7 +78,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_6
+	@ MOVE_PAY_DAY
 	.byte 0x22
 	.byte 40
 	.byte TYPE_NORMAL
@@ -90,7 +90,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_7
+	@ MOVE_FIRE_PUNCH
 	.byte 0x04
 	.byte 75
 	.byte TYPE_FIRE
@@ -102,7 +102,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_8
+	@ MOVE_ICE_PUNCH
 	.byte 0x05
 	.byte 75
 	.byte TYPE_ICE
@@ -114,7 +114,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_9
+	@ MOVE_THUNDER_PUNCH
 	.byte 0x06
 	.byte 75
 	.byte TYPE_ELECTRIC
@@ -126,7 +126,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_10
+	@ MOVE_SCRATCH
 	.byte 0x00
 	.byte 40
 	.byte TYPE_NORMAL
@@ -138,7 +138,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_11
+	@ MOVE_VICE_GRIP
 	.byte 0x00
 	.byte 55
 	.byte TYPE_NORMAL
@@ -150,7 +150,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_12
+	@ MOVE_GUILLOTINE
 	.byte 0x26
 	.byte 1
 	.byte TYPE_NORMAL
@@ -162,7 +162,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_13
+	@ MOVE_RAZOR_WIND
 	.byte 0x27
 	.byte 80
 	.byte TYPE_NORMAL
@@ -174,7 +174,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_14
+	@ MOVE_SWORDS_DANCE
 	.byte 0x32
 	.byte 0
 	.byte TYPE_NORMAL
@@ -186,7 +186,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_15
+	@ MOVE_CUT
 	.byte 0x00
 	.byte 50
 	.byte TYPE_NORMAL
@@ -198,7 +198,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_16
+	@ MOVE_GUST
 	.byte 0x95
 	.byte 40
 	.byte TYPE_FLYING
@@ -210,7 +210,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_17
+	@ MOVE_WING_ATTACK
 	.byte 0x00
 	.byte 60
 	.byte TYPE_FLYING
@@ -222,7 +222,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_18
+	@ MOVE_WHIRLWIND
 	.byte 0x1C
 	.byte 0
 	.byte TYPE_NORMAL
@@ -234,7 +234,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_19
+	@ MOVE_FLY
 	.byte 0x9B
 	.byte 70
 	.byte TYPE_FLYING
@@ -246,7 +246,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_20
+	@ MOVE_BIND
 	.byte 0x2A
 	.byte 15
 	.byte TYPE_NORMAL
@@ -258,7 +258,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_21
+	@ MOVE_SLAM
 	.byte 0x00
 	.byte 80
 	.byte TYPE_NORMAL
@@ -270,7 +270,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_22
+	@ MOVE_VINE_WHIP
 	.byte 0x00
 	.byte 35
 	.byte TYPE_GRASS
@@ -282,7 +282,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_23
+	@ MOVE_STOMP
 	.byte 0x96
 	.byte 65
 	.byte TYPE_NORMAL
@@ -294,7 +294,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_24
+	@ MOVE_DOUBLE_KICK
 	.byte 0x2C
 	.byte 30
 	.byte TYPE_FIGHTING
@@ -306,7 +306,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_25
+	@ MOVE_MEGA_KICK
 	.byte 0x00
 	.byte 120
 	.byte TYPE_NORMAL
@@ -318,7 +318,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_26
+	@ MOVE_JUMP_KICK
 	.byte 0x2D
 	.byte 70
 	.byte TYPE_FIGHTING
@@ -330,7 +330,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_27
+	@ MOVE_ROLLING_KICK
 	.byte 0x1F
 	.byte 60
 	.byte TYPE_FIGHTING
@@ -342,7 +342,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_28
+	@ MOVE_SAND_ATTACK
 	.byte 0x17
 	.byte 0
 	.byte TYPE_GROUND
@@ -354,7 +354,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_29
+	@ MOVE_HEADBUTT
 	.byte 0x1F
 	.byte 70
 	.byte TYPE_NORMAL
@@ -366,7 +366,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_30
+	@ MOVE_HORN_ATTACK
 	.byte 0x00
 	.byte 65
 	.byte TYPE_NORMAL
@@ -378,7 +378,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_31
+	@ MOVE_FURY_ATTACK
 	.byte 0x1D
 	.byte 15
 	.byte TYPE_NORMAL
@@ -390,7 +390,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_32
+	@ MOVE_HORN_DRILL
 	.byte 0x26
 	.byte 1
 	.byte TYPE_NORMAL
@@ -402,7 +402,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_33
+	@ MOVE_TACKLE
 	.byte 0x00
 	.byte 35
 	.byte TYPE_NORMAL
@@ -414,7 +414,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_34
+	@ MOVE_BODY_SLAM
 	.byte 0x06
 	.byte 85
 	.byte TYPE_NORMAL
@@ -426,7 +426,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_35
+	@ MOVE_WRAP
 	.byte 0x2A
 	.byte 15
 	.byte TYPE_NORMAL
@@ -438,7 +438,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_36
+	@ MOVE_TAKE_DOWN
 	.byte 0x30
 	.byte 90
 	.byte TYPE_NORMAL
@@ -450,7 +450,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_37
+	@ MOVE_THRASH
 	.byte 0x1B
 	.byte 90
 	.byte TYPE_NORMAL
@@ -462,7 +462,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_38
+	@ MOVE_DOUBLE_EDGE
 	.byte 0xC6
 	.byte 120
 	.byte TYPE_NORMAL
@@ -474,7 +474,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_39
+	@ MOVE_TAIL_WHIP
 	.byte 0x13
 	.byte 0
 	.byte TYPE_NORMAL
@@ -486,7 +486,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_40
+	@ MOVE_POISON_STING
 	.byte 0x02
 	.byte 15
 	.byte TYPE_POISON
@@ -498,7 +498,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_41
+	@ MOVE_TWINEEDLE
 	.byte 0x4D
 	.byte 25
 	.byte TYPE_BUG
@@ -510,7 +510,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_42
+	@ MOVE_PIN_MISSILE
 	.byte 0x1D
 	.byte 14
 	.byte TYPE_BUG
@@ -522,7 +522,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_43
+	@ MOVE_LEER
 	.byte 0x13
 	.byte 0
 	.byte TYPE_NORMAL
@@ -534,7 +534,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_44
+	@ MOVE_BITE
 	.byte 0x1F
 	.byte 60
 	.byte TYPE_DARK
@@ -546,7 +546,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_45
+	@ MOVE_GROWL
 	.byte 0x12
 	.byte 0
 	.byte TYPE_NORMAL
@@ -558,7 +558,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_46
+	@ MOVE_ROAR
 	.byte 0x1C
 	.byte 0
 	.byte TYPE_NORMAL
@@ -570,7 +570,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_47
+	@ MOVE_SING
 	.byte 0x01
 	.byte 0
 	.byte TYPE_NORMAL
@@ -582,7 +582,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_48
+	@ MOVE_SUPERSONIC
 	.byte 0x31
 	.byte 0
 	.byte TYPE_NORMAL
@@ -594,7 +594,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_49
+	@ MOVE_SONIC_BOOM
 	.byte 0x82
 	.byte 1
 	.byte TYPE_NORMAL
@@ -606,7 +606,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_50
+	@ MOVE_DISABLE
 	.byte 0x56
 	.byte 0
 	.byte TYPE_NORMAL
@@ -618,7 +618,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_51
+	@ MOVE_ACID
 	.byte 0x45
 	.byte 40
 	.byte TYPE_POISON
@@ -630,7 +630,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_52
+	@ MOVE_EMBER
 	.byte 0x04
 	.byte 40
 	.byte TYPE_FIRE
@@ -642,7 +642,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_53
+	@ MOVE_FLAMETHROWER
 	.byte 0x04
 	.byte 95
 	.byte TYPE_FIRE
@@ -654,7 +654,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_54
+	@ MOVE_MIST
 	.byte 0x2E
 	.byte 0
 	.byte TYPE_ICE
@@ -666,7 +666,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_55
+	@ MOVE_WATER_GUN
 	.byte 0x00
 	.byte 40
 	.byte TYPE_WATER
@@ -678,7 +678,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_56
+	@ MOVE_HYDRO_PUMP
 	.byte 0x00
 	.byte 120
 	.byte TYPE_WATER
@@ -690,7 +690,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_57
+	@ MOVE_SURF
 	.byte 0x00
 	.byte 95
 	.byte TYPE_WATER
@@ -702,7 +702,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_58
+	@ MOVE_ICE_BEAM
 	.byte 0x05
 	.byte 95
 	.byte TYPE_ICE
@@ -714,7 +714,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_59
+	@ MOVE_BLIZZARD
 	.byte 0x05
 	.byte 120
 	.byte TYPE_ICE
@@ -726,7 +726,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_60
+	@ MOVE_PSYBEAM
 	.byte 0x4C
 	.byte 65
 	.byte TYPE_PSYCHIC
@@ -738,7 +738,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_61
+	@ MOVE_BUBBLE_BEAM
 	.byte 0x46
 	.byte 65
 	.byte TYPE_WATER
@@ -750,7 +750,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_62
+	@ MOVE_AURORA_BEAM
 	.byte 0x44
 	.byte 65
 	.byte TYPE_ICE
@@ -762,7 +762,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_63
+	@ MOVE_HYPER_BEAM
 	.byte 0x50
 	.byte 150
 	.byte TYPE_NORMAL
@@ -774,7 +774,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_64
+	@ MOVE_PECK
 	.byte 0x00
 	.byte 35
 	.byte TYPE_FLYING
@@ -786,7 +786,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_65
+	@ MOVE_DRILL_PECK
 	.byte 0x00
 	.byte 80
 	.byte TYPE_FLYING
@@ -798,7 +798,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_66
+	@ MOVE_SUBMISSION
 	.byte 0x30
 	.byte 80
 	.byte TYPE_FIGHTING
@@ -810,7 +810,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_67
+	@ MOVE_LOW_KICK
 	.byte 0xC4
 	.byte 1
 	.byte TYPE_FIGHTING
@@ -822,7 +822,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_68
+	@ MOVE_COUNTER
 	.byte 0x59
 	.byte 1
 	.byte TYPE_FIGHTING
@@ -834,7 +834,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x11
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_69
+	@ MOVE_SEISMIC_TOSS
 	.byte 0x57
 	.byte 1
 	.byte TYPE_FIGHTING
@@ -846,7 +846,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_70
+	@ MOVE_STRENGTH
 	.byte 0x00
 	.byte 80
 	.byte TYPE_NORMAL
@@ -858,7 +858,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_71
+	@ MOVE_ABSORB
 	.byte 0x03
 	.byte 20
 	.byte TYPE_GRASS
@@ -870,7 +870,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_72
+	@ MOVE_MEGA_DRAIN
 	.byte 0x03
 	.byte 40
 	.byte TYPE_GRASS
@@ -882,7 +882,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_73
+	@ MOVE_LEECH_SEED
 	.byte 0x54
 	.byte 0
 	.byte TYPE_GRASS
@@ -894,7 +894,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_74
+	@ MOVE_GROWTH
 	.byte 0x0D
 	.byte 0
 	.byte TYPE_NORMAL
@@ -906,7 +906,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_75
+	@ MOVE_RAZOR_LEAF
 	.byte 0x2B
 	.byte 55
 	.byte TYPE_GRASS
@@ -918,7 +918,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_76
+	@ MOVE_SOLAR_BEAM
 	.byte 0x97
 	.byte 120
 	.byte TYPE_GRASS
@@ -930,7 +930,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_77
+	@ MOVE_POISON_POWDER
 	.byte 0x42
 	.byte 0
 	.byte TYPE_POISON
@@ -942,7 +942,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_78
+	@ MOVE_STUN_SPORE
 	.byte 0x43
 	.byte 0
 	.byte TYPE_GRASS
@@ -954,7 +954,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_79
+	@ MOVE_SLEEP_POWDER
 	.byte 0x01
 	.byte 0
 	.byte TYPE_GRASS
@@ -966,7 +966,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_80
+	@ MOVE_PETAL_DANCE
 	.byte 0x1B
 	.byte 70
 	.byte TYPE_GRASS
@@ -978,7 +978,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_81
+	@ MOVE_STRING_SHOT
 	.byte 0x14
 	.byte 0
 	.byte TYPE_BUG
@@ -990,7 +990,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_82
+	@ MOVE_DRAGON_RAGE
 	.byte 0x29
 	.byte 1
 	.byte TYPE_DRAGON
@@ -1002,7 +1002,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_83
+	@ MOVE_FIRE_SPIN
 	.byte 0x2A
 	.byte 15
 	.byte TYPE_FIRE
@@ -1014,7 +1014,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_84
+	@ MOVE_THUNDER_SHOCK
 	.byte 0x06
 	.byte 40
 	.byte TYPE_ELECTRIC
@@ -1026,7 +1026,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_85
+	@ MOVE_THUNDERBOLT
 	.byte 0x06
 	.byte 95
 	.byte TYPE_ELECTRIC
@@ -1038,7 +1038,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_86
+	@ MOVE_THUNDER_WAVE
 	.byte 0x43
 	.byte 0
 	.byte TYPE_ELECTRIC
@@ -1050,7 +1050,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_87
+	@ MOVE_THUNDER
 	.byte 0x98
 	.byte 120
 	.byte TYPE_ELECTRIC
@@ -1062,7 +1062,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_88
+	@ MOVE_ROCK_THROW
 	.byte 0x00
 	.byte 50
 	.byte TYPE_ROCK
@@ -1074,7 +1074,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_89
+	@ MOVE_EARTHQUAKE
 	.byte 0x93
 	.byte 100
 	.byte TYPE_GROUND
@@ -1086,7 +1086,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_90
+	@ MOVE_FISSURE
 	.byte 0x26
 	.byte 1
 	.byte TYPE_GROUND
@@ -1098,7 +1098,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_91
+	@ MOVE_DIG
 	.byte 0x9B
 	.byte 60
 	.byte TYPE_GROUND
@@ -1110,7 +1110,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_92
+	@ MOVE_TOXIC
 	.byte 0x21
 	.byte 0
 	.byte TYPE_POISON
@@ -1122,7 +1122,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_93
+	@ MOVE_CONFUSION
 	.byte 0x4C
 	.byte 50
 	.byte TYPE_PSYCHIC
@@ -1134,7 +1134,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_94
+	@ MOVE_PSYCHIC
 	.byte 0x48
 	.byte 90
 	.byte TYPE_PSYCHIC
@@ -1146,7 +1146,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_95
+	@ MOVE_HYPNOSIS
 	.byte 0x01
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -1158,7 +1158,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_96
+	@ MOVE_MEDITATE
 	.byte 0x0A
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -1170,7 +1170,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_97
+	@ MOVE_AGILITY
 	.byte 0x34
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -1182,7 +1182,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_98
+	@ MOVE_QUICK_ATTACK
 	.byte 0x67
 	.byte 40
 	.byte TYPE_NORMAL
@@ -1194,7 +1194,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_99
+	@ MOVE_RAGE
 	.byte 0x51
 	.byte 20
 	.byte TYPE_NORMAL
@@ -1206,7 +1206,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_100
+	@ MOVE_TELEPORT
 	.byte 0x99
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -1218,7 +1218,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_101
+	@ MOVE_NIGHT_SHADE
 	.byte 0x57
 	.byte 1
 	.byte TYPE_GHOST
@@ -1230,7 +1230,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_102
+	@ MOVE_MIMIC
 	.byte 0x52
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1242,7 +1242,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x02
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_103
+	@ MOVE_SCREECH
 	.byte 0x3B
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1254,7 +1254,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_104
+	@ MOVE_DOUBLE_TEAM
 	.byte 0x10
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1266,7 +1266,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_105
+	@ MOVE_RECOVER
 	.byte 0x20
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1278,7 +1278,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_106
+	@ MOVE_HARDEN
 	.byte 0x0B
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1290,7 +1290,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_107
+	@ MOVE_MINIMIZE
 	.byte 0x6C
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1302,7 +1302,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_108
+	@ MOVE_SMOKESCREEN
 	.byte 0x17
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1314,7 +1314,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_109
+	@ MOVE_CONFUSE_RAY
 	.byte 0x31
 	.byte 0
 	.byte TYPE_GHOST
@@ -1326,7 +1326,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_110
+	@ MOVE_WITHDRAW
 	.byte 0x0B
 	.byte 0
 	.byte TYPE_WATER
@@ -1338,7 +1338,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_111
+	@ MOVE_DEFENSE_CURL
 	.byte 0x9C
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1350,7 +1350,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_112
+	@ MOVE_BARRIER
 	.byte 0x33
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -1362,7 +1362,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_113
+	@ MOVE_LIGHT_SCREEN
 	.byte 0x23
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -1374,7 +1374,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_114
+	@ MOVE_HAZE
 	.byte 0x19
 	.byte 0
 	.byte TYPE_ICE
@@ -1386,7 +1386,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x02
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_115
+	@ MOVE_REFLECT
 	.byte 0x41
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -1398,7 +1398,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_116
+	@ MOVE_FOCUS_ENERGY
 	.byte 0x2F
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1410,7 +1410,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_117
+	@ MOVE_BIDE
 	.byte 0x1A
 	.byte 1
 	.byte TYPE_NORMAL
@@ -1422,7 +1422,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x23
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_118
+	@ MOVE_METRONOME
 	.byte 0x53
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1434,7 +1434,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_119
+	@ MOVE_MIRROR_MOVE
 	.byte 0x09
 	.byte 0
 	.byte TYPE_FLYING
@@ -1446,7 +1446,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_120
+	@ MOVE_SELF_DESTRUCT
 	.byte 0x07
 	.byte 200
 	.byte TYPE_NORMAL
@@ -1458,7 +1458,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_121
+	@ MOVE_EGG_BOMB
 	.byte 0x00
 	.byte 100
 	.byte TYPE_NORMAL
@@ -1470,7 +1470,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_122
+	@ MOVE_LICK
 	.byte 0x06
 	.byte 20
 	.byte TYPE_GHOST
@@ -1482,7 +1482,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_123
+	@ MOVE_SMOG
 	.byte 0x02
 	.byte 20
 	.byte TYPE_POISON
@@ -1494,7 +1494,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_124
+	@ MOVE_SLUDGE
 	.byte 0x02
 	.byte 65
 	.byte TYPE_POISON
@@ -1506,7 +1506,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_125
+	@ MOVE_BONE_CLUB
 	.byte 0x1F
 	.byte 65
 	.byte TYPE_GROUND
@@ -1518,7 +1518,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_126
+	@ MOVE_FIRE_BLAST
 	.byte 0x04
 	.byte 120
 	.byte TYPE_FIRE
@@ -1530,7 +1530,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_127
+	@ MOVE_WATERFALL
 	.byte 0x00
 	.byte 80
 	.byte TYPE_WATER
@@ -1542,7 +1542,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_128
+	@ MOVE_CLAMP
 	.byte 0x2A
 	.byte 35
 	.byte TYPE_WATER
@@ -1554,7 +1554,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_129
+	@ MOVE_SWIFT
 	.byte 0x11
 	.byte 60
 	.byte TYPE_NORMAL
@@ -1566,7 +1566,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_130
+	@ MOVE_SKULL_BASH
 	.byte 0x91
 	.byte 100
 	.byte TYPE_NORMAL
@@ -1578,7 +1578,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_131
+	@ MOVE_SPIKE_CANNON
 	.byte 0x1D
 	.byte 20
 	.byte TYPE_NORMAL
@@ -1590,7 +1590,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_132
+	@ MOVE_CONSTRICT
 	.byte 0x46
 	.byte 10
 	.byte TYPE_NORMAL
@@ -1602,7 +1602,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_133
+	@ MOVE_AMNESIA
 	.byte 0x36
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -1614,7 +1614,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_134
+	@ MOVE_KINESIS
 	.byte 0x17
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -1626,7 +1626,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_135
+	@ MOVE_SOFT_BOILED
 	.byte 0x9D
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1638,7 +1638,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x18
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_136
+	@ MOVE_HI_JUMP_KICK
 	.byte 0x2D
 	.byte 85
 	.byte TYPE_FIGHTING
@@ -1650,7 +1650,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_137
+	@ MOVE_GLARE
 	.byte 0x43
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1662,7 +1662,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_138
+	@ MOVE_DREAM_EATER
 	.byte 0x08
 	.byte 100
 	.byte TYPE_PSYCHIC
@@ -1674,7 +1674,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_139
+	@ MOVE_POISON_GAS
 	.byte 0x42
 	.byte 0
 	.byte TYPE_POISON
@@ -1686,7 +1686,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_140
+	@ MOVE_BARRAGE
 	.byte 0x1D
 	.byte 15
 	.byte TYPE_NORMAL
@@ -1698,7 +1698,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_141
+	@ MOVE_LEECH_LIFE
 	.byte 0x03
 	.byte 20
 	.byte TYPE_BUG
@@ -1710,7 +1710,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_142
+	@ MOVE_LOVELY_KISS
 	.byte 0x01
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1722,7 +1722,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_143
+	@ MOVE_SKY_ATTACK
 	.byte 0x4B
 	.byte 140
 	.byte TYPE_FLYING
@@ -1734,7 +1734,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_144
+	@ MOVE_TRANSFORM
 	.byte 0x39
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1746,7 +1746,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_145
+	@ MOVE_BUBBLE
 	.byte 0x46
 	.byte 20
 	.byte TYPE_WATER
@@ -1758,7 +1758,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_146
+	@ MOVE_DIZZY_PUNCH
 	.byte 0x4C
 	.byte 70
 	.byte TYPE_NORMAL
@@ -1770,7 +1770,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_147
+	@ MOVE_SPORE
 	.byte 0x01
 	.byte 0
 	.byte TYPE_GRASS
@@ -1782,7 +1782,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_148
+	@ MOVE_FLASH
 	.byte 0x17
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1794,7 +1794,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_149
+	@ MOVE_PSYWAVE
 	.byte 0x58
 	.byte 1
 	.byte TYPE_PSYCHIC
@@ -1806,7 +1806,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_150
+	@ MOVE_SPLASH
 	.byte 0x55
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1818,7 +1818,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_151
+	@ MOVE_ACID_ARMOR
 	.byte 0x33
 	.byte 0
 	.byte TYPE_POISON
@@ -1830,7 +1830,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_152
+	@ MOVE_CRABHAMMER
 	.byte 0x2B
 	.byte 90
 	.byte TYPE_WATER
@@ -1842,7 +1842,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_153
+	@ MOVE_EXPLOSION
 	.byte 0x07
 	.byte 250
 	.byte TYPE_NORMAL
@@ -1854,7 +1854,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_154
+	@ MOVE_FURY_SWIPES
 	.byte 0x1D
 	.byte 18
 	.byte TYPE_NORMAL
@@ -1866,7 +1866,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_155
+	@ MOVE_BONEMERANG
 	.byte 0x2C
 	.byte 50
 	.byte TYPE_GROUND
@@ -1878,7 +1878,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_156
+	@ MOVE_REST
 	.byte 0x25
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -1890,7 +1890,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_157
+	@ MOVE_ROCK_SLIDE
 	.byte 0x1F
 	.byte 75
 	.byte TYPE_ROCK
@@ -1902,7 +1902,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_158
+	@ MOVE_HYPER_FANG
 	.byte 0x1F
 	.byte 80
 	.byte TYPE_NORMAL
@@ -1914,7 +1914,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_159
+	@ MOVE_SHARPEN
 	.byte 0x0A
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1926,7 +1926,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_160
+	@ MOVE_CONVERSION
 	.byte 0x1E
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1938,7 +1938,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_161
+	@ MOVE_TRI_ATTACK
 	.byte 0x24
 	.byte 80
 	.byte TYPE_NORMAL
@@ -1950,7 +1950,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_162
+	@ MOVE_SUPER_FANG
 	.byte 0x28
 	.byte 1
 	.byte TYPE_NORMAL
@@ -1962,7 +1962,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_163
+	@ MOVE_SLASH
 	.byte 0x2B
 	.byte 70
 	.byte TYPE_NORMAL
@@ -1974,7 +1974,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_164
+	@ MOVE_SUBSTITUTE
 	.byte 0x4F
 	.byte 0
 	.byte TYPE_NORMAL
@@ -1986,7 +1986,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_165
+	@ MOVE_STRUGGLE
 	.byte 0x30
 	.byte 50
 	.byte TYPE_NORMAL
@@ -1998,7 +1998,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_166
+	@ MOVE_SKETCH
 	.byte 0x5F
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2010,7 +2010,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_167
+	@ MOVE_TRIPLE_KICK
 	.byte 0x68
 	.byte 10
 	.byte TYPE_FIGHTING
@@ -2022,7 +2022,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_168
+	@ MOVE_THIEF
 	.byte 0x69
 	.byte 40
 	.byte TYPE_DARK
@@ -2034,7 +2034,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_169
+	@ MOVE_SPIDER_WEB
 	.byte 0x6A
 	.byte 0
 	.byte TYPE_BUG
@@ -2046,7 +2046,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_170
+	@ MOVE_MIND_READER
 	.byte 0x5E
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2058,7 +2058,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_171
+	@ MOVE_NIGHTMARE
 	.byte 0x6B
 	.byte 0
 	.byte TYPE_GHOST
@@ -2070,7 +2070,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_172
+	@ MOVE_FLAME_WHEEL
 	.byte 0x7D
 	.byte 60
 	.byte TYPE_FIRE
@@ -2082,7 +2082,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_173
+	@ MOVE_SNORE
 	.byte 0x5C
 	.byte 40
 	.byte TYPE_NORMAL
@@ -2094,7 +2094,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_174
+	@ MOVE_CURSE
 	.byte 0x6D
 	.byte 0
 	.byte TYPE_MYSTERY
@@ -2106,7 +2106,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_175
+	@ MOVE_FLAIL
 	.byte 0x63
 	.byte 1
 	.byte TYPE_NORMAL
@@ -2118,7 +2118,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_176
+	@ MOVE_CONVERSION_2
 	.byte 0x5D
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2130,7 +2130,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_177
+	@ MOVE_AEROBLAST
 	.byte 0x2B
 	.byte 100
 	.byte TYPE_FLYING
@@ -2142,7 +2142,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_178
+	@ MOVE_COTTON_SPORE
 	.byte 0x3C
 	.byte 0
 	.byte TYPE_GRASS
@@ -2154,7 +2154,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_179
+	@ MOVE_REVERSAL
 	.byte 0x63
 	.byte 1
 	.byte TYPE_FIGHTING
@@ -2166,7 +2166,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_180
+	@ MOVE_SPITE
 	.byte 0x64
 	.byte 0
 	.byte TYPE_GHOST
@@ -2178,7 +2178,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_181
+	@ MOVE_POWDER_SNOW
 	.byte 0x05
 	.byte 40
 	.byte TYPE_ICE
@@ -2190,7 +2190,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_182
+	@ MOVE_PROTECT
 	.byte 0x6F
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2202,7 +2202,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_183
+	@ MOVE_MACH_PUNCH
 	.byte 0x67
 	.byte 40
 	.byte TYPE_FIGHTING
@@ -2214,7 +2214,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_184
+	@ MOVE_SCARY_FACE
 	.byte 0x3C
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2226,7 +2226,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_185
+	@ MOVE_FAINT_ATTACK
 	.byte 0x11
 	.byte 60
 	.byte TYPE_DARK
@@ -2238,7 +2238,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_186
+	@ MOVE_SWEET_KISS
 	.byte 0x31
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2250,7 +2250,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_187
+	@ MOVE_BELLY_DRUM
 	.byte 0x8E
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2262,7 +2262,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_188
+	@ MOVE_SLUDGE_BOMB
 	.byte 0x02
 	.byte 90
 	.byte TYPE_POISON
@@ -2274,7 +2274,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_189
+	@ MOVE_MUD_SLAP
 	.byte 0x49
 	.byte 20
 	.byte TYPE_GROUND
@@ -2286,7 +2286,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_190
+	@ MOVE_OCTAZOOKA
 	.byte 0x49
 	.byte 65
 	.byte TYPE_WATER
@@ -2298,7 +2298,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_191
+	@ MOVE_SPIKES
 	.byte 0x70
 	.byte 0
 	.byte TYPE_GROUND
@@ -2310,7 +2310,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_192
+	@ MOVE_ZAP_CANNON
 	.byte 0x06
 	.byte 100
 	.byte TYPE_ELECTRIC
@@ -2322,7 +2322,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_193
+	@ MOVE_FORESIGHT
 	.byte 0x71
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2334,7 +2334,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_194
+	@ MOVE_DESTINY_BOND
 	.byte 0x62
 	.byte 0
 	.byte TYPE_GHOST
@@ -2346,7 +2346,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_195
+	@ MOVE_PERISH_SONG
 	.byte 0x72
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2358,7 +2358,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_196
+	@ MOVE_ICY_WIND
 	.byte 0x46
 	.byte 55
 	.byte TYPE_ICE
@@ -2370,7 +2370,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_197
+	@ MOVE_DETECT
 	.byte 0x6F
 	.byte 0
 	.byte TYPE_FIGHTING
@@ -2382,7 +2382,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_198
+	@ MOVE_BONE_RUSH
 	.byte 0x1D
 	.byte 25
 	.byte TYPE_GROUND
@@ -2394,7 +2394,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_199
+	@ MOVE_LOCK_ON
 	.byte 0x5E
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2406,7 +2406,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_200
+	@ MOVE_OUTRAGE
 	.byte 0x1B
 	.byte 90
 	.byte TYPE_DRAGON
@@ -2418,7 +2418,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_201
+	@ MOVE_SANDSTORM
 	.byte 0x73
 	.byte 0
 	.byte TYPE_ROCK
@@ -2430,7 +2430,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_202
+	@ MOVE_GIGA_DRAIN
 	.byte 0x03
 	.byte 60
 	.byte TYPE_GRASS
@@ -2442,7 +2442,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_203
+	@ MOVE_ENDURE
 	.byte 0x74
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2454,7 +2454,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_204
+	@ MOVE_CHARM
 	.byte 0x3A
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2466,7 +2466,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_205
+	@ MOVE_ROLLOUT
 	.byte 0x75
 	.byte 30
 	.byte TYPE_ROCK
@@ -2478,7 +2478,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_206
+	@ MOVE_FALSE_SWIPE
 	.byte 0x65
 	.byte 40
 	.byte TYPE_NORMAL
@@ -2490,7 +2490,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_207
+	@ MOVE_SWAGGER
 	.byte 0x76
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2502,7 +2502,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_208
+	@ MOVE_MILK_DRINK
 	.byte 0x9D
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2514,7 +2514,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x0A
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_209
+	@ MOVE_SPARK
 	.byte 0x06
 	.byte 65
 	.byte TYPE_ELECTRIC
@@ -2526,7 +2526,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_210
+	@ MOVE_FURY_CUTTER
 	.byte 0x77
 	.byte 10
 	.byte TYPE_BUG
@@ -2538,7 +2538,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_211
+	@ MOVE_STEEL_WING
 	.byte 0x8A
 	.byte 70
 	.byte TYPE_STEEL
@@ -2550,7 +2550,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_212
+	@ MOVE_MEAN_LOOK
 	.byte 0x6A
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2562,7 +2562,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_213
+	@ MOVE_ATTRACT
 	.byte 0x78
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2574,7 +2574,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_214
+	@ MOVE_SLEEP_TALK
 	.byte 0x61
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2586,7 +2586,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_215
+	@ MOVE_HEAL_BELL
 	.byte 0x66
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2598,7 +2598,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_216
+	@ MOVE_RETURN
 	.byte 0x79
 	.byte 1
 	.byte TYPE_NORMAL
@@ -2610,7 +2610,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_217
+	@ MOVE_PRESENT
 	.byte 0x7A
 	.byte 1
 	.byte TYPE_NORMAL
@@ -2622,7 +2622,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_218
+	@ MOVE_FRUSTRATION
 	.byte 0x7B
 	.byte 1
 	.byte TYPE_NORMAL
@@ -2634,7 +2634,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_219
+	@ MOVE_SAFEGUARD
 	.byte 0x7C
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2646,7 +2646,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_220
+	@ MOVE_PAIN_SPLIT
 	.byte 0x5B
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2658,7 +2658,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_221
+	@ MOVE_SACRED_FIRE
 	.byte 0x7D
 	.byte 100
 	.byte TYPE_FIRE
@@ -2670,7 +2670,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_222
+	@ MOVE_MAGNITUDE
 	.byte 0x7E
 	.byte 1
 	.byte TYPE_GROUND
@@ -2682,7 +2682,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_223
+	@ MOVE_DYNAMIC_PUNCH
 	.byte 0x4C
 	.byte 100
 	.byte TYPE_FIGHTING
@@ -2694,7 +2694,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_224
+	@ MOVE_MEGAHORN
 	.byte 0x00
 	.byte 120
 	.byte TYPE_BUG
@@ -2706,7 +2706,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_225
+	@ MOVE_DRAGON_BREATH
 	.byte 0x06
 	.byte 60
 	.byte TYPE_DRAGON
@@ -2718,7 +2718,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_226
+	@ MOVE_BATON_PASS
 	.byte 0x7F
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2730,7 +2730,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_227
+	@ MOVE_ENCORE
 	.byte 0x5A
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2742,7 +2742,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_228
+	@ MOVE_PURSUIT
 	.byte 0x80
 	.byte 40
 	.byte TYPE_DARK
@@ -2754,7 +2754,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_229
+	@ MOVE_RAPID_SPIN
 	.byte 0x81
 	.byte 20
 	.byte TYPE_NORMAL
@@ -2766,7 +2766,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_230
+	@ MOVE_SWEET_SCENT
 	.byte 0x18
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2778,7 +2778,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_231
+	@ MOVE_IRON_TAIL
 	.byte 0x45
 	.byte 100
 	.byte TYPE_STEEL
@@ -2790,7 +2790,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_232
+	@ MOVE_METAL_CLAW
 	.byte 0x8B
 	.byte 50
 	.byte TYPE_STEEL
@@ -2802,7 +2802,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_233
+	@ MOVE_VITAL_THROW
 	.byte 0x4E
 	.byte 70
 	.byte TYPE_FIGHTING
@@ -2814,7 +2814,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_234
+	@ MOVE_MORNING_SUN
 	.byte 0x84
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2826,7 +2826,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_235
+	@ MOVE_SYNTHESIS
 	.byte 0x85
 	.byte 0
 	.byte TYPE_GRASS
@@ -2838,7 +2838,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_236
+	@ MOVE_MOONLIGHT
 	.byte 0x86
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2850,7 +2850,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_237
+	@ MOVE_HIDDEN_POWER
 	.byte 0x87
 	.byte 1
 	.byte TYPE_NORMAL
@@ -2862,7 +2862,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_238
+	@ MOVE_CROSS_CHOP
 	.byte 0x2B
 	.byte 100
 	.byte TYPE_FIGHTING
@@ -2874,7 +2874,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_239
+	@ MOVE_TWISTER
 	.byte 0x92
 	.byte 40
 	.byte TYPE_DRAGON
@@ -2886,7 +2886,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_240
+	@ MOVE_RAIN_DANCE
 	.byte 0x88
 	.byte 0
 	.byte TYPE_WATER
@@ -2898,7 +2898,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_241
+	@ MOVE_SUNNY_DAY
 	.byte 0x89
 	.byte 0
 	.byte TYPE_FIRE
@@ -2910,7 +2910,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_242
+	@ MOVE_CRUNCH
 	.byte 0x48
 	.byte 80
 	.byte TYPE_DARK
@@ -2922,7 +2922,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_243
+	@ MOVE_MIRROR_COAT
 	.byte 0x90
 	.byte 1
 	.byte TYPE_PSYCHIC
@@ -2934,7 +2934,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x10
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_244
+	@ MOVE_PSYCH_UP
 	.byte 0x8F
 	.byte 0
 	.byte TYPE_NORMAL
@@ -2946,7 +2946,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_245
+	@ MOVE_EXTREME_SPEED
 	.byte 0x67
 	.byte 80
 	.byte TYPE_NORMAL
@@ -2958,7 +2958,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_246
+	@ MOVE_ANCIENT_POWER
 	.byte 0x8C
 	.byte 60
 	.byte TYPE_ROCK
@@ -2970,7 +2970,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_247
+	@ MOVE_SHADOW_BALL
 	.byte 0x48
 	.byte 80
 	.byte TYPE_GHOST
@@ -2982,7 +2982,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_248
+	@ MOVE_FUTURE_SIGHT
 	.byte 0x94
 	.byte 80
 	.byte TYPE_PSYCHIC
@@ -2994,7 +2994,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_249
+	@ MOVE_ROCK_SMASH
 	.byte 0x45
 	.byte 20
 	.byte TYPE_FIGHTING
@@ -3006,7 +3006,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_250
+	@ MOVE_WHIRLPOOL
 	.byte 0x2A
 	.byte 15
 	.byte TYPE_WATER
@@ -3018,7 +3018,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_251
+	@ MOVE_BEAT_UP
 	.byte 0x9A
 	.byte 10
 	.byte TYPE_DARK
@@ -3030,7 +3030,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_252
+	@ MOVE_FAKE_OUT
 	.byte 0x9E
 	.byte 40
 	.byte TYPE_NORMAL
@@ -3042,7 +3042,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_253
+	@ MOVE_UPROAR
 	.byte 0x9F
 	.byte 50
 	.byte TYPE_NORMAL
@@ -3054,7 +3054,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_254
+	@ MOVE_STOCKPILE
 	.byte 0xA0
 	.byte 0
 	.byte TYPE_NORMAL
@@ -3066,7 +3066,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_255
+	@ MOVE_SPIT_UP
 	.byte 0xA1
 	.byte 100
 	.byte TYPE_NORMAL
@@ -3078,7 +3078,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x22
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_256
+	@ MOVE_SWALLOW
 	.byte 0xA2
 	.byte 0
 	.byte TYPE_NORMAL
@@ -3090,7 +3090,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_257
+	@ MOVE_HEAT_WAVE
 	.byte 0x04
 	.byte 100
 	.byte TYPE_FIRE
@@ -3102,7 +3102,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_258
+	@ MOVE_HAIL
 	.byte 0xA4
 	.byte 0
 	.byte TYPE_ICE
@@ -3114,7 +3114,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x02
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_259
+	@ MOVE_TORMENT
 	.byte 0xA5
 	.byte 0
 	.byte TYPE_DARK
@@ -3126,7 +3126,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_260
+	@ MOVE_FLATTER
 	.byte 0xA6
 	.byte 0
 	.byte TYPE_DARK
@@ -3138,7 +3138,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_261
+	@ MOVE_WILL_O_WISP
 	.byte 0xA7
 	.byte 0
 	.byte TYPE_FIRE
@@ -3150,7 +3150,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_262
+	@ MOVE_MEMENTO
 	.byte 0xA8
 	.byte 0
 	.byte TYPE_DARK
@@ -3162,7 +3162,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_263
+	@ MOVE_FACADE
 	.byte 0xA9
 	.byte 70
 	.byte TYPE_NORMAL
@@ -3174,7 +3174,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_264
+	@ MOVE_FOCUS_PUNCH
 	.byte 0xAA
 	.byte 150
 	.byte TYPE_FIGHTING
@@ -3186,7 +3186,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x03
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_265
+	@ MOVE_SMELLING_SALT
 	.byte 0xAB
 	.byte 60
 	.byte TYPE_NORMAL
@@ -3198,7 +3198,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_266
+	@ MOVE_FOLLOW_ME
 	.byte 0xAC
 	.byte 0
 	.byte TYPE_NORMAL
@@ -3210,7 +3210,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_267
+	@ MOVE_NATURE_POWER
 	.byte 0xAD
 	.byte 0
 	.byte TYPE_NORMAL
@@ -3222,7 +3222,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_268
+	@ MOVE_CHARGE
 	.byte 0xAE
 	.byte 0
 	.byte TYPE_ELECTRIC
@@ -3234,7 +3234,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_269
+	@ MOVE_TAUNT
 	.byte 0xAF
 	.byte 0
 	.byte TYPE_DARK
@@ -3246,7 +3246,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x02
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_270
+	@ MOVE_HELPING_HAND
 	.byte 0xB0
 	.byte 0
 	.byte TYPE_NORMAL
@@ -3258,7 +3258,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_271
+	@ MOVE_TRICK
 	.byte 0xB1
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -3270,7 +3270,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_272
+	@ MOVE_ROLE_PLAY
 	.byte 0xB2
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -3282,7 +3282,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_273
+	@ MOVE_WISH
 	.byte 0xB3
 	.byte 0
 	.byte TYPE_NORMAL
@@ -3294,7 +3294,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x02
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_274
+	@ MOVE_ASSIST
 	.byte 0xB4
 	.byte 0
 	.byte TYPE_NORMAL
@@ -3306,7 +3306,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_275
+	@ MOVE_INGRAIN
 	.byte 0xB5
 	.byte 0
 	.byte TYPE_GRASS
@@ -3318,7 +3318,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_276
+	@ MOVE_SUPERPOWER
 	.byte 0xB6
 	.byte 120
 	.byte TYPE_FIGHTING
@@ -3330,7 +3330,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_277
+	@ MOVE_MAGIC_COAT
 	.byte 0xB7
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -3342,7 +3342,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_278
+	@ MOVE_RECYCLE
 	.byte 0xB8
 	.byte 0
 	.byte TYPE_NORMAL
@@ -3354,7 +3354,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_279
+	@ MOVE_REVENGE
 	.byte 0xB9
 	.byte 60
 	.byte TYPE_FIGHTING
@@ -3366,7 +3366,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_280
+	@ MOVE_BRICK_BREAK
 	.byte 0xBA
 	.byte 75
 	.byte TYPE_FIGHTING
@@ -3378,7 +3378,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_281
+	@ MOVE_YAWN
 	.byte 0xBB
 	.byte 0
 	.byte TYPE_NORMAL
@@ -3390,7 +3390,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_282
+	@ MOVE_KNOCK_OFF
 	.byte 0xBC
 	.byte 20
 	.byte TYPE_DARK
@@ -3402,7 +3402,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_283
+	@ MOVE_ENDEAVOR
 	.byte 0xBD
 	.byte 1
 	.byte TYPE_NORMAL
@@ -3414,7 +3414,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_284
+	@ MOVE_ERUPTION
 	.byte 0xBE
 	.byte 150
 	.byte TYPE_FIRE
@@ -3426,7 +3426,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_285
+	@ MOVE_SKILL_SWAP
 	.byte 0xBF
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -3438,7 +3438,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_286
+	@ MOVE_IMPRISON
 	.byte 0xC0
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -3450,7 +3450,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x02
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_287
+	@ MOVE_REFRESH
 	.byte 0xC1
 	.byte 0
 	.byte TYPE_NORMAL
@@ -3462,7 +3462,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_288
+	@ MOVE_GRUDGE
 	.byte 0xC2
 	.byte 0
 	.byte TYPE_GHOST
@@ -3474,7 +3474,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_289
+	@ MOVE_SNATCH
 	.byte 0xC3
 	.byte 0
 	.byte TYPE_DARK
@@ -3486,7 +3486,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x10
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_290
+	@ MOVE_SECRET_POWER
 	.byte 0xC5
 	.byte 70
 	.byte TYPE_NORMAL
@@ -3498,7 +3498,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_291
+	@ MOVE_DIVE
 	.byte 0x9B
 	.byte 60
 	.byte TYPE_WATER
@@ -3510,7 +3510,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_292
+	@ MOVE_ARM_THRUST
 	.byte 0x1D
 	.byte 15
 	.byte TYPE_FIGHTING
@@ -3522,7 +3522,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_293
+	@ MOVE_CAMOUFLAGE
 	.byte 0xD5
 	.byte 0
 	.byte TYPE_NORMAL
@@ -3534,7 +3534,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_294
+	@ MOVE_TAIL_GLOW
 	.byte 0x35
 	.byte 0
 	.byte TYPE_BUG
@@ -3546,7 +3546,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_295
+	@ MOVE_LUSTER_PURGE
 	.byte 0x48
 	.byte 70
 	.byte TYPE_PSYCHIC
@@ -3558,7 +3558,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_296
+	@ MOVE_MIST_BALL
 	.byte 0x47
 	.byte 70
 	.byte TYPE_PSYCHIC
@@ -3570,7 +3570,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_297
+	@ MOVE_FEATHER_DANCE
 	.byte 0x3A
 	.byte 0
 	.byte TYPE_FLYING
@@ -3582,7 +3582,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_298
+	@ MOVE_TEETER_DANCE
 	.byte 0xC7
 	.byte 0
 	.byte TYPE_NORMAL
@@ -3594,7 +3594,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x02
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_299
+	@ MOVE_BLAZE_KICK
 	.byte 0xC8
 	.byte 85
 	.byte TYPE_FIRE
@@ -3606,7 +3606,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_300
+	@ MOVE_MUD_SPORT
 	.byte 0xC9
 	.byte 0
 	.byte TYPE_GROUND
@@ -3618,7 +3618,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_301
+	@ MOVE_ICE_BALL
 	.byte 0x75
 	.byte 30
 	.byte TYPE_ICE
@@ -3630,7 +3630,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_302
+	@ MOVE_NEEDLE_ARM
 	.byte 0x96
 	.byte 60
 	.byte TYPE_GRASS
@@ -3642,7 +3642,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_303
+	@ MOVE_SLACK_OFF
 	.byte 0x20
 	.byte 0
 	.byte TYPE_NORMAL
@@ -3654,7 +3654,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_304
+	@ MOVE_HYPER_VOICE
 	.byte 0x00
 	.byte 90
 	.byte TYPE_NORMAL
@@ -3666,7 +3666,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_305
+	@ MOVE_POISON_FANG
 	.byte 0xCA
 	.byte 50
 	.byte TYPE_POISON
@@ -3678,7 +3678,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_306
+	@ MOVE_CRUSH_CLAW
 	.byte 0x45
 	.byte 75
 	.byte TYPE_NORMAL
@@ -3690,7 +3690,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_307
+	@ MOVE_BLAST_BURN
 	.byte 0x50
 	.byte 150
 	.byte TYPE_FIRE
@@ -3702,7 +3702,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_308
+	@ MOVE_HYDRO_CANNON
 	.byte 0x50
 	.byte 150
 	.byte TYPE_WATER
@@ -3714,7 +3714,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_309
+	@ MOVE_METEOR_MASH
 	.byte 0x8B
 	.byte 100
 	.byte TYPE_STEEL
@@ -3726,7 +3726,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_310
+	@ MOVE_ASTONISH
 	.byte 0x96
 	.byte 30
 	.byte TYPE_GHOST
@@ -3738,7 +3738,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x13
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_311
+	@ MOVE_WEATHER_BALL
 	.byte 0xCB
 	.byte 50
 	.byte TYPE_NORMAL
@@ -3750,7 +3750,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_312
+	@ MOVE_AROMATHERAPY
 	.byte 0x66
 	.byte 0
 	.byte TYPE_GRASS
@@ -3762,7 +3762,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_313
+	@ MOVE_FAKE_TEARS
 	.byte 0x3E
 	.byte 0
 	.byte TYPE_DARK
@@ -3774,7 +3774,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_314
+	@ MOVE_AIR_CUTTER
 	.byte 0x2B
 	.byte 55
 	.byte TYPE_FLYING
@@ -3786,7 +3786,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_315
+	@ MOVE_OVERHEAT
 	.byte 0xCC
 	.byte 140
 	.byte TYPE_FIRE
@@ -3798,7 +3798,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_316
+	@ MOVE_ODOR_SLEUTH
 	.byte 0x71
 	.byte 0
 	.byte TYPE_NORMAL
@@ -3810,7 +3810,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_317
+	@ MOVE_ROCK_TOMB
 	.byte 0x46
 	.byte 50
 	.byte TYPE_ROCK
@@ -3822,7 +3822,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_318
+	@ MOVE_SILVER_WIND
 	.byte 0x8C
 	.byte 60
 	.byte TYPE_BUG
@@ -3834,7 +3834,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_319
+	@ MOVE_METAL_SOUND
 	.byte 0x3E
 	.byte 0
 	.byte TYPE_STEEL
@@ -3846,7 +3846,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_320
+	@ MOVE_GRASS_WHISTLE
 	.byte 0x01
 	.byte 0
 	.byte TYPE_GRASS
@@ -3858,7 +3858,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_321
+	@ MOVE_TICKLE
 	.byte 0xCD
 	.byte 0
 	.byte TYPE_NORMAL
@@ -3870,7 +3870,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x36
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_322
+	@ MOVE_COSMIC_POWER
 	.byte 0xCE
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -3882,7 +3882,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_323
+	@ MOVE_WATER_SPOUT
 	.byte 0xBE
 	.byte 150
 	.byte TYPE_WATER
@@ -3894,7 +3894,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_324
+	@ MOVE_SIGNAL_BEAM
 	.byte 0x4C
 	.byte 75
 	.byte TYPE_BUG
@@ -3906,7 +3906,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_325
+	@ MOVE_SHADOW_PUNCH
 	.byte 0x11
 	.byte 60
 	.byte TYPE_GHOST
@@ -3918,7 +3918,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_326
+	@ MOVE_EXTRASENSORY
 	.byte 0x96
 	.byte 80
 	.byte TYPE_PSYCHIC
@@ -3930,7 +3930,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_327
+	@ MOVE_SKY_UPPERCUT
 	.byte 0xCF
 	.byte 85
 	.byte TYPE_FIGHTING
@@ -3942,7 +3942,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_328
+	@ MOVE_SAND_TOMB
 	.byte 0x2A
 	.byte 15
 	.byte TYPE_GROUND
@@ -3954,7 +3954,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_329
+	@ MOVE_SHEER_COLD
 	.byte 0x26
 	.byte 1
 	.byte TYPE_ICE
@@ -3966,7 +3966,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_330
+	@ MOVE_MUDDY_WATER
 	.byte 0x49
 	.byte 95
 	.byte TYPE_WATER
@@ -3978,7 +3978,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_331
+	@ MOVE_BULLET_SEED
 	.byte 0x1D
 	.byte 10
 	.byte TYPE_GRASS
@@ -3990,7 +3990,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_332
+	@ MOVE_AERIAL_ACE
 	.byte 0x11
 	.byte 60
 	.byte TYPE_FLYING
@@ -4002,7 +4002,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_333
+	@ MOVE_ICICLE_SPEAR
 	.byte 0x1D
 	.byte 10
 	.byte TYPE_ICE
@@ -4014,7 +4014,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_334
+	@ MOVE_IRON_DEFENSE
 	.byte 0x33
 	.byte 0
 	.byte TYPE_STEEL
@@ -4026,7 +4026,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_335
+	@ MOVE_BLOCK
 	.byte 0x6A
 	.byte 0
 	.byte TYPE_NORMAL
@@ -4038,7 +4038,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x16
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_336
+	@ MOVE_HOWL
 	.byte 0x0A
 	.byte 0
 	.byte TYPE_NORMAL
@@ -4050,7 +4050,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_337
+	@ MOVE_DRAGON_CLAW
 	.byte 0x00
 	.byte 80
 	.byte TYPE_DRAGON
@@ -4062,7 +4062,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_338
+	@ MOVE_FRENZY_PLANT
 	.byte 0x50
 	.byte 150
 	.byte TYPE_GRASS
@@ -4074,7 +4074,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_339
+	@ MOVE_BULK_UP
 	.byte 0xD0
 	.byte 0
 	.byte TYPE_FIGHTING
@@ -4086,7 +4086,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_340
+	@ MOVE_BOUNCE
 	.byte 0x9B
 	.byte 85
 	.byte TYPE_FLYING
@@ -4098,7 +4098,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_341
+	@ MOVE_MUD_SHOT
 	.byte 0x46
 	.byte 55
 	.byte TYPE_GROUND
@@ -4110,7 +4110,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_342
+	@ MOVE_POISON_TAIL
 	.byte 0xD1
 	.byte 50
 	.byte TYPE_POISON
@@ -4122,7 +4122,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_343
+	@ MOVE_COVET
 	.byte 0x69
 	.byte 40
 	.byte TYPE_NORMAL
@@ -4134,7 +4134,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x12
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_344
+	@ MOVE_VOLT_TACKLE
 	.byte 0xC6
 	.byte 120
 	.byte TYPE_ELECTRIC
@@ -4146,7 +4146,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_345
+	@ MOVE_MAGICAL_LEAF
 	.byte 0x11
 	.byte 60
 	.byte TYPE_GRASS
@@ -4158,7 +4158,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_346
+	@ MOVE_WATER_SPORT
 	.byte 0xD2
 	.byte 0
 	.byte TYPE_WATER
@@ -4170,7 +4170,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_347
+	@ MOVE_CALM_MIND
 	.byte 0xD3
 	.byte 0
 	.byte TYPE_PSYCHIC
@@ -4182,7 +4182,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_348
+	@ MOVE_LEAF_BLADE
 	.byte 0x2B
 	.byte 70
 	.byte TYPE_GRASS
@@ -4194,7 +4194,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x33
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_349
+	@ MOVE_DRAGON_DANCE
 	.byte 0xD4
 	.byte 0
 	.byte TYPE_DRAGON
@@ -4206,7 +4206,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x08
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_350
+	@ MOVE_ROCK_BLAST
 	.byte 0x1D
 	.byte 25
 	.byte TYPE_ROCK
@@ -4218,7 +4218,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_351
+	@ MOVE_SHOCK_WAVE
 	.byte 0x11
 	.byte 60
 	.byte TYPE_ELECTRIC
@@ -4230,7 +4230,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_352
+	@ MOVE_WATER_PULSE
 	.byte 0x4C
 	.byte 60
 	.byte TYPE_WATER
@@ -4242,7 +4242,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x32
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_353
+	@ MOVE_DOOM_DESIRE
 	.byte 0x94
 	.byte 120
 	.byte TYPE_STEEL
@@ -4254,7 +4254,7 @@ gBattleMoves: @ 0x082ED220
 	.byte 0x00
 	.byte 0x00, 0x00, 0x00
 
-	@ MOVE_INTERNAL_354
+	@ MOVE_PSYCHO_BOOST
 	.byte 0xCC
 	.byte 140
 	.byte TYPE_PSYCHIC
