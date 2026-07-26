@@ -19,7 +19,7 @@ _08133EA0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08133EAC: .4byte 0x08590C08
+_08133EAC: .4byte gStarterPokemonTable
 	thumb_func_end GetStarterPokemon
 
 	thumb_func_start VblankCB_StarterChoose
@@ -317,7 +317,7 @@ _08134180: .4byte 0x03005B60
 _08134184: .4byte 0x08590D20
 _08134188: .4byte 0x020205AC
 _0813418C: .4byte 0x08590D38
-_08134190: .4byte 0x08590BFC
+_08134190: .4byte gStarterPokemonSpritePositions
 _08134194: .4byte 0x030011F8
 	thumb_func_end CB2_ChooseStarter
 
@@ -442,7 +442,7 @@ Task_StarterChoose2: @ 0x08134214
 _08134290: .4byte 0x03005B60
 _08134294: .4byte 0x03002360
 _08134298: .4byte 0x08590D50
-_0813429C: .4byte 0x08590BFC
+_0813429C: .4byte gStarterPokemonSpritePositions
 _081342A0: .4byte 0x020205AC
 _081342A4: .4byte 0x08590CE0
 _081342A8: .4byte 0x081347BD

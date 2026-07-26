@@ -1606,12 +1606,12 @@
         {
           "start": "0x1F1A71",
           "end": "0x202410",
-          "include_path": "data/text/birch_lab.inc"
+          "include_path": "data/text/maps/birch_lab.inc"
         },
         {
           "start": "0x277095",
           "end": "0x2772F0",
-          "include_path": "data/text/birch_speech.inc"
+          "include_path": "data/text/events/birch_speech.inc"
         }
       ]
     },
