@@ -48,15 +48,14 @@
 @ ==================================================
 @ 性別比率定数
 @ ==================================================
-	.set GENDER_MALE_ONLY,        0x00
-	.set GENDER_FEMALE_12_5,      0x01
-	.set GENDER_MALE_25,          0x02
-	.set GENDER_MALE_50,          0x04
-	.set GENDER_FEMALE_25,        0x06
-	.set GENDER_FEMALE_50,        0x08
-	.set GENDER_FEMALE_75,        0x0c
-	.set GENDER_FEMALE_ONLY,      0x0e
-	.set GENDERLESS,        			0x0f
+	.set GENDER_MALE_ONLY,       0x00
+	.set GENDER_FEMALE_12_5,     0x1F
+	.set GENDER_FEMALE_25,       0x3F
+	.set GENDER_FEMALE_50,       0x7F
+	.set GENDER_FEMALE_75,       0xBF
+	.set GENDER_FEMALE_87_5,     0xDF
+	.set GENDER_FEMALE_ONLY,     0xFE
+	.set GENDERLESS,             0xFF
 
 @ ==================================================
 @ タマゴグループ定数
