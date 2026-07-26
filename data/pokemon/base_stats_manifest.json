@@ -2,9 +2,9 @@
   "table_rom_addr": "0x082F0D54",
   "table_rom_offset": "0x2f0d54",
   "entry_size": 28,
-  "num_entries": 421,
-  "total_size": 11788,
-  "table_end_rom_offset": "0x2f3b60",
+  "num_entries": 412,
+  "total_size": 11536,
+  "table_end_rom_offset": "0x2f3a64",
   "gunknown_82f0d65_remaining": 8516,
   "incbin_blocks": [
     {
