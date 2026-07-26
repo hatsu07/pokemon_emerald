@@ -1,107 +1,60 @@
-# 日本語テキスト編集（Phase 2）
+# ROM 全体テキストの編集
 
-セリフを `.string` で編集するためのメモです。全体のハック手順は [hacking.md](hacking.md) を参照してください。
+通常の文字列データは、元 ROM のアドレスを変えない固定長スロットとして抽出されています。初期状態では元 ROM と完全一致し、テキストを編集した後は変更したスロットだけが変わります。
 
-## 概要
+## 編集するファイル
 
-日本版の文言は `charmap.txt` の文字コードでエンコードされています。  
-`.string "..."` を書くと、ビルド時に `tools/preproc/preproc` がバイト列へ変換します。
+| 範囲 | ファイル | 初期スロット数 |
+|---|---|---:|
+| イベント・フィールド文 | `data/text/generated/event_scripts.inc` | 6,741 |
+| メニュー・戦闘・名称など | `data/text/generated/rodata.inc` | 6,158 |
 
-## いま編集できるセリフ
+既存の `data/text/birch_lab.inc` と `data/text/birch_speech.inc` も、前者からそのまま include され、同じ固定長ガードを持ちます。各生成文字列は `gText_Rom_<ROMオフセット>` というラベルです。たとえば `gText_Rom_5CCCD4` は ROM オフセット `0x5CCCD4` にある文言です。
 
-| ラベル | ファイル | ゲーム内 |
-|---|---|---|
-| `gText_Birch_Welcome` | `data/text/birch_speech.inc` | オダマキ博士・最初のあいさつ |
-| `gText_Birch_MainSpeech` ほか | 同上 | オープニング一連のセリフ |
-| `gText_LittlerootTown_*` | `data/text/littleroot_town.inc` | ミシロタウンのNPC 3人 |
-| `gText_BirchLab_Aide_*` | `data/text/birch_lab.inc` | オダマキ研究所の助手セリフ（25件） |
-| `gText_BirchLab_Birch_*` | 同上 | オダマキ研究所の博士セリフ |
-| `gText_BirchLab_May_*` / `gText_BirchLab_Brendan_*` | 同上 | オダマキ研究所のライバルセリフ |
-| `gText_BirchLab_*` (環境テキスト) | 同上 | 研究所の機器・本棚の説明 |
-
-## 例: 最初のセリフ
-
-```asm
-gText_Birch_Welcome::
-	.string "いやー　おまたせ　おまたせ！\pポケットモンスターの　せかいへ\nようこそ！\p..."
-```
-
-オリジナル冒頭は `いやー　おまたせ　おまたせ！` です。
-
-## 制御文字・記号
-
-| 記法 | バイト / 意味 |
-|---|---|
-| `\n` | 改行 |
-| `\p` | 段落（ボタン待ち） |
-| `\l` | 行スクロール |
-| `$` | 終端 `0xFF` |
-| `　` / ` ` | スペース `0x00` |
-| `！` `？` | 句読点 |
-| `「」` | カギ括弧（`‘’` も可） |
-| `{PLAYER}` `{KUN}` | 埋め込みコード |
-
-## バイト長（重要）
-
-テキスト化済みの各エントリは、オリジナルROMと同じ占有サイズを維持します。
-
-| ラベル | 枠サイズ |
-|---|---|
-| `gText_Birch_Welcome` | 86 バイト |
-| `gText_Birch_MainSpeech` | 0xF2 バイト |
-| `gText_Birch_AndYouAre` | 0xC バイト |
-| `gText_Birch_BoyOrGirl` | 0x13 バイト |
-| `gText_Birch_WhatsYourName` | 0x11 バイト |
-| `gText_Birch_SoItsPlayer` | 0x9 バイト |
-| `gText_Birch_YourePlayer` | 0x38 バイト |
-| `gText_Birch_AreYouReady` | 0x8B バイト（末尾に `0x00` パディングあり） |
-
-- **短い** → `.space N` や `.byte 0x00` で埋める  
-- **長い** → 後続アドレスがずれて壊れる。現状は非対応（空き領域への再配置が必要）
-
-長さ確認の例:
+文字列を探すには、直接検索するのが簡単です。
 
 ```sh
-# .string だけを仮ファイルにして preproc し、0xXX の個数を数える
-tools/preproc/preproc /tmp/test.s charmap.txt | grep -o '0x[0-9A-Fa-f]\+' | wc -l
+rg -n -F 'ポケモンを　つりあげた' data/text/generated
 ```
 
-## 共通の追加方法
+`data/text/generated/manifest.json` には、ラベル、ROM アドレス、元バイト長、候補の出所、ポインタ／API による検証根拠が入っています。
 
-他のテキストも同じ流れで追加できます。
+## 編集規則
 
 ```asm
-	.globl gText_Example
-gText_Example::
-	.string "ここは新しいテキストです。$"
-	.space 0x40 - (. - gText_Example)
+gText_Rom_46F9E8: @ 0x0846F9E8
+	.string "ポケモンを　つりあげた！{PAUSE_UNTIL_PRESS}$"
+	.if (. - gText_Rom_46F9E8) > 0xf
+	.error "gText_Rom_46F9E8 may not grow beyond its original slot"
+	.endif
 ```
 
-- `gText_Example` がシンボル名
-- `0x40` が元データの占有サイズ
-- `"..."` が表示文
+- 通常のスロットは元のバイト長以下であれば編集できます。短くした分は自動で `0x00` 埋めされます。
+- `@ Preserve exact byte length:` が付いたスロットは、途中を参照するポインタや固定幅／複数終端を持ちます。**元と同じバイト長**にしてください。
+- 長い文への変更はアセンブラが停止します。空き領域への再配置と全ポインタ更新は、この固定配置モードの対象外です。
+- `{0xNN}` は復号名を一意に決められない制御バイトです。意味を把握するまで残してください。
+- `$` は文字列の終端です。削除しないでください。
+- `Braille window header` のコメントがある `.byte` ブロックは日本語点字です。通常の charmap ではないため生バイトで抽出しています。行数／バイト長を変えずに編集してください。
 
-サイズが足りない場合は `.space` で埋めます。長い文は別途再配置が必要です。
+## 再生成と検証
 
-## ビルド
+抽出器は以下を組み合わせ、元のバイト列に戻せるものだけを採用します。
+
+1. ローカルの日本語参照ソースとの完全バイト一致
+2. フィールドスクリプトでテキスト引数と確定できる未照合ポインタ
+3. Thumb アセンブリで表示・コピー用の文字列 API へ直接渡される未照合ポインタ
+4. Thumb の添字付きポインターテーブルから文字列 API へ渡ることを確認できる文言
+5. マップイベント起点から到達可能で、型別レイアウトを検証した `trainerbattle` の文言
 
 ```sh
-make -j$(nproc)
+python3 tools/extract_all_text.py
+make -j4 compare
 ```
 
-`data/*.s` は Makefile により preproc 経由でアセンブルされます。  
-`data/text/*.inc` を変えたあとは `data/event_scripts.o` が再ビルドされます。
+抽出器は生成後に各セクションを preproc・assembler・objcopy で戻し、`baserom.gba` とバイト単位で照合します。`make compare` も初期抽出状態で成功することを確認済みです。
 
-## 検証済みの状態
+`tools/extract_all_text.py` を再実行すると、生成済み `.inc` の編集内容は元 ROM 基準で上書きされます。変更を残したい場合は、再生成前にコミットまたは退避してください。
 
-現在のテキスト分離後のROMは、`make compare` でオリジナルROMとのSHA-1一致を確認済みです。
+## 範囲
 
-### テキスト化済みファイル一覧
-
-| ファイル | テキスト数 | 内容 |
-|---|---|---|
-| `data/text/birch_speech.inc` | 8件 | オダマキ博士オープニング |
-| `data/text/littleroot_town.inc` | 3件 | ミシロタウンNPC |
-| `data/text/birch_lab.inc` | 25件 | オダマキ研究所（助手・博士・ライバル・環境） |
-
-新しいテキストを追加する手順は [text_extraction_guide.md](text_extraction_guide.md) を参照してください。
+この仕組みは通常の charmap 文字列に加え、`braillemessage` で参照される日本語点字の生バイトを対象にしています。画像に焼き込まれた文字と、実行時に組み立てられる文は別形式のデータであり、この固定長抽出には含めません。

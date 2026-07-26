@@ -36,7 +36,9 @@ $(ELF): %.elf: $(OBJFILE) ld_script_jp.txt
 data/%.o: data/%.s charmap.txt
 	$(PREPROC) $< charmap.txt | $(AS) $(ASFLAGS) -o $@ -
 
-data/event_scripts.o: $(wildcard data/text/*.inc)
+TEXT_SOURCES := $(wildcard data/text/*.inc data/text/generated/*.inc)
+
+data/event_scripts.o data/data.o: $(TEXT_SOURCES)
 
 asm/%.o: asm/%.s
 	$(AS) $(ASFLAGS) -o $@ $<

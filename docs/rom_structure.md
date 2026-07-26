@@ -1,5 +1,11 @@
 # ROM構造ドキュメント
 
+> **更新:** `script_data` と `.rodata` の通常テキストは現在
+> `data/text/generated/*.inc` に固定アドレスで抽出されています。編集方法は
+> [text_editing.md](text_editing.md) を参照してください。以下の raw `.incbin`
+> ブロック一覧は抽出前の構造資料であり、再生成に必要なラベル／範囲は
+> `data/text/rom_text_layout.json` に保存されています。
+
 このドキュメントは、日本版『ポケットモンスター エメラルド』（pokeemerald-jp）のROM構造を説明します。
 
 ## セクション構成

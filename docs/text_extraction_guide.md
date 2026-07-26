@@ -1,5 +1,9 @@
 # テキスト抽出ガイド
 
+> **現在の手順:** 全体抽出は `tools/extract_all_text.py` に統合されています。
+> `data/text/generated/*.inc` を編集する方法は [text_editing.md](text_editing.md) を参照してください。
+> 以下の個別 `extract_texts.py` / `update_event_scripts.py` の説明は、単発の調査用として残しています。
+
 このドキュメントは、日本版『ポケットモンスター エメラルド』のROMからテキストを抽出し、`.string`形式で編集可能にするための完全なガイドです。
 
 ## 概要
