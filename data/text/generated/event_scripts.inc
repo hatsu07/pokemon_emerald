@@ -7859,7 +7859,7 @@ gText_Rom_1F11E3: @ 0x081F11E3
 	.space 0x49 - (. - gText_Rom_1F11E3)
 	.endif
 	.incbin "baserom.gba", 0x1f122c, 0x845
-	.include "data/text/birch_lab.inc"
+	.include "data/text/maps/birch_lab.inc"
 	.globl gUnknown_8202410
 gUnknown_8202410: @ 0x08202410
 	.incbin "baserom.gba", 0x202410, 0x22
@@ -75056,7 +75056,7 @@ gText_Rom_277071: @ 0x08277071
 	.if (. - gText_Rom_277071) < 0x24
 	.space 0x24 - (. - gText_Rom_277071)
 	.endif
-	.include "data/text/birch_speech.inc"
+	.include "data/text/events/birch_speech.inc"
 	.globl gUnknown_82772F0
 gUnknown_82772F0: @ 0x082772F0
 	.incbin "baserom.gba", 0x2772f0, 0x8
