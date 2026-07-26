@@ -24963,7 +24963,7 @@ gUnknown_82EFFA4: @ 0x082EFFA4
 gUnknown_82F00B4: @ 0x082F00B4
 	.incbin "baserom.gba", 0x2f00b4, 0xca0
 	.include "data/pokemon/base_stats.inc"
-	.incbin "baserom.gba", 0x2f3b60, 0x2144
+	.incbin "baserom.gba", 0x2f3a64, 0x2240
 
 	.globl gUnknown_82F5CA4
 gUnknown_82F5CA4: @ 0x082F5CA4
