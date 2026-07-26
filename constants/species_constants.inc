@@ -264,13 +264,13 @@
 @ ==================================================
 @ 第3世代 (Hoenn)
 @ ==================================================
-	.set SPECIES_TREECKO, 252
+	.set SPECIES_TREECKO, 277
 	.set SPECIES_GROVYLE, 253
 	.set SPECIES_SCEPTILE, 254
-	.set SPECIES_TORCHIC, 255
+	.set SPECIES_TORCHIC, 280
 	.set SPECIES_COMBUSKEN, 256
 	.set SPECIES_BLAZIKEN, 257
-	.set SPECIES_MUDKIP, 258
+	.set SPECIES_MUDKIP, 283
 	.set SPECIES_MARSHTOMP, 259
 	.set SPECIES_SWAMPERT, 260
 	.set SPECIES_POOCHYENA, 261

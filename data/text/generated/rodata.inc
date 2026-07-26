@@ -48802,9 +48802,15 @@ gUnknown_8590BEC: @ 0x08590BEC
 	.globl gUnknown_8590BF4
 gUnknown_8590BF4: @ 0x08590BF4
 	.incbin "baserom.gba", 0x590bf4, 0x8
+	.globl gStarterPokemonSpritePositions
+gStarterPokemonSpritePositions: @ 0x08590BFC
+	.incbin "baserom.gba", 0x590bfc, 0x6
 	.globl gUnknown_8590C02
 gUnknown_8590C02: @ 0x08590C02
 	.incbin "baserom.gba", 0x590c02, 0x6
+
+	.include "data/starter_pokemon.inc"
+
 	.globl gUnknown_8590C10
 gUnknown_8590C10: @ 0x08590C10
 	.incbin "baserom.gba", 0x590c10, 0xc
