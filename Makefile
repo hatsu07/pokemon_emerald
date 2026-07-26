@@ -1,5 +1,5 @@
-AS := tools/binutils/bin/arm-none-eabi-as
-LD := tools/binutils/bin/arm-none-eabi-ld
+AS      := tools/binutils/bin/arm-none-eabi-as
+LD      := tools/binutils/bin/arm-none-eabi-ld
 OBJCOPY := tools/binutils/bin/arm-none-eabi-objcopy
 SHA1SUM := sha1sum -c
 GBAFIX := tools/gbafix/gbafix
@@ -36,7 +36,9 @@ $(ELF): %.elf: $(OBJFILE) ld_script_jp.txt
 data/%.o: data/%.s charmap.txt
 	$(PREPROC) $< charmap.txt | $(AS) $(ASFLAGS) -o $@ -
 
-data/event_scripts.o: data/text/birch_speech.inc
+TEXT_SOURCES := $(wildcard data/text/*.inc data/text/generated/*.inc)
+
+data/event_scripts.o data/data.o: $(TEXT_SOURCES)
 
 asm/%.o: asm/%.s
 	$(AS) $(ASFLAGS) -o $@ $<

@@ -2,13 +2,13 @@
 
 日本版『ポケットモンスター エメラルド』デコンパイル（pokeemerald-jp）で、**どのファイルを直すとゲーム内の何が変わるか**をまとめたドキュメントです。
 
-現状は Phase 2 の途中です。多くのデータはまだ `baserom_jp.gba` からの `.incbin` で、テキスト化・C化が進んだ箇所から編集しやすくなります。
+現状は Phase 2 の途中です。多くのデータはまだ `baserom.gba` からの `.incbin` で、テキスト化・C化が進んだ箇所から編集しやすくなります。
 
 ---
 
 ## クイックスタート
 
-1. リポジトリ直下に日本版ROMを `baserom_jp.gba` として置く
+1. リポジトリ直下に日本版ROMを `baserom.gba` として置く
 2. ツールが未ビルドなら `./build_tools.sh`
 3. ソースを編集する
 4. ビルドする
@@ -22,7 +22,30 @@ make -j$(nproc)
 
 ---
 
+## 現在の進捗（2026-07-26）
+
+### 完了した内容
+
+- オダマキ博士のオープニングを `data/text/birch_speech.inc` で編集可能にした。
+- ミシロタウンNPC 3件を `data/text/littleroot_town.inc` としてテキスト化した。
+- オダマキ研究所テキスト 25件を `data/text/birch_lab.inc` としてテキスト化した。
+- ミシロタウン看板テキストを `data/text/littleroot_signs.inc` としてテキスト化した。
+- どちらも元のROMアドレスと占有サイズを維持するため、既存のイベント・コードからのポインタはそのまま有効である。
+- `make clean && make` と `make compare` を実行し、SHA-1 `d7cf8f156ba9c455d164e1ea780a6bf1945465c2` の一致を確認した。
+- **テキスト一括抽出基盤を構築**：`tools/extract_all_text.py` により、`script_data` セクション（6,741スロット）と `.rodata` セクション（6,158スロット）の全通常テキストを `data/text/generated/*.inc` に固定アドレスで抽出した。
+- テキスト編集方法は [text_editing.md](text_editing.md) に集約。
+
+### 次の作業
+
+1. 主人公の家テキストのテキスト化
+2. コトキタウンテキストのテキスト化
+3. その他主要なマップのテキスト化
+
+---
+
 ## いま編集できるもの（推奨）
+
+### テキスト化済み（個別ファイル）
 
 | 変えたい内容 | 編集するファイル | ラベル / 箇所 | ゲーム内での効果 |
 |---|---|---|---|
@@ -30,6 +53,24 @@ make -j$(nproc)
 | 同上・「ポケモンとは」の続き | 同上 | `gText_Birch_MainSpeech` など | オープニング一連のセリフ |
 | 性別確認・名前確認など | 同上 | `gText_Birch_BoyOrGirl` 等 | オープニングの各メッセージ |
 | 日本語の文字↔バイト対応 | `charmap.txt` | 各文字の定義 | `.string` のエンコード結果全体 |
+| オダマキ研究所の助手セリフ | `data/text/birch_lab.inc` | `gText_BirchLab_Aide_*` | 研究所助手の会話 |
+| オダマキ研究所の博士セリフ | 同上 | `gText_BirchLab_Birch_*` | 研究所での博士会話 |
+| オダマキ研究所のライバルセリフ | 同上 | `gText_BirchLab_May_*`, `gText_BirchLab_Brendan_*` | ライバルの会話 |
+| オダマキ研究所の環境テキスト | 同上 | `gText_BirchLab_*` | 研究所の機器・本棚の説明 |
+| ミシロタウンNPCセリフ | `data/text/littleroot_town.inc` | `gText_LittlerootTown_*` | ミシロタウンの住人会話 |
+| ミシロタウン看板 | `data/text/littleroot_signs.inc` | `gText_LittlerootSigns_*` | ミシロタウンの看板 |
+
+### 一括抽出済み（全通常テキスト）
+
+`data/text/generated/` には、`script_data` と `.rodata` の全通常テキストが固定アドレスで抽出されています。
+
+| ファイル | スロット数 | 内容 |
+|---|---|---|
+| `data/text/generated/event_scripts.inc` | 6,741 | イベント・フィールドの全通常テキスト |
+| `data/text/generated/rodata.inc` | 6,158 | メニュー・戦闘・名称などの全通常テキスト |
+
+各スロットは元のROMアドレスを維持した固定長で、元のバイト長以下であれば自由に編集できます。
+詳細な編集方法は [text_editing.md](text_editing.md) を参照。
 
 詳細な文字コード・バイト長の注意は [text_editing.md](text_editing.md) を参照。
 
@@ -57,12 +98,19 @@ pokeemerald_jp.gba
 | `data/data.s` | グラフィック・テーブル等の巨大データ | 多くが `.incbin`。直接バイナリ差し替えは可能だが危険 |
 | `data/event_scripts.s` | イベントスクリプト・文字列データの置き場 | 一部を `.include` でテキスト化済み |
 | `data/text/` | 人間が読めるセリフソース | **ここを増やすのが Phase 2 の主作業** |
+| `data/text/generated/` | **一括抽出された全通常テキスト** | 6,741 + 6,158 スロットを固定アドレスで編集可能 |
+| `data/text/generated/manifest.json` | 抽出テキストのマニフェスト | ラベル・ROMアドレス・元バイト長・検証根拠を格納 |
+| `data/text/rom_text_layout.json` | ROMテキストレイアウト定義 | 再生成に必要なラベル・範囲情報 |
 | `charmap.txt` | 日本語文字コード表 | `.string` 編集の前提 |
 | `constants/` | 定数定義 | 今後のシンボル化で参照される |
 | `ld_script_jp.txt` | リンカスクリプト（配置） | セクション順・アドレス配置 |
 | `funcmap_jp.txt` | 関数名↔アドレス対応 | 解析・改変箇所の特定に使う |
 | `tools/` | preproc / as / ld / gbafix など | ビルドツール |
-| `baserom_jp.gba` | オリジナルROM（配布しない） | `.incbin` の元データ |
+| | `tools/extract_all_text.py` | **テキスト一括抽出ツール**（全通常テキストを固定アドレスで抽出） |
+| | `tools/extract_texts.py` | 旧・個別テキスト抽出ツール（単発調査用） |
+| | `tools/update_event_scripts.py` | 旧・event_scripts.s更新ツール（単発調査用） |
+| | `tools/verify_matching.py` | 旧・マッチング検証ツール（単発調査用） |
+| `baserom.gba` | オリジナルROM（配布しない） | `.incbin` の元データ |
 | `pokeemerald_jp.gba` | ビルド成果物 | エミュレータで起動するROM |
 | `PokeEm-expansion-CanuseJP/` | 参考用（日本語対応expansion） | 将来の拡張の参考。本ビルドには未統合 |
 
@@ -74,13 +122,15 @@ pokeemerald_jp.gba
 
 | 状態 | 方法 |
 |---|---|
-| **テキスト化済み**（オダマキOP） | `data/text/birch_speech.inc` の `.string` を編集 → `make` |
-| **まだ `.incbin`** | ① ROM上の文字列アドレスを特定 ② `.incbin` をやめて `.string` 化 ③ 参照元の即値アドレスをシンボルに変更（`asm/main_menu.s` の例を参照） |
+| **一括抽出済み**（`data/text/generated/*.inc`） | 対応するラベルの `.string` を編集 → `make`。元のバイト長以下であれば自由に編集可能。詳細は [text_editing.md](text_editing.md) 参照 |
+| **個別テキスト化済み**（オダマキOP・ミシロタウンNPC・研究所・看板） | 対応する `data/text/*.inc` の `.string` を編集 → `make` |
+| **まだ `.incbin`** | ① ROM上の文字列アドレスを特定 ② `.incbin` をやめて `.string` 化 ③ 長さを維持するため `.space` を使う ④ 参照元の即値アドレスをシンボルに変更（`asm/main_menu.s` の例を参照） |
+| **イベントスクリプトの小データ** | `data/event_scripts.s` で `.incbin` を `.string` に置換し、`$` と `.space` で終端・パディングを行う |
 
 **制約（現状）**
 
 - 各文字列にはオリジナルと同じ**占有バイト数**がある
-- 短くする → `.space N` でパディング
+- 短くする → `.space N` でパディング（一括抽出済みのスロットは自動パディング）
 - 長くする → 後続データがずれてクラッシュしうる。空き領域への再配置が必要（未整備）
 
 **制御文字（`.string` 内）**
@@ -126,14 +176,14 @@ pokeemerald_jp.gba
 現状の大半は `data/data.s` 内の:
 
 ```asm
-.incbin "baserom_jp.gba", <オフセット>, <長さ>
+.incbin "baserom.gba", <オフセット>, <長さ>
 ```
 
 です。
 
 | やり方 | 説明 |
 |---|---|
-| バイナリ直接編集 | `baserom_jp.gba` を改変して `.incbin` させる（非推奨・Matching崩れ） |
+| バイナリ直接編集 | `baserom.gba` を改変して `.incbin` させる（非推奨・Matching崩れ） |
 | ラベル単位で切り出し | 対象オフセットだけ `.byte` / テーブル定義に置き換え（推奨される次のステップ） |
 | Expansion 参考 | `PokeEm-expansion-CanuseJP/` の `src/` / `data/` 構成を将来移植 |
 
@@ -168,7 +218,7 @@ Phase 3 で C・JSON・Porymap 連携を目指します。
 4. **1箇所ずつビルドしてエミュレータ確認**  
    特にオープニング・ダイアログ・戦闘開始など。
 5. **ROMは自分で用意する**  
-   `baserom_jp.gba` は配布しません。
+   `baserom.gba` は配布しません。
 
 ---
 
@@ -181,6 +231,184 @@ Phase 3 で C・JSON・Porymap 連携を目指します。
 5. `pokeemerald_jp.gba` を起動し、ニューゲームで確認
 
 参照元: `asm/main_menu.s` の `Task_NewGameBirchSpeech_*`
+
+---
+
+## 更新履歴（2026-07-26）
+
+### テキスト一括抽出基盤
+
+`tools/extract_all_text.py` により、`script_data` と `.rodata` の全通常テキストを固定アドレスで抽出。
+
+- `data/text/generated/event_scripts.inc`：6,741スロット
+- `data/text/generated/rodata.inc`：6,158スロット
+- `data/text/generated/manifest.json`：ラベル・ROMアドレス・元バイト長・検証根拠
+- 抽出状態で `make compare` 一致確認済み
+
+### ビルド依存
+
+`Makefile` は `data/text/*.inc` の更新時に `data/event_scripts.o` を再ビルドする。
+
+### ミシロタウン NPCセリフをテキスト化
+
+| 項目 | 内容 |
+|---|---|
+| 元データ | `event_scripts.s` の `gUnknown_81E27F7` incbin ブロック（`0x1e27f7`, `0xaab6`バイト） |
+| 新ファイル | `data/text/littleroot_town.inc` |
+| シンボル | `gText_LittlerootTown_FatMan_*`, `gText_LittlerootTown_Boy_*`, `gText_LittlerootTown_Twin_*` |
+| テキスト参照元 | `PokeEm-expansion-CanuseJP/data/maps/LittlerootTown/scripts.inc` |
+
+`gUnknown_81E27F7` ブロックは以下のように分割済み：
+
+```
+gUnknown_81E27F7:  .incbin baserom.gba, 0x1e27f7, 0x1d35  ← 手前
+                   .include "data/text/littleroot_town.inc"    ← テキスト3件
+gUnknown_81E45F1:  .incbin baserom.gba, 0x1e45f1, 0x8cbc  ← 残り
+```
+
+### 調査で判明した技術情報
+
+- 日本版オリジナルROMでは `{JPN}` (FC 15) フォント切替コードは**使われていない**
+- `\n` = `FE`、`\p` = `FB`、`\l` = `FA`（英語版 pret とは異なる）
+- Expansion の `.string` は `{JPN}` プレフィックス付きのため、オリジナル復元時は除去が必要
+- preproc のバイト出力 ≠ ROM バイト列の場合、テキスト or 制御コードが違う可能性がある
+
+---
+
+## テキスト化の正しい手順（調査済み）
+
+### ステップ 1: ROMオフセットを特定する
+
+`event_scripts.s` の incbin ブロックは以下の通り：
+
+```
+gUnknown_81DABAC: 0x1dabac, 0x384
+gUnknown_81DAF30: 0x1daf30, 0x4
+gUnknown_81DAF34: .incbin "baserom.gba", 0x1daf34, 0x58
+gUnknown_81DAF8C: 0x1daf8c, 0x830
+gUnknown_81DB7BC: 0x1db7bc, 0x2c
+gUnknown_81DB7E8: 0x1db7e8, 0x260b
+gUnknown_81DDDF3: 0x1dddf3, 0x4a04
+gUnknown_81E27F7: 0x1e27f7, 0xaab6  ← ミシロタウンNPCを含む
+gUnknown_81ED2AD: 0x1ed2ad, 0x2f0f
+gUnknown_81F01BC: 0x1f01bc, 0x32
+gUnknown_81F01EE: 0x1f01ee, 0xbb1
+...
+```
+
+**どのブロックにテキストがあるか特定する方法：**
+
+`tools/preproc/preproc` に一時ファイルを渡してバイト列を得て、ROMの `baserom.gba` を Python で `bytes.find()` する。
+
+```python
+import subprocess
+from pathlib import Path
+
+# 1. preprocでテキストをエンコード
+test_s = 't:\n    .string "探したいテキスト$"\n'
+with open('/tmp/t.s', 'w') as f:
+    f.write(test_s)
+r = subprocess.run(['tools/preproc/preproc', '/tmp/t.s', 'charmap.txt'],
+                   capture_output=True, text=True)
+# 出力: t:\n\t.byte 0xXX, 0xXX, ..., 0xFF
+
+# 2. バイト列を抽出してROMを検索
+rom = Path("baserom.gba").read_bytes()
+# バイト列の先頭数バイトで find()
+enc = bytes([0xXX, 0xXX, ...])
+pos = rom.find(enc)
+print(f"ROM offset: 0x{pos:06x}")  # → GBA addr: 0x8{pos:06x}
+```
+
+### ステップ 2: テキストのバイト数を確認する
+
+テキストをソース化するには、**オリジナルとバイト数が完全一致**しなければならない。
+
+```python
+rom = Path("baserom.gba").read_bytes()
+start = 0x1e452c   # テキスト開始オフセット
+end   = rom.find(b'\xff', start)  # 0xFF が終端
+size  = end - start + 1
+print(f"size = {size} bytes")  # → .string が生成するバイト数と一致させる
+```
+
+preproc のバイト出力と ROM のバイト列を比較して一致を確認してからインクルードする。
+
+### ステップ 3: incbin ブロックを分割する
+
+例（ミシロタウン3テキストの場合）：
+
+```
+# 変更前
+gUnknown_81E27F7:
+    .incbin "baserom.gba", 0x1e27f7, 0xaab6
+
+# 変更後
+gUnknown_81E27F7:
+    .incbin "baserom.gba", 0x1e27f7, 0x1d35   ← テキスト直前まで
+    .include "data/text/littleroot_town.inc"       ← テキスト本体
+gUnknown_81E45F1:
+    .incbin "baserom.gba", 0x1e45f1, 0x8cbc   ← テキスト直後から
+```
+
+サイズの計算式：
+- 前半: `テキスト開始 - ブロック開始 = 0x1e452c - 0x1e27f7 = 0x1d35`
+- 後半: `ブロック終端 - テキスト終端 = 0x1ed2ad - 0x1e45f1 = 0x8cbc`
+- 合計: `0x1d35 + 0x34 + 0x5c + 0x35 + 0x8cbc = 0xaab6`（元サイズと一致）
+
+### ステップ 4: ビルドして Matching を確認する
+
+```sh
+make -j$(nproc)
+sha1sum pokeemerald_jp.gba
+cat rom_jp.sha1
+```
+
+両者が一致すれば成功。
+
+---
+
+## ミシロタウンNPCテキスト（調査済み・テキスト化完了）
+
+| シンボル | ROM オフセット | GBA アドレス | バイト数 |
+|---|---|---|---|
+| `gText_LittlerootTown_FatMan_CanUsePCToStoreItems` | `0x1e452c` | `0x81E452C` | 52 |
+| `gText_LittlerootTown_Boy_BirchSpendsDaysInLab` | `0x1e4560` | `0x81E4560` | 92 |
+| `gText_LittlerootTown_Twin_IfYouGoInGrassPokemonWillJumpOut` | `0x1e45bc` | `0x81E45BC` | 53 |
+
+これらは `gUnknown_81E27F7` ブロック（`0x1e27f7`, `0xaab6`バイト）内に連続して配置されている。
+
+`data/text/littleroot_town.inc` と `data/event_scripts.s` への分割は **実装済み**。
+
+---
+
+## charmap と制御コードに関する重要な注意
+
+### 制御コード対応表（preproc が変換するもの）
+
+| `.string` 内の記法 | 生成バイト | 意味 |
+|---|---|---|
+| `\n` | `FE` | 改行（SHIFT_DOWN） |
+| `\p` | `FB` | 段落送り・ボタン待ち（PAUSE_UNTIL_PRESS） |
+| `\l` | `FA` | 行スクロール |
+| `$` | `FF` | 文字列終端 |
+| `{PLAYER}` | `FD 01` | プレイヤー名 |
+| `{KUN}` | `FD 02` | 「くん」または「ちゃん」 |
+| `{JPN}` | `FC 15` | **Expansion用。日本版オリジナルROMでは使用されていない** |
+| `\p` | `FB` | ≠ `FC 09`（英語版と異なる）。日本版は `FB` |
+
+**重要：** Expansion (`PokeEm-expansion-CanuseJP`) の `scripts.inc` にある `.string` は
+`{JPN}` プレフィックスが付いているが、**日本版オリジナルROMにはこのプレフィックスが存在しない**。
+テキスト化する際は `{JPN}` を除去した形で記述すること。
+
+Expansion のテキストはテキスト内容の参照として使えるが、バイト列は日本版オリジナルと異なる。
+オリジナルのバイト列は必ず `baserom.gba` から直接確認すること。
+
+### charmap の特殊な点
+
+- `' '`（半角スペース）と `'　'`（全角スペース）はどちらも `0x00` にマップされる
+- 文字列終端は `0xFF`（`$` で記述）
+- `'せ' = 0x0E` と `SHIFT_DOWN = FC 0E` は別物（1バイトと2バイトで区別）
 
 ---
 
