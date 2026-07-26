@@ -258,3 +258,29 @@
 @ ==================================================
 	.set NO_FLIP,              0x00
 	.set FLIP_BACKWARDS,       0x80
+
+@ ==================================================
+@ 体色定数
+@ ==================================================
+	.set BODY_COLOR_RED,          0x00
+	.set BODY_COLOR_BLUE,         0x01
+	.set BODY_COLOR_YELLOW,       0x02
+	.set BODY_COLOR_GREEN,        0x03
+	.set BODY_COLOR_BLACK,        0x04
+	.set BODY_COLOR_BROWN,        0x05
+	.set BODY_COLOR_PURPLE,       0x06
+	.set BODY_COLOR_GRAY,         0x07
+	.set BODY_COLOR_WHITE,        0x08
+	.set BODY_COLOR_PINK,         0x09
+
+@ 反転フラグ込み
+	.set BODY_COLOR_RED_FLIP,     0x80
+	.set BODY_COLOR_BLUE_FLIP,    0x81
+	.set BODY_COLOR_YELLOW_FLIP,  0x82
+	.set BODY_COLOR_GREEN_FLIP,   0x83
+	.set BODY_COLOR_BLACK_FLIP,   0x84
+	.set BODY_COLOR_BROWN_FLIP,   0x85
+	.set BODY_COLOR_PURPLE_FLIP,  0x86
+	.set BODY_COLOR_GRAY_FLIP,    0x87
+	.set BODY_COLOR_WHITE_FLIP,   0x88
+	.set BODY_COLOR_PINK_FLIP,    0x89

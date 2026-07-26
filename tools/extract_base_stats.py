@@ -177,10 +177,12 @@ def format_enum(value: int, names: dict[int, str], width: int = 2) -> str:
 
 def format_body_color(value: int) -> str:
     color = value & 0x7F
-    result = BODY_COLOR_NAMES.get(color, f"0x{color:02X}")
+    name = BODY_COLOR_NAMES.get(color)
+    if name is None:
+        return f"0x{value:02X}"
     if value & 0x80:
-        result += " | BODY_COLOR_FLIP"
-    return result
+        return f"{name}_FLIP"
+    return name
 
 
 def format_entry(label: str, e: dict[str, int | bytes]) -> str:
