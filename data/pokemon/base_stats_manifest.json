@@ -1,0 +1,49 @@
+{
+  "table_rom_addr": "0x082F0D54",
+  "table_rom_offset": "0x2f0d54",
+  "entry_size": 28,
+  "num_entries": 412,
+  "total_size": 11536,
+  "table_end_rom_offset": "0x2f3a64",
+  "gunknown_82f0d65_remaining": 8768,
+  "incbin_blocks": [
+    {
+      "label": "gUnknown_82F0D54",
+      "offset": "0x2f0d54",
+      "size": 12
+    },
+    {
+      "label": "gUnknown_82F0D60",
+      "offset": "0x2f0d60",
+      "size": 2
+    },
+    {
+      "label": "gUnknown_82F0D62",
+      "offset": "0x2f0d62",
+      "size": 3
+    },
+    {
+      "label": "gUnknown_82F0D65",
+      "offset": "0x2f0d65",
+      "size": 20287
+    }
+  ],
+  "struct_layout": {
+    "hp": 0,
+    "attack": 1,
+    "defense": 2,
+    "speed": 3,
+    "sp_attack": 4,
+    "sp_defense": 5,
+    "type1": 6,
+    "type2": 7,
+    "catch_rate": 8,
+    "base_exp": 9,
+    "ev_yield": 10,
+    "growth_rate": 11,
+    "egg_group1": 12,
+    "egg_group2": 13,
+    "ability1": 14,
+    "ability2": 15
+  }
+}

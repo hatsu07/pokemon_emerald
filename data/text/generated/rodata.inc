@@ -24962,18 +24962,9 @@ gUnknown_82EFFA4: @ 0x082EFFA4
 	.globl gUnknown_82F00B4
 gUnknown_82F00B4: @ 0x082F00B4
 	.incbin "baserom.gba", 0x2f00b4, 0xca0
-	.globl gUnknown_82F0D54
-gUnknown_82F0D54: @ 0x082F0D54
-	.incbin "baserom.gba", 0x2f0d54, 0xc
-	.globl gUnknown_82F0D60
-gUnknown_82F0D60: @ 0x082F0D60
-	.incbin "baserom.gba", 0x2f0d60, 0x2
-	.globl gUnknown_82F0D62
-gUnknown_82F0D62: @ 0x082F0D62
-	.incbin "baserom.gba", 0x2f0d62, 0x3
-	.globl gUnknown_82F0D65
-gUnknown_82F0D65: @ 0x082F0D65
-	.incbin "baserom.gba", 0x2f0d65, 0x4f3f
+	.include "data/pokemon/base_stats.inc"
+	.incbin "baserom.gba", 0x2f3a64, 0x2240
+
 	.globl gUnknown_82F5CA4
 gUnknown_82F5CA4: @ 0x082F5CA4
 	.incbin "baserom.gba", 0x2f5ca4, 0x4060
