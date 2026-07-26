@@ -44,14 +44,22 @@ def parse_entry(data: bytes, species_id: int) -> dict[str, int | bytes]:
 _SET_RE = re.compile(r"^\s*\.set\s+SPECIES_([A-Za-z0-9_]+)\s*,\s*(0x[0-9A-Fa-f]+|[0-9]+)\s*(?:@.*)?$")
 
 
-def load_species_names(root: Path) -> dict[int, str]:
-    names: dict[int, str] = {}
-    path = root / "constants/species_constants.inc"
+def _load_species_file(path: Path, names: dict[int, str], *, override: bool) -> None:
     for line in path.read_text(encoding="utf-8").splitlines():
         match = _SET_RE.match(line)
         if match:
             name, value = match.groups()
-            names.setdefault(int(value, 0), name)
+            species_id = int(value, 0)
+            if override:
+                names[species_id] = name
+            else:
+                names.setdefault(species_id, name)
+
+
+def load_species_names(root: Path) -> dict[int, str]:
+    names: dict[int, str] = {}
+    _load_species_file(root / "constants/species_constants.inc", names, override=False)
+    _load_species_file(root / "constants/species_rom_order.inc", names, override=True)
     return names
 
 
