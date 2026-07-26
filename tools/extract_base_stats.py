@@ -18,6 +18,27 @@ if TABLE_SIZE % ENTRY_SIZE:
 
 NUM_SPECIES = TABLE_SIZE // ENTRY_SIZE
 
+TYPE_NAMES = {
+    0: "TYPE_NORMAL",
+    1: "TYPE_FIGHTING",
+    2: "TYPE_FLYING",
+    3: "TYPE_POISON",
+    4: "TYPE_GROUND",
+    5: "TYPE_ROCK",
+    6: "TYPE_BUG",
+    7: "TYPE_GHOST",
+    8: "TYPE_STEEL",
+    9: "TYPE_MYSTERY",
+    10: "TYPE_FIRE",
+    11: "TYPE_WATER",
+    12: "TYPE_GRASS",
+    13: "TYPE_ELECTRIC",
+    14: "TYPE_PSYCHIC",
+    15: "TYPE_ICE",
+    16: "TYPE_DRAGON",
+    17: "TYPE_DARK",
+}
+
 
 def read_u16(data: bytes, offset: int) -> int:
     return int.from_bytes(data[offset:offset + 2], "little")
@@ -59,15 +80,18 @@ def _load_species_file(path: Path, names: dict[int, str], *, override: bool) -> 
 def load_species_names(root: Path) -> dict[int, str]:
     names: dict[int, str] = {}
     _load_species_file(root / "constants/species_constants.inc", names, override=False)
-    _load_species_file(root / "constants/species_rom_order.inc", names, override=True)
     return names
+
+
+def format_type(value: int) -> str:
+    return TYPE_NAMES.get(value, f"0x{value:02X}")
 
 
 def format_entry(label: str, e: dict[str, int | bytes]) -> str:
     values = [
         str(e["hp"]), str(e["attack"]), str(e["defense"]), str(e["speed"]),
-        str(e["sp_attack"]), str(e["sp_defense"]), f"0x{e['type1']:02X}",
-        f"0x{e['type2']:02X}", str(e["catch_rate"]), str(e["base_exp"]),
+        str(e["sp_attack"]), str(e["sp_defense"]), format_type(int(e["type1"])),
+        format_type(int(e["type2"])), str(e["catch_rate"]), str(e["base_exp"]),
         f"0x{e['ev_yield']:04X}", f"0x{e['item1']:04X}", f"0x{e['item2']:04X}",
         f"0x{e['gender_ratio']:02X}", str(e["egg_cycles"]),
         str(e["base_friendship"]), f"0x{e['growth_rate']:02X}",
@@ -82,7 +106,10 @@ def generate_inc(rom_data: bytes, species_names: dict[int, str]) -> str:
     table = rom_data[TABLE_ROM_OFFSET:TABLE_ROM_END_OFFSET]
     if len(table) != TABLE_SIZE:
         raise ValueError(f"ROM is too short: got {len(table)} table bytes")
-    lines = [".globl gUnknown_82F0D54", "gUnknown_82F0D54: @ 0x082F0D54", ""]
+    lines = [
+        '.include "constants/type_constants.inc"', "",
+        ".globl gUnknown_82F0D54", "gUnknown_82F0D54: @ 0x082F0D54", "",
+    ]
     for species_id in range(NUM_SPECIES):
         start = species_id * ENTRY_SIZE
         entry = parse_entry(table[start:start + ENTRY_SIZE], species_id)
