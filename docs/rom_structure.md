@@ -1,10 +1,16 @@
 # ROM構造ドキュメント
 
 > **更新:** `script_data` と `.rodata` の通常テキストは現在
-> `data/text/generated/*.inc` に固定アドレスで抽出されています。編集方法は
-> [text_editing.md](text_editing.md) を参照してください。以下の raw `.incbin`
-> ブロック一覧は抽出前の構造資料であり、再生成に必要なラベル／範囲は
-> `data/text/rom_text_layout.json` に保存されています。
+> `data/text/generated/*.inc` に固定アドレスで抽出されています。
+>
+> - **`data/text/generated/event_scripts.inc`**: イベント・フィールドの全通常テキスト（6,741スロット）
+> - **`data/text/generated/rodata.inc`**: メニュー・戦闘・名称などの全通常テキスト（6,158スロット）
+> - **`data/text/generated/manifest.json`**: ラベル・ROMアドレス・元バイト長・検証根拠のマニフェスト
+>
+> 編集方法は [text_editing.md](text_editing.md) を参照してください。
+> 以下の raw `.incbin` ブロック一覧は抽出前の構造資料であり、再生成に必要なラベル／範囲は
+> `data/text/rom_text_layout.json` に保存されています。また、抽出器 `tools/extract_all_text.py`
+> により常に再現可能なため、個別の incbin 分割作業は不要になりました。
 
 このドキュメントは、日本版『ポケットモンスター エメラルド』（pokeemerald-jp）のROM構造を説明します。
 

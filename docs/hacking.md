@@ -22,16 +22,18 @@ make -j$(nproc)
 
 ---
 
-## 現在の進捗（2026-07-25）
+## 現在の進捗（2026-07-26）
 
 ### 完了した内容
 
 - オダマキ博士のオープニングを `data/text/birch_speech.inc` で編集可能にした。
 - ミシロタウンNPC 3件を `data/text/littleroot_town.inc` としてテキスト化した。
 - オダマキ研究所テキスト 25件を `data/text/birch_lab.inc` としてテキスト化した。
+- ミシロタウン看板テキストを `data/text/littleroot_signs.inc` としてテキスト化した。
 - どちらも元のROMアドレスと占有サイズを維持するため、既存のイベント・コードからのポインタはそのまま有効である。
 - `make clean && make` と `make compare` を実行し、SHA-1 `d7cf8f156ba9c455d164e1ea780a6bf1945465c2` の一致を確認した。
-- テキスト抽出自動化ツールを作成した（`tools/extract_texts.py`, `tools/update_event_scripts.py`, `tools/verify_matching.py`）
+- **テキスト一括抽出基盤を構築**：`tools/extract_all_text.py` により、`script_data` セクション（6,741スロット）と `.rodata` セクション（6,158スロット）の全通常テキストを `data/text/generated/*.inc` に固定アドレスで抽出した。
+- テキスト編集方法は [text_editing.md](text_editing.md) に集約。
 
 ### 次の作業
 
@@ -43,16 +45,32 @@ make -j$(nproc)
 
 ## いま編集できるもの（推奨）
 
+### テキスト化済み（個別ファイル）
+
 | 変えたい内容 | 編集するファイル | ラベル / 箇所 | ゲーム内での効果 |
 |---|---|---|---|
 | オダマキ博士の最初のあいさつ | `data/text/birch_speech.inc` | `gText_Birch_Welcome` | ニューゲーム開始直後の博士セリフ冒頭 |
 | 同上・「ポケモンとは」の続き | 同上 | `gText_Birch_MainSpeech` など | オープニング一連のセリフ |
 | 性別確認・名前確認など | 同上 | `gText_Birch_BoyOrGirl` 等 | オープニングの各メッセージ |
 | 日本語の文字↔バイト対応 | `charmap.txt` | 各文字の定義 | `.string` のエンコード結果全体 |
-|| オダマキ研究所の助手セリフ | `data/text/birch_lab.inc` | `gText_BirchLab_Aide_*` | 研究所助手の会話 |
-|| オダマキ研究所の博士セリフ | 同上 | `gText_BirchLab_Birch_*` | 研究所での博士会話 |
-|| オダマキ研究所のライバルセリフ | 同上 | `gText_BirchLab_May_*`, `gText_BirchLab_Brendan_*` | ライバルの会話 |
-|| オダマキ研究所の環境テキスト | 同上 | `gText_BirchLab_*` | 研究所の機器・本棚の説明 |
+| オダマキ研究所の助手セリフ | `data/text/birch_lab.inc` | `gText_BirchLab_Aide_*` | 研究所助手の会話 |
+| オダマキ研究所の博士セリフ | 同上 | `gText_BirchLab_Birch_*` | 研究所での博士会話 |
+| オダマキ研究所のライバルセリフ | 同上 | `gText_BirchLab_May_*`, `gText_BirchLab_Brendan_*` | ライバルの会話 |
+| オダマキ研究所の環境テキスト | 同上 | `gText_BirchLab_*` | 研究所の機器・本棚の説明 |
+| ミシロタウンNPCセリフ | `data/text/littleroot_town.inc` | `gText_LittlerootTown_*` | ミシロタウンの住人会話 |
+| ミシロタウン看板 | `data/text/littleroot_signs.inc` | `gText_LittlerootSigns_*` | ミシロタウンの看板 |
+
+### 一括抽出済み（全通常テキスト）
+
+`data/text/generated/` には、`script_data` と `.rodata` の全通常テキストが固定アドレスで抽出されています。
+
+| ファイル | スロット数 | 内容 |
+|---|---|---|
+| `data/text/generated/event_scripts.inc` | 6,741 | イベント・フィールドの全通常テキスト |
+| `data/text/generated/rodata.inc` | 6,158 | メニュー・戦闘・名称などの全通常テキスト |
+
+各スロットは元のROMアドレスを維持した固定長で、元のバイト長以下であれば自由に編集できます。
+詳細な編集方法は [text_editing.md](text_editing.md) を参照。
 
 詳細な文字コード・バイト長の注意は [text_editing.md](text_editing.md) を参照。
 
@@ -80,14 +98,18 @@ pokeemerald_jp.gba
 | `data/data.s` | グラフィック・テーブル等の巨大データ | 多くが `.incbin`。直接バイナリ差し替えは可能だが危険 |
 | `data/event_scripts.s` | イベントスクリプト・文字列データの置き場 | 一部を `.include` でテキスト化済み |
 | `data/text/` | 人間が読めるセリフソース | **ここを増やすのが Phase 2 の主作業** |
+| `data/text/generated/` | **一括抽出された全通常テキスト** | 6,741 + 6,158 スロットを固定アドレスで編集可能 |
+| `data/text/generated/manifest.json` | 抽出テキストのマニフェスト | ラベル・ROMアドレス・元バイト長・検証根拠を格納 |
+| `data/text/rom_text_layout.json` | ROMテキストレイアウト定義 | 再生成に必要なラベル・範囲情報 |
 | `charmap.txt` | 日本語文字コード表 | `.string` 編集の前提 |
 | `constants/` | 定数定義 | 今後のシンボル化で参照される |
 | `ld_script_jp.txt` | リンカスクリプト（配置） | セクション順・アドレス配置 |
 | `funcmap_jp.txt` | 関数名↔アドレス対応 | 解析・改変箇所の特定に使う |
 | `tools/` | preproc / as / ld / gbafix など | ビルドツール |
-|| `tools/extract_texts.py` | テキスト抽出自動化ツール | Expansionスクリプトからテキストを抽出 |
-|| `tools/update_event_scripts.py` | event_scripts.s更新ツール | incbinブロックを分割してテキストを組み込む |
-|| `tools/verify_matching.py` | マッチング検証ツール | ROMのSHA-1比較・テキスト検証 |
+| | `tools/extract_all_text.py` | **テキスト一括抽出ツール**（全通常テキストを固定アドレスで抽出） |
+| | `tools/extract_texts.py` | 旧・個別テキスト抽出ツール（単発調査用） |
+| | `tools/update_event_scripts.py` | 旧・event_scripts.s更新ツール（単発調査用） |
+| | `tools/verify_matching.py` | 旧・マッチング検証ツール（単発調査用） |
 | `baserom.gba` | オリジナルROM（配布しない） | `.incbin` の元データ |
 | `pokeemerald_jp.gba` | ビルド成果物 | エミュレータで起動するROM |
 | `PokeEm-expansion-CanuseJP/` | 参考用（日本語対応expansion） | 将来の拡張の参考。本ビルドには未統合 |
@@ -100,14 +122,15 @@ pokeemerald_jp.gba
 
 | 状態 | 方法 |
 |---|---|
-| **テキスト化済み**（オダマキOP・ミシロタウンNPC） | 対応する `data/text/*.inc` の `.string` を編集 → `make` |
+| **一括抽出済み**（`data/text/generated/*.inc`） | 対応するラベルの `.string` を編集 → `make`。元のバイト長以下であれば自由に編集可能。詳細は [text_editing.md](text_editing.md) 参照 |
+| **個別テキスト化済み**（オダマキOP・ミシロタウンNPC・研究所・看板） | 対応する `data/text/*.inc` の `.string` を編集 → `make` |
 | **まだ `.incbin`** | ① ROM上の文字列アドレスを特定 ② `.incbin` をやめて `.string` 化 ③ 長さを維持するため `.space` を使う ④ 参照元の即値アドレスをシンボルに変更（`asm/main_menu.s` の例を参照） |
 | **イベントスクリプトの小データ** | `data/event_scripts.s` で `.incbin` を `.string` に置換し、`$` と `.space` で終端・パディングを行う |
 
 **制約（現状）**
 
 - 各文字列にはオリジナルと同じ**占有バイト数**がある
-- 短くする → `.space N` でパディング
+- 短くする → `.space N` でパディング（一括抽出済みのスロットは自動パディング）
 - 長くする → 後続データがずれてクラッシュしうる。空き領域への再配置が必要（未整備）
 
 **制御文字（`.string` 内）**
@@ -211,7 +234,16 @@ Phase 3 で C・JSON・Porymap 連携を目指します。
 
 ---
 
-## 更新履歴（2026-07-24）
+## 更新履歴（2026-07-26）
+
+### テキスト一括抽出基盤
+
+`tools/extract_all_text.py` により、`script_data` と `.rodata` の全通常テキストを固定アドレスで抽出。
+
+- `data/text/generated/event_scripts.inc`：6,741スロット
+- `data/text/generated/rodata.inc`：6,158スロット
+- `data/text/generated/manifest.json`：ラベル・ROMアドレス・元バイト長・検証根拠
+- 抽出状態で `make compare` 一致確認済み
 
 ### ビルド依存
 

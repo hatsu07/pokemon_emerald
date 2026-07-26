@@ -1,26 +1,73 @@
 # テキスト抽出ガイド
 
-> **現在の手順:** 全体抽出は `tools/extract_all_text.py` に統合されています。
-> `data/text/generated/*.inc` を編集する方法は [text_editing.md](text_editing.md) を参照してください。
-> 以下の個別 `extract_texts.py` / `update_event_scripts.py` の説明は、単発の調査用として残しています。
-
 このドキュメントは、日本版『ポケットモンスター エメラルド』のROMからテキストを抽出し、`.string`形式で編集可能にするための完全なガイドです。
+
+---
 
 ## 概要
 
-テキスト抽出プロセスは以下のステップで構成されています：
+テキスト抽出プロセスは以下の2段階で構成されています：
 
-1. **Expansionスクリプトの解析**: `PokeEm-expansion-CanuseJP` のスクリプトからテキスト候補を抽出
-2. **ROM内での位置特定**: 日本版ROMで実際のバイト列を検索
-3. **.incファイル生成**: `.string`形式でテキストファイルを生成
-4. **event_scripts.sの更新**: incbinブロックを分割してテキストファイルを組み込む
-5. **マッチング検証**: ビルドROMとオリジナルROMのSHA-1を比較
+### 現在の方式（推奨）：一括抽出
 
-## ツール
+`tools/extract_all_text.py` により、`script_data` セクションと `.rodata` セクションの全通常テキストを固定アドレスで一括抽出します。
 
-プロジェクトには以下の自動化ツールが含まれています：
+- **抽出結果**: `data/text/generated/event_scripts.inc`（6,741スロット）+ `data/text/generated/rodata.inc`（6,158スロット）
+- **マニフェスト**: `data/text/generated/manifest.json`（ラベル・ROMアドレス・元バイト長・検証根拠）
+- **編集方法**: [text_editing.md](text_editing.md) を参照
 
-### 1. extract_texts.py
+### 旧方式（参考）：個別抽出
+
+`tools/extract_texts.py` + `tools/update_event_scripts.py` による個別テキストの抽出・組み込み。
+単発調査や新規マップのテキスト化に使用します。
+
+---
+
+## 1. 一括抽出（推奨）
+
+### 実行方法
+
+```sh
+python3 tools/extract_all_text.py
+make -j4 compare
+```
+
+抽出器は以下を組み合わせ、元のバイト列に戻せるものだけを採用します。
+
+1. ローカルの日本語参照ソースとの完全バイト一致
+2. フィールドスクリプトでテキスト引数と確定できる未照合ポインタ
+3. Thumb アセンブリで表示・コピー用の文字列 API へ直接渡される未照合ポインタ
+4. Thumb の添字付きポインターテーブルから文字列 API へ渡ることを確認できる文言
+5. マップイベント起点から到達可能で、型別レイアウトを検証した `trainerbattle` の文言
+
+### 出力ファイル
+
+| ファイル | スロット数 | 内容 |
+|---|---|---|
+| `data/text/generated/event_scripts.inc` | 6,741 | イベント・フィールドの全通常テキスト |
+| `data/text/generated/rodata.inc` | 6,158 | メニュー・戦闘・名称などの全通常テキスト |
+| `data/text/generated/manifest.json` | — | ラベル・ROMアドレス・元バイト長・検証根拠 |
+
+### 再生成と検証
+
+```sh
+python3 tools/extract_all_text.py
+make -j4 compare
+```
+
+抽出器は生成後に各セクションを preproc・assembler・objcopy で戻し、`baserom.gba` とバイト単位で照合します。`make compare` も初期抽出状態で成功することを確認済みです。
+
+`tools/extract_all_text.py` を再実行すると、生成済み `.inc` の編集内容は元 ROM 基準で上書きされます。変更を残したい場合は、再生成前にコミットまたは退避してください。
+
+---
+
+## 2. 個別抽出（旧方式・参考）
+
+Expansionのスクリプトから特定のテキストを抽出し、incbinブロックを分割して組み込む手順です。
+
+### ツール
+
+#### 2.1 extract_texts.py
 
 Expansionのscripts.incからテキストを抽出し、日本版ROMで位置を特定して`.string`形式で出力します。
 
@@ -42,7 +89,7 @@ python3 tools/extract_texts.py \
 - `--output`: 出力.incファイルパス
 - `--label-prefix`: ラベルに付けるプレフィックス（オプション）
 
-### 2. update_event_scripts.py
+#### 2.2 update_event_scripts.py
 
 event_scripts.sのincbinブロックを分割してテキスト.incファイルを組み込みます。
 
@@ -62,7 +109,7 @@ python3 tools/update_event_scripts.py \
 - `--last-offset`: テキスト終了ROMオフセット（16進数）
 - `--output`: 出力ファイルパス（省略時は上書き）
 
-### 3. verify_matching.py
+#### 2.3 verify_matching.py
 
 テキスト分離後のROMとオリジナルROMのSHA-1を比較します。
 
@@ -83,11 +130,11 @@ python3 tools/verify_matching.py \
   --original-rom baserom.gba
 ```
 
-## 手動でのテキスト抽出方法
+### 手動でのテキスト抽出方法
 
 ツールを使用しない場合の手動手順：
 
-### ステップ1: Expansionスクリプトからテキストを抽出
+#### ステップ1: Expansionスクリプトからテキストを抽出
 
 `PokeEm-expansion-CanuseJP/data/maps/[マップ名]/scripts.inc` を開き、テキストラベルを探します。
 
@@ -97,7 +144,7 @@ LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork:
 	.string "{JPN}え? オダマキはかせ?\p..."
 ```
 
-### ステップ2: {JPN}プレフィックスを除去
+#### ステップ2: {JPN}プレフィックスを除去
 
 日本版オリジナルROMでは `{JPN}` (FC 15) プレフィックスは使われていないため、これを除去します。
 
@@ -109,7 +156,7 @@ LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork:
 .string "え? オダマキはかせ?\p..."
 ```
 
-### ステップ3: ROMで位置を特定
+#### ステップ3: ROMで位置を特定
 
 テキストをpreprocでバイト列に変換し、ROMで検索します。
 
@@ -127,7 +174,7 @@ test:
 
 このバイト列（最初の数バイト）でROMを検索します。
 
-### ステップ4: .incファイルを作成
+#### ステップ4: .incファイルを作成
 
 検出した情報を使って.incファイルを作成します。
 
@@ -141,7 +188,7 @@ gText_BirchLab_Aide_BirchAwayOnFieldwork:: @ 0x81F1A7D (160 bytes)
 	.string "え? オダマキはかせ?\pはかせ なら フィールドワークに\nでかけていて いませんよ\p..."
 ```
 
-### ステップ5: event_scripts.sを更新
+#### ステップ5: event_scripts.sを更新
 
 該当するincbinブロックを分割して、テキストファイルを組み込みます。
 
@@ -168,7 +215,7 @@ gUnknown_81F217C: @ 0x81F217C
 - 前半: `テキスト開始 - ブロック開始 = 0x1f1a7d - 0x1f1a71 = 0xc`
 - 後半: `ブロック終了 - テキスト終了 = 0x202b0b - 0x1f217c = 0x20894`
 
-### ステップ6: ビルドと検証
+#### ステップ6: ビルドと検証
 
 ```bash
 make -j$(nproc)
@@ -176,6 +223,8 @@ make compare
 ```
 
 SHA-1が一致すれば成功です。
+
+---
 
 ## 制御文字・記法
 
@@ -191,13 +240,15 @@ SHA-1が一致すれば成功です。
 | `{STR_VAR_1}` | `FD 05` | 変数1 |
 | `　` / ` ` | `00` | スペース |
 
+---
+
 ## 重要な注意点
 
 ### 1. バイト長の維持
 
 各テキストエントリは、オリジナルROMと同じ占有バイト数を維持する必要があります。
 
-- **短くする場合**: `.space N` でパディング
+- **短くする場合**: 一括抽出済みのスロットは自動で `0x00` 埋めされます
 - **長くする場合**: 後続アドレスがずれてクラッシュする可能性あり。空き領域への再配置が必要
 
 ### 2. {JPN}プレフィックス
@@ -209,6 +260,8 @@ Expansionのテキストには `{JPN}` プレフィックスが含まれてい�
 一貫性のあるラベル命名を使用してください：
 - `gText_[場所]_[キャラクター]_[内容]`
 - 例: `gText_BirchLab_Aide_BirchAwayOnFieldwork`
+
+---
 
 ## 実践例: オダマキ研究所
 
@@ -228,6 +281,8 @@ make compare
 # SHA-1: d7cf8f156ba9c455d164e1ea780a6bf1945465c2 (一致)
 ```
 
+---
+
 ## 次のステップ
 
 他のマップ/場所のテキストを抽出する場合：
@@ -236,6 +291,15 @@ make compare
 2. `extract_texts.py` を実行
 3. `update_event_scripts.py` で event_scripts.s を更新
 4. ビルドと検証
+
+または、一括抽出ツールで全体を再抽出することもできます：
+
+```sh
+python3 tools/extract_all_text.py
+make -j4 compare
+```
+
+---
 
 ## トラブルシューティング
 
@@ -256,6 +320,8 @@ make compare
 - すべてのテキストが正しくエンコードされているか確認
 - incbinブロックのサイズ計算が正しいか確認
 - `verify_matching.py --verify-text` で各テキストを検証
+
+---
 
 ## 参考ドキュメント
 
