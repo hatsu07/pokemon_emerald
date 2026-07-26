@@ -1,5 +1,3 @@
-	.include "constants/constants.inc"
-
 @ スターターポケモンの種族IDテーブル
 @ このファイルを編集することで、最初に選ぶポケモンを変更できます。
 @ 種族IDは constants/species_constants.inc で定義。
