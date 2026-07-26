@@ -24920,12 +24920,10 @@ gUnknown_82ED050: @ 0x082ED050
 	.globl gUnknown_82ED13C
 gUnknown_82ED13C: @ 0x082ED13C
 	.incbin "baserom.gba", 0x2ed13c, 0xe4
-	.globl gUnknown_82ED220
-gUnknown_82ED220: @ 0x082ED220
-	.incbin "baserom.gba", 0x2ed220, 0x4
-	.globl gUnknown_82ED224
-gUnknown_82ED224: @ 0x082ED224
-	.incbin "baserom.gba", 0x2ed224, 0x10b0
+
+	.include "data/pokemon/battle_moves.inc"
+	.incbin "baserom.gba", 0x2ee2c4, 0x10
+
 	.globl gUnknown_82EE2D4
 gUnknown_82EE2D4: @ 0x082EE2D4
 	.incbin "baserom.gba", 0x2ee2d4, 0x336
