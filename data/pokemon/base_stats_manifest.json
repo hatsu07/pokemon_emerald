@@ -5,7 +5,7 @@
   "num_entries": 412,
   "total_size": 11536,
   "table_end_rom_offset": "0x2f3a64",
-  "gunknown_82f0d65_remaining": 8516,
+  "gunknown_82f0d65_remaining": 8768,
   "incbin_blocks": [
     {
       "label": "gUnknown_82F0D54",
