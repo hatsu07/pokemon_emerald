@@ -81,9 +81,10 @@ gUnknown_82FAD4C: @ 0x082FAD4C
 	.globl gUnknown_82FAD64
 gUnknown_82FAD64: @ 0x082FAD64
 	.incbin "baserom.gba", 0x2fad64, 0xa00
-	.globl gUnknown_82FB764
-gUnknown_82FB764: @ 0x082FB764
-	.incbin "baserom.gba", 0x2fb764, 0x8e8
+
+	.include "data/pokemon/egg_moves.inc"
+	.incbin "baserom.gba", 0x2fc04a, 0x2
+
 	.globl gUnknown_82FC04C
 gUnknown_82FC04C: @ 0x082FC04C
 	.incbin "baserom.gba", 0x2fc04c, 0x20
