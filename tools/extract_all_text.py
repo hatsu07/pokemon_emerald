@@ -2473,7 +2473,7 @@ def main() -> int:
     )
     parser.add_argument("--rom", type=Path, default=Path("baserom.gba"))
     parser.add_argument("--reference-root", type=Path, default=Path("PokeEm-expansion-CanuseJP"))
-    parser.add_argument("--charmap", type=Path, default=Path("charmap.txt"))
+    parser.add_argument("--charmap", type=Path, default=Path("tools/charmap.txt"))
     parser.add_argument("--preproc", type=Path, default=Path("tools/preproc/preproc"))
     parser.add_argument(
         "--asm-dir",

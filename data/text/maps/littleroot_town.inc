@@ -16,7 +16,7 @@ gText_LittlerootTown_Twin_IfYouGoInGrassPokemonWillJumpOut:: @ 0x81E45BC (53 byt
 	.string "あの あの あのね!\pここから さきの どうろ\nくさむらに はいると\lやせいの ポケモンが でてくるの!$"
 
 @ Phase 2: ミシロタウン看板テキスト（日本版）
-@ 文字コードは charmap.txt。.string は tools/preproc がバイト列へ変換する。
+@ 文字コードは tools/charmap.txt。.string は tools/preproc がバイト列へ変換する。
 @ 各エントリの占有サイズはオリジナルROMと同じにし、後続データのアドレスを維持する。
 
 	.globl gText_LittlerootTown_Sign_ProfBirchsLab

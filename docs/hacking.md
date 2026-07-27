@@ -53,7 +53,7 @@ make -j$(nproc)
 | オダマキ博士の最初のあいさつ | `data/text/birch_speech.inc` | `gText_Birch_Welcome` | ニューゲーム開始直後の博士セリフ冒頭 |
 | 同上・「ポケモンとは」の続き | 同上 | `gText_Birch_MainSpeech` など | オープニング一連のセリフ |
 | 性別確認・名前確認など | 同上 | `gText_Birch_BoyOrGirl` 等 | オープニングの各メッセージ |
-| 日本語の文字↔バイト対応 | `charmap.txt` | 各文字の定義 | `.string` のエンコード結果全体 |
+| 日本語の文字↔バイト対応 | `tools/charmap.txt` | 各文字の定義 | `.string` のエンコード結果全体 |
 | オダマキ研究所の助手セリフ | `data/text/birch_lab.inc` | `gText_BirchLab_Aide_*` | 研究所助手の会話 |
 | オダマキ研究所の博士セリフ | 同上 | `gText_BirchLab_Birch_*` | 研究所での博士会話 |
 | オダマキ研究所のライバルセリフ | 同上 | `gText_BirchLab_May_*`, `gText_BirchLab_Brendan_*` | ライバルの会話 |
@@ -80,7 +80,7 @@ make -j$(nproc)
 ```
 data/text/*.inc  の .string
         ↓
-tools/preproc/preproc + charmap.txt
+tools/preproc/preproc + tools/charmap.txt
         ↓
 data/event_scripts.s（.include）
         ↓
@@ -102,7 +102,7 @@ pokeemerald_jp.gba
 | `data/text/generated/` | **一括抽出された全通常テキスト** | 6,741 + 6,158 スロットを固定アドレスで編集可能 |
 | `data/text/generated/manifest.json` | 抽出テキストのマニフェスト | ラベル・ROMアドレス・元バイト長・検証根拠を格納 |
 | `data/text/rom_text_layout.json` | ROMテキストレイアウト定義 | 再生成に必要なラベル・範囲情報 |
-| `charmap.txt` | 日本語文字コード表 | `.string` 編集の前提 |
+| `tools/charmap.txt` | 日本語文字コード表 | `.string` 編集の前提 |
 | `constants/` | 定数定義 | 今後のシンボル化で参照される |
 | `ld_script_jp.txt` | リンカスクリプト（配置） | セクション順・アドレス配置 |
 | `funcmap_jp.txt` | 関数名↔アドレス対応 | 解析・改変箇所の特定に使う |
@@ -309,7 +309,7 @@ from pathlib import Path
 test_s = 't:\n    .string "探したいテキスト$"\n'
 with open('/tmp/t.s', 'w') as f:
     f.write(test_s)
-r = subprocess.run(['tools/preproc/preproc', '/tmp/t.s', 'charmap.txt'],
+r = subprocess.run(['tools/preproc/preproc', '/tmp/t.s', 'tools/charmap.txt'],
                    capture_output=True, text=True)
 # 出力: t:\n\t.byte 0xXX, 0xXX, ..., 0xFF
 
