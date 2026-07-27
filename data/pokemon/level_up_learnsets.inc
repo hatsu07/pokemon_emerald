@@ -5205,4 +5205,5 @@ gChimechoLevelUpLearnset:
     level_up_move 41, MOVE_SAFEGUARD
     level_up_move 46, MOVE_PSYCHIC
     .2byte 0xFFFF
+
     .2byte 0x0000
