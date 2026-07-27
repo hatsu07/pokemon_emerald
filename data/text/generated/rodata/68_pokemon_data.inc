@@ -24,7 +24,7 @@ gUnknown_82EF1A0: @ 0x082EF1A0
 	.incbin "baserom.gba", 0x2ef1a0, 0x80
 	.globl gUnknown_82EF220
 gUnknown_82EF220: @ 0x082EF220
-	.incbin "baserom.gba", 0x2ef220, 0xce0
+	.include "data/pokemon/tmhm_learnsets.inc"
 	.globl gUnknown_82EFF00
 gUnknown_82EFF00: @ 0x082EFF00
 	.incbin "baserom.gba", 0x2eff00, 0x52
