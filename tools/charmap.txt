@@ -349,7 +349,6 @@ STRING = FD
 @ Full-width variants of existing ASCII punctuation.
 '＝' = 35
 '；' = 36
-'＿' = AE
 
 @ string placeholders
 PLAYER         = FD 01

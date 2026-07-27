@@ -2233,7 +2233,3 @@ gText_Rom_2EA300: @ 0x082EA300
 	.space 0x4 - (. - gText_Rom_2EA300)
 	.endif
 	.incbin "baserom.gba", 0x2ea304, 0x18
-	.globl gUnknown_82EA31C
-gUnknown_82EA31C: @ 0x082EA31C
-	.incbin "baserom.gba", 0x2ea31c, 0x6
-
