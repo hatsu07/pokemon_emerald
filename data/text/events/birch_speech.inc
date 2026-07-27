@@ -1,5 +1,5 @@
 @ Phase 2: オダマキ博士のオープニングセリフ（日本版）
-@ 文字コードは charmap.txt。.string は tools/preproc がバイト列へ変換する。
+@ 文字コードは tools/charmap.txt。.string は tools/preproc がバイト列へ変換する。
 @ 各エントリの占有サイズはオリジナルROMと同じにし、後続データのアドレスを維持する。
 @ .string は元の物理スロットを超えられない。短縮時は 0x00 で埋める。
 

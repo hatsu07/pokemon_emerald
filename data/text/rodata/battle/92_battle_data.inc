@@ -1,26 +1,3 @@
-	@ src/data/easy_chat/easy_chat_group_trainer.h:106 easy_chat_group_trainer_line_106 (+1 aliases)
-	.globl gText_Rom_560930
-gText_Rom_560930: @ 0x08560930
-	.string "ルビー$"
-	.if (. - gText_Rom_560930) > 0x4
-	.error "gText_Rom_560930 may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_560930) < 0x4
-	.space 0x4 - (. - gText_Rom_560930)
-	.endif
-	.incbin "baserom.gba", 0x560934, 0x24
-
-	@ src/data/easy_chat/easy_chat_group_trainer.h:22 easy_chat_group_trainer_line_22 (+1 aliases)
-	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_560958
-gText_Rom_560958: @ 0x08560958
-	.string "サファイア$"
-	.if (. - gText_Rom_560958) != 0x6
-	.error "gText_Rom_560958 must retain its original byte length"
-	.endif
-	.globl gText_Rom_560959
-	.set gText_Rom_560959, gText_Rom_560958 + 0x1
-	.incbin "baserom.gba", 0x56095e, 0x72
 	.globl gUnknown_85609D0
 gUnknown_85609D0: @ 0x085609D0
 	.incbin "baserom.gba", 0x5609d0, 0x4

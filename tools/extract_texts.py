@@ -72,7 +72,7 @@ def generate_inc_file(texts_data, output_path):
     """テキストデータから.incファイルを生成する"""
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write("@ Phase 2: テキスト化（日本版）\n")
-        f.write("@ 文字コードは charmap.txt。.string は tools/preproc がバイト列へ変換する。\n")
+        f.write("@ 文字コードは tools/charmap.txt。.string は tools/preproc がバイト列へ変換する。\n")
         f.write("@ 各エントリの占有サイズはオリジナルROMと同じにし、後続データのアドレスを維持する。\n\n")
         
         for label, text, rom_offset, byte_count in texts_data:
@@ -85,7 +85,7 @@ def main():
     parser = argparse.ArgumentParser(description='テキスト抽出スクリプト')
     parser.add_argument('--expansion-scripts', required=True, help='Expansionのscripts.incパス')
     parser.add_argument('--rom', default='baserom.gba', help='ROMファイルパス')
-    parser.add_argument('--charmap', default='charmap.txt', help='charmap.txtパス')
+    parser.add_argument('--charmap', default='tools/charmap.txt', help='tools/charmap.txtパス')
     parser.add_argument('--preproc', default='tools/preproc/preproc', help='preproc実行ファイルパス')
     parser.add_argument('--output', required=True, help='出力.incファイルパス')
     parser.add_argument('--label-prefix', default='', help='ラベルに付けるプレフィックス')

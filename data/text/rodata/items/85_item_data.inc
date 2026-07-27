@@ -3077,55 +3077,26 @@ gText_Rom_55CEC0: @ 0x0855CEC0
 	.space 0x22 - (. - gText_Rom_55CEC0)
 	.endif
 	.incbin "baserom.gba", 0x55cee2, 0x6
+	.align 2
+	.globl gItems
 	.globl gUnknown_855CEE8
+gItems:
 gUnknown_855CEE8: @ 0x0855CEE8
-	.incbin "baserom.gba", 0x55cee8, 0x2c
+	.include "data/items/items.inc"
 
-	@ src/data/easy_chat/easy_chat_group_hobbies.h:274 easy_chat_group_hobbies_line_274 (+2 aliases)
+	@ Existing symbols that point inside item-name fields.
 	.globl gText_Rom_55CF14
-gText_Rom_55CF14: @ 0x0855CF14
-	.string "ボール$"
-	.if (. - gText_Rom_55CF14) > 0x4
-	.error "gText_Rom_55CF14 may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_55CF14) < 0x4
-	.space 0x4 - (. - gText_Rom_55CF14)
-	.endif
-	.incbin "baserom.gba", 0x55cf18, 0x24
+	.set gText_Rom_55CF14, gItems + 0x2c
 
-	@ src/data/easy_chat/easy_chat_group_hobbies.h:274 easy_chat_group_hobbies_line_274 (+2 aliases)
 	.globl gText_Rom_55CF3C
-gText_Rom_55CF3C: @ 0x0855CF3C
-	.string "ボール$"
-	.if (. - gText_Rom_55CF3C) > 0x4
-	.error "gText_Rom_55CF3C may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_55CF3C) < 0x4
-	.space 0x4 - (. - gText_Rom_55CF3C)
-	.endif
-	.incbin "baserom.gba", 0x55cf40, 0x24
+	.set gText_Rom_55CF3C, gItems + 0x54
 
-	@ src/data/easy_chat/easy_chat_group_hobbies.h:274 easy_chat_group_hobbies_line_274 (+2 aliases)
 	.globl gText_Rom_55CF64
-gText_Rom_55CF64: @ 0x0855CF64
-	.string "ボール$"
-	.if (. - gText_Rom_55CF64) > 0x4
-	.error "gText_Rom_55CF64 may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_55CF64) < 0x4
-	.space 0x4 - (. - gText_Rom_55CF64)
-	.endif
-	.incbin "baserom.gba", 0x55cf68, 0x20
+	.set gText_Rom_55CF64, gItems + 0x7c
 
-	@ src/strings.c:208 strings_line_208
-	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_55CF88
-gText_Rom_55CF88: @ 0x0855CF88
-	.string "モンスターボール$"
-	.if (. - gText_Rom_55CF88) != 0x9
-	.error "gText_Rom_55CF88 must retain its original byte length"
-	.endif
+	.set gText_Rom_55CF88, gItems + 0xa0
+
 	.globl gText_Rom_55CF8D
-	.set gText_Rom_55CF8D, gText_Rom_55CF88 + 0x5
-	.incbin "baserom.gba", 0x55cf91, 0x1f
+	.set gText_Rom_55CF8D, gItems + 0xa5
 
