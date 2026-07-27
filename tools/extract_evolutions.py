@@ -626,14 +626,12 @@ def main() -> None:
 
     nonempty_count = 0
 
-    for species_id in range(species_count):
+    # ROM上のテーブルはspecies 1から始まる。
+    # syntheticなspecies 0は追加せず、元ROMと同じサイズを維持する。
+    for species_id in range(1, species_count):
         species_name = format_constant(species, species_id, "SPECIES")
-        # このROMではテーブルがspecies 1から始まる可能性がある。
-        # species 0はゼロエントリとして生成する。
         entry_offset = (
             species1_offset + (species_id - 1) * species_stride
-            if species_id > 0
-            else -1
         )
 
         lines.extend(
@@ -646,13 +644,11 @@ def main() -> None:
         )
 
         for slot in range(EVOS_PER_MON):
-            if species_id == 0:
-                method = param = target = 0
-            else:
-                record_offset = entry_offset + slot * record_stride
-                method = read_u16(rom, record_offset)
-                param = read_u16(rom, record_offset + 2)
-                target = read_u16(rom, record_offset + 4)
+            record_offset = entry_offset + slot * record_stride
+            method = read_u16(rom, record_offset)
+            param = read_u16(rom, record_offset + 2)
+            target = read_u16(rom, record_offset + 4)
+            extra = read_u16(rom, record_offset + 6)
 
             method_name = format_constant(evo_methods, method, "EVO_METHOD")
             target_name = format_constant(species, target, "SPECIES")
@@ -660,15 +656,21 @@ def main() -> None:
 
             if method == 0 and param == 0 and target == 0:
                 lines.append(
-                    "\t.2byte EVO_NONE, 0, SPECIES_NONE"
-                    f" @ slot {slot}"
+                    "\t.2byte EVO_NONE, 0, SPECIES_NONE, "
+                    f"0x{extra:04X} @ slot {slot}"
                 )
             else:
                 nonempty_count += 1
                 lines.append(
-                    f"\t.2byte {method_name}, {param_name}, {target_name}"
-                    f" @ slot {slot}"
+                    f"\t.2byte {method_name}, {param_name}, {target_name}, "
+                    f"0x{extra:04X} @ slot {slot}"
                 )
+
+    generated_size = (species_count - 1) * species_stride
+    if generated_size != table_size:
+        raise SystemExit(
+            f"生成サイズ不一致: 0x{generated_size:X} != 0x{table_size:X}"
+        )
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
