@@ -7,7 +7,7 @@
 | 範囲 | ファイル | 初期スロット数 |
 |---|---|---:|
 | イベント・フィールド文 | `data/text/generated/event_scripts.inc` | 6,741 |
-| メニュー・戦闘・名称など | `data/text/generated/rodata.inc` | 6,158 |
+| メニュー・戦闘・名称など | `data/rodata.inc` | 6,158（`data/text/rodata/` に分割・構造化済み） |
 
 既存の `data/text/birch_lab.inc` と `data/text/birch_speech.inc` も、前者からそのまま include され、同じ固定長ガードを持ちます。各生成文字列は `gText_Rom_<ROMオフセット>` というラベルです。たとえば `gText_Rom_5CCCD4` は ROM オフセット `0x5CCCD4` にある文言です。
 

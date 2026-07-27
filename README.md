@@ -102,7 +102,7 @@
 - [x] テキスト分離後の Matching 確認（`make compare`）
 - [x] **テキスト一括抽出基盤（`tools/extract_all_text.py`）**
   - [x] `script_data` セクションの全通常テキストを固定アドレスで抽出（`data/text/generated/event_scripts.inc`：6,741スロット）
-  - [x] `.rodata` セクションの全通常テキストを固定アドレスで抽出（`data/text/generated/rodata.inc`：6,158スロット）
+  - [x] `.rodata` セクションの全通常テキストを固定アドレスで抽出（`data/rodata.inc`：6,158スロット）
   - [x] 抽出結果のマニフェスト（`data/text/generated/manifest.json`）
   - [x] 抽出状態での `make compare` 一致確認
 - [x] ハックガイド作成（[docs/hacking.md](docs/hacking.md)）
@@ -110,6 +110,16 @@
 - [x] ROM構造の網羅的ドキュメント（[docs/rom_structure.md](docs/rom_structure.md)）
 - [x] フォント・グラフィック解析（[docs/font_graphics.md](docs/font_graphics.md)）
 - [x] イベント・スクリプト仕様の整理（[docs/event_scripts.md](docs/event_scripts.md)）
+- [x] **rodata データの分割・構造化**（`data/text/rodata/`）
+  - [x] 戦闘データ（`battle/`）
+  - [x] コンテストデータ（`contests/`）
+  - [x] クレジットテキスト（`credits/`）
+  - [x] アイテムデータ（`items/`）
+  - [x] マップテキスト（`maps/`）
+  - [x] メニューテキスト（`menus/`）
+  - [x] 技データ（`moves/`）
+  - [x] ポケモンデータ（`pokemon/`：レベルアップ技を含む）
+  - [x] リボンテキスト（`ribbons/`）
 
 ### Phase 3 - Modding
 
@@ -117,12 +127,13 @@
 - [ ] マップ / イベント追加基盤
 - [ ] ポケモン・技・アイテム等のデータ編集基盤
 
-**最新更新**: 2026-07-26
+**最新更新**: 2026-07-27
 
 - Phase 1 (Matching) 完了
 - SHA-1: `d7cf8f156ba9c455d164e1ea780a6bf1945465c2`（オリジナルと一致）
 - Phase 2: オダマキOP・ミシロタウンNPC 3件・オダマキ研究所テキスト 25件・ミシロタウン看板を `.string` 化
 - **全体テキスト抽出基盤 構築完了**: `script_data`（6,741スロット）と `.rodata`（6,158スロット）の全通常テキストを `data/text/generated/*.inc` に固定アドレスで抽出
+- **rodata データの分割・構造化完了**: `data/text/rodata/` 以下に戦闘・コンテスト・クレジット・アイテム・マップ・メニュー・技・ポケモン・リボンデータを分割・構造化
 - テキスト編集方法は [docs/text_editing.md](docs/text_editing.md) に集約
 - ハック手順は [docs/hacking.md](docs/hacking.md) に集約
 
