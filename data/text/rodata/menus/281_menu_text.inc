@@ -389,12 +389,9 @@ gUnknown_85DFCC8: @ 0x085DFCC8
 	.globl gUnknown_85E08AC
 gUnknown_85E08AC: @ 0x085E08AC
 	.incbin "baserom.gba", 0x5e08ac, 0x18
-	.globl gUnknown_85E08C4
-gUnknown_85E08C4: @ 0x085E08C4
-	.incbin "baserom.gba", 0x5e08c4, 0x3c
-	.globl gUnknown_85E0900
-gUnknown_85E0900: @ 0x085E0900
-	.incbin "baserom.gba", 0x5e0900, 0x670
+
+	.include "data/pokemon/tutor_learnsets.inc"
+
 	.globl gUnknown_85E0F70
 gUnknown_85E0F70: @ 0x085E0F70
 	.incbin "baserom.gba", 0x5e0f70, 0x2c
