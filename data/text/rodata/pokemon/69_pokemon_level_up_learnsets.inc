@@ -1,11 +1,13 @@
-	.include "data/pokemon/level_up_learnsets.inc"
+.include "data/pokemon/level_up_learnsets.inc"
 
 	.globl gUnknown_82F5CA4
 gUnknown_82F5CA4: @ 0x082F5CA4
-	.incbin "baserom.gba", 0x2f5ca4, 0x4060
+	.incbin "baserom.gba", 0x2f5ca4, 0x28
+
+	.include "data/pokemon/evolution.inc"
 
 	.include "data/pokemon/level_up_learnset_pointers.inc"
-
+	
 	.globl gUnknown_82FA374
 gUnknown_82FA374: @ 0x082FA374
 	.incbin "baserom.gba", 0x2fa374, 0x19b
@@ -144,4 +146,4 @@ gUnknown_82FC0F8: @ 0x082FC0F8
 	.incbin "baserom.gba", 0x2fc0f8, 0x2
 	.globl gUnknown_82FC0FA
 gUnknown_82FC0FA: @ 0x082FC0FA
-
+	
