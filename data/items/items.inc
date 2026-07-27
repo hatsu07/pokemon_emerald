@@ -426,11 +426,11 @@ gItem_018: @ まひなおし
 
 @ ------------------------------------------------------------------
 @ Item table index: 19
-@ Item name: {MUS_RG_POKE_TOWER}ふくのくすり
+@ Item name: かいふくのくすり
 @ ROM offset: 0x0055D1E0
 @ Stored item ID: 0x0013
 @ ------------------------------------------------------------------
-gItem_019: @ {MUS_RG_POKE_TOWER}ふくのくすり
+gItem_019: @ かいふくのくすり
 	.byte 0x06, 0x02, 0x1C, 0x08, 0x19, 0x08, 0x0D, 0x28, 0xFF, 0x00       @ name[10]
 	.2byte 0x0013                                                          @ itemId
 	.2byte 3000                                                            @ price
@@ -470,11 +470,11 @@ gItem_020: @ まんたんのくすり
 
 @ ------------------------------------------------------------------
 @ Item table index: 21
-@ Item name: す{PH_FLEECE_BLEND}キズぐすり
+@ Item name: すごいキズぐすり
 @ ROM offset: 0x0055D230
 @ Stored item ID: 0x0015
 @ ------------------------------------------------------------------
-gItem_021: @ す{PH_FLEECE_BLEND}キズぐすり
+gItem_021: @ すごいキズぐすり
 	.byte 0x0D, 0x3B, 0x02, 0x57, 0x8E, 0x39, 0x0D, 0x28, 0xFF, 0x00       @ name[10]
 	.2byte 0x0015                                                          @ itemId
 	.2byte 1200                                                            @ price
@@ -492,11 +492,11 @@ gItem_021: @ す{PH_FLEECE_BLEND}キズぐすり
 
 @ ------------------------------------------------------------------
 @ Item table index: 22
-@ Item name: {MUS_RG_OAK}キズぐすり
+@ Item name: いいキズぐすり
 @ ROM offset: 0x0055D258
 @ Stored item ID: 0x0016
 @ ------------------------------------------------------------------
-gItem_022: @ {MUS_RG_OAK}キズぐすり
+gItem_022: @ いいキズぐすり
 	.byte 0x02, 0x02, 0x57, 0x8E, 0x39, 0x0D, 0x28, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0016                                                          @ itemId
 	.2byte 700                                                             @ price
@@ -580,11 +580,11 @@ gItem_025: @ げんきのかたまり
 
 @ ------------------------------------------------------------------
 @ Item table index: 26
-@ Item name: {MUS_RG_SURF}{MUS_RG_VICTORY_GYM_LEADER}みず
+@ Item name: おいしいみず
 @ ROM offset: 0x0055D2F8
 @ Stored item ID: 0x001A
 @ ------------------------------------------------------------------
-gItem_026: @ {MUS_RG_SURF}{MUS_RG_VICTORY_GYM_LEADER}みず
+gItem_026: @ おいしいみず
 	.byte 0x05, 0x02, 0x0C, 0x02, 0x20, 0x3E, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x001A                                                          @ itemId
 	.2byte 200                                                             @ price
@@ -844,11 +844,11 @@ gItem_037: @ ピーピーマックス
 
 @ ------------------------------------------------------------------
 @ Item table index: 38
-@ Item name: フエンせん{PH_GOAT_SOLO}
+@ Item name: フエンせんべい
 @ ROM offset: 0x0055D4D8
 @ Stored item ID: 0x0026
 @ ------------------------------------------------------------------
-gItem_038: @ フエンせん{PH_GOAT_SOLO}
+gItem_038: @ フエンせんべい
 	.byte 0x6C, 0x54, 0x7E, 0x0E, 0x2E, 0x49, 0x02, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0026                                                          @ itemId
 	.2byte 200                                                             @ price
@@ -866,11 +866,11 @@ gItem_038: @ フエンせん{PH_GOAT_SOLO}
 
 @ ------------------------------------------------------------------
 @ Item table index: 39
-@ Item name: あ{MUS_RG_SURF}ビードロ
+@ Item name: あおいビードロ
 @ ROM offset: 0x0055D500
 @ Stored item ID: 0x0027
 @ ------------------------------------------------------------------
-gItem_039: @ あ{MUS_RG_SURF}ビードロ
+gItem_039: @ あおいビードロ
 	.byte 0x01, 0x05, 0x02, 0x97, 0xAE, 0x95, 0x7B, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0027                                                          @ itemId
 	.2byte 100                                                             @ price
@@ -888,11 +888,11 @@ gItem_039: @ あ{MUS_RG_SURF}ビードロ
 
 @ ------------------------------------------------------------------
 @ Item table index: 40
-@ Item name: {MUS_RG_SILPH}ろビードロ
+@ Item name: きいろビードロ
 @ ROM offset: 0x0055D528
 @ Stored item ID: 0x0028
 @ ------------------------------------------------------------------
-gItem_040: @ {MUS_RG_SILPH}ろビードロ
+gItem_040: @ きいろビードロ
 	.byte 0x07, 0x02, 0x2B, 0x97, 0xAE, 0x95, 0x7B, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0028                                                          @ itemId
 	.2byte 200                                                             @ price
@@ -910,11 +910,11 @@ gItem_040: @ {MUS_RG_SILPH}ろビードロ
 
 @ ------------------------------------------------------------------
 @ Item table index: 41
-@ Item name: あ{MUS_RG_POKE_TOWER}ビードロ
+@ Item name: あかいビードロ
 @ ROM offset: 0x0055D550
 @ Stored item ID: 0x0029
 @ ------------------------------------------------------------------
-gItem_041: @ あ{MUS_RG_POKE_TOWER}ビードロ
+gItem_041: @ あかいビードロ
 	.byte 0x01, 0x06, 0x02, 0x97, 0xAE, 0x95, 0x7B, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0029                                                          @ itemId
 	.2byte 300                                                             @ price
@@ -932,11 +932,11 @@ gItem_041: @ あ{MUS_RG_POKE_TOWER}ビードロ
 
 @ ------------------------------------------------------------------
 @ Item table index: 42
-@ Item name: く{MUS_RG_ENCOUNTER_DEOXYS}ビードロ
+@ Item name: くろいビードロ
 @ ROM offset: 0x0055D578
 @ Stored item ID: 0x002A
 @ ------------------------------------------------------------------
-gItem_042: @ く{MUS_RG_ENCOUNTER_DEOXYS}ビードロ
+gItem_042: @ くろいビードロ
 	.byte 0x08, 0x2B, 0x02, 0x97, 0xAE, 0x95, 0x7B, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x002A                                                          @ itemId
 	.2byte 400                                                             @ price
@@ -954,11 +954,11 @@ gItem_042: @ く{MUS_RG_ENCOUNTER_DEOXYS}ビードロ
 
 @ ------------------------------------------------------------------
 @ Item table index: 43
-@ Item name: し{MUS_RG_ENCOUNTER_DEOXYS}ビードロ
+@ Item name: しろいビードロ
 @ ROM offset: 0x0055D5A0
 @ Stored item ID: 0x002B
 @ ------------------------------------------------------------------
-gItem_043: @ し{MUS_RG_ENCOUNTER_DEOXYS}ビードロ
+gItem_043: @ しろいビードロ
 	.byte 0x0C, 0x2B, 0x02, 0x97, 0xAE, 0x95, 0x7B, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x002B                                                          @ itemId
 	.2byte 500                                                             @ price
@@ -998,11 +998,11 @@ gItem_044: @ きのみジュース
 
 @ ------------------------------------------------------------------
 @ Item table index: 45
-@ Item name: {MUS_RG_PEWTER}なる{MUS_RG_POKE_JUMP}
+@ Item name: せいなるはい
 @ ROM offset: 0x0055D5F0
 @ Stored item ID: 0x002D
 @ ------------------------------------------------------------------
-gItem_045: @ {MUS_RG_PEWTER}なる{MUS_RG_POKE_JUMP}
+gItem_045: @ せいなるはい
 	.byte 0x0E, 0x02, 0x15, 0x29, 0x1A, 0x02, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x002D                                                          @ itemId
 	.2byte 200                                                             @ price
@@ -1042,11 +1042,11 @@ gItem_046: @ あさせのしお
 
 @ ------------------------------------------------------------------
 @ Item table index: 47
-@ Item name: あさせの{MUS_RG_POKE_TOWER}がら
+@ Item name: あさせのかいがら
 @ ROM offset: 0x0055D640
 @ Stored item ID: 0x002F
 @ ------------------------------------------------------------------
-gItem_047: @ あさせの{MUS_RG_POKE_TOWER}がら
+gItem_047: @ あさせのかいがら
 	.byte 0x01, 0x0B, 0x0E, 0x19, 0x06, 0x02, 0x37, 0x27, 0xFF, 0x00       @ name[10]
 	.2byte 0x002F                                                          @ itemId
 	.2byte 20                                                              @ price
@@ -1064,11 +1064,11 @@ gItem_047: @ あさせの{MUS_RG_POKE_TOWER}がら
 
 @ ------------------------------------------------------------------
 @ Item table index: 48
-@ Item name: あ{MUS_RG_POKE_TOWER}かけら
+@ Item name: あかいかけら
 @ ROM offset: 0x0055D668
 @ Stored item ID: 0x0030
 @ ------------------------------------------------------------------
-gItem_048: @ あ{MUS_RG_POKE_TOWER}かけら
+gItem_048: @ あかいかけら
 	.byte 0x01, 0x06, 0x02, 0x06, 0x09, 0x27, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0030                                                          @ itemId
 	.2byte 200                                                             @ price
@@ -1086,11 +1086,11 @@ gItem_048: @ あ{MUS_RG_POKE_TOWER}かけら
 
 @ ------------------------------------------------------------------
 @ Item table index: 49
-@ Item name: あ{MUS_RG_SURF}かけら
+@ Item name: あおいかけら
 @ ROM offset: 0x0055D690
 @ Stored item ID: 0x0031
 @ ------------------------------------------------------------------
-gItem_049: @ あ{MUS_RG_SURF}かけら
+gItem_049: @ あおいかけら
 	.byte 0x01, 0x05, 0x02, 0x06, 0x09, 0x27, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0031                                                          @ itemId
 	.2byte 200                                                             @ price
@@ -1108,11 +1108,11 @@ gItem_049: @ あ{MUS_RG_SURF}かけら
 
 @ ------------------------------------------------------------------
 @ Item table index: 50
-@ Item name: {MUS_RG_SILPH}{MUS_RG_ENCOUNTER_DEOXYS}かけら
+@ Item name: きいろいかけら
 @ ROM offset: 0x0055D6B8
 @ Stored item ID: 0x0032
 @ ------------------------------------------------------------------
-gItem_050: @ {MUS_RG_SILPH}{MUS_RG_ENCOUNTER_DEOXYS}かけら
+gItem_050: @ きいろいかけら
 	.byte 0x07, 0x02, 0x2B, 0x02, 0x06, 0x09, 0x27, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0032                                                          @ itemId
 	.2byte 200                                                             @ price
@@ -2054,11 +2054,11 @@ gItem_092: @ ????????
 
 @ ------------------------------------------------------------------
 @ Item table index: 93
-@ Item name: {MUS_RG_RIVAL_EXIT}よう{MUS_RG_NEW_GAME_EXIT}し
+@ Item name: たいようのいし
 @ ROM offset: 0x0055DD70
 @ Stored item ID: 0x005D
 @ ------------------------------------------------------------------
-gItem_093: @ {MUS_RG_RIVAL_EXIT}よう{MUS_RG_NEW_GAME_EXIT}し
+gItem_093: @ たいようのいし
 	.byte 0x10, 0x02, 0x26, 0x03, 0x19, 0x02, 0x0C, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x005D                                                          @ itemId
 	.2byte 2100                                                            @ price
@@ -2076,11 +2076,11 @@ gItem_093: @ {MUS_RG_RIVAL_EXIT}よう{MUS_RG_NEW_GAME_EXIT}し
 
 @ ------------------------------------------------------------------
 @ Item table index: 94
-@ Item name: つき{MUS_RG_NEW_GAME_EXIT}し
+@ Item name: つきのいし
 @ ROM offset: 0x0055DD98
 @ Stored item ID: 0x005E
 @ ------------------------------------------------------------------
-gItem_094: @ つき{MUS_RG_NEW_GAME_EXIT}し
+gItem_094: @ つきのいし
 	.byte 0x12, 0x07, 0x19, 0x02, 0x0C, 0xFF, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x005E                                                          @ itemId
 	.2byte 0                                                               @ price
@@ -2098,11 +2098,11 @@ gItem_094: @ つき{MUS_RG_NEW_GAME_EXIT}し
 
 @ ------------------------------------------------------------------
 @ Item table index: 95
-@ Item name: ほのお{MUS_RG_NEW_GAME_EXIT}し
+@ Item name: ほのおのいし
 @ ROM offset: 0x0055DDC0
 @ Stored item ID: 0x005F
 @ ------------------------------------------------------------------
-gItem_095: @ ほのお{MUS_RG_NEW_GAME_EXIT}し
+gItem_095: @ ほのおのいし
 	.byte 0x1E, 0x19, 0x05, 0x19, 0x02, 0x0C, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x005F                                                          @ itemId
 	.2byte 2100                                                            @ price
@@ -2120,11 +2120,11 @@ gItem_095: @ ほのお{MUS_RG_NEW_GAME_EXIT}し
 
 @ ------------------------------------------------------------------
 @ Item table index: 96
-@ Item name: かみなり{MUS_RG_NEW_GAME_EXIT}し
+@ Item name: かみなりのいし
 @ ROM offset: 0x0055DDE8
 @ Stored item ID: 0x0060
 @ ------------------------------------------------------------------
-gItem_096: @ かみなり{MUS_RG_NEW_GAME_EXIT}し
+gItem_096: @ かみなりのいし
 	.byte 0x06, 0x20, 0x15, 0x28, 0x19, 0x02, 0x0C, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0060                                                          @ itemId
 	.2byte 2100                                                            @ price
@@ -2142,11 +2142,11 @@ gItem_096: @ かみなり{MUS_RG_NEW_GAME_EXIT}し
 
 @ ------------------------------------------------------------------
 @ Item table index: 97
-@ Item name: みず{MUS_RG_NEW_GAME_EXIT}し
+@ Item name: みずのいし
 @ ROM offset: 0x0055DE10
 @ Stored item ID: 0x0061
 @ ------------------------------------------------------------------
-gItem_097: @ みず{MUS_RG_NEW_GAME_EXIT}し
+gItem_097: @ みずのいし
 	.byte 0x20, 0x3E, 0x19, 0x02, 0x0C, 0xFF, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0061                                                          @ itemId
 	.2byte 2100                                                            @ price
@@ -2164,11 +2164,11 @@ gItem_097: @ みず{MUS_RG_NEW_GAME_EXIT}し
 
 @ ------------------------------------------------------------------
 @ Item table index: 98
-@ Item name: リーフ{MUS_RG_NEW_GAME_EXIT}し
+@ Item name: リーフのいし
 @ ROM offset: 0x0055DE38
 @ Stored item ID: 0x0062
 @ ------------------------------------------------------------------
-gItem_098: @ リーフ{MUS_RG_NEW_GAME_EXIT}し
+gItem_098: @ リーフのいし
 	.byte 0x78, 0xAE, 0x6C, 0x19, 0x02, 0x0C, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0062                                                          @ itemId
 	.2byte 2100                                                            @ price
@@ -2274,11 +2274,11 @@ gItem_102: @ ????????
 
 @ ------------------------------------------------------------------
 @ Item table index: 103
-@ Item name: {MUS_RG_DEX_RATING}さなキノコ
+@ Item name: ちいさなキノコ
 @ ROM offset: 0x0055DF00
 @ Stored item ID: 0x0067
 @ ------------------------------------------------------------------
-gItem_103: @ {MUS_RG_DEX_RATING}さなキノコ
+gItem_103: @ ちいさなキノコ
 	.byte 0x11, 0x02, 0x0B, 0x15, 0x57, 0x69, 0x5A, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0067                                                          @ itemId
 	.2byte 500                                                             @ price
@@ -3968,11 +3968,11 @@ gItem_179: @ ひかりのこな
 
 @ ------------------------------------------------------------------
 @ Item table index: 180
-@ Item name: し{MUS_RG_ENCOUNTER_DEOXYS}ハーブ
+@ Item name: しろいハーブ
 @ ROM offset: 0x0055EB08
 @ Stored item ID: 0x00B4
 @ ------------------------------------------------------------------
-gItem_180: @ し{MUS_RG_ENCOUNTER_DEOXYS}ハーブ
+gItem_180: @ しろいハーブ
 	.byte 0x0C, 0x2B, 0x02, 0x6A, 0xAE, 0x98, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x00B4                                                          @ itemId
 	.2byte 100                                                             @ price
@@ -3990,11 +3990,11 @@ gItem_180: @ し{MUS_RG_ENCOUNTER_DEOXYS}ハーブ
 
 @ ------------------------------------------------------------------
 @ Item table index: 181
-@ Item name: きょう{MUS_RG_PEWTER}ギプス
+@ Item name: きょうせいギプス
 @ ROM offset: 0x0055EB30
 @ Stored item ID: 0x00B5
 @ ------------------------------------------------------------------
-gItem_181: @ きょう{MUS_RG_PEWTER}ギプス
+gItem_181: @ きょうせいギプス
 	.byte 0x07, 0x36, 0x03, 0x0E, 0x02, 0x88, 0x9D, 0x5D, 0xFF, 0x00       @ name[10]
 	.2byte 0x00B5                                                          @ itemId
 	.2byte 3000                                                            @ price
@@ -4034,11 +4034,11 @@ gItem_182: @ がくしゅうそうち
 
 @ ------------------------------------------------------------------
 @ Item table index: 183
-@ Item name: せん{MUS_RG_PEWTER}のツメ
+@ Item name: せんせいのツメ
 @ ROM offset: 0x0055EB80
 @ Stored item ID: 0x00B7
 @ ------------------------------------------------------------------
-gItem_183: @ せん{MUS_RG_PEWTER}のツメ
+gItem_183: @ せんせいのツメ
 	.byte 0x0E, 0x2E, 0x0E, 0x02, 0x19, 0x62, 0x72, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x00B7                                                          @ itemId
 	.2byte 100                                                             @ price
@@ -4232,11 +4232,11 @@ gItem_191: @ こころのしずく
 
 @ ------------------------------------------------------------------
 @ Item table index: 192
-@ Item name: しん{MUS_RG_POKE_TOWER}のキバ
+@ Item name: しんかいのキバ
 @ ROM offset: 0x0055ECE8
 @ Stored item ID: 0x00C0
 @ ------------------------------------------------------------------
-gItem_192: @ しん{MUS_RG_POKE_TOWER}のキバ
+gItem_192: @ しんかいのキバ
 	.byte 0x0C, 0x2E, 0x06, 0x02, 0x19, 0x57, 0x96, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x00C0                                                          @ itemId
 	.2byte 200                                                             @ price
@@ -4254,11 +4254,11 @@ gItem_192: @ しん{MUS_RG_POKE_TOWER}のキバ
 
 @ ------------------------------------------------------------------
 @ Item table index: 193
-@ Item name: しん{MUS_RG_POKE_TOWER}のウロコ
+@ Item name: しんかいのウロコ
 @ ROM offset: 0x0055ED10
 @ Stored item ID: 0x00C1
 @ ------------------------------------------------------------------
-gItem_193: @ しん{MUS_RG_POKE_TOWER}のウロコ
+gItem_193: @ しんかいのウロコ
 	.byte 0x0C, 0x2E, 0x06, 0x02, 0x19, 0x53, 0x7B, 0x5A, 0xFF, 0x00       @ name[10]
 	.2byte 0x00C1                                                          @ itemId
 	.2byte 200                                                             @ price
@@ -4298,11 +4298,11 @@ gItem_194: @ けむりだま
 
 @ ------------------------------------------------------------------
 @ Item table index: 195
-@ Item name: かわらず{MUS_RG_NEW_GAME_EXIT}し
+@ Item name: かわらずのいし
 @ ROM offset: 0x0055ED60
 @ Stored item ID: 0x00C3
 @ ------------------------------------------------------------------
-gItem_195: @ かわらず{MUS_RG_NEW_GAME_EXIT}し
+gItem_195: @ かわらずのいし
 	.byte 0x06, 0x2C, 0x27, 0x3E, 0x19, 0x02, 0x0C, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x00C3                                                          @ itemId
 	.2byte 200                                                             @ price
@@ -4320,11 +4320,11 @@ gItem_195: @ かわらず{MUS_RG_NEW_GAME_EXIT}し
 
 @ ------------------------------------------------------------------
 @ Item table index: 196
-@ Item name: {SE_POKENAV_CALL}いのハチマキ
+@ Item name: きあいのハチマキ
 @ ROM offset: 0x0055ED88
 @ Stored item ID: 0x00C4
 @ ------------------------------------------------------------------
-gItem_196: @ {SE_POKENAV_CALL}いのハチマキ
+gItem_196: @ きあいのハチマキ
 	.byte 0x07, 0x01, 0x02, 0x19, 0x6A, 0x61, 0x6F, 0x57, 0xFF, 0x00       @ name[10]
 	.2byte 0x00C4                                                          @ itemId
 	.2byte 200                                                             @ price
@@ -4342,11 +4342,11 @@ gItem_196: @ {SE_POKENAV_CALL}いのハチマキ
 
 @ ------------------------------------------------------------------
 @ Item table index: 197
-@ Item name: {SE_PIKE_CURTAIN_OPEN}わせタマゴ
+@ Item name: しあわせタマゴ
 @ ROM offset: 0x0055EDB0
 @ Stored item ID: 0x00C5
 @ ------------------------------------------------------------------
-gItem_197: @ {SE_PIKE_CURTAIN_OPEN}わせタマゴ
+gItem_197: @ しあわせタマゴ
 	.byte 0x0C, 0x01, 0x2C, 0x0E, 0x60, 0x6F, 0x8B, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x00C5                                                          @ itemId
 	.2byte 200                                                             @ price
@@ -4474,11 +4474,11 @@ gItem_202: @ でんきだま
 
 @ ------------------------------------------------------------------
 @ Item table index: 203
-@ Item name: やわら{MUS_RG_POKE_TOWER}すな
+@ Item name: やわらかいすな
 @ ROM offset: 0x0055EEA0
 @ Stored item ID: 0x00CB
 @ ------------------------------------------------------------------
-gItem_203: @ やわら{MUS_RG_POKE_TOWER}すな
+gItem_203: @ やわらかいすな
 	.byte 0x24, 0x2C, 0x27, 0x06, 0x02, 0x0D, 0x15, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x00CB                                                          @ itemId
 	.2byte 100                                                             @ price
@@ -4496,11 +4496,11 @@ gItem_203: @ やわら{MUS_RG_POKE_TOWER}すな
 
 @ ------------------------------------------------------------------
 @ Item table index: 204
-@ Item name: か{MUS_RG_RIVAL_EXIT}いし
+@ Item name: かたいいし
 @ ROM offset: 0x0055EEC8
 @ Stored item ID: 0x00CC
 @ ------------------------------------------------------------------
-gItem_204: @ か{MUS_RG_RIVAL_EXIT}いし
+gItem_204: @ かたいいし
 	.byte 0x06, 0x10, 0x02, 0x02, 0x0C, 0xFF, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x00CC                                                          @ itemId
 	.2byte 100                                                             @ price
@@ -4540,11 +4540,11 @@ gItem_205: @ きせきのタネ
 
 @ ------------------------------------------------------------------
 @ Item table index: 206
-@ Item name: く{MUS_RG_ENCOUNTER_DEOXYS}メガネ
+@ Item name: くろいメガネ
 @ ROM offset: 0x0055EF18
 @ Stored item ID: 0x00CE
 @ ------------------------------------------------------------------
-gItem_206: @ く{MUS_RG_ENCOUNTER_DEOXYS}メガネ
+gItem_206: @ くろいメガネ
 	.byte 0x08, 0x2B, 0x02, 0x72, 0x87, 0x68, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x00CE                                                          @ itemId
 	.2byte 100                                                             @ price
@@ -4628,11 +4628,11 @@ gItem_209: @ しんぴのしずく
 
 @ ------------------------------------------------------------------
 @ Item table index: 210
-@ Item name: する{PH_LOT_HELD}くちばし
+@ Item name: するどいくちばし
 @ ROM offset: 0x0055EFB8
 @ Stored item ID: 0x00D2
 @ ------------------------------------------------------------------
-gItem_210: @ する{PH_LOT_HELD}くちばし
+gItem_210: @ するどいくちばし
 	.byte 0x0D, 0x29, 0x45, 0x02, 0x08, 0x11, 0x46, 0x0C, 0xFF, 0x00       @ name[10]
 	.2byte 0x00D2                                                          @ itemId
 	.2byte 100                                                             @ price
@@ -4672,11 +4672,11 @@ gItem_211: @ どくバリ
 
 @ ------------------------------------------------------------------
 @ Item table index: 212
-@ Item name: とけ{MUS_RG_GAME_FREAK}こおり
+@ Item name: とけないこおり
 @ ROM offset: 0x0055F008
 @ Stored item ID: 0x00D4
 @ ------------------------------------------------------------------
-gItem_212: @ とけ{MUS_RG_GAME_FREAK}こおり
+gItem_212: @ とけないこおり
 	.byte 0x14, 0x09, 0x15, 0x02, 0x0A, 0x05, 0x28, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x00D4                                                          @ itemId
 	.2byte 100                                                             @ price
@@ -4694,11 +4694,11 @@ gItem_212: @ とけ{MUS_RG_GAME_FREAK}こおり
 
 @ ------------------------------------------------------------------
 @ Item table index: 213
-@ Item name: の{MUS_RG_ENCOUNTER_DEOXYS}のおふだ
+@ Item name: のろいのおふだ
 @ ROM offset: 0x0055F030
 @ Stored item ID: 0x00D5
 @ ------------------------------------------------------------------
-gItem_213: @ の{MUS_RG_ENCOUNTER_DEOXYS}のおふだ
+gItem_213: @ のろいのおふだ
 	.byte 0x19, 0x2B, 0x02, 0x19, 0x05, 0x1C, 0x41, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x00D5                                                          @ itemId
 	.2byte 100                                                             @ price
@@ -4826,11 +4826,11 @@ gItem_218: @ アップグレード
 
 @ ------------------------------------------------------------------
 @ Item table index: 219
-@ Item name: {MUS_RG_POKE_TOWER}がらのすず
+@ Item name: かいがらのすず
 @ ROM offset: 0x0055F120
 @ Stored item ID: 0x00DB
 @ ------------------------------------------------------------------
-gItem_219: @ {MUS_RG_POKE_TOWER}がらのすず
+gItem_219: @ かいがらのすず
 	.byte 0x06, 0x02, 0x37, 0x27, 0x19, 0x0D, 0x3E, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x00DB                                                          @ itemId
 	.2byte 200                                                             @ price
@@ -4936,11 +4936,11 @@ gItem_223: @ メタルパウダー
 
 @ ------------------------------------------------------------------
 @ Item table index: 224
-@ Item name: ふ{MUS_RG_PHOTO}ホネ
+@ Item name: ふといホネ
 @ ROM offset: 0x0055F1E8
 @ Stored item ID: 0x00E0
 @ ------------------------------------------------------------------
-gItem_224: @ ふ{MUS_RG_PHOTO}ホネ
+gItem_224: @ ふといホネ
 	.byte 0x1C, 0x14, 0x02, 0x6E, 0x68, 0xFF, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x00E0                                                          @ itemId
 	.2byte 500                                                             @ price
@@ -5596,11 +5596,11 @@ gItem_253: @ ????????
 
 @ ------------------------------------------------------------------
 @ Item table index: 254
-@ Item name: あ{MUS_RG_POKE_TOWER}バンダナ
+@ Item name: あかいバンダナ
 @ ROM offset: 0x0055F698
 @ Stored item ID: 0x00FE
 @ ------------------------------------------------------------------
-gItem_254: @ あ{MUS_RG_POKE_TOWER}バンダナ
+gItem_254: @ あかいバンダナ
 	.byte 0x01, 0x06, 0x02, 0x96, 0x7E, 0x91, 0x65, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x00FE                                                          @ itemId
 	.2byte 100                                                             @ price
@@ -5618,11 +5618,11 @@ gItem_254: @ あ{MUS_RG_POKE_TOWER}バンダナ
 
 @ ------------------------------------------------------------------
 @ Item table index: 255
-@ Item name: あ{MUS_RG_SURF}バンダナ
+@ Item name: あおいバンダナ
 @ ROM offset: 0x0055F6C0
 @ Stored item ID: 0x00FF
 @ ------------------------------------------------------------------
-gItem_255: @ あ{MUS_RG_SURF}バンダナ
+gItem_255: @ あおいバンダナ
 	.byte 0x01, 0x05, 0x02, 0x96, 0x7E, 0x91, 0x65, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x00FF                                                          @ itemId
 	.2byte 100                                                             @ price
@@ -5684,11 +5684,11 @@ gItem_257: @ みどりのバンダナ
 
 @ ------------------------------------------------------------------
 @ Item table index: 258
-@ Item name: {MUS_RG_SILPH}ろのバンダナ
+@ Item name: きいろのバンダナ
 @ ROM offset: 0x0055F738
 @ Stored item ID: 0x0102
 @ ------------------------------------------------------------------
-gItem_258: @ {MUS_RG_SILPH}ろのバンダナ
+gItem_258: @ きいろのバンダナ
 	.byte 0x07, 0x02, 0x2B, 0x19, 0x96, 0x7E, 0x91, 0x65, 0xFF, 0x00       @ name[10]
 	.2byte 0x0102                                                          @ itemId
 	.2byte 100                                                             @ price
@@ -5794,11 +5794,11 @@ gItem_262: @ ボロのつりざお
 
 @ ------------------------------------------------------------------
 @ Item table index: 263
-@ Item name: {MUS_RG_OAK}つりざお
+@ Item name: いいつりざお
 @ ROM offset: 0x0055F800
 @ Stored item ID: 0x0107
 @ ------------------------------------------------------------------
-gItem_263: @ {MUS_RG_OAK}つりざお
+gItem_263: @ いいつりざお
 	.byte 0x02, 0x02, 0x12, 0x28, 0x3C, 0x05, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0107                                                          @ itemId
 	.2byte 0                                                               @ price
@@ -5816,11 +5816,11 @@ gItem_263: @ {MUS_RG_OAK}つりざお
 
 @ ------------------------------------------------------------------
 @ Item table index: 264
-@ Item name: す{PH_FLEECE_BLEND}つりざお
+@ Item name: すごいつりざお
 @ ROM offset: 0x0055F828
 @ Stored item ID: 0x0108
 @ ------------------------------------------------------------------
-gItem_264: @ す{PH_FLEECE_BLEND}つりざお
+gItem_264: @ すごいつりざお
 	.byte 0x0D, 0x3B, 0x02, 0x12, 0x28, 0x3C, 0x05, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0108                                                          @ itemId
 	.2byte 0                                                               @ price
@@ -5948,11 +5948,11 @@ gItem_269: @ デボンのにもつ
 
 @ ------------------------------------------------------------------
 @ Item table index: 270
-@ Item name: {MUS_RG_POKE_JUMP}ぶくろ
+@ Item name: はいぶくろ
 @ ROM offset: 0x0055F918
 @ Stored item ID: 0x010E
 @ ------------------------------------------------------------------
-gItem_270: @ {MUS_RG_POKE_JUMP}ぶくろ
+gItem_270: @ はいぶくろ
 	.byte 0x1A, 0x02, 0x48, 0x08, 0x2B, 0xFF, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x010E                                                          @ itemId
 	.2byte 0                                                               @ price
@@ -6080,11 +6080,11 @@ gItem_275: @ むげんのチケット
 
 @ ------------------------------------------------------------------
 @ Item table index: 276
-@ Item name: べ{MUS_RG_CAUGHT}ろのたま
+@ Item name: べにいろのたま
 @ ROM offset: 0x0055FA08
 @ Stored item ID: 0x0114
 @ ------------------------------------------------------------------
-gItem_276: @ べ{MUS_RG_CAUGHT}ろのたま
+gItem_276: @ べにいろのたま
 	.byte 0x49, 0x16, 0x02, 0x2B, 0x19, 0x10, 0x1F, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0114                                                          @ itemId
 	.2byte 0                                                               @ price
@@ -6102,11 +6102,11 @@ gItem_276: @ べ{MUS_RG_CAUGHT}ろのたま
 
 @ ------------------------------------------------------------------
 @ Item table index: 277
-@ Item name: {MUS_RG_OAK_LAB}いろのたま
+@ Item name: あいいろのたま
 @ ROM offset: 0x0055FA30
 @ Stored item ID: 0x0115
 @ ------------------------------------------------------------------
-gItem_277: @ {MUS_RG_OAK_LAB}いろのたま
+gItem_277: @ あいいろのたま
 	.byte 0x01, 0x02, 0x02, 0x2B, 0x19, 0x10, 0x1F, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0115                                                          @ itemId
 	.2byte 0                                                               @ price
@@ -7774,11 +7774,11 @@ gItem_352: @ ひきかえけん
 
 @ ------------------------------------------------------------------
 @ Item table index: 353
-@ Item name: きん{MUS_RG_NEW_GAME_EXIT}れば
+@ Item name: きんのいれば
 @ ROM offset: 0x00560610
 @ Stored item ID: 0x0161
 @ ------------------------------------------------------------------
-gItem_353: @ きん{MUS_RG_NEW_GAME_EXIT}れば
+gItem_353: @ きんのいれば
 	.byte 0x07, 0x2E, 0x19, 0x02, 0x2A, 0x46, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0161                                                          @ itemId
 	.2byte 0                                                               @ price
@@ -7862,11 +7862,11 @@ gItem_356: @ エレベータのカギ
 
 @ ------------------------------------------------------------------
 @ Item table index: 357
-@ Item name: {MUS_RG_POKE_TOWER}のカセキ
+@ Item name: かいのカセキ
 @ ROM offset: 0x005606B0
 @ Stored item ID: 0x0165
 @ ------------------------------------------------------------------
-gItem_357: @ {MUS_RG_POKE_TOWER}のカセキ
+gItem_357: @ かいのカセキ
 	.byte 0x06, 0x02, 0x19, 0x56, 0x5E, 0x57, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0165                                                          @ itemId
 	.2byte 0                                                               @ price
@@ -8192,11 +8192,11 @@ gItem_371: @ オーロラチケット
 
 @ ------------------------------------------------------------------
 @ Item table index: 372
-@ Item name: こ{MUS_RG_GAME_FREAK}れ
+@ Item name: こないれ
 @ ROM offset: 0x00560908
 @ Stored item ID: 0x0174
 @ ------------------------------------------------------------------
-gItem_372: @ こ{MUS_RG_GAME_FREAK}れ
+gItem_372: @ こないれ
 	.byte 0x0A, 0x15, 0x02, 0x2A, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0174                                                          @ itemId
 	.2byte 0                                                               @ price
@@ -8280,11 +8280,11 @@ gItem_375: @ マグマのしるし
 
 @ ------------------------------------------------------------------
 @ Item table index: 376
-@ Item name: ふるびた{MUS_RG_POKE_TOWER}ず
+@ Item name: ふるびたかいず
 @ ROM offset: 0x005609A8
 @ Stored item ID: 0x0178
 @ ------------------------------------------------------------------
-gItem_376: @ ふるびた{MUS_RG_POKE_TOWER}ず
+gItem_376: @ ふるびたかいず
 	.byte 0x1C, 0x29, 0x47, 0x10, 0x06, 0x02, 0x3E, 0xFF, 0xFF, 0x00       @ name[10]
 	.2byte 0x0178                                                          @ itemId
 	.2byte 0                                                               @ price
