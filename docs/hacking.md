@@ -67,7 +67,7 @@ make -j$(nproc)
 | ファイル | スロット数 | 内容 |
 |---|---|---|
 | `data/text/generated/event_scripts.inc` | 6,741 | イベント・フィールドの全通常テキスト |
-| `data/text/generated/rodata.inc` | 6,158 | メニュー・戦闘・名称などの全通常テキスト |
+| `data/rodata.inc` | 6,158 | メニュー・戦闘・名称などの全通常テキスト |
 
 各スロットは元のROMアドレスを維持した固定長で、元のバイト長以下であれば自由に編集できます。
 詳細な編集方法は [text_editing.md](text_editing.md) を参照。
@@ -241,7 +241,7 @@ Phase 3 で C・JSON・Porymap 連携を目指します。
 `tools/extract_all_text.py` により、`script_data` と `.rodata` の全通常テキストを固定アドレスで抽出。
 
 - `data/text/generated/event_scripts.inc`：6,741スロット
-- `data/text/generated/rodata.inc`：6,158スロット
+- `data/rodata.inc`：6,158スロット
 - `data/text/generated/manifest.json`：ラベル・ROMアドレス・元バイト長・検証根拠
 - 抽出状態で `make compare` 一致確認済み
 

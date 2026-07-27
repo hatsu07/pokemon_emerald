@@ -102,7 +102,7 @@
 - [x] テキスト分離後の Matching 確認（`make compare`）
 - [x] **テキスト一括抽出基盤（`tools/extract_all_text.py`）**
   - [x] `script_data` セクションの全通常テキストを固定アドレスで抽出（`data/text/generated/event_scripts.inc`：6,741スロット）
-  - [x] `.rodata` セクションの全通常テキストを固定アドレスで抽出（`data/text/generated/rodata.inc`：6,158スロット）
+  - [x] `.rodata` セクションの全通常テキストを固定アドレスで抽出（`data/rodata.inc`：6,158スロット）
   - [x] 抽出結果のマニフェスト（`data/text/generated/manifest.json`）
   - [x] 抽出状態での `make compare` 一致確認
 - [x] ハックガイド作成（[docs/hacking.md](docs/hacking.md)）

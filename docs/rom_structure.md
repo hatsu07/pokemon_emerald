@@ -4,7 +4,7 @@
 > `data/text/generated/*.inc` に固定アドレスで抽出されています。
 >
 > - **`data/text/generated/event_scripts.inc`**: イベント・フィールドの全通常テキスト（6,741スロット）
-> - **`data/text/generated/rodata.inc`**: メニュー・戦闘・名称などの全通常テキスト（6,158スロット）
+> - **`data/rodata.inc`**: メニュー・戦闘・名称などの全通常テキスト（6,158スロット）
 > - **`data/text/generated/manifest.json`**: ラベル・ROMアドレス・元バイト長・検証根拠のマニフェスト
 >
 > 編集方法は [text_editing.md](text_editing.md) を参照してください。
