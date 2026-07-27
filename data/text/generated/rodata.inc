@@ -24961,14 +24961,15 @@ gUnknown_82EFFA4: @ 0x082EFFA4
 gUnknown_82F00B4: @ 0x082F00B4
 	.incbin "baserom.gba", 0x2f00b4, 0xca0
 	.include "data/pokemon/base_stats.inc"
-	.incbin "baserom.gba", 0x2f3a64, 0x2240
+
+	.include "data/pokemon/level_up_learnsets.inc"
 
 	.globl gUnknown_82F5CA4
 gUnknown_82F5CA4: @ 0x082F5CA4
 	.incbin "baserom.gba", 0x2f5ca4, 0x4060
-	.globl gUnknown_82F9D04
-gUnknown_82F9D04: @ 0x082F9D04
-	.incbin "baserom.gba", 0x2f9d04, 0x670
+
+	.include "data/pokemon/level_up_learnset_pointers.inc"
+
 	.globl gUnknown_82FA374
 gUnknown_82FA374: @ 0x082FA374
 	.incbin "baserom.gba", 0x2fa374, 0x19b
