@@ -75,7 +75,7 @@ Expansionのscripts.incからテキストを抽出し、日本版ROMで位置を
 python3 tools/extract_texts.py \
   --expansion-scripts PokeEm-expansion-CanuseJP/data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc \
   --rom baserom.gba \
-  --charmap charmap.txt \
+  --charmap tools/charmap.txt \
   --preproc tools/preproc/preproc \
   --output data/text/birch_lab.inc \
   --label-prefix "BirchLab_"
@@ -84,7 +84,7 @@ python3 tools/extract_texts.py \
 **引数:**
 - `--expansion-scripts`: Expansionのscripts.incファイルパス
 - `--rom`: 日本版ROMファイルパス（デフォルト: baserom.gba）
-- `--charmap`: charmap.txtパス（デフォルト: charmap.txt）
+- `--charmap`: tools/charmap.txtパス（デフォルト: tools/charmap.txt）
 - `--preproc`: preproc実行ファイルパス（デフォルト: tools/preproc/preproc）
 - `--output`: 出力.incファイルパス
 - `--label-prefix`: ラベルに付けるプレフィックス（オプション）
@@ -125,7 +125,7 @@ python3 tools/verify_matching.py --make-compare
 # 特定のテキストファイルを検証
 python3 tools/verify_matching.py \
   --verify-text data/text/birch_lab.inc \
-  --charmap charmap.txt \
+  --charmap tools/charmap.txt \
   --preproc tools/preproc/preproc \
   --original-rom baserom.gba
 ```
@@ -163,7 +163,7 @@ LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork:
 ```bash
 echo 'test:
 	.string "え? オダマキはかせ?\p$"' > /tmp/test.s
-tools/preproc/preproc /tmp/test.s charmap.txt
+tools/preproc/preproc /tmp/test.s tools/charmap.txt
 ```
 
 出力:
@@ -180,7 +180,7 @@ test:
 
 ```asm
 @ Phase 2: テキスト化（日本版）
-@ 文字コードは charmap.txt。.string は tools/preproc がバイト列へ変換する。
+@ 文字コードは tools/charmap.txt。.string は tools/preproc がバイト列へ変換する。
 @ 各エントリの占有サイズはオリジナルROMと同じにし、後続データのアドレスを維持する。
 
 	.globl gText_BirchLab_Aide_BirchAwayOnFieldwork
