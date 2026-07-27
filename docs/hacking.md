@@ -22,7 +22,7 @@ make -j$(nproc)
 
 ---
 
-## 現在の進捗（2026-07-26）
+## 現在の進捗（2026-07-27）
 
 ### 完了した内容
 
@@ -33,13 +33,14 @@ make -j$(nproc)
 - どちらも元のROMアドレスと占有サイズを維持するため、既存のイベント・コードからのポインタはそのまま有効である。
 - `make clean && make` と `make compare` を実行し、SHA-1 `d7cf8f156ba9c455d164e1ea780a6bf1945465c2` の一致を確認した。
 - **テキスト一括抽出基盤を構築**：`tools/extract_all_text.py` により、`script_data` セクション（6,741スロット）と `.rodata` セクション（6,158スロット）の全通常テキストを `data/text/generated/*.inc` に固定アドレスで抽出した。
+- **rodata データの分割・構造化完了**：`data/text/rodata/` 以下に戦闘・コンテスト・クレジット・アイテム・マップ・メニュー・技・ポケモン・リボンデータを分割・構造化。
 - テキスト編集方法は [text_editing.md](text_editing.md) に集約。
 
 ### 次の作業
 
-1. 主人公の家テキストのテキスト化
-2. コトキタウンテキストのテキスト化
-3. その他主要なマップのテキスト化
+1. 各種データのC化・編集しやすい構成への移行
+2. マップ / イベント追加基盤の構築
+3. ポケモン・技・アイテム等のデータ編集基盤の構築
 
 ---
 
@@ -67,7 +68,7 @@ make -j$(nproc)
 | ファイル | スロット数 | 内容 |
 |---|---|---|
 | `data/text/generated/event_scripts.inc` | 6,741 | イベント・フィールドの全通常テキスト |
-| `data/rodata.inc` | 6,158 | メニュー・戦闘・名称などの全通常テキスト |
+| `data/rodata.inc` | 6,158 | メニュー・戦闘・名称などの全通常テキスト（`data/text/rodata/` に分割・構造化済み） |
 
 各スロットは元のROMアドレスを維持した固定長で、元のバイト長以下であれば自由に編集できます。
 詳細な編集方法は [text_editing.md](text_editing.md) を参照。
@@ -241,7 +242,7 @@ Phase 3 で C・JSON・Porymap 連携を目指します。
 `tools/extract_all_text.py` により、`script_data` と `.rodata` の全通常テキストを固定アドレスで抽出。
 
 - `data/text/generated/event_scripts.inc`：6,741スロット
-- `data/rodata.inc`：6,158スロット
+- `data/rodata.inc`：6,158スロット（`data/text/rodata/` に分割・構造化済み）
 - `data/text/generated/manifest.json`：ラベル・ROMアドレス・元バイト長・検証根拠
 - 抽出状態で `make compare` 一致確認済み
 

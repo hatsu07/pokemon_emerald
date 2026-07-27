@@ -12,7 +12,7 @@
 
 `tools/extract_all_text.py` により、`script_data` セクションと `.rodata` セクションの全通常テキストを固定アドレスで一括抽出します。
 
-- **抽出結果**: `data/text/generated/event_scripts.inc`（6,741スロット）+ `data/rodata.inc`（6,158スロット）
+- **抽出結果**: `data/text/generated/event_scripts.inc`（6,741スロット）+ `data/rodata.inc`（6,158スロット、`data/text/rodata/` に分割・構造化済み）
 - **マニフェスト**: `data/text/generated/manifest.json`（ラベル・ROMアドレス・元バイト長・検証根拠）
 - **編集方法**: [text_editing.md](text_editing.md) を参照
 
@@ -45,7 +45,7 @@ make -j4 compare
 | ファイル | スロット数 | 内容 |
 |---|---|---|
 | `data/text/generated/event_scripts.inc` | 6,741 | イベント・フィールドの全通常テキスト |
-| `data/rodata.inc` | 6,158 | メニュー・戦闘・名称などの全通常テキスト |
+| `data/rodata.inc` | 6,158 | メニュー・戦闘・名称などの全通常テキスト（`data/text/rodata/` に分割・構造化済み） |
 | `data/text/generated/manifest.json` | — | ラベル・ROMアドレス・元バイト長・検証根拠 |
 
 ### 再生成と検証
