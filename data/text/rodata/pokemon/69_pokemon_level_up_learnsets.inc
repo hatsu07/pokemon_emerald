@@ -146,4 +146,3 @@ gUnknown_82FC0F8: @ 0x082FC0F8
 	.incbin "baserom.gba", 0x2fc0f8, 0x2
 	.globl gUnknown_82FC0FA
 gUnknown_82FC0FA: @ 0x082FC0FA
-	

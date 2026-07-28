@@ -44,6 +44,8 @@
 	.include "data/text/rodata/menus/79_menu_text.inc"
 	.include "data/text/rodata/battle/80_battle_data.inc"
 	.include "data/text/rodata/menus/81_menu_text.inc"
+	.include "data/wild_encounters/wild_encounters.inc"
+	.include "data/text/rodata/menus/81-5_menu_text.inc"
 	.include "data/text/rodata/pokemon/82_pokemon_data.inc"
 	.include "data/text/rodata/battle/83_battle_data.inc"
 	.include "data/text/rodata/pokemon/84_pokemon_data.inc"

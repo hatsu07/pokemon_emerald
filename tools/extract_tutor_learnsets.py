@@ -10,8 +10,8 @@ from pathlib import Path
 
 DEFAULT_ROM = Path("baserom.gba")
 DEFAULT_OUTPUT = Path("data/pokemon/tutor_learnsets.inc")
-DEFAULT_SPECIES_FILE = Path("constants/species_constants.inc")
-DEFAULT_MOVE_FILE = Path("constants/move_constants.inc")
+DEFAULT_SPECIES_FILE = Path("constants/species.inc")
+DEFAULT_MOVE_FILE = Path("constants/moves.inc")
 
 TUTOR_MOVES_ROM_OFFSET = 0x5E08C4
 TUTOR_LEARNSETS_ROM_OFFSET = 0x5E0900

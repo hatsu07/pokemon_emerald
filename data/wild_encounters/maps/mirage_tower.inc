@@ -1,0 +1,76 @@
+@ MAP_MIRAGE_TOWER_1F
+@ ROM 0x0852D63C-0x0852D674
+
+gMirageTower_1F_LandMons::
+	wildmon 21, 21, SPECIES_SANDSHREW
+	wildmon 21, 21, SPECIES_TRAPINCH
+	wildmon 20, 20, SPECIES_SANDSHREW
+	wildmon 20, 20, SPECIES_TRAPINCH
+	wildmon 20, 20, SPECIES_SANDSHREW
+	wildmon 20, 20, SPECIES_TRAPINCH
+	wildmon 22, 22, SPECIES_SANDSHREW
+	wildmon 22, 22, SPECIES_TRAPINCH
+	wildmon 23, 23, SPECIES_SANDSHREW
+	wildmon 23, 23, SPECIES_TRAPINCH
+	wildmon 24, 24, SPECIES_SANDSHREW
+	wildmon 24, 24, SPECIES_TRAPINCH
+
+gMirageTower_1F_LandMonsInfo::
+	wildmoninfo 10, gMirageTower_1F_LandMons
+@ MAP_MIRAGE_TOWER_2F
+@ ROM 0x0852D674-0x0852D6AC
+
+gMirageTower_2F_LandMons::
+	wildmon 21, 21, SPECIES_SANDSHREW
+	wildmon 21, 21, SPECIES_TRAPINCH
+	wildmon 20, 20, SPECIES_SANDSHREW
+	wildmon 20, 20, SPECIES_TRAPINCH
+	wildmon 20, 20, SPECIES_SANDSHREW
+	wildmon 20, 20, SPECIES_TRAPINCH
+	wildmon 22, 22, SPECIES_SANDSHREW
+	wildmon 22, 22, SPECIES_TRAPINCH
+	wildmon 23, 23, SPECIES_SANDSHREW
+	wildmon 23, 23, SPECIES_TRAPINCH
+	wildmon 24, 24, SPECIES_SANDSHREW
+	wildmon 24, 24, SPECIES_TRAPINCH
+
+gMirageTower_2F_LandMonsInfo::
+	wildmoninfo 10, gMirageTower_2F_LandMons
+@ MAP_MIRAGE_TOWER_3F
+@ ROM 0x0852D6AC-0x0852D6E4
+
+gMirageTower_3F_LandMons::
+	wildmon 21, 21, SPECIES_SANDSHREW
+	wildmon 21, 21, SPECIES_TRAPINCH
+	wildmon 20, 20, SPECIES_SANDSHREW
+	wildmon 20, 20, SPECIES_TRAPINCH
+	wildmon 20, 20, SPECIES_SANDSHREW
+	wildmon 20, 20, SPECIES_TRAPINCH
+	wildmon 22, 22, SPECIES_SANDSHREW
+	wildmon 22, 22, SPECIES_TRAPINCH
+	wildmon 23, 23, SPECIES_SANDSHREW
+	wildmon 23, 23, SPECIES_TRAPINCH
+	wildmon 24, 24, SPECIES_SANDSHREW
+	wildmon 24, 24, SPECIES_TRAPINCH
+
+gMirageTower_3F_LandMonsInfo::
+	wildmoninfo 10, gMirageTower_3F_LandMons
+@ MAP_MIRAGE_TOWER_4F
+@ ROM 0x0852D6E4-0x0852D71C
+
+gMirageTower_4F_LandMons::
+	wildmon 21, 21, SPECIES_SANDSHREW
+	wildmon 21, 21, SPECIES_TRAPINCH
+	wildmon 20, 20, SPECIES_SANDSHREW
+	wildmon 20, 20, SPECIES_TRAPINCH
+	wildmon 20, 20, SPECIES_SANDSHREW
+	wildmon 20, 20, SPECIES_TRAPINCH
+	wildmon 22, 22, SPECIES_SANDSHREW
+	wildmon 22, 22, SPECIES_TRAPINCH
+	wildmon 23, 23, SPECIES_SANDSHREW
+	wildmon 23, 23, SPECIES_TRAPINCH
+	wildmon 24, 24, SPECIES_SANDSHREW
+	wildmon 24, 24, SPECIES_TRAPINCH
+
+gMirageTower_4F_LandMonsInfo::
+	wildmoninfo 10, gMirageTower_4F_LandMons

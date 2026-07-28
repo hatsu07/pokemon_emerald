@@ -1,0 +1,19 @@
+@ MAP_MT_PYRE_5F
+@ ROM 0x0852C288-0x0852C2C0
+
+gMtPyre_5F_LandMons::
+	wildmon 27, 27, SPECIES_SHUPPET
+	wildmon 28, 28, SPECIES_SHUPPET
+	wildmon 26, 26, SPECIES_SHUPPET
+	wildmon 25, 25, SPECIES_SHUPPET
+	wildmon 29, 29, SPECIES_SHUPPET
+	wildmon 24, 24, SPECIES_SHUPPET
+	wildmon 23, 23, SPECIES_SHUPPET
+	wildmon 22, 22, SPECIES_SHUPPET
+	wildmon 27, 27, SPECIES_DUSKULL
+	wildmon 27, 27, SPECIES_DUSKULL
+	wildmon 25, 25, SPECIES_DUSKULL
+	wildmon 29, 29, SPECIES_DUSKULL
+
+gMtPyre_5F_LandMonsInfo::
+	wildmoninfo 10, gMtPyre_5F_LandMons

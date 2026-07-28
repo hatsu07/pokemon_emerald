@@ -39,9 +39,9 @@ gUnknown_8568B20: @ 0x08568B20
 	.globl gUnknown_8568B28
 gUnknown_8568B28: @ 0x08568B28
 	.incbin "baserom.gba", 0x568b28, 0x18
-	.globl gUnknown_8568B40
-gUnknown_8568B40: @ 0x08568B40
-	.incbin "baserom.gba", 0x568b40, 0x3c
+
+	.include "data/wild_encounters/mass_outbreaks.inc"
+
 	.globl gUnknown_8568B7C
 gUnknown_8568B7C: @ 0x08568B7C
 	.incbin "baserom.gba", 0x568b7c, 0xe

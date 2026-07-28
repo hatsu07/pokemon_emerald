@@ -79,14 +79,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--species-file",
         type=Path,
-        default=Path("constants/species_constants.inc"),
+        default=Path("constants/species.inc"),
         help="Species constant definitions",
     )
 
     parser.add_argument(
         "--moves-file",
         type=Path,
-        default=Path("constants/move_constants.inc"),
+        default=Path("constants/moves.inc"),
         help="Move constant definitions",
     )
 

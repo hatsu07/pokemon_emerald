@@ -360,12 +360,12 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--species-constants",
         type=Path,
-        default=Path("constants/species_constants.inc"),
+        default=Path("constants/species.inc"),
     )
     parser.add_argument(
         "--move-constants",
         type=Path,
-        default=Path("constants/move_constants.inc"),
+        default=Path("constants/moves.inc"),
     )
     parser.add_argument(
         "--data-output",
