@@ -1470,7 +1470,7 @@ _080B4ADE:
 _080B4AE4: .4byte 0x00000169
 _080B4AE8: .4byte 0x03005AF0
 _080B4AEC: .4byte 0x00000CB2
-_080B4AF0: .4byte 0x0852E540
+_080B4AF0: .4byte gBattlePyramidWildMonHeaders
 _080B4AF4:
 	lsls r0, r6, #0x18
 	lsrs r4, r0, #0x18
@@ -1782,7 +1782,7 @@ _080B4D44:
 _080B4D74: .4byte 0x00000169
 _080B4D78: .4byte 0x03005AF0
 _080B4D7C: .4byte 0x00000CB2
-_080B4D80: .4byte 0x0852E540
+_080B4D80: .4byte gBattlePyramidWildMonHeaders
 _080B4D84:
 	mov r0, sp
 	movs r2, #0

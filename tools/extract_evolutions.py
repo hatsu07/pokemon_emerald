@@ -27,7 +27,7 @@ import sys
 ROM_PATH = Path("baserom.gba")
 OUTPUT_PATH = Path("data/pokemon/evolution.inc")
 
-SPECIES_CONSTANTS_PATH = Path("constants/species_constants.inc")
+SPECIES_CONSTANTS_PATH = Path("constants/species.inc")
 ITEM_CONSTANTS_CANDIDATES = [
     Path("constants/item_constants.inc"),
     Path("constants/items.inc"),
@@ -564,7 +564,7 @@ def main() -> None:
         return
 
     # このリポジトリでは種族定数が
-    # constants/species_constants.inc の .set 形式で定義されている。
+    # constants/species.inc の .set 形式で定義されている。
     species = load_asm_constant_file(
         SPECIES_CONSTANTS_PATH,
         "SPECIES_",

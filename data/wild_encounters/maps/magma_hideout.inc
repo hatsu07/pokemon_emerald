@@ -1,0 +1,152 @@
+@ MAP_MAGMA_HIDEOUT_1F
+@ ROM 0x0852D47C-0x0852D4B4
+
+gMagmaHideout_1F_LandMons::
+	wildmon 27, 27, SPECIES_GEODUDE
+	wildmon 28, 28, SPECIES_TORKOAL
+	wildmon 28, 28, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_TORKOAL
+	wildmon 29, 29, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 31, 31, SPECIES_GRAVELER
+	wildmon 32, 32, SPECIES_GRAVELER
+	wildmon 33, 33, SPECIES_GRAVELER
+
+gMagmaHideout_1F_LandMonsInfo::
+	wildmoninfo 10, gMagmaHideout_1F_LandMons
+@ MAP_MAGMA_HIDEOUT_2F_1R
+@ ROM 0x0852D4B4-0x0852D4EC
+
+gMagmaHideout_2F_1R_LandMons::
+	wildmon 27, 27, SPECIES_GEODUDE
+	wildmon 28, 28, SPECIES_TORKOAL
+	wildmon 28, 28, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_TORKOAL
+	wildmon 29, 29, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 31, 31, SPECIES_GRAVELER
+	wildmon 32, 32, SPECIES_GRAVELER
+	wildmon 33, 33, SPECIES_GRAVELER
+
+gMagmaHideout_2F_1R_LandMonsInfo::
+	wildmoninfo 10, gMagmaHideout_2F_1R_LandMons
+@ MAP_MAGMA_HIDEOUT_2F_2R
+@ ROM 0x0852D4EC-0x0852D524
+
+gMagmaHideout_2F_2R_LandMons::
+	wildmon 27, 27, SPECIES_GEODUDE
+	wildmon 28, 28, SPECIES_TORKOAL
+	wildmon 28, 28, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_TORKOAL
+	wildmon 29, 29, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 31, 31, SPECIES_GRAVELER
+	wildmon 32, 32, SPECIES_GRAVELER
+	wildmon 33, 33, SPECIES_GRAVELER
+
+gMagmaHideout_2F_2R_LandMonsInfo::
+	wildmoninfo 10, gMagmaHideout_2F_2R_LandMons
+@ MAP_MAGMA_HIDEOUT_3F_1R
+@ ROM 0x0852D524-0x0852D55C
+
+gMagmaHideout_3F_1R_LandMons::
+	wildmon 27, 27, SPECIES_GEODUDE
+	wildmon 28, 28, SPECIES_TORKOAL
+	wildmon 28, 28, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_TORKOAL
+	wildmon 29, 29, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 31, 31, SPECIES_GRAVELER
+	wildmon 32, 32, SPECIES_GRAVELER
+	wildmon 33, 33, SPECIES_GRAVELER
+
+gMagmaHideout_3F_1R_LandMonsInfo::
+	wildmoninfo 10, gMagmaHideout_3F_1R_LandMons
+@ MAP_MAGMA_HIDEOUT_3F_2R
+@ ROM 0x0852D55C-0x0852D594
+
+gMagmaHideout_3F_2R_LandMons::
+	wildmon 27, 27, SPECIES_GEODUDE
+	wildmon 28, 28, SPECIES_TORKOAL
+	wildmon 28, 28, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_TORKOAL
+	wildmon 29, 29, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 31, 31, SPECIES_GRAVELER
+	wildmon 32, 32, SPECIES_GRAVELER
+	wildmon 33, 33, SPECIES_GRAVELER
+
+gMagmaHideout_3F_2R_LandMonsInfo::
+	wildmoninfo 10, gMagmaHideout_3F_2R_LandMons
+@ MAP_MAGMA_HIDEOUT_4F
+@ ROM 0x0852D594-0x0852D5CC
+
+gMagmaHideout_4F_LandMons::
+	wildmon 27, 27, SPECIES_GEODUDE
+	wildmon 28, 28, SPECIES_TORKOAL
+	wildmon 28, 28, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_TORKOAL
+	wildmon 29, 29, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 31, 31, SPECIES_GRAVELER
+	wildmon 32, 32, SPECIES_GRAVELER
+	wildmon 33, 33, SPECIES_GRAVELER
+
+gMagmaHideout_4F_LandMonsInfo::
+	wildmoninfo 10, gMagmaHideout_4F_LandMons
+@ MAP_MAGMA_HIDEOUT_3F_3R
+@ ROM 0x0852D5CC-0x0852D604
+
+gMagmaHideout_3F_3R_LandMons::
+	wildmon 27, 27, SPECIES_GEODUDE
+	wildmon 28, 28, SPECIES_TORKOAL
+	wildmon 28, 28, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_TORKOAL
+	wildmon 29, 29, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 31, 31, SPECIES_GRAVELER
+	wildmon 32, 32, SPECIES_GRAVELER
+	wildmon 33, 33, SPECIES_GRAVELER
+
+gMagmaHideout_3F_3R_LandMonsInfo::
+	wildmoninfo 10, gMagmaHideout_3F_3R_LandMons
+@ MAP_MAGMA_HIDEOUT_2F_3R
+@ ROM 0x0852D604-0x0852D63C
+
+gMagmaHideout_2F_3R_LandMons::
+	wildmon 27, 27, SPECIES_GEODUDE
+	wildmon 28, 28, SPECIES_TORKOAL
+	wildmon 28, 28, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_TORKOAL
+	wildmon 29, 29, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GEODUDE
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 30, 30, SPECIES_GRAVELER
+	wildmon 31, 31, SPECIES_GRAVELER
+	wildmon 32, 32, SPECIES_GRAVELER
+	wildmon 33, 33, SPECIES_GRAVELER
+
+gMagmaHideout_2F_3R_LandMonsInfo::
+	wildmoninfo 10, gMagmaHideout_2F_3R_LandMons

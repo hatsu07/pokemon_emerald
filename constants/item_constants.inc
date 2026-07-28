@@ -1,7 +1,7 @@
 @ Generated from the Japanese Pokémon Emerald ROM.
 @ Official item ID is the table index, not the stored ID field.
 
-.set ITEM_UNUSED_000             , 0x0000 @ ？？？？？？？？
+.set ITEM_NONE                   , 0x0000 @ ？？？？？？？？
 .set ITEM_MASTER_BALL            , 0x0001 @ マスターボール
 .set ITEM_ULTRA_BALL             , 0x0002 @ ハイパーボール
 .set ITEM_GREAT_BALL             , 0x0003 @ スーパーボール

@@ -1,6 +1,6 @@
 @ スターターポケモンの種族IDテーブル
 @ このファイルを編集することで、最初に選ぶポケモンを変更できます。
-@ 種族IDは constants/species_constants.inc で定義。
+@ 種族IDは constants/species.inc で定義。
 @ 元ROM上の配置: 0x08590C08
 @
 @ 書式: .hword SPECIES_<ポケモン名>

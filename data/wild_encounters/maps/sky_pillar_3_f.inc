@@ -1,0 +1,19 @@
+@ MAP_SKY_PILLAR_3F
+@ ROM 0x0852D334-0x0852D36C
+
+gSkyPillar_3F_LandMons::
+	wildmon 33, 33, SPECIES_SABLEYE
+	wildmon 34, 34, SPECIES_GOLBAT
+	wildmon 35, 35, SPECIES_GOLBAT
+	wildmon 34, 34, SPECIES_SABLEYE
+	wildmon 36, 36, SPECIES_CLAYDOL
+	wildmon 37, 37, SPECIES_BANETTE
+	wildmon 38, 38, SPECIES_BANETTE
+	wildmon 36, 36, SPECIES_CLAYDOL
+	wildmon 37, 37, SPECIES_CLAYDOL
+	wildmon 38, 38, SPECIES_CLAYDOL
+	wildmon 37, 37, SPECIES_CLAYDOL
+	wildmon 38, 38, SPECIES_CLAYDOL
+
+gSkyPillar_3F_LandMonsInfo::
+	wildmoninfo 10, gSkyPillar_3F_LandMons

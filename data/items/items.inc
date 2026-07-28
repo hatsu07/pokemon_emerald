@@ -14,7 +14,7 @@
 @ ------------------------------------------------------------------
 gItem_000: @ ????????
 	.byte 0xAC, 0xAC, 0xAC, 0xAC, 0xAC, 0xAC, 0xAC, 0xAC, 0xFF, 0x00       @ name[10]
-	.2byte ITEM_UNUSED_000                                                 @ itemId
+	.2byte ITEM_NONE 			                                                 @ itemId
 	.2byte 0                                                               @ price
 	.byte 0x00                                                             @ holdEffect
 	.byte 0x00                                                             @ holdEffectParam

@@ -2,6 +2,12 @@
 @ Edit .string values in-place; each slot may not grow.
 @ Slots with an exact-length guard contain an internal label or terminator.
 
+	.include "constants/item_constants.inc"
+	.include "constants/species.inc"
+	.include "asm/macros/event.inc"
+
+	.set SCRCMD_SET_WILD_BATTLE, 0xB6
+
 	.globl gUnknown_81DABAC
 gUnknown_81DABAC: @ 0x081DABAC
 	.incbin "baserom.gba", 0x1dabac, 0x384
@@ -6945,7 +6951,12 @@ gText_Rom_1ED80F: @ 0x081ED80F
 	.if (. - gText_Rom_1ED80F) < 0x55
 	.space 0x55 - (. - gText_Rom_1ED80F)
 	.endif
-	.incbin "baserom.gba", 0x1ed864, 0x5ac
+
+	.incbin "baserom.gba", 0x1ed864, 0x2f2
+
+	setwildbattle SPECIES_KECLEON, 30, ITEM_NONE
+
+	.incbin "baserom.gba", 0x1edb5c, 0x2b4
 
 	@ data/maps/Route120/scripts.inc:362 Route120_Text_StevenGreeting
 	.globl gText_Rom_1EDE10
@@ -16202,7 +16213,12 @@ gText_Rom_213D9D: @ 0x08213D9D
 	.if (. - gText_Rom_213D9D) < 0x33
 	.space 0x33 - (. - gText_Rom_213D9D)
 	.endif
-	.incbin "baserom.gba", 0x213dd0, 0x148
+
+	.incbin "baserom.gba", 0x213dd0, 0xc2
+
+	setwildbattle SPECIES_REGIROCK, 40, ITEM_NONE
+
+	.incbin "baserom.gba", 0x213e98, 0x80
 
 	@ data/maps/GraniteCave_1F/scripts.inc:20 GraniteCave_1F_Text_GetsDarkAheadHereYouGo
 	.globl gText_Rom_213F18
@@ -18518,7 +18534,16 @@ gText_Rom_217C92: @ 0x08217C92
 	.if (. - gText_Rom_217C92) < 0x1e
 	.space 0x1e - (. - gText_Rom_217C92)
 	.endif
-	.incbin "baserom.gba", 0x217cb0, 0x15c
+
+	.incbin "baserom.gba", 0x217cb0, 0x46
+
+	setwildbattle SPECIES_ELECTRODE, 30, ITEM_NONE
+
+	.incbin "baserom.gba", 0x217cfc, 0x47
+
+	setwildbattle SPECIES_ELECTRODE, 30, ITEM_NONE
+
+	.incbin "baserom.gba", 0x217d49, 0xc3
 
 	@ data/maps/AquaHideout_B1F/scripts.inc:109 AquaHideout_B1F_Text_Grunt2Intro (+1 aliases)
 	.globl gText_Rom_217E0C
@@ -19918,7 +19943,20 @@ gText_Rom_21A416: @ 0x0821A416
 	.if (. - gText_Rom_21A416) < 0x1c
 	.space 0x1c - (. - gText_Rom_21A416)
 	.endif
-	.incbin "baserom.gba", 0x21a432, 0x4bf
+
+	.incbin "baserom.gba", 0x21a432, 0x3da
+
+	setwildbattle SPECIES_VOLTORB, 25, ITEM_NONE
+
+	.incbin "baserom.gba", 0x21a812, 0x47
+
+	setwildbattle SPECIES_VOLTORB, 25, ITEM_NONE
+
+	.incbin "baserom.gba", 0x21a85f, 0x47
+
+	setwildbattle SPECIES_VOLTORB, 25, ITEM_NONE
+
+	.incbin "baserom.gba", 0x21a8ac, 0x45
 
 	@ field-script:0x21A7F8 FieldScriptText_21A8F1
 	.globl gText_Rom_21A8F1
@@ -20578,9 +20616,19 @@ gText_Rom_21B758: @ 0x0821B758
 	.space 0x17 - (. - gText_Rom_21B758)
 	.endif
 	.incbin "baserom.gba", 0x21b76f, 0x85
+
 	.globl gUnknown_821B7F4
 gUnknown_821B7F4: @ 0x0821B7F4
-	.incbin "baserom.gba", 0x21b7f4, 0x54a
+	.incbin "baserom.gba", 0x21b7f4, 0xb5
+
+	setwildbattle SPECIES_REGICE, 40, ITEM_NONE
+
+	.incbin "baserom.gba", 0x21b8af, 0xfc
+
+	setwildbattle SPECIES_REGISTEEL, 40, ITEM_NONE
+
+	.incbin "baserom.gba", 0x21b9b1, 0x38d
+
 	.globl gUnknown_821BD3E
 gUnknown_821BD3E: @ 0x0821BD3E
 	.incbin "baserom.gba", 0x21bd3e, 0x9
@@ -20639,7 +20687,13 @@ gText_Rom_21BDF8: @ 0x0821BDF8
 	.if (. - gText_Rom_21BDF8) < 0x8d
 	.space 0x8d - (. - gText_Rom_21BDF8)
 	.endif
-	.incbin "baserom.gba", 0x21be85, 0x24b
+
+	.incbin "baserom.gba", 0x21be85, 0x118
+
+gRayquazaStaticEncounter::
+	setwildbattle SPECIES_RAYQUAZA, 70, ITEM_NONE
+
+	.incbin "baserom.gba", 0x21bfa3, 0x12d
 
 	@ field-script:0x21C07D FieldScriptText_21C0D0
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -21341,7 +21395,16 @@ gText_Rom_21CFC0: @ 0x0821CFC0
 	.if (. - gText_Rom_21CFC0) < 0x12
 	.space 0x12 - (. - gText_Rom_21CFC0)
 	.endif
-	.incbin "baserom.gba", 0x21cfd2, 0x234
+
+	.incbin "baserom.gba", 0x21cfd2, 0x92
+
+	setwildbattle SPECIES_KYOGRE, 70, ITEM_NONE
+
+	.incbin "baserom.gba", 0x21d06a, 0xcb
+
+	setwildbattle SPECIES_GROUDON, 70, ITEM_NONE
+
+	.incbin "baserom.gba", 0x21d13b, 0xcb
 
 	@ data/maps/MeteorFalls_StevensCave/scripts.inc:29 MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst
 	.globl gText_Rom_21D206
@@ -23476,10 +23539,16 @@ gText_Rom_222729: @ 0x08222729
 	.if (. - gText_Rom_222729) < 0x3c
 	.space 0x3c - (. - gText_Rom_222729)
 	.endif
+
 	.incbin "baserom.gba", 0x222765, 0x334
+
 	.globl gUnknown_8222A99
 gUnknown_8222A99: @ 0x08222A99
-	.incbin "baserom.gba", 0x222a99, 0x114
+	.incbin "baserom.gba", 0x222a99, 0x2b
+
+	setwildbattle SPECIES_SUDOWOODO, 40, ITEM_NONE
+
+	.incbin "baserom.gba", 0x222aca, 0xe3
 
 	@ field-script:0x2229E2 FieldScriptText_222BAD
 	.globl gText_Rom_222BAD
@@ -37063,9 +37132,15 @@ gUnknown_8242E1E: @ 0x08242E1E
 	.globl gUnknown_8242F2C
 gUnknown_8242F2C: @ 0x08242F2C
 	.incbin "baserom.gba", 0x242f2c, 0x1ef
+
 	.globl gUnknown_824311B
 gUnknown_824311B: @ 0x0824311B
-	.incbin "baserom.gba", 0x24311b, 0x536
+	.incbin "baserom.gba", 0x24311b, 0x2f4
+
+	setwildbattle SPECIES_KECLEON, 30, ITEM_NONE
+
+	.incbin "baserom.gba", 0x243415, 0x23c
+
 	.globl gUnknown_8243651
 gUnknown_8243651: @ 0x08243651
 	.incbin "baserom.gba", 0x243651, 0x9

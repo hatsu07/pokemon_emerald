@@ -1,0 +1,38 @@
+@ MAP_ARTISAN_CAVE_B1F
+@ ROM 0x0852D754-0x0852D78C
+
+gArtisanCave_B1F_LandMons::
+	wildmon 40, 40, SPECIES_SMEARGLE
+	wildmon 41, 41, SPECIES_SMEARGLE
+	wildmon 42, 42, SPECIES_SMEARGLE
+	wildmon 43, 43, SPECIES_SMEARGLE
+	wildmon 44, 44, SPECIES_SMEARGLE
+	wildmon 45, 45, SPECIES_SMEARGLE
+	wildmon 46, 46, SPECIES_SMEARGLE
+	wildmon 47, 47, SPECIES_SMEARGLE
+	wildmon 48, 48, SPECIES_SMEARGLE
+	wildmon 49, 49, SPECIES_SMEARGLE
+	wildmon 50, 50, SPECIES_SMEARGLE
+	wildmon 50, 50, SPECIES_SMEARGLE
+
+gArtisanCave_B1F_LandMonsInfo::
+	wildmoninfo 10, gArtisanCave_B1F_LandMons
+@ MAP_ARTISAN_CAVE_1F
+@ ROM 0x0852D78C-0x0852D7C4
+
+gArtisanCave_1F_LandMons::
+	wildmon 40, 40, SPECIES_SMEARGLE
+	wildmon 41, 41, SPECIES_SMEARGLE
+	wildmon 42, 42, SPECIES_SMEARGLE
+	wildmon 43, 43, SPECIES_SMEARGLE
+	wildmon 44, 44, SPECIES_SMEARGLE
+	wildmon 45, 45, SPECIES_SMEARGLE
+	wildmon 46, 46, SPECIES_SMEARGLE
+	wildmon 47, 47, SPECIES_SMEARGLE
+	wildmon 48, 48, SPECIES_SMEARGLE
+	wildmon 49, 49, SPECIES_SMEARGLE
+	wildmon 50, 50, SPECIES_SMEARGLE
+	wildmon 50, 50, SPECIES_SMEARGLE
+
+gArtisanCave_1F_LandMonsInfo::
+	wildmoninfo 10, gArtisanCave_1F_LandMons

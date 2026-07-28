@@ -134,9 +134,13 @@ gUnknown_85DD9AC: @ 0x085DD9AC
 	.globl gUnknown_85DD9BC
 gUnknown_85DD9BC: @ 0x085DD9BC
 	.incbin "baserom.gba", 0x5dd9bc, 0x10
+
 	.globl gUnknown_85DD9CC
 gUnknown_85DD9CC: @ 0x085DD9CC
-	.incbin "baserom.gba", 0x5dd9cc, 0x180
+	.incbin "baserom.gba", 0x5dd9cc, 0x40
+
+	.include "data/battle_frontier/battle_pike_wild_mons.inc"
+
 	.globl gUnknown_85DDB4C
 gUnknown_85DDB4C: @ 0x085DDB4C
 	.incbin "baserom.gba", 0x5ddb4c, 0x8
@@ -197,15 +201,13 @@ gUnknown_85DDEE2: @ 0x085DDEE2
 	.globl gUnknown_85DDEE4
 gUnknown_85DDEE4: @ 0x085DDEE4
 	.incbin "baserom.gba", 0x5ddee4, 0x2
-	.globl gUnknown_85DDEE6
-gUnknown_85DDEE6: @ 0x085DDEE6
-	.incbin "baserom.gba", 0x5ddee6, 0x782
-	.globl gUnknown_85DE668
-gUnknown_85DE668: @ 0x085DE668
-	.incbin "baserom.gba", 0x5de668, 0x7d0
-	.globl gUnknown_85DEE38
-gUnknown_85DEE38: @ 0x085DEE38
-	.incbin "baserom.gba", 0x5dee38, 0x50
+
+	.incbin "baserom.gba", 0x5ddee6, 0x2
+
+	.include "data/battle_frontier/battle_pyramid_level_50_wild_mons.inc"
+
+	.include "data/battle_frontier/battle_pyramid_open_level_wild_mons.inc"
+
 	.globl gUnknown_85DEE88
 gUnknown_85DEE88: @ 0x085DEE88
 	.incbin "baserom.gba", 0x5dee88, 0x5

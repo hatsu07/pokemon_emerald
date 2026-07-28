@@ -167,7 +167,7 @@ def _load_species_file(path: Path, names: dict[int, str], *, override: bool) -> 
 
 def load_species_names(root: Path) -> dict[int, str]:
     names: dict[int, str] = {}
-    _load_species_file(root / "constants/species_constants.inc", names, override=False)
+    _load_species_file(root / "constants/species.inc", names, override=False)
     return names
 
 

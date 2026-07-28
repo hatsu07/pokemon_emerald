@@ -4,4 +4,4 @@
 	.include "constants/pokemon_data_constants.inc"
 	.include "constants/berry_constants.inc"
 	.include "constants/contest_move_effects.inc"
-	.include "constants/species_constants.inc"
+	.include "constants/species.inc"

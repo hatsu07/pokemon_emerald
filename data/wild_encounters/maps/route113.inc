@@ -1,0 +1,19 @@
+@ MAP_ROUTE113
+@ ROM 0x0852B7FC-0x0852B834
+
+gRoute113_LandMons::
+	wildmon 15, 15, SPECIES_SPINDA
+	wildmon 15, 15, SPECIES_SPINDA
+	wildmon 15, 15, SPECIES_SLUGMA
+	wildmon 14, 14, SPECIES_SPINDA
+	wildmon 14, 14, SPECIES_SPINDA
+	wildmon 14, 14, SPECIES_SLUGMA
+	wildmon 16, 16, SPECIES_SPINDA
+	wildmon 16, 16, SPECIES_SLUGMA
+	wildmon 16, 16, SPECIES_SPINDA
+	wildmon 16, 16, SPECIES_SKARMORY
+	wildmon 16, 16, SPECIES_SPINDA
+	wildmon 16, 16, SPECIES_SKARMORY
+
+gRoute113_LandMonsInfo::
+	wildmoninfo 20, gRoute113_LandMons
