@@ -6,5 +6,6 @@
 	.include "constants/map.inc"
 	.include "asm/macros/base_stats_macro.inc"
 	.include "asm/macros/level_up_move_macro.inc"
+	.include "asm/macros/trainer.inc"
 	.include "asm/macros/wild_encounter.inc"
 	.include "data/rodata.inc"
