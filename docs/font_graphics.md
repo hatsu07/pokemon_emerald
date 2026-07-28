@@ -4,7 +4,7 @@
 
 ## 文字コード体系
 
-日本版は `tools/charmap.txt` で定義された1バイト文字コードを使用しています。
+日本版は `data/charmap/charmap.txt` で定義された1バイト文字コードを使用しています。
 
 ### 文字コードの特徴
 
@@ -65,7 +65,7 @@
 ### フォント解析の課題
 
 1. **フォントデータの場所特定**: `data/data.s` 内のどのincbinブロックがフォントか特定する必要がある
-2. **文字コードとグリフの対応**: tools/charmap.txt のコード値とフォントテーブルのインデックスが一致するか確認
+2. **文字コードとグリフの対応**: data/charmap/charmap.txt のコード値とフォントテーブルのインデックスが一致するか確認
 3. **幅テーブルの解析**: 可変幅フォントの場合、各文字の幅テーブルを解析する必要がある
 4. **色データ**: フォントの色・影・光沢などの描画パラメータ
 
@@ -121,6 +121,6 @@
 
 ## 参照
 
-- [tools/charmap.txt](../tools/charmap.txt) - 文字コード定義
+- [data/charmap/charmap.txt](../data/charmap/charmap.txt) - 文字コード定義
 - [rom_structure.md](rom_structure.md) - ROM構造ドキュメント
 - [hacking.md](hacking.md) - ハックガイド

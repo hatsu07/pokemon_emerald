@@ -32,9 +32,16 @@ $(ELF): %.elf: $(OBJFILE) ld_script_jp.txt
 	$(LD) -T ld_script_jp.txt -Map $*.map -o $@ $(OBJFILE) -L tools/agbcc/lib -lgcc -lc
 	$(GBAFIX) -t"$(TITLE)" -c$(GAMECODE) -m01 --silent $@
 
-# data/*.s は .string / tools/charmap.txt を preproc 経由でアセンブル
-data/%.o: data/%.s tools/charmap.txt
-	$(PREPROC) $< tools/charmap.txt | $(AS) $(ASFLAGS) -o $@ -
+# data/*.s は .string / data/charmap/charmap.txt を preproc 経由でアセンブル
+CHARMAP_PARTS := \
+	data/charmap/charmap.txt \
+	data/charmap/charmap_extra.txt
+CHARMAP := data/charmap/charmap_combined.txt
+$(CHARMAP): $(CHARMAP_PARTS)
+	cat $^ > $@
+
+data/%.o: data/%.s $(CHARMAP)
+	$(PREPROC) $< $(CHARMAP) | $(AS) $(ASFLAGS) -o $@ -
 
 TEXT_SOURCES := $(wildcard data/text/*.inc data/text/generated/*.inc)
 

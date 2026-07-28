@@ -6,7 +6,7 @@ import struct
 
 ROM_PATH = Path("baserom.gba")
 OUTPUT_PATH = Path("data/items/items.inc")
-CHARMAP_PATH = Path("tools/charmap.txt")
+CHARMAP_PATH = Path("data/charmap/charmap.txt")
 
 ITEM_TABLE_OFFSET = 0x55CEE8
 ITEM_STRUCT_SIZE = 0x28
@@ -229,7 +229,7 @@ def main() -> None:
         f"@ Item structure size: 0x{ITEM_STRUCT_SIZE:X} bytes",
         f"@ Item count: {ITEM_COUNT}",
         "@",
-        "@ 名前は tools/charmap.txt を使ってコメントへ復号します。",
+        "@ 名前は data/charmap/charmap.txt を使ってコメントへ復号します。",
         "@ ROM完全一致を維持するため、名前本体は生バイトのまま出力します。",
         "",
     ]
