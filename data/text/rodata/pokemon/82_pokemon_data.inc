@@ -11,12 +11,10 @@ gText_Rom_539C08: @ 0x08539C08
 	.globl gUnknown_8539C0E
 gUnknown_8539C0E: @ 0x08539C0E
 	.incbin "baserom.gba", 0x539c0e, 0x42
-	.globl gUnknown_8539C50
-gUnknown_8539C50: @ 0x08539C50
-	.incbin "baserom.gba", 0x539c50, 0x6a4c
-	.globl gUnknown_854069C
-gUnknown_854069C: @ 0x0854069C
-	.incbin "baserom.gba", 0x54069c, 0x2a54
+
+	.include "data/pokemon/pokedex_descriptions.inc"
+	.include "data/pokemon/pokedex_entries.inc"
+
 	.globl gUnknown_85430F0
 gUnknown_85430F0: @ 0x085430F0
 	.incbin "baserom.gba", 0x5430f0, 0x20

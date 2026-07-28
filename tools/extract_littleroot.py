@@ -5,7 +5,7 @@ from pathlib import Path
 
 rom = Path('baserom.gba').read_bytes()
 preproc = 'tools/preproc/preproc'
-charmap = 'tools/charmap.txt'
+charmap = 'data/charmap/charmap.txt'
 
 texts = {
     'mom_new_home': 'ママ『{PLAYER} おつかれさま!\pながいあいだ トラックに ゆられて\nたいへん だったでしょ?\pここが ミシロタウンよ!\pどう? これが わたしたちの\nあたらしい おうち!\pちょっと こふうな かんじで\nすみやすそうな ところ でしょ?\pこんどは {PLAYER}の おへやも あるのよ!\nさあ なかに はいりましょ!$',

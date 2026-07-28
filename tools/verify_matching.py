@@ -100,7 +100,7 @@ def main():
     parser.add_argument('--original-rom', default='baserom.gba', help='オリジナルROMパス')
     parser.add_argument('--make-compare', action='store_true', help='make compareを実行')
     parser.add_argument('--verify-text', help='特定のテキストファイルを検証')
-    parser.add_argument('--charmap', default='tools/charmap.txt', help='tools/charmap.txtパス')
+    parser.add_argument('--charmap', default='data/charmap/charmap.txt', help='data/charmap/charmap.txtパス')
     parser.add_argument('--preproc', default='tools/preproc/preproc', help='preproc実行ファイルパス')
     
     args = parser.parse_args()

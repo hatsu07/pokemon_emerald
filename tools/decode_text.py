@@ -4,7 +4,7 @@ from pathlib import Path
 rom = Path('baserom.gba').read_bytes()
 
 charmap = {}
-with open('tools/charmap.txt', encoding='utf-8') as f:
+with open('data/charmap/charmap.txt', encoding='utf-8') as f:
     for line in f:
         line = line.split('@')[0].strip()
         if not line or line.startswith(';'):

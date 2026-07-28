@@ -92,7 +92,7 @@
 
 ### Phase 2 - Documentation / テキスト基盤
 
-- [x] 日本語文字コード表（`tools/charmap.txt`）
+- [x] 日本語文字コード表（`data/charmap/charmap.txt`）
 - [x] `.string` ビルド連携（`tools/preproc` + `Makefile`）
 - [x] オダマキ博士オープニングセリフのテキスト化（`data/text/birch_speech.inc`）
 - [x] セリフ参照のシンボル化（`asm/main_menu.s` → `gText_Birch_*`）
