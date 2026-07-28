@@ -16706,7 +16706,7 @@ _0804E204:
 	beq _0804E22E
 	b _0804E264
 	.align 2, 0
-_0804E220: .4byte 0x082E383C
+_0804E220: .4byte gTrainers
 _0804E224:
 	cmp r2, #2
 	beq _0804E240
