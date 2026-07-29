@@ -1510,8 +1510,8 @@ gText_Rom_580CB2: @ 0x08580CB2
 	.if (. - gText_Rom_580CB2) < 0x1e
 	.space 0x1e - (. - gText_Rom_580CB2)
 	.endif
-	.globl gUnknown_8580CD0
-gUnknown_8580CD0: @ 0x08580CD0
+	.globl gDecorations
+gDecorations: @ 0x08580CD0
 	.incbin "baserom.gba", 0x580cd0, 0x1
 	.globl gUnknown_8580CD1
 gUnknown_8580CD1: @ 0x08580CD1

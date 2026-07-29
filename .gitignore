@@ -26,6 +26,7 @@ tools/br_ips/ips_patch
 *.bat
 *.dump
 *.sa*
+*.bin
 Thumbs.db
 build/
 .DS_Store

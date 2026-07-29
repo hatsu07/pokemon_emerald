@@ -152,14 +152,14 @@ gUnknown_8556784: @ 0x08556784
 	.globl gUnknown_85567A4
 gUnknown_85567A4: @ 0x085567A4
 	.incbin "baserom.gba", 0x5567a4, 0x60
-	.globl gUnknown_8556804
-gUnknown_8556804: @ 0x08556804
+	.globl gMonIconTable
+gMonIconTable: @ 0x08556804
 	.incbin "baserom.gba", 0x556804, 0x6e0
-	.globl gUnknown_8556EE4
-gUnknown_8556EE4: @ 0x08556EE4
+	.globl gMonIconPaletteIndices
+gMonIconPaletteIndices: @ 0x08556EE4
 	.incbin "baserom.gba", 0x556ee4, 0x1b8
-	.globl gUnknown_855709C
-gUnknown_855709C: @ 0x0855709C
+	.globl gMonIconPaletteTable
+gMonIconPaletteTable: @ 0x0855709C
 	.incbin "baserom.gba", 0x55709c, 0x30
 	.globl gUnknown_85570CC
 gUnknown_85570CC: @ 0x085570CC
