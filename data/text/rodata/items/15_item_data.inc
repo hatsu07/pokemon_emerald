@@ -384,14 +384,14 @@ gUnknown_82D4CA8: @ 0x082D4CA8
 	.globl gUnknown_82D5A68
 gUnknown_82D5A68: @ 0x082D5A68
 	.incbin "baserom.gba", 0x2d5a68, 0x6e0
-	.globl gUnknown_82D6148
-gUnknown_82D6148: @ 0x082D6148
+	.globl gMonBackPicTable
+gMonBackPicTable: @ 0x082D6148
 	.incbin "baserom.gba", 0x2d6148, 0xdc0
-	.globl gUnknown_82D6F08
-gUnknown_82D6F08: @ 0x082D6F08
+	.globl gMonPaletteTable
+gMonPaletteTable: @ 0x082D6F08
 	.incbin "baserom.gba", 0x2d6f08, 0xdc0
-	.globl gUnknown_82D7CC8
-gUnknown_82D7CC8: @ 0x082D7CC8
+	.globl gMonShinyPaletteTable
+gMonShinyPaletteTable: @ 0x082D7CC8
 	.incbin "baserom.gba", 0x2d7cc8, 0xf34
 	.globl gUnknown_82D8BFC
 gUnknown_82D8BFC: @ 0x082D8BFC
@@ -423,8 +423,8 @@ gUnknown_82D965C: @ 0x082D965C
 	.globl gUnknown_82DD33C
 gUnknown_82DD33C: @ 0x082DD33C
 	.incbin "baserom.gba", 0x2dd33c, 0x6e0
-	.globl gUnknown_82DDA1C
-gUnknown_82DDA1C: @ 0x082DDA1C
+	.globl gMonFrontPicTable
+gMonFrontPicTable: @ 0x082DDA1C
 	.incbin "baserom.gba", 0x2dda1c, 0x5b48
 	.globl gUnknown_82E3564
 gUnknown_82E3564: @ 0x082E3564

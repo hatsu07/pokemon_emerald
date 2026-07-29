@@ -278,10 +278,9 @@ gText_Rom_55CEC0: @ 0x0855CEC0
 	.incbin "baserom.gba", 0x55cee2, 0x6
 	.align 2
 	.globl gItems
-	.globl gUnknown_855CEE8
 gItems:
 
-gUnknown_855CEE8: @ 0x0855CEE8
+gItems: @ 0x0855CEE8
 	.include "data/items/items.inc"
 
 	@ Existing symbols that point inside item-name fields.

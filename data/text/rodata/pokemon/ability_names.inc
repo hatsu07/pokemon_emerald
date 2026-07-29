@@ -908,6 +908,6 @@ gText_Rom_2EC02C: @ 0x082EC02C
 	.endif
 	.incbin "baserom.gba", 0x2ec032, 0x2
 
-	.globl gUnknown_82EC034
-gUnknown_82EC034: @ 0x082EC034
+	.globl gAbilityDescriptionPointers
+gAbilityDescriptionPointers: @ 0x082EC034
 	.incbin "baserom.gba", 0x2ec034, 0x13

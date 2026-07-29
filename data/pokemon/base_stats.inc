@@ -6,8 +6,8 @@
 .include "constants/type_constants.inc"
 .include "constants/base_stats_constants.inc"
 
-.globl gUnknown_82F0D54
-gUnknown_82F0D54: @ 0x082F0D54
+.globl gSpeciesInfo
+gSpeciesInfo: @ 0x082F0D54
 
 	base_stats NONE, 0, 0, 0, 0, 0, 0, TYPE_NORMAL, TYPE_NORMAL, 0, 0, 0x0000, 0x0000, 0x0000, GENDER_MALE_ONLY, 0, 0, GROWTH_MEDIUM_FAST, EGG_GROUP_NONE, EGG_GROUP_NONE, ABILITY_NONE, ABILITY_NONE, 0, BODY_COLOR_RED
 

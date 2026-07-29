@@ -1,8 +1,8 @@
 	.globl gUnknown_82EBCE4
 gUnknown_82EBCE4: @ 0x082EBCE4
 	.incbin "baserom.gba", 0x2ebce4, 0xe0
-	.globl gUnknown_82EBDC4
-gUnknown_82EBDC4: @ 0x082EBDC4
+	.globl gAbilityNames
+gAbilityNames: @ 0x082EBDC4
 
 	@ src/battle_records.c:89 sText_DashesNoPlayer (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

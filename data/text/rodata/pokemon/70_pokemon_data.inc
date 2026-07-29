@@ -116,11 +116,11 @@ gUnknown_82FCDEE: @ 0x082FCDEE
 	.globl gUnknown_82FCE02
 gUnknown_82FCE02: @ 0x082FCE02
 	.incbin "baserom.gba", 0x2fce02, 0xa
-	.globl gUnknown_82FCE0C
-gUnknown_82FCE0C: @ 0x082FCE0C
+	.globl gBallSpriteSheets
+gBallSpriteSheets: @ 0x082FCE0C
 	.incbin "baserom.gba", 0x2fce0c, 0x60
-	.globl gUnknown_82FCE6C
-gUnknown_82FCE6C: @ 0x082FCE6C
+	.globl gBallSpritePalettes
+gBallSpritePalettes: @ 0x082FCE6C
 	.incbin "baserom.gba", 0x2fce6c, 0x128
 	.globl gUnknown_82FCF94
 gUnknown_82FCF94: @ 0x082FCF94

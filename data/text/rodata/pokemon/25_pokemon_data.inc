@@ -1,7 +1,7 @@
 @ ポケモン名
 
-	.globl gUnknown_82EA31C
-gUnknown_82EA31C: @ 0x082EA31C
+	.globl gSpeciesNames
+gSpeciesNames: @ 0x082EA31C
 	.incbin "baserom.gba", 0x2ea31c, 0x6
 
 	@ src/data/pokemon/species_info/gen_1_families.h:27 gen_1_families_line_27
@@ -4712,7 +4712,7 @@ gText_Rom_2EACBE: @ 0x082EACBE
 	.space 0x5 - (. - gText_Rom_2EACBE)
 	.endif
 	.incbin "baserom.gba", 0x2eacc3, 0x1
-	.globl gUnknown_82EACC4
-gUnknown_82EACC4: @ 0x082EACC4
+	.globl gMoveNames
+gMoveNames: @ 0x082EACC4
 	.incbin "baserom.gba", 0x2eacc4, 0x8
 
