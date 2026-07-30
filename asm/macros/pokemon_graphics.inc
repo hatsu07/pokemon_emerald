@@ -21,3 +21,8 @@
 	.2byte \padding
 .endm
 
+.macro mon_icon_palette pointer:req, number:req
+	.4byte \pointer
+	.2byte 0xDAC0 + \number
+	.2byte 0
+.endm

@@ -36,11 +36,19 @@ def main() -> int:
         default=24,
         help="確認PNGの1色あたりの大きさ（既定: 24）",
     )
+    parser.add_argument(
+        "--raw",
+        action="store_true",
+        help="非圧縮パレットとして読む"
+    )
     args = parser.parse_args()
 
     try:
         rom = args.rom.read_bytes()
-        compressed, raw = extract_lz77(rom, args.offset)
+        if args.raw:
+            raw = rom[args.offset:args.offset + args.expected_colors * 2]
+        else:
+            compressed, raw = extract_lz77(rom, args.offset)
         colors = decode_bgr555_palette(raw)
 
         if args.expected_colors and len(colors) != args.expected_colors:

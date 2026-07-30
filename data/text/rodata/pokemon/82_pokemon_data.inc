@@ -1,20 +1,3 @@
-	@ src/pokedex.c:850 sText_No000
-	.globl gText_Rom_539C08
-gText_Rom_539C08: @ 0x08539C08
-	.string "{NO}000$"
-	.if (. - gText_Rom_539C08) > 0x6
-	.error "gText_Rom_539C08 may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_539C08) < 0x6
-	.space 0x6 - (. - gText_Rom_539C08)
-	.endif
-	.globl gUnknown_8539C0E
-gUnknown_8539C0E: @ 0x08539C0E
-	.incbin "baserom.gba", 0x539c0e, 0x42
-
-	.include "data/pokemon/pokedex_descriptions.inc"
-	.include "data/pokemon/pokedex_entries.inc"
-
 	.globl gUnknown_85430F0
 gUnknown_85430F0: @ 0x085430F0
 	.incbin "baserom.gba", 0x5430f0, 0x20
