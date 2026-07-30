@@ -2,12 +2,14 @@
 
 	.globl gSpeciesNames
 gSpeciesNames: @ 0x082EA31C
-	.incbin "baserom.gba", 0x2ea31c, 0x6
+	.string "？？？？？"
+	.byte EOS
 
 	@ src/data/pokemon/species_info/gen_1_families.h:27 gen_1_families_line_27
 	.globl gText_Rom_2EA322
 gText_Rom_2EA322: @ 0x082EA322
-	.string "フシギダネ$"
+	.string "フシギダネ"
+	.byte EOS
 	.if (. - gText_Rom_2EA322) > 0x6
 	.error "gText_Rom_2EA322 may not grow beyond its original slot"
 	.endif
@@ -18,7 +20,8 @@ gText_Rom_2EA322: @ 0x082EA322
 	@ src/data/pokemon/species_info/gen_1_families.h:98 gen_1_families_line_98
 	.globl gText_Rom_2EA328
 gText_Rom_2EA328: @ 0x082EA328
-	.string "フシギソウ$"
+	.string "フシギソウ"
+	.byte EOS
 	.if (. - gText_Rom_2EA328) > 0x6
 	.error "gText_Rom_2EA328 may not grow beyond its original slot"
 	.endif
@@ -29,7 +32,8 @@ gText_Rom_2EA328: @ 0x082EA328
 	@ src/data/pokemon/species_info/gen_1_families.h:175 gen_1_families_line_175 (+2 aliases)
 	.globl gText_Rom_2EA32E
 gText_Rom_2EA32E: @ 0x082EA32E
-	.string "フシギバナ$"
+	.string "フシギバナ"
+	.byte EOS
 	.if (. - gText_Rom_2EA32E) > 0x6
 	.error "gText_Rom_2EA32E may not grow beyond its original slot"
 	.endif
@@ -40,7 +44,8 @@ gText_Rom_2EA32E: @ 0x082EA32E
 	@ src/data/pokemon/species_info/gen_1_families.h:393 gen_1_families_line_393
 	.globl gText_Rom_2EA334
 gText_Rom_2EA334: @ 0x082EA334
-	.string "ヒトカゲ$"
+	.string "ヒトカゲ"
+	.byte EOS
 	.if (. - gText_Rom_2EA334) > 0x5
 	.error "gText_Rom_2EA334 may not grow beyond its original slot"
 	.endif
@@ -52,7 +57,8 @@ gText_Rom_2EA334: @ 0x082EA334
 	@ src/data/pokemon/species_info/gen_1_families.h:463 gen_1_families_line_463
 	.globl gText_Rom_2EA33A
 gText_Rom_2EA33A: @ 0x082EA33A
-	.string "リザード$"
+	.string "リザード"
+	.byte EOS
 	.if (. - gText_Rom_2EA33A) > 0x5
 	.error "gText_Rom_2EA33A may not grow beyond its original slot"
 	.endif
@@ -64,7 +70,8 @@ gText_Rom_2EA33A: @ 0x082EA33A
 	@ src/data/pokemon/species_info/gen_1_families.h:541 gen_1_families_line_541 (+3 aliases)
 	.globl gText_Rom_2EA340
 gText_Rom_2EA340: @ 0x082EA340
-	.string "リザードン$"
+	.string "リザードン"
+	.byte EOS
 	.if (. - gText_Rom_2EA340) > 0x6
 	.error "gText_Rom_2EA340 may not grow beyond its original slot"
 	.endif
@@ -75,7 +82,8 @@ gText_Rom_2EA340: @ 0x082EA340
 	@ src/data/pokemon/species_info/gen_1_families.h:815 gen_1_families_line_815
 	.globl gText_Rom_2EA346
 gText_Rom_2EA346: @ 0x082EA346
-	.string "ゼニガメ$"
+	.string "ゼニガメ"
+	.byte EOS
 	.if (. - gText_Rom_2EA346) > 0x5
 	.error "gText_Rom_2EA346 may not grow beyond its original slot"
 	.endif
@@ -88,7 +96,8 @@ gText_Rom_2EA346: @ 0x082EA346
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EA34C
 gText_Rom_2EA34C: @ 0x082EA34C
-	.string "カメール$"
+	.string "カメール"
+	.byte EOS
 	.if (. - gText_Rom_2EA34C) != 0x5
 	.error "gText_Rom_2EA34C must retain its original byte length"
 	.endif
@@ -99,7 +108,8 @@ gText_Rom_2EA34C: @ 0x082EA34C
 	@ src/data/pokemon/species_info/gen_1_families.h:964 gen_1_families_line_964 (+2 aliases)
 	.globl gText_Rom_2EA352
 gText_Rom_2EA352: @ 0x082EA352
-	.string "カメックス$"
+	.string "カメックス"
+	.byte EOS
 	.if (. - gText_Rom_2EA352) > 0x6
 	.error "gText_Rom_2EA352 may not grow beyond its original slot"
 	.endif
@@ -110,7 +120,8 @@ gText_Rom_2EA352: @ 0x082EA352
 	@ src/data/pokemon/species_info/gen_1_families.h:1170 gen_1_families_line_1170
 	.globl gText_Rom_2EA358
 gText_Rom_2EA358: @ 0x082EA358
-	.string "キャタピー$"
+	.string "キャタピー"
+	.byte EOS
 	.if (. - gText_Rom_2EA358) > 0x6
 	.error "gText_Rom_2EA358 may not grow beyond its original slot"
 	.endif
@@ -121,7 +132,8 @@ gText_Rom_2EA358: @ 0x082EA358
 	@ src/data/pokemon/species_info/gen_1_families.h:1244 gen_1_families_line_1244
 	.globl gText_Rom_2EA35E
 gText_Rom_2EA35E: @ 0x082EA35E
-	.string "トランセル$"
+	.string "トランセル"
+	.byte EOS
 	.if (. - gText_Rom_2EA35E) > 0x6
 	.error "gText_Rom_2EA35E may not grow beyond its original slot"
 	.endif
@@ -132,7 +144,8 @@ gText_Rom_2EA35E: @ 0x082EA35E
 	@ src/data/pokemon/species_info/gen_1_families.h:1324 gen_1_families_line_1324 (+1 aliases)
 	.globl gText_Rom_2EA364
 gText_Rom_2EA364: @ 0x082EA364
-	.string "バタフリー$"
+	.string "バタフリー"
+	.byte EOS
 	.if (. - gText_Rom_2EA364) > 0x6
 	.error "gText_Rom_2EA364 may not grow beyond its original slot"
 	.endif
@@ -143,7 +156,8 @@ gText_Rom_2EA364: @ 0x082EA364
 	@ src/data/pokemon/species_info/gen_1_families.h:1481 gen_1_families_line_1481
 	.globl gText_Rom_2EA36A
 gText_Rom_2EA36A: @ 0x082EA36A
-	.string "ビードル$"
+	.string "ビードル"
+	.byte EOS
 	.if (. - gText_Rom_2EA36A) > 0x5
 	.error "gText_Rom_2EA36A may not grow beyond its original slot"
 	.endif
@@ -155,7 +169,8 @@ gText_Rom_2EA36A: @ 0x082EA36A
 	@ src/data/pokemon/species_info/gen_1_families.h:1555 gen_1_families_line_1555
 	.globl gText_Rom_2EA370
 gText_Rom_2EA370: @ 0x082EA370
-	.string "コクーン$"
+	.string "コクーン"
+	.byte EOS
 	.if (. - gText_Rom_2EA370) > 0x5
 	.error "gText_Rom_2EA370 may not grow beyond its original slot"
 	.endif
@@ -167,7 +182,8 @@ gText_Rom_2EA370: @ 0x082EA370
 	@ src/data/pokemon/species_info/gen_1_families.h:1643 gen_1_families_line_1643 (+1 aliases)
 	.globl gText_Rom_2EA376
 gText_Rom_2EA376: @ 0x082EA376
-	.string "スピアー$"
+	.string "スピアー"
+	.byte EOS
 	.if (. - gText_Rom_2EA376) > 0x5
 	.error "gText_Rom_2EA376 may not grow beyond its original slot"
 	.endif
@@ -179,7 +195,8 @@ gText_Rom_2EA376: @ 0x082EA376
 	@ src/data/pokemon/species_info/gen_1_families.h:1800 gen_1_families_line_1800
 	.globl gText_Rom_2EA37C
 gText_Rom_2EA37C: @ 0x082EA37C
-	.string "ポッポ$"
+	.string "ポッポ"
+	.byte EOS
 	.if (. - gText_Rom_2EA37C) > 0x4
 	.error "gText_Rom_2EA37C may not grow beyond its original slot"
 	.endif
@@ -191,7 +208,8 @@ gText_Rom_2EA37C: @ 0x082EA37C
 	@ src/data/pokemon/species_info/gen_1_families.h:1874 gen_1_families_line_1874
 	.globl gText_Rom_2EA382
 gText_Rom_2EA382: @ 0x082EA382
-	.string "ピジョン$"
+	.string "ピジョン"
+	.byte EOS
 	.if (. - gText_Rom_2EA382) > 0x5
 	.error "gText_Rom_2EA382 may not grow beyond its original slot"
 	.endif
@@ -203,7 +221,8 @@ gText_Rom_2EA382: @ 0x082EA382
 	@ src/data/pokemon/species_info/gen_1_families.h:1957 gen_1_families_line_1957 (+1 aliases)
 	.globl gText_Rom_2EA388
 gText_Rom_2EA388: @ 0x082EA388
-	.string "ピジョット$"
+	.string "ピジョット"
+	.byte EOS
 	.if (. - gText_Rom_2EA388) > 0x6
 	.error "gText_Rom_2EA388 may not grow beyond its original slot"
 	.endif
@@ -215,7 +234,8 @@ gText_Rom_2EA388: @ 0x082EA388
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EA38E
 gText_Rom_2EA38E: @ 0x082EA38E
-	.string "コラッタ$"
+	.string "コラッタ"
+	.byte EOS
 	.if (. - gText_Rom_2EA38E) != 0x5
 	.error "gText_Rom_2EA38E must retain its original byte length"
 	.endif
@@ -226,7 +246,8 @@ gText_Rom_2EA38E: @ 0x082EA38E
 	@ src/data/pokemon/species_info/gen_1_families.h:2186 gen_1_families_line_2186 (+2 aliases)
 	.globl gText_Rom_2EA394
 gText_Rom_2EA394: @ 0x082EA394
-	.string "ラッタ$"
+	.string "ラッタ"
+	.byte EOS
 	.if (. - gText_Rom_2EA394) > 0x4
 	.error "gText_Rom_2EA394 may not grow beyond its original slot"
 	.endif
@@ -238,7 +259,8 @@ gText_Rom_2EA394: @ 0x082EA394
 	@ src/data/pokemon/species_info/gen_1_families.h:2476 gen_1_families_line_2476
 	.globl gText_Rom_2EA39A
 gText_Rom_2EA39A: @ 0x082EA39A
-	.string "オニスズメ$"
+	.string "オニスズメ"
+	.byte EOS
 	.if (. - gText_Rom_2EA39A) > 0x6
 	.error "gText_Rom_2EA39A may not grow beyond its original slot"
 	.endif
@@ -249,7 +271,8 @@ gText_Rom_2EA39A: @ 0x082EA39A
 	@ src/data/pokemon/species_info/gen_1_families.h:2548 gen_1_families_line_2548
 	.globl gText_Rom_2EA3A0
 gText_Rom_2EA3A0: @ 0x082EA3A0
-	.string "オニドリル$"
+	.string "オニドリル"
+	.byte EOS
 	.if (. - gText_Rom_2EA3A0) > 0x6
 	.error "gText_Rom_2EA3A0 may not grow beyond its original slot"
 	.endif
@@ -260,7 +283,8 @@ gText_Rom_2EA3A0: @ 0x082EA3A0
 	@ src/data/pokemon/species_info/gen_1_families.h:2624 gen_1_families_line_2624
 	.globl gText_Rom_2EA3A6
 gText_Rom_2EA3A6: @ 0x082EA3A6
-	.string "アーボ$"
+	.string "アーボ"
+	.byte EOS
 	.if (. - gText_Rom_2EA3A6) > 0x4
 	.error "gText_Rom_2EA3A6 may not grow beyond its original slot"
 	.endif
@@ -272,7 +296,8 @@ gText_Rom_2EA3A6: @ 0x082EA3A6
 	@ src/data/pokemon/species_info/gen_1_families.h:2703 gen_1_families_line_2703
 	.globl gText_Rom_2EA3AC
 gText_Rom_2EA3AC: @ 0x082EA3AC
-	.string "アーボック$"
+	.string "アーボック"
+	.byte EOS
 	.if (. - gText_Rom_2EA3AC) > 0x6
 	.error "gText_Rom_2EA3AC may not grow beyond its original slot"
 	.endif
@@ -283,7 +308,8 @@ gText_Rom_2EA3AC: @ 0x082EA3AC
 	@ src/data/pokemon/species_info/gen_1_families.h:2924 gen_1_families_line_2924 (+16 aliases)
 	.globl gText_Rom_2EA3B2
 gText_Rom_2EA3B2: @ 0x082EA3B2
-	.string "ピカチュウ$"
+	.string "ピカチュウ"
+	.byte EOS
 	.if (. - gText_Rom_2EA3B2) > 0x6
 	.error "gText_Rom_2EA3B2 may not grow beyond its original slot"
 	.endif
@@ -294,7 +320,8 @@ gText_Rom_2EA3B2: @ 0x082EA3B2
 	@ src/data/pokemon/species_info/gen_1_families.h:3932 gen_1_families_line_3932 (+3 aliases)
 	.globl gText_Rom_2EA3B8
 gText_Rom_2EA3B8: @ 0x082EA3B8
-	.string "ライチュウ$"
+	.string "ライチュウ"
+	.byte EOS
 	.if (. - gText_Rom_2EA3B8) > 0x6
 	.error "gText_Rom_2EA3B8 may not grow beyond its original slot"
 	.endif
@@ -305,7 +332,8 @@ gText_Rom_2EA3B8: @ 0x082EA3B8
 	@ src/data/pokemon/species_info/gen_1_families.h:4204 gen_1_families_line_4204 (+1 aliases)
 	.globl gText_Rom_2EA3BE
 gText_Rom_2EA3BE: @ 0x082EA3BE
-	.string "サンド$"
+	.string "サンド"
+	.byte EOS
 	.if (. - gText_Rom_2EA3BE) > 0x4
 	.error "gText_Rom_2EA3BE may not grow beyond its original slot"
 	.endif
@@ -317,7 +345,8 @@ gText_Rom_2EA3BE: @ 0x082EA3BE
 	@ src/data/pokemon/species_info/gen_1_families.h:4277 gen_1_families_line_4277 (+1 aliases)
 	.globl gText_Rom_2EA3C4
 gText_Rom_2EA3C4: @ 0x082EA3C4
-	.string "サンドパン$"
+	.string "サンドパン"
+	.byte EOS
 	.if (. - gText_Rom_2EA3C4) > 0x6
 	.error "gText_Rom_2EA3C4 may not grow beyond its original slot"
 	.endif
@@ -328,7 +357,8 @@ gText_Rom_2EA3C4: @ 0x082EA3C4
 	@ src/data/pokemon/species_info/gen_1_families.h:4489 gen_1_families_line_4489
 	.globl gText_Rom_2EA3CA
 gText_Rom_2EA3CA: @ 0x082EA3CA
-	.string "ニドラン♀$"
+	.string "ニドラン♀"
+	.byte EOS
 	.if (. - gText_Rom_2EA3CA) > 0x6
 	.error "gText_Rom_2EA3CA may not grow beyond its original slot"
 	.endif
@@ -339,7 +369,8 @@ gText_Rom_2EA3CA: @ 0x082EA3CA
 	@ src/data/pokemon/species_info/gen_1_families.h:4569 gen_1_families_line_4569
 	.globl gText_Rom_2EA3D0
 gText_Rom_2EA3D0: @ 0x082EA3D0
-	.string "ニドリーナ$"
+	.string "ニドリーナ"
+	.byte EOS
 	.if (. - gText_Rom_2EA3D0) > 0x6
 	.error "gText_Rom_2EA3D0 may not grow beyond its original slot"
 	.endif
@@ -350,7 +381,8 @@ gText_Rom_2EA3D0: @ 0x082EA3D0
 	@ src/data/pokemon/species_info/gen_1_families.h:4648 gen_1_families_line_4648
 	.globl gText_Rom_2EA3D6
 gText_Rom_2EA3D6: @ 0x082EA3D6
-	.string "ニドクイン$"
+	.string "ニドクイン"
+	.byte EOS
 	.if (. - gText_Rom_2EA3D6) > 0x6
 	.error "gText_Rom_2EA3D6 may not grow beyond its original slot"
 	.endif
@@ -361,7 +393,8 @@ gText_Rom_2EA3D6: @ 0x082EA3D6
 	@ src/data/pokemon/species_info/gen_1_families.h:4718 gen_1_families_line_4718
 	.globl gText_Rom_2EA3DC
 gText_Rom_2EA3DC: @ 0x082EA3DC
-	.string "ニドラン♂$"
+	.string "ニドラン♂"
+	.byte EOS
 	.if (. - gText_Rom_2EA3DC) > 0x6
 	.error "gText_Rom_2EA3DC may not grow beyond its original slot"
 	.endif
@@ -372,7 +405,8 @@ gText_Rom_2EA3DC: @ 0x082EA3DC
 	@ src/data/pokemon/species_info/gen_1_families.h:4791 gen_1_families_line_4791
 	.globl gText_Rom_2EA3E2
 gText_Rom_2EA3E2: @ 0x082EA3E2
-	.string "ニドリーノ$"
+	.string "ニドリーノ"
+	.byte EOS
 	.if (. - gText_Rom_2EA3E2) > 0x6
 	.error "gText_Rom_2EA3E2 may not grow beyond its original slot"
 	.endif
@@ -383,7 +417,8 @@ gText_Rom_2EA3E2: @ 0x082EA3E2
 	@ src/data/pokemon/species_info/gen_1_families.h:4871 gen_1_families_line_4871
 	.globl gText_Rom_2EA3E8
 gText_Rom_2EA3E8: @ 0x082EA3E8
-	.string "ニドキング$"
+	.string "ニドキング"
+	.byte EOS
 	.if (. - gText_Rom_2EA3E8) > 0x6
 	.error "gText_Rom_2EA3E8 may not grow beyond its original slot"
 	.endif
@@ -394,7 +429,8 @@ gText_Rom_2EA3E8: @ 0x082EA3E8
 	@ src/data/pokemon/species_info/gen_1_families.h:5032 gen_1_families_line_5032
 	.globl gText_Rom_2EA3EE
 gText_Rom_2EA3EE: @ 0x082EA3EE
-	.string "ピッピ$"
+	.string "ピッピ"
+	.byte EOS
 	.if (. - gText_Rom_2EA3EE) > 0x4
 	.error "gText_Rom_2EA3EE may not grow beyond its original slot"
 	.endif
@@ -406,7 +442,8 @@ gText_Rom_2EA3EE: @ 0x082EA3EE
 	@ src/data/pokemon/species_info/gen_1_families.h:5114 gen_1_families_line_5114 (+1 aliases)
 	.globl gText_Rom_2EA3F4
 gText_Rom_2EA3F4: @ 0x082EA3F4
-	.string "ピクシー$"
+	.string "ピクシー"
+	.byte EOS
 	.if (. - gText_Rom_2EA3F4) > 0x5
 	.error "gText_Rom_2EA3F4 may not grow beyond its original slot"
 	.endif
@@ -418,7 +455,8 @@ gText_Rom_2EA3F4: @ 0x082EA3F4
 	@ src/data/pokemon/species_info/gen_1_families.h:5246 gen_1_families_line_5246 (+1 aliases)
 	.globl gText_Rom_2EA3FA
 gText_Rom_2EA3FA: @ 0x082EA3FA
-	.string "ロコン$"
+	.string "ロコン"
+	.byte EOS
 	.if (. - gText_Rom_2EA3FA) > 0x4
 	.error "gText_Rom_2EA3FA may not grow beyond its original slot"
 	.endif
@@ -431,7 +469,8 @@ gText_Rom_2EA3FA: @ 0x082EA3FA
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EA400
 gText_Rom_2EA400: @ 0x082EA400
-	.string "キュウコン$"
+	.string "キュウコン"
+	.byte EOS
 	.if (. - gText_Rom_2EA400) != 0x6
 	.error "gText_Rom_2EA400 must retain its original byte length"
 	.endif
@@ -441,7 +480,8 @@ gText_Rom_2EA400: @ 0x082EA400
 	@ src/data/pokemon/species_info/gen_1_families.h:5619 gen_1_families_line_5619
 	.globl gText_Rom_2EA406
 gText_Rom_2EA406: @ 0x082EA406
-	.string "プリン$"
+	.string "プリン"
+	.byte EOS
 	.if (. - gText_Rom_2EA406) > 0x4
 	.error "gText_Rom_2EA406 may not grow beyond its original slot"
 	.endif
@@ -453,7 +493,8 @@ gText_Rom_2EA406: @ 0x082EA406
 	@ src/data/pokemon/species_info/gen_1_families.h:5711 gen_1_families_line_5711
 	.globl gText_Rom_2EA40C
 gText_Rom_2EA40C: @ 0x082EA40C
-	.string "プクリン$"
+	.string "プクリン"
+	.byte EOS
 	.if (. - gText_Rom_2EA40C) > 0x5
 	.error "gText_Rom_2EA40C may not grow beyond its original slot"
 	.endif
@@ -465,7 +506,8 @@ gText_Rom_2EA40C: @ 0x082EA40C
 	@ src/data/pokemon/species_info/gen_1_families.h:5782 gen_1_families_line_5782 (+2 aliases)
 	.globl gText_Rom_2EA412
 gText_Rom_2EA412: @ 0x082EA412
-	.string "ズバット$"
+	.string "ズバット"
+	.byte EOS
 	.if (. - gText_Rom_2EA412) > 0x5
 	.error "gText_Rom_2EA412 may not grow beyond its original slot"
 	.endif
@@ -477,7 +519,8 @@ gText_Rom_2EA412: @ 0x082EA412
 	@ src/data/pokemon/species_info/gen_1_families.h:5875 gen_1_families_line_5875
 	.globl gText_Rom_2EA418
 gText_Rom_2EA418: @ 0x082EA418
-	.string "ゴルバット$"
+	.string "ゴルバット"
+	.byte EOS
 	.if (. - gText_Rom_2EA418) > 0x6
 	.error "gText_Rom_2EA418 may not grow beyond its original slot"
 	.endif
@@ -488,7 +531,8 @@ gText_Rom_2EA418: @ 0x082EA418
 	@ src/data/pokemon/species_info/gen_1_families.h:6068 gen_1_families_line_6068 (+1 aliases)
 	.globl gText_Rom_2EA41E
 gText_Rom_2EA41E: @ 0x082EA41E
-	.string "ナゾノクサ$"
+	.string "ナゾノクサ"
+	.byte EOS
 	.if (. - gText_Rom_2EA41E) > 0x6
 	.error "gText_Rom_2EA41E may not grow beyond its original slot"
 	.endif
@@ -499,7 +543,8 @@ gText_Rom_2EA41E: @ 0x082EA41E
 	@ src/data/pokemon/species_info/gen_1_families.h:6143 gen_1_families_line_6143
 	.globl gText_Rom_2EA424
 gText_Rom_2EA424: @ 0x082EA424
-	.string "クサイハナ$"
+	.string "クサイハナ"
+	.byte EOS
 	.if (. - gText_Rom_2EA424) > 0x6
 	.error "gText_Rom_2EA424 may not grow beyond its original slot"
 	.endif
@@ -510,7 +555,8 @@ gText_Rom_2EA424: @ 0x082EA424
 	@ src/data/pokemon/species_info/gen_1_families.h:6238 gen_1_families_line_6238
 	.globl gText_Rom_2EA42A
 gText_Rom_2EA42A: @ 0x082EA42A
-	.string "ラフレシア$"
+	.string "ラフレシア"
+	.byte EOS
 	.if (. - gText_Rom_2EA42A) > 0x6
 	.error "gText_Rom_2EA42A may not grow beyond its original slot"
 	.endif
@@ -521,7 +567,8 @@ gText_Rom_2EA42A: @ 0x082EA42A
 	@ src/data/pokemon/species_info/gen_1_families.h:6416 gen_1_families_line_6416
 	.globl gText_Rom_2EA430
 gText_Rom_2EA430: @ 0x082EA430
-	.string "パラス$"
+	.string "パラス"
+	.byte EOS
 	.if (. - gText_Rom_2EA430) > 0x4
 	.error "gText_Rom_2EA430 may not grow beyond its original slot"
 	.endif
@@ -533,7 +580,8 @@ gText_Rom_2EA430: @ 0x082EA430
 	@ src/data/pokemon/species_info/gen_1_families.h:6506 gen_1_families_line_6506
 	.globl gText_Rom_2EA436
 gText_Rom_2EA436: @ 0x082EA436
-	.string "パラセクト$"
+	.string "パラセクト"
+	.byte EOS
 	.if (. - gText_Rom_2EA436) > 0x6
 	.error "gText_Rom_2EA436 may not grow beyond its original slot"
 	.endif
@@ -544,7 +592,8 @@ gText_Rom_2EA436: @ 0x082EA436
 	@ src/data/pokemon/species_info/gen_1_families.h:6583 gen_1_families_line_6583
 	.globl gText_Rom_2EA43C
 gText_Rom_2EA43C: @ 0x082EA43C
-	.string "コンパン$"
+	.string "コンパン"
+	.byte EOS
 	.if (. - gText_Rom_2EA43C) > 0x5
 	.error "gText_Rom_2EA43C may not grow beyond its original slot"
 	.endif
@@ -556,7 +605,8 @@ gText_Rom_2EA43C: @ 0x082EA43C
 	@ src/data/pokemon/species_info/gen_1_families.h:6662 gen_1_families_line_6662
 	.globl gText_Rom_2EA442
 gText_Rom_2EA442: @ 0x082EA442
-	.string "モルフォン$"
+	.string "モルフォン"
+	.byte EOS
 	.if (. - gText_Rom_2EA442) > 0x6
 	.error "gText_Rom_2EA442 may not grow beyond its original slot"
 	.endif
@@ -567,7 +617,8 @@ gText_Rom_2EA442: @ 0x082EA442
 	@ src/data/pokemon/species_info/gen_1_families.h:6752 gen_1_families_line_6752 (+1 aliases)
 	.globl gText_Rom_2EA448
 gText_Rom_2EA448: @ 0x082EA448
-	.string "ディグダ$"
+	.string "ディグダ"
+	.byte EOS
 	.if (. - gText_Rom_2EA448) > 0x5
 	.error "gText_Rom_2EA448 may not grow beyond its original slot"
 	.endif
@@ -579,7 +630,8 @@ gText_Rom_2EA448: @ 0x082EA448
 	@ src/data/pokemon/species_info/gen_1_families.h:6831 gen_1_families_line_6831 (+1 aliases)
 	.globl gText_Rom_2EA44E
 gText_Rom_2EA44E: @ 0x082EA44E
-	.string "ダグトリオ$"
+	.string "ダグトリオ"
+	.byte EOS
 	.if (. - gText_Rom_2EA44E) > 0x6
 	.error "gText_Rom_2EA44E may not grow beyond its original slot"
 	.endif
@@ -590,7 +642,8 @@ gText_Rom_2EA44E: @ 0x082EA44E
 	@ src/data/pokemon/species_info/gen_1_families.h:7056 gen_1_families_line_7056 (+3 aliases)
 	.globl gText_Rom_2EA454
 gText_Rom_2EA454: @ 0x082EA454
-	.string "ニャース$"
+	.string "ニャース"
+	.byte EOS
 	.if (. - gText_Rom_2EA454) > 0x5
 	.error "gText_Rom_2EA454 may not grow beyond its original slot"
 	.endif
@@ -602,7 +655,8 @@ gText_Rom_2EA454: @ 0x082EA454
 	@ src/data/pokemon/species_info/gen_1_families.h:7136 gen_1_families_line_7136 (+1 aliases)
 	.globl gText_Rom_2EA45A
 gText_Rom_2EA45A: @ 0x082EA45A
-	.string "ペルシアン$"
+	.string "ペルシアン"
+	.byte EOS
 	.if (. - gText_Rom_2EA45A) > 0x6
 	.error "gText_Rom_2EA45A may not grow beyond its original slot"
 	.endif
@@ -613,7 +667,8 @@ gText_Rom_2EA45A: @ 0x082EA45A
 	@ src/data/pokemon/species_info/gen_1_families.h:7534 gen_1_families_line_7534
 	.globl gText_Rom_2EA460
 gText_Rom_2EA460: @ 0x082EA460
-	.string "コダック$"
+	.string "コダック"
+	.byte EOS
 	.if (. - gText_Rom_2EA460) > 0x5
 	.error "gText_Rom_2EA460 may not grow beyond its original slot"
 	.endif
@@ -625,7 +680,8 @@ gText_Rom_2EA460: @ 0x082EA460
 	@ src/data/pokemon/species_info/gen_1_families.h:7605 gen_1_families_line_7605
 	.globl gText_Rom_2EA466
 gText_Rom_2EA466: @ 0x082EA466
-	.string "ゴルダック$"
+	.string "ゴルダック"
+	.byte EOS
 	.if (. - gText_Rom_2EA466) > 0x6
 	.error "gText_Rom_2EA466 may not grow beyond its original slot"
 	.endif
@@ -636,7 +692,8 @@ gText_Rom_2EA466: @ 0x082EA466
 	@ src/data/pokemon/species_info/gen_1_families.h:7680 gen_1_families_line_7680
 	.globl gText_Rom_2EA46C
 gText_Rom_2EA46C: @ 0x082EA46C
-	.string "マンキー$"
+	.string "マンキー"
+	.byte EOS
 	.if (. - gText_Rom_2EA46C) > 0x5
 	.error "gText_Rom_2EA46C may not grow beyond its original slot"
 	.endif
@@ -648,7 +705,8 @@ gText_Rom_2EA46C: @ 0x082EA46C
 	@ src/data/pokemon/species_info/gen_1_families.h:7758 gen_1_families_line_7758
 	.globl gText_Rom_2EA472
 gText_Rom_2EA472: @ 0x082EA472
-	.string "オコリザル$"
+	.string "オコリザル"
+	.byte EOS
 	.if (. - gText_Rom_2EA472) > 0x6
 	.error "gText_Rom_2EA472 may not grow beyond its original slot"
 	.endif
@@ -659,7 +717,8 @@ gText_Rom_2EA472: @ 0x082EA472
 	@ src/data/pokemon/species_info/gen_1_families.h:7900 gen_1_families_line_7900 (+1 aliases)
 	.globl gText_Rom_2EA478
 gText_Rom_2EA478: @ 0x082EA478
-	.string "ガーディ$"
+	.string "ガーディ"
+	.byte EOS
 	.if (. - gText_Rom_2EA478) > 0x5
 	.error "gText_Rom_2EA478 may not grow beyond its original slot"
 	.endif
@@ -671,7 +730,8 @@ gText_Rom_2EA478: @ 0x082EA478
 	@ src/data/pokemon/species_info/gen_1_families.h:7974 gen_1_families_line_7974 (+1 aliases)
 	.globl gText_Rom_2EA47E
 gText_Rom_2EA47E: @ 0x082EA47E
-	.string "ウインディ$"
+	.string "ウインディ"
+	.byte EOS
 	.if (. - gText_Rom_2EA47E) > 0x6
 	.error "gText_Rom_2EA47E may not grow beyond its original slot"
 	.endif
@@ -682,7 +742,8 @@ gText_Rom_2EA47E: @ 0x082EA47E
 	@ src/data/pokemon/species_info/gen_1_families.h:8179 gen_1_families_line_8179
 	.globl gText_Rom_2EA484
 gText_Rom_2EA484: @ 0x082EA484
-	.string "ニョロモ$"
+	.string "ニョロモ"
+	.byte EOS
 	.if (. - gText_Rom_2EA484) > 0x5
 	.error "gText_Rom_2EA484 may not grow beyond its original slot"
 	.endif
@@ -694,7 +755,8 @@ gText_Rom_2EA484: @ 0x082EA484
 	@ src/data/pokemon/species_info/gen_1_families.h:8250 gen_1_families_line_8250
 	.globl gText_Rom_2EA48A
 gText_Rom_2EA48A: @ 0x082EA48A
-	.string "ニョロゾ$"
+	.string "ニョロゾ"
+	.byte EOS
 	.if (. - gText_Rom_2EA48A) > 0x5
 	.error "gText_Rom_2EA48A may not grow beyond its original slot"
 	.endif
@@ -706,7 +768,8 @@ gText_Rom_2EA48A: @ 0x082EA48A
 	@ src/data/pokemon/species_info/gen_1_families.h:8336 gen_1_families_line_8336
 	.globl gText_Rom_2EA490
 gText_Rom_2EA490: @ 0x082EA490
-	.string "ニョロボン$"
+	.string "ニョロボン"
+	.byte EOS
 	.if (. - gText_Rom_2EA490) > 0x6
 	.error "gText_Rom_2EA490 may not grow beyond its original slot"
 	.endif
@@ -717,7 +780,8 @@ gText_Rom_2EA490: @ 0x082EA490
 	@ src/data/pokemon/species_info/gen_1_families.h:8505 gen_1_families_line_8505
 	.globl gText_Rom_2EA496
 gText_Rom_2EA496: @ 0x082EA496
-	.string "ケーシィ$"
+	.string "ケーシィ"
+	.byte EOS
 	.if (. - gText_Rom_2EA496) > 0x5
 	.error "gText_Rom_2EA496 may not grow beyond its original slot"
 	.endif
@@ -729,7 +793,8 @@ gText_Rom_2EA496: @ 0x082EA496
 	@ src/data/pokemon/species_info/gen_1_families.h:8578 gen_1_families_line_8578
 	.globl gText_Rom_2EA49C
 gText_Rom_2EA49C: @ 0x082EA49C
-	.string "ユンゲラー$"
+	.string "ユンゲラー"
+	.byte EOS
 	.if (. - gText_Rom_2EA49C) > 0x6
 	.error "gText_Rom_2EA49C may not grow beyond its original slot"
 	.endif
@@ -740,7 +805,8 @@ gText_Rom_2EA49C: @ 0x082EA49C
 	@ src/data/pokemon/species_info/gen_1_families.h:8677 gen_1_families_line_8677 (+1 aliases)
 	.globl gText_Rom_2EA4A2
 gText_Rom_2EA4A2: @ 0x082EA4A2
-	.string "フーディン$"
+	.string "フーディン"
+	.byte EOS
 	.if (. - gText_Rom_2EA4A2) > 0x6
 	.error "gText_Rom_2EA4A2 may not grow beyond its original slot"
 	.endif
@@ -751,7 +817,8 @@ gText_Rom_2EA4A2: @ 0x082EA4A2
 	@ src/data/pokemon/species_info/gen_1_families.h:8853 gen_1_families_line_8853
 	.globl gText_Rom_2EA4A8
 gText_Rom_2EA4A8: @ 0x082EA4A8
-	.string "ワンリキー$"
+	.string "ワンリキー"
+	.byte EOS
 	.if (. - gText_Rom_2EA4A8) > 0x6
 	.error "gText_Rom_2EA4A8 may not grow beyond its original slot"
 	.endif
@@ -762,7 +829,8 @@ gText_Rom_2EA4A8: @ 0x082EA4A8
 	@ src/data/pokemon/species_info/gen_1_families.h:8930 gen_1_families_line_8930
 	.globl gText_Rom_2EA4AE
 gText_Rom_2EA4AE: @ 0x082EA4AE
-	.string "ゴーリキー$"
+	.string "ゴーリキー"
+	.byte EOS
 	.if (. - gText_Rom_2EA4AE) > 0x6
 	.error "gText_Rom_2EA4AE may not grow beyond its original slot"
 	.endif
@@ -773,7 +841,8 @@ gText_Rom_2EA4AE: @ 0x082EA4AE
 	@ src/data/pokemon/species_info/gen_1_families.h:9012 gen_1_families_line_9012 (+1 aliases)
 	.globl gText_Rom_2EA4B4
 gText_Rom_2EA4B4: @ 0x082EA4B4
-	.string "カイリキー$"
+	.string "カイリキー"
+	.byte EOS
 	.if (. - gText_Rom_2EA4B4) > 0x6
 	.error "gText_Rom_2EA4B4 may not grow beyond its original slot"
 	.endif
@@ -784,7 +853,8 @@ gText_Rom_2EA4B4: @ 0x082EA4B4
 	@ src/data/pokemon/species_info/gen_1_families.h:9151 gen_1_families_line_9151
 	.globl gText_Rom_2EA4BA
 gText_Rom_2EA4BA: @ 0x082EA4BA
-	.string "マダツボミ$"
+	.string "マダツボミ"
+	.byte EOS
 	.if (. - gText_Rom_2EA4BA) > 0x6
 	.error "gText_Rom_2EA4BA may not grow beyond its original slot"
 	.endif
@@ -795,7 +865,8 @@ gText_Rom_2EA4BA: @ 0x082EA4BA
 	@ src/data/pokemon/species_info/gen_1_families.h:9221 gen_1_families_line_9221
 	.globl gText_Rom_2EA4C0
 gText_Rom_2EA4C0: @ 0x082EA4C0
-	.string "ウツドン$"
+	.string "ウツドン"
+	.byte EOS
 	.if (. - gText_Rom_2EA4C0) > 0x5
 	.error "gText_Rom_2EA4C0 may not grow beyond its original slot"
 	.endif
@@ -807,7 +878,8 @@ gText_Rom_2EA4C0: @ 0x082EA4C0
 	@ src/data/pokemon/species_info/gen_1_families.h:9311 gen_1_families_line_9311 (+1 aliases)
 	.globl gText_Rom_2EA4C6
 gText_Rom_2EA4C6: @ 0x082EA4C6
-	.string "ウツボット$"
+	.string "ウツボット"
+	.byte EOS
 	.if (. - gText_Rom_2EA4C6) > 0x6
 	.error "gText_Rom_2EA4C6 may not grow beyond its original slot"
 	.endif
@@ -818,7 +890,8 @@ gText_Rom_2EA4C6: @ 0x082EA4C6
 	@ src/data/pokemon/species_info/gen_1_families.h:9447 gen_1_families_line_9447
 	.globl gText_Rom_2EA4CC
 gText_Rom_2EA4CC: @ 0x082EA4CC
-	.string "メノクラゲ$"
+	.string "メノクラゲ"
+	.byte EOS
 	.if (. - gText_Rom_2EA4CC) > 0x6
 	.error "gText_Rom_2EA4CC may not grow beyond its original slot"
 	.endif
@@ -829,7 +902,8 @@ gText_Rom_2EA4CC: @ 0x082EA4CC
 	@ src/data/pokemon/species_info/gen_1_families.h:9519 gen_1_families_line_9519
 	.globl gText_Rom_2EA4D2
 gText_Rom_2EA4D2: @ 0x082EA4D2
-	.string "ドククラゲ$"
+	.string "ドククラゲ"
+	.byte EOS
 	.if (. - gText_Rom_2EA4D2) > 0x6
 	.error "gText_Rom_2EA4D2 may not grow beyond its original slot"
 	.endif
@@ -840,7 +914,8 @@ gText_Rom_2EA4D2: @ 0x082EA4D2
 	@ src/data/pokemon/species_info/gen_1_families.h:9597 gen_1_families_line_9597 (+1 aliases)
 	.globl gText_Rom_2EA4D8
 gText_Rom_2EA4D8: @ 0x082EA4D8
-	.string "イシツブテ$"
+	.string "イシツブテ"
+	.byte EOS
 	.if (. - gText_Rom_2EA4D8) > 0x6
 	.error "gText_Rom_2EA4D8 may not grow beyond its original slot"
 	.endif
@@ -851,7 +926,8 @@ gText_Rom_2EA4D8: @ 0x082EA4D8
 	@ src/data/pokemon/species_info/gen_1_families.h:9669 gen_1_families_line_9669 (+1 aliases)
 	.globl gText_Rom_2EA4DE
 gText_Rom_2EA4DE: @ 0x082EA4DE
-	.string "ゴローン$"
+	.string "ゴローン"
+	.byte EOS
 	.if (. - gText_Rom_2EA4DE) > 0x5
 	.error "gText_Rom_2EA4DE may not grow beyond its original slot"
 	.endif
@@ -863,7 +939,8 @@ gText_Rom_2EA4DE: @ 0x082EA4DE
 	@ src/data/pokemon/species_info/gen_1_families.h:9750 gen_1_families_line_9750 (+1 aliases)
 	.globl gText_Rom_2EA4E4
 gText_Rom_2EA4E4: @ 0x082EA4E4
-	.string "ゴローニャ$"
+	.string "ゴローニャ"
+	.byte EOS
 	.if (. - gText_Rom_2EA4E4) > 0x6
 	.error "gText_Rom_2EA4E4 may not grow beyond its original slot"
 	.endif
@@ -874,7 +951,8 @@ gText_Rom_2EA4E4: @ 0x082EA4E4
 	@ src/data/pokemon/species_info/gen_1_families.h:10027 gen_1_families_line_10027 (+1 aliases)
 	.globl gText_Rom_2EA4EA
 gText_Rom_2EA4EA: @ 0x082EA4EA
-	.string "ポニータ$"
+	.string "ポニータ"
+	.byte EOS
 	.if (. - gText_Rom_2EA4EA) > 0x5
 	.error "gText_Rom_2EA4EA may not grow beyond its original slot"
 	.endif
@@ -886,7 +964,8 @@ gText_Rom_2EA4EA: @ 0x082EA4EA
 	@ src/data/pokemon/species_info/gen_1_families.h:10097 gen_1_families_line_10097 (+1 aliases)
 	.globl gText_Rom_2EA4F0
 gText_Rom_2EA4F0: @ 0x082EA4F0
-	.string "ギャロップ$"
+	.string "ギャロップ"
+	.byte EOS
 	.if (. - gText_Rom_2EA4F0) > 0x6
 	.error "gText_Rom_2EA4F0 may not grow beyond its original slot"
 	.endif
@@ -897,7 +976,8 @@ gText_Rom_2EA4F0: @ 0x082EA4F0
 	@ src/data/pokemon/species_info/gen_1_families.h:10302 gen_1_families_line_10302 (+1 aliases)
 	.globl gText_Rom_2EA4F6
 gText_Rom_2EA4F6: @ 0x082EA4F6
-	.string "ヤドン$"
+	.string "ヤドン"
+	.byte EOS
 	.if (. - gText_Rom_2EA4F6) > 0x4
 	.error "gText_Rom_2EA4F6 may not grow beyond its original slot"
 	.endif
@@ -909,7 +989,8 @@ gText_Rom_2EA4F6: @ 0x082EA4F6
 	@ src/data/pokemon/species_info/gen_1_families.h:10378 gen_1_families_line_10378 (+2 aliases)
 	.globl gText_Rom_2EA4FC
 gText_Rom_2EA4FC: @ 0x082EA4FC
-	.string "ヤドラン$"
+	.string "ヤドラン"
+	.byte EOS
 	.if (. - gText_Rom_2EA4FC) > 0x5
 	.error "gText_Rom_2EA4FC may not grow beyond its original slot"
 	.endif
@@ -921,7 +1002,8 @@ gText_Rom_2EA4FC: @ 0x082EA4FC
 	@ src/data/pokemon/species_info/gen_1_families.h:10800 gen_1_families_line_10800
 	.globl gText_Rom_2EA502
 gText_Rom_2EA502: @ 0x082EA502
-	.string "コイル$"
+	.string "コイル"
+	.byte EOS
 	.if (. - gText_Rom_2EA502) > 0x4
 	.error "gText_Rom_2EA502 may not grow beyond its original slot"
 	.endif
@@ -934,7 +1016,8 @@ gText_Rom_2EA502: @ 0x082EA502
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EA508
 gText_Rom_2EA508: @ 0x082EA508
-	.string "レアコイル$"
+	.string "レアコイル"
+	.byte EOS
 	.if (. - gText_Rom_2EA508) != 0x6
 	.error "gText_Rom_2EA508 must retain its original byte length"
 	.endif
@@ -944,7 +1027,8 @@ gText_Rom_2EA508: @ 0x082EA508
 	@ src/data/pokemon/species_info/gen_1_families.h:11037 gen_1_families_line_11037 (+1 aliases)
 	.globl gText_Rom_2EA50E
 gText_Rom_2EA50E: @ 0x082EA50E
-	.string "カモネギ$"
+	.string "カモネギ"
+	.byte EOS
 	.if (. - gText_Rom_2EA50E) > 0x5
 	.error "gText_Rom_2EA50E may not grow beyond its original slot"
 	.endif
@@ -956,7 +1040,8 @@ gText_Rom_2EA50E: @ 0x082EA50E
 	@ src/data/pokemon/species_info/gen_1_families.h:11255 gen_1_families_line_11255
 	.globl gText_Rom_2EA514
 gText_Rom_2EA514: @ 0x082EA514
-	.string "ドードー$"
+	.string "ドードー"
+	.byte EOS
 	.if (. - gText_Rom_2EA514) > 0x5
 	.error "gText_Rom_2EA514 may not grow beyond its original slot"
 	.endif
@@ -968,7 +1053,8 @@ gText_Rom_2EA514: @ 0x082EA514
 	@ src/data/pokemon/species_info/gen_1_families.h:11348 gen_1_families_line_11348
 	.globl gText_Rom_2EA51A
 gText_Rom_2EA51A: @ 0x082EA51A
-	.string "ドードリオ$"
+	.string "ドードリオ"
+	.byte EOS
 	.if (. - gText_Rom_2EA51A) > 0x6
 	.error "gText_Rom_2EA51A may not grow beyond its original slot"
 	.endif
@@ -979,7 +1065,8 @@ gText_Rom_2EA51A: @ 0x082EA51A
 	@ src/data/pokemon/species_info/gen_1_families.h:11439 gen_1_families_line_11439
 	.globl gText_Rom_2EA520
 gText_Rom_2EA520: @ 0x082EA520
-	.string "パウワウ$"
+	.string "パウワウ"
+	.byte EOS
 	.if (. - gText_Rom_2EA520) > 0x5
 	.error "gText_Rom_2EA520 may not grow beyond its original slot"
 	.endif
@@ -991,7 +1078,8 @@ gText_Rom_2EA520: @ 0x082EA520
 	@ src/data/pokemon/species_info/gen_1_families.h:11513 gen_1_families_line_11513
 	.globl gText_Rom_2EA526
 gText_Rom_2EA526: @ 0x082EA526
-	.string "ジュゴン$"
+	.string "ジュゴン"
+	.byte EOS
 	.if (. - gText_Rom_2EA526) > 0x5
 	.error "gText_Rom_2EA526 may not grow beyond its original slot"
 	.endif
@@ -1003,7 +1091,8 @@ gText_Rom_2EA526: @ 0x082EA526
 	@ src/data/pokemon/species_info/gen_1_families.h:11583 gen_1_families_line_11583 (+1 aliases)
 	.globl gText_Rom_2EA52C
 gText_Rom_2EA52C: @ 0x082EA52C
-	.string "ベトベター$"
+	.string "ベトベター"
+	.byte EOS
 	.if (. - gText_Rom_2EA52C) > 0x6
 	.error "gText_Rom_2EA52C may not grow beyond its original slot"
 	.endif
@@ -1014,7 +1103,8 @@ gText_Rom_2EA52C: @ 0x082EA52C
 	@ src/data/pokemon/species_info/gen_1_families.h:11657 gen_1_families_line_11657 (+1 aliases)
 	.globl gText_Rom_2EA532
 gText_Rom_2EA532: @ 0x082EA532
-	.string "ベトベトン$"
+	.string "ベトベトン"
+	.byte EOS
 	.if (. - gText_Rom_2EA532) > 0x6
 	.error "gText_Rom_2EA532 may not grow beyond its original slot"
 	.endif
@@ -1025,7 +1115,8 @@ gText_Rom_2EA532: @ 0x082EA532
 	@ src/data/pokemon/species_info/gen_1_families.h:11874 gen_1_families_line_11874
 	.globl gText_Rom_2EA538
 gText_Rom_2EA538: @ 0x082EA538
-	.string "シェルダー$"
+	.string "シェルダー"
+	.byte EOS
 	.if (. - gText_Rom_2EA538) > 0x6
 	.error "gText_Rom_2EA538 may not grow beyond its original slot"
 	.endif
@@ -1036,7 +1127,8 @@ gText_Rom_2EA538: @ 0x082EA538
 	@ src/data/pokemon/species_info/gen_1_families.h:11951 gen_1_families_line_11951
 	.globl gText_Rom_2EA53E
 gText_Rom_2EA53E: @ 0x082EA53E
-	.string "パルシェン$"
+	.string "パルシェン"
+	.byte EOS
 	.if (. - gText_Rom_2EA53E) > 0x6
 	.error "gText_Rom_2EA53E may not grow beyond its original slot"
 	.endif
@@ -1047,7 +1139,8 @@ gText_Rom_2EA53E: @ 0x082EA53E
 	@ src/data/pokemon/species_info/gen_1_families.h:12021 gen_1_families_line_12021
 	.globl gText_Rom_2EA544
 gText_Rom_2EA544: @ 0x082EA544
-	.string "ゴース$"
+	.string "ゴース"
+	.byte EOS
 	.if (. - gText_Rom_2EA544) > 0x4
 	.error "gText_Rom_2EA544 may not grow beyond its original slot"
 	.endif
@@ -1059,7 +1152,8 @@ gText_Rom_2EA544: @ 0x082EA544
 	@ src/data/easy_chat/easy_chat_group_status.h:190 easy_chat_group_status_line_190 (+3 aliases)
 	.globl gText_Rom_2EA54A
 gText_Rom_2EA54A: @ 0x082EA54A
-	.string "ゴースト$"
+	.string "ゴースト"
+	.byte EOS
 	.if (. - gText_Rom_2EA54A) > 0x5
 	.error "gText_Rom_2EA54A may not grow beyond its original slot"
 	.endif
@@ -1071,7 +1165,8 @@ gText_Rom_2EA54A: @ 0x082EA54A
 	@ src/data/pokemon/species_info/gen_1_families.h:12184 gen_1_families_line_12184 (+2 aliases)
 	.globl gText_Rom_2EA550
 gText_Rom_2EA550: @ 0x082EA550
-	.string "ゲンガー$"
+	.string "ゲンガー"
+	.byte EOS
 	.if (. - gText_Rom_2EA550) > 0x5
 	.error "gText_Rom_2EA550 may not grow beyond its original slot"
 	.endif
@@ -1083,7 +1178,8 @@ gText_Rom_2EA550: @ 0x082EA550
 	@ src/data/pokemon/species_info/gen_1_families.h:12389 gen_1_families_line_12389
 	.globl gText_Rom_2EA556
 gText_Rom_2EA556: @ 0x082EA556
-	.string "イワーク$"
+	.string "イワーク"
+	.byte EOS
 	.if (. - gText_Rom_2EA556) > 0x5
 	.error "gText_Rom_2EA556 may not grow beyond its original slot"
 	.endif
@@ -1095,7 +1191,8 @@ gText_Rom_2EA556: @ 0x082EA556
 	@ src/data/pokemon/species_info/gen_1_families.h:12629 gen_1_families_line_12629
 	.globl gText_Rom_2EA55C
 gText_Rom_2EA55C: @ 0x082EA55C
-	.string "スリープ$"
+	.string "スリープ"
+	.byte EOS
 	.if (. - gText_Rom_2EA55C) > 0x5
 	.error "gText_Rom_2EA55C may not grow beyond its original slot"
 	.endif
@@ -1107,7 +1204,8 @@ gText_Rom_2EA55C: @ 0x082EA55C
 	@ src/data/pokemon/species_info/gen_1_families.h:12706 gen_1_families_line_12706
 	.globl gText_Rom_2EA562
 gText_Rom_2EA562: @ 0x082EA562
-	.string "スリーパー$"
+	.string "スリーパー"
+	.byte EOS
 	.if (. - gText_Rom_2EA562) > 0x6
 	.error "gText_Rom_2EA562 may not grow beyond its original slot"
 	.endif
@@ -1118,7 +1216,8 @@ gText_Rom_2EA562: @ 0x082EA562
 	@ src/data/pokemon/species_info/gen_1_families.h:12793 gen_1_families_line_12793
 	.globl gText_Rom_2EA568
 gText_Rom_2EA568: @ 0x082EA568
-	.string "クラブ$"
+	.string "クラブ"
+	.byte EOS
 	.if (. - gText_Rom_2EA568) > 0x4
 	.error "gText_Rom_2EA568 may not grow beyond its original slot"
 	.endif
@@ -1130,7 +1229,8 @@ gText_Rom_2EA568: @ 0x082EA568
 	@ src/data/pokemon/species_info/gen_1_families.h:12866 gen_1_families_line_12866 (+1 aliases)
 	.globl gText_Rom_2EA56E
 gText_Rom_2EA56E: @ 0x082EA56E
-	.string "キングラー$"
+	.string "キングラー"
+	.byte EOS
 	.if (. - gText_Rom_2EA56E) > 0x6
 	.error "gText_Rom_2EA56E may not grow beyond its original slot"
 	.endif
@@ -1141,7 +1241,8 @@ gText_Rom_2EA56E: @ 0x082EA56E
 	@ src/data/pokemon/species_info/gen_1_families.h:12997 gen_1_families_line_12997 (+1 aliases)
 	.globl gText_Rom_2EA574
 gText_Rom_2EA574: @ 0x082EA574
-	.string "ビリリダマ$"
+	.string "ビリリダマ"
+	.byte EOS
 	.if (. - gText_Rom_2EA574) > 0x6
 	.error "gText_Rom_2EA574 may not grow beyond its original slot"
 	.endif
@@ -1152,7 +1253,8 @@ gText_Rom_2EA574: @ 0x082EA574
 	@ src/data/pokemon/species_info/gen_1_families.h:13075 gen_1_families_line_13075 (+1 aliases)
 	.globl gText_Rom_2EA57A
 gText_Rom_2EA57A: @ 0x082EA57A
-	.string "マルマイン$"
+	.string "マルマイン"
+	.byte EOS
 	.if (. - gText_Rom_2EA57A) > 0x6
 	.error "gText_Rom_2EA57A may not grow beyond its original slot"
 	.endif
@@ -1163,7 +1265,8 @@ gText_Rom_2EA57A: @ 0x082EA57A
 	@ src/data/pokemon/species_info/gen_1_families.h:13282 gen_1_families_line_13282
 	.globl gText_Rom_2EA580
 gText_Rom_2EA580: @ 0x082EA580
-	.string "タマタマ$"
+	.string "タマタマ"
+	.byte EOS
 	.if (. - gText_Rom_2EA580) > 0x5
 	.error "gText_Rom_2EA580 may not grow beyond its original slot"
 	.endif
@@ -1175,7 +1278,8 @@ gText_Rom_2EA580: @ 0x082EA580
 	@ src/data/pokemon/species_info/gen_1_families.h:13374 gen_1_families_line_13374 (+1 aliases)
 	.globl gText_Rom_2EA586
 gText_Rom_2EA586: @ 0x082EA586
-	.string "ナッシー$"
+	.string "ナッシー"
+	.byte EOS
 	.if (. - gText_Rom_2EA586) > 0x5
 	.error "gText_Rom_2EA586 may not grow beyond its original slot"
 	.endif
@@ -1187,7 +1291,8 @@ gText_Rom_2EA586: @ 0x082EA586
 	@ src/data/pokemon/species_info/gen_1_families.h:13513 gen_1_families_line_13513
 	.globl gText_Rom_2EA58C
 gText_Rom_2EA58C: @ 0x082EA58C
-	.string "カラカラ$"
+	.string "カラカラ"
+	.byte EOS
 	.if (. - gText_Rom_2EA58C) > 0x5
 	.error "gText_Rom_2EA58C may not grow beyond its original slot"
 	.endif
@@ -1199,7 +1304,8 @@ gText_Rom_2EA58C: @ 0x082EA58C
 	@ src/data/pokemon/species_info/gen_1_families.h:13593 gen_1_families_line_13593 (+2 aliases)
 	.globl gText_Rom_2EA592
 gText_Rom_2EA592: @ 0x082EA592
-	.string "ガラガラ$"
+	.string "ガラガラ"
+	.byte EOS
 	.if (. - gText_Rom_2EA592) > 0x5
 	.error "gText_Rom_2EA592 may not grow beyond its original slot"
 	.endif
@@ -1211,7 +1317,8 @@ gText_Rom_2EA592: @ 0x082EA592
 	@ src/data/pokemon/species_info/gen_1_families.h:13875 gen_1_families_line_13875
 	.globl gText_Rom_2EA598
 gText_Rom_2EA598: @ 0x082EA598
-	.string "サワムラー$"
+	.string "サワムラー"
+	.byte EOS
 	.if (. - gText_Rom_2EA598) > 0x6
 	.error "gText_Rom_2EA598 may not grow beyond its original slot"
 	.endif
@@ -1222,7 +1329,8 @@ gText_Rom_2EA598: @ 0x082EA598
 	@ src/data/pokemon/species_info/gen_1_families.h:13946 gen_1_families_line_13946
 	.globl gText_Rom_2EA59E
 gText_Rom_2EA59E: @ 0x082EA59E
-	.string "エビワラー$"
+	.string "エビワラー"
+	.byte EOS
 	.if (. - gText_Rom_2EA59E) > 0x6
 	.error "gText_Rom_2EA59E may not grow beyond its original slot"
 	.endif
@@ -1233,7 +1341,8 @@ gText_Rom_2EA59E: @ 0x082EA59E
 	@ src/data/pokemon/species_info/gen_1_families.h:14099 gen_1_families_line_14099
 	.globl gText_Rom_2EA5A4
 gText_Rom_2EA5A4: @ 0x082EA5A4
-	.string "ベロリンガ$"
+	.string "ベロリンガ"
+	.byte EOS
 	.if (. - gText_Rom_2EA5A4) > 0x6
 	.error "gText_Rom_2EA5A4 may not grow beyond its original slot"
 	.endif
@@ -1244,7 +1353,8 @@ gText_Rom_2EA5A4: @ 0x082EA5A4
 	@ src/data/pokemon/species_info/gen_1_families.h:14252 gen_1_families_line_14252
 	.globl gText_Rom_2EA5AA
 gText_Rom_2EA5AA: @ 0x082EA5AA
-	.string "ドガース$"
+	.string "ドガース"
+	.byte EOS
 	.if (. - gText_Rom_2EA5AA) > 0x5
 	.error "gText_Rom_2EA5AA may not grow beyond its original slot"
 	.endif
@@ -1256,7 +1366,8 @@ gText_Rom_2EA5AA: @ 0x082EA5AA
 	@ src/data/pokemon/species_info/gen_1_families.h:14334 gen_1_families_line_14334 (+1 aliases)
 	.globl gText_Rom_2EA5B0
 gText_Rom_2EA5B0: @ 0x082EA5B0
-	.string "マタドガス$"
+	.string "マタドガス"
+	.byte EOS
 	.if (. - gText_Rom_2EA5B0) > 0x6
 	.error "gText_Rom_2EA5B0 may not grow beyond its original slot"
 	.endif
@@ -1267,7 +1378,8 @@ gText_Rom_2EA5B0: @ 0x082EA5B0
 	@ src/data/pokemon/species_info/gen_1_families.h:14477 gen_1_families_line_14477
 	.globl gText_Rom_2EA5B6
 gText_Rom_2EA5B6: @ 0x082EA5B6
-	.string "サイホーン$"
+	.string "サイホーン"
+	.byte EOS
 	.if (. - gText_Rom_2EA5B6) > 0x6
 	.error "gText_Rom_2EA5B6 may not grow beyond its original slot"
 	.endif
@@ -1278,7 +1390,8 @@ gText_Rom_2EA5B6: @ 0x082EA5B6
 	@ src/data/pokemon/species_info/gen_1_families.h:14561 gen_1_families_line_14561
 	.globl gText_Rom_2EA5BC
 gText_Rom_2EA5BC: @ 0x082EA5BC
-	.string "サイドン$"
+	.string "サイドン"
+	.byte EOS
 	.if (. - gText_Rom_2EA5BC) > 0x5
 	.error "gText_Rom_2EA5BC may not grow beyond its original slot"
 	.endif
@@ -1290,7 +1403,8 @@ gText_Rom_2EA5BC: @ 0x082EA5BC
 	@ src/data/pokemon/species_info/gen_1_families.h:14810 gen_1_families_line_14810
 	.globl gText_Rom_2EA5C2
 gText_Rom_2EA5C2: @ 0x082EA5C2
-	.string "ラッキー$"
+	.string "ラッキー"
+	.byte EOS
 	.if (. - gText_Rom_2EA5C2) > 0x5
 	.error "gText_Rom_2EA5C2 may not grow beyond its original slot"
 	.endif
@@ -1302,7 +1416,8 @@ gText_Rom_2EA5C2: @ 0x082EA5C2
 	@ src/data/pokemon/species_info/gen_1_families.h:14963 gen_1_families_line_14963
 	.globl gText_Rom_2EA5C8
 gText_Rom_2EA5C8: @ 0x082EA5C8
-	.string "モンジャラ$"
+	.string "モンジャラ"
+	.byte EOS
 	.if (. - gText_Rom_2EA5C8) > 0x6
 	.error "gText_Rom_2EA5C8 may not grow beyond its original slot"
 	.endif
@@ -1313,7 +1428,8 @@ gText_Rom_2EA5C8: @ 0x082EA5C8
 	@ src/data/pokemon/species_info/gen_1_families.h:15120 gen_1_families_line_15120 (+1 aliases)
 	.globl gText_Rom_2EA5CE
 gText_Rom_2EA5CE: @ 0x082EA5CE
-	.string "ガルーラ$"
+	.string "ガルーラ"
+	.byte EOS
 	.if (. - gText_Rom_2EA5CE) > 0x5
 	.error "gText_Rom_2EA5CE may not grow beyond its original slot"
 	.endif
@@ -1325,7 +1441,8 @@ gText_Rom_2EA5CE: @ 0x082EA5CE
 	@ src/data/pokemon/species_info/gen_1_families.h:15273 gen_1_families_line_15273
 	.globl gText_Rom_2EA5D4
 gText_Rom_2EA5D4: @ 0x082EA5D4
-	.string "タッツー$"
+	.string "タッツー"
+	.byte EOS
 	.if (. - gText_Rom_2EA5D4) > 0x5
 	.error "gText_Rom_2EA5D4 may not grow beyond its original slot"
 	.endif
@@ -1337,7 +1454,8 @@ gText_Rom_2EA5D4: @ 0x082EA5D4
 	@ src/data/pokemon/species_info/gen_1_families.h:15350 gen_1_families_line_15350
 	.globl gText_Rom_2EA5DA
 gText_Rom_2EA5DA: @ 0x082EA5DA
-	.string "シードラ$"
+	.string "シードラ"
+	.byte EOS
 	.if (. - gText_Rom_2EA5DA) > 0x5
 	.error "gText_Rom_2EA5DA may not grow beyond its original slot"
 	.endif
@@ -1349,7 +1467,8 @@ gText_Rom_2EA5DA: @ 0x082EA5DA
 	@ src/data/pokemon/species_info/gen_1_families.h:15510 gen_1_families_line_15510
 	.globl gText_Rom_2EA5E0
 gText_Rom_2EA5E0: @ 0x082EA5E0
-	.string "トサキント$"
+	.string "トサキント"
+	.byte EOS
 	.if (. - gText_Rom_2EA5E0) > 0x6
 	.error "gText_Rom_2EA5E0 may not grow beyond its original slot"
 	.endif
@@ -1360,7 +1479,8 @@ gText_Rom_2EA5E0: @ 0x082EA5E0
 	@ src/data/pokemon/species_info/gen_1_families.h:15599 gen_1_families_line_15599
 	.globl gText_Rom_2EA5E6
 gText_Rom_2EA5E6: @ 0x082EA5E6
-	.string "アズマオウ$"
+	.string "アズマオウ"
+	.byte EOS
 	.if (. - gText_Rom_2EA5E6) > 0x6
 	.error "gText_Rom_2EA5E6 may not grow beyond its original slot"
 	.endif
@@ -1371,7 +1491,8 @@ gText_Rom_2EA5E6: @ 0x082EA5E6
 	@ src/data/pokemon/species_info/gen_1_families.h:15686 gen_1_families_line_15686
 	.globl gText_Rom_2EA5EC
 gText_Rom_2EA5EC: @ 0x082EA5EC
-	.string "ヒトデマン$"
+	.string "ヒトデマン"
+	.byte EOS
 	.if (. - gText_Rom_2EA5EC) > 0x6
 	.error "gText_Rom_2EA5EC may not grow beyond its original slot"
 	.endif
@@ -1382,7 +1503,8 @@ gText_Rom_2EA5EC: @ 0x082EA5EC
 	@ src/data/pokemon/species_info/gen_1_families.h:15758 gen_1_families_line_15758 (+1 aliases)
 	.globl gText_Rom_2EA5F2
 gText_Rom_2EA5F2: @ 0x082EA5F2
-	.string "スターミー$"
+	.string "スターミー"
+	.byte EOS
 	.if (. - gText_Rom_2EA5F2) > 0x6
 	.error "gText_Rom_2EA5F2 may not grow beyond its original slot"
 	.endif
@@ -1393,7 +1515,8 @@ gText_Rom_2EA5F2: @ 0x082EA5F2
 	@ src/data/pokemon/species_info/gen_1_families.h:15982 gen_1_families_line_15982 (+1 aliases)
 	.globl gText_Rom_2EA5F8
 gText_Rom_2EA5F8: @ 0x082EA5F8
-	.string "バリヤード$"
+	.string "バリヤード"
+	.byte EOS
 	.if (. - gText_Rom_2EA5F8) > 0x6
 	.error "gText_Rom_2EA5F8 may not grow beyond its original slot"
 	.endif
@@ -1404,7 +1527,8 @@ gText_Rom_2EA5F8: @ 0x082EA5F8
 	@ src/data/pokemon/species_info/gen_1_families.h:16192 gen_1_families_line_16192
 	.globl gText_Rom_2EA5FE
 gText_Rom_2EA5FE: @ 0x082EA5FE
-	.string "ストライク$"
+	.string "ストライク"
+	.byte EOS
 	.if (. - gText_Rom_2EA5FE) > 0x6
 	.error "gText_Rom_2EA5FE may not grow beyond its original slot"
 	.endif
@@ -1415,7 +1539,8 @@ gText_Rom_2EA5FE: @ 0x082EA5FE
 	@ src/data/pokemon/species_info/gen_1_families.h:16597 gen_1_families_line_16597
 	.globl gText_Rom_2EA604
 gText_Rom_2EA604: @ 0x082EA604
-	.string "ルージュラ$"
+	.string "ルージュラ"
+	.byte EOS
 	.if (. - gText_Rom_2EA604) > 0x6
 	.error "gText_Rom_2EA604 may not grow beyond its original slot"
 	.endif
@@ -1426,7 +1551,8 @@ gText_Rom_2EA604: @ 0x082EA604
 	@ src/data/pokemon/species_info/gen_1_families.h:16743 gen_1_families_line_16743
 	.globl gText_Rom_2EA60A
 gText_Rom_2EA60A: @ 0x082EA60A
-	.string "エレブー$"
+	.string "エレブー"
+	.byte EOS
 	.if (. - gText_Rom_2EA60A) > 0x5
 	.error "gText_Rom_2EA60A may not grow beyond its original slot"
 	.endif
@@ -1438,7 +1564,8 @@ gText_Rom_2EA60A: @ 0x082EA60A
 	@ src/data/pokemon/species_info/gen_1_families.h:16969 gen_1_families_line_16969
 	.globl gText_Rom_2EA610
 gText_Rom_2EA610: @ 0x082EA610
-	.string "ブーバー$"
+	.string "ブーバー"
+	.byte EOS
 	.if (. - gText_Rom_2EA610) > 0x5
 	.error "gText_Rom_2EA610 may not grow beyond its original slot"
 	.endif
@@ -1450,7 +1577,8 @@ gText_Rom_2EA610: @ 0x082EA610
 	@ src/data/pokemon/species_info/gen_1_families.h:17121 gen_1_families_line_17121 (+1 aliases)
 	.globl gText_Rom_2EA616
 gText_Rom_2EA616: @ 0x082EA616
-	.string "カイロス$"
+	.string "カイロス"
+	.byte EOS
 	.if (. - gText_Rom_2EA616) > 0x5
 	.error "gText_Rom_2EA616 may not grow beyond its original slot"
 	.endif
@@ -1462,7 +1590,8 @@ gText_Rom_2EA616: @ 0x082EA616
 	@ src/data/pokemon/species_info/gen_1_families.h:17276 gen_1_families_line_17276 (+3 aliases)
 	.globl gText_Rom_2EA61C
 gText_Rom_2EA61C: @ 0x082EA61C
-	.string "ケンタロス$"
+	.string "ケンタロス"
+	.byte EOS
 	.if (. - gText_Rom_2EA61C) > 0x6
 	.error "gText_Rom_2EA61C may not grow beyond its original slot"
 	.endif
@@ -1473,7 +1602,8 @@ gText_Rom_2EA61C: @ 0x082EA61C
 	@ src/data/pokemon/species_info/gen_1_families.h:17548 gen_1_families_line_17548
 	.globl gText_Rom_2EA622
 gText_Rom_2EA622: @ 0x082EA622
-	.string "コイキング$"
+	.string "コイキング"
+	.byte EOS
 	.if (. - gText_Rom_2EA622) > 0x6
 	.error "gText_Rom_2EA622 may not grow beyond its original slot"
 	.endif
@@ -1484,7 +1614,8 @@ gText_Rom_2EA622: @ 0x082EA622
 	@ src/data/pokemon/species_info/gen_1_families.h:17636 gen_1_families_line_17636 (+1 aliases)
 	.globl gText_Rom_2EA628
 gText_Rom_2EA628: @ 0x082EA628
-	.string "ギャラドス$"
+	.string "ギャラドス"
+	.byte EOS
 	.if (. - gText_Rom_2EA628) > 0x6
 	.error "gText_Rom_2EA628 may not grow beyond its original slot"
 	.endif
@@ -1496,7 +1627,8 @@ gText_Rom_2EA628: @ 0x082EA628
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EA62E
 gText_Rom_2EA62E: @ 0x082EA62E
-	.string "ラプラス$"
+	.string "ラプラス"
+	.byte EOS
 	.if (. - gText_Rom_2EA62E) != 0x5
 	.error "gText_Rom_2EA62E must retain its original byte length"
 	.endif
@@ -1507,7 +1639,8 @@ gText_Rom_2EA62E: @ 0x082EA62E
 	@ src/data/pokemon/species_info/gen_1_families.h:17932 gen_1_families_line_17932 (+1 aliases)
 	.globl gText_Rom_2EA634
 gText_Rom_2EA634: @ 0x082EA634
-	.string "メタモン$"
+	.string "メタモン"
+	.byte EOS
 	.if (. - gText_Rom_2EA634) > 0x5
 	.error "gText_Rom_2EA634 may not grow beyond its original slot"
 	.endif
@@ -1519,7 +1652,8 @@ gText_Rom_2EA634: @ 0x082EA634
 	@ src/data/pokemon/species_info/gen_1_families.h:18011 gen_1_families_line_18011 (+3 aliases)
 	.globl gText_Rom_2EA63A
 gText_Rom_2EA63A: @ 0x082EA63A
-	.string "イーブイ$"
+	.string "イーブイ"
+	.byte EOS
 	.if (. - gText_Rom_2EA63A) > 0x5
 	.error "gText_Rom_2EA63A may not grow beyond its original slot"
 	.endif
@@ -1531,7 +1665,8 @@ gText_Rom_2EA63A: @ 0x082EA63A
 	@ src/data/pokemon/species_info/gen_1_families.h:18242 gen_1_families_line_18242 (+1 aliases)
 	.globl gText_Rom_2EA640
 gText_Rom_2EA640: @ 0x082EA640
-	.string "シャワーズ$"
+	.string "シャワーズ"
+	.byte EOS
 	.if (. - gText_Rom_2EA640) > 0x6
 	.error "gText_Rom_2EA640 may not grow beyond its original slot"
 	.endif
@@ -1542,7 +1677,8 @@ gText_Rom_2EA640: @ 0x082EA640
 	@ src/data/pokemon/species_info/gen_1_families.h:18308 gen_1_families_line_18308 (+1 aliases)
 	.globl gText_Rom_2EA646
 gText_Rom_2EA646: @ 0x082EA646
-	.string "サンダース$"
+	.string "サンダース"
+	.byte EOS
 	.if (. - gText_Rom_2EA646) > 0x6
 	.error "gText_Rom_2EA646 may not grow beyond its original slot"
 	.endif
@@ -1553,7 +1689,8 @@ gText_Rom_2EA646: @ 0x082EA646
 	@ src/data/pokemon/species_info/gen_1_families.h:18374 gen_1_families_line_18374 (+1 aliases)
 	.globl gText_Rom_2EA64C
 gText_Rom_2EA64C: @ 0x082EA64C
-	.string "ブースター$"
+	.string "ブースター"
+	.byte EOS
 	.if (. - gText_Rom_2EA64C) > 0x6
 	.error "gText_Rom_2EA64C may not grow beyond its original slot"
 	.endif
@@ -1564,7 +1701,8 @@ gText_Rom_2EA64C: @ 0x082EA64C
 	@ src/data/pokemon/species_info/gen_1_families.h:18787 gen_1_families_line_18787
 	.globl gText_Rom_2EA652
 gText_Rom_2EA652: @ 0x082EA652
-	.string "ポリゴン$"
+	.string "ポリゴン"
+	.byte EOS
 	.if (. - gText_Rom_2EA652) > 0x5
 	.error "gText_Rom_2EA652 may not grow beyond its original slot"
 	.endif
@@ -1576,7 +1714,8 @@ gText_Rom_2EA652: @ 0x082EA652
 	@ src/data/pokemon/species_info/gen_1_families.h:19024 gen_1_families_line_19024
 	.globl gText_Rom_2EA658
 gText_Rom_2EA658: @ 0x082EA658
-	.string "オムナイト$"
+	.string "オムナイト"
+	.byte EOS
 	.if (. - gText_Rom_2EA658) > 0x6
 	.error "gText_Rom_2EA658 may not grow beyond its original slot"
 	.endif
@@ -1587,7 +1726,8 @@ gText_Rom_2EA658: @ 0x082EA658
 	@ src/data/pokemon/species_info/gen_1_families.h:19098 gen_1_families_line_19098
 	.globl gText_Rom_2EA65E
 gText_Rom_2EA65E: @ 0x082EA65E
-	.string "オムスター$"
+	.string "オムスター"
+	.byte EOS
 	.if (. - gText_Rom_2EA65E) > 0x6
 	.error "gText_Rom_2EA65E may not grow beyond its original slot"
 	.endif
@@ -1598,7 +1738,8 @@ gText_Rom_2EA65E: @ 0x082EA65E
 	@ src/data/pokemon/species_info/gen_1_families.h:19174 gen_1_families_line_19174
 	.globl gText_Rom_2EA664
 gText_Rom_2EA664: @ 0x082EA664
-	.string "カブト$"
+	.string "カブト"
+	.byte EOS
 	.if (. - gText_Rom_2EA664) > 0x4
 	.error "gText_Rom_2EA664 may not grow beyond its original slot"
 	.endif
@@ -1610,7 +1751,8 @@ gText_Rom_2EA664: @ 0x082EA664
 	@ src/data/pokemon/species_info/gen_1_families.h:19254 gen_1_families_line_19254
 	.globl gText_Rom_2EA66A
 gText_Rom_2EA66A: @ 0x082EA66A
-	.string "カブトプス$"
+	.string "カブトプス"
+	.byte EOS
 	.if (. - gText_Rom_2EA66A) > 0x6
 	.error "gText_Rom_2EA66A may not grow beyond its original slot"
 	.endif
@@ -1621,7 +1763,8 @@ gText_Rom_2EA66A: @ 0x082EA66A
 	@ src/data/pokemon/species_info/gen_1_families.h:19324 gen_1_families_line_19324 (+1 aliases)
 	.globl gText_Rom_2EA670
 gText_Rom_2EA670: @ 0x082EA670
-	.string "プテラ$"
+	.string "プテラ"
+	.byte EOS
 	.if (. - gText_Rom_2EA670) > 0x4
 	.error "gText_Rom_2EA670 may not grow beyond its original slot"
 	.endif
@@ -1633,7 +1776,8 @@ gText_Rom_2EA670: @ 0x082EA670
 	@ src/data/pokemon/species_info/gen_1_families.h:19548 gen_1_families_line_19548 (+1 aliases)
 	.globl gText_Rom_2EA676
 gText_Rom_2EA676: @ 0x082EA676
-	.string "カビゴン$"
+	.string "カビゴン"
+	.byte EOS
 	.if (. - gText_Rom_2EA676) > 0x5
 	.error "gText_Rom_2EA676 may not grow beyond its original slot"
 	.endif
@@ -1645,7 +1789,8 @@ gText_Rom_2EA676: @ 0x082EA676
 	@ src/data/pokemon/species_info/gen_1_families.h:19688 gen_1_families_line_19688 (+1 aliases)
 	.globl gText_Rom_2EA67C
 gText_Rom_2EA67C: @ 0x082EA67C
-	.string "フリーザー$"
+	.string "フリーザー"
+	.byte EOS
 	.if (. - gText_Rom_2EA67C) > 0x6
 	.error "gText_Rom_2EA67C may not grow beyond its original slot"
 	.endif
@@ -1656,7 +1801,8 @@ gText_Rom_2EA67C: @ 0x082EA67C
 	@ src/data/pokemon/species_info/gen_1_families.h:19841 gen_1_families_line_19841 (+1 aliases)
 	.globl gText_Rom_2EA682
 gText_Rom_2EA682: @ 0x082EA682
-	.string "サンダー$"
+	.string "サンダー"
+	.byte EOS
 	.if (. - gText_Rom_2EA682) > 0x5
 	.error "gText_Rom_2EA682 may not grow beyond its original slot"
 	.endif
@@ -1668,7 +1814,8 @@ gText_Rom_2EA682: @ 0x082EA682
 	@ src/data/pokemon/species_info/gen_1_families.h:19990 gen_1_families_line_19990 (+1 aliases)
 	.globl gText_Rom_2EA688
 gText_Rom_2EA688: @ 0x082EA688
-	.string "ファイヤー$"
+	.string "ファイヤー"
+	.byte EOS
 	.if (. - gText_Rom_2EA688) > 0x6
 	.error "gText_Rom_2EA688 may not grow beyond its original slot"
 	.endif
@@ -1680,7 +1827,8 @@ gText_Rom_2EA688: @ 0x082EA688
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EA68E
 gText_Rom_2EA68E: @ 0x082EA68E
-	.string "ミニリュウ$"
+	.string "ミニリュウ"
+	.byte EOS
 	.if (. - gText_Rom_2EA68E) != 0x6
 	.error "gText_Rom_2EA68E must retain its original byte length"
 	.endif
@@ -1690,7 +1838,8 @@ gText_Rom_2EA68E: @ 0x082EA68E
 	@ src/data/pokemon/species_info/gen_1_families.h:20232 gen_1_families_line_20232
 	.globl gText_Rom_2EA694
 gText_Rom_2EA694: @ 0x082EA694
-	.string "ハクリュー$"
+	.string "ハクリュー"
+	.byte EOS
 	.if (. - gText_Rom_2EA694) > 0x6
 	.error "gText_Rom_2EA694 may not grow beyond its original slot"
 	.endif
@@ -1701,7 +1850,8 @@ gText_Rom_2EA694: @ 0x082EA694
 	@ src/data/pokemon/species_info/gen_1_families.h:20308 gen_1_families_line_20308 (+1 aliases)
 	.globl gText_Rom_2EA69A
 gText_Rom_2EA69A: @ 0x082EA69A
-	.string "カイリュー$"
+	.string "カイリュー"
+	.byte EOS
 	.if (. - gText_Rom_2EA69A) > 0x6
 	.error "gText_Rom_2EA69A may not grow beyond its original slot"
 	.endif
@@ -1712,7 +1862,8 @@ gText_Rom_2EA69A: @ 0x082EA69A
 	@ src/data/pokemon/species_info/gen_1_families.h:20447 gen_1_families_line_20447 (+2 aliases)
 	.globl gText_Rom_2EA6A0
 gText_Rom_2EA6A0: @ 0x082EA6A0
-	.string "ミュウツー$"
+	.string "ミュウツー"
+	.byte EOS
 	.if (. - gText_Rom_2EA6A0) > 0x6
 	.error "gText_Rom_2EA6A0 may not grow beyond its original slot"
 	.endif
@@ -1723,7 +1874,8 @@ gText_Rom_2EA6A0: @ 0x082EA6A0
 	@ src/data/pokemon/species_info/gen_1_families.h:20681 gen_1_families_line_20681
 	.globl gText_Rom_2EA6A6
 gText_Rom_2EA6A6: @ 0x082EA6A6
-	.string "ミュウ$"
+	.string "ミュウ"
+	.byte EOS
 	.if (. - gText_Rom_2EA6A6) > 0x4
 	.error "gText_Rom_2EA6A6 may not grow beyond its original slot"
 	.endif
@@ -1735,7 +1887,8 @@ gText_Rom_2EA6A6: @ 0x082EA6A6
 	@ src/data/pokemon/species_info/gen_2_families.h:26 gen_2_families_line_26
 	.globl gText_Rom_2EA6AC
 gText_Rom_2EA6AC: @ 0x082EA6AC
-	.string "チコリータ$"
+	.string "チコリータ"
+	.byte EOS
 	.if (. - gText_Rom_2EA6AC) > 0x6
 	.error "gText_Rom_2EA6AC may not grow beyond its original slot"
 	.endif
@@ -1747,7 +1900,8 @@ gText_Rom_2EA6AC: @ 0x082EA6AC
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EA6B2
 gText_Rom_2EA6B2: @ 0x082EA6B2
-	.string "ベイリーフ$"
+	.string "ベイリーフ"
+	.byte EOS
 	.if (. - gText_Rom_2EA6B2) != 0x6
 	.error "gText_Rom_2EA6B2 must retain its original byte length"
 	.endif
@@ -1757,7 +1911,8 @@ gText_Rom_2EA6B2: @ 0x082EA6B2
 	@ src/data/pokemon/species_info/gen_2_families.h:170 gen_2_families_line_170 (+1 aliases)
 	.globl gText_Rom_2EA6B8
 gText_Rom_2EA6B8: @ 0x082EA6B8
-	.string "メガニウム$"
+	.string "メガニウム"
+	.byte EOS
 	.if (. - gText_Rom_2EA6B8) > 0x6
 	.error "gText_Rom_2EA6B8 may not grow beyond its original slot"
 	.endif
@@ -1768,7 +1923,8 @@ gText_Rom_2EA6B8: @ 0x082EA6B8
 	@ src/data/pokemon/species_info/gen_2_families.h:313 gen_2_families_line_313
 	.globl gText_Rom_2EA6BE
 gText_Rom_2EA6BE: @ 0x082EA6BE
-	.string "ヒノアラシ$"
+	.string "ヒノアラシ"
+	.byte EOS
 	.if (. - gText_Rom_2EA6BE) > 0x6
 	.error "gText_Rom_2EA6BE may not grow beyond its original slot"
 	.endif
@@ -1779,7 +1935,8 @@ gText_Rom_2EA6BE: @ 0x082EA6BE
 	@ src/data/pokemon/species_info/gen_2_families.h:384 gen_2_families_line_384
 	.globl gText_Rom_2EA6C4
 gText_Rom_2EA6C4: @ 0x082EA6C4
-	.string "マグマラシ$"
+	.string "マグマラシ"
+	.byte EOS
 	.if (. - gText_Rom_2EA6C4) > 0x6
 	.error "gText_Rom_2EA6C4 may not grow beyond its original slot"
 	.endif
@@ -1790,7 +1947,8 @@ gText_Rom_2EA6C4: @ 0x082EA6C4
 	@ src/data/pokemon/species_info/gen_2_families.h:461 gen_2_families_line_461 (+1 aliases)
 	.globl gText_Rom_2EA6CA
 gText_Rom_2EA6CA: @ 0x082EA6CA
-	.string "バクフーン$"
+	.string "バクフーン"
+	.byte EOS
 	.if (. - gText_Rom_2EA6CA) > 0x6
 	.error "gText_Rom_2EA6CA may not grow beyond its original slot"
 	.endif
@@ -1801,7 +1959,8 @@ gText_Rom_2EA6CA: @ 0x082EA6CA
 	@ src/data/pokemon/species_info/gen_2_families.h:598 gen_2_families_line_598
 	.globl gText_Rom_2EA6D0
 gText_Rom_2EA6D0: @ 0x082EA6D0
-	.string "ワニノコ$"
+	.string "ワニノコ"
+	.byte EOS
 	.if (. - gText_Rom_2EA6D0) > 0x5
 	.error "gText_Rom_2EA6D0 may not grow beyond its original slot"
 	.endif
@@ -1813,7 +1972,8 @@ gText_Rom_2EA6D0: @ 0x082EA6D0
 	@ src/data/pokemon/species_info/gen_2_families.h:672 gen_2_families_line_672
 	.globl gText_Rom_2EA6D6
 gText_Rom_2EA6D6: @ 0x082EA6D6
-	.string "アリゲイツ$"
+	.string "アリゲイツ"
+	.byte EOS
 	.if (. - gText_Rom_2EA6D6) > 0x6
 	.error "gText_Rom_2EA6D6 may not grow beyond its original slot"
 	.endif
@@ -1824,7 +1984,8 @@ gText_Rom_2EA6D6: @ 0x082EA6D6
 	@ src/data/pokemon/species_info/gen_2_families.h:746 gen_2_families_line_746 (+1 aliases)
 	.globl gText_Rom_2EA6DC
 gText_Rom_2EA6DC: @ 0x082EA6DC
-	.string "オーダイル$"
+	.string "オーダイル"
+	.byte EOS
 	.if (. - gText_Rom_2EA6DC) > 0x6
 	.error "gText_Rom_2EA6DC may not grow beyond its original slot"
 	.endif
@@ -1835,7 +1996,8 @@ gText_Rom_2EA6DC: @ 0x082EA6DC
 	@ src/data/pokemon/species_info/gen_2_families.h:879 gen_2_families_line_879
 	.globl gText_Rom_2EA6E2
 gText_Rom_2EA6E2: @ 0x082EA6E2
-	.string "オタチ$"
+	.string "オタチ"
+	.byte EOS
 	.if (. - gText_Rom_2EA6E2) > 0x4
 	.error "gText_Rom_2EA6E2 may not grow beyond its original slot"
 	.endif
@@ -1848,7 +2010,8 @@ gText_Rom_2EA6E2: @ 0x082EA6E2
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EA6E8
 gText_Rom_2EA6E8: @ 0x082EA6E8
-	.string "オオタチ$"
+	.string "オオタチ"
+	.byte EOS
 	.if (. - gText_Rom_2EA6E8) != 0x5
 	.error "gText_Rom_2EA6E8 must retain its original byte length"
 	.endif
@@ -1859,7 +2022,8 @@ gText_Rom_2EA6E8: @ 0x082EA6E8
 	@ src/data/pokemon/species_info/gen_2_families.h:1017 gen_2_families_line_1017
 	.globl gText_Rom_2EA6EE
 gText_Rom_2EA6EE: @ 0x082EA6EE
-	.string "ホーホー$"
+	.string "ホーホー"
+	.byte EOS
 	.if (. - gText_Rom_2EA6EE) > 0x5
 	.error "gText_Rom_2EA6EE may not grow beyond its original slot"
 	.endif
@@ -1871,7 +2035,8 @@ gText_Rom_2EA6EE: @ 0x082EA6EE
 	@ src/data/pokemon/species_info/gen_2_families.h:1102 gen_2_families_line_1102
 	.globl gText_Rom_2EA6F4
 gText_Rom_2EA6F4: @ 0x082EA6F4
-	.string "ヨルノズク$"
+	.string "ヨルノズク"
+	.byte EOS
 	.if (. - gText_Rom_2EA6F4) > 0x6
 	.error "gText_Rom_2EA6F4 may not grow beyond its original slot"
 	.endif
@@ -1882,7 +2047,8 @@ gText_Rom_2EA6F4: @ 0x082EA6F4
 	@ src/data/pokemon/species_info/gen_2_families.h:1170 gen_2_families_line_1170
 	.globl gText_Rom_2EA6FA
 gText_Rom_2EA6FA: @ 0x082EA6FA
-	.string "レディバ$"
+	.string "レディバ"
+	.byte EOS
 	.if (. - gText_Rom_2EA6FA) > 0x5
 	.error "gText_Rom_2EA6FA may not grow beyond its original slot"
 	.endif
@@ -1894,7 +2060,8 @@ gText_Rom_2EA6FA: @ 0x082EA6FA
 	@ src/data/pokemon/species_info/gen_2_families.h:1253 gen_2_families_line_1253
 	.globl gText_Rom_2EA700
 gText_Rom_2EA700: @ 0x082EA700
-	.string "レディアン$"
+	.string "レディアン"
+	.byte EOS
 	.if (. - gText_Rom_2EA700) > 0x6
 	.error "gText_Rom_2EA700 may not grow beyond its original slot"
 	.endif
@@ -1905,7 +2072,8 @@ gText_Rom_2EA700: @ 0x082EA700
 	@ src/data/pokemon/species_info/gen_2_families.h:1337 gen_2_families_line_1337
 	.globl gText_Rom_2EA706
 gText_Rom_2EA706: @ 0x082EA706
-	.string "イトマル$"
+	.string "イトマル"
+	.byte EOS
 	.if (. - gText_Rom_2EA706) > 0x5
 	.error "gText_Rom_2EA706 may not grow beyond its original slot"
 	.endif
@@ -1917,7 +2085,8 @@ gText_Rom_2EA706: @ 0x082EA706
 	@ src/data/pokemon/species_info/gen_2_families.h:1417 gen_2_families_line_1417
 	.globl gText_Rom_2EA70C
 gText_Rom_2EA70C: @ 0x082EA70C
-	.string "アリアドス$"
+	.string "アリアドス"
+	.byte EOS
 	.if (. - gText_Rom_2EA70C) > 0x6
 	.error "gText_Rom_2EA70C may not grow beyond its original slot"
 	.endif
@@ -1928,7 +2097,8 @@ gText_Rom_2EA70C: @ 0x082EA70C
 	@ src/data/pokemon/species_info/gen_1_families.h:5982 gen_1_families_line_5982
 	.globl gText_Rom_2EA712
 gText_Rom_2EA712: @ 0x082EA712
-	.string "クロバット$"
+	.string "クロバット"
+	.byte EOS
 	.if (. - gText_Rom_2EA712) > 0x6
 	.error "gText_Rom_2EA712 may not grow beyond its original slot"
 	.endif
@@ -1939,7 +2109,8 @@ gText_Rom_2EA712: @ 0x082EA712
 	@ src/data/pokemon/species_info/gen_2_families.h:1488 gen_2_families_line_1488
 	.globl gText_Rom_2EA718
 gText_Rom_2EA718: @ 0x082EA718
-	.string "チョンチー$"
+	.string "チョンチー"
+	.byte EOS
 	.if (. - gText_Rom_2EA718) > 0x6
 	.error "gText_Rom_2EA718 may not grow beyond its original slot"
 	.endif
@@ -1950,7 +2121,8 @@ gText_Rom_2EA718: @ 0x082EA718
 	@ src/data/pokemon/species_info/gen_2_families.h:1560 gen_2_families_line_1560
 	.globl gText_Rom_2EA71E
 gText_Rom_2EA71E: @ 0x082EA71E
-	.string "ランターン$"
+	.string "ランターン"
+	.byte EOS
 	.if (. - gText_Rom_2EA71E) > 0x6
 	.error "gText_Rom_2EA71E may not grow beyond its original slot"
 	.endif
@@ -1961,7 +2133,8 @@ gText_Rom_2EA71E: @ 0x082EA71E
 	@ src/data/pokemon/species_info/gen_1_families.h:2773 gen_1_families_line_2773 (+1 aliases)
 	.globl gText_Rom_2EA724
 gText_Rom_2EA724: @ 0x082EA724
-	.string "ピチュー$"
+	.string "ピチュー"
+	.byte EOS
 	.if (. - gText_Rom_2EA724) > 0x5
 	.error "gText_Rom_2EA724 may not grow beyond its original slot"
 	.endif
@@ -1973,7 +2146,8 @@ gText_Rom_2EA724: @ 0x082EA724
 	@ src/data/pokemon/species_info/gen_1_families.h:4955 gen_1_families_line_4955
 	.globl gText_Rom_2EA72A
 gText_Rom_2EA72A: @ 0x082EA72A
-	.string "ピィ$"
+	.string "ピィ"
+	.byte EOS
 	.if (. - gText_Rom_2EA72A) > 0x3
 	.error "gText_Rom_2EA72A may not grow beyond its original slot"
 	.endif
@@ -1986,7 +2160,8 @@ gText_Rom_2EA72A: @ 0x082EA72A
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EA730
 gText_Rom_2EA730: @ 0x082EA730
-	.string "ププリン$"
+	.string "ププリン"
+	.byte EOS
 	.if (. - gText_Rom_2EA730) != 0x5
 	.error "gText_Rom_2EA730 must retain its original byte length"
 	.endif
@@ -1997,7 +2172,8 @@ gText_Rom_2EA730: @ 0x082EA730
 	@ src/data/pokemon/species_info/gen_2_families.h:1634 gen_2_families_line_1634
 	.globl gText_Rom_2EA736
 gText_Rom_2EA736: @ 0x082EA736
-	.string "トゲピー$"
+	.string "トゲピー"
+	.byte EOS
 	.if (. - gText_Rom_2EA736) > 0x5
 	.error "gText_Rom_2EA736 may not grow beyond its original slot"
 	.endif
@@ -2009,7 +2185,8 @@ gText_Rom_2EA736: @ 0x082EA736
 	@ src/data/pokemon/species_info/gen_2_families.h:1704 gen_2_families_line_1704
 	.globl gText_Rom_2EA73C
 gText_Rom_2EA73C: @ 0x082EA73C
-	.string "トゲチック$"
+	.string "トゲチック"
+	.byte EOS
 	.if (. - gText_Rom_2EA73C) > 0x6
 	.error "gText_Rom_2EA73C may not grow beyond its original slot"
 	.endif
@@ -2020,7 +2197,8 @@ gText_Rom_2EA73C: @ 0x082EA73C
 	@ src/data/pokemon/species_info/gen_2_families.h:1858 gen_2_families_line_1858
 	.globl gText_Rom_2EA742
 gText_Rom_2EA742: @ 0x082EA742
-	.string "ネイティ$"
+	.string "ネイティ"
+	.byte EOS
 	.if (. - gText_Rom_2EA742) > 0x5
 	.error "gText_Rom_2EA742 may not grow beyond its original slot"
 	.endif
@@ -2032,7 +2210,8 @@ gText_Rom_2EA742: @ 0x082EA742
 	@ src/data/pokemon/species_info/gen_2_families.h:1932 gen_2_families_line_1932
 	.globl gText_Rom_2EA748
 gText_Rom_2EA748: @ 0x082EA748
-	.string "ネイティオ$"
+	.string "ネイティオ"
+	.byte EOS
 	.if (. - gText_Rom_2EA748) > 0x6
 	.error "gText_Rom_2EA748 may not grow beyond its original slot"
 	.endif
@@ -2043,7 +2222,8 @@ gText_Rom_2EA748: @ 0x082EA748
 	@ src/data/pokemon/species_info/gen_2_families.h:2017 gen_2_families_line_2017
 	.globl gText_Rom_2EA74E
 gText_Rom_2EA74E: @ 0x082EA74E
-	.string "メリープ$"
+	.string "メリープ"
+	.byte EOS
 	.if (. - gText_Rom_2EA74E) > 0x5
 	.error "gText_Rom_2EA74E may not grow beyond its original slot"
 	.endif
@@ -2055,7 +2235,8 @@ gText_Rom_2EA74E: @ 0x082EA74E
 	@ src/data/pokemon/species_info/gen_2_families.h:2090 gen_2_families_line_2090
 	.globl gText_Rom_2EA754
 gText_Rom_2EA754: @ 0x082EA754
-	.string "モココ$"
+	.string "モココ"
+	.byte EOS
 	.if (. - gText_Rom_2EA754) > 0x4
 	.error "gText_Rom_2EA754 may not grow beyond its original slot"
 	.endif
@@ -2068,7 +2249,8 @@ gText_Rom_2EA754: @ 0x082EA754
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EA75A
 gText_Rom_2EA75A: @ 0x082EA75A
-	.string "デンリュウ$"
+	.string "デンリュウ"
+	.byte EOS
 	.if (. - gText_Rom_2EA75A) != 0x6
 	.error "gText_Rom_2EA75A must retain its original byte length"
 	.endif
@@ -2078,7 +2260,8 @@ gText_Rom_2EA75A: @ 0x082EA75A
 	@ src/data/pokemon/species_info/gen_1_families.h:6327 gen_1_families_line_6327
 	.globl gText_Rom_2EA760
 gText_Rom_2EA760: @ 0x082EA760
-	.string "キレイハナ$"
+	.string "キレイハナ"
+	.byte EOS
 	.if (. - gText_Rom_2EA760) > 0x6
 	.error "gText_Rom_2EA760 may not grow beyond its original slot"
 	.endif
@@ -2089,7 +2272,8 @@ gText_Rom_2EA760: @ 0x082EA760
 	@ src/data/pokemon/species_info/gen_2_families.h:2397 gen_2_families_line_2397
 	.globl gText_Rom_2EA766
 gText_Rom_2EA766: @ 0x082EA766
-	.string "マリル$"
+	.string "マリル"
+	.byte EOS
 	.if (. - gText_Rom_2EA766) > 0x4
 	.error "gText_Rom_2EA766 may not grow beyond its original slot"
 	.endif
@@ -2101,7 +2285,8 @@ gText_Rom_2EA766: @ 0x082EA766
 	@ src/data/pokemon/species_info/gen_2_families.h:2479 gen_2_families_line_2479
 	.globl gText_Rom_2EA76C
 gText_Rom_2EA76C: @ 0x082EA76C
-	.string "マリルリ$"
+	.string "マリルリ"
+	.byte EOS
 	.if (. - gText_Rom_2EA76C) > 0x5
 	.error "gText_Rom_2EA76C may not grow beyond its original slot"
 	.endif
@@ -2113,7 +2298,8 @@ gText_Rom_2EA76C: @ 0x082EA76C
 	@ src/data/pokemon/species_info/gen_2_families.h:2623 gen_2_families_line_2623
 	.globl gText_Rom_2EA772
 gText_Rom_2EA772: @ 0x082EA772
-	.string "ウソッキー$"
+	.string "ウソッキー"
+	.byte EOS
 	.if (. - gText_Rom_2EA772) > 0x6
 	.error "gText_Rom_2EA772 may not grow beyond its original slot"
 	.endif
@@ -2124,7 +2310,8 @@ gText_Rom_2EA772: @ 0x082EA772
 	@ src/data/pokemon/species_info/gen_1_families.h:8411 gen_1_families_line_8411
 	.globl gText_Rom_2EA778
 gText_Rom_2EA778: @ 0x082EA778
-	.string "ニョロトノ$"
+	.string "ニョロトノ"
+	.byte EOS
 	.if (. - gText_Rom_2EA778) > 0x6
 	.error "gText_Rom_2EA778 may not grow beyond its original slot"
 	.endif
@@ -2135,7 +2322,8 @@ gText_Rom_2EA778: @ 0x082EA778
 	@ src/data/pokemon/species_info/gen_2_families.h:2713 gen_2_families_line_2713
 	.globl gText_Rom_2EA77E
 gText_Rom_2EA77E: @ 0x082EA77E
-	.string "ハネッコ$"
+	.string "ハネッコ"
+	.byte EOS
 	.if (. - gText_Rom_2EA77E) > 0x5
 	.error "gText_Rom_2EA77E may not grow beyond its original slot"
 	.endif
@@ -2147,7 +2335,8 @@ gText_Rom_2EA77E: @ 0x082EA77E
 	@ src/data/pokemon/species_info/gen_2_families.h:2788 gen_2_families_line_2788
 	.globl gText_Rom_2EA784
 gText_Rom_2EA784: @ 0x082EA784
-	.string "ポポッコ$"
+	.string "ポポッコ"
+	.byte EOS
 	.if (. - gText_Rom_2EA784) > 0x5
 	.error "gText_Rom_2EA784 may not grow beyond its original slot"
 	.endif
@@ -2159,7 +2348,8 @@ gText_Rom_2EA784: @ 0x082EA784
 	@ src/data/pokemon/species_info/gen_2_families.h:2874 gen_2_families_line_2874
 	.globl gText_Rom_2EA78A
 gText_Rom_2EA78A: @ 0x082EA78A
-	.string "ワタッコ$"
+	.string "ワタッコ"
+	.byte EOS
 	.if (. - gText_Rom_2EA78A) > 0x5
 	.error "gText_Rom_2EA78A may not grow beyond its original slot"
 	.endif
@@ -2171,7 +2361,8 @@ gText_Rom_2EA78A: @ 0x082EA78A
 	@ src/data/pokemon/species_info/gen_2_families.h:2947 gen_2_families_line_2947
 	.globl gText_Rom_2EA790
 gText_Rom_2EA790: @ 0x082EA790
-	.string "エイパム$"
+	.string "エイパム"
+	.byte EOS
 	.if (. - gText_Rom_2EA790) > 0x5
 	.error "gText_Rom_2EA790 may not grow beyond its original slot"
 	.endif
@@ -2183,7 +2374,8 @@ gText_Rom_2EA790: @ 0x082EA790
 	@ src/data/pokemon/species_info/gen_2_families.h:3118 gen_2_families_line_3118
 	.globl gText_Rom_2EA796
 gText_Rom_2EA796: @ 0x082EA796
-	.string "ヒマナッツ$"
+	.string "ヒマナッツ"
+	.byte EOS
 	.if (. - gText_Rom_2EA796) > 0x6
 	.error "gText_Rom_2EA796 may not grow beyond its original slot"
 	.endif
@@ -2194,7 +2386,8 @@ gText_Rom_2EA796: @ 0x082EA796
 	@ src/data/pokemon/species_info/gen_2_families.h:3194 gen_2_families_line_3194
 	.globl gText_Rom_2EA79C
 gText_Rom_2EA79C: @ 0x082EA79C
-	.string "キマワリ$"
+	.string "キマワリ"
+	.byte EOS
 	.if (. - gText_Rom_2EA79C) > 0x5
 	.error "gText_Rom_2EA79C may not grow beyond its original slot"
 	.endif
@@ -2206,7 +2399,8 @@ gText_Rom_2EA79C: @ 0x082EA79C
 	@ src/data/pokemon/species_info/gen_2_families.h:3264 gen_2_families_line_3264
 	.globl gText_Rom_2EA7A2
 gText_Rom_2EA7A2: @ 0x082EA7A2
-	.string "ヤンヤンマ$"
+	.string "ヤンヤンマ"
+	.byte EOS
 	.if (. - gText_Rom_2EA7A2) > 0x6
 	.error "gText_Rom_2EA7A2 may not grow beyond its original slot"
 	.endif
@@ -2217,7 +2411,8 @@ gText_Rom_2EA7A2: @ 0x082EA7A2
 	@ src/data/pokemon/species_info/gen_2_families.h:3451 gen_2_families_line_3451 (+1 aliases)
 	.globl gText_Rom_2EA7A8
 gText_Rom_2EA7A8: @ 0x082EA7A8
-	.string "ウパー$"
+	.string "ウパー"
+	.byte EOS
 	.if (. - gText_Rom_2EA7A8) > 0x4
 	.error "gText_Rom_2EA7A8 may not grow beyond its original slot"
 	.endif
@@ -2229,7 +2424,8 @@ gText_Rom_2EA7A8: @ 0x082EA7A8
 	@ src/data/pokemon/species_info/gen_2_families.h:3534 gen_2_families_line_3534
 	.globl gText_Rom_2EA7AE
 gText_Rom_2EA7AE: @ 0x082EA7AE
-	.string "ヌオー$"
+	.string "ヌオー"
+	.byte EOS
 	.if (. - gText_Rom_2EA7AE) > 0x4
 	.error "gText_Rom_2EA7AE may not grow beyond its original slot"
 	.endif
@@ -2241,7 +2437,8 @@ gText_Rom_2EA7AE: @ 0x082EA7AE
 	@ src/data/pokemon/species_info/gen_1_families.h:18441 gen_1_families_line_18441
 	.globl gText_Rom_2EA7B4
 gText_Rom_2EA7B4: @ 0x082EA7B4
-	.string "エーフィ$"
+	.string "エーフィ"
+	.byte EOS
 	.if (. - gText_Rom_2EA7B4) > 0x5
 	.error "gText_Rom_2EA7B4 may not grow beyond its original slot"
 	.endif
@@ -2254,7 +2451,8 @@ gText_Rom_2EA7B4: @ 0x082EA7B4
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EA7BA
 gText_Rom_2EA7BA: @ 0x082EA7BA
-	.string "ブラッキー$"
+	.string "ブラッキー"
+	.byte EOS
 	.if (. - gText_Rom_2EA7BA) != 0x6
 	.error "gText_Rom_2EA7BA must retain its original byte length"
 	.endif
@@ -2264,7 +2462,8 @@ gText_Rom_2EA7BA: @ 0x082EA7BA
 	@ src/data/pokemon/species_info/gen_2_families.h:3751 gen_2_families_line_3751
 	.globl gText_Rom_2EA7C0
 gText_Rom_2EA7C0: @ 0x082EA7C0
-	.string "ヤミカラス$"
+	.string "ヤミカラス"
+	.byte EOS
 	.if (. - gText_Rom_2EA7C0) > 0x6
 	.error "gText_Rom_2EA7C0 may not grow beyond its original slot"
 	.endif
@@ -2275,7 +2474,8 @@ gText_Rom_2EA7C0: @ 0x082EA7C0
 	@ src/data/pokemon/species_info/gen_1_families.h:10448 gen_1_families_line_10448 (+1 aliases)
 	.globl gText_Rom_2EA7C6
 gText_Rom_2EA7C6: @ 0x082EA7C6
-	.string "ヤドキング$"
+	.string "ヤドキング"
+	.byte EOS
 	.if (. - gText_Rom_2EA7C6) > 0x6
 	.error "gText_Rom_2EA7C6 may not grow beyond its original slot"
 	.endif
@@ -2286,7 +2486,8 @@ gText_Rom_2EA7C6: @ 0x082EA7C6
 	@ src/data/pokemon/species_info/gen_2_families.h:3909 gen_2_families_line_3909
 	.globl gText_Rom_2EA7CC
 gText_Rom_2EA7CC: @ 0x082EA7CC
-	.string "ムウマ$"
+	.string "ムウマ"
+	.byte EOS
 	.if (. - gText_Rom_2EA7CC) > 0x4
 	.error "gText_Rom_2EA7CC may not grow beyond its original slot"
 	.endif
@@ -2298,7 +2499,8 @@ gText_Rom_2EA7CC: @ 0x082EA7CC
 	@ src/data/pokemon/species_info/gen_2_families.h:4070 gen_2_families_line_4070
 	.globl gText_Rom_2EA7D2
 gText_Rom_2EA7D2: @ 0x082EA7D2
-	.string "アンノーン$"
+	.string "アンノーン"
+	.byte EOS
 	.if (. - gText_Rom_2EA7D2) > 0x6
 	.error "gText_Rom_2EA7D2 may not grow beyond its original slot"
 	.endif
@@ -2309,7 +2511,8 @@ gText_Rom_2EA7D2: @ 0x082EA7D2
 	@ src/data/pokemon/species_info/gen_2_families.h:4237 gen_2_families_line_4237
 	.globl gText_Rom_2EA7D8
 gText_Rom_2EA7D8: @ 0x082EA7D8
-	.string "ソーナンス$"
+	.string "ソーナンス"
+	.byte EOS
 	.if (. - gText_Rom_2EA7D8) > 0x6
 	.error "gText_Rom_2EA7D8 may not grow beyond its original slot"
 	.endif
@@ -2320,7 +2523,8 @@ gText_Rom_2EA7D8: @ 0x082EA7D8
 	@ src/data/pokemon/species_info/gen_2_families.h:4326 gen_2_families_line_4326
 	.globl gText_Rom_2EA7DE
 gText_Rom_2EA7DE: @ 0x082EA7DE
-	.string "キリンリキ$"
+	.string "キリンリキ"
+	.byte EOS
 	.if (. - gText_Rom_2EA7DE) > 0x6
 	.error "gText_Rom_2EA7DE may not grow beyond its original slot"
 	.endif
@@ -2331,7 +2535,8 @@ gText_Rom_2EA7DE: @ 0x082EA7DE
 	@ src/data/pokemon/species_info/gen_2_families.h:4477 gen_2_families_line_4477
 	.globl gText_Rom_2EA7E4
 gText_Rom_2EA7E4: @ 0x082EA7E4
-	.string "クヌギダマ$"
+	.string "クヌギダマ"
+	.byte EOS
 	.if (. - gText_Rom_2EA7E4) > 0x6
 	.error "gText_Rom_2EA7E4 may not grow beyond its original slot"
 	.endif
@@ -2342,7 +2547,8 @@ gText_Rom_2EA7E4: @ 0x082EA7E4
 	@ src/data/pokemon/species_info/gen_2_families.h:4551 gen_2_families_line_4551
 	.globl gText_Rom_2EA7EA
 gText_Rom_2EA7EA: @ 0x082EA7EA
-	.string "フォレトス$"
+	.string "フォレトス"
+	.byte EOS
 	.if (. - gText_Rom_2EA7EA) > 0x6
 	.error "gText_Rom_2EA7EA may not grow beyond its original slot"
 	.endif
@@ -2353,7 +2559,8 @@ gText_Rom_2EA7EA: @ 0x082EA7EA
 	@ src/data/pokemon/species_info/gen_2_families.h:4627 gen_2_families_line_4627
 	.globl gText_Rom_2EA7F0
 gText_Rom_2EA7F0: @ 0x082EA7F0
-	.string "ノコッチ$"
+	.string "ノコッチ"
+	.byte EOS
 	.if (. - gText_Rom_2EA7F0) > 0x5
 	.error "gText_Rom_2EA7F0 may not grow beyond its original slot"
 	.endif
@@ -2365,7 +2572,8 @@ gText_Rom_2EA7F0: @ 0x082EA7F0
 	@ src/data/pokemon/species_info/gen_2_families.h:4833 gen_2_families_line_4833
 	.globl gText_Rom_2EA7F6
 gText_Rom_2EA7F6: @ 0x082EA7F6
-	.string "グライガー$"
+	.string "グライガー"
+	.byte EOS
 	.if (. - gText_Rom_2EA7F6) > 0x6
 	.error "gText_Rom_2EA7F6 may not grow beyond its original slot"
 	.endif
@@ -2376,7 +2584,8 @@ gText_Rom_2EA7F6: @ 0x082EA7F6
 	@ src/data/pokemon/species_info/gen_1_families.h:12462 gen_1_families_line_12462 (+1 aliases)
 	.globl gText_Rom_2EA7FC
 gText_Rom_2EA7FC: @ 0x082EA7FC
-	.string "ハガネール$"
+	.string "ハガネール"
+	.byte EOS
 	.if (. - gText_Rom_2EA7FC) > 0x6
 	.error "gText_Rom_2EA7FC may not grow beyond its original slot"
 	.endif
@@ -2387,7 +2596,8 @@ gText_Rom_2EA7FC: @ 0x082EA7FC
 	@ src/data/pokemon/species_info/gen_2_families.h:4995 gen_2_families_line_4995
 	.globl gText_Rom_2EA802
 gText_Rom_2EA802: @ 0x082EA802
-	.string "ブルー$"
+	.string "ブルー"
+	.byte EOS
 	.if (. - gText_Rom_2EA802) > 0x4
 	.error "gText_Rom_2EA802 may not grow beyond its original slot"
 	.endif
@@ -2399,7 +2609,8 @@ gText_Rom_2EA802: @ 0x082EA802
 	@ src/data/pokemon/species_info/gen_2_families.h:5071 gen_2_families_line_5071
 	.globl gText_Rom_2EA808
 gText_Rom_2EA808: @ 0x082EA808
-	.string "グランブル$"
+	.string "グランブル"
+	.byte EOS
 	.if (. - gText_Rom_2EA808) > 0x6
 	.error "gText_Rom_2EA808 may not grow beyond its original slot"
 	.endif
@@ -2410,7 +2621,8 @@ gText_Rom_2EA808: @ 0x082EA808
 	@ src/data/pokemon/species_info/gen_2_families.h:5146 gen_2_families_line_5146 (+1 aliases)
 	.globl gText_Rom_2EA80E
 gText_Rom_2EA80E: @ 0x082EA80E
-	.string "ハリーセン$"
+	.string "ハリーセン"
+	.byte EOS
 	.if (. - gText_Rom_2EA80E) > 0x6
 	.error "gText_Rom_2EA80E may not grow beyond its original slot"
 	.endif
@@ -2421,7 +2633,8 @@ gText_Rom_2EA80E: @ 0x082EA80E
 	@ src/data/pokemon/species_info/gen_1_families.h:16296 gen_1_families_line_16296 (+1 aliases)
 	.globl gText_Rom_2EA814
 gText_Rom_2EA814: @ 0x082EA814
-	.string "ハッサム$"
+	.string "ハッサム"
+	.byte EOS
 	.if (. - gText_Rom_2EA814) > 0x5
 	.error "gText_Rom_2EA814 may not grow beyond its original slot"
 	.endif
@@ -2433,7 +2646,8 @@ gText_Rom_2EA814: @ 0x082EA814
 	@ src/data/pokemon/species_info/gen_2_families.h:5365 gen_2_families_line_5365
 	.globl gText_Rom_2EA81A
 gText_Rom_2EA81A: @ 0x082EA81A
-	.string "ツボツボ$"
+	.string "ツボツボ"
+	.byte EOS
 	.if (. - gText_Rom_2EA81A) > 0x5
 	.error "gText_Rom_2EA81A may not grow beyond its original slot"
 	.endif
@@ -2445,7 +2659,8 @@ gText_Rom_2EA81A: @ 0x082EA81A
 	@ src/data/pokemon/species_info/gen_2_families.h:5435 gen_2_families_line_5435 (+1 aliases)
 	.globl gText_Rom_2EA820
 gText_Rom_2EA820: @ 0x082EA820
-	.string "ヘラクロス$"
+	.string "ヘラクロス"
+	.byte EOS
 	.if (. - gText_Rom_2EA820) > 0x6
 	.error "gText_Rom_2EA820 may not grow beyond its original slot"
 	.endif
@@ -2456,7 +2671,8 @@ gText_Rom_2EA820: @ 0x082EA820
 	@ src/data/pokemon/species_info/gen_2_families.h:5599 gen_2_families_line_5599 (+1 aliases)
 	.globl gText_Rom_2EA826
 gText_Rom_2EA826: @ 0x082EA826
-	.string "ニューラ$"
+	.string "ニューラ"
+	.byte EOS
 	.if (. - gText_Rom_2EA826) > 0x5
 	.error "gText_Rom_2EA826 may not grow beyond its original slot"
 	.endif
@@ -2468,7 +2684,8 @@ gText_Rom_2EA826: @ 0x082EA826
 	@ src/data/pokemon/species_info/gen_2_families.h:5928 gen_2_families_line_5928
 	.globl gText_Rom_2EA82C
 gText_Rom_2EA82C: @ 0x082EA82C
-	.string "ヒメグマ$"
+	.string "ヒメグマ"
+	.byte EOS
 	.if (. - gText_Rom_2EA82C) > 0x5
 	.error "gText_Rom_2EA82C may not grow beyond its original slot"
 	.endif
@@ -2480,7 +2697,8 @@ gText_Rom_2EA82C: @ 0x082EA82C
 	@ src/data/pokemon/species_info/gen_2_families.h:6000 gen_2_families_line_6000
 	.globl gText_Rom_2EA832
 gText_Rom_2EA832: @ 0x082EA832
-	.string "リングマ$"
+	.string "リングマ"
+	.byte EOS
 	.if (. - gText_Rom_2EA832) > 0x5
 	.error "gText_Rom_2EA832 may not grow beyond its original slot"
 	.endif
@@ -2492,7 +2710,8 @@ gText_Rom_2EA832: @ 0x082EA832
 	@ src/data/pokemon/species_info/gen_2_families.h:6216 gen_2_families_line_6216
 	.globl gText_Rom_2EA838
 gText_Rom_2EA838: @ 0x082EA838
-	.string "マグマッグ$"
+	.string "マグマッグ"
+	.byte EOS
 	.if (. - gText_Rom_2EA838) > 0x6
 	.error "gText_Rom_2EA838 may not grow beyond its original slot"
 	.endif
@@ -2503,7 +2722,8 @@ gText_Rom_2EA838: @ 0x082EA838
 	@ src/data/pokemon/species_info/gen_2_families.h:6294 gen_2_families_line_6294
 	.globl gText_Rom_2EA83E
 gText_Rom_2EA83E: @ 0x082EA83E
-	.string "マグカルゴ$"
+	.string "マグカルゴ"
+	.byte EOS
 	.if (. - gText_Rom_2EA83E) > 0x6
 	.error "gText_Rom_2EA83E may not grow beyond its original slot"
 	.endif
@@ -2514,7 +2734,8 @@ gText_Rom_2EA83E: @ 0x082EA83E
 	@ src/data/pokemon/species_info/gen_2_families.h:6369 gen_2_families_line_6369
 	.globl gText_Rom_2EA844
 gText_Rom_2EA844: @ 0x082EA844
-	.string "ウリムー$"
+	.string "ウリムー"
+	.byte EOS
 	.if (. - gText_Rom_2EA844) > 0x5
 	.error "gText_Rom_2EA844 may not grow beyond its original slot"
 	.endif
@@ -2526,7 +2747,8 @@ gText_Rom_2EA844: @ 0x082EA844
 	@ src/data/pokemon/species_info/gen_2_families.h:6444 gen_2_families_line_6444
 	.globl gText_Rom_2EA84A
 gText_Rom_2EA84A: @ 0x082EA84A
-	.string "イノムー$"
+	.string "イノムー"
+	.byte EOS
 	.if (. - gText_Rom_2EA84A) > 0x5
 	.error "gText_Rom_2EA84A may not grow beyond its original slot"
 	.endif
@@ -2538,7 +2760,8 @@ gText_Rom_2EA84A: @ 0x082EA84A
 	@ src/data/pokemon/species_info/gen_2_families.h:6624 gen_2_families_line_6624 (+1 aliases)
 	.globl gText_Rom_2EA850
 gText_Rom_2EA850: @ 0x082EA850
-	.string "サニーゴ$"
+	.string "サニーゴ"
+	.byte EOS
 	.if (. - gText_Rom_2EA850) > 0x5
 	.error "gText_Rom_2EA850 may not grow beyond its original slot"
 	.endif
@@ -2550,7 +2773,8 @@ gText_Rom_2EA850: @ 0x082EA850
 	@ src/data/pokemon/species_info/gen_2_families.h:6834 gen_2_families_line_6834
 	.globl gText_Rom_2EA856
 gText_Rom_2EA856: @ 0x082EA856
-	.string "テッポウオ$"
+	.string "テッポウオ"
+	.byte EOS
 	.if (. - gText_Rom_2EA856) > 0x6
 	.error "gText_Rom_2EA856 may not grow beyond its original slot"
 	.endif
@@ -2561,7 +2785,8 @@ gText_Rom_2EA856: @ 0x082EA856
 	@ src/data/pokemon/species_info/gen_2_families.h:6908 gen_2_families_line_6908
 	.globl gText_Rom_2EA85C
 gText_Rom_2EA85C: @ 0x082EA85C
-	.string "オクタン$"
+	.string "オクタン"
+	.byte EOS
 	.if (. - gText_Rom_2EA85C) > 0x5
 	.error "gText_Rom_2EA85C may not grow beyond its original slot"
 	.endif
@@ -2573,7 +2798,8 @@ gText_Rom_2EA85C: @ 0x082EA85C
 	@ src/data/pokemon/species_info/gen_2_families.h:6993 gen_2_families_line_6993
 	.globl gText_Rom_2EA862
 gText_Rom_2EA862: @ 0x082EA862
-	.string "デリバード$"
+	.string "デリバード"
+	.byte EOS
 	.if (. - gText_Rom_2EA862) > 0x6
 	.error "gText_Rom_2EA862 may not grow beyond its original slot"
 	.endif
@@ -2584,7 +2810,8 @@ gText_Rom_2EA862: @ 0x082EA862
 	@ src/data/pokemon/species_info/gen_2_families.h:7142 gen_2_families_line_7142
 	.globl gText_Rom_2EA868
 gText_Rom_2EA868: @ 0x082EA868
-	.string "マンタイン$"
+	.string "マンタイン"
+	.byte EOS
 	.if (. - gText_Rom_2EA868) > 0x6
 	.error "gText_Rom_2EA868 may not grow beyond its original slot"
 	.endif
@@ -2595,7 +2822,8 @@ gText_Rom_2EA868: @ 0x082EA868
 	@ src/data/pokemon/species_info/gen_2_families.h:7215 gen_2_families_line_7215 (+1 aliases)
 	.globl gText_Rom_2EA86E
 gText_Rom_2EA86E: @ 0x082EA86E
-	.string "エアームド$"
+	.string "エアームド"
+	.byte EOS
 	.if (. - gText_Rom_2EA86E) > 0x6
 	.error "gText_Rom_2EA86E may not grow beyond its original slot"
 	.endif
@@ -2606,7 +2834,8 @@ gText_Rom_2EA86E: @ 0x082EA86E
 	@ src/data/pokemon/species_info/gen_2_families.h:7347 gen_2_families_line_7347
 	.globl gText_Rom_2EA874
 gText_Rom_2EA874: @ 0x082EA874
-	.string "デルビル$"
+	.string "デルビル"
+	.byte EOS
 	.if (. - gText_Rom_2EA874) > 0x5
 	.error "gText_Rom_2EA874 may not grow beyond its original slot"
 	.endif
@@ -2618,7 +2847,8 @@ gText_Rom_2EA874: @ 0x082EA874
 	@ src/data/pokemon/species_info/gen_2_families.h:7415 gen_2_families_line_7415 (+1 aliases)
 	.globl gText_Rom_2EA87A
 gText_Rom_2EA87A: @ 0x082EA87A
-	.string "ヘルガー$"
+	.string "ヘルガー"
+	.byte EOS
 	.if (. - gText_Rom_2EA87A) > 0x5
 	.error "gText_Rom_2EA87A may not grow beyond its original slot"
 	.endif
@@ -2630,7 +2860,8 @@ gText_Rom_2EA87A: @ 0x082EA87A
 	@ src/data/pokemon/species_info/gen_1_families.h:15437 gen_1_families_line_15437
 	.globl gText_Rom_2EA880
 gText_Rom_2EA880: @ 0x082EA880
-	.string "キングドラ$"
+	.string "キングドラ"
+	.byte EOS
 	.if (. - gText_Rom_2EA880) > 0x6
 	.error "gText_Rom_2EA880 may not grow beyond its original slot"
 	.endif
@@ -2641,7 +2872,8 @@ gText_Rom_2EA880: @ 0x082EA880
 	@ src/data/pokemon/species_info/gen_2_families.h:7571 gen_2_families_line_7571
 	.globl gText_Rom_2EA886
 gText_Rom_2EA886: @ 0x082EA886
-	.string "ゴマゾウ$"
+	.string "ゴマゾウ"
+	.byte EOS
 	.if (. - gText_Rom_2EA886) > 0x5
 	.error "gText_Rom_2EA886 may not grow beyond its original slot"
 	.endif
@@ -2653,7 +2885,8 @@ gText_Rom_2EA886: @ 0x082EA886
 	@ src/data/pokemon/species_info/gen_2_families.h:7645 gen_2_families_line_7645
 	.globl gText_Rom_2EA88C
 gText_Rom_2EA88C: @ 0x082EA88C
-	.string "ドンファン$"
+	.string "ドンファン"
+	.byte EOS
 	.if (. - gText_Rom_2EA88C) > 0x6
 	.error "gText_Rom_2EA88C may not grow beyond its original slot"
 	.endif
@@ -2664,7 +2897,8 @@ gText_Rom_2EA88C: @ 0x082EA88C
 	@ src/data/pokemon/species_info/gen_1_families.h:18864 gen_1_families_line_18864
 	.globl gText_Rom_2EA892
 gText_Rom_2EA892: @ 0x082EA892
-	.string "ポリゴン2$"
+	.string "ポリゴン2"
+	.byte EOS
 	.if (. - gText_Rom_2EA892) > 0x6
 	.error "gText_Rom_2EA892 may not grow beyond its original slot"
 	.endif
@@ -2675,7 +2909,8 @@ gText_Rom_2EA892: @ 0x082EA892
 	@ src/data/pokemon/species_info/gen_2_families.h:7731 gen_2_families_line_7731
 	.globl gText_Rom_2EA898
 gText_Rom_2EA898: @ 0x082EA898
-	.string "オドシシ$"
+	.string "オドシシ"
+	.byte EOS
 	.if (. - gText_Rom_2EA898) > 0x5
 	.error "gText_Rom_2EA898 may not grow beyond its original slot"
 	.endif
@@ -2687,7 +2922,8 @@ gText_Rom_2EA898: @ 0x082EA898
 	@ src/data/pokemon/species_info/gen_2_families.h:7874 gen_2_families_line_7874
 	.globl gText_Rom_2EA89E
 gText_Rom_2EA89E: @ 0x082EA89E
-	.string "ドーブル$"
+	.string "ドーブル"
+	.byte EOS
 	.if (. - gText_Rom_2EA89E) > 0x5
 	.error "gText_Rom_2EA89E may not grow beyond its original slot"
 	.endif
@@ -2699,7 +2935,8 @@ gText_Rom_2EA89E: @ 0x082EA89E
 	@ src/data/pokemon/species_info/gen_1_families.h:13800 gen_1_families_line_13800
 	.globl gText_Rom_2EA8A4
 gText_Rom_2EA8A4: @ 0x082EA8A4
-	.string "バルキー$"
+	.string "バルキー"
+	.byte EOS
 	.if (. - gText_Rom_2EA8A4) > 0x5
 	.error "gText_Rom_2EA8A4 may not grow beyond its original slot"
 	.endif
@@ -2711,7 +2948,8 @@ gText_Rom_2EA8A4: @ 0x082EA8A4
 	@ src/data/pokemon/species_info/gen_1_families.h:14026 gen_1_families_line_14026
 	.globl gText_Rom_2EA8AA
 gText_Rom_2EA8AA: @ 0x082EA8AA
-	.string "カポエラー$"
+	.string "カポエラー"
+	.byte EOS
 	.if (. - gText_Rom_2EA8AA) > 0x6
 	.error "gText_Rom_2EA8AA may not grow beyond its original slot"
 	.endif
@@ -2722,7 +2960,8 @@ gText_Rom_2EA8AA: @ 0x082EA8AA
 	@ src/data/pokemon/species_info/gen_1_families.h:16523 gen_1_families_line_16523
 	.globl gText_Rom_2EA8B0
 gText_Rom_2EA8B0: @ 0x082EA8B0
-	.string "ムチュール$"
+	.string "ムチュール"
+	.byte EOS
 	.if (. - gText_Rom_2EA8B0) > 0x6
 	.error "gText_Rom_2EA8B0 may not grow beyond its original slot"
 	.endif
@@ -2733,7 +2972,8 @@ gText_Rom_2EA8B0: @ 0x082EA8B0
 	@ src/data/pokemon/species_info/gen_1_families.h:16671 gen_1_families_line_16671
 	.globl gText_Rom_2EA8B6
 gText_Rom_2EA8B6: @ 0x082EA8B6
-	.string "エレキッド$"
+	.string "エレキッド"
+	.byte EOS
 	.if (. - gText_Rom_2EA8B6) > 0x6
 	.error "gText_Rom_2EA8B6 may not grow beyond its original slot"
 	.endif
@@ -2744,7 +2984,8 @@ gText_Rom_2EA8B6: @ 0x082EA8B6
 	@ src/data/pokemon/species_info/gen_1_families.h:16897 gen_1_families_line_16897
 	.globl gText_Rom_2EA8BC
 gText_Rom_2EA8BC: @ 0x082EA8BC
-	.string "ブビィ$"
+	.string "ブビィ"
+	.byte EOS
 	.if (. - gText_Rom_2EA8BC) > 0x4
 	.error "gText_Rom_2EA8BC may not grow beyond its original slot"
 	.endif
@@ -2756,7 +2997,8 @@ gText_Rom_2EA8BC: @ 0x082EA8BC
 	@ src/data/pokemon/species_info/gen_2_families.h:7951 gen_2_families_line_7951
 	.globl gText_Rom_2EA8C2
 gText_Rom_2EA8C2: @ 0x082EA8C2
-	.string "ミルタンク$"
+	.string "ミルタンク"
+	.byte EOS
 	.if (. - gText_Rom_2EA8C2) > 0x6
 	.error "gText_Rom_2EA8C2 may not grow beyond its original slot"
 	.endif
@@ -2767,7 +3009,8 @@ gText_Rom_2EA8C2: @ 0x082EA8C2
 	@ src/data/pokemon/species_info/gen_1_families.h:14889 gen_1_families_line_14889
 	.globl gText_Rom_2EA8C8
 gText_Rom_2EA8C8: @ 0x082EA8C8
-	.string "ハピナス$"
+	.string "ハピナス"
+	.byte EOS
 	.if (. - gText_Rom_2EA8C8) > 0x5
 	.error "gText_Rom_2EA8C8 may not grow beyond its original slot"
 	.endif
@@ -2779,7 +3022,8 @@ gText_Rom_2EA8C8: @ 0x082EA8C8
 	@ src/data/pokemon/species_info/gen_2_families.h:8031 gen_2_families_line_8031
 	.globl gText_Rom_2EA8CE
 gText_Rom_2EA8CE: @ 0x082EA8CE
-	.string "ライコウ$"
+	.string "ライコウ"
+	.byte EOS
 	.if (. - gText_Rom_2EA8CE) > 0x5
 	.error "gText_Rom_2EA8CE may not grow beyond its original slot"
 	.endif
@@ -2791,7 +3035,8 @@ gText_Rom_2EA8CE: @ 0x082EA8CE
 	@ src/data/pokemon/species_info/gen_2_families.h:8113 gen_2_families_line_8113
 	.globl gText_Rom_2EA8D4
 gText_Rom_2EA8D4: @ 0x082EA8D4
-	.string "エンテイ$"
+	.string "エンテイ"
+	.byte EOS
 	.if (. - gText_Rom_2EA8D4) > 0x5
 	.error "gText_Rom_2EA8D4 may not grow beyond its original slot"
 	.endif
@@ -2803,7 +3048,8 @@ gText_Rom_2EA8D4: @ 0x082EA8D4
 	@ src/data/pokemon/species_info/gen_2_families.h:8194 gen_2_families_line_8194
 	.globl gText_Rom_2EA8DA
 gText_Rom_2EA8DA: @ 0x082EA8DA
-	.string "スイクン$"
+	.string "スイクン"
+	.byte EOS
 	.if (. - gText_Rom_2EA8DA) > 0x5
 	.error "gText_Rom_2EA8DA may not grow beyond its original slot"
 	.endif
@@ -2815,7 +3061,8 @@ gText_Rom_2EA8DA: @ 0x082EA8DA
 	@ src/data/pokemon/species_info/gen_2_families.h:8264 gen_2_families_line_8264
 	.globl gText_Rom_2EA8E0
 gText_Rom_2EA8E0: @ 0x082EA8E0
-	.string "ヨーギラス$"
+	.string "ヨーギラス"
+	.byte EOS
 	.if (. - gText_Rom_2EA8E0) > 0x6
 	.error "gText_Rom_2EA8E0 may not grow beyond its original slot"
 	.endif
@@ -2826,7 +3073,8 @@ gText_Rom_2EA8E0: @ 0x082EA8E0
 	@ src/data/pokemon/species_info/gen_2_families.h:8334 gen_2_families_line_8334
 	.globl gText_Rom_2EA8E6
 gText_Rom_2EA8E6: @ 0x082EA8E6
-	.string "サナギラス$"
+	.string "サナギラス"
+	.byte EOS
 	.if (. - gText_Rom_2EA8E6) > 0x6
 	.error "gText_Rom_2EA8E6 may not grow beyond its original slot"
 	.endif
@@ -2837,7 +3085,8 @@ gText_Rom_2EA8E6: @ 0x082EA8E6
 	@ src/data/pokemon/species_info/gen_2_families.h:8407 gen_2_families_line_8407 (+1 aliases)
 	.globl gText_Rom_2EA8EC
 gText_Rom_2EA8EC: @ 0x082EA8EC
-	.string "バンギラス$"
+	.string "バンギラス"
+	.byte EOS
 	.if (. - gText_Rom_2EA8EC) > 0x6
 	.error "gText_Rom_2EA8EC may not grow beyond its original slot"
 	.endif
@@ -2848,7 +3097,8 @@ gText_Rom_2EA8EC: @ 0x082EA8EC
 	@ src/data/pokemon/species_info/gen_2_families.h:8559 gen_2_families_line_8559
 	.globl gText_Rom_2EA8F2
 gText_Rom_2EA8F2: @ 0x082EA8F2
-	.string "ルギア$"
+	.string "ルギア"
+	.byte EOS
 	.if (. - gText_Rom_2EA8F2) > 0x4
 	.error "gText_Rom_2EA8F2 may not grow beyond its original slot"
 	.endif
@@ -2860,7 +3110,8 @@ gText_Rom_2EA8F2: @ 0x082EA8F2
 	@ src/data/pokemon/species_info/gen_2_families.h:8650 gen_2_families_line_8650
 	.globl gText_Rom_2EA8F8
 gText_Rom_2EA8F8: @ 0x082EA8F8
-	.string "ホウオウ$"
+	.string "ホウオウ"
+	.byte EOS
 	.if (. - gText_Rom_2EA8F8) > 0x5
 	.error "gText_Rom_2EA8F8 may not grow beyond its original slot"
 	.endif
@@ -2872,7 +3123,8 @@ gText_Rom_2EA8F8: @ 0x082EA8F8
 	@ src/data/pokemon/species_info/gen_2_families.h:8730 gen_2_families_line_8730
 	.globl gText_Rom_2EA8FE
 gText_Rom_2EA8FE: @ 0x082EA8FE
-	.string "セレビィ$"
+	.string "セレビィ"
+	.byte EOS
 	.if (. - gText_Rom_2EA8FE) > 0x5
 	.error "gText_Rom_2EA8FE may not grow beyond its original slot"
 	.endif
@@ -2884,7 +3136,8 @@ gText_Rom_2EA8FE: @ 0x082EA8FE
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA908
 gText_Rom_2EA908: @ 0x082EA908
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA908) > 0x4
 	.error "gText_Rom_2EA908 may not grow beyond its original slot"
 	.endif
@@ -2896,7 +3149,8 @@ gText_Rom_2EA908: @ 0x082EA908
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA90E
 gText_Rom_2EA90E: @ 0x082EA90E
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA90E) > 0x4
 	.error "gText_Rom_2EA90E may not grow beyond its original slot"
 	.endif
@@ -2908,7 +3162,8 @@ gText_Rom_2EA90E: @ 0x082EA90E
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA914
 gText_Rom_2EA914: @ 0x082EA914
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA914) > 0x4
 	.error "gText_Rom_2EA914 may not grow beyond its original slot"
 	.endif
@@ -2920,7 +3175,8 @@ gText_Rom_2EA914: @ 0x082EA914
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA91A
 gText_Rom_2EA91A: @ 0x082EA91A
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA91A) > 0x4
 	.error "gText_Rom_2EA91A may not grow beyond its original slot"
 	.endif
@@ -2932,7 +3188,8 @@ gText_Rom_2EA91A: @ 0x082EA91A
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA920
 gText_Rom_2EA920: @ 0x082EA920
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA920) > 0x4
 	.error "gText_Rom_2EA920 may not grow beyond its original slot"
 	.endif
@@ -2944,7 +3201,8 @@ gText_Rom_2EA920: @ 0x082EA920
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA926
 gText_Rom_2EA926: @ 0x082EA926
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA926) > 0x4
 	.error "gText_Rom_2EA926 may not grow beyond its original slot"
 	.endif
@@ -2956,7 +3214,8 @@ gText_Rom_2EA926: @ 0x082EA926
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA92C
 gText_Rom_2EA92C: @ 0x082EA92C
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA92C) > 0x4
 	.error "gText_Rom_2EA92C may not grow beyond its original slot"
 	.endif
@@ -2968,7 +3227,8 @@ gText_Rom_2EA92C: @ 0x082EA92C
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA932
 gText_Rom_2EA932: @ 0x082EA932
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA932) > 0x4
 	.error "gText_Rom_2EA932 may not grow beyond its original slot"
 	.endif
@@ -2980,7 +3240,8 @@ gText_Rom_2EA932: @ 0x082EA932
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA938
 gText_Rom_2EA938: @ 0x082EA938
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA938) > 0x4
 	.error "gText_Rom_2EA938 may not grow beyond its original slot"
 	.endif
@@ -2992,7 +3253,8 @@ gText_Rom_2EA938: @ 0x082EA938
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA93E
 gText_Rom_2EA93E: @ 0x082EA93E
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA93E) > 0x4
 	.error "gText_Rom_2EA93E may not grow beyond its original slot"
 	.endif
@@ -3004,7 +3266,8 @@ gText_Rom_2EA93E: @ 0x082EA93E
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA944
 gText_Rom_2EA944: @ 0x082EA944
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA944) > 0x4
 	.error "gText_Rom_2EA944 may not grow beyond its original slot"
 	.endif
@@ -3016,7 +3279,8 @@ gText_Rom_2EA944: @ 0x082EA944
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA94A
 gText_Rom_2EA94A: @ 0x082EA94A
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA94A) > 0x4
 	.error "gText_Rom_2EA94A may not grow beyond its original slot"
 	.endif
@@ -3028,7 +3292,8 @@ gText_Rom_2EA94A: @ 0x082EA94A
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA950
 gText_Rom_2EA950: @ 0x082EA950
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA950) > 0x4
 	.error "gText_Rom_2EA950 may not grow beyond its original slot"
 	.endif
@@ -3040,7 +3305,8 @@ gText_Rom_2EA950: @ 0x082EA950
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA956
 gText_Rom_2EA956: @ 0x082EA956
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA956) > 0x4
 	.error "gText_Rom_2EA956 may not grow beyond its original slot"
 	.endif
@@ -3052,7 +3318,8 @@ gText_Rom_2EA956: @ 0x082EA956
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA95C
 gText_Rom_2EA95C: @ 0x082EA95C
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA95C) > 0x4
 	.error "gText_Rom_2EA95C may not grow beyond its original slot"
 	.endif
@@ -3064,7 +3331,8 @@ gText_Rom_2EA95C: @ 0x082EA95C
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA962
 gText_Rom_2EA962: @ 0x082EA962
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA962) > 0x4
 	.error "gText_Rom_2EA962 may not grow beyond its original slot"
 	.endif
@@ -3076,7 +3344,8 @@ gText_Rom_2EA962: @ 0x082EA962
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA968
 gText_Rom_2EA968: @ 0x082EA968
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA968) > 0x4
 	.error "gText_Rom_2EA968 may not grow beyond its original slot"
 	.endif
@@ -3088,7 +3357,8 @@ gText_Rom_2EA968: @ 0x082EA968
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA96E
 gText_Rom_2EA96E: @ 0x082EA96E
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA96E) > 0x4
 	.error "gText_Rom_2EA96E may not grow beyond its original slot"
 	.endif
@@ -3100,7 +3370,8 @@ gText_Rom_2EA96E: @ 0x082EA96E
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA974
 gText_Rom_2EA974: @ 0x082EA974
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA974) > 0x4
 	.error "gText_Rom_2EA974 may not grow beyond its original slot"
 	.endif
@@ -3112,7 +3383,8 @@ gText_Rom_2EA974: @ 0x082EA974
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA97A
 gText_Rom_2EA97A: @ 0x082EA97A
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA97A) > 0x4
 	.error "gText_Rom_2EA97A may not grow beyond its original slot"
 	.endif
@@ -3124,7 +3396,8 @@ gText_Rom_2EA97A: @ 0x082EA97A
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA980
 gText_Rom_2EA980: @ 0x082EA980
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA980) > 0x4
 	.error "gText_Rom_2EA980 may not grow beyond its original slot"
 	.endif
@@ -3136,7 +3409,8 @@ gText_Rom_2EA980: @ 0x082EA980
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA986
 gText_Rom_2EA986: @ 0x082EA986
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA986) > 0x4
 	.error "gText_Rom_2EA986 may not grow beyond its original slot"
 	.endif
@@ -3148,7 +3422,8 @@ gText_Rom_2EA986: @ 0x082EA986
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA98C
 gText_Rom_2EA98C: @ 0x082EA98C
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA98C) > 0x4
 	.error "gText_Rom_2EA98C may not grow beyond its original slot"
 	.endif
@@ -3160,7 +3435,8 @@ gText_Rom_2EA98C: @ 0x082EA98C
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA992
 gText_Rom_2EA992: @ 0x082EA992
-	.string "  ？$"
+	.string "  ？"
+	.byte EOS
 	.if (. - gText_Rom_2EA992) > 0x4
 	.error "gText_Rom_2EA992 may not grow beyond its original slot"
 	.endif
@@ -3172,7 +3448,8 @@ gText_Rom_2EA992: @ 0x082EA992
 	@ src/data/pokemon/species_info/gen_3_families.h:26 gen_3_families_line_26
 	.globl gText_Rom_2EA99A
 gText_Rom_2EA99A: @ 0x082EA99A
-	.string "キモリ$"
+	.string "キモリ"
+	.byte EOS
 	.if (. - gText_Rom_2EA99A) > 0x4
 	.error "gText_Rom_2EA99A may not grow beyond its original slot"
 	.endif
@@ -3184,7 +3461,8 @@ gText_Rom_2EA99A: @ 0x082EA99A
 	@ src/data/pokemon/species_info/gen_3_families.h:97 gen_3_families_line_97
 	.globl gText_Rom_2EA9A0
 gText_Rom_2EA9A0: @ 0x082EA9A0
-	.string "ジュプトル$"
+	.string "ジュプトル"
+	.byte EOS
 	.if (. - gText_Rom_2EA9A0) > 0x6
 	.error "gText_Rom_2EA9A0 may not grow beyond its original slot"
 	.endif
@@ -3195,7 +3473,8 @@ gText_Rom_2EA9A0: @ 0x082EA9A0
 	@ src/data/pokemon/species_info/gen_3_families.h:173 gen_3_families_line_173 (+1 aliases)
 	.globl gText_Rom_2EA9A6
 gText_Rom_2EA9A6: @ 0x082EA9A6
-	.string "ジュカイン$"
+	.string "ジュカイン"
+	.byte EOS
 	.if (. - gText_Rom_2EA9A6) > 0x6
 	.error "gText_Rom_2EA9A6 may not grow beyond its original slot"
 	.endif
@@ -3206,7 +3485,8 @@ gText_Rom_2EA9A6: @ 0x082EA9A6
 	@ src/data/pokemon/species_info/gen_3_families.h:318 gen_3_families_line_318
 	.globl gText_Rom_2EA9AC
 gText_Rom_2EA9AC: @ 0x082EA9AC
-	.string "アチャモ$"
+	.string "アチャモ"
+	.byte EOS
 	.if (. - gText_Rom_2EA9AC) > 0x5
 	.error "gText_Rom_2EA9AC may not grow beyond its original slot"
 	.endif
@@ -3218,7 +3498,8 @@ gText_Rom_2EA9AC: @ 0x082EA9AC
 	@ src/data/pokemon/species_info/gen_3_families.h:403 gen_3_families_line_403
 	.globl gText_Rom_2EA9B2
 gText_Rom_2EA9B2: @ 0x082EA9B2
-	.string "ワカシャモ$"
+	.string "ワカシャモ"
+	.byte EOS
 	.if (. - gText_Rom_2EA9B2) > 0x6
 	.error "gText_Rom_2EA9B2 may not grow beyond its original slot"
 	.endif
@@ -3229,7 +3510,8 @@ gText_Rom_2EA9B2: @ 0x082EA9B2
 	@ src/data/pokemon/species_info/gen_3_families.h:490 gen_3_families_line_490 (+1 aliases)
 	.globl gText_Rom_2EA9B8
 gText_Rom_2EA9B8: @ 0x082EA9B8
-	.string "バシャーモ$"
+	.string "バシャーモ"
+	.byte EOS
 	.if (. - gText_Rom_2EA9B8) > 0x6
 	.error "gText_Rom_2EA9B8 may not grow beyond its original slot"
 	.endif
@@ -3241,7 +3523,8 @@ gText_Rom_2EA9B8: @ 0x082EA9B8
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EA9BE
 gText_Rom_2EA9BE: @ 0x082EA9BE
-	.string "ミズゴロウ$"
+	.string "ミズゴロウ"
+	.byte EOS
 	.if (. - gText_Rom_2EA9BE) != 0x6
 	.error "gText_Rom_2EA9BE must retain its original byte length"
 	.endif
@@ -3251,7 +3534,8 @@ gText_Rom_2EA9BE: @ 0x082EA9BE
 	@ src/data/pokemon/species_info/gen_3_families.h:721 gen_3_families_line_721
 	.globl gText_Rom_2EA9C4
 gText_Rom_2EA9C4: @ 0x082EA9C4
-	.string "ヌマクロー$"
+	.string "ヌマクロー"
+	.byte EOS
 	.if (. - gText_Rom_2EA9C4) > 0x6
 	.error "gText_Rom_2EA9C4 may not grow beyond its original slot"
 	.endif
@@ -3262,7 +3546,8 @@ gText_Rom_2EA9C4: @ 0x082EA9C4
 	@ src/data/pokemon/species_info/gen_3_families.h:801 gen_3_families_line_801 (+1 aliases)
 	.globl gText_Rom_2EA9CA
 gText_Rom_2EA9CA: @ 0x082EA9CA
-	.string "ラグラージ$"
+	.string "ラグラージ"
+	.byte EOS
 	.if (. - gText_Rom_2EA9CA) > 0x6
 	.error "gText_Rom_2EA9CA may not grow beyond its original slot"
 	.endif
@@ -3273,7 +3558,8 @@ gText_Rom_2EA9CA: @ 0x082EA9CA
 	@ src/data/pokemon/species_info/gen_3_families.h:958 gen_3_families_line_958 (+3 aliases)
 	.globl gText_Rom_2EA9D0
 gText_Rom_2EA9D0: @ 0x082EA9D0
-	.string "ポチエナ$"
+	.string "ポチエナ"
+	.byte EOS
 	.if (. - gText_Rom_2EA9D0) > 0x5
 	.error "gText_Rom_2EA9D0 may not grow beyond its original slot"
 	.endif
@@ -3285,7 +3571,8 @@ gText_Rom_2EA9D0: @ 0x082EA9D0
 	@ src/data/pokemon/species_info/gen_3_families.h:1031 gen_3_families_line_1031
 	.globl gText_Rom_2EA9D6
 gText_Rom_2EA9D6: @ 0x082EA9D6
-	.string "グラエナ$"
+	.string "グラエナ"
+	.byte EOS
 	.if (. - gText_Rom_2EA9D6) > 0x5
 	.error "gText_Rom_2EA9D6 may not grow beyond its original slot"
 	.endif
@@ -3297,7 +3584,8 @@ gText_Rom_2EA9D6: @ 0x082EA9D6
 	@ src/data/pokemon/species_info/gen_3_families.h:1114 gen_3_families_line_1114 (+3 aliases)
 	.globl gText_Rom_2EA9DC
 gText_Rom_2EA9DC: @ 0x082EA9DC
-	.string "ジグザグマ$"
+	.string "ジグザグマ"
+	.byte EOS
 	.if (. - gText_Rom_2EA9DC) > 0x6
 	.error "gText_Rom_2EA9DC may not grow beyond its original slot"
 	.endif
@@ -3308,7 +3596,8 @@ gText_Rom_2EA9DC: @ 0x082EA9DC
 	@ src/data/pokemon/species_info/gen_3_families.h:1192 gen_3_families_line_1192 (+1 aliases)
 	.globl gText_Rom_2EA9E2
 gText_Rom_2EA9E2: @ 0x082EA9E2
-	.string "マッスグマ$"
+	.string "マッスグマ"
+	.byte EOS
 	.if (. - gText_Rom_2EA9E2) > 0x6
 	.error "gText_Rom_2EA9E2 may not grow beyond its original slot"
 	.endif
@@ -3319,7 +3608,8 @@ gText_Rom_2EA9E2: @ 0x082EA9E2
 	@ src/data/pokemon/species_info/gen_3_families.h:1470 gen_3_families_line_1470
 	.globl gText_Rom_2EA9E8
 gText_Rom_2EA9E8: @ 0x082EA9E8
-	.string "ケムッソ$"
+	.string "ケムッソ"
+	.byte EOS
 	.if (. - gText_Rom_2EA9E8) > 0x5
 	.error "gText_Rom_2EA9E8 may not grow beyond its original slot"
 	.endif
@@ -3331,7 +3621,8 @@ gText_Rom_2EA9E8: @ 0x082EA9E8
 	@ src/data/pokemon/species_info/gen_3_families.h:1541 gen_3_families_line_1541
 	.globl gText_Rom_2EA9EE
 gText_Rom_2EA9EE: @ 0x082EA9EE
-	.string "カラサリス$"
+	.string "カラサリス"
+	.byte EOS
 	.if (. - gText_Rom_2EA9EE) > 0x6
 	.error "gText_Rom_2EA9EE may not grow beyond its original slot"
 	.endif
@@ -3342,7 +3633,8 @@ gText_Rom_2EA9EE: @ 0x082EA9EE
 	@ src/data/pokemon/species_info/gen_3_families.h:1619 gen_3_families_line_1619
 	.globl gText_Rom_2EA9F4
 gText_Rom_2EA9F4: @ 0x082EA9F4
-	.string "アゲハント$"
+	.string "アゲハント"
+	.byte EOS
 	.if (. - gText_Rom_2EA9F4) > 0x6
 	.error "gText_Rom_2EA9F4 may not grow beyond its original slot"
 	.endif
@@ -3353,7 +3645,8 @@ gText_Rom_2EA9F4: @ 0x082EA9F4
 	@ src/data/pokemon/species_info/gen_3_families.h:1713 gen_3_families_line_1713
 	.globl gText_Rom_2EA9FA
 gText_Rom_2EA9FA: @ 0x082EA9FA
-	.string "マユルド$"
+	.string "マユルド"
+	.byte EOS
 	.if (. - gText_Rom_2EA9FA) > 0x5
 	.error "gText_Rom_2EA9FA may not grow beyond its original slot"
 	.endif
@@ -3365,7 +3658,8 @@ gText_Rom_2EA9FA: @ 0x082EA9FA
 	@ src/data/pokemon/species_info/gen_3_families.h:1795 gen_3_families_line_1795 (+1 aliases)
 	.globl gText_Rom_2EAA00
 gText_Rom_2EAA00: @ 0x082EAA00
-	.string "ドクケイル$"
+	.string "ドクケイル"
+	.byte EOS
 	.if (. - gText_Rom_2EAA00) > 0x6
 	.error "gText_Rom_2EAA00 may not grow beyond its original slot"
 	.endif
@@ -3376,7 +3670,8 @@ gText_Rom_2EAA00: @ 0x082EAA00
 	@ src/data/pokemon/species_info/gen_3_families.h:1891 gen_3_families_line_1891 (+1 aliases)
 	.globl gText_Rom_2EAA06
 gText_Rom_2EAA06: @ 0x082EAA06
-	.string "ハスボー$"
+	.string "ハスボー"
+	.byte EOS
 	.if (. - gText_Rom_2EAA06) > 0x5
 	.error "gText_Rom_2EAA06 may not grow beyond its original slot"
 	.endif
@@ -3388,7 +3683,8 @@ gText_Rom_2EAA06: @ 0x082EAA06
 	@ src/data/pokemon/species_info/gen_3_families.h:1962 gen_3_families_line_1962
 	.globl gText_Rom_2EAA0C
 gText_Rom_2EAA0C: @ 0x082EAA0C
-	.string "ハスブレロ$"
+	.string "ハスブレロ"
+	.byte EOS
 	.if (. - gText_Rom_2EAA0C) > 0x6
 	.error "gText_Rom_2EAA0C may not grow beyond its original slot"
 	.endif
@@ -3399,7 +3695,8 @@ gText_Rom_2EAA0C: @ 0x082EAA0C
 	@ src/data/pokemon/species_info/gen_3_families.h:2039 gen_3_families_line_2039
 	.globl gText_Rom_2EAA12
 gText_Rom_2EAA12: @ 0x082EAA12
-	.string "ルンパッパ$"
+	.string "ルンパッパ"
+	.byte EOS
 	.if (. - gText_Rom_2EAA12) > 0x6
 	.error "gText_Rom_2EAA12 may not grow beyond its original slot"
 	.endif
@@ -3410,7 +3707,8 @@ gText_Rom_2EAA12: @ 0x082EAA12
 	@ src/data/pokemon/species_info/gen_3_families.h:2126 gen_3_families_line_2126
 	.globl gText_Rom_2EAA18
 gText_Rom_2EAA18: @ 0x082EAA18
-	.string "タネボー$"
+	.string "タネボー"
+	.byte EOS
 	.if (. - gText_Rom_2EAA18) > 0x5
 	.error "gText_Rom_2EAA18 may not grow beyond its original slot"
 	.endif
@@ -3422,7 +3720,8 @@ gText_Rom_2EAA18: @ 0x082EAA18
 	@ src/data/pokemon/species_info/gen_3_families.h:2202 gen_3_families_line_2202
 	.globl gText_Rom_2EAA1E
 gText_Rom_2EAA1E: @ 0x082EAA1E
-	.string "コノハナ$"
+	.string "コノハナ"
+	.byte EOS
 	.if (. - gText_Rom_2EAA1E) > 0x5
 	.error "gText_Rom_2EAA1E may not grow beyond its original slot"
 	.endif
@@ -3434,7 +3733,8 @@ gText_Rom_2EAA1E: @ 0x082EAA1E
 	@ src/data/pokemon/species_info/gen_3_families.h:2300 gen_3_families_line_2300
 	.globl gText_Rom_2EAA24
 gText_Rom_2EAA24: @ 0x082EAA24
-	.string "ダーテング$"
+	.string "ダーテング"
+	.byte EOS
 	.if (. - gText_Rom_2EAA24) > 0x6
 	.error "gText_Rom_2EAA24 may not grow beyond its original slot"
 	.endif
@@ -3445,7 +3745,8 @@ gText_Rom_2EAA24: @ 0x082EAA24
 	@ src/data/pokemon/species_info/gen_3_families.h:3690 gen_3_families_line_3690 (+1 aliases)
 	.globl gText_Rom_2EAA2A
 gText_Rom_2EAA2A: @ 0x082EAA2A
-	.string "ツチニン$"
+	.string "ツチニン"
+	.byte EOS
 	.if (. - gText_Rom_2EAA2A) > 0x5
 	.error "gText_Rom_2EAA2A may not grow beyond its original slot"
 	.endif
@@ -3457,7 +3758,8 @@ gText_Rom_2EAA2A: @ 0x082EAA2A
 	@ src/data/pokemon/species_info/gen_3_families.h:3766 gen_3_families_line_3766
 	.globl gText_Rom_2EAA30
 gText_Rom_2EAA30: @ 0x082EAA30
-	.string "テッカニン$"
+	.string "テッカニン"
+	.byte EOS
 	.if (. - gText_Rom_2EAA30) > 0x6
 	.error "gText_Rom_2EAA30 may not grow beyond its original slot"
 	.endif
@@ -3468,7 +3770,8 @@ gText_Rom_2EAA30: @ 0x082EAA30
 	@ src/data/pokemon/species_info/gen_3_families.h:3849 gen_3_families_line_3849 (+2 aliases)
 	.globl gText_Rom_2EAA36
 gText_Rom_2EAA36: @ 0x082EAA36
-	.string "ヌケニン$"
+	.string "ヌケニン"
+	.byte EOS
 	.if (. - gText_Rom_2EAA36) > 0x5
 	.error "gText_Rom_2EAA36 may not grow beyond its original slot"
 	.endif
@@ -3480,7 +3783,8 @@ gText_Rom_2EAA36: @ 0x082EAA36
 	@ src/data/pokemon/species_info/gen_3_families.h:2382 gen_3_families_line_2382 (+1 aliases)
 	.globl gText_Rom_2EAA3C
 gText_Rom_2EAA3C: @ 0x082EAA3C
-	.string "スバメ$"
+	.string "スバメ"
+	.byte EOS
 	.if (. - gText_Rom_2EAA3C) > 0x4
 	.error "gText_Rom_2EAA3C may not grow beyond its original slot"
 	.endif
@@ -3493,7 +3797,8 @@ gText_Rom_2EAA3C: @ 0x082EAA3C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EAA42
 gText_Rom_2EAA42: @ 0x082EAA42
-	.string "オオスバメ$"
+	.string "オオスバメ"
+	.byte EOS
 	.if (. - gText_Rom_2EAA42) != 0x6
 	.error "gText_Rom_2EAA42 must retain its original byte length"
 	.endif
@@ -3503,7 +3808,8 @@ gText_Rom_2EAA42: @ 0x082EAA42
 	@ src/data/pokemon/species_info/gen_3_families.h:3312 gen_3_families_line_3312 (+1 aliases)
 	.globl gText_Rom_2EAA48
 gText_Rom_2EAA48: @ 0x082EAA48
-	.string "キノココ$"
+	.string "キノココ"
+	.byte EOS
 	.if (. - gText_Rom_2EAA48) > 0x5
 	.error "gText_Rom_2EAA48 may not grow beyond its original slot"
 	.endif
@@ -3515,7 +3821,8 @@ gText_Rom_2EAA48: @ 0x082EAA48
 	@ src/data/pokemon/species_info/gen_3_families.h:3395 gen_3_families_line_3395
 	.globl gText_Rom_2EAA4E
 gText_Rom_2EAA4E: @ 0x082EAA4E
-	.string "キノガッサ$"
+	.string "キノガッサ"
+	.byte EOS
 	.if (. - gText_Rom_2EAA4E) > 0x6
 	.error "gText_Rom_2EAA4E may not grow beyond its original slot"
 	.endif
@@ -3526,7 +3833,8 @@ gText_Rom_2EAA4E: @ 0x082EAA4E
 	@ src/data/pokemon/species_info/gen_3_families.h:7267 gen_3_families_line_7267
 	.globl gText_Rom_2EAA54
 gText_Rom_2EAA54: @ 0x082EAA54
-	.string "パッチール$"
+	.string "パッチール"
+	.byte EOS
 	.if (. - gText_Rom_2EAA54) > 0x6
 	.error "gText_Rom_2EAA54 may not grow beyond its original slot"
 	.endif
@@ -3537,7 +3845,8 @@ gText_Rom_2EAA54: @ 0x082EAA54
 	@ src/data/pokemon/species_info/gen_3_families.h:2538 gen_3_families_line_2538 (+1 aliases)
 	.globl gText_Rom_2EAA5A
 gText_Rom_2EAA5A: @ 0x082EAA5A
-	.string "キャモメ$"
+	.string "キャモメ"
+	.byte EOS
 	.if (. - gText_Rom_2EAA5A) > 0x5
 	.error "gText_Rom_2EAA5A may not grow beyond its original slot"
 	.endif
@@ -3549,7 +3858,8 @@ gText_Rom_2EAA5A: @ 0x082EAA5A
 	@ src/data/pokemon/species_info/gen_3_families.h:2619 gen_3_families_line_2619
 	.globl gText_Rom_2EAA60
 gText_Rom_2EAA60: @ 0x082EAA60
-	.string "ペリッパー$"
+	.string "ペリッパー"
+	.byte EOS
 	.if (. - gText_Rom_2EAA60) > 0x6
 	.error "gText_Rom_2EAA60 may not grow beyond its original slot"
 	.endif
@@ -3560,7 +3870,8 @@ gText_Rom_2EAA60: @ 0x082EAA60
 	@ src/data/pokemon/species_info/gen_3_families.h:3150 gen_3_families_line_3150
 	.globl gText_Rom_2EAA66
 gText_Rom_2EAA66: @ 0x082EAA66
-	.string "アメタマ$"
+	.string "アメタマ"
+	.byte EOS
 	.if (. - gText_Rom_2EAA66) > 0x5
 	.error "gText_Rom_2EAA66 may not grow beyond its original slot"
 	.endif
@@ -3572,7 +3883,8 @@ gText_Rom_2EAA66: @ 0x082EAA66
 	@ src/data/pokemon/species_info/gen_3_families.h:3229 gen_3_families_line_3229
 	.globl gText_Rom_2EAA6C
 gText_Rom_2EAA6C: @ 0x082EAA6C
-	.string "アメモース$"
+	.string "アメモース"
+	.byte EOS
 	.if (. - gText_Rom_2EAA6C) > 0x6
 	.error "gText_Rom_2EAA6C may not grow beyond its original slot"
 	.endif
@@ -3583,7 +3895,8 @@ gText_Rom_2EAA6C: @ 0x082EAA6C
 	@ src/data/pokemon/species_info/gen_3_families.h:6637 gen_3_families_line_6637
 	.globl gText_Rom_2EAA72
 gText_Rom_2EAA72: @ 0x082EAA72
-	.string "ホエルコ$"
+	.string "ホエルコ"
+	.byte EOS
 	.if (. - gText_Rom_2EAA72) > 0x5
 	.error "gText_Rom_2EAA72 may not grow beyond its original slot"
 	.endif
@@ -3595,7 +3908,8 @@ gText_Rom_2EAA72: @ 0x082EAA72
 	@ src/data/pokemon/species_info/gen_3_families.h:6710 gen_3_families_line_6710
 	.globl gText_Rom_2EAA78
 gText_Rom_2EAA78: @ 0x082EAA78
-	.string "ホエルオー$"
+	.string "ホエルオー"
+	.byte EOS
 	.if (. - gText_Rom_2EAA78) > 0x6
 	.error "gText_Rom_2EAA78 may not grow beyond its original slot"
 	.endif
@@ -3606,7 +3920,8 @@ gText_Rom_2EAA78: @ 0x082EAA78
 	@ src/data/pokemon/species_info/gen_3_families.h:4448 gen_3_families_line_4448
 	.globl gText_Rom_2EAA7E
 gText_Rom_2EAA7E: @ 0x082EAA7E
-	.string "エネコ$"
+	.string "エネコ"
+	.byte EOS
 	.if (. - gText_Rom_2EAA7E) > 0x4
 	.error "gText_Rom_2EAA7E may not grow beyond its original slot"
 	.endif
@@ -3618,7 +3933,8 @@ gText_Rom_2EAA7E: @ 0x082EAA7E
 	@ src/data/pokemon/species_info/gen_3_families.h:4528 gen_3_families_line_4528
 	.globl gText_Rom_2EAA84
 gText_Rom_2EAA84: @ 0x082EAA84
-	.string "エネコロロ$"
+	.string "エネコロロ"
+	.byte EOS
 	.if (. - gText_Rom_2EAA84) > 0x6
 	.error "gText_Rom_2EAA84 may not grow beyond its original slot"
 	.endif
@@ -3629,7 +3945,8 @@ gText_Rom_2EAA84: @ 0x082EAA84
 	@ src/data/pokemon/species_info/gen_3_families.h:9543 gen_3_families_line_9543
 	.globl gText_Rom_2EAA8A
 gText_Rom_2EAA8A: @ 0x082EAA8A
-	.string "カクレオン$"
+	.string "カクレオン"
+	.byte EOS
 	.if (. - gText_Rom_2EAA8A) > 0x6
 	.error "gText_Rom_2EAA8A may not grow beyond its original slot"
 	.endif
@@ -3640,7 +3957,8 @@ gText_Rom_2EAA8A: @ 0x082EAA8A
 	@ src/data/pokemon/species_info/gen_3_families.h:8585 gen_3_families_line_8585
 	.globl gText_Rom_2EAA90
 gText_Rom_2EAA90: @ 0x082EAA90
-	.string "ヤジロン$"
+	.string "ヤジロン"
+	.byte EOS
 	.if (. - gText_Rom_2EAA90) > 0x5
 	.error "gText_Rom_2EAA90 may not grow beyond its original slot"
 	.endif
@@ -3652,7 +3970,8 @@ gText_Rom_2EAA90: @ 0x082EAA90
 	@ src/data/pokemon/species_info/gen_3_families.h:8659 gen_3_families_line_8659
 	.globl gText_Rom_2EAA96
 gText_Rom_2EAA96: @ 0x082EAA96
-	.string "ネンドール$"
+	.string "ネンドール"
+	.byte EOS
 	.if (. - gText_Rom_2EAA96) > 0x6
 	.error "gText_Rom_2EAA96 may not grow beyond its original slot"
 	.endif
@@ -3663,7 +3982,8 @@ gText_Rom_2EAA96: @ 0x082EAA96
 	@ src/data/pokemon/species_info/gen_3_families.h:4292 gen_3_families_line_4292
 	.globl gText_Rom_2EAA9C
 gText_Rom_2EAA9C: @ 0x082EAA9C
-	.string "ノズパス$"
+	.string "ノズパス"
+	.byte EOS
 	.if (. - gText_Rom_2EAA9C) > 0x5
 	.error "gText_Rom_2EAA9C may not grow beyond its original slot"
 	.endif
@@ -3675,7 +3995,8 @@ gText_Rom_2EAA9C: @ 0x082EAA9C
 	@ src/data/pokemon/species_info/gen_3_families.h:7041 gen_3_families_line_7041
 	.globl gText_Rom_2EAAA2
 gText_Rom_2EAAA2: @ 0x082EAAA2
-	.string "コータス$"
+	.string "コータス"
+	.byte EOS
 	.if (. - gText_Rom_2EAAA2) > 0x5
 	.error "gText_Rom_2EAAA2 may not grow beyond its original slot"
 	.endif
@@ -3687,7 +4008,8 @@ gText_Rom_2EAAA2: @ 0x082EAAA2
 	@ src/data/pokemon/species_info/gen_3_families.h:4603 gen_3_families_line_4603 (+1 aliases)
 	.globl gText_Rom_2EAAA8
 gText_Rom_2EAAA8: @ 0x082EAAA8
-	.string "ヤミラミ$"
+	.string "ヤミラミ"
+	.byte EOS
 	.if (. - gText_Rom_2EAAA8) > 0x5
 	.error "gText_Rom_2EAAA8 may not grow beyond its original slot"
 	.endif
@@ -3699,7 +4021,8 @@ gText_Rom_2EAAA8: @ 0x082EAAA8
 	@ src/data/pokemon/species_info/gen_3_families.h:8277 gen_3_families_line_8277
 	.globl gText_Rom_2EAAAE
 gText_Rom_2EAAAE: @ 0x082EAAAE
-	.string "ドジョッチ$"
+	.string "ドジョッチ"
+	.byte EOS
 	.if (. - gText_Rom_2EAAAE) > 0x6
 	.error "gText_Rom_2EAAAE may not grow beyond its original slot"
 	.endif
@@ -3710,7 +4033,8 @@ gText_Rom_2EAAAE: @ 0x082EAAAE
 	@ src/data/pokemon/species_info/gen_3_families.h:8361 gen_3_families_line_8361
 	.globl gText_Rom_2EAAB4
 gText_Rom_2EAAB4: @ 0x082EAAB4
-	.string "ナマズン$"
+	.string "ナマズン"
+	.byte EOS
 	.if (. - gText_Rom_2EAAB4) > 0x5
 	.error "gText_Rom_2EAAB4 may not grow beyond its original slot"
 	.endif
@@ -3722,7 +4046,8 @@ gText_Rom_2EAAB4: @ 0x082EAAB4
 	@ src/data/pokemon/species_info/gen_3_families.h:11534 gen_3_families_line_11534
 	.globl gText_Rom_2EAABA
 gText_Rom_2EAABA: @ 0x082EAABA
-	.string "ラブカス$"
+	.string "ラブカス"
+	.byte EOS
 	.if (. - gText_Rom_2EAABA) > 0x5
 	.error "gText_Rom_2EAABA may not grow beyond its original slot"
 	.endif
@@ -3734,7 +4059,8 @@ gText_Rom_2EAABA: @ 0x082EAABA
 	@ src/data/pokemon/species_info/gen_3_families.h:8440 gen_3_families_line_8440
 	.globl gText_Rom_2EAAC0
 gText_Rom_2EAAC0: @ 0x082EAAC0
-	.string "ヘイガニ$"
+	.string "ヘイガニ"
+	.byte EOS
 	.if (. - gText_Rom_2EAAC0) > 0x5
 	.error "gText_Rom_2EAAC0 may not grow beyond its original slot"
 	.endif
@@ -3746,7 +4072,8 @@ gText_Rom_2EAAC0: @ 0x082EAAC0
 	@ src/data/pokemon/species_info/gen_3_families.h:8513 gen_3_families_line_8513
 	.globl gText_Rom_2EAAC6
 gText_Rom_2EAAC6: @ 0x082EAAC6
-	.string "シザリガー$"
+	.string "シザリガー"
+	.byte EOS
 	.if (. - gText_Rom_2EAAC6) > 0x6
 	.error "gText_Rom_2EAAC6 may not grow beyond its original slot"
 	.endif
@@ -3757,7 +4084,8 @@ gText_Rom_2EAAC6: @ 0x082EAAC6
 	@ src/data/pokemon/species_info/gen_3_families.h:9052 gen_3_families_line_9052
 	.globl gText_Rom_2EAACC
 gText_Rom_2EAACC: @ 0x082EAACC
-	.string "ヒンバス$"
+	.string "ヒンバス"
+	.byte EOS
 	.if (. - gText_Rom_2EAACC) > 0x5
 	.error "gText_Rom_2EAACC may not grow beyond its original slot"
 	.endif
@@ -3770,7 +4098,8 @@ gText_Rom_2EAACC: @ 0x082EAACC
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EAAD2
 gText_Rom_2EAAD2: @ 0x082EAAD2
-	.string "ミロカロス$"
+	.string "ミロカロス"
+	.byte EOS
 	.if (. - gText_Rom_2EAAD2) != 0x6
 	.error "gText_Rom_2EAAD2 must retain its original byte length"
 	.endif
@@ -3780,7 +4109,8 @@ gText_Rom_2EAAD2: @ 0x082EAAD2
 	@ src/data/pokemon/species_info/gen_3_families.h:6408 gen_3_families_line_6408 (+1 aliases)
 	.globl gText_Rom_2EAAD8
 gText_Rom_2EAAD8: @ 0x082EAAD8
-	.string "キバニア$"
+	.string "キバニア"
+	.byte EOS
 	.if (. - gText_Rom_2EAAD8) > 0x5
 	.error "gText_Rom_2EAAD8 may not grow beyond its original slot"
 	.endif
@@ -3792,7 +4122,8 @@ gText_Rom_2EAAD8: @ 0x082EAAD8
 	@ src/data/pokemon/species_info/gen_3_families.h:6484 gen_3_families_line_6484 (+1 aliases)
 	.globl gText_Rom_2EAADE
 gText_Rom_2EAADE: @ 0x082EAADE
-	.string "サメハダー$"
+	.string "サメハダー"
+	.byte EOS
 	.if (. - gText_Rom_2EAADE) > 0x6
 	.error "gText_Rom_2EAADE may not grow beyond its original slot"
 	.endif
@@ -3803,7 +4134,8 @@ gText_Rom_2EAADE: @ 0x082EAADE
 	@ src/data/pokemon/species_info/gen_3_families.h:7350 gen_3_families_line_7350
 	.globl gText_Rom_2EAAE4
 gText_Rom_2EAAE4: @ 0x082EAAE4
-	.string "ナックラー$"
+	.string "ナックラー"
+	.byte EOS
 	.if (. - gText_Rom_2EAAE4) > 0x6
 	.error "gText_Rom_2EAAE4 may not grow beyond its original slot"
 	.endif
@@ -3814,7 +4146,8 @@ gText_Rom_2EAAE4: @ 0x082EAAE4
 	@ src/data/pokemon/species_info/gen_3_families.h:7422 gen_3_families_line_7422
 	.globl gText_Rom_2EAAEA
 gText_Rom_2EAAEA: @ 0x082EAAEA
-	.string "ビブラーバ$"
+	.string "ビブラーバ"
+	.byte EOS
 	.if (. - gText_Rom_2EAAEA) > 0x6
 	.error "gText_Rom_2EAAEA may not grow beyond its original slot"
 	.endif
@@ -3825,7 +4158,8 @@ gText_Rom_2EAAEA: @ 0x082EAAEA
 	@ src/data/pokemon/species_info/gen_3_families.h:7501 gen_3_families_line_7501
 	.globl gText_Rom_2EAAF0
 gText_Rom_2EAAF0: @ 0x082EAAF0
-	.string "フライゴン$"
+	.string "フライゴン"
+	.byte EOS
 	.if (. - gText_Rom_2EAAF0) > 0x6
 	.error "gText_Rom_2EAAF0 may not grow beyond its original slot"
 	.endif
@@ -3836,7 +4170,8 @@ gText_Rom_2EAAF0: @ 0x082EAAF0
 	@ src/data/pokemon/species_info/gen_3_families.h:4145 gen_3_families_line_4145
 	.globl gText_Rom_2EAAF6
 gText_Rom_2EAAF6: @ 0x082EAAF6
-	.string "マクノシタ$"
+	.string "マクノシタ"
+	.byte EOS
 	.if (. - gText_Rom_2EAAF6) > 0x6
 	.error "gText_Rom_2EAAF6 may not grow beyond its original slot"
 	.endif
@@ -3847,7 +4182,8 @@ gText_Rom_2EAAF6: @ 0x082EAAF6
 	@ src/data/pokemon/species_info/gen_3_families.h:4221 gen_3_families_line_4221
 	.globl gText_Rom_2EAAFC
 gText_Rom_2EAAFC: @ 0x082EAAFC
-	.string "ハリテヤマ$"
+	.string "ハリテヤマ"
+	.byte EOS
 	.if (. - gText_Rom_2EAAFC) > 0x6
 	.error "gText_Rom_2EAAFC may not grow beyond its original slot"
 	.endif
@@ -3858,7 +4194,8 @@ gText_Rom_2EAAFC: @ 0x082EAAFC
 	@ src/data/pokemon/species_info/gen_3_families.h:5451 gen_3_families_line_5451
 	.globl gText_Rom_2EAB02
 gText_Rom_2EAB02: @ 0x082EAB02
-	.string "ラクライ$"
+	.string "ラクライ"
+	.byte EOS
 	.if (. - gText_Rom_2EAB02) > 0x5
 	.error "gText_Rom_2EAB02 may not grow beyond its original slot"
 	.endif
@@ -3870,7 +4207,8 @@ gText_Rom_2EAB02: @ 0x082EAB02
 	@ src/data/pokemon/species_info/gen_3_families.h:5522 gen_3_families_line_5522 (+1 aliases)
 	.globl gText_Rom_2EAB08
 gText_Rom_2EAB08: @ 0x082EAB08
-	.string "ライボルト$"
+	.string "ライボルト"
+	.byte EOS
 	.if (. - gText_Rom_2EAB08) > 0x6
 	.error "gText_Rom_2EAB08 may not grow beyond its original slot"
 	.endif
@@ -3881,7 +4219,8 @@ gText_Rom_2EAB08: @ 0x082EAB08
 	@ src/data/pokemon/species_info/gen_3_families.h:6784 gen_3_families_line_6784
 	.globl gText_Rom_2EAB0E
 gText_Rom_2EAB0E: @ 0x082EAB0E
-	.string "ドンメル$"
+	.string "ドンメル"
+	.byte EOS
 	.if (. - gText_Rom_2EAB0E) > 0x5
 	.error "gText_Rom_2EAB0E may not grow beyond its original slot"
 	.endif
@@ -3893,7 +4232,8 @@ gText_Rom_2EAB0E: @ 0x082EAB0E
 	@ src/data/pokemon/species_info/gen_3_families.h:6873 gen_3_families_line_6873 (+1 aliases)
 	.globl gText_Rom_2EAB14
 gText_Rom_2EAB14: @ 0x082EAB14
-	.string "バクーダ$"
+	.string "バクーダ"
+	.byte EOS
 	.if (. - gText_Rom_2EAB14) > 0x5
 	.error "gText_Rom_2EAB14 may not grow beyond its original slot"
 	.endif
@@ -3905,7 +4245,8 @@ gText_Rom_2EAB14: @ 0x082EAB14
 	@ src/data/pokemon/species_info/gen_3_families.h:10997 gen_3_families_line_10997
 	.globl gText_Rom_2EAB1A
 gText_Rom_2EAB1A: @ 0x082EAB1A
-	.string "タマザラシ$"
+	.string "タマザラシ"
+	.byte EOS
 	.if (. - gText_Rom_2EAB1A) > 0x6
 	.error "gText_Rom_2EAB1A may not grow beyond its original slot"
 	.endif
@@ -3916,7 +4257,8 @@ gText_Rom_2EAB1A: @ 0x082EAB1A
 	@ src/data/pokemon/species_info/gen_3_families.h:11076 gen_3_families_line_11076
 	.globl gText_Rom_2EAB20
 gText_Rom_2EAB20: @ 0x082EAB20
-	.string "トドグラー$"
+	.string "トドグラー"
+	.byte EOS
 	.if (. - gText_Rom_2EAB20) > 0x6
 	.error "gText_Rom_2EAB20 may not grow beyond its original slot"
 	.endif
@@ -3927,7 +4269,8 @@ gText_Rom_2EAB20: @ 0x082EAB20
 	@ src/data/pokemon/species_info/gen_3_families.h:11156 gen_3_families_line_11156
 	.globl gText_Rom_2EAB26
 gText_Rom_2EAB26: @ 0x082EAB26
-	.string "トドゼルガ$"
+	.string "トドゼルガ"
+	.byte EOS
 	.if (. - gText_Rom_2EAB26) > 0x6
 	.error "gText_Rom_2EAB26 may not grow beyond its original slot"
 	.endif
@@ -3938,7 +4281,8 @@ gText_Rom_2EAB26: @ 0x082EAB26
 	@ src/data/pokemon/species_info/gen_3_families.h:7576 gen_3_families_line_7576
 	.globl gText_Rom_2EAB2C
 gText_Rom_2EAB2C: @ 0x082EAB2C
-	.string "サボネア$"
+	.string "サボネア"
+	.byte EOS
 	.if (. - gText_Rom_2EAB2C) > 0x5
 	.error "gText_Rom_2EAB2C may not grow beyond its original slot"
 	.endif
@@ -3950,7 +4294,8 @@ gText_Rom_2EAB2C: @ 0x082EAB2C
 	@ src/data/pokemon/species_info/gen_3_families.h:7655 gen_3_families_line_7655
 	.globl gText_Rom_2EAB32
 gText_Rom_2EAB32: @ 0x082EAB32
-	.string "ノクタス$"
+	.string "ノクタス"
+	.byte EOS
 	.if (. - gText_Rom_2EAB32) > 0x5
 	.error "gText_Rom_2EAB32 may not grow beyond its original slot"
 	.endif
@@ -3962,7 +4307,8 @@ gText_Rom_2EAB32: @ 0x082EAB32
 	@ src/data/pokemon/species_info/gen_3_families.h:10633 gen_3_families_line_10633
 	.globl gText_Rom_2EAB38
 gText_Rom_2EAB38: @ 0x082EAB38
-	.string "ユキワラシ$"
+	.string "ユキワラシ"
+	.byte EOS
 	.if (. - gText_Rom_2EAB38) > 0x6
 	.error "gText_Rom_2EAB38 may not grow beyond its original slot"
 	.endif
@@ -3973,7 +4319,8 @@ gText_Rom_2EAB38: @ 0x082EAB38
 	@ src/data/pokemon/species_info/gen_3_families.h:10713 gen_3_families_line_10713 (+1 aliases)
 	.globl gText_Rom_2EAB3E
 gText_Rom_2EAB3E: @ 0x082EAB3E
-	.string "オニゴーリ$"
+	.string "オニゴーリ"
+	.byte EOS
 	.if (. - gText_Rom_2EAB3E) > 0x6
 	.error "gText_Rom_2EAB3E may not grow beyond its original slot"
 	.endif
@@ -3984,7 +4331,8 @@ gText_Rom_2EAB3E: @ 0x082EAB3E
 	@ src/data/pokemon/species_info/gen_3_families.h:8121 gen_3_families_line_8121
 	.globl gText_Rom_2EAB44
 gText_Rom_2EAB44: @ 0x082EAB44
-	.string "ルナトーン$"
+	.string "ルナトーン"
+	.byte EOS
 	.if (. - gText_Rom_2EAB44) > 0x6
 	.error "gText_Rom_2EAB44 may not grow beyond its original slot"
 	.endif
@@ -3995,7 +4343,8 @@ gText_Rom_2EAB44: @ 0x082EAB44
 	@ src/data/pokemon/species_info/gen_3_families.h:8201 gen_3_families_line_8201
 	.globl gText_Rom_2EAB4A
 gText_Rom_2EAB4A: @ 0x082EAB4A
-	.string "ソルロック$"
+	.string "ソルロック"
+	.byte EOS
 	.if (. - gText_Rom_2EAB4A) > 0x6
 	.error "gText_Rom_2EAB4A may not grow beyond its original slot"
 	.endif
@@ -4006,7 +4355,8 @@ gText_Rom_2EAB4A: @ 0x082EAB4A
 	@ src/data/pokemon/species_info/gen_2_families.h:2319 gen_2_families_line_2319 (+1 aliases)
 	.globl gText_Rom_2EAB50
 gText_Rom_2EAB50: @ 0x082EAB50
-	.string "ルリリ$"
+	.string "ルリリ"
+	.byte EOS
 	.if (. - gText_Rom_2EAB50) > 0x4
 	.error "gText_Rom_2EAB50 may not grow beyond its original slot"
 	.endif
@@ -4018,7 +4368,8 @@ gText_Rom_2EAB50: @ 0x082EAB50
 	@ src/data/pokemon/species_info/gen_3_families.h:7113 gen_3_families_line_7113
 	.globl gText_Rom_2EAB56
 gText_Rom_2EAB56: @ 0x082EAB56
-	.string "バネブー$"
+	.string "バネブー"
+	.byte EOS
 	.if (. - gText_Rom_2EAB56) > 0x5
 	.error "gText_Rom_2EAB56 may not grow beyond its original slot"
 	.endif
@@ -4030,7 +4381,8 @@ gText_Rom_2EAB56: @ 0x082EAB56
 	@ src/data/pokemon/species_info/gen_3_families.h:7190 gen_3_families_line_7190
 	.globl gText_Rom_2EAB5C
 gText_Rom_2EAB5C: @ 0x082EAB5C
-	.string "ブーピッグ$"
+	.string "ブーピッグ"
+	.byte EOS
 	.if (. - gText_Rom_2EAB5C) > 0x6
 	.error "gText_Rom_2EAB5C may not grow beyond its original slot"
 	.endif
@@ -4041,7 +4393,8 @@ gText_Rom_2EAB5C: @ 0x082EAB5C
 	@ src/data/pokemon/species_info/gen_3_families.h:5673 gen_3_families_line_5673
 	.globl gText_Rom_2EAB62
 gText_Rom_2EAB62: @ 0x082EAB62
-	.string "プラスル$"
+	.string "プラスル"
+	.byte EOS
 	.if (. - gText_Rom_2EAB62) > 0x5
 	.error "gText_Rom_2EAB62 may not grow beyond its original slot"
 	.endif
@@ -4053,7 +4406,8 @@ gText_Rom_2EAB62: @ 0x082EAB62
 	@ src/data/pokemon/species_info/gen_3_families.h:5750 gen_3_families_line_5750
 	.globl gText_Rom_2EAB68
 gText_Rom_2EAB68: @ 0x082EAB68
-	.string "マイナン$"
+	.string "マイナン"
+	.byte EOS
 	.if (. - gText_Rom_2EAB68) > 0x5
 	.error "gText_Rom_2EAB68 may not grow beyond its original slot"
 	.endif
@@ -4065,7 +4419,8 @@ gText_Rom_2EAB68: @ 0x082EAB68
 	@ src/data/pokemon/species_info/gen_3_families.h:4759 gen_3_families_line_4759 (+1 aliases)
 	.globl gText_Rom_2EAB6E
 gText_Rom_2EAB6E: @ 0x082EAB6E
-	.string "クチート$"
+	.string "クチート"
+	.byte EOS
 	.if (. - gText_Rom_2EAB6E) > 0x5
 	.error "gText_Rom_2EAB6E may not grow beyond its original slot"
 	.endif
@@ -4077,7 +4432,8 @@ gText_Rom_2EAB6E: @ 0x082EAB6E
 	@ src/data/pokemon/species_info/gen_3_families.h:5207 gen_3_families_line_5207
 	.globl gText_Rom_2EAB74
 gText_Rom_2EAB74: @ 0x082EAB74
-	.string "アサナン$"
+	.string "アサナン"
+	.byte EOS
 	.if (. - gText_Rom_2EAB74) > 0x5
 	.error "gText_Rom_2EAB74 may not grow beyond its original slot"
 	.endif
@@ -4089,7 +4445,8 @@ gText_Rom_2EAB74: @ 0x082EAB74
 	@ src/data/pokemon/species_info/gen_3_families.h:5289 gen_3_families_line_5289 (+1 aliases)
 	.globl gText_Rom_2EAB7A
 gText_Rom_2EAB7A: @ 0x082EAB7A
-	.string "チャーレム$"
+	.string "チャーレム"
+	.byte EOS
 	.if (. - gText_Rom_2EAB7A) > 0x6
 	.error "gText_Rom_2EAB7A may not grow beyond its original slot"
 	.endif
@@ -4100,7 +4457,8 @@ gText_Rom_2EAB7A: @ 0x082EAB7A
 	@ src/data/pokemon/species_info/gen_3_families.h:7737 gen_3_families_line_7737
 	.globl gText_Rom_2EAB80
 gText_Rom_2EAB80: @ 0x082EAB80
-	.string "チルット$"
+	.string "チルット"
+	.byte EOS
 	.if (. - gText_Rom_2EAB80) > 0x5
 	.error "gText_Rom_2EAB80 may not grow beyond its original slot"
 	.endif
@@ -4112,7 +4470,8 @@ gText_Rom_2EAB80: @ 0x082EAB80
 	@ src/data/pokemon/species_info/gen_3_families.h:7811 gen_3_families_line_7811 (+1 aliases)
 	.globl gText_Rom_2EAB86
 gText_Rom_2EAB86: @ 0x082EAB86
-	.string "チルタリス$"
+	.string "チルタリス"
+	.byte EOS
 	.if (. - gText_Rom_2EAB86) > 0x6
 	.error "gText_Rom_2EAB86 may not grow beyond its original slot"
 	.endif
@@ -4123,7 +4482,8 @@ gText_Rom_2EAB86: @ 0x082EAB86
 	@ src/data/pokemon/species_info/gen_2_families.h:4164 gen_2_families_line_4164
 	.globl gText_Rom_2EAB8C
 gText_Rom_2EAB8C: @ 0x082EAB8C
-	.string "ソーナノ$"
+	.string "ソーナノ"
+	.byte EOS
 	.if (. - gText_Rom_2EAB8C) > 0x5
 	.error "gText_Rom_2EAB8C may not grow beyond its original slot"
 	.endif
@@ -4135,7 +4495,8 @@ gText_Rom_2EAB8C: @ 0x082EAB8C
 	@ src/data/pokemon/species_info/gen_3_families.h:9859 gen_3_families_line_9859
 	.globl gText_Rom_2EAB92
 gText_Rom_2EAB92: @ 0x082EAB92
-	.string "ヨマワル$"
+	.string "ヨマワル"
+	.byte EOS
 	.if (. - gText_Rom_2EAB92) > 0x5
 	.error "gText_Rom_2EAB92 may not grow beyond its original slot"
 	.endif
@@ -4147,7 +4508,8 @@ gText_Rom_2EAB92: @ 0x082EAB92
 	@ src/data/pokemon/species_info/gen_3_families.h:9937 gen_3_families_line_9937
 	.globl gText_Rom_2EAB98
 gText_Rom_2EAB98: @ 0x082EAB98
-	.string "サマヨール$"
+	.string "サマヨール"
+	.byte EOS
 	.if (. - gText_Rom_2EAB98) > 0x6
 	.error "gText_Rom_2EAB98 may not grow beyond its original slot"
 	.endif
@@ -4158,7 +4520,8 @@ gText_Rom_2EAB98: @ 0x082EAB98
 	@ src/data/pokemon/species_info/gen_3_families.h:6059 gen_3_families_line_6059
 	.globl gText_Rom_2EAB9E
 gText_Rom_2EAB9E: @ 0x082EAB9E
-	.string "ロゼリア$"
+	.string "ロゼリア"
+	.byte EOS
 	.if (. - gText_Rom_2EAB9E) > 0x5
 	.error "gText_Rom_2EAB9E may not grow beyond its original slot"
 	.endif
@@ -4170,7 +4533,8 @@ gText_Rom_2EAB9E: @ 0x082EAB9E
 	@ src/data/pokemon/species_info/gen_3_families.h:3466 gen_3_families_line_3466 (+1 aliases)
 	.globl gText_Rom_2EABA4
 gText_Rom_2EABA4: @ 0x082EABA4
-	.string "ナマケロ$"
+	.string "ナマケロ"
+	.byte EOS
 	.if (. - gText_Rom_2EABA4) > 0x5
 	.error "gText_Rom_2EABA4 may not grow beyond its original slot"
 	.endif
@@ -4182,7 +4546,8 @@ gText_Rom_2EABA4: @ 0x082EABA4
 	@ src/data/pokemon/species_info/gen_3_families.h:3538 gen_3_families_line_3538
 	.globl gText_Rom_2EABAA
 gText_Rom_2EABAA: @ 0x082EABAA
-	.string "ヤルキモノ$"
+	.string "ヤルキモノ"
+	.byte EOS
 	.if (. - gText_Rom_2EABAA) > 0x6
 	.error "gText_Rom_2EABAA may not grow beyond its original slot"
 	.endif
@@ -4193,7 +4558,8 @@ gText_Rom_2EABAA: @ 0x082EABAA
 	@ src/data/pokemon/species_info/gen_3_families.h:3616 gen_3_families_line_3616
 	.globl gText_Rom_2EABB0
 gText_Rom_2EABB0: @ 0x082EABB0
-	.string "ケッキング$"
+	.string "ケッキング"
+	.byte EOS
 	.if (. - gText_Rom_2EABB0) > 0x6
 	.error "gText_Rom_2EABB0 may not grow beyond its original slot"
 	.endif
@@ -4204,7 +4570,8 @@ gText_Rom_2EABB0: @ 0x082EABB0
 	@ src/data/pokemon/species_info/gen_3_families.h:6238 gen_3_families_line_6238
 	.globl gText_Rom_2EABB6
 gText_Rom_2EABB6: @ 0x082EABB6
-	.string "ゴクリン$"
+	.string "ゴクリン"
+	.byte EOS
 	.if (. - gText_Rom_2EABB6) > 0x5
 	.error "gText_Rom_2EABB6 may not grow beyond its original slot"
 	.endif
@@ -4216,7 +4583,8 @@ gText_Rom_2EABB6: @ 0x082EABB6
 	@ src/data/pokemon/species_info/gen_3_families.h:6324 gen_3_families_line_6324
 	.globl gText_Rom_2EABBC
 gText_Rom_2EABBC: @ 0x082EABBC
-	.string "マルノーム$"
+	.string "マルノーム"
+	.byte EOS
 	.if (. - gText_Rom_2EABBC) > 0x6
 	.error "gText_Rom_2EABBC may not grow beyond its original slot"
 	.endif
@@ -4227,7 +4595,8 @@ gText_Rom_2EABBC: @ 0x082EABBC
 	@ src/data/pokemon/species_info/gen_3_families.h:10106 gen_3_families_line_10106
 	.globl gText_Rom_2EABC2
 gText_Rom_2EABC2: @ 0x082EABC2
-	.string "トロピウス$"
+	.string "トロピウス"
+	.byte EOS
 	.if (. - gText_Rom_2EABC2) > 0x6
 	.error "gText_Rom_2EABC2 may not grow beyond its original slot"
 	.endif
@@ -4238,7 +4607,8 @@ gText_Rom_2EABC2: @ 0x082EABC2
 	@ src/data/pokemon/species_info/gen_3_families.h:3921 gen_3_families_line_3921
 	.globl gText_Rom_2EABC8
 gText_Rom_2EABC8: @ 0x082EABC8
-	.string "ゴニョニョ$"
+	.string "ゴニョニョ"
+	.byte EOS
 	.if (. - gText_Rom_2EABC8) > 0x6
 	.error "gText_Rom_2EABC8 may not grow beyond its original slot"
 	.endif
@@ -4249,7 +4619,8 @@ gText_Rom_2EABC8: @ 0x082EABC8
 	@ src/data/pokemon/species_info/gen_3_families.h:3997 gen_3_families_line_3997
 	.globl gText_Rom_2EABCE
 gText_Rom_2EABCE: @ 0x082EABCE
-	.string "ドゴーム$"
+	.string "ドゴーム"
+	.byte EOS
 	.if (. - gText_Rom_2EABCE) > 0x5
 	.error "gText_Rom_2EABCE may not grow beyond its original slot"
 	.endif
@@ -4261,7 +4632,8 @@ gText_Rom_2EABCE: @ 0x082EABCE
 	@ src/data/pokemon/species_info/gen_3_families.h:4075 gen_3_families_line_4075
 	.globl gText_Rom_2EABD4
 gText_Rom_2EABD4: @ 0x082EABD4
-	.string "バクオング$"
+	.string "バクオング"
+	.byte EOS
 	.if (. - gText_Rom_2EABD4) > 0x6
 	.error "gText_Rom_2EABD4 may not grow beyond its original slot"
 	.endif
@@ -4272,7 +4644,8 @@ gText_Rom_2EABD4: @ 0x082EABD4
 	@ src/data/pokemon/species_info/gen_3_families.h:11229 gen_3_families_line_11229
 	.globl gText_Rom_2EABDA
 gText_Rom_2EABDA: @ 0x082EABDA
-	.string "パールル$"
+	.string "パールル"
+	.byte EOS
 	.if (. - gText_Rom_2EABDA) > 0x5
 	.error "gText_Rom_2EABDA may not grow beyond its original slot"
 	.endif
@@ -4284,7 +4657,8 @@ gText_Rom_2EABDA: @ 0x082EABDA
 	@ src/data/pokemon/species_info/gen_3_families.h:11305 gen_3_families_line_11305
 	.globl gText_Rom_2EABE0
 gText_Rom_2EABE0: @ 0x082EABE0
-	.string "ハンテール$"
+	.string "ハンテール"
+	.byte EOS
 	.if (. - gText_Rom_2EABE0) > 0x6
 	.error "gText_Rom_2EABE0 may not grow beyond its original slot"
 	.endif
@@ -4295,7 +4669,8 @@ gText_Rom_2EABE0: @ 0x082EABE0
 	@ src/data/pokemon/species_info/gen_3_families.h:11375 gen_3_families_line_11375
 	.globl gText_Rom_2EABE6
 gText_Rom_2EABE6: @ 0x082EABE6
-	.string "サクラビス$"
+	.string "サクラビス"
+	.byte EOS
 	.if (. - gText_Rom_2EABE6) > 0x6
 	.error "gText_Rom_2EABE6 may not grow beyond its original slot"
 	.endif
@@ -4306,7 +4681,8 @@ gText_Rom_2EABE6: @ 0x082EABE6
 	@ src/data/pokemon/species_info/gen_3_families.h:10416 gen_3_families_line_10416 (+2 aliases)
 	.globl gText_Rom_2EABEC
 gText_Rom_2EABEC: @ 0x082EABEC
-	.string "アブソル$"
+	.string "アブソル"
+	.byte EOS
 	.if (. - gText_Rom_2EABEC) > 0x5
 	.error "gText_Rom_2EABEC may not grow beyond its original slot"
 	.endif
@@ -4318,7 +4694,8 @@ gText_Rom_2EABEC: @ 0x082EABEC
 	@ src/data/pokemon/species_info/gen_3_families.h:9621 gen_3_families_line_9621
 	.globl gText_Rom_2EABF2
 gText_Rom_2EABF2: @ 0x082EABF2
-	.string "カゲボウズ$"
+	.string "カゲボウズ"
+	.byte EOS
 	.if (. - gText_Rom_2EABF2) > 0x6
 	.error "gText_Rom_2EABF2 may not grow beyond its original slot"
 	.endif
@@ -4329,7 +4706,8 @@ gText_Rom_2EABF2: @ 0x082EABF2
 	@ src/data/pokemon/species_info/gen_3_families.h:9701 gen_3_families_line_9701 (+1 aliases)
 	.globl gText_Rom_2EABF8
 gText_Rom_2EABF8: @ 0x082EABF8
-	.string "ジュペッタ$"
+	.string "ジュペッタ"
+	.byte EOS
 	.if (. - gText_Rom_2EABF8) > 0x6
 	.error "gText_Rom_2EABF8 may not grow beyond its original slot"
 	.endif
@@ -4340,7 +4718,8 @@ gText_Rom_2EABF8: @ 0x082EABF8
 	@ src/data/pokemon/species_info/gen_3_families.h:8039 gen_3_families_line_8039
 	.globl gText_Rom_2EABFE
 gText_Rom_2EABFE: @ 0x082EABFE
-	.string "ハブネーク$"
+	.string "ハブネーク"
+	.byte EOS
 	.if (. - gText_Rom_2EABFE) > 0x6
 	.error "gText_Rom_2EABFE may not grow beyond its original slot"
 	.endif
@@ -4351,7 +4730,8 @@ gText_Rom_2EABFE: @ 0x082EABFE
 	@ src/data/pokemon/species_info/gen_3_families.h:7962 gen_3_families_line_7962
 	.globl gText_Rom_2EAC04
 gText_Rom_2EAC04: @ 0x082EAC04
-	.string "ザングース$"
+	.string "ザングース"
+	.byte EOS
 	.if (. - gText_Rom_2EAC04) > 0x6
 	.error "gText_Rom_2EAC04 may not grow beyond its original slot"
 	.endif
@@ -4362,7 +4742,8 @@ gText_Rom_2EAC04: @ 0x082EAC04
 	@ src/data/pokemon/species_info/gen_3_families.h:11448 gen_3_families_line_11448
 	.globl gText_Rom_2EAC0A
 gText_Rom_2EAC0A: @ 0x082EAC0A
-	.string "ジーランス$"
+	.string "ジーランス"
+	.byte EOS
 	.if (. - gText_Rom_2EAC0A) > 0x6
 	.error "gText_Rom_2EAC0A may not grow beyond its original slot"
 	.endif
@@ -4374,7 +4755,8 @@ gText_Rom_2EAC0A: @ 0x082EAC0A
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EAC10
 gText_Rom_2EAC10: @ 0x082EAC10
-	.string "ココドラ$"
+	.string "ココドラ"
+	.byte EOS
 	.if (. - gText_Rom_2EAC10) != 0x5
 	.error "gText_Rom_2EAC10 must retain its original byte length"
 	.endif
@@ -4385,7 +4767,8 @@ gText_Rom_2EAC10: @ 0x082EAC10
 	@ src/data/pokemon/species_info/gen_3_families.h:4984 gen_3_families_line_4984
 	.globl gText_Rom_2EAC16
 gText_Rom_2EAC16: @ 0x082EAC16
-	.string "コドラ$"
+	.string "コドラ"
+	.byte EOS
 	.if (. - gText_Rom_2EAC16) > 0x4
 	.error "gText_Rom_2EAC16 may not grow beyond its original slot"
 	.endif
@@ -4397,7 +4780,8 @@ gText_Rom_2EAC16: @ 0x082EAC16
 	@ src/data/pokemon/species_info/gen_3_families.h:5061 gen_3_families_line_5061 (+1 aliases)
 	.globl gText_Rom_2EAC1C
 gText_Rom_2EAC1C: @ 0x082EAC1C
-	.string "ボスゴドラ$"
+	.string "ボスゴドラ"
+	.byte EOS
 	.if (. - gText_Rom_2EAC1C) > 0x6
 	.error "gText_Rom_2EAC1C may not grow beyond its original slot"
 	.endif
@@ -4408,7 +4792,8 @@ gText_Rom_2EAC1C: @ 0x082EAC1C
 	@ src/data/pokemon/species_info/gen_3_families.h:9220 gen_3_families_line_9220 (+3 aliases)
 	.globl gText_Rom_2EAC22
 gText_Rom_2EAC22: @ 0x082EAC22
-	.string "ポワルン$"
+	.string "ポワルン"
+	.byte EOS
 	.if (. - gText_Rom_2EAC22) > 0x5
 	.error "gText_Rom_2EAC22 may not grow beyond its original slot"
 	.endif
@@ -4420,7 +4805,8 @@ gText_Rom_2EAC22: @ 0x082EAC22
 	@ src/data/pokemon/species_info/gen_3_families.h:5829 gen_3_families_line_5829
 	.globl gText_Rom_2EAC28
 gText_Rom_2EAC28: @ 0x082EAC28
-	.string "バルビート$"
+	.string "バルビート"
+	.byte EOS
 	.if (. - gText_Rom_2EAC28) > 0x6
 	.error "gText_Rom_2EAC28 may not grow beyond its original slot"
 	.endif
@@ -4431,7 +4817,8 @@ gText_Rom_2EAC28: @ 0x082EAC28
 	@ src/data/pokemon/species_info/gen_3_families.h:5912 gen_3_families_line_5912
 	.globl gText_Rom_2EAC2E
 gText_Rom_2EAC2E: @ 0x082EAC2E
-	.string "イルミーゼ$"
+	.string "イルミーゼ"
+	.byte EOS
 	.if (. - gText_Rom_2EAC2E) > 0x6
 	.error "gText_Rom_2EAC2E may not grow beyond its original slot"
 	.endif
@@ -4442,7 +4829,8 @@ gText_Rom_2EAC2E: @ 0x082EAC2E
 	@ src/data/pokemon/species_info/gen_3_families.h:8740 gen_3_families_line_8740
 	.globl gText_Rom_2EAC34
 gText_Rom_2EAC34: @ 0x082EAC34
-	.string "リリーラ$"
+	.string "リリーラ"
+	.byte EOS
 	.if (. - gText_Rom_2EAC34) > 0x5
 	.error "gText_Rom_2EAC34 may not grow beyond its original slot"
 	.endif
@@ -4454,7 +4842,8 @@ gText_Rom_2EAC34: @ 0x082EAC34
 	@ src/data/pokemon/species_info/gen_3_families.h:8818 gen_3_families_line_8818
 	.globl gText_Rom_2EAC3A
 gText_Rom_2EAC3A: @ 0x082EAC3A
-	.string "ユレイドル$"
+	.string "ユレイドル"
+	.byte EOS
 	.if (. - gText_Rom_2EAC3A) > 0x6
 	.error "gText_Rom_2EAC3A may not grow beyond its original slot"
 	.endif
@@ -4465,7 +4854,8 @@ gText_Rom_2EAC3A: @ 0x082EAC3A
 	@ src/data/pokemon/species_info/gen_3_families.h:8897 gen_3_families_line_8897
 	.globl gText_Rom_2EAC40
 gText_Rom_2EAC40: @ 0x082EAC40
-	.string "アノプス$"
+	.string "アノプス"
+	.byte EOS
 	.if (. - gText_Rom_2EAC40) > 0x5
 	.error "gText_Rom_2EAC40 may not grow beyond its original slot"
 	.endif
@@ -4477,7 +4867,8 @@ gText_Rom_2EAC40: @ 0x082EAC40
 	@ src/data/pokemon/species_info/gen_3_families.h:8976 gen_3_families_line_8976
 	.globl gText_Rom_2EAC46
 gText_Rom_2EAC46: @ 0x082EAC46
-	.string "アーマルド$"
+	.string "アーマルド"
+	.byte EOS
 	.if (. - gText_Rom_2EAC46) > 0x6
 	.error "gText_Rom_2EAC46 may not grow beyond its original slot"
 	.endif
@@ -4488,7 +4879,8 @@ gText_Rom_2EAC46: @ 0x082EAC46
 	@ src/data/pokemon/species_info/gen_3_families.h:2703 gen_3_families_line_2703 (+1 aliases)
 	.globl gText_Rom_2EAC4C
 gText_Rom_2EAC4C: @ 0x082EAC4C
-	.string "ラルトス$"
+	.string "ラルトス"
+	.byte EOS
 	.if (. - gText_Rom_2EAC4C) > 0x5
 	.error "gText_Rom_2EAC4C may not grow beyond its original slot"
 	.endif
@@ -4500,7 +4892,8 @@ gText_Rom_2EAC4C: @ 0x082EAC4C
 	@ src/data/pokemon/species_info/gen_3_families.h:2772 gen_3_families_line_2772
 	.globl gText_Rom_2EAC52
 gText_Rom_2EAC52: @ 0x082EAC52
-	.string "キルリア$"
+	.string "キルリア"
+	.byte EOS
 	.if (. - gText_Rom_2EAC52) > 0x5
 	.error "gText_Rom_2EAC52 may not grow beyond its original slot"
 	.endif
@@ -4512,7 +4905,8 @@ gText_Rom_2EAC52: @ 0x082EAC52
 	@ src/data/pokemon/species_info/gen_3_families.h:2850 gen_3_families_line_2850 (+1 aliases)
 	.globl gText_Rom_2EAC58
 gText_Rom_2EAC58: @ 0x082EAC58
-	.string "サーナイト$"
+	.string "サーナイト"
+	.byte EOS
 	.if (. - gText_Rom_2EAC58) > 0x6
 	.error "gText_Rom_2EAC58 may not grow beyond its original slot"
 	.endif
@@ -4523,7 +4917,8 @@ gText_Rom_2EAC58: @ 0x082EAC58
 	@ src/data/pokemon/species_info/gen_3_families.h:11607 gen_3_families_line_11607
 	.globl gText_Rom_2EAC5E
 gText_Rom_2EAC5E: @ 0x082EAC5E
-	.string "タツベイ$"
+	.string "タツベイ"
+	.byte EOS
 	.if (. - gText_Rom_2EAC5E) > 0x5
 	.error "gText_Rom_2EAC5E may not grow beyond its original slot"
 	.endif
@@ -4535,7 +4930,8 @@ gText_Rom_2EAC5E: @ 0x082EAC5E
 	@ src/data/pokemon/species_info/gen_3_families.h:11679 gen_3_families_line_11679
 	.globl gText_Rom_2EAC64
 gText_Rom_2EAC64: @ 0x082EAC64
-	.string "コモルー$"
+	.string "コモルー"
+	.byte EOS
 	.if (. - gText_Rom_2EAC64) > 0x5
 	.error "gText_Rom_2EAC64 may not grow beyond its original slot"
 	.endif
@@ -4547,7 +4943,8 @@ gText_Rom_2EAC64: @ 0x082EAC64
 	@ src/data/pokemon/species_info/gen_3_families.h:11756 gen_3_families_line_11756 (+1 aliases)
 	.globl gText_Rom_2EAC6A
 gText_Rom_2EAC6A: @ 0x082EAC6A
-	.string "ボーマンダ$"
+	.string "ボーマンダ"
+	.byte EOS
 	.if (. - gText_Rom_2EAC6A) > 0x6
 	.error "gText_Rom_2EAC6A may not grow beyond its original slot"
 	.endif
@@ -4558,7 +4955,8 @@ gText_Rom_2EAC6A: @ 0x082EAC6A
 	@ src/data/pokemon/species_info/gen_3_families.h:11907 gen_3_families_line_11907
 	.globl gText_Rom_2EAC70
 gText_Rom_2EAC70: @ 0x082EAC70
-	.string "ダンバル$"
+	.string "ダンバル"
+	.byte EOS
 	.if (. - gText_Rom_2EAC70) > 0x5
 	.error "gText_Rom_2EAC70 may not grow beyond its original slot"
 	.endif
@@ -4570,7 +4968,8 @@ gText_Rom_2EAC70: @ 0x082EAC70
 	@ src/data/pokemon/species_info/gen_3_families.h:11980 gen_3_families_line_11980
 	.globl gText_Rom_2EAC76
 gText_Rom_2EAC76: @ 0x082EAC76
-	.string "メタング$"
+	.string "メタング"
+	.byte EOS
 	.if (. - gText_Rom_2EAC76) > 0x5
 	.error "gText_Rom_2EAC76 may not grow beyond its original slot"
 	.endif
@@ -4582,7 +4981,8 @@ gText_Rom_2EAC76: @ 0x082EAC76
 	@ src/data/pokemon/species_info/gen_3_families.h:12057 gen_3_families_line_12057 (+1 aliases)
 	.globl gText_Rom_2EAC7C
 gText_Rom_2EAC7C: @ 0x082EAC7C
-	.string "メタグロス$"
+	.string "メタグロス"
+	.byte EOS
 	.if (. - gText_Rom_2EAC7C) > 0x6
 	.error "gText_Rom_2EAC7C may not grow beyond its original slot"
 	.endif
@@ -4593,7 +4993,8 @@ gText_Rom_2EAC7C: @ 0x082EAC7C
 	@ src/data/pokemon/species_info/gen_3_families.h:12212 gen_3_families_line_12212
 	.globl gText_Rom_2EAC82
 gText_Rom_2EAC82: @ 0x082EAC82
-	.string "レジロック$"
+	.string "レジロック"
+	.byte EOS
 	.if (. - gText_Rom_2EAC82) > 0x6
 	.error "gText_Rom_2EAC82 may not grow beyond its original slot"
 	.endif
@@ -4604,7 +5005,8 @@ gText_Rom_2EAC82: @ 0x082EAC82
 	@ src/data/pokemon/species_info/gen_3_families.h:12291 gen_3_families_line_12291
 	.globl gText_Rom_2EAC88
 gText_Rom_2EAC88: @ 0x082EAC88
-	.string "レジアイス$"
+	.string "レジアイス"
+	.byte EOS
 	.if (. - gText_Rom_2EAC88) > 0x6
 	.error "gText_Rom_2EAC88 may not grow beyond its original slot"
 	.endif
@@ -4615,7 +5017,8 @@ gText_Rom_2EAC88: @ 0x082EAC88
 	@ src/data/pokemon/species_info/gen_3_families.h:12371 gen_3_families_line_12371
 	.globl gText_Rom_2EAC8E
 gText_Rom_2EAC8E: @ 0x082EAC8E
-	.string "レジスチル$"
+	.string "レジスチル"
+	.byte EOS
 	.if (. - gText_Rom_2EAC8E) > 0x6
 	.error "gText_Rom_2EAC8E may not grow beyond its original slot"
 	.endif
@@ -4626,7 +5029,8 @@ gText_Rom_2EAC8E: @ 0x082EAC8E
 	@ src/data/pokemon/species_info/gen_3_families.h:12768 gen_3_families_line_12768 (+2 aliases)
 	.globl gText_Rom_2EAC94
 gText_Rom_2EAC94: @ 0x082EAC94
-	.string "カイオーガ$"
+	.string "カイオーガ"
+	.byte EOS
 	.if (. - gText_Rom_2EAC94) > 0x6
 	.error "gText_Rom_2EAC94 may not grow beyond its original slot"
 	.endif
@@ -4637,7 +5041,8 @@ gText_Rom_2EAC94: @ 0x082EAC94
 	@ src/data/pokemon/species_info/gen_3_families.h:12923 gen_3_families_line_12923 (+2 aliases)
 	.globl gText_Rom_2EAC9A
 gText_Rom_2EAC9A: @ 0x082EAC9A
-	.string "グラードン$"
+	.string "グラードン"
+	.byte EOS
 	.if (. - gText_Rom_2EAC9A) > 0x6
 	.error "gText_Rom_2EAC9A may not grow beyond its original slot"
 	.endif
@@ -4648,7 +5053,8 @@ gText_Rom_2EAC9A: @ 0x082EAC9A
 	@ src/data/pokemon/species_info/gen_3_families.h:13079 gen_3_families_line_13079 (+1 aliases)
 	.globl gText_Rom_2EACA0
 gText_Rom_2EACA0: @ 0x082EACA0
-	.string "レックウザ$"
+	.string "レックウザ"
+	.byte EOS
 	.if (. - gText_Rom_2EACA0) > 0x6
 	.error "gText_Rom_2EACA0 may not grow beyond its original slot"
 	.endif
@@ -4659,7 +5065,8 @@ gText_Rom_2EACA0: @ 0x082EACA0
 	@ src/data/pokemon/species_info/gen_3_families.h:12450 gen_3_families_line_12450 (+1 aliases)
 	.globl gText_Rom_2EACA6
 gText_Rom_2EACA6: @ 0x082EACA6
-	.string "ラティアス$"
+	.string "ラティアス"
+	.byte EOS
 	.if (. - gText_Rom_2EACA6) > 0x6
 	.error "gText_Rom_2EACA6 may not grow beyond its original slot"
 	.endif
@@ -4670,7 +5077,8 @@ gText_Rom_2EACA6: @ 0x082EACA6
 	@ src/data/pokemon/species_info/gen_3_families.h:12609 gen_3_families_line_12609 (+1 aliases)
 	.globl gText_Rom_2EACAC
 gText_Rom_2EACAC: @ 0x082EACAC
-	.string "ラティオス$"
+	.string "ラティオス"
+	.byte EOS
 	.if (. - gText_Rom_2EACAC) > 0x6
 	.error "gText_Rom_2EACAC may not grow beyond its original slot"
 	.endif
@@ -4681,7 +5089,8 @@ gText_Rom_2EACAC: @ 0x082EACAC
 	@ src/data/pokemon/species_info/gen_3_families.h:13240 gen_3_families_line_13240
 	.globl gText_Rom_2EACB2
 gText_Rom_2EACB2: @ 0x082EACB2
-	.string "ジラーチ$"
+	.string "ジラーチ"
+	.byte EOS
 	.if (. - gText_Rom_2EACB2) > 0x5
 	.error "gText_Rom_2EACB2 may not grow beyond its original slot"
 	.endif
@@ -4693,7 +5102,8 @@ gText_Rom_2EACB2: @ 0x082EACB2
 	@ src/data/pokemon/species_info/gen_3_families.h:13330 gen_3_families_line_13330 (+3 aliases)
 	.globl gText_Rom_2EACB8
 gText_Rom_2EACB8: @ 0x082EACB8
-	.string "デオキシス$"
+	.string "デオキシス"
+	.byte EOS
 	.if (. - gText_Rom_2EACB8) > 0x6
 	.error "gText_Rom_2EACB8 may not grow beyond its original slot"
 	.endif
@@ -4704,15 +5114,14 @@ gText_Rom_2EACB8: @ 0x082EACB8
 	@ src/data/pokemon/species_info/gen_3_families.h:10263 gen_3_families_line_10263 (+1 aliases)
 	.globl gText_Rom_2EACBE
 gText_Rom_2EACBE: @ 0x082EACBE
-	.string "チリーン$"
+	.string "チリーン"
+	.byte EOS
 	.if (. - gText_Rom_2EACBE) > 0x5
 	.error "gText_Rom_2EACBE may not grow beyond its original slot"
 	.endif
 	.if (. - gText_Rom_2EACBE) < 0x5
 	.space 0x5 - (. - gText_Rom_2EACBE)
 	.endif
-	.incbin "baserom.gba", 0x2eacc3, 0x1
-	.globl gMoveNames
-gMoveNames: @ 0x082EACC4
-	.incbin "baserom.gba", 0x2eacc4, 0x8
 
+	.balign 4, 0
+	

@@ -239,5 +239,4 @@ gUnknown_8912454: @ 0x08912454
 	.incbin "baserom.gba", 0x912454, 0x348c
 	.globl gUnknown_89158E0
 gUnknown_89158E0: @ 0x089158E0
-	.incbin "baserom.gba", 0x9158e0, 0x1fc616
-
+	.incbin "baserom.gba", 0x9158e0, 0x1EA720

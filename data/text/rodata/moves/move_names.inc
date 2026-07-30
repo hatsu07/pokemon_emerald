@@ -8,10 +8,19 @@
 @ Source: data/text/rodata/moves/26_move_data.inc
 @==============================================================================
 
+	.globl gMoveNames
+gMoveNames: @ 0x082EACC4
+
+gMoveName_None:
+	.string "ー"
+	.byte EOS
+	.space 8 - (. - gMoveName_None), 0xFF
+
 	@ src/data/moves_info.h:48 moves_info_line_48
 	.globl gText_Rom_2EACCC
 gText_Rom_2EACCC: @ 0x082EACCC
-	.string "はたく$"
+	.string "はたく"
+	.byte EOS
 	.if (. - gText_Rom_2EACCC) > 0x4
 	.error "gText_Rom_2EACCC may not grow beyond its original slot"
 	.endif
@@ -23,7 +32,8 @@ gText_Rom_2EACCC: @ 0x082EACCC
 	@ src/data/moves_info.h:69 moves_info_line_69
 	.globl gText_Rom_2EACD4
 gText_Rom_2EACD4: @ 0x082EACD4
-	.string "からてチョップ$"
+	.string "からてチョップ"
+	.byte EOS
 	.if (. - gText_Rom_2EACD4) > 0x8
 	.error "gText_Rom_2EACD4 may not grow beyond its original slot"
 	.endif
@@ -34,7 +44,8 @@ gText_Rom_2EACD4: @ 0x082EACD4
 	@ src/data/moves_info.h:91 moves_info_line_91
 	.globl gText_Rom_2EACDC
 gText_Rom_2EACDC: @ 0x082EACDC
-	.string "おうふくビンタ$"
+	.string "おうふくビンタ"
+	.byte EOS
 	.if (. - gText_Rom_2EACDC) > 0x8
 	.error "gText_Rom_2EACDC may not grow beyond its original slot"
 	.endif
@@ -45,7 +56,8 @@ gText_Rom_2EACDC: @ 0x082EACDC
 	@ src/data/moves_info.h:113 moves_info_line_113
 	.globl gText_Rom_2EACE4
 gText_Rom_2EACE4: @ 0x082EACE4
-	.string "れんぞくパンチ$"
+	.string "れんぞくパンチ"
+	.byte EOS
 	.if (. - gText_Rom_2EACE4) > 0x8
 	.error "gText_Rom_2EACE4 may not grow beyond its original slot"
 	.endif
@@ -56,7 +68,8 @@ gText_Rom_2EACE4: @ 0x082EACE4
 	@ src/data/moves_info.h:135 moves_info_line_135
 	.globl gText_Rom_2EACEC
 gText_Rom_2EACEC: @ 0x082EACEC
-	.string "メガトンパンチ$"
+	.string "メガトンパンチ"
+	.byte EOS
 	.if (. - gText_Rom_2EACEC) > 0x8
 	.error "gText_Rom_2EACEC may not grow beyond its original slot"
 	.endif
@@ -67,7 +80,8 @@ gText_Rom_2EACEC: @ 0x082EACEC
 	@ src/data/moves_info.h:157 moves_info_line_157
 	.globl gText_Rom_2EACF4
 gText_Rom_2EACF4: @ 0x082EACF4
-	.string "ネコにこばん$"
+	.string "ネコにこばん"
+	.byte EOS
 	.if (. - gText_Rom_2EACF4) > 0x7
 	.error "gText_Rom_2EACF4 may not grow beyond its original slot"
 	.endif
@@ -79,7 +93,8 @@ gText_Rom_2EACF4: @ 0x082EACF4
 	@ src/data/moves_info.h:179 moves_info_line_179
 	.globl gText_Rom_2EACFC
 gText_Rom_2EACFC: @ 0x082EACFC
-	.string "ほのおのパンチ$"
+	.string "ほのおのパンチ"
+	.byte EOS
 	.if (. - gText_Rom_2EACFC) > 0x8
 	.error "gText_Rom_2EACFC may not grow beyond its original slot"
 	.endif
@@ -90,7 +105,8 @@ gText_Rom_2EACFC: @ 0x082EACFC
 	@ src/data/moves_info.h:205 moves_info_line_205
 	.globl gText_Rom_2EAD04
 gText_Rom_2EAD04: @ 0x082EAD04
-	.string "れいとうパンチ$"
+	.string "れいとうパンチ"
+	.byte EOS
 	.if (. - gText_Rom_2EAD04) > 0x8
 	.error "gText_Rom_2EAD04 may not grow beyond its original slot"
 	.endif
@@ -101,7 +117,8 @@ gText_Rom_2EAD04: @ 0x082EAD04
 	@ src/data/moves_info.h:231 moves_info_line_231
 	.globl gText_Rom_2EAD0C
 gText_Rom_2EAD0C: @ 0x082EAD0C
-	.string "かみなりパンチ$"
+	.string "かみなりパンチ"
+	.byte EOS
 	.if (. - gText_Rom_2EAD0C) > 0x8
 	.error "gText_Rom_2EAD0C may not grow beyond its original slot"
 	.endif
@@ -112,7 +129,8 @@ gText_Rom_2EAD0C: @ 0x082EAD0C
 	@ src/data/moves_info.h:257 moves_info_line_257
 	.globl gText_Rom_2EAD14
 gText_Rom_2EAD14: @ 0x082EAD14
-	.string "ひっかく$"
+	.string "ひっかく"
+	.byte EOS
 	.if (. - gText_Rom_2EAD14) > 0x5
 	.error "gText_Rom_2EAD14 may not grow beyond its original slot"
 	.endif
@@ -124,7 +142,8 @@ gText_Rom_2EAD14: @ 0x082EAD14
 	@ src/data/moves_info.h:277 moves_info_line_277
 	.globl gText_Rom_2EAD1C
 gText_Rom_2EAD1C: @ 0x082EAD1C
-	.string "はさむ$"
+	.string "はさむ"
+	.byte EOS
 	.if (. - gText_Rom_2EAD1C) > 0x4
 	.error "gText_Rom_2EAD1C may not grow beyond its original slot"
 	.endif
@@ -136,7 +155,8 @@ gText_Rom_2EAD1C: @ 0x082EAD1C
 	@ src/data/moves_info.h:297 moves_info_line_297
 	.globl gText_Rom_2EAD24
 gText_Rom_2EAD24: @ 0x082EAD24
-	.string "ハサミギロチン$"
+	.string "ハサミギロチン"
+	.byte EOS
 	.if (. - gText_Rom_2EAD24) > 0x8
 	.error "gText_Rom_2EAD24 may not grow beyond its original slot"
 	.endif
@@ -147,7 +167,8 @@ gText_Rom_2EAD24: @ 0x082EAD24
 	@ src/data/moves_info.h:318 moves_info_line_318
 	.globl gText_Rom_2EAD2C
 gText_Rom_2EAD2C: @ 0x082EAD2C
-	.string "かまいたち$"
+	.string "かまいたち"
+	.byte EOS
 	.if (. - gText_Rom_2EAD2C) > 0x6
 	.error "gText_Rom_2EAD2C may not grow beyond its original slot"
 	.endif
@@ -159,7 +180,8 @@ gText_Rom_2EAD2C: @ 0x082EAD2C
 	@ src/data/moves_info.h:348 moves_info_line_348
 	.globl gText_Rom_2EAD34
 gText_Rom_2EAD34: @ 0x082EAD34
-	.string "つるぎのまい$"
+	.string "つるぎのまい"
+	.byte EOS
 	.if (. - gText_Rom_2EAD34) > 0x7
 	.error "gText_Rom_2EAD34 may not grow beyond its original slot"
 	.endif
@@ -171,7 +193,8 @@ gText_Rom_2EAD34: @ 0x082EAD34
 	@ src/data/moves_info.h:377 moves_info_line_377
 	.globl gText_Rom_2EAD3C
 gText_Rom_2EAD3C: @ 0x082EAD3C
-	.string "いあいぎり$"
+	.string "いあいぎり"
+	.byte EOS
 	.if (. - gText_Rom_2EAD3C) > 0x6
 	.error "gText_Rom_2EAD3C may not grow beyond its original slot"
 	.endif
@@ -183,7 +206,8 @@ gText_Rom_2EAD3C: @ 0x082EAD3C
 	@ src/data/moves_info.h:398 moves_info_line_398
 	.globl gText_Rom_2EAD44
 gText_Rom_2EAD44: @ 0x082EAD44
-	.string "かぜおこし$"
+	.string "かぜおこし"
+	.byte EOS
 	.if (. - gText_Rom_2EAD44) > 0x6
 	.error "gText_Rom_2EAD44 may not grow beyond its original slot"
 	.endif
@@ -195,7 +219,8 @@ gText_Rom_2EAD44: @ 0x082EAD44
 	@ src/data/moves_info.h:420 moves_info_line_420
 	.globl gText_Rom_2EAD4C
 gText_Rom_2EAD4C: @ 0x082EAD4C
-	.string "つばさでうつ$"
+	.string "つばさでうつ"
+	.byte EOS
 	.if (. - gText_Rom_2EAD4C) > 0x7
 	.error "gText_Rom_2EAD4C may not grow beyond its original slot"
 	.endif
@@ -207,7 +232,8 @@ gText_Rom_2EAD4C: @ 0x082EAD4C
 	@ src/data/moves_info.h:440 moves_info_line_440
 	.globl gText_Rom_2EAD54
 gText_Rom_2EAD54: @ 0x082EAD54
-	.string "ふきとばし$"
+	.string "ふきとばし"
+	.byte EOS
 	.if (. - gText_Rom_2EAD54) > 0x6
 	.error "gText_Rom_2EAD54 may not grow beyond its original slot"
 	.endif
@@ -219,7 +245,8 @@ gText_Rom_2EAD54: @ 0x082EAD54
 	@ src/data/moves_info.h:478 moves_info_line_478
 	.globl gText_Rom_2EAD5C
 gText_Rom_2EAD5C: @ 0x082EAD5C
-	.string "そらをとぶ$"
+	.string "そらをとぶ"
+	.byte EOS
 	.if (. - gText_Rom_2EAD5C) > 0x6
 	.error "gText_Rom_2EAD5C may not grow beyond its original slot"
 	.endif
@@ -231,7 +258,8 @@ gText_Rom_2EAD5C: @ 0x082EAD5C
 	@ src/data/moves_info.h:504 moves_info_line_504
 	.globl gText_Rom_2EAD64
 gText_Rom_2EAD64: @ 0x082EAD64
-	.string "しめつける$"
+	.string "しめつける"
+	.byte EOS
 	.if (. - gText_Rom_2EAD64) > 0x6
 	.error "gText_Rom_2EAD64 may not grow beyond its original slot"
 	.endif
@@ -243,7 +271,8 @@ gText_Rom_2EAD64: @ 0x082EAD64
 	@ src/data/moves_info.h:530 moves_info_line_530
 	.globl gText_Rom_2EAD6C
 gText_Rom_2EAD6C: @ 0x082EAD6C
-	.string "たたきつける$"
+	.string "たたきつける"
+	.byte EOS
 	.if (. - gText_Rom_2EAD6C) > 0x7
 	.error "gText_Rom_2EAD6C may not grow beyond its original slot"
 	.endif
@@ -255,7 +284,8 @@ gText_Rom_2EAD6C: @ 0x082EAD6C
 	@ src/data/moves_info.h:552 moves_info_line_552
 	.globl gText_Rom_2EAD74
 gText_Rom_2EAD74: @ 0x082EAD74
-	.string "つるのムチ$"
+	.string "つるのムチ"
+	.byte EOS
 	.if (. - gText_Rom_2EAD74) > 0x6
 	.error "gText_Rom_2EAD74 may not grow beyond its original slot"
 	.endif
@@ -267,7 +297,8 @@ gText_Rom_2EAD74: @ 0x082EAD74
 	@ src/data/moves_info.h:578 moves_info_line_578
 	.globl gText_Rom_2EAD7C
 gText_Rom_2EAD7C: @ 0x082EAD7C
-	.string "ふみつけ$"
+	.string "ふみつけ"
+	.byte EOS
 	.if (. - gText_Rom_2EAD7C) > 0x5
 	.error "gText_Rom_2EAD7C may not grow beyond its original slot"
 	.endif
@@ -279,7 +310,8 @@ gText_Rom_2EAD7C: @ 0x082EAD7C
 	@ src/data/moves_info.h:605 moves_info_line_605
 	.globl gText_Rom_2EAD84
 gText_Rom_2EAD84: @ 0x082EAD84
-	.string "にどげり$"
+	.string "にどげり"
+	.byte EOS
 	.if (. - gText_Rom_2EAD84) > 0x5
 	.error "gText_Rom_2EAD84 may not grow beyond its original slot"
 	.endif
@@ -291,7 +323,8 @@ gText_Rom_2EAD84: @ 0x082EAD84
 	@ src/data/moves_info.h:627 moves_info_line_627
 	.globl gText_Rom_2EAD8C
 gText_Rom_2EAD8C: @ 0x082EAD8C
-	.string "メガトンキック$"
+	.string "メガトンキック"
+	.byte EOS
 	.if (. - gText_Rom_2EAD8C) > 0x8
 	.error "gText_Rom_2EAD8C may not grow beyond its original slot"
 	.endif
@@ -302,7 +335,8 @@ gText_Rom_2EAD8C: @ 0x082EAD8C
 	@ src/data/moves_info.h:648 moves_info_line_648
 	.globl gText_Rom_2EAD94
 gText_Rom_2EAD94: @ 0x082EAD94
-	.string "とびげり$"
+	.string "とびげり"
+	.byte EOS
 	.if (. - gText_Rom_2EAD94) > 0x5
 	.error "gText_Rom_2EAD94 may not grow beyond its original slot"
 	.endif
@@ -314,7 +348,8 @@ gText_Rom_2EAD94: @ 0x082EAD94
 	@ src/data/moves_info.h:676 moves_info_line_676
 	.globl gText_Rom_2EAD9C
 gText_Rom_2EAD9C: @ 0x082EAD9C
-	.string "まわしげり$"
+	.string "まわしげり"
+	.byte EOS
 	.if (. - gText_Rom_2EAD9C) > 0x6
 	.error "gText_Rom_2EAD9C may not grow beyond its original slot"
 	.endif
@@ -326,7 +361,8 @@ gText_Rom_2EAD9C: @ 0x082EAD9C
 	@ src/data/moves_info.h:702 moves_info_line_702
 	.globl gText_Rom_2EADA4
 gText_Rom_2EADA4: @ 0x082EADA4
-	.string "すなかけ$"
+	.string "すなかけ"
+	.byte EOS
 	.if (. - gText_Rom_2EADA4) > 0x5
 	.error "gText_Rom_2EADA4 may not grow beyond its original slot"
 	.endif
@@ -338,7 +374,8 @@ gText_Rom_2EADA4: @ 0x082EADA4
 	@ src/data/moves_info.h:728 moves_info_line_728
 	.globl gText_Rom_2EADAC
 gText_Rom_2EADAC: @ 0x082EADAC
-	.string "ずつき$"
+	.string "ずつき"
+	.byte EOS
 	.if (. - gText_Rom_2EADAC) > 0x4
 	.error "gText_Rom_2EADAC may not grow beyond its original slot"
 	.endif
@@ -350,7 +387,8 @@ gText_Rom_2EADAC: @ 0x082EADAC
 	@ src/data/moves_info.h:753 moves_info_line_753
 	.globl gText_Rom_2EADB4
 gText_Rom_2EADB4: @ 0x082EADB4
-	.string "つのでつく$"
+	.string "つのでつく"
+	.byte EOS
 	.if (. - gText_Rom_2EADB4) > 0x6
 	.error "gText_Rom_2EADB4 may not grow beyond its original slot"
 	.endif
@@ -362,7 +400,8 @@ gText_Rom_2EADB4: @ 0x082EADB4
 	@ src/data/moves_info.h:773 moves_info_line_773
 	.globl gText_Rom_2EADBC
 gText_Rom_2EADBC: @ 0x082EADBC
-	.string "みだれづき$"
+	.string "みだれづき"
+	.byte EOS
 	.if (. - gText_Rom_2EADBC) > 0x6
 	.error "gText_Rom_2EADBC may not grow beyond its original slot"
 	.endif
@@ -374,7 +413,8 @@ gText_Rom_2EADBC: @ 0x082EADBC
 	@ src/data/moves_info.h:794 moves_info_line_794
 	.globl gText_Rom_2EADC4
 gText_Rom_2EADC4: @ 0x082EADC4
-	.string "つのドリル$"
+	.string "つのドリル"
+	.byte EOS
 	.if (. - gText_Rom_2EADC4) > 0x6
 	.error "gText_Rom_2EADC4 may not grow beyond its original slot"
 	.endif
@@ -386,7 +426,8 @@ gText_Rom_2EADC4: @ 0x082EADC4
 	@ src/data/moves_info.h:815 moves_info_line_815
 	.globl gText_Rom_2EADCC
 gText_Rom_2EADCC: @ 0x082EADCC
-	.string "たいあたり$"
+	.string "たいあたり"
+	.byte EOS
 	.if (. - gText_Rom_2EADCC) > 0x6
 	.error "gText_Rom_2EADCC may not grow beyond its original slot"
 	.endif
@@ -398,7 +439,8 @@ gText_Rom_2EADCC: @ 0x082EADCC
 	@ src/data/moves_info.h:841 moves_info_line_841
 	.globl gText_Rom_2EADD4
 gText_Rom_2EADD4: @ 0x082EADD4
-	.string "のしかかり$"
+	.string "のしかかり"
+	.byte EOS
 	.if (. - gText_Rom_2EADD4) > 0x6
 	.error "gText_Rom_2EADD4 may not grow beyond its original slot"
 	.endif
@@ -410,7 +452,8 @@ gText_Rom_2EADD4: @ 0x082EADD4
 	@ src/data/moves_info.h:868 moves_info_line_868
 	.globl gText_Rom_2EADDC
 gText_Rom_2EADDC: @ 0x082EADDC
-	.string "まきつく$"
+	.string "まきつく"
+	.byte EOS
 	.if (. - gText_Rom_2EADDC) > 0x5
 	.error "gText_Rom_2EADDC may not grow beyond its original slot"
 	.endif
@@ -422,7 +465,8 @@ gText_Rom_2EADDC: @ 0x082EADDC
 	@ src/data/moves_info.h:894 moves_info_line_894
 	.globl gText_Rom_2EADE4
 gText_Rom_2EADE4: @ 0x082EADE4
-	.string "とっしん$"
+	.string "とっしん"
+	.byte EOS
 	.if (. - gText_Rom_2EADE4) > 0x5
 	.error "gText_Rom_2EADE4 may not grow beyond its original slot"
 	.endif
@@ -434,7 +478,8 @@ gText_Rom_2EADE4: @ 0x082EADE4
 	@ src/data/moves_info.h:916 moves_info_line_916
 	.globl gText_Rom_2EADEC
 gText_Rom_2EADEC: @ 0x082EADEC
-	.string "あばれる$"
+	.string "あばれる"
+	.byte EOS
 	.if (. - gText_Rom_2EADEC) > 0x5
 	.error "gText_Rom_2EADEC may not grow beyond its original slot"
 	.endif
@@ -446,7 +491,8 @@ gText_Rom_2EADEC: @ 0x082EADEC
 	@ src/data/moves_info.h:942 moves_info_line_942
 	.globl gText_Rom_2EADF4
 gText_Rom_2EADF4: @ 0x082EADF4
-	.string "すてみタックル$"
+	.string "すてみタックル"
+	.byte EOS
 	.if (. - gText_Rom_2EADF4) > 0x8
 	.error "gText_Rom_2EADF4 may not grow beyond its original slot"
 	.endif
@@ -457,7 +503,8 @@ gText_Rom_2EADF4: @ 0x082EADF4
 	@ src/data/moves_info.h:964 moves_info_line_964
 	.globl gText_Rom_2EADFC
 gText_Rom_2EADFC: @ 0x082EADFC
-	.string "しっぽをふる$"
+	.string "しっぽをふる"
+	.byte EOS
 	.if (. - gText_Rom_2EADFC) > 0x7
 	.error "gText_Rom_2EADFC may not grow beyond its original slot"
 	.endif
@@ -469,7 +516,8 @@ gText_Rom_2EADFC: @ 0x082EADFC
 	@ src/data/moves_info.h:989 moves_info_line_989
 	.globl gText_Rom_2EAE04
 gText_Rom_2EAE04: @ 0x082EAE04
-	.string "どくばり$"
+	.string "どくばり"
+	.byte EOS
 	.if (. - gText_Rom_2EAE04) > 0x5
 	.error "gText_Rom_2EAE04 may not grow beyond its original slot"
 	.endif
@@ -481,7 +529,8 @@ gText_Rom_2EAE04: @ 0x082EAE04
 	@ src/data/moves_info.h:1012 moves_info_line_1012
 	.globl gText_Rom_2EAE0C
 gText_Rom_2EAE0C: @ 0x082EAE0C
-	.string "ダブルニードル$"
+	.string "ダブルニードル"
+	.byte EOS
 	.if (. - gText_Rom_2EAE0C) > 0x8
 	.error "gText_Rom_2EAE0C may not grow beyond its original slot"
 	.endif
@@ -492,7 +541,8 @@ gText_Rom_2EAE0C: @ 0x082EAE0C
 	@ src/data/moves_info.h:1038 moves_info_line_1038
 	.globl gText_Rom_2EAE14
 gText_Rom_2EAE14: @ 0x082EAE14
-	.string "ミサイルばり$"
+	.string "ミサイルばり"
+	.byte EOS
 	.if (. - gText_Rom_2EAE14) > 0x7
 	.error "gText_Rom_2EAE14 may not grow beyond its original slot"
 	.endif
@@ -504,7 +554,8 @@ gText_Rom_2EAE14: @ 0x082EAE14
 	@ src/data/moves_info.h:1058 moves_info_line_1058
 	.globl gText_Rom_2EAE1C
 gText_Rom_2EAE1C: @ 0x082EAE1C
-	.string "にらみつける$"
+	.string "にらみつける"
+	.byte EOS
 	.if (. - gText_Rom_2EAE1C) > 0x7
 	.error "gText_Rom_2EAE1C may not grow beyond its original slot"
 	.endif
@@ -516,7 +567,8 @@ gText_Rom_2EAE1C: @ 0x082EAE1C
 	@ src/data/moves_info.h:1083 moves_info_line_1083
 	.globl gText_Rom_2EAE24
 gText_Rom_2EAE24: @ 0x082EAE24
-	.string "かみつく$"
+	.string "かみつく"
+	.byte EOS
 	.if (. - gText_Rom_2EAE24) > 0x5
 	.error "gText_Rom_2EAE24 may not grow beyond its original slot"
 	.endif
@@ -528,7 +580,8 @@ gText_Rom_2EAE24: @ 0x082EAE24
 	@ src/data/moves_info.h:1109 moves_info_line_1109 (+1 aliases)
 	.globl gText_Rom_2EAE2C
 gText_Rom_2EAE2C: @ 0x082EAE2C
-	.string "なきごえ$"
+	.string "なきごえ"
+	.byte EOS
 	.if (. - gText_Rom_2EAE2C) > 0x5
 	.error "gText_Rom_2EAE2C may not grow beyond its original slot"
 	.endif
@@ -540,7 +593,8 @@ gText_Rom_2EAE2C: @ 0x082EAE2C
 	@ src/data/moves_info.h:1136 moves_info_line_1136
 	.globl gText_Rom_2EAE34
 gText_Rom_2EAE34: @ 0x082EAE34
-	.string "ほえる$"
+	.string "ほえる"
+	.byte EOS
 	.if (. - gText_Rom_2EAE34) > 0x4
 	.error "gText_Rom_2EAE34 may not grow beyond its original slot"
 	.endif
@@ -552,7 +606,8 @@ gText_Rom_2EAE34: @ 0x082EAE34
 	@ src/data/moves_info.h:1169 moves_info_line_1169
 	.globl gText_Rom_2EAE3C
 gText_Rom_2EAE3C: @ 0x082EAE3C
-	.string "うたう$"
+	.string "うたう"
+	.byte EOS
 	.if (. - gText_Rom_2EAE3C) > 0x4
 	.error "gText_Rom_2EAE3C may not grow beyond its original slot"
 	.endif
@@ -564,7 +619,8 @@ gText_Rom_2EAE3C: @ 0x082EAE3C
 	@ src/data/moves_info.h:1194 moves_info_line_1194
 	.globl gText_Rom_2EAE44
 gText_Rom_2EAE44: @ 0x082EAE44
-	.string "ちょうおんぱ$"
+	.string "ちょうおんぱ"
+	.byte EOS
 	.if (. - gText_Rom_2EAE44) > 0x7
 	.error "gText_Rom_2EAE44 may not grow beyond its original slot"
 	.endif
@@ -576,7 +632,8 @@ gText_Rom_2EAE44: @ 0x082EAE44
 	@ src/data/moves_info.h:1218 moves_info_line_1218
 	.globl gText_Rom_2EAE4C
 gText_Rom_2EAE4C: @ 0x082EAE4C
-	.string "ソニックブーム$"
+	.string "ソニックブーム"
+	.byte EOS
 	.if (. - gText_Rom_2EAE4C) > 0x8
 	.error "gText_Rom_2EAE4C may not grow beyond its original slot"
 	.endif
@@ -587,7 +644,8 @@ gText_Rom_2EAE4C: @ 0x082EAE4C
 	@ src/data/moves_info.h:1239 moves_info_line_1239
 	.globl gText_Rom_2EAE54
 gText_Rom_2EAE54: @ 0x082EAE54
-	.string "かなしばり$"
+	.string "かなしばり"
+	.byte EOS
 	.if (. - gText_Rom_2EAE54) > 0x6
 	.error "gText_Rom_2EAE54 may not grow beyond its original slot"
 	.endif
@@ -600,7 +658,8 @@ gText_Rom_2EAE54: @ 0x082EAE54
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EAE5C
 gText_Rom_2EAE5C: @ 0x082EAE5C
-	.string "ようかいえき$"
+	.string "ようかいえき"
+	.byte EOS
 	.if (. - gText_Rom_2EAE5C) != 0x7
 	.error "gText_Rom_2EAE5C must retain its original byte length"
 	.endif
@@ -611,7 +670,8 @@ gText_Rom_2EAE5C: @ 0x082EAE5C
 	@ src/data/moves_info.h:1293 moves_info_line_1293
 	.globl gText_Rom_2EAE64
 gText_Rom_2EAE64: @ 0x082EAE64
-	.string "ひのこ$"
+	.string "ひのこ"
+	.byte EOS
 	.if (. - gText_Rom_2EAE64) > 0x4
 	.error "gText_Rom_2EAE64 may not grow beyond its original slot"
 	.endif
@@ -623,7 +683,8 @@ gText_Rom_2EAE64: @ 0x082EAE64
 	@ src/data/moves_info.h:1316 moves_info_line_1316
 	.globl gText_Rom_2EAE6C
 gText_Rom_2EAE6C: @ 0x082EAE6C
-	.string "かえんほうしゃ$"
+	.string "かえんほうしゃ"
+	.byte EOS
 	.if (. - gText_Rom_2EAE6C) > 0x8
 	.error "gText_Rom_2EAE6C may not grow beyond its original slot"
 	.endif
@@ -639,7 +700,8 @@ gText_Rom_2EAE6C: @ 0x082EAE6C
 	@ src/battle_debug.c:412 battle_debug_line_412 (+1 aliases)
 	.globl gText_Rom_2EAE74
 gText_Rom_2EAE74: @ 0x082EAE74
-	.string "しろいきり$"
+	.string "しろいきり"
+	.byte EOS
 	.if (. - gText_Rom_2EAE74) > 0x6
 	.error "gText_Rom_2EAE74 may not grow beyond its original slot"
 	.endif
@@ -656,7 +718,8 @@ gText_Rom_2EAE74: @ 0x082EAE74
 	@ src/data/moves_info.h:1364 moves_info_line_1364
 	.globl gText_Rom_2EAE7C
 gText_Rom_2EAE7C: @ 0x082EAE7C
-	.string "みずでっぽう$"
+	.string "みずでっぽう"
+	.byte EOS
 	.if (. - gText_Rom_2EAE7C) > 0x7
 	.error "gText_Rom_2EAE7C may not grow beyond its original slot"
 	.endif
@@ -668,7 +731,8 @@ gText_Rom_2EAE7C: @ 0x082EAE7C
 	@ src/data/moves_info.h:1383 moves_info_line_1383
 	.globl gText_Rom_2EAE84
 gText_Rom_2EAE84: @ 0x082EAE84
-	.string "ハイドロポンプ$"
+	.string "ハイドロポンプ"
+	.byte EOS
 	.if (. - gText_Rom_2EAE84) > 0x8
 	.error "gText_Rom_2EAE84 may not grow beyond its original slot"
 	.endif
@@ -679,7 +743,8 @@ gText_Rom_2EAE84: @ 0x082EAE84
 	@ src/data/moves_info.h:1403 moves_info_line_1403
 	.globl gText_Rom_2EAE8C
 gText_Rom_2EAE8C: @ 0x082EAE8C
-	.string "なみのり$"
+	.string "なみのり"
+	.byte EOS
 	.if (. - gText_Rom_2EAE8C) > 0x5
 	.error "gText_Rom_2EAE8C may not grow beyond its original slot"
 	.endif
@@ -691,7 +756,8 @@ gText_Rom_2EAE8C: @ 0x082EAE8C
 	@ src/data/moves_info.h:1425 moves_info_line_1425
 	.globl gText_Rom_2EAE94
 gText_Rom_2EAE94: @ 0x082EAE94
-	.string "れいとうビーム$"
+	.string "れいとうビーム"
+	.byte EOS
 	.if (. - gText_Rom_2EAE94) > 0x8
 	.error "gText_Rom_2EAE94 may not grow beyond its original slot"
 	.endif
@@ -702,7 +768,8 @@ gText_Rom_2EAE94: @ 0x082EAE94
 	@ src/data/moves_info.h:1451 moves_info_line_1451
 	.globl gText_Rom_2EAE9C
 gText_Rom_2EAE9C: @ 0x082EAE9C
-	.string "ふぶき$"
+	.string "ふぶき"
+	.byte EOS
 	.if (. - gText_Rom_2EAE9C) > 0x4
 	.error "gText_Rom_2EAE9C may not grow beyond its original slot"
 	.endif
@@ -714,7 +781,8 @@ gText_Rom_2EAE9C: @ 0x082EAE9C
 	@ src/data/moves_info.h:1477 moves_info_line_1477
 	.globl gText_Rom_2EAEA4
 gText_Rom_2EAEA4: @ 0x082EAEA4
-	.string "サイケこうせん$"
+	.string "サイケこうせん"
+	.byte EOS
 	.if (. - gText_Rom_2EAEA4) > 0x8
 	.error "gText_Rom_2EAEA4 may not grow beyond its original slot"
 	.endif
@@ -725,7 +793,8 @@ gText_Rom_2EAEA4: @ 0x082EAEA4
 	@ src/data/moves_info.h:1501 moves_info_line_1501
 	.globl gText_Rom_2EAEAC
 gText_Rom_2EAEAC: @ 0x082EAEAC
-	.string "バブルこうせん$"
+	.string "バブルこうせん"
+	.byte EOS
 	.if (. - gText_Rom_2EAEAC) > 0x8
 	.error "gText_Rom_2EAEAC may not grow beyond its original slot"
 	.endif
@@ -736,7 +805,8 @@ gText_Rom_2EAEAC: @ 0x082EAEAC
 	@ src/data/moves_info.h:1525 moves_info_line_1525
 	.globl gText_Rom_2EAEB4
 gText_Rom_2EAEB4: @ 0x082EAEB4
-	.string "オーロラビーム$"
+	.string "オーロラビーム"
+	.byte EOS
 	.if (. - gText_Rom_2EAEB4) > 0x8
 	.error "gText_Rom_2EAEB4 may not grow beyond its original slot"
 	.endif
@@ -747,7 +817,8 @@ gText_Rom_2EAEB4: @ 0x082EAEB4
 	@ src/data/moves_info.h:1549 moves_info_line_1549
 	.globl gText_Rom_2EAEBC
 gText_Rom_2EAEBC: @ 0x082EAEBC
-	.string "はかいこうせん$"
+	.string "はかいこうせん"
+	.byte EOS
 	.if (. - gText_Rom_2EAEBC) > 0x8
 	.error "gText_Rom_2EAEBC may not grow beyond its original slot"
 	.endif
@@ -758,7 +829,8 @@ gText_Rom_2EAEBC: @ 0x082EAEBC
 	@ src/data/moves_info.h:1574 moves_info_line_1574
 	.globl gText_Rom_2EAEC4
 gText_Rom_2EAEC4: @ 0x082EAEC4
-	.string "つつく$"
+	.string "つつく"
+	.byte EOS
 	.if (. - gText_Rom_2EAEC4) > 0x4
 	.error "gText_Rom_2EAEC4 may not grow beyond its original slot"
 	.endif
@@ -770,7 +842,8 @@ gText_Rom_2EAEC4: @ 0x082EAEC4
 	@ src/data/moves_info.h:1594 moves_info_line_1594
 	.globl gText_Rom_2EAECC
 gText_Rom_2EAECC: @ 0x082EAECC
-	.string "ドリルくちばし$"
+	.string "ドリルくちばし"
+	.byte EOS
 	.if (. - gText_Rom_2EAECC) > 0x8
 	.error "gText_Rom_2EAECC may not grow beyond its original slot"
 	.endif
@@ -781,7 +854,8 @@ gText_Rom_2EAECC: @ 0x082EAECC
 	@ src/data/moves_info.h:1615 moves_info_line_1615
 	.globl gText_Rom_2EAED4
 gText_Rom_2EAED4: @ 0x082EAED4
-	.string "じごくぐるま$"
+	.string "じごくぐるま"
+	.byte EOS
 	.if (. - gText_Rom_2EAED4) > 0x7
 	.error "gText_Rom_2EAED4 may not grow beyond its original slot"
 	.endif
@@ -793,7 +867,8 @@ gText_Rom_2EAED4: @ 0x082EAED4
 	@ src/data/moves_info.h:1637 moves_info_line_1637
 	.globl gText_Rom_2EAEDC
 gText_Rom_2EAEDC: @ 0x082EAEDC
-	.string "けたぐり$"
+	.string "けたぐり"
+	.byte EOS
 	.if (. - gText_Rom_2EAEDC) > 0x5
 	.error "gText_Rom_2EAEDC may not grow beyond its original slot"
 	.endif
@@ -805,7 +880,8 @@ gText_Rom_2EAEDC: @ 0x082EAEDC
 	@ src/data/moves_info.h:1666 moves_info_line_1666
 	.globl gText_Rom_2EAEE4
 gText_Rom_2EAEE4: @ 0x082EAEE4
-	.string "カウンター$"
+	.string "カウンター"
+	.byte EOS
 	.if (. - gText_Rom_2EAEE4) > 0x6
 	.error "gText_Rom_2EAEE4 may not grow beyond its original slot"
 	.endif
@@ -817,7 +893,8 @@ gText_Rom_2EAEE4: @ 0x082EAEE4
 	@ src/data/moves_info.h:1698 moves_info_line_1698
 	.globl gText_Rom_2EAEEC
 gText_Rom_2EAEEC: @ 0x082EAEEC
-	.string "ちきゅうなげ$"
+	.string "ちきゅうなげ"
+	.byte EOS
 	.if (. - gText_Rom_2EAEEC) > 0x7
 	.error "gText_Rom_2EAEEC may not grow beyond its original slot"
 	.endif
@@ -829,7 +906,8 @@ gText_Rom_2EAEEC: @ 0x082EAEEC
 	@ src/data/moves_info.h:1720 moves_info_line_1720
 	.globl gText_Rom_2EAEF4
 gText_Rom_2EAEF4: @ 0x082EAEF4
-	.string "かいりき$"
+	.string "かいりき"
+	.byte EOS
 	.if (. - gText_Rom_2EAEF4) > 0x5
 	.error "gText_Rom_2EAEF4 may not grow beyond its original slot"
 	.endif
@@ -841,7 +919,8 @@ gText_Rom_2EAEF4: @ 0x082EAEF4
 	@ src/data/moves_info.h:1741 moves_info_line_1741
 	.globl gText_Rom_2EAEFC
 gText_Rom_2EAEFC: @ 0x082EAEFC
-	.string "すいとる$"
+	.string "すいとる"
+	.byte EOS
 	.if (. - gText_Rom_2EAEFC) > 0x5
 	.error "gText_Rom_2EAEFC may not grow beyond its original slot"
 	.endif
@@ -853,7 +932,8 @@ gText_Rom_2EAEFC: @ 0x082EAEFC
 	@ src/data/moves_info.h:1763 moves_info_line_1763
 	.globl gText_Rom_2EAF04
 gText_Rom_2EAF04: @ 0x082EAF04
-	.string "メガドレイン$"
+	.string "メガドレイン"
+	.byte EOS
 	.if (. - gText_Rom_2EAF04) > 0x7
 	.error "gText_Rom_2EAF04 may not grow beyond its original slot"
 	.endif
@@ -865,7 +945,8 @@ gText_Rom_2EAF04: @ 0x082EAF04
 	@ src/data/moves_info.h:1786 moves_info_line_1786
 	.globl gText_Rom_2EAF0C
 gText_Rom_2EAF0C: @ 0x082EAF0C
-	.string "やどりぎのタネ$"
+	.string "やどりぎのタネ"
+	.byte EOS
 	.if (. - gText_Rom_2EAF0C) > 0x8
 	.error "gText_Rom_2EAF0C may not grow beyond its original slot"
 	.endif
@@ -876,7 +957,8 @@ gText_Rom_2EAF0C: @ 0x082EAF0C
 	@ src/data/moves_info.h:1808 moves_info_line_1808
 	.globl gText_Rom_2EAF14
 gText_Rom_2EAF14: @ 0x082EAF14
-	.string "せいちょう$"
+	.string "せいちょう"
+	.byte EOS
 	.if (. - gText_Rom_2EAF14) > 0x6
 	.error "gText_Rom_2EAF14 may not grow beyond its original slot"
 	.endif
@@ -888,7 +970,8 @@ gText_Rom_2EAF14: @ 0x082EAF14
 	@ src/data/moves_info.h:1837 moves_info_line_1837
 	.globl gText_Rom_2EAF1C
 gText_Rom_2EAF1C: @ 0x082EAF1C
-	.string "はっぱカッター$"
+	.string "はっぱカッター"
+	.byte EOS
 	.if (. - gText_Rom_2EAF1C) > 0x8
 	.error "gText_Rom_2EAF1C may not grow beyond its original slot"
 	.endif
@@ -899,7 +982,8 @@ gText_Rom_2EAF1C: @ 0x082EAF1C
 	@ src/data/moves_info.h:1859 moves_info_line_1859
 	.globl gText_Rom_2EAF24
 gText_Rom_2EAF24: @ 0x082EAF24
-	.string "ソーラービーム$"
+	.string "ソーラービーム"
+	.byte EOS
 	.if (. - gText_Rom_2EAF24) > 0x8
 	.error "gText_Rom_2EAF24 may not grow beyond its original slot"
 	.endif
@@ -910,7 +994,8 @@ gText_Rom_2EAF24: @ 0x082EAF24
 	@ src/data/moves_info.h:1882 moves_info_line_1882
 	.globl gText_Rom_2EAF2C
 gText_Rom_2EAF2C: @ 0x082EAF2C
-	.string "どくのこな$"
+	.string "どくのこな"
+	.byte EOS
 	.if (. - gText_Rom_2EAF2C) > 0x6
 	.error "gText_Rom_2EAF2C may not grow beyond its original slot"
 	.endif
@@ -922,7 +1007,8 @@ gText_Rom_2EAF2C: @ 0x082EAF2C
 	@ src/data/moves_info.h:1906 moves_info_line_1906
 	.globl gText_Rom_2EAF34
 gText_Rom_2EAF34: @ 0x082EAF34
-	.string "しびれごな$"
+	.string "しびれごな"
+	.byte EOS
 	.if (. - gText_Rom_2EAF34) > 0x6
 	.error "gText_Rom_2EAF34 may not grow beyond its original slot"
 	.endif
@@ -934,7 +1020,8 @@ gText_Rom_2EAF34: @ 0x082EAF34
 	@ src/data/moves_info.h:1930 moves_info_line_1930
 	.globl gText_Rom_2EAF3C
 gText_Rom_2EAF3C: @ 0x082EAF3C
-	.string "ねむりごな$"
+	.string "ねむりごな"
+	.byte EOS
 	.if (. - gText_Rom_2EAF3C) > 0x6
 	.error "gText_Rom_2EAF3C may not grow beyond its original slot"
 	.endif
@@ -946,7 +1033,8 @@ gText_Rom_2EAF3C: @ 0x082EAF3C
 	@ src/data/moves_info.h:1954 moves_info_line_1954
 	.globl gText_Rom_2EAF44
 gText_Rom_2EAF44: @ 0x082EAF44
-	.string "はなびらのまい$"
+	.string "はなびらのまい"
+	.byte EOS
 	.if (. - gText_Rom_2EAF44) > 0x8
 	.error "gText_Rom_2EAF44 may not grow beyond its original slot"
 	.endif
@@ -957,7 +1045,8 @@ gText_Rom_2EAF44: @ 0x082EAF44
 	@ src/data/moves_info.h:1987 moves_info_line_1987
 	.globl gText_Rom_2EAF4C
 gText_Rom_2EAF4C: @ 0x082EAF4C
-	.string "いとをはく$"
+	.string "いとをはく"
+	.byte EOS
 	.if (. - gText_Rom_2EAF4C) > 0x6
 	.error "gText_Rom_2EAF4C may not grow beyond its original slot"
 	.endif
@@ -970,7 +1059,8 @@ gText_Rom_2EAF4C: @ 0x082EAF4C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EAF54
 gText_Rom_2EAF54: @ 0x082EAF54
-	.string "りゅうのいかり$"
+	.string "りゅうのいかり"
+	.byte EOS
 	.if (. - gText_Rom_2EAF54) != 0x8
 	.error "gText_Rom_2EAF54 must retain its original byte length"
 	.endif
@@ -980,7 +1070,8 @@ gText_Rom_2EAF54: @ 0x082EAF54
 	@ src/data/moves_info.h:2034 moves_info_line_2034
 	.globl gText_Rom_2EAF5C
 gText_Rom_2EAF5C: @ 0x082EAF5C
-	.string "ほのおのうず$"
+	.string "ほのおのうず"
+	.byte EOS
 	.if (. - gText_Rom_2EAF5C) > 0x7
 	.error "gText_Rom_2EAF5C may not grow beyond its original slot"
 	.endif
@@ -992,7 +1083,8 @@ gText_Rom_2EAF5C: @ 0x082EAF5C
 	@ src/data/moves_info.h:2059 moves_info_line_2059
 	.globl gText_Rom_2EAF64
 gText_Rom_2EAF64: @ 0x082EAF64
-	.string "でんきショック$"
+	.string "でんきショック"
+	.byte EOS
 	.if (. - gText_Rom_2EAF64) > 0x8
 	.error "gText_Rom_2EAF64 may not grow beyond its original slot"
 	.endif
@@ -1003,7 +1095,8 @@ gText_Rom_2EAF64: @ 0x082EAF64
 	@ src/data/moves_info.h:2082 moves_info_line_2082
 	.globl gText_Rom_2EAF6C
 gText_Rom_2EAF6C: @ 0x082EAF6C
-	.string "10まんボルト$"
+	.string "10まんボルト"
+	.byte EOS
 	.if (. - gText_Rom_2EAF6C) > 0x8
 	.error "gText_Rom_2EAF6C may not grow beyond its original slot"
 	.endif
@@ -1014,7 +1107,8 @@ gText_Rom_2EAF6C: @ 0x082EAF6C
 	@ src/data/moves_info.h:2106 moves_info_line_2106
 	.globl gText_Rom_2EAF74
 gText_Rom_2EAF74: @ 0x082EAF74
-	.string "でんじは$"
+	.string "でんじは"
+	.byte EOS
 	.if (. - gText_Rom_2EAF74) > 0x5
 	.error "gText_Rom_2EAF74 may not grow beyond its original slot"
 	.endif
@@ -1026,7 +1120,8 @@ gText_Rom_2EAF74: @ 0x082EAF74
 	@ src/data/moves_info.h:2129 moves_info_line_2129 (+1 aliases)
 	.globl gText_Rom_2EAF7C
 gText_Rom_2EAF7C: @ 0x082EAF7C
-	.string "かみなり$"
+	.string "かみなり"
+	.byte EOS
 	.if (. - gText_Rom_2EAF7C) > 0x5
 	.error "gText_Rom_2EAF7C may not grow beyond its original slot"
 	.endif
@@ -1038,7 +1133,8 @@ gText_Rom_2EAF7C: @ 0x082EAF7C
 	@ src/data/moves_info.h:2156 moves_info_line_2156
 	.globl gText_Rom_2EAF84
 gText_Rom_2EAF84: @ 0x082EAF84
-	.string "いわおとし$"
+	.string "いわおとし"
+	.byte EOS
 	.if (. - gText_Rom_2EAF84) > 0x6
 	.error "gText_Rom_2EAF84 may not grow beyond its original slot"
 	.endif
@@ -1050,7 +1146,8 @@ gText_Rom_2EAF84: @ 0x082EAF84
 	@ src/data/moves_info.h:2175 moves_info_line_2175
 	.globl gText_Rom_2EAF8C
 gText_Rom_2EAF8C: @ 0x082EAF8C
-	.string "じしん$"
+	.string "じしん"
+	.byte EOS
 	.if (. - gText_Rom_2EAF8C) > 0x4
 	.error "gText_Rom_2EAF8C may not grow beyond its original slot"
 	.endif
@@ -1062,7 +1159,8 @@ gText_Rom_2EAF8C: @ 0x082EAF8C
 	@ src/data/moves_info.h:2198 moves_info_line_2198
 	.globl gText_Rom_2EAF94
 gText_Rom_2EAF94: @ 0x082EAF94
-	.string "じわれ$"
+	.string "じわれ"
+	.byte EOS
 	.if (. - gText_Rom_2EAF94) > 0x4
 	.error "gText_Rom_2EAF94 may not grow beyond its original slot"
 	.endif
@@ -1074,7 +1172,8 @@ gText_Rom_2EAF94: @ 0x082EAF94
 	@ src/data/moves_info.h:2220 moves_info_line_2220
 	.globl gText_Rom_2EAF9C
 gText_Rom_2EAF9C: @ 0x082EAF9C
-	.string "あなをほる$"
+	.string "あなをほる"
+	.byte EOS
 	.if (. - gText_Rom_2EAF9C) > 0x6
 	.error "gText_Rom_2EAF9C may not grow beyond its original slot"
 	.endif
@@ -1086,7 +1185,8 @@ gText_Rom_2EAF9C: @ 0x082EAF9C
 	@ src/data/moves_info.h:2252 moves_info_line_2252
 	.globl gText_Rom_2EAFA4
 gText_Rom_2EAFA4: @ 0x082EAFA4
-	.string "どくどく$"
+	.string "どくどく"
+	.byte EOS
 	.if (. - gText_Rom_2EAFA4) > 0x5
 	.error "gText_Rom_2EAFA4 may not grow beyond its original slot"
 	.endif
@@ -1098,7 +1198,8 @@ gText_Rom_2EAFA4: @ 0x082EAFA4
 	@ src/data/moves_info.h:2276 moves_info_line_2276
 	.globl gText_Rom_2EAFAC
 gText_Rom_2EAFAC: @ 0x082EAFAC
-	.string "ねんりき$"
+	.string "ねんりき"
+	.byte EOS
 	.if (. - gText_Rom_2EAFAC) > 0x5
 	.error "gText_Rom_2EAFAC may not grow beyond its original slot"
 	.endif
@@ -1110,7 +1211,8 @@ gText_Rom_2EAFAC: @ 0x082EAFAC
 	@ src/data/moves_info.h:2299 moves_info_line_2299
 	.globl gText_Rom_2EAFB4
 gText_Rom_2EAFB4: @ 0x082EAFB4
-	.string "サイコキネシス$"
+	.string "サイコキネシス"
+	.byte EOS
 	.if (. - gText_Rom_2EAFB4) > 0x8
 	.error "gText_Rom_2EAFB4 may not grow beyond its original slot"
 	.endif
@@ -1121,7 +1223,8 @@ gText_Rom_2EAFB4: @ 0x082EAFB4
 	@ src/data/moves_info.h:2324 moves_info_line_2324
 	.globl gText_Rom_2EAFBC
 gText_Rom_2EAFBC: @ 0x082EAFBC
-	.string "さいみんじゅつ$"
+	.string "さいみんじゅつ"
+	.byte EOS
 	.if (. - gText_Rom_2EAFBC) > 0x8
 	.error "gText_Rom_2EAFBC may not grow beyond its original slot"
 	.endif
@@ -1132,7 +1235,8 @@ gText_Rom_2EAFBC: @ 0x082EAFBC
 	@ src/data/moves_info.h:2347 moves_info_line_2347
 	.globl gText_Rom_2EAFC4
 gText_Rom_2EAFC4: @ 0x082EAFC4
-	.string "ヨガのポーズ$"
+	.string "ヨガのポーズ"
+	.byte EOS
 	.if (. - gText_Rom_2EAFC4) > 0x7
 	.error "gText_Rom_2EAFC4 may not grow beyond its original slot"
 	.endif
@@ -1145,7 +1249,8 @@ gText_Rom_2EAFC4: @ 0x082EAFC4
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EAFCC
 gText_Rom_2EAFCC: @ 0x082EAFCC
-	.string "こうそくいどう$"
+	.string "こうそくいどう"
+	.byte EOS
 	.if (. - gText_Rom_2EAFCC) != 0x8
 	.error "gText_Rom_2EAFCC must retain its original byte length"
 	.endif
@@ -1155,7 +1260,8 @@ gText_Rom_2EAFCC: @ 0x082EAFCC
 	@ src/data/moves_info.h:2403 moves_info_line_2403
 	.globl gText_Rom_2EAFD4
 gText_Rom_2EAFD4: @ 0x082EAFD4
-	.string "でんこうせっか$"
+	.string "でんこうせっか"
+	.byte EOS
 	.if (. - gText_Rom_2EAFD4) > 0x8
 	.error "gText_Rom_2EAFD4 may not grow beyond its original slot"
 	.endif
@@ -1171,7 +1277,8 @@ gText_Rom_2EAFD4: @ 0x082EAFD4
 	@ src/battle_debug.c:363 battle_debug_line_363 (+1 aliases)
 	.globl gText_Rom_2EAFDC
 gText_Rom_2EAFDC: @ 0x082EAFDC
-	.string "いかり$"
+	.string "いかり"
+	.byte EOS
 	.if (. - gText_Rom_2EAFDC) > 0x4
 	.error "gText_Rom_2EAFDC may not grow beyond its original slot"
 	.endif
@@ -1189,7 +1296,8 @@ gText_Rom_2EAFDC: @ 0x082EAFDC
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EAFE4
 gText_Rom_2EAFE4: @ 0x082EAFE4
-	.string "テレポート$"
+	.string "テレポート"
+	.byte EOS
 	.if (. - gText_Rom_2EAFE4) != 0x6
 	.error "gText_Rom_2EAFE4 must retain its original byte length"
 	.endif
@@ -1200,7 +1308,8 @@ gText_Rom_2EAFE4: @ 0x082EAFE4
 	@ src/data/moves_info.h:2470 moves_info_line_2470
 	.globl gText_Rom_2EAFEC
 gText_Rom_2EAFEC: @ 0x082EAFEC
-	.string "ナイトヘッド$"
+	.string "ナイトヘッド"
+	.byte EOS
 	.if (. - gText_Rom_2EAFEC) > 0x7
 	.error "gText_Rom_2EAFEC may not grow beyond its original slot"
 	.endif
@@ -1212,7 +1321,8 @@ gText_Rom_2EAFEC: @ 0x082EAFEC
 	@ src/data/moves_info.h:2490 moves_info_line_2490
 	.globl gText_Rom_2EAFF4
 gText_Rom_2EAFF4: @ 0x082EAFF4
-	.string "ものまね$"
+	.string "ものまね"
+	.byte EOS
 	.if (. - gText_Rom_2EAFF4) > 0x5
 	.error "gText_Rom_2EAFF4 may not grow beyond its original slot"
 	.endif
@@ -1224,7 +1334,8 @@ gText_Rom_2EAFF4: @ 0x082EAFF4
 	@ src/data/moves_info.h:2519 moves_info_line_2519
 	.globl gText_Rom_2EAFFC
 gText_Rom_2EAFFC: @ 0x082EAFFC
-	.string "いやなおと$"
+	.string "いやなおと"
+	.byte EOS
 	.if (. - gText_Rom_2EAFFC) > 0x6
 	.error "gText_Rom_2EAFFC may not grow beyond its original slot"
 	.endif
@@ -1236,7 +1347,8 @@ gText_Rom_2EAFFC: @ 0x082EAFFC
 	@ src/data/moves_info.h:2547 moves_info_line_2547
 	.globl gText_Rom_2EB004
 gText_Rom_2EB004: @ 0x082EB004
-	.string "かげぶんしん$"
+	.string "かげぶんしん"
+	.byte EOS
 	.if (. - gText_Rom_2EB004) > 0x7
 	.error "gText_Rom_2EB004 may not grow beyond its original slot"
 	.endif
@@ -1248,7 +1360,8 @@ gText_Rom_2EB004: @ 0x082EB004
 	@ src/data/moves_info.h:2575 moves_info_line_2575
 	.globl gText_Rom_2EB00C
 gText_Rom_2EB00C: @ 0x082EB00C
-	.string "じこさいせい$"
+	.string "じこさいせい"
+	.byte EOS
 	.if (. - gText_Rom_2EB00C) > 0x7
 	.error "gText_Rom_2EB00C may not grow beyond its original slot"
 	.endif
@@ -1260,7 +1373,8 @@ gText_Rom_2EB00C: @ 0x082EB00C
 	@ src/data/moves_info.h:2606 moves_info_line_2606
 	.globl gText_Rom_2EB014
 gText_Rom_2EB014: @ 0x082EB014
-	.string "かたくなる$"
+	.string "かたくなる"
+	.byte EOS
 	.if (. - gText_Rom_2EB014) > 0x6
 	.error "gText_Rom_2EB014 may not grow beyond its original slot"
 	.endif
@@ -1277,7 +1391,8 @@ gText_Rom_2EB014: @ 0x082EB014
 	@ src/battle_debug.c:380 battle_debug_line_380 (+1 aliases)
 	.globl gText_Rom_2EB01C
 gText_Rom_2EB01C: @ 0x082EB01C
-	.string "ちいさくなる$"
+	.string "ちいさくなる"
+	.byte EOS
 	.if (. - gText_Rom_2EB01C) > 0x7
 	.error "gText_Rom_2EB01C may not grow beyond its original slot"
 	.endif
@@ -1294,7 +1409,8 @@ gText_Rom_2EB01C: @ 0x082EB01C
 	@ src/data/moves_info.h:2662 moves_info_line_2662
 	.globl gText_Rom_2EB024
 gText_Rom_2EB024: @ 0x082EB024
-	.string "えんまく$"
+	.string "えんまく"
+	.byte EOS
 	.if (. - gText_Rom_2EB024) > 0x5
 	.error "gText_Rom_2EB024 may not grow beyond its original slot"
 	.endif
@@ -1306,7 +1422,8 @@ gText_Rom_2EB024: @ 0x082EB024
 	@ src/data/moves_info.h:2688 moves_info_line_2688
 	.globl gText_Rom_2EB02C
 gText_Rom_2EB02C: @ 0x082EB02C
-	.string "あやしいひかり$"
+	.string "あやしいひかり"
+	.byte EOS
 	.if (. - gText_Rom_2EB02C) > 0x8
 	.error "gText_Rom_2EB02C may not grow beyond its original slot"
 	.endif
@@ -1317,7 +1434,8 @@ gText_Rom_2EB02C: @ 0x082EB02C
 	@ src/data/moves_info.h:2710 moves_info_line_2710
 	.globl gText_Rom_2EB034
 gText_Rom_2EB034: @ 0x082EB034
-	.string "からにこもる$"
+	.string "からにこもる"
+	.byte EOS
 	.if (. - gText_Rom_2EB034) > 0x7
 	.error "gText_Rom_2EB034 may not grow beyond its original slot"
 	.endif
@@ -1334,7 +1452,8 @@ gText_Rom_2EB034: @ 0x082EB034
 	@ src/battle_debug.c:362 battle_debug_line_362 (+1 aliases)
 	.globl gText_Rom_2EB03C
 gText_Rom_2EB03C: @ 0x082EB03C
-	.string "まるくなる$"
+	.string "まるくなる"
+	.byte EOS
 	.if (. - gText_Rom_2EB03C) > 0x6
 	.error "gText_Rom_2EB03C may not grow beyond its original slot"
 	.endif
@@ -1351,7 +1470,8 @@ gText_Rom_2EB03C: @ 0x082EB03C
 	@ src/data/moves_info.h:2766 moves_info_line_2766
 	.globl gText_Rom_2EB044
 gText_Rom_2EB044: @ 0x082EB044
-	.string "バリアー$"
+	.string "バリアー"
+	.byte EOS
 	.if (. - gText_Rom_2EB044) > 0x5
 	.error "gText_Rom_2EB044 may not grow beyond its original slot"
 	.endif
@@ -1368,7 +1488,8 @@ gText_Rom_2EB044: @ 0x082EB044
 	@ src/battle_debug.c:410 battle_debug_line_410 (+1 aliases)
 	.globl gText_Rom_2EB04C
 gText_Rom_2EB04C: @ 0x082EB04C
-	.string "ひかりのかべ$"
+	.string "ひかりのかべ"
+	.byte EOS
 	.if (. - gText_Rom_2EB04C) > 0x7
 	.error "gText_Rom_2EB04C may not grow beyond its original slot"
 	.endif
@@ -1385,7 +1506,8 @@ gText_Rom_2EB04C: @ 0x082EB04C
 	@ src/data/moves_info.h:2818 moves_info_line_2818
 	.globl gText_Rom_2EB054
 gText_Rom_2EB054: @ 0x082EB054
-	.string "くろいきり$"
+	.string "くろいきり"
+	.byte EOS
 	.if (. - gText_Rom_2EB054) > 0x6
 	.error "gText_Rom_2EB054 may not grow beyond its original slot"
 	.endif
@@ -1402,7 +1524,8 @@ gText_Rom_2EB054: @ 0x082EB054
 	@ src/battle_debug.c:409 battle_debug_line_409 (+1 aliases)
 	.globl gText_Rom_2EB05C
 gText_Rom_2EB05C: @ 0x082EB05C
-	.string "リフレクター$"
+	.string "リフレクター"
+	.byte EOS
 	.if (. - gText_Rom_2EB05C) > 0x7
 	.error "gText_Rom_2EB05C may not grow beyond its original slot"
 	.endif
@@ -1414,7 +1537,8 @@ gText_Rom_2EB05C: @ 0x082EB05C
 	@ src/battle_debug.c:369 battle_debug_line_369 (+1 aliases)
 	.globl gText_Rom_2EB064
 gText_Rom_2EB064: @ 0x082EB064
-	.string "きあいだめ$"
+	.string "きあいだめ"
+	.byte EOS
 	.if (. - gText_Rom_2EB064) > 0x6
 	.error "gText_Rom_2EB064 may not grow beyond its original slot"
 	.endif
@@ -1426,7 +1550,8 @@ gText_Rom_2EB064: @ 0x082EB064
 	@ src/data/easy_chat/easy_chat_group_actions.h:130 easy_chat_group_actions_line_130 (+1 aliases)
 	.globl gText_Rom_2EB06C
 gText_Rom_2EB06C: @ 0x082EB06C
-	.string "がまん$"
+	.string "がまん"
+	.byte EOS
 	.if (. - gText_Rom_2EB06C) > 0x4
 	.error "gText_Rom_2EB06C may not grow beyond its original slot"
 	.endif
@@ -1443,7 +1568,8 @@ gText_Rom_2EB06C: @ 0x082EB06C
 	@ src/data/moves_info.h:2922 moves_info_line_2922
 	.globl gText_Rom_2EB074
 gText_Rom_2EB074: @ 0x082EB074
-	.string "ゆびをふる$"
+	.string "ゆびをふる"
+	.byte EOS
 	.if (. - gText_Rom_2EB074) > 0x6
 	.error "gText_Rom_2EB074 may not grow beyond its original slot"
 	.endif
@@ -1455,7 +1581,8 @@ gText_Rom_2EB074: @ 0x082EB074
 	@ src/data/moves_info.h:2951 moves_info_line_2951
 	.globl gText_Rom_2EB07C
 gText_Rom_2EB07C: @ 0x082EB07C
-	.string "オウムがえし$"
+	.string "オウムがえし"
+	.byte EOS
 	.if (. - gText_Rom_2EB07C) > 0x7
 	.error "gText_Rom_2EB07C may not grow beyond its original slot"
 	.endif
@@ -1467,7 +1594,8 @@ gText_Rom_2EB07C: @ 0x082EB07C
 	@ src/data/moves_info.h:2981 moves_info_line_2981
 	.globl gText_Rom_2EB084
 gText_Rom_2EB084: @ 0x082EB084
-	.string "じばく$"
+	.string "じばく"
+	.byte EOS
 	.if (. - gText_Rom_2EB084) > 0x4
 	.error "gText_Rom_2EB084 may not grow beyond its original slot"
 	.endif
@@ -1479,7 +1607,8 @@ gText_Rom_2EB084: @ 0x082EB084
 	@ src/data/moves_info.h:3004 moves_info_line_3004
 	.globl gText_Rom_2EB08C
 gText_Rom_2EB08C: @ 0x082EB08C
-	.string "タマゴばくだん$"
+	.string "タマゴばくだん"
+	.byte EOS
 	.if (. - gText_Rom_2EB08C) > 0x8
 	.error "gText_Rom_2EB08C may not grow beyond its original slot"
 	.endif
@@ -1490,7 +1619,8 @@ gText_Rom_2EB08C: @ 0x082EB08C
 	@ src/data/moves_info.h:3025 moves_info_line_3025
 	.globl gText_Rom_2EB094
 gText_Rom_2EB094: @ 0x082EB094
-	.string "したでなめる$"
+	.string "したでなめる"
+	.byte EOS
 	.if (. - gText_Rom_2EB094) > 0x7
 	.error "gText_Rom_2EB094 may not grow beyond its original slot"
 	.endif
@@ -1502,7 +1632,8 @@ gText_Rom_2EB094: @ 0x082EB094
 	@ src/data/moves_info.h:3050 moves_info_line_3050
 	.globl gText_Rom_2EB09C
 gText_Rom_2EB09C: @ 0x082EB09C
-	.string "スモッグ$"
+	.string "スモッグ"
+	.byte EOS
 	.if (. - gText_Rom_2EB09C) > 0x5
 	.error "gText_Rom_2EB09C may not grow beyond its original slot"
 	.endif
@@ -1515,7 +1646,8 @@ gText_Rom_2EB09C: @ 0x082EB09C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB0A4
 gText_Rom_2EB0A4: @ 0x082EB0A4
-	.string "ヘドロこうげき$"
+	.string "ヘドロこうげき"
+	.byte EOS
 	.if (. - gText_Rom_2EB0A4) != 0x8
 	.error "gText_Rom_2EB0A4 must retain its original byte length"
 	.endif
@@ -1525,7 +1657,8 @@ gText_Rom_2EB0A4: @ 0x082EB0A4
 	@ src/data/moves_info.h:3096 moves_info_line_3096
 	.globl gText_Rom_2EB0AC
 gText_Rom_2EB0AC: @ 0x082EB0AC
-	.string "ホネこんぼう$"
+	.string "ホネこんぼう"
+	.byte EOS
 	.if (. - gText_Rom_2EB0AC) > 0x7
 	.error "gText_Rom_2EB0AC may not grow beyond its original slot"
 	.endif
@@ -1537,7 +1670,8 @@ gText_Rom_2EB0AC: @ 0x082EB0AC
 	@ src/data/moves_info.h:3119 moves_info_line_3119
 	.globl gText_Rom_2EB0B4
 gText_Rom_2EB0B4: @ 0x082EB0B4
-	.string "だいもんじ$"
+	.string "だいもんじ"
+	.byte EOS
 	.if (. - gText_Rom_2EB0B4) > 0x6
 	.error "gText_Rom_2EB0B4 may not grow beyond its original slot"
 	.endif
@@ -1549,7 +1683,8 @@ gText_Rom_2EB0B4: @ 0x082EB0B4
 	@ src/data/moves_info.h:3143 moves_info_line_3143
 	.globl gText_Rom_2EB0BC
 gText_Rom_2EB0BC: @ 0x082EB0BC
-	.string "たきのぼり$"
+	.string "たきのぼり"
+	.byte EOS
 	.if (. - gText_Rom_2EB0BC) > 0x6
 	.error "gText_Rom_2EB0BC may not grow beyond its original slot"
 	.endif
@@ -1562,7 +1697,8 @@ gText_Rom_2EB0BC: @ 0x082EB0BC
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB0C4
 gText_Rom_2EB0C4: @ 0x082EB0C4
-	.string "からではさむ$"
+	.string "からではさむ"
+	.byte EOS
 	.if (. - gText_Rom_2EB0C4) != 0x7
 	.error "gText_Rom_2EB0C4 must retain its original byte length"
 	.endif
@@ -1573,7 +1709,8 @@ gText_Rom_2EB0C4: @ 0x082EB0C4
 	@ src/data/moves_info.h:3196 moves_info_line_3196
 	.globl gText_Rom_2EB0CC
 gText_Rom_2EB0CC: @ 0x082EB0CC
-	.string "スピードスター$"
+	.string "スピードスター"
+	.byte EOS
 	.if (. - gText_Rom_2EB0CC) > 0x8
 	.error "gText_Rom_2EB0CC may not grow beyond its original slot"
 	.endif
@@ -1585,7 +1722,8 @@ gText_Rom_2EB0CC: @ 0x082EB0CC
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB0D4
 gText_Rom_2EB0D4: @ 0x082EB0D4
-	.string "ロケットずつき$"
+	.string "ロケットずつき"
+	.byte EOS
 	.if (. - gText_Rom_2EB0D4) != 0x8
 	.error "gText_Rom_2EB0D4 must retain its original byte length"
 	.endif
@@ -1595,7 +1733,8 @@ gText_Rom_2EB0D4: @ 0x082EB0D4
 	@ src/data/moves_info.h:3248 moves_info_line_3248
 	.globl gText_Rom_2EB0DC
 gText_Rom_2EB0DC: @ 0x082EB0DC
-	.string "とげキャノン$"
+	.string "とげキャノン"
+	.byte EOS
 	.if (. - gText_Rom_2EB0DC) > 0x7
 	.error "gText_Rom_2EB0DC may not grow beyond its original slot"
 	.endif
@@ -1607,7 +1746,8 @@ gText_Rom_2EB0DC: @ 0x082EB0DC
 	@ src/data/moves_info.h:3268 moves_info_line_3268
 	.globl gText_Rom_2EB0E4
 gText_Rom_2EB0E4: @ 0x082EB0E4
-	.string "からみつく$"
+	.string "からみつく"
+	.byte EOS
 	.if (. - gText_Rom_2EB0E4) > 0x6
 	.error "gText_Rom_2EB0E4 may not grow beyond its original slot"
 	.endif
@@ -1620,7 +1760,8 @@ gText_Rom_2EB0E4: @ 0x082EB0E4
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB0EC
 gText_Rom_2EB0EC: @ 0x082EB0EC
-	.string "ドわすれ$"
+	.string "ドわすれ"
+	.byte EOS
 	.if (. - gText_Rom_2EB0EC) != 0x5
 	.error "gText_Rom_2EB0EC must retain its original byte length"
 	.endif
@@ -1631,7 +1772,8 @@ gText_Rom_2EB0EC: @ 0x082EB0EC
 	@ src/data/moves_info.h:3321 moves_info_line_3321
 	.globl gText_Rom_2EB0F4
 gText_Rom_2EB0F4: @ 0x082EB0F4
-	.string "スプーンまげ$"
+	.string "スプーンまげ"
+	.byte EOS
 	.if (. - gText_Rom_2EB0F4) > 0x7
 	.error "gText_Rom_2EB0F4 may not grow beyond its original slot"
 	.endif
@@ -1643,7 +1785,8 @@ gText_Rom_2EB0F4: @ 0x082EB0F4
 	@ src/data/moves_info.h:3347 moves_info_line_3347
 	.globl gText_Rom_2EB0FC
 gText_Rom_2EB0FC: @ 0x082EB0FC
-	.string "タマゴうみ$"
+	.string "タマゴうみ"
+	.byte EOS
 	.if (. - gText_Rom_2EB0FC) > 0x6
 	.error "gText_Rom_2EB0FC may not grow beyond its original slot"
 	.endif
@@ -1655,7 +1798,8 @@ gText_Rom_2EB0FC: @ 0x082EB0FC
 	@ src/data/moves_info.h:3372 moves_info_line_3372
 	.globl gText_Rom_2EB104
 gText_Rom_2EB104: @ 0x082EB104
-	.string "とびひざげり$"
+	.string "とびひざげり"
+	.byte EOS
 	.if (. - gText_Rom_2EB104) > 0x7
 	.error "gText_Rom_2EB104 may not grow beyond its original slot"
 	.endif
@@ -1667,7 +1811,8 @@ gText_Rom_2EB104: @ 0x082EB104
 	@ src/data/moves_info.h:3400 moves_info_line_3400
 	.globl gText_Rom_2EB10C
 gText_Rom_2EB10C: @ 0x082EB10C
-	.string "へびにらみ$"
+	.string "へびにらみ"
+	.byte EOS
 	.if (. - gText_Rom_2EB10C) > 0x6
 	.error "gText_Rom_2EB10C may not grow beyond its original slot"
 	.endif
@@ -1679,7 +1824,8 @@ gText_Rom_2EB10C: @ 0x082EB10C
 	@ src/data/moves_info.h:3429 moves_info_line_3429
 	.globl gText_Rom_2EB114
 gText_Rom_2EB114: @ 0x082EB114
-	.string "ゆめくい$"
+	.string "ゆめくい"
+	.byte EOS
 	.if (. - gText_Rom_2EB114) > 0x5
 	.error "gText_Rom_2EB114 may not grow beyond its original slot"
 	.endif
@@ -1691,7 +1837,8 @@ gText_Rom_2EB114: @ 0x082EB114
 	@ src/data/moves_info.h:3451 moves_info_line_3451
 	.globl gText_Rom_2EB11C
 gText_Rom_2EB11C: @ 0x082EB11C
-	.string "どくガス$"
+	.string "どくガス"
+	.byte EOS
 	.if (. - gText_Rom_2EB11C) > 0x5
 	.error "gText_Rom_2EB11C may not grow beyond its original slot"
 	.endif
@@ -1703,7 +1850,8 @@ gText_Rom_2EB11C: @ 0x082EB11C
 	@ src/data/moves_info.h:3479 moves_info_line_3479
 	.globl gText_Rom_2EB124
 gText_Rom_2EB124: @ 0x082EB124
-	.string "たまなげ$"
+	.string "たまなげ"
+	.byte EOS
 	.if (. - gText_Rom_2EB124) > 0x5
 	.error "gText_Rom_2EB124 may not grow beyond its original slot"
 	.endif
@@ -1715,7 +1863,8 @@ gText_Rom_2EB124: @ 0x082EB124
 	@ src/data/moves_info.h:3500 moves_info_line_3500
 	.globl gText_Rom_2EB12C
 gText_Rom_2EB12C: @ 0x082EB12C
-	.string "きゅうけつ$"
+	.string "きゅうけつ"
+	.byte EOS
 	.if (. - gText_Rom_2EB12C) > 0x6
 	.error "gText_Rom_2EB12C may not grow beyond its original slot"
 	.endif
@@ -1727,7 +1876,8 @@ gText_Rom_2EB12C: @ 0x082EB12C
 	@ src/data/moves_info.h:3523 moves_info_line_3523
 	.globl gText_Rom_2EB134
 gText_Rom_2EB134: @ 0x082EB134
-	.string "あくまのキッス$"
+	.string "あくまのキッス"
+	.byte EOS
 	.if (. - gText_Rom_2EB134) > 0x8
 	.error "gText_Rom_2EB134 may not grow beyond its original slot"
 	.endif
@@ -1738,7 +1888,8 @@ gText_Rom_2EB134: @ 0x082EB134
 	@ src/data/moves_info.h:3546 moves_info_line_3546
 	.globl gText_Rom_2EB13C
 gText_Rom_2EB13C: @ 0x082EB13C
-	.string "ゴッドバード$"
+	.string "ゴッドバード"
+	.byte EOS
 	.if (. - gText_Rom_2EB13C) > 0x7
 	.error "gText_Rom_2EB13C may not grow beyond its original slot"
 	.endif
@@ -1750,7 +1901,8 @@ gText_Rom_2EB13C: @ 0x082EB13C
 	@ src/data/moves_info.h:3576 moves_info_line_3576
 	.globl gText_Rom_2EB144
 gText_Rom_2EB144: @ 0x082EB144
-	.string "へんしん$"
+	.string "へんしん"
+	.byte EOS
 	.if (. - gText_Rom_2EB144) > 0x5
 	.error "gText_Rom_2EB144 may not grow beyond its original slot"
 	.endif
@@ -1762,7 +1914,8 @@ gText_Rom_2EB144: @ 0x082EB144
 	@ src/data/moves_info.h:3630 moves_info_line_3630
 	.globl gText_Rom_2EB154
 gText_Rom_2EB154: @ 0x082EB154
-	.string "ピヨピヨパンチ$"
+	.string "ピヨピヨパンチ"
+	.byte EOS
 	.if (. - gText_Rom_2EB154) > 0x8
 	.error "gText_Rom_2EB154 may not grow beyond its original slot"
 	.endif
@@ -1774,7 +1927,8 @@ gText_Rom_2EB154: @ 0x082EB154
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB15C
 gText_Rom_2EB15C: @ 0x082EB15C
-	.string "キノコのほうし$"
+	.string "キノコのほうし"
+	.byte EOS
 	.if (. - gText_Rom_2EB15C) != 0x8
 	.error "gText_Rom_2EB15C must retain its original byte length"
 	.endif
@@ -1784,7 +1938,8 @@ gText_Rom_2EB15C: @ 0x082EB15C
 	@ src/data/moves_info.h:3682 moves_info_line_3682
 	.globl gText_Rom_2EB164
 gText_Rom_2EB164: @ 0x082EB164
-	.string "フラッシュ$"
+	.string "フラッシュ"
+	.byte EOS
 	.if (. - gText_Rom_2EB164) > 0x6
 	.error "gText_Rom_2EB164 may not grow beyond its original slot"
 	.endif
@@ -1796,7 +1951,8 @@ gText_Rom_2EB164: @ 0x082EB164
 	@ src/data/moves_info.h:3708 moves_info_line_3708
 	.globl gText_Rom_2EB16C
 gText_Rom_2EB16C: @ 0x082EB16C
-	.string "サイコウェーブ$"
+	.string "サイコウェーブ"
+	.byte EOS
 	.if (. - gText_Rom_2EB16C) > 0x8
 	.error "gText_Rom_2EB16C may not grow beyond its original slot"
 	.endif
@@ -1807,7 +1963,8 @@ gText_Rom_2EB16C: @ 0x082EB16C
 	@ src/data/moves_info.h:3728 moves_info_line_3728
 	.globl gText_Rom_2EB174
 gText_Rom_2EB174: @ 0x082EB174
-	.string "はねる$"
+	.string "はねる"
+	.byte EOS
 	.if (. - gText_Rom_2EB174) > 0x4
 	.error "gText_Rom_2EB174 may not grow beyond its original slot"
 	.endif
@@ -1819,7 +1976,8 @@ gText_Rom_2EB174: @ 0x082EB174
 	@ src/data/moves_info.h:3751 moves_info_line_3751
 	.globl gText_Rom_2EB17C
 gText_Rom_2EB17C: @ 0x082EB17C
-	.string "とける$"
+	.string "とける"
+	.byte EOS
 	.if (. - gText_Rom_2EB17C) > 0x4
 	.error "gText_Rom_2EB17C may not grow beyond its original slot"
 	.endif
@@ -1831,7 +1989,8 @@ gText_Rom_2EB17C: @ 0x082EB17C
 	@ src/data/moves_info.h:3779 moves_info_line_3779
 	.globl gText_Rom_2EB184
 gText_Rom_2EB184: @ 0x082EB184
-	.string "クラブハンマー$"
+	.string "クラブハンマー"
+	.byte EOS
 	.if (. - gText_Rom_2EB184) > 0x8
 	.error "gText_Rom_2EB184 may not grow beyond its original slot"
 	.endif
@@ -1842,7 +2001,8 @@ gText_Rom_2EB184: @ 0x082EB184
 	@ src/data/moves_info.h:3801 moves_info_line_3801
 	.globl gText_Rom_2EB18C
 gText_Rom_2EB18C: @ 0x082EB18C
-	.string "だいばくはつ$"
+	.string "だいばくはつ"
+	.byte EOS
 	.if (. - gText_Rom_2EB18C) > 0x7
 	.error "gText_Rom_2EB18C may not grow beyond its original slot"
 	.endif
@@ -1854,7 +2014,8 @@ gText_Rom_2EB18C: @ 0x082EB18C
 	@ src/data/moves_info.h:3824 moves_info_line_3824
 	.globl gText_Rom_2EB194
 gText_Rom_2EB194: @ 0x082EB194
-	.string "みだれひっかき$"
+	.string "みだれひっかき"
+	.byte EOS
 	.if (. - gText_Rom_2EB194) > 0x8
 	.error "gText_Rom_2EB194 may not grow beyond its original slot"
 	.endif
@@ -1865,7 +2026,8 @@ gText_Rom_2EB194: @ 0x082EB194
 	@ src/data/moves_info.h:3845 moves_info_line_3845
 	.globl gText_Rom_2EB19C
 gText_Rom_2EB19C: @ 0x082EB19C
-	.string "ホネブーメラン$"
+	.string "ホネブーメラン"
+	.byte EOS
 	.if (. - gText_Rom_2EB19C) > 0x8
 	.error "gText_Rom_2EB19C may not grow beyond its original slot"
 	.endif
@@ -1876,7 +2038,8 @@ gText_Rom_2EB19C: @ 0x082EB19C
 	@ src/data/moves_info.h:3866 moves_info_line_3866
 	.globl gText_Rom_2EB1A4
 gText_Rom_2EB1A4: @ 0x082EB1A4
-	.string "ねむる$"
+	.string "ねむる"
+	.byte EOS
 	.if (. - gText_Rom_2EB1A4) > 0x4
 	.error "gText_Rom_2EB1A4 may not grow beyond its original slot"
 	.endif
@@ -1888,7 +2051,8 @@ gText_Rom_2EB1A4: @ 0x082EB1A4
 	@ src/data/moves_info.h:3891 moves_info_line_3891
 	.globl gText_Rom_2EB1AC
 gText_Rom_2EB1AC: @ 0x082EB1AC
-	.string "いわなだれ$"
+	.string "いわなだれ"
+	.byte EOS
 	.if (. - gText_Rom_2EB1AC) > 0x6
 	.error "gText_Rom_2EB1AC may not grow beyond its original slot"
 	.endif
@@ -1900,7 +2064,8 @@ gText_Rom_2EB1AC: @ 0x082EB1AC
 	@ src/data/moves_info.h:3917 moves_info_line_3917
 	.globl gText_Rom_2EB1B4
 gText_Rom_2EB1B4: @ 0x082EB1B4
-	.string "ひっさつまえば$"
+	.string "ひっさつまえば"
+	.byte EOS
 	.if (. - gText_Rom_2EB1B4) > 0x8
 	.error "gText_Rom_2EB1B4 may not grow beyond its original slot"
 	.endif
@@ -1911,7 +2076,8 @@ gText_Rom_2EB1B4: @ 0x082EB1B4
 	@ src/data/moves_info.h:3943 moves_info_line_3943
 	.globl gText_Rom_2EB1BC
 gText_Rom_2EB1BC: @ 0x082EB1BC
-	.string "かくばる$"
+	.string "かくばる"
+	.byte EOS
 	.if (. - gText_Rom_2EB1BC) > 0x5
 	.error "gText_Rom_2EB1BC may not grow beyond its original slot"
 	.endif
@@ -1923,7 +2089,8 @@ gText_Rom_2EB1BC: @ 0x082EB1BC
 	@ src/data/moves_info.h:3971 moves_info_line_3971
 	.globl gText_Rom_2EB1C4
 gText_Rom_2EB1C4: @ 0x082EB1C4
-	.string "テクスチャー$"
+	.string "テクスチャー"
+	.byte EOS
 	.if (. - gText_Rom_2EB1C4) > 0x7
 	.error "gText_Rom_2EB1C4 may not grow beyond its original slot"
 	.endif
@@ -1935,7 +2102,8 @@ gText_Rom_2EB1C4: @ 0x082EB1C4
 	@ src/data/moves_info.h:3995 moves_info_line_3995
 	.globl gText_Rom_2EB1CC
 gText_Rom_2EB1CC: @ 0x082EB1CC
-	.string "トライアタック$"
+	.string "トライアタック"
+	.byte EOS
 	.if (. - gText_Rom_2EB1CC) > 0x8
 	.error "gText_Rom_2EB1CC may not grow beyond its original slot"
 	.endif
@@ -1946,7 +2114,8 @@ gText_Rom_2EB1CC: @ 0x082EB1CC
 	@ src/data/moves_info.h:4021 moves_info_line_4021
 	.globl gText_Rom_2EB1D4
 gText_Rom_2EB1D4: @ 0x082EB1D4
-	.string "いかりのまえば$"
+	.string "いかりのまえば"
+	.byte EOS
 	.if (. - gText_Rom_2EB1D4) > 0x8
 	.error "gText_Rom_2EB1D4 may not grow beyond its original slot"
 	.endif
@@ -1957,7 +2126,8 @@ gText_Rom_2EB1D4: @ 0x082EB1D4
 	@ src/data/moves_info.h:4044 moves_info_line_4044
 	.globl gText_Rom_2EB1DC
 gText_Rom_2EB1DC: @ 0x082EB1DC
-	.string "きりさく$"
+	.string "きりさく"
+	.byte EOS
 	.if (. - gText_Rom_2EB1DC) > 0x5
 	.error "gText_Rom_2EB1DC may not grow beyond its original slot"
 	.endif
@@ -1969,7 +2139,8 @@ gText_Rom_2EB1DC: @ 0x082EB1DC
 	@ src/data/moves_info.h:4067 moves_info_line_4067
 	.globl gText_Rom_2EB1E4
 gText_Rom_2EB1E4: @ 0x082EB1E4
-	.string "みがわり$"
+	.string "みがわり"
+	.byte EOS
 	.if (. - gText_Rom_2EB1E4) > 0x5
 	.error "gText_Rom_2EB1E4 may not grow beyond its original slot"
 	.endif
@@ -1981,7 +2152,8 @@ gText_Rom_2EB1E4: @ 0x082EB1E4
 	@ src/data/moves_info.h:4092 moves_info_line_4092
 	.globl gText_Rom_2EB1EC
 gText_Rom_2EB1EC: @ 0x082EB1EC
-	.string "わるあがき$"
+	.string "わるあがき"
+	.byte EOS
 	.if (. - gText_Rom_2EB1EC) > 0x6
 	.error "gText_Rom_2EB1EC may not grow beyond its original slot"
 	.endif
@@ -1993,7 +2165,8 @@ gText_Rom_2EB1EC: @ 0x082EB1EC
 	@ src/data/moves_info.h:4137 moves_info_line_4137
 	.globl gText_Rom_2EB1F4
 gText_Rom_2EB1F4: @ 0x082EB1F4
-	.string "スケッチ$"
+	.string "スケッチ"
+	.byte EOS
 	.if (. - gText_Rom_2EB1F4) > 0x5
 	.error "gText_Rom_2EB1F4 may not grow beyond its original slot"
 	.endif
@@ -2005,7 +2178,8 @@ gText_Rom_2EB1F4: @ 0x082EB1F4
 	@ src/data/moves_info.h:4169 moves_info_line_4169
 	.globl gText_Rom_2EB1FC
 gText_Rom_2EB1FC: @ 0x082EB1FC
-	.string "トリプルキック$"
+	.string "トリプルキック"
+	.byte EOS
 	.if (. - gText_Rom_2EB1FC) > 0x8
 	.error "gText_Rom_2EB1FC may not grow beyond its original slot"
 	.endif
@@ -2021,7 +2195,8 @@ gText_Rom_2EB1FC: @ 0x082EB1FC
 	@ src/battle_main.c:379 battle_main_line_379 (+1 aliases)
 	.globl gText_Rom_2EB204
 gText_Rom_2EB204: @ 0x082EB204
-	.string "どろぼう$"
+	.string "どろぼう"
+	.byte EOS
 	.if (. - gText_Rom_2EB204) > 0x5
 	.error "gText_Rom_2EB204 may not grow beyond its original slot"
 	.endif
@@ -2038,7 +2213,8 @@ gText_Rom_2EB204: @ 0x082EB204
 	@ src/data/moves_info.h:4217 moves_info_line_4217
 	.globl gText_Rom_2EB20C
 gText_Rom_2EB20C: @ 0x082EB20C
-	.string "クモのす$"
+	.string "クモのす"
+	.byte EOS
 	.if (. - gText_Rom_2EB20C) > 0x5
 	.error "gText_Rom_2EB20C may not grow beyond its original slot"
 	.endif
@@ -2050,7 +2226,8 @@ gText_Rom_2EB20C: @ 0x082EB20C
 	@ src/data/moves_info.h:4240 moves_info_line_4240
 	.globl gText_Rom_2EB214
 gText_Rom_2EB214: @ 0x082EB214
-	.string "こころのめ$"
+	.string "こころのめ"
+	.byte EOS
 	.if (. - gText_Rom_2EB214) > 0x6
 	.error "gText_Rom_2EB214 may not grow beyond its original slot"
 	.endif
@@ -2062,7 +2239,8 @@ gText_Rom_2EB214: @ 0x082EB214
 	@ src/data/moves_info.h:4261 moves_info_line_4261
 	.globl gText_Rom_2EB21C
 gText_Rom_2EB21C: @ 0x082EB21C
-	.string "あくむ$"
+	.string "あくむ"
+	.byte EOS
 	.if (. - gText_Rom_2EB21C) > 0x4
 	.error "gText_Rom_2EB21C may not grow beyond its original slot"
 	.endif
@@ -2074,7 +2252,8 @@ gText_Rom_2EB21C: @ 0x082EB21C
 	@ src/data/moves_info.h:4283 moves_info_line_4283
 	.globl gText_Rom_2EB224
 gText_Rom_2EB224: @ 0x082EB224
-	.string "かえんぐるま$"
+	.string "かえんぐるま"
+	.byte EOS
 	.if (. - gText_Rom_2EB224) > 0x7
 	.error "gText_Rom_2EB224 may not grow beyond its original slot"
 	.endif
@@ -2086,7 +2265,8 @@ gText_Rom_2EB224: @ 0x082EB224
 	@ src/data/moves_info.h:4308 moves_info_line_4308
 	.globl gText_Rom_2EB22C
 gText_Rom_2EB22C: @ 0x082EB22C
-	.string "いびき$"
+	.string "いびき"
+	.byte EOS
 	.if (. - gText_Rom_2EB22C) > 0x4
 	.error "gText_Rom_2EB22C may not grow beyond its original slot"
 	.endif
@@ -2098,7 +2278,8 @@ gText_Rom_2EB22C: @ 0x082EB22C
 	@ src/data/moves_info.h:4335 moves_info_line_4335
 	.globl gText_Rom_2EB234
 gText_Rom_2EB234: @ 0x082EB234
-	.string "のろい$"
+	.string "のろい"
+	.byte EOS
 	.if (. - gText_Rom_2EB234) > 0x4
 	.error "gText_Rom_2EB234 may not grow beyond its original slot"
 	.endif
@@ -2110,7 +2291,8 @@ gText_Rom_2EB234: @ 0x082EB234
 	@ src/data/moves_info.h:4368 moves_info_line_4368
 	.globl gText_Rom_2EB23C
 gText_Rom_2EB23C: @ 0x082EB23C
-	.string "じたばた$"
+	.string "じたばた"
+	.byte EOS
 	.if (. - gText_Rom_2EB23C) > 0x5
 	.error "gText_Rom_2EB23C may not grow beyond its original slot"
 	.endif
@@ -2122,7 +2304,8 @@ gText_Rom_2EB23C: @ 0x082EB23C
 	@ src/data/moves_info.h:4389 moves_info_line_4389
 	.globl gText_Rom_2EB244
 gText_Rom_2EB244: @ 0x082EB244
-	.string "テクスチャー2$"
+	.string "テクスチャー2"
+	.byte EOS
 	.if (. - gText_Rom_2EB244) > 0x8
 	.error "gText_Rom_2EB244 may not grow beyond its original slot"
 	.endif
@@ -2133,7 +2316,8 @@ gText_Rom_2EB244: @ 0x082EB244
 	@ src/data/moves_info.h:4413 moves_info_line_4413
 	.globl gText_Rom_2EB24C
 gText_Rom_2EB24C: @ 0x082EB24C
-	.string "エアロブラスト$"
+	.string "エアロブラスト"
+	.byte EOS
 	.if (. - gText_Rom_2EB24C) > 0x8
 	.error "gText_Rom_2EB24C may not grow beyond its original slot"
 	.endif
@@ -2145,7 +2329,8 @@ gText_Rom_2EB24C: @ 0x082EB24C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB254
 gText_Rom_2EB254: @ 0x082EB254
-	.string "わたほうし$"
+	.string "わたほうし"
+	.byte EOS
 	.if (. - gText_Rom_2EB254) != 0x6
 	.error "gText_Rom_2EB254 must retain its original byte length"
 	.endif
@@ -2156,7 +2341,8 @@ gText_Rom_2EB254: @ 0x082EB254
 	@ src/data/moves_info.h:4462 moves_info_line_4462
 	.globl gText_Rom_2EB25C
 gText_Rom_2EB25C: @ 0x082EB25C
-	.string "きしかいせい$"
+	.string "きしかいせい"
+	.byte EOS
 	.if (. - gText_Rom_2EB25C) > 0x7
 	.error "gText_Rom_2EB25C may not grow beyond its original slot"
 	.endif
@@ -2168,7 +2354,8 @@ gText_Rom_2EB25C: @ 0x082EB25C
 	@ src/data/moves_info.h:4483 moves_info_line_4483
 	.globl gText_Rom_2EB264
 gText_Rom_2EB264: @ 0x082EB264
-	.string "うらみ$"
+	.string "うらみ"
+	.byte EOS
 	.if (. - gText_Rom_2EB264) > 0x4
 	.error "gText_Rom_2EB264 may not grow beyond its original slot"
 	.endif
@@ -2180,7 +2367,8 @@ gText_Rom_2EB264: @ 0x082EB264
 	@ src/data/moves_info.h:4506 moves_info_line_4506
 	.globl gText_Rom_2EB26C
 gText_Rom_2EB26C: @ 0x082EB26C
-	.string "こなゆき$"
+	.string "こなゆき"
+	.byte EOS
 	.if (. - gText_Rom_2EB26C) > 0x5
 	.error "gText_Rom_2EB26C may not grow beyond its original slot"
 	.endif
@@ -2192,7 +2380,8 @@ gText_Rom_2EB26C: @ 0x082EB26C
 	@ src/data/moves_info.h:4529 moves_info_line_4529
 	.globl gText_Rom_2EB274
 gText_Rom_2EB274: @ 0x082EB274
-	.string "まもる$"
+	.string "まもる"
+	.byte EOS
 	.if (. - gText_Rom_2EB274) > 0x4
 	.error "gText_Rom_2EB274 may not grow beyond its original slot"
 	.endif
@@ -2204,7 +2393,8 @@ gText_Rom_2EB274: @ 0x082EB274
 	@ src/data/moves_info.h:4562 moves_info_line_4562
 	.globl gText_Rom_2EB27C
 gText_Rom_2EB27C: @ 0x082EB27C
-	.string "マッハパンチ$"
+	.string "マッハパンチ"
+	.byte EOS
 	.if (. - gText_Rom_2EB27C) > 0x7
 	.error "gText_Rom_2EB27C may not grow beyond its original slot"
 	.endif
@@ -2216,7 +2406,8 @@ gText_Rom_2EB27C: @ 0x082EB27C
 	@ src/data/moves_info.h:4584 moves_info_line_4584
 	.globl gText_Rom_2EB284
 gText_Rom_2EB284: @ 0x082EB284
-	.string "こわいかお$"
+	.string "こわいかお"
+	.byte EOS
 	.if (. - gText_Rom_2EB284) > 0x6
 	.error "gText_Rom_2EB284 may not grow beyond its original slot"
 	.endif
@@ -2228,7 +2419,8 @@ gText_Rom_2EB284: @ 0x082EB284
 	@ src/data/moves_info.h:4610 moves_info_line_4610
 	.globl gText_Rom_2EB28C
 gText_Rom_2EB28C: @ 0x082EB28C
-	.string "だましうち$"
+	.string "だましうち"
+	.byte EOS
 	.if (. - gText_Rom_2EB28C) > 0x6
 	.error "gText_Rom_2EB28C may not grow beyond its original slot"
 	.endif
@@ -2240,7 +2432,8 @@ gText_Rom_2EB28C: @ 0x082EB28C
 	@ src/data/moves_info.h:4631 moves_info_line_4631
 	.globl gText_Rom_2EB294
 gText_Rom_2EB294: @ 0x082EB294
-	.string "てんしのキッス$"
+	.string "てんしのキッス"
+	.byte EOS
 	.if (. - gText_Rom_2EB294) > 0x8
 	.error "gText_Rom_2EB294 may not grow beyond its original slot"
 	.endif
@@ -2251,7 +2444,8 @@ gText_Rom_2EB294: @ 0x082EB294
 	@ src/data/moves_info.h:4653 moves_info_line_4653
 	.globl gText_Rom_2EB29C
 gText_Rom_2EB29C: @ 0x082EB29C
-	.string "はらだいこ$"
+	.string "はらだいこ"
+	.byte EOS
 	.if (. - gText_Rom_2EB29C) > 0x6
 	.error "gText_Rom_2EB29C may not grow beyond its original slot"
 	.endif
@@ -2263,7 +2457,8 @@ gText_Rom_2EB29C: @ 0x082EB29C
 	@ src/data/moves_info.h:4681 moves_info_line_4681
 	.globl gText_Rom_2EB2A4
 gText_Rom_2EB2A4: @ 0x082EB2A4
-	.string "ヘドロばくだん$"
+	.string "ヘドロばくだん"
+	.byte EOS
 	.if (. - gText_Rom_2EB2A4) > 0x8
 	.error "gText_Rom_2EB2A4 may not grow beyond its original slot"
 	.endif
@@ -2274,7 +2469,8 @@ gText_Rom_2EB2A4: @ 0x082EB2A4
 	@ src/data/moves_info.h:4706 moves_info_line_4706
 	.globl gText_Rom_2EB2AC
 gText_Rom_2EB2AC: @ 0x082EB2AC
-	.string "どろかけ$"
+	.string "どろかけ"
+	.byte EOS
 	.if (. - gText_Rom_2EB2AC) > 0x5
 	.error "gText_Rom_2EB2AC may not grow beyond its original slot"
 	.endif
@@ -2286,7 +2482,8 @@ gText_Rom_2EB2AC: @ 0x082EB2AC
 	@ src/data/moves_info.h:4731 moves_info_line_4731
 	.globl gText_Rom_2EB2B4
 gText_Rom_2EB2B4: @ 0x082EB2B4
-	.string "オクタンほう$"
+	.string "オクタンほう"
+	.byte EOS
 	.if (. - gText_Rom_2EB2B4) > 0x7
 	.error "gText_Rom_2EB2B4 may not grow beyond its original slot"
 	.endif
@@ -2303,7 +2500,8 @@ gText_Rom_2EB2B4: @ 0x082EB2B4
 	@ src/battle_debug.c:400 battle_debug_line_400 (+1 aliases)
 	.globl gText_Rom_2EB2BC
 gText_Rom_2EB2BC: @ 0x082EB2BC
-	.string "まきびし$"
+	.string "まきびし"
+	.byte EOS
 	.if (. - gText_Rom_2EB2BC) > 0x5
 	.error "gText_Rom_2EB2BC may not grow beyond its original slot"
 	.endif
@@ -2320,7 +2518,8 @@ gText_Rom_2EB2BC: @ 0x082EB2BC
 	@ src/data/moves_info.h:4783 moves_info_line_4783
 	.globl gText_Rom_2EB2C4
 gText_Rom_2EB2C4: @ 0x082EB2C4
-	.string "でんじほう$"
+	.string "でんじほう"
+	.byte EOS
 	.if (. - gText_Rom_2EB2C4) > 0x6
 	.error "gText_Rom_2EB2C4 may not grow beyond its original slot"
 	.endif
@@ -2337,7 +2536,8 @@ gText_Rom_2EB2C4: @ 0x082EB2C4
 	@ src/battle_debug.c:367 battle_debug_line_367 (+1 aliases)
 	.globl gText_Rom_2EB2CC
 gText_Rom_2EB2CC: @ 0x082EB2CC
-	.string "みやぶる$"
+	.string "みやぶる"
+	.byte EOS
 	.if (. - gText_Rom_2EB2CC) > 0x5
 	.error "gText_Rom_2EB2CC may not grow beyond its original slot"
 	.endif
@@ -2349,7 +2549,8 @@ gText_Rom_2EB2CC: @ 0x082EB2CC
 	@ src/battle_debug.c:364 battle_debug_line_364 (+1 aliases)
 	.globl gText_Rom_2EB2D4
 gText_Rom_2EB2D4: @ 0x082EB2D4
-	.string "みちづれ$"
+	.string "みちづれ"
+	.byte EOS
 	.if (. - gText_Rom_2EB2D4) > 0x5
 	.error "gText_Rom_2EB2D4 may not grow beyond its original slot"
 	.endif
@@ -2361,7 +2562,8 @@ gText_Rom_2EB2D4: @ 0x082EB2D4
 	@ src/battle_debug.c:379 battle_debug_line_379 (+1 aliases)
 	.globl gText_Rom_2EB2DC
 gText_Rom_2EB2DC: @ 0x082EB2DC
-	.string "ほろびのうた$"
+	.string "ほろびのうた"
+	.byte EOS
 	.if (. - gText_Rom_2EB2DC) > 0x7
 	.error "gText_Rom_2EB2DC may not grow beyond its original slot"
 	.endif
@@ -2378,7 +2580,8 @@ gText_Rom_2EB2DC: @ 0x082EB2DC
 	@ src/data/moves_info.h:4883 moves_info_line_4883
 	.globl gText_Rom_2EB2E4
 gText_Rom_2EB2E4: @ 0x082EB2E4
-	.string "こごえるかぜ$"
+	.string "こごえるかぜ"
+	.byte EOS
 	.if (. - gText_Rom_2EB2E4) > 0x7
 	.error "gText_Rom_2EB2E4 may not grow beyond its original slot"
 	.endif
@@ -2390,7 +2593,8 @@ gText_Rom_2EB2E4: @ 0x082EB2E4
 	@ src/data/moves_info.h:4909 moves_info_line_4909
 	.globl gText_Rom_2EB2EC
 gText_Rom_2EB2EC: @ 0x082EB2EC
-	.string "みきり$"
+	.string "みきり"
+	.byte EOS
 	.if (. - gText_Rom_2EB2EC) > 0x4
 	.error "gText_Rom_2EB2EC may not grow beyond its original slot"
 	.endif
@@ -2402,7 +2606,8 @@ gText_Rom_2EB2EC: @ 0x082EB2EC
 	@ src/data/moves_info.h:4942 moves_info_line_4942
 	.globl gText_Rom_2EB2F4
 gText_Rom_2EB2F4: @ 0x082EB2F4
-	.string "ボーンラッシュ$"
+	.string "ボーンラッシュ"
+	.byte EOS
 	.if (. - gText_Rom_2EB2F4) > 0x8
 	.error "gText_Rom_2EB2F4 may not grow beyond its original slot"
 	.endif
@@ -2418,7 +2623,8 @@ gText_Rom_2EB2F4: @ 0x082EB2F4
 	@ src/battle_debug.c:378 battle_debug_line_378 (+1 aliases)
 	.globl gText_Rom_2EB2FC
 gText_Rom_2EB2FC: @ 0x082EB2FC
-	.string "ロックオン$"
+	.string "ロックオン"
+	.byte EOS
 	.if (. - gText_Rom_2EB2FC) > 0x6
 	.error "gText_Rom_2EB2FC may not grow beyond its original slot"
 	.endif
@@ -2435,7 +2641,8 @@ gText_Rom_2EB2FC: @ 0x082EB2FC
 	@ src/data/moves_info.h:4983 moves_info_line_4983
 	.globl gText_Rom_2EB304
 gText_Rom_2EB304: @ 0x082EB304
-	.string "げきりん$"
+	.string "げきりん"
+	.byte EOS
 	.if (. - gText_Rom_2EB304) > 0x5
 	.error "gText_Rom_2EB304 may not grow beyond its original slot"
 	.endif
@@ -2447,7 +2654,8 @@ gText_Rom_2EB304: @ 0x082EB304
 	@ src/data/moves_info.h:5009 moves_info_line_5009 (+1 aliases)
 	.globl gText_Rom_2EB30C
 gText_Rom_2EB30C: @ 0x082EB30C
-	.string "すなあらし$"
+	.string "すなあらし"
+	.byte EOS
 	.if (. - gText_Rom_2EB30C) > 0x6
 	.error "gText_Rom_2EB30C may not grow beyond its original slot"
 	.endif
@@ -2459,7 +2667,8 @@ gText_Rom_2EB30C: @ 0x082EB30C
 	@ src/data/moves_info.h:5033 moves_info_line_5033
 	.globl gText_Rom_2EB314
 gText_Rom_2EB314: @ 0x082EB314
-	.string "ギガドレイン$"
+	.string "ギガドレイン"
+	.byte EOS
 	.if (. - gText_Rom_2EB314) > 0x7
 	.error "gText_Rom_2EB314 may not grow beyond its original slot"
 	.endif
@@ -2471,7 +2680,8 @@ gText_Rom_2EB314: @ 0x082EB314
 	@ src/data/moves_info.h:5056 moves_info_line_5056
 	.globl gText_Rom_2EB31C
 gText_Rom_2EB31C: @ 0x082EB31C
-	.string "こらえる$"
+	.string "こらえる"
+	.byte EOS
 	.if (. - gText_Rom_2EB31C) > 0x5
 	.error "gText_Rom_2EB31C may not grow beyond its original slot"
 	.endif
@@ -2483,7 +2693,8 @@ gText_Rom_2EB31C: @ 0x082EB31C
 	@ src/data/moves_info.h:5089 moves_info_line_5089
 	.globl gText_Rom_2EB324
 gText_Rom_2EB324: @ 0x082EB324
-	.string "あまえる$"
+	.string "あまえる"
+	.byte EOS
 	.if (. - gText_Rom_2EB324) > 0x5
 	.error "gText_Rom_2EB324 may not grow beyond its original slot"
 	.endif
@@ -2495,7 +2706,8 @@ gText_Rom_2EB324: @ 0x082EB324
 	@ src/data/moves_info.h:5115 moves_info_line_5115
 	.globl gText_Rom_2EB32C
 gText_Rom_2EB32C: @ 0x082EB32C
-	.string "ころがる$"
+	.string "ころがる"
+	.byte EOS
 	.if (. - gText_Rom_2EB32C) > 0x5
 	.error "gText_Rom_2EB32C may not grow beyond its original slot"
 	.endif
@@ -2507,7 +2719,8 @@ gText_Rom_2EB32C: @ 0x082EB32C
 	@ src/data/moves_info.h:5138 moves_info_line_5138
 	.globl gText_Rom_2EB334
 gText_Rom_2EB334: @ 0x082EB334
-	.string "みねうち$"
+	.string "みねうち"
+	.byte EOS
 	.if (. - gText_Rom_2EB334) > 0x5
 	.error "gText_Rom_2EB334 may not grow beyond its original slot"
 	.endif
@@ -2519,7 +2732,8 @@ gText_Rom_2EB334: @ 0x082EB334
 	@ src/data/moves_info.h:5159 moves_info_line_5159
 	.globl gText_Rom_2EB33C
 gText_Rom_2EB33C: @ 0x082EB33C
-	.string "いばる$"
+	.string "いばる"
+	.byte EOS
 	.if (. - gText_Rom_2EB33C) > 0x4
 	.error "gText_Rom_2EB33C may not grow beyond its original slot"
 	.endif
@@ -2531,7 +2745,8 @@ gText_Rom_2EB33C: @ 0x082EB33C
 	@ src/data/moves_info.h:5186 moves_info_line_5186
 	.globl gText_Rom_2EB344
 gText_Rom_2EB344: @ 0x082EB344
-	.string "ミルクのみ$"
+	.string "ミルクのみ"
+	.byte EOS
 	.if (. - gText_Rom_2EB344) > 0x6
 	.error "gText_Rom_2EB344 may not grow beyond its original slot"
 	.endif
@@ -2543,7 +2758,8 @@ gText_Rom_2EB344: @ 0x082EB344
 	@ src/data/moves_info.h:5211 moves_info_line_5211
 	.globl gText_Rom_2EB34C
 gText_Rom_2EB34C: @ 0x082EB34C
-	.string "スパーク$"
+	.string "スパーク"
+	.byte EOS
 	.if (. - gText_Rom_2EB34C) > 0x5
 	.error "gText_Rom_2EB34C may not grow beyond its original slot"
 	.endif
@@ -2555,7 +2771,8 @@ gText_Rom_2EB34C: @ 0x082EB34C
 	@ src/data/moves_info.h:5235 moves_info_line_5235
 	.globl gText_Rom_2EB354
 gText_Rom_2EB354: @ 0x082EB354
-	.string "れんぞくぎり$"
+	.string "れんぞくぎり"
+	.byte EOS
 	.if (. - gText_Rom_2EB354) > 0x7
 	.error "gText_Rom_2EB354 may not grow beyond its original slot"
 	.endif
@@ -2567,7 +2784,8 @@ gText_Rom_2EB354: @ 0x082EB354
 	@ src/data/moves_info.h:5263 moves_info_line_5263
 	.globl gText_Rom_2EB35C
 gText_Rom_2EB35C: @ 0x082EB35C
-	.string "はがねのつばさ$"
+	.string "はがねのつばさ"
+	.byte EOS
 	.if (. - gText_Rom_2EB35C) > 0x8
 	.error "gText_Rom_2EB35C may not grow beyond its original slot"
 	.endif
@@ -2578,7 +2796,8 @@ gText_Rom_2EB35C: @ 0x082EB35C
 	@ src/data/moves_info.h:5291 moves_info_line_5291
 	.globl gText_Rom_2EB364
 gText_Rom_2EB364: @ 0x082EB364
-	.string "くろいまなざし$"
+	.string "くろいまなざし"
+	.byte EOS
 	.if (. - gText_Rom_2EB364) > 0x8
 	.error "gText_Rom_2EB364 may not grow beyond its original slot"
 	.endif
@@ -2594,7 +2813,8 @@ gText_Rom_2EB364: @ 0x082EB364
 	@ src/battle_debug.c:459 battle_debug_line_459 (+3 aliases)
 	.globl gText_Rom_2EB36C
 gText_Rom_2EB36C: @ 0x082EB36C
-	.string "メロメロ$"
+	.string "メロメロ"
+	.byte EOS
 	.if (. - gText_Rom_2EB36C) > 0x5
 	.error "gText_Rom_2EB36C may not grow beyond its original slot"
 	.endif
@@ -2611,7 +2831,8 @@ gText_Rom_2EB36C: @ 0x082EB36C
 	@ src/data/moves_info.h:5337 moves_info_line_5337
 	.globl gText_Rom_2EB374
 gText_Rom_2EB374: @ 0x082EB374
-	.string "ねごと$"
+	.string "ねごと"
+	.byte EOS
 	.if (. - gText_Rom_2EB374) > 0x4
 	.error "gText_Rom_2EB374 may not grow beyond its original slot"
 	.endif
@@ -2623,7 +2844,8 @@ gText_Rom_2EB374: @ 0x082EB374
 	@ src/data/moves_info.h:5367 moves_info_line_5367
 	.globl gText_Rom_2EB37C
 gText_Rom_2EB37C: @ 0x082EB37C
-	.string "いやしのすず$"
+	.string "いやしのすず"
+	.byte EOS
 	.if (. - gText_Rom_2EB37C) > 0x7
 	.error "gText_Rom_2EB37C may not grow beyond its original slot"
 	.endif
@@ -2635,7 +2857,8 @@ gText_Rom_2EB37C: @ 0x082EB37C
 	@ src/data/moves_info.h:5393 moves_info_line_5393
 	.globl gText_Rom_2EB384
 gText_Rom_2EB384: @ 0x082EB384
-	.string "おんがえし$"
+	.string "おんがえし"
+	.byte EOS
 	.if (. - gText_Rom_2EB384) > 0x6
 	.error "gText_Rom_2EB384 may not grow beyond its original slot"
 	.endif
@@ -2647,7 +2870,8 @@ gText_Rom_2EB384: @ 0x082EB384
 	@ src/data/moves_info.h:5414 moves_info_line_5414
 	.globl gText_Rom_2EB38C
 gText_Rom_2EB38C: @ 0x082EB38C
-	.string "プレゼント$"
+	.string "プレゼント"
+	.byte EOS
 	.if (. - gText_Rom_2EB38C) > 0x6
 	.error "gText_Rom_2EB38C may not grow beyond its original slot"
 	.endif
@@ -2659,7 +2883,8 @@ gText_Rom_2EB38C: @ 0x082EB38C
 	@ src/data/moves_info.h:5435 moves_info_line_5435
 	.globl gText_Rom_2EB394
 gText_Rom_2EB394: @ 0x082EB394
-	.string "やつあたり$"
+	.string "やつあたり"
+	.byte EOS
 	.if (. - gText_Rom_2EB394) > 0x6
 	.error "gText_Rom_2EB394 may not grow beyond its original slot"
 	.endif
@@ -2677,7 +2902,8 @@ gText_Rom_2EB394: @ 0x082EB394
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB39C
 gText_Rom_2EB39C: @ 0x082EB39C
-	.string "しんぴのまもり$"
+	.string "しんぴのまもり"
+	.byte EOS
 	.if (. - gText_Rom_2EB39C) != 0x8
 	.error "gText_Rom_2EB39C must retain its original byte length"
 	.endif
@@ -2692,7 +2918,8 @@ gText_Rom_2EB39C: @ 0x082EB39C
 	@ src/data/moves_info.h:5480 moves_info_line_5480
 	.globl gText_Rom_2EB3A4
 gText_Rom_2EB3A4: @ 0x082EB3A4
-	.string "いたみわけ$"
+	.string "いたみわけ"
+	.byte EOS
 	.if (. - gText_Rom_2EB3A4) > 0x6
 	.error "gText_Rom_2EB3A4 may not grow beyond its original slot"
 	.endif
@@ -2705,7 +2932,8 @@ gText_Rom_2EB3A4: @ 0x082EB3A4
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB3AC
 gText_Rom_2EB3AC: @ 0x082EB3AC
-	.string "せいなるほのお$"
+	.string "せいなるほのお"
+	.byte EOS
 	.if (. - gText_Rom_2EB3AC) != 0x8
 	.error "gText_Rom_2EB3AC must retain its original byte length"
 	.endif
@@ -2715,7 +2943,8 @@ gText_Rom_2EB3AC: @ 0x082EB3AC
 	@ src/data/moves_info.h:5526 moves_info_line_5526
 	.globl gText_Rom_2EB3B4
 gText_Rom_2EB3B4: @ 0x082EB3B4
-	.string "マグニチュード$"
+	.string "マグニチュード"
+	.byte EOS
 	.if (. - gText_Rom_2EB3B4) > 0x8
 	.error "gText_Rom_2EB3B4 may not grow beyond its original slot"
 	.endif
@@ -2726,7 +2955,8 @@ gText_Rom_2EB3B4: @ 0x082EB3B4
 	@ src/data/moves_info.h:5547 moves_info_line_5547
 	.globl gText_Rom_2EB3BC
 gText_Rom_2EB3BC: @ 0x082EB3BC
-	.string "ばくれつパンチ$"
+	.string "ばくれつパンチ"
+	.byte EOS
 	.if (. - gText_Rom_2EB3BC) > 0x8
 	.error "gText_Rom_2EB3BC may not grow beyond its original slot"
 	.endif
@@ -2737,7 +2967,8 @@ gText_Rom_2EB3BC: @ 0x082EB3BC
 	@ src/data/moves_info.h:5573 moves_info_line_5573
 	.globl gText_Rom_2EB3C4
 gText_Rom_2EB3C4: @ 0x082EB3C4
-	.string "メガホーン$"
+	.string "メガホーン"
+	.byte EOS
 	.if (. - gText_Rom_2EB3C4) > 0x6
 	.error "gText_Rom_2EB3C4 may not grow beyond its original slot"
 	.endif
@@ -2749,7 +2980,8 @@ gText_Rom_2EB3C4: @ 0x082EB3C4
 	@ src/data/moves_info.h:5594 moves_info_line_5594
 	.globl gText_Rom_2EB3CC
 gText_Rom_2EB3CC: @ 0x082EB3CC
-	.string "りゅうのいぶき$"
+	.string "りゅうのいぶき"
+	.byte EOS
 	.if (. - gText_Rom_2EB3CC) > 0x8
 	.error "gText_Rom_2EB3CC may not grow beyond its original slot"
 	.endif
@@ -2760,7 +2992,8 @@ gText_Rom_2EB3CC: @ 0x082EB3CC
 	@ src/data/moves_info.h:5619 moves_info_line_5619
 	.globl gText_Rom_2EB3D4
 gText_Rom_2EB3D4: @ 0x082EB3D4
-	.string "バトンタッチ$"
+	.string "バトンタッチ"
+	.byte EOS
 	.if (. - gText_Rom_2EB3D4) > 0x7
 	.error "gText_Rom_2EB3D4 may not grow beyond its original slot"
 	.endif
@@ -2772,7 +3005,8 @@ gText_Rom_2EB3D4: @ 0x082EB3D4
 	@ src/data/moves_info.h:5642 moves_info_line_5642
 	.globl gText_Rom_2EB3DC
 gText_Rom_2EB3DC: @ 0x082EB3DC
-	.string "アンコール$"
+	.string "アンコール"
+	.byte EOS
 	.if (. - gText_Rom_2EB3DC) > 0x6
 	.error "gText_Rom_2EB3DC may not grow beyond its original slot"
 	.endif
@@ -2784,7 +3018,8 @@ gText_Rom_2EB3DC: @ 0x082EB3DC
 	@ src/data/moves_info.h:5666 moves_info_line_5666
 	.globl gText_Rom_2EB3E4
 gText_Rom_2EB3E4: @ 0x082EB3E4
-	.string "おいうち$"
+	.string "おいうち"
+	.byte EOS
 	.if (. - gText_Rom_2EB3E4) > 0x5
 	.error "gText_Rom_2EB3E4 may not grow beyond its original slot"
 	.endif
@@ -2796,7 +3031,8 @@ gText_Rom_2EB3E4: @ 0x082EB3E4
 	@ src/data/moves_info.h:5688 moves_info_line_5688
 	.globl gText_Rom_2EB3EC
 gText_Rom_2EB3EC: @ 0x082EB3EC
-	.string "こうそくスピン$"
+	.string "こうそくスピン"
+	.byte EOS
 	.if (. - gText_Rom_2EB3EC) > 0x8
 	.error "gText_Rom_2EB3EC may not grow beyond its original slot"
 	.endif
@@ -2807,7 +3043,8 @@ gText_Rom_2EB3EC: @ 0x082EB3EC
 	@ src/data/moves_info.h:5717 moves_info_line_5717
 	.globl gText_Rom_2EB3F4
 gText_Rom_2EB3F4: @ 0x082EB3F4
-	.string "あまいかおり$"
+	.string "あまいかおり"
+	.byte EOS
 	.if (. - gText_Rom_2EB3F4) > 0x7
 	.error "gText_Rom_2EB3F4 may not grow beyond its original slot"
 	.endif
@@ -2819,7 +3056,8 @@ gText_Rom_2EB3F4: @ 0x082EB3F4
 	@ src/data/moves_info.h:5743 moves_info_line_5743
 	.globl gText_Rom_2EB3FC
 gText_Rom_2EB3FC: @ 0x082EB3FC
-	.string "アイアンテール$"
+	.string "アイアンテール"
+	.byte EOS
 	.if (. - gText_Rom_2EB3FC) > 0x8
 	.error "gText_Rom_2EB3FC may not grow beyond its original slot"
 	.endif
@@ -2830,7 +3068,8 @@ gText_Rom_2EB3FC: @ 0x082EB3FC
 	@ src/data/moves_info.h:5769 moves_info_line_5769
 	.globl gText_Rom_2EB404
 gText_Rom_2EB404: @ 0x082EB404
-	.string "メタルクロー$"
+	.string "メタルクロー"
+	.byte EOS
 	.if (. - gText_Rom_2EB404) > 0x7
 	.error "gText_Rom_2EB404 may not grow beyond its original slot"
 	.endif
@@ -2842,7 +3081,8 @@ gText_Rom_2EB404: @ 0x082EB404
 	@ src/data/moves_info.h:5796 moves_info_line_5796
 	.globl gText_Rom_2EB40C
 gText_Rom_2EB40C: @ 0x082EB40C
-	.string "あてみなげ$"
+	.string "あてみなげ"
+	.byte EOS
 	.if (. - gText_Rom_2EB40C) > 0x6
 	.error "gText_Rom_2EB40C may not grow beyond its original slot"
 	.endif
@@ -2854,7 +3094,8 @@ gText_Rom_2EB40C: @ 0x082EB40C
 	@ src/data/moves_info.h:5817 moves_info_line_5817
 	.globl gText_Rom_2EB414
 gText_Rom_2EB414: @ 0x082EB414
-	.string "あさのひざし$"
+	.string "あさのひざし"
+	.byte EOS
 	.if (. - gText_Rom_2EB414) > 0x7
 	.error "gText_Rom_2EB414 may not grow beyond its original slot"
 	.endif
@@ -2866,7 +3107,8 @@ gText_Rom_2EB414: @ 0x082EB414
 	@ src/data/moves_info.h:5842 moves_info_line_5842
 	.globl gText_Rom_2EB41C
 gText_Rom_2EB41C: @ 0x082EB41C
-	.string "こうごうせい$"
+	.string "こうごうせい"
+	.byte EOS
 	.if (. - gText_Rom_2EB41C) > 0x7
 	.error "gText_Rom_2EB41C may not grow beyond its original slot"
 	.endif
@@ -2878,7 +3120,8 @@ gText_Rom_2EB41C: @ 0x082EB41C
 	@ src/data/moves_info.h:5867 moves_info_line_5867
 	.globl gText_Rom_2EB424
 gText_Rom_2EB424: @ 0x082EB424
-	.string "つきのひかり$"
+	.string "つきのひかり"
+	.byte EOS
 	.if (. - gText_Rom_2EB424) > 0x7
 	.error "gText_Rom_2EB424 may not grow beyond its original slot"
 	.endif
@@ -2890,7 +3133,8 @@ gText_Rom_2EB424: @ 0x082EB424
 	@ src/data/moves_info.h:5892 moves_info_line_5892
 	.globl gText_Rom_2EB42C
 gText_Rom_2EB42C: @ 0x082EB42C
-	.string "めざめるパワー$"
+	.string "めざめるパワー"
+	.byte EOS
 	.if (. - gText_Rom_2EB42C) > 0x8
 	.error "gText_Rom_2EB42C may not grow beyond its original slot"
 	.endif
@@ -2901,7 +3145,8 @@ gText_Rom_2EB42C: @ 0x082EB42C
 	@ src/data/moves_info.h:5912 moves_info_line_5912
 	.globl gText_Rom_2EB434
 gText_Rom_2EB434: @ 0x082EB434
-	.string "クロスチョップ$"
+	.string "クロスチョップ"
+	.byte EOS
 	.if (. - gText_Rom_2EB434) > 0x8
 	.error "gText_Rom_2EB434 may not grow beyond its original slot"
 	.endif
@@ -2912,7 +3157,8 @@ gText_Rom_2EB434: @ 0x082EB434
 	@ src/data/moves_info.h:5934 moves_info_line_5934
 	.globl gText_Rom_2EB43C
 gText_Rom_2EB43C: @ 0x082EB43C
-	.string "たつまき$"
+	.string "たつまき"
+	.byte EOS
 	.if (. - gText_Rom_2EB43C) > 0x5
 	.error "gText_Rom_2EB43C may not grow beyond its original slot"
 	.endif
@@ -2924,7 +3170,8 @@ gText_Rom_2EB43C: @ 0x082EB43C
 	@ src/data/moves_info.h:5960 moves_info_line_5960
 	.globl gText_Rom_2EB444
 gText_Rom_2EB444: @ 0x082EB444
-	.string "あまごい$"
+	.string "あまごい"
+	.byte EOS
 	.if (. - gText_Rom_2EB444) > 0x5
 	.error "gText_Rom_2EB444 may not grow beyond its original slot"
 	.endif
@@ -2936,7 +3183,8 @@ gText_Rom_2EB444: @ 0x082EB444
 	@ src/data/moves_info.h:5984 moves_info_line_5984
 	.globl gText_Rom_2EB44C
 gText_Rom_2EB44C: @ 0x082EB44C
-	.string "にほんばれ$"
+	.string "にほんばれ"
+	.byte EOS
 	.if (. - gText_Rom_2EB44C) > 0x6
 	.error "gText_Rom_2EB44C may not grow beyond its original slot"
 	.endif
@@ -2948,7 +3196,8 @@ gText_Rom_2EB44C: @ 0x082EB44C
 	@ src/data/moves_info.h:6008 moves_info_line_6008
 	.globl gText_Rom_2EB454
 gText_Rom_2EB454: @ 0x082EB454
-	.string "かみくだく$"
+	.string "かみくだく"
+	.byte EOS
 	.if (. - gText_Rom_2EB454) > 0x6
 	.error "gText_Rom_2EB454 may not grow beyond its original slot"
 	.endif
@@ -2960,7 +3209,8 @@ gText_Rom_2EB454: @ 0x082EB454
 	@ src/data/moves_info.h:6036 moves_info_line_6036
 	.globl gText_Rom_2EB45C
 gText_Rom_2EB45C: @ 0x082EB45C
-	.string "ミラーコート$"
+	.string "ミラーコート"
+	.byte EOS
 	.if (. - gText_Rom_2EB45C) > 0x7
 	.error "gText_Rom_2EB45C may not grow beyond its original slot"
 	.endif
@@ -2972,7 +3222,8 @@ gText_Rom_2EB45C: @ 0x082EB45C
 	@ src/data/moves_info.h:6066 moves_info_line_6066
 	.globl gText_Rom_2EB464
 gText_Rom_2EB464: @ 0x082EB464
-	.string "じこあんじ$"
+	.string "じこあんじ"
+	.byte EOS
 	.if (. - gText_Rom_2EB464) > 0x6
 	.error "gText_Rom_2EB464 may not grow beyond its original slot"
 	.endif
@@ -2984,7 +3235,8 @@ gText_Rom_2EB464: @ 0x082EB464
 	@ src/data/moves_info.h:6091 moves_info_line_6091
 	.globl gText_Rom_2EB46C
 gText_Rom_2EB46C: @ 0x082EB46C
-	.string "しんそく$"
+	.string "しんそく"
+	.byte EOS
 	.if (. - gText_Rom_2EB46C) > 0x5
 	.error "gText_Rom_2EB46C may not grow beyond its original slot"
 	.endif
@@ -2997,7 +3249,8 @@ gText_Rom_2EB46C: @ 0x082EB46C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB474
 gText_Rom_2EB474: @ 0x082EB474
-	.string "げんしのちから$"
+	.string "げんしのちから"
+	.byte EOS
 	.if (. - gText_Rom_2EB474) != 0x8
 	.error "gText_Rom_2EB474 must retain its original byte length"
 	.endif
@@ -3008,7 +3261,8 @@ gText_Rom_2EB474: @ 0x082EB474
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB47C
 gText_Rom_2EB47C: @ 0x082EB47C
-	.string "シャドーボール$"
+	.string "シャドーボール"
+	.byte EOS
 	.if (. - gText_Rom_2EB47C) != 0x8
 	.error "gText_Rom_2EB47C must retain its original byte length"
 	.endif
@@ -3018,7 +3272,8 @@ gText_Rom_2EB47C: @ 0x082EB47C
 	@ src/data/moves_info.h:6169 moves_info_line_6169
 	.globl gText_Rom_2EB484
 gText_Rom_2EB484: @ 0x082EB484
-	.string "みらいよち$"
+	.string "みらいよち"
+	.byte EOS
 	.if (. - gText_Rom_2EB484) > 0x6
 	.error "gText_Rom_2EB484 may not grow beyond its original slot"
 	.endif
@@ -3030,7 +3285,8 @@ gText_Rom_2EB484: @ 0x082EB484
 	@ src/data/moves_info.h:6197 moves_info_line_6197
 	.globl gText_Rom_2EB48C
 gText_Rom_2EB48C: @ 0x082EB48C
-	.string "いわくだき$"
+	.string "いわくだき"
+	.byte EOS
 	.if (. - gText_Rom_2EB48C) > 0x6
 	.error "gText_Rom_2EB48C may not grow beyond its original slot"
 	.endif
@@ -3042,7 +3298,8 @@ gText_Rom_2EB48C: @ 0x082EB48C
 	@ src/data/moves_info.h:6223 moves_info_line_6223
 	.globl gText_Rom_2EB494
 gText_Rom_2EB494: @ 0x082EB494
-	.string "うずしお$"
+	.string "うずしお"
+	.byte EOS
 	.if (. - gText_Rom_2EB494) > 0x5
 	.error "gText_Rom_2EB494 may not grow beyond its original slot"
 	.endif
@@ -3054,7 +3311,8 @@ gText_Rom_2EB494: @ 0x082EB494
 	@ src/data/moves_info.h:6249 moves_info_line_6249
 	.globl gText_Rom_2EB49C
 gText_Rom_2EB49C: @ 0x082EB49C
-	.string "ふくろだたき$"
+	.string "ふくろだたき"
+	.byte EOS
 	.if (. - gText_Rom_2EB49C) > 0x7
 	.error "gText_Rom_2EB49C may not grow beyond its original slot"
 	.endif
@@ -3066,7 +3324,8 @@ gText_Rom_2EB49C: @ 0x082EB49C
 	@ src/data/moves_info.h:6274 moves_info_line_6274
 	.globl gText_Rom_2EB4A4
 gText_Rom_2EB4A4: @ 0x082EB4A4
-	.string "ねこだまし$"
+	.string "ねこだまし"
+	.byte EOS
 	.if (. - gText_Rom_2EB4A4) > 0x6
 	.error "gText_Rom_2EB4A4 may not grow beyond its original slot"
 	.endif
@@ -3078,7 +3337,8 @@ gText_Rom_2EB4A4: @ 0x082EB4A4
 	@ src/data/moves_info.h:6299 moves_info_line_6299
 	.globl gText_Rom_2EB4AC
 gText_Rom_2EB4AC: @ 0x082EB4AC
-	.string "さわぐ$"
+	.string "さわぐ"
+	.byte EOS
 	.if (. - gText_Rom_2EB4AC) > 0x4
 	.error "gText_Rom_2EB4AC may not grow beyond its original slot"
 	.endif
@@ -3090,7 +3350,8 @@ gText_Rom_2EB4AC: @ 0x082EB4AC
 	@ src/data/moves_info.h:6328 moves_info_line_6328
 	.globl gText_Rom_2EB4B4
 gText_Rom_2EB4B4: @ 0x082EB4B4
-	.string "たくわえる$"
+	.string "たくわえる"
+	.byte EOS
 	.if (. - gText_Rom_2EB4B4) > 0x6
 	.error "gText_Rom_2EB4B4 may not grow beyond its original slot"
 	.endif
@@ -3102,7 +3363,8 @@ gText_Rom_2EB4B4: @ 0x082EB4B4
 	@ src/data/moves_info.h:6358 moves_info_line_6358
 	.globl gText_Rom_2EB4BC
 gText_Rom_2EB4BC: @ 0x082EB4BC
-	.string "はきだす$"
+	.string "はきだす"
+	.byte EOS
 	.if (. - gText_Rom_2EB4BC) > 0x5
 	.error "gText_Rom_2EB4BC may not grow beyond its original slot"
 	.endif
@@ -3114,7 +3376,8 @@ gText_Rom_2EB4BC: @ 0x082EB4BC
 	@ src/data/moves_info.h:6379 moves_info_line_6379
 	.globl gText_Rom_2EB4C4
 gText_Rom_2EB4C4: @ 0x082EB4C4
-	.string "のみこむ$"
+	.string "のみこむ"
+	.byte EOS
 	.if (. - gText_Rom_2EB4C4) > 0x5
 	.error "gText_Rom_2EB4C4 may not grow beyond its original slot"
 	.endif
@@ -3126,7 +3389,8 @@ gText_Rom_2EB4C4: @ 0x082EB4C4
 	@ src/data/moves_info.h:6404 moves_info_line_6404
 	.globl gText_Rom_2EB4CC
 gText_Rom_2EB4CC: @ 0x082EB4CC
-	.string "ねっぷう$"
+	.string "ねっぷう"
+	.byte EOS
 	.if (. - gText_Rom_2EB4CC) > 0x5
 	.error "gText_Rom_2EB4CC may not grow beyond its original slot"
 	.endif
@@ -3138,7 +3402,8 @@ gText_Rom_2EB4CC: @ 0x082EB4CC
 	@ src/data/moves_info.h:6429 moves_info_line_6429
 	.globl gText_Rom_2EB4D4
 gText_Rom_2EB4D4: @ 0x082EB4D4
-	.string "あられ$"
+	.string "あられ"
+	.byte EOS
 	.if (. - gText_Rom_2EB4D4) > 0x4
 	.error "gText_Rom_2EB4D4 may not grow beyond its original slot"
 	.endif
@@ -3155,7 +3420,8 @@ gText_Rom_2EB4D4: @ 0x082EB4D4
 	@ src/battle_debug.c:360 battle_debug_line_360 (+1 aliases)
 	.globl gText_Rom_2EB4DC
 gText_Rom_2EB4DC: @ 0x082EB4DC
-	.string "いちゃもん$"
+	.string "いちゃもん"
+	.byte EOS
 	.if (. - gText_Rom_2EB4DC) > 0x6
 	.error "gText_Rom_2EB4DC may not grow beyond its original slot"
 	.endif
@@ -3172,7 +3438,8 @@ gText_Rom_2EB4DC: @ 0x082EB4DC
 	@ src/data/moves_info.h:6475 moves_info_line_6475
 	.globl gText_Rom_2EB4E4
 gText_Rom_2EB4E4: @ 0x082EB4E4
-	.string "おだてる$"
+	.string "おだてる"
+	.byte EOS
 	.if (. - gText_Rom_2EB4E4) > 0x5
 	.error "gText_Rom_2EB4E4 may not grow beyond its original slot"
 	.endif
@@ -3184,7 +3451,8 @@ gText_Rom_2EB4E4: @ 0x082EB4E4
 	@ src/data/moves_info.h:6501 moves_info_line_6501
 	.globl gText_Rom_2EB4EC
 gText_Rom_2EB4EC: @ 0x082EB4EC
-	.string "おにび$"
+	.string "おにび"
+	.byte EOS
 	.if (. - gText_Rom_2EB4EC) > 0x4
 	.error "gText_Rom_2EB4EC may not grow beyond its original slot"
 	.endif
@@ -3196,7 +3464,8 @@ gText_Rom_2EB4EC: @ 0x082EB4EC
 	@ src/data/moves_info.h:6524 moves_info_line_6524
 	.globl gText_Rom_2EB4F4
 gText_Rom_2EB4F4: @ 0x082EB4F4
-	.string "おきみやげ$"
+	.string "おきみやげ"
+	.byte EOS
 	.if (. - gText_Rom_2EB4F4) > 0x6
 	.error "gText_Rom_2EB4F4 may not grow beyond its original slot"
 	.endif
@@ -3209,7 +3478,8 @@ gText_Rom_2EB4F4: @ 0x082EB4F4
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB4FC
 gText_Rom_2EB4FC: @ 0x082EB4FC
-	.string "からげんき$"
+	.string "からげんき"
+	.byte EOS
 	.if (. - gText_Rom_2EB4FC) != 0x6
 	.error "gText_Rom_2EB4FC must retain its original byte length"
 	.endif
@@ -3220,7 +3490,8 @@ gText_Rom_2EB4FC: @ 0x082EB4FC
 	@ src/data/moves_info.h:6571 moves_info_line_6571
 	.globl gText_Rom_2EB504
 gText_Rom_2EB504: @ 0x082EB504
-	.string "きあいパンチ$"
+	.string "きあいパンチ"
+	.byte EOS
 	.if (. - gText_Rom_2EB504) > 0x7
 	.error "gText_Rom_2EB504 may not grow beyond its original slot"
 	.endif
@@ -3232,7 +3503,8 @@ gText_Rom_2EB504: @ 0x082EB504
 	@ src/data/moves_info.h:6600 moves_info_line_6600
 	.globl gText_Rom_2EB50C
 gText_Rom_2EB50C: @ 0x082EB50C
-	.string "きつけ$"
+	.string "きつけ"
+	.byte EOS
 	.if (. - gText_Rom_2EB50C) > 0x4
 	.error "gText_Rom_2EB50C may not grow beyond its original slot"
 	.endif
@@ -3244,7 +3516,8 @@ gText_Rom_2EB50C: @ 0x082EB50C
 	@ src/battle_z_move.c:101 sText_FollowMe (+1 aliases)
 	.globl gText_Rom_2EB514
 gText_Rom_2EB514: @ 0x082EB514
-	.string "このゆびとまれ$"
+	.string "このゆびとまれ"
+	.byte EOS
 	.if (. - gText_Rom_2EB514) > 0x8
 	.error "gText_Rom_2EB514 may not grow beyond its original slot"
 	.endif
@@ -3256,7 +3529,8 @@ gText_Rom_2EB514: @ 0x082EB514
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB51C
 gText_Rom_2EB51C: @ 0x082EB51C
-	.string "しぜんのちから$"
+	.string "しぜんのちから"
+	.byte EOS
 	.if (. - gText_Rom_2EB51C) != 0x8
 	.error "gText_Rom_2EB51C must retain its original byte length"
 	.endif
@@ -3271,7 +3545,8 @@ gText_Rom_2EB51C: @ 0x082EB51C
 	@ src/battle_debug.c:381 battle_debug_line_381 (+1 aliases)
 	.globl gText_Rom_2EB524
 gText_Rom_2EB524: @ 0x082EB524
-	.string "じゅうでん$"
+	.string "じゅうでん"
+	.byte EOS
 	.if (. - gText_Rom_2EB524) > 0x6
 	.error "gText_Rom_2EB524 may not grow beyond its original slot"
 	.endif
@@ -3288,7 +3563,8 @@ gText_Rom_2EB524: @ 0x082EB524
 	@ src/data/moves_info.h:6710 moves_info_line_6710
 	.globl gText_Rom_2EB52C
 gText_Rom_2EB52C: @ 0x082EB52C
-	.string "ちょうはつ$"
+	.string "ちょうはつ"
+	.byte EOS
 	.if (. - gText_Rom_2EB52C) > 0x6
 	.error "gText_Rom_2EB52C may not grow beyond its original slot"
 	.endif
@@ -3300,7 +3576,8 @@ gText_Rom_2EB52C: @ 0x082EB52C
 	@ src/data/moves_info.h:6734 moves_info_line_6734
 	.globl gText_Rom_2EB534
 gText_Rom_2EB534: @ 0x082EB534
-	.string "てだすけ$"
+	.string "てだすけ"
+	.byte EOS
 	.if (. - gText_Rom_2EB534) > 0x5
 	.error "gText_Rom_2EB534 may not grow beyond its original slot"
 	.endif
@@ -3312,7 +3589,8 @@ gText_Rom_2EB534: @ 0x082EB534
 	@ src/data/moves_info.h:6761 moves_info_line_6761
 	.globl gText_Rom_2EB53C
 gText_Rom_2EB53C: @ 0x082EB53C
-	.string "トリック$"
+	.string "トリック"
+	.byte EOS
 	.if (. - gText_Rom_2EB53C) > 0x5
 	.error "gText_Rom_2EB53C may not grow beyond its original slot"
 	.endif
@@ -3324,7 +3602,8 @@ gText_Rom_2EB53C: @ 0x082EB53C
 	@ src/data/moves_info.h:6785 moves_info_line_6785
 	.globl gText_Rom_2EB544
 gText_Rom_2EB544: @ 0x082EB544
-	.string "なりきり$"
+	.string "なりきり"
+	.byte EOS
 	.if (. - gText_Rom_2EB544) > 0x5
 	.error "gText_Rom_2EB544 may not grow beyond its original slot"
 	.endif
@@ -3336,7 +3615,8 @@ gText_Rom_2EB544: @ 0x082EB544
 	@ src/data/moves_info.h:6809 moves_info_line_6809
 	.globl gText_Rom_2EB54C
 gText_Rom_2EB54C: @ 0x082EB54C
-	.string "ねがいごと$"
+	.string "ねがいごと"
+	.byte EOS
 	.if (. - gText_Rom_2EB54C) > 0x6
 	.error "gText_Rom_2EB54C may not grow beyond its original slot"
 	.endif
@@ -3348,7 +3628,8 @@ gText_Rom_2EB54C: @ 0x082EB54C
 	@ src/data/moves_info.h:6834 moves_info_line_6834
 	.globl gText_Rom_2EB554
 gText_Rom_2EB554: @ 0x082EB554
-	.string "ねこのて$"
+	.string "ねこのて"
+	.byte EOS
 	.if (. - gText_Rom_2EB554) > 0x5
 	.error "gText_Rom_2EB554 may not grow beyond its original slot"
 	.endif
@@ -3365,7 +3646,8 @@ gText_Rom_2EB554: @ 0x082EB554
 	@ src/battle_debug.c:382 battle_debug_line_382 (+1 aliases)
 	.globl gText_Rom_2EB55C
 gText_Rom_2EB55C: @ 0x082EB55C
-	.string "ねをはる$"
+	.string "ねをはる"
+	.byte EOS
 	.if (. - gText_Rom_2EB55C) > 0x5
 	.error "gText_Rom_2EB55C may not grow beyond its original slot"
 	.endif
@@ -3382,7 +3664,8 @@ gText_Rom_2EB55C: @ 0x082EB55C
 	@ src/data/moves_info.h:6888 moves_info_line_6888
 	.globl gText_Rom_2EB564
 gText_Rom_2EB564: @ 0x082EB564
-	.string "ばかぢから$"
+	.string "ばかぢから"
+	.byte EOS
 	.if (. - gText_Rom_2EB564) > 0x6
 	.error "gText_Rom_2EB564 may not grow beyond its original slot"
 	.endif
@@ -3394,7 +3677,8 @@ gText_Rom_2EB564: @ 0x082EB564
 	@ src/data/moves_info.h:6915 moves_info_line_6915
 	.globl gText_Rom_2EB56C
 gText_Rom_2EB56C: @ 0x082EB56C
-	.string "マジックコート$"
+	.string "マジックコート"
+	.byte EOS
 	.if (. - gText_Rom_2EB56C) > 0x8
 	.error "gText_Rom_2EB56C may not grow beyond its original slot"
 	.endif
@@ -3406,7 +3690,8 @@ gText_Rom_2EB56C: @ 0x082EB56C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB574
 gText_Rom_2EB574: @ 0x082EB574
-	.string "リサイクル$"
+	.string "リサイクル"
+	.byte EOS
 	.if (. - gText_Rom_2EB574) != 0x6
 	.error "gText_Rom_2EB574 must retain its original byte length"
 	.endif
@@ -3417,7 +3702,8 @@ gText_Rom_2EB574: @ 0x082EB574
 	@ src/data/moves_info.h:6962 moves_info_line_6962
 	.globl gText_Rom_2EB57C
 gText_Rom_2EB57C: @ 0x082EB57C
-	.string "リベンジ$"
+	.string "リベンジ"
+	.byte EOS
 	.if (. - gText_Rom_2EB57C) > 0x5
 	.error "gText_Rom_2EB57C may not grow beyond its original slot"
 	.endif
@@ -3429,7 +3715,8 @@ gText_Rom_2EB57C: @ 0x082EB57C
 	@ src/data/moves_info.h:6983 moves_info_line_6983
 	.globl gText_Rom_2EB584
 gText_Rom_2EB584: @ 0x082EB584
-	.string "かわらわり$"
+	.string "かわらわり"
+	.byte EOS
 	.if (. - gText_Rom_2EB584) > 0x6
 	.error "gText_Rom_2EB584 may not grow beyond its original slot"
 	.endif
@@ -3446,7 +3733,8 @@ gText_Rom_2EB584: @ 0x082EB584
 	@ src/battle_debug.c:383 battle_debug_line_383 (+1 aliases)
 	.globl gText_Rom_2EB58C
 gText_Rom_2EB58C: @ 0x082EB58C
-	.string "あくび$"
+	.string "あくび"
+	.byte EOS
 	.if (. - gText_Rom_2EB58C) > 0x4
 	.error "gText_Rom_2EB58C may not grow beyond its original slot"
 	.endif
@@ -3463,7 +3751,8 @@ gText_Rom_2EB58C: @ 0x082EB58C
 	@ src/data/moves_info.h:7031 moves_info_line_7031
 	.globl gText_Rom_2EB594
 gText_Rom_2EB594: @ 0x082EB594
-	.string "はたきおとす$"
+	.string "はたきおとす"
+	.byte EOS
 	.if (. - gText_Rom_2EB594) > 0x7
 	.error "gText_Rom_2EB594 may not grow beyond its original slot"
 	.endif
@@ -3475,7 +3764,8 @@ gText_Rom_2EB594: @ 0x082EB594
 	@ src/data/moves_info.h:7052 moves_info_line_7052
 	.globl gText_Rom_2EB59C
 gText_Rom_2EB59C: @ 0x082EB59C
-	.string "がむしゃら$"
+	.string "がむしゃら"
+	.byte EOS
 	.if (. - gText_Rom_2EB59C) > 0x6
 	.error "gText_Rom_2EB59C may not grow beyond its original slot"
 	.endif
@@ -3487,7 +3777,8 @@ gText_Rom_2EB59C: @ 0x082EB59C
 	@ src/data/moves_info.h:7074 moves_info_line_7074
 	.globl gText_Rom_2EB5A4
 gText_Rom_2EB5A4: @ 0x082EB5A4
-	.string "ふんか$"
+	.string "ふんか"
+	.byte EOS
 	.if (. - gText_Rom_2EB5A4) > 0x4
 	.error "gText_Rom_2EB5A4 may not grow beyond its original slot"
 	.endif
@@ -3499,7 +3790,8 @@ gText_Rom_2EB5A4: @ 0x082EB5A4
 	@ src/data/moves_info.h:7094 moves_info_line_7094
 	.globl gText_Rom_2EB5AC
 gText_Rom_2EB5AC: @ 0x082EB5AC
-	.string "スキルスワップ$"
+	.string "スキルスワップ"
+	.byte EOS
 	.if (. - gText_Rom_2EB5AC) > 0x8
 	.error "gText_Rom_2EB5AC may not grow beyond its original slot"
 	.endif
@@ -3515,7 +3807,8 @@ gText_Rom_2EB5AC: @ 0x082EB5AC
 	@ src/battle_debug.c:384 battle_debug_line_384 (+1 aliases)
 	.globl gText_Rom_2EB5B4
 gText_Rom_2EB5B4: @ 0x082EB5B4
-	.string "ふういん$"
+	.string "ふういん"
+	.byte EOS
 	.if (. - gText_Rom_2EB5B4) > 0x5
 	.error "gText_Rom_2EB5B4 may not grow beyond its original slot"
 	.endif
@@ -3532,7 +3825,8 @@ gText_Rom_2EB5B4: @ 0x082EB5B4
 	@ src/data/moves_info.h:7142 moves_info_line_7142
 	.globl gText_Rom_2EB5BC
 gText_Rom_2EB5BC: @ 0x082EB5BC
-	.string "リフレッシュ$"
+	.string "リフレッシュ"
+	.byte EOS
 	.if (. - gText_Rom_2EB5BC) > 0x7
 	.error "gText_Rom_2EB5BC may not grow beyond its original slot"
 	.endif
@@ -3549,7 +3843,8 @@ gText_Rom_2EB5BC: @ 0x082EB5BC
 	@ src/battle_debug.c:385 battle_debug_line_385 (+1 aliases)
 	.globl gText_Rom_2EB5C4
 gText_Rom_2EB5C4: @ 0x082EB5C4
-	.string "おんねん$"
+	.string "おんねん"
+	.byte EOS
 	.if (. - gText_Rom_2EB5C4) > 0x5
 	.error "gText_Rom_2EB5C4 may not grow beyond its original slot"
 	.endif
@@ -3566,7 +3861,8 @@ gText_Rom_2EB5C4: @ 0x082EB5C4
 	@ src/data/moves_info.h:7190 moves_info_line_7190
 	.globl gText_Rom_2EB5CC
 gText_Rom_2EB5CC: @ 0x082EB5CC
-	.string "よこどり$"
+	.string "よこどり"
+	.byte EOS
 	.if (. - gText_Rom_2EB5CC) > 0x5
 	.error "gText_Rom_2EB5CC may not grow beyond its original slot"
 	.endif
@@ -3579,7 +3875,8 @@ gText_Rom_2EB5CC: @ 0x082EB5CC
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB5D4
 gText_Rom_2EB5D4: @ 0x082EB5D4
-	.string "ひみつのちから$"
+	.string "ひみつのちから"
+	.byte EOS
 	.if (. - gText_Rom_2EB5D4) != 0x8
 	.error "gText_Rom_2EB5D4 must retain its original byte length"
 	.endif
@@ -3589,7 +3886,8 @@ gText_Rom_2EB5D4: @ 0x082EB5D4
 	@ src/data/moves_info.h:7242 moves_info_line_7242
 	.globl gText_Rom_2EB5DC
 gText_Rom_2EB5DC: @ 0x082EB5DC
-	.string "ダイビング$"
+	.string "ダイビング"
+	.byte EOS
 	.if (. - gText_Rom_2EB5DC) > 0x6
 	.error "gText_Rom_2EB5DC may not grow beyond its original slot"
 	.endif
@@ -3601,7 +3899,8 @@ gText_Rom_2EB5DC: @ 0x082EB5DC
 	@ src/data/moves_info.h:7268 moves_info_line_7268
 	.globl gText_Rom_2EB5E4
 gText_Rom_2EB5E4: @ 0x082EB5E4
-	.string "つっぱり$"
+	.string "つっぱり"
+	.byte EOS
 	.if (. - gText_Rom_2EB5E4) > 0x5
 	.error "gText_Rom_2EB5E4 may not grow beyond its original slot"
 	.endif
@@ -3613,7 +3912,8 @@ gText_Rom_2EB5E4: @ 0x082EB5E4
 	@ src/data/moves_info.h:7289 moves_info_line_7289
 	.globl gText_Rom_2EB5EC
 gText_Rom_2EB5EC: @ 0x082EB5EC
-	.string "ほごしょく$"
+	.string "ほごしょく"
+	.byte EOS
 	.if (. - gText_Rom_2EB5EC) > 0x6
 	.error "gText_Rom_2EB5EC may not grow beyond its original slot"
 	.endif
@@ -3625,7 +3925,8 @@ gText_Rom_2EB5EC: @ 0x082EB5EC
 	@ src/data/moves_info.h:7313 moves_info_line_7313
 	.globl gText_Rom_2EB5F4
 gText_Rom_2EB5F4: @ 0x082EB5F4
-	.string "ほたるび$"
+	.string "ほたるび"
+	.byte EOS
 	.if (. - gText_Rom_2EB5F4) > 0x5
 	.error "gText_Rom_2EB5F4 may not grow beyond its original slot"
 	.endif
@@ -3637,7 +3938,8 @@ gText_Rom_2EB5F4: @ 0x082EB5F4
 	@ src/data/moves_info.h:7341 moves_info_line_7341
 	.globl gText_Rom_2EB5FC
 gText_Rom_2EB5FC: @ 0x082EB5FC
-	.string "ラスターパージ$"
+	.string "ラスターパージ"
+	.byte EOS
 	.if (. - gText_Rom_2EB5FC) > 0x8
 	.error "gText_Rom_2EB5FC may not grow beyond its original slot"
 	.endif
@@ -3649,7 +3951,8 @@ gText_Rom_2EB5FC: @ 0x082EB5FC
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB604
 gText_Rom_2EB604: @ 0x082EB604
-	.string "ミストボール$"
+	.string "ミストボール"
+	.byte EOS
 	.if (. - gText_Rom_2EB604) != 0x7
 	.error "gText_Rom_2EB604 must retain its original byte length"
 	.endif
@@ -3661,7 +3964,8 @@ gText_Rom_2EB604: @ 0x082EB604
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB60C
 gText_Rom_2EB60C: @ 0x082EB60C
-	.string "フェザーダンス$"
+	.string "フェザーダンス"
+	.byte EOS
 	.if (. - gText_Rom_2EB60C) != 0x8
 	.error "gText_Rom_2EB60C must retain its original byte length"
 	.endif
@@ -3672,7 +3976,8 @@ gText_Rom_2EB60C: @ 0x082EB60C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB614
 gText_Rom_2EB614: @ 0x082EB614
-	.string "フラフラダンス$"
+	.string "フラフラダンス"
+	.byte EOS
 	.if (. - gText_Rom_2EB614) != 0x8
 	.error "gText_Rom_2EB614 must retain its original byte length"
 	.endif
@@ -3682,7 +3987,8 @@ gText_Rom_2EB614: @ 0x082EB614
 	@ src/data/moves_info.h:7442 moves_info_line_7442
 	.globl gText_Rom_2EB61C
 gText_Rom_2EB61C: @ 0x082EB61C
-	.string "ブレイズキック$"
+	.string "ブレイズキック"
+	.byte EOS
 	.if (. - gText_Rom_2EB61C) > 0x8
 	.error "gText_Rom_2EB61C may not grow beyond its original slot"
 	.endif
@@ -3699,7 +4005,8 @@ gText_Rom_2EB61C: @ 0x082EB61C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB624
 gText_Rom_2EB624: @ 0x082EB624
-	.string "どろあそび$"
+	.string "どろあそび"
+	.byte EOS
 	.if (. - gText_Rom_2EB624) != 0x6
 	.error "gText_Rom_2EB624 must retain its original byte length"
 	.endif
@@ -3716,7 +4023,8 @@ gText_Rom_2EB624: @ 0x082EB624
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB62C
 gText_Rom_2EB62C: @ 0x082EB62C
-	.string "アイスボール$"
+	.string "アイスボール"
+	.byte EOS
 	.if (. - gText_Rom_2EB62C) != 0x7
 	.error "gText_Rom_2EB62C must retain its original byte length"
 	.endif
@@ -3727,7 +4035,8 @@ gText_Rom_2EB62C: @ 0x082EB62C
 	@ src/data/moves_info.h:7516 moves_info_line_7516
 	.globl gText_Rom_2EB634
 gText_Rom_2EB634: @ 0x082EB634
-	.string "ニードルアーム$"
+	.string "ニードルアーム"
+	.byte EOS
 	.if (. - gText_Rom_2EB634) > 0x8
 	.error "gText_Rom_2EB634 may not grow beyond its original slot"
 	.endif
@@ -3739,7 +4048,8 @@ gText_Rom_2EB634: @ 0x082EB634
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB63C
 gText_Rom_2EB63C: @ 0x082EB63C
-	.string "なまける$"
+	.string "なまける"
+	.byte EOS
 	.if (. - gText_Rom_2EB63C) != 0x5
 	.error "gText_Rom_2EB63C must retain its original byte length"
 	.endif
@@ -3750,7 +4060,8 @@ gText_Rom_2EB63C: @ 0x082EB63C
 	@ src/data/moves_info.h:7567 moves_info_line_7567
 	.globl gText_Rom_2EB644
 gText_Rom_2EB644: @ 0x082EB644
-	.string "ハイパーボイス$"
+	.string "ハイパーボイス"
+	.byte EOS
 	.if (. - gText_Rom_2EB644) > 0x8
 	.error "gText_Rom_2EB644 may not grow beyond its original slot"
 	.endif
@@ -3761,7 +4072,8 @@ gText_Rom_2EB644: @ 0x082EB644
 	@ src/data/moves_info.h:7589 moves_info_line_7589
 	.globl gText_Rom_2EB64C
 gText_Rom_2EB64C: @ 0x082EB64C
-	.string "どくどくのキバ$"
+	.string "どくどくのキバ"
+	.byte EOS
 	.if (. - gText_Rom_2EB64C) > 0x8
 	.error "gText_Rom_2EB64C may not grow beyond its original slot"
 	.endif
@@ -3772,7 +4084,8 @@ gText_Rom_2EB64C: @ 0x082EB64C
 	@ src/data/moves_info.h:7614 moves_info_line_7614
 	.globl gText_Rom_2EB654
 gText_Rom_2EB654: @ 0x082EB654
-	.string "ブレイククロー$"
+	.string "ブレイククロー"
+	.byte EOS
 	.if (. - gText_Rom_2EB654) > 0x8
 	.error "gText_Rom_2EB654 may not grow beyond its original slot"
 	.endif
@@ -3783,7 +4096,8 @@ gText_Rom_2EB654: @ 0x082EB654
 	@ src/data/moves_info.h:7640 moves_info_line_7640
 	.globl gText_Rom_2EB65C
 gText_Rom_2EB65C: @ 0x082EB65C
-	.string "ブラストバーン$"
+	.string "ブラストバーン"
+	.byte EOS
 	.if (. - gText_Rom_2EB65C) > 0x8
 	.error "gText_Rom_2EB65C may not grow beyond its original slot"
 	.endif
@@ -3794,7 +4108,8 @@ gText_Rom_2EB65C: @ 0x082EB65C
 	@ src/data/moves_info.h:7664 moves_info_line_7664
 	.globl gText_Rom_2EB664
 gText_Rom_2EB664: @ 0x082EB664
-	.string "ハイドロカノン$"
+	.string "ハイドロカノン"
+	.byte EOS
 	.if (. - gText_Rom_2EB664) > 0x8
 	.error "gText_Rom_2EB664 may not grow beyond its original slot"
 	.endif
@@ -3805,7 +4120,8 @@ gText_Rom_2EB664: @ 0x082EB664
 	@ src/data/moves_info.h:7688 moves_info_line_7688
 	.globl gText_Rom_2EB66C
 gText_Rom_2EB66C: @ 0x082EB66C
-	.string "コメットパンチ$"
+	.string "コメットパンチ"
+	.byte EOS
 	.if (. - gText_Rom_2EB66C) > 0x8
 	.error "gText_Rom_2EB66C may not grow beyond its original slot"
 	.endif
@@ -3816,7 +4132,8 @@ gText_Rom_2EB66C: @ 0x082EB66C
 	@ src/data/moves_info.h:7716 moves_info_line_7716
 	.globl gText_Rom_2EB674
 gText_Rom_2EB674: @ 0x082EB674
-	.string "おどろかす$"
+	.string "おどろかす"
+	.byte EOS
 	.if (. - gText_Rom_2EB674) > 0x6
 	.error "gText_Rom_2EB674 may not grow beyond its original slot"
 	.endif
@@ -3829,7 +4146,8 @@ gText_Rom_2EB674: @ 0x082EB674
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB67C
 gText_Rom_2EB67C: @ 0x082EB67C
-	.string "ウェザーボール$"
+	.string "ウェザーボール"
+	.byte EOS
 	.if (. - gText_Rom_2EB67C) != 0x8
 	.error "gText_Rom_2EB67C must retain its original byte length"
 	.endif
@@ -3839,7 +4157,8 @@ gText_Rom_2EB67C: @ 0x082EB67C
 	@ src/data/moves_info.h:7764 moves_info_line_7764
 	.globl gText_Rom_2EB684
 gText_Rom_2EB684: @ 0x082EB684
-	.string "アロマセラピー$"
+	.string "アロマセラピー"
+	.byte EOS
 	.if (. - gText_Rom_2EB684) > 0x8
 	.error "gText_Rom_2EB684 may not grow beyond its original slot"
 	.endif
@@ -3850,7 +4169,8 @@ gText_Rom_2EB684: @ 0x082EB684
 	@ src/data/moves_info.h:7789 moves_info_line_7789
 	.globl gText_Rom_2EB68C
 gText_Rom_2EB68C: @ 0x082EB68C
-	.string "うそなき$"
+	.string "うそなき"
+	.byte EOS
 	.if (. - gText_Rom_2EB68C) > 0x5
 	.error "gText_Rom_2EB68C may not grow beyond its original slot"
 	.endif
@@ -3862,7 +4182,8 @@ gText_Rom_2EB68C: @ 0x082EB68C
 	@ src/data/moves_info.h:7815 moves_info_line_7815
 	.globl gText_Rom_2EB694
 gText_Rom_2EB694: @ 0x082EB694
-	.string "エアカッター$"
+	.string "エアカッター"
+	.byte EOS
 	.if (. - gText_Rom_2EB694) > 0x7
 	.error "gText_Rom_2EB694 may not grow beyond its original slot"
 	.endif
@@ -3874,7 +4195,8 @@ gText_Rom_2EB694: @ 0x082EB694
 	@ src/data/moves_info.h:7838 moves_info_line_7838
 	.globl gText_Rom_2EB69C
 gText_Rom_2EB69C: @ 0x082EB69C
-	.string "オーバーヒート$"
+	.string "オーバーヒート"
+	.byte EOS
 	.if (. - gText_Rom_2EB69C) > 0x8
 	.error "gText_Rom_2EB69C may not grow beyond its original slot"
 	.endif
@@ -3885,7 +4207,8 @@ gText_Rom_2EB69C: @ 0x082EB69C
 	@ src/data/moves_info.h:7864 moves_info_line_7864
 	.globl gText_Rom_2EB6A4
 gText_Rom_2EB6A4: @ 0x082EB6A4
-	.string "かぎわける$"
+	.string "かぎわける"
+	.byte EOS
 	.if (. - gText_Rom_2EB6A4) > 0x6
 	.error "gText_Rom_2EB6A4 may not grow beyond its original slot"
 	.endif
@@ -3897,7 +4220,8 @@ gText_Rom_2EB6A4: @ 0x082EB6A4
 	@ src/data/moves_info.h:7887 moves_info_line_7887
 	.globl gText_Rom_2EB6AC
 gText_Rom_2EB6AC: @ 0x082EB6AC
-	.string "がんせきふうじ$"
+	.string "がんせきふうじ"
+	.byte EOS
 	.if (. - gText_Rom_2EB6AC) > 0x8
 	.error "gText_Rom_2EB6AC may not grow beyond its original slot"
 	.endif
@@ -3908,7 +4232,8 @@ gText_Rom_2EB6AC: @ 0x082EB6AC
 	@ src/data/moves_info.h:7912 moves_info_line_7912
 	.globl gText_Rom_2EB6B4
 gText_Rom_2EB6B4: @ 0x082EB6B4
-	.string "ぎんいろのかぜ$"
+	.string "ぎんいろのかぜ"
+	.byte EOS
 	.if (. - gText_Rom_2EB6B4) > 0x8
 	.error "gText_Rom_2EB6B4 may not grow beyond its original slot"
 	.endif
@@ -3919,7 +4244,8 @@ gText_Rom_2EB6B4: @ 0x082EB6B4
 	@ src/data/moves_info.h:7943 moves_info_line_7943
 	.globl gText_Rom_2EB6BC
 gText_Rom_2EB6BC: @ 0x082EB6BC
-	.string "きんぞくおん$"
+	.string "きんぞくおん"
+	.byte EOS
 	.if (. - gText_Rom_2EB6BC) > 0x7
 	.error "gText_Rom_2EB6BC may not grow beyond its original slot"
 	.endif
@@ -3931,7 +4257,8 @@ gText_Rom_2EB6BC: @ 0x082EB6BC
 	@ src/data/moves_info.h:7971 moves_info_line_7971
 	.globl gText_Rom_2EB6C4
 gText_Rom_2EB6C4: @ 0x082EB6C4
-	.string "くさぶえ$"
+	.string "くさぶえ"
+	.byte EOS
 	.if (. - gText_Rom_2EB6C4) > 0x5
 	.error "gText_Rom_2EB6C4 may not grow beyond its original slot"
 	.endif
@@ -3943,7 +4270,8 @@ gText_Rom_2EB6C4: @ 0x082EB6C4
 	@ src/data/moves_info.h:7996 moves_info_line_7996
 	.globl gText_Rom_2EB6CC
 gText_Rom_2EB6CC: @ 0x082EB6CC
-	.string "くすぐる$"
+	.string "くすぐる"
+	.byte EOS
 	.if (. - gText_Rom_2EB6CC) > 0x5
 	.error "gText_Rom_2EB6CC may not grow beyond its original slot"
 	.endif
@@ -3955,7 +4283,8 @@ gText_Rom_2EB6CC: @ 0x082EB6CC
 	@ src/data/moves_info.h:8024 moves_info_line_8024
 	.globl gText_Rom_2EB6D4
 gText_Rom_2EB6D4: @ 0x082EB6D4
-	.string "コスモパワー$"
+	.string "コスモパワー"
+	.byte EOS
 	.if (. - gText_Rom_2EB6D4) > 0x7
 	.error "gText_Rom_2EB6D4 may not grow beyond its original slot"
 	.endif
@@ -3967,7 +4296,8 @@ gText_Rom_2EB6D4: @ 0x082EB6D4
 	@ src/data/moves_info.h:8053 moves_info_line_8053
 	.globl gText_Rom_2EB6DC
 gText_Rom_2EB6DC: @ 0x082EB6DC
-	.string "しおふき$"
+	.string "しおふき"
+	.byte EOS
 	.if (. - gText_Rom_2EB6DC) > 0x5
 	.error "gText_Rom_2EB6DC may not grow beyond its original slot"
 	.endif
@@ -3979,7 +4309,8 @@ gText_Rom_2EB6DC: @ 0x082EB6DC
 	@ src/data/moves_info.h:8073 moves_info_line_8073
 	.globl gText_Rom_2EB6E4
 gText_Rom_2EB6E4: @ 0x082EB6E4
-	.string "シグナルビーム$"
+	.string "シグナルビーム"
+	.byte EOS
 	.if (. - gText_Rom_2EB6E4) > 0x8
 	.error "gText_Rom_2EB6E4 may not grow beyond its original slot"
 	.endif
@@ -3990,7 +4321,8 @@ gText_Rom_2EB6E4: @ 0x082EB6E4
 	@ src/data/moves_info.h:8097 moves_info_line_8097
 	.globl gText_Rom_2EB6EC
 gText_Rom_2EB6EC: @ 0x082EB6EC
-	.string "シャドーパンチ$"
+	.string "シャドーパンチ"
+	.byte EOS
 	.if (. - gText_Rom_2EB6EC) > 0x8
 	.error "gText_Rom_2EB6EC may not grow beyond its original slot"
 	.endif
@@ -4001,7 +4333,8 @@ gText_Rom_2EB6EC: @ 0x082EB6EC
 	@ src/data/moves_info.h:8119 moves_info_line_8119
 	.globl gText_Rom_2EB6F4
 gText_Rom_2EB6F4: @ 0x082EB6F4
-	.string "じんつうりき$"
+	.string "じんつうりき"
+	.byte EOS
 	.if (. - gText_Rom_2EB6F4) > 0x7
 	.error "gText_Rom_2EB6F4 may not grow beyond its original slot"
 	.endif
@@ -4013,7 +4346,8 @@ gText_Rom_2EB6F4: @ 0x082EB6F4
 	@ src/data/moves_info.h:8144 moves_info_line_8144
 	.globl gText_Rom_2EB6FC
 gText_Rom_2EB6FC: @ 0x082EB6FC
-	.string "スカイアッパー$"
+	.string "スカイアッパー"
+	.byte EOS
 	.if (. - gText_Rom_2EB6FC) > 0x8
 	.error "gText_Rom_2EB6FC may not grow beyond its original slot"
 	.endif
@@ -4024,7 +4358,8 @@ gText_Rom_2EB6FC: @ 0x082EB6FC
 	@ src/data/moves_info.h:8167 moves_info_line_8167
 	.globl gText_Rom_2EB704
 gText_Rom_2EB704: @ 0x082EB704
-	.string "すなじごく$"
+	.string "すなじごく"
+	.byte EOS
 	.if (. - gText_Rom_2EB704) > 0x6
 	.error "gText_Rom_2EB704 may not grow beyond its original slot"
 	.endif
@@ -4036,7 +4371,8 @@ gText_Rom_2EB704: @ 0x082EB704
 	@ src/data/moves_info.h:8191 moves_info_line_8191
 	.globl gText_Rom_2EB70C
 gText_Rom_2EB70C: @ 0x082EB70C
-	.string "ぜったいれいど$"
+	.string "ぜったいれいど"
+	.byte EOS
 	.if (. - gText_Rom_2EB70C) > 0x8
 	.error "gText_Rom_2EB70C may not grow beyond its original slot"
 	.endif
@@ -4047,7 +4383,8 @@ gText_Rom_2EB70C: @ 0x082EB70C
 	@ src/data/moves_info.h:8213 moves_info_line_8213
 	.globl gText_Rom_2EB714
 gText_Rom_2EB714: @ 0x082EB714
-	.string "だくりゅう$"
+	.string "だくりゅう"
+	.byte EOS
 	.if (. - gText_Rom_2EB714) > 0x6
 	.error "gText_Rom_2EB714 may not grow beyond its original slot"
 	.endif
@@ -4059,7 +4396,8 @@ gText_Rom_2EB714: @ 0x082EB714
 	@ src/data/moves_info.h:8239 moves_info_line_8239
 	.globl gText_Rom_2EB71C
 gText_Rom_2EB71C: @ 0x082EB71C
-	.string "タネマシンガン$"
+	.string "タネマシンガン"
+	.byte EOS
 	.if (. - gText_Rom_2EB71C) > 0x8
 	.error "gText_Rom_2EB71C may not grow beyond its original slot"
 	.endif
@@ -4070,7 +4408,8 @@ gText_Rom_2EB71C: @ 0x082EB71C
 	@ src/data/moves_info.h:8260 moves_info_line_8260
 	.globl gText_Rom_2EB724
 gText_Rom_2EB724: @ 0x082EB724
-	.string "つばめがえし$"
+	.string "つばめがえし"
+	.byte EOS
 	.if (. - gText_Rom_2EB724) > 0x7
 	.error "gText_Rom_2EB724 may not grow beyond its original slot"
 	.endif
@@ -4082,7 +4421,8 @@ gText_Rom_2EB724: @ 0x082EB724
 	@ src/data/moves_info.h:8282 moves_info_line_8282
 	.globl gText_Rom_2EB72C
 gText_Rom_2EB72C: @ 0x082EB72C
-	.string "つららばり$"
+	.string "つららばり"
+	.byte EOS
 	.if (. - gText_Rom_2EB72C) > 0x6
 	.error "gText_Rom_2EB72C may not grow beyond its original slot"
 	.endif
@@ -4094,7 +4434,8 @@ gText_Rom_2EB72C: @ 0x082EB72C
 	@ src/data/moves_info.h:8302 moves_info_line_8302
 	.globl gText_Rom_2EB734
 gText_Rom_2EB734: @ 0x082EB734
-	.string "てっぺき$"
+	.string "てっぺき"
+	.byte EOS
 	.if (. - gText_Rom_2EB734) > 0x5
 	.error "gText_Rom_2EB734 may not grow beyond its original slot"
 	.endif
@@ -4106,7 +4447,8 @@ gText_Rom_2EB734: @ 0x082EB734
 	@ src/data/moves_info.h:8330 moves_info_line_8330
 	.globl gText_Rom_2EB73C
 gText_Rom_2EB73C: @ 0x082EB73C
-	.string "とおせんぼう$"
+	.string "とおせんぼう"
+	.byte EOS
 	.if (. - gText_Rom_2EB73C) > 0x7
 	.error "gText_Rom_2EB73C may not grow beyond its original slot"
 	.endif
@@ -4119,7 +4461,8 @@ gText_Rom_2EB73C: @ 0x082EB73C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB744
 gText_Rom_2EB744: @ 0x082EB744
-	.string "とおぼえ$"
+	.string "とおぼえ"
+	.byte EOS
 	.if (. - gText_Rom_2EB744) != 0x5
 	.error "gText_Rom_2EB744 must retain its original byte length"
 	.endif
@@ -4130,7 +4473,8 @@ gText_Rom_2EB744: @ 0x082EB744
 	@ src/data/moves_info.h:8382 moves_info_line_8382
 	.globl gText_Rom_2EB74C
 gText_Rom_2EB74C: @ 0x082EB74C
-	.string "ドラゴンクロー$"
+	.string "ドラゴンクロー"
+	.byte EOS
 	.if (. - gText_Rom_2EB74C) > 0x8
 	.error "gText_Rom_2EB74C may not grow beyond its original slot"
 	.endif
@@ -4141,7 +4485,8 @@ gText_Rom_2EB74C: @ 0x082EB74C
 	@ src/data/moves_info.h:8403 moves_info_line_8403
 	.globl gText_Rom_2EB754
 gText_Rom_2EB754: @ 0x082EB754
-	.string "ハードプラント$"
+	.string "ハードプラント"
+	.byte EOS
 	.if (. - gText_Rom_2EB754) > 0x8
 	.error "gText_Rom_2EB754 may not grow beyond its original slot"
 	.endif
@@ -4152,7 +4497,8 @@ gText_Rom_2EB754: @ 0x082EB754
 	@ src/data/moves_info.h:8428 moves_info_line_8428
 	.globl gText_Rom_2EB75C
 gText_Rom_2EB75C: @ 0x082EB75C
-	.string "ビルドアップ$"
+	.string "ビルドアップ"
+	.byte EOS
 	.if (. - gText_Rom_2EB75C) > 0x7
 	.error "gText_Rom_2EB75C may not grow beyond its original slot"
 	.endif
@@ -4165,7 +4511,8 @@ gText_Rom_2EB75C: @ 0x082EB75C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB764
 gText_Rom_2EB764: @ 0x082EB764
-	.string "とびはねる$"
+	.string "とびはねる"
+	.byte EOS
 	.if (. - gText_Rom_2EB764) != 0x6
 	.error "gText_Rom_2EB764 must retain its original byte length"
 	.endif
@@ -4176,7 +4523,8 @@ gText_Rom_2EB764: @ 0x082EB764
 	@ src/data/moves_info.h:8487 moves_info_line_8487
 	.globl gText_Rom_2EB76C
 gText_Rom_2EB76C: @ 0x082EB76C
-	.string "マッドショット$"
+	.string "マッドショット"
+	.byte EOS
 	.if (. - gText_Rom_2EB76C) > 0x8
 	.error "gText_Rom_2EB76C may not grow beyond its original slot"
 	.endif
@@ -4187,7 +4535,8 @@ gText_Rom_2EB76C: @ 0x082EB76C
 	@ src/data/moves_info.h:8511 moves_info_line_8511
 	.globl gText_Rom_2EB774
 gText_Rom_2EB774: @ 0x082EB774
-	.string "ポイズンテール$"
+	.string "ポイズンテール"
+	.byte EOS
 	.if (. - gText_Rom_2EB774) > 0x8
 	.error "gText_Rom_2EB774 may not grow beyond its original slot"
 	.endif
@@ -4198,7 +4547,8 @@ gText_Rom_2EB774: @ 0x082EB774
 	@ src/data/moves_info.h:8537 moves_info_line_8537
 	.globl gText_Rom_2EB77C
 gText_Rom_2EB77C: @ 0x082EB77C
-	.string "ほしがる$"
+	.string "ほしがる"
+	.byte EOS
 	.if (. - gText_Rom_2EB77C) > 0x5
 	.error "gText_Rom_2EB77C may not grow beyond its original slot"
 	.endif
@@ -4210,7 +4560,8 @@ gText_Rom_2EB77C: @ 0x082EB77C
 	@ src/data/moves_info.h:8562 moves_info_line_8562
 	.globl gText_Rom_2EB784
 gText_Rom_2EB784: @ 0x082EB784
-	.string "ボルテッカー$"
+	.string "ボルテッカー"
+	.byte EOS
 	.if (. - gText_Rom_2EB784) > 0x7
 	.error "gText_Rom_2EB784 may not grow beyond its original slot"
 	.endif
@@ -4223,7 +4574,8 @@ gText_Rom_2EB784: @ 0x082EB784
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB78C
 gText_Rom_2EB78C: @ 0x082EB78C
-	.string "マジカルリーフ$"
+	.string "マジカルリーフ"
+	.byte EOS
 	.if (. - gText_Rom_2EB78C) != 0x8
 	.error "gText_Rom_2EB78C must retain its original byte length"
 	.endif
@@ -4239,7 +4591,8 @@ gText_Rom_2EB78C: @ 0x082EB78C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2EB794
 gText_Rom_2EB794: @ 0x082EB794
-	.string "みずあそび$"
+	.string "みずあそび"
+	.byte EOS
 	.if (. - gText_Rom_2EB794) != 0x6
 	.error "gText_Rom_2EB794 must retain its original byte length"
 	.endif
@@ -4255,7 +4608,8 @@ gText_Rom_2EB794: @ 0x082EB794
 	@ src/data/moves_info.h:8635 moves_info_line_8635
 	.globl gText_Rom_2EB79C
 gText_Rom_2EB79C: @ 0x082EB79C
-	.string "めいそう$"
+	.string "めいそう"
+	.byte EOS
 	.if (. - gText_Rom_2EB79C) > 0x5
 	.error "gText_Rom_2EB79C may not grow beyond its original slot"
 	.endif
@@ -4267,7 +4621,8 @@ gText_Rom_2EB79C: @ 0x082EB79C
 	@ src/data/moves_info.h:8664 moves_info_line_8664
 	.globl gText_Rom_2EB7A4
 gText_Rom_2EB7A4: @ 0x082EB7A4
-	.string "リーフブレード$"
+	.string "リーフブレード"
+	.byte EOS
 	.if (. - gText_Rom_2EB7A4) > 0x8
 	.error "gText_Rom_2EB7A4 may not grow beyond its original slot"
 	.endif
@@ -4278,7 +4633,8 @@ gText_Rom_2EB7A4: @ 0x082EB7A4
 	@ src/data/moves_info.h:8687 moves_info_line_8687
 	.globl gText_Rom_2EB7AC
 gText_Rom_2EB7AC: @ 0x082EB7AC
-	.string "りゅうのまい$"
+	.string "りゅうのまい"
+	.byte EOS
 	.if (. - gText_Rom_2EB7AC) > 0x7
 	.error "gText_Rom_2EB7AC may not grow beyond its original slot"
 	.endif
@@ -4290,7 +4646,8 @@ gText_Rom_2EB7AC: @ 0x082EB7AC
 	@ src/data/moves_info.h:8717 moves_info_line_8717
 	.globl gText_Rom_2EB7B4
 gText_Rom_2EB7B4: @ 0x082EB7B4
-	.string "ロックブラスト$"
+	.string "ロックブラスト"
+	.byte EOS
 	.if (. - gText_Rom_2EB7B4) > 0x8
 	.error "gText_Rom_2EB7B4 may not grow beyond its original slot"
 	.endif
@@ -4301,7 +4658,8 @@ gText_Rom_2EB7B4: @ 0x082EB7B4
 	@ src/data/moves_info.h:8738 moves_info_line_8738
 	.globl gText_Rom_2EB7BC
 gText_Rom_2EB7BC: @ 0x082EB7BC
-	.string "でんげきは$"
+	.string "でんげきは"
+	.byte EOS
 	.if (. - gText_Rom_2EB7BC) > 0x6
 	.error "gText_Rom_2EB7BC may not grow beyond its original slot"
 	.endif
@@ -4313,7 +4671,8 @@ gText_Rom_2EB7BC: @ 0x082EB7BC
 	@ src/data/moves_info.h:8758 moves_info_line_8758
 	.globl gText_Rom_2EB7C4
 gText_Rom_2EB7C4: @ 0x082EB7C4
-	.string "みずのはどう$"
+	.string "みずのはどう"
+	.byte EOS
 	.if (. - gText_Rom_2EB7C4) > 0x7
 	.error "gText_Rom_2EB7C4 may not grow beyond its original slot"
 	.endif
@@ -4325,7 +4684,8 @@ gText_Rom_2EB7C4: @ 0x082EB7C4
 	@ src/data/moves_info.h:8783 moves_info_line_8783
 	.globl gText_Rom_2EB7CC
 gText_Rom_2EB7CC: @ 0x082EB7CC
-	.string "はめつのねがい$"
+	.string "はめつのねがい"
+	.byte EOS
 	.if (. - gText_Rom_2EB7CC) > 0x8
 	.error "gText_Rom_2EB7CC may not grow beyond its original slot"
 	.endif
@@ -4336,7 +4696,8 @@ gText_Rom_2EB7CC: @ 0x082EB7CC
 	@ src/data/moves_info.h:8805 moves_info_line_8805
 	.globl gText_Rom_2EB7D4
 gText_Rom_2EB7D4: @ 0x082EB7D4
-	.string "サイコブースト$"
+	.string "サイコブースト"
+	.byte EOS
 	.if (. - gText_Rom_2EB7D4) > 0x8
 	.error "gText_Rom_2EB7D4 may not grow beyond its original slot"
 	.endif
