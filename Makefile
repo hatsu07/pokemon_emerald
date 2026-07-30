@@ -23,6 +23,9 @@ MON_PIC_BINS := $(sort $(shell sed -n \
 	's@^[[:space:]]*\.incbin "\(build/graphics/pokemon/[^"]*\.4bpp\.lz\)".*@\1@p' \
 	$(MON_PICS_INCS)))
 
+MON_RAW_PIC_BINS := $(sort $(shell sed -n \
+	's@^[[:space:]]*\.incbin "\(build/graphics/pokemon/[^"]*\.4bpp\)".*@\1@p' \
+	$(MON_PICS_INCS) | grep -v '\.lz$$'))
 
 # asm/data配下の.incbinが参照する圧縮パレットを自動収集する。
 # 例: build/graphics/pokemon/bulbasaur/normal.gbapal.lz
@@ -44,6 +47,11 @@ UNKNOWN_PALETTE_BINS := $(sort $(shell grep -Rho \
 	--include='*.s' --include='*.inc' \
 	'build/graphics/unknown/[^"]*\.gbapal\.lz' \
 	asm data 2>/dev/null))
+
+MON_RAW_PALETTE_BINS := $(sort $(shell grep -Rho \
+	--include='*.s' --include='*.inc' \
+	'build/graphics/pokemon/icon/[^"]*\.gbapal' \
+	asm data 2>/dev/null | grep -v '\.lz$$'))
 
 ASFLAGS := -mcpu=arm7tdmi
 
@@ -110,6 +118,19 @@ build/graphics/pokemon/%.4bpp.lz: \
 		--gbagfx $(GBAGFX) \
 		$< $@
 
+# ポケモン画像PNGを非圧縮4bppへ変換する。
+# 例:
+#   graphics/pokemon/bulbasaur/icon.png
+#   -> build/graphics/pokemon/bulbasaur/icon.4bpp
+build/graphics/pokemon/%.4bpp: \
+		graphics/pokemon/%.png \
+		tools/png_to_4bpp_raw.py \
+		$(GBAGFX)
+	@mkdir -p $(dir $@)
+	python3 tools/png_to_4bpp_raw.py \
+		--gbagfx $(GBAGFX) \
+		$< $@
+
 # ポケモン別パレットPNGを圧縮GBAパレットへ変換する。
 # 例:
 #   graphics/pokemon/bulbasaur/normal_palette.png
@@ -160,6 +181,18 @@ $(UNKNOWN_GFX_BUILD_DIR)/%.gbapal.lz: \
 	python3 tools/png_to_palette.py \
 		$< $@ --lz
 
+# ポケモンアイコン等の非圧縮パレットPNGをGBAパレットへ変換する。
+# 例:
+#   graphics/pokemon/icon/icon_palette_0.png
+#   -> build/graphics/pokemon/icon/icon_palette_0.gbapal
+build/graphics/pokemon/%.gbapal: \
+		graphics/pokemon/%.png \
+		tools/png_to_palette.py \
+		tools/gba_graphics.py
+	@mkdir -p $(dir $@)
+	python3 tools/png_to_palette.py \
+		$< $@
+
 data/%.o: data/%.s $(CHARMAP)
 	$(PREPROC) $< $(CHARMAP) | $(AS) $(ASFLAGS) -o $@ -
 
@@ -168,7 +201,9 @@ TEXT_SOURCES := $(wildcard data/text/*.inc data/text/generated/*.inc)
 data/event_scripts.o data/data.o: $(TEXT_SOURCES)
 data/data.o: \
 	$(MON_PIC_BINS) \
+	$(MON_RAW_PIC_BINS) \
 	$(MON_PALETTE_BINS) \
+	$(MON_RAW_PALETTE_BINS) \
 	$(UNKNOWN_PIC_BINS) \
 	$(UNKNOWN_PALETTE_BINS) \
 	build/graphics/fonts/font_tiles.4bpp.lz

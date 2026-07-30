@@ -1,3 +1,7 @@
+	.globl gUnknown_82DE7DC
+gUnknown_82DE7DC: @ 0x082DE7DC
+	.incbin "baserom.gba", 0x2de7dc, 0x4d88
+
 	@ src/battle_main.c:302 battle_main_line_302 (+4 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2E3564
