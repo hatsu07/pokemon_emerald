@@ -263,6 +263,7 @@
 	.include "data/text/rodata/pokemon/303_pokemon_data.inc"
 	.include "data/text/rodata/moves/304_move_data.inc"
 	.include "data/text/rodata/battle/305_battle_data.inc"
-	.include "data/text/rodata/moves/306_move_data.inc"
+	.include "data/pokemon/mon_front_pics.inc"
 	.include "data/text/rodata/battle/307_battle_data.inc"
+	.include "data/pokemon/mon_back_pics.inc"
 	.include "data/text/rodata/moves/308_move_data.inc"

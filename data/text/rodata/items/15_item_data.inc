@@ -384,15 +384,13 @@ gUnknown_82D4CA8: @ 0x082D4CA8
 	.globl gUnknown_82D5A68
 gUnknown_82D5A68: @ 0x082D5A68
 	.incbin "baserom.gba", 0x2d5a68, 0x6e0
-	.globl gMonBackPicTable
-gMonBackPicTable: @ 0x082D6148
-	.incbin "baserom.gba", 0x2d6148, 0xdc0
-	.globl gMonPaletteTable
-gMonPaletteTable: @ 0x082D6F08
-	.incbin "baserom.gba", 0x2d6f08, 0xdc0
-	.globl gMonShinyPaletteTable
-gMonShinyPaletteTable: @ 0x082D7CC8
-	.incbin "baserom.gba", 0x2d7cc8, 0xf34
+
+	.include "data/pokemon/mon_back_pic_table.inc"
+
+	.include "data/pokemon/mon_palette_tables.inc"
+
+@ gMonShinyPaletteTableの0xDC0以降
+	.incbin "baserom.gba", 0x2d8a88, 0x174
 	.globl gUnknown_82D8BFC
 gUnknown_82D8BFC: @ 0x082D8BFC
 	.incbin "baserom.gba", 0x2d8bfc, 0x174
@@ -423,9 +421,9 @@ gUnknown_82D965C: @ 0x082D965C
 	.globl gUnknown_82DD33C
 gUnknown_82DD33C: @ 0x082DD33C
 	.incbin "baserom.gba", 0x2dd33c, 0x6e0
-	.globl gMonFrontPicTable
-gMonFrontPicTable: @ 0x082DDA1C
-	.incbin "baserom.gba", 0x2dda1c, 0x5b48
-	.globl gUnknown_82E3564
-gUnknown_82E3564: @ 0x082E3564
 
+	.include "data/pokemon/mon_front_pic_table.inc"
+	
+	.globl gUnknown_82DE7DC
+gUnknown_82DE7DC: @ 0x082DE7DC
+	.incbin "baserom.gba", 0x2de7dc, 0x4d88
