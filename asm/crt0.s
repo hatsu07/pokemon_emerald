@@ -167,7 +167,9 @@ _init.ret: @ 0x08000234
 _08000238: .4byte 0x03007E40
 _0800023C: .4byte 0x03007FA0
 _08000240: .4byte 0x03007FFC
-_08000244: .4byte 0x080003A5
+@ AgbMain is Thumb code at 0x080003A4.
+@ Function pointers to Thumb code store bit 0 as 1.
+_08000244: .4byte AgbMain + 1
 	arm_func_end _init.ret
 
 	arm_func_start _intr
