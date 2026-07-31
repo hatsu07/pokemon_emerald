@@ -135,7 +135,7 @@ gRomHeaderReserved:
 	.4byte gSpeciesInfo
 	.4byte gAbilityNames
 	.4byte gAbilityDescriptions
-	.4byte gItems
+	.4byte gItemsInfo
 	.4byte gBattleMoves
 	.4byte gBallSpriteSheets
 	.4byte gBallSpritePalettes
