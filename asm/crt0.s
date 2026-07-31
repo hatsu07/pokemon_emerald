@@ -1,7 +1,5 @@
 .include "asm/macros.inc"
-.include "asm/macros/gf_rom_header.inc"
 .include "constants/constants.inc"
-.include "constants/gf_rom_header.inc"
 
 .section .text
 .syntax unified
@@ -144,31 +142,8 @@ gRomHeaderReserved:
 
 @ Flags and SaveBlock2 field used by GameCube link software.
 @ Layout: gcnLinkFlags offset, game-clear flag ID, ribbon-obtained flag ID.
-.LgfRomHeaderGameFlags:
-	gf_rom_header_game_flags
-.LgfRomHeaderGameFlagsEnd:
-.if (.LgfRomHeaderGameFlagsEnd - .LgfRomHeaderGameFlags) != GF_ROM_HEADER_GAME_FLAGS_SIZE
-	.error "GF ROM header game-flags block must be 12 bytes"
-.endif
-
-@ Maximum number of entries in each player inventory pocket.
-@ The final two bytes are reserved padding required by the ROM-header format.
-.LgfRomHeaderBagCapacities:
-	gf_rom_header_bag_capacities
-.LgfRomHeaderBagCapacitiesEnd:
-.if (.LgfRomHeaderBagCapacitiesEnd - .LgfRomHeaderBagCapacities) != GF_ROM_HEADER_BAG_CAPACITIES_SIZE
-	.error "GF ROM header bag-capacities block must be 8 bytes"
-.endif
-
-@ Remaining SaveBlock1 layout information consumed by external link software.
-@ moveDescriptions is NULL in this ROM. The final unknown field is the
-@ original 0xFFFFFFFF sentinel and is preserved until its semantics are known.
-.LgfRomHeaderRemainingSaveLayout:
-	gf_rom_header_remaining_save_layout
-.LgfRomHeaderRemainingSaveLayoutEnd:
-.if (.LgfRomHeaderRemainingSaveLayoutEnd - .LgfRomHeaderRemainingSaveLayout) != GF_ROM_HEADER_REMAINING_SAVE_LAYOUT_SIZE
-	.error "GF ROM header remaining-save-layout block must be 24 bytes"
-.endif
+@ Remaining GF ROM-header save/link metadata.
+.include "data/gf_rom_header.inc"
 
 _init:
 	mov r0, #0x12
