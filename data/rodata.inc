@@ -34,7 +34,7 @@
 	.include "data/moves/battle_moves.inc"
 	.include "data/text/generated/rodata/68_pokemon_data.inc"
 	.include "data/text/rodata/pokemon/69_pokemon_level_up_learnsets.inc"
-	.include "data/text/rodata/pokemon/70_pokemon_data.inc"
+	.include "data/pokeball/ball_sprite_tables.inc"
 	.include "data/text/rodata/menus/71_menu_text.inc"
 	.include "data/text/rodata/items/72_item_data.inc"
 	.include "data/text/rodata/battle/73_battle_data.inc"
