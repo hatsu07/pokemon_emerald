@@ -31,6 +31,7 @@
 	.include "data/abilities/ability_names.inc"
 	.include "data/abilities/ability_descriptions.inc"
 	.include "data/text/rodata/battle/67-5_battle_data.inc"
+	.include "data/moves/battle_moves.inc"
 	.include "data/text/generated/rodata/68_pokemon_data.inc"
 	.include "data/text/rodata/pokemon/69_pokemon_level_up_learnsets.inc"
 	.include "data/text/rodata/pokemon/70_pokemon_data.inc"
