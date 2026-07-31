@@ -86,21 +86,21 @@ gRomHeaderReserved:
 	.4byte gDecorations
 
 .LgfRomHeaderSaveMetadata:
-	.4byte 0x1270 @ offsetof(struct SaveBlock1, flags)
-	.4byte 0x139C @ offsetof(struct SaveBlock1, vars)
-	.4byte 0x0018 @ offsetof(struct SaveBlock2, pokedex)
-	.4byte 0x0988 @ offsetof(struct SaveBlock1, seen1)
-	.4byte 0x3B24 @ offsetof(struct SaveBlock1, seen2)
-	.4byte 0x0046 @ VAR_NATIONAL_DEX - VARS_START
-	.4byte 0x08E4 @ FLAG_RECEIVED_POKEDEX_FROM_BIRCH
-	.4byte 0x08AC @ FLAG_SYS_MYSTERY_EVENT_ENABLE
-	.4byte 0x0182 @ NATIONAL_DEX_COUNT
+	.4byte SAVE_BLOCK1_FLAGS_OFFSET
+	.4byte SAVE_BLOCK1_VARS_OFFSET
+	.4byte SAVE_BLOCK2_POKEDEX_OFFSET
+	.4byte SAVE_BLOCK1_SEEN1_OFFSET
+	.4byte SAVE_BLOCK1_SEEN2_OFFSET
+	.4byte VAR_NATIONAL_DEX - VARS_START
+	.4byte FLAG_RECEIVED_POKEDEX_FROM_BIRCH
+	.4byte FLAG_SYS_MYSTERY_EVENT_ENABLE
+	.4byte NATIONAL_DEX_COUNT
 
 .LgfRomHeaderNameLengths:
-	.byte 7  @ playerNameLength
-	.byte 5  @ trainerNameLength
-	.byte 10 @ pokemonNameLength1
-	.byte 5  @ pokemonNameLength2
+	.byte PLAYER_NAME_LENGTH
+	.byte TRAINER_NAME_LENGTH
+	.byte POKEMON_NAME_LENGTH
+	.byte POKEMON_NAME_LENGTH_SHORT
 	.byte 7  @ unk5
 	.byte 8  @ unk6
 	.byte 6  @ unk7
@@ -117,19 +117,19 @@ gRomHeaderReserved:
 	.space 3
 
 .LgfRomHeaderSaveLayout:
-	.4byte 0x0F2C @ sizeof(struct SaveBlock2)
-	.4byte 0x3D88 @ sizeof(struct SaveBlock1)
-	.4byte 0x0234 @ offsetof(struct SaveBlock1, playerPartyCount)
-	.4byte 0x0238 @ offsetof(struct SaveBlock1, playerParty)
-	.4byte 0x0009 @ offsetof(struct SaveBlock2, specialSaveWarpFlags)
-	.4byte 0x000A @ offsetof(struct SaveBlock2, playerTrainerId)
-	.4byte 0x0000 @ offsetof(struct SaveBlock2, playerName)
-	.4byte 0x0008 @ offsetof(struct SaveBlock2, playerGender)
-	.4byte 0x0CA8 @ offsetof(struct SaveBlock2, frontier.challengeStatus)
-	.4byte 0x0CA8 @ offsetof(struct SaveBlock2, frontier.challengeStatus)
-	.4byte 0x31C7 @ offsetof(struct SaveBlock1, externalEventFlags)
-	.4byte 0x31B3 @ offsetof(struct SaveBlock1, externalEventData)
-	.4byte 0      @ unk18
+	.4byte SAVE_BLOCK2_SIZE
+	.4byte SAVE_BLOCK1_SIZE
+	.4byte SAVE_BLOCK1_PLAYER_PARTY_COUNT_OFFSET
+	.4byte SAVE_BLOCK1_PLAYER_PARTY_OFFSET
+	.4byte SAVE_BLOCK2_SPECIAL_SAVE_WARP_FLAGS_OFFSET
+	.4byte SAVE_BLOCK2_PLAYER_TRAINER_ID_OFFSET
+	.4byte SAVE_BLOCK2_PLAYER_NAME_OFFSET
+	.4byte SAVE_BLOCK2_PLAYER_GENDER_OFFSET
+	.4byte SAVE_BLOCK2_FRONTIER_CHALLENGE_STATUS_OFFSET
+	.4byte SAVE_BLOCK2_FRONTIER_CHALLENGE_STATUS_OFFSET
+	.4byte SAVE_BLOCK1_EXTERNAL_EVENT_FLAGS_OFFSET
+	.4byte SAVE_BLOCK1_EXTERNAL_EVENT_DATA_OFFSET
+	.4byte 0 @ unk18
 
 .LgfRomHeaderDataPointers:
 	.4byte gSpeciesInfo
