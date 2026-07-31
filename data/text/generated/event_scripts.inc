@@ -2,7 +2,7 @@
 @ Edit .string values in-place; each slot may not grow.
 @ Slots with an exact-length guard contain an internal label or terminator.
 
-	.include "constants/item_constants.inc"
+	.include "constants/item.inc"
 	.include "constants/species.inc"
 	.include "asm/macros/event.inc"
 
