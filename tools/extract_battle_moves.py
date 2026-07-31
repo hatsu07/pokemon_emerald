@@ -431,7 +431,7 @@ def verify_round_trip(
 def main() -> int:
     parser = argparse.ArgumentParser(description="Extract the battle move table from the Japanese Emerald ROM")
     parser.add_argument("--rom", default="baserom.gba")
-    parser.add_argument("--output", default="data/pokemon/battle_moves.inc")
+    parser.add_argument("--output", default="data/moves/battle_moves.inc")
     parser.add_argument("--moves", default="constants/moves.inc")
     args = parser.parse_args()
 

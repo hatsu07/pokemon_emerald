@@ -1,135 +1,32 @@
-@------------------------------------------------------------------------------
-@ Pokemon type names
-@ ROM: 0x082EBC88 - 0x082EBCE3
-@------------------------------------------------------------------------------
+@ Japanese type names as exact raw bytes; ROM-independent source.
+@ One macro call emits one 5-byte entry. Japanese text is kept only as a comment.
+.include "constants/type.inc"
+.include "asm/macros/type_name.inc"
 
-	.globl gUnknown_82EBC88
-gUnknown_82EBC88: @ 0x082EBC88
+.globl gTypeNames
+gTypeNames: @ 0x082EBC88
+	type_name_entry gTypeName_Normal, TYPE_NORMAL, 0x69, 0xAE, 0x6F, 0x79, 0xFF @ ノーマル
+	type_name_entry gTypeName_Fighting, TYPE_FIGHTING, 0x06, 0x08, 0x14, 0x03, 0xFF @ かくとう
+	type_name_entry gTypeName_Flying, TYPE_FLYING, 0x1B, 0x0A, 0x03, 0xFF, 0xFF @ ひこう
+	type_name_entry gTypeName_Poison, TYPE_POISON, 0x45, 0x08, 0xFF, 0xFF, 0xFF @ どく
+	type_name_entry gTypeName_Ground, TYPE_GROUND, 0x3D, 0x22, 0x2E, 0xFF, 0xFF @ じめん
+	type_name_entry gTypeName_Rock, TYPE_ROCK, 0x02, 0x2C, 0xFF, 0xFF, 0xFF @ いわ
+	type_name_entry gTypeName_Bug, TYPE_BUG, 0x21, 0x0C, 0xFF, 0xFF, 0xFF @ むし
+	type_name_entry gTypeName_Ghost, TYPE_GHOST, 0x8B, 0xAE, 0x5D, 0x64, 0xFF @ ゴースト
+	type_name_entry gTypeName_Steel, TYPE_STEEL, 0x1A, 0x37, 0x18, 0xFF, 0xFF @ はがね
+	type_name_entry gTypeName_Mystery, TYPE_MYSTERY, 0xAC, 0xAC, 0xAC, 0xFF, 0xFF @ ？？？
+	type_name_entry gTypeName_Fire, TYPE_FIRE, 0x1E, 0x19, 0x05, 0xFF, 0xFF @ ほのお
+	type_name_entry gTypeName_Water, TYPE_WATER, 0x20, 0x3E, 0xFF, 0xFF, 0xFF @ みず
+	type_name_entry gTypeName_Grass, TYPE_GRASS, 0x08, 0x0B, 0xFF, 0xFF, 0xFF @ くさ
+	type_name_entry gTypeName_Electric, TYPE_ELECTRIC, 0x44, 0x2E, 0x07, 0xFF, 0xFF @ でんき
+	type_name_entry gTypeName_Psychic, TYPE_PSYCHIC, 0x54, 0x5D, 0x9B, 0xAE, 0xFF @ エスパー
+	type_name_entry gTypeName_Ice, TYPE_ICE, 0x0A, 0x05, 0x28, 0xFF, 0xFF @ こおり
+	type_name_entry gTypeName_Dragon, TYPE_DRAGON, 0x95, 0x77, 0x8B, 0x7E, 0xFF @ ドラゴン
+	type_name_entry gTypeName_Dark, TYPE_DARK, 0x01, 0x08, 0xFF, 0xFF, 0xFF @ あく
 
-	@ src/data/easy_chat/easy_chat_group_events.h:11 gEasyChatWord_Evolution (+4 aliases)
-	.globl gText_Rom_2EBC88
-gText_Rom_2EBC88: @ 0x082EBC88
-	.string "ノーマル$"
-	.if (. - gText_Rom_2EBC88) > 0x5
-	.error "gText_Rom_2EBC88 may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_2EBC88) < 0x5
-	.space 0x5 - (. - gText_Rom_2EBC88)
-	.endif
+.if (. - gTypeNames) != (TYPE_DARK + 1) * TYPE_NAME_ENTRY_SIZE
+    .error "gTypeNames has an unexpected byte size"
+.endif
 
-	@ src/data/easy_chat/easy_chat_group_status.h:100 easy_chat_group_status_line_100 (+1 aliases)
-	.globl gText_Rom_2EBC8D
-gText_Rom_2EBC8D: @ 0x082EBC8D
-	.string "かくとう$"
-	.if (. - gText_Rom_2EBC8D) > 0x5
-	.error "gText_Rom_2EBC8D may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_2EBC8D) < 0x5
-	.space 0x5 - (. - gText_Rom_2EBC8D)
-	.endif
-
-	@ src/data/easy_chat/easy_chat_group_status.h:454 easy_chat_group_status_line_454 (+2 aliases)
-	.globl gText_Rom_2EBC92
-gText_Rom_2EBC92: @ 0x082EBC92
-	.string "ひこう$"
-	.if (. - gText_Rom_2EBC92) > 0x4
-	.error "gText_Rom_2EBC92 may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_2EBC92) < 0x4
-	.space 0x4 - (. - gText_Rom_2EBC92)
-	.endif
-	.incbin "baserom.gba", 0x2ebc96, 0x6
-
-	@ src/data/easy_chat/easy_chat_group_status.h:232 easy_chat_group_status_line_232 (+1 aliases)
-	.globl gText_Rom_2EBC9C
-gText_Rom_2EBC9C: @ 0x082EBC9C
-	.string "じめん$"
-	.if (. - gText_Rom_2EBC9C) > 0x4
-	.error "gText_Rom_2EBC9C may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_2EBC9C) < 0x4
-	.space 0x4 - (. - gText_Rom_2EBC9C)
-	.endif
-	.incbin "baserom.gba", 0x2ebca0, 0xb
-
-	@ src/data/easy_chat/easy_chat_group_status.h:190 easy_chat_group_status_line_190 (+3 aliases)
-	.globl gText_Rom_2EBCAB
-gText_Rom_2EBCAB: @ 0x082EBCAB
-	.string "ゴースト$"
-	.if (. - gText_Rom_2EBCAB) > 0x5
-	.error "gText_Rom_2EBCAB may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_2EBCAB) < 0x5
-	.space 0x5 - (. - gText_Rom_2EBCAB)
-	.endif
-
-	@ src/data/easy_chat/easy_chat_group_status.h:424 easy_chat_group_status_line_424 (+1 aliases)
-	.globl gText_Rom_2EBCB0
-gText_Rom_2EBCB0: @ 0x082EBCB0
-	.string "はがね$"
-	.if (. - gText_Rom_2EBCB0) > 0x4
-	.error "gText_Rom_2EBCB0 may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_2EBCB0) < 0x4
-	.space 0x4 - (. - gText_Rom_2EBCB0)
-	.endif
-	.incbin "baserom.gba", 0x2ebcb4, 0x6
-
-	@ src/data/easy_chat/easy_chat_group_status.h:544 easy_chat_group_status_line_544 (+1 aliases)
-	.globl gText_Rom_2EBCBA
-gText_Rom_2EBCBA: @ 0x082EBCBA
-	.string "ほのお$"
-	.if (. - gText_Rom_2EBCBA) > 0x4
-	.error "gText_Rom_2EBCBA may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_2EBCBA) < 0x4
-	.space 0x4 - (. - gText_Rom_2EBCBA)
-	.endif
-	.incbin "baserom.gba", 0x2ebcbe, 0xb
-
-	@ src/data/easy_chat/easy_chat_group_status.h:346 easy_chat_group_status_line_346 (+1 aliases)
-	.globl gText_Rom_2EBCC9
-gText_Rom_2EBCC9: @ 0x082EBCC9
-	.string "でんき$"
-	.if (. - gText_Rom_2EBCC9) > 0x4
-	.error "gText_Rom_2EBCC9 may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_2EBCC9) < 0x4
-	.space 0x4 - (. - gText_Rom_2EBCC9)
-	.endif
-	.incbin "baserom.gba", 0x2ebccd, 0x1
-
-	@ src/data/easy_chat/easy_chat_group_status.h:88 easy_chat_group_status_line_88 (+1 aliases)
-	.globl gText_Rom_2EBCCE
-gText_Rom_2EBCCE: @ 0x082EBCCE
-	.string "エスパー$"
-	.if (. - gText_Rom_2EBCCE) > 0x5
-	.error "gText_Rom_2EBCCE may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_2EBCCE) < 0x5
-	.space 0x5 - (. - gText_Rom_2EBCCE)
-	.endif
-
-@ src/battle_debug.c:349 battle_debug_line_349 (+5 aliases)
-	.globl gText_Rom_2EBCD3
-gText_Rom_2EBCD3: @ 0x082EBCD3
-	.string "こおり$"
-	.if (. - gText_Rom_2EBCD3) > 0x4
-	.error "gText_Rom_2EBCD3 may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_2EBCD3) < 0x4
-	.space 0x4 - (. - gText_Rom_2EBCD3)
-	.endif
-	.incbin "baserom.gba", 0x2ebcd7, 0x1
-
-	@ src/data/easy_chat/easy_chat_group_status.h:376 easy_chat_group_status_line_376 (+2 aliases)
-	.globl gText_Rom_2EBCD8
-gText_Rom_2EBCD8: @ 0x082EBCD8
-	.string "ドラゴン$"
-	.if (. - gText_Rom_2EBCD8) > 0x5
-	.error "gText_Rom_2EBCD8 may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_2EBCD8) < 0x5
-	.space 0x5 - (. - gText_Rom_2EBCD8)
-	.endif
-	.incbin "baserom.gba", 0x2ebcdd, 0x7
+@ Preserve the two zero alignment bytes before gUnknown_82EBCE4.
+	.balign 4, 0

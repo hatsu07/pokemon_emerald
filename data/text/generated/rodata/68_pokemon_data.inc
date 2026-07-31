@@ -1,4 +1,3 @@
-	.include "data/pokemon/battle_moves.inc"
 	.incbin "baserom.gba", 0x2ee2c4, 0x10
 
 	.globl gUnknown_82EE2D4
@@ -38,4 +37,3 @@ gUnknown_82EFFA4: @ 0x082EFFA4
 gUnknown_82F00B4: @ 0x082F00B4
 	.incbin "baserom.gba", 0x2f00b4, 0xca0
 	.include "data/pokemon/base_stats.inc"
-
