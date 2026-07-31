@@ -1,8 +1,12 @@
+@ Key-item descriptions preceding gItems.
+@ Extracted from the original Japanese ROM; no baserom dependency remains.
+@ Keep order and byte lengths unchanged for matching.
 
 	@ src/data/items.h:14424 items_line_14424
 	.globl gText_Rom_55CB52
 gText_Rom_55CB52: @ 0x0855CB52
-	.string "ショップの てんいんから\nたのまれた おとどけもの\nオーキドはかせに わたす$"
+	.string "ショップの てんいんから\nたのまれた おとどけもの\nオーキドはかせに わたす"
+	.byte EOS
 	.if (. - gText_Rom_55CB52) > 0x27
 	.error "gText_Rom_55CB52 may not grow beyond its original slot"
 	.endif
@@ -13,7 +17,8 @@ gText_Rom_55CB52: @ 0x0855CB52
 	@ src/data/items.h:14080 items_line_14080
 	.globl gText_Rom_55CB79
 gText_Rom_55CB79: @ 0x0855CB79
-	.string "きれいな ねいろの ふえ\nねている ポケモンが\nきくと とびおきる$"
+	.string "きれいな ねいろの ふえ\nねている ポケモンが\nきくと とびおきる"
+	.byte EOS
 	.if (. - gText_Rom_55CB79) > 0x22
 	.error "gText_Rom_55CB79 may not grow beyond its original slot"
 	.endif
@@ -24,7 +29,8 @@ gText_Rom_55CB79: @ 0x0855CB79
 	@ src/data/items.h:14440 items_line_14440
 	.globl gText_Rom_55CB9B
 gText_Rom_55CB9B: @ 0x0855CB9B
-	.string "グレンじま ジムの\nいりぐちを あける カギ$"
+	.string "グレンじま ジムの\nいりぐちを あける カギ"
+	.byte EOS
 	.if (. - gText_Rom_55CB9B) > 0x17
 	.error "gText_Rom_55CB9B may not grow beyond its original slot"
 	.endif
@@ -35,7 +41,8 @@ gText_Rom_55CB9B: @ 0x0855CB9B
 	@ src/data/items.h:14455 items_line_14455
 	.globl gText_Rom_55CBB2
 gText_Rom_55CBB2: @ 0x0855CBB2
-	.string "ミラクル・サイクルで\nおりたたみ じてんしゃと\nこうかん できる かみ$"
+	.string "ミラクル・サイクルで\nおりたたみ じてんしゃと\nこうかん できる かみ"
+	.byte EOS
 	.if (. - gText_Rom_55CBB2) > 0x24
 	.error "gText_Rom_55CBB2 may not grow beyond its original slot"
 	.endif
@@ -46,7 +53,8 @@ gText_Rom_55CBB2: @ 0x0855CBB2
 	@ src/data/items.h:14472 items_line_14472
 	.globl gText_Rom_55CBD6
 gText_Rom_55CBD6: @ 0x0855CBD6
-	.string "サファリゾーンの\nえんちょうが おとした\nきんいろの いれば$"
+	.string "サファリゾーンの\nえんちょうが おとした\nきんいろの いれば"
+	.byte EOS
 	.if (. - gText_Rom_55CBD6) > 0x1f
 	.error "gText_Rom_55CBD6 may not grow beyond its original slot"
 	.endif
@@ -57,7 +65,8 @@ gText_Rom_55CBD6: @ 0x0855CBD6
 	@ src/data/items.h:3264 items_line_3264
 	.globl gText_Rom_55CBF5
 gText_Rom_55CBF5: @ 0x0855CBF5
-	.string "こだい ポケモンの\nいでんし じょうほうが\nとじこめられている いし$"
+	.string "こだい ポケモンの\nいでんし じょうほうが\nとじこめられている いし"
+	.byte EOS
 	.if (. - gText_Rom_55CBF5) > 0x23
 	.error "gText_Rom_55CBF5 may not grow beyond its original slot"
 	.endif
@@ -68,7 +77,8 @@ gText_Rom_55CBF5: @ 0x0855CBF5
 	@ src/data/items.h:14488 items_line_14488
 	.globl gText_Rom_55CC18
 gText_Rom_55CC18: @ 0x0855CC18
-	.string "カードで できた カギ\nシルフカンパニー ビルの\nドアロックを はずせる$"
+	.string "カードで できた カギ\nシルフカンパニー ビルの\nドアロックを はずせる"
+	.byte EOS
 	.if (. - gText_Rom_55CC18) > 0x25
 	.error "gText_Rom_55CC18 may not grow beyond its original slot"
 	.endif
@@ -79,7 +89,8 @@ gText_Rom_55CC18: @ 0x0855CC18
 	@ src/data/items.h:14504 items_line_14504
 	.globl gText_Rom_55CC3D
 gText_Rom_55CC3D: @ 0x0855CC3D
-	.string "ロケットだん アジトの\nエレベーターを うごかす\nことが できる カギ$"
+	.string "ロケットだん アジトの\nエレベーターを うごかす\nことが できる カギ"
+	.byte EOS
 	.if (. - gText_Rom_55CC3D) > 0x24
 	.error "gText_Rom_55CC3D may not grow beyond its original slot"
 	.endif
@@ -90,7 +101,8 @@ gText_Rom_55CC3D: @ 0x0855CC3D
 	@ src/data/items.h:3218 items_line_3218
 	.globl gText_Rom_55CC61
 gText_Rom_55CC61: @ 0x0855CC61
-	.string "おおむかし うみに\nすんでいた ポケモンの\nかいがらの いちぶ$"
+	.string "おおむかし うみに\nすんでいた ポケモンの\nかいがらの いちぶ"
+	.byte EOS
 	.if (. - gText_Rom_55CC61) > 0x20
 	.error "gText_Rom_55CC61 may not grow beyond its original slot"
 	.endif
@@ -101,7 +113,8 @@ gText_Rom_55CC61: @ 0x0855CC61
 	@ src/data/items.h:3241 items_line_3241
 	.globl gText_Rom_55CC81
 gText_Rom_55CC81: @ 0x0855CC81
-	.string "おおむかし うみに\nすんでいた ポケモンの\nこうらの いちぶ$"
+	.string "おおむかし うみに\nすんでいた ポケモンの\nこうらの いちぶ"
+	.byte EOS
 	.if (. - gText_Rom_55CC81) > 0x1f
 	.error "gText_Rom_55CC81 may not grow beyond its original slot"
 	.endif
@@ -112,7 +125,8 @@ gText_Rom_55CC81: @ 0x0855CC81
 	@ src/data/items.h:14520 items_line_14520
 	.globl gText_Rom_55CCA0
 gText_Rom_55CCA0: @ 0x0855CCA0
-	.string "めに みえない ものを\nみられる スコープ\nシルフ カンパニーせい$"
+	.string "めに みえない ものを\nみられる スコープ\nシルフ カンパニーせい"
+	.byte EOS
 	.if (. - gText_Rom_55CCA0) > 0x22
 	.error "gText_Rom_55CCA0 may not grow beyond its original slot"
 	.endif
@@ -124,7 +138,8 @@ gText_Rom_55CCA0: @ 0x0855CCA0
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_55CCC2
 gText_Rom_55CCC2: @ 0x0855CCC2
-	.string "おりたたみの じてんしゃ\nランニングシューズより\nはやく はしる$"
+	.string "おりたたみの じてんしゃ\nランニングシューズより\nはやく はしる"
+	.byte EOS
 	.if (. - gText_Rom_55CCC2) != 0x21
 	.error "gText_Rom_55CCC2 must retain its original byte length"
 	.endif
@@ -135,7 +150,8 @@ gText_Rom_55CCC2: @ 0x0855CCC2
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_55CCE3
 gText_Rom_55CCE3: @ 0x0855CCE3
-	.string "いつでも みることが\nできる べんりな ちず\nじぶんの いちも わかる$"
+	.string "いつでも みることが\nできる べんりな ちず\nじぶんの いちも わかる"
+	.byte EOS
 	.if (. - gText_Rom_55CCE3) != 0x24
 	.error "gText_Rom_55CCE3 must retain its original byte length"
 	.endif
@@ -146,7 +162,8 @@ gText_Rom_55CCE3: @ 0x0855CCE3
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_55CD07
 gText_Rom_55CD07: @ 0x0855CD07
-	.string "たたかえる トレーナーを\nおしえてくれる きかい\nじゅうでんして つかう$"
+	.string "たたかえる トレーナーを\nおしえてくれる きかい\nじゅうでんして つかう"
+	.byte EOS
 	.if (. - gText_Rom_55CD07) != 0x25
 	.error "gText_Rom_55CD07 must retain its original byte length"
 	.endif
@@ -157,7 +174,8 @@ gText_Rom_55CD07: @ 0x0855CD07
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_55CD2C
 gText_Rom_55CD2C: @ 0x0855CD2C
-	.string "ゆうめいな じんぶつの\nじょうほうを いつでも\nみなおすことが できる$"
+	.string "ゆうめいな じんぶつの\nじょうほうを いつでも\nみなおすことが できる"
+	.byte EOS
 	.if (. - gText_Rom_55CD2C) != 0x24
 	.error "gText_Rom_55CD2C must retain its original byte length"
 	.endif
@@ -167,7 +185,8 @@ gText_Rom_55CD2C: @ 0x0855CD2C
 	@ src/data/items.h:13938 items_line_13938
 	.globl gText_Rom_55CD50
 gText_Rom_55CD50: @ 0x0855CD50
-	.string "わざマシンを ほかんする\nべんりな いれもの$"
+	.string "わざマシンを ほかんする\nべんりな いれもの"
+	.byte EOS
 	.if (. - gText_Rom_55CD50) > 0x17
 	.error "gText_Rom_55CD50 may not grow beyond its original slot"
 	.endif
@@ -178,7 +197,8 @@ gText_Rom_55CD50: @ 0x0855CD50
 	@ src/data/items.h:13954 items_line_13954
 	.globl gText_Rom_55CD67
 gText_Rom_55CD67: @ 0x0855CD67
-	.string "きのみを ほぞんする\nべんりな いれもの$"
+	.string "きのみを ほぞんする\nべんりな いれもの"
+	.byte EOS
 	.if (. - gText_Rom_55CD67) > 0x15
 	.error "gText_Rom_55CD67 may not grow beyond its original slot"
 	.endif
@@ -190,18 +210,42 @@ gText_Rom_55CD67: @ 0x0855CD67
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_55CD7C
 gText_Rom_55CD7C: @ 0x0855CD7C
-	.string "トレーナーの やくにたつ\nばんぐみを みることが\nできる テレビ$"
+	.string "トレーナーの やくにたつ\nばんぐみを みることが\nできる テレビ"
+	.byte EOS
 	.if (. - gText_Rom_55CD7C) != 0x21
 	.error "gText_Rom_55CD7C must retain its original byte length"
 	.endif
 	.globl gText_Rom_55CD99
 	.set gText_Rom_55CD99, gText_Rom_55CD7C + 0x1d
-	.incbin "baserom.gba", 0x55cd9d, 0x3e
+	@ ITEM_016F: トライパス
+	.globl gItemDescription_TriPass
+	.globl gText_Rom_55CD9D
+gItemDescription_TriPass:
+gText_Rom_55CD9D: @ 0x0855CD9D
+	.string "1のしまと 2のしまと\n3のしまを いどうする\nふねに のれる"
+	.byte 0x00 @ original trailing space
+	.byte EOS
+	.if (. - gItemDescription_TriPass) != 0x21
+	.error "gItemDescription_TriPass must be exactly 0x21 bytes"
+	.endif
+
+	@ ITEM_0170: レインボーパス
+	.globl gItemDescription_RainbowPass
+	.globl gText_Rom_55CDBE
+gItemDescription_RainbowPass:
+gText_Rom_55CDBE: @ 0x0855CDBE
+	.string "クチバシティと\nななしまを いどうする\nふねに のれる"
+	.byte 0x00 @ original trailing space
+	.byte EOS
+	.if (. - gItemDescription_RainbowPass) != 0x1D
+	.error "gItemDescription_RainbowPass must be exactly 0x1D bytes"
+	.endif
 
 @ src/data/items.h:14571 items_line_14571
 	.globl gText_Rom_55CDDB
 gText_Rom_55CDDB: @ 0x0855CDDB
-	.string "おばあさんが いれた\nおいしい おちゃ\nかわきを うるおす$"
+	.string "おばあさんが いれた\nおいしい おちゃ\nかわきを うるおす"
+	.byte EOS
 	.if (. - gText_Rom_55CDDB) > 0x1e
 	.error "gText_Rom_55CDDB may not grow beyond its original slot"
 	.endif
@@ -212,7 +256,8 @@ gText_Rom_55CDDB: @ 0x0855CDDB
 	@ src/data/items.h:14162 items_line_14162
 	.globl gText_Rom_55CDF9
 gText_Rom_55CDF9: @ 0x0855CDF9
-	.string "へそのいわへ\nいくために ひつような\nふねの チケット$"
+	.string "へそのいわへ\nいくために ひつような\nふねの チケット"
+	.byte EOS
 	.if (. - gText_Rom_55CDF9) > 0x1c
 	.error "gText_Rom_55CDF9 may not grow beyond its original slot"
 	.endif
@@ -223,7 +268,8 @@ gText_Rom_55CDF9: @ 0x0855CDF9
 	@ src/data/items.h:14178 items_line_14178
 	.globl gText_Rom_55CE15
 gText_Rom_55CE15: @ 0x0855CE15
-	.string "たんじょうのしまへ\nいくために ひつような\nふねの チケット$"
+	.string "たんじょうのしまへ\nいくために ひつような\nふねの チケット"
+	.byte EOS
 	.if (. - gText_Rom_55CE15) > 0x1f
 	.error "gText_Rom_55CE15 may not grow beyond its original slot"
 	.endif
@@ -234,7 +280,8 @@ gText_Rom_55CE15: @ 0x0855CE15
 	@ src/data/items.h:14001 items_line_14001
 	.globl gText_Rom_55CE34
 gText_Rom_55CE34: @ 0x0855CE34
-	.string "きのみクラッシュで\nできた きのみの こなを\nほぞんする いれもの$"
+	.string "きのみクラッシュで\nできた きのみの こなを\nほぞんする いれもの"
+	.byte EOS
 	.if (. - gText_Rom_55CE34) > 0x22
 	.error "gText_Rom_55CE34 may not grow beyond its original slot"
 	.endif
@@ -245,7 +292,8 @@ gText_Rom_55CE34: @ 0x0855CE34
 	@ src/data/items.h:14588 items_line_14588
 	.globl gText_Rom_55CE56
 gText_Rom_55CE56: @ 0x0855CE56
-	.string "じょうねつを あらわす\nうつくしい ほうせき\nあかく ひかり かがやく$"
+	.string "じょうねつを あらわす\nうつくしい ほうせき\nあかく ひかり かがやく"
+	.byte EOS
 	.if (. - gText_Rom_55CE56) > 0x24
 	.error "gText_Rom_55CE56 may not grow beyond its original slot"
 	.endif
@@ -256,45 +304,47 @@ gText_Rom_55CE56: @ 0x0855CE56
 	@ src/data/items.h:14604 items_line_14604
 	.globl gText_Rom_55CE7A
 gText_Rom_55CE7A: @ 0x0855CE7A
-	.string "せいじつを あらわす\nうつくしい ほうせき\nあおく ひかり かがやく$"
+	.string "せいじつを あらわす\nうつくしい ほうせき\nあおく ひかり かがやく"
+	.byte EOS
 	.if (. - gText_Rom_55CE7A) > 0x23
 	.error "gText_Rom_55CE7A may not grow beyond its original slot"
 	.endif
 	.if (. - gText_Rom_55CE7A) < 0x23
 	.space 0x23 - (. - gText_Rom_55CE7A)
 	.endif
-	.incbin "baserom.gba", 0x55ce9d, 0x23
+	@ ITEM_0177: マグマのしるし
+	.globl gItemDescription_MagmaEmblem
+	.globl gText_Rom_55CE9D
+gItemDescription_MagmaEmblem:
+gText_Rom_55CE9D: @ 0x0855CE9D
+	.string "マグマだんの マークと\nおなじ かたちを した\nメダルの ようなもの"
+	.byte EOS
+	.if (. - gItemDescription_MagmaEmblem) != 0x23
+	.error "gItemDescription_MagmaEmblem must be exactly 0x23 bytes"
+	.endif
 
 	@ src/data/items.h:14194 items_line_14194
 	.globl gText_Rom_55CEC0
 gText_Rom_55CEC0: @ 0x0855CEC0
-	.string "ある しまへの かいろを\nしるして ある\nふるぼけた うみの ちず$"
+	.string "ある しまへの かいろを\nしるして ある\nふるぼけた うみの ちず"
+	.byte EOS
 	.if (. - gText_Rom_55CEC0) > 0x22
 	.error "gText_Rom_55CEC0 may not grow beyond its original slot"
 	.endif
 	.if (. - gText_Rom_55CEC0) < 0x22
 	.space 0x22 - (. - gText_Rom_55CEC0)
 	.endif
-	.incbin "baserom.gba", 0x55cee2, 0x6
+	
+	@ ITEM_NONE: ダミー説明文
+	.globl gItemDescription_Dummy
+	.globl gText_Rom_55CEE2
+gItemDescription_Dummy:
+gText_Rom_55CEE2: @ 0x0855CEE2
+	.string "?????"
+	.byte EOS
+	.if (. - gItemDescription_Dummy) != 0x6
+	.error "gItemDescription_Dummy must be exactly 0x6 bytes"
+	.endif
+
 	.align 2
-	.globl gItems
-gItems:
-
-gItems: @ 0x0855CEE8
-	.include "data/items/items.inc"
-
-	@ Existing symbols that point inside item-name fields.
-	.globl gText_Rom_55CF14
-	.set gText_Rom_55CF14, gItems + 0x2c
-
-	.globl gText_Rom_55CF3C
-	.set gText_Rom_55CF3C, gItems + 0x54
-
-	.globl gText_Rom_55CF64
-	.set gText_Rom_55CF64, gItems + 0x7c
-
-	.globl gText_Rom_55CF88
-	.set gText_Rom_55CF88, gItems + 0xa0
-
-	.globl gText_Rom_55CF8D
-	.set gText_Rom_55CF8D, gItems + 0xa5
+	
