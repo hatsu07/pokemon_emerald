@@ -9,7 +9,7 @@
 	.include "constants/map.inc"
 	.include "constants/pokemon_graphics.inc"
 
-	.include "asm/macros/base_stats_macro.inc"
+	.include "asm/macros/base_stats.inc"
 	.include "asm/macros/decoration.inc"
 	.include "asm/macros/level_up_move_macro.inc"
 	.include "asm/macros/pokemon_graphics.inc"
