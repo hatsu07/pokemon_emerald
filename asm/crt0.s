@@ -1,5 +1,7 @@
 .include "asm/macros.inc"
+.include "asm/macros/gf_rom_header.inc"
 .include "constants/constants.inc"
+.include "constants/gf_rom_header.inc"
 
 .section .text
 .syntax unified
@@ -140,27 +142,33 @@ gRomHeaderReserved:
 	.4byte gBallSpriteSheets
 	.4byte gBallSpritePalettes
 
+@ Flags and SaveBlock2 field used by GameCube link software.
+@ Layout: gcnLinkFlags offset, game-clear flag ID, ribbon-obtained flag ID.
 .LgfRomHeaderGameFlags:
-	.4byte 0x00A8 @ offsetof(struct SaveBlock2, gcnLinkFlags)
-	.4byte 0x0864 @ FLAG_SYS_GAME_CLEAR
-	.4byte 0x089B @ FLAG_SYS_RIBBON_GET
+	gf_rom_header_game_flags
+.LgfRomHeaderGameFlagsEnd:
+.if (.LgfRomHeaderGameFlagsEnd - .LgfRomHeaderGameFlags) != GF_ROM_HEADER_GAME_FLAGS_SIZE
+	.error "GF ROM header game-flags block must be 12 bytes"
+.endif
 
+@ Maximum number of entries in each player inventory pocket.
+@ The final two bytes are reserved padding required by the ROM-header format.
 .LgfRomHeaderBagCapacities:
-	.byte 30 @ BAG_ITEMS_COUNT
-	.byte 30 @ BAG_KEYITEMS_COUNT
-	.byte 16 @ BAG_POKEBALLS_COUNT
-	.byte 64 @ BAG_TMHM_COUNT
-	.byte 46 @ BAG_BERRIES_COUNT
-	.byte 50 @ PC_ITEMS_COUNT
-	.space 2
+	gf_rom_header_bag_capacities
+.LgfRomHeaderBagCapacitiesEnd:
+.if (.LgfRomHeaderBagCapacitiesEnd - .LgfRomHeaderBagCapacities) != GF_ROM_HEADER_BAG_CAPACITIES_SIZE
+	.error "GF ROM header bag-capacities block must be 8 bytes"
+.endif
 
+@ Remaining SaveBlock1 layout information consumed by external link software.
+@ moveDescriptions is NULL in this ROM. The final unknown field is the
+@ original 0xFFFFFFFF sentinel and is preserved until its semantics are known.
 .LgfRomHeaderRemainingSaveLayout:
-	.4byte 0x0498 @ offsetof(struct SaveBlock1, pcItems)
-	.4byte 0x31A8 @ offsetof(struct SaveBlock1, giftRibbons)
-	.4byte 0x31F8 @ offsetof(struct SaveBlock1, enigmaBerry)
-	.4byte 0x0034 @ sizeof(struct EnigmaBerry)
-	.4byte 0      @ moveDescriptions
-	.4byte -1     @ unk20
+	gf_rom_header_remaining_save_layout
+.LgfRomHeaderRemainingSaveLayoutEnd:
+.if (.LgfRomHeaderRemainingSaveLayoutEnd - .LgfRomHeaderRemainingSaveLayout) != GF_ROM_HEADER_REMAINING_SAVE_LAYOUT_SIZE
+	.error "GF ROM header remaining-save-layout block must be 24 bytes"
+.endif
 
 _init:
 	mov r0, #0x12

@@ -26,9 +26,9 @@ compare: $(ROM)
 
 clean:
 	rm -f $(ROM) $(ELF) $(OBJFILE)
-	rm -f $(GBA_NINTENDO_LOGO_BIN)
 
 distclean: clean
+	rm -f $(GBA_NINTENDO_LOGO_BIN)
 	rm -rf $(MON_GRAPHICS_BUILD_DIR)
 	rm -rf $(FONT_BUILD_DIR)
 	rm -rf $(UNKNOWN_GFX_BUILD_DIR)
