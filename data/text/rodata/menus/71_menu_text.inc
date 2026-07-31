@@ -1,3 +1,177 @@
+	.incbin "baserom.gba", 0x2fcecc, 0xc8
+	.globl gUnknown_82FCF94
+gUnknown_82FCF94: @ 0x082FCF94
+	.incbin "baserom.gba", 0x2fcf94, 0x138
+	.globl gUnknown_82FD0CC
+gUnknown_82FD0CC: @ 0x082FD0CC
+	.incbin "baserom.gba", 0x2fd0cc, 0x80
+	.globl gUnknown_82FD14C
+gUnknown_82FD14C: @ 0x082FD14C
+	.incbin "baserom.gba", 0x2fd14c, 0x1280
+	.globl gUnknown_82FE3CC
+gUnknown_82FE3CC: @ 0x082FE3CC
+	.incbin "baserom.gba", 0x2fe3cc, 0x800
+	.globl gUnknown_82FEBCC
+gUnknown_82FEBCC: @ 0x082FEBCC
+	.incbin "baserom.gba", 0x2febcc, 0x1fe
+	.globl gUnknown_82FEDCA
+gUnknown_82FEDCA: @ 0x082FEDCA
+	.incbin "baserom.gba", 0x2fedca, 0x1fe
+	.globl gUnknown_82FEFC8
+gUnknown_82FEFC8: @ 0x082FEFC8
+	.incbin "baserom.gba", 0x2fefc8, 0x800
+	.globl gUnknown_82FF7C8
+gUnknown_82FF7C8: @ 0x082FF7C8
+	.incbin "baserom.gba", 0x2ff7c8, 0x800
+	.globl gUnknown_82FFFC8
+gUnknown_82FFFC8: @ 0x082FFFC8
+	.incbin "baserom.gba", 0x2fffc8, 0x86c
+	.globl gUnknown_8300834
+gUnknown_8300834: @ 0x08300834
+	.incbin "baserom.gba", 0x300834, 0x8
+	.globl gUnknown_830083C
+gUnknown_830083C: @ 0x0830083C
+	.incbin "baserom.gba", 0x30083c, 0x50
+	.globl gUnknown_830088C
+gUnknown_830088C: @ 0x0830088C
+	.incbin "baserom.gba", 0x30088c, 0x18
+	.globl gUnknown_83008A4
+gUnknown_83008A4: @ 0x083008A4
+	.incbin "baserom.gba", 0x3008a4, 0x38
+	.globl gUnknown_83008DC
+gUnknown_83008DC: @ 0x083008DC
+	.incbin "baserom.gba", 0x3008dc, 0x8
+	.globl gUnknown_83008E4
+gUnknown_83008E4: @ 0x083008E4
+	.incbin "baserom.gba", 0x3008e4, 0x138
+	.globl gUnknown_8300A1C
+gUnknown_8300A1C: @ 0x08300A1C
+	.incbin "baserom.gba", 0x300a1c, 0x1a
+	.globl gUnknown_8300A36
+gUnknown_8300A36: @ 0x08300A36
+	.incbin "baserom.gba", 0x300a36, 0x18
+	.globl gUnknown_8300A4E
+gUnknown_8300A4E: @ 0x08300A4E
+	.incbin "baserom.gba", 0x300a4e, 0x3c
+	.globl gUnknown_8300A8A
+gUnknown_8300A8A: @ 0x08300A8A
+	.incbin "baserom.gba", 0x300a8a, 0xb
+	.globl gUnknown_8300A95
+gUnknown_8300A95: @ 0x08300A95
+	.incbin "baserom.gba", 0x300a95, 0x2
+	.globl gUnknown_8300A97
+gUnknown_8300A97: @ 0x08300A97
+	.incbin "baserom.gba", 0x300a97, 0x2
+	.globl gUnknown_8300A99
+gUnknown_8300A99: @ 0x08300A99
+	.incbin "baserom.gba", 0x300a99, 0x2
+	.globl gUnknown_8300A9B
+gUnknown_8300A9B: @ 0x08300A9B
+	.incbin "baserom.gba", 0x300a9b, 0x3
+	.globl gUnknown_8300A9E
+gUnknown_8300A9E: @ 0x08300A9E
+	.incbin "baserom.gba", 0x300a9e, 0x2
+	.globl gUnknown_8300AA0
+gUnknown_8300AA0: @ 0x08300AA0
+
+	@ asm/trade.s:5088 sub_0807946C
+	.globl gText_Rom_300AA0
+gText_Rom_300AA0: @ 0x08300AA0
+	.string "/$"
+	.if (. - gText_Rom_300AA0) > 0x2
+	.error "gText_Rom_300AA0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_300AA0) < 0x2
+	.space 0x2 - (. - gText_Rom_300AA0)
+	.endif
+	.globl gUnknown_8300AA2
+gUnknown_8300AA2: @ 0x08300AA2
+
+	@ asm/trade.s:5098 sub_0807946C
+	.globl gText_Rom_300AA2
+gText_Rom_300AA2: @ 0x08300AA2
+	.string "Lv$"
+	.if (. - gText_Rom_300AA2) > 0x3
+	.error "gText_Rom_300AA2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_300AA2) < 0x3
+	.space 0x3 - (. - gText_Rom_300AA2)
+	.endif
+	.globl gUnknown_8300AA5
+gUnknown_8300AA5: @ 0x08300AA5
+
+	@ src/data/easy_chat/easy_chat_group_voices.h:52 easy_chat_group_voices_line_52 (+3 aliases)
+	.globl gText_Rom_300AA5
+gText_Rom_300AA5: @ 0x08300AA5
+	.string "ーーー$"
+	.if (. - gText_Rom_300AA5) > 0x4
+	.error "gText_Rom_300AA5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_300AA5) < 0x4
+	.space 0x4 - (. - gText_Rom_300AA5)
+	.endif
+	.globl gUnknown_8300AA9
+gUnknown_8300AA9: @ 0x08300AA9
+
+	@ asm/trade.s:5229 sub_08079564
+	.globl gText_Rom_300AA9
+gText_Rom_300AA9: @ 0x08300AA9
+	.string "？？？？$"
+	.if (. - gText_Rom_300AA9) > 0x5
+	.error "gText_Rom_300AA9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_300AA9) < 0x5
+	.space 0x5 - (. - gText_Rom_300AA9)
+	.endif
+	.globl gUnknown_8300AAE
+gUnknown_8300AAE: @ 0x08300AAE
+
+	@ asm/trade.s:2612 sub_08078120
+	.globl gText_Rom_300AAE
+gText_Rom_300AAE: @ 0x08300AAE
+	.string "と　$"
+	.if (. - gText_Rom_300AAE) > 0x3
+	.error "gText_Rom_300AAE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_300AAE) < 0x3
+	.space 0x3 - (. - gText_Rom_300AAE)
+	.endif
+	.globl gUnknown_8300AB1
+gUnknown_8300AB1: @ 0x08300AB1
+
+	@ asm/trade.s:2618 sub_08078120
+	.globl gText_Rom_300AB1
+gText_Rom_300AB1: @ 0x08300AB1
+	.string "を　こうかんしますか？$"
+	.if (. - gText_Rom_300AB1) > 0xc
+	.error "gText_Rom_300AB1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_300AB1) < 0xc
+	.space 0xc - (. - gText_Rom_300AB1)
+	.endif
+
+	@ src/pokemon_storage_system.c:8078 pokemon_storage_system_line_8078 (+5 aliases)
+	.globl gText_Rom_300ABD
+gText_Rom_300ABD: @ 0x08300ABD
+	.string "やめる$"
+	.if (. - gText_Rom_300ABD) > 0x4
+	.error "gText_Rom_300ABD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_300ABD) < 0x4
+	.space 0x4 - (. - gText_Rom_300ABD)
+	.endif
+
+	@ src/strings.c:305 gText_ChoosePokemon
+	.globl gText_Rom_300AC1
+gText_Rom_300AC1: @ 0x08300AC1
+	.string "ポケモンを えらんで ください$"
+	.if (. - gText_Rom_300AC1) > 0x10
+	.error "gText_Rom_300AC1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_300AC1) < 0x10
+	.space 0x10 - (. - gText_Rom_300AC1)
+	.endif
+
 	@ src/data/party_menu.h:796 party_menu_line_796 (+2 aliases)
 	.globl gText_Rom_300AD1
 gText_Rom_300AD1: @ 0x08300AD1
