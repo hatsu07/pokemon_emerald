@@ -134,7 +134,7 @@ gRomHeaderReserved:
 .LgfRomHeaderDataPointers:
 	.4byte gSpeciesInfo
 	.4byte gAbilityNames
-	.4byte gAbilityDescriptionPointers
+	.4byte gAbilityDescriptions
 	.4byte gItems
 	.4byte gBattleMoves
 	.4byte gBallSpriteSheets
