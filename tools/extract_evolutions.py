@@ -29,7 +29,7 @@ OUTPUT_PATH = Path("data/pokemon/evolution.inc")
 
 SPECIES_CONSTANTS_PATH = Path("constants/species.inc")
 ITEM_CONSTANTS_CANDIDATES = [
-    Path("constants/item_constants.inc"),
+    Path("constants/item.inc"),
     Path("constants/items.inc"),
     Path("include/constants/items.h"),
 ]
