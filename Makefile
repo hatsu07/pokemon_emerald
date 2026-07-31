@@ -63,6 +63,8 @@ data/data.o: \
 	$(MON_RAW_PALETTE_BINS) \
 	$(UNKNOWN_PIC_BINS) \
 	$(UNKNOWN_PALETTE_BINS) \
+	$(BALL_PIC_BINS) \
+	$(BALL_PALETTE_BINS) \
 	build/graphics/fonts/font_tiles.4bpp.lz
 
 asm/crt0.o: $(GBA_NINTENDO_LOGO_BIN)

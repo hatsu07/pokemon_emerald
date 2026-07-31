@@ -31,66 +31,7 @@ gFontTiles:
 
   .incbin "build/graphics/unknown/01_palette.gbapal.lz"
   .balign 4, 0
-  .incbin "build/graphics/unknown/02_32x24.4bpp.lz"
-  .balign 4, 0
-
-  .incbin "build/graphics/unknown/03_palette.gbapal.lz"
-  .balign 4, 0
-  .incbin "build/graphics/unknown/04_32x24.4bpp.lz"
-  .balign 4, 0
-
-  .incbin "build/graphics/unknown/05_palette.gbapal.lz"
-  .balign 4, 0
-  .incbin "build/graphics/unknown/06_32x24.4bpp.lz"
-  .balign 4, 0
-
-  .incbin "build/graphics/unknown/07_palette.gbapal.lz"
-  .balign 4, 0
-  .incbin "build/graphics/unknown/08_32x24.4bpp.lz"
-  .balign 4, 0
-
-  .incbin "build/graphics/unknown/09_palette.gbapal.lz"
-  .balign 4, 0
-  .incbin "build/graphics/unknown/0A_32x24.4bpp.lz"
-  .balign 4, 0
-
-  .incbin "build/graphics/unknown/0B_palette.gbapal.lz"
-  .balign 4, 0
-  .incbin "build/graphics/unknown/0C_32x24.4bpp.lz"
-  .balign 4, 0
-
-  .incbin "build/graphics/unknown/0D_palette.gbapal.lz"
-  .balign 4, 0
-  .incbin "build/graphics/unknown/0E_32x24.4bpp.lz"
-  .balign 4, 0
-
-  .incbin "build/graphics/unknown/0F_palette.gbapal.lz"
-  .balign 4, 0
-  .incbin "build/graphics/unknown/10_32x24.4bpp.lz"
-  .balign 4, 0
-
-  .incbin "build/graphics/unknown/11_palette.gbapal.lz"
-  .balign 4, 0
-  .incbin "build/graphics/unknown/12_32x24.4bpp.lz"
-  .balign 4, 0
-
-  .incbin "build/graphics/unknown/13_palette.gbapal.lz"
-  .balign 4, 0
-  .incbin "build/graphics/unknown/14_32x24.4bpp.lz"
-  .balign 4, 0
-
-  .incbin "build/graphics/unknown/15_palette.gbapal.lz"
-  .balign 4, 0
-  .incbin "build/graphics/unknown/16_32x24.4bpp.lz"
-  .balign 4, 0
-
-  .incbin "build/graphics/unknown/17_palette.gbapal.lz"
-  .balign 4, 0
-  .incbin "build/graphics/unknown/18_32x24.4bpp.lz"
-  .balign 4, 0
-
-  .incbin "build/graphics/unknown/19_palette.gbapal.lz"
-  .balign 4, 0
+  .include "data/graphics/pokeballs.inc"
   .incbin "build/graphics/unknown/1A_16x16.4bpp.lz"
   .balign 4, 0
 

@@ -1,4 +1,3 @@
-	.incbin "baserom.gba", 0x2fcecc, 0xc8
 	.globl gUnknown_82FCF94
 gUnknown_82FCF94: @ 0x082FCF94
 	.incbin "baserom.gba", 0x2fcf94, 0x138
