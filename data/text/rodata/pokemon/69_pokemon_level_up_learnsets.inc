@@ -146,3 +146,122 @@ gUnknown_82FC0F8: @ 0x082FC0F8
 	.incbin "baserom.gba", 0x2fc0f8, 0x2
 	.globl gUnknown_82FC0FA
 gUnknown_82FC0FA: @ 0x082FC0FA
+
+	@ src/pokemon_storage_system.c:8078 pokemon_storage_system_line_8078 (+5 aliases)
+	.globl gText_Rom_2FC0FA
+gText_Rom_2FC0FA: @ 0x082FC0FA
+	.string "やめる$"
+	.if (. - gText_Rom_2FC0FA) > 0x4
+	.error "gText_Rom_2FC0FA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2FC0FA) < 0x4
+	.space 0x4 - (. - gText_Rom_2FC0FA)
+	.endif
+	.globl gUnknown_82FC0FE
+gUnknown_82FC0FE: @ 0x082FC0FE
+	.incbin "baserom.gba", 0x2fc0fe, 0x8de
+	.globl gUnknown_82FC9DC
+gUnknown_82FC9DC: @ 0x082FC9DC
+	.incbin "baserom.gba", 0x2fc9dc, 0x8
+	.globl gUnknown_82FC9E4
+gUnknown_82FC9E4: @ 0x082FC9E4
+	.incbin "baserom.gba", 0x2fc9e4, 0x8
+	.globl gUnknown_82FC9EC
+gUnknown_82FC9EC: @ 0x082FC9EC
+	.incbin "baserom.gba", 0x2fc9ec, 0x8
+	.globl gUnknown_82FC9F4
+gUnknown_82FC9F4: @ 0x082FC9F4
+	.incbin "baserom.gba", 0x2fc9f4, 0x50
+	.globl gUnknown_82FCA44
+gUnknown_82FCA44: @ 0x082FCA44
+	.incbin "baserom.gba", 0x2fca44, 0x18
+	.globl gUnknown_82FCA5C
+gUnknown_82FCA5C: @ 0x082FCA5C
+	.incbin "baserom.gba", 0x2fca5c, 0x8
+	.globl gUnknown_82FCA64
+gUnknown_82FCA64: @ 0x082FCA64
+	.incbin "baserom.gba", 0x2fca64, 0x10
+	.globl gUnknown_82FCA74
+gUnknown_82FCA74: @ 0x082FCA74
+	.incbin "baserom.gba", 0x2fca74, 0x8
+	.globl gUnknown_82FCA7C
+gUnknown_82FCA7C: @ 0x082FCA7C
+	.incbin "baserom.gba", 0x2fca7c, 0x4c
+	.globl gUnknown_82FCAC8
+gUnknown_82FCAC8: @ 0x082FCAC8
+	.incbin "baserom.gba", 0x2fcac8, 0x8
+	.globl gUnknown_82FCAD0
+gUnknown_82FCAD0: @ 0x082FCAD0
+	.incbin "baserom.gba", 0x2fcad0, 0x8
+	.globl gUnknown_82FCAD8
+gUnknown_82FCAD8: @ 0x082FCAD8
+	.incbin "baserom.gba", 0x2fcad8, 0x8
+	.globl gUnknown_82FCAE0
+gUnknown_82FCAE0: @ 0x082FCAE0
+	.incbin "baserom.gba", 0x2fcae0, 0x8
+	.globl gUnknown_82FCAE8
+gUnknown_82FCAE8: @ 0x082FCAE8
+	.incbin "baserom.gba", 0x2fcae8, 0x8
+	.globl gUnknown_82FCAF0
+gUnknown_82FCAF0: @ 0x082FCAF0
+	.incbin "baserom.gba", 0x2fcaf0, 0x8
+	.globl gUnknown_82FCAF8
+gUnknown_82FCAF8: @ 0x082FCAF8
+	.incbin "baserom.gba", 0x2fcaf8, 0x8
+	.globl gUnknown_82FCB00
+gUnknown_82FCB00: @ 0x082FCB00
+	.incbin "baserom.gba", 0x2fcb00, 0x20
+	.globl gUnknown_82FCB20
+gUnknown_82FCB20: @ 0x082FCB20
+	.incbin "baserom.gba", 0x2fcb20, 0x18
+	.globl gUnknown_82FCB38
+gUnknown_82FCB38: @ 0x082FCB38
+	.incbin "baserom.gba", 0x2fcb38, 0x30
+	.globl gUnknown_82FCB68
+gUnknown_82FCB68: @ 0x082FCB68
+	.incbin "baserom.gba", 0x2fcb68, 0x30
+	.globl gUnknown_82FCB98
+gUnknown_82FCB98: @ 0x082FCB98
+	.incbin "baserom.gba", 0x2fcb98, 0x20
+	.globl gUnknown_82FCBB8
+gUnknown_82FCBB8: @ 0x082FCBB8
+	.incbin "baserom.gba", 0x2fcbb8, 0xcc
+	.globl gUnknown_82FCC84
+gUnknown_82FCC84: @ 0x082FCC84
+	.incbin "baserom.gba", 0x2fcc84, 0x38
+	.globl gUnknown_82FCCBC
+gUnknown_82FCCBC: @ 0x082FCCBC
+	.incbin "baserom.gba", 0x2fccbc, 0x8
+	.globl gUnknown_82FCCC4
+gUnknown_82FCCC4: @ 0x082FCCC4
+	.incbin "baserom.gba", 0x2fccc4, 0x68
+	.globl gUnknown_82FCD2C
+gUnknown_82FCD2C: @ 0x082FCD2C
+	.incbin "baserom.gba", 0x2fcd2c, 0x8
+	.globl gUnknown_82FCD34
+gUnknown_82FCD34: @ 0x082FCD34
+	.incbin "baserom.gba", 0x2fcd34, 0x8
+	.globl gUnknown_82FCD3C
+gUnknown_82FCD3C: @ 0x082FCD3C
+	.incbin "baserom.gba", 0x2fcd3c, 0x8
+	.globl gUnknown_82FCD44
+gUnknown_82FCD44: @ 0x082FCD44
+	.incbin "baserom.gba", 0x2fcd44, 0x18
+	.globl gUnknown_82FCD5C
+gUnknown_82FCD5C: @ 0x082FCD5C
+	.incbin "baserom.gba", 0x2fcd5c, 0x30
+	.globl gUnknown_82FCD8C
+gUnknown_82FCD8C: @ 0x082FCD8C
+	.incbin "baserom.gba", 0x2fcd8c, 0x30
+	.globl gUnknown_82FCDBC
+gUnknown_82FCDBC: @ 0x082FCDBC
+	.incbin "baserom.gba", 0x2fcdbc, 0x1e
+	.globl gUnknown_82FCDDA
+gUnknown_82FCDDA: @ 0x082FCDDA
+	.incbin "baserom.gba", 0x2fcdda, 0x14
+	.globl gUnknown_82FCDEE
+gUnknown_82FCDEE: @ 0x082FCDEE
+	.incbin "baserom.gba", 0x2fcdee, 0x14
+	.globl gUnknown_82FCE02
+gUnknown_82FCE02: @ 0x082FCE02
+	.incbin "baserom.gba", 0x2fce02, 0xa

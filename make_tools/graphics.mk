@@ -14,6 +14,9 @@ FONT_BUILD_DIR := build/graphics/fonts
 UNKNOWN_GFX_DIR := graphics/unknown
 UNKNOWN_GFX_BUILD_DIR := build/graphics/unknown
 
+BALL_GFX_DIR := graphics/balls
+BALL_GFX_BUILD_DIR := build/graphics/balls
+
 GBA_NINTENDO_LOGO_PNG := graphics/gba_nintendo_logo.png
 GBA_NINTENDO_LOGO_BIN := graphics/gba_nintendo_logo.bin
 
@@ -50,6 +53,18 @@ UNKNOWN_PIC_BINS := $(sort $(shell grep -Rho \
 UNKNOWN_PALETTE_BINS := $(sort $(shell grep -Rho \
 	--include='*.s' --include='*.inc' \
 	'build/graphics/unknown/[^"]*\.gbapal\.lz' \
+	asm data 2>/dev/null))
+
+# asm/data配下の.incbinが参照するボール圧縮画像を取得する。
+BALL_PIC_BINS := $(sort $(shell grep -Rho \
+	--include='*.s' --include='*.inc' \
+	'build/graphics/balls/[^"]*\.4bpp\.lz' \
+	asm data 2>/dev/null))
+
+# asm/data配下の.incbinが参照するボール圧縮パレットを取得する。
+BALL_PALETTE_BINS := $(sort $(shell grep -Rho \
+	--include='*.s' --include='*.inc' \
+	'build/graphics/balls/[^"]*\.gbapal\.lz' \
 	asm data 2>/dev/null))
 
 
@@ -153,6 +168,35 @@ $(UNKNOWN_GFX_BUILD_DIR)/%.4bpp.lz: \
 # -> build/graphics/unknown/01_palette.gbapal.lz
 $(UNKNOWN_GFX_BUILD_DIR)/%.gbapal.lz: \
 		$(UNKNOWN_GFX_DIR)/%.png \
+		tools/png_to_palette.py \
+		tools/gba_graphics.py
+	@mkdir -p $(dir $@)
+	python3 tools/png_to_palette.py \
+		$< $@ --lz
+
+
+# ボール画像PNGを圧縮4bppへ変換する。
+#
+# graphics/balls/poke.png
+# -> build/graphics/balls/poke.4bpp.lz
+$(BALL_GFX_BUILD_DIR)/%.4bpp.lz: \
+		$(BALL_GFX_DIR)/%.png \
+		tools/png_to_4bpp.py \
+		tools/gba_graphics.py \
+		$(GBAGFX)
+	@mkdir -p $(dir $@)
+	python3 tools/png_to_4bpp.py \
+		--gbagfx $(GBAGFX) \
+		--no-pad \
+		$< $@
+
+
+# ボールパレットPNGを圧縮GBAパレットへ変換する。
+#
+# graphics/balls/poke_palette.png
+# -> build/graphics/balls/poke_palette.gbapal.lz
+$(BALL_GFX_BUILD_DIR)/%.gbapal.lz: \
+		$(BALL_GFX_DIR)/%.png \
 		tools/png_to_palette.py \
 		tools/gba_graphics.py
 	@mkdir -p $(dir $@)

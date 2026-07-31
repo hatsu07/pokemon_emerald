@@ -140,27 +140,10 @@ gRomHeaderReserved:
 	.4byte gBallSpriteSheets
 	.4byte gBallSpritePalettes
 
-.LgfRomHeaderGameFlags:
-	.4byte 0x00A8 @ offsetof(struct SaveBlock2, gcnLinkFlags)
-	.4byte 0x0864 @ FLAG_SYS_GAME_CLEAR
-	.4byte 0x089B @ FLAG_SYS_RIBBON_GET
-
-.LgfRomHeaderBagCapacities:
-	.byte 30 @ BAG_ITEMS_COUNT
-	.byte 30 @ BAG_KEYITEMS_COUNT
-	.byte 16 @ BAG_POKEBALLS_COUNT
-	.byte 64 @ BAG_TMHM_COUNT
-	.byte 46 @ BAG_BERRIES_COUNT
-	.byte 50 @ PC_ITEMS_COUNT
-	.space 2
-
-.LgfRomHeaderRemainingSaveLayout:
-	.4byte 0x0498 @ offsetof(struct SaveBlock1, pcItems)
-	.4byte 0x31A8 @ offsetof(struct SaveBlock1, giftRibbons)
-	.4byte 0x31F8 @ offsetof(struct SaveBlock1, enigmaBerry)
-	.4byte 0x0034 @ sizeof(struct EnigmaBerry)
-	.4byte 0      @ moveDescriptions
-	.4byte -1     @ unk20
+@ Flags and SaveBlock2 field used by GameCube link software.
+@ Layout: gcnLinkFlags offset, game-clear flag ID, ribbon-obtained flag ID.
+@ Remaining GF ROM-header save/link metadata.
+.include "data/gf_rom_header.inc"
 
 _init:
 	mov r0, #0x12
@@ -184,7 +167,9 @@ _init.ret: @ 0x08000234
 _08000238: .4byte 0x03007E40
 _0800023C: .4byte 0x03007FA0
 _08000240: .4byte 0x03007FFC
-_08000244: .4byte 0x080003A5
+@ AgbMain is Thumb code at 0x080003A4.
+@ Function pointers to Thumb code store bit 0 as 1.
+_08000244: .4byte AgbMain + 1
 	arm_func_end _init.ret
 
 	arm_func_start _intr

@@ -5,6 +5,7 @@
 	.include "constants/berry.inc"
 	.include "constants/contest_move_effects.inc"
 	.include "constants/species.inc"
+	.include "constants/gf_rom_header.inc"
 
 @ LGF ROM header save metadata
 .set SAVE_BLOCK1_FLAGS_OFFSET,       0x1270
