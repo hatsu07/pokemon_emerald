@@ -52,7 +52,7 @@ gText_Rom_2EA334: @ 0x082EA334
 	.if (. - gText_Rom_2EA334) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA334)
 	.endif
-	.incbin "baserom.gba", 0x2ea339, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea339)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:463 gen_1_families_line_463
 	.globl gText_Rom_2EA33A
@@ -65,7 +65,7 @@ gText_Rom_2EA33A: @ 0x082EA33A
 	.if (. - gText_Rom_2EA33A) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA33A)
 	.endif
-	.incbin "baserom.gba", 0x2ea33f, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea33f)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:541 gen_1_families_line_541 (+3 aliases)
 	.globl gText_Rom_2EA340
@@ -90,7 +90,7 @@ gText_Rom_2EA346: @ 0x082EA346
 	.if (. - gText_Rom_2EA346) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA346)
 	.endif
-	.incbin "baserom.gba", 0x2ea34b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea34b)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:886 gen_1_families_line_886
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -103,7 +103,7 @@ gText_Rom_2EA34C: @ 0x082EA34C
 	.endif
 	.globl gText_Rom_2EA34D
 	.set gText_Rom_2EA34D, gText_Rom_2EA34C + 0x1
-	.incbin "baserom.gba", 0x2ea351, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea351)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:964 gen_1_families_line_964 (+2 aliases)
 	.globl gText_Rom_2EA352
@@ -164,7 +164,7 @@ gText_Rom_2EA36A: @ 0x082EA36A
 	.if (. - gText_Rom_2EA36A) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA36A)
 	.endif
-	.incbin "baserom.gba", 0x2ea36f, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea36f)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:1555 gen_1_families_line_1555
 	.globl gText_Rom_2EA370
@@ -177,7 +177,7 @@ gText_Rom_2EA370: @ 0x082EA370
 	.if (. - gText_Rom_2EA370) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA370)
 	.endif
-	.incbin "baserom.gba", 0x2ea375, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea375)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:1643 gen_1_families_line_1643 (+1 aliases)
 	.globl gText_Rom_2EA376
@@ -190,7 +190,7 @@ gText_Rom_2EA376: @ 0x082EA376
 	.if (. - gText_Rom_2EA376) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA376)
 	.endif
-	.incbin "baserom.gba", 0x2ea37b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea37b)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:1800 gen_1_families_line_1800
 	.globl gText_Rom_2EA37C
@@ -203,7 +203,7 @@ gText_Rom_2EA37C: @ 0x082EA37C
 	.if (. - gText_Rom_2EA37C) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA37C)
 	.endif
-	.incbin "baserom.gba", 0x2ea380, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea380)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:1874 gen_1_families_line_1874
 	.globl gText_Rom_2EA382
@@ -216,7 +216,7 @@ gText_Rom_2EA382: @ 0x082EA382
 	.if (. - gText_Rom_2EA382) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA382)
 	.endif
-	.incbin "baserom.gba", 0x2ea387, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea387)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:1957 gen_1_families_line_1957 (+1 aliases)
 	.globl gText_Rom_2EA388
@@ -241,7 +241,7 @@ gText_Rom_2EA38E: @ 0x082EA38E
 	.endif
 	.globl gText_Rom_2EA38F
 	.set gText_Rom_2EA38F, gText_Rom_2EA38E + 0x1
-	.incbin "baserom.gba", 0x2ea393, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea393)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:2186 gen_1_families_line_2186 (+2 aliases)
 	.globl gText_Rom_2EA394
@@ -254,7 +254,7 @@ gText_Rom_2EA394: @ 0x082EA394
 	.if (. - gText_Rom_2EA394) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA394)
 	.endif
-	.incbin "baserom.gba", 0x2ea398, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea398)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:2476 gen_1_families_line_2476
 	.globl gText_Rom_2EA39A
@@ -291,7 +291,7 @@ gText_Rom_2EA3A6: @ 0x082EA3A6
 	.if (. - gText_Rom_2EA3A6) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA3A6)
 	.endif
-	.incbin "baserom.gba", 0x2ea3aa, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea3aa)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:2703 gen_1_families_line_2703
 	.globl gText_Rom_2EA3AC
@@ -340,7 +340,7 @@ gText_Rom_2EA3BE: @ 0x082EA3BE
 	.if (. - gText_Rom_2EA3BE) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA3BE)
 	.endif
-	.incbin "baserom.gba", 0x2ea3c2, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea3c2)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:4277 gen_1_families_line_4277 (+1 aliases)
 	.globl gText_Rom_2EA3C4
@@ -437,7 +437,7 @@ gText_Rom_2EA3EE: @ 0x082EA3EE
 	.if (. - gText_Rom_2EA3EE) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA3EE)
 	.endif
-	.incbin "baserom.gba", 0x2ea3f2, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea3f2)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:5114 gen_1_families_line_5114 (+1 aliases)
 	.globl gText_Rom_2EA3F4
@@ -450,7 +450,7 @@ gText_Rom_2EA3F4: @ 0x082EA3F4
 	.if (. - gText_Rom_2EA3F4) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA3F4)
 	.endif
-	.incbin "baserom.gba", 0x2ea3f9, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea3f9)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:5246 gen_1_families_line_5246 (+1 aliases)
 	.globl gText_Rom_2EA3FA
@@ -463,7 +463,7 @@ gText_Rom_2EA3FA: @ 0x082EA3FA
 	.if (. - gText_Rom_2EA3FA) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA3FA)
 	.endif
-	.incbin "baserom.gba", 0x2ea3fe, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea3fe)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:5320 gen_1_families_line_5320 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -488,7 +488,7 @@ gText_Rom_2EA406: @ 0x082EA406
 	.if (. - gText_Rom_2EA406) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA406)
 	.endif
-	.incbin "baserom.gba", 0x2ea40a, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea40a)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:5711 gen_1_families_line_5711
 	.globl gText_Rom_2EA40C
@@ -501,7 +501,7 @@ gText_Rom_2EA40C: @ 0x082EA40C
 	.if (. - gText_Rom_2EA40C) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA40C)
 	.endif
-	.incbin "baserom.gba", 0x2ea411, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea411)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:5782 gen_1_families_line_5782 (+2 aliases)
 	.globl gText_Rom_2EA412
@@ -514,7 +514,7 @@ gText_Rom_2EA412: @ 0x082EA412
 	.if (. - gText_Rom_2EA412) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA412)
 	.endif
-	.incbin "baserom.gba", 0x2ea417, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea417)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:5875 gen_1_families_line_5875
 	.globl gText_Rom_2EA418
@@ -575,7 +575,7 @@ gText_Rom_2EA430: @ 0x082EA430
 	.if (. - gText_Rom_2EA430) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA430)
 	.endif
-	.incbin "baserom.gba", 0x2ea434, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea434)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:6506 gen_1_families_line_6506
 	.globl gText_Rom_2EA436
@@ -600,7 +600,7 @@ gText_Rom_2EA43C: @ 0x082EA43C
 	.if (. - gText_Rom_2EA43C) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA43C)
 	.endif
-	.incbin "baserom.gba", 0x2ea441, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea441)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:6662 gen_1_families_line_6662
 	.globl gText_Rom_2EA442
@@ -625,7 +625,7 @@ gText_Rom_2EA448: @ 0x082EA448
 	.if (. - gText_Rom_2EA448) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA448)
 	.endif
-	.incbin "baserom.gba", 0x2ea44d, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea44d)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:6831 gen_1_families_line_6831 (+1 aliases)
 	.globl gText_Rom_2EA44E
@@ -650,7 +650,7 @@ gText_Rom_2EA454: @ 0x082EA454
 	.if (. - gText_Rom_2EA454) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA454)
 	.endif
-	.incbin "baserom.gba", 0x2ea459, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea459)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:7136 gen_1_families_line_7136 (+1 aliases)
 	.globl gText_Rom_2EA45A
@@ -675,7 +675,7 @@ gText_Rom_2EA460: @ 0x082EA460
 	.if (. - gText_Rom_2EA460) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA460)
 	.endif
-	.incbin "baserom.gba", 0x2ea465, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea465)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:7605 gen_1_families_line_7605
 	.globl gText_Rom_2EA466
@@ -700,7 +700,7 @@ gText_Rom_2EA46C: @ 0x082EA46C
 	.if (. - gText_Rom_2EA46C) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA46C)
 	.endif
-	.incbin "baserom.gba", 0x2ea471, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea471)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:7758 gen_1_families_line_7758
 	.globl gText_Rom_2EA472
@@ -725,7 +725,7 @@ gText_Rom_2EA478: @ 0x082EA478
 	.if (. - gText_Rom_2EA478) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA478)
 	.endif
-	.incbin "baserom.gba", 0x2ea47d, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea47d)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:7974 gen_1_families_line_7974 (+1 aliases)
 	.globl gText_Rom_2EA47E
@@ -750,7 +750,7 @@ gText_Rom_2EA484: @ 0x082EA484
 	.if (. - gText_Rom_2EA484) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA484)
 	.endif
-	.incbin "baserom.gba", 0x2ea489, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea489)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:8250 gen_1_families_line_8250
 	.globl gText_Rom_2EA48A
@@ -763,7 +763,7 @@ gText_Rom_2EA48A: @ 0x082EA48A
 	.if (. - gText_Rom_2EA48A) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA48A)
 	.endif
-	.incbin "baserom.gba", 0x2ea48f, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea48f)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:8336 gen_1_families_line_8336
 	.globl gText_Rom_2EA490
@@ -788,7 +788,7 @@ gText_Rom_2EA496: @ 0x082EA496
 	.if (. - gText_Rom_2EA496) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA496)
 	.endif
-	.incbin "baserom.gba", 0x2ea49b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea49b)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:8578 gen_1_families_line_8578
 	.globl gText_Rom_2EA49C
@@ -873,7 +873,7 @@ gText_Rom_2EA4C0: @ 0x082EA4C0
 	.if (. - gText_Rom_2EA4C0) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA4C0)
 	.endif
-	.incbin "baserom.gba", 0x2ea4c5, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea4c5)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:9311 gen_1_families_line_9311 (+1 aliases)
 	.globl gText_Rom_2EA4C6
@@ -934,7 +934,7 @@ gText_Rom_2EA4DE: @ 0x082EA4DE
 	.if (. - gText_Rom_2EA4DE) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA4DE)
 	.endif
-	.incbin "baserom.gba", 0x2ea4e3, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea4e3)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:9750 gen_1_families_line_9750 (+1 aliases)
 	.globl gText_Rom_2EA4E4
@@ -959,7 +959,7 @@ gText_Rom_2EA4EA: @ 0x082EA4EA
 	.if (. - gText_Rom_2EA4EA) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA4EA)
 	.endif
-	.incbin "baserom.gba", 0x2ea4ef, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea4ef)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:10097 gen_1_families_line_10097 (+1 aliases)
 	.globl gText_Rom_2EA4F0
@@ -984,7 +984,7 @@ gText_Rom_2EA4F6: @ 0x082EA4F6
 	.if (. - gText_Rom_2EA4F6) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA4F6)
 	.endif
-	.incbin "baserom.gba", 0x2ea4fa, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea4fa)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:10378 gen_1_families_line_10378 (+2 aliases)
 	.globl gText_Rom_2EA4FC
@@ -997,7 +997,7 @@ gText_Rom_2EA4FC: @ 0x082EA4FC
 	.if (. - gText_Rom_2EA4FC) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA4FC)
 	.endif
-	.incbin "baserom.gba", 0x2ea501, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea501)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:10800 gen_1_families_line_10800
 	.globl gText_Rom_2EA502
@@ -1010,7 +1010,7 @@ gText_Rom_2EA502: @ 0x082EA502
 	.if (. - gText_Rom_2EA502) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA502)
 	.endif
-	.incbin "baserom.gba", 0x2ea506, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea506)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:10872 gen_1_families_line_10872
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -1035,7 +1035,7 @@ gText_Rom_2EA50E: @ 0x082EA50E
 	.if (. - gText_Rom_2EA50E) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA50E)
 	.endif
-	.incbin "baserom.gba", 0x2ea513, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea513)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:11255 gen_1_families_line_11255
 	.globl gText_Rom_2EA514
@@ -1048,7 +1048,7 @@ gText_Rom_2EA514: @ 0x082EA514
 	.if (. - gText_Rom_2EA514) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA514)
 	.endif
-	.incbin "baserom.gba", 0x2ea519, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea519)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:11348 gen_1_families_line_11348
 	.globl gText_Rom_2EA51A
@@ -1073,7 +1073,7 @@ gText_Rom_2EA520: @ 0x082EA520
 	.if (. - gText_Rom_2EA520) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA520)
 	.endif
-	.incbin "baserom.gba", 0x2ea525, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea525)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:11513 gen_1_families_line_11513
 	.globl gText_Rom_2EA526
@@ -1086,7 +1086,7 @@ gText_Rom_2EA526: @ 0x082EA526
 	.if (. - gText_Rom_2EA526) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA526)
 	.endif
-	.incbin "baserom.gba", 0x2ea52b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea52b)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:11583 gen_1_families_line_11583 (+1 aliases)
 	.globl gText_Rom_2EA52C
@@ -1147,7 +1147,7 @@ gText_Rom_2EA544: @ 0x082EA544
 	.if (. - gText_Rom_2EA544) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA544)
 	.endif
-	.incbin "baserom.gba", 0x2ea548, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea548)
 
 	@ src/data/easy_chat/easy_chat_group_status.h:190 easy_chat_group_status_line_190 (+3 aliases)
 	.globl gText_Rom_2EA54A
@@ -1160,7 +1160,7 @@ gText_Rom_2EA54A: @ 0x082EA54A
 	.if (. - gText_Rom_2EA54A) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA54A)
 	.endif
-	.incbin "baserom.gba", 0x2ea54f, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea54f)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:12184 gen_1_families_line_12184 (+2 aliases)
 	.globl gText_Rom_2EA550
@@ -1173,7 +1173,7 @@ gText_Rom_2EA550: @ 0x082EA550
 	.if (. - gText_Rom_2EA550) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA550)
 	.endif
-	.incbin "baserom.gba", 0x2ea555, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea555)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:12389 gen_1_families_line_12389
 	.globl gText_Rom_2EA556
@@ -1186,7 +1186,7 @@ gText_Rom_2EA556: @ 0x082EA556
 	.if (. - gText_Rom_2EA556) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA556)
 	.endif
-	.incbin "baserom.gba", 0x2ea55b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea55b)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:12629 gen_1_families_line_12629
 	.globl gText_Rom_2EA55C
@@ -1199,7 +1199,7 @@ gText_Rom_2EA55C: @ 0x082EA55C
 	.if (. - gText_Rom_2EA55C) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA55C)
 	.endif
-	.incbin "baserom.gba", 0x2ea561, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea561)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:12706 gen_1_families_line_12706
 	.globl gText_Rom_2EA562
@@ -1224,7 +1224,7 @@ gText_Rom_2EA568: @ 0x082EA568
 	.if (. - gText_Rom_2EA568) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA568)
 	.endif
-	.incbin "baserom.gba", 0x2ea56c, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea56c)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:12866 gen_1_families_line_12866 (+1 aliases)
 	.globl gText_Rom_2EA56E
@@ -1273,7 +1273,7 @@ gText_Rom_2EA580: @ 0x082EA580
 	.if (. - gText_Rom_2EA580) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA580)
 	.endif
-	.incbin "baserom.gba", 0x2ea585, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea585)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:13374 gen_1_families_line_13374 (+1 aliases)
 	.globl gText_Rom_2EA586
@@ -1286,7 +1286,7 @@ gText_Rom_2EA586: @ 0x082EA586
 	.if (. - gText_Rom_2EA586) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA586)
 	.endif
-	.incbin "baserom.gba", 0x2ea58b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea58b)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:13513 gen_1_families_line_13513
 	.globl gText_Rom_2EA58C
@@ -1299,7 +1299,7 @@ gText_Rom_2EA58C: @ 0x082EA58C
 	.if (. - gText_Rom_2EA58C) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA58C)
 	.endif
-	.incbin "baserom.gba", 0x2ea591, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea591)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:13593 gen_1_families_line_13593 (+2 aliases)
 	.globl gText_Rom_2EA592
@@ -1312,7 +1312,7 @@ gText_Rom_2EA592: @ 0x082EA592
 	.if (. - gText_Rom_2EA592) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA592)
 	.endif
-	.incbin "baserom.gba", 0x2ea597, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea597)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:13875 gen_1_families_line_13875
 	.globl gText_Rom_2EA598
@@ -1361,7 +1361,7 @@ gText_Rom_2EA5AA: @ 0x082EA5AA
 	.if (. - gText_Rom_2EA5AA) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA5AA)
 	.endif
-	.incbin "baserom.gba", 0x2ea5af, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea5af)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:14334 gen_1_families_line_14334 (+1 aliases)
 	.globl gText_Rom_2EA5B0
@@ -1398,7 +1398,7 @@ gText_Rom_2EA5BC: @ 0x082EA5BC
 	.if (. - gText_Rom_2EA5BC) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA5BC)
 	.endif
-	.incbin "baserom.gba", 0x2ea5c1, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea5c1)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:14810 gen_1_families_line_14810
 	.globl gText_Rom_2EA5C2
@@ -1411,7 +1411,7 @@ gText_Rom_2EA5C2: @ 0x082EA5C2
 	.if (. - gText_Rom_2EA5C2) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA5C2)
 	.endif
-	.incbin "baserom.gba", 0x2ea5c7, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea5c7)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:14963 gen_1_families_line_14963
 	.globl gText_Rom_2EA5C8
@@ -1436,7 +1436,7 @@ gText_Rom_2EA5CE: @ 0x082EA5CE
 	.if (. - gText_Rom_2EA5CE) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA5CE)
 	.endif
-	.incbin "baserom.gba", 0x2ea5d3, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea5d3)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:15273 gen_1_families_line_15273
 	.globl gText_Rom_2EA5D4
@@ -1449,7 +1449,7 @@ gText_Rom_2EA5D4: @ 0x082EA5D4
 	.if (. - gText_Rom_2EA5D4) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA5D4)
 	.endif
-	.incbin "baserom.gba", 0x2ea5d9, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea5d9)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:15350 gen_1_families_line_15350
 	.globl gText_Rom_2EA5DA
@@ -1462,7 +1462,7 @@ gText_Rom_2EA5DA: @ 0x082EA5DA
 	.if (. - gText_Rom_2EA5DA) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA5DA)
 	.endif
-	.incbin "baserom.gba", 0x2ea5df, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea5df)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:15510 gen_1_families_line_15510
 	.globl gText_Rom_2EA5E0
@@ -1559,7 +1559,7 @@ gText_Rom_2EA60A: @ 0x082EA60A
 	.if (. - gText_Rom_2EA60A) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA60A)
 	.endif
-	.incbin "baserom.gba", 0x2ea60f, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea60f)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:16969 gen_1_families_line_16969
 	.globl gText_Rom_2EA610
@@ -1572,7 +1572,7 @@ gText_Rom_2EA610: @ 0x082EA610
 	.if (. - gText_Rom_2EA610) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA610)
 	.endif
-	.incbin "baserom.gba", 0x2ea615, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea615)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:17121 gen_1_families_line_17121 (+1 aliases)
 	.globl gText_Rom_2EA616
@@ -1585,7 +1585,7 @@ gText_Rom_2EA616: @ 0x082EA616
 	.if (. - gText_Rom_2EA616) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA616)
 	.endif
-	.incbin "baserom.gba", 0x2ea61b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea61b)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:17276 gen_1_families_line_17276 (+3 aliases)
 	.globl gText_Rom_2EA61C
@@ -1634,7 +1634,7 @@ gText_Rom_2EA62E: @ 0x082EA62E
 	.endif
 	.globl gText_Rom_2EA62F
 	.set gText_Rom_2EA62F, gText_Rom_2EA62E + 0x1
-	.incbin "baserom.gba", 0x2ea633, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea633)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:17932 gen_1_families_line_17932 (+1 aliases)
 	.globl gText_Rom_2EA634
@@ -1647,7 +1647,7 @@ gText_Rom_2EA634: @ 0x082EA634
 	.if (. - gText_Rom_2EA634) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA634)
 	.endif
-	.incbin "baserom.gba", 0x2ea639, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea639)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:18011 gen_1_families_line_18011 (+3 aliases)
 	.globl gText_Rom_2EA63A
@@ -1660,7 +1660,7 @@ gText_Rom_2EA63A: @ 0x082EA63A
 	.if (. - gText_Rom_2EA63A) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA63A)
 	.endif
-	.incbin "baserom.gba", 0x2ea63f, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea63f)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:18242 gen_1_families_line_18242 (+1 aliases)
 	.globl gText_Rom_2EA640
@@ -1709,7 +1709,7 @@ gText_Rom_2EA652: @ 0x082EA652
 	.if (. - gText_Rom_2EA652) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA652)
 	.endif
-	.incbin "baserom.gba", 0x2ea657, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea657)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:19024 gen_1_families_line_19024
 	.globl gText_Rom_2EA658
@@ -1746,7 +1746,7 @@ gText_Rom_2EA664: @ 0x082EA664
 	.if (. - gText_Rom_2EA664) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA664)
 	.endif
-	.incbin "baserom.gba", 0x2ea668, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea668)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:19254 gen_1_families_line_19254
 	.globl gText_Rom_2EA66A
@@ -1771,7 +1771,7 @@ gText_Rom_2EA670: @ 0x082EA670
 	.if (. - gText_Rom_2EA670) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA670)
 	.endif
-	.incbin "baserom.gba", 0x2ea674, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea674)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:19548 gen_1_families_line_19548 (+1 aliases)
 	.globl gText_Rom_2EA676
@@ -1784,7 +1784,7 @@ gText_Rom_2EA676: @ 0x082EA676
 	.if (. - gText_Rom_2EA676) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA676)
 	.endif
-	.incbin "baserom.gba", 0x2ea67b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea67b)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:19688 gen_1_families_line_19688 (+1 aliases)
 	.globl gText_Rom_2EA67C
@@ -1809,7 +1809,7 @@ gText_Rom_2EA682: @ 0x082EA682
 	.if (. - gText_Rom_2EA682) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA682)
 	.endif
-	.incbin "baserom.gba", 0x2ea687, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea687)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:19990 gen_1_families_line_19990 (+1 aliases)
 	.globl gText_Rom_2EA688
@@ -1882,7 +1882,7 @@ gText_Rom_2EA6A6: @ 0x082EA6A6
 	.if (. - gText_Rom_2EA6A6) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA6A6)
 	.endif
-	.incbin "baserom.gba", 0x2ea6aa, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea6aa)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:26 gen_2_families_line_26
 	.globl gText_Rom_2EA6AC
@@ -1967,7 +1967,7 @@ gText_Rom_2EA6D0: @ 0x082EA6D0
 	.if (. - gText_Rom_2EA6D0) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA6D0)
 	.endif
-	.incbin "baserom.gba", 0x2ea6d5, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea6d5)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:672 gen_2_families_line_672
 	.globl gText_Rom_2EA6D6
@@ -2004,7 +2004,7 @@ gText_Rom_2EA6E2: @ 0x082EA6E2
 	.if (. - gText_Rom_2EA6E2) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA6E2)
 	.endif
-	.incbin "baserom.gba", 0x2ea6e6, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea6e6)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:949 gen_2_families_line_949
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -2017,7 +2017,7 @@ gText_Rom_2EA6E8: @ 0x082EA6E8
 	.endif
 	.globl gText_Rom_2EA6E9
 	.set gText_Rom_2EA6E9, gText_Rom_2EA6E8 + 0x1
-	.incbin "baserom.gba", 0x2ea6ed, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea6ed)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:1017 gen_2_families_line_1017
 	.globl gText_Rom_2EA6EE
@@ -2030,7 +2030,7 @@ gText_Rom_2EA6EE: @ 0x082EA6EE
 	.if (. - gText_Rom_2EA6EE) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA6EE)
 	.endif
-	.incbin "baserom.gba", 0x2ea6f3, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea6f3)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:1102 gen_2_families_line_1102
 	.globl gText_Rom_2EA6F4
@@ -2055,7 +2055,7 @@ gText_Rom_2EA6FA: @ 0x082EA6FA
 	.if (. - gText_Rom_2EA6FA) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA6FA)
 	.endif
-	.incbin "baserom.gba", 0x2ea6ff, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea6ff)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:1253 gen_2_families_line_1253
 	.globl gText_Rom_2EA700
@@ -2080,7 +2080,7 @@ gText_Rom_2EA706: @ 0x082EA706
 	.if (. - gText_Rom_2EA706) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA706)
 	.endif
-	.incbin "baserom.gba", 0x2ea70b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea70b)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:1417 gen_2_families_line_1417
 	.globl gText_Rom_2EA70C
@@ -2141,7 +2141,7 @@ gText_Rom_2EA724: @ 0x082EA724
 	.if (. - gText_Rom_2EA724) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA724)
 	.endif
-	.incbin "baserom.gba", 0x2ea729, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea729)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:4955 gen_1_families_line_4955
 	.globl gText_Rom_2EA72A
@@ -2154,7 +2154,7 @@ gText_Rom_2EA72A: @ 0x082EA72A
 	.if (. - gText_Rom_2EA72A) < 0x3
 	.space 0x3 - (. - gText_Rom_2EA72A)
 	.endif
-	.incbin "baserom.gba", 0x2ea72d, 0x3
+	.space 0x3, 0 @ name padding (was 0x2ea72d)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:5541 gen_1_families_line_5541
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -2167,7 +2167,7 @@ gText_Rom_2EA730: @ 0x082EA730
 	.endif
 	.globl gText_Rom_2EA731
 	.set gText_Rom_2EA731, gText_Rom_2EA730 + 0x1
-	.incbin "baserom.gba", 0x2ea735, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea735)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:1634 gen_2_families_line_1634
 	.globl gText_Rom_2EA736
@@ -2180,7 +2180,7 @@ gText_Rom_2EA736: @ 0x082EA736
 	.if (. - gText_Rom_2EA736) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA736)
 	.endif
-	.incbin "baserom.gba", 0x2ea73b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea73b)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:1704 gen_2_families_line_1704
 	.globl gText_Rom_2EA73C
@@ -2205,7 +2205,7 @@ gText_Rom_2EA742: @ 0x082EA742
 	.if (. - gText_Rom_2EA742) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA742)
 	.endif
-	.incbin "baserom.gba", 0x2ea747, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea747)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:1932 gen_2_families_line_1932
 	.globl gText_Rom_2EA748
@@ -2230,7 +2230,7 @@ gText_Rom_2EA74E: @ 0x082EA74E
 	.if (. - gText_Rom_2EA74E) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA74E)
 	.endif
-	.incbin "baserom.gba", 0x2ea753, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea753)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:2090 gen_2_families_line_2090
 	.globl gText_Rom_2EA754
@@ -2243,7 +2243,7 @@ gText_Rom_2EA754: @ 0x082EA754
 	.if (. - gText_Rom_2EA754) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA754)
 	.endif
-	.incbin "baserom.gba", 0x2ea758, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea758)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:2168 gen_2_families_line_2168 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -2280,7 +2280,7 @@ gText_Rom_2EA766: @ 0x082EA766
 	.if (. - gText_Rom_2EA766) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA766)
 	.endif
-	.incbin "baserom.gba", 0x2ea76a, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea76a)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:2479 gen_2_families_line_2479
 	.globl gText_Rom_2EA76C
@@ -2293,7 +2293,7 @@ gText_Rom_2EA76C: @ 0x082EA76C
 	.if (. - gText_Rom_2EA76C) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA76C)
 	.endif
-	.incbin "baserom.gba", 0x2ea771, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea771)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:2623 gen_2_families_line_2623
 	.globl gText_Rom_2EA772
@@ -2330,7 +2330,7 @@ gText_Rom_2EA77E: @ 0x082EA77E
 	.if (. - gText_Rom_2EA77E) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA77E)
 	.endif
-	.incbin "baserom.gba", 0x2ea783, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea783)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:2788 gen_2_families_line_2788
 	.globl gText_Rom_2EA784
@@ -2343,7 +2343,7 @@ gText_Rom_2EA784: @ 0x082EA784
 	.if (. - gText_Rom_2EA784) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA784)
 	.endif
-	.incbin "baserom.gba", 0x2ea789, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea789)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:2874 gen_2_families_line_2874
 	.globl gText_Rom_2EA78A
@@ -2356,7 +2356,7 @@ gText_Rom_2EA78A: @ 0x082EA78A
 	.if (. - gText_Rom_2EA78A) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA78A)
 	.endif
-	.incbin "baserom.gba", 0x2ea78f, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea78f)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:2947 gen_2_families_line_2947
 	.globl gText_Rom_2EA790
@@ -2369,7 +2369,7 @@ gText_Rom_2EA790: @ 0x082EA790
 	.if (. - gText_Rom_2EA790) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA790)
 	.endif
-	.incbin "baserom.gba", 0x2ea795, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea795)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:3118 gen_2_families_line_3118
 	.globl gText_Rom_2EA796
@@ -2394,7 +2394,7 @@ gText_Rom_2EA79C: @ 0x082EA79C
 	.if (. - gText_Rom_2EA79C) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA79C)
 	.endif
-	.incbin "baserom.gba", 0x2ea7a1, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea7a1)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:3264 gen_2_families_line_3264
 	.globl gText_Rom_2EA7A2
@@ -2419,7 +2419,7 @@ gText_Rom_2EA7A8: @ 0x082EA7A8
 	.if (. - gText_Rom_2EA7A8) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA7A8)
 	.endif
-	.incbin "baserom.gba", 0x2ea7ac, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea7ac)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:3534 gen_2_families_line_3534
 	.globl gText_Rom_2EA7AE
@@ -2432,7 +2432,7 @@ gText_Rom_2EA7AE: @ 0x082EA7AE
 	.if (. - gText_Rom_2EA7AE) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA7AE)
 	.endif
-	.incbin "baserom.gba", 0x2ea7b2, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea7b2)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:18441 gen_1_families_line_18441
 	.globl gText_Rom_2EA7B4
@@ -2445,7 +2445,7 @@ gText_Rom_2EA7B4: @ 0x082EA7B4
 	.if (. - gText_Rom_2EA7B4) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA7B4)
 	.endif
-	.incbin "baserom.gba", 0x2ea7b9, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea7b9)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:18508 gen_1_families_line_18508
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -2494,7 +2494,7 @@ gText_Rom_2EA7CC: @ 0x082EA7CC
 	.if (. - gText_Rom_2EA7CC) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA7CC)
 	.endif
-	.incbin "baserom.gba", 0x2ea7d0, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea7d0)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:4070 gen_2_families_line_4070
 	.globl gText_Rom_2EA7D2
@@ -2567,7 +2567,7 @@ gText_Rom_2EA7F0: @ 0x082EA7F0
 	.if (. - gText_Rom_2EA7F0) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA7F0)
 	.endif
-	.incbin "baserom.gba", 0x2ea7f5, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea7f5)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:4833 gen_2_families_line_4833
 	.globl gText_Rom_2EA7F6
@@ -2604,7 +2604,7 @@ gText_Rom_2EA802: @ 0x082EA802
 	.if (. - gText_Rom_2EA802) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA802)
 	.endif
-	.incbin "baserom.gba", 0x2ea806, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea806)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:5071 gen_2_families_line_5071
 	.globl gText_Rom_2EA808
@@ -2641,7 +2641,7 @@ gText_Rom_2EA814: @ 0x082EA814
 	.if (. - gText_Rom_2EA814) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA814)
 	.endif
-	.incbin "baserom.gba", 0x2ea819, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea819)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:5365 gen_2_families_line_5365
 	.globl gText_Rom_2EA81A
@@ -2654,7 +2654,7 @@ gText_Rom_2EA81A: @ 0x082EA81A
 	.if (. - gText_Rom_2EA81A) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA81A)
 	.endif
-	.incbin "baserom.gba", 0x2ea81f, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea81f)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:5435 gen_2_families_line_5435 (+1 aliases)
 	.globl gText_Rom_2EA820
@@ -2679,7 +2679,7 @@ gText_Rom_2EA826: @ 0x082EA826
 	.if (. - gText_Rom_2EA826) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA826)
 	.endif
-	.incbin "baserom.gba", 0x2ea82b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea82b)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:5928 gen_2_families_line_5928
 	.globl gText_Rom_2EA82C
@@ -2692,7 +2692,7 @@ gText_Rom_2EA82C: @ 0x082EA82C
 	.if (. - gText_Rom_2EA82C) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA82C)
 	.endif
-	.incbin "baserom.gba", 0x2ea831, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea831)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:6000 gen_2_families_line_6000
 	.globl gText_Rom_2EA832
@@ -2705,7 +2705,7 @@ gText_Rom_2EA832: @ 0x082EA832
 	.if (. - gText_Rom_2EA832) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA832)
 	.endif
-	.incbin "baserom.gba", 0x2ea837, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea837)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:6216 gen_2_families_line_6216
 	.globl gText_Rom_2EA838
@@ -2742,7 +2742,7 @@ gText_Rom_2EA844: @ 0x082EA844
 	.if (. - gText_Rom_2EA844) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA844)
 	.endif
-	.incbin "baserom.gba", 0x2ea849, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea849)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:6444 gen_2_families_line_6444
 	.globl gText_Rom_2EA84A
@@ -2755,7 +2755,7 @@ gText_Rom_2EA84A: @ 0x082EA84A
 	.if (. - gText_Rom_2EA84A) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA84A)
 	.endif
-	.incbin "baserom.gba", 0x2ea84f, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea84f)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:6624 gen_2_families_line_6624 (+1 aliases)
 	.globl gText_Rom_2EA850
@@ -2768,7 +2768,7 @@ gText_Rom_2EA850: @ 0x082EA850
 	.if (. - gText_Rom_2EA850) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA850)
 	.endif
-	.incbin "baserom.gba", 0x2ea855, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea855)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:6834 gen_2_families_line_6834
 	.globl gText_Rom_2EA856
@@ -2793,7 +2793,7 @@ gText_Rom_2EA85C: @ 0x082EA85C
 	.if (. - gText_Rom_2EA85C) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA85C)
 	.endif
-	.incbin "baserom.gba", 0x2ea861, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea861)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:6993 gen_2_families_line_6993
 	.globl gText_Rom_2EA862
@@ -2842,7 +2842,7 @@ gText_Rom_2EA874: @ 0x082EA874
 	.if (. - gText_Rom_2EA874) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA874)
 	.endif
-	.incbin "baserom.gba", 0x2ea879, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea879)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:7415 gen_2_families_line_7415 (+1 aliases)
 	.globl gText_Rom_2EA87A
@@ -2855,7 +2855,7 @@ gText_Rom_2EA87A: @ 0x082EA87A
 	.if (. - gText_Rom_2EA87A) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA87A)
 	.endif
-	.incbin "baserom.gba", 0x2ea87f, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea87f)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:15437 gen_1_families_line_15437
 	.globl gText_Rom_2EA880
@@ -2880,7 +2880,7 @@ gText_Rom_2EA886: @ 0x082EA886
 	.if (. - gText_Rom_2EA886) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA886)
 	.endif
-	.incbin "baserom.gba", 0x2ea88b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea88b)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:7645 gen_2_families_line_7645
 	.globl gText_Rom_2EA88C
@@ -2917,7 +2917,7 @@ gText_Rom_2EA898: @ 0x082EA898
 	.if (. - gText_Rom_2EA898) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA898)
 	.endif
-	.incbin "baserom.gba", 0x2ea89d, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea89d)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:7874 gen_2_families_line_7874
 	.globl gText_Rom_2EA89E
@@ -2930,7 +2930,7 @@ gText_Rom_2EA89E: @ 0x082EA89E
 	.if (. - gText_Rom_2EA89E) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA89E)
 	.endif
-	.incbin "baserom.gba", 0x2ea8a3, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea8a3)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:13800 gen_1_families_line_13800
 	.globl gText_Rom_2EA8A4
@@ -2943,7 +2943,7 @@ gText_Rom_2EA8A4: @ 0x082EA8A4
 	.if (. - gText_Rom_2EA8A4) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA8A4)
 	.endif
-	.incbin "baserom.gba", 0x2ea8a9, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea8a9)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:14026 gen_1_families_line_14026
 	.globl gText_Rom_2EA8AA
@@ -2992,7 +2992,7 @@ gText_Rom_2EA8BC: @ 0x082EA8BC
 	.if (. - gText_Rom_2EA8BC) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA8BC)
 	.endif
-	.incbin "baserom.gba", 0x2ea8c0, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea8c0)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:7951 gen_2_families_line_7951
 	.globl gText_Rom_2EA8C2
@@ -3017,7 +3017,7 @@ gText_Rom_2EA8C8: @ 0x082EA8C8
 	.if (. - gText_Rom_2EA8C8) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA8C8)
 	.endif
-	.incbin "baserom.gba", 0x2ea8cd, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea8cd)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:8031 gen_2_families_line_8031
 	.globl gText_Rom_2EA8CE
@@ -3030,7 +3030,7 @@ gText_Rom_2EA8CE: @ 0x082EA8CE
 	.if (. - gText_Rom_2EA8CE) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA8CE)
 	.endif
-	.incbin "baserom.gba", 0x2ea8d3, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea8d3)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:8113 gen_2_families_line_8113
 	.globl gText_Rom_2EA8D4
@@ -3043,7 +3043,7 @@ gText_Rom_2EA8D4: @ 0x082EA8D4
 	.if (. - gText_Rom_2EA8D4) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA8D4)
 	.endif
-	.incbin "baserom.gba", 0x2ea8d9, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea8d9)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:8194 gen_2_families_line_8194
 	.globl gText_Rom_2EA8DA
@@ -3056,7 +3056,7 @@ gText_Rom_2EA8DA: @ 0x082EA8DA
 	.if (. - gText_Rom_2EA8DA) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA8DA)
 	.endif
-	.incbin "baserom.gba", 0x2ea8df, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea8df)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:8264 gen_2_families_line_8264
 	.globl gText_Rom_2EA8E0
@@ -3105,7 +3105,7 @@ gText_Rom_2EA8F2: @ 0x082EA8F2
 	.if (. - gText_Rom_2EA8F2) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA8F2)
 	.endif
-	.incbin "baserom.gba", 0x2ea8f6, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea8f6)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:8650 gen_2_families_line_8650
 	.globl gText_Rom_2EA8F8
@@ -3118,7 +3118,7 @@ gText_Rom_2EA8F8: @ 0x082EA8F8
 	.if (. - gText_Rom_2EA8F8) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA8F8)
 	.endif
-	.incbin "baserom.gba", 0x2ea8fd, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea8fd)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:8730 gen_2_families_line_8730
 	.globl gText_Rom_2EA8FE
@@ -3131,7 +3131,10 @@ gText_Rom_2EA8FE: @ 0x082EA8FE
 	.if (. - gText_Rom_2EA8FE) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA8FE)
 	.endif
-	.incbin "baserom.gba", 0x2ea903, 0x5
+	.byte 0 @ セレビィ名の末尾パディング
+	.string "？" @ 未使用種族名
+	.byte EOS
+	.space 0x2, 0
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA908
@@ -3144,7 +3147,7 @@ gText_Rom_2EA908: @ 0x082EA908
 	.if (. - gText_Rom_2EA908) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA908)
 	.endif
-	.incbin "baserom.gba", 0x2ea90c, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea90c)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA90E
@@ -3157,7 +3160,7 @@ gText_Rom_2EA90E: @ 0x082EA90E
 	.if (. - gText_Rom_2EA90E) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA90E)
 	.endif
-	.incbin "baserom.gba", 0x2ea912, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea912)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA914
@@ -3170,7 +3173,7 @@ gText_Rom_2EA914: @ 0x082EA914
 	.if (. - gText_Rom_2EA914) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA914)
 	.endif
-	.incbin "baserom.gba", 0x2ea918, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea918)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA91A
@@ -3183,7 +3186,7 @@ gText_Rom_2EA91A: @ 0x082EA91A
 	.if (. - gText_Rom_2EA91A) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA91A)
 	.endif
-	.incbin "baserom.gba", 0x2ea91e, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea91e)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA920
@@ -3196,7 +3199,7 @@ gText_Rom_2EA920: @ 0x082EA920
 	.if (. - gText_Rom_2EA920) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA920)
 	.endif
-	.incbin "baserom.gba", 0x2ea924, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea924)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA926
@@ -3209,7 +3212,7 @@ gText_Rom_2EA926: @ 0x082EA926
 	.if (. - gText_Rom_2EA926) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA926)
 	.endif
-	.incbin "baserom.gba", 0x2ea92a, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea92a)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA92C
@@ -3222,7 +3225,7 @@ gText_Rom_2EA92C: @ 0x082EA92C
 	.if (. - gText_Rom_2EA92C) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA92C)
 	.endif
-	.incbin "baserom.gba", 0x2ea930, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea930)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA932
@@ -3235,7 +3238,7 @@ gText_Rom_2EA932: @ 0x082EA932
 	.if (. - gText_Rom_2EA932) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA932)
 	.endif
-	.incbin "baserom.gba", 0x2ea936, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea936)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA938
@@ -3248,7 +3251,7 @@ gText_Rom_2EA938: @ 0x082EA938
 	.if (. - gText_Rom_2EA938) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA938)
 	.endif
-	.incbin "baserom.gba", 0x2ea93c, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea93c)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA93E
@@ -3261,7 +3264,7 @@ gText_Rom_2EA93E: @ 0x082EA93E
 	.if (. - gText_Rom_2EA93E) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA93E)
 	.endif
-	.incbin "baserom.gba", 0x2ea942, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea942)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA944
@@ -3274,7 +3277,7 @@ gText_Rom_2EA944: @ 0x082EA944
 	.if (. - gText_Rom_2EA944) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA944)
 	.endif
-	.incbin "baserom.gba", 0x2ea948, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea948)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA94A
@@ -3287,7 +3290,7 @@ gText_Rom_2EA94A: @ 0x082EA94A
 	.if (. - gText_Rom_2EA94A) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA94A)
 	.endif
-	.incbin "baserom.gba", 0x2ea94e, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea94e)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA950
@@ -3300,7 +3303,7 @@ gText_Rom_2EA950: @ 0x082EA950
 	.if (. - gText_Rom_2EA950) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA950)
 	.endif
-	.incbin "baserom.gba", 0x2ea954, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea954)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA956
@@ -3313,7 +3316,7 @@ gText_Rom_2EA956: @ 0x082EA956
 	.if (. - gText_Rom_2EA956) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA956)
 	.endif
-	.incbin "baserom.gba", 0x2ea95a, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea95a)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA95C
@@ -3326,7 +3329,7 @@ gText_Rom_2EA95C: @ 0x082EA95C
 	.if (. - gText_Rom_2EA95C) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA95C)
 	.endif
-	.incbin "baserom.gba", 0x2ea960, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea960)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA962
@@ -3339,7 +3342,7 @@ gText_Rom_2EA962: @ 0x082EA962
 	.if (. - gText_Rom_2EA962) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA962)
 	.endif
-	.incbin "baserom.gba", 0x2ea966, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea966)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA968
@@ -3352,7 +3355,7 @@ gText_Rom_2EA968: @ 0x082EA968
 	.if (. - gText_Rom_2EA968) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA968)
 	.endif
-	.incbin "baserom.gba", 0x2ea96c, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea96c)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA96E
@@ -3365,7 +3368,7 @@ gText_Rom_2EA96E: @ 0x082EA96E
 	.if (. - gText_Rom_2EA96E) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA96E)
 	.endif
-	.incbin "baserom.gba", 0x2ea972, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea972)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA974
@@ -3378,7 +3381,7 @@ gText_Rom_2EA974: @ 0x082EA974
 	.if (. - gText_Rom_2EA974) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA974)
 	.endif
-	.incbin "baserom.gba", 0x2ea978, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea978)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA97A
@@ -3391,7 +3394,7 @@ gText_Rom_2EA97A: @ 0x082EA97A
 	.if (. - gText_Rom_2EA97A) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA97A)
 	.endif
-	.incbin "baserom.gba", 0x2ea97e, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea97e)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA980
@@ -3404,7 +3407,7 @@ gText_Rom_2EA980: @ 0x082EA980
 	.if (. - gText_Rom_2EA980) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA980)
 	.endif
-	.incbin "baserom.gba", 0x2ea984, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea984)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA986
@@ -3417,7 +3420,7 @@ gText_Rom_2EA986: @ 0x082EA986
 	.if (. - gText_Rom_2EA986) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA986)
 	.endif
-	.incbin "baserom.gba", 0x2ea98a, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea98a)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA98C
@@ -3430,7 +3433,7 @@ gText_Rom_2EA98C: @ 0x082EA98C
 	.if (. - gText_Rom_2EA98C) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA98C)
 	.endif
-	.incbin "baserom.gba", 0x2ea990, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea990)
 
 	@ src/field_specials.c:2542 field_specials_line_2542
 	.globl gText_Rom_2EA992
@@ -3443,7 +3446,7 @@ gText_Rom_2EA992: @ 0x082EA992
 	.if (. - gText_Rom_2EA992) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA992)
 	.endif
-	.incbin "baserom.gba", 0x2ea996, 0x4
+	.space 0x4, 0 @ name padding (was 0x2ea996)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:26 gen_3_families_line_26
 	.globl gText_Rom_2EA99A
@@ -3456,7 +3459,7 @@ gText_Rom_2EA99A: @ 0x082EA99A
 	.if (. - gText_Rom_2EA99A) < 0x4
 	.space 0x4 - (. - gText_Rom_2EA99A)
 	.endif
-	.incbin "baserom.gba", 0x2ea99e, 0x2
+	.space 0x2, 0 @ name padding (was 0x2ea99e)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:97 gen_3_families_line_97
 	.globl gText_Rom_2EA9A0
@@ -3493,7 +3496,7 @@ gText_Rom_2EA9AC: @ 0x082EA9AC
 	.if (. - gText_Rom_2EA9AC) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA9AC)
 	.endif
-	.incbin "baserom.gba", 0x2ea9b1, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea9b1)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:403 gen_3_families_line_403
 	.globl gText_Rom_2EA9B2
@@ -3566,7 +3569,7 @@ gText_Rom_2EA9D0: @ 0x082EA9D0
 	.if (. - gText_Rom_2EA9D0) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA9D0)
 	.endif
-	.incbin "baserom.gba", 0x2ea9d5, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea9d5)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:1031 gen_3_families_line_1031
 	.globl gText_Rom_2EA9D6
@@ -3579,7 +3582,7 @@ gText_Rom_2EA9D6: @ 0x082EA9D6
 	.if (. - gText_Rom_2EA9D6) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA9D6)
 	.endif
-	.incbin "baserom.gba", 0x2ea9db, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea9db)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:1114 gen_3_families_line_1114 (+3 aliases)
 	.globl gText_Rom_2EA9DC
@@ -3616,7 +3619,7 @@ gText_Rom_2EA9E8: @ 0x082EA9E8
 	.if (. - gText_Rom_2EA9E8) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA9E8)
 	.endif
-	.incbin "baserom.gba", 0x2ea9ed, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea9ed)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:1541 gen_3_families_line_1541
 	.globl gText_Rom_2EA9EE
@@ -3653,7 +3656,7 @@ gText_Rom_2EA9FA: @ 0x082EA9FA
 	.if (. - gText_Rom_2EA9FA) < 0x5
 	.space 0x5 - (. - gText_Rom_2EA9FA)
 	.endif
-	.incbin "baserom.gba", 0x2ea9ff, 0x1
+	.space 0x1, 0 @ name padding (was 0x2ea9ff)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:1795 gen_3_families_line_1795 (+1 aliases)
 	.globl gText_Rom_2EAA00
@@ -3678,7 +3681,7 @@ gText_Rom_2EAA06: @ 0x082EAA06
 	.if (. - gText_Rom_2EAA06) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAA06)
 	.endif
-	.incbin "baserom.gba", 0x2eaa0b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaa0b)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:1962 gen_3_families_line_1962
 	.globl gText_Rom_2EAA0C
@@ -3715,7 +3718,7 @@ gText_Rom_2EAA18: @ 0x082EAA18
 	.if (. - gText_Rom_2EAA18) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAA18)
 	.endif
-	.incbin "baserom.gba", 0x2eaa1d, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaa1d)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:2202 gen_3_families_line_2202
 	.globl gText_Rom_2EAA1E
@@ -3728,7 +3731,7 @@ gText_Rom_2EAA1E: @ 0x082EAA1E
 	.if (. - gText_Rom_2EAA1E) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAA1E)
 	.endif
-	.incbin "baserom.gba", 0x2eaa23, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaa23)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:2300 gen_3_families_line_2300
 	.globl gText_Rom_2EAA24
@@ -3753,7 +3756,7 @@ gText_Rom_2EAA2A: @ 0x082EAA2A
 	.if (. - gText_Rom_2EAA2A) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAA2A)
 	.endif
-	.incbin "baserom.gba", 0x2eaa2f, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaa2f)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:3766 gen_3_families_line_3766
 	.globl gText_Rom_2EAA30
@@ -3778,7 +3781,7 @@ gText_Rom_2EAA36: @ 0x082EAA36
 	.if (. - gText_Rom_2EAA36) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAA36)
 	.endif
-	.incbin "baserom.gba", 0x2eaa3b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaa3b)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:2382 gen_3_families_line_2382 (+1 aliases)
 	.globl gText_Rom_2EAA3C
@@ -3791,7 +3794,7 @@ gText_Rom_2EAA3C: @ 0x082EAA3C
 	.if (. - gText_Rom_2EAA3C) < 0x4
 	.space 0x4 - (. - gText_Rom_2EAA3C)
 	.endif
-	.incbin "baserom.gba", 0x2eaa40, 0x2
+	.space 0x2, 0 @ name padding (was 0x2eaa40)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:2464 gen_3_families_line_2464
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -3816,7 +3819,7 @@ gText_Rom_2EAA48: @ 0x082EAA48
 	.if (. - gText_Rom_2EAA48) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAA48)
 	.endif
-	.incbin "baserom.gba", 0x2eaa4d, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaa4d)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:3395 gen_3_families_line_3395
 	.globl gText_Rom_2EAA4E
@@ -3853,7 +3856,7 @@ gText_Rom_2EAA5A: @ 0x082EAA5A
 	.if (. - gText_Rom_2EAA5A) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAA5A)
 	.endif
-	.incbin "baserom.gba", 0x2eaa5f, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaa5f)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:2619 gen_3_families_line_2619
 	.globl gText_Rom_2EAA60
@@ -3878,7 +3881,7 @@ gText_Rom_2EAA66: @ 0x082EAA66
 	.if (. - gText_Rom_2EAA66) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAA66)
 	.endif
-	.incbin "baserom.gba", 0x2eaa6b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaa6b)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:3229 gen_3_families_line_3229
 	.globl gText_Rom_2EAA6C
@@ -3903,7 +3906,7 @@ gText_Rom_2EAA72: @ 0x082EAA72
 	.if (. - gText_Rom_2EAA72) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAA72)
 	.endif
-	.incbin "baserom.gba", 0x2eaa77, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaa77)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:6710 gen_3_families_line_6710
 	.globl gText_Rom_2EAA78
@@ -3928,7 +3931,7 @@ gText_Rom_2EAA7E: @ 0x082EAA7E
 	.if (. - gText_Rom_2EAA7E) < 0x4
 	.space 0x4 - (. - gText_Rom_2EAA7E)
 	.endif
-	.incbin "baserom.gba", 0x2eaa82, 0x2
+	.space 0x2, 0 @ name padding (was 0x2eaa82)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:4528 gen_3_families_line_4528
 	.globl gText_Rom_2EAA84
@@ -3965,7 +3968,7 @@ gText_Rom_2EAA90: @ 0x082EAA90
 	.if (. - gText_Rom_2EAA90) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAA90)
 	.endif
-	.incbin "baserom.gba", 0x2eaa95, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaa95)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:8659 gen_3_families_line_8659
 	.globl gText_Rom_2EAA96
@@ -3990,7 +3993,7 @@ gText_Rom_2EAA9C: @ 0x082EAA9C
 	.if (. - gText_Rom_2EAA9C) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAA9C)
 	.endif
-	.incbin "baserom.gba", 0x2eaaa1, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaaa1)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:7041 gen_3_families_line_7041
 	.globl gText_Rom_2EAAA2
@@ -4003,7 +4006,7 @@ gText_Rom_2EAAA2: @ 0x082EAAA2
 	.if (. - gText_Rom_2EAAA2) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAAA2)
 	.endif
-	.incbin "baserom.gba", 0x2eaaa7, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaaa7)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:4603 gen_3_families_line_4603 (+1 aliases)
 	.globl gText_Rom_2EAAA8
@@ -4016,7 +4019,7 @@ gText_Rom_2EAAA8: @ 0x082EAAA8
 	.if (. - gText_Rom_2EAAA8) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAAA8)
 	.endif
-	.incbin "baserom.gba", 0x2eaaad, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaaad)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:8277 gen_3_families_line_8277
 	.globl gText_Rom_2EAAAE
@@ -4041,7 +4044,7 @@ gText_Rom_2EAAB4: @ 0x082EAAB4
 	.if (. - gText_Rom_2EAAB4) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAAB4)
 	.endif
-	.incbin "baserom.gba", 0x2eaab9, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaab9)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:11534 gen_3_families_line_11534
 	.globl gText_Rom_2EAABA
@@ -4054,7 +4057,7 @@ gText_Rom_2EAABA: @ 0x082EAABA
 	.if (. - gText_Rom_2EAABA) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAABA)
 	.endif
-	.incbin "baserom.gba", 0x2eaabf, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaabf)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:8440 gen_3_families_line_8440
 	.globl gText_Rom_2EAAC0
@@ -4067,7 +4070,7 @@ gText_Rom_2EAAC0: @ 0x082EAAC0
 	.if (. - gText_Rom_2EAAC0) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAAC0)
 	.endif
-	.incbin "baserom.gba", 0x2eaac5, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaac5)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:8513 gen_3_families_line_8513
 	.globl gText_Rom_2EAAC6
@@ -4092,7 +4095,7 @@ gText_Rom_2EAACC: @ 0x082EAACC
 	.if (. - gText_Rom_2EAACC) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAACC)
 	.endif
-	.incbin "baserom.gba", 0x2eaad1, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaad1)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:9131 gen_3_families_line_9131
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -4117,7 +4120,7 @@ gText_Rom_2EAAD8: @ 0x082EAAD8
 	.if (. - gText_Rom_2EAAD8) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAAD8)
 	.endif
-	.incbin "baserom.gba", 0x2eaadd, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaadd)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:6484 gen_3_families_line_6484 (+1 aliases)
 	.globl gText_Rom_2EAADE
@@ -4202,7 +4205,7 @@ gText_Rom_2EAB02: @ 0x082EAB02
 	.if (. - gText_Rom_2EAB02) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAB02)
 	.endif
-	.incbin "baserom.gba", 0x2eab07, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eab07)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:5522 gen_3_families_line_5522 (+1 aliases)
 	.globl gText_Rom_2EAB08
@@ -4227,7 +4230,7 @@ gText_Rom_2EAB0E: @ 0x082EAB0E
 	.if (. - gText_Rom_2EAB0E) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAB0E)
 	.endif
-	.incbin "baserom.gba", 0x2eab13, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eab13)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:6873 gen_3_families_line_6873 (+1 aliases)
 	.globl gText_Rom_2EAB14
@@ -4240,7 +4243,7 @@ gText_Rom_2EAB14: @ 0x082EAB14
 	.if (. - gText_Rom_2EAB14) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAB14)
 	.endif
-	.incbin "baserom.gba", 0x2eab19, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eab19)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:10997 gen_3_families_line_10997
 	.globl gText_Rom_2EAB1A
@@ -4289,7 +4292,7 @@ gText_Rom_2EAB2C: @ 0x082EAB2C
 	.if (. - gText_Rom_2EAB2C) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAB2C)
 	.endif
-	.incbin "baserom.gba", 0x2eab31, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eab31)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:7655 gen_3_families_line_7655
 	.globl gText_Rom_2EAB32
@@ -4302,7 +4305,7 @@ gText_Rom_2EAB32: @ 0x082EAB32
 	.if (. - gText_Rom_2EAB32) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAB32)
 	.endif
-	.incbin "baserom.gba", 0x2eab37, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eab37)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:10633 gen_3_families_line_10633
 	.globl gText_Rom_2EAB38
@@ -4363,7 +4366,7 @@ gText_Rom_2EAB50: @ 0x082EAB50
 	.if (. - gText_Rom_2EAB50) < 0x4
 	.space 0x4 - (. - gText_Rom_2EAB50)
 	.endif
-	.incbin "baserom.gba", 0x2eab54, 0x2
+	.space 0x2, 0 @ name padding (was 0x2eab54)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:7113 gen_3_families_line_7113
 	.globl gText_Rom_2EAB56
@@ -4376,7 +4379,7 @@ gText_Rom_2EAB56: @ 0x082EAB56
 	.if (. - gText_Rom_2EAB56) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAB56)
 	.endif
-	.incbin "baserom.gba", 0x2eab5b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eab5b)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:7190 gen_3_families_line_7190
 	.globl gText_Rom_2EAB5C
@@ -4401,7 +4404,7 @@ gText_Rom_2EAB62: @ 0x082EAB62
 	.if (. - gText_Rom_2EAB62) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAB62)
 	.endif
-	.incbin "baserom.gba", 0x2eab67, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eab67)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:5750 gen_3_families_line_5750
 	.globl gText_Rom_2EAB68
@@ -4414,7 +4417,7 @@ gText_Rom_2EAB68: @ 0x082EAB68
 	.if (. - gText_Rom_2EAB68) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAB68)
 	.endif
-	.incbin "baserom.gba", 0x2eab6d, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eab6d)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:4759 gen_3_families_line_4759 (+1 aliases)
 	.globl gText_Rom_2EAB6E
@@ -4427,7 +4430,7 @@ gText_Rom_2EAB6E: @ 0x082EAB6E
 	.if (. - gText_Rom_2EAB6E) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAB6E)
 	.endif
-	.incbin "baserom.gba", 0x2eab73, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eab73)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:5207 gen_3_families_line_5207
 	.globl gText_Rom_2EAB74
@@ -4440,7 +4443,7 @@ gText_Rom_2EAB74: @ 0x082EAB74
 	.if (. - gText_Rom_2EAB74) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAB74)
 	.endif
-	.incbin "baserom.gba", 0x2eab79, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eab79)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:5289 gen_3_families_line_5289 (+1 aliases)
 	.globl gText_Rom_2EAB7A
@@ -4465,7 +4468,7 @@ gText_Rom_2EAB80: @ 0x082EAB80
 	.if (. - gText_Rom_2EAB80) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAB80)
 	.endif
-	.incbin "baserom.gba", 0x2eab85, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eab85)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:7811 gen_3_families_line_7811 (+1 aliases)
 	.globl gText_Rom_2EAB86
@@ -4490,7 +4493,7 @@ gText_Rom_2EAB8C: @ 0x082EAB8C
 	.if (. - gText_Rom_2EAB8C) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAB8C)
 	.endif
-	.incbin "baserom.gba", 0x2eab91, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eab91)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:9859 gen_3_families_line_9859
 	.globl gText_Rom_2EAB92
@@ -4503,7 +4506,7 @@ gText_Rom_2EAB92: @ 0x082EAB92
 	.if (. - gText_Rom_2EAB92) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAB92)
 	.endif
-	.incbin "baserom.gba", 0x2eab97, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eab97)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:9937 gen_3_families_line_9937
 	.globl gText_Rom_2EAB98
@@ -4528,7 +4531,7 @@ gText_Rom_2EAB9E: @ 0x082EAB9E
 	.if (. - gText_Rom_2EAB9E) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAB9E)
 	.endif
-	.incbin "baserom.gba", 0x2eaba3, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaba3)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:3466 gen_3_families_line_3466 (+1 aliases)
 	.globl gText_Rom_2EABA4
@@ -4541,7 +4544,7 @@ gText_Rom_2EABA4: @ 0x082EABA4
 	.if (. - gText_Rom_2EABA4) < 0x5
 	.space 0x5 - (. - gText_Rom_2EABA4)
 	.endif
-	.incbin "baserom.gba", 0x2eaba9, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eaba9)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:3538 gen_3_families_line_3538
 	.globl gText_Rom_2EABAA
@@ -4578,7 +4581,7 @@ gText_Rom_2EABB6: @ 0x082EABB6
 	.if (. - gText_Rom_2EABB6) < 0x5
 	.space 0x5 - (. - gText_Rom_2EABB6)
 	.endif
-	.incbin "baserom.gba", 0x2eabbb, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eabbb)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:6324 gen_3_families_line_6324
 	.globl gText_Rom_2EABBC
@@ -4627,7 +4630,7 @@ gText_Rom_2EABCE: @ 0x082EABCE
 	.if (. - gText_Rom_2EABCE) < 0x5
 	.space 0x5 - (. - gText_Rom_2EABCE)
 	.endif
-	.incbin "baserom.gba", 0x2eabd3, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eabd3)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:4075 gen_3_families_line_4075
 	.globl gText_Rom_2EABD4
@@ -4652,7 +4655,7 @@ gText_Rom_2EABDA: @ 0x082EABDA
 	.if (. - gText_Rom_2EABDA) < 0x5
 	.space 0x5 - (. - gText_Rom_2EABDA)
 	.endif
-	.incbin "baserom.gba", 0x2eabdf, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eabdf)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:11305 gen_3_families_line_11305
 	.globl gText_Rom_2EABE0
@@ -4689,7 +4692,7 @@ gText_Rom_2EABEC: @ 0x082EABEC
 	.if (. - gText_Rom_2EABEC) < 0x5
 	.space 0x5 - (. - gText_Rom_2EABEC)
 	.endif
-	.incbin "baserom.gba", 0x2eabf1, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eabf1)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:9621 gen_3_families_line_9621
 	.globl gText_Rom_2EABF2
@@ -4762,7 +4765,7 @@ gText_Rom_2EAC10: @ 0x082EAC10
 	.endif
 	.globl gText_Rom_2EAC11
 	.set gText_Rom_2EAC11, gText_Rom_2EAC10 + 0x1
-	.incbin "baserom.gba", 0x2eac15, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eac15)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:4984 gen_3_families_line_4984
 	.globl gText_Rom_2EAC16
@@ -4775,7 +4778,7 @@ gText_Rom_2EAC16: @ 0x082EAC16
 	.if (. - gText_Rom_2EAC16) < 0x4
 	.space 0x4 - (. - gText_Rom_2EAC16)
 	.endif
-	.incbin "baserom.gba", 0x2eac1a, 0x2
+	.space 0x2, 0 @ name padding (was 0x2eac1a)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:5061 gen_3_families_line_5061 (+1 aliases)
 	.globl gText_Rom_2EAC1C
@@ -4800,7 +4803,7 @@ gText_Rom_2EAC22: @ 0x082EAC22
 	.if (. - gText_Rom_2EAC22) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAC22)
 	.endif
-	.incbin "baserom.gba", 0x2eac27, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eac27)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:5829 gen_3_families_line_5829
 	.globl gText_Rom_2EAC28
@@ -4837,7 +4840,7 @@ gText_Rom_2EAC34: @ 0x082EAC34
 	.if (. - gText_Rom_2EAC34) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAC34)
 	.endif
-	.incbin "baserom.gba", 0x2eac39, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eac39)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:8818 gen_3_families_line_8818
 	.globl gText_Rom_2EAC3A
@@ -4862,7 +4865,7 @@ gText_Rom_2EAC40: @ 0x082EAC40
 	.if (. - gText_Rom_2EAC40) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAC40)
 	.endif
-	.incbin "baserom.gba", 0x2eac45, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eac45)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:8976 gen_3_families_line_8976
 	.globl gText_Rom_2EAC46
@@ -4887,7 +4890,7 @@ gText_Rom_2EAC4C: @ 0x082EAC4C
 	.if (. - gText_Rom_2EAC4C) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAC4C)
 	.endif
-	.incbin "baserom.gba", 0x2eac51, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eac51)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:2772 gen_3_families_line_2772
 	.globl gText_Rom_2EAC52
@@ -4900,7 +4903,7 @@ gText_Rom_2EAC52: @ 0x082EAC52
 	.if (. - gText_Rom_2EAC52) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAC52)
 	.endif
-	.incbin "baserom.gba", 0x2eac57, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eac57)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:2850 gen_3_families_line_2850 (+1 aliases)
 	.globl gText_Rom_2EAC58
@@ -4925,7 +4928,7 @@ gText_Rom_2EAC5E: @ 0x082EAC5E
 	.if (. - gText_Rom_2EAC5E) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAC5E)
 	.endif
-	.incbin "baserom.gba", 0x2eac63, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eac63)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:11679 gen_3_families_line_11679
 	.globl gText_Rom_2EAC64
@@ -4938,7 +4941,7 @@ gText_Rom_2EAC64: @ 0x082EAC64
 	.if (. - gText_Rom_2EAC64) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAC64)
 	.endif
-	.incbin "baserom.gba", 0x2eac69, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eac69)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:11756 gen_3_families_line_11756 (+1 aliases)
 	.globl gText_Rom_2EAC6A
@@ -4963,7 +4966,7 @@ gText_Rom_2EAC70: @ 0x082EAC70
 	.if (. - gText_Rom_2EAC70) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAC70)
 	.endif
-	.incbin "baserom.gba", 0x2eac75, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eac75)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:11980 gen_3_families_line_11980
 	.globl gText_Rom_2EAC76
@@ -4976,7 +4979,7 @@ gText_Rom_2EAC76: @ 0x082EAC76
 	.if (. - gText_Rom_2EAC76) < 0x5
 	.space 0x5 - (. - gText_Rom_2EAC76)
 	.endif
-	.incbin "baserom.gba", 0x2eac7b, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eac7b)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:12057 gen_3_families_line_12057 (+1 aliases)
 	.globl gText_Rom_2EAC7C
@@ -5097,7 +5100,7 @@ gText_Rom_2EACB2: @ 0x082EACB2
 	.if (. - gText_Rom_2EACB2) < 0x5
 	.space 0x5 - (. - gText_Rom_2EACB2)
 	.endif
-	.incbin "baserom.gba", 0x2eacb7, 0x1
+	.space 0x1, 0 @ name padding (was 0x2eacb7)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:13330 gen_3_families_line_13330 (+3 aliases)
 	.globl gText_Rom_2EACB8
@@ -5124,4 +5127,3 @@ gText_Rom_2EACBE: @ 0x082EACBE
 	.endif
 
 	.balign 4, 0
-	
