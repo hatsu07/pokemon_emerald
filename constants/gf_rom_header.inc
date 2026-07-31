@@ -1,0 +1,60 @@
+@ ---------------------------------------------------------------------------
+@ GF ROM header save/link metadata constants
+@ ---------------------------------------------------------------------------
+
+.ifndef GUARD_CONSTANTS_GF_ROM_HEADER_INC
+.set GUARD_CONSTANTS_GF_ROM_HEADER_INC, 1
+
+.set GF_ROM_HEADER_GAME_FLAGS_SIZE,             0x0C
+.set GF_ROM_HEADER_BAG_CAPACITIES_SIZE,         0x08
+.set GF_ROM_HEADER_REMAINING_SAVE_LAYOUT_SIZE,  0x18
+.set GF_ROM_HEADER_BAG_RESERVED_SIZE,           2
+
+.ifndef SAVE_BLOCK2_GCN_LINK_FLAGS_OFFSET
+.set SAVE_BLOCK2_GCN_LINK_FLAGS_OFFSET, 0x00A8
+.endif
+
+.ifndef FLAG_SYS_GAME_CLEAR
+.set FLAG_SYS_GAME_CLEAR, 0x0864
+.endif
+
+.ifndef FLAG_SYS_RIBBON_GET
+.set FLAG_SYS_RIBBON_GET, 0x089B
+.endif
+
+.ifndef BAG_ITEMS_COUNT
+.set BAG_ITEMS_COUNT, 30
+.endif
+.ifndef BAG_KEYITEMS_COUNT
+.set BAG_KEYITEMS_COUNT, 30
+.endif
+.ifndef BAG_POKEBALLS_COUNT
+.set BAG_POKEBALLS_COUNT, 16
+.endif
+.ifndef BAG_TMHM_COUNT
+.set BAG_TMHM_COUNT, 64
+.endif
+.ifndef BAG_BERRIES_COUNT
+.set BAG_BERRIES_COUNT, 46
+.endif
+.ifndef PC_ITEMS_COUNT
+.set PC_ITEMS_COUNT, 50
+.endif
+
+.ifndef SAVE_BLOCK1_PC_ITEMS_OFFSET
+.set SAVE_BLOCK1_PC_ITEMS_OFFSET, 0x0498
+.endif
+.ifndef SAVE_BLOCK1_GIFT_RIBBONS_OFFSET
+.set SAVE_BLOCK1_GIFT_RIBBONS_OFFSET, 0x31A8
+.endif
+.ifndef SAVE_BLOCK1_ENIGMA_BERRY_OFFSET
+.set SAVE_BLOCK1_ENIGMA_BERRY_OFFSET, 0x31F8
+.endif
+.ifndef ENIGMA_BERRY_SIZE
+.set ENIGMA_BERRY_SIZE, 0x0034
+.endif
+
+.set GF_ROM_HEADER_MOVE_DESCRIPTIONS_NONE, 0
+.set GF_ROM_HEADER_UNKNOWN_SENTINEL, -1
+
+.endif @ GUARD_CONSTANTS_GF_ROM_HEADER_INC
