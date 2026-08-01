@@ -349,8 +349,8 @@ _0800923A:
 _08009240: .4byte 0x02022684
 _08009244: .4byte 0x03005AF0
 _08009248: .4byte 0x0202267E
-_0800924C: .4byte 0x0829BDA5
-_08009250: .4byte 0x0829BDA4
+_0800924C: .4byte gGameLanguage
+_08009250: .4byte gGameVersion
 _08009254: .4byte 0x0000087F
 	thumb_func_end InitLocalLinkPlayer
 

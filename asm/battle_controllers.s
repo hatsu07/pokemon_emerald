@@ -2017,8 +2017,9 @@ _080334D8:
 	.align 2, 0
 	thumb_func_end Task_HandleSendLinkBuffersData
 
-	thumb_func_start sub_080334E0
-sub_080334E0: @ 0x080334E0
+	thumb_func_start TryReceiveLinkBattleData
+	.globl TryReceiveLinkBattleData
+TryReceiveLinkBattleData: @ 0x080334E0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -2152,7 +2153,7 @@ _080335E4: .4byte 0x02022080
 _080335E8: .4byte 0x03005B60
 _080335EC: .4byte 0x020229BD
 _080335F0: .4byte 0x02024148
-	thumb_func_end sub_080334E0
+	thumb_func_end TryReceiveLinkBattleData
 
 	thumb_func_start Task_HandleCopyReceivedLinkBuffersData
 Task_HandleCopyReceivedLinkBuffersData: @ 0x080335F4

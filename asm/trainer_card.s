@@ -5387,7 +5387,7 @@ GetSetCardType: @ 0x080C4858
 	b _080C48C6
 	.align 2, 0
 _080C4874: .4byte 0x02039988
-_080C4878: .4byte 0x0829BDA4
+_080C4878: .4byte gGameVersion
 _080C487C:
 	cmp r1, #3
 	beq _080C48C4

@@ -221,7 +221,7 @@ _08184E08:
 	.align 2, 0
 _08184E10: .4byte 0x0203C94C
 _08184E14: .4byte 0x03005AF0
-_08184E18: .4byte 0x0829BDA5
+_08184E18: .4byte gGameLanguage
 	thumb_func_end sub_08184D04
 
 	thumb_func_start RecordedBattle_SetBattlerAction

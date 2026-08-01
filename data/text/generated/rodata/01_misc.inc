@@ -2,15 +2,36 @@
 @ Edit .string values in-place; each slot may not grow.
 @ Slots with an exact-length guard contain an internal label or terminator.
 
-	.globl gUnknown_829BDA4
-gUnknown_829BDA4: @ 0x0829BDA4
-	.incbin "baserom.gba", 0x29bda4, 0x1
-	.globl gUnknown_829BDA5
-gUnknown_829BDA5: @ 0x0829BDA5
-	.incbin "baserom.gba", 0x29bda5, 0x17
-	.globl gUnknown_829BDBC
-gUnknown_829BDBC: @ 0x0829BDBC
-	.incbin "baserom.gba", 0x29bdbc, 0x38
+	.set VERSION_EMERALD, 3
+	.set LANGUAGE_JAPANESE, 1
+
+	.globl gGameVersion
+gGameVersion: @ 0x0829BDA4
+	.byte VERSION_EMERALD
+
+	.globl gGameLanguage
+gGameLanguage: @ 0x0829BDA5
+	.byte LANGUAGE_JAPANESE
+
+	.balign 4, 0
+
+	.globl BuildDateTime
+BuildDateTime: @ 0x0829BDA8
+	.asciz "2004 06 30 18:43"
+
+	.balign 4, 0
+	
+	.globl gIntrTableTemplate
+gIntrTableTemplate: @ 0x0829BDBC
+	.4byte VCountIntr
+	.4byte SerialIntr
+	.4byte Timer3Intr
+	.4byte HBlankIntr
+	.4byte VBlankIntr
+	.rept 9
+		.4byte IntrDummy
+	.endr
+
 	.globl gUnknown_829BDF4
 gUnknown_829BDF4: @ 0x0829BDF4
 	.incbin "baserom.gba", 0x29bdf4, 0x14
