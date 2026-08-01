@@ -34,6 +34,10 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="距離1のLZ77後方参照を許可します。",
     )
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+    )
     return parser.parse_args()
 
 
@@ -87,12 +91,13 @@ def main() -> int:
         print(f"エラー: {exc}", file=sys.stderr)
         return 1
 
-    print(f"入力PNG:       {args.input_png}")
-    print(f"未圧縮サイズ:  0x{len(raw):X}")
-    print(f"LZ77本体:      0x{len(compressed_body):X}")
-    print(f"出力サイズ:    0x{len(output):X}")
-    print(f"4バイト整列:   {'なし' if args.no_pad else 'あり'}")
-    print(f"圧縮出力:      {args.output_file}")
+    if args.debug:
+        print(f"入力PNG:       {args.input_png}")
+        print(f"未圧縮サイズ:  0x{len(raw):X}")
+        print(f"LZ77本体:      0x{len(compressed_body):X}")
+        print(f"出力サイズ:    0x{len(output):X}")
+        print(f"4バイト整列:   {'なし' if args.no_pad else 'あり'}")
+        print(f"圧縮出力:      {args.output_file}")
     return 0
 
 

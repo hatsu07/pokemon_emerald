@@ -86,6 +86,7 @@ def main() -> int:
         action="store_true",
         help="GBA LZ77形式で圧縮します",
     )
+    parser.add_argument("--debug", action="store_true")
 
     args = parser.parse_args()
 
@@ -104,11 +105,12 @@ def main() -> int:
         print(f"エラー: {exc}", file=sys.stderr)
         return 1
 
-    print(f"入力PNG:      {args.input_png}")
-    print(f"色数:         16")
-    print(f"未圧縮サイズ: 0x{len(raw):X}")
-    print(f"出力:         {args.output_file}")
-    print(f"出力サイズ:   0x{len(output):X}")
+    if args.debug:
+        print(f"入力PNG:      {args.input_png}")
+        print(f"色数:         16")
+        print(f"未圧縮サイズ: 0x{len(raw):X}")
+        print(f"出力:         {args.output_file}")
+        print(f"出力サイズ:   0x{len(output):X}")
 
     return 0
 
