@@ -4544,7 +4544,7 @@ InitOverworldGraphicsRegisters: @ 0x080861DC
 _080862D4: .4byte 0x00001F1F
 _080862D8: .4byte 0x00000101
 _080862DC: .4byte 0x0000FFFF
-_080862E0: .4byte 0x082BF42C
+_080862E0: .4byte gUnknown_82BF42C
 _080862E4: .4byte 0x0000070D
 _080862E8: .4byte 0x00007060
 	thumb_func_end InitOverworldGraphicsRegisters

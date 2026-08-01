@@ -336,8 +336,8 @@ _08008A06:
 	bls _08008A42
 	b _08008A4A
 	.align 2, 0
-_08008A28: .4byte 0x082BF44C
-_08008A2C: .4byte 0x082BF43C
+_08008A28: .4byte gUnknown_82BF44C
+_08008A2C: .4byte gUnknown_82BF43C
 _08008A30:
 	cmp r2, #0
 	bne _08008A38
@@ -427,8 +427,8 @@ _08008AA6:
 	bls _08008AE2
 	b _08008AEA
 	.align 2, 0
-_08008AC8: .4byte 0x082BF44C
-_08008ACC: .4byte 0x082BF43C
+_08008AC8: .4byte gUnknown_82BF44C
+_08008ACC: .4byte gUnknown_82BF43C
 _08008AD0:
 	cmp r2, #0
 	bne _08008AD8
@@ -529,7 +529,7 @@ _08008B54:
 	bls _08008B92
 	b _08008B9A
 	.align 2, 0
-_08008B7C: .4byte 0x082BF43C
+_08008B7C: .4byte gUnknown_82BF43C
 _08008B80:
 	cmp r4, #0
 	bne _08008B88
@@ -711,8 +711,8 @@ _08008CE0:
 	bne _08008CFE
 	b _08008D0A
 	.align 2, 0
-_08008CF0: .4byte 0x082BF474
-_08008CF4: .4byte 0x082BF478
+_08008CF0: .4byte gUnknown_82BF474
+_08008CF4: .4byte gUnknown_82BF478
 _08008CF8:
 	adds r0, r5, #0
 	adds r1, r4, #0
@@ -887,7 +887,7 @@ GetExpandedPlaceholder: @ 0x08008DC4
 	bl _call_via_r0
 	b _08008DDE
 	.align 2, 0
-_08008DD8: .4byte 0x082BF480
+_08008DD8: .4byte gUnknown_82BF480
 _08008DDC:
 	ldr r0, _08008DE4
 _08008DDE:

@@ -2846,7 +2846,7 @@ _081AF646:
 _081AF654: .4byte 0x085DFB60
 _081AF658: .4byte 0x081AF3BD
 _081AF65C: .4byte 0x03005B68
-_081AF660: .4byte 0x082BF314
+_081AF660: .4byte gUnknown_82BF314
 _081AF664: .4byte 0x020205AC
 _081AF668: .4byte 0x0000FFFF
 	thumb_func_end ListMenuAddRedOutlineCursorObject
