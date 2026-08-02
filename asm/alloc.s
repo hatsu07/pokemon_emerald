@@ -99,7 +99,7 @@ _08000A24:
 	bx r1
 	.align 2, 0
 _08000A2C: .4byte gAssertFileName_Malloc
-_08000A30: .4byte gUnknown_829BE08
+_08000A30: .4byte gAssertExpr_AllocInternal_Failed
 	thumb_func_end AllocInternal
 
 	thumb_func_start FreeInternal
@@ -115,7 +115,7 @@ FreeInternal: @ 0x08000A34
 	b _08000AF6
 	.align 2, 0
 _08000A48: .4byte gAssertFileName_Malloc
-_08000A4C: .4byte gUnknown_829BE0C
+_08000A4C: .4byte gAssertExpr_FreeInternal_PointerNotNull
 _08000A50:
 	adds r6, r0, #0
 	adds r4, r1, #0
@@ -209,10 +209,10 @@ _08000AF6:
 	.align 2, 0
 _08000AFC: .4byte 0x0000A3A3
 _08000B00: .4byte gAssertFileName_Malloc
-_08000B04: .4byte gUnknown_829BE18
-_08000B08: .4byte gUnknown_829BE40
-_08000B0C: .4byte gUnknown_829BE54
-_08000B10: .4byte gUnknown_829BE80
+_08000B04: .4byte gAssertExpr_FreeInternal_BlockMagicValid
+_08000B08: .4byte gAssertExpr_FreeInternal_BlockAllocated
+_08000B0C: .4byte gAssertExpr_FreeInternal_NextBlockMagicValid
+_08000B10: .4byte gAssertExpr_FreeInternal_PrevBlockMagicValid
 	thumb_func_end FreeInternal
 
 	thumb_func_start AllocZeroedInternal

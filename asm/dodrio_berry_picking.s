@@ -7753,7 +7753,7 @@ sub_08028134: @ 0x08028134
 	.align 2, 0
 _080281C0: .4byte 0x082CEA6C
 _080281C4: .4byte 0x082CEAB4
-_080281C8: .4byte gUnknown_82BF310
+_080281C8: .4byte gDummySpriteAffineAnimTable
 _080281CC: .4byte 0x080281D5
 _080281D0: .4byte 0x02022950
 	thumb_func_end sub_08028134

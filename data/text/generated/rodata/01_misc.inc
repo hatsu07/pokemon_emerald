@@ -37,52 +37,52 @@ gAssertFileName_Malloc: @ 0x0829BDF4
 	.asciz "../gflib/malloc.c"
 	.balign 4, 0
 
-	.globl gUnknown_829BE08
-gUnknown_829BE08: @ 0x0829BE08
+	.globl gAssertExpr_AllocInternal_Failed
+gAssertExpr_AllocInternal_Failed: @ 0x0829BE08
 	.asciz "0"
 	.space 0x2, 0
 
-	.globl gUnknown_829BE0C
-gUnknown_829BE0C: @ 0x0829BE0C
+	.globl gAssertExpr_FreeInternal_PointerNotNull
+gAssertExpr_FreeInternal_PointerNotNull: @ 0x0829BE0C
 	.asciz "p != NULL"
 	.space 0x2, 0
 
-	.globl gUnknown_829BE18
-gUnknown_829BE18: @ 0x0829BE18
+	.globl gAssertExpr_FreeInternal_BlockMagicValid
+gAssertExpr_FreeInternal_BlockMagicValid: @ 0x0829BE18
 	.asciz "pos->magic_number == MALLOC_SYSTEM_ID"
 	.space 0x2, 0
 
-	.globl gUnknown_829BE40
-gUnknown_829BE40: @ 0x0829BE40
+	.globl gAssertExpr_FreeInternal_BlockAllocated
+gAssertExpr_FreeInternal_BlockAllocated: @ 0x0829BE40
 	.asciz "pos->flag == TRUE"
 	.space 0x2, 0
 
-	.globl gUnknown_829BE54
-gUnknown_829BE54: @ 0x0829BE54
+	.globl gAssertExpr_FreeInternal_NextBlockMagicValid
+gAssertExpr_FreeInternal_NextBlockMagicValid: @ 0x0829BE54
 	.asciz "pos->next->magic_number == MALLOC_SYSTEM_ID"
 
-	.globl gUnknown_829BE80
-gUnknown_829BE80: @ 0x0829BE80
+	.globl gAssertExpr_FreeInternal_PrevBlockMagicValid
+gAssertExpr_FreeInternal_PrevBlockMagicValid: @ 0x0829BE80
 	.asciz "pos->prev->magic_number == MALLOC_SYSTEM_ID"
 
-	.globl gUnknown_829BEAC
-gUnknown_829BEAC: @ 0x0829BEAC
+	.globl sZeroedBgControlStruct
+sZeroedBgControlStruct: @ 0x0829BEAC
 	.space 0x4, 0
 
-	.globl gUnknown_829BEB0
-gUnknown_829BEB0: @ 0x0829BEB0
+	.globl sDummyWindowTemplate
+sDummyWindowTemplate: @ 0x0829BEB0
 	.incbin "baserom.gba", 0x29BEB0, 0x8
 
-	.globl gUnknown_829BEB8
-gUnknown_829BEB8: @ 0x0829BEB8
+	.globl sFontHalfRowOffsets
+sFontHalfRowOffsets: @ 0x0829BEB8
 	.incbin "baserom.gba", 0x29BEB8, 0x100
 
-	.globl gUnknown_829BFB8
-gUnknown_829BFB8: @ 0x0829BFB8
+	.globl sDownArrowTiles
+sDownArrowTiles: @ 0x0829BFB8
 	.incbin "baserom.gba", 0x29BFB8, 0xC0
 
-	.globl gUnknown_829C078
-gUnknown_829C078: @ 0x0829C078
+	.globl sDarkDownArrowTiles
+sDarkDownArrowTiles: @ 0x0829C078
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -452,158 +452,158 @@ gUnknown_829C078: @ 0x0829C078
 	.4byte 0
 	.4byte 0
 
-	.globl gUnknown_829C638
-gUnknown_829C638: @ 0x0829C638
+	.globl sDownArrowYCoords
+sDownArrowYCoords: @ 0x0829C638
 	.incbin "baserom.gba", 0x29C638, 0x4
 
-	.globl gUnknown_829C63C
-gUnknown_829C63C: @ 0x0829C63C
+	.globl sWindowVerticalScrollSpeeds
+sWindowVerticalScrollSpeeds: @ 0x0829C63C
 	.incbin "baserom.gba", 0x29C63C, 0x4
 
-	.globl gUnknown_829C640
-gUnknown_829C640: @ 0x0829C640
+	.globl sGlyphWidthFuncs
+sGlyphWidthFuncs: @ 0x0829C640
 	.incbin "baserom.gba", 0x29C640, 0x30
 
-	.globl gUnknown_829C670
-gUnknown_829C670: @ 0x0829C670
+	.globl sKeypadIcons
+sKeypadIcons: @ 0x0829C670
 	.incbin "baserom.gba", 0x29C670, 0x34
 
-	.globl gUnknown_829C6A4
-gUnknown_829C6A4: @ 0x0829C6A4
+	.globl sKeypadIconTiles
+sKeypadIconTiles: @ 0x0829C6A4
 	.incbin "baserom.gba", 0x29C6A4, 0x800
 
-	.globl gUnknown_829CEA4
-gUnknown_829CEA4: @ 0x0829CEA4
+	.globl sFontInfos
+sFontInfos: @ 0x0829CEA4
 	.incbin "baserom.gba", 0x29CEA4, 0x60
 
-	.globl gUnknown_829CF04
-gUnknown_829CF04: @ 0x0829CF04
+	.globl sMenuCursorDimensions
+sMenuCursorDimensions: @ 0x0829CF04
 	.incbin "baserom.gba", 0x29CF04, 0x10
 
-	.globl gUnknown_829CF14
-gUnknown_829CF14: @ 0x0829CF14
+	.globl gFontSmallJapaneseGlyphs
+gFontSmallJapaneseGlyphs: @ 0x0829CF14
 	.incbin "baserom.gba", 0x29CF14, 0x4000
 
-	.globl gUnknown_82A0F14
-gUnknown_82A0F14: @ 0x082A0F14
+	.globl gFontNormalJapaneseGlyphs
+gFontNormalJapaneseGlyphs: @ 0x082A0F14
 	.incbin "baserom.gba", 0x2A0F14, 0x4000
 
-	.globl gUnknown_82A4F14
-gUnknown_82A4F14: @ 0x082A4F14
+	.globl gFontSmallLatinGlyphs
+gFontSmallLatinGlyphs: @ 0x082A4F14
 	.incbin "baserom.gba", 0x2A4F14, 0x8000
 
-	.globl gUnknown_82ACF14
-gUnknown_82ACF14: @ 0x082ACF14
+	.globl gFontSmallLatinGlyphWidths
+gFontSmallLatinGlyphWidths: @ 0x082ACF14
 	.incbin "baserom.gba", 0x2ACF14, 0x118
 
-	.globl gUnknown_82AD02C
-gUnknown_82AD02C: @ 0x082AD02C
+	.globl gFontNarrowLatinGlyphs
+gFontNarrowLatinGlyphs: @ 0x082AD02C
 	.incbin "baserom.gba", 0x2AD02C, 0x8000
 
-	.globl gUnknown_82B502C
-gUnknown_82B502C: @ 0x082B502C
+	.globl gFontNarrowLatinGlyphWidths
+gFontNarrowLatinGlyphWidths: @ 0x082B502C
 	.incbin "baserom.gba", 0x2B502C, 0x118
 
-	.globl gUnknown_82B5144
-gUnknown_82B5144: @ 0x082B5144
+	.globl gFontSmallNarrowLatinGlyphs
+gFontSmallNarrowLatinGlyphs: @ 0x082B5144
 	.incbin "baserom.gba", 0x2B5144, 0x8000
 
-	.globl gUnknown_82BD144
-gUnknown_82BD144: @ 0x082BD144
+	.globl gFontSmallNarrowLatinGlyphWidths
+gFontSmallNarrowLatinGlyphWidths: @ 0x082BD144
 	.incbin "baserom.gba", 0x2BD144, 0x118
 
-	.globl gUnknown_82BD25C
-gUnknown_82BD25C: @ 0x082BD25C
+	.globl sFontBoldJapaneseGlyphs
+sFontBoldJapaneseGlyphs: @ 0x082BD25C
 	.incbin "baserom.gba", 0x2BD25C, 0x203D
 
-	.globl gUnknown_82BF299
-gUnknown_82BF299: @ 0x082BF299
+	.globl sCenterToCornerVecTable
+sCenterToCornerVecTable: @ 0x082BF299
 	.incbin "baserom.gba", 0x2BF299, 0x1B
 
-	.globl gUnknown_82BF2B4
-gUnknown_82BF2B4: @ 0x082BF2B4
+	.globl sDummySprite
+sDummySprite: @ 0x082BF2B4
 	.incbin "baserom.gba", 0x2BF2B4, 0x44
 
-	.globl gUnknown_82BF2F8
-gUnknown_82BF2F8: @ 0x082BF2F8
+	.globl gDummyOamData
+gDummyOamData: @ 0x082BF2F8
 	.incbin "baserom.gba", 0x2BF2F8, 0xC
 
-	.globl gUnknown_82BF304
-gUnknown_82BF304: @ 0x082BF304
+	.globl gDummySpriteAnimTable
+gDummySpriteAnimTable: @ 0x082BF304
 	.incbin "baserom.gba", 0x2BF304, 0xC
 
-	.globl gUnknown_82BF310
-gUnknown_82BF310: @ 0x082BF310
+	.globl gDummySpriteAffineAnimTable
+gDummySpriteAffineAnimTable: @ 0x082BF310
 	.4byte 0x082BF308
 
-	.globl gUnknown_82BF314
-gUnknown_82BF314: @ 0x082BF314
+	.globl gDummySpriteTemplate
+gDummySpriteTemplate: @ 0x082BF314
 	.4byte 0xFFFF0000
-	.4byte gUnknown_82BF2F8
-	.4byte gUnknown_82BF304
+	.4byte gDummyOamData
+	.4byte gDummySpriteAnimTable
 	.4byte 0
-	.4byte gUnknown_82BF310
+	.4byte gDummySpriteAffineAnimTable
 	.4byte SpriteCallbackDummy
 
-	.globl gUnknown_82BF32C
-gUnknown_82BF32C: @ 0x082BF32C
+	.globl sAnimFuncs
+sAnimFuncs: @ 0x082BF32C
 	.4byte ContinueAnim
 	.4byte BeginAnim
 
-	.globl gUnknown_82BF334
-gUnknown_82BF334: @ 0x082BF334
+	.globl sAffineAnimFuncs
+sAffineAnimFuncs: @ 0x082BF334
 	.4byte ContinueAffineAnim
 	.4byte BeginAffineAnim
 
-	.globl gUnknown_82BF33C
-gUnknown_82BF33C: @ 0x082BF33C
+	.globl sAnimCmdFuncs
+sAnimCmdFuncs: @ 0x082BF33C
 	.4byte AnimCmd_loop
 	.4byte AnimCmd_jump
 	.4byte AnimCmd_end
 	.4byte AnimCmd_frame
 
-	.globl gUnknown_82BF34C
-gUnknown_82BF34C: @ 0x082BF34C
+	.globl sAffineAnimCmdFuncs
+sAffineAnimCmdFuncs: @ 0x082BF34C
 	.4byte AffineAnimCmd_loop
 	.4byte AffineAnimCmd_jump
 	.4byte AffineAnimCmd_end
 	.4byte AffineAnimCmd_frame
 
-	.globl gUnknown_82BF35C
-gUnknown_82BF35C: @ 0x082BF35C
+	.globl sOamDimensions32
+sOamDimensions32: @ 0x082BF35C
 	.incbin "baserom.gba", 0x2BF35C, 0x60
 
-	.globl gUnknown_82BF3BC
-gUnknown_82BF3BC: @ 0x082BF3BC
+	.globl sOamDimensions
+sOamDimensions: @ 0x082BF3BC
 	.incbin "baserom.gba", 0x2BF3BC, 0x70
 
-	.globl gUnknown_82BF42C
-gUnknown_82BF42C: @ 0x082BF42C
+	.globl sBlendTarget2BgMasks
+sBlendTarget2BgMasks: @ 0x082BF42C
 	.4byte gUnknown_2000100
 	.4byte 0x08000400
 
-	.globl gUnknown_82BF434
-gUnknown_82BF434: @ 0x082BF434
+	.globl sBlendTarget2ObjBackdropMasks
+sBlendTarget2ObjBackdropMasks: @ 0x082BF434
 	.incbin "baserom.gba", 0x2BF434, 0x8
 
-	.globl gUnknown_82BF43C
-gUnknown_82BF43C: @ 0x082BF43C
+	.globl sDigits
+sDigits: @ 0x082BF43C
 	.incbin "baserom.gba", 0x2BF43C, 0x10
 
-	.globl gUnknown_82BF44C
-gUnknown_82BF44C: @ 0x082BF44C
+	.globl sPowersOfTen
+sPowersOfTen: @ 0x082BF44C
 	.incbin "baserom.gba", 0x2BF44C, 0x28
 
-	.globl gUnknown_82BF474
-gUnknown_82BF474: @ 0x082BF474
+	.globl sBrailleSetFont
+sBrailleSetFont: @ 0x082BF474
 	.incbin "baserom.gba", 0x2BF474, 0x4
 
-	.globl gUnknown_82BF478
-gUnknown_82BF478: @ 0x082BF478
+	.globl sBrailleGotoLine2
+sBrailleGotoLine2: @ 0x082BF478
 	.incbin "baserom.gba", 0x2BF478, 0x8
 
-	.globl gUnknown_82BF480
-gUnknown_82BF480: @ 0x082BF480
+	.globl sExpandPlaceholderFuncs
+sExpandPlaceholderFuncs: @ 0x082BF480
 	.4byte ExpandPlaceholder_UnknownStringVar
 	.4byte ExpandPlaceholder_PlayerName
 	.4byte ExpandPlaceholder_StringVar1
@@ -619,20 +619,20 @@ gUnknown_82BF480: @ 0x082BF480
 	.4byte ExpandPlaceholder_Kyogre
 	.4byte ExpandPlaceholder_Groudon
 
-	.globl gUnknown_82BF4B8
-gUnknown_82BF4B8: @ 0x082BF4B8
+	.globl sWirelessLinkDisplayPal
+sWirelessLinkDisplayPal: @ 0x082BF4B8
 	.incbin "baserom.gba", 0x2BF4B8, 0x20
 
-	.globl gUnknown_82BF4D8
-gUnknown_82BF4D8: @ 0x082BF4D8
+	.globl sWirelessLinkDisplayGfx
+sWirelessLinkDisplayGfx: @ 0x082BF4D8
 	.incbin "baserom.gba", 0x2BF4D8, 0x4A8
 
-	.globl gUnknown_82BF980
-gUnknown_82BF980: @ 0x082BF980
+	.globl sWirelessLinkDisplayTilemap
+sWirelessLinkDisplayTilemap: @ 0x082BF980
 	.incbin "baserom.gba", 0x2BF980, 0x1EC
 
-	.globl gUnknown_82BFB6C
-gUnknown_82BFB6C: @ 0x082BFB6C
+	.globl sLinkTestDigitsPal
+sLinkTestDigitsPal: @ 0x082BFB6C
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -642,6 +642,6 @@ gUnknown_82BFB6C: @ 0x082BFB6C
 	.4byte 0
 	.4byte 0x7FE00000
 
-	.globl gUnknown_82BFB8C
-gUnknown_82BFB8C: @ 0x082BFB8C
+	.globl sLinkTestDigitsGfx
+sLinkTestDigitsGfx: @ 0x082BFB8C
 	.incbin "baserom.gba", 0x2BFB8C, 0x233

@@ -4561,7 +4561,7 @@ _0800DB9C: .4byte 0x020205AC
 _0800DBA0: .4byte 0x020227C8
 _0800DBA4: .4byte 0x00001234
 _0800DBA8: .4byte 0x03002360
-_0800DBAC: .4byte gUnknown_82BF2F8
+_0800DBAC: .4byte gDummyOamData
 _0800DBB0: .4byte 0x070003E8
 	thumb_func_end DestroyWirelessStatusIndicatorSprite
 
