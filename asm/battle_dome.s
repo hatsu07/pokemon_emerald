@@ -7718,7 +7718,7 @@ _081923CC: .4byte 0x085D5DBC
 _081923D0: .4byte 0x085D5DBF
 _081923D4: .4byte 0x08190595
 _081923D8: .4byte 0x000003FF
-_081923DC: .4byte 0x082EFF52
+_081923DC: .4byte gFacilityClassToTrainerClass
 _081923E0:
 	ldr r0, _081923F0
 	ldr r1, [sp, #0x24]

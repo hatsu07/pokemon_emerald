@@ -2091,7 +2091,7 @@ _08068720:
 	bx r1
 	.align 2, 0
 _0806874C: .4byte 0x020226A0
-_08068750: .4byte 0x082EFF52
+_08068750: .4byte gFacilityClassToTrainerClass
 _08068754: .4byte 0x082FA6E2
 	thumb_func_end sub_080686F0
 
@@ -7796,7 +7796,7 @@ GetSecretBaseTrainerClass: @ 0x0806B2F8
 	.align 2, 0
 _0806B32C: .4byte 0x082FA844
 _0806B330: .4byte 0x0202414C
-_0806B334: .4byte 0x082EFF00
+_0806B334: .4byte gFacilityClassToPicIndex
 	thumb_func_end GetSecretBaseTrainerClass
 
 	thumb_func_start GetSecretBaseTrainerPicIndex
@@ -7828,7 +7828,7 @@ GetSecretBaseTrainerPicIndex: @ 0x0806B338
 	.align 2, 0
 _0806B36C: .4byte 0x082FA844
 _0806B370: .4byte 0x0202414C
-_0806B374: .4byte 0x082EFF52
+_0806B374: .4byte gFacilityClassToTrainerClass
 	thumb_func_end GetSecretBaseTrainerPicIndex
 
 	thumb_func_start IsPlayerPartyAndPokemonStorageFull
@@ -15012,7 +15012,7 @@ FacilityClassToPicIndex: @ 0x0806EA7C
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_0806EA88: .4byte 0x082EFF00
+_0806EA88: .4byte gFacilityClassToPicIndex
 	thumb_func_end FacilityClassToPicIndex
 
 	thumb_func_start PlayerGenderToFrontTrainerPicId

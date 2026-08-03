@@ -85,7 +85,7 @@ GetTrainerHillOpponentClass: @ 0x081D4B90
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_081D4BAC: .4byte 0x082EFF52
+_081D4BAC: .4byte gFacilityClassToTrainerClass
 _081D4BB0: .4byte 0x0203CC24
 	thumb_func_end GetTrainerHillOpponentClass
 
@@ -152,7 +152,7 @@ GetTrainerHillTrainerFrontSpriteId: @ 0x081D4BE4
 	bx r1
 	.align 2, 0
 _081D4C28: .4byte 0x0203CC20
-_081D4C2C: .4byte 0x082EFF00
+_081D4C2C: .4byte gFacilityClassToPicIndex
 	thumb_func_end GetTrainerHillTrainerFrontSpriteId
 
 	thumb_func_start InitTrainerHillBattleStruct
@@ -1402,7 +1402,7 @@ _081D5636:
 	b _081D56C2
 	.align 2, 0
 _081D5638: .4byte 0x0203CC20
-_081D563C: .4byte 0x082EFF52
+_081D563C: .4byte gFacilityClassToTrainerClass
 _081D5640: .4byte 0x085FB8E0
 _081D5644: .4byte 0x082E3564
 _081D5648:
@@ -2384,7 +2384,7 @@ _081D5DA4:
 	b _081D5DC6
 	.align 2, 0
 _081D5DB0: .4byte 0x0203CC20
-_081D5DB4: .4byte 0x082EFF52
+_081D5DB4: .4byte gFacilityClassToTrainerClass
 _081D5DB8: .4byte 0x085FB6A0
 _081D5DBC:
 	adds r1, #4

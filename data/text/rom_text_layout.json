@@ -4045,11 +4045,11 @@
         },
         {
           "offset": "0x2EFF00",
-          "label": "gUnknown_82EFF00"
+          "label": "gFacilityClassToPicIndex"
         },
         {
           "offset": "0x2EFF52",
-          "label": "gUnknown_82EFF52"
+          "label": "gFacilityClassToTrainerClass"
         },
         {
           "offset": "0x2EFFA4",

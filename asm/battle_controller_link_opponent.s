@@ -4490,14 +4490,14 @@ _0806648E:
 	b _08066530
 	.align 2, 0
 _08066498: .4byte 0x020226A0
-_0806649C: .4byte 0x082EFF00
+_0806649C: .4byte gFacilityClassToPicIndex
 _080664A0:
 	ldr r0, _080664A8
 	adds r0, #0x4e
 	ldrb r0, [r0]
 	b _08066530
 	.align 2, 0
-_080664A8: .4byte 0x082EFF00
+_080664A8: .4byte gFacilityClassToPicIndex
 _080664AC:
 	bl GetMultiplayerId
 	eors r0, r5
@@ -4542,14 +4542,14 @@ _080664FA:
 	ldrb r0, [r0]
 	b _08066530
 	.align 2, 0
-_08066504: .4byte 0x082EFF00
+_08066504: .4byte gFacilityClassToPicIndex
 _08066508:
 	ldr r0, _08066510
 	adds r0, #0x50
 	ldrb r0, [r0]
 	b _08066530
 	.align 2, 0
-_08066510: .4byte 0x082EFF00
+_08066510: .4byte gFacilityClassToPicIndex
 _08066514:
 	bl GetMultiplayerId
 	eors r0, r5

@@ -22,12 +22,7 @@ gUnknown_82EEF14: @ 0x082EEF14
 	.globl gUnknown_82EF220
 gUnknown_82EF220: @ 0x082EF220
 	.include "data/pokemon/tmhm_learnsets.inc"
-	.globl gUnknown_82EFF00
-gUnknown_82EFF00: @ 0x082EFF00
-	.incbin "baserom.gba", 0x2eff00, 0x52
-	.globl gUnknown_82EFF52
-gUnknown_82EFF52: @ 0x082EFF52
-	.incbin "baserom.gba", 0x2eff52, 0x52
+	.include "data/trainers/facility_class_mappings.inc"
 	.globl gUnknown_82EFFA4
 gUnknown_82EFFA4: @ 0x082EFFA4
 	.incbin "baserom.gba", 0x2effa4, 0x110

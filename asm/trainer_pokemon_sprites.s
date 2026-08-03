@@ -1318,7 +1318,7 @@ PlayerGenderToFrontTrainerPicId_Debug: @ 0x0818D6A8
 	ldrb r0, [r0]
 	b _0818D6CE
 	.align 2, 0
-_0818D6C4: .4byte 0x082EFF00
+_0818D6C4: .4byte gFacilityClassToPicIndex
 _0818D6C8:
 	ldr r0, _0818D6D4
 	adds r0, #0x3c
@@ -1327,6 +1327,6 @@ _0818D6CE:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0818D6D4: .4byte 0x082EFF00
+_0818D6D4: .4byte gFacilityClassToPicIndex
 	thumb_func_end PlayerGenderToFrontTrainerPicId_Debug
 
