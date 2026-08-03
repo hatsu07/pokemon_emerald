@@ -935,25 +935,288 @@ gCreditsMayBikeReducedSpriteSheet: @ 0x085D288C
 	.if (. - gCreditsBrendanBikeFullSpriteSheet) != 0x98
 	.error "Credits bike ride sprite resource descriptors must retain their original size"
 	.endif
-	.incbin "baserom.gba", 0x5d289c, 0x40
-	.globl gUnknown_85D28DC
-gUnknown_85D28DC: @ 0x085D28DC
-	.incbin "baserom.gba", 0x5d28dc, 0x10
-	.globl gUnknown_85D28EC
-gUnknown_85D28EC: @ 0x085D28EC
-	.incbin "baserom.gba", 0x5d28ec, 0x24
-	.globl gUnknown_85D2910
-gUnknown_85D2910: @ 0x085D2910
-	.incbin "baserom.gba", 0x5d2910, 0x18
-	.globl gUnknown_85D2928
-gUnknown_85D2928: @ 0x085D2928
-	.incbin "baserom.gba", 0x5d2928, 0x198
-	.globl gUnknown_85D2AC0
-gUnknown_85D2AC0: @ 0x085D2AC0
-	.incbin "baserom.gba", 0x5d2ac0, 0x8c
-	.globl gUnknown_85D2B4C
-gUnknown_85D2B4C: @ 0x085D2B4C
-	.incbin "baserom.gba", 0x5d2b4c, 0x3c0
+
+	.globl gEvolutionSparklePalette
+gEvolutionSparklePalette: @ 0x085D289C
+	.incbin "build/graphics/evolution/sparkle_palette.gbapal"
+
+	.globl gEvolutionSparkleGfx
+gEvolutionSparkleGfx: @ 0x085D28BC
+	.incbin "build/graphics/evolution/sparkle.4bpp.lz"
+
+	.globl gEvolutionSparkleSpriteSheet
+gEvolutionSparkleSpriteSheet: @ 0x085D28DC
+	rodata_compressed_sprite_sheet gEvolutionSparkleGfx, 0x20, 0x3E9
+	.space 8, 0 @ unused second sheet entry
+
+	.globl gEvolutionSparkleSpritePalettes
+gEvolutionSparkleSpritePalettes: @ 0x085D28EC
+	rodata_sprite_palette gEvolutionSparklePalette, 0x3E9
+	.space 8, 0 @ terminator
+
+gEvolutionSparkleOamData: @ 0x085D28FC
+	rodata_sprite_oam_data DISPLAY_HEIGHT, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0
+
+gEvolutionSparkleSpriteAnim: @ 0x085D2904
+	sprite_anim_frame 0, 8
+	sprite_anim_end
+
+gEvolutionSparkleSpriteAnimTable: @ 0x085D290C
+	sprite_anim_sequence gEvolutionSparkleSpriteAnim
+
+	.globl gEvolutionSparkleSpriteTemplate
+gEvolutionSparkleSpriteTemplate: @ 0x085D2910
+	rodata_sprite_template 0x3E9, 0x3E9, gEvolutionSparkleOamData, gEvolutionSparkleSpriteAnimTable, NULL, gDummySpriteAffineAnimTable, PokeEvoSprite_DummySpriteCB
+	.if (. - gEvolutionSparklePalette) != 0x8C
+	.error "Evolution sparkle graphics and sprite data must retain their original size"
+	.endif
+	.globl gEvolutionSparkleScaleFactors
+gEvolutionSparkleScaleFactors: @ 0x085D2928
+	.2byte 0x3C0, 0x380, 0x340, 0x300
+	.2byte 0x2C0, 0x280, 0x240, 0x200
+	.2byte 0x1C0, 0x180, 0x140, 0x100
+
+gUnused_85D2940: @ 0x085D2940
+	.2byte -4, 16, -3, 48, -2, 80, -1, 112
+	.2byte 1, 112, 2, 80, 3, 48, 4, 16
+
+	@ Signed 8.8 fixed-point pitch patterns used by the Bard's word sounds.
+gBardPitchPattern_0: @ 0x085D2960
+	.2byte -3 * 0x100, 24 * 0x100
+gBardPitchPattern_1: @ 0x085D2964
+	.2byte 9 * 0x100, 24 * 0x100
+gBardPitchPattern_2: @ 0x085D2968
+	.2byte 1 * 0x100, 24 * 0x100
+gBardPitchPattern_3: @ 0x085D296C
+	.2byte 4 * 0x100, 24 * 0x100
+gBardPitchPattern_4: @ 0x085D2970
+	.2byte 11 * 0x100, 24 * 0x100
+gBardPitchPattern_5: @ 0x085D2974
+	.2byte -3 * 0x100, -1 * 0x100, 24 * 0x100
+gBardPitchPattern_6: @ 0x085D297A
+	.2byte -3 * 0x100, 2 * 0x100, 24 * 0x100
+gBardPitchPattern_7: @ 0x085D2980
+	.2byte 2 * 0x100, 4 * 0x100, 24 * 0x100
+gBardPitchPattern_8: @ 0x085D2986
+	.2byte 6 * 0x100, 8 * 0x100, 24 * 0x100
+gBardPitchPattern_9: @ 0x085D298C
+	.2byte 9 * 0x100, 8 * 0x100, 24 * 0x100
+gBardPitchPattern_10: @ 0x085D2992
+	.2byte -3 * 0x100, -1 * 0x100, -3 * 0x100, 24 * 0x100
+gBardPitchPattern_11: @ 0x085D299A
+	.2byte 4 * 0x100, -3 * 0x100, 4 * 0x100, 24 * 0x100
+gBardPitchPattern_12: @ 0x085D29A2
+	.2byte 9 * 0x100, 8 * 0x100, 6 * 0x100, 24 * 0x100
+gBardPitchPattern_13: @ 0x085D29AA
+	.2byte 1 * 0x100, 2 * 0x100, 4 * 0x100, 24 * 0x100
+gBardPitchPattern_14: @ 0x085D29B2
+	.2byte 6 * 0x100, 16 * 0x100, 13 * 0x100, 24 * 0x100
+gBardPitchPattern_15: @ 0x085D29BA
+	.2byte 4 * 0x100, 9 * 0x100, 4 * 0x100, 9 * 0x100, 24 * 0x100
+gBardPitchPattern_16: @ 0x085D29C4
+	.2byte 9 * 0x100, 4 * 0x100, 13 * 0x100, 4 * 0x100, 24 * 0x100
+gBardPitchPattern_17: @ 0x085D29CE
+	.2byte 1 * 0x100, 2 * 0x100, 4 * 0x100, 6 * 0x100, 24 * 0x100
+gBardPitchPattern_18: @ 0x085D29D8
+	.2byte 8 * 0x100, 6 * 0x100, 4 * 0x100, 2 * 0x100, 24 * 0x100
+gBardPitchPattern_19: @ 0x085D29E2
+	.2byte 15 * 0x100, 13 * 0x100, 11 * 0x100, 10 * 0x100, 24 * 0x100
+gBardPitchPattern_20: @ 0x085D29EC
+	.2byte -3 * 0x100, -1 * 0x100, 1 * 0x100, 2 * 0x100, 4 * 0x100, 24 * 0x100
+gBardPitchPattern_21: @ 0x085D29F8
+	.2byte 9 * 0x100, 8 * 0x100, 6 * 0x100, 4 * 0x100, 2 * 0x100, 24 * 0x100
+gBardPitchPattern_22: @ 0x085D2A04
+	.2byte 1 * 0x100, 4 * 0x100, 9 * 0x100, 4 * 0x100, 1 * 0x100, 24 * 0x100
+gBardPitchPattern_23: @ 0x085D2A10
+	.2byte 9 * 0x100, 4 * 0x100, 9 * 0x100, 4 * 0x100, -3 * 0x100, 24 * 0x100
+gBardPitchPattern_24: @ 0x085D2A1C
+	.2byte 11 * 0x100, 8 * 0x100, 4 * 0x100, 4 * 0x100, 6 * 0x100, 24 * 0x100
+gBardPitchPattern_25: @ 0x085D2A28
+	.2byte -3 * 0x100, -1 * 0x100, 1 * 0x100, 2 * 0x100, 4 * 0x100, 6 * 0x100, 24 * 0x100
+gBardPitchPattern_26: @ 0x085D2A36
+	.2byte 8 * 0x100, 6 * 0x100, 4 * 0x100, 2 * 0x100, 1 * 0x100, -1 * 0x100, 24 * 0x100
+gBardPitchPattern_27: @ 0x085D2A44
+	.2byte 1 * 0x100, 2 * 0x100, 4 * 0x100, 1 * 0x100, 2 * 0x100, 16 * 0x100, 24 * 0x100
+gBardPitchPattern_28: @ 0x085D2A52
+	.2byte 4 * 0x100, -3 * 0x100, 9 * 0x100, 4 * 0x100, 9 * 0x100, 4 * 0x100, 24 * 0x100
+gBardPitchPattern_29: @ 0x085D2A60
+	.2byte 8 * 0x100, 9 * 0x100, 8 * 0x100, 9 * 0x100, 8 * 0x100, 9 * 0x100, 24 * 0x100
+gBardPitchPattern_30: @ 0x085D2A6E
+	.2byte 2 * 0x100, 1 * 0x100, 2 * 0x100, 1 * 0x100, 2 * 0x100, 4 * 0x100, 2 * 0x100, 24 * 0x100
+gBardPitchPattern_31: @ 0x085D2A7E
+	.2byte 1 * 0x100, 1 * 0x100, -1 * 0x100, -1 * 0x100, -3 * 0x100, 4 * 0x100, -3 * 0x100, 24 * 0x100
+gBardPitchPattern_32: @ 0x085D2A8E
+	.2byte 8 * 0x100, 9 * 0x100, 11 * 0x100, 13 * 0x100, 14 * 0x100, 13 * 0x100, 11 * 0x100, 24 * 0x100
+gBardPitchPattern_33: @ 0x085D2A9E
+	.2byte 8 * 0x100, 6 * 0x100, 4 * 0x100, 2 * 0x100, 13 * 0x100, 11 * 0x100, 9 * 0x100, 24 * 0x100
+gBardPitchPattern_34: @ 0x085D2AAE
+	.2byte 3 * 0x100, 4 * 0x100, 6 * 0x100, 8 * 0x100, 7 * 0x100, 8 * 0x100, 4 * 0x100, 24 * 0x100
+	.2byte 0 @ alignment padding
+
+	.globl gBardPitchPatternTable
+gBardPitchPatternTable: @ 0x085D2AC0
+	.4byte gBardPitchPattern_0
+	.4byte gBardPitchPattern_1
+	.4byte gBardPitchPattern_2
+	.4byte gBardPitchPattern_3
+	.4byte gBardPitchPattern_4
+	.4byte gBardPitchPattern_5
+	.4byte gBardPitchPattern_6
+	.4byte gBardPitchPattern_7
+	.4byte gBardPitchPattern_8
+	.4byte gBardPitchPattern_9
+	.4byte gBardPitchPattern_10
+	.4byte gBardPitchPattern_11
+	.4byte gBardPitchPattern_12
+	.4byte gBardPitchPattern_13
+	.4byte gBardPitchPattern_14
+	.4byte gBardPitchPattern_15
+	.4byte gBardPitchPattern_16
+	.4byte gBardPitchPattern_17
+	.4byte gBardPitchPattern_18
+	.4byte gBardPitchPattern_19
+	.4byte gBardPitchPattern_20
+	.4byte gBardPitchPattern_21
+	.4byte gBardPitchPattern_22
+	.4byte gBardPitchPattern_23
+	.4byte gBardPitchPattern_24
+	.4byte gBardPitchPattern_25
+	.4byte gBardPitchPattern_26
+	.4byte gBardPitchPattern_27
+	.4byte gBardPitchPattern_28
+	.4byte gBardPitchPattern_29
+	.4byte gBardPitchPattern_30
+	.4byte gBardPitchPattern_31
+	.4byte gBardPitchPattern_32
+	.4byte gBardPitchPattern_33
+	.4byte gBardPitchPattern_34
+	.if (. - gEvolutionSparkleScaleFactors) != 0x224
+	.error "Evolution sparkle scale and Bard pitch data must retain their original size"
+	.endif
+	.set BARD_SOUND_STOP, -2
+	.set BARD_SOUND_0, 25
+	.set BARD_SOUND_1, 26
+	.set BARD_SOUND_2, 27
+	.set BARD_SOUND_3, 28
+	.set BARD_SOUND_4, 29
+	.set BARD_SOUND_5, 30
+
+	.globl gBardSoundTable
+gBardSoundTable: @ 0x085D2B4C
+	@ Entries 0-159: the same 80-entry sound assignment block twice.
+	.rept 2
+	bard_sound_entry BARD_SOUND_STOP
+	.rept 7
+	bard_sound_cycle
+	.endr
+	bard_sound_entry BARD_SOUND_0
+	bard_sound_entry BARD_SOUND_2
+	bard_sound_entry BARD_SOUND_4
+	bard_sound_cycle
+	bard_sound_entry BARD_SOUND_0
+	bard_sound_entry BARD_SOUND_4
+	bard_sound_entry BARD_SOUND_5
+	bard_sound_cycle 0xC0
+	bard_sound_entry BARD_SOUND_0, 0xC0
+	bard_sound_entry BARD_SOUND_2, 0xC0
+	bard_sound_entry BARD_SOUND_4, 0xC0
+	.rept 5
+	bard_sound_cycle
+	.endr
+	.endr
+
+	@ Entries 160-175
+	bard_sound_entry BARD_SOUND_STOP
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_0
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_4
+	bard_sound_entry BARD_SOUND_4
+	bard_sound_entry BARD_SOUND_0
+	bard_sound_entry BARD_SOUND_0
+	bard_sound_entry BARD_SOUND_2
+	bard_sound_entry BARD_SOUND_STOP
+	bard_sound_entry BARD_SOUND_STOP
+	bard_sound_entry BARD_SOUND_STOP
+	bard_sound_entry -1
+	bard_sound_entry BARD_SOUND_STOP
+
+	@ Entries 176-191
+	bard_sound_entry 0
+	bard_sound_entry BARD_SOUND_STOP
+	bard_sound_entry BARD_SOUND_STOP
+	bard_sound_entry BARD_SOUND_STOP
+	bard_sound_entry BARD_SOUND_STOP
+	bard_sound_entry BARD_SOUND_STOP
+	bard_sound_entry BARD_SOUND_STOP
+	bard_sound_entry BARD_SOUND_0
+	bard_sound_entry BARD_SOUND_STOP
+	bard_sound_entry BARD_SOUND_STOP
+	bard_sound_entry BARD_SOUND_STOP
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_1
+
+	@ Entries 192-207
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_0
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_4
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_2
+	bard_sound_entry BARD_SOUND_0
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_2
+
+	@ Entries 208-223
+	bard_sound_entry BARD_SOUND_2
+	bard_sound_entry BARD_SOUND_0
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_0
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_0
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_3
+
+	@ Entries 224-239
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_4
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_2
+	bard_sound_entry BARD_SOUND_0
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_1
+	bard_sound_entry BARD_SOUND_2
+	bard_sound_entry BARD_SOUND_2
+	bard_sound_entry BARD_SOUND_0
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_0
+	bard_sound_entry BARD_SOUND_3
+	bard_sound_entry BARD_SOUND_STOP
+	.if (. - gBardSoundTable) != 240 * 4
+	.error "Bard sound table must contain 240 four-byte entries"
+	.endif
 	.globl gUnknown_85D2F0C
 gUnknown_85D2F0C: @ 0x085D2F0C
 	.incbin "baserom.gba", 0x5d2f0c, 0x388

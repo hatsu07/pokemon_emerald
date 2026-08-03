@@ -19,6 +19,18 @@
 	.2byte 0 @ padding
 	.endm
 
+	.macro bard_sound_entry sound, volume=0x100
+	.2byte \sound, \volume
+	.endm
+
+	.macro bard_sound_cycle volume=0x100
+	bard_sound_entry BARD_SOUND_0, \volume
+	bard_sound_entry BARD_SOUND_1, \volume
+	bard_sound_entry BARD_SOUND_2, \volume
+	bard_sound_entry BARD_SOUND_3, \volume
+	bard_sound_entry BARD_SOUND_4, \volume
+	.endm
+
 	.macro sprite_tile_counts square8, square16, square32, square64, horizontal8, horizontal16, horizontal32, horizontal64, vertical8, vertical16, vertical32, vertical64
 	.byte \square8, \square16, \square32, \square64
 	.byte \horizontal8, \horizontal16, \horizontal32, \horizontal64
