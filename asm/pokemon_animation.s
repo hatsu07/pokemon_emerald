@@ -88,7 +88,7 @@ GetSpeciesBackAnimSet: @ 0x0817F320
 	movs r0, #0
 	b _0817F33E
 	.align 2, 0
-_0817F334: .4byte 0x085D3328
+_0817F334: .4byte gSpeciesToBackAnimSet
 _0817F338:
 	subs r0, #1
 	lsls r0, r0, #0x18
@@ -183,7 +183,7 @@ _0817F3D4:
 	.align 2, 0
 _0817F3E0: .4byte 0x03005B60
 _0817F3E4: .4byte 0x08007141
-_0817F3E8: .4byte 0x085D34E8
+_0817F3E8: .4byte gMonAnimFunctions
 _0817F3EC: .4byte 0x03001274
 	thumb_func_end Task_HandleMonAnimation
 
@@ -229,7 +229,7 @@ StartMonSummaryAnimation: @ 0x0817F424
 	bx lr
 	.align 2, 0
 _0817F438: .4byte 0x03001274
-_0817F43C: .4byte 0x085D34E8
+_0817F43C: .4byte gMonAnimFunctions
 	thumb_func_end StartMonSummaryAnimation
 
 	thumb_func_start LaunchAnimationTaskForBackSprite
@@ -285,7 +285,7 @@ _0817F4A4: .4byte 0x03005B60
 _0817F4A8: .4byte 0x02023D12
 _0817F4AC: .4byte 0x02024190
 _0817F4B0: .4byte 0x085D378F
-_0817F4B4: .4byte 0x085D3744
+_0817F4B4: .4byte gBackAnimSetToAnimIds
 	thumb_func_end LaunchAnimationTaskForBackSprite
 
 	thumb_func_start SetSpriteCB_MonAnimDummy
@@ -2112,7 +2112,7 @@ _08180204:
 	strh r0, [r4, #0x26]
 	b _08180240
 	.align 2, 0
-_08180214: .4byte 0x085D34E0
+_08180214: .4byte gVerticalShakeData
 _08180218: .4byte 0x08184C35
 _0818021C:
 	mov r0, r8
@@ -4351,7 +4351,7 @@ _081812EE:
 	str r0, [r4, #0x1c]
 	b _0818137A
 	.align 2, 0
-_08181308: .4byte 0x085D34C4
+_08181308: .4byte gYellowFlashData
 _0818130C: .4byte 0x08184C35
 _08181310:
 	movs r3, #0x36
@@ -4401,7 +4401,7 @@ _08181346:
 	b _0818137A
 	.align 2, 0
 _0818136C: .4byte 0x000003FF
-_08181370: .4byte 0x085D34C4
+_08181370: .4byte gYellowFlashData
 _08181374:
 	ldrh r0, [r4, #0x38]
 	adds r0, #1
@@ -8811,7 +8811,7 @@ _0818346E:
 	strh r0, [r4, #0x26]
 	b _081834B6
 	.align 2, 0
-_0818347C: .4byte 0x085D34E0
+_0818347C: .4byte gVerticalShakeData
 _08183480: .4byte 0x08184C35
 _08183484:
 	mov r1, r8
@@ -12137,4 +12137,3 @@ _08184C48:
 	.align 2, 0
 _08184C4C: .4byte 0x08007141
 	thumb_func_end SpriteCB_SetDummyOnAnimEnd
-

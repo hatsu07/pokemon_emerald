@@ -5,6 +5,7 @@
 	.include "constants/berry.inc"
 	.include "constants/contest_move_effects.inc"
 	.include "constants/species.inc"
+	.include "constants/pokemon_animation.inc"
 	.include "constants/gf_rom_header.inc"
 
 @ LGF ROM header save metadata

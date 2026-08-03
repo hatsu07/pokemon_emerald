@@ -5,6 +5,7 @@
 	.include "constants/charmap.inc"
 	.include "constants/decorations.inc"
 	.include "constants/species.inc"
+	.include "constants/pokemon_animation.inc"
 	.include "constants/base_stats.inc"
 	.include "constants/moves.inc"
 	.include "constants/item.inc"

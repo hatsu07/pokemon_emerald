@@ -44,6 +44,38 @@
 	.2byte \move, \points
 	.endm
 
+	@ One species-indexed entry in the back-sprite animation set table.
+	.macro species_back_anim species, anim
+	.if (\species) != (. - gSpeciesToBackAnimSet)
+	.error "Pokemon back animation sets are out of species order"
+	.endif
+	.byte \anim
+	.endm
+
+	.macro yellow_flash_step yellow, duration
+	.byte \yellow, \duration
+	.endm
+
+	.macro vertical_shake_step offset, duration
+	.byte \offset, \duration
+	.endm
+
+	@ One animation-ID-indexed callback in the Pokemon animation function table.
+	.macro mon_anim_function anim, function
+	.if (\anim) != ((. - gMonAnimFunctions) / 4)
+	.error "Pokemon animation functions are out of animation ID order"
+	.endif
+	.4byte \function
+	.endm
+
+	@ Three nature-selected animation IDs for one back-sprite animation set.
+	.macro back_anim_variants anim_set, variant0, variant1, variant2
+	.if ((\anim_set) - 1) != ((. - gBackAnimSetToAnimIds) / 3)
+	.error "Pokemon back animation variants are out of set order"
+	.endif
+	.byte \variant0, \variant1, \variant2
+	.endm
+
 	.macro sprite_tile_counts square8, square16, square32, square64, horizontal8, horizontal16, horizontal32, horizontal64, vertical8, vertical16, vertical32, vertical64
 	.byte \square8, \square16, \square32, \square64
 	.byte \horizontal8, \horizontal16, \horizontal32, \horizontal64
