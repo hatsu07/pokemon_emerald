@@ -57,30 +57,73 @@ gMysteryEventWindowTemplates: @ 0x085CD208
 	.if (. - gMysteryEventWindowTemplates) != 0x18
 	.error "gMysteryEventWindowTemplates must contain two entries and a terminator"
 	.endif
-	.globl gUnknown_85CD220
-gUnknown_85CD220: @ 0x085CD220
-	.incbin "baserom.gba", 0x5cd220, 0x8
-	.globl gUnknown_85CD228
-gUnknown_85CD228: @ 0x085CD228
-	.incbin "baserom.gba", 0x5cd228, 0xc
-	.globl gUnknown_85CD234
-gUnknown_85CD234: @ 0x085CD234
-	.incbin "baserom.gba", 0x5cd234, 0x8
-	.globl gUnknown_85CD23C
-gUnknown_85CD23C: @ 0x085CD23C
-	.incbin "baserom.gba", 0x5cd23c, 0x8
-	.globl gUnknown_85CD244
-gUnknown_85CD244: @ 0x085CD244
-	.incbin "baserom.gba", 0x5cd244, 0x8
-	.globl gUnknown_85CD24C
-gUnknown_85CD24C: @ 0x085CD24C
-	.incbin "baserom.gba", 0x5cd24c, 0x18
-	.globl gUnknown_85CD264
-gUnknown_85CD264: @ 0x085CD264
-	.incbin "baserom.gba", 0x5cd264, 0x20
-	.globl gUnknown_85CD284
-gUnknown_85CD284: @ 0x085CD284
-	.incbin "baserom.gba", 0x5cd284, 0x90
+
+	.globl gSaveFailedClockOamData
+gSaveFailedClockOamData: @ 0x085CD220
+	rodata_sprite_oam_data DISPLAY_HEIGHT, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0
+	.if (. - gSaveFailedClockOamData) != 0x8
+	.error "gSaveFailedClockOamData must contain one OAM entry"
+	.endif
+
+	.globl gSaveFailedBgTemplates
+gSaveFailedBgTemplates: @ 0x085CD228
+	bg_template 0, 2, 31, 0, 0, 0, 0
+	bg_template 2, 0, 14, 0, 0, 2, 0
+	bg_template 3, 0, 15, 0, 0, 3, 0
+	.if (. - gSaveFailedBgTemplates) != 0xC
+	.error "gSaveFailedBgTemplates must contain three entries"
+	.endif
+
+	.globl gSaveFailedWindowTemplates
+gSaveFailedWindowTemplates: @ 0x085CD234
+	null_window_template
+	.if (. - gSaveFailedWindowTemplates) != 0x8
+	.error "gSaveFailedWindowTemplates must contain one terminator"
+	.endif
+
+	.globl gSaveFailedMainWindowTemplate
+gSaveFailedMainWindowTemplate: @ 0x085CD23C
+	window_template 0, 1, 13, 28, 6, 15, 0x1
+	.if (. - gSaveFailedMainWindowTemplate) != 0x8
+	.error "gSaveFailedMainWindowTemplate must contain one entry"
+	.endif
+
+	.globl gSaveFailedClockWindowTemplate
+gSaveFailedClockWindowTemplate: @ 0x085CD244
+	window_template 0, 14, 9, 2, 2, 15, 0xA9
+	.if (. - gSaveFailedClockWindowTemplate) != 0x8
+	.error "gSaveFailedClockWindowTemplate must contain one entry"
+	.endif
+
+	.globl gSaveFailedClockFrameData
+gSaveFailedClockFrameData: @ 0x085CD24C
+	.byte 1, 0, 0 @ frame 0
+	.byte 5, 0, 0 @ frame 1
+	.byte 9, 0, 0 @ frame 2
+	.byte 5, 0, 1 @ frame 3
+	.byte 1, 0, 1 @ frame 4
+	.byte 5, 1, 1 @ frame 5
+	.byte 9, 1, 0 @ frame 6
+	.byte 5, 1, 0 @ frame 7
+	.if (. - gSaveFailedClockFrameData) != 0x18
+	.error "gSaveFailedClockFrameData must contain eight 3-byte entries"
+	.endif
+
+	.globl gSaveFailedClockPalette
+gSaveFailedClockPalette: @ 0x085CD264
+	.2byte 0x2E2C, 0x0000, 0x1CE7, 0x3DEF, 0x5EF7, 0x7FFF, 0x151F, 0x0000
+	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	.if (. - gSaveFailedClockPalette) != 0x20
+	.error "gSaveFailedClockPalette must contain 16 colors"
+	.endif
+
+	.globl gSaveFailedClockGraphics
+gSaveFailedClockGraphics: @ 0x085CD284
+	.incbin "build/graphics/save_failed_screen/clock.4bpp.lz"
+	.if (. - gSaveFailedClockGraphics) != 0x90
+	.error "gSaveFailedClockGraphics must retain its original compressed size"
+	.endif
+
 	.globl gUnknown_85CD314
 gUnknown_85CD314: @ 0x085CD314
 	.incbin "baserom.gba", 0x5cd314, 0x48

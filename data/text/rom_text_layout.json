@@ -14925,35 +14925,35 @@
         },
         {
           "offset": "0x5CD220",
-          "label": "gUnknown_85CD220"
+          "label": "gSaveFailedClockOamData"
         },
         {
           "offset": "0x5CD228",
-          "label": "gUnknown_85CD228"
+          "label": "gSaveFailedBgTemplates"
         },
         {
           "offset": "0x5CD234",
-          "label": "gUnknown_85CD234"
+          "label": "gSaveFailedWindowTemplates"
         },
         {
           "offset": "0x5CD23C",
-          "label": "gUnknown_85CD23C"
+          "label": "gSaveFailedMainWindowTemplate"
         },
         {
           "offset": "0x5CD244",
-          "label": "gUnknown_85CD244"
+          "label": "gSaveFailedClockWindowTemplate"
         },
         {
           "offset": "0x5CD24C",
-          "label": "gUnknown_85CD24C"
+          "label": "gSaveFailedClockFrameData"
         },
         {
           "offset": "0x5CD264",
-          "label": "gUnknown_85CD264"
+          "label": "gSaveFailedClockPalette"
         },
         {
           "offset": "0x5CD284",
-          "label": "gUnknown_85CD284"
+          "label": "gSaveFailedClockGraphics"
         },
         {
           "offset": "0x5CD314",
