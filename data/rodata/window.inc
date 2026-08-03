@@ -1,4 +1,9 @@
 	.globl sDummyWindowTemplate
 sDummyWindowTemplate: @ 0x0829BEB0
-	.incbin "baserom.gba", 0x29BEB0, 0x8
-
+	.byte 0xFF @ bg = WINDOW_NONE
+	.byte 0    @ tilemapLeft
+	.byte 0    @ tilemapTop
+	.byte 0    @ width
+	.byte 0    @ height
+	.byte 0    @ paletteNum
+	.2byte 0   @ baseBlock

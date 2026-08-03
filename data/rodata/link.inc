@@ -1,26 +1,28 @@
 	.globl sWirelessLinkDisplayPal
 sWirelessLinkDisplayPal: @ 0x082BF4B8
-	.incbin "baserom.gba", 0x2BF4B8, 0x20
+	.incbin "build/graphics/link/wireless_display.gbapal"
 
 	.globl sWirelessLinkDisplayGfx
 sWirelessLinkDisplayGfx: @ 0x082BF4D8
-	.incbin "baserom.gba", 0x2BF4D8, 0x4A8
+	.incbin "build/graphics/link/wireless_display.4bpp.lz"
 
 	.globl sWirelessLinkDisplayTilemap
 sWirelessLinkDisplayTilemap: @ 0x082BF980
-	.incbin "baserom.gba", 0x2BF980, 0x1EC
+	.incbin "build/graphics/link/wireless_display.bin.lz"
 
 	.globl sLinkTestDigitsPal
 sLinkTestDigitsPal: @ 0x082BFB6C
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0x7FE00000
+	.incbin "build/graphics/link/test_digits.gbapal"
 
 	.globl sLinkTestDigitsGfx
 sLinkTestDigitsGfx: @ 0x082BFB8C
-	.incbin "baserom.gba", 0x2BFB8C, 0x233
+	.incbin "build/graphics/link/test_digits.4bpp"
+
+	.globl sText_Connecting
+sText_Connecting: @ 0x082BFDAC
+	.string "せつぞく ちゅうです$"
+	.balign 4, 0
+
+	.globl sText_UnableToConnectPrefix
+sText_UnableToConnectPrefix: @ 0x082BFDB8
+	.string "せつぞく でき" @ Continues at gText_Rom_2BFDBF.

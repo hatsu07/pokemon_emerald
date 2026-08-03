@@ -1,5 +1,6 @@
 	.globl sBlendTarget2BgMasks
 sBlendTarget2BgMasks: @ 0x082BF42C
-	.4byte gUnknown_2000100
-	.4byte 0x08000400
-
+	.2byte BLDCNT_TGT2_BG0
+	.2byte BLDCNT_TGT2_BG1
+	.2byte BLDCNT_TGT2_BG2
+	.2byte BLDCNT_TGT2_BG3

@@ -1,18 +1,28 @@
 	.globl sDigits
 sDigits: @ 0x082BF43C
-	.incbin "baserom.gba", 0x2BF43C, 0x10
+	.string "0123456789ABCDEF"
 
 	.globl sPowersOfTen
 sPowersOfTen: @ 0x082BF44C
-	.incbin "baserom.gba", 0x2BF44C, 0x28
+	.4byte 1
+	.4byte 10
+	.4byte 100
+	.4byte 1000
+	.4byte 10000
+	.4byte 100000
+	.4byte 1000000
+	.4byte 10000000
+	.4byte 100000000
+	.4byte 1000000000
 
 	.globl sBrailleSetFont
 sBrailleSetFont: @ 0x082BF474
-	.incbin "baserom.gba", 0x2BF474, 0x4
+	.string "{FONT}{0x06}$"
 
 	.globl sBrailleGotoLine2
 sBrailleGotoLine2: @ 0x082BF478
-	.incbin "baserom.gba", 0x2BF478, 0x8
+	.string "\n{SHIFT_DOWN}{0x02}$"
+	.balign 4, 0
 
 	.globl sExpandPlaceholderFuncs
 sExpandPlaceholderFuncs: @ 0x082BF480
@@ -30,4 +40,3 @@ sExpandPlaceholderFuncs: @ 0x082BF480
 	.4byte ExpandPlaceholder_Maxie
 	.4byte ExpandPlaceholder_Kyogre
 	.4byte ExpandPlaceholder_Groudon
-
