@@ -3259,15 +3259,51 @@ gBattleDomeWinStreakFlags: @ 0x085D5B68
 gBattleDomeWinStreakMasks: @ 0x085D5B78
 	.4byte ~STREAK_DOME_SINGLES_50, ~STREAK_DOME_SINGLES_OPEN
 	.4byte ~STREAK_DOME_DOUBLES_50, ~STREAK_DOME_DOUBLES_OPEN
-	.globl gUnknown_85D5B88
-gUnknown_85D5B88: @ 0x085D5B88
-	.incbin "baserom.gba", 0x5d5b88, 0x40
-	.globl gUnknown_85D5BC8
-gUnknown_85D5BC8: @ 0x085D5BC8
-	.incbin "baserom.gba", 0x5d5bc8, 0x10
-	.globl gUnknown_85D5BD8
-gUnknown_85D5BD8: @ 0x085D5BD8
-	.incbin "baserom.gba", 0x5d5bd8, 0x40
+	@ Opponent tournament ID for each trainer and round.
+	.globl gBattleDomeIdToOpponentId
+gBattleDomeIdToOpponentId: @ 0x085D5B88
+	.byte  8,  0,  4, 8 @ trainer 0
+	.byte  9, 12,  8, 0 @ trainer 1
+	.byte 10,  8, 12, 0 @ trainer 2
+	.byte 11,  4,  0, 8 @ trainer 3
+	.byte 12,  0,  4, 8 @ trainer 4
+	.byte 13, 12,  8, 0 @ trainer 5
+	.byte 14,  8, 12, 0 @ trainer 6
+	.byte 15,  4,  0, 8 @ trainer 7
+	.byte  0,  0,  4, 8 @ trainer 8
+	.byte  1, 12,  8, 0 @ trainer 9
+	.byte  2,  8, 12, 0 @ trainer 10
+	.byte  3,  4,  0, 8 @ trainer 11
+	.byte  4,  0,  4, 8 @ trainer 12
+	.byte  5, 12,  8, 0 @ trainer 13
+	.byte  6,  8, 12, 0 @ trainer 14
+	.byte  7,  4,  0, 8 @ trainer 15
+
+	@ Tournament tree order with every first-round pair swapped.
+	.globl gBattleDomeTourneyTreeTrainerOpponentIds
+gBattleDomeTourneyTreeTrainerOpponentIds: @ 0x085D5BC8
+	.byte 0, 8, 4, 12, 7, 15, 3, 11
+	.byte 2, 10, 6, 14, 5, 13, 1, 9
+
+	@ Match number minus one for each trainer and round.
+	.globl gBattleDomeIdToMatchNumber
+gBattleDomeIdToMatchNumber: @ 0x085D5BD8
+	.byte 0,  8, 12, 14 @ trainers 0-1
+	.byte 0,  8, 12, 14
+	.byte 1,  8, 12, 14 @ trainers 2-3
+	.byte 1,  8, 12, 14
+	.byte 2,  9, 12, 14 @ trainers 4-5
+	.byte 2,  9, 12, 14
+	.byte 3,  9, 12, 14 @ trainers 6-7
+	.byte 3,  9, 12, 14
+	.byte 4, 10, 13, 14 @ trainers 8-9
+	.byte 4, 10, 13, 14
+	.byte 5, 10, 13, 14 @ trainers 10-11
+	.byte 5, 10, 13, 14
+	.byte 6, 11, 13, 14 @ trainers 12-13
+	.byte 6, 11, 13, 14
+	.byte 7, 11, 13, 14 @ trainers 14-15
+	.byte 7, 11, 13, 14
 	.globl gUnknown_85D5C18
 gUnknown_85D5C18: @ 0x085D5C18
 	.incbin "baserom.gba", 0x5d5c18, 0x4

@@ -3045,7 +3045,7 @@ _0818FE34:
 	.align 2, 0
 _0818FE4C: .4byte 0x03005AF0
 _0818FE50: .4byte 0x00000D24
-_0818FE54: .4byte 0x085D5B88
+_0818FE54: .4byte gBattleDomeIdToOpponentId
 _0818FE58:
 	lsls r0, r5, #2
 	adds r1, r3, r0
@@ -3072,7 +3072,7 @@ _0818FE62:
 	adds r0, r0, r3
 	b _0818FEAA
 	.align 2, 0
-_0818FE88: .4byte 0x085D5BC8
+_0818FE88: .4byte gBattleDomeTourneyTreeTrainerOpponentIds
 _0818FE8C: .4byte 0x00000D25
 _0818FE90:
 	adds r2, #1
@@ -3102,7 +3102,7 @@ _0818FEB2:
 	b _0818FEEE
 	.align 2, 0
 _0818FEC0: .4byte 0x00000D25
-_0818FEC4: .4byte 0x085D5BC8
+_0818FEC4: .4byte gBattleDomeTourneyTreeTrainerOpponentIds
 _0818FEC8:
 	mov r3, ip
 	ldr r1, [r3]
@@ -5687,7 +5687,7 @@ _0819133C:
 	.align 2, 0
 _08191394: .4byte 0x02022AD0
 _08191398: .4byte 0x02022AD2
-_0819139C: .4byte 0x085D5BD8
+_0819139C: .4byte gBattleDomeIdToMatchNumber
 _081913A0: .4byte 0x03005B60
 _081913A4: .4byte 0x0203CA44
 _081913A8: .4byte 0x020205AC
@@ -6299,7 +6299,7 @@ _08191838:
 	.align 2, 0
 _08191890: .4byte 0x02022AD0
 _08191894: .4byte 0x02022AD2
-_08191898: .4byte 0x085D5BD8
+_08191898: .4byte gBattleDomeIdToMatchNumber
 _0819189C: .4byte 0x0203CA44
 _081918A0: .4byte 0x03005B60
 _081918A4: .4byte 0x020205AC
