@@ -599,7 +599,7 @@ _08179920:
 	bl VarSet
 	b _081799A8
 	.align 2, 0
-_0817995C: .4byte 0x085CD314
+_0817995C: .4byte gRegicePuzzleRequiredPositions
 _08179960: .4byte 0x0000403B
 _08179964: .4byte 0x0000403C
 _08179968:

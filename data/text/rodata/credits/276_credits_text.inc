@@ -124,9 +124,48 @@ gSaveFailedClockGraphics: @ 0x085CD284
 	.error "gSaveFailedClockGraphics must retain its original compressed size"
 	.endif
 
-	.globl gUnknown_85CD314
-gUnknown_85CD314: @ 0x085CD314
-	.incbin "baserom.gba", 0x5cd314, 0x48
+	.globl gRegicePuzzleRequiredPositions
+gRegicePuzzleRequiredPositions: @ 0x085CD314
+	.byte  4, 21 @  0
+	.byte  5, 21 @  1
+	.byte  6, 21 @  2
+	.byte  7, 21 @  3
+	.byte  8, 21 @  4
+	.byte  9, 21 @  5
+	.byte 10, 21 @  6
+	.byte 11, 21 @  7
+	.byte 12, 21 @  8
+	.byte 12, 22 @  9
+	.byte 12, 23 @ 10
+	.byte 13, 23 @ 11
+	.byte 13, 24 @ 12
+	.byte 13, 25 @ 13
+	.byte 13, 26 @ 14
+	.byte 13, 27 @ 15
+	.byte 12, 27 @ 16
+	.byte 12, 28 @ 17
+	.byte  4, 29 @ 18
+	.byte  5, 29 @ 19
+	.byte  6, 29 @ 20
+	.byte  7, 29 @ 21
+	.byte  8, 29 @ 22
+	.byte  9, 29 @ 23
+	.byte 10, 29 @ 24
+	.byte 11, 29 @ 25
+	.byte 12, 29 @ 26
+	.byte  4, 28 @ 27
+	.byte  4, 27 @ 28
+	.byte  3, 27 @ 29
+	.byte  3, 26 @ 30
+	.byte  3, 25 @ 31
+	.byte  3, 24 @ 32
+	.byte  3, 23 @ 33
+	.byte  4, 23 @ 34
+	.byte  4, 22 @ 35
+	.if (. - gRegicePuzzleRequiredPositions) != 36 * 2
+	.error "gRegicePuzzleRequiredPositions must contain 36 coordinate pairs"
+	.endif
+
 	.globl gUnknown_85CD35C
 gUnknown_85CD35C: @ 0x085CD35C
 	.incbin "baserom.gba", 0x5cd35c, 0x32
