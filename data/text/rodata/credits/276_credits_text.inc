@@ -3220,9 +3220,11 @@ gBattleDomeTourneyTreeHorizontalArrowSpriteTemplate: @ 0x085D5ACC
 	.globl gBattleDomeTourneyTreeVerticalArrowSpriteTemplate
 gBattleDomeTourneyTreeVerticalArrowSpriteTemplate: @ 0x085D5AE4
 	rodata_sprite_template 0, TAG_NONE, gBattleDomeTourneyTreeVerticalScrollArrowOam, gBattleDomeTourneyTreeVerticalArrowAnims, NULL, gDummySpriteAffineAnimTable, sub_081908C8
-	.globl gUnknown_85D5AFC
-gUnknown_85D5AFC: @ 0x085D5AFC
-	.incbin "baserom.gba", 0x5d5afc, 0x10
+	@ Maps the 16 first-round tree slots to their tournament trainer IDs.
+	.globl gBattleDomeTourneyTreeTrainerIdOrder
+gBattleDomeTourneyTreeTrainerIdOrder: @ 0x085D5AFC
+	.byte 0, 8, 12, 4, 7, 15, 11, 3
+	.byte 2, 10, 14, 6, 5, 13, 9, 1
 	.globl gUnknown_85D5B0C
 gUnknown_85D5B0C: @ 0x085D5B0C
 	.incbin "baserom.gba", 0x5d5b0c, 0x5c
