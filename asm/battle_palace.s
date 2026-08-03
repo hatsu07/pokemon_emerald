@@ -20,7 +20,7 @@ CallBattlePalaceFunction: @ 0x08195560
 sub_08195574: @ 0x08195574
 	bx r0
 	.align 2, 0
-_08195578: .4byte 0x085D68CC
+_08195578: .4byte gBattlePalaceFunctions
 _0819557C: .4byte 0x02037280
 	thumb_func_end sub_08195574
 
@@ -597,4 +597,3 @@ _08195A06:
 	.align 2, 0
 _08195A0C: .4byte 0x02037290
 	thumb_func_end sub_081959B8
-

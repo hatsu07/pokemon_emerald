@@ -3609,9 +3609,23 @@ gUnknown_85D688C: @ 0x085D688C
 	.if (. - gBattleDomeTourneyTreeLineSectionCounts) != (16 * 4)
 	.error "Battle Dome tourney line section count table has the wrong size"
 	.endif
+	.globl gBattlePalaceFunctions
 	.globl gUnknown_85D68CC
+gBattlePalaceFunctions:
 gUnknown_85D68CC: @ 0x085D68CC
-	.incbin "baserom.gba", 0x5d68cc, 0x28
+	.4byte sub_08195580
+	.4byte sub_08195638
+	.4byte sub_081956E4
+	.4byte sub_081957B0
+	.4byte sub_08195820
+	.4byte sub_08195850
+	.4byte sub_0819587C
+	.4byte sub_081958E4
+	.4byte sub_08195928
+	.4byte sub_081959B8
+	.if (. - gBattlePalaceFunctions) != (10 * 4)
+	.error "Battle Palace function table has the wrong size"
+	.endif
 	.globl gUnknown_85D68F4
 gUnknown_85D68F4: @ 0x085D68F4
 	.incbin "baserom.gba", 0x5d68f4, 0xc
