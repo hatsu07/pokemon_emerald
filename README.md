@@ -87,24 +87,24 @@
 - [x] ディレクトリ構成作成
 - [x] ソースコード復元
 - [x] Matching（SHA-1一致）
-- [x] ビルド成功（`make` → `pokeemerald_jp.gba`）
+- [x] ビルド成功（CMake → `build/pokeemerald_jp.gba`）
 - [x] エミュレータ起動確認
 
 ### Phase 2 - Documentation / テキスト基盤
 
 - [x] 日本語文字コード表（`data/charmap/charmap.txt`）
-- [x] `.string` ビルド連携（`tools/preproc` + `Makefile`）
+- [x] `.string` ビルド連携（`tools/preproc` + `CMakeLists.txt`）
 - [x] オダマキ博士オープニングセリフのテキスト化（`data/text/birch_speech.inc`）
 - [x] セリフ参照のシンボル化（`asm/main_menu.s` → `gText_Birch_*`）
 - [x] ミシロタウンNPC 3件のテキスト化（`data/text/littleroot_town.inc`）
 - [x] オダマキ研究所テキスト 25件のテキスト化（`data/text/birch_lab.inc`）
 - [x] ミシロタウン看板テキストのテキスト化（`data/text/littleroot_signs.inc`）
-- [x] テキスト分離後の Matching 確認（`make compare`）
+- [x] テキスト分離後の Matching 確認（CMake の `compare` ターゲット）
 - [x] **テキスト一括抽出基盤（`tools/extract_all_text.py`）**
   - [x] `script_data` セクションの全通常テキストを固定アドレスで抽出（`data/text/generated/event_scripts.inc`：6,741スロット）
   - [x] `.rodata` セクションの全通常テキストを固定アドレスで抽出（`data/rodata.inc`：6,158スロット）
   - [x] 抽出結果のマニフェスト（`data/text/generated/manifest.json`）
-  - [x] 抽出状態での `make compare` 一致確認
+  - [x] 抽出状態での `compare` ターゲット一致確認
 - [x] ハックガイド作成（[docs/hacking.md](docs/hacking.md)）
 - [x] テキスト編集ドキュメント（[docs/text_editing.md](docs/text_editing.md)）
 - [x] ROM構造の網羅的ドキュメント（[docs/rom_structure.md](docs/rom_structure.md)）
@@ -120,6 +120,14 @@
   - [x] 技データ（`moves/`）
   - [x] ポケモンデータ（`pokemon/`：レベルアップ技を含む）
   - [x] リボンテキスト（`ribbons/`）
+- [x] **主要ゲームデータの構造化**
+  - [x] ポケモン（種族値・進化・各種習得技・名前・図鑑・前後画像・パレット・アイコン）
+  - [x] 技（戦闘パラメータ・名前・説明・タイプ名）
+  - [x] アイテム（パラメータ・説明）
+  - [x] 特性（名前・説明）
+  - [x] トレーナー、野生出現、ひみつきちのもようがえ、ボール画像テーブル
+- [x] `.rodata` 冒頭の機能別分割（`data/rodata/*.inc`）
+- [x] ダミーウィンドウテンプレートの構造化（`sDummyWindowTemplate`、`0x0829BEB0`、8バイト）
 
 ### Phase 3 - Modding
 
@@ -127,13 +135,15 @@
 - [ ] マップ / イベント追加基盤
 - [ ] ポケモン・技・アイテム等のデータ編集基盤
 
-**最新更新**: 2026-07-27
+**最新更新**: 2026-08-03
 
 - Phase 1 (Matching) 完了
 - SHA-1: `d7cf8f156ba9c455d164e1ea780a6bf1945465c2`（オリジナルと一致）
 - Phase 2: オダマキOP・ミシロタウンNPC 3件・オダマキ研究所テキスト 25件・ミシロタウン看板を `.string` 化
 - **全体テキスト抽出基盤 構築完了**: `script_data`（6,741スロット）と `.rodata`（6,158スロット）の全通常テキストを `data/text/generated/*.inc` に固定アドレスで抽出
 - **rodata データの分割・構造化完了**: `data/text/rodata/` 以下に戦闘・コンテスト・クレジット・アイテム・マップ・メニュー・技・ポケモン・リボンデータを分割・構造化
+- **主要ゲームデータを構造化**: `data/pokemon/`、`data/moves/`、`data/items/`、`data/abilities/`、`data/trainers/`、`data/wild_encounters/`、`data/decorations/`、`data/pokeball/` に編集可能な定義を配置
+- **`.rodata` の機能別分割を開始**: `data/rodata.inc` から `main`、`window`、`text`、`fonts`、`sprite` などのファイルへ分割。`sDummyWindowTemplate` は `.incbin` を使わない8バイトのフィールド定義に変換
 - テキスト編集方法は [docs/text_editing.md](docs/text_editing.md) に集約
 - ハック手順は [docs/hacking.md](docs/hacking.md) に集約
 
@@ -143,10 +153,13 @@
 
 ```sh
 # 日本版ROMを baserom.gba として配置したうえで
-make -j$(nproc)
+./build_tools.sh
+cmake -S . -B build
+cmake --build build --parallel
+cmake --build build --target compare
 ```
 
-成果物: `pokeemerald_jp.gba`
+成果物: `build/pokeemerald_jp.gba`
 
 ---
 

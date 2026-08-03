@@ -11,6 +11,8 @@
 > 以下の raw `.incbin` ブロック一覧は抽出前の構造資料であり、再生成に必要なラベル／範囲は
 > `data/text/rom_text_layout.json` に保存されています。また、抽出器 `tools/extract_all_text.py`
 > により常に再現可能なため、個別の incbin 分割作業は不要になりました。
+>
+> 2026-08-03現在、`.rodata` の主要ゲームデータと冒頭部分も用途別の `.inc` に構造化されています。
 
 このドキュメントは、日本版『ポケットモンスター エメラルド』（pokeemerald-jp）のROM構造を説明します。
 
@@ -153,6 +155,41 @@
 2. `tools/preproc/preproc` でバイト列に変換
 3. `baserom.gba` 内でバイト列を検索
 4. 該当ブロックを特定し、分割してテキスト化
+
+---
+
+## `.rodata` の構造化状況
+
+`data/data.s` は `data/rodata.inc` を読み込みます。`data/rodata.inc` の include 順はROM上の配置順そのものなので、並べ替えてはいけません。
+
+### 機能別に分割した冒頭データ
+
+従来の先頭ブロックは、次のファイルへ機能別に分割されています。
+
+| パス | 主な内容 |
+|---|---|
+| `data/rodata/main.inc` | メイン処理の読み取り専用データ |
+| `data/rodata/alloc.inc`、`bg.inc` | メモリ確保・背景 |
+| `data/rodata/window.inc`、`text.inc`、`fonts.inc` | ウィンドウ・文字描画・フォント |
+| `data/rodata/sprite.inc`、`overworld.inc` | スプライト・フィールド |
+| `data/rodata/field_screen_effect.inc`、`string_util.inc`、`link.inc` | 画面効果・文字列処理・通信 |
+
+`sDummyWindowTemplate` は `data/rodata/window.inc` にあり、ROMアドレスは `0x0829BEB0`、サイズは8バイトです。現在は `bg = WINDOW_NONE`（`0xFF`）とゼロ初期化された各フィールドを明示し、`baserom.gba` の `.incbin` を使用しません。
+
+### 構造化済みの主要ゲームデータ
+
+| ディレクトリ | データ |
+|---|---|
+| `data/pokemon/` | 種族値、進化、習得技、名前、図鑑、前後画像、パレット、アイコン |
+| `data/moves/` | 戦闘パラメータ、名前、説明、タイプ名 |
+| `data/items/` | アイテムパラメータ、通常／たいせつなものの説明 |
+| `data/abilities/` | 特性名・説明 |
+| `data/trainers/` | トレーナーテーブル |
+| `data/wild_encounters/` | 通常・大量発生・バトルピラミッドの野生出現 |
+| `data/decorations/` | もようがえデータ・説明・タイル |
+| `data/pokeball/` | ボール画像テーブル |
+
+これらは元のアドレス、エントリ幅、配置順を維持するアセンブリ定義です。編集時は各マクロのエントリサイズを変えず、最後に `cmake --build build --target compare` で一致を確認します。
 
 ---
 

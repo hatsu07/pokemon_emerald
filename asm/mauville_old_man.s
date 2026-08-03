@@ -42,7 +42,7 @@ _081205E6:
 _08120600: .4byte 0x03005AEC
 _08120604: .4byte 0x00002E28
 _08120608: .4byte 0x00002E51
-_0812060C: .4byte 0x0829BDA5
+_0812060C: .4byte gGameLanguage
 _08120610: .4byte 0x00002E2A
 _08120614: .4byte 0x0857AC08
 	thumb_func_end SetupBard
@@ -64,7 +64,7 @@ SetupHipster: @ 0x08120618
 	.align 2, 0
 _08120630: .4byte 0x03005AEC
 _08120634: .4byte 0x00002E28
-_08120638: .4byte 0x0829BDA5
+_08120638: .4byte gGameLanguage
 	thumb_func_end SetupHipster
 
 	thumb_func_start ResetStorytellerFlag
@@ -95,7 +95,7 @@ SetupGiddy: @ 0x08120648
 	.align 2, 0
 _08120664: .4byte 0x03005AEC
 _08120668: .4byte 0x00002E28
-_0812066C: .4byte 0x0829BDA5
+_0812066C: .4byte gGameLanguage
 _08120670: .4byte 0x00002E48
 	thumb_func_end SetupGiddy
 
@@ -1620,7 +1620,7 @@ _0812119C: .4byte 0x02039DF8
 _081211A0: .4byte 0x03005AF0
 _081211A4: .4byte 0x02021C40
 _081211A8: .4byte 0x02021C54
-_081211AC: .4byte 0x0829BDA5
+_081211AC: .4byte gGameLanguage
 	thumb_func_end StorytellerRecordNewStat
 
 	thumb_func_start ScrambleStatList

@@ -1276,7 +1276,7 @@ _080ED41E:
 _080ED428: .4byte 0x02023EAC
 _080ED42C: .4byte 0x03005AF0
 _080ED430: .4byte 0x03005A9A
-_080ED434: .4byte 0x0829BDA5
+_080ED434: .4byte gGameLanguage
 	thumb_func_end PutPokemonTodayCaughtOnAir
 
 	thumb_func_start UpdateWorldOfMastersAndPutItOnTheAir
@@ -1429,7 +1429,7 @@ _080ED568: .4byte 0x03005E20
 _080ED56C: .4byte 0x03005A70
 _080ED570: .4byte 0x02036FB8
 _080ED574: .4byte 0x03005AF0
-_080ED578: .4byte 0x0829BDA5
+_080ED578: .4byte gGameLanguage
 	thumb_func_end PutPokemonTodayFailedOnTheAir
 
 	thumb_func_start tv_store_id_3x
@@ -1566,7 +1566,7 @@ _080ED680: .4byte 0x02039BCC
 _080ED684: .4byte 0x02039BC4
 _080ED688: .4byte 0x02024190
 _080ED68C: .4byte 0x00002B30
-_080ED690: .4byte 0x0829BDA5
+_080ED690: .4byte gGameLanguage
 	thumb_func_end InterviewAfter_ContestLiveUpdates
 
 	thumb_func_start PutBattleUpdateOnTheAir
@@ -1685,7 +1685,7 @@ _080ED76E:
 	bx r0
 	.align 2, 0
 _080ED77C: .4byte 0x020226A8
-_080ED780: .4byte 0x0829BDA5
+_080ED780: .4byte gGameLanguage
 	thumb_func_end PutBattleUpdateOnTheAir
 
 	thumb_func_start Put3CheersForPokeblocksOnTheAir
@@ -1789,7 +1789,7 @@ _080ED84C:
 	b _080ED85C
 	.align 2, 0
 _080ED850: .4byte 0x03005AF0
-_080ED854: .4byte 0x0829BDA5
+_080ED854: .4byte gGameLanguage
 _080ED858:
 	mov r2, sb
 	strb r2, [r4, #0x15]
@@ -1865,7 +1865,7 @@ _080ED8E0: .4byte 0x000027CC
 _080ED8E4: .4byte 0x02037282
 _080ED8E8: .4byte 0x03005AF0
 _080ED8EC: .4byte 0x02021C40
-_080ED8F0: .4byte 0x0829BDA5
+_080ED8F0: .4byte gGameLanguage
 _080ED8F4: .4byte 0x000031A0
 _080ED8F8:
 	strb r0, [r4, #0x18]
@@ -2059,7 +2059,7 @@ _080EDA70: .4byte 0x03005E20
 _080EDA74: .4byte 0x02039AA0
 _080EDA78: .4byte 0x00002B30
 _080EDA7C: .4byte 0x02039BD0
-_080EDA80: .4byte 0x0829BDA5
+_080EDA80: .4byte gGameLanguage
 _080EDA84:
 	ldr r0, _080EDAA8
 	ldrb r0, [r0]
@@ -2082,7 +2082,7 @@ _080EDAA0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080EDAA8: .4byte 0x0829BDA5
+_080EDAA8: .4byte gGameLanguage
 _080EDAAC: .4byte 0x020226A0
 	thumb_func_end ContestLiveUpdates_BeforeInterview_5
 
@@ -2174,7 +2174,7 @@ _080EDB5C: .4byte 0x03005E20
 _080EDB60: .4byte 0x000027CC
 _080EDB64: .4byte 0x03005AF0
 _080EDB68: .4byte 0x00002B34
-_080EDB6C: .4byte 0x0829BDA5
+_080EDB6C: .4byte gGameLanguage
 _080EDB70:
 	strb r0, [r4, #0x1f]
 _080EDB72:
@@ -2420,7 +2420,7 @@ _080EDD66:
 	bx r0
 	.align 2, 0
 _080EDD70: .4byte 0x02037280
-_080EDD74: .4byte 0x0829BDA5
+_080EDD74: .4byte gGameLanguage
 _080EDD78: .4byte 0x03005AF0
 _080EDD7C: .4byte 0x00000BEB
 	thumb_func_end InterviewAfter_BravoTrainerBattleTowerProfile
@@ -2528,7 +2528,7 @@ _080EDE54: .4byte 0x03005E20
 _080EDE58: .4byte 0x02039C20
 _080EDE5C: .4byte 0x02036FB8
 _080EDE60: .4byte 0x03005AF0
-_080EDE64: .4byte 0x0829BDA5
+_080EDE64: .4byte gGameLanguage
 	thumb_func_end SaveRecordedItemPurchasesForTVShow
 
 	thumb_func_start PutNameRaterShowOnTheAir
@@ -2638,7 +2638,7 @@ _080EDF50: .4byte 0x03005AF0
 _080EDF54: .4byte 0x03005AEC
 _080EDF58: .4byte 0x03005E20
 _080EDF5C: .4byte 0x000027CC
-_080EDF60: .4byte 0x0829BDA5
+_080EDF60: .4byte gGameLanguage
 	thumb_func_end PutNameRaterShowOnTheAir
 
 	thumb_func_start StartMassOutbreak
@@ -2822,7 +2822,7 @@ _080EE0D8: .4byte 0x03005E20
 _080EE0DC: .4byte 0x000027CC
 _080EE0E0: .4byte 0x03005AF0
 _080EE0E4: .4byte 0x02024190
-_080EE0E8: .4byte 0x0829BDA5
+_080EE0E8: .4byte gGameLanguage
 	thumb_func_end InterviewAfter_FanClubLetter
 
 	thumb_func_start InterviewAfter_RecentHappenings
@@ -2863,7 +2863,7 @@ _080EE130: .4byte 0x03005AEC
 _080EE134: .4byte 0x03005E20
 _080EE138: .4byte 0x000027CC
 _080EE13C: .4byte 0x03005AF0
-_080EE140: .4byte 0x0829BDA5
+_080EE140: .4byte gGameLanguage
 	thumb_func_end InterviewAfter_RecentHappenings
 
 	thumb_func_start InterviewAfter_PkmnFanClubOpinions
@@ -2958,7 +2958,7 @@ _080EE204: .4byte 0x000027CC
 _080EE208: .4byte 0x02024190
 _080EE20C: .4byte 0x02037286
 _080EE210: .4byte 0x03005AF0
-_080EE214: .4byte 0x0829BDA5
+_080EE214: .4byte gGameLanguage
 _080EE218:
 	bl GetLeadMonIndex
 	lsls r0, r0, #0x18
@@ -3091,7 +3091,7 @@ _080EE314: .4byte 0x000027CC
 _080EE318: .4byte 0x00000147
 _080EE31C: .4byte 0x03005E20
 _080EE320: .4byte 0x08568B40
-_080EE324: .4byte 0x0829BDA5
+_080EE324: .4byte gGameLanguage
 	thumb_func_end sub_080EE238
 
 	thumb_func_start EndMassOutbreak
@@ -3378,7 +3378,7 @@ _080EE548: .4byte 0x03005E20
 _080EE54C: .4byte 0x02039CF2
 _080EE550: .4byte 0x02039CF0
 _080EE554: .4byte 0x03005AF0
-_080EE558: .4byte 0x0829BDA5
+_080EE558: .4byte gGameLanguage
 	thumb_func_end PutFishingAdviceShowOnTheAir
 
 	thumb_func_start SetPokemonAnglerSpecies
@@ -3506,7 +3506,7 @@ _080EE650: .4byte 0x0000FFFF
 _080EE654: .4byte 0x000027CC
 _080EE658: .4byte 0x03005E20
 _080EE65C: .4byte 0x03005AF0
-_080EE660: .4byte 0x0829BDA5
+_080EE660: .4byte gGameLanguage
 	thumb_func_end sub_080EE5A0
 
 	thumb_func_start sub_080EE664
@@ -3639,7 +3639,7 @@ _080EE76C: .4byte 0x08568B8A
 _080EE770: .4byte 0x08568B7C
 _080EE774: .4byte 0x03005AF0
 _080EE778: .4byte 0x00000EB8
-_080EE77C: .4byte 0x0829BDA5
+_080EE77C: .4byte gGameLanguage
 	thumb_func_end sub_080EE664
 
 	thumb_func_start sub_080EE780
@@ -3704,7 +3704,7 @@ _080EE7F4: .4byte 0x03005AEC
 _080EE7F8: .4byte 0x000027CC
 _080EE7FC: .4byte 0x03005E20
 _080EE800: .4byte 0x03005AF0
-_080EE804: .4byte 0x0829BDA5
+_080EE804: .4byte gGameLanguage
 	thumb_func_end sub_080EE780
 
 	thumb_func_start sub_080EE808
@@ -3771,7 +3771,7 @@ _080EE884: .4byte 0x03005E20
 _080EE888: .4byte 0x02037282
 _080EE88C: .4byte 0x02036FB8
 _080EE890: .4byte 0x03005AF0
-_080EE894: .4byte 0x0829BDA5
+_080EE894: .4byte gGameLanguage
 	thumb_func_end sub_080EE808
 
 	thumb_func_start AlertTVOfNewCoinTotal
@@ -3893,7 +3893,7 @@ _080EE97C: .4byte 0x03005AEC
 _080EE980: .4byte 0x03005E20
 _080EE984: .4byte 0x000027CC
 _080EE988: .4byte 0x03005AF0
-_080EE98C: .4byte 0x0829BDA5
+_080EE98C: .4byte gGameLanguage
 	thumb_func_end AlertTVOfNewCoinTotal
 
 	thumb_func_start AlertTVThatPlayerPlayedSlotMachine
@@ -4293,7 +4293,7 @@ _080EEC90: .4byte 0x03005AEC
 _080EEC94: .4byte 0x000027CC
 _080EEC98: .4byte 0x03005E20
 _080EEC9C: .4byte 0x03005AF0
-_080EECA0: .4byte 0x0829BDA5
+_080EECA0: .4byte gGameLanguage
 	thumb_func_end TV_PutSecretBaseVisitOnTheAir
 
 	thumb_func_start sub_080EECA4
@@ -4457,7 +4457,7 @@ _080EEDE2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080EEDE8: .4byte 0x0829BDA5
+_080EEDE8: .4byte gGameLanguage
 	thumb_func_end sub_080EECA4
 
 	thumb_func_start sub_080EEDEC
@@ -4524,7 +4524,7 @@ _080EEE68: .4byte 0x03005E20
 _080EEE6C: .4byte 0x03005AF0
 _080EEE70: .4byte 0x02037280
 _080EEE74: .4byte 0x02037282
-_080EEE78: .4byte 0x0829BDA5
+_080EEE78: .4byte gGameLanguage
 	thumb_func_end sub_080EEDEC
 
 	thumb_func_start sub_080EEE7C
@@ -4642,7 +4642,7 @@ _080EEF58: .4byte 0x03005AEC
 _080EEF5C: .4byte 0x000027CC
 _080EEF60: .4byte 0x03005E20
 _080EEF64: .4byte 0x03005AF0
-_080EEF68: .4byte 0x0829BDA5
+_080EEF68: .4byte gGameLanguage
 	thumb_func_end sub_080EEE7C
 
 	thumb_func_start sub_080EEF6C
@@ -4711,7 +4711,7 @@ _080EEFE8: .4byte 0x03005AEC
 _080EEFEC: .4byte 0x000027CC
 _080EEFF0: .4byte 0x03005E20
 _080EEFF4: .4byte 0x03005AF0
-_080EEFF8: .4byte 0x0829BDA5
+_080EEFF8: .4byte gGameLanguage
 	thumb_func_end sub_080EEF6C
 
 	thumb_func_start sub_080EEFFC
@@ -4790,7 +4790,7 @@ _080EF094: .4byte 0x03005AEC
 _080EF098: .4byte 0x000027CC
 _080EF09C: .4byte 0x03005E20
 _080EF0A0: .4byte 0x03005AF0
-_080EF0A4: .4byte 0x0829BDA5
+_080EF0A4: .4byte gGameLanguage
 _080EF0A8:
 	adds r0, r5, #0
 	movs r1, #3
@@ -5075,7 +5075,7 @@ _080EF2C4: .4byte 0x03005E20
 _080EF2C8: .4byte 0x03005AF0
 _080EF2CC: .4byte 0x00002BB0
 _080EF2D0: .4byte 0x00002BB2
-_080EF2D4: .4byte 0x0829BDA5
+_080EF2D4: .4byte gGameLanguage
 	thumb_func_end sub_080EF244
 
 	thumb_func_start sub_080EF2D8
@@ -5400,7 +5400,7 @@ _080EF574: .4byte 0x03005AEC
 _080EF578: .4byte 0x03005AF0
 _080EF57C: .4byte 0x00000CAA
 _080EF580: .4byte 0x00000CAC
-_080EF584: .4byte 0x0829BDA5
+_080EF584: .4byte gGameLanguage
 	thumb_func_end sub_080EF3E0
 
 	thumb_func_start sub_080EF588
@@ -5499,7 +5499,7 @@ _080EF658: .4byte 0x02021C40
 _080EF65C: .4byte 0x000040ED
 _080EF660: .4byte 0x000040EE
 _080EF664: .4byte 0x000040EF
-_080EF668: .4byte 0x0829BDA5
+_080EF668: .4byte gGameLanguage
 _080EF66C: .4byte 0x00004054
 _080EF670: .4byte 0x00001AA9
 _080EF674:
@@ -5635,7 +5635,7 @@ _080EF770: .4byte 0x000027CC
 _080EF774: .4byte 0x03005E20
 _080EF778: .4byte 0x03005AF0
 _080EF77C: .4byte 0x08568B98
-_080EF780: .4byte 0x0829BDA5
+_080EF780: .4byte gGameLanguage
 	thumb_func_end sub_080EF6F8
 
 	thumb_func_start sub_080EF784

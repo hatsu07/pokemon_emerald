@@ -61,7 +61,7 @@ _08001358:
 	bx r0
 	.align 2, 0
 _08001364: .4byte 0x030008E0
-_08001368: .4byte 0x0829BEAC
+_08001368: .4byte sZeroedBgControlStruct
 	thumb_func_end ResetBgControlStructs
 
 	thumb_func_start Unused_ResetBgControlStruct
@@ -86,7 +86,7 @@ _0800138A:
 	bx r0
 	.align 2, 0
 _08001390: .4byte 0x030008E0
-_08001394: .4byte 0x0829BEAC
+_08001394: .4byte sZeroedBgControlStruct
 	thumb_func_end Unused_ResetBgControlStruct
 
 	thumb_func_start SetBgControlAttributes

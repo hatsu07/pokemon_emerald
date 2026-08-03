@@ -88,9 +88,9 @@ InitLinkTestBG: @ 0x08008FB0
 	beq _08009028
 	b _0800905C
 	.align 2, 0
-_0800900C: .4byte 0x082BFB6C
+_0800900C: .4byte sLinkTestDigitsPal
 _08009010: .4byte 0x040000D4
-_08009014: .4byte 0x082BFB8C
+_08009014: .4byte sLinkTestDigitsGfx
 _08009018: .4byte 0x80000110
 _0800901C: .4byte 0x030031D0
 _08009020:
@@ -201,9 +201,9 @@ sub_08009088: @ 0x08009088
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080090F4: .4byte 0x082BFB6C
+_080090F4: .4byte sLinkTestDigitsPal
 _080090F8: .4byte 0x040000D4
-_080090FC: .4byte 0x082BFB8C
+_080090FC: .4byte sLinkTestDigitsGfx
 _08009100: .4byte 0x80000110
 _08009104: .4byte 0x030031D0
 _08009108: .4byte 0x082BFF20
@@ -349,8 +349,8 @@ _0800923A:
 _08009240: .4byte 0x02022684
 _08009244: .4byte 0x03005AF0
 _08009248: .4byte 0x0202267E
-_0800924C: .4byte 0x0829BDA5
-_08009250: .4byte 0x0829BDA4
+_0800924C: .4byte gGameLanguage
+_08009250: .4byte gGameVersion
 _08009254: .4byte 0x0000087F
 	thumb_func_end InitLocalLinkPlayer
 
@@ -3758,9 +3758,9 @@ sub_0800AB5C: @ 0x0800AB5C
 	bx r0
 	.align 2, 0
 _0800ABF8: .4byte 0x082BFEB8
-_0800ABFC: .4byte 0x082BF4D8
-_0800AC00: .4byte 0x082BF980
-_0800AC04: .4byte 0x082BF4B8
+_0800ABFC: .4byte sWirelessLinkDisplayGfx
+_0800AC00: .4byte sWirelessLinkDisplayTilemap
+_0800AC04: .4byte sWirelessLinkDisplayPal
 _0800AC08: .4byte 0x082BFF74
 _0800AC0C: .4byte 0x082BFE50
 _0800AC10: .4byte 0x082BFE62

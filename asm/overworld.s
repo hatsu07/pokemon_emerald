@@ -4544,7 +4544,7 @@ InitOverworldGraphicsRegisters: @ 0x080861DC
 _080862D4: .4byte 0x00001F1F
 _080862D8: .4byte 0x00000101
 _080862DC: .4byte 0x0000FFFF
-_080862E0: .4byte 0x082BF42C
+_080862E0: .4byte sBlendTarget2BgMasks
 _080862E4: .4byte 0x0000070D
 _080862E8: .4byte 0x00007060
 	thumb_func_end InitOverworldGraphicsRegisters
@@ -6220,8 +6220,9 @@ _08086F24:
 _08086F28: .4byte 0x03000E18
 	thumb_func_end sub_08086EFC
 
-	thumb_func_start sub_08086F2C
-sub_08086F2C: @ 0x08086F2C
+	thumb_func_start Overworld_RecvKeysFromLinkIsRunning
+	.globl Overworld_RecvKeysFromLinkIsRunning
+Overworld_RecvKeysFromLinkIsRunning: @ 0x08086F2C
 	push {lr}
 	bl GetLinkRecvQueueLength
 	cmp r0, #1
@@ -6272,10 +6273,12 @@ _08086F92:
 	pop {r1}
 	bx r1
 	.align 2, 0
-	thumb_func_end sub_08086F2C
+	thumb_func_end Overworld_RecvKeysFromLinkIsRunning
 
 	thumb_func_start sub_08086F98
-sub_08086F98: @ 0x08086F98
+	.globl Overworld_SendKeysToLinkIsRunning
+sub_08086F98:
+Overworld_SendKeysToLinkIsRunning: @ 0x08086F98
 	push {lr}
 	bl GetLinkSendQueueLength
 	cmp r0, #1

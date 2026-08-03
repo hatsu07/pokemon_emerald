@@ -235,7 +235,7 @@ _08152220:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0815222C: .4byte 0x082BF2F8
+_0815222C: .4byte gDummyOamData
 	thumb_func_end sub_0815219C
 
 	thumb_func_start sub_08152230
@@ -300,7 +300,7 @@ _081522A0:
 	bx r1
 	.align 2, 0
 _081522A8: .4byte 0x03002598
-_081522AC: .4byte 0x082BF2F8
+_081522AC: .4byte gDummyOamData
 	thumb_func_end sub_08152230
 
 	thumb_func_start sub_081522B0
@@ -364,7 +364,7 @@ _081522FE:
 	b _0815239C
 	.align 2, 0
 _0815231C: .4byte 0x03002598
-_08152320: .4byte 0x082BF2F8
+_08152320: .4byte gDummyOamData
 _08152324:
 	ldrb r0, [r2, #0xe]
 	ldrb r4, [r2, #0xa]
@@ -779,6 +779,6 @@ _08152618:
 	.align 2, 0
 _08152620: .4byte 0xFFFFFE00
 _08152624: .4byte 0x03002598
-_08152628: .4byte 0x082BF2F8
+_08152628: .4byte gDummyOamData
 	thumb_func_end sub_081525AC
 

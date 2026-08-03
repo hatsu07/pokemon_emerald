@@ -572,8 +572,8 @@ CreateTrainerSprite: @ 0x080B55C4
 _080B564C: .4byte 0x082D91CC
 _080B5650: .4byte 0x082D8EE4
 _080B5654: .4byte 0x08536EBC
-_080B5658: .4byte 0x082BF304
-_080B565C: .4byte 0x082BF310
+_080B5658: .4byte gDummySpriteAnimTable
+_080B565C: .4byte gDummySpriteAffineAnimTable
 _080B5660: .4byte 0x08007141
 	thumb_func_end CreateTrainerSprite
 

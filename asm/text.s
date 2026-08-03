@@ -484,7 +484,7 @@ _080047D2:
 	b _080047EC
 	.align 2, 0
 _080047E0: .4byte 0x03000948
-_080047E4: .4byte 0x0829BEB8
+_080047E4: .4byte sFontHalfRowOffsets
 _080047E8:
 	ldrh r0, [r2]
 	lsrs r0, r0, #8
@@ -2326,7 +2326,7 @@ _08005536:
 	ldr r7, _0800553C
 	b _08005542
 	.align 2, 0
-_0800553C: .4byte 0x0829BFB8
+_0800553C: .4byte sDownArrowTiles
 _08005540:
 	ldr r7, _080055A4
 _08005542:
@@ -2379,8 +2379,8 @@ _0800559A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080055A4: .4byte 0x0829C078
-_080055A8: .4byte 0x0829C638
+_080055A4: .4byte sDarkDownArrowTiles
+_080055A8: .4byte sDownArrowYCoords
 	thumb_func_end TextPrinterDrawDownArrow
 
 	thumb_func_start TextPrinterClearDownArrow
@@ -2566,7 +2566,7 @@ _080056F4:
 	b _08005702
 	.align 2, 0
 _080056F8: .4byte 0x030030B4
-_080056FC: .4byte 0x0829BFB8
+_080056FC: .4byte sDownArrowTiles
 _08005700:
 	ldr r6, _08005758
 _08005702:
@@ -2612,8 +2612,8 @@ _08005746:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08005758: .4byte 0x0829C078
-_0800575C: .4byte 0x0829C638
+_08005758: .4byte sDarkDownArrowTiles
+_0800575C: .4byte sDownArrowYCoords
 	thumb_func_end DrawDownArrow
 
 	thumb_func_start RenderText
@@ -3184,7 +3184,7 @@ _08005BC4:
 	movs r0, #0
 	b _08005C0C
 	.align 2, 0
-_08005BF0: .4byte 0x0829C63C
+_08005BF0: .4byte sWindowVerticalScrollSpeeds
 _08005BF4:
 	ldrb r0, [r6, #4]
 	ldrb r1, [r6, #0xd]
@@ -3390,7 +3390,7 @@ _08005D8A:
 	ldr r0, [r2]
 	b _08005DA4
 	.align 2, 0
-_08005D94: .4byte 0x0829C640
+_08005D94: .4byte sGlyphWidthFuncs
 _08005D98:
 	adds r2, #8
 	adds r1, #8
@@ -3860,8 +3860,8 @@ DrawKeypadIcon: @ 0x08006124
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0800616C: .4byte 0x0829C670
-_08006170: .4byte 0x0829C6A4
+_0800616C: .4byte sKeypadIcons
+_08006170: .4byte sKeypadIconTiles
 	thumb_func_end DrawKeypadIcon
 
 	thumb_func_start GetKeypadIconTileOffset
@@ -3873,7 +3873,7 @@ GetKeypadIconTileOffset: @ 0x08006174
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_08006180: .4byte 0x0829C670
+_08006180: .4byte sKeypadIcons
 	thumb_func_end GetKeypadIconTileOffset
 
 	thumb_func_start GetKeypadIconWidth
@@ -3885,7 +3885,7 @@ GetKeypadIconWidth: @ 0x08006184
 	ldrb r0, [r0, #2]
 	bx lr
 	.align 2, 0
-_08006190: .4byte 0x0829C670
+_08006190: .4byte sKeypadIcons
 	thumb_func_end GetKeypadIconWidth
 
 	thumb_func_start GetKeypadIconHeight
@@ -3897,7 +3897,7 @@ GetKeypadIconHeight: @ 0x08006194
 	ldrb r0, [r0, #3]
 	bx lr
 	.align 2, 0
-_080061A0: .4byte 0x0829C670
+_080061A0: .4byte sKeypadIcons
 	thumb_func_end GetKeypadIconHeight
 
 	thumb_func_start SetDefaultFontsPointer
@@ -3908,7 +3908,7 @@ SetDefaultFontsPointer: @ 0x080061A4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080061B0: .4byte 0x0829CEA4
+_080061B0: .4byte sFontInfos
 	thumb_func_end SetDefaultFontsPointer
 
 	thumb_func_start GetFontAttribute
@@ -3946,7 +3946,7 @@ _080061F4:
 	ldrb r0, [r0, #4]
 	b _08006292
 	.align 2, 0
-_08006204: .4byte 0x0829CEA4
+_08006204: .4byte sFontInfos
 _08006208:
 	ldr r1, _08006218
 	lsls r0, r2, #1
@@ -3956,7 +3956,7 @@ _08006208:
 	ldrb r0, [r0, #5]
 	b _08006292
 	.align 2, 0
-_08006218: .4byte 0x0829CEA4
+_08006218: .4byte sFontInfos
 _0800621C:
 	ldr r1, _0800622C
 	lsls r0, r2, #1
@@ -3966,7 +3966,7 @@ _0800621C:
 	ldrb r0, [r0, #6]
 	b _08006292
 	.align 2, 0
-_0800622C: .4byte 0x0829CEA4
+_0800622C: .4byte sFontInfos
 _08006230:
 	ldr r1, _08006240
 	lsls r0, r2, #1
@@ -3976,7 +3976,7 @@ _08006230:
 	ldrb r0, [r0, #7]
 	b _08006292
 	.align 2, 0
-_08006240: .4byte 0x0829CEA4
+_08006240: .4byte sFontInfos
 _08006244:
 	ldr r0, _08006254
 	lsls r1, r2, #1
@@ -3986,7 +3986,7 @@ _08006244:
 	ldrb r0, [r1, #8]
 	b _08006278
 	.align 2, 0
-_08006254: .4byte 0x0829CEA4
+_08006254: .4byte sFontInfos
 _08006258:
 	ldr r0, _08006268
 	lsls r1, r2, #1
@@ -3996,7 +3996,7 @@ _08006258:
 	ldrb r0, [r1, #8]
 	b _08006290
 	.align 2, 0
-_08006268: .4byte 0x0829CEA4
+_08006268: .4byte sFontInfos
 _0800626C:
 	ldr r0, _08006280
 	lsls r1, r2, #1
@@ -4009,7 +4009,7 @@ _08006278:
 	lsrs r0, r0, #0x1c
 	b _08006292
 	.align 2, 0
-_08006280: .4byte 0x0829CEA4
+_08006280: .4byte sFontInfos
 _08006284:
 	ldr r0, _08006298
 	lsls r1, r2, #1
@@ -4023,7 +4023,7 @@ _08006292:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08006298: .4byte 0x0829CEA4
+_08006298: .4byte sFontInfos
 	thumb_func_end GetFontAttribute
 
 	thumb_func_start GetMenuCursorDimensionByFont
@@ -4038,7 +4038,7 @@ GetMenuCursorDimensionByFont: @ 0x0800629C
 	ldrb r0, [r1]
 	bx lr
 	.align 2, 0
-_080062B0: .4byte 0x0829CF04
+_080062B0: .4byte sMenuCursorDimensions
 	thumb_func_end GetMenuCursorDimensionByFont
 
 	thumb_func_start DecompressGlyphFont9
@@ -4076,7 +4076,7 @@ DecompressGlyphFont9: @ 0x080062B4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080062F8: .4byte 0x0829CF14
+_080062F8: .4byte gFontSmallJapaneseGlyphs
 _080062FC: .4byte 0x03003030
 	thumb_func_end DecompressGlyphFont9
 
@@ -4121,7 +4121,7 @@ sub_08006304: @ 0x08006304
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08006348: .4byte 0x082A0F14
+_08006348: .4byte gFontNormalJapaneseGlyphs
 _0800634C: .4byte 0x03003030
 	thumb_func_end sub_08006304
 
@@ -4208,9 +4208,9 @@ _080063E6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080063EC: .4byte 0x082A4F14
+_080063EC: .4byte gFontSmallLatinGlyphs
 _080063F0: .4byte 0x03003030
-_080063F4: .4byte 0x082ACF14
+_080063F4: .4byte gFontSmallLatinGlyphWidths
 	thumb_func_end sub_08006354
 
 	thumb_func_start sub_080063F8
@@ -4225,7 +4225,7 @@ sub_080063F8: @ 0x080063F8
 	ldrb r0, [r0]
 	b _08006412
 	.align 2, 0
-_0800640C: .4byte 0x082ACF14
+_0800640C: .4byte gFontSmallLatinGlyphWidths
 _08006410:
 	movs r0, #0xa
 _08006412:
@@ -4308,7 +4308,7 @@ _080064A4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080064AC: .4byte 0x082A4F14
+_080064AC: .4byte gFontSmallLatinGlyphs
 _080064B0: .4byte 0x03003030
 	thumb_func_end sub_08006418
 
@@ -4395,9 +4395,9 @@ _0800654A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08006550: .4byte 0x082AD02C
+_08006550: .4byte gFontNarrowLatinGlyphs
 _08006554: .4byte 0x03003030
-_08006558: .4byte 0x082B502C
+_08006558: .4byte gFontNarrowLatinGlyphWidths
 	thumb_func_end sub_080064B8
 
 	thumb_func_start sub_0800655C
@@ -4412,7 +4412,7 @@ sub_0800655C: @ 0x0800655C
 	ldrb r0, [r0]
 	b _08006576
 	.align 2, 0
-_08006570: .4byte 0x082B502C
+_08006570: .4byte gFontNarrowLatinGlyphWidths
 _08006574:
 	movs r0, #0xa
 _08006576:
@@ -4498,9 +4498,9 @@ _0800660E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08006614: .4byte 0x082B5144
+_08006614: .4byte gFontSmallNarrowLatinGlyphs
 _08006618: .4byte 0x03003030
-_0800661C: .4byte 0x082BD144
+_0800661C: .4byte gFontSmallNarrowLatinGlyphWidths
 	thumb_func_end sub_0800657C
 
 	thumb_func_start sub_08006620
@@ -4515,7 +4515,7 @@ sub_08006620: @ 0x08006620
 	ldrb r0, [r0]
 	b _0800663A
 	.align 2, 0
-_08006634: .4byte 0x082BD144
+_08006634: .4byte gFontSmallNarrowLatinGlyphWidths
 _08006638:
 	movs r0, #0xa
 _0800663A:
@@ -4559,7 +4559,7 @@ sub_08006640: @ 0x08006640
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08006684: .4byte 0x082BD25C
+_08006684: .4byte sFontBoldJapaneseGlyphs
 _08006688: .4byte 0x03003030
 	thumb_func_end sub_08006640
 

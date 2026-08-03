@@ -92,7 +92,7 @@ _08003120:
 	.align 2, 0
 _08003124: .4byte 0x03003010
 _08003128: .4byte 0x0800308D
-_0800312C: .4byte 0x0829BEB0
+_0800312C: .4byte sDummyWindowTemplate
 _08003130: .4byte 0x02020004
 _08003134: .4byte 0x03002FF4
 _08003138:
@@ -552,7 +552,7 @@ _080034B8:
 	.align 2, 0
 _080034C0: .4byte 0x02020004
 _080034C4: .4byte 0x03002FF4
-_080034C8: .4byte 0x0829BEB0
+_080034C8: .4byte sDummyWindowTemplate
 _080034CC: .4byte 0x03003010
 _080034D0: .4byte 0x0800308D
 	thumb_func_end RemoveWindow

@@ -95,8 +95,8 @@ _08153EB6:
 _08153EC0: .4byte 0x020205AC
 _08153EC4: .4byte 0x08153FE5
 _08153EC8: .4byte 0x0846FA18
-_08153ECC: .4byte 0x082BF304
-_08153ED0: .4byte 0x082BF310
+_08153ECC: .4byte gDummySpriteAnimTable
+_08153ED0: .4byte gDummySpriteAffineAnimTable
 	thumb_func_end SetUpReflection
 
 	thumb_func_start GetReflectionVerticalOffset
@@ -3345,7 +3345,7 @@ sub_0815573C: @ 0x0815573C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08155780: .4byte 0x082BF314
+_08155780: .4byte gDummySpriteTemplate
 _08155784: .4byte 0x020205AC
 _08155788: .4byte 0x0815578D
 	thumb_func_end sub_0815573C

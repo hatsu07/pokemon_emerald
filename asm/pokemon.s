@@ -404,10 +404,10 @@ _0806786E:
 	b _08067A34
 	.align 2, 0
 _08067998: .4byte 0x03005AF0
-_0806799C: .4byte 0x0829BDA5
+_0806799C: .4byte gGameLanguage
 _080679A0: .4byte 0x082F0D54
 _080679A4: .4byte 0x082F00B4
-_080679A8: .4byte 0x0829BDA4
+_080679A8: .4byte gGameVersion
 _080679AC:
 	bl Random
 	lsls r0, r0, #0x10

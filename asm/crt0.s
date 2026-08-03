@@ -12,7 +12,7 @@
 
 	arm_func_start _start
 _start: @ 0x08000000
-	b _init
+	b Init
 
 @ 0x08000004 - 0x0800009F
 @ Nintendo logo data checked by the GBA BIOS.
@@ -145,127 +145,164 @@ gRomHeaderReserved:
 @ Remaining GF ROM-header save/link metadata.
 .include "data/gf_rom_header.inc"
 
-_init:
-	mov r0, #0x12
+@ crt0-local constants. Values are chosen to preserve the original ROM bytes.
+.set CRT0_SYSTEM_STACK_TOP,              IWRAM_END - 0x1C0
+.set CRT0_IRQ_STACK_TOP,                 IWRAM_END - 0x60
+.set CRT0_INTR_TABLE,                    0x030027B0
+.set CRT0_STWI_STATUS_PTR,               0x03007608
+.set CRT0_INTR_TABLE_ENTRY_SIZE,         4
+.set CRT0_STWI_INTR_INDEX_OFFSET,        0xA
+.set CRT0_NESTED_INTR_ALWAYS_FLAGS,      INTR_FLAG_SERIAL | INTR_FLAG_TIMER3 | INTR_FLAG_VCOUNT | INTR_FLAG_HBLANK
+
+Init:
+	mov r0, #PSR_IRQ_MODE
 	msr cpsr_fc, r0
-	ldr sp, _0800023C
-	mov r0, #0x1f
+	ldr sp, .LIrqStackTop
+	mov r0, #PSR_SYS_MODE
 	msr cpsr_fc, r0
-	ldr sp, _08000238
-	ldr r1, _08000240
-	add r0, pc, #0x20
+	ldr sp, .LSystemStackTop
+	ldr r1, .LIntrVector
+	adr r0, IntrMain
 	str r0, [r1]
-	ldr r1, _08000244
+	ldr r1, .LAgbMainThumb
 	mov lr, pc
 	bx r1
 	arm_func_end _start
 
-	arm_func_start _init.ret
-_init.ret: @ 0x08000234
-	b _init
+	arm_func_start Init_Return
+Init_Return: @ 0x08000234
+	b Init
 	.align 2, 0
-_08000238: .4byte 0x03007E40
-_0800023C: .4byte 0x03007FA0
-_08000240: .4byte 0x03007FFC
+.LSystemStackTop: .4byte CRT0_SYSTEM_STACK_TOP
+.LIrqStackTop:    .4byte CRT0_IRQ_STACK_TOP
+.LIntrVector:     .4byte INTR_VECTOR
 @ AgbMain is Thumb code at 0x080003A4.
 @ Function pointers to Thumb code store bit 0 as 1.
-_08000244: .4byte AgbMain + 1
-	arm_func_end _init.ret
+.LAgbMainThumb:   .4byte AgbMain + 1
+	arm_func_end Init_Return
 
-	arm_func_start _intr
-_intr: @ 0x08000248
-	mov r3, #0x4000000
-	add r3, r3, #0x200
+	arm_func_start IntrMain
+IntrMain: @ 0x08000248
+	mov r3, #REG_BASE
+	add r3, r3, #OFFSET_REG_IE
+
+	@ Read IE and IF together:
+	@   r2[15:0]  = IE
+	@   r2[31:16] = IF
 	ldr r2, [r3]
-	ldrh r1, [r3, #8]
+	ldrh r1, [r3, #OFFSET_REG_IME - OFFSET_REG_IE]
 	mrs r0, spsr
 	push {r0, r1, r2, r3, lr}
+
+	@ Disable master IRQs while selecting the interrupt to dispatch.
 	mov r0, #0
-	strh r0, [r3, #8]
-	and r1, r2, r2, lsr #16
+	strh r0, [r3, #OFFSET_REG_IME - OFFSET_REG_IE]
+	and r1, r2, r2, lsr #16 @ r1 = IE & IF
+
+	@ ip is the byte offset into the interrupt-handler table.
 	mov ip, #0
-	ands r0, r1, #4
-	bne _08000320
-	add ip, ip, #4
+
+	@ Interrupt priority order:
+	@ VCount, Serial, Timer3, HBlank, VBlank, Timer0-2,
+	@ DMA0-3, Keypad, Game Pak.
+	ands r0, r1, #INTR_FLAG_VCOUNT
+	bne IntrMain_FoundIntr
+	add ip, ip, #CRT0_INTR_TABLE_ENTRY_SIZE
+
+	@ Non-VCount handlers may be interrupted by the restricted IRQ set below.
 	mov r0, #1
-	strh r0, [r3, #8]
-	ands r0, r1, #0x80
-	bne _08000320
-	add ip, ip, #4
-	ands r0, r1, #0x40
-	bne _08000320
-	add ip, ip, #4
-	ands r0, r1, #2
-	bne _08000320
-	add ip, ip, #4
-	ands r0, r1, #1
-	bne _08000320
-	add ip, ip, #4
-	ands r0, r1, #8
-	bne _08000320
-	add ip, ip, #4
-	ands r0, r1, #0x10
-	bne _08000320
-	add ip, ip, #4
-	ands r0, r1, #0x20
-	bne _08000320
-	add ip, ip, #4
-	ands r0, r1, #0x100
-	bne _08000320
-	add ip, ip, #4
-	ands r0, r1, #0x200
-	bne _08000320
-	add ip, ip, #4
-	ands r0, r1, #0x400
-	bne _08000320
-	add ip, ip, #4
-	ands r0, r1, #0x800
-	bne _08000320
-	add ip, ip, #4
-	ands r0, r1, #0x1000
-	bne _08000320
-	add ip, ip, #4
-	ands r0, r1, #0x2000
-	strbne r0, [r3, #-0x17c]
-_0800031C:
-	bne _0800031C
-_08000320:
-	strh r0, [r3, #2]
+	strh r0, [r3, #OFFSET_REG_IME - OFFSET_REG_IE]
+
+	ands r0, r1, #INTR_FLAG_SERIAL
+	bne IntrMain_FoundIntr
+	add ip, ip, #CRT0_INTR_TABLE_ENTRY_SIZE
+	ands r0, r1, #INTR_FLAG_TIMER3
+	bne IntrMain_FoundIntr
+	add ip, ip, #CRT0_INTR_TABLE_ENTRY_SIZE
+	ands r0, r1, #INTR_FLAG_HBLANK
+	bne IntrMain_FoundIntr
+	add ip, ip, #CRT0_INTR_TABLE_ENTRY_SIZE
+	ands r0, r1, #INTR_FLAG_VBLANK
+	bne IntrMain_FoundIntr
+	add ip, ip, #CRT0_INTR_TABLE_ENTRY_SIZE
+	ands r0, r1, #INTR_FLAG_TIMER0
+	bne IntrMain_FoundIntr
+	add ip, ip, #CRT0_INTR_TABLE_ENTRY_SIZE
+	ands r0, r1, #INTR_FLAG_TIMER1
+	bne IntrMain_FoundIntr
+	add ip, ip, #CRT0_INTR_TABLE_ENTRY_SIZE
+	ands r0, r1, #INTR_FLAG_TIMER2
+	bne IntrMain_FoundIntr
+	add ip, ip, #CRT0_INTR_TABLE_ENTRY_SIZE
+	ands r0, r1, #INTR_FLAG_DMA0
+	bne IntrMain_FoundIntr
+	add ip, ip, #CRT0_INTR_TABLE_ENTRY_SIZE
+	ands r0, r1, #INTR_FLAG_DMA1
+	bne IntrMain_FoundIntr
+	add ip, ip, #CRT0_INTR_TABLE_ENTRY_SIZE
+	ands r0, r1, #INTR_FLAG_DMA2
+	bne IntrMain_FoundIntr
+	add ip, ip, #CRT0_INTR_TABLE_ENTRY_SIZE
+	ands r0, r1, #INTR_FLAG_DMA3
+	bne IntrMain_FoundIntr
+	add ip, ip, #CRT0_INTR_TABLE_ENTRY_SIZE
+	ands r0, r1, #INTR_FLAG_KEYPAD
+	bne IntrMain_FoundIntr
+	add ip, ip, #CRT0_INTR_TABLE_ENTRY_SIZE
+
+	@ A Game Pak IRQ means the cartridge was removed. Disable sound and stop.
+	ands r0, r1, #INTR_FLAG_GAMEPAK
+	strbne r0, [r3, #OFFSET_REG_SOUNDCNT_X - OFFSET_REG_IE]
+IntrMain_GamePakHang:
+	bne IntrMain_GamePakHang
+
+IntrMain_FoundIntr:
+	@ Acknowledge the selected interrupt and prevent it from re-entering.
+	strh r0, [r3, #OFFSET_REG_IF - OFFSET_REG_IE]
 	bic r2, r2, r0
-	ldr r0, _0800039C
+
+	@ Build the restricted IE mask used while the handler runs.
+	ldr r0, .LStwiStatusPtr
 	ldr r0, [r0]
-	ldrb r0, [r0, #0xa]
-	mov r1, #8
+	ldrb r0, [r0, #CRT0_STWI_INTR_INDEX_OFFSET]
+	mov r1, #INTR_FLAG_TIMER0
 	lsl r0, r1, r0
-	orr r0, r0, #0x2000
-	orr r1, r0, #0xc6
+	orr r0, r0, #INTR_FLAG_GAMEPAK
+	orr r1, r0, #CRT0_NESTED_INTR_ALWAYS_FLAGS
 	and r1, r1, r2
 	strh r1, [r3]
+
+	@ Run the selected handler in System mode using the System stack.
 	mrs r3, cpsr
-	bic r3, r3, #0xdf
-	orr r3, r3, #0x1f
+	bic r3, r3, #PSR_I_BIT | PSR_F_BIT | PSR_MODE_MASK
+	orr r3, r3, #PSR_SYS_MODE
 	msr cpsr_fc, r3
-	ldr r1, _080003A0
+
+	ldr r1, .LIntrTable
 	add r1, r1, ip
 	ldr r0, [r1]
 	stmdb sp!, {lr}
-	add lr, pc, #0
+	adr lr, IntrMain_Return
 	bx r0
-	arm_func_end _intr
+	arm_func_end IntrMain
 
-	arm_func_start _intr.ret
-_intr.ret: @ 0x08000374
+	arm_func_start IntrMain_Return
+IntrMain_Return: @ 0x08000374
 	ldm sp!, {lr}
+
+	@ Return to IRQ mode with IRQs disabled before restoring IRQ-bank state.
 	mrs r3, cpsr
-	bic r3, r3, #0xdf
-	orr r3, r3, #0x92
+	bic r3, r3, #PSR_I_BIT | PSR_F_BIT | PSR_MODE_MASK
+	orr r3, r3, #PSR_I_BIT | PSR_IRQ_MODE
 	msr cpsr_fc, r3
+
 	pop {r0, r1, r2, r3, lr}
-	strh r2, [r3]
-	strh r1, [r3, #8]
+	strh r2, [r3] @ Restore IE.
+	strh r1, [r3, #OFFSET_REG_IME - OFFSET_REG_IE] @ Restore IME.
 	msr spsr_fc, r0
 	bx lr
+
 	.align 2, 0
-_0800039C: .4byte 0x03007608
-_080003A0: .4byte 0x030027B0
-	arm_func_end _intr.ret
+.LStwiStatusPtr: .4byte CRT0_STWI_STATUS_PTR
+.LIntrTable:     .4byte CRT0_INTR_TABLE
+	arm_func_end IntrMain_Return
