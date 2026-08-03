@@ -18,9 +18,7 @@ gUnknown_82EEC7A: @ 0x082EEC7A
 	.globl gUnknown_82EEF14
 gUnknown_82EEF14: @ 0x082EEF14
 	.incbin "baserom.gba", 0x2eef14, 0x28c
-	.globl gUnknown_82EF1A0
-gUnknown_82EF1A0: @ 0x082EF1A0
-	.incbin "baserom.gba", 0x2ef1a0, 0x80
+	.include "data/pokemon/nature_stat_table.inc"
 	.globl gUnknown_82EF220
 gUnknown_82EF220: @ 0x082EF220
 	.include "data/pokemon/tmhm_learnsets.inc"

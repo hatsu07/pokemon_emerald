@@ -11995,7 +11995,7 @@ _0806D38A:
 	movs r0, #0x6e
 	b _0806D3B2
 	.align 2, 0
-_0806D3AC: .4byte 0x082EF1A0
+_0806D3AC: .4byte gNatureStatTable
 _0806D3B0:
 	movs r0, #0x5a
 _0806D3B2:
