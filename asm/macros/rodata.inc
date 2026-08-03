@@ -154,6 +154,16 @@
 	.byte ((\points) >> MOVE_POINTS_EFFECT) & 1
 	.endm
 
+	.macro battle_dome_style_threshold style, combo, stat_raise, stat_lower, rare, heal, risky, status, damage, defense, accurate, powerful, popular, luck, strong, low_pp, effect
+	.if (\style) != ((. - gBattleDomeStyleThresholds) / NUM_MOVE_POINT_TYPES)
+	.error "Battle Dome style thresholds are out of style ID order"
+	.endif
+	.byte \combo, \stat_raise, \stat_lower, \rare
+	.byte \heal, \risky, \status, \damage
+	.byte \defense, \accurate, \powerful, \popular
+	.byte \luck, \strong, \low_pp, \effect
+	.endm
+
 	@ Packs the four halfwords of struct OamData from semantic fields.
 	.macro rodata_sprite_oam_data y, affine_mode, obj_mode, mosaic, bpp, shape, x, matrix_num, size, tile_num, priority, palette_num, affine_param
 	.2byte ((\y) & 0xFF) | (((\affine_mode) & 3) << 8) | (((\obj_mode) & 3) << 10) | (((\mosaic) & 1) << 12) | (((\bpp) & 1) << 13) | (((\shape) & 3) << 14)

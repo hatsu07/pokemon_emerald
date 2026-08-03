@@ -2984,9 +2984,52 @@ gUnknown_85D3DF0: @ 0x085D3DF0
 gBattleDomeMovePoints:
 gUnknown_85D3DFC: @ 0x085D3DFC
 	.include "data/battle_dome_move_points.inc"
+	.globl gBattleDomeStyleThresholds
 	.globl gUnknown_85D542C
+gBattleDomeStyleThresholds:
 gUnknown_85D542C: @ 0x085D542C
-	.incbin "baserom.gba", 0x5d542c, 0x269
+	battle_dome_style_threshold DOME_BATTLE_STYLE_RISKY,           0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_STALL,           0, 0, 0, 0, 2, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_VARIED,          1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_COMBO_HIGH,      3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_RARE_MOVES,      0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_RARE_MOVE,       0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_HP,              0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_STORE_POWER,     0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_ENFEEBLE_LOW,    0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_LUCK,            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_REGAL,           0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_LOW_PP,          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_STATUS_ATK,      0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_ENDURE,          0, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_STATUS,          0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_STRAIGHTFORWARD, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_AGGRESSIVE,      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_DEF,             0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_ENFEEBLE_HIGH,   0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_POPULAR_POWER,   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_COMBO_LOW,       2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_ACCURATE,        0, 0, 0, 0, 1, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_POWERFUL,        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_ATK_OVER_DEF,    0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_DEF_OVER_ATK,    0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_POPULAR_STRONG,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_EFFECTS,         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4
+	battle_dome_style_threshold DOME_BATTLE_STYLE_BALANCED,        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_UNUSED1,         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_UNUSED2,         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	battle_dome_style_threshold DOME_BATTLE_STYLE_UNUSED3,         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+	.globl gBattleDomeUnusedArray
+gBattleDomeUnusedArray: @ 0x085D561C
+	.byte 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	.byte 3, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 3, 0, 0, 0
+	.byte 0, 0, 3, 0, 0, 0, 0, 0, 3, 2, 0, 0, 0, 0, 0, 2
+	.byte 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0
+	.byte 0, 2, 253, 0, 0, 0, 0, 0, 253, 0, 0, 0, 0, 0, 253, 0
+	.byte 0, 0, 0, 0, 253, 0, 0, 0, 0, 0, 253, 254, 0, 0, 0, 0
+	.byte 0, 254, 0, 0, 0, 0, 0, 254, 0, 0, 0, 0, 0, 254, 0, 0
+	.byte 0, 0, 0, 254, 0, 0, 0, 0, 0
 	.globl gUnknown_85D5695
 gUnknown_85D5695: @ 0x085D5695
 	.incbin "baserom.gba", 0x5d5695, 0x283
