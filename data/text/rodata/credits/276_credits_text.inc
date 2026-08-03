@@ -2574,15 +2574,25 @@ gUnknown_85D39D4: @ 0x085D39D4
 	.if (. - gRecordedPlayerBufferCommands) != (CONTROLLER_CMDS_COUNT * 4)
 	.error "Recorded player command table has the wrong size"
 	.endif
+	.globl gDummyPicData
 	.globl gUnknown_85D3AB8
+gDummyPicData:
 gUnknown_85D3AB8: @ 0x085D3AB8
-	.incbin "baserom.gba", 0x5d3ab8, 0xc
+	.4byte NULL @ frames
+	.4byte NULL @ images
+	.2byte 0 @ palette tag
+	.byte 0 @ sprite ID
+	.byte FALSE @ active
+	.globl gPicSpriteOamDataNormal
 	.globl gUnknown_85D3AC4
+gPicSpriteOamDataNormal:
 gUnknown_85D3AC4: @ 0x085D3AC4
-	.incbin "baserom.gba", 0x5d3ac4, 0x8
+	rodata_sprite_oam_data 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0
+	.globl gPicSpriteOamDataAffine
 	.globl gUnknown_85D3ACC
+gPicSpriteOamDataAffine:
 gUnknown_85D3ACC: @ 0x085D3ACC
-	.incbin "baserom.gba", 0x5d3acc, 0x8
+	rodata_sprite_oam_data 0, 1, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0
 	.globl gUnknown_85D3AD4
 gUnknown_85D3AD4: @ 0x085D3AD4
 	.incbin "baserom.gba", 0x5d3ad4, 0xa
