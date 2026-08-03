@@ -3344,9 +3344,40 @@ gBattleDomePotentialTexts: @ 0x085D5C4C
 	.4byte gText_Rom_273A9D
 	.4byte gText_Rom_273AB3
 	.4byte gText_Rom_273AC9
-	.globl gUnknown_85D5C90
-gUnknown_85D5C90: @ 0x085D5C90
-	.incbin "baserom.gba", 0x5d5c90, 0x80
+	.globl gBattleDomeStyleTexts
+gBattleDomeStyleTexts: @ 0x085D5C90
+	battle_dome_style_text DOME_BATTLE_STYLE_RISKY,           gText_Rom_273ADD
+	battle_dome_style_text DOME_BATTLE_STYLE_STALL,           gText_Rom_273AF6
+	battle_dome_style_text DOME_BATTLE_STYLE_VARIED,          gText_Rom_273B0D
+	battle_dome_style_text DOME_BATTLE_STYLE_COMBO_HIGH,      gText_Rom_273B26
+	battle_dome_style_text DOME_BATTLE_STYLE_RARE_MOVES,      gText_Rom_273B3E
+	battle_dome_style_text DOME_BATTLE_STYLE_RARE_MOVE,       gText_Rom_273B56
+	battle_dome_style_text DOME_BATTLE_STYLE_HP,              gText_Rom_273B6E
+	battle_dome_style_text DOME_BATTLE_STYLE_STORE_POWER,     gText_Rom_273B87
+	battle_dome_style_text DOME_BATTLE_STYLE_ENFEEBLE_LOW,    gText_Rom_273BA0
+	battle_dome_style_text DOME_BATTLE_STYLE_LUCK,            gText_Rom_273BB5
+	battle_dome_style_text DOME_BATTLE_STYLE_REGAL,           gText_Rom_273BCB
+	battle_dome_style_text DOME_BATTLE_STYLE_LOW_PP,          gText_Rom_273BE3
+	battle_dome_style_text DOME_BATTLE_STYLE_STATUS_ATK,      gText_Rom_273BFA
+	battle_dome_style_text DOME_BATTLE_STYLE_ENDURE,          gText_Rom_273C12
+	battle_dome_style_text DOME_BATTLE_STYLE_STATUS,          gText_Rom_273C29
+	battle_dome_style_text DOME_BATTLE_STYLE_STRAIGHTFORWARD, gText_Rom_273C40
+	battle_dome_style_text DOME_BATTLE_STYLE_AGGRESSIVE,      gText_Rom_273C56
+	battle_dome_style_text DOME_BATTLE_STYLE_DEF,             gText_Rom_273C6E
+	battle_dome_style_text DOME_BATTLE_STYLE_ENFEEBLE_HIGH,   gText_Rom_273C85
+	battle_dome_style_text DOME_BATTLE_STYLE_POPULAR_POWER,   gText_Rom_273C9A
+	battle_dome_style_text DOME_BATTLE_STYLE_COMBO_LOW,       gText_Rom_273CB0
+	battle_dome_style_text DOME_BATTLE_STYLE_ACCURATE,        gText_Rom_273CC7
+	battle_dome_style_text DOME_BATTLE_STYLE_POWERFUL,        gText_Rom_273CDE
+	battle_dome_style_text DOME_BATTLE_STYLE_ATK_OVER_DEF,    gText_Rom_273CF5
+	battle_dome_style_text DOME_BATTLE_STYLE_DEF_OVER_ATK,    gText_Rom_273D0D
+	battle_dome_style_text DOME_BATTLE_STYLE_POPULAR_STRONG,  gText_Rom_273D21
+	battle_dome_style_text DOME_BATTLE_STYLE_EFFECTS,         gText_Rom_273D38
+	battle_dome_style_text DOME_BATTLE_STYLE_BALANCED,        gText_Rom_273D4F
+	battle_dome_style_text DOME_BATTLE_STYLE_UNUSED1,         gText_Rom_273D67
+	battle_dome_style_text DOME_BATTLE_STYLE_UNUSED2,         gText_Rom_273D74
+	battle_dome_style_text DOME_BATTLE_STYLE_UNUSED3,         gText_Rom_273D81
+	battle_dome_style_text DOME_BATTLE_STYLE_UNUSED4,         gText_Rom_273D8E
 	.globl gUnknown_85D5D10
 gUnknown_85D5D10: @ 0x085D5D10
 	.incbin "baserom.gba", 0x5d5d10, 0xac
