@@ -3572,9 +3572,10 @@ gBattleDomeTourneyTreePokeballCoords: @ 0x085D5E8D
 	.byte 137,  89 @ right semifinal
 	.byte 120,  89 @ final
 
-	.globl gUnknown_85D5ECB
-gUnknown_85D5ECB: @ 0x085D5ECB
-	.incbin "baserom.gba", 0x5d5ecb, 0x8c1
+	.byte 0 @ align struct TourneyTreeLineSection
+	.globl gBattleDomeTourneyTreeLineSections
+gBattleDomeTourneyTreeLineSections: @ 0x085D5ECC
+	.include "data/battle_dome_tourney_tree_line_sections.inc"
 	.globl gUnknown_85D678C
 gUnknown_85D678C: @ 0x085D678C
 	.incbin "baserom.gba", 0x5d678c, 0x100
