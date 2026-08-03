@@ -83,7 +83,7 @@ _0818E6C0: .4byte 0x00000CA9
 _0818E6C4: .4byte 0x000040CE
 _0818E6C8: .4byte 0x00000CA8
 _0818E6CC: .4byte 0x00000CDC
-_0818E6D0: .4byte 0x085D5B68
+_0818E6D0: .4byte gBattleDomeWinStreakFlags
 _0818E6D4: .4byte 0x00000D0C
 _0818E6D8: .4byte 0x03005AEC
 _0818E6DC: .4byte 0x0203886A
@@ -171,7 +171,7 @@ _0818E770:
 _0818E794: .4byte 0x02037290
 _0818E798: .4byte 0x03005AF0
 _0818E79C: .4byte 0x00000CDC
-_0818E7A0: .4byte 0x085D5B68
+_0818E7A0: .4byte gBattleDomeWinStreakFlags
 _0818E7A4:
 	ldr r1, _0818E7B4
 	ldr r0, _0818E7B8
@@ -477,7 +477,7 @@ _0818EA10:
 _0818EA34: .4byte 0x02037284
 _0818EA38: .4byte 0x03005AF0
 _0818EA3C: .4byte 0x00000CDC
-_0818EA40: .4byte 0x085D5B68
+_0818EA40: .4byte gBattleDomeWinStreakFlags
 _0818EA44:
 	ldr r0, _0818EA60
 	ldr r2, [r0]
@@ -496,7 +496,7 @@ _0818EA44:
 	.align 2, 0
 _0818EA60: .4byte 0x03005AF0
 _0818EA64: .4byte 0x00000CDC
-_0818EA68: .4byte 0x085D5B78
+_0818EA68: .4byte gBattleDomeWinStreakMasks
 _0818EA6C:
 	ldr r0, _0818EA84
 	ldr r2, [r0]
@@ -4309,7 +4309,7 @@ _08190830:
 	b _081908A8
 	.align 2, 0
 _08190840: .4byte 0x03005B60
-_08190844: .4byte gBattleDomeTourneyTreeTrainerIdOrder
+_08190844: .4byte gBattleDomeTourneyTreeTrainerIds
 _08190848: .4byte 0x03005AF0
 _0819084C: .4byte 0x00000CB2
 _08190850: .4byte 0x00000D25
@@ -4721,7 +4721,7 @@ _08190B94: .4byte 0x02022ACE
 _08190B98: .4byte 0x0203CA44
 _08190B9C: .4byte 0x02022AD0
 _08190BA0: .4byte 0x02022AD2
-_08190BA4: .4byte gBattleDomeTourneyTreeTrainerIdOrder
+_08190BA4: .4byte gBattleDomeTourneyTreeTrainerIds
 _08190BA8: .4byte 0x03005B60
 _08190BAC:
 	ldr r1, _08190BE8
@@ -4756,7 +4756,7 @@ _08190BAC:
 	.align 2, 0
 _08190BE8: .4byte 0x02022AD0
 _08190BEC: .4byte 0x02022AD2
-_08190BF0: .4byte gBattleDomeTourneyTreeTrainerIdOrder
+_08190BF0: .4byte gBattleDomeTourneyTreeTrainerIds
 _08190BF4: .4byte 0x03005B60
 _08190BF8:
 	ldr r6, _08190C44
@@ -5160,7 +5160,7 @@ _08190F38: .4byte 0x02022ACE
 _08190F3C: .4byte 0x0203CA44
 _08190F40: .4byte 0x02022AD0
 _08190F44: .4byte 0x02022AD2
-_08190F48: .4byte gBattleDomeTourneyTreeTrainerIdOrder
+_08190F48: .4byte gBattleDomeTourneyTreeTrainerIds
 _08190F4C: .4byte 0x03005B60
 _08190F50:
 	ldr r0, _08190F88
@@ -5192,7 +5192,7 @@ _08190F50:
 	.align 2, 0
 _08190F88: .4byte 0x02022AD0
 _08190F8C: .4byte 0x02022AD2
-_08190F90: .4byte gBattleDomeTourneyTreeTrainerIdOrder
+_08190F90: .4byte gBattleDomeTourneyTreeTrainerIds
 _08190F94: .4byte 0x03005B60
 _08190F98:
 	ldr r6, _08190FE0
@@ -5593,7 +5593,7 @@ _081912CC: .4byte 0x02022ACE
 _081912D0: .4byte 0x0203CA44
 _081912D4: .4byte 0x02022AD0
 _081912D8: .4byte 0x02022AD2
-_081912DC: .4byte gBattleDomeTourneyTreeTrainerIdOrder
+_081912DC: .4byte gBattleDomeTourneyTreeTrainerIds
 _081912E0: .4byte 0x03005B60
 _081912E4:
 	ldr r1, _08191394
@@ -7092,7 +7092,7 @@ _08191EDC:
 	b _08191F12
 	.align 2, 0
 _08191EF8: .4byte 0x03005B60
-_08191EFC: .4byte gBattleDomeTourneyTreeTrainerIdOrder
+_08191EFC: .4byte gBattleDomeTourneyTreeTrainerIds
 _08191F00: .4byte 0x03005AF0
 _08191F04: .4byte 0x00000CB2
 _08191F08: .4byte 0x03002360
@@ -10113,7 +10113,7 @@ _081936E8: .4byte 0x02037C74
 _081936EC: .4byte 0x0203CA48
 _081936F0: .4byte 0x0819005D
 _081936F4: .4byte 0x03005B60
-_081936F8: .4byte gBattleDomeTourneyTreeTrainerIdOrder
+_081936F8: .4byte gBattleDomeTourneyTreeTrainerIds
 _081936FC: .4byte 0x0203CA44
 _08193700:
 	ldr r0, _08193754

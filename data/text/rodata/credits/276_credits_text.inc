@@ -3221,12 +3221,12 @@ gBattleDomeTourneyTreeHorizontalArrowSpriteTemplate: @ 0x085D5ACC
 gBattleDomeTourneyTreeVerticalArrowSpriteTemplate: @ 0x085D5AE4
 	rodata_sprite_template 0, TAG_NONE, gBattleDomeTourneyTreeVerticalScrollArrowOam, gBattleDomeTourneyTreeVerticalArrowAnims, NULL, gDummySpriteAffineAnimTable, sub_081908C8
 	@ Maps the 16 first-round tree slots to their tournament trainer IDs.
-	.globl gBattleDomeTourneyTreeTrainerIdOrder
-gBattleDomeTourneyTreeTrainerIdOrder: @ 0x085D5AFC
+	.globl gBattleDomeTourneyTreeTrainerIds
+gBattleDomeTourneyTreeTrainerIds: @ 0x085D5AFC
 	.byte 0, 8, 12, 4, 7, 15, 11, 3
 	.byte 2, 10, 14, 6, 5, 13, 9, 1
-	.globl gBattleDomeFunctionTable
-gBattleDomeFunctionTable: @ 0x085D5B0C
+	.globl gBattleDomeFunctions
+gBattleDomeFunctions: @ 0x085D5B0C
 	.4byte InitDomeChallenge
 	.4byte GetDomeData
 	.4byte SetDomeData
@@ -3250,12 +3250,15 @@ gBattleDomeFunctionTable: @ 0x085D5B0C
 	.4byte BufferLastDomeWinnerName
 	.4byte sub_08194B58
 	.4byte InitDomeTrainers
-	.globl gUnknown_85D5B68
-gUnknown_85D5B68: @ 0x085D5B68
-	.incbin "baserom.gba", 0x5d5b68, 0x10
-	.globl gUnknown_85D5B78
-gUnknown_85D5B78: @ 0x085D5B78
-	.incbin "baserom.gba", 0x5d5b78, 0x10
+	.globl gBattleDomeWinStreakFlags
+gBattleDomeWinStreakFlags: @ 0x085D5B68
+	.4byte STREAK_DOME_SINGLES_50, STREAK_DOME_SINGLES_OPEN
+	.4byte STREAK_DOME_DOUBLES_50, STREAK_DOME_DOUBLES_OPEN
+
+	.globl gBattleDomeWinStreakMasks
+gBattleDomeWinStreakMasks: @ 0x085D5B78
+	.4byte ~STREAK_DOME_SINGLES_50, ~STREAK_DOME_SINGLES_OPEN
+	.4byte ~STREAK_DOME_DOUBLES_50, ~STREAK_DOME_DOUBLES_OPEN
 	.globl gUnknown_85D5B88
 gUnknown_85D5B88: @ 0x085D5B88
 	.incbin "baserom.gba", 0x5d5b88, 0x40

@@ -50,5 +50,10 @@
 	.set DOME_BATTLE_STYLE_UNUSED4,        31
 	.set NUM_BATTLE_STYLES,                32
 
+	.set STREAK_DOME_SINGLES_50,           1 << 2
+	.set STREAK_DOME_SINGLES_OPEN,         1 << 3
+	.set STREAK_DOME_DOUBLES_50,           1 << 20
+	.set STREAK_DOME_DOUBLES_OPEN,         1 << 21
+
 	.set TOURNEY_TREE_CLOSE_BUTTON,        31
 	.set TOURNEY_TREE_INVALID_MOVE,        0xFF
