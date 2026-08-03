@@ -3702,9 +3702,9 @@ _081903CE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081903E0: .4byte 0x085D5AE4
+_081903E0: .4byte gBattleDomeTourneyTreeVerticalArrowSpriteTemplate
 _081903E4: .4byte 0x020205AC
-_081903E8: .4byte 0x085D5ACC
+_081903E8: .4byte gBattleDomeTourneyTreeHorizontalArrowSpriteTemplate
 	thumb_func_end Task_ShowOpponentInfo
 
 	thumb_func_start SpriteCb_TrainerIconCardScrollUp

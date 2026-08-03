@@ -3213,12 +3213,13 @@ gBattleDomeTourneyTreeVerticalArrowAnims: @ 0x085D5ABC
 gBattleDomeTourneyTreeHorizontalArrowAnims: @ 0x085D5AC4
 	sprite_anim_sequence gBattleDomeTourneyTreeHorizontalArrowAnim0
 	sprite_anim_sequence gBattleDomeTourneyTreeHorizontalArrowAnim1
-	.globl gUnknown_85D5ACC
-gUnknown_85D5ACC: @ 0x085D5ACC
-	.incbin "baserom.gba", 0x5d5acc, 0x18
-	.globl gUnknown_85D5AE4
-gUnknown_85D5AE4: @ 0x085D5AE4
-	.incbin "baserom.gba", 0x5d5ae4, 0x18
+	.globl gBattleDomeTourneyTreeHorizontalArrowSpriteTemplate
+gBattleDomeTourneyTreeHorizontalArrowSpriteTemplate: @ 0x085D5ACC
+	rodata_sprite_template 0, TAG_NONE, gBattleDomeTourneyTreeHorizontalScrollArrowOam, gBattleDomeTourneyTreeHorizontalArrowAnims, NULL, gDummySpriteAffineAnimTable, sub_0819079C
+
+	.globl gBattleDomeTourneyTreeVerticalArrowSpriteTemplate
+gBattleDomeTourneyTreeVerticalArrowSpriteTemplate: @ 0x085D5AE4
+	rodata_sprite_template 0, TAG_NONE, gBattleDomeTourneyTreeVerticalScrollArrowOam, gBattleDomeTourneyTreeVerticalArrowAnims, NULL, gDummySpriteAffineAnimTable, sub_081908C8
 	.globl gUnknown_85D5AFC
 gUnknown_85D5AFC: @ 0x085D5AFC
 	.incbin "baserom.gba", 0x5d5afc, 0x10
