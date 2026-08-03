@@ -3537,9 +3537,44 @@ gBattleDomeTrainerNameYCoords: @ 0x085D5E6E
 	.byte TOURNEYWIN_NAMES_RIGHT, 5 * TOURNEY_NAME_ROW_HEIGHT + TOURNEY_NAME_TEXT_Y_OFFSET
 	.byte TOURNEYWIN_NAMES_RIGHT, 2 * TOURNEY_NAME_ROW_HEIGHT + TOURNEY_NAME_TEXT_Y_OFFSET
 	.byte TOURNEYWIN_NAMES_LEFT,  5 * TOURNEY_NAME_ROW_HEIGHT + TOURNEY_NAME_TEXT_Y_OFFSET
-	.globl gUnknown_85D5E8D
-gUnknown_85D5E8D: @ 0x085D5E8D
-	.incbin "baserom.gba", 0x5d5e8d, 0x8ff
+	@ Pokeball buttons for 16 trainers followed by 15 matches.
+	.globl gBattleDomeTourneyTreePokeballCoords
+gBattleDomeTourneyTreePokeballCoords: @ 0x085D5E8D
+	.byte  68,  33 @ left-side trainers
+	.byte  68,  49
+	.byte  68,  65
+	.byte  68,  81
+	.byte  68,  97
+	.byte  68, 113
+	.byte  68, 129
+	.byte  68, 145
+	.byte 172,  33 @ right-side trainers
+	.byte 172,  49
+	.byte 172,  65
+	.byte 172,  81
+	.byte 172,  97
+	.byte 172, 113
+	.byte 172, 129
+	.byte 172, 145
+	.byte  87,  41 @ left-side round 1 matches
+	.byte  87,  73
+	.byte  87, 105
+	.byte  87, 137
+	.byte 153,  41 @ right-side round 1 matches
+	.byte 153,  73
+	.byte 153, 105
+	.byte 153, 137
+	.byte  95,  57 @ left-side round 2 matches
+	.byte  95, 121
+	.byte 145,  57 @ right-side round 2 matches
+	.byte 145, 121
+	.byte 103,  89 @ left semifinal
+	.byte 137,  89 @ right semifinal
+	.byte 120,  89 @ final
+
+	.globl gUnknown_85D5ECB
+gUnknown_85D5ECB: @ 0x085D5ECB
+	.incbin "baserom.gba", 0x5d5ecb, 0x8c1
 	.globl gUnknown_85D678C
 gUnknown_85D678C: @ 0x085D678C
 	.incbin "baserom.gba", 0x5d678c, 0x100
