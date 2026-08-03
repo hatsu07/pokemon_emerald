@@ -493,7 +493,9 @@ gUnknown_85CDB60: @ 0x085CDB60
 
 	@ asm/clear_save_data_screen.s:35 Task_DoClearSaveDataScreenYesNo
 	.globl gText_Rom_5CDB60
+	.globl gText_ClearAllSaveDataPrompt
 gText_Rom_5CDB60: @ 0x085CDB60
+gText_ClearAllSaveDataPrompt:
 	.string "すべての　セーブデータエリアを\nクリア　しますか？$"
 	.if (. - gText_Rom_5CDB60) > 0x1a
 	.error "gText_Rom_5CDB60 may not grow beyond its original slot"
@@ -506,7 +508,9 @@ gUnknown_85CDB7A: @ 0x085CDB7A
 
 	@ asm/clear_save_data_screen.s:97 Task_ClearSaveDataScreenYesNoChoice
 	.globl gText_Rom_5CDB7A
+	.globl gText_ClearingSaveData
 gText_Rom_5CDB7A: @ 0x085CDB7A
+gText_ClearingSaveData:
 	.string "クリア　しています\nおまち　ください$"
 	.if (. - gText_Rom_5CDB7A) > 0x13
 	.error "gText_Rom_5CDB7A may not grow beyond its original slot"
@@ -514,25 +518,42 @@ gText_Rom_5CDB7A: @ 0x085CDB7A
 	.if (. - gText_Rom_5CDB7A) < 0x13
 	.space 0x13 - (. - gText_Rom_5CDB7A)
 	.endif
-	.incbin "baserom.gba", 0x5cdb8d, 0x3
-	.globl gUnknown_85CDB90
-gUnknown_85CDB90: @ 0x085CDB90
-	.incbin "baserom.gba", 0x5cdb90, 0x8
-	.globl gUnknown_85CDB98
-gUnknown_85CDB98: @ 0x085CDB98
-	.incbin "baserom.gba", 0x5cdb98, 0x10
-	.globl gUnknown_85CDBA8
-gUnknown_85CDBA8: @ 0x085CDBA8
-	.incbin "baserom.gba", 0x5cdba8, 0x8
-	.globl gUnknown_85CDBB0
-gUnknown_85CDBB0: @ 0x085CDBB0
-	.incbin "baserom.gba", 0x5cdbb0, 0x20
-	.globl gUnknown_85CDBD0
-gUnknown_85CDBD0: @ 0x085CDBD0
-	.incbin "baserom.gba", 0x5cdbd0, 0x20
-	.globl gUnknown_85CDBF0
-gUnknown_85CDBF0: @ 0x085CDBF0
-	.incbin "baserom.gba", 0x5cdbf0, 0x20
+	.balign 4, 0
+
+	.globl gClearSaveDataScreenBgTemplates
+gClearSaveDataScreenBgTemplates: @ 0x085CDB90
+	bg_template 0, 0, 31, 0, 0, 0, 0
+	bg_template 3, 0, 30, 0, 0, 1, 0
+	.if (. - gClearSaveDataScreenBgTemplates) != 2 * 4
+	.error "gClearSaveDataScreenBgTemplates must contain two entries"
+	.endif
+
+	.globl gClearSaveDataScreenWindowTemplates
+gClearSaveDataScreenWindowTemplates: @ 0x085CDB98
+	window_template 0, 3, 15, 26, 4, 15, 0xB
+	null_window_template
+	.if (. - gClearSaveDataScreenWindowTemplates) != 2 * 8
+	.error "gClearSaveDataScreenWindowTemplates must contain one entry and a terminator"
+	.endif
+
+	.globl gClearSaveDataMenuWindowTemplate
+gClearSaveDataMenuWindowTemplate: @ 0x085CDBA8
+	window_template 0, 3, 2, 5, 4, 15, 0x73
+
+	.globl gIntroCreditsBgPalette_0
+gIntroCreditsBgPalette_0: @ 0x085CDBB0
+	.incbin "build/graphics/intro_credits/bg_palette_0.gbapal"
+
+	.globl gIntroCreditsBgPalette_1
+gIntroCreditsBgPalette_1: @ 0x085CDBD0
+	.incbin "build/graphics/intro_credits/bg_palette_1.gbapal"
+
+	.globl gIntroCreditsBgPalette_2
+gIntroCreditsBgPalette_2: @ 0x085CDBF0
+	.incbin "build/graphics/intro_credits/bg_palette_2.gbapal"
+	.if (. - gIntroCreditsBgPalette_0) != 3 * 0x20
+	.error "Intro credits BG palettes must contain three 16-color palettes"
+	.endif
 	.globl gUnknown_85CDC10
 gUnknown_85CDC10: @ 0x085CDC10
 	.incbin "baserom.gba", 0x5cdc10, 0x480

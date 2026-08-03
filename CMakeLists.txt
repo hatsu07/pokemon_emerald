@@ -196,6 +196,23 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
 
     elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro_credits/(.+)\\.gbapal$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/intro_credits/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/link/(.+)\\.4bpp$")
         set(STEM "${CMAKE_MATCH_1}")
         set(INPUT_PNG

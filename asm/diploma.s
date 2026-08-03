@@ -181,7 +181,7 @@ _0817AE48: .4byte 0x06000020
 _0817AE4C: .4byte 0x00001111
 _0817AE50: .4byte 0x0600F000
 _0817AE54: .4byte 0x000003FF
-_0817AE58: .4byte 0x085CDB90
+_0817AE58: .4byte gClearSaveDataScreenBgTemplates
 _0817AE5C: .4byte 0x0000FFFF
 _0817AE60: .4byte 0x0817ACB5
 _0817AE64:
@@ -275,7 +275,7 @@ InitClearSaveDataScreenWindows: @ 0x0817AEEC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817AF1C: .4byte 0x085CDB98
+_0817AF1C: .4byte gClearSaveDataScreenWindowTemplates
 _0817AF20: .4byte 0x085D7B04
 	thumb_func_end InitClearSaveDataScreenWindows
 
