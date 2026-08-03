@@ -99,6 +99,13 @@
 	.2byte 0
 	.endm
 
+	.macro battle_controller_command table, command, handler
+	.if (\command) != ((. - \table) / 4)
+	.error "Battle controller commands are out of order"
+	.endif
+	.4byte \handler
+	.endm
+
 	.macro sprite_tile_counts square8, square16, square32, square64, horizontal8, horizontal16, horizontal32, horizontal64, vertical8, vertical16, vertical32, vertical64
 	.byte \square8, \square16, \square32, \square64
 	.byte \horizontal8, \horizontal16, \horizontal32, \horizontal64

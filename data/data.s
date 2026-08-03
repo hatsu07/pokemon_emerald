@@ -2,6 +2,7 @@
 
 	.include "constants/gba_constants.inc"
 	.include "constants/global.inc"
+	.include "constants/battle_controller.inc"
 	.include "constants/charmap.inc"
 	.include "constants/decorations.inc"
 	.include "constants/species.inc"

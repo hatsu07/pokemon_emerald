@@ -1,6 +1,7 @@
 	.include "constants/gba_constants.inc"
 	.include "constants/global.inc"
 	.include "constants/contest_constants.inc"
+	.include "constants/battle_controller.inc"
 	.include "constants/pokemon_data.inc"
 	.include "constants/berry.inc"
 	.include "constants/contest_move_effects.inc"
