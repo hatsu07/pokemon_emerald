@@ -2335,9 +2335,20 @@ gMonAffineAnims:
 gUnknown_85D37C8: @ 0x085D37C8
 	sprite_affine_anim_sequence gMonAffineAnim_Normal
 	sprite_affine_anim_sequence gMonAffineAnim_HorizontalFlip
+	.globl gMonAnimZigzagFastData
 	.globl gUnknown_85D37D0
+gMonAnimZigzagFastData:
 gUnknown_85D37D0: @ 0x085D37D0
-	.incbin "baserom.gba", 0x5d37d0, 0x1e
+	mon_anim_offset_step -1, -1, 6
+	mon_anim_offset_step  2,  0, 6
+	mon_anim_offset_step -2,  2, 6
+	mon_anim_offset_step  2,  0, 6
+	mon_anim_offset_step -2, -2, 6
+	mon_anim_offset_step  2,  0, 6
+	mon_anim_offset_step -2,  2, 6
+	mon_anim_offset_step  2,  0, 6
+	mon_anim_offset_step -1, -1, 6
+	mon_anim_offset_step  0,  0, 0
 	.globl gUnknown_85D37EE
 gUnknown_85D37EE: @ 0x085D37EE
 	.incbin "baserom.gba", 0x5d37ee, 0x30

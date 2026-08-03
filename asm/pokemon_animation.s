@@ -1168,7 +1168,7 @@ _0817FADE:
 	str r0, [r4, #0x1c]
 	b _0817FB16
 	.align 2, 0
-_0817FB04: .4byte 0x085D37D0
+_0817FB04: .4byte gMonAnimZigzagFastData
 _0817FB08: .4byte 0x08184C35
 _0817FB0C:
 	ldrh r0, [r4, #0x34]

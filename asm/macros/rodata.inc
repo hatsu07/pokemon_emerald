@@ -83,6 +83,11 @@
 	.byte \variant
 	.endm
 
+	@ Signed sprite movement per frame, followed by its duration in frames.
+	.macro mon_anim_offset_step x, y, duration
+	.byte \x, \y, \duration
+	.endm
+
 	.macro sprite_tile_counts square8, square16, square32, square64, horizontal8, horizontal16, horizontal32, horizontal64, vertical8, vertical16, vertical32, vertical64
 	.byte \square8, \square16, \square32, \square64
 	.byte \horizontal8, \horizontal16, \horizontal32, \horizontal64
