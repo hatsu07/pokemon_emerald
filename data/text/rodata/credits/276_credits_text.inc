@@ -3429,18 +3429,23 @@ gBattleDomeOpponentStatsTexts: @ 0x085D5D10
 	.4byte gText_Rom_274132
 	@ DOME_TEXT_WELL_BALANCED.
 	.4byte gText_Rom_274146
-	.globl gUnknown_85D5DBC
-gUnknown_85D5DBC: @ 0x085D5DBC
-	.incbin "baserom.gba", 0x5d5dbc, 0x3
-	.globl gUnknown_85D5DBF
-gUnknown_85D5DBF: @ 0x085D5DBF
-	.incbin "baserom.gba", 0x5d5dbf, 0x3
-	.globl gUnknown_85D5DC2
-gUnknown_85D5DC2: @ 0x085D5DC2
-	.incbin "baserom.gba", 0x5d5dc2, 0x3
-	.globl gUnknown_85D5DC5
-gUnknown_85D5DC5: @ 0x085D5DC5
-	.incbin "baserom.gba", 0x5d5dc5, 0x7
+	.globl gBattleDomeInfoTrainerMonX
+gBattleDomeInfoTrainerMonX: @ 0x085D5DBC
+	.byte 104, 136, 104
+
+	.globl gBattleDomeInfoTrainerMonY
+gBattleDomeInfoTrainerMonY: @ 0x085D5DBF
+	.byte 38, 62, 78
+
+	.globl gBattleDomeSpeciesNameTextYCoords
+gBattleDomeSpeciesNameTextYCoords: @ 0x085D5DC2
+	.byte 1, 5, 1
+
+	.globl gBattleDomeStatTextOffsets
+gBattleDomeStatTextOffsets: @ 0x085D5DC5
+	.byte DOME_TEXT_HP, DOME_TEXT_ATK, DOME_TEXT_DEF
+	.byte DOME_TEXT_SPEED, DOME_TEXT_SPATK
+	.align 2, 0
 	.globl gUnknown_85D5DCC
 gUnknown_85D5DCC: @ 0x085D5DCC
 	.incbin "baserom.gba", 0x5d5dcc, 0x3c

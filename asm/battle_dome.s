@@ -7579,7 +7579,7 @@ _081922A8: .4byte 0x020205AC
 _081922AC: .4byte 0x000003FF
 _081922B0: .4byte 0x03005AF0
 _081922B4: .4byte 0x00000D64
-_081922B8: .4byte 0x085D5DBC
+_081922B8: .4byte gBattleDomeInfoTrainerMonX
 _081922BC:
 	ldr r0, _081922DC
 	ldr r3, [sp, #0x24]
@@ -7601,7 +7601,7 @@ _081922BC:
 _081922DC: .4byte 0x000003FE
 _081922E0: .4byte 0x03005AF0
 _081922E4: .4byte 0x00000D64
-_081922E8: .4byte 0x085D5DBC
+_081922E8: .4byte gBattleDomeInfoTrainerMonX
 _081922EC:
 	ldr r0, _081923C0
 	ldr r0, [r0]
@@ -7714,8 +7714,8 @@ _08192366:
 _081923C0: .4byte 0x03005AF0
 _081923C4: .4byte 0x00000D64
 _081923C8: .4byte 0x0203B958
-_081923CC: .4byte 0x085D5DBC
-_081923D0: .4byte 0x085D5DBF
+_081923CC: .4byte gBattleDomeInfoTrainerMonX
+_081923D0: .4byte gBattleDomeInfoTrainerMonY
 _081923D4: .4byte 0x08190595
 _081923D8: .4byte 0x000003FF
 _081923DC: .4byte gFacilityClassToTrainerClass
@@ -7853,7 +7853,7 @@ _081924D2:
 _081924F4: .4byte 0x02021C54
 _081924F8: .4byte 0x02021C40
 _081924FC: .4byte 0x082EA31C
-_08192500: .4byte 0x085D5DC2
+_08192500: .4byte gBattleDomeSpeciesNameTextYCoords
 _08192504: .4byte 0x000003FF
 _08192508: .4byte 0x03005AF0
 _0819250C: .4byte 0x00000D64
@@ -8597,7 +8597,7 @@ _08192A98:
 	adds r7, r1, r0
 	b _08192B06
 	.align 2, 0
-_08192ABC: .4byte 0x085D5DC5
+_08192ABC: .4byte gBattleDomeStatTextOffsets
 _08192AC0:
 	cmp r7, #1
 	bne _08192AD0
@@ -8625,7 +8625,7 @@ _08192AD0:
 	adds r7, #0x15
 	b _08192B06
 	.align 2, 0
-_08192AF0: .4byte 0x085D5DC5
+_08192AF0: .4byte gBattleDomeStatTextOffsets
 _08192AF4:
 	cmp r5, #1
 	bne _08192B04
