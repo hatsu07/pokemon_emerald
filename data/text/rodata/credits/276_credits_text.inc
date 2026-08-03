@@ -3225,9 +3225,31 @@ gBattleDomeTourneyTreeVerticalArrowSpriteTemplate: @ 0x085D5AE4
 gBattleDomeTourneyTreeTrainerIdOrder: @ 0x085D5AFC
 	.byte 0, 8, 12, 4, 7, 15, 11, 3
 	.byte 2, 10, 14, 6, 5, 13, 9, 1
-	.globl gUnknown_85D5B0C
-gUnknown_85D5B0C: @ 0x085D5B0C
-	.incbin "baserom.gba", 0x5d5b0c, 0x5c
+	.globl gBattleDomeFunctionTable
+gBattleDomeFunctionTable: @ 0x085D5B0C
+	.4byte InitDomeChallenge
+	.4byte GetDomeData
+	.4byte SetDomeData
+	.4byte BufferDomeRoundText
+	.4byte BufferDomeOpponentName
+	.4byte InitDomeOpponentParty
+	.4byte ShowDomeOpponentInfo
+	.4byte ShowDomeTourneyTree
+	.4byte ShowPreviousDomeResultsTourneyTree
+	.4byte SetDomeOpponentId
+	.4byte SetDomeOpponentGraphicsId
+	.4byte ShowNonInteractiveDomeTourneyTree
+	.4byte ResolveDomeRoundWinners
+	.4byte sub_0818FF54
+	.4byte UpdateDomeStreaks
+	.4byte InitDomeFacilityTrainersAndMons
+	.4byte RestoreDomePlayerParty
+	.4byte RestoreDomePlayerPartyHeldItems
+	.4byte GetDomeBrainTrainerPicId
+	.4byte GetPlayerSeededBeforeOpponent
+	.4byte BufferLastDomeWinnerName
+	.4byte sub_08194B58
+	.4byte InitDomeTrainers
 	.globl gUnknown_85D5B68
 gUnknown_85D5B68: @ 0x085D5B68
 	.incbin "baserom.gba", 0x5d5b68, 0x10
