@@ -2609,38 +2609,110 @@ gUnknown_85D3ADE: @ 0x085D3ADE
 	.2byte 26 @ Quiz Lady
 	.2byte 20 @ Favor Lady
 	.2byte 10 @ Contest Lady
+	.globl gQuizLadyQuestions
+	.globl gQuizLadyQuestion0
 	.globl gUnknownEasyChatWordList_5D3AE4
 	.globl gUnknown_85D3AE4
+gQuizLadyQuestions:
+gQuizLadyQuestion0:
 gUnknownEasyChatWordList_5D3AE4:
 gUnknown_85D3AE4: @ 0x085D3AE4
-	.2byte 0x0602, 0x1413, 0x020E, 0x0E1D, 0x1E1F, 0x0C03
-	.2byte 0x2A70, 0x2ADA, 0x013A, 0x0170, 0x0E1D, 0x1E21
-	.2byte 0x020E, 0x0E08, 0x0204, 0x1628, 0x0C03
-	.2byte 0xFFFF @ terminator
-
+	quiz_lady_question 0, 0x0602, 0x1413, 0x020E, 0x0E1D, 0x1E1F, 0x0C03, 0x2A70, 0x2ADA, 0x013A
+	.globl gQuizLadyQuestion1
+gQuizLadyQuestion1: @ 0x085D3AF6
+	quiz_lady_question 1, 0x0170, 0x0E1D, 0x1E21, 0x020E, 0x0E08, 0x0204, 0x1628, 0x0C03, 0xFFFF
+	.globl gQuizLadyQuestion2
+gQuizLadyQuestion2:
 gUnknownEasyChatWordList_5D3B08: @ 0x085D3B08
-	.2byte 0x0209, 0x0204, 0x1628, 0x020E, 0x1E1F, 0x0C03
-	.2byte 0x017F, 0x2A43, 0x016D, 0x1E28, 0x160A, 0x0E2B
-	.2byte 0x1425, 0x103C, 0x0E1D
-	.byte 0x24 @ low byte of packed word 0x1E24
-	@ Compatibility alias previously decoded as the standalone text "ほうし".
+	quiz_lady_question 2, 0x0209, 0x0204, 0x1628, 0x020E, 0x1E1F, 0x0C03, 0x017F, 0x2A43, 0x016D
+	.globl gQuizLadyQuestion3
+gQuizLadyQuestion3: @ 0x085D3B1A
+	quiz_lady_question 3, 0x1E28, 0x160A, 0x0E2B, 0x1425, 0x103C, 0x0E1D, 0x1E24, 0x0C03, 0xFFFF
+	@ Compatibility alias into packed word 0x1E24; this is not standalone text.
 	.globl gText_Rom_5D3B27
-gText_Rom_5D3B27: @ 0x085D3B27
-	.byte 0x1E @ high byte of packed word 0x1E24
-	.2byte 0x0C03
-	.2byte 0xFFFF @ terminator
+	.set gText_Rom_5D3B27, gQuizLadyQuestion3 + 13
+	.globl gQuizLadyQuestion4
 	.globl gUnknown_85D3B2C
+gQuizLadyQuestion4:
 gUnknown_85D3B2C: @ 0x085D3B2C
-	.incbin "baserom.gba", 0x5d3b2c, 0xd8
+	quiz_lady_question 4, 0x1644, 0x0E0C, 0x162D, 0x0E0A, 0x1413, 0x1428, 0x0E1D, 0x1E22, 0x0C03
+	.globl gQuizLadyQuestion5
+gQuizLadyQuestion5: @ 0x085D3B3E
+	quiz_lady_question 5, 0x2461, 0x1410, 0x0A35, 0x1034, 0x180D, 0x0E1D, 0x1E21, 0x180D, 0x0C03
+	.globl gQuizLadyQuestion6
+gQuizLadyQuestion6: @ 0x085D3B50
+	quiz_lady_question 6, 0x140D, 0x1C1D, 0x140F, 0x140F, 0x1C1D, 0x140D, 0x0E1D, 0x1E24, 0x0C03
+	.globl gQuizLadyQuestion7
+gQuizLadyQuestion7: @ 0x085D3B62
+	quiz_lady_question 7, 0x042F, 0x1034, 0x0A0E, 0x1034, 0x1643, 0x140F, 0x181B, 0x0E1D, 0x0C03
+	.globl gQuizLadyQuestion8
+gQuizLadyQuestion8: @ 0x085D3B74
+	quiz_lady_question 8, 0x160A, 0x161B, 0x1E1C, 0x0E1F, 0x0A25, 0x0609, 0x102B, 0x0E1D, 0x0C03
+	.globl gQuizLadyQuestion9
+gQuizLadyQuestion9: @ 0x085D3B86
+	quiz_lady_question 9, 0x2204, 0x2206, 0x0E1D, 0x1E21, 0x0A35, 0x0C03, 0x0A11, 0x0A0E, 0x0A09
+	.globl gQuizLadyQuestion10
+gQuizLadyQuestion10: @ 0x085D3B98
+	quiz_lady_question 10, 0x0602, 0x1425, 0x020E, 0x0E1D, 0x1E1F, 0x0C03, 0x0118, 0x0115, 0x011B
+	.globl gQuizLadyQuestion11
+gQuizLadyQuestion11: @ 0x085D3BAA
+	quiz_lady_question 11, 0x0211, 0x020C, 0x0E16, 0x1630, 0x020E, 0x1E1C, 0x0C03, 0x017C, 0x017B
+	.globl gQuizLadyQuestion12
+gQuizLadyQuestion12: @ 0x085D3BBC
+	quiz_lady_question 12, 0x0203, 0x020C, 0x100B, 0x162F, 0x020E, 0x1E1C, 0x0C03, 0x0127, 0x012A
+	.globl gQuizLadyQuestion13
+gQuizLadyQuestion13: @ 0x085D3BCE
+	quiz_lady_question 13, 0x0A3B, 0x0446, 0x0600, 0x1405, 0x1034, 0x1E1C, 0x0C03, 0x0420, 0x0426
+	.globl gQuizLadyQuestion14
+gQuizLadyQuestion14: @ 0x085D3BE0
+	quiz_lady_question 14, 0x0A49, 0x0400, 0x0600, 0x1444, 0x1034, 0x1E1C, 0x0C03, 0x040E, 0x0410
+	.globl gQuizLadyQuestion15
+gQuizLadyQuestion15: @ 0x085D3BF2
+	quiz_lady_question 15, 0x272C, 0x162E, 0x020E, 0x1E1F, 0x1011, 0x0C03, 0x0146, 0x014C, 0x2A1B
+	.globl gQuizLadyQuestionPointers
 	.globl gUnknown_85D3C04
+gQuizLadyQuestionPointers:
 gUnknown_85D3C04: @ 0x085D3C04
-	.incbin "baserom.gba", 0x5d3c04, 0x40
+	quiz_lady_question_pointer 0, gQuizLadyQuestion0
+	quiz_lady_question_pointer 1, gQuizLadyQuestion1
+	quiz_lady_question_pointer 2, gQuizLadyQuestion2
+	quiz_lady_question_pointer 3, gQuizLadyQuestion3
+	quiz_lady_question_pointer 4, gQuizLadyQuestion4
+	quiz_lady_question_pointer 5, gQuizLadyQuestion5
+	quiz_lady_question_pointer 6, gQuizLadyQuestion6
+	quiz_lady_question_pointer 7, gQuizLadyQuestion7
+	quiz_lady_question_pointer 8, gQuizLadyQuestion8
+	quiz_lady_question_pointer 9, gQuizLadyQuestion9
+	quiz_lady_question_pointer 10, gQuizLadyQuestion10
+	quiz_lady_question_pointer 11, gQuizLadyQuestion11
+	quiz_lady_question_pointer 12, gQuizLadyQuestion12
+	quiz_lady_question_pointer 13, gQuizLadyQuestion13
+	quiz_lady_question_pointer 14, gQuizLadyQuestion14
+	quiz_lady_question_pointer 15, gQuizLadyQuestion15
+	.globl gQuizLadyAnswers
 	.globl gUnknown_85D3C44
+gQuizLadyAnswers:
 gUnknown_85D3C44: @ 0x085D3C44
-	.incbin "baserom.gba", 0x5d3c44, 0x20
+	.2byte 0x013A, 0x016F, 0x2A43, 0x1802
+	.2byte 0x262D, 0x1814, 0x2202, 0x1A01
+	.2byte 0x1C13, 0x0A09, 0x0115, 0x017C
+	.2byte 0x012A, 0x0420, 0x0410, 0x0146
+	.globl gQuizLadyPrizes
 	.globl gUnknown_85D3C64
+gQuizLadyPrizes:
 gUnknown_85D3C64: @ 0x085D3C64
-	.incbin "baserom.gba", 0x5d3c64, 0x2a
+	.2byte ITEM_GLITTER_MAIL, ITEM_BEAD_MAIL, ITEM_TROPIC_MAIL
+	.2byte ITEM_MAX_ETHER, ITEM_MAX_ETHER, ITEM_MAX_ETHER
+	.2byte ITEM_WATMEL_BERRY, ITEM_BELUE_BERRY, ITEM_DURIN_BERRY
+	.2byte ITEM_LUXURY_BALL, ITEM_TM15, ITEM_BIG_PEARL, ITEM_STAR_PIECE
+	.2byte ITEM_RARE_CANDY, ITEM_RARE_CANDY, ITEM_PREMIER_BALL
+
+	.globl gText_LilycoveLady_Smooth
+gText_LilycoveLady_Smooth: @ 0x085D3C84
+	.string "すべすべ$"
+	.globl gText_LilycoveLady_Round
+gText_LilycoveLady_Round: @ 0x085D3C89
+	.string "まるまる$"
 
 	@ src/data/easy_chat/easy_chat_group_adjectives.h:124 easy_chat_group_adjectives_line_124
 	.globl gText_Rom_5D3C8E

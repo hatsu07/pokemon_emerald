@@ -762,9 +762,9 @@ _0818DC26:
 	bx r0
 	.align 2, 0
 _0818DC64: .4byte 0x0203CA34
-_0818DC68: .4byte 0x085D3C04
-_0818DC6C: .4byte 0x085D3C44
-_0818DC70: .4byte 0x085D3C64
+_0818DC68: .4byte gQuizLadyQuestionPointers
+_0818DC6C: .4byte gQuizLadyAnswers
+_0818DC70: .4byte gQuizLadyPrizes
 	thumb_func_end sub_0818DC0C
 
 	thumb_func_start SetLilycoveQuizLady

@@ -116,6 +116,21 @@
 	.byte (\x) & 0xFF, (\y) & 0xFF
 	.endm
 
+	@ Nine packed Easy Chat words forming one Quiz Lady question.
+	.macro quiz_lady_question question, word0, word1, word2, word3, word4, word5, word6, word7, word8
+	.if (\question) != ((. - gQuizLadyQuestions) / 18)
+	.error "Quiz Lady questions are out of order"
+	.endif
+	.2byte \word0, \word1, \word2, \word3, \word4, \word5, \word6, \word7, \word8
+	.endm
+
+	.macro quiz_lady_question_pointer question, pointer
+	.if (\question) != ((. - gQuizLadyQuestionPointers) / 4)
+	.error "Quiz Lady question pointers are out of order"
+	.endif
+	.4byte \pointer
+	.endm
+
 	@ Packs the four halfwords of struct OamData from semantic fields.
 	.macro rodata_sprite_oam_data y, affine_mode, obj_mode, mosaic, bpp, shape, x, matrix_num, size, tile_num, priority, palette_num, affine_param
 	.2byte ((\y) & 0xFF) | (((\affine_mode) & 3) << 8) | (((\obj_mode) & 3) << 10) | (((\mosaic) & 1) << 12) | (((\bpp) & 1) << 13) | (((\shape) & 3) << 14)
