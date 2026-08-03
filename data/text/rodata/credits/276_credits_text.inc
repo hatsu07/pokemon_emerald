@@ -3083,12 +3083,38 @@ gUnknown_85D5928: @ 0x085D5928
 	bg_template 1, 1, 24, 3, 0, 0, 0
 	bg_template 2, 2, 28, 3, 0, 1, 0
 	bg_template 3, 2, 7, 0, 0, 1, 0
+	.globl gBattleDomeTourneyTreeWindowTemplates
 	.globl gUnknown_85D5938
+gBattleDomeTourneyTreeWindowTemplates:
 gUnknown_85D5938: @ 0x085D5938
-	.incbin "baserom.gba", 0x5d5938, 0x20
+	window_template 0, 0, 3, 8, 16, 15, 0x10  @ names, left
+	window_template 0, 22, 3, 8, 16, 15, 0x90 @ names, right
+	window_template 0, 8, 1, 14, 2, 15, 0x110 @ title
+	null_window_template
+	.globl gBattleDomeInfoCardWindowTemplates
 	.globl gUnknown_85D5958
+gBattleDomeInfoCardWindowTemplates:
 gUnknown_85D5958: @ 0x085D5958
-	.incbin "baserom.gba", 0x5d5958, 0x98
+	window_template 0, 4, 2, 23, 2, 15, 0x1   @ trainer name
+	window_template 0, 16, 5, 8, 2, 15, 0x2F  @ trainer Pokemon 1
+	window_template 0, 20, 7, 8, 3, 15, 0x3F  @ trainer Pokemon 2
+	window_template 0, 16, 10, 8, 2, 15, 0x57 @ trainer Pokemon 3
+	window_template 0, 3, 12, 24, 7, 15, 0x67 @ trainer description
+	window_template 0, 6, 2, 26, 2, 15, 0x10F @ match number
+	window_template 0, 2, 5, 8, 2, 15, 0x143  @ left trainer name
+	window_template 0, 20, 5, 8, 2, 15, 0x153 @ right trainer name
+	window_template 0, 3, 16, 24, 2, 15, 0x163 @ winner text
+	@ Alternate information-card slot on BG 1.
+	window_template 1, 4, 2, 23, 2, 15, 0x1
+	window_template 1, 16, 5, 8, 2, 15, 0x2F
+	window_template 1, 20, 7, 8, 3, 15, 0x3F
+	window_template 1, 16, 10, 8, 2, 15, 0x57
+	window_template 1, 3, 12, 24, 7, 15, 0x67
+	window_template 1, 6, 2, 26, 2, 15, 0x10F
+	window_template 1, 2, 5, 8, 2, 15, 0x143
+	window_template 1, 20, 5, 8, 2, 15, 0x153
+	window_template 1, 3, 16, 24, 2, 15, 0x163
+	null_window_template
 	.globl gUnknown_85D59F0
 gUnknown_85D59F0: @ 0x085D59F0
 	.incbin "baserom.gba", 0x5d59f0, 0xc

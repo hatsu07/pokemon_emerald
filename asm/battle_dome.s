@@ -3398,7 +3398,7 @@ _081900AA:
 	.align 2, 0
 _0819010C: .4byte 0x05006000
 _08190110: .4byte gBattleDomeInfoCardBgTemplates
-_08190114: .4byte 0x085D5958
+_08190114: .4byte gBattleDomeInfoCardWindowTemplates
 _08190118: .4byte 0x02022AC8
 _0819011C: .4byte 0x02022ACA
 _08190120: .4byte 0x02022ACC
@@ -11109,7 +11109,7 @@ _08193E5C:
 	.align 2, 0
 _08193EDC: .4byte 0x05006000
 _08193EE0: .4byte gBattleDomeTourneyTreeBgTemplates
-_08193EE4: .4byte 0x085D5938
+_08193EE4: .4byte gBattleDomeTourneyTreeWindowTemplates
 _08193EE8: .4byte 0x02022AC8
 _08193EEC: .4byte 0x02022ACA
 _08193EF0: .4byte 0x02022ACC
