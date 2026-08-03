@@ -9697,7 +9697,7 @@ _08193368: .4byte 0x085D5E2A
 _0819336C: .4byte 0x085D5E2D
 _08193370: .4byte 0x08190595
 _08193374: .4byte 0x02021C7C
-_08193378: .4byte 0x085D5E08
+_08193378: .4byte gBattleDomeWinTexts
 _0819337C: .4byte 0x000003FF
 _08193380: .4byte 0x02021C40
 _08193384:
@@ -9812,7 +9812,7 @@ _08193412:
 	bx r0
 	.align 2, 0
 _0819347C: .4byte 0x02021C40
-_08193480: .4byte 0x085D5DCC
+_08193480: .4byte gBattleDomeMatchNumberTexts
 	thumb_func_end DisplayMatchInfoOnCard
 
 	thumb_func_start ShowDomeTourneyTree

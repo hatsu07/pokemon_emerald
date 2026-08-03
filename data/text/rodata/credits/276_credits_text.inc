@@ -3446,12 +3446,33 @@ gBattleDomeStatTextOffsets: @ 0x085D5DC5
 	.byte DOME_TEXT_HP, DOME_TEXT_ATK, DOME_TEXT_DEF
 	.byte DOME_TEXT_SPEED, DOME_TEXT_SPATK
 	.align 2, 0
-	.globl gUnknown_85D5DCC
-gUnknown_85D5DCC: @ 0x085D5DCC
-	.incbin "baserom.gba", 0x5d5dcc, 0x3c
-	.globl gUnknown_85D5E08
-gUnknown_85D5E08: @ 0x085D5E08
-	.incbin "baserom.gba", 0x5d5e08, 0x1c
+	.globl gBattleDomeMatchNumberTexts
+gBattleDomeMatchNumberTexts: @ 0x085D5DCC
+	.4byte gText_Rom_2741DA @ Round 1, match 1
+	.4byte gText_Rom_2741E8 @ Round 1, match 2
+	.4byte gText_Rom_2741F6 @ Round 1, match 3
+	.4byte gText_Rom_274204 @ Round 1, match 4
+	.4byte gText_Rom_274212 @ Round 1, match 5
+	.4byte gText_Rom_274220 @ Round 1, match 6
+	.4byte gText_Rom_27422E @ Round 1, match 7
+	.4byte gText_Rom_27423C @ Round 1, match 8
+	.4byte gText_Rom_27424A @ Round 2, match 1
+	.4byte gText_Rom_274258 @ Round 2, match 2
+	.4byte gText_Rom_274266 @ Round 2, match 3
+	.4byte gText_Rom_274274 @ Round 2, match 4
+	.4byte gText_Rom_274282 @ Semifinal, match 1
+	.4byte gText_Rom_274292 @ Semifinal, match 2
+	.4byte gText_Rom_2742A2 @ Final
+
+	.globl gBattleDomeWinTexts
+gBattleDomeWinTexts: @ 0x085D5E08
+	.4byte gText_Rom_27415B @ No winner yet
+	.4byte gText_Rom_274166 @ Won using a move
+	.4byte gText_Rom_274177 @ Became champion using a move
+	.4byte gText_Rom_274188 @ Won by default
+	.4byte gText_Rom_27419D @ Became champion by default
+	.4byte gText_Rom_2741B2 @ Won without using a move
+	.4byte gText_Rom_2741C6 @ Became champion without using a move
 	.globl gUnknown_85D5E24
 gUnknown_85D5E24: @ 0x085D5E24
 	.incbin "baserom.gba", 0x5d5e24, 0x3
