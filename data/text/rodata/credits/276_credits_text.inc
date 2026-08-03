@@ -2808,7 +2808,9 @@ gUnknown_85D3D84: @ 0x085D3D84
 gUnknown_85D3D90: @ 0x085D3D90
 
 	@ asm/lilycove_lady.s:947 sub_0818DDA4
+	.globl gText_QuizLadyDefaultAnswer
 	.globl gText_Rom_5D3D90
+gText_QuizLadyDefaultAnswer:
 gText_Rom_5D3D90: @ 0x085D3D90
 	.string "おねえ$"
 	.if (. - gText_Rom_5D3D90) > 0x4
@@ -2819,7 +2821,9 @@ gText_Rom_5D3D90: @ 0x085D3D90
 	.endif
 
 	@ asm/lilycove_lady.s:1826 sub_0818E43C
+	.globl gText_ContestLadyMonName_Cool
 	.globl gText_Rom_5D3D94
+gText_ContestLadyMonName_Cool:
 gText_Rom_5D3D94: @ 0x085D3D94
 	.string "ハンサム$"
 	.if (. - gText_Rom_5D3D94) > 0x5
@@ -2830,7 +2834,9 @@ gText_Rom_5D3D94: @ 0x085D3D94
 	.endif
 
 	@ asm/lilycove_lady.s:1826 sub_0818E43C
+	.globl gText_ContestLadyMonName_Beauty
 	.globl gText_Rom_5D3D99
+gText_ContestLadyMonName_Beauty:
 gText_Rom_5D3D99: @ 0x085D3D99
 	.string "ジョバンニ$"
 	.if (. - gText_Rom_5D3D99) > 0x6
@@ -2841,7 +2847,9 @@ gText_Rom_5D3D99: @ 0x085D3D99
 	.endif
 
 	@ asm/lilycove_lady.s:1826 sub_0818E43C
+	.globl gText_ContestLadyMonName_Cute
 	.globl gText_Rom_5D3D9F
+gText_ContestLadyMonName_Cute:
 gText_Rom_5D3D9F: @ 0x085D3D9F
 	.string "もあもあ$"
 	.if (. - gText_Rom_5D3D9F) > 0x5
@@ -2852,7 +2860,9 @@ gText_Rom_5D3D9F: @ 0x085D3D9F
 	.endif
 
 	@ asm/lilycove_lady.s:1826 sub_0818E43C
+	.globl gText_ContestLadyMonName_Smart
 	.globl gText_Rom_5D3DA4
+gText_ContestLadyMonName_Smart:
 gText_Rom_5D3DA4: @ 0x085D3DA4
 	.string "てつ$"
 	.if (. - gText_Rom_5D3DA4) > 0x3
@@ -2863,7 +2873,9 @@ gText_Rom_5D3DA4: @ 0x085D3DA4
 	.endif
 
 	@ asm/lilycove_lady.s:1826 sub_0818E43C
+	.globl gText_ContestLadyMonName_Tough
 	.globl gText_Rom_5D3DA7
+gText_ContestLadyMonName_Tough:
 gText_Rom_5D3DA7: @ 0x085D3DA7
 	.string "きんにくん$"
 	.if (. - gText_Rom_5D3DA7) > 0x6
@@ -2872,13 +2884,21 @@ gText_Rom_5D3DA7: @ 0x085D3DA7
 	.if (. - gText_Rom_5D3DA7) < 0x6
 	.space 0x6 - (. - gText_Rom_5D3DA7)
 	.endif
-	.incbin "baserom.gba", 0x5d3dad, 0x3
+	.align 2, 0
+	.globl gContestLadyMonNamePointers
 	.globl gUnknown_85D3DB0
+gContestLadyMonNamePointers:
 gUnknown_85D3DB0: @ 0x085D3DB0
-	.incbin "baserom.gba", 0x5d3db0, 0x14
+	.4byte gText_ContestLadyMonName_Cool
+	.4byte gText_ContestLadyMonName_Beauty
+	.4byte gText_ContestLadyMonName_Cute
+	.4byte gText_ContestLadyMonName_Smart
+	.4byte gText_ContestLadyMonName_Tough
 
 	@ asm/lilycove_lady.s:1789 sub_0818E3F0
+	.globl gText_ContestLadyCategory_Cool
 	.globl gText_Rom_5D3DC4
+gText_ContestLadyCategory_Cool:
 gText_Rom_5D3DC4: @ 0x085D3DC4
 	.string "かっこよ$"
 	.if (. - gText_Rom_5D3DC4) > 0x5
@@ -2889,7 +2909,9 @@ gText_Rom_5D3DC4: @ 0x085D3DC4
 	.endif
 
 	@ asm/lilycove_lady.s:1789 sub_0818E3F0
+	.globl gText_ContestLadyCategory_Beauty
 	.globl gText_Rom_5D3DC9
+gText_ContestLadyCategory_Beauty:
 gText_Rom_5D3DC9: @ 0x085D3DC9
 	.string "うつくし$"
 	.if (. - gText_Rom_5D3DC9) > 0x5
@@ -2900,7 +2922,9 @@ gText_Rom_5D3DC9: @ 0x085D3DC9
 	.endif
 
 	@ asm/lilycove_lady.s:1789 sub_0818E3F0
+	.globl gText_ContestLadyCategory_Cute
 	.globl gText_Rom_5D3DCE
+gText_ContestLadyCategory_Cute:
 gText_Rom_5D3DCE: @ 0x085D3DCE
 	.string "かわい$"
 	.if (. - gText_Rom_5D3DCE) > 0x4
@@ -2911,7 +2935,9 @@ gText_Rom_5D3DCE: @ 0x085D3DCE
 	.endif
 
 	@ asm/lilycove_lady.s:1789 sub_0818E3F0
+	.globl gText_ContestLadyCategory_Smart
 	.globl gText_Rom_5D3DD2
+gText_ContestLadyCategory_Smart:
 gText_Rom_5D3DD2: @ 0x085D3DD2
 	.string "かしこ$"
 	.if (. - gText_Rom_5D3DD2) > 0x4
@@ -2922,7 +2948,9 @@ gText_Rom_5D3DD2: @ 0x085D3DD2
 	.endif
 
 	@ asm/lilycove_lady.s:1789 sub_0818E3F0
+	.globl gText_ContestLadyCategory_Tough
 	.globl gText_Rom_5D3DD6
+gText_ContestLadyCategory_Tough:
 gText_Rom_5D3DD6: @ 0x085D3DD6
 	.string "たくまし$"
 	.if (. - gText_Rom_5D3DD6) > 0x5
@@ -2931,13 +2959,26 @@ gText_Rom_5D3DD6: @ 0x085D3DD6
 	.if (. - gText_Rom_5D3DD6) < 0x5
 	.space 0x5 - (. - gText_Rom_5D3DD6)
 	.endif
-	.incbin "baserom.gba", 0x5d3ddb, 0x1
+	.align 2, 0
+	.globl gContestLadyCategoryTextPointers
 	.globl gUnknown_85D3DDC
+gContestLadyCategoryTextPointers:
 gUnknown_85D3DDC: @ 0x085D3DDC
-	.incbin "baserom.gba", 0x5d3ddc, 0x14
+	.4byte gText_ContestLadyCategory_Cool
+	.4byte gText_ContestLadyCategory_Beauty
+	.4byte gText_ContestLadyCategory_Cute
+	.4byte gText_ContestLadyCategory_Smart
+	.4byte gText_ContestLadyCategory_Tough
+	.globl gContestLadyMonSpecies
 	.globl gUnknown_85D3DF0
+gContestLadyMonSpecies:
 gUnknown_85D3DF0: @ 0x085D3DF0
-	.incbin "baserom.gba", 0x5d3df0, 0xc
+	.2byte SPECIES_ZIGZAGOON @ CONTEST_COOL
+	.2byte SPECIES_SKITTY    @ CONTEST_BEAUTY
+	.2byte SPECIES_POOCHYENA @ CONTEST_CUTE
+	.2byte SPECIES_KECLEON   @ CONTEST_SMART
+	.2byte SPECIES_PIKACHU   @ CONTEST_TOUGH
+	.2byte SPECIES_NONE      @ padding
 	.globl gUnknown_85D3DFC
 gUnknown_85D3DFC: @ 0x085D3DFC
 	.incbin "baserom.gba", 0x5d3dfc, 0x1630
