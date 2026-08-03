@@ -3304,15 +3304,26 @@ gBattleDomeIdToMatchNumber: @ 0x085D5BD8
 	.byte 6, 11, 13, 14
 	.byte 7, 11, 13, 14 @ trainers 14-15
 	.byte 7, 11, 13, 14
-	.globl gUnknown_85D5C18
-gUnknown_85D5C18: @ 0x085D5C18
-	.incbin "baserom.gba", 0x5d5c18, 0x4
-	.globl gUnknown_85D5C1C
-gUnknown_85D5C1C: @ 0x085D5C1C
-	.incbin "baserom.gba", 0x5d5c1c, 0x20
-	.globl gUnknown_85D5C3C
-gUnknown_85D5C3C: @ 0x085D5C3C
-	.incbin "baserom.gba", 0x5d5c3c, 0x10
+	.globl gBattleDomeLastMatchCardNum
+gBattleDomeLastMatchCardNum: @ 0x085D5C18
+	.byte 23, 27, 29, 30
+
+	@ Last visible match card for each first-round pair and current round.
+	.globl gBattleDomeTrainerAndRoundToLastMatchCardNum
+gBattleDomeTrainerAndRoundToLastMatchCardNum: @ 0x085D5C1C
+	.byte 16, 24, 28, 30
+	.byte 17, 24, 28, 30
+	.byte 18, 25, 28, 30
+	.byte 19, 25, 28, 30
+	.byte 20, 26, 29, 30
+	.byte 21, 26, 29, 30
+	.byte 22, 27, 29, 30
+	.byte 23, 27, 29, 30
+
+	.globl gBattleDomeTournamentIdToPairedTrainerIds
+gBattleDomeTournamentIdToPairedTrainerIds: @ 0x085D5C3C
+	.byte 0, 15, 8, 7, 3, 12, 11, 4
+	.byte 1, 14, 9, 6, 2, 13, 10, 5
 	.globl gUnknown_85D5C4C
 gUnknown_85D5C4C: @ 0x085D5C4C
 	.incbin "baserom.gba", 0x5d5c4c, 0x44

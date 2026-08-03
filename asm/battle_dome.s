@@ -7218,7 +7218,7 @@ _08191FE8: .4byte 0x03005AF0
 _08191FEC: .4byte 0x00000D25
 _08191FF0: .4byte 0x0203CA44
 _08191FF4: .4byte 0x03005B60
-_08191FF8: .4byte 0x085D5C1C
+_08191FF8: .4byte gBattleDomeTrainerAndRoundToLastMatchCardNum
 _08191FFC:
 	lsls r0, r6, #2
 	adds r0, r0, r6
@@ -7246,7 +7246,7 @@ _0819200C:
 	b _08192036
 	.align 2, 0
 _0819202C: .4byte 0x0203CA44
-_08192030: .4byte 0x085D5C18
+_08192030: .4byte gBattleDomeLastMatchCardNum
 _08192034:
 	subs r5, #1
 _08192036:
@@ -7272,7 +7272,7 @@ _0819203A:
 	b _08192066
 	.align 2, 0
 _0819205C: .4byte 0x0203CA44
-_08192060: .4byte 0x085D5C18
+_08192060: .4byte gBattleDomeLastMatchCardNum
 _08192064:
 	adds r5, #1
 _08192066:
@@ -7328,7 +7328,7 @@ _081920A2:
 	.align 2, 0
 _081920C0: .4byte 0x0203CA44
 _081920C4: .4byte 0x03005B60
-_081920C8: .4byte 0x085D5C3C
+_081920C8: .4byte gBattleDomeTournamentIdToPairedTrainerIds
 _081920CC:
 	cmp r1, #2
 	bne _081920F0
@@ -7346,7 +7346,7 @@ _081920DE:
 	b _081920FC
 	.align 2, 0
 _081920E8: .4byte 0x03005B60
-_081920EC: .4byte 0x085D5C3C
+_081920EC: .4byte gBattleDomeTournamentIdToPairedTrainerIds
 _081920F0:
 	lsls r0, r6, #2
 	adds r0, r0, r6
@@ -13217,8 +13217,8 @@ sub_08194FE8: @ 0x08194FE8
 	ldrb r0, [r0]
 	b _08195030
 	.align 2, 0
-_08195024: .4byte 0x085D5C1C
-_08195028: .4byte 0x085D5C3C
+_08195024: .4byte gBattleDomeTrainerAndRoundToLastMatchCardNum
+_08195028: .4byte gBattleDomeTournamentIdToPairedTrainerIds
 _0819502C:
 	mov r0, sp
 	ldrb r0, [r0, #1]
