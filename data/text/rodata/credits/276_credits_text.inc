@@ -3473,21 +3473,27 @@ gBattleDomeWinTexts: @ 0x085D5E08
 	.4byte gText_Rom_27419D @ Became champion by default
 	.4byte gText_Rom_2741B2 @ Won without using a move
 	.4byte gText_Rom_2741C6 @ Became champion without using a move
-	.globl gUnknown_85D5E24
-gUnknown_85D5E24: @ 0x085D5E24
-	.incbin "baserom.gba", 0x5d5e24, 0x3
-	.globl gUnknown_85D5E27
-gUnknown_85D5E27: @ 0x085D5E27
-	.incbin "baserom.gba", 0x5d5e27, 0x3
-	.globl gUnknown_85D5E2A
-gUnknown_85D5E2A: @ 0x085D5E2A
-	.incbin "baserom.gba", 0x5d5e2a, 0x3
-	.globl gUnknown_85D5E2D
-gUnknown_85D5E2D: @ 0x085D5E2D
-	.incbin "baserom.gba", 0x5d5e2d, 0x3
-	.globl gUnknown_85D5E30
-gUnknown_85D5E30: @ 0x085D5E30
-	.incbin "baserom.gba", 0x5d5e30, 0x10
+	.globl gBattleDomeLeftTrainerMonX
+gBattleDomeLeftTrainerMonX: @ 0x085D5E24
+	.byte 96, 96, 96
+
+	.globl gBattleDomeLeftTrainerMonY
+gBattleDomeLeftTrainerMonY: @ 0x085D5E27
+	.byte 56, 80, 104
+
+	.globl gBattleDomeRightTrainerMonX
+gBattleDomeRightTrainerMonX: @ 0x085D5E2A
+	.byte 144, 144, 144
+
+	.globl gBattleDomeRightTrainerMonY
+gBattleDomeRightTrainerMonY: @ 0x085D5E2D
+	.byte 56, 80, 104
+
+	@ Duplicate of gBattleDomeTourneyTreeTrainerIds.
+	.globl gBattleDomeTourneyTreeTrainerIds2
+gBattleDomeTourneyTreeTrainerIds2: @ 0x085D5E30
+	.byte 0, 8, 12, 4, 7, 15, 11, 3
+	.byte 2, 10, 14, 6, 5, 13, 9, 1
 	.globl gUnknown_85D5E40
 gUnknown_85D5E40: @ 0x085D5E40
 	.incbin "baserom.gba", 0x5d5e40, 0x2
