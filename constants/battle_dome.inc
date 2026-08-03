@@ -72,5 +72,10 @@
 	.set DOME_FINAL,                       3
 	.set DOME_ROUNDS_COUNT,                4
 
+	.set TOURNEYWIN_NAMES_LEFT,            0
+	.set TOURNEYWIN_NAMES_RIGHT,           1
+	.set TOURNEY_NAME_ROW_HEIGHT,          16
+	.set TOURNEY_NAME_TEXT_Y_OFFSET,       1
+
 	.set TOURNEY_TREE_CLOSE_BUTTON,        31
 	.set TOURNEY_TREE_INVALID_MOVE,        0xFF

@@ -1553,7 +1553,7 @@ _0818F2D0:
 _0818F2F0: .4byte 0x00000D24
 _0818F2F4: .4byte 0x03005AF0
 _0818F2F8: .4byte 0x000003FF
-_0818F2FC: .4byte 0x085D5E6D
+_0818F2FC: .4byte gBattleDomeTrainerNamePositions
 _0818F300: .4byte 0xFFFFFC00
 _0818F304: .4byte 0x000003FE
 _0818F308:
@@ -11586,7 +11586,7 @@ _081942E0:
 	subs r0, r0, r1
 	b _0819430E
 	.align 2, 0
-_08194304: .4byte 0x085D5E6D
+_08194304: .4byte gBattleDomeTrainerNamePositions
 _08194308: .4byte 0x02022AE0
 _0819430C:
 	movs r0, #4
@@ -11632,8 +11632,8 @@ _0819434A:
 	b _08194466
 	.align 2, 0
 _0819435C: .4byte 0x02022AE0
-_08194360: .4byte 0x085D5E6D
-_08194364: .4byte 0x085D5E6E
+_08194360: .4byte gBattleDomeTrainerNamePositions
+_08194364: .4byte gBattleDomeTrainerNameYCoords
 _08194368: .4byte 0x03005B60
 _0819436C:
 	movs r0, #0
@@ -11967,7 +11967,7 @@ _08194618: .4byte 0x00000D24
 _0819461C: .4byte 0x02022AE0
 _08194620: .4byte 0x00000D25
 _08194624: .4byte 0x00000CB2
-_08194628: .4byte 0x085D5E6D
+_08194628: .4byte gBattleDomeTrainerNamePositions
 _0819462C:
 	mov r0, r8
 	adds r1, r4, r0
@@ -12045,8 +12045,8 @@ _081946BA:
 	.align 2, 0
 _081946BC: .4byte 0x02021C40
 _081946C0: .4byte 0x02022AE0
-_081946C4: .4byte 0x085D5E6D
-_081946C8: .4byte 0x085D5E6E
+_081946C4: .4byte gBattleDomeTrainerNamePositions
+_081946C8: .4byte gBattleDomeTrainerNameYCoords
 _081946CC: .4byte 0x03005AF0
 _081946D0: .4byte 0x00000D25
 _081946D4:
