@@ -7930,7 +7930,7 @@ _081925A4: .4byte 0x03005AF0
 _081925A8: .4byte 0x00000D64
 _081925AC: .4byte 0x0203B958
 _081925B0: .4byte 0x000003FE
-_081925B4: .4byte 0x085D5C4C
+_081925B4: .4byte gBattleDomePotentialTexts
 _081925B8:
 	ldr r0, _08192628
 	ldr r2, [sp, #0x20]
@@ -7991,7 +7991,7 @@ _081925FA:
 	ldr r2, [sp, #0x48]
 	b _0819268C
 	.align 2, 0
-_08192628: .4byte 0x085D5C4C
+_08192628: .4byte gBattleDomePotentialTexts
 _0819262C: .4byte gBattleDomeMovePoints
 _08192630: .4byte 0x000003FE
 _08192634:

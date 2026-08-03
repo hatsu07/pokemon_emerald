@@ -3324,9 +3324,26 @@ gBattleDomeTrainerAndRoundToLastMatchCardNum: @ 0x085D5C1C
 gBattleDomeTournamentIdToPairedTrainerIds: @ 0x085D5C3C
 	.byte 0, 15, 8, 7, 3, 12, 11, 4
 	.byte 1, 14, 9, 6, 2, 13, 10, 5
-	.globl gUnknown_85D5C4C
-gUnknown_85D5C4C: @ 0x085D5C4C
-	.incbin "baserom.gba", 0x5d5c4c, 0x44
+	@ Potential-to-win text, highest to lowest, followed by Dome Ace Tucker.
+	.globl gBattleDomePotentialTexts
+gBattleDomePotentialTexts: @ 0x085D5C4C
+	.4byte gText_Rom_273952
+	.4byte gText_Rom_27396A
+	.4byte gText_Rom_273983
+	.4byte gText_Rom_27399B
+	.4byte gText_Rom_2739B2
+	.4byte gText_Rom_2739C9
+	.4byte gText_Rom_2739DF
+	.4byte gText_Rom_2739F8
+	.4byte gText_Rom_273A0D
+	.4byte gText_Rom_273A25
+	.4byte gText_Rom_273A3D
+	.4byte gText_Rom_273A55
+	.4byte gText_Rom_273A6C
+	.4byte gText_Rom_273A84
+	.4byte gText_Rom_273A9D
+	.4byte gText_Rom_273AB3
+	.4byte gText_Rom_273AC9
 	.globl gUnknown_85D5C90
 gUnknown_85D5C90: @ 0x085D5C90
 	.incbin "baserom.gba", 0x5d5c90, 0x80
