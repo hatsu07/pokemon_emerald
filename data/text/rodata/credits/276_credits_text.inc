@@ -2979,9 +2979,11 @@ gUnknown_85D3DF0: @ 0x085D3DF0
 	.2byte SPECIES_KECLEON   @ CONTEST_SMART
 	.2byte SPECIES_PIKACHU   @ CONTEST_TOUGH
 	.2byte SPECIES_NONE      @ padding
+	.globl gBattleDomeMovePoints
 	.globl gUnknown_85D3DFC
+gBattleDomeMovePoints:
 gUnknown_85D3DFC: @ 0x085D3DFC
-	.incbin "baserom.gba", 0x5d3dfc, 0x1630
+	.include "data/battle_dome_move_points.inc"
 	.globl gUnknown_85D542C
 gUnknown_85D542C: @ 0x085D542C
 	.incbin "baserom.gba", 0x5d542c, 0x269

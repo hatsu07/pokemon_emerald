@@ -131,6 +131,29 @@
 	.4byte \pointer
 	.endm
 
+	@ Sixteen Battle Dome style characteristics for one move.
+	.macro battle_dome_move_points move, points
+	.if (\move) != ((. - gBattleDomeMovePoints) / NUM_MOVE_POINT_TYPES)
+	.error "Battle Dome move points are out of move ID order"
+	.endif
+	.byte ((\points) >> MOVE_POINTS_COMBO) & 1
+	.byte ((\points) >> MOVE_POINTS_STAT_RAISE) & 1
+	.byte ((\points) >> MOVE_POINTS_STAT_LOWER) & 1
+	.byte ((\points) >> MOVE_POINTS_RARE) & 1
+	.byte ((\points) >> MOVE_POINTS_HEAL) & 1
+	.byte ((\points) >> MOVE_POINTS_RISKY) & 1
+	.byte ((\points) >> MOVE_POINTS_STATUS) & 1
+	.byte ((\points) >> MOVE_POINTS_DMG) & 1
+	.byte ((\points) >> MOVE_POINTS_DEF) & 1
+	.byte ((\points) >> MOVE_POINTS_ACCURATE) & 1
+	.byte ((\points) >> MOVE_POINTS_POWERFUL) & 1
+	.byte ((\points) >> MOVE_POINTS_POPULAR) & 1
+	.byte ((\points) >> MOVE_POINTS_LUCK) & 1
+	.byte ((\points) >> MOVE_POINTS_STRONG) & 1
+	.byte ((\points) >> MOVE_POINTS_LOW_PP) & 1
+	.byte ((\points) >> MOVE_POINTS_EFFECT) & 1
+	.endm
+
 	@ Packs the four halfwords of struct OamData from semantic fields.
 	.macro rodata_sprite_oam_data y, affine_mode, obj_mode, mosaic, bpp, shape, x, matrix_num, size, tile_num, priority, palette_num, affine_param
 	.2byte ((\y) & 0xFF) | (((\affine_mode) & 3) << 8) | (((\obj_mode) & 3) << 10) | (((\mosaic) & 1) << 12) | (((\bpp) & 1) << 13) | (((\shape) & 3) << 14)

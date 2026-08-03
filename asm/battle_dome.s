@@ -7992,7 +7992,7 @@ _081925FA:
 	b _0819268C
 	.align 2, 0
 _08192628: .4byte 0x085D5C4C
-_0819262C: .4byte 0x085D3DFC
+_0819262C: .4byte gBattleDomeMovePoints
 _08192630: .4byte 0x000003FE
 _08192634:
 	ldr r0, _08192648
@@ -13893,4 +13893,3 @@ _08195540:
 	.align 2, 0
 _0819555C: .4byte 0x082E9D00
 	thumb_func_end CopyDomeBrainTrainerName
-
