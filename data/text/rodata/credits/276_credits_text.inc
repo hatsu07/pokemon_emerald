@@ -8,7 +8,21 @@ gText_Rom_5CD1E2: @ 0x085CD1E2
 	.if (. - gText_Rom_5CD1E2) < 0x4
 	.space 0x4 - (. - gText_Rom_5CD1E2)
 	.endif
-	.incbin "baserom.gba", 0x5cd1e6, 0x11
+
+	.globl gText_MysteryEventSaveSucceeded
+gText_MysteryEventSaveSucceeded: @ 0x085CD1E6
+	.string "セーブできました$"
+	.if (. - gText_MysteryEventSaveSucceeded) != 0x9
+	.error "gText_MysteryEventSaveSucceeded must retain its original byte length"
+	.endif
+
+	@ The final "でした$" suffix is emitted at 0x085CD1F7 below.
+	.globl gText_MysteryEventLoadFailed
+gText_MysteryEventLoadFailed: @ 0x085CD1EF
+	.string "ロードできません"
+	.if (. - gText_MysteryEventLoadFailed) != 0x8
+	.error "gText_MysteryEventLoadFailed prefix must retain its original byte length"
+	.endif
 
 	@ src/data/easy_chat/easy_chat_group_endings.h:196 easy_chat_group_endings_line_196
 	.globl gText_Rom_5CD1F7
@@ -20,13 +34,29 @@ gText_Rom_5CD1F7: @ 0x085CD1F7
 	.if (. - gText_Rom_5CD1F7) < 0x4
 	.space 0x4 - (. - gText_Rom_5CD1F7)
 	.endif
-	.incbin "baserom.gba", 0x5cd1fb, 0x9
-	.globl gUnknown_85CD204
-gUnknown_85CD204: @ 0x085CD204
-	.incbin "baserom.gba", 0x5cd204, 0x4
-	.globl gUnknown_85CD208
-gUnknown_85CD208: @ 0x085CD208
-	.incbin "baserom.gba", 0x5cd208, 0x18
+
+	.globl gText_MysteryEventLoadSucceeded
+gText_MysteryEventLoadSucceeded: @ 0x085CD1FB
+	.string "ロードできました$"
+	.if (. - gText_MysteryEventLoadSucceeded) != 0x9
+	.error "gText_MysteryEventLoadSucceeded must retain its original byte length"
+	.endif
+
+	.globl gMysteryEventBgTemplates
+gMysteryEventBgTemplates: @ 0x085CD204
+	bg_template 0, 2, 31, 0, 0, 0, 0
+	.if (. - gMysteryEventBgTemplates) != 0x4
+	.error "gMysteryEventBgTemplates must contain one 4-byte entry"
+	.endif
+
+	.globl gMysteryEventWindowTemplates
+gMysteryEventWindowTemplates: @ 0x085CD208
+	window_template 0, 4, 15, 22, 4, 14, 0x14
+	window_template 0, 7, 6, 16, 4, 14, 0x6C
+	null_window_template
+	.if (. - gMysteryEventWindowTemplates) != 0x18
+	.error "gMysteryEventWindowTemplates must contain two entries and a terminator"
+	.endif
 	.globl gUnknown_85CD220
 gUnknown_85CD220: @ 0x085CD220
 	.incbin "baserom.gba", 0x5cd220, 0x8
@@ -913,4 +943,3 @@ gText_Rom_5DBBDD: @ 0x085DBBDD
 	.endif
 	.globl gUnknown_85DBBE4
 gUnknown_85DBBE4: @ 0x085DBBE4
-

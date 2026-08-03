@@ -1,3 +1,7 @@
+	.macro bg_template bg, char_base, map_base, screen_size, palette_mode, priority, base_tile
+	.4byte ((\bg) & 3) | (((\char_base) & 3) << 2) | (((\map_base) & 0x1F) << 4) | (((\screen_size) & 3) << 9) | (((\palette_mode) & 1) << 11) | (((\priority) & 3) << 12) | (((\base_tile) & 0x3FF) << 14)
+	.endm
+
 	.macro menu_cursor_dimensions width, height
 	.byte \width, \height
 	.endm

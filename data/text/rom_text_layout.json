@@ -14917,11 +14917,11 @@
         },
         {
           "offset": "0x5CD204",
-          "label": "gUnknown_85CD204"
+          "label": "gMysteryEventBgTemplates"
         },
         {
           "offset": "0x5CD208",
-          "label": "gUnknown_85CD208"
+          "label": "gMysteryEventWindowTemplates"
         },
         {
           "offset": "0x5CD220",
