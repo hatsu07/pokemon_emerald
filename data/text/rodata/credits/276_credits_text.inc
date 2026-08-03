@@ -3656,12 +3656,18 @@ gUnknown_85D6900: @ 0x085D6900
 	.error "Battle Palace held item prize table has the wrong size"
 	.endif
 	.align 2, 0
+	.globl gBattlePalaceWinStreakFlags
 	.globl gUnknown_85D6914
+gBattlePalaceWinStreakFlags:
 gUnknown_85D6914: @ 0x085D6914
-	.incbin "baserom.gba", 0x5d6914, 0x10
+	.4byte STREAK_PALACE_SINGLES_50, STREAK_PALACE_SINGLES_OPEN
+	.4byte STREAK_PALACE_DOUBLES_50, STREAK_PALACE_DOUBLES_OPEN
+	.globl gBattlePalaceWinStreakMasks
 	.globl gUnknown_85D6924
+gBattlePalaceWinStreakMasks:
 gUnknown_85D6924: @ 0x085D6924
-	.incbin "baserom.gba", 0x5d6924, 0x10
+	.4byte ~STREAK_PALACE_SINGLES_50, ~STREAK_PALACE_SINGLES_OPEN
+	.4byte ~STREAK_PALACE_DOUBLES_50, ~STREAK_PALACE_DOUBLES_OPEN
 	.globl gUnknown_85D6934
 gUnknown_85D6934: @ 0x085D6934
 	.incbin "baserom.gba", 0x5d6934, 0xb68
