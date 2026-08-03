@@ -251,7 +251,7 @@ sub_0818D84C: @ 0x0818D84C
 	bx r0
 	.align 2, 0
 _0818D8A0: .4byte 0x0203CA30
-_0818D8A4: .4byte 0x085D3D6C
+_0818D8A4: .4byte gFavorLadyAcceptedItemListPointers
 	thumb_func_end sub_0818D84C
 
 	thumb_func_start SetLilycoveFavourLady
@@ -350,7 +350,7 @@ sub_0818D948: @ 0x0818D948
 	ldr r0, [r0]
 	bx lr
 	.align 2, 0
-_0818D954: .4byte 0x085D3CA4
+_0818D954: .4byte gFavorLadyRequestTextPointers
 	thumb_func_end sub_0818D948
 
 	thumb_func_start sub_0818D958
@@ -587,7 +587,7 @@ _0818DAE8:
 _0818DB18: .4byte 0x0203CA30
 _0818DB1C: .4byte 0x03005AEC
 _0818DB20: .4byte 0x00003B58
-_0818DB24: .4byte 0x085D3D6C
+_0818DB24: .4byte gFavorLadyAcceptedItemListPointers
 _0818DB28: .4byte 0x02021C54
 _0818DB2C: .4byte 0x03005AF0
 _0818DB30: .4byte gGameLanguage
@@ -688,7 +688,7 @@ sub_0818DBAC: @ 0x0818DBAC
 _0818DBD8: .4byte 0x0203CA30
 _0818DBDC: .4byte 0x03005AEC
 _0818DBE0: .4byte 0x00003B58
-_0818DBE4: .4byte 0x085D3D84
+_0818DBE4: .4byte gFavorLadyPrizes
 	thumb_func_end sub_0818DBAC
 
 	thumb_func_start sub_0818DBE8
