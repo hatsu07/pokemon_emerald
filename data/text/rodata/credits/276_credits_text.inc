@@ -2349,9 +2349,28 @@ gUnknown_85D37D0: @ 0x085D37D0
 	mon_anim_offset_step  2,  0, 6
 	mon_anim_offset_step -1, -1, 6
 	mon_anim_offset_step  0,  0, 0
+	.globl gMonAnimBounceRotateToSidesData
 	.globl gUnknown_85D37EE
+gMonAnimBounceRotateToSidesData:
 gUnknown_85D37EE: @ 0x085D37EE
-	.incbin "baserom.gba", 0x5d37ee, 0x30
+	@ Variant 0
+	mon_anim_interpolation_step  0,  8,  8
+	mon_anim_interpolation_step  8, -8, 12
+	mon_anim_interpolation_step -8,  8, 12
+	mon_anim_interpolation_step  8, -8, 12
+	mon_anim_interpolation_step -8,  8, 12
+	mon_anim_interpolation_step  8, -8, 12
+	mon_anim_interpolation_step -8,  0, 12
+	mon_anim_interpolation_step  0,  0,  0
+	@ Variant 1
+	mon_anim_interpolation_step  0,  8, 16
+	mon_anim_interpolation_step  8, -8, 24
+	mon_anim_interpolation_step -8,  8, 24
+	mon_anim_interpolation_step  8, -8, 24
+	mon_anim_interpolation_step -8,  8, 24
+	mon_anim_interpolation_step  8, -8, 24
+	mon_anim_interpolation_step -8,  0, 24
+	mon_anim_interpolation_step  0,  0,  0
 	.globl gUnknown_85D381E
 gUnknown_85D381E: @ 0x085D381E
 	.incbin "baserom.gba", 0x5d381e, 0xbe

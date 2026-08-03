@@ -2921,7 +2921,7 @@ _08180818:
 	b _081808E6
 	.align 2, 0
 _08180850: .4byte 0x03001240
-_08180854: .4byte 0x085D37EE
+_08180854: .4byte gMonAnimBounceRotateToSidesData
 _08180858: .4byte 0x08184C35
 _0818085C:
 	lsls r0, r7, #0x10

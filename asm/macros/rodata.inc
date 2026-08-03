@@ -88,6 +88,11 @@
 	.byte \x, \y, \duration
 	.endm
 
+	@ Horizontal interpolation endpoints and duration for a Pokemon animation.
+	.macro mon_anim_interpolation_step start, end, duration
+	.byte \start, \end, \duration
+	.endm
+
 	.macro sprite_tile_counts square8, square16, square32, square64, horizontal8, horizontal16, horizontal32, horizontal64, vertical8, vertical16, vertical32, vertical64
 	.byte \square8, \square16, \square32, \square64
 	.byte \horizontal8, \horizontal16, \horizontal32, \horizontal64
