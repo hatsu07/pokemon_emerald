@@ -3626,12 +3626,36 @@ gUnknown_85D68CC: @ 0x085D68CC
 	.if (. - gBattlePalaceFunctions) != (10 * 4)
 	.error "Battle Palace function table has the wrong size"
 	.endif
+	.globl gBattlePalaceVitaminPrizes
 	.globl gUnknown_85D68F4
+gBattlePalaceVitaminPrizes:
 gUnknown_85D68F4: @ 0x085D68F4
-	.incbin "baserom.gba", 0x5d68f4, 0xc
+	.2byte ITEM_HP_UP
+	.2byte ITEM_PROTEIN
+	.2byte ITEM_IRON
+	.2byte ITEM_CALCIUM
+	.2byte ITEM_CARBOS
+	.2byte ITEM_ZINC
+	.if (. - gBattlePalaceVitaminPrizes) != (6 * 2)
+	.error "Battle Palace vitamin prize table has the wrong size"
+	.endif
+	.globl gBattlePalaceHeldItemPrizes
 	.globl gUnknown_85D6900
+gBattlePalaceHeldItemPrizes:
 gUnknown_85D6900: @ 0x085D6900
-	.incbin "baserom.gba", 0x5d6900, 0x14
+	.2byte ITEM_BRIGHT_POWDER
+	.2byte ITEM_WHITE_HERB
+	.2byte ITEM_QUICK_CLAW
+	.2byte ITEM_LEFTOVERS
+	.2byte ITEM_MENTAL_HERB
+	.2byte ITEM_KINGS_ROCK
+	.2byte ITEM_FOCUS_BAND
+	.2byte ITEM_SCOPE_LENS
+	.2byte ITEM_CHOICE_BAND
+	.if (. - gBattlePalaceHeldItemPrizes) != (9 * 2)
+	.error "Battle Palace held item prize table has the wrong size"
+	.endif
+	.align 2, 0
 	.globl gUnknown_85D6914
 gUnknown_85D6914: @ 0x085D6914
 	.incbin "baserom.gba", 0x5d6914, 0x10

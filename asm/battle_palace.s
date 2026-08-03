@@ -527,7 +527,7 @@ _08195970: .4byte 0x000040CE
 _08195974: .4byte 0x03005AF0
 _08195978: .4byte 0x00000CA9
 _0819597C: .4byte 0x00000DC8
-_08195980: .4byte 0x085D6900
+_08195980: .4byte gBattlePalaceHeldItemPrizes
 _08195984: .4byte 0x00000DC6
 _08195988:
 	bl Random
@@ -549,7 +549,7 @@ _081959A6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081959B0: .4byte 0x085D68F4
+_081959B0: .4byte gBattlePalaceVitaminPrizes
 _081959B4: .4byte 0x00000DC6
 	thumb_func_end sub_08195928
 
