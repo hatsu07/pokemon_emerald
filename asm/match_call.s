@@ -1350,7 +1350,7 @@ _0819644C:
 	adds r2, #1
 	b _0819644C
 	.align 2, 0
-_08196458: .4byte 0x085D6934
+_08196458: .4byte gMatchCallTrainers
 _0819645C:
 	adds r0, r2, #0
 	pop {r1}
@@ -1379,7 +1379,7 @@ GetSameRouteMatchCallText: @ 0x08196464
 	adds r0, r0, r1
 	bx lr
 	.align 2, 0
-_08196488: .4byte 0x085D6934
+_08196488: .4byte gMatchCallTrainers
 _0819648C: .4byte 0x085D74A8
 	thumb_func_end GetSameRouteMatchCallText
 
@@ -1404,7 +1404,7 @@ GetDifferentRouteMatchCallText: @ 0x08196490
 	adds r0, r0, r1
 	bx lr
 	.align 2, 0
-_081964B4: .4byte 0x085D6934
+_081964B4: .4byte gMatchCallTrainers
 _081964B8: .4byte 0x085D74A8
 	thumb_func_end GetDifferentRouteMatchCallText
 
@@ -1447,7 +1447,7 @@ _081964EC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08196508: .4byte 0x085D6934
+_08196508: .4byte gMatchCallTrainers
 _0819650C: .4byte 0x085D749C
 	thumb_func_end GetBattleMatchCallText
 
@@ -1528,7 +1528,7 @@ _08196580:
 	b _081965D0
 	.align 2, 0
 _081965A0: .4byte 0x0203CA54
-_081965A4: .4byte 0x085D6934
+_081965A4: .4byte gMatchCallTrainers
 _081965A8: .4byte 0x085D74B0
 _081965AC:
 	ldr r1, _081965D8
@@ -1555,7 +1555,7 @@ _081965D0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081965D8: .4byte 0x085D6934
+_081965D8: .4byte gMatchCallTrainers
 _081965DC: .4byte 0x085D74B0
 	thumb_func_end GetGeneralMatchCallText
 
@@ -1644,7 +1644,7 @@ _0819665A:
 	bl StringCopy
 	b _0819668C
 	.align 2, 0
-_08196670: .4byte 0x085D6934
+_08196670: .4byte gMatchCallTrainers
 _08196674: .4byte 0x085D7A54
 _08196678:
 	adds r1, #8
@@ -1965,7 +1965,7 @@ _081968B6:
 	lsls r0, r0, #3
 	b _081968CA
 	.align 2, 0
-_081968BC: .4byte 0x085D6934
+_081968BC: .4byte gMatchCallTrainers
 _081968C0: .4byte 0x082E383C
 _081968C4:
 	lsls r0, r0, #3
@@ -2641,4 +2641,3 @@ sub_08196DB8: @ 0x08196DB8
 	bx r0
 	.align 2, 0
 	thumb_func_end sub_08196DB8
-

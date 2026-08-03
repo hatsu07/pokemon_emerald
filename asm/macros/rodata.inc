@@ -183,6 +183,19 @@
 	.4byte gBattleDomeTourneyTreeLineSections_Trainer\trainer\()_Round4
 	.endm
 
+	.macro match_call_trainer trainer_id, required_badges, battle1, battle2, battle3, general, frontier, same_route, different_route
+	.2byte \trainer_id, \required_badges
+	.2byte \battle1, \battle2, \battle3
+	.2byte \general, \frontier, \same_route, \different_route
+	.2byte 0 @ padding
+	.endm
+
+	.macro match_call_text text, var1, var2, var3
+	.4byte \text
+	.byte \var1, \var2, \var3
+	.byte 0 @ padding
+	.endm
+
 	@ Cursor destinations for five tournament rounds, ordered up, down, left, right.
 	.macro battle_dome_cursor_moves position, r1u, r1d, r1l, r1r, r2u, r2d, r2l, r2r, r3u, r3d, r3l, r3r, r4u, r4d, r4l, r4r, r5u, r5d, r5l, r5r
 	.if (\position) != ((. - gBattleDomeTourneyTreeCursorMovementMap) / 20)

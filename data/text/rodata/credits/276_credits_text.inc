@@ -3668,9 +3668,20 @@ gBattlePalaceWinStreakMasks:
 gUnknown_85D6924: @ 0x085D6924
 	.4byte ~STREAK_PALACE_SINGLES_50, ~STREAK_PALACE_SINGLES_OPEN
 	.4byte ~STREAK_PALACE_DOUBLES_50, ~STREAK_PALACE_DOUBLES_OPEN
+	.globl gMatchCallTrainers
 	.globl gUnknown_85D6934
+gMatchCallTrainers:
 gUnknown_85D6934: @ 0x085D6934
-	.incbin "baserom.gba", 0x5d6934, 0xb68
+	.include "data/match_call_trainers.inc"
+	.if (. - gMatchCallTrainers) != (64 * 20)
+	.error "Match Call trainer table has the wrong size"
+	.endif
+	.globl gMatchCallTexts
+gMatchCallTexts: @ 0x085D6E34
+	.include "data/match_call_texts.inc"
+	.if (. - gMatchCallTexts) != (205 * 8)
+	.error "Match Call text table has the wrong size"
+	.endif
 	.globl gUnknown_85D749C
 gUnknown_85D749C: @ 0x085D749C
 	.incbin "baserom.gba", 0x5d749c, 0xc
