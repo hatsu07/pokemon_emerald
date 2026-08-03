@@ -2593,12 +2593,25 @@ gUnknown_85D3AC4: @ 0x085D3AC4
 gPicSpriteOamDataAffine:
 gUnknown_85D3ACC: @ 0x085D3ACC
 	rodata_sprite_oam_data 0, 1, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0
+	.globl gContestLadyMonGfxIds
 	.globl gUnknown_85D3AD4
+gContestLadyMonGfxIds:
 gUnknown_85D3AD4: @ 0x085D3AD4
-	.incbin "baserom.gba", 0x5d3ad4, 0xa
+	.2byte 98  @ CONTEST_COOL
+	.2byte 203 @ CONTEST_BEAUTY
+	.2byte 220 @ CONTEST_CUTE
+	.2byte 204 @ CONTEST_SMART
+	.2byte 209 @ CONTEST_TOUGH
+	.globl gLilycoveLadyGfxIds
 	.globl gUnknown_85D3ADE
+gLilycoveLadyGfxIds:
 gUnknown_85D3ADE: @ 0x085D3ADE
-	.incbin "baserom.gba", 0x5d3ade, 0x49
+	.2byte 26 @ Quiz Lady
+	.2byte 20 @ Favor Lady
+	.2byte 10 @ Contest Lady
+	.globl gUnknown_85D3AE4
+gUnknown_85D3AE4: @ 0x085D3AE4
+	.incbin "baserom.gba", 0x5d3ae4, 0x43
 
 	@ src/data/abilities.h:214 abilities_line_214 (+1 aliases)
 	.globl gText_Rom_5D3B27
