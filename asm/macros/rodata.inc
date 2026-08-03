@@ -176,6 +176,13 @@
 	.2byte \tile
 	.endm
 
+	.macro battle_dome_tourney_line_paths trainer
+	.4byte gBattleDomeTourneyTreeLineSections_Trainer\trainer\()_Round1
+	.4byte gBattleDomeTourneyTreeLineSections_Trainer\trainer\()_Round2
+	.4byte gBattleDomeTourneyTreeLineSections_Trainer\trainer\()_Round3
+	.4byte gBattleDomeTourneyTreeLineSections_Trainer\trainer\()_Round4
+	.endm
+
 	@ Cursor destinations for five tournament rounds, ordered up, down, left, right.
 	.macro battle_dome_cursor_moves position, r1u, r1d, r1l, r1r, r2u, r2d, r2l, r2r, r3u, r3d, r3l, r3r, r4u, r4d, r4l, r4r, r5u, r5d, r5l, r5r
 	.if (\position) != ((. - gBattleDomeTourneyTreeCursorMovementMap) / 20)

@@ -3576,12 +3576,39 @@ gBattleDomeTourneyTreePokeballCoords: @ 0x085D5E8D
 	.globl gBattleDomeTourneyTreeLineSections
 gBattleDomeTourneyTreeLineSections: @ 0x085D5ECC
 	.include "data/battle_dome_tourney_tree_line_sections.inc"
+	.globl gBattleDomeTourneyTreeLineSectionPointers
 	.globl gUnknown_85D678C
+gBattleDomeTourneyTreeLineSectionPointers:
 gUnknown_85D678C: @ 0x085D678C
-	.incbin "baserom.gba", 0x5d678c, 0x100
+	battle_dome_tourney_line_paths 0
+	battle_dome_tourney_line_paths 1
+	battle_dome_tourney_line_paths 2
+	battle_dome_tourney_line_paths 3
+	battle_dome_tourney_line_paths 4
+	battle_dome_tourney_line_paths 5
+	battle_dome_tourney_line_paths 6
+	battle_dome_tourney_line_paths 7
+	battle_dome_tourney_line_paths 8
+	battle_dome_tourney_line_paths 9
+	battle_dome_tourney_line_paths 10
+	battle_dome_tourney_line_paths 11
+	battle_dome_tourney_line_paths 12
+	battle_dome_tourney_line_paths 13
+	battle_dome_tourney_line_paths 14
+	battle_dome_tourney_line_paths 15
+	.if (. - gBattleDomeTourneyTreeLineSectionPointers) != (16 * 4 * 4)
+	.error "Battle Dome tourney line section pointer table has the wrong size"
+	.endif
+	.globl gBattleDomeTourneyTreeLineSectionCounts
 	.globl gUnknown_85D688C
+gBattleDomeTourneyTreeLineSectionCounts:
 gUnknown_85D688C: @ 0x085D688C
-	.incbin "baserom.gba", 0x5d688c, 0x40
+	.rept 16
+	.byte 4, 7, 11, 13
+	.endr
+	.if (. - gBattleDomeTourneyTreeLineSectionCounts) != (16 * 4)
+	.error "Battle Dome tourney line section count table has the wrong size"
+	.endif
 	.globl gUnknown_85D68CC
 gUnknown_85D68CC: @ 0x085D68CC
 	.incbin "baserom.gba", 0x5d68cc, 0x28
