@@ -3494,12 +3494,27 @@ gBattleDomeRightTrainerMonY: @ 0x085D5E2D
 gBattleDomeTourneyTreeTrainerIds2: @ 0x085D5E30
 	.byte 0, 8, 12, 4, 7, 15, 11, 3
 	.byte 2, 10, 14, 6, 5, 13, 9, 1
-	.globl gUnknown_85D5E40
-gUnknown_85D5E40: @ 0x085D5E40
-	.incbin "baserom.gba", 0x5d5e40, 0x2
-	.globl gUnknown_85D5E42
-gUnknown_85D5E42: @ 0x085D5E42
-	.incbin "baserom.gba", 0x5d5e42, 0x2b
+	@ Candidate-list offset, candidate count, and round for each match.
+	.globl gBattleDomeCompetitorRangeByMatch
+gBattleDomeCompetitorRangeByMatch: @ 0x085D5E40
+	.byte  0,  2
+	.globl gBattleDomeCompetitorRoundByMatch
+gBattleDomeCompetitorRoundByMatch: @ 0x085D5E42
+	.byte DOME_ROUND1
+	.byte  2,  2, DOME_ROUND1
+	.byte  4,  2, DOME_ROUND1
+	.byte  6,  2, DOME_ROUND1
+	.byte  8,  2, DOME_ROUND1
+	.byte 10,  2, DOME_ROUND1
+	.byte 12,  2, DOME_ROUND1
+	.byte 14,  2, DOME_ROUND1
+	.byte  0,  4, DOME_ROUND2
+	.byte  4,  4, DOME_ROUND2
+	.byte  8,  4, DOME_ROUND2
+	.byte 12,  4, DOME_ROUND2
+	.byte  0,  8, DOME_SEMIFINAL
+	.byte  8,  8, DOME_SEMIFINAL
+	.byte  0, 16, DOME_FINAL
 	.globl gUnknown_85D5E6D
 gUnknown_85D5E6D: @ 0x085D5E6D
 	.incbin "baserom.gba", 0x5d5e6d, 0x1

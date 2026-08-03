@@ -66,5 +66,11 @@
 	.set DOME_TEXT_ONE_BAD_STAT,           36
 	.set DOME_TEXT_WELL_BALANCED,          42
 
+	.set DOME_ROUND1,                      0
+	.set DOME_ROUND2,                      1
+	.set DOME_SEMIFINAL,                   2
+	.set DOME_FINAL,                       3
+	.set DOME_ROUNDS_COUNT,                4
+
 	.set TOURNEY_TREE_CLOSE_BUTTON,        31
 	.set TOURNEY_TREE_INVALID_MOVE,        0xFF

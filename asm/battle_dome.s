@@ -8725,7 +8725,7 @@ _08192B76:
 	bl StringCopy
 	b _08192BEC
 	.align 2, 0
-_08192BB0: .4byte 0x085D5E40
+_08192BB0: .4byte gBattleDomeCompetitorRangeByMatch
 _08192BB4: .4byte 0x03005AF0
 _08192BB8: .4byte 0x000003FF
 _08192BBC: .4byte 0x000003FE
@@ -8770,7 +8770,7 @@ _08192C08:
 	b _08192D6C
 	.align 2, 0
 _08192C14: .4byte 0x02021C40
-_08192C18: .4byte 0x085D5E40
+_08192C18: .4byte gBattleDomeCompetitorRangeByMatch
 _08192C1C:
 	mov ip, r3
 	lsls r3, r7, #1
@@ -8931,7 +8931,7 @@ _08192D56:
 	b _08192D6C
 	.align 2, 0
 _08192D60: .4byte 0x02021C40
-_08192D64: .4byte 0x085D5E40
+_08192D64: .4byte gBattleDomeCompetitorRangeByMatch
 _08192D68:
 	ldr r0, [sp, #4]
 	adds r0, #2
@@ -9112,7 +9112,7 @@ _08192E70:
 _08192EB4: .4byte 0xFFFFFF00
 _08192EB8: .4byte 0x0203CA44
 _08192EBC: .4byte 0x03005AF0
-_08192EC0: .4byte 0x085D5E42
+_08192EC0: .4byte gBattleDomeCompetitorRoundByMatch
 _08192EC4: .4byte 0x00000D24
 _08192EC8: .4byte 0x00000D25
 _08192ECC:
