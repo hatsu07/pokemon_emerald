@@ -164,6 +164,18 @@
 	.byte \luck, \strong, \low_pp, \effect
 	.endm
 
+	@ Cursor destinations for five tournament rounds, ordered up, down, left, right.
+	.macro battle_dome_cursor_moves position, r1u, r1d, r1l, r1r, r2u, r2d, r2l, r2r, r3u, r3d, r3l, r3r, r4u, r4d, r4l, r4r, r5u, r5d, r5l, r5r
+	.if (\position) != ((. - gBattleDomeTourneyTreeCursorMovementMap) / 20)
+	.error "Battle Dome cursor movement rows are out of position order"
+	.endif
+	.byte \r1u, \r1d, \r1l, \r1r
+	.byte \r2u, \r2d, \r2l, \r2r
+	.byte \r3u, \r3d, \r3l, \r3r
+	.byte \r4u, \r4d, \r4l, \r4r
+	.byte \r5u, \r5d, \r5l, \r5r
+	.endm
+
 	@ Packs the four halfwords of struct OamData from semantic fields.
 	.macro rodata_sprite_oam_data y, affine_mode, obj_mode, mosaic, bpp, shape, x, matrix_num, size, tile_num, priority, palette_num, affine_param
 	.2byte ((\y) & 0xFF) | (((\affine_mode) & 3) << 8) | (((\obj_mode) & 3) << 10) | (((\mosaic) & 1) << 12) | (((\bpp) & 1) << 13) | (((\shape) & 3) << 14)

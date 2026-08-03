@@ -10274,7 +10274,7 @@ _08193838:
 	mov r8, r1
 	b _081938BE
 	.align 2, 0
-_08193854: .4byte 0x085D5695
+_08193854: .4byte gBattleDomeTourneyTreeCursorMovementMap
 _08193858:
 	ldrh r0, [r3, #0x2e]
 	cmp r0, #0x80
@@ -10292,7 +10292,7 @@ _08193858:
 	movs r0, #1
 	b _081938BC
 	.align 2, 0
-_08193878: .4byte 0x085D5695
+_08193878: .4byte gBattleDomeTourneyTreeCursorMovementMap
 _0819387C:
 	ldrh r0, [r3, #0x2e]
 	cmp r0, #0x20
@@ -10311,7 +10311,7 @@ _0819387C:
 	mov r8, r1
 	b _081938BE
 	.align 2, 0
-_0819389C: .4byte 0x085D5695
+_0819389C: .4byte gBattleDomeTourneyTreeCursorMovementMap
 _081938A0:
 	ldrh r0, [r3, #0x2e]
 	cmp r0, #0x10
@@ -10372,7 +10372,7 @@ _08193906:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08193914: .4byte 0x085D5695
+_08193914: .4byte gBattleDomeTourneyTreeCursorMovementMap
 _08193918: .4byte 0x020205AC
 _0819391C: .4byte 0x03005B60
 	thumb_func_end UpdateTourneyTreeCursor

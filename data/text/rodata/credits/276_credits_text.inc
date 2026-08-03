@@ -3030,9 +3030,43 @@ gBattleDomeUnusedArray: @ 0x085D561C
 	.byte 0, 0, 0, 0, 253, 0, 0, 0, 0, 0, 253, 254, 0, 0, 0, 0
 	.byte 0, 254, 0, 0, 0, 0, 0, 254, 0, 0, 0, 0, 0, 254, 0, 0
 	.byte 0, 0, 0, 254, 0, 0, 0, 0, 0
+	.globl gBattleDomeTourneyTreeCursorMovementMap
 	.globl gUnknown_85D5695
+gBattleDomeTourneyTreeCursorMovementMap:
 gUnknown_85D5695: @ 0x085D5695
-	.incbin "baserom.gba", 0x5d5695, 0x283
+	battle_dome_cursor_moves 0,  7, 1, 8, 16,  7, 1, 8, 16,  7, 1, 8, 16,  7, 1, 8, 16,  7, 1, 8, 16
+	battle_dome_cursor_moves 1,  0, 2, 9, 16,  0, 2, 9, 16,  0, 2, 9, 16,  0, 2, 9, 16,  0, 2, 9, 16
+	battle_dome_cursor_moves 2,  1, 3, 10, 17,  1, 3, 10, 17,  1, 3, 10, 17,  1, 3, 10, 17,  1, 3, 10, 17
+	battle_dome_cursor_moves 3,  2, 4, 11, 17,  2, 4, 11, 17,  2, 4, 11, 17,  2, 4, 11, 17,  2, 4, 11, 17
+	battle_dome_cursor_moves 4,  3, 5, 12, 18,  3, 5, 12, 18,  3, 5, 12, 18,  3, 5, 12, 18,  3, 5, 12, 18
+	battle_dome_cursor_moves 5,  4, 6, 13, 18,  4, 6, 13, 18,  4, 6, 13, 18,  4, 6, 13, 18,  4, 6, 13, 18
+	battle_dome_cursor_moves 6,  5, 7, 14, 19,  5, 7, 14, 19,  5, 7, 14, 19,  5, 7, 14, 19,  5, 7, 14, 19
+	battle_dome_cursor_moves 7,  6, 0, 15, 19,  6, 0, 15, 19,  6, 0, 15, 19,  6, 0, 15, 19,  6, 0, 15, 19
+	battle_dome_cursor_moves 8,  31, 9, 20, 31,  31, 9, 20, 31,  31, 9, 20, 31,  31, 9, 20, 31,  31, 9, 20, 31
+	battle_dome_cursor_moves 9,  8, 10, 20, 1,  8, 10, 20, 1,  8, 10, 20, 1,  8, 10, 20, 1,  8, 10, 20, 1
+	battle_dome_cursor_moves 10, 9, 11, 21, 2,  9, 11, 21, 2,  9, 11, 21, 2,  9, 11, 21, 2,  9, 11, 21, 2
+	battle_dome_cursor_moves 11, 10, 12, 21, 3,  10, 12, 21, 3,  10, 12, 21, 3,  10, 12, 21, 3,  10, 12, 21, 3
+	battle_dome_cursor_moves 12, 11, 13, 22, 4,  11, 13, 22, 4,  11, 13, 22, 4,  11, 13, 22, 4,  11, 13, 22, 4
+	battle_dome_cursor_moves 13, 12, 14, 22, 5,  12, 14, 22, 5,  12, 14, 22, 5,  12, 14, 22, 5,  12, 14, 22, 5
+	battle_dome_cursor_moves 14, 13, 15, 23, 6,  13, 15, 23, 6,  13, 15, 23, 6,  13, 15, 23, 6,  13, 15, 23, 6
+	battle_dome_cursor_moves 15, 14, 31, 23, 7,  14, 31, 23, 7,  14, 31, 23, 7,  14, 31, 23, 7,  14, 31, 23, 7
+	battle_dome_cursor_moves 16, 19, 17, 0, 20,  19, 17, 0, 24,  19, 17, 0, 24,  19, 17, 0, 24,  19, 17, 0, 24
+	battle_dome_cursor_moves 17, 16, 18, 2, 21,  16, 18, 2, 24,  16, 18, 2, 24,  16, 18, 2, 24,  16, 18, 2, 24
+	battle_dome_cursor_moves 18, 17, 19, 4, 22,  17, 19, 4, 25,  17, 19, 4, 25,  17, 19, 4, 25,  17, 19, 4, 25
+	battle_dome_cursor_moves 19, 18, 16, 6, 23,  18, 16, 6, 25,  18, 16, 6, 25,  18, 16, 6, 25,  18, 16, 6, 25
+	battle_dome_cursor_moves 20, 23, 21, 16, 8,  23, 21, 26, 8,  23, 21, 26, 8,  23, 21, 26, 8,  23, 21, 26, 8
+	battle_dome_cursor_moves 21, 20, 22, 17, 10,  20, 22, 26, 10,  20, 22, 26, 10,  20, 22, 26, 10,  20, 22, 26, 10
+	battle_dome_cursor_moves 22, 21, 23, 18, 12,  21, 23, 27, 12,  21, 23, 27, 12,  21, 23, 27, 12,  21, 23, 27, 12
+	battle_dome_cursor_moves 23, 22, 20, 19, 14,  22, 20, 27, 14,  22, 20, 27, 14,  22, 20, 27, 14,  22, 20, 27, 14
+	battle_dome_cursor_moves 24, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE,  25, 25, 16, 26,  25, 25, 16, 28,  25, 25, 16, 28,  25, 25, 16, 28
+	battle_dome_cursor_moves 25, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE,  24, 24, 18, 27,  24, 24, 18, 28,  24, 24, 18, 28,  24, 24, 18, 28
+	battle_dome_cursor_moves 26, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE,  27, 27, 24, 20,  27, 27, 29, 20,  27, 27, 29, 20,  27, 27, 29, 20
+	battle_dome_cursor_moves 27, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE,  26, 26, 25, 22,  26, 26, 29, 22,  26, 26, 29, 22,  26, 26, 29, 22
+	battle_dome_cursor_moves 28, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, 24, 29,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, 24, 30,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, 24, 30
+	battle_dome_cursor_moves 29, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, 28, 26,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, 30, 26,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, 30, 26
+	battle_dome_cursor_moves 30, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, 28, 29,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, 28, 29
+	battle_dome_cursor_moves TOURNEY_TREE_CLOSE_BUTTON, 15, 8, 8, 0,  15, 8, 8, 0,  15, 8, 8, 0,  15, 8, 8, 0,  15, 8, 8, 0
+	.align 2, 0
 	.globl gUnknown_85D5918
 gUnknown_85D5918: @ 0x085D5918
 	.incbin "baserom.gba", 0x5d5918, 0x10

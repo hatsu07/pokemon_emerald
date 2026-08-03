@@ -49,3 +49,6 @@
 	.set DOME_BATTLE_STYLE_UNUSED3,        30
 	.set DOME_BATTLE_STYLE_UNUSED4,        31
 	.set NUM_BATTLE_STYLES,                32
+
+	.set TOURNEY_TREE_CLOSE_BUTTON,        31
+	.set TOURNEY_TREE_INVALID_MOVE,        0xFF
