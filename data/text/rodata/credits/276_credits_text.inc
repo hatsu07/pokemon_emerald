@@ -2371,15 +2371,81 @@ gUnknown_85D37EE: @ 0x085D37EE
 	mon_anim_interpolation_step  8, -8, 24
 	mon_anim_interpolation_step -8,  0, 24
 	mon_anim_interpolation_step  0,  0,  0
+	.globl gMonAnimTriangleDownData
 	.globl gUnknown_85D381E
+gMonAnimTriangleDownData:
 gUnknown_85D381E: @ 0x085D381E
-	.incbin "baserom.gba", 0x5d381e, 0xbe
+	mon_anim_offset_step  1,  1, 12
+	mon_anim_offset_step -2,  0, 12
+	mon_anim_offset_step  1, -1, 12
+	mon_anim_offset_step  0,  0,  0
+	.2byte 0 @ alignment
+
+gBackAnimYellowFlashFastSteps: @ 0x085D382C
+	back_anim_yellow_flash_step FALSE,  1
+	back_anim_yellow_flash_step TRUE,   2
+	back_anim_yellow_flash_step FALSE, 15
+	back_anim_yellow_flash_step TRUE,   1
+	back_anim_yellow_flash_step FALSE, 15
+	back_anim_yellow_flash_step TRUE,   1
+	back_anim_yellow_flash_step FALSE, 15
+	back_anim_yellow_flash_step TRUE,   1
+	back_anim_yellow_flash_step FALSE,  1
+	back_anim_yellow_flash_step TRUE,   1
+	back_anim_yellow_flash_step FALSE,  1
+	back_anim_yellow_flash_step TRUE,   1
+	back_anim_yellow_flash_step FALSE,  1
+	back_anim_yellow_flash_step TRUE,   1
+	back_anim_yellow_flash_step FALSE,  1
+	back_anim_yellow_flash_step TRUE,   1
+	back_anim_yellow_flash_step FALSE,  1
+	back_anim_yellow_flash_step TRUE,   1
+	back_anim_yellow_flash_step FALSE,  1
+	back_anim_yellow_flash_step FALSE, -1
+
+gBackAnimYellowFlashNormalSteps: @ 0x085D387C
+	back_anim_yellow_flash_step FALSE,  5
+	back_anim_yellow_flash_step TRUE,   1
+	back_anim_yellow_flash_step FALSE, 15
+	back_anim_yellow_flash_step TRUE,   4
+	back_anim_yellow_flash_step FALSE,  2
+	back_anim_yellow_flash_step TRUE,   2
+	back_anim_yellow_flash_step FALSE,  2
+	back_anim_yellow_flash_step TRUE,   2
+	back_anim_yellow_flash_step FALSE,  2
+	back_anim_yellow_flash_step TRUE,   2
+	back_anim_yellow_flash_step FALSE,  2
+	back_anim_yellow_flash_step TRUE,   2
+	back_anim_yellow_flash_step FALSE,  2
+	back_anim_yellow_flash_step FALSE, -1
+
+gBackAnimYellowFlashSlowSteps: @ 0x085D38B4
+	back_anim_yellow_flash_step FALSE,  1
+	back_anim_yellow_flash_step TRUE,   1
+	back_anim_yellow_flash_step FALSE, 20
+	back_anim_yellow_flash_step TRUE,   1
+	back_anim_yellow_flash_step FALSE, 20
+	back_anim_yellow_flash_step TRUE,   1
+	back_anim_yellow_flash_step FALSE, 20
+	back_anim_yellow_flash_step TRUE,   1
+	back_anim_yellow_flash_step FALSE,  1
+	back_anim_yellow_flash_step FALSE, -1
+
+	.globl gBackAnimYellowFlashStepTables
 	.globl gUnknown_85D38DC
+gBackAnimYellowFlashStepTables:
 gUnknown_85D38DC: @ 0x085D38DC
-	.incbin "baserom.gba", 0x5d38dc, 0xc
+	.4byte gBackAnimYellowFlashFastSteps
+	.4byte gBackAnimYellowFlashNormalSteps
+	.4byte gBackAnimYellowFlashSlowSteps
+	.globl gBackAnimBlendColors
 	.globl gUnknown_85D38E8
+gBackAnimBlendColors:
 gUnknown_85D38E8: @ 0x085D38E8
-	.incbin "baserom.gba", 0x5d38e8, 0x8
+	.2byte MON_ANIM_BLEND_RED
+	.2byte MON_ANIM_BLEND_GREEN
+	.2byte MON_ANIM_BLEND_BLUE
+	.2byte MON_ANIM_BLEND_BLACK
 	.globl gUnknown_85D38F0
 gUnknown_85D38F0: @ 0x085D38F0
 	.incbin "baserom.gba", 0x5d38f0, 0xe4

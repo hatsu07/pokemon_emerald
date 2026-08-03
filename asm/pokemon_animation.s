@@ -9629,7 +9629,7 @@ _08183A38:
 	str r0, [r4, #0x1c]
 	b _08183AB2
 	.align 2, 0
-_08183A6C: .4byte 0x085D381E
+_08183A6C: .4byte gMonAnimTriangleDownData
 _08183A70: .4byte 0x08184C35
 _08183A74:
 	strh r1, [r4, #0x32]
@@ -11316,7 +11316,7 @@ BackAnimBlendYellow: @ 0x08184644
 	str r0, [r4, #0x1c]
 	b _081846DA
 	.align 2, 0
-_08184674: .4byte 0x085D38DC
+_08184674: .4byte gBackAnimYellowFlashStepTables
 _08184678: .4byte 0x08184C35
 _0818467C:
 	movs r2, #0x36
@@ -11512,7 +11512,7 @@ _081847D6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081847DC: .4byte 0x085D38E8
+_081847DC: .4byte gBackAnimBlendColors
 	thumb_func_end BackAnimBlend
 
 	thumb_func_start sub_081847E0

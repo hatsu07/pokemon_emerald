@@ -93,6 +93,12 @@
 	.byte \start, \end, \duration
 	.endm
 
+	@ Yellow-flash state and duration, with the original structure padding.
+	.macro back_anim_yellow_flash_step yellow, duration
+	.byte \yellow, \duration
+	.2byte 0
+	.endm
+
 	.macro sprite_tile_counts square8, square16, square32, square64, horizontal8, horizontal16, horizontal32, horizontal64, vertical8, vertical16, vertical32, vertical64
 	.byte \square8, \square16, \square32, \square64
 	.byte \horizontal8, \horizontal16, \horizontal32, \horizontal64
