@@ -3147,23 +3147,39 @@ gBattleDomeTourneyTreeVerticalScrollArrowOam: @ 0x085D5A2C
 gBattleDomeTourneyTreeHorizontalScrollArrowOam: @ 0x085D5A34
 	rodata_sprite_oam_data 0, 0, 0, 0, 0, (OAM_V_RECTANGLE >> 14), 0, 0, (OAM_SIZE_0 >> 30), 0, 0, 2, 0
 
-	.globl gBattleDomeTourneyTreeVerticalScrollArrowAnim
-gBattleDomeTourneyTreeVerticalScrollArrowAnim: @ 0x085D5A3C
+	.globl gBattleDomeTourneyTreePokeballAnim0
+gBattleDomeTourneyTreePokeballAnim0: @ 0x085D5A3C
 	sprite_anim_frame 20, 1
 	sprite_anim_end
 
-	.globl gBattleDomeTourneyTreeHorizontalScrollArrowAnim
-gBattleDomeTourneyTreeHorizontalScrollArrowAnim: @ 0x085D5A44
+	.globl gBattleDomeTourneyTreePokeballAnim1
+gBattleDomeTourneyTreePokeballAnim1: @ 0x085D5A44
 	sprite_anim_frame 24, 1
 	sprite_anim_end
 
-	.globl gBattleDomeTourneyTreeScrollArrowAnims
-gBattleDomeTourneyTreeScrollArrowAnims: @ 0x085D5A4C
-	sprite_anim_sequence gBattleDomeTourneyTreeVerticalScrollArrowAnim
-	sprite_anim_sequence gBattleDomeTourneyTreeHorizontalScrollArrowAnim
-	.globl gUnknown_85D5A54
-gUnknown_85D5A54: @ 0x085D5A54
-	.incbin "baserom.gba", 0x5d5a54, 0x30
+	.globl gBattleDomeTourneyTreePokeballAnims
+gBattleDomeTourneyTreePokeballAnims: @ 0x085D5A4C
+	sprite_anim_sequence gBattleDomeTourneyTreePokeballAnim0
+	sprite_anim_sequence gBattleDomeTourneyTreePokeballAnim1
+
+	.globl gBattleDomeTourneyTreePokeballSpriteTemplate
+gBattleDomeTourneyTreePokeballSpriteTemplate: @ 0x085D5A54
+	rodata_sprite_template 0, TAG_NONE, gBattleDomeTourneyTreePokeballOam, gBattleDomeTourneyTreePokeballAnims, NULL, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+
+	.globl gBattleDomeTourneyTreeCloseButtonAnim0
+gBattleDomeTourneyTreeCloseButtonAnim0: @ 0x085D5A6C
+	sprite_anim_frame 8, 1
+	sprite_anim_end
+
+	.globl gBattleDomeTourneyTreeCloseButtonAnim1
+gBattleDomeTourneyTreeCloseButtonAnim1: @ 0x085D5A74
+	sprite_anim_frame 0, 1
+	sprite_anim_end
+
+	.globl gBattleDomeTourneyTreeCloseButtonAnims
+gBattleDomeTourneyTreeCloseButtonAnims: @ 0x085D5A7C
+	sprite_anim_sequence gBattleDomeTourneyTreeCloseButtonAnim0
+	sprite_anim_sequence gBattleDomeTourneyTreeCloseButtonAnim1
 	.globl gUnknown_85D5A84
 gUnknown_85D5A84: @ 0x085D5A84
 	.incbin "baserom.gba", 0x5d5a84, 0x48

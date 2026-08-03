@@ -11285,7 +11285,7 @@ _08194092:
 	.align 2, 0
 _0819409C: .4byte gBattleDomeTourneyTreeButtonSheets
 _081940A0: .4byte 0x085D5E8D
-_081940A4: .4byte 0x085D5A54
+_081940A4: .4byte gBattleDomeTourneyTreePokeballSpriteTemplate
 _081940A8: .4byte 0x085D5A84
 _081940AC: .4byte 0x00007F40
 _081940B0:
