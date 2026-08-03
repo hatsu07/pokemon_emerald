@@ -7370,13 +7370,17 @@ gUnknown_8D84A08: @ 0x08D84A08
 	.incbin "baserom.gba", 0xd84a08, 0x590
 	.globl gUnknown_8D84F98
 gUnknown_8D84F98: @ 0x08D84F98
-	.incbin "baserom.gba", 0xd84f98, 0x3a4
+	.incbin "baserom.gba", 0xd84f98, 0x158
+	.globl gBattleDomeTourneyTreeButtons_Gfx
+gBattleDomeTourneyTreeButtons_Gfx: @ 0x08D850F0
+	.incbin "build/graphics/battle_dome/tourney_tree_buttons.4bpp.lz"
 	.globl gUnknown_8D8533C
 gUnknown_8D8533C: @ 0x08D8533C
 	.incbin "baserom.gba", 0xd8533c, 0xec
-	.globl gUnknown_8D85428
-gUnknown_8D85428: @ 0x08D85428
-	.incbin "baserom.gba", 0xd85428, 0x84
+	.globl gBattleDomeTourneyTreeButtons_Pal
+gBattleDomeTourneyTreeButtons_Pal: @ 0x08D85428
+	.incbin "build/graphics/battle_dome/tourney_tree_buttons_palette.gbapal.lz"
+	.align 2, 0
 	.globl gUnknown_8D854AC
 gUnknown_8D854AC: @ 0x08D854AC
 	.incbin "baserom.gba", 0xd854ac, 0x120

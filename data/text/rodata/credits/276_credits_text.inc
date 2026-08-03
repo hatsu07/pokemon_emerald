@@ -3115,12 +3115,52 @@ gUnknown_85D5958: @ 0x085D5958
 	window_template 1, 20, 5, 8, 2, 15, 0x153
 	window_template 1, 3, 16, 24, 2, 15, 0x163
 	null_window_template
-	.globl gUnknown_85D59F0
-gUnknown_85D59F0: @ 0x085D59F0
-	.incbin "baserom.gba", 0x5d59f0, 0xc
-	.globl gUnknown_85D59FC
-gUnknown_85D59FC: @ 0x085D59FC
-	.incbin "baserom.gba", 0x5d59fc, 0x58
+	.globl gBattleDomeTourneyTreeScanlineEffectParams
+gBattleDomeTourneyTreeScanlineEffectParams: @ 0x085D59F0
+	.4byte REG_BG3CNT
+	.4byte 1 | ((DMA_ENABLE | DMA_START_HBLANK | DMA_REPEAT | DMA_DEST_RELOAD | DMA_16BIT) << 16)
+	.4byte 1 @ initState
+
+	.globl gBattleDomeTourneyTreeButtonSheets
+gBattleDomeTourneyTreeButtonSheets: @ 0x085D59FC
+	rodata_compressed_sprite_sheet gBattleDomeTourneyTreeButtons_Gfx, 0x400, 0
+	rodata_compressed_sprite_sheet NULL, 0, 0
+
+	.globl gBattleDomeTourneyTreeButtonPalettes
+gBattleDomeTourneyTreeButtonPalettes: @ 0x085D5A0C
+	rodata_sprite_palette gBattleDomeTourneyTreeButtons_Pal, 0
+	rodata_sprite_palette NULL, 0
+
+	.globl gBattleDomeTourneyTreePokeballOam
+gBattleDomeTourneyTreePokeballOam: @ 0x085D5A1C
+	rodata_sprite_oam_data 0, 0, 0, 0, 0, (OAM_SQUARE >> 14), 0, 0, (OAM_SIZE_1 >> 30), 0, 0, 0, 0
+
+	.globl gBattleDomeTourneyTreeCloseButtonOam
+gBattleDomeTourneyTreeCloseButtonOam: @ 0x085D5A24
+	rodata_sprite_oam_data 0, 0, 0, 0, 0, (OAM_H_RECTANGLE >> 14), 0, 0, (OAM_SIZE_2 >> 30), 0, 0, 1, 0
+
+	.globl gBattleDomeTourneyTreeVerticalScrollArrowOam
+gBattleDomeTourneyTreeVerticalScrollArrowOam: @ 0x085D5A2C
+	rodata_sprite_oam_data 0, 0, 0, 0, 0, (OAM_H_RECTANGLE >> 14), 0, 0, (OAM_SIZE_0 >> 30), 0, 0, 2, 0
+
+	.globl gBattleDomeTourneyTreeHorizontalScrollArrowOam
+gBattleDomeTourneyTreeHorizontalScrollArrowOam: @ 0x085D5A34
+	rodata_sprite_oam_data 0, 0, 0, 0, 0, (OAM_V_RECTANGLE >> 14), 0, 0, (OAM_SIZE_0 >> 30), 0, 0, 2, 0
+
+	.globl gBattleDomeTourneyTreeVerticalScrollArrowAnim
+gBattleDomeTourneyTreeVerticalScrollArrowAnim: @ 0x085D5A3C
+	sprite_anim_frame 20, 1
+	sprite_anim_end
+
+	.globl gBattleDomeTourneyTreeHorizontalScrollArrowAnim
+gBattleDomeTourneyTreeHorizontalScrollArrowAnim: @ 0x085D5A44
+	sprite_anim_frame 24, 1
+	sprite_anim_end
+
+	.globl gBattleDomeTourneyTreeScrollArrowAnims
+gBattleDomeTourneyTreeScrollArrowAnims: @ 0x085D5A4C
+	sprite_anim_sequence gBattleDomeTourneyTreeVerticalScrollArrowAnim
+	sprite_anim_sequence gBattleDomeTourneyTreeHorizontalScrollArrowAnim
 	.globl gUnknown_85D5A54
 gUnknown_85D5A54: @ 0x085D5A54
 	.incbin "baserom.gba", 0x5d5a54, 0x30
