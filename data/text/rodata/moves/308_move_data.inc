@@ -7605,7 +7605,58 @@ gUnknown_8D9B6BC: @ 0x08D9B6BC
 	.incbin "baserom.gba", 0xd9b6bc, 0x358
 	.globl gUnknown_8D9BA14
 gUnknown_8D9BA14: @ 0x08D9BA14
-	.incbin "baserom.gba", 0xd9ba14, 0x27c
+	.incbin "baserom.gba", 0xd9ba14, 0x148
+
+	.globl gThrownPokeblock_Gfx
+gThrownPokeblock_Gfx: @ 0x08D9BB5C
+	.incbin "build/graphics/pokeblock_feed/pokeblock.4bpp.lz"
+
+	.globl gPokeblockPalette_Red
+gPokeblockPalette_Red: @ 0x08D9BB78
+	.incbin "build/graphics/pokeblock_feed/palettes/red.gbapal.lz"
+	.globl gPokeblockPalette_Blue
+gPokeblockPalette_Blue: @ 0x08D9BB8C
+	.incbin "build/graphics/pokeblock_feed/palettes/blue.gbapal.lz"
+	.globl gPokeblockPalette_Pink
+gPokeblockPalette_Pink: @ 0x08D9BBA0
+	.incbin "build/graphics/pokeblock_feed/palettes/pink.gbapal.lz"
+	.globl gPokeblockPalette_Green
+gPokeblockPalette_Green: @ 0x08D9BBB4
+	.incbin "build/graphics/pokeblock_feed/palettes/green.gbapal.lz"
+	.globl gPokeblockPalette_Yellow
+gPokeblockPalette_Yellow: @ 0x08D9BBC8
+	.incbin "build/graphics/pokeblock_feed/palettes/yellow.gbapal.lz"
+	.globl gPokeblockPalette_Purple
+gPokeblockPalette_Purple: @ 0x08D9BBDC
+	.incbin "build/graphics/pokeblock_feed/palettes/purple.gbapal.lz"
+	.globl gPokeblockPalette_Indigo
+gPokeblockPalette_Indigo: @ 0x08D9BBF0
+	.incbin "build/graphics/pokeblock_feed/palettes/indigo.gbapal.lz"
+	.globl gPokeblockPalette_Brown
+gPokeblockPalette_Brown: @ 0x08D9BC04
+	.incbin "build/graphics/pokeblock_feed/palettes/brown.gbapal.lz"
+	.globl gPokeblockPalette_LiteBlue
+gPokeblockPalette_LiteBlue: @ 0x08D9BC18
+	.incbin "build/graphics/pokeblock_feed/palettes/lite_blue.gbapal.lz"
+	.globl gPokeblockPalette_Olive
+gPokeblockPalette_Olive: @ 0x08D9BC2C
+	.incbin "build/graphics/pokeblock_feed/palettes/olive.gbapal.lz"
+	.globl gPokeblockPalette_Gray
+gPokeblockPalette_Gray: @ 0x08D9BC40
+	.incbin "build/graphics/pokeblock_feed/palettes/gray.gbapal.lz"
+	.globl gPokeblockPalette_Black
+gPokeblockPalette_Black: @ 0x08D9BC54
+	.incbin "build/graphics/pokeblock_feed/palettes/black.gbapal.lz"
+	.globl gPokeblockPalette_White
+gPokeblockPalette_White: @ 0x08D9BC68
+	.incbin "build/graphics/pokeblock_feed/palettes/white.gbapal.lz"
+	.globl gPokeblockPalette_Gold
+gPokeblockPalette_Gold: @ 0x08D9BC7C
+	.incbin "build/graphics/pokeblock_feed/palettes/gold.gbapal.lz"
+	.if (. - gPokeblockPalette_Red) != 14 * 0x14
+	.error "Pokeblock palettes must contain fourteen 0x14-byte LZ77 streams"
+	.endif
+
 	.globl gUnknown_8D9BC90
 gUnknown_8D9BC90: @ 0x08D9BC90
 	.incbin "baserom.gba", 0xd9bc90, 0x100
