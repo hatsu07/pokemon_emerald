@@ -8138,7 +8138,7 @@ _08192724:
 _0819273C: .4byte 0x03005AF0
 _08192740: .4byte 0x00000D64
 _08192744: .4byte 0x0203B958
-_08192748: .4byte gBattleDomeStyleTexts
+_08192748: .4byte gBattleDomeOpponentStyleTexts
 _0819274C: .4byte gBattleDomeStyleThresholds
 _08192750: .4byte 0xFFFFFC02
 _08192754: .4byte 0x000003FE
@@ -8661,7 +8661,7 @@ _08192B06:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08192B38: .4byte 0x085D5D10
+_08192B38: .4byte gBattleDomeOpponentStatsTexts
 	thumb_func_end DisplayTrainerInfoOnCard
 
 	thumb_func_start sub_08192B3C

@@ -3344,8 +3344,8 @@ gBattleDomePotentialTexts: @ 0x085D5C4C
 	.4byte gText_Rom_273A9D
 	.4byte gText_Rom_273AB3
 	.4byte gText_Rom_273AC9
-	.globl gBattleDomeStyleTexts
-gBattleDomeStyleTexts: @ 0x085D5C90
+	.globl gBattleDomeOpponentStyleTexts
+gBattleDomeOpponentStyleTexts: @ 0x085D5C90
 	battle_dome_style_text DOME_BATTLE_STYLE_RISKY,           gText_Rom_273ADD
 	battle_dome_style_text DOME_BATTLE_STYLE_STALL,           gText_Rom_273AF6
 	battle_dome_style_text DOME_BATTLE_STYLE_VARIED,          gText_Rom_273B0D
@@ -3378,9 +3378,57 @@ gBattleDomeStyleTexts: @ 0x085D5C90
 	battle_dome_style_text DOME_BATTLE_STYLE_UNUSED2,         gText_Rom_273D74
 	battle_dome_style_text DOME_BATTLE_STYLE_UNUSED3,         gText_Rom_273D81
 	battle_dome_style_text DOME_BATTLE_STYLE_UNUSED4,         gText_Rom_273D8E
-	.globl gUnknown_85D5D10
-gUnknown_85D5D10: @ 0x085D5D10
-	.incbin "baserom.gba", 0x5d5d10, 0xac
+	@ Third info-card line: party stat emphasis from EVs and Natures.
+	.globl gBattleDomeOpponentStatsTexts
+gBattleDomeOpponentStatsTexts: @ 0x085D5D10
+	@ Two emphasized stats (DOME_TEXT_TWO_GOOD_STATS).
+	.4byte gText_Rom_273D9B
+	.4byte gText_Rom_273DB1
+	.4byte gText_Rom_273DC7
+	.4byte gText_Rom_273DDD
+	.4byte gText_Rom_273DF3
+	.4byte gText_Rom_273E09
+	.4byte gText_Rom_273E21
+	.4byte gText_Rom_273E39
+	.4byte gText_Rom_273E51
+	.4byte gText_Rom_273E69
+	.4byte gText_Rom_273E81
+	.4byte gText_Rom_273E99
+	.4byte gText_Rom_273EB1
+	.4byte gText_Rom_273EC9
+	.4byte gText_Rom_273EE1
+	@ One emphasized stat (DOME_TEXT_ONE_GOOD_STAT).
+	.4byte gText_Rom_273EF9
+	.4byte gText_Rom_273F09
+	.4byte gText_Rom_273F1B
+	.4byte gText_Rom_273F2D
+	.4byte gText_Rom_273F3F
+	.4byte gText_Rom_273F51
+	@ Two neglected stats (DOME_TEXT_TWO_BAD_STATS).
+	.4byte gText_Rom_273F63
+	.4byte gText_Rom_273F7A
+	.4byte gText_Rom_273F91
+	.4byte gText_Rom_273FA8
+	.4byte gText_Rom_273FBF
+	.4byte gText_Rom_273FD6
+	.4byte gText_Rom_273FEF
+	.4byte gText_Rom_274008
+	.4byte gText_Rom_274021
+	.4byte gText_Rom_27403A
+	.4byte gText_Rom_274053
+	.4byte gText_Rom_27406C
+	.4byte gText_Rom_274085
+	.4byte gText_Rom_27409E
+	.4byte gText_Rom_2740B7
+	@ One neglected stat (DOME_TEXT_ONE_BAD_STAT).
+	.4byte gText_Rom_2740D0
+	.4byte gText_Rom_2740E2
+	.4byte gText_Rom_2740F6
+	.4byte gText_Rom_27410A
+	.4byte gText_Rom_27411E
+	.4byte gText_Rom_274132
+	@ DOME_TEXT_WELL_BALANCED.
+	.4byte gText_Rom_274146
 	.globl gUnknown_85D5DBC
 gUnknown_85D5DBC: @ 0x085D5DBC
 	.incbin "baserom.gba", 0x5d5dbc, 0x3

@@ -165,7 +165,7 @@
 	.endm
 
 	.macro battle_dome_style_text style, text
-	.if (\style) != ((. - gBattleDomeStyleTexts) / 4)
+	.if (\style) != ((. - gBattleDomeOpponentStyleTexts) / 4)
 	.error "Battle Dome style texts are out of style ID order"
 	.endif
 	.4byte \text

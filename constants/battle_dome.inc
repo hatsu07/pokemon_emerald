@@ -55,5 +55,16 @@
 	.set STREAK_DOME_DOUBLES_50,           1 << 20
 	.set STREAK_DOME_DOUBLES_OPEN,         1 << 21
 
+	.set DOME_TEXT_TWO_GOOD_STATS,         0
+	.set DOME_TEXT_HP,                     0
+	.set DOME_TEXT_ATK,                    5
+	.set DOME_TEXT_DEF,                    9
+	.set DOME_TEXT_SPEED,                  12
+	.set DOME_TEXT_SPATK,                  14
+	.set DOME_TEXT_ONE_GOOD_STAT,          15
+	.set DOME_TEXT_TWO_BAD_STATS,          21
+	.set DOME_TEXT_ONE_BAD_STAT,           36
+	.set DOME_TEXT_WELL_BALANCED,          42
+
 	.set TOURNEY_TREE_CLOSE_BUTTON,        31
 	.set TOURNEY_TREE_INVALID_MOVE,        0xFF
