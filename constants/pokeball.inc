@@ -77,8 +77,8 @@
 @ because it exists in the original, apparently unused animation sequence.
 @ -----------------------------------------------------------------------------
 .set SPRITE_ANIM_TILE_INDEX_MASK, 0x03FF
-.set SPRITE_ANIM_HFLIP_SHIFT,     10
-.set SPRITE_ANIM_VFLIP_SHIFT,     11
+.set SPRITE_ANIM_HFLIP_SHIFT,     6
+.set SPRITE_ANIM_VFLIP_SHIFT,     7
 .set SPRITE_ANIMCMD_JUMP,         0xFFFE
 .set SPRITE_ANIMCMD_END,          0xFFFF
 

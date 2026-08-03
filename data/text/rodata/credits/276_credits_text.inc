@@ -3180,9 +3180,39 @@ gBattleDomeTourneyTreeCloseButtonAnim1: @ 0x085D5A74
 gBattleDomeTourneyTreeCloseButtonAnims: @ 0x085D5A7C
 	sprite_anim_sequence gBattleDomeTourneyTreeCloseButtonAnim0
 	sprite_anim_sequence gBattleDomeTourneyTreeCloseButtonAnim1
-	.globl gUnknown_85D5A84
-gUnknown_85D5A84: @ 0x085D5A84
-	.incbin "baserom.gba", 0x5d5a84, 0x48
+	.globl gBattleDomeTourneyTreeCloseButtonSpriteTemplate
+gBattleDomeTourneyTreeCloseButtonSpriteTemplate: @ 0x085D5A84
+	rodata_sprite_template 0, TAG_NONE, gBattleDomeTourneyTreeCloseButtonOam, gBattleDomeTourneyTreeCloseButtonAnims, NULL, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+
+	.globl gBattleDomeTourneyTreeVerticalArrowAnim0
+gBattleDomeTourneyTreeVerticalArrowAnim0: @ 0x085D5A9C
+	sprite_anim_frame 18, 1
+	sprite_anim_end
+
+	.globl gBattleDomeTourneyTreeVerticalArrowAnim1
+gBattleDomeTourneyTreeVerticalArrowAnim1: @ 0x085D5AA4
+	sprite_anim_frame_ex 18, 1, 0, 1
+	sprite_anim_end
+
+	.globl gBattleDomeTourneyTreeHorizontalArrowAnim0
+gBattleDomeTourneyTreeHorizontalArrowAnim0: @ 0x085D5AAC
+	sprite_anim_frame_ex 16, 1, 1, 0
+	sprite_anim_end
+
+	.globl gBattleDomeTourneyTreeHorizontalArrowAnim1
+gBattleDomeTourneyTreeHorizontalArrowAnim1: @ 0x085D5AB4
+	sprite_anim_frame 16, 1
+	sprite_anim_end
+
+	.globl gBattleDomeTourneyTreeVerticalArrowAnims
+gBattleDomeTourneyTreeVerticalArrowAnims: @ 0x085D5ABC
+	sprite_anim_sequence gBattleDomeTourneyTreeVerticalArrowAnim0
+	sprite_anim_sequence gBattleDomeTourneyTreeVerticalArrowAnim1
+
+	.globl gBattleDomeTourneyTreeHorizontalArrowAnims
+gBattleDomeTourneyTreeHorizontalArrowAnims: @ 0x085D5AC4
+	sprite_anim_sequence gBattleDomeTourneyTreeHorizontalArrowAnim0
+	sprite_anim_sequence gBattleDomeTourneyTreeHorizontalArrowAnim1
 	.globl gUnknown_85D5ACC
 gUnknown_85D5ACC: @ 0x085D5ACC
 	.incbin "baserom.gba", 0x5d5acc, 0x18
