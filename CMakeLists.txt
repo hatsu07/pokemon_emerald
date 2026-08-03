@@ -196,6 +196,46 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
 
     elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro_credits/(.+)\\.4bpp\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/intro_credits/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro_credits/(.+)\\.bin\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_TILEMAP_TEXT
+            "${CMAKE_SOURCE_DIR}/graphics/intro_credits/${STEM}.tilemap.txt")
+        set(OUTPUT_TILEMAP
+            "${OUTPUT_DIR}/${STEM}.tilemap")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            BYPRODUCTS "${OUTPUT_TILEMAP}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_text.py"
+                encode "${INPUT_TILEMAP_TEXT}" "${OUTPUT_TILEMAP}"
+            COMMAND "${GBAGFX}" "${OUTPUT_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_TILEMAP_TEXT}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_text.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/intro_credits/(.+)\\.gbapal$")
         set(STEM "${CMAKE_MATCH_1}")
         set(INPUT_PNG

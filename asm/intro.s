@@ -1047,7 +1047,7 @@ Task_IntroStartBikeRide: @ 0x0816D2C8
 	b _0816D2EE
 	.align 2, 0
 _0816D2E0: .4byte 0x0203B994
-_0816D2E4: .4byte 0x085D278C
+_0816D2E4: .4byte gIntroCreditsBrendanSpriteSheet
 _0816D2E8:
 	ldr r0, _0816D350
 	bl LoadCompressedSpriteSheet
@@ -1094,11 +1094,11 @@ _0816D300:
 	bl intro_create_brendan_sprite
 	b _0816D37C
 	.align 2, 0
-_0816D350: .4byte 0x085D279C
-_0816D354: .4byte 0x085D27AC
-_0816D358: .4byte 0x085D27CC
+_0816D350: .4byte gIntroCreditsMaySpriteSheet
+_0816D354: .4byte gIntroCreditsBicycleSpriteSheet
+_0816D358: .4byte gIntroCreditsFlygonSpriteSheet_1
 _0816D35C: .4byte 0x085C5B9C
-_0816D360: .4byte 0x085D27DC
+_0816D360: .4byte gIntroCreditsSpritePalettes
 _0816D364: .4byte 0x085C5BBC
 _0816D368: .4byte 0x085C5C90
 _0816D36C: .4byte 0x085C5C58

@@ -7409,7 +7409,10 @@ gUnknown_8D85C54: @ 0x08D85C54
 	.incbin "baserom.gba", 0xd85c54, 0x20
 	.globl gUnknown_8D85C74
 gUnknown_8D85C74: @ 0x08D85C74
-	.incbin "baserom.gba", 0xd85c74, 0x40
+	.incbin "baserom.gba", 0xd85c74, 0x20
+	.globl gIntroCreditsRiderPalette
+gIntroCreditsRiderPalette: @ 0x08D85C94
+	.incbin "build/graphics/intro_credits/intro_rider_palette.gbapal"
 	.globl gUnknown_8D85CB4
 gUnknown_8D85CB4: @ 0x08D85CB4
 	.incbin "baserom.gba", 0xd85cb4, 0x182
@@ -7424,7 +7427,23 @@ gUnknown_8D85E56: @ 0x08D85E56
 	.incbin "baserom.gba", 0xd85e56, 0xa
 	.globl gUnknown_8D85E60
 gUnknown_8D85E60: @ 0x08D85E60
-	.incbin "baserom.gba", 0xd85e60, 0x2618
+	.incbin "baserom.gba", 0xd85e60, 0xb4
+	.globl gIntroCreditsFlygonPalette
+gIntroCreditsFlygonPalette: @ 0x08D85F14
+	.incbin "build/graphics/intro_credits/intro_flygon_palette.gbapal"
+	.incbin "baserom.gba", 0xd85f34, 0x10dc
+	.globl gIntroCreditsFlygonGfx
+gIntroCreditsFlygonGfx: @ 0x08D87010
+	.incbin "build/graphics/intro_credits/intro_flygon.4bpp.lz"
+	.globl gIntroCreditsBrendanGfx
+gIntroCreditsBrendanGfx: @ 0x08D8754C
+	.incbin "build/graphics/intro_credits/intro_brendan.4bpp.lz"
+	.globl gIntroCreditsMayGfx
+gIntroCreditsMayGfx: @ 0x08D87C88
+	.incbin "build/graphics/intro_credits/intro_may.4bpp.lz"
+	.if (. - gUnknown_8D85E60) != 0x2618
+	.error "Intro credits rider and Flygon graphics must retain their original size"
+	.endif
 	.globl gUnknown_8D88478
 gUnknown_8D88478: @ 0x08D88478
 	.incbin "baserom.gba", 0xd88478, 0x8ac

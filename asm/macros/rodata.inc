@@ -11,6 +11,14 @@
 	.2byte \phase_delta, \x_offset, \y_offset, \interpolation_start, \end_sequence
 	.endm
 
+	@ Sprite placement used by the moving foreground layers in the intro credits.
+	.macro intro_credits_sprite_spawn anim, dimensions, x, y, subpriority, x_velocity
+	.byte ((\anim) & 0xF) | (((\dimensions) & 0xF) << 4)
+	.byte \x, \y, \subpriority
+	.2byte \x_velocity
+	.2byte 0 @ padding
+	.endm
+
 	.macro sprite_tile_counts square8, square16, square32, square64, horizontal8, horizontal16, horizontal32, horizontal64, vertical8, vertical16, vertical32, vertical64
 	.byte \square8, \square16, \square32, \square64
 	.byte \horizontal8, \horizontal16, \horizontal32, \horizontal64
@@ -65,6 +73,18 @@
 	.4byte \images
 	.4byte \affine_anims
 	.4byte \callback
+	.endm
+
+	.macro rodata_compressed_sprite_sheet data, size, tag
+	.4byte \data
+	.2byte \size
+	.2byte \tag
+	.endm
+
+	.macro rodata_sprite_palette data, tag
+	.4byte \data
+	.2byte \tag
+	.2byte 0 @ structure padding
 	.endm
 
 	.macro oam_dimensions32 width, height
