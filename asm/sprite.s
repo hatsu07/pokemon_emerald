@@ -599,7 +599,7 @@ _08006AF8: .4byte 0x02021770
 _08006AFC: .4byte 0x020205AC
 _08006B00: .4byte 0x02021AB4
 _08006B04: .4byte 0x03002398
-_08006B08: .4byte 0x082BF2F8
+_08006B08: .4byte gDummyOamData
 	thumb_func_end AddSpritesToOamBuffer
 
 	thumb_func_start CreateSprite
@@ -737,7 +737,7 @@ CreateInvisibleSprite: @ 0x08006BCC
 	adds r0, r5, #0
 	b _08006C0E
 	.align 2, 0
-_08006C04: .4byte 0x082BF314
+_08006C04: .4byte gDummySpriteTemplate
 _08006C08: .4byte 0x020205AC
 _08006C0C:
 	movs r0, #0x40
@@ -1083,7 +1083,7 @@ _08006E90:
 	bx r0
 	.align 2, 0
 _08006E98: .4byte 0x03002398
-_08006E9C: .4byte 0x082BF2F8
+_08006E9C: .4byte gDummyOamData
 	thumb_func_end ResetOamRange
 
 	thumb_func_start LoadOam
@@ -1202,7 +1202,7 @@ ResetSprite: @ 0x08006F5C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08006F6C: .4byte 0x082BF2B4
+_08006F6C: .4byte sDummySprite
 	thumb_func_end ResetSprite
 
 	thumb_func_start CalcCenterToCornerVec
@@ -1240,7 +1240,7 @@ _08006F9E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08006FB0: .4byte 0x082BF299
+_08006FB0: .4byte sCenterToCornerVecTable
 	thumb_func_end CalcCenterToCornerVec
 
 	thumb_func_start AllocSpriteTiles
@@ -1790,9 +1790,9 @@ _0800738E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08007394: .4byte 0x082BF32C
+_08007394: .4byte sAnimFuncs
 _08007398: .4byte 0x02021C3C
-_0800739C: .4byte 0x082BF334
+_0800739C: .4byte sAffineAnimFuncs
 	thumb_func_end AnimateSprite
 
 	thumb_func_start BeginAnim
@@ -2000,7 +2000,7 @@ _08007526:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0800752C: .4byte 0x082BF33C
+_0800752C: .4byte sAnimCmdFuncs
 	thumb_func_end ContinueAnim
 
 	thumb_func_start AnimCmd_frame
@@ -2508,7 +2508,7 @@ _080078DE:
 	.align 2, 0
 _080078E4: .4byte 0x00007FFC
 _080078E8: .4byte 0xFFFF8003
-_080078EC: .4byte 0x082BF34C
+_080078EC: .4byte sAffineAnimCmdFuncs
 	thumb_func_end ContinueAffineAnim
 
 	thumb_func_start AffineAnimDelay
@@ -2939,7 +2939,7 @@ _08007BF2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08007C00: .4byte 0x082BF35C
+_08007C00: .4byte sOamDimensions32
 _08007C04: .4byte 0x02021B3C
 	thumb_func_end obj_update_pos2
 
@@ -4635,7 +4635,7 @@ _080087FE:
 	bx r1
 	.align 2, 0
 _08008810: .4byte 0x02021AB4
-_08008814: .4byte 0x082BF3BC
+_08008814: .4byte sOamDimensions
 _08008818: .4byte 0x000001FF
 _0800881C: .4byte 0xFFFFFE00
 _08008820: .4byte 0x000003FF

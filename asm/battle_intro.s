@@ -279,7 +279,7 @@ _08118A80:
 	ldr r0, _08118A9C
 	b _08118AA8
 	.align 2, 0
-_08118A98: .4byte 0x0829BDA4
+_08118A98: .4byte gGameVersion
 _08118A9C: .4byte 0x08118D89
 _08118AA0:
 	ldr r1, _08118AD4

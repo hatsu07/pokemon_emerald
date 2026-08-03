@@ -512,7 +512,7 @@ StartGroudonKyogreBattle: @ 0x080B0314
 _080B033C: .4byte 0x03002360
 _080B0340: .4byte 0x080B0469
 _080B0344: .4byte 0x02022C90
-_080B0348: .4byte 0x0829BDA4
+_080B0348: .4byte gGameVersion
 _080B034C:
 	movs r1, #0xf0
 	lsls r1, r1, #1

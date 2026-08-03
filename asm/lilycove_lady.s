@@ -287,7 +287,7 @@ SetLilycoveFavourLady: @ 0x0818D8A8
 _0818D8E0: .4byte 0x0203CA30
 _0818D8E4: .4byte 0x03005AEC
 _0818D8E8: .4byte 0x00003B58
-_0818D8EC: .4byte 0x0829BDA5
+_0818D8EC: .4byte gGameLanguage
 	thumb_func_end SetLilycoveFavourLady
 
 	thumb_func_start sub_0818D8F0
@@ -590,7 +590,7 @@ _0818DB20: .4byte 0x00003B58
 _0818DB24: .4byte 0x085D3D6C
 _0818DB28: .4byte 0x02021C54
 _0818DB2C: .4byte 0x03005AF0
-_0818DB30: .4byte 0x0829BDA5
+_0818DB30: .4byte gGameLanguage
 _0818DB34:
 	movs r0, #0
 	strb r0, [r2, #2]
@@ -841,7 +841,7 @@ _0818DCC0:
 _0818DCFC: .4byte 0x0203CA34
 _0818DD00: .4byte 0x03005AEC
 _0818DD04: .4byte 0x00003B58
-_0818DD08: .4byte 0x0829BDA5
+_0818DD08: .4byte gGameLanguage
 _0818DD0C: .4byte 0x0000FFFF
 	thumb_func_end SetLilycoveQuizLady
 
@@ -1134,7 +1134,7 @@ _0818DF28:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0818DF30: .4byte 0x0829BDA5
+_0818DF30: .4byte gGameLanguage
 	thumb_func_end sub_0818DEF4
 
 	thumb_func_start sub_0818DF34
@@ -1435,7 +1435,7 @@ _0818E158: .4byte 0x03005AEC
 _0818E15C: .4byte 0x00003B58
 _0818E160: .4byte 0x0203CB48
 _0818E164: .4byte 0x03005AF0
-_0818E168: .4byte 0x0829BDA5
+_0818E168: .4byte gGameLanguage
 	thumb_func_end sub_0818E100
 
 	thumb_func_start sub_0818E16C
@@ -1619,7 +1619,7 @@ SetLilycoveContestLady: @ 0x0818E294
 _0818E2C0: .4byte 0x0203CA38
 _0818E2C4: .4byte 0x03005AEC
 _0818E2C8: .4byte 0x00003B58
-_0818E2CC: .4byte 0x0829BDA5
+_0818E2CC: .4byte gGameLanguage
 	thumb_func_end SetLilycoveContestLady
 
 	thumb_func_start sub_0818E2D0
@@ -1693,7 +1693,7 @@ _0818E34C: .4byte 0x0203CA38
 _0818E350: .4byte 0x03005AEC
 _0818E354: .4byte 0x00003B58
 _0818E358: .4byte 0x03005AF0
-_0818E35C: .4byte 0x0829BDA5
+_0818E35C: .4byte gGameLanguage
 	thumb_func_end sub_0818E30C
 
 	thumb_func_start GivePokeblockToContestLady

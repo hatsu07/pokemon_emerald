@@ -23,6 +23,7 @@ def parse_args() -> argparse.Namespace:
         default=Path("tools/gbagfx/gbagfx"),
         help="gbagfxのパス",
     )
+    parser.add_argument("--debug", action="store_true")
     return parser.parse_args()
 
 
@@ -77,9 +78,10 @@ def main() -> int:
         print(f"エラー: {exc}", file=sys.stderr)
         return 1
 
-    print(f"入力PNG:      {args.input_png}")
-    print(f"出力サイズ:   0x{len(raw):X}")
-    print(f"非圧縮4bpp:   {args.output_file}")
+    if args.debug:
+        print(f"入力PNG:      {args.input_png}")
+        print(f"出力サイズ:   0x{len(raw):X}")
+        print(f"非圧縮4bpp:   {args.output_file}")
     return 0
 
 

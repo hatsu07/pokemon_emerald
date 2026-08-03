@@ -29,7 +29,7 @@
 
 ```sh
 python3 tools/extract_all_text.py
-make -j4 compare
+cmake --build build --target compare --parallel
 ```
 
 抽出器は以下を組み合わせ、元のバイト列に戻せるものだけを採用します。
@@ -52,10 +52,10 @@ make -j4 compare
 
 ```sh
 python3 tools/extract_all_text.py
-make -j4 compare
+cmake --build build --target compare --parallel
 ```
 
-抽出器は生成後に各セクションを preproc・assembler・objcopy で戻し、`baserom.gba` とバイト単位で照合します。`make compare` も初期抽出状態で成功することを確認済みです。
+抽出器は生成後に各セクションを preproc・assembler・objcopy で戻し、`baserom.gba` とバイト単位で照合します。CMake の `compare` ターゲットも初期抽出状態で成功することを確認済みです。
 
 `tools/extract_all_text.py` を再実行すると、生成済み `.inc` の編集内容は元 ROM 基準で上書きされます。変更を残したい場合は、再生成前にコミットまたは退避してください。
 
@@ -116,11 +116,11 @@ python3 tools/update_event_scripts.py \
 ```bash
 # SHA-1比較
 python3 tools/verify_matching.py \
-  --built-rom pokeemerald_jp.gba \
+  --built-rom build/pokeemerald_jp.gba \
   --original-rom baserom.gba
 
-# make compare実行
-python3 tools/verify_matching.py --make-compare
+# CMakeのcompareターゲットを実行
+cmake --build build --target compare
 
 # 特定のテキストファイルを検証
 python3 tools/verify_matching.py \
@@ -218,8 +218,8 @@ gUnknown_81F217C: @ 0x81F217C
 #### ステップ6: ビルドと検証
 
 ```bash
-make -j$(nproc)
-make compare
+cmake --build build --parallel
+cmake --build build --target compare
 ```
 
 SHA-1が一致すれば成功です。
@@ -277,7 +277,7 @@ Expansionのテキストには `{JPN}` プレフィックスが含まれてい�
 
 **検証:**
 ```bash
-make compare
+cmake --build build --target compare
 # SHA-1: d7cf8f156ba9c455d164e1ea780a6bf1945465c2 (一致)
 ```
 
@@ -296,7 +296,7 @@ make compare
 
 ```sh
 python3 tools/extract_all_text.py
-make -j4 compare
+cmake --build build --target compare --parallel
 ```
 
 ---

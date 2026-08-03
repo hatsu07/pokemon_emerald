@@ -261,7 +261,7 @@ _0819FA20:
 	.align 2, 0
 _0819FA78: .4byte 0x03005AF0
 _0819FA7C: .4byte 0x0000FFFF
-_0819FA80: .4byte 0x0829BDA5
+_0819FA80: .4byte gGameLanguage
 _0819FA84: .4byte 0x0000011B
 	thumb_func_end ResetAllApprenticeData
 
@@ -3660,7 +3660,7 @@ _081A13CE:
 	bx r0
 	.align 2, 0
 _081A140C: .4byte 0x03005AF0
-_081A1410: .4byte 0x0829BDA5
+_081A1410: .4byte gGameLanguage
 _081A1414: .4byte 0x0000011B
 	thumb_func_end sub_081A1344
 

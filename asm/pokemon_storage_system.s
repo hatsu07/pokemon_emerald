@@ -1503,8 +1503,8 @@ _080C7380:
 	bx r0
 	.align 2, 0
 _080C73A4: .4byte 0xFFFF0FFF
-_080C73A8: .4byte 0x082BF304
-_080C73AC: .4byte 0x082BF310
+_080C73A8: .4byte gDummySpriteAnimTable
+_080C73AC: .4byte gDummySpriteAffineAnimTable
 _080C73B0: .4byte 0x08007141
 _080C73B4: .4byte 0x0854B258
 _080C73B8: .4byte 0x020399A4

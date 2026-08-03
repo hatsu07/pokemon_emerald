@@ -8,8 +8,8 @@
 
 | OS | 必要条件 |
 |---|---|
-| Linux | `build-essential`, `git`, `libpng-dev` |
-| macOS | Xcode Command Line Tools |
+| Linux | `build-essential`, `git`, `libpng-dev`, CMake 3.16以上 |
+| macOS | Xcode Command Line Tools、CMake 3.16以上 |
 | Windows 10 (build 18917+) | WSL2 |
 | Windows 10 (1709+) | WSL |
 | Windows Vista/7/8/8.1/10 (1507/1511/1607/1703) | Cygwin |
@@ -21,7 +21,7 @@
 ### Linux (Debian/Ubuntu)
 
 ```sh
-sudo apt install build-essential git libpng-dev
+sudo apt install build-essential git libpng-dev cmake
 ```
 
 `build-essential` には `make`, `gcc`, `g++` が含まれます。
@@ -32,10 +32,13 @@ sudo apt install build-essential git libpng-dev
 xcode-select --install
 ```
 
+別途 CMake 3.16以上をインストールしてください。
+
 ### Windows (Cygwin)
 
 Cygwin Setup で以下のパッケージを追加：
 - `make`
+- `cmake`
 - `git`
 - `gcc-core`
 - `gcc-g++`
@@ -73,13 +76,21 @@ sha1sum baserom.gba
 
 このスクリプトは `tools/` 以下のビルドツール（preproc、agbcc など）をコンパイルします。
 
-### 4. ビルド
+### 4. CMake の構成
 
 ```sh
-make -j$(nproc)
+cmake -S . -B build
 ```
 
-正常に完了すると `pokeemerald_jp.gba` が生成されます。
+ビルドディレクトリ名は、プロジェクト設定に合わせて `build` を使用してください。
+
+### 5. ビルド
+
+```sh
+cmake --build build --parallel
+```
+
+正常に完了すると `build/pokeemerald_jp.gba` が生成されます。
 
 ---
 
@@ -88,22 +99,22 @@ make -j$(nproc)
 ### Matching の確認
 
 ```sh
-make compare
+cmake --build build --target compare
 ```
 
 SHA-1: `d7cf8f156ba9c455d164e1ea780a6bf1945465c2` と一致すれば成功です。
 
 ### エミュレータで実行
 
-生成された `pokeemerald_jp.gba` を GBA エミュレータで起動できます。
+生成された `build/pokeemerald_jp.gba` を GBA エミュレータで起動できます。
 
 ---
 
 ## クリーンビルド
 
 ```sh
-make clean
-make -j$(nproc)
+cmake --build build --target clean
+cmake --build build --parallel
 ```
 
 ---
@@ -114,13 +125,13 @@ make -j$(nproc)
 
 1. 必要なパッケージが全てインストールされているか確認
 2. `./build_tools.sh` を再実行
-3. `make clean && make -j$(nproc)` でクリーンビルド
+3. `cmake -S . -B build` を再実行してからビルド
 
 ### SHA-1 が一致しない場合
 
 1. `baserom.gba` が正しいROMかを確認
 2. テキスト等を編集している場合は、編集内容がバイト数を超えていないか確認
-3. `make clean && make` で再ビルド
+3. `cmake --build build --parallel` で再ビルド
 
 ---
 

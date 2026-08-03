@@ -4122,7 +4122,7 @@ _08163F50: .4byte 0x00002BBC
 _08163F54: .4byte 0x00002BD4
 _08163F58: .4byte 0x00000CAA
 _08163F5C: .4byte 0x0202412C
-_08163F60: .4byte 0x0829BDA5
+_08163F60: .4byte gGameLanguage
 _08163F64: .4byte 0x0000064C
 	thumb_func_end sub_08163E0C
 
@@ -6698,7 +6698,7 @@ _081653C8:
 	strb r1, [r0]
 	b _081656A6
 	.align 2, 0
-_081653DC: .4byte 0x0829BDA5
+_081653DC: .4byte gGameLanguage
 _081653E0:
 	ldr r0, _08165548
 	cmp r7, r0
@@ -7488,7 +7488,7 @@ GetBattleTowerTrainerLanguage: @ 0x081659C4
 	ldr r0, _081659DC
 	b _08165A34
 	.align 2, 0
-_081659DC: .4byte 0x0829BDA5
+_081659DC: .4byte gGameLanguage
 _081659E0:
 	ldr r0, _081659EC
 	cmp r1, r0
@@ -7497,7 +7497,7 @@ _081659E0:
 	b _08165A34
 	.align 2, 0
 _081659EC: .4byte 0x0000012B
-_081659F0: .4byte 0x0829BDA5
+_081659F0: .4byte gGameLanguage
 _081659F4:
 	ldr r0, _08165A10
 	cmp r1, r0

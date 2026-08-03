@@ -14,15 +14,16 @@
 4. ビルドする
 
 ```sh
-make -j$(nproc)
+cmake -S . -B build
+cmake --build build --parallel
 ```
 
-出力ROM: `pokeemerald_jp.gba`  
-オリジナル一致確認（改造前）: `make compare`
+出力ROM: `build/pokeemerald_jp.gba`
+オリジナル一致確認（改造前）: `cmake --build build --target compare`
 
 ---
 
-## 現在の進捗（2026-07-27）
+## 現在の進捗（2026-08-03）
 
 ### 完了した内容
 
@@ -31,9 +32,11 @@ make -j$(nproc)
 - オダマキ研究所テキスト 25件を `data/text/birch_lab.inc` としてテキスト化した。
 - ミシロタウン看板テキストを `data/text/littleroot_signs.inc` としてテキスト化した。
 - どちらも元のROMアドレスと占有サイズを維持するため、既存のイベント・コードからのポインタはそのまま有効である。
-- `make clean && make` と `make compare` を実行し、SHA-1 `d7cf8f156ba9c455d164e1ea780a6bf1945465c2` の一致を確認した。
+- CMake でビルドと `compare` ターゲットを実行し、SHA-1 `d7cf8f156ba9c455d164e1ea780a6bf1945465c2` の一致を確認した。
 - **テキスト一括抽出基盤を構築**：`tools/extract_all_text.py` により、`script_data` セクション（6,741スロット）と `.rodata` セクション（6,158スロット）の全通常テキストを `data/text/generated/*.inc` に固定アドレスで抽出した。
 - **rodata データの分割・構造化完了**：`data/text/rodata/` 以下に戦闘・コンテスト・クレジット・アイテム・マップ・メニュー・技・ポケモン・リボンデータを分割・構造化。
+- **主要ゲームデータを構造化**：ポケモン、技、アイテム、特性、トレーナー、野生出現、もようがえ、ボール画像テーブルを用途別の `.inc` に分離した。
+- **`.rodata` 冒頭を機能別に分割**：`data/rodata/*.inc` に `main`、`window`、`text`、`fonts`、`sprite` などを分離した。`sDummyWindowTemplate`（`0x0829BEB0`）は8バイトのフィールド定義になり、`baserom.gba` への依存を除去した。
 - テキスト編集方法は [text_editing.md](text_editing.md) に集約。
 
 ### 次の作業
@@ -84,10 +87,10 @@ tools/preproc/preproc + data/charmap/charmap.txt
         ↓
 data/event_scripts.s（.include）
         ↓
-pokeemerald_jp.gba
+build/pokeemerald_jp.gba
 ```
 
-`Makefile` は `data/*.s` を自動で preproc 経由にします。
+`CMakeLists.txt` は `data/*.s` を自動で preproc 経由にします。
 
 ---
 
@@ -96,7 +99,16 @@ pokeemerald_jp.gba
 | パス | 役割 | ハックでの意味 |
 |---|---|---|
 | `asm/` | 逆アセンブルされたゲームロジック（ARM/Thumb） | 挙動・戦闘・メニューなどの本体。現状はASM |
-| `data/data.s` | グラフィック・テーブル等の巨大データ | 多くが `.incbin`。直接バイナリ差し替えは可能だが危険 |
+| `data/data.s` | `.rodata` のエントリポイント | 定数・マクロと `data/rodata.inc` を読み込む |
+| `data/rodata.inc` / `data/rodata/` | `.rodata` の配置順と機能別データ | include 順がROM配置を決めるため並べ替えない |
+| `data/pokemon/` | 種族値・進化・習得技・図鑑・ポケモン画像等 | ポケモン固有データの編集 |
+| `data/moves/` | 技パラメータ・名前・説明・タイプ名 | 威力・命中・PP・効果等の編集 |
+| `data/items/` | アイテムパラメータ・説明 | 価格・効果・ポケット等の編集 |
+| `data/abilities/` | 特性名・説明 | 表示文言の編集 |
+| `data/trainers/` | トレーナーテーブル | 手持ち参照・クラス・所持品等の編集 |
+| `data/wild_encounters/` | 野生出現テーブル | 出現種・レベル・出現率の編集 |
+| `data/decorations/` | もようがえデータ・説明・タイル | ひみつきち用アイテムの編集 |
+| `data/pokeball/` | ボール画像テーブル | ボール画像参照の編集 |
 | `data/event_scripts.s` | イベントスクリプト・文字列データの置き場 | 一部を `.include` でテキスト化済み |
 | `data/text/` | 人間が読めるセリフソース | **ここを増やすのが Phase 2 の主作業** |
 | `data/text/generated/` | **一括抽出された全通常テキスト** | 6,741 + 6,158 スロットを固定アドレスで編集可能 |
@@ -112,7 +124,7 @@ pokeemerald_jp.gba
 | | `tools/update_event_scripts.py` | 旧・event_scripts.s更新ツール（単発調査用） |
 | | `tools/verify_matching.py` | 旧・マッチング検証ツール（単発調査用） |
 | `baserom.gba` | オリジナルROM（配布しない） | `.incbin` の元データ |
-| `pokeemerald_jp.gba` | ビルド成果物 | エミュレータで起動するROM |
+| `build/pokeemerald_jp.gba` | ビルド成果物 | エミュレータで起動するROM |
 | `PokeEm-expansion-CanuseJP/` | 参考用（日本語対応expansion） | 将来の拡張の参考。本ビルドには未統合 |
 
 ---
@@ -123,8 +135,8 @@ pokeemerald_jp.gba
 
 | 状態 | 方法 |
 |---|---|
-| **一括抽出済み**（`data/text/generated/*.inc`） | 対応するラベルの `.string` を編集 → `make`。元のバイト長以下であれば自由に編集可能。詳細は [text_editing.md](text_editing.md) 参照 |
-| **個別テキスト化済み**（オダマキOP・ミシロタウンNPC・研究所・看板） | 対応する `data/text/*.inc` の `.string` を編集 → `make` |
+| **一括抽出済み**（`data/text/generated/*.inc`） | 対応するラベルの `.string` を編集 → `cmake --build build --parallel`。元のバイト長以下であれば自由に編集可能。詳細は [text_editing.md](text_editing.md) 参照 |
+| **個別テキスト化済み**（オダマキOP・ミシロタウンNPC・研究所・看板） | 対応する `data/text/*.inc` の `.string` を編集 → `cmake --build build --parallel` |
 | **まだ `.incbin`** | ① ROM上の文字列アドレスを特定 ② `.incbin` をやめて `.string` 化 ③ 長さを維持するため `.space` を使う ④ 参照元の即値アドレスをシンボルに変更（`asm/main_menu.s` の例を参照） |
 | **イベントスクリプトの小データ** | `data/event_scripts.s` で `.incbin` を `.string` に置換し、`$` と `.space` で終端・パディングを行う |
 
@@ -167,26 +179,27 @@ pokeemerald_jp.gba
 
 1. `funcmap_jp.txt` や `pokeemerald_jp.map` で関数名を探す
 2. 対応する `asm/*.s` を編集
-3. `make` → エミュレータで確認
+3. `cmake --build build --parallel` → エミュレータで確認
 4. 必要なら `./asmdiff.sh` でオリジナルとの差を見る
 
 英語版 pret/pokeemerald の C ソースを対照すると意図がわかりやすいです。
 
 ### 4. データテーブルを変える（ポケモン・技・アイテムなど）
 
-現状の大半は `data/data.s` 内の:
+主要テーブルは用途別のファイルへ構造化済みです。
 
-```asm
-.incbin "baserom.gba", <オフセット>, <長さ>
-```
-
-です。
-
-| やり方 | 説明 |
+| 変えたい内容 | 主なファイル |
 |---|---|
-| バイナリ直接編集 | `baserom.gba` を改変して `.incbin` させる（非推奨・Matching崩れ） |
-| ラベル単位で切り出し | 対象オフセットだけ `.byte` / テーブル定義に置き換え（推奨される次のステップ） |
-| Expansion 参考 | `PokeEm-expansion-CanuseJP/` の `src/` / `data/` 構成を将来移植 |
+| 種族値 | `data/pokemon/base_stats.inc` |
+| 進化条件 | `data/pokemon/evolution.inc` |
+| レベル・タマゴ・わざマシン・教え技 | `data/pokemon/level_up_learnsets.inc`、`egg_moves.inc`、`tmhm_learnsets.inc`、`tutor_learnsets.inc` |
+| 技の威力・命中・PP・効果 | `data/moves/battle_moves.inc` |
+| アイテムの価格・効果・用途 | `data/items/items.inc` |
+| トレーナー | `data/trainers/trainers.inc` |
+| 野生出現 | `data/wild_encounters/*.inc` |
+| 図鑑 | `data/pokemon/pokedex_entries.inc`、`pokedex_descriptions.inc` |
+
+各マクロの1エントリのバイト数と `data/rodata.inc` の include 順を維持してください。まだ構造化されていない領域は `data/rodata/*.inc` などの `.incbin` として残っています。
 
 Phase 3 で C・JSON・Porymap 連携を目指します。
 
@@ -202,8 +215,10 @@ Phase 3 で C・JSON・Porymap 連携を目指します。
 
 | 現状 | ファイル |
 |---|---|
-| 未テキスト化・未抽出が中心 | `data/data.s` の画像・タイル領域 |
-| 文字幅・字形 | フォント関連（解析は Phase 2 残作業） |
+| ポケモン前後画像・パレット・アイコン | `data/pokemon/mon_*`、`data/pokemon/icon_table.inc` |
+| ボール画像テーブル | `data/pokeball/ball_sprite_tables.inc` |
+| 文字幅・字形 | `data/rodata/fonts.inc`（未構造化部分は `.incbin`） |
+| その他の画像・タイル | `data/rodata/*.inc` などの未構造化領域 |
 | 参考ツール | `tools/gbagfx/`（expansion 側で利用される系統） |
 
 ---
@@ -213,7 +228,7 @@ Phase 3 で C・JSON・Porymap 連携を目指します。
 1. **サイズを意識する**  
    テキスト化済み文字列は枠長を超えない（またはパディングで枠を維持）。
 2. **Matching を壊す改変と、意図的な改造を分ける**  
-   改造ROMでは `make compare` は失敗してよい。ブランチを分けると安全。
+   改造ROMでは `compare` ターゲットは失敗してよい。ブランチを分けると安全。
 3. **ポインタはシンボル化する**  
    `.4byte 0x08xxxxxx` のまま長さを変えると参照が壊れる。`gText_*` のようにラベル参照にする。
 4. **1箇所ずつビルドしてエミュレータ確認**  
@@ -228,8 +243,8 @@ Phase 3 で C・JSON・Porymap 連携を目指します。
 1. `data/text/birch_speech.inc` を開く
 2. `gText_Birch_Welcome` の `.string` を編集
 3. バイト数が 86 未満なら `.space` を調整（詳しくは [text_editing.md](text_editing.md)）
-4. `make -j$(nproc)`
-5. `pokeemerald_jp.gba` を起動し、ニューゲームで確認
+4. `cmake --build build --parallel`
+5. `build/pokeemerald_jp.gba` を起動し、ニューゲームで確認
 
 参照元: `asm/main_menu.s` の `Task_NewGameBirchSpeech_*`
 
@@ -244,11 +259,11 @@ Phase 3 で C・JSON・Porymap 連携を目指します。
 - `data/text/generated/event_scripts.inc`：6,741スロット
 - `data/rodata.inc`：6,158スロット（`data/text/rodata/` に分割・構造化済み）
 - `data/text/generated/manifest.json`：ラベル・ROMアドレス・元バイト長・検証根拠
-- 抽出状態で `make compare` 一致確認済み
+- 抽出状態で CMake の `compare` ターゲット一致確認済み
 
 ### ビルド依存
 
-`Makefile` は `data/text/*.inc` の更新時に `data/event_scripts.o` を再ビルドする。
+`CMakeLists.txt` は `data/text/*.inc` の更新時に該当オブジェクトを再ビルドする。
 
 ### ミシロタウン NPCセリフをテキスト化
 
@@ -360,8 +375,8 @@ gUnknown_81E45F1:
 ### ステップ 4: ビルドして Matching を確認する
 
 ```sh
-make -j$(nproc)
-sha1sum pokeemerald_jp.gba
+cmake --build build --parallel
+sha1sum build/pokeemerald_jp.gba
 cat rom_jp.sha1
 ```
 

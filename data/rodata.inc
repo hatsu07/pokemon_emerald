@@ -2,7 +2,17 @@
 @ Original labels, macros, incbins and nested includes are preserved.
 @ Include order is part of the ROM layout. Do not reorder.
 
-	.include "data/text/generated/rodata/01_misc.inc"
+	.include "data/rodata/main.inc"
+	.include "data/rodata/alloc.inc"
+	.include "data/rodata/bg.inc"
+	.include "data/rodata/window.inc"
+	.include "data/rodata/text.inc"
+	.include "data/rodata/fonts.inc"
+	.include "data/rodata/sprite.inc"
+	.include "data/rodata/overworld.inc"
+	.include "data/rodata/field_screen_effect.inc"
+	.include "data/rodata/string_util.inc"
+	.include "data/rodata/link.inc"
 	.include "data/text/rodata/credits/02_credits_text.inc"
 	.include "data/text/rodata/pokemon/03_pokemon_data.inc"
 	.include "data/text/rodata/credits/04_credits_text.inc"
