@@ -3067,12 +3067,22 @@ gUnknown_85D5695: @ 0x085D5695
 	battle_dome_cursor_moves 30, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, 28, 29,  TOURNEY_TREE_INVALID_MOVE, TOURNEY_TREE_INVALID_MOVE, 28, 29
 	battle_dome_cursor_moves TOURNEY_TREE_CLOSE_BUTTON, 15, 8, 8, 0,  15, 8, 8, 0,  15, 8, 8, 0,  15, 8, 8, 0,  15, 8, 8, 0
 	.align 2, 0
+	.globl gBattleDomeTourneyTreeBgTemplates
 	.globl gUnknown_85D5918
+gBattleDomeTourneyTreeBgTemplates:
 gUnknown_85D5918: @ 0x085D5918
-	.incbin "baserom.gba", 0x5d5918, 0x10
+	bg_template 0, 0, 28, 0, 0, 0, 0
+	bg_template 1, 1, 29, 0, 0, 1, 0
+	bg_template 2, 2, 30, 0, 0, 2, 0
+	bg_template 3, 2, 31, 0, 0, 2, 0
+	.globl gBattleDomeInfoCardBgTemplates
 	.globl gUnknown_85D5928
+gBattleDomeInfoCardBgTemplates:
 gUnknown_85D5928: @ 0x085D5928
-	.incbin "baserom.gba", 0x5d5928, 0x10
+	bg_template 0, 0, 20, 3, 0, 0, 0
+	bg_template 1, 1, 24, 3, 0, 0, 0
+	bg_template 2, 2, 28, 3, 0, 1, 0
+	bg_template 3, 2, 7, 0, 0, 1, 0
 	.globl gUnknown_85D5938
 gUnknown_85D5938: @ 0x085D5938
 	.incbin "baserom.gba", 0x5d5938, 0x20
