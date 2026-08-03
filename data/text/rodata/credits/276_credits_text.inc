@@ -2609,21 +2609,29 @@ gUnknown_85D3ADE: @ 0x085D3ADE
 	.2byte 26 @ Quiz Lady
 	.2byte 20 @ Favor Lady
 	.2byte 10 @ Contest Lady
+	.globl gUnknownEasyChatWordList_5D3AE4
 	.globl gUnknown_85D3AE4
+gUnknownEasyChatWordList_5D3AE4:
 gUnknown_85D3AE4: @ 0x085D3AE4
-	.incbin "baserom.gba", 0x5d3ae4, 0x43
+	.2byte 0x0602, 0x1413, 0x020E, 0x0E1D, 0x1E1F, 0x0C03
+	.2byte 0x2A70, 0x2ADA, 0x013A, 0x0170, 0x0E1D, 0x1E21
+	.2byte 0x020E, 0x0E08, 0x0204, 0x1628, 0x0C03
+	.2byte 0xFFFF @ terminator
 
-	@ src/data/abilities.h:214 abilities_line_214 (+1 aliases)
+gUnknownEasyChatWordList_5D3B08: @ 0x085D3B08
+	.2byte 0x0209, 0x0204, 0x1628, 0x020E, 0x1E1F, 0x0C03
+	.2byte 0x017F, 0x2A43, 0x016D, 0x1E28, 0x160A, 0x0E2B
+	.2byte 0x1425, 0x103C, 0x0E1D
+	.byte 0x24 @ low byte of packed word 0x1E24
+	@ Compatibility alias previously decoded as the standalone text "ほうし".
 	.globl gText_Rom_5D3B27
 gText_Rom_5D3B27: @ 0x085D3B27
-	.string "ほうし$"
-	.if (. - gText_Rom_5D3B27) > 0x4
-	.error "gText_Rom_5D3B27 may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_5D3B27) < 0x4
-	.space 0x4 - (. - gText_Rom_5D3B27)
-	.endif
-	.incbin "baserom.gba", 0x5d3b2b, 0xd9
+	.byte 0x1E @ high byte of packed word 0x1E24
+	.2byte 0x0C03
+	.2byte 0xFFFF @ terminator
+	.globl gUnknown_85D3B2C
+gUnknown_85D3B2C: @ 0x085D3B2C
+	.incbin "baserom.gba", 0x5d3b2c, 0xd8
 	.globl gUnknown_85D3C04
 gUnknown_85D3C04: @ 0x085D3C04
 	.incbin "baserom.gba", 0x5d3c04, 0x40
