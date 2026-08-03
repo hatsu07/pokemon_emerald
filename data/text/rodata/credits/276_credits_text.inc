@@ -1217,15 +1217,442 @@ gBardSoundTable: @ 0x085D2B4C
 	.if (. - gBardSoundTable) != 240 * 4
 	.error "Bard sound table must contain 240 four-byte entries"
 	.endif
-	.globl gUnknown_85D2F0C
-gUnknown_85D2F0C: @ 0x085D2F0C
-	.incbin "baserom.gba", 0x5d2f0c, 0x388
+	.globl gBattleTvMovesExcludedFromDamageCalculation
+gBattleTvMovesExcludedFromDamageCalculation: @ 0x085D2F0C
+	.2byte MOVE_COUNTER
+	.2byte MOVE_FISSURE
+	.2byte MOVE_BIDE
+	.2byte MOVE_MIRROR_COAT
+	.2byte MOVE_HORN_DRILL
+	.2byte MOVE_FLAIL
+	.2byte MOVE_REVERSAL
+	.2byte MOVE_HIDDEN_POWER
+	.2byte MOVE_SHEER_COLD
+	.2byte MOVE_FOCUS_PUNCH
+	.2byte MOVE_ERUPTION
+	.2byte MOVE_WATER_SPOUT
+	.2byte MOVE_DREAM_EATER
+	.2byte MOVE_WEATHER_BALL
+	.2byte MOVE_SNORE
+	.2byte MOVE_PAIN_SPLIT
+	.2byte MOVE_GUILLOTINE
+	.2byte MOVE_FRUSTRATION
+	.2byte MOVE_RETURN
+	.2byte MOVE_ENDEAVOR
+	.2byte MOVE_PRESENT
+	.2byte MOVE_REVENGE
+	.2byte 0xFFFF @ terminator
+
+gUnusedBattleTvSpecialDamageMoves: @ 0x085D2F3A
+	.2byte MOVE_MAGNITUDE, MOVE_PSYWAVE, 0xFFFF
+
+	.globl gBattleTvMoveEffectPoints
+gBattleTvMoveEffectPoints: @ 0x085D2F40
+	battle_tv_effect_points EFFECT_HIT, 1
+	battle_tv_effect_points EFFECT_SLEEP, 1
+	battle_tv_effect_points EFFECT_POISON_HIT, 1
+	battle_tv_effect_points EFFECT_ABSORB, 4
+	battle_tv_effect_points EFFECT_BURN_HIT, 1
+	battle_tv_effect_points EFFECT_FREEZE_HIT, 1
+	battle_tv_effect_points EFFECT_PARALYZE_HIT, 1
+	battle_tv_effect_points EFFECT_EXPLOSION, 0
+	battle_tv_effect_points EFFECT_DREAM_EATER, 5
+	battle_tv_effect_points EFFECT_MIRROR_MOVE, 1
+	battle_tv_effect_points EFFECT_ATTACK_UP, 1
+	battle_tv_effect_points EFFECT_DEFENSE_UP, 1
+	battle_tv_effect_points EFFECT_SPEED_UP, 1
+	battle_tv_effect_points EFFECT_SPECIAL_ATTACK_UP, 1
+	battle_tv_effect_points EFFECT_SPECIAL_DEFENSE_UP, 1
+	battle_tv_effect_points EFFECT_ACCURACY_UP, 1
+	battle_tv_effect_points EFFECT_EVASION_UP, 1
+	battle_tv_effect_points EFFECT_ALWAYS_HIT, 2
+	battle_tv_effect_points EFFECT_ATTACK_DOWN, 1
+	battle_tv_effect_points EFFECT_DEFENSE_DOWN, 1
+	battle_tv_effect_points EFFECT_SPEED_DOWN, 1
+	battle_tv_effect_points EFFECT_SPECIAL_ATTACK_DOWN, 1
+	battle_tv_effect_points EFFECT_SPECIAL_DEFENSE_DOWN, 1
+	battle_tv_effect_points EFFECT_ACCURACY_DOWN, 1
+	battle_tv_effect_points EFFECT_EVASION_DOWN, 1
+	battle_tv_effect_points EFFECT_HAZE, 5
+	battle_tv_effect_points EFFECT_BIDE, 5
+	battle_tv_effect_points EFFECT_RAMPAGE, 4
+	battle_tv_effect_points EFFECT_ROAR, 5
+	battle_tv_effect_points EFFECT_MULTI_HIT, 1
+	battle_tv_effect_points EFFECT_CONVERSION, 3
+	battle_tv_effect_points EFFECT_FLINCH_HIT, 1
+	battle_tv_effect_points EFFECT_RESTORE_HP, 3
+	battle_tv_effect_points EFFECT_TOXIC, 5
+	battle_tv_effect_points EFFECT_PAY_DAY, 1
+	battle_tv_effect_points EFFECT_LIGHT_SCREEN, 7
+	battle_tv_effect_points EFFECT_TRI_ATTACK, 1
+	battle_tv_effect_points EFFECT_REST, 7
+	battle_tv_effect_points EFFECT_OHKO, 7
+	battle_tv_effect_points EFFECT_RAZOR_WIND, 1
+	battle_tv_effect_points EFFECT_SUPER_FANG, 5
+	battle_tv_effect_points EFFECT_DRAGON_RAGE, 2
+	battle_tv_effect_points EFFECT_TRAP, 4
+	battle_tv_effect_points EFFECT_HIGH_CRITICAL, 1
+	battle_tv_effect_points EFFECT_DOUBLE_HIT, 1
+	battle_tv_effect_points EFFECT_RECOIL_IF_MISS, 1
+	battle_tv_effect_points EFFECT_MIST, 5
+	battle_tv_effect_points EFFECT_FOCUS_ENERGY, 1
+	battle_tv_effect_points EFFECT_RECOIL, 2
+	battle_tv_effect_points EFFECT_CONFUSE, 4
+	battle_tv_effect_points EFFECT_ATTACK_UP_2, 1
+	battle_tv_effect_points EFFECT_DEFENSE_UP_2, 1
+	battle_tv_effect_points EFFECT_SPEED_UP_2, 1
+	battle_tv_effect_points EFFECT_SPECIAL_ATTACK_UP_2, 1
+	battle_tv_effect_points EFFECT_SPECIAL_DEFENSE_UP_2, 1
+	battle_tv_effect_points EFFECT_ACCURACY_UP_2, 1
+	battle_tv_effect_points EFFECT_EVASION_UP_2, 1
+	battle_tv_effect_points EFFECT_TRANSFORM, 0
+	battle_tv_effect_points EFFECT_ATTACK_DOWN_2, 1
+	battle_tv_effect_points EFFECT_DEFENSE_DOWN_2, 1
+	battle_tv_effect_points EFFECT_SPEED_DOWN_2, 1
+	battle_tv_effect_points EFFECT_SPECIAL_ATTACK_DOWN_2, 1
+	battle_tv_effect_points EFFECT_SPECIAL_DEFENSE_DOWN_2, 1
+	battle_tv_effect_points EFFECT_ACCURACY_DOWN_2, 1
+	battle_tv_effect_points EFFECT_EVASION_DOWN_2, 1
+	battle_tv_effect_points EFFECT_REFLECT, 7
+	battle_tv_effect_points EFFECT_POISON, 4
+	battle_tv_effect_points EFFECT_PARALYZE, 4
+	battle_tv_effect_points EFFECT_ATTACK_DOWN_HIT, 1
+	battle_tv_effect_points EFFECT_DEFENSE_DOWN_HIT, 1
+	battle_tv_effect_points EFFECT_SPEED_DOWN_HIT, 1
+	battle_tv_effect_points EFFECT_SPECIAL_ATTACK_DOWN_HIT, 1
+	battle_tv_effect_points EFFECT_SPECIAL_DEFENSE_DOWN_HIT, 1
+	battle_tv_effect_points EFFECT_ACCURACY_DOWN_HIT, 1
+	battle_tv_effect_points EFFECT_EVASION_DOWN_HIT, 1
+	battle_tv_effect_points EFFECT_SKY_ATTACK, 4
+	battle_tv_effect_points EFFECT_CONFUSE_HIT, 1
+	battle_tv_effect_points EFFECT_TWINEEDLE, 1
+	battle_tv_effect_points EFFECT_VITAL_THROW, 1
+	battle_tv_effect_points EFFECT_SUBSTITUTE, 4
+	battle_tv_effect_points EFFECT_RECHARGE, 5
+	battle_tv_effect_points EFFECT_RAGE, 2
+	battle_tv_effect_points EFFECT_MIMIC, 4
+	battle_tv_effect_points EFFECT_METRONOME, 1
+	battle_tv_effect_points EFFECT_LEECH_SEED, 4
+	battle_tv_effect_points EFFECT_SPLASH, 1
+	battle_tv_effect_points EFFECT_DISABLE, 7
+	battle_tv_effect_points EFFECT_LEVEL_DAMAGE, 2
+	battle_tv_effect_points EFFECT_PSYWAVE, 1
+	battle_tv_effect_points EFFECT_COUNTER, 5
+	battle_tv_effect_points EFFECT_ENCORE, 7
+	battle_tv_effect_points EFFECT_PAIN_SPLIT, 3
+	battle_tv_effect_points EFFECT_SNORE, 3
+	battle_tv_effect_points EFFECT_CONVERSION_2, 4
+	battle_tv_effect_points EFFECT_LOCK_ON, 3
+	battle_tv_effect_points EFFECT_SKETCH, 3
+	battle_tv_effect_points EFFECT_UNUSED_60, 3
+	battle_tv_effect_points EFFECT_SLEEP_TALK, 3
+	battle_tv_effect_points EFFECT_DESTINY_BOND, 3
+	battle_tv_effect_points EFFECT_FLAIL, 2
+	battle_tv_effect_points EFFECT_SPITE, 4
+	battle_tv_effect_points EFFECT_FALSE_SWIPE, 1
+	battle_tv_effect_points EFFECT_HEAL_BELL, 5
+	battle_tv_effect_points EFFECT_QUICK_ATTACK, 1
+	battle_tv_effect_points EFFECT_TRIPLE_KICK, 1
+	battle_tv_effect_points EFFECT_THIEF, 4
+	battle_tv_effect_points EFFECT_MEAN_LOOK, 5
+	battle_tv_effect_points EFFECT_NIGHTMARE, 3
+	battle_tv_effect_points EFFECT_MINIMIZE, 1
+	battle_tv_effect_points EFFECT_CURSE, 2
+	battle_tv_effect_points EFFECT_UNUSED_6E, 1
+	battle_tv_effect_points EFFECT_PROTECT, 5
+	battle_tv_effect_points EFFECT_SPIKES, 4
+	battle_tv_effect_points EFFECT_FORESIGHT, 3
+	battle_tv_effect_points EFFECT_PERISH_SONG, 6
+	battle_tv_effect_points EFFECT_SANDSTORM, 4
+	battle_tv_effect_points EFFECT_ENDURE, 3
+	battle_tv_effect_points EFFECT_ROLLOUT, 3
+	battle_tv_effect_points EFFECT_SWAGGER, 3
+	battle_tv_effect_points EFFECT_FURY_CUTTER, 2
+	battle_tv_effect_points EFFECT_ATTRACT, 4
+	battle_tv_effect_points EFFECT_RETURN, 1
+	battle_tv_effect_points EFFECT_PRESENT, 1
+	battle_tv_effect_points EFFECT_FRUSTRATION, 1
+	battle_tv_effect_points EFFECT_SAFEGUARD, 5
+	battle_tv_effect_points EFFECT_THAW_HIT, 1
+	battle_tv_effect_points EFFECT_MAGNITUDE, 1
+	battle_tv_effect_points EFFECT_BATON_PASS, 7
+	battle_tv_effect_points EFFECT_PURSUIT, 2
+	battle_tv_effect_points EFFECT_RAPID_SPIN, 2
+	battle_tv_effect_points EFFECT_SONICBOOM, 1
+	battle_tv_effect_points EFFECT_UNUSED_83, 1
+	battle_tv_effect_points EFFECT_MORNING_SUN, 4
+	battle_tv_effect_points EFFECT_SYNTHESIS, 4
+	battle_tv_effect_points EFFECT_MOONLIGHT, 4
+	battle_tv_effect_points EFFECT_HIDDEN_POWER, 1
+	battle_tv_effect_points EFFECT_RAIN_DANCE, 4
+	battle_tv_effect_points EFFECT_SUNNY_DAY, 4
+	battle_tv_effect_points EFFECT_DEFENSE_UP_HIT, 1
+	battle_tv_effect_points EFFECT_ATTACK_UP_HIT, 1
+	battle_tv_effect_points EFFECT_ALL_STATS_UP_HIT, 1
+	battle_tv_effect_points EFFECT_UNUSED_8D, 1
+	battle_tv_effect_points EFFECT_BELLY_DRUM, 7
+	battle_tv_effect_points EFFECT_PSYCH_UP, 7
+	battle_tv_effect_points EFFECT_MIRROR_COAT, 6
+	battle_tv_effect_points EFFECT_SKULL_BASH, 3
+	battle_tv_effect_points EFFECT_TWISTER, 1
+	battle_tv_effect_points EFFECT_EARTHQUAKE, 1
+	battle_tv_effect_points EFFECT_FUTURE_SIGHT, 1
+	battle_tv_effect_points EFFECT_GUST, 1
+	battle_tv_effect_points EFFECT_FLINCH_MINIMIZE_HIT, 1
+	battle_tv_effect_points EFFECT_SOLAR_BEAM, 1
+	battle_tv_effect_points EFFECT_THUNDER, 1
+	battle_tv_effect_points EFFECT_TELEPORT, 1
+	battle_tv_effect_points EFFECT_BEAT_UP, 2
+	battle_tv_effect_points EFFECT_SEMI_INVULNERABLE, 3
+	battle_tv_effect_points EFFECT_DEFENSE_CURL, 1
+	battle_tv_effect_points EFFECT_SOFTBOILED, 1
+	battle_tv_effect_points EFFECT_FAKE_OUT, 4
+	battle_tv_effect_points EFFECT_UPROAR, 4
+	battle_tv_effect_points EFFECT_STOCKPILE, 3
+	battle_tv_effect_points EFFECT_SPIT_UP, 3
+	battle_tv_effect_points EFFECT_SWALLOW, 3
+	battle_tv_effect_points EFFECT_UNUSED_A3, 1
+	battle_tv_effect_points EFFECT_HAIL, 4
+	battle_tv_effect_points EFFECT_TORMENT, 7
+	battle_tv_effect_points EFFECT_FLATTER, 7
+	battle_tv_effect_points EFFECT_WILL_O_WISP, 5
+	battle_tv_effect_points EFFECT_MEMENTO, 7
+	battle_tv_effect_points EFFECT_FACADE, 1
+	battle_tv_effect_points EFFECT_FOCUS_PUNCH, 7
+	battle_tv_effect_points EFFECT_SMELLINGSALT, 1
+	battle_tv_effect_points EFFECT_FOLLOW_ME, 5
+	battle_tv_effect_points EFFECT_NATURE_POWER, 0
+	battle_tv_effect_points EFFECT_CHARGE, 4
+	battle_tv_effect_points EFFECT_TAUNT, 4
+	battle_tv_effect_points EFFECT_HELPING_HAND, 4
+	battle_tv_effect_points EFFECT_TRICK, 4
+	battle_tv_effect_points EFFECT_ROLE_PLAY, 4
+	battle_tv_effect_points EFFECT_WISH, 2
+	battle_tv_effect_points EFFECT_ASSIST, 2
+	battle_tv_effect_points EFFECT_INGRAIN, 6
+	battle_tv_effect_points EFFECT_SUPERPOWER, 3
+	battle_tv_effect_points EFFECT_MAGIC_COAT, 6
+	battle_tv_effect_points EFFECT_RECYCLE, 4
+	battle_tv_effect_points EFFECT_REVENGE, 4
+	battle_tv_effect_points EFFECT_BRICK_BREAK, 2
+	battle_tv_effect_points EFFECT_YAWN, 5
+	battle_tv_effect_points EFFECT_KNOCK_OFF, 2
+	battle_tv_effect_points EFFECT_ENDEAVOR, 1
+	battle_tv_effect_points EFFECT_ERUPTION, 1
+	battle_tv_effect_points EFFECT_SKILL_SWAP, 6
+	battle_tv_effect_points EFFECT_IMPRISON, 6
+	battle_tv_effect_points EFFECT_REFRESH, 6
+	battle_tv_effect_points EFFECT_GRUDGE, 1
+	battle_tv_effect_points EFFECT_SNATCH, 1
+	battle_tv_effect_points EFFECT_LOW_KICK, 1
+	battle_tv_effect_points EFFECT_SECRET_POWER, 1
+	battle_tv_effect_points EFFECT_DOUBLE_EDGE, 2
+	battle_tv_effect_points EFFECT_TEETER_DANCE, 6
+	battle_tv_effect_points EFFECT_BLAZE_KICK, 1
+	battle_tv_effect_points EFFECT_MUD_SPORT, 4
+	battle_tv_effect_points EFFECT_POISON_FANG, 1
+	battle_tv_effect_points EFFECT_WEATHER_BALL, 1
+	battle_tv_effect_points EFFECT_OVERHEAT, 3
+	battle_tv_effect_points EFFECT_TICKLE, 1
+	battle_tv_effect_points EFFECT_COSMIC_POWER, 1
+	battle_tv_effect_points EFFECT_SKY_UPPERCUT, 1
+	battle_tv_effect_points EFFECT_BULK_UP, 1
+	battle_tv_effect_points EFFECT_POISON_TAIL, 1
+	battle_tv_effect_points EFFECT_WATER_SPORT, 4
+	battle_tv_effect_points EFFECT_CALM_MIND, 1
+	battle_tv_effect_points EFFECT_DRAGON_DANCE, 1
+	battle_tv_effect_points EFFECT_CAMOUFLAGE, 3
+	.if (. - gBattleTvMoveEffectPoints) != NUM_BATTLE_MOVE_EFFECTS * 2
+	.error "Battle TV move effect points must cover every battle move effect"
+	.endif
+
+sBattleTvPointsEffectiveness: @ 0x085D30EC
+	.2byte 4, -3, -6 @ super effective, not very effective, no effect
+
+sBattleTvPointsSetUp: @ 0x085D30F2
+	.2byte 4 @ Future Sight
+	.2byte 4 @ Doom Desire
+	.2byte 6
+	.2byte 6 @ Wish
+	.2byte 7 @ Grudge
+	.2byte 6
+	.2byte 2 @ Ingrain
+
+sBattleTvPointsRainMoves: @ 0x085D3100
+	battle_tv_move_points MOVE_BUBBLE, 3
+	battle_tv_move_points MOVE_WHIRLPOOL, 3
+	battle_tv_move_points MOVE_OCTAZOOKA, 3
+	battle_tv_move_points MOVE_CLAMP, 3
+	battle_tv_move_points MOVE_WITHDRAW, 3
+	battle_tv_move_points MOVE_CRABHAMMER, 3
+	battle_tv_move_points MOVE_WATER_SPOUT, 3
+	battle_tv_move_points MOVE_DIVE, 3
+	battle_tv_move_points MOVE_WATERFALL, 3
+	battle_tv_move_points MOVE_MUDDY_WATER, 3
+	battle_tv_move_points MOVE_SURF, 3
+	battle_tv_move_points MOVE_HYDRO_CANNON, 3
+	battle_tv_move_points MOVE_HYDRO_PUMP, 3
+	battle_tv_move_points MOVE_BUBBLE_BEAM, 3
+	battle_tv_move_points MOVE_WATER_SPORT, 0
+	battle_tv_move_points MOVE_WATER_GUN, 3
+	battle_tv_move_points MOVE_WATER_PULSE, 3
+	battle_tv_move_points MOVE_WEATHER_BALL, 3
+	battle_tv_move_points MOVE_THUNDER, 3
+	battle_tv_move_points MOVE_SOLAR_BEAM, -4
+	battle_tv_move_points MOVE_OVERHEAT, -4
+	battle_tv_move_points MOVE_FLAME_WHEEL, -4
+	battle_tv_move_points MOVE_FLAMETHROWER, -4
+	battle_tv_move_points MOVE_SACRED_FIRE, -4
+	battle_tv_move_points MOVE_FIRE_BLAST, -4
+	battle_tv_move_points MOVE_HEAT_WAVE, -4
+	battle_tv_move_points MOVE_EMBER, -4
+	battle_tv_move_points MOVE_BLAST_BURN, -4
+	battle_tv_move_points MOVE_BLAZE_KICK, -4
+	battle_tv_move_points MOVE_ERUPTION, -4
+	battle_tv_move_points MOVE_FIRE_SPIN, -4
+	battle_tv_move_points MOVE_FIRE_PUNCH, -4
+	battle_tv_move_points MOVE_SOLAR_BEAM, -4 @ repeated in the original table
+	battle_tv_move_points 0xFFFF, 0
+
+sBattleTvPointsSunMoves: @ 0x085D3188
+	battle_tv_move_points MOVE_OVERHEAT, 3
+	battle_tv_move_points MOVE_FLAME_WHEEL, 3
+	battle_tv_move_points MOVE_FLAMETHROWER, 3
+	battle_tv_move_points MOVE_SACRED_FIRE, 3
+	battle_tv_move_points MOVE_FIRE_BLAST, 3
+	battle_tv_move_points MOVE_HEAT_WAVE, 3
+	battle_tv_move_points MOVE_EMBER, 3
+	battle_tv_move_points MOVE_BLAST_BURN, 3
+	battle_tv_move_points MOVE_BLAZE_KICK, 3
+	battle_tv_move_points MOVE_ERUPTION, 3
+	battle_tv_move_points MOVE_FIRE_SPIN, 3
+	battle_tv_move_points MOVE_FIRE_PUNCH, 3
+	battle_tv_move_points MOVE_SOLAR_BEAM, 5
+	battle_tv_move_points MOVE_SYNTHESIS, 3
+	battle_tv_move_points MOVE_MORNING_SUN, 3
+	battle_tv_move_points MOVE_MOONLIGHT, 3
+	battle_tv_move_points MOVE_WEATHER_BALL, 3
+	battle_tv_move_points 0xFFFF, 0
+
+sBattleTvPointsSandstormMoves: @ 0x085D31D0
+	battle_tv_move_points MOVE_WEATHER_BALL, 3
+	battle_tv_move_points MOVE_SOLAR_BEAM, -3
+	battle_tv_move_points 0xFFFF, 0
+
+sBattleTvPointsHailMoves: @ 0x085D31DC
+	battle_tv_move_points MOVE_WEATHER_BALL, 3
+	battle_tv_move_points MOVE_SOLAR_BEAM, -3
+	battle_tv_move_points 0xFFFF, 0
+
+sBattleTvPointsElectricMoves: @ 0x085D31E8
+	battle_tv_move_points MOVE_THUNDERBOLT, 3
+	battle_tv_move_points MOVE_THUNDER_PUNCH, 3
+	battle_tv_move_points MOVE_SPARK, 3
+	battle_tv_move_points MOVE_THUNDER_SHOCK, 3
+	battle_tv_move_points MOVE_ZAP_CANNON, 3
+	battle_tv_move_points MOVE_SHOCK_WAVE, 3
+	battle_tv_move_points MOVE_THUNDER_WAVE, 0
+	battle_tv_move_points MOVE_THUNDER, 3
+	battle_tv_move_points MOVE_VOLT_TACKLE, 3
+	battle_tv_move_points 0xFFFF, 0
+
+sBattleTvPointsStatusDamage: @ 0x085D3210
+	.2byte 5 @ Curse
+	.2byte 3 @ Leech Seed
+	.2byte 3 @ Poison
+	.2byte 3 @ Toxic
+	.2byte 3 @ Burn
+	.2byte 3 @ Nightmare
+	.2byte 3 @ trapping move
+
+sBattleTvPointsStatus: @ 0x085D321E
+	.2byte 5 @ attraction
+	.2byte 5 @ confusion
+	.2byte 5 @ paralysis
+	.2byte 5 @ sleep
+	.2byte 5 @ freeze
+
+sBattleTvPointsSpikes:              .2byte 4
+sBattleTvPointsWaterSport:          .2byte 5
+sBattleTvPointsMudSport:            .2byte 5
+sBattleTvPointsReflect:             .2byte 3
+sBattleTvPointsLightScreen:         .2byte 3
+sBattleTvPointsSafeguard:           .2byte 4
+sBattleTvPointsMist:                .2byte 3
+sBattleTvPointsBreakWall:           .2byte 6
+sBattleTvPointsCriticalHit:         .2byte 6
+sBattleTvPointsFaint:               .2byte 6
+sBattleTvPointsFlinched:            .2byte 4
+
+sBattleTvPointsStatIncrease1:
+	.2byte 2, 2, 2, 2, 2, 2, 2
+sBattleTvPointsStatIncrease2:
+	.2byte 4, 4, 4, 4, 4, 4, 4
+sBattleTvPointsStatDecreaseSelf:
+	.2byte -1, -1, -1, -1, -1, -1, -1
+sBattleTvPointsStatDecrease1:
+	.2byte 2, 2, 2, 2, 2, 2, 2
+sBattleTvPointsStatDecrease2:
+	.2byte 4, 4, 4, 4, 4, 4, 4
+sBattleTvPointsStatIncreaseNotSelf:
+	.2byte -2, -2, -2, -2, -2, -2, -2
+	.align 2, 0
+
+	.globl gBattleTvMovePoints
 	.globl gUnknown_85D3294
+gBattleTvMovePoints:
 gUnknown_85D3294: @ 0x085D3294
-	.incbin "baserom.gba", 0x5d3294, 0x70
+	.4byte gBattleTvMoveEffectPoints
+	.4byte sBattleTvPointsEffectiveness
+	.4byte sBattleTvPointsSetUp
+	.4byte sBattleTvPointsRainMoves
+	.4byte sBattleTvPointsSunMoves
+	.4byte sBattleTvPointsSandstormMoves
+	.4byte sBattleTvPointsHailMoves
+	.4byte sBattleTvPointsElectricMoves
+	.4byte sBattleTvPointsStatusDamage
+	.4byte sBattleTvPointsStatus
+	.4byte sBattleTvPointsSpikes
+	.4byte sBattleTvPointsWaterSport
+	.4byte sBattleTvPointsMudSport
+	.4byte sBattleTvPointsReflect
+	.4byte sBattleTvPointsLightScreen
+	.4byte sBattleTvPointsSafeguard
+	.4byte sBattleTvPointsMist
+	.4byte sBattleTvPointsBreakWall
+	.4byte sBattleTvPointsCriticalHit
+	.4byte sBattleTvPointsFaint
+	.4byte sBattleTvPointsFaint
+	.4byte sBattleTvPointsFlinched
+	.4byte sBattleTvPointsStatIncrease1
+	.4byte sBattleTvPointsStatIncrease2
+	.4byte sBattleTvPointsStatDecreaseSelf
+	.4byte sBattleTvPointsStatDecrease1
+	.4byte sBattleTvPointsStatDecrease2
+	.4byte sBattleTvPointsStatIncreaseNotSelf
+
+	.globl gBattleTvSpecialBattleStrings
 	.globl gUnknown_85D3304
+gBattleTvSpecialBattleStrings:
 gUnknown_85D3304: @ 0x085D3304
-	.incbin "baserom.gba", 0x5d3304, 0x24
+	.2byte 151 @ STRINGID_PKMNPERISHCOUNTFELL
+	.2byte 178 @ STRINGID_PKMNWISHCAMETRUE
+	.2byte 188 @ STRINGID_PKMNLOSTPPGRUDGE
+	.2byte 140 @ STRINGID_PKMNTOOKFOE
+	.2byte 180 @ STRINGID_PKMNABSORBEDNUTRIENTS
+	.2byte 181 @ STRINGID_PKMNANCHOREDITSELF
+	.2byte 147 @ STRINGID_PKMNAFFLICTEDBYCURSE
+	.2byte 106 @ STRINGID_PKMNSAPPEDBYLEECHSEED
+	.2byte 145 @ STRINGID_PKMNLOCKEDINNIGHTMARE
+	.2byte 94  @ STRINGID_PKMNHURTBY
+	.2byte 48  @ STRINGID_PKMNHURTBYBURN
+	.2byte 42  @ STRINGID_PKMNHURTBYPOISON
+	.2byte 149 @ STRINGID_PKMNHURTBYSPIKES
+	.2byte 28  @ STRINGID_ATTACKERFAINTED
+	.2byte 29  @ STRINGID_TARGETFAINTED
+	.2byte 100 @ STRINGID_PKMNHITWITHRECOIL
+	.2byte 96  @ STRINGID_PKMNCRASHED
+	.2byte 0xFFFF @ terminator
 	.globl gUnknown_85D3328
 gUnknown_85D3328: @ 0x085D3328
 	.incbin "baserom.gba", 0x5d3328, 0x19c

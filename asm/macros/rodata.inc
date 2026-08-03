@@ -31,6 +31,19 @@
 	bard_sound_entry BARD_SOUND_4, \volume
 	.endm
 
+	@ One score indexed by a battle move effect. The effect argument verifies order.
+	.macro battle_tv_effect_points effect, points
+	.if (\effect) != ((. - gBattleTvMoveEffectPoints) / 2)
+	.error "Battle TV move effect points are out of order"
+	.endif
+	.2byte \points
+	.endm
+
+	@ One move/score pair in a Battle TV weather or field-effect table.
+	.macro battle_tv_move_points move, points
+	.2byte \move, \points
+	.endm
+
 	.macro sprite_tile_counts square8, square16, square32, square64, horizontal8, horizontal16, horizontal32, horizontal64, vertical8, vertical16, vertical32, vertical64
 	.byte \square8, \square16, \square32, \square64
 	.byte \horizontal8, \horizontal16, \horizontal32, \horizontal64
