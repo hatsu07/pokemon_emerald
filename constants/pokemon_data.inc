@@ -18,6 +18,33 @@
 
 	.set F_SUMMARY_SCREEN_FLIP_SPRITE, 0x80
 
+	.set NATURE_HARDY,   0
+	.set NATURE_LONELY,  1
+	.set NATURE_BRAVE,   2
+	.set NATURE_ADAMANT, 3
+	.set NATURE_NAUGHTY, 4
+	.set NATURE_BOLD,    5
+	.set NATURE_DOCILE,  6
+	.set NATURE_RELAXED, 7
+	.set NATURE_IMPISH,  8
+	.set NATURE_LAX,     9
+	.set NATURE_TIMID,   10
+	.set NATURE_HASTY,   11
+	.set NATURE_SERIOUS, 12
+	.set NATURE_JOLLY,   13
+	.set NATURE_NAIVE,   14
+	.set NATURE_MODEST,  15
+	.set NATURE_MILD,    16
+	.set NATURE_QUIET,   17
+	.set NATURE_BASHFUL, 18
+	.set NATURE_RASH,    19
+	.set NATURE_CALM,    20
+	.set NATURE_GENTLE,  21
+	.set NATURE_SASSY,   22
+	.set NATURE_CAREFUL, 23
+	.set NATURE_QUIRKY,  24
+	.set NUM_NATURES,    25
+
 	.set EVO_FRIENDSHIP,       0x0001 @ Pokémon levels up with friendship ≥ 220
 	.set EVO_FRIENDSHIP_DAY,   0x0002 @ Pokémon levels up during the day with friendship ≥ 220
 	.set EVO_FRIENDSHIP_NIGHT, 0x0003 @ Pokémon levels up at night with friendship ≥ 220

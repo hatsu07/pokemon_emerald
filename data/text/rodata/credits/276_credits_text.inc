@@ -2288,12 +2288,53 @@ gUnknown_85D3744: @ 0x085D3744
 	.if (. - gBackAnimSetToAnimIds) != (NUM_BACK_ANIM_SETS * 3)
 	.error "Pokemon back animation variant table has the wrong size"
 	.endif
+	.globl gBackAnimNatureModTable
 	.globl gUnknown_85D378F
+gBackAnimNatureModTable:
 gUnknown_85D378F: @ 0x085D378F
-	.incbin "baserom.gba", 0x5d378f, 0x39
+	back_anim_nature_mod NATURE_HARDY,   0
+	back_anim_nature_mod NATURE_LONELY,  2
+	back_anim_nature_mod NATURE_BRAVE,   0
+	back_anim_nature_mod NATURE_ADAMANT, 0
+	back_anim_nature_mod NATURE_NAUGHTY, 0
+	back_anim_nature_mod NATURE_BOLD,    1
+	back_anim_nature_mod NATURE_DOCILE,  1
+	back_anim_nature_mod NATURE_RELAXED, 1
+	back_anim_nature_mod NATURE_IMPISH,  0
+	back_anim_nature_mod NATURE_LAX,     1
+	back_anim_nature_mod NATURE_TIMID,   2
+	back_anim_nature_mod NATURE_HASTY,   0
+	back_anim_nature_mod NATURE_SERIOUS, 1
+	back_anim_nature_mod NATURE_JOLLY,   0
+	back_anim_nature_mod NATURE_NAIVE,   0
+	back_anim_nature_mod NATURE_MODEST,  2
+	back_anim_nature_mod NATURE_MILD,    2
+	back_anim_nature_mod NATURE_QUIET,   2
+	back_anim_nature_mod NATURE_BASHFUL, 2
+	back_anim_nature_mod NATURE_RASH,    1
+	back_anim_nature_mod NATURE_CALM,    1
+	back_anim_nature_mod NATURE_GENTLE,  2
+	back_anim_nature_mod NATURE_SASSY,   1
+	back_anim_nature_mod NATURE_CAREFUL, 2
+	back_anim_nature_mod NATURE_QUIRKY,  1
+	.if (. - gBackAnimNatureModTable) != NUM_NATURES
+	.error "Pokemon back animation nature modifier table has the wrong size"
+	.endif
+
+gMonAffineAnim_Normal: @ 0x085D37A8
+	sprite_affine_anim_frame SPRITE_AFFINE_SCALE_IDENTITY, SPRITE_AFFINE_SCALE_IDENTITY, 0, 0
+	sprite_affine_anim_end
+
+gMonAffineAnim_HorizontalFlip: @ 0x085D37B8
+	sprite_affine_anim_frame -SPRITE_AFFINE_SCALE_IDENTITY, SPRITE_AFFINE_SCALE_IDENTITY, 0, 0
+	sprite_affine_anim_end
+
+	.globl gMonAffineAnims
 	.globl gUnknown_85D37C8
+gMonAffineAnims:
 gUnknown_85D37C8: @ 0x085D37C8
-	.incbin "baserom.gba", 0x5d37c8, 0x8
+	sprite_affine_anim_sequence gMonAffineAnim_Normal
+	sprite_affine_anim_sequence gMonAffineAnim_HorizontalFlip
 	.globl gUnknown_85D37D0
 gUnknown_85D37D0: @ 0x085D37D0
 	.incbin "baserom.gba", 0x5d37d0, 0x1e

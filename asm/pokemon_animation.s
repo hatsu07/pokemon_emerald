@@ -284,7 +284,7 @@ _0817F4A0: .4byte 0x0817F345
 _0817F4A4: .4byte 0x03005B60
 _0817F4A8: .4byte 0x02023D12
 _0817F4AC: .4byte 0x02024190
-_0817F4B0: .4byte 0x085D378F
+_0817F4B0: .4byte gBackAnimNatureModTable
 _0817F4B4: .4byte gBackAnimSetToAnimIds
 	thumb_func_end LaunchAnimationTaskForBackSprite
 
@@ -368,7 +368,7 @@ _0817F53A:
 	bl StartSpriteAffineAnim
 	b _0817F55C
 	.align 2, 0
-_0817F54C: .4byte 0x085D37C8
+_0817F54C: .4byte gMonAffineAnims
 _0817F550: .4byte 0x03001274
 _0817F554:
 	adds r0, r4, #0
