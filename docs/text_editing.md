@@ -48,10 +48,10 @@ gText_Rom_46F9E8: @ 0x0846F9E8
 
 ```sh
 python3 tools/extract_all_text.py
-make -j4 compare
+cmake --build build --target compare --parallel
 ```
 
-抽出器は生成後に各セクションを preproc・assembler・objcopy で戻し、`baserom.gba` とバイト単位で照合します。`make compare` も初期抽出状態で成功することを確認済みです。
+抽出器は生成後に各セクションを preproc・assembler・objcopy で戻し、`baserom.gba` とバイト単位で照合します。CMake の `compare` ターゲットも初期抽出状態で成功することを確認済みです。
 
 `tools/extract_all_text.py` を再実行すると、生成済み `.inc` の編集内容は元 ROM 基準で上書きされます。変更を残したい場合は、再生成前にコミットまたは退避してください。
 
