@@ -239,8 +239,33 @@ gUnknown_81DABAC: @ 0x081DABAC
 gUnknown_81DAF30: @ 0x081DAF30
 	.4byte ScrCmd_nop
 	.globl gUnknown_81DAF34
+	.globl gSpecialVars
 gUnknown_81DAF34: @ 0x081DAF34
-	.incbin "baserom.gba", 0x1daf34, 0x58
+gSpecialVars:
+	@ Script variables 0x8000..0x8015.
+	@ EWRAM symbols are defined in sym_ewram_jp.txt.
+	.4byte gSpecialVar_0x8000
+	.4byte gSpecialVar_0x8001
+	.4byte gSpecialVar_0x8002
+	.4byte gSpecialVar_0x8003
+	.4byte gSpecialVar_0x8004
+	.4byte gSpecialVar_0x8005
+	.4byte gSpecialVar_0x8006
+	.4byte gSpecialVar_0x8007
+	.4byte gSpecialVar_0x8008
+	.4byte gSpecialVar_0x8009
+	.4byte gSpecialVar_0x800A
+	.4byte gSpecialVar_0x800B
+	.4byte gSpecialVar_Facing
+	.4byte gSpecialVar_Result
+	.4byte gSpecialVar_ItemId
+	.4byte gSpecialVar_LastTalked
+	.4byte gSpecialVar_ContestRank
+	.4byte gSpecialVar_ContestCategory
+	.4byte gSpecialVar_MonBoxId
+	.4byte gSpecialVar_MonBoxPos
+	.4byte gSpecialVar_Unused_0x8014
+	.4byte gTrainerBattleOpponent_A
 	.globl gUnknown_81DAF8C
 gUnknown_81DAF8C: @ 0x081DAF8C
 	.4byte HealPlayerParty
