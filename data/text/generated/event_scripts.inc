@@ -794,7 +794,20 @@ gUnknown_81DAF8C: @ 0x081DAF8C
 	.4byte sub_080B331C
 	.globl gUnknown_81DB7BC
 gUnknown_81DB7BC: @ 0x081DB7BC
-	.incbin "baserom.gba", 0x1db7bc, 0x2c
+	.globl gStdScripts
+gStdScripts:
+	.4byte Std_ObtainItem
+	.4byte Std_FindItem
+	.4byte Std_MsgboxNPC
+	.4byte Std_MsgboxSign
+	.4byte Std_MsgboxDefault
+	.4byte Std_MsgboxYesNo
+	.4byte Std_MsgboxAutoclose
+	.4byte Std_ObtainDecoration
+	.4byte Std_RegisteredInMatchCall
+	.4byte Std_MsgboxGetPoints
+	.4byte Std_MsgboxPokenav
+gStdScripts_End:
 	.globl gUnknown_81DB7E8
 gUnknown_81DB7E8: @ 0x081DB7E8
 	.incbin "baserom.gba", 0x1db7e8, 0x56b
@@ -37867,7 +37880,24 @@ gText_Rom_242307: @ 0x08242307
 	.if (. - gText_Rom_242307) < 0xa8
 	.space 0xa8 - (. - gText_Rom_242307)
 	.endif
-	.incbin "baserom.gba", 0x2423af, 0x3f
+	.globl Std_MsgboxNPC
+Std_MsgboxNPC: @ 0x082423AF
+	.incbin "baserom.gba", 0x2423af, 0xb
+	.globl Std_MsgboxSign
+Std_MsgboxSign: @ 0x082423BA
+	.incbin "baserom.gba", 0x2423ba, 0xa
+	.globl Std_MsgboxDefault
+Std_MsgboxDefault: @ 0x082423C4
+	.incbin "baserom.gba", 0x2423c4, 0x8
+	.globl Std_MsgboxYesNo
+Std_MsgboxYesNo: @ 0x082423CC
+	.incbin "baserom.gba", 0x2423cc, 0xa
+	.globl Std_MsgboxGetPoints
+Std_MsgboxGetPoints: @ 0x082423D6
+	.incbin "baserom.gba", 0x2423d6, 0xb
+	.globl Std_MsgboxPokenav
+Std_MsgboxPokenav: @ 0x082423E1
+	.incbin "baserom.gba", 0x2423e1, 0xd
 	.globl gUnknown_82423EE
 gUnknown_82423EE: @ 0x082423EE
 	.incbin "baserom.gba", 0x2423ee, 0xe
@@ -37885,7 +37915,10 @@ gUnknown_824246B: @ 0x0824246B
 	.incbin "baserom.gba", 0x24246b, 0x27
 	.globl gUnknown_8242492
 gUnknown_8242492: @ 0x08242492
-	.incbin "baserom.gba", 0x242492, 0x1e6
+	.incbin "baserom.gba", 0x242492, 0x9c
+	.globl Std_MsgboxAutoclose
+Std_MsgboxAutoclose: @ 0x0824252E
+	.incbin "baserom.gba", 0x24252e, 0x14a
 	.globl gUnknown_8242678
 gUnknown_8242678: @ 0x08242678
 	.incbin "baserom.gba", 0x242678, 0x279
@@ -37894,7 +37927,16 @@ gUnknown_82428F1: @ 0x082428F1
 	.incbin "baserom.gba", 0x2428f1, 0xb
 	.globl gUnknown_82428FC
 gUnknown_82428FC: @ 0x082428FC
-	.incbin "baserom.gba", 0x2428fc, 0x44d
+	.incbin "baserom.gba", 0x2428fc, 0x271
+	.globl Std_ObtainItem
+Std_ObtainItem: @ 0x08242B6D
+	.incbin "baserom.gba", 0x242b6d, 0xe2
+	.globl Std_ObtainDecoration
+Std_ObtainDecoration: @ 0x08242C4F
+	.incbin "baserom.gba", 0x242c4f, 0x46
+	.globl Std_FindItem
+Std_FindItem: @ 0x08242C95
+	.incbin "baserom.gba", 0x242c95, 0xb4
 	.globl gUnknown_8242D49
 gUnknown_8242D49: @ 0x08242D49
 	.incbin "baserom.gba", 0x242d49, 0xd5
@@ -38721,7 +38763,10 @@ gUnknown_8244245: @ 0x08244245
 	.incbin "baserom.gba", 0x244245, 0x504
 	.globl gUnknown_8244749
 gUnknown_8244749: @ 0x08244749
-	.incbin "baserom.gba", 0x244749, 0x5c7
+	.incbin "baserom.gba", 0x244749, 0x5aa
+	.globl Std_RegisteredInMatchCall
+Std_RegisteredInMatchCall: @ 0x08244CF3
+	.incbin "baserom.gba", 0x244cf3, 0x1d
 	.globl gUnknown_8244D10
 gUnknown_8244D10: @ 0x08244D10
 	.incbin "baserom.gba", 0x244d10, 0x13
