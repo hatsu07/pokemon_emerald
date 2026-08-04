@@ -1,0 +1,4000 @@
+	@ data/maps/SootopolisCity/scripts.inc:1522 SootopolisCity_Text_ExplainWaterfallGoToGym
+	.globl gText_Rom_1E38A0
+gText_Rom_1E38A0: @ 0x081E38A0
+	.string "その ひでんマシンは たきのぼり!\pレインバッジを もっていれば\nそのわざを おぼえさせた ポケモンが\lたきを のぼれるように なるのさ!\pそして…… レインバッジは\nどこで もらえるのか というと……\pもう おわかりだね\nそう! ルネの ジムリーダーに かつこと\pさあ じゅんびが できたら\nなかに はいって くれたまえ!$"
+	.if (. - gText_Rom_1E38A0) > 0xa3
+	.error "gText_Rom_1E38A0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E38A0) < 0xa3
+	.space 0xa3 - (. - gText_Rom_1E38A0)
+	.endif
+
+	@ data/maps/SootopolisCity/scripts.inc:1525 SootopolisCity_Text_DazzledByMentor
+	.globl gText_Rom_1E3943
+gText_Rom_1E3943: @ 0x081E3943
+	.string "ミクリ『わたしの ししょうの\nかれい かつ ゆうがな たたかいぶりに\lきっと きみは おどろく だろうよ!$"
+	.if (. - gText_Rom_1E3943) > 0x36
+	.error "gText_Rom_1E3943 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E3943) < 0x36
+	.space 0x36 - (. - gText_Rom_1E3943)
+	.endif
+	.incbin "baserom.gba", 0x1e3979, 0x34
+
+	@ data/maps/EverGrandeCity/scripts.inc:26 EverGrandeCity_Text_EnteringVictoryRoad
+	.globl gText_Rom_1E39AD
+gText_Rom_1E39AD: @ 0x081E39AD
+	.string "これより チャンピオン ロード$"
+	.if (. - gText_Rom_1E39AD) > 0x10
+	.error "gText_Rom_1E39AD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E39AD) < 0x10
+	.space 0x10 - (. - gText_Rom_1E39AD)
+	.endif
+
+	@ data/maps/EverGrandeCity/scripts.inc:29 EverGrandeCity_Text_EnteringPokemonLeague
+	.globl gText_Rom_1E39BD
+gText_Rom_1E39BD: @ 0x081E39BD
+	.string "これより ポケモン リーグ\nしょうめん ゲート$"
+	.if (. - gText_Rom_1E39BD) > 0x18
+	.error "gText_Rom_1E39BD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E39BD) < 0x18
+	.space 0x18 - (. - gText_Rom_1E39BD)
+	.endif
+
+	@ data/maps/EverGrandeCity/scripts.inc:32 EverGrandeCity_Text_CitySign
+	.globl gText_Rom_1E39D5
+gText_Rom_1E39D5: @ 0x081E39D5
+	.string "ここは サイユウ シティ\nはなと うみと ポケモンの らくえん$"
+	.if (. - gText_Rom_1E39D5) > 0x20
+	.error "gText_Rom_1E39D5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E39D5) < 0x20
+	.space 0x20 - (. - gText_Rom_1E39D5)
+	.endif
+	.incbin "baserom.gba", 0x1e39f5, 0x8f1
+
+	@ data/maps/LittlerootTown/scripts.inc:907 LittlerootTown_Text_OurNewHomeLetsGoInside
+	.globl gText_Rom_1E42E6
+gText_Rom_1E42E6: @ 0x081E42E6
+	.string "ママ『{PLAYER} おつかれさま!\pながいあいだ トラックに ゆられて\nたいへん だったでしょ?\pここが ミシロタウンよ!\pどう? これが わたしたちの\nあたらしい おうち!\pちょっと こふうな かんじで\nすみやすそうな ところ でしょ?\pこんどは {PLAYER}の おへやも あるのよ!\nさあ なかに はいりましょ!$"
+	.if (. - gText_Rom_1E42E6) > 0x97
+	.error "gText_Rom_1E42E6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E42E6) < 0x97
+	.space 0x97 - (. - gText_Rom_1E42E6)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:919 LittlerootTown_Text_WaitPlayer
+	.globl gText_Rom_1E437D
+gText_Rom_1E437D: @ 0x081E437D
+	.string "ママ『まって {PLAYER}!$"
+	.if (. - gText_Rom_1E437D) > 0xb
+	.error "gText_Rom_1E437D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E437D) < 0xb
+	.space 0xb - (. - gText_Rom_1E437D)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:922 LittlerootTown_Text_WearTheseRunningShoes
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E4388
+gText_Rom_1E4388: @ 0x081E4388
+	.string "ママ『{PLAYER}! {PLAYER}!\nオダマキはかせに あいさつ した?\pあら! かわいい ポケモン!\nオダマキはかせ に いただいたのね\pやっぱり パパの こども なのね……\nポケモンと いっしょに いるのが\lさまに なっているわよ!\pほらっ! ぼうけんに でるなら\nランニングシューズを はくと いいわ!\pいろんな ところ\nはしれるように なるわよ!$"
+	.if (. - gText_Rom_1E4388) != 0xaa
+	.error "gText_Rom_1E4388 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E442E
+	.set gText_Rom_1E442E, gText_Rom_1E4388 + 0xa6
+
+	@ data/maps/LittlerootTown/scripts.inc:935 LittlerootTown_Text_SwitchShoesWithRunningShoes
+	.globl gText_Rom_1E4432
+gText_Rom_1E4432: @ 0x081E4432
+	.string "{PLAYER}は ランニングシューズに\nはきかえた!$"
+	.if (. - gText_Rom_1E4432) > 0x16
+	.error "gText_Rom_1E4432 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4432) < 0x16
+	.space 0x16 - (. - gText_Rom_1E4432)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:939 LittlerootTown_Text_ExplainRunningShoes
+	.globl gText_Rom_1E4448
+gText_Rom_1E4448: @ 0x081E4448
+	.string "ママ『{PLAYER}!\nこれが せつめいしょ よ\p「ランニングシューズは\n Bボタンを おすことで いままでよりも\l はやく はしれるように なります!\p ランニングシューズを はいて\n おもいっきり そとを はしろう!」$"
+	.if (. - gText_Rom_1E4448) > 0x6b
+	.error "gText_Rom_1E4448 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4448) < 0x6b
+	.space 0x6b - (. - gText_Rom_1E4448)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:948 LittlerootTown_Text_ComeHomeIfAnythingHappens
+	.globl gText_Rom_1E44B3
+gText_Rom_1E44B3: @ 0x081E44B3
+	.string "…… …… ……\n…… …… ……\pあなたが じぶんの ポケモンを\nもつように なった だなんて……\lパパが しったら おおよろこび するわよ!\p……でも むりは しないでね\nなにか あれば かえって くればいいから\pじゃあ がんばってね!$"
+	.if (. - gText_Rom_1E44B3) > 0x79
+	.error "gText_Rom_1E44B3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E44B3) < 0x79
+	.space 0x79 - (. - gText_Rom_1E44B3)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:958 LittlerootTown_Text_CanUsePCToStoreItems
+	.globl gText_Rom_1E452C
+gText_Rom_1E452C: @ 0x081E452C
+	.string "パソコンを つかえば\nどうぐや ポケモンが ほぞん できるんだ!\pかがくの ちからって しびれるーっ!$"
+	.if (. - gText_Rom_1E452C) > 0x34
+	.error "gText_Rom_1E452C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E452C) < 0x34
+	.space 0x34 - (. - gText_Rom_1E452C)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:963 LittlerootTown_Text_BirchSpendsDaysInLab
+	.globl gText_Rom_1E4560
+gText_Rom_1E4560: @ 0x081E4560
+	.string "ずーっと けんきゅうしつに こもって\nしらべものを しているかと おもえば\lとつぜん のやまに とびだしていく……\pオダマキはかせって いったい\nいつ うちに かえっているんだろう?$"
+	.if (. - gText_Rom_1E4560) > 0x5c
+	.error "gText_Rom_1E4560 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4560) < 0x5c
+	.space 0x5c - (. - gText_Rom_1E4560)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:970 LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut
+	.globl gText_Rom_1E45BC
+gText_Rom_1E45BC: @ 0x081E45BC
+	.string "あの あの あのね!\pここから さきの どうろ\nくさむらに はいると\lやせいの ポケモンが でてくるの!$"
+	.if (. - gText_Rom_1E45BC) > 0x35
+	.error "gText_Rom_1E45BC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E45BC) < 0x35
+	.space 0x35 - (. - gText_Rom_1E45BC)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:976 LittlerootTown_Text_DangerousIfYouDontHavePokemon
+	.globl gText_Rom_1E45F1
+gText_Rom_1E45F1: @ 0x081E45F1
+	.string "じぶんの ポケモンを もってないと\nあぶないの!$"
+	.if (. - gText_Rom_1E45F1) > 0x19
+	.error "gText_Rom_1E45F1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E45F1) < 0x19
+	.space 0x19 - (. - gText_Rom_1E45F1)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:980 LittlerootTown_Text_CanYouGoSeeWhatsHappening
+	.globl gText_Rom_1E460A
+gText_Rom_1E460A: @ 0x081E460A
+	.string "ねえ ねえ!\pいま まちの そとから\nこわーい ポケモンの こえが きこえたよ!\pなにが おこってるのか みにいきたいけど\nわたし ポケモン もってないし……\p{STR_VAR_1}\nわたしの かわりに みてきて くれる?$"
+	.if (. - gText_Rom_1E460A) > 0x67
+	.error "gText_Rom_1E460A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E460A) < 0x67
+	.space 0x67 - (. - gText_Rom_1E460A)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:989 LittlerootTown_Text_YouSavedBirch
+	.globl gText_Rom_1E4671
+gText_Rom_1E4671: @ 0x081E4671
+	.string "{STR_VAR_1}の おかげで\nはかせ たすかった! よかったー$"
+	.if (. - gText_Rom_1E4671) > 0x1a
+	.error "gText_Rom_1E4671 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4671) < 0x1a
+	.space 0x1a - (. - gText_Rom_1E4671)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:993 LittlerootTown_Text_GoodLuckCatchingPokemon
+	.globl gText_Rom_1E468B
+gText_Rom_1E468B: @ 0x081E468B
+	.string "ポケモンを つかまえに いくの?\nがんばってね!$"
+	.if (. - gText_Rom_1E468B) > 0x19
+	.error "gText_Rom_1E468B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E468B) < 0x19
+	.space 0x19 - (. - gText_Rom_1E468B)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:997 LittlerootTown_Text_TownSign
+	.globl gText_Rom_1E46A4
+gText_Rom_1E46A4: @ 0x081E46A4
+	.string "ここは ミシロ タウン\nどんな いろにも そまらない まち$"
+	.if (. - gText_Rom_1E46A4) > 0x1e
+	.error "gText_Rom_1E46A4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E46A4) < 0x1e
+	.space 0x1e - (. - gText_Rom_1E46A4)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:1001 LittlerootTown_Text_ProfBirchsLab
+	.globl gText_Rom_1E46C2
+gText_Rom_1E46C2: @ 0x081E46C2
+	.string "「オダマキ ポケモン けんきゅうじょ」$"
+	.if (. - gText_Rom_1E46C2) > 0x14
+	.error "gText_Rom_1E46C2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E46C2) < 0x14
+	.space 0x14 - (. - gText_Rom_1E46C2)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:1004 LittlerootTown_Text_PlayersHouse
+	.globl gText_Rom_1E46D6
+gText_Rom_1E46D6: @ 0x081E46D6
+	.string "「{PLAYER}の いえ」$"
+	.if (. - gText_Rom_1E46D6) > 0x9
+	.error "gText_Rom_1E46D6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E46D6) < 0x9
+	.space 0x9 - (. - gText_Rom_1E46D6)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:1007 LittlerootTown_Text_ProfBirchsHouse
+	.globl gText_Rom_1E46DF
+gText_Rom_1E46DF: @ 0x081E46DF
+	.string "「オダマキ はかせの いえ」$"
+	.if (. - gText_Rom_1E46DF) > 0xf
+	.error "gText_Rom_1E46DF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E46DF) < 0xf
+	.space 0xf - (. - gText_Rom_1E46DF)
+	.endif
+
+	@ data/maps/LittlerootTown/scripts.inc:1010 LittlerootTown_Text_BirchSomethingToShowYouAtLab
+	.globl gText_Rom_1E46EE
+gText_Rom_1E46EE: @ 0x081E46EE
+	.string "オダマキ『いやー {PLAYER}{KUN}!\nそれにしても みごと だったね\pさいしょに きみを みたときから\nただもの ではないと おもったけど\lまさか これほど とはねえ\pそうそう!\nきみに あげた ポケモンずかん\lまだ もってるよね?\pちょっと はなしが あるから\nいっしょに けんきゅうじょまで おいで$"
+	.if (. - gText_Rom_1E46EE) > 0x94
+	.error "gText_Rom_1E46EE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E46EE) < 0x94
+	.space 0x94 - (. - gText_Rom_1E46EE)
+	.endif
+	.incbin "baserom.gba", 0x1e4782, 0x2ec
+
+	@ data/maps/OldaleTown/scripts.inc:342 OldaleTown_Text_SavingMyProgress
+	.globl gText_Rom_1E4A6E
+gText_Rom_1E4A6E: @ 0x081E4A6E
+	.string "ちょっと ひとやすみ したいから\nレポート かいてるの$"
+	.if (. - gText_Rom_1E4A6E) > 0x1c
+	.error "gText_Rom_1E4A6E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4A6E) < 0x1c
+	.space 0x1c - (. - gText_Rom_1E4A6E)
+	.endif
+
+	@ data/maps/OldaleTown/scripts.inc:346 OldaleTown_Text_IWorkAtPokemonMart
+	.globl gText_Rom_1E4A8A
+gText_Rom_1E4A8A: @ 0x081E4A8A
+	.string "おれ フレンドリィショップの てんいん!\pきみ! きみ!\nちょっと ついてきて!$"
+	.if (. - gText_Rom_1E4A8A) > 0x29
+	.error "gText_Rom_1E4A8A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4A8A) < 0x29
+	.space 0x29 - (. - gText_Rom_1E4A8A)
+	.endif
+
+	@ data/maps/OldaleTown/scripts.inc:351 OldaleTown_Text_ThisIsAPokemonMart
+	.globl gText_Rom_1E4AB3
+gText_Rom_1E4AB3: @ 0x081E4AB3
+	.string "ここが フレンドリィショップ!\nあおい やねが めじるし なのさ!\pポケモンを つかまえる ボールとか\nいろんな グッズを うってるよ!\pキミには サービスとして\nこれを あげよう!$"
+	.if (. - gText_Rom_1E4AB3) > 0x5c
+	.error "gText_Rom_1E4AB3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4AB3) < 0x5c
+	.space 0x5c - (. - gText_Rom_1E4AB3)
+	.endif
+
+	@ data/maps/OldaleTown/scripts.inc:359 OldaleTown_Text_PotionExplanation
+	.globl gText_Rom_1E4B0F
+gText_Rom_1E4B0F: @ 0x081E4B0F
+	.string "どんな ときでも つかえる\nキズぐすりは ばあいに よっては\lポケモンセンターより たよりに なるからね$"
+	.if (. - gText_Rom_1E4B0F) > 0x35
+	.error "gText_Rom_1E4B0F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4B0F) < 0x35
+	.space 0x35 - (. - gText_Rom_1E4B0F)
+	.endif
+
+	@ data/maps/OldaleTown/scripts.inc:364 OldaleTown_Text_WaitDontComeInHere
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E4B44
+gText_Rom_1E4B44: @ 0x081E4B44
+	.string "あーー!\nこっちに はいらないで くれよ!\pめずらしい ポケモンの あしあとを\nはっけん したんだ!\lスケッチが おわるまで まっててくれよ$"
+	.if (. - gText_Rom_1E4B44) != 0x47
+	.error "gText_Rom_1E4B44 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E4B5A
+	.set gText_Rom_1E4B5A, gText_Rom_1E4B44 + 0x16
+
+	@ data/maps/OldaleTown/scripts.inc:371 OldaleTown_Text_DiscoveredFootprints
+	.globl gText_Rom_1E4B8B
+gText_Rom_1E4B8B: @ 0x081E4B8B
+	.string "めずらしい ポケモンの あしあとを\nはっけん したんだ!\lスケッチが おわるまで まっててくれよ$"
+	.if (. - gText_Rom_1E4B8B) > 0x31
+	.error "gText_Rom_1E4B8B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4B8B) < 0x31
+	.space 0x31 - (. - gText_Rom_1E4B8B)
+	.endif
+
+	@ data/maps/OldaleTown/scripts.inc:376 OldaleTown_Text_FinishedSketchingFootprints
+	.globl gText_Rom_1E4BBC
+gText_Rom_1E4BBC: @ 0x081E4BBC
+	.string "かんせい させた めずらしい\nポケモンの あしあとの スケッチ\lよくみたら じぶんの あしあと だったよ……$"
+	.if (. - gText_Rom_1E4BBC) > 0x37
+	.error "gText_Rom_1E4BBC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4BBC) < 0x37
+	.space 0x37 - (. - gText_Rom_1E4BBC)
+	.endif
+
+	@ data/maps/OldaleTown/scripts.inc:381 OldaleTown_Text_MayLetsGoBack
+	.globl gText_Rom_1E4BF3
+gText_Rom_1E4BF3: @ 0x081E4BF3
+	.string "ハルカ『{PLAYER}{KUN}!\nこっち こっち!\lはやく かえろうよ!$"
+	.if (. - gText_Rom_1E4BF3) > 0x1e
+	.error "gText_Rom_1E4BF3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4BF3) < 0x1e
+	.space 0x1e - (. - gText_Rom_1E4BF3)
+	.endif
+
+	@ data/maps/OldaleTown/scripts.inc:386 OldaleTown_Text_BrendanLetsGoBack
+	.globl gText_Rom_1E4C11
+gText_Rom_1E4C11: @ 0x081E4C11
+	.string "ユウキ『オレ さきに\nけんきゅうじょに もどるから\l{PLAYER}も はやく こいよな$"
+	.if (. - gText_Rom_1E4C11) > 0x27
+	.error "gText_Rom_1E4C11 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4C11) < 0x27
+	.space 0x27 - (. - gText_Rom_1E4C11)
+	.endif
+
+	@ data/maps/OldaleTown/scripts.inc:391 OldaleTown_Text_TownSign
+	.globl gText_Rom_1E4C38
+gText_Rom_1E4C38: @ 0x081E4C38
+	.string "ここは コトキ タウン\nなにかが かすかに はじまる ところ$"
+	.if (. - gText_Rom_1E4C38) > 0x1f
+	.error "gText_Rom_1E4C38 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4C38) < 0x1f
+	.space 0x1f - (. - gText_Rom_1E4C38)
+	.endif
+	.incbin "baserom.gba", 0x1e4c57, 0x4a1
+
+	@ data/maps/DewfordTown/scripts.inc:630 DewfordTown_Text_TinyIslandCommunity
+	.globl gText_Rom_1E50F8
+gText_Rom_1E50F8: @ 0x081E50F8
+	.string "ムロタウンって ちいさな しま だから\nなにかが はやりだすと\lみんな すぐに まねを するのよね$"
+	.if (. - gText_Rom_1E50F8) > 0x32
+	.error "gText_Rom_1E50F8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E50F8) < 0x32
+	.space 0x32 - (. - gText_Rom_1E50F8)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:633 DewfordTown_Text_TownSign
+	.globl gText_Rom_1E512A
+gText_Rom_1E512A: @ 0x081E512A
+	.string "ここは ムロ タウン\nあおい うみに うかぶ ちいさな しま$"
+	.if (. - gText_Rom_1E512A) > 0x1f
+	.error "gText_Rom_1E512A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E512A) < 0x1f
+	.space 0x1f - (. - gText_Rom_1E512A)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:636 DewfordTown_Text_GymSign
+	.globl gText_Rom_1E5149
+gText_Rom_1E5149: @ 0x081E5149
+	.string "ムロ タウン ポケモンジム\nリーダー トウキ\lかくとう ビッグウェーブ!$"
+	.if (. - gText_Rom_1E5149) > 0x25
+	.error "gText_Rom_1E5149 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5149) < 0x25
+	.space 0x25 - (. - gText_Rom_1E5149)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:639 DewfordTown_Text_HallSign
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E516E
+gText_Rom_1E516E: @ 0x081E516E
+	.string "「ムロの しゅうかいじょ」\nみんなの じょうほう こうかんの ばしょ$"
+	.if (. - gText_Rom_1E516E) != 0x23
+	.error "gText_Rom_1E516E must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E518D
+	.set gText_Rom_1E518D, gText_Rom_1E516E + 0x1f
+
+	@ data/maps/DewfordTown/scripts.inc:642 Route104_Text_LandedInDewfordDeliverLetter
+	.globl gText_Rom_1E5191
+gText_Rom_1E5191: @ 0x081E5191
+	.string "ハギ『ほい! ムロに とうちゃく!\pたしか ダイゴとやらに\nてがみを とどけるんだったな!$"
+	.if (. - gText_Rom_1E5191) > 0x2e
+	.error "gText_Rom_1E5191 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5191) < 0x2e
+	.space 0x2e - (. - gText_Rom_1E5191)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:645 DewfordTown_Text_SetSailBackToPetalburg
+	.globl gText_Rom_1E51BF
+gText_Rom_1E51BF: @ 0x081E51BF
+	.string "ハギ『てがみは とどけたのかい?\pそれとも トウカに もどるのかね?$"
+	.if (. - gText_Rom_1E51BF) > 0x23
+	.error "gText_Rom_1E51BF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E51BF) < 0x23
+	.space 0x23 - (. - gText_Rom_1E51BF)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:648 DewfordTown_Text_PetalburgWereSettingSail2
+	.globl gText_Rom_1E51E2
+gText_Rom_1E51E2: @ 0x081E51E2
+	.string "ハギ『では トウカに もどると しよう!\pよっしゃ! いくぞ ピーコちゃん!$"
+	.if (. - gText_Rom_1E51E2) > 0x27
+	.error "gText_Rom_1E51E2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E51E2) < 0x27
+	.space 0x27 - (. - gText_Rom_1E51E2)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:651 DewfordTown_Text_GoDeliverIllBeWaiting
+	.globl gText_Rom_1E5209
+gText_Rom_1E5209: @ 0x081E5209
+	.string "ハギ『では てがみを とどけておいで\nわしは ここで まっておるから$"
+	.if (. - gText_Rom_1E5209) > 0x23
+	.error "gText_Rom_1E5209 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5209) < 0x23
+	.space 0x23 - (. - gText_Rom_1E5209)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:654 DewfordTown_Text_BrineyLandedInDewford
+	.globl gText_Rom_1E522C
+gText_Rom_1E522C: @ 0x081E522C
+	.string "ハギ『ほい! ムロタウンに とうちゃく!\pふねに のりたくなったら\nまた わしに こえを かけておくれ!$"
+	.if (. - gText_Rom_1E522C) > 0x35
+	.error "gText_Rom_1E522C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E522C) < 0x35
+	.space 0x35 - (. - gText_Rom_1E522C)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:657 DewfordTown_Text_WhereAreWeBound (+2 aliases)
+	.globl gText_Rom_1E5261
+gText_Rom_1E5261: @ 0x081E5261
+	.string "ハギ『やあ! きみのため なら\nいつでも ふねを だそう!\pきみが いきたいのは どこ かな?$"
+	.if (. - gText_Rom_1E5261) > 0x30
+	.error "gText_Rom_1E5261 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5261) < 0x30
+	.space 0x30 - (. - gText_Rom_1E5261)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:660 DewfordTown_Text_PetalburgWereSettingSail
+	.globl gText_Rom_1E5291
+gText_Rom_1E5291: @ 0x081E5291
+	.string "ハギ『トウカシティ か\pよっしゃ! いくぞ ピーコちゃん!$"
+	.if (. - gText_Rom_1E5291) > 0x1e
+	.error "gText_Rom_1E5291 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5291) < 0x1e
+	.space 0x1e - (. - gText_Rom_1E5291)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:663 DewfordTown_Text_SlateportWereSettingSail
+	.globl gText_Rom_1E52AF
+gText_Rom_1E52AF: @ 0x081E52AF
+	.string "ハギ『カイナシティ か\pよっしゃ! いくぞ ピーコちゃん!$"
+	.if (. - gText_Rom_1E52AF) > 0x1e
+	.error "gText_Rom_1E52AF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E52AF) < 0x1e
+	.space 0x1e - (. - gText_Rom_1E52AF)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:666 DewfordTown_Text_JustTellMeWhenYouNeedToSetSail (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E52CD
+gText_Rom_1E52CD: @ 0x081E52CD
+	.string "ハギ『ふねに のる ひつようが あるときは\nいつでも こえを かけておくれ$"
+	.if (. - gText_Rom_1E52CD) != 0x26
+	.error "gText_Rom_1E52CD must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E52EF
+	.set gText_Rom_1E52EF, gText_Rom_1E52CD + 0x22
+
+	@ data/maps/DewfordTown/scripts.inc:669 DewfordTown_Text_GettingItchToFish
+	.globl gText_Rom_1E52F3
+gText_Rom_1E52F3: @ 0x081E52F3
+	.string "このへんは つりの めいしょ なんだ\nきみも つりが したくなった?$"
+	.if (. - gText_Rom_1E52F3) > 0x23
+	.error "gText_Rom_1E52F3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E52F3) < 0x23
+	.space 0x23 - (. - gText_Rom_1E52F3)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:672 DewfordTown_Text_GiveYouOneOfMyRods
+	.globl gText_Rom_1E5316
+gText_Rom_1E5316: @ 0x081E5316
+	.string "うんうん うれしいな\nわたしの つりざお わけてあげよう!$"
+	.if (. - gText_Rom_1E5316) > 0x1e
+	.error "gText_Rom_1E5316 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5316) < 0x1e
+	.space 0x1e - (. - gText_Rom_1E5316)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:675 DewfordTown_Text_ThrowInFishingAdvice
+	.globl gText_Rom_1E5334
+gText_Rom_1E5334: @ 0x081E5334
+	.string "よーしっ だいサービス!\nつりの コツも せつめい しておくよ!\pまずは すいめんに むかって\nつりざおを つかう!\pそして きもちを しゅうちゅう させ……\nひいてる ひいてる!! となったら\lすばやく つりざおを ひくんだ!\pすぐに ひきあげられる ときも あるけど\nおおものは なんども タイミングを\lあわせる ひつようが あるんだよ!$"
+	.if (. - gText_Rom_1E5334) > 0xac
+	.error "gText_Rom_1E5334 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5334) < 0xac
+	.space 0xac - (. - gText_Rom_1E5334)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:678 DewfordTown_Text_ThatsTooBadThen
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E53E0
+gText_Rom_1E53E0: @ 0x081E53E0
+	.string "あらら……\nそれは ざんねん$"
+	.if (. - gText_Rom_1E53E0) != 0xf
+	.error "gText_Rom_1E53E0 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E53EA
+	.set gText_Rom_1E53EA, gText_Rom_1E53E0 + 0xa
+
+	@ data/maps/DewfordTown/scripts.inc:681 DewfordTown_Text_HowsYourFishing
+	.globl gText_Rom_1E53EF
+gText_Rom_1E53EF: @ 0x081E53EF
+	.string "よっ!\nつりの ちょうしは どう?$"
+	.if (. - gText_Rom_1E53EF) > 0x12
+	.error "gText_Rom_1E53EF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E53EF) < 0x12
+	.space 0x12 - (. - gText_Rom_1E53EF)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:684 DewfordTown_Text_GreatHaulInSomeBigOnes
+	.globl gText_Rom_1E5401
+gText_Rom_1E5401: @ 0x081E5401
+	.string "そうか! そりゃ すごい!\nおおものを つりあげて くれよ!$"
+	.if (. - gText_Rom_1E5401) > 0x1f
+	.error "gText_Rom_1E5401 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5401) < 0x1f
+	.space 0x1f - (. - gText_Rom_1E5401)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:687 DewfordTown_Text_FishingAdvice
+	.globl gText_Rom_1E5420
+gText_Rom_1E5420: @ 0x081E5420
+	.string "なんだよ ガッカリ しないでよ!\nつりの コツを おしえて あげるから!\pまずは すいめんに むかって\nつりざおを つかう!\pそして きもちを しゅうちゅう させ……\nひいてる ひいてる!! となったら\lすばやく つりざおを ひくんだ!\pすぐに ひきあげられる ときも あるけど\nおおものは なんども タイミングを\lあわせる ひつようが あるんだよ!$"
+	.if (. - gText_Rom_1E5420) > 0xb0
+	.error "gText_Rom_1E5420 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5420) < 0xb0
+	.space 0xb0 - (. - gText_Rom_1E5420)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:690 DewfordTown_Text_XIsTheBiggestHappeningThingRight
+	.globl gText_Rom_1E54D0
+gText_Rom_1E54D0: @ 0x081E54D0
+	.string "ぼく はやってる ものが すきで\nいつも チェック してるんだ\pねぇ 『{STR_VAR_1}』って\nしってるかい?\pもちろん しってるよね!\pだって いま\n『{STR_VAR_1}』が\lだいりゅうこう してるからね!\pきみの まわりでも\n『{STR_VAR_1}』が\lはやってる だろ?$"
+	.if (. - gText_Rom_1E54D0) > 0x76
+	.error "gText_Rom_1E54D0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E54D0) < 0x76
+	.space 0x76 - (. - gText_Rom_1E54D0)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:693 DewfordTown_Text_TellMeWhatsNewAndIn
+	.globl gText_Rom_1E5546
+gText_Rom_1E5546: @ 0x081E5546
+	.string "え?\nはやって ないの!?\pじゃあ いま なにが はやってるか\nきかせてよ!$"
+	.if (. - gText_Rom_1E5546) > 0x27
+	.error "gText_Rom_1E5546 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5546) < 0x27
+	.space 0x27 - (. - gText_Rom_1E5546)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:696 DewfordTown_Text_OfCourseIKnowAboutThat
+	.globl gText_Rom_1E556D
+gText_Rom_1E556D: @ 0x081E556D
+	.string "え? 『{STR_VAR_2}』?\p……\p…あ! あぁ!\nしってる しってるよ!\pもっ もちろん しってるさ!\n『{STR_VAR_2}』 だろ?\pいいよね!\n『{STR_VAR_2}』 って!\pいま すごく はやってる よね\nぼくが しらないはず ないじゃ ないか!\p『{STR_VAR_1}』 なんて\nもう じだいおくれ\pいまは 『{STR_VAR_2}』の\nじだい だね!$"
+	.if (. - gText_Rom_1E556D) > 0x91
+	.error "gText_Rom_1E556D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E556D) < 0x91
+	.space 0x91 - (. - gText_Rom_1E556D)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:699 DewfordTown_Text_XHuhIThinkYIsCool
+	.globl gText_Rom_1E55FE
+gText_Rom_1E55FE: @ 0x081E55FE
+	.string "ふーん\n『{STR_VAR_2}』 か…\pでも ぼくは\n『{STR_VAR_1}』 のほうが\lいいと おもうけどね$"
+	.if (. - gText_Rom_1E55FE) > 0x28
+	.error "gText_Rom_1E55FE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E55FE) < 0x28
+	.space 0x28 - (. - gText_Rom_1E55FE)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:702 DewfordTown_Text_HearOfAnyTrendsComeShareWithMe
+	.globl gText_Rom_1E5626
+gText_Rom_1E5626: @ 0x081E5626
+	.string "じゃあ あたらしい りゅうこうが あったら\nまた きかせて くれよ!$"
+	.if (. - gText_Rom_1E5626) > 0x23
+	.error "gText_Rom_1E5626 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5626) < 0x23
+	.space 0x23 - (. - gText_Rom_1E5626)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:705 DewfordTown_Text_YeahDefinitionOfInRightNow
+	.globl gText_Rom_1E5649
+gText_Rom_1E5649: @ 0x081E5649
+	.string "そうだろ!\pやっぱり いまは\n『{STR_VAR_1}』 だよね!$"
+	.if (. - gText_Rom_1E5649) > 0x19
+	.error "gText_Rom_1E5649 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5649) < 0x19
+	.space 0x19 - (. - gText_Rom_1E5649)
+	.endif
+	.incbin "baserom.gba", 0x1e5662, 0x2ed
+
+	@ data/maps/LavaridgeTown/scripts.inc:276 LavaridgeTown_Text_MayNiceBadgesTakeThis
+	.globl gText_Rom_1E594F
+gText_Rom_1E594F: @ 0x081E594F
+	.string "ハルカ『{PLAYER}{KUN}! ひさしぶり!\pあら? あたしが おんせんに\nはいったり してる あいだに\lフエンの ジムバッジ てに いれたんだ!\pかなり ポケモン あつめてる っていうか\nそだてて いるんだね!\pじゃあ これを あげても\nだいじょうぶ だよね$"
+	.if (. - gText_Rom_1E594F) > 0x7d
+	.error "gText_Rom_1E594F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E594F) < 0x7d
+	.space 0x7d - (. - gText_Rom_1E594F)
+	.endif
+
+	@ field-script:0x1E575D FieldScriptText_1E59CC
+	.globl gText_Rom_1E59CC
+gText_Rom_1E59CC: @ 0x081E59CC
+	.string "ハルカ『その　ゴーゴーゴーグルが　あると\n111ばん　どうろの　さばくにも\lはいれるように　なるんだよ！\pそれにしても　{0xFD}{0x01}{0xFD}{0x05}\nポケモンジムに　ちょうせん　だなんて……\pあたしに　まけたくない　からって\nがんばって　いるのね！\pじゃあ　あたし　トウカで　{0xFD}{0x01}{0xFD}{0x05}の\nおとうさんに　ちょうせん　しようかな？\p{0xFD}{0x01}{0xFD}{0x05}　じゃあ　またね！$"
+	.if (. - gText_Rom_1E59CC) > 0xa8
+	.error "gText_Rom_1E59CC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E59CC) < 0xa8
+	.space 0xa8 - (. - gText_Rom_1E59CC)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:298 LavaridgeTown_Text_BrendanNiceBadgesTakeThis
+	.globl gText_Rom_1E5A74
+gText_Rom_1E5A74: @ 0x081E5A74
+	.string "ユウキ『{PLAYER} ひさしぶり だな\nちょうしは どう?\pふうん……\nバッジは けっこう あつめてるんだな\pじゃ\nこいつを やろうかな?$"
+	.if (. - gText_Rom_1E5A74) > 0x42
+	.error "gText_Rom_1E5A74 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5A74) < 0x42
+	.space 0x42 - (. - gText_Rom_1E5A74)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:306 LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad
+	.globl gText_Rom_1E5AB6
+gText_Rom_1E5AB6: @ 0x081E5AB6
+	.string "ユウキ『それを もっていれば\n111ばん どうろの さばくに はいれるよ\pさばくにしか いない\nポケモンも いるはず だから\lよかったら いけば……?\pオレは……\nトウカの ジムリーダー センリさんに\lちょうせん してみようかな……\p{PLAYER}の とうさん\n{PLAYER}と ちがって つよそうだからな\pじゃな!$"
+	.if (. - gText_Rom_1E5AB6) > 0x95
+	.error "gText_Rom_1E5AB6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5AB6) < 0x95
+	.space 0x95 - (. - gText_Rom_1E5AB6)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:320 LavaridgeTown_Text_HaveEggWillYouTakeIt
+	.globl gText_Rom_1E5B4B
+gText_Rom_1E5B4B: @ 0x081E5B4B
+	.string "タマゴを かえそうと おもって\nすなぶろに いれて あたためていたが\lそれだけ じゃあ だめらしいの……\pなんでも げんきな ポケモンと いっしょに\nつれてあるいた ほうが いいそうな……\pおまえさん トレーナー じゃろ?\nしかも げんきな ポケモンを つれておる\pどうかね?\nタマゴを かえして みるかね?$"
+	.if (. - gText_Rom_1E5B4B) > 0x9b
+	.error "gText_Rom_1E5B4B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5B4B) < 0x9b
+	.space 0x9b - (. - gText_Rom_1E5B4B)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:333 LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg
+	.globl gText_Rom_1E5BE6
+gText_Rom_1E5BE6: @ 0x081E5BE6
+	.string "タマゴと いっしょに\nたーっぷり あるいて おくれ!$"
+	.if (. - gText_Rom_1E5BE6) > 0x1b
+	.error "gText_Rom_1E5BE6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5BE6) < 0x1b
+	.space 0x1b - (. - gText_Rom_1E5BE6)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:337 LavaridgeTown_Text_ReceivedTheEgg
+	.globl gText_Rom_1E5C01
+gText_Rom_1E5C01: @ 0x081E5C01
+	.string "{PLAYER}は\nタマゴを もらった!$"
+	.if (. - gText_Rom_1E5C01) > 0xf
+	.error "gText_Rom_1E5C01 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5C01) < 0xf
+	.space 0xf - (. - gText_Rom_1E5C01)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:340 LavaridgeTown_Text_NoRoomForThisEgg
+	.globl gText_Rom_1E5C10
+gText_Rom_1E5C10: @ 0x081E5C10
+	.string "あれ? ポケモン いっぱいで\nタマゴを つれて あるけないよ……$"
+	.if (. - gText_Rom_1E5C10) > 0x21
+	.error "gText_Rom_1E5C10 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5C10) < 0x21
+	.space 0x21 - (. - gText_Rom_1E5C10)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:344 LavaridgeTown_Text_AsYouWishThen
+	.globl gText_Rom_1E5C31
+gText_Rom_1E5C31: @ 0x081E5C31
+	.string "そうかね……\pまあ タマゴを かえしたく なったら\nまた はなしかけて おくれよ$"
+	.if (. - gText_Rom_1E5C31) > 0x29
+	.error "gText_Rom_1E5C31 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5C31) < 0x29
+	.space 0x29 - (. - gText_Rom_1E5C31)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:349 LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare
+	.globl gText_Rom_1E5C5A
+gText_Rom_1E5C5A: @ 0x081E5C5A
+	.string "ポケモンの タマゴは\nときどき そだてやさんで みつかる……\pそんな うわさを きいたよ$"
+	.if (. - gText_Rom_1E5C5A) > 0x2d
+	.error "gText_Rom_1E5C5A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5C5A) < 0x2d
+	.space 0x2d - (. - gText_Rom_1E5C5A)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:354 LavaridgeTown_Text_HotSpringsNeverRunDry
+	.globl gText_Rom_1E5C87
+gText_Rom_1E5C87: @ 0x081E5C87
+	.string "くめども くめども おゆが でる\nポットでも ないのに おゆが でる\p……ふしぎ じゃろ?\pかざんが ちかくに あるところ では\nちかすいが ようがんの ねつで\lあたためられて いるのじゃよ!$"
+	.if (. - gText_Rom_1E5C87) > 0x61
+	.error "gText_Rom_1E5C87 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5C87) < 0x61
+	.space 0x61 - (. - gText_Rom_1E5C87)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:363 LavaridgeTown_Text_PokemonNippedBackside
+	.globl gText_Rom_1E5CE8
+gText_Rom_1E5CE8: @ 0x081E5CE8
+	.string "こうして すなに うまっていると\nはあぁ……\pあたたかくって イイキモチ……\p……ん? イテテッ!\pしりを ポケモンに かまれた!$"
+	.if (. - gText_Rom_1E5CE8) > 0x42
+	.error "gText_Rom_1E5CE8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5CE8) < 0x42
+	.space 0x42 - (. - gText_Rom_1E5CE8)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:370 LavaridgeTown_Text_OhYouLikeHotSprings
+	.globl gText_Rom_1E5D2A
+gText_Rom_1E5D2A: @ 0x081E5D2A
+	.string "おや あんた\nおんせんが すき なのかい?\pまだ わかいのに めずらしいねえ……$"
+	.if (. - gText_Rom_1E5D2A) > 0x29
+	.error "gText_Rom_1E5D2A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5D2A) < 0x29
+	.space 0x29 - (. - gText_Rom_1E5D2A)
+	.endif
+
+	@ field-script:0x1E58B1 FieldScriptText_1E5D53
+	.globl gText_Rom_1E5D53
+gText_Rom_1E5D53: @ 0x081E5D53
+	.string "あたし　アスナさん　みたいに\nすてきで　つよい　ジムリーダーに　なるため\lまいにち　おんせんに　はいってるの！$"
+	.if (. - gText_Rom_1E5D53) > 0x38
+	.error "gText_Rom_1E5D53 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5D53) < 0x38
+	.space 0x38 - (. - gText_Rom_1E5D53)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:380 LavaridgeTown_Text_IfPokemonInHotSprings
+	.globl gText_Rom_1E5D8B
+gText_Rom_1E5D8B: @ 0x081E5D8B
+	.string "おんせんに ポケモン いれると\nでんきぶろや あわぶろ はたまた\lようがんぶろに なって すごそうだわ$"
+	.if (. - gText_Rom_1E5D8B) > 0x34
+	.error "gText_Rom_1E5D8B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5D8B) < 0x34
+	.space 0x34 - (. - gText_Rom_1E5D8B)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:386 LavaridgeTown_Text_HotSpringsClaims
+	.globl gText_Rom_1E5DBF
+gText_Rom_1E5DBF: @ 0x081E5DBF
+	.string "この おんせんは……\pしんけいつう きんにくつう それから\nれんあいのなやみ おかねもうけ などに\lこうかてき なんだとさ……$"
+	.if (. - gText_Rom_1E5DBF) > 0x40
+	.error "gText_Rom_1E5DBF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5DBF) < 0x40
+	.space 0x40 - (. - gText_Rom_1E5DBF)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:393 LavaridgeTown_Text_TownSign
+	.globl gText_Rom_1E5DFF
+gText_Rom_1E5DFF: @ 0x081E5DFF
+	.string "ここは フエン タウン\nポケセン おんせん よいところ$"
+	.if (. - gText_Rom_1E5DFF) > 0x1c
+	.error "gText_Rom_1E5DFF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5DFF) < 0x1c
+	.space 0x1c - (. - gText_Rom_1E5DFF)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:398 LavaridgeTown_Text_GymSign
+	.globl gText_Rom_1E5E1B
+gText_Rom_1E5E1B: @ 0x081E5E1B
+	.string "フエン タウン ポケモンジム\nリーダー アスナ\lやけど しそうな じょうねつの ひと$"
+	.if (. - gText_Rom_1E5E1B) > 0x2b
+	.error "gText_Rom_1E5E1B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5E1B) < 0x2b
+	.space 0x2b - (. - gText_Rom_1E5E1B)
+	.endif
+
+	@ data/maps/LavaridgeTown/scripts.inc:403 LavaridgeTown_Text_HerbShopSign
+	.globl gText_Rom_1E5E46
+gText_Rom_1E5E46: @ 0x081E5E46
+	.string "「ポケモン かんぽうやく」\nりょうやく くちに にがし!$"
+	.if (. - gText_Rom_1E5E46) > 0x1d
+	.error "gText_Rom_1E5E46 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5E46) < 0x1d
+	.space 0x1d - (. - gText_Rom_1E5E46)
+	.endif
+	.incbin "baserom.gba", 0x1e5e63, 0x71
+
+	@ data/maps/FallarborTown/scripts.inc:54 FallarborTown_Text_ShadyCharactersCozmosHome
+	.globl gText_Rom_1E5ED4
+gText_Rom_1E5ED4: @ 0x081E5ED4
+	.string "なんだ なんだ!?\pソライシはかせの いえに\nあやしげな じんぶつが\lではいり しておった ようだが……$"
+	.if (. - gText_Rom_1E5ED4) > 0x35
+	.error "gText_Rom_1E5ED4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5ED4) < 0x35
+	.space 0x35 - (. - gText_Rom_1E5ED4)
+	.endif
+
+	@ data/maps/FallarborTown/scripts.inc:57 FallarborTown_Text_RegionKnownForMeteors
+	.globl gText_Rom_1E5F09
+gText_Rom_1E5F09: @ 0x081E5F09
+	.string "ここいら いったいは\nむかしから いんせきが おおくてな\pりゅうせいのたきも いんせきが おちて\nできたとか そう いわれておる$"
+	.if (. - gText_Rom_1E5F09) > 0x41
+	.error "gText_Rom_1E5F09 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5F09) < 0x41
+	.space 0x41 - (. - gText_Rom_1E5F09)
+	.endif
+
+	@ data/maps/FallarborTown/scripts.inc:60 FallarborTown_Text_MyPreciousAzurill
+	.globl gText_Rom_1E5F4A
+gText_Rom_1E5F4A: @ 0x081E5F4A
+	.string "ほら! みてちょうだい!\nわたしの たいせつな ルリリ!\pツヤツヤの ナデナデの フカフカよ!$"
+	.if (. - gText_Rom_1E5F4A) > 0x30
+	.error "gText_Rom_1E5F4A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5F4A) < 0x30
+	.space 0x30 - (. - gText_Rom_1E5F4A)
+	.endif
+
+	@ data/maps/FallarborTown/scripts.inc:63 FallarborTown_Text_Azurill
+	.globl gText_Rom_1E5F7A
+gText_Rom_1E5F7A: @ 0x081E5F7A
+	.string "ルリリ『るーりーるー$"
+	.if (. - gText_Rom_1E5F7A) > 0xb
+	.error "gText_Rom_1E5F7A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5F7A) < 0xb
+	.space 0xb - (. - gText_Rom_1E5F7A)
+	.endif
+
+	@ data/maps/FallarborTown/scripts.inc:66 FallarborTown_Text_HaveYouChallengedFlannery
+	.globl gText_Rom_1E5F85
+gText_Rom_1E5F85: @ 0x081E5F85
+	.string "フエンタウンの ジムリーダー\nアスナとは たたかったかね?\pあのこの おじいさんは すごかったよ\nなんでも ポケモンリーグの\lしてんのう だった らしいからね\pきっと アスナも これから\nすばらしい トレーナーに なるだろうね$"
+	.if (. - gText_Rom_1E5F85) > 0x72
+	.error "gText_Rom_1E5F85 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5F85) < 0x72
+	.space 0x72 - (. - gText_Rom_1E5F85)
+	.endif
+
+	@ data/maps/FallarborTown/scripts.inc:69 FallarborTown_Text_BattleTentSign
+	.globl gText_Rom_1E5FF7
+gText_Rom_1E5FF7: @ 0x081E5FF7
+	.string "バトルテント ハジツゲタウン かいじょう\nつどえ! さいきょう チーム$"
+	.if (. - gText_Rom_1E5FF7) > 0x24
+	.error "gText_Rom_1E5FF7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5FF7) < 0x24
+	.space 0x24 - (. - gText_Rom_1E5FF7)
+	.endif
+
+	@ data/maps/FallarborTown/scripts.inc:72 FallarborTown_Text_TownSign
+	.globl gText_Rom_1E601B
+gText_Rom_1E601B: @ 0x081E601B
+	.string "ここは ハジツゲ タウン\nちいさな はたけが ある のうそん$"
+	.if (. - gText_Rom_1E601B) > 0x1f
+	.error "gText_Rom_1E601B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E601B) < 0x1f
+	.space 0x1f - (. - gText_Rom_1E601B)
+	.endif
+
+	@ data/maps/FallarborTown/scripts.inc:75 FallarborTown_Text_MoveTutorSign
+	.globl gText_Rom_1E603A
+gText_Rom_1E603A: @ 0x081E603A
+	.string "「わざおしえマニアの いえ」\nポケモンの わざ おしえます!$"
+	.if (. - gText_Rom_1E603A) > 0x1f
+	.error "gText_Rom_1E603A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E603A) < 0x1f
+	.space 0x1f - (. - gText_Rom_1E603A)
+	.endif
+	.incbin "baserom.gba", 0x1e6059, 0x97
+
+	@ data/maps/VerdanturfTown/scripts.inc:64 VerdanturfTown_Text_ManTryingToDigTunnel
+	.globl gText_Rom_1E60F0
+gText_Rom_1E60F0: @ 0x081E60F0
+	.string "わたしの パパが いってたの\pこの トンネルって おーきな おとに\nはんのうして さわぎだす おくびょうな\lポケモンが いっぱい なんだって!\pだから かいはつ こうじ やめたんだけど\nおとこの ひとが ひとりで\lトンネルを ほろうと してるんだって!$"
+	.if (. - gText_Rom_1E60F0) > 0x7f
+	.error "gText_Rom_1E60F0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E60F0) < 0x7f
+	.space 0x7f - (. - gText_Rom_1E60F0)
+	.endif
+
+	@ data/maps/VerdanturfTown/scripts.inc:67 VerdanturfTown_Text_ManDugTunnelForLove
+	.globl gText_Rom_1E616F
+gText_Rom_1E616F: @ 0x081E616F
+	.string "あいする ひとの ために\nどうくつを ほっていた ひとが いるの!\pなんだか すごーい!$"
+	.if (. - gText_Rom_1E616F) > 0x2d
+	.error "gText_Rom_1E616F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E616F) < 0x2d
+	.space 0x2d - (. - gText_Rom_1E616F)
+	.endif
+
+	@ data/maps/VerdanturfTown/scripts.inc:70 VerdanturfTown_Text_AirCleanHere
+	.globl gText_Rom_1E619C
+gText_Rom_1E619C: @ 0x081E619C
+	.string "かざむきの かんけいで このまち には\nかざんばいが とんでくることは ない!\pくうきの おいしい このまちで くらせば\nからだが じょうぶでない ひとでも\lきっと げんきに なれる はずさ!$"
+	.if (. - gText_Rom_1E619C) > 0x61
+	.error "gText_Rom_1E619C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E619C) < 0x61
+	.space 0x61 - (. - gText_Rom_1E619C)
+	.endif
+
+	@ data/maps/VerdanturfTown/scripts.inc:73 VerdanturfTown_Text_MakeBattleTentDebut
+	.globl gText_Rom_1E61FD
+gText_Rom_1E61FD: @ 0x081E61FD
+	.string "ぼくと ぼくの ポケモン\nさいきん すごく ちょうしが よくてね\pバトルテント デビュー させたくて\nこの まちに きたんだ!$"
+	.if (. - gText_Rom_1E61FD) > 0x40
+	.error "gText_Rom_1E61FD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E61FD) < 0x40
+	.space 0x40 - (. - gText_Rom_1E61FD)
+	.endif
+
+	@ data/maps/VerdanturfTown/scripts.inc:76 VerdanturfTown_Text_GuyTryingToBustThroughCave
+	.globl gText_Rom_1E623D
+gText_Rom_1E623D: @ 0x081E623D
+	.string "フレンドリィ ショップの となりに\nどうくつが あるだろ?\pなかを ふさいでいる いわを こわし\nとおれるように しようと がんばっている\lやつが いるらしいんだ!\pとおれるように なると いいのに……\nカナズミにも いきやすく なるから!$"
+	.if (. - gText_Rom_1E623D) > 0x79
+	.error "gText_Rom_1E623D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E623D) < 0x79
+	.space 0x79 - (. - gText_Rom_1E623D)
+	.endif
+
+	@ data/maps/VerdanturfTown/scripts.inc:79 VerdanturfTown_Text_EasyToGetToRustboroNow
+	.globl gText_Rom_1E62B6
+gText_Rom_1E62B6: @ 0x081E62B6
+	.string "フレンドリィ ショップの となりの\nどうくつが とおれるように なっただろ!\pカナズミまで デボンの しんせいひんを\nかいに いきやすくなって うれしいよ!$"
+	.if (. - gText_Rom_1E62B6) > 0x4f
+	.error "gText_Rom_1E62B6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E62B6) < 0x4f
+	.space 0x4f - (. - gText_Rom_1E62B6)
+	.endif
+
+	@ data/maps/VerdanturfTown/scripts.inc:82 VerdanturfTown_Text_TownSign
+	.globl gText_Rom_1E6305
+gText_Rom_1E6305: @ 0x081E6305
+	.string "ここは シダケ タウン\nくさの においの かぜふく こうげん$"
+	.if (. - gText_Rom_1E6305) > 0x1f
+	.error "gText_Rom_1E6305 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6305) < 0x1f
+	.space 0x1f - (. - gText_Rom_1E6305)
+	.endif
+
+	@ data/maps/VerdanturfTown/scripts.inc:85 VerdanturfTown_Text_WandasHouse
+	.globl gText_Rom_1E6324
+gText_Rom_1E6324: @ 0x081E6324
+	.string "「ミチルの いえ」$"
+	.if (. - gText_Rom_1E6324) > 0xa
+	.error "gText_Rom_1E6324 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6324) < 0xa
+	.space 0xa - (. - gText_Rom_1E6324)
+	.endif
+
+	@ data/maps/VerdanturfTown/scripts.inc:88 VerdanturfTown_Text_BattleTentSign
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E632E
+gText_Rom_1E632E: @ 0x081E632E
+	.string "バトルテント シダケタウン かいじょう\nみまもれ! ポケモンバトル$"
+	.if (. - gText_Rom_1E632E) != 0x22
+	.error "gText_Rom_1E632E must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E634C
+	.set gText_Rom_1E634C, gText_Rom_1E632E + 0x1e
+
+	@ data/maps/Route116/scripts.inc:447 Route116_Text_RusturfTunnelSign (+1 aliases)
+	.globl gText_Rom_1E6350
+gText_Rom_1E6350: @ 0x081E6350
+	.string "カナズミと シダケを むすぶ\n「カナシダ トンネル」\pかいつう こうじは ちゅうしに なりました$"
+	.if (. - gText_Rom_1E6350) > 0x31
+	.error "gText_Rom_1E6350 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6350) < 0x31
+	.space 0x31 - (. - gText_Rom_1E6350)
+	.endif
+	.incbin "baserom.gba", 0x1e6381, 0x36
+
+	@ data/maps/PacifidlogTown/scripts.inc:30 PacifidlogTown_Text_FastRunningCurrent
+	.globl gText_Rom_1E63B7
+gText_Rom_1E63B7: @ 0x081E63B7
+	.string "キナギから カイナへは\nしおの ながれが とても はげしいの\pうかつに なみのり すると\nおもわぬ ほうこうに ながされちゃう$"
+	.if (. - gText_Rom_1E63B7) > 0x40
+	.error "gText_Rom_1E63B7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E63B7) < 0x40
+	.space 0x40 - (. - gText_Rom_1E63B7)
+	.endif
+
+	@ data/maps/PacifidlogTown/scripts.inc:33 PacifidlogTown_Text_NeatHousesOnWater
+	.globl gText_Rom_1E63F7
+gText_Rom_1E63F7: @ 0x081E63F7
+	.string "ね! ね! すごいでしょ!\nみずの うえに おうちが たってるの!\pぼく ここで うまれたんだよ!$"
+	.if (. - gText_Rom_1E63F7) > 0x32
+	.error "gText_Rom_1E63F7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E63F7) < 0x32
+	.space 0x32 - (. - gText_Rom_1E63F7)
+	.endif
+
+	@ data/maps/PacifidlogTown/scripts.inc:36 PacifidlogTown_Text_SkyPillarTooScary
+	.globl gText_Rom_1E6429
+gText_Rom_1E6429: @ 0x081E6429
+	.string "そらのはしら?\p……ああ このさきに たっている\nたかーーい とうの ことだね\pあんな たかい ところ\nおっかなくて のぼれないなー\pぼくは やっぱり キナギでの\nすいめん スレスレな せいかつが\lはだに あうんだよねえー$"
+	.if (. - gText_Rom_1E6429) > 0x70
+	.error "gText_Rom_1E6429 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6429) < 0x70
+	.space 0x70 - (. - gText_Rom_1E6429)
+	.endif
+
+	@ data/maps/PacifidlogTown/scripts.inc:39 PacifidlogTown_Text_TownSign
+	.globl gText_Rom_1E6499
+gText_Rom_1E6499: @ 0x081E6499
+	.string "ここは キナギ タウン\nあさひが みずべを てらす まち$"
+	.if (. - gText_Rom_1E6499) > 0x1d
+	.error "gText_Rom_1E6499 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6499) < 0x1d
+	.space 0x1d - (. - gText_Rom_1E6499)
+	.endif
+	.incbin "baserom.gba", 0x1e64b6, 0x1d5
+
+	@ data/maps/Route101/scripts.inc:259 Route101_Text_HelpMe
+	.globl gText_Rom_1E668B
+gText_Rom_1E668B: @ 0x081E668B
+	.string "たっ たすけて くれーっ!!$"
+	.if (. - gText_Rom_1E668B) > 0xf
+	.error "gText_Rom_1E668B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E668B) < 0xf
+	.space 0xf - (. - gText_Rom_1E668B)
+	.endif
+
+	@ data/maps/Route101/scripts.inc:262 Route101_Text_PleaseHelp
+	.globl gText_Rom_1E669A
+gText_Rom_1E669A: @ 0x081E669A
+	.string "おーい! そこの きみ!\nたすけて おくれーっ!!\pそこに ある カバンに\nモンスターボールが はいってる!$"
+	.if (. - gText_Rom_1E669A) > 0x37
+	.error "gText_Rom_1E669A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E669A) < 0x37
+	.space 0x37 - (. - gText_Rom_1E669A)
+	.endif
+
+	@ data/maps/Route101/scripts.inc:268 Route101_Text_DontLeaveMe
+	.globl gText_Rom_1E66D1
+gText_Rom_1E66D1: @ 0x081E66D1
+	.string "どっ どこへ いくんだ!?\nわたしを みすてないで おくれーっ!$"
+	.if (. - gText_Rom_1E66D1) > 0x21
+	.error "gText_Rom_1E66D1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E66D1) < 0x21
+	.space 0x21 - (. - gText_Rom_1E66D1)
+	.endif
+
+	@ data/maps/Route101/scripts.inc:272 Route101_Text_YouSavedMe
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E66F2
+gText_Rom_1E66F2: @ 0x081E66F2
+	.string "オダマキ『はあ はあ……\pやせいの ポケモンを ちょうさ しようと\nくさむらに はいったら\lとつぜん ポケモンに おそわれて……\pとにかく たすかったよ ありがとう!\p……おや?\pきみは {PLAYER}{KUN} じゃないか!\pこんな ところでは なんだから\nちょっと けんきゅうじょ まで きておくれ$"
+	.if (. - gText_Rom_1E66F2) != 0x90
+	.error "gText_Rom_1E66F2 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E677E
+	.set gText_Rom_1E677E, gText_Rom_1E66F2 + 0x8c
+
+	@ data/maps/Route101/scripts.inc:283 Route101_Text_TakeTiredPokemonToPokeCenter
+	.globl gText_Rom_1E6782
+gText_Rom_1E6782: @ 0x081E6782
+	.string "ポケモンが よわってきたら\nポケモンセンターに いくと いいよ!\pポケモンセンターなら すぐ ちかく\nコトキタウンに あるからね$"
+	.if (. - gText_Rom_1E6782) > 0x41
+	.error "gText_Rom_1E6782 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6782) < 0x41
+	.space 0x41 - (. - gText_Rom_1E6782)
+	.endif
+
+	@ data/maps/Route101/scripts.inc:289 Route101_Text_WildPokemonInTallGrass
+	.globl gText_Rom_1E67C3
+gText_Rom_1E67C3: @ 0x081E67C3
+	.string "やせいの ポケモンは\nくさむらから とびだしてくる からな!\pこうして くさむらの なかに はいって\nつかまえたい ポケモンを さがすんだよ!$"
+	.if (. - gText_Rom_1E67C3) > 0x48
+	.error "gText_Rom_1E67C3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E67C3) < 0x48
+	.space 0x48 - (. - gText_Rom_1E67C3)
+	.endif
+
+	@ field-script:0x1E660B FieldScriptText_1E680B
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E680B
+gText_Rom_1E680B: @ 0x081E680B
+	.string "ここは　101ばん　どうろ\n{ESCAPE}{0x00}　コトキタウン$"
+	.if (. - gText_Rom_1E680B) != 0x19
+	.error "gText_Rom_1E680B must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E681D
+	.set gText_Rom_1E681D, gText_Rom_1E680B + 0x12
+	.incbin "baserom.gba", 0x1e6824, 0x118
+
+	@ data/maps/Route102/scripts.inc:76 Route102_Text_WatchMeCatchPokemon
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E693C
+gText_Rom_1E693C: @ 0x081E693C
+	.string "ミツル『{PLAYER}さん……\nポケモンって こういう くさむらに\lいたり するんでしょ……?\pぼくが じょうずに　つかまえられるか\nそこで みてて くださいね……\p……うわっ!!$"
+	.if (. - gText_Rom_1E693C) != 0x56
+	.error "gText_Rom_1E693C must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E698D
+	.set gText_Rom_1E698D, gText_Rom_1E693C + 0x51
+
+	@ data/maps/Route102/scripts.inc:79 Route102_Text_WallyIDidIt
+	.globl gText_Rom_1E6992
+gText_Rom_1E6992: @ 0x081E6992
+	.string "ミツル『やった…… ぼくの……\nぼくの ポケモンだ……!!$"
+	.if (. - gText_Rom_1E6992) > 0x1e
+	.error "gText_Rom_1E6992 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6992) < 0x1e
+	.space 0x1e - (. - gText_Rom_1E6992)
+	.endif
+
+	@ data/maps/Route102/scripts.inc:82 Route102_Text_LetsGoBack
+	.globl gText_Rom_1E69B0
+gText_Rom_1E69B0: @ 0x081E69B0
+	.string "{PLAYER}さん ありがとう!\nジムに もどろうよ!$"
+	.if (. - gText_Rom_1E69B0) > 0x17
+	.error "gText_Rom_1E69B0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E69B0) < 0x17
+	.space 0x17 - (. - gText_Rom_1E69B0)
+	.endif
+
+	@ data/maps/Route102/scripts.inc:85 Route102_Text_ImNotVeryTall
+	.globl gText_Rom_1E69C7
+gText_Rom_1E69C7: @ 0x081E69C7
+	.string "ぼく…… せが ひくいから\nくさむらを あるくと もぐっちゃうんだ\pハッパが はなの あなに はいって\nふぁ　ふぁ ふぁ ふぁ……\pぶわっくしょーん!$"
+	.if (. - gText_Rom_1E69C7) > 0x4c
+	.error "gText_Rom_1E69C7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E69C7) < 0x4c
+	.space 0x4c - (. - gText_Rom_1E69C7)
+	.endif
+
+	@ data/maps/Route102/scripts.inc:88 Route102_Text_CatchWholeBunchOfPokemon
+	.globl gText_Rom_1E6A13
+gText_Rom_1E6A13: @ 0x081E6A13
+	.string "ポケモン たくさん つかまえよーっと!$"
+	.if (. - gText_Rom_1E6A13) > 0x14
+	.error "gText_Rom_1E6A13 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6A13) < 0x14
+	.space 0x14 - (. - gText_Rom_1E6A13)
+	.endif
+
+	@ field-script:0x1E6830 FieldScriptText_1E6A27
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E6A27
+gText_Rom_1E6A27: @ 0x081E6A27
+	.string "ここは　102ばん　どうろ\n{ESCAPE}{0x03}　コトキタウン$"
+	.if (. - gText_Rom_1E6A27) != 0x19
+	.error "gText_Rom_1E6A27 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E6A39
+	.set gText_Rom_1E6A39, gText_Rom_1E6A27 + 0x12
+
+	@ field-script:0x1E6839 FieldScriptText_1E6A40
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E6A40
+gText_Rom_1E6A40: @ 0x081E6A40
+	.string "ここは　102ばん　どうろ\n{ESCAPE}{0x02}　トウカシティ$"
+	.if (. - gText_Rom_1E6A40) != 0x19
+	.error "gText_Rom_1E6A40 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E6A52
+	.set gText_Rom_1E6A52, gText_Rom_1E6A40 + 0x12
+	.globl gText_Rom_1E6A55
+	.set gText_Rom_1E6A55, gText_Rom_1E6A40 + 0x15
+	.incbin "baserom.gba", 0x1e6a59, 0x418
+
+	@ data/maps/Route103/scripts.inc:289 Route103_Text_MayRoute103Pokemon
+	.globl gText_Rom_1E6E71
+gText_Rom_1E6E71: @ 0x081E6E71
+	.string "ハルカ『えーと 103ばん どうろに いる\nポケモンは あれと あれね……$"
+	.if (. - gText_Rom_1E6E71) > 0x26
+	.error "gText_Rom_1E6E71 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6E71) < 0x26
+	.space 0x26 - (. - gText_Rom_1E6E71)
+	.endif
+
+	@ data/maps/Route103/scripts.inc:293 Route103_Text_MayLetsBattle
+	.globl gText_Rom_1E6E97
+gText_Rom_1E6E97: @ 0x081E6E97
+	.string "あら {PLAYER}{KUN}!\p……そうか! おとうさん から\nポケモンを プレゼントして もらったのね!\pせっかくだから ちょっと\nポケモンしょうぶ しようよ!\pトレーナーって どんな ものか\nあたしが おしえて あげるから!$"
+	.if (. - gText_Rom_1E6E97) > 0x6c
+	.error "gText_Rom_1E6E97 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6E97) < 0x6c
+	.space 0x6c - (. - gText_Rom_1E6E97)
+	.endif
+
+	@ trainerbattle-cfg:0x1E6B59 TrainerBattleText_1E6F03
+	.globl gText_Rom_1E6F03
+gText_Rom_1E6F03: @ 0x081E6F03
+	.string "うわっ！　すごい　すごい！\n{0xFD}{0x01}{0xFD}{0x05}　つよい　じゃない！$"
+	.if (. - gText_Rom_1E6F03) > 0x1d
+	.error "gText_Rom_1E6F03 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6F03) < 0x1d
+	.space 0x1d - (. - gText_Rom_1E6F03)
+	.endif
+
+	@ data/maps/Route103/scripts.inc:306 Route103_Text_MayTimeToHeadBack
+	.globl gText_Rom_1E6F20
+gText_Rom_1E6F20: @ 0x081E6F20
+	.string "ハルカ『あたし おとうさんが\nあなたの ことを ちゅうもく するのも\lわかるような きが する!\pだって もらって すぐの ポケモンが\nもう あなたに なついているもの!\pあなたなら どんな ポケモンとでも\nなかよく なれるかも!\pじゃあ\nけんきゅうじょに かえろっか!$"
+	.if (. - gText_Rom_1E6F20) > 0x88
+	.error "gText_Rom_1E6F20 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6F20) < 0x88
+	.space 0x88 - (. - gText_Rom_1E6F20)
+	.endif
+
+	@ data/maps/Route103/scripts.inc:317 Route103_Text_BrendanRoute103Pokemon
+	.globl gText_Rom_1E6FA8
+gText_Rom_1E6FA8: @ 0x081E6FA8
+	.string "ユウキ『そうか あいつと あいつが\n103ばん どうろに いる ポケモンか……$"
+	.if (. - gText_Rom_1E6FA8) > 0x28
+	.error "gText_Rom_1E6FA8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6FA8) < 0x28
+	.space 0x28 - (. - gText_Rom_1E6FA8)
+	.endif
+
+	@ data/maps/Route103/scripts.inc:321 Route103_Text_BrendanLetsBattle
+	.globl gText_Rom_1E6FD0
+gText_Rom_1E6FD0: @ 0x081E6FD0
+	.string "おや? {PLAYER}!\p……そうか とうさん から\nポケモンを もらったのか\pじゃあ ついでだ\nポケモンしょうぶ してやろうか?\pトレーナーって どんな ものか\nオレが おしえてやるよ!$"
+	.if (. - gText_Rom_1E6FD0) > 0x5a
+	.error "gText_Rom_1E6FD0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6FD0) < 0x5a
+	.space 0x5a - (. - gText_Rom_1E6FD0)
+	.endif
+
+	@ data/maps/Route103/scripts.inc:330 Route103_Text_BrendanDefeated (+1 aliases)
+	.globl gText_Rom_1E702A
+gText_Rom_1E702A: @ 0x081E702A
+	.string "ふうん\n{PLAYER}って つよいんだね$"
+	.if (. - gText_Rom_1E702A) > 0x10
+	.error "gText_Rom_1E702A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E702A) < 0x10
+	.space 0x10 - (. - gText_Rom_1E702A)
+	.endif
+
+	@ data/maps/Route103/scripts.inc:334 Route103_Text_BrendanTimeToHeadBack
+	.globl gText_Rom_1E703A
+gText_Rom_1E703A: @ 0x081E703A
+	.string "ユウキ『とうさんが\n{PLAYER}の ことを ちゅうもく するのも\lわかったような きが する……\pもらって すぐの ポケモンが\nもう なついているよ\p{PLAYER}なら どんな ポケモンとでも\nなかよく なれるかも しれないな\pじゃ\nけんきゅうじょに もどろうか$"
+	.if (. - gText_Rom_1E703A) > 0x7b
+	.error "gText_Rom_1E703A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E703A) < 0x7b
+	.space 0x7b - (. - gText_Rom_1E703A)
+	.endif
+
+	@ data/maps/Route103/scripts.inc:345 Route103_Text_ShouldHaveBroughtPotion
+	.globl gText_Rom_1E70B5
+gText_Rom_1E70B5: @ 0x081E70B5
+	.string "ぼくの ポケモン もう へろへろ……\nキズぐすり もってくれば よかった……$"
+	.if (. - gText_Rom_1E70B5) > 0x27
+	.error "gText_Rom_1E70B5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E70B5) < 0x27
+	.space 0x27 - (. - gText_Rom_1E70B5)
+	.endif
+
+	@ data/maps/Route103/scripts.inc:349 Route103_Text_ShortcutToOldale
+	.globl gText_Rom_1E70DC
+gText_Rom_1E70DC: @ 0x081E70DC
+	.string "ここから うみを わたっていけば\nコトキタウンまで ちかみちが できるぞ!\pふふふ おとくな じょうほう だろ?$"
+	.if (. - gText_Rom_1E70DC) > 0x39
+	.error "gText_Rom_1E70DC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E70DC) < 0x39
+	.space 0x39 - (. - gText_Rom_1E70DC)
+	.endif
+
+	@ field-script:0x1E6CB8 FieldScriptText_1E7115
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E7115
+gText_Rom_1E7115: @ 0x081E7115
+	.string "ここは　103ばん　どうろ\n{ESCAPE}{0x01}　コトキタウン$"
+	.if (. - gText_Rom_1E7115) != 0x19
+	.error "gText_Rom_1E7115 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E7127
+	.set gText_Rom_1E7127, gText_Rom_1E7115 + 0x12
+	.incbin "baserom.gba", 0x1e712e, 0x9ba
+
+	@ data/maps/Route104/scripts.inc:997 Route104_Text_BrineyLivesInSeasideCottage
+	.globl gText_Rom_1E7AE8
+gText_Rom_1E7AE8: @ 0x081E7AE8
+	.string "その はまべの こやには\nハギろうじん という ひとが すんでるの!\pむかしは どんな あらなみも おそれない\nすごうでの ふなのり だった らしいわ!$"
+	.if (. - gText_Rom_1E7AE8) > 0x4d
+	.error "gText_Rom_1E7AE8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7AE8) < 0x4d
+	.space 0x4d - (. - gText_Rom_1E7AE8)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1003 Route104_Text_WhatsItLikeAtBottomOfSea
+	.globl gText_Rom_1E7B35
+gText_Rom_1E7B35: @ 0x081E7B35
+	.string "うみ かぁ……\pうみのそこ って いったい\nどんな ふうに なってるのかな?$"
+	.if (. - gText_Rom_1E7B35) > 0x27
+	.error "gText_Rom_1E7B35 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7B35) < 0x27
+	.space 0x27 - (. - gText_Rom_1E7B35)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1008 Route104_Text_ThrowBallAtWeakenedPokemon
+	.globl gText_Rom_1E7B5C
+gText_Rom_1E7B5C: @ 0x081E7B5C
+	.string "モンスターボールを なげるときは\nポケモンの わざで\lどくや やけどに したり\lねむらせると つかまえ やすいよ!$"
+	.if (. - gText_Rom_1E7B5C) > 0x3a
+	.error "gText_Rom_1E7B5C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7B5C) < 0x3a
+	.space 0x3a - (. - gText_Rom_1E7B5C)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1014 Route104_Text_OnlyThrowBallAtWildPokemon
+	.globl gText_Rom_1E7B96
+gText_Rom_1E7B96: @ 0x081E7B96
+	.string "ひとの ポケモンを とったら どろぼうよ\pモンスターボールは\nやせいの ポケモンにだけ なげましょうね!$"
+	.if (. - gText_Rom_1E7B96) > 0x35
+	.error "gText_Rom_1E7B96 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7B96) < 0x35
+	.space 0x35 - (. - gText_Rom_1E7B96)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1019 Route104_Text_ImNotATrainer
+	.globl gText_Rom_1E7BCB
+gText_Rom_1E7BCB: @ 0x081E7BCB
+	.string "わたし トレーナーじゃ ないわよ\pでも トレーナーどうし しせんが あうのは\nしょうぶしようって サイン なのよね!\pもし たたかいたく なかったら\nしせんを あわさなければ いいのよね!$"
+	.if (. - gText_Rom_1E7BCB) > 0x5f
+	.error "gText_Rom_1E7BCB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7BCB) < 0x5f
+	.space 0x5f - (. - gText_Rom_1E7BCB)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1026 Route104_Text_LikeFillingMouthWithSeedsTakeThis
+	.globl gText_Rom_1E7C2A
+gText_Rom_1E7C2A: @ 0x081E7C2A
+	.string "くちのなかに タネを いっぱい いれて\nそれを プププッ! とふきだすのが すき!\pおまえも これを やるから つかえよ!\pポケモンに つかうとさ\nタネを とばす わざを おぼえるから!$"
+	.if (. - gText_Rom_1E7C2A) > 0x5e
+	.error "gText_Rom_1E7C2A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7C2A) < 0x5e
+	.space 0x5e - (. - gText_Rom_1E7C2A)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1033 Route104_Text_TMsAreOneTimeUse
+	.globl gText_Rom_1E7C88
+gText_Rom_1E7C88: @ 0x081E7C88
+	.string "ひとこと アドバイスな!\pわざマシンは つかいすて!\nつかうと なくなるから\lよく かんがえてから つかえよな!$"
+	.if (. - gText_Rom_1E7C88) > 0x39
+	.error "gText_Rom_1E7C88 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7C88) < 0x39
+	.space 0x39 - (. - gText_Rom_1E7C88)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1039 Route104_Text_DontNeedThisTakeIt
+	.globl gText_Rom_1E7CC1
+gText_Rom_1E7CC1: @ 0x081E7CC1
+	.string "この フラワーショップ ちかごろ\nうえきも うって くれるのよ!\pうれしくて たくさん かっちゃったから\nあたしの しろいハーブは もう いらないわ\lあなた もらってよ!$"
+	.if (. - gText_Rom_1E7CC1) > 0x56
+	.error "gText_Rom_1E7CC1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7CC1) < 0x56
+	.space 0x56 - (. - gText_Rom_1E7CC1)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1046 Route104_Text_FlowerShopSellingSaplings
+	.globl gText_Rom_1E7D17
+gText_Rom_1E7D17: @ 0x081E7D17
+	.string "この フラワーショップ ちかごろ\nうえきも うって くれるのよ!\pうれしくて たくさん かっちゃった!\nどこに かざろうかしら?$"
+	.if (. - gText_Rom_1E7D17) > 0x41
+	.error "gText_Rom_1E7D17 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7D17) < 0x41
+	.space 0x41 - (. - gText_Rom_1E7D17)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1052 Route104_Text_MrBrineysCottage
+	.globl gText_Rom_1E7D58
+gText_Rom_1E7D58: @ 0x081E7D58
+	.string "「ハギろうじんの　こや」$"
+	.if (. - gText_Rom_1E7D58) > 0xd
+	.error "gText_Rom_1E7D58 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7D58) < 0xd
+	.space 0xd - (. - gText_Rom_1E7D58)
+	.endif
+
+	@ field-script:0x1E751F FieldScriptText_1E7D65
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E7D65
+gText_Rom_1E7D65: @ 0x081E7D65
+	.string "ここは　104ばん　どうろ\n{ESCAPE}{0x03}　トウカシティ$"
+	.if (. - gText_Rom_1E7D65) != 0x19
+	.error "gText_Rom_1E7D65 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E7D77
+	.set gText_Rom_1E7D77, gText_Rom_1E7D65 + 0x12
+	.globl gText_Rom_1E7D7A
+	.set gText_Rom_1E7D7A, gText_Rom_1E7D65 + 0x15
+
+	@ field-script:0x1E7528 FieldScriptText_1E7D7E
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E7D7E
+gText_Rom_1E7D7E: @ 0x081E7D7E
+	.string "ここは　104ばん　どうろ\n{ESCAPE}{0x00}　カナズミシティ$"
+	.if (. - gText_Rom_1E7D7E) != 0x1a
+	.error "gText_Rom_1E7D7E must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E7D90
+	.set gText_Rom_1E7D90, gText_Rom_1E7D7E + 0x12
+	.globl gText_Rom_1E7D94
+	.set gText_Rom_1E7D94, gText_Rom_1E7D7E + 0x16
+
+	@ data/maps/Route104/scripts.inc:1063 Route104_Text_PrettyPetalFlowShop
+	.globl gText_Rom_1E7D98
+gText_Rom_1E7D98: @ 0x081E7D98
+	.string "「フラワーショップ　サン・トウカ」$"
+	.if (. - gText_Rom_1E7D98) > 0x12
+	.error "gText_Rom_1E7D98 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7D98) < 0x12
+	.space 0x12 - (. - gText_Rom_1E7D98)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1066 Route104_Text_TrainerTipsDoubleBattles
+	.globl gText_Rom_1E7DAA
+gText_Rom_1E7DAA: @ 0x081E7DAA
+	.string "おとくな けいじばん!!\pホウエンちほう には\nダブルバトルと いって 2たい2の\lポケモンしょうぶを いどんでくる\lトレーナーが います!\pダブルバトルでは ポケモンの リストの\nひだりと いちばん うえにいる\lポケモンが とびだして たたかうので\lリストの ならびには ようちゅうい!$"
+	.if (. - gText_Rom_1E7DAA) > 0x91
+	.error "gText_Rom_1E7DAA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7DAA) < 0x91
+	.space 0x91 - (. - gText_Rom_1E7DAA)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1077 Route104_Text_MayWeShouldRegister
+	.globl gText_Rom_1E7E3B
+gText_Rom_1E7E3B: @ 0x081E7E3B
+	.string "ハルカ『あっ {PLAYER}{KUN}!\pデボンコーポレーションで ポケナビに\nエントリーコールを つけて もらったのね!\pじゃあ あたしたちも\nおたがいに よびだせる ように\lなまえを とうろく しておこうよ!$"
+	.if (. - gText_Rom_1E7E3B) > 0x63
+	.error "gText_Rom_1E7E3B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7E3B) < 0x63
+	.space 0x63 - (. - gText_Rom_1E7E3B)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1085 Route104_Text_RegisteredMay
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E7E9E
+gText_Rom_1E7E9E: @ 0x081E7E9E
+	.string "{PLAYER}は ハルカを\nポケナビに とうろく した!$"
+	.if (. - gText_Rom_1E7E9E) != 0x18
+	.error "gText_Rom_1E7E9E must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E7EA2
+	.set gText_Rom_1E7EA2, gText_Rom_1E7E9E + 0x4
+
+	@ data/maps/Route104/scripts.inc:1089 Route104_Text_MayHowsYourPokedex
+	.globl gText_Rom_1E7EB6
+gText_Rom_1E7EB6: @ 0x081E7EB6
+	.string "ハルカ『ところで {PLAYER}{KUN}の\nポケモンずかんの ちょうしは どう?$"
+	.if (. - gText_Rom_1E7EB6) > 0x22
+	.error "gText_Rom_1E7EB6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7EB6) < 0x22
+	.space 0x22 - (. - gText_Rom_1E7EB6)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1093 Route104_Text_MayMinesDecentLetsBattle
+	.globl gText_Rom_1E7ED8
+gText_Rom_1E7ED8: @ 0x081E7ED8
+	.string "あたしは かなり いい かんじ!\nどう? ちょっと しょうぶ してみる?$"
+	.if (. - gText_Rom_1E7ED8) > 0x25
+	.error "gText_Rom_1E7ED8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7ED8) < 0x25
+	.space 0x25 - (. - gText_Rom_1E7ED8)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1097 Route104_Text_MayHaventRaisedPokemon (+1 aliases)
+	.globl gText_Rom_1E7EFD
+gText_Rom_1E7EFD: @ 0x081E7EFD
+	.string "ハルカ『えー なんでよー\nあんまり ポケモン つかまえたり\lそだてたり してないのかな?\pそれじゃあ トレーナーとして\nまだまだ ね!$"
+	.if (. - gText_Rom_1E7EFD) > 0x44
+	.error "gText_Rom_1E7EFD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7EFD) < 0x44
+	.space 0x44 - (. - gText_Rom_1E7EFD)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1104 Route104_Text_MayLetsBattle (+1 aliases)
+	.globl gText_Rom_1E7F41
+gText_Rom_1E7F41: @ 0x081E7F41
+	.string "ハルカ『どう? あたしと ここで\nちょっと しょうぶ してみる?$"
+	.if (. - gText_Rom_1E7F41) > 0x21
+	.error "gText_Rom_1E7F41 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7F41) < 0x21
+	.space 0x21 - (. - gText_Rom_1E7F41)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1108 Route104_Text_MayIntro (+1 aliases)
+	.globl gText_Rom_1E7F62
+gText_Rom_1E7F62: @ 0x081E7F62
+	.string "ハルカ『トレーナーに なった ばかりの\n{PLAYER}{KUN}には まけないよ!$"
+	.if (. - gText_Rom_1E7F62) > 0x22
+	.error "gText_Rom_1E7F62 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7F62) < 0x22
+	.space 0x22 - (. - gText_Rom_1E7F62)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1112 Route104_Text_MayDefeat (+2 aliases)
+	.globl gText_Rom_1E7F84
+gText_Rom_1E7F84: @ 0x081E7F84
+	.string "うわあ……\nもう こんなに つよいなんて……$"
+	.if (. - gText_Rom_1E7F84) > 0x17
+	.error "gText_Rom_1E7F84 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7F84) < 0x17
+	.space 0x17 - (. - gText_Rom_1E7F84)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1116 Route104_Text_MayPostBattle
+	.globl gText_Rom_1E7F9B
+gText_Rom_1E7F9B: @ 0x081E7F9B
+	.string "ハルカ『けっこう ポケモンの あつかい\nうまく なってきた みたいね!\pでも たたかわせる だけじゃなくて\nそこの ハギろうじん みたいに\lポケモンと なかよくする っていうのも\lだいじなこと なのよ!$"
+	.if (. - gText_Rom_1E7F9B) > 0x66
+	.error "gText_Rom_1E7F9B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E7F9B) < 0x66
+	.space 0x66 - (. - gText_Rom_1E7F9B)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1124 Route104_Text_BrendanWeShouldRegister
+	.globl gText_Rom_1E8001
+gText_Rom_1E8001: @ 0x081E8001
+	.string "ユウキ『おっ {PLAYER}!\pデボンコーポレーションで ポケナビに\nエントリーコールを つけて もらったな!\pじゃあ オレたち\nおたがいに よびだせる ように\lなまえを とうろく しておこうよ!$"
+	.if (. - gText_Rom_1E8001) > 0x5e
+	.error "gText_Rom_1E8001 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8001) < 0x5e
+	.space 0x5e - (. - gText_Rom_1E8001)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1132 Route104_Text_RegisteredBrendan
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E805F
+gText_Rom_1E805F: @ 0x081E805F
+	.string "{PLAYER}は ユウキを\nポケナビに とうろく した!$"
+	.if (. - gText_Rom_1E805F) != 0x18
+	.error "gText_Rom_1E805F must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E8063
+	.set gText_Rom_1E8063, gText_Rom_1E805F + 0x4
+
+	@ data/maps/Route104/scripts.inc:1136 Route104_Text_BrendanHowsYourPokedex
+	.globl gText_Rom_1E8077
+gText_Rom_1E8077: @ 0x081E8077
+	.string "ユウキ『ところで {PLAYER}の\nポケモンずかんは どう?\lちょっとは ページ うまったか?$"
+	.if (. - gText_Rom_1E8077) > 0x2b
+	.error "gText_Rom_1E8077 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8077) < 0x2b
+	.space 0x2b - (. - gText_Rom_1E8077)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1141 Route104_Text_BrendanDoingGreatLetsBattle
+	.globl gText_Rom_1E80A2
+gText_Rom_1E80A2: @ 0x081E80A2
+	.string "オレは すごいよ!\nどうだ ポケモン しょうぶで\lそのせいかを ためして やろうか?$"
+	.if (. - gText_Rom_1E80A2) > 0x2b
+	.error "gText_Rom_1E80A2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E80A2) < 0x2b
+	.space 0x2b - (. - gText_Rom_1E80A2)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1146 Route104_Text_BrendanNoConfidence (+1 aliases)
+	.globl gText_Rom_1E80CD
+gText_Rom_1E80CD: @ 0x081E80CD
+	.string "ユウキ『なんだよ\nもってる ポケモンに じしんが ないのか?$"
+	.if (. - gText_Rom_1E80CD) > 0x1f
+	.error "gText_Rom_1E80CD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E80CD) < 0x1f
+	.space 0x1f - (. - gText_Rom_1E80CD)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1150 Route104_Text_BrendanLetsBattle (+1 aliases)
+	.globl gText_Rom_1E80EC
+gText_Rom_1E80EC: @ 0x081E80EC
+	.string "ユウキ『どうだい オレと ここで\nしょうぶ してみるか?$"
+	.if (. - gText_Rom_1E80EC) > 0x1d
+	.error "gText_Rom_1E80EC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E80EC) < 0x1d
+	.space 0x1d - (. - gText_Rom_1E80EC)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1154 Route104_Text_BrendanIntro (+1 aliases)
+	.globl gText_Rom_1E8109
+gText_Rom_1E8109: @ 0x081E8109
+	.string "ユウキ『トレーナーに なりたて だって\nてかげんは しないからな!$"
+	.if (. - gText_Rom_1E8109) > 0x22
+	.error "gText_Rom_1E8109 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8109) < 0x22
+	.space 0x22 - (. - gText_Rom_1E8109)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1158 Route104_Text_BrendanDefeat (+2 aliases)
+	.globl gText_Rom_1E812B
+gText_Rom_1E812B: @ 0x081E812B
+	.string "へえ……\nなかなか やるじゃないか$"
+	.if (. - gText_Rom_1E812B) > 0x12
+	.error "gText_Rom_1E812B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E812B) < 0x12
+	.space 0x12 - (. - gText_Rom_1E812B)
+	.endif
+
+	@ data/maps/Route104/scripts.inc:1162 Route104_Text_BrendanPostBattle
+	.globl gText_Rom_1E813D
+gText_Rom_1E813D: @ 0x081E813D
+	.string "ユウキ『けっこう ポケモンの あつかい\nうまく なってきたな!\pでも たたかわせる だけじゃなくて\nそこの ハギろうじん みたいに\lポケモンと なかよくする ってのも\lだいじなこと なんだぜ!$"
+	.if (. - gText_Rom_1E813D) > 0x61
+	.error "gText_Rom_1E813D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E813D) < 0x61
+	.space 0x61 - (. - gText_Rom_1E813D)
+	.endif
+	.incbin "baserom.gba", 0x1e819e, 0x15b
+
+	@ data/maps/Route105/scripts.inc:79 Route104_Text_DadPokenavCall
+	.globl gText_Rom_1E82F9
+gText_Rom_1E82F9: @ 0x081E82F9
+	.string "……　……　……\n……　……　……　ピッ!\pパパ『おお　{PLAYER}か!\p……　……　……\nおまえは　いま　どこに　いるんだ?\nずいぶん　かぜの　おとが　つよいな\p……そうそう　デボンの　ツワブキさんから\nポケナビの　ことを　きいたもんでな\lちょっと　よびだして　みたんだ!\pげんきで　やってるなら　それでよし!\nじゃあ　きをつけてな!\p……　……　……\n……　……　……　ツー$"
+	.if (. - gText_Rom_1E82F9) > 0xba
+	.error "gText_Rom_1E82F9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E82F9) < 0xba
+	.space 0xba - (. - gText_Rom_1E82F9)
+	.endif
+
+	@ data/maps/Route105/scripts.inc:82 Route104_Text_RegisteredDadInPokenav
+	.globl gText_Rom_1E83B3
+gText_Rom_1E83B3: @ 0x081E83B3
+	.string "パパ　センリを\nポケナビに　とうろく　した!$"
+	.if (. - gText_Rom_1E83B3) > 0x17
+	.error "gText_Rom_1E83B3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E83B3) < 0x17
+	.space 0x17 - (. - gText_Rom_1E83B3)
+	.endif
+	.incbin "baserom.gba", 0x1e83ca, 0xb1
+
+	@ data/maps/Route106/scripts.inc:44 Route106_Text_TrainerTips
+	.globl gText_Rom_1E847B
+gText_Rom_1E847B: @ 0x081E847B
+	.string "おとくな　けいじばん!!\pポケモンを　うまく　つりあげる　コツは\nビックリ　したら　Aボタン!$"
+	.if (. - gText_Rom_1E847B) > 0x30
+	.error "gText_Rom_1E847B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E847B) < 0x30
+	.space 0x30 - (. - gText_Rom_1E847B)
+	.endif
+	.incbin "baserom.gba", 0x1e84ab, 0x689
+
+	@ data/maps/Route109/scripts.inc:479 DewfordTown_Text_BrineyLandedInSlateportDeliverGoods
+	.globl gText_Rom_1E8B34
+gText_Rom_1E8B34: @ 0x081E8B34
+	.string "ハギ『ほい! カイナに とうちゃく!\pたしか クスノキさんに\nデボンのにもつを とどけるんだったな!$"
+	.if (. - gText_Rom_1E8B34) > 0x33
+	.error "gText_Rom_1E8B34 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8B34) < 0x33
+	.space 0x33 - (. - gText_Rom_1E8B34)
+	.endif
+
+	@ data/maps/Route109/scripts.inc:482 Route109_Text_BrineySailToDewfordQuestion
+	.globl gText_Rom_1E8B67
+gText_Rom_1E8B67: @ 0x081E8B67
+	.string "ハギ『にもつを とどけないのかい?\pそれとも ムロに もどるのかね?$"
+	.if (. - gText_Rom_1E8B67) > 0x23
+	.error "gText_Rom_1E8B67 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8B67) < 0x23
+	.space 0x23 - (. - gText_Rom_1E8B67)
+	.endif
+
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:114 Route104_MrBrineysHouse_Text_SetSailForDewford (+1 aliases)
+	.globl gText_Rom_1E8B8A
+gText_Rom_1E8B8A: @ 0x081E8B8A
+	.string "ハギ『ムロタウン か\pよっしゃ! いくぞ ピーコちゃん!$"
+	.if (. - gText_Rom_1E8B8A) > 0x1d
+	.error "gText_Rom_1E8B8A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8B8A) < 0x1d
+	.space 0x1d - (. - gText_Rom_1E8B8A)
+	.endif
+
+	@ data/maps/Route109/scripts.inc:488 Route109_Text_BrineyDeliverDevonGoods
+	.globl gText_Rom_1E8BA7
+gText_Rom_1E8BA7: @ 0x081E8BA7
+	.string "ハギ『では にもつを とどけておいで\nわしは ここに いるから$"
+	.if (. - gText_Rom_1E8BA7) > 0x20
+	.error "gText_Rom_1E8BA7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8BA7) < 0x20
+	.space 0x20 - (. - gText_Rom_1E8BA7)
+	.endif
+
+	@ data/maps/Route109/scripts.inc:491 DewfordTown_Text_BrineyLandedInSlateport
+	.globl gText_Rom_1E8BC7
+gText_Rom_1E8BC7: @ 0x081E8BC7
+	.string "ハギ『ほい! カイナに とうちゃく!\pふねに のりたくなったら\nまた わしに こえを かけておくれ!$"
+	.if (. - gText_Rom_1E8BC7) > 0x33
+	.error "gText_Rom_1E8BC7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8BC7) < 0x33
+	.space 0x33 - (. - gText_Rom_1E8BC7)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:657 DewfordTown_Text_WhereAreWeBound (+2 aliases)
+	.globl gText_Rom_1E8BFA
+gText_Rom_1E8BFA: @ 0x081E8BFA
+	.string "ハギ『やあ! きみのため なら\nいつでも ふねを だそう!\pきみが いきたいのは どこ かな?$"
+	.if (. - gText_Rom_1E8BFA) > 0x30
+	.error "gText_Rom_1E8BFA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8BFA) < 0x30
+	.space 0x30 - (. - gText_Rom_1E8BFA)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:666 DewfordTown_Text_JustTellMeWhenYouNeedToSetSail (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E8C2A
+gText_Rom_1E8C2A: @ 0x081E8C2A
+	.string "ハギ『ふねに のる ひつようが あるときは\nいつでも こえを かけておくれ$"
+	.if (. - gText_Rom_1E8C2A) != 0x26
+	.error "gText_Rom_1E8C2A must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E8C4C
+	.set gText_Rom_1E8C4C, gText_Rom_1E8C2A + 0x22
+
+	@ data/maps/Route109/scripts.inc:500 Route109_Text_ChillAtMyPapasSpot
+	.globl gText_Rom_1E8C50
+gText_Rom_1E8C50: @ 0x081E8C50
+	.string "あつい トレーナーさんも\nあつくない トレーナーさんも\lおとうさんの おみせに よってってー!$"
+	.if (. - gText_Rom_1E8C50) > 0x30
+	.error "gText_Rom_1E8C50 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8C50) < 0x30
+	.space 0x30 - (. - gText_Rom_1E8C50)
+	.endif
+
+	@ data/maps/Route109/scripts.inc:503 Route109_Text_LittleKidsDartAround
+	.globl gText_Rom_1E8C80
+gText_Rom_1E8C80: @ 0x081E8C80
+	.string "こどもって あちこち うごきまわるから\nめを はなせなくて たいへん!\pポケモンが いっしょ だから\nだいじょうぶ だと おもってるけど……$"
+	.if (. - gText_Rom_1E8C80) > 0x47
+	.error "gText_Rom_1E8C80 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8C80) < 0x47
+	.space 0x47 - (. - gText_Rom_1E8C80)
+	.endif
+
+	@ data/maps/Route109/scripts.inc:506 Route109_Text_SandCastleTakingLongTime
+	.globl gText_Rom_1E8CC7
+gText_Rom_1E8CC7: @ 0x081E8CC7
+	.string "なかなか すなの おしろ できないね$"
+	.if (. - gText_Rom_1E8CC7) > 0x13
+	.error "gText_Rom_1E8CC7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8CC7) < 0x13
+	.space 0x13 - (. - gText_Rom_1E8CC7)
+	.endif
+
+	@ data/maps/Route109/scripts.inc:509 Route109_Text_YouCanHaveThis
+	.globl gText_Rom_1E8CDA
+gText_Rom_1E8CDA: @ 0x081E8CDA
+	.string "{STR_VAR_1} これ あげる!$"
+	.if (. - gText_Rom_1E8CDA) > 0xb
+	.error "gText_Rom_1E8CDA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8CDA) < 0xb
+	.space 0xb - (. - gText_Rom_1E8CDA)
+	.endif
+
+	@ data/maps/Route109/scripts.inc:512 Route109_Text_WereGoingToMakeBigCastle
+	.globl gText_Rom_1E8CE5
+gText_Rom_1E8CE5: @ 0x081E8CE5
+	.string "すなはまの すなを ぜーんぶ あつめて\nおっきな おしろを つくるの\pそれで あたしたち\nおうさまと おうじょさまに なるの\p{STR_VAR_1}は\nけらいに してあげるね$"
+	.if (. - gText_Rom_1E8CE5) > 0x4f
+	.error "gText_Rom_1E8CE5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8CE5) < 0x4f
+	.space 0x4f - (. - gText_Rom_1E8CE5)
+	.endif
+
+	@ data/maps/Route109/scripts.inc:515 Route109_Text_ZigzagoonPicksUpLitter
+	.globl gText_Rom_1E8D34
+gText_Rom_1E8D34: @ 0x081E8D34
+	.string "この あたりの うみは きれいだがな\pそれでも たまに こうして すてられた\nゴミを ジグザグマに あつめてもらうよ\pよごれた みずは あめと なって\nかわに ながれこみ のみみずと なる……\pうみを よごすと\nけっきょく じぶんらが こまるからの$"
+	.if (. - gText_Rom_1E8D34) > 0x7d
+	.error "gText_Rom_1E8D34 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8D34) < 0x7d
+	.space 0x7d - (. - gText_Rom_1E8D34)
+	.endif
+
+	@ data/maps/Route109/scripts.inc:518 Route109_Text_ZigzagoonCry
+	.globl gText_Rom_1E8DB1
+gText_Rom_1E8DB1: @ 0x081E8DB1
+	.string "ジグザグマ『ぐぐ?$"
+	.if (. - gText_Rom_1E8DB1) > 0xa
+	.error "gText_Rom_1E8DB1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8DB1) < 0xa
+	.space 0xa - (. - gText_Rom_1E8DB1)
+	.endif
+
+	@ data/maps/Route109/scripts.inc:521 Route109_Text_SeashoreHouseSign
+	.globl gText_Rom_1E8DBB
+gText_Rom_1E8DBB: @ 0x081E8DBB
+	.string "「うみの いえ」\pすなはま といえば ポケモンしょうぶ!\nあつい トレーナー ここに つどえ!$"
+	.if (. - gText_Rom_1E8DBB) > 0x30
+	.error "gText_Rom_1E8DBB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8DBB) < 0x30
+	.space 0x30 - (. - gText_Rom_1E8DBB)
+	.endif
+
+	@ data/maps/Route109/scripts.inc:524 Route109_Text_TrainerTipsSign
+	.globl gText_Rom_1E8DEB
+gText_Rom_1E8DEB: @ 0x081E8DEB
+	.string "おとくな けいじばん!!\pポケモンの レベルが おなじ でも\nつよさまで おなじとは かぎりません!\pそれに トレーナーが そだてた\nポケモンの ほうが つよくなると\lいわれて います!$"
+	.if (. - gText_Rom_1E8DEB) > 0x5e
+	.error "gText_Rom_1E8DEB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8DEB) < 0x5e
+	.space 0x5e - (. - gText_Rom_1E8DEB)
+	.endif
+	.incbin "baserom.gba", 0x1e8e49, 0x8f4
+
+	@ data/maps/Route110/scripts.inc:741 Route110_Text_WeCantTalkAboutAquaActivities
+	.globl gText_Rom_1E973D
+gText_Rom_1E973D: @ 0x081E973D
+	.string "アクアだんの かつどうは\nいまは まだ だれにも いえないのだ$"
+	.if (. - gText_Rom_1E973D) > 0x20
+	.error "gText_Rom_1E973D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E973D) < 0x20
+	.space 0x20 - (. - gText_Rom_1E973D)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:745 Route110_Text_KickUpARuckus
+	.globl gText_Rom_1E975D
+gText_Rom_1E975D: @ 0x081E975D
+	.string "はやく カイナに いって\nひとあばれ したいんだよな$"
+	.if (. - gText_Rom_1E975D) > 0x1b
+	.error "gText_Rom_1E975D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E975D) < 0x1b
+	.space 0x1b - (. - gText_Rom_1E975D)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:749 Route110_Text_MyFirstJobInAqua
+	.globl gText_Rom_1E9778
+gText_Rom_1E9778: @ 0x081E9778
+	.string "アクアだんに はいって\nはじめての しごと だぜ…… どきどき$"
+	.if (. - gText_Rom_1E9778) > 0x20
+	.error "gText_Rom_1E9778 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9778) < 0x20
+	.space 0x20 - (. - gText_Rom_1E9778)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:753 Route110_Text_AquaActionsBringSmiles
+	.globl gText_Rom_1E9798
+gText_Rom_1E9798: @ 0x081E9798
+	.string "アクアだんの かつどうは\nきっと みんなを えがおに するだろう$"
+	.if (. - gText_Rom_1E9798) > 0x21
+	.error "gText_Rom_1E9798 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9798) < 0x21
+	.space 0x21 - (. - gText_Rom_1E9798)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:757 Route110_Text_MayLetsBattle
+	.globl gText_Rom_1E97B9
+gText_Rom_1E97B9: @ 0x081E97B9
+	.string "ハルカ『{PLAYER}{KUN} ひさしぶり!\pいろいろ ポケモン さがしてる あいだに\nあたしの ポケモンも つよくなったんだ!\pだから……\nちょっと しょうぶ しようよ!$"
+	.if (. - gText_Rom_1E97B9) > 0x50
+	.error "gText_Rom_1E97B9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E97B9) < 0x50
+	.space 0x50 - (. - gText_Rom_1E97B9)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:764 Route110_Text_MayDefeated (+1 aliases)
+	.globl gText_Rom_1E9809
+gText_Rom_1E9809: @ 0x081E9809
+	.string "あっちゃー!\nおもってたより つよいよ!$"
+	.if (. - gText_Rom_1E9809) > 0x15
+	.error "gText_Rom_1E9809 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9809) < 0x15
+	.space 0x15 - (. - gText_Rom_1E9809)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:768 Route110_Text_MayTakeThis
+	.globl gText_Rom_1E981E
+gText_Rom_1E981E: @ 0x081E981E
+	.string "ハルカ『{PLAYER}{KUN}も\nポケモン そだててるんだね!\pうん じゃあ これは\nあたしからの プレゼントよ!$"
+	.if (. - gText_Rom_1E981E) > 0x33
+	.error "gText_Rom_1E981E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E981E) < 0x33
+	.space 0x33 - (. - gText_Rom_1E981E)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:774 Route110_Text_MayExplainItemfinder
+	.globl gText_Rom_1E9851
+gText_Rom_1E9851: @ 0x081E9851
+	.string "ハルカ『それは ダウジングマシン!\pダウジングマシンを つかうと\nめには みえなくても おちている\lどうぐが あると はんのう して\lおとで おしえて くれるのよ!\pじゃあ {PLAYER}{KUN}\nまた どこかで あおうね!\pまけた あたしが いうのも なんだけど\nそのときまでに もっと ポケモン\lそだてて おいた ほうが いいかもよ!$"
+	.if (. - gText_Rom_1E9851) > 0xa3
+	.error "gText_Rom_1E9851 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9851) < 0xa3
+	.space 0xa3 - (. - gText_Rom_1E9851)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:786 Route110_Text_BrendanLetsBattle
+	.globl gText_Rom_1E98F4
+gText_Rom_1E98F4: @ 0x081E98F4
+	.string "ユウキ『{PLAYER}か\nこんなところに いたんだ\lちょうしは どう?\pポケモン そだててるか どうか\nオレが たしかめて やるよ$"
+	.if (. - gText_Rom_1E98F4) > 0x3d
+	.error "gText_Rom_1E98F4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E98F4) < 0x3d
+	.space 0x3d - (. - gText_Rom_1E98F4)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:793 Route110_Text_BrendanDefeated (+1 aliases)
+	.globl gText_Rom_1E9931
+gText_Rom_1E9931: @ 0x081E9931
+	.string "ふうん……\nなかなか やるね$"
+	.if (. - gText_Rom_1E9931) > 0xf
+	.error "gText_Rom_1E9931 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9931) < 0xf
+	.space 0xf - (. - gText_Rom_1E9931)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:797 Route110_Text_BrendanTakeThis
+	.globl gText_Rom_1E9940
+gText_Rom_1E9940: @ 0x081E9940
+	.string "ユウキ『{PLAYER}も いつのまにか\nポケモン そだててたのか……\pよし!\nこれを やるよ$"
+	.if (. - gText_Rom_1E9940) > 0x2a
+	.error "gText_Rom_1E9940 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9940) < 0x2a
+	.space 0x2a - (. - gText_Rom_1E9940)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:803 Route110_Text_BrendanExplainItemfinder
+	.globl gText_Rom_1E996A
+gText_Rom_1E996A: @ 0x081E996A
+	.string "ユウキ『そいつは ダウジングマシン\pつかうと めには みえなくても\nおちている どうぐが あると\lはんのう して おとで おしえてくれる\pじゃ オレ あたらしい\nポケモンを さがしに いくから$"
+	.if (. - gText_Rom_1E996A) > 0x61
+	.error "gText_Rom_1E996A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E996A) < 0x61
+	.space 0x61 - (. - gText_Rom_1E996A)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:811 Route110_Text_RideBikeAtFullSpeed
+	.globl gText_Rom_1E99CB
+gText_Rom_1E99CB: @ 0x081E99CB
+	.string "この サイクリング ロードを\nじてんしゃで はしりぬけたら\lだんぜん きもち よさそうだね!$"
+	.if (. - gText_Rom_1E99CB) > 0x2f
+	.error "gText_Rom_1E99CB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E99CB) < 0x2f
+	.space 0x2f - (. - gText_Rom_1E99CB)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:816 Route110_Text_HairStreamsBehindMe
+	.globl gText_Rom_1E99FA
+gText_Rom_1E99FA: @ 0x081E99FA
+	.string "どう? かぜになびく わたしの くろかみ!\pこのため だけに かみを のばしたの!$"
+	.if (. - gText_Rom_1E99FA) > 0x2a
+	.error "gText_Rom_1E99FA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E99FA) < 0x2a
+	.space 0x2a - (. - gText_Rom_1E99FA)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:820 Route110_Text_YouGotBikeFromRydel
+	.globl gText_Rom_1E9A24
+gText_Rom_1E9A24: @ 0x081E9A24
+	.string "おっ! その じてんしゃ\nミスターカゼノに もらったんだね!\pみれば わかるよ\nだって きみの じてんしゃに……\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\n……って かいて あるんだもん!\pあっちこっち のりまわして\nせんでん してあげると いいね!$"
+	.if (. - gText_Rom_1E9A24) > 0x11d
+	.error "gText_Rom_1E9A24 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9A24) < 0x11d
+	.space 0x11d - (. - gText_Rom_1E9A24)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:838 Route110_Text_TwoRoads
+	.globl gText_Rom_1E9B41
+gText_Rom_1E9B41: @ 0x081E9B41
+	.string "うえと した 2つの どうろ……\pにんげんと ポケモン\nそれぞれの どうろ だと おもえば\lこれもあり なのかも しれんのう$"
+	.if (. - gText_Rom_1E9B41) > 0x3f
+	.error "gText_Rom_1E9B41 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9B41) < 0x3f
+	.space 0x3f - (. - gText_Rom_1E9B41)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:844 Route110_Text_WalkOnTheLowRoad
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E9B80
+gText_Rom_1E9B80: @ 0x081E9B80
+	.string "あたしは じてんしゃ もってない からねえ\nしたの みちを のんびり あるいて いくよ$"
+	.if (. - gText_Rom_1E9B80) != 0x2c
+	.error "gText_Rom_1E9B80 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E9BA8
+	.set gText_Rom_1E9BA8, gText_Rom_1E9B80 + 0x28
+
+	@ data/maps/Route110/scripts.inc:848 Route110_Text_BikeTechniques
+	.globl gText_Rom_1E9BAC
+gText_Rom_1E9BAC: @ 0x081E9BAC
+	.string "いろんな テクニックを おぼえると\nますます じてんしゃが たのしくなる!\pテクニックを つかわないと\nすすめない ばしょも あるしね!$"
+	.if (. - gText_Rom_1E9BAC) > 0x45
+	.error "gText_Rom_1E9BAC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9BAC) < 0x45
+	.space 0x45 - (. - gText_Rom_1E9BAC)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:854 Route110_Text_WhichShouldIChoose
+	.globl gText_Rom_1E9BF1
+gText_Rom_1E9BF1: @ 0x081E9BF1
+	.string "サイクリングロードで キンセツを めざすか\nしたの みちで ポケモンを さがすか\lどっちに しようかな?$"
+	.if (. - gText_Rom_1E9BF1) > 0x35
+	.error "gText_Rom_1E9BF1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9BF1) < 0x35
+	.space 0x35 - (. - gText_Rom_1E9BF1)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:859 Route110_Text_CyclingChallengeResultSummary
+	.globl gText_Rom_1E9C26
+gText_Rom_1E9C26: @ 0x081E9C26
+	.string "ぶつかった かいすう\n …… {STR_VAR_1}!\pかかった タイム\n …… {STR_VAR_2}!$"
+	.if (. - gText_Rom_1E9C26) > 0x24
+	.error "gText_Rom_1E9C26 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9C26) < 0x24
+	.space 0x24 - (. - gText_Rom_1E9C26)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:865 Route110_Text_ChallengeReactionBest
+	.globl gText_Rom_1E9C4A
+gText_Rom_1E9C4A: @ 0x081E9C4A
+	.string "ブラボー!! すばらしい!!\pきみは じてんしゃを こころから\nあいしている! たましいを ゆさぶられたよ!$"
+	.if (. - gText_Rom_1E9C4A) > 0x37
+	.error "gText_Rom_1E9C4A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9C4A) < 0x37
+	.space 0x37 - (. - gText_Rom_1E9C4A)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:870 Route110_Text_ChallengeReactionGood
+	.globl gText_Rom_1E9C81
+gText_Rom_1E9C81: @ 0x081E9C81
+	.string "なかなかの テクニックを もってるな!\pまあ スピードを だしすぎて\nアクシデントを おこさないように しなよ!$"
+	.if (. - gText_Rom_1E9C81) > 0x39
+	.error "gText_Rom_1E9C81 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9C81) < 0x39
+	.space 0x39 - (. - gText_Rom_1E9C81)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:875 Route110_Text_ChallengeReactionOk
+	.globl gText_Rom_1E9CBA
+gText_Rom_1E9CBA: @ 0x081E9CBA
+	.string "まだ みじゅくな ぶぶんも あるようだが\nせっかくの じてんしゃを\lたのしむ きもちを わすれないで くれよ$"
+	.if (. - gText_Rom_1E9CBA) > 0x37
+	.error "gText_Rom_1E9CBA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9CBA) < 0x37
+	.space 0x37 - (. - gText_Rom_1E9CBA)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:880 Route110_Text_ChallengeReactionBad
+	.globl gText_Rom_1E9CF1
+gText_Rom_1E9CF1: @ 0x081E9CF1
+	.string "おいおい なんだか\nあぶなっかしい うんてん してるなあ\lもっと れんしゅう しろよな$"
+	.if (. - gText_Rom_1E9CF1) > 0x2c
+	.error "gText_Rom_1E9CF1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9CF1) < 0x2c
+	.space 0x2c - (. - gText_Rom_1E9CF1)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:885 Route110_Text_ChallengeReactionWorst
+	.globl gText_Rom_1E9D1D
+gText_Rom_1E9D1D: @ 0x081E9D1D
+	.string "うむむ…… うむむむ……\pきみには じてんしゃは むいていない かもな\nミスターカゼノに かえしたら どうだね?$"
+	.if (. - gText_Rom_1E9D1D) > 0x39
+	.error "gText_Rom_1E9D1D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9D1D) < 0x39
+	.space 0x39 - (. - gText_Rom_1E9D1D)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:890 Route110_Text_RatedForNumberOfCollisions
+	.globl gText_Rom_1E9D56
+gText_Rom_1E9D56: @ 0x081E9D56
+	.string "この サイクリングロード!\pキンセツから カイナに むかって\nマッハじてんしゃで はしりぬける\lレーサーの ぶつかった かいすうと\lかかった タイムを はかって いるんだ!$"
+	.if (. - gText_Rom_1E9D56) > 0x57
+	.error "gText_Rom_1E9D56 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9D56) < 0x57
+	.space 0x57 - (. - gText_Rom_1E9D56)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:897 Route110_Text_AlwaysAimHigher
+	.globl gText_Rom_1E9DAD
+gText_Rom_1E9DAD: @ 0x081E9DAD
+	.string "どんな けっか だろうが さらに\nうえを めざしての チャレンジ まってるよ!$"
+	.if (. - gText_Rom_1E9DAD) > 0x28
+	.error "gText_Rom_1E9DAD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9DAD) < 0x28
+	.space 0x28 - (. - gText_Rom_1E9DAD)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:901 Route110_Text_AcroBikesDoNotQualify
+	.globl gText_Rom_1E9DD5
+gText_Rom_1E9DD5: @ 0x081E9DD5
+	.string "この サイクリング ロードでは\nマッハじてんしゃ で はしりぬけた\lレーサーの ぶつかった かいすうと\lかかった タイムを はかって いるんだ!\pダートじてんしゃ だと まがりやすいから\nきろくは はかって あげないよ!$"
+	.if (. - gText_Rom_1E9DD5) > 0x6f
+	.error "gText_Rom_1E9DD5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9DD5) < 0x6f
+	.space 0x6f - (. - gText_Rom_1E9DD5)
+	.endif
+
+	@ field-script:0x1E8F23 FieldScriptText_1E9E44
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E9E44
+gText_Rom_1E9E44: @ 0x081E9E44
+	.string "ここは　110ばん　どうろ\n{ESCAPE}{0x01}　カイナシティ$"
+	.if (. - gText_Rom_1E9E44) != 0x19
+	.error "gText_Rom_1E9E44 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E9E56
+	.set gText_Rom_1E9E56, gText_Rom_1E9E44 + 0x12
+	.globl gText_Rom_1E9E59
+	.set gText_Rom_1E9E59, gText_Rom_1E9E44 + 0x15
+
+	@ data/maps/Route110/scripts.inc:913 Route110_Text_CyclingRoadSign
+	.globl gText_Rom_1E9E5D
+gText_Rom_1E9E5D: @ 0x081E9E5D
+	.string "「シーサイド サイクリング ロード」$"
+	.if (. - gText_Rom_1E9E5D) > 0x13
+	.error "gText_Rom_1E9E5D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9E5D) < 0x13
+	.space 0x13 - (. - gText_Rom_1E9E5D)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:916 Route110_Text_AquaWasHere
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E9E70
+gText_Rom_1E9E70: @ 0x081E9E70
+	.string "「アクアだん さんじょう!」\p……と かんばんに らくがき されているが\nそのもじの うえに べつのペンキで\p「マグマだん さんじょう!」\n……と かかれている$"
+	.if (. - gText_Rom_1E9E70) != 0x51
+	.error "gText_Rom_1E9E70 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E9EBD
+	.set gText_Rom_1E9EBD, gText_Rom_1E9E70 + 0x4d
+
+	@ field-script:0x1E8F3E FieldScriptText_1E9EC1
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E9EC1
+gText_Rom_1E9EC1: @ 0x081E9EC1
+	.string "ここは　110ばん　どうろ\n{ESCAPE}{0x02}　103ばん　どうろ$"
+	.if (. - gText_Rom_1E9EC1) != 0x1c
+	.error "gText_Rom_1E9EC1 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E9ED3
+	.set gText_Rom_1E9ED3, gText_Rom_1E9EC1 + 0x12
+
+	@ data/maps/Route110/scripts.inc:927 Route110_Text_SeasideParkingSign
+	.globl gText_Rom_1E9EDD
+gText_Rom_1E9EDD: @ 0x081E9EDD
+	.string "「シーサイド パーキング」$"
+	.if (. - gText_Rom_1E9EDD) > 0xe
+	.error "gText_Rom_1E9EDD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9EDD) < 0xe
+	.space 0xe - (. - gText_Rom_1E9EDD)
+	.endif
+
+	@ field-script:0x1E8F50 FieldScriptText_1E9EEB
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E9EEB
+gText_Rom_1E9EEB: @ 0x081E9EEB
+	.string "ここは　110ばん　どうろ\n{ESCAPE}{0x00}　キンセツシティ$"
+	.if (. - gText_Rom_1E9EEB) != 0x1a
+	.error "gText_Rom_1E9EEB must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E9EFD
+	.set gText_Rom_1E9EFD, gText_Rom_1E9EEB + 0x12
+	.globl gText_Rom_1E9F01
+	.set gText_Rom_1E9F01, gText_Rom_1E9EEB + 0x16
+
+	@ data/maps/Route110/scripts.inc:934 Route110_Text_TrainerTipsPrlzSleep
+	.globl gText_Rom_1E9F05
+gText_Rom_1E9F05: @ 0x081E9F05
+	.string "おとくな けいじばん!!\pポケモンを ねむらせたり まひさせると\nあいての じゆうを うばえます!\pこれは ポケモンしょうぶの\nじゅうような テクニック です!$"
+	.if (. - gText_Rom_1E9F05) > 0x51
+	.error "gText_Rom_1E9F05 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9F05) < 0x51
+	.space 0x51 - (. - gText_Rom_1E9F05)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:941 Route110_Text_TrainerTipsRegisterItems
+	.globl gText_Rom_1E9F56
+gText_Rom_1E9F56: @ 0x081E9F56
+	.string "おとくな けいじばん!!\pバッグに いれた どうぐは\nセレクトボタンを おすと じゅんばんを\lいれかえる ことが できます!$"
+	.if (. - gText_Rom_1E9F56) > 0x3f
+	.error "gText_Rom_1E9F56 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9F56) < 0x3f
+	.space 0x3f - (. - gText_Rom_1E9F56)
+	.endif
+
+	@ field-script:0x1E8F6B FieldScriptText_1E9F95
+	.globl gText_Rom_1E9F95
+gText_Rom_1E9F95: @ 0x081E9F95
+	.string "ここより　{ESCAPE}{0x03}へ3ぽ　{ESCAPE}{0x00}へ2ほ　ゆけば\nそこは　すてきな　「カラクリやしき」！$"
+	.if (. - gText_Rom_1E9F95) > 0x2b
+	.error "gText_Rom_1E9F95 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9F95) < 0x2b
+	.space 0x2b - (. - gText_Rom_1E9F95)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:951 Route110_Text_BestRecord
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E9FC0
+gText_Rom_1E9FC0: @ 0x081E9FC0
+	.string "いままでの さいこう きろく……\pぶつかった かいすう\n …… {STR_VAR_1}!\pかかった タイム\n …… {STR_VAR_2}!$"
+	.if (. - gText_Rom_1E9FC0) != 0x35
+	.error "gText_Rom_1E9FC0 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E9FD1
+	.set gText_Rom_1E9FD1, gText_Rom_1E9FC0 + 0x11
+
+	@ data/maps/Route110/scripts.inc:958 Route110_Text_ThereIsNoRecord
+	.globl gText_Rom_1E9FF5
+gText_Rom_1E9FF5: @ 0x081E9FF5
+	.string "いままでの さいこう きろく……\p…… だれも ちょうせん していないのか\nなにも きろく されていない!$"
+	.if (. - gText_Rom_1E9FF5) > 0x36
+	.error "gText_Rom_1E9FF5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E9FF5) < 0x36
+	.space 0x36 - (. - gText_Rom_1E9FF5)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:963 Route110_Text_ImagineSeeingYouHere
+	.globl gText_Rom_1EA02B
+gText_Rom_1EA02B: @ 0x081EA02B
+	.string "オダマキ『おお {PLAYER}{KUN}!\nこんな ところに いたのかい!\pえーと うちの {RIVAL}は……$"
+	.if (. - gText_Rom_1EA02B) > 0x2c
+	.error "gText_Rom_1EA02B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EA02B) < 0x2c
+	.space 0x2c - (. - gText_Rom_1EA02B)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:968 Route110_Text_HeardYouInstallMatchCall
+	.globl gText_Rom_1EA057
+gText_Rom_1EA057: @ 0x081EA057
+	.string "そうか!\nきみたちは べつこうどう なんだね\pまあ それは いいとして……\nそうそう! きみの ポケナビに\lエントリーコールが セットされたって?\pならば わたしも とうろく しておこう!\pそうすれば きみと はなれていても\nいつでも ポケモンずかんの ひょうかを\lしてあげられる からね!\p…… …… ……$"
+	.if (. - gText_Rom_1EA057) > 0x9b
+	.error "gText_Rom_1EA057 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EA057) < 0x9b
+	.space 0x9b - (. - gText_Rom_1EA057)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:980 Route110_Text_RegisteredBirchInPokenav (+1 aliases)
+	.globl gText_Rom_1EA0F2
+gText_Rom_1EA0F2: @ 0x081EA0F2
+	.string "オダマキはかせを\nポケナビに とうろく した!$"
+	.if (. - gText_Rom_1EA0F2) > 0x18
+	.error "gText_Rom_1EA0F2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EA0F2) < 0x18
+	.space 0x18 - (. - gText_Rom_1EA0F2)
+	.endif
+
+	@ data/maps/Route110/scripts.inc:984 Route110_Text_KeepAnEyeOutForRival
+	.globl gText_Rom_1EA10A
+gText_Rom_1EA10A: @ 0x081EA10A
+	.string "オダマキ『{PLAYER}{KUN}……\p{RIVAL}のこと よろしく たのむよ\n…… …… ……\pじゃあ わたしは これで しつれいする\nまたな {PLAYER}{KUN}!$"
+	.if (. - gText_Rom_1EA10A) > 0x43
+	.error "gText_Rom_1EA10A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EA10A) < 0x43
+	.space 0x43 - (. - gText_Rom_1EA10A)
+	.endif
+	.incbin "baserom.gba", 0x1ea14d, 0x7ce
+
+	@ field-script:0x1EA472 FieldScriptText_1EA91B
+	.globl gText_Rom_1EA91B
+gText_Rom_1EA91B: @ 0x081EA91B
+	.string "きみ！　たびの　とちゅう　だろうけれど\pどうだ？　ここは　ひとつ\nわたしたち　かぞく　4にんと\lポケモン　しょうぶを　してみないか？$"
+	.if (. - gText_Rom_1EA91B) > 0x43
+	.error "gText_Rom_1EA91B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EA91B) < 0x43
+	.space 0x43 - (. - gText_Rom_1EA91B)
+	.endif
+
+	@ field-script:0x1EA485 FieldScriptText_1EA95E
+	.globl gText_Rom_1EA95E
+gText_Rom_1EA95E: @ 0x081EA95E
+	.string "あっそ！\nきが　むいたら　また　おいで！$"
+	.if (. - gText_Rom_1EA95E) > 0x15
+	.error "gText_Rom_1EA95E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EA95E) < 0x15
+	.space 0x15 - (. - gText_Rom_1EA95E)
+	.endif
+
+	@ field-script:0x1EA48F FieldScriptText_1EA973
+	.globl gText_Rom_1EA973
+gText_Rom_1EA973: @ 0x081EA973
+	.string "いい　どきょうだ！　きにいったぞ！$"
+	.if (. - gText_Rom_1EA973) > 0x12
+	.error "gText_Rom_1EA973 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EA973) < 0x12
+	.space 0x12 - (. - gText_Rom_1EA973)
+	.endif
+
+	@ trainerbattle-cfg:0x1EA495 TrainerBattleText_1EA985
+	.globl gText_Rom_1EA985
+gText_Rom_1EA985: @ 0x081EA985
+	.string "たはーっ！\nおもっていたより　つよいんだね　きみは！$"
+	.if (. - gText_Rom_1EA985) > 0x1b
+	.error "gText_Rom_1EA985 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EA985) < 0x1b
+	.space 0x1b - (. - gText_Rom_1EA985)
+	.endif
+
+	@ field-script:0x1EA4B0 FieldScriptText_1EA9A0
+	.globl gText_Rom_1EA9A0
+gText_Rom_1EA9A0: @ 0x081EA9A0
+	.string "おーい！\nなかなか　つよい　トレーナーが　いたぞー！$"
+	.if (. - gText_Rom_1EA9A0) > 0x1b
+	.error "gText_Rom_1EA9A0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EA9A0) < 0x1b
+	.space 0x1b - (. - gText_Rom_1EA9A0)
+	.endif
+
+	@ field-script:0x1EA4EC FieldScriptText_1EA9BB
+	.globl gText_Rom_1EA9BB
+gText_Rom_1EA9BB: @ 0x081EA9BB
+	.string "あれま！　いがいに　わかいのね！\pうちの　しゅじんに　かってしまう　とは\nなんと　すごうでの　トレーナー　なの！\pじゃあ　こんどは　わたしと　しょうぶよ！$"
+	.if (. - gText_Rom_1EA9BB) > 0x4e
+	.error "gText_Rom_1EA9BB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EA9BB) < 0x4e
+	.space 0x4e - (. - gText_Rom_1EA9BB)
+	.endif
+
+	@ trainerbattle-cfg:0x1EA4F2 TrainerBattleText_1EAA09
+	.globl gText_Rom_1EAA09
+gText_Rom_1EAA09: @ 0x081EAA09
+	.string "んまーっ！\nあなたって　なんて　つよいのかしら！$"
+	.if (. - gText_Rom_1EAA09) > 0x19
+	.error "gText_Rom_1EAA09 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAA09) < 0x19
+	.space 0x19 - (. - gText_Rom_1EAA09)
+	.endif
+
+	@ field-script:0x1EA50D FieldScriptText_1EAA22
+	.globl gText_Rom_1EAA22
+gText_Rom_1EAA22: @ 0x081EAA22
+	.string "つよいわよー！\nこのひと　すっごく　つよいわよー！$"
+	.if (. - gText_Rom_1EAA22) > 0x1a
+	.error "gText_Rom_1EAA22 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAA22) < 0x1a
+	.space 0x1a - (. - gText_Rom_1EAA22)
+	.endif
+
+	@ field-script:0x1EA549 FieldScriptText_1EAA3C
+	.globl gText_Rom_1EAA3C
+gText_Rom_1EAA3C: @ 0x081EAA3C
+	.string "ママより　つよいなんて　すごーい！\pでも　あたし　だって　つよいんだから！\nほんと　なんだってば！$"
+	.if (. - gText_Rom_1EAA3C) > 0x32
+	.error "gText_Rom_1EAA3C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAA3C) < 0x32
+	.space 0x32 - (. - gText_Rom_1EAA3C)
+	.endif
+
+	@ trainerbattle-cfg:0x1EA54F TrainerBattleText_1EAA6E
+	.globl gText_Rom_1EAA6E
+gText_Rom_1EAA6E: @ 0x081EAA6E
+	.string "えっ　もしかして　まけちゃった……$"
+	.if (. - gText_Rom_1EAA6E) > 0x12
+	.error "gText_Rom_1EAA6E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAA6E) < 0x12
+	.space 0x12 - (. - gText_Rom_1EAA6E)
+	.endif
+
+	@ field-script:0x1EA56A FieldScriptText_1EAA80
+	.globl gText_Rom_1EAA80
+gText_Rom_1EAA80: @ 0x081EAA80
+	.string "くやしい……\p……　ぐっすん！　おばあちゃーん！！$"
+	.if (. - gText_Rom_1EAA80) > 0x1a
+	.error "gText_Rom_1EAA80 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAA80) < 0x1a
+	.space 0x1a - (. - gText_Rom_1EAA80)
+	.endif
+
+	@ field-script:0x1EA5A6 FieldScriptText_1EAA9A
+	.globl gText_Rom_1EAA9A
+gText_Rom_1EAA9A: @ 0x081EAA9A
+	.string "こらーっ！\nわしの　かわいい　まごに　なにすんじゃ！\pこうなったら　わしが　おまえさんを\nメタメタに　してやるから　かくごせぇ！$"
+	.if (. - gText_Rom_1EAA9A) > 0x41
+	.error "gText_Rom_1EAA9A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAA9A) < 0x41
+	.space 0x41 - (. - gText_Rom_1EAA9A)
+	.endif
+
+	@ trainerbattle-cfg:0x1EA5AC TrainerBattleText_1EAADB
+	.globl gText_Rom_1EAADB
+gText_Rom_1EAADB: @ 0x081EAADB
+	.string "フガッ！　つよいのう……\nまごの　いうことは　ほんとう　じゃった$"
+	.if (. - gText_Rom_1EAADB) > 0x21
+	.error "gText_Rom_1EAADB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAADB) < 0x21
+	.space 0x21 - (. - gText_Rom_1EAADB)
+	.endif
+
+	@ field-script:0x1EA5B8 FieldScriptText_1EAAFC
+	.globl gText_Rom_1EAAFC
+gText_Rom_1EAAFC: @ 0x081EAAFC
+	.string "あんた……　いそぎのたびで　ないのなら\nうちに　よっていって　おくれ……$"
+	.if (. - gText_Rom_1EAAFC) > 0x25
+	.error "gText_Rom_1EAAFC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAAFC) < 0x25
+	.space 0x25 - (. - gText_Rom_1EAAFC)
+	.endif
+
+	@ field-script:0x1EA631 FieldScriptText_1EAB21
+	.globl gText_Rom_1EAB21
+gText_Rom_1EAB21: @ 0x081EAB21
+	.string "もっと　ポケモン　きたえないと\nかちぬくのは　きびしそうだ\pいままでの　ジムリーダーより\nはるかに　つよいと　きくからな\lポケモンリーグにいる　してんのうは！$"
+	.if (. - gText_Rom_1EAB21) > 0x50
+	.error "gText_Rom_1EAB21 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAB21) < 0x50
+	.space 0x50 - (. - gText_Rom_1EAB21)
+	.endif
+
+	@ field-script:0x1EA63A FieldScriptText_1EAB71
+	.globl gText_Rom_1EAB71
+gText_Rom_1EAB71: @ 0x081EAB71
+	.string "カチヌキいっかに　いどんだけれど\n4にん　つづけての　ポケモンしょうぶは\lきびしいよな……　ボロまけ　したよ$"
+	.if (. - gText_Rom_1EAB71) > 0x37
+	.error "gText_Rom_1EAB71 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAB71) < 0x37
+	.space 0x37 - (. - gText_Rom_1EAB71)
+	.endif
+
+	@ field-script:0x1EA5FB FieldScriptText_1EABA8
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EABA8
+gText_Rom_1EABA8: @ 0x081EABA8
+	.string "ここは　111ばん　どうろ\n{ESCAPE}{0x01}　キンセツシティ$"
+	.if (. - gText_Rom_1EABA8) != 0x1a
+	.error "gText_Rom_1EABA8 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EABBA
+	.set gText_Rom_1EABBA, gText_Rom_1EABA8 + 0x12
+	.globl gText_Rom_1EABBE
+	.set gText_Rom_1EABBE, gText_Rom_1EABA8 + 0x16
+
+	@ field-script:0x1EA604 FieldScriptText_1EABC2
+	.globl gText_Rom_1EABC2
+gText_Rom_1EABC2: @ 0x081EABC2
+	.string "われら　かぞくの　こころは　ひとつ\n「カチヌキ　ファミリーの　いえ」$"
+	.if (. - gText_Rom_1EABC2) > 0x23
+	.error "gText_Rom_1EABC2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EABC2) < 0x23
+	.space 0x23 - (. - gText_Rom_1EABC2)
+	.endif
+
+	@ field-script:0x1EA60D FieldScriptText_1EABE5
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EABE5
+gText_Rom_1EABE5: @ 0x081EABE5
+	.string "ここは　111ばん　どうろ\n{ESCAPE}{0x02}　112ばん　どうろ$"
+	.if (. - gText_Rom_1EABE5) != 0x1c
+	.error "gText_Rom_1EABE5 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EABF7
+	.set gText_Rom_1EABF7, gText_Rom_1EABE5 + 0x12
+
+	@ field-script:0x1EA616 FieldScriptText_1EAC01
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EAC01
+gText_Rom_1EAC01: @ 0x081EAC01
+	.string "ここは　111ばん　どうろ\n{ESCAPE}{0x02}　113ばん　どうろ$"
+	.if (. - gText_Rom_1EAC01) != 0x1c
+	.error "gText_Rom_1EAC01 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EAC13
+	.set gText_Rom_1EAC13, gText_Rom_1EAC01 + 0x12
+
+	@ field-script:0x1EA61F FieldScriptText_1EAC1D
+	.globl gText_Rom_1EAC1D
+gText_Rom_1EAC1D: @ 0x081EAC1D
+	.string "「ケンコーばあさんの　いえ」\nつかれたと　おもうなら　よってらっしゃい！$"
+	.if (. - gText_Rom_1EAC1D) > 0x25
+	.error "gText_Rom_1EAC1D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAC1D) < 0x25
+	.space 0x25 - (. - gText_Rom_1EAC1D)
+	.endif
+
+	@ field-script:0x1EA628 FieldScriptText_1EAC42
+	.globl gText_Rom_1EAC42
+gText_Rom_1EAC42: @ 0x081EAC42
+	.string "おとくな　けいじばん！！\pポケモンの　つよさを　あらわす　ことばで\nとくこう　とは\lとくしゅ　こうげきりょく　のこと！\pとくぼう　とは\nとくしゅ　ぼうぎょりょく　のこと　です！$"
+	.if (. - gText_Rom_1EAC42) > 0x59
+	.error "gText_Rom_1EAC42 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAC42) < 0x59
+	.space 0x59 - (. - gText_Rom_1EAC42)
+	.endif
+
+	@ field-script:0x1EA664 FieldScriptText_1EAC9B
+	.globl gText_Rom_1EAC9B
+gText_Rom_1EAC9B: @ 0x081EAC9B
+	.string "この　あたりに　すなで　できた\nとうが　たっている　はず　なんだが\pどうしたわけか\nみえるときと　みえないときが　あるのだ\pだから　わたしは　それを\nげんえいのとう　と　よんでいる……$"
+	.if (. - gText_Rom_1EAC9B) > 0x5d
+	.error "gText_Rom_1EAC9B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAC9B) < 0x5d
+	.space 0x5d - (. - gText_Rom_1EAC9B)
+	.endif
+
+	@ field-script:0x1EA682 FieldScriptText_1EACF8
+	.globl gText_Rom_1EACF8
+gText_Rom_1EACF8: @ 0x081EACF8
+	.string "みえるぞ！　すなのとう　が！\nげんえい　と　よばれた　すなのとうが\nはっきりと　みえる！\pしかし　そのすがたは　はかなくて\nいまにも　くずれて　しまいそうだ……\pうーん　はいって　みたいが\nこわくて　ゆうきが　でん！$"
+	.if (. - gText_Rom_1EACF8) > 0x6d
+	.error "gText_Rom_1EACF8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EACF8) < 0x6d
+	.space 0x6d - (. - gText_Rom_1EACF8)
+	.endif
+
+	@ field-script:0x1EA678 FieldScriptText_1EAD65
+	.globl gText_Rom_1EAD65
+gText_Rom_1EAD65: @ 0x081EAD65
+	.string "はー　びっくりした……\pいきなり　すなが　そらから\nバラバラと　ふって　きたんじゃ\pで　なかは　どうじゃった？\nやはり　すなの　オバケ　とか　でたか？$"
+	.if (. - gText_Rom_1EAD65) > 0x4c
+	.error "gText_Rom_1EAD65 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAD65) < 0x4c
+	.space 0x4c - (. - gText_Rom_1EAD65)
+	.endif
+
+	@ field-script:0x1EA66E FieldScriptText_1EADB1
+	.globl gText_Rom_1EADB1
+gText_Rom_1EADB1: @ 0x081EADB1
+	.string "あれから\nすなのとう　は　みえなく　なった\pやはり　げんえいのとう　だったのか……$"
+	.if (. - gText_Rom_1EADB1) > 0x2a
+	.error "gText_Rom_1EADB1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EADB1) < 0x2a
+	.space 0x2a - (. - gText_Rom_1EADB1)
+	.endif
+
+	@ field-script:0x1EA345 FieldScriptText_1EADDB
+	.globl gText_Rom_1EADDB
+gText_Rom_1EADDB: @ 0x081EADDB
+	.string "ツメのかせきは\nすなに　もぐって　しまった……$"
+	.if (. - gText_Rom_1EADDB) > 0x18
+	.error "gText_Rom_1EADDB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EADDB) < 0x18
+	.space 0x18 - (. - gText_Rom_1EADDB)
+	.endif
+
+	@ field-script:0x1EA34F FieldScriptText_1EADF3
+	.globl gText_Rom_1EADF3
+gText_Rom_1EADF3: @ 0x081EADF3
+	.string "ねっこのかせきは\nすなに　もぐって　しまった……$"
+	.if (. - gText_Rom_1EADF3) > 0x19
+	.error "gText_Rom_1EADF3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EADF3) < 0x19
+	.space 0x19 - (. - gText_Rom_1EADF3)
+	.endif
+
+	@ field-script:0x1EA697 FieldScriptText_1EAE0C
+	.globl gText_Rom_1EAE0C
+gText_Rom_1EAE0C: @ 0x081EAE0C
+	.string "しまった！\p111ばんどうろに　いくなら\nいわくだきを　もっていけ　って\lキンセツの　おじさんに　いわれてたんだ！\pおじさん？　サイクルショップの\nむかいがわの　いえに　すんでるよ$"
+	.if (. - gText_Rom_1EAE0C) > 0x5b
+	.error "gText_Rom_1EAE0C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAE0C) < 0x5b
+	.space 0x5b - (. - gText_Rom_1EAE0C)
+	.endif
+
+	@ field-script:0x1EA914 FieldScriptText_1EAE67
+	.globl gText_Rom_1EAE67
+gText_Rom_1EAE67: @ 0x081EAE67
+	.string "{ESCAPE}{0x03}　トレーナーヒル　いりぐち\nかけあがれ！　あつき　トレーナーたち！$"
+	.if (. - gText_Rom_1EAE67) > 0x25
+	.error "gText_Rom_1EAE67 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EAE67) < 0x25
+	.space 0x25 - (. - gText_Rom_1EAE67)
+	.endif
+	.incbin "baserom.gba", 0x1eae8c, 0x197
+
+	@ data/maps/Route112/scripts.inc:109 Route112_Text_LeaderGoingToAwakenThing
+	.globl gText_Rom_1EB023
+gText_Rom_1EB023: @ 0x081EB023
+	.string "なあ おい リーダーは ほんとうに\nアイツを めざめさせる つもりか?$"
+	.if (. - gText_Rom_1EB023) > 0x24
+	.error "gText_Rom_1EB023 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB023) < 0x24
+	.space 0x24 - (. - gText_Rom_1EB023)
+	.endif
+
+	@ data/maps/Route112/scripts.inc:113 Route112_Text_YeahWeNeedMeteorite
+	.globl gText_Rom_1EB047
+gText_Rom_1EB047: @ 0x081EB047
+	.string "そうらしいな…… だが そのためには\nいんせきが ひつよう なんだってよ$"
+	.if (. - gText_Rom_1EB047) > 0x25
+	.error "gText_Rom_1EB047 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB047) < 0x25
+	.space 0x25 - (. - gText_Rom_1EB047)
+	.endif
+
+	@ data/maps/Route112/scripts.inc:117 Route112_Text_OhThatsWhyCrewWentToFallarbor
+	.globl gText_Rom_1EB06C
+gText_Rom_1EB06C: @ 0x081EB06C
+	.string "ははーん それで さっき\nなかまが ハジツゲに むかったのか$"
+	.if (. - gText_Rom_1EB06C) > 0x1f
+	.error "gText_Rom_1EB06C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB06C) < 0x1f
+	.space 0x1f - (. - gText_Rom_1EB06C)
+	.endif
+
+	@ data/maps/Route112/scripts.inc:121 Route112_Text_CantLetAnyonePassUntilTheyreBack
+	.globl gText_Rom_1EB08B
+gText_Rom_1EB08B: @ 0x081EB08B
+	.string "ああ かれらが もどってくる までは\nだれも ここを とおすな! ってよ$"
+	.if (. - gText_Rom_1EB08B) > 0x25
+	.error "gText_Rom_1EB08B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB08B) < 0x25
+	.space 0x25 - (. - gText_Rom_1EB08B)
+	.endif
+
+	@ data/maps/Route112/scripts.inc:125 Route112_Text_NotEasyToGetBackToLavaridge
+	.globl gText_Rom_1EB0B0
+gText_Rom_1EB0B0: @ 0x081EB0B0
+	.string "うーむ…… キンセツに いきたいのだが……\nこの だんさを おりてしまうと\lフエンに もどるのは たいへん だよな……$"
+	.if (. - gText_Rom_1EB0B0) > 0x3c
+	.error "gText_Rom_1EB0B0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB0B0) < 0x3c
+	.space 0x3c - (. - gText_Rom_1EB0B0)
+	.endif
+
+	@ field-script:0x1EAF2C FieldScriptText_1EB0EC
+	.globl gText_Rom_1EB0EC
+gText_Rom_1EB0EC: @ 0x081EB0EC
+	.string "「えんとつやま　ロープウェイ　のりば」\n{ESCAPE}{0x00}　このさき　すぐ！$"
+	.if (. - gText_Rom_1EB0EC) > 0x21
+	.error "gText_Rom_1EB0EC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB0EC) < 0x21
+	.space 0x21 - (. - gText_Rom_1EB0EC)
+	.endif
+
+	@ data/maps/Route112/scripts.inc:134 Route112_Text_MtChimneySign
+	.globl gText_Rom_1EB10D
+gText_Rom_1EB10D: @ 0x081EB10D
+	.string "「えんとつやま」\pフエンタウンや ちょうじょう へは\nロープウェイを ごりよう ください$"
+	.if (. - gText_Rom_1EB10D) > 0x2d
+	.error "gText_Rom_1EB10D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB10D) < 0x2d
+	.space 0x2d - (. - gText_Rom_1EB10D)
+	.endif
+
+	@ field-script:0x1EAF3E FieldScriptText_1EB13A
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EB13A
+gText_Rom_1EB13A: @ 0x081EB13A
+	.string "ここは　112ばん　どうろ\n{ESCAPE}{0x02}　フエンタウン$"
+	.if (. - gText_Rom_1EB13A) != 0x19
+	.error "gText_Rom_1EB13A must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EB14C
+	.set gText_Rom_1EB14C, gText_Rom_1EB13A + 0x12
+	.incbin "baserom.gba", 0x1eb153, 0x208
+
+	@ data/maps/Route113/scripts.inc:136 Route113_Text_AshCanBeFashionedIntoGlass
+	.globl gText_Rom_1EB35B
+gText_Rom_1EB35B: @ 0x081EB35B
+	.string "ワハハ!!\nいまの かがくりょくは すごいですぞ!\pなんと この かざんばいを\nガラスに かえることが できるのです!$"
+	.if (. - gText_Rom_1EB35B) > 0x3c
+	.error "gText_Rom_1EB35B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB35B) < 0x3c
+	.space 0x3c - (. - gText_Rom_1EB35B)
+	.endif
+
+	@ data/maps/Route113/scripts.inc:142 Route113_Text_FunWalkingThroughAsh
+	.globl gText_Rom_1EB397
+gText_Rom_1EB397: @ 0x081EB397
+	.string "かざんばい つもった くさむらの うえ\nあるくと どこを とおったか わかるから\lたのしく なっちゃう!$"
+	.if (. - gText_Rom_1EB397) > 0x35
+	.error "gText_Rom_1EB397 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB397) < 0x35
+	.space 0x35 - (. - gText_Rom_1EB397)
+	.endif
+
+	@ field-script:0x1EB19E FieldScriptText_1EB3CC
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EB3CC
+gText_Rom_1EB3CC: @ 0x081EB3CC
+	.string "ここは　113ばん　どうろ\n{ESCAPE}{0x03}　111ばん　どうろ$"
+	.if (. - gText_Rom_1EB3CC) != 0x1c
+	.error "gText_Rom_1EB3CC must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EB3DE
+	.set gText_Rom_1EB3DE, gText_Rom_1EB3CC + 0x12
+
+	@ field-script:0x1EB1A7 FieldScriptText_1EB3E8
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EB3E8
+gText_Rom_1EB3E8: @ 0x081EB3E8
+	.string "ここは　113ばん　どうろ\n{ESCAPE}{0x02}　ハジツゲタウン$"
+	.if (. - gText_Rom_1EB3E8) != 0x1a
+	.error "gText_Rom_1EB3E8 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EB3FA
+	.set gText_Rom_1EB3FA, gText_Rom_1EB3E8 + 0x12
+
+	@ data/maps/Route113/scripts.inc:156 Route113_Text_TrainerTipsRegisterKeyItems
+	.globl gText_Rom_1EB402
+gText_Rom_1EB402: @ 0x081EB402
+	.string "おとくな けいじばん!!\pバッグの たいせつなものに いれた\nどうぐを とうろく しておくと\lセレクトボタンを おすだけで\lつかえるように なって べんり です!$"
+	.if (. - gText_Rom_1EB402) > 0x52
+	.error "gText_Rom_1EB402 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB402) < 0x52
+	.space 0x52 - (. - gText_Rom_1EB402)
+	.endif
+
+	@ data/maps/Route113/scripts.inc:163 Route113_Text_GlassWorkshopSign
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EB454
+gText_Rom_1EB454: @ 0x081EB454
+	.string "「ガラスざいくの おみせ」\nかざんばい から ガラスの どうぐ$"
+	.if (. - gText_Rom_1EB454) != 0x20
+	.error "gText_Rom_1EB454 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EB470
+	.set gText_Rom_1EB470, gText_Rom_1EB454 + 0x1c
+	.incbin "baserom.gba", 0x1eb474, 0x2da
+
+	@ field-script:0x1EB523 FieldScriptText_1EB74E
+	.globl gText_Rom_1EB74E
+gText_Rom_1EB74E: @ 0x081EB74E
+	.string "わたしの　ポケモン　ほえてばかりで\nみんなが　にげてしまって……\pあなた　よかったら\nこの　わざマシン　もらってください$"
+	.if (. - gText_Rom_1EB74E) > 0x3d
+	.error "gText_Rom_1EB74E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB74E) < 0x3d
+	.space 0x3d - (. - gText_Rom_1EB74E)
+	.endif
+
+	@ field-script:0x1EB545 FieldScriptText_1EB78B
+	.globl gText_Rom_1EB78B
+gText_Rom_1EB78B: @ 0x081EB78B
+	.string "わざマシン05の　なかみは　ほえる　です\nほえると　ポケモンも　にげだすのです$"
+	.if (. - gText_Rom_1EB78B) > 0x28
+	.error "gText_Rom_1EB78B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB78B) < 0x28
+	.space 0x28 - (. - gText_Rom_1EB78B)
+	.endif
+
+	@ field-script:0x1EB561 FieldScriptText_1EB7B3
+	.globl gText_Rom_1EB7B3
+gText_Rom_1EB7B3: @ 0x081EB7B3
+	.string "ばうっ！！　ばばうっ！！$"
+	.if (. - gText_Rom_1EB7B3) > 0xd
+	.error "gText_Rom_1EB7B3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB7B3) < 0xd
+	.space 0xd - (. - gText_Rom_1EB7B3)
+	.endif
+
+	@ field-script:0x1EB56C FieldScriptText_1EB7C0
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EB7C0
+gText_Rom_1EB7C0: @ 0x081EB7C0
+	.string "ここは　りゅうせいのたき\nとおりぬけると　カナズミシティ$"
+	.if (. - gText_Rom_1EB7C0) != 0x1d
+	.error "gText_Rom_1EB7C0 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EB7D5
+	.set gText_Rom_1EB7D5, gText_Rom_1EB7C0 + 0x15
+	.globl gText_Rom_1EB7D9
+	.set gText_Rom_1EB7D9, gText_Rom_1EB7C0 + 0x19
+
+	@ field-script:0x1EB575 FieldScriptText_1EB7DD
+	.globl gText_Rom_1EB7DD
+gText_Rom_1EB7DD: @ 0x081EB7DD
+	.string "「かせきマニアの　いえ」\nめずらしい　かせき　ください！$"
+	.if (. - gText_Rom_1EB7DD) > 0x1d
+	.error "gText_Rom_1EB7DD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB7DD) < 0x1d
+	.space 0x1d - (. - gText_Rom_1EB7DD)
+	.endif
+
+	@ field-script:0x1EB57E FieldScriptText_1EB7FA
+	.globl gText_Rom_1EB7FA
+gText_Rom_1EB7FA: @ 0x081EB7FA
+	.string "「マユミの　いえ」$"
+	.if (. - gText_Rom_1EB7FA) > 0xa
+	.error "gText_Rom_1EB7FA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB7FA) < 0xa
+	.space 0xa - (. - gText_Rom_1EB7FA)
+	.endif
+	.incbin "baserom.gba", 0x1eb804, 0x235
+
+	@ field-script:0x1EB859 FieldScriptText_1EBA39
+	.globl gText_Rom_1EBA39
+gText_Rom_1EBA39: @ 0x081EBA39
+	.string "どうくつの　なかって\nくさむらの　ある　どうろと　ちがって\lいつ　ポケモンが　とびだして　くるのか\lわからないから　ドキドキ　しちゃうわ$"
+	.if (. - gText_Rom_1EBA39) > 0x45
+	.error "gText_Rom_1EBA39 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EBA39) < 0x45
+	.space 0x45 - (. - gText_Rom_1EBA39)
+	.endif
+
+	@ field-script:0x1EB862 FieldScriptText_1EBA7E
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EBA7E
+gText_Rom_1EBA7E: @ 0x081EBA7E
+	.string "ここは　115ばん　どうろ\n{ESCAPE}{0x01}　カナズミシティ$"
+	.if (. - gText_Rom_1EBA7E) != 0x1a
+	.error "gText_Rom_1EBA7E must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EBA90
+	.set gText_Rom_1EBA90, gText_Rom_1EBA7E + 0x12
+	.globl gText_Rom_1EBA94
+	.set gText_Rom_1EBA94, gText_Rom_1EBA7E + 0x16
+
+	@ field-script:0x1EB86B FieldScriptText_1EBA98
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EBA98
+gText_Rom_1EBA98: @ 0x081EBA98
+	.string "ここは　りゅうせいのたき\nとおりぬけると　ハジツゲタウン$"
+	.if (. - gText_Rom_1EBA98) != 0x1d
+	.error "gText_Rom_1EBA98 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EBAAD
+	.set gText_Rom_1EBAAD, gText_Rom_1EBA98 + 0x15
+	.incbin "baserom.gba", 0x1ebab5, 0x491
+
+	@ data/maps/Route116/scripts.inc:351 Route116_Text_ScoundrelMadeOffWithPeeko
+	.globl gText_Rom_1EBF46
+gText_Rom_1EBF46: @ 0x081EBF46
+	.string "あああ なんという ことだ!\pピーコちゃんと さんぽを していたら\nいきなり おかしな やつが やってきて\pわしの かわいい ピーコちゃんが\nうばわれて しまったのじゃ!\pうおー! ピーコちゃーん!$"
+	.if (. - gText_Rom_1EBF46) > 0x64
+	.error "gText_Rom_1EBF46 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EBF46) < 0x64
+	.space 0x64 - (. - gText_Rom_1EBF46)
+	.endif
+
+	@ data/maps/Route116/scripts.inc:359 Route116_Text_WantToDigTunnel
+	.globl gText_Rom_1EBFAA
+gText_Rom_1EBFAA: @ 0x081EBFAA
+	.string "ぬぉー!!\pトンネル ほりてー!!$"
+	.if (. - gText_Rom_1EBFAA) > 0x12
+	.error "gText_Rom_1EBFAA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EBFAA) < 0x12
+	.space 0x12 - (. - gText_Rom_1EBFAA)
+	.endif
+
+	@ data/maps/Route116/scripts.inc:363 Route116_Text_DiggingTunnelWhenGoonOrderedMeOut
+	.globl gText_Rom_1EBFBC
+gText_Rom_1EBFBC: @ 0x081EBFBC
+	.string "ぬぉー!!\nなんて ことだ!?\pどうぐも なにも つかわずに\nトンネルを ほっていたのに\lへんな おとこに おいだされた!\pあの トンネルには\nおおきな ものおとに はんのう して\lさわぎだす ポケモンが いる\pだから きかいを つかっての\nかいはつ こうじを やめたのに……\pへんに さわぎを おこされると\nポケモンが おびえないか しんぱいだ!$"
+	.if (. - gText_Rom_1EBFBC) > 0xaf
+	.error "gText_Rom_1EBFBC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EBFBC) < 0xaf
+	.space 0xaf - (. - gText_Rom_1EBFBC)
+	.endif
+
+	@ data/maps/Route116/scripts.inc:377 Route116_Text_GoonHightailedItOutOfTunnel
+	.globl gText_Rom_1EC06B
+gText_Rom_1EC06B: @ 0x081EC06B
+	.string "ぬぉー!!\pへんな おとこが とびだしていった!\nこれで トンネルを ほれるよ!$"
+	.if (. - gText_Rom_1EC06B) > 0x29
+	.error "gText_Rom_1EC06B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC06B) < 0x29
+	.space 0x29 - (. - gText_Rom_1EC06B)
+	.endif
+
+	@ data/maps/Route116/scripts.inc:382 Route116_Text_ThankYouTokenOfAppreciation
+	.globl gText_Rom_1EC094
+gText_Rom_1EC094: @ 0x081EC094
+	.string "ああっ!\nきみは!!\pトウカのもりで たすけてくれた だけでなく\nぬすまれた にもつを とりかえし\lはたまた カイナへの とどけものを\lこころよく ひきうけてくれた ひと!!\pクスノキかんちょう から\n「にもつが とどいた」と\lれんらくが ありましたよ!\pどうも ありがとう なのです!\nかんしゃ かんげき あめ あられ なのです\pそんな すてきな トレーナーさんに\nグッド ニュース!\pさいきん わがしゃ では\nあたらしい モンスターボールの\lかいはつに せいこう したのです!\pかんしゃの きもちとして\nトレーナーさんにも プレゼント なのよね!$"
+	.if (. - gText_Rom_1EC094) > 0x114
+	.error "gText_Rom_1EC094 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC094) < 0x114
+	.space 0x114 - (. - gText_Rom_1EC094)
+	.endif
+
+	@ data/maps/Route116/scripts.inc:402 Route116_Text_NewBallAvailableAtMart
+	.globl gText_Rom_1EC1A8
+gText_Rom_1EC1A8: @ 0x081EC1A8
+	.string "あたらしい モンスターボールは\nカナズミの フレンドリィ ショップで\lうってますからね!\pぜひ つかって みてください!\nではでは……$"
+	.if (. - gText_Rom_1EC1A8) > 0x44
+	.error "gText_Rom_1EC1A8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC1A8) < 0x44
+	.space 0x44 - (. - gText_Rom_1EC1A8)
+	.endif
+
+	@ data/maps/Route116/scripts.inc:409 Route116_Text_BagIsJamPacked
+	.globl gText_Rom_1EC1EC
+gText_Rom_1EC1EC: @ 0x081EC1EC
+	.string "どうぐ いっぱいで\nリピートボール あげられないね$"
+	.if (. - gText_Rom_1EC1EC) > 0x1a
+	.error "gText_Rom_1EC1EC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC1EC) < 0x1a
+	.space 0x1a - (. - gText_Rom_1EC1EC)
+	.endif
+
+	@ data/maps/Route116/scripts.inc:413 Route116_Text_TokenOfAppreciation
+	.globl gText_Rom_1EC206
+gText_Rom_1EC206: @ 0x081EC206
+	.string "にもつを とどけてくれた ことへの\nかんしゃの きもちとして\lトレーナーさん にも あたらしい\lモンスターボールを プレゼント なのよね!$"
+	.if (. - gText_Rom_1EC206) > 0x46
+	.error "gText_Rom_1EC206 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC206) < 0x46
+	.space 0x46 - (. - gText_Rom_1EC206)
+	.endif
+
+	@ data/maps/Route116/scripts.inc:419 Route116_Text_CanYouHelpMeFindGlasses
+	.globl gText_Rom_1EC24C
+gText_Rom_1EC24C: @ 0x081EC24C
+	.string "メガネを おとしたんだ……\nきみも さがすの てつだってよ$"
+	.if (. - gText_Rom_1EC24C) > 0x1e
+	.error "gText_Rom_1EC24C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC24C) < 0x1e
+	.space 0x1e - (. - gText_Rom_1EC24C)
+	.endif
+
+	@ data/maps/Route116/scripts.inc:423 Route116_Text_MayISeeThoseGlasses
+	.globl gText_Rom_1EC26A
+gText_Rom_1EC26A: @ 0x081EC26A
+	.string "その メガネ……?\nちょっと みせてよ!$"
+	.if (. - gText_Rom_1EC26A) > 0x15
+	.error "gText_Rom_1EC26A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC26A) < 0x15
+	.space 0x15 - (. - gText_Rom_1EC26A)
+	.endif
+
+	@ data/maps/Route116/scripts.inc:427 Route116_Text_NotWhatImLookingForMaybeTheyArentHere
+	.globl gText_Rom_1EC27F
+gText_Rom_1EC27F: @ 0x081EC27F
+	.string "うーむ……\nこれは くろいメガネ だね\lぼくが さがしているのと ちがうなあ……\pここには ぼくの メガネ ないのかなあ$"
+	.if (. - gText_Rom_1EC27F) > 0x3d
+	.error "gText_Rom_1EC27F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC27F) < 0x3d
+	.space 0x3d - (. - gText_Rom_1EC27F)
+	.endif
+
+	@ data/maps/Route116/scripts.inc:433 Route116_Text_CantFindGlassesNotHere
+	.globl gText_Rom_1EC2BC
+gText_Rom_1EC2BC: @ 0x081EC2BC
+	.string "うーむ……\nどうにも メガネが みつからないんだ\lここには ぼくの メガネ ないのかなあ$"
+	.if (. - gText_Rom_1EC2BC) > 0x2d
+	.error "gText_Rom_1EC2BC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC2BC) < 0x2d
+	.space 0x2d - (. - gText_Rom_1EC2BC)
+	.endif
+
+	@ data/maps/Route116/scripts.inc:438 Route116_Text_NotWhatImLookingFor
+	.globl gText_Rom_1EC2E9
+gText_Rom_1EC2E9: @ 0x081EC2E9
+	.string "うーむ……\nこれは くろいメガネ だね\lぼくが さがしているのと ちがうなあ……$"
+	.if (. - gText_Rom_1EC2E9) > 0x29
+	.error "gText_Rom_1EC2E9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC2E9) < 0x29
+	.space 0x29 - (. - gText_Rom_1EC2E9)
+	.endif
+
+	@ field-script:0x1EBC02 FieldScriptText_1EC312
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EC312
+gText_Rom_1EC312: @ 0x081EC312
+	.string "ここは　116ばん　どうろ\n{ESCAPE}{0x02}　カナズミシティ$"
+	.if (. - gText_Rom_1EC312) != 0x1a
+	.error "gText_Rom_1EC312 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EC324
+	.set gText_Rom_1EC324, gText_Rom_1EC312 + 0x12
+	.globl gText_Rom_1EC328
+	.set gText_Rom_1EC328, gText_Rom_1EC312 + 0x16
+
+	@ data/maps/Route116/scripts.inc:447 Route116_Text_RusturfTunnelSign (+1 aliases)
+	.globl gText_Rom_1EC32C
+gText_Rom_1EC32C: @ 0x081EC32C
+	.string "カナズミと シダケを むすぶ\n「カナシダ トンネル」\pかいつう こうじは ちゅうしに なりました$"
+	.if (. - gText_Rom_1EC32C) > 0x31
+	.error "gText_Rom_1EC32C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC32C) < 0x31
+	.space 0x31 - (. - gText_Rom_1EC32C)
+	.endif
+
+	@ data/maps/Route116/scripts.inc:452 Route116_Text_TunnelersRestHouse
+	.globl gText_Rom_1EC35D
+gText_Rom_1EC35D: @ 0x081EC35D
+	.string "トンネルこうじ さぎょういん つめしょ$"
+	.if (. - gText_Rom_1EC35D) > 0x14
+	.error "gText_Rom_1EC35D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC35D) < 0x14
+	.space 0x14 - (. - gText_Rom_1EC35D)
+	.endif
+
+	@ data/maps/Route116/scripts.inc:455 Route116_Text_TrainerTipsBToStopEvolution
+	.globl gText_Rom_1EC371
+gText_Rom_1EC371: @ 0x081EC371
+	.string "おとくな けいじばん!\pポケモンが しんか しそうなとき\nBボタンを おすと\lびっくりして しんかを やめます!\pこれを しんかキャンセルと いいます$"
+	.if (. - gText_Rom_1EC371) > 0x4c
+	.error "gText_Rom_1EC371 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC371) < 0x4c
+	.space 0x4c - (. - gText_Rom_1EC371)
+	.endif
+
+	@ data/maps/Route116/scripts.inc:462 Route116_Text_TrainerTipsBagHasPockets
+	.globl gText_Rom_1EC3BD
+gText_Rom_1EC3BD: @ 0x081EC3BD
+	.string "おとくな けいじばん!!\pバッグには いくつかの ポケットが あり\nいれる どうぐの しゅるい によって\lそれぞれの ポケットに\lオートで ぶんるい されます\pまさに トレーナーの ひつじゅひん です!$"
+	.if (. - gText_Rom_1EC3BD) > 0x66
+	.error "gText_Rom_1EC3BD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC3BD) < 0x66
+	.space 0x66 - (. - gText_Rom_1EC3BD)
+	.endif
+	.incbin "baserom.gba", 0x1ec423, 0x2ff
+
+	@ field-script:0x1EC454 FieldScriptText_1EC722
+	.globl gText_Rom_1EC722
+gText_Rom_1EC722: @ 0x081EC722
+	.string "そだてやに　ポケモン　あずけていたの\pそしたら　あたしの　ポケモン\nいつのまにか　しらない　わざ　おぼえていて\lわたしが　とまどっちゃった！$"
+	.if (. - gText_Rom_1EC722) > 0x47
+	.error "gText_Rom_1EC722 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC722) < 0x47
+	.space 0x47 - (. - gText_Rom_1EC722)
+	.endif
+
+	@ field-script:0x1EC442 FieldScriptText_1EC769
+	.globl gText_Rom_1EC769
+gText_Rom_1EC769: @ 0x081EC769
+	.string "どお？\nきれいに　ならんだ　この　はな！\pぜーんぶ　わたしが　うえたのよ！$"
+	.if (. - gText_Rom_1EC769) > 0x26
+	.error "gText_Rom_1EC769 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC769) < 0x26
+	.space 0x26 - (. - gText_Rom_1EC769)
+	.endif
+
+	@ field-script:0x1EC44B FieldScriptText_1EC78F
+	.globl gText_Rom_1EC78F
+gText_Rom_1EC78F: @ 0x081EC78F
+	.string "くうきが　うまーい！$"
+	.if (. - gText_Rom_1EC78F) > 0xb
+	.error "gText_Rom_1EC78F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC78F) < 0xb
+	.space 0xb - (. - gText_Rom_1EC78F)
+	.endif
+
+	@ field-script:0x1EC45D FieldScriptText_1EC79A
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EC79A
+gText_Rom_1EC79A: @ 0x081EC79A
+	.string "ここは　117ばん　どうろ\n{ESCAPE}{0x02}　シダケタウン$"
+	.if (. - gText_Rom_1EC79A) != 0x19
+	.error "gText_Rom_1EC79A must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EC7AC
+	.set gText_Rom_1EC7AC, gText_Rom_1EC79A + 0x12
+
+	@ field-script:0x1EC466 FieldScriptText_1EC7B3
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EC7B3
+gText_Rom_1EC7B3: @ 0x081EC7B3
+	.string "ここは　117ばん　どうろ\n{ESCAPE}{0x03}　キンセツシティ$"
+	.if (. - gText_Rom_1EC7B3) != 0x1a
+	.error "gText_Rom_1EC7B3 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EC7C5
+	.set gText_Rom_1EC7C5, gText_Rom_1EC7B3 + 0x12
+	.globl gText_Rom_1EC7C9
+	.set gText_Rom_1EC7C9, gText_Rom_1EC7B3 + 0x16
+
+	@ field-script:0x1EC46F FieldScriptText_1EC7CD
+	.globl gText_Rom_1EC7CD
+gText_Rom_1EC7CD: @ 0x081EC7CD
+	.string "「ポケモン　そだてや」\nあなたの　ポケモン　そだてます$"
+	.if (. - gText_Rom_1EC7CD) > 0x1c
+	.error "gText_Rom_1EC7CD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC7CD) < 0x1c
+	.space 0x1c - (. - gText_Rom_1EC7CD)
+	.endif
+	.incbin "baserom.gba", 0x1ec7e9, 0x302
+
+	@ data/maps/Route118/scripts.inc:246 Route118_Text_StevenQuestions
+	.globl gText_Rom_1ECAEB
+gText_Rom_1ECAEB: @ 0x081ECAEB
+	.string "ダイゴ『やあ {PLAYER}{KUN}！\pムロタウンの どうくつで あった\nダイゴだよ！\pあれから きみは どれだけ\nたくさんの ポケモンに であったかな？\pこの ひろい せかいには\nさまざまな ポケモンが いるんだ\pすきな タイプの ポケモン ばかりを\nそだてるのも いいだろう\pあるいは いろんな タイプの ポケモンを\nそだてるのも たのしい だろう……\pきみは ポケモン トレーナーとして\nどう かんがえてる？\pボクが きにする ことじゃない けどね\pじゃあ\nまた あえると いいね$"
+	.if (. - gText_Rom_1ECAEB) > 0xed
+	.error "gText_Rom_1ECAEB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ECAEB) < 0xed
+	.space 0xed - (. - gText_Rom_1ECAEB)
+	.endif
+
+	@ data/maps/Route118/scripts.inc:264 Route118_Text_YouAgreeGoodRodIsGood
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1ECBD8
+gText_Rom_1ECBD8: @ 0x081ECBD8
+	.string "うむ！\nいいつりざおは ほんとうに いいよ！\pきみも そう おもうでしょ？$"
+	.if (. - gText_Rom_1ECBD8) != 0x26
+	.error "gText_Rom_1ECBD8 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1ECBF9
+	.set gText_Rom_1ECBF9, gText_Rom_1ECBD8 + 0x21
+
+	@ data/maps/Route118/scripts.inc:269 Route118_Text_IdenticalMindsTakeThis
+	.globl gText_Rom_1ECBFE
+gText_Rom_1ECBFE: @ 0x081ECBFE
+	.string "うむ！\nきみとは きが あうよ！\pうむ！\nいいつりざおを あげよう！$"
+	.if (. - gText_Rom_1ECBFE) > 0x23
+	.error "gText_Rom_1ECBFE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ECBFE) < 0x23
+	.space 0x23 - (. - gText_Rom_1ECBFE)
+	.endif
+
+	@ data/maps/Route118/scripts.inc:275 Route118_Text_TryYourLuckFishing
+	.globl gText_Rom_1ECC21
+gText_Rom_1ECC21: @ 0x081ECC21
+	.string "みずの ある ところなら\nどこでも つりを すると いいよ！$"
+	.if (. - gText_Rom_1ECC21) > 0x1f
+	.error "gText_Rom_1ECC21 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ECC21) < 0x1f
+	.space 0x1f - (. - gText_Rom_1ECC21)
+	.endif
+
+	@ data/maps/Route118/scripts.inc:279 Route118_Text_DontYouLikeToFish
+	.globl gText_Rom_1ECC40
+gText_Rom_1ECC40: @ 0x081ECC40
+	.string "つりは きらい かい？$"
+	.if (. - gText_Rom_1ECC40) > 0xc
+	.error "gText_Rom_1ECC40 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ECC40) < 0xc
+	.space 0xc - (. - gText_Rom_1ECC40)
+	.endif
+
+	@ data/maps/Route118/scripts.inc:282 Route118_Text_TryCatchingMonWithGoodRod
+	.globl gText_Rom_1ECC4C
+gText_Rom_1ECC4C: @ 0x081ECC4C
+	.string "いいつりざおで\nいろんな ポケモンを つると いいよ！$"
+	.if (. - gText_Rom_1ECC4C) > 0x1c
+	.error "gText_Rom_1ECC4C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ECC4C) < 0x1c
+	.space 0x1c - (. - gText_Rom_1ECC4C)
+	.endif
+
+	@ data/maps/Route118/scripts.inc:286 Route118_Text_CanCrossRiversWithSurf
+	.globl gText_Rom_1ECC68
+gText_Rom_1ECC68: @ 0x081ECC68
+	.string "ふねを もって いなくても\nなみのりを おぼえた ポケモンが いれば\lうみや かわを わたって いけちゃうの！\pポケモンって たのもしーい！$"
+	.if (. - gText_Rom_1ECC68) > 0x47
+	.error "gText_Rom_1ECC68 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ECC68) < 0x47
+	.space 0x47 - (. - gText_Rom_1ECC68)
+	.endif
+
+	@ field-script:0x1EC8AB FieldScriptText_1ECCAF
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1ECCAF
+gText_Rom_1ECCAF: @ 0x081ECCAF
+	.string "ここは　118ばん　どうろ\n{ESCAPE}{0x02}　キンセツシティ$"
+	.if (. - gText_Rom_1ECCAF) != 0x1a
+	.error "gText_Rom_1ECCAF must retain its original byte length"
+	.endif
+	.globl gText_Rom_1ECCC1
+	.set gText_Rom_1ECCC1, gText_Rom_1ECCAF + 0x12
+	.globl gText_Rom_1ECCC5
+	.set gText_Rom_1ECCC5, gText_Rom_1ECCAF + 0x16
+
+	@ field-script:0x1EC8B4 FieldScriptText_1ECCC9
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1ECCC9
+gText_Rom_1ECCC9: @ 0x081ECCC9
+	.string "ここは　118ばん　どうろ\n{ESCAPE}{0x00}　119ばん　どうろ$"
+	.if (. - gText_Rom_1ECCC9) != 0x1c
+	.error "gText_Rom_1ECCC9 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1ECCDB
+	.set gText_Rom_1ECCDB, gText_Rom_1ECCC9 + 0x12
+	.incbin "baserom.gba", 0x1ecce5, 0x5d9
+
+	@ data/maps/Route119/scripts.inc:478 Route119_Text_MayIntro
+	.globl gText_Rom_1ED2BE
+gText_Rom_1ED2BE: @ 0x081ED2BE
+	.string "ハルカ『{PLAYER}{KUN}!\nどこに いたのよ? さがしたわ!\pどれくらい つよく なったのか\nちょっと ためして あげる!\pポケモンの じゅんびは……\nいいに きまってるよね! それっ!$"
+	.if (. - gText_Rom_1ED2BE) > 0x5a
+	.error "gText_Rom_1ED2BE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED2BE) < 0x5a
+	.space 0x5a - (. - gText_Rom_1ED2BE)
+	.endif
+
+	@ data/maps/Route119/scripts.inc:486 Route119_Text_MayDefeat (+1 aliases)
+	.globl gText_Rom_1ED318
+gText_Rom_1ED318: @ 0x081ED318
+	.string "あっちゃー!\n{PLAYER}{KUN} つよい じゃない!\pポケモン そだってなくて\nこまってるかも って しんぱい してたのに$"
+	.if (. - gText_Rom_1ED318) > 0x39
+	.error "gText_Rom_1ED318 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED318) < 0x39
+	.space 0x39 - (. - gText_Rom_1ED318)
+	.endif
+
+	@ data/maps/Route119/scripts.inc:492 Route119_Text_MayPresentForYou
+	.globl gText_Rom_1ED351
+gText_Rom_1ED351: @ 0x081ED351
+	.string "ハルカ『ぜんぜん だいじょうぶ!\nその ちょうしで がんばってね!\pこれは あたし からの プレゼントよ!$"
+	.if (. - gText_Rom_1ED351) > 0x36
+	.error "gText_Rom_1ED351 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED351) < 0x36
+	.space 0x36 - (. - gText_Rom_1ED351)
+	.endif
+
+	@ data/maps/Route119/scripts.inc:497 Route119_Text_MayExplainFly
+	.globl gText_Rom_1ED387
+gText_Rom_1ED387: @ 0x081ED387
+	.string "ハルカ『そらをとぶを つかえば\nいちど いった まちなら いっしゅんで\lとんでいく ことが できるの!\pでも そらをとぶを つかうには\nヒワマキの ジムバッジが いるのよ\lこれ だいじだから わすれないでね!\pたまには そらをとぶで\nミシロに かえるのも いいんじゃない?\p{PLAYER}{KUN}の おかあさん\nしんぱい してるかも しれないし……\pじゃあ\nまた どこかで あおうね!$"
+	.if (. - gText_Rom_1ED387) > 0xba
+	.error "gText_Rom_1ED387 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED387) < 0xba
+	.space 0xba - (. - gText_Rom_1ED387)
+	.endif
+
+	@ data/maps/Route119/scripts.inc:510 Route119_Text_BrendanIntro
+	.globl gText_Rom_1ED441
+gText_Rom_1ED441: @ 0x081ED441
+	.string "ユウキ『{PLAYER}!\nここで ポケモン さがしてたのか?\pどれくらい つよく なったか\nためして やるよ\pさあ!\nしょうぶ しょうぶ だぜ!$"
+	.if (. - gText_Rom_1ED441) > 0x44
+	.error "gText_Rom_1ED441 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED441) < 0x44
+	.space 0x44 - (. - gText_Rom_1ED441)
+	.endif
+
+	@ data/maps/Route119/scripts.inc:518 Route119_Text_BrendanDefeat (+1 aliases)
+	.globl gText_Rom_1ED485
+gText_Rom_1ED485: @ 0x081ED485
+	.string "ふうん……\nけっこう つよく なってるんだな$"
+	.if (. - gText_Rom_1ED485) > 0x17
+	.error "gText_Rom_1ED485 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED485) < 0x17
+	.space 0x17 - (. - gText_Rom_1ED485)
+	.endif
+
+	@ data/maps/Route119/scripts.inc:522 Route119_Text_BrendanIllGiveYouThis
+	.globl gText_Rom_1ED49C
+gText_Rom_1ED49C: @ 0x081ED49C
+	.string "ユウキ『それなら どこで ポケモン\nさがしても だいじょうぶ だな\pこれ やるから つかってみろよ!$"
+	.if (. - gText_Rom_1ED49C) > 0x33
+	.error "gText_Rom_1ED49C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED49C) < 0x33
+	.space 0x33 - (. - gText_Rom_1ED49C)
+	.endif
+
+	@ data/maps/Route119/scripts.inc:528 Route119_Text_BrendanExplainFly
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1ED4CF
+gText_Rom_1ED4CF: @ 0x081ED4CF
+	.string "ユウキ『そらをとぶを つかえば\nいちど いった まちなら\lいっしゅんで とんでいける\pもっとも ヒワマキの\nジムバッジが ひつよう だけど……\pじゃ オレ さきにいくよ$"
+	.if (. - gText_Rom_1ED4CF) != 0x55
+	.error "gText_Rom_1ED4CF must retain its original byte length"
+	.endif
+	.globl gText_Rom_1ED520
+	.set gText_Rom_1ED520, gText_Rom_1ED4CF + 0x51
+
+	@ data/maps/Route119/scripts.inc:536 Route119_Text_ScottWayToGoBeSeeingYou
+	.globl gText_Rom_1ED524
+gText_Rom_1ED524: @ 0x081ED524
+	.string "エニシダ『うふふ!\nやるねえ {PLAYER}{KUN}……!\pいま じてんしゃに のった トレーナーと\nすれちがったん だけどさ\lきみ あのトレーナーに かったんだろ?\lわかるよー!\pだって あのコ まっかな かおして\nすっごく くやしそう だったからね!\pそれにしても きみとは\nいろいろな ところで あうね!\lこの あとは ヒワマキジムに いくのかな?\pジムせんも きたい してるよ!\nじゃ また あおうね!$"
+	.if (. - gText_Rom_1ED524) > 0xc7
+	.error "gText_Rom_1ED524 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED524) < 0xc7
+	.space 0xc7 - (. - gText_Rom_1ED524)
+	.endif
+
+	@ data/maps/Route119/scripts.inc:551 Route119_Text_ScottYouWonAtFortreeGym
+	.globl gText_Rom_1ED5EB
+gText_Rom_1ED5EB: @ 0x081ED5EB
+	.string "…… …… ……\n…… …… …… ピッ!\pエニシダ『やあどうも\n{PLAYER}{KUN} わたしだよ!\pおもった とおり!\nヒワマキジム でも きみは かったね!\pきみの その つよさ もしかしたら……\nわたしの もとめている トレーナーは\lほんとうに きみかも しれないな!\pうん きみのこと これからも\nかげながら おうえん しているから!\lじゃ がんばってよ!\p…… …… ……\n…… …… …… ツー$"
+	.if (. - gText_Rom_1ED5EB) > 0xc6
+	.error "gText_Rom_1ED5EB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED5EB) < 0xc6
+	.space 0xc6 - (. - gText_Rom_1ED5EB)
+	.endif
+
+	@ data/maps/Route119/scripts.inc:566 Route119_Text_StayAwayFromWeatherInstitute
+	.globl gText_Rom_1ED6B1
+gText_Rom_1ED6B1: @ 0x081ED6B1
+	.string "オレたち ここで みはりを しているのさ\pおい おまえ! あぶないから\nてんき けんきゅうじょ には ちかづくなよ$"
+	.if (. - gText_Rom_1ED6B1) > 0x3a
+	.error "gText_Rom_1ED6B1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED6B1) < 0x3a
+	.space 0x3a - (. - gText_Rom_1ED6B1)
+	.endif
+
+	@ data/maps/Route119/scripts.inc:571 Route119_Text_DontGoNearWeatherInstitute
+	.globl gText_Rom_1ED6EB
+gText_Rom_1ED6EB: @ 0x081ED6EB
+	.string "みはりって いがいと ヒマだなあ……\pおい おまえ! おねがいだから\nてんき けんきゅうじょ には ちかづくなよ$"
+	.if (. - gText_Rom_1ED6EB) > 0x39
+	.error "gText_Rom_1ED6EB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED6EB) < 0x39
+	.space 0x39 - (. - gText_Rom_1ED6EB)
+	.endif
+
+	@ data/maps/Route119/scripts.inc:576 Route119_Text_ThoughtFlyByCatchingBirdMons
+	.globl gText_Rom_1ED724
+gText_Rom_1ED724: @ 0x081ED724
+	.string "とりポケモンを たくさん あつめて\nそれに つかまれば\lそらを とべると おもって いたんだ\pそしたらさ 「そらをとぶ」っていう\nひでんわざが あるんだってね!?\pもっと はやく しりたかったよ……$"
+	.if (. - gText_Rom_1ED724) > 0x64
+	.error "gText_Rom_1ED724 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED724) < 0x64
+	.space 0x64 - (. - gText_Rom_1ED724)
+	.endif
+
+	@ data/maps/Route119/scripts.inc:585 Route119_Text_TallGrassSnaresBikeTires
+	.globl gText_Rom_1ED788
+gText_Rom_1ED788: @ 0x081ED788
+	.string "まいったぜ……\pながい くさが タイヤに からまるから\nじてんしゃに のれないよ……$"
+	.if (. - gText_Rom_1ED788) > 0x2b
+	.error "gText_Rom_1ED788 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED788) < 0x2b
+	.space 0x2b - (. - gText_Rom_1ED788)
+	.endif
+
+	@ data/maps/Route119/scripts.inc:591 Route119_Text_CanYourMonMakeSecretBase
+	.globl gText_Rom_1ED7B3
+gText_Rom_1ED7B3: @ 0x081ED7B3
+	.string "きみの ポケモン\nひみつのちから つかって\lおおきな くさの かたまりに\lひみつきちを つくれるかい?$"
+	.if (. - gText_Rom_1ED7B3) > 0x34
+	.error "gText_Rom_1ED7B3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED7B3) < 0x34
+	.space 0x34 - (. - gText_Rom_1ED7B3)
+	.endif
+
+	@ field-script:0x1ED037 FieldScriptText_1ED7E7
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1ED7E7
+gText_Rom_1ED7E7: @ 0x081ED7E7
+	.string "ここは　119ばん　どうろ\n{ESCAPE}{0x03}　ヒワマキシティ$"
+	.if (. - gText_Rom_1ED7E7) != 0x1a
+	.error "gText_Rom_1ED7E7 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1ED7F9
+	.set gText_Rom_1ED7F9, gText_Rom_1ED7E7 + 0x12
+	.globl gText_Rom_1ED7FD
+	.set gText_Rom_1ED7FD, gText_Rom_1ED7E7 + 0x16
+
+	@ data/maps/Route119/scripts.inc:600 Route119_Text_WeatherInstitute
+	.globl gText_Rom_1ED801
+gText_Rom_1ED801: @ 0x081ED801
+	.string "「てんき けんきゅうじょ」$"
+	.if (. - gText_Rom_1ED801) > 0xe
+	.error "gText_Rom_1ED801 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED801) < 0xe
+	.space 0xe - (. - gText_Rom_1ED801)
+	.endif
+
+	@ data/maps/Route119/scripts.inc:603 Route119_Text_TrainerTipsDecoration
+	.globl gText_Rom_1ED80F
+gText_Rom_1ED80F: @ 0x081ED80F
+	.string "おとくな けいじばん!!\pひみつきち には グッズを\n16こ まで おけます!\pすきな グッズを えらんで\nあなただけの おきにいりの\lひみつきち を つくりましょう!$"
+	.if (. - gText_Rom_1ED80F) > 0x55
+	.error "gText_Rom_1ED80F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ED80F) < 0x55
+	.space 0x55 - (. - gText_Rom_1ED80F)
+	.endif
+
+	.incbin "baserom.gba", 0x1ed864, 0x2f2
+
+	setwildbattle SPECIES_KECLEON, 30, ITEM_NONE
+
+	.incbin "baserom.gba", 0x1edb5c, 0x2b4
+
+	@ data/maps/Route120/scripts.inc:362 Route120_Text_StevenGreeting
+	.globl gText_Rom_1EDE10
+gText_Rom_1EDE10: @ 0x081EDE10
+	.string "ダイゴ『ん? {PLAYER}{KUN}か\nひさしぶり だね\pここに みえない なにかが いるよね?\pで みえない なにかに むかって\nこの どうぐを つかうと……\pちがうな…… せつめい するよりも\nじっさいに つかった ほうが たのしそうだ\p{PLAYER}{KUN} きみの ポケモン\nたたかう じゅんびは できて いるのかい?$"
+	.if (. - gText_Rom_1EDE10) > 0x96
+	.error "gText_Rom_1EDE10 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EDE10) < 0x96
+	.space 0x96 - (. - gText_Rom_1EDE10)
+	.endif
+
+	@ data/maps/Route120/scripts.inc:375 Route120_Text_StevenIllWaitHere
+	.globl gText_Rom_1EDEA6
+gText_Rom_1EDEA6: @ 0x081EDEA6
+	.string "ダイゴ『そう?\pボクは ここで まっているから\nじゅんびを すると いいよ$"
+	.if (. - gText_Rom_1EDEA6) > 0x26
+	.error "gText_Rom_1EDEA6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EDEA6) < 0x26
+	.space 0x26 - (. - gText_Rom_1EDEA6)
+	.endif
+
+	@ data/maps/Route120/scripts.inc:379 Route120_Text_StevenReadyForBattle
+	.globl gText_Rom_1EDECC
+gText_Rom_1EDECC: @ 0x081EDECC
+	.string "ダイゴ『{PLAYER}{KUN} きみの ポケモン\nたたかう じゅんびは できて いるのかい?$"
+	.if (. - gText_Rom_1EDECC) > 0x28
+	.error "gText_Rom_1EDECC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EDECC) < 0x28
+	.space 0x28 - (. - gText_Rom_1EDECC)
+	.endif
+
+	@ data/maps/Route120/scripts.inc:383 Route120_Text_StevenShowMeYourPower
+	.globl gText_Rom_1EDEF4
+gText_Rom_1EDEF4: @ 0x081EDEF4
+	.string "ダイゴ『{PLAYER}{KUN}\nきみの トレーナー としての\lじつりょく みせてもらうよ!$"
+	.if (. - gText_Rom_1EDEF4) > 0x27
+	.error "gText_Rom_1EDEF4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EDEF4) < 0x27
+	.space 0x27 - (. - gText_Rom_1EDEF4)
+	.endif
+
+	@ data/maps/Route120/scripts.inc:387 Route120_Text_StevenUsedDevonScope
+	.globl gText_Rom_1EDF1B
+gText_Rom_1EDF1B: @ 0x081EDF1B
+	.string "ダイゴは\nデボンスコープを つかった!\pとうめいに なっていた\nポケモンの すがたが まるわかりだ!\pポケモンは\nおどろいて おそいかかってきた!$"
+	.if (. - gText_Rom_1EDF1B) > 0x4a
+	.error "gText_Rom_1EDF1B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EDF1B) < 0x4a
+	.space 0x4a - (. - gText_Rom_1EDF1B)
+	.endif
+
+	@ data/maps/Route120/scripts.inc:393 Route120_Text_StevenGiveDevonScope
+	.globl gText_Rom_1EDF65
+gText_Rom_1EDF65: @ 0x081EDF65
+	.string "ダイゴ『なるほど\nきみの たたかいかた おもしろいね\pはじめて ムロで であった ときよりも\nポケモンも そだっているし……\pそうだね\nこの デボンスコープは きみに あげよう\pほかにも すがたを かくしている\nポケモンは いるかも しれないから$"
+	.if (. - gText_Rom_1EDF65) > 0x7c
+	.error "gText_Rom_1EDF65 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EDF65) < 0x7c
+	.space 0x7c - (. - gText_Rom_1EDF65)
+	.endif
+
+	@ data/maps/Route120/scripts.inc:403 Route120_Text_StevenGoodbye
+	.globl gText_Rom_1EDFE1
+gText_Rom_1EDFE1: @ 0x081EDFE1
+	.string "ダイゴ『{PLAYER}{KUN}\pボクは がんばっている\nトレーナーと ポケモンが すきだから\pきみのこと いいと おもうよ\pじゃあ\nまた どこかで あおう!$"
+	.if (. - gText_Rom_1EDFE1) > 0x48
+	.error "gText_Rom_1EDFE1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EDFE1) < 0x48
+	.space 0x48 - (. - gText_Rom_1EDFE1)
+	.endif
+
+	@ data/maps/FortreeCity/scripts.inc:133 FortreeCity_Text_SomethingUnseeable (+1 aliases)
+	.globl gText_Rom_1EE029
+gText_Rom_1EE029: @ 0x081EE029
+	.string "みえない なにかが いるようだ$"
+	.if (. - gText_Rom_1EE029) > 0x10
+	.error "gText_Rom_1EE029 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE029) < 0x10
+	.space 0x10 - (. - gText_Rom_1EE029)
+	.endif
+
+	@ data/maps/FortreeCity/scripts.inc:136 FortreeCity_Text_UnseeableUseDevonScope (+1 aliases)
+	.globl gText_Rom_1EE039
+gText_Rom_1EE039: @ 0x081EE039
+	.string "みえない なにかが いるようだ\pデボンスコープを つかいますか?$"
+	.if (. - gText_Rom_1EE039) > 0x21
+	.error "gText_Rom_1EE039 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE039) < 0x21
+	.space 0x21 - (. - gText_Rom_1EE039)
+	.endif
+
+	@ data/maps/Route120/scripts.inc:417 Kecleon_Text_UseDevonScopeMonAttacked
+	.globl gText_Rom_1EE05A
+gText_Rom_1EE05A: @ 0x081EE05A
+	.string "{PLAYER}は\nデボンスコープを つかった!\pとうめいに なっていた\nポケモンの すがたが まるわかりだ!\pポケモンは\nおどろいて おそいかかってきた!$"
+	.if (. - gText_Rom_1EE05A) > 0x49
+	.error "gText_Rom_1EE05A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE05A) < 0x49
+	.space 0x49 - (. - gText_Rom_1EE05A)
+	.endif
+
+	@ field-script:0x1EDC3F FieldScriptText_1EE0A3
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EE0A3
+gText_Rom_1EE0A3: @ 0x081EE0A3
+	.string "ここは　120ばん　どうろ\n{ESCAPE}{0x02}　ヒワマキシティ$"
+	.if (. - gText_Rom_1EE0A3) != 0x1a
+	.error "gText_Rom_1EE0A3 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EE0B5
+	.set gText_Rom_1EE0B5, gText_Rom_1EE0A3 + 0x12
+	.globl gText_Rom_1EE0B9
+	.set gText_Rom_1EE0B9, gText_Rom_1EE0A3 + 0x16
+
+	@ field-script:0x1EDC48 FieldScriptText_1EE0BD
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EE0BD
+gText_Rom_1EE0BD: @ 0x081EE0BD
+	.string "{ESCAPE}{0x03}　121ばん　どうろ\n{ESCAPE}{0x02}　120ばん　どうろ$"
+	.if (. - gText_Rom_1EE0BD) != 0x1c
+	.error "gText_Rom_1EE0BD must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EE0CF
+	.set gText_Rom_1EE0CF, gText_Rom_1EE0BD + 0x12
+	.incbin "baserom.gba", 0x1ee0d9, 0x25e
+
+	@ data/maps/Route121/scripts.inc:171 Route121_Text_OkayMoveOutToMtPyre
+	.globl gText_Rom_1EE337
+gText_Rom_1EE337: @ 0x081EE337
+	.string "よし!\nおれたちも おくりびやまに むかうぞ!$"
+	.if (. - gText_Rom_1EE337) > 0x18
+	.error "gText_Rom_1EE337 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE337) < 0x18
+	.space 0x18 - (. - gText_Rom_1EE337)
+	.endif
+
+	@ data/maps/Route121/scripts.inc:175 Route121_Text_AheadLoomsMtPyre
+	.globl gText_Rom_1EE34F
+gText_Rom_1EE34F: @ 0x081EE34F
+	.string "このさきに あるのは おくりびやま……\pじゅみょうを おえた ポケモンたちの\nたましいが まつられる ところ……$"
+	.if (. - gText_Rom_1EE34F) > 0x39
+	.error "gText_Rom_1EE34F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE34F) < 0x39
+	.space 0x39 - (. - gText_Rom_1EE34F)
+	.endif
+
+	@ data/maps/Route121/scripts.inc:180 Route121_Text_MtPyrePierSign
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EE388
+gText_Rom_1EE388: @ 0x081EE388
+	.string "おくりびやま さんばし\p……ながい あいだ つかわれて いないのか\nもじが きえそうに なっている$"
+	.if (. - gText_Rom_1EE388) != 0x32
+	.error "gText_Rom_1EE388 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EE3B6
+	.set gText_Rom_1EE3B6, gText_Rom_1EE388 + 0x2e
+
+	@ data/maps/Route121/scripts.inc:185 Route121_Text_SafariZoneSign
+	.globl gText_Rom_1EE3BA
+gText_Rom_1EE3BA: @ 0x081EE3BA
+	.string "めずらしい ポケモン たくさん!\n「サファリゾーン」$"
+	.if (. - gText_Rom_1EE3BA) > 0x1b
+	.error "gText_Rom_1EE3BA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE3BA) < 0x1b
+	.space 0x1b - (. - gText_Rom_1EE3BA)
+	.endif
+	.incbin "baserom.gba", 0x1ee3d5, 0x2d8
+
+	@ data/maps/Route123/scripts.inc:173 Route123_Text_LoveGrassMonsHaveAny
+	.globl gText_Rom_1EE6AD
+gText_Rom_1EE6AD: @ 0x081EE6AD
+	.string "あたし くさタイプの ポケモン\nだいすき なの！\pあなたは くさタイプの ポケモン\nもって いないの……？$"
+	.if (. - gText_Rom_1EE6AD) > 0x36
+	.error "gText_Rom_1EE6AD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE6AD) < 0x36
+	.space 0x36 - (. - gText_Rom_1EE6AD)
+	.endif
+
+	@ data/maps/Route123/scripts.inc:177 Route123_Text_YouLikeGrassMonsTooHaveThis
+	.globl gText_Rom_1EE6E3
+gText_Rom_1EE6E3: @ 0x081EE6E3
+	.string "あら！？\pあなたも くさタイプの ポケモンが\nだいすき なのね！\pうれしいから これ あげちゃう！\nともだちの しるし よ！$"
+	.if (. - gText_Rom_1EE6E3) > 0x3f
+	.error "gText_Rom_1EE6E3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE6E3) < 0x3f
+	.space 0x3f - (. - gText_Rom_1EE6E3)
+	.endif
+
+	@ data/maps/Route123/scripts.inc:184 Route123_Text_CheckTreesWithMyGrassMon
+	.globl gText_Rom_1EE722
+gText_Rom_1EE722: @ 0x081EE722
+	.string "くさポケモンと いっしょに\nきの ようすを みてまわってるの\lいってみれば きの おいしゃさんね$"
+	.if (. - gText_Rom_1EE722) > 0x31
+	.error "gText_Rom_1EE722 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE722) < 0x31
+	.space 0x31 - (. - gText_Rom_1EE722)
+	.endif
+
+	@ field-script:0x1EE43B FieldScriptText_1EE753
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EE753
+gText_Rom_1EE753: @ 0x081EE753
+	.string "{ESCAPE}{0x03}　123ばん　どうろ\n{ESCAPE}{0x02}　118ばん　どうろ$"
+	.if (. - gText_Rom_1EE753) != 0x1c
+	.error "gText_Rom_1EE753 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EE765
+	.set gText_Rom_1EE765, gText_Rom_1EE753 + 0x12
+
+	@ field-script:0x1EE444 FieldScriptText_1EE76F
+	.globl gText_Rom_1EE76F
+gText_Rom_1EE76F: @ 0x081EE76F
+	.string "{ESCAPE}{0x00}……　おくりびやま\nこころ　よわきもの　ちかよる　べからず$"
+	.if (. - gText_Rom_1EE76F) > 0x21
+	.error "gText_Rom_1EE76F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE76F) < 0x21
+	.space 0x21 - (. - gText_Rom_1EE76F)
+	.endif
+
+	@ data/maps/Route123/scripts.inc:196 Route123_Text_BerryMastersHouse
+	.globl gText_Rom_1EE790
+gText_Rom_1EE790: @ 0x081EE790
+	.string "「きのみ めいじんの いえ」$"
+	.if (. - gText_Rom_1EE790) > 0xf
+	.error "gText_Rom_1EE790 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE790) < 0xf
+	.space 0xf - (. - gText_Rom_1EE790)
+	.endif
+	.incbin "baserom.gba", 0x1ee79f, 0x1cd
+
+	@ field-script:0x1EE7B1 FieldScriptText_1EE96C
+	.globl gText_Rom_1EE96C
+gText_Rom_1EE96C: @ 0x081EE96C
+	.string "「トレジャーハンターの　こや」$"
+	.if (. - gText_Rom_1EE96C) > 0x10
+	.error "gText_Rom_1EE96C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE96C) < 0x10
+	.space 0x10 - (. - gText_Rom_1EE96C)
+	.endif
+	.incbin "baserom.gba", 0x1ee97c, 0x6ad
+
+	@ data/maps/Route128/scripts.inc:244 Route128_Text_ArchieWhatHappened
+	.globl gText_Rom_1EF029
+gText_Rom_1EF029: @ 0x081EF029
+	.string "アオギリ『なんだ……\nこの ひどい ありさまは……?\pおれは……\nとんでもない まちがいを……$"
+	.if (. - gText_Rom_1EF029) > 0x30
+	.error "gText_Rom_1EF029 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EF029) < 0x30
+	.space 0x30 - (. - gText_Rom_1EF029)
+	.endif
+
+	@ data/maps/Route128/scripts.inc:247 Route128_Text_ArchieIOnlyWanted
+	.globl gText_Rom_1EF059
+gText_Rom_1EF059: @ 0x081EF059
+	.string "おれは……\nただ……$"
+	.if (. - gText_Rom_1EF059) > 0xb
+	.error "gText_Rom_1EF059 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EF059) < 0xb
+	.space 0xb - (. - gText_Rom_1EF059)
+	.endif
+
+	@ data/maps/Route128/scripts.inc:250 Route128_Text_MaxieDoYouUnderstandNow
+	.globl gText_Rom_1EF064
+gText_Rom_1EF064: @ 0x081EF064
+	.string "マツブサ『わかったか アオギリ!\pおまえの……\nいや われわれの したことが\lどれほど おろか だったのか……\pとにかく いそぐんだ!\nこれいじょう ひどく ならぬうちに\lなんとか しないとな!$"
+	.if (. - gText_Rom_1EF064) > 0x62
+	.error "gText_Rom_1EF064 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EF064) < 0x62
+	.space 0x62 - (. - gText_Rom_1EF064)
+	.endif
+
+	@ data/maps/Route128/scripts.inc:253 Route128_Text_MaxieResposibilityFallsToArchieAndMe
+	.globl gText_Rom_1EF0C6
+gText_Rom_1EF0C6: @ 0x081EF0C6
+	.string "マツブサ『{PLAYER} なにも いうな\pわたしに アオギリを せめる\nしかくが ないことは わかっている……\pこんな ことに なった いじょう\nもう にんげんの ちからでは\lどうする ことも できない だろう\pしかし だから といって\nだまって みている わけにも いかない\pこの あとしまつを つけるのは\nわたしと アオギリの やくめ…… か……$"
+	.if (. - gText_Rom_1EF0C6) > 0xab
+	.error "gText_Rom_1EF0C6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EF0C6) < 0xab
+	.space 0xab - (. - gText_Rom_1EF0C6)
+	.endif
+
+	@ data/maps/Route128/scripts.inc:256 Route128_Text_MaxieThisDefiesBelief
+	.globl gText_Rom_1EF171
+gText_Rom_1EF171: @ 0x081EF171
+	.string "マツブサ『それにしても……\pちょう こだいポケモン……\nなんという パワーだ\lすべての バランスが くずれたぞ……$"
+	.if (. - gText_Rom_1EF171) > 0x3a
+	.error "gText_Rom_1EF171 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EF171) < 0x3a
+	.space 0x3a - (. - gText_Rom_1EF171)
+	.endif
+
+	@ data/maps/Route128/scripts.inc:259 Route128_Text_StevenWhatIsHappening
+	.globl gText_Rom_1EF1AB
+gText_Rom_1EF1AB: @ 0x081EF1AB
+	.string "ダイゴ『{PLAYER}{KUN}!\nこれは いったい……?$"
+	.if (. - gText_Rom_1EF1AB) > 0x16
+	.error "gText_Rom_1EF1AB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EF1AB) < 0x16
+	.space 0x16 - (. - gText_Rom_1EF1AB)
+	.endif
+
+	@ data/maps/Route128/scripts.inc:262 Route128_Text_StevenWholeWorldWillDrown
+	.globl gText_Rom_1EF1C1
+gText_Rom_1EF1C1: @ 0x081EF1C1
+	.string "……ひどいな\pさっきは はげしい ひでり だったのに\nまた おおあめが ふりはじめている\pこのまま では ホウエンちほう……\nいや せかいじゅうが しずむ!\pこの あめを ふらせている くもは\nルネの じょうくうを ちゅうしんに\lひろがって いるのか……\pいったい あそこで\nなにが おきている!?\pここで あれこれ かんがえるより\nルネに いけば わかるか……$"
+	.if (. - gText_Rom_1EF1C1) > 0xb6
+	.error "gText_Rom_1EF1C1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EF1C1) < 0xb6
+	.space 0xb6 - (. - gText_Rom_1EF1C1)
+	.endif
+
+	@ data/maps/Route128/scripts.inc:265 Route128_Text_StevenImGoingToSootopolis
+	.globl gText_Rom_1EF277
+gText_Rom_1EF277: @ 0x081EF277
+	.string "{PLAYER}{KUN}……\nきみが なにを する つもりか\lわからないけど ムリだけは するなよ\p……じゃあ\nボクは ルネに いくから$"
+	.if (. - gText_Rom_1EF277) > 0x3d
+	.error "gText_Rom_1EF277 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EF277) < 0x3d
+	.space 0x3d - (. - gText_Rom_1EF277)
+	.endif
+	.incbin "baserom.gba", 0x1ef2b4, 0x798
+
+	@ data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc:286 PlayersHouse_1F_Text_IsntItNiceInHere
+	.globl gText_Rom_1EFA4C
+gText_Rom_1EFA4C: @ 0x081EFA4C
+	.string "ママ『ほら {PLAYER}!\nおうちの なかも すてき でしょ!$"
+	.if (. - gText_Rom_1EFA4C) > 0x1c
+	.error "gText_Rom_1EFA4C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EFA4C) < 0x1c
+	.space 0x1c - (. - gText_Rom_1EFA4C)
+	.endif
+
+	@ data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc:290 PlayersHouse_1F_Text_MoversPokemonGoSetClock
+	.globl gText_Rom_1EFA68
+gText_Rom_1EFA68: @ 0x081EFA68
+	.string "おうちの かたづけは\nひっこしやさんの ポケモンが\lてつだって くれるから らくちんね!\p{PLAYER}も 2かいに ある\nじぶんの おへやに いってごらん!\pパパが ひっこしの おいわいに\nかってくれた とけいが あるから\lじかんを あわせて おきなさいよ$"
+	.if (. - gText_Rom_1EFA68) > 0x7d
+	.error "gText_Rom_1EFA68 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EFA68) < 0x7d
+	.space 0x7d - (. - gText_Rom_1EFA68)
+	.endif
+
+	@ data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc:300 PlayersHouse_1F_Text_ArentYouInterestedInRoom
+	.globl gText_Rom_1EFAE5
+gText_Rom_1EFAE5: @ 0x081EFAE5
+	.string "ママ『{PLAYER}\pじぶんの へやを みてこないの?$"
+	.if (. - gText_Rom_1EFAE5) > 0x17
+	.error "gText_Rom_1EFAE5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EFAE5) < 0x17
+	.space 0x17 - (. - gText_Rom_1EFAE5)
+	.endif
+
+	@ data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc:304 PlayersHouse_1F_Text_GoSetTheClock
+	.globl gText_Rom_1EFAFC
+gText_Rom_1EFAFC: @ 0x081EFAFC
+	.string "ママ『{PLAYER}\pおへやの とけい あわせてきて$"
+	.if (. - gText_Rom_1EFAFC) > 0x16
+	.error "gText_Rom_1EFAFC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EFAFC) < 0x16
+	.space 0x16 - (. - gText_Rom_1EFAFC)
+	.endif
+

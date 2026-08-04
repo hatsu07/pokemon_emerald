@@ -1,0 +1,3997 @@
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:336 BattleFrontier_OutsideWest_Text_PleaseBoardFerry (+1 aliases)
+	.globl gText_Rom_209CAA
+gText_Rom_209CAA: @ 0x08209CAA
+	.string "れんらくせんに のって おまちください$"
+	.if (. - gText_Rom_209CAA) > 0x14
+	.error "gText_Rom_209CAA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209CAA) < 0x14
+	.space 0x14 - (. - gText_Rom_209CAA)
+	.endif
+
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:339 BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo (+1 aliases)
+	.globl gText_Rom_209CBE
+gText_Rom_209CBE: @ 0x08209CBE
+	.string "いきさきは どちら でしょう?$"
+	.if (. - gText_Rom_209CBE) > 0x10
+	.error "gText_Rom_209CBE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209CBE) < 0x10
+	.space 0x10 - (. - gText_Rom_209CBE)
+	.endif
+
+	@ field-script:0x209B18 FieldScriptText_209CCE
+	.globl gText_Rom_209CCE
+gText_Rom_209CCE: @ 0x08209CCE
+	.string "れんらくせんが　かんせい　しないと\nふなのり　というものは　ヒマだぜ……\pカイナの　ぞうせんじょの　れんちゅう\nしゃかりきに　がんばって　くれよな$"
+	.if (. - gText_Rom_209CCE) > 0x4a
+	.error "gText_Rom_209CCE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209CCE) < 0x4a
+	.space 0x4a - (. - gText_Rom_209CCE)
+	.endif
+
+	@ field-script:0x209B22 FieldScriptText_209D18
+	.globl gText_Rom_209D18
+gText_Rom_209D18: @ 0x08209D18
+	.string "やっと　れんらくせん　タイドリップごうが\nうんこう　するように　なったんだ！\pカイナの　ぞうせんじょの　みんな\nたいへん　だったろうな\lこれからは　おれが　いそがしくなるぞ！$"
+	.if (. - gText_Rom_209D18) > 0x58
+	.error "gText_Rom_209D18 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209D18) < 0x58
+	.space 0x58 - (. - gText_Rom_209D18)
+	.endif
+	.incbin "baserom.gba", 0x209d70, 0xf3
+
+	@ field-script:0x209D7E FieldScriptText_209E63
+	.globl gText_Rom_209E63
+gText_Rom_209E63: @ 0x08209E63
+	.string "えーと……\nそうじゃ　わし　わすれじいさん\pポケモンの　わざを\nわすれさせる　ことが　できるんじゃ！\pわざを　わすれ　させるかね？$"
+	.if (. - gText_Rom_209E63) > 0x42
+	.error "gText_Rom_209E63 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209E63) < 0x42
+	.space 0x42 - (. - gText_Rom_209E63)
+	.endif
+
+	@ field-script:0x209DA3 FieldScriptText_209EA5
+	.globl gText_Rom_209EA5
+gText_Rom_209EA5: @ 0x08209EA5
+	.string "どの　ポケモンに　するんじゃ？$"
+	.if (. - gText_Rom_209EA5) > 0x10
+	.error "gText_Rom_209EA5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209EA5) < 0x10
+	.space 0x10 - (. - gText_Rom_209EA5)
+	.endif
+
+	@ field-script:0x209DD6 FieldScriptText_209EB5
+	.globl gText_Rom_209EB5
+gText_Rom_209EB5: @ 0x08209EB5
+	.string "どの　わざを\nわすれ　させるんじゃ？$"
+	.if (. - gText_Rom_209EB5) > 0x13
+	.error "gText_Rom_209EB5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209EB5) < 0x13
+	.space 0x13 - (. - gText_Rom_209EB5)
+	.endif
+
+	@ field-script:0x209E3A FieldScriptText_209EC8
+	.globl gText_Rom_209EC8
+gText_Rom_209EC8: @ 0x08209EC8
+	.string "{0xFD}{0x02}は　わざを　1つしか\nもってない　ようじゃ……$"
+	.if (. - gText_Rom_209EC8) > 0x1a
+	.error "gText_Rom_209EC8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209EC8) < 0x1a
+	.space 0x1a - (. - gText_Rom_209EC8)
+	.endif
+
+	@ field-script:0x209DF3 FieldScriptText_209EE2
+	.globl gText_Rom_209EE2
+gText_Rom_209EE2: @ 0x08209EE2
+	.string "むむ！\n{0xFD}{0x02}の　{0xFD}{0x03}じゃな？$"
+	.if (. - gText_Rom_209EE2) > 0xf
+	.error "gText_Rom_209EE2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209EE2) < 0xf
+	.space 0xf - (. - gText_Rom_209EE2)
+	.endif
+
+	@ field-script:0x209E2D FieldScriptText_209EF1
+	.globl gText_Rom_209EF1
+gText_Rom_209EF1: @ 0x08209EF1
+	.string "だいせいこう　じゃ！\p{0xFD}{0x02}は　{0xFD}{0x03}を\nわすれた　ようじゃ！$"
+	.if (. - gText_Rom_209EF1) > 0x1e
+	.error "gText_Rom_209EF1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209EF1) < 0x1e
+	.space 0x1e - (. - gText_Rom_209EF1)
+	.endif
+
+	@ field-script:0x209E4E FieldScriptText_209F0F
+	.globl gText_Rom_209F0F
+gText_Rom_209F0F: @ 0x08209F0F
+	.string "わすれさせたい　わざが　あったら\nまた　くるのじゃぞ！$"
+	.if (. - gText_Rom_209F0F) > 0x1c
+	.error "gText_Rom_209F0F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209F0F) < 0x1c
+	.space 0x1c - (. - gText_Rom_209F0F)
+	.endif
+
+	@ field-script:0x209E44 FieldScriptText_209F2B
+	.globl gText_Rom_209F2B
+gText_Rom_209F2B: @ 0x08209F2B
+	.string "なぬ！？　タマゴは\nわざを　おぼえていない　ようじゃが……？$"
+	.if (. - gText_Rom_209F2B) > 0x1f
+	.error "gText_Rom_209F2B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209F2B) < 0x1f
+	.space 0x1f - (. - gText_Rom_209F2B)
+	.endif
+
+	@ field-script:0x209E5B FieldScriptText_209F4A
+	.globl gText_Rom_209F4A
+gText_Rom_209F4A: @ 0x08209F4A
+	.string "むむ！\p{0xFD}{0x02}は　なみのりを\nわすれたくない　ようじゃ！$"
+	.if (. - gText_Rom_209F4A) > 0x1c
+	.error "gText_Rom_209F4A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209F4A) < 0x1c
+	.space 0x1c - (. - gText_Rom_209F4A)
+	.endif
+	.incbin "baserom.gba", 0x209f66, 0x1d
+
+	@ data/maps/LilycoveCity_House1/scripts.inc:18 LilycoveCity_House1_Text_PokemonPartnersNotTools
+	.globl gText_Rom_209F83
+gText_Rom_209F83: @ 0x08209F83
+	.string "ポケモンは にんげんの パートナーであって\nけっして にんげんの どうぐ じゃないよ\pそこを かんちがい しておる\nにんげんも たまに いるんだよ……$"
+	.if (. - gText_Rom_209F83) > 0x4c
+	.error "gText_Rom_209F83 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209F83) < 0x4c
+	.space 0x4c - (. - gText_Rom_209F83)
+	.endif
+
+	@ data/maps/LilycoveCity_House1/scripts.inc:21 LilycoveCity_House1_Text_Kecleon
+	.globl gText_Rom_209FCF
+gText_Rom_209FCF: @ 0x08209FCF
+	.string "カクレオン『るろろ……?$"
+	.if (. - gText_Rom_209FCF) > 0xd
+	.error "gText_Rom_209FCF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209FCF) < 0xd
+	.space 0xd - (. - gText_Rom_209FCF)
+	.endif
+	.incbin "baserom.gba", 0x209fdc, 0x42
+
+	@ data/maps/LilycoveCity_House2/scripts.inc:21 LilycoveCity_House2_Text_NotAwakeYetHaveThis
+	.globl gText_Rom_20A01E
+gText_Rom_20A01E: @ 0x0820A01E
+	.string "むにゃむにゃ……\pぼく ねぼけて いるから\nこれを あげる……$"
+	.if (. - gText_Rom_20A01E) > 0x20
+	.error "gText_Rom_20A01E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A01E) < 0x20
+	.space 0x20 - (. - gText_Rom_20A01E)
+	.endif
+
+	@ data/maps/LilycoveCity_House2/scripts.inc:24 LilycoveCity_House2_Text_SleepIsEssential
+	.globl gText_Rom_20A03E
+gText_Rom_20A03E: @ 0x0820A03E
+	.string "むにゃむにゃ……\pねる こは そだつ……\nねむって たいりょく かいふく……$"
+	.if (. - gText_Rom_20A03E) > 0x27
+	.error "gText_Rom_20A03E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A03E) < 0x27
+	.space 0x27 - (. - gText_Rom_20A03E)
+	.endif
+	.incbin "baserom.gba", 0x20a065, 0x15d
+
+	@ data/maps/LilycoveCity_House3/scripts.inc:100 LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks
+	.globl gText_Rom_20A1C2
+gText_Rom_20A1C2: @ 0x0820A1C2
+	.string "あら あら あら！ あなた わかいのに\nひとりたび? えらいわねえー！\lうちのこ たちにも みならわせたいわあ\pおばさんは ポロックめいじん！\nちょいと ほんきを だせば\lすごく いい ポロックを つくれるのよー！\pポロックめいじんの おばさんが\nいろいろと おしえてあげようか?$"
+	.if (. - gText_Rom_20A1C2) > 0x8d
+	.error "gText_Rom_20A1C2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A1C2) < 0x8d
+	.space 0x8d - (. - gText_Rom_20A1C2)
+	.endif
+
+	@ data/maps/LilycoveCity_House3/scripts.inc:103 LilycoveCity_House3_Text_OhAreYouSure
+	.globl gText_Rom_20A24F
+gText_Rom_20A24F: @ 0x0820A24F
+	.string "あらあ そう?\nなんでも じぶん ひとりだけで\lがんばろうと しちゃ ダメよー！$"
+	.if (. - gText_Rom_20A24F) > 0x29
+	.error "gText_Rom_20A24F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A24F) < 0x29
+	.space 0x29 - (. - gText_Rom_20A24F)
+	.endif
+
+	@ data/maps/LilycoveCity_House3/scripts.inc:106 LilycoveCity_House3_Text_ExplainPokeblocks
+	.globl gText_Rom_20A278
+gText_Rom_20A278: @ 0x0820A278
+	.string "あらあ すなおな いいコねえー！\nじゃ ちょっとながいけど ききなさいよ\pいい?\pポロックには なめらかさって もんが あるの\nポロックを みれば わかるでしょ?\lこの すうじが ひくいほど なめらかなの！\lここ まちがっちゃ ダメよ！\pなめらかさの すうじが ひくくて\nレベルが たかいのが いい ポロック！\lいい ポロックは たくさん\lポケモンが たべて くれるんだから！\pそれと いい?\pなめらかな ポロックが つくりたかったら\nけちらないで いろんな しゅるいの\lきのみで つくってみるのよ！\lまぜた きのみによって なめらかさが\lちがって くるんだから！\pそれと いい?\pなるべく おおぜいで つくったほうが\nなめらかな ポロックが できるのよ！\lだれでも いいから おねがいして\lいっしょに つくって もらいなさいよ！\pさてと このくらい おぼえて おけば\nあなたも いちにんまえに なれるわよ！\pだいすきな ポケモンと なめらか ポロック\nそして なかよし かぞくが いれば\lこのよは しあわせ！\lあなたも がんばりなさいな！$"
+	.if (. - gText_Rom_20A278) > 0x1d7
+	.error "gText_Rom_20A278 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A278) < 0x1d7
+	.space 0x1d7 - (. - gText_Rom_20A278)
+	.endif
+
+	@ data/maps/LilycoveCity_House3/scripts.inc:109 LilycoveCity_House3_Text_HappyToHaveQuadruplets
+	.globl gText_Rom_20A44F
+gText_Rom_20A44F: @ 0x0820A44F
+	.string "よつごが うまれた ときは\nすごく ビックリ したが\lみんなで なかよく あそんでいる すがたを\lみていると しあわせ きぶんに なるよ！$"
+	.if (. - gText_Rom_20A44F) > 0x46
+	.error "gText_Rom_20A44F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A44F) < 0x46
+	.space 0x46 - (. - gText_Rom_20A44F)
+	.endif
+
+	@ data/maps/LilycoveCity_House3/scripts.inc:112 LilycoveCity_House3_Text_GoingToWinMultiBattles
+	.globl gText_Rom_20A495
+gText_Rom_20A495: @ 0x0820A495
+	.string "マルチバトル してるけど\nぼくが かつに きまってるぜ！$"
+	.if (. - gText_Rom_20A495) > 0x1d
+	.error "gText_Rom_20A495 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A495) < 0x1d
+	.space 0x1d - (. - gText_Rom_20A495)
+	.endif
+
+	@ data/maps/LilycoveCity_House3/scripts.inc:115 LilycoveCity_House3_Text_LikeMixingAtRecordCorner
+	.globl gText_Rom_20A4B2
+gText_Rom_20A4B2: @ 0x0820A4B2
+	.string "レコードコーナーで まぜまくる！\nって なにが まざってるんだ?$"
+	.if (. - gText_Rom_20A4B2) > 0x21
+	.error "gText_Rom_20A4B2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A4B2) < 0x21
+	.space 0x21 - (. - gText_Rom_20A4B2)
+	.endif
+
+	@ data/maps/LilycoveCity_House3/scripts.inc:118 LilycoveCity_House3_Text_MakePokeblocksWithBerryBlender
+	.globl gText_Rom_20A4D3
+gText_Rom_20A4D3: @ 0x0820A4D3
+	.string "きのみブレンダーで\nとびっきりの ポロック つくっちゃうぜ！$"
+	.if (. - gText_Rom_20A4D3) > 0x1f
+	.error "gText_Rom_20A4D3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A4D3) < 0x1f
+	.space 0x1f - (. - gText_Rom_20A4D3)
+	.endif
+
+	@ data/maps/LilycoveCity_House3/scripts.inc:121 LilycoveCity_House3_Text_GoingToEnterContest
+	.globl gText_Rom_20A4F2
+gText_Rom_20A4F2: @ 0x0820A4F2
+	.string "ポケモンの たくましさ じまん したいから\nみんなで コンテスト してるんだ！$"
+	.if (. - gText_Rom_20A4F2) > 0x28
+	.error "gText_Rom_20A4F2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A4F2) < 0x28
+	.space 0x28 - (. - gText_Rom_20A4F2)
+	.endif
+	.incbin "baserom.gba", 0x20a51a, 0x13
+
+	@ data/maps/LilycoveCity_House4/scripts.inc:12 LilycoveCity_House4_Text_MysteriesAtBottomOfSea
+	.globl gText_Rom_20A52D
+gText_Rom_20A52D: @ 0x0820A52D
+	.string "この ほしの さいだいの なぞ\nそれは かいていに あると おもうんだ！\p……というのは\nだれかが いってた ことなんだけど$"
+	.if (. - gText_Rom_20A52D) > 0x3f
+	.error "gText_Rom_20A52D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A52D) < 0x3f
+	.space 0x3f - (. - gText_Rom_20A52D)
+	.endif
+
+	@ data/maps/LilycoveCity_House4/scripts.inc:15 LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis
+	.globl gText_Rom_20A56C
+gText_Rom_20A56C: @ 0x0820A56C
+	.string "そういや トクサネと ルネの あいだには\nふかい ふかい かいこうが ある\p……そんな はなしも\nだれかが いってた ことなんだけど$"
+	.if (. - gText_Rom_20A56C) > 0x43
+	.error "gText_Rom_20A56C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A56C) < 0x43
+	.space 0x43 - (. - gText_Rom_20A56C)
+	.endif
+	.incbin "baserom.gba", 0x20a5af, 0x1d4
+
+	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:141 LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore
+	.globl gText_Rom_20A783
+gText_Rom_20A783: @ 0x0820A783
+	.string "いらっしゃいませ！\nミナモ デパート です$"
+	.if (. - gText_Rom_20A783) > 0x16
+	.error "gText_Rom_20A783 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A783) < 0x16
+	.space 0x16 - (. - gText_Rom_20A783)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:144 LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings
+	.globl gText_Rom_20A799
+gText_Rom_20A799: @ 0x0820A799
+	.string "デパートに くると たのしくなって\nいろんな ものを かっちゃうのよ$"
+	.if (. - gText_Rom_20A799) > 0x23
+	.error "gText_Rom_20A799 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A799) < 0x23
+	.space 0x23 - (. - gText_Rom_20A799)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:147 LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture
+	.globl gText_Rom_20A7BC
+gText_Rom_20A7BC: @ 0x0820A7BC
+	.string "きょうは すてきな かぐを\nおかあさんに かって もらうの$"
+	.if (. - gText_Rom_20A7BC) > 0x1e
+	.error "gText_Rom_20A7BC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A7BC) < 0x1e
+	.space 0x1e - (. - gText_Rom_20A7BC)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:150 LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill
+	.globl gText_Rom_20A7DA
+gText_Rom_20A7DA: @ 0x0820A7DA
+	.string "コンテストで ゆうしょうした ごほうびに\nマリルリに なにか かって あげるんだよ！$"
+	.if (. - gText_Rom_20A7DA) > 0x2b
+	.error "gText_Rom_20A7DA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A7DA) < 0x2b
+	.space 0x2b - (. - gText_Rom_20A7DA)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:153 LilycoveCity_DepartmentStore_1F_Text_Azumarill
+	.globl gText_Rom_20A805
+gText_Rom_20A805: @ 0x0820A805
+	.string "マリルリ『まりりるぅー！$"
+	.if (. - gText_Rom_20A805) > 0xd
+	.error "gText_Rom_20A805 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A805) < 0xd
+	.space 0xd - (. - gText_Rom_20A805)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:156 LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign
+	.globl gText_Rom_20A812
+gText_Rom_20A812: @ 0x0820A812
+	.string "1かい …… サービス カウンター\n       ちゅうせん かいじょう\p2かい …… トレーナーズ ゾーン\p3かい …… バトル コレクション\p4かい …… わざマシン コーナー\p5かい …… ぬいぐるみ フロアー\pおくじょう …… いこいの ひろば$"
+	.if (. - gText_Rom_20A812) > 0x7f
+	.error "gText_Rom_20A812 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A812) < 0x7f
+	.space 0x7f - (. - gText_Rom_20A812)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:160 LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun
+	.globl gText_Rom_20A891
+gText_Rom_20A891: @ 0x0820A891
+	.string "むせん つうしん って\nたのしい よね！\pいままで できなかった ことが\nできるようになる きが するの！\pむせんで こうかん できなかった\nともだちも ブーッと できたり！\pなんだか とっても\nわくわく しちゃう！$"
+	.if (. - gText_Rom_20A891) > 0x6d
+	.error "gText_Rom_20A891 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A891) < 0x6d
+	.space 0x6d - (. - gText_Rom_20A891)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:164 LilycoveCity_DepartmentStore_1F_Text_SpreadWordAboutWirelessComm
+	.globl gText_Rom_20A8FE
+gText_Rom_20A8FE: @ 0x0820A8FE
+	.string "むせん つうしんの たのしさを\nたくさんの ひとに つたえたいなー$"
+	.if (. - gText_Rom_20A8FE) > 0x22
+	.error "gText_Rom_20A8FE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A8FE) < 0x22
+	.space 0x22 - (. - gText_Rom_20A8FE)
+	.endif
+	.incbin "baserom.gba", 0x20a920, 0x80
+
+	@ data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc:65 LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly
+	.globl gText_Rom_20A9A0
+gText_Rom_20A9A0: @ 0x0820A9A0
+	.string "どうぐの きほんは うまく つかいこなすこと\nこれ いちばん だいじ なのヨ$"
+	.if (. - gText_Rom_20A9A0) > 0x27
+	.error "gText_Rom_20A9A0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A9A0) < 0x27
+	.space 0x27 - (. - gText_Rom_20A9A0)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc:68 LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband
+	.globl gText_Rom_20A9C7
+gText_Rom_20A9C7: @ 0x0820A9C7
+	.string "いえで まってる ダンナの\nおみやげ なんだけど どれが いいかしら?$"
+	.if (. - gText_Rom_20A9C7) > 0x24
+	.error "gText_Rom_20A9C7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A9C7) < 0x24
+	.space 0x24 - (. - gText_Rom_20A9C7)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc:71 LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems
+	.globl gText_Rom_20A9EB
+gText_Rom_20A9EB: @ 0x0820A9EB
+	.string "これから とおい ところへ\nたびに いくからな\lここで どっさり どうぐを かっておくのさ$"
+	.if (. - gText_Rom_20A9EB) > 0x2e
+	.error "gText_Rom_20A9EB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20A9EB) < 0x2e
+	.space 0x2e - (. - gText_Rom_20A9EB)
+	.endif
+	.incbin "baserom.gba", 0x20aa19, 0x70
+
+	@ data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc:57 LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon
+	.globl gText_Rom_20AA89
+gText_Rom_20AA89: @ 0x0820AA89
+	.string "てっとりばやく ポケモンを つよくするなら\nどうぐを あたえるのが いちばん!\pタウリンなら こうげきりょく アップ!\nリゾチウムなら とくこう アップ だぜ!$"
+	.if (. - gText_Rom_20AA89) > 0x51
+	.error "gText_Rom_20AA89 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20AA89) < 0x51
+	.space 0x51 - (. - gText_Rom_20AA89)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc:60 LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_20AADA
+gText_Rom_20AADA: @ 0x0820AADA
+	.string "じょうぶな ポケモンに\nなって ほしいからね\pブロムヘキシンで ぼうぎょりょくを あげるか\nキトサンで とくぼうを あげるか\lいま かんがえている ところ なんだ$"
+	.if (. - gText_Rom_20AADA) != 0x52
+	.error "gText_Rom_20AADA must retain its original byte length"
+	.endif
+	.globl gText_Rom_20AB28
+	.set gText_Rom_20AB28, gText_Rom_20AADA + 0x4e
+
+	@ data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc:63 LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon
+	.globl gText_Rom_20AB2C
+gText_Rom_20AB2C: @ 0x0820AB2C
+	.string "ポケモンにね\nインドメタシンを あげたら\lすばやさが あがったの!$"
+	.if (. - gText_Rom_20AB2C) > 0x22
+	.error "gText_Rom_20AB2C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20AB2C) < 0x22
+	.space 0x22 - (. - gText_Rom_20AB2C)
+	.endif
+	.incbin "baserom.gba", 0x20ab4e, 0x66
+
+	@ data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc:52 LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM
+	.globl gText_Rom_20ABB4
+gText_Rom_20ABB4: @ 0x0820ABB4
+	.string "うむむ……\pこうげきの わざ か……\nまもりの わざ か……\pどの わざマシンを\nポケモンに おぼえさせるか なやむ……$"
+	.if (. - gText_Rom_20ABB4) > 0x3d
+	.error "gText_Rom_20ABB4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20ABB4) < 0x3d
+	.space 0x3d - (. - gText_Rom_20ABB4)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc:55 LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs
+	.globl gText_Rom_20ABF1
+gText_Rom_20ABF1: @ 0x0820ABF1
+	.string "わざマシンって たくさん あるのね!\pなにかの カタログには\nぜんぶで 50しゅるい って\lかいて あったわ$"
+	.if (. - gText_Rom_20ABF1) > 0x37
+	.error "gText_Rom_20ABF1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20ABF1) < 0x37
+	.space 0x37 - (. - gText_Rom_20ABF1)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc:58 LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves
+	.globl gText_Rom_20AC28
+gText_Rom_20AC28: @ 0x0820AC28
+	.string "わざマシン ぜんぶ ほしいけど\nポケモン 4つしか わざ おぼえないもんな$"
+	.if (. - gText_Rom_20AC28) > 0x26
+	.error "gText_Rom_20AC28 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20AC28) < 0x26
+	.space 0x26 - (. - gText_Rom_20AC28)
+	.endif
+	.incbin "baserom.gba", 0x20ac4e, 0x14b
+
+	@ data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc:145 LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls
+	.globl gText_Rom_20AD99
+gText_Rom_20AD99: @ 0x0820AD99
+	.string "すてきな ぬいぐるみが いっぱい なのねー\nこどものぶん だけじゃ なくて\lあたしのぶんも かおうかしら オホホホホ!$"
+	.if (. - gText_Rom_20AD99) > 0x3c
+	.error "gText_Rom_20AD99 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20AD99) < 0x3c
+	.space 0x3c - (. - gText_Rom_20AD99)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc:148 LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon
+	.globl gText_Rom_20ADD5
+gText_Rom_20ADD5: @ 0x0820ADD5
+	.string "あたし まだ ポケモン そだてられないから\nかわいい ぬいぐるみ かってもらうの$"
+	.if (. - gText_Rom_20ADD5) > 0x29
+	.error "gText_Rom_20ADD5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20ADD5) < 0x29
+	.space 0x29 - (. - gText_Rom_20ADD5)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc:151 LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere
+	.globl gText_Rom_20ADFE
+gText_Rom_20ADFE: @ 0x0820ADFE
+	.string "かわいい マットが たくさん うってるの!\nどれを かおうかな……\lぜーんぶ かっちゃおうかな……$"
+	.if (. - gText_Rom_20ADFE) > 0x32
+	.error "gText_Rom_20ADFE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20ADFE) < 0x32
+	.space 0x32 - (. - gText_Rom_20ADFE)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc:154 LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather
+	.globl gText_Rom_20AE30
+gText_Rom_20AE30: @ 0x0820AE30
+	.string "いまは てんきが あれてるから\nおくじょうに でられない みたい……$"
+	.if (. - gText_Rom_20AE30) > 0x23
+	.error "gText_Rom_20AE30 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20AE30) < 0x23
+	.space 0x23 - (. - gText_Rom_20AE30)
+	.endif
+	.incbin "baserom.gba", 0x20ae53, 0x25c
+
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:187 LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales
+	.globl gText_Rom_20B0AF
+gText_Rom_20B0AF: @ 0x0820B0AF
+	.string "ほりだしものいち……\nいつ やるのか きまって ないのかな?\pテレビ みてても\nぜんぜん コマーシャル ないんだよね$"
+	.if (. - gText_Rom_20B0AF) > 0x3b
+	.error "gText_Rom_20B0AF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B0AF) < 0x3b
+	.space 0x3b - (. - gText_Rom_20B0AF)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:190 LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale
+	.globl gText_Rom_20B0EA
+gText_Rom_20B0EA: @ 0x0820B0EA
+	.string "まちに まった ほりだしものいち!\nここでしか かえないもの ばかり!\lよーし たくさん かっちゃうぞお!$"
+	.if (. - gText_Rom_20B0EA) > 0x36
+	.error "gText_Rom_20B0EA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B0EA) < 0x36
+	.space 0x36 - (. - gText_Rom_20B0EA)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:193 LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty
+	.globl gText_Rom_20B120
+gText_Rom_20B120: @ 0x0820B120
+	.string "ああ のどが かわいたなあ$"
+	.if (. - gText_Rom_20B120) > 0xe
+	.error "gText_Rom_20B120 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B120) < 0xe
+	.space 0xe - (. - gText_Rom_20B120)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:196 LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike
+	.globl gText_Rom_20B12E
+gText_Rom_20B12E: @ 0x0820B12E
+	.string "じどう はんばいき がある!\nほしい のみもの は……$"
+	.if (. - gText_Rom_20B12E) > 0x1c
+	.error "gText_Rom_20B12E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B12E) < 0x1c
+	.space 0x1c - (. - gText_Rom_20B12E)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:199 LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown
+	.globl gText_Rom_20B14A
+gText_Rom_20B14A: @ 0x0820B14A
+	.string "ガゴン!\p{STR_VAR_1}が でてきた!$"
+	.if (. - gText_Rom_20B14A) > 0xf
+	.error "gText_Rom_20B14A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B14A) < 0xf
+	.space 0xf - (. - gText_Rom_20B14A)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:202 LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown
+	.globl gText_Rom_20B159
+gText_Rom_20B159: @ 0x0820B159
+	.string "ガゴン!\pあたりだ! もういっぽん\n{STR_VAR_1}が でてきた!$"
+	.if (. - gText_Rom_20B159) > 0x1c
+	.error "gText_Rom_20B159 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B159) < 0x1c
+	.space 0x1c - (. - gText_Rom_20B159)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:205 LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney
+	.globl gText_Rom_20B175
+gText_Rom_20B175: @ 0x0820B175
+	.string "おかねが たりない!$"
+	.if (. - gText_Rom_20B175) > 0xb
+	.error "gText_Rom_20B175 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B175) < 0xb
+	.space 0xb - (. - gText_Rom_20B175)
+	.endif
+
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:208 LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink
+	.globl gText_Rom_20B180
+gText_Rom_20B180: @ 0x0820B180
+	.string "……やっぱり やめた!$"
+	.if (. - gText_Rom_20B180) > 0xc
+	.error "gText_Rom_20B180 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B180) < 0xc
+	.space 0xc - (. - gText_Rom_20B180)
+	.endif
+	.incbin "baserom.gba", 0x20b18c, 0x6b2
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:372 MossdeepCity_Gym_Text_GymGuideAdvice
+	.globl gText_Rom_20B83E
+gText_Rom_20B83E: @ 0x0820B83E
+	.string "げんき しとぉや!!\nチャンピオンを めざす {PLAYER}!!\pこのジムの ジムリーダーは\nエスパータイプの ポケモンつかい!\pかくとうタイプや どくタイプの\nポケモンで いどむと\lものすごい ダメージを くらうぞ!\pしかも ばつぐんの\nコンビネーションで せめてくる!\pだから きみも かつために ポケモンとの\nきずなを きばって みせて やれ!$"
+	.if (. - gText_Rom_20B83E) > 0xab
+	.error "gText_Rom_20B83E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B83E) < 0xab
+	.space 0xab - (. - gText_Rom_20B83E)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:375 MossdeepCity_Gym_Text_GymGuidePostVictory
+	.globl gText_Rom_20B8E9
+gText_Rom_20B8E9: @ 0x0820B8E9
+	.string "こりゃあ たまげた!!\nきみは すごか トレーナーだ!$"
+	.if (. - gText_Rom_20B8E9) > 0x1c
+	.error "gText_Rom_20B8E9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B8E9) < 0x1c
+	.space 0x1c - (. - gText_Rom_20B8E9)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:378 MossdeepCity_Gym_Text_PrestonIntro (+1 aliases)
+	.globl gText_Rom_20B905
+gText_Rom_20B905: @ 0x0820B905
+	.string "しょうぶは こころの つよさで きまる\nこころ よわき ものは かてない!$"
+	.if (. - gText_Rom_20B905) > 0x26
+	.error "gText_Rom_20B905 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B905) < 0x26
+	.space 0x26 - (. - gText_Rom_20B905)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:381 MossdeepCity_Gym_Text_PrestonDefeat (+1 aliases)
+	.globl gText_Rom_20B92B
+gText_Rom_20B92B: @ 0x0820B92B
+	.string "まけたか!\nオレも きたえ なおさねばっ!$"
+	.if (. - gText_Rom_20B92B) > 0x16
+	.error "gText_Rom_20B92B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B92B) < 0x16
+	.space 0x16 - (. - gText_Rom_20B92B)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:384 MossdeepCity_Gym_Text_PrestonPostBattle
+	.globl gText_Rom_20B941
+gText_Rom_20B941: @ 0x0820B941
+	.string "まよった ほうが まける\nオレからの ちゅうこくだ!$"
+	.if (. - gText_Rom_20B941) > 0x1b
+	.error "gText_Rom_20B941 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B941) < 0x1b
+	.space 0x1b - (. - gText_Rom_20B941)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:387 MossdeepCity_Gym_Text_VirgilIntro (+1 aliases)
+	.globl gText_Rom_20B95C
+gText_Rom_20B95C: @ 0x0820B95C
+	.string "キミの さいのうを みせて もらおうか!$"
+	.if (. - gText_Rom_20B95C) > 0x15
+	.error "gText_Rom_20B95C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B95C) < 0x15
+	.space 0x15 - (. - gText_Rom_20B95C)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:390 MossdeepCity_Gym_Text_VirgilDefeat (+1 aliases)
+	.globl gText_Rom_20B971
+gText_Rom_20B971: @ 0x0820B971
+	.string "すばらしい さいのうの もちぬしだ!$"
+	.if (. - gText_Rom_20B971) > 0x13
+	.error "gText_Rom_20B971 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B971) < 0x13
+	.space 0x13 - (. - gText_Rom_20B971)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:393 MossdeepCity_Gym_Text_VirgilPostBattle
+	.globl gText_Rom_20B984
+gText_Rom_20B984: @ 0x0820B984
+	.string "よのなかに てんさいが いるならば\nここの ジムリーダーが そうだ……\pだが もしかすると キミの ほうが\nさいのうは うえかも しれない……$"
+	.if (. - gText_Rom_20B984) > 0x48
+	.error "gText_Rom_20B984 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B984) < 0x48
+	.space 0x48 - (. - gText_Rom_20B984)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:396 MossdeepCity_Gym_Text_BlakeIntro (+1 aliases)
+	.globl gText_Rom_20B9CC
+gText_Rom_20B9CC: @ 0x0820B9CC
+	.string "ふふふ……\nねんりきで モンスターボールを\lくうちゅうに うかせて みせよう……\pうおおぉぉぉぉぉ……!\p…… …… ……\n…… …… ……\pちょうしの わるい ときも ある……$"
+	.if (. - gText_Rom_20B9CC) > 0x5a
+	.error "gText_Rom_20B9CC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B9CC) < 0x5a
+	.space 0x5a - (. - gText_Rom_20B9CC)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:399 MossdeepCity_Gym_Text_BlakeDefeat (+1 aliases)
+	.globl gText_Rom_20BA26
+gText_Rom_20BA26: @ 0x0820BA26
+	.string "ポケモン しょうぶも\nちょうし わりーっ!$"
+	.if (. - gText_Rom_20BA26) > 0x16
+	.error "gText_Rom_20BA26 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BA26) < 0x16
+	.space 0x16 - (. - gText_Rom_20BA26)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:402 MossdeepCity_Gym_Text_BlakePostBattle
+	.globl gText_Rom_20BA3C
+gText_Rom_20BA3C: @ 0x0820BA3C
+	.string "モンスターボールは おおきすぎた\nこの わたぼこり なら ぜったいに……\pふううううううっ……!\p…… …… ……\n…… …… ……\pちがうぞ!\nはないきで とばして なんか いないぞ!$"
+	.if (. - gText_Rom_20BA3C) > 0x5e
+	.error "gText_Rom_20BA3C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BA3C) < 0x5e
+	.space 0x5e - (. - gText_Rom_20BA3C)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:405 MossdeepCity_Gym_Text_HannahIntro (+1 aliases)
+	.globl gText_Rom_20BA9A
+gText_Rom_20BA9A: @ 0x0820BA9A
+	.string "あなたが アタシに まけた としても\nおちこまない ことね!\pあなたが よわい わけじゃ なくて\nアタシが つよすぎる からよ!$"
+	.if (. - gText_Rom_20BA9A) > 0x41
+	.error "gText_Rom_20BA9A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BA9A) < 0x41
+	.space 0x41 - (. - gText_Rom_20BA9A)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:408 MossdeepCity_Gym_Text_HannahDefeat (+1 aliases)
+	.globl gText_Rom_20BADB
+gText_Rom_20BADB: @ 0x0820BADB
+	.string "あなたは さらに つよすぎた!$"
+	.if (. - gText_Rom_20BADB) > 0x10
+	.error "gText_Rom_20BADB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BADB) < 0x10
+	.space 0x10 - (. - gText_Rom_20BADB)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:411 MossdeepCity_Gym_Text_HannahPostBattle
+	.globl gText_Rom_20BAEB
+gText_Rom_20BAEB: @ 0x0820BAEB
+	.string "まけたから って クヨクヨ しないわ\nもっと しゅぎょう すれば いいんだもの!\pまえむきな ところが アタシの とりえ!$"
+	.if (. - gText_Rom_20BAEB) > 0x3e
+	.error "gText_Rom_20BAEB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BAEB) < 0x3e
+	.space 0x3e - (. - gText_Rom_20BAEB)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:414 MossdeepCity_Gym_Text_SamanthaIntro (+1 aliases)
+	.globl gText_Rom_20BB29
+gText_Rom_20BB29: @ 0x0820BB29
+	.string "みえる……\nあなたの みらいが みえる……\pわたくしに かてたら\nあなたの みらいを おしえて あげる!$"
+	.if (. - gText_Rom_20BB29) > 0x35
+	.error "gText_Rom_20BB29 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BB29) < 0x35
+	.space 0x35 - (. - gText_Rom_20BB29)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:417 MossdeepCity_Gym_Text_SamanthaDefeat (+2 aliases)
+	.globl gText_Rom_20BB5E
+gText_Rom_20BB5E: @ 0x0820BB5E
+	.string "まいりました……!$"
+	.if (. - gText_Rom_20BB5E) > 0xa
+	.error "gText_Rom_20BB5E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BB5E) < 0xa
+	.space 0xa - (. - gText_Rom_20BB5E)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:420 MossdeepCity_Gym_Text_SamanthaPostBattle
+	.globl gText_Rom_20BB68
+gText_Rom_20BB68: @ 0x0820BB68
+	.string "あなたと ジムリーダーさまの しょうぶ……\nものすごく はげしい てんかい……\pけっかは……\nわたくしの くちからは いえない……!$"
+	.if (. - gText_Rom_20BB68) > 0x43
+	.error "gText_Rom_20BB68 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BB68) < 0x43
+	.space 0x43 - (. - gText_Rom_20BB68)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:423 MossdeepCity_Gym_Text_MauraIntro (+1 aliases)
+	.globl gText_Rom_20BBAB
+gText_Rom_20BBAB: @ 0x0820BBAB
+	.string "あなたが これまで あゆんできた みちのり\nあなたが けいけん してきた ことがら\pすべてを ぶつけて きなさい!$"
+	.if (. - gText_Rom_20BBAB) > 0x3a
+	.error "gText_Rom_20BBAB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BBAB) < 0x3a
+	.space 0x3a - (. - gText_Rom_20BBAB)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:426 MossdeepCity_Gym_Text_MauraDefeat (+1 aliases)
+	.globl gText_Rom_20BBE5
+gText_Rom_20BBE5: @ 0x0820BBE5
+	.string "すばらしい みちのり だわ……!$"
+	.if (. - gText_Rom_20BBE5) > 0x11
+	.error "gText_Rom_20BBE5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BBE5) < 0x11
+	.space 0x11 - (. - gText_Rom_20BBE5)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:429 MossdeepCity_Gym_Text_MauraPostBattle
+	.globl gText_Rom_20BBF6
+gText_Rom_20BBF6: @ 0x0820BBF6
+	.string "がんばった ものには あかるい みらいが\nなまけた ものには ぜつぼうの あしたが\pいんがおうほう……\nすべては じぶんに はねかえる ものよ……$"
+	.if (. - gText_Rom_20BBF6) > 0x4a
+	.error "gText_Rom_20BBF6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BBF6) < 0x4a
+	.space 0x4a - (. - gText_Rom_20BBF6)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:432 MossdeepCity_Gym_Text_SylviaIntro (+1 aliases)
+	.globl gText_Rom_20BC40
+gText_Rom_20BC40: @ 0x0820BC40
+	.string "いのちを けずって でも\nこの しょうぶ かってみせるわ……!$"
+	.if (. - gText_Rom_20BC40) > 0x20
+	.error "gText_Rom_20BC40 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BC40) < 0x20
+	.space 0x20 - (. - gText_Rom_20BC40)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:435 MossdeepCity_Gym_Text_SylviaDefeat (+1 aliases)
+	.globl gText_Rom_20BC60
+gText_Rom_20BC60: @ 0x0820BC60
+	.string "あなたは\nおそろしい ことを……$"
+	.if (. - gText_Rom_20BC60) > 0x11
+	.error "gText_Rom_20BC60 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BC60) < 0x11
+	.space 0x11 - (. - gText_Rom_20BC60)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:438 MossdeepCity_Gym_Text_SylviaPostBattle
+	.globl gText_Rom_20BC71
+gText_Rom_20BC71: @ 0x0820BC71
+	.string "あたしに かったわね……\nなにが おきても しらないわよ……!$"
+	.if (. - gText_Rom_20BC71) > 0x20
+	.error "gText_Rom_20BC71 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BC71) < 0x20
+	.space 0x20 - (. - gText_Rom_20BC71)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:441 MossdeepCity_Gym_Text_NateIntro (+1 aliases)
+	.globl gText_Rom_20BC91
+gText_Rom_20BC91: @ 0x0820BC91
+	.string "ほっほっほ\pエスパータイプの てごわさを\nあなたに おしえて さしあげましょう$"
+	.if (. - gText_Rom_20BC91) > 0x28
+	.error "gText_Rom_20BC91 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BC91) < 0x28
+	.space 0x28 - (. - gText_Rom_20BC91)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:444 MossdeepCity_Gym_Text_NateDefeat (+1 aliases)
+	.globl gText_Rom_20BCB9
+gText_Rom_20BCB9: @ 0x0820BCB9
+	.string "こ これは これは!\nすばらしい たたかいかた ですな$"
+	.if (. - gText_Rom_20BCB9) > 0x1c
+	.error "gText_Rom_20BCB9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BCB9) < 0x1c
+	.space 0x1c - (. - gText_Rom_20BCB9)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:447 MossdeepCity_Gym_Text_NatePostBattle
+	.globl gText_Rom_20BCD5
+gText_Rom_20BCD5: @ 0x0820BCD5
+	.string "わ わたくしは どんなに まけても\nとりみだしは しませんから$"
+	.if (. - gText_Rom_20BCD5) > 0x20
+	.error "gText_Rom_20BCD5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BCD5) < 0x20
+	.space 0x20 - (. - gText_Rom_20BCD5)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:450 MossdeepCity_Gym_Text_KathleenIntro (+1 aliases)
+	.globl gText_Rom_20BCF5
+gText_Rom_20BCF5: @ 0x0820BCF5
+	.string "おそろしいめに あわせて やろうかーっ!$"
+	.if (. - gText_Rom_20BCF5) > 0x15
+	.error "gText_Rom_20BCF5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BCF5) < 0x15
+	.space 0x15 - (. - gText_Rom_20BCF5)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:453 MossdeepCity_Gym_Text_KathleenDefeat (+1 aliases)
+	.globl gText_Rom_20BD0A
+gText_Rom_20BD0A: @ 0x0820BD0A
+	.string "いやあああーっ!$"
+	.if (. - gText_Rom_20BD0A) > 0x9
+	.error "gText_Rom_20BD0A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BD0A) < 0x9
+	.space 0x9 - (. - gText_Rom_20BD0A)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:456 MossdeepCity_Gym_Text_KathleenPostBattle
+	.globl gText_Rom_20BD13
+gText_Rom_20BD13: @ 0x0820BD13
+	.string "あなたの げんきが うつるわ\nはやく いっちゃいなさいよ!$"
+	.if (. - gText_Rom_20BD13) > 0x1e
+	.error "gText_Rom_20BD13 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BD13) < 0x1e
+	.space 0x1e - (. - gText_Rom_20BD13)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:459 MossdeepCity_Gym_Text_CliffordIntro (+1 aliases)
+	.globl gText_Rom_20BD31
+gText_Rom_20BD31: @ 0x0820BD31
+	.string "としより だからと いって\nあまく みて もらっては こまりますよ$"
+	.if (. - gText_Rom_20BD31) > 0x22
+	.error "gText_Rom_20BD31 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BD31) < 0x22
+	.space 0x22 - (. - gText_Rom_20BD31)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:462 MossdeepCity_Gym_Text_CliffordDefeat (+1 aliases)
+	.globl gText_Rom_20BD53
+gText_Rom_20BD53: @ 0x0820BD53
+	.string "あふれる わかさを かんじる!$"
+	.if (. - gText_Rom_20BD53) > 0x10
+	.error "gText_Rom_20BD53 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BD53) < 0x10
+	.space 0x10 - (. - gText_Rom_20BD53)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:465 MossdeepCity_Gym_Text_CliffordPostBattle
+	.globl gText_Rom_20BD63
+gText_Rom_20BD63: @ 0x0820BD63
+	.string "この ジムの リーダーも そりゃもう!\nわかくて げんき はつらつ ですぞ$"
+	.if (. - gText_Rom_20BD63) > 0x26
+	.error "gText_Rom_20BD63 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BD63) < 0x26
+	.space 0x26 - (. - gText_Rom_20BD63)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:468 MossdeepCity_Gym_Text_MaceyIntro (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_20BD89
+gText_Rom_20BD89: @ 0x0820BD89
+	.string "まだよ\nまだ ジムリーダーには あわせないわよ!$"
+	.if (. - gText_Rom_20BD89) != 0x19
+	.error "gText_Rom_20BD89 must retain its original byte length"
+	.endif
+	.globl gText_Rom_20BD9E
+	.set gText_Rom_20BD9E, gText_Rom_20BD89 + 0x15
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:471 MossdeepCity_Gym_Text_MaceyDefeat (+1 aliases)
+	.globl gText_Rom_20BDA2
+gText_Rom_20BDA2: @ 0x0820BDA2
+	.string "ちょっと! なんなの その つよさ!$"
+	.if (. - gText_Rom_20BDA2) > 0x13
+	.error "gText_Rom_20BDA2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BDA2) < 0x13
+	.space 0x13 - (. - gText_Rom_20BDA2)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:474 MossdeepCity_Gym_Text_MaceyPostBattle
+	.globl gText_Rom_20BDB5
+gText_Rom_20BDB5: @ 0x0820BDB5
+	.string "フン あんたは つよいけど\nエスパーむき では ないわ!\lなんだか たたかいかたが がさつ だもん!$"
+	.if (. - gText_Rom_20BDB5) > 0x33
+	.error "gText_Rom_20BDB5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BDB5) < 0x33
+	.space 0x33 - (. - gText_Rom_20BDB5)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:477 MossdeepCity_Gym_Text_NicholasIntro (+1 aliases)
+	.globl gText_Rom_20BDE8
+gText_Rom_20BDE8: @ 0x0820BDE8
+	.string "うぉーっし! おれの\nスーパーポケモンしょうぶつよいパワー を\lうけて みろーっ!$"
+	.if (. - gText_Rom_20BDE8) > 0x2a
+	.error "gText_Rom_20BDE8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BDE8) < 0x2a
+	.space 0x2a - (. - gText_Rom_20BDE8)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:480 MossdeepCity_Gym_Text_NicholasDefeat (+1 aliases)
+	.globl gText_Rom_20BE12
+gText_Rom_20BE12: @ 0x0820BE12
+	.string "やられたあああ!$"
+	.if (. - gText_Rom_20BE12) > 0x9
+	.error "gText_Rom_20BE12 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BE12) < 0x9
+	.space 0x9 - (. - gText_Rom_20BE12)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:483 MossdeepCity_Gym_Text_NicholasPostBattle
+	.globl gText_Rom_20BE1B
+gText_Rom_20BE1B: @ 0x0820BE1B
+	.string "よし! つぎは\nスペシャルポケモンまけないパワー でも\lかいはつ するかな?$"
+	.if (. - gText_Rom_20BE1B) > 0x27
+	.error "gText_Rom_20BE1B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BE1B) < 0x27
+	.space 0x27 - (. - gText_Rom_20BE1B)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:486 MossdeepCity_Gym_Text_TateAndLizaIntro (+1 aliases)
+	.globl gText_Rom_20BE42
+gText_Rom_20BE42: @ 0x0820BE42
+	.string "フウ『へへへ…… ジムリーダーが\pラン『ふふふ…… ジムリーダーが\pフウ『ふたりも いるんで おどろいた?\nラン『ふたりも いるんで おどろいた?\pフウ『ぼくたち ふたご!\nラン『あたしたち ふたご!\pフウ『なにも ことばに しなくても\nラン『おたがいの かんがえて いることが\pフウ『あたまの なかに うかぶから\nラン『つうじあうことが できるのヨ!\pフウ『そんな ぼくたちの コンビネーション\nラン『きみに やぶることが できる?$"
+	.if (. - gText_Rom_20BE42) > 0xda
+	.error "gText_Rom_20BE42 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BE42) < 0xda
+	.space 0xda - (. - gText_Rom_20BE42)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:489 MossdeepCity_Gym_Text_TateAndLizaDefeat (+1 aliases)
+	.globl gText_Rom_20BF1C
+gText_Rom_20BF1C: @ 0x0820BF1C
+	.string "フウ『ぼっ ぼくたちの\nラン『コンビネーションが……!\pフウ『やぶれた からには しかたない\nラン『まけを みとめて これを あげるヨ!$"
+	.if (. - gText_Rom_20BF1C) > 0x45
+	.error "gText_Rom_20BF1C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BF1C) < 0x45
+	.space 0x45 - (. - gText_Rom_20BF1C)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:492 MossdeepCity_Gym_Text_ReceivedMindBadge
+	.globl gText_Rom_20BF61
+gText_Rom_20BF61: @ 0x0820BF61
+	.string "{PLAYER}は フウと ランから\nマインドバッジを もらった!$"
+	.if (. - gText_Rom_20BF61) > 0x1c
+	.error "gText_Rom_20BF61 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BF61) < 0x1c
+	.space 0x1c - (. - gText_Rom_20BF61)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:495 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis
+	.globl gText_Rom_20BF7D
+gText_Rom_20BF7D: @ 0x0820BF7D
+	.string "フウ『マインドバッジには ポケモンの\nとくこうと とくぼうを たかめる\lこうかが ひめられている!\pラン『それから ダイビング という\nひでんわざも つかえるように なるヨ!\pフウ『あと これも もっていきなよ!$"
+	.if (. - gText_Rom_20BF7D) > 0x6b
+	.error "gText_Rom_20BF7D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BF7D) < 0x6b
+	.space 0x6b - (. - gText_Rom_20BF7D)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:498 MossdeepCity_Gym_Text_ExplainCalmMind
+	.globl gText_Rom_20BFE8
+gText_Rom_20BFE8: @ 0x0820BFE8
+	.string "フウ『その わざマシン04には\nラン『めいそうが はいってるヨ!\pフウ『ポケモンの とくこうと\nラン『ポケモンの とくぼうを\pフウ『たかめてくれる わざ なんだ!\nラン『エスパーポケモンに ぴったりだヨ!\p…… …… ……$"
+	.if (. - gText_Rom_20BFE8) > 0x70
+	.error "gText_Rom_20BFE8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20BFE8) < 0x70
+	.space 0x70 - (. - gText_Rom_20BFE8)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:501 MossdeepCity_Gym_Text_RegisteredTateAndLiza
+	.globl gText_Rom_20C058
+gText_Rom_20C058: @ 0x0820C058
+	.string "ジムリーダー フウとランを\nポケナビに とうろく した!$"
+	.if (. - gText_Rom_20C058) > 0x1d
+	.error "gText_Rom_20C058 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C058) < 0x1d
+	.space 0x1d - (. - gText_Rom_20C058)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:504 MossdeepCity_Gym_Text_TateAndLizaPostBattle
+	.globl gText_Rom_20C075
+gText_Rom_20C075: @ 0x0820C075
+	.string "フウ『きょうだいの きずな より\nきみと ポケモンとの きずなの ほうが\lはるかに つよかった みたいだね……\pラン『あなたなら もっと つよくなれる!\nたたかった あたしたちには わかるわ!$"
+	.if (. - gText_Rom_20C075) > 0x61
+	.error "gText_Rom_20C075 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C075) < 0x61
+	.space 0x61 - (. - gText_Rom_20C075)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:507 MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons (+1 aliases)
+	.globl gText_Rom_20C0D6
+gText_Rom_20C0D6: @ 0x0820C0D6
+	.string "フウ『へへへ…… ジムリーダーが\pラン『ふたりも いるんで おどろいた?\pフウ『あら? たたかえる ポケモンが\nラン『いっぴき しか いないヨ!\pフウ『それでは たたかえないね!\nラン『しょうぶを たのしみたいから\lもっと ポケモン つれてきてヨ!$"
+	.if (. - gText_Rom_20C0D6) > 0x7d
+	.error "gText_Rom_20C0D6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C0D6) < 0x7d
+	.space 0x7d - (. - gText_Rom_20C0D6)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:510 MossdeepCity_Gym_Text_GymStatue
+	.globl gText_Rom_20C153
+gText_Rom_20C153: @ 0x0820C153
+	.string "トクサネシティ ポケモンジム$"
+	.if (. - gText_Rom_20C153) > 0xf
+	.error "gText_Rom_20C153 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C153) < 0xf
+	.space 0xf - (. - gText_Rom_20C153)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:513 MossdeepCity_Gym_Text_GymStatueCertified
+	.globl gText_Rom_20C162
+gText_Rom_20C162: @ 0x0820C162
+	.string "トクサネシティ ポケモンジム\pフウ ラン にんてい トレーナー!\n{PLAYER}$"
+	.if (. - gText_Rom_20C162) > 0x24
+	.error "gText_Rom_20C162 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C162) < 0x24
+	.space 0x24 - (. - gText_Rom_20C162)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:516 MossdeepCity_Gym_Text_TateAndLizaPreRematch (+1 aliases)
+	.globl gText_Rom_20C186
+gText_Rom_20C186: @ 0x0820C186
+	.string "フウ『ポケモンは……\nラン『ポケモンは……\pフウ『くみあわせを かえると\nラン『たたかいかたも かわるよね\pフウ『でも ぼくは……\nラン『でも あたしは……\pフウ『いつでも ランと いっしょ!\nラン『いつでも フウと いっしょ!\pフウ『ぼくたちの コンビネーション\nラン『なんどでも みせて あげるわ!$"
+	.if (. - gText_Rom_20C186) > 0x98
+	.error "gText_Rom_20C186 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C186) < 0x98
+	.space 0x98 - (. - gText_Rom_20C186)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:519 MossdeepCity_Gym_Text_TateAndLizaRematchDefeat (+1 aliases)
+	.globl gText_Rom_20C21E
+gText_Rom_20C21E: @ 0x0820C21E
+	.string "フウ『きみと ポケモンって\nラン『まるで きょうだい みたい!$"
+	.if (. - gText_Rom_20C21E) > 0x20
+	.error "gText_Rom_20C21E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C21E) < 0x20
+	.space 0x20 - (. - gText_Rom_20C21E)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:522 MossdeepCity_Gym_Text_TateAndLizaPostRematch
+	.globl gText_Rom_20C23E
+gText_Rom_20C23E: @ 0x0820C23E
+	.string "フウ『なんど たおされたって\nまた たちなおって みせるからね!\pラン『だって あたしたち ふたり\nちからを あわせて がんばれるもの!$"
+	.if (. - gText_Rom_20C23E) > 0x45
+	.error "gText_Rom_20C23E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C23E) < 0x45
+	.space 0x45 - (. - gText_Rom_20C23E)
+	.endif
+
+	@ data/maps/MossdeepCity_Gym/scripts.inc:525 MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons (+1 aliases)
+	.globl gText_Rom_20C283
+gText_Rom_20C283: @ 0x0820C283
+	.string "フウ『また ぼくたちと……\nラン『また あたしたちと……\pフウ『しょうぶを しに きてくれたんだね\nラン『しょうぶを しに きてくれたんだね\pフウ『でも……\nラン『あなた たたかえる ポケモンを\pフウ『1ひきしか もって いないよ!\nラン『1ひきしか もって いないわ!\pフウ『できれば 2ひき いじょうの\nラン『ポケモンを もって また きてね!$"
+	.if (. - gText_Rom_20C283) > 0xaf
+	.error "gText_Rom_20C283 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C283) < 0xaf
+	.space 0xaf - (. - gText_Rom_20C283)
+	.endif
+	.incbin "baserom.gba", 0x20c332, 0x3a
+
+	@ data/maps/MossdeepCity_House1/scripts.inc:24 MossdeepCity_House1_Text_HmmYourPokemon
+	.globl gText_Rom_20C36C
+gText_Rom_20C36C: @ 0x0820C36C
+	.string "ムムムッ!\nきみの {STR_VAR_1}……$"
+	.if (. - gText_Rom_20C36C) > 0xf
+	.error "gText_Rom_20C36C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C36C) < 0xf
+	.space 0xf - (. - gText_Rom_20C36C)
+	.endif
+
+	@ data/maps/MossdeepCity_House1/scripts.inc:27 MossdeepCity_House1_Text_ItLikesXPokeblocks
+	.globl gText_Rom_20C37B
+gText_Rom_20C37B: @ 0x0820C37B
+	.string "{STR_VAR_1} が すきだろう!\pいや まちがいなく\n{STR_VAR_1} が すきだ!$"
+	.if (. - gText_Rom_20C37B) > 0x20
+	.error "gText_Rom_20C37B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C37B) < 0x20
+	.space 0x20 - (. - gText_Rom_20C37B)
+	.endif
+
+	@ data/maps/MossdeepCity_House1/scripts.inc:30 MossdeepCity_House1_Text_DoesntLikeOrDislikePokeblocks
+	.globl gText_Rom_20C39B
+gText_Rom_20C39B: @ 0x0820C39B
+	.string "ポロックの すききらいは ないみたいだな$"
+	.if (. - gText_Rom_20C39B) > 0x15
+	.error "gText_Rom_20C39B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C39B) < 0x15
+	.space 0x15 - (. - gText_Rom_20C39B)
+	.endif
+
+	@ data/maps/MossdeepCity_House1/scripts.inc:33 MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes
+	.globl gText_Rom_20C3B0
+gText_Rom_20C3B0: @ 0x0820C3B0
+	.string "だんなったら みただけで\nポケモンが すきな ポロック わかるのよ$"
+	.if (. - gText_Rom_20C3B0) > 0x22
+	.error "gText_Rom_20C3B0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C3B0) < 0x22
+	.space 0x22 - (. - gText_Rom_20C3B0)
+	.endif
+	.incbin "baserom.gba", 0x20c3d2, 0x68
+
+	@ data/maps/MossdeepCity_House2/scripts.inc:54 MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree
+	.globl gText_Rom_20C43A
+gText_Rom_20C43A: @ 0x0820C43A
+	.string "おれの いもうとは ヒワマキの\nボーイフレンドと ぶんつう してる\pちっとも うらやましく ないぞ!$"
+	.if (. - gText_Rom_20C43A) > 0x33
+	.error "gText_Rom_20C43A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C43A) < 0x33
+	.space 0x33 - (. - gText_Rom_20C43A)
+	.endif
+
+	@ data/maps/MossdeepCity_House2/scripts.inc:57 MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth
+	.globl gText_Rom_20C46D
+gText_Rom_20C46D: @ 0x0820C46D
+	.string "ヒワマキの おともだちに あえなくても\nポケモンが おてがみを はこんでくれるの\lはなれていても さみしくないわ!$"
+	.if (. - gText_Rom_20C46D) > 0x3a
+	.error "gText_Rom_20C46D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C46D) < 0x3a
+	.space 0x3a - (. - gText_Rom_20C46D)
+	.endif
+
+	@ data/maps/FortreeCity_House4/scripts.inc:80 FortreeCity_House4_Text_Wingull (+1 aliases)
+	.globl gText_Rom_20C4A7
+gText_Rom_20C4A7: @ 0x0820C4A7
+	.string "キャモメ『ぴひょー!$"
+	.if (. - gText_Rom_20C4A7) > 0xb
+	.error "gText_Rom_20C4A7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C4A7) < 0xb
+	.space 0xb - (. - gText_Rom_20C4A7)
+	.endif
+	.incbin "baserom.gba", 0x20c4b2, 0x2f
+
+	@ data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc:26 MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable
+	.globl gText_Rom_20C4E1
+gText_Rom_20C4E1: @ 0x0820C4E1
+	.string "この まちの ジムリーダー\nなんといっても あの コンビネーションは\lさいこう! さすが! って かんじよ$"
+	.if (. - gText_Rom_20C4E1) > 0x36
+	.error "gText_Rom_20C4E1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C4E1) < 0x36
+	.space 0x36 - (. - gText_Rom_20C4E1)
+	.endif
+
+	@ data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc:29 MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves
+	.globl gText_Rom_20C517
+gText_Rom_20C517: @ 0x0820C517
+	.string "ポケモンの とくせいに よっては\nわざの いりょくが かわったり\lまったく きかなかったり するよ!$"
+	.if (. - gText_Rom_20C517) > 0x33
+	.error "gText_Rom_20C517 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C517) < 0x33
+	.space 0x33 - (. - gText_Rom_20C517)
+	.endif
+	.incbin "baserom.gba", 0x20c54a, 0x30
+
+	@ data/maps/MossdeepCity_PokemonCenter_2F/scripts.inc:25 MossdeepCity_PokemonCenter_2F_Text_Woman5
+	.globl gText_Rom_20C57A
+gText_Rom_20C57A: @ 0x0820C57A
+	.string "つうしん たいせんで かちまくって\nみんなに あたしの みりょくを\lアピールしたら ファンが ふえちゃうかな!$"
+	.if (. - gText_Rom_20C57A) > 0x38
+	.error "gText_Rom_20C57A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C57A) < 0x38
+	.space 0x38 - (. - gText_Rom_20C57A)
+	.endif
+	.incbin "baserom.gba", 0x20c5b2, 0x4b
+
+	@ data/maps/MossdeepCity_Mart/scripts.inc:39 MossdeepCity_Mart_Text_ReviveIsFantastic
+	.globl gText_Rom_20C5FD
+gText_Rom_20C5FD: @ 0x0820C5FD
+	.string "げんきのかけら って すごい!\pこれを あたえると\nひんしの ポケモンも めざめるの!\pでも パワーポイントは\nかいふく しないから きをつけて!$"
+	.if (. - gText_Rom_20C5FD) > 0x4a
+	.error "gText_Rom_20C5FD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C5FD) < 0x4a
+	.space 0x4a - (. - gText_Rom_20C5FD)
+	.endif
+
+	@ data/maps/MossdeepCity_Mart/scripts.inc:42 MossdeepCity_Mart_Text_MaxRepelLastsLongest
+	.globl gText_Rom_20C647
+gText_Rom_20C647: @ 0x0820C647
+	.string "ゴールドスプレーは\nよわい ポケモンを よせつけない\pかずある スプレーの なかで\nいちばん ながもち するんだ!$"
+	.if (. - gText_Rom_20C647) > 0x3a
+	.error "gText_Rom_20C647 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C647) < 0x3a
+	.space 0x3a - (. - gText_Rom_20C647)
+	.endif
+
+	@ data/maps/MossdeepCity_Mart/scripts.inc:45 MossdeepCity_Mart_Text_NetAndDiveBallsRare
+	.globl gText_Rom_20C681
+gText_Rom_20C681: @ 0x0820C681
+	.string "ネットボールと ダイブボールは\nここ トクサネでしか つくっていない\lめずらしい モンスターボール!\pネットボールは むしタイプや\nみずタイプの ポケモンに こうかてき!\pダイブボールは かいていに いる\nポケモンを つかまえ やすいんだ!$"
+	.if (. - gText_Rom_20C681) > 0x79
+	.error "gText_Rom_20C681 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C681) < 0x79
+	.space 0x79 - (. - gText_Rom_20C681)
+	.endif
+	.incbin "baserom.gba", 0x20c6fa, 0x54
+
+	@ data/maps/MossdeepCity_House3/scripts.inc:28 MossdeepCity_House3_Text_YouWantSuperRod
+	.globl gText_Rom_20C74E
+gText_Rom_20C74E: @ 0x0820C74E
+	.string "おーい! トレーナーよお!\nすごいつりざおは ほんとうに すごいぞお\pなんたって かいていに いる\nポケモンも つりあげられる からのお!\pどお? ほしく なった?$"
+	.if (. - gText_Rom_20C74E) > 0x53
+	.error "gText_Rom_20C74E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C74E) < 0x53
+	.space 0x53 - (. - gText_Rom_20C74E)
+	.endif
+
+	@ data/maps/MossdeepCity_House3/scripts.inc:31 MossdeepCity_House3_Text_SuperRodIsSuper
+	.globl gText_Rom_20C7A1
+gText_Rom_20C7A1: @ 0x0820C7A1
+	.string "そうだろ そうだろ! すごいつりざおは\nほんとうに すごい からのお!$"
+	.if (. - gText_Rom_20C7A1) > 0x24
+	.error "gText_Rom_20C7A1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C7A1) < 0x24
+	.space 0x24 - (. - gText_Rom_20C7A1)
+	.endif
+
+	@ data/maps/MossdeepCity_House3/scripts.inc:34 MossdeepCity_House3_Text_TryDroppingRodInWater
+	.globl gText_Rom_20C7C5
+gText_Rom_20C7C5: @ 0x0820C7C5
+	.string "みずの ある ところなら\nどこでも つりざお つかうと いいぞお!$"
+	.if (. - gText_Rom_20C7C5) > 0x22
+	.error "gText_Rom_20C7C5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C7C5) < 0x22
+	.space 0x22 - (. - gText_Rom_20C7C5)
+	.endif
+
+	@ data/maps/MossdeepCity_House3/scripts.inc:37 MossdeepCity_House3_Text_DontYouLikeToFish
+	.globl gText_Rom_20C7E7
+gText_Rom_20C7E7: @ 0x0820C7E7
+	.string "あら?\nつりは きらい なのかね?$"
+	.if (. - gText_Rom_20C7E7) > 0x12
+	.error "gText_Rom_20C7E7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C7E7) < 0x12
+	.space 0x12 - (. - gText_Rom_20C7E7)
+	.endif
+
+	@ data/maps/MossdeepCity_House3/scripts.inc:40 MossdeepCity_House3_Text_GoAfterSeafloorPokemon
+	.globl gText_Rom_20C7F9
+gText_Rom_20C7F9: @ 0x0820C7F9
+	.string "すごいつりざおで\nかいていの ポケモンも つりあげろお!$"
+	.if (. - gText_Rom_20C7F9) > 0x1d
+	.error "gText_Rom_20C7F9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C7F9) < 0x1d
+	.space 0x1d - (. - gText_Rom_20C7F9)
+	.endif
+	.incbin "baserom.gba", 0x20c816, 0x1b2
+
+	@ data/maps/MossdeepCity_StevensHouse/scripts.inc:150 MossdeepCity_StevensHouse_Text_YouveEarnedHMDive
+	.globl gText_Rom_20C9C8
+gText_Rom_20C9C8: @ 0x0820C9C8
+	.string "ダイゴ『{PLAYER}{KUN}……\pみてのとおり なにも ないけど\nここが ボクの いえなんだ\p……そうだ さっきは ありがとう\nこれは ボクからの おれいの きもち\lひでんマシンの ダイビングだ\pえんりょ しないで もっていきなよ$"
+	.if (. - gText_Rom_20C9C8) > 0x6e
+	.error "gText_Rom_20C9C8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C9C8) < 0x6e
+	.space 0x6e - (. - gText_Rom_20C9C8)
+	.endif
+
+	@ data/maps/MossdeepCity_StevensHouse/scripts.inc:153 MossdeepCity_StevensHouse_Text_ExplainDive
+	.globl gText_Rom_20CA36
+gText_Rom_20CA36: @ 0x0820CA36
+	.string "ダイゴ『なみのりを していると\nみずの いろが こい ばしょが ある\pそこで ダイビングを つかうと\nうみの そこに もぐれるから\pうかびたい ときは\nもういちど ダイビングを つかうんだ\pばしょに よっては\nうかべない ばあいも あるけど$"
+	.if (. - gText_Rom_20CA36) > 0x79
+	.error "gText_Rom_20CA36 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CA36) < 0x79
+	.space 0x79 - (. - gText_Rom_20CA36)
+	.endif
+
+	@ data/maps/MossdeepCity_StevensHouse/scripts.inc:156 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis
+	.globl gText_Rom_20CAAF
+gText_Rom_20CAAF: @ 0x0820CAAF
+	.string "ダイゴ『トクサネと ルネの あいだには\nかいていどうくつが あるらしい\pほら たしか…… クスノキかんちょうが\nはっけんした という あれだよ$"
+	.if (. - gText_Rom_20CAAF) > 0x48
+	.error "gText_Rom_20CAAF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CAAF) < 0x48
+	.space 0x48 - (. - gText_Rom_20CAAF)
+	.endif
+
+	@ data/maps/MossdeepCity_StevensHouse/scripts.inc:159 MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum
+	.globl gText_Rom_20CAF7
+gText_Rom_20CAF7: @ 0x0820CAF7
+	.string "{PLAYER}は\nモンスターボールを しらべた!\pなかには ポケモンの\nダンバルが はいっている!\pモンスターボールを もって いきますか?$"
+	.if (. - gText_Rom_20CAF7) > 0x42
+	.error "gText_Rom_20CAF7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CAF7) < 0x42
+	.space 0x42 - (. - gText_Rom_20CAF7)
+	.endif
+
+	@ data/maps/MossdeepCity_StevensHouse/scripts.inc:162 MossdeepCity_StevensHouse_Text_ObtainedBeldum
+	.globl gText_Rom_20CB39
+gText_Rom_20CB39: @ 0x0820CB39
+	.string "{PLAYER}は\nダンバルを てにいれた!$"
+	.if (. - gText_Rom_20CB39) > 0x11
+	.error "gText_Rom_20CB39 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CB39) < 0x11
+	.space 0x11 - (. - gText_Rom_20CB39)
+	.endif
+
+	@ data/maps/MossdeepCity_StevensHouse/scripts.inc:166 MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon
+	.globl gText_Rom_20CB4A
+gText_Rom_20CB4A: @ 0x0820CB4A
+	.string "これいじょう ポケモンを もてない!$"
+	.if (. - gText_Rom_20CB4A) > 0x13
+	.error "gText_Rom_20CB4A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CB4A) < 0x13
+	.space 0x13 - (. - gText_Rom_20CB4A)
+	.endif
+
+	@ data/maps/MossdeepCity_StevensHouse/scripts.inc:169 MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas
+	.globl gText_Rom_20CB5D
+gText_Rom_20CB5D: @ 0x0820CB5D
+	.string "{PLAYER}は モンスターボールを\nそのままに しておいた$"
+	.if (. - gText_Rom_20CB5D) > 0x1a
+	.error "gText_Rom_20CB5D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CB5D) < 0x1a
+	.space 0x1a - (. - gText_Rom_20CB5D)
+	.endif
+
+	@ data/maps/MossdeepCity_StevensHouse/scripts.inc:172 MossdeepCity_StevensHouse_Text_LetterFromSteven
+	.globl gText_Rom_20CB77
+gText_Rom_20CB77: @ 0x0820CB77
+	.string "てがみが ある!\p…… …… ……\n…… …… ……\p{PLAYER}{KUN}へ\pボクは おもうことが あって\nしばらく しゅぎょうを つづける\lとうぶん いえに かえらない\pそこで おねがいだ\pつくえの うえにある\nモンスターボールを うけとって ほしい\pなかに いるのは ダンバルといって\nボクの おきにいりの ポケモンだから\pよろしく たのむよ\pでは また いつか あおう!\n      ツワブキ ダイゴより$"
+	.if (. - gText_Rom_20CB77) > 0xc8
+	.error "gText_Rom_20CB77 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CB77) < 0xc8
+	.space 0xc8 - (. - gText_Rom_20CB77)
+	.endif
+
+	@ data/maps/MossdeepCity_StevensHouse/scripts.inc:175 MossdeepCity_StevensHouse_Text_CollectionOfRareRocks
+	.globl gText_Rom_20CC3F
+gText_Rom_20CC3F: @ 0x0820CC3F
+	.string "ダイゴの あつめた\nめずらしい いしが かざってある!$"
+	.if (. - gText_Rom_20CC3F) > 0x1c
+	.error "gText_Rom_20CC3F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CC3F) < 0x1c
+	.space 0x1c - (. - gText_Rom_20CC3F)
+	.endif
+	.incbin "baserom.gba", 0x20cc5b, 0x5a
+
+	@ data/maps/MossdeepCity_House4/scripts.inc:42 MossdeepCity_House4_Text_BrotherLikesToFindBases
+	.globl gText_Rom_20CCB5
+gText_Rom_20CCB5: @ 0x0820CCB5
+	.string "おとうと ったら\nひとの ひみつきちを さがすのが\lたのしみ なんだって!$"
+	.if (. - gText_Rom_20CCB5) > 0x26
+	.error "gText_Rom_20CCB5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CCB5) < 0x26
+	.space 0x26 - (. - gText_Rom_20CCB5)
+	.endif
+
+	@ data/maps/MossdeepCity_House4/scripts.inc:45 MossdeepCity_House4_Text_BrotherLikesToVisitBasesAndBattle
+	.globl gText_Rom_20CCDB
+gText_Rom_20CCDB: @ 0x0820CCDB
+	.string "おとうと ったら\nともだちの ひみつきちに いって\lポケモンしょうぶを するのが\lたのしみ なんだって!$"
+	.if (. - gText_Rom_20CCDB) > 0x35
+	.error "gText_Rom_20CCDB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CCDB) < 0x35
+	.space 0x35 - (. - gText_Rom_20CCDB)
+	.endif
+
+	@ data/maps/MossdeepCity_House4/scripts.inc:48 MossdeepCity_House4_Text_YouMadeSecretBaseNearX
+	.globl gText_Rom_20CD10
+gText_Rom_20CD10: @ 0x0820CD10
+	.string "ひょっとして {STR_VAR_1} に\nひみつきち つくったの きみ?$"
+	.if (. - gText_Rom_20CD10) > 0x1c
+	.error "gText_Rom_20CD10 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CD10) < 0x1c
+	.space 0x1c - (. - gText_Rom_20CD10)
+	.endif
+
+	@ data/maps/MossdeepCity_House4/scripts.inc:51 MossdeepCity_House4_Text_MakeSecretBase
+	.globl gText_Rom_20CD2C
+gText_Rom_20CD2C: @ 0x0820CD2C
+	.string "きみ どこかに ひみつきち つくりなよ!\nぼくが さがしだして みせるからさ$"
+	.if (. - gText_Rom_20CD2C) > 0x27
+	.error "gText_Rom_20CD2C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CD2C) < 0x27
+	.space 0x27 - (. - gText_Rom_20CD2C)
+	.endif
+
+	@ data/maps/MossdeepCity_House4/scripts.inc:54 MossdeepCity_House4_Text_Skitty
+	.globl gText_Rom_20CD53
+gText_Rom_20CD53: @ 0x0820CD53
+	.string "エネコ『みゃあん?$"
+	.if (. - gText_Rom_20CD53) > 0xa
+	.error "gText_Rom_20CD53 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CD53) < 0xa
+	.space 0xa - (. - gText_Rom_20CD53)
+	.endif
+	.incbin "baserom.gba", 0x20cd5d, 0x366
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:278 MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent
+	.globl gText_Rom_20D0C3
+gText_Rom_20D0C3: @ 0x0820D0C3
+	.string "もうすぐ ロケットが はっしゃ するぞ!$"
+	.if (. - gText_Rom_20D0C3) > 0x15
+	.error "gText_Rom_20D0C3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D0C3) < 0x15
+	.space 0x15 - (. - gText_Rom_20D0C3)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:281 MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber
+	.globl gText_Rom_20D0D8
+gText_Rom_20D0D8: @ 0x0820D0D8
+	.string "ロケットが はっしゃ したよ!\nこれで {STR_VAR_1}かい うちあげ せいこうだ!$"
+	.if (. - gText_Rom_20D0D8) > 0x25
+	.error "gText_Rom_20D0D8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D0D8) < 0x25
+	.space 0x25 - (. - gText_Rom_20D0D8)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:284 MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_20D0FD
+gText_Rom_20D0FD: @ 0x0820D0FD
+	.string "こんな さわぎの とちゅう だけど……\pもうすぐ ロケットが はっしゃ するぞ!$"
+	.if (. - gText_Rom_20D0FD) != 0x29
+	.error "gText_Rom_20D0FD must retain its original byte length"
+	.endif
+	.globl gText_Rom_20D111
+	.set gText_Rom_20D111, gText_Rom_20D0FD + 0x14
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:287 MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_20D126
+gText_Rom_20D126: @ 0x0820D126
+	.string "こんな さわぎの とちゅう だけど……\pロケットが はっしゃ したよ!\nこれで {STR_VAR_1}かい うちあげ せいこうだ!$"
+	.if (. - gText_Rom_20D126) != 0x39
+	.error "gText_Rom_20D126 must retain its original byte length"
+	.endif
+	.globl gText_Rom_20D13A
+	.set gText_Rom_20D13A, gText_Rom_20D126 + 0x14
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:290 MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection
+	.globl gText_Rom_20D15F
+gText_Rom_20D15F: @ 0x0820D15F
+	.string "ロケットを はっしゃ するには\n1パーセントの ミスも ゆるされない\p99パーセント だいじょうぶ でも\n1パーセント ダメなら\lすべてが ダメになる きびしい ものだ\pそれでも やりとげようと するのは\nそこに ロマンが つまっている からだな$"
+	.if (. - gText_Rom_20D15F) > 0x7c
+	.error "gText_Rom_20D15F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D15F) < 0x7c
+	.space 0x7c - (. - gText_Rom_20D15F)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:293 MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter
+	.globl gText_Rom_20D1DB
+gText_Rom_20D1DB: @ 0x0820D1DB
+	.string "マグマだんの やつらが\nこの うちゅうセンターを ねらっている\pだが そんなこと ぐらいで\nロケットの はっしゃを\lやめるわけには いかないんだ!$"
+	.if (. - gText_Rom_20D1DB) > 0x4a
+	.error "gText_Rom_20D1DB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D1DB) < 0x4a
+	.space 0x4a - (. - gText_Rom_20D1DB)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:296 MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt
+	.globl gText_Rom_20D225
+gText_Rom_20D225: @ 0x0820D225
+	.string "かいがんを さんぽ していて\nこれを みつけたんだけど\lぼくは いらないから きみに あげる!$"
+	.if (. - gText_Rom_20D225) > 0x30
+	.error "gText_Rom_20D225 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D225) < 0x30
+	.space 0x30 - (. - gText_Rom_20D225)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:299 MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers
+	.globl gText_Rom_20D255
+gText_Rom_20D255: @ 0x0820D255
+	.string "むかしから ホウエンちほうは\nいんせきの おおい ばしょ として\lゆうめい なんだよね$"
+	.if (. - gText_Rom_20D255) > 0x2c
+	.error "gText_Rom_20D255 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D255) < 0x2c
+	.space 0x2c - (. - gText_Rom_20D255)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:302 MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis
+	.globl gText_Rom_20D281
+gText_Rom_20D281: @ 0x0820D281
+	.string "マグマだんに ロケットねんりょうを\nうばわれる わけには いかない!\pでも かいがんで みつけた このいしは\nきみに あげるよ!$"
+	.if (. - gText_Rom_20D281) > 0x41
+	.error "gText_Rom_20D281 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D281) < 0x41
+	.space 0x41 - (. - gText_Rom_20D281)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:305 MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma
+	.globl gText_Rom_20D2C2
+gText_Rom_20D2C2: @ 0x0820D2C2
+	.string "マグマだんを おっぱらわなきゃ\nかいがんの さんぽ どころじゃないね!$"
+	.if (. - gText_Rom_20D2C2) > 0x24
+	.error "gText_Rom_20D2C2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D2C2) < 0x24
+	.space 0x24 - (. - gText_Rom_20D2C2)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:308 MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace
+	.globl gText_Rom_20D2E6
+gText_Rom_20D2E6: @ 0x0820D2E6
+	.string "ひとに よっては\nポケモンは うちゅうから やってきた!\lって いうよね! ほんとう かなー？$"
+	.if (. - gText_Rom_20D2E6) > 0x30
+	.error "gText_Rom_20D2E6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D2E6) < 0x30
+	.space 0x30 - (. - gText_Rom_20D2E6)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:311 MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma
+	.globl gText_Rom_20D316
+gText_Rom_20D316: @ 0x0820D316
+	.string "マグマだん なんて\nアクアだんが やっつければ いいのよ!\pでも そうすると こんどは\nアクアだんが おおきなかおを するのよね$"
+	.if (. - gText_Rom_20D316) > 0x41
+	.error "gText_Rom_20D316 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D316) < 0x41
+	.space 0x41 - (. - gText_Rom_20D316)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:314 MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind
+	.globl gText_Rom_20D357
+gText_Rom_20D357: @ 0x0820D357
+	.string "でっかい てつの かたまりが\nおおぞらを つきぬけ\lうちゅうまで とんで いく……\pたまげた もん だわい$"
+	.if (. - gText_Rom_20D357) > 0x36
+	.error "gText_Rom_20D357 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D357) < 0x36
+	.space 0x36 - (. - gText_Rom_20D357)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:317 MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream
+	.globl gText_Rom_20D38D
+gText_Rom_20D38D: @ 0x0820D38D
+	.string "でっかい てつの かたまりが\nおおぞらを つきぬけ\lうちゅうまで とんで いく……\pそんな わしのゆめを ジャマする\nマグマだんめ! ぬぬぬ ゆるさん!$"
+	.if (. - gText_Rom_20D38D) > 0x4d
+	.error "gText_Rom_20D38D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D38D) < 0x4d
+	.space 0x4d - (. - gText_Rom_20D38D)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:320 MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel
+	.globl gText_Rom_20D3DA
+gText_Rom_20D3DA: @ 0x0820D3DA
+	.string "ダイゴ『{PLAYER}{KUN} そこにある\nよこくじょうは もう よんだかい？\pマグマだんは このしまに ある\nロケットねんりょうを ねらっている!\pなにに つかうのか しらないけど\nかれらに わたす わけには いかないよ!\pボクは もうすこし ここで\nみはって いるから きみは まちでも\lけんぶつ してきたら どうかな$"
+	.if (. - gText_Rom_20D3DA) > 0x9b
+	.error "gText_Rom_20D3DA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D3DA) < 0x9b
+	.space 0x9b - (. - gText_Rom_20D3DA)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:323 MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_20D475
+gText_Rom_20D475: @ 0x0820D475
+	.string "やくそく どおり ロケットねんりょうを\nちょうだいしに きたわよ!$"
+	.if (. - gText_Rom_20D475) != 0x22
+	.error "gText_Rom_20D475 must retain its original byte length"
+	.endif
+	.globl gText_Rom_20D493
+	.set gText_Rom_20D493, gText_Rom_20D475 + 0x1e
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:326 MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat (+1 aliases)
+	.globl gText_Rom_20D497
+gText_Rom_20D497: @ 0x0820D497
+	.string "ねんりょうぎれ……$"
+	.if (. - gText_Rom_20D497) > 0xa
+	.error "gText_Rom_20D497 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D497) < 0xa
+	.space 0xa - (. - gText_Rom_20D497)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:329 MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle
+	.globl gText_Rom_20D4A1
+gText_Rom_20D4A1: @ 0x0820D4A1
+	.string "わたしに かった ぐらいで\nちょうしに のってちゃ ダメよ!$"
+	.if (. - gText_Rom_20D4A1) > 0x1f
+	.error "gText_Rom_20D4A1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D4A1) < 0x1f
+	.space 0x1f - (. - gText_Rom_20D4A1)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:332 MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro (+1 aliases)
+	.globl gText_Rom_20D4C0
+gText_Rom_20D4C0: @ 0x0820D4C0
+	.string "ちゃんと よこく してから きたんだ!\nオレたちゃ ひきょうものじゃ ないぜ!$"
+	.if (. - gText_Rom_20D4C0) > 0x28
+	.error "gText_Rom_20D4C0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D4C0) < 0x28
+	.space 0x28 - (. - gText_Rom_20D4C0)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:335 MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat (+1 aliases)
+	.globl gText_Rom_20D4E8
+gText_Rom_20D4E8: @ 0x0820D4E8
+	.string "うーむ…… ひきょうな てを\nつかえば よかった……$"
+	.if (. - gText_Rom_20D4E8) > 0x1b
+	.error "gText_Rom_20D4E8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D4E8) < 0x1b
+	.space 0x1b - (. - gText_Rom_20D4E8)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:338 MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle
+	.globl gText_Rom_20D503
+gText_Rom_20D503: @ 0x0820D503
+	.string "わかったよ こんど くるときは\nいきなり くるように するよ……$"
+	.if (. - gText_Rom_20D503) > 0x21
+	.error "gText_Rom_20D503 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D503) < 0x21
+	.space 0x21 - (. - gText_Rom_20D503)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:341 MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro (+1 aliases)
+	.globl gText_Rom_20D524
+gText_Rom_20D524: @ 0x0820D524
+	.string "うちゅうセンターに ちょぞう してある\nロケットの ねんりょうは\lぜんぶ オレたちが いただいて いくぜ!$"
+	.if (. - gText_Rom_20D524) > 0x36
+	.error "gText_Rom_20D524 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D524) < 0x36
+	.space 0x36 - (. - gText_Rom_20D524)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:344 MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat (+1 aliases)
+	.globl gText_Rom_20D55A
+gText_Rom_20D55A: @ 0x0820D55A
+	.string "コップいっぱいで いいから\nねんりょう くれない？$"
+	.if (. - gText_Rom_20D55A) > 0x1a
+	.error "gText_Rom_20D55A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D55A) < 0x1a
+	.space 0x1a - (. - gText_Rom_20D55A)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:347 MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle
+	.globl gText_Rom_20D574
+gText_Rom_20D574: @ 0x0820D574
+	.string "ねんりょうの つかいみち？\nそんなこと オレは しらん!\l2かいに いる リーダーに きいてくれ!$"
+	.if (. - gText_Rom_20D574) > 0x32
+	.error "gText_Rom_20D574 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D574) < 0x32
+	.space 0x32 - (. - gText_Rom_20D574)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:350 MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro
+	.globl gText_Rom_20D5A6
+gText_Rom_20D5A6: @ 0x0820D5A6
+	.string "リーダーから だれも ここを とおすな\nって いわれてるんだよ!$"
+	.if (. - gText_Rom_20D5A6) > 0x21
+	.error "gText_Rom_20D5A6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D5A6) < 0x21
+	.space 0x21 - (. - gText_Rom_20D5A6)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:353 MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat (+1 aliases)
+	.globl gText_Rom_20D5C7
+gText_Rom_20D5C7: @ 0x0820D5C7
+	.string "あっ あっ あっ$"
+	.if (. - gText_Rom_20D5C7) > 0x9
+	.error "gText_Rom_20D5C7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D5C7) < 0x9
+	.space 0x9 - (. - gText_Rom_20D5C7)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:356 MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle
+	.globl gText_Rom_20D5D0
+gText_Rom_20D5D0: @ 0x0820D5D0
+	.string "リーダーには オレが さいごまで\nもちばを はなれなかった って\lいっといて くれよ!$"
+	.if (. - gText_Rom_20D5D0) > 0x2c
+	.error "gText_Rom_20D5D0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20D5D0) < 0x2c
+	.space 0x2c - (. - gText_Rom_20D5D0)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:359 MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_20D5FC
+gText_Rom_20D5FC: @ 0x0820D5FC
+	.string "これは……\nはんこう よこくじょう？\p「うちゅうセンターの みなさん\n いかが おすごしで しょうか\p ロケットの ねんりょうは\n まもなく われわれが いただきます\l イヤだと いっても ムダなのでーす\p もっと りくちを!\n              マグマだん$"
+	.if (. - gText_Rom_20D5FC) != 0x86
+	.error "gText_Rom_20D5FC must retain its original byte length"
+	.endif
+	.globl gText_Rom_20D67C
+	.set gText_Rom_20D67C, gText_Rom_20D5FC + 0x80
+	.incbin "baserom.gba", 0x20d682, 0x400
+	.globl gUnknown_820DA82
+gUnknown_820DA82: @ 0x0820DA82
+	.incbin "baserom.gba", 0x20da82, 0xf
+	.globl gUnknown_820DA91
+gUnknown_820DA91: @ 0x0820DA91
+	.incbin "baserom.gba", 0x20da91, 0xe
+	.globl gUnknown_820DA9F
+gUnknown_820DA9F: @ 0x0820DA9F
+	.incbin "baserom.gba", 0x20da9f, 0x2c
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:342 MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets
+	.globl gText_Rom_20DACB
+gText_Rom_20DACB: @ 0x0820DACB
+	.string "トクサネは てんきの よい ひが おおい\nかぜの むきも あんてい している\pロケットを うちあげる には\nもってこいの ばしょ なんですな$"
+	.if (. - gText_Rom_20DACB) > 0x47
+	.error "gText_Rom_20DACB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DACB) < 0x47
+	.space 0x47 - (. - gText_Rom_20DACB)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:345 MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel
+	.globl gText_Rom_20DB12
+gText_Rom_20DB12: @ 0x0820DB12
+	.string "ロケットの ねんりょうなんか うばって\nマグマだんは なにする つもりだ！?$"
+	.if (. - gText_Rom_20DB12) > 0x27
+	.error "gText_Rom_20DB12 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DB12) < 0x27
+	.space 0x27 - (. - gText_Rom_20DB12)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:348 MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut
+	.globl gText_Rom_20DB39
+gText_Rom_20DB39: @ 0x0820DB39
+	.string "わしも もうすこし わかければ\nうちゅう ひこうしに なりたかった……\pいや いまからでも おそくない！\nよーし がんばるぞー！！$"
+	.if (. - gText_Rom_20DB39) > 0x42
+	.error "gText_Rom_20DB39 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DB39) < 0x42
+	.space 0x42 - (. - gText_Rom_20DB39)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:351 MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis
+	.globl gText_Rom_20DB7B
+gText_Rom_20DB7B: @ 0x0820DB7B
+	.string "マグマだんに ねんりょうを うばわれたら\nわしが うちゅうに いけなくなる！\pそんなこと させて たまるかー！$"
+	.if (. - gText_Rom_20DB7B) > 0x38
+	.error "gText_Rom_20DB7B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DB7B) < 0x38
+	.space 0x38 - (. - gText_Rom_20DB7B)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:354 MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace
+	.globl gText_Rom_20DBB3
+gText_Rom_20DBB3: @ 0x0820DBB3
+	.string "いつか ふつーの ひとも\nうちゅうに いけると いいのにな……$"
+	.if (. - gText_Rom_20DBB3) > 0x20
+	.error "gText_Rom_20DBB3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DBB3) < 0x20
+	.space 0x20 - (. - gText_Rom_20DBB3)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:357 MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace
+	.globl gText_Rom_20DBD3
+gText_Rom_20DBD3: @ 0x0820DBD3
+	.string "マグマだんも……\nうちゅうに いきたいの かな?$"
+	.if (. - gText_Rom_20DBD3) > 0x19
+	.error "gText_Rom_20DBD3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DBD3) < 0x19
+	.space 0x19 - (. - gText_Rom_20DBD3)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:360 MossdeepCity_SpaceCenter_2F_Text_YoureOutnumberedTakeUsOn
+	.globl gText_Rom_20DBEC
+gText_Rom_20DBEC: @ 0x0820DBEC
+	.string "なんだ おまえ！\pおれたち 3にんに かこまれてるのに\nやろうってのか！?$"
+	.if (. - gText_Rom_20DBEC) > 0x26
+	.error "gText_Rom_20DBEC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DBEC) < 0x26
+	.space 0x26 - (. - gText_Rom_20DBEC)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:363 MossdeepCity_SpaceCenter_2F_Text_GoodAnswer
+	.globl gText_Rom_20DC12
+gText_Rom_20DC12: @ 0x0820DC12
+	.string "だよな！\nそのほうが おりこうさん だぜ！$"
+	.if (. - gText_Rom_20DC12) > 0x16
+	.error "gText_Rom_20DC12 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DC12) < 0x16
+	.space 0x16 - (. - gText_Rom_20DC12)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:366 MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro
+	.globl gText_Rom_20DC28
+gText_Rom_20DC28: @ 0x0820DC28
+	.string "むてっぽうな やつめ……\nまずは オレからだ！$"
+	.if (. - gText_Rom_20DC28) > 0x18
+	.error "gText_Rom_20DC28 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DC28) < 0x18
+	.space 0x18 - (. - gText_Rom_20DC28)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:369 MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat (+1 aliases)
+	.globl gText_Rom_20DC40
+gText_Rom_20DC40: @ 0x0820DC40
+	.string "オレは まけたが しかし！$"
+	.if (. - gText_Rom_20DC40) > 0xe
+	.error "gText_Rom_20DC40 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DC40) < 0xe
+	.space 0xe - (. - gText_Rom_20DC40)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:372 MossdeepCity_SpaceCenter_2F_Text_Grunt6Intro
+	.globl gText_Rom_20DC4E
+gText_Rom_20DC4E: @ 0x0820DC4E
+	.string "あんしん するのは まだ はやい\nつぎは オレが あいてだ！$"
+	.if (. - gText_Rom_20DC4E) > 0x1f
+	.error "gText_Rom_20DC4E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DC4E) < 0x1f
+	.space 0x1f - (. - gText_Rom_20DC4E)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:375 MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat (+1 aliases)
+	.globl gText_Rom_20DC6D
+gText_Rom_20DC6D: @ 0x0820DC6D
+	.string "オレも まけたが だけど！$"
+	.if (. - gText_Rom_20DC6D) > 0xe
+	.error "gText_Rom_20DC6D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DC6D) < 0xe
+	.space 0xe - (. - gText_Rom_20DC6D)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:378 MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro
+	.globl gText_Rom_20DC7B
+gText_Rom_20DC7B: @ 0x0820DC7B
+	.string "ひとやすみ したいだろう けど\nそんな わけには いきませーん！$"
+	.if (. - gText_Rom_20DC7B) > 0x21
+	.error "gText_Rom_20DC7B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DC7B) < 0x21
+	.space 0x21 - (. - gText_Rom_20DC7B)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:381 MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat (+1 aliases)
+	.globl gText_Rom_20DC9C
+gText_Rom_20DC9C: @ 0x0820DC9C
+	.string "オレたちが ひとやすみ\nしておけば…… よかった……$"
+	.if (. - gText_Rom_20DC9C) > 0x1b
+	.error "gText_Rom_20DC9C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DC9C) < 0x1b
+	.space 0x1b - (. - gText_Rom_20DC9C)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:384 MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle
+	.globl gText_Rom_20DCB7
+gText_Rom_20DCB7: @ 0x0820DCB7
+	.string "3にんも いて このザマか！$"
+	.if (. - gText_Rom_20DCB7) > 0xf
+	.error "gText_Rom_20DCB7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DCB7) < 0xf
+	.space 0xf - (. - gText_Rom_20DCB7)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:387 MossdeepCity_SpaceCenter_2F_Text_Grunt7PostBattle
+	.globl gText_Rom_20DCC6
+gText_Rom_20DCC6: @ 0x0820DCC6
+	.string "3にんがかりで まけると\nいつもの 3ばい かっこわるいぜ！$"
+	.if (. - gText_Rom_20DCC6) > 0x1f
+	.error "gText_Rom_20DCC6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DCC6) < 0x1f
+	.space 0x1f - (. - gText_Rom_20DCC6)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:390 MossdeepCity_SpaceCenter_2F_Text_Grunt5PostBattle
+	.globl gText_Rom_20DCE5
+gText_Rom_20DCE5: @ 0x0820DCE5
+	.string "オレたち リーダーの\nやくに たってるのかな……?$"
+	.if (. - gText_Rom_20DCE5) > 0x1a
+	.error "gText_Rom_20DCE5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DCE5) < 0x1a
+	.space 0x1a - (. - gText_Rom_20DCE5)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:393 MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou
+	.globl gText_Rom_20DCFF
+gText_Rom_20DCFF: @ 0x0820DCFF
+	.string "ウヒョヒョ！ せっかく\nねんりょうを いただきに きたのに\lジャマが はいっちまった！\pおまえも オレたちの ジャマを するなら\nいっしょに かたづけて やろうか！$"
+	.if (. - gText_Rom_20DCFF) > 0x53
+	.error "gText_Rom_20DCFF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DCFF) < 0x53
+	.space 0x53 - (. - gText_Rom_20DCFF)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:396 MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere
+	.globl gText_Rom_20DD52
+gText_Rom_20DD52: @ 0x0820DD52
+	.string "マツブサ『えーい そこをどけ！\nわれわれの ジャマを するんじゃない！$"
+	.if (. - gText_Rom_20DD52) > 0x24
+	.error "gText_Rom_20DD52 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DD52) < 0x24
+	.space 0x24 - (. - gText_Rom_20DD52)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:399 MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel
+	.globl gText_Rom_20DD76
+gText_Rom_20DD76: @ 0x0820DD76
+	.string "ダイゴ『マグマだん……\nロケットの ねんりょうなんか ぬすんで\lいったい なにをする つもりなんだ！$"
+	.if (. - gText_Rom_20DD76) > 0x33
+	.error "gText_Rom_20DD76 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DD76) < 0x33
+	.space 0x33 - (. - gText_Rom_20DD76)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:402 MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano
+	.globl gText_Rom_20DDA9
+gText_Rom_20DDA9: @ 0x0820DDA9
+	.string "マツブサ『ふふふ……\nそんなに しりたけりゃ おしえてやろう\pえんとつやまの かこうに\nぜんぶ なげこんで やるのさ！\pグラードンも きえてしまった ことだし\nもう あんなやまに ようはない\pだから ねんりょうの ちからを りようして\nかざんを ふんか させて やるのさ\lズドドーン とな！$"
+	.if (. - gText_Rom_20DDA9) > 0x92
+	.error "gText_Rom_20DDA9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DDA9) < 0x92
+	.space 0x92 - (. - gText_Rom_20DDA9)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:405 MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle
+	.globl gText_Rom_20DE3B
+gText_Rom_20DE3B: @ 0x0820DE3B
+	.string "ダイゴ『{PLAYER}{KUN}！\nちからを かして くれるのかい！?\pボクと いっしょに たたかおう！\nじゅんびは いいね?$"
+	.if (. - gText_Rom_20DE3B) > 0x38
+	.error "gText_Rom_20DE3B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DE3B) < 0x38
+	.space 0x38 - (. - gText_Rom_20DE3B)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:408 MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly
+	.globl gText_Rom_20DE73
+gText_Rom_20DE73: @ 0x0820DE73
+	.string "ダイゴ『じゃあ いそいで\nじゅんびを ととのえて くるんだ！$"
+	.if (. - gText_Rom_20DE73) > 0x1f
+	.error "gText_Rom_20DE73 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DE73) < 0x1f
+	.space 0x1f - (. - gText_Rom_20DE73)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:411 MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand
+	.globl gText_Rom_20DE92
+gText_Rom_20DE92: @ 0x0820DE92
+	.string "わたしは ただ……\nりくちを ふやしたい だけなのに……$"
+	.if (. - gText_Rom_20DE92) > 0x1d
+	.error "gText_Rom_20DE92 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DE92) < 0x1d
+	.space 0x1d - (. - gText_Rom_20DE92)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:414 MossdeepCity_SpaceCenter_Text_TabithaDefeat
+	.globl gText_Rom_20DEAF
+gText_Rom_20DEAF: @ 0x0820DEAF
+	.string "みぎに おなじ だ……$"
+	.if (. - gText_Rom_20DEAF) > 0xc
+	.error "gText_Rom_20DEAF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DEAF) < 0xc
+	.space 0xc - (. - gText_Rom_20DEAF)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:417 MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided
+	.globl gText_Rom_20DEBB
+gText_Rom_20DEBB: @ 0x0820DEBB
+	.string "マツブサ『われわれは かざんを\nふんか させられ なかった……\pねむりから めざめた グラードンも\nコントロール できなかった……\pりくちをふやす という かんがえは\nまちがって いるのか?\p…… …… ……\n…… …… ……\pもしも…… われわれ マグマだんが\nまちがっていると いうのなら\l…… …… ……\pまさか アクアだんの\nうみをふやす という かんがえも……$"
+	.if (. - gText_Rom_20DEBB) > 0xba
+	.error "gText_Rom_20DEBB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DEBB) < 0xba
+	.space 0xba - (. - gText_Rom_20DEBB)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:420 MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp
+	.globl gText_Rom_20DF75
+gText_Rom_20DF75: @ 0x0820DF75
+	.string "マツブサ『わかった……\nねんりょうは あきらめよう……\pわたしには ほかに たしかめ なければ\nならない ことが あるようだ……$"
+	.if (. - gText_Rom_20DF75) > 0x41
+	.error "gText_Rom_20DF75 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DF75) < 0x41
+	.space 0x41 - (. - gText_Rom_20DF75)
+	.endif
+
+	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:423 MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome
+	.globl gText_Rom_20DFB6
+gText_Rom_20DFB6: @ 0x0820DFB6
+	.string "ダイゴ『ふう あぶない ところ だった\n{PLAYER}{KUN} ありがとう\pちからを かしてくれた おれいに\nいいものを あげるから\lあとで いえまで きておくれ\pボクのいえは カナズミ じゃないよ\nこのしまに あるんだ$"
+	.if (. - gText_Rom_20DFB6) > 0x68
+	.error "gText_Rom_20DFB6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20DFB6) < 0x68
+	.space 0x68 - (. - gText_Rom_20DFB6)
+	.endif
+	.incbin "baserom.gba", 0x20e01e, 0x3f
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:165 SootopolisCity_MysteryEventsHouse_1F_Text_OnlyAmusementWatchingBattles
+	.globl gText_Rom_20E05D
+gText_Rom_20E05D: @ 0x0820E05D
+	.string "わしも わかいころは\nポケモン トレーナーとして\lせかいじゅうを たび していたのじゃ\pジジイとなった いまでは\nわかい トレーナーの しょうぶを みるのが\lゆいいつの たのしみ じゃ$"
+	.if (. - gText_Rom_20E05D) > 0x5d
+	.error "gText_Rom_20E05D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E05D) < 0x5d
+	.space 0x5d - (. - gText_Rom_20E05D)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:168 SootopolisCity_MysteryEventsHouse_1F_Text_DoorAppearsToBeLocked
+	.globl gText_Rom_20E0BA
+gText_Rom_20E0BA: @ 0x0820E0BA
+	.string "とびらには かぎが かかって いるようだ!$"
+	.if (. - gText_Rom_20E0BA) > 0x16
+	.error "gText_Rom_20E0BA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E0BA) < 0x16
+	.space 0x16 - (. - gText_Rom_20E0BA)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:171 SootopolisCity_MysteryEventsHouse_1F_Text_ChallengeVisitingTrainer
+	.globl gText_Rom_20E0D0
+gText_Rom_20E0D0: @ 0x0820E0D0
+	.string "いまは {STR_VAR_1} という トレーナーが\nわしの いえに きておる!\p{STR_VAR_1}と しょうぶ してみたいのじゃな?$"
+	.if (. - gText_Rom_20E0D0) > 0x34
+	.error "gText_Rom_20E0D0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E0D0) < 0x34
+	.space 0x34 - (. - gText_Rom_20E0D0)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:174 SootopolisCity_MysteryEventsHouse_1F_Text_YouWontBattle
+	.globl gText_Rom_20E104
+gText_Rom_20E104: @ 0x0820E104
+	.string "しょうぶ せんのか……\nしょうぶを みられなくて ガッカリ……$"
+	.if (. - gText_Rom_20E104) > 0x20
+	.error "gText_Rom_20E104 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E104) < 0x20
+	.space 0x20 - (. - gText_Rom_20E104)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:177 SootopolisCity_MysteryEventsHouse_1F_Text_KeepItTo3On3
+	.globl gText_Rom_20E124
+gText_Rom_20E124: @ 0x0820E124
+	.string "おお そうか そうか!\pじゃが この いえは\nあんまり がんじょう じゃないから\pせめて 3たい3の\nしょうぶに して くれんかのう?$"
+	.if (. - gText_Rom_20E124) > 0x44
+	.error "gText_Rom_20E124 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E124) < 0x44
+	.space 0x44 - (. - gText_Rom_20E124)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:180 SootopolisCity_MysteryEventsHouse_1F_Text_SaveProgressBeforeBattle
+	.globl gText_Rom_20E168
+gText_Rom_20E168: @ 0x0820E168
+	.string "じゃあ しょうぶの まえに\nレポートを かいて おいたほうが よいぞ$"
+	.if (. - gText_Rom_20E168) > 0x23
+	.error "gText_Rom_20E168 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E168) < 0x23
+	.space 0x23 - (. - gText_Rom_20E168)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:183 SootopolisCity_MysteryEventsHouse_1F_Text_HopeToSeeGoodMatch
+	.globl gText_Rom_20E18B
+gText_Rom_20E18B: @ 0x0820E18B
+	.string "よい しょうぶを きたい しておるぞ!$"
+	.if (. - gText_Rom_20E18B) > 0x14
+	.error "gText_Rom_20E18B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E18B) < 0x14
+	.space 0x14 - (. - gText_Rom_20E18B)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:193 SootopolisCity_MysteryEventsHouse_1F_Text_BrilliantStandoff
+	.globl gText_Rom_20E19F
+gText_Rom_20E19F: @ 0x0820E19F
+	.string "ひきわけ じゃったか!\pおたがい いっぽも ゆずらぬ\nすばらしい しょうぶ じゃったぞ!$"
+	.if (. - gText_Rom_20E19F) > 0x2d
+	.error "gText_Rom_20E19F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E19F) < 0x2d
+	.space 0x2d - (. - gText_Rom_20E19F)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:200 SootopolisCity_MysteryEventsHouse_1F_Text_ThatWasSuperlative
+	.globl gText_Rom_20E1CC
+gText_Rom_20E1CC: @ 0x0820E1CC
+	.string "みごと じゃったぞ!\pまるで わしの わかい ころを\nみている ようじゃわい!$"
+	.if (. - gText_Rom_20E1CC) > 0x28
+	.error "gText_Rom_20E1CC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E1CC) < 0x28
+	.space 0x28 - (. - gText_Rom_20E1CC)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:207 SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou
+	.globl gText_Rom_20E1F4
+gText_Rom_20E1F4: @ 0x0820E1F4
+	.string "ざんねん じゃったのう\nじゃが よい しょうぶ じゃったぞ!\lつぎこそは かてると よいのう$"
+	.if (. - gText_Rom_20E1F4) > 0x2f
+	.error "gText_Rom_20E1F4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E1F4) < 0x2f
+	.space 0x2f - (. - gText_Rom_20E1F4)
+	.endif
+	.incbin "baserom.gba", 0x20e223, 0x248
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:178 SootopolisCity_Gym_1F_Text_GymGuideAdvice
+	.globl gText_Rom_20E46B
+gText_Rom_20E46B: @ 0x0820E46B
+	.string "げんき しとぉや!!\nチャンピオンを めざす {PLAYER}!!\pルネシティの ジムリーダー アダンは\nみずタイプ ポケモンを つかいこなす!\pそして アダンがいる ところ までは\nこおりの ゆかが ゆくてを さえぎる……\pごめんな! きみに おしえて\nあげられるのは ここまで なんだ……!\pあとは じぶんで きばってくれッ!$"
+	.if (. - gText_Rom_20E46B) > 0xa0
+	.error "gText_Rom_20E46B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E46B) < 0xa0
+	.space 0xa0 - (. - gText_Rom_20E46B)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:181 SootopolisCity_Gym_1F_Text_GymGuidePostVictory
+	.globl gText_Rom_20E50B
+gText_Rom_20E50B: @ 0x0820E50B
+	.string "ホウエンで いちばん つよいと いわれる\nアダンに かったのかあ!!\pよし! きみの\nトレーナーカードを みたまえ!\pすべての バッジが そろっているなら\nいよいよ ポケモンリーグ ちょうせんだ!$"
+	.if (. - gText_Rom_20E50B) > 0x63
+	.error "gText_Rom_20E50B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E50B) < 0x63
+	.space 0x63 - (. - gText_Rom_20E50B)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:184 SootopolisCity_Gym_1F_Text_JuanIntro (+1 aliases)
+	.globl gText_Rom_20E56E
+gText_Rom_20E56E: @ 0x0820E56E
+	.string "ユーは しっていますか?\pミクリに ポケモンを おしえたのは\nなにをかくそう このアダン……\lすなわち わたくし だということを\pいちどは ジムリーダーから みをひき\nこのジムも かれに まかせて いましたが\lちょっとした リーズン……\lすなわち りゆうが できましてね\lもういちど カムバック したのです\p……おっと\nおしゃべりは これくらいにして\lそろそろ しょうぶを はじめましょう\pさあ ぞんぶんに ごらんなさい\nわたしと ポケモンが おりなす\lみずの イリュージョンを!$"
+	.if (. - gText_Rom_20E56E) > 0xf1
+	.error "gText_Rom_20E56E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E56E) < 0xf1
+	.space 0xf1 - (. - gText_Rom_20E56E)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:191 SootopolisCity_Gym_1F_Text_JuanDefeat (+1 aliases)
+	.globl gText_Rom_20E65F
+gText_Rom_20E65F: @ 0x0820E65F
+	.string "たははは! ユー アー ウィナー!\nすなわち わたくしの まけです\pユーには だれにも まけない\nさいのうの きらめきが かんじられます!\pしかし わたくしや ミクリに くらべると\nちょっと はなやかさが たりませんな!\pわたしの ふくでも\nかして あげましょうか?\p…… …… ……\n…… …… ……\pはっはっは ジョークですよ!\nユーには ふくの かわりに\lこの レインバッジを さしあげましょう!$"
+	.if (. - gText_Rom_20E65F) > 0xca
+	.error "gText_Rom_20E65F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E65F) < 0xca
+	.space 0xca - (. - gText_Rom_20E65F)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:194 SootopolisCity_Gym_1F_Text_ReceivedRainBadge
+	.globl gText_Rom_20E729
+gText_Rom_20E729: @ 0x0820E729
+	.string "{PLAYER}は アダンから\nレインバッジを もらった!$"
+	.if (. - gText_Rom_20E729) > 0x18
+	.error "gText_Rom_20E729 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E729) < 0x18
+	.space 0x18 - (. - gText_Rom_20E729)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:197 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis
+	.globl gText_Rom_20E741
+gText_Rom_20E741: @ 0x0820E741
+	.string "レインバッジを もっていると\nすべての ポケモンが\lユーに たいして すなおに なるでしょう\pはげしく ながれる たきも\nひでんわざ たきのぼりを つかって\lのぼれる ように してくれます\pそれから わたくしとの しょうぶを\nわすれないように これを……$"
+	.if (. - gText_Rom_20E741) > 0x80
+	.error "gText_Rom_20E741 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E741) < 0x80
+	.space 0x80 - (. - gText_Rom_20E741)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:200 SootopolisCity_Gym_1F_Text_ExplainWaterPulse
+	.globl gText_Rom_20E7C1
+gText_Rom_20E7C1: @ 0x0820E7C1
+	.string "ユーに わたした その わざマシン\nなかみは みずのはどう\pつかうと ときおり ちょうおんぱで\nあいてを こんらん させるのです!\p…… …… ……$"
+	.if (. - gText_Rom_20E7C1) > 0x4b
+	.error "gText_Rom_20E7C1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E7C1) < 0x4b
+	.space 0x4b - (. - gText_Rom_20E7C1)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:203 SootopolisCity_Gym_1F_Text_RegisteredJuan
+	.globl gText_Rom_20E80C
+gText_Rom_20E80C: @ 0x0820E80C
+	.string "ジムリーダー アダンを\nポケナビに とうろく した!$"
+	.if (. - gText_Rom_20E80C) > 0x1b
+	.error "gText_Rom_20E80C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E80C) < 0x1b
+	.space 0x1b - (. - gText_Rom_20E80C)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:206 SootopolisCity_Gym_1F_Text_JuanPostBattle
+	.globl gText_Rom_20E827
+gText_Rom_20E827: @ 0x0820E827
+	.string "ホウエンで あつめられる\nすべての ジムバッジを てにいれた\lトレーナーが いくべき ばしょ\pそれが ポケモンリーグ\pポケモンリーグに いくならば\nホウエンちほうの さいはて\lサイユウという しまに むかうのです$"
+	.if (. - gText_Rom_20E827) > 0x6b
+	.error "gText_Rom_20E827 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E827) < 0x6b
+	.space 0x6b - (. - gText_Rom_20E827)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:209 SootopolisCity_Gym_1F_Text_GoGetFortreeBadge
+	.globl gText_Rom_20E892
+gText_Rom_20E892: @ 0x0820E892
+	.string "ホウエンで あつめられる\nジムバッジは あと ひとつ\pユーが ポケモンリーグに いどむ つもりなら\nヒワマキの ポケモンジムで\lのこりの バッジを てにいれるのです$"
+	.if (. - gText_Rom_20E892) > 0x53
+	.error "gText_Rom_20E892 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E892) < 0x53
+	.space 0x53 - (. - gText_Rom_20E892)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:212 SootopolisCity_Gym_1F_Text_GymStatue
+	.globl gText_Rom_20E8E5
+gText_Rom_20E8E5: @ 0x0820E8E5
+	.string "ルネシティ ポケモンジム$"
+	.if (. - gText_Rom_20E8E5) > 0xd
+	.error "gText_Rom_20E8E5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E8E5) < 0xd
+	.space 0xd - (. - gText_Rom_20E8E5)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:215 SootopolisCity_Gym_1F_Text_GymStatueCertified
+	.globl gText_Rom_20E8F2
+gText_Rom_20E8F2: @ 0x0820E8F2
+	.string "ルネシティ ポケモンジム\pアダン にんてい トレーナー!\n{PLAYER}$"
+	.if (. - gText_Rom_20E8F2) > 0x20
+	.error "gText_Rom_20E8F2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E8F2) < 0x20
+	.space 0x20 - (. - gText_Rom_20E8F2)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:218 SootopolisCity_Gym_1F_Text_JuanPreRematch (+1 aliases)
+	.globl gText_Rom_20E912
+gText_Rom_20E912: @ 0x0820E912
+	.string "アダン『いつもの サイレンス……\nしずけさを とりもどした このジムに\pまたもや わかき タイフーンが\nうでだめしに あらわれましたね!\pいいですとも!\pなんどでも ユーの あいてを\nして さしあげましょう!$"
+	.if (. - gText_Rom_20E912) > 0x69
+	.error "gText_Rom_20E912 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E912) < 0x69
+	.space 0x69 - (. - gText_Rom_20E912)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:221 SootopolisCity_Gym_1F_Text_JuanRematchDefeat (+1 aliases)
+	.globl gText_Rom_20E97B
+gText_Rom_20E97B: @ 0x0820E97B
+	.string "たははは! ユー アー ウィナー!\nまたしても わたくしの まけです$"
+	.if (. - gText_Rom_20E97B) > 0x23
+	.error "gText_Rom_20E97B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E97B) < 0x23
+	.space 0x23 - (. - gText_Rom_20E97B)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:224 SootopolisCity_Gym_1F_Text_JuanPostRematch
+	.globl gText_Rom_20E99E
+gText_Rom_20E99E: @ 0x0820E99E
+	.string "アダン『わたしの でしに なれと いっても\nきっと ユーは ことわる でしょうね\pせめて わたしが きている コートを\nプレゼント したいの ですが……\lおそらく ユーは うけとらない でしょう\pそれが ジェントルマン というものです\nほっほっほっほ!$"
+	.if (. - gText_Rom_20E99E) > 0x7f
+	.error "gText_Rom_20E99E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E99E) < 0x7f
+	.space 0x7f - (. - gText_Rom_20E99E)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:227 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons (+1 aliases)
+	.globl gText_Rom_20EA1D
+gText_Rom_20EA1D: @ 0x0820EA1D
+	.string "アダン『いつもの サイレンス……\nしずけさを とりもどした このジムに\pまたもや わかき タイフーンが\nうでだめしに あらわれましたね!\pいいですとも!\nなんどでも ユーの あいてを……\p……アハン?\nユーは たたかえる ポケモンを\l1ひきしか もっていない ようですね\pねがわくば 2ひき いじょうの\nポケモンを もってきて プリーズ$"
+	.if (. - gText_Rom_20EA1D) > 0xa9
+	.error "gText_Rom_20EA1D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EA1D) < 0xa9
+	.space 0xa9 - (. - gText_Rom_20EA1D)
+	.endif
+	.incbin "baserom.gba", 0x20eac6, 0xe7
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:54 SootopolisCity_Gym_B1F_Text_AndreaIntro (+1 aliases)
+	.globl gText_Rom_20EBAD
+gText_Rom_20EBAD: @ 0x0820EBAD
+	.string "ジムリーダー アダンさまに おしえてもらった\nかれいな テクニックを みせたげる!$"
+	.if (. - gText_Rom_20EBAD) > 0x2a
+	.error "gText_Rom_20EBAD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EBAD) < 0x2a
+	.space 0x2a - (. - gText_Rom_20EBAD)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:57 SootopolisCity_Gym_B1F_Text_AndreaDefeat (+1 aliases)
+	.globl gText_Rom_20EBD7
+gText_Rom_20EBD7: @ 0x0820EBD7
+	.string "アダンさま ごめんね……$"
+	.if (. - gText_Rom_20EBD7) > 0xd
+	.error "gText_Rom_20EBD7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EBD7) < 0xd
+	.space 0xd - (. - gText_Rom_20EBD7)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:60 SootopolisCity_Gym_B1F_Text_AndreaPostBattle
+	.globl gText_Rom_20EBE4
+gText_Rom_20EBE4: @ 0x0820EBE4
+	.string "すべての ゆかに ヒビを いれると\nなにかが おこるわよ$"
+	.if (. - gText_Rom_20EBE4) > 0x1d
+	.error "gText_Rom_20EBE4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EBE4) < 0x1d
+	.space 0x1d - (. - gText_Rom_20EBE4)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:63 SootopolisCity_Gym_B1F_Text_CrissyIntro (+1 aliases)
+	.globl gText_Rom_20EC01
+gText_Rom_20EC01: @ 0x0820EC01
+	.string "せっかく ここまで これたのに\nあたしに まけるから\lアダンさまに あえないわね!$"
+	.if (. - gText_Rom_20EC01) > 0x2a
+	.error "gText_Rom_20EC01 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EC01) < 0x2a
+	.space 0x2a - (. - gText_Rom_20EC01)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:66 SootopolisCity_Gym_B1F_Text_CrissyDefeat (+1 aliases)
+	.globl gText_Rom_20EC2B
+gText_Rom_20EC2B: @ 0x0820EC2B
+	.string "つよい じゃない!!\nかわいい みために だまされたわ$"
+	.if (. - gText_Rom_20EC2B) > 0x1c
+	.error "gText_Rom_20EC2B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EC2B) < 0x1c
+	.space 0x1c - (. - gText_Rom_20EC2B)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:69 SootopolisCity_Gym_B1F_Text_CrissyPostBattle
+	.globl gText_Rom_20EC47
+gText_Rom_20EC47: @ 0x0820EC47
+	.string "あなたなら アダンさまと たたかっても\nいちげきで やられなくて すむかもね$"
+	.if (. - gText_Rom_20EC47) > 0x27
+	.error "gText_Rom_20EC47 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EC47) < 0x27
+	.space 0x27 - (. - gText_Rom_20EC47)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:72 SootopolisCity_Gym_B1F_Text_DaphneIntro (+1 aliases)
+	.globl gText_Rom_20EC6E
+gText_Rom_20EC6E: @ 0x0820EC6E
+	.string "アダンさまの たたかう すがた……\pその うつくしさに こころ うばわれ\nわたくしも ポケモンを はじめましてよ$"
+	.if (. - gText_Rom_20EC6E) > 0x39
+	.error "gText_Rom_20EC6E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EC6E) < 0x39
+	.space 0x39 - (. - gText_Rom_20EC6E)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:75 SootopolisCity_Gym_B1F_Text_DaphneDefeat (+1 aliases)
+	.globl gText_Rom_20ECA7
+gText_Rom_20ECA7: @ 0x0820ECA7
+	.string "たたかう すがたの\nうつくしさで まけましたわ……$"
+	.if (. - gText_Rom_20ECA7) > 0x1a
+	.error "gText_Rom_20ECA7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20ECA7) < 0x1a
+	.space 0x1a - (. - gText_Rom_20ECA7)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:78 SootopolisCity_Gym_B1F_Text_DaphnePostBattle
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_20ECC1
+gText_Rom_20ECC1: @ 0x0820ECC1
+	.string "あなたさまの たたかう すがたも\nすばらしくってよ\pああっ……!\nポケモンに であえて よかったですわ$"
+	.if (. - gText_Rom_20ECC1) != 0x34
+	.error "gText_Rom_20ECC1 must retain its original byte length"
+	.endif
+	.globl gText_Rom_20ECF1
+	.set gText_Rom_20ECF1, gText_Rom_20ECC1 + 0x30
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:81 SootopolisCity_Gym_B1F_Text_ConnieIntro (+1 aliases)
+	.globl gText_Rom_20ECF5
+gText_Rom_20ECF5: @ 0x0820ECF5
+	.string "おねえさんが しょうぶの きびしさ\nいろいろと おしえて あげちゃおっかな$"
+	.if (. - gText_Rom_20ECF5) > 0x26
+	.error "gText_Rom_20ECF5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20ECF5) < 0x26
+	.space 0x26 - (. - gText_Rom_20ECF5)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:84 SootopolisCity_Gym_B1F_Text_ConnieDefeat (+1 aliases)
+	.globl gText_Rom_20ED1B
+gText_Rom_20ED1B: @ 0x0820ED1B
+	.string "なんだ\nつよいんだ$"
+	.if (. - gText_Rom_20ED1B) > 0xa
+	.error "gText_Rom_20ED1B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20ED1B) < 0xa
+	.space 0xa - (. - gText_Rom_20ED1B)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:87 SootopolisCity_Gym_B1F_Text_ConniePostBattle
+	.globl gText_Rom_20ED25
+gText_Rom_20ED25: @ 0x0820ED25
+	.string "いいこと おしえて あげるね\pアダンさまに あいたいのなら\nすべての ゆかを 1かいずつ\lあるいて いけば いいの$"
+	.if (. - gText_Rom_20ED25) > 0x3a
+	.error "gText_Rom_20ED25 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20ED25) < 0x3a
+	.space 0x3a - (. - gText_Rom_20ED25)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:90 SootopolisCity_Gym_B1F_Text_BridgetIntro (+1 aliases)
+	.globl gText_Rom_20ED5F
+gText_Rom_20ED5F: @ 0x0820ED5F
+	.string "ホウエンちほうで いちばん\nレベルの たかい ポケモンジム……\pそれが ここ ルネジムよ!$"
+	.if (. - gText_Rom_20ED5F) > 0x2e
+	.error "gText_Rom_20ED5F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20ED5F) < 0x2e
+	.space 0x2e - (. - gText_Rom_20ED5F)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:93 SootopolisCity_Gym_B1F_Text_BridgetDefeat (+1 aliases)
+	.globl gText_Rom_20ED8D
+gText_Rom_20ED8D: @ 0x0820ED8D
+	.string "なんて レベルの たかい……$"
+	.if (. - gText_Rom_20ED8D) > 0xf
+	.error "gText_Rom_20ED8D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20ED8D) < 0xf
+	.space 0xf - (. - gText_Rom_20ED8D)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:96 SootopolisCity_Gym_B1F_Text_BridgetPostBattle
+	.globl gText_Rom_20ED9C
+gText_Rom_20ED9C: @ 0x0820ED9C
+	.string "レベルの たかい ジムに いることに\nまんぞく しないで\lほかにも しゅぎょうに いくほうが\lつよくなれそうだし なにより たのしそうね$"
+	.if (. - gText_Rom_20ED9C) > 0x45
+	.error "gText_Rom_20ED9C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20ED9C) < 0x45
+	.space 0x45 - (. - gText_Rom_20ED9C)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:99 SootopolisCity_Gym_B1F_Text_OliviaIntro (+1 aliases)
+	.globl gText_Rom_20EDE1
+gText_Rom_20EDE1: @ 0x0820EDE1
+	.string "アダンさまと いっしょに\nポケモンを きたえて いるの\pかんたんに たおせると おもわないでね$"
+	.if (. - gText_Rom_20EDE1) > 0x30
+	.error "gText_Rom_20EDE1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EDE1) < 0x30
+	.space 0x30 - (. - gText_Rom_20EDE1)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:102 SootopolisCity_Gym_B1F_Text_OliviaDefeat (+1 aliases)
+	.globl gText_Rom_20EE11
+gText_Rom_20EE11: @ 0x0820EE11
+	.string "たおされちゃった……$"
+	.if (. - gText_Rom_20EE11) > 0xb
+	.error "gText_Rom_20EE11 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EE11) < 0xb
+	.space 0xb - (. - gText_Rom_20EE11)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:105 SootopolisCity_Gym_B1F_Text_OliviaPostBattle
+	.globl gText_Rom_20EE1C
+gText_Rom_20EE1C: @ 0x0820EE1C
+	.string "あなた みどころ あると おもうの\nいっしょに ここで ポケモン きたえない?$"
+	.if (. - gText_Rom_20EE1C) > 0x28
+	.error "gText_Rom_20EE1C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EE1C) < 0x28
+	.space 0x28 - (. - gText_Rom_20EE1C)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:108 SootopolisCity_Gym_B1F_Text_TiffanyIntro (+1 aliases)
+	.globl gText_Rom_20EE44
+gText_Rom_20EE44: @ 0x0820EE44
+	.string "こおりの うえでの ひとふでがき\pそれが できる トレーナーは\nエレガントに うつくしいのよ!$"
+	.if (. - gText_Rom_20EE44) > 0x30
+	.error "gText_Rom_20EE44 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EE44) < 0x30
+	.space 0x30 - (. - gText_Rom_20EE44)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:111 SootopolisCity_Gym_B1F_Text_TiffanyDefeat (+1 aliases)
+	.globl gText_Rom_20EE74
+gText_Rom_20EE74: @ 0x0820EE74
+	.string "ちょっとー!?$"
+	.if (. - gText_Rom_20EE74) > 0x8
+	.error "gText_Rom_20EE74 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EE74) < 0x8
+	.space 0x8 - (. - gText_Rom_20EE74)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:114 SootopolisCity_Gym_B1F_Text_TiffanyPostBattle
+	.globl gText_Rom_20EE7C
+gText_Rom_20EE7C: @ 0x0820EE7C
+	.string "あたりまえ だけど\nポケモンの つよさに\lおとなも こどもも かんけい ないよ$"
+	.if (. - gText_Rom_20EE7C) > 0x28
+	.error "gText_Rom_20EE7C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EE7C) < 0x28
+	.space 0x28 - (. - gText_Rom_20EE7C)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:117 SootopolisCity_Gym_B1F_Text_BethanyIntro (+1 aliases)
+	.globl gText_Rom_20EEA4
+gText_Rom_20EEA4: @ 0x0820EEA4
+	.string "ポケモンと いっしょに いると\nじかんが あっ というまに すぎるのよ!$"
+	.if (. - gText_Rom_20EEA4) > 0x25
+	.error "gText_Rom_20EEA4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EEA4) < 0x25
+	.space 0x25 - (. - gText_Rom_20EEA4)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:120 SootopolisCity_Gym_B1F_Text_BethanyDefeat (+1 aliases)
+	.globl gText_Rom_20EEC9
+gText_Rom_20EEC9: @ 0x0820EEC9
+	.string "あっ!$"
+	.if (. - gText_Rom_20EEC9) > 0x4
+	.error "gText_Rom_20EEC9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EEC9) < 0x4
+	.space 0x4 - (. - gText_Rom_20EEC9)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:123 SootopolisCity_Gym_B1F_Text_BethanyPostBattle
+	.globl gText_Rom_20EECD
+gText_Rom_20EECD: @ 0x0820EECD
+	.string "まけた しょうぶも\nあっ というまに わすれたい……$"
+	.if (. - gText_Rom_20EECD) > 0x1b
+	.error "gText_Rom_20EECD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EECD) < 0x1b
+	.space 0x1b - (. - gText_Rom_20EECD)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:126 SootopolisCity_Gym_B1F_Text_AnnikaIntro (+1 aliases)
+	.globl gText_Rom_20EEE8
+gText_Rom_20EEE8: @ 0x0820EEE8
+	.string "すっごく めずらしい ポケモンちゃんで\nたたかって あげても いいわよー!$"
+	.if (. - gText_Rom_20EEE8) > 0x26
+	.error "gText_Rom_20EEE8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EEE8) < 0x26
+	.space 0x26 - (. - gText_Rom_20EEE8)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:129 SootopolisCity_Gym_B1F_Text_AnnikaDefeat (+1 aliases)
+	.globl gText_Rom_20EF0E
+gText_Rom_20EF0E: @ 0x0820EF0E
+	.string "ちょっと!\nポケモンちゃんも ちゃんと みてくれた?$"
+	.if (. - gText_Rom_20EF0E) > 0x1b
+	.error "gText_Rom_20EF0E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EF0E) < 0x1b
+	.space 0x1b - (. - gText_Rom_20EF0E)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:132 SootopolisCity_Gym_B1F_Text_AnnikaPostBattle
+	.globl gText_Rom_20EF29
+gText_Rom_20EF29: @ 0x0820EF29
+	.string "わたしが このジムに いるのは\nアダンさんが わたしの ポケモンちゃんを\lほめて くれたから なのよぉ\pあーあ ダンナに であうまえに\nアダンさんに であっていれば いまごろは…$"
+	.if (. - gText_Rom_20EF29) > 0x5a
+	.error "gText_Rom_20EF29 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EF29) < 0x5a
+	.space 0x5a - (. - gText_Rom_20EF29)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:135 SootopolisCity_Gym_B1F_Text_BriannaIntro (+1 aliases)
+	.globl gText_Rom_20EF83
+gText_Rom_20EF83: @ 0x0820EF83
+	.string "うふふ……\nその ひっしな おかおが ステキよ$"
+	.if (. - gText_Rom_20EF83) > 0x18
+	.error "gText_Rom_20EF83 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EF83) < 0x18
+	.space 0x18 - (. - gText_Rom_20EF83)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:138 SootopolisCity_Gym_B1F_Text_BriannaDefeat (+1 aliases)
+	.globl gText_Rom_20EF9B
+gText_Rom_20EF9B: @ 0x0820EF9B
+	.string "あら\nてかげん しすぎて しまいましたわ……$"
+	.if (. - gText_Rom_20EF9B) > 0x17
+	.error "gText_Rom_20EF9B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EF9B) < 0x17
+	.space 0x17 - (. - gText_Rom_20EF9B)
+	.endif
+
+	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:141 SootopolisCity_Gym_B1F_Text_BriannaPostBattle
+	.globl gText_Rom_20EFB2
+gText_Rom_20EFB2: @ 0x0820EFB2
+	.string "あなたでは アダンさまには\nきっと はが たちませんわよ うふふ……$"
+	.if (. - gText_Rom_20EFB2) > 0x23
+	.error "gText_Rom_20EFB2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20EFB2) < 0x23
+	.space 0x23 - (. - gText_Rom_20EFB2)
+	.endif
+	.incbin "baserom.gba", 0x20efd5, 0x71
+
+	@ data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc:46 SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn
+	.globl gText_Rom_20F046
+gText_Rom_20F046: @ 0x0820F046
+	.string "この まちの ジムリーダーは\nホウエンちほう でも いちばんと\lうわさの じつりょくしゃ ミクリに\pポケモン しょうぶの てほどきを した\nじんぶつが やっているのだ\pしかし そんな ミクリの ししょうよりも\nつよいと いわれる してんのう……\lその つよさは どれほどの ものだろう$"
+	.if (. - gText_Rom_20F046) > 0x8f
+	.error "gText_Rom_20F046 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F046) < 0x8f
+	.space 0x8f - (. - gText_Rom_20F046)
+	.endif
+
+	@ data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc:49 SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge
+	.globl gText_Rom_20F0D5
+gText_Rom_20F0D5: @ 0x0820F0D5
+	.string "この まちの みんなが みんな\nいえに とじこもって でてこないんです!\pそう いってる わたしも\nここから でたくないんです……$"
+	.if (. - gText_Rom_20F0D5) > 0x42
+	.error "gText_Rom_20F0D5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F0D5) < 0x42
+	.space 0x42 - (. - gText_Rom_20F0D5)
+	.endif
+
+	@ data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc:52 SootopolisCity_PokemonCenter_1F_Text_AlwaysBeFriendsWithPokemon
+	.globl gText_Rom_20F117
+gText_Rom_20F117: @ 0x0820F117
+	.string "どんな ときでも\nどんな ことが あっても\lあたし ポケモンと ともだちで いるわ\pだって ポケモンと いっしょだと\nすごく たのしいもの!$"
+	.if (. - gText_Rom_20F117) > 0x47
+	.error "gText_Rom_20F117 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F117) < 0x47
+	.space 0x47 - (. - gText_Rom_20F117)
+	.endif
+
+	@ data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc:55 SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends
+	.globl gText_Rom_20F15E
+gText_Rom_20F15E: @ 0x0820F15E
+	.string "ポケモンって\nあたしたちの ともだちじゃ…… ないの?\pどうして\nあんなふうに あばれて いるの?$"
+	.if (. - gText_Rom_20F15E) > 0x32
+	.error "gText_Rom_20F15E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F15E) < 0x32
+	.space 0x32 - (. - gText_Rom_20F15E)
+	.endif
+	.incbin "baserom.gba", 0x20f190, 0xaa
+
+	@ data/maps/SootopolisCity_Mart/scripts.inc:55 SootopolisCity_Mart_Text_PPUpIsGreat
+	.globl gText_Rom_20F23A
+gText_Rom_20F23A: @ 0x0820F23A
+	.string "ポイントアップは すごいぞ!\pなんたって ポケモンの\nパワーポイントを ふやせるからな!$"
+	.if (. - gText_Rom_20F23A) > 0x2d
+	.error "gText_Rom_20F23A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F23A) < 0x2d
+	.space 0x2d - (. - gText_Rom_20F23A)
+	.endif
+
+	@ data/maps/SootopolisCity_Mart/scripts.inc:58 SootopolisCity_Mart_Text_TooScaryOutside
+	.globl gText_Rom_20F267
+gText_Rom_20F267: @ 0x0820F267
+	.string "いったい なにが おこってるんだ!?\pものすごく きになる けど\nこわくて そとに でられないよ!$"
+	.if (. - gText_Rom_20F267) > 0x32
+	.error "gText_Rom_20F267 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F267) < 0x32
+	.space 0x32 - (. - gText_Rom_20F267)
+	.endif
+
+	@ data/maps/SootopolisCity_Mart/scripts.inc:61 SootopolisCity_Mart_Text_FullRestoreItemOfDreams
+	.globl gText_Rom_20F299
+gText_Rom_20F299: @ 0x0820F299
+	.string "かいふくのくすり ごぞんじ ですか?\pポケモンの たいりょく ぜんかい!\nじょうたい いじょうも すべて かいふく!\lまさに ゆめのような どうぐ なのです$"
+	.if (. - gText_Rom_20F299) > 0x4f
+	.error "gText_Rom_20F299 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F299) < 0x4f
+	.space 0x4f - (. - gText_Rom_20F299)
+	.endif
+
+	@ data/maps/SootopolisCity_Mart/scripts.inc:64 SootopolisCity_Mart_Text_DidSomethingAwaken
+	.globl gText_Rom_20F2E8
+gText_Rom_20F2E8: @ 0x0820F2E8
+	.string "この てんき……\nなにかが めざめたのか……?$"
+	.if (. - gText_Rom_20F2E8) > 0x18
+	.error "gText_Rom_20F2E8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F2E8) < 0x18
+	.space 0x18 - (. - gText_Rom_20F2E8)
+	.endif
+	.incbin "baserom.gba", 0x20f300, 0x55
+
+	@ field-script:0x20F30E FieldScriptText_20F355
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_20F355
+gText_Rom_20F355: @ 0x0820F355
+	.string "うむう……\nルネシティに　こもること　30ねん……\pわしが　あみだした　ひっさつの　わざマシン！\nおまえに　ゆずろう！$"
+	.if (. - gText_Rom_20F355) != 0x3c
+	.error "gText_Rom_20F355 must retain its original byte length"
+	.endif
+	.globl gText_Rom_20F35B
+	.set gText_Rom_20F35B, gText_Rom_20F355 + 0x6
+
+	@ data/maps/SootopolisCity_House1/scripts.inc:34 SootopolisCity_House1_Text_ExplainBrickBreak
+	.globl gText_Rom_20F391
+gText_Rom_20F391: @ 0x0820F391
+	.string "わざマシン31は かわらわり!\nせつめい するのも おそろしい わざよ……$"
+	.if (. - gText_Rom_20F391) > 0x26
+	.error "gText_Rom_20F391 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F391) < 0x26
+	.space 0x26 - (. - gText_Rom_20F391)
+	.endif
+
+	@ data/maps/SootopolisCity_House1/scripts.inc:37 SootopolisCity_House1_Text_Kecleon
+	.globl gText_Rom_20F3B7
+gText_Rom_20F3B7: @ 0x0820F3B7
+	.string "カクレオン『ぷー ぷひゃあー$"
+	.if (. - gText_Rom_20F3B7) > 0xf
+	.error "gText_Rom_20F3B7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F3B7) < 0xf
+	.space 0xf - (. - gText_Rom_20F3B7)
+	.endif
+	.incbin "baserom.gba", 0x20f3c6, 0x35
+
+	@ data/maps/SootopolisCity_House2/scripts.inc:21 SootopolisCity_House2_Text_DidYouKnowAboutMtPyreOrbs
+	.globl gText_Rom_20F3FB
+gText_Rom_20F3FB: @ 0x0820F3FB
+	.string "おくりびやま……\pちょうじょうに ふたつのたまが\nおかれて いるのは ごぞんじ ですか……?$"
+	.if (. - gText_Rom_20F3FB) > 0x2f
+	.error "gText_Rom_20F3FB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F3FB) < 0x2f
+	.space 0x2f - (. - gText_Rom_20F3FB)
+	.endif
+
+	@ data/maps/SootopolisCity_House2/scripts.inc:24 SootopolisCity_House2_Text_YesTwoOrbsSideBySide
+	.globl gText_Rom_20F42A
+gText_Rom_20F42A: @ 0x0820F42A
+	.string "そう…… ふたつのたまが\nとなりあわせに おかれている ようすは\lなにか こころが やすらぎますよ……$"
+	.if (. - gText_Rom_20F42A) > 0x34
+	.error "gText_Rom_20F42A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F42A) < 0x34
+	.space 0x34 - (. - gText_Rom_20F42A)
+	.endif
+
+	@ data/maps/SootopolisCity_House2/scripts.inc:27 SootopolisCity_House2_Text_OughtToVisitAndSee
+	.globl gText_Rom_20F45E
+gText_Rom_20F45E: @ 0x0820F45E
+	.string "そうですか……\nいちど いかれては どうでしょう……$"
+	.if (. - gText_Rom_20F45E) > 0x1b
+	.error "gText_Rom_20F45E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F45E) < 0x1b
+	.space 0x1b - (. - gText_Rom_20F45E)
+	.endif
+	.incbin "baserom.gba", 0x20f479, 0x33
+
+	@ data/maps/SootopolisCity_House3/scripts.inc:22 SootopolisCity_House3_Text_JuanHasManyFansDoYou
+	.globl gText_Rom_20F4AC
+gText_Rom_20F4AC: @ 0x0820F4AC
+	.string "あなた ポケモン トレーナーね?\pルネシティの アダンさまは\nおでしさんの ミクリさま より\lさらに たくさんの ファンが いるのよ!\pあなたに ファンは いるのかしら?$"
+	.if (. - gText_Rom_20F4AC) > 0x56
+	.error "gText_Rom_20F4AC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F4AC) < 0x56
+	.space 0x56 - (. - gText_Rom_20F4AC)
+	.endif
+
+	@ data/maps/SootopolisCity_House3/scripts.inc:25 SootopolisCity_House3_Text_YouMustBePrettyStrong
+	.globl gText_Rom_20F502
+gText_Rom_20F502: @ 0x0820F502
+	.string "へえー\nじゃあ けっこう つよいのね!$"
+	.if (. - gText_Rom_20F502) > 0x14
+	.error "gText_Rom_20F502 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F502) < 0x14
+	.space 0x14 - (. - gText_Rom_20F502)
+	.endif
+
+	@ data/maps/SootopolisCity_House3/scripts.inc:28 SootopolisCity_House3_Text_LonesomeTryWorkingHarder
+	.globl gText_Rom_20F516
+gText_Rom_20F516: @ 0x0820F516
+	.string "あららん……\nそれは ちょっと さみしいわね\pファンが できるよう がんばりなさいよ!$"
+	.if (. - gText_Rom_20F516) > 0x2c
+	.error "gText_Rom_20F516 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F516) < 0x2c
+	.space 0x2c - (. - gText_Rom_20F516)
+	.endif
+
+	@ data/maps/SootopolisCity_House3/scripts.inc:31 SootopolisCity_House3_Text_TrainerFanClubWasWild
+	.globl gText_Rom_20F542
+gText_Rom_20F542: @ 0x0820F542
+	.string "ねっしんな ファンは ホウエン いがいの\nちいきからも やってくるの!\pあたしが ミナモの\nトレーナー ファンクラブに いったときも\lとっても すごかったもの!$"
+	.if (. - gText_Rom_20F542) > 0x51
+	.error "gText_Rom_20F542 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F542) < 0x51
+	.space 0x51 - (. - gText_Rom_20F542)
+	.endif
+	.incbin "baserom.gba", 0x20f593, 0x26
+
+	@ data/maps/SootopolisCity_House4/scripts.inc:22 SootopolisCity_House4_Text_AncientTreasuresWaitingInSea
+	.globl gText_Rom_20F5B9
+gText_Rom_20F5B9: @ 0x0820F5B9
+	.string "いいことを おしえてやろう\pこの あたりの うみの そこには\nこだいの いせきが あるそうだ!\pひょっとしたら むかしの おたからが\nざくざく みつかるかも しれないぜ!$"
+	.if (. - gText_Rom_20F5B9) > 0x56
+	.error "gText_Rom_20F5B9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F5B9) < 0x56
+	.space 0x56 - (. - gText_Rom_20F5B9)
+	.endif
+
+	@ data/maps/SootopolisCity_House4/scripts.inc:25 SootopolisCity_House4_Text_StrollUnderwaterWithPokemon
+	.globl gText_Rom_20F60F
+gText_Rom_20F60F: @ 0x0820F60F
+	.string "たからもの かぁ……\pあると いいけど\nそうでなくても ポケモンと いっしょに\lかいていを おさんぽ なんて す・て・き!$"
+	.if (. - gText_Rom_20F60F) > 0x3e
+	.error "gText_Rom_20F60F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F60F) < 0x3e
+	.space 0x3e - (. - gText_Rom_20F60F)
+	.endif
+
+	@ data/maps/SootopolisCity_House4/scripts.inc:28 SootopolisCity_House4_Text_Azumarill
+	.globl gText_Rom_20F64D
+gText_Rom_20F64D: @ 0x0820F64D
+	.string "マリルリ『まるりー$"
+	.if (. - gText_Rom_20F64D) > 0xa
+	.error "gText_Rom_20F64D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F64D) < 0xa
+	.space 0xa - (. - gText_Rom_20F64D)
+	.endif
+	.incbin "baserom.gba", 0x20f657, 0x13
+
+	@ data/maps/SootopolisCity_House5/scripts.inc:12 SootopolisCity_House5_Text_SootopolisMtPyreConnection
+	.globl gText_Rom_20F66A
+gText_Rom_20F66A: @ 0x0820F66A
+	.string "この ルネシティと おくりびやまは\nなにかの かんけいが あるらしい……\pむかし いた けんきゅうじょで\nそんなことを ともだちと しらべていたよ$"
+	.if (. - gText_Rom_20F66A) > 0x4a
+	.error "gText_Rom_20F66A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F66A) < 0x4a
+	.space 0x4a - (. - gText_Rom_20F66A)
+	.endif
+
+	@ data/maps/SootopolisCity_House5/scripts.inc:15 SootopolisCity_House5_Text_BrotherUsedToStudySea
+	.globl gText_Rom_20F6B4
+gText_Rom_20F6B4: @ 0x0820F6B4
+	.string "おにいちゃん\nむかし うみの けんきゅうを してたんだ$"
+	.if (. - gText_Rom_20F6B4) > 0x1c
+	.error "gText_Rom_20F6B4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F6B4) < 0x1c
+	.space 0x1c - (. - gText_Rom_20F6B4)
+	.endif
+	.incbin "baserom.gba", 0x20f6d0, 0x68
+
+	@ data/maps/SootopolisCity_House6/scripts.inc:34 SootopolisCity_House6_Text_FirstGuestInWhileTakeDoll
+	.globl gText_Rom_20F738
+gText_Rom_20F738: @ 0x0820F738
+	.string "わー ひさしぶりの おきゃくさん!\pなんだか うれしいから\nホエルコの おおきい ぬいぐるみ あげる!$"
+	.if (. - gText_Rom_20F738) > 0x34
+	.error "gText_Rom_20F738 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F738) < 0x34
+	.space 0x34 - (. - gText_Rom_20F738)
+	.endif
+
+	@ data/maps/SootopolisCity_House6/scripts.inc:37 SootopolisCity_House6_Text_TakeGoodCareOfIt
+	.globl gText_Rom_20F76C
+gText_Rom_20F76C: @ 0x0820F76C
+	.string "だいじに してね!$"
+	.if (. - gText_Rom_20F76C) > 0xa
+	.error "gText_Rom_20F76C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F76C) < 0xa
+	.space 0xa - (. - gText_Rom_20F76C)
+	.endif
+
+	@ data/maps/SootopolisCity_House6/scripts.inc:40 SootopolisCity_House6_Text_IllHoldItForYou
+	.globl gText_Rom_20F776
+gText_Rom_20F776: @ 0x0820F776
+	.string "ほしいけど いまは ダメ?\nじゃあ あずかっておいて あげるね$"
+	.if (. - gText_Rom_20F776) > 0x20
+	.error "gText_Rom_20F776 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F776) < 0x20
+	.space 0x20 - (. - gText_Rom_20F776)
+	.endif
+
+	@ data/maps/SootopolisCity_House6/scripts.inc:43 SootopolisCity_House6_Text_DontWantThisDoll
+	.globl gText_Rom_20F796
+gText_Rom_20F796: @ 0x0820F796
+	.string "そうなの?\nぬいぐるみ ほしくないの?$"
+	.if (. - gText_Rom_20F796) > 0x14
+	.error "gText_Rom_20F796 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F796) < 0x14
+	.space 0x14 - (. - gText_Rom_20F796)
+	.endif
+
+	@ data/maps/SootopolisCity_House6/scripts.inc:46 SootopolisCity_House6_Text_LovePlushDolls
+	.globl gText_Rom_20F7AA
+gText_Rom_20F7AA: @ 0x0820F7AA
+	.string "あたし ぬいぐるみ だいすき!$"
+	.if (. - gText_Rom_20F7AA) > 0x10
+	.error "gText_Rom_20F7AA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F7AA) < 0x10
+	.space 0x10 - (. - gText_Rom_20F7AA)
+	.endif
+	.incbin "baserom.gba", 0x20f7ba, 0x13
+
+	@ data/maps/SootopolisCity_House7/scripts.inc:12 SootopolisCity_House7_Text_CityFromEruptedVolcano
+	.globl gText_Rom_20F7CD
+gText_Rom_20F7CD: @ 0x0820F7CD
+	.string "かいていに あった かざんが ふんかして\nうみの うえまで もりあがる\pそして ふんかこうに あめが たまって\nできたのが この ルネシティ なんだよ$"
+	.if (. - gText_Rom_20F7CD) > 0x4c
+	.error "gText_Rom_20F7CD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F7CD) < 0x4c
+	.space 0x4c - (. - gText_Rom_20F7CD)
+	.endif
+
+	@ data/maps/SootopolisCity_House7/scripts.inc:15 SootopolisCity_House7_Text_CaveMadeToKeepSomething
+	.globl gText_Rom_20F819
+gText_Rom_20F819: @ 0x0820F819
+	.string "ルネと そとのせかいを つなぐ どうくつ\pまるで なにかを ここから ださないように\nつくられた みたい だわ……\p……かんがえすぎ かしら?$"
+	.if (. - gText_Rom_20F819) > 0x48
+	.error "gText_Rom_20F819 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F819) < 0x48
+	.space 0x48 - (. - gText_Rom_20F819)
+	.endif
+	.incbin "baserom.gba", 0x20f861, 0x13f
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:106 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot
+	.globl gText_Rom_20F9A0
+gText_Rom_20F9A0: @ 0x0820F9A0
+	.string "きみ タネボーって ポケモン しってる?\nルネでは めったに みられないん だけどね\pわし おおきな タネボーが\nめちゃめちゃ だいすき なのよ!\pおとうとは ハスボーの ほうが\nおおきいって いうんだけど\pタネボーの ほうが\nおおきいに きまってる よね!\pん? きみ タネボー もってるの?\nちょ ちょ ちょっと……\lおじさんに みせて おくれ!$"
+	.if (. - gText_Rom_20F9A0) > 0xb0
+	.error "gText_Rom_20F9A0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F9A0) < 0xb0
+	.space 0xb0 - (. - gText_Rom_20F9A0)
+	.endif
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:109 SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad
+	.globl gText_Rom_20FA50
+gText_Rom_20FA50: @ 0x0820FA50
+	.string "{STR_VAR_2}cm!!\nおお! こいつは でかい!\pおとうとが みた でかい ハスボーに\nまけない おおきさ かも!\pみせて くれて ありがとう\nおれいに これを あげるよ!$"
+	.if (. - gText_Rom_20FA50) > 0x53
+	.error "gText_Rom_20FA50 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FA50) < 0x53
+	.space 0x53 - (. - gText_Rom_20FA50)
+	.endif
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:113 SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1 (+1 aliases)
+	.globl gText_Rom_20FAA3
+gText_Rom_20FAA3: @ 0x0820FAA3
+	.string "{PLAYER}は\nきずぐすりを もらった!$"
+	.if (. - gText_Rom_20FAA3) > 0x11
+	.error "gText_Rom_20FAA3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FAA3) < 0x11
+	.space 0x11 - (. - gText_Rom_20FAA3)
+	.endif
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:116 SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1 (+1 aliases)
+	.globl gText_Rom_20FAB4
+gText_Rom_20FAB4: @ 0x0820FAB4
+	.string "ありゃ?\nきみ もちもの いっぱいだね$"
+	.if (. - gText_Rom_20FAB4) > 0x14
+	.error "gText_Rom_20FAB4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FAB4) < 0x14
+	.space 0x14 - (. - gText_Rom_20FAB4)
+	.endif
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:119 SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot
+	.globl gText_Rom_20FAC8
+gText_Rom_20FAC8: @ 0x0820FAC8
+	.string "{STR_VAR_2}cmか……\pううむ わしは これより おおきい\nタネボーを みたこと あるな……$"
+	.if (. - gText_Rom_20FAC8) > 0x2b
+	.error "gText_Rom_20FAC8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FAC8) < 0x2b
+	.space 0x2b - (. - gText_Rom_20FAC8)
+	.endif
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:122 SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot
+	.globl gText_Rom_20FAF3
+gText_Rom_20FAF3: @ 0x0820FAF3
+	.string "おお こいつは なかなか…… って\nこれ タネボーじゃ ないよ!$"
+	.if (. - gText_Rom_20FAF3) > 0x21
+	.error "gText_Rom_20FAF3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FAF3) < 0x21
+	.space 0x21 - (. - gText_Rom_20FAF3)
+	.endif
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:125 SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot
+	.globl gText_Rom_20FB14
+gText_Rom_20FB14: @ 0x0820FB14
+	.string "おおきい タネボー もってないの?\nそれは ざんねん……\pこんど おおきい タネボー みせてね$"
+	.if (. - gText_Rom_20FB14) > 0x30
+	.error "gText_Rom_20FB14 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FB14) < 0x30
+	.space 0x30 - (. - gText_Rom_20FB14)
+	.endif
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:128 SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory
+	.globl gText_Rom_20FB44
+gText_Rom_20FB44: @ 0x0820FB44
+	.string "しじょう さいだいの タネボー!\n{STR_VAR_2}の {STR_VAR_3}cmのやつ!\pハスボーより おおきい タネボー\nいつでも ぼしゅうちゅう!$"
+	.if (. - gText_Rom_20FB44) > 0x3d
+	.error "gText_Rom_20FB44 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FB44) < 0x3d
+	.space 0x3d - (. - gText_Rom_20FB44)
+	.endif
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:131 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad
+	.globl gText_Rom_20FB81
+gText_Rom_20FB81: @ 0x0820FB81
+	.string "きみ ハスボーって ポケモン しってる?\nルネでは めったに みられないん だけどね\pわし おおきな ハスボーが\nめちゃめちゃ だいすき なのよ!\pアニキは タネボーの ほうが\nおおきいって いうんだけど\pハスボーの ほうが\nおおきいに きまってる よね!\pん? きみ ハスボー もってるの?\nちょ ちょ ちょっと……\lおじさんに みせて おくれ!$"
+	.if (. - gText_Rom_20FB81) > 0xaf
+	.error "gText_Rom_20FB81 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FB81) < 0xaf
+	.space 0xaf - (. - gText_Rom_20FB81)
+	.endif
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:134 SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot
+	.globl gText_Rom_20FC30
+gText_Rom_20FC30: @ 0x0820FC30
+	.string "{STR_VAR_2}cm!!\nおお! こいつは でかい!\pあにきが みた でかい タネボーに\nまけない おおきさ かも!\pみせて くれて ありがとう\nおれいに これを あげるよ!$"
+	.if (. - gText_Rom_20FC30) > 0x52
+	.error "gText_Rom_20FC30 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FC30) < 0x52
+	.space 0x52 - (. - gText_Rom_20FC30)
+	.endif
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:113 SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1 (+1 aliases)
+	.globl gText_Rom_20FC82
+gText_Rom_20FC82: @ 0x0820FC82
+	.string "{PLAYER}は\nきずぐすりを もらった!$"
+	.if (. - gText_Rom_20FC82) > 0x11
+	.error "gText_Rom_20FC82 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FC82) < 0x11
+	.space 0x11 - (. - gText_Rom_20FC82)
+	.endif
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:116 SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1 (+1 aliases)
+	.globl gText_Rom_20FC93
+gText_Rom_20FC93: @ 0x0820FC93
+	.string "ありゃ?\nきみ もちもの いっぱいだね$"
+	.if (. - gText_Rom_20FC93) > 0x14
+	.error "gText_Rom_20FC93 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FC93) < 0x14
+	.space 0x14 - (. - gText_Rom_20FC93)
+	.endif
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:144 SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad
+	.globl gText_Rom_20FCA7
+gText_Rom_20FCA7: @ 0x0820FCA7
+	.string "{STR_VAR_2}cmか……\pううむ わしは これより おおきい\nハスボーを みたこと あるな……$"
+	.if (. - gText_Rom_20FCA7) > 0x2b
+	.error "gText_Rom_20FCA7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FCA7) < 0x2b
+	.space 0x2b - (. - gText_Rom_20FCA7)
+	.endif
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:147 SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad
+	.globl gText_Rom_20FCD2
+gText_Rom_20FCD2: @ 0x0820FCD2
+	.string "おお こいつは なかなか…… って\nこれ ハスボーじゃ ないよ!$"
+	.if (. - gText_Rom_20FCD2) > 0x21
+	.error "gText_Rom_20FCD2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FCD2) < 0x21
+	.space 0x21 - (. - gText_Rom_20FCD2)
+	.endif
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:150 SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad
+	.globl gText_Rom_20FCF3
+gText_Rom_20FCF3: @ 0x0820FCF3
+	.string "おおきい ハスボー もってないの?\nそれは ざんねん……\pこんど おおきい ハスボー みせてね$"
+	.if (. - gText_Rom_20FCF3) > 0x30
+	.error "gText_Rom_20FCF3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FCF3) < 0x30
+	.space 0x30 - (. - gText_Rom_20FCF3)
+	.endif
+
+	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:153 SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory
+	.globl gText_Rom_20FD23
+gText_Rom_20FD23: @ 0x0820FD23
+	.string "しじょう さいだいの ハスボー!\n{STR_VAR_2}の {STR_VAR_3}cmのやつ!\pタネボーより おおきい ハスボー\nいつでも ぼしゅうちゅう!$"
+	.if (. - gText_Rom_20FD23) > 0x3d
+	.error "gText_Rom_20FD23 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FD23) < 0x3d
+	.space 0x3d - (. - gText_Rom_20FD23)
+	.endif
+	.incbin "baserom.gba", 0x20fd60, 0x1f3
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:165 SootopolisCity_MysteryEventsHouse_1F_Text_OnlyAmusementWatchingBattles
+	.globl gText_Rom_20FF53
+gText_Rom_20FF53: @ 0x0820FF53
+	.string "わしも わかいころは\nポケモン トレーナーとして\lせかいじゅうを たび していたのじゃ\pジジイとなった いまでは\nわかい トレーナーの しょうぶを みるのが\lゆいいつの たのしみ じゃ$"
+	.if (. - gText_Rom_20FF53) > 0x5d
+	.error "gText_Rom_20FF53 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FF53) < 0x5d
+	.space 0x5d - (. - gText_Rom_20FF53)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:168 SootopolisCity_MysteryEventsHouse_1F_Text_DoorAppearsToBeLocked
+	.globl gText_Rom_20FFB0
+gText_Rom_20FFB0: @ 0x0820FFB0
+	.string "とびらには かぎが かかって いるようだ!$"
+	.if (. - gText_Rom_20FFB0) > 0x16
+	.error "gText_Rom_20FFB0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FFB0) < 0x16
+	.space 0x16 - (. - gText_Rom_20FFB0)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:171 SootopolisCity_MysteryEventsHouse_1F_Text_ChallengeVisitingTrainer
+	.globl gText_Rom_20FFC6
+gText_Rom_20FFC6: @ 0x0820FFC6
+	.string "いまは {STR_VAR_1} という トレーナーが\nわしの いえに きておる!\p{STR_VAR_1}と しょうぶ してみたいのじゃな?$"
+	.if (. - gText_Rom_20FFC6) > 0x34
+	.error "gText_Rom_20FFC6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FFC6) < 0x34
+	.space 0x34 - (. - gText_Rom_20FFC6)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:174 SootopolisCity_MysteryEventsHouse_1F_Text_YouWontBattle
+	.globl gText_Rom_20FFFA
+gText_Rom_20FFFA: @ 0x0820FFFA
+	.string "しょうぶ せんのか……\nしょうぶを みられなくて ガッカリ……$"
+	.if (. - gText_Rom_20FFFA) > 0x20
+	.error "gText_Rom_20FFFA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20FFFA) < 0x20
+	.space 0x20 - (. - gText_Rom_20FFFA)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:177 SootopolisCity_MysteryEventsHouse_1F_Text_KeepItTo3On3
+	.globl gText_Rom_21001A
+gText_Rom_21001A: @ 0x0821001A
+	.string "おお そうか そうか!\pじゃが この いえは\nあんまり がんじょう じゃないから\pせめて 3たい3の\nしょうぶに して くれんかのう?$"
+	.if (. - gText_Rom_21001A) > 0x44
+	.error "gText_Rom_21001A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21001A) < 0x44
+	.space 0x44 - (. - gText_Rom_21001A)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:180 SootopolisCity_MysteryEventsHouse_1F_Text_SaveProgressBeforeBattle
+	.globl gText_Rom_21005E
+gText_Rom_21005E: @ 0x0821005E
+	.string "じゃあ しょうぶの まえに\nレポートを かいて おいたほうが よいぞ$"
+	.if (. - gText_Rom_21005E) > 0x23
+	.error "gText_Rom_21005E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21005E) < 0x23
+	.space 0x23 - (. - gText_Rom_21005E)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:183 SootopolisCity_MysteryEventsHouse_1F_Text_HopeToSeeGoodMatch
+	.globl gText_Rom_210081
+gText_Rom_210081: @ 0x08210081
+	.string "よい しょうぶを きたい しておるぞ!$"
+	.if (. - gText_Rom_210081) > 0x14
+	.error "gText_Rom_210081 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210081) < 0x14
+	.space 0x14 - (. - gText_Rom_210081)
+	.endif
+	.incbin "baserom.gba", 0x210095, 0x3
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:190 SootopolisCity_MysteryEventsHouse_B1F_Text_MatchEndedUpDraw
+	.globl gText_Rom_210098
+gText_Rom_210098: @ 0x08210098
+	.string "しょうぶは ひきわけに おわった!$"
+	.if (. - gText_Rom_210098) > 0x12
+	.error "gText_Rom_210098 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210098) < 0x12
+	.space 0x12 - (. - gText_Rom_210098)
+	.endif
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:193 SootopolisCity_MysteryEventsHouse_1F_Text_BrilliantStandoff
+	.globl gText_Rom_2100AA
+gText_Rom_2100AA: @ 0x082100AA
+	.string "ひきわけ じゃったか!\pおたがい いっぽも ゆずらぬ\nすばらしい しょうぶ じゃったぞ!$"
+	.if (. - gText_Rom_2100AA) > 0x2d
+	.error "gText_Rom_2100AA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2100AA) < 0x2d
+	.space 0x2d - (. - gText_Rom_2100AA)
+	.endif
+	.incbin "baserom.gba", 0x2100d7, 0x3
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:200 SootopolisCity_MysteryEventsHouse_1F_Text_ThatWasSuperlative
+	.globl gText_Rom_2100DA
+gText_Rom_2100DA: @ 0x082100DA
+	.string "みごと じゃったぞ!\pまるで わしの わかい ころを\nみている ようじゃわい!$"
+	.if (. - gText_Rom_2100DA) > 0x28
+	.error "gText_Rom_2100DA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2100DA) < 0x28
+	.space 0x28 - (. - gText_Rom_2100DA)
+	.endif
+	.incbin "baserom.gba", 0x210102, 0x3
+
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:207 SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou
+	.globl gText_Rom_210105
+gText_Rom_210105: @ 0x08210105
+	.string "ざんねん じゃったのう\nじゃが よい しょうぶ じゃったぞ!\lつぎこそは かてると よいのう$"
+	.if (. - gText_Rom_210105) > 0x2f
+	.error "gText_Rom_210105 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210105) < 0x2f
+	.space 0x2f - (. - gText_Rom_210105)
+	.endif
+	.incbin "baserom.gba", 0x210134, 0x158
+
+	@ data/maps/EverGrandeCity_SidneysRoom/scripts.inc:67 EverGrandeCity_SidneysRoom_Text_IntroSpeech
+	.globl gText_Rom_21028C
+gText_Rom_21028C: @ 0x0821028C
+	.string "ようこそ チャレンジャー!\nおれは してんのうの カゲツ\pうーん いい かお してるな\nなかなか たのしませて くれそうだぞ!\lいいぞ! いい かんじだぞ!\pよーし! おれと おまえ とで\nポケモン リーグでしか できない\lたたかいを たのしむと しようぜ!!$"
+	.if (. - gText_Rom_21028C) > 0x83
+	.error "gText_Rom_21028C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21028C) < 0x83
+	.space 0x83 - (. - gText_Rom_21028C)
+	.endif
+
+	@ data/maps/EverGrandeCity_SidneysRoom/scripts.inc:70 EverGrandeCity_SidneysRoom_Text_Defeat (+1 aliases)
+	.globl gText_Rom_21030F
+gText_Rom_21030F: @ 0x0821030F
+	.string "おやおや まけちまったよ\nまっ たのしんだから いいんだけどよ$"
+	.if (. - gText_Rom_21030F) > 0x20
+	.error "gText_Rom_21030F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21030F) < 0x20
+	.space 0x20 - (. - gText_Rom_21030F)
+	.endif
+
+	@ data/maps/EverGrandeCity_SidneysRoom/scripts.inc:73 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech
+	.globl gText_Rom_21032F
+gText_Rom_21032F: @ 0x0821032F
+	.string "まけた おれから ひとこと\pおまえなら もっと さきに すすめるぜ\nさあ つぎの へやに いって\lたたかいを たのしんで きなよ!$"
+	.if (. - gText_Rom_21032F) > 0x42
+	.error "gText_Rom_21032F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21032F) < 0x42
+	.space 0x42 - (. - gText_Rom_21032F)
+	.endif
+	.incbin "baserom.gba", 0x210371, 0x9a
+
+	@ data/maps/EverGrandeCity_PhoebesRoom/scripts.inc:61 EverGrandeCity_PhoebesRoom_Text_IntroSpeech
+	.globl gText_Rom_21040B
+gText_Rom_21040B: @ 0x0821040B
+	.string "アハハ!\pアタシ してんのうの フヨウ\pおくりびやまで しゅぎょう するうちに\nゴーストタイプの ポケモンと きもちを\lかよわせる ことが できるように なったの\pそう アタシと ポケモンの きずな\nとっても つよいんだ!\pそんな アタシの ポケモンたちに\nダメージを あたえる ことが できるか\lためして ごらんよ!$"
+	.if (. - gText_Rom_21040B) > 0xa0
+	.error "gText_Rom_21040B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21040B) < 0xa0
+	.space 0xa0 - (. - gText_Rom_21040B)
+	.endif
+
+	@ data/maps/EverGrandeCity_PhoebesRoom/scripts.inc:64 EverGrandeCity_PhoebesRoom_Text_Defeat (+1 aliases)
+	.globl gText_Rom_2104AB
+gText_Rom_2104AB: @ 0x082104AB
+	.string "あーあ\nまけちゃった$"
+	.if (. - gText_Rom_2104AB) > 0xb
+	.error "gText_Rom_2104AB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2104AB) < 0xb
+	.space 0xb - (. - gText_Rom_2104AB)
+	.endif
+
+	@ data/maps/EverGrandeCity_PhoebesRoom/scripts.inc:67 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech
+	.globl gText_Rom_2104B6
+gText_Rom_2104B6: @ 0x082104B6
+	.string "あなたと ポケモンとの あいだにも\nたしかな きずなが あったのね\pそれが わからなかった\nアタシが まけたのは とうぜん\pウン あなたたちの きずなが\nどこまで つうじるか みてみたいな\lつぎの へやに すすみなよ$"
+	.if (. - gText_Rom_2104B6) > 0x6d
+	.error "gText_Rom_2104B6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2104B6) < 0x6d
+	.space 0x6d - (. - gText_Rom_2104B6)
+	.endif
+	.incbin "baserom.gba", 0x210523, 0x9a
+
+	@ data/maps/EverGrandeCity_GlaciasRoom/scripts.inc:61 EverGrandeCity_GlaciasRoom_Text_IntroSpeech
+	.globl gText_Rom_2105BD
+gText_Rom_2105BD: @ 0x082105BD
+	.string "ようこそ\nしてんのうの プリムと いいます\pこおりの わざを きわめたくて\nはるか ホウエンまで やって きました\pですが ここに ちょうせんに くるのは\nやわな トレーナーと ポケモンばかり……\pあなたは どう?\pほんきを だしても だいじょうぶ だと\nうれしいの ですが……!!$"
+	.if (. - gText_Rom_2105BD) > 0x8e
+	.error "gText_Rom_2105BD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2105BD) < 0x8e
+	.space 0x8e - (. - gText_Rom_2105BD)
+	.endif
+
+	@ data/maps/EverGrandeCity_GlaciasRoom/scripts.inc:64 EverGrandeCity_GlaciasRoom_Text_Defeat (+1 aliases)
+	.globl gText_Rom_21064B
+gText_Rom_21064B: @ 0x0821064B
+	.string "あなたと ポケモンの\nたましいの あつさ!\pそれは なによりも あつく\nわたくしの こおりの わざが\lつうじる ものでは なかったのですね$"
+	.if (. - gText_Rom_21064B) > 0x46
+	.error "gText_Rom_21064B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21064B) < 0x46
+	.space 0x46 - (. - gText_Rom_21064B)
+	.endif
+
+	@ data/maps/EverGrandeCity_GlaciasRoom/scripts.inc:67 EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_210691
+gText_Rom_210691: @ 0x08210691
+	.string "つぎに すすみなさい\pそこで ポケモン リーグの\nほんとうの おそろしさ たしかめなさい$"
+	.if (. - gText_Rom_210691) != 0x2d
+	.error "gText_Rom_210691 must retain its original byte length"
+	.endif
+	.globl gText_Rom_2106BA
+	.set gText_Rom_2106BA, gText_Rom_210691 + 0x29
+	.incbin "baserom.gba", 0x2106be, 0xa2
+
+	@ data/maps/EverGrandeCity_DrakesRoom/scripts.inc:64 EverGrandeCity_DrakesRoom_Text_IntroSpeech
+	.globl gText_Rom_210760
+gText_Rom_210760: @ 0x08210760
+	.string "わしが ポケモン リーグ\nしてんのう さいごの ひとり\lドラゴンつかいの ゲンジ!\pポケモンは もともと\nじゆうきままな やせいの いきもの\pときとして ひとを こまらせ\nときとして ひとを たすける\pそんな ポケモンと いっしょに たたかうのに\nなにが ひつようか\lおまえ わかって いるのか?\pわかって いなければ\nこの わしに かつことなど できまい!$"
+	.if (. - gText_Rom_210760) > 0xb4
+	.error "gText_Rom_210760 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210760) < 0xb4
+	.space 0xb4 - (. - gText_Rom_210760)
+	.endif
+
+	@ data/maps/EverGrandeCity_DrakesRoom/scripts.inc:67 EverGrandeCity_DrakesRoom_Text_Defeat (+1 aliases)
+	.globl gText_Rom_210814
+gText_Rom_210814: @ 0x08210814
+	.string "みごと! というべきだな!$"
+	.if (. - gText_Rom_210814) > 0xe
+	.error "gText_Rom_210814 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210814) < 0xe
+	.space 0xe - (. - gText_Rom_210814)
+	.endif
+
+	@ data/maps/EverGrandeCity_DrakesRoom/scripts.inc:70 EverGrandeCity_DrakesRoom_Text_PostBattleSpeech
+	.globl gText_Rom_210822
+gText_Rom_210822: @ 0x08210822
+	.string "さすがは ここまで\nやってきた ポケモン トレーナー\lひつような もの わかっている ようだな\pそう! トレーナーに\nひつよう なのは ただしい こころ!\pポケモンは トレーナーの\nただしい こころに ふれて\lものごとの ぜんあくを はんだんし\lただしい こころに ふれて つよくなる!\pさあ つぎに すすめ!\nチャンピオンが まって おるぞ!!$"
+	.if (. - gText_Rom_210822) > 0xae
+	.error "gText_Rom_210822 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210822) < 0xae
+	.space 0xae - (. - gText_Rom_210822)
+	.endif
+	.incbin "baserom.gba", 0x2108d0, 0x25d
+
+	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:222 EverGrandeCity_ChampionsRoom_Text_IntroSpeech
+	.globl gText_Rom_210B2D
+gText_Rom_210B2D: @ 0x08210B2D
+	.string "ミクリ『ようこそ {PLAYER}{KUN}\pルネシティで おこった だいじけんを\nきみが ひとりで かいけつ したのは\lなかなか みごと だったよ\p……おっと!\pきみひとりの ちからで\nかいけつ したわけでは なかったな\pきみと…… きみの ポケモンが\nちからを あわせたからこそ\lこんなんを のりこえ られたんだ\pわたしたち トレーナーは\nいろんな どうぐを あたえたり\lいろんな わざを おしえたり して\lポケモンを そだてている……\pけれど わたしたち じしんも\nポケモンから たくさんの ことを\lおしえられて いるのさ\pそして ここは……\nその せいかを ぶつけあう ばしょ\pさあ!\pホウエンで いちばん かれいに\nポケモンと おどれるのは だれなのか!\pいま ここで みせて もらおう!$"
+	.if (. - gText_Rom_210B2D) > 0x155
+	.error "gText_Rom_210B2D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210B2D) < 0x155
+	.space 0x155 - (. - gText_Rom_210B2D)
+	.endif
+
+	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:225 EverGrandeCity_ChampionsRoom_Text_Defeat (+1 aliases)
+	.globl gText_Rom_210C82
+gText_Rom_210C82: @ 0x08210C82
+	.string "チャンピオンである\nわたしを うちまかす とは……\pなんと ワンダフル!\nにくらしいほど エレガント!\lだけど とっても グロリアス!\pさすがだよ {PLAYER}{KUN}!\pきみは ほんとうに すばらしい\nポケモン トレーナーだ!$"
+	.if (. - gText_Rom_210C82) > 0x6d
+	.error "gText_Rom_210C82 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210C82) < 0x6d
+	.space 0x6d - (. - gText_Rom_210C82)
+	.endif
+
+	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:228 EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech
+	.globl gText_Rom_210CEF
+gText_Rom_210CEF: @ 0x08210CEF
+	.string "ミクリ『きみが くりだしてきた\nポケモンの かずかず……\pときに はるかぜの ように まい\nあるいは いなづまの ように さす\pそんな ポケモンたちを\nかろやかに あやつる きみの すがた\pこの わたしで さえも\nほれぼれ するほど だったよ!\pこの ポケモンリーグで\nみごと ちょうてんに たった きみこそ\lホウエンちほうの あたらしい……$"
+	.if (. - gText_Rom_210CEF) > 0xac
+	.error "gText_Rom_210CEF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210CEF) < 0xac
+	.space 0xac - (. - gText_Rom_210CEF)
+	.endif
+
+	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:231 EverGrandeCity_ChampionsRoom_Text_MayAdvice
+	.globl gText_Rom_210D9B
+gText_Rom_210D9B: @ 0x08210D9B
+	.string "ハルカ『{PLAYER}{KUN}!\pチャンピオンに ちょうせん するまえに\nアドバイス……!$"
+	.if (. - gText_Rom_210D9B) > 0x27
+	.error "gText_Rom_210D9B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210D9B) < 0x27
+	.space 0x27 - (. - gText_Rom_210D9B)
+	.endif
+
+	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:234 EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver
+	.globl gText_Rom_210DC2
+gText_Rom_210DC2: @ 0x08210DC2
+	.string "ハルカ『あれ? あれれ?\p{PLAYER}{KUN}……\nひょっとして……\lもう おわっちゃった……?$"
+	.if (. - gText_Rom_210DC2) > 0x2b
+	.error "gText_Rom_210DC2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210DC2) < 0x2b
+	.space 0x2b - (. - gText_Rom_210DC2)
+	.endif
+
+	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:237 EverGrandeCity_ChampionsRoom_Text_BrendanAdvice
+	.globl gText_Rom_210DED
+gText_Rom_210DED: @ 0x08210DED
+	.string "ユウキ『{PLAYER}!\pチャンピオンに ちょうせん するまえに\nオレが アドバイス してやろうか……$"
+	.if (. - gText_Rom_210DED) > 0x2f
+	.error "gText_Rom_210DED may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210DED) < 0x2f
+	.space 0x2f - (. - gText_Rom_210DED)
+	.endif
+
+	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:240 EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon
+	.globl gText_Rom_210E1C
+gText_Rom_210E1C: @ 0x08210E1C
+	.string "ユウキ『{PLAYER}……\pおまえ ひょっとして\nチャンピオンに かったのか?$"
+	.if (. - gText_Rom_210E1C) > 0x23
+	.error "gText_Rom_210E1C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210E1C) < 0x23
+	.space 0x23 - (. - gText_Rom_210E1C)
+	.endif
+
+	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:243 EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex
+	.globl gText_Rom_210E3F
+gText_Rom_210E3F: @ 0x08210E3F
+	.string "オダマキ『ほれみろ {RIVAL}!\p{PLAYER}{KUN}なら しんぱい いらんと\nわたしが いったとおり だろう!\p…… …… ……\n{PLAYER}{KUN} とうとう やりとげたな\pきみが トウカ ジムの おとうさんに\nかちぬいたと きいた ときに\lもしや…… とは おもったが\pまさか ほんとうに チャンピオンに\nなってしまうとは な!\p……おお そうだ!\pきみの ポケモンずかんは どうなった?\nわたしに みせて ごらん!$"
+	.if (. - gText_Rom_210E3F) > 0xc5
+	.error "gText_Rom_210E3F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210E3F) < 0xc5
+	.space 0xc5 - (. - gText_Rom_210E3F)
+	.endif
+
+	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:246 EverGrandeCity_ChampionsRoom_Text_BirchCongratulations
+	.globl gText_Rom_210F04
+gText_Rom_210F04: @ 0x08210F04
+	.string "オダマキ『とにかく おめでとう!\pさあ むねをはって おくの へやに\nいってくるが いいよ!$"
+	.if (. - gText_Rom_210F04) > 0x2f
+	.error "gText_Rom_210F04 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210F04) < 0x2f
+	.space 0x2f - (. - gText_Rom_210F04)
+	.endif
+
+	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:249 EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe
+	.globl gText_Rom_210F33
+gText_Rom_210F33: @ 0x08210F33
+	.string "ミクリ『{PLAYER}{KUN}\p……いや あらためて よびなおそう\pあたらしい チャンピオン!\pさあ わたしに ついて きたまえ$"
+	.if (. - gText_Rom_210F33) > 0x3a
+	.error "gText_Rom_210F33 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210F33) < 0x3a
+	.space 0x3a - (. - gText_Rom_210F33)
+	.endif
+
+	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:252 EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside
+	.globl gText_Rom_210F6D
+gText_Rom_210F6D: @ 0x08210F6D
+	.string "ミクリ『もうしわけ ないが……\pここから さきの へやは\nチャンピオンに なった トレーナー だけが\lはいることの できる ばしょ\pきみは そこで オダマキはかせと\nいっしょに まっていて くれたまえ$"
+	.if (. - gText_Rom_210F6D) > 0x65
+	.error "gText_Rom_210F6D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210F6D) < 0x65
+	.space 0x65 - (. - gText_Rom_210F6D)
+	.endif
+
+	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:255 EverGrandeCity_ChampionsRoom_Text_MayCongratulations
+	.globl gText_Rom_210FD2
+gText_Rom_210FD2: @ 0x08210FD2
+	.string "ハルカ『……がーん!\p…… …… ……\n…… …… ……\pなーんてね いいの いいの!\nだって そういう きまり だもんね!\p{PLAYER}{KUN}!\nほんとうに おめでとう!!$"
+	.if (. - gText_Rom_210FD2) > 0x53
+	.error "gText_Rom_210FD2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_210FD2) < 0x53
+	.space 0x53 - (. - gText_Rom_210FD2)
+	.endif
+
+	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:258 EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations
+	.globl gText_Rom_211025
+gText_Rom_211025: @ 0x08211025
+	.string "ユウキ『……えーっ!\n…… …… ……\n…… …… ……\pま しかたないか\nそういう きまり だもんな\p{PLAYER}! よかったな\nおめでとう!!$"
+	.if (. - gText_Rom_211025) > 0x46
+	.error "gText_Rom_211025 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211025) < 0x46
+	.space 0x46 - (. - gText_Rom_211025)
+	.endif
+	.incbin "baserom.gba", 0x21106b, 0x17d
+
+	@ data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc:122 EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges
+	.globl gText_Rom_2111E8
+gText_Rom_2111E8: @ 0x082111E8
+	.string "これより さきは\nすべての ジムバッジを あつめた\lトレーナーだけが すすめます!\pトレーナーよ! きみの ジムバッジ\nかくにん させてください$"
+	.if (. - gText_Rom_2111E8) > 0x49
+	.error "gText_Rom_2111E8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2111E8) < 0x49
+	.space 0x49 - (. - gText_Rom_2111E8)
+	.endif
+
+	@ data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc:125 EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_211231
+gText_Rom_211231: @ 0x08211231
+	.string "きみは まだ\nすべての ジムバッジを もっていない!\pポケモン リーグを めざすなら\nでなおして きなさい$"
+	.if (. - gText_Rom_211231) != 0x36
+	.error "gText_Rom_211231 must retain its original byte length"
+	.endif
+	.globl gText_Rom_211263
+	.set gText_Rom_211263, gText_Rom_211231 + 0x32
+
+	@ data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc:128 EverGrandeCity_PokemonLeague_1F_Text_GoForth
+	.globl gText_Rom_211267
+gText_Rom_211267: @ 0x08211267
+	.string "トレーナーよ! おのれと\nポケモンを しんじて すすみたまえ!$"
+	.if (. - gText_Rom_211267) > 0x20
+	.error "gText_Rom_211267 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211267) < 0x20
+	.space 0x20 - (. - gText_Rom_211267)
+	.endif
+	.incbin "baserom.gba", 0x211287, 0xe2
+
+	@ data/maps/EverGrandeCity_HallOfFame/scripts.inc:82 EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions
+	.globl gText_Rom_211369
+gText_Rom_211369: @ 0x08211369
+	.string "ミクリ『ここは……\pはげしい たたかいを かちぬいた\nポケモンを きろくする ばしょ\pリーグ チャンピオンの\nえいこうを たたえる ための へやさ!$"
+	.if (. - gText_Rom_211369) > 0x4b
+	.error "gText_Rom_211369 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211369) < 0x4b
+	.space 0x4b - (. - gText_Rom_211369)
+	.endif
+
+	@ data/maps/EverGrandeCity_HallOfFame/scripts.inc:85 EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames
+	.globl gText_Rom_2113B4
+gText_Rom_2113B4: @ 0x082113B4
+	.string "ミクリ『さあ! ポケモン リーグを\nかちぬいた きみの なまえと\pともに たたかった きみの パートナーを\nこの マシンに きろく するのだ!$"
+	.if (. - gText_Rom_2113B4) > 0x48
+	.error "gText_Rom_2113B4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2113B4) < 0x48
+	.space 0x48 - (. - gText_Rom_2113B4)
+	.endif
+	.incbin "baserom.gba", 0x2113fc, 0xa6
+
+	@ data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc:76 EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad
+	.globl gText_Rom_2114A2
+gText_Rom_2114A2: @ 0x082114A2
+	.string "ポケモンリーグは\nチャンピオンロードを ぬけると すぐ!\pここまで きたら\nまえに すすむしかないわ!$"
+	.if (. - gText_Rom_2114A2) > 0x34
+	.error "gText_Rom_2114A2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2114A2) < 0x34
+	.space 0x34 - (. - gText_Rom_2114A2)
+	.endif
+
+	@ data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc:79 EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon
+	.globl gText_Rom_2114D6
+gText_Rom_2114D6: @ 0x082114D6
+	.string "チャンピオンロードの\nながくて けわしい みちのり……\pまるで いままで あるいてきた みちを\nおもいださせるかの ようだな\pきみ じぶんの ポケモンを\nしんじて がんばりたまえ!$"
+	.if (. - gText_Rom_2114D6) > 0x5b
+	.error "gText_Rom_2114D6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2114D6) < 0x5b
+	.space 0x5b - (. - gText_Rom_2114D6)
+	.endif
+
+	@ data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc:82 EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou
+	.globl gText_Rom_211531
+gText_Rom_211531: @ 0x08211531
+	.string "エニシダ『{PLAYER}{KUN}\nついに ポケモンリーグだね!\lわたしも おうえん した かいがあったよ!\pもし {PLAYER}{KUN}が\nポケモンチャンピオンに なったら……\lそのときは また れんらく するからね\pじゃ……\n{PLAYER}{KUN} がんばってね!$"
+	.if (. - gText_Rom_211531) > 0x71
+	.error "gText_Rom_211531 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211531) < 0x71
+	.space 0x71 - (. - gText_Rom_211531)
+	.endif
+	.incbin "baserom.gba", 0x2115a2, 0x190
+
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:97 Route104_MrBrineysHouse_Text_WaitUpPeeko
+	.globl gText_Rom_211732
+gText_Rom_211732: @ 0x08211732
+	.string "ハギ『こらこら!\nまて まて ピーコちゃん!$"
+	.if (. - gText_Rom_211732) > 0x17
+	.error "gText_Rom_211732 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211732) < 0x17
+	.space 0x17 - (. - gText_Rom_211732)
+	.endif
+
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:101 Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford
+	.globl gText_Rom_211749
+gText_Rom_211749: @ 0x08211749
+	.string "おや? きみは たしか ピーコちゃんを\nたすけて くれた {PLAYER}{KUN}!\lそのせつは せわに なったのう!\p……なぬ? ふねに のりたい とな?\pふむふむ?\nムロに てがみを とどけて\lカイナへ にもつを とどける……\lなんだか いそがしいのう きみは\pじゃが それくらい おやすい ごようだ!\nわしに まかせて おきなさい!\lでは まず ムロに むかうとするか!$"
+	.if (. - gText_Rom_211749) > 0xb5
+	.error "gText_Rom_211749 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211749) < 0xb5
+	.space 0xb5 - (. - gText_Rom_211749)
+	.endif
+
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:114 Route104_MrBrineysHouse_Text_SetSailForDewford (+1 aliases)
+	.globl gText_Rom_2117FE
+gText_Rom_2117FE: @ 0x082117FE
+	.string "ハギ『ムロタウン か\pよっしゃ! いくぞ ピーコちゃん!$"
+	.if (. - gText_Rom_2117FE) > 0x1d
+	.error "gText_Rom_2117FE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2117FE) < 0x1d
+	.space 0x1d - (. - gText_Rom_2117FE)
+	.endif
+
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:118 Route104_MrBrineysHouse_Text_DeclineDeliverySail
+	.globl gText_Rom_21181B
+gText_Rom_21181B: @ 0x0821181B
+	.string "ハギ『そうかね\nたのまれごとは いいのかね?\pまあ ふねに のる ひつようが あるときは\nいつでも えんりょなく いっておくれ!$"
+	.if (. - gText_Rom_21181B) > 0x41
+	.error "gText_Rom_21181B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21181B) < 0x41
+	.space 0x41 - (. - gText_Rom_21181B)
+	.endif
+
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:124 Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford
+	.globl gText_Rom_21185C
+gText_Rom_21185C: @ 0x0821185C
+	.string "ハギ『きみの いいたいことは わかっとる!\pムロに てがみを とどけて\nカイナへ にもつを とどけるんだろう\pそれくらい おやすい ごようだ!\nわしに まかせて おきなさい!\lでは まず ムロに むかうとするか!$"
+	.if (. - gText_Rom_21185C) > 0x6b
+	.error "gText_Rom_21185C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21185C) < 0x6b
+	.space 0x6b - (. - gText_Rom_21185C)
+	.endif
+
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:132 Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford
+	.globl gText_Rom_2118C7
+gText_Rom_2118C7: @ 0x082118C7
+	.string "ハギ『きみの いいたいことは わかっとる!\pカイナの クスノキさんに\nにもつを とどけるんだろう\pそれくらい おやすい ごようだ!\nわしに まかせて おきなさい!\lでは まず ムロに むかうとするか!$"
+	.if (. - gText_Rom_2118C7) > 0x65
+	.error "gText_Rom_2118C7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2118C7) < 0x65
+	.space 0x65 - (. - gText_Rom_2118C7)
+	.endif
+
+	@ data/maps/DewfordTown/scripts.inc:657 DewfordTown_Text_WhereAreWeBound (+2 aliases)
+	.globl gText_Rom_21192C
+gText_Rom_21192C: @ 0x0821192C
+	.string "ハギ『やあ! きみのため なら\nいつでも ふねを だそう!\pきみが いきたいのは どこ かな?$"
+	.if (. - gText_Rom_21192C) > 0x30
+	.error "gText_Rom_21192C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21192C) < 0x30
+	.space 0x30 - (. - gText_Rom_21192C)
+	.endif
+
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:145 Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail
+	.globl gText_Rom_21195C
+gText_Rom_21195C: @ 0x0821195C
+	.string "ハギ『そうか…… きみは\nピーコちゃんの いのちの おんじんだ\pふねに のる ひつようが あるときは\nいつでも えんりょなく いっておくれ!$"
+	.if (. - gText_Rom_21195C) > 0x47
+	.error "gText_Rom_21195C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21195C) < 0x47
+	.space 0x47 - (. - gText_Rom_21195C)
+	.endif
+
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:151 Route104_MrBrineysHouse_Text_Peeko
+	.globl gText_Rom_2119A3
+gText_Rom_2119A3: @ 0x082119A3
+	.string "ピーコちゃん『ピー ピひょろー!$"
+	.if (. - gText_Rom_2119A3) > 0x11
+	.error "gText_Rom_2119A3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2119A3) < 0x11
+	.space 0x11 - (. - gText_Rom_2119A3)
+	.endif
+	.incbin "baserom.gba", 0x2119b4, 0x1ed
+
+	@ field-script:0x211AFE FieldScriptText_211BA1
+	.globl gText_Rom_211BA1
+gText_Rom_211BA1: @ 0x08211BA1
+	.string "きみほど　ポケモンを　じょうずに\nつかいこなす　トレーナーは　はじめてだ！\pだが　きみよりも\nわたしの　むすこの　ほうが　つよいぞ！\pなんたって　ポケモン　リーグへ\nちょうせんに　いった　ぐらい　だからな！$"
+	.if (. - gText_Rom_211BA1) > 0x68
+	.error "gText_Rom_211BA1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211BA1) < 0x68
+	.space 0x68 - (. - gText_Rom_211BA1)
+	.endif
+
+	@ field-script:0x211B1C FieldScriptText_211C09
+	.globl gText_Rom_211C09
+gText_Rom_211C09: @ 0x08211C09
+	.string "この　きょうせいギプスを　つかって\nわたしたち　かぞくは\lポケモンを　きたえて　います！\pわたしたち　かぞく　ぜんいんに　かった\nあなたには　ひつようない　かもしれませんが\lぜひ　うけとって　くださいな！$"
+	.if (. - gText_Rom_211C09) > 0x67
+	.error "gText_Rom_211C09 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211C09) < 0x67
+	.space 0x67 - (. - gText_Rom_211C09)
+	.endif
+
+	@ field-script:0x211B44 FieldScriptText_211C70
+	.globl gText_Rom_211C70
+gText_Rom_211C70: @ 0x08211C70
+	.string "わたしたちは　ポケモンでの　しょうぶに\nじょうねつを　そそいで　います！$"
+	.if (. - gText_Rom_211C70) > 0x25
+	.error "gText_Rom_211C70 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211C70) < 0x25
+	.space 0x25 - (. - gText_Rom_211C70)
+	.endif
+
+	@ field-script:0x211B59 FieldScriptText_211C95
+	.globl gText_Rom_211C95
+gText_Rom_211C95: @ 0x08211C95
+	.string "パパより　ママが　つよくて\pママより　あたしが　つよくて\pあたしより　おばあちゃんが　つよくて\pでも　おばあちゃんより　つよかったのが\nあたしの　あにき　なの！$"
+	.if (. - gText_Rom_211C95) > 0x51
+	.error "gText_Rom_211C95 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211C95) < 0x51
+	.space 0x51 - (. - gText_Rom_211C95)
+	.endif
+
+	@ field-script:0x211B77 FieldScriptText_211CE6
+	.globl gText_Rom_211CE6
+gText_Rom_211CE6: @ 0x08211CE6
+	.string "あんたが　いくら　つよくても\nわしの　まごに　あったら\lかてなくて　なきだすこと　じゃろう……\pわしら　かぞくが　しってる　トレーナーの\nだれよりも　つよかった　からのう！\pまごの　やつも　いまごろは\nポケモンリーグの　チャンピオンに\lちょうせん　しているの　じゃろうか？\pそれとも　わしの　まご　じゃから\nもう　チャンピオン　かもな……　ウヒヒ！$"
+	.if (. - gText_Rom_211CE6) > 0xaf
+	.error "gText_Rom_211CE6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211CE6) < 0xaf
+	.space 0xaf - (. - gText_Rom_211CE6)
+	.endif
+
+	@ field-script:0x211B88 FieldScriptText_211D95
+	.globl gText_Rom_211D95
+gText_Rom_211D95: @ 0x08211D95
+	.string "まごの　やつも　いまごろは\nポケモンリーグの　チャンピオンに\lちょうせん　しているの　じゃろうか？\pそれとも　わしの　まご　じゃから\nもう　チャンピオン　かもな……　ウヒヒ！$"
+	.if (. - gText_Rom_211D95) > 0x58
+	.error "gText_Rom_211D95 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211D95) < 0x58
+	.space 0x58 - (. - gText_Rom_211D95)
+	.endif
+	.incbin "baserom.gba", 0x211ded, 0x62
+
+	@ field-script:0x211DFB FieldScriptText_211E4F
+	.globl gText_Rom_211E4F
+gText_Rom_211E4F: @ 0x08211E4F
+	.string "あらあら　あなたの　ポケモン\nつかれてるんじゃ　ないかえ？\pよかったら　やすんで　おいき！\nそうだ　それがいい！　そうしなさい！$"
+	.if (. - gText_Rom_211E4F) > 0x41
+	.error "gText_Rom_211E4F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211E4F) < 0x41
+	.space 0x41 - (. - gText_Rom_211E4F)
+	.endif
+
