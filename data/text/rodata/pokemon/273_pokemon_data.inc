@@ -393,7 +393,11 @@ gUnknown_85CD0A0: @ 0x085CD0A0
 	.incbin "baserom.gba", 0x5cd0a0, 0x28
 	.globl gUnknown_85CD0C8
 gUnknown_85CD0C8: @ 0x085CD0C8
-	.incbin "baserom.gba", 0x5cd0c8, 0x14
+	.4byte gText_Rom_5C978E
+	.4byte gText_Rom_5C9798
+	.4byte gText_Rom_5C979E
+	.4byte gText_Rom_5C97A2
+	.4byte gText_Rom_5C97AA
 	.globl gUnknown_85CD0DC
 gUnknown_85CD0DC: @ 0x085CD0DC
 	.incbin "baserom.gba", 0x5cd0dc, 0x1e

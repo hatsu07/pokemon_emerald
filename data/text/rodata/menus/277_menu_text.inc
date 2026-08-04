@@ -76,10 +76,12 @@ gText_Rom_5DBC11: @ 0x085DBC11
 	.endif
 	.globl gText_Rom_5DBC1D
 	.set gText_Rom_5DBC1D, gText_Rom_5DBC11 + 0xc
-	.incbin "baserom.gba", 0x5dbc21, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_85DBC24
 gUnknown_85DBC24: @ 0x085DBC24
-	.incbin "baserom.gba", 0x5dbc24, 0xc
+	.4byte Select_OptionSummary
+	.4byte Select_OptionRentDeselect
+	.4byte Select_OptionOthers
 	.globl gUnknown_85DBC30
 gUnknown_85DBC30: @ 0x085DBC30
 	.incbin "baserom.gba", 0x5dbc30, 0xc

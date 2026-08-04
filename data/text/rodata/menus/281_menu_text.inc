@@ -33,7 +33,7 @@ gText_Rom_5DD514: @ 0x085DD514
 	.if (. - gText_Rom_5DD514) < 0x6
 	.space 0x6 - (. - gText_Rom_5DD514)
 	.endif
-	.incbin "baserom.gba", 0x5dd51a, 0x2
+	.space 0x2, 0x00
 
 	@ asm/frontier_util.s:5500 Print1PRecord (+1 aliases)
 	.globl gText_Rom_5DD51C
@@ -45,7 +45,7 @@ gText_Rom_5DD51C: @ 0x085DD51C
 	.if (. - gText_Rom_5DD51C) < 0x9
 	.space 0x9 - (. - gText_Rom_5DD51C)
 	.endif
-	.incbin "baserom.gba", 0x5dd525, 0x3
+	.space 0x3, 0x00
 
 	@ asm/frontier_util.s:5500 Print1PRecord (+1 aliases)
 	.globl gText_Rom_5DD528
@@ -57,7 +57,7 @@ gText_Rom_5DD528: @ 0x085DD528
 	.if (. - gText_Rom_5DD528) < 0x7
 	.space 0x7 - (. - gText_Rom_5DD528)
 	.endif
-	.incbin "baserom.gba", 0x5dd52f, 0x1
+	.space 0x1, 0x00
 
 	@ asm/frontier_util.s:5500 Print1PRecord (+1 aliases)
 	.globl gText_Rom_5DD530
@@ -69,10 +69,19 @@ gText_Rom_5DD530: @ 0x085DD530
 	.if (. - gText_Rom_5DD530) < 0x9
 	.space 0x9 - (. - gText_Rom_5DD530)
 	.endif
-	.incbin "baserom.gba", 0x5dd539, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_85DD53C
 gUnknown_85DD53C: @ 0x085DD53C
-	.incbin "baserom.gba", 0x5dd53c, 0x28
+	.4byte gText_Rom_5DD50C
+	.4byte gText_Rom_5DD50C
+	.4byte gText_Rom_5DD50C
+	.4byte gText_Rom_5DD514
+	.4byte gText_Rom_5DD50C
+	.4byte gText_Rom_5DD528
+	.4byte gText_Rom_5DD50C
+	.4byte gText_Rom_5DD51C
+	.4byte gText_Rom_5DD530
+	.4byte gText_Rom_5DD50C
 	.globl gUnknown_85DD564
 gUnknown_85DD564: @ 0x085DD564
 	.incbin "baserom.gba", 0x5dd564, 0x6
@@ -109,7 +118,13 @@ gUnknown_85DD7AC: @ 0x085DD7AC
 	.incbin "baserom.gba", 0x5dd7ac, 0x10
 	.globl gUnknown_85DD7BC
 gUnknown_85DD7BC: @ 0x085DD7BC
-	.incbin "baserom.gba", 0x5dd7bc, 0x1c
+	.4byte InitArenaChallenge
+	.4byte GetArenaData
+	.4byte SetArenaData
+	.4byte sub_081A56B4
+	.4byte SetArenaRewardItem
+	.4byte GiveArenaRewardItem
+	.4byte BufferArenaOpponentName
 	.globl gUnknown_85DD7D8
 gUnknown_85DD7D8: @ 0x085DD7D8
 	.incbin "baserom.gba", 0x5dd7d8, 0xc
@@ -124,7 +139,23 @@ gUnknown_85DD93C: @ 0x085DD93C
 	.incbin "baserom.gba", 0x5dd93c, 0x1c
 	.globl gUnknown_85DD958
 gUnknown_85DD958: @ 0x085DD958
-	.incbin "baserom.gba", 0x5dd958, 0x44
+	.4byte InitFactoryChallenge
+	.4byte GetBattleFactoryData
+	.4byte SetBattleFactoryData
+	.4byte sub_081A5ED4
+	.4byte SwapRentalMons
+	.4byte nullsub_123
+	.4byte SelectInitialRentalMons
+	.4byte sub_081A5F30
+	.4byte SetPerformedRentalSwap
+	.4byte SetRentalsToOpponentParty
+	.4byte SetPlayerAndOpponentParties
+	.4byte SetOpponentGfxVar
+	.4byte GenerateOpponentMons
+	.4byte GenerateInitialRentalMons
+	.4byte GetOpponentMostCommonMonType
+	.4byte GetOpponentBattleStyle
+	.4byte RestorePlayerPartyHeldItems
 	.globl gUnknown_85DD99C
 gUnknown_85DD99C: @ 0x085DD99C
 	.incbin "baserom.gba", 0x5dd99c, 0x10
@@ -143,7 +174,8 @@ gUnknown_85DD9CC: @ 0x085DD9CC
 
 	.globl gUnknown_85DDB4C
 gUnknown_85DDB4C: @ 0x085DDB4C
-	.incbin "baserom.gba", 0x5ddb4c, 0x8
+	.4byte sBattlePikeLevel50WildMonPointers
+	.4byte sBattlePikeOpenLevelWildMonPointers
 	.globl gUnknown_85DDB54
 gUnknown_85DDB54: @ 0x085DDB54
 	.incbin "baserom.gba", 0x5ddb54, 0xc8
@@ -167,7 +199,35 @@ gUnknown_85DDE14: @ 0x085DDE14
 	.incbin "baserom.gba", 0x5dde14, 0x1c
 	.globl gUnknown_85DDE30
 gUnknown_85DDE30: @ 0x085DDE30
-	.incbin "baserom.gba", 0x5dde30, 0x74
+	.4byte SetRoomType
+	.4byte GetBattlePikeData
+	.4byte SetBattlePikeData
+	.4byte GetInFinalRoom
+	.4byte SetupRoomEventObjects
+	.4byte GetRoomType
+	.4byte sub_081A7180
+	.4byte sub_081A718C
+	.4byte sub_081A7198
+	.4byte sub_081A71E0
+	.4byte nullsub_124
+	.4byte GetRoomInflictedStatus
+	.4byte GetRoomInflictedStatusMon
+	.4byte HealOneOrTwoMons
+	.4byte BufferNPCMessage
+	.4byte StatusInflictionScreenFade
+	.4byte GetInBattlePike
+	.4byte SetHintedRoom
+	.4byte GetHintedRoomIndex
+	.4byte GetRoomTypeHint
+	.4byte ClearPikeTrainerIds
+	.4byte BufferRecordMixingTrainerMessage
+	.4byte GetCurrentRoomPikeQueenFightType
+	.4byte HealSomeMonsBeforePikeQueen
+	.4byte SetHealingRoomsDisabled
+	.4byte CanAnyPartyMonsBeHealed
+	.4byte BackupMonHeldItems
+	.4byte RestoreMonHeldItems
+	.4byte InitPikeChallenge
 	.globl gUnknown_85DDEA4
 gUnknown_85DDEA4: @ 0x085DDEA4
 	.incbin "baserom.gba", 0x5ddea4, 0x9
@@ -176,7 +236,8 @@ gUnknown_85DDEAD: @ 0x085DDEAD
 	.incbin "baserom.gba", 0x5ddead, 0x13
 	.globl gUnknown_85DDEC0
 gUnknown_85DDEC0: @ 0x085DDEC0
-	.incbin "baserom.gba", 0x5ddec0, 0x8
+	.4byte StatusInflictionFadeOut
+	.4byte StatusInflictionFadeIn
 	.globl gUnknown_85DDEC8
 gUnknown_85DDEC8: @ 0x085DDEC8
 	.incbin "baserom.gba", 0x5ddec8, 0x8
@@ -246,7 +307,24 @@ gUnknown_85DF710: @ 0x085DF710
 	.incbin "baserom.gba", 0x5df710, 0x8
 	.globl gUnknown_85DF718
 gUnknown_85DF718: @ 0x085DF718
-	.incbin "baserom.gba", 0x5df718, 0x48
+	.4byte InitPyramidChallenge
+	.4byte GetBattlePyramidData
+	.4byte SetBattlePyramidData
+	.4byte sub_081A8EB4
+	.4byte SetBattlePyramidRewardItem
+	.4byte GiveBattlePyramidRewardItem
+	.4byte SeedPyramidFloor
+	.4byte SetPickupItem
+	.4byte HidePyramidItem
+	.4byte InitPyramidFacilityTrainers
+	.4byte ShowPostBattleHintText
+	.4byte UpdatePyramidWinStreak
+	.4byte GetInBattlePyramid
+	.4byte UpdatePyramidLightRadius
+	.4byte ClearPyramidPartyHeldItems
+	.4byte SetPyramidFloorPalette
+	.4byte sub_081A95A0
+	.4byte RestorePyramidPlayerParty
 	.globl gUnknown_85DF760
 gUnknown_85DF760: @ 0x085DF760
 	.incbin "baserom.gba", 0x5df760, 0xc
@@ -291,7 +369,7 @@ gUnknown_85DF87C: @ 0x085DF87C
 	.incbin "baserom.gba", 0x5df87c, 0x2
 	.globl gUnknown_85DF87E
 gUnknown_85DF87E: @ 0x085DF87E
-	.incbin "baserom.gba", 0x5df87e, 0x1
+	.space 0x1, 0x04
 	.globl gUnknown_85DF87F
 gUnknown_85DF87F: @ 0x085DF87F
 	.incbin "baserom.gba", 0x5df87f, 0x4
@@ -306,13 +384,26 @@ gUnknown_85DF887: @ 0x085DF887
 	.incbin "baserom.gba", 0x5df887, 0x5
 	.globl gUnknown_85DF88C
 gUnknown_85DF88C: @ 0x085DF88C
-	.incbin "baserom.gba", 0x5df88c, 0x30
+	.4byte unknown_item_menu_type
+	.4byte unknown_item_menu_type
+	.4byte item_menu_type_2
+	.4byte DisplaySellItemAskString
+	.4byte unknown_ItemMenu_Confirm
+	.4byte unknown_item_menu_type
+	.4byte DisplayDepositItemAskString
+	.4byte unknown_item_menu_type
+	.4byte unknown_item_menu_type
+	.4byte unknown_item_menu_type
+	.4byte NULL
+	.4byte item_menu_type_b
 	.globl gUnknown_85DF8BC
 gUnknown_85DF8BC: @ 0x085DF8BC
-	.incbin "baserom.gba", 0x5df8bc, 0x8
+	.4byte BagMenu_ConfirmToss
+	.4byte BagMenu_CancelToss
 	.globl gUnknown_85DF8C4
 gUnknown_85DF8C4: @ 0x085DF8C4
-	.incbin "baserom.gba", 0x5df8c4, 0x8
+	.4byte BagMenu_ConfirmSell
+	.4byte BagMenu_CancelSell
 	.globl gUnknown_85DF8CC
 gUnknown_85DF8CC: @ 0x085DF8CC
 	.incbin "baserom.gba", 0x5df8cc, 0x10
@@ -339,7 +430,7 @@ gUnknown_85DFAFC: @ 0x085DFAFC
 	.incbin "baserom.gba", 0x5dfafc, 0x18
 	.globl gUnknown_85DFB14
 gUnknown_85DFB14: @ 0x085DFB14
-	.incbin "baserom.gba", 0x5dfb14, 0x4
+	.space 0x4, 0x00
 	.globl gUnknown_85DFB18
 gUnknown_85DFB18: @ 0x085DFB18
 	.incbin "baserom.gba", 0x5dfb18, 0x4
@@ -384,7 +475,7 @@ gUnknown_85DFCC2: @ 0x085DFCC2
 	.incbin "baserom.gba", 0x5dfcc2, 0x4
 	.globl gUnknown_85DFCC6
 gUnknown_85DFCC6: @ 0x085DFCC6
-	.incbin "baserom.gba", 0x5dfcc6, 0x2
+	.space 0x2, 0xFF
 	.globl gUnknown_85DFCC8
 gUnknown_85DFCC8: @ 0x085DFCC8
 	.incbin "baserom.gba", 0x5dfcc8, 0xbe4
@@ -552,7 +643,33 @@ gUnknown_85E13A9: @ 0x085E13A9
 	.incbin "baserom.gba", 0x5e13a9, 0x3
 	.globl gUnknown_85E13AC
 gUnknown_85E13AC: @ 0x085E13AC
-	.incbin "baserom.gba", 0x5e13ac, 0x6c
+	.4byte gText_Rom_5CA036
+	.4byte gText_Rom_5CA159
+	.4byte gText_Rom_5CA169
+	.4byte gText_Rom_5CA046
+	.4byte gText_Rom_5CA053
+	.4byte gText_Rom_5CA063
+	.4byte gText_Rom_5CA073
+	.4byte gText_Rom_5CA08D
+	.4byte gText_Rom_5CA09B
+	.4byte gText_Rom_5CA0A6
+	.4byte gText_Rom_5CA13D
+	.4byte gText_Rom_5CA179
+	.4byte gText_Rom_5CA188
+	.4byte gText_Rom_5CA0B5
+	.4byte gText_Rom_5CA0E4
+	.4byte gText_Rom_5CA0F2
+	.4byte gText_Rom_5CA102
+	.4byte gText_Rom_5CA111
+	.4byte gText_Rom_5CA11F
+	.4byte gText_Rom_5CA12E
+	.4byte gUnknown_85C93D0
+	.4byte gText_Rom_5CA083
+	.4byte gText_Rom_5CA0C1
+	.4byte gText_Rom_5CA0CD
+	.4byte gText_Rom_5CA0D6
+	.4byte gText_Rom_5CA14C
+	.4byte gText_Rom_5CA195
 	.globl gUnknown_85E1418
 gUnknown_85E1418: @ 0x085E1418
 	.incbin "baserom.gba", 0x5e1418, 0xa8
@@ -615,19 +732,41 @@ gUnknown_85E18F8: @ 0x085E18F8
 	.incbin "baserom.gba", 0x5e18f8, 0x74
 	.globl gUnknown_85E196C
 gUnknown_85E196C: @ 0x085E196C
-	.incbin "baserom.gba", 0x5e196c, 0x20
+	.4byte sub_081B9674
+	.4byte sub_081B96C8
+	.4byte sub_081B96E4
+	.4byte sub_081B9700
+	.4byte sub_081B9730
+	.4byte sub_081B975C
+	.4byte sub_081B97A0
+	.4byte sub_081B97C8
 	.globl gUnknown_85E198C
 gUnknown_85E198C: @ 0x085E198C
 	.incbin "baserom.gba", 0x5e198c, 0x4
 	.globl gUnknown_85E1990
 gUnknown_85E1990: @ 0x085E1990
-	.incbin "baserom.gba", 0x5e1990, 0x1c
+	.4byte sub_081B9840
+	.4byte sub_081B9894
+	.4byte sub_081B98B0
+	.4byte sub_081B98CC
+	.4byte sub_081B9910
+	.4byte sub_081B9938
+	.4byte sub_081B9990
 	.globl gUnknown_85E19AC
 gUnknown_85E19AC: @ 0x085E19AC
 	.incbin "baserom.gba", 0x5e19ac, 0x4
 	.globl gUnknown_85E19B0
 gUnknown_85E19B0: @ 0x085E19B0
-	.incbin "baserom.gba", 0x5e19b0, 0x28
+	.4byte sub_081B99C8
+	.4byte sub_081B9A1C
+	.4byte sub_081B9A38
+	.4byte sub_081B9A54
+	.4byte sub_081B9A98
+	.4byte sub_081B9AC0
+	.4byte sub_081B9B18
+	.4byte sub_081B9B28
+	.4byte sub_081B9CE0
+	.4byte sub_081B9B60
 	.globl gUnknown_85E19D8
 gUnknown_85E19D8: @ 0x085E19D8
 	.incbin "baserom.gba", 0x5e19d8, 0x4

@@ -73,7 +73,7 @@ gText_Rom_5F7C7A: @ 0x085F7C7A
 	.if (. - gText_Rom_5F7C7A) < 0x5
 	.space 0x5 - (. - gText_Rom_5F7C7A)
 	.endif
-	.incbin "baserom.gba", 0x5f7c7f, 0x1
+	.space 0x1, 0x00
 	.globl gUnknown_85F7C80
 gUnknown_85F7C80: @ 0x085F7C80
 	.incbin "baserom.gba", 0x5f7c80, 0x2c18

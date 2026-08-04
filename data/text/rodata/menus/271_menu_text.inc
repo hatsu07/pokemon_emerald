@@ -80,7 +80,7 @@ gText_Rom_5CCAB0: @ 0x085CCAB0
 	.if (. - gText_Rom_5CCAB0) < 0x4
 	.space 0x4 - (. - gText_Rom_5CCAB0)
 	.endif
-	.incbin "baserom.gba", 0x5ccab4, 0x1
+	.space 0x1, 0xFF
 
 	@ src/strings.c:792 gText_CheckFrontierMap
 	.globl gText_Rom_5CCAB5

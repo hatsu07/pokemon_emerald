@@ -973,7 +973,7 @@ gText_Rom_5CA276: @ 0x085CA276
 	.if (. - gText_Rom_5CA276) < 0x1b
 	.space 0x1b - (. - gText_Rom_5CA276)
 	.endif
-	.incbin "baserom.gba", 0x5ca291, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_85CA294
 gUnknown_85CA294: @ 0x085CA294
 
@@ -1024,7 +1024,7 @@ gText_Rom_5CA2E0: @ 0x085CA2E0
 	.endif
 	.globl gText_Rom_5CA2F7
 	.set gText_Rom_5CA2F7, gText_Rom_5CA2E0 + 0x17
-	.incbin "baserom.gba", 0x5ca2fb, 0x1
+	.space 0x1, 0x00
 
 	@ asm/party_menu.s:10323 CursorCb_Trade1 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -1047,7 +1047,7 @@ gText_Rom_5CA31C: @ 0x085CA31C
 	.endif
 	.globl gText_Rom_5CA331
 	.set gText_Rom_5CA331, gText_Rom_5CA31C + 0x15
-	.incbin "baserom.gba", 0x5ca335, 0x3
+	.space 0x3, 0x00
 
 	@ asm/party_menu.s:10323 CursorCb_Trade1 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -1059,7 +1059,7 @@ gText_Rom_5CA338: @ 0x085CA338
 	.endif
 	.globl gText_Rom_5CA353
 	.set gText_Rom_5CA353, gText_Rom_5CA338 + 0x1b
-	.incbin "baserom.gba", 0x5ca357, 0x1
+	.space 0x1, 0x00
 
 	@ asm/party_menu.s:10323 CursorCb_Trade1 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

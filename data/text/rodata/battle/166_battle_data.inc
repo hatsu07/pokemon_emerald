@@ -122,7 +122,22 @@ gUnknown_85BE5E0: @ 0x085BE5E0
 	.incbin "baserom.gba", 0x5be5e0, 0x2d0
 	.globl gUnknown_85BE8B0
 gUnknown_85BE8B0: @ 0x085BE8B0
-	.incbin "baserom.gba", 0x5be8b0, 0x40
+	.4byte sub_08161EA8
+	.4byte sub_08161F68
+	.4byte sub_08162008
+	.4byte ChooseNextBattleTowerTrainer
+	.4byte sub_081620D4
+	.4byte AwardBattleTowerRibbons
+	.4byte SaveBattleTowerProgress
+	.4byte sub_0816383C
+	.4byte SpriteCB_Null6
+	.4byte GetEreaderTrainerFrontSpriteId
+	.4byte sub_081641C8
+	.4byte sub_08164718
+	.4byte sub_08164A54
+	.4byte sub_08164CAC
+	.4byte sub_08164CC4
+	.4byte sub_08164CE4
 	.globl gUnknown_85BE8F0
 gUnknown_85BE8F0: @ 0x085BE8F0
 	.incbin "baserom.gba", 0x5be8f0, 0x20
@@ -194,7 +209,11 @@ gUnknown_85C09E0: @ 0x085C09E0
 	.incbin "baserom.gba", 0x5c09e0, 0x8
 	.globl gUnknown_85C09E8
 gUnknown_85C09E8: @ 0x085C09E8
-	.incbin "baserom.gba", 0x5c09e8, 0x14
+	.4byte gText_Rom_5CBD21
+	.4byte gText_Rom_5CBD37
+	.4byte gText_Rom_5CBD32
+	.4byte gText_Rom_5CBD2D
+	.4byte gText_Rom_5CBD27
 	.globl gUnknown_85C09FC
 gUnknown_85C09FC: @ 0x085C09FC
 	.incbin "baserom.gba", 0x5c09fc, 0x8
@@ -215,13 +234,79 @@ gUnknown_85C0A9C: @ 0x085C0A9C
 	.incbin "baserom.gba", 0x5c0a9c, 0x8
 	.globl gUnknown_85C0AA4
 gUnknown_85C0AA4: @ 0x085C0AA4
-	.incbin "baserom.gba", 0x5c0aa4, 0xe4
+	.4byte WallyHandleGetMonData
+	.4byte sub_081691C8
+	.4byte WallyHandleSetMonData
+	.4byte WallyHandleSetRawMonData
+	.4byte WallyHandleLoadMonSprite
+	.4byte WallyHandleSwitchInAnim
+	.4byte WallyHandleReturnMonToBall
+	.4byte WallyHandleDrawTrainerPic
+	.4byte WallyHandleTrainerSlide
+	.4byte WallyHandleTrainerSlideBack
+	.4byte WallyHandleFaintAnimation
+	.4byte WallyHandlePaletteFade
+	.4byte WallyHandleSuccessBallThrowAnim
+	.4byte WallyHandleBallThrowAnim
+	.4byte WallyHandlePause
+	.4byte WallyHandleMoveAnimation
+	.4byte WallyHandlePrintString
+	.4byte WallyHandlePrintSelectionString
+	.4byte WallyHandleChooseAction
+	.4byte WallyHandleUnknownYesNoBox
+	.4byte WallyHandleChooseMove
+	.4byte WallyHandleChooseItem
+	.4byte WallyHandleChoosePokemon
+	.4byte WallyHandleCmd23
+	.4byte WallyHandleHealthBarUpdate
+	.4byte WallyHandleExpUpdate
+	.4byte WallyHandleStatusIconUpdate
+	.4byte WallyHandleStatusAnimation
+	.4byte WallyHandleStatusXor
+	.4byte WallyHandleDataTransfer
+	.4byte WallyHandleDMA3Transfer
+	.4byte WallyHandlePlayBGM
+	.4byte WallyHandleCmd32
+	.4byte WallyHandleTwoReturnValues
+	.4byte sub_0816A548
+	.4byte sub_0816A554
+	.4byte WallyHandleOneReturnValue_Duplicate
+	.4byte WallyHandleCmd37
+	.4byte WallyHandleCmd38
+	.4byte sub_0816A584
+	.4byte WallyHandleCmd40
+	.4byte WallyHandleHitAnimation
+	.4byte WallyHandleCmd42
+	.4byte WallyHandlePlaySE
+	.4byte WallyHandlePlayFanfareOrBGM
+	.4byte WallyHandleFaintingCry
+	.4byte WallyHandleIntroSlide
+	.4byte WallyHandleIntroTrainerBallThrow
+	.4byte WallyHandleDrawPartyStatusSummary
+	.4byte WallyHandleHidePartyStatusSummary
+	.4byte WallyHandleEndBounceEffect
+	.4byte WallyHandleSpriteInvisibility
+	.4byte WallyHandleBattleAnimation
+	.4byte WallyHandleLinkStandbyMsg
+	.4byte WallyHandleResetActionMoveSelection
+	.4byte WallyHandleCmd55
+	.4byte SpriteCB_Null7
 	.globl gUnknown_85C0B88
 gUnknown_85C0B88: @ 0x085C0B88
-	.incbin "baserom.gba", 0x5c0b88, 0x10
+	.4byte gText_Rom_5CA8EC
+	.4byte gText_Rom_5CA8DA
+	.4byte gText_Rom_5CA900
+	.4byte gText_Rom_5C9423
 	.globl gUnknown_85C0B98
 gUnknown_85C0B98: @ 0x085C0B98
-	.incbin "baserom.gba", 0x5c0b98, 0x20
+	.4byte gText_Rom_5CA8AC
+	.4byte PlayerPC_ItemStorage
+	.4byte gText_Rom_5CA8B5
+	.4byte PlayerPC_Mailbox
+	.4byte gText_Rom_5CA8A6
+	.4byte PlayerPC_Decoration
+	.4byte gText_Rom_5CA89D
+	.4byte PlayerPC_TurnOff
 	.globl gUnknown_85C0BB8
 gUnknown_85C0BB8: @ 0x085C0BB8
 	.incbin "baserom.gba", 0x5c0bb8, 0x4
@@ -230,13 +315,27 @@ gUnknown_85C0BBC: @ 0x085C0BBC
 	.incbin "baserom.gba", 0x5c0bbc, 0x4
 	.globl gUnknown_85C0BC0
 gUnknown_85C0BC0: @ 0x085C0BC0
-	.incbin "baserom.gba", 0x5c0bc0, 0x20
+	.4byte gText_Rom_5CA8C7
+	.4byte ItemStorage_Withdraw
+	.4byte gText_Rom_5CA8BD
+	.4byte ItemStorage_Deposit
+	.4byte gText_Rom_5CA8D1
+	.4byte ItemStorage_Toss
+	.4byte gText_Rom_5C93C4
+	.4byte ItemStorage_Exit
 	.globl gUnknown_85C0BE0
 gUnknown_85C0BE0: @ 0x085C0BE0
 	.incbin "baserom.gba", 0x5c0be0, 0x8
 	.globl gUnknown_85C0BE8
 gUnknown_85C0BE8: @ 0x085C0BE8
-	.incbin "baserom.gba", 0x5c0be8, 0x20
+	.4byte gText_Rom_5CA959
+	.4byte Mailbox_DoMailRead
+	.4byte gText_Rom_5CA962
+	.4byte Mailbox_MoveToBag
+	.4byte gText_Rom_5CA96B
+	.4byte Mailbox_Give
+	.4byte gText_Rom_5C93C8
+	.4byte Mailbox_Cancel
 	.globl gUnknown_85C0C08
 gUnknown_85C0C08: @ 0x085C0C08
 	.incbin "baserom.gba", 0x5c0c08, 0x8
@@ -248,7 +347,8 @@ gUnknown_85C0C18: @ 0x085C0C18
 	.incbin "baserom.gba", 0x5c0c18, 0x8
 	.globl gUnknown_85C0C20
 gUnknown_85C0C20: @ 0x085C0C20
-	.incbin "baserom.gba", 0x5c0c20, 0x8
+	.4byte ItemStorage_ResumeInputFromYesToss
+	.4byte ItemStorage_ResumeInputFromNoToss
 	.globl gUnknown_85C0C28
 gUnknown_85C0C28: @ 0x085C0C28
 	.incbin "baserom.gba", 0x5c0c28, 0x18
@@ -423,7 +523,18 @@ gUnknown_85C6270: @ 0x085C6270
 	.incbin "baserom.gba", 0x5c6270, 0xc
 	.globl gUnknown_85C627C
 gUnknown_85C627C: @ 0x085C627C
-	.incbin "baserom.gba", 0x5c627c, 0x30
+	.4byte PokeBallOpenParticleAnimation
+	.4byte GreatBallOpenParticleAnimation
+	.4byte SafariBallOpenParticleAnimation
+	.4byte UltraBallOpenParticleAnimation
+	.4byte MasterBallOpenParticleAnimation
+	.4byte SafariBallOpenParticleAnimation
+	.4byte DiveBallOpenParticleAnimation
+	.4byte UltraBallOpenParticleAnimation
+	.4byte RepeatBallOpenParticleAnimation
+	.4byte TimerBallOpenParticleAnimation
+	.4byte GreatBallOpenParticleAnimation
+	.4byte PremierBallOpenParticleAnimation
 	.globl gUnknown_85C62AC
 gUnknown_85C62AC: @ 0x085C62AC
 	.incbin "baserom.gba", 0x5c62ac, 0x60

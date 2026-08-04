@@ -85,8 +85,15 @@ gText_Rom_5AB084: @ 0x085AB084
 	.if (. - gText_Rom_5AB084) < 0x6
 	.space 0x6 - (. - gText_Rom_5AB084)
 	.endif
-	.incbin "baserom.gba", 0x5ab08a, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_85AB08C
 gUnknown_85AB08C: @ 0x085AB08C
-	.incbin "baserom.gba", 0x5ab08c, 0x20
+	.4byte gText_Rom_5AB057
+	.4byte gText_Rom_5AB05D
+	.4byte gText_Rom_5AB065
+	.4byte gText_Rom_5AB06D
+	.4byte gText_Rom_5AB072
+	.4byte gText_Rom_5AB077
+	.4byte gText_Rom_5AB07C
+	.4byte gText_Rom_5AB084
 

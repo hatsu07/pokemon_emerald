@@ -41,10 +41,13 @@ gText_Rom_5ABD33: @ 0x085ABD33
 	.if (. - gText_Rom_5ABD33) < 0x6
 	.space 0x6 - (. - gText_Rom_5ABD33)
 	.endif
-	.incbin "baserom.gba", 0x5abd39, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_85ABD3C
 gUnknown_85ABD3C: @ 0x085ABD3C
-	.incbin "baserom.gba", 0x5abd3c, 0x10
+	.4byte gText_Rom_5ABD22
+	.4byte gText_Rom_5ABD26
+	.4byte gText_Rom_5ABD2A
+	.4byte gText_Rom_5ABD33
 
 	@ data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc:977 BattleFrontier_BattleDomeBattleRoom_Text_BrightNewHope (+1 aliases)
 	.globl gText_Rom_5ABD4C

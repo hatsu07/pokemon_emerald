@@ -1,6 +1,6 @@
 	.globl gUnknown_85430F0
 gUnknown_85430F0: @ 0x085430F0
-	.incbin "baserom.gba", 0x5430f0, 0x20
+	.space 0x20, 0x00
 	.globl gUnknown_8543110
 gUnknown_8543110: @ 0x08543110
 	.incbin "baserom.gba", 0x543110, 0x10
@@ -51,10 +51,28 @@ gUnknown_85441F4: @ 0x085441F4
 	.incbin "baserom.gba", 0x5441f4, 0x1c
 	.globl gUnknown_8544210
 gUnknown_8544210: @ 0x08544210
-	.incbin "baserom.gba", 0x544210, 0x18
+	.4byte gText_Rom_5C91A7
+	.4byte gText_Rom_5C9103
+	.4byte gText_Rom_5C91BA
+	.4byte gText_Rom_5C910C
+	.4byte NULL
+	.4byte NULL
 	.globl gUnknown_8544228
 gUnknown_8544228: @ 0x08544228
-	.incbin "baserom.gba", 0x544228, 0x38
+	.4byte gText_Rom_5C91CA
+	.4byte gText_Rom_5C9115
+	.4byte gText_Rom_5C91E2
+	.4byte gText_Rom_5C911E
+	.4byte gText_Rom_5C9205
+	.4byte gText_Rom_5C9129
+	.4byte gText_Rom_5C9224
+	.4byte gText_Rom_5C9131
+	.4byte gText_Rom_5C9243
+	.4byte gText_Rom_5C9139
+	.4byte gText_Rom_5C9268
+	.4byte gText_Rom_5C9141
+	.4byte NULL
+	.4byte NULL
 	.globl gUnknown_8544260
 gUnknown_8544260: @ 0x08544260
 	.incbin "baserom.gba", 0x544260, 0x58
@@ -69,7 +87,7 @@ gUnknown_85443B0: @ 0x085443B0
 	.incbin "baserom.gba", 0x5443b0, 0x2
 	.globl gUnknown_85443B2
 gUnknown_85443B2: @ 0x085443B2
-	.incbin "baserom.gba", 0x5443b2, 0x1
+	.space 0x1, 0x00
 
 	@ src/strings.c:83 gText_DexSearchAlphaABC
 	@ Preserve exact byte length: internal label.
@@ -186,7 +204,12 @@ gUnknown_8546780: @ 0x08546780
 	.incbin "baserom.gba", 0x546780, 0x8
 	.globl gUnknown_8546788
 gUnknown_8546788: @ 0x08546788
-	.incbin "baserom.gba", 0x546788, 0x18
+	.4byte sub_080C42CC
+	.4byte sub_080C430C
+	.4byte sub_080C443C
+	.4byte sub_080C4550
+	.4byte sub_080C45B8
+	.4byte sub_080C46E4
 	.globl gUnknown_85467A0
 gUnknown_85467A0: @ 0x085467A0
 	.incbin "baserom.gba", 0x5467a0, 0x2

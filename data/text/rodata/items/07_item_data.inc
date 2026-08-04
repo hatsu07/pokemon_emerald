@@ -8,5 +8,5 @@ gText_Rom_2C1D77: @ 0x082C1D77
 	.if (. - gText_Rom_2C1D77) < 0x4
 	.space 0x4 - (. - gText_Rom_2C1D77)
 	.endif
-	.incbin "baserom.gba", 0x2c1d7b, 0x1
+	.space 0x1, 0x00
 

@@ -165,7 +165,54 @@ gUnknown_84FE460: @ 0x084FE460
 	.incbin "baserom.gba", 0x4fe460, 0x144
 	.globl gUnknown_84FE5A4
 gUnknown_84FE5A4: @ 0x084FE5A4
-	.incbin "baserom.gba", 0x4fe5a4, 0xc0
+	.4byte ScriptCmd_loadspritegfx
+	.4byte ScriptCmd_unloadspritegfx
+	.4byte ScriptCmd_createsprite
+	.4byte ScriptCmd_createvisualtask
+	.4byte ScriptCmd_delay
+	.4byte ScriptCmd_waitbgfadein
+	.4byte ScriptCmd_hang2
+	.4byte ScriptCmd_stopsound
+	.4byte ScriptCmd_end
+	.4byte ScriptCmd_playse
+	.4byte ScriptCmd_monbg
+	.4byte ScriptCmd_clearmonbg
+	.4byte ScriptCmd_setalpha
+	.4byte ScriptCmd_blendoff
+	.4byte ScriptCmd_call
+	.4byte ScriptCmd_return
+	.4byte ScriptCmd_setarg
+	.4byte ScriptCmd_choosetwoturnanim
+	.4byte ScriptCmd_jumpifmoveturn
+	.4byte ScriptCmd_goto
+	.4byte ScriptCmd_fadetobg
+	.4byte ScriptCmd_restorebg
+	.4byte ScriptCmd_waitbgfadeout
+	.4byte ScriptCmd_waitforvisualfinish
+	.4byte ScriptCmd_changebg
+	.4byte ScriptCmd_playsewithpan
+	.4byte ScriptCmd_setpan
+	.4byte ScriptCmd_panse_1B
+	.4byte ScriptCmd_loopsewithpan
+	.4byte ScriptCmd_waitplaysewithpan
+	.4byte ScriptCmd_setbldcnt
+	.4byte ScriptCmd_createsoundtask
+	.4byte ScriptCmd_waitsound
+	.4byte ScriptCmd_jumpargeq
+	.4byte ScriptCmd_monbg_22
+	.4byte ScriptCmd_clearmonbg_23
+	.4byte ScriptCmd_jumpifcontest
+	.4byte ScriptCmd_fadetobgfromset
+	.4byte ScriptCmd_panse_26
+	.4byte ScriptCmd_panse_27
+	.4byte ScriptCmd_monbgprio_28
+	.4byte ScriptCmd_monbgprio_29
+	.4byte ScriptCmd_monbgprio_2A
+	.4byte ScriptCmd_invisible
+	.4byte ScriptCmd_visible
+	.4byte ScriptCmd_doublebattle_2D
+	.4byte ScriptCmd_doublebattle_2E
+	.4byte sub_080A550C
 	.globl gUnknown_84FE664
 gUnknown_84FE664: @ 0x084FE664
 	.incbin "baserom.gba", 0x4fe664, 0x20
@@ -177,7 +224,7 @@ gUnknown_84FE694: @ 0x084FE694
 	.incbin "baserom.gba", 0x4fe694, 0x4
 	.globl gUnknown_84FE698
 gUnknown_84FE698: @ 0x084FE698
-	.incbin "baserom.gba", 0x4fe698, 0x4
+	.space 0x4, 0x00
 	.globl gUnknown_84FE69C
 gUnknown_84FE69C: @ 0x084FE69C
 	.incbin "baserom.gba", 0x4fe69c, 0x30
@@ -249,10 +296,72 @@ gUnknown_8526DE8: @ 0x08526DE8
 	.incbin "baserom.gba", 0x526de8, 0x4
 	.globl gUnknown_8526DEC
 gUnknown_8526DEC: @ 0x08526DEC
-	.incbin "baserom.gba", 0x526dec, 0xf0
+	.4byte None_Init
+	.4byte SetWeatherScreenFadeOut
+	.4byte None_Init
+	.4byte None_Finish
+	.4byte Clouds_InitVars
+	.4byte Clouds_Main
+	.4byte Clouds_InitAll
+	.4byte Clouds_Finish
+	.4byte Sunny_InitVars
+	.4byte Sunny_Main
+	.4byte Sunny_InitAll
+	.4byte Shade_Finish
+	.4byte LightRain_InitVars
+	.4byte LightRain_Main
+	.4byte LightRain_InitAll
+	.4byte LightRain_Finish
+	.4byte Snow_InitVars
+	.4byte Snow_Main
+	.4byte Snow_InitAll
+	.4byte Snow_Finish
+	.4byte MedRain_InitVars
+	.4byte Rain_Main
+	.4byte MedRain_InitAll
+	.4byte Rain_Finish
+	.4byte Fog1_InitVars
+	.4byte Fog1_Main
+	.4byte Fog1_InitAll
+	.4byte Fog1_Finish
+	.4byte Ash_InitVars
+	.4byte Ash_Main
+	.4byte Ash_InitAll
+	.4byte Ash_Finish
+	.4byte Sandstorm_InitVars
+	.4byte Sandstorm_Main
+	.4byte Sandstorm_InitAll
+	.4byte Sandstorm_Finish
+	.4byte Fog2_InitVars
+	.4byte Fog2_Main
+	.4byte Fog2_InitAll
+	.4byte Fog2_Finish
+	.4byte Fog1_InitVars
+	.4byte Fog1_Main
+	.4byte Fog1_InitAll
+	.4byte Fog1_Finish
+	.4byte Shade_InitVars
+	.4byte Shade_Main
+	.4byte Shade_InitAll
+	.4byte Drought_Finish
+	.4byte Drought_InitVars
+	.4byte Drought_Main
+	.4byte Drought_InitAll
+	.4byte Sunny_Finish
+	.4byte HeavyRain_InitVars
+	.4byte Rain_Main
+	.4byte HeavyRain_InitAll
+	.4byte Rain_Finish
+	.4byte Bubbles_InitVars
+	.4byte Bubbles_Main
+	.4byte Bubbles_InitAll
+	.4byte Bubbles_Finish
 	.globl gUnknown_8526EDC
 gUnknown_8526EDC: @ 0x08526EDC
-	.incbin "baserom.gba", 0x526edc, 0x10
+	.4byte UpdateWeatherGammaShift
+	.4byte FadeInScreenWithWeather
+	.4byte DoNothing
+	.4byte DoNothing
 	.globl gUnknown_8526EEC
 gUnknown_8526EEC: @ 0x08526EEC
 	.incbin "baserom.gba", 0x526eec, 0x20
@@ -404,7 +513,7 @@ gText_Rom_52B230: @ 0x0852B230
 	.if (. - gText_Rom_52B230) < 0xa
 	.space 0xa - (. - gText_Rom_52B230)
 	.endif
-	.incbin "baserom.gba", 0x52b23a, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_852B23C
 gUnknown_852B23C: @ 0x0852B23C
 	.incbin "baserom.gba", 0x52b23c, 0x3
@@ -458,10 +567,24 @@ gText_Rom_52B253: @ 0x0852B253
 	.incbin "baserom.gba", 0x52b258, 0x180
 	.globl gUnknown_852B3D8
 gUnknown_852B3D8: @ 0x0852B3D8
-	.incbin "baserom.gba", 0x52b3d8, 0x10
+	.4byte GetTrainerApproachDistanceSouth
+	.4byte GetTrainerApproachDistanceNorth
+	.4byte GetTrainerApproachDistanceWest
+	.4byte GetTrainerApproachDistanceEast
 	.globl gUnknown_852B3E8
 gUnknown_852B3E8: @ 0x0852B3E8
-	.incbin "baserom.gba", 0x52b3e8, 0x30
+	.4byte sub_080B38D0
+	.4byte TrainerExclamationMark
+	.4byte WaitTrainerExclamationMark
+	.4byte TrainerMoveToPlayer
+	.4byte PlayerFaceApproachingTrainer
+	.4byte WaitPlayerFaceApproachingTrainer
+	.4byte RevealDisguisedTrainer
+	.4byte WaitRevealDisguisedTrainer
+	.4byte RevealHiddenTrainer
+	.4byte PopOutOfAshHiddenTrainer
+	.4byte JumpInPlaceHiddenTrainer
+	.4byte WaitRevealHiddenTrainer
 	.globl gUnknown_852B418
 gUnknown_852B418: @ 0x0852B418
 	.incbin "baserom.gba", 0x52b418, 0x48

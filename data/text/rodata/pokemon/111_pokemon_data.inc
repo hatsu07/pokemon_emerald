@@ -1,15 +1,37 @@
 	.globl gUnknown_8581A0C
 gUnknown_8581A0C: @ 0x08581A0C
-	.incbin "baserom.gba", 0x581a0c, 0x20
+	.4byte gText_Rom_5CA719
+	.4byte gText_Rom_5CA71D
+	.4byte gText_Rom_5CA720
+	.4byte gText_Rom_5CA725
+	.4byte gText_Rom_5CA72A
+	.4byte gText_Rom_5CA72E
+	.4byte gText_Rom_5CA733
+	.4byte gText_Rom_5CA739
 	.globl gUnknown_8581A2C
 gUnknown_8581A2C: @ 0x08581A2C
-	.incbin "baserom.gba", 0x581a2c, 0x20
+	.4byte gText_Rom_5CA6AC
+	.4byte DecorationMenuAction_Decorate
+	.4byte gText_Rom_5CA6B4
+	.4byte DecorationMenuAction_PutAway
+	.4byte gText_Rom_5CA6BD
+	.4byte DecorationMenuAction_Toss
+	.4byte gText_Rom_5C93C4
+	.4byte DecorationMenuAction_Cancel
 	.globl gUnknown_8581A4C
 gUnknown_8581A4C: @ 0x08581A4C
-	.incbin "baserom.gba", 0x581a4c, 0x10
+	.4byte gText_Rom_5CA6CD
+	.4byte gText_Rom_5CA6E1
+	.4byte gText_Rom_5CA6F8
+	.4byte gText_Rom_5C9423
 	.globl gUnknown_8581A5C
 gUnknown_8581A5C: @ 0x08581A5C
-	.incbin "baserom.gba", 0x581a5c, 0x18
+	.4byte sub_08127F3C
+	.4byte sub_08127A3C
+	.4byte sub_0812A3E0
+	.4byte sub_08127A3C
+	.4byte sub_08133D54
+	.4byte sub_08127A3C
 	.globl gUnknown_8581A74
 gUnknown_8581A74: @ 0x08581A74
 	.incbin "baserom.gba", 0x581a74, 0x20
@@ -39,13 +61,18 @@ gUnknown_85821A0: @ 0x085821A0
 	.incbin "baserom.gba", 0x5821a0, 0x8
 	.globl gUnknown_85821A8
 gUnknown_85821A8: @ 0x085821A8
-	.incbin "baserom.gba", 0x5821a8, 0x8
+	.4byte sub_081289CC
+	.4byte sub_08128FB8
 	.globl gUnknown_85821B0
 gUnknown_85821B0: @ 0x085821B0
-	.incbin "baserom.gba", 0x5821b0, 0x8
+	.4byte sub_08128B80
+	.4byte sub_08128FB8
 	.globl gUnknown_85821B8
 gUnknown_85821B8: @ 0x085821B8
-	.incbin "baserom.gba", 0x5821b8, 0x10
+	.4byte sub_08128394
+	.4byte sub_081283EC
+	.4byte sub_08129BBC
+	.4byte sub_08129BE8
 	.globl gUnknown_85821C8
 gUnknown_85821C8: @ 0x085821C8
 	.incbin "baserom.gba", 0x5821c8, 0x8
@@ -57,7 +84,8 @@ gUnknown_85821D8: @ 0x085821D8
 	.incbin "baserom.gba", 0x5821d8, 0x54
 	.globl gUnknown_858222C
 gUnknown_858222C: @ 0x0858222C
-	.incbin "baserom.gba", 0x58222c, 0x8
+	.4byte sub_0812A1CC
+	.4byte sub_08129B24
 	.globl gUnknown_8582234
 gUnknown_8582234: @ 0x08582234
 	.incbin "baserom.gba", 0x582234, 0x88
@@ -99,46 +127,99 @@ gUnknown_85843D0: @ 0x085843D0
 	.incbin "baserom.gba", 0x5843d0, 0x4
 	.globl gUnknown_85843D4
 gUnknown_85843D4: @ 0x085843D4
-	.incbin "baserom.gba", 0x5843d4, 0x74
+	.4byte SlotAction_UnfadeScreen
+	.4byte SlotAction_WaitForUnfade
+	.4byte SlotAction_SetSlotMachineVars
+	.4byte SlotAction3
+	.4byte SlotAction4
+	.4byte SlotAction_AwaitPlayerInput
+	.4byte SlotAction_PrintYouDontHaveThreeCoins
+	.4byte SlotAction_ExitMessage_9999Coins
+	.4byte SlotAction_GivingInformation
+	.4byte SlotAction9
+	.4byte SlotAction10
+	.4byte SlotAction_SetLuckySpins
+	.4byte SlotAction_AwaitReelStop
+	.4byte SlotAction_WaitForAllReelsToStop
+	.4byte SlotAction_CheckMatches
+	.4byte SlotAction_WaitForPayoutToBeAwarded
+	.4byte SlotAction_EndOfRoll
+	.4byte SlotAction_MatchedPower
+	.4byte SlotAction18
+	.4byte SlotAction_Loop
+	.4byte SlotAction_NoMatches
+	.4byte SlotAction_PrintQuitTheGame
+	.4byte SlotAction_SeeIfPlayerQuits
+	.4byte SlotAction_PrintMessage_9999Coins
+	.4byte SlotAction_ExitYouDontHaveThreeCoinsMessage
+	.4byte SlotAction_PrintMessage_NoMoreCoins
+	.4byte SlotAction_ExitMessage_NoMoreCoins
+	.4byte SlotAction_EndGame
+	.4byte SlotAction_FreeDataStructures
 	.globl gUnknown_8584448
 gUnknown_8584448: @ 0x08584448
-	.incbin "baserom.gba", 0x584448, 0xc
+	.4byte AwardPayoutAction0
+	.4byte AwardPayoutAction_GivePayoutToPlayer
+	.4byte AwardPayoutAction_FreeTask
 	.globl gUnknown_8584454
 gUnknown_8584454: @ 0x08584454
-	.incbin "baserom.gba", 0x584454, 0x14
+	.4byte SlotReelAction_StayStill
+	.4byte SlotReelAction_Spin
+	.4byte SlotReelAction_DecideWhereToStop
+	.4byte SlotReelAction_MoveToStop
+	.4byte SlotReelAction_OscillatingStop
 	.globl gUnknown_8584468
 gUnknown_8584468: @ 0x08584468
-	.incbin "baserom.gba", 0x584468, 0xc
+	.4byte DecideReelTurns_BiasTag_Reel1
+	.4byte DecideReelTurns_BiasTag_Reel2
+	.4byte DecideReelTurns_BiasTag_Reel3
 	.globl gUnknown_8584474
 gUnknown_8584474: @ 0x08584474
-	.incbin "baserom.gba", 0x584474, 0xc
+	.4byte DecideReelTurns_NoBiasTag_Reel1
+	.4byte DecideReelTurns_NoBiasTag_Reel2
+	.4byte DecideReelTurns_NoBiasTag_Reel3
 	.globl gUnknown_8584480
 gUnknown_8584480: @ 0x08584480
 	.incbin "baserom.gba", 0x584480, 0xc
 	.globl gUnknown_858448C
 gUnknown_858448C: @ 0x0858448C
-	.incbin "baserom.gba", 0x58448c, 0xc
+	.4byte DecideReelTurns_BiasTag_Reel1_Bet1
+	.4byte DecideReelTurns_BiasTag_Reel1_Bet2or3
+	.4byte DecideReelTurns_BiasTag_Reel1_Bet2or3
 	.globl gUnknown_8584498
 gUnknown_8584498: @ 0x08584498
-	.incbin "baserom.gba", 0x584498, 0xc
+	.4byte DecideReelTurns_BiasTag_Reel2_Bet1or2
+	.4byte DecideReelTurns_BiasTag_Reel2_Bet1or2
+	.4byte DecideReelTurns_BiasTag_Reel2_Bet3
 	.globl gUnknown_85844A4
 gUnknown_85844A4: @ 0x085844A4
-	.incbin "baserom.gba", 0x5844a4, 0xc
+	.4byte DecideReelTurns_BiasTag_Reel3_Bet1or2
+	.4byte DecideReelTurns_BiasTag_Reel3_Bet1or2
+	.4byte DecideReelTurns_BiasTag_Reel3_Bet3
 	.globl gUnknown_85844B0
 gUnknown_85844B0: @ 0x085844B0
-	.incbin "baserom.gba", 0x5844b0, 0xc
+	.4byte DecideReelTurns_NoBiasTag_Reel2_Bet1
+	.4byte DecideReelTurns_NoBiasTag_Reel2_Bet2
+	.4byte DecideReelTurns_NoBiasTag_Reel2_Bet3
 	.globl gUnknown_85844BC
 gUnknown_85844BC: @ 0x085844BC
-	.incbin "baserom.gba", 0x5844bc, 0xc
+	.4byte DecideReelTurns_NoBiasTag_Reel3_Bet1
+	.4byte DecideReelTurns_NoBiasTag_Reel3_Bet2
+	.4byte DecideReelTurns_NoBiasTag_Reel3_Bet3
 	.globl gUnknown_85844C8
 gUnknown_85844C8: @ 0x085844C8
-	.incbin "baserom.gba", 0x5844c8, 0xc
+	.4byte sub_0812CDB4
+	.4byte sub_0812CDE8
+	.4byte sub_0812CE04
 	.globl gUnknown_85844D4
 gUnknown_85844D4: @ 0x085844D4
 	.incbin "baserom.gba", 0x5844d4, 0x8
 	.globl gUnknown_85844DC
 gUnknown_85844DC: @ 0x085844DC
-	.incbin "baserom.gba", 0x5844dc, 0x10
+	.4byte sub_0812D270
+	.4byte sub_0812D274
+	.4byte sub_0812D29C
+	.4byte sub_0812D31C
 	.globl gUnknown_85844EC
 gUnknown_85844EC: @ 0x085844EC
 	.incbin "baserom.gba", 0x5844ec, 0x2
@@ -147,7 +228,25 @@ gUnknown_85844EE: @ 0x085844EE
 	.incbin "baserom.gba", 0x5844ee, 0xa
 	.globl gUnknown_85844F8
 gUnknown_85844F8: @ 0x085844F8
-	.incbin "baserom.gba", 0x5844f8, 0x4c
+	.4byte ReeltimeAction0
+	.4byte ReeltimeAction1
+	.4byte ReeltimeAction2
+	.4byte ReeltimeAction3
+	.4byte ReeltimeAction4
+	.4byte ReeltimeAction5
+	.4byte ReeltimeAction6
+	.4byte ReelTimeAction_LandOnOutcome
+	.4byte ReeltimeAction8
+	.4byte ReeltimeAction9
+	.4byte ReeltimeAction10
+	.4byte ReeltimeAction11
+	.4byte ReeltimeAction12
+	.4byte ReeltimeAction13
+	.4byte ReeltimeAction14
+	.4byte ReeltimeAction15
+	.4byte ReeltimeAction16
+	.4byte ReeltimeAction10
+	.4byte ReeltimeAction17
 	.globl gUnknown_8584544
 gUnknown_8584544: @ 0x08584544
 	.incbin "baserom.gba", 0x584544, 0x4
@@ -159,10 +258,24 @@ gUnknown_8584550: @ 0x08584550
 	.incbin "baserom.gba", 0x584550, 0x8
 	.globl gUnknown_8584558
 gUnknown_8584558: @ 0x08584558
-	.incbin "baserom.gba", 0x584558, 0x3c
+	.4byte InfoBox_FadeIn
+	.4byte InfoBox_WaitForFade
+	.4byte InfoBox_8104B80
+	.4byte InfoBox_WaitForFade
+	.4byte InfoBox_AddText
+	.4byte InfoBox_WaitForFade
+	.4byte InfoBox_AwaitPlayerInput
+	.4byte InfoBox_WaitForFade
+	.4byte InfoBox_812DE14
+	.4byte InfoBox_WaitForFade
+	.4byte InfoBox_812DE30
+	.4byte InfoBox_WaitForFade
+	.4byte InfoBox_8104BFC
+	.4byte InfoBox_WaitForFade
+	.4byte InfoBox_FreeTask
 	.globl gUnknown_8584594
 gUnknown_8584594: @ 0x08584594
-	.incbin "baserom.gba", 0x584594, 0x4
+	.4byte sub_0812E0F0
 	.globl gUnknown_8584598
 gUnknown_8584598: @ 0x08584598
 	.incbin "baserom.gba", 0x584598, 0x2
@@ -384,7 +497,7 @@ gUnknown_8588154: @ 0x08588154
 	.incbin "baserom.gba", 0x588154, 0x4b0
 	.globl gUnknown_8588604
 gUnknown_8588604: @ 0x08588604
-	.incbin "baserom.gba", 0x588604, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_8588606
 gUnknown_8588606: @ 0x08588606
 
@@ -451,7 +564,7 @@ gText_Rom_5886A4: @ 0x085886A4
 	.if (. - gText_Rom_5886A4) < 0x7
 	.space 0x7 - (. - gText_Rom_5886A4)
 	.endif
-	.incbin "baserom.gba", 0x5886ab, 0x1
+	.space 0x1, 0x00
 	.globl gUnknown_85886AC
 gUnknown_85886AC: @ 0x085886AC
 	.incbin "baserom.gba", 0x5886ac, 0x200
@@ -493,10 +606,18 @@ gUnknown_858F0C0: @ 0x0858F0C0
 	.incbin "baserom.gba", 0x58f0c0, 0x510
 	.globl gUnknown_858F5D0
 gUnknown_858F5D0: @ 0x0858F5D0
-	.incbin "baserom.gba", 0x58f5d0, 0x14
+	.4byte gText_Rom_24C22B
+	.4byte gText_Rom_24C231
+	.4byte gText_Rom_24C237
+	.4byte gText_Rom_24C23C
+	.4byte gText_Rom_24C241
 	.globl gUnknown_858F5E4
 gUnknown_858F5E4: @ 0x0858F5E4
-	.incbin "baserom.gba", 0x58f5e4, 0x14
+	.4byte gText_Rom_24C206
+	.4byte gText_Rom_24C20E
+	.4byte gText_Rom_24C216
+	.4byte gText_Rom_24C21E
+	.4byte gText_Rom_24C226
 	.globl gUnknown_858F5F8
 gUnknown_858F5F8: @ 0x0858F5F8
 	.incbin "baserom.gba", 0x58f5f8, 0x4
@@ -505,16 +626,128 @@ gUnknown_858F5FC: @ 0x0858F5FC
 	.incbin "baserom.gba", 0x58f5fc, 0x8
 	.globl gUnknown_858F604
 gUnknown_858F604: @ 0x0858F604
-	.incbin "baserom.gba", 0x58f604, 0x3c
+	.4byte gText_Rom_24C247
+	.4byte gText_Rom_24C25A
+	.4byte gText_Rom_24C26A
+	.4byte gText_Rom_24C27E
+	.4byte gText_Rom_24C298
+	.4byte gText_Rom_24C2AE
+	.4byte gText_Rom_24C2C6
+	.4byte gText_Rom_24C2D8
+	.4byte gText_Rom_24C2EE
+	.4byte gText_Rom_24C308
+	.4byte gText_Rom_24C31F
+	.4byte gText_Rom_24C33D
+	.4byte gText_Rom_24C353
+	.4byte gText_Rom_24C365
+	.4byte gText_Rom_24C37D
 	.globl gUnknown_858F640
 gUnknown_858F640: @ 0x0858F640
 	.incbin "baserom.gba", 0x58f640, 0x8
 	.globl gUnknown_858F648
 gUnknown_858F648: @ 0x0858F648
-	.incbin "baserom.gba", 0x58f648, 0x4
+	.space 0x4, 0x00
 	.globl gUnknown_858F64C
 gUnknown_858F64C: @ 0x0858F64C
-	.incbin "baserom.gba", 0x58f64c, 0x18c
+	.4byte BattleAICmd_if_random_less_than
+	.4byte BattleAICmd_if_random_greater_than
+	.4byte BattleAICmd_if_random_equal
+	.4byte BattleAICmd_if_random_not_equal
+	.4byte BattleAICmd_score
+	.4byte BattleAICmd_if_hp_less_than
+	.4byte BattleAICmd_if_hp_more_than
+	.4byte BattleAICmd_if_hp_equal
+	.4byte BattleAICmd_if_hp_not_equal
+	.4byte BattleAICmd_if_status
+	.4byte BattleAICmd_if_not_status
+	.4byte BattleAICmd_if_status2
+	.4byte BattleAICmd_if_not_status2
+	.4byte BattleAICmd_if_status3
+	.4byte BattleAICmd_if_not_status3
+	.4byte BattleAICmd_if_side_affecting
+	.4byte BattleAICmd_if_not_side_affecting
+	.4byte BattleAICmd_if_less_than
+	.4byte BattleAICmd_if_more_than
+	.4byte BattleAICmd_if_equal
+	.4byte BattleAICmd_if_not_equal
+	.4byte BattleAICmd_if_less_than_ptr
+	.4byte BattleAICmd_if_more_than_ptr
+	.4byte BattleAICmd_if_equal_ptr
+	.4byte BattleAICmd_if_not_equal_ptr
+	.4byte BattleAICmd_if_move
+	.4byte BattleAICmd_if_not_move
+	.4byte BattleAICmd_if_in_bytes
+	.4byte BattleAICmd_if_not_in_bytes
+	.4byte BattleAICmd_if_in_hwords
+	.4byte BattleAICmd_if_not_in_hwords
+	.4byte BattleAICmd_if_user_has_attacking_move
+	.4byte BattleAICmd_if_user_has_no_attacking_moves
+	.4byte BattleAICmd_get_turn_count
+	.4byte BattleAICmd_get_type
+	.4byte BattleAICmd_get_considered_move_power
+	.4byte BattleAICmd_get_how_powerful_move_is
+	.4byte BattleAICmd_get_last_used_battler_move
+	.4byte BattleAICmd_if_equal_
+	.4byte BattleAICmd_if_not_equal_
+	.4byte BattleAICmd_if_user_goes
+	.4byte BattleAICmd_if_user_doesnt_go
+	.4byte BattleAICmd_nullsub_2B
+	.4byte BattleAICmd_nullsub_32
+	.4byte BattleAICmd_count_usable_party_mons
+	.4byte BattleAICmd_get_considered_move
+	.4byte BattleAICmd_get_considered_move_effect
+	.4byte BattleAICmd_get_ability
+	.4byte BattleAICmd_get_highest_type_effectiveness
+	.4byte BattleAICmd_if_type_effectiveness
+	.4byte BattleAICmd_nullsub_33
+	.4byte BattleAICmd_nullsub_52
+	.4byte BattleAICmd_if_status_in_party
+	.4byte BattleAICmd_if_status_not_in_party
+	.4byte BattleAICmd_get_weather
+	.4byte BattleAICmd_if_effect
+	.4byte BattleAICmd_if_not_effect
+	.4byte BattleAICmd_if_stat_level_less_than
+	.4byte BattleAICmd_if_stat_level_more_than
+	.4byte BattleAICmd_if_stat_level_equal
+	.4byte BattleAICmd_if_stat_level_not_equal
+	.4byte BattleAICmd_if_can_faint
+	.4byte BattleAICmd_if_cant_faint
+	.4byte BattleAICmd_if_has_move
+	.4byte BattleAICmd_if_doesnt_have_move
+	.4byte BattleAICmd_if_has_move_with_effect
+	.4byte BattleAICmd_if_doesnt_have_move_with_effect
+	.4byte BattleAICmd_if_any_move_disabled_or_encored
+	.4byte BattleAICmd_if_curr_move_disabled_or_encored
+	.4byte BattleAICmd_flee
+	.4byte BattleAICmd_if_random_safari_flee
+	.4byte BattleAICmd_watch
+	.4byte BattleAICmd_get_hold_effect
+	.4byte BattleAICmd_get_gender
+	.4byte BattleAICmd_is_first_turn_for
+	.4byte BattleAICmd_get_stockpile_count
+	.4byte BattleAICmd_is_double_battle
+	.4byte BattleAICmd_get_used_held_item
+	.4byte BattleAICmd_get_move_type_from_result
+	.4byte BattleAICmd_get_move_power_from_result
+	.4byte BattleAICmd_get_move_effect_from_result
+	.4byte BattleAICmd_get_protect_count
+	.4byte BattleAICmd_nullsub_53
+	.4byte BattleAICmd_nullsub_54
+	.4byte BattleAICmd_nullsub_55
+	.4byte BattleAICmd_nullsub_56
+	.4byte BattleAICmd_nullsub_57
+	.4byte BattleAICmd_nullsub_2A
+	.4byte BattleAICmd_call
+	.4byte BattleAICmd_goto
+	.4byte BattleAICmd_end
+	.4byte BattleAICmd_if_level_cond
+	.4byte BattleAICmd_if_target_taunted
+	.4byte BattleAICmd_if_target_not_taunted
+	.4byte BattleAICmd_if_target_is_ally
+	.4byte BattleAICmd_is_of_type
+	.4byte BattleAICmd_check_ability
+	.4byte BattleAICmd_if_flash_fired
+	.4byte BattleAICmd_if_holds_item
 	.globl gUnknown_858F7D8
 gUnknown_858F7D8: @ 0x0858F7D8
 	.incbin "baserom.gba", 0x58f7d8, 0x1c
@@ -646,7 +879,7 @@ gText_Rom_591C1A: @ 0x08591C1A
 	.if (. - gText_Rom_591C1A) < 0x5
 	.space 0x5 - (. - gText_Rom_591C1A)
 	.endif
-	.incbin "baserom.gba", 0x591c1f, 0x1
+	.space 0x1, 0x00
 	.globl gUnknown_8591C20
 gUnknown_8591C20: @ 0x08591C20
 	.incbin "baserom.gba", 0x591c20, 0x8
@@ -688,10 +921,35 @@ gUnknown_859206C: @ 0x0859206C
 	.incbin "baserom.gba", 0x59206c, 0xc
 	.globl gUnknown_8592078
 gUnknown_8592078: @ 0x08592078
-	.incbin "baserom.gba", 0x592078, 0x3c
+	.4byte NULL
+	.4byte gText_Rom_5C97C4
+	.4byte gText_Rom_5C97CC
+	.4byte gText_Rom_5C97D4
+	.4byte gText_Rom_5C97DD
+	.4byte gText_Rom_5C97E6
+	.4byte gText_Rom_5C97EF
+	.4byte gText_Rom_5C97F8
+	.4byte gText_Rom_5C9801
+	.4byte gText_Rom_5C980A
+	.4byte gText_Rom_5C9813
+	.4byte gText_Rom_5C981C
+	.4byte gText_Rom_5C9825
+	.4byte gText_Rom_5C982D
+	.4byte gText_Rom_5C9835
 	.globl gUnknown_85920B4
 gUnknown_85920B4: @ 0x085920B4
-	.incbin "baserom.gba", 0x5920b4, 0x30
+	.4byte gText_Rom_5C93A3
+	.4byte sub_08136AC0
+	.4byte gText_Rom_5C93A7
+	.4byte sub_08136B24
+	.4byte gText_Rom_5C93C8
+	.4byte sub_08136E58
+	.4byte gText_Rom_5C93A3
+	.4byte sub_08136CFC
+	.4byte gText_Rom_5C93A3
+	.4byte sub_08136D9C
+	.4byte gText_Rom_5C9438
+	.4byte sub_08136E00
 	.globl gUnknown_85920E4
 gUnknown_85920E4: @ 0x085920E4
 	.incbin "baserom.gba", 0x5920e4, 0x3
@@ -742,7 +1000,7 @@ gUnknown_859229C: @ 0x0859229C
 	.incbin "baserom.gba", 0x59229c, 0x20
 	.globl gUnknown_85922BC
 gUnknown_85922BC: @ 0x085922BC
-	.incbin "baserom.gba", 0x5922bc, 0x20
+	.space 0x20, 0x00
 	.globl gUnknown_85922DC
 gUnknown_85922DC: @ 0x085922DC
 	.incbin "baserom.gba", 0x5922dc, 0x10
@@ -793,7 +1051,22 @@ gUnknown_8592608: @ 0x08592608
 	.incbin "baserom.gba", 0x592608, 0x8
 	.globl gUnknown_8592610
 gUnknown_8592610: @ 0x08592610
-	.incbin "baserom.gba", 0x592610, 0x40
+	.4byte gText_Rom_5CB0B4
+	.4byte gText_Rom_5CB0AF
+	.4byte gText_Rom_5CB0AA
+	.4byte gText_Rom_5CB0A5
+	.4byte gText_Rom_5CB077
+	.4byte gText_Rom_5CB07B
+	.4byte gText_Rom_5CB07F
+	.4byte gText_Rom_5CB083
+	.4byte gText_Rom_5CB087
+	.4byte gText_Rom_5CB08B
+	.4byte gText_Rom_5CB08F
+	.4byte gText_Rom_5CB093
+	.4byte gText_Rom_5CB097
+	.4byte gText_Rom_5CB09B
+	.4byte gText_Rom_5CB0A0
+	.4byte gText_Rom_5CB0B9
 	.globl gUnknown_8592650
 gUnknown_8592650: @ 0x08592650
 	.incbin "baserom.gba", 0x592650, 0x12
@@ -811,7 +1084,36 @@ gUnknown_8592686: @ 0x08592686
 	.incbin "baserom.gba", 0x592686, 0x26
 	.globl gUnknown_85926AC
 gUnknown_85926AC: @ 0x085926AC
-	.incbin "baserom.gba", 0x5926ac, 0x78
+	.4byte gText_Rom_236C08
+	.4byte gText_Rom_236C60
+	.4byte gText_Rom_236CD0
+	.4byte gText_Rom_2374F3
+	.4byte gText_Rom_237557
+	.4byte gText_Rom_237595
+	.4byte gText_Rom_2375D9
+	.4byte gText_Rom_2375D9
+	.4byte gText_Rom_2375D9
+	.4byte gText_Rom_23762C
+	.4byte gText_Rom_23762C
+	.4byte gText_Rom_23762C
+	.4byte gText_Rom_236D4C
+	.4byte gText_Rom_236DA7
+	.4byte gText_Rom_236E27
+	.4byte gText_Rom_236EAF
+	.4byte gText_Rom_236F08
+	.4byte gText_Rom_236F66
+	.4byte gText_Rom_237265
+	.4byte gText_Rom_2372B8
+	.4byte gText_Rom_237330
+	.4byte gText_Rom_237111
+	.4byte gText_Rom_23716C
+	.4byte gText_Rom_2371EB
+	.4byte gText_Rom_236FD3
+	.4byte gText_Rom_23702D
+	.4byte gText_Rom_237098
+	.4byte gText_Rom_2373A4
+	.4byte gText_Rom_2373FE
+	.4byte gText_Rom_237470
 	.globl gUnknown_8592724
 gUnknown_8592724: @ 0x08592724
 	.incbin "baserom.gba", 0x592724, 0x14
@@ -829,10 +1131,32 @@ gUnknown_8592A9C: @ 0x08592A9C
 	.incbin "baserom.gba", 0x592a9c, 0x64
 	.globl gUnknown_8592B00
 gUnknown_8592B00: @ 0x08592B00
-	.incbin "baserom.gba", 0x592b00, 0x30
+	.4byte gText_Rom_237AB5
+	.4byte gText_Rom_237B0D
+	.4byte gText_Rom_237B64
+	.4byte gText_Rom_237BBB
+	.4byte gText_Rom_237C1B
+	.4byte gText_Rom_237C7A
+	.4byte gText_Rom_237CDB
+	.4byte gText_Rom_237D3B
+	.4byte gText_Rom_237D93
+	.4byte gText_Rom_237DEA
+	.4byte gText_Rom_237E47
+	.4byte gText_Rom_237EA0
 	.globl gUnknown_8592B30
 gUnknown_8592B30: @ 0x08592B30
-	.incbin "baserom.gba", 0x592b30, 0x30
+	.4byte gText_Rom_237FD4
+	.4byte gText_Rom_23802A
+	.4byte gText_Rom_23807F
+	.4byte gText_Rom_2380D4
+	.4byte gText_Rom_23812D
+	.4byte gText_Rom_238185
+	.4byte gText_Rom_2381DF
+	.4byte gText_Rom_238238
+	.4byte gText_Rom_23828E
+	.4byte gText_Rom_2382E3
+	.4byte gText_Rom_238339
+	.4byte gText_Rom_23838B
 	.globl gUnknown_8592B60
 gUnknown_8592B60: @ 0x08592B60
 	.incbin "baserom.gba", 0x592b60, 0x18
@@ -856,16 +1180,46 @@ gUnknown_8592BB8: @ 0x08592BB8
 	.incbin "baserom.gba", 0x592bb8, 0x14
 	.globl gUnknown_8592BCC
 gUnknown_8592BCC: @ 0x08592BCC
-	.incbin "baserom.gba", 0x592bcc, 0x2c
+	.4byte gText_Rom_236701
+	.4byte gText_Rom_23671C
+	.4byte gText_Rom_23673C
+	.4byte gText_Rom_23675C
+	.4byte gText_Rom_23677B
+	.4byte gText_Rom_23679A
+	.4byte gText_Rom_2367B8
+	.4byte gText_Rom_2367D7
+	.4byte gText_Rom_2367F7
+	.4byte gText_Rom_236817
+	.4byte gText_Rom_5C93C8
 	.globl gUnknown_8592BF8
 gUnknown_8592BF8: @ 0x08592BF8
-	.incbin "baserom.gba", 0x592bf8, 0x18
+	.4byte gText_Rom_236836
+	.4byte gText_Rom_236836
+	.4byte gText_Rom_236836
+	.4byte gText_Rom_236836
+	.4byte gText_Rom_236836
+	.4byte gText_Rom_5C93C8
 	.globl gUnknown_8592C10
 gUnknown_8592C10: @ 0x08592C10
-	.incbin "baserom.gba", 0x592c10, 0x1c
+	.4byte gText_Rom_236854
+	.4byte gText_Rom_236866
+	.4byte gText_Rom_236878
+	.4byte gText_Rom_23688A
+	.4byte gText_Rom_23689C
+	.4byte gText_Rom_2368AE
+	.4byte gText_Rom_5C93C8
 	.globl gUnknown_8592C2C
 gUnknown_8592C2C: @ 0x08592C2C
-	.incbin "baserom.gba", 0x592c2c, 0x28
+	.4byte gText_Rom_2368C1
+	.4byte gText_Rom_2368E5
+	.4byte gText_Rom_236904
+	.4byte gText_Rom_236923
+	.4byte gText_Rom_236943
+	.4byte gText_Rom_236966
+	.4byte gText_Rom_236987
+	.4byte gText_Rom_2369AA
+	.4byte gText_Rom_2369CA
+	.4byte gText_Rom_5C93C8
 	.globl gUnknown_8592C54
 gUnknown_8592C54: @ 0x08592C54
 	.incbin "baserom.gba", 0x592c54, 0x14
@@ -877,10 +1231,30 @@ gUnknown_8592C7C: @ 0x08592C7C
 	.incbin "baserom.gba", 0x592c7c, 0x8
 	.globl gUnknown_8592C84
 gUnknown_8592C84: @ 0x08592C84
-	.incbin "baserom.gba", 0x592c84, 0x2c
+	.4byte gText_Rom_23A00F
+	.4byte gText_Rom_23A02B
+	.4byte gText_Rom_23A049
+	.4byte gText_Rom_23A068
+	.4byte gText_Rom_23A085
+	.4byte gText_Rom_23A0A2
+	.4byte gText_Rom_23A0BF
+	.4byte gText_Rom_23A0D9
+	.4byte gText_Rom_23A0F2
+	.4byte gText_Rom_23A10D
+	.4byte gText_Rom_5C93C8
 	.globl gUnknown_8592CB0
 gUnknown_8592CB0: @ 0x08592CB0
-	.incbin "baserom.gba", 0x592cb0, 0x2c
+	.4byte gText_Rom_23A127
+	.4byte gText_Rom_23A13B
+	.4byte gText_Rom_23A158
+	.4byte gText_Rom_23A16D
+	.4byte gText_Rom_23A18E
+	.4byte gText_Rom_23A1A6
+	.4byte gText_Rom_23A1C2
+	.4byte gText_Rom_23A1DA
+	.4byte gText_Rom_23A1F5
+	.4byte gText_Rom_23A210
+	.4byte gText_Rom_5C93C8
 	.globl gUnknown_8592CDC
 gUnknown_8592CDC: @ 0x08592CDC
 	.incbin "baserom.gba", 0x592cdc, 0x160

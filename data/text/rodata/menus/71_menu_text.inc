@@ -63,7 +63,7 @@ gUnknown_8300A97: @ 0x08300A97
 	.incbin "baserom.gba", 0x300a97, 0x2
 	.globl gUnknown_8300A99
 gUnknown_8300A99: @ 0x08300A99
-	.incbin "baserom.gba", 0x300a99, 0x2
+	.space 0x2, 0xFF
 	.globl gUnknown_8300A9B
 gUnknown_8300A9B: @ 0x08300A9B
 	.incbin "baserom.gba", 0x300a9b, 0x3
@@ -193,7 +193,7 @@ gText_Rom_300AEE: @ 0x08300AEE
 	.if (. - gText_Rom_300AEE) < 0xd
 	.space 0xd - (. - gText_Rom_300AEE)
 	.endif
-	.incbin "baserom.gba", 0x300afb, 0x1
+	.space 0x1, 0x00
 	.globl gUnknown_8300AFC
 gUnknown_8300AFC: @ 0x08300AFC
 	.incbin "baserom.gba", 0x300afc, 0x2c
@@ -255,10 +255,18 @@ gText_Rom_300BBE: @ 0x08300BBE
 	.if (. - gText_Rom_300BBE) < 0x1b
 	.space 0x1b - (. - gText_Rom_300BBE)
 	.endif
-	.incbin "baserom.gba", 0x300bd9, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_8300BDC
 gUnknown_8300BDC: @ 0x08300BDC
-	.incbin "baserom.gba", 0x300bdc, 0x24
+	.4byte gText_Rom_300B38
+	.4byte gText_Rom_300B59
+	.4byte gText_Rom_300B75
+	.4byte gText_Rom_5CA294
+	.4byte gText_Rom_300B9E
+	.4byte gText_Rom_300BBE
+	.4byte gText_Rom_5CA2B4
+	.4byte gText_Rom_5CA2CC
+	.4byte gText_Rom_5CA2E0
 	.globl gUnknown_8300C00
 gUnknown_8300C00: @ 0x08300C00
 	.incbin "baserom.gba", 0x300c00, 0x4
@@ -312,7 +320,7 @@ gUnknown_830BEE4: @ 0x0830BEE4
 	.incbin "baserom.gba", 0x30bee4, 0x200
 	.globl gUnknown_830C0E4
 gUnknown_830C0E4: @ 0x0830C0E4
-	.incbin "baserom.gba", 0x30c0e4, 0x20
+	.space 0x20, 0x00
 	.globl gUnknown_830C104
 gUnknown_830C104: @ 0x0830C104
 	.incbin "baserom.gba", 0x30c104, 0x690
@@ -425,7 +433,7 @@ gText_Rom_30D26A: @ 0x0830D26A
 	.if (. - gText_Rom_30D26A) < 0x11
 	.space 0x11 - (. - gText_Rom_30D26A)
 	.endif
-	.incbin "baserom.gba", 0x30d27b, 0x1
+	.space 0x1, 0x00
 	.globl gUnknown_830D27C
 gUnknown_830D27C: @ 0x0830D27C
 	.incbin "baserom.gba", 0x30d27c, 0x10

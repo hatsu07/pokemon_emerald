@@ -32,7 +32,11 @@ gText_Rom_2CB414: @ 0x082CB414
 	.endif
 	.globl gUnknown_82CB41C
 gUnknown_82CB41C: @ 0x082CB41C
-	.incbin "baserom.gba", 0x2cb41c, 0x14
+	.4byte gText_Rom_2CB404
+	.4byte gText_Rom_2CB404
+	.4byte gText_Rom_2CB404
+	.4byte gText_Rom_2CB40C
+	.4byte gText_Rom_2CB414
 	.globl gUnknown_82CB430
 gUnknown_82CB430: @ 0x082CB430
 	.incbin "baserom.gba", 0x2cb430, 0x18
@@ -134,7 +138,11 @@ gUnknown_82CEC54: @ 0x082CEC54
 	.incbin "baserom.gba", 0x2cec54, 0x14
 	.globl gUnknown_82CEC68
 gUnknown_82CEC68: @ 0x082CEC68
-	.incbin "baserom.gba", 0x2cec68, 0x14
+	.4byte gText_Rom_5CCD77
+	.4byte gText_Rom_5CCD7A
+	.4byte gText_Rom_5CCD7D
+	.4byte gText_Rom_5CCD80
+	.4byte gText_Rom_5CCD83
 	.globl gUnknown_82CEC7C
 gUnknown_82CEC7C: @ 0x082CEC7C
 	.incbin "baserom.gba", 0x2cec7c, 0x8
@@ -155,10 +163,26 @@ gUnknown_82CECF0: @ 0x082CECF0
 	.incbin "baserom.gba", 0x2cecf0, 0x190
 	.globl gUnknown_82CEE80
 gUnknown_82CEE80: @ 0x082CEE80
-	.incbin "baserom.gba", 0x2cee80, 0x24
+	.4byte sub_0802AF3C
+	.4byte sub_0802AFC8
+	.4byte sub_0802B05C
+	.4byte sub_0802B0C8
+	.4byte sub_0802B1C0
+	.4byte sub_0802B2BC
+	.4byte sub_0802B358
+	.4byte sub_0802B3AC
+	.4byte sub_0802B414
 	.globl gUnknown_82CEEA4
 gUnknown_82CEEA4: @ 0x082CEEA4
-	.incbin "baserom.gba", 0x2ceea4, 0x24
+	.4byte sub_0802AF90
+	.4byte sub_0802B010
+	.4byte sub_0802B0A8
+	.4byte sub_0802B164
+	.4byte sub_0802B25C
+	.4byte sub_0802B31C
+	.4byte sub_0802B358
+	.4byte sub_0802B3F8
+	.4byte sub_0802B414
 	.globl gUnknown_82CEEC8
 gUnknown_82CEEC8: @ 0x082CEEC8
 	.incbin "baserom.gba", 0x2ceec8, 0x10
@@ -311,7 +335,7 @@ gUnknown_82D28A8: @ 0x082D28A8
 	.incbin "baserom.gba", 0x2d28a8, 0xe
 	.globl gUnknown_82D28B6
 gUnknown_82D28B6: @ 0x082D28B6
-	.incbin "baserom.gba", 0x2d28b6, 0x12
+	.space 0x12, 0x00
 	.globl gUnknown_82D28C8
 gUnknown_82D28C8: @ 0x082D28C8
 	.incbin "baserom.gba", 0x2d28c8, 0x10
@@ -353,7 +377,10 @@ gUnknown_82D29A4: @ 0x082D29A4
 	.incbin "baserom.gba", 0x2d29a4, 0x4
 	.globl gUnknown_82D29A8
 gUnknown_82D29A8: @ 0x082D29A8
-	.incbin "baserom.gba", 0x2d29a8, 0x10
+	.4byte gText_Rom_5C8E92
+	.4byte NULL
+	.4byte gText_Rom_5C8E96
+	.4byte NULL
 	.globl gUnknown_82D29B8
 gUnknown_82D29B8: @ 0x082D29B8
 	.incbin "baserom.gba", 0x2d29b8, 0x50

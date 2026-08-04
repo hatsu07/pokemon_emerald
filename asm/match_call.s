@@ -1380,7 +1380,7 @@ GetSameRouteMatchCallText: @ 0x08196464
 	bx lr
 	.align 2, 0
 _08196488: .4byte gMatchCallTrainers
-_0819648C: .4byte 0x085D74A8
+_0819648C: .4byte gMatchCallBattleRequestTopics
 	thumb_func_end GetSameRouteMatchCallText
 
 	thumb_func_start GetDifferentRouteMatchCallText
@@ -1405,7 +1405,7 @@ GetDifferentRouteMatchCallText: @ 0x08196490
 	bx lr
 	.align 2, 0
 _081964B4: .4byte gMatchCallTrainers
-_081964B8: .4byte 0x085D74A8
+_081964B8: .4byte gMatchCallBattleRequestTopics
 	thumb_func_end GetDifferentRouteMatchCallText
 
 	thumb_func_start GetBattleMatchCallText
@@ -1448,7 +1448,7 @@ _081964EC:
 	bx r1
 	.align 2, 0
 _08196508: .4byte gMatchCallTrainers
-_0819650C: .4byte 0x085D749C
+_0819650C: .4byte gMatchCallBattleTopics
 	thumb_func_end GetBattleMatchCallText
 
 	thumb_func_start GetGeneralMatchCallText
@@ -1529,7 +1529,7 @@ _08196580:
 	.align 2, 0
 _081965A0: .4byte 0x0203CA54
 _081965A4: .4byte gMatchCallTrainers
-_081965A8: .4byte 0x085D74B0
+_081965A8: .4byte gMatchCallGeneralTopics
 _081965AC:
 	ldr r1, _081965D8
 	lsls r0, r6, #2
@@ -1556,7 +1556,7 @@ _081965D0:
 	bx r1
 	.align 2, 0
 _081965D8: .4byte gMatchCallTrainers
-_081965DC: .4byte 0x085D74B0
+_081965DC: .4byte gMatchCallGeneralTopics
 	thumb_func_end GetGeneralMatchCallText
 
 	thumb_func_start BuildMatchCallString

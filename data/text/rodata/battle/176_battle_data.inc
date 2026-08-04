@@ -16,7 +16,7 @@ gUnknown_85C8FB3: @ 0x085C8FB3
 	.incbin "baserom.gba", 0x5c8fb3, 0x8
 	.globl gUnknown_85C8FBB
 gUnknown_85C8FBB: @ 0x085C8FBB
-	.incbin "baserom.gba", 0x5c8fbb, 0x5
+	.space 0x5, 0x00
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:88 easy_chat_group_trainer_line_88 (+7 aliases)
 	.globl gText_Rom_5C8FC0

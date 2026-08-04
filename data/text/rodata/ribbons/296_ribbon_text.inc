@@ -208,7 +208,7 @@ gText_Rom_5F5F4D: @ 0x085F5F4D
 	.endif
 	.globl gText_Rom_5F5F59
 	.set gText_Rom_5F5F59, gText_Rom_5F5F4D + 0xc
-	.incbin "baserom.gba", 0x5f5f5d, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_85F5F60
 gUnknown_85F5F60: @ 0x085F5F60
 	.incbin "baserom.gba", 0x5f5f60, 0xc8
@@ -613,7 +613,7 @@ gText_Rom_5F61E5: @ 0x085F61E5
 	.set gText_Rom_5F61EB, gText_Rom_5F61E5 + 0x6
 	.globl gText_Rom_5F61EE
 	.set gText_Rom_5F61EE, gText_Rom_5F61E5 + 0x9
-	.incbin "baserom.gba", 0x5f61f2, 0x1
+	.space 0x1, 0xFF
 
 	@ src/data/text/gift_ribbon_descriptions.h:37 gGiftRibbonDescriptionPart1_WinterHolidays (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -774,7 +774,12 @@ gUnknown_85F7214: @ 0x085F7214
 	.incbin "baserom.gba", 0x5f7214, 0x8
 	.globl gUnknown_85F721C
 gUnknown_85F721C: @ 0x085F721C
-	.incbin "baserom.gba", 0x5f721c, 0x18
+	.4byte NULL
+	.4byte sub_081D0334
+	.4byte sub_081D03DC
+	.4byte sub_081D043C
+	.4byte sub_081D04B0
+	.4byte sub_081D0304
 	.globl gUnknown_85F7234
 gUnknown_85F7234: @ 0x085F7234
 	.incbin "baserom.gba", 0x5f7234, 0x8

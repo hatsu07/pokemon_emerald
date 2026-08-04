@@ -77,13 +77,15 @@ gText_Rom_595FB4: @ 0x08595FB4
 	.if (. - gText_Rom_595FB4) < 0x5
 	.space 0x5 - (. - gText_Rom_595FB4)
 	.endif
-	.incbin "baserom.gba", 0x595fb9, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_8595FBC
 gUnknown_8595FBC: @ 0x08595FBC
-	.incbin "baserom.gba", 0x595fbc, 0x8
+	.4byte sub_081429E0
+	.4byte sub_08142A44
 	.globl gUnknown_8595FC4
 gUnknown_8595FC4: @ 0x08595FC4
-	.incbin "baserom.gba", 0x595fc4, 0x8
+	.4byte sub_08140A30
+	.4byte sub_08140A5C
 	.globl gUnknown_8595FCC
 gUnknown_8595FCC: @ 0x08595FCC
 	.incbin "baserom.gba", 0x595fcc, 0x6

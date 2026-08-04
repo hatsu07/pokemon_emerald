@@ -10,7 +10,7 @@ gText_Rom_2BFEB4: @ 0x082BFEB4
 	.endif
 	.globl gUnknown_82BFEB8
 gUnknown_82BFEB8: @ 0x082BFEB8
-	.incbin "baserom.gba", 0x2bfeb8, 0x40
+	.space 0x40, 0x00
 	.globl gUnknown_82BFEF8
 gUnknown_82BFEF8: @ 0x082BFEF8
 	.incbin "baserom.gba", 0x2bfef8, 0x28
@@ -76,7 +76,9 @@ gUnknown_82C0430: @ 0x082C0430
 	.incbin "baserom.gba", 0x2c0430, 0x100
 	.globl gUnknown_82C0530
 gUnknown_82C0530: @ 0x082C0530
-	.incbin "baserom.gba", 0x2c0530, 0xc
+	.4byte sub_0801034C
+	.4byte sub_080105A4
+	.4byte sub_080107FC
 	.globl gUnknown_82C053C
 gUnknown_82C053C: @ 0x082C053C
 	.incbin "baserom.gba", 0x2c053c, 0x8
@@ -120,7 +122,7 @@ gText_Rom_2C0644: @ 0x082C0644
 	.if (. - gText_Rom_2C0644) < 0x2
 	.space 0x2 - (. - gText_Rom_2C0644)
 	.endif
-	.incbin "baserom.gba", 0x2c0646, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_82C0648
 gUnknown_82C0648: @ 0x082C0648
 	.incbin "baserom.gba", 0x2c0648, 0x4
@@ -137,7 +139,7 @@ gText_Rom_2C064C: @ 0x082C064C
 	.if (. - gText_Rom_2C064C) < 0x1f
 	.space 0x1f - (. - gText_Rom_2C064C)
 	.endif
-	.incbin "baserom.gba", 0x2c066b, 0x1
+	.space 0x1, 0x00
 	.globl gUnknown_82C066C
 gUnknown_82C066C: @ 0x082C066C
 	.incbin "baserom.gba", 0x2c066c, 0x30
@@ -154,7 +156,7 @@ gText_Rom_2C069C: @ 0x082C069C
 	.if (. - gText_Rom_2C069C) < 0x19
 	.space 0x19 - (. - gText_Rom_2C069C)
 	.endif
-	.incbin "baserom.gba", 0x2c06b5, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_82C06B8
 gUnknown_82C06B8: @ 0x082C06B8
 
@@ -168,7 +170,7 @@ gText_Rom_2C06B8: @ 0x082C06B8
 	.if (. - gText_Rom_2C06B8) < 0x21
 	.space 0x21 - (. - gText_Rom_2C06B8)
 	.endif
-	.incbin "baserom.gba", 0x2c06d9, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/union_room.h:9 sJPText_SingleBattle
 	.globl gText_Rom_2C06DC
@@ -191,7 +193,7 @@ gText_Rom_2C06EC: @ 0x082C06EC
 	.if (. - gText_Rom_2C06EC) < 0xf
 	.space 0xf - (. - gText_Rom_2C06EC)
 	.endif
-	.incbin "baserom.gba", 0x2c06fb, 0x1
+	.space 0x1, 0x00
 
 	@ src/data/union_room.h:11 sJPText_MultiBattle
 	.globl gText_Rom_2C06FC
@@ -203,7 +205,7 @@ gText_Rom_2C06FC: @ 0x082C06FC
 	.if (. - gText_Rom_2C06FC) < 0xf
 	.space 0xf - (. - gText_Rom_2C06FC)
 	.endif
-	.incbin "baserom.gba", 0x2c070b, 0x1
+	.space 0x1, 0x00
 
 	@ src/data/union_room.h:12 sJPText_TradePokemon
 	.globl gText_Rom_2C070C
@@ -215,7 +217,7 @@ gText_Rom_2C070C: @ 0x082C070C
 	.if (. - gText_Rom_2C070C) < 0x11
 	.space 0x11 - (. - gText_Rom_2C070C)
 	.endif
-	.incbin "baserom.gba", 0x2c071d, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/union_room.h:13 sJPText_Chat
 	.globl gText_Rom_2C0720
@@ -227,7 +229,7 @@ gText_Rom_2C0720: @ 0x082C0720
 	.if (. - gText_Rom_2C0720) < 0xd
 	.space 0xd - (. - gText_Rom_2C0720)
 	.endif
-	.incbin "baserom.gba", 0x2c072d, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/union_room.h:14 sJPText_DistWonderCard
 	.globl gText_Rom_2C0730
@@ -250,7 +252,7 @@ gText_Rom_2C073C: @ 0x082C073C
 	.if (. - gText_Rom_2C073C) < 0xd
 	.space 0xd - (. - gText_Rom_2C073C)
 	.endif
-	.incbin "baserom.gba", 0x2c0749, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/union_room.h:16 sJPText_DistMysteryEvent
 	.globl gText_Rom_2C074C
@@ -262,7 +264,7 @@ gText_Rom_2C074C: @ 0x082C074C
 	.if (. - gText_Rom_2C074C) < 0x11
 	.space 0x11 - (. - gText_Rom_2C074C)
 	.endif
-	.incbin "baserom.gba", 0x2c075d, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/union_room.h:17 sJPText_HoldPokemonJump
 	.globl gText_Rom_2C0760
@@ -274,7 +276,7 @@ gText_Rom_2C0760: @ 0x082C0760
 	.if (. - gText_Rom_2C0760) < 0xd
 	.space 0xd - (. - gText_Rom_2C0760)
 	.endif
-	.incbin "baserom.gba", 0x2c076d, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/union_room.h:18 sJPText_HoldBerryCrush
 	.globl gText_Rom_2C0770
@@ -286,7 +288,7 @@ gText_Rom_2C0770: @ 0x082C0770
 	.if (. - gText_Rom_2C0770) < 0x11
 	.space 0x11 - (. - gText_Rom_2C0770)
 	.endif
-	.incbin "baserom.gba", 0x2c0781, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/union_room.h:19 sJPText_HoldBerryPicking
 	.globl gText_Rom_2C0784
@@ -298,7 +300,7 @@ gText_Rom_2C0784: @ 0x082C0784
 	.if (. - gText_Rom_2C0784) < 0xe
 	.space 0xe - (. - gText_Rom_2C0784)
 	.endif
-	.incbin "baserom.gba", 0x2c0792, 0x2
+	.space 0x2, 0x00
 
 	@ src/data/union_room.h:20 sJPText_HoldSpinTrade
 	.globl gText_Rom_2C0794
@@ -310,7 +312,7 @@ gText_Rom_2C0794: @ 0x082C0794
 	.if (. - gText_Rom_2C0794) < 0x11
 	.space 0x11 - (. - gText_Rom_2C0794)
 	.endif
-	.incbin "baserom.gba", 0x2c07a5, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/union_room.h:21 sJPText_HoldSpinShop
 	.globl gText_Rom_2C07A8
@@ -359,7 +361,7 @@ gText_Rom_2C08F8: @ 0x082C08F8
 	.if (. - gText_Rom_2C08F8) < 0x19
 	.space 0x19 - (. - gText_Rom_2C08F8)
 	.endif
-	.incbin "baserom.gba", 0x2c0911, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_82C0914
 gUnknown_82C0914: @ 0x082C0914
 	.incbin "baserom.gba", 0x2c0914, 0x18
@@ -402,7 +404,7 @@ gText_Rom_2C09F8: @ 0x082C09F8
 	.if (. - gText_Rom_2C09F8) < 0x16
 	.space 0x16 - (. - gText_Rom_2C09F8)
 	.endif
-	.incbin "baserom.gba", 0x2c0a0e, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_82C0A10
 gUnknown_82C0A10: @ 0x082C0A10
 
@@ -430,7 +432,7 @@ gText_Rom_2C0A4C: @ 0x082C0A4C
 	.if (. - gText_Rom_2C0A4C) < 0x16
 	.space 0x16 - (. - gText_Rom_2C0A4C)
 	.endif
-	.incbin "baserom.gba", 0x2c0a62, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_82C0A64
 gUnknown_82C0A64: @ 0x082C0A64
 	.incbin "baserom.gba", 0x2c0a64, 0x20
@@ -450,7 +452,7 @@ gText_Rom_2C0AAC: @ 0x082C0AAC
 	.if (. - gText_Rom_2C0AAC) < 0x1b
 	.space 0x1b - (. - gText_Rom_2C0AAC)
 	.endif
-	.incbin "baserom.gba", 0x2c0ac7, 0x1
+	.space 0x1, 0x00
 	.globl gUnknown_82C0AC8
 gUnknown_82C0AC8: @ 0x082C0AC8
 	.incbin "baserom.gba", 0x2c0ac8, 0x1c
@@ -471,7 +473,7 @@ gText_Rom_2C0B6F: @ 0x082C0B6F
 	.if (. - gText_Rom_2C0B6F) < 0xf
 	.space 0xf - (. - gText_Rom_2C0B6F)
 	.endif
-	.incbin "baserom.gba", 0x2c0b7e, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_82C0B80
 gUnknown_82C0B80: @ 0x082C0B80
 	.incbin "baserom.gba", 0x2c0b80, 0x158
@@ -538,7 +540,7 @@ gText_Rom_2C0EE0: @ 0x082C0EE0
 	.if (. - gText_Rom_2C0EE0) < 0x11
 	.space 0x11 - (. - gText_Rom_2C0EE0)
 	.endif
-	.incbin "baserom.gba", 0x2c0ef1, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_82C0EF4
 gUnknown_82C0EF4: @ 0x082C0EF4
 
@@ -565,7 +567,10 @@ gText_Rom_2C0F04: @ 0x082C0F04
 	.if (. - gText_Rom_2C0F04) < 0xc
 	.space 0xc - (. - gText_Rom_2C0F04)
 	.endif
-	.incbin "baserom.gba", 0x2c0f10, 0x10
+	.4byte gUnknown_82C0DEC
+	.4byte gUnknown_82C0E1C
+	.4byte gUnknown_82C0E40
+	.4byte gUnknown_82C0E68
 
 	@ asm/union_room.s:10063 sub_08017484
 	.globl gText_Rom_2C0F20
@@ -577,7 +582,7 @@ gText_Rom_2C0F20: @ 0x082C0F20
 	.if (. - gText_Rom_2C0F20) < 0x2b
 	.space 0x2b - (. - gText_Rom_2C0F20)
 	.endif
-	.incbin "baserom.gba", 0x2c0f4b, 0x1
+	.space 0x1, 0x00
 
 	@ asm/union_room.s:10063 sub_08017484
 	.globl gText_Rom_2C0F4C
@@ -600,7 +605,7 @@ gText_Rom_2C0F78: @ 0x082C0F78
 	.if (. - gText_Rom_2C0F78) < 0x29
 	.space 0x29 - (. - gText_Rom_2C0F78)
 	.endif
-	.incbin "baserom.gba", 0x2c0fa1, 0x3
+	.space 0x3, 0x00
 
 	@ asm/union_room.s:10063 sub_08017484
 	.globl gText_Rom_2C0FA4
@@ -612,10 +617,13 @@ gText_Rom_2C0FA4: @ 0x082C0FA4
 	.if (. - gText_Rom_2C0FA4) < 0x29
 	.space 0x29 - (. - gText_Rom_2C0FA4)
 	.endif
-	.incbin "baserom.gba", 0x2c0fcd, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_82C0FD0
 gUnknown_82C0FD0: @ 0x082C0FD0
-	.incbin "baserom.gba", 0x2c0fd0, 0x10
+	.4byte gText_Rom_2C0F20
+	.4byte gText_Rom_2C0F78
+	.4byte gText_Rom_2C0F4C
+	.4byte gText_Rom_2C0FA4
 	.globl gUnknown_82C0FE0
 gUnknown_82C0FE0: @ 0x082C0FE0
 
@@ -658,7 +666,7 @@ gText_Rom_2C12C4: @ 0x082C12C4
 	.if (. - gText_Rom_2C12C4) < 0x1d
 	.space 0x1d - (. - gText_Rom_2C12C4)
 	.endif
-	.incbin "baserom.gba", 0x2c12e1, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_82C12E4
 gUnknown_82C12E4: @ 0x082C12E4
 	.incbin "baserom.gba", 0x2c12e4, 0x2c
@@ -744,7 +752,7 @@ gText_Rom_2C1864: @ 0x082C1864
 	.if (. - gText_Rom_2C1864) < 0x1b
 	.space 0x1b - (. - gText_Rom_2C1864)
 	.endif
-	.incbin "baserom.gba", 0x2c187f, 0x1
+	.space 0x1, 0x00
 	.globl gUnknown_82C1880
 gUnknown_82C1880: @ 0x082C1880
 	.incbin "baserom.gba", 0x2c1880, 0x29

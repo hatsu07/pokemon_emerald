@@ -23,10 +23,14 @@ gUnknown_8568A94: @ 0x08568A94
 	.incbin "baserom.gba", 0x568a94, 0x60
 	.globl gUnknown_8568AF4
 gUnknown_8568AF4: @ 0x08568AF4
-	.incbin "baserom.gba", 0x568af4, 0x10
+	.4byte gText_Rom_5CA69A
+	.4byte ShowRegistryMenuDeleteConfirmation
+	.4byte gText_Rom_5C93C4
+	.4byte ReturnToMainRegistryMenu
 	.globl gUnknown_8568B04
 gUnknown_8568B04: @ 0x08568B04
-	.incbin "baserom.gba", 0x568b04, 0x8
+	.4byte sub_080EAD68
+	.4byte DeleteRegistry_No
 	.globl gUnknown_8568B0C
 gUnknown_8568B0C: @ 0x08568B0C
 	.incbin "baserom.gba", 0x568b0c, 0xc
@@ -56,109 +60,421 @@ gUnknown_8568BB4: @ 0x08568BB4
 	.incbin "baserom.gba", 0x568bb4, 0x14
 	.globl gUnknown_8568BC8
 gUnknown_8568BC8: @ 0x08568BC8
-	.incbin "baserom.gba", 0x568bc8, 0x14
+	.4byte NULL
+	.4byte gText_Rom_2545D1
+	.4byte gText_Rom_2547DA
+	.4byte gText_Rom_2549BD
+	.4byte gText_Rom_254BE4
 	.globl gUnknown_8568BDC
 gUnknown_8568BDC: @ 0x08568BDC
-	.incbin "baserom.gba", 0x568bdc, 0x14
+	.4byte NULL
+	.4byte gText_Rom_254689
+	.4byte gText_Rom_254876
+	.4byte gText_Rom_254A53
+	.4byte gText_Rom_254CBA
 	.globl gUnknown_8568BF0
 gUnknown_8568BF0: @ 0x08568BF0
 	.incbin "baserom.gba", 0x568bf0, 0xc
 	.globl gUnknown_8568BFC
 gUnknown_8568BFC: @ 0x08568BFC
-	.incbin "baserom.gba", 0x568bfc, 0x20
+	.4byte gText_Rom_24D5D8
+	.4byte gText_Rom_24D6C9
+	.4byte gText_Rom_24D6E1
+	.4byte gText_Rom_24D6F0
+	.4byte gText_Rom_24D708
+	.4byte gText_Rom_24D73F
+	.4byte gText_Rom_24D765
+	.4byte gText_Rom_24D7AD
 	.globl gUnknown_8568C1C
 gUnknown_8568C1C: @ 0x08568C1C
-	.incbin "baserom.gba", 0x568c1c, 0x18
+	.4byte gText_Rom_24D9C3
+	.4byte gText_Rom_24DA62
+	.4byte gText_Rom_24DA91
+	.4byte gText_Rom_24DAB4
+	.4byte gText_Rom_24DADE
+	.4byte gText_Rom_24DB03
 	.globl gUnknown_8568C34
 gUnknown_8568C34: @ 0x08568C34
-	.incbin "baserom.gba", 0x568c34, 0x14
+	.4byte gText_Rom_24D2DC
+	.4byte gText_Rom_24D3F6
+	.4byte gText_Rom_24D455
+	.4byte gText_Rom_24D4AB
+	.4byte gText_Rom_24D4FF
 	.globl gUnknown_8568C48
 gUnknown_8568C48: @ 0x08568C48
-	.incbin "baserom.gba", 0x568c48, 0x4
+	.4byte gText_Rom_24DB69
 	.globl gUnknown_8568C4C
 gUnknown_8568C4C: @ 0x08568C4C
-	.incbin "baserom.gba", 0x568c4c, 0x30
+	.4byte gText_Rom_24EBFF
+	.4byte gText_Rom_24EC5E
+	.4byte gText_Rom_24EC93
+	.4byte gText_Rom_24ECC8
+	.4byte gText_Rom_24ED02
+	.4byte gText_Rom_24ED2F
+	.4byte gText_Rom_24EDA2
+	.4byte gText_Rom_24EDE5
+	.4byte gText_Rom_24EE22
+	.4byte gText_Rom_24EE6B
+	.4byte gText_Rom_24EEC6
+	.4byte gText_Rom_24EF0C
 	.globl gUnknown_8568C7C
 gUnknown_8568C7C: @ 0x08568C7C
-	.incbin "baserom.gba", 0x568c7c, 0x34
+	.4byte gText_Rom_24EF5E
+	.4byte gText_Rom_24EFC6
+	.4byte gText_Rom_24F03A
+	.4byte gText_Rom_24F09E
+	.4byte gText_Rom_24F0D7
+	.4byte gText_Rom_24F126
+	.4byte gText_Rom_24F1A9
+	.4byte gText_Rom_24F1EE
+	.4byte gText_Rom_24F20B
+	.4byte gText_Rom_24F22E
+	.4byte gText_Rom_24F29B
+	.4byte gText_Rom_24F2BC
+	.4byte gText_Rom_24F3F6
 	.globl gUnknown_8568CB0
 gUnknown_8568CB0: @ 0x08568CB0
-	.incbin "baserom.gba", 0x568cb0, 0x24
+	.4byte gText_Rom_24C754
+	.4byte gText_Rom_24C78D
+	.4byte gText_Rom_24C7C7
+	.4byte gText_Rom_24C806
+	.4byte gText_Rom_24C871
+	.4byte gText_Rom_24C8E3
+	.4byte gText_Rom_24C95F
+	.4byte gText_Rom_24C980
+	.4byte gText_Rom_24C9CB
 	.globl gUnknown_8568CD4
 gUnknown_8568CD4: @ 0x08568CD4
-	.incbin "baserom.gba", 0x568cd4, 0x18
+	.4byte gText_Rom_24DC33
+	.4byte gText_Rom_24DCC3
+	.4byte gText_Rom_24DD25
+	.4byte gText_Rom_24DD65
+	.4byte gText_Rom_24DDB6
+	.4byte gText_Rom_24DDF0
 	.globl gUnknown_8568CEC
 gUnknown_8568CEC: @ 0x08568CEC
-	.incbin "baserom.gba", 0x568cec, 0x3c
+	.4byte gText_Rom_24CBE0
+	.4byte gText_Rom_24CC34
+	.4byte gText_Rom_24CC59
+	.4byte gText_Rom_24CCCF
+	.4byte gText_Rom_24CD3E
+	.4byte gText_Rom_24CDB0
+	.4byte gText_Rom_24CE1D
+	.4byte gText_Rom_24CE86
+	.4byte gText_Rom_24CE89
+	.4byte gText_Rom_24CE8C
+	.4byte gText_Rom_24CE8F
+	.4byte gText_Rom_24CE92
+	.4byte gText_Rom_24CEA0
+	.4byte gText_Rom_24CF03
+	.4byte gText_Rom_24CF5D
 	.globl gUnknown_8568D28
 gUnknown_8568D28: @ 0x08568D28
-	.incbin "baserom.gba", 0x568d28, 0x84
+	.4byte gText_Rom_252520
+	.4byte gText_Rom_25261B
+	.4byte gText_Rom_252651
+	.4byte gText_Rom_252689
+	.4byte gText_Rom_2526CB
+	.4byte gText_Rom_2526FE
+	.4byte gText_Rom_25273B
+	.4byte gText_Rom_25276B
+	.4byte gText_Rom_252791
+	.4byte gText_Rom_2527B1
+	.4byte gText_Rom_2527C1
+	.4byte gText_Rom_2527D0
+	.4byte gText_Rom_2527DE
+	.4byte gText_Rom_2527ED
+	.4byte gText_Rom_2527FD
+	.4byte gText_Rom_25281D
+	.4byte gText_Rom_25282F
+	.4byte gText_Rom_252841
+	.4byte gText_Rom_252852
+	.4byte gText_Rom_252863
+	.4byte gText_Rom_252875
+	.4byte gText_Rom_2528B7
+	.4byte gText_Rom_2528FF
+	.4byte gText_Rom_252934
+	.4byte gText_Rom_252996
+	.4byte gText_Rom_2529D8
+	.4byte gText_Rom_252A17
+	.4byte gText_Rom_252A79
+	.4byte gText_Rom_252ADD
+	.4byte gText_Rom_252B34
+	.4byte gText_Rom_252B8A
+	.4byte gText_Rom_252BEF
+	.4byte gText_Rom_252C41
 	.globl gUnknown_8568DAC
 gUnknown_8568DAC: @ 0x08568DAC
-	.incbin "baserom.gba", 0x568dac, 0x20
+	.4byte gText_Rom_252CAB
+	.4byte gText_Rom_252CDF
+	.4byte gText_Rom_252D07
+	.4byte gText_Rom_252D2C
+	.4byte gText_Rom_252D51
+	.4byte gText_Rom_252DAB
+	.4byte gText_Rom_252DE4
+	.4byte gText_Rom_252E0D
 	.globl gUnknown_8568DCC
 gUnknown_8568DCC: @ 0x08568DCC
-	.incbin "baserom.gba", 0x568dcc, 0x18
+	.4byte gText_Rom_24DF59
+	.4byte gText_Rom_24E05F
+	.4byte gText_Rom_24E093
+	.4byte gText_Rom_24E0C3
+	.4byte gText_Rom_24E0F9
+	.4byte gText_Rom_24E12A
 	.globl gUnknown_8568DE4
 gUnknown_8568DE4: @ 0x08568DE4
-	.incbin "baserom.gba", 0x568de4, 0x4c
+	.4byte gText_Rom_24E178
+	.4byte gText_Rom_24E220
+	.4byte gText_Rom_24E269
+	.4byte gText_Rom_24E2AC
+	.4byte gText_Rom_24E2F7
+	.4byte gText_Rom_24E33E
+	.4byte gText_Rom_24E37B
+	.4byte gText_Rom_24E3B7
+	.4byte gText_Rom_24E3FD
+	.4byte gText_Rom_24E442
+	.4byte gText_Rom_24E495
+	.4byte gText_Rom_24E4E6
+	.4byte gText_Rom_24E534
+	.4byte gText_Rom_24E551
+	.4byte gText_Rom_24E589
+	.4byte gText_Rom_24E5A9
+	.4byte gText_Rom_24E5CD
+	.4byte gText_Rom_24E5E9
+	.4byte gText_Rom_24E62F
 	.globl gUnknown_8568E30
 gUnknown_8568E30: @ 0x08568E30
-	.incbin "baserom.gba", 0x568e30, 0x10
+	.4byte gText_Rom_253829
+	.4byte gText_Rom_253900
+	.4byte gText_Rom_253A06
+	.4byte gText_Rom_253B1B
 	.globl gUnknown_8568E40
 gUnknown_8568E40: @ 0x08568E40
-	.incbin "baserom.gba", 0x568e40, 0x1c
+	.4byte gText_Rom_24E938
+	.4byte gText_Rom_24E997
+	.4byte gText_Rom_24EA19
+	.4byte gText_Rom_24EA77
+	.4byte gText_Rom_24EAE3
+	.4byte gText_Rom_24EB31
+	.4byte gText_Rom_24EB89
 	.globl gUnknown_8568E5C
 gUnknown_8568E5C: @ 0x08568E5C
-	.incbin "baserom.gba", 0x568e5c, 0x8
+	.4byte gText_Rom_24E687
+	.4byte gText_Rom_24E7F9
 	.globl gUnknown_8568E64
 gUnknown_8568E64: @ 0x08568E64
-	.incbin "baserom.gba", 0x568e64, 0xc
+	.4byte gText_Rom_24F46B
+	.4byte gText_Rom_24F531
+	.4byte gText_Rom_24F563
 	.globl gUnknown_8568E70
 gUnknown_8568E70: @ 0x08568E70
-	.incbin "baserom.gba", 0x568e70, 0x2c
+	.4byte gText_Rom_24F5D7
+	.4byte gText_Rom_24F751
+	.4byte gText_Rom_24F769
+	.4byte gText_Rom_24F785
+	.4byte gText_Rom_24F7AA
+	.4byte gText_Rom_24F7E6
+	.4byte gText_Rom_24F811
+	.4byte gText_Rom_24F62D
+	.4byte gText_Rom_24F677
+	.4byte gText_Rom_24F6C4
+	.4byte gText_Rom_24F703
 	.globl gUnknown_8568E9C
 gUnknown_8568E9C: @ 0x08568E9C
-	.incbin "baserom.gba", 0x568e9c, 0x1c
+	.4byte gText_Rom_24F86A
+	.4byte gText_Rom_24F970
+	.4byte gText_Rom_24F99E
+	.4byte gText_Rom_24F9CD
+	.4byte gText_Rom_24FA41
+	.4byte gText_Rom_24FA69
+	.4byte gText_Rom_24FA92
 	.globl gUnknown_8568EB8
 gUnknown_8568EB8: @ 0x08568EB8
-	.incbin "baserom.gba", 0x568eb8, 0xc
+	.4byte gText_Rom_24FADF
+	.4byte gText_Rom_24FB54
+	.4byte gText_Rom_24FC02
 	.globl gUnknown_8568EC4
 gUnknown_8568EC4: @ 0x08568EC4
-	.incbin "baserom.gba", 0x568ec4, 0x10
+	.4byte gText_Rom_24FCB4
+	.4byte gText_Rom_24FD2E
+	.4byte gText_Rom_24FDE9
+	.4byte gText_Rom_24FE46
 	.globl gUnknown_8568ED4
 gUnknown_8568ED4: @ 0x08568ED4
-	.incbin "baserom.gba", 0x568ed4, 0x34
+	.4byte gText_Rom_24FEAB
+	.4byte gText_Rom_24FEBF
+	.4byte gText_Rom_24FF11
+	.4byte gText_Rom_24FF3B
+	.4byte gText_Rom_24FF60
+	.4byte gText_Rom_24FFDA
+	.4byte gText_Rom_25002A
+	.4byte gText_Rom_25004D
+	.4byte gText_Rom_2500D0
+	.4byte gText_Rom_2500FF
+	.4byte gText_Rom_250156
+	.4byte gText_Rom_2501A3
+	.4byte gText_Rom_250080
 	.globl gUnknown_8568F08
 gUnknown_8568F08: @ 0x08568F08
-	.incbin "baserom.gba", 0x568f08, 0x38
+	.4byte gText_Rom_2501F0
+	.4byte gText_Rom_250275
+	.4byte gText_Rom_250295
+	.4byte gText_Rom_2502F9
+	.4byte gText_Rom_250321
+	.4byte gText_Rom_25035A
+	.4byte gText_Rom_250385
+	.4byte gText_Rom_2503AC
+	.4byte gText_Rom_2503E9
+	.4byte gText_Rom_250428
+	.4byte gText_Rom_2504A8
+	.4byte gText_Rom_25051D
+	.4byte gText_Rom_250598
+	.4byte gText_Rom_250612
 	.globl gUnknown_8568F40
 gUnknown_8568F40: @ 0x08568F40
-	.incbin "baserom.gba", 0x568f40, 0x4
+	.4byte gText_Rom_250670
 	.globl gUnknown_8568F44
 gUnknown_8568F44: @ 0x08568F44
-	.incbin "baserom.gba", 0x568f44, 0x1c
+	.4byte gText_Rom_25078E
+	.4byte gText_Rom_2507FC
+	.4byte gText_Rom_250830
+	.4byte gText_Rom_25083C
+	.4byte gText_Rom_250858
+	.4byte gText_Rom_25086F
+	.4byte gText_Rom_250881
 	.globl gUnknown_8568F60
 gUnknown_8568F60: @ 0x08568F60
-	.incbin "baserom.gba", 0x568f60, 0x30
+	.4byte gText_Rom_2508F1
+	.4byte gText_Rom_25099F
+	.4byte gText_Rom_2509C2
+	.4byte gText_Rom_2509DA
+	.4byte gText_Rom_2509FA
+	.4byte gText_Rom_250A17
+	.4byte gText_Rom_250A35
+	.4byte gText_Rom_250A56
+	.4byte gText_Rom_250A72
+	.4byte gText_Rom_250A94
+	.4byte gText_Rom_250AAD
+	.4byte gText_Rom_250ACC
 	.globl gUnknown_8568F90
 gUnknown_8568F90: @ 0x08568F90
-	.incbin "baserom.gba", 0x568f90, 0x40
+	.4byte gText_Rom_250C08
+	.4byte gText_Rom_250C96
+	.4byte gText_Rom_250CC8
+	.4byte gText_Rom_250D03
+	.4byte gText_Rom_250D41
+	.4byte gText_Rom_250D5F
+	.4byte gText_Rom_250DC3
+	.4byte gText_Rom_250E25
+	.4byte gText_Rom_250E8B
+	.4byte gText_Rom_250EED
+	.4byte gText_Rom_250F51
+	.4byte gText_Rom_250FB5
+	.4byte gText_Rom_251014
+	.4byte gText_Rom_251079
+	.4byte gText_Rom_2510DD
+	.4byte gText_Rom_25113A
 	.globl gUnknown_8568FD0
 gUnknown_8568FD0: @ 0x08568FD0
-	.incbin "baserom.gba", 0x568fd0, 0x4c
+	.4byte gText_Rom_251173
+	.4byte gText_Rom_2511AF
+	.4byte gText_Rom_2511F3
+	.4byte gText_Rom_251236
+	.4byte gText_Rom_251279
+	.4byte gText_Rom_2512C1
+	.4byte gText_Rom_251306
+	.4byte gText_Rom_25134A
+	.4byte gText_Rom_251392
+	.4byte gText_Rom_2513D9
+	.4byte gText_Rom_25141B
+	.4byte gText_Rom_25145F
+	.4byte gText_Rom_2514A3
+	.4byte gText_Rom_2514E6
+	.4byte gText_Rom_25152D
+	.4byte gText_Rom_25155E
+	.4byte gText_Rom_25158B
+	.4byte gText_Rom_251597
+	.4byte gText_Rom_2515C4
 	.globl gUnknown_856901C
 gUnknown_856901C: @ 0x0856901C
-	.incbin "baserom.gba", 0x56901c, 0x24
+	.4byte gText_Rom_2515FE
+	.4byte gText_Rom_25167C
+	.4byte gText_Rom_2516E4
+	.4byte gText_Rom_251756
+	.4byte gText_Rom_2517CA
+	.4byte gText_Rom_251831
+	.4byte gText_Rom_2518A5
+	.4byte gText_Rom_2518EF
+	.4byte gText_Rom_251968
 	.globl gUnknown_8569040
 gUnknown_8569040: @ 0x08569040
-	.incbin "baserom.gba", 0x569040, 0xac
+	.4byte gText_Rom_2519B9
+	.4byte gText_Rom_251A3A
+	.4byte gText_Rom_251A46
+	.4byte gText_Rom_251A54
+	.4byte gText_Rom_251A83
+	.4byte gText_Rom_251AB6
+	.4byte gText_Rom_251ADA
+	.4byte gText_Rom_251AFA
+	.4byte gText_Rom_251B4E
+	.4byte gText_Rom_251B8B
+	.4byte gText_Rom_251BBB
+	.4byte gText_Rom_251BEA
+	.4byte gText_Rom_251C16
+	.4byte gText_Rom_251C54
+	.4byte gText_Rom_251C80
+	.4byte gText_Rom_251CA3
+	.4byte gText_Rom_251CC0
+	.4byte gText_Rom_251CF3
+	.4byte gText_Rom_251D12
+	.4byte gText_Rom_251D30
+	.4byte gText_Rom_251D8E
+	.4byte gText_Rom_251D9C
+	.4byte gText_Rom_251DBD
+	.4byte gText_Rom_251DDC
+	.4byte gText_Rom_251E17
+	.4byte gText_Rom_251E53
+	.4byte gText_Rom_251EB2
+	.4byte gText_Rom_251EEC
+	.4byte gText_Rom_251F16
+	.4byte gText_Rom_251F5B
+	.4byte gText_Rom_251F83
+	.4byte gText_Rom_251FB6
+	.4byte gText_Rom_251FF9
+	.4byte gText_Rom_252030
+	.4byte gText_Rom_252069
+	.4byte gText_Rom_252096
+	.4byte gText_Rom_2520C8
+	.4byte gText_Rom_252101
+	.4byte gText_Rom_252137
+	.4byte gText_Rom_252155
+	.4byte gText_Rom_252177
+	.4byte gText_Rom_2521A5
+	.4byte gText_Rom_2521E8
 	.globl gUnknown_85690EC
 gUnknown_85690EC: @ 0x085690EC
-	.incbin "baserom.gba", 0x5690ec, 0x2c
+	.4byte gText_Rom_252232
+	.4byte gText_Rom_2522C6
+	.4byte gText_Rom_252308
+	.4byte gText_Rom_252323
+	.4byte gText_Rom_25234E
+	.4byte gText_Rom_252394
+	.4byte gText_Rom_2523E0
+	.4byte gText_Rom_25242B
+	.4byte gText_Rom_25245F
+	.4byte gText_Rom_25248E
+	.4byte gText_Rom_2524D7
 	.globl gUnknown_8569118
 gUnknown_8569118: @ 0x08569118
-	.incbin "baserom.gba", 0x569118, 0x24
+	.4byte gText_Rom_2533DD
+	.4byte gText_Rom_253465
+	.4byte gText_Rom_2534BA
+	.4byte gText_Rom_253551
+	.4byte gText_Rom_2535D3
+	.4byte gText_Rom_25365E
+	.4byte gText_Rom_2536D3
+	.4byte gText_Rom_253714
+	.4byte gText_Rom_25377E
 	.globl gUnknown_856913C
 gUnknown_856913C: @ 0x0856913C
 	.incbin "baserom.gba", 0x56913c, 0x20
@@ -314,7 +630,9 @@ gUnknown_856DC5C: @ 0x0856DC5C
 	.incbin "baserom.gba", 0x56dc5c, 0x60
 	.globl gUnknown_856DCBC
 gUnknown_856DCBC: @ 0x0856DCBC
-	.incbin "baserom.gba", 0x56dcbc, 0xc
+	.4byte sub_081B5E1C
+	.4byte CB2_ReturnToField
+	.4byte NULL
 	.globl gUnknown_856DCC8
 gUnknown_856DCC8: @ 0x0856DCC8
 	.incbin "baserom.gba", 0x56dcc8, 0x4
@@ -494,19 +812,51 @@ gUnknown_8573002: @ 0x08573002
 	.incbin "baserom.gba", 0x573002, 0x6
 	.globl gUnknown_8573008
 gUnknown_8573008: @ 0x08573008
-	.incbin "baserom.gba", 0x573008, 0x28
+	.4byte BattleIntroSlide1
+	.4byte BattleIntroSlide1
+	.4byte BattleIntroSlide2
+	.4byte BattleIntroSlide2
+	.4byte BattleIntroSlide2
+	.4byte BattleIntroSlide1
+	.4byte BattleIntroSlide1
+	.4byte BattleIntroSlide1
+	.4byte BattleIntroSlide3
+	.4byte BattleIntroSlide3
 	.globl gUnknown_8573030
 gUnknown_8573030: @ 0x08573030
-	.incbin "baserom.gba", 0x573030, 0x10
+	.4byte MachBikeTransition_FaceDirection
+	.4byte MachBikeTransition_TurnDirection
+	.4byte MachBikeTransition_TrySpeedUp
+	.4byte MachBikeTransition_TrySlowDown
 	.globl gUnknown_8573040
 gUnknown_8573040: @ 0x08573040
-	.incbin "baserom.gba", 0x573040, 0xc
+	.4byte PlayerGoSpeed1
+	.4byte PlayerGoSpeed2
+	.4byte PlayerGoSpeed4
 	.globl gUnknown_857304C
 gUnknown_857304C: @ 0x0857304C
-	.incbin "baserom.gba", 0x57304c, 0x34
+	.4byte AcroBikeTransition_TurnJump
+	.4byte AcroBikeTransition_TurnDirection
+	.4byte AcroBikeTransition_Moving
+	.4byte AcroBikeTransition_NormalToWheelie
+	.4byte AcroBikeTransition_WheelieToNormal
+	.4byte AcroBikeTransition_WheelieIdle
+	.4byte AcroBikeTransition_WheelieHoppingStanding
+	.4byte AcroBikeTransition_WheelieHoppingMoving
+	.4byte AcroBikeTransition_SideJump
+	.4byte sub_0811A2E4
+	.4byte AcroBikeTransition_WheelieMoving
+	.4byte AcroBikeTransition_WheelieRisingMoving
+	.4byte AcroBikeTransition_WheelieLoweringMoving
 	.globl gUnknown_8573080
 gUnknown_8573080: @ 0x08573080
-	.incbin "baserom.gba", 0x573080, 0x1c
+	.4byte AcroBikeHandleInputNormal
+	.4byte AcroBikeHandleInputTurning
+	.4byte AcroBikeHandleInputWheelieStanding
+	.4byte AcroBikeHandleInputBunnyHop
+	.4byte AcroBikeHandleInputWheelieMoving
+	.4byte AcroBikeHandleInputSidewaysJump
+	.4byte AcroBikeHandleInputTurnJump
 	.globl gUnknown_857309C
 gUnknown_857309C: @ 0x0857309C
 	.incbin "baserom.gba", 0x57309c, 0x8

@@ -144,7 +144,7 @@ gText_Rom_57CD62: @ 0x0857CD62
 	.if (. - gText_Rom_57CD62) < 0x8
 	.space 0x8 - (. - gText_Rom_57CD62)
 	.endif
-	.incbin "baserom.gba", 0x57cd6a, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_857CD6C
 gUnknown_857CD6C: @ 0x0857CD6C
 	.incbin "baserom.gba", 0x57cd6c, 0x6a8

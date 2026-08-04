@@ -71,7 +71,12 @@ gUnknown_85FA9C7: @ 0x085FA9C7
 	.incbin "baserom.gba", 0x5fa9c7, 0x5
 	.globl gUnknown_85FA9CC
 gUnknown_85FA9CC: @ 0x085FA9CC
-	.incbin "baserom.gba", 0x5fa9cc, 0x18
+	.4byte gText_Rom_5FA9A4
+	.4byte gText_Rom_5FA9AB
+	.4byte gText_Rom_5FA9B0
+	.4byte gText_Rom_5FA9BA
+	.4byte gText_Rom_5FA9BF
+	.4byte gText_Rom_5FA9B5
 	.globl gUnknown_85FA9E4
 gUnknown_85FA9E4: @ 0x085FA9E4
 	.incbin "baserom.gba", 0x5fa9e4, 0xe0
@@ -196,7 +201,7 @@ gText_Rom_5FAEE8: @ 0x085FAEE8
 	.if (. - gText_Rom_5FAEE8) != 0xb
 	.error "gText_Rom_5FAEE8 must retain its original byte length"
 	.endif
-	.incbin "baserom.gba", 0x5faef3, 0x1
+	.space 0x1, 0xFF
 	.globl gUnknown_85FAEF4
 gUnknown_85FAEF4: @ 0x085FAEF4
 	.incbin "baserom.gba", 0x5faef4, 0x10
@@ -343,7 +348,7 @@ gUnknown_85FB8B8: @ 0x085FB8B8
 	.incbin "baserom.gba", 0x5fb8b8, 0x8
 	.globl gUnknown_85FB8C0
 gUnknown_85FB8C0: @ 0x085FB8C0
-	.incbin "baserom.gba", 0x5fb8c0, 0x20
+	.space 0x20, 0x00
 	.globl gUnknown_85FB8E0
 gUnknown_85FB8E0: @ 0x085FB8E0
 	.incbin "baserom.gba", 0x5fb8e0, 0x3

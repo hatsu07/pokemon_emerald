@@ -146,7 +146,7 @@ gText_Rom_5C9268: @ 0x085C9268
 	.endif
 	.globl gText_Rom_5C9289
 	.set gText_Rom_5C9289, gText_Rom_5C9268 + 0x21
-	.incbin "baserom.gba", 0x5c928d, 0x1
+	.space 0x1, 0xFF
 
 	@ src/strings.c:111 gText_DexSearchDontSpecify
 	@ Preserve exact byte length: semantic suffix text pointer.

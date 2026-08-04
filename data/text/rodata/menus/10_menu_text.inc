@@ -8,7 +8,7 @@ gText_Rom_2C1D8C: @ 0x082C1D8C
 	.endif
 	.globl gText_Rom_2C1D8F
 	.set gText_Rom_2C1D8F, gText_Rom_2C1D8C + 0x3
-	.incbin "baserom.gba", 0x2c1d93, 0x1
+	.space 0x1, 0x00
 
 	@ src/data/union_room.h:548 sText_PokemonTrades
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -20,7 +20,7 @@ gText_Rom_2C1D94: @ 0x082C1D94
 	.endif
 	.globl gText_Rom_2C1D98
 	.set gText_Rom_2C1D98, gText_Rom_2C1D94 + 0x4
-	.incbin "baserom.gba", 0x2c1d9d, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/union_room.h:539 sText_Chat2 (+1 aliases)
 	.globl gText_Rom_2C1DA0
@@ -32,7 +32,7 @@ gText_Rom_2C1DA0: @ 0x082C1DA0
 	.if (. - gText_Rom_2C1DA0) < 0x5
 	.space 0x5 - (. - gText_Rom_2C1DA0)
 	.endif
-	.incbin "baserom.gba", 0x2c1da5, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/easy_chat/easy_chat_group_hobbies.h:58 easy_chat_group_hobbies_line_58 (+1 aliases)
 	.globl gText_Rom_2C1DA8
@@ -66,7 +66,7 @@ gText_Rom_2C1DB4: @ 0x082C1DB4
 	.endif
 	.globl gText_Rom_2C1DB8
 	.set gText_Rom_2C1DB8, gText_Rom_2C1DB4 + 0x4
-	.incbin "baserom.gba", 0x2c1dbd, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/script_menu.h:535 script_menu_line_535 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -78,7 +78,7 @@ gText_Rom_2C1DC0: @ 0x082C1DC0
 	.endif
 	.globl gText_Rom_2C1DC4
 	.set gText_Rom_2C1DC4, gText_Rom_2C1DC0 + 0x4
-	.incbin "baserom.gba", 0x2c1dc9, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/script_menu.h:507 gText_BerryCrush3 (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -90,7 +90,7 @@ gText_Rom_2C1DCC: @ 0x082C1DCC
 	.endif
 	.globl gText_Rom_2C1DCF
 	.set gText_Rom_2C1DCF, gText_Rom_2C1DCC + 0x3
-	.incbin "baserom.gba", 0x2c1dd5, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/union_room.h:555 sText_BerryPicking
 	@ Preserve exact byte length: semantic suffix text pointer.

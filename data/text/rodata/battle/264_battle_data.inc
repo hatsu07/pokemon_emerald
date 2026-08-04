@@ -142,7 +142,7 @@ gText_Rom_5CC452: @ 0x085CC452
 	.if (. - gText_Rom_5CC452) < 0x9
 	.space 0x9 - (. - gText_Rom_5CC452)
 	.endif
-	.incbin "baserom.gba", 0x5cc45b, 0x1
+	.space 0x1, 0x00
 
 	@ src/strings.c:702 gText_FacilitySingle
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -165,7 +165,7 @@ gText_Rom_5CC464: @ 0x085CC464
 	.endif
 	.globl gText_Rom_5CC467
 	.set gText_Rom_5CC467, gText_Rom_5CC464 + 0x3
-	.incbin "baserom.gba", 0x5cc46b, 0x1
+	.space 0x1, 0x00
 
 	@ src/strings.c:704 gText_FacilityMulti
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -177,7 +177,7 @@ gText_Rom_5CC46C: @ 0x085CC46C
 	.endif
 	.globl gText_Rom_5CC46F
 	.set gText_Rom_5CC46F, gText_Rom_5CC46C + 0x3
-	.incbin "baserom.gba", 0x5cc473, 0x1
+	.space 0x1, 0x00
 
 	@ src/strings.c:705 gText_FacilityLink
 	@ Preserve exact byte length: semantic suffix text pointer.

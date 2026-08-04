@@ -130,7 +130,7 @@ gText_Rom_5C8E4C: @ 0x085C8E4C
 	.if (. - gText_Rom_5C8E4C) < 0x5
 	.space 0x5 - (. - gText_Rom_5C8E4C)
 	.endif
-	.incbin "baserom.gba", 0x5c8e51, 0x3
+	.space 0x3, 0x00
 
 	@ src/strings.c:39 gText_Next
 	.globl gText_Rom_5C8E54
@@ -142,7 +142,7 @@ gText_Rom_5C8E54: @ 0x085C8E54
 	.if (. - gText_Rom_5C8E54) < 0x5
 	.space 0x5 - (. - gText_Rom_5C8E54)
 	.endif
-	.incbin "baserom.gba", 0x5c8e59, 0x3
+	.space 0x3, 0x00
 
 	@ src/strings.c:40 gText_NextBack
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -154,7 +154,7 @@ gText_Rom_5C8E5C: @ 0x085C8E5C
 	.endif
 	.globl gText_Rom_5C8E63
 	.set gText_Rom_5C8E63, gText_Rom_5C8E5C + 0x7
-	.incbin "baserom.gba", 0x5c8e67, 0x1
+	.space 0x1, 0x00
 	.globl gUnknown_85C8E68
 gUnknown_85C8E68: @ 0x085C8E68
 	.incbin "baserom.gba", 0x5c8e68, 0xd
@@ -169,7 +169,7 @@ gText_Rom_5C8E75: @ 0x085C8E75
 	.if (. - gText_Rom_5C8E75) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8E75)
 	.endif
-	.incbin "baserom.gba", 0x5c8e79, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_85C8E7C
 gUnknown_85C8E7C: @ 0x085C8E7C
 	.incbin "baserom.gba", 0x5c8e7c, 0xa
@@ -184,7 +184,7 @@ gText_Rom_5C8E86: @ 0x085C8E86
 	.if (. - gText_Rom_5C8E86) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8E86)
 	.endif
-	.incbin "baserom.gba", 0x5c8e8a, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_85C8E8C
 gUnknown_85C8E8C: @ 0x085C8E8C
 
@@ -231,7 +231,7 @@ gText_Rom_5C8E9A: @ 0x085C8E9A
 	.if (. - gText_Rom_5C8E9A) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8E9A)
 	.endif
-	.incbin "baserom.gba", 0x5c8e9e, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:482 main_menu_line_482
 	.globl gText_Rom_5C8EA0
@@ -266,7 +266,7 @@ gText_Rom_5C8EB2: @ 0x085C8EB2
 	.if (. - gText_Rom_5C8EB2) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8EB2)
 	.endif
-	.incbin "baserom.gba", 0x5c8eb6, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:486 main_menu_line_486
 	.globl gText_Rom_5C8EB8
@@ -278,7 +278,7 @@ gText_Rom_5C8EB8: @ 0x085C8EB8
 	.if (. - gText_Rom_5C8EB8) < 0x5
 	.space 0x5 - (. - gText_Rom_5C8EB8)
 	.endif
-	.incbin "baserom.gba", 0x5c8ebd, 0x1
+	.space 0x1, 0xFF
 
 	@ src/main_menu.c:487 main_menu_line_487
 	.globl gText_Rom_5C8EBE
@@ -290,7 +290,7 @@ gText_Rom_5C8EBE: @ 0x085C8EBE
 	.if (. - gText_Rom_5C8EBE) < 0x5
 	.space 0x5 - (. - gText_Rom_5C8EBE)
 	.endif
-	.incbin "baserom.gba", 0x5c8ec3, 0x1
+	.space 0x1, 0xFF
 
 	@ src/main_menu.c:488 main_menu_line_488
 	.globl gText_Rom_5C8EC4
@@ -302,7 +302,7 @@ gText_Rom_5C8EC4: @ 0x085C8EC4
 	.if (. - gText_Rom_5C8EC4) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8EC4)
 	.endif
-	.incbin "baserom.gba", 0x5c8ec8, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:489 main_menu_line_489
 	.globl gText_Rom_5C8ECA
@@ -314,7 +314,7 @@ gText_Rom_5C8ECA: @ 0x085C8ECA
 	.if (. - gText_Rom_5C8ECA) < 0x5
 	.space 0x5 - (. - gText_Rom_5C8ECA)
 	.endif
-	.incbin "baserom.gba", 0x5c8ecf, 0x1
+	.space 0x1, 0xFF
 
 	@ src/main_menu.c:490 main_menu_line_490
 	.globl gText_Rom_5C8ED0
@@ -338,7 +338,7 @@ gText_Rom_5C8EDC: @ 0x085C8EDC
 	.if (. - gText_Rom_5C8EDC) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8EDC)
 	.endif
-	.incbin "baserom.gba", 0x5c8ee0, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:493 main_menu_line_493
 	.globl gText_Rom_5C8EE2
@@ -350,7 +350,7 @@ gText_Rom_5C8EE2: @ 0x085C8EE2
 	.if (. - gText_Rom_5C8EE2) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8EE2)
 	.endif
-	.incbin "baserom.gba", 0x5c8ee6, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:494 main_menu_line_494
 	.globl gText_Rom_5C8EE8
@@ -362,7 +362,7 @@ gText_Rom_5C8EE8: @ 0x085C8EE8
 	.if (. - gText_Rom_5C8EE8) < 0x5
 	.space 0x5 - (. - gText_Rom_5C8EE8)
 	.endif
-	.incbin "baserom.gba", 0x5c8eed, 0x1
+	.space 0x1, 0xFF
 
 	@ src/main_menu.c:495 main_menu_line_495
 	.globl gText_Rom_5C8EEE
@@ -374,7 +374,7 @@ gText_Rom_5C8EEE: @ 0x085C8EEE
 	.if (. - gText_Rom_5C8EEE) < 0x5
 	.space 0x5 - (. - gText_Rom_5C8EEE)
 	.endif
-	.incbin "baserom.gba", 0x5c8ef3, 0x1
+	.space 0x1, 0xFF
 
 	@ src/main_menu.c:496 main_menu_line_496
 	.globl gText_Rom_5C8EF4
@@ -386,7 +386,7 @@ gText_Rom_5C8EF4: @ 0x085C8EF4
 	.if (. - gText_Rom_5C8EF4) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8EF4)
 	.endif
-	.incbin "baserom.gba", 0x5c8ef8, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:497 main_menu_line_497
 	.globl gText_Rom_5C8EFA
@@ -398,7 +398,7 @@ gText_Rom_5C8EFA: @ 0x085C8EFA
 	.if (. - gText_Rom_5C8EFA) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8EFA)
 	.endif
-	.incbin "baserom.gba", 0x5c8efe, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:498 main_menu_line_498
 	.globl gText_Rom_5C8F00
@@ -421,7 +421,7 @@ gText_Rom_5C8F06: @ 0x085C8F06
 	.if (. - gText_Rom_5C8F06) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F06)
 	.endif
-	.incbin "baserom.gba", 0x5c8f0a, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:500 main_menu_line_500
 	.globl gText_Rom_5C8F0C
@@ -433,7 +433,7 @@ gText_Rom_5C8F0C: @ 0x085C8F0C
 	.if (. - gText_Rom_5C8F0C) < 0x5
 	.space 0x5 - (. - gText_Rom_5C8F0C)
 	.endif
-	.incbin "baserom.gba", 0x5c8f11, 0x1
+	.space 0x1, 0xFF
 
 	@ src/main_menu.c:504 main_menu_line_504
 	.globl gText_Rom_5C8F12
@@ -445,7 +445,7 @@ gText_Rom_5C8F12: @ 0x085C8F12
 	.if (. - gText_Rom_5C8F12) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F12)
 	.endif
-	.incbin "baserom.gba", 0x5c8f16, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:505 main_menu_line_505
 	.globl gText_Rom_5C8F18
@@ -480,7 +480,7 @@ gText_Rom_5C8F28: @ 0x085C8F28
 	.if (. - gText_Rom_5C8F28) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F28)
 	.endif
-	.incbin "baserom.gba", 0x5c8f2c, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:509 main_menu_line_509
 	.globl gText_Rom_5C8F2E
@@ -492,7 +492,7 @@ gText_Rom_5C8F2E: @ 0x085C8F2E
 	.if (. - gText_Rom_5C8F2E) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F2E)
 	.endif
-	.incbin "baserom.gba", 0x5c8f32, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:510 main_menu_line_510
 	.globl gText_Rom_5C8F34
@@ -516,7 +516,7 @@ gText_Rom_5C8F46: @ 0x085C8F46
 	.if (. - gText_Rom_5C8F46) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F46)
 	.endif
-	.incbin "baserom.gba", 0x5c8f4a, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:514 main_menu_line_514
 	.globl gText_Rom_5C8F4C
@@ -528,7 +528,7 @@ gText_Rom_5C8F4C: @ 0x085C8F4C
 	.if (. - gText_Rom_5C8F4C) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F4C)
 	.endif
-	.incbin "baserom.gba", 0x5c8f50, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:515 main_menu_line_515
 	.globl gText_Rom_5C8F52
@@ -540,7 +540,7 @@ gText_Rom_5C8F52: @ 0x085C8F52
 	.if (. - gText_Rom_5C8F52) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F52)
 	.endif
-	.incbin "baserom.gba", 0x5c8f56, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:516 main_menu_line_516
 	.globl gText_Rom_5C8F58
@@ -552,7 +552,7 @@ gText_Rom_5C8F58: @ 0x085C8F58
 	.if (. - gText_Rom_5C8F58) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F58)
 	.endif
-	.incbin "baserom.gba", 0x5c8f5c, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:517 main_menu_line_517
 	.globl gText_Rom_5C8F5E
@@ -576,7 +576,7 @@ gText_Rom_5C8F6A: @ 0x085C8F6A
 	.if (. - gText_Rom_5C8F6A) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F6A)
 	.endif
-	.incbin "baserom.gba", 0x5c8f6e, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:520 main_menu_line_520
 	.globl gText_Rom_5C8F70
@@ -588,7 +588,7 @@ gText_Rom_5C8F70: @ 0x085C8F70
 	.if (. - gText_Rom_5C8F70) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F70)
 	.endif
-	.incbin "baserom.gba", 0x5c8f74, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:521 main_menu_line_521
 	.globl gText_Rom_5C8F76
@@ -600,7 +600,7 @@ gText_Rom_5C8F76: @ 0x085C8F76
 	.if (. - gText_Rom_5C8F76) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F76)
 	.endif
-	.incbin "baserom.gba", 0x5c8f7a, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:522 main_menu_line_522
 	.globl gText_Rom_5C8F7C
@@ -612,7 +612,7 @@ gText_Rom_5C8F7C: @ 0x085C8F7C
 	.if (. - gText_Rom_5C8F7C) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F7C)
 	.endif
-	.incbin "baserom.gba", 0x5c8f80, 0x2
+	.space 0x2, 0xFF
 
 	@ src/main_menu.c:523 main_menu_line_523
 	.globl gText_Rom_5C8F82
@@ -624,7 +624,7 @@ gText_Rom_5C8F82: @ 0x085C8F82
 	.if (. - gText_Rom_5C8F82) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F82)
 	.endif
-	.incbin "baserom.gba", 0x5c8f86, 0x2
+	.space 0x2, 0xFF
 	.globl gUnknown_85C8F88
 gUnknown_85C8F88: @ 0x085C8F88
 
@@ -640,5 +640,5 @@ gText_Rom_5C8F88: @ 0x085C8F88
 	.endif
 	.globl gUnknown_85C8FA2
 gUnknown_85C8FA2: @ 0x085C8FA2
-	.incbin "baserom.gba", 0x5c8fa2, 0x5
+	.space 0x5, 0xAC
 

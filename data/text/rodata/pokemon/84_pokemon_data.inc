@@ -12,7 +12,7 @@ gUnknown_855714C: @ 0x0855714C
 	.incbin "baserom.gba", 0x55714c, 0x18
 	.globl gUnknown_8557164
 gUnknown_8557164: @ 0x08557164
-	.incbin "baserom.gba", 0x557164, 0x2
+	.space 0x2, 0xFE
 	.globl gUnknown_8557166
 gUnknown_8557166: @ 0x08557166
 	.incbin "baserom.gba", 0x557166, 0x62

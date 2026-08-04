@@ -47,7 +47,7 @@ gText_Rom_5C9311: @ 0x085C9311
 	.if (. - gText_Rom_5C9311) < 0x16
 	.space 0x16 - (. - gText_Rom_5C9311)
 	.endif
-	.incbin "baserom.gba", 0x5c9327, 0x1
+	.space 0x1, 0x00
 	.globl gUnknown_85C9328
 gUnknown_85C9328: @ 0x085C9328
 
@@ -74,7 +74,7 @@ gText_Rom_5C9337: @ 0x085C9337
 	.if (. - gText_Rom_5C9337) < 0x13
 	.space 0x13 - (. - gText_Rom_5C9337)
 	.endif
-	.incbin "baserom.gba", 0x5c934a, 0x1
+	.space 0x1, 0xFF
 	.globl gUnknown_85C934B
 gUnknown_85C934B: @ 0x085C934B
 	.incbin "baserom.gba", 0x5c934b, 0x4

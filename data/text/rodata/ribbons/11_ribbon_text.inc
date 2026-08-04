@@ -10,7 +10,7 @@ gText_Rom_2C1DFC: @ 0x082C1DFC
 	.set gText_Rom_2C1E01, gText_Rom_2C1DFC + 0x5
 	.globl gText_Rom_2C1E03
 	.set gText_Rom_2C1E03, gText_Rom_2C1DFC + 0x7
-	.incbin "baserom.gba", 0x2c1e07, 0x1
+	.space 0x1, 0x00
 
 	@ src/data/text/ribbon_descriptions.h:4 gRibbonDescriptionPart1_BeautyContest (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -24,7 +24,7 @@ gText_Rom_2C1E08: @ 0x082C1E08
 	.set gText_Rom_2C1E0D, gText_Rom_2C1E08 + 0x5
 	.globl gText_Rom_2C1E0F
 	.set gText_Rom_2C1E0F, gText_Rom_2C1E08 + 0x7
-	.incbin "baserom.gba", 0x2c1e13, 0x1
+	.space 0x1, 0x00
 
 	@ src/data/text/ribbon_descriptions.h:5 gRibbonDescriptionPart1_CuteContest (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -38,7 +38,7 @@ gText_Rom_2C1E14: @ 0x082C1E14
 	.set gText_Rom_2C1E18, gText_Rom_2C1E14 + 0x4
 	.globl gText_Rom_2C1E1A
 	.set gText_Rom_2C1E1A, gText_Rom_2C1E14 + 0x6
-	.incbin "baserom.gba", 0x2c1e1e, 0x2
+	.space 0x2, 0x00
 
 	@ src/data/text/ribbon_descriptions.h:6 gRibbonDescriptionPart1_SmartContest (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -52,7 +52,7 @@ gText_Rom_2C1E20: @ 0x082C1E20
 	.set gText_Rom_2C1E24, gText_Rom_2C1E20 + 0x4
 	.globl gText_Rom_2C1E26
 	.set gText_Rom_2C1E26, gText_Rom_2C1E20 + 0x6
-	.incbin "baserom.gba", 0x2c1e2a, 0x2
+	.space 0x2, 0x00
 
 	@ src/data/text/ribbon_descriptions.h:7 gRibbonDescriptionPart1_ToughContest (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -78,7 +78,7 @@ gText_Rom_2C1E3F: @ 0x082C1E3F
 	.if (. - gText_Rom_2C1E3F) < 0x6
 	.space 0x6 - (. - gText_Rom_2C1E3F)
 	.endif
-	.incbin "baserom.gba", 0x2c1e45, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/union_room.h:565 sText_BattleTowerOpenLv
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -92,7 +92,7 @@ gText_Rom_2C1E48: @ 0x082C1E48
 	.set gText_Rom_2C1E4F, gText_Rom_2C1E48 + 0x7
 	.globl gText_Rom_2C1E53
 	.set gText_Rom_2C1E53, gText_Rom_2C1E48 + 0xb
-	.incbin "baserom.gba", 0x2c1e57, 0x1
+	.space 0x1, 0x00
 	.globl gUnknown_82C1E58
 gUnknown_82C1E58: @ 0x082C1E58
 	.incbin "baserom.gba", 0x2c1e58, 0x74
@@ -107,7 +107,7 @@ gText_Rom_2C1ECC: @ 0x082C1ECC
 	.if (. - gText_Rom_2C1ECC) < 0xa
 	.space 0xa - (. - gText_Rom_2C1ECC)
 	.endif
-	.incbin "baserom.gba", 0x2c1ed6, 0x2
+	.space 0x2, 0x00
 
 	@ asm/union_room.s:11199 sub_08017CDC
 	.globl gText_Rom_2C1ED8
@@ -119,7 +119,7 @@ gText_Rom_2C1ED8: @ 0x082C1ED8
 	.if (. - gText_Rom_2C1ED8) < 0xa
 	.space 0xa - (. - gText_Rom_2C1ED8)
 	.endif
-	.incbin "baserom.gba", 0x2c1ee2, 0x2
+	.space 0x2, 0x00
 
 	@ asm/union_room.s:11199 sub_08017CDC
 	.globl gText_Rom_2C1EE4
@@ -131,7 +131,7 @@ gText_Rom_2C1EE4: @ 0x082C1EE4
 	.if (. - gText_Rom_2C1EE4) < 0xa
 	.space 0xa - (. - gText_Rom_2C1EE4)
 	.endif
-	.incbin "baserom.gba", 0x2c1eee, 0x2
+	.space 0x2, 0x00
 
 	@ asm/union_room.s:11199 sub_08017CDC
 	.globl gText_Rom_2C1EF0
@@ -143,7 +143,7 @@ gText_Rom_2C1EF0: @ 0x082C1EF0
 	.if (. - gText_Rom_2C1EF0) < 0xa
 	.space 0xa - (. - gText_Rom_2C1EF0)
 	.endif
-	.incbin "baserom.gba", 0x2c1efa, 0x2
+	.space 0x2, 0x00
 
 	@ asm/union_room.s:11199 sub_08017CDC
 	.globl gText_Rom_2C1EFC
@@ -155,10 +155,14 @@ gText_Rom_2C1EFC: @ 0x082C1EFC
 	.if (. - gText_Rom_2C1EFC) < 0xa
 	.space 0xa - (. - gText_Rom_2C1EFC)
 	.endif
-	.incbin "baserom.gba", 0x2c1f06, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_82C1F08
 gUnknown_82C1F08: @ 0x082C1F08
-	.incbin "baserom.gba", 0x2c1f08, 0x14
+	.4byte gText_Rom_2C1ECC
+	.4byte gText_Rom_2C1ED8
+	.4byte gText_Rom_2C1EE4
+	.4byte gText_Rom_2C1EF0
+	.4byte gText_Rom_2C1EFC
 	.globl gUnknown_82C1F1C
 gUnknown_82C1F1C: @ 0x082C1F1C
 	.incbin "baserom.gba", 0x2c1f1c, 0x38
@@ -304,5 +308,5 @@ gText_Rom_2C2530: @ 0x082C2530
 	.if (. - gText_Rom_2C2530) < 0x5
 	.space 0x5 - (. - gText_Rom_2C2530)
 	.endif
-	.incbin "baserom.gba", 0x2c2535, 0x3
+	.space 0x3, 0x00
 

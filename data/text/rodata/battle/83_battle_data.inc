@@ -13,7 +13,9 @@ gUnknown_85467C1: @ 0x085467C1
 	.incbin "baserom.gba", 0x5467c1, 0x3
 	.globl gUnknown_85467C4
 gUnknown_85467C4: @ 0x085467C4
-	.incbin "baserom.gba", 0x5467c4, 0xc
+	.4byte gText_Rom_5CC367
+	.4byte gText_Rom_5CC370
+	.4byte gText_Rom_5CC367
 	.globl gUnknown_85467D0
 gUnknown_85467D0: @ 0x085467D0
 	.incbin "baserom.gba", 0x5467d0, 0x6
@@ -263,7 +265,9 @@ gUnknown_8555BDC: @ 0x08555BDC
 	.incbin "baserom.gba", 0x555bdc, 0x8b8
 	.globl gUnknown_8556494
 gUnknown_8556494: @ 0x08556494
-	.incbin "baserom.gba", 0x556494, 0xc
+	.4byte MonPlaceChange_Move
+	.4byte MonPlaceChange_Place
+	.4byte MonPlaceChange_Shift
 	.globl gUnknown_85564A0
 gUnknown_85564A0: @ 0x085564A0
 	.incbin "baserom.gba", 0x5564a0, 0x18

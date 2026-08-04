@@ -135,5 +135,5 @@ gText_Rom_5DD4F5: @ 0x085DD4F5
 	.if (. - gText_Rom_5DD4F5) < 0x6
 	.space 0x6 - (. - gText_Rom_5DD4F5)
 	.endif
-	.incbin "baserom.gba", 0x5dd4fb, 0x1
+	.space 0x1, 0x00
 

@@ -158,10 +158,17 @@ gText_Rom_4E8BEE: @ 0x084E8BEE
 	.if (. - gText_Rom_4E8BEE) < 0xc
 	.space 0xc - (. - gText_Rom_4E8BEE)
 	.endif
-	.incbin "baserom.gba", 0x4e8bfa, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_84E8BFC
 gUnknown_84E8BFC: @ 0x084E8BFC
-	.incbin "baserom.gba", 0x4e8bfc, 0x20
+	.4byte gText_Rom_4E8BA8
+	.4byte gText_Rom_4E8BB2
+	.4byte gText_Rom_4E8BBC
+	.4byte gText_Rom_4E8BC6
+	.4byte gText_Rom_4E8BD0
+	.4byte gText_Rom_4E8BDA
+	.4byte gText_Rom_4E8BE4
+	.4byte gText_Rom_4E8BEE
 	.globl gUnknown_84E8C1C
 gUnknown_84E8C1C: @ 0x084E8C1C
 	.incbin "baserom.gba", 0x4e8c1c, 0x8

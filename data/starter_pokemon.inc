@@ -16,4 +16,4 @@ gStarterPokemonTable:
 	.hword SPECIES_MUDKIP   @ 2: ミズゴロウ (みず)
 
 @ 元の0x08590C0E〜0x08590C0Fを保持し、ブロック全体を8バイトにする。
-	.incbin "baserom.gba", 0x590c0e, 0x2
+	.space 0x2, 0x00

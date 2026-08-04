@@ -341,46 +341,176 @@ gUnknown_85A83D8: @ 0x085A83D8
 	.incbin "baserom.gba", 0x5a83d8, 0x20
 	.globl gUnknown_85A83F8
 gUnknown_85A83F8: @ 0x085A83F8
-	.incbin "baserom.gba", 0x5a83f8, 0xa8
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
+	.4byte Phase1Task_TransitionAll
 	.globl gUnknown_85A84A0
 gUnknown_85A84A0: @ 0x085A84A0
-	.incbin "baserom.gba", 0x5a84a0, 0xa8
+	.4byte Phase2Task_30
+	.4byte Phase2Task_31
+	.4byte Phase2Task_32
+	.4byte Phase2Task_33
+	.4byte Phase2Task_GridSquares
+	.4byte Phase2Task_Groudon
+	.4byte Phase2Task_Kyogre
+	.4byte Phase2Task_MugShotTransition
+	.4byte Phase2Task_Rayquaza
+	.4byte Phase2Task_ShredSplit
+	.4byte Phase2Task_Shuffle
+	.4byte Phase2Task_Slice
+	.4byte Phase2Task_Sidney
+	.4byte Phase2Task_Phoebe
+	.4byte Phase2Task_Glacia
+	.4byte Phase2Task_Drake
+	.4byte Phase2Task_Champion
+	.4byte Phase2Task_Aqua
+	.4byte Phase2Task_BigPokeball
+	.4byte Phase2Task_Blackhole1
+	.4byte Phase2Task_Blackhole2
+	.4byte Phase2Task_Blur
+	.4byte Phase2Task_Clockwise_BlackFade
+	.4byte Phase2Task_Ripple
+	.4byte Phase2Task_Shards
+	.4byte Phase2Task_RectangularSpiral
+	.4byte Phase2Task_Regice
+	.4byte Phase2Task_Regirock
+	.4byte Phase2Task_Registeel
+	.4byte Phase2Task_Swirl
+	.4byte Phase2Task_Wave
+	.4byte Phase2Task_WhiteFade
+	.4byte TransitionPhase1_Task_RunFuncs
+	.4byte Task_BattleTransitionMain
+	.4byte Phase2Task_34
+	.4byte Phase2Task_35
+	.4byte Phase2Task_36
+	.4byte Phase2Task_37
+	.4byte Phase2Task_38
+	.4byte Phase2Task_39
+	.4byte Phase2Task_40
+	.4byte Phase2Task_41
 	.globl gUnknown_85A8548
 gUnknown_85A8548: @ 0x085A8548
-	.incbin "baserom.gba", 0x5a8548, 0x10
+	.4byte Transition_Phase1
+	.4byte Transition_WaitForPhase1
+	.4byte Transition_Phase2
+	.4byte Transition_WaitForPhase2
 	.globl gUnknown_85A8558
 gUnknown_85A8558: @ 0x085A8558
-	.incbin "baserom.gba", 0x5a8558, 0xc
+	.4byte Phase2_Blur_Func1
+	.4byte Phase2_Blur_Func2
+	.4byte Phase2_Blur_Func3
 	.globl gUnknown_85A8564
 gUnknown_85A8564: @ 0x085A8564
-	.incbin "baserom.gba", 0x5a8564, 0x8
+	.4byte Phase2_Swirl_Func1
+	.4byte Phase2_Swirl_Func2
 	.globl gUnknown_85A856C
 gUnknown_85A856C: @ 0x085A856C
-	.incbin "baserom.gba", 0x5a856c, 0x8
+	.4byte Phase2_Shuffle_Func1
+	.4byte Phase2_Shuffle_Func2
 	.globl gUnknown_85A8574
 gUnknown_85A8574: @ 0x085A8574
-	.incbin "baserom.gba", 0x5a8574, 0x1c
+	.4byte Phase2_Aqua_Func1
+	.4byte Phase2_Aqua_Func2
+	.4byte Phase2_BigPokeball_Func3
+	.4byte Phase2_BigPokeball_Func4
+	.4byte Phase2_BigPokeball_Func5
+	.4byte Phase2_FramesCountdown
+	.4byte Phase2_BigPokeball_Func6
 	.globl gUnknown_85A8590
 gUnknown_85A8590: @ 0x085A8590
-	.incbin "baserom.gba", 0x5a8590, 0x1c
+	.4byte Phase2_Magma_Func1
+	.4byte Phase2_Magma_Func2
+	.4byte Phase2_BigPokeball_Func3
+	.4byte Phase2_BigPokeball_Func4
+	.4byte Phase2_BigPokeball_Func5
+	.4byte Phase2_FramesCountdown
+	.4byte Phase2_BigPokeball_Func6
 	.globl gUnknown_85A85AC
 gUnknown_85A85AC: @ 0x085A85AC
-	.incbin "baserom.gba", 0x5a85ac, 0x18
+	.4byte Phase2_BigPokeball_Func1
+	.4byte Phase2_BigPokeball_Func2
+	.4byte Phase2_BigPokeball_Func3
+	.4byte Phase2_BigPokeball_Func4
+	.4byte Phase2_BigPokeball_Func5
+	.4byte Phase2_BigPokeball_Func6
 	.globl gUnknown_85A85C4
 gUnknown_85A85C4: @ 0x085A85C4
-	.incbin "baserom.gba", 0x5a85c4, 0x18
+	.4byte Phase2_Regi_Func1
+	.4byte Phase2_Regice_Func2
+	.4byte Phase2_BigPokeball_Func3
+	.4byte Phase2_BigPokeball_Func4
+	.4byte Phase2_BigPokeball_Func5
+	.4byte Phase2_BigPokeball_Func6
 	.globl gUnknown_85A85DC
 gUnknown_85A85DC: @ 0x085A85DC
-	.incbin "baserom.gba", 0x5a85dc, 0x18
+	.4byte Phase2_Regi_Func1
+	.4byte Phase2_Registeel_Func2
+	.4byte Phase2_BigPokeball_Func3
+	.4byte Phase2_BigPokeball_Func4
+	.4byte Phase2_BigPokeball_Func5
+	.4byte Phase2_BigPokeball_Func6
 	.globl gUnknown_85A85F4
 gUnknown_85A85F4: @ 0x085A85F4
-	.incbin "baserom.gba", 0x5a85f4, 0x18
+	.4byte Phase2_Regi_Func1
+	.4byte Phase2_Regirock_Func2
+	.4byte Phase2_BigPokeball_Func3
+	.4byte Phase2_BigPokeball_Func4
+	.4byte Phase2_BigPokeball_Func5
+	.4byte Phase2_BigPokeball_Func6
 	.globl gUnknown_85A860C
 gUnknown_85A860C: @ 0x085A860C
-	.incbin "baserom.gba", 0x5a860c, 0x20
+	.4byte Phase2_WeatherTrio_Func1
+	.4byte Phase2_WaitPaletteFade
+	.4byte Phase2_Kyogre_Func3
+	.4byte Phase2_Kyogre_Func4
+	.4byte Phase2_Kyogre_Func5
+	.4byte Phase2_FramesCountdown
+	.4byte Phase2_WeatherDuo_Func6
+	.4byte Phase2_WeatherDuo_Func7
 	.globl gUnknown_85A862C
 gUnknown_85A862C: @ 0x085A862C
-	.incbin "baserom.gba", 0x5a862c, 0xc
+	.4byte Phase2_PokeballsTrail_Func1
+	.4byte Phase2_PokeballsTrail_Func2
+	.4byte Phase2_PokeballsTrail_Func3
 	.globl gUnknown_85A8638
 gUnknown_85A8638: @ 0x085A8638
 	.incbin "baserom.gba", 0x5a8638, 0x4
@@ -392,16 +522,34 @@ gUnknown_85A8646: @ 0x085A8646
 	.incbin "baserom.gba", 0x5a8646, 0x6
 	.globl gUnknown_85A864C
 gUnknown_85A864C: @ 0x085A864C
-	.incbin "baserom.gba", 0x5a864c, 0x1c
+	.4byte Phase2_Clockwise_BlackFade_Func1
+	.4byte Phase2_Clockwise_BlackFade_Func2
+	.4byte Phase2_Clockwise_BlackFade_Func3
+	.4byte Phase2_Clockwise_BlackFade_Func4
+	.4byte Phase2_Clockwise_BlackFade_Func5
+	.4byte Phase2_Clockwise_BlackFade_Func6
+	.4byte Phase2_Clockwise_BlackFade_Func7
 	.globl gUnknown_85A8668
 gUnknown_85A8668: @ 0x085A8668
-	.incbin "baserom.gba", 0x5a8668, 0x8
+	.4byte Phase2_Ripple_Func1
+	.4byte Phase2_Ripple_Func2
 	.globl gUnknown_85A8670
 gUnknown_85A8670: @ 0x085A8670
-	.incbin "baserom.gba", 0x5a8670, 0xc
+	.4byte Phase2_Wave_Func1
+	.4byte Phase2_Wave_Func2
+	.4byte Phase2_Wave_Func3
 	.globl gUnknown_85A867C
 gUnknown_85A867C: @ 0x085A867C
-	.incbin "baserom.gba", 0x5a867c, 0x28
+	.4byte Phase2_Mugshot_Func1
+	.4byte Phase2_Mugshot_Func2
+	.4byte Phase2_Mugshot_Func3
+	.4byte Phase2_Mugshot_Func4
+	.4byte Phase2_Mugshot_Func5
+	.4byte Phase2_Mugshot_Func6
+	.4byte Phase2_Mugshot_Func7
+	.4byte Phase2_Mugshot_Func8
+	.4byte Phase2_Mugshot_Func9
+	.4byte Phase2_Mugshot_Func10
 	.globl gUnknown_85A86A4
 gUnknown_85A86A4: @ 0x085A86A4
 	.incbin "baserom.gba", 0x5a86a4, 0x6
@@ -413,7 +561,13 @@ gUnknown_85A86BE: @ 0x085A86BE
 	.incbin "baserom.gba", 0x5a86be, 0x16
 	.globl gUnknown_85A86D4
 gUnknown_85A86D4: @ 0x085A86D4
-	.incbin "baserom.gba", 0x5a86d4, 0x1c
+	.4byte sub_08148468
+	.4byte sub_0814846C
+	.4byte sub_081484B8
+	.4byte sub_081484EC
+	.4byte sub_08148468
+	.4byte sub_08148518
+	.4byte sub_08148468
 	.globl gUnknown_85A86F0
 gUnknown_85A86F0: @ 0x085A86F0
 	.incbin "baserom.gba", 0x5a86f0, 0x4
@@ -422,10 +576,15 @@ gUnknown_85A86F4: @ 0x085A86F4
 	.incbin "baserom.gba", 0x5a86f4, 0x4
 	.globl gUnknown_85A86F8
 gUnknown_85A86F8: @ 0x085A86F8
-	.incbin "baserom.gba", 0x5a86f8, 0xc
+	.4byte Phase2_Slice_Func1
+	.4byte Phase2_Slice_Func2
+	.4byte Phase2_Slice_Func3
 	.globl gUnknown_85A8704
 gUnknown_85A8704: @ 0x085A8704
-	.incbin "baserom.gba", 0x5a8704, 0x10
+	.4byte Phase2_ShredSplit_Func1
+	.4byte Phase2_ShredSplit_Func2
+	.4byte Phase2_ShredSplit_Func3
+	.4byte Phase2_ShredSplit_Func4
 	.globl gUnknown_85A8714
 gUnknown_85A8714: @ 0x085A8714
 	.incbin "baserom.gba", 0x5a8714, 0x2
@@ -434,10 +593,13 @@ gUnknown_85A8716: @ 0x085A8716
 	.incbin "baserom.gba", 0x5a8716, 0x6
 	.globl gUnknown_85A871C
 gUnknown_85A871C: @ 0x085A871C
-	.incbin "baserom.gba", 0x5a871c, 0xc
+	.4byte Phase2_Blackhole_Func1
+	.4byte Phase2_Blackhole1_Func2
+	.4byte Phase2_Blackhole1_Func3
 	.globl gUnknown_85A8728
 gUnknown_85A8728: @ 0x085A8728
-	.incbin "baserom.gba", 0x5a8728, 0x8
+	.4byte Phase2_Blackhole_Func1
+	.4byte Phase2_Blackhole2_Func2
 	.globl gUnknown_85A8730
 gUnknown_85A8730: @ 0x085A8730
 	.incbin "baserom.gba", 0x5a8730, 0x4
@@ -449,22 +611,49 @@ gUnknown_85A87E8: @ 0x085A87E8
 	.incbin "baserom.gba", 0x5a87e8, 0x8
 	.globl gUnknown_85A87F0
 gUnknown_85A87F0: @ 0x085A87F0
-	.incbin "baserom.gba", 0x5a87f0, 0x20
+	.4byte Phase2_WeatherTrio_Func1
+	.4byte Phase2_WaitPaletteFade
+	.4byte Phase2_Groudon_Func3
+	.4byte Phase2_Groudon_Func4
+	.4byte Phase2_Groudon_Func5
+	.4byte Phase2_FramesCountdown
+	.4byte Phase2_WeatherDuo_Func6
+	.4byte Phase2_WeatherDuo_Func7
 	.globl gUnknown_85A8810
 gUnknown_85A8810: @ 0x085A8810
-	.incbin "baserom.gba", 0x5a8810, 0x2c
+	.4byte Phase2_WeatherTrio_Func1
+	.4byte Phase2_WaitPaletteFade
+	.4byte Phase2_Rayquaza_Func3
+	.4byte Phase2_Rayquaza_Func4
+	.4byte Phase2_Rayquaza_Func5
+	.4byte Phase2_Rayquaza_Func6
+	.4byte Phase2_Rayquaza_Func7
+	.4byte Phase2_Rayquaza_Func8
+	.4byte Phase2_Rayquaza_Func9
+	.4byte Phase2_Blackhole1_Func2
+	.4byte Phase2_Blackhole1_Func3
 	.globl gUnknown_85A883C
 gUnknown_85A883C: @ 0x085A883C
-	.incbin "baserom.gba", 0x5a883c, 0x14
+	.4byte Phase2_WhiteFade_Func1
+	.4byte Phase2_WhiteFade_Func2
+	.4byte Phase2_WhiteFade_Func3
+	.4byte Phase2_WhiteFade_Func4
+	.4byte Phase2_WhiteFade_Func5
 	.globl gUnknown_85A8850
 gUnknown_85A8850: @ 0x085A8850
 	.incbin "baserom.gba", 0x5a8850, 0x10
 	.globl gUnknown_85A8860
 gUnknown_85A8860: @ 0x085A8860
-	.incbin "baserom.gba", 0x5a8860, 0xc
+	.4byte Phase2_GridSquares_Func1
+	.4byte Phase2_GridSquares_Func2
+	.4byte Phase2_GridSquares_Func3
 	.globl gUnknown_85A886C
 gUnknown_85A886C: @ 0x085A886C
-	.incbin "baserom.gba", 0x5a886c, 0x14
+	.4byte Phase2_Shards_Func1
+	.4byte Phase2_Shards_Func2
+	.4byte Phase2_Shards_Func3
+	.4byte Phase2_Shards_Func4
+	.4byte Phase2_Shards_Func5
 	.globl gUnknown_85A8880
 gUnknown_85A8880: @ 0x085A8880
 	.incbin "baserom.gba", 0x5a8880, 0x46
@@ -494,19 +683,38 @@ gUnknown_85A8F80: @ 0x085A8F80
 	.incbin "baserom.gba", 0x5a8f80, 0x500
 	.globl gUnknown_85A9480
 gUnknown_85A9480: @ 0x085A9480
-	.incbin "baserom.gba", 0x5a9480, 0x18
+	.4byte Phase2_29_Func1
+	.4byte Phase2_29_Func2
+	.4byte Phase2_BigPokeball_Func3
+	.4byte Phase2_BigPokeball_Func4
+	.4byte Phase2_BigPokeball_Func5
+	.4byte Phase2_BigPokeball_Func6
 	.globl gUnknown_85A9498
 gUnknown_85A9498: @ 0x085A9498
-	.incbin "baserom.gba", 0x5a9498, 0x10
+	.4byte Phase2_30_Func1
+	.4byte Phase2_30_Func2
+	.4byte Phase2_30_Func3
+	.4byte Phase2_30_Func4
 	.globl gUnknown_85A94A8
 gUnknown_85A94A8: @ 0x085A94A8
-	.incbin "baserom.gba", 0x5a94a8, 0x10
+	.4byte Phase2_31_Func1
+	.4byte Phase2_31_Func2
+	.4byte Phase2_31_Func3
+	.4byte Phase2_31_33_Func5
 	.globl gUnknown_85A94B8
 gUnknown_85A94B8: @ 0x085A94B8
-	.incbin "baserom.gba", 0x5a94b8, 0x14
+	.4byte Phase2_33_Func1
+	.4byte Phase2_33_Func2
+	.4byte Phase2_33_Func3
+	.4byte Phase2_33_Func4
+	.4byte Phase2_31_33_Func5
 	.globl gUnknown_85A94CC
 gUnknown_85A94CC: @ 0x085A94CC
-	.incbin "baserom.gba", 0x5a94cc, 0x14
+	.4byte Phase2_32_Func1
+	.4byte Phase2_32_Func2
+	.4byte Phase2_32_Func3
+	.4byte Phase2_32_Func4
+	.4byte Phase2_32_Func5
 	.globl gUnknown_85A94E0
 gUnknown_85A94E0: @ 0x085A94E0
 	.incbin "baserom.gba", 0x5a94e0, 0x23

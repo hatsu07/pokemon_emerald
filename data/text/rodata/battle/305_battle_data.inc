@@ -68,7 +68,7 @@ gText_Rom_876035: @ 0x08876035
 	.if (. - gText_Rom_876035) < 0x4
 	.space 0x4 - (. - gText_Rom_876035)
 	.endif
-	.incbin "baserom.gba", 0x876039, 0x5
+	.space 0x5, 0xB0
 
 	@ src/data/easy_chat/easy_chat_group_voices.h:40 easy_chat_group_voices_line_40
 	.globl gText_Rom_87603E
@@ -80,7 +80,7 @@ gText_Rom_87603E: @ 0x0887603E
 	.if (. - gText_Rom_87603E) < 0x4
 	.space 0x4 - (. - gText_Rom_87603E)
 	.endif
-	.incbin "baserom.gba", 0x876042, 0x5
+	.space 0x5, 0xB0
 
 	@ src/data/easy_chat/easy_chat_group_voices.h:40 easy_chat_group_voices_line_40
 	.globl gText_Rom_876047
@@ -170,10 +170,10 @@ gUnknown_890F058: @ 0x0890F058
 	.incbin "baserom.gba", 0x90f058, 0x104
 	.globl gUnknown_890F15C
 gUnknown_890F15C: @ 0x0890F15C
-	.incbin "baserom.gba", 0x90f15c, 0x10
+	.space 0x10, 0x20
 	.globl gUnknown_890F16C
 gUnknown_890F16C: @ 0x0890F16C
-	.incbin "baserom.gba", 0x90f16c, 0x10
+	.space 0x10, 0x30
 	.globl gUnknown_890F17C
 gUnknown_890F17C: @ 0x0890F17C
 	.incbin "baserom.gba", 0x90f17c, 0x4
@@ -239,4 +239,4 @@ gUnknown_8912454: @ 0x08912454
 	.incbin "baserom.gba", 0x912454, 0x348c
 	.globl gUnknown_89158E0
 gUnknown_89158E0: @ 0x089158E0
-	.incbin "baserom.gba", 0x9158e0, 0x1EA720
+	.space 0x1EA720, 0xFF

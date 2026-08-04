@@ -223,7 +223,7 @@ gText_Rom_30F860: @ 0x0830F860
 	.if (. - gText_Rom_30F860) < 0x2
 	.space 0x2 - (. - gText_Rom_30F860)
 	.endif
-	.incbin "baserom.gba", 0x30f862, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_830F864
 gUnknown_830F864: @ 0x0830F864
 	.incbin "baserom.gba", 0x30f864, 0xc
@@ -351,7 +351,7 @@ gText_Rom_30FC10: @ 0x0830FC10
 	.if (. - gText_Rom_30FC10) < 0x4
 	.space 0x4 - (. - gText_Rom_30FC10)
 	.endif
-	.incbin "baserom.gba", 0x30fc14, 0x1
+	.space 0x1, 0x00
 
 	@ src/berry_blender.c:919 berry_blender_line_919 (+2 aliases)
 	.globl gText_Rom_30FC15
@@ -363,7 +363,7 @@ gText_Rom_30FC15: @ 0x0830FC15
 	.if (. - gText_Rom_30FC15) < 0x4
 	.space 0x4 - (. - gText_Rom_30FC15)
 	.endif
-	.incbin "baserom.gba", 0x30fc19, 0x1
+	.space 0x1, 0x00
 
 	@ src/berry_blender.c:919 berry_blender_line_919 (+3 aliases)
 	.globl gText_Rom_30FC1A
@@ -375,7 +375,7 @@ gText_Rom_30FC1A: @ 0x0830FC1A
 	.if (. - gText_Rom_30FC1A) < 0x4
 	.space 0x4 - (. - gText_Rom_30FC1A)
 	.endif
-	.incbin "baserom.gba", 0x30fc1e, 0x1
+	.space 0x1, 0x00
 
 	@ src/berry_blender.c:919 berry_blender_line_919 (+2 aliases)
 	.globl gText_Rom_30FC1F
@@ -387,7 +387,7 @@ gText_Rom_30FC1F: @ 0x0830FC1F
 	.if (. - gText_Rom_30FC1F) < 0x4
 	.space 0x4 - (. - gText_Rom_30FC1F)
 	.endif
-	.incbin "baserom.gba", 0x30fc23, 0x1
+	.space 0x1, 0x00
 
 	@ src/berry_blender.c:919 berry_blender_line_919 (+2 aliases)
 	.globl gText_Rom_30FC24
@@ -434,7 +434,7 @@ gText_Rom_30FC50: @ 0x0830FC50
 	.if (. - gText_Rom_30FC50) < 0xd
 	.space 0xd - (. - gText_Rom_30FC50)
 	.endif
-	.incbin "baserom.gba", 0x30fc5d, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_830FC60
 gUnknown_830FC60: @ 0x0830FC60
 	.incbin "baserom.gba", 0x30fc60, 0x8
@@ -455,10 +455,22 @@ gUnknown_830FD08: @ 0x0830FD08
 	.incbin "baserom.gba", 0x30fd08, 0xc
 	.globl gUnknown_830FD14
 gUnknown_830FD14: @ 0x0830FD14
-	.incbin "baserom.gba", 0x30fd14, 0xc
+	.4byte MovementEventModeCB_Normal
+	.4byte MovementEventModeCB_Ignored
+	.4byte MovementEventModeCB_Normal_2
 	.globl gUnknown_830FD20
 gUnknown_830FD20: @ 0x0830FD20
-	.incbin "baserom.gba", 0x30fd20, 0x2c
+	.4byte FacingHandler_DoNothing
+	.4byte FacingHandler_DpadMovement
+	.4byte FacingHandler_DpadMovement
+	.4byte FacingHandler_DpadMovement
+	.4byte FacingHandler_DpadMovement
+	.4byte FacingHandler_DoNothing
+	.4byte FacingHandler_DoNothing
+	.4byte FacingHandler_ForcedFacingChange
+	.4byte FacingHandler_ForcedFacingChange
+	.4byte FacingHandler_ForcedFacingChange
+	.4byte FacingHandler_ForcedFacingChange
 	.globl gUnknown_830FD4C
 gUnknown_830FD4C: @ 0x0830FD4C
 	.incbin "baserom.gba", 0x30fd4c, 0xa8348

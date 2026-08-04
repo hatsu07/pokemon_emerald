@@ -10,10 +10,10 @@ gText_Rom_5CA3CF: @ 0x085CA3CF
 	.endif
 	.globl gUnknown_85CA3D8
 gUnknown_85CA3D8: @ 0x085CA3D8
-	.incbin "baserom.gba", 0x5ca3d8, 0x1
+	.space 0x1, 0x15
 	.globl gUnknown_85CA3D9
 gUnknown_85CA3D9: @ 0x085CA3D9
-	.incbin "baserom.gba", 0x5ca3d9, 0x1
+	.space 0x1, 0xFF
 
 	@ src/data/easy_chat/easy_chat_group_events.h:2 gEasyChatWord_Events (+3 aliases)
 	.globl gText_Rom_5CA3DA

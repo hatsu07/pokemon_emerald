@@ -3682,15 +3682,64 @@ gMatchCallTexts: @ 0x085D6E34
 	.if (. - gMatchCallTexts) != (205 * 8)
 	.error "Match Call text table has the wrong size"
 	.endif
+	@ Entry-group aliases within gMatchCallTexts. Each entry is 8 bytes.
+	.globl gMatchCallWildBattleTexts
+	.set gMatchCallWildBattleTexts, gMatchCallTexts + (0 * 8)
+	.globl gMatchCallNegativeBattleTexts
+	.set gMatchCallNegativeBattleTexts, gMatchCallTexts + (15 * 8)
+	.globl gMatchCallPositiveBattleTexts
+	.set gMatchCallPositiveBattleTexts, gMatchCallTexts + (29 * 8)
+	.globl gMatchCallSameRouteBattleRequestTexts
+	.set gMatchCallSameRouteBattleRequestTexts, gMatchCallTexts + (43 * 8)
+	.globl gMatchCallDifferentRouteBattleRequestTexts
+	.set gMatchCallDifferentRouteBattleRequestTexts, gMatchCallTexts + (57 * 8)
+	.globl gMatchCallPersonalizedTexts
+	.set gMatchCallPersonalizedTexts, gMatchCallTexts + (71 * 8)
+	.globl gMatchCallBattleFrontierStreakTexts
+	.set gMatchCallBattleFrontierStreakTexts, gMatchCallTexts + (135 * 8)
+	.globl gMatchCallBattleFrontierRecordStreakTexts
+	.set gMatchCallBattleFrontierRecordStreakTexts, gMatchCallTexts + (149 * 8)
+	.globl gMatchCallBattleDomeTexts
+	.set gMatchCallBattleDomeTexts, gMatchCallTexts + (163 * 8)
+	.globl gMatchCallBattlePikeTexts
+	.set gMatchCallBattlePikeTexts, gMatchCallTexts + (177 * 8)
+	.globl gMatchCallBattlePyramidTexts
+	.set gMatchCallBattlePyramidTexts, gMatchCallTexts + (191 * 8)
+
+	.globl gMatchCallBattleTopics
 	.globl gUnknown_85D749C
+gMatchCallBattleTopics:
 gUnknown_85D749C: @ 0x085D749C
-	.incbin "baserom.gba", 0x5d749c, 0xc
+	.4byte gMatchCallWildBattleTexts
+	.4byte gMatchCallNegativeBattleTexts
+	.4byte gMatchCallPositiveBattleTexts
+	.if (. - gMatchCallBattleTopics) != (3 * 4)
+	.error "Match Call battle topic table has the wrong size"
+	.endif
+
+	.globl gMatchCallBattleRequestTopics
 	.globl gUnknown_85D74A8
+gMatchCallBattleRequestTopics:
 gUnknown_85D74A8: @ 0x085D74A8
-	.incbin "baserom.gba", 0x5d74a8, 0x8
+	.4byte gMatchCallSameRouteBattleRequestTexts
+	.4byte gMatchCallDifferentRouteBattleRequestTexts
+	.if (. - gMatchCallBattleRequestTopics) != (2 * 4)
+	.error "Match Call battle request topic table has the wrong size"
+	.endif
+
+	.globl gMatchCallGeneralTopics
 	.globl gUnknown_85D74B0
+gMatchCallGeneralTopics:
 gUnknown_85D74B0: @ 0x085D74B0
-	.incbin "baserom.gba", 0x5d74b0, 0x18
+	.4byte gMatchCallPersonalizedTexts
+	.4byte gMatchCallBattleFrontierStreakTexts
+	.4byte gMatchCallBattleFrontierRecordStreakTexts
+	.4byte gMatchCallBattleDomeTexts
+	.4byte gMatchCallBattlePikeTexts
+	.4byte gMatchCallBattlePyramidTexts
+	.if (. - gMatchCallGeneralTopics) != (6 * 4)
+	.error "Match Call general topic table has the wrong size"
+	.endif
 	.globl gUnknown_85D74C8
 gUnknown_85D74C8: @ 0x085D74C8
 	.incbin "baserom.gba", 0x5d74c8, 0x20
@@ -3705,7 +3754,7 @@ gUnknown_85D7608: @ 0x085D7608
 	.incbin "baserom.gba", 0x5d7608, 0x3e4
 	.globl gUnknown_85D79EC
 gUnknown_85D79EC: @ 0x085D79EC
-	.incbin "baserom.gba", 0x5d79ec, 0x2
+	.space 0x2, 0xB0
 
 	@ src/match_call.c:1204 sText_PokenavCallEllipsis
 	.globl gText_Rom_5D79EE
@@ -3719,7 +3768,14 @@ gText_Rom_5D79EE: @ 0x085D79EE
 	.endif
 	.globl gUnknown_85D79F4
 gUnknown_85D79F4: @ 0x085D79F4
-	.incbin "baserom.gba", 0x5d79f4, 0x20
+	.4byte LoadMatchCallWindowGfx
+	.4byte MoveMatchCallWindowToVram
+	.4byte PrintMatchCallIntroEllipsis
+	.4byte sub_08195EB0
+	.4byte sub_08195ED8
+	.4byte sub_08195F30
+	.4byte sub_08195F90
+	.4byte sub_08195FF0
 	.globl gUnknown_85D7A14
 gUnknown_85D7A14: @ 0x085D7A14
 	.incbin "baserom.gba", 0x5d7a14, 0x8
@@ -3734,13 +3790,39 @@ gUnknown_85D7A54: @ 0x085D7A54
 	.incbin "baserom.gba", 0x5d7a54, 0x30
 	.globl gUnknown_85D7A84
 gUnknown_85D7A84: @ 0x085D7A84
-	.incbin "baserom.gba", 0x5d7a84, 0x1c
+	.4byte gText_Rom_5CC423
+	.4byte gText_Rom_5CC42A
+	.4byte gText_Rom_5CC431
+	.4byte gText_Rom_5CC442
+	.4byte gText_Rom_5CC44A
+	.4byte gText_Rom_5CC438
+	.4byte gText_Rom_5CC452
 	.globl gUnknown_85D7AA0
 gUnknown_85D7AA0: @ 0x085D7AA0
 	.incbin "baserom.gba", 0x5d7aa0, 0x10
 	.globl gUnknown_85D7AB0
 gUnknown_85D7AB0: @ 0x085D7AB0
-	.incbin "baserom.gba", 0x5d7ab0, 0x54
+	.4byte gText_Rom_262E5F
+	.4byte gText_Rom_262E81
+	.4byte gText_Rom_262EA6
+	.4byte gText_Rom_262ECF
+	.4byte gText_Rom_262EF5
+	.4byte gText_Rom_262F18
+	.4byte gText_Rom_262F3F
+	.4byte gText_Rom_262F61
+	.4byte gText_Rom_262F8A
+	.4byte gText_Rom_262FAD
+	.4byte gText_Rom_262FE1
+	.4byte gText_Rom_26300C
+	.4byte gText_Rom_263032
+	.4byte gText_Rom_263050
+	.4byte gText_Rom_263072
+	.4byte gText_Rom_263095
+	.4byte gText_Rom_2630C7
+	.4byte gText_Rom_2630F0
+	.4byte gText_Rom_26310C
+	.4byte gText_Rom_26312D
+	.4byte gText_Rom_26314F
 	.globl gUnknown_85D7B04
 gUnknown_85D7B04: @ 0x085D7B04
 	.incbin "baserom.gba", 0x5d7b04, 0x20
@@ -3766,7 +3848,7 @@ gText_Rom_5D7B40: @ 0x085D7B40
 	.endif
 	.globl gText_Rom_5D7B43
 	.set gText_Rom_5D7B43, gText_Rom_5D7B40 + 0x3
-	.incbin "baserom.gba", 0x5d7b47, 0x1
+	.space 0x1, 0x00
 	.globl gUnknown_85D7B48
 gUnknown_85D7B48: @ 0x085D7B48
 	.incbin "baserom.gba", 0x5d7b48, 0x20

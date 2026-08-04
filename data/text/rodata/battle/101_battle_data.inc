@@ -689,7 +689,7 @@ gText_Rom_579ECF: @ 0x08579ECF
 	.if (. - gText_Rom_579ECF) < 0x6
 	.space 0x6 - (. - gText_Rom_579ECF)
 	.endif
-	.incbin "baserom.gba", 0x579ed5, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_8579ED8
 gUnknown_8579ED8: @ 0x08579ED8
 	.incbin "baserom.gba", 0x579ed8, 0x58
@@ -722,7 +722,7 @@ gText_Rom_57AA98: @ 0x0857AA98
 	.if (. - gText_Rom_57AA98) < 0x5
 	.space 0x5 - (. - gText_Rom_57AA98)
 	.endif
-	.incbin "baserom.gba", 0x57aa9d, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_857AAA0
 gUnknown_857AAA0: @ 0x0857AAA0
 	.incbin "baserom.gba", 0x57aaa0, 0x8
@@ -746,10 +746,24 @@ gUnknown_857AC08: @ 0x0857AC08
 	.incbin "baserom.gba", 0x57ac08, 0xc
 	.globl gUnknown_857AC14
 gUnknown_857AC14: @ 0x0857AC14
-	.incbin "baserom.gba", 0x57ac14, 0x20
+	.4byte gText_Rom_2593C5
+	.4byte gText_Rom_2593CF
+	.4byte gText_Rom_2593D9
+	.4byte gText_Rom_2593E4
+	.4byte gText_Rom_2593F0
+	.4byte gText_Rom_2593FB
+	.4byte gText_Rom_259407
+	.4byte gText_Rom_259412
 	.globl gUnknown_857AC34
 gUnknown_857AC34: @ 0x0857AC34
-	.incbin "baserom.gba", 0x57ac34, 0x20
+	.4byte gText_Rom_25942A
+	.4byte gText_Rom_259445
+	.4byte gText_Rom_259461
+	.4byte gText_Rom_25947C
+	.4byte gText_Rom_25949E
+	.4byte gText_Rom_2594C5
+	.4byte gText_Rom_2594DF
+	.4byte gText_Rom_2594F8
 	.globl gUnknown_857AC54
 gUnknown_857AC54: @ 0x0857AC54
 	.incbin "baserom.gba", 0x57ac54, 0x18
@@ -797,7 +811,8 @@ gUnknown_857B0F4: @ 0x0857B0F4
 	.incbin "baserom.gba", 0x57b0f4, 0x10
 	.globl gUnknown_857B104
 gUnknown_857B104: @ 0x0857B104
-	.incbin "baserom.gba", 0x57b104, 0x8
+	.4byte gDummySpriteAffineAnimTable
+	.4byte SpriteCallbackDummy
 	.globl gUnknown_857B10C
 gUnknown_857B10C: @ 0x0857B10C
 	.incbin "baserom.gba", 0x57b10c, 0xd0

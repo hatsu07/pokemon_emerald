@@ -32,22 +32,43 @@ gUnknown_8564618: @ 0x08564618
 	.incbin "baserom.gba", 0x564618, 0x8
 	.globl gUnknown_8564620
 gUnknown_8564620: @ 0x08564620
-	.incbin "baserom.gba", 0x564620, 0x1c
+	.4byte gText_Rom_5CB194
+	.4byte gText_Rom_5CAC23
+	.4byte gText_Rom_5CADF1
+	.4byte gText_Rom_5CAE0B
+	.4byte gText_Rom_5CADF9
+	.4byte gText_Rom_5CAE02
+	.4byte gText_Rom_5C93C8
 	.globl gUnknown_856463C
 gUnknown_856463C: @ 0x0856463C
-	.incbin "baserom.gba", 0x56463c, 0x10
+	.4byte gText_Rom_247BB3
+	.4byte gText_Rom_247BD5
+	.4byte gText_Rom_247BF7
+	.4byte gText_Rom_24809D
 	.globl gUnknown_856464C
 gUnknown_856464C: @ 0x0856464C
-	.incbin "baserom.gba", 0x56464c, 0x10
+	.4byte gText_Rom_248014
+	.4byte gText_Rom_24802D
+	.4byte gText_Rom_248066
+	.4byte gText_Rom_24809D
 	.globl gUnknown_856465C
 gUnknown_856465C: @ 0x0856465C
-	.incbin "baserom.gba", 0x56465c, 0x10
+	.4byte gText_Rom_248014
+	.4byte gText_Rom_24802D
+	.4byte gText_Rom_248046
+	.4byte gText_Rom_24809D
 	.globl gUnknown_856466C
 gUnknown_856466C: @ 0x0856466C
-	.incbin "baserom.gba", 0x56466c, 0x14
+	.4byte gText_Rom_248014
+	.4byte gText_Rom_24802D
+	.4byte gText_Rom_248066
+	.4byte gText_Rom_248046
+	.4byte gText_Rom_24809D
 	.globl gUnknown_8564680
 gUnknown_8564680: @ 0x08564680
-	.incbin "baserom.gba", 0x564680, 0xc
+	.4byte gText_Rom_247BB3
+	.4byte gText_Rom_247BD5
+	.4byte gText_Rom_24809D
 	.globl gUnknown_856468C
 gUnknown_856468C: @ 0x0856468C
 	.incbin "baserom.gba", 0x56468c, 0xb8c
@@ -71,7 +92,10 @@ gUnknown_85656C8: @ 0x085656C8
 	.incbin "baserom.gba", 0x5656c8, 0x190
 	.globl gUnknown_8565858
 gUnknown_8565858: @ 0x08565858
-	.incbin "baserom.gba", 0x565858, 0x10
+	.4byte gText_Rom_243E08
+	.4byte gText_Rom_243E2A
+	.4byte gText_Rom_243E4C
+	.4byte gText_Rom_243E80
 
 	@ src/naming_screen.c:2607 naming_screen_line_2607
 	.globl gText_Rom_565868
@@ -140,7 +164,10 @@ gUnknown_8565A48: @ 0x08565A48
 	.incbin "baserom.gba", 0x565a48, 0x8
 	.globl gUnknown_8565A50
 gUnknown_8565A50: @ 0x08565A50
-	.incbin "baserom.gba", 0x565a50, 0x10
+	.4byte PageSwapAnimState_Init
+	.4byte PageSwapAnimState_1
+	.4byte PageSwapAnimState_2
+	.4byte PageSwapAnimState_Done
 	.globl gUnknown_8565A60
 gUnknown_8565A60: @ 0x08565A60
 	.incbin "baserom.gba", 0x565a60, 0x8
@@ -152,7 +179,10 @@ gUnknown_8565A70: @ 0x08565A70
 	.incbin "baserom.gba", 0x565a70, 0x4
 	.globl gUnknown_8565A74
 gUnknown_8565A74: @ 0x08565A74
-	.incbin "baserom.gba", 0x565a74, 0x10
+	.4byte sub_080E356C
+	.4byte sub_080E35C0
+	.4byte sub_080E35C4
+	.4byte sub_080E3638
 	.globl gUnknown_8565A84
 gUnknown_8565A84: @ 0x08565A84
 	.incbin "baserom.gba", 0x565a84, 0x6
@@ -161,13 +191,22 @@ gUnknown_8565A8A: @ 0x08565A8A
 	.incbin "baserom.gba", 0x565a8a, 0x6
 	.globl gUnknown_8565A90
 gUnknown_8565A90: @ 0x08565A90
-	.incbin "baserom.gba", 0x565a90, 0x14
+	.4byte TaskDummy2
+	.4byte NamingScreen_CreatePlayerIcon
+	.4byte NamingScreen_CreatePCIcon
+	.4byte NamingScreen_CreateMonIcon
+	.4byte NamingScreen_CreateWandaDadIcon
 	.globl gUnknown_8565AA4
 gUnknown_8565AA4: @ 0x08565AA4
-	.incbin "baserom.gba", 0x565aa4, 0x10
+	.4byte KeyboardKeyHandler_Character
+	.4byte KeyboardKeyHandler_Page
+	.4byte KeyboardKeyHandler_Backspace
+	.4byte KeyboardKeyHandler_OK
 	.globl gUnknown_8565AB4
 gUnknown_8565AB4: @ 0x08565AB4
-	.incbin "baserom.gba", 0x565ab4, 0xc
+	.4byte InputState_2
+	.4byte InputState_Enabled
+	.4byte sub_080E3BD0
 	.globl gUnknown_8565AC0
 gUnknown_8565AC0: @ 0x08565AC0
 	.incbin "baserom.gba", 0x565ac0, 0xa
@@ -182,10 +221,15 @@ gUnknown_8565ADC: @ 0x08565ADC
 	.incbin "baserom.gba", 0x565adc, 0x8
 	.globl gUnknown_8565AE4
 gUnknown_8565AE4: @ 0x08565AE4
-	.incbin "baserom.gba", 0x565ae4, 0x14
+	.4byte sub_080E3D50
+	.4byte sub_080E3D50
+	.4byte sub_080E3DA4
+	.4byte sub_080E3DA4
+	.4byte sub_080E3D50
 	.globl gUnknown_8565AF8
 gUnknown_8565AF8: @ 0x08565AF8
-	.incbin "baserom.gba", 0x565af8, 0x8
+	.4byte sub_080E3E78
+	.4byte sub_080E3E7C
 	.globl gUnknown_8565B00
 gUnknown_8565B00: @ 0x08565B00
 	.incbin "baserom.gba", 0x565b00, 0x6
@@ -292,7 +336,54 @@ gUnknown_8566BA4: @ 0x08566BA4
 	.incbin "baserom.gba", 0x566ba4, 0x40
 	.globl gUnknown_8566BE4
 gUnknown_8566BE4: @ 0x08566BE4
-	.incbin "baserom.gba", 0x566be4, 0xc0
+	.4byte ContestEffect_MakeScramblingTurnOrderEasier
+	.4byte ContestEffect_UserMoreEasilyStartled
+	.4byte ContestEffect_GreatAppealButNoMoreMoves
+	.4byte ContestEffect_RepetitionNotBoring
+	.4byte ContestEffect_AvoidStartleOnce
+	.4byte ContestEffect_AvoidStartle
+	.4byte ContestEffect_AvoidStartleSlightly
+	.4byte ContestEffect_UserLessEasilyStartled
+	.4byte ContestEffect_StartleFrontMon
+	.4byte ContestEffect_StartlePrevMons
+	.4byte ContestEffect_StartleFrontMon
+	.4byte ContestEffect_StartlePrevMons
+	.4byte ContestEffect_StartleFrontMon
+	.4byte ContestEffect_StartlePrevMons
+	.4byte ContestEffect_StartlePrevMon2
+	.4byte ContestEffect_StartlePrevMons2
+	.4byte ContestEffect_ShiftJudgeAttention
+	.4byte ContestEffect_StartleMonWithJudgesAttention
+	.4byte ContestEffect_JamsOthersButMissOneTurn
+	.4byte ContestEffect_StartleMonsSameTypeAppeal
+	.4byte ContestEffect_StartleMonsCoolAppeal
+	.4byte ContestEffect_StartleMonsBeautyAppeal
+	.4byte ContestEffect_StartleMonsCuteAppeal
+	.4byte ContestEffect_StartleMonsSmartAppeal
+	.4byte ContestEffect_StartleMonsToughAppeal
+	.4byte ContestEffect_MakeFollowingMonNervous
+	.4byte ContestEffect_MakeFollowingMonsNervous
+	.4byte ContestEffect_WorsenConditionOfPrevMons
+	.4byte ContestEffect_BadlyStartlesMonsInGoodCondition
+	.4byte ContestEffect_BetterIfFirst
+	.4byte ContestEffect_BetterIfLast
+	.4byte ContestEffect_AppealAsGoodAsPrevOnes
+	.4byte ContestEffect_AppealAsGoodAsPrevOne
+	.4byte ContestEffect_BetterWhenLater
+	.4byte ContestEffect_QualityDependsOnTiming
+	.4byte ContestEffect_BetterIfSameType
+	.4byte ContestEffect_BetterIfDiffType
+	.4byte ContestEffect_AffectedByPrevAppeal
+	.4byte ContestEffect_ImproveConditionPreventNervousness
+	.4byte ContestEffect_BetterWithGoodCondition
+	.4byte ContestEffect_NextAppealEarlier
+	.4byte ContestEffect_NextAppealLater
+	.4byte ContestEffect_HighlyAppealing
+	.4byte ContestEffect_ScrambleNextTurnOrder
+	.4byte ContestEffect_ExciteAudienceInAnyContest
+	.4byte ContestEffect_BadlyStartleMonsWithGoodAppeals
+	.4byte ContestEffect_BetterWhenAudienceExcited
+	.4byte ContestEffect_DontExciteAudience
 	.globl gUnknown_8566CA4
 gUnknown_8566CA4: @ 0x08566CA4
 
@@ -510,7 +601,7 @@ gText_Rom_566DFA: @ 0x08566DFA
 	.if (. - gText_Rom_566DFA) < 0x4
 	.space 0x4 - (. - gText_Rom_566DFA)
 	.endif
-	.incbin "baserom.gba", 0x566dfe, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_8566E00
 gUnknown_8566E00: @ 0x08566E00
 	.incbin "baserom.gba", 0x566e00, 0x40

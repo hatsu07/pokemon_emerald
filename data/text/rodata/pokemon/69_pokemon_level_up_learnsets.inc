@@ -2,7 +2,7 @@
 
 	.globl gUnknown_82F5CA4
 gUnknown_82F5CA4: @ 0x082F5CA4
-	.incbin "baserom.gba", 0x2f5ca4, 0x28
+	.space 0x28, 0x00
 
 	.include "data/pokemon/evolution.inc"
 
@@ -58,7 +58,7 @@ gUnknown_82FA876: @ 0x082FA876
 	.incbin "baserom.gba", 0x2fa876, 0x12
 	.globl gUnknown_82FA888
 gUnknown_82FA888: @ 0x082FA888
-	.incbin "baserom.gba", 0x2fa888, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_82FA88A
 gUnknown_82FA88A: @ 0x082FA88A
 	.incbin "baserom.gba", 0x2fa88a, 0x2a
@@ -76,7 +76,12 @@ gUnknown_82FACB4: @ 0x082FACB4
 	.incbin "baserom.gba", 0x2facb4, 0x80
 	.globl gUnknown_82FAD34
 gUnknown_82FAD34: @ 0x082FAD34
-	.incbin "baserom.gba", 0x2fad34, 0x18
+	.4byte NULL
+	.4byte gDummyOamData
+	.4byte gDummySpriteAnimTable
+	.4byte NULL
+	.4byte gDummySpriteAffineAnimTable
+	.4byte SpriteCallbackDummy
 	.globl gUnknown_82FAD4C
 gUnknown_82FAD4C: @ 0x082FAD4C
 	.incbin "baserom.gba", 0x2fad4c, 0x18
@@ -85,7 +90,7 @@ gUnknown_82FAD64: @ 0x082FAD64
 	.incbin "baserom.gba", 0x2fad64, 0xa00
 
 	.include "data/pokemon/egg_moves.inc"
-	.incbin "baserom.gba", 0x2fc04a, 0x2
+	.space 0x2, 0x00
 
 	.globl gUnknown_82FC04C
 gUnknown_82FC04C: @ 0x082FC04C
@@ -137,10 +142,13 @@ gText_Rom_2FC0C4: @ 0x082FC0C4
 	.if (. - gText_Rom_2FC0C4) < 0x21
 	.space 0x21 - (. - gText_Rom_2FC0C4)
 	.endif
-	.incbin "baserom.gba", 0x2fc0e5, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_82FC0E8
 gUnknown_82FC0E8: @ 0x082FC0E8
-	.incbin "baserom.gba", 0x2fc0e8, 0x10
+	.4byte gText_Rom_2FC084
+	.4byte gText_Rom_2FC09A
+	.4byte gText_Rom_2FC0AE
+	.4byte gText_Rom_2FC0C4
 	.globl gUnknown_82FC0F8
 gUnknown_82FC0F8: @ 0x082FC0F8
 	.incbin "baserom.gba", 0x2fc0f8, 0x2

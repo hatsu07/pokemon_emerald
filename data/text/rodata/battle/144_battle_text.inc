@@ -498,7 +498,7 @@ gText_Rom_5AB00F: @ 0x085AB00F
 	.if (. - gText_Rom_5AB00F) < 0x6
 	.space 0x6 - (. - gText_Rom_5AB00F)
 	.endif
-	.incbin "baserom.gba", 0x5ab015, 0x1
+	.space 0x1, 0xFF
 	.globl gUnknown_85AB016
 gUnknown_85AB016: @ 0x085AB016
 

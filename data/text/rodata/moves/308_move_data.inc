@@ -222,7 +222,7 @@ gMonIcon_Caterpie: @ 0x08C368DC [010]
   .globl gMonPalette_Metapod
 gMonPalette_Metapod:
   .incbin "build/graphics/pokemon/metapod/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc36f33, 0x1
+  .space 0x1, 0x00
 
   .globl gMonBackPic_Metapod
 gMonBackPic_Metapod:
@@ -231,7 +231,7 @@ gMonBackPic_Metapod:
   .globl gMonShinyPalette_Metapod
 gMonShinyPalette_Metapod:
   .incbin "build/graphics/pokemon/metapod/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC37193, 0x1
+  .space 0x1, 0x00
 	.globl gMonIcon_Metapod
 gMonIcon_Metapod: @ 0x08C37194 [011]
   .incbin "build/graphics/pokemon/metapod/icon.4bpp"
@@ -274,7 +274,7 @@ gMonIcon_Weedle: @ 0x08C3868C [013]
   .globl gMonPalette_Kakuna
 gMonPalette_Kakuna:
   .incbin "build/graphics/pokemon/kakuna/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc38d19, 0x3
+  .space 0x3, 0x00
 
   .globl gMonBackPic_Kakuna
 gMonBackPic_Kakuna:
@@ -283,7 +283,7 @@ gMonBackPic_Kakuna:
   .globl gMonShinyPalette_Kakuna
 gMonShinyPalette_Kakuna:
   .incbin "build/graphics/pokemon/kakuna/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC38FC1, 0x3
+  .space 0x3, 0x00
 	.globl gMonIcon_Kakuna
 gMonIcon_Kakuna: @ 0x08C38FC4 [014]
   .incbin "build/graphics/pokemon/kakuna/icon.4bpp"
@@ -462,7 +462,7 @@ gMonIcon_Arbok: @ 0x08C3FED8 [024]
   .globl gMonPalette_Pikachu
 gMonPalette_Pikachu:
   .incbin "build/graphics/pokemon/pikachu/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc405ee, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Pikachu
 gMonBackPic_Pikachu:
@@ -471,7 +471,7 @@ gMonBackPic_Pikachu:
   .globl gMonShinyPalette_Pikachu
 gMonShinyPalette_Pikachu:
   .incbin "build/graphics/pokemon/pikachu/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC408EE, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Pikachu
 gMonIcon_Pikachu: @ 0x08C408F0 [025]
   .incbin "build/graphics/pokemon/pikachu/icon.4bpp"
@@ -497,7 +497,7 @@ gMonIcon_Raichu: @ 0x08C4142C [026]
   .globl gMonPalette_Sandshrew
 gMonPalette_Sandshrew:
   .incbin "build/graphics/pokemon/sandshrew/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc41b32, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Sandshrew
 gMonBackPic_Sandshrew:
@@ -506,7 +506,7 @@ gMonBackPic_Sandshrew:
   .globl gMonShinyPalette_Sandshrew
 gMonShinyPalette_Sandshrew:
   .incbin "build/graphics/pokemon/sandshrew/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC41E82, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Sandshrew
 gMonIcon_Sandshrew: @ 0x08C41E84 [027]
   .incbin "build/graphics/pokemon/sandshrew/icon.4bpp"
@@ -532,7 +532,7 @@ gMonIcon_Sandslash: @ 0x08C42AFC [028]
   .globl gMonPalette_NidoranF
 gMonPalette_NidoranF:
   .incbin "build/graphics/pokemon/nidoran_f/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc431ba, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_NidoranF
 gMonBackPic_NidoranF:
@@ -541,7 +541,7 @@ gMonBackPic_NidoranF:
   .globl gMonShinyPalette_NidoranF
 gMonShinyPalette_NidoranF:
   .incbin "build/graphics/pokemon/nidoran_f/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC434BA, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_NidoranF
 gMonIcon_NidoranF: @ 0x08C434BC [029]
   .incbin "build/graphics/pokemon/nidoran_f/icon.4bpp"
@@ -618,7 +618,7 @@ gMonIcon_Nidorino: @ 0x08C462E0 [033]
   .globl gMonPalette_Nidoking
 gMonPalette_Nidoking:
   .incbin "build/graphics/pokemon/nidoking/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc46c1e, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Nidoking
 gMonBackPic_Nidoking:
@@ -627,7 +627,7 @@ gMonBackPic_Nidoking:
   .globl gMonShinyPalette_Nidoking
 gMonShinyPalette_Nidoking:
   .incbin "build/graphics/pokemon/nidoking/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC47082, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Nidoking
 gMonIcon_Nidoking: @ 0x08C47084 [034]
   .incbin "build/graphics/pokemon/nidoking/icon.4bpp"
@@ -687,7 +687,7 @@ gMonIcon_Vulpix: @ 0x08C48FD8 [037]
   .globl gMonPalette_Ninetales
 gMonPalette_Ninetales:
   .incbin "build/graphics/pokemon/ninetales/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc49853, 0x1
+  .space 0x1, 0x00
   .globl gMonBackPic_Ninetales
 gMonBackPic_Ninetales:
   .incbin "build/graphics/pokemon/ninetales/back.4bpp.lz"
@@ -695,7 +695,7 @@ gMonBackPic_Ninetales:
   .globl gMonShinyPalette_Ninetales
 gMonShinyPalette_Ninetales:
   .incbin "build/graphics/pokemon/ninetales/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC49BF3, 0x1
+  .space 0x1, 0x00
 	.globl gMonIcon_Ninetales
 gMonIcon_Ninetales: @ 0x08C49BF4 [038]
   .incbin "build/graphics/pokemon/ninetales/icon.4bpp"
@@ -755,7 +755,7 @@ gMonIcon_Zubat: @ 0x08C4B9A8 [041]
   .globl gMonPalette_Golbat
 gMonPalette_Golbat:
   .incbin "build/graphics/pokemon/golbat/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc4c18a, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Golbat
 gMonBackPic_Golbat:
@@ -764,7 +764,7 @@ gMonBackPic_Golbat:
   .globl gMonShinyPalette_Golbat
 gMonShinyPalette_Golbat:
   .incbin "build/graphics/pokemon/golbat/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC4C46E, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Golbat
 gMonIcon_Golbat: @ 0x08C4C470 [042]
   .incbin "build/graphics/pokemon/golbat/icon.4bpp"
@@ -773,7 +773,7 @@ gMonIcon_Golbat: @ 0x08C4C470 [042]
   .globl gMonPalette_Oddish
 gMonPalette_Oddish:
   .incbin "build/graphics/pokemon/oddish/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc4caea, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Oddish
 gMonBackPic_Oddish:
@@ -782,7 +782,7 @@ gMonBackPic_Oddish:
   .globl gMonShinyPalette_Oddish
 gMonShinyPalette_Oddish:
   .incbin "build/graphics/pokemon/oddish/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC4CD8A, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Oddish
 gMonIcon_Oddish: @ 0x08C4CD8C [043]
   .incbin "build/graphics/pokemon/oddish/icon.4bpp"
@@ -961,7 +961,7 @@ gMonIcon_Persian: @ 0x08C53A0C [053]
   .globl gMonPalette_Psyduck
 gMonPalette_Psyduck:
   .incbin "build/graphics/pokemon/psyduck/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc5412a, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Psyduck
 gMonBackPic_Psyduck:
@@ -970,7 +970,7 @@ gMonBackPic_Psyduck:
   .globl gMonShinyPalette_Psyduck
 gMonShinyPalette_Psyduck:
   .incbin "build/graphics/pokemon/psyduck/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC543EE, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Psyduck
 gMonIcon_Psyduck: @ 0x08C543F0 [054]
   .incbin "build/graphics/pokemon/psyduck/icon.4bpp"
@@ -1030,7 +1030,7 @@ gMonIcon_Primeape: @ 0x08C565E4 [057]
   .globl gMonPalette_Growlithe
 gMonPalette_Growlithe:
   .incbin "build/graphics/pokemon/growlithe/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc56d82, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Growlithe
 gMonBackPic_Growlithe:
@@ -1039,7 +1039,7 @@ gMonBackPic_Growlithe:
   .globl gMonShinyPalette_Growlithe
 gMonShinyPalette_Growlithe:
   .incbin "build/graphics/pokemon/growlithe/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC570E6, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Growlithe
 gMonIcon_Growlithe: @ 0x08C570E8 [058]
   .incbin "build/graphics/pokemon/growlithe/icon.4bpp"
@@ -1065,7 +1065,7 @@ gMonIcon_Arcanine: @ 0x08C57E6C [059]
   .globl gMonPalette_Poliwag
 gMonPalette_Poliwag:
   .incbin "build/graphics/pokemon/poliwag/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc5853a, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Poliwag
 gMonBackPic_Poliwag:
@@ -1074,7 +1074,7 @@ gMonBackPic_Poliwag:
   .globl gMonShinyPalette_Poliwag
 gMonShinyPalette_Poliwag:
   .incbin "build/graphics/pokemon/poliwag/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC587D2, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Poliwag
 gMonIcon_Poliwag: @ 0x08C587D4 [060]
   .incbin "build/graphics/pokemon/poliwag/icon.4bpp"
@@ -1083,7 +1083,7 @@ gMonIcon_Poliwag: @ 0x08C587D4 [060]
   .globl gMonPalette_Poliwhirl
 gMonPalette_Poliwhirl:
   .incbin "build/graphics/pokemon/poliwhirl/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc58fde, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Poliwhirl
 gMonBackPic_Poliwhirl:
@@ -1092,7 +1092,7 @@ gMonBackPic_Poliwhirl:
   .globl gMonShinyPalette_Poliwhirl
 gMonShinyPalette_Poliwhirl:
   .incbin "build/graphics/pokemon/poliwhirl/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC592C6, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Poliwhirl
 gMonIcon_Poliwhirl: @ 0x08C592C8 [061]
   .incbin "build/graphics/pokemon/poliwhirl/icon.4bpp"
@@ -1101,7 +1101,7 @@ gMonIcon_Poliwhirl: @ 0x08C592C8 [061]
   .globl gMonPalette_Poliwrath
 gMonPalette_Poliwrath:
   .incbin "build/graphics/pokemon/poliwrath/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc59ad6, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Poliwrath
 gMonBackPic_Poliwrath:
@@ -1110,7 +1110,7 @@ gMonBackPic_Poliwrath:
   .globl gMonShinyPalette_Poliwrath
 gMonShinyPalette_Poliwrath:
   .incbin "build/graphics/pokemon/poliwrath/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC59E1E, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Poliwrath
 gMonIcon_Poliwrath: @ 0x08C59E20 [062]
   .incbin "build/graphics/pokemon/poliwrath/icon.4bpp"
@@ -1119,7 +1119,7 @@ gMonIcon_Poliwrath: @ 0x08C59E20 [062]
   .globl gMonPalette_Abra
 gMonPalette_Abra:
   .incbin "build/graphics/pokemon/abra/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc5a545, 0x3
+  .space 0x3, 0x00
   .globl gMonBackPic_Abra
 gMonBackPic_Abra:
   .incbin "build/graphics/pokemon/abra/back.4bpp.lz"
@@ -1127,7 +1127,7 @@ gMonBackPic_Abra:
   .globl gMonShinyPalette_Abra
 gMonShinyPalette_Abra:
   .incbin "build/graphics/pokemon/abra/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC5A87D, 0x3
+  .space 0x3, 0x00
 	.globl gMonIcon_Abra
 gMonIcon_Abra: @ 0x08C5A880 [063]
   .incbin "build/graphics/pokemon/abra/icon.4bpp"
@@ -1306,7 +1306,7 @@ gMonIcon_Tentacruel: @ 0x08C61C34 [073]
   .globl gMonPalette_Geodude
 gMonPalette_Geodude:
   .incbin "build/graphics/pokemon/geodude/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc622db, 0x1
+  .space 0x1, 0x00
   .globl gMonBackPic_Geodude
 gMonBackPic_Geodude:
   .incbin "build/graphics/pokemon/geodude/back.4bpp.lz"
@@ -1314,7 +1314,7 @@ gMonBackPic_Geodude:
   .globl gMonShinyPalette_Geodude
 gMonShinyPalette_Geodude:
   .incbin "build/graphics/pokemon/geodude/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC6258B, 0x1
+  .space 0x1, 0x00
 	.globl gMonIcon_Geodude
 gMonIcon_Geodude: @ 0x08C6258C [074]
   .incbin "build/graphics/pokemon/geodude/icon.4bpp"
@@ -1323,7 +1323,7 @@ gMonIcon_Geodude: @ 0x08C6258C [074]
   .globl gMonPalette_Graveler
 gMonPalette_Graveler:
   .incbin "build/graphics/pokemon/graveler/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc62dd1, 0x3
+  .space 0x3, 0x00
   .globl gMonBackPic_Graveler
 gMonBackPic_Graveler:
   .incbin "build/graphics/pokemon/graveler/back.4bpp.lz"
@@ -1331,7 +1331,7 @@ gMonBackPic_Graveler:
   .globl gMonShinyPalette_Graveler
 gMonShinyPalette_Graveler:
   .incbin "build/graphics/pokemon/graveler/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC6306D, 0x3
+  .space 0x3, 0x00
 	.globl gMonIcon_Graveler
 gMonIcon_Graveler: @ 0x08C63070 [075]
   .incbin "build/graphics/pokemon/graveler/icon.4bpp"
@@ -1357,7 +1357,7 @@ gMonIcon_Golem: @ 0x08C63C1C [076]
   .globl gMonPalette_Ponyta
 gMonPalette_Ponyta:
   .incbin "build/graphics/pokemon/ponyta/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc6440a, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Ponyta
 gMonBackPic_Ponyta:
@@ -1366,7 +1366,7 @@ gMonBackPic_Ponyta:
   .globl gMonShinyPalette_Ponyta
 gMonShinyPalette_Ponyta:
   .incbin "build/graphics/pokemon/ponyta/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC6476E, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Ponyta
 gMonIcon_Ponyta: @ 0x08C64770 [077]
   .incbin "build/graphics/pokemon/ponyta/icon.4bpp"
@@ -1451,7 +1451,7 @@ gMonBackPic_Magneton:
   .globl gMonShinyPalette_Magneton
 gMonShinyPalette_Magneton:
   .incbin "build/graphics/pokemon/magneton/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC67F8A, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Magneton
 gMonIcon_Magneton: @ 0x08C67F8C [082]
   .incbin "build/graphics/pokemon/magneton/icon.4bpp"
@@ -1511,7 +1511,7 @@ gMonIcon_Dodrio: @ 0x08C6A368 [085]
   .globl gMonPalette_Seel
 gMonPalette_Seel:
   .incbin "build/graphics/pokemon/seel/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc6aab6, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Seel
 gMonBackPic_Seel:
@@ -1520,7 +1520,7 @@ gMonBackPic_Seel:
   .globl gMonShinyPalette_Seel
 gMonShinyPalette_Seel:
   .incbin "build/graphics/pokemon/seel/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC6ADCA, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Seel
 gMonIcon_Seel: @ 0x08C6ADCC [086]
   .incbin "build/graphics/pokemon/seel/icon.4bpp"
@@ -1529,7 +1529,7 @@ gMonIcon_Seel: @ 0x08C6ADCC [086]
   .globl gMonPalette_Dewgong
 gMonPalette_Dewgong:
   .incbin "build/graphics/pokemon/dewgong/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc6b5d1, 0x3
+  .space 0x3, 0x00
   .globl gMonBackPic_Dewgong
 gMonBackPic_Dewgong:
   .incbin "build/graphics/pokemon/dewgong/back.4bpp.lz"
@@ -1537,7 +1537,7 @@ gMonBackPic_Dewgong:
   .globl gMonShinyPalette_Dewgong
 gMonShinyPalette_Dewgong:
   .incbin "build/graphics/pokemon/dewgong/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC6B885, 0x3
+  .space 0x3, 0x00
 	.globl gMonIcon_Dewgong
 gMonIcon_Dewgong: @ 0x08C6B888 [087]
   .incbin "build/graphics/pokemon/dewgong/icon.4bpp"
@@ -1614,7 +1614,7 @@ gMonIcon_Cloyster: @ 0x08C6E58C [091]
   .globl gMonPalette_Gastly
 gMonPalette_Gastly:
   .incbin "build/graphics/pokemon/gastly/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc6ed8a, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Gastly
 gMonBackPic_Gastly:
@@ -1666,7 +1666,7 @@ gMonIcon_Gengar: @ 0x08C70754 [094]
   .globl gMonPalette_Onix
 gMonPalette_Onix:
   .incbin "build/graphics/pokemon/onix/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc71007, 0x1
+  .space 0x1, 0x00
   .globl gMonBackPic_Onix
 gMonBackPic_Onix:
   .incbin "build/graphics/pokemon/onix/back.4bpp.lz"
@@ -1674,7 +1674,7 @@ gMonBackPic_Onix:
   .globl gMonShinyPalette_Onix
 gMonShinyPalette_Onix:
   .incbin "build/graphics/pokemon/onix/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC7139F, 0x1
+  .space 0x1, 0x00
 	.globl gMonIcon_Onix
 gMonIcon_Onix: @ 0x08C713A0 [095]
   .incbin "build/graphics/pokemon/onix/icon.4bpp"
@@ -1683,7 +1683,7 @@ gMonIcon_Onix: @ 0x08C713A0 [095]
   .globl gMonPalette_Drowzee
 gMonPalette_Drowzee:
   .incbin "build/graphics/pokemon/drowzee/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc71b5a, 0x2
+  .space 0x2, 0x00
   .globl gMonBackPic_Drowzee
 gMonBackPic_Drowzee:
   .incbin "build/graphics/pokemon/drowzee/back.4bpp.lz"
@@ -1691,7 +1691,7 @@ gMonBackPic_Drowzee:
   .globl gMonShinyPalette_Drowzee
 gMonShinyPalette_Drowzee:
   .incbin "build/graphics/pokemon/drowzee/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC71DDA, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Drowzee
 gMonIcon_Drowzee: @ 0x08C71DDC [096]
   .incbin "build/graphics/pokemon/drowzee/icon.4bpp"
@@ -1717,7 +1717,7 @@ gMonIcon_Hypno: @ 0x08C72960 [097]
   .globl gMonPalette_Krabby
 gMonPalette_Krabby:
   .incbin "build/graphics/pokemon/krabby/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc7305e, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Krabby
 gMonBackPic_Krabby:
@@ -1726,7 +1726,7 @@ gMonBackPic_Krabby:
   .globl gMonShinyPalette_Krabby
 gMonShinyPalette_Krabby:
   .incbin "build/graphics/pokemon/krabby/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC73412, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Krabby
 gMonIcon_Krabby: @ 0x08C73414 [098]
   .incbin "build/graphics/pokemon/krabby/icon.4bpp"
@@ -1752,7 +1752,7 @@ gMonIcon_Kingler: @ 0x08C74134 [099]
   .globl gMonPalette_Voltorb
 gMonPalette_Voltorb:
   .incbin "build/graphics/pokemon/voltorb/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc7477e, 0x2
+  .space 0x2, 0x00
   .globl gMonBackPic_Voltorb
 gMonBackPic_Voltorb:
   .incbin "build/graphics/pokemon/voltorb/back.4bpp.lz"
@@ -1760,7 +1760,7 @@ gMonBackPic_Voltorb:
   .globl gMonShinyPalette_Voltorb
 gMonShinyPalette_Voltorb:
   .incbin "build/graphics/pokemon/voltorb/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC74A16, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Voltorb
 gMonIcon_Voltorb: @ 0x08C74A18 [100]
   .incbin "build/graphics/pokemon/voltorb/icon.4bpp"
@@ -1786,7 +1786,7 @@ gMonIcon_Electrode: @ 0x08C7535C [101]
   .globl gMonPalette_Exeggcute
 gMonPalette_Exeggcute:
   .incbin "build/graphics/pokemon/exeggcute/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc75ba2, 0x2
+  .space 0x2, 0x00
   .globl gMonBackPic_Exeggcute
 gMonBackPic_Exeggcute:
   .incbin "build/graphics/pokemon/exeggcute/back.4bpp.lz"
@@ -1794,7 +1794,7 @@ gMonBackPic_Exeggcute:
   .globl gMonShinyPalette_Exeggcute
 gMonShinyPalette_Exeggcute:
   .incbin "build/graphics/pokemon/exeggcute/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC75ECE, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Exeggcute
 gMonIcon_Exeggcute: @ 0x08C75ED0 [102]
   .incbin "build/graphics/pokemon/exeggcute/icon.4bpp"
@@ -1939,7 +1939,7 @@ gMonIcon_Weezing: @ 0x08C7BA84 [110]
   .globl gMonPalette_Rhyhorn
 gMonPalette_Rhyhorn:
   .incbin "build/graphics/pokemon/rhyhorn/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc7c2c7, 0x1
+  .space 0x1, 0x00
   .globl gMonBackPic_Rhyhorn
 gMonBackPic_Rhyhorn:
   .incbin "build/graphics/pokemon/rhyhorn/back.4bpp.lz"
@@ -1947,7 +1947,7 @@ gMonBackPic_Rhyhorn:
   .globl gMonShinyPalette_Rhyhorn
 gMonShinyPalette_Rhyhorn:
   .incbin "build/graphics/pokemon/rhyhorn/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC7C62F, 0x1
+  .space 0x1, 0x00
 	.globl gMonIcon_Rhyhorn
 gMonIcon_Rhyhorn: @ 0x08C7C630 [111]
   .incbin "build/graphics/pokemon/rhyhorn/icon.4bpp"
@@ -2007,7 +2007,7 @@ gMonIcon_Tangela: @ 0x08C7EA70 [114]
   .globl gMonPalette_Kangaskhan
 gMonPalette_Kangaskhan:
   .incbin "build/graphics/pokemon/kangaskhan/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc7f3af, 0x1
+  .space 0x1, 0x00
 
   .globl gMonBackPic_Kangaskhan
 gMonBackPic_Kangaskhan:
@@ -2016,7 +2016,7 @@ gMonBackPic_Kangaskhan:
   .globl gMonShinyPalette_Kangaskhan
 gMonShinyPalette_Kangaskhan:
   .incbin "build/graphics/pokemon/kangaskhan/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC7F807, 0x1
+  .space 0x1, 0x00
 	.globl gMonIcon_Kangaskhan
 gMonIcon_Kangaskhan: @ 0x08C7F808 [115]
   .incbin "build/graphics/pokemon/kangaskhan/icon.4bpp"
@@ -2025,7 +2025,7 @@ gMonIcon_Kangaskhan: @ 0x08C7F808 [115]
   .globl gMonPalette_Horsea
 gMonPalette_Horsea:
   .incbin "build/graphics/pokemon/horsea/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc7fec6, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Horsea
 gMonBackPic_Horsea:
@@ -2034,7 +2034,7 @@ gMonBackPic_Horsea:
   .globl gMonShinyPalette_Horsea
 gMonShinyPalette_Horsea:
   .incbin "build/graphics/pokemon/horsea/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC801CE, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Horsea
 gMonIcon_Horsea: @ 0x08C801D0 [116]
   .incbin "build/graphics/pokemon/horsea/icon.4bpp"
@@ -2060,7 +2060,7 @@ gMonIcon_Seadra: @ 0x08C80DA0 [117]
   .globl gMonPalette_Goldeen
 gMonPalette_Goldeen:
   .incbin "build/graphics/pokemon/goldeen/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc8154e, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Goldeen
 gMonBackPic_Goldeen:
@@ -2146,7 +2146,7 @@ gMonIcon_MrMime: @ 0x08C8458C [122]
   .globl gMonPalette_Scyther
 gMonPalette_Scyther:
   .incbin "build/graphics/pokemon/scyther/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc84e7e, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Scyther
 gMonBackPic_Scyther:
@@ -2215,7 +2215,7 @@ gMonIcon_Magmar: @ 0x08C876B0 [126]
   .globl gMonPalette_Pinsir
 gMonPalette_Pinsir:
   .incbin "build/graphics/pokemon/pinsir/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc87f1a, 0x2
+  .space 0x2, 0x00
   .globl gMonBackPic_Pinsir
 gMonBackPic_Pinsir:
   .incbin "build/graphics/pokemon/pinsir/back.4bpp.lz"
@@ -2223,7 +2223,7 @@ gMonBackPic_Pinsir:
   .globl gMonShinyPalette_Pinsir
 gMonShinyPalette_Pinsir:
   .incbin "build/graphics/pokemon/pinsir/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC88292, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Pinsir
 gMonIcon_Pinsir: @ 0x08C88294 [127]
   .incbin "build/graphics/pokemon/pinsir/icon.4bpp"
@@ -2300,7 +2300,7 @@ gMonIcon_Lapras: @ 0x08C8B398 [131]
   .globl gMonPalette_Ditto
 gMonPalette_Ditto:
   .incbin "build/graphics/pokemon/ditto/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc8b9c5, 0x3
+  .space 0x3, 0x00
   .globl gMonBackPic_Ditto
 gMonBackPic_Ditto:
   .incbin "build/graphics/pokemon/ditto/back.4bpp.lz"
@@ -2308,7 +2308,7 @@ gMonBackPic_Ditto:
   .globl gMonShinyPalette_Ditto
 gMonShinyPalette_Ditto:
   .incbin "build/graphics/pokemon/ditto/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC8BBE5, 0x3
+  .space 0x3, 0x00
 	.globl gMonIcon_Ditto
 gMonIcon_Ditto: @ 0x08C8BBE8 [132]
   .incbin "build/graphics/pokemon/ditto/icon.4bpp"
@@ -2368,7 +2368,7 @@ gMonIcon_Jolteon: @ 0x08C8DC88 [135]
   .globl gMonPalette_Flareon
 gMonPalette_Flareon:
   .incbin "build/graphics/pokemon/flareon/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc8e44a, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Flareon
 gMonBackPic_Flareon:
@@ -2377,7 +2377,7 @@ gMonBackPic_Flareon:
   .globl gMonShinyPalette_Flareon
 gMonShinyPalette_Flareon:
   .incbin "build/graphics/pokemon/flareon/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC8E802, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Flareon
 gMonIcon_Flareon: @ 0x08C8E804 [136]
   .incbin "build/graphics/pokemon/flareon/icon.4bpp"
@@ -2454,7 +2454,7 @@ gMonIcon_Kabuto: @ 0x08C9112C [140]
   .globl gMonPalette_Kabutops
 gMonPalette_Kabutops:
   .incbin "build/graphics/pokemon/kabutops/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc9196e, 0x2
+  .space 0x2, 0x00
   .globl gMonBackPic_Kabutops
 gMonBackPic_Kabutops:
   .incbin "build/graphics/pokemon/kabutops/back.4bpp.lz"
@@ -2462,7 +2462,7 @@ gMonBackPic_Kabutops:
   .globl gMonShinyPalette_Kabutops
 gMonShinyPalette_Kabutops:
   .incbin "build/graphics/pokemon/kabutops/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC91D36, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Kabutops
 gMonIcon_Kabutops: @ 0x08C91D38 [141]
   .incbin "build/graphics/pokemon/kabutops/icon.4bpp"
@@ -2471,7 +2471,7 @@ gMonIcon_Kabutops: @ 0x08C91D38 [141]
   .globl gMonPalette_Aerodactyl
 gMonPalette_Aerodactyl:
   .incbin "build/graphics/pokemon/aerodactyl/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc925fe, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Aerodactyl
 gMonBackPic_Aerodactyl:
@@ -2480,7 +2480,7 @@ gMonBackPic_Aerodactyl:
   .globl gMonShinyPalette_Aerodactyl
 gMonShinyPalette_Aerodactyl:
   .incbin "build/graphics/pokemon/aerodactyl/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC9292A, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Aerodactyl
 gMonIcon_Aerodactyl: @ 0x08C9292C [142]
   .incbin "build/graphics/pokemon/aerodactyl/icon.4bpp"
@@ -2557,7 +2557,7 @@ gMonIcon_Moltres: @ 0x08C9593C [146]
   .globl gMonPalette_Dratini
 gMonPalette_Dratini:
   .incbin "build/graphics/pokemon/dratini/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc96036, 0x2
+  .space 0x2, 0x00
   .globl gMonBackPic_Dratini
 gMonBackPic_Dratini:
   .incbin "build/graphics/pokemon/dratini/back.4bpp.lz"
@@ -2565,7 +2565,7 @@ gMonBackPic_Dratini:
   .globl gMonShinyPalette_Dratini
 gMonShinyPalette_Dratini:
   .incbin "build/graphics/pokemon/dratini/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC962EA, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Dratini
 gMonIcon_Dratini: @ 0x08C962EC [147]
   .incbin "build/graphics/pokemon/dratini/icon.4bpp"
@@ -2608,7 +2608,7 @@ gMonIcon_Dragonite: @ 0x08C97AA8 [149]
   .globl gMonPalette_Mewtwo
 gMonPalette_Mewtwo:
   .incbin "build/graphics/pokemon/mewtwo/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc98326, 0x2
+  .space 0x2, 0x00
   .globl gMonBackPic_Mewtwo
 gMonBackPic_Mewtwo:
   .incbin "build/graphics/pokemon/mewtwo/back.4bpp.lz"
@@ -2616,7 +2616,7 @@ gMonBackPic_Mewtwo:
   .globl gMonShinyPalette_Mewtwo
 gMonShinyPalette_Mewtwo:
   .incbin "build/graphics/pokemon/mewtwo/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC98716, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Mewtwo
 gMonIcon_Mewtwo: @ 0x08C98718 [150]
   .incbin "build/graphics/pokemon/mewtwo/icon.4bpp"
@@ -2625,7 +2625,7 @@ gMonIcon_Mewtwo: @ 0x08C98718 [150]
   .globl gMonPalette_Mew
 gMonPalette_Mew:
   .incbin "build/graphics/pokemon/mew/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc98dda, 0x2
+  .space 0x2, 0x00
   .globl gMonBackPic_Mew
 gMonBackPic_Mew:
   .incbin "build/graphics/pokemon/mew/back.4bpp.lz"
@@ -2633,7 +2633,7 @@ gMonBackPic_Mew:
   .globl gMonShinyPalette_Mew
 gMonShinyPalette_Mew:
   .incbin "build/graphics/pokemon/mew/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xC990CA, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Mew
 gMonIcon_Mew: @ 0x08C990CC [151]
   .incbin "build/graphics/pokemon/mew/icon.4bpp"
@@ -2744,7 +2744,7 @@ gMonIcon_Typhlosion: @ 0x08C9D51C [157]
   .globl gMonPalette_Totodile
 gMonPalette_Totodile:
   .incbin "build/graphics/pokemon/totodile/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xc9dc06, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Totodile
 gMonBackPic_Totodile:
@@ -3017,7 +3017,7 @@ gMonIcon_Cleffa: @ 0x08CA7F48 [173]
   .globl gMonPalette_Igglybuff
 gMonPalette_Igglybuff:
   .incbin "build/graphics/pokemon/igglybuff/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xca8576, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Igglybuff
 gMonBackPic_Igglybuff:
@@ -3052,7 +3052,7 @@ gMonIcon_Togepi: @ 0x08CA9094 [175]
   .globl gMonPalette_Togetic
 gMonPalette_Togetic:
   .incbin "build/graphics/pokemon/togetic/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xca974e, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Togetic
 gMonBackPic_Togetic:
@@ -3061,7 +3061,7 @@ gMonBackPic_Togetic:
   .globl gMonShinyPalette_Togetic
 gMonShinyPalette_Togetic:
   .incbin "build/graphics/pokemon/togetic/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xCA9AA2, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Togetic
 gMonIcon_Togetic: @ 0x08CA9AA4 [176]
   .incbin "build/graphics/pokemon/togetic/icon.4bpp"
@@ -3248,7 +3248,7 @@ gMonBackPic_Hoppip:
   .globl gMonShinyPalette_Hoppip
 gMonShinyPalette_Hoppip:
   .incbin "build/graphics/pokemon/hoppip/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xCB0AFF, 0x1
+  .space 0x1, 0x00
 	.globl gMonIcon_Hoppip
 gMonIcon_Hoppip: @ 0x08CB0B00 [187]
   .incbin "build/graphics/pokemon/hoppip/icon.4bpp"
@@ -3257,7 +3257,7 @@ gMonIcon_Hoppip: @ 0x08CB0B00 [187]
   .globl gMonPalette_Skiploom
 gMonPalette_Skiploom:
   .incbin "build/graphics/pokemon/skiploom/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xcb11cf, 0x1
+  .space 0x1, 0x00
 
   .globl gMonBackPic_Skiploom
 gMonBackPic_Skiploom:
@@ -3360,7 +3360,7 @@ gMonIcon_Yanma: @ 0x08CB4B88 [193]
   .globl gMonPalette_Wooper
 gMonPalette_Wooper:
   .incbin "build/graphics/pokemon/wooper/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xcb520e, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Wooper
 gMonBackPic_Wooper:
@@ -3369,7 +3369,7 @@ gMonBackPic_Wooper:
   .globl gMonShinyPalette_Wooper
 gMonShinyPalette_Wooper:
   .incbin "build/graphics/pokemon/wooper/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xCB54C2, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Wooper
 gMonIcon_Wooper: @ 0x08CB54C4 [194]
   .incbin "build/graphics/pokemon/wooper/icon.4bpp"
@@ -3534,7 +3534,7 @@ gMonPalette_UnownZ:
 gMonPalette_UnownEmark:
 gMonPalette_UnownQmark:
   .incbin "build/graphics/pokemon/unown_qmark/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xcb9b3d, 0x3
+  .space 0x3, 0x00
 
   .globl gMonBackPic_Unown
 gMonBackPic_Unown:
@@ -3597,7 +3597,7 @@ gMonShinyPalette_UnownZ:
 gMonShinyPalette_UnownEmark:
 gMonShinyPalette_UnownQmark:
   .incbin "build/graphics/pokemon/unown_qmark/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xCB9D5D, 0x3
+  .space 0x3, 0x00
 	.globl gMonIcon_Unown
 gMonIcon_Unown: @ 0x08CB9D60 [201]
   .incbin "build/graphics/pokemon/unown/icon.4bpp"
@@ -3640,7 +3640,7 @@ gMonIcon_Girafarig: @ 0x08CBB384 [203]
   .globl gMonPalette_Pineco
 gMonPalette_Pineco:
   .incbin "build/graphics/pokemon/pineco/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xcbbb05, 0x3
+  .space 0x3, 0x00
 
   .globl gMonBackPic_Pineco
 gMonBackPic_Pineco:
@@ -3649,7 +3649,7 @@ gMonBackPic_Pineco:
   .globl gMonShinyPalette_Pineco
 gMonShinyPalette_Pineco:
   .incbin "build/graphics/pokemon/pineco/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xCBBE01, 0x3
+  .space 0x3, 0x00
 	.globl gMonIcon_Pineco
 gMonIcon_Pineco: @ 0x08CBBE04 [204]
   .incbin "build/graphics/pokemon/pineco/icon.4bpp"
@@ -3709,7 +3709,7 @@ gMonIcon_Gligar: @ 0x08CBE03C [207]
   .globl gMonPalette_Steelix
 gMonPalette_Steelix:
   .incbin "build/graphics/pokemon/steelix/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xcbe945, 0x3
+  .space 0x3, 0x00
 
   .globl gMonBackPic_Steelix
 gMonBackPic_Steelix:
@@ -3718,7 +3718,7 @@ gMonBackPic_Steelix:
   .globl gMonShinyPalette_Steelix
 gMonShinyPalette_Steelix:
   .incbin "build/graphics/pokemon/steelix/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xCBED75, 0x3
+  .space 0x3, 0x00
 	.globl gMonIcon_Steelix
 gMonIcon_Steelix: @ 0x08CBED78 [208]
   .incbin "build/graphics/pokemon/steelix/icon.4bpp"
@@ -3948,7 +3948,7 @@ gMonIcon_Piloswine: @ 0x08CC77C8 [221]
   .globl gMonPalette_Corsola
 gMonPalette_Corsola:
   .incbin "build/graphics/pokemon/corsola/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xcc7ef6, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Corsola
 gMonBackPic_Corsola:
@@ -3957,7 +3957,7 @@ gMonBackPic_Corsola:
   .globl gMonShinyPalette_Corsola
 gMonShinyPalette_Corsola:
   .incbin "build/graphics/pokemon/corsola/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xCC81DE, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Corsola
 gMonIcon_Corsola: @ 0x08CC81E0 [222]
   .incbin "build/graphics/pokemon/corsola/icon.4bpp"
@@ -3966,7 +3966,7 @@ gMonIcon_Corsola: @ 0x08CC81E0 [222]
   .globl gMonPalette_Remoraid
 gMonPalette_Remoraid:
   .incbin "build/graphics/pokemon/remoraid/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xcc888e, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Remoraid
 gMonBackPic_Remoraid:
@@ -3975,7 +3975,7 @@ gMonBackPic_Remoraid:
   .globl gMonShinyPalette_Remoraid
 gMonShinyPalette_Remoraid:
   .incbin "build/graphics/pokemon/remoraid/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xCC8BCA, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Remoraid
 gMonIcon_Remoraid: @ 0x08CC8BCC [223]
   .incbin "build/graphics/pokemon/remoraid/icon.4bpp"
@@ -4375,7 +4375,7 @@ gMonIcon_Larvitar: @ 0x08CD90FC [246]
   .globl gMonPalette_Pupitar
 gMonPalette_Pupitar:
   .incbin "build/graphics/pokemon/pupitar/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xcd9831, 0x3
+  .space 0x3, 0x00
 
   .globl gMonBackPic_Pupitar
 gMonBackPic_Pupitar:
@@ -4384,7 +4384,7 @@ gMonBackPic_Pupitar:
   .globl gMonShinyPalette_Pupitar
 gMonShinyPalette_Pupitar:
   .incbin "build/graphics/pokemon/pupitar/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xCD9B92, 0x2
+  .space 0x2, 0x00
 	.globl gMonIcon_Pupitar
 gMonIcon_Pupitar: @ 0x08CD9B94 [247]
   .incbin "build/graphics/pokemon/pupitar/icon.4bpp"
@@ -4410,7 +4410,7 @@ gMonIcon_Tyranitar: @ 0x08CDA92C [248]
   .globl gMonPalette_Lugia
 gMonPalette_Lugia:
   .incbin "build/graphics/pokemon/lugia/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xcdb236, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Lugia
 gMonBackPic_Lugia:
@@ -4510,7 +4510,7 @@ gMonPalette_OldUnownX:
 gMonPalette_OldUnownY:
 gMonPalette_OldUnownZ:
   .incbin "build/graphics/pokemon/old_unown_z/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xcdd54e, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_OldUnownB
   .globl gMonBackPic_OldUnownC
@@ -4978,7 +4978,7 @@ gMonIcon_Ludicolo: @ 0x08CEC3C0 [297]
   .globl gMonPalette_Seedot
 gMonPalette_Seedot:
   .incbin "build/graphics/pokemon/seedot/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xceca9a, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Seedot
 gMonBackPic_Seedot:
@@ -4987,7 +4987,7 @@ gMonBackPic_Seedot:
   .globl gMonShinyPalette_Seedot
 gMonShinyPalette_Seedot:
   .incbin "build/graphics/pokemon/seedot/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xcecda2, 0x2
+  .space 0x2, 0x00
 
 	.globl gMonIcon_Seedot
 gMonIcon_Seedot: @ 0x08CECDA4 [298]
@@ -5065,7 +5065,7 @@ gMonIcon_Ninjask: @ 0x08CEF92C [302]
   .globl gMonPalette_Shedinja
 gMonPalette_Shedinja:
   .incbin "build/graphics/pokemon/shedinja/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xcf0092, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Shedinja
 gMonBackPic_Shedinja:
@@ -5321,7 +5321,7 @@ gMonIcon_Kecleon: @ 0x08CF9874 [317]
   .globl gMonPalette_Baltoy
 gMonPalette_Baltoy:
   .incbin "build/graphics/pokemon/baltoy/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xcf9ed7, 0x1
+  .space 0x1, 0x00
 
   .globl gMonBackPic_Baltoy
 gMonBackPic_Baltoy:
@@ -5331,7 +5331,7 @@ gMonBackPic_Baltoy:
 gMonShinyPalette_Baltoy:
   .incbin "build/graphics/pokemon/baltoy/shiny_palette.gbapal.lz"
 
-  .incbin "baserom.gba", 0xCFA19F, 0x1
+  .space 0x1, 0x00
 	.globl gMonIcon_Baltoy
 gMonIcon_Baltoy: @ 0x08CFA1A0 [318]
   .incbin "build/graphics/pokemon/baltoy/icon.4bpp"
@@ -5561,7 +5561,7 @@ gMonIcon_Sharpedo: @ 0x08D02E80 [331]
   .globl gMonPalette_Trapinch
 gMonPalette_Trapinch:
   .incbin "build/graphics/pokemon/trapinch/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xd034e2, 0x2
+  .space 0x2, 0x00
  
   .globl gMonBackPic_Trapinch
 gMonBackPic_Trapinch:
@@ -5570,7 +5570,7 @@ gMonBackPic_Trapinch:
   .globl gMonShinyPalette_Trapinch
 gMonShinyPalette_Trapinch:
   .incbin "build/graphics/pokemon/trapinch/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xd0372a, 0x2
+  .space 0x2, 0x00
 
 	.globl gMonIcon_Trapinch
 gMonIcon_Trapinch: @ 0x08D0372C [332]
@@ -5648,7 +5648,7 @@ gMonIcon_Hariyama: @ 0x08D06694 [336]
   .globl gMonPalette_Electrike
 gMonPalette_Electrike:
   .incbin "build/graphics/pokemon/electrike/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xd06d6a, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Electrike
 gMonBackPic_Electrike:
@@ -5657,7 +5657,7 @@ gMonBackPic_Electrike:
   .globl gMonShinyPalette_Electrike
 gMonShinyPalette_Electrike:
   .incbin "build/graphics/pokemon/electrike/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xd0701e, 0x2
+  .space 0x2, 0x00
 
 	.globl gMonIcon_Electrike
 gMonIcon_Electrike: @ 0x08D07020 [337]
@@ -5718,7 +5718,7 @@ gMonIcon_Camerupt: @ 0x08D08F34 [340]
   .globl gMonPalette_Spheal
 gMonPalette_Spheal:
   .incbin "build/graphics/pokemon/spheal/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xd095ee, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Spheal
 gMonBackPic_Spheal:
@@ -5727,7 +5727,7 @@ gMonBackPic_Spheal:
   .globl gMonShinyPalette_Spheal
 gMonShinyPalette_Spheal:
   .incbin "build/graphics/pokemon/spheal/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xd09812, 0x2
+  .space 0x2, 0x00
 
 	.globl gMonIcon_Spheal
 gMonIcon_Spheal: @ 0x08D09814 [341]
@@ -6077,7 +6077,7 @@ gMonIcon_Duskull: @ 0x08D1768C [361]
   .globl gMonPalette_Dusclops
 gMonPalette_Dusclops:
   .incbin "build/graphics/pokemon/dusclops/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xd17e72, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Dusclops
 gMonBackPic_Dusclops:
@@ -6086,7 +6086,7 @@ gMonBackPic_Dusclops:
   .globl gMonShinyPalette_Dusclops
 gMonShinyPalette_Dusclops:
   .incbin "build/graphics/pokemon/dusclops/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xd18186, 0x2
+  .space 0x2, 0x00
 
 	.globl gMonIcon_Dusclops
 gMonIcon_Dusclops: @ 0x08D18188 [362]
@@ -6334,7 +6334,7 @@ gMonIcon_Absol: @ 0x08D22040 [376]
   .globl gMonPalette_Shuppet
 gMonPalette_Shuppet:
   .incbin "build/graphics/pokemon/shuppet/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xd226be, 0x2
+  .space 0x2, 0x00
   .globl gMonBackPic_Shuppet
 gMonBackPic_Shuppet:
   .incbin "build/graphics/pokemon/shuppet/back.4bpp.lz"
@@ -6342,7 +6342,7 @@ gMonBackPic_Shuppet:
   .globl gMonShinyPalette_Shuppet
 gMonShinyPalette_Shuppet:
   .incbin "build/graphics/pokemon/shuppet/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xd2297e, 0x2
+  .space 0x2, 0x00
 
 	.globl gMonIcon_Shuppet
 gMonIcon_Shuppet: @ 0x08D22980 [377]
@@ -6471,7 +6471,7 @@ gMonIcon_Aggron: @ 0x08D27904 [384]
   .globl gMonPalette_CastformNormal
 gMonPalette_CastformNormal:
   .incbin "build/graphics/pokemon/castform_normal/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xd28829, 0x3
+  .space 0x3, 0x00
 
   .globl gMonBackPic_CastformNormal
 gMonBackPic_CastformNormal:
@@ -6642,7 +6642,7 @@ gMonIcon_Gardevoir: @ 0x08D2F724 [394]
   .globl gMonPalette_Bagon
 gMonPalette_Bagon:
   .incbin "build/graphics/pokemon/bagon/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xd2fde3, 0x1
+  .space 0x1, 0x00
 
   .globl gMonBackPic_Bagon
 gMonBackPic_Bagon:
@@ -6652,7 +6652,7 @@ gMonBackPic_Bagon:
 gMonShinyPalette_Bagon:
   .incbin "build/graphics/pokemon/bagon/shiny_palette.gbapal.lz"
 
-  .incbin "baserom.gba", 0xD300F3, 0x1
+  .space 0x1, 0x00
 	.globl gMonIcon_Bagon
 gMonIcon_Bagon: @ 0x08D300F4 [395]
   .incbin "build/graphics/pokemon/bagon/icon.4bpp"
@@ -6763,7 +6763,7 @@ gMonIcon_Regirock: @ 0x08D345E0 [401]
   .globl gMonPalette_Regice
 gMonPalette_Regice:
   .incbin "build/graphics/pokemon/regice/normal_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xd34e6e, 0x2
+  .space 0x2, 0x00
 
   .globl gMonBackPic_Regice
 gMonBackPic_Regice:
@@ -6772,7 +6772,7 @@ gMonBackPic_Regice:
   .globl gMonShinyPalette_Regice
 gMonShinyPalette_Regice:
   .incbin "build/graphics/pokemon/regice/shiny_palette.gbapal.lz"
-  .incbin "baserom.gba", 0xd35186, 0x2
+  .space 0x2, 0x00
 
 	.globl gMonIcon_Regice
 gMonIcon_Regice: @ 0x08D35188 [402]
@@ -6930,7 +6930,7 @@ gMonShinyPalette_Chimecho:
   .globl gMonIcon_Chimecho
 gMonIcon_Chimecho: @ 0x08D441CC [411]
   .incbin "build/graphics/pokemon/chimecho/icon.4bpp"
-  .incbin "baserom.gba", 0xD445CC, 0x20
+  .space 0x20, 0x00
 
   .globl gMonBackPic_Egg
 gMonBackPic_Egg:

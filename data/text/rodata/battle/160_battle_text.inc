@@ -80,7 +80,8 @@ gUnknown_85AC9FA: @ 0x085AC9FA
 	.incbin "baserom.gba", 0x5ac9fa, 0x6
 	.globl gUnknown_85ACA00
 gUnknown_85ACA00: @ 0x085ACA00
-	.incbin "baserom.gba", 0x5aca00, 0x8
+	.4byte sub_08150A44
+	.4byte sub_08150AD0
 	.globl gUnknown_85ACA08
 gUnknown_85ACA08: @ 0x085ACA08
 	.incbin "baserom.gba", 0x5aca08, 0x38
@@ -95,10 +96,13 @@ gUnknown_85ACA4A: @ 0x085ACA4A
 	.incbin "baserom.gba", 0x5aca4a, 0xa
 	.globl gUnknown_85ACA54
 gUnknown_85ACA54: @ 0x085ACA54
-	.incbin "baserom.gba", 0x5aca54, 0x8
+	.4byte FadeFootprintsTireTracks_Step0
+	.4byte FadeFootprintsTireTracks_Step1
 	.globl gUnknown_85ACA5C
 gUnknown_85ACA5C: @ 0x085ACA5C
-	.incbin "baserom.gba", 0x5aca5c, 0xc
+	.4byte UpdateAshFieldEffect_Step0
+	.4byte UpdateAshFieldEffect_Step1
+	.4byte UpdateAshFieldEffect_Step2
 	.globl gUnknown_85ACA68
 gUnknown_85ACA68: @ 0x085ACA68
 	.incbin "baserom.gba", 0x5aca68, 0xa
@@ -107,7 +111,142 @@ gUnknown_85ACA72: @ 0x085ACA72
 	.incbin "baserom.gba", 0x5aca72, 0x96
 	.globl gUnknown_85ACB08
 gUnknown_85ACB08: @ 0x085ACB08
-	.incbin "baserom.gba", 0x5acb08, 0x220
+	.4byte ContestAICmd_score
+	.4byte ContestAICmd_get_turn
+	.4byte ContestAICmd_if_turn_less_than
+	.4byte ContestAICmd_if_turn_more_than
+	.4byte ContestAICmd_if_turn_eq
+	.4byte ContestAICmd_if_turn_not_eq
+	.4byte ContestAICmd_get_excitement
+	.4byte ContestAICmd_if_excitement_less_than
+	.4byte ContestAICmd_if_excitement_more_than
+	.4byte ContestAICmd_if_excitement_eq
+	.4byte ContestAICmd_if_excitement_not_eq
+	.4byte ContestAICmd_get_user_order
+	.4byte ContestAICmd_if_user_order_less_than
+	.4byte ContestAICmd_if_user_order_more_than
+	.4byte ContestAICmd_if_user_order_eq
+	.4byte ContestAICmd_if_user_order_not_eq
+	.4byte ContestAICmd_get_user_condition
+	.4byte ContestAICmd_if_user_condition_less_than
+	.4byte ContestAICmd_if_user_condition_more_than
+	.4byte ContestAICmd_if_user_condition_eq
+	.4byte ContestAICmd_if_user_condition_not_eq
+	.4byte ContestAICmd_unk_15
+	.4byte ContestAICmd_unk_1B
+	.4byte ContestAICmd_unk_17
+	.4byte ContestAICmd_unk_18
+	.4byte ContestAICmd_unk_1E
+	.4byte ContestAICmd_unk_1A
+	.4byte ContestAICmd_unk_16
+	.4byte ContestAICmd_unk_1C
+	.4byte ContestAICmd_unk_1D
+	.4byte ContestAICmd_unk_19
+	.4byte ContestAICmd_get_contest_type
+	.4byte ContestAICmd_if_contest_type_eq
+	.4byte ContestAICmd_if_contest_type_not_eq
+	.4byte ContestAICmd_get_move_excitement
+	.4byte ContestAICmd_if_move_excitement_less_than
+	.4byte ContestAICmd_if_move_excitement_greater_than
+	.4byte ContestAICmd_if_move_excitement_eq
+	.4byte ContestAICmd_if_move_excitement_not_eq
+	.4byte ContestAICmd_get_move_effect
+	.4byte ContestAICmd_if_move_effect_eq
+	.4byte ContestAICmd_if_move_effect_not_eq
+	.4byte ContestAICmd_get_move_effect_type
+	.4byte ContestAICmd_if_move_effect_type_eq
+	.4byte ContestAICmd_if_move_effect_type_not_eq
+	.4byte ContestAICmd_check_most_appealing_move
+	.4byte ContestAICmd_if_most_appealing_move
+	.4byte ContestAICmd_unk_2F
+	.4byte ContestAICmd_unk_30
+	.4byte ContestAICmd_unk_31
+	.4byte ContestAICmd_unk_32
+	.4byte ContestAICmd_if_used_combo_starter_more_than
+	.4byte ContestAICmd_if_used_combo_starter_eq
+	.4byte ContestAICmd_unk_35
+	.4byte ContestAICmd_unk_36
+	.4byte ContestAICmd_unk_37
+	.4byte ContestAICmd_unk_33
+	.4byte ContestAICmd_unk_34
+	.4byte ContestAICmd_unk_3A
+	.4byte ContestAICmd_get_move_used_count
+	.4byte ContestAICmd_if_most_used_count_less_than
+	.4byte ContestAICmd_if_most_used_count_more_than
+	.4byte ContestAICmd_if_most_used_count_eq
+	.4byte ContestAICmd_if_most_used_count_not_eq
+	.4byte ContestAICmd_check_combo_starter
+	.4byte ContestAICmd_if_combo_starter
+	.4byte ContestAICmd_if_not_combo_starter
+	.4byte ContestAICmd_check_combo_finisher
+	.4byte ContestAICmd_if_combo_finisher
+	.4byte ContestAICmd_if_not_combo_finisher
+	.4byte ContestAICmd_check_would_finish_combo
+	.4byte ContestAICmd_if_would_finish_combo
+	.4byte ContestAICmd_if_would_not_finish_combo
+	.4byte ContestAICmd_get_condition
+	.4byte ContestAICmd_if_condition_less_than
+	.4byte ContestAICmd_if_condition_more_than
+	.4byte ContestAICmd_if_condition_eq
+	.4byte ContestAICmd_if_condition_not_eq
+	.4byte ContestAICmd_get_used_combo_starter
+	.4byte ContestAICmd_if_used_combo_starter_less_than
+	.4byte ContestAICmd_unk_38
+	.4byte ContestAICmd_unk_39
+	.4byte ContestAICmd_if_used_combo_starter_not_eq
+	.4byte ContestAICmd_check_can_participate
+	.4byte ContestAICmd_if_can_participate
+	.4byte ContestAICmd_if_cannot_participate
+	.4byte ContestAICmd_get_val_812A188
+	.4byte ContestAICmd_unk_57
+	.4byte ContestAICmd_contest_58
+	.4byte ContestAICmd_unk_59
+	.4byte ContestAICmd_unk_5A
+	.4byte ContestAICmd_unk_5B
+	.4byte ContestAICmd_unk_5C
+	.4byte ContestAICmd_unk_5D
+	.4byte ContestAICmd_unk_5E
+	.4byte ContestAICmd_unk_5F
+	.4byte ContestAICmd_unk_60
+	.4byte ContestAICmd_unk_61
+	.4byte ContestAICmd_unk_62
+	.4byte ContestAICmd_unk_63
+	.4byte ContestAICmd_unk_64
+	.4byte ContestAICmd_unk_65
+	.4byte ContestAICmd_unk_66
+	.4byte ContestAICmd_unk_67
+	.4byte ContestAICmd_unk_68
+	.4byte ContestAICmd_unk_69
+	.4byte ContestAICmd_unk_6A
+	.4byte ContestAICmd_unk_6B
+	.4byte ContestAICmd_unk_6C
+	.4byte ContestAICmd_unk_6D
+	.4byte ContestAICmd_unk_6E
+	.4byte ContestAICmd_unk_6F
+	.4byte ContestAICmd_unk_70
+	.4byte ContestAICmd_unk_71
+	.4byte ContestAICmd_unk_72
+	.4byte ContestAICmd_unk_74
+	.4byte ContestAICmd_unk_73
+	.4byte ContestAICmd_unk_75
+	.4byte ContestAICmd_unk_76
+	.4byte ContestAICmd_unk_77
+	.4byte ContestAICmd_unk_78
+	.4byte ContestAICmd_unk_79
+	.4byte ContestAICmd_unk_7A
+	.4byte ContestAICmd_unk_7B
+	.4byte ContestAICmd_unk_7C
+	.4byte ContestAICmd_if_random
+	.4byte ContestAICmd_unk_7E
+	.4byte ContestAICmd_jump
+	.4byte ContestAICmd_call
+	.4byte ContestAICmd_end
+	.4byte ContestAICmd_check_user_has_exciting_move
+	.4byte ContestAICmd_if_user_has_exciting_move
+	.4byte ContestAICmd_if_user_doesnt_have_exciting_move
+	.4byte ContestAICmd_unk_85
+	.4byte ContestAICmd_unk_86
+	.4byte ContestAICmd_if_effect_in_user_moveset
 	.globl gUnknown_85ACD28
 gUnknown_85ACD28: @ 0x085ACD28
 	.incbin "baserom.gba", 0x5acd28, 0x380

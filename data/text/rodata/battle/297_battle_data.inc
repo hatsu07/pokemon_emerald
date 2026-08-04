@@ -191,25 +191,53 @@ gUnknown_85F79B4: @ 0x085F79B4
 	.incbin "baserom.gba", 0x5f79b4, 0x54
 	.globl gUnknown_85F7A08
 gUnknown_85F7A08: @ 0x085F7A08
-	.incbin "baserom.gba", 0x5f7a08, 0x14
+	.4byte MatchCallGetFlag_Type0
+	.4byte MatchCallGetFlag_Type1
+	.4byte MatchCallGetFlag_Type2
+	.4byte MatchCallGetFlag_Type4
+	.4byte MatchCallGetFlag_Type3
 	.globl gUnknown_85F7A1C
 gUnknown_85F7A1C: @ 0x085F7A1C
-	.incbin "baserom.gba", 0x5f7a1c, 0x14
+	.4byte MatchCallGetMapSec_Type0
+	.4byte MatchCallGetMapSec_Type1
+	.4byte MatchCallGetMapSec_Type2
+	.4byte MatchCallGetMapSec_Type4
+	.4byte MatchCallGetMapSec_Type3
 	.globl gUnknown_85F7A30
 gUnknown_85F7A30: @ 0x085F7A30
-	.incbin "baserom.gba", 0x5f7a30, 0x14
+	.4byte MatchCall_IsRematchable_Type3
+	.4byte MatchCall_IsRematchable_Type1
+	.4byte MatchCall_IsRematchable_Type2
+	.4byte MatchCall_IsRematchable_Type4
+	.4byte sub_081D0F00
 	.globl gUnknown_85F7A44
 gUnknown_85F7A44: @ 0x085F7A44
-	.incbin "baserom.gba", 0x5f7a44, 0x14
+	.4byte sub_081D0F5C
+	.4byte sub_081D0F60
+	.4byte sub_081D0F64
+	.4byte sub_081D0F68
+	.4byte MatchCall_IsRematchable_Type0
 	.globl gUnknown_85F7A58
 gUnknown_85F7A58: @ 0x085F7A58
-	.incbin "baserom.gba", 0x5f7a58, 0x14
+	.4byte MatchCall_GetRematchTableIdx_Type3
+	.4byte MatchCall_GetRematchTableIdx_Type1
+	.4byte MatchCall_GetRematchTableIdx_Type2
+	.4byte MatchCall_GetRematchTableIdx_Type4
+	.4byte MatchCall_GetRematchTableIdx_Type0
 	.globl gUnknown_85F7A6C
 gUnknown_85F7A6C: @ 0x085F7A6C
-	.incbin "baserom.gba", 0x5f7a6c, 0x14
+	.4byte MatchCall_GetMessage_Type0
+	.4byte MatchCall_GetMessage_Type1
+	.4byte MatchCall_GetMessage_Type2
+	.4byte MatchCall_GetMessage_Type4
+	.4byte MatchCall_GetMessage_Type3
 	.globl gUnknown_85F7A80
 gUnknown_85F7A80: @ 0x085F7A80
-	.incbin "baserom.gba", 0x5f7a80, 0x14
+	.4byte MatchCall_GetNameAndDesc_Type3
+	.4byte MatchCall_GetNameAndDesc_Type1
+	.4byte MatchCall_GetNameAndDesc_Type2
+	.4byte MatchCall_GetNameAndDesc_Type4
+	.4byte MatchCall_GetNameAndDesc_Type0
 	.globl gUnknown_85F7A94
 gUnknown_85F7A94: @ 0x085F7A94
 	.incbin "baserom.gba", 0x5f7a94, 0x60

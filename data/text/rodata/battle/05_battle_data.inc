@@ -8,7 +8,7 @@ gText_Rom_2C19B0: @ 0x082C19B0
 	.if (. - gText_Rom_2C19B0) < 0x5
 	.space 0x5 - (. - gText_Rom_2C19B0)
 	.endif
-	.incbin "baserom.gba", 0x2c19b5, 0x3
+	.space 0x3, 0x00
 	.globl gUnknown_82C19B8
 gUnknown_82C19B8: @ 0x082C19B8
 	.incbin "baserom.gba", 0x2c19b8, 0xe
@@ -67,7 +67,7 @@ gText_Rom_2C1C80: @ 0x082C1C80
 	.if (. - gText_Rom_2C1C80) < 0x12
 	.space 0x12 - (. - gText_Rom_2C1C80)
 	.endif
-	.incbin "baserom.gba", 0x2c1c92, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_82C1C94
 gUnknown_82C1C94: @ 0x082C1C94
 
@@ -81,7 +81,7 @@ gText_Rom_2C1C94: @ 0x082C1C94
 	.if (. - gText_Rom_2C1C94) < 0x22
 	.space 0x22 - (. - gText_Rom_2C1C94)
 	.endif
-	.incbin "baserom.gba", 0x2c1cb6, 0x2
+	.space 0x2, 0x00
 	.globl gUnknown_82C1CB8
 gUnknown_82C1CB8: @ 0x082C1CB8
 
@@ -122,7 +122,7 @@ gText_Rom_2C1D38: @ 0x082C1D38
 	.if (. - gText_Rom_2C1D38) < 0x5
 	.space 0x5 - (. - gText_Rom_2C1D38)
 	.endif
-	.incbin "baserom.gba", 0x2c1d3d, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/union_room.h:539 sText_Chat2 (+1 aliases)
 	.globl gText_Rom_2C1D40
@@ -134,7 +134,7 @@ gText_Rom_2C1D40: @ 0x082C1D40
 	.if (. - gText_Rom_2C1D40) < 0x5
 	.space 0x5 - (. - gText_Rom_2C1D40)
 	.endif
-	.incbin "baserom.gba", 0x2c1d45, 0x3
+	.space 0x3, 0x00
 
 	@ src/data/easy_chat/easy_chat_groups.h:57 easy_chat_groups_line_57 (+1 aliases)
 	.globl gText_Rom_2C1D48
@@ -146,5 +146,5 @@ gText_Rom_2C1D48: @ 0x082C1D48
 	.if (. - gText_Rom_2C1D48) < 0x5
 	.space 0x5 - (. - gText_Rom_2C1D48)
 	.endif
-	.incbin "baserom.gba", 0x2c1d4d, 0x3
+	.space 0x3, 0x00
 

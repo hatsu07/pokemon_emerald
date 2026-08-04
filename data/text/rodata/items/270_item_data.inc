@@ -19,7 +19,7 @@ gText_Rom_5CC8C3: @ 0x085CC8C3
 	.endif
 	.globl gText_Rom_5CC8C4
 	.set gText_Rom_5CC8C4, gText_Rom_5CC8C3 + 0x1
-	.incbin "baserom.gba", 0x5cc8e1, 0x3
+	.space 0x3, 0x00
 
 	@ asm/berry_crush.s:4221 sub_08022A78 (+1 aliases)
 	.globl gText_Rom_5CC8E4
@@ -103,7 +103,7 @@ gText_Rom_5CC9BA: @ 0x085CC9BA
 	.set gText_Rom_5CC9BC, gText_Rom_5CC9BA + 0x2
 	.globl gText_Rom_5CC9BC
 	.set gText_Rom_5CC9BC, gText_Rom_5CC9BA + 0x2
-	.incbin "baserom.gba", 0x5cc9c7, 0x1
+	.space 0x1, 0x00
 	.globl gUnknown_85CC9C8
 gUnknown_85CC9C8: @ 0x085CC9C8
 
@@ -117,7 +117,7 @@ gText_Rom_5CC9C8: @ 0x085CC9C8
 	.if (. - gText_Rom_5CC9C8) < 0xb
 	.space 0xb - (. - gText_Rom_5CC9C8)
 	.endif
-	.incbin "baserom.gba", 0x5cc9d3, 0x1
+	.space 0x1, 0x00
 	.globl gUnknown_85CC9D4
 gUnknown_85CC9D4: @ 0x085CC9D4
 
@@ -205,7 +205,7 @@ gText_Rom_5CCA07: @ 0x085CCA07
 	.endif
 	.globl gUnknown_85CCA08
 	.set gUnknown_85CCA08, gText_Rom_5CCA07 + 0x1
-	.incbin "baserom.gba", 0x5cca0b, 0x1
+	.space 0x1, 0x00
 	.globl gUnknown_85CCA0C
 gUnknown_85CCA0C: @ 0x085CCA0C
 
