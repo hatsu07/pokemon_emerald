@@ -519,6 +519,8 @@ gText_Rom_1F11E3: @ 0x081F11E3
 	.endif
 	.incbin "baserom.gba", 0x1f122c, 0x845
 	.include "data/text/maps/birch_lab.inc"
+
+	.incbin "baserom.gba", 0x1f28d3, 0xfb3d
 	.globl gUnknown_8202410
 gUnknown_8202410: @ 0x08202410
 	.incbin "baserom.gba", 0x202410, 0x22
