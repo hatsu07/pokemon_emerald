@@ -1074,7 +1074,9 @@ gUnknown_84E6416: @ 0x084E6416
 	.incbin "baserom.gba", 0x4e6416, 0x61a
 	.globl gUnknown_84E6A30
 gUnknown_84E6A30: @ 0x084E6A30
-	.incbin "baserom.gba", 0x4e6a30, 0x8
+	@ Resolved pointer table; original ROM range 0x4E6A30..0x4E6A37.
+	.4byte PSR_T_BIT
+	.4byte TYPE_DRAGON
 	.globl gUnknown_84E6A38
 gUnknown_84E6A38: @ 0x084E6A38
 	.4byte MetatileBehavior_IsTallGrass
@@ -1202,7 +1204,18 @@ gUnknown_84E6CA8: @ 0x084E6CA8
 	.incbin "baserom.gba", 0x4e6ca8, 0xc
 	.globl gUnknown_84E6CB4
 gUnknown_84E6CB4: @ 0x084E6CB4
-	.incbin "baserom.gba", 0x4e6cb4, 0x2c
+	@ Resolved pointer table; original ROM range 0x4E6CB4..0x4E6CDF.
+	.4byte MAP_NUM_ROUTE133
+	.4byte MovementAction_StoreAndLockAnim_Step0
+	.4byte sub_08095E28
+	.4byte MovementAction_FreeAndUnlockAnim_Step0
+	.4byte sub_08095E28
+	.4byte MovementAction_FlyUp_Step0
+	.4byte MovementAction_FlyUp_Step1
+	.4byte MovementAction_Finish
+	.4byte MovementAction_FlyDown_Step0
+	.4byte MovementAction_FlyDown_Step1
+	.4byte MovementAction_Finish
 	.globl gUnknown_84E6CE0
 gUnknown_84E6CE0: @ 0x084E6CE0
 	.incbin "baserom.gba", 0x4e6ce0, 0x25f
@@ -1256,7 +1269,33 @@ gUnknown_84E8918: @ 0x084E8918
 	.incbin "baserom.gba", 0x4e8918, 0xc
 	.globl gUnknown_84E8924
 gUnknown_84E8924: @ 0x084E8924
-	.incbin "baserom.gba", 0x4e8924, 0x68
+	@ Resolved pointer table; original ROM range 0x4E8924..0x4E898B.
+	.4byte TYPE_FIGHT
+	.4byte CoordEventWeather_Clouds
+	.4byte TYPE_FLYING
+	.4byte CoordEventWeather_Sunny
+	.4byte TYPE_POISON
+	.4byte CoordEventWeather_Dark
+	.4byte GROWTH_FAST
+	.4byte CoordEventWeather_Sandstorm
+	.4byte TYPE_ROCK
+	.4byte CoordEventWeather_Thunderstorm
+	.4byte TYPE_BUG
+	.4byte CoordEventWeather_LightRain
+	.4byte TYPE_GHOST
+	.4byte CoordEventWeather_Snow
+	.4byte TYPE_STEEL
+	.4byte CoordEventWeather_Ash
+	.4byte ABILITY_STATIC
+	.4byte CoordEventWeather_Fog
+	.4byte TYPE_FIRE
+	.4byte CoordEventWeather_DiagonalFog
+	.4byte TYPE_WATER
+	.4byte CoordEventWeather_Drought
+	.4byte MAP_NUM_ROUTE105
+	.4byte CoordEventWeather_Route119Cycle
+	.4byte MAP_NUM_ROUTE106
+	.4byte CoordEventWeather_Route123Cycle
 	.globl gUnknown_84E898C
 gUnknown_84E898C: @ 0x084E898C
 	.4byte DummyPerStepCallback

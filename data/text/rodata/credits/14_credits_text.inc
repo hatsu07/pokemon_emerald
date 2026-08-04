@@ -757,7 +757,15 @@ gUnknown_82C55BC: @ 0x082C55BC
 	.incbin "baserom.gba", 0x2c55bc, 0xf8
 	.globl gUnknown_82C56B4
 gUnknown_82C56B4: @ 0x082C56B4
-	.incbin "baserom.gba", 0x2c56b4, 0x20
+	@ Resolved pointer table; original ROM range 0x2C56B4..0x2C56D3.
+	.4byte 0
+	.4byte MAIN_RGB_WHITE
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 	.globl gUnknown_82C56D4
 gUnknown_82C56D4: @ 0x082C56D4
 	.incbin "baserom.gba", 0x2c56d4, 0x20
@@ -769,7 +777,49 @@ gUnknown_82C5704: @ 0x082C5704
 	.incbin "baserom.gba", 0x2c5704, 0x28
 	.globl gUnknown_82C572C
 gUnknown_82C572C: @ 0x082C572C
-	.incbin "baserom.gba", 0x2c572c, 0xa8
+	@ Resolved pointer table; original ROM range 0x2C572C..0x2C57D3.
+	.4byte 0
+	.4byte sub_0801F468
+	.4byte TYPE_POISON
+	.4byte sub_0801F508
+	.4byte GROWTH_FAST
+	.4byte sub_0801F540
+	.4byte TYPE_ROCK
+	.4byte sub_0801F578
+	.4byte TYPE_FIGHT
+	.4byte sub_0801F5E4
+	.4byte TYPE_BUG
+	.4byte sub_0801F5F0
+	.4byte TYPE_GHOST
+	.4byte sub_0801F63C
+	.4byte TYPE_STEEL
+	.4byte sub_0801F680
+	.4byte ABILITY_STATIC
+	.4byte sub_0801F6EC
+	.4byte TYPE_FIRE
+	.4byte sub_0801F794
+	.4byte TYPE_WATER
+	.4byte sub_0801F83C
+	.4byte TYPE_GRASS
+	.4byte sub_0801F878
+	.4byte TYPE_FLYING
+	.4byte sub_0801F954
+	.4byte TYPE_ELECTRIC
+	.4byte sub_0801F980
+	.4byte PSR_IRQ_MODE
+	.4byte sub_0801F9C4
+	.4byte PSR_SVC_MODE
+	.4byte sub_0801FA08
+	.4byte TYPE_PSYCHIC
+	.4byte sub_0801FA5C
+	.4byte TYPE_ICE
+	.4byte sub_0801FAAC
+	.4byte TYPE_DRAGON
+	.4byte sub_0801FAFC
+	.4byte TYPE_DARK
+	.4byte sub_0801FB40
+	.4byte MAP_NUM_ROUTE105
+	.4byte sub_0801FB98
 	.globl gUnknown_82C57D4
 gUnknown_82C57D4: @ 0x082C57D4
 	.incbin "baserom.gba", 0x2c57d4, 0x84

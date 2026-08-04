@@ -44,10 +44,28 @@ gUnknown_85DC1D1: @ 0x085DC1D1
 	.incbin "baserom.gba", 0x5dc1d1, 0x3
 	.globl gUnknown_85DC1D4
 gUnknown_85DC1D4: @ 0x085DC1D4
-	.incbin "baserom.gba", 0x5dc1d4, 0x20
+	@ Resolved pointer table; original ROM range 0x5DC1D4..0x5DC1F3.
+	.4byte TYPE_FIGHT
+	.4byte Swap_ActionMon
+	.4byte TYPE_FIGHT
+	.4byte Swap_ActionMon
+	.4byte TYPE_FIGHT
+	.4byte Swap_ActionMon
+	.4byte TYPE_POISON
+	.4byte Swap_ActionCancel
 	.globl gUnknown_85DC1F4
 gUnknown_85DC1F4: @ 0x085DC1F4
-	.incbin "baserom.gba", 0x5dc1f4, 0x28
+	@ Resolved pointer table; original ROM range 0x5DC1F4..0x5DC21B.
+	.4byte TYPE_FIGHT
+	.4byte Swap_ActionMon
+	.4byte TYPE_FIGHT
+	.4byte Swap_ActionMon
+	.4byte TYPE_FIGHT
+	.4byte Swap_ActionMon
+	.4byte TYPE_FLYING
+	.4byte Swap_ActionPkmnForSwap
+	.4byte TYPE_POISON
+	.4byte Swap_ActionCancel
 	.globl gUnknown_85DC21C
 gUnknown_85DC21C: @ 0x085DC21C
 

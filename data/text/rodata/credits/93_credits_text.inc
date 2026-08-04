@@ -218,7 +218,9 @@ gUnknown_8565AD4: @ 0x08565AD4
 	.incbin "baserom.gba", 0x565ad4, 0x8
 	.globl gUnknown_8565ADC
 gUnknown_8565ADC: @ 0x08565ADC
-	.incbin "baserom.gba", 0x565adc, 0x8
+	@ Resolved pointer table; original ROM range 0x565ADC..0x565AE3.
+	.4byte 0
+	.4byte TYPE_POISON
 	.globl gUnknown_8565AE4
 gUnknown_8565AE4: @ 0x08565AE4
 	.4byte sub_080E3D50

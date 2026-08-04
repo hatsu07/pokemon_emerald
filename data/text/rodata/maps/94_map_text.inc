@@ -865,7 +865,15 @@ gUnknown_85730A4: @ 0x085730A4
 	.incbin "baserom.gba", 0x5730a4, 0x70
 	.globl gUnknown_8573114
 gUnknown_8573114: @ 0x08573114
-	.incbin "baserom.gba", 0x573114, 0x20
+	@ Resolved pointer table; original ROM range 0x573114..0x573133.
+	.4byte ABILITY_LEVITATE
+	.4byte DoQuizAnswerEasyChatScreen
+	.4byte MAP_NUM_ROUTE110
+	.4byte DoQuizQuestionEasyChatScreen
+	.4byte MAP_NUM_ROUTE113
+	.4byte DoQuizSetAnswerEasyChatScreen
+	.4byte PSR_UND_MODE
+	.4byte DoQuizSetQuestionEasyChatScreen
 	.globl gUnknown_8573134
 gUnknown_8573134: @ 0x08573134
 	.incbin "baserom.gba", 0x573134, 0x1f8

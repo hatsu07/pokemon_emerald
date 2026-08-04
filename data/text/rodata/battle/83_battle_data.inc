@@ -273,7 +273,17 @@ gUnknown_85564A0: @ 0x085564A0
 	.incbin "baserom.gba", 0x5564a0, 0x18
 	.globl gUnknown_85564B8
 gUnknown_85564B8: @ 0x085564B8
-	.incbin "baserom.gba", 0x5564b8, 0x28
+	@ Resolved pointer table; original ROM range 0x5564B8..0x5564DF.
+	.4byte HandleInput_InBox
+	.4byte 0
+	.4byte HandleInput_InParty
+	.4byte TYPE_FIGHT
+	.4byte HandleInput_OnBox
+	.4byte TYPE_FLYING
+	.4byte HandleInput_OnButtons
+	.4byte TYPE_POISON
+	.4byte 0
+	.4byte 0
 	.globl gUnknown_85564E0
 gUnknown_85564E0: @ 0x085564E0
 	.incbin "baserom.gba", 0x5564e0, 0x18

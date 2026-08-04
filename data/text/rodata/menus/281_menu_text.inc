@@ -240,7 +240,9 @@ gUnknown_85DDEC0: @ 0x085DDEC0
 	.4byte StatusInflictionFadeIn
 	.globl gUnknown_85DDEC8
 gUnknown_85DDEC8: @ 0x085DDEC8
-	.incbin "baserom.gba", 0x5ddec8, 0x8
+	@ Resolved pointer table; original ROM range 0x5DDEC8..0x5DDECF.
+	.4byte DMA_32BIT
+	.4byte DMA_DREQ_ON
 	.globl gUnknown_85DDED0
 gUnknown_85DDED0: @ 0x085DDED0
 	.incbin "baserom.gba", 0x5dded0, 0x4
@@ -687,7 +689,35 @@ gUnknown_85E1636: @ 0x085E1636
 	.incbin "baserom.gba", 0x5e1636, 0x1e
 	.globl gUnknown_85E1654
 gUnknown_85E1654: @ 0x085E1654
-	.incbin "baserom.gba", 0x5e1654, 0x70
+	@ Resolved pointer table; original ROM range 0x5E1654..0x5E16C3.
+	.4byte SetUpFieldMove_Cut
+	.4byte TYPE_GHOST
+	.4byte SetUpFieldMove_Flash
+	.4byte TYPE_ELECTRIC
+	.4byte SetUpFieldMove_RockSmash
+	.4byte TYPE_ELECTRIC
+	.4byte SetUpFieldMove_Strength
+	.4byte TYPE_ELECTRIC
+	.4byte SetUpFieldMove_Surf
+	.4byte TYPE_STEEL
+	.4byte SetUpFieldMove_Fly
+	.4byte TYPE_ELECTRIC
+	.4byte SetUpFieldMove_Dive
+	.4byte TYPE_ELECTRIC
+	.4byte SetUpFieldMove_Waterfall
+	.4byte TYPE_ELECTRIC
+	.4byte SetUpFieldMove_Teleport
+	.4byte TYPE_ELECTRIC
+	.4byte sub_08135780
+	.4byte TYPE_ELECTRIC
+	.4byte SetUpFieldMove_SecretPower
+	.4byte TYPE_ELECTRIC
+	.4byte SetUpFieldMove_SoftBoiled
+	.4byte TYPE_DRAGON
+	.4byte SetUpFieldMove_SoftBoiled
+	.4byte TYPE_DRAGON
+	.4byte SetUpFieldMove_SweetScent
+	.4byte TYPE_ELECTRIC
 	.globl gUnknown_85E16C4
 gUnknown_85E16C4: @ 0x085E16C4
 	.incbin "baserom.gba", 0x5e16c4, 0xa4
@@ -726,7 +756,15 @@ gUnknown_85E18C0: @ 0x085E18C0
 	.incbin "baserom.gba", 0x5e18c0, 0x18
 	.globl gUnknown_85E18D8
 gUnknown_85E18D8: @ 0x085E18D8
-	.incbin "baserom.gba", 0x5e18d8, 0x20
+	@ Resolved pointer table; original ROM range 0x5E18D8..0x5E18F7.
+	.4byte DMA_SRC_FIXED
+	.4byte SECRET_BASE_METATILE_POWDER_SNOW_MAT_1
+	.4byte gUnknown_85CA388
+	.4byte gText_Rom_5CA36F
+	.4byte gText_Rom_5CA374
+	.4byte gText_Rom_5CA379
+	.4byte gText_Rom_5CA37E
+	.4byte gText_Rom_5CA383
 	.globl gUnknown_85E18F8
 gUnknown_85E18F8: @ 0x085E18F8
 	.incbin "baserom.gba", 0x5e18f8, 0x74

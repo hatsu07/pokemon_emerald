@@ -154,7 +154,27 @@ gUnknown_82CEC8E: @ 0x082CEC8E
 	.incbin "baserom.gba", 0x2cec8e, 0xa
 	.globl gUnknown_82CEC98
 gUnknown_82CEC98: @ 0x082CEC98
-	.incbin "baserom.gba", 0x2cec98, 0x50
+	@ Resolved pointer table; original ROM range 0x2CEC98..0x2CECE7.
+	.4byte 0
+	.4byte sub_08029064
+	.4byte TYPE_FIGHT
+	.4byte sub_0802916C
+	.4byte TYPE_FLYING
+	.4byte sub_080295A4
+	.4byte TYPE_POISON
+	.4byte sub_08029D28
+	.4byte GROWTH_FAST
+	.4byte sub_0802A074
+	.4byte TYPE_ROCK
+	.4byte sub_0802A148
+	.4byte TYPE_BUG
+	.4byte sub_0802A228
+	.4byte TYPE_GHOST
+	.4byte sub_0802A27C
+	.4byte TYPE_STEEL
+	.4byte sub_0802A3F0
+	.4byte ABILITY_STATIC
+	.4byte sub_0802A41C
 	.globl gUnknown_82CECE8
 gUnknown_82CECE8: @ 0x082CECE8
 	.incbin "baserom.gba", 0x2cece8, 0x8
@@ -263,7 +283,27 @@ gUnknown_82D1A00: @ 0x082D1A00
 	.incbin "baserom.gba", 0x2d1a00, 0x18
 	.globl gUnknown_82D1A18
 gUnknown_82D1A18: @ 0x082D1A18
-	.incbin "baserom.gba", 0x2d1a18, 0x50
+	@ Resolved pointer table; original ROM range 0x2D1A18..0x2D1A67.
+	.4byte 0
+	.4byte sub_0802CE44
+	.4byte TYPE_FIGHT
+	.4byte sub_0802CFD8
+	.4byte TYPE_FLYING
+	.4byte sub_0802D044
+	.4byte TYPE_POISON
+	.4byte sub_0802D0B0
+	.4byte GROWTH_FAST
+	.4byte sub_0802D13C
+	.4byte TYPE_ROCK
+	.4byte sub_0802D1E8
+	.4byte TYPE_BUG
+	.4byte sub_0802D28C
+	.4byte TYPE_GHOST
+	.4byte sub_0802D2D8
+	.4byte ABILITY_STATIC
+	.4byte sub_0802D420
+	.4byte TYPE_STEEL
+	.4byte sub_0802D37C
 	.globl gUnknown_82D1A68
 gUnknown_82D1A68: @ 0x082D1A68
 	.incbin "baserom.gba", 0x2d1a68, 0x3
@@ -317,7 +357,19 @@ gUnknown_82D254C: @ 0x082D254C
 	.incbin "baserom.gba", 0x2d254c, 0xc
 	.globl gUnknown_82D2558
 gUnknown_82D2558: @ 0x082D2558
-	.incbin "baserom.gba", 0x2d2558, 0x30
+	@ Resolved pointer table; original ROM range 0x2D2558..0x2D2587.
+	.4byte PSR_SYS_MODE
+	.4byte MAP_NUM_ROUTE113
+	.4byte PSR_SYS_MODE
+	.4byte MAP_NUM_ROUTE115
+	.4byte PSR_SYS_MODE
+	.4byte MAP_NUM_ROUTE115
+	.4byte PSR_SYS_MODE
+	.4byte PSR_SYS_MODE
+	.4byte MAP_NUM_ROUTE115
+	.4byte PSR_SYS_MODE
+	.4byte MAP_NUM_ROUTE115
+	.4byte PSR_SYS_MODE
 	.globl gUnknown_82D2588
 gUnknown_82D2588: @ 0x082D2588
 	.incbin "baserom.gba", 0x2d2588, 0x40

@@ -191,7 +191,12 @@ gUnknown_85C0488: @ 0x085C0488
 	.incbin "baserom.gba", 0x5c0488, 0x50c
 	.globl gUnknown_85C0994
 gUnknown_85C0994: @ 0x085C0994
-	.incbin "baserom.gba", 0x5c0994, 0x14
+	@ Resolved pointer table; original ROM range 0x5C0994..0x5C09A7.
+	.4byte MAP_NUM_ROUTE107
+	.4byte MAP_NUM_ROUTE132
+	.4byte MAP_NUM_ROUTE118
+	.4byte MAP_NUM_ROUTE109
+	.4byte PSR_ABT_MODE
 	.globl gUnknown_85C09A8
 gUnknown_85C09A8: @ 0x085C09A8
 	.incbin "baserom.gba", 0x5c09a8, 0x5

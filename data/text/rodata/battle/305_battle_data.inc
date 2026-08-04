@@ -212,13 +212,18 @@ gUnknown_890F1EC: @ 0x0890F1EC
 	.incbin "baserom.gba", 0x90f1ec, 0x30
 	.globl gUnknown_890F21C
 gUnknown_890F21C: @ 0x0890F21C
-	.incbin "baserom.gba", 0x90f21c, 0x8
+	@ Resolved pointer table; original ROM range 0x90F21C..0x90F223.
+	.4byte 0
+	.4byte ABILITY_PRESSURE
 	.globl gUnknown_890F224
 gUnknown_890F224: @ 0x0890F224
 	.incbin "baserom.gba", 0x90f224, 0x4
 	.globl gUnknown_890F228
 gUnknown_890F228: @ 0x0890F228
-	.incbin "baserom.gba", 0x90f228, 0xc
+	@ Resolved pointer table; original ROM range 0x90F228..0x90F233.
+	.4byte TYPE_ROCK
+	.4byte MAP_NUM_ROUTE110
+	.4byte OFFSET_REG_NR44
 	.globl gUnknown_890F234
 gUnknown_890F234: @ 0x0890F234
 	.incbin "baserom.gba", 0x90f234, 0xc8

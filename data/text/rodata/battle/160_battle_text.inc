@@ -282,7 +282,9 @@ gUnknown_85AD2AC: @ 0x085AD2AC
 	.incbin "baserom.gba", 0x5ad2ac, 0x4
 	.globl gUnknown_85AD2B0
 gUnknown_85AD2B0: @ 0x085AD2B0
-	.incbin "baserom.gba", 0x5ad2b0, 0x8
+	@ Resolved pointer table; original ROM range 0x5AD2B0..0x5AD2B7.
+	.4byte 0
+	.4byte ABILITY_RUN_AWAY
 	.globl gUnknown_85AD2B8
 gUnknown_85AD2B8: @ 0x085AD2B8
 	.incbin "baserom.gba", 0x5ad2b8, 0x140

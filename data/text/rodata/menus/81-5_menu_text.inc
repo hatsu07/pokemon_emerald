@@ -24,7 +24,15 @@ gUnknown_8535AFC: @ 0x08535AFC
 	.incbin "baserom.gba", 0x535afc, 0x200
 	.globl gUnknown_8535CFC
 gUnknown_8535CFC: @ 0x08535CFC
-	.incbin "baserom.gba", 0x535cfc, 0x20
+	@ Resolved pointer table; original ROM range 0x535CFC..0x535D1B.
+	.4byte 0
+	.4byte MAIN_RGB_WHITE
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 	.globl gUnknown_8535D1C
 gUnknown_8535D1C: @ 0x08535D1C
 	.incbin "baserom.gba", 0x535d1c, 0x280

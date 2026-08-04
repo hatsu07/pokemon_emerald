@@ -725,7 +725,9 @@ gText_Rom_57AA98: @ 0x0857AA98
 	.space 0x3, 0x00
 	.globl gUnknown_857AAA0
 gUnknown_857AAA0: @ 0x0857AAA0
-	.incbin "baserom.gba", 0x57aaa0, 0x8
+	@ Resolved pointer table; original ROM range 0x57AAA0..0x57AAA7.
+	.4byte OAM_SIZE_3
+	.4byte 0
 	.globl gUnknown_857AAA8
 gUnknown_857AAA8: @ 0x0857AAA8
 	.incbin "baserom.gba", 0x57aaa8, 0x58
@@ -766,7 +768,13 @@ gUnknown_857AC34: @ 0x0857AC34
 	.4byte gText_Rom_2594F8
 	.globl gUnknown_857AC54
 gUnknown_857AC54: @ 0x0857AC54
-	.incbin "baserom.gba", 0x57ac54, 0x18
+	@ Resolved pointer table; original ROM range 0x57AC54..0x57AC6B.
+	.4byte 0
+	.4byte TYPE_GRASS
+	.4byte TYPE_ELECTRIC
+	.4byte PSR_IRQ_MODE
+	.4byte PSR_SVC_MODE
+	.4byte MAP_NUM_ROUTE106
 	.globl gUnknown_857AC6C
 gUnknown_857AC6C: @ 0x0857AC6C
 	.incbin "baserom.gba", 0x57ac6c, 0x230
@@ -775,7 +783,9 @@ gUnknown_857AE9C: @ 0x0857AE9C
 	.incbin "baserom.gba", 0x57ae9c, 0x10
 	.globl gUnknown_857AEAC
 gUnknown_857AEAC: @ 0x0857AEAC
-	.incbin "baserom.gba", 0x57aeac, 0x8
+	@ Resolved pointer table; original ROM range 0x57AEAC..0x57AEB3.
+	.4byte ABILITY_TRACE
+	.4byte TYPE_STEEL
 	.globl gUnknown_857AEB4
 gUnknown_857AEB4: @ 0x0857AEB4
 	.incbin "baserom.gba", 0x57aeb4, 0xc

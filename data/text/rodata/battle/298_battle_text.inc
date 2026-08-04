@@ -85,7 +85,9 @@ gUnknown_85FA8A0: @ 0x085FA8A0
 	.incbin "baserom.gba", 0x5fa8a0, 0x18
 	.globl gUnknown_85FA8B8
 gUnknown_85FA8B8: @ 0x085FA8B8
-	.incbin "baserom.gba", 0x5fa8b8, 0x8
+	@ Resolved pointer table; original ROM range 0x5FA8B8..0x5FA8BF.
+	.4byte 0
+	.4byte OFFSET_REG_NR13
 	.globl gUnknown_85FA8C0
 gUnknown_85FA8C0: @ 0x085FA8C0
 	.incbin "baserom.gba", 0x5fa8c0, 0x20

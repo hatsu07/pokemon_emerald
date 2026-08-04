@@ -66,7 +66,11 @@ gUnknown_85FB96C: @ 0x085FB96C
 	.incbin "baserom.gba", 0x5fb96c, 0x18
 	.globl gUnknown_85FB984
 gUnknown_85FB984: @ 0x085FB984
-	.incbin "baserom.gba", 0x5fb984, 0x10
+	@ Resolved pointer table; original ROM range 0x5FB984..0x5FB993.
+	.4byte ABILITY_GUTS
+	.4byte GENDER_FEMALE_25
+	.4byte PSR_F_BIT
+	.4byte ABILITY_OVERGROW
 	.globl gUnknown_85FB994
 gUnknown_85FB994: @ 0x085FB994
 	.incbin "baserom.gba", 0x5fb994, 0x8

@@ -17,6 +17,7 @@
 	.include "constants/map.inc"
 	.include "constants/pokemon_graphics.inc"
 	.include "constants/rodata.inc"
+	.include "constants/main.inc"
 
 	.include "asm/macros/base_stats.inc"
 	.include "asm/macros/decoration.inc"

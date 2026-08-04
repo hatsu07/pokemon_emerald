@@ -4668,7 +4668,11 @@ gUnknown_85F4D1C: @ 0x085F4D1C
 	.incbin "baserom.gba", 0x5f4d1c, 0x8
 	.globl gUnknown_85F4D24
 gUnknown_85F4D24: @ 0x085F4D24
-	.incbin "baserom.gba", 0x5f4d24, 0x10
+	@ Resolved pointer table; original ROM range 0x5F4D24..0x5F4D33.
+	.4byte gUnknown_85F4228
+	.4byte TYPE_WATER
+	.4byte 0
+	.4byte 0
 	.globl gUnknown_85F4D34
 gUnknown_85F4D34: @ 0x085F4D34
 	.incbin "baserom.gba", 0x5f4d34, 0x8
@@ -4731,7 +4735,12 @@ gUnknown_85F5990: @ 0x085F5990
 	.4byte sub_081CDE60
 	.globl gUnknown_85F59AC
 gUnknown_85F59AC: @ 0x085F59AC
-	.incbin "baserom.gba", 0x5f59ac, 0x14
+	@ Resolved pointer table; original ROM range 0x5F59AC..0x5F59BF.
+	.4byte MAP_NUM_ROUTE107
+	.4byte PSR_ABT_MODE
+	.4byte MAP_NUM_ROUTE109
+	.4byte MAP_NUM_ROUTE118
+	.4byte MAP_NUM_ROUTE132
 	.globl gUnknown_85F59C0
 gUnknown_85F59C0: @ 0x085F59C0
 	.4byte sub_081CE868

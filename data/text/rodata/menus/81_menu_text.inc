@@ -126,7 +126,11 @@ gUnknown_84FCF88: @ 0x084FCF88
 	.incbin "baserom.gba", 0x4fcf88, 0x10
 	.globl gUnknown_84FCF98
 gUnknown_84FCF98: @ 0x084FCF98
-	.incbin "baserom.gba", 0x4fcf98, 0x10
+	@ Resolved pointer table; original ROM range 0x4FCF98..0x4FCFA7.
+	.4byte TAG_NONE
+	.4byte 0
+	.4byte OAM_V_FLIP
+	.4byte 0
 	.globl gUnknown_84FCFA8
 gUnknown_84FCFA8: @ 0x084FCFA8
 	.incbin "baserom.gba", 0x4fcfa8, 0x20
