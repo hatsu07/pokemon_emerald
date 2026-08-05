@@ -1,6 +1,6 @@
 	@ Decoded from ROM 0x081DB7E8-0x081DBD52.
 	@ This file is included after asm/macros/event.inc by
-	@ data/text/generated/event_scripts/000_SlateportCity_to_SootopolisCity.inc.
+	@ data/generated/event_scripts/segments/000.inc.
 	.include "asm/macros/asm.inc"
 	.include "asm/macros/map.inc"
 	.include "asm/macros/movement.inc"

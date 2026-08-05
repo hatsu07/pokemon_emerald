@@ -28,4 +28,4 @@
 	.include "asm/macros/window.inc"
 	.include "asm/macros/rodata.inc"
 
-	.include "data/rodata.inc"
+	.include "data/generated/rodata/index.inc"

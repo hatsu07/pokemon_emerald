@@ -2983,7 +2983,7 @@ gUnknown_85D3DF0: @ 0x085D3DF0
 	.globl gUnknown_85D3DFC
 gBattleDomeMovePoints:
 gUnknown_85D3DFC: @ 0x085D3DFC
-	.include "data/battle_dome_move_points.inc"
+	.include "data/battle_frontier/battle_dome/move_points.inc"
 	.globl gBattleDomeStyleThresholds
 	.globl gUnknown_85D542C
 gBattleDomeStyleThresholds:
@@ -3575,7 +3575,7 @@ gBattleDomeTourneyTreePokeballCoords: @ 0x085D5E8D
 	.byte 0 @ align struct TourneyTreeLineSection
 	.globl gBattleDomeTourneyTreeLineSections
 gBattleDomeTourneyTreeLineSections: @ 0x085D5ECC
-	.include "data/battle_dome_tourney_tree_line_sections.inc"
+	.include "data/battle_frontier/battle_dome/tourney_tree_line_sections.inc"
 	.globl gBattleDomeTourneyTreeLineSectionPointers
 	.globl gUnknown_85D678C
 gBattleDomeTourneyTreeLineSectionPointers:
@@ -3672,13 +3672,13 @@ gUnknown_85D6924: @ 0x085D6924
 	.globl gUnknown_85D6934
 gMatchCallTrainers:
 gUnknown_85D6934: @ 0x085D6934
-	.include "data/match_call_trainers.inc"
+	.include "data/match_call/trainers.inc"
 	.if (. - gMatchCallTrainers) != (64 * 20)
 	.error "Match Call trainer table has the wrong size"
 	.endif
 	.globl gMatchCallTexts
 gMatchCallTexts: @ 0x085D6E34
-	.include "data/match_call_texts.inc"
+	.include "data/match_call/texts.inc"
 	.if (. - gMatchCallTexts) != (205 * 8)
 	.error "Match Call text table has the wrong size"
 	.endif

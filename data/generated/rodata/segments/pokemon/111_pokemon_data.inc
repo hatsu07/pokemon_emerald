@@ -4651,7 +4651,7 @@ gUnknown_8590C02: @ 0x08590C02
 
 
 
-	.include "data/starter_pokemon.inc"
+	.include "data/pokemon/starter_pokemon.inc"
 
 	.globl gUnknown_8590C10
 gUnknown_8590C10: @ 0x08590C10

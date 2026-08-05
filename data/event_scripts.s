@@ -1,2 +1,2 @@
 	.section script_data, "aw", %progbits
-	.include "data/text/generated/event_scripts.inc"
+	.include "data/generated/event_scripts/index.inc"
