@@ -1,4 +1,0 @@
-	.globl gText_Rom_5CC7B8
-	.set gText_Rom_5CC7B8, gText_Rom_5CC7AE + 0xa
-	@ Replaced baserom.gba range: offset=0x5CC7BD, size=0x6
-	.byte 0x22, 0x3E, 0x27, 0x0C, 0x02, 0x00

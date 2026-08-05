@@ -1,0 +1,32 @@
+	@ src/data/easy_chat/easy_chat_group_trainer.h:22 easy_chat_group_trainer_line_22 (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_5C8C2C
+gText_Rom_5C8C2C: @ 0x085C8C2C
+	.string "サファイア$"
+	.if (. - gText_Rom_5C8C2C) != 0x6
+	.error "gText_Rom_5C8C2C must retain its original byte length"
+	.endif
+	.globl gText_Rom_5C8C2D
+	.set gText_Rom_5C8C2D, gText_Rom_5C8C2C + 0x1
+
+	@ src/data/easy_chat/easy_chat_group_trainer.h:106 easy_chat_group_trainer_line_106 (+1 aliases)
+	.globl gText_Rom_5C8C32
+gText_Rom_5C8C32: @ 0x085C8C32
+	.string "ルビー$"
+	.if (. - gText_Rom_5C8C32) > 0x4
+	.error "gText_Rom_5C8C32 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5C8C32) < 0x4
+	.space 0x4 - (. - gText_Rom_5C8C32)
+	.endif
+	.globl gUnknown_85C8C36
+gUnknown_85C8C36: @ 0x085C8C36
+
+	@ src/data/easy_chat/easy_chat_group_trainer.h:160 easy_chat_group_trainer_line_160 (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_5C8C36
+gText_Rom_5C8C36: @ 0x085C8C36
+	.string "エメラルド$"
+	.if (. - gText_Rom_5C8C36) != 0x6
+	.error "gText_Rom_5C8C36 must retain its original byte length"
+	.endif

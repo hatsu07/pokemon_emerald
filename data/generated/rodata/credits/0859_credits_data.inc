@@ -1,5 +1,0 @@
-	.globl gUnknown_8566DF5
-gUnknown_8566DF5: @ 0x08566DF5
-	@ Replaced baserom.gba range: offset=0x566DF5, size=0x5
-	.byte 0x5D, 0x63, 0x7A, 0x55, 0xB0
-

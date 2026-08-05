@@ -1,7 +1,0 @@
-	.globl gUnknown_84E8B94
-gUnknown_84E8B94: @ 0x084E8B94
-	@ Replaced baserom.gba range: offset=0x4E8B94, size=0x8
-	.byte 0x00, 0x01, 0x01, 0x08, 0x04, 0x0F, 0x08, 0x00
-	.globl gUnknown_84E8B9C
-gUnknown_84E8B9C: @ 0x084E8B9C
-
