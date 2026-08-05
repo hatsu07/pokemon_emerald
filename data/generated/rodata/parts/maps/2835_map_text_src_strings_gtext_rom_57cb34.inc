@@ -1,0 +1,13 @@
+	@ src/strings.c:623 gText_PokemonLeague
+	.globl gText_Rom_57CB34
+gText_Rom_57CB34: @ 0x0857CB34
+	.string "ポケモンリーグ$"
+	.if (. - gText_Rom_57CB34) > 0x8
+	.error "gText_Rom_57CB34 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_57CB34) < 0x8
+	.space 0x8 - (. - gText_Rom_57CB34)
+	.endif
+	@ Replaced baserom.gba range: offset=0x57CB3C, size=0x13
+	.byte 0x52, 0x7C, 0x74, 0x6F, 0x64, 0x7E, 0x68, 0x79, 0xFF, 0x1C, 0x10, 0x3B, 0x3D, 0x1F, 0xFF, 0x9F
+	.byte 0x59, 0x73, 0x7E

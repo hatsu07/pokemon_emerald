@@ -1,0 +1,14 @@
+	@ src/pokemon_storage_system.c:8084 pokemon_storage_system_line_8084
+	.globl gText_Rom_5CB39B
+gText_Rom_5CB39B: @ 0x085CB39B
+	.string "ようすをみる$"
+	.if (. - gText_Rom_5CB39B) > 0x7
+	.error "gText_Rom_5CB39B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5CB39B) < 0x7
+	.space 0x7 - (. - gText_Rom_5CB39B)
+	.endif
+	@ Replaced baserom.gba range: offset=0x5CB3A2, size=0x15
+	.byte 0x16, 0x37, 0x0D, 0x00, 0x00, 0x00, 0xFF, 0x6F, 0xAE, 0x57, 0x7E, 0x89, 0x00, 0xFF, 0x15, 0x1F
+	.byte 0x04, 0x00, 0x00, 0x00, 0xFF
+

@@ -1,0 +1,9 @@
+	.globl gUnknown_82C2B38
+	.set gUnknown_82C2B38, gText_Rom_2C2B37 + 0x1
+	.globl gUnknown_82C2B44
+gUnknown_82C2B44: @ 0x082C2B44
+	@ Replaced baserom.gba range: offset=0x2C2B44, size=0xC
+	.byte 0x1C, 0x0C, 0x38, 0x15, 0x05, 0x08, 0x28, 0x23, 0x19, 0xFF, 0x00, 0x00
+	.globl gUnknown_82C2B50
+gUnknown_82C2B50: @ 0x082C2B50
+

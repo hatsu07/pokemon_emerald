@@ -1,0 +1,7 @@
+	.globl gUnknown_85AB034
+gUnknown_85AB034: @ 0x085AB034
+	@ Replaced baserom.gba range: offset=0x5AB034, size=0x8
+	.byte 0xFD, 0x0F, 0xFD, 0x00, 0xFE, 0xFD, 0x01, 0xFF
+	.globl gUnknown_85AB03C
+gUnknown_85AB03C: @ 0x085AB03C
+

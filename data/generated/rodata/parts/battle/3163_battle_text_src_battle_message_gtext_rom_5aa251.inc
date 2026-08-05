@@ -1,0 +1,13 @@
+	@ src/battle_message.c:342 battle_message_line_342
+	.globl gText_Rom_5AA251
+gText_Rom_5AA251: @ 0x085AA251
+	.string "{B_DEF_NAME_WITH_PREFIX}は\nいちゃもんを つけられた!$"
+	.if (. - gText_Rom_5AA251) > 0x12
+	.error "gText_Rom_5AA251 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5AA251) < 0x12
+	.space 0x12 - (. - gText_Rom_5AA251)
+	.endif
+	@ Replaced baserom.gba range: offset=0x5AA263, size=0x17
+	.byte 0xFD, 0x0F, 0x1A, 0xFE, 0x0C, 0x35, 0x03, 0x11, 0x35, 0x03, 0x28, 0x36, 0x08, 0x2D, 0x00, 0x10
+	.byte 0x06, 0x22, 0x13, 0x02, 0x29, 0xAB, 0xFF

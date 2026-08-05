@@ -1,0 +1,10 @@
+	@ src/data/easy_chat/easy_chat_group_trainer.h:70 easy_chat_group_trainer_line_70 (+1 aliases)
+	.globl gText_Rom_579E71
+gText_Rom_579E71: @ 0x08579E71
+	.string "トレーナー$"
+	.if (. - gText_Rom_579E71) > 0x6
+	.error "gText_Rom_579E71 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_579E71) < 0x6
+	.space 0x6 - (. - gText_Rom_579E71)
+	.endif

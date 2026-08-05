@@ -1,0 +1,13 @@
+	@ src/battle_message.c:228 battle_message_line_228
+	.globl gText_Rom_5A9935
+gText_Rom_5A9935: @ 0x085A9935
+	.string "{B_EFF_NAME_WITH_PREFIX}は\nこおりづけになった!$"
+	.if (. - gText_Rom_5A9935) > 0xf
+	.error "gText_Rom_5A9935 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5A9935) < 0xf
+	.space 0xf - (. - gText_Rom_5A9935)
+	.endif
+	@ Replaced baserom.gba range: offset=0x5A9944, size=0x17
+	.byte 0xFD, 0x13, 0x19, 0x00, 0xFD, 0x1A, 0x44, 0xFE, 0xFD, 0x11, 0x1A, 0x00, 0x0A, 0x05, 0x28, 0x43
+	.byte 0x09, 0x16, 0x15, 0x50, 0x10, 0xAB, 0xFF
