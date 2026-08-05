@@ -41,7 +41,8 @@ gText_Rom_4E8B65: @ 0x084E8B65
 	.if (. - gText_Rom_4E8B65) < 0x5
 	.space 0x5 - (. - gText_Rom_4E8B65)
 	.endif
-	.incbin "baserom.gba", 0x4e8b6a, 0x3
+	@ Replaced baserom.gba range: offset=0x4E8B6A, size=0x3
+	.byte 0xFD, 0x01, 0xFF
 
 	@ src/strings.c:494 gText_MenuOptionSave (+1 aliases)
 	.globl gText_Rom_4E8B6D

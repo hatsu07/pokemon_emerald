@@ -8,7 +8,8 @@ gText_Rom_57CB07: @ 0x0857CB07
 	.if (. - gText_Rom_57CB07) < 0xa
 	.space 0xa - (. - gText_Rom_57CB07)
 	.endif
-	.incbin "baserom.gba", 0x57cb11, 0x6
+	@ Replaced baserom.gba range: offset=0x57CB11, size=0x6
+	.byte 0x7B, 0x59, 0xA0, 0x64, 0x41, 0x2E
 
 	@ src/strings.c:640 gText_Hideout
 	.globl gText_Rom_57CB17
@@ -20,7 +21,9 @@ gText_Rom_57CB17: @ 0x0857CB17
 	.if (. - gText_Rom_57CB17) < 0x4
 	.space 0x4 - (. - gText_Rom_57CB17)
 	.endif
-	.incbin "baserom.gba", 0x57cb1b, 0x11
+	@ Replaced baserom.gba range: offset=0x57CB1B, size=0x11
+	.byte 0x5C, 0x79, 0x6C, 0x56, 0x7E, 0x9B, 0x66, 0xAE, 0xFF, 0x9F, 0x59, 0x73, 0x7E, 0x24, 0x0C, 0x07
+	.byte 0xFF
 
 	@ src/data/region_map/region_map_entries.h:413 region_map_entries_line_413
 	.globl gText_Rom_57CB2C
@@ -43,7 +46,9 @@ gText_Rom_57CB34: @ 0x0857CB34
 	.if (. - gText_Rom_57CB34) < 0x8
 	.space 0x8 - (. - gText_Rom_57CB34)
 	.endif
-	.incbin "baserom.gba", 0x57cb3c, 0x13
+	@ Replaced baserom.gba range: offset=0x57CB3C, size=0x13
+	.byte 0x52, 0x7C, 0x74, 0x6F, 0x64, 0x7E, 0x68, 0x79, 0xFF, 0x1C, 0x10, 0x3B, 0x3D, 0x1F, 0xFF, 0x9F
+	.byte 0x59, 0x73, 0x7E
 
 	@ src/data/easy_chat/easy_chat_group_events.h:25 gEasyChatWord_Tower (+1 aliases)
 	.globl gText_Rom_57CB4F
@@ -55,5 +60,6 @@ gText_Rom_57CB4F: @ 0x0857CB4F
 	.if (. - gText_Rom_57CB4F) < 0x4
 	.space 0x4 - (. - gText_Rom_57CB4F)
 	.endif
-	.incbin "baserom.gba", 0x57cb53, 0x4
+	@ Replaced baserom.gba range: offset=0x57CB53, size=0x4
+	.byte 0x6A, 0x65, 0x91, 0x19
 

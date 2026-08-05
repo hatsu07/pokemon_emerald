@@ -8,7 +8,8 @@ gText_Rom_5CAE7B: @ 0x085CAE7B
 	.if (. - gText_Rom_5CAE7B) < 0x5
 	.space 0x5 - (. - gText_Rom_5CAE7B)
 	.endif
-	.incbin "baserom.gba", 0x5cae80, 0x6
+	@ Replaced baserom.gba range: offset=0x5CAE80, size=0x6
+	.byte 0x95, 0xAE, 0x95, 0x78, 0x55, 0x19
 
 	@ src/data/union_room.h:555 sText_BerryPicking
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -42,7 +43,8 @@ gText_Rom_5CAE94: @ 0x085CAE94
 	.endif
 	.globl gText_Rom_5CAE99
 	.set gText_Rom_5CAE99, gText_Rom_5CAE94 + 0x5
-	.incbin "baserom.gba", 0x5cae9d, 0x7
+	@ Replaced baserom.gba range: offset=0x5CAE9D, size=0x7
+	.byte 0xA3, 0x12, 0x19, 0x5A, 0xAE, 0x5D, 0xFF
 
 	@ src/strings.c:468 gText_Lv50
 	.globl gText_Rom_5CAEA4
@@ -65,7 +67,9 @@ gText_Rom_5CAEAA: @ 0x085CAEAA
 	.endif
 	.globl gText_Rom_5CAEAE
 	.set gText_Rom_5CAEAE, gText_Rom_5CAEAA + 0x4
-	.incbin "baserom.gba", 0x5caeb2, 0x11
+	@ Replaced baserom.gba range: offset=0x5CAEB2, size=0x11
+	.byte 0x9F, 0x59, 0x73, 0x7E, 0x19, 0x0C, 0x35, 0x29, 0x02, 0x14, 0x06, 0x3E, 0xFF, 0x23, 0x10, 0x0E
+	.byte 0x29
 
 	@ src/data/easy_chat/easy_chat_group_lifestyle.h:178 easy_chat_group_lifestyle_line_178 (+1 aliases)
 	.globl gText_Rom_5CAEC3
@@ -88,7 +92,8 @@ gText_Rom_5CAEC7: @ 0x085CAEC7
 	.if (. - gText_Rom_5CAEC7) < 0x5
 	.space 0x5 - (. - gText_Rom_5CAEC7)
 	.endif
-	.incbin "baserom.gba", 0x5caecc, 0x5
+	@ Replaced baserom.gba range: offset=0x5CAECC, size=0x5
+	.byte 0x10, 0x02, 0x0E, 0x2E, 0x19
 
 	@ src/data/script_menu.h:450 gText_Record2 (+1 aliases)
 	.globl gText_Rom_5CAED1
@@ -111,5 +116,6 @@ gText_Rom_5CAED5: @ 0x085CAED5
 	.endif
 	.globl gText_Rom_5CAED8
 	.set gText_Rom_5CAED8, gText_Rom_5CAED5 + 0x3
-	.incbin "baserom.gba", 0x5caedd, 0xd
+	@ Replaced baserom.gba range: offset=0x5CAEDD, size=0xD
+	.byte 0x60, 0x7C, 0xAE, 0x16, 0x12, 0x02, 0x13, 0xFF, 0x12, 0x2A, 0x13, 0x02, 0x08
 

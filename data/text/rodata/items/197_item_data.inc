@@ -71,7 +71,8 @@ gText_Rom_5C9853: @ 0x085C9853
 	.if (. - gText_Rom_5C9853) < 0x4
 	.space 0x4 - (. - gText_Rom_5C9853)
 	.endif
-	.incbin "baserom.gba", 0x5c9857, 0x5
+	@ Replaced baserom.gba range: offset=0x5C9857, size=0x5
+	.byte 0x0A, 0x1F, 0x06, 0x0B, 0xFF
 	.globl gUnknown_85C985C
 gUnknown_85C985C: @ 0x085C985C
 

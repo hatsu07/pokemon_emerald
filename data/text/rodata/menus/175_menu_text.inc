@@ -118,7 +118,8 @@ gText_Rom_5C8E37: @ 0x085C8E37
 	.endif
 	.globl gText_Rom_5C8E3C
 	.set gText_Rom_5C8E3C, gText_Rom_5C8E37 + 0x5
-	.incbin "baserom.gba", 0x5c8e41, 0xb
+	@ Replaced baserom.gba range: offset=0x5C8E41, size=0xB
+	.byte 0x00, 0x00, 0x00, 0xF8, 0x0A, 0x04, 0x27, 0x48, 0x00, 0xF8, 0x00
 
 	@ src/strings.c:134 gMenuText_Confirm (+2 aliases)
 	.globl gText_Rom_5C8E4C
@@ -157,7 +158,8 @@ gText_Rom_5C8E5C: @ 0x085C8E5C
 	.space 0x1, 0x00
 	.globl gUnknown_85C8E68
 gUnknown_85C8E68: @ 0x085C8E68
-	.incbin "baserom.gba", 0x5c8e68, 0xd
+	@ Replaced baserom.gba range: offset=0x5C8E68, size=0xD
+	.byte 0xF8, 0x0A, 0x04, 0x27, 0x48, 0x00, 0xF8, 0x00, 0x12, 0x38, 0x00, 0xF8, 0x01
 
 	@ src/strings.c:1046 gText_Exit3 (+1 aliases)
 	.globl gText_Rom_5C8E75
@@ -172,7 +174,8 @@ gText_Rom_5C8E75: @ 0x085C8E75
 	.space 0x3, 0x00
 	.globl gUnknown_85C8E7C
 gUnknown_85C8E7C: @ 0x085C8E7C
-	.incbin "baserom.gba", 0x5c8e7c, 0xa
+	@ Replaced baserom.gba range: offset=0x5C8E7C, size=0xA
+	.byte 0xF8, 0x0A, 0x04, 0x27, 0x48, 0x00, 0xF8, 0x00, 0xF8, 0x01
 
 	@ src/strings.c:1046 gText_Exit3 (+1 aliases)
 	.globl gText_Rom_5C8E86
@@ -243,7 +246,8 @@ gText_Rom_5C8EA0: @ 0x085C8EA0
 	.if (. - gText_Rom_5C8EA0) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8EA0)
 	.endif
-	.incbin "baserom.gba", 0x5c8ea4, 0x8
+	@ Replaced baserom.gba range: offset=0x5C8EA4, size=0x8
+	.byte 0xFF, 0xFF, 0x59, 0x52, 0xFF, 0xFF, 0xFF, 0xFF
 
 	@ src/main_menu.c:484 main_menu_line_484
 	.globl gText_Rom_5C8EAC
@@ -326,7 +330,8 @@ gText_Rom_5C8ED0: @ 0x085C8ED0
 	.if (. - gText_Rom_5C8ED0) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8ED0)
 	.endif
-	.incbin "baserom.gba", 0x5c8ed4, 0x8
+	@ Replaced baserom.gba range: offset=0x5C8ED4, size=0x8
+	.byte 0xFF, 0xFF, 0x64, 0x71, 0xFF, 0xFF, 0xFF, 0xFF
 
 	@ src/main_menu.c:492 main_menu_line_492
 	.globl gText_Rom_5C8EDC
@@ -457,7 +462,8 @@ gText_Rom_5C8F18: @ 0x085C8F18
 	.if (. - gText_Rom_5C8F18) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F18)
 	.endif
-	.incbin "baserom.gba", 0x5c8f1c, 0x8
+	@ Replaced baserom.gba range: offset=0x5C8F1C, size=0x8
+	.byte 0xFF, 0xFF, 0x51, 0x7E, 0xFF, 0xFF, 0xFF, 0xFF
 
 	@ src/main_menu.c:507 main_menu_line_507
 	.globl gText_Rom_5C8F24
@@ -504,7 +510,8 @@ gText_Rom_5C8F34: @ 0x085C8F34
 	.if (. - gText_Rom_5C8F34) < 0x5
 	.space 0x5 - (. - gText_Rom_5C8F34)
 	.endif
-	.incbin "baserom.gba", 0x5c8f39, 0xd
+	@ Replaced baserom.gba range: offset=0x5C8F39, size=0xD
+	.byte 0xFF, 0x5B, 0x54, 0xFF, 0xFF, 0xFF, 0xFF, 0x5D, 0x52, 0xFF, 0xFF, 0xFF, 0xFF
 
 	@ src/main_menu.c:513 main_menu_line_513
 	.globl gText_Rom_5C8F46
@@ -564,7 +571,8 @@ gText_Rom_5C8F5E: @ 0x085C8F5E
 	.if (. - gText_Rom_5C8F5E) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F5E)
 	.endif
-	.incbin "baserom.gba", 0x5c8f62, 0x8
+	@ Replaced baserom.gba range: offset=0x5C8F62, size=0x8
+	.byte 0xFF, 0xFF, 0x6B, 0x65, 0xFF, 0xFF, 0xFF, 0xFF
 
 	@ src/main_menu.c:519 main_menu_line_519
 	.globl gText_Rom_5C8F6A

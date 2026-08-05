@@ -10,7 +10,8 @@ gText_Rom_5C8FD6: @ 0x085C8FD6
 	.endif
 	.globl gUnknown_85C8FDB
 gUnknown_85C8FDB: @ 0x085C8FDB
-	.incbin "baserom.gba", 0x5c8fdb, 0x2
+	@ Replaced baserom.gba range: offset=0x5C8FDB, size=0x2
+	.byte 0x14, 0xFF
 	.globl gUnknown_85C8FDD
 gUnknown_85C8FDD: @ 0x085C8FDD
 
@@ -362,7 +363,8 @@ gText_Rom_5C9179: @ 0x085C9179
 	.if (. - gText_Rom_5C9179) < 0x7
 	.space 0x7 - (. - gText_Rom_5C9179)
 	.endif
-	.incbin "baserom.gba", 0x5c9180, 0x6
+	@ Replaced baserom.gba range: offset=0x5C9180, size=0x6
+	.byte 0x01, 0x06, 0xFF, 0x01, 0x05, 0xFF
 
 	@ src/strings.c:94 gText_DexSearchColorYellow
 	.globl gText_Rom_5C9186

@@ -8,7 +8,8 @@ gText_Rom_5CAAC1: @ 0x085CAAC1
 	.if (. - gText_Rom_5CAAC1) < 0x4
 	.space 0x4 - (. - gText_Rom_5CAAC1)
 	.endif
-	.incbin "baserom.gba", 0x5caac5, 0x5
+	@ Replaced baserom.gba range: offset=0x5CAAC5, size=0x5
+	.byte 0x26, 0x21, 0x19, 0x2D, 0x00
 
 	@ src/pokemon_storage_system.c:8078 pokemon_storage_system_line_8078 (+5 aliases)
 	.globl gText_Rom_5CAACA
@@ -20,7 +21,8 @@ gText_Rom_5CAACA: @ 0x085CAACA
 	.if (. - gText_Rom_5CAACA) < 0x4
 	.space 0x4 - (. - gText_Rom_5CAACA)
 	.endif
-	.incbin "baserom.gba", 0x5caace, 0xa
+	@ Replaced baserom.gba range: offset=0x5CAACE, size=0xA
+	.byte 0x20, 0x1F, 0x0C, 0x10, 0xFF, 0x0A, 0x2A, 0x06, 0x27, 0xFF
 	.globl gUnknown_85CAAD8
 gUnknown_85CAAD8: @ 0x085CAAD8
 

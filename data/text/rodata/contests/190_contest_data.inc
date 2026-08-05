@@ -10,7 +10,8 @@ gText_Rom_5C9401: @ 0x085C9401
 	.endif
 	.globl gUnknown_85C9403
 gUnknown_85C9403: @ 0x085C9403
-	.incbin "baserom.gba", 0x5c9403, 0x3
+	@ Replaced baserom.gba range: offset=0x5C9403, size=0x3
+	.byte 0xAE, 0xAE, 0xFF
 	.globl gUnknown_85C9406
 gUnknown_85C9406: @ 0x085C9406
 
@@ -52,10 +53,12 @@ gText_Rom_5C940C: @ 0x085C940C
 	.endif
 	.globl gUnknown_85C940E
 gUnknown_85C940E: @ 0x085C940E
-	.incbin "baserom.gba", 0x5c940e, 0x3
+	@ Replaced baserom.gba range: offset=0x5C940E, size=0x3
+	.byte 0xF9, 0x05, 0xFF
 	.globl gUnknown_85C9411
 gUnknown_85C9411: @ 0x085C9411
-	.incbin "baserom.gba", 0x5c9411, 0x9
+	@ Replaced baserom.gba range: offset=0x5C9411, size=0x9
+	.byte 0xF9, 0x08, 0xFF, 0xF9, 0x04, 0xFF, 0xF9, 0x03, 0xFF
 	.globl gUnknown_85C941A
 gUnknown_85C941A: @ 0x085C941A
 

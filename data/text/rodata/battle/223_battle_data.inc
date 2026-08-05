@@ -47,7 +47,8 @@ gText_Rom_5CADBB: @ 0x085CADBB
 	.if (. - gText_Rom_5CADBB) < 0x5
 	.space 0x5 - (. - gText_Rom_5CADBB)
 	.endif
-	.incbin "baserom.gba", 0x5cadc0, 0x6
+	@ Replaced baserom.gba range: offset=0x5CADC0, size=0x6
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF
 	.globl gUnknown_85CADC6
 gUnknown_85CADC6: @ 0x085CADC6
 

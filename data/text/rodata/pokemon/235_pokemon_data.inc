@@ -8,7 +8,8 @@ gText_Rom_5CAFCC: @ 0x085CAFCC
 	.endif
 	.globl gText_Rom_5CAFCD
 	.set gText_Rom_5CAFCD, gText_Rom_5CAFCC + 0x1
-	.incbin "baserom.gba", 0x5cafd1, 0x5
+	@ Replaced baserom.gba range: offset=0x5CAFD1, size=0x5
+	.byte 0x23, 0x10, 0x0E, 0x10, 0x00
 
 	@ src/data/easy_chat/easy_chat_group_lifestyle.h:178 easy_chat_group_lifestyle_line_178 (+1 aliases)
 	.globl gText_Rom_5CAFD6
@@ -20,7 +21,8 @@ gText_Rom_5CAFD6: @ 0x085CAFD6
 	.if (. - gText_Rom_5CAFD6) < 0x4
 	.space 0x4 - (. - gText_Rom_5CAFD6)
 	.endif
-	.incbin "baserom.gba", 0x5cafda, 0xc
+	@ Replaced baserom.gba range: offset=0x5CAFDA, size=0xC
+	.byte 0x9F, 0x59, 0x73, 0x7E, 0x19, 0x00, 0x3D, 0x35, 0x2E, 0x46, 0x2E, 0xFF
 
 	@ src/strings.c:510 gText_BattlePokemon
 	@ Preserve exact byte length: semantic suffix text pointer.

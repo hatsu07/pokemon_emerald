@@ -34,10 +34,12 @@ gText_Rom_5C8C36: @ 0x085C8C36
 	.set gText_Rom_5C8C38, gText_Rom_5C8C36 + 0x2
 	.globl gUnknown_85C8C3C
 gUnknown_85C8C3C: @ 0x085C8C3C
-	.incbin "baserom.gba", 0x5c8c3c, 0x4
+	@ Replaced baserom.gba range: offset=0x5C8C3C, size=0x4
+	.byte 0x51, 0x58, 0x51, 0xFF
 	.globl gUnknown_85C8C40
 gUnknown_85C8C40: @ 0x085C8C40
-	.incbin "baserom.gba", 0x5c8c40, 0x4
+	@ Replaced baserom.gba range: offset=0x5C8C40, size=0x4
+	.byte 0x6F, 0x89, 0x6F, 0xFF
 	.globl gUnknown_85C8C44
 gUnknown_85C8C44: @ 0x085C8C44
 

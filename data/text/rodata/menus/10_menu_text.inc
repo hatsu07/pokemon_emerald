@@ -102,7 +102,8 @@ gText_Rom_2C1DD8: @ 0x082C1DD8
 	.endif
 	.globl gText_Rom_2C1DDA
 	.set gText_Rom_2C1DDA, gText_Rom_2C1DD8 + 0x2
-	.incbin "baserom.gba", 0x2c1dde, 0x6
+	@ Replaced baserom.gba range: offset=0x2C1DDE, size=0x6
+	.byte 0x00, 0x00, 0x5B, 0xAE, 0x61, 0xFF
 
 	@ src/data/union_room.h:557 sText_BerryBlender
 	.globl gText_Rom_2C1DE4
@@ -114,5 +115,6 @@ gText_Rom_2C1DE4: @ 0x082C1DE4
 	.if (. - gText_Rom_2C1DE4) < 0x9
 	.space 0x9 - (. - gText_Rom_2C1DE4)
 	.endif
-	.incbin "baserom.gba", 0x2c1ded, 0xf
+	@ Replaced baserom.gba range: offset=0x2C1DED, size=0xF
+	.byte 0x00, 0x00, 0x00, 0x7A, 0x5A, 0xAE, 0x95, 0x5A, 0xAE, 0x65, 0xAE, 0xFF, 0x00, 0x00, 0x00
 

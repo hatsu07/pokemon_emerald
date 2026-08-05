@@ -668,7 +668,8 @@ gText_Rom_57C908: @ 0x0857C908
 	.if (. - gText_Rom_57C908) < 0x7
 	.space 0x7 - (. - gText_Rom_57C908)
 	.endif
-	.incbin "baserom.gba", 0x57c90f, 0x5
+	@ Replaced baserom.gba range: offset=0x57C90F, size=0x5
+	.byte 0xFD, 0x08, 0x41, 0x2E, 0x00
 
 	@ src/strings.c:640 gText_Hideout
 	.globl gText_Rom_57C914
@@ -713,7 +714,8 @@ gText_Rom_57C92A: @ 0x0857C92A
 	.if (. - gText_Rom_57C92A) < 0xa
 	.space 0xa - (. - gText_Rom_57C92A)
 	.endif
-	.incbin "baserom.gba", 0x57c934, 0x7
+	@ Replaced baserom.gba range: offset=0x57C934, size=0x7
+	.byte 0x1F, 0x4A, 0x2B, 0x0C, 0x3D, 0x1F, 0xFF
 
 	@ src/data/region_map/region_map_entries.h:518 region_map_entries_line_518 (+1 aliases)
 	.globl gText_Rom_57C93B
@@ -725,7 +727,8 @@ gText_Rom_57C93B: @ 0x0857C93B
 	.if (. - gText_Rom_57C93B) < 0x8
 	.space 0x8 - (. - gText_Rom_57C93B)
 	.endif
-	.incbin "baserom.gba", 0x57c943, 0x9
+	@ Replaced baserom.gba range: offset=0x57C943, size=0x9
+	.byte 0x20, 0x15, 0x20, 0x19, 0x00, 0x0A, 0x14, 0x03, 0xFF
 
 	@ src/data/region_map/region_map_entries.h:532 region_map_entries_line_532
 	.globl gText_Rom_57C94C
@@ -748,7 +751,8 @@ gText_Rom_57C955: @ 0x0857C955
 	.if (. - gText_Rom_57C955) < 0x9
 	.space 0x9 - (. - gText_Rom_57C955)
 	.endif
-	.incbin "baserom.gba", 0x57c95e, 0x9
+	@ Replaced baserom.gba range: offset=0x57C95E, size=0x9
+	.byte 0x05, 0x1C, 0x2A, 0x19, 0x0E, 0x07, 0x0C, 0x12, 0xFF
 
 	@ src/data/region_map/region_map_entries.h:574 region_map_entries_line_574
 	.globl gText_Rom_57C967
@@ -826,5 +830,6 @@ gText_Rom_57C994: @ 0x0857C994
 	.if (. - gText_Rom_57C994) < 0x6
 	.space 0x6 - (. - gText_Rom_57C994)
 	.endif
-	.incbin "baserom.gba", 0x57c99a, 0xf
+	@ Replaced baserom.gba range: offset=0x57C99A, size=0xF
+	.byte 0x14, 0x08, 0x0C, 0x35, 0xFF, 0x6F, 0x5B, 0x77, 0x60, 0x53, 0x7E, 0xFF, 0x64, 0x57, 0x7C
 

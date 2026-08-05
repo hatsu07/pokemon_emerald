@@ -133,5 +133,6 @@ gText_Rom_5CB6C2: @ 0x085CB6C2
 	.if (. - gText_Rom_5CB6C2) < 0x6
 	.space 0x6 - (. - gText_Rom_5CB6C2)
 	.endif
-	.incbin "baserom.gba", 0x5cb6c8, 0x5
+	@ Replaced baserom.gba range: offset=0x5CB6C8, size=0x5
+	.byte 0x26, 0x47, 0x41, 0x0D, 0xFF
 

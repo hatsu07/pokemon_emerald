@@ -10,7 +10,8 @@ gText_Rom_5CC350: @ 0x085CC350
 	.set gText_Rom_5CC356, gText_Rom_5CC350 + 0x6
 	.globl gUnknown_85CC35A
 gUnknown_85CC35A: @ 0x085CC35A
-	.incbin "baserom.gba", 0x5cc35a, 0xd
+	@ Replaced baserom.gba range: offset=0x5CC35A, size=0xD
+	.byte 0x1A, 0x3D, 0x22, 0x13, 0x19, 0x44, 0x2E, 0x45, 0x03, 0x02, 0x28, 0x00, 0xFF
 
 	@ asm/trainer_card.s:2808 PrintLinkResultsNumsOnCard (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -35,7 +36,8 @@ gText_Rom_5CC370: @ 0x085CC370
 	.set gText_Rom_5CC374, gText_Rom_5CC370 + 0x4
 	.globl gUnknown_85CC379
 gUnknown_85CC379: @ 0x085CC379
-	.incbin "baserom.gba", 0x5cc379, 0xa
+	@ Replaced baserom.gba range: offset=0x5CC379, size=0xA
+	.byte 0x06, 0x11, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1F, 0x09, 0xFF
 	.globl gUnknown_85CC383
 gUnknown_85CC383: @ 0x085CC383
 

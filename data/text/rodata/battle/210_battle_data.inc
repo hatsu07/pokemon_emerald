@@ -30,7 +30,8 @@ gText_Rom_5CA894: @ 0x085CA894
 	.if (. - gText_Rom_5CA894) < 0x4
 	.space 0x4 - (. - gText_Rom_5CA894)
 	.endif
-	.incbin "baserom.gba", 0x5ca898, 0x5
+	@ Replaced baserom.gba range: offset=0x5CA898, size=0x5
+	.byte 0x5B, 0x91, 0x6A, 0x79, 0xFF
 
 	@ src/player_pc.c:194 player_pc_line_194
 	.globl gText_Rom_5CA89D

@@ -142,7 +142,8 @@ gText_Rom_5CC9D9: @ 0x085CC9D9
 	.endif
 	.globl gText_Rom_5CC9DB
 	.set gText_Rom_5CC9DB, gText_Rom_5CC9D9 + 0x2
-	.incbin "baserom.gba", 0x5cc9df, 0x7
+	@ Replaced baserom.gba range: offset=0x5CC9DF, size=0x7
+	.byte 0x00, 0xFD, 0x02, 0xB8, 0xFD, 0x03, 0xFF
 
 	@ src/strings.c:768 gText_Var1Berry
 	.globl gText_Rom_5CC9E6
@@ -193,7 +194,8 @@ gText_Rom_5CC9FA: @ 0x085CC9FA
 	.set gUnknown_85CC9FC, gText_Rom_5CC9FA + 0x2
 	.globl gUnknown_85CCA04
 gUnknown_85CCA04: @ 0x085CCA04
-	.incbin "baserom.gba", 0x5cca04, 0x3
+	@ Replaced baserom.gba range: offset=0x5CCA04, size=0x3
+	.byte 0xFD, 0x02, 0xFF
 
 	@ src/strings.c:773 gText_SpaceMin
 	@ Preserve exact byte length: internal label.

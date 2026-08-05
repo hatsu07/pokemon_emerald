@@ -23,7 +23,8 @@ gText_Rom_5ABB3E: @ 0x085ABB3E
 	.endif
 	.globl gUnknown_85ABB43
 gUnknown_85ABB43: @ 0x085ABB43
-	.incbin "baserom.gba", 0x5abb43, 0xa
+	@ Replaced baserom.gba range: offset=0x5ABB43, size=0xA
+	.byte 0xFD, 0x12, 0x1A, 0x00, 0x45, 0x03, 0x0D, 0x29, 0xAC, 0xFF
 	.globl gUnknown_85ABB4D
 gUnknown_85ABB4D: @ 0x085ABB4D
 
