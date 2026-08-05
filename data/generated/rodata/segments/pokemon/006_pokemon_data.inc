@@ -19,8 +19,8 @@ gText_Rom_2C1D54: @ 0x082C1D54
 	.if (. - gText_Rom_2C1D54) < 0x4
 	.space 0x4 - (. - gText_Rom_2C1D54)
 	.endif
-	@ Replaced baserom.gba range: offset=0x2C1D58, size=0x8
-	.byte 0x0E, 0x12, 0x22, 0x02, 0x2D, 0x07, 0x08, 0xFF
+	@ Decoded text from ROM range: offset=0x2C1D58, size=0x8
+	.string "せつめいをきく$"
 	.globl gUnknown_82C1D60
 gUnknown_82C1D60: @ 0x082C1D60
 	@ Replaced baserom.gba range: offset=0x2C1D60, size=0x17

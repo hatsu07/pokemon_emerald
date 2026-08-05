@@ -21,8 +21,8 @@ gText_Rom_5C93BB: @ 0x085C93BB
 	.if (. - gText_Rom_5C93BB) < 0x5
 	.space 0x5 - (. - gText_Rom_5C93BB)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5C93C0, size=0x4
-	.byte 0x05, 0x28, 0x29, 0xFF
+	@ Decoded text from ROM range: offset=0x5C93C0, size=0x4
+	.string "おりる$"
 	.globl gUnknown_85C93C4
 gUnknown_85C93C4: @ 0x085C93C4
 

@@ -8,8 +8,8 @@ gText_Rom_5988D6: @ 0x085988D6
 	.if (. - gText_Rom_5988D6) < 0x9
 	.space 0x9 - (. - gText_Rom_5988D6)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5988DF, size=0xB
-	.byte 0x0B, 0x38, 0x36, 0x03, 0x02, 0x2E, 0x12, 0x22, 0x0C, 0x36, 0xFF
+	@ Decoded text from ROM range: offset=0x5988DF, size=0xB
+	.string "さぎょういんつめしょ$"
 
 	@ src/data/region_map/region_map_entries.h:434 region_map_entries_line_434
 	.globl gText_Rom_5988EA
@@ -21,9 +21,9 @@ gText_Rom_5988EA: @ 0x085988EA
 	.if (. - gText_Rom_5988EA) < 0x9
 	.space 0x9 - (. - gText_Rom_5988EA)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5988F3, size=0x15
-	.byte 0x9F, 0x59, 0x73, 0x7E, 0x0F, 0x41, 0x13, 0x24, 0xFF, 0x5B, 0x6C, 0x7F, 0x78, 0x90, 0xAE, 0x7E
-	.byte 0x02, 0x28, 0x39, 0x11, 0xFF
+	@ Decoded text from ROM range: offset=0x5988F3, size=0x15
+	.string "ポケモンそだてや$"
+	.string "サファリゾーンいりぐち$"
 
 	@ src/data/region_map/region_map_entries.h:469 region_map_entries_line_469 (+1 aliases)
 	.globl gText_Rom_598908
@@ -68,8 +68,9 @@ gText_Rom_598921: @ 0x08598921
 	.endif
 	.globl gText_Rom_598924
 	.set gText_Rom_598924, gText_Rom_598921 + 0x3
-	@ Replaced baserom.gba range: offset=0x598929, size=0xD
-	.byte 0x06, 0x02, 0x28, 0x35, 0x03, 0xFF, 0x6F, 0x75, 0x70, 0x19, 0x02, 0x04, 0xFF
+	@ Decoded text from ROM range: offset=0x598929, size=0xD
+	.string "かいりゅう$"
+	.string "マユミのいえ$"
 
 	@ src/data/region_map/region_map_entries.h:532 region_map_entries_line_532
 	.globl gText_Rom_598936
@@ -103,8 +104,8 @@ gText_Rom_598948: @ 0x08598948
 	.if (. - gText_Rom_598948) < 0x7
 	.space 0x7 - (. - gText_Rom_598948)
 	.endif
-	@ Replaced baserom.gba range: offset=0x59894F, size=0xC
-	.byte 0x07, 0x19, 0x20, 0x00, 0x22, 0x02, 0x3D, 0x2E, 0x19, 0x02, 0x04, 0xFF
+	@ Decoded text from ROM range: offset=0x59894F, size=0xC
+	.string "きのみ　めいじんのいえ$"
 
 	@ src/data/region_map/region_map_entries.h:581 region_map_entries_line_581
 	.globl gText_Rom_59895B
@@ -4596,8 +4597,8 @@ gUnknown_85A86D4: @ 0x085A86D4
 	.4byte sub_08148468
 	.globl gUnknown_85A86F0
 gUnknown_85A86F0: @ 0x085A86F0
-	@ Replaced baserom.gba range: offset=0x5A86F0, size=0x4
-	.byte 0x0C, 0x00, 0xF4, 0xFF
+	@ Decoded text from ROM range: offset=0x5A86F0, size=0x4
+	.string "し　ä$"
 	.globl gUnknown_85A86F4
 gUnknown_85A86F4: @ 0x085A86F4
 	@ Replaced baserom.gba range: offset=0x5A86F4, size=0x4

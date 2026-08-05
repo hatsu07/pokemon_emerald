@@ -10,8 +10,8 @@ gText_Rom_5ABDA3: @ 0x085ABDA3
 	.endif
 	.globl gUnknown_85ABDA7
 gUnknown_85ABDA7: @ 0x085ABDA7
-	@ Replaced baserom.gba range: offset=0x5ABDA7, size=0x3
-	.byte 0x2C, 0x3C, 0xFF
+	@ Decoded text from ROM range: offset=0x5ABDA7, size=0x3
+	.string "わざ$"
 	.globl gUnknown_85ABDAA
 gUnknown_85ABDAA: @ 0x085ABDAA
 
@@ -78,9 +78,8 @@ gText_Rom_5ABE50: @ 0x085ABE50
 	.if (. - gText_Rom_5ABE50) < 0x1c
 	.space 0x1c - (. - gText_Rom_5ABE50)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5ABE6C, size=0x13
-	.byte 0xFD, 0x13, 0x19, 0x00, 0x22, 0x19, 0x00, 0x02, 0x2B, 0x37, 0x00, 0x06, 0x2C, 0x50, 0x13, 0x02
-	.byte 0x08, 0xAB, 0xFF
+	@ Decoded text from ROM range: offset=0x5ABE6C, size=0x13
+	.string "{B_SCR_NAME_WITH_PREFIX}の　めの　いろが　かわっていく！$"
 
 	@ src/battle_message.c:514 battle_message_line_514
 	.globl gText_Rom_5ABE7F

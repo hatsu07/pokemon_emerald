@@ -4670,8 +4670,8 @@ gUnknown_846F9C8: @ 0x0846F9C8
 	.byte 0xAF, 0xFF
 	.globl gUnknown_846F9CA
 gUnknown_846F9CA: @ 0x0846F9CA
-	@ Replaced baserom.gba range: offset=0x46F9CA, size=0xC
-	.byte 0x1B, 0x02, 0x13, 0x29, 0x00, 0x1B, 0x02, 0x13, 0x29, 0xAB, 0xAB, 0xFF
+	@ Decoded text from ROM range: offset=0x46F9CA, size=0xC
+	.string "ひいてる　ひいてる！！$"
 	.globl gUnknown_846F9D6
 gUnknown_846F9D6: @ 0x0846F9D6
 	@ Replaced baserom.gba range: offset=0x46F9D6, size=0x6

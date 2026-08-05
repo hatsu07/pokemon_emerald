@@ -152,8 +152,8 @@ gText_Rom_5F5EF5: @ 0x085F5EF5
 	.endif
 	.globl gText_Rom_5F5EFF
 	.set gText_Rom_5F5EFF, gText_Rom_5F5EF5 + 0xa
-	@ Replaced baserom.gba range: offset=0x5F5F03, size=0x10
-	.byte 0x96, 0x64, 0x79, 0x60, 0x7C, 0xAE, 0x00, 0x55, 0xAE, 0x9D, 0x7E, 0x7A, 0x99, 0x79, 0x2D, 0xFF
+	@ Decoded text from ROM range: offset=0x5F5F03, size=0x10
+	.string "バトルタワー　オープンレベルを$"
 
 	@ src/data/text/ribbon_descriptions.h:13 gRibbonDescriptionPart2_Winning (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

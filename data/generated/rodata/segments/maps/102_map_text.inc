@@ -714,8 +714,8 @@ gText_Rom_57C92A: @ 0x0857C92A
 	.if (. - gText_Rom_57C92A) < 0xa
 	.space 0xa - (. - gText_Rom_57C92A)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57C934, size=0x7
-	.byte 0x1F, 0x4A, 0x2B, 0x0C, 0x3D, 0x1F, 0xFF
+	@ Decoded text from ROM range: offset=0x57C934, size=0x7
+	.string "まぼろしじま$"
 
 	@ src/data/region_map/region_map_entries.h:518 region_map_entries_line_518 (+1 aliases)
 	.globl gText_Rom_57C93B
@@ -727,8 +727,8 @@ gText_Rom_57C93B: @ 0x0857C93B
 	.if (. - gText_Rom_57C93B) < 0x8
 	.space 0x8 - (. - gText_Rom_57C93B)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57C943, size=0x9
-	.byte 0x20, 0x15, 0x20, 0x19, 0x00, 0x0A, 0x14, 0x03, 0xFF
+	@ Decoded text from ROM range: offset=0x57C943, size=0x9
+	.string "みなみの　ことう$"
 
 	@ src/data/region_map/region_map_entries.h:532 region_map_entries_line_532
 	.globl gText_Rom_57C94C
@@ -751,8 +751,8 @@ gText_Rom_57C955: @ 0x0857C955
 	.if (. - gText_Rom_57C955) < 0x9
 	.space 0x9 - (. - gText_Rom_57C955)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57C95E, size=0x9
-	.byte 0x05, 0x1C, 0x2A, 0x19, 0x0E, 0x07, 0x0C, 0x12, 0xFF
+	@ Decoded text from ROM range: offset=0x57C95E, size=0x9
+	.string "おふれのせきしつ$"
 
 	@ src/data/region_map/region_map_entries.h:574 region_map_entries_line_574
 	.globl gText_Rom_57C967

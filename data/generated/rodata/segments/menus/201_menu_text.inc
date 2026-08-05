@@ -19,8 +19,9 @@ gText_Rom_5C9AB5: @ 0x085C9AB5
 	.if (. - gText_Rom_5C9AB5) < 0x7
 	.space 0x7 - (. - gText_Rom_5C9AB5)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5C9ABC, size=0xD
-	.byte 0x12, 0x06, 0x04, 0x29, 0x2C, 0x3C, 0xFF, 0x0B, 0x2E, 0x06, 0x0D, 0x29, 0xFF
+	@ Decoded text from ROM range: offset=0x5C9ABC, size=0xD
+	.string "つかえるわざ$"
+	.string "さんかする$"
 
 	@ src/strings.c:337 gText_Able
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -54,8 +55,8 @@ gText_Rom_5C9AD8: @ 0x085C9AD8
 	.if (. - gText_Rom_5C9AD8) < 0x8
 	.space 0x8 - (. - gText_Rom_5C9AD8)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5C9AE0, size=0x7
-	.byte 0x0A, 0x03, 0x06, 0x2E, 0x0D, 0x29, 0xFF
+	@ Decoded text from ROM range: offset=0x5C9AE0, size=0x7
+	.string "こうかんする$"
 	.globl gUnknown_85C9AE7
 gUnknown_85C9AE7: @ 0x085C9AE7
 

@@ -104,8 +104,8 @@ gText_Rom_5CCD86: @ 0x085CCD86
 	.endif
 	.globl gUnknown_85CCD9F
 gUnknown_85CCD9F: @ 0x085CCD9F
-	@ Replaced baserom.gba range: offset=0x5CCD9F, size=0xC
-	.byte 0xF7, 0x00, 0x1A, 0x00, 0x02, 0x50, 0x4B, 0x02, 0x44, 0x0D, 0xB0, 0xFF
+	@ Decoded text from ROM range: offset=0x5CCD9F, size=0xC
+	.string "{SE_M_HYPER_BEAM2}は　いっぱいです…$"
 	.globl gUnknown_85CCDAB
 gUnknown_85CCDAB: @ 0x085CCDAB
 	@ Replaced baserom.gba range: offset=0x5CCDAB, size=0x12
@@ -165,8 +165,8 @@ gText_Rom_5CCDEA: @ 0x085CCDEA
 	.endif
 	.globl gUnknown_85CCDF8
 gUnknown_85CCDF8: @ 0x085CCDF8
-	@ Replaced baserom.gba range: offset=0x5CCDF8, size=0x3
-	.byte 0x13, 0x2E, 0xFF
+	@ Decoded text from ROM range: offset=0x5CCDF8, size=0x3
+	.string "てん$"
 	.globl gUnknown_85CCDFB
 gUnknown_85CCDFB: @ 0x085CCDFB
 	@ Replaced baserom.gba range: offset=0x5CCDFB, size=0x3

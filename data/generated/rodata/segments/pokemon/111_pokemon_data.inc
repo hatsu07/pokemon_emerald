@@ -4642,8 +4642,7 @@ gUnknown_8590BF4: @ 0x08590BF4
 	.byte 0x00, 0x00, 0x00, 0x09, 0x04, 0x0E, 0x74, 0x02
 	.globl gStarterPokemonSpritePositions
 gStarterPokemonSpritePositions: @ 0x08590BFC
-	@ Replaced baserom.gba range: offset=0x590BFC, size=0x6
-	.byte 0x3C, 0x40, 0x78, 0x58, 0xB4, 0x40
+	.byte SPECIES_POLIWAG, SPECIES_KADABRA, SPECIES_STARYU, SPECIES_GRIMER, SPECIES_FLAAFFY, SPECIES_KADABRA
 	.globl gUnknown_8590C02
 gUnknown_8590C02: @ 0x08590C02
 	@ Replaced baserom.gba range: offset=0x590C02, size=0x6

@@ -252,9 +252,8 @@ gText_Rom_5AADCD: @ 0x085AADCD
 	.if (. - gText_Rom_5AADCD) < 0x2e
 	.space 0x2e - (. - gText_Rom_5AADCD)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5AADFB, size=0x11
-	.byte 0x01, 0xAB, 0x00, 0xFD, 0x06, 0x37, 0x00, 0x14, 0x47, 0x41, 0x0C, 0x13, 0x07, 0x10, 0xAB, 0xFB
-	.byte 0xFF
+	@ Decoded text from ROM range: offset=0x5AADFB, size=0x11
+	.string "あ！　{B_OPPONENT_MON1_NAME}が　とびだしてきた！\p$"
 	.globl gUnknown_85AAE0C
 gUnknown_85AAE0C: @ 0x085AAE0C
 	@ Replaced baserom.gba range: offset=0x5AAE0C, size=0x16
@@ -633,8 +632,8 @@ gText_Rom_5AB03C: @ 0x085AB03C
 	.set gText_Rom_5AB03F, gText_Rom_5AB03C + 0x3
 	.globl gUnknown_85AB044
 gUnknown_85AB044: @ 0x085AB044
-	@ Replaced baserom.gba range: offset=0x5AB044, size=0x4
-	.byte 0x0C, 0x10, 0xAB, 0xFF
+	@ Decoded text from ROM range: offset=0x5AB044, size=0x4
+	.string "した！$"
 	.globl gUnknown_85AB048
 gUnknown_85AB048: @ 0x085AB048
 

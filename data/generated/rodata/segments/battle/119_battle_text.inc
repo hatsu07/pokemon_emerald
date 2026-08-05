@@ -44,8 +44,8 @@ gText_Rom_5A980F: @ 0x085A980F
 	.if (. - gText_Rom_5A980F) < 0x9
 	.space 0x9 - (. - gText_Rom_5A980F)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5A9818, size=0xC
-	.byte 0xFD, 0x0F, 0x1A, 0x00, 0x16, 0x3A, 0x27, 0x2A, 0x15, 0x02, 0xAB, 0xFF
+	@ Decoded text from ROM range: offset=0x5A9818, size=0xC
+	.string "{B_ATK_NAME_WITH_PREFIX}は　にげられない！$"
 
 	@ src/battle_message.c:214 battle_message_line_214
 	.globl gText_Rom_5A9824

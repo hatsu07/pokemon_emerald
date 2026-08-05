@@ -24,8 +24,8 @@ gText_Rom_5AA797: @ 0x085AA797
 	.if (. - gText_Rom_5AA797) < 0x17
 	.space 0x17 - (. - gText_Rom_5AA797)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5AA7AE, size=0xE
-	.byte 0x6D, 0x95, 0x7B, 0x04, 0x07, 0x2D, 0x00, 0x0D, 0x02, 0x14, 0x50, 0x10, 0xAB, 0xFF
+	@ Decoded text from ROM range: offset=0x5AA7AE, size=0xE
+	.string "ヘドロえきを　すいとった！$"
 
 	@ src/battle_message.c:469 battle_message_line_469
 	.globl gText_Rom_5AA7BC

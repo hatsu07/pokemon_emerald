@@ -8,8 +8,8 @@ gText_Rom_5CB3B7: @ 0x085CB3B7
 	.if (. - gText_Rom_5CB3B7) < 0x5
 	.space 0x5 - (. - gText_Rom_5CB3B7)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CB3BC, size=0x7
-	.byte 0x06, 0x49, 0x37, 0x20, 0x00, 0x00, 0xFF
+	@ Decoded text from ROM range: offset=0x5CB3BC, size=0x7
+	.string "かべがみ　　$"
 
 	@ src/data/party_menu.h:801 party_menu_line_801
 	.globl gText_Rom_5CB3C3

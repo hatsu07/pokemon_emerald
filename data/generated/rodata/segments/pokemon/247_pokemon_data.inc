@@ -52,8 +52,8 @@ gText_Rom_5CB3F5: @ 0x085CB3F5
 	.if (. - gText_Rom_5CB3F5) < 0x5
 	.space 0x5 - (. - gText_Rom_5CB3F5)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CB3FA, size=0x3
-	.byte 0x23, 0x28, 0xFF
+	@ Decoded text from ROM range: offset=0x5CB3FA, size=0x3
+	.string "もり$"
 
 	@ src/pokemon_storage_system.c:8102 pokemon_storage_system_line_8102
 	.globl gText_Rom_5CB3FD
@@ -164,8 +164,8 @@ gText_Rom_5CB426: @ 0x085CB426
 	.if (. - gText_Rom_5CB426) < 0x3
 	.space 0x3 - (. - gText_Rom_5CB426)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CB429, size=0x3
-	.byte 0x0F, 0x27, 0xFF
+	@ Decoded text from ROM range: offset=0x5CB429, size=0x3
+	.string "そら$"
 
 	@ src/pokemon_storage_system.c:8113 pokemon_storage_system_line_8113
 	.globl gText_Rom_5CB42C
@@ -232,9 +232,9 @@ gText_Rom_5CB449: @ 0x085CB449
 	.endif
 	.globl gText_Rom_5CB44F
 	.set gText_Rom_5CB44F, gText_Rom_5CB449 + 0x6
-	@ Replaced baserom.gba range: offset=0x5CB455, size=0x18
-	.byte 0x9F, 0x59, 0x73, 0x7E, 0x2D, 0x00, 0x01, 0x3E, 0x09, 0x29, 0x00, 0xFF, 0x9A, 0xA0, 0x58, 0x5D
-	.byte 0x2D, 0x00, 0x0E, 0x02, 0x28, 0x0D, 0x29, 0xFF
+	@ Decoded text from ROM range: offset=0x5CB455, size=0x18
+	.string "ポケモンを　あずける　$"
+	.string "ボックスを　せいりする$"
 
 	@ src/pokemon_storage_system.c:873 pokemon_storage_system_line_873
 	.globl gText_Rom_5CB46D

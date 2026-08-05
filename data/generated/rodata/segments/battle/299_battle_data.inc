@@ -615,8 +615,8 @@ gText_Rom_5FB8E3: @ 0x085FB8E3
 	.set gText_Rom_5FB8E6, gText_Rom_5FB8E3 + 0x3
 	.globl gUnknown_85FB8EA
 gUnknown_85FB8EA: @ 0x085FB8EA
-	@ Replaced baserom.gba range: offset=0x5FB8EA, size=0x7
-	.byte 0x58, 0x78, 0x51, 0x60, 0x52, 0x71, 0xFF
+	@ Decoded text from ROM range: offset=0x5FB8EA, size=0x7
+	.string "クリアタイム$"
 	.globl gUnknown_85FB8F1
 gUnknown_85FB8F1: @ 0x085FB8F1
 

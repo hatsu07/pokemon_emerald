@@ -43,8 +43,8 @@ gText_Rom_5CAE94: @ 0x085CAE94
 	.endif
 	.globl gText_Rom_5CAE99
 	.set gText_Rom_5CAE99, gText_Rom_5CAE94 + 0x5
-	@ Replaced baserom.gba range: offset=0x5CAE9D, size=0x7
-	.byte 0xA3, 0x12, 0x19, 0x5A, 0xAE, 0x5D, 0xFF
+	@ Decoded text from ROM range: offset=0x5CAE9D, size=0x7
+	.string "2つのコース$"
 
 	@ src/strings.c:468 gText_Lv50
 	.globl gText_Rom_5CAEA4

@@ -363,8 +363,9 @@ gText_Rom_5C9179: @ 0x085C9179
 	.if (. - gText_Rom_5C9179) < 0x7
 	.space 0x7 - (. - gText_Rom_5C9179)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5C9180, size=0x6
-	.byte 0x01, 0x06, 0xFF, 0x01, 0x05, 0xFF
+	@ Decoded text from ROM range: offset=0x5C9180, size=0x6
+	.string "あか$"
+	.string "あお$"
 
 	@ src/strings.c:94 gText_DexSearchColorYellow
 	.globl gText_Rom_5C9186

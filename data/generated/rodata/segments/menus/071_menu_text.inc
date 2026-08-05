@@ -1017,8 +1017,8 @@ gUnknown_8300A99: @ 0x08300A99
 	.space 0x2, 0xFF
 	.globl gUnknown_8300A9B
 gUnknown_8300A9B: @ 0x08300A9B
-	@ Replaced baserom.gba range: offset=0x300A9B, size=0x3
-	.byte 0x2C, 0x3C, 0xFF
+	@ Decoded text from ROM range: offset=0x300A9B, size=0x3
+	.string "わざ$"
 	.globl gUnknown_8300A9E
 gUnknown_8300A9E: @ 0x08300A9E
 	@ Replaced baserom.gba range: offset=0x300A9E, size=0x2
@@ -1134,9 +1134,9 @@ gText_Rom_300AD1: @ 0x08300AD1
 	.if (. - gText_Rom_300AD1) < 0x7
 	.space 0x7 - (. - gText_Rom_300AD1)
 	.endif
-	@ Replaced baserom.gba range: offset=0x300AD8, size=0x16
-	.byte 0x0A, 0x03, 0x06, 0x2E, 0x16, 0x41, 0x0D, 0xFF, 0x0A, 0x03, 0x06, 0x2E, 0x00, 0x2D, 0x00, 0x24
-	.byte 0x22, 0x1F, 0x0D, 0x06, 0xAC, 0xFF
+	@ Decoded text from ROM range: offset=0x300AD8, size=0x16
+	.string "こうかんにだす$"
+	.string "こうかん　を　やめますか？$"
 
 	@ src/data/trade.h:49 sJPText_PressBButtonToQuit
 	.globl gText_Rom_300AEE

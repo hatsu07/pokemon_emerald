@@ -52,8 +52,8 @@ gUnknown_85C8C24: @ 0x085C8C24
 	.space 0x1, 0xFF
 	.globl gUnknown_85C8C25
 gUnknown_85C8C25: @ 0x085C8C25
-	@ Replaced baserom.gba range: offset=0x5C8C25, size=0x3
-	.byte 0x08, 0x2E, 0xFF
+	@ Decoded text from ROM range: offset=0x5C8C25, size=0x3
+	.string "くん$"
 	.globl gUnknown_85C8C28
 gUnknown_85C8C28: @ 0x085C8C28
 

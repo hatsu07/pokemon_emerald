@@ -30,6 +30,7 @@ gText_Rom_5CAAA6: @ 0x085CAAA6
 	.if (. - gText_Rom_5CAAA6) < 0x4
 	.space 0x4 - (. - gText_Rom_5CAAA6)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CAAAA, size=0x6
-	.byte 0x45, 0x08, 0xFF, 0x1F, 0x1B, 0xFF
+	@ Decoded text from ROM range: offset=0x5CAAAA, size=0x6
+	.string "どく$"
+	.string "まひ$"
 

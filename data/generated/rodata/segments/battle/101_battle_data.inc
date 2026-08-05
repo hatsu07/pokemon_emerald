@@ -924,8 +924,9 @@ gText_Rom_579E81: @ 0x08579E81
 	.if (. - gText_Rom_579E81) < 0x5
 	.space 0x5 - (. - gText_Rom_579E81)
 	.endif
-	@ Replaced baserom.gba range: offset=0x579E86, size=0x6
-	.byte 0x1B, 0x14, 0xFF, 0x0A, 0x04, 0xFF
+	@ Decoded text from ROM range: offset=0x579E86, size=0x6
+	.string "ひと$"
+	.string "こえ$"
 
 	@ src/data/easy_chat/easy_chat_group_lifestyle.h:34 easy_chat_group_lifestyle_line_34 (+1 aliases)
 	.globl gText_Rom_579E8C

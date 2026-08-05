@@ -8,8 +8,8 @@ gText_Rom_5AA877: @ 0x085AA877
 	.if (. - gText_Rom_5AA877) < 0x6
 	.space 0x6 - (. - gText_Rom_5AA877)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5AA87D, size=0x6
-	.byte 0x37, 0x08, 0x50, 0x14, 0x00, 0xFF
+	@ Decoded text from ROM range: offset=0x5AA87D, size=0x6
+	.string "がくっと　$"
 
 	@ src/battle_message.c:77 gText_StatFell
 	.globl gText_Rom_5AA883
@@ -269,8 +269,8 @@ gText_Rom_5AAA8B: @ 0x085AAA8B
 	.if (. - gText_Rom_5AAA8B) < 0x14
 	.space 0x14 - (. - gText_Rom_5AAA8B)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5AAA9F, size=0xD
-	.byte 0x0C, 0x06, 0x0C, 0x00, 0x15, 0x16, 0x23, 0x05, 0x0A, 0x27, 0x15, 0x02, 0xFF
+	@ Decoded text from ROM range: offset=0x5AAA9F, size=0xD
+	.string "しかし　なにもおこらない$"
 
 	@ src/battle_message.c:393 battle_message_line_393
 	@ Preserve exact byte length: semantic suffix text pointer.

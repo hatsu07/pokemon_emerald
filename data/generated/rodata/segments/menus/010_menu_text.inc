@@ -102,8 +102,8 @@ gText_Rom_2C1DD8: @ 0x082C1DD8
 	.endif
 	.globl gText_Rom_2C1DDA
 	.set gText_Rom_2C1DDA, gText_Rom_2C1DD8 + 0x2
-	@ Replaced baserom.gba range: offset=0x2C1DDE, size=0x6
-	.byte 0x00, 0x00, 0x5B, 0xAE, 0x61, 0xFF
+	@ Decoded text from ROM range: offset=0x2C1DDE, size=0x6
+	.string "　　サーチ$"
 
 	@ src/data/union_room.h:557 sText_BerryBlender
 	.globl gText_Rom_2C1DE4

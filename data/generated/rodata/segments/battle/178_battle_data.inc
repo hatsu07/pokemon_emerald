@@ -8,8 +8,8 @@ gText_Rom_5C918A: @ 0x085C918A
 	.if (. - gText_Rom_5C918A) < 0x4
 	.space 0x4 - (. - gText_Rom_5C918A)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5C918E, size=0x3
-	.byte 0x08, 0x2B, 0xFF
+	@ Decoded text from ROM range: offset=0x5C918E, size=0x3
+	.string "くろ$"
 
 	@ src/strings.c:97 gText_DexSearchColorBrown
 	.globl gText_Rom_5C9191
@@ -43,8 +43,8 @@ gText_Rom_5C919B: @ 0x085C919B
 	.if (. - gText_Rom_5C919B) < 0x5
 	.space 0x5 - (. - gText_Rom_5C919B)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5C91A0, size=0x3
-	.byte 0x0C, 0x2B, 0xFF
+	@ Decoded text from ROM range: offset=0x5C91A0, size=0x3
+	.string "しろ$"
 
 	@ src/strings.c:101 gText_DexSearchColorPink
 	.globl gText_Rom_5C91A3
@@ -160,8 +160,8 @@ gText_Rom_5C928E: @ 0x085C928E
 	.endif
 	.globl gText_Rom_5C9292
 	.set gText_Rom_5C9292, gText_Rom_5C928E + 0x4
-	@ Replaced baserom.gba range: offset=0x5C9296, size=0x3
-	.byte 0x15, 0x0C, 0xFF
+	@ Decoded text from ROM range: offset=0x5C9296, size=0x3
+	.string "なし$"
 	.globl gUnknown_85C9299
 gUnknown_85C9299: @ 0x085C9299
 

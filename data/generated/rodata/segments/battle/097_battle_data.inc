@@ -173,8 +173,8 @@ gText_Rom_57490B: @ 0x0857490B
 	.if (. - gText_Rom_57490B) < 0x6
 	.space 0x6 - (. - gText_Rom_57490B)
 	.endif
-	@ Replaced baserom.gba range: offset=0x574911, size=0x3
-	.byte 0x02, 0x2B, 0xFF
+	@ Decoded text from ROM range: offset=0x574911, size=0x3
+	.string "いろ$"
 
 	@ src/data/easy_chat/easy_chat_group_status.h:58 easy_chat_group_status_line_58
 	.globl gText_Rom_574914
@@ -186,8 +186,8 @@ gText_Rom_574914: @ 0x08574914
 	.if (. - gText_Rom_574914) < 0x6
 	.space 0x6 - (. - gText_Rom_574914)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57491A, size=0x3
-	.byte 0x02, 0x2C, 0xFF
+	@ Decoded text from ROM range: offset=0x57491A, size=0x3
+	.string "いわ$"
 
 	@ src/data/easy_chat/easy_chat_group_status.h:70 easy_chat_group_status_line_70
 	.globl gText_Rom_57491D
@@ -375,8 +375,8 @@ gText_Rom_574978: @ 0x08574978
 	.if (. - gText_Rom_574978) < 0x6
 	.space 0x6 - (. - gText_Rom_574978)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57497E, size=0x3
-	.byte 0x08, 0x0B, 0xFF
+	@ Decoded text from ROM range: offset=0x57497E, size=0x3
+	.string "くさ$"
 
 	@ src/data/abilities.h:228 abilities_line_228 (+1 aliases)
 	.globl gText_Rom_574981
@@ -720,8 +720,8 @@ gText_Rom_574A2A: @ 0x08574A2A
 	.if (. - gText_Rom_574A2A) < 0x7
 	.space 0x7 - (. - gText_Rom_574A2A)
 	.endif
-	@ Replaced baserom.gba range: offset=0x574A31, size=0x3
-	.byte 0x45, 0x08, 0xFF
+	@ Decoded text from ROM range: offset=0x574A31, size=0x3
+	.string "どく$"
 
 	@ src/data/abilities.h:296 abilities_line_296 (+1 aliases)
 	.globl gText_Rom_574A34
@@ -1096,8 +1096,8 @@ gText_Rom_574AE1: @ 0x08574AE1
 	.if (. - gText_Rom_574AE1) < 0x8
 	.space 0x8 - (. - gText_Rom_574AE1)
 	.endif
-	@ Replaced baserom.gba range: offset=0x574AE9, size=0x3
-	.byte 0x20, 0x3E, 0xFF
+	@ Decoded text from ROM range: offset=0x574AE9, size=0x3
+	.string "みず$"
 
 	@ src/data/abilities.h:319 abilities_line_319 (+1 aliases)
 	.globl gText_Rom_574AEC
@@ -1109,8 +1109,8 @@ gText_Rom_574AEC: @ 0x08574AEC
 	.if (. - gText_Rom_574AEC) < 0x7
 	.space 0x7 - (. - gText_Rom_574AEC)
 	.endif
-	@ Replaced baserom.gba range: offset=0x574AF3, size=0x3
-	.byte 0x21, 0x0C, 0xFF
+	@ Decoded text from ROM range: offset=0x574AF3, size=0x3
+	.string "むし$"
 
 	@ src/data/abilities.h:519 abilities_line_519 (+1 aliases)
 	.globl gText_Rom_574AF6
@@ -1326,8 +1326,8 @@ gText_Rom_575050: @ 0x08575050
 	.if (. - gText_Rom_575050) < 0x6
 	.space 0x6 - (. - gText_Rom_575050)
 	.endif
-	@ Replaced baserom.gba range: offset=0x575056, size=0x3
-	.byte 0x02, 0x09, 0xFF
+	@ Decoded text from ROM range: offset=0x575056, size=0x3
+	.string "いけ$"
 
 	@ src/data/easy_chat/easy_chat_group_battle.h:16 easy_chat_group_battle_line_16
 	.globl gText_Rom_575059
@@ -1361,8 +1361,9 @@ gText_Rom_575062: @ 0x08575062
 	.if (. - gText_Rom_575062) < 0x5
 	.space 0x5 - (. - gText_Rom_575062)
 	.endif
-	@ Replaced baserom.gba range: offset=0x575067, size=0x6
-	.byte 0x06, 0x11, 0xFF, 0x06, 0x12, 0xFF
+	@ Decoded text from ROM range: offset=0x575067, size=0x6
+	.string "かち$"
+	.string "かつ$"
 
 	@ src/data/easy_chat/easy_chat_group_battle.h:46 easy_chat_group_battle_line_46
 	.globl gText_Rom_57506D
@@ -1572,8 +1573,8 @@ gText_Rom_5750C1: @ 0x085750C1
 	.if (. - gText_Rom_5750C1) < 0x5
 	.space 0x5 - (. - gText_Rom_5750C1)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5750C6, size=0x3
-	.byte 0x0E, 0x22, 0xFF
+	@ Decoded text from ROM range: offset=0x5750C6, size=0x3
+	.string "せめ$"
 
 	@ src/data/easy_chat/easy_chat_group_battle.h:166 easy_chat_group_battle_line_166
 	.globl gText_Rom_5750C9
@@ -1662,8 +1663,8 @@ gText_Rom_5750EA: @ 0x085750EA
 	.if (. - gText_Rom_5750EA) < 0x5
 	.space 0x5 - (. - gText_Rom_5750EA)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5750EF, size=0x3
-	.byte 0x13, 0x07, 0xFF
+	@ Decoded text from ROM range: offset=0x5750EF, size=0x3
+	.string "てき$"
 
 	@ src/data/easy_chat/easy_chat_group_battle.h:220 easy_chat_group_battle_line_220
 	.globl gText_Rom_5750F2
@@ -1774,8 +1775,8 @@ gText_Rom_57511A: @ 0x0857511A
 	.if (. - gText_Rom_57511A) < 0x5
 	.space 0x5 - (. - gText_Rom_57511A)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57511F, size=0x3
-	.byte 0x1F, 0x09, 0xFF
+	@ Decoded text from ROM range: offset=0x57511F, size=0x3
+	.string "まけ$"
 
 	@ src/data/easy_chat/easy_chat_group_battle.h:286 easy_chat_group_battle_line_286
 	.globl gText_Rom_575122
@@ -2100,8 +2101,8 @@ gText_Rom_57548A: @ 0x0857548A
 	.if (. - gText_Rom_57548A) < 0x6
 	.space 0x6 - (. - gText_Rom_57548A)
 	.endif
-	@ Replaced baserom.gba range: offset=0x575490, size=0x5
-	.byte 0x08, 0x41, 0x0B, 0x02, 0xFF
+	@ Decoded text from ROM range: offset=0x575490, size=0x5
+	.string "ください$"
 
 	@ src/data/easy_chat/easy_chat_group_greetings.h:70 easy_chat_group_greetings_line_70
 	.globl gText_Rom_575495
@@ -2267,8 +2268,8 @@ gText_Rom_5754DF: @ 0x085754DF
 	.if (. - gText_Rom_5754DF) < 0x4
 	.space 0x4 - (. - gText_Rom_5754DF)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5754E3, size=0x3
-	.byte 0x15, 0x01, 0xFF
+	@ Decoded text from ROM range: offset=0x5754E3, size=0x3
+	.string "なあ$"
 
 	@ src/data/easy_chat/easy_chat_group_greetings.h:166 easy_chat_group_greetings_line_166
 	.globl gText_Rom_5754E6
@@ -2280,8 +2281,8 @@ gText_Rom_5754E6: @ 0x085754E6
 	.if (. - gText_Rom_5754E6) < 0x5
 	.space 0x5 - (. - gText_Rom_5754E6)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5754EB, size=0x3
-	.byte 0x18, 0x04, 0xFF
+	@ Decoded text from ROM range: offset=0x5754EB, size=0x3
+	.string "ねえ$"
 
 	@ src/data/easy_chat/easy_chat_group_greetings.h:178 easy_chat_group_greetings_line_178
 	.globl gText_Rom_5754EE
@@ -2337,8 +2338,8 @@ gText_Rom_5754FF: @ 0x085754FF
 	.if (. - gText_Rom_5754FF) < 0x7
 	.space 0x7 - (. - gText_Rom_5754FF)
 	.endif
-	@ Replaced baserom.gba range: offset=0x575506, size=0x3
-	.byte 0x6D, 0x52, 0xFF
+	@ Decoded text from ROM range: offset=0x575506, size=0x3
+	.string "ヘイ$"
 
 	@ src/data/easy_chat/easy_chat_group_greetings.h:214 easy_chat_group_greetings_line_214
 	.globl gText_Rom_575509
@@ -2383,8 +2384,8 @@ gText_Rom_575515: @ 0x08575515
 	.if (. - gText_Rom_575515) < 0x5
 	.space 0x5 - (. - gText_Rom_575515)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57551A, size=0x3
-	.byte 0x26, 0x03, 0xFF
+	@ Decoded text from ROM range: offset=0x57551A, size=0x3
+	.string "よう$"
 
 	@ src/data/easy_chat/easy_chat_group_greetings.h:244 easy_chat_group_greetings_line_244
 	.globl gText_Rom_57551D

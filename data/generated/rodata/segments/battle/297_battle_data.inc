@@ -52,8 +52,9 @@ gText_Rom_5F73B1: @ 0x085F73B1
 	.endif
 	.globl gText_Rom_5F73B6
 	.set gText_Rom_5F73B6, gText_Rom_5F73B1 + 0x5
-	@ Replaced baserom.gba range: offset=0x5F73BB, size=0x6
-	.byte 0x9B, 0x9B, 0xFF, 0x6F, 0x6F, 0xFF
+	@ Decoded text from ROM range: offset=0x5F73BB, size=0x6
+	.string "パパ$"
+	.string "ママ$"
 
 	@ src/pokenav_match_call_data.c:360 pokenav_match_call_data_line_360
 	.globl gText_Rom_5F73C1

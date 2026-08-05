@@ -8,6 +8,6 @@ gText_Rom_574779: @ 0x08574779
 	.if (. - gText_Rom_574779) < 0x4
 	.space 0x4 - (. - gText_Rom_574779)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57477D, size=0x3
-	.byte 0x01, 0x06, 0xFF
+	@ Decoded text from ROM range: offset=0x57477D, size=0x3
+	.string "あか$"
 

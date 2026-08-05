@@ -48,9 +48,8 @@ gText_Rom_5CB88E: @ 0x085CB88E
 	.if (. - gText_Rom_5CB88E) < 0xd
 	.space 0xd - (. - gText_Rom_5CB88E)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CB89B, size=0x16
-	.byte 0xA8, 0x23, 0x3D, 0x19, 0x00, 0x0A, 0x14, 0x46, 0x1A, 0x00, 0xA2, 0x38, 0x36, 0x03, 0x16, 0x00
-	.byte 0xA3, 0x12, 0x1F, 0x44, 0xAB, 0xFF
+	@ Decoded text from ROM range: offset=0x5CB89B, size=0x16
+	.string "7もじの　ことばは　1ぎょうに　2つまで！$"
 
 	@ src/strings.c:546 gText_FindWordsThatDescribeYour
 	.globl gText_Rom_5CB8B1
@@ -840,8 +839,8 @@ gText_Rom_5CBC81: @ 0x085CBC81
 	.endif
 	.globl gUnknown_85CBC85
 gUnknown_85CBC85: @ 0x085CBC85
-	@ Replaced baserom.gba range: offset=0x5CBC85, size=0x4
-	.byte 0x05, 0x18, 0x04, 0xFF
+	@ Decoded text from ROM range: offset=0x5CBC85, size=0x4
+	.string "おねえ$"
 
 	@ src/strings.c:614 gText_AfterYouHaveReadTheQuiz
 	.globl gText_Rom_5CBC89

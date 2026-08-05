@@ -49,8 +49,8 @@ gText_Rom_5DBBF6: @ 0x085DBBF6
 	.endif
 	.globl gUnknown_85DBC0A
 gUnknown_85DBC0A: @ 0x085DBC0A
-	@ Replaced baserom.gba range: offset=0x5DBC0A, size=0x3
-	.byte 0x1A, 0x02, 0xFF
+	@ Decoded text from ROM range: offset=0x5DBC0A, size=0x3
+	.string "はい$"
 	.globl gUnknown_85DBC0D
 gUnknown_85DBC0D: @ 0x085DBC0D
 
@@ -310,8 +310,8 @@ gText_Rom_5DC0FB: @ 0x085DC0FB
 	.endif
 	.globl gUnknown_85DC10C
 gUnknown_85DC10C: @ 0x085DC10C
-	@ Replaced baserom.gba range: offset=0x5DC10C, size=0x3
-	.byte 0x1A, 0x02, 0xFF
+	@ Decoded text from ROM range: offset=0x5DC10C, size=0x3
+	.string "はい$"
 	.globl gUnknown_85DC10F
 gUnknown_85DC10F: @ 0x085DC10F
 

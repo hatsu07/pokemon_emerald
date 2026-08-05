@@ -30,8 +30,8 @@ gText_Rom_5CC62B: @ 0x085CC62B
 	.if (. - gText_Rom_5CC62B) < 0xd
 	.space 0xd - (. - gText_Rom_5CC62B)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CC638, size=0xE
-	.byte 0x45, 0x0A, 0x16, 0x00, 0x14, 0x03, 0x2B, 0x08, 0x0C, 0x1F, 0x0D, 0x06, 0xAC, 0xFF
+	@ Decoded text from ROM range: offset=0x5CC638, size=0xE
+	.string "どこに　とうろくしますか？$"
 
 	@ src/strings.c:730 gText_RegisterTextHere
 	.globl gText_Rom_5CC646
@@ -56,8 +56,8 @@ gText_Rom_5CC654: @ 0x085CC654
 	.endif
 	.globl gUnknown_85CC663
 gUnknown_85CC663: @ 0x085CC663
-	@ Replaced baserom.gba range: offset=0x5CC663, size=0xF
-	.byte 0xF7, 0x00, 0x0B, 0x2E, 0x37, 0x00, 0x0B, 0x2E, 0x06, 0x0C, 0x1F, 0x0C, 0x10, 0xAB, 0xFF
+	@ Decoded text from ROM range: offset=0x5CC663, size=0xF
+	.string "{SE_M_HYPER_BEAM2}さんが　さんかしました！$"
 	.globl gUnknown_85CC672
 gUnknown_85CC672: @ 0x085CC672
 

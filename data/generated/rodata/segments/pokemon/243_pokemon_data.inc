@@ -8,9 +8,8 @@ gText_Rom_5CB1B9: @ 0x085CB1B9
 	.if (. - gText_Rom_5CB1B9) < 0x4
 	.space 0x4 - (. - gText_Rom_5CB1B9)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CB1BD, size=0x13
-	.byte 0x9A, 0xA0, 0x58, 0x5D, 0x2D, 0x00, 0x0C, 0x35, 0x03, 0x28, 0x36, 0x03, 0x0C, 0x1F, 0x0D, 0x06
-	.byte 0xAC, 0x00, 0xFF
+	@ Decoded text from ROM range: offset=0x5CB1BD, size=0x13
+	.string "ボックスを　しゅうりょうしますか？　$"
 
 	@ src/pokemon_storage_system.c:1052 pokemon_storage_system_line_1052
 	.globl gText_Rom_5CB1D0
@@ -44,8 +43,8 @@ gText_Rom_5CB1ED: @ 0x085CB1ED
 	.if (. - gText_Rom_5CB1ED) < 0xe
 	.space 0xe - (. - gText_Rom_5CB1ED)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CB1FB, size=0xC
-	.byte 0xF7, 0x00, 0x2D, 0x00, 0x45, 0x03, 0x0C, 0x1F, 0x0D, 0x06, 0xAC, 0xFF
+	@ Decoded text from ROM range: offset=0x5CB1FB, size=0xC
+	.string "{SE_M_HYPER_BEAM2}を　どうしますか？$"
 
 	@ src/pokemon_storage_system.c:1056 pokemon_storage_system_line_1056
 	.globl gText_Rom_5CB207
@@ -68,8 +67,8 @@ gText_Rom_5CB21A: @ 0x085CB21A
 	.if (. - gText_Rom_5CB21A) < 0x11
 	.space 0x11 - (. - gText_Rom_5CB21A)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CB22B, size=0xB
-	.byte 0xF7, 0x00, 0x2D, 0x00, 0x01, 0x3E, 0x09, 0x1F, 0x0C, 0x10, 0xFF
+	@ Decoded text from ROM range: offset=0x5CB22B, size=0xB
+	.string "{SE_M_HYPER_BEAM2}を　あずけました$"
 
 	@ src/pokemon_storage_system.c:1059 pokemon_storage_system_line_1059
 	.globl gText_Rom_5CB236
@@ -92,9 +91,9 @@ gText_Rom_5CB245: @ 0x085CB245
 	.if (. - gText_Rom_5CB245) < 0xe
 	.space 0xe - (. - gText_Rom_5CB245)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CB253, size=0x19
-	.byte 0xF7, 0x00, 0x2D, 0x00, 0x0F, 0x14, 0x16, 0x00, 0x16, 0x37, 0x0C, 0x13, 0x01, 0x3A, 0x10, 0xFF
-	.byte 0x46, 0x02, 0x46, 0x02, 0x00, 0xF7, 0x00, 0xAB, 0xFF
+	@ Decoded text from ROM range: offset=0x5CB253, size=0x19
+	.string "{SE_M_HYPER_BEAM2}を　そとに　にがしてあげた$"
+	.string "ばいばい　{SE_M_HYPER_BEAM2}！$"
 
 	@ src/pokemon_storage_system.c:1063 pokemon_storage_system_line_1063
 	.globl gText_Rom_5CB26C
@@ -117,8 +116,8 @@ gText_Rom_5CB278: @ 0x085CB278
 	.if (. - gText_Rom_5CB278) < 0x13
 	.space 0x13 - (. - gText_Rom_5CB278)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CB28B, size=0xD
-	.byte 0x13, 0x23, 0x11, 0x37, 0x00, 0x02, 0x50, 0x4B, 0x02, 0x44, 0x0D, 0xAB, 0xFF
+	@ Decoded text from ROM range: offset=0x5CB28B, size=0xD
+	.string "てもちが　いっぱいです！$"
 
 	@ src/pokemon_storage_system.c:1066 pokemon_storage_system_line_1066
 	.globl gText_Rom_5CB298
@@ -163,8 +162,8 @@ gText_Rom_5CB2CE: @ 0x085CB2CE
 	.if (. - gText_Rom_5CB2CE) < 0x11
 	.space 0x11 - (. - gText_Rom_5CB2CE)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CB2DF, size=0xC
-	.byte 0xF7, 0x00, 0x1A, 0x00, 0x06, 0x04, 0x50, 0x13, 0x07, 0x10, 0xAB, 0xFF
+	@ Decoded text from ROM range: offset=0x5CB2DF, size=0xC
+	.string "{SE_M_HYPER_BEAM2}は　かえってきた！$"
 
 	@ src/pokemon_storage_system.c:1071 pokemon_storage_system_line_1071
 	.globl gText_Rom_5CB2EB
@@ -209,8 +208,8 @@ gText_Rom_5CB310: @ 0x085CB310
 	.if (. - gText_Rom_5CB310) < 0xd
 	.space 0xd - (. - gText_Rom_5CB310)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CB31D, size=0xD
-	.byte 0xF7, 0x00, 0x2D, 0x00, 0x96, 0xA0, 0x89, 0x1D, 0x02, 0x2A, 0x10, 0xAB, 0xFF
+	@ Decoded text from ROM range: offset=0x5CB31D, size=0xD
+	.string "{SE_M_HYPER_BEAM2}を　バッグへいれた！$"
 
 	@ src/pokemon_storage_system.c:1077 pokemon_storage_system_line_1077
 	.globl gText_Rom_5CB32A
@@ -233,9 +232,9 @@ gText_Rom_5CB337: @ 0x085CB337
 	.if (. - gText_Rom_5CB337) < 0x11
 	.space 0x11 - (. - gText_Rom_5CB337)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CB348, size=0x15
-	.byte 0xF7, 0x00, 0x2D, 0x00, 0x23, 0x10, 0x0E, 0x10, 0xAB, 0xFF, 0xF7, 0x00, 0x14, 0x00, 0x14, 0x28
-	.byte 0x06, 0x04, 0x10, 0xAB, 0xFF
+	@ Decoded text from ROM range: offset=0x5CB348, size=0x15
+	.string "{SE_M_HYPER_BEAM2}を　もたせた！$"
+	.string "{SE_M_HYPER_BEAM2}と　とりかえた！$"
 
 	@ src/pokemon_storage_system.c:1081 pokemon_storage_system_line_1081
 	.globl gText_Rom_5CB35D

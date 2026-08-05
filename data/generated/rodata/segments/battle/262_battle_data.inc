@@ -10,8 +10,8 @@ gText_Rom_5CC350: @ 0x085CC350
 	.set gText_Rom_5CC356, gText_Rom_5CC350 + 0x6
 	.globl gUnknown_85CC35A
 gUnknown_85CC35A: @ 0x085CC35A
-	@ Replaced baserom.gba range: offset=0x5CC35A, size=0xD
-	.byte 0x1A, 0x3D, 0x22, 0x13, 0x19, 0x44, 0x2E, 0x45, 0x03, 0x02, 0x28, 0x00, 0xFF
+	@ Decoded text from ROM range: offset=0x5CC35A, size=0xD
+	.string "はじめてのでんどういり　$"
 
 	@ asm/trainer_card.s:2808 PrintLinkResultsNumsOnCard (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

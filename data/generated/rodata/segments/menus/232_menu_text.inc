@@ -61,9 +61,9 @@ gText_Rom_5CAF4C: @ 0x085CAF4C
 	.if (. - gText_Rom_5CAF4C) < 0x4
 	.space 0x4 - (. - gText_Rom_5CAF4C)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CAF50, size=0x14
-	.byte 0x64, 0x7A, 0xAE, 0x95, 0x00, 0x06, 0x02, 0x0D, 0x03, 0xFF, 0x64, 0x7A, 0xAE, 0x95, 0x00, 0x11
-	.byte 0x35, 0x03, 0x02, 0xFF
+	@ Decoded text from ROM range: offset=0x5CAF50, size=0x14
+	.string "トレード　かいすう$"
+	.string "トレード　ちゅうい$"
 
 	@ src/data/script_menu.h:644 script_menu_line_644 (+4 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -75,8 +75,8 @@ gText_Rom_5CAF64: @ 0x085CAF64
 	.endif
 	.globl gText_Rom_5CAF68
 	.set gText_Rom_5CAF68, gText_Rom_5CAF64 + 0x4
-	@ Replaced baserom.gba range: offset=0x5CAF6C, size=0x9
-	.byte 0x10, 0x10, 0x06, 0x02, 0x19, 0x07, 0x1E, 0x2E, 0xFF
+	@ Decoded text from ROM range: offset=0x5CAF6C, size=0x9
+	.string "たたかいのきほん$"
 
 	@ src/strings.c:506 gText_PokemonNature
 	@ Preserve exact byte length: semantic suffix text pointer.

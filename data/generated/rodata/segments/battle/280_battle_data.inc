@@ -75,8 +75,8 @@ gText_Rom_5DD458: @ 0x085DD458
 	.endif
 	.globl gUnknown_85DD461
 gUnknown_85DD461: @ 0x085DD461
-	@ Replaced baserom.gba range: offset=0x5DD461, size=0x9
-	.byte 0xFD, 0x02, 0x06, 0x02, 0x00, 0x58, 0x78, 0x51, 0xFF
+	@ Decoded text from ROM range: offset=0x5DD461, size=0x9
+	.string "{B_COPY_VAR_1}かい　クリア$"
 	.globl gUnknown_85DD46A
 gUnknown_85DD46A: @ 0x085DD46A
 

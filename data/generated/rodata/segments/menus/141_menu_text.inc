@@ -8,8 +8,8 @@ gText_Rom_5AA86C: @ 0x085AA86C
 	.if (. - gText_Rom_5AA86C) < 0x5
 	.space 0x5 - (. - gText_Rom_5AA86C)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5AA871, size=0x6
-	.byte 0x39, 0xAE, 0x2E, 0x14, 0x00, 0xFF
+	@ Decoded text from ROM range: offset=0x5AA871, size=0x6
+	.string "ぐーんと　$"
 	.globl gUnknown_85AA877
 gUnknown_85AA877: @ 0x085AA877
 

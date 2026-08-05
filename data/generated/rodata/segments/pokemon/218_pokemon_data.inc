@@ -21,8 +21,9 @@ gText_Rom_5CAACA: @ 0x085CAACA
 	.if (. - gText_Rom_5CAACA) < 0x4
 	.space 0x4 - (. - gText_Rom_5CAACA)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CAACE, size=0xA
-	.byte 0x20, 0x1F, 0x0C, 0x10, 0xFF, 0x0A, 0x2A, 0x06, 0x27, 0xFF
+	@ Decoded text from ROM range: offset=0x5CAACE, size=0xA
+	.string "みました$"
+	.string "これから$"
 	.globl gUnknown_85CAAD8
 gUnknown_85CAAD8: @ 0x085CAAD8
 

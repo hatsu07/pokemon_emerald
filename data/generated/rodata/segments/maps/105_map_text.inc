@@ -21,9 +21,9 @@ gText_Rom_57CB17: @ 0x0857CB17
 	.if (. - gText_Rom_57CB17) < 0x4
 	.space 0x4 - (. - gText_Rom_57CB17)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57CB1B, size=0x11
-	.byte 0x5C, 0x79, 0x6C, 0x56, 0x7E, 0x9B, 0x66, 0xAE, 0xFF, 0x9F, 0x59, 0x73, 0x7E, 0x24, 0x0C, 0x07
-	.byte 0xFF
+	@ Decoded text from ROM range: offset=0x57CB1B, size=0x11
+	.string "シルフカンパニー$"
+	.string "ポケモンやしき$"
 
 	@ src/data/region_map/region_map_entries.h:413 region_map_entries_line_413
 	.globl gText_Rom_57CB2C

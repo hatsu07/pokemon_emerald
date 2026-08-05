@@ -720,8 +720,8 @@ gText_Rom_5CC31F: @ 0x085CC31F
 	.endif
 	.globl gUnknown_85CC323
 gUnknown_85CC323: @ 0x085CC323
-	@ Replaced baserom.gba range: offset=0x5CC323, size=0x6
-	.byte 0xC3, 0xBE, 0xC8, 0xE3, 0xB8, 0xFF
+	@ Decoded text from ROM range: offset=0x5CC323, size=0x6
+	.string "IDNo,$"
 	.globl gUnknown_85CC329
 gUnknown_85CC329: @ 0x085CC329
 

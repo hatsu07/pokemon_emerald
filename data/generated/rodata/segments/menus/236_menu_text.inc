@@ -8,8 +8,8 @@ gText_Rom_5CAFFA: @ 0x085CAFFA
 	.if (. - gText_Rom_5CAFFA) < 0x5
 	.space 0x5 - (. - gText_Rom_5CAFFA)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CAFFF, size=0x6
-	.byte 0x07, 0x2B, 0x08, 0x0D, 0x29, 0xFF
+	@ Decoded text from ROM range: offset=0x5CAFFF, size=0x6
+	.string "きろくする$"
 
 	@ src/data/script_menu.h:451 gText_Rest (+1 aliases)
 	.globl gText_Rom_5CB005

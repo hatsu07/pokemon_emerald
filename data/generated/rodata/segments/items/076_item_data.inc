@@ -78,8 +78,8 @@ gText_Rom_30F81F: @ 0x0830F81F
 	.if (. - gText_Rom_30F81F) < 0x7
 	.space 0x7 - (. - gText_Rom_30F81F)
 	.endif
-	@ Replaced baserom.gba range: offset=0x30F826, size=0x7
-	.byte 0x02, 0x2A, 0x10, 0x00, 0x10, 0x18, 0xFF
+	@ Decoded text from ROM range: offset=0x30F826, size=0x7
+	.string "いれた　たね$"
 	.globl gUnknown_830F82D
 gUnknown_830F82D: @ 0x0830F82D
 

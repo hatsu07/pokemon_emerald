@@ -3916,8 +3916,8 @@ gText_Rom_24C101: @ 0x0824C101
 	.if (. - gText_Rom_24C101) < 0x6
 	.space 0x6 - (. - gText_Rom_24C101)
 	.endif
-	@ Replaced baserom.gba range: offset=0x24C107, size=0x6
-	.byte 0x63, 0x7E, 0x5C, 0x86, 0x7E, 0xFF
+	@ Decoded text from ROM range: offset=0x24C107, size=0x6
+	.string "テンション$"
 
 	@ asm/contest.s:11866 sub_080DCBC0 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

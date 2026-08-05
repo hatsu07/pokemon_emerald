@@ -21,8 +21,8 @@ gText_Rom_5CAFD6: @ 0x085CAFD6
 	.if (. - gText_Rom_5CAFD6) < 0x4
 	.space 0x4 - (. - gText_Rom_5CAFD6)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CAFDA, size=0xC
-	.byte 0x9F, 0x59, 0x73, 0x7E, 0x19, 0x00, 0x3D, 0x35, 0x2E, 0x46, 0x2E, 0xFF
+	@ Decoded text from ROM range: offset=0x5CAFDA, size=0xC
+	.string "ポケモンの　じゅんばん$"
 
 	@ src/strings.c:510 gText_BattlePokemon
 	@ Preserve exact byte length: semantic suffix text pointer.
