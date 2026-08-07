@@ -34,7 +34,6 @@
 	.include "data/trainers/trainer_class_names.inc"
 	.include "data/trainers/trainers.inc"
 	.include "data/pokemon/species_names.inc"
-
 	.include "data/moves/move_names.inc"
 	.include "data/battle/battle_bg.inc"
 	.include "data/battle/battle_main.inc"
@@ -43,7 +42,12 @@
 
 	.include "data/abilities/ability_names.inc"
 	.include "data/abilities/ability_descriptions.inc"
-	.include "data/generated/rodata/battle/0475_battle_table.inc"
+	.include "data/battle/battle_main_core.inc"
+	.include "data/battle/battle_script_commands.inc"
+	.include "data/battle/controllers/player.inc"
+	.include "data/battle/battle_palace_smokescreen.inc"
+	.include "data/battle/controllers/opponent.inc"
+	.include "data/battle/controllers/link_opponent.inc"
 	.include "data/moves/battle_moves.inc"
 
 	.include "data/generated/rodata/pokemon/0476-0477_pokemon_data.inc"

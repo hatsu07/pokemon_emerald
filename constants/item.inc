@@ -379,3 +379,8 @@
 .set ITEM_0176                   , 0x0176 @ サファイア
 .set ITEM_0177                   , 0x0177 @ マグマのしるし
 .set ITEM_OLD_SEA_MAP            , 0x0178 @ ふるびたかいず
+
+@ TM aliases
+.set ITEM_TM_FOCUS_PUNCH, ITEM_TM01
+.set ITEM_TM_EARTHQUAKE,  ITEM_TM26
+.set ITEM_TM_REST,        ITEM_TM44

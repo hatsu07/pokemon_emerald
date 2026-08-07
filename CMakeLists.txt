@@ -331,6 +331,40 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
 
     elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_interface/(.+)\\.4bpp\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_interface/(.+)\\.gbapal$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/pokemon/(.+)\\.4bpp\\.lz$")
         set(STEM "${CMAKE_MATCH_1}")
         set(INPUT_PNG
