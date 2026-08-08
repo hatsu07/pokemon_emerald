@@ -8,7 +8,7 @@ import re
 from pathlib import Path
 
 ROM_PATH = Path("baserom.gba")
-EVENT_SCRIPTS_PATH = Path("data/text/generated/event_scripts.inc")
+EVENT_SCRIPTS_PATH = Path("data/generated/event_scripts/index.inc")
 
 SETWILDBATTLE_OPCODE = 0xB6
 COMMAND_SIZE = 6

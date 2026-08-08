@@ -37,7 +37,7 @@ _0817B90C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817B938: .4byte 0x085D2928
+_0817B938: .4byte gEvolutionSparkleScaleFactors
 	thumb_func_end SetEvoSparklesMatrices
 
 	thumb_func_start SpriteCB_PreEvoSparkleSet1
@@ -185,7 +185,7 @@ _0817BA42:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817BA48: .4byte 0x085D2910
+_0817BA48: .4byte gEvolutionSparkleSpriteTemplate
 _0817BA4C: .4byte 0x020205AC
 _0817BA50: .4byte 0x0817B93D
 	thumb_func_end CreatePreEvoSparkleSet1
@@ -299,7 +299,7 @@ _0817BB1E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817BB24: .4byte 0x085D2910
+_0817BB24: .4byte gEvolutionSparkleSpriteTemplate
 _0817BB28: .4byte 0x020205AC
 _0817BB2C: .4byte 0x0817BA55
 	thumb_func_end CreatePreEvoSparkleSet2
@@ -392,7 +392,7 @@ _0817BBCE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817BBD4: .4byte 0x085D2910
+_0817BBD4: .4byte gEvolutionSparkleSpriteTemplate
 _0817BBD8: .4byte 0x020205AC
 _0817BBDC: .4byte 0x0817BB31
 	thumb_func_end CreatePostEvoSparkleSet1
@@ -570,7 +570,7 @@ _0817BD20:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817BD2C: .4byte 0x085D2910
+_0817BD2C: .4byte gEvolutionSparkleSpriteTemplate
 _0817BD30: .4byte 0x020205AC
 _0817BD34: .4byte 0x0817BBE1
 	thumb_func_end CreatePostEvoSparkleSet2
@@ -585,8 +585,8 @@ LoadEvoSparkleSpriteAndPal: @ 0x0817BD38
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817BD4C: .4byte 0x085D28DC
-_0817BD50: .4byte 0x085D28EC
+_0817BD4C: .4byte gEvolutionSparkleSpriteSheet
+_0817BD50: .4byte gEvolutionSparkleSpritePalettes
 	thumb_func_end LoadEvoSparkleSpriteAndPal
 
 	thumb_func_start LaunchTask_PreEvoSparklesSet1

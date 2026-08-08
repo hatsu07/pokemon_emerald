@@ -299,7 +299,7 @@ HandleInitBackgrounds: @ 0x08179C54
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08179CA4: .4byte 0x085CD9F0
+_08179CA4: .4byte gPokeblockFeedBgTemplates
 _08179CA8: .4byte 0x0203B9E4
 	thumb_func_end HandleInitBackgrounds
 
@@ -415,7 +415,7 @@ _08179DA4:
 	ldr r1, [r0]
 	b _08179E16
 	.align 2, 0
-_08179DB0: .4byte 0x085CDB40
+_08179DB0: .4byte gThrownPokeblockSpriteSheet
 _08179DB4: .4byte 0x0203B9E4
 _08179DB8:
 	ldr r0, _08179DCC
@@ -519,7 +519,7 @@ HandleInitWindows: @ 0x08179E64
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08179E9C: .4byte 0x085CD9F8
+_08179E9C: .4byte gPokeblockFeedWindowTemplates
 _08179EA0: .4byte 0x085D7B04
 	thumb_func_end HandleInitWindows
 
@@ -552,7 +552,7 @@ SetPokeblockSpritePal: @ 0x08179EA4
 _08179ED4: .4byte 0x03005AEC
 _08179ED8: .4byte 0x00000848
 _08179EDC: .4byte 0x0203B9E8
-_08179EE0: .4byte 0x085CDA08
+_08179EE0: .4byte gPokeblockFeedPaletteTable
 _08179EE4: .4byte 0x000039E2
 	thumb_func_end SetPokeblockSpritePal
 
@@ -1036,7 +1036,7 @@ _0817A2D8: .4byte 0x0000105A
 _0817A2DC: .4byte 0x020205AC
 _0817A2E0: .4byte 0x08007141
 _0817A2E4: .4byte 0x00001053
-_0817A2E8: .4byte 0x085CDA50
+_0817A2E8: .4byte gPokeblockFeedMonAffineAnimTable
 	thumb_func_end CreateMonSprite
 
 	thumb_func_start PrepareMonToMoveToPokeblock
@@ -1140,7 +1140,7 @@ CreatePokeblockCaseSpriteForFeeding: @ 0x0817A35C
 	bx r1
 	.align 2, 0
 _0817A3A4: .4byte 0x020205AC
-_0817A3A8: .4byte 0x085CDB04
+_0817A3A8: .4byte gPokeblockCaseAffineAnimTable
 _0817A3AC: .4byte 0x08007141
 	thumb_func_end CreatePokeblockCaseSpriteForFeeding
 
@@ -1178,7 +1178,7 @@ DoPokeblockCaseThrowEffect: @ 0x0817A3B0
 	b _0817A400
 	.align 2, 0
 _0817A3F0: .4byte 0x020205AC
-_0817A3F4: .4byte 0x085CDB08
+_0817A3F4: .4byte gPokeblockCaseThrowAffineAnimTable_0
 _0817A3F8:
 	mov r0, r8
 	adds r0, #0x10
@@ -1198,7 +1198,7 @@ _0817A400:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817A41C: .4byte 0x085CDB0C
+_0817A41C: .4byte gPokeblockCaseThrowAffineAnimTable_1
 _0817A420: .4byte 0x020205AC
 	thumb_func_end DoPokeblockCaseThrowEffect
 
@@ -1224,7 +1224,7 @@ CreatePokeblockSprite: @ 0x0817A424
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0817A44C: .4byte 0x085CDB48
+_0817A44C: .4byte gThrownPokeblockSpriteTemplate
 _0817A450: .4byte 0x020205AC
 _0817A454: .4byte 0x0000FFF4
 	thumb_func_end CreatePokeblockSprite
@@ -1304,9 +1304,9 @@ _0817A4D2:
 	.align 2, 0
 _0817A4D8: .4byte 0x0203B9E4
 _0817A4DC: .4byte 0x00001056
-_0817A4E0: .4byte 0x085CD35C
+_0817A4E0: .4byte gPokeblockFeedNatureAnimationInfo
 _0817A4E4: .4byte 0x0000105A
-_0817A4E8: .4byte 0x085CD3A0
+_0817A4E8: .4byte gPokeblockFeedMotionSteps + 0x12
 	thumb_func_end sub_0817A484
 
 	thumb_func_start sub_0817A4EC
@@ -1451,7 +1451,7 @@ _0817A680:
 	strb r0, [r1]
 	b _0817A7C6
 	.align 2, 0
-_0817A6B8: .4byte 0x085CD35C
+_0817A6B8: .4byte gPokeblockFeedNatureAnimationInfo
 _0817A6BC: .4byte 0x0000105A
 _0817A6C0: .4byte 0x00001051
 _0817A6C4: .4byte 0x0000105B
@@ -1512,9 +1512,9 @@ _0817A710:
 	bl StartSpriteAffineAnim
 	b _0817A780
 	.align 2, 0
-_0817A73C: .4byte 0x085CD35C
+_0817A73C: .4byte gPokeblockFeedNatureAnimationInfo
 _0817A740: .4byte 0x0000105A
-_0817A744: .4byte 0x085CD99C
+_0817A744: .4byte gPokeblockFeedAffineAnimTable
 _0817A748: .4byte 0x00001050
 _0817A74C: .4byte 0x00001053
 _0817A750:
@@ -1663,7 +1663,7 @@ _0817A7EA:
 	b _0817A896
 	.align 2, 0
 _0817A878: .4byte 0x0203B9E4
-_0817A87C: .4byte 0x085CD38E
+_0817A87C: .4byte gPokeblockFeedMotionSteps
 _0817A880: .4byte 0x00001051
 _0817A884: .4byte 0x00001068
 _0817A888: .4byte 0x00001074

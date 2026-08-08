@@ -1,0 +1,81 @@
+	.set MOVE_POINTS_COMBO,      0
+	.set MOVE_POINTS_STAT_RAISE, 1
+	.set MOVE_POINTS_STAT_LOWER, 2
+	.set MOVE_POINTS_RARE,       3
+	.set MOVE_POINTS_HEAL,       4
+	.set MOVE_POINTS_RISKY,      5
+	.set MOVE_POINTS_STATUS,     6
+	.set MOVE_POINTS_DMG,        7
+	.set MOVE_POINTS_DEF,        8
+	.set MOVE_POINTS_ACCURATE,   9
+	.set MOVE_POINTS_POWERFUL,   10
+	.set MOVE_POINTS_POPULAR,    11
+	.set MOVE_POINTS_LUCK,       12
+	.set MOVE_POINTS_STRONG,     13
+	.set MOVE_POINTS_LOW_PP,     14
+	.set MOVE_POINTS_EFFECT,     15
+	.set NUM_MOVE_POINT_TYPES,   16
+
+	.set DOME_BATTLE_STYLE_RISKY,          0
+	.set DOME_BATTLE_STYLE_STALL,          1
+	.set DOME_BATTLE_STYLE_VARIED,         2
+	.set DOME_BATTLE_STYLE_COMBO_HIGH,     3
+	.set DOME_BATTLE_STYLE_RARE_MOVES,     4
+	.set DOME_BATTLE_STYLE_RARE_MOVE,      5
+	.set DOME_BATTLE_STYLE_HP,             6
+	.set DOME_BATTLE_STYLE_STORE_POWER,    7
+	.set DOME_BATTLE_STYLE_ENFEEBLE_LOW,   8
+	.set DOME_BATTLE_STYLE_LUCK,           9
+	.set DOME_BATTLE_STYLE_REGAL,          10
+	.set DOME_BATTLE_STYLE_LOW_PP,         11
+	.set DOME_BATTLE_STYLE_STATUS_ATK,     12
+	.set DOME_BATTLE_STYLE_ENDURE,         13
+	.set DOME_BATTLE_STYLE_STATUS,         14
+	.set DOME_BATTLE_STYLE_STRAIGHTFORWARD, 15
+	.set DOME_BATTLE_STYLE_AGGRESSIVE,     16
+	.set DOME_BATTLE_STYLE_DEF,            17
+	.set DOME_BATTLE_STYLE_ENFEEBLE_HIGH,  18
+	.set DOME_BATTLE_STYLE_POPULAR_POWER,  19
+	.set DOME_BATTLE_STYLE_COMBO_LOW,      20
+	.set DOME_BATTLE_STYLE_ACCURATE,       21
+	.set DOME_BATTLE_STYLE_POWERFUL,       22
+	.set DOME_BATTLE_STYLE_ATK_OVER_DEF,   23
+	.set DOME_BATTLE_STYLE_DEF_OVER_ATK,   24
+	.set DOME_BATTLE_STYLE_POPULAR_STRONG, 25
+	.set DOME_BATTLE_STYLE_EFFECTS,        26
+	.set DOME_BATTLE_STYLE_BALANCED,       27
+	.set DOME_BATTLE_STYLE_UNUSED1,        28
+	.set DOME_BATTLE_STYLE_UNUSED2,        29
+	.set DOME_BATTLE_STYLE_UNUSED3,        30
+	.set DOME_BATTLE_STYLE_UNUSED4,        31
+	.set NUM_BATTLE_STYLES,                32
+
+	.set STREAK_DOME_SINGLES_50,           1 << 2
+	.set STREAK_DOME_SINGLES_OPEN,         1 << 3
+	.set STREAK_DOME_DOUBLES_50,           1 << 20
+	.set STREAK_DOME_DOUBLES_OPEN,         1 << 21
+
+	.set DOME_TEXT_TWO_GOOD_STATS,         0
+	.set DOME_TEXT_HP,                     0
+	.set DOME_TEXT_ATK,                    5
+	.set DOME_TEXT_DEF,                    9
+	.set DOME_TEXT_SPEED,                  12
+	.set DOME_TEXT_SPATK,                  14
+	.set DOME_TEXT_ONE_GOOD_STAT,          15
+	.set DOME_TEXT_TWO_BAD_STATS,          21
+	.set DOME_TEXT_ONE_BAD_STAT,           36
+	.set DOME_TEXT_WELL_BALANCED,          42
+
+	.set DOME_ROUND1,                      0
+	.set DOME_ROUND2,                      1
+	.set DOME_SEMIFINAL,                   2
+	.set DOME_FINAL,                       3
+	.set DOME_ROUNDS_COUNT,                4
+
+	.set TOURNEYWIN_NAMES_LEFT,            0
+	.set TOURNEYWIN_NAMES_RIGHT,           1
+	.set TOURNEY_NAME_ROW_HEIGHT,          16
+	.set TOURNEY_NAME_TEXT_Y_OFFSET,       1
+
+	.set TOURNEY_TREE_CLOSE_BUTTON,        31
+	.set TOURNEY_TREE_INVALID_MOVE,        0xFF

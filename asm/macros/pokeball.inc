@@ -41,8 +41,9 @@
 
 @ Displays a frame for duration ticks. hFlip/vFlip are boolean values.
 .macro sprite_anim_frame_ex tileOffset:req, duration:req, hFlip:req, vFlip:req
-    .2byte ((\tileOffset) & SPRITE_ANIM_TILE_INDEX_MASK) | (((\hFlip) & 1) << SPRITE_ANIM_HFLIP_SHIFT) | (((\vFlip) & 1) << SPRITE_ANIM_VFLIP_SHIFT)
-    .2byte \duration
+    .2byte (\tileOffset) & SPRITE_ANIM_TILE_INDEX_MASK
+    .byte (\duration) | (((\hFlip) & 1) << SPRITE_ANIM_HFLIP_SHIFT) | (((\vFlip) & 1) << SPRITE_ANIM_VFLIP_SHIFT)
+    .byte 0 @ padding
 .endm
 
 @ Displays an unflipped frame for duration ticks.

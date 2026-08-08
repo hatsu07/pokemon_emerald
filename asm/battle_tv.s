@@ -2634,7 +2634,7 @@ _0817DF86:
 	movs r0, #0
 	b _0817DFA2
 	.align 2, 0
-_0817DF98: .4byte 0x085D3304
+_0817DF98: .4byte gBattleTvSpecialBattleStrings
 _0817DF9C: .4byte 0x0000FFFF
 _0817DFA0:
 	movs r0, #1
@@ -3461,7 +3461,7 @@ _0817E60C:
 	.align 2, 0
 _0817E63C: .4byte 0x02023D12
 _0817E640: .4byte 0x02023EAF
-_0817E644: .4byte 0x085D3294
+_0817E644: .4byte gBattleTvMovePoints
 _0817E648:
 	ldr r1, _0817E67C
 	add r1, ip
@@ -3490,7 +3490,7 @@ _0817E648:
 	strh r1, [r0]
 	b _0817E918
 	.align 2, 0
-_0817E67C: .4byte 0x085D3294
+_0817E67C: .4byte gBattleTvMovePoints
 _0817E680: .4byte 0x02023D12
 _0817E684: .4byte 0x0000FFFF
 _0817E688: .4byte 0x02023EAF
@@ -3548,7 +3548,7 @@ _0817E6B6:
 	adds r0, r0, r2
 	b _0817E916
 	.align 2, 0
-_0817E6F0: .4byte 0x085D3294
+_0817E6F0: .4byte gBattleTvMovePoints
 _0817E6F4:
 	lsls r0, r5, #1
 	adds r0, r0, r5
@@ -3578,7 +3578,7 @@ _0817E708:
 	adds r0, r0, r2
 	b _0817E916
 	.align 2, 0
-_0817E728: .4byte 0x085D3294
+_0817E728: .4byte gBattleTvMovePoints
 _0817E72C:
 	lsls r1, r5, #2
 	add r1, sb
@@ -3595,7 +3595,7 @@ _0817E72C:
 	adds r0, r0, r2
 	b _0817E910
 	.align 2, 0
-_0817E748: .4byte 0x085D3294
+_0817E748: .4byte gBattleTvMovePoints
 _0817E74C:
 	lsls r2, r5, #2
 	add r2, sb
@@ -3618,7 +3618,7 @@ _0817E74C:
 	strh r0, [r2]
 	b _0817E918
 	.align 2, 0
-_0817E774: .4byte 0x085D3294
+_0817E774: .4byte gBattleTvMovePoints
 _0817E778:
 	lsls r1, r5, #2
 	add r1, sb
@@ -3636,7 +3636,7 @@ _0817E778:
 	adds r0, r0, r2
 	b _0817E916
 	.align 2, 0
-_0817E798: .4byte 0x085D3294
+_0817E798: .4byte gBattleTvMovePoints
 _0817E79C:
 	lsls r0, r3, #4
 	adds r2, r7, r0
@@ -3709,7 +3709,7 @@ _0817E7F8:
 	adds r0, r0, r2
 	b _0817E916
 	.align 2, 0
-_0817E820: .4byte 0x085D3294
+_0817E820: .4byte gBattleTvMovePoints
 _0817E824:
 	lsls r1, r3, #4
 	adds r1, r7, r1
@@ -3762,7 +3762,7 @@ _0817E86A:
 	lsls r0, r0, #4
 	b _0817E906
 	.align 2, 0
-_0817E888: .4byte 0x085D3294
+_0817E888: .4byte gBattleTvMovePoints
 _0817E88C:
 	cmp r6, #8
 	bhi _0817E918
@@ -3799,7 +3799,7 @@ _0817E88C:
 	adds r0, r0, r2
 	b _0817E916
 	.align 2, 0
-_0817E8D0: .4byte 0x085D3294
+_0817E8D0: .4byte gBattleTvMovePoints
 _0817E8D4:
 	cmp r6, #8
 	bls _0817E918
@@ -3847,7 +3847,7 @@ _0817E918:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817E928: .4byte 0x085D3294
+_0817E928: .4byte gBattleTvMovePoints
 	thumb_func_end AddMovePoints
 
 	thumb_func_start AddPointsOnFainting
@@ -4788,7 +4788,7 @@ _0817F048: .4byte 0x02023E8E
 _0817F04C: .4byte 0x00000137
 _0817F050: .4byte 0x082ED220
 _0817F054: .4byte 0x02024154
-_0817F058: .4byte 0x085D2F0C
+_0817F058: .4byte gBattleTvMovesExcludedFromDamageCalculation
 _0817F05C: .4byte 0x0000FFFF
 _0817F060: .4byte 0x02023E94
 _0817F064: .4byte 0x02023F32
@@ -4877,7 +4877,7 @@ _0817F0FE:
 	b _0817F14C
 	.align 2, 0
 _0817F110: .4byte 0x082ED220
-_0817F114: .4byte 0x085D2F0C
+_0817F114: .4byte gBattleTvMovesExcludedFromDamageCalculation
 _0817F118: .4byte 0x0000FFFF
 _0817F11C:
 	cmp r2, #0x95
@@ -5086,4 +5086,3 @@ _0817F292:
 	pop {r0}
 	bx r0
 	thumb_func_end AddPointsBasedOnWeather
-

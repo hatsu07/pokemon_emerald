@@ -25,4 +25,33 @@ sText_Connecting: @ 0x082BFDAC
 
 	.globl sText_UnableToConnectPrefix
 sText_UnableToConnectPrefix: @ 0x082BFDB8
-	.string "せつぞく でき" @ Continues at gText_Rom_2BFDBF.
+	.string "せつぞく できません$"
+	@ Decoded text from ROM range: offset=0x2BFDC3, size=0x20
+	.string "　かくにん　ちゅうです$"
+	.string "　かくにん　できました$"
+	.string "　かくにん　できません$"
+	@ Decoded text from ROM range: offset=0x2BFDE7, size=0x19
+	.string "　かくにん　を　かくにん$"
+	.string "かくにん　は　しっぱい$"
+
+	.globl gUnknown_82BFE00
+gUnknown_82BFE00: @ 0x082BFE00
+	@ Decoded text from ROM range: offset=0x2BFE00, size=0x50
+	.string "　　つうしん　エラーが　はっせいしました\n　　　しゅうへんきき　との　せつぞくを\n　　　　きちんと　かくにん　してから\n　　　でんげんを　いれなおしてください$"
+	.globl gUnknown_82BFE50
+gUnknown_82BFE50: @ 0x082BFE50
+	@ Decoded text from ROM range: offset=0x2BFE50, size=0x12
+	.string "つうしんエラーが　はっせいしました$"
+	.globl gUnknown_82BFE62
+gUnknown_82BFE62: @ 0x082BFE62
+	@ Decoded text from ROM range: offset=0x2BFE62, size=0x2B
+	.string "　つうしんあいてと　ちかづいて　ください\nしょうがいぶつが　ないように　してください$"
+	.globl gUnknown_82BFE8D
+gUnknown_82BFE8D: @ 0x082BFE8D
+	@ Decoded text from ROM range: offset=0x2BFE8D, size=0x12
+	.string "Aボタンで　うけつけに　もどります$"
+	.globl gUnknown_82BFE9F
+gUnknown_82BFE9F: @ 0x082BFE9F
+	@ Decoded text and trailing text-control bytes from ROM range: offset=0x2BFE9F, size=0x15
+	.string "Aボタンで　タイトルに　もどります$"
+	.string "{HIGHLIGHT}{TRANSPARENT}"

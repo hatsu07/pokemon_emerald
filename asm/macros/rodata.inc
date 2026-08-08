@@ -1,5 +1,109 @@
+	.macro bg_template bg, char_base, map_base, screen_size, palette_mode, priority, base_tile
+	.4byte ((\bg) & 3) | (((\char_base) & 3) << 2) | (((\map_base) & 0x1F) << 4) | (((\screen_size) & 3) << 9) | (((\palette_mode) & 1) << 11) | (((\priority) & 3) << 12) | (((\base_tile) & 0x3FF) << 14)
+	.endm
+
 	.macro menu_cursor_dimensions width, height
 	.byte \width, \height
+	.endm
+
+	.macro pokeblock_feed_motion_step angle, angle_delta, x_amplitude, y_amplitude, duration, phase_delta, x_offset, y_offset, interpolation_start, end_sequence
+	.2byte \angle, \angle_delta, \x_amplitude, \y_amplitude, \duration
+	.2byte \phase_delta, \x_offset, \y_offset, \interpolation_start, \end_sequence
+	.endm
+
+	@ Sprite placement used by the moving foreground layers in the intro credits.
+	.macro intro_credits_sprite_spawn anim, dimensions, x, y, subpriority, x_velocity
+	.byte ((\anim) & 0xF) | (((\dimensions) & 0xF) << 4)
+	.byte \x, \y, \subpriority
+	.2byte \x_velocity
+	.2byte 0 @ padding
+	.endm
+
+	.macro bard_sound_entry sound, volume=0x100
+	.2byte \sound, \volume
+	.endm
+
+	.macro bard_sound_cycle volume=0x100
+	bard_sound_entry BARD_SOUND_0, \volume
+	bard_sound_entry BARD_SOUND_1, \volume
+	bard_sound_entry BARD_SOUND_2, \volume
+	bard_sound_entry BARD_SOUND_3, \volume
+	bard_sound_entry BARD_SOUND_4, \volume
+	.endm
+
+	@ One score indexed by a battle move effect. The effect argument verifies order.
+	.macro battle_tv_effect_points effect, points
+	.if (\effect) != ((. - gBattleTvMoveEffectPoints) / 2)
+	.error "Battle TV move effect points are out of order"
+	.endif
+	.2byte \points
+	.endm
+
+	@ One move/score pair in a Battle TV weather or field-effect table.
+	.macro battle_tv_move_points move, points
+	.2byte \move, \points
+	.endm
+
+	@ One species-indexed entry in the back-sprite animation set table.
+	.macro species_back_anim species, anim
+	.if (\species) != (. - gSpeciesToBackAnimSet)
+	.error "Pokemon back animation sets are out of species order"
+	.endif
+	.byte \anim
+	.endm
+
+	.macro yellow_flash_step yellow, duration
+	.byte \yellow, \duration
+	.endm
+
+	.macro vertical_shake_step offset, duration
+	.byte \offset, \duration
+	.endm
+
+	@ One animation-ID-indexed callback in the Pokemon animation function table.
+	.macro mon_anim_function anim, function
+	.if (\anim) != ((. - gMonAnimFunctions) / 4)
+	.error "Pokemon animation functions are out of animation ID order"
+	.endif
+	.4byte \function
+	.endm
+
+	@ Three nature-selected animation IDs for one back-sprite animation set.
+	.macro back_anim_variants anim_set, variant0, variant1, variant2
+	.if ((\anim_set) - 1) != ((. - gBackAnimSetToAnimIds) / 3)
+	.error "Pokemon back animation variants are out of set order"
+	.endif
+	.byte \variant0, \variant1, \variant2
+	.endm
+
+	.macro back_anim_nature_mod nature, variant
+	.if (\nature) != (. - gBackAnimNatureModTable)
+	.error "Pokemon back animation nature modifiers are out of nature order"
+	.endif
+	.byte \variant
+	.endm
+
+	@ Signed sprite movement per frame, followed by its duration in frames.
+	.macro mon_anim_offset_step x, y, duration
+	.byte \x, \y, \duration
+	.endm
+
+	@ Horizontal interpolation endpoints and duration for a Pokemon animation.
+	.macro mon_anim_interpolation_step start, end, duration
+	.byte \start, \end, \duration
+	.endm
+
+	@ Yellow-flash state and duration, with the original structure padding.
+	.macro back_anim_yellow_flash_step yellow, duration
+	.byte \yellow, \duration
+	.2byte 0
+	.endm
+
+	.macro battle_controller_command table, command, handler
+	.if (\command) != ((. - \table) / 4)
+	.error "Battle controller commands are out of order"
+	.endif
+	.4byte \handler
 	.endm
 
 	.macro sprite_tile_counts square8, square16, square32, square64, horizontal8, horizontal16, horizontal32, horizontal64, vertical8, vertical16, vertical32, vertical64
@@ -10,6 +114,98 @@
 
 	.macro center_to_corner_vector x, y
 	.byte (\x) & 0xFF, (\y) & 0xFF
+	.endm
+
+	@ Nine packed Easy Chat words forming one Quiz Lady question.
+	.macro quiz_lady_question question, word0, word1, word2, word3, word4, word5, word6, word7, word8
+	.if (\question) != ((. - gQuizLadyQuestions) / 18)
+	.error "Quiz Lady questions are out of order"
+	.endif
+	.2byte \word0, \word1, \word2, \word3, \word4, \word5, \word6, \word7, \word8
+	.endm
+
+	.macro quiz_lady_question_pointer question, pointer
+	.if (\question) != ((. - gQuizLadyQuestionPointers) / 4)
+	.error "Quiz Lady question pointers are out of order"
+	.endif
+	.4byte \pointer
+	.endm
+
+	@ Sixteen Battle Dome style characteristics for one move.
+	.macro battle_dome_move_points move, points
+	.if (\move) != ((. - gBattleDomeMovePoints) / NUM_MOVE_POINT_TYPES)
+	.error "Battle Dome move points are out of move ID order"
+	.endif
+	.byte ((\points) >> MOVE_POINTS_COMBO) & 1
+	.byte ((\points) >> MOVE_POINTS_STAT_RAISE) & 1
+	.byte ((\points) >> MOVE_POINTS_STAT_LOWER) & 1
+	.byte ((\points) >> MOVE_POINTS_RARE) & 1
+	.byte ((\points) >> MOVE_POINTS_HEAL) & 1
+	.byte ((\points) >> MOVE_POINTS_RISKY) & 1
+	.byte ((\points) >> MOVE_POINTS_STATUS) & 1
+	.byte ((\points) >> MOVE_POINTS_DMG) & 1
+	.byte ((\points) >> MOVE_POINTS_DEF) & 1
+	.byte ((\points) >> MOVE_POINTS_ACCURATE) & 1
+	.byte ((\points) >> MOVE_POINTS_POWERFUL) & 1
+	.byte ((\points) >> MOVE_POINTS_POPULAR) & 1
+	.byte ((\points) >> MOVE_POINTS_LUCK) & 1
+	.byte ((\points) >> MOVE_POINTS_STRONG) & 1
+	.byte ((\points) >> MOVE_POINTS_LOW_PP) & 1
+	.byte ((\points) >> MOVE_POINTS_EFFECT) & 1
+	.endm
+
+	.macro battle_dome_style_threshold style, combo, stat_raise, stat_lower, rare, heal, risky, status, damage, defense, accurate, powerful, popular, luck, strong, low_pp, effect
+	.if (\style) != ((. - gBattleDomeStyleThresholds) / NUM_MOVE_POINT_TYPES)
+	.error "Battle Dome style thresholds are out of style ID order"
+	.endif
+	.byte \combo, \stat_raise, \stat_lower, \rare
+	.byte \heal, \risky, \status, \damage
+	.byte \defense, \accurate, \powerful, \popular
+	.byte \luck, \strong, \low_pp, \effect
+	.endm
+
+	.macro battle_dome_style_text style, text
+	.if (\style) != ((. - gBattleDomeOpponentStyleTexts) / 4)
+	.error "Battle Dome style texts are out of style ID order"
+	.endif
+	.4byte \text
+	.endm
+
+	.macro battle_dome_tourney_line_section x, y, tile
+	.byte \x, \y
+	.2byte \tile
+	.endm
+
+	.macro battle_dome_tourney_line_paths trainer
+	.4byte gBattleDomeTourneyTreeLineSections_Trainer\trainer\()_Round1
+	.4byte gBattleDomeTourneyTreeLineSections_Trainer\trainer\()_Round2
+	.4byte gBattleDomeTourneyTreeLineSections_Trainer\trainer\()_Round3
+	.4byte gBattleDomeTourneyTreeLineSections_Trainer\trainer\()_Round4
+	.endm
+
+	.macro match_call_trainer trainer_id, required_badges, battle1, battle2, battle3, general, frontier, same_route, different_route
+	.2byte \trainer_id, \required_badges
+	.2byte \battle1, \battle2, \battle3
+	.2byte \general, \frontier, \same_route, \different_route
+	.2byte 0 @ padding
+	.endm
+
+	.macro match_call_text text, var1, var2, var3
+	.4byte \text
+	.byte \var1, \var2, \var3
+	.byte 0 @ padding
+	.endm
+
+	@ Cursor destinations for five tournament rounds, ordered up, down, left, right.
+	.macro battle_dome_cursor_moves position, r1u, r1d, r1l, r1r, r2u, r2d, r2l, r2r, r3u, r3d, r3l, r3r, r4u, r4d, r4l, r4r, r5u, r5d, r5l, r5r
+	.if (\position) != ((. - gBattleDomeTourneyTreeCursorMovementMap) / 20)
+	.error "Battle Dome cursor movement rows are out of position order"
+	.endif
+	.byte \r1u, \r1d, \r1l, \r1r
+	.byte \r2u, \r2d, \r2l, \r2r
+	.byte \r3u, \r3d, \r3l, \r3r
+	.byte \r4u, \r4d, \r4l, \r4r
+	.byte \r5u, \r5d, \r5l, \r5r
 	.endm
 
 	@ Packs the four halfwords of struct OamData from semantic fields.
@@ -56,6 +252,18 @@
 	.4byte \images
 	.4byte \affine_anims
 	.4byte \callback
+	.endm
+
+	.macro rodata_compressed_sprite_sheet data, size, tag
+	.4byte \data
+	.2byte \size
+	.2byte \tag
+	.endm
+
+	.macro rodata_sprite_palette data, tag
+	.4byte \data
+	.2byte \tag
+	.2byte 0 @ structure padding
 	.endm
 
 	.macro oam_dimensions32 width, height

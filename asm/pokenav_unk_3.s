@@ -651,7 +651,7 @@ _081CA6DC:
 	ldrb r0, [r0]
 	b _081CA710
 	.align 2, 0
-_081CA6FC: .4byte 0x082EFF00
+_081CA6FC: .4byte gFacilityClassToPicIndex
 _081CA700:
 	adds r0, r4, #0
 	bl GetTrainerIdxByRematchIdx

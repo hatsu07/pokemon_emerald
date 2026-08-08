@@ -49,11 +49,11 @@ sub_0818D6EC: @ 0x0818D6EC
 	b _0818D750
 	.align 2, 0
 _0818D730: .4byte 0x00004010
-_0818D734: .4byte 0x085D3ADE
+_0818D734: .4byte gLilycoveLadyGfxIds
 _0818D738: .4byte 0x03005AEC
 _0818D73C: .4byte 0x00003B58
 _0818D740: .4byte 0x00004011
-_0818D744: .4byte 0x085D3AD4
+_0818D744: .4byte gContestLadyMonGfxIds
 _0818D748: .4byte 0x02037290
 _0818D74C:
 	ldr r1, _0818D758
@@ -251,7 +251,7 @@ sub_0818D84C: @ 0x0818D84C
 	bx r0
 	.align 2, 0
 _0818D8A0: .4byte 0x0203CA30
-_0818D8A4: .4byte 0x085D3D6C
+_0818D8A4: .4byte gFavorLadyAcceptedItemListPointers
 	thumb_func_end sub_0818D84C
 
 	thumb_func_start SetLilycoveFavourLady
@@ -350,7 +350,7 @@ sub_0818D948: @ 0x0818D948
 	ldr r0, [r0]
 	bx lr
 	.align 2, 0
-_0818D954: .4byte 0x085D3CA4
+_0818D954: .4byte gFavorLadyRequestTextPointers
 	thumb_func_end sub_0818D948
 
 	thumb_func_start sub_0818D958
@@ -587,7 +587,7 @@ _0818DAE8:
 _0818DB18: .4byte 0x0203CA30
 _0818DB1C: .4byte 0x03005AEC
 _0818DB20: .4byte 0x00003B58
-_0818DB24: .4byte 0x085D3D6C
+_0818DB24: .4byte gFavorLadyAcceptedItemListPointers
 _0818DB28: .4byte 0x02021C54
 _0818DB2C: .4byte 0x03005AF0
 _0818DB30: .4byte gGameLanguage
@@ -688,7 +688,7 @@ sub_0818DBAC: @ 0x0818DBAC
 _0818DBD8: .4byte 0x0203CA30
 _0818DBDC: .4byte 0x03005AEC
 _0818DBE0: .4byte 0x00003B58
-_0818DBE4: .4byte 0x085D3D84
+_0818DBE4: .4byte gFavorLadyPrizes
 	thumb_func_end sub_0818DBAC
 
 	thumb_func_start sub_0818DBE8
@@ -762,9 +762,9 @@ _0818DC26:
 	bx r0
 	.align 2, 0
 _0818DC64: .4byte 0x0203CA34
-_0818DC68: .4byte 0x085D3C04
-_0818DC6C: .4byte 0x085D3C44
-_0818DC70: .4byte 0x085D3C64
+_0818DC68: .4byte gQuizLadyQuestionPointers
+_0818DC6C: .4byte gQuizLadyAnswers
+_0818DC70: .4byte gQuizLadyPrizes
 	thumb_func_end sub_0818DC0C
 
 	thumb_func_start SetLilycoveQuizLady
@@ -953,7 +953,7 @@ _0818DDC8: .4byte 0x0203CA34
 _0818DDCC: .4byte 0x03005AEC
 _0818DDD0: .4byte 0x00003B58
 _0818DDD4: .4byte 0x02021C40
-_0818DDD8: .4byte 0x085D3D90
+_0818DDD8: .4byte gText_QuizLadyDefaultAnswer
 _0818DDDC:
 	ldr r0, _0818DE40
 	ldr r2, _0818DE44
@@ -1803,8 +1803,8 @@ sub_0818E3F0: @ 0x0818E3F0
 _0818E428: .4byte 0x0203CA38
 _0818E42C: .4byte 0x03005AEC
 _0818E430: .4byte 0x00003B58
-_0818E434: .4byte 0x085D3DDC
-_0818E438: .4byte 0x085D3DB0
+_0818E434: .4byte gContestLadyCategoryTextPointers
+_0818E438: .4byte gContestLadyMonNamePointers
 	thumb_func_end sub_0818E3F0
 
 	thumb_func_start sub_0818E43C
@@ -1833,7 +1833,7 @@ sub_0818E43C: @ 0x0818E43C
 _0818E468: .4byte 0x0203CA38
 _0818E46C: .4byte 0x03005AEC
 _0818E470: .4byte 0x00003B58
-_0818E474: .4byte 0x085D3DB0
+_0818E474: .4byte gContestLadyMonNamePointers
 	thumb_func_end sub_0818E43C
 
 	thumb_func_start sub_0818E478
@@ -1887,7 +1887,7 @@ sub_0818E4C4: @ 0x0818E4C4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0818E4D8: .4byte 0x085D3DDC
+_0818E4D8: .4byte gContestLadyCategoryTextPointers
 	thumb_func_end sub_0818E4C4
 
 	thumb_func_start sub_0818E4DC
@@ -2039,7 +2039,7 @@ _0818E5D8: .4byte 0x0203CA38
 _0818E5DC: .4byte 0x03005AEC
 _0818E5E0: .4byte 0x00003B58
 _0818E5E4: .4byte 0x02037282
-_0818E5E8: .4byte 0x085D3DF0
+_0818E5E8: .4byte gContestLadyMonSpecies
 	thumb_func_end sub_0818E5BC
 
 	thumb_func_start sub_0818E5EC
@@ -2078,4 +2078,3 @@ sub_0818E61C: @ 0x0818E61C
 _0818E620: .4byte 0x085D5B0C
 _0818E624: .4byte 0x02037280
 	thumb_func_end sub_0818E61C
-

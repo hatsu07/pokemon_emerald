@@ -83,7 +83,7 @@ _0818E6C0: .4byte 0x00000CA9
 _0818E6C4: .4byte 0x000040CE
 _0818E6C8: .4byte 0x00000CA8
 _0818E6CC: .4byte 0x00000CDC
-_0818E6D0: .4byte 0x085D5B68
+_0818E6D0: .4byte gBattleDomeWinStreakFlags
 _0818E6D4: .4byte 0x00000D0C
 _0818E6D8: .4byte 0x03005AEC
 _0818E6DC: .4byte 0x0203886A
@@ -171,7 +171,7 @@ _0818E770:
 _0818E794: .4byte 0x02037290
 _0818E798: .4byte 0x03005AF0
 _0818E79C: .4byte 0x00000CDC
-_0818E7A0: .4byte 0x085D5B68
+_0818E7A0: .4byte gBattleDomeWinStreakFlags
 _0818E7A4:
 	ldr r1, _0818E7B4
 	ldr r0, _0818E7B8
@@ -477,7 +477,7 @@ _0818EA10:
 _0818EA34: .4byte 0x02037284
 _0818EA38: .4byte 0x03005AF0
 _0818EA3C: .4byte 0x00000CDC
-_0818EA40: .4byte 0x085D5B68
+_0818EA40: .4byte gBattleDomeWinStreakFlags
 _0818EA44:
 	ldr r0, _0818EA60
 	ldr r2, [r0]
@@ -496,7 +496,7 @@ _0818EA44:
 	.align 2, 0
 _0818EA60: .4byte 0x03005AF0
 _0818EA64: .4byte 0x00000CDC
-_0818EA68: .4byte 0x085D5B78
+_0818EA68: .4byte gBattleDomeWinStreakMasks
 _0818EA6C:
 	ldr r0, _0818EA84
 	ldr r2, [r0]
@@ -1553,7 +1553,7 @@ _0818F2D0:
 _0818F2F0: .4byte 0x00000D24
 _0818F2F4: .4byte 0x03005AF0
 _0818F2F8: .4byte 0x000003FF
-_0818F2FC: .4byte 0x085D5E6D
+_0818F2FC: .4byte gBattleDomeTrainerNamePositions
 _0818F300: .4byte 0xFFFFFC00
 _0818F304: .4byte 0x000003FE
 _0818F308:
@@ -3045,7 +3045,7 @@ _0818FE34:
 	.align 2, 0
 _0818FE4C: .4byte 0x03005AF0
 _0818FE50: .4byte 0x00000D24
-_0818FE54: .4byte 0x085D5B88
+_0818FE54: .4byte gBattleDomeIdToOpponentId
 _0818FE58:
 	lsls r0, r5, #2
 	adds r1, r3, r0
@@ -3072,7 +3072,7 @@ _0818FE62:
 	adds r0, r0, r3
 	b _0818FEAA
 	.align 2, 0
-_0818FE88: .4byte 0x085D5BC8
+_0818FE88: .4byte gBattleDomeTourneyTreeTrainerOpponentIds
 _0818FE8C: .4byte 0x00000D25
 _0818FE90:
 	adds r2, #1
@@ -3102,7 +3102,7 @@ _0818FEB2:
 	b _0818FEEE
 	.align 2, 0
 _0818FEC0: .4byte 0x00000D25
-_0818FEC4: .4byte 0x085D5BC8
+_0818FEC4: .4byte gBattleDomeTourneyTreeTrainerOpponentIds
 _0818FEC8:
 	mov r3, ip
 	ldr r1, [r3]
@@ -3397,8 +3397,8 @@ _081900AA:
 	b _08190142
 	.align 2, 0
 _0819010C: .4byte 0x05006000
-_08190110: .4byte 0x085D5928
-_08190114: .4byte 0x085D5958
+_08190110: .4byte gBattleDomeInfoCardBgTemplates
+_08190114: .4byte gBattleDomeInfoCardWindowTemplates
 _08190118: .4byte 0x02022AC8
 _0819011C: .4byte 0x02022ACA
 _08190120: .4byte 0x02022ACC
@@ -3539,9 +3539,9 @@ _0819025E:
 _08190268: .4byte 0x08D83DF4
 _0819026C: .4byte 0x08D84A08
 _08190270: .4byte 0x08D84F98
-_08190274: .4byte 0x085D59FC
+_08190274: .4byte gBattleDomeTourneyTreeButtonSheets
 _08190278: .4byte 0x08D8533C
-_0819027C: .4byte 0x08D85428
+_0819027C: .4byte gBattleDomeTourneyTreeButtons_Pal
 _08190280: .4byte 0x08D855E4
 _08190284: .4byte 0x08D854AC
 _08190288: .4byte 0x020377B4
@@ -3702,9 +3702,9 @@ _081903CE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081903E0: .4byte 0x085D5AE4
+_081903E0: .4byte gBattleDomeTourneyTreeVerticalArrowSpriteTemplate
 _081903E4: .4byte 0x020205AC
-_081903E8: .4byte 0x085D5ACC
+_081903E8: .4byte gBattleDomeTourneyTreeHorizontalArrowSpriteTemplate
 	thumb_func_end Task_ShowOpponentInfo
 
 	thumb_func_start SpriteCb_TrainerIconCardScrollUp
@@ -4309,7 +4309,7 @@ _08190830:
 	b _081908A8
 	.align 2, 0
 _08190840: .4byte 0x03005B60
-_08190844: .4byte 0x085D5AFC
+_08190844: .4byte gBattleDomeTourneyTreeTrainerIds
 _08190848: .4byte 0x03005AF0
 _0819084C: .4byte 0x00000CB2
 _08190850: .4byte 0x00000D25
@@ -4721,7 +4721,7 @@ _08190B94: .4byte 0x02022ACE
 _08190B98: .4byte 0x0203CA44
 _08190B9C: .4byte 0x02022AD0
 _08190BA0: .4byte 0x02022AD2
-_08190BA4: .4byte 0x085D5AFC
+_08190BA4: .4byte gBattleDomeTourneyTreeTrainerIds
 _08190BA8: .4byte 0x03005B60
 _08190BAC:
 	ldr r1, _08190BE8
@@ -4756,7 +4756,7 @@ _08190BAC:
 	.align 2, 0
 _08190BE8: .4byte 0x02022AD0
 _08190BEC: .4byte 0x02022AD2
-_08190BF0: .4byte 0x085D5AFC
+_08190BF0: .4byte gBattleDomeTourneyTreeTrainerIds
 _08190BF4: .4byte 0x03005B60
 _08190BF8:
 	ldr r6, _08190C44
@@ -5160,7 +5160,7 @@ _08190F38: .4byte 0x02022ACE
 _08190F3C: .4byte 0x0203CA44
 _08190F40: .4byte 0x02022AD0
 _08190F44: .4byte 0x02022AD2
-_08190F48: .4byte 0x085D5AFC
+_08190F48: .4byte gBattleDomeTourneyTreeTrainerIds
 _08190F4C: .4byte 0x03005B60
 _08190F50:
 	ldr r0, _08190F88
@@ -5192,7 +5192,7 @@ _08190F50:
 	.align 2, 0
 _08190F88: .4byte 0x02022AD0
 _08190F8C: .4byte 0x02022AD2
-_08190F90: .4byte 0x085D5AFC
+_08190F90: .4byte gBattleDomeTourneyTreeTrainerIds
 _08190F94: .4byte 0x03005B60
 _08190F98:
 	ldr r6, _08190FE0
@@ -5593,7 +5593,7 @@ _081912CC: .4byte 0x02022ACE
 _081912D0: .4byte 0x0203CA44
 _081912D4: .4byte 0x02022AD0
 _081912D8: .4byte 0x02022AD2
-_081912DC: .4byte 0x085D5AFC
+_081912DC: .4byte gBattleDomeTourneyTreeTrainerIds
 _081912E0: .4byte 0x03005B60
 _081912E4:
 	ldr r1, _08191394
@@ -5687,7 +5687,7 @@ _0819133C:
 	.align 2, 0
 _08191394: .4byte 0x02022AD0
 _08191398: .4byte 0x02022AD2
-_0819139C: .4byte 0x085D5BD8
+_0819139C: .4byte gBattleDomeIdToMatchNumber
 _081913A0: .4byte 0x03005B60
 _081913A4: .4byte 0x0203CA44
 _081913A8: .4byte 0x020205AC
@@ -6299,7 +6299,7 @@ _08191838:
 	.align 2, 0
 _08191890: .4byte 0x02022AD0
 _08191894: .4byte 0x02022AD2
-_08191898: .4byte 0x085D5BD8
+_08191898: .4byte gBattleDomeIdToMatchNumber
 _0819189C: .4byte 0x0203CA44
 _081918A0: .4byte 0x03005B60
 _081918A4: .4byte 0x020205AC
@@ -7092,7 +7092,7 @@ _08191EDC:
 	b _08191F12
 	.align 2, 0
 _08191EF8: .4byte 0x03005B60
-_08191EFC: .4byte 0x085D5AFC
+_08191EFC: .4byte gBattleDomeTourneyTreeTrainerIds
 _08191F00: .4byte 0x03005AF0
 _08191F04: .4byte 0x00000CB2
 _08191F08: .4byte 0x03002360
@@ -7218,7 +7218,7 @@ _08191FE8: .4byte 0x03005AF0
 _08191FEC: .4byte 0x00000D25
 _08191FF0: .4byte 0x0203CA44
 _08191FF4: .4byte 0x03005B60
-_08191FF8: .4byte 0x085D5C1C
+_08191FF8: .4byte gBattleDomeTrainerAndRoundToLastMatchCardNum
 _08191FFC:
 	lsls r0, r6, #2
 	adds r0, r0, r6
@@ -7246,7 +7246,7 @@ _0819200C:
 	b _08192036
 	.align 2, 0
 _0819202C: .4byte 0x0203CA44
-_08192030: .4byte 0x085D5C18
+_08192030: .4byte gBattleDomeLastMatchCardNum
 _08192034:
 	subs r5, #1
 _08192036:
@@ -7272,7 +7272,7 @@ _0819203A:
 	b _08192066
 	.align 2, 0
 _0819205C: .4byte 0x0203CA44
-_08192060: .4byte 0x085D5C18
+_08192060: .4byte gBattleDomeLastMatchCardNum
 _08192064:
 	adds r5, #1
 _08192066:
@@ -7328,7 +7328,7 @@ _081920A2:
 	.align 2, 0
 _081920C0: .4byte 0x0203CA44
 _081920C4: .4byte 0x03005B60
-_081920C8: .4byte 0x085D5C3C
+_081920C8: .4byte gBattleDomeTournamentIdToPairedTrainerIds
 _081920CC:
 	cmp r1, #2
 	bne _081920F0
@@ -7346,7 +7346,7 @@ _081920DE:
 	b _081920FC
 	.align 2, 0
 _081920E8: .4byte 0x03005B60
-_081920EC: .4byte 0x085D5C3C
+_081920EC: .4byte gBattleDomeTournamentIdToPairedTrainerIds
 _081920F0:
 	lsls r0, r6, #2
 	adds r0, r0, r6
@@ -7579,7 +7579,7 @@ _081922A8: .4byte 0x020205AC
 _081922AC: .4byte 0x000003FF
 _081922B0: .4byte 0x03005AF0
 _081922B4: .4byte 0x00000D64
-_081922B8: .4byte 0x085D5DBC
+_081922B8: .4byte gBattleDomeInfoTrainerMonX
 _081922BC:
 	ldr r0, _081922DC
 	ldr r3, [sp, #0x24]
@@ -7601,7 +7601,7 @@ _081922BC:
 _081922DC: .4byte 0x000003FE
 _081922E0: .4byte 0x03005AF0
 _081922E4: .4byte 0x00000D64
-_081922E8: .4byte 0x085D5DBC
+_081922E8: .4byte gBattleDomeInfoTrainerMonX
 _081922EC:
 	ldr r0, _081923C0
 	ldr r0, [r0]
@@ -7714,11 +7714,11 @@ _08192366:
 _081923C0: .4byte 0x03005AF0
 _081923C4: .4byte 0x00000D64
 _081923C8: .4byte 0x0203B958
-_081923CC: .4byte 0x085D5DBC
-_081923D0: .4byte 0x085D5DBF
+_081923CC: .4byte gBattleDomeInfoTrainerMonX
+_081923D0: .4byte gBattleDomeInfoTrainerMonY
 _081923D4: .4byte 0x08190595
 _081923D8: .4byte 0x000003FF
-_081923DC: .4byte 0x082EFF52
+_081923DC: .4byte gFacilityClassToTrainerClass
 _081923E0:
 	ldr r0, _081923F0
 	ldr r1, [sp, #0x24]
@@ -7853,7 +7853,7 @@ _081924D2:
 _081924F4: .4byte 0x02021C54
 _081924F8: .4byte 0x02021C40
 _081924FC: .4byte 0x082EA31C
-_08192500: .4byte 0x085D5DC2
+_08192500: .4byte gBattleDomeSpeciesNameTextYCoords
 _08192504: .4byte 0x000003FF
 _08192508: .4byte 0x03005AF0
 _0819250C: .4byte 0x00000D64
@@ -7930,7 +7930,7 @@ _081925A4: .4byte 0x03005AF0
 _081925A8: .4byte 0x00000D64
 _081925AC: .4byte 0x0203B958
 _081925B0: .4byte 0x000003FE
-_081925B4: .4byte 0x085D5C4C
+_081925B4: .4byte gBattleDomePotentialTexts
 _081925B8:
 	ldr r0, _08192628
 	ldr r2, [sp, #0x20]
@@ -7991,8 +7991,8 @@ _081925FA:
 	ldr r2, [sp, #0x48]
 	b _0819268C
 	.align 2, 0
-_08192628: .4byte 0x085D5C4C
-_0819262C: .4byte 0x085D3DFC
+_08192628: .4byte gBattleDomePotentialTexts
+_0819262C: .4byte gBattleDomeMovePoints
 _08192630: .4byte 0x000003FE
 _08192634:
 	ldr r0, _08192648
@@ -8138,8 +8138,8 @@ _08192724:
 _0819273C: .4byte 0x03005AF0
 _08192740: .4byte 0x00000D64
 _08192744: .4byte 0x0203B958
-_08192748: .4byte 0x085D5C90
-_0819274C: .4byte 0x085D542C
+_08192748: .4byte gBattleDomeOpponentStyleTexts
+_0819274C: .4byte gBattleDomeStyleThresholds
 _08192750: .4byte 0xFFFFFC02
 _08192754: .4byte 0x000003FE
 _08192758:
@@ -8597,7 +8597,7 @@ _08192A98:
 	adds r7, r1, r0
 	b _08192B06
 	.align 2, 0
-_08192ABC: .4byte 0x085D5DC5
+_08192ABC: .4byte gBattleDomeStatTextOffsets
 _08192AC0:
 	cmp r7, #1
 	bne _08192AD0
@@ -8625,7 +8625,7 @@ _08192AD0:
 	adds r7, #0x15
 	b _08192B06
 	.align 2, 0
-_08192AF0: .4byte 0x085D5DC5
+_08192AF0: .4byte gBattleDomeStatTextOffsets
 _08192AF4:
 	cmp r5, #1
 	bne _08192B04
@@ -8661,7 +8661,7 @@ _08192B06:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08192B38: .4byte 0x085D5D10
+_08192B38: .4byte gBattleDomeOpponentStatsTexts
 	thumb_func_end DisplayTrainerInfoOnCard
 
 	thumb_func_start sub_08192B3C
@@ -8725,11 +8725,11 @@ _08192B76:
 	bl StringCopy
 	b _08192BEC
 	.align 2, 0
-_08192BB0: .4byte 0x085D5E40
+_08192BB0: .4byte gBattleDomeCompetitorRangeByMatch
 _08192BB4: .4byte 0x03005AF0
 _08192BB8: .4byte 0x000003FF
 _08192BBC: .4byte 0x000003FE
-_08192BC0: .4byte 0x085D5E30
+_08192BC0: .4byte gBattleDomeTourneyTreeTrainerIds2
 _08192BC4: .4byte 0x00000D25
 _08192BC8: .4byte 0x00000D24
 _08192BCC: .4byte 0x02021C40
@@ -8770,7 +8770,7 @@ _08192C08:
 	b _08192D6C
 	.align 2, 0
 _08192C14: .4byte 0x02021C40
-_08192C18: .4byte 0x085D5E40
+_08192C18: .4byte gBattleDomeCompetitorRangeByMatch
 _08192C1C:
 	mov ip, r3
 	lsls r3, r7, #1
@@ -8870,7 +8870,7 @@ _08192C42:
 	.align 2, 0
 _08192CD8: .4byte 0x03005AF0
 _08192CDC: .4byte 0x00000D25
-_08192CE0: .4byte 0x085D5E30
+_08192CE0: .4byte gBattleDomeTourneyTreeTrainerIds2
 _08192CE4: .4byte 0x082EACC4
 _08192CE8: .4byte 0x02021C54
 _08192CEC:
@@ -8931,7 +8931,7 @@ _08192D56:
 	b _08192D6C
 	.align 2, 0
 _08192D60: .4byte 0x02021C40
-_08192D64: .4byte 0x085D5E40
+_08192D64: .4byte gBattleDomeCompetitorRangeByMatch
 _08192D68:
 	ldr r0, [sp, #4]
 	adds r0, #2
@@ -9112,7 +9112,7 @@ _08192E70:
 _08192EB4: .4byte 0xFFFFFF00
 _08192EB8: .4byte 0x0203CA44
 _08192EBC: .4byte 0x03005AF0
-_08192EC0: .4byte 0x085D5E42
+_08192EC0: .4byte gBattleDomeCompetitorRoundByMatch
 _08192EC4: .4byte 0x00000D24
 _08192EC8: .4byte 0x00000D25
 _08192ECC:
@@ -9493,8 +9493,8 @@ _08193194:
 _081931B8: .4byte 0x03005AF0
 _081931BC: .4byte 0x00000D64
 _081931C0: .4byte 0x0203B958
-_081931C4: .4byte 0x085D5E24
-_081931C8: .4byte 0x085D5E27
+_081931C4: .4byte gBattleDomeLeftTrainerMonX
+_081931C8: .4byte gBattleDomeLeftTrainerMonY
 _081931CC: .4byte 0x08190595
 _081931D0: .4byte 0x0203CA44
 _081931D4: .4byte 0x020205AC
@@ -9693,11 +9693,11 @@ _081932D0:
 _0819335C: .4byte 0x03005AF0
 _08193360: .4byte 0x00000D64
 _08193364: .4byte 0x0203B958
-_08193368: .4byte 0x085D5E2A
-_0819336C: .4byte 0x085D5E2D
+_08193368: .4byte gBattleDomeRightTrainerMonX
+_0819336C: .4byte gBattleDomeRightTrainerMonY
 _08193370: .4byte 0x08190595
 _08193374: .4byte 0x02021C7C
-_08193378: .4byte 0x085D5E08
+_08193378: .4byte gBattleDomeWinTexts
 _0819337C: .4byte 0x000003FF
 _08193380: .4byte 0x02021C40
 _08193384:
@@ -9812,7 +9812,7 @@ _08193412:
 	bx r0
 	.align 2, 0
 _0819347C: .4byte 0x02021C40
-_08193480: .4byte 0x085D5DCC
+_08193480: .4byte gBattleDomeMatchNumberTexts
 	thumb_func_end DisplayMatchInfoOnCard
 
 	thumb_func_start ShowDomeTourneyTree
@@ -10113,7 +10113,7 @@ _081936E8: .4byte 0x02037C74
 _081936EC: .4byte 0x0203CA48
 _081936F0: .4byte 0x0819005D
 _081936F4: .4byte 0x03005B60
-_081936F8: .4byte 0x085D5AFC
+_081936F8: .4byte gBattleDomeTourneyTreeTrainerIds
 _081936FC: .4byte 0x0203CA44
 _08193700:
 	ldr r0, _08193754
@@ -10274,7 +10274,7 @@ _08193838:
 	mov r8, r1
 	b _081938BE
 	.align 2, 0
-_08193854: .4byte 0x085D5695
+_08193854: .4byte gBattleDomeTourneyTreeCursorMovementMap
 _08193858:
 	ldrh r0, [r3, #0x2e]
 	cmp r0, #0x80
@@ -10292,7 +10292,7 @@ _08193858:
 	movs r0, #1
 	b _081938BC
 	.align 2, 0
-_08193878: .4byte 0x085D5695
+_08193878: .4byte gBattleDomeTourneyTreeCursorMovementMap
 _0819387C:
 	ldrh r0, [r3, #0x2e]
 	cmp r0, #0x20
@@ -10311,7 +10311,7 @@ _0819387C:
 	mov r8, r1
 	b _081938BE
 	.align 2, 0
-_0819389C: .4byte 0x085D5695
+_0819389C: .4byte gBattleDomeTourneyTreeCursorMovementMap
 _081938A0:
 	ldrh r0, [r3, #0x2e]
 	cmp r0, #0x10
@@ -10372,7 +10372,7 @@ _08193906:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08193914: .4byte 0x085D5695
+_08193914: .4byte gBattleDomeTourneyTreeCursorMovementMap
 _08193918: .4byte 0x020205AC
 _0819391C: .4byte 0x03005B60
 	thumb_func_end UpdateTourneyTreeCursor
@@ -11108,8 +11108,8 @@ _08193E5C:
 	b _0819401C
 	.align 2, 0
 _08193EDC: .4byte 0x05006000
-_08193EE0: .4byte 0x085D5918
-_08193EE4: .4byte 0x085D5938
+_08193EE0: .4byte gBattleDomeTourneyTreeBgTemplates
+_08193EE4: .4byte gBattleDomeTourneyTreeWindowTemplates
 _08193EE8: .4byte 0x02022AC8
 _08193EEC: .4byte 0x02022ACA
 _08193EF0: .4byte 0x02022ACC
@@ -11246,7 +11246,7 @@ _08194038: .4byte 0x08D835A0
 _0819403C: .4byte 0x08D83BD0
 _08194040: .4byte 0x08D83CE0
 _08194044: .4byte 0x08D8533C
-_08194048: .4byte 0x08D85428
+_08194048: .4byte gBattleDomeTourneyTreeButtons_Pal
 _0819404C: .4byte 0x08D855E4
 _08194050: .4byte 0x020377B4
 _08194054: .4byte 0x05000100
@@ -11283,10 +11283,10 @@ _08194092:
 	bl SetGpuReg
 	b _0819434A
 	.align 2, 0
-_0819409C: .4byte 0x085D59FC
-_081940A0: .4byte 0x085D5E8D
-_081940A4: .4byte 0x085D5A54
-_081940A8: .4byte 0x085D5A84
+_0819409C: .4byte gBattleDomeTourneyTreeButtonSheets
+_081940A0: .4byte gBattleDomeTourneyTreePokeballCoords
+_081940A4: .4byte gBattleDomeTourneyTreePokeballSpriteTemplate
+_081940A8: .4byte gBattleDomeTourneyTreeCloseButtonSpriteTemplate
 _081940AC: .4byte 0x00007F40
 _081940B0:
 	add r0, sp, #4
@@ -11586,7 +11586,7 @@ _081942E0:
 	subs r0, r0, r1
 	b _0819430E
 	.align 2, 0
-_08194304: .4byte 0x085D5E6D
+_08194304: .4byte gBattleDomeTrainerNamePositions
 _08194308: .4byte 0x02022AE0
 _0819430C:
 	movs r0, #4
@@ -11632,8 +11632,8 @@ _0819434A:
 	b _08194466
 	.align 2, 0
 _0819435C: .4byte 0x02022AE0
-_08194360: .4byte 0x085D5E6D
-_08194364: .4byte 0x085D5E6E
+_08194360: .4byte gBattleDomeTrainerNamePositions
+_08194364: .4byte gBattleDomeTrainerNameYCoords
 _08194368: .4byte 0x03005B60
 _0819436C:
 	movs r0, #0
@@ -11763,7 +11763,7 @@ _08194466:
 _08194478: .4byte 0x03005B60
 _0819447C: .4byte 0x020388C8
 _08194480: .4byte 0x00001F0A
-_08194484: .4byte 0x085D59F0
+_08194484: .4byte gBattleDomeTourneyTreeScanlineEffectParams
 _08194488: .4byte 0x00001F09
 _0819448C: .4byte 0x00000836
 	thumb_func_end Task_ShowTourneyTree
@@ -11967,7 +11967,7 @@ _08194618: .4byte 0x00000D24
 _0819461C: .4byte 0x02022AE0
 _08194620: .4byte 0x00000D25
 _08194624: .4byte 0x00000CB2
-_08194628: .4byte 0x085D5E6D
+_08194628: .4byte gBattleDomeTrainerNamePositions
 _0819462C:
 	mov r0, r8
 	adds r1, r4, r0
@@ -12045,8 +12045,8 @@ _081946BA:
 	.align 2, 0
 _081946BC: .4byte 0x02021C40
 _081946C0: .4byte 0x02022AE0
-_081946C4: .4byte 0x085D5E6D
-_081946C8: .4byte 0x085D5E6E
+_081946C4: .4byte gBattleDomeTrainerNamePositions
+_081946C8: .4byte gBattleDomeTrainerNameYCoords
 _081946CC: .4byte 0x03005AF0
 _081946D0: .4byte 0x00000D25
 _081946D4:
@@ -13217,8 +13217,8 @@ sub_08194FE8: @ 0x08194FE8
 	ldrb r0, [r0]
 	b _08195030
 	.align 2, 0
-_08195024: .4byte 0x085D5C1C
-_08195028: .4byte 0x085D5C3C
+_08195024: .4byte gBattleDomeTrainerAndRoundToLastMatchCardNum
+_08195028: .4byte gBattleDomeTournamentIdToPairedTrainerIds
 _0819502C:
 	mov r0, sp
 	ldrb r0, [r0, #1]
@@ -13893,4 +13893,3 @@ _08195540:
 	.align 2, 0
 _0819555C: .4byte 0x082E9D00
 	thumb_func_end CopyDomeBrainTrainerName
-

@@ -1,0 +1,37 @@
+	@ src/berry_blender.c:264 sText_BerryBlenderStart
+	.globl gText_Rom_30F6AE
+gText_Rom_30F6AE: @ 0x0830F6AE
+	.string "きのみブレンダーを きどうします\pバッグから きのみブレンダーに いれる\nきのみを えらんでください\p$"
+	.if (. - gText_Rom_30F6AE) > 0x34
+	.error "gText_Rom_30F6AE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_30F6AE) < 0x34
+	.space 0x34 - (. - gText_Rom_30F6AE)
+	.endif
+	@ Decoded text from ROM range: offset=0x30F6E2, size=0x19
+	.string "カッコイ$"
+	.string "カワイイ$"
+	.string "ウツクシ$"
+	.string "カシコイ$"
+	.string "タクマシ$"
+	.globl gUnknown_830F6FB
+gUnknown_830F6FB: @ 0x0830F6FB
+	@ Replaced baserom.gba range: offset=0x30F6FB, size=0x2
+	.byte 0xFB, 0xFF
+	.globl gUnknown_830F6FD
+gUnknown_830F6FD: @ 0x0830F6FD
+
+	@ src/berry_blender.c:266 sText_WasMade
+	.globl gText_Rom_30F6FD
+gText_Rom_30F6FD: @ 0x0830F6FD
+	.string " ができた！$"
+	.if (. - gText_Rom_30F6FD) > 0x7
+	.error "gText_Rom_30F6FD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_30F6FD) < 0x7
+	.space 0x7 - (. - gText_Rom_30F6FD)
+	.endif
+	@ Replaced baserom.gba range: offset=0x30F704, size=0x1E
+	.byte 0x13, 0x12, 0x3D, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x07, 0x14, 0xFF, 0x00, 0x00
+	.byte 0x00, 0x00, 0x00, 0x00, 0x5C, 0x8A, 0x79, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+

@@ -2,15 +2,22 @@
 
 	.include "constants/gba_constants.inc"
 	.include "constants/global.inc"
+	.include "constants/battle_controller.inc"
+	.include "constants/battle_dome.inc"
+	.include "constants/battle_palace.inc"
+	.include "constants/match_call.inc"
 	.include "constants/charmap.inc"
 	.include "constants/decorations.inc"
 	.include "constants/species.inc"
+	.include "constants/pokemon_data.inc"
+	.include "constants/pokemon_animation.inc"
 	.include "constants/base_stats.inc"
 	.include "constants/moves.inc"
 	.include "constants/item.inc"
 	.include "constants/map.inc"
 	.include "constants/pokemon_graphics.inc"
 	.include "constants/rodata.inc"
+	.include "constants/main.inc"
 
 	.include "asm/macros/base_stats.inc"
 	.include "asm/macros/decoration.inc"
@@ -21,4 +28,4 @@
 	.include "asm/macros/window.inc"
 	.include "asm/macros/rodata.inc"
 
-	.include "data/rodata.inc"
+	.include "data/index.inc"

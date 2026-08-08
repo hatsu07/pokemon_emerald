@@ -43,7 +43,7 @@ GetWordPhonemes: @ 0x0817C6B0
 	bl m4aMPlayStop
 	b _0817C6F0
 	.align 2, 0
-_0817C6E0: .4byte 0x085D2B4C
+_0817C6E0: .4byte gBardSoundTable
 _0817C6E4: .4byte 0x03007510
 _0817C6E8:
 	cmp r1, r2
@@ -112,6 +112,6 @@ _0817C74E:
 	.align 2, 0
 _0817C75C: .4byte 0x03007510
 _0817C760: .4byte 0x0000FFFF
-_0817C764: .4byte 0x085D2AC0
+_0817C764: .4byte gBardPitchPatternTable
 	thumb_func_end GetWordSounds
 

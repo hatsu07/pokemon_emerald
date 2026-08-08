@@ -29,7 +29,7 @@ _0818CD00:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0818CD18: .4byte 0x085D3AB8
+_0818CD18: .4byte gDummyPicData
 _0818CD1C: .4byte 0x0203C9D0
 	thumb_func_end ResetAllPicSprites
 
@@ -493,7 +493,7 @@ _0818D082:
 	bx r1
 	.align 2, 0
 _0818D094: .4byte 0x0203C9B8
-_0818D098: .4byte 0x085D3AC4
+_0818D098: .4byte gPicSpriteOamDataNormal
 _0818D09C: .4byte 0x0000FFFF
 _0818D0A0: .4byte gDummySpriteAffineAnimTable
 _0818D0A4: .4byte 0x0818CCF5
@@ -704,7 +704,7 @@ _0818D22C:
 	b _0818D244
 	.align 2, 0
 _0818D234: .4byte 0x082D2EA8
-_0818D238: .4byte 0x085D3ACC
+_0818D238: .4byte gPicSpriteOamDataAffine
 _0818D23C:
 	ldr r0, _0818D2C4
 	str r0, [r4, #4]
@@ -776,7 +776,7 @@ _0818D2B4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0818D2C4: .4byte 0x085D3AC4
+_0818D2C4: .4byte gPicSpriteOamDataNormal
 _0818D2C8: .4byte gDummySpriteAffineAnimTable
 _0818D2CC: .4byte 0x0818CCF5
 _0818D2D0: .4byte 0x0000FFFF
@@ -868,7 +868,7 @@ _0818D372:
 	.align 2, 0
 _0818D37C: .4byte 0x0000FFFF
 _0818D380: .4byte 0x020205AC
-_0818D384: .4byte 0x085D3AB8
+_0818D384: .4byte gDummyPicData
 	thumb_func_end FreeAndDestroyPicSpriteInternal
 
 	thumb_func_start sub_0818D388
@@ -1318,7 +1318,7 @@ PlayerGenderToFrontTrainerPicId_Debug: @ 0x0818D6A8
 	ldrb r0, [r0]
 	b _0818D6CE
 	.align 2, 0
-_0818D6C4: .4byte 0x082EFF00
+_0818D6C4: .4byte gFacilityClassToPicIndex
 _0818D6C8:
 	ldr r0, _0818D6D4
 	adds r0, #0x3c
@@ -1327,6 +1327,5 @@ _0818D6CE:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0818D6D4: .4byte 0x082EFF00
+_0818D6D4: .4byte gFacilityClassToPicIndex
 	thumb_func_end PlayerGenderToFrontTrainerPicId_Debug
-
