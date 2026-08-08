@@ -1,3 +1,7 @@
+@ Pokémon Storage System JP cancel text.
+	.globl gUnknown_82FC0FA
+gUnknown_82FC0FA: @ 0x082FC0FA
+
 	@ src/pokemon_storage_system.c:8078 pokemon_storage_system_line_8078 (+5 aliases)
 	.globl gText_Rom_2FC0FA
 gText_Rom_2FC0FA: @ 0x082FC0FA
