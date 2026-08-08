@@ -1462,7 +1462,7 @@ GetFrontierTrainerFrontSpriteId: @ 0x081629A4
 	adds r0, r0, r1
 	b _08162ACC
 	.align 2, 0
-_081629C8: .4byte 0x082EFF00
+_081629C8: .4byte gFacilityClassToPicIndex
 _081629CC: .4byte 0x03005AF0
 _081629D0: .4byte 0x00000BED
 _081629D4:
@@ -1490,7 +1490,7 @@ _081629E8:
 	b _08162ACC
 	.align 2, 0
 _08162A00: .4byte 0x0000012B
-_08162A04: .4byte 0x082EFF00
+_08162A04: .4byte gFacilityClassToPicIndex
 _08162A08: .4byte 0x0203B954
 _08162A0C:
 	ldr r0, _08162A30
@@ -1512,7 +1512,7 @@ _08162A0C:
 	.align 2, 0
 _08162A30: .4byte 0x0000018F
 _08162A34: .4byte 0x02022C90
-_08162A38: .4byte 0x082EFF00
+_08162A38: .4byte gFacilityClassToPicIndex
 _08162A3C:
 	ldr r3, _08162A58
 	ldr r0, _08162A5C
@@ -1528,7 +1528,7 @@ _08162A3C:
 	adds r0, r0, r3
 	b _08162ACC
 	.align 2, 0
-_08162A58: .4byte 0x082EFF00
+_08162A58: .4byte gFacilityClassToPicIndex
 _08162A5C: .4byte 0x03005AF0
 _08162A60: .4byte 0xFFFFFED4
 _08162A64: .4byte 0x00000739
@@ -1563,7 +1563,7 @@ _08162A68:
 	b _08162ACC
 	.align 2, 0
 _08162AA0: .4byte 0x02022C90
-_08162AA4: .4byte 0x082EFF00
+_08162AA4: .4byte gFacilityClassToPicIndex
 _08162AA8: .4byte 0x085DC21C
 _08162AAC: .4byte 0x03005AF0
 _08162AB0: .4byte 0xFFFFFE70
@@ -1586,7 +1586,7 @@ _08162ACE:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08162AD4: .4byte 0x082EFF00
+_08162AD4: .4byte gFacilityClassToPicIndex
 _08162AD8: .4byte 0x085DC21C
 	thumb_func_end GetFrontierTrainerFrontSpriteId
 
@@ -1609,7 +1609,7 @@ GetFrontierOpponentClass: @ 0x08162ADC
 	ldrb r0, [r0]
 	b _08162B2A
 	.align 2, 0
-_08162B00: .4byte 0x082EFF52
+_08162B00: .4byte gFacilityClassToTrainerClass
 _08162B04: .4byte 0x03005AF0
 _08162B08: .4byte 0x00000BED
 _08162B0C:
@@ -1652,7 +1652,7 @@ _08162B3C:
 	b _08162C22
 	.align 2, 0
 _08162B58: .4byte 0x0000012B
-_08162B5C: .4byte 0x082EFF52
+_08162B5C: .4byte gFacilityClassToTrainerClass
 _08162B60: .4byte 0x0203B954
 _08162B64:
 	ldr r0, _08162B88
@@ -1675,7 +1675,7 @@ _08162B64:
 	.align 2, 0
 _08162B88: .4byte 0x0000018F
 _08162B8C: .4byte 0x02022C90
-_08162B90: .4byte 0x082EFF52
+_08162B90: .4byte gFacilityClassToTrainerClass
 _08162B94:
 	ldr r3, _08162BB0
 	ldr r0, _08162BB4
@@ -1692,7 +1692,7 @@ _08162B94:
 	ldrb r0, [r0]
 	b _08162C22
 	.align 2, 0
-_08162BB0: .4byte 0x082EFF52
+_08162BB0: .4byte gFacilityClassToTrainerClass
 _08162BB4: .4byte 0x03005AF0
 _08162BB8: .4byte 0xFFFFFED4
 _08162BBC: .4byte 0x00000739
@@ -1719,7 +1719,7 @@ _08162BC0:
 	b _08162C22
 	.align 2, 0
 _08162BEC: .4byte 0x02022C90
-_08162BF0: .4byte 0x082EFF52
+_08162BF0: .4byte gFacilityClassToTrainerClass
 _08162BF4: .4byte 0x085DC21C
 _08162BF8:
 	ldr r4, _08162C28
@@ -1748,7 +1748,7 @@ _08162C22:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08162C28: .4byte 0x082EFF52
+_08162C28: .4byte gFacilityClassToTrainerClass
 _08162C2C: .4byte 0x085DC21C
 _08162C30: .4byte 0x03005AF0
 _08162C34: .4byte 0xFFFFFE70
@@ -6299,7 +6299,7 @@ GetMonCountForBattleMode: @ 0x081650C0
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_081650D4: .4byte 0x082EFF00
+_081650D4: .4byte gFacilityClassToPicIndex
 _081650D8: .4byte 0x03005AF0
 _081650DC: .4byte 0x00000BED
 	thumb_func_end GetMonCountForBattleMode
@@ -6316,7 +6316,7 @@ GetEreaderTrainerClassId: @ 0x081650E0
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_081650F4: .4byte 0x082EFF52
+_081650F4: .4byte gFacilityClassToTrainerClass
 _081650F8: .4byte 0x03005AF0
 _081650FC: .4byte 0x00000BED
 	thumb_func_end GetEreaderTrainerClassId

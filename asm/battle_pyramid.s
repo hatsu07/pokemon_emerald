@@ -2187,7 +2187,7 @@ _081A9CD0:
 	ldrb r0, [r1, #1]
 	b _081A9CF2
 	.align 2, 0
-_081A9CDC: .4byte 0x082EFF52
+_081A9CDC: .4byte gFacilityClassToTrainerClass
 _081A9CE0: .4byte 0x0203B954
 _081A9CE4: .4byte 0x085DF37C
 _081A9CE8:

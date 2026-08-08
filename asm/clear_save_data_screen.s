@@ -62,8 +62,8 @@ Task_DoClearSaveDataScreenYesNo: @ 0x0817AB9C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817ABF0: .4byte 0x085CDB60
-_0817ABF4: .4byte 0x085CDBA8
+_0817ABF0: .4byte gText_ClearAllSaveDataPrompt
+_0817ABF4: .4byte gClearSaveDataMenuWindowTemplate
 _0817ABF8: .4byte 0x03005B60
 _0817ABFC: .4byte 0x0817AC01
 	thumb_func_end Task_DoClearSaveDataScreenYesNo
@@ -112,7 +112,7 @@ _0817AC28:
 	str r1, [r0]
 	b _0817AC72
 	.align 2, 0
-_0817AC54: .4byte 0x085CDB7A
+_0817AC54: .4byte gText_ClearingSaveData
 _0817AC58: .4byte 0x03005B60
 _0817AC5C: .4byte 0x0817AC81
 _0817AC60:

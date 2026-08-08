@@ -313,18 +313,18 @@ _081790C4: .4byte 0x0858F890
 _081790C8: .4byte 0x06007000
 _081790CC: .4byte 0x0858FA1C
 _081790D0: .4byte 0x06007800
-_081790D4: .4byte 0x085CD284
+_081790D4: .4byte gSaveFailedClockGraphics
 _081790D8: .4byte 0x06010020
-_081790DC: .4byte 0x085CD228
+_081790DC: .4byte gSaveFailedBgTemplates
 _081790E0: .4byte 0x0201E000
 _081790E4: .4byte 0x05000200
 _081790E8: .4byte 0x084E6CE0
-_081790EC: .4byte 0x085CD234
-_081790F0: .4byte 0x085CD23C
+_081790EC: .4byte gSaveFailedWindowTemplates
+_081790F0: .4byte gSaveFailedMainWindowTemplate
 _081790F4: .4byte 0x0203B9DA
-_081790F8: .4byte 0x085CD244
+_081790F8: .4byte gSaveFailedClockWindowTemplate
 _081790FC: .4byte 0x0858F810
-_08179100: .4byte 0x085CD264
+_08179100: .4byte gSaveFailedClockPalette
 _08179104: .4byte 0x084E8360
 _08179108: .4byte 0x085D7B04
 _0817910C: .4byte 0x085CBD6B
@@ -622,10 +622,10 @@ VBlankCB_UpdateClockGraphics: @ 0x0817930C
 	b _081793A0
 	.align 2, 0
 _0817937C: .4byte 0x03002360
-_08179380: .4byte 0x085CD220
+_08179380: .4byte gSaveFailedClockOamData
 _08179384: .4byte 0xFFFFFE00
 _08179388: .4byte 0x0203B9CA
-_0817938C: .4byte 0x085CD24C
+_0817938C: .4byte gSaveFailedClockFrameData
 _08179390: .4byte 0xFFFFFC00
 _08179394:
 	ldrh r0, [r5, #0x3c]

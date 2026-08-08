@@ -2857,7 +2857,7 @@ _08186268: .4byte 0x02023D0C
 _0818626C: .4byte 0x082FACB4
 _08186270: .4byte 0x02023D08
 _08186274: .4byte 0x02022D08
-_08186278: .4byte 0x085D38F0
+_08186278: .4byte gRecordedOpponentBufferCommands
 _0818627C:
 	bl RecordedOpponentBufferExecCompleted
 _08186280:
@@ -4381,4 +4381,3 @@ _08186ECA:
 _08186ED0: .4byte 0x02024174
 _08186ED4: .4byte 0x02023D08
 	thumb_func_end sub_08186EA8
-

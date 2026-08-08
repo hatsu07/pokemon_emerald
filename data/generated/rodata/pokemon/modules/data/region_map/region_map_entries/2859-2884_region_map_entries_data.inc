@@ -1,0 +1,135 @@
+	@ src/data/region_map/region_map_entries.h:1456 region_map_entries_line_1456
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_57CC9C
+gText_Rom_57CC9C: @ 0x0857CC9C
+	.string "へんげのどうくつ$"
+	.if (. - gText_Rom_57CC9C) != 0x9
+	.error "gText_Rom_57CC9C must retain its original byte length"
+	.endif
+	.globl gText_Rom_57CCA0
+	.set gText_Rom_57CCA0, gText_Rom_57CC9C + 0x4
+	@ Decoded text from ROM range: offset=0x57CCA5, size=0x1C
+	.string "アスカナのせきしつ$"
+	.string "3のしま　よこあな$"
+	.string "アスカナのかぎ$"
+
+	@ src/data/region_map/region_map_entries.h:1386 region_map_entries_line_1386 (+1 aliases)
+	.globl gText_Rom_57CCC1
+gText_Rom_57CCC1: @ 0x0857CCC1
+	.string "たんじょうのしま$"
+	.if (. - gText_Rom_57CCC1) > 0x9
+	.error "gText_Rom_57CCC1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_57CCC1) < 0x9
+	.space 0x9 - (. - gText_Rom_57CCC1)
+	.endif
+	@ Decoded text from ROM range: offset=0x57CCCA, size=0x52
+	.string "イレスのせきしつ$"
+	.string "ナザンのせきしつ$"
+	.string "ユゴのせきしつ$"
+	.string "アレボカのせきしつ$"
+	.string "コトーのせきしつ$"
+	.string "アヌザのせきしつ$"
+	.string "オリフのせきしつ$"
+	.string "ともしびおんせん$"
+	.string "あかみどりとくしゅ$"
+
+	@ src/data/region_map/region_map_entries.h:1365 region_map_entries_line_1365
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_57CD1C
+gText_Rom_57CD1C: @ 0x0857CD1C
+	.string "アクアだん アジト$"
+	.if (. - gText_Rom_57CD1C) != 0xa
+	.error "gText_Rom_57CD1C must retain its original byte length"
+	.endif
+	.globl gText_Rom_57CD22
+	.set gText_Rom_57CD22, gText_Rom_57CD1C + 0x6
+
+	@ src/data/region_map/region_map_entries.h:1372 region_map_entries_line_1372
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_57CD26
+gText_Rom_57CD26: @ 0x0857CD26
+	.string "マグマだん アジト$"
+	.if (. - gText_Rom_57CD26) != 0xa
+	.error "gText_Rom_57CD26 must retain its original byte length"
+	.endif
+	.globl gText_Rom_57CD2C
+	.set gText_Rom_57CD2C, gText_Rom_57CD26 + 0x6
+
+	@ src/data/region_map/region_map_entries.h:1379 region_map_entries_line_1379
+	.globl gText_Rom_57CD30
+gText_Rom_57CD30: @ 0x0857CD30
+	.string "げんえいのとう$"
+	.if (. - gText_Rom_57CD30) > 0x8
+	.error "gText_Rom_57CD30 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_57CD30) < 0x8
+	.space 0x8 - (. - gText_Rom_57CD30)
+	.endif
+
+	@ src/data/region_map/region_map_entries.h:1393 region_map_entries_line_1393 (+1 aliases)
+	.globl gText_Rom_57CD38
+gText_Rom_57CD38: @ 0x0857CD38
+	.string "さいはてのことう$"
+	.if (. - gText_Rom_57CD38) > 0x9
+	.error "gText_Rom_57CD38 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_57CD38) < 0x9
+	.space 0x9 - (. - gText_Rom_57CD38)
+	.endif
+
+	@ src/data/region_map/region_map_entries.h:1400 region_map_entries_line_1400
+	.globl gText_Rom_57CD41
+gText_Rom_57CD41: @ 0x0857CD41
+	.string "アトリエのあな$"
+	.if (. - gText_Rom_57CD41) > 0x8
+	.error "gText_Rom_57CD41 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_57CD41) < 0x8
+	.space 0x8 - (. - gText_Rom_57CD41)
+	.endif
+
+	@ src/data/region_map/region_map_entries.h:1407 region_map_entries_line_1407
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_57CD49
+gText_Rom_57CD49: @ 0x0857CD49
+	.string "うみのどうくつ$"
+	.if (. - gText_Rom_57CD49) != 0x8
+	.error "gText_Rom_57CD49 must retain its original byte length"
+	.endif
+	.globl gText_Rom_57CD4C
+	.set gText_Rom_57CD4C, gText_Rom_57CD49 + 0x3
+
+	@ src/data/region_map/region_map_entries.h:1421 region_map_entries_line_1421
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_57CD51
+gText_Rom_57CD51: @ 0x0857CD51
+	.string "りくのどうくつ$"
+	.if (. - gText_Rom_57CD51) != 0x8
+	.error "gText_Rom_57CD51 must retain its original byte length"
+	.endif
+	.globl gText_Rom_57CD54
+	.set gText_Rom_57CD54, gText_Rom_57CD51 + 0x3
+
+	@ src/data/region_map/region_map_entries.h:1449 region_map_entries_line_1449
+	.globl gText_Rom_57CD59
+gText_Rom_57CD59: @ 0x0857CD59
+	.string "さばくのちかどう$"
+	.if (. - gText_Rom_57CD59) > 0x9
+	.error "gText_Rom_57CD59 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_57CD59) < 0x9
+	.space 0x9 - (. - gText_Rom_57CD59)
+	.endif
+
+	@ src/data/region_map/region_map_entries.h:1470 region_map_entries_line_1470
+	.globl gText_Rom_57CD62
+gText_Rom_57CD62: @ 0x0857CD62
+	.string "トレーナーヒル$"
+	.if (. - gText_Rom_57CD62) > 0x8
+	.error "gText_Rom_57CD62 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_57CD62) < 0x8
+	.space 0x8 - (. - gText_Rom_57CD62)
+	.endif
+	.space 0x2, 0x00

@@ -127,7 +127,7 @@ set(GRAPHICS_RELATIVE_OUTPUTS)
 foreach(SCAN_FILE IN LISTS GRAPHICS_SCAN_FILES)
     file(READ "${SCAN_FILE}" SCAN_CONTENT)
     string(REGEX MATCHALL
-        "build/graphics/[A-Za-z0-9_./-]+\\.(4bpp(\\.lz)?|gbapal(\\.lz)?|hwjpnfont|latfont|bin\\.lz)"
+        "build/graphics/[A-Za-z0-9_./-]+\\.(1bpp|4bpp(\\.lz)?|gbapal(\\.lz)?|hwjpnfont|latfont|bin\\.lz)"
         FOUND_GRAPHICS
         "${SCAN_CONTENT}")
     list(APPEND GRAPHICS_RELATIVE_OUTPUTS ${FOUND_GRAPHICS})
@@ -147,6 +147,42 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     get_filename_component(OUTPUT_DIR "${OUTPUT_ABS}" DIRECTORY)
 
     if("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/pokemon/spinda/spots/(.+)\\.1bpp$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon/spinda/spots/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format spinda-1bpp
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/(pokemon/egg/(hatch|shard)|interface/blank|battle_interface/unused_status_summary)\\.4bpp$")
+        string(REGEX REPLACE
+            "^build/graphics/(.+)\\.4bpp$" "\\1"
+            STEM_PATH "${RELATIVE_OUTPUT}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/${STEM_PATH}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/fonts/(.+)\\.(hwjpnfont|latfont)$")
         set(STEM "${CMAKE_MATCH_1}")
         set(INPUT_PNG
@@ -196,6 +232,99 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
 
     elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/evolution/(.+)\\.4bpp\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/evolution/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/evolution/(.+)\\.gbapal$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/evolution/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro_credits/(.+)\\.4bpp\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/intro_credits/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro_credits/(.+)\\.bin\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_TILEMAP_TEXT
+            "${CMAKE_SOURCE_DIR}/graphics/intro_credits/${STEM}.tilemap.txt")
+        set(OUTPUT_TILEMAP
+            "${OUTPUT_DIR}/${STEM}.tilemap")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            BYPRODUCTS "${OUTPUT_TILEMAP}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_text.py"
+                encode "${INPUT_TILEMAP_TEXT}" "${OUTPUT_TILEMAP}"
+            COMMAND "${GBAGFX}" "${OUTPUT_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_TILEMAP_TEXT}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_text.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro_credits/(.+)\\.gbapal$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/intro_credits/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/link/(.+)\\.4bpp$")
         set(STEM "${CMAKE_MATCH_1}")
         set(INPUT_PNG
@@ -235,6 +364,40 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
             COMMAND "${GBAGFX}" "${INPUT_BIN}" "${OUTPUT_ABS}"
             DEPENDS "${INPUT_BIN}" "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_interface/(.+)\\.4bpp\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_interface/(.+)\\.gbapal$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${GBAGFX}"
             VERBATIM)
 
     elseif("${RELATIVE_OUTPUT}" MATCHES
@@ -302,6 +465,98 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             COMMAND "${Python3_EXECUTABLE}"
                 "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
                 "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/save_failed_screen/(.+)\\.4bpp\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/save_failed_screen/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/pokeblock_feed/(.+)\\.4bpp\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock_feed/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/pokeblock_feed/(.+)\\.gbapal\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock_feed/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}" --lz
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_dome/(.+)\\.4bpp\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/battle_dome/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}"
+                --no-pad
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_dome/(.+)\\.gbapal\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/battle_dome/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}" --lz
             DEPENDS
                 "${INPUT_PNG}"
                 "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"

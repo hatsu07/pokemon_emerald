@@ -20,7 +20,7 @@ CallBattlePalaceFunction: @ 0x08195560
 sub_08195574: @ 0x08195574
 	bx r0
 	.align 2, 0
-_08195578: .4byte 0x085D68CC
+_08195578: .4byte gBattlePalaceFunctions
 _0819557C: .4byte 0x02037280
 	thumb_func_end sub_08195574
 
@@ -104,7 +104,7 @@ _08195618: .4byte 0x00000CA9
 _0819561C: .4byte 0x000040CE
 _08195620: .4byte 0x00000CA8
 _08195624: .4byte 0x00000CDC
-_08195628: .4byte 0x085D6914
+_08195628: .4byte gBattlePalaceWinStreakFlags
 _0819562C: .4byte 0x00000DC8
 _08195630: .4byte 0x03005AEC
 _08195634: .4byte 0x0203886A
@@ -192,7 +192,7 @@ _081956D0:
 	.align 2, 0
 _081956D8: .4byte 0x02037290
 _081956DC: .4byte 0x00000CDC
-_081956E0: .4byte 0x085D6914
+_081956E0: .4byte gBattlePalaceWinStreakFlags
 	thumb_func_end sub_08195638
 
 	thumb_func_start sub_081956E4
@@ -273,7 +273,7 @@ _0819575C:
 	.align 2, 0
 _0819577C: .4byte 0x02037284
 _08195780: .4byte 0x00000CDC
-_08195784: .4byte 0x085D6914
+_08195784: .4byte gBattlePalaceWinStreakFlags
 _08195788:
 	ldr r2, [r6]
 	ldr r1, _081957A8
@@ -294,7 +294,7 @@ _081957A0:
 	bx r0
 	.align 2, 0
 _081957A8: .4byte 0x00000CDC
-_081957AC: .4byte 0x085D6924
+_081957AC: .4byte gBattlePalaceWinStreakMasks
 	thumb_func_end sub_081956E4
 
 	thumb_func_start sub_081957B0
@@ -527,7 +527,7 @@ _08195970: .4byte 0x000040CE
 _08195974: .4byte 0x03005AF0
 _08195978: .4byte 0x00000CA9
 _0819597C: .4byte 0x00000DC8
-_08195980: .4byte 0x085D6900
+_08195980: .4byte gBattlePalaceHeldItemPrizes
 _08195984: .4byte 0x00000DC6
 _08195988:
 	bl Random
@@ -549,7 +549,7 @@ _081959A6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081959B0: .4byte 0x085D68F4
+_081959B0: .4byte gBattlePalaceVitaminPrizes
 _081959B4: .4byte 0x00000DC6
 	thumb_func_end sub_08195928
 
@@ -597,4 +597,3 @@ _08195A06:
 	.align 2, 0
 _08195A0C: .4byte 0x02037290
 	thumb_func_end sub_081959B8
-

@@ -2718,10 +2718,10 @@ _0817695C:
 	b _08176A34
 	.align 2, 0
 _081769BC: .4byte 0x03005AF0
-_081769C0: .4byte 0x085D2804
-_081769C4: .4byte 0x085D288C
-_081769C8: .4byte 0x085D2824
-_081769CC: .4byte 0x085D2854
+_081769C0: .4byte gCreditsBrendanBikeFullSpriteSheet
+_081769C4: .4byte gCreditsMayBikeReducedSpriteSheet
+_081769C8: .4byte gCreditsBicycleSpriteSheet
+_081769CC: .4byte gCreditsBikeRideSpritePalettes
 _081769D0: .4byte 0x03005B60
 _081769D4: .4byte 0x020205AC
 _081769D8: .4byte 0x08176D75
@@ -2785,10 +2785,10 @@ _08176A34:
 	strb r0, [r1]
 	b _08176A9E
 	.align 2, 0
-_08176A5C: .4byte 0x085D2814
-_08176A60: .4byte 0x085D287C
-_08176A64: .4byte 0x085D2824
-_08176A68: .4byte 0x085D2854
+_08176A5C: .4byte gCreditsMayBikeFullSpriteSheet
+_08176A60: .4byte gCreditsBrendanBikeReducedSpriteSheet
+_08176A64: .4byte gCreditsBicycleSpriteSheet
+_08176A68: .4byte gCreditsBikeRideSpritePalettes
 _08176A6C: .4byte 0x03005B60
 _08176A70: .4byte 0x020205AC
 _08176A74: .4byte 0x08176D75

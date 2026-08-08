@@ -1729,8 +1729,8 @@ _081788DA:
 	bx r0
 	.align 2, 0
 _081788E4: .4byte 0x081787FD
-_081788E8: .4byte 0x085CD204
-_081788EC: .4byte 0x085CD208
+_081788E8: .4byte gMysteryEventBgTemplates
+_081788EC: .4byte gMysteryEventWindowTemplates
 _081788F0: .4byte 0x08008FA1
 _081788F4: .4byte 0x08178931
 	thumb_func_end CB2_InitMysteryEventMenu
@@ -1762,8 +1762,8 @@ _0817891E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08178928: .4byte 0x085CD159
-_0817892C: .4byte 0x085CD19F
+_08178928: .4byte gText_Rom_5CD159
+_0817892C: .4byte gText_Rom_5CD19F
 	thumb_func_end GetEventLoadMessage
 
 	thumb_func_start CB2_MysteryEventMenu

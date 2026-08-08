@@ -1,0 +1,75 @@
+@ Daycare menu data and compatibility messages.
+
+	@ 0x082FC04A-0x082FC04B alignment after egg_moves.inc
+	.2byte 0
+
+	.globl gUnknown_82FC04C
+sDaycareLevelMenuWindowTemplate: @ 0x082FC04C
+gUnknown_82FC04C:
+	.byte 0x00, 0x0C, 0x01, 0x11, 0x06, 0x0F, 0x08, 0x00
+
+sLevelMenuItems: @ 0x082FC054
+	.4byte 0x085C8C24, 0x00000000
+	.4byte 0x085C8C24, 0x00000001
+	.4byte 0x085C93C8, 0x00000005
+
+	.globl gUnknown_82FC06C
+sDaycareListMenuLevelTemplate: @ 0x082FC06C
+gUnknown_82FC06C:
+	.4byte 0x082FC054, 0x081AED51, 0x08070BD9, 0x00030003
+	.4byte 0x010C0200, 0x01013120
+
+
+	.globl gText_Rom_2FC084
+gText_Rom_2FC084: @ 0x082FC084
+	.string "2ひきの　なかは\nとっても　よい　ようじゃ$"
+	.if (. - gText_Rom_2FC084) > 0x16
+	.error "gText_Rom_2FC084 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2FC084) < 0x16
+	.space 0x16 - (. - gText_Rom_2FC084)
+	.endif
+
+	@ asm/daycare.s:2681 SetDaycareCompatibilityString (+1 aliases)
+	.globl gText_Rom_2FC09A
+gText_Rom_2FC09A: @ 0x082FC09A
+	.string "2ひきの　なかは\nまずまずの　ようじゃ$"
+	.if (. - gText_Rom_2FC09A) > 0x14
+	.error "gText_Rom_2FC09A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2FC09A) < 0x14
+	.space 0x14 - (. - gText_Rom_2FC09A)
+	.endif
+
+	@ asm/daycare.s:2681 SetDaycareCompatibilityString (+1 aliases)
+	.globl gText_Rom_2FC0AE
+gText_Rom_2FC0AE: @ 0x082FC0AE
+	.string "2ひきの　なかは\nそれほど　よくないがなぁ$"
+	.if (. - gText_Rom_2FC0AE) > 0x16
+	.error "gText_Rom_2FC0AE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2FC0AE) < 0x16
+	.space 0x16 - (. - gText_Rom_2FC0AE)
+	.endif
+
+	@ asm/daycare.s:2681 SetDaycareCompatibilityString (+1 aliases)
+	.globl gText_Rom_2FC0C4
+gText_Rom_2FC0C4: @ 0x082FC0C4
+	.string "2ひきは　おたがいに\nちがう　ポケモンたちと\lあそんでおるがなあ$"
+	.if (. - gText_Rom_2FC0C4) > 0x21
+	.error "gText_Rom_2FC0C4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2FC0C4) < 0x21
+	.space 0x21 - (. - gText_Rom_2FC0C4)
+	.endif
+	.space 0x3, 0x00
+	.globl gUnknown_82FC0E8
+gUnknown_82FC0E8: @ 0x082FC0E8
+	.4byte gText_Rom_2FC084
+	.4byte gText_Rom_2FC09A
+	.4byte gText_Rom_2FC0AE
+	.4byte gText_Rom_2FC0C4
+	.globl gUnknown_82FC0F8
+gUnknown_82FC0F8: @ 0x082FC0F8
+	@ Replaced baserom.gba range: offset=0x2FC0F8, size=0x2
+	.byte 0xFE, 0xFF

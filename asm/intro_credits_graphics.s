@@ -44,17 +44,17 @@ _0817AF4C:
 	bl sub_0817B62C
 	b _0817AFDE
 	.align 2, 0
-_0817AF80: .4byte 0x085CDC10
+_0817AF80: .4byte gIntroCreditsCommonBgGfx
 _0817AF84: .4byte 0x06004000
-_0817AF88: .4byte 0x085CE090
+_0817AF88: .4byte gIntroCreditsCommonBgTilemap
 _0817AF8C: .4byte 0x06007800
-_0817AF90: .4byte 0x085CDBB0
-_0817AF94: .4byte 0x085CE28C
-_0817AF98: .4byte 0x085CE868
+_0817AF90: .4byte gIntroCreditsBgPalette_0
+_0817AF94: .4byte gIntroCreditsCloudsBgGfx
+_0817AF98: .4byte gIntroCreditsCloudsBgTilemaps
 _0817AF9C: .4byte 0x06003000
-_0817AFA0: .4byte 0x085CE1CC
-_0817AFA4: .4byte 0x085D2534
-_0817AFA8: .4byte 0x085CEB38
+_0817AFA0: .4byte gIntroCreditsScene0BgPalette
+_0817AFA4: .4byte gIntroCreditsCloudsSpriteSheet
+_0817AFA8: .4byte gIntroCreditsScene0CloudsObjPalette
 _0817AFAC:
 	ldr r0, _0817AFF0
 	movs r1, #0xc0
@@ -86,12 +86,12 @@ _0817AFDE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817AFF0: .4byte 0x085CECF4
-_0817AFF4: .4byte 0x085CF37C
+_0817AFF0: .4byte gIntroCreditsMountainsBgGfx
+_0817AFF4: .4byte gIntroCreditsMountainsBgTilemaps
 _0817AFF8: .4byte 0x06003000
-_0817AFFC: .4byte 0x085CECB4
-_0817B000: .4byte 0x085D25BC
-_0817B004: .4byte 0x085CF680
+_0817AFFC: .4byte gIntroPart2MountainsPalette
+_0817B000: .4byte gIntroCreditsMountainsSpriteSheet
+_0817B004: .4byte gIntroPart2MountainsObjPalette
 _0817B008: .4byte 0x0203B9F4
 _0817B00C: .4byte 0x030030BC
 	thumb_func_end load_intro_part2_graphics
@@ -168,9 +168,9 @@ sub_0817B088: @ 0x0817B088
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_0817B0AC: .4byte 0x085CDC10
+_0817B0AC: .4byte gIntroCreditsCommonBgGfx
 _0817B0B0: .4byte 0x06004000
-_0817B0B4: .4byte 0x085CE090
+_0817B0B4: .4byte gIntroCreditsCommonBgTilemap
 _0817B0B8: .4byte 0x06007800
 _0817B0BC: .4byte 0x0817B0C0
 _0817B0C0: @ jump table
@@ -203,15 +203,15 @@ _0817B0D4:
 	ldr r0, _0817B12C
 	b _0817B166
 	.align 2, 0
-_0817B10C: .4byte 0x085CDBB0
-_0817B110: .4byte 0x085CE28C
-_0817B114: .4byte 0x085CE868
+_0817B10C: .4byte gIntroCreditsBgPalette_0
+_0817B110: .4byte gIntroCreditsCloudsBgGfx
+_0817B114: .4byte gIntroCreditsCloudsBgTilemaps
 _0817B118: .4byte 0x06003000
-_0817B11C: .4byte 0x085CE1CC
-_0817B120: .4byte 0x085D2534
-_0817B124: .4byte 0x085CEB78
+_0817B11C: .4byte gIntroCreditsScene0BgPalette
+_0817B120: .4byte gIntroCreditsCloudsSpriteSheet
+_0817B124: .4byte gIntroCreditsCloudsObjGfx
 _0817B128: .4byte 0x06010000
-_0817B12C: .4byte 0x085CEB38
+_0817B12C: .4byte gIntroCreditsScene0CloudsObjPalette
 _0817B130:
 	ldr r0, _0817B178
 	movs r1, #0xf0
@@ -242,15 +242,15 @@ _0817B166:
 	bl sub_0817B62C
 	b _0817B230
 	.align 2, 0
-_0817B178: .4byte 0x085CDBD0
-_0817B17C: .4byte 0x085CE28C
-_0817B180: .4byte 0x085CE868
+_0817B178: .4byte gIntroCreditsBgPalette_1
+_0817B17C: .4byte gIntroCreditsCloudsBgGfx
+_0817B180: .4byte gIntroCreditsCloudsBgTilemaps
 _0817B184: .4byte 0x06003000
-_0817B188: .4byte 0x085CE22C
-_0817B18C: .4byte 0x085D2534
-_0817B190: .4byte 0x085CEB78
+_0817B188: .4byte gIntroCreditsScene1BgPalette
+_0817B18C: .4byte gIntroCreditsCloudsSpriteSheet
+_0817B190: .4byte gIntroCreditsCloudsObjGfx
 _0817B194: .4byte 0x06010000
-_0817B198: .4byte 0x085CEB58
+_0817B198: .4byte gIntroCreditsScene1CloudsObjPalette
 _0817B19C:
 	ldr r0, _0817B1DC
 	movs r1, #0xf0
@@ -278,12 +278,12 @@ _0817B19C:
 	bl sub_0817B648
 	b _0817B230
 	.align 2, 0
-_0817B1DC: .4byte 0x085CDBD0
-_0817B1E0: .4byte 0x085CECF4
-_0817B1E4: .4byte 0x085CF37C
+_0817B1DC: .4byte gIntroCreditsBgPalette_1
+_0817B1E0: .4byte gIntroCreditsMountainsBgGfx
+_0817B1E4: .4byte gIntroCreditsMountainsBgTilemaps
 _0817B1E8: .4byte 0x06003000
-_0817B1EC: .4byte 0x085CECD4
-_0817B1F0: .4byte 0x085D25BC
+_0817B1EC: .4byte gIntroCreditsMountainsPalette
+_0817B1F0: .4byte gIntroCreditsMountainsSpriteSheet
 _0817B1F4:
 	ldr r0, _0817B244
 	movs r1, #0xf0
@@ -319,13 +319,13 @@ _0817B230:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817B244: .4byte 0x085CDBF0
-_0817B248: .4byte 0x085CF82C
-_0817B24C: .4byte 0x085CFA38
+_0817B244: .4byte gIntroCreditsBgPalette_2
+_0817B248: .4byte gIntroCreditsCityBgGfx
+_0817B24C: .4byte gIntroCreditsCityBgTilemaps
 _0817B250: .4byte 0x06003000
-_0817B254: .4byte 0x085CF7EC
-_0817B258: .4byte 0x085D2650
-_0817B25C: .4byte 0x085CFA18
+_0817B254: .4byte gIntroCreditsCityBgPalette
+_0817B258: .4byte gIntroCreditsCitySpriteSheet
+_0817B25C: .4byte gIntroCreditsCityObjPalette
 _0817B260: .4byte 0x030030BC
 _0817B264: .4byte 0x0203B9F4
 	thumb_func_end sub_0817B088
@@ -809,7 +809,7 @@ _0817B60E:
 	bx r0
 	.align 2, 0
 _0817B620: .4byte 0x020205AC
-_0817B624: .4byte 0x085D251C
+_0817B624: .4byte gIntroCreditsSceneSpriteTemplate
 _0817B628: .4byte 0x020205B4
 	thumb_func_end sub_0817B558
 
@@ -824,8 +824,8 @@ sub_0817B62C: @ 0x0817B62C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817B640: .4byte 0x085D2574
-_0817B644: .4byte 0x085D2564
+_0817B640: .4byte gIntroCreditsCloudsSpriteSpawns
+_0817B644: .4byte gIntroCreditsCloudsSpriteAnimTable
 	thumb_func_end sub_0817B62C
 
 	thumb_func_start sub_0817B648
@@ -839,8 +839,8 @@ sub_0817B648: @ 0x0817B648
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817B65C: .4byte 0x085D25F0
-_0817B660: .4byte 0x085D25E4
+_0817B65C: .4byte gIntroCreditsMountainsSpriteSpawns
+_0817B660: .4byte gIntroCreditsMountainsSpriteAnimTable
 	thumb_func_end sub_0817B648
 
 	thumb_func_start sub_0817B664
@@ -854,8 +854,8 @@ sub_0817B664: @ 0x0817B664
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817B678: .4byte 0x085D266C
-_0817B67C: .4byte 0x085D2668
+_0817B678: .4byte gIntroCreditsCitySpriteSpawns
+_0817B67C: .4byte gIntroCreditsCitySpriteAnimTable
 	thumb_func_end sub_0817B664
 
 	thumb_func_start nullsub_65
@@ -961,8 +961,8 @@ intro_create_brendan_sprite: @ 0x0817B6F4
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0817B740: .4byte 0x085D26BC
-_0817B744: .4byte 0x085D270C
+_0817B740: .4byte gIntroCreditsBrendanSpriteTemplate
+_0817B744: .4byte gIntroCreditsBrendanBicycleSpriteTemplate
 _0817B748: .4byte 0x020205AC
 	thumb_func_end intro_create_brendan_sprite
 
@@ -1004,8 +1004,8 @@ intro_create_may_sprite: @ 0x0817B74C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0817B798: .4byte 0x085D26D4
-_0817B79C: .4byte 0x085D2724
+_0817B798: .4byte gIntroCreditsMaySpriteTemplate
+_0817B79C: .4byte gIntroCreditsMayBicycleSpriteTemplate
 _0817B7A0: .4byte 0x020205AC
 	thumb_func_end intro_create_may_sprite
 
@@ -1120,10 +1120,10 @@ intro_create_flygon_sprite: @ 0x0817B808
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0817B874: .4byte 0x085D275C
+_0817B874: .4byte gIntroCreditsFlygonSpriteTemplate_0
 _0817B878: .4byte 0xFFE00000
 _0817B87C: .4byte 0x020205AC
-_0817B880: .4byte 0x0817B7A9
+_0817B880: .4byte sub_0817B7A8
 	thumb_func_end intro_create_flygon_sprite
 
 	thumb_func_start sub_0817B884
@@ -1179,9 +1179,9 @@ sub_0817B884: @ 0x0817B884
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0817B8F0: .4byte 0x085D2774
+_0817B8F0: .4byte gIntroCreditsFlygonSpriteTemplate_1
 _0817B8F4: .4byte 0xFFE00000
 _0817B8F8: .4byte 0x020205AC
-_0817B8FC: .4byte 0x0817B7A9
+_0817B8FC: .4byte sub_0817B7A8
 	thumb_func_end sub_0817B884
 

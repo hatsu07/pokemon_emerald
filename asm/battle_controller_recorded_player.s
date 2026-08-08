@@ -57,7 +57,7 @@ _081896C8: .4byte 0x02023D0C
 _081896CC: .4byte 0x082FACB4
 _081896D0: .4byte 0x02023D08
 _081896D4: .4byte 0x02022D08
-_081896D8: .4byte 0x085D39D4
+_081896D8: .4byte gRecordedPlayerBufferCommands
 _081896DC:
 	bl RecordedPlayerBufferExecCompleted
 _081896E0:
@@ -6682,4 +6682,3 @@ RecordedPlayerCmdEnd: @ 0x0818CCF0
 	bx lr
 	.align 2, 0
 	thumb_func_end RecordedPlayerCmdEnd
-
