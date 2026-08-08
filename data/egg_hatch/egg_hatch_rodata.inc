@@ -5,8 +5,7 @@ gUnknown_82FC0FE: @ 0x082FC0FE
 	.byte 0xF9, 0x05, 0xFF, 0x00
 
 sEggPalette: @ 0x082FC102
-	.2byte 0x4BF4, 0x2528, 0x4E72, 0x6BDE, 0x539D, 0x4319, 0x272F, 0x2A4D
-	.2byte 0x001C, 0x001C, 0x001C, 0x001C, 0x001C, 0x001C, 0x001C, 0x7390
+	.incbin "build/graphics/pokemon/egg/normal.gbapal"
 
 sEggHatchTiles: @ 0x082FC122
 	.incbin "build/graphics/pokemon/egg/hatch.4bpp"
@@ -16,19 +15,24 @@ sEggShardTiles: @ 0x082FC922
 	.2byte 0 @ alignment
 
 sOamData_Egg: @ 0x082FC9A4
-	.2byte 0x0000, 0x8000, 0x0400, 0x0000
+	@ 32x32 square, priority 1.
+	rodata_sprite_oam_data 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 1, 0, 0
 
 sSpriteAnim_Egg_Normal: @ 0x082FC9AC
-	.4byte 0x00050000, 0x0000FFFF
+	rodata_anim_frame 0, 5
+	rodata_anim_end
 
 sSpriteAnim_Egg_Cracked1: @ 0x082FC9B4
-	.4byte 0x00050010, 0x0000FFFF
+	rodata_anim_frame 16, 5
+	rodata_anim_end
 
 sSpriteAnim_Egg_Cracked2: @ 0x082FC9BC
-	.4byte 0x00050020, 0x0000FFFF
+	rodata_anim_frame 32, 5
+	rodata_anim_end
 
 sSpriteAnim_Egg_Cracked3: @ 0x082FC9C4
-	.4byte 0x00050030, 0x0000FFFF
+	rodata_anim_frame 48, 5
+	rodata_anim_end
 
 sSpriteAnimTable_Egg: @ 0x082FC9CC
 	.4byte sSpriteAnim_Egg_Normal, sSpriteAnim_Egg_Cracked1, sSpriteAnim_Egg_Cracked2, sSpriteAnim_Egg_Cracked3
@@ -36,41 +40,42 @@ sSpriteAnimTable_Egg: @ 0x082FC9CC
 	.globl gUnknown_82FC9DC
 sEggHatch_Sheet: @ 0x082FC9DC
 gUnknown_82FC9DC:
-	.4byte sEggHatchTiles
-	.2byte 0x0800, 0x3039
+	rodata_sprite_sheet sEggHatchTiles, 0x0800, GFXTAG_EGG
 
 	.globl gUnknown_82FC9E4
 sEggShards_Sheet: @ 0x082FC9E4
 gUnknown_82FC9E4:
-	.4byte sEggShardTiles
-	.2byte 0x0080, 0x5BA0
+	rodata_sprite_sheet sEggShardTiles, 0x0080, GFXTAG_EGG_SHARD
 
 	.globl gUnknown_82FC9EC
 sEgg_SpritePalette: @ 0x082FC9EC
 gUnknown_82FC9EC:
-	.4byte sEggPalette
-	.2byte 0xD431, 0x0000
+	rodata_sprite_palette sEggPalette, PALTAG_EGG
 
 	.globl gUnknown_82FC9F4
 sSpriteTemplate_Egg: @ 0x082FC9F4
 gUnknown_82FC9F4:
-	.4byte 0xD4313039, sOamData_Egg, sSpriteAnimTable_Egg, 0x00000000
-	.4byte 0x082BF310, 0x08007141
+	rodata_sprite_template GFXTAG_EGG, PALTAG_EGG, sOamData_Egg, sSpriteAnimTable_Egg, NULL, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 
 sOamData_EggShard: @ 0x082FCA0C
-	.2byte 0x0000, 0x0000, 0x0800, 0x0000
+	@ 8x8 square, priority 2.
+	rodata_sprite_oam_data 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0
 
 sSpriteAnim_EggShard0: @ 0x082FCA14
-	.4byte 0x00050000, 0x0000FFFF
+	rodata_anim_frame 0, 5
+	rodata_anim_end
 
 sSpriteAnim_EggShard1: @ 0x082FCA1C
-	.4byte 0x00050001, 0x0000FFFF
+	rodata_anim_frame 1, 5
+	rodata_anim_end
 
 sSpriteAnim_EggShard2: @ 0x082FCA24
-	.4byte 0x00050002, 0x0000FFFF
+	rodata_anim_frame 2, 5
+	rodata_anim_end
 
 sSpriteAnim_EggShard3: @ 0x082FCA2C
-	.4byte 0x00050003, 0x0000FFFF
+	rodata_anim_frame 3, 5
+	rodata_anim_end
 
 sSpriteAnimTable_EggShard: @ 0x082FCA34
 	.4byte sSpriteAnim_EggShard0, sSpriteAnim_EggShard1, sSpriteAnim_EggShard2, sSpriteAnim_EggShard3
@@ -78,23 +83,24 @@ sSpriteAnimTable_EggShard: @ 0x082FCA34
 	.globl gUnknown_82FCA44
 sSpriteTemplate_EggShard: @ 0x082FCA44
 gUnknown_82FCA44:
-	.4byte 0xD4315BA0, sOamData_EggShard, sSpriteAnimTable_EggShard, 0x00000000
-	.4byte 0x082BF310, 0x08071AF9
+	rodata_sprite_template GFXTAG_EGG_SHARD, PALTAG_EGG, sOamData_EggShard, sSpriteAnimTable_EggShard, NULL, gDummySpriteAffineAnimTable, SpriteCB_EggShard
 
 	.globl gUnknown_82FCA5C
 sBgTemplates_EggHatch: @ 0x082FCA5C
 gUnknown_82FCA5C:
-	.4byte 0x00000788, 0x00002281
+	bg_template 0, 2, 24, 3, 0, 0, 0
+	bg_template 1, 0, 8, 1, 0, 2, 0
 
 	.globl gUnknown_82FCA64
 sWinTemplates_EggHatch: @ 0x082FCA64
 gUnknown_82FCA64:
-	.byte 0x00, 0x02, 0x0F, 0x1A, 0x04, 0x00, 0x40, 0x00, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	window_template 0, 2, 15, 26, 4, 0, 64
+	null_window_template
 
 	.globl gUnknown_82FCA74
 sYesNoWinTemplate: @ 0x082FCA74
 gUnknown_82FCA74:
-	.byte 0x00, 0x15, 0x09, 0x05, 0x04, 0x0F, 0xA8, 0x01
+	window_template 0, 21, 9, 5, 4, 15, 424
 
 	.globl gUnknown_82FCA7C
 sEggShardVelocities: @ 0x082FCA7C

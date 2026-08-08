@@ -6,18 +6,19 @@
 	.globl gUnknown_82FC04C
 sDaycareLevelMenuWindowTemplate: @ 0x082FC04C
 gUnknown_82FC04C:
-	.byte 0x00, 0x0C, 0x01, 0x11, 0x06, 0x0F, 0x08, 0x00
+	@ JP layout differs from upstream: left=12, width=17.
+	window_template 0, 12, 1, 17, 6, 15, 8
 
 sLevelMenuItems: @ 0x082FC054
-	.4byte 0x085C8C24, 0x00000000
-	.4byte 0x085C8C24, 0x00000001
-	.4byte 0x085C93C8, 0x00000005
+	rodata_list_menu_item 0x085C8C24, 0 @ gText_ExpandedPlaceholder_Empty
+	rodata_list_menu_item 0x085C8C24, 1 @ gText_ExpandedPlaceholder_Empty
+	rodata_list_menu_item 0x085C93C8, 5 @ gText_Exit / DAYCARE_LEVEL_MENU_EXIT
 
 	.globl gUnknown_82FC06C
 sDaycareListMenuLevelTemplate: @ 0x082FC06C
 gUnknown_82FC06C:
-	.4byte 0x082FC054, 0x081AED51, 0x08070BD9, 0x00030003
-	.4byte 0x010C0200, 0x01013120
+	@ items, cursor callback, item printer, counts, coordinates and packed style fields.
+	rodata_list_menu_template sLevelMenuItems, ListMenuDefaultCursorMoveFunc, DaycarePrintMonInfo, 3, 3, 0, 2, 12, 1, 0, 2, 1, 3, 1, 0, 0, FONT_NORMAL, 0
 
 
 	.globl gText_Rom_2FC084

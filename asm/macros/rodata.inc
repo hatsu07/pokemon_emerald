@@ -260,6 +260,50 @@
 	.2byte \tag
 	.endm
 
+	@ struct SpriteSheet has the same binary layout as CompressedSpriteSheet.
+	.macro rodata_sprite_sheet data, size, tag
+	.4byte \data
+	.2byte \size
+	.2byte \tag
+	.endm
+
+	@ union AnimCmd frame/end encodings from include/sprite.h.
+	.macro rodata_anim_frame image_value, duration, h_flip=0, v_flip=0
+	.2byte (\image_value) & 0xFFFF
+	.2byte ((\duration) & 0x3F) | (((\h_flip) & 1) << 6) | (((\v_flip) & 1) << 7)
+	.endm
+
+	.macro rodata_anim_end
+	.2byte 0xFFFF, 0
+	.endm
+
+	@ struct Subsprite: signed x/y followed by packed shape/size/tile/priority.
+	.macro rodata_subsprite x, y, shape, size, tile_offset, priority
+	.byte (\x) & 0xFF, (\y) & 0xFF
+	.2byte ((\shape) & 3) | (((\size) & 3) << 2) | (((\tile_offset) & 0x3FF) << 4) | (((\priority) & 3) << 14)
+	.endm
+
+	@ struct SubspriteTable contains 3 bytes of padding before its pointer.
+	.macro rodata_subsprite_table count, subsprites
+	.byte \count, 0, 0, 0
+	.4byte \subsprites
+	.endm
+
+	.macro rodata_list_menu_item name, id
+	.4byte \name, \id
+	.endm
+
+	@ Packed struct ListMenuTemplate from include/list_menu.h.
+	.macro rodata_list_menu_template items, move_cursor, item_print, total_items, max_showed, window_id, header_x, item_x, cursor_x, up_text_y, cursor_pal, fill_value, cursor_shadow_pal, letters_spacing, item_vertical_padding, scroll_multiple, font_id, cursor_kind
+	.4byte \items, \move_cursor, \item_print
+	.2byte \total_items, \max_showed
+	.byte \window_id, \header_x, \item_x, \cursor_x
+	.byte ((\up_text_y) & 0xF) | (((\cursor_pal) & 0xF) << 4)
+	.byte ((\fill_value) & 0xF) | (((\cursor_shadow_pal) & 0xF) << 4)
+	.byte ((\letters_spacing) & 7) | (((\item_vertical_padding) & 7) << 3) | (((\scroll_multiple) & 3) << 6)
+	.byte ((\font_id) & 0x3F) | (((\cursor_kind) & 3) << 6)
+	.endm
+
 	.macro rodata_sprite_palette data, tag
 	.4byte \data
 	.2byte \tag
