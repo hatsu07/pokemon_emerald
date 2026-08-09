@@ -1,129 +1,191 @@
 @ Item effect byte arrays and ITEM_POTION..ITEM_ENIGMA_BERRY pointer table.
-@ Labels use numeric item IDs to avoid guessing names that are not yet extracted here.
+@ Semantic labels follow pret/pokeemerald; numeric labels remain compatibility aliases.
 
+	.globl gItemEffect_Potion
 	.globl gItemEffect_00D
-gItemEffect_00D: @ 0x082EED08
-	.byte 0x00, 0x00, 0x00, 0x00, 0x04, 0x00, 0x14
+gItemEffect_Potion: @ 0x082EED08
+gItemEffect_00D:
+	.byte 0, 0, 0, 0, ITEM4_HEAL_HP, 0, 20
 
+	.globl gItemEffect_Antidote
 	.globl gItemEffect_00E
-gItemEffect_00E: @ 0x082EED0F
-	.byte 0x00, 0x00, 0x00, 0x10, 0x00, 0x00
+gItemEffect_Antidote: @ 0x082EED0F
+gItemEffect_00E:
+	.byte 0, 0, 0, ITEM3_POISON, 0, 0
 
+	.globl gItemEffect_BurnHeal
 	.globl gItemEffect_00F
-gItemEffect_00F: @ 0x082EED15
-	.byte 0x00, 0x00, 0x00, 0x08, 0x00, 0x00
+gItemEffect_BurnHeal: @ 0x082EED15
+gItemEffect_00F:
+	.byte 0, 0, 0, ITEM3_BURN, 0, 0
 
+	.globl gItemEffect_IceHeal
 	.globl gItemEffect_010
-gItemEffect_010: @ 0x082EED1B
-	.byte 0x00, 0x00, 0x00, 0x04, 0x00, 0x00
+gItemEffect_IceHeal: @ 0x082EED1B
+gItemEffect_010:
+	.byte 0, 0, 0, ITEM3_FREEZE, 0, 0
 
+	.globl gItemEffect_Awakening
 	.globl gItemEffect_011
-gItemEffect_011: @ 0x082EED21
-	.byte 0x00, 0x00, 0x00, 0x20, 0x00, 0x00
+gItemEffect_Awakening: @ 0x082EED21
+gItemEffect_011:
+	.byte 0, 0, 0, ITEM3_SLEEP, 0, 0
 
+	.globl gItemEffect_ParalyzeHeal
 	.globl gItemEffect_012
-gItemEffect_012: @ 0x082EED27
-	.byte 0x00, 0x00, 0x00, 0x02, 0x00, 0x00
+gItemEffect_ParalyzeHeal: @ 0x082EED27
+gItemEffect_012:
+	.byte 0, 0, 0, ITEM3_PARALYSIS, 0, 0
 
+	.globl gItemEffect_FullRestore
 	.globl gItemEffect_013
-gItemEffect_013: @ 0x082EED2D
-	.byte 0x00, 0x00, 0x00, 0x3F, 0x04, 0x00, 0xFF
+gItemEffect_FullRestore: @ 0x082EED2D
+gItemEffect_013:
+	.byte 0, 0, 0, ITEM3_STATUS_ALL, ITEM4_HEAL_HP, 0, ITEM6_HEAL_HP_FULL
 
+	.globl gItemEffect_MaxPotion
 	.globl gItemEffect_014
-gItemEffect_014: @ 0x082EED34
-	.byte 0x00, 0x00, 0x00, 0x00, 0x04, 0x00, 0xFF
+gItemEffect_MaxPotion: @ 0x082EED34
+gItemEffect_014:
+	.byte 0, 0, 0, 0, ITEM4_HEAL_HP, 0, ITEM6_HEAL_HP_FULL
 
+	.globl gItemEffect_HyperPotion
 	.globl gItemEffect_015
-gItemEffect_015: @ 0x082EED3B
-	.byte 0x00, 0x00, 0x00, 0x00, 0x04, 0x00, 0xC8
+gItemEffect_HyperPotion: @ 0x082EED3B
+gItemEffect_015:
+	.byte 0, 0, 0, 0, ITEM4_HEAL_HP, 0, 200
 
+	.globl gItemEffect_SuperPotion
 	.globl gItemEffect_016
-gItemEffect_016: @ 0x082EED42
-	.byte 0x00, 0x00, 0x00, 0x00, 0x04, 0x00, 0x32
+gItemEffect_SuperPotion: @ 0x082EED42
+gItemEffect_016:
+	.byte 0, 0, 0, 0, ITEM4_HEAL_HP, 0, 50
 
+	.globl gItemEffect_FullHeal
 	.globl gItemEffect_017
-gItemEffect_017: @ 0x082EED49
-	.byte 0x00, 0x00, 0x00, 0x3F, 0x00, 0x00
+gItemEffect_FullHeal: @ 0x082EED49
+gItemEffect_017:
+	.byte 0, 0, 0, ITEM3_STATUS_ALL, 0, 0
 
+	.globl gItemEffect_Revive
 	.globl gItemEffect_018
-gItemEffect_018: @ 0x082EED4F
-	.byte 0x00, 0x00, 0x00, 0x00, 0x44, 0x00, 0xFE
+gItemEffect_Revive: @ 0x082EED4F
+gItemEffect_018:
+	.byte 0, 0, 0, 0, ITEM4_REVIVE | ITEM4_HEAL_HP, 0, ITEM6_HEAL_HP_HALF
 
+	.globl gItemEffect_MaxRevive
 	.globl gItemEffect_019
-gItemEffect_019: @ 0x082EED56
-	.byte 0x00, 0x00, 0x00, 0x00, 0x44, 0x00, 0xFF
+gItemEffect_MaxRevive: @ 0x082EED56
+gItemEffect_019:
+	.byte 0, 0, 0, 0, ITEM4_REVIVE | ITEM4_HEAL_HP, 0, ITEM6_HEAL_HP_FULL
 
+	.globl gItemEffect_FreshWater
 	.globl gItemEffect_01A
-gItemEffect_01A: @ 0x082EED5D
-	.byte 0x00, 0x00, 0x00, 0x00, 0x04, 0x00, 0x32
+gItemEffect_FreshWater: @ 0x082EED5D
+gItemEffect_01A:
+	.byte 0, 0, 0, 0, ITEM4_HEAL_HP, 0, 50
 
+	.globl gItemEffect_SodaPop
 	.globl gItemEffect_01B
-gItemEffect_01B: @ 0x082EED64
-	.byte 0x00, 0x00, 0x00, 0x00, 0x04, 0x00, 0x3C
+gItemEffect_SodaPop: @ 0x082EED64
+gItemEffect_01B:
+	.byte 0, 0, 0, 0, ITEM4_HEAL_HP, 0, 60
 
+	.globl gItemEffect_Lemonade
 	.globl gItemEffect_01C
-gItemEffect_01C: @ 0x082EED6B
-	.byte 0x00, 0x00, 0x00, 0x00, 0x04, 0x00, 0x50
+gItemEffect_Lemonade: @ 0x082EED6B
+gItemEffect_01C:
+	.byte 0, 0, 0, 0, ITEM4_HEAL_HP, 0, 80
 
+	.globl gItemEffect_MoomooMilk
 	.globl gItemEffect_01D
-gItemEffect_01D: @ 0x082EED72
-	.byte 0x00, 0x00, 0x00, 0x00, 0x04, 0x00, 0x64
+gItemEffect_MoomooMilk: @ 0x082EED72
+gItemEffect_01D:
+	.byte 0, 0, 0, 0, ITEM4_HEAL_HP, 0, 100
 
+	.globl gItemEffect_EnergyPowder
 	.globl gItemEffect_01E
-gItemEffect_01E: @ 0x082EED79
-	.byte 0x00, 0x00, 0x00, 0x00, 0x04, 0xE0, 0x32, 0xFB, 0xFB, 0xF6
+gItemEffect_EnergyPowder: @ 0x082EED79
+gItemEffect_01E:
+	.byte 0, 0, 0, 0, ITEM4_HEAL_HP, ITEM5_FRIENDSHIP_ALL, 50, -5, -5, -10
 
+	.globl gItemEffect_EnergyRoot
 	.globl gItemEffect_01F
-gItemEffect_01F: @ 0x082EED83
-	.byte 0x00, 0x00, 0x00, 0x00, 0x04, 0xE0, 0xC8, 0xF6, 0xF6, 0xF1
+gItemEffect_EnergyRoot: @ 0x082EED83
+gItemEffect_01F:
+	.byte 0, 0, 0, 0, ITEM4_HEAL_HP, ITEM5_FRIENDSHIP_ALL, 200, -10, -10, -15
 
+	.globl gItemEffect_HealPowder
 	.globl gItemEffect_020
-gItemEffect_020: @ 0x082EED8D
-	.byte 0x00, 0x00, 0x00, 0x3F, 0x00, 0xE0, 0xFB, 0xFB, 0xF6
+gItemEffect_HealPowder: @ 0x082EED8D
+gItemEffect_020:
+	.byte 0, 0, 0, ITEM3_STATUS_ALL, 0, ITEM5_FRIENDSHIP_ALL, -5, -5, -10
 
+	.globl gItemEffect_RevivalHerb
 	.globl gItemEffect_021
-gItemEffect_021: @ 0x082EED96
-	.byte 0x00, 0x00, 0x00, 0x00, 0x44, 0xE0, 0xFF, 0xF1, 0xF1, 0xEC
+gItemEffect_RevivalHerb: @ 0x082EED96
+gItemEffect_021:
+	.byte 0, 0, 0, 0, ITEM4_REVIVE | ITEM4_HEAL_HP, ITEM5_FRIENDSHIP_ALL, ITEM6_HEAL_HP_FULL, -15, -15, -20
 
+	.globl gItemEffect_Ether
 	.globl gItemEffect_022
-gItemEffect_022: @ 0x082EEDA0
-	.byte 0x00, 0x00, 0x00, 0x00, 0x18, 0x00, 0x0A
+gItemEffect_Ether: @ 0x082EEDA0
+gItemEffect_022:
+	.byte 0, 0, 0, 0, ITEM4_HEAL_PP_ONE | ITEM4_HEAL_PP, 0, 10
 
+	.globl gItemEffect_MaxEther
 	.globl gItemEffect_023
-gItemEffect_023: @ 0x082EEDA7
-	.byte 0x00, 0x00, 0x00, 0x00, 0x18, 0x00, 0x7F
+gItemEffect_MaxEther: @ 0x082EEDA7
+gItemEffect_023:
+	.byte 0, 0, 0, 0, ITEM4_HEAL_PP_ONE | ITEM4_HEAL_PP, 0, ITEM6_HEAL_PP_FULL
 
+	.globl gItemEffect_Elixir
 	.globl gItemEffect_024
-gItemEffect_024: @ 0x082EEDAE
-	.byte 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x0A
+gItemEffect_Elixir: @ 0x082EEDAE
+gItemEffect_024:
+	.byte 0, 0, 0, 0, ITEM4_HEAL_PP, 0, 10
 
+	.globl gItemEffect_MaxElixir
 	.globl gItemEffect_025
-gItemEffect_025: @ 0x082EEDB5
-	.byte 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x7F
+gItemEffect_MaxElixir: @ 0x082EEDB5
+gItemEffect_025:
+	.byte 0, 0, 0, 0, ITEM4_HEAL_PP, 0, ITEM6_HEAL_PP_FULL
 
+	.globl gItemEffect_LavaCookie
 	.globl gItemEffect_026
-gItemEffect_026: @ 0x082EEDBC
-	.byte 0x00, 0x00, 0x00, 0x3F, 0x00, 0x00
+gItemEffect_LavaCookie: @ 0x082EEDBC
+gItemEffect_026:
+	.byte 0, 0, 0, ITEM3_STATUS_ALL, 0, 0
 
+	.globl gItemEffect_BlueFlute
 	.globl gItemEffect_027
-gItemEffect_027: @ 0x082EEDC2
-	.byte 0x00, 0x00, 0x00, 0x20, 0x00, 0x00
+gItemEffect_BlueFlute: @ 0x082EEDC2
+gItemEffect_027:
+	.byte 0, 0, 0, ITEM3_SLEEP, 0, 0
 
+	.globl gItemEffect_YellowFlute
 	.globl gItemEffect_028
-gItemEffect_028: @ 0x082EEDC8
-	.byte 0x00, 0x00, 0x00, 0x01, 0x00, 0x00
+gItemEffect_YellowFlute: @ 0x082EEDC8
+gItemEffect_028:
+	.byte 0, 0, 0, ITEM3_CONFUSION, 0, 0
 
+	.globl gItemEffect_RedFlute
 	.globl gItemEffect_029
-gItemEffect_029: @ 0x082EEDCE
-	.byte 0x80, 0x00, 0x00, 0x00, 0x00, 0x00
+gItemEffect_RedFlute: @ 0x082EEDCE
+gItemEffect_029:
+	.byte ITEM0_INFATUATION, 0, 0, 0, 0, 0
 
+	.globl gItemEffect_BerryJuice
 	.globl gItemEffect_02C
-gItemEffect_02C: @ 0x082EEDD4
-	.byte 0x00, 0x00, 0x00, 0x00, 0x04, 0x00, 0x14
+gItemEffect_BerryJuice: @ 0x082EEDD4
+gItemEffect_02C:
+	.byte 0, 0, 0, 0, ITEM4_HEAL_HP, 0, 20
 
+	.globl gItemEffect_SacredAsh
 	.globl gItemEffect_02D
-gItemEffect_02D: @ 0x082EEDDB
-	.byte 0x40, 0x00, 0x00, 0x00, 0x44, 0x00, 0xFF
+gItemEffect_SacredAsh: @ 0x082EEDDB
+gItemEffect_02D:
+	.byte ITEM0_SACRED_ASH, 0, 0, 0, ITEM4_REVIVE | ITEM4_HEAL_HP, 0, ITEM6_HEAL_HP_FULL
 
 	.globl gItemEffect_03F
 gItemEffect_03F: @ 0x082EEDE2
@@ -277,6 +339,45 @@ gItemEffect_09D: @ 0x082EEEFD
 gItemEffect_09E: @ 0x082EEF07
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0xE2, 0xF6, 0x0A, 0x05, 0x02
 
+	item_effect_alias gItemEffect_HPUp, gItemEffect_03F
+	item_effect_alias gItemEffect_Protein, gItemEffect_040
+	item_effect_alias gItemEffect_Iron, gItemEffect_041
+	item_effect_alias gItemEffect_Carbos, gItemEffect_042
+	item_effect_alias gItemEffect_Calcium, gItemEffect_043
+	item_effect_alias gItemEffect_RareCandy, gItemEffect_044
+	item_effect_alias gItemEffect_PPUp, gItemEffect_045
+	item_effect_alias gItemEffect_Zinc, gItemEffect_046
+	item_effect_alias gItemEffect_PPMax, gItemEffect_047
+	item_effect_alias gItemEffect_GuardSpec, gItemEffect_049
+	item_effect_alias gItemEffect_DireHit, gItemEffect_04A
+	item_effect_alias gItemEffect_XAttack, gItemEffect_04B
+	item_effect_alias gItemEffect_XDefend, gItemEffect_04C
+	item_effect_alias gItemEffect_XSpeed, gItemEffect_04D
+	item_effect_alias gItemEffect_XAccuracy, gItemEffect_04E
+	item_effect_alias gItemEffect_XSpecial, gItemEffect_04F
+	item_effect_alias gItemEffect_SunStone, gItemEffect_05D
+	item_effect_alias gItemEffect_MoonStone, gItemEffect_05E
+	item_effect_alias gItemEffect_FireStone, gItemEffect_05F
+	item_effect_alias gItemEffect_ThunderStone, gItemEffect_060
+	item_effect_alias gItemEffect_WaterStone, gItemEffect_061
+	item_effect_alias gItemEffect_LeafStone, gItemEffect_062
+	item_effect_alias gItemEffect_CheriBerry, gItemEffect_085
+	item_effect_alias gItemEffect_ChestoBerry, gItemEffect_086
+	item_effect_alias gItemEffect_PechaBerry, gItemEffect_087
+	item_effect_alias gItemEffect_RawstBerry, gItemEffect_088
+	item_effect_alias gItemEffect_AspearBerry, gItemEffect_089
+	item_effect_alias gItemEffect_LeppaBerry, gItemEffect_08A
+	item_effect_alias gItemEffect_OranBerry, gItemEffect_08B
+	item_effect_alias gItemEffect_PersimBerry, gItemEffect_08C
+	item_effect_alias gItemEffect_LumBerry, gItemEffect_08D
+	item_effect_alias gItemEffect_SitrusBerry, gItemEffect_08E
+	item_effect_alias gItemEffect_PomegBerry, gItemEffect_099
+	item_effect_alias gItemEffect_KelpsyBerry, gItemEffect_09A
+	item_effect_alias gItemEffect_QualotBerry, gItemEffect_09B
+	item_effect_alias gItemEffect_HondewBerry, gItemEffect_09C
+	item_effect_alias gItemEffect_GrepaBerry, gItemEffect_09D
+	item_effect_alias gItemEffect_TamatoBerry, gItemEffect_09E
+
 	@ 0x082EEF11-0x082EEF13 alignment
 	.byte 0, 0, 0
 
@@ -284,166 +385,170 @@ gItemEffect_09E: @ 0x082EEF07
 	.globl gUnknown_82EEF14
 gItemEffectTable: @ 0x082EEF14
 gUnknown_82EEF14:
-	.4byte gItemEffect_00D @ item 0x000D
-	.4byte gItemEffect_00E @ item 0x000E
-	.4byte gItemEffect_00F @ item 0x000F
-	.4byte gItemEffect_010 @ item 0x0010
-	.4byte gItemEffect_011 @ item 0x0011
-	.4byte gItemEffect_012 @ item 0x0012
-	.4byte gItemEffect_013 @ item 0x0013
-	.4byte gItemEffect_014 @ item 0x0014
-	.4byte gItemEffect_015 @ item 0x0015
-	.4byte gItemEffect_016 @ item 0x0016
-	.4byte gItemEffect_017 @ item 0x0017
-	.4byte gItemEffect_018 @ item 0x0018
-	.4byte gItemEffect_019 @ item 0x0019
-	.4byte gItemEffect_01A @ item 0x001A
-	.4byte gItemEffect_01B @ item 0x001B
-	.4byte gItemEffect_01C @ item 0x001C
-	.4byte gItemEffect_01D @ item 0x001D
-	.4byte gItemEffect_01E @ item 0x001E
-	.4byte gItemEffect_01F @ item 0x001F
-	.4byte gItemEffect_020 @ item 0x0020
-	.4byte gItemEffect_021 @ item 0x0021
-	.4byte gItemEffect_022 @ item 0x0022
-	.4byte gItemEffect_023 @ item 0x0023
-	.4byte gItemEffect_024 @ item 0x0024
-	.4byte gItemEffect_025 @ item 0x0025
-	.4byte gItemEffect_026 @ item 0x0026
-	.4byte gItemEffect_027 @ item 0x0027
-	.4byte gItemEffect_028 @ item 0x0028
-	.4byte gItemEffect_029 @ item 0x0029
-	.4byte NULL @ item 0x002A
-	.4byte NULL @ item 0x002B
-	.4byte gItemEffect_02C @ item 0x002C
-	.4byte gItemEffect_02D @ item 0x002D
-	.4byte NULL @ item 0x002E
-	.4byte NULL @ item 0x002F
-	.4byte NULL @ item 0x0030
-	.4byte NULL @ item 0x0031
-	.4byte NULL @ item 0x0032
-	.4byte NULL @ item 0x0033
-	.4byte NULL @ item 0x0034
-	.4byte NULL @ item 0x0035
-	.4byte NULL @ item 0x0036
-	.4byte NULL @ item 0x0037
-	.4byte NULL @ item 0x0038
-	.4byte NULL @ item 0x0039
-	.4byte NULL @ item 0x003A
-	.4byte NULL @ item 0x003B
-	.4byte NULL @ item 0x003C
-	.4byte NULL @ item 0x003D
-	.4byte NULL @ item 0x003E
-	.4byte gItemEffect_03F @ item 0x003F
-	.4byte gItemEffect_040 @ item 0x0040
-	.4byte gItemEffect_041 @ item 0x0041
-	.4byte gItemEffect_042 @ item 0x0042
-	.4byte gItemEffect_043 @ item 0x0043
-	.4byte gItemEffect_044 @ item 0x0044
-	.4byte gItemEffect_045 @ item 0x0045
-	.4byte gItemEffect_046 @ item 0x0046
-	.4byte gItemEffect_047 @ item 0x0047
-	.4byte NULL @ item 0x0048
-	.4byte gItemEffect_049 @ item 0x0049
-	.4byte gItemEffect_04A @ item 0x004A
-	.4byte gItemEffect_04B @ item 0x004B
-	.4byte gItemEffect_04C @ item 0x004C
-	.4byte gItemEffect_04D @ item 0x004D
-	.4byte gItemEffect_04E @ item 0x004E
-	.4byte gItemEffect_04F @ item 0x004F
-	.4byte NULL @ item 0x0050
-	.4byte NULL @ item 0x0051
-	.4byte NULL @ item 0x0052
-	.4byte NULL @ item 0x0053
-	.4byte NULL @ item 0x0054
-	.4byte NULL @ item 0x0055
-	.4byte NULL @ item 0x0056
-	.4byte NULL @ item 0x0057
-	.4byte NULL @ item 0x0058
-	.4byte NULL @ item 0x0059
-	.4byte NULL @ item 0x005A
-	.4byte NULL @ item 0x005B
-	.4byte NULL @ item 0x005C
-	.4byte gItemEffect_05D @ item 0x005D
-	.4byte gItemEffect_05E @ item 0x005E
-	.4byte gItemEffect_05F @ item 0x005F
-	.4byte gItemEffect_060 @ item 0x0060
-	.4byte gItemEffect_061 @ item 0x0061
-	.4byte gItemEffect_062 @ item 0x0062
-	.4byte NULL @ item 0x0063
-	.4byte NULL @ item 0x0064
-	.4byte NULL @ item 0x0065
-	.4byte NULL @ item 0x0066
-	.4byte NULL @ item 0x0067
-	.4byte NULL @ item 0x0068
-	.4byte NULL @ item 0x0069
-	.4byte NULL @ item 0x006A
-	.4byte NULL @ item 0x006B
-	.4byte NULL @ item 0x006C
-	.4byte NULL @ item 0x006D
-	.4byte NULL @ item 0x006E
-	.4byte NULL @ item 0x006F
-	.4byte NULL @ item 0x0070
-	.4byte NULL @ item 0x0071
-	.4byte NULL @ item 0x0072
-	.4byte NULL @ item 0x0073
-	.4byte NULL @ item 0x0074
-	.4byte NULL @ item 0x0075
-	.4byte NULL @ item 0x0076
-	.4byte NULL @ item 0x0077
-	.4byte NULL @ item 0x0078
-	.4byte NULL @ item 0x0079
-	.4byte NULL @ item 0x007A
-	.4byte NULL @ item 0x007B
-	.4byte NULL @ item 0x007C
-	.4byte NULL @ item 0x007D
-	.4byte NULL @ item 0x007E
-	.4byte NULL @ item 0x007F
-	.4byte NULL @ item 0x0080
-	.4byte NULL @ item 0x0081
-	.4byte NULL @ item 0x0082
-	.4byte NULL @ item 0x0083
-	.4byte NULL @ item 0x0084
-	.4byte gItemEffect_085 @ item 0x0085
-	.4byte gItemEffect_086 @ item 0x0086
-	.4byte gItemEffect_087 @ item 0x0087
-	.4byte gItemEffect_088 @ item 0x0088
-	.4byte gItemEffect_089 @ item 0x0089
-	.4byte gItemEffect_08A @ item 0x008A
-	.4byte gItemEffect_08B @ item 0x008B
-	.4byte gItemEffect_08C @ item 0x008C
-	.4byte gItemEffect_08D @ item 0x008D
-	.4byte gItemEffect_08E @ item 0x008E
-	.4byte NULL @ item 0x008F
-	.4byte NULL @ item 0x0090
-	.4byte NULL @ item 0x0091
-	.4byte NULL @ item 0x0092
-	.4byte NULL @ item 0x0093
-	.4byte NULL @ item 0x0094
-	.4byte NULL @ item 0x0095
-	.4byte NULL @ item 0x0096
-	.4byte NULL @ item 0x0097
-	.4byte NULL @ item 0x0098
-	.4byte gItemEffect_099 @ item 0x0099
-	.4byte gItemEffect_09A @ item 0x009A
-	.4byte gItemEffect_09B @ item 0x009B
-	.4byte gItemEffect_09C @ item 0x009C
-	.4byte gItemEffect_09D @ item 0x009D
-	.4byte gItemEffect_09E @ item 0x009E
-	.4byte NULL @ item 0x009F
-	.4byte NULL @ item 0x00A0
-	.4byte NULL @ item 0x00A1
-	.4byte NULL @ item 0x00A2
-	.4byte NULL @ item 0x00A3
-	.4byte NULL @ item 0x00A4
-	.4byte NULL @ item 0x00A5
-	.4byte NULL @ item 0x00A6
-	.4byte NULL @ item 0x00A7
-	.4byte NULL @ item 0x00A8
-	.4byte NULL @ item 0x00A9
-	.4byte NULL @ item 0x00AA
-	.4byte NULL @ item 0x00AB
-	.4byte NULL @ item 0x00AC
-	.4byte NULL @ item 0x00AD
-	.4byte NULL @ item 0x00AE
-	.4byte NULL @ item 0x00AF
+	item_effect_table_entry ITEM_POTION, gItemEffect_Potion
+	item_effect_table_entry ITEM_ANTIDOTE, gItemEffect_Antidote
+	item_effect_table_entry ITEM_BURN_HEAL, gItemEffect_BurnHeal
+	item_effect_table_entry ITEM_ICE_HEAL, gItemEffect_IceHeal
+	item_effect_table_entry ITEM_AWAKENING, gItemEffect_Awakening
+	item_effect_table_entry ITEM_PARALYZE_HEAL, gItemEffect_ParalyzeHeal
+	item_effect_table_entry ITEM_FULL_RESTORE, gItemEffect_FullRestore
+	item_effect_table_entry ITEM_MAX_POTION, gItemEffect_MaxPotion
+	item_effect_table_entry ITEM_HYPER_POTION, gItemEffect_HyperPotion
+	item_effect_table_entry ITEM_SUPER_POTION, gItemEffect_SuperPotion
+	item_effect_table_entry ITEM_FULL_HEAL, gItemEffect_FullHeal
+	item_effect_table_entry ITEM_REVIVE, gItemEffect_Revive
+	item_effect_table_entry ITEM_MAX_REVIVE, gItemEffect_MaxRevive
+	item_effect_table_entry ITEM_FRESH_WATER, gItemEffect_FreshWater
+	item_effect_table_entry ITEM_SODA_POP, gItemEffect_SodaPop
+	item_effect_table_entry ITEM_LEMONADE, gItemEffect_Lemonade
+	item_effect_table_entry ITEM_MOOMOO_MILK, gItemEffect_MoomooMilk
+	item_effect_table_entry ITEM_ENERGY_POWDER, gItemEffect_EnergyPowder
+	item_effect_table_entry ITEM_ENERGY_ROOT, gItemEffect_EnergyRoot
+	item_effect_table_entry ITEM_HEAL_POWDER, gItemEffect_HealPowder
+	item_effect_table_entry ITEM_REVIVAL_HERB, gItemEffect_RevivalHerb
+	item_effect_table_entry ITEM_ETHER, gItemEffect_Ether
+	item_effect_table_entry ITEM_MAX_ETHER, gItemEffect_MaxEther
+	item_effect_table_entry ITEM_ELIXIR, gItemEffect_Elixir
+	item_effect_table_entry ITEM_MAX_ELIXIR, gItemEffect_MaxElixir
+	item_effect_table_entry ITEM_LAVA_COOKIE, gItemEffect_LavaCookie
+	item_effect_table_entry ITEM_BLUE_FLUTE, gItemEffect_BlueFlute
+	item_effect_table_entry ITEM_YELLOW_FLUTE, gItemEffect_YellowFlute
+	item_effect_table_entry ITEM_RED_FLUTE, gItemEffect_RedFlute
+	item_effect_table_entry ITEM_BLACK_FLUTE, NULL
+	item_effect_table_entry ITEM_WHITE_FLUTE, NULL
+	item_effect_table_entry ITEM_BERRY_JUICE, gItemEffect_BerryJuice
+	item_effect_table_entry ITEM_SACRED_ASH, gItemEffect_SacredAsh
+	item_effect_table_entry ITEM_SHOAL_SALT, NULL
+	item_effect_table_entry ITEM_SHOAL_SHELL, NULL
+	item_effect_table_entry ITEM_RED_SHARD, NULL
+	item_effect_table_entry ITEM_BLUE_SHARD, NULL
+	item_effect_table_entry ITEM_YELLOW_SHARD, NULL
+	item_effect_table_entry ITEM_GREEN_SHARD, NULL
+	item_effect_table_entry ITEM_UNUSED_034, NULL
+	item_effect_table_entry ITEM_UNUSED_035, NULL
+	item_effect_table_entry ITEM_UNUSED_036, NULL
+	item_effect_table_entry ITEM_UNUSED_037, NULL
+	item_effect_table_entry ITEM_UNUSED_038, NULL
+	item_effect_table_entry ITEM_UNUSED_039, NULL
+	item_effect_table_entry ITEM_UNUSED_03A, NULL
+	item_effect_table_entry ITEM_UNUSED_03B, NULL
+	item_effect_table_entry ITEM_UNUSED_03C, NULL
+	item_effect_table_entry ITEM_UNUSED_03D, NULL
+	item_effect_table_entry ITEM_UNUSED_03E, NULL
+	item_effect_table_entry ITEM_HP_UP, gItemEffect_HPUp
+	item_effect_table_entry ITEM_PROTEIN, gItemEffect_Protein
+	item_effect_table_entry ITEM_IRON, gItemEffect_Iron
+	item_effect_table_entry ITEM_CARBOS, gItemEffect_Carbos
+	item_effect_table_entry ITEM_CALCIUM, gItemEffect_Calcium
+	item_effect_table_entry ITEM_RARE_CANDY, gItemEffect_RareCandy
+	item_effect_table_entry ITEM_PP_UP, gItemEffect_PPUp
+	item_effect_table_entry ITEM_ZINC, gItemEffect_Zinc
+	item_effect_table_entry ITEM_PP_MAX, gItemEffect_PPMax
+	item_effect_table_entry ITEM_UNUSED_048, NULL
+	item_effect_table_entry ITEM_GUARD_SPEC, gItemEffect_GuardSpec
+	item_effect_table_entry ITEM_DIRE_HIT, gItemEffect_DireHit
+	item_effect_table_entry ITEM_X_ATTACK, gItemEffect_XAttack
+	item_effect_table_entry ITEM_X_DEFEND, gItemEffect_XDefend
+	item_effect_table_entry ITEM_X_SPEED, gItemEffect_XSpeed
+	item_effect_table_entry ITEM_X_ACCURACY, gItemEffect_XAccuracy
+	item_effect_table_entry ITEM_X_SPECIAL, gItemEffect_XSpecial
+	item_effect_table_entry ITEM_POKE_DOLL, NULL
+	item_effect_table_entry ITEM_FLUFFY_TAIL, NULL
+	item_effect_table_entry ITEM_UNUSED_052, NULL
+	item_effect_table_entry ITEM_SUPER_REPEL, NULL
+	item_effect_table_entry ITEM_MAX_REPEL, NULL
+	item_effect_table_entry ITEM_ESCAPE_ROPE, NULL
+	item_effect_table_entry ITEM_REPEL, NULL
+	item_effect_table_entry ITEM_UNUSED_057, NULL
+	item_effect_table_entry ITEM_UNUSED_058, NULL
+	item_effect_table_entry ITEM_UNUSED_059, NULL
+	item_effect_table_entry ITEM_UNUSED_05A, NULL
+	item_effect_table_entry ITEM_UNUSED_05B, NULL
+	item_effect_table_entry ITEM_UNUSED_05C, NULL
+	item_effect_table_entry ITEM_SUN_STONE, gItemEffect_SunStone
+	item_effect_table_entry ITEM_MOON_STONE, gItemEffect_MoonStone
+	item_effect_table_entry ITEM_FIRE_STONE, gItemEffect_FireStone
+	item_effect_table_entry ITEM_THUNDER_STONE, gItemEffect_ThunderStone
+	item_effect_table_entry ITEM_WATER_STONE, gItemEffect_WaterStone
+	item_effect_table_entry ITEM_LEAF_STONE, gItemEffect_LeafStone
+	item_effect_table_entry ITEM_UNUSED_063, NULL
+	item_effect_table_entry ITEM_UNUSED_064, NULL
+	item_effect_table_entry ITEM_UNUSED_065, NULL
+	item_effect_table_entry ITEM_UNUSED_066, NULL
+	item_effect_table_entry ITEM_TINY_MUSHROOM, NULL
+	item_effect_table_entry ITEM_BIG_MUSHROOM, NULL
+	item_effect_table_entry ITEM_UNUSED_069, NULL
+	item_effect_table_entry ITEM_PEARL, NULL
+	item_effect_table_entry ITEM_BIG_PEARL, NULL
+	item_effect_table_entry ITEM_STARDUST, NULL
+	item_effect_table_entry ITEM_STAR_PIECE, NULL
+	item_effect_table_entry ITEM_NUGGET, NULL
+	item_effect_table_entry ITEM_HEART_SCALE, NULL
+	item_effect_table_entry ITEM_UNUSED_070, NULL
+	item_effect_table_entry ITEM_UNUSED_071, NULL
+	item_effect_table_entry ITEM_UNUSED_072, NULL
+	item_effect_table_entry ITEM_UNUSED_073, NULL
+	item_effect_table_entry ITEM_UNUSED_074, NULL
+	item_effect_table_entry ITEM_UNUSED_075, NULL
+	item_effect_table_entry ITEM_UNUSED_076, NULL
+	item_effect_table_entry ITEM_UNUSED_077, NULL
+	item_effect_table_entry ITEM_UNUSED_078, NULL
+	item_effect_table_entry ITEM_ORANGE_MAIL, NULL
+	item_effect_table_entry ITEM_HARBOR_MAIL, NULL
+	item_effect_table_entry ITEM_GLITTER_MAIL, NULL
+	item_effect_table_entry ITEM_MECH_MAIL, NULL
+	item_effect_table_entry ITEM_WOOD_MAIL, NULL
+	item_effect_table_entry ITEM_WAVE_MAIL, NULL
+	item_effect_table_entry ITEM_BEAD_MAIL, NULL
+	item_effect_table_entry ITEM_SHADOW_MAIL, NULL
+	item_effect_table_entry ITEM_TROPIC_MAIL, NULL
+	item_effect_table_entry ITEM_DREAM_MAIL, NULL
+	item_effect_table_entry ITEM_FAB_MAIL, NULL
+	item_effect_table_entry ITEM_RETRO_MAIL, NULL
+	item_effect_table_entry ITEM_CHERI_BERRY, gItemEffect_CheriBerry
+	item_effect_table_entry ITEM_CHESTO_BERRY, gItemEffect_ChestoBerry
+	item_effect_table_entry ITEM_PECHA_BERRY, gItemEffect_PechaBerry
+	item_effect_table_entry ITEM_RAWST_BERRY, gItemEffect_RawstBerry
+	item_effect_table_entry ITEM_ASPEAR_BERRY, gItemEffect_AspearBerry
+	item_effect_table_entry ITEM_LEPPA_BERRY, gItemEffect_LeppaBerry
+	item_effect_table_entry ITEM_ORAN_BERRY, gItemEffect_OranBerry
+	item_effect_table_entry ITEM_PERSIM_BERRY, gItemEffect_PersimBerry
+	item_effect_table_entry ITEM_LUM_BERRY, gItemEffect_LumBerry
+	item_effect_table_entry ITEM_SITRUS_BERRY, gItemEffect_SitrusBerry
+	item_effect_table_entry ITEM_FIGY_BERRY, NULL
+	item_effect_table_entry ITEM_WIKI_BERRY, NULL
+	item_effect_table_entry ITEM_MAGO_BERRY, NULL
+	item_effect_table_entry ITEM_AGUAV_BERRY, NULL
+	item_effect_table_entry ITEM_IAPAPA_BERRY, NULL
+	item_effect_table_entry ITEM_RAZZ_BERRY, NULL
+	item_effect_table_entry ITEM_BLUK_BERRY, NULL
+	item_effect_table_entry ITEM_NANAB_BERRY, NULL
+	item_effect_table_entry ITEM_WEPEAR_BERRY, NULL
+	item_effect_table_entry ITEM_PINAP_BERRY, NULL
+	item_effect_table_entry ITEM_POMEG_BERRY, gItemEffect_PomegBerry
+	item_effect_table_entry ITEM_KELPSY_BERRY, gItemEffect_KelpsyBerry
+	item_effect_table_entry ITEM_QUALOT_BERRY, gItemEffect_QualotBerry
+	item_effect_table_entry ITEM_HONDEW_BERRY, gItemEffect_HondewBerry
+	item_effect_table_entry ITEM_GREPA_BERRY, gItemEffect_GrepaBerry
+	item_effect_table_entry ITEM_TAMATO_BERRY, gItemEffect_TamatoBerry
+	item_effect_table_entry ITEM_CORNN_BERRY, NULL
+	item_effect_table_entry ITEM_MAGOST_BERRY, NULL
+	item_effect_table_entry ITEM_RABUTA_BERRY, NULL
+	item_effect_table_entry ITEM_NOMEL_BERRY, NULL
+	item_effect_table_entry ITEM_SPELON_BERRY, NULL
+	item_effect_table_entry ITEM_PAMTRE_BERRY, NULL
+	item_effect_table_entry ITEM_WATMEL_BERRY, NULL
+	item_effect_table_entry ITEM_DURIN_BERRY, NULL
+	item_effect_table_entry ITEM_BELUE_BERRY, NULL
+	item_effect_table_entry ITEM_LIECHI_BERRY, NULL
+	item_effect_table_entry ITEM_GANLON_BERRY, NULL
+	item_effect_table_entry ITEM_SALAC_BERRY, NULL
+	item_effect_table_entry ITEM_PETAYA_BERRY, NULL
+	item_effect_table_entry ITEM_APICOT_BERRY, NULL
+	item_effect_table_entry ITEM_LANSAT_BERRY, NULL
+	item_effect_table_entry ITEM_STARF_BERRY, NULL
+	item_effect_table_entry ITEM_ENIGMA_BERRY, NULL
+
+	.if (. - gItemEffectTable) != ((ITEM_ENIGMA_BERRY - ITEM_POTION + 1) * 4)
+	.error "gItemEffectTable must cover ITEM_POTION through ITEM_ENIGMA_BERRY"
+	.endif

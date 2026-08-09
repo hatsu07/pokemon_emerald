@@ -304,6 +304,42 @@
 	.byte ((\font_id) & 0x3F) | (((\cursor_kind) & 3) << 6)
 	.endm
 
+	@ JP CombinedMove layout is three u16 move IDs plus two bytes of padding.
+	.macro combined_move move1, move2, new_move
+	.2byte \move1, \move2, \new_move
+	.2byte 0 @ JP layout padding
+	.endm
+
+	.macro stat_stage_ratio numerator, denominator
+	.byte \numerator, \denominator
+	.endm
+
+	.macro species_item species, item
+	.2byte \species, \item
+	.endm
+
+	@ Define a readable global name for an already-positioned compatibility label.
+	.macro item_effect_alias name, compatibility_label
+	.globl \name
+	.set \name, \compatibility_label
+	.endm
+
+	@ One entry of gItemEffectTable, checked against its item ID.
+	.macro item_effect_table_entry item, effect
+	.if ((\item) - ITEM_POTION) != ((. - gItemEffectTable) / 4)
+	.error "gItemEffectTable entries are out of item-ID order"
+	.endif
+	.4byte \effect
+	.endm
+
+	@ One facility-class-indexed byte table entry.
+	.macro facility_class_mapping table, facility_class, value
+	.if (\facility_class) != (. - \table)
+	.error "facility class mapping is out of class-ID order"
+	.endif
+	.byte \value
+	.endm
+
 	.macro rodata_sprite_palette data, tag
 	.4byte \data
 	.2byte \tag
