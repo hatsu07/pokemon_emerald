@@ -12,6 +12,17 @@
     .4byte \mons
 .endm
 
+@ struct WildPokemonHeader (0x14 bytes).
+.macro wildmonheader mapGroup:req, mapNum:req, landMonsInfo:req, waterMonsInfo:req, rockSmashMonsInfo:req, fishingMonsInfo:req
+    .byte \mapGroup
+    .byte \mapNum
+    .2byte 0 @ padding
+    .4byte \landMonsInfo
+    .4byte \waterMonsInfo
+    .4byte \rockSmashMonsInfo
+    .4byte \fishingMonsInfo
+.endm
+
 @ Battle Pyramid encounter slot
 @ index is 1-based and selects an entry from PyramidWildMon[8].
 .macro pyramidmonslot minLevel:req, maxLevel:req, index:req
