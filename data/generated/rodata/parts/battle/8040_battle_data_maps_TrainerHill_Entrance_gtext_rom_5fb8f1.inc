@@ -9,5 +9,7 @@ gText_Rom_5FB8F1: @ 0x085FB8F1
 	.space 0xe - (. - gText_Rom_5FB8F1)
 	.endif
 	@ Replaced baserom.gba range: offset=0x5FB8FF, size=0x3
-	.byte 0xA2, 0xC0, 0xFF
+	@ semanticized-mass: charmap string (3 bytes including EOS)
+	.string "1F"
+	.byte EOS
 

@@ -178,7 +178,7 @@ sWirelessStatusIndicator_3Bars: @ 0x082C02C8
 	.2byte 16, 10 @ ANIMCMD_FRAME
 	.2byte 12,  5 @ ANIMCMD_FRAME
 	.2byte  8,  5 @ ANIMCMD_FRAME
-	.2byte 0xFFFE, 0 @ ANIMCMD_JUMP(0)
+	.2byte 0xFFFE, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_JUMP(0)
 
 sWirelessStatusIndicator_2Bars: @ 0x082C02E4
 	.2byte  4,  5
@@ -231,8 +231,8 @@ sWirelessStatusIndicatorSpriteTemplate:
 	.4byte sWirelessStatusIndicatorOamData
 	.4byte sWirelessStatusIndicatorAnims
 	.4byte 0 @ images = NULL
-	.4byte 0x082BF310 @ gDummySpriteAffineAnimTable
-	.4byte 0x08007141 @ SpriteCallbackDummy + 1
+	.4byte gDummySpriteAffineAnimTable @ gDummySpriteAffineAnimTable
+	.4byte SpriteCallbackDummy @ SpriteCallbackDummy + 1
 
 	.globl gUnknown_82C0358
 gUnknown_82C0358:

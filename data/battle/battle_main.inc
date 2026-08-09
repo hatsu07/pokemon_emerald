@@ -26,11 +26,11 @@ gUnknown_82EBAE0: @ 0x082EBAE0
 	.globl gUnusedBattleInitSprite
 gUnusedBattleInitSprite:
 	.2byte 0, 0 @ tileTag, paletteTag
-	.4byte 0x082BF2F8 @ gDummyOamData
-	.4byte 0x082BF304 @ gDummySpriteAnimTable
+	.4byte gDummyOamData @ gDummyOamData
+	.4byte gDummySpriteAnimTable @ gDummySpriteAnimTable
 	.4byte 0
-	.4byte 0x082BF310 @ gDummySpriteAffineAnimTable
-	.4byte 0x08038205 @ SpriteCB_UnusedBattleInit (Thumb)
+	.4byte gDummySpriteAffineAnimTable @ gDummySpriteAffineAnimTable
+	.4byte sub_08038204 @ SpriteCB_UnusedBattleInit (Thumb)
 
 	.globl gOamData_BattleSpriteOpponentSide
 gOamData_BattleSpriteOpponentSide: @ 0x082EBAF8
@@ -42,15 +42,15 @@ gOamData_BattleSpritePlayerSide: @ 0x082EBB00
 
 sAnim_Unused: @ 0x082EBB08
 	.2byte 0, 5 @ ANIMCMD_FRAME(0, 5)
-	.2byte 0xFFFE, 0 @ ANIMCMD_JUMP(0)
+	.2byte 0xFFFE, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_JUMP(0)
 
 sAnims_Unused: @ 0x082EBB10
 	.4byte sAnim_Unused
 
 sAffineAnim_Unused: @ 0x082EBB14
-	.2byte 0xFFF0, 0x0000, 0x0400, 0x0000 @ AffineAnimCmd raw (0xfff0, 0x0000, 0x0400, 0x0000)
-	.2byte 0x0000, 0x0000, 0x3C00, 0x0000 @ AffineAnimCmd raw (0x0000, 0x0000, 0x3c00, 0x0000)
-	.2byte 0x7FFE, 0x0001, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(1)
+	.2byte 0xFFF0, ANIM_V_SQUISH_AND_BOUNCE, 0x0400, ANIM_V_SQUISH_AND_BOUNCE @ AffineAnimCmd raw (0xfff0, 0x0000, 0x0400, 0x0000)
+	.2byte ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, 0x3C00, ANIM_V_SQUISH_AND_BOUNCE @ AffineAnimCmd raw (0x0000, 0x0000, 0x3c00, 0x0000)
+	.2byte 0x7FFE, ANIM_CIRCULAR_STRETCH_TWICE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_JUMP(1)
 
 sAffineAnims_Unused: @ 0x082EBB2C
 	.4byte sAffineAnim_Unused

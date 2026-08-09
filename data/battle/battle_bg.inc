@@ -15,13 +15,13 @@ sVsLetter_S_OamData: @ 0x082EB7E8
 
 sVsLetterAffineAnimCmds0: @ 0x082EB7F0
 	.2byte 0x0080, 0x0080, 0x0000, 0x0000 @ AFFINEANIMCMD_FRAME(0x80,0x80,0,0)
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
 sVsLetterAffineAnimCmds1: @ 0x082EB800
 	.2byte 0x0080, 0x0080, 0x0000, 0x0000 @ initial scale
 	.2byte 0x0018, 0x0018, 0x8000, 0x0000 @ affine frame
 	.2byte 0x0018, 0x0018, 0x8000, 0x0000 @ affine frame
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
 sVsLetterAffineAnimTable: @ 0x082EB820
 	.4byte sVsLetterAffineAnimCmds0
@@ -32,25 +32,25 @@ gUnknown_82EB828: @ 0x082EB828
 sVsLetter_V_SpriteTemplate:
 	.2byte 10000, 10000 @ TAG_VS_LETTERS
 	.4byte sVsLetter_V_OamData
-	.4byte 0x082BF304 @ gDummySpriteAnimTable
+	.4byte gDummySpriteAnimTable @ gDummySpriteAnimTable
 	.4byte 0
 	.4byte sVsLetterAffineAnimTable
-	.4byte 0x080387B5 @ SpriteCB_VsLetterDummy (Thumb)
+	.4byte sub_080387B4 @ SpriteCB_VsLetterDummy (Thumb)
 
 	.globl gUnknown_82EB840
 gUnknown_82EB840: @ 0x082EB840
 sVsLetter_S_SpriteTemplate:
 	.2byte 10000, 10000 @ TAG_VS_LETTERS
 	.4byte sVsLetter_S_OamData
-	.4byte 0x082BF304 @ gDummySpriteAnimTable
+	.4byte gDummySpriteAnimTable @ gDummySpriteAnimTable
 	.4byte 0
 	.4byte sVsLetterAffineAnimTable
-	.4byte 0x080387B5 @ SpriteCB_VsLetterDummy (Thumb)
+	.4byte sub_080387B4 @ SpriteCB_VsLetterDummy (Thumb)
 
 	.globl gUnknown_82EB858
 gUnknown_82EB858: @ 0x082EB858
 sVsLettersSpriteSheet:
-	.4byte 0x08D77BB0 @ gVsLettersGfx
+	.4byte gUnknown_8D77BB0 @ gVsLettersGfx
 	.2byte 0x1000, 10000 @ size, TAG_VS_LETTERS
 
 	.globl gUnknown_82EB860
@@ -146,12 +146,12 @@ sBattleEnvironmentTable:
 	@ BATTLE_ENVIRONMENT_UNDERWATER
 	.4byte 0x08D798FC @ gBattleEnvironmentTiles_Underwater
 	.4byte 0x08D79EFC @ gBattleEnvironmentTilemap_Underwater
-	.4byte 0x08D7FA9C @ gBattleEnvironmentAnimTiles_Underwater
-	.4byte 0x08D7FF68 @ gBattleEnvironmentAnimTilemap_Underwater
+	.4byte gUnknown_8D7FA9C @ gBattleEnvironmentAnimTiles_Underwater
+	.4byte gUnknown_8D7FF68 @ gBattleEnvironmentAnimTilemap_Underwater
 	.4byte 0x08D79EB4 @ gBattleEnvironmentPalette_Underwater
 	@ BATTLE_ENVIRONMENT_WATER
-	.4byte 0x08D7A1AC @ gBattleEnvironmentTiles_Water
-	.4byte 0x08D7A7C4 @ gBattleEnvironmentTilemap_Water
+	.4byte gUnknown_8D7A1AC @ gBattleEnvironmentTiles_Water
+	.4byte gUnknown_8D7A7C4 @ gBattleEnvironmentTilemap_Water
 	.4byte 0x08D800F8 @ gBattleEnvironmentAnimTiles_Water
 	.4byte 0x08D80704 @ gBattleEnvironmentAnimTilemap_Water
 	.4byte 0x08D7A780 @ gBattleEnvironmentPalette_Water
@@ -168,20 +168,20 @@ sBattleEnvironmentTable:
 	.4byte 0x08D81520 @ gBattleEnvironmentAnimTilemap_Rock
 	.4byte 0x08D7B8CC @ gBattleEnvironmentPalette_Rock
 	@ BATTLE_ENVIRONMENT_CAVE
-	.4byte 0x08D7BBB8 @ gBattleEnvironmentTiles_Cave
-	.4byte 0x08D7C1F8 @ gBattleEnvironmentTilemap_Cave
-	.4byte 0x08D816B4 @ gBattleEnvironmentAnimTiles_Cave
-	.4byte 0x08D81ED0 @ gBattleEnvironmentAnimTilemap_Cave
+	.4byte gUnknown_8D7BBB8 @ gBattleEnvironmentTiles_Cave
+	.4byte gUnknown_8D7C1F8 @ gBattleEnvironmentTilemap_Cave
+	.4byte gUnknown_8D816B4 @ gBattleEnvironmentAnimTiles_Cave
+	.4byte gUnknown_8D81ED0 @ gBattleEnvironmentAnimTilemap_Cave
 	.4byte 0x08D7C1B0 @ gBattleEnvironmentPalette_Cave
 	@ BATTLE_ENVIRONMENT_BUILDING
-	.4byte 0x08D7C4E4 @ gBattleEnvironmentTiles_Building
-	.4byte 0x08D7CACC @ gBattleEnvironmentTilemap_Building
-	.4byte 0x08D82178 @ gBattleEnvironmentAnimTiles_Building
-	.4byte 0x08D82588 @ gBattleEnvironmentAnimTilemap_Building
+	.4byte gUnknown_8D7C4E4 @ gBattleEnvironmentTiles_Building
+	.4byte gUnknown_8D7CACC @ gBattleEnvironmentTilemap_Building
+	.4byte gUnknown_8D82178 @ gBattleEnvironmentAnimTiles_Building
+	.4byte gUnknown_8D82588 @ gBattleEnvironmentAnimTilemap_Building
 	.4byte 0x08D7DF58 @ gBattleEnvironmentPalette_Building
 	@ BATTLE_ENVIRONMENT_PLAIN
-	.4byte 0x08D7C4E4 @ gBattleEnvironmentTiles_Building
-	.4byte 0x08D7CACC @ gBattleEnvironmentTilemap_Building
-	.4byte 0x08D82178 @ gBattleEnvironmentAnimTiles_Building
-	.4byte 0x08D82588 @ gBattleEnvironmentAnimTilemap_Building
+	.4byte gUnknown_8D7C4E4 @ gBattleEnvironmentTiles_Building
+	.4byte gUnknown_8D7CACC @ gBattleEnvironmentTilemap_Building
+	.4byte gUnknown_8D82178 @ gBattleEnvironmentAnimTiles_Building
+	.4byte gUnknown_8D82588 @ gBattleEnvironmentAnimTilemap_Building
 	.4byte 0x08D7C4A8 @ gBattleEnvironmentPalette_Plain

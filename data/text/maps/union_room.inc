@@ -1931,7 +1931,7 @@ gUnknown_82C2064: @ 0x082C2064
 sListMenuTemplate_PossibleGroupMembers:
 	.4byte sPossibleGroupMembersListMenuItems @ items
 	.4byte 0 @ moveCursorFunc
-	.4byte 0x08012D7D @ ItemPrintFunc_PossibleGroupMembers + 1 @ itemPrintFunc
+	.4byte sub_08012D7C @ ItemPrintFunc_PossibleGroupMembers + 1 @ itemPrintFunc
 	.2byte 5 @ totalItems
 	.2byte 5 @ maxShowed
 	.byte 0x00, 0x00, 0x01, 0x00, 0x20, 0x31, 0x00, 0x41 @ packed window/cursor/font fields
@@ -1993,8 +1993,8 @@ sUnionRoomGroupsMenuItems: @ 0x082C208C
 gUnknown_82C210C: @ 0x082C210C
 sListMenuTemplate_UnionRoomGroups:
 	.4byte sUnionRoomGroupsMenuItems @ items
-	.4byte 0x081AED51 @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
-	.4byte 0x080138FD @ ListMenuItemPrintFunc_UnionRoomGroups + 1 @ itemPrintFunc
+	.4byte ListMenuDefaultCursorMoveFunc @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
+	.4byte sub_080138FC @ ListMenuItemPrintFunc_UnionRoomGroups + 1 @ itemPrintFunc
 	.2byte 16 @ totalItems
 	.2byte 5 @ maxShowed
 	.byte 0x00, 0x00, 0x08, 0x01, 0x21, 0x31, 0x40, 0x01 @ packed window/cursor/font fields
@@ -2010,19 +2010,19 @@ sWindowTemplate_InviteToActivity:
 	.2byte 0x0001 @ baseBlock
 
 sInviteToActivityMenuItems: @ 0x082C212C
-	.4byte 0x082C1D48 @ sText_Greetings
+	.4byte gText_Rom_2C1D48 @ sText_Greetings
 	.4byte 0x00000208
-	.4byte 0x082C1D38 @ sText_Battle
+	.4byte gText_Rom_2C1D38 @ sText_Battle
 	.4byte 0x00000241
-	.4byte 0x082C1D40 @ sText_Chat2
+	.4byte gText_Rom_2C1D40 @ sText_Chat2
 	.4byte 0x00000245
-	.4byte 0x082C1D50 @ sText_Exit
+	.4byte gText_Rom_2C1D50 @ sText_Exit
 	.4byte 0x00000040
 	.globl gUnknown_82C214C
 gUnknown_82C214C: @ 0x082C214C
 sListMenuTemplate_InviteToActivity:
 	.4byte sInviteToActivityMenuItems @ items
-	.4byte 0x081AED51 @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
+	.4byte ListMenuDefaultCursorMoveFunc @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
 	.4byte 0 @ itemPrintFunc
 	.2byte 4 @ totalItems
 	.2byte 4 @ maxShowed
@@ -2039,17 +2039,17 @@ sWindowTemplate_RegisterForTrade:
 	.2byte 0x0001 @ baseBlock
 
 sRegisterForTradeListMenuItems: @ 0x082C216C
-	.4byte 0x085CA368 @ gText_Register
+	.4byte gText_Rom_5CA368 @ gText_Register
 	.4byte 1
 	.4byte 0x082C1D58 @ sText_Info
 	.4byte 2
-	.4byte 0x082C1D50 @ sText_Exit
+	.4byte gText_Rom_2C1D50 @ sText_Exit
 	.4byte 3
 	.globl gUnknown_82C2184
 gUnknown_82C2184: @ 0x082C2184
 sListMenuTemplate_RegisterForTrade:
 	.4byte sRegisterForTradeListMenuItems @ items
-	.4byte 0x081AED51 @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
+	.4byte ListMenuDefaultCursorMoveFunc @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
 	.4byte 0 @ itemPrintFunc
 	.2byte 3 @ totalItems
 	.2byte 3 @ maxShowed
@@ -2066,7 +2066,7 @@ sWindowTemplate_TradingBoardRequestType:
 	.2byte 0x0001 @ baseBlock
 
 sTradingBoardTypes: @ 0x082C21A4
-	.4byte 0x082EBC88 @ TYPE_NORMAL
+	.4byte gTypeNames @ TYPE_NORMAL
 	.4byte 0
 	.4byte 0x082EBCBA @ TYPE_FIRE
 	.4byte 10
@@ -2100,13 +2100,13 @@ sTradingBoardTypes: @ 0x082C21A4
 	.4byte 8
 	.4byte 0x082EBCDD @ TYPE_DARK
 	.4byte 17
-	.4byte 0x082C1D50 @ sText_Exit
+	.4byte gText_Rom_2C1D50 @ sText_Exit
 	.4byte 18
 	.globl gUnknown_82C2234
 gUnknown_82C2234: @ 0x082C2234
 sMenuTemplate_TradingBoardRequestType:
 	.4byte sTradingBoardTypes @ items
-	.4byte 0x081AED51 @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
+	.4byte ListMenuDefaultCursorMoveFunc @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
 	.4byte 0 @ itemPrintFunc
 	.2byte 18 @ totalItems
 	.2byte 6 @ maxShowed
@@ -2151,14 +2151,14 @@ sTradeBoardListMenuItems: @ 0x082C225C
 	.4byte 6
 	.4byte 0x082C0640 @ offer 7
 	.4byte 7
-	.4byte 0x082C1D54 @ sText_Exit2
+	.4byte gText_Rom_2C1D54 @ sText_Exit2
 	.4byte 8
 	.globl gUnknown_82C22AC
 gUnknown_82C22AC: @ 0x082C22AC
 sTradeBoardListMenuTemplate:
 	.4byte sTradeBoardListMenuItems @ items
-	.4byte 0x081AED51 @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
-	.4byte 0x080176B1 @ TradeBoardListMenuItemPrintFunc + 1 @ itemPrintFunc
+	.4byte ListMenuDefaultCursorMoveFunc @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
+	.4byte sub_080176B0 @ TradeBoardListMenuItemPrintFunc + 1 @ itemPrintFunc
 	.2byte 10 @ totalItems
 	.2byte 6 @ maxShowed
 	.byte 0x00, 0x00, 0x0C, 0x01, 0xE1, 0xDF, 0x01, 0x01 @ packed window/cursor/font fields
@@ -2208,8 +2208,8 @@ sEmptyListMenuItems: @ 0x082C22CC
 
 sEmptyListMenuTemplate:
 	.4byte sEmptyListMenuItems @ items
-	.4byte 0x081AED51 @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
-	.4byte 0x080175ED @ ItemPrintFunc_EmptyList + 1 @ itemPrintFunc
+	.4byte ListMenuDefaultCursorMoveFunc @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
+	.4byte nullsub_89 @ ItemPrintFunc_EmptyList + 1 @ itemPrintFunc
 	.2byte 16 @ totalItems
 	.2byte 4 @ maxShowed
 	.byte 0x00, 0x00, 0x08, 0x01, 0x20, 0x31, 0x41, 0x01 @ packed window/cursor/font fields
@@ -2219,87 +2219,129 @@ sUnionRoomPlayer_DummyRfu:
 	.space 0x18, 0
 
 sAcceptedActivityIds_SingleBattle: @ 0x082C237C
-	.byte 0x01, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "あ"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_DoubleBattle: @ 0x082C2380
-	.byte 0x02, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "い"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_MultiBattle: @ 0x082C2384
-	.byte 0x03, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "う"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_Trade: @ 0x082C2388
-	.byte 0x04, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "え"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_PokemonJump: @ 0x082C238C
-	.byte 0x09, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "け"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_BerryCrush: @ 0x082C2390
-	.byte 0x0A, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "こ"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_BerryPicking: @ 0x082C2394
-	.byte 0x0B, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "さ"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_WonderCard: @ 0x082C2398
-	.byte 0x06, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "か"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_WonderNews: @ 0x082C239C
-	.byte 0x07, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "き"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_Resume: @ 0x082C23A0
-	.byte 0x40, 0x41, 0x44, 0x45, 0x48, 0x51, 0x52, 0x53, 0x54, 0xFF
+	@ semanticized-mass: charmap string (10 bytes including EOS)
+	.string "ぞだでどぶアイウエ"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_Init: @ 0x082C23AC
-	.byte 0x0C, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "し"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_Unk11: @ 0x082C23B0
-	.byte 0x01, 0x02, 0x03, 0x04, 0x09, 0x0A, 0x0B, 0x06, 0x07, 0x0D, 0xFF
+	@ semanticized-mass: charmap string (11 bytes including EOS)
+	.string "あいうえけこさかきす"
+	.byte EOS
 	.space 1, 0 @ alignment
 
 sAcceptedActivityIds_RecordCorner: @ 0x082C23BC
-	.byte 0x0F, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "そ"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_BerryBlender: @ 0x082C23C0
-	.byte 0x10, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "た"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_CoolContest: @ 0x082C23C4
-	.byte 0x17, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "ぬ"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_BeautyContest: @ 0x082C23C8
-	.byte 0x18, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "ね"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_CuteContest: @ 0x082C23CC
-	.byte 0x19, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "の"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_SmartContest: @ 0x082C23D0
-	.byte 0x1A, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "は"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_ToughContest: @ 0x082C23D4
-	.byte 0x1B, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "ひ"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_BattleTower: @ 0x082C23D8
-	.byte 0x1C, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "ふ"
+	.byte EOS
 	.space 2, 0 @ alignment
 
 sAcceptedActivityIds_BattleTowerOpen: @ 0x082C23DC
-	.byte 0x0E, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "せ"
+	.byte EOS
 	.space 2, 0 @ alignment
 	.globl gUnknown_82C23E0
 gUnknown_82C23E0: @ 0x082C23E0

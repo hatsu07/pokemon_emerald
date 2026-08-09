@@ -83,11 +83,11 @@ sAnims_SmokescreenImpact: @ 0x082ED000
 gUnknown_82ED010: @ 0x082ED010
 sSmokescreenImpactSpriteTemplate:
 	.2byte 0xD6EB, 0xD6EB
-	.4byte 0x082ECFB8 @ OAM
-	.4byte 0x082ED000 @ anims
+	.4byte sOamData_SmokescreenImpact @ OAM
+	.4byte sAnims_SmokescreenImpact @ anims
 	.4byte 0x00000000 @ images
-	.4byte 0x082BF310 @ affineAnims
-	.4byte 0x08074DBD @ callback
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte sub_08074DBC @ callback
 
 	.globl gUnknown_82ED028
 gUnknown_82ED028: @ 0x082ED028
@@ -106,8 +106,8 @@ gUnknown_82ED038: @ 0x082ED038
 	.globl gSpriteTemplate_EnemyShadow
 gSpriteTemplate_EnemyShadow:
 	.2byte 0xD759, 0xD6FF
-	.4byte 0x082ED030 @ OAM
-	.4byte 0x082BF304 @ anims
+	.4byte sOamData_EnemyShadow @ OAM
+	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0x00000000 @ images
-	.4byte 0x082BF310 @ affineAnims
-	.4byte 0x0805EA65 @ callback
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte SpriteCB_SetInvisible @ callback

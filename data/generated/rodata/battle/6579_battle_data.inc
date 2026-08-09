@@ -316,7 +316,7 @@ sBattleTvPointsStatusDamage: @ 0x085D3210
 	.2byte 3 @ Toxic
 	.2byte 3 @ Burn
 	.2byte 3 @ Nightmare
-	.2byte 3 @ trapping move
+	.2byte MOVE_POINTS_RARE @ trapping move
 
 sBattleTvPointsStatus: @ 0x085D321E
 	.2byte 5 @ attraction

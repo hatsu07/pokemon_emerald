@@ -292,99 +292,100 @@ gTrainerFrontAnimsPtrTable:
 gUnknown_82D8D70: @ 0x082D8D70
 	.globl gTrainerFrontPicCoords
 gTrainerFrontPicCoords:
-	.byte 8, 1, 0, 0 @ Hiker: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ AquaGruntM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PokemonBreederF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ CoolTrainerM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ BirdKeeper: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Collector: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ AquaGruntF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SwimmerM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ MagmaGruntM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ ExpertM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ AquaAdminM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ BlackBelt: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ AquaAdminF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ AquaLeaderArchie: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ HexManiac: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ AromaLady: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ RuinManiac: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Interviewer: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ TuberF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ TuberM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ CoolTrainerF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Lady: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Beauty: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ RichBoy: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ ExpertF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Pokemaniac: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ MagmaGruntF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Guitarist: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Kindler: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Camper: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Picnicker: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ BugManiac: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PokemonBreederM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PsychicM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PsychicF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Gentleman: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ EliteFourSidney: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ EliteFourPhoebe: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ EliteFourGlacia: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ EliteFourDrake: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderRoxanne: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderBrawly: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderWattson: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderFlannery: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderNorman: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderWinona: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderTateAndLiza: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderJuan: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SchoolKidM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SchoolKidF: size=8, y_offset=1, ABI pad
-	.byte 8, 2, 0, 0 @ SrAndJr: size=8, y_offset=2, ABI pad
-	.byte 8, 2, 0, 0 @ PokefanM: size=8, y_offset=2, ABI pad
-	.byte 8, 1, 0, 0 @ PokefanF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Youngster: size=8, y_offset=1, ABI pad
-	.byte 8, 2, 0, 0 @ ChampionWallace: size=8, y_offset=2, ABI pad
-	.byte 8, 1, 0, 0 @ Fisherman: size=8, y_offset=1, ABI pad
-	.byte 8, 2, 0, 0 @ CyclingTriathleteM: size=8, y_offset=2, ABI pad
-	.byte 8, 1, 0, 0 @ CyclingTriathleteF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ RunningTriathleteM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ RunningTriathleteF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SwimmingTriathleteM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SwimmingTriathleteF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ DragonTamer: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ NinjaBoy: size=8, y_offset=1, ABI pad
-	.byte 8, 2, 0, 0 @ BattleGirl: size=8, y_offset=2, ABI pad
-	.byte 8, 1, 0, 0 @ ParasolLady: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SwimmerF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Twins: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Sailor: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ MagmaAdmin: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Wally: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Brendan: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ May: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ BugCatcher: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PokemonRangerM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PokemonRangerF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ MagmaLeaderMaxie: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Lass: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ YoungCouple: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ OldCouple: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SisAndBro: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Steven: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SalonMaidenAnabel: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ DomeAceTucker: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PalaceMavenSpenser: size=8, y_offset=1, ABI pad
-	.byte 8, 2, 0, 0 @ ArenaTycoonGreta: size=8, y_offset=2, ABI pad
-	.byte 8, 1, 0, 0 @ FactoryHeadNoland: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PikeQueenLucy: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PyramidKingBrandon: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Red: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Leaf: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ RubySapphireBrendan: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ RubySapphireMay: size=8, y_offset=1, ABI pad
+	@ semanticized-mass: resolved embedded ROM pointers
+	.byte 0x08
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.byte 0x02, 0x00, 0x00, 0x08, 0x02, 0x00, 0x00, 0x08
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.byte 0x02, 0x00, 0x00, 0x08
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.byte 0x02, 0x00, 0x00, 0x08
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.byte 0x02, 0x00, 0x00, 0x08
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.byte 0x02, 0x00, 0x00, 0x08
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.4byte _start + 1 @ ROM pointer 0x08000001
+	.byte 0x01, 0x00, 0x00
 
 	.globl gUnknown_82D8EE4
 gUnknown_82D8EE4: @ 0x082D8EE4
@@ -774,7 +775,7 @@ sAnimCmd_Brendan_1: @ 0x082D94B4
 	.2byte 0x0002, 0x0018 @ frame=2, duration=24
 	.2byte 0x0000, 0x0009 @ frame=0, duration=9
 	.2byte 0x0003, 0x0032 @ frame=3, duration=50
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sAnimCmd_May_Steven_1: @ 0x082D94CC
 	.2byte 0x0000, 0x0018 @ frame=0, duration=24
@@ -782,7 +783,7 @@ sAnimCmd_May_Steven_1: @ 0x082D94CC
 	.2byte 0x0002, 0x0018 @ frame=2, duration=24
 	.2byte 0x0000, 0x0009 @ frame=0, duration=9
 	.2byte 0x0003, 0x0032 @ frame=3, duration=50
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sAnimCmd_Wally_1: @ 0x082D94E4
 	.2byte 0x0000, 0x0018 @ frame=0, duration=24
@@ -790,7 +791,7 @@ sAnimCmd_Wally_1: @ 0x082D94E4
 	.2byte 0x0002, 0x0018 @ frame=2, duration=24
 	.2byte 0x0000, 0x0009 @ frame=0, duration=9
 	.2byte 0x0003, 0x0032 @ frame=3, duration=50
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sAnimCmd_Red_1: @ 0x082D94FC
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -798,7 +799,7 @@ sAnimCmd_Red_1: @ 0x082D94FC
 	.2byte 0x0003, 0x0006 @ frame=3, duration=6
 	.2byte 0x0004, 0x0018 @ frame=4, duration=24
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sAnimCmd_Leaf_1: @ 0x082D9514
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -806,7 +807,7 @@ sAnimCmd_Leaf_1: @ 0x082D9514
 	.2byte 0x0003, 0x0006 @ frame=3, duration=6
 	.2byte 0x0004, 0x0018 @ frame=4, duration=24
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sAnimCmd_RubySapphireBrendan_1: @ 0x082D952C
 	.2byte 0x0000, 0x0018 @ frame=0, duration=24
@@ -814,7 +815,7 @@ sAnimCmd_RubySapphireBrendan_1: @ 0x082D952C
 	.2byte 0x0002, 0x0018 @ frame=2, duration=24
 	.2byte 0x0000, 0x0009 @ frame=0, duration=9
 	.2byte 0x0003, 0x0032 @ frame=3, duration=50
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sAnimCmd_RubySapphireMay_1: @ 0x082D9544
 	.2byte 0x0000, 0x0018 @ frame=0, duration=24
@@ -822,7 +823,7 @@ sAnimCmd_RubySapphireMay_1: @ 0x082D9544
 	.2byte 0x0002, 0x0018 @ frame=2, duration=24
 	.2byte 0x0000, 0x0009 @ frame=0, duration=9
 	.2byte 0x0003, 0x0032 @ frame=3, duration=50
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sTrainerBackAnims_Brendan: @ 0x082D955C
 	.4byte sAnim_GeneralFrame3

@@ -15,7 +15,9 @@ gUnknown_85CCDF8: @ 0x085CCDF8
 	.globl gUnknown_85CCDFB
 gUnknown_85CCDFB: @ 0x085CCDFB
 	@ Replaced baserom.gba range: offset=0x5CCDFB, size=0x3
-	.byte 0x06, 0x02, 0xFF
+	@ semanticized-mass: charmap string (3 bytes including EOS)
+	.string "かい"
+	.byte EOS
 	.globl gUnknown_85CCDFE
 gUnknown_85CCDFE: @ 0x085CCDFE
 

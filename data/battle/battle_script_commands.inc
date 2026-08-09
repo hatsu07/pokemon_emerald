@@ -281,66 +281,66 @@ sCriticalHitChance:
 	.globl gUnknown_82ECAB8
 gUnknown_82ECAB8: @ 0x082ECAB8
 sStatusFlagsForMoveEffects:
-	.4byte 0x00000000 @ move effect 0
-	.4byte 0x00000007 @ move effect 1
-	.4byte 0x00000008 @ move effect 2
-	.4byte 0x00000010 @ move effect 3
-	.4byte 0x00000020 @ move effect 4
-	.4byte 0x00000040 @ move effect 5
-	.4byte 0x00000080 @ move effect 6
-	.4byte 0x00000007 @ move effect 7
-	.4byte 0x00000008 @ move effect 8
-	.4byte 0x00000000 @ move effect 9
-	.4byte 0x00000070 @ move effect 10
-	.4byte 0x00000000 @ move effect 11
+	.4byte MOVE_POINTS_COMBO @ move effect 0
+	.4byte MOVE_POINTS_DMG @ move effect 1
+	.4byte MOVE_ICE_PUNCH @ move effect 2
+	.4byte MOVE_GUST @ move effect 3
+	.4byte MOVE_HORN_DRILL @ move effect 4
+	.4byte MOVE_PECK @ move effect 5
+	.4byte MOVE_CLAMP @ move effect 6
+	.4byte MOVE_POINTS_DMG @ move effect 7
+	.4byte MOVE_ICE_PUNCH @ move effect 8
+	.4byte MOVE_POINTS_COMBO @ move effect 9
+	.4byte MOVE_BARRIER @ move effect 10
+	.4byte MOVE_POINTS_COMBO @ move effect 11
 	.4byte 0x00001000 @ move effect 12
 	.4byte 0x0000E000 @ move effect 13
-	.4byte 0x00000000 @ move effect 14
-	.4byte 0x00000000 @ move effect 15
-	.4byte 0x00000000 @ move effect 16
-	.4byte 0x00000000 @ move effect 17
-	.4byte 0x00000000 @ move effect 18
-	.4byte 0x00000000 @ move effect 19
-	.4byte 0x00000000 @ move effect 20
-	.4byte 0x00000000 @ move effect 21
-	.4byte 0x00000000 @ move effect 22
-	.4byte 0x00000000 @ move effect 23
-	.4byte 0x00000000 @ move effect 24
-	.4byte 0x00000000 @ move effect 25
-	.4byte 0x00000000 @ move effect 26
-	.4byte 0x00000000 @ move effect 27
-	.4byte 0x00000000 @ move effect 28
+	.4byte MOVE_POINTS_COMBO @ move effect 14
+	.4byte MOVE_POINTS_COMBO @ move effect 15
+	.4byte MOVE_POINTS_COMBO @ move effect 16
+	.4byte MOVE_POINTS_COMBO @ move effect 17
+	.4byte MOVE_POINTS_COMBO @ move effect 18
+	.4byte MOVE_POINTS_COMBO @ move effect 19
+	.4byte MOVE_POINTS_COMBO @ move effect 20
+	.4byte MOVE_POINTS_COMBO @ move effect 21
+	.4byte MOVE_POINTS_COMBO @ move effect 22
+	.4byte MOVE_POINTS_COMBO @ move effect 23
+	.4byte MOVE_POINTS_COMBO @ move effect 24
+	.4byte MOVE_POINTS_COMBO @ move effect 25
+	.4byte MOVE_POINTS_COMBO @ move effect 26
+	.4byte MOVE_POINTS_COMBO @ move effect 27
+	.4byte MOVE_POINTS_COMBO @ move effect 28
 	.4byte 0x00400000 @ move effect 29
-	.4byte 0x00000000 @ move effect 30
-	.4byte 0x00000000 @ move effect 31
+	.4byte MOVE_POINTS_COMBO @ move effect 30
+	.4byte MOVE_POINTS_COMBO @ move effect 31
 	.4byte 0x04000000 @ move effect 32
-	.4byte 0x08000000 @ move effect 33
-	.4byte 0x00000000 @ move effect 34
-	.4byte 0x00000000 @ move effect 35
-	.4byte 0x00000000 @ move effect 36
-	.4byte 0x00000000 @ move effect 37
-	.4byte 0x00000000 @ move effect 38
-	.4byte 0x00000000 @ move effect 39
-	.4byte 0x00000000 @ move effect 40
-	.4byte 0x00000000 @ move effect 41
-	.4byte 0x00000000 @ move effect 42
-	.4byte 0x00000000 @ move effect 43
-	.4byte 0x00000000 @ move effect 44
-	.4byte 0x00000000 @ move effect 45
-	.4byte 0x00000000 @ move effect 46
-	.4byte 0x00000000 @ move effect 47
-	.4byte 0x00000000 @ move effect 48
-	.4byte 0x00000000 @ move effect 49
-	.4byte 0x00000000 @ move effect 50
-	.4byte 0x00000000 @ move effect 51
-	.4byte 0x00000000 @ move effect 52
+	.4byte _start @ move effect 33
+	.4byte MOVE_POINTS_COMBO @ move effect 34
+	.4byte MOVE_POINTS_COMBO @ move effect 35
+	.4byte MOVE_POINTS_COMBO @ move effect 36
+	.4byte MOVE_POINTS_COMBO @ move effect 37
+	.4byte MOVE_POINTS_COMBO @ move effect 38
+	.4byte MOVE_POINTS_COMBO @ move effect 39
+	.4byte MOVE_POINTS_COMBO @ move effect 40
+	.4byte MOVE_POINTS_COMBO @ move effect 41
+	.4byte MOVE_POINTS_COMBO @ move effect 42
+	.4byte MOVE_POINTS_COMBO @ move effect 43
+	.4byte MOVE_POINTS_COMBO @ move effect 44
+	.4byte MOVE_POINTS_COMBO @ move effect 45
+	.4byte MOVE_POINTS_COMBO @ move effect 46
+	.4byte MOVE_POINTS_COMBO @ move effect 47
+	.4byte MOVE_POINTS_COMBO @ move effect 48
+	.4byte MOVE_POINTS_COMBO @ move effect 49
+	.4byte MOVE_POINTS_COMBO @ move effect 50
+	.4byte MOVE_POINTS_COMBO @ move effect 51
+	.4byte MOVE_POINTS_COMBO @ move effect 52
 	.4byte 0x00000C00 @ move effect 53
-	.4byte 0x00000000 @ move effect 54
-	.4byte 0x00000000 @ move effect 55
-	.4byte 0x00000000 @ move effect 56
-	.4byte 0x00000000 @ move effect 57
-	.4byte 0x00000000 @ move effect 58
-	.4byte 0x00000000 @ move effect 59
+	.4byte MOVE_POINTS_COMBO @ move effect 54
+	.4byte MOVE_POINTS_COMBO @ move effect 55
+	.4byte MOVE_POINTS_COMBO @ move effect 56
+	.4byte MOVE_POINTS_COMBO @ move effect 57
+	.4byte MOVE_POINTS_COMBO @ move effect 58
+	.4byte MOVE_POINTS_COMBO @ move effect 59
 
 	.globl gUnknown_82ECBA8
 gUnknown_82ECBA8: @ 0x082ECBA8
@@ -417,11 +417,11 @@ sOamData_MonIconOnLvlUpBanner: @ 0x082ECD3C
 gUnknown_82ECD44: @ 0x082ECD44
 sSpriteTemplate_MonIconOnLvlUpBanner:
 	.2byte 0xD75A, 0xD75A @ TAG_LVLUP_BANNER_MON_ICON
-	.4byte 0x082ECD3C @ sOamData_MonIconOnLvlUpBanner
-	.4byte 0x082BF304 @ gDummySpriteAnimTable
+	.4byte sOamData_MonIconOnLvlUpBanner @ sOamData_MonIconOnLvlUpBanner
+	.4byte gDummySpriteAnimTable @ gDummySpriteAnimTable
 	.4byte 0x00000000 @ NULL
-	.4byte 0x082BF310 @ gDummySpriteAffineAnimTable
-	.4byte 0x0804F05D @ SpriteCB_MonIconOnLvlUpBanner
+	.4byte gDummySpriteAffineAnimTable @ gDummySpriteAffineAnimTable
+	.4byte SpriteCB_MonIconOnLvlUpBox @ SpriteCB_MonIconOnLvlUpBanner
 
 	.globl gUnknown_82ECD5C
 gUnknown_82ECD5C: @ 0x082ECD5C

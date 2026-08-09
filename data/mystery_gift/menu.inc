@@ -1790,10 +1790,10 @@ sSpriteTemplate_StampShadow:
 	.2byte 0x8000 @ tileTag
 	.2byte 0x8000 @ paletteTag
 	.4byte 0x084FD040 @ gOamData_AffineOff_ObjNormal_32x16
-	.4byte 0x082BF304 @ gDummySpriteAnimTable
+	.4byte gDummySpriteAnimTable @ gDummySpriteAnimTable
 	.4byte 0 @ images
-	.4byte 0x082BF310 @ gDummySpriteAffineAnimTable
-	.4byte 0x08007141 @ SpriteCallbackDummy
+	.4byte gDummySpriteAffineAnimTable @ gDummySpriteAffineAnimTable
+	.4byte SpriteCallbackDummy @ SpriteCallbackDummy
 	.globl gUnknown_82C428C
 gUnknown_82C428C: @ 0x082C428C
 sCardGraphics:
@@ -2085,14 +2085,14 @@ sAssert_MEventServerMainSeqInRange:
 	.globl gUnknown_82C4B34
 gUnknown_82C4B34: @ 0x082C4B34
 sMEventClientMainSeqFuncs:
-	.4byte 0x0801D3E1 @ Client_Init
-	.4byte 0x0801D409 @ Client_Done
-	.4byte 0x0801D40D @ Client_Recv
-	.4byte 0x0801D42D @ Client_Send
-	.4byte 0x0801D44D @ Client_Run
-	.4byte 0x0801D621 @ Client_Wait
-	.4byte 0x0801D639 @ Client_RunMysteryEventScript
-	.4byte 0x0801D671 @ Client_RunBufferScript
+	.4byte mainseq_0 @ Client_Init
+	.4byte mainseq_1 @ Client_Done
+	.4byte mainseq_2 @ Client_Recv
+	.4byte mainseq_3 @ Client_Send
+	.4byte mainseq_4 @ Client_Run
+	.4byte mainseq_5 @ Client_Wait
+	.4byte mainseq_6 @ Client_RunMysteryEventScript
+	.4byte mainseq_7 @ Client_RunBufferScript
 sText_CanceledReadingCard: @ 0x082C4B54
 	.string "カードの　よみこみを\nキャンセル　しました$"
 	.space 2, 0 @ alignment

@@ -1,7 +1,9 @@
 	.globl gUnknown_8566D42
 gUnknown_8566D42: @ 0x08566D42
 	@ Replaced baserom.gba range: offset=0x566D42, size=0x4
-	.byte 0xBC, 0xC1, 0xC7, 0xFF
+	@ semanticized-mass: charmap string (4 bytes including EOS)
+	.string "BGM"
+	.byte EOS
 	.globl gUnknown_8566D46
 gUnknown_8566D46: @ 0x08566D46
 	@ Decoded text from ROM range: offset=0x566D46, size=0x4

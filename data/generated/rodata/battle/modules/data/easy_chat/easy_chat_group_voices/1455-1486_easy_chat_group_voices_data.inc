@@ -9,7 +9,9 @@ gText_Rom_575C03: @ 0x08575C03
 	.space 0x4 - (. - gText_Rom_575C03)
 	.endif
 	@ Replaced baserom.gba range: offset=0x575C07, size=0x2
-	.byte 0xAE, 0xFF
+	@ semanticized-mass: charmap string (2 bytes including EOS)
+	.string "_"
+	.byte EOS
 
 	@ src/data/easy_chat/easy_chat_group_voices.h:52 easy_chat_group_voices_line_52 (+3 aliases)
 	.globl gText_Rom_575C09
