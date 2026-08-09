@@ -164,7 +164,7 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
 
     elseif("${RELATIVE_OUTPUT}" MATCHES
-            "^build/graphics/(pokemon/egg/(hatch|shard)|interface/blank|battle_interface/unused_status_summary)\\.4bpp$")
+            "^build/graphics/(pokemon/egg/(hatch|shard)|interface/blank|battle_interface/unused_status_summary|trade/early_tiles)\\.4bpp$")
         string(REGEX REPLACE
             "^build/graphics/(.+)\\.4bpp$" "\\1"
             STEM_PATH "${RELATIVE_OUTPUT}")
