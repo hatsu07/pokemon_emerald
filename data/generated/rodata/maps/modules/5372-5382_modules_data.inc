@@ -8,10 +8,10 @@ gText_Rom_5CB025: @ 0x085CB025
 	.if (. - gText_Rom_5CB025) < 0x3
 	.space 0x3 - (. - gText_Rom_5CB025)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CB028, size=0x2
-	@ semanticized-mass: charmap string (2 bytes including EOS)
-	.string ","
-	.byte EOS
+	@ analyzed canonical ROM range 0x085CB028-0x085CB029
+sAnalyzedData_085CB028: @ 0x085CB028
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	.byte 0xB8, 0xFF
 	.globl gUnknown_85CB02A
 gUnknown_85CB02A: @ 0x085CB02A
 

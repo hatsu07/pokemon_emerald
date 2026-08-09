@@ -19,10 +19,10 @@ gText_Rom_5763AA: @ 0x085763AA
 	.if (. - gText_Rom_5763AA) < 0x5
 	.space 0x5 - (. - gText_Rom_5763AA)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5763AF, size=0x5
+	@ analyzed canonical ROM range 0x085763AF-0x085763B3
+sAnalyzedData_085763AF: @ 0x085763AF
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x06, 0xFF, 0x06, 0x02, 0xFF
-
-	@ src/data/easy_chat/easy_chat_group_endings.h:28 easy_chat_group_endings_line_28
 	.globl gText_Rom_5763B4
 gText_Rom_5763B4: @ 0x085763B4
 	.string "かしら$"
@@ -93,10 +93,10 @@ gText_Rom_5763D7: @ 0x085763D7
 	.if (. - gText_Rom_5763D7) < 0x4
 	.space 0x4 - (. - gText_Rom_5763D7)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5763DB, size=0xA
+	@ analyzed canonical ROM range 0x085763DB-0x085763E4
+sAnalyzedData_085763DB: @ 0x085763DB
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x3F, 0xAB, 0xFF, 0x40, 0xAB, 0xFF, 0x10, 0xFF, 0x41, 0xFF
-
-	@ src/data/easy_chat/easy_chat_group_endings.h:112 easy_chat_group_endings_line_112
 	.globl gText_Rom_5763E5
 gText_Rom_5763E5: @ 0x085763E5
 	.string "だからね$"

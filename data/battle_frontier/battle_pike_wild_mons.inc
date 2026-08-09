@@ -18,6 +18,7 @@ sBattlePikeLevel50WildMons_Group4::
   pikewildmon SPECIES_MILOTIC, 4, MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_SURF
   pikewildmon SPECIES_WOBBUFFET, 5, MOVE_COUNTER, MOVE_MIRROR_COAT, MOVE_SAFEGUARD, MOVE_DESTINY_BOND
 
+	.globl sBattlePikeLevel50WildMonPointers
 sBattlePikeLevel50WildMonPointers::
   .4byte sBattlePikeLevel50WildMons_Group1
   .4byte sBattlePikeLevel50WildMons_Group2
@@ -44,6 +45,7 @@ sBattlePikeOpenLevelWildMons_Group4::
   pikewildmon SPECIES_MILOTIC, 4, MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_ICE_BEAM
   pikewildmon SPECIES_WOBBUFFET, 5, MOVE_COUNTER, MOVE_MIRROR_COAT, MOVE_SAFEGUARD, MOVE_ENCORE
 
+	.globl sBattlePikeOpenLevelWildMonPointers
 sBattlePikeOpenLevelWildMonPointers::
   .4byte sBattlePikeOpenLevelWildMons_Group1
   .4byte sBattlePikeOpenLevelWildMons_Group2

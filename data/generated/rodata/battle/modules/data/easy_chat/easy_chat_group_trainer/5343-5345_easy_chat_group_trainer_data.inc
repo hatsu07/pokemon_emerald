@@ -8,10 +8,10 @@ gText_Rom_5CAFA3: @ 0x085CAFA3
 	.if (. - gText_Rom_5CAFA3) < 0x5
 	.space 0x5 - (. - gText_Rom_5CAFA3)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CAFA8, size=0x7
+	@ analyzed canonical ROM range 0x085CAFA8-0x085CAFAE
+sAnalyzedData_085CAFA8: @ 0x085CAFA8
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x9C, 0x77, 0x70, 0xA0, 0x95, 0x19, 0x00
-
-	@ src/data/easy_chat/easy_chat_group_trainer.h:70 easy_chat_group_trainer_line_70 (+1 aliases)
 	.globl gText_Rom_5CAFAF
 gText_Rom_5CAFAF: @ 0x085CAFAF
 	.string "トレーナー$"

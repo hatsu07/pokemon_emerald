@@ -8,10 +8,10 @@ gText_Rom_57C9A9: @ 0x0857C9A9
 	.if (. - gText_Rom_57C9A9) < 0x4
 	.space 0x4 - (. - gText_Rom_57C9A9)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57C9AD, size=0x2
+	@ analyzed canonical ROM range 0x0857C9AD-0x0857C9AE
+sAnalyzedData_0857C9AD: @ 0x0857C9AD
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x66, 0x97
-
-	@ src/pokemon_storage_system.c:8102 pokemon_storage_system_line_8102
 	.globl gText_Rom_57C9AF
 gText_Rom_57C9AF: @ 0x0857C9AF
 	.string "シティ$"
@@ -21,10 +21,10 @@ gText_Rom_57C9AF: @ 0x0857C9AF
 	.if (. - gText_Rom_57C9AF) < 0x4
 	.space 0x4 - (. - gText_Rom_57C9AF)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57C9B3, size=0x3
+	@ analyzed canonical ROM range 0x0857C9B3-0x0857C9B5
+sAnalyzedData_0857C9B3: @ 0x0857C9B3
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x6A, 0x65, 0x91
-
-	@ src/pokemon_storage_system.c:8102 pokemon_storage_system_line_8102
 	.globl gText_Rom_57C9B6
 gText_Rom_57C9B6: @ 0x0857C9B6
 	.string "シティ$"
@@ -34,10 +34,10 @@ gText_Rom_57C9B6: @ 0x0857C9B6
 	.if (. - gText_Rom_57C9B6) < 0x4
 	.space 0x4 - (. - gText_Rom_57C9B6)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57C9BA, size=0xA
+	@ analyzed canonical ROM range 0x0857C9BA-0x0857C9C3
+sAnalyzedData_0857C9BA: @ 0x0857C9BA
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x5C, 0x55, 0x7E, 0x60, 0x53, 0x7E, 0xFF, 0x58, 0x61, 0x96
-
-	@ src/pokemon_storage_system.c:8102 pokemon_storage_system_line_8102
 	.globl gText_Rom_57C9C4
 gText_Rom_57C9C4: @ 0x0857C9C4
 	.string "シティ$"
@@ -47,10 +47,10 @@ gText_Rom_57C9C4: @ 0x0857C9C4
 	.if (. - gText_Rom_57C9C4) < 0x4
 	.space 0x4 - (. - gText_Rom_57C9C4)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57C9C8, size=0x4
+	@ analyzed canonical ROM range 0x0857C9C8-0x0857C9CB
+sAnalyzedData_0857C9C8: @ 0x0857C9C8
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x60, 0x6F, 0x71, 0x5C
-
-	@ src/pokemon_storage_system.c:8102 pokemon_storage_system_line_8102
 	.globl gText_Rom_57C9CC
 gText_Rom_57C9CC: @ 0x0857C9CC
 	.string "シティ$"
@@ -60,10 +60,10 @@ gText_Rom_57C9CC: @ 0x0857C9CC
 	.if (. - gText_Rom_57C9CC) < 0x4
 	.space 0x4 - (. - gText_Rom_57C9CC)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57C9D0, size=0x4
+	@ analyzed canonical ROM range 0x0857C9D0-0x0857C9D3
+sAnalyzedData_0857C9D0: @ 0x0857C9D0
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x5E, 0x57, 0x61, 0x58
-
-	@ src/pokemon_storage_system.c:8102 pokemon_storage_system_line_8102
 	.globl gText_Rom_57C9D4
 gText_Rom_57C9D4: @ 0x0857C9D4
 	.string "シティ$"
@@ -73,11 +73,11 @@ gText_Rom_57C9D4: @ 0x0857C9D4
 	.if (. - gText_Rom_57C9D4) < 0x4
 	.space 0x4 - (. - gText_Rom_57C9D4)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57C9D8, size=0x13
+	@ analyzed canonical ROM range 0x0857C9D8-0x0857C9EA
+sAnalyzedData_0857C9D8: @ 0x0857C9D8
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x89, 0x7A, 0x7E, 0x3D, 0x1F, 0xFF, 0x5E, 0x57, 0x54, 0x52, 0x0A, 0x03, 0x3A, 0x2E, 0xFF, 0x74
 	.byte 0x6F, 0x98, 0x57
-
-	@ src/pokemon_storage_system.c:8102 pokemon_storage_system_line_8102
 	.globl gText_Rom_57C9EB
 gText_Rom_57C9EB: @ 0x0857C9EB
 	.string "シティ$"
@@ -87,7 +87,9 @@ gText_Rom_57C9EB: @ 0x0857C9EB
 	.if (. - gText_Rom_57C9EB) < 0x4
 	.space 0x4 - (. - gText_Rom_57C9EB)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57C9EF, size=0xB0
+	@ analyzed canonical ROM range 0x0857C9EF-0x0857CA9E
+sAnalyzedData_0857C9EF: @ 0x0857C9EF
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xA5, 0x46, 0x2E, 0x00, 0x45, 0x03, 0x2B, 0xFF, 0xA2, 0xA1, 0x46, 0x2E, 0x00, 0x45, 0x03, 0x2B
 	.byte 0xFF, 0xA2, 0x46, 0x2E, 0x00, 0x45, 0x03, 0x2B, 0xFF, 0xA3, 0x46, 0x2E, 0x00, 0x45, 0x03, 0x2B
 	.byte 0xFF, 0xA4, 0x46, 0x2E, 0x00, 0x45, 0x03, 0x2B, 0xFF, 0xA5, 0x46, 0x2E, 0x00, 0x45, 0x03, 0x2B
@@ -99,4 +101,3 @@ gText_Rom_57C9EB: @ 0x0857C9EB
 	.byte 0x2E, 0x00, 0x45, 0x03, 0x2B, 0xFF, 0xA2, 0xA6, 0x46, 0x2E, 0x00, 0x45, 0x03, 0x2B, 0xFF, 0xA2
 	.byte 0xA7, 0x46, 0x2E, 0x00, 0x45, 0x03, 0x2B, 0xFF, 0xA2, 0xA8, 0x46, 0x2E, 0x00, 0x45, 0x03, 0x2B
 	.byte 0xFF, 0xA2, 0xA9, 0x46, 0x2E, 0x00, 0x45, 0x03, 0x2B, 0xFF, 0xA2, 0xAA, 0x46, 0x2E, 0x00, 0x0D
-

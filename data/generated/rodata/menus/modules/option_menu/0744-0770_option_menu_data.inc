@@ -36,11 +36,15 @@ gText_Rom_537380: @ 0x08537380
 	.set gText_Rom_537386, gText_Rom_537380 + 0x6
 	.globl gUnknown_853738A
 gUnknown_853738A: @ 0x0853738A
-	@ Replaced baserom.gba range: offset=0x53738A, size=0x9
+	@ analyzed canonical ROM range 0x0853738A-0x08537392
+sAnalyzedData_0853738A: @ 0x0853738A
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFC, 0x01, 0x06, 0xFC, 0x03, 0x07, 0x20, 0x29, 0xFF
 	.globl gUnknown_8537393
 gUnknown_8537393: @ 0x08537393
-	@ Replaced baserom.gba range: offset=0x537393, size=0xA
+	@ analyzed canonical ROM range 0x08537393-0x0853739C
+sAnalyzedData_08537393: @ 0x08537393
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFC, 0x01, 0x06, 0xFC, 0x03, 0x07, 0x20, 0x15, 0x02, 0xFF
 	.globl gUnknown_853739D
 gUnknown_853739D: @ 0x0853739D

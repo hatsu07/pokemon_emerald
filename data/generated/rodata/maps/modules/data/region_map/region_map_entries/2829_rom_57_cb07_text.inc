@@ -8,5 +8,7 @@ gText_Rom_57CB07: @ 0x0857CB07
 	.if (. - gText_Rom_57CB07) < 0xa
 	.space 0xa - (. - gText_Rom_57CB07)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57CB11, size=0x6
+	@ analyzed canonical ROM range 0x0857CB11-0x0857CB16
+sAnalyzedData_0857CB11: @ 0x0857CB11
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x7B, 0x59, 0xA0, 0x64, 0x41, 0x2E

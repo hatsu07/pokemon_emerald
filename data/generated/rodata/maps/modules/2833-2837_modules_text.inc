@@ -19,11 +19,11 @@ gText_Rom_57CB34: @ 0x0857CB34
 	.if (. - gText_Rom_57CB34) < 0x8
 	.space 0x8 - (. - gText_Rom_57CB34)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57CB3C, size=0x13
+	@ analyzed canonical ROM range 0x0857CB3C-0x0857CB4E
+sAnalyzedData_0857CB3C: @ 0x0857CB3C
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x52, 0x7C, 0x74, 0x6F, 0x64, 0x7E, 0x68, 0x79, 0xFF, 0x1C, 0x10, 0x3B, 0x3D, 0x1F, 0xFF, 0x9F
 	.byte 0x59, 0x73, 0x7E
-
-	@ src/data/easy_chat/easy_chat_group_events.h:25 gEasyChatWord_Tower (+1 aliases)
 	.globl gText_Rom_57CB4F
 gText_Rom_57CB4F: @ 0x0857CB4F
 	.string "タワー$"
@@ -33,6 +33,7 @@ gText_Rom_57CB4F: @ 0x0857CB4F
 	.if (. - gText_Rom_57CB4F) < 0x4
 	.space 0x4 - (. - gText_Rom_57CB4F)
 	.endif
-	@ Replaced baserom.gba range: offset=0x57CB53, size=0x4
+	@ analyzed canonical ROM range 0x0857CB53-0x0857CB56
+sAnalyzedData_0857CB53: @ 0x0857CB53
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x6A, 0x65, 0x91, 0x19
-

@@ -10,7 +10,9 @@ gText_Rom_5C985C: @ 0x085C985C
 	.set gText_Rom_5C9860, gText_Rom_5C985C + 0x4
 	.globl gUnknown_85C9864
 gUnknown_85C9864: @ 0x085C9864
-	@ Replaced baserom.gba range: offset=0x5C9864, size=0x5
+	@ analyzed canonical ROM range 0x085C9864-0x085C9868
+sAnalyzedData_085C9864: @ 0x085C9864
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF9, 0x05, 0xFD, 0x02, 0xFF
 	.globl gUnknown_85C9869
 gUnknown_85C9869: @ 0x085C9869

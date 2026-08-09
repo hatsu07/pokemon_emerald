@@ -1,9 +1,9 @@
 	.globl gUnknown_8566D42
 gUnknown_8566D42: @ 0x08566D42
-	@ Replaced baserom.gba range: offset=0x566D42, size=0x4
-	@ semanticized-mass: charmap string (4 bytes including EOS)
-	.string "BGM"
-	.byte EOS
+	@ analyzed canonical ROM range 0x08566D42-0x08566D45
+sAnalyzedData_08566D42: @ 0x08566D42
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	.byte 0xBC, 0xC1, 0xC7, 0xFF
 	.globl gUnknown_8566D46
 gUnknown_8566D46: @ 0x08566D46
 	@ Decoded text from ROM range: offset=0x566D46, size=0x4
@@ -18,10 +18,13 @@ gUnknown_8566D56: @ 0x08566D56
 	.string "R…DRIVERーTEST$"
 	.globl gUnknown_8566D64
 gUnknown_8566D64: @ 0x08566D64
-	@ Replaced baserom.gba range: offset=0x566D64, size=0x10
-	.byte 0x00, 0x01, 0x01, 0x1C, 0x12, 0x0F, 0x14, 0x00, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ analyzed canonical ROM range 0x08566D64-0x08566D73
+sAnalyzedData_08566D64: @ 0x08566D64
+	@ structured u16 table (semantic role inferred only to scalar width)
+	.2byte 0x0100, 0x1C01, 0x0F12, 0x0014, 0x00FF, 0x0000, 0x0000, 0x0000
 	.globl gUnknown_8566D74
 gUnknown_8566D74: @ 0x08566D74
-	@ Replaced baserom.gba range: offset=0x566D74, size=0x6
+	@ analyzed canonical ROM range 0x08566D74-0x08566D79
+sAnalyzedData_08566D74: @ 0x08566D74
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xBC, 0x9A, 0x60, 0x7E, 0x44, 0x00
-

@@ -44,10 +44,10 @@ gText_Rom_5C8F18: @ 0x085C8F18
 	.if (. - gText_Rom_5C8F18) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F18)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5C8F1C, size=0x8
+	@ analyzed canonical ROM range 0x085C8F1C-0x085C8F23
+sAnalyzedData_085C8F1C: @ 0x085C8F1C
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0xFF, 0x51, 0x7E, 0xFF, 0xFF, 0xFF, 0xFF
-
-	@ src/main_menu.c:507 main_menu_line_507
 	.globl gText_Rom_5C8F24
 gText_Rom_5C8F24: @ 0x085C8F24
 	.string "エミィ$"
@@ -92,10 +92,10 @@ gText_Rom_5C8F34: @ 0x085C8F34
 	.if (. - gText_Rom_5C8F34) < 0x5
 	.space 0x5 - (. - gText_Rom_5C8F34)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5C8F39, size=0xD
+	@ analyzed canonical ROM range 0x085C8F39-0x085C8F45
+sAnalyzedData_085C8F39: @ 0x085C8F39
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0x5B, 0x54, 0xFF, 0xFF, 0xFF, 0xFF, 0x5D, 0x52, 0xFF, 0xFF, 0xFF, 0xFF
-
-	@ src/main_menu.c:513 main_menu_line_513
 	.globl gText_Rom_5C8F46
 gText_Rom_5C8F46: @ 0x085C8F46
 	.string "ジュリ$"
@@ -153,10 +153,10 @@ gText_Rom_5C8F5E: @ 0x085C8F5E
 	.if (. - gText_Rom_5C8F5E) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8F5E)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5C8F62, size=0x8
+	@ analyzed canonical ROM range 0x085C8F62-0x085C8F69
+sAnalyzedData_085C8F62: @ 0x085C8F62
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0xFF, 0x6B, 0x65, 0xFF, 0xFF, 0xFF, 0xFF
-
-	@ src/main_menu.c:519 main_menu_line_519
 	.globl gText_Rom_5C8F6A
 gText_Rom_5C8F6A: @ 0x085C8F6A
 	.string "マキコ$"

@@ -19,10 +19,10 @@ gText_Rom_5AA45A: @ 0x085AA45A
 	.if (. - gText_Rom_5AA45A) < 0x12
 	.space 0x12 - (. - gText_Rom_5AA45A)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5AA46C, size=0x10
+	@ analyzed canonical ROM range 0x085AA46C-0x085AA47B
+sAnalyzedData_085AA46C: @ 0x085AA46C
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFD, 0x0F, 0x1A, 0x00, 0xFD, 0x16, 0x2D, 0xFE, 0x1B, 0x2B, 0x50, 0x13, 0x07, 0x10, 0xAB, 0xFF
-
-	@ src/battle_message.c:477 battle_message_line_477
 	.globl gText_Rom_5AA47C
 gText_Rom_5AA47C: @ 0x085AA47C
 	.string "ここちよい かおりが ひろがった!$"
@@ -32,12 +32,12 @@ gText_Rom_5AA47C: @ 0x085AA47C
 	.if (. - gText_Rom_5AA47C) < 0x12
 	.space 0x12 - (. - gText_Rom_5AA47C)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5AA48E, size=0x27
+	@ analyzed canonical ROM range 0x085AA48E-0x085AA4B4
+sAnalyzedData_085AA48E: @ 0x085AA48E
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x0A, 0x0A, 0x44, 0x1A, 0x00, 0x45, 0x03, 0x39, 0x2D, 0x00, 0x12, 0x06, 0x03, 0x0A, 0x14, 0x1A
 	.byte 0xFE, 0x44, 0x07, 0x1F, 0x0E, 0x2E, 0xAB, 0xFC, 0x08, 0x40, 0xFF, 0xFD, 0x16, 0x1A, 0x00, 0xFD
 	.byte 0x13, 0x16, 0x1A, 0xFE, 0xFD, 0x00, 0xFF
-
-	@ src/battle_message.c:481 battle_message_line_481
 	.globl gText_Rom_5AA4B5
 gText_Rom_5AA4B5: @ 0x085AA4B5
 	.string "{B_SCR_NAME_WITH_PREFIX}は {B_LAST_ITEM}を つかって\nはりきり だした!$"
@@ -47,11 +47,10 @@ gText_Rom_5AA4B5: @ 0x085AA4B5
 	.if (. - gText_Rom_5AA4B5) < 0x17
 	.space 0x17 - (. - gText_Rom_5AA4B5)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5AA4CC, size=0x4
+	@ analyzed canonical ROM range 0x085AA4CC-0x085AA4CF
+sAnalyzedData_085AA4CC: @ 0x085AA4CC
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFD, 0x0F, 0x1A, 0x00
-
-	@ src/battle_message.c:490 battle_message_line_490
-	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5AA4D0
 gText_Rom_5AA4D0: @ 0x085AA4D0
 	.string "しゅうちゅうりょくが\nとぎれて わざが だせなかった!$"

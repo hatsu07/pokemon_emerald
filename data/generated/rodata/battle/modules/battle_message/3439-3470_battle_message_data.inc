@@ -54,17 +54,11 @@ gText_Rom_5AB0C8: @ 0x085AB0C8
 	.endif
 	.globl gUnknown_85AB0D0
 gUnknown_85AB0D0: @ 0x085AB0D0
-	@ Replaced baserom.gba range: offset=0x5AB0D0, size=0x19
-	@ semanticized-mass: resolved embedded ROM pointers
-	.4byte gText_Rom_5AB0AC @ ROM pointer 0x085AB0AC
-	.4byte gText_Rom_5AB0B3 @ ROM pointer 0x085AB0B3
-	.4byte gText_Rom_5AB0BA @ ROM pointer 0x085AB0BA
-	.4byte gText_Rom_5AB0C1 @ ROM pointer 0x085AB0C1
-	.4byte gText_Rom_5AB0C8 @ ROM pointer 0x085AB0C8
-	.byte 0xFD, 0x23, 0x1A, 0x00, 0xFE
-
-	@ src/battle_message.c:417 battle_message_line_417
-	@ Preserve exact byte length: semantic suffix text pointer.
+	@ analyzed canonical ROM range 0x085AB0D0-0x085AB0E8
+sAnalyzedData_085AB0D0: @ 0x085AB0D0
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	.byte 0xAC, 0xB0, 0x5A, 0x08, 0xB3, 0xB0, 0x5A, 0x08, 0xBA, 0xB0, 0x5A, 0x08, 0xC1, 0xB0, 0x5A, 0x08
+	.byte 0xC8, 0xB0, 0x5A, 0x08, 0xFD, 0x23, 0x1A, 0x00, 0xFE
 	.globl gText_Rom_5AB0E9
 gText_Rom_5AB0E9: @ 0x085AB0E9
 	.string "{B_LAST_ITEM}を つかった！$"
@@ -127,13 +121,11 @@ gText_Rom_5AB128: @ 0x085AB128
 	.if (. - gText_Rom_5AB128) < 0x13
 	.space 0x13 - (. - gText_Rom_5AB128)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5AB13B, size=0x18
-	@ semanticized-mass: charmap string (24 bytes including EOS)
-	.string "よけられた！\nこいつは　つかまりそうにないぞ！"
-	.byte EOS
-
-	@ src/battle_message.c:421 battle_message_line_421
-	@ Preserve exact byte length: semantic suffix text pointer.
+	@ analyzed canonical ROM range 0x085AB13B-0x085AB152
+sAnalyzedData_085AB13B: @ 0x085AB13B
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	.byte 0x26, 0x09, 0x27, 0x2A, 0x10, 0xAB, 0xFE, 0x0A, 0x02, 0x12, 0x1A, 0x00, 0x12, 0x06, 0x1F, 0x28
+	.byte 0x0F, 0x03, 0x16, 0x15, 0x02, 0x40, 0xAB, 0xFF
 	.globl gText_Rom_5AB153
 gText_Rom_5AB153: @ 0x085AB153
 	.string "ポケモンに\nうまく あたらなかった!$"

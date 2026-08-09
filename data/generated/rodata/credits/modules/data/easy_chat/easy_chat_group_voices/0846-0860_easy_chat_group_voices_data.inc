@@ -10,10 +10,10 @@ gText_Rom_566D8F: @ 0x08566D8F
 	.endif
 	.globl gUnknown_8566D93
 gUnknown_8566D93: @ 0x08566D93
-	@ Replaced baserom.gba range: offset=0x566D93, size=0x6
+	@ analyzed canonical ROM range 0x08566D93-0x08566D98
+sAnalyzedData_08566D93: @ 0x08566D93
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xD0, 0xC9, 0xC6, 0xCF, 0xC7, 0xBF
-
-	@ src/data/easy_chat/easy_chat_group_voices.h:40 easy_chat_group_voices_line_40
 	.globl gText_Rom_566D99
 gText_Rom_566D99: @ 0x08566D99
 	.string "………$"
@@ -25,10 +25,10 @@ gText_Rom_566D99: @ 0x08566D99
 	.endif
 	.globl gUnknown_8566D9D
 gUnknown_8566D9D: @ 0x08566D9D
-	@ Replaced baserom.gba range: offset=0x566D9D, size=0x6
+	@ analyzed canonical ROM range 0x08566D9D-0x08566DA2
+sAnalyzedData_08566D9D: @ 0x08566D9D
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xCA, 0xBB, 0xC8, 0xCA, 0xC9, 0xCE
-
-	@ src/data/easy_chat/easy_chat_group_voices.h:40 easy_chat_group_voices_line_40
 	.globl gText_Rom_566DA3
 gText_Rom_566DA3: @ 0x08566DA3
 	.string "………$"
@@ -40,10 +40,10 @@ gText_Rom_566DA3: @ 0x08566DA3
 	.endif
 	.globl gUnknown_8566DA7
 gUnknown_8566DA7: @ 0x08566DA7
-	@ Replaced baserom.gba range: offset=0x566DA7, size=0x6
+	@ analyzed canonical ROM range 0x08566DA7-0x08566DAC
+sAnalyzedData_08566DA7: @ 0x08566DA7
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xCA, 0xC3, 0xCE, 0xBD, 0xC2, 0xB0
-
-	@ src/data/easy_chat/easy_chat_group_voices.h:40 easy_chat_group_voices_line_40
 	.globl gText_Rom_566DAD
 gText_Rom_566DAD: @ 0x08566DAD
 	.string "………$"
@@ -55,10 +55,10 @@ gText_Rom_566DAD: @ 0x08566DAD
 	.endif
 	.globl gUnknown_8566DB1
 gUnknown_8566DB1: @ 0x08566DB1
-	@ Replaced baserom.gba range: offset=0x566DB1, size=0x6
+	@ analyzed canonical ROM range 0x08566DB1-0x08566DB6
+sAnalyzedData_08566DB1: @ 0x08566DB1
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xC6, 0xBF, 0xC8, 0xC1, 0xCE, 0xC2
-
-	@ src/data/easy_chat/easy_chat_group_voices.h:40 easy_chat_group_voices_line_40
 	.globl gText_Rom_566DB7
 gText_Rom_566DB7: @ 0x08566DB7
 	.string "………$"
@@ -78,10 +78,10 @@ gUnknown_8566DC5: @ 0x08566DC5
 	.string "PROGRESS…$"
 	.globl gUnknown_8566DCF
 gUnknown_8566DCF: @ 0x08566DCF
-	@ Replaced baserom.gba range: offset=0x566DCF, size=0x6
+	@ analyzed canonical ROM range 0x08566DCF-0x08566DD4
+sAnalyzedData_08566DCF: @ 0x08566DCF
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xBD, 0xC2, 0xC9, 0xCC, 0xCF, 0xCD
-
-	@ src/data/easy_chat/easy_chat_group_voices.h:40 easy_chat_group_voices_line_40
 	.globl gText_Rom_566DD5
 gText_Rom_566DD5: @ 0x08566DD5
 	.string "………$"
@@ -101,10 +101,10 @@ gUnknown_8566DE3: @ 0x08566DE3
 	.string "さいせいちゆう…$"
 	.globl gUnknown_8566DEC
 gUnknown_8566DEC: @ 0x08566DEC
-	@ Replaced baserom.gba range: offset=0x566DEC, size=0x5
+	@ analyzed canonical ROM range 0x08566DEC-0x08566DF0
+sAnalyzedData_08566DEC: @ 0x08566DEC
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x1A, 0x2E, 0x13, 0x2E, 0xB0
-
-	@ src/data/easy_chat/easy_chat_group_voices.h:40 easy_chat_group_voices_line_40
 	.globl gText_Rom_566DF1
 gText_Rom_566DF1: @ 0x08566DF1
 	.string "………$"
@@ -116,10 +116,10 @@ gText_Rom_566DF1: @ 0x08566DF1
 	.endif
 	.globl gUnknown_8566DF5
 gUnknown_8566DF5: @ 0x08566DF5
-	@ Replaced baserom.gba range: offset=0x566DF5, size=0x5
+	@ analyzed canonical ROM range 0x08566DF5-0x08566DF9
+sAnalyzedData_08566DF5: @ 0x08566DF5
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x5D, 0x63, 0x7A, 0x55, 0xB0
-
-	@ src/data/easy_chat/easy_chat_group_voices.h:40 easy_chat_group_voices_line_40
 	.globl gText_Rom_566DFA
 gText_Rom_566DFA: @ 0x08566DFA
 	.string "………$"

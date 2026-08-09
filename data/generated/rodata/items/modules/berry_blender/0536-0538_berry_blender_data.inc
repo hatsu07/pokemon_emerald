@@ -16,7 +16,9 @@ gText_Rom_30F6AE: @ 0x0830F6AE
 	.string "タクマシ$"
 	.globl gUnknown_830F6FB
 gUnknown_830F6FB: @ 0x0830F6FB
-	@ Replaced baserom.gba range: offset=0x30F6FB, size=0x2
+	@ analyzed canonical ROM range 0x0830F6FB-0x0830F6FC
+sAnalyzedData_0830F6FB: @ 0x0830F6FB
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFB, 0xFF
 	.globl gUnknown_830F6FD
 gUnknown_830F6FD: @ 0x0830F6FD
@@ -31,7 +33,8 @@ gText_Rom_30F6FD: @ 0x0830F6FD
 	.if (. - gText_Rom_30F6FD) < 0x7
 	.space 0x7 - (. - gText_Rom_30F6FD)
 	.endif
-	@ Replaced baserom.gba range: offset=0x30F704, size=0x1E
+	@ analyzed canonical ROM range 0x0830F704-0x0830F721
+sAnalyzedData_0830F704: @ 0x0830F704
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x13, 0x12, 0x3D, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x07, 0x14, 0xFF, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x5C, 0x8A, 0x79, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-

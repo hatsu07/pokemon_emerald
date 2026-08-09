@@ -8,8 +8,7 @@ gText_Rom_5FB8F1: @ 0x085FB8F1
 	.if (. - gText_Rom_5FB8F1) < 0xe
 	.space 0xe - (. - gText_Rom_5FB8F1)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5FB8FF, size=0x3
-	@ semanticized-mass: charmap string (3 bytes including EOS)
-	.string "1F"
-	.byte EOS
-
+	@ analyzed canonical ROM range 0x085FB8FF-0x085FB901
+sAnalyzedData_085FB8FF: @ 0x085FB8FF
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	.byte 0xA2, 0xC0, 0xFF

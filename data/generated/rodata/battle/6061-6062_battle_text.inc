@@ -6,7 +6,9 @@ gUnknown_85CC339: @ 0x085CC339
 	.string "ひき$"
 	.globl gUnknown_85CC33C
 gUnknown_85CC33C: @ 0x085CC33C
-	@ Replaced baserom.gba range: offset=0x5CC33C, size=0x5
+	@ analyzed canonical ROM range 0x085CC33C-0x085CC340
+sAnalyzedData_085CC33C: @ 0x085CC33C
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF0, 0xFF, 0x13, 0x2E, 0xFF
 	.globl gUnknown_85CC341
 gUnknown_85CC341: @ 0x085CC341

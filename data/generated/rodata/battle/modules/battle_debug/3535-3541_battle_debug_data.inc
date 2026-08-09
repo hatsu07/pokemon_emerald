@@ -41,11 +41,6 @@ gText_Rom_5ABC1B: @ 0x085ABC1B
 	.if (. - gText_Rom_5ABC1B) < 0x5
 	.space 0x5 - (. - gText_Rom_5ABC1B)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5ABC20, size=0x18
-	@ semanticized-mass: resolved embedded ROM pointers
-	.byte 0x07, 0xBC, 0x5A, 0x08
-	.4byte gText_Rom_5ABC16 @ ROM pointer 0x085ABC16
-	.4byte gText_Rom_5ABC0C @ ROM pointer 0x085ABC0C
-	.4byte gText_Rom_5ABC1B @ ROM pointer 0x085ABC1B
-	.4byte gText_Rom_5ABC11 @ ROM pointer 0x085ABC11
-	.4byte gText_Rom_5AB06D @ ROM pointer 0x085AB06D
+	@ analyzed canonical ROM range 0x085ABC20-0x085ABC37
+sSpriteTemplate_085ABC20: @ 0x085ABC20
+	rodata_sprite_template 0xBC07, 0x085A, gText_Rom_5ABC16, gText_Rom_5ABC0C, gText_Rom_5ABC1B, gText_Rom_5ABC11, gText_Rom_5AB06D

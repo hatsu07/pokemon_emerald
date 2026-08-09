@@ -1,11 +1,12 @@
 	.globl gUnknown_85FB90C
 gUnknown_85FB90C: @ 0x085FB90C
-	@ Replaced baserom.gba range: offset=0x5FB90C, size=0x10
-	@ semanticized-mass: resolved embedded ROM pointers
-	.byte 0xFF, 0xB8, 0x5F, 0x08
-	.4byte gText_Rom_5FB902 @ ROM pointer 0x085FB902
-	.4byte gText_Rom_5FB905 @ ROM pointer 0x085FB905
-	.byte 0x08, 0xB9, 0x5F, 0x08
+	@ analyzed canonical ROM range 0x085FB90C-0x085FB91B
+sAnalyzedData_085FB90C: @ 0x085FB90C
+	@ pointer/nullable table
+	.4byte 0x085FB8FF @ +0x0
+	.4byte gText_Rom_5FB902 @ +0x4
+	.4byte gText_Rom_5FB905 @ +0x8
+	.4byte 0x085FB908 @ +0xC
 	.globl gUnknown_85FB91C
 gUnknown_85FB91C: @ 0x085FB91C
 	.4byte TrainerHillStartChallenge

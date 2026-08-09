@@ -1,5 +1,8 @@
 	.globl gUnknown_8262393
 gUnknown_8262393: @ 0x08262393
-	@ Replaced baserom.gba range: offset=0x262393, size=0x9
-	.byte 0x0F, 0x00, 0x9C, 0x23, 0x26, 0x08, 0x09, 0x03, 0x02
-
+	@ analyzed canonical ROM range 0x08262393-0x0826239B
+sAnalyzedEventData_08262393: @ 0x08262393
+EventScript_08262393: @ 0x08262393
+	loadword 0x00, gText_Rom_26239C
+	callstd 0x03
+	end

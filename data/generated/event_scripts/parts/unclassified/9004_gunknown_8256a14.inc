@@ -1,5 +1,8 @@
 	.globl gUnknown_8256A14
 gUnknown_8256A14: @ 0x08256A14
-	@ Original ROM bytes: 0x256A14-0x256A1C (0x9 bytes)
-	.byte 0x0F, 0x00, 0x1D, 0x6A, 0x25, 0x08, 0x09, 0x03, 0x02
-
+	@ analyzed canonical ROM range 0x08256A14-0x08256A1C
+sAnalyzedEventData_08256A14: @ 0x08256A14
+EventScript_08256A14: @ 0x08256A14
+	loadword 0x00, gText_Rom_256A1D
+	callstd 0x03
+	end

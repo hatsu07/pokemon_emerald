@@ -1,10 +1,14 @@
 	.globl gUnknown_85C940E
 gUnknown_85C940E: @ 0x085C940E
-	@ Replaced baserom.gba range: offset=0x5C940E, size=0x3
+	@ analyzed canonical ROM range 0x085C940E-0x085C9410
+sAnalyzedData_085C940E: @ 0x085C940E
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF9, 0x05, 0xFF
 	.globl gUnknown_85C9411
 gUnknown_85C9411: @ 0x085C9411
-	@ Replaced baserom.gba range: offset=0x5C9411, size=0x9
+	@ analyzed canonical ROM range 0x085C9411-0x085C9419
+sAnalyzedData_085C9411: @ 0x085C9411
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF9, 0x08, 0xFF, 0xF9, 0x04, 0xFF, 0xF9, 0x03, 0xFF
 	.globl gUnknown_85C941A
 gUnknown_85C941A: @ 0x085C941A

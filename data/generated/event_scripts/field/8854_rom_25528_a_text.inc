@@ -9,7 +9,8 @@ gText_Rom_25528A: @ 0x0825528A
 	.if (. - gText_Rom_25528A) < 0x27
 	.space 0x27 - (. - gText_Rom_25528A)
 	.endif
-	@ Original ROM bytes: 0x2552B1-0x2552C4 (0x14 bytes)
-	@ semanticized-mass: charmap string (20 bytes including EOS)
-	.string "ところで…\nまだ　でんせつ　ききたい？"
-	.byte EOS
+	@ analyzed canonical ROM range 0x082552B1-0x082552C4
+sAnalyzedEventData_082552B1: @ 0x082552B1
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	.byte 0x14, 0x0A, 0x2B, 0x44, 0xB0, 0xFE, 0x1F, 0x41, 0x00, 0x44, 0x2E, 0x0E, 0x12, 0x00, 0x07, 0x07
+	.byte 0x10, 0x02, 0xAC, 0xFF

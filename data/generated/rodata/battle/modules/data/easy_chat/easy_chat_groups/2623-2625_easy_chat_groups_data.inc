@@ -19,5 +19,7 @@ gText_Rom_579EC4: @ 0x08579EC4
 	.if (. - gText_Rom_579EC4) < 0x4
 	.space 0x4 - (. - gText_Rom_579EC4)
 	.endif
-	@ Replaced baserom.gba range: offset=0x579EC8, size=0x3
+	@ analyzed canonical ROM range 0x08579EC8-0x08579ECA
+sAnalyzedData_08579EC8: @ 0x08579EC8
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x65, 0x53, 0x52

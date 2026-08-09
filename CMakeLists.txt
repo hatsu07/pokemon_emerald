@@ -147,6 +147,52 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     get_filename_component(OUTPUT_DIR "${OUTPUT_ABS}" DIRECTORY)
 
     if("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/analyzed/(.+)[.]4bpp[.]lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/analyzed/${STEM}.png")
+        set(LZ77_PLAN_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/analyzed/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${LZ77_PLAN_MANIFEST}"
+                --stem "${STEM}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${LZ77_PLAN_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/analyzed/(.+)\\.4bpp$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/analyzed/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/analyzed/(.+)\\.4bpp\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/analyzed/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}" --no-pad "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                    "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py" "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/pokemon/spinda/spots/(.+)\\.1bpp$")
         set(STEM "${CMAKE_MATCH_1}")
         set(INPUT_PNG

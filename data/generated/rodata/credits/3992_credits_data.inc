@@ -1,14 +1,20 @@
 	.globl gUnknown_85C8C08
 gUnknown_85C8C08: @ 0x085C8C08
-	@ Replaced baserom.gba range: offset=0x5C8C08, size=0x8
-	.byte 0xF4, 0x01, 0x00, 0x00, 0x61, 0x12, 0x00, 0x00
+	@ analyzed canonical ROM range 0x085C8C08-0x085C8C0F
+sAnalyzedData_085C8C08: @ 0x085C8C08
+	@ structured u16 table (semantic role inferred only to scalar width)
+	.2byte 0x01F4, 0x0000, 0x1261, 0x0000
 	.globl gUnknown_85C8C10
 gUnknown_85C8C10: @ 0x085C8C10
-	@ Replaced baserom.gba range: offset=0x5C8C10, size=0x10
-	.byte 0x00, 0x08, 0x02, 0x0D, 0x10, 0x0F, 0x01, 0x00, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ analyzed canonical ROM range 0x085C8C10-0x085C8C1F
+sAnalyzedData_085C8C10: @ 0x085C8C10
+	@ structured u16 table (semantic role inferred only to scalar width)
+	.2byte 0x0800, 0x0D02, 0x0F10, 0x0001, 0x00FF, 0x0000, 0x0000, 0x0000
 	.globl gUnknown_85C8C20
 gUnknown_85C8C20: @ 0x085C8C20
-	@ Replaced baserom.gba range: offset=0x5C8C20, size=0x4
+	@ analyzed canonical ROM range 0x085C8C20-0x085C8C23
+sAnalyzedData_085C8C20: @ 0x085C8C20
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x02, 0x03, 0x00
 	.globl gUnknown_85C8C24
 gUnknown_85C8C24: @ 0x085C8C24

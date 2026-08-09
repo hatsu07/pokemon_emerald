@@ -9,10 +9,10 @@ gText_Rom_5AA0C9: @ 0x085AA0C9
 	.if (. - gText_Rom_5AA0C9) < 0x15
 	.space 0x15 - (. - gText_Rom_5AA0C9)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5AA0DE, size=0x4
+	@ analyzed canonical ROM range 0x085AA0DE-0x085AA0E1
+sAnalyzedData_085AA0DE: @ 0x085AA0DE
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFD, 0x0F, 0x1A, 0x00
-
-	@ src/battle_message.c:323 battle_message_line_323
 	.globl gText_Rom_5AA0E2
 gText_Rom_5AA0E2: @ 0x085AA0E2
 	.string "{B_DEF_NAME_WITH_PREFIX}の\nしょうたいを みやぶった!$"
@@ -77,12 +77,12 @@ gText_Rom_5AA13C: @ 0x085AA13C
 	.if (. - gText_Rom_5AA13C) < 0x1e
 	.space 0x1e - (. - gText_Rom_5AA13C)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5AA15A, size=0x2D
+	@ analyzed canonical ROM range 0x085AA15A-0x085AA186
+sAnalyzedData_085AA15A: @ 0x085AA15A
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFD, 0x0F, 0x1A, 0x00, 0xFD, 0x10, 0x19, 0xFE, 0x1E, 0x3D, 0x36, 0x0A, 0x03, 0x06, 0x2D, 0x00
 	.byte 0x5A, 0x9C, 0xAE, 0x0C, 0x10, 0xAB, 0xFF, 0xFD, 0x0F, 0x1A, 0x00, 0xFD, 0x10, 0x19, 0xFE, 0xFD
 	.byte 0x00, 0x06, 0x27, 0x00, 0x06, 0x02, 0x1E, 0x03, 0x0B, 0x2A, 0x10, 0xAB, 0xFF
-
-	@ src/battle_message.c:331 battle_message_line_331
 	.globl gText_Rom_5AA187
 gText_Rom_5AA187: @ 0x085AA187
 	.string "{B_ATK_NAME_WITH_PREFIX}は\nやどりぎのタネを ふきとばした!$"

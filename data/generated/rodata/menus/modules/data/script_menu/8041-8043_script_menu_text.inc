@@ -19,5 +19,7 @@ gText_Rom_5FB905: @ 0x085FB905
 	.if (. - gText_Rom_5FB905) < 0x3
 	.space 0x3 - (. - gText_Rom_5FB905)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5FB908, size=0x4
+	@ analyzed canonical ROM range 0x085FB908-0x085FB90B
+sAnalyzedData_085FB908: @ 0x085FB908
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xA5, 0xC0, 0xFF, 0x00

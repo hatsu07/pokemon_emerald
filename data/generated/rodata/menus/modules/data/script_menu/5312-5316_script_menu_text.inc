@@ -8,10 +8,10 @@ gText_Rom_5CAEC7: @ 0x085CAEC7
 	.if (. - gText_Rom_5CAEC7) < 0x5
 	.space 0x5 - (. - gText_Rom_5CAEC7)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CAECC, size=0x5
+	@ analyzed canonical ROM range 0x085CAECC-0x085CAED0
+sAnalyzedData_085CAECC: @ 0x085CAECC
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0x02, 0x0E, 0x2E, 0x19
-
-	@ src/data/script_menu.h:450 gText_Record2 (+1 aliases)
 	.globl gText_Rom_5CAED1
 gText_Rom_5CAED1: @ 0x085CAED1
 	.string "きろく$"

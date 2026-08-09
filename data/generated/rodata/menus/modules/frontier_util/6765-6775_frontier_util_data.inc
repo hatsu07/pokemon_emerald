@@ -70,15 +70,16 @@ gUnknown_85DD53C: @ 0x085DD53C
 	.4byte gText_Rom_5DD50C
 	.globl gUnknown_85DD564
 gUnknown_85DD564: @ 0x085DD564
-	@ Replaced baserom.gba range: offset=0x5DD564, size=0x6
+	@ analyzed canonical ROM range 0x085DD564-0x085DD569
+sAnalyzedData_085DD564: @ 0x085DD564
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xA2, 0xFF, 0xA3, 0xFF, 0xA4, 0xFF
 	.globl gUnknown_85DD56A
 gUnknown_85DD56A: @ 0x085DD56A
-	@ Replaced baserom.gba range: offset=0x5DD56A, size=0xE
-	.byte 0x25, 0x03, 0x26, 0x03, 0x27, 0x03, 0x28, 0x03, 0x29, 0x03, 0x2A, 0x03, 0x2B, 0x03
-
-	@ asm/frontier_util.s:6932 CopyFrontierBrainText
-	@ Preserve exact byte length: internal label, semantic suffix text pointer.
+	@ analyzed canonical ROM range 0x085DD56A-0x085DD577
+sAnalyzedData_085DD56A: @ 0x085DD56A
+	@ structured u16 table (semantic role inferred only to scalar width)
+	.2byte 0x0325, 0x0326, 0x0327, 0x0328, 0x0329, 0x032A, 0x032B
 	.globl gText_Rom_5DD578
 gText_Rom_5DD578: @ 0x085DD578
 	.string "ばヘらくヌヘらくモホらくぁホらくKヘらくちホらくZホらくっヘらくゲヘらくビホらくぱホらくiヘらくにホらく{0xF7}{0x6E}らくクヘらくブヘらく6ホらくケホらくÜヘらくひホらくたマらくソヘらく♂ヘらくMホらくヌホらくけホらくみホらくぉマらくリaスく…aスくデaスくRaスく　あああああああああああああ　あああ　あああああああああ　ああああああああああ　あああ　あ　　　　あ　あああ　あああああああああああああ　ああああ　　ああ　　　あ　ああああ　あああああ　ああ　　　ああ　あ　　　　　　　　　　　　　　　　　　あああああああああああああ　　　あ　あ　ああ　あ　ああ　　あ　　ああああ　ああ　　あああ　あ　ああ　　　ああ　あ　あ　あ　あ$"

@@ -136,10 +136,10 @@ gText_Rom_5C8E5C: @ 0x085C8E5C
 	.space 0x1, 0x00
 	.globl gUnknown_85C8E68
 gUnknown_85C8E68: @ 0x085C8E68
-	@ Replaced baserom.gba range: offset=0x5C8E68, size=0xD
+	@ analyzed canonical ROM range 0x085C8E68-0x085C8E74
+sAnalyzedData_085C8E68: @ 0x085C8E68
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF8, 0x0A, 0x04, 0x27, 0x48, 0x00, 0xF8, 0x00, 0x12, 0x38, 0x00, 0xF8, 0x01
-
-	@ src/strings.c:1046 gText_Exit3 (+1 aliases)
 	.globl gText_Rom_5C8E75
 gText_Rom_5C8E75: @ 0x085C8E75
 	.string "おわる$"
@@ -152,10 +152,10 @@ gText_Rom_5C8E75: @ 0x085C8E75
 	.space 0x3, 0x00
 	.globl gUnknown_85C8E7C
 gUnknown_85C8E7C: @ 0x085C8E7C
-	@ Replaced baserom.gba range: offset=0x5C8E7C, size=0xA
-	.byte 0xF8, 0x0A, 0x04, 0x27, 0x48, 0x00, 0xF8, 0x00, 0xF8, 0x01
-
-	@ src/strings.c:1046 gText_Exit3 (+1 aliases)
+	@ analyzed canonical ROM range 0x085C8E7C-0x085C8E85
+sAnalyzedData_085C8E7C: @ 0x085C8E7C
+	@ structured u16 table (semantic role inferred only to scalar width)
+	.2byte 0x0AF8, 0x2704, 0x0048, 0x00F8, 0x01F8
 	.globl gText_Rom_5C8E86
 gText_Rom_5C8E86: @ 0x085C8E86
 	.string "おわる$"

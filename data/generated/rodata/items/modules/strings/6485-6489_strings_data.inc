@@ -14,7 +14,9 @@ gUnknown_85CCD9F: @ 0x085CCD9F
 	.string "{SE_M_HYPER_BEAM2}は　いっぱいです…$"
 	.globl gUnknown_85CCDAB
 gUnknown_85CCDAB: @ 0x085CCDAB
-	@ Replaced baserom.gba range: offset=0x5CCDAB, size=0x12
+	@ analyzed canonical ROM range 0x085CCDAB-0x085CCDBC
+sAnalyzedData_085CCDAB: @ 0x085CCDAB
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF7, 0x00, 0x37, 0x00, 0x02, 0x50, 0x4B, 0x02, 0x16, 0x15, 0x50, 0x13, 0x0C, 0x1F, 0x50, 0x10
 	.byte 0xAB, 0xFF
 	.globl gUnknown_85CCDBD

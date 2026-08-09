@@ -21,11 +21,10 @@ gText_Rom_5CC9FA: @ 0x085CC9FA
 	.set gUnknown_85CC9FC, gText_Rom_5CC9FA + 0x2
 	.globl gUnknown_85CCA04
 gUnknown_85CCA04: @ 0x085CCA04
-	@ Replaced baserom.gba range: offset=0x5CCA04, size=0x3
+	@ analyzed canonical ROM range 0x085CCA04-0x085CCA06
+sAnalyzedData_085CCA04: @ 0x085CCA04
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFD, 0x02, 0xFF
-
-	@ src/strings.c:773 gText_SpaceMin
-	@ Preserve exact byte length: internal label.
 	.globl gText_Rom_5CCA07
 gText_Rom_5CCA07: @ 0x085CCA07
 	.string " ふん$"

@@ -5,5 +5,10 @@
 	.include "constants/item.inc"
 	.include "constants/species.inc"
 	.include "asm/macros/event.inc"
+	.ifndef EOS
+	.set EOS, 0xFF @ charmap end-of-string terminator
+	.endif
+
+	.include "asm/macros/battle_anim_data.inc"
 
 	.set SCRCMD_SET_WILD_BATTLE, 0xB6

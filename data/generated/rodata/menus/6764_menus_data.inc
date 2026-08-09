@@ -1,5 +1,7 @@
 	.globl gUnknown_85DD504
 gUnknown_85DD504: @ 0x085DD504
-	@ Replaced baserom.gba range: offset=0x5DD504, size=0x8
-	.byte 0xF4, 0xD4, 0x5D, 0x08, 0xFC, 0xD4, 0x5D, 0x08
-
+	@ analyzed canonical ROM range 0x085DD504-0x085DD50B
+sAnalyzedData_085DD504: @ 0x085DD504
+	@ pointer/nullable table
+	.4byte 0x085DD4F4 @ +0x0
+	.4byte gText_Rom_5DD4FC @ +0x4

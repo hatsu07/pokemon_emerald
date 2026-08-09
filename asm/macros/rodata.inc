@@ -354,3 +354,24 @@
 	.byte \width, \height
 	.2byte 0
 	.endm
+
+@ ---------------------------------------------------------------------------
+@ Generic human-readable asset/structure helpers used by full ROM analysis.
+@ ---------------------------------------------------------------------------
+.macro rodata_rgb5 r, g, b
+    .2byte ((\r) & 31) | (((\g) & 31) << 5) | (((\b) & 31) << 10)
+.endm
+
+@ GBA text BG screen entry: tile[9:0], H/V flip, palette bank[3:0].
+.macro rodata_tilemap_entry tile, palette, hflip=0, vflip=0
+    .2byte ((\tile) & 0x3FF) | (((\hflip) & 1) << 10) | (((\vflip) & 1) << 11) | (((\palette) & 0xF) << 12)
+.endm
+
+@ struct ScrollArrowsTemplate (16 bytes).
+.macro rodata_scroll_arrows_template first_type, first_x, first_y, second_type, second_x, second_y, fully_up, fully_down, tile_tag, pal_tag, pal_num
+    .byte \first_type, \first_x, \first_y, \second_type, \second_x, \second_y
+    .2byte \fully_up, \fully_down
+    .2byte \tile_tag, \pal_tag
+    .byte \pal_num, 0
+.endm
+

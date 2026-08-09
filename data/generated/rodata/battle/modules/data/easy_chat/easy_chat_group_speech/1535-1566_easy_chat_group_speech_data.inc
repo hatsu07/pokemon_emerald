@@ -79,10 +79,10 @@ gText_Rom_576002: @ 0x08576002
 	.if (. - gText_Rom_576002) < 0x4
 	.space 0x4 - (. - gText_Rom_576002)
 	.endif
-	@ Replaced baserom.gba range: offset=0x576006, size=0xE
+	@ analyzed canonical ROM range 0x08576006-0x08576013
+sAnalyzedData_08576006: @ 0x08576006
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x09, 0x45, 0xFF, 0x0A, 0x0F, 0xFF, 0x0A, 0x14, 0xFF, 0x8C, 0xFF, 0x0B, 0x01, 0xFF
-
-	@ src/data/easy_chat/easy_chat_group_speech.h:94 easy_chat_group_speech_line_94
 	.globl gText_Rom_576014
 gText_Rom_576014: @ 0x08576014
 	.string "さっぱり$"

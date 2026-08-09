@@ -10,8 +10,10 @@ gText_Rom_4E8B84: @ 0x084E8B84
 	.endif
 	.globl gUnknown_84E8B94
 gUnknown_84E8B94: @ 0x084E8B94
-	@ Replaced baserom.gba range: offset=0x4E8B94, size=0x8
-	.byte 0x00, 0x01, 0x01, 0x08, 0x04, 0x0F, 0x08, 0x00
+	@ analyzed canonical ROM range 0x084E8B94-0x084E8B9B
+sAnalyzedData_084E8B94: @ 0x084E8B94
+	@ structured u16 table (semantic role inferred only to scalar width)
+	.2byte 0x0100, 0x0801, 0x0F04, 0x0008
 	.globl gUnknown_84E8B9C
 gUnknown_84E8B9C: @ 0x084E8B9C
 

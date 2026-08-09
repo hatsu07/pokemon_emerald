@@ -10,15 +10,21 @@ gText_Rom_30FC24: @ 0x0830FC24
 	.endif
 	.globl gUnknown_830FC29
 gUnknown_830FC29: @ 0x0830FC29
-	@ Replaced baserom.gba range: offset=0x30FC29, size=0x5
+	@ analyzed canonical ROM range 0x0830FC29-0x0830FC2D
+sAnalyzedData_0830FC29: @ 0x0830FC29
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x06, 0x06, 0x06, 0x06, 0x05
 	.globl gUnknown_830FC2E
 gUnknown_830FC2E: @ 0x0830FC2E
-	@ Replaced baserom.gba range: offset=0x30FC2E, size=0x5
+	@ analyzed canonical ROM range 0x0830FC2E-0x0830FC32
+sAnalyzedData_0830FC2E: @ 0x0830FC2E
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x03, 0x03, 0x03, 0x02, 0x02
 	.globl gUnknown_830FC33
 gUnknown_830FC33: @ 0x0830FC33
-	@ Replaced baserom.gba range: offset=0x30FC33, size=0x5
+	@ analyzed canonical ROM range 0x0830FC33-0x0830FC37
+sAnalyzedData_0830FC33: @ 0x0830FC33
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x03, 0x03, 0x03, 0x03, 0x02
 	.globl gUnknown_830FC38
 gUnknown_830FC38: @ 0x0830FC38

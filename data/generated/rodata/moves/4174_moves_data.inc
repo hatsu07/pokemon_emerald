@@ -1,6 +1,8 @@
 	.globl gUnknown_85C8FDB
 gUnknown_85C8FDB: @ 0x085C8FDB
-	@ Replaced baserom.gba range: offset=0x5C8FDB, size=0x2
+	@ analyzed canonical ROM range 0x085C8FDB-0x085C8FDC
+sAnalyzedData_085C8FDB: @ 0x085C8FDB
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x14, 0xFF
 	.globl gUnknown_85C8FDD
 gUnknown_85C8FDD: @ 0x085C8FDD

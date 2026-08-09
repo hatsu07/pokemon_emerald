@@ -8,12 +8,10 @@ gText_Rom_575C03: @ 0x08575C03
 	.if (. - gText_Rom_575C03) < 0x4
 	.space 0x4 - (. - gText_Rom_575C03)
 	.endif
-	@ Replaced baserom.gba range: offset=0x575C07, size=0x2
-	@ semanticized-mass: charmap string (2 bytes including EOS)
-	.string "_"
-	.byte EOS
-
-	@ src/data/easy_chat/easy_chat_group_voices.h:52 easy_chat_group_voices_line_52 (+3 aliases)
+	@ analyzed canonical ROM range 0x08575C07-0x08575C08
+sAnalyzedData_08575C07: @ 0x08575C07
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	.byte 0xAE, 0xFF
 	.globl gText_Rom_575C09
 gText_Rom_575C09: @ 0x08575C09
 	.string "ーーー$"

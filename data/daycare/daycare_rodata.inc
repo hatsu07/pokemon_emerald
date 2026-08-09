@@ -72,5 +72,7 @@ gUnknown_82FC0E8: @ 0x082FC0E8
 	.4byte gText_Rom_2FC0C4
 	.globl gUnknown_82FC0F8
 gUnknown_82FC0F8: @ 0x082FC0F8
-	@ Replaced baserom.gba range: offset=0x2FC0F8, size=0x2
+	@ analyzed canonical ROM range 0x082FC0F8-0x082FC0F9
+sAnalyzedData_082FC0F8: @ 0x082FC0F8
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFE, 0xFF

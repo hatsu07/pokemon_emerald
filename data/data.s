@@ -30,4 +30,6 @@
 	.include "asm/macros/window.inc"
 	.include "asm/macros/rodata.inc"
 
+	.include "data/generated/full_analysis_compat_symbols.inc"
+
 	.include "data/index.inc"

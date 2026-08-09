@@ -1,7 +1,9 @@
 	.globl gUnknown_85ABB43
 gUnknown_85ABB43: @ 0x085ABB43
-	@ Replaced baserom.gba range: offset=0x5ABB43, size=0xA
-	.byte 0xFD, 0x12, 0x1A, 0x00, 0x45, 0x03, 0x0D, 0x29, 0xAC, 0xFF
+	@ analyzed canonical ROM range 0x085ABB43-0x085ABB4C
+sAnalyzedData_085ABB43: @ 0x085ABB43
+	@ structured u16 table (semantic role inferred only to scalar width)
+	.2byte 0x12FD, 0x001A, 0x0345, 0x290D, 0xFFAC
 	.globl gUnknown_85ABB4D
 gUnknown_85ABB4D: @ 0x085ABB4D
 

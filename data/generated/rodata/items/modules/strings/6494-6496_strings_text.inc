@@ -14,10 +14,10 @@ gUnknown_85CCDF8: @ 0x085CCDF8
 	.string "てん$"
 	.globl gUnknown_85CCDFB
 gUnknown_85CCDFB: @ 0x085CCDFB
-	@ Replaced baserom.gba range: offset=0x5CCDFB, size=0x3
-	@ semanticized-mass: charmap string (3 bytes including EOS)
-	.string "かい"
-	.byte EOS
+	@ analyzed canonical ROM range 0x085CCDFB-0x085CCDFD
+sAnalyzedData_085CCDFB: @ 0x085CCDFB
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	.byte 0x06, 0x02, 0xFF
 	.globl gUnknown_85CCDFE
 gUnknown_85CCDFE: @ 0x085CCDFE
 

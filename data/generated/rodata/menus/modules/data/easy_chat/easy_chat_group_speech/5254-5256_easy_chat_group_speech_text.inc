@@ -8,10 +8,10 @@ gText_Rom_5CADA1: @ 0x085CADA1
 	.if (. - gText_Rom_5CADA1) < 0x4
 	.space 0x4 - (. - gText_Rom_5CADA1)
 	.endif
-	@ Replaced baserom.gba range: offset=0x5CADA5, size=0x5
+	@ analyzed canonical ROM range 0x085CADA5-0x085CADA9
+sAnalyzedData_085CADA5: @ 0x085CADA5
+	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x89, 0x7B, 0xAE, 0x96, 0x79
-
-	@ src/data/easy_chat/easy_chat_group_speech.h:322 easy_chat_group_speech_line_322
 	.globl gText_Rom_5CADAA
 gText_Rom_5CADAA: @ 0x085CADAA
 	.string "モード$"
