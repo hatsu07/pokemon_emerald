@@ -1055,29 +1055,24 @@ gMuddySlopeMetatileIdsByTimerBucket: @ 0x084E8A40
 gResetRtcScreenData_084E8A48:
 	.globl gUnknown_84E8A48
 gUnknown_84E8A48: @ 0x084E8A48
-	@ analyzed canonical ROM range 0x084E8A48-0x084E8A4B
-sAnalyzedData_084E8A48: @ 0x084E8A48
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xF0, 0x01, 0x00, 0x00
+gResetRtcBgTemplate: @ 0x084E8A48
+	bg_template 0, 0, 31, 0, 0, 0, 0
 	@ pret/pokeemerald-jp direct xref for 0x084E8A4C: reset_rtc_screen.s: sub_0809E920
 	.globl gResetRtcScreenData_084E8A4C
 gResetRtcScreenData_084E8A4C:
 	.globl gUnknown_84E8A4C
 gUnknown_84E8A4C: @ 0x084E8A4C
-	@ analyzed canonical ROM range 0x084E8A4C-0x084E8A63
-sAnalyzedData_084E8A4C: @ 0x084E8A4C
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0100, 0x1301, 0x0F09, 0x0155, 0x0400, 0x160F, 0x0F04, 0x00FD
-	.2byte 0x00FF, 0x0000, 0x0000, 0x0000
+gResetRtcWindowTemplates: @ 0x084E8A4C
+	window_template 0, 1, 1, 19, 9, 15, 0x155
+	window_template 0, 4, 15, 22, 4, 15, 0xFD
+	null_window_template
 	@ pret/pokeemerald-jp direct xref for 0x084E8A64: reset_rtc_screen.s: Task_ResetRtc_0
 	.globl gResetRtcScreenData_084E8A64
 gResetRtcScreenData_084E8A64:
 	.globl gUnknown_84E8A64
 gUnknown_84E8A64: @ 0x084E8A64
-	@ analyzed canonical ROM range 0x084E8A64-0x084E8A6B
-sAnalyzedData_084E8A64: @ 0x084E8A64
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0400, 0x1509, 0x0F02, 0x00D3
+gResetRtcChooseTimeWindowTemplate: @ 0x084E8A64
+	window_template 0, 4, 9, 21, 2, 15, 0xD3
 	.globl gUnknown_84E8A6C
 gUnknown_84E8A6C: @ 0x084E8A6C
 
@@ -1096,10 +1091,8 @@ gText_Rom_4E8A6C: @ 0x084E8A6C
 gResetRtcScreenData_084E8A6F:
 	.globl gUnknown_84E8A6F
 gUnknown_84E8A6F: @ 0x084E8A6F
-	@ analyzed canonical ROM range 0x084E8A6F-0x084E8A70
-sAnalyzedData_084E8A6F: @ 0x084E8A6F
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xF0, 0xFF
+gText_ResetRtcTimeColon: @ 0x084E8A6F
+	.string ":$"
 	.globl gUnknown_84E8A71
 gUnknown_84E8A71: @ 0x084E8A71
 
