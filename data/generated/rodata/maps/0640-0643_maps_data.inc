@@ -6179,19 +6179,17 @@ sMovementActionFuncs_WalkNormalRight: @ 0x084E6404
 gEventObjectMovementData_084E6410:
 	.globl gUnknown_84E6410
 gUnknown_84E6410: @ 0x084E6410
-	@ analyzed canonical ROM range 0x084E6410-0x084E6415
-sAnalyzedData_084E6410: @ 0x084E6410
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x00, 0x00, 0x01, 0x00, 0x01, 0x00
+gMovementActionCoordUpdateOffsets1: @ 0x084E6410
+	@ sub_08093934 indexes this as three signed halfwords.
+	.2byte 0, 1, 1
 	@ pret/pokeemerald-jp direct xref for 0x084E6416: event_object_movement.s: sub_08093A34
 	.globl gEventObjectMovementData_084E6416
 gEventObjectMovementData_084E6416:
 	.globl gUnknown_84E6416
 gUnknown_84E6416: @ 0x084E6416
-	@ analyzed canonical ROM range 0x084E6416-0x084E6A2F
-	@ semantic recovery: rodata; byte-verified against linked ROM
-sAnalyzedData_084E6416: @ 0x084E6416
-	.byte 0x00, 0x00, 0x00, 0x00, 0x01, 0x00
+gMovementActionCoordUpdateOffsets2: @ 0x084E6416
+	@ sub_08093A34 indexes this as three signed halfwords.
+	.2byte 0, 0, 1
 FunctionPointerTable_JP_084E641C: @ 0x084E641C
 	@ proven function-pointer table
 sMovementActionFuncs_Jump2Down: @ 0x084E641C
