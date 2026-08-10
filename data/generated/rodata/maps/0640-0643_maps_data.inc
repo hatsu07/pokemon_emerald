@@ -3261,13 +3261,13 @@ gObjectEventGraphicsInfo_JP_059: @ 0x084E2618
 	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084DF088, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_060
 gObjectEventGraphicsInfo_JP_060: @ 0x084E263C
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 16, 0x42, 0, sObjectEventOam_16x16, 0, sObjectEventAnimTable_084E1894, 0x084E429C, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 16, 0x42, 0, sObjectEventOam_16x16, 0, sObjectEventAnimTable_084E1894, gSpriteFrameImages_JP_084E429C, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_061
 gObjectEventGraphicsInfo_JP_061: @ 0x084E2660
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1894, 0x084E429C, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1894, gSpriteFrameImages_JP_084E429C, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_062
 gObjectEventGraphicsInfo_JP_062: @ 0x084E2684
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x42, 0, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1894, 0x084E429C, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x42, 0, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1894, gSpriteFrameImages_JP_084E429C, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_064
 gObjectEventGraphicsInfo_JP_064: @ 0x084E26A8
 	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF090, gDummySpriteAffineAnimTable
@@ -3947,265 +3947,536 @@ sObjectEventPaletteTagList_084E4278: @ 0x084E4278
 gEventObjectMovementData_084E428C:
 	.globl gUnknown_84E428C
 gUnknown_84E428C: @ 0x084E428C
-	@ confirmed contiguous ROM pointer table: 5 entries from this address
-sPointerTable_084E428C:
-	@ analyzed canonical ROM range 0x084E428C-0x084E4C03
-sAnalyzedData_084E428C: @ 0x084E428C
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x423C, 0x084E, 0x4250, 0x084E, 0x4264, 0x084E, 0x4278, 0x084E
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x246C, 0x084C, 0x0100, 0x0000
-	.2byte 0x256C, 0x084C, 0x0100, 0x0000, 0x266C, 0x084C, 0x0100, 0x0000
-	.2byte 0x276C, 0x084C, 0x0100, 0x0000, 0x286C, 0x084C, 0x0100, 0x0000
-	.2byte 0x296C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0404, 0x0004, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x2A6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x2B6C, 0x084C, 0x0100, 0x0000, 0x2C6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x2D6C, 0x084C, 0x0100, 0x0000, 0x2E6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x2F6C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0202, 0x0002, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x306C, 0x084C, 0x0100, 0x0000
-	.2byte 0x316C, 0x084C, 0x0100, 0x0000, 0x326C, 0x084C, 0x0100, 0x0000
-	.2byte 0x336C, 0x084C, 0x0100, 0x0000, 0x346C, 0x084C, 0x0100, 0x0000
-	.2byte 0x356C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0202, 0x0002, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x366C, 0x084C, 0x0100, 0x0000
-	.2byte 0x376C, 0x084C, 0x0100, 0x0000, 0x386C, 0x084C, 0x0100, 0x0000
-	.2byte 0x396C, 0x084C, 0x0100, 0x0000, 0x3A6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x3B6C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0303, 0x0003, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x3C6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x3D6C, 0x084C, 0x0100, 0x0000, 0x3E6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x3F6C, 0x084C, 0x0100, 0x0000, 0x406C, 0x084C, 0x0100, 0x0000
-	.2byte 0x416C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0404, 0x0004, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x426C, 0x084C, 0x0100, 0x0000
-	.2byte 0x436C, 0x084C, 0x0100, 0x0000, 0x446C, 0x084C, 0x0100, 0x0000
-	.2byte 0x456C, 0x084C, 0x0100, 0x0000, 0x466C, 0x084C, 0x0100, 0x0000
-	.2byte 0x476C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0303, 0x0003, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x486C, 0x084C, 0x0100, 0x0000
-	.2byte 0x496C, 0x084C, 0x0100, 0x0000, 0x4A6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x4B6C, 0x084C, 0x0100, 0x0000, 0x4C6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x4D6C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0303, 0x0003, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x4E6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x4F6C, 0x084C, 0x0100, 0x0000, 0x506C, 0x084C, 0x0100, 0x0000
-	.2byte 0x516C, 0x084C, 0x0100, 0x0000, 0x526C, 0x084C, 0x0100, 0x0000
-	.2byte 0x536C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0404, 0x0004, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x546C, 0x084C, 0x0100, 0x0000
-	.2byte 0x556C, 0x084C, 0x0100, 0x0000, 0x566C, 0x084C, 0x0100, 0x0000
-	.2byte 0x576C, 0x084C, 0x0100, 0x0000, 0x586C, 0x084C, 0x0100, 0x0000
-	.2byte 0x596C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0404, 0x0004, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x5A6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x5B6C, 0x084C, 0x0100, 0x0000, 0x5C6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x5D6C, 0x084C, 0x0100, 0x0000, 0x5E6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x5F6C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0303, 0x0003, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x606C, 0x084C, 0x0100, 0x0000
-	.2byte 0x616C, 0x084C, 0x0100, 0x0000, 0x626C, 0x084C, 0x0100, 0x0000
-	.2byte 0x636C, 0x084C, 0x0100, 0x0000, 0x646C, 0x084C, 0x0100, 0x0000
-	.2byte 0x656C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0404, 0x0004, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x666C, 0x084C, 0x0100, 0x0000
-	.2byte 0x676C, 0x084C, 0x0100, 0x0000, 0x686C, 0x084C, 0x0100, 0x0000
-	.2byte 0x696C, 0x084C, 0x0100, 0x0000, 0x6A6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x6B6C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0303, 0x0003, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x6C6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x6D6C, 0x084C, 0x0100, 0x0000, 0x6E6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x6F6C, 0x084C, 0x0100, 0x0000, 0x706C, 0x084C, 0x0100, 0x0000
-	.2byte 0x716C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0303, 0x0003, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x726C, 0x084C, 0x0100, 0x0000
-	.2byte 0x736C, 0x084C, 0x0100, 0x0000, 0x746C, 0x084C, 0x0100, 0x0000
-	.2byte 0x756C, 0x084C, 0x0100, 0x0000, 0x766C, 0x084C, 0x0100, 0x0000
-	.2byte 0x776C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0404, 0x0004, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x786C, 0x084C, 0x0100, 0x0000
-	.2byte 0x796C, 0x084C, 0x0100, 0x0000, 0x7A6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x7B6C, 0x084C, 0x0100, 0x0000, 0x7C6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x7D6C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0505, 0x0005, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x7E6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x7F6C, 0x084C, 0x0100, 0x0000, 0x806C, 0x084C, 0x0100, 0x0000
-	.2byte 0x816C, 0x084C, 0x0100, 0x0000, 0x826C, 0x084C, 0x0100, 0x0000
-	.2byte 0x836C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0404, 0x0004, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x846C, 0x084C, 0x0100, 0x0000
-	.2byte 0x856C, 0x084C, 0x0100, 0x0000, 0x866C, 0x084C, 0x0100, 0x0000
-	.2byte 0x876C, 0x084C, 0x0100, 0x0000, 0x886C, 0x084C, 0x0100, 0x0000
-	.2byte 0x896C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0303, 0x0003, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x8A6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x8B6C, 0x084C, 0x0100, 0x0000, 0x8C6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x8D6C, 0x084C, 0x0100, 0x0000, 0x8E6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x8F6C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0303, 0x0003, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x906C, 0x084C, 0x0100, 0x0000
-	.2byte 0x916C, 0x084C, 0x0100, 0x0000, 0x926C, 0x084C, 0x0100, 0x0000
-	.2byte 0x936C, 0x084C, 0x0100, 0x0000, 0x946C, 0x084C, 0x0100, 0x0000
-	.2byte 0x956C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0404, 0x0004, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x966C, 0x084C, 0x0100, 0x0000
-	.2byte 0x976C, 0x084C, 0x0100, 0x0000, 0x986C, 0x084C, 0x0100, 0x0000
-	.2byte 0x996C, 0x084C, 0x0100, 0x0000, 0x9A6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x9B6C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0303, 0x0003, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0x9C6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x9D6C, 0x084C, 0x0100, 0x0000, 0x9E6C, 0x084C, 0x0100, 0x0000
-	.2byte 0x9F6C, 0x084C, 0x0100, 0x0000, 0xA06C, 0x084C, 0x0100, 0x0000
-	.2byte 0xA16C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0202, 0x0002, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0xA26C, 0x084C, 0x0100, 0x0000
-	.2byte 0xA36C, 0x084C, 0x0100, 0x0000, 0xA46C, 0x084C, 0x0100, 0x0000
-	.2byte 0xA56C, 0x084C, 0x0100, 0x0000, 0xA66C, 0x084C, 0x0100, 0x0000
-	.2byte 0xA76C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0202, 0x0002, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0xA86C, 0x084C, 0x0100, 0x0000
-	.2byte 0xA96C, 0x084C, 0x0100, 0x0000, 0xAA6C, 0x084C, 0x0100, 0x0000
-	.2byte 0xAB6C, 0x084C, 0x0100, 0x0000, 0xAC6C, 0x084C, 0x0100, 0x0000
-	.2byte 0xAD6C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0202, 0x0002, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0xAE6C, 0x084C, 0x0100, 0x0000
-	.2byte 0xAF6C, 0x084C, 0x0100, 0x0000, 0xB06C, 0x084C, 0x0100, 0x0000
-	.2byte 0xB16C, 0x084C, 0x0100, 0x0000, 0xB26C, 0x084C, 0x0100, 0x0000
-	.2byte 0xB36C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0404, 0x0004, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0xB46C, 0x084C, 0x0100, 0x0000
-	.2byte 0xB56C, 0x084C, 0x0100, 0x0000, 0xB66C, 0x084C, 0x0100, 0x0000
-	.2byte 0xB76C, 0x084C, 0x0100, 0x0000, 0xB86C, 0x084C, 0x0100, 0x0000
-	.2byte 0xB96C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0303, 0x0003, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0xBA6C, 0x084C, 0x0100, 0x0000
-	.2byte 0xBB6C, 0x084C, 0x0100, 0x0000, 0xBC6C, 0x084C, 0x0100, 0x0000
-	.2byte 0xBD6C, 0x084C, 0x0100, 0x0000, 0xBE6C, 0x084C, 0x0100, 0x0000
-	.2byte 0xBF6C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0202, 0x0002, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0xC06C, 0x084C, 0x0100, 0x0000
-	.2byte 0xC16C, 0x084C, 0x0100, 0x0000, 0xC26C, 0x084C, 0x0100, 0x0000
-	.2byte 0xC36C, 0x084C, 0x0100, 0x0000, 0xC46C, 0x084C, 0x0100, 0x0000
-	.2byte 0xC56C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0202, 0x0002, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0xC66C, 0x084C, 0x0100, 0x0000
-	.2byte 0xC76C, 0x084C, 0x0100, 0x0000, 0xC86C, 0x084C, 0x0100, 0x0000
-	.2byte 0xC96C, 0x084C, 0x0100, 0x0000, 0xCA6C, 0x084C, 0x0100, 0x0000
-	.2byte 0xCB6C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0202, 0x0002, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0xCC6C, 0x084C, 0x0100, 0x0000
-	.2byte 0xCD6C, 0x084C, 0x0100, 0x0000, 0xCE6C, 0x084C, 0x0100, 0x0000
-	.2byte 0xCF6C, 0x084C, 0x0100, 0x0000, 0xD06C, 0x084C, 0x0100, 0x0000
-	.2byte 0xD16C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0404, 0x0004, 0x0000
-	.2byte 0x22EC, 0x084C, 0x0080, 0x0000, 0x236C, 0x084C, 0x0080, 0x0000
-	.2byte 0x23EC, 0x084C, 0x0080, 0x0000, 0xD26C, 0x084C, 0x0100, 0x0000
-	.2byte 0xD36C, 0x084C, 0x0100, 0x0000, 0xD46C, 0x084C, 0x0100, 0x0000
-	.2byte 0xD56C, 0x084C, 0x0100, 0x0000, 0xD66C, 0x084C, 0x0100, 0x0000
-	.2byte 0xD76C, 0x084C, 0x0100, 0x0000, 0x0403, 0x0202, 0x3D02, 0x3D3D
-	.2byte 0x3D3D, 0x3D3D, 0x3E3E, 0x003E
+	@ ObjectEvent default palette tag-list pointers.
+sAnalyzedData_084E428C:
+sObjectEventDefaultPaletteTagListPointers: @ 0x084E428C
+	.4byte sObjectEventPaletteTagList_084E423C
+	.4byte sObjectEventPaletteTagList_084E4250
+	.4byte sObjectEventPaletteTagList_084E4264
+	.4byte sObjectEventPaletteTagList_084E4278
+	.globl gSpriteFrameImages_JP_084E429C
+gSpriteFrameImages_JP_084E429C: @ 0x084E429C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C246C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C256C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C266C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C276C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C286C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C296C, 0x100
+sBerryTreePaletteSlots_084E42E4: @ 0x084E42E4
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x04, 0x04, 0x04, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E42EC
+gSpriteFrameImages_JP_084E42EC: @ 0x084E42EC
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C2A6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C2B6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C2C6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C2D6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C2E6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C2F6C, 0x100
+sBerryTreePaletteSlots_084E4334: @ 0x084E4334
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x02, 0x02, 0x02, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E433C
+gSpriteFrameImages_JP_084E433C: @ 0x084E433C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C306C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C316C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C326C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C336C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C346C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C356C, 0x100
+sBerryTreePaletteSlots_084E4384: @ 0x084E4384
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x02, 0x02, 0x02, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E438C
+gSpriteFrameImages_JP_084E438C: @ 0x084E438C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C366C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C376C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C386C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C396C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C3A6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C3B6C, 0x100
+sBerryTreePaletteSlots_084E43D4: @ 0x084E43D4
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x03, 0x03, 0x03, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E43DC
+gSpriteFrameImages_JP_084E43DC: @ 0x084E43DC
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C3C6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C3D6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C3E6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C3F6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C406C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C416C, 0x100
+sBerryTreePaletteSlots_084E4424: @ 0x084E4424
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x04, 0x04, 0x04, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E442C
+gSpriteFrameImages_JP_084E442C: @ 0x084E442C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C426C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C436C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C446C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C456C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C466C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C476C, 0x100
+sBerryTreePaletteSlots_084E4474: @ 0x084E4474
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x03, 0x03, 0x03, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E447C
+gSpriteFrameImages_JP_084E447C: @ 0x084E447C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C486C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C496C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C4A6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C4B6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C4C6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C4D6C, 0x100
+sBerryTreePaletteSlots_084E44C4: @ 0x084E44C4
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x03, 0x03, 0x03, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E44CC
+gSpriteFrameImages_JP_084E44CC: @ 0x084E44CC
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C4E6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C4F6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C506C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C516C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C526C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C536C, 0x100
+sBerryTreePaletteSlots_084E4514: @ 0x084E4514
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x04, 0x04, 0x04, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E451C
+gSpriteFrameImages_JP_084E451C: @ 0x084E451C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C546C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C556C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C566C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C576C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C586C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C596C, 0x100
+sBerryTreePaletteSlots_084E4564: @ 0x084E4564
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x04, 0x04, 0x04, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E456C
+gSpriteFrameImages_JP_084E456C: @ 0x084E456C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C5A6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C5B6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C5C6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C5D6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C5E6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C5F6C, 0x100
+sBerryTreePaletteSlots_084E45B4: @ 0x084E45B4
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x03, 0x03, 0x03, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E45BC
+gSpriteFrameImages_JP_084E45BC: @ 0x084E45BC
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C606C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C616C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C626C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C636C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C646C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C656C, 0x100
+sBerryTreePaletteSlots_084E4604: @ 0x084E4604
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x04, 0x04, 0x04, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E460C
+gSpriteFrameImages_JP_084E460C: @ 0x084E460C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C666C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C676C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C686C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C696C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C6A6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C6B6C, 0x100
+sBerryTreePaletteSlots_084E4654: @ 0x084E4654
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x03, 0x03, 0x03, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E465C
+gSpriteFrameImages_JP_084E465C: @ 0x084E465C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C6C6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C6D6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C6E6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C6F6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C706C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C716C, 0x100
+sBerryTreePaletteSlots_084E46A4: @ 0x084E46A4
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x03, 0x03, 0x03, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E46AC
+gSpriteFrameImages_JP_084E46AC: @ 0x084E46AC
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C726C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C736C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C746C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C756C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C766C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C776C, 0x100
+sBerryTreePaletteSlots_084E46F4: @ 0x084E46F4
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x04, 0x04, 0x04, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E46FC
+gSpriteFrameImages_JP_084E46FC: @ 0x084E46FC
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C786C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C796C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C7A6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C7B6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C7C6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C7D6C, 0x100
+sBerryTreePaletteSlots_084E4744: @ 0x084E4744
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x05, 0x05, 0x05, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E474C
+gSpriteFrameImages_JP_084E474C: @ 0x084E474C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C7E6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C7F6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C806C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C816C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C826C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C836C, 0x100
+sBerryTreePaletteSlots_084E4794: @ 0x084E4794
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x04, 0x04, 0x04, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E479C
+gSpriteFrameImages_JP_084E479C: @ 0x084E479C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C846C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C856C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C866C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C876C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C886C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C896C, 0x100
+sBerryTreePaletteSlots_084E47E4: @ 0x084E47E4
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x03, 0x03, 0x03, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E47EC
+gSpriteFrameImages_JP_084E47EC: @ 0x084E47EC
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C8A6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C8B6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C8C6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C8D6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C8E6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C8F6C, 0x100
+sBerryTreePaletteSlots_084E4834: @ 0x084E4834
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x03, 0x03, 0x03, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E483C
+gSpriteFrameImages_JP_084E483C: @ 0x084E483C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C906C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C916C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C926C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C936C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C946C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C956C, 0x100
+sBerryTreePaletteSlots_084E4884: @ 0x084E4884
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x04, 0x04, 0x04, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E488C
+gSpriteFrameImages_JP_084E488C: @ 0x084E488C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C966C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C976C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C986C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C996C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C9A6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C9B6C, 0x100
+sBerryTreePaletteSlots_084E48D4: @ 0x084E48D4
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x03, 0x03, 0x03, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E48DC
+gSpriteFrameImages_JP_084E48DC: @ 0x084E48DC
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C9C6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C9D6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C9E6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084C9F6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CA06C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CA16C, 0x100
+sBerryTreePaletteSlots_084E4924: @ 0x084E4924
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x02, 0x02, 0x02, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E492C
+gSpriteFrameImages_JP_084E492C: @ 0x084E492C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084CA26C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CA36C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CA46C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CA56C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CA66C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CA76C, 0x100
+sBerryTreePaletteSlots_084E4974: @ 0x084E4974
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x02, 0x02, 0x02, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E497C
+gSpriteFrameImages_JP_084E497C: @ 0x084E497C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084CA86C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CA96C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CAA6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CAB6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CAC6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CAD6C, 0x100
+sBerryTreePaletteSlots_084E49C4: @ 0x084E49C4
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x02, 0x02, 0x02, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E49CC
+gSpriteFrameImages_JP_084E49CC: @ 0x084E49CC
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084CAE6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CAF6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CB06C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CB16C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CB26C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CB36C, 0x100
+sBerryTreePaletteSlots_084E4A14: @ 0x084E4A14
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x04, 0x04, 0x04, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E4A1C
+gSpriteFrameImages_JP_084E4A1C: @ 0x084E4A1C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084CB46C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CB56C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CB66C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CB76C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CB86C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CB96C, 0x100
+sBerryTreePaletteSlots_084E4A64: @ 0x084E4A64
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x03, 0x03, 0x03, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E4A6C
+gSpriteFrameImages_JP_084E4A6C: @ 0x084E4A6C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084CBA6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CBB6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CBC6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CBD6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CBE6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CBF6C, 0x100
+sBerryTreePaletteSlots_084E4AB4: @ 0x084E4AB4
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x02, 0x02, 0x02, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E4ABC
+gSpriteFrameImages_JP_084E4ABC: @ 0x084E4ABC
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084CC06C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CC16C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CC26C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CC36C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CC46C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CC56C, 0x100
+sBerryTreePaletteSlots_084E4B04: @ 0x084E4B04
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x02, 0x02, 0x02, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E4B0C
+gSpriteFrameImages_JP_084E4B0C: @ 0x084E4B0C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084CC66C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CC76C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CC86C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CC96C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CCA6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CCB6C, 0x100
+sBerryTreePaletteSlots_084E4B54: @ 0x084E4B54
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x02, 0x02, 0x02, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E4B5C
+gSpriteFrameImages_JP_084E4B5C: @ 0x084E4B5C
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084CCC6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CCD6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CCE6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CCF6C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CD06C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CD16C, 0x100
+sBerryTreePaletteSlots_084E4BA4: @ 0x084E4BA4
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x04, 0x04, 0x04, 0x00, 0x00, 0x00
+	.globl gSpriteFrameImages_JP_084E4BAC
+gSpriteFrameImages_JP_084E4BAC: @ 0x084E4BAC
+	sprite_frame_image gObjectEventFrameGfx_JP_084C22EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C236C, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084C23EC, 0x80
+	sprite_frame_image gObjectEventFrameGfx_JP_084CD26C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CD36C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CD46C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CD56C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CD66C, 0x100
+	sprite_frame_image gObjectEventFrameGfx_JP_084CD76C, 0x100
+sBerryTreePaletteSlots_084E4BF4: @ 0x084E4BF4
+	@ berry tree palette slots indexed by growth stage
+	.byte 0x03, 0x04, 0x02, 0x02, 0x02, 0x3D, 0x3D, 0x3D, 0x3D, 0x3D
+sBerryTreeObjectEventGraphicsIds_084E4BFE: @ 0x084E4BFE
+	@ berry tree ObjectEvent graphics ids indexed by growth stage
+	.byte 0x3D, 0x3D, 0x3E, 0x3E, 0x3E, 0x00
 	.globl gUnknown_84E4C04
 gUnknown_84E4C04: @ 0x084E4C04
-	@ confirmed contiguous ROM pointer table: 133 entries from this address
-sPointerTable_084E4C04:
 	.globl gBerryTreePicTablePointers
 gBerryTreePicTablePointers:
-	@ analyzed canonical ROM range 0x084E4C04-0x084E4CAF
-sAnalyzedData_084E4C04: @ 0x084E4C04
-	@ pointer/nullable table
-	.4byte 0x084E43DC @ +0x0
-	.4byte 0x084E48DC @ +0x4
-	.4byte 0x084E429C @ +0x8
-	.4byte 0x084E483C @ +0xC
-	.4byte 0x084E4A1C @ +0x10
-	.4byte 0x084E465C @ +0x14
-	.4byte 0x084E492C @ +0x18
-	.4byte 0x084E497C @ +0x1C
-	.4byte 0x084E44CC @ +0x20
-	.4byte 0x084E49CC @ +0x24
-	.4byte 0x084E442C @ +0x28
-	.4byte 0x084E479C @ +0x2C
-	.4byte 0x084E447C @ +0x30
-	.4byte 0x084E474C @ +0x34
-	.4byte 0x084E438C @ +0x38
-	.4byte 0x084E451C @ +0x3C
-	.4byte 0x084E451C @ +0x40
-	.4byte 0x084E447C @ +0x44
-	.4byte 0x084E433C @ +0x48
-	.4byte 0x084E438C @ +0x4C
-	.4byte 0x084E47EC @ +0x50
-	.4byte 0x084E42EC @ +0x54
-	.4byte 0x084E433C @ +0x58
-	.4byte 0x084E46FC @ +0x5C
-	.4byte 0x084E456C @ +0x60
-	.4byte 0x084E4BAC @ +0x64
-	.4byte 0x084E4ABC @ +0x68
-	.4byte 0x084E47EC @ +0x6C
-	.4byte 0x084E45BC @ +0x70
-	.4byte 0x084E460C @ +0x74
-	.4byte 0x084E488C @ +0x78
-	.4byte 0x084E4A6C @ +0x7C
-	.4byte 0x084E45BC @ +0x80
-	.4byte 0x084E4B5C @ +0x84
-	.4byte 0x084E46FC @ +0x88
-	.4byte 0x084E46AC @ +0x8C
-	.4byte 0x084E46FC @ +0x90
-	.4byte 0x084E474C @ +0x94
-	.4byte 0x084E47EC @ +0x98
-	.4byte 0x084E456C @ +0x9C
-	.4byte 0x084E4B0C @ +0xA0
-	.4byte 0x084E4ABC @ +0xA4
-	.4byte 0x084E4B5C @ +0xA8
+	@ berry tree SpriteFrameImage table pointers indexed by berry type
+sAnalyzedData_084E4C04:
+
+	.4byte gSpriteFrameImages_JP_084E43DC @ +0x0
+	.4byte gSpriteFrameImages_JP_084E48DC @ +0x4
+	.4byte gSpriteFrameImages_JP_084E429C @ +0x8
+	.4byte gSpriteFrameImages_JP_084E483C @ +0xC
+	.4byte gSpriteFrameImages_JP_084E4A1C @ +0x10
+	.4byte gSpriteFrameImages_JP_084E465C @ +0x14
+	.4byte gSpriteFrameImages_JP_084E492C @ +0x18
+	.4byte gSpriteFrameImages_JP_084E497C @ +0x1C
+	.4byte gSpriteFrameImages_JP_084E44CC @ +0x20
+	.4byte gSpriteFrameImages_JP_084E49CC @ +0x24
+	.4byte gSpriteFrameImages_JP_084E442C @ +0x28
+	.4byte gSpriteFrameImages_JP_084E479C @ +0x2C
+	.4byte gSpriteFrameImages_JP_084E447C @ +0x30
+	.4byte gSpriteFrameImages_JP_084E474C @ +0x34
+	.4byte gSpriteFrameImages_JP_084E438C @ +0x38
+	.4byte gSpriteFrameImages_JP_084E451C @ +0x3C
+	.4byte gSpriteFrameImages_JP_084E451C @ +0x40
+	.4byte gSpriteFrameImages_JP_084E447C @ +0x44
+	.4byte gSpriteFrameImages_JP_084E433C @ +0x48
+	.4byte gSpriteFrameImages_JP_084E438C @ +0x4C
+	.4byte gSpriteFrameImages_JP_084E47EC @ +0x50
+	.4byte gSpriteFrameImages_JP_084E42EC @ +0x54
+	.4byte gSpriteFrameImages_JP_084E433C @ +0x58
+	.4byte gSpriteFrameImages_JP_084E46FC @ +0x5C
+	.4byte gSpriteFrameImages_JP_084E456C @ +0x60
+	.4byte gSpriteFrameImages_JP_084E4BAC @ +0x64
+	.4byte gSpriteFrameImages_JP_084E4ABC @ +0x68
+	.4byte gSpriteFrameImages_JP_084E47EC @ +0x6C
+	.4byte gSpriteFrameImages_JP_084E45BC @ +0x70
+	.4byte gSpriteFrameImages_JP_084E460C @ +0x74
+	.4byte gSpriteFrameImages_JP_084E488C @ +0x78
+	.4byte gSpriteFrameImages_JP_084E4A6C @ +0x7C
+	.4byte gSpriteFrameImages_JP_084E45BC @ +0x80
+	.4byte gSpriteFrameImages_JP_084E4B5C @ +0x84
+	.4byte gSpriteFrameImages_JP_084E46FC @ +0x88
+	.4byte gSpriteFrameImages_JP_084E46AC @ +0x8C
+	.4byte gSpriteFrameImages_JP_084E46FC @ +0x90
+	.4byte gSpriteFrameImages_JP_084E474C @ +0x94
+	.4byte gSpriteFrameImages_JP_084E47EC @ +0x98
+	.4byte gSpriteFrameImages_JP_084E456C @ +0x9C
+	.4byte gSpriteFrameImages_JP_084E4B0C @ +0xA0
+	.4byte gSpriteFrameImages_JP_084E4ABC @ +0xA4
+	.4byte gSpriteFrameImages_JP_084E4B5C @ +0xA8
 	.globl gUnknown_84E4CB0
 gUnknown_84E4CB0: @ 0x084E4CB0
 	.globl gBerryTreePaletteSlotTablePointers
 gBerryTreePaletteSlotTablePointers:
-	@ analyzed canonical ROM range 0x084E4CB0-0x084E4D5B
-sAnalyzedData_084E4CB0: @ 0x084E4CB0
-	@ pointer/nullable table
-	.4byte 0x084E4424 @ +0x0
-	.4byte 0x084E4924 @ +0x4
-	.4byte 0x084E42E4 @ +0x8
-	.4byte 0x084E4884 @ +0xC
-	.4byte 0x084E4A64 @ +0x10
-	.4byte 0x084E46A4 @ +0x14
-	.4byte 0x084E4974 @ +0x18
-	.4byte 0x084E49C4 @ +0x1C
-	.4byte 0x084E4514 @ +0x20
-	.4byte 0x084E4A14 @ +0x24
-	.4byte 0x084E4474 @ +0x28
-	.4byte 0x084E47E4 @ +0x2C
-	.4byte 0x084E44C4 @ +0x30
-	.4byte 0x084E4794 @ +0x34
-	.4byte 0x084E43D4 @ +0x38
-	.4byte 0x084E4564 @ +0x3C
-	.4byte 0x084E4564 @ +0x40
-	.4byte 0x084E44C4 @ +0x44
-	.4byte 0x084E4384 @ +0x48
-	.4byte 0x084E43D4 @ +0x4C
-	.4byte 0x084E4834 @ +0x50
-	.4byte 0x084E4334 @ +0x54
-	.4byte 0x084E4384 @ +0x58
-	.4byte 0x084E4744 @ +0x5C
-	.4byte 0x084E45B4 @ +0x60
-	.4byte 0x084E4BF4 @ +0x64
-	.4byte 0x084E4B04 @ +0x68
-	.4byte 0x084E4834 @ +0x6C
-	.4byte 0x084E4604 @ +0x70
-	.4byte 0x084E4654 @ +0x74
-	.4byte 0x084E48D4 @ +0x78
-	.4byte 0x084E4AB4 @ +0x7C
-	.4byte 0x084E4604 @ +0x80
-	.4byte 0x084E4BA4 @ +0x84
-	.4byte 0x084E4744 @ +0x88
-	.4byte 0x084E46F4 @ +0x8C
-	.4byte 0x084E4744 @ +0x90
-	.4byte 0x084E4794 @ +0x94
-	.4byte 0x084E4834 @ +0x98
-	.4byte 0x084E45B4 @ +0x9C
-	.4byte 0x084E4B54 @ +0xA0
-	.4byte 0x084E4B04 @ +0xA4
-	.4byte 0x084E4BA4 @ +0xA8
+	@ berry tree palette-slot table pointers indexed by berry type
+sAnalyzedData_084E4CB0:
+
+	.4byte sBerryTreePaletteSlots_084E4424 @ +0x0
+	.4byte sBerryTreePaletteSlots_084E4924 @ +0x4
+	.4byte sBerryTreePaletteSlots_084E42E4 @ +0x8
+	.4byte sBerryTreePaletteSlots_084E4884 @ +0xC
+	.4byte sBerryTreePaletteSlots_084E4A64 @ +0x10
+	.4byte sBerryTreePaletteSlots_084E46A4 @ +0x14
+	.4byte sBerryTreePaletteSlots_084E4974 @ +0x18
+	.4byte sBerryTreePaletteSlots_084E49C4 @ +0x1C
+	.4byte sBerryTreePaletteSlots_084E4514 @ +0x20
+	.4byte sBerryTreePaletteSlots_084E4A14 @ +0x24
+	.4byte sBerryTreePaletteSlots_084E4474 @ +0x28
+	.4byte sBerryTreePaletteSlots_084E47E4 @ +0x2C
+	.4byte sBerryTreePaletteSlots_084E44C4 @ +0x30
+	.4byte sBerryTreePaletteSlots_084E4794 @ +0x34
+	.4byte sBerryTreePaletteSlots_084E43D4 @ +0x38
+	.4byte sBerryTreePaletteSlots_084E4564 @ +0x3C
+	.4byte sBerryTreePaletteSlots_084E4564 @ +0x40
+	.4byte sBerryTreePaletteSlots_084E44C4 @ +0x44
+	.4byte sBerryTreePaletteSlots_084E4384 @ +0x48
+	.4byte sBerryTreePaletteSlots_084E43D4 @ +0x4C
+	.4byte sBerryTreePaletteSlots_084E4834 @ +0x50
+	.4byte sBerryTreePaletteSlots_084E4334 @ +0x54
+	.4byte sBerryTreePaletteSlots_084E4384 @ +0x58
+	.4byte sBerryTreePaletteSlots_084E4744 @ +0x5C
+	.4byte sBerryTreePaletteSlots_084E45B4 @ +0x60
+	.4byte sBerryTreePaletteSlots_084E4BF4 @ +0x64
+	.4byte sBerryTreePaletteSlots_084E4B04 @ +0x68
+	.4byte sBerryTreePaletteSlots_084E4834 @ +0x6C
+	.4byte sBerryTreePaletteSlots_084E4604 @ +0x70
+	.4byte sBerryTreePaletteSlots_084E4654 @ +0x74
+	.4byte sBerryTreePaletteSlots_084E48D4 @ +0x78
+	.4byte sBerryTreePaletteSlots_084E4AB4 @ +0x7C
+	.4byte sBerryTreePaletteSlots_084E4604 @ +0x80
+	.4byte sBerryTreePaletteSlots_084E4BA4 @ +0x84
+	.4byte sBerryTreePaletteSlots_084E4744 @ +0x88
+	.4byte sBerryTreePaletteSlots_084E46F4 @ +0x8C
+	.4byte sBerryTreePaletteSlots_084E4744 @ +0x90
+	.4byte sBerryTreePaletteSlots_084E4794 @ +0x94
+	.4byte sBerryTreePaletteSlots_084E4834 @ +0x98
+	.4byte sBerryTreePaletteSlots_084E45B4 @ +0x9C
+	.4byte sBerryTreePaletteSlots_084E4B54 @ +0xA0
+	.4byte sBerryTreePaletteSlots_084E4B04 @ +0xA4
+	.4byte sBerryTreePaletteSlots_084E4BA4 @ +0xA8
 	.globl gUnknown_84E4D5C
 gUnknown_84E4D5C: @ 0x084E4D5C
 	.globl gBerryTreeObjectEventGraphicsIdTablePointers

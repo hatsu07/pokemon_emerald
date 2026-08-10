@@ -18,12 +18,16 @@ FIELD_TILES_FRAME_COUNT = 18
 
 GLOBL_RE = re.compile(r"^\t\.globl (gObjectEventFrame(?:Gfx)?_JP_([0-9A-F]{8}))$", re.MULTILINE)
 FRAME_REF_RE = re.compile(r"sprite_frame_image (0x08[0-9A-Fa-f]{6}), (0x[0-9A-Fa-f]+|\d+)")
+LABEL_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*): @ 0x([0-9A-Fa-f]{8})")
+DIRECTIVE_RE = re.compile(r"^\t\.(byte|2byte|4byte)\s+(.+)$")
+INCBIN_RE = re.compile(r'^\t\.incbin "([^"]+)"(?:,\s*([^,]+)(?:,\s*([^,]+))?)?')
 
 
-def collect_labels(extra_text: str = "") -> dict[int, str]:
+def collect_labels(overrides: dict[Path, str] | None = None, extra_text: str = "") -> dict[int, str]:
     labels: dict[int, str] = {}
+    overrides = overrides or {}
     for path in LABEL_ROOT.rglob("*.inc"):
-        text = path.read_text(encoding="utf-8")
+        text = overrides.get(path, path.read_text(encoding="utf-8"))
         for label, raw_addr in GLOBL_RE.findall(text):
             addr = int(raw_addr, 16)
             labels.setdefault(addr, label)
@@ -31,6 +35,98 @@ def collect_labels(extra_text: str = "") -> dict[int, str]:
         addr = int(raw_addr, 16)
         labels.setdefault(addr, label)
     return labels
+
+
+def strip_comment(text: str) -> str:
+    return text.split("@", 1)[0].strip()
+
+
+def split_values(text: str) -> list[str]:
+    return [part.strip() for part in strip_comment(text).split(",") if part.strip()]
+
+
+def parse_int(text: str) -> int | None:
+    try:
+        return int(strip_comment(text), 0)
+    except ValueError:
+        return None
+
+
+def directive_size(line: str) -> int | None:
+    match = DIRECTIVE_RE.match(line)
+    if match:
+        width = {"byte": 1, "2byte": 2, "4byte": 4}[match.group(1)]
+        return width * len(split_values(match.group(2)))
+    match = INCBIN_RE.match(line)
+    if match:
+        count = parse_int(match.group(3) or "")
+        if count is not None:
+            return count
+        path = Path(match.group(1))
+        if path.exists():
+            skip = parse_int(match.group(2) or "") or 0
+            return path.stat().st_size - skip
+    return 0
+
+
+def frame_gfx_label(addr: int) -> str:
+    return f"gObjectEventFrameGfx_JP_{addr:08X}"
+
+
+def add_frame_payload_labels(
+    path: Path, text: str, targets: dict[int, str], labels: dict[int, str]
+) -> str:
+    wanted = {addr: size for addr, size in targets.items() if addr not in labels}
+    if not wanted:
+        return text
+
+    out: list[str] = []
+    current_addr: int | None = None
+    inserted: set[int] = set()
+
+    def maybe_insert(addr: int | None) -> None:
+        if addr in wanted and addr not in inserted:
+            label = frame_gfx_label(addr)
+            out.append(f"\t.globl {label}")
+            out.append(f"{label}: @ 0x{addr:08X}")
+            out.append(f"\t@ 4bpp frame payload; byte size = {wanted[addr]} from SpriteFrameImage")
+            inserted.add(addr)
+
+    def emit_byte_values(values: list[str]) -> None:
+        if values:
+            out.append("\t.byte " + ", ".join(values))
+
+    for line in text.splitlines():
+        label = LABEL_RE.match(line)
+        if label:
+            current_addr = int(label.group(2), 16)
+            maybe_insert(current_addr)
+            out.append(line)
+            continue
+
+        byte_directive = DIRECTIVE_RE.match(line)
+        if current_addr is not None and byte_directive and byte_directive.group(1) == "byte":
+            values = split_values(byte_directive.group(2))
+            if any(current_addr < addr < current_addr + len(values) for addr in set(wanted) - inserted):
+                chunk: list[str] = []
+                for index, value in enumerate(values):
+                    addr = current_addr + index
+                    if addr in wanted and addr not in inserted:
+                        emit_byte_values(chunk)
+                        chunk = []
+                        maybe_insert(addr)
+                    chunk.append(value)
+                emit_byte_values(chunk)
+                current_addr += len(values)
+                continue
+
+        maybe_insert(current_addr)
+        out.append(line)
+        if current_addr is not None:
+            size = directive_size(line)
+            current_addr = None if size is None else current_addr + size
+
+    return "\n".join(out) + ("\n" if text.endswith("\n") else "")
 
 
 def build_field_tiles_block() -> str:
@@ -99,21 +195,38 @@ def main() -> int:
 
     field_text = FIELD_OBJECT_TILES.read_text(encoding="utf-8")
     new_field_text = rewrite_field_tiles(field_text)
-    labels = collect_labels(new_field_text)
+    overrides: dict[Path, str] = {}
+    if new_field_text != field_text:
+        overrides[FIELD_OBJECT_TILES] = new_field_text
 
     frame_text = FRAME_REFS.read_text(encoding="utf-8")
+    frame_targets: dict[int, str] = {}
+    for match in FRAME_REF_RE.finditer(frame_text):
+        frame_targets.setdefault(int(match.group(1), 16), match.group(2))
+
+    labels = collect_labels(overrides, new_field_text)
+    for path in LABEL_ROOT.rglob("*.inc"):
+        text = overrides.get(path, path.read_text(encoding="utf-8"))
+        new_text = add_frame_payload_labels(path, text, frame_targets, labels)
+        if new_text != text:
+            overrides[path] = new_text
+            labels = collect_labels(overrides, new_field_text)
+
+    frame_text = overrides.get(FRAME_REFS, frame_text)
     new_frame_text, converted, missing = rewrite_frame_refs(frame_text, labels)
     if missing:
         missing_text = ", ".join(f"0x{addr:08X}" for addr in missing[:20])
         raise SystemExit(f"{FRAME_REFS}: missing frame labels for {missing_text}")
+    if new_frame_text != frame_text:
+        overrides[FRAME_REFS] = new_frame_text
 
-    changed = (new_field_text != field_text) or (new_frame_text != frame_text)
+    changed = bool(overrides)
     if args.check:
         if changed:
             raise SystemExit("ObjectEvent frame refs are not semanticized")
     elif not args.dry_run:
-        FIELD_OBJECT_TILES.write_text(new_field_text, encoding="utf-8")
-        FRAME_REFS.write_text(new_frame_text, encoding="utf-8")
+        for path, text in sorted(overrides.items()):
+            path.write_text(text, encoding="utf-8")
 
     print(f"{FRAME_REFS}: semanticized {converted} SpriteFrameImage references")
     return 0
