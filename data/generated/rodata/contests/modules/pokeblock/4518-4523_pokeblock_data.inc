@@ -14,7 +14,6 @@ gPokeblockSpokeblockData_085C9864:
 	.globl gUnknown_85C9864
 gUnknown_85C9864: @ 0x085C9864
 	@ analyzed canonical ROM range 0x085C9864-0x085C9868
-sAnalyzedData_085C9864: @ 0x085C9864
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF9, 0x05, 0xFD, 0x02, 0xFF
 	.globl gUnknown_85C9869

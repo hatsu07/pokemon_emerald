@@ -11,6 +11,5 @@ gText_Rom_25528A: @ 0x0825528A
 	.endif
 	@ analyzed canonical ROM range 0x082552B1-0x082552C4
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082552B1: @ 0x082552B1
 EventText_JP_082552B1: @ 0x082552B1
 	.string "ところで…\nまだ　でんせつ　ききたい?$"

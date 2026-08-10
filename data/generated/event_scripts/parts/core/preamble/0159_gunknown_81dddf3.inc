@@ -2,7 +2,6 @@
 gUnknown_81DDDF3: @ 0x081DDDF3
 	@ analyzed canonical ROM range 0x081DDDF3-0x081DDE14
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_081DDDF3: @ 0x081DDDF3
 EventScript_081DDDF3: @ 0x081DDDF3
 EventScript_JP_081DDDF3: @ 0x081DDDF3
 	@ event command: lockall

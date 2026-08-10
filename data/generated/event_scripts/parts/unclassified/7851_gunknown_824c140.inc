@@ -2,7 +2,6 @@
 gUnknown_824C140: @ 0x0824C140
 	@ analyzed canonical ROM range 0x0824C140-0x0824C1F4
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0824C140: @ 0x0824C140
 EventScript_0824C140: @ 0x0824C140
 EventScript_JP_0824C140: @ 0x0824C140
 	@ event command: loadbytefromaddr

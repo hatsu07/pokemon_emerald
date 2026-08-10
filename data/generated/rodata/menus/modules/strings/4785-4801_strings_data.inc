@@ -105,7 +105,6 @@ gPartyMenuData_085CA273:
 	.globl gUnknown_85CA273
 gUnknown_85CA273: @ 0x085CA273
 	@ analyzed canonical ROM range 0x085CA273-0x085CA275
-sAnalyzedData_085CA273: @ 0x085CA273
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFC, 0x09, 0xFF
 	.globl gUnknown_85CA276

@@ -10,7 +10,6 @@ gText_Rom_249C72: @ 0x08249C72
 	.endif
 	@ analyzed canonical ROM range 0x08249C9A-0x08249CC3
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08249C9A: @ 0x08249C9A
 EventScript_08249C9A: @ 0x08249C9A
 EventText_JP_08249C9A: @ 0x08249C9A
 	.string "こんにちは\pこちらは　ポケモンコンテストの\n4めいさま　せんようの　うけつけです!$"

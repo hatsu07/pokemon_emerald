@@ -4,7 +4,6 @@ gPokedexData_085C8FDB:
 	.globl gUnknown_85C8FDB
 gUnknown_85C8FDB: @ 0x085C8FDB
 	@ analyzed canonical ROM range 0x085C8FDB-0x085C8FDC
-sAnalyzedData_085C8FDB: @ 0x085C8FDB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x14, 0xFF
 	.globl gUnknown_85C8FDD

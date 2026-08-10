@@ -11,7 +11,6 @@ gText_Rom_255DDF: @ 0x08255DDF
 	.endif
 	@ analyzed canonical ROM range 0x08255DE3-0x08255E39
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08255DE3: @ 0x08255DE3
 EventText_JP_08255DE3: @ 0x08255DE3
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nダウジングマシンを　つかった　らしい!\p{STR_VAR_3}は\nさがしものが　だいすきな　トレーナーだな!$"
 	.byte 0x01, 0x22, 0x16, 0x00, 0x1C, 0x27, 0x2A, 0x10, 0x00

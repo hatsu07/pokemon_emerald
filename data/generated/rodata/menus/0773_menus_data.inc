@@ -4,7 +4,6 @@ gPokedexData_08539C0E:
 	.globl gUnknown_8539C0E
 gUnknown_8539C0E: @ 0x08539C0E
 	@ analyzed canonical ROM range 0x08539C0E-0x08539C4F
-sAnalyzedData_08539C0E: @ 0x08539C0E
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0xFF00, 0x000F, 0xBBF0, 0x00FB, 0xFFBF, 0x0FBB

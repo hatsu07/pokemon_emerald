@@ -10,7 +10,6 @@ gText_Rom_24A52D: @ 0x0824A52D
 	.endif
 	@ analyzed canonical ROM range 0x0824A540-0x0824A60B
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0824A540: @ 0x0824A540
 EventScript_0824A540: @ 0x0824A540
 EventText_JP_0824A540: @ 0x0824A540
 	.string "コンテストに\nさんか　しますか?$"

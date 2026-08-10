@@ -10,6 +10,5 @@ gText_Rom_2100AA: @ 0x082100AA
 	.endif
 	@ analyzed canonical ROM range 0x082100D7-0x082100D9
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082100D7: @ 0x082100D7
 EventText_JP_082100D7: @ 0x082100D7
 	.string "{STR_VAR_1}$"

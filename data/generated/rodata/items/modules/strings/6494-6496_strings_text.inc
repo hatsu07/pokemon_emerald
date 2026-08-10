@@ -18,7 +18,6 @@ gPokemonJumpData_085CCDFB:
 	.globl gUnknown_85CCDFB
 gUnknown_85CCDFB: @ 0x085CCDFB
 	@ analyzed canonical ROM range 0x085CCDFB-0x085CCDFD
-sAnalyzedData_085CCDFB: @ 0x085CCDFB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x06, 0x02, 0xFF
 	.globl gUnknown_85CCDFE

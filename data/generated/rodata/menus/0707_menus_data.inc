@@ -4,7 +4,6 @@ gUnknown_851ADE8: @ 0x0851ADE8
 gWeatherGammaShiftTable:
 	@ 6 gamma-shift lookup planes x 4096 RGB444 entries x u16 = 0xC000 bytes
 	@ analyzed canonical ROM range 0x0851ADE8-0x08526DE7
-sAnalyzedData_0851ADE8: @ 0x0851ADE8
 	@ struct: 6 gamma-shift lookup planes x 4096 RGB444 u16 entries
 	.globl gWeatherGammaShiftPlane0
 gWeatherGammaShiftPlane0: @ 0x0851ADE8

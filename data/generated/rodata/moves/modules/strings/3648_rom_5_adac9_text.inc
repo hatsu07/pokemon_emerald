@@ -9,7 +9,6 @@ gText_Rom_5ADAC9: @ 0x085ADAC9
 	.space 0x11 - (. - gText_Rom_5ADAC9)
 	.endif
 	@ analyzed canonical ROM range 0x085ADADA-0x085ADAF3
-sAnalyzedData_085ADADA: @ 0x085ADADA
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x8000, 0x0000, 0x0000
 	.2byte 0x0000, 0x4000, 0x0000, 0x0000, 0x0000

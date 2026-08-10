@@ -4,7 +4,6 @@ gWildEncounterData_0852E728:
 	.globl gUnknown_852E728
 gUnknown_852E728: @ 0x0852E728
 	@ analyzed canonical ROM range 0x0852E728-0x08535AFB
-sAnalyzedData_0852E728: @ 0x0852E728
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x002D, 0x0000, 0x002E, 0x005B, 0x0083, 0x005C, 0x008B
 	.2byte 0x012A, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000

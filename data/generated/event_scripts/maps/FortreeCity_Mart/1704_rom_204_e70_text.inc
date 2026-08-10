@@ -10,7 +10,6 @@ gText_Rom_204E70: @ 0x08204E70
 	.endif
 	@ analyzed canonical ROM range 0x08204E9B-0x08204F52
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08204E9B: @ 0x08204E9B
 EventScript_08204E9B: @ 0x08204E9B
 	.byte 0x00
 EventScript_JP_08204E9C: @ 0x08204E9C

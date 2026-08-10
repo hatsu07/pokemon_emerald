@@ -9,7 +9,6 @@ gText_Rom_5AA80C: @ 0x085AA80C
 	.space 0x5 - (. - gText_Rom_5AA80C)
 	.endif
 	@ analyzed canonical ROM range 0x085AA811-0x085AA820
-sAnalyzedData_085AA811: @ 0x085AA811
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x13FD, 0x0019, 0x1AFD, 0xFE44, 0x1F03, 0x0008, 0x1F07, 0x1527
 	.globl gText_Rom_5AA821

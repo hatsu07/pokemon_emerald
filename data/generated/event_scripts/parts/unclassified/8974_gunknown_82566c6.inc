@@ -2,7 +2,6 @@
 gUnknown_82566C6: @ 0x082566C6
 	@ analyzed canonical ROM range 0x082566C6-0x0825670F
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082566C6: @ 0x082566C6
 EventScript_082566C6: @ 0x082566C6
 EventScript_JP_082566C6: @ 0x082566C6
 	@ event command: lockall

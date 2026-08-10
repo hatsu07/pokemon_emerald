@@ -10,6 +10,5 @@ gText_Rom_27589C: @ 0x0827589C
 	.endif
 	@ analyzed canonical ROM range 0x082758DA-0x082758F7
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082758DA: @ 0x082758DA
 EventText_JP_082758DA: @ 0x082758DA
 	.string "バトルテント　シダケ　かいじょうの\nルールが　かかれてる!$"

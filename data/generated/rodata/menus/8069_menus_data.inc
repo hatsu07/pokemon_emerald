@@ -3,7 +3,6 @@ gUnknown_85FD7EC: @ 0x085FD7EC
 	.globl gXcmdTable
 gXcmdTable:
 	@ M4A extended-command dispatch table (14 entries)
-sAnalyzedData_085FD7EC: @ 0x085FD7EC
 	.4byte ply_xxx
 	.4byte ply_xwave
 	.4byte ply_xtype

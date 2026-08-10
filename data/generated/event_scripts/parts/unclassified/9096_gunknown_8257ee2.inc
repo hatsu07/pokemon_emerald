@@ -2,7 +2,6 @@
 gUnknown_8257EE2: @ 0x08257EE2
 	@ analyzed canonical ROM range 0x08257EE2-0x082585CE
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08257EE2: @ 0x08257EE2
 EventScript_08257EE2: @ 0x08257EE2
 EventScript_JP_08257EE2: @ 0x08257EE2
 	@ event command: animateflash
@@ -1541,7 +1540,6 @@ Movement_JP_082585C8: @ 0x082585C8
 gUnknown_82585CF: @ 0x082585CF
 	@ analyzed canonical ROM range 0x082585CF-0x082585D7
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082585CF: @ 0x082585CF
 EventScript_082585CF: @ 0x082585CF
 EventScript_JP_082585CF: @ 0x082585CF
 	@ event command: loadword

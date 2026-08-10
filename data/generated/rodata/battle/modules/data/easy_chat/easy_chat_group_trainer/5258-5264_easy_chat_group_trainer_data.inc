@@ -48,6 +48,5 @@ gText_Rom_5CADBB: @ 0x085CADBB
 	.space 0x5 - (. - gText_Rom_5CADBB)
 	.endif
 	@ analyzed canonical ROM range 0x085CADC0-0x085CADC5
-sAnalyzedData_085CADC0: @ 0x085CADC0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF

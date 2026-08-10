@@ -76,6 +76,5 @@ gDaycareData_082FC0F8:
 	.globl gUnknown_82FC0F8
 gUnknown_82FC0F8: @ 0x082FC0F8
 	@ analyzed canonical ROM range 0x082FC0F8-0x082FC0F9
-sAnalyzedData_082FC0F8: @ 0x082FC0F8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFE, 0xFF

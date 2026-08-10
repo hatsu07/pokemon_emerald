@@ -11,7 +11,6 @@ gText_Rom_255CED: @ 0x08255CED
 	.endif
 	@ analyzed canonical ROM range 0x08255CF2-0x08255D5C
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08255CF2: @ 0x08255CF2
 EventText_JP_08255CF2: @ 0x08255CF2
 	.string "コンテストで　ゆうしょう　した$"
 EventText_JP_08255D02: @ 0x08255D02

@@ -10,7 +10,6 @@ gText_Rom_2036D4: @ 0x082036D4
 	.endif
 	@ analyzed canonical ROM range 0x08203714-0x08203726
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08203714: @ 0x08203714
 EventScript_08203714: @ 0x08203714
 	.byte 0x00
 EventScript_JP_08203715: @ 0x08203715

@@ -10,7 +10,6 @@ gText_Rom_226C8E: @ 0x08226C8E
 	.endif
 	@ analyzed canonical ROM range 0x08226CAB-0x08226D52
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08226CAB: @ 0x08226CAB
 EventText_JP_08226CAB: @ 0x08226CAB
 	.string "つぎは　2くみめの　あいてです\nがんばって　ください!$"
 EventText_JP_08226CC7: @ 0x08226CC7

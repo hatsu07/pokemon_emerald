@@ -11,7 +11,6 @@ gText_Rom_255AB8: @ 0x08255AB8
 	.endif
 	@ analyzed canonical ROM range 0x08255ABD-0x08255B25
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08255ABD: @ 0x08255ABD
 EventScript_08255ABD: @ 0x08255ABD
 EventText_JP_08255ABD: @ 0x08255ABD
 	.string "スロットで　おおあたり　した$"

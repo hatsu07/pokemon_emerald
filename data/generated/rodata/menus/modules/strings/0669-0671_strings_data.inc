@@ -14,7 +14,6 @@ gStartMenuData_084E8B94:
 	.globl gUnknown_84E8B94
 gUnknown_84E8B94: @ 0x084E8B94
 	@ analyzed canonical ROM range 0x084E8B94-0x084E8B9B
-sAnalyzedData_084E8B94: @ 0x084E8B94
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x0801, 0x0F04, 0x0008
 	.globl gUnknown_84E8B9C

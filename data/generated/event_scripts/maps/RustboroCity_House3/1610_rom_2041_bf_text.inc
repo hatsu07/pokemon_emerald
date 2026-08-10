@@ -10,7 +10,6 @@ gText_Rom_2041BF: @ 0x082041BF
 	.endif
 	@ analyzed canonical ROM range 0x082041CA-0x0820428A
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082041CA: @ 0x082041CA
 	.byte 0x00
 EventScript_JP_082041CB: @ 0x082041CB
 	@ event command: lock

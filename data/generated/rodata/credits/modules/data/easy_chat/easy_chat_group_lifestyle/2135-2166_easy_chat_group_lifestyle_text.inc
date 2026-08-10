@@ -176,7 +176,6 @@ gText_Rom_577699: @ 0x08577699
 	.space 0x5 - (. - gText_Rom_577699)
 	.endif
 	@ analyzed canonical ROM range 0x0857769E-0x085778BB
-sAnalyzedData_0857769E: @ 0x0857769E
 	@ struct EasyChatWordInfo[]; format verified against every 12-byte record
 	@ prefix before aligned word-info array: 0x2 bytes
 	.byte 0x00, 0x00

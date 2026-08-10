@@ -10,7 +10,6 @@ gText_Rom_229C07: @ 0x08229C07
 	.endif
 	@ analyzed canonical ROM range 0x08229C5D-0x08229CB6
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08229C5D: @ 0x08229C5D
 EventText_JP_08229C5D: @ 0x08229C5D
 	.string "バトルトーナメント　レベル50\nゆうしょうは　{PLAYER}さんっ!\pおめでとう　ございます!!$"
 EventText_JP_08229C89: @ 0x08229C89

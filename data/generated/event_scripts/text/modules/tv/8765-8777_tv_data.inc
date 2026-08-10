@@ -83,7 +83,6 @@ gText_Rom_253B1B: @ 0x08253B1B
 	.endif
 	@ analyzed canonical ROM range 0x08253C01-0x0825450F
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08253C01: @ 0x08253C01
 EventScript_JP_08253C01: @ 0x08253C01
 	@ event command: special
 	.byte 0x25

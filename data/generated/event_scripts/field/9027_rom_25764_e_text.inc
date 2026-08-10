@@ -11,7 +11,6 @@ gText_Rom_25764E: @ 0x0825764E
 	.endif
 	@ analyzed canonical ROM range 0x082576A6-0x08257A88
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082576A6: @ 0x082576A6
 EventScript_082576A6: @ 0x082576A6
 EventText_JP_082576A6: @ 0x082576A6
 	.string "ややっ!\nその　ことばを　しっている　とは……\pという　ことは　きみも\nふしぎな　できごと　クラブの　なかま　だね!$"

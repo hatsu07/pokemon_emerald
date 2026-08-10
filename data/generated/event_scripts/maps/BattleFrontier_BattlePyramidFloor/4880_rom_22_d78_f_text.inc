@@ -10,7 +10,6 @@ gText_Rom_22D78F: @ 0x0822D78F
 	.endif
 	@ analyzed canonical ROM range 0x0822D7B3-0x0822DA06
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0822D7B3: @ 0x0822D7B3
 EventText_JP_0822D7B3: @ 0x0822D7B3
 	.string "この　だんの　でぐちは\n{ESCAPE}　の　ほうこうに　あるんだよ$"
 EventText_JP_0822D7D0: @ 0x0822D7D0

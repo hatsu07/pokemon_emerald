@@ -11,7 +11,6 @@ gText_Rom_255B26: @ 0x08255B26
 	.endif
 	@ analyzed canonical ROM range 0x08255B2B-0x08255C11
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08255B2B: @ 0x08255B2B
 EventText_JP_08255B2B: @ 0x08255B2B
 	.string "ルーレットを　れんぞくで　あてた$"
 EventText_JP_08255B3C: @ 0x08255B3C

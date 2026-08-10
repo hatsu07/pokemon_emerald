@@ -11,7 +11,6 @@ gText_Rom_256A1D: @ 0x08256A1D
 	.endif
 	@ analyzed canonical ROM range 0x08256A2F-0x082573DD
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08256A2F: @ 0x08256A2F
 EventScript_08256A2F: @ 0x08256A2F
 EventScript_JP_08256A2F: @ 0x08256A2F
 	@ event command: setorcopyvar

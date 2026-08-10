@@ -2,7 +2,6 @@
 gUnknown_8276CAF: @ 0x08276CAF
 	@ analyzed canonical ROM range 0x08276CAF-0x08276D0B
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08276CAF: @ 0x08276CAF
 EventScript_JP_08276CAF: @ 0x08276CAF
 	@ event command: lockall
 	.byte 0x69
@@ -36,7 +35,6 @@ EventText_JP_08276CE5: @ 0x08276CE5
 gUnknown_8276D0C: @ 0x08276D0C
 	@ analyzed canonical ROM range 0x08276D0C-0x08276D25
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08276D0C: @ 0x08276D0C
 EventScript_JP_08276D0C: @ 0x08276D0C
 	@ event command: trainerbattle
 	.byte 0x5C

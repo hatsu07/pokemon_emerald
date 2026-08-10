@@ -10,7 +10,6 @@ gText_Rom_20EA1D: @ 0x0820EA1D
 	.endif
 	@ analyzed canonical ROM range 0x0820EAC6-0x0820EBAC
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0820EAC6: @ 0x0820EAC6
 	.byte 0x00
 EventScript_JP_0820EAC7: @ 0x0820EAC7
 	@ event command: trainerbattle

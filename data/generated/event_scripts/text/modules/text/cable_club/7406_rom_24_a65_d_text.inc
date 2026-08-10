@@ -10,7 +10,6 @@ gText_Rom_24A65D: @ 0x0824A65D
 	.endif
 	@ analyzed canonical ROM range 0x0824A67B-0x0824A6A9
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0824A67B: @ 0x0824A67B
 EventScript_0824A67B: @ 0x0824A67B
 EventText_JP_0824A67B: @ 0x0824A67B
 	.string "またの　さんかを　おまち　してます!$"

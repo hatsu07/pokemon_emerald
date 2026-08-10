@@ -2,7 +2,6 @@
 gUnknown_8262393: @ 0x08262393
 	@ analyzed canonical ROM range 0x08262393-0x0826239B
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08262393: @ 0x08262393
 EventScript_08262393: @ 0x08262393
 EventScript_JP_08262393: @ 0x08262393
 	@ event command: loadword

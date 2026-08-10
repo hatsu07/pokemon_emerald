@@ -2,7 +2,6 @@
 gUnknown_863C2AC: @ 0x0863C2AC
 	.globl gSongTable
 gSongTable: @ 0x0863C2AC
-sAnalyzedData_0863C2AC: @ 0x0863C2AC
 	@ 559 x struct Song
 	song SongHeader_MUS_DUMMY, 0, 0 @ song 0
 	song SongHeader_SE_USE_ITEM, 1, 1 @ song 1

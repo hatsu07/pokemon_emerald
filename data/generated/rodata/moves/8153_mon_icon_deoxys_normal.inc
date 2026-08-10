@@ -3,7 +3,6 @@
 gMonIcon_DeoxysNormal: @ 0x08D3B89C [410]
   .incbin "build/graphics/pokemon/deoxys_normal/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D3BC9C-0x08D43F07
-sAnalyzedData_08D3BC9C: @ 0x08D3BC9C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000

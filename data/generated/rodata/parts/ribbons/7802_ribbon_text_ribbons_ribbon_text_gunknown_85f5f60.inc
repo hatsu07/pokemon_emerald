@@ -6,7 +6,6 @@ gUnknown_85F5F60: @ 0x085F5F60
 	@ confirmed contiguous ROM pointer table: 50 entries from this address
 sPointerTable_085F5F60:
 	@ analyzed canonical ROM range 0x085F5F60-0x085F6027
-sAnalyzedData_085F5F60: @ 0x085F5F60
 	@ pointer/nullable table
 	.4byte gText_Rom_5F5E58 @ +0x0
 	.4byte gText_Rom_5F5E65 @ +0x4

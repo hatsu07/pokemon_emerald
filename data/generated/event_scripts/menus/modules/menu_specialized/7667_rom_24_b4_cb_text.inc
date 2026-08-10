@@ -10,7 +10,6 @@ gText_Rom_24B4CB: @ 0x0824B4CB
 	.endif
 	@ analyzed canonical ROM range 0x0824B4DD-0x0824B4F7
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0824B4DD: @ 0x0824B4DD
 EventText_JP_0824B4DD: @ 0x0824B4DD
 	.string "つぎの　{STR_VAR_1}の　アピールに\nきたいが　たかまった!$"
 EventText_JP_0824B4F7: @ 0x0824B4F7

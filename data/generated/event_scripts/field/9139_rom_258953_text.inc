@@ -11,6 +11,5 @@ gText_Rom_258953: @ 0x08258953
 	.endif
 	@ analyzed canonical ROM range 0x0825898E-0x082589B3
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0825898E: @ 0x0825898E
 EventText_JP_0825898E: @ 0x0825898E
 	.string "あらあら!　おばさん　たちと　いっしょに\nポロックを　つくりたいのかしら?$"

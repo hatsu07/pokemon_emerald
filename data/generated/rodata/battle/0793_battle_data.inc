@@ -4,7 +4,6 @@ gContestData_08561028:
 	.globl gUnknown_8561028
 gUnknown_8561028: @ 0x08561028
 	@ analyzed canonical ROM range 0x08561028-0x085611EB
-sAnalyzedData_08561028: @ 0x08561028
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x011E, 0x114F, 0x00FF, 0x0000, 0x0000, 0x0000, 0x8A00, 0x577E
 	.2byte 0x00FF, 0x0000, 0x0700, 0x0000, 0x0FFF, 0x0C00, 0x0044, 0x002E

@@ -5,7 +5,6 @@ gDecorationData_083B8098:
 gUnknown_83B8098: @ 0x083B8098
 	@ analyzed canonical ROM range 0x083B8098-0x0845A1F3
 	@ pass3: fully recovered Tileset + MapLayout region; byte-verified
-sAnalyzedData_083B8098: @ 0x083B8098
 	.4byte Tileset_JP_083B7E9C
 
 Tileset_JP_083B809C: @ 0x083B809C

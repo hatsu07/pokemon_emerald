@@ -4,7 +4,6 @@ gLibcData_088BA568:
 	.globl gUnknown_88BA568
 gUnknown_88BA568: @ 0x088BA568
 	@ analyzed canonical ROM range 0x088BA568-0x088CF3AF
-sAnalyzedData_088BA568: @ 0x088BA568
 	@ pass3: M4A audio region; proven headers/tracks are labeled below
 
 	.globl SongHeader_MUS_END

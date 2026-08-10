@@ -11,7 +11,6 @@ gText_Rom_255C12: @ 0x08255C12
 	.endif
 	@ analyzed canonical ROM range 0x08255C18-0x08255C7D
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08255C18: @ 0x08255C18
 EventText_JP_08255C18: @ 0x08255C18
 	.string "ポロックを　つくった$"
 EventText_JP_08255C23: @ 0x08255C23
@@ -29,7 +28,6 @@ gText_Rom_255C7E: @ 0x08255C7E
 	.endif
 	@ analyzed canonical ROM range 0x08255C84-0x08255CEC
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08255C84: @ 0x08255C84
 EventScript_08255C84: @ 0x08255C84
 EventText_JP_08255C84: @ 0x08255C84
 	.string "コンテストに　さんか　した$"

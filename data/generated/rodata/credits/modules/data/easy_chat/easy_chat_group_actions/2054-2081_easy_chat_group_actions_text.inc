@@ -158,7 +158,6 @@ gText_Rom_577220: @ 0x08577220
 	.space 0x4 - (. - gText_Rom_577220)
 	.endif
 	@ analyzed canonical ROM range 0x08577224-0x085775CB
-sAnalyzedData_08577224: @ 0x08577224
 	@ struct EasyChatWordInfo[]; format verified against every 12-byte record
 	.globl gEasyChatGroup_Actions
 gEasyChatGroup_Actions: @ 0x08577224

@@ -25,7 +25,6 @@ gBerryCrushData_085CCA04:
 	.globl gUnknown_85CCA04
 gUnknown_85CCA04: @ 0x085CCA04
 	@ analyzed canonical ROM range 0x085CCA04-0x085CCA06
-sAnalyzedData_085CCA04: @ 0x085CCA04
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFD, 0x02, 0xFF
 	.globl gText_Rom_5CCA07

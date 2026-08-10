@@ -34,7 +34,6 @@ gText_Rom_577CFE: @ 0x08577CFE
 	.space 0x6 - (. - gText_Rom_577CFE)
 	.endif
 	@ analyzed canonical ROM range 0x08577D04-0x08577F22
-sAnalyzedData_08577D04: @ 0x08577D04
 	@ struct EasyChatWordInfo[]; format verified against every 12-byte record
 	.globl gEasyChatGroup_Time
 gEasyChatGroup_Time: @ 0x08577D04

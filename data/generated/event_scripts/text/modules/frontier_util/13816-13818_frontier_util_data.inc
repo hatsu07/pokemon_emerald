@@ -10,7 +10,6 @@ gText_Rom_276D5F: @ 0x08276D5F
 	.endif
 	@ analyzed canonical ROM range 0x08276D67-0x08276E15
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08276D67: @ 0x08276D67
 EventText_JP_08276D67: @ 0x08276D67
 	.string "アッハッハッ!!　はずかしく　ないのっ!?\nみんなが　みてるよっ!!$"
 EventText_JP_08276D8A: @ 0x08276D8A
@@ -39,7 +38,6 @@ gText_Rom_276E16: @ 0x08276E16
 	.space 0x5 - (. - gText_Rom_276E16)
 	.endif
 	@ analyzed canonical ROM range 0x08276E1B-0x08276F57
-sAnalyzedEventData_08276E1B: @ 0x08276E1B
 EventScript_08276E1B: @ 0x08276E1B
 	lock
 	checkplayergender

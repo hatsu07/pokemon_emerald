@@ -10,7 +10,6 @@ gText_Rom_24B512: @ 0x0824B512
 	.endif
 	@ analyzed canonical ROM range 0x0824B529-0x0824B70B
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0824B529: @ 0x0824B529
 EventText_JP_0824B529: @ 0x0824B529
 	.string "{STR_VAR_1}の\nアピールこうかが　なくなった!$"
 EventText_JP_0824B53D: @ 0x0824B53D

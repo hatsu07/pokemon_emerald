@@ -11,7 +11,6 @@ gText_Rom_255A4E: @ 0x08255A4E
 	.endif
 	@ analyzed canonical ROM range 0x08255A54-0x08255AB7
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08255A54: @ 0x08255A54
 EventScript_08255A54: @ 0x08255A54
 EventText_JP_08255A54: @ 0x08255A54
 	.string "わるあがき　した$"

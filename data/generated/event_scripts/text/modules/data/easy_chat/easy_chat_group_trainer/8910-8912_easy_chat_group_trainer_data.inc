@@ -11,7 +11,6 @@ gText_Rom_255D5D: @ 0x08255D5D
 	.endif
 	@ analyzed canonical ROM range 0x08255D63-0x08255DCD
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08255D63: @ 0x08255D63
 EventScript_08255D63: @ 0x08255D63
 EventText_JP_08255D63: @ 0x08255D63
 	.string "かいものを　した$"
@@ -29,6 +28,5 @@ gText_Rom_255DCE: @ 0x08255DCE
 	.space 0x6 - (. - gText_Rom_255DCE)
 	.endif
 	@ analyzed canonical ROM range 0x08255DD4-0x08255DDE
-sAnalyzedEventData_08255DD4: @ 0x08255DD4
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x91, 0x53, 0x8D, 0x7E, 0x89, 0x6F, 0x5C, 0x7E, 0x2D, 0x00, 0x12

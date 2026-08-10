@@ -2,7 +2,6 @@
 gUnknown_8257A89: @ 0x08257A89
 	@ analyzed canonical ROM range 0x08257A89-0x08257A97
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08257A89: @ 0x08257A89
 EventScript_JP_08257A89: @ 0x08257A89
 	@ event command: lockall
 	.byte 0x69

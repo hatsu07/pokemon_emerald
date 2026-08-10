@@ -7,8 +7,7 @@ gUnknown_8D9154C: @ 0x08D9154C
 	@ confirmed GBA LZ77 stream: compressed=0x820, decompressed=0x2000
 sLz77Block_08D9154C:
 	@ analyzed canonical ROM range 0x08D9154C-0x08D91D6B
-sAnalyzedGfx_08D9154C: @ 0x08D9154C
 	.incbin "build/graphics/analyzed/gunknown_8d9154c_08d9154c.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D9154C) != 0x820
+	.if (. - sLz77Block_08D9154C) != 0x820
 	.error "gUnknown_8D9154C compressed size mismatch"
 	.endif

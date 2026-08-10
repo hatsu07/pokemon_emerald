@@ -10,7 +10,6 @@ gText_Rom_21032F: @ 0x0821032F
 	.endif
 	@ analyzed canonical ROM range 0x08210371-0x0821040A
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08210371: @ 0x08210371
 EventScript_08210371: @ 0x08210371
 MapScripts_JP_08210371: @ 0x08210371
 	@ map script dispatch table

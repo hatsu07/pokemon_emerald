@@ -9,7 +9,6 @@ gText_Rom_578989: @ 0x08578989
 	.space 0x7 - (. - gText_Rom_578989)
 	.endif
 	@ analyzed canonical ROM range 0x08578990-0x08578D13
-sAnalyzedData_08578990: @ 0x08578990
 	@ struct EasyChatWordInfo[]; format verified against every 12-byte record
 	.globl gEasyChatGroup_TrendySaying
 gEasyChatGroup_TrendySaying: @ 0x08578990

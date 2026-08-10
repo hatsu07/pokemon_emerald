@@ -10,7 +10,6 @@ gText_Rom_22470A: @ 0x0822470A
 	.endif
 	@ analyzed canonical ROM range 0x0822470E-0x08224AC1
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0822470E: @ 0x0822470E
 EventText_JP_0822470E: @ 0x0822470E
 	.string "ほんとうに　みとめて　くれるのかね?\nうそだったら　いやすぎる　からな\pいや　ほんとうなら　いいんだ　すまなかった\nさっそく　うけつけを　すませてくる$"
 EventText_JP_0822475A: @ 0x0822475A
