@@ -4,8 +4,8 @@ gBattleTransitionData_0859F150:
 	.globl gUnknown_859F150
 gUnknown_859F150: @ 0x0859F150
 	@ analyzed canonical ROM range 0x0859F150-0x085A668F
-sAnalyzedData_0859F150: @ 0x0859F150
-	@ structured u16 table (semantic role inferred only to scalar width)
+gBattleTransitionRayquazaTilemap: @ 0x0859F150
+	@ CpuSet source for Phase2_Rayquaza_Func3; first 0x1000 bytes copied in that step.
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF
