@@ -9,8 +9,7 @@ gText_Rom_5C9299: @ 0x085C9299
 	.space 0x2 - (. - gText_Rom_5C9299)
 	.endif
 	@ analyzed canonical ROM range 0x085C929B-0x085C929C
-sAnalyzedData_085C929B: @ 0x085C929B
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gText_HofArrowPadding: @ 0x085C929B
 	.byte 0x00, 0xFF
 	.globl gUnknown_85C929D
 gUnknown_85C929D: @ 0x085C929D
@@ -26,11 +25,10 @@ gText_Rom_5C929D: @ 0x085C929D
 	.space 0xe - (. - gText_Rom_5C929D)
 	.endif
 	@ analyzed canonical ROM range 0x085C92AB-0x085C92E9
-sAnalyzedData_085C92AB: @ 0x085C92AB
-	@ Pokedex rating text fragment.
+gText_PokedexRatingIntro: @ 0x085C92AB
 	.string "みつけた ポケモン {STR_VAR_1}!\nつかまえた ポケモン {STR_VAR_2}!\pオダマキはかせの\nポケモンずかん ひょうか!\pオダマキ『どれどれ\p$"
-	.if (. - sAnalyzedData_085C92AB) != 0x3F
-	.error "sAnalyzedData_085C92AB must retain its original byte length"
+	.if (. - gText_PokedexRatingIntro) != 0x3F
+	.error "gText_PokedexRatingIntro must retain its original byte length"
 	.endif
 	.globl gText_Rom_5C92EA
 gText_Rom_5C92EA: @ 0x085C92EA
@@ -88,11 +86,10 @@ gHallOfFameData_085C934B:
 	.globl gUnknown_85C934B
 gUnknown_85C934B: @ 0x085C934B
 	@ analyzed canonical ROM range 0x085C934B-0x085C934E
-sAnalyzedData_085C934B: @ 0x085C934B
-	@ Hall of Fame label text.
+gText_HofNumberLabel: @ 0x085C934B
 	.string "No,$"
-	.if (. - sAnalyzedData_085C934B) != 0x4
-	.error "sAnalyzedData_085C934B must retain its original byte length"
+	.if (. - gText_HofNumberLabel) != 0x4
+	.error "gText_HofNumberLabel must retain its original byte length"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085C934F: hall_of_fame.s: HallOfFame_PrintMonInfo
 	.globl gHallOfFameData_085C934F
@@ -100,11 +97,10 @@ gHallOfFameData_085C934F:
 	.globl gUnknown_85C934F
 gUnknown_85C934F: @ 0x085C934F
 	@ analyzed canonical ROM range 0x085C934F-0x085C9358
-sAnalyzedData_085C934F: @ 0x085C934F
-	@ Hall of Fame label text.
+gText_HofLevelAndIdLabels: @ 0x085C934F
 	.string "Lv$IDNo,/$"
-	.if (. - sAnalyzedData_085C934F) != 0xA
-	.error "sAnalyzedData_085C934F must retain its original byte length"
+	.if (. - gText_HofLevelAndIdLabels) != 0xA
+	.error "gText_HofLevelAndIdLabels must retain its original byte length"
 	.endif
 	.globl gUnknown_85C9359
 gUnknown_85C9359: @ 0x085C9359
