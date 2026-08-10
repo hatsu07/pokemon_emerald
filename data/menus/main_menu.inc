@@ -4,7 +4,6 @@ gMainMenuData_082D2588:
 	.globl gUnknown_82D2588
 gUnknown_82D2588: @ 0x082D2588
 	@ analyzed canonical ROM range 0x082D2588-0x082D25C7
-sAnalyzedData_082D2588: @ 0x082D2588
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x53FF, 0x37FF, 0x2F7B, 0x26F7, 0x1E73, 0x19EF, 0x116B
 	.2byte 0x08E7, 0x67F8, 0x43EF, 0x376E, 0x2EED, 0x226C, 0x19EB, 0x0000
@@ -18,9 +17,8 @@ gUnknown_82D25C8: @ 0x082D25C8
 	@ confirmed GBA LZ77 stream: compressed=0x1B2, decompressed=0x600
 sLz77Block_082D25C8:
 	@ analyzed canonical ROM range 0x082D25C8-0x082D277B
-sAnalyzedGfx_082D25C8: @ 0x082D25C8
 	.incbin "build/graphics/analyzed/gunknown_82d25c8_082d25c8.4bpp.lz"
-	.if (. - sAnalyzedGfx_082D25C8) != 0x1B4
+	.if (. - sLz77Block_082D25C8) != 0x1B4
 	.error "gUnknown_82D25C8 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082D277C: main_menu.s: CB2_NewGameBirchSpeech_ReturnFromNamingScreen, sub_0803058C
@@ -31,7 +29,6 @@ gUnknown_82D277C: @ 0x082D277C
 	@ confirmed GBA LZ77 stream: compressed=0x126, decompressed=0x500
 sLz77Block_082D277C:
 	@ analyzed canonical ROM range 0x082D277C-0x082D28A5
-sAnalyzedData_082D277C: @ 0x082D277C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0x00, 0x05, 0x00, 0x3D, 0x01, 0x10, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0x50, 0x01, 0x02
 	.byte 0xF0, 0x01, 0xEF, 0xF0, 0x01, 0xF0, 0x01, 0x60, 0x01, 0x03, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01
@@ -58,7 +55,6 @@ gMainMenuData_082D28A6:
 	.globl gUnknown_82D28A6
 gUnknown_82D28A6: @ 0x082D28A6
 	@ analyzed canonical ROM range 0x082D28A6-0x082D28A7
-sAnalyzedData_082D28A6: @ 0x082D28A6
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0x53
 	@ pret/pokeemerald-jp direct xref for 0x082D28A8: main_menu.s: CB2_NewGameBirchSpeech_ReturnFromNamingScreen
@@ -67,7 +63,6 @@ gMainMenuData_082D28A8:
 	.globl gUnknown_82D28A8
 gUnknown_82D28A8: @ 0x082D28A8
 	@ analyzed canonical ROM range 0x082D28A8-0x082D28B5
-sAnalyzedData_082D28A8: @ 0x082D28A8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x37FF, 0x2F7B, 0x26F7, 0x1E73, 0x19EF, 0x116B, 0x08E7
 	.globl gUnknown_82D28B6
@@ -79,7 +74,6 @@ gMainMenuData_082D28C8:
 	.globl gUnknown_82D28C8
 gUnknown_82D28C8: @ 0x082D28C8
 	@ analyzed canonical ROM range 0x082D28C8-0x082D28D7
-sAnalyzedData_082D28C8: @ 0x082D28C8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0200, 0x1A01, 0x0F02, 0x0001, 0x0200, 0x1A05, 0x0F02, 0x0035
 	@ pret/pokeemerald-jp direct xref for 0x082D28D8: main_menu.s: Task_DisplayMainMenu
@@ -88,7 +82,6 @@ gMainMenuData_082D28D8:
 	.globl gUnknown_82D28D8
 gUnknown_82D28D8: @ 0x082D28D8
 	@ analyzed canonical ROM range 0x082D28D8-0x082D28FF
-sAnalyzedData_082D28D8: @ 0x082D28D8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0200, 0x1A01, 0x0F06, 0x0001, 0x0200, 0x1A09, 0x0F02, 0x009D
 	.2byte 0x0200, 0x1A0D, 0x0F02, 0x00D1, 0x0200, 0x1A11, 0x0F02, 0x0105
@@ -99,7 +92,6 @@ gMainMenuData_082D2900:
 	.globl gUnknown_82D2900
 gUnknown_82D2900: @ 0x082D2900
 	@ analyzed canonical ROM range 0x082D2900-0x082D290F
-sAnalyzedData_082D2900: @ 0x082D2900
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0200, 0x1A0F, 0x0F04, 0x016D, 0x00FF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x082D2910: main_menu.s: CB2_NewGameBirchSpeech_ReturnFromNamingScreen, Task_NewGameBirchSpeech_WaitForSpriteFadeInWelcome
@@ -108,7 +100,6 @@ gMainMenuData_082D2910:
 	.globl gUnknown_82D2910
 gUnknown_82D2910: @ 0x082D2910
 	@ analyzed canonical ROM range 0x082D2910-0x082D2917
-sAnalyzedData_082D2910: @ 0x082D2910
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0400, 0x160F, 0x0F04, 0x0001
 	@ pret/pokeemerald-jp direct xref for 0x082D2918: main_menu.s: NewGameBirchSpeech_ShowGenderMenu
@@ -117,7 +108,6 @@ gMainMenuData_082D2918:
 	.globl gUnknown_82D2918
 gUnknown_82D2918: @ 0x082D2918
 	@ analyzed canonical ROM range 0x082D2918-0x082D292F
-sAnalyzedData_082D2918: @ 0x082D2918
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0300, 0x0505, 0x0F04, 0x0059, 0x0300, 0x0902, 0x0F0A, 0x006D
 	.2byte 0x00FF, 0x0000, 0x0000, 0x0000
@@ -127,7 +117,6 @@ gMainMenuData_082D2930:
 	.globl gUnknown_82D2930
 gUnknown_82D2930: @ 0x082D2930
 	@ analyzed canonical ROM range 0x082D2930-0x082D294F
-sAnalyzedData_082D2930: @ 0x082D2930
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x51, 0x7E, 0xFF, 0x7F, 0xE6, 0x28, 0x8B, 0x39, 0x21, 0x08, 0x72, 0x56, 0x79, 0x77, 0xD6, 0x5E
 	.byte 0x37, 0x6F, 0x84, 0x18, 0x0F, 0x46, 0x46, 0x3D, 0xE5, 0x61, 0x27, 0x6A, 0x8B, 0x72, 0x11, 0x7B
@@ -137,7 +126,6 @@ gMainMenuData_082D2950:
 	.globl gUnknown_82D2950
 gUnknown_82D2950: @ 0x082D2950
 	@ analyzed canonical ROM range 0x082D2950-0x082D296F
-sAnalyzedData_082D2950: @ 0x082D2950
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0x7F, 0xFF, 0x7F, 0x8C, 0x31, 0x5A, 0x67, 0x3C, 0x04, 0xFF, 0x3A, 0x64, 0x06, 0xD2, 0x4B
 	.byte 0x46, 0x65, 0x14, 0x7B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -147,7 +135,6 @@ gMainMenuData_082D2970:
 	.globl gUnknown_82D2970
 gUnknown_82D2970: @ 0x082D2970
 	@ analyzed canonical ROM range 0x082D2970-0x082D2972
-sAnalyzedData_082D2970: @ 0x082D2970
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x0A, 0x0B, 0x0C
 	@ pret/pokeemerald-jp direct xref for 0x082D2973: main_menu.s: MainMenu_FormatSavegameBadges, MainMenu_FormatSavegamePlayer, MainMenu_FormatSavegamePokedex, MainMenu_FormatSavegameTime
@@ -156,7 +143,6 @@ gMainMenuData_082D2973:
 	.globl gUnknown_82D2973
 gUnknown_82D2973: @ 0x082D2973
 	@ analyzed canonical ROM range 0x082D2973-0x082D2977
-sAnalyzedData_082D2973: @ 0x082D2973
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x0A, 0x01, 0x0C, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x082D2978: main_menu.s: CB2_NewGameBirchSpeech_ReturnFromNamingScreen, InitMainMenu
@@ -165,7 +151,6 @@ gMainMenuData_082D2978:
 	.globl gUnknown_82D2978
 gUnknown_82D2978: @ 0x082D2978
 	@ analyzed canonical ROM range 0x082D2978-0x082D297F
-sAnalyzedData_082D2978: @ 0x082D2978
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x01E8, 0x0000, 0x3071, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x082D2980: main_menu.s: CB2_NewGameBirchSpeech_ReturnFromNamingScreen, sub_0803058C
@@ -174,7 +159,6 @@ gMainMenuData_082D2980:
 	.globl gUnknown_82D2980
 gUnknown_82D2980: @ 0x082D2980
 	@ analyzed canonical ROM range 0x082D2980-0x082D2983
-sAnalyzedData_082D2980: @ 0x082D2980
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xEC, 0x01, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x082D2984: main_menu.s: Task_DisplayMainMenu
@@ -183,7 +167,6 @@ gMainMenuData_082D2984:
 	.globl gUnknown_82D2984
 gUnknown_82D2984: @ 0x082D2984
 	@ analyzed canonical ROM range 0x082D2984-0x082D29A3
-sAnalyzedData_082D2984: @ 0x082D2984
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x7802, 0x0308, 0x9878, 0x0003, 0x0004, 0x0001, 0x0001, 0x0000
 	.2byte 0xFFFE, 0xFFFE, 0x3000, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
@@ -193,7 +176,6 @@ gMainMenuData_082D29A4:
 	.globl gUnknown_82D29A4
 gUnknown_82D29A4: @ 0x082D29A4
 	@ analyzed canonical ROM range 0x082D29A4-0x082D29A7
-sAnalyzedData_082D29A4: @ 0x082D29A4
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x94, 0x29, 0x2D, 0x08
 	.globl gUnknown_82D29A8
@@ -210,7 +192,6 @@ gUnknown_82D29B8: @ 0x082D29B8
 	@ confirmed contiguous ROM pointer table: 40 entries from this address
 sPointerTable_082D29B8:
 	@ analyzed canonical ROM range 0x082D29B8-0x082D2A07
-sAnalyzedData_082D29B8: @ 0x082D29B8
 	@ pointer/nullable table
 	.4byte gText_Rom_5C8E9A @ +0x0
 	.4byte gText_Rom_5C8EA0 @ +0x4
@@ -238,7 +219,6 @@ gMainMenuData_082D2A08:
 	.globl gUnknown_82D2A08
 gUnknown_82D2A08: @ 0x082D2A08
 	@ analyzed canonical ROM range 0x082D2A08-0x082D2A57
-sAnalyzedData_082D2A08: @ 0x082D2A08
 	@ pointer/nullable table
 	.4byte gText_Rom_5C8F12 @ +0x0
 	.4byte gText_Rom_5C8F18 @ +0x4

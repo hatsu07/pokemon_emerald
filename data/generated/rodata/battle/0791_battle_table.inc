@@ -4,7 +4,6 @@ gContestData_085609D0:
 	.globl gUnknown_85609D0
 gUnknown_85609D0: @ 0x085609D0
 	@ analyzed canonical ROM range 0x085609D0-0x085609D3
-sAnalyzedData_085609D0: @ 0x085609D0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x24, 0x4C, 0x74, 0x9C
 	@ pret/pokeemerald-jp direct xref for 0x085609D4: contest.s: sub_080DBC54, sub_080DD76C
@@ -13,7 +12,6 @@ gContestData_085609D4:
 	.globl gUnknown_85609D4
 gUnknown_85609D4: @ 0x085609D4
 	@ analyzed canonical ROM range 0x085609D4-0x085609D7
-sAnalyzedData_085609D4: @ 0x085609D4
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x24, 0x4C, 0x74, 0x9C
 	@ pret/pokeemerald-jp direct xref for 0x085609D8: contest.s: sub_080DBA20
@@ -22,7 +20,6 @@ gContestData_085609D8:
 	.globl gUnknown_85609D8
 gUnknown_85609D8: @ 0x085609D8
 	@ analyzed canonical ROM range 0x085609D8-0x08560A33
-sAnalyzedData_085609D8: @ 0x085609D8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x9594, 0x08C1, 0x0020, 0x4E20, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0100, 0x0100, 0x0000, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
@@ -44,7 +41,6 @@ gContestData_08560A4C:
 	.globl gUnknown_8560A4C
 gUnknown_8560A4C: @ 0x08560A4C
 	@ analyzed canonical ROM range 0x08560A4C-0x08560A6B
-sAnalyzedData_08560A4C: @ 0x08560A4C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x20, 0xE9, 0xD8, 0x08, 0xA0, 0x00, 0x22, 0x4E, 0x20, 0xE9, 0xD8, 0x08, 0xA0, 0x00, 0x23, 0x4E
 	.byte 0x20, 0xE9, 0xD8, 0x08, 0xA0, 0x00, 0x24, 0x4E, 0x20, 0xE9, 0xD8, 0x08, 0xA0, 0x00, 0x25, 0x4E
@@ -54,7 +50,6 @@ gContestData_08560A6C:
 	.globl gUnknown_8560A6C
 gUnknown_8560A6C: @ 0x08560A6C
 	@ analyzed canonical ROM range 0x08560A6C-0x08560A7B
-sAnalyzedData_08560A6C: @ 0x08560A6C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x58, 0xEC, 0xD8, 0x08, 0x22, 0x4E, 0x00, 0x00, 0x00, 0x40, 0x00, 0x40, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08560A7C: contest.s: sub_080DBC54
@@ -63,7 +58,6 @@ gContestData_08560A7C:
 	.globl gUnknown_8560A7C
 gUnknown_8560A7C: @ 0x08560A7C
 	@ analyzed canonical ROM range 0x08560A7C-0x08560AE3
-sAnalyzedData_08560A7C: @ 0x08560A7C
 	@ pointer/nullable table
 	.4byte 0x4E224E22 @ +0x0
 	.4byte 0x08560A74 @ +0x4
@@ -97,7 +91,6 @@ gContestData_08560AE4:
 	.globl gUnknown_8560AE4
 gUnknown_8560AE4: @ 0x08560AE4
 	@ analyzed canonical ROM range 0x08560AE4-0x08560B13
-sAnalyzedData_08560AE4: @ 0x08560AE4
 	@ pointer/nullable table
 	.4byte 0x00000002 @ +0x0
 	.4byte 0x08560ADC @ +0x4
@@ -117,7 +110,6 @@ gContestData_08560B14:
 	.globl gUnknown_8560B14
 gUnknown_8560B14: @ 0x08560B14
 	@ analyzed canonical ROM range 0x08560B14-0x08560B1B
-sAnalyzedData_08560B14: @ 0x08560B14
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xAC, 0xEA, 0xD8, 0x08, 0x00, 0x04, 0xE2, 0xAB
 	@ pret/pokeemerald-jp direct xref for 0x08560B1C: contest.s: CreateApplauseMeterSprite
@@ -126,7 +118,6 @@ gContestData_08560B1C:
 	.globl gUnknown_8560B1C
 gUnknown_8560B1C: @ 0x08560B1C
 	@ analyzed canonical ROM range 0x08560B1C-0x08560B2B
-sAnalyzedData_08560B1C: @ 0x08560B1C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x58, 0xEC, 0xD8, 0x08, 0xE2, 0xAB, 0x00, 0x00, 0x00, 0x40, 0x00, 0xC0, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08560B2C: contest.s: CreateApplauseMeterSprite
@@ -135,7 +126,6 @@ gContestData_08560B2C:
 	.globl gUnknown_8560B2C
 gUnknown_8560B2C: @ 0x08560B2C
 	@ analyzed canonical ROM range 0x08560B2C-0x08560B4B
-sAnalyzedData_08560B2C: @ 0x08560B2C
 	@ pointer/nullable table
 	.4byte 0xABE2ABE2 @ +0x0
 	.4byte 0x08560B24 @ +0x4
@@ -159,7 +149,6 @@ gContestData_08560B64:
 	.globl gUnknown_8560B64
 gUnknown_8560B64: @ 0x08560B64
 	@ analyzed canonical ROM range 0x08560B64-0x08560B6B
-sAnalyzedData_08560B64: @ 0x08560B64
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x2C, 0xC4, 0xC1, 0x08, 0x00, 0x08, 0x21, 0x4E
 	@ pret/pokeemerald-jp direct xref for 0x08560B6C: contest.s: sub_080DA884
@@ -168,7 +157,6 @@ gContestData_08560B6C:
 	.globl gUnknown_8560B6C
 gUnknown_8560B6C: @ 0x08560B6C
 	@ analyzed canonical ROM range 0x08560B6C-0x08560B73
-sAnalyzedData_08560B6C: @ 0x08560B6C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xC8, 0x93, 0xC1, 0x08, 0x80, 0x03, 0xE0, 0xAB
 	@ pret/pokeemerald-jp direct xref for 0x08560B74: contest.s: sub_080DA884
@@ -177,7 +165,6 @@ gContestData_08560B74:
 	.globl gUnknown_8560B74
 gUnknown_8560B74: @ 0x08560B74
 	@ analyzed canonical ROM range 0x08560B74-0x08560B7B
-sAnalyzedData_08560B74: @ 0x08560B74
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x6C, 0x95, 0xC1, 0x08, 0xE0, 0xAB, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08560B7C: contest.s: sub_080DA884
@@ -194,7 +181,6 @@ gContestData_08560B94:
 	.globl gUnknown_8560B94
 gUnknown_8560B94: @ 0x08560B94
 	@ analyzed canonical ROM range 0x08560B94-0x08560BB3
-sAnalyzedData_08560B94: @ 0x08560B94
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0x29, 0x25, 0x1F, 0x00, 0xE0, 0x03, 0x00, 0x7C, 0xFF, 0x03, 0xE0, 0x7F, 0x1F, 0x7C
 	.byte 0x5A, 0x67, 0x00, 0x00, 0x00, 0x00, 0x9C, 0x77, 0xFF, 0x7F, 0x33, 0x7F, 0xEF, 0x72, 0xFF, 0x7F
@@ -290,7 +276,6 @@ gUnknown_8560CF4: @ 0x08560CF4
 	@ confirmed contiguous ROM pointer table: 32 entries from this address
 sPointerTable_08560CF4:
 	@ analyzed canonical ROM range 0x08560CF4-0x08560D73
-sAnalyzedData_08560CF4: @ 0x08560CF4
 	@ pointer/nullable table
 	.4byte gText_Rom_24B470 @ +0x0
 	.4byte gText_Rom_24B484 @ +0x4
@@ -409,7 +394,6 @@ gContestData_08560E98:
 	.globl gUnknown_8560E98
 gUnknown_8560E98: @ 0x08560E98
 	@ analyzed canonical ROM range 0x08560E98-0x08560EA7
-sAnalyzedData_08560E98: @ 0x08560E98
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0580, 0x0000, 0x15E9, 0x0000, 0x05C2, 0x0000, 0x31A3, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08560EA8: contest.s: InitContestWindows
@@ -418,7 +402,6 @@ gContestData_08560EA8:
 	.globl gUnknown_8560EA8
 gUnknown_8560EA8: @ 0x08560EA8
 	@ analyzed canonical ROM range 0x08560EA8-0x08560F27
-sAnalyzedData_08560EA8: @ 0x08560EA8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1300, 0x0500, 0x0F02, 0x0200, 0x1300, 0x0505, 0x0F02, 0x0214
 	.2byte 0x1300, 0x050A, 0x0F02, 0x0228, 0x1300, 0x050F, 0x0F02, 0x023C
@@ -434,7 +417,6 @@ gContestData_08560F28:
 	.globl gUnknown_8560F28
 gUnknown_8560F28: @ 0x08560F28
 	@ analyzed canonical ROM range 0x08560F28-0x08560F9D
-sAnalyzedData_08560F28: @ 0x08560F28
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x51, 0x01, 0x02, 0x98, 0x78, 0x78, 0x51, 0x7E
 	.byte 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x64, 0x5C, 0x6B, 0x5A, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00

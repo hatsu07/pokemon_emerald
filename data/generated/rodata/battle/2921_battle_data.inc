@@ -4,7 +4,6 @@ gPokedexAreaScreenData_0859381C:
 	.globl gUnknown_859381C
 gUnknown_859381C: @ 0x0859381C
 	@ analyzed canonical ROM range 0x0859381C-0x0859383B
-sAnalyzedData_0859381C: @ 0x0859381C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x463F, 0x39DF, 0x6B5F, 0x211F, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
@@ -16,9 +15,8 @@ gUnknown_859383C: @ 0x0859383C
 	@ confirmed GBA LZ77 stream: compressed=0x132, decompressed=0x600
 sLz77Block_0859383C:
 	@ analyzed canonical ROM range 0x0859383C-0x0859396F
-sAnalyzedGfx_0859383C: @ 0x0859383C
 	.incbin "build/graphics/analyzed/gunknown_859383c_0859383c.4bpp.lz"
-	.if (. - sAnalyzedGfx_0859383C) != 0x134
+	.if (. - sLz77Block_0859383C) != 0x134
 	.error "gUnknown_859383C compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08593970: pokedex_area_screen.s: FindMapsWithMon
@@ -27,7 +25,6 @@ gPokedexAreaScreenData_08593970:
 	.globl gUnknown_8593970
 gUnknown_8593970: @ 0x08593970
 	@ analyzed canonical ROM range 0x08593970-0x08593971
-sAnalyzedData_08593970: @ 0x08593970
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x68, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x08593972: pokedex_area_screen.s: SetSpecialMapHasMon
@@ -36,7 +33,6 @@ gPokedexAreaScreenData_08593972:
 	.globl gUnknown_8593972
 gUnknown_8593972: @ 0x08593972
 	@ analyzed canonical ROM range 0x08593972-0x08593977
-sAnalyzedData_08593972: @ 0x08593972
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xCB, 0x00, 0xCC, 0x00, 0xCD, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08593978: pokedex_area_screen.s: FindMapsWithMon
@@ -45,7 +41,6 @@ gPokedexAreaScreenData_08593978:
 	.globl gUnknown_8593978
 gUnknown_8593978: @ 0x08593978
 	@ analyzed canonical ROM range 0x08593978-0x08593983
-sAnalyzedData_08593978: @ 0x08593978
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0148, 0x0000, 0x0022, 0x019C, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08593984: pokedex_area_screen.s: SetSpecialMapHasMon
@@ -54,7 +49,6 @@ gPokedexAreaScreenData_08593984:
 	.globl gUnknown_8593984
 gUnknown_8593984: @ 0x08593984
 	@ analyzed canonical ROM range 0x08593984-0x0859399F
-sAnalyzedData_08593984: @ 0x08593984
 	@ pointer/nullable table
 	.4byte 0x08BE0055 @ +0x0
 	.4byte 0x08A70044 @ +0x4
@@ -69,7 +63,6 @@ gPokedexAreaScreenData_085939A0:
 	.globl gUnknown_85939A0
 gUnknown_85939A0: @ 0x085939A0
 	@ analyzed canonical ROM range 0x085939A0-0x085939A3
-sAnalyzedData_085939A0: @ 0x085939A0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x03, 0x20, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085939A4: pokedex_area_screen.s: CreateAreaMarkerSprites
@@ -78,7 +71,6 @@ gPokedexAreaScreenData_085939A4:
 	.globl gUnknown_85939A4
 gUnknown_85939A4: @ 0x085939A4
 	@ analyzed canonical ROM range 0x085939A4-0x085939AB
-sAnalyzedData_085939A4: @ 0x085939A4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x39F4, 0x0859, 0x0080, 0x0002
 	@ pret/pokeemerald-jp direct xref for 0x085939AC: pokedex_area_screen.s: CreateAreaMarkerSprites
@@ -87,7 +79,6 @@ gPokedexAreaScreenData_085939AC:
 	.globl gUnknown_85939AC
 gUnknown_85939AC: @ 0x085939AC
 	@ analyzed canonical ROM range 0x085939AC-0x085939BB
-sAnalyzedData_085939AC: @ 0x085939AC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x39D4, 0x0859, 0x0002, 0x0000, 0x0000, 0x4000, 0x0400, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085939BC: pokedex_area_screen.s: CreateAreaMarkerSprites
@@ -96,7 +87,6 @@ gPokedexAreaScreenData_085939BC:
 	.globl gUnknown_85939BC
 gUnknown_85939BC: @ 0x085939BC
 	@ analyzed canonical ROM range 0x085939BC-0x08593A73
-sAnalyzedData_085939BC: @ 0x085939BC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x02, 0x00, 0x02, 0x00, 0xB4, 0x39, 0x59, 0x08, 0x04, 0xF3, 0x2B, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x41, 0x71, 0x00, 0x08, 0xDA, 0x02, 0x00, 0x00, 0x1F, 0x00, 0xDF, 0x18
@@ -116,7 +106,6 @@ gPokedexAreaScreenData_08593A74:
 	.globl gUnknown_8593A74
 gUnknown_8593A74: @ 0x08593A74
 	@ analyzed canonical ROM range 0x08593A74-0x08593A83
-sAnalyzedData_08593A74: @ 0x08593A74
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x3A9C, 0x0859, 0x0003, 0x0000, 0x0000, 0x8000, 0x0400, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08593A84: pokedex_area_screen.s: CreateAreaUnknownSprites
@@ -125,7 +114,6 @@ gPokedexAreaScreenData_08593A84:
 	.globl gUnknown_8593A84
 gUnknown_8593A84: @ 0x08593A84
 	@ analyzed canonical ROM range 0x08593A84-0x08593ABB
-sAnalyzedData_08593A84: @ 0x08593A84
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x03, 0x00, 0x03, 0x00, 0x7C, 0x3A, 0x59, 0x08, 0x04, 0xF3, 0x2B, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x41, 0x71, 0x00, 0x08, 0x5E, 0x02, 0x00, 0x00, 0x5B, 0x6F, 0x1F, 0x00
@@ -139,7 +127,6 @@ gUnknown_8593ABC: @ 0x08593ABC
 	@ confirmed GBA LZ77 stream: compressed=0x1C2, decompressed=0x600
 sLz77Block_08593ABC:
 	@ analyzed canonical ROM range 0x08593ABC-0x08593C9F
-sAnalyzedData_08593ABC: @ 0x08593ABC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0x00, 0x06, 0x00, 0x20, 0x00, 0x00, 0x00, 0x01, 0xEF, 0xEE, 0xEE, 0xF0, 0xDE, 0x02, 0xDD
 	.byte 0xDD, 0xE0, 0xCD, 0xCC, 0xCC, 0x40, 0x03, 0xBB, 0x0C, 0xE0, 0xCD, 0xBC, 0xAA, 0x10, 0x03, 0x10
@@ -180,9 +167,8 @@ gUnknown_8593CA0: @ 0x08593CA0
 	@ confirmed GBA LZ77 stream: compressed=0x6F5, decompressed=0x1C00
 sLz77Block_08593CA0:
 	@ analyzed canonical ROM range 0x08593CA0-0x08594397
-sAnalyzedGfx_08593CA0: @ 0x08593CA0
 	.incbin "build/graphics/analyzed/gunknown_8593ca0_08593ca0.4bpp.lz"
-	.if (. - sAnalyzedGfx_08593CA0) != 0x6F8
+	.if (. - sLz77Block_08593CA0) != 0x6F8
 	.error "gUnknown_8593CA0 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08594398: evolution_scene.s: InitMovingBackgroundTask
@@ -193,9 +179,8 @@ gUnknown_8594398: @ 0x08594398
 	@ confirmed GBA LZ77 stream: compressed=0x4E1, decompressed=0x800
 sLz77Block_08594398:
 	@ analyzed canonical ROM range 0x08594398-0x0859487B
-sAnalyzedGfx_08594398: @ 0x08594398
 	.incbin "build/graphics/analyzed/gunknown_8594398_08594398.4bpp.lz"
-	.if (. - sAnalyzedGfx_08594398) != 0x4E4
+	.if (. - sLz77Block_08594398) != 0x4E4
 	.error "gUnknown_8594398 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0859487C: evolution_scene.s: InitMovingBackgroundTask
@@ -206,9 +191,8 @@ gUnknown_859487C: @ 0x0859487C
 	@ confirmed GBA LZ77 stream: compressed=0x4D3, decompressed=0x800
 sLz77Block_0859487C:
 	@ analyzed canonical ROM range 0x0859487C-0x08594D4F
-sAnalyzedGfx_0859487C: @ 0x0859487C
 	.incbin "build/graphics/analyzed/gunknown_859487c_0859487c.4bpp.lz"
-	.if (. - sAnalyzedGfx_0859487C) != 0x4D4
+	.if (. - sLz77Block_0859487C) != 0x4D4
 	.error "gUnknown_859487C compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08594D50: evolution_scene.s: InitMovingBackgroundTask
@@ -217,7 +201,6 @@ gEvolutionSceneData_08594D50:
 	.globl gUnknown_8594D50
 gUnknown_8594D50: @ 0x08594D50
 	@ analyzed canonical ROM range 0x08594D50-0x085953EF
-sAnalyzedData_08594D50: @ 0x08594D50
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -331,7 +314,6 @@ gEvolutionSceneData_085953F0:
 	.globl gUnknown_85953F0
 gUnknown_85953F0: @ 0x085953F0
 	@ analyzed canonical ROM range 0x085953F0-0x0859542F
-sAnalyzedData_085953F0: @ 0x085953F0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0x42, 0x08, 0x83, 0x10, 0xC5, 0x18, 0x06, 0x25, 0x48, 0x2D, 0x89, 0x39, 0xCB, 0x41
 	.byte 0x0D, 0x4A, 0x4E, 0x56, 0x90, 0x5E, 0xD1, 0x6A, 0x13, 0x73, 0x55, 0x7F, 0x00, 0x00, 0x00, 0x00

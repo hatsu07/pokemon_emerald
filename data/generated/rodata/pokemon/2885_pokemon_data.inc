@@ -2,7 +2,6 @@
 	.globl gUnknown_857CD6C
 gUnknown_857CD6C: @ 0x0857CD6C
 	@ analyzed canonical ROM range 0x0857CD6C-0x0857D413
-sAnalyzedData_0857CD6C: @ 0x0857CD6C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x04, 0x0B, 0x01, 0x01, 0xE0, 0xC6, 0x57, 0x08, 0x04, 0x09, 0x01, 0x01, 0xE7, 0xC6, 0x57, 0x08
 	.byte 0x02, 0x0E, 0x01, 0x01, 0xEE, 0xC6, 0x57, 0x08, 0x05, 0x03, 0x01, 0x01, 0xF4, 0xC6, 0x57, 0x08
@@ -117,7 +116,6 @@ gRegionMapData_0857D414:
 	.globl gUnknown_857D414
 gUnknown_857D414: @ 0x0857D414
 	@ analyzed canonical ROM range 0x0857D414-0x0857D473
-sAnalyzedData_0857D414: @ 0x0857D414
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x00CE, 0x0014, 0x0032, 0x0027, 0x00CF, 0x002C, 0x0033, 0x0029
 	.2byte 0x0034, 0x002A, 0x0035, 0x002B, 0x00D0, 0x002C, 0x0036, 0x000E
@@ -131,7 +129,6 @@ gRegionMapData_0857D474:
 	.globl gUnknown_857D474
 gUnknown_857D474: @ 0x0857D474
 	@ analyzed canonical ROM range 0x0857D474-0x0857D479
-sAnalyzedData_0857D474: @ 0x0857D474
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xCB, 0x00, 0xCC, 0x00, 0xCC, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857D47A: region_map.s: RegionMap_GetTerraCaveMapSecId
@@ -140,7 +137,6 @@ gRegionMapData_0857D47A:
 	.globl gUnknown_857D47A
 gUnknown_857D47A: @ 0x0857D47A
 	@ analyzed canonical ROM range 0x0857D47A-0x0857D49B
-sAnalyzedData_0857D47A: @ 0x0857D47A
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x001D, 0x001D, 0x001E, 0x001E, 0x001F, 0x001F, 0x0021, 0x0021
 	.2byte 0x0014, 0x0014, 0x0028, 0x0028, 0x002A, 0x002A, 0x002C, 0x002C
@@ -151,7 +147,6 @@ gRegionMapData_0857D49C:
 	.globl gUnknown_857D49C
 gUnknown_857D49C: @ 0x0857D49C
 	@ analyzed canonical ROM range 0x0857D49C-0x0857D4BB
-sAnalyzedData_0857D49C: @ 0x0857D49C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x000A, 0x0000, 0x000C, 0x0018, 0x0003, 0x0019, 0x0004
 	.2byte 0x0019, 0x0006, 0x0019, 0x0007, 0x0018, 0x000A, 0x0018, 0x000A
@@ -161,7 +156,6 @@ gRegionMapData_0857D4BC:
 	.globl gUnknown_857D4BC
 gUnknown_857D4BC: @ 0x0857D4BC
 	@ analyzed canonical ROM range 0x0857D4BC-0x0857D4EF
-sAnalyzedData_0857D4BC: @ 0x0857D4BC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0042, 0x0000, 0x0000, 0x4000, 0x0400, 0x0000, 0x0000, 0x0014
 	.2byte 0x0004, 0x0014, 0xFFFE, 0x0000, 0x0000, 0x000A, 0x0010, 0x000A
@@ -173,7 +167,6 @@ gRegionMapData_0857D4F0:
 	.globl gUnknown_857D4F0
 gUnknown_857D4F0: @ 0x0857D4F0
 	@ analyzed canonical ROM range 0x0857D4F0-0x0857D4F7
-sAnalyzedData_0857D4F0: @ 0x0857D4F0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xBC, 0xB1, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857D4F8: region_map.s: CreateRegionMapCursor
@@ -190,7 +183,6 @@ gRegionMapData_0857D510:
 	.globl gUnknown_857D510
 gUnknown_857D510: @ 0x0857D510
 	@ analyzed canonical ROM range 0x0857D510-0x0857D51F
-sAnalyzedData_0857D510: @ 0x0857D510
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x4000, 0x0800, 0x0000, 0x0000, 0x0005, 0xFFFF, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0857D520: region_map.s: CreateRegionMapPlayerIcon
@@ -199,7 +191,6 @@ gRegionMapData_0857D520:
 	.globl gUnknown_857D520
 gUnknown_857D520: @ 0x0857D520
 	@ analyzed canonical ROM range 0x0857D520-0x0857D523
-sAnalyzedData_0857D520: @ 0x0857D520
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x18, 0xD5, 0x57, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0857D524: region_map.s: sub_08124674
@@ -208,7 +199,6 @@ gRegionMapData_0857D524:
 	.globl gUnknown_857D524
 gUnknown_857D524: @ 0x0857D524
 	@ analyzed canonical ROM range 0x0857D524-0x0857D527
-sAnalyzedData_0857D524: @ 0x0857D524
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xC8, 0xC9, 0xD3, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857D528: region_map.s: MCB2_FlyMap
@@ -217,7 +207,6 @@ gRegionMapData_0857D528:
 	.globl gUnknown_857D528
 gUnknown_857D528: @ 0x0857D528
 	@ analyzed canonical ROM range 0x0857D528-0x0857D547
-sAnalyzedData_0857D528: @ 0x0857D528
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0xB9, 0x7F, 0x58, 0x7F, 0x8C, 0x31, 0x39, 0x67, 0xF7, 0x01, 0x00, 0x00, 0xCF, 0x6A
 	.byte 0xC0, 0x55, 0x24, 0x45, 0xBF, 0x0A, 0xFF, 0x08, 0x75, 0x15, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F
@@ -229,9 +218,8 @@ gUnknown_857D548: @ 0x0857D548
 	@ confirmed GBA LZ77 stream: compressed=0x38, decompressed=0xC0
 sLz77Block_0857D548:
 	@ analyzed canonical ROM range 0x0857D548-0x0857D57F
-sAnalyzedGfx_0857D548: @ 0x0857D548
 	.incbin "build/graphics/analyzed/gunknown_857d548_0857d548.4bpp.lz"
-	.if (. - sAnalyzedGfx_0857D548) != 0x38
+	.if (. - sLz77Block_0857D548) != 0x38
 	.error "gUnknown_857D548 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857D580: region_map.s: MCB2_FlyMap
@@ -242,7 +230,6 @@ gUnknown_857D580: @ 0x0857D580
 	@ confirmed GBA LZ77 stream: compressed=0xB5, decompressed=0x500
 sLz77Block_0857D580:
 	@ analyzed canonical ROM range 0x0857D580-0x0857D657
-sAnalyzedData_0857D580: @ 0x0857D580
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0x00, 0x05, 0x00, 0x1C, 0x01, 0x10, 0x02, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0x10, 0x01
 	.byte 0x03, 0x14, 0x00, 0x10, 0x00, 0x10, 0x03, 0x00, 0x03, 0xF0, 0x01, 0xDF, 0xF0, 0x01, 0xF0, 0x01
@@ -266,9 +253,8 @@ gUnknown_857D658: @ 0x0857D658
 	@ confirmed GBA LZ77 stream: compressed=0xD2, decompressed=0x1C0
 sLz77Block_0857D658:
 	@ analyzed canonical ROM range 0x0857D658-0x0857D72B
-sAnalyzedGfx_0857D658: @ 0x0857D658
 	.incbin "build/graphics/analyzed/gunknown_857d658_0857d658.4bpp.lz"
-	.if (. - sAnalyzedGfx_0857D658) != 0xD4
+	.if (. - sLz77Block_0857D658) != 0xD4
 	.error "gUnknown_857D658 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857D72C: contest_painting_effects.s: sub_08124DF4
@@ -277,7 +263,6 @@ gContestPaintingEffectsData_0857D72C:
 	.globl gUnknown_857D72C
 gUnknown_857D72C: @ 0x0857D72C
 	@ analyzed canonical ROM range 0x0857D72C-0x0857D7CB
-sAnalyzedData_0857D72C: @ 0x0857D72C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0900, 0x0001, 0x0E0A, 0x0B00, 0x000F, 0x100C, 0x0D00, 0x0011
 	.2byte 0x120E, 0x0F00, 0x0013, 0x0300, 0x0100, 0x0004, 0x0502, 0x0300
@@ -295,7 +280,6 @@ gRegionMapData_0857D7CC:
 	.globl gUnknown_857D7CC
 gUnknown_857D7CC: @ 0x0857D7CC
 	@ analyzed canonical ROM range 0x0857D7CC-0x0857D7D3
-sAnalyzedData_0857D7CC: @ 0x0857D7CC
 	@ pointer/nullable table
 	.4byte 0x0857D7C4 @ +0x0
 	.4byte 0x08B4000F @ +0x4
@@ -305,7 +289,6 @@ gRegionMapData_0857D7D4:
 	.globl gUnknown_857D7D4
 gUnknown_857D7D4: @ 0x0857D7D4
 	@ analyzed canonical ROM range 0x0857D7D4-0x0857D7DF
-sAnalyzedData_0857D7D4: @ 0x0857D7D4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x01F0, 0x0000, 0x11ED, 0x0000, 0x2DCA, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0857D7E0: region_map.s: MCB2_FlyMap
@@ -314,7 +297,6 @@ gRegionMapData_0857D7E0:
 	.globl gUnknown_857D7E0
 gUnknown_857D7E0: @ 0x0857D7E0
 	@ analyzed canonical ROM range 0x0857D7E0-0x0857D7FF
-sAnalyzedData_0857D7E0: @ 0x0857D7E0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1300, 0x0A11, 0x0F02, 0x0001, 0x1300, 0x0A0F, 0x0F04, 0x0015
 	.2byte 0x0100, 0x0A12, 0x0F02, 0x003D, 0x00FF, 0x0000, 0x0000, 0x0000
@@ -324,7 +306,6 @@ gRegionMapData_0857D800:
 	.globl gUnknown_857D800
 gUnknown_857D800: @ 0x0857D800
 	@ analyzed canonical ROM range 0x0857D800-0x0857D807
-sAnalyzedData_0857D800: @ 0x0857D800
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x38, 0xD6, 0x57, 0x08, 0x02, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857D808: region_map.s: sub_08124BCC
@@ -333,7 +314,6 @@ gRegionMapData_0857D808:
 	.globl gUnknown_857D808
 gUnknown_857D808: @ 0x0857D808
 	@ analyzed canonical ROM range 0x0857D808-0x0857D86B
-sAnalyzedData_0857D808: @ 0x0857D808
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x08A8, 0x003A, 0xFFFF, 0x00D5, 0x0000, 0x0000, 0x0800, 0x0000
 	.2byte 0x0000, 0x0005, 0xFFFF, 0x0000, 0x0001, 0x0005, 0xFFFF, 0x0000
@@ -356,7 +336,6 @@ gContestPaintingEffectsData_0857D884:
 	.globl gUnknown_857D884
 gUnknown_857D884: @ 0x0857D884
 	@ analyzed canonical ROM range 0x0857D884-0x0857FE03
-sAnalyzedData_0857D884: @ 0x0857D884
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1D00, 0x0E1C, 0x1B1E, 0x0100, 0x2E32, 0x371E, 0x220A, 0x051F
 	.2byte 0x2E26, 0x1712, 0x1A1E, 0x1103, 0x1105, 0x0518, 0x2F27, 0x3F1A

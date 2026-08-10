@@ -3618,7 +3618,6 @@ gTradeData_082FFFC8:
 	.globl gUnknown_82FFFC8
 gUnknown_82FFFC8: @ 0x082FFFC8
 	@ analyzed canonical ROM range 0x082FFFC8-0x08300833
-sAnalyzedData_082FFFC8: @ 0x082FFFC8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x80, 0x00, 0x81, 0x00, 0x81, 0x00, 0x81, 0x00, 0x82, 0x00, 0x83, 0x00, 0x90, 0x00, 0x90, 0x00
 	.byte 0x90, 0x00, 0x90, 0x00, 0x90, 0x00, 0x90, 0x04, 0x92, 0x00, 0x91, 0x00, 0x91, 0x00, 0x91, 0x00
@@ -3761,7 +3760,6 @@ gTradeData_08300834:
 	.globl gUnknown_8300834
 gUnknown_8300834: @ 0x08300834
 	@ analyzed canonical ROM range 0x08300834-0x0830083B
-sAnalyzedData_08300834: @ 0x08300834
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xEC, 0xFF, 0x2F, 0x08, 0x00, 0x08, 0x2C, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x0830083C: trade.s: sub_08079C28
@@ -3770,7 +3768,6 @@ gTradeData_0830083C:
 	.globl gUnknown_830083C
 gUnknown_830083C: @ 0x0830083C
 	@ analyzed canonical ROM range 0x0830083C-0x0830088B
-sAnalyzedData_0830083C: @ 0x0830083C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xD12C, 0x082F, 0x0929, 0x0000, 0x0000, 0x0005, 0xFFFF, 0x0000
 	.2byte 0x0008, 0x0005, 0xFFFF, 0x0000, 0x0010, 0x0005, 0xFFFF, 0x0000
@@ -3791,7 +3788,6 @@ gTradeData_083008A4:
 	.globl gUnknown_83008A4
 gUnknown_83008A4: @ 0x083008A4
 	@ analyzed canonical ROM range 0x083008A4-0x083008DB
-sAnalyzedData_083008A4: @ 0x083008A4
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xC8, 0x00, 0x3D, 0x13, 0x0C, 0x08, 0x30, 0x08, 0x74, 0x08, 0x30, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x41, 0x71, 0x00, 0x08, 0x00, 0x00, 0x29, 0x25, 0x1F, 0x00, 0xE0, 0x03
@@ -3803,7 +3799,6 @@ gTradeData_083008DC:
 	.globl gUnknown_83008DC
 gUnknown_83008DC: @ 0x083008DC
 	@ analyzed canonical ROM range 0x083008DC-0x083008E3
-sAnalyzedData_083008DC: @ 0x083008DC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x08BC, 0x0830, 0x133D, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x083008E4: trade.s: sub_08078650
@@ -3812,7 +3807,6 @@ gTradeData_083008E4:
 	.globl gUnknown_83008E4
 gUnknown_83008E4: @ 0x083008E4
 	@ analyzed canonical ROM range 0x083008E4-0x08300A1B
-sAnalyzedData_083008E4: @ 0x083008E4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0204, 0x0C0C, 0x0000, 0x0402, 0x0C0C, 0x0000, 0x0607, 0x0001
 	.2byte 0x0000, 0x0601, 0x0007, 0x0000, 0x0305, 0x0C0C, 0x0000, 0x0503
@@ -3840,7 +3834,6 @@ gTradeData_08300A1C:
 	.globl gUnknown_8300A1C
 gUnknown_8300A1C: @ 0x08300A1C
 	@ analyzed canonical ROM range 0x08300A1C-0x08300A35
-sAnalyzedData_08300A1C: @ 0x08300A1C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0501, 0x0508, 0x0A01, 0x0A08, 0x0F01, 0x0F08, 0x0510, 0x0517
 	.2byte 0x0A10, 0x0A17, 0x0F10, 0x0F17, 0x1217
@@ -3850,7 +3843,6 @@ gTradeData_08300A36:
 	.globl gUnknown_8300A36
 gUnknown_8300A36: @ 0x08300A36
 	@ analyzed canonical ROM range 0x08300A36-0x08300A4D
-sAnalyzedData_08300A36: @ 0x08300A36
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0405, 0x040C, 0x0905, 0x090C, 0x0E05, 0x0E0C, 0x0414, 0x041B
 	.2byte 0x0914, 0x091B, 0x0E14, 0x0E1B
@@ -3860,7 +3852,6 @@ gTradeData_08300A4E:
 	.globl gUnknown_8300A4E
 gUnknown_8300A4E: @ 0x08300A4E
 	@ analyzed canonical ROM range 0x08300A4E-0x08300A89
-sAnalyzedData_08300A4E: @ 0x08300A4E
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0301, 0x0308, 0x0801, 0x0808, 0x0D01, 0x0D08, 0x0310, 0x0317
 	.2byte 0x0810, 0x0817, 0x0D10, 0x0D17, 0x0E00, 0x1D0F, 0x0503, 0x0703
@@ -3872,7 +3863,6 @@ gTradeData_08300A8A:
 	.globl gUnknown_8300A8A
 gUnknown_8300A8A: @ 0x08300A8A
 	@ analyzed canonical ROM range 0x08300A8A-0x08300A94
-sAnalyzedData_08300A8A: @ 0x08300A8A
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0xFC, 0x01, 0x01, 0xFC, 0x02, 0x00, 0xFC, 0x03, 0x02, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x08300A95: daycare.s: AppendGenderSymbol
@@ -3881,7 +3871,6 @@ gDaycareData_08300A95:
 	.globl gUnknown_8300A95
 gUnknown_8300A95: @ 0x08300A95
 	@ analyzed canonical ROM range 0x08300A95-0x08300A96
-sAnalyzedData_08300A95: @ 0x08300A95
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xB5, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x08300A97: daycare.s: AppendGenderSymbol
@@ -3890,7 +3879,6 @@ gDaycareData_08300A97:
 	.globl gUnknown_8300A97
 gUnknown_8300A97: @ 0x08300A97
 	@ analyzed canonical ROM range 0x08300A97-0x08300A98
-sAnalyzedData_08300A97: @ 0x08300A97
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xB6, 0xFF
 	.globl gUnknown_8300A99
@@ -3906,7 +3894,6 @@ gTradeData_08300A9E:
 	.globl gUnknown_8300A9E
 gUnknown_8300A9E: @ 0x08300A9E
 	@ analyzed canonical ROM range 0x08300A9E-0x08300A9F
-sAnalyzedData_08300A9E: @ 0x08300A9E
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFE, 0xFF
 	.globl gUnknown_8300AA0

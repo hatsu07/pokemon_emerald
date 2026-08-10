@@ -4,7 +4,6 @@ gPokemonIconData_085570CC:
 	.globl gUnknown_85570CC
 gUnknown_85570CC: @ 0x085570CC
 	@ analyzed canonical ROM range 0x085570CC-0x0855710F
-sAnalyzedData_085570CC: @ 0x085570CC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x8000, 0x0400, 0x0000, 0x0000, 0x0006, 0x0001, 0x0006
 	.2byte 0xFFFE, 0x0000, 0x0000, 0x0008, 0x0001, 0x0008, 0xFFFE, 0x0000
@@ -19,7 +18,6 @@ gUnknown_8557110: @ 0x08557110
 	@ confirmed contiguous ROM pointer table: 5 entries from this address
 sPointerTable_08557110:
 	@ analyzed canonical ROM range 0x08557110-0x08557143
-sAnalyzedData_08557110: @ 0x08557110
 	@ pointer/nullable table
 	.4byte 0x085570D4 @ +0x0
 	.4byte 0x085570E0 @ +0x4
@@ -40,7 +38,6 @@ gPokemonIconData_08557144:
 	.globl gUnknown_8557144
 gUnknown_8557144: @ 0x08557144
 	@ analyzed canonical ROM range 0x08557144-0x0855714B
-sAnalyzedData_08557144: @ 0x08557144
 	@ pointer/nullable table
 	.4byte 0x08557124 @ +0x0
 	.4byte 0x08557134 @ +0x4
@@ -50,7 +47,6 @@ gPokemonIconData_0855714C:
 	.globl gUnknown_855714C
 gUnknown_855714C: @ 0x0855714C
 	@ analyzed canonical ROM range 0x0855714C-0x08557163
-sAnalyzedData_0855714C: @ 0x0855714C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0020, 0x0080, 0x0200, 0x0800, 0x0040, 0x0080, 0x0100, 0x0400
 	.2byte 0x0040, 0x0080, 0x0100, 0x0400
@@ -63,7 +59,6 @@ gFldeffCutData_08557166:
 	.globl gUnknown_8557166
 gUnknown_8557166: @ 0x08557166
 	@ analyzed canonical ROM range 0x08557166-0x085571C7
-sAnalyzedData_08557166: @ 0x08557166
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0001, 0xFEFF, 0x0001, 0xFE00, 0x0002, 0xFE01, 0x0003, 0xFE02
 	.2byte 0x0003, 0xFFFE, 0x0001, 0xFF02, 0x0003, 0x00FE, 0x0004, 0x0002
@@ -86,7 +81,6 @@ gMapNamePopupData_085571E0:
 	.globl gUnknown_85571E0
 gUnknown_85571E0: @ 0x085571E0
 	@ analyzed canonical ROM range 0x085571E0-0x0855885F
-sAnalyzedData_085571E0: @ 0x085571E0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xBB, 0xBB, 0xBB, 0xBB, 0xCC, 0xCC, 0xBC, 0xBB, 0xBB, 0xBB, 0xCB, 0xCC, 0xBB, 0xCC, 0xBB, 0xBB
 	.byte 0xBB, 0xBB, 0xBB, 0xBB, 0xBB, 0xBB, 0xBB, 0xBB, 0xBB, 0xBB, 0xBB, 0xBB, 0xBB, 0xCC, 0xCC, 0xCC
@@ -454,7 +448,6 @@ gMapNamePopupData_08558860:
 	.globl gUnknown_8558860
 gUnknown_8558860: @ 0x08558860
 	@ analyzed canonical ROM range 0x08558860-0x08559EDF
-sAnalyzedData_08558860: @ 0x08558860
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x80, 0x88, 0x88, 0x88, 0xA8, 0xAA, 0xAA, 0xAA, 0xA8, 0xAA, 0xAA, 0xAA, 0xD8, 0xDD, 0xBD, 0xBB
 	.byte 0x80, 0xBD, 0xBB, 0xBB, 0xD8, 0xBB, 0xBB, 0xCB, 0xA8, 0xCC, 0xCC, 0xCC, 0xA8, 0xBA, 0xBB, 0xBB
@@ -822,7 +815,6 @@ gMapNamePopupData_08559EE0:
 	.globl gUnknown_8559EE0
 gUnknown_8559EE0: @ 0x08559EE0
 	@ analyzed canonical ROM range 0x08559EE0-0x08559F9F
-sAnalyzedData_08559EE0: @ 0x08559EE0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0xC5, 0x2C, 0x00, 0x00, 0x9D, 0x77, 0xD7, 0x62, 0x31, 0x52
 	.byte 0x6B, 0x3D, 0xC5, 0x2C, 0x5F, 0x53, 0xBC, 0x3E, 0x7B, 0x3A, 0x78, 0x1D, 0xD6, 0x0C, 0x00, 0x00
@@ -842,7 +834,6 @@ gMapNamePopupData_08559FA0:
 	.globl gUnknown_8559FA0
 gUnknown_8559FA0: @ 0x08559FA0
 	@ analyzed canonical ROM range 0x08559FA0-0x08559FBF
-sAnalyzedData_08559FA0: @ 0x08559FA0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x0E, 0x53, 0x00, 0x00, 0xFD, 0x7F, 0x08, 0x3D, 0xFF, 0x7F, 0x76, 0x7F, 0xB1, 0x6A, 0xEC, 0x55
 	.byte 0x27, 0x41, 0x62, 0x2C, 0x76, 0x7F, 0xB1, 0x6A, 0xEC, 0x55, 0x27, 0x41, 0x62, 0x2C, 0xFF, 0x7F
@@ -852,7 +843,6 @@ gMapNamePopupData_08559FC0:
 	.globl gUnknown_8559FC0
 gUnknown_8559FC0: @ 0x08559FC0
 	@ analyzed canonical ROM range 0x08559FC0-0x0855A073
-sAnalyzedData_08559FC0: @ 0x08559FC0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0x01, 0x01, 0x01, 0x03, 0x01, 0x03, 0x01, 0x03
 	.byte 0x00, 0x00, 0x00, 0x00, 0x04, 0x04, 0x04, 0x04, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -872,7 +862,6 @@ gMapNamePopupData_0855A074:
 	.globl gUnknown_855A074
 gUnknown_855A074: @ 0x0855A074
 	@ analyzed canonical ROM range 0x0855A074-0x0855A663
-sAnalyzedData_0855A074: @ 0x0855A074
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xA028, 0x0855, 0xA032, 0x0855, 0xA03C, 0x0855, 0xA046, 0x0855
 	.2byte 0xA050, 0x0855, 0xA05A, 0x0855, 0xA064, 0x0855, 0xA06E, 0x0855
@@ -975,7 +964,6 @@ gItemMenuData_0855A664:
 	.globl gUnknown_855A664
 gUnknown_855A664: @ 0x0855A664
 	@ analyzed canonical ROM range 0x0855A664-0x0855A66B
-sAnalyzedData_0855A664: @ 0x0855A664
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x30, 0x90, 0xD9, 0x08, 0x00, 0x30, 0x64, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0855A66C: item_menu.s: LoadBagMenu_Graphics
@@ -984,7 +972,6 @@ gItemMenuData_0855A66C:
 	.globl gUnknown_855A66C
 gUnknown_855A66C: @ 0x0855A66C
 	@ analyzed canonical ROM range 0x0855A66C-0x0855A673
-sAnalyzedData_0855A66C: @ 0x0855A66C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xAC, 0x9B, 0xD9, 0x08, 0x00, 0x30, 0x64, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0855A674: item_menu.s: LoadBagMenu_Graphics
@@ -993,7 +980,6 @@ gItemMenuData_0855A674:
 	.globl gUnknown_855A674
 gUnknown_855A674: @ 0x0855A674
 	@ analyzed canonical ROM range 0x0855A674-0x0855A67B
-sAnalyzedData_0855A674: @ 0x0855A674
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x0C, 0xA7, 0xD9, 0x08, 0x64, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0855A67C: item_menu_icons.s: AddBagVisualSprite
@@ -1002,7 +988,6 @@ gItemMenuIconsData_0855A67C:
 	.globl gUnknown_855A67C
 gUnknown_855A67C: @ 0x0855A67C
 	@ analyzed canonical ROM range 0x0855A67C-0x0855A6C7
-sAnalyzedData_0855A67C: @ 0x0855A67C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0064, 0x0064, 0xA5D4, 0x0855, 0xA60C, 0x0855, 0x0000, 0x0000
 	.2byte 0xA65C, 0x0855, 0x7141, 0x0800, 0x0000, 0x4800, 0x0800, 0x0000
@@ -1015,7 +1000,6 @@ gItemMenuIconsData_0855A6C8:
 	.globl gUnknown_855A6C8
 gUnknown_855A6C8: @ 0x0855A6C8
 	@ analyzed canonical ROM range 0x0855A6C8-0x0855A6CB
-sAnalyzedData_0855A6C8: @ 0x0855A6C8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xA8, 0xA6, 0x55, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0855A6CC: item_menu_icons.s: SpriteCB_SwitchPocketRotatingBallInit
@@ -1024,7 +1008,6 @@ gItemMenuIconsData_0855A6CC:
 	.globl gUnknown_855A6CC
 gUnknown_855A6CC: @ 0x0855A6CC
 	@ analyzed canonical ROM range 0x0855A6CC-0x0855A6CF
-sAnalyzedData_0855A6CC: @ 0x0855A6CC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xB8, 0xA6, 0x55, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0855A6D0: item_menu_icons.s: AddSwitchPocketRotatingBallSprite
@@ -1033,7 +1016,6 @@ gItemMenuIconsData_0855A6D0:
 	.globl gUnknown_855A6D0
 gUnknown_855A6D0: @ 0x0855A6D0
 	@ analyzed canonical ROM range 0x0855A6D0-0x0855A6D7
-sAnalyzedData_0855A6D0: @ 0x0855A6D0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xB4, 0xA0, 0x55, 0x08, 0x80, 0x00, 0x65, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0855A6D8: item_menu_icons.s: AddSwitchPocketRotatingBallSprite
@@ -1042,7 +1024,6 @@ gItemMenuIconsData_0855A6D8:
 	.globl gUnknown_855A6D8
 gUnknown_855A6D8: @ 0x0855A6D8
 	@ analyzed canonical ROM range 0x0855A6D8-0x0855A6DF
-sAnalyzedData_0855A6D8: @ 0x0855A6D8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x94, 0xA0, 0x55, 0x08, 0x65, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0855A6E0: item_menu_icons.s: AddSwitchPocketRotatingBallSprite
@@ -1051,7 +1032,6 @@ gItemMenuIconsData_0855A6E0:
 	.globl gUnknown_855A6E0
 gUnknown_855A6E0: @ 0x0855A6E0
 	@ analyzed canonical ROM range 0x0855A6E0-0x0855A71B
-sAnalyzedData_0855A6E0: @ 0x0855A6E0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x65, 0x00, 0x65, 0x00, 0x94, 0xA6, 0x55, 0x08, 0xA4, 0xA6, 0x55, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0xC8, 0xA6, 0x55, 0x08, 0x35, 0x47, 0x0D, 0x08, 0x00, 0x00, 0x00, 0xC0, 0x00, 0x74, 0x00, 0x00
@@ -1063,7 +1043,6 @@ gItemMenuIconsData_0855A71C:
 	.globl gUnknown_855A71C
 gUnknown_855A71C: @ 0x0855A71C
 	@ analyzed canonical ROM range 0x0855A71C-0x0855A7AB
-sAnalyzedData_0855A71C: @ 0x0855A71C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0xFF, 0x44, 0x75, 0xF8, 0xA6, 0x55, 0x08, 0x10, 0xA7, 0x55, 0x08, 0x14, 0xA7, 0x55, 0x08
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x41, 0x71, 0x00, 0x08, 0xFF, 0xFF, 0xFF, 0xFF, 0xFD, 0x60, 0x00, 0x00
@@ -1088,7 +1067,6 @@ gItemMenuIconsData_0855A7C4:
 	.globl gUnknown_855A7C4
 gUnknown_855A7C4: @ 0x0855A7C4
 	@ analyzed canonical ROM range 0x0855A7C4-0x0855A91B
-sAnalyzedData_0855A7C4: @ 0x0855A7C4
 	@ pointer/nullable table
 	.4byte 0x08D9C650 @ +0x0
 	.4byte 0x08DA1A68 @ +0x4
@@ -1182,7 +1160,6 @@ gBerryTagScreenData_0855A91C:
 	.globl gUnknown_855A91C
 gUnknown_855A91C: @ 0x0855A91C
 	@ analyzed canonical ROM range 0x0855A91C-0x0855A923
-sAnalyzedData_0855A91C: @ 0x0855A91C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF4, 0xC4, 0xD9, 0x08, 0x00, 0x08, 0x10, 0x27
 	@ pret/pokeemerald-jp direct xref for 0x0855A924: berry_tag_screen.s: LoadBerryTagGfx
@@ -1191,7 +1168,6 @@ gBerryTagScreenData_0855A924:
 	.globl gUnknown_855A924
 gUnknown_855A924: @ 0x0855A924
 	@ analyzed canonical ROM range 0x0855A924-0x0855A93F
-sAnalyzedData_0855A924: @ 0x0855A924
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xAC, 0xC1, 0xD9, 0x08, 0x10, 0x27, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80, 0x00, 0x04, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x34, 0xA9, 0x55, 0x08
@@ -1201,7 +1177,6 @@ gItemMenuIconsData_0855A940:
 	.globl gUnknown_855A940
 gUnknown_855A940: @ 0x0855A940
 	@ analyzed canonical ROM range 0x0855A940-0x0855A9CF
-sAnalyzedData_0855A940: @ 0x0855A940
 	@ pointer/nullable table
 	.4byte 0x27102710 @ +0x0
 	.4byte 0x0855A92C @ +0x4

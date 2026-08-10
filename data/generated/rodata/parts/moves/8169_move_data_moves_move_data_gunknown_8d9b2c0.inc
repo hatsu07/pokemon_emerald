@@ -6,9 +6,8 @@ gUnknown_8D9B2C0: @ 0x08D9B2C0
 	@ confirmed GBA LZ77 stream: compressed=0x28, decompressed=0x20
 sLz77Block_08D9B2C0:
 	@ analyzed canonical ROM range 0x08D9B2C0-0x08D9B2E7
-sAnalyzedGfx_08D9B2C0: @ 0x08D9B2C0
 	.incbin "build/graphics/analyzed/gunknown_8d9b2c0_08d9b2c0.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D9B2C0) != 0x28
+	.if (. - sLz77Block_08D9B2C0) != 0x28
 	.error "gUnknown_8D9B2C0 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9B2E8: shop.s: BuyMenuDecompressBgGraphics
@@ -19,7 +18,6 @@ gUnknown_8D9B2E8: @ 0x08D9B2E8
 	@ confirmed GBA LZ77 stream: compressed=0x13E, decompressed=0x800
 sLz77Block_08D9B2E8:
 	@ analyzed canonical ROM range 0x08D9B2E8-0x08D9B4B3
-sAnalyzedData_08D9B2E8: @ 0x08D9B2E8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0x00, 0x08, 0x00, 0x30, 0x00, 0x00, 0xF0, 0x01, 0x30, 0x01, 0x02, 0x00, 0x03, 0x00, 0x6C
 	.byte 0x04, 0xF0, 0x01, 0x60, 0x01, 0x05, 0xF0, 0x32, 0xA0, 0x01, 0x10, 0x00, 0x6D, 0x0D, 0xF0, 0x01
@@ -58,9 +56,8 @@ gUnknown_8D9B4B4: @ 0x08D9B4B4
 	@ confirmed GBA LZ77 stream: compressed=0x207, decompressed=0x500
 sLz77Block_08D9B4B4:
 	@ analyzed canonical ROM range 0x08D9B4B4-0x08D9B6BB
-sAnalyzedGfx_08D9B4B4: @ 0x08D9B4B4
 	.incbin "build/graphics/analyzed/gunknown_8d9b4b4_08d9b4b4.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D9B4B4) != 0x208
+	.if (. - sLz77Block_08D9B4B4) != 0x208
 	.error "gUnknown_8D9B4B4 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9B6BC: pokeblock.spokeblock.s: sub_08135C88
@@ -71,7 +68,6 @@ gUnknown_8D9B6BC: @ 0x08D9B6BC
 	@ confirmed GBA LZ77 stream: compressed=0x6E, decompressed=0xC0
 sLz77Block_08D9B6BC:
 	@ analyzed canonical ROM range 0x08D9B6BC-0x08D9BA13
-sAnalyzedData_08D9B6BC: @ 0x08D9B6BC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0xC0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x2F, 0x5F, 0xDD, 0x7F, 0x9A, 0x7F, 0x00, 0x1F, 0x00
 	.byte 0x0E, 0x76, 0x6B, 0x31, 0xCF, 0x5E, 0x00, 0x10, 0x52, 0x00, 0x00, 0x00, 0x00, 0x18, 0x63, 0x00
@@ -135,9 +131,8 @@ gUnknown_8D9BA14: @ 0x08D9BA14
 	@ confirmed GBA LZ77 stream: compressed=0x148, decompressed=0x800
 sLz77Block_08D9BA14:
 	@ analyzed canonical ROM range 0x08D9BA14-0x08D9BB5B
-sAnalyzedGfx_08D9BA14: @ 0x08D9BA14
 	.incbin "build/graphics/analyzed/gunknown_8d9ba14_08d9ba14.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D9BA14) != 0x148
+	.if (. - sLz77Block_08D9BA14) != 0x148
 	.error "gUnknown_8D9BA14 compressed size mismatch"
 	.endif
 
@@ -199,9 +194,8 @@ gUnknown_8D9BC90: @ 0x08D9BC90
 	@ confirmed GBA LZ77 stream: compressed=0x100, decompressed=0x800
 sLz77Block_08D9BC90:
 	@ analyzed canonical ROM range 0x08D9BC90-0x08D9BD8F
-sAnalyzedGfx_08D9BC90: @ 0x08D9BC90
 	.incbin "build/graphics/analyzed/gunknown_8d9bc90_08d9bc90.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D9BC90) != 0x100
+	.if (. - sLz77Block_08D9BC90) != 0x100
 	.error "gUnknown_8D9BC90 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9BD90: berry_tag_screen.s: LoadBerryTagGfx
@@ -212,9 +206,8 @@ gUnknown_8D9BD90: @ 0x08D9BD90
 	@ confirmed GBA LZ77 stream: compressed=0x41C, decompressed=0xB40
 sLz77Block_08D9BD90:
 	@ analyzed canonical ROM range 0x08D9BD90-0x08D9C1AB
-sAnalyzedGfx_08D9BD90: @ 0x08D9BD90
 	.incbin "build/graphics/analyzed/gunknown_8d9bd90_08d9bd90.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D9BD90) != 0x41C
+	.if (. - sLz77Block_08D9BD90) != 0x41C
 	.error "gUnknown_8D9BD90 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9C1AC: berry_tag_screen.s: LoadBerryTagGfx
@@ -225,9 +218,8 @@ gUnknown_8D9C1AC: @ 0x08D9C1AC
 	@ confirmed GBA LZ77 stream: compressed=0xA8, decompressed=0xC0
 sLz77Block_08D9C1AC:
 	@ analyzed canonical ROM range 0x08D9C1AC-0x08D9C253
-sAnalyzedGfx_08D9C1AC: @ 0x08D9C1AC
 	.incbin "build/graphics/analyzed/gunknown_8d9c1ac_08d9c1ac.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D9C1AC) != 0xA8
+	.if (. - sLz77Block_08D9C1AC) != 0xA8
 	.error "gUnknown_8D9C1AC compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9C254: berry_tag_screen.s: LoadBerryTagGfx
@@ -238,8 +230,7 @@ gUnknown_8D9C254: @ 0x08D9C254
 	@ confirmed GBA LZ77 stream: compressed=0x18E, decompressed=0x800
 sLz77Block_08D9C254:
 	@ analyzed canonical ROM range 0x08D9C254-0x08D9C3E3
-sAnalyzedGfx_08D9C254: @ 0x08D9C254
 	.incbin "build/graphics/analyzed/gunknown_8d9c254_08d9c254.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D9C254) != 0x190
+	.if (. - sLz77Block_08D9C254) != 0x190
 	.error "gUnknown_8D9C254 compressed size mismatch"
 	.endif

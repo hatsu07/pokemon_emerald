@@ -6,7 +6,6 @@ gUnknown_8551868: @ 0x08551868
 	@ confirmed contiguous ROM pointer table: 48 entries from this address
 sPointerTable_08551868:
 	@ analyzed canonical ROM range 0x08551868-0x08555A3F
-sAnalyzedData_08551868: @ 0x08551868
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x14, 0xCC, 0x54, 0x08, 0x98, 0xD0, 0x54, 0x08, 0xD4, 0xCB, 0x54, 0x08, 0xB8, 0xD1, 0x54, 0x08
 	.byte 0xD0, 0xD4, 0x54, 0x08, 0x78, 0xD1, 0x54, 0x08, 0xEC, 0xD5, 0x54, 0x08, 0xA0, 0xD9, 0x54, 0x08
@@ -1070,7 +1069,6 @@ gUnknown_8555A40: @ 0x08555A40
 	@ confirmed contiguous ROM pointer table: 78 entries from this address
 sPointerTable_08555A40:
 	@ analyzed canonical ROM range 0x08555A40-0x08555AFF
-sAnalyzedData_08555A40: @ 0x08555A40
 	@ pointer/nullable table
 	.4byte 0x085519E8 @ +0x0
 	.4byte 0x08551BDC @ +0x4
@@ -1126,7 +1124,6 @@ gPokemonStorageSystemData_08555B00:
 	.globl gUnknown_8555B00
 gUnknown_8555B00: @ 0x08555B00
 	@ analyzed canonical ROM range 0x08555B00-0x08555B7B
-sAnalyzedData_08555B00: @ 0x08555B00
 	@ pointer/nullable table
 	.4byte 0x08555250 @ +0x0
 	.4byte 0x08555294 @ +0x4
@@ -1165,7 +1162,6 @@ gPokemonStorageSystemData_08555B7C:
 	.globl gUnknown_8555B7C
 gUnknown_8555B7C: @ 0x08555B7C
 	@ analyzed canonical ROM range 0x08555B7C-0x08555BA3
-sAnalyzedData_08555B7C: @ 0x08555B7C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1928, 0x0855, 0x0080, 0x0006, 0x4000, 0x8000, 0x0800, 0x0000
 	.2byte 0x0000, 0x0005, 0xFFFF, 0x0000, 0x0008, 0x0005, 0xFFFF, 0x0000
@@ -1176,7 +1172,6 @@ gPokemonStorageSystemData_08555BA4:
 	.globl gUnknown_8555BA4
 gUnknown_8555BA4: @ 0x08555BA4
 	@ analyzed canonical ROM range 0x08555BA4-0x08555BDB
-sAnalyzedData_08555BA4: @ 0x08555BA4
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x03, 0x00, 0xC9, 0xDA, 0x84, 0x5B, 0x55, 0x08, 0x9C, 0x5B, 0x55, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x41, 0x71, 0x00, 0x08, 0x00, 0x80, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00
@@ -1188,7 +1183,6 @@ gPokemonStorageSystemData_08555BDC:
 	.globl gUnknown_8555BDC
 gUnknown_8555BDC: @ 0x08555BDC
 	@ analyzed canonical ROM range 0x08555BDC-0x08556493
-sAnalyzedData_08555BDC: @ 0x08555BDC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0006, 0xDACA, 0x5BBC, 0x0855, 0x5BD4, 0x0855, 0x0000, 0x0000
 	.2byte 0xF310, 0x082B, 0xCA8D, 0x080C, 0x7F1F, 0x5652, 0x2D4A, 0x2F9F
@@ -1341,7 +1335,6 @@ gPokemonStorageSystemData_085564A0:
 	.globl gUnknown_85564A0
 gUnknown_85564A0: @ 0x085564A0
 	@ analyzed canonical ROM range 0x085564A0-0x085564B7
-sAnalyzedData_085564A0: @ 0x085564A0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0022, 0x0039, 0x0022, 0x0123, 0x0A10, 0x0046, 0x0A10, 0x00F9
 	.2byte 0x0E10, 0x0046, 0x0E10, 0x00F9
@@ -1364,7 +1357,6 @@ gPokemonStorageSystemData_085564E0:
 	.globl gUnknown_85564E0
 gUnknown_85564E0: @ 0x085564E0
 	@ analyzed canonical ROM range 0x085564E0-0x085564F7
-sAnalyzedData_085564E0: @ 0x085564E0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x5C14, 0x0855, 0x0800, 0x0000, 0x6414, 0x0855, 0x0080, 0x0001
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000
@@ -1374,7 +1366,6 @@ gPokemonStorageSystemData_085564F8:
 	.globl gUnknown_85564F8
 gUnknown_85564F8: @ 0x085564F8
 	@ analyzed canonical ROM range 0x085564F8-0x0855654B
-sAnalyzedData_085564F8: @ 0x085564F8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x5BF4, 0x0855, 0xDAC7, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x8000, 0x0400, 0x0000, 0x0000, 0x4000, 0x0400, 0x0000
@@ -1404,7 +1395,6 @@ gPokemonStorageSystemData_0855657C:
 	.globl gUnknown_855657C
 gUnknown_855657C: @ 0x0855657C
 	@ analyzed canonical ROM range 0x0855657C-0x08556617
-sAnalyzedData_0855657C: @ 0x0855657C
 	@ pointer/nullable table
 	.4byte 0x085CB371 @ +0x0
 	.4byte 0x085CB378 @ +0x4
@@ -1451,7 +1441,6 @@ gPokemonStorageSystemData_08556618:
 	.globl gUnknown_8556618
 gUnknown_8556618: @ 0x08556618
 	@ analyzed canonical ROM range 0x08556618-0x0855661F
-sAnalyzedData_08556618: @ 0x08556618
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0A00, 0x1403, 0x0912, 0x000A
 	@ pret/pokeemerald-jp direct xref for 0x08556620: pokemon_storage_system.s: sub_080D10B8
@@ -1460,7 +1449,6 @@ gPokemonStorageSystemData_08556620:
 	.globl gUnknown_8556620
 gUnknown_8556620: @ 0x08556620
 	@ analyzed canonical ROM range 0x08556620-0x0855676B
-sAnalyzedData_08556620: @ 0x08556620
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xBB, 0xBB, 0xBB, 0xBB, 0x99, 0x99, 0x99, 0x99, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11
 	.byte 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11
@@ -1497,7 +1485,6 @@ gPokemonStorageSystemData_08556784:
 	.globl gUnknown_8556784
 gUnknown_8556784: @ 0x08556784
 	@ analyzed canonical ROM range 0x08556784-0x085567A3
-sAnalyzedData_08556784: @ 0x08556784
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x0100, 0x0200, 0x0100, 0x0100, 0x0200, 0x0200, 0x0200
 	.2byte 0x0080, 0x0080, 0x0100, 0x0100, 0x0200, 0x0200, 0x0400, 0x0400

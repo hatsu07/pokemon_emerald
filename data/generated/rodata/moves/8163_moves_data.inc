@@ -6,9 +6,8 @@ gUnknown_8D8A918: @ 0x08D8A918
 	@ confirmed GBA LZ77 stream: compressed=0x11E, decompressed=0x800
 sLz77Block_08D8A918:
 	@ analyzed canonical ROM range 0x08D8A918-0x08D8AA37
-sAnalyzedGfx_08D8A918: @ 0x08D8A918
 	.incbin "build/graphics/analyzed/gunknown_8d8a918_08d8a918.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D8A918) != 0x120
+	.if (. - sLz77Block_08D8A918) != 0x120
 	.error "gUnknown_8D8A918 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8AA38: intro.s: Task_IntroLoadClouds1
@@ -19,9 +18,8 @@ gUnknown_8D8AA38: @ 0x08D8AA38
 	@ confirmed GBA LZ77 stream: compressed=0x729, decompressed=0x2000
 sLz77Block_08D8AA38:
 	@ analyzed canonical ROM range 0x08D8AA38-0x08D8B163
-sAnalyzedGfx_08D8AA38: @ 0x08D8AA38
 	.incbin "build/graphics/analyzed/gunknown_8d8aa38_08d8aa38.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D8AA38) != 0x72C
+	.if (. - sLz77Block_08D8AA38) != 0x72C
 	.error "gUnknown_8D8AA38 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8B164: intro.s: Task_IntroLoadClouds2
@@ -32,9 +30,8 @@ gUnknown_8D8B164: @ 0x08D8B164
 	@ confirmed GBA LZ77 stream: compressed=0x2BE, decompressed=0x1000
 sLz77Block_08D8B164:
 	@ analyzed canonical ROM range 0x08D8B164-0x08D8B423
-sAnalyzedGfx_08D8B164: @ 0x08D8B164
 	.incbin "build/graphics/analyzed/gunknown_8d8b164_08d8b164.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D8B164) != 0x2C0
+	.if (. - sLz77Block_08D8B164) != 0x2C0
 	.error "gUnknown_8D8B164 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8B424: intro.s: Task_IntroLoadClouds2
@@ -45,9 +42,8 @@ gUnknown_8D8B424: @ 0x08D8B424
 	@ confirmed GBA LZ77 stream: compressed=0x2A6, decompressed=0x1000
 sLz77Block_08D8B424:
 	@ analyzed canonical ROM range 0x08D8B424-0x08D8B6CB
-sAnalyzedGfx_08D8B424: @ 0x08D8B424
 	.incbin "build/graphics/analyzed/gunknown_8d8b424_08d8b424.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D8B424) != 0x2A8
+	.if (. - sLz77Block_08D8B424) != 0x2A8
 	.error "gUnknown_8D8B424 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8B6CC: intro.s: Task_IntroLoadClouds1
@@ -58,7 +54,6 @@ gUnknown_8D8B6CC: @ 0x08D8B6CC
 	@ confirmed GBA LZ77 stream: compressed=0x124, decompressed=0x800
 sLz77Block_08D8B6CC:
 	@ analyzed canonical ROM range 0x08D8B6CC-0x08D8BA57
-sAnalyzedData_08D8B6CC: @ 0x08D8B6CC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0x00, 0x08, 0x00, 0x3F, 0x00, 0x00, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0
 	.byte 0x01, 0xF0, 0x01, 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01
@@ -125,9 +120,8 @@ gUnknown_8D8BA58: @ 0x08D8BA58
 	@ confirmed GBA LZ77 stream: compressed=0x6F6, decompressed=0x2000
 sLz77Block_08D8BA58:
 	@ analyzed canonical ROM range 0x08D8BA58-0x08D8C14F
-sAnalyzedGfx_08D8BA58: @ 0x08D8BA58
 	.incbin "build/graphics/analyzed/gunknown_8d8ba58_08d8ba58.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D8BA58) != 0x6F8
+	.if (. - sLz77Block_08D8BA58) != 0x6F8
 	.error "gUnknown_8D8BA58 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8C150: intro.s: Task_IntroLoadRayquazaLightningScene
@@ -138,7 +132,6 @@ gUnknown_8D8C150: @ 0x08D8C150
 	@ confirmed GBA LZ77 stream: compressed=0x208, decompressed=0x800
 sLz77Block_08D8C150:
 	@ analyzed canonical ROM range 0x08D8C150-0x08D8C81B
-sAnalyzedData_08D8C150: @ 0x08D8C150
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0x00, 0x08, 0x00, 0x3F, 0x00, 0x00, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0
 	.byte 0x01, 0xF0, 0x01, 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01
@@ -257,9 +250,8 @@ gUnknown_8D8C81C: @ 0x08D8C81C
 	@ confirmed GBA LZ77 stream: compressed=0x48F, decompressed=0x2000
 sLz77Block_08D8C81C:
 	@ analyzed canonical ROM range 0x08D8C81C-0x08D8CCAB
-sAnalyzedGfx_08D8C81C: @ 0x08D8C81C
 	.incbin "build/graphics/analyzed/gunknown_8d8c81c_08d8c81c.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D8C81C) != 0x490
+	.if (. - sLz77Block_08D8C81C) != 0x490
 	.error "gUnknown_8D8C81C compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8CCAC: intro.s: Task_IntroLoadRayquazaLightningScene
@@ -270,7 +262,6 @@ gUnknown_8D8CCAC: @ 0x08D8CCAC
 	@ confirmed GBA LZ77 stream: compressed=0x27A, decompressed=0x800
 sLz77Block_08D8CCAC:
 	@ analyzed canonical ROM range 0x08D8CCAC-0x08D8D3F3
-sAnalyzedData_08D8CCAC: @ 0x08D8CCAC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0x00, 0x08, 0x00, 0x3C, 0x10, 0x70, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0x30, 0x01, 0x01
 	.byte 0x40, 0xFF, 0xF0, 0x13, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x3F, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01
@@ -397,9 +388,8 @@ gUnknown_8D8D3F4: @ 0x08D8D3F4
 	@ confirmed GBA LZ77 stream: compressed=0x17C, decompressed=0x800
 sLz77Block_08D8D3F4:
 	@ analyzed canonical ROM range 0x08D8D3F4-0x08D8D56F
-sAnalyzedGfx_08D8D3F4: @ 0x08D8D3F4
 	.incbin "build/graphics/analyzed/gunknown_8d8d3f4_08d8d3f4.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D8D3F4) != 0x17C
+	.if (. - sLz77Block_08D8D3F4) != 0x17C
 	.error "gUnknown_8D8D3F4 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8D570: rock.s: AnimTask_LoadSandstormBackground
@@ -410,8 +400,7 @@ gUnknown_8D8D570: @ 0x08D8D570
 	@ confirmed GBA LZ77 stream: compressed=0x52C, decompressed=0x800
 sLz77Block_08D8D570:
 	@ analyzed canonical ROM range 0x08D8D570-0x08D8DA9B
-sAnalyzedGfx_08D8D570: @ 0x08D8D570
 	.incbin "build/graphics/analyzed/gunknown_8d8d570_08d8d570.4bpp.lz"
-	.if (. - sAnalyzedGfx_08D8D570) != 0x52C
+	.if (. - sLz77Block_08D8D570) != 0x52C
 	.error "gUnknown_8D8D570 compressed size mismatch"
 	.endif
