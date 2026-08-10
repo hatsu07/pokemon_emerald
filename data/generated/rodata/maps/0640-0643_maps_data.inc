@@ -4481,57 +4481,58 @@ sAnalyzedData_084E4CB0:
 gUnknown_84E4D5C: @ 0x084E4D5C
 	.globl gBerryTreeObjectEventGraphicsIdTablePointers
 gBerryTreeObjectEventGraphicsIdTablePointers:
-	@ analyzed canonical ROM range 0x084E4D5C-0x084E4E1B
-sAnalyzedData_084E4D5C: @ 0x084E4D5C
-	@ pointer/nullable table
-	.4byte 0x084E4BFE @ +0x0
-	.4byte 0x084E4BFE @ +0x4
-	.4byte 0x084E4BFE @ +0x8
-	.4byte 0x084E4BFE @ +0xC
-	.4byte 0x084E4BFE @ +0x10
-	.4byte 0x084E4BFE @ +0x14
-	.4byte 0x084E4BFE @ +0x18
-	.4byte 0x084E4BFE @ +0x1C
-	.4byte 0x084E4BFE @ +0x20
-	.4byte 0x084E4BFE @ +0x24
-	.4byte 0x084E4BFE @ +0x28
-	.4byte 0x084E4BFE @ +0x2C
-	.4byte 0x084E4BFE @ +0x30
-	.4byte 0x084E4BFE @ +0x34
-	.4byte 0x084E4BFE @ +0x38
-	.4byte 0x084E4BFE @ +0x3C
-	.4byte 0x084E4BFE @ +0x40
-	.4byte 0x084E4BFE @ +0x44
-	.4byte 0x084E4BFE @ +0x48
-	.4byte 0x084E4BFE @ +0x4C
-	.4byte 0x084E4BFE @ +0x50
-	.4byte 0x084E4BFE @ +0x54
-	.4byte 0x084E4BFE @ +0x58
-	.4byte 0x084E4BFE @ +0x5C
-	.4byte 0x084E4BFE @ +0x60
-	.4byte 0x084E4BFE @ +0x64
-	.4byte 0x084E4BFE @ +0x68
-	.4byte 0x084E4BFE @ +0x6C
-	.4byte 0x084E4BFE @ +0x70
-	.4byte 0x084E4BFE @ +0x74
-	.4byte 0x084E4BFE @ +0x78
-	.4byte 0x084E4BFE @ +0x7C
-	.4byte 0x084E4BFE @ +0x80
-	.4byte 0x084E4BFE @ +0x84
-	.4byte 0x084E4BFE @ +0x88
-	.4byte 0x084E4BFE @ +0x8C
-	.4byte 0x084E4BFE @ +0x90
-	.4byte 0x084E4BFE @ +0x94
-	.4byte 0x084E4BFE @ +0x98
-	.4byte 0x084E4BFE @ +0x9C
-	.4byte 0x084E4BFE @ +0xA0
-	.4byte 0x084E4BFE @ +0xA4
-	.4byte 0x084E4BFE @ +0xA8
-	.4byte 0x084E4BFE @ +0xAC
-	.4byte 0x084E4BFE @ +0xB0
-	.4byte 0x084E4BFE @ +0xB4
-	.4byte 0x084CFC0C @ +0xB8
-	.4byte 0x00001004 @ +0xBC
+	@ berry tree ObjectEvent graphics-id table pointers indexed by berry type
+sAnalyzedData_084E4D5C:
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x0
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x4
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x8
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0xC
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x10
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x14
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x18
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x1C
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x20
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x24
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x28
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x2C
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x30
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x34
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x38
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x3C
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x40
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x44
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x48
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x4C
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x50
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x54
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x58
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x5C
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x60
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x64
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x68
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x6C
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x70
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x74
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x78
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x7C
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x80
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x84
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x88
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x8C
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x90
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x94
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x98
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x9C
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0xA0
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0xA4
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0xA8
+sBerryTreeObjectEventGraphicsIdPointerTail_084E4E08: @ 0x084E4E08
+	@ unreferenced tail after berry tree graphics-id pointer table; semantic owner unresolved
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE
+	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE
+	.4byte 0x084CFC0C
+	.4byte 0x00001004
 	@ pret/pokeemerald-jp direct xref for 0x084E4E1C: faraway_island.s: sub_081D4110
 	.globl gFarawayIslandData_084E4E1C
 gFarawayIslandData_084E4E1C:

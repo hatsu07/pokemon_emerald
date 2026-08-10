@@ -15,6 +15,7 @@ PIC_BLOCK_START = 0x084E429C
 PIC_TABLE_START = 0x084E4C04
 PALETTE_SLOT_TABLE_START = 0x084E4CB0
 OBJECT_GFX_ID_TABLE_START = 0x084E4D5C
+FARAWAY_ISLAND_START = 0x084E4E1C
 BERRY_COUNT = 43
 
 
@@ -163,6 +164,37 @@ def build_palette_slot_table_block() -> str:
     return build_pointer_table("\n".join(header), "", PALETTE_SLOT_TABLE_START, BERRY_COUNT, palette_slots_label)
 
 
+def build_object_graphics_id_table_block() -> str:
+    rom = ROM.read_bytes()
+    header = [
+        "\t.globl gUnknown_84E4D5C",
+        "gUnknown_84E4D5C: @ 0x084E4D5C",
+        "\t.globl gBerryTreeObjectEventGraphicsIdTablePointers",
+        "gBerryTreeObjectEventGraphicsIdTablePointers:",
+        "\t@ berry tree ObjectEvent graphics-id table pointers indexed by berry type",
+        "sAnalyzedData_084E4D5C:",
+    ]
+    lines = header
+    for index in range(BERRY_COUNT):
+        ptr = u32(rom, OBJECT_GFX_ID_TABLE_START + index * 4)
+        lines.append(f"\t.4byte {object_graphics_ids_label(ptr)} @ +0x{index * 4:X}")
+    tail_start = OBJECT_GFX_ID_TABLE_START + BERRY_COUNT * 4
+    if tail_start < FARAWAY_ISLAND_START:
+        lines.extend(
+            [
+                f"sBerryTreeObjectEventGraphicsIdPointerTail_084E4E08: @ 0x{tail_start:08X}",
+                "\t@ unreferenced tail after berry tree graphics-id pointer table; semantic owner unresolved",
+            ]
+        )
+        for addr in range(tail_start, FARAWAY_ISLAND_START, 4):
+            value = u32(rom, addr)
+            if value in {u32(rom, OBJECT_GFX_ID_TABLE_START + index * 4) for index in range(BERRY_COUNT)}:
+                lines.append(f"\t.4byte {object_graphics_ids_label(value)}")
+            else:
+                lines.append(f"\t.4byte 0x{value:08X}")
+    return "\n".join(lines) + "\n"
+
+
 def rewrite(text: str) -> str:
     rom = ROM.read_bytes()
     text = rewrite_between(
@@ -176,6 +208,12 @@ def rewrite(text: str) -> str:
         "\t.globl gUnknown_84E4C04\n",
         "\t.globl gUnknown_84E4D5C\n",
         build_pic_table_block() + build_palette_slot_table_block(),
+    )
+    text = rewrite_between(
+        text,
+        "\t.globl gUnknown_84E4D5C\n",
+        "\t@ pret/pokeemerald-jp direct xref for 0x084E4E1C: faraway_island.s: sub_081D4110\n",
+        build_object_graphics_id_table_block(),
     )
     text = text.replace(", 0x084E429C, gDummySpriteAffineAnimTable", f", {pic_label(PIC_BLOCK_START)}, gDummySpriteAffineAnimTable")
     return text
