@@ -89,8 +89,11 @@ gHallOfFameData_085C934B:
 gUnknown_85C934B: @ 0x085C934B
 	@ analyzed canonical ROM range 0x085C934B-0x085C934E
 sAnalyzedData_085C934B: @ 0x085C934B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xC8, 0xE3, 0xB8, 0xFF
+	@ Hall of Fame label text.
+	.string "No,$"
+	.if (. - sAnalyzedData_085C934B) != 0x4
+	.error "sAnalyzedData_085C934B must retain its original byte length"
+	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085C934F: hall_of_fame.s: HallOfFame_PrintMonInfo
 	.globl gHallOfFameData_085C934F
 gHallOfFameData_085C934F:
@@ -98,8 +101,11 @@ gHallOfFameData_085C934F:
 gUnknown_85C934F: @ 0x085C934F
 	@ analyzed canonical ROM range 0x085C934F-0x085C9358
 sAnalyzedData_085C934F: @ 0x085C934F
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xC6, 0xEA, 0xFF, 0xC3, 0xBE, 0xC8, 0xE3, 0xB8, 0xBA, 0xFF
+	@ Hall of Fame label text.
+	.string "Lv$IDNo,/$"
+	.if (. - sAnalyzedData_085C934F) != 0xA
+	.error "sAnalyzedData_085C934F must retain its original byte length"
+	.endif
 	.globl gUnknown_85C9359
 gUnknown_85C9359: @ 0x085C9359
 
