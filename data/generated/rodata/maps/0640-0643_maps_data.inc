@@ -1,9 +1,7 @@
 	@ pret/pokeemerald-jp direct xref for 0x084DDE4C: event_object_movement.s: CreateReflectionEffectSprites; faraway_island.s: sub_081D4110; field_effect.s: FldEff_LavaridgeGymWarp, FldEff_NPCFlyOut, FldEff_PopOutOfAsh, sub_080B86F0, sub_080B8C1C; field_effect_helpers.s: CreateWarpArrowSpr...
-	.globl gUnknown_84DDE4C
-gUnknown_84DDE4C: @ 0x084DDE4C
-	@ analyzed canonical ROM range 0x084DDE4C-0x084E18FF
 	.globl gFieldEffectObjectTemplatePointers
-gFieldEffectObjectTemplatePointers:
+gFieldEffectObjectTemplatePointers: @ 0x084DDE4C
+	@ analyzed canonical ROM range 0x084DDE4C-0x084E18FF
 	@ 37-entry table; order verified against field_effect_object_template_pointers.h.
 	.4byte gFieldEffectObjectTemplate_ShadowSmall
 	.4byte gFieldEffectObjectTemplate_ShadowMedium
@@ -2789,8 +2787,6 @@ sObjectEventAffineAnimTable_084E18E8: @ 0x084E18E8
 	.4byte sObjectEventAffineAnimCmd_084E14B4
 	.globl gEventObjectMovementData_084E1900
 gEventObjectMovementData_084E1900:
-	.globl gUnknown_84E1900
-gUnknown_84E1900: @ 0x084E1900
 	@ analyzed canonical ROM range 0x084E1900-0x084E401B
 sObjectEventGraphicsResources: @ 0x084E1900
 	@ ObjectEvent graphics resource tables plus 245 proven struct ObjectEventGraphicsInfo objects.
@@ -3825,8 +3821,6 @@ gObjectEventGraphicsInfo_JP_238: @ 0x084E3FF8
 	object_event_graphics_info 0xFFFF, 0x1120, 0x11FF, 0x0200, 32, 32, 0x1A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E15A4, gSpriteFrameImages_JP_084E0D78, gDummySpriteAffineAnimTable
 	.globl gEventObjectMovementData_084E401C
 gEventObjectMovementData_084E401C:
-	.globl gUnknown_84E401C
-gUnknown_84E401C: @ 0x084E401C
 	@ ObjectEvent SpritePalette table used by PatchObjectPalette.
 sObjectEventSpritePalettes: @ 0x084E401C
 	rodata_sprite_palette gObjectEventPal_JP_08485D0C, 0x1103
@@ -3874,8 +3868,6 @@ sObjectEventPaletteTagList_084E414C: @ 0x084E414C
 	@ pret/pokeemerald-jp direct xref for 0x084E4154: event_object_movement.s: LoadPlayerObjectReflectionPalette
 	.globl gEventObjectMovementData_084E4154
 gEventObjectMovementData_084E4154:
-	.globl gUnknown_84E4154
-gUnknown_84E4154: @ 0x084E4154
 	@ ObjectEvent reflection palette override table.
 sPlayerObjectReflectionPaletteOverrides: @ 0x084E4154
 	.2byte 0x1100, 0
@@ -3911,8 +3903,6 @@ sObjectEventPaletteTagList_084E41C4: @ 0x084E41C4
 	@ pret/pokeemerald-jp direct xref for 0x084E41CC: event_object_movement.s: GetObjectPaletteTag, LoadSpecialObjectReflectionPalette
 	.globl gEventObjectMovementData_084E41CC
 gEventObjectMovementData_084E41CC:
-	.globl gUnknown_84E41CC
-gUnknown_84E41CC: @ 0x084E41CC
 	@ ObjectEvent special reflection palette override table.
 sSpecialObjectReflectionPaletteOverrides: @ 0x084E41CC
 	.2byte 0x1100, 0
@@ -3954,8 +3944,6 @@ sObjectEventPaletteTagList_084E4278: @ 0x084E4278
 	@ pret/pokeemerald-jp direct xref for 0x084E428C: event_object_movement.s: GetObjectPaletteTag, InitEventObjectPalettes
 	.globl gEventObjectMovementData_084E428C
 gEventObjectMovementData_084E428C:
-	.globl gUnknown_84E428C
-gUnknown_84E428C: @ 0x084E428C
 	@ ObjectEvent default palette tag-list pointers.
 sObjectEventDefaultPaletteTagListPointers: @ 0x084E428C
 	.4byte sObjectEventPaletteTagList_084E423C
@@ -4385,8 +4373,6 @@ sBerryTreePaletteSlots_084E4BF4: @ 0x084E4BF4
 sBerryTreeObjectEventGraphicsIds_084E4BFE: @ 0x084E4BFE
 	@ berry tree ObjectEvent graphics ids indexed by growth stage
 	.byte 0x3D, 0x3D, 0x3E, 0x3E, 0x3E, 0x00
-	.globl gUnknown_84E4C04
-gUnknown_84E4C04: @ 0x084E4C04
 	.globl gBerryTreePicTablePointers
 gBerryTreePicTablePointers:
 	@ berry tree SpriteFrameImage table pointers indexed by berry type
@@ -4433,8 +4419,6 @@ gBerryTreePicTablePointers:
 	.4byte gSpriteFrameImages_JP_084E4B0C @ +0xA0
 	.4byte gSpriteFrameImages_JP_084E4ABC @ +0xA4
 	.4byte gSpriteFrameImages_JP_084E4B5C @ +0xA8
-	.globl gUnknown_84E4CB0
-gUnknown_84E4CB0: @ 0x084E4CB0
 	.globl gBerryTreePaletteSlotTablePointers
 gBerryTreePaletteSlotTablePointers:
 	@ berry tree palette-slot table pointers indexed by berry type
@@ -4481,8 +4465,6 @@ gBerryTreePaletteSlotTablePointers:
 	.4byte sBerryTreePaletteSlots_084E4B54 @ +0xA0
 	.4byte sBerryTreePaletteSlots_084E4B04 @ +0xA4
 	.4byte sBerryTreePaletteSlots_084E4BA4 @ +0xA8
-	.globl gUnknown_84E4D5C
-gUnknown_84E4D5C: @ 0x084E4D5C
 	.globl gBerryTreeObjectEventGraphicsIdTablePointers
 gBerryTreeObjectEventGraphicsIdTablePointers:
 	@ berry tree ObjectEvent graphics-id table pointers indexed by berry type
@@ -4539,8 +4521,6 @@ sBerryTreeObjectEventGraphicsIdPointerTail_084E4E08: @ 0x084E4E08
 	@ pret/pokeemerald-jp direct xref for 0x084E4E1C: faraway_island.s: sub_081D4110
 	.globl gFarawayIslandData_084E4E1C
 gFarawayIslandData_084E4E1C:
-	.globl gUnknown_84E4E1C
-gUnknown_84E4E1C: @ 0x084E4E1C
 	@ analyzed canonical ROM range 0x084E4E1C-0x084E5B2F
 sFieldEffectObjectTemplatesAndSupport: @ 0x084E4E1C
 	@ 37 struct SpriteTemplate objects used by field effects.
@@ -4872,16 +4852,12 @@ gFieldEffectObjectTemplate_Rayquaza: @ 0x084E5B10
 	.byte 0x4C, 0x5D, 0x48, 0x08, 0x11, 0x10, 0x00, 0x00
 	.globl gEventObjectMovementData_084E5B30
 gEventObjectMovementData_084E5B30:
-	.globl gUnknown_84E5B30
-gUnknown_84E5B30: @ 0x084E5B30
 	@ analyzed canonical ROM range 0x084E5B30-0x084E5B3F
 sMovementDelayDurations_Wander: @ 0x084E5B30
 	.2byte 0x0020, 0x0040, 0x0060, 0x0080, 0x0020, 0x0040, 0x0080, 0x00C0
 	@ pret/pokeemerald-jp direct xref for 0x084E5B40: event_object_movement.s: MovementType_FaceDownAndLeft_Step2, MovementType_FaceDownAndRight_Step2, MovementType_FaceDownLeftAndRight_Step2, MovementType_FaceDownUpAndLeft_Step2, MovementType_FaceDownUpAndRight_Step2 (+3 more)
 	.globl gEventObjectMovementData_084E5B40
 gEventObjectMovementData_084E5B40:
-	.globl gUnknown_84E5B40
-gUnknown_84E5B40: @ 0x084E5B40
 	@ analyzed canonical ROM range 0x084E5B40-0x084E5B47
 sMovementDelayDurations_FaceDirectionPairs: @ 0x084E5B40
 	.2byte 0x0020, 0x0030, 0x0040, 0x0050
@@ -4897,8 +4873,6 @@ gUnknown_84E5B48: @ 0x084E5B48
 	@ pret/pokeemerald-jp direct xref for 0x084E5B64: event_object_movement.s: MovementType_LookAround_Step4, MovementType_WalkSequenceDownUpLeftRight_Step1, MovementType_WanderAround_Step4
 	.globl gEventObjectMovementData_084E5B64
 gEventObjectMovementData_084E5B64:
-	.globl gUnknown_84E5B64
-gUnknown_84E5B64: @ 0x084E5B64
 	@ analyzed canonical ROM range 0x084E5B64-0x084E5B67
 sMovementDirections_DownUpLeftRight: @ 0x084E5B64
 	.byte 0x01, 0x02, 0x03, 0x04
@@ -4934,8 +4908,6 @@ gUnknown_84E5BA8: @ 0x084E5BA8
 	@ pret/pokeemerald-jp direct xref for 0x084E5BC4: event_object_movement.s: MovementType_FaceDownAndUp_Step4, MovementType_WanderUpAndDown_Step4
 	.globl gEventObjectMovementData_084E5BC4
 gEventObjectMovementData_084E5BC4:
-	.globl gUnknown_84E5BC4
-gUnknown_84E5BC4: @ 0x084E5BC4
 	@ analyzed canonical ROM range 0x084E5BC4-0x084E5BC7
 sMovementDirections_DownUp: @ 0x084E5BC4
 	.byte 0x01, 0x02, 0x00, 0x00
@@ -4951,8 +4923,6 @@ gUnknown_84E5BC8: @ 0x084E5BC8
 	@ pret/pokeemerald-jp direct xref for 0x084E5BE4: event_object_movement.s: MovementType_FaceLeftAndRight_Step4, MovementType_WanderLeftAndRight_Step4
 	.globl gEventObjectMovementData_084E5BE4
 gEventObjectMovementData_084E5BE4:
-	.globl gUnknown_84E5BE4
-gUnknown_84E5BE4: @ 0x084E5BE4
 	@ analyzed canonical ROM range 0x084E5BE4-0x084E5BE7
 sMovementDirections_LeftRight: @ 0x084E5BE4
 	.byte 0x03, 0x04, 0x00, 0x00
@@ -4992,8 +4962,6 @@ gUnknown_84E5C30: @ 0x084E5C30
 	@ pret/pokeemerald-jp direct xref for 0x084E5C44: event_object_movement.s: MovementType_FaceUpAndLeft_Step4
 	.globl gEventObjectMovementData_084E5C44
 gEventObjectMovementData_084E5C44:
-	.globl gUnknown_84E5C44
-gUnknown_84E5C44: @ 0x084E5C44
 	@ analyzed canonical ROM range 0x084E5C44-0x084E5C47
 sMovementDirections_UpLeft: @ 0x084E5C44
 	.byte 0x02, 0x03, 0x00, 0x00
@@ -5007,8 +4975,6 @@ gUnknown_84E5C48: @ 0x084E5C48
 	@ pret/pokeemerald-jp direct xref for 0x084E5C5C: event_object_movement.s: MovementType_FaceUpAndRight_Step4
 	.globl gEventObjectMovementData_084E5C5C
 gEventObjectMovementData_084E5C5C:
-	.globl gUnknown_84E5C5C
-gUnknown_84E5C5C: @ 0x084E5C5C
 	@ analyzed canonical ROM range 0x084E5C5C-0x084E5C5F
 sMovementDirections_UpRight: @ 0x084E5C5C
 	.byte 0x02, 0x04, 0x00, 0x00
@@ -5022,8 +4988,6 @@ gUnknown_84E5C60: @ 0x084E5C60
 	@ pret/pokeemerald-jp direct xref for 0x084E5C74: event_object_movement.s: MovementType_FaceDownAndLeft_Step4
 	.globl gEventObjectMovementData_084E5C74
 gEventObjectMovementData_084E5C74:
-	.globl gUnknown_84E5C74
-gUnknown_84E5C74: @ 0x084E5C74
 	@ analyzed canonical ROM range 0x084E5C74-0x084E5C77
 sMovementDirections_DownLeft: @ 0x084E5C74
 	.byte 0x01, 0x03, 0x00, 0x00
@@ -5037,8 +5001,6 @@ gUnknown_84E5C78: @ 0x084E5C78
 	@ pret/pokeemerald-jp direct xref for 0x084E5C8C: event_object_movement.s: MovementType_FaceDownAndRight_Step4
 	.globl gEventObjectMovementData_084E5C8C
 gEventObjectMovementData_084E5C8C:
-	.globl gUnknown_84E5C8C
-gUnknown_84E5C8C: @ 0x084E5C8C
 	@ analyzed canonical ROM range 0x084E5C8C-0x084E5C8F
 sMovementDirections_DownRight: @ 0x084E5C8C
 	.byte 0x01, 0x04, 0x00, 0x00
@@ -5052,8 +5014,6 @@ gUnknown_84E5C90: @ 0x084E5C90
 	@ pret/pokeemerald-jp direct xref for 0x084E5CA4: event_object_movement.s: MovementType_FaceDownUpAndLeft_Step4
 	.globl gEventObjectMovementData_084E5CA4
 gEventObjectMovementData_084E5CA4:
-	.globl gUnknown_84E5CA4
-gUnknown_84E5CA4: @ 0x084E5CA4
 	@ analyzed canonical ROM range 0x084E5CA4-0x084E5CA7
 sMovementDirections_DownUpLeft: @ 0x084E5CA4
 	.byte 0x02, 0x01, 0x03, 0x01
@@ -5067,8 +5027,6 @@ gUnknown_84E5CA8: @ 0x084E5CA8
 	@ pret/pokeemerald-jp direct xref for 0x084E5CBC: event_object_movement.s: MovementType_FaceDownUpAndRight_Step4
 	.globl gEventObjectMovementData_084E5CBC
 gEventObjectMovementData_084E5CBC:
-	.globl gUnknown_84E5CBC
-gUnknown_84E5CBC: @ 0x084E5CBC
 	@ analyzed canonical ROM range 0x084E5CBC-0x084E5CBF
 sMovementDirections_DownUpRight: @ 0x084E5CBC
 	.byte 0x01, 0x02, 0x04, 0x01
@@ -5082,8 +5040,6 @@ gUnknown_84E5CC0: @ 0x084E5CC0
 	@ pret/pokeemerald-jp direct xref for 0x084E5CD4: event_object_movement.s: MovementType_FaceUpLeftAndRight_Step4
 	.globl gEventObjectMovementData_084E5CD4
 gEventObjectMovementData_084E5CD4:
-	.globl gUnknown_84E5CD4
-gUnknown_84E5CD4: @ 0x084E5CD4
 	@ analyzed canonical ROM range 0x084E5CD4-0x084E5CD7
 sMovementDirections_UpLeftRight: @ 0x084E5CD4
 	.byte 0x02, 0x03, 0x04, 0x02
@@ -5097,8 +5053,6 @@ gUnknown_84E5CD8: @ 0x084E5CD8
 	@ pret/pokeemerald-jp direct xref for 0x084E5CEC: event_object_movement.s: MovementType_FaceDownLeftAndRight_Step4
 	.globl gEventObjectMovementData_084E5CEC
 gEventObjectMovementData_084E5CEC:
-	.globl gUnknown_84E5CEC
-gUnknown_84E5CEC: @ 0x084E5CEC
 	@ analyzed canonical ROM range 0x084E5CEC-0x084E5CEF
 sMovementDirections_DownLeftRight: @ 0x084E5CEC
 	.byte 0x03, 0x04, 0x01, 0x01
@@ -5111,8 +5065,6 @@ gUnknown_84E5CF0: @ 0x084E5CF0
 	@ pret/pokeemerald-jp direct xref for 0x084E5D00: event_object_movement.s: MovementType_RotateCounterclockwise_Step3
 	.globl gEventObjectMovementData_084E5D00
 gEventObjectMovementData_084E5D00:
-	.globl gUnknown_84E5D00
-gUnknown_84E5D00: @ 0x084E5D00
 	@ analyzed canonical ROM range 0x084E5D00-0x084E5D07
 sMovementDirections_RotateCounterclockwise: @ 0x084E5D00
 	.byte 0x01, 0x04, 0x03, 0x01, 0x02, 0x00, 0x00, 0x00
@@ -5125,8 +5077,6 @@ gUnknown_84E5D08: @ 0x084E5D08
 	@ pret/pokeemerald-jp direct xref for 0x084E5D18: event_object_movement.s: MovementType_RotateClockwise_Step3
 	.globl gEventObjectMovementData_084E5D18
 gEventObjectMovementData_084E5D18:
-	.globl gUnknown_84E5D18
-gUnknown_84E5D18: @ 0x084E5D18
 	@ analyzed canonical ROM range 0x084E5D18-0x084E5D1F
 sMovementDirections_RotateClockwise: @ 0x084E5D18
 	.byte 0x01, 0x03, 0x04, 0x02, 0x01, 0x00, 0x00, 0x00
@@ -5144,8 +5094,6 @@ gUnknown_84E5D30: @ 0x084E5D30
 	@ pret/pokeemerald-jp direct xref for 0x084E5D3C: event_object_movement.s: MovementType_WalkSequenceUpRightLeftDown_Step1
 	.globl gEventObjectMovementData_084E5D3C
 gEventObjectMovementData_084E5D3C:
-	.globl gUnknown_84E5D3C
-gUnknown_84E5D3C: @ 0x084E5D3C
 	@ analyzed canonical ROM range 0x084E5D3C-0x084E5D3F
 sMovementDirections_WalkSequenceUpRightLeftDown: @ 0x084E5D3C
 	.byte 0x02, 0x04, 0x03, 0x01
@@ -5157,8 +5105,6 @@ gUnknown_84E5D40: @ 0x084E5D40
 	@ pret/pokeemerald-jp direct xref for 0x084E5D4C: event_object_movement.s: MovementType_WalkSequenceRightLeftDownUp_Step1
 	.globl gEventObjectMovementData_084E5D4C
 gEventObjectMovementData_084E5D4C:
-	.globl gUnknown_84E5D4C
-gUnknown_84E5D4C: @ 0x084E5D4C
 	@ analyzed canonical ROM range 0x084E5D4C-0x084E5D4F
 sMovementDirections_WalkSequenceRightLeftDownUp: @ 0x084E5D4C
 	.byte 0x04, 0x03, 0x01, 0x02
@@ -5170,8 +5116,6 @@ gUnknown_84E5D50: @ 0x084E5D50
 	@ pret/pokeemerald-jp direct xref for 0x084E5D5C: event_object_movement.s: MovementType_WalkSequenceDownUpRightLeft_Step1
 	.globl gEventObjectMovementData_084E5D5C
 gEventObjectMovementData_084E5D5C:
-	.globl gUnknown_84E5D5C
-gUnknown_84E5D5C: @ 0x084E5D5C
 	@ analyzed canonical ROM range 0x084E5D5C-0x084E5D5F
 sMovementDirections_WalkSequenceDownUpRightLeft: @ 0x084E5D5C
 	.byte 0x01, 0x02, 0x04, 0x03
@@ -5183,8 +5127,6 @@ gUnknown_84E5D60: @ 0x084E5D60
 	@ pret/pokeemerald-jp direct xref for 0x084E5D6C: event_object_movement.s: MovementType_WalkSequenceLeftDownUpRight_Step1
 	.globl gEventObjectMovementData_084E5D6C
 gEventObjectMovementData_084E5D6C:
-	.globl gUnknown_84E5D6C
-gUnknown_84E5D6C: @ 0x084E5D6C
 	@ analyzed canonical ROM range 0x084E5D6C-0x084E5D6F
 sMovementDirections_WalkSequenceLeftDownUpRight: @ 0x084E5D6C
 	.byte 0x03, 0x01, 0x02, 0x04
@@ -5196,8 +5138,6 @@ gUnknown_84E5D70: @ 0x084E5D70
 	@ pret/pokeemerald-jp direct xref for 0x084E5D7C: event_object_movement.s: MovementType_WalkSequenceUpLeftRightDown_Step1
 	.globl gEventObjectMovementData_084E5D7C
 gEventObjectMovementData_084E5D7C:
-	.globl gUnknown_84E5D7C
-gUnknown_84E5D7C: @ 0x084E5D7C
 	@ analyzed canonical ROM range 0x084E5D7C-0x084E5D7F
 sMovementDirections_WalkSequenceUpLeftRightDown: @ 0x084E5D7C
 	.byte 0x02, 0x03, 0x04, 0x01
@@ -5209,8 +5149,6 @@ gUnknown_84E5D80: @ 0x084E5D80
 	@ pret/pokeemerald-jp direct xref for 0x084E5D8C: event_object_movement.s: MovementType_WalkSequenceLeftRightDownUp_Step1
 	.globl gEventObjectMovementData_084E5D8C
 gEventObjectMovementData_084E5D8C:
-	.globl gUnknown_84E5D8C
-gUnknown_84E5D8C: @ 0x084E5D8C
 	@ analyzed canonical ROM range 0x084E5D8C-0x084E5D8F
 sMovementDirections_WalkSequenceLeftRightDownUp: @ 0x084E5D8C
 	.byte 0x03, 0x04, 0x01, 0x02
@@ -5227,8 +5165,6 @@ gUnknown_84E5D9C: @ 0x084E5D9C
 	@ pret/pokeemerald-jp direct xref for 0x084E5DA8: event_object_movement.s: MovementType_WalkSequenceRightDownUpLeft_Step1
 	.globl gEventObjectMovementData_084E5DA8
 gEventObjectMovementData_084E5DA8:
-	.globl gUnknown_84E5DA8
-gUnknown_84E5DA8: @ 0x084E5DA8
 	@ analyzed canonical ROM range 0x084E5DA8-0x084E5DAB
 sMovementDirections_WalkSequenceRightDownUpLeft: @ 0x084E5DA8
 	.byte 0x04, 0x01, 0x02, 0x03
@@ -5240,8 +5176,6 @@ gUnknown_84E5DAC: @ 0x084E5DAC
 	@ pret/pokeemerald-jp direct xref for 0x084E5DB8: event_object_movement.s: MovementType_WalkSequenceLeftUpDownRight_Step1
 	.globl gEventObjectMovementData_084E5DB8
 gEventObjectMovementData_084E5DB8:
-	.globl gUnknown_84E5DB8
-gUnknown_84E5DB8: @ 0x084E5DB8
 	@ analyzed canonical ROM range 0x084E5DB8-0x084E5DBB
 sMovementDirections_WalkSequenceLeftUpDownRight: @ 0x084E5DB8
 	.byte 0x03, 0x02, 0x01, 0x04
@@ -5253,8 +5187,6 @@ gUnknown_84E5DBC: @ 0x084E5DBC
 	@ pret/pokeemerald-jp direct xref for 0x084E5DC8: event_object_movement.s: MovementType_WalkSequenceUpDownRightLeft_Step1
 	.globl gEventObjectMovementData_084E5DC8
 gEventObjectMovementData_084E5DC8:
-	.globl gUnknown_84E5DC8
-gUnknown_84E5DC8: @ 0x084E5DC8
 	@ analyzed canonical ROM range 0x084E5DC8-0x084E5DCB
 sMovementDirections_WalkSequenceUpDownRightLeft: @ 0x084E5DC8
 	.byte 0x02, 0x01, 0x04, 0x03
@@ -5266,8 +5198,6 @@ gUnknown_84E5DCC: @ 0x084E5DCC
 	@ pret/pokeemerald-jp direct xref for 0x084E5DD8: event_object_movement.s: MovementType_WalkSequenceRightLeftUpDown_Step1
 	.globl gEventObjectMovementData_084E5DD8
 gEventObjectMovementData_084E5DD8:
-	.globl gUnknown_84E5DD8
-gUnknown_84E5DD8: @ 0x084E5DD8
 	@ analyzed canonical ROM range 0x084E5DD8-0x084E5DDB
 sMovementDirections_WalkSequenceRightLeftUpDown: @ 0x084E5DD8
 	.byte 0x04, 0x03, 0x02, 0x01
@@ -5279,8 +5209,6 @@ gUnknown_84E5DDC: @ 0x084E5DDC
 	@ pret/pokeemerald-jp direct xref for 0x084E5DE8: event_object_movement.s: MovementType_WalkSequenceDownRightLeftUp_Step1
 	.globl gEventObjectMovementData_084E5DE8
 gEventObjectMovementData_084E5DE8:
-	.globl gUnknown_84E5DE8
-gUnknown_84E5DE8: @ 0x084E5DE8
 	@ analyzed canonical ROM range 0x084E5DE8-0x084E5DEB
 sMovementDirections_WalkSequenceDownRightLeftUp: @ 0x084E5DE8
 	.byte 0x01, 0x04, 0x03, 0x02
@@ -5292,8 +5220,6 @@ gUnknown_84E5DEC: @ 0x084E5DEC
 	@ pret/pokeemerald-jp direct xref for 0x084E5DF8: event_object_movement.s: MovementType_WalkSequenceRightUpDownLeft_Step1
 	.globl gEventObjectMovementData_084E5DF8
 gEventObjectMovementData_084E5DF8:
-	.globl gUnknown_84E5DF8
-gUnknown_84E5DF8: @ 0x084E5DF8
 	@ analyzed canonical ROM range 0x084E5DF8-0x084E5DFB
 sMovementDirections_WalkSequenceRightUpDownLeft: @ 0x084E5DF8
 	.byte 0x04, 0x02, 0x01, 0x03
@@ -5305,8 +5231,6 @@ gUnknown_84E5DFC: @ 0x084E5DFC
 	@ pret/pokeemerald-jp direct xref for 0x084E5E08: event_object_movement.s: MovementType_WalkSequenceUpDownLeftRight_Step1
 	.globl gEventObjectMovementData_084E5E08
 gEventObjectMovementData_084E5E08:
-	.globl gUnknown_84E5E08
-gUnknown_84E5E08: @ 0x084E5E08
 	@ analyzed canonical ROM range 0x084E5E08-0x084E5E0B
 sMovementDirections_WalkSequenceUpDownLeftRight: @ 0x084E5E08
 	.byte 0x02, 0x01, 0x03, 0x04
@@ -5318,8 +5242,6 @@ gUnknown_84E5E0C: @ 0x084E5E0C
 	@ pret/pokeemerald-jp direct xref for 0x084E5E18: event_object_movement.s: MovementType_WalkSequenceLeftRightUpDown_Step1
 	.globl gEventObjectMovementData_084E5E18
 gEventObjectMovementData_084E5E18:
-	.globl gUnknown_84E5E18
-gUnknown_84E5E18: @ 0x084E5E18
 	@ analyzed canonical ROM range 0x084E5E18-0x084E5E1B
 sMovementDirections_WalkSequenceLeftRightUpDown: @ 0x084E5E18
 	.byte 0x03, 0x04, 0x02, 0x01
@@ -5331,8 +5253,6 @@ gUnknown_84E5E1C: @ 0x084E5E1C
 	@ pret/pokeemerald-jp direct xref for 0x084E5E28: event_object_movement.s: MovementType_WalkSequenceDownLeftRightUp_Step1
 	.globl gEventObjectMovementData_084E5E28
 gEventObjectMovementData_084E5E28:
-	.globl gUnknown_84E5E28
-gUnknown_84E5E28: @ 0x084E5E28
 	@ analyzed canonical ROM range 0x084E5E28-0x084E5E2B
 sMovementDirections_WalkSequenceDownLeftRightUp: @ 0x084E5E28
 	.byte 0x01, 0x03, 0x04, 0x02
@@ -5344,8 +5264,6 @@ gUnknown_84E5E2C: @ 0x084E5E2C
 	@ pret/pokeemerald-jp direct xref for 0x084E5E38: event_object_movement.s: MovementType_WalkSequenceUpLeftDownRight_Step1
 	.globl gEventObjectMovementData_084E5E38
 gEventObjectMovementData_084E5E38:
-	.globl gUnknown_84E5E38
-gUnknown_84E5E38: @ 0x084E5E38
 	@ analyzed canonical ROM range 0x084E5E38-0x084E5E3B
 sMovementDirections_WalkSequenceUpLeftDownRight: @ 0x084E5E38
 	.byte 0x02, 0x03, 0x01, 0x04
@@ -5357,8 +5275,6 @@ gUnknown_84E5E3C: @ 0x084E5E3C
 	@ pret/pokeemerald-jp direct xref for 0x084E5E48: event_object_movement.s: MovementType_WalkSequenceDownRightUpLeft_Step1
 	.globl gEventObjectMovementData_084E5E48
 gEventObjectMovementData_084E5E48:
-	.globl gUnknown_84E5E48
-gUnknown_84E5E48: @ 0x084E5E48
 	@ analyzed canonical ROM range 0x084E5E48-0x084E5E4B
 sMovementDirections_WalkSequenceDownRightUpLeft: @ 0x084E5E48
 	.byte 0x01, 0x04, 0x02, 0x03
@@ -5370,8 +5286,6 @@ gUnknown_84E5E4C: @ 0x084E5E4C
 	@ pret/pokeemerald-jp direct xref for 0x084E5E58: event_object_movement.s: MovementType_WalkSequenceLeftDownRightUp_Step1
 	.globl gEventObjectMovementData_084E5E58
 gEventObjectMovementData_084E5E58:
-	.globl gUnknown_84E5E58
-gUnknown_84E5E58: @ 0x084E5E58
 	@ analyzed canonical ROM range 0x084E5E58-0x084E5E5B
 sMovementDirections_WalkSequenceLeftDownRightUp: @ 0x084E5E58
 	.byte 0x03, 0x01, 0x04, 0x02
@@ -5383,8 +5297,6 @@ gUnknown_84E5E5C: @ 0x084E5E5C
 	@ pret/pokeemerald-jp direct xref for 0x084E5E68: event_object_movement.s: MovementType_WalkSequenceRightUpLeftDown_Step1
 	.globl gEventObjectMovementData_084E5E68
 gEventObjectMovementData_084E5E68:
-	.globl gUnknown_84E5E68
-gUnknown_84E5E68: @ 0x084E5E68
 	@ analyzed canonical ROM range 0x084E5E68-0x084E5E6B
 sMovementDirections_WalkSequenceRightUpLeftDown: @ 0x084E5E68
 	.byte 0x04, 0x02, 0x03, 0x01
@@ -5396,8 +5308,6 @@ gUnknown_84E5E6C: @ 0x084E5E6C
 	@ pret/pokeemerald-jp direct xref for 0x084E5E78: event_object_movement.s: MovementType_WalkSequenceUpRightDownLeft_Step1
 	.globl gEventObjectMovementData_084E5E78
 gEventObjectMovementData_084E5E78:
-	.globl gUnknown_84E5E78
-gUnknown_84E5E78: @ 0x084E5E78
 	@ analyzed canonical ROM range 0x084E5E78-0x084E5E7B
 sMovementDirections_WalkSequenceUpRightDownLeft: @ 0x084E5E78
 	.byte 0x02, 0x04, 0x01, 0x03
@@ -5409,8 +5319,6 @@ gUnknown_84E5E7C: @ 0x084E5E7C
 	@ pret/pokeemerald-jp direct xref for 0x084E5E88: event_object_movement.s: MovementType_WalkSequenceDownLeftUpRight_Step1
 	.globl gEventObjectMovementData_084E5E88
 gEventObjectMovementData_084E5E88:
-	.globl gUnknown_84E5E88
-gUnknown_84E5E88: @ 0x084E5E88
 	@ analyzed canonical ROM range 0x084E5E88-0x084E5E8B
 sMovementDirections_WalkSequenceDownLeftUpRight: @ 0x084E5E88
 	.byte 0x01, 0x03, 0x02, 0x04
@@ -5422,8 +5330,6 @@ gUnknown_84E5E8C: @ 0x084E5E8C
 	@ pret/pokeemerald-jp direct xref for 0x084E5E98: event_object_movement.s: MovementType_WalkSequenceLeftUpRightDown_Step1
 	.globl gEventObjectMovementData_084E5E98
 gEventObjectMovementData_084E5E98:
-	.globl gUnknown_84E5E98
-gUnknown_84E5E98: @ 0x084E5E98
 	@ analyzed canonical ROM range 0x084E5E98-0x084E5E9B
 sMovementDirections_WalkSequenceLeftUpRightDown: @ 0x084E5E98
 	.byte 0x03, 0x02, 0x04, 0x01
@@ -5435,8 +5341,6 @@ gUnknown_84E5E9C: @ 0x084E5E9C
 	@ pret/pokeemerald-jp direct xref for 0x084E5EA8: event_object_movement.s: MovementType_WalkSequenceRightDownLeftUp_Step1
 	.globl gEventObjectMovementData_084E5EA8
 gEventObjectMovementData_084E5EA8:
-	.globl gUnknown_84E5EA8
-gUnknown_84E5EA8: @ 0x084E5EA8
 	@ analyzed canonical ROM range 0x084E5EA8-0x084E5EAB
 sMovementDirections_WalkSequenceRightDownLeftUp: @ 0x084E5EA8
 	.byte 0x04, 0x01, 0x03, 0x02
@@ -5490,128 +5394,96 @@ gUnknown_84E5F14: @ 0x084E5F14
 	@ pret/pokeemerald-jp direct xref for 0x084E5F20: event_object_movement.s: GetJumpInPlaceMovementAction
 	.globl gEventObjectMovementData_084E5F20
 gEventObjectMovementData_084E5F20:
-	.globl gUnknown_84E5F20
-gUnknown_84E5F20: @ 0x084E5F20
 gJumpInPlaceMovementActionsByDirection: @ 0x084E5F20
 	@ Indexed by direction id 0-8.
 	.byte 0x00, 0x00, 0x01, 0x02, 0x03, 0x00, 0x00, 0x01, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x084E5F29: event_object_movement.s: GetJumpInPlaceTurnAroundMovementAction
 	.globl gEventObjectMovementData_084E5F29
 gEventObjectMovementData_084E5F29:
-	.globl gUnknown_84E5F29
-gUnknown_84E5F29: @ 0x084E5F29
 gJumpInPlaceTurnAroundMovementActionsByDirection: @ 0x084E5F29
 	@ Indexed by direction id 0-8.
 	.byte 0x04, 0x04, 0x05, 0x06, 0x07, 0x04, 0x04, 0x05, 0x05
 	@ pret/pokeemerald-jp direct xref for 0x084E5F32: event_object_movement.s: GetJumpMovementAction
 	.globl gEventObjectMovementData_084E5F32
 gEventObjectMovementData_084E5F32:
-	.globl gUnknown_84E5F32
-gUnknown_84E5F32: @ 0x084E5F32
 gJumpMovementActionsByDirection: @ 0x084E5F32
 	@ Indexed by direction id 0-8.
 	.byte 0x08, 0x08, 0x09, 0x0A, 0x0B, 0x08, 0x08, 0x09, 0x09
 	@ pret/pokeemerald-jp direct xref for 0x084E5F3B: event_object_movement.s: GetJumpSpecialMovementAction
 	.globl gEventObjectMovementData_084E5F3B
 gEventObjectMovementData_084E5F3B:
-	.globl gUnknown_84E5F3B
-gUnknown_84E5F3B: @ 0x084E5F3B
 gJumpSpecialMovementActionsByDirection: @ 0x084E5F3B
 	@ Indexed by direction id 0-8.
 	.byte 0x0C, 0x0C, 0x0D, 0x0E, 0x0F, 0x0C, 0x0C, 0x0D, 0x0D
 	@ pret/pokeemerald-jp direct xref for 0x084E5F44: event_object_movement.s: GetPlayerRunMovementAction
 	.globl gEventObjectMovementData_084E5F44
 gEventObjectMovementData_084E5F44:
-	.globl gUnknown_84E5F44
-gUnknown_84E5F44: @ 0x084E5F44
 gPlayerRunMovementActionsByDirection: @ 0x084E5F44
 	@ Indexed by direction id 0-8.
 	.byte 0x10, 0x10, 0x11, 0x12, 0x13, 0x10, 0x10, 0x11, 0x11
 	@ pret/pokeemerald-jp direct xref for 0x084E5F4D: event_object_movement.s: GetRideWaterCurrentMovementAction
 	.globl gEventObjectMovementData_084E5F4D
 gEventObjectMovementData_084E5F4D:
-	.globl gUnknown_84E5F4D
-gUnknown_84E5F4D: @ 0x084E5F4D
 gRideWaterCurrentMovementActionsByDirection: @ 0x084E5F4D
 	@ Indexed by direction id 0-8.
 	.byte 0x14, 0x14, 0x15, 0x16, 0x17, 0x14, 0x14, 0x15, 0x15
 	@ pret/pokeemerald-jp direct xref for 0x084E5F56: event_object_movement.s: GetSlideMovementAction
 	.globl gEventObjectMovementData_084E5F56
 gEventObjectMovementData_084E5F56:
-	.globl gUnknown_84E5F56
-gUnknown_84E5F56: @ 0x084E5F56
 gSlideMovementActionsByDirection: @ 0x084E5F56
 	@ Indexed by direction id 0-8.
 	.byte 0x14, 0x14, 0x15, 0x16, 0x17, 0x14, 0x14, 0x15, 0x15
 	@ pret/pokeemerald-jp direct xref for 0x084E5F5F: event_object_movement.s: GetWalkFastMovementAction
 	.globl gEventObjectMovementData_084E5F5F
 gEventObjectMovementData_084E5F5F:
-	.globl gUnknown_84E5F5F
-gUnknown_84E5F5F: @ 0x084E5F5F
 gWalkFastMovementActionsByDirection: @ 0x084E5F5F
 	@ Indexed by direction id 0-8.
 	.byte 0x18, 0x18, 0x19, 0x1A, 0x1B, 0x18, 0x18, 0x19, 0x19
 	@ pret/pokeemerald-jp direct xref for 0x084E5F68: event_object_movement.s: GetWalkFastestMovementAction
 	.globl gEventObjectMovementData_084E5F68
 gEventObjectMovementData_084E5F68:
-	.globl gUnknown_84E5F68
-gUnknown_84E5F68: @ 0x084E5F68
 gWalkFastestMovementActionsByDirection: @ 0x084E5F68
 	@ Indexed by direction id 0-8.
 	.byte 0x1C, 0x1C, 0x1D, 0x1E, 0x1F, 0x1C, 0x1C, 0x1D, 0x1D
 	@ pret/pokeemerald-jp direct xref for 0x084E5F71: event_object_movement.s: GetWalkInPlaceFastMovementAction
 	.globl gEventObjectMovementData_084E5F71
 gEventObjectMovementData_084E5F71:
-	.globl gUnknown_84E5F71
-gUnknown_84E5F71: @ 0x084E5F71
 gWalkInPlaceFastMovementActionsByDirection: @ 0x084E5F71
 	@ Indexed by direction id 0-8.
 	.byte 0x20, 0x20, 0x21, 0x22, 0x23, 0x20, 0x20, 0x21, 0x21
 	@ pret/pokeemerald-jp direct xref for 0x084E5F7A: event_object_movement.s: GetWalkInPlaceFastestMovementAction
 	.globl gEventObjectMovementData_084E5F7A
 gEventObjectMovementData_084E5F7A:
-	.globl gUnknown_84E5F7A
-gUnknown_84E5F7A: @ 0x084E5F7A
 gWalkInPlaceFastestMovementActionsByDirection: @ 0x084E5F7A
 	@ Indexed by direction id 0-8.
 	.byte 0x24, 0x24, 0x25, 0x26, 0x27, 0x24, 0x24, 0x25, 0x25
 	@ pret/pokeemerald-jp direct xref for 0x084E5F83: event_object_movement.s: GetWalkInPlaceNormalMovementAction
 	.globl gEventObjectMovementData_084E5F83
 gEventObjectMovementData_084E5F83:
-	.globl gUnknown_84E5F83
-gUnknown_84E5F83: @ 0x084E5F83
 gWalkInPlaceNormalMovementActionsByDirection: @ 0x084E5F83
 	@ Indexed by direction id 0-8.
 	.byte 0x00, 0x00, 0x01, 0x02, 0x03, 0x00, 0x00, 0x01, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x084E5F8C: event_object_movement.s: GetWalkInPlaceSlowMovementAction
 	.globl gEventObjectMovementData_084E5F8C
 gEventObjectMovementData_084E5F8C:
-	.globl gUnknown_84E5F8C
-gUnknown_84E5F8C: @ 0x084E5F8C
 gWalkInPlaceSlowMovementActionsByDirection: @ 0x084E5F8C
 	@ Indexed by direction id 0-8.
 	.byte 0x04, 0x04, 0x05, 0x06, 0x07, 0x04, 0x04, 0x05, 0x05
 	@ pret/pokeemerald-jp direct xref for 0x084E5F95: event_object_movement.s: GetWalkNormalMovementAction
 	.globl gEventObjectMovementData_084E5F95
 gEventObjectMovementData_084E5F95:
-	.globl gUnknown_84E5F95
-gUnknown_84E5F95: @ 0x084E5F95
 gWalkNormalMovementActionsByDirection: @ 0x084E5F95
 	@ Indexed by direction id 0-8.
 	.byte 0x08, 0x08, 0x09, 0x0A, 0x0B, 0x08, 0x08, 0x09, 0x09
 	@ pret/pokeemerald-jp direct xref for 0x084E5F9E: event_object_movement.s: GetWalkSlowMovementAction
 	.globl gEventObjectMovementData_084E5F9E
 gEventObjectMovementData_084E5F9E:
-	.globl gUnknown_84E5F9E
-gUnknown_84E5F9E: @ 0x084E5F9E
 gWalkSlowMovementActionsByDirection: @ 0x084E5F9E
 	@ Indexed by direction id 0-8.
 	.byte 0x14, 0x14, 0x15, 0x16, 0x17, 0x14, 0x14, 0x15, 0x15
 	@ pret/pokeemerald-jp direct xref for 0x084E5FA7: event_object_movement.s: GroundEffect_DeepSandTracks
 	.globl gEventObjectMovementData_084E5FA7
 gEventObjectMovementData_084E5FA7:
-	.globl gUnknown_84E5FA7
-gUnknown_84E5FA7: @ 0x084E5FA7
 gDeepSandTracksSpriteAnimByDirection: @ 0x084E5FA7
 	@ Indexed by direction id 0-8.
 	.byte 0x08, 0x08, 0x07, 0x09, 0x0A, 0x08, 0x08, 0x07, 0x07
@@ -5630,8 +5502,6 @@ gUnknown_84E5FC0: @ 0x084E5FC0
 	@ pret/pokeemerald-jp direct xref for 0x084E5FD0: event_object_movement.s: MoveCoords, MoveCoordsInDirection, Step1, Step2, Step3 (+3 more)
 	.globl gEventObjectMovementData_084E5FD0
 gEventObjectMovementData_084E5FD0:
-	.globl gUnknown_84E5FD0
-gUnknown_84E5FD0: @ 0x084E5FD0
 gMoveCoordOffsetsByDirection: @ 0x084E5FD0
 	@ Indexed by direction id 0-8 as signed x, y pairs.
 	.2byte  0,  0
@@ -5646,232 +5516,174 @@ gMoveCoordOffsetsByDirection: @ 0x084E5FD0
 	@ pret/pokeemerald-jp direct xref for 0x084E5FF4: event_object_movement.s: sub_08092CA0
 	.globl gEventObjectMovementData_084E5FF4
 gEventObjectMovementData_084E5FF4:
-	.globl gUnknown_84E5FF4
-gUnknown_84E5FF4: @ 0x084E5FF4
 gFaceDirectionMovementActions: @ 0x084E5FF4
 	@ Indexed by direction id 0-4.
 	.byte 0x00, 0x00, 0x01, 0x02, 0x03
 	@ pret/pokeemerald-jp direct xref for 0x084E5FF9: event_object_movement.s: sub_08092CCC
 	.globl gEventObjectMovementData_084E5FF9
 gEventObjectMovementData_084E5FF9:
-	.globl gUnknown_84E5FF9
-gUnknown_84E5FF9: @ 0x084E5FF9
 gFaceDirectionFastMovementActions: @ 0x084E5FF9
 	@ Indexed by direction id 0-4.
 	.byte 0x04, 0x04, 0x05, 0x06, 0x07
 	@ pret/pokeemerald-jp direct xref for 0x084E5FFE: event_object_movement.s: sub_08092CF8
 	.globl gEventObjectMovementData_084E5FFE
 gEventObjectMovementData_084E5FFE:
-	.globl gUnknown_84E5FFE
-gUnknown_84E5FFE: @ 0x084E5FFE
 gWalkNormalMovementActions: @ 0x084E5FFE
 	@ Indexed by direction id 0-4.
 	.byte 0x08, 0x08, 0x09, 0x0A, 0x0B
 	@ pret/pokeemerald-jp direct xref for 0x084E6003: event_object_movement.s: sub_08092D24
 	.globl gEventObjectMovementData_084E6003
 gEventObjectMovementData_084E6003:
-	.globl gUnknown_84E6003
-gUnknown_84E6003: @ 0x084E6003
 gRideWaterCurrentMovementActions: @ 0x084E6003
 	@ Indexed by direction id 0-4.
 	.byte 0x15, 0x15, 0x16, 0x17, 0x18
 	@ pret/pokeemerald-jp direct xref for 0x084E6008: event_object_movement.s: sub_08092D50
 	.globl gEventObjectMovementData_084E6008
 gEventObjectMovementData_084E6008:
-	.globl gUnknown_84E6008
-gUnknown_84E6008: @ 0x084E6008
 gWalkInPlaceNormalMovementActions: @ 0x084E6008
 	@ Indexed by direction id 0-4.
 	.byte 0x29, 0x29, 0x2A, 0x2B, 0x2C
 	@ pret/pokeemerald-jp direct xref for 0x084E600D: event_object_movement.s: sub_08092D7C
 	.globl gEventObjectMovementData_084E600D
 gEventObjectMovementData_084E600D:
-	.globl gUnknown_84E600D
-gUnknown_84E600D: @ 0x084E600D
 gWalkInPlaceFastMovementActions: @ 0x084E600D
 	@ Indexed by direction id 0-4.
 	.byte 0x2D, 0x2D, 0x2E, 0x2F, 0x30
 	@ pret/pokeemerald-jp direct xref for 0x084E6012: event_object_movement.s: sub_08092DA8
 	.globl gEventObjectMovementData_084E6012
 gEventObjectMovementData_084E6012:
-	.globl gUnknown_84E6012
-gUnknown_84E6012: @ 0x084E6012
 gWalkInPlaceFasterMovementActions: @ 0x084E6012
 	@ Indexed by direction id 0-4.
 	.byte 0x31, 0x31, 0x32, 0x33, 0x34
 	@ pret/pokeemerald-jp direct xref for 0x084E6017: event_object_movement.s: sub_08092DD4
 	.globl gEventObjectMovementData_084E6017
 gEventObjectMovementData_084E6017:
-	.globl gUnknown_84E6017
-gUnknown_84E6017: @ 0x084E6017
 gWalkInPlaceFastestMovementActions: @ 0x084E6017
 	@ Indexed by direction id 0-4.
 	.byte 0x35, 0x35, 0x36, 0x37, 0x38
 	@ pret/pokeemerald-jp direct xref for 0x084E601C: event_object_movement.s: sub_08092E00
 	.globl gEventObjectMovementData_084E601C
 gEventObjectMovementData_084E601C:
-	.globl gUnknown_84E601C
-gUnknown_84E601C: @ 0x084E601C
 gJumpSpecialMovementActions: @ 0x084E601C
 	@ Indexed by direction id 0-4.
 	.byte 0x0C, 0x0C, 0x0D, 0x0E, 0x0F
 	@ pret/pokeemerald-jp direct xref for 0x084E6021: event_object_movement.s: sub_08092E2C
 	.globl gEventObjectMovementData_084E6021
 gEventObjectMovementData_084E6021:
-	.globl gUnknown_84E6021
-gUnknown_84E6021: @ 0x084E6021
 gPlayerRunMovementActions: @ 0x084E6021
 	@ Indexed by direction id 0-4.
 	.byte 0x46, 0x46, 0x47, 0x48, 0x49
 	@ pret/pokeemerald-jp direct xref for 0x084E6026: event_object_movement.s: sub_08092E58
 	.globl gEventObjectMovementData_084E6026
 gEventObjectMovementData_084E6026:
-	.globl gUnknown_84E6026
-gUnknown_84E6026: @ 0x084E6026
 gPlayerRunSlowMovementActions: @ 0x084E6026
 	@ Indexed by direction id 0-4.
 	.byte 0x4B, 0x4B, 0x4A, 0x4D, 0x4C
 	@ pret/pokeemerald-jp direct xref for 0x084E602B: event_object_movement.s: sub_08092E84
 	.globl gEventObjectMovementData_084E602B
 gEventObjectMovementData_084E602B:
-	.globl gUnknown_84E602B
-gUnknown_84E602B: @ 0x084E602B
 gWalkFastMovementActions: @ 0x084E602B
 	@ Indexed by direction id 0-4.
 	.byte 0x42, 0x42, 0x43, 0x44, 0x45
 	@ pret/pokeemerald-jp direct xref for 0x084E6030: event_object_movement.s: sub_08092EB0
 	.globl gEventObjectMovementData_084E6030
 gEventObjectMovementData_084E6030:
-	.globl gUnknown_84E6030
-gUnknown_84E6030: @ 0x084E6030
 gWalkSlowMovementActions: @ 0x084E6030
 	@ Indexed by direction id 0-4.
 	.byte 0x3A, 0x3A, 0x3B, 0x3C, 0x3D
 	@ pret/pokeemerald-jp direct xref for 0x084E6035: event_object_movement.s: sub_08092EDC
 	.globl gEventObjectMovementData_084E6035
 gEventObjectMovementData_084E6035:
-	.globl gUnknown_84E6035
-gUnknown_84E6035: @ 0x084E6035
 gWalkFastestMovementActions: @ 0x084E6035
 	@ Indexed by direction id 0-4.
 	.byte 0x19, 0x19, 0x1A, 0x1B, 0x1C
 	@ pret/pokeemerald-jp direct xref for 0x084E603A: event_object_movement.s: sub_08092F08
 	.globl gEventObjectMovementData_084E603A
 gEventObjectMovementData_084E603A:
-	.globl gUnknown_84E603A
-gUnknown_84E603A: @ 0x084E603A
 gSlideMovementActions: @ 0x084E603A
 	@ Indexed by direction id 0-4.
 	.byte 0x1D, 0x1D, 0x1E, 0x1F, 0x20
 	@ pret/pokeemerald-jp direct xref for 0x084E603F: event_object_movement.s: sub_08092F34
 	.globl gEventObjectMovementData_084E603F
 gEventObjectMovementData_084E603F:
-	.globl gUnknown_84E603F
-gUnknown_84E603F: @ 0x084E603F
 gPlayerJumpMovementActions: @ 0x084E603F
 	@ Indexed by direction id 0-4.
 	.byte 0x21, 0x21, 0x22, 0x23, 0x24
 	@ pret/pokeemerald-jp direct xref for 0x084E6044: event_object_movement.s: sub_08092F60
 	.globl gEventObjectMovementData_084E6044
 gEventObjectMovementData_084E6044:
-	.globl gUnknown_84E6044
-gUnknown_84E6044: @ 0x084E6044
 gJumpInPlaceFastMovementActions: @ 0x084E6044
 	@ Indexed by direction id 0-4.
 	.byte 0x25, 0x25, 0x26, 0x27, 0x28
 	@ pret/pokeemerald-jp direct xref for 0x084E6049: event_object_movement.s: sub_08092FB8
 	.globl gEventObjectMovementData_084E6049
 gEventObjectMovementData_084E6049:
-	.globl gUnknown_84E6049
-gUnknown_84E6049: @ 0x084E6049
 gAcroWheelieFaceDirectionMovementActions: @ 0x084E6049
 	@ Indexed by direction id 0-4.
 	.byte 0x64, 0x64, 0x65, 0x66, 0x67
 	@ pret/pokeemerald-jp direct xref for 0x084E604E: event_object_movement.s: sub_08092FE4
 	.globl gEventObjectMovementData_084E604E
 gEventObjectMovementData_084E604E:
-	.globl gUnknown_84E604E
-gUnknown_84E604E: @ 0x084E604E
 gAcroWheelieMoveDirectionMovementActions: @ 0x084E604E
 	@ Indexed by direction id 0-4.
 	.byte 0x68, 0x68, 0x69, 0x6A, 0x6B
 	@ pret/pokeemerald-jp direct xref for 0x084E6053: event_object_movement.s: EventObjectExecSingleMovementAction
 	.globl gEventObjectMovementData_084E6053
 gEventObjectMovementData_084E6053:
-	.globl gUnknown_84E6053
-gUnknown_84E6053: @ 0x084E6053
 gSingleMovementActionsByDirection: @ 0x084E6053
 	@ Indexed by direction id 0-4.
 	.byte 0x6C, 0x6C, 0x6D, 0x6E, 0x6F
 	@ pret/pokeemerald-jp direct xref for 0x084E6058: event_object_movement.s: sub_0809303C
 	.globl gEventObjectMovementData_084E6058
 gEventObjectMovementData_084E6058:
-	.globl gUnknown_84E6058
-gUnknown_84E6058: @ 0x084E6058
 gAcroEndWheelieFaceDirectionMovementActions: @ 0x084E6058
 	@ Indexed by direction id 0-4.
 	.byte 0x70, 0x70, 0x71, 0x72, 0x73
 	@ pret/pokeemerald-jp direct xref for 0x084E605D: event_object_movement.s: GetAcroEndWheelieFaceDirectionMovementAction
 	.globl gEventObjectMovementData_084E605D
 gEventObjectMovementData_084E605D:
-	.globl gUnknown_84E605D
-gUnknown_84E605D: @ 0x084E605D
 gAcroEndWheelieFaceDirectionMovementActions2: @ 0x084E605D
 	@ Indexed by direction id 0-4.
 	.byte 0x74, 0x74, 0x75, 0x76, 0x77
 	@ pret/pokeemerald-jp direct xref for 0x084E6062: event_object_movement.s: sub_08093094
 	.globl gEventObjectMovementData_084E6062
 gEventObjectMovementData_084E6062:
-	.globl gUnknown_84E6062
-gUnknown_84E6062: @ 0x084E6062
 gAcroWheelieHopFaceDirectionMovementActions: @ 0x084E6062
 	@ Indexed by direction id 0-4.
 	.byte 0x78, 0x78, 0x79, 0x7A, 0x7B
 	@ pret/pokeemerald-jp direct xref for 0x084E6067: event_object_movement.s: sub_080930C0
 	.globl gEventObjectMovementData_084E6067
 gEventObjectMovementData_084E6067:
-	.globl gUnknown_84E6067
-gUnknown_84E6067: @ 0x084E6067
 gAcroWheelieHopDirectionMovementActions: @ 0x084E6067
 	@ Indexed by direction id 0-4.
 	.byte 0x7C, 0x7C, 0x7D, 0x7E, 0x7F
 	@ pret/pokeemerald-jp direct xref for 0x084E606C: event_object_movement.s: sub_080930EC
 	.globl gEventObjectMovementData_084E606C
 gEventObjectMovementData_084E606C:
-	.globl gUnknown_84E606C
-gUnknown_84E606C: @ 0x084E606C
 gAcroWheelieJumpDirectionMovementActions: @ 0x084E606C
 	@ Indexed by direction id 0-4.
 	.byte 0x80, 0x80, 0x81, 0x82, 0x83
 	@ pret/pokeemerald-jp direct xref for 0x084E6071: event_object_movement.s: sub_08093118
 	.globl gEventObjectMovementData_084E6071
 gEventObjectMovementData_084E6071:
-	.globl gUnknown_84E6071
-gUnknown_84E6071: @ 0x084E6071
 gAcroWheelieInPlaceDirectionMovementActions: @ 0x084E6071
 	@ Indexed by direction id 0-4.
 	.byte 0x84, 0x84, 0x85, 0x86, 0x87
 	@ pret/pokeemerald-jp direct xref for 0x084E6076: event_object_movement.s: sub_08093144
 	.globl gEventObjectMovementData_084E6076
 gEventObjectMovementData_084E6076:
-	.globl gUnknown_84E6076
-gUnknown_84E6076: @ 0x084E6076
 gAcroPopWheelieMoveDirectionMovementActions: @ 0x084E6076
 	@ Indexed by direction id 0-4.
 	.byte 0x88, 0x88, 0x89, 0x8A, 0x8B
 	@ pret/pokeemerald-jp direct xref for 0x084E607B: event_object_movement.s: GetOppositeDirection
 	.globl gEventObjectMovementData_084E607B
 gEventObjectMovementData_084E607B:
-	.globl gUnknown_84E607B
-gUnknown_84E607B: @ 0x084E607B
 gOppositeDirections: @ 0x084E607B
 	@ Indexed by direction id - 1 for direction ids 1-8.
 	.byte 0x02, 0x01, 0x04, 0x03, 0x08, 0x07, 0x06, 0x05
 	@ pret/pokeemerald-jp direct xref for 0x084E6083: event_object_movement.s: zffu_offset_calc
 	.globl gEventObjectMovementData_084E6083
 gEventObjectMovementData_084E6083:
-	.globl gUnknown_84E6083
-gUnknown_84E6083: @ 0x084E6083
 gFacingDirectionPairOffsets: @ 0x084E6083
 	.byte 0x02, 0x01, 0x04, 0x03
 	.byte 0x01, 0x02, 0x03, 0x04
@@ -5880,16 +5692,12 @@ gFacingDirectionPairOffsets: @ 0x084E6083
 	@ pret/pokeemerald-jp direct xref for 0x084E6093: event_object_movement.s: state_to_direction
 	.globl gEventObjectMovementData_084E6093
 gEventObjectMovementData_084E6093:
-	.globl gUnknown_84E6093
-gUnknown_84E6093: @ 0x084E6093
 gStateToDirectionTable: @ 0x084E6093
 	.byte 0x02, 0x01, 0x04, 0x03, 0x01, 0x02, 0x03, 0x04, 0x04, 0x03, 0x01, 0x02, 0x03, 0x04, 0x02, 0x01
 	.byte 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084E60A4: event_object_movement.s: sub_0809321C, sub_08093258
 	.globl gEventObjectMovementData_084E60A4
 gEventObjectMovementData_084E60A4:
-	.globl gUnknown_84E60A4
-gUnknown_84E60A4: @ 0x084E60A4
 	@ confirmed contiguous ROM pointer table: 158 entries from this address
 gMovementActionFuncTablePointers: @ 0x084E60A4
 	@ 158-entry movement action dispatch table used by EventObjectExecHeldMovementAction.
@@ -6065,8 +5873,6 @@ sMovementActionFuncs_FaceLeft: @ 0x084E632C
 sMovementActionFuncs_FaceRight: @ 0x084E6334
 	.4byte MovementAction_FaceRight_Step0
 	.4byte MovementAction_PauseSpriteAnim
-	.globl gUnknown_84E633C
-gUnknown_84E633C: @ 0x084E633C
 	.4byte GetJumpInPlaceTurnAroundMovementAction
 	.4byte GetJumpMovementAction
 	.4byte GetJumpMovementAction
@@ -6139,16 +5945,12 @@ sMovementActionFuncs_WalkNormalRight: @ 0x084E6404
 	@ pret/pokeemerald-jp direct xref for 0x084E6410: event_object_movement.s: sub_08093934
 	.globl gEventObjectMovementData_084E6410
 gEventObjectMovementData_084E6410:
-	.globl gUnknown_84E6410
-gUnknown_84E6410: @ 0x084E6410
 gMovementActionCoordUpdateOffsets1: @ 0x084E6410
 	@ sub_08093934 indexes this as three signed halfwords.
 	.2byte 0, 1, 1
 	@ pret/pokeemerald-jp direct xref for 0x084E6416: event_object_movement.s: sub_08093A34
 	.globl gEventObjectMovementData_084E6416
 gEventObjectMovementData_084E6416:
-	.globl gUnknown_84E6416
-gUnknown_84E6416: @ 0x084E6416
 gMovementActionCoordUpdateOffsets2: @ 0x084E6416
 	@ sub_08093A34 indexes this as three signed halfwords.
 	.2byte 0, 0, 1
@@ -6677,13 +6479,11 @@ sMovementActionFuncs_StopLevitate: @ 0x084E6A20
 sMovementActionFuncs_DestroyExtraTaskIfAtTop: @ 0x084E6A28
 	.4byte MovementAction_DestroyExtraTaskIfAtTop_Step0
 	.4byte sub_08095E28
-	.globl gUnknown_84E6A30
-gUnknown_84E6A30: @ 0x084E6A30
 	@ Resolved pointer table; original ROM range 0x4E6A30..0x4E6A37.
 	.4byte PSR_T_BIT
 	.4byte TYPE_DRAGON
-	.globl gUnknown_84E6A38
-gUnknown_84E6A38: @ 0x084E6A38
+	.globl gJumpLandingMetatileBehaviorPredicates
+gJumpLandingMetatileBehaviorPredicates: @ 0x084E6A38
 	.4byte MetatileBehavior_IsTallGrass
 	.4byte MetatileBehavior_IsLongGrass_Duplicate
 	.4byte MetatileBehavior_IsPuddle
@@ -6693,10 +6493,8 @@ gUnknown_84E6A38: @ 0x084E6A38
 	@ pret/pokeemerald-jp direct xref for 0x084E6A50: event_object_movement.s: GetGroundEffectFlags_JumpLanding
 	.globl gEventObjectMovementData_084E6A50
 gEventObjectMovementData_084E6A50:
-	.globl gUnknown_84E6A50
-gUnknown_84E6A50: @ 0x084E6A50
 gJumpLandingGroundEffectFlags: @ 0x084E6A50
-	@ Indexed with the metatile behavior predicate table at gUnknown_84E6A38.
+	@ Indexed with the metatile behavior predicate table at gJumpLandingMetatileBehaviorPredicates.
 	.4byte 0x00001000 @ tall grass
 	.4byte 0x00002000 @ long grass
 	.4byte 0x00004000 @ puddle
@@ -6712,24 +6510,18 @@ gUnknown_84E6A68: @ 0x084E6A68
 	@ pret/pokeemerald-jp direct xref for 0x084E6A78: event_object_movement.s: SetObjectSubpriorityByZCoord
 	.globl gEventObjectMovementData_084E6A78
 gEventObjectMovementData_084E6A78:
-	.globl gUnknown_84E6A78
-gUnknown_84E6A78: @ 0x084E6A78
 gObjectSubpriorityOffsetsByZCoord: @ 0x084E6A78
 	@ Indexed by Z coord in SetObjectSubpriorityByZCoord.
 	.byte 0x73, 0x73, 0x53, 0x73, 0x53, 0x73, 0x53, 0x73, 0x53, 0x73, 0x53, 0x73, 0x53, 0x00, 0x00, 0x73
 	@ pret/pokeemerald-jp direct xref for 0x084E6A88: event_object_movement.s: InitObjectPriorityByZCoord, UpdateEventObjectZCoordAndPriority, sub_08096718
 	.globl gEventObjectMovementData_084E6A88
 gEventObjectMovementData_084E6A88:
-	.globl gUnknown_84E6A88
-gUnknown_84E6A88: @ 0x084E6A88
 gObjectOamPrioritiesByZCoord: @ 0x084E6A88
 	.byte 2, 2, 2, 2, 1, 2, 1, 2
 	.byte 1, 2, 1, 2, 1, 0, 0, 2
 	@ pret/pokeemerald-jp direct xref for 0x084E6A98: event_object_movement.s: InitObjectPriorityByZCoord, UpdateEventObjectZCoordAndPriority
 	.globl gEventObjectMovementData_084E6A98
 gEventObjectMovementData_084E6A98:
-	.globl gUnknown_84E6A98
-gUnknown_84E6A98: @ 0x084E6A98
 gObjectPrioritiesByZCoord: @ 0x084E6A98
 	.byte 1, 1, 1, 1, 2, 1, 2, 1
 	.byte 2, 1, 2, 1, 2, 0, 0, 1
@@ -6741,15 +6533,11 @@ gUnknown_84E6AA8: @ 0x084E6AA8
 	@ pret/pokeemerald-jp direct xref for 0x084E6AB4: event_object_movement.s: DoTracksGroundEffect_Footprints
 	.globl gEventObjectMovementData_084E6AB4
 gEventObjectMovementData_084E6AB4:
-	.globl gUnknown_84E6AB4
-gUnknown_84E6AB4: @ 0x084E6AB4
 gFootprintFieldEffectIds: @ 0x084E6AB4
 	.2byte 0x0D, 0x18
 	@ pret/pokeemerald-jp direct xref for 0x084E6AB8: event_object_movement.s: DoTracksGroundEffect_BikeTireTracks
 	.globl gEventObjectMovementData_084E6AB8
 gEventObjectMovementData_084E6AB8:
-	.globl gUnknown_84E6AB8
-gUnknown_84E6AB8: @ 0x084E6AB8
 gBikeTireTrackDirections: @ 0x084E6AB8
 	.byte 0x01, 0x02, 0x07, 0x08
 	.byte 0x01, 0x02, 0x06, 0x05
@@ -6821,8 +6609,6 @@ sMiniStepCallbackSequence_2Frames: @ 0x084E6BA0
 	@ pret/pokeemerald-jp direct xref for 0x084E6BA8: event_object_movement.s: obj_npc_ministep
 	.globl gEventObjectMovementData_084E6BA8
 gEventObjectMovementData_084E6BA8:
-	.globl gUnknown_84E6BA8
-gUnknown_84E6BA8: @ 0x084E6BA8
 gMiniStepCallbackSequencesByDurationSlot: @ 0x084E6BA8
 	@ Indexed by the duration slot in obj_npc_ministep.
 	.4byte sMiniStepCallbackSequence_16Frames
@@ -6833,15 +6619,11 @@ gMiniStepCallbackSequencesByDurationSlot: @ 0x084E6BA8
 	@ pret/pokeemerald-jp direct xref for 0x084E6BBC: event_object_movement.s: obj_npc_ministep
 	.globl gEventObjectMovementData_084E6BBC
 gEventObjectMovementData_084E6BBC:
-	.globl gUnknown_84E6BBC
-gUnknown_84E6BBC: @ 0x084E6BBC
 gMiniStepDurations: @ 0x084E6BBC
 	.2byte 16, 8, 6, 4, 2
 	@ pret/pokeemerald-jp direct xref for 0x084E6BC6: event_object_movement.s: sub_080970AC
 	.globl gEventObjectMovementData_084E6BC6
 gEventObjectMovementData_084E6BC6:
-	.globl gUnknown_84E6BC6
-gUnknown_84E6BC6: @ 0x084E6BC6
 gMovementOffsetTable1: @ 0x084E6BC6
 	.byte 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02
 	.byte 0x02, 0x02, 0x02, 0x01, 0x02, 0x02, 0x01, 0x02
@@ -6855,8 +6637,6 @@ gMovementOffsetTable1: @ 0x084E6BC6
 	@ pret/pokeemerald-jp direct xref for 0x084E6C0E: event_object_movement.s: sub_08097098
 	.globl gEventObjectMovementData_084E6C0E
 gEventObjectMovementData_084E6C0E:
-	.globl gUnknown_84E6C0E
-gUnknown_84E6C0E: @ 0x084E6C0E
 gMovementOffsetTable2: @ 0x084E6C0E
 	.byte 0x00, 0x00, 0x01, 0x00, 0x00, 0x01, 0x00, 0x00, 0x01, 0x00, 0x01, 0x01, 0x00, 0x01, 0x01, 0x00
 	.byte 0x01, 0x01, 0x00, 0x01, 0x01, 0x00, 0x01, 0x01, 0x00, 0x00, 0x01, 0x00, 0x00, 0x01, 0x00, 0x00
@@ -6876,8 +6656,6 @@ sMovementOffsetSequence_084E6C76: @ 0x084E6C76
 	@ pret/pokeemerald-jp direct xref for 0x084E6C88: event_object_movement.s: sub_08097190
 	.globl gEventObjectMovementData_084E6C88
 gEventObjectMovementData_084E6C88:
-	.globl gUnknown_84E6C88
-gUnknown_84E6C88: @ 0x084E6C88
 gMovementOffsetSequences: @ 0x084E6C88
 	@ Signed offset sequences indexed by sub_08097190.
 	.4byte sMovementOffsetSequence_084E6C56
@@ -6886,43 +6664,31 @@ gMovementOffsetSequences: @ 0x084E6C88
 	@ pret/pokeemerald-jp direct xref for 0x084E6C94: event_object_movement.s: sub_080971CC
 	.globl gEventObjectMovementData_084E6C94
 gEventObjectMovementData_084E6C94:
-	.globl gUnknown_84E6C94
-gUnknown_84E6C94: @ 0x084E6C94
 gMovementOffsetDurations1: @ 0x084E6C94
 	.2byte 16, 16, 32
 	@ pret/pokeemerald-jp direct xref for 0x084E6C9A: event_object_movement.s: sub_080971CC
 	.globl gEventObjectMovementData_084E6C9A
 gEventObjectMovementData_084E6C9A:
-	.globl gUnknown_84E6C9A
-gUnknown_84E6C9A: @ 0x084E6C9A
 gMovementOffsetShiftCounts1: @ 0x084E6C9A
 	.byte 0, 0, 1
 	.byte 0 @ padding
 	@ pret/pokeemerald-jp direct xref for 0x084E6C9E: event_object_movement.s: sub_08097254
 	.globl gEventObjectMovementData_084E6C9E
 gEventObjectMovementData_084E6C9E:
-	.globl gUnknown_84E6C9E
-gUnknown_84E6C9E: @ 0x084E6C9E
 gMovementOffsetDurations2: @ 0x084E6C9E
 	.2byte 32, 32, 64
 	@ pret/pokeemerald-jp direct xref for 0x084E6CA4: event_object_movement.s: sub_08097254
 	.globl gEventObjectMovementData_084E6CA4
 gEventObjectMovementData_084E6CA4:
-	.globl gUnknown_84E6CA4
-gUnknown_84E6CA4: @ 0x084E6CA4
 gMovementOffsetShiftCounts2: @ 0x084E6CA4
 	.byte 1, 1, 2
 	.byte 0 @ padding
 	@ pret/pokeemerald-jp direct xref for 0x084E6CA8: event_object_movement.s: sub_080976D8
 	.globl gEventObjectMovementData_084E6CA8
 gEventObjectMovementData_084E6CA8:
-	.globl gUnknown_84E6CA8
-gUnknown_84E6CA8: @ 0x084E6CA8
 gEventObjectMovementAssertFile: @ 0x084E6CA8
 	.ascii "evobjmv.c"
 	.byte 0, 0, 0
-	.globl gUnknown_84E6CB4
-gUnknown_84E6CB4: @ 0x084E6CB4
 	@ Resolved pointer table; original ROM range 0x4E6CB4..0x4E6CDF.
 	.4byte MAP_NUM_ROUTE133
 sMovementActionFuncs_StoreAndLockAnim: @ 0x084E6CB8
@@ -6942,8 +6708,6 @@ sMovementActionFuncs_FlyDown: @ 0x084E6CD4
 	@ pret/pokeemerald-jp direct xref for 0x084E6CE0: save_failed_screen.s: CB2_SaveFailedScreen
 	.globl gSaveFailedScreenData_084E6CE0
 gSaveFailedScreenData_084E6CE0:
-	.globl gUnknown_84E6CE0
-gUnknown_84E6CE0: @ 0x084E6CE0
 	@ Text window frame graphics: 20 entries, each 9 4bpp tiles (0x120 bytes).
 	@ Entry 0 is also loaded by CB2_SaveFailedScreen for its window frame tiles.
 gTextWindowFrameTiles_0: @ 0x084E6CE0

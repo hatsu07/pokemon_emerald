@@ -1885,7 +1885,7 @@ _080FB2CE:
 	.align 2, 0
 _080FB2D8: .4byte 0x02036FF0
 _080FB2DC: .4byte 0x02037230
-_080FB2E0: .4byte gUnknown_84DDE4C
+_080FB2E0: .4byte gFieldEffectObjectTemplatePointers
 _080FB2E4: .4byte 0x020205AC
 _080FB2E8: .4byte 0x080FB215
 	thumb_func_end DoSecretBaseGlitterMatSparkle

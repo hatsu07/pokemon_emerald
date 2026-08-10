@@ -132,7 +132,7 @@ CreateReflectionEffectSprites: @ 0x0808CDC0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808CE5C: .4byte gUnknown_84DDE4C
+_0808CE5C: .4byte gFieldEffectObjectTemplatePointers
 _0808CE60: .4byte 0x020205AC
 	thumb_func_end CreateReflectionEffectSprites
 
@@ -21626,7 +21626,7 @@ _080963BA:
 	b _080963F2
 	.align 2, 0
 _080963DC: .4byte 0x02000020
-_080963E0: .4byte 0x084E6A38
+_080963E0: .4byte gJumpLandingMetatileBehaviorPredicates
 _080963E4: .4byte gEventObjectMovementData_084E6A50
 _080963E8:
 	adds r0, r5, #1

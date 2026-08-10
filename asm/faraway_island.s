@@ -1222,7 +1222,7 @@ _081D4250: .4byte 0x0000FFFF
 _081D4254: .4byte 0x020205AC
 _081D4258: .4byte 0x02037294
 _081D425C: .4byte gFarawayIslandData_084E4E1C
-_081D4260: .4byte gUnknown_84DDE4C
+_081D4260: .4byte gFieldEffectObjectTemplatePointers
 _081D4264: .4byte 0x0203CC1C
 _081D4268: .4byte 0x08007141
 	thumb_func_end sub_081D4110

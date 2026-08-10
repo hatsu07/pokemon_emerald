@@ -4181,7 +4181,7 @@ FldEff_LavaridgeGymWarp: @ 0x080B714C
 	bx r1
 	.align 2, 0
 _080B71A4: .4byte 0x020388A8
-_080B71A8: .4byte gUnknown_84DDE4C
+_080B71A8: .4byte gFieldEffectObjectTemplatePointers
 _080B71AC: .4byte 0x020205AC
 	thumb_func_end FldEff_LavaridgeGymWarp
 
@@ -4486,7 +4486,7 @@ FldEff_PopOutOfAsh: @ 0x080B73A0
 	bx r1
 	.align 2, 0
 _080B73F8: .4byte 0x020388A8
-_080B73FC: .4byte gUnknown_84DDE4C
+_080B73FC: .4byte gFieldEffectObjectTemplatePointers
 _080B7400: .4byte 0x020205AC
 	thumb_func_end FldEff_PopOutOfAsh
 
@@ -7042,7 +7042,7 @@ _080B87A8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B87F4: .4byte gUnknown_84DDE4C
+_080B87F4: .4byte gFieldEffectObjectTemplatePointers
 _080B87F8: .4byte 0x020205AC
 _080B87FC: .4byte 0x0000FFFF
 _080B8800: .4byte 0x00003E41
@@ -7094,7 +7094,7 @@ FldEff_NPCFlyOut: @ 0x080B8824
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B8870: .4byte gUnknown_84DDE4C
+_080B8870: .4byte gFieldEffectObjectTemplatePointers
 _080B8874: .4byte 0x020205AC
 _080B8878: .4byte 0x080B8881
 _080B887C: .4byte 0x020388A8
@@ -7599,7 +7599,7 @@ sub_080B8C1C: @ 0x080B8C1C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B8C54: .4byte gUnknown_84DDE4C
+_080B8C54: .4byte gFieldEffectObjectTemplatePointers
 _080B8C58: .4byte 0x020205AC
 _080B8C5C: .4byte 0x080B8CD5
 	thumb_func_end sub_080B8C1C
