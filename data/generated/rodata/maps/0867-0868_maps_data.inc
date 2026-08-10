@@ -2230,9 +2230,8 @@ gUnknown_8573E84: @ 0x08573E84
 	@ confirmed GBA LZ77 stream: compressed=0x25D, decompressed=0x560
 sLz77Block_08573E84:
 	@ analyzed canonical ROM range 0x08573E84-0x085740E3
-sAnalyzedGfx_08573E84: @ 0x08573E84
 	.incbin "build/graphics/analyzed/gunknown_8573e84_08573e84.4bpp.lz"
-	.if (. - sAnalyzedGfx_08573E84) != 0x260
+	.if (. - sLz77Block_08573E84) != 0x260
 	.error "gUnknown_8573E84 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085740E4: easy_chat.s: sub_0811C868
@@ -2243,9 +2242,8 @@ gUnknown_85740E4: @ 0x085740E4
 	@ confirmed GBA LZ77 stream: compressed=0x156, decompressed=0x800
 sLz77Block_085740E4:
 	@ analyzed canonical ROM range 0x085740E4-0x0857423B
-sAnalyzedGfx_085740E4: @ 0x085740E4
 	.incbin "build/graphics/analyzed/gunknown_85740e4_085740e4.4bpp.lz"
-	.if (. - sAnalyzedGfx_085740E4) != 0x158
+	.if (. - sLz77Block_085740E4) != 0x158
 	.error "gUnknown_85740E4 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857423C: easy_chat.s: sub_0811D814
@@ -2274,9 +2272,8 @@ gUnknown_857427C: @ 0x0857427C
 	@ confirmed GBA LZ77 stream: compressed=0xC7, decompressed=0x180
 sLz77Block_0857427C:
 	@ analyzed canonical ROM range 0x0857427C-0x08574343
-sAnalyzedGfx_0857427C: @ 0x0857427C
 	.incbin "build/graphics/analyzed/gunknown_857427c_0857427c.4bpp.lz"
-	.if (. - sAnalyzedGfx_0857427C) != 0xC8
+	.if (. - sLz77Block_0857427C) != 0xC8
 	.error "gUnknown_857427C compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08574344: easy_chat.s: sub_0811D814

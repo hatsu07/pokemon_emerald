@@ -14,7 +14,6 @@ gRecordMixingData_08566D93:
 	.globl gUnknown_8566D93
 gUnknown_8566D93: @ 0x08566D93
 	@ analyzed canonical ROM range 0x08566D93-0x08566D98
-sAnalyzedData_08566D93: @ 0x08566D93
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xD0, 0xC9, 0xC6, 0xCF, 0xC7, 0xBF
 	.globl gText_Rom_566D99
@@ -32,7 +31,6 @@ gRecordMixingData_08566D9D:
 	.globl gUnknown_8566D9D
 gUnknown_8566D9D: @ 0x08566D9D
 	@ analyzed canonical ROM range 0x08566D9D-0x08566DA2
-sAnalyzedData_08566D9D: @ 0x08566D9D
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xCA, 0xBB, 0xC8, 0xCA, 0xC9, 0xCE
 	.globl gText_Rom_566DA3
@@ -50,7 +48,6 @@ gRecordMixingData_08566DA7:
 	.globl gUnknown_8566DA7
 gUnknown_8566DA7: @ 0x08566DA7
 	@ analyzed canonical ROM range 0x08566DA7-0x08566DAC
-sAnalyzedData_08566DA7: @ 0x08566DA7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xCA, 0xC3, 0xCE, 0xBD, 0xC2, 0xB0
 	.globl gText_Rom_566DAD
@@ -68,7 +65,6 @@ gRecordMixingData_08566DB1:
 	.globl gUnknown_8566DB1
 gUnknown_8566DB1: @ 0x08566DB1
 	@ analyzed canonical ROM range 0x08566DB1-0x08566DB6
-sAnalyzedData_08566DB1: @ 0x08566DB1
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xC6, 0xBF, 0xC8, 0xC1, 0xCE, 0xC2
 	.globl gText_Rom_566DB7
@@ -94,7 +90,6 @@ gRecordMixingData_08566DCF:
 	.globl gUnknown_8566DCF
 gUnknown_8566DCF: @ 0x08566DCF
 	@ analyzed canonical ROM range 0x08566DCF-0x08566DD4
-sAnalyzedData_08566DCF: @ 0x08566DCF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xBD, 0xC2, 0xC9, 0xCC, 0xCF, 0xCD
 	.globl gText_Rom_566DD5
@@ -120,7 +115,6 @@ gRecordMixingData_08566DEC:
 	.globl gUnknown_8566DEC
 gUnknown_8566DEC: @ 0x08566DEC
 	@ analyzed canonical ROM range 0x08566DEC-0x08566DF0
-sAnalyzedData_08566DEC: @ 0x08566DEC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x1A, 0x2E, 0x13, 0x2E, 0xB0
 	.globl gText_Rom_566DF1
@@ -138,7 +132,6 @@ gRecordMixingData_08566DF5:
 	.globl gUnknown_8566DF5
 gUnknown_8566DF5: @ 0x08566DF5
 	@ analyzed canonical ROM range 0x08566DF5-0x08566DF9
-sAnalyzedData_08566DF5: @ 0x08566DF5
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x5D, 0x63, 0x7A, 0x55, 0xB0
 	.globl gText_Rom_566DFA

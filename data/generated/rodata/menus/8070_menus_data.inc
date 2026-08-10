@@ -1,6 +1,5 @@
 	.globl gUnknown_8625814
 gUnknown_8625814: @ 0x08625814
-sAnalyzedData_08625814: @ 0x08625814
 	cry DirectSoundWaveData_Cry_000_JP_086CDE28 @ 0x08625814
 	cry DirectSoundWaveData_Cry_001_JP_086CEEB4 @ 0x08625820
 	cry DirectSoundWaveData_Cry_002_JP_086CFF44 @ 0x0862582C
@@ -131,7 +130,6 @@ sAnalyzedData_08625814: @ 0x08625814
 	cry DirectSoundWaveData_Cry_127_JP_08758684 @ 0x08625E08
 	.globl gUnknown_8625E14
 gUnknown_8625E14: @ 0x08625E14
-sAnalyzedData_08625E14: @ 0x08625E14
 	cry DirectSoundWaveData_Cry_128_JP_087598D8 @ 0x08625E14
 	cry DirectSoundWaveData_Cry_129_JP_0875ABE0 @ 0x08625E20
 	cry DirectSoundWaveData_Cry_130_JP_0875C014 @ 0x08625E2C
@@ -262,7 +260,6 @@ sAnalyzedData_08625E14: @ 0x08625E14
 	cry DirectSoundWaveData_Cry_255_JP_087D54E0 @ 0x08626408
 	.globl gUnknown_8626414
 gUnknown_8626414: @ 0x08626414
-sAnalyzedData_08626414: @ 0x08626414
 	cry DirectSoundWaveData_Cry_256_JP_087D69E8 @ 0x08626414
 	cry DirectSoundWaveData_Cry_257_JP_087D7480 @ 0x08626420
 	cry DirectSoundWaveData_Cry_258_JP_087D80B0 @ 0x0862642C
@@ -393,14 +390,12 @@ sAnalyzedData_08626414: @ 0x08626414
 	cry DirectSoundWaveData_Cry_383_JP_08856DDC @ 0x08626A08
 	.globl gUnknown_8626A14
 gUnknown_8626A14: @ 0x08626A14
-sAnalyzedData_08626A14: @ 0x08626A14
 	cry DirectSoundWaveData_Cry_384_JP_08857EE4 @ 0x08626A14
 	cry DirectSoundWaveData_Cry_385_JP_088594DC @ 0x08626A20
 	cry DirectSoundWaveData_Cry_386_JP_0885A260 @ 0x08626A2C
 	cry DirectSoundWaveData_Cry_387_JP_0885B734 @ 0x08626A38
 	.globl gUnknown_8626A44
 gUnknown_8626A44: @ 0x08626A44
-sAnalyzedData_08626A44: @ 0x08626A44
 	cry2 DirectSoundWaveData_Cry_000_JP_086CDE28 @ 0x08626A44
 	cry2 DirectSoundWaveData_Cry_001_JP_086CEEB4 @ 0x08626A50
 	cry2 DirectSoundWaveData_Cry_002_JP_086CFF44 @ 0x08626A5C
@@ -531,7 +526,6 @@ sAnalyzedData_08626A44: @ 0x08626A44
 	cry2 DirectSoundWaveData_Cry_127_JP_08758684 @ 0x08627038
 	.globl gUnknown_8627044
 gUnknown_8627044: @ 0x08627044
-sAnalyzedData_08627044: @ 0x08627044
 	cry2 DirectSoundWaveData_Cry_128_JP_087598D8 @ 0x08627044
 	cry2 DirectSoundWaveData_Cry_129_JP_0875ABE0 @ 0x08627050
 	cry2 DirectSoundWaveData_Cry_130_JP_0875C014 @ 0x0862705C
@@ -662,7 +656,6 @@ sAnalyzedData_08627044: @ 0x08627044
 	cry2 DirectSoundWaveData_Cry_255_JP_087D54E0 @ 0x08627638
 	.globl gUnknown_8627644
 gUnknown_8627644: @ 0x08627644
-sAnalyzedData_08627644: @ 0x08627644
 	cry2 DirectSoundWaveData_Cry_256_JP_087D69E8 @ 0x08627644
 	cry2 DirectSoundWaveData_Cry_257_JP_087D7480 @ 0x08627650
 	cry2 DirectSoundWaveData_Cry_258_JP_087D80B0 @ 0x0862765C

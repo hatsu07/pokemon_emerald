@@ -6,7 +6,6 @@ gUnknown_8579ED8: @ 0x08579ED8
 	@ confirmed contiguous ROM pointer table: 22 entries from this address
 sPointerTable_08579ED8:
 	@ analyzed canonical ROM range 0x08579ED8-0x08579F2F
-sAnalyzedData_08579ED8: @ 0x08579ED8
 	@ pointer/nullable table
 	.4byte gText_Rom_579E6C @ +0x0
 	.4byte gText_Rom_579E71 @ +0x4
@@ -36,7 +35,6 @@ gEasyChatData_08579F30:
 	.globl gUnknown_8579F30
 gUnknown_8579F30: @ 0x08579F30
 	@ analyzed canonical ROM range 0x08579F30-0x08579F33
-sAnalyzedData_08579F30: @ 0x08579F30
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xAC, 0xAC, 0xAC, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x08579F34: easy_chat.s: GetFooterOptionXOffset
@@ -45,7 +43,6 @@ gEasyChatData_08579F34:
 	.globl gUnknown_8579F34
 gUnknown_8579F34: @ 0x08579F34
 	@ analyzed canonical ROM range 0x08579F34-0x08579F37
-sAnalyzedData_08579F34: @ 0x08579F34
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x9A, 0x01, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08579F38: mon_markings.s: sub_081201A0
@@ -54,7 +51,6 @@ gMonMarkingsData_08579F38:
 	.globl gUnknown_8579F38
 gUnknown_8579F38: @ 0x08579F38
 	@ analyzed canonical ROM range 0x08579F38-0x08579F57
-sAnalyzedData_08579F38: @ 0x08579F38
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x50, 0xFF, 0x7F, 0x00, 0x00, 0x5B, 0x6F, 0x00, 0x00, 0xF6, 0x5A, 0x9D, 0x77, 0xEF, 0x3D
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -64,7 +60,6 @@ gMonMarkingsData_08579F58:
 	.globl gUnknown_8579F58
 gUnknown_8579F58: @ 0x08579F58
 	@ analyzed canonical ROM range 0x08579F58-0x0857A277
-sAnalyzedData_08579F58: @ 0x08579F58
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1111, 0x1111, 0x3611, 0x1163, 0x3361, 0x1633, 0x3331, 0x1333
 	.2byte 0x3331, 0x1333, 0x3361, 0x1633, 0x3611, 0x1163, 0x1111, 0x1111
@@ -122,7 +117,6 @@ gMonMarkingsData_0857A278:
 	.globl gUnknown_857A278
 gUnknown_857A278: @ 0x0857A278
 	@ analyzed canonical ROM range 0x0857A278-0x0857A297
-sAnalyzedData_0857A278: @ 0x0857A278
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xB5, 0x56, 0x6B, 0x49, 0xEC, 0x49, 0xFF, 0x7F, 0x39, 0x67, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -132,7 +126,6 @@ gMonMarkingsData_0857A298:
 	.globl gUnknown_857A298
 gUnknown_857A298: @ 0x0857A298
 	@ analyzed canonical ROM range 0x0857A298-0x0857AA97
-sAnalyzedData_0857A298: @ 0x0857A298
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x0000, 0x1200, 0x0021, 0x1120, 0x0211, 0x1110, 0x0111
 	.2byte 0x1110, 0x0111, 0x1120, 0x0211, 0x1200, 0x0021, 0x0000, 0x0000

@@ -9,7 +9,6 @@ gText_Rom_57C9A9: @ 0x0857C9A9
 	.space 0x4 - (. - gText_Rom_57C9A9)
 	.endif
 	@ analyzed canonical ROM range 0x0857C9AD-0x0857C9AE
-sAnalyzedData_0857C9AD: @ 0x0857C9AD
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x66, 0x97
 	.globl gText_Rom_57C9AF
@@ -22,7 +21,6 @@ gText_Rom_57C9AF: @ 0x0857C9AF
 	.space 0x4 - (. - gText_Rom_57C9AF)
 	.endif
 	@ analyzed canonical ROM range 0x0857C9B3-0x0857C9B5
-sAnalyzedData_0857C9B3: @ 0x0857C9B3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x6A, 0x65, 0x91
 	.globl gText_Rom_57C9B6
@@ -35,7 +33,6 @@ gText_Rom_57C9B6: @ 0x0857C9B6
 	.space 0x4 - (. - gText_Rom_57C9B6)
 	.endif
 	@ analyzed canonical ROM range 0x0857C9BA-0x0857C9C3
-sAnalyzedData_0857C9BA: @ 0x0857C9BA
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x5C, 0x55, 0x7E, 0x60, 0x53, 0x7E, 0xFF, 0x58, 0x61, 0x96
 	.globl gText_Rom_57C9C4
@@ -48,7 +45,6 @@ gText_Rom_57C9C4: @ 0x0857C9C4
 	.space 0x4 - (. - gText_Rom_57C9C4)
 	.endif
 	@ analyzed canonical ROM range 0x0857C9C8-0x0857C9CB
-sAnalyzedData_0857C9C8: @ 0x0857C9C8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x60, 0x6F, 0x71, 0x5C
 	.globl gText_Rom_57C9CC
@@ -61,7 +57,6 @@ gText_Rom_57C9CC: @ 0x0857C9CC
 	.space 0x4 - (. - gText_Rom_57C9CC)
 	.endif
 	@ analyzed canonical ROM range 0x0857C9D0-0x0857C9D3
-sAnalyzedData_0857C9D0: @ 0x0857C9D0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x5E, 0x57, 0x61, 0x58
 	.globl gText_Rom_57C9D4
@@ -74,7 +69,6 @@ gText_Rom_57C9D4: @ 0x0857C9D4
 	.space 0x4 - (. - gText_Rom_57C9D4)
 	.endif
 	@ analyzed canonical ROM range 0x0857C9D8-0x0857C9EA
-sAnalyzedData_0857C9D8: @ 0x0857C9D8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x89, 0x7A, 0x7E, 0x3D, 0x1F, 0xFF, 0x5E, 0x57, 0x54, 0x52, 0x0A, 0x03, 0x3A, 0x2E, 0xFF, 0x74
 	.byte 0x6F, 0x98, 0x57
@@ -88,7 +82,6 @@ gText_Rom_57C9EB: @ 0x0857C9EB
 	.space 0x4 - (. - gText_Rom_57C9EB)
 	.endif
 	@ analyzed canonical ROM range 0x0857C9EF-0x0857CA9E
-sAnalyzedData_0857C9EF: @ 0x0857C9EF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xA5, 0x46, 0x2E, 0x00, 0x45, 0x03, 0x2B, 0xFF, 0xA2, 0xA1, 0x46, 0x2E, 0x00, 0x45, 0x03, 0x2B
 	.byte 0xFF, 0xA2, 0x46, 0x2E, 0x00, 0x45, 0x03, 0x2B, 0xFF, 0xA3, 0x46, 0x2E, 0x00, 0x45, 0x03, 0x2B

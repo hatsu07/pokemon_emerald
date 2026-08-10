@@ -20,7 +20,6 @@ gBattleFactoryScreenData_085DBC30:
 	.globl gUnknown_85DBC30
 gUnknown_85DBC30: @ 0x085DBC30
 	@ analyzed canonical ROM range 0x085DBC30-0x085DBC3B
-sAnalyzedData_085DBC30: @ 0x085DBC30
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0180, 0x0000, 0x3195, 0x0000, 0x21BB, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085DBC3C: battle_factory_screen.s: CB2_InitSelectScreen
@@ -29,7 +28,6 @@ gBattleFactoryScreenData_085DBC3C:
 	.globl gUnknown_85DBC3C
 gUnknown_85DBC3C: @ 0x085DBC3C
 	@ analyzed canonical ROM range 0x085DBC3C-0x085DBC73
-sAnalyzedData_085DBC3C: @ 0x085DBC3C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x0802, 0x0F02, 0x0001, 0x1800, 0x0802, 0x0E02, 0x0011
 	.2byte 0x0000, 0x140F, 0x0F03, 0x0021, 0x1700, 0x060E, 0x0F06, 0x005D
@@ -41,7 +39,6 @@ gBattleFactoryScreenData_085DBC74:
 	.globl gUnknown_85DBC74
 gUnknown_85DBC74: @ 0x085DBC74
 	@ analyzed canonical ROM range 0x085DBC74-0x085DBC7D
-sAnalyzedData_085DBC74: @ 0x085DBC74
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x0000, 0x7FFF, 0x0000, 0x001F
 	@ pret/pokeemerald-jp direct xref for 0x085DBC7E: battle_factory_screen.s: Select_PrintMenuOptions, Select_PrintYesNoOptions
@@ -50,7 +47,6 @@ gBattleFactoryScreenData_085DBC7E:
 	.globl gUnknown_85DBC7E
 gUnknown_85DBC7E: @ 0x085DBC7E
 	@ analyzed canonical ROM range 0x085DBC7E-0x085DBC80
-sAnalyzedData_085DBC7E: @ 0x085DBC7E
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x02, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085DBC81: battle_factory_screen.s: Select_PrintMonSpecies
@@ -59,7 +55,6 @@ gBattleFactoryScreenData_085DBC81:
 	.globl gUnknown_85DBC81
 gUnknown_85DBC81: @ 0x085DBC81
 	@ analyzed canonical ROM range 0x085DBC81-0x085DBDDF
-sAnalyzedData_085DBC81: @ 0x085DBC81
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x04, 0x00, 0x00, 0x00, 0x00, 0x80, 0x00, 0x0C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x40, 0x00
 	.byte 0x0C, 0x00, 0x00, 0x00, 0x40, 0x00, 0x80, 0x00, 0x08, 0x00, 0x00, 0x00, 0x07, 0x00, 0xC0, 0x00
@@ -129,7 +124,6 @@ gBattleFactoryScreenData_085DBE58:
 	.globl gUnknown_85DBE58
 gUnknown_85DBE58: @ 0x085DBE58
 	@ analyzed canonical ROM range 0x085DBE58-0x085DBEA7
-sAnalyzedData_085DBE58: @ 0x085DBE58
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xB8, 0x9E, 0x5D, 0x08, 0x80, 0x00, 0x65, 0x00, 0x38, 0x9F, 0x5D, 0x08, 0x00, 0x01, 0x66, 0x00
 	.byte 0x38, 0xA0, 0x5D, 0x08, 0x00, 0x01, 0x67, 0x00, 0x38, 0xA1, 0x5D, 0x08, 0x80, 0x00, 0x68, 0x00
@@ -142,7 +136,6 @@ gBattleFactoryScreenData_085DBEA8:
 	.globl gUnknown_85DBEA8
 gUnknown_85DBEA8: @ 0x085DBEA8
 	@ analyzed canonical ROM range 0x085DBEA8-0x085DBEB7
-sAnalyzedData_085DBEA8: @ 0x085DBEA8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x06BC, 0x0859, 0x0800, 0x0064, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085DBEB8: battle_factory_screen.s: CB2_InitSwapScreen
@@ -151,7 +144,6 @@ gBattleFactoryScreenData_085DBEB8:
 	.globl gUnknown_85DBEB8
 gUnknown_85DBEB8: @ 0x085DBEB8
 	@ analyzed canonical ROM range 0x085DBEB8-0x085DC03B
-sAnalyzedData_085DBEB8: @ 0x085DBEB8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x9C38, 0x085D, 0x0064, 0x0000, 0x9C58, 0x085D, 0x0065, 0x0000
 	.2byte 0x9C78, 0x085D, 0x0066, 0x0000, 0xBB18, 0x085D, 0x0067, 0x0000

@@ -11,7 +11,6 @@ gText_Rom_255F8A: @ 0x08255F8A
 	.endif
 	@ analyzed canonical ROM range 0x08255F90-0x08256053
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08255F90: @ 0x08255F90
 EventText_JP_08255F90: @ 0x08255F90
 	.string "だんさを　とびおりた$"
 EventText_JP_08255F9B: @ 0x08255F9B
@@ -35,7 +34,6 @@ gText_Rom_256054: @ 0x08256054
 	.endif
 	@ analyzed canonical ROM range 0x0825605A-0x082560BE
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0825605A: @ 0x0825605A
 EventText_JP_0825605A: @ 0x0825605A
 	.string "とけいを　みた$"
 EventText_JP_08256062: @ 0x08256062
@@ -53,7 +51,6 @@ gText_Rom_2560BF: @ 0x082560BF
 	.endif
 	@ analyzed canonical ROM range 0x082560C5-0x08256138
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082560C5: @ 0x082560C5
 EventText_JP_082560C5: @ 0x082560C5
 	.string "ポケモンくじで　あたった$"
 EventText_JP_082560D2: @ 0x082560D2
@@ -71,7 +68,6 @@ gText_Rom_256139: @ 0x08256139
 	.endif
 	@ analyzed canonical ROM range 0x0825613F-0x082561AF
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0825613F: @ 0x0825613F
 EventText_JP_0825613F: @ 0x0825613F
 	.string "そだてやに　ポケモンを　あずけた$"
 EventText_JP_08256150: @ 0x08256150
@@ -89,7 +85,6 @@ gText_Rom_2561B0: @ 0x082561B0
 	.endif
 	@ analyzed canonical ROM range 0x082561B6-0x0825621D
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082561B6: @ 0x082561B6
 EventText_JP_082561B6: @ 0x082561B6
 	.string "ロープウェイに　のった$"
 EventText_JP_082561C2: @ 0x082561C2
@@ -107,7 +102,6 @@ gText_Rom_25621E: @ 0x0825621E
 	.endif
 	@ analyzed canonical ROM range 0x08256224-0x08256361
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08256224: @ 0x08256224
 EventText_JP_08256224: @ 0x08256224
 	.string "おんせんに　はいった$"
 EventText_JP_0825622F: @ 0x0825622F

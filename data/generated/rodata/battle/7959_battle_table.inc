@@ -4,7 +4,6 @@ gPokenavMatchCallDataData_085F79B4:
 	.globl gUnknown_85F79B4
 gUnknown_85F79B4: @ 0x085F79B4
 	@ analyzed canonical ROM range 0x085F79B4-0x085F7A07
-sAnalyzedData_085F79B4: @ 0x085F79B4
 	@ pointer/nullable table
 	.4byte 0x085F7488 @ +0x0
 	.4byte 0x085F74FC @ +0x4
@@ -82,7 +81,6 @@ gPokenavMatchCallDataData_085F7A94:
 	.globl gUnknown_85F7A94
 gUnknown_85F7A94: @ 0x085F7A94
 	@ analyzed canonical ROM range 0x085F7A94-0x085F7AF3
-sAnalyzedData_085F7A94: @ 0x085F7A94
 	@ pointer/nullable table
 	.4byte 0x004B0007 @ +0x0
 	.4byte 0x0000FFFF @ +0x4
@@ -114,7 +112,6 @@ gMenuSpecializedData_085F7AF4:
 	.globl gUnknown_85F7AF4
 gUnknown_85F7AF4: @ 0x085F7AF4
 	@ analyzed canonical ROM range 0x085F7AF4-0x085F7B0B
-sAnalyzedData_085F7AF4: @ 0x085F7AF4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x0801, 0x0F02, 0x0008, 0x1500, 0x0801, 0x0F12, 0x0018
 	.2byte 0x0100, 0x0B01, 0x0F08, 0x0018
@@ -124,7 +121,6 @@ gMenuSpecializedData_085F7B0C:
 	.globl gUnknown_85F7B0C
 gUnknown_85F7B0C: @ 0x085F7B0C
 	@ analyzed canonical ROM range 0x085F7B0C-0x085F7B17
-sAnalyzedData_085F7B0C: @ 0x085F7B0C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0040, 0x0400, 0x0001, 0xA660, 0x0001, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085F7B18: menu_specialized.s: sub_081D1D70
@@ -133,7 +129,6 @@ gMenuSpecializedData_085F7B18:
 	.globl gUnknown_85F7B18
 gUnknown_85F7B18: @ 0x085F7B18
 	@ analyzed canonical ROM range 0x085F7B18-0x085F7C17
-sAnalyzedData_085F7B18: @ 0x085F7B18
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0504, 0x0706, 0x0908, 0x0A09, 0x0B0A, 0x0C0B, 0x0D0C, 0x0D0D
 	.2byte 0x0E0D, 0x0E0E, 0x0F0E, 0x0F0F, 0x100F, 0x1010, 0x1010, 0x1110
@@ -157,7 +152,6 @@ gMenuSpecializedData_085F7C18:
 	.globl gUnknown_85F7C18
 gUnknown_85F7C18: @ 0x085F7C18
 	@ analyzed canonical ROM range 0x085F7C18-0x085F7C47
-sAnalyzedData_085F7C18: @ 0x085F7C18
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0101, 0x1201, 0x0F0C, 0x000A, 0x0101, 0x1201, 0x0F0C, 0x00E2
 	.2byte 0x1501, 0x0801, 0x0F0C, 0x01BA, 0x0401, 0x160F, 0x0F04, 0x021A
@@ -168,7 +162,6 @@ gMenuSpecializedData_085F7C48:
 	.globl gUnknown_85F7C48
 gUnknown_85F7C48: @ 0x085F7C48
 	@ analyzed canonical ROM range 0x085F7C48-0x085F7C4F
-sAnalyzedData_085F7C48: @ 0x085F7C48
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1600, 0x0508, 0x0F04, 0x0272
 	.globl gUnknown_85F7C50

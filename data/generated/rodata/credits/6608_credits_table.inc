@@ -14,7 +14,6 @@ gMatchCallData_085D7A14:
 	.globl gUnknown_85D7A14
 gUnknown_85D7A14: @ 0x085D7A14
 	@ analyzed canonical ROM range 0x085D7A14-0x085D7A1B
-sAnalyzedData_085D7A14: @ 0x085D7A14
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x1C0F, 0x0F04, 0x0200
 	@ pret/pokeemerald-jp direct xref for 0x085D7A1C: match_call.s: PopulateMatchCallStringVars
@@ -23,7 +22,6 @@ gMatchCallData_085D7A1C:
 	.globl gUnknown_85D7A1C
 gUnknown_85D7A1C: @ 0x085D7A1C
 	@ analyzed canonical ROM range 0x085D7A1C-0x085D7A27
-sAnalyzedData_085D7A1C: @ 0x085D7A1C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1C40, 0x0202, 0x1C54, 0x0202, 0x1C68, 0x0202
 	@ pret/pokeemerald-jp direct xref for 0x085D7A28: match_call.s: PopulateMatchCallStringVar
@@ -35,7 +33,6 @@ gUnknown_85D7A28: @ 0x085D7A28
 sPointerTable_085D7A28:
 	@ analyzed canonical ROM range 0x085D7A28-0x085D7A53
 	@ semantic recovery: rodata; byte-verified against linked ROM
-sAnalyzedData_085D7A28: @ 0x085D7A28
 FunctionPointerTable_JP_085D7A28: @ 0x085D7A28
 	@ proven function-pointer table
 	.4byte PopulateTrainerName
@@ -52,7 +49,6 @@ gMatchCallData_085D7A54:
 	.globl gUnknown_85D7A54
 gUnknown_85D7A54: @ 0x085D7A54
 	@ analyzed canonical ROM range 0x085D7A54-0x085D7A83
-sAnalyzedData_085D7A54: @ 0x085D7A54
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x82, 0x02, 0x00, 0x00, 0x40, 0x7A, 0x5D, 0x08, 0xE1, 0x01, 0x00, 0x00, 0x43, 0x7A, 0x5D, 0x08
 	.byte 0xA9, 0x02, 0x00, 0x00, 0x46, 0x7A, 0x5D, 0x08, 0xAF, 0x02, 0x00, 0x00, 0x49, 0x7A, 0x5D, 0x08
@@ -74,7 +70,6 @@ gUnknown_85D7AA0: @ 0x085D7AA0
 	@ confirmed contiguous ROM pointer table: 4 entries from this address
 sPointerTable_085D7AA0:
 	@ analyzed canonical ROM range 0x085D7AA0-0x085D7AAF
-sAnalyzedData_085D7AA0: @ 0x085D7AA0
 	@ pointer/nullable table
 	.4byte gText_Rom_680867 @ +0x0
 	.4byte 0x086A0869 @ +0x4
@@ -107,7 +102,6 @@ gUnknown_85D7AB0: @ 0x085D7AB0
 	.globl gUnknown_85D7B04
 gUnknown_85D7B04: @ 0x085D7B04
 	@ analyzed canonical ROM range 0x085D7B04-0x085D7B23
-sAnalyzedData_085D7B04: @ 0x085D7B04
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0x7F, 0xFF, 0x7F, 0x8C, 0x31, 0x5A, 0x67, 0x3C, 0x04, 0xFF, 0x3A, 0x64, 0x06, 0xD2, 0x4B
 	.byte 0x46, 0x65, 0x14, 0x7B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -117,7 +111,6 @@ gMenuData_085D7B24:
 	.globl gUnknown_85D7B24
 gUnknown_85D7B24: @ 0x085D7B24
 	@ analyzed canonical ROM range 0x085D7B24-0x085D7B27
-sAnalyzedData_085D7B24: @ 0x085D7B24
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x08, 0x04, 0x01, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085D7B28: menu.s: InitStandardTextBoxWindows
@@ -126,7 +119,6 @@ gMenuData_085D7B28:
 	.globl gUnknown_85D7B28
 gUnknown_85D7B28: @ 0x085D7B28
 	@ analyzed canonical ROM range 0x085D7B28-0x085D7B37
-sAnalyzedData_085D7B28: @ 0x085D7B28
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0400, 0x160F, 0x0F04, 0x01A8, 0x00FF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085D7B38: menu.s: DisplayYesNoMenuDefaultYes, DisplayYesNoMenuWithDefault
@@ -135,7 +127,6 @@ gMenuData_085D7B38:
 	.globl gUnknown_85D7B38
 gUnknown_85D7B38: @ 0x085D7B38
 	@ analyzed canonical ROM range 0x085D7B38-0x085D7B3F
-sAnalyzedData_085D7B38: @ 0x085D7B38
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1500, 0x0509, 0x0F04, 0x0146
 	.globl gUnknown_85D7B40

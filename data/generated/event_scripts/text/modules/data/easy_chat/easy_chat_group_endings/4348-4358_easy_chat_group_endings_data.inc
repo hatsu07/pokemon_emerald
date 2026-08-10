@@ -10,7 +10,6 @@ gText_Rom_224AC2: @ 0x08224AC2
 	.endif
 	@ analyzed canonical ROM range 0x08224AC6-0x08224D50
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08224AC6: @ 0x08224AC6
 EventScript_08224AC6: @ 0x08224AC6
 EventText_JP_08224AC6: @ 0x08224AC6
 	.string "わたくしの　パートナーに　ならないと\nきっと　こうかい　しますわよ$"
@@ -67,7 +66,6 @@ gText_Rom_224D51: @ 0x08224D51
 	.endif
 	@ analyzed canonical ROM range 0x08224D55-0x0822533F
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08224D55: @ 0x08224D55
 EventText_JP_08224D55: @ 0x08224D55
 	.string "いま　わたくし\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……$"
 EventText_JP_08224D6A: @ 0x08224D6A
@@ -179,7 +177,6 @@ gText_Rom_225340: @ 0x08225340
 	.endif
 	@ analyzed canonical ROM range 0x08225344-0x082253E2
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08225344: @ 0x08225344
 EventText_JP_08225344: @ 0x08225344
 	.string "わたくし\n{STR_VAR_1}を　もった　{STR_VAR_2}と……$"
 EventText_JP_08225357: @ 0x08225357
@@ -201,7 +198,6 @@ gText_Rom_2253E3: @ 0x082253E3
 	.endif
 	@ analyzed canonical ROM range 0x082253E7-0x08225AB0
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082253E7: @ 0x082253E7
 EventScript_082253E7: @ 0x082253E7
 EventText_JP_082253E7: @ 0x082253E7
 	.string "わたくしは　いま\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……$"
@@ -334,7 +330,6 @@ gText_Rom_225AB1: @ 0x08225AB1
 	.endif
 	@ analyzed canonical ROM range 0x08225AB5-0x082261C9
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08225AB5: @ 0x08225AB5
 EventText_JP_08225AB5: @ 0x08225AB5
 	.string "わたくしの　つれている　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……$"
 EventText_JP_08225AD5: @ 0x08225AD5
@@ -473,7 +468,6 @@ gText_Rom_2261CA: @ 0x082261CA
 	.endif
 	@ analyzed canonical ROM range 0x082261CE-0x08226BFC
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082261CE: @ 0x082261CE
 EventScript_082261CE: @ 0x082261CE
 EventText_JP_082261CE: @ 0x082261CE
 	.string "わたくしの　ポケモンちゃん\nさいこうなのに　ざんねんです……$"

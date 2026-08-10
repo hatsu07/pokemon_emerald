@@ -11,7 +11,6 @@ gText_Rom_255323: @ 0x08255323
 	.endif
 	@ analyzed canonical ROM range 0x08255329-0x08255386
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08255329: @ 0x08255329
 EventText_JP_08255329: @ 0x08255329
 	.string "レポートを　かいた$"
 EventText_JP_08255333: @ 0x08255333
@@ -29,7 +28,6 @@ gText_Rom_255387: @ 0x08255387
 	.endif
 	@ analyzed canonical ROM range 0x0825538D-0x082553F4
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0825538D: @ 0x0825538D
 EventScript_0825538D: @ 0x0825538D
 EventText_JP_0825538D: @ 0x0825538D
 	.string "りゅうこうを　つくった$"
@@ -48,7 +46,6 @@ gText_Rom_2553F5: @ 0x082553F5
 	.endif
 	@ analyzed canonical ROM range 0x082553FB-0x0825544D
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082553FB: @ 0x082553FB
 EventText_JP_082553FB: @ 0x082553FB
 	.string "きのみを　うえた$"
 EventText_JP_08255404: @ 0x08255404
@@ -66,7 +63,6 @@ gText_Rom_25544E: @ 0x0825544E
 	.endif
 	@ analyzed canonical ROM range 0x08255454-0x082554C2
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08255454: @ 0x08255454
 EventText_JP_08255454: @ 0x08255454
 	.string "じてんしゃを　こうかんした$"
 EventText_JP_08255462: @ 0x08255462
@@ -84,7 +80,6 @@ gText_Rom_2554C3: @ 0x082554C3
 	.endif
 	@ analyzed canonical ROM range 0x082554C9-0x0825552D
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082554C9: @ 0x082554C9
 EventText_JP_082554C9: @ 0x082554C9
 	.string "インタビューに　こたえた$"
 EventText_JP_082554D6: @ 0x082554D6
@@ -102,7 +97,6 @@ gText_Rom_25552E: @ 0x0825552E
 	.endif
 	@ analyzed canonical ROM range 0x08255534-0x0825559C
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08255534: @ 0x08255534
 EventText_JP_08255534: @ 0x08255534
 	.string "しょうぶ　した$"
 EventText_JP_0825553C: @ 0x0825553C
@@ -119,6 +113,5 @@ gText_Rom_25559D: @ 0x0825559D
 	.space 0x6 - (. - gText_Rom_25559D)
 	.endif
 	@ analyzed canonical ROM range 0x082555A3-0x082555A8
-sAnalyzedEventData_082555A3: @ 0x082555A3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x9F, 0x59, 0x73, 0x7E, 0x2D, 0x00
