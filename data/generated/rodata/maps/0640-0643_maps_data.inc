@@ -6861,11 +6861,8 @@ sMiniStepCallbackSequence_2Frames: @ 0x084E6BA0
 gEventObjectMovementData_084E6BA8:
 	.globl gUnknown_84E6BA8
 gUnknown_84E6BA8: @ 0x084E6BA8
-	@ confirmed contiguous ROM pointer table: 5 entries from this address
-sPointerTable_084E6BA8:
-	@ analyzed canonical ROM range 0x084E6BA8-0x084E6BBB
-sAnalyzedData_084E6BA8: @ 0x084E6BA8
-	@ mini-step callback sequences indexed by the duration slot in obj_npc_ministep.
+gMiniStepCallbackSequencesByDurationSlot: @ 0x084E6BA8
+	@ Indexed by the duration slot in obj_npc_ministep.
 	.4byte sMiniStepCallbackSequence_16Frames
 	.4byte sMiniStepCallbackSequence_8Frames
 	.4byte sMiniStepCallbackSequence_6Frames
@@ -6876,31 +6873,29 @@ sAnalyzedData_084E6BA8: @ 0x084E6BA8
 gEventObjectMovementData_084E6BBC:
 	.globl gUnknown_84E6BBC
 gUnknown_84E6BBC: @ 0x084E6BBC
-	@ analyzed canonical ROM range 0x084E6BBC-0x084E6BC5
-sAnalyzedData_084E6BBC: @ 0x084E6BBC
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0010, 0x0008, 0x0006, 0x0004, 0x0002
+gMiniStepDurations: @ 0x084E6BBC
+	.2byte 16, 8, 6, 4, 2
 	@ pret/pokeemerald-jp direct xref for 0x084E6BC6: event_object_movement.s: sub_080970AC
 	.globl gEventObjectMovementData_084E6BC6
 gEventObjectMovementData_084E6BC6:
 	.globl gUnknown_84E6BC6
 gUnknown_84E6BC6: @ 0x084E6BC6
-	@ analyzed canonical ROM range 0x084E6BC6-0x084E6C0D
-sAnalyzedData_084E6BC6: @ 0x084E6BC6
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0201, 0x0202, 0x0202, 0x0202, 0x0202, 0x0102, 0x0202, 0x0201
-	.2byte 0x0102, 0x0202, 0x0201, 0x0101, 0x0102, 0x0201, 0x0101, 0x0102
-	.2byte 0x0201, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101
-	.2byte 0x0100, 0x0101, 0x0100, 0x0001, 0x0001, 0x0001, 0x0001, 0x0000
-	.2byte 0x0100, 0x0000, 0x0000, 0x0000
+gMovementOffsetTable1: @ 0x084E6BC6
+	.byte 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02
+	.byte 0x02, 0x02, 0x02, 0x01, 0x02, 0x02, 0x01, 0x02
+	.byte 0x02, 0x01, 0x02, 0x02, 0x01, 0x02, 0x01, 0x01
+	.byte 0x02, 0x01, 0x01, 0x02, 0x01, 0x01, 0x02, 0x01
+	.byte 0x01, 0x02, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+	.byte 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+	.byte 0x00, 0x01, 0x01, 0x01, 0x00, 0x01, 0x01, 0x00
+	.byte 0x01, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00
+	.byte 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084E6C0E: event_object_movement.s: sub_08097098
 	.globl gEventObjectMovementData_084E6C0E
 gEventObjectMovementData_084E6C0E:
 	.globl gUnknown_84E6C0E
 gUnknown_84E6C0E: @ 0x084E6C0E
-	@ analyzed canonical ROM range 0x084E6C0E-0x084E6C87
-sAnalyzedData_084E6C0E: @ 0x084E6C0E
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gMovementOffsetTable2: @ 0x084E6C0E
 	.byte 0x00, 0x00, 0x01, 0x00, 0x00, 0x01, 0x00, 0x00, 0x01, 0x00, 0x01, 0x01, 0x00, 0x01, 0x01, 0x00
 	.byte 0x01, 0x01, 0x00, 0x01, 0x01, 0x00, 0x01, 0x01, 0x00, 0x00, 0x01, 0x00, 0x00, 0x01, 0x00, 0x00
 	.byte 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -6921,9 +6916,8 @@ sMovementOffsetSequence_084E6C76: @ 0x084E6C76
 gEventObjectMovementData_084E6C88:
 	.globl gUnknown_84E6C88
 gUnknown_84E6C88: @ 0x084E6C88
-	@ analyzed canonical ROM range 0x084E6C88-0x084E6C93
-sAnalyzedData_084E6C88: @ 0x084E6C88
-	@ signed offset sequences indexed by sub_08097190.
+gMovementOffsetSequences: @ 0x084E6C88
+	@ Signed offset sequences indexed by sub_08097190.
 	.4byte sMovementOffsetSequence_084E6C56
 	.4byte sMovementOffsetSequence_084E6C66
 	.4byte sMovementOffsetSequence_084E6C76
@@ -6932,46 +6926,39 @@ sAnalyzedData_084E6C88: @ 0x084E6C88
 gEventObjectMovementData_084E6C94:
 	.globl gUnknown_84E6C94
 gUnknown_84E6C94: @ 0x084E6C94
-	@ analyzed canonical ROM range 0x084E6C94-0x084E6C99
-sAnalyzedData_084E6C94: @ 0x084E6C94
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x10, 0x00, 0x10, 0x00, 0x20, 0x00
+gMovementOffsetDurations1: @ 0x084E6C94
+	.2byte 16, 16, 32
 	@ pret/pokeemerald-jp direct xref for 0x084E6C9A: event_object_movement.s: sub_080971CC
 	.globl gEventObjectMovementData_084E6C9A
 gEventObjectMovementData_084E6C9A:
 	.globl gUnknown_84E6C9A
 gUnknown_84E6C9A: @ 0x084E6C9A
-	@ analyzed canonical ROM range 0x084E6C9A-0x084E6C9D
-sAnalyzedData_084E6C9A: @ 0x084E6C9A
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x00, 0x00, 0x01, 0x00
+gMovementOffsetShiftCounts1: @ 0x084E6C9A
+	.byte 0, 0, 1
+	.byte 0 @ padding
 	@ pret/pokeemerald-jp direct xref for 0x084E6C9E: event_object_movement.s: sub_08097254
 	.globl gEventObjectMovementData_084E6C9E
 gEventObjectMovementData_084E6C9E:
 	.globl gUnknown_84E6C9E
 gUnknown_84E6C9E: @ 0x084E6C9E
-	@ analyzed canonical ROM range 0x084E6C9E-0x084E6CA3
-sAnalyzedData_084E6C9E: @ 0x084E6C9E
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x20, 0x00, 0x20, 0x00, 0x40, 0x00
+gMovementOffsetDurations2: @ 0x084E6C9E
+	.2byte 32, 32, 64
 	@ pret/pokeemerald-jp direct xref for 0x084E6CA4: event_object_movement.s: sub_08097254
 	.globl gEventObjectMovementData_084E6CA4
 gEventObjectMovementData_084E6CA4:
 	.globl gUnknown_84E6CA4
 gUnknown_84E6CA4: @ 0x084E6CA4
-	@ analyzed canonical ROM range 0x084E6CA4-0x084E6CA7
-sAnalyzedData_084E6CA4: @ 0x084E6CA4
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x01, 0x01, 0x02, 0x00
+gMovementOffsetShiftCounts2: @ 0x084E6CA4
+	.byte 1, 1, 2
+	.byte 0 @ padding
 	@ pret/pokeemerald-jp direct xref for 0x084E6CA8: event_object_movement.s: sub_080976D8
 	.globl gEventObjectMovementData_084E6CA8
 gEventObjectMovementData_084E6CA8:
 	.globl gUnknown_84E6CA8
 gUnknown_84E6CA8: @ 0x084E6CA8
-	@ analyzed canonical ROM range 0x084E6CA8-0x084E6CB3
-sAnalyzedData_084E6CA8: @ 0x084E6CA8
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x65, 0x76, 0x6F, 0x62, 0x6A, 0x6D, 0x76, 0x2E, 0x63, 0x00, 0x00, 0x00
+gEventObjectMovementAssertFile: @ 0x084E6CA8
+	.ascii "evobjmv.c"
+	.byte 0, 0, 0
 	.globl gUnknown_84E6CB4
 gUnknown_84E6CB4: @ 0x084E6CB4
 	@ Resolved pointer table; original ROM range 0x4E6CB4..0x4E6CDF.
