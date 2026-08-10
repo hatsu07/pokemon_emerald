@@ -2,7 +2,6 @@
 	.globl gUnknown_84DDE4C
 gUnknown_84DDE4C: @ 0x084DDE4C
 	@ analyzed canonical ROM range 0x084DDE4C-0x084E18FF
-sAnalyzedData_084DDE4C: @ 0x084DDE4C
 	.globl gFieldEffectObjectTemplatePointers
 gFieldEffectObjectTemplatePointers:
 	@ 37-entry table; order verified against field_effect_object_template_pointers.h.
@@ -2793,7 +2792,7 @@ gEventObjectMovementData_084E1900:
 	.globl gUnknown_84E1900
 gUnknown_84E1900: @ 0x084E1900
 	@ analyzed canonical ROM range 0x084E1900-0x084E401B
-sAnalyzedData_084E1900: @ 0x084E1900
+sObjectEventGraphicsResources: @ 0x084E1900
 	@ ObjectEvent graphics resource tables plus 245 proven struct ObjectEventGraphicsInfo objects.
 	@ preserved non-ObjectEventGraphicsInfo data: 0x084E1900-0x084E1DA7
 	@ ObjectEvent animation table lookup entries used by sub_080923BC.
@@ -3829,7 +3828,6 @@ gEventObjectMovementData_084E401C:
 	.globl gUnknown_84E401C
 gUnknown_84E401C: @ 0x084E401C
 	@ ObjectEvent SpritePalette table used by PatchObjectPalette.
-sAnalyzedData_084E401C:
 sObjectEventSpritePalettes: @ 0x084E401C
 	rodata_sprite_palette gObjectEventPal_JP_08485D0C, 0x1103
 	rodata_sprite_palette gObjectEventPal_JP_08485D2C, 0x1104
@@ -3879,7 +3877,6 @@ gEventObjectMovementData_084E4154:
 	.globl gUnknown_84E4154
 gUnknown_84E4154: @ 0x084E4154
 	@ ObjectEvent reflection palette override table.
-sAnalyzedData_084E4154:
 sPlayerObjectReflectionPaletteOverrides: @ 0x084E4154
 	.2byte 0x1100, 0
 	.4byte sObjectEventPaletteTagList_084E413C
@@ -3917,7 +3914,6 @@ gEventObjectMovementData_084E41CC:
 	.globl gUnknown_84E41CC
 gUnknown_84E41CC: @ 0x084E41CC
 	@ ObjectEvent special reflection palette override table.
-sAnalyzedData_084E41CC:
 sSpecialObjectReflectionPaletteOverrides: @ 0x084E41CC
 	.2byte 0x1100, 0
 	.4byte sObjectEventPaletteTagList_084E413C
@@ -3961,7 +3957,6 @@ gEventObjectMovementData_084E428C:
 	.globl gUnknown_84E428C
 gUnknown_84E428C: @ 0x084E428C
 	@ ObjectEvent default palette tag-list pointers.
-sAnalyzedData_084E428C:
 sObjectEventDefaultPaletteTagListPointers: @ 0x084E428C
 	.4byte sObjectEventPaletteTagList_084E423C
 	.4byte sObjectEventPaletteTagList_084E4250
@@ -4395,8 +4390,6 @@ gUnknown_84E4C04: @ 0x084E4C04
 	.globl gBerryTreePicTablePointers
 gBerryTreePicTablePointers:
 	@ berry tree SpriteFrameImage table pointers indexed by berry type
-sAnalyzedData_084E4C04:
-
 	.4byte gSpriteFrameImages_JP_084E43DC @ +0x0
 	.4byte gSpriteFrameImages_JP_084E48DC @ +0x4
 	.4byte gSpriteFrameImages_JP_084E429C @ +0x8
@@ -4445,8 +4438,6 @@ gUnknown_84E4CB0: @ 0x084E4CB0
 	.globl gBerryTreePaletteSlotTablePointers
 gBerryTreePaletteSlotTablePointers:
 	@ berry tree palette-slot table pointers indexed by berry type
-sAnalyzedData_084E4CB0:
-
 	.4byte sBerryTreePaletteSlots_084E4424 @ +0x0
 	.4byte sBerryTreePaletteSlots_084E4924 @ +0x4
 	.4byte sBerryTreePaletteSlots_084E42E4 @ +0x8
@@ -4495,7 +4486,6 @@ gUnknown_84E4D5C: @ 0x084E4D5C
 	.globl gBerryTreeObjectEventGraphicsIdTablePointers
 gBerryTreeObjectEventGraphicsIdTablePointers:
 	@ berry tree ObjectEvent graphics-id table pointers indexed by berry type
-sAnalyzedData_084E4D5C:
 	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x0
 	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x4
 	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE @ +0x8
@@ -4552,25 +4542,35 @@ gFarawayIslandData_084E4E1C:
 	.globl gUnknown_84E4E1C
 gUnknown_84E4E1C: @ 0x084E4E1C
 	@ analyzed canonical ROM range 0x084E4E1C-0x084E5B2F
-sAnalyzedData_084E4E1C: @ 0x084E4E1C
+sFieldEffectObjectTemplatesAndSupport: @ 0x084E4E1C
 	@ 37 struct SpriteTemplate objects used by field effects.
-	@ preserved field-effect template support data: 0x084E4E1C-0x084E4E4F
-	.byte 0x2C, 0xFC, 0x4C, 0x08, 0x05, 0x10, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x24, 0x4E, 0x4E, 0x08, 0xAC, 0xEC, 0x4C, 0x08, 0x20, 0x00, 0x00, 0x00, 0xCC, 0xEC, 0x4C, 0x08
-	.byte 0x40, 0x00, 0x00, 0x00, 0x0C, 0xED, 0x4C, 0x08, 0x80, 0x00, 0x00, 0x00, 0x8C, 0xED, 0x4C, 0x08
-	.byte 0x00, 0x04, 0x00, 0x00
+sFieldEffectShadowSpritePalette: @ 0x084E4E1C
+	rodata_sprite_palette 0x084CFC2C, 0x1005
+sFieldEffectSingleFrameAnimCmd: @ 0x084E4E24
+	.2byte 0, 1
+	.2byte 0xFFFF, 0 @ ANIMCMD_END
+sFieldEffectSingleFrameAnimTable: @ 0x084E4E2C
+	.4byte sFieldEffectSingleFrameAnimCmd
+sFieldEffectShadowSmallFrameImages: @ 0x084E4E30
+	sprite_frame_image 0x084CECAC, 0x20
+sFieldEffectShadowMediumFrameImages: @ 0x084E4E38
+	sprite_frame_image 0x084CECCC, 0x40
+sFieldEffectShadowLargeFrameImages: @ 0x084E4E40
+	sprite_frame_image 0x084CED0C, 0x80
+sFieldEffectShadowExtraLargeFrameImages: @ 0x084E4E48
+	sprite_frame_image 0x084CED8C, 0x400
 	.globl gFieldEffectObjectTemplate_ShadowSmall
 gFieldEffectObjectTemplate_ShadowSmall: @ 0x084E4E50
-	rodata_sprite_template 0xFFFF, 0xFFFF, 0x084E1940, 0x084E4E2C, 0x084E4E30, 0x082BF310, 0x08154321
+	rodata_sprite_template 0xFFFF, 0xFFFF, 0x084E1940, sFieldEffectSingleFrameAnimTable, sFieldEffectShadowSmallFrameImages, 0x082BF310, 0x08154321
 	.globl gFieldEffectObjectTemplate_ShadowMedium
 gFieldEffectObjectTemplate_ShadowMedium: @ 0x084E4E68
-	rodata_sprite_template 0xFFFF, 0xFFFF, 0x084E1948, 0x084E4E2C, 0x084E4E38, 0x082BF310, 0x08154321
+	rodata_sprite_template 0xFFFF, 0xFFFF, 0x084E1948, sFieldEffectSingleFrameAnimTable, sFieldEffectShadowMediumFrameImages, 0x082BF310, 0x08154321
 	.globl gFieldEffectObjectTemplate_ShadowLarge
 gFieldEffectObjectTemplate_ShadowLarge: @ 0x084E4E80
-	rodata_sprite_template 0xFFFF, 0xFFFF, 0x084E1958, 0x084E4E2C, 0x084E4E40, 0x082BF310, 0x08154321
+	rodata_sprite_template 0xFFFF, 0xFFFF, 0x084E1958, sFieldEffectSingleFrameAnimTable, sFieldEffectShadowLargeFrameImages, 0x082BF310, 0x08154321
 	.globl gFieldEffectObjectTemplate_ShadowExtraLarge
 gFieldEffectObjectTemplate_ShadowExtraLarge: @ 0x084E4E98
-	rodata_sprite_template 0xFFFF, 0xFFFF, 0x084E1960, 0x084E4E2C, 0x084E4E48, 0x082BF310, 0x08154321
+	rodata_sprite_template 0xFFFF, 0xFFFF, 0x084E1960, sFieldEffectSingleFrameAnimTable, sFieldEffectShadowExtraLargeFrameImages, 0x082BF310, 0x08154321
 	@ preserved field-effect template support data: 0x084E4EB0-0x084E4EF3
 	.byte 0x8C, 0x0B, 0x4D, 0x08, 0x80, 0x00, 0x00, 0x00, 0x0C, 0x0C, 0x4D, 0x08, 0x80, 0x00, 0x00, 0x00
 	.byte 0x8C, 0x0C, 0x4D, 0x08, 0x80, 0x00, 0x00, 0x00, 0x0C, 0x0D, 0x4D, 0x08, 0x80, 0x00, 0x00, 0x00
