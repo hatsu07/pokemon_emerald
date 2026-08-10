@@ -24,6 +24,7 @@
 	.equiv M4A_CMD_TUNE,  0xC8
 	.equiv M4A_CMD_PORT,  0xCC
 	.equiv M4A_CMD_EOT,   0xCE
+	.equiv M4A_CMD_TIE,   0xCF
 
 	.macro music_player info_struct, track_struct, unknown_1, unknown_2
 	.4byte \info_struct
@@ -75,6 +76,15 @@
     m4a_cmd M4A_CMD_PEND
 .endm
 
+.macro m4a_rept count:req, target:req
+    m4a_cmd_u8 M4A_CMD_REPT, \count
+    .4byte \target
+.endm
+
+.macro m4a_prio priority:req
+    m4a_cmd_u8 M4A_CMD_PRIO, \priority
+.endm
+
 .macro m4a_tempo tempo:req
     m4a_cmd_u8 M4A_CMD_TEMPO, \tempo
 .endm
@@ -95,6 +105,10 @@
     m4a_cmd_u8 M4A_CMD_PAN, \pan
 .endm
 
+.macro m4a_bend bend:req
+    m4a_cmd_u8 M4A_CMD_BEND, \bend
+.endm
+
 .macro m4a_bendr bend_range:req
     m4a_cmd_u8 M4A_CMD_BENDR, \bend_range
 .endm
@@ -103,6 +117,86 @@
     m4a_cmd_u8 M4A_CMD_LFOS, \speed
 .endm
 
+.macro m4a_lfodl delay:req
+    m4a_cmd_u8 M4A_CMD_LFODL, \delay
+.endm
+
 .macro m4a_mod depth:req
     m4a_cmd_u8 M4A_CMD_MOD, \depth
+.endm
+
+.macro m4a_modt type:req
+    m4a_cmd_u8 M4A_CMD_MODT, \type
+.endm
+
+.macro m4a_tune tune:req
+    m4a_cmd_u8 M4A_CMD_TUNE, \tune
+.endm
+
+.macro m4a_port port:req
+    m4a_cmd_u8 M4A_CMD_PORT, \port
+.endm
+
+.macro m4a_eot
+    m4a_cmd M4A_CMD_EOT
+.endm
+
+.macro m4a_eot_key key:req
+    m4a_cmd_u8 M4A_CMD_EOT, \key
+.endm
+
+.macro m4a_wait command:req
+    .byte \command
+.endm
+
+.macro m4a_tie
+    m4a_cmd M4A_CMD_TIE
+.endm
+
+.macro m4a_tie_key key:req
+    m4a_cmd_u8 M4A_CMD_TIE, \key
+.endm
+
+.macro m4a_tie_key_vel key:req, velocity:req
+    .byte M4A_CMD_TIE, \key, \velocity
+.endm
+
+.macro m4a_tie_key_vel_gate key:req, velocity:req, gate:req
+    .byte M4A_CMD_TIE, \key, \velocity, \gate
+.endm
+
+.macro m4a_note command:req
+    .byte \command
+.endm
+
+.macro m4a_note_key command:req, key:req
+    .byte \command, \key
+.endm
+
+.macro m4a_note_key_vel command:req, key:req, velocity:req
+    .byte \command, \key, \velocity
+.endm
+
+.macro m4a_note_key_vel_gate command:req, key:req, velocity:req, gate:req
+    .byte \command, \key, \velocity, \gate
+.endm
+
+.macro m4a_running_cmd_u8 value:req
+    .byte \value
+.endm
+
+.macro m4a_running_eot_key key:req
+    .byte \key
+.endm
+
+.macro m4a_running_note_key key:req
+    .byte \key
+.endm
+
+.macro m4a_running_note_key_vel key:req, velocity:req
+    .byte \key, \velocity
+.endm
+
+.macro m4a_running_note_key_vel_gate key:req, velocity:req, gate:req
+    .byte \key, \velocity, \gate
 .endm
