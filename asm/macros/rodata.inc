@@ -277,6 +277,22 @@
 	.2byte 0xFFFF, 0
 	.endm
 
+	.macro rodata_anim_jump target
+	.2byte 0xFFFE, \target
+	.endm
+
+	.macro rodata_affine_anim_frame x_scale, y_scale, rotation, duration
+	.2byte \x_scale, \y_scale, \rotation, \duration
+	.endm
+
+	.macro rodata_affine_anim_end
+	.2byte 0x7FFF, 0, 0, 0
+	.endm
+
+	.macro rodata_affine_anim_jump target
+	.2byte 0x7FFD, \target, 0, 0
+	.endm
+
 	@ struct Subsprite: signed x/y followed by packed shape/size/tile/priority.
 	.macro rodata_subsprite x, y, shape, size, tile_offset, priority
 	.byte (\x) & 0xFF, (\y) & 0xFF
