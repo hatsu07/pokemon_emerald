@@ -6733,11 +6733,14 @@ gUnknown_84E6A38: @ 0x084E6A38
 gEventObjectMovementData_084E6A50:
 	.globl gUnknown_84E6A50
 gUnknown_84E6A50: @ 0x084E6A50
-	@ analyzed canonical ROM range 0x084E6A50-0x084E6A67
-sAnalyzedData_084E6A50: @ 0x084E6A50
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x00, 0x10, 0x00, 0x00, 0x00, 0x20, 0x00, 0x00, 0x00, 0x40, 0x00, 0x00, 0x00, 0x80, 0x00, 0x00
-	.byte 0x00, 0x40, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00
+gJumpLandingGroundEffectFlags: @ 0x084E6A50
+	@ Indexed with the metatile behavior predicate table at gUnknown_84E6A38.
+	.4byte 0x00001000 @ tall grass
+	.4byte 0x00002000 @ long grass
+	.4byte 0x00004000 @ puddle
+	.4byte 0x00008000 @ surfable water / underwater
+	.4byte 0x00004000 @ shallow flowing water
+	.4byte 0x00010000 @ A tile
 	.globl gUnknown_84E6A68
 gUnknown_84E6A68: @ 0x084E6A68
 	.4byte MetatileBehavior_IsJumpSouth
@@ -6749,28 +6752,25 @@ gUnknown_84E6A68: @ 0x084E6A68
 gEventObjectMovementData_084E6A78:
 	.globl gUnknown_84E6A78
 gUnknown_84E6A78: @ 0x084E6A78
-	@ analyzed canonical ROM range 0x084E6A78-0x084E6A87
-sAnalyzedData_084E6A78: @ 0x084E6A78
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gObjectSubpriorityOffsetsByZCoord: @ 0x084E6A78
+	@ Indexed by Z coord in SetObjectSubpriorityByZCoord.
 	.byte 0x73, 0x73, 0x53, 0x73, 0x53, 0x73, 0x53, 0x73, 0x53, 0x73, 0x53, 0x73, 0x53, 0x00, 0x00, 0x73
 	@ pret/pokeemerald-jp direct xref for 0x084E6A88: event_object_movement.s: InitObjectPriorityByZCoord, UpdateEventObjectZCoordAndPriority, sub_08096718
 	.globl gEventObjectMovementData_084E6A88
 gEventObjectMovementData_084E6A88:
 	.globl gUnknown_84E6A88
 gUnknown_84E6A88: @ 0x084E6A88
-	@ analyzed canonical ROM range 0x084E6A88-0x084E6A97
-sAnalyzedData_084E6A88: @ 0x084E6A88
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0202, 0x0202, 0x0201, 0x0201, 0x0201, 0x0201, 0x0001, 0x0200
+gObjectOamPrioritiesByZCoord: @ 0x084E6A88
+	.byte 2, 2, 2, 2, 1, 2, 1, 2
+	.byte 1, 2, 1, 2, 1, 0, 0, 2
 	@ pret/pokeemerald-jp direct xref for 0x084E6A98: event_object_movement.s: InitObjectPriorityByZCoord, UpdateEventObjectZCoordAndPriority
 	.globl gEventObjectMovementData_084E6A98
 gEventObjectMovementData_084E6A98:
 	.globl gUnknown_84E6A98
 gUnknown_84E6A98: @ 0x084E6A98
-	@ analyzed canonical ROM range 0x084E6A98-0x084E6AA7
-sAnalyzedData_084E6A98: @ 0x084E6A98
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0101, 0x0101, 0x0102, 0x0102, 0x0102, 0x0102, 0x0002, 0x0100
+gObjectPrioritiesByZCoord: @ 0x084E6A98
+	.byte 1, 1, 1, 1, 2, 1, 2, 1
+	.byte 2, 1, 2, 1, 2, 0, 0, 1
 	.globl gUnknown_84E6AA8
 gUnknown_84E6AA8: @ 0x084E6AA8
 	.4byte DoTracksGroundEffect_None
@@ -6781,19 +6781,18 @@ gUnknown_84E6AA8: @ 0x084E6AA8
 gEventObjectMovementData_084E6AB4:
 	.globl gUnknown_84E6AB4
 gUnknown_84E6AB4: @ 0x084E6AB4
-	@ analyzed canonical ROM range 0x084E6AB4-0x084E6AB7
-sAnalyzedData_084E6AB4: @ 0x084E6AB4
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x0D, 0x00, 0x18, 0x00
+gFootprintFieldEffectIds: @ 0x084E6AB4
+	.2byte 0x0D, 0x18
 	@ pret/pokeemerald-jp direct xref for 0x084E6AB8: event_object_movement.s: DoTracksGroundEffect_BikeTireTracks
 	.globl gEventObjectMovementData_084E6AB8
 gEventObjectMovementData_084E6AB8:
 	.globl gUnknown_84E6AB8
 gUnknown_84E6AB8: @ 0x084E6AB8
-	@ analyzed canonical ROM range 0x084E6AB8-0x084E6AC7
-sAnalyzedData_084E6AB8: @ 0x084E6AB8
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0201, 0x0807, 0x0201, 0x0506, 0x0805, 0x0403, 0x0706, 0x0403
+gBikeTireTrackDirections: @ 0x084E6AB8
+	.byte 0x01, 0x02, 0x07, 0x08
+	.byte 0x01, 0x02, 0x06, 0x05
+	.byte 0x05, 0x08, 0x03, 0x04
+	.byte 0x06, 0x07, 0x03, 0x04
 	.globl gUnknown_84E6AC8
 gUnknown_84E6AC8: @ 0x084E6AC8
 	.4byte GroundEffect_SpawnOnTallGrass
