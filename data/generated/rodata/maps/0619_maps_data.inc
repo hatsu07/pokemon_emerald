@@ -487,10 +487,14 @@ gUnknown_846F8BC: @ 0x0846F8BC
 gFieldPlayerAvatarData_0846F8D0:
 	.globl gUnknown_846F8D0
 gUnknown_846F8D0: @ 0x0846F8D0
-	@ analyzed canonical ROM range 0x0846F8D0-0x0846F8D7
-sAnalyzedData_0846F8D0: @ 0x0846F8D0
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0A09, 0x0C0B, 0x000D, 0x0000
+gAcroBikeMetatileCollisionTypeIds: @ 0x0846F8D0
+	@ Indexed with the predicate table at gUnknown_846F8BC by check_acro_bike_metatile.
+	.byte 0x09 @ bumpy slope
+	.byte 0x0A @ isolated vertical rail
+	.byte 0x0B @ isolated horizontal rail
+	.byte 0x0C @ vertical rail
+	.byte 0x0D @ horizontal rail
+	.byte 0x00, 0x00, 0x00 @ padding
 	.globl gUnknown_846F8D8
 gUnknown_846F8D8: @ 0x0846F8D8
 	.4byte PlayerAvatarTransition_Normal
@@ -512,47 +516,77 @@ gUnknown_846F8F8: @ 0x0846F8F8
 gFieldPlayerAvatarData_0846F908:
 	.globl gUnknown_846F908
 gUnknown_846F908: @ 0x0846F908
-	@ analyzed canonical ROM range 0x0846F908-0x0846F917
-sAnalyzedData_0846F908: @ 0x0846F908
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x64, 0x69, 0x65, 0x6A, 0x66, 0x6B, 0x67, 0x6C, 0x6F, 0x70, 0x68, 0x6D, 0x89, 0x8A, 0xBF, 0xC0
+gPlayerAvatarGraphicsIdsByStateAndGender: @ 0x0846F908
+	@ state 0: normal
+	.byte 0x64, 0x69
+	@ state 1: mach bike
+	.byte 0x65, 0x6A
+	@ state 2: acro bike
+	.byte 0x66, 0x6B
+	@ state 3: surfing
+	.byte 0x67, 0x6C
+	@ state 4: underwater
+	.byte 0x6F, 0x70
+	@ state 5: return to field
+	.byte 0x68, 0x6D
+	@ state 6: unused/dummy
+	.byte 0x89, 0x8A
+	@ state 7: unused/dummy
+	.byte 0xBF, 0xC0
 	@ pret/pokeemerald-jp direct xref for 0x0846F918: field_player_avatar.s: sub_0808B6B8
 	.globl gFieldPlayerAvatarData_0846F918
 gFieldPlayerAvatarData_0846F918:
 	.globl gUnknown_846F918
 gUnknown_846F918: @ 0x0846F918
-	@ analyzed canonical ROM range 0x0846F918-0x0846F927
-sAnalyzedData_0846F918: @ 0x0846F918
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x00, 0x59, 0x01, 0x5A, 0x3F, 0x5B, 0x02, 0x5C, 0x6F, 0x70, 0x03, 0x5D, 0x89, 0x8A, 0xBF, 0xC0
+gPlayerAvatarGraphicsIdsByStateAndSaveGender: @ 0x0846F918
+	@ state 0: normal
+	.byte 0x00, 0x59
+	@ state 1: mach bike
+	.byte 0x01, 0x5A
+	@ state 2: acro bike
+	.byte 0x3F, 0x5B
+	@ state 3: surfing
+	.byte 0x02, 0x5C
+	@ state 4: underwater
+	.byte 0x6F, 0x70
+	@ state 5: return to field
+	.byte 0x03, 0x5D
+	@ state 6: unused/dummy
+	.byte 0x89, 0x8A
+	@ state 7: unused/dummy
+	.byte 0xBF, 0xC0
 	@ pret/pokeemerald-jp direct xref for 0x0846F928: field_player_avatar.s: sub_0808B6D0
 	.globl gFieldPlayerAvatarData_0846F928
 gFieldPlayerAvatarData_0846F928:
 	.globl gUnknown_846F928
 gUnknown_846F928: @ 0x0846F928
-	@ analyzed canonical ROM range 0x0846F928-0x0846F929
-sAnalyzedData_0846F928: @ 0x0846F928
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gUnknownPlayerAvatarGraphicsIdsByGender: @ 0x0846F928
 	.byte 0xE6, 0xE7
 	@ pret/pokeemerald-jp direct xref for 0x0846F92A: field_player_avatar.s: GetFRLGAvatarGraphicsIdByGender
 	.globl gFieldPlayerAvatarData_0846F92A
 gFieldPlayerAvatarData_0846F92A:
 	.globl gUnknown_846F92A
 gUnknown_846F92A: @ 0x0846F92A
-	@ analyzed canonical ROM range 0x0846F92A-0x0846F92B
-sAnalyzedData_0846F92A: @ 0x0846F92A
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gFRLGPlayerAvatarGraphicsIdsByGender: @ 0x0846F92A
 	.byte 0xEB, 0xEC
 	@ pret/pokeemerald-jp direct xref for 0x0846F92C: field_player_avatar.s: GetPlayerAvatarGraphicsIdByCurrentState, GetPlayerAvatarStateTransitionByGraphicsId
 	.globl gFieldPlayerAvatarData_0846F92C
 gFieldPlayerAvatarData_0846F92C:
 	.globl gUnknown_846F92C
 gUnknown_846F92C: @ 0x0846F92C
-	@ analyzed canonical ROM range 0x0846F92C-0x0846F93F
-sAnalyzedData_0846F92C: @ 0x0846F92C
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0100, 0x0201, 0x043F, 0x0802, 0x106F, 0x0159, 0x025A, 0x045B
-	.2byte 0x085C, 0x1070
+gPlayerAvatarGraphicsIdToStateFlagTable: @ 0x0846F92C
+	@ male save gender: graphicsId, state flag
+	.byte 0x00, 0x01 @ normal
+	.byte 0x01, 0x02 @ mach bike
+	.byte 0x3F, 0x04 @ acro bike
+	.byte 0x02, 0x08 @ surfing
+	.byte 0x6F, 0x10 @ underwater
+	@ female save gender: graphicsId, state flag
+	.byte 0x59, 0x01 @ normal
+	.byte 0x5A, 0x02 @ mach bike
+	.byte 0x5B, 0x04 @ acro bike
+	.byte 0x5C, 0x08 @ surfing
+	.byte 0x70, 0x10 @ underwater
 	.globl gUnknown_846F940
 gUnknown_846F940: @ 0x0846F940
 	.4byte MetatileBehavior_IsSouthArrowWarp
@@ -578,19 +612,17 @@ gUnknown_846F960: @ 0x0846F960
 gFieldPlayerAvatarData_0846F970:
 	.globl gUnknown_846F970
 gUnknown_846F970: @ 0x0846F970
-	@ analyzed canonical ROM range 0x0846F970-0x0846F973
-sAnalyzedData_0846F970: @ 0x0846F970
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gSecretBaseSpinMatNextDirections: @ 0x0846F970
+	@ Indexed by facingDirection - 1.
 	.byte 0x03, 0x04, 0x02, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x0846F974: field_player_avatar.s: PlayerAvatar_SecretBaseMatSpinStep2
 	.globl gFieldPlayerAvatarData_0846F974
 gFieldPlayerAvatarData_0846F974:
 	.globl gUnknown_846F974
 gUnknown_846F974: @ 0x0846F974
-	@ analyzed canonical ROM range 0x0846F974-0x0846F97B
-sAnalyzedData_0846F974: @ 0x0846F974
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x1010, 0x1211, 0x0013, 0x0000
+gSecretBaseSpinMatMovementActions: @ 0x0846F974
+	.byte 0x10, 0x10, 0x11, 0x12, 0x13
+	.byte 0x00, 0x00, 0x00 @ padding
 	.globl gUnknown_846F97C
 gUnknown_846F97C: @ 0x0846F97C
 	.4byte Fishing1
@@ -614,50 +646,56 @@ gUnknown_846F97C: @ 0x0846F97C
 gFieldPlayerAvatarData_0846F9BC:
 	.globl gUnknown_846F9BC
 gUnknown_846F9BC: @ 0x0846F9BC
-	@ analyzed canonical ROM range 0x0846F9BC-0x0846F9C1
-sAnalyzedData_0846F9BC: @ 0x0846F9BC
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x01, 0x00, 0x01, 0x00, 0x01, 0x00
+gFishingWaitStartByRod: @ 0x0846F9BC
+	.2byte 1 @ old rod
+	.2byte 1 @ good rod
+	.2byte 1 @ super rod
 	@ pret/pokeemerald-jp direct xref for 0x0846F9C2: field_player_avatar.s: Fishing2
 	.globl gFieldPlayerAvatarData_0846F9C2
 gFieldPlayerAvatarData_0846F9C2:
 	.globl gUnknown_846F9C2
 gUnknown_846F9C2: @ 0x0846F9C2
-	@ analyzed canonical ROM range 0x0846F9C2-0x0846F9C7
-sAnalyzedData_0846F9C2: @ 0x0846F9C2
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x01, 0x00, 0x03, 0x00, 0x06, 0x00
+gFishingWaitRangeByRod: @ 0x0846F9C2
+	.2byte 1 @ old rod
+	.2byte 3 @ good rod
+	.2byte 6 @ super rod
 	@ pret/pokeemerald-jp direct xref for 0x0846F9C8: field_player_avatar.s: Fishing5
 	.globl gFieldPlayerAvatarData_0846F9C8
 gFieldPlayerAvatarData_0846F9C8:
 	.globl gUnknown_846F9C8
 gUnknown_846F9C8: @ 0x0846F9C8
-	@ analyzed canonical ROM range 0x0846F9C8-0x0846F9C9
-sAnalyzedData_0846F9C8: @ 0x0846F9C8
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xAF, 0xFF
+gFishingEllipsisDotText: @ 0x0846F9C8
+	.string "・$"
+	.if (. - gFishingEllipsisDotText) != 0x2
+	.error "gFishingEllipsisDotText must retain its original byte length"
+	.endif
 	.globl gUnknown_846F9CA
 gUnknown_846F9CA: @ 0x0846F9CA
-	@ Decoded text from ROM range: offset=0x46F9CA, size=0xC
+gFishingMonOnHookText:
 	.string "ひいてる　ひいてる！！$"
+	.if (. - gFishingMonOnHookText) != 0xC
+	.error "gFishingMonOnHookText must retain its original byte length"
+	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0846F9D6: field_player_avatar.s: Fishing8
 	.globl gFieldPlayerAvatarData_0846F9D6
 gFieldPlayerAvatarData_0846F9D6:
 	.globl gUnknown_846F9D6
 gUnknown_846F9D6: @ 0x0846F9D6
-	@ analyzed canonical ROM range 0x0846F9D6-0x0846F9DB
-sAnalyzedData_0846F9D6: @ 0x0846F9D6
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x24, 0x00, 0x21, 0x00, 0x1E, 0x00
+gFishingButtonPressTimeoutByRod: @ 0x0846F9D6
+	.2byte 36 @ old rod
+	.2byte 33 @ good rod
+	.2byte 30 @ super rod
 	@ pret/pokeemerald-jp direct xref for 0x0846F9DC: field_player_avatar.s: Fishing9
 	.globl gFieldPlayerAvatarData_0846F9DC
 gFieldPlayerAvatarData_0846F9DC:
 	.globl gUnknown_846F9DC
 gUnknown_846F9DC: @ 0x0846F9DC
-	@ analyzed canonical ROM range 0x0846F9DC-0x0846F9E7
-sAnalyzedData_0846F9DC: @ 0x0846F9DC
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0000, 0x0000, 0x0028, 0x000A, 0x0046, 0x001E
+gFishingBiteChanceByRodAndAttempt: @ 0x0846F9DC
+	@ old rod
+	.2byte 0, 0
+	@ good rod
+	.2byte 40, 10
+	@ super rod
+	.2byte 70, 30
 	.globl gUnknown_846F9E8
 gUnknown_846F9E8: @ 0x0846F9E8
-
