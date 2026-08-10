@@ -46,96 +46,96 @@ gFieldEffectObjectTemplatePointers:
 	@ Contiguous struct SpriteFrameImage storage used by object-event and field-effect templates.
 	.globl gSpriteFrameImages_JP_084DDEE0
 gSpriteFrameImages_JP_084DDEE0: @ 0x084DDEE0
-	sprite_frame_image 0x0846FA4C, 0x100
-	sprite_frame_image 0x0846FB4C, 0x100
-	sprite_frame_image 0x0846FC4C, 0x100
-	sprite_frame_image 0x0846FD4C, 0x100
-	sprite_frame_image 0x0846FE4C, 0x100
-	sprite_frame_image 0x0846FF4C, 0x100
-	sprite_frame_image 0x0847004C, 0x100
-	sprite_frame_image 0x0847014C, 0x100
-	sprite_frame_image 0x0847024C, 0x100
-	sprite_frame_image 0x0847034C, 0x100
-	sprite_frame_image 0x0847044C, 0x100
-	sprite_frame_image 0x0847054C, 0x100
-	sprite_frame_image 0x0847064C, 0x100
-	sprite_frame_image 0x0847074C, 0x100
-	sprite_frame_image 0x0847084C, 0x100
-	sprite_frame_image 0x0847094C, 0x100
-	sprite_frame_image 0x08470A4C, 0x100
-	sprite_frame_image 0x08470B4C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0846FA4C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0846FB4C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0846FC4C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0846FD4C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0846FE4C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0846FF4C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847004C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847014C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847024C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847034C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847044C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847054C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847064C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847074C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847084C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847094C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08470A4C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08470B4C, 0x100
 	.globl gSpriteFrameImages_JP_084DDF70
 gSpriteFrameImages_JP_084DDF70: @ 0x084DDF70
-	sprite_frame_image 0x084736AC, 0x200
-	sprite_frame_image 0x084738AC, 0x200
-	sprite_frame_image 0x08473AAC, 0x200
-	sprite_frame_image 0x08473CAC, 0x200
-	sprite_frame_image 0x08473EAC, 0x200
-	sprite_frame_image 0x084740AC, 0x200
-	sprite_frame_image 0x084742AC, 0x200
-	sprite_frame_image 0x084744AC, 0x200
-	sprite_frame_image 0x084746AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084736AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084738AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08473AAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08473CAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08473EAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084740AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084742AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084744AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084746AC, 0x200
 	.globl gSpriteFrameImages_JP_084DDFB8
 gSpriteFrameImages_JP_084DDFB8: @ 0x084DDFB8
-	sprite_frame_image 0x084748AC, 0x200
-	sprite_frame_image 0x08474AAC, 0x200
-	sprite_frame_image 0x08474CAC, 0x200
-	sprite_frame_image 0x08474EAC, 0x200
-	sprite_frame_image 0x084750AC, 0x200
-	sprite_frame_image 0x084752AC, 0x200
-	sprite_frame_image 0x084754AC, 0x200
-	sprite_frame_image 0x084756AC, 0x200
-	sprite_frame_image 0x084758AC, 0x200
-	sprite_frame_image 0x08475AAC, 0x200
-	sprite_frame_image 0x08475CAC, 0x200
-	sprite_frame_image 0x08475EAC, 0x200
-	sprite_frame_image 0x084760AC, 0x200
-	sprite_frame_image 0x084762AC, 0x200
-	sprite_frame_image 0x084764AC, 0x200
-	sprite_frame_image 0x084766AC, 0x200
-	sprite_frame_image 0x084768AC, 0x200
-	sprite_frame_image 0x08476AAC, 0x200
-	sprite_frame_image 0x08476CAC, 0x200
-	sprite_frame_image 0x08476EAC, 0x200
-	sprite_frame_image 0x084770AC, 0x200
-	sprite_frame_image 0x084772AC, 0x200
-	sprite_frame_image 0x084774AC, 0x200
-	sprite_frame_image 0x084776AC, 0x200
-	sprite_frame_image 0x084778AC, 0x200
-	sprite_frame_image 0x08477AAC, 0x200
-	sprite_frame_image 0x08477CAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084748AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08474AAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08474CAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08474EAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084750AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084752AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084754AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084756AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084758AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08475AAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08475CAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08475EAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084760AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084762AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084764AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084766AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084768AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08476AAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08476CAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08476EAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084770AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084772AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084774AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084776AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084778AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08477AAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08477CAC, 0x200
 	.globl gSpriteFrameImages_JP_084DE090
 gSpriteFrameImages_JP_084DE090: @ 0x084DE090
-	sprite_frame_image 0x08472AAC, 0x200
-	sprite_frame_image 0x08472EAC, 0x200
-	sprite_frame_image 0x084732AC, 0x200
-	sprite_frame_image 0x08472AAC, 0x200
-	sprite_frame_image 0x08472AAC, 0x200
-	sprite_frame_image 0x08472EAC, 0x200
-	sprite_frame_image 0x08472EAC, 0x200
-	sprite_frame_image 0x084732AC, 0x200
-	sprite_frame_image 0x084732AC, 0x200
-	sprite_frame_image 0x08472CAC, 0x200
-	sprite_frame_image 0x084730AC, 0x200
-	sprite_frame_image 0x084734AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08472AAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08472EAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084732AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08472AAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08472AAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08472EAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08472EAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084732AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084732AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08472CAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084730AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084734AC, 0x200
 	.globl gSpriteFrameImages_JP_084DE0F0
 gSpriteFrameImages_JP_084DE0F0: @ 0x084DE0F0
-	sprite_frame_image 0x0847A4AC, 0x200
-	sprite_frame_image 0x0847A6AC, 0x200
-	sprite_frame_image 0x0847A8AC, 0x200
-	sprite_frame_image 0x0847A4AC, 0x200
-	sprite_frame_image 0x0847A4AC, 0x200
-	sprite_frame_image 0x0847A6AC, 0x200
-	sprite_frame_image 0x0847A6AC, 0x200
-	sprite_frame_image 0x0847A8AC, 0x200
-	sprite_frame_image 0x0847A8AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847A4AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847A6AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847A8AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847A4AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847A4AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847A6AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847A6AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847A8AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847A8AC, 0x200
 	.globl gSpriteFrameImages_JP_084DE138
 gSpriteFrameImages_JP_084DE138: @ 0x084DE138
-	sprite_frame_image 0x084720AC, 0x200
-	sprite_frame_image 0x084722AC, 0x200
-	sprite_frame_image 0x084724AC, 0x200
-	sprite_frame_image 0x084726AC, 0x200
-	sprite_frame_image 0x084728AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084720AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084722AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084724AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084726AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084728AC, 0x200
 	.globl gSpriteFrameImages_JP_084DE160
 gSpriteFrameImages_JP_084DE160: @ 0x084DE160
 	sprite_frame_image gObjectEventFrameGfx_JP_084CDE6C, 0x200
@@ -147,748 +147,748 @@ gSpriteFrameImages_JP_084DE160: @ 0x084DE160
 	sprite_frame_image gObjectEventFrameGfx_JP_084CEA6C, 0x200
 	.globl gSpriteFrameImages_JP_084DE198
 gSpriteFrameImages_JP_084DE198: @ 0x084DE198
-	sprite_frame_image 0x08485E0C, 0x80
-	sprite_frame_image 0x08485E8C, 0x80
-	sprite_frame_image 0x08485F0C, 0x80
-	sprite_frame_image 0x08485F8C, 0x80
-	sprite_frame_image 0x0848600C, 0x80
-	sprite_frame_image 0x0848608C, 0x80
-	sprite_frame_image 0x0848610C, 0x80
-	sprite_frame_image 0x0848618C, 0x80
-	sprite_frame_image 0x0848620C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_08485E0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_08485E8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_08485F0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_08485F8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848600C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848608C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848610C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848618C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848620C, 0x80
 	.globl gSpriteFrameImages_JP_084DE1E0
 gSpriteFrameImages_JP_084DE1E0: @ 0x084DE1E0
-	sprite_frame_image 0x0848628C, 0x100
-	sprite_frame_image 0x0848638C, 0x100
-	sprite_frame_image 0x0848648C, 0x100
-	sprite_frame_image 0x0848658C, 0x100
-	sprite_frame_image 0x0848668C, 0x100
-	sprite_frame_image 0x0848678C, 0x100
-	sprite_frame_image 0x0848688C, 0x100
-	sprite_frame_image 0x0848698C, 0x100
-	sprite_frame_image 0x08486A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848628C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848638C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848648C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848658C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848668C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848678C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848688C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848698C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08486A8C, 0x100
 	.globl gSpriteFrameImages_JP_084DE228
 gSpriteFrameImages_JP_084DE228: @ 0x084DE228
-	sprite_frame_image 0x08486B8C, 0x100
-	sprite_frame_image 0x08486C8C, 0x100
-	sprite_frame_image 0x08486D8C, 0x100
-	sprite_frame_image 0x08486E8C, 0x100
-	sprite_frame_image 0x08486F8C, 0x100
-	sprite_frame_image 0x0848708C, 0x100
-	sprite_frame_image 0x0848718C, 0x100
-	sprite_frame_image 0x0848728C, 0x100
-	sprite_frame_image 0x0848738C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08486B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08486C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08486D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08486E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08486F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848708C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848718C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848728C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848738C, 0x100
 	.globl gSpriteFrameImages_JP_084DE270
 gSpriteFrameImages_JP_084DE270: @ 0x084DE270
-	sprite_frame_image 0x0848748C, 0x100
-	sprite_frame_image 0x0848758C, 0x100
-	sprite_frame_image 0x0848768C, 0x100
-	sprite_frame_image 0x0848778C, 0x100
-	sprite_frame_image 0x0848788C, 0x100
-	sprite_frame_image 0x0848798C, 0x100
-	sprite_frame_image 0x08487A8C, 0x100
-	sprite_frame_image 0x08487B8C, 0x100
-	sprite_frame_image 0x08487C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848748C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848758C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848768C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848778C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848788C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848798C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08487A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08487B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08487C8C, 0x100
 	.globl gSpriteFrameImages_JP_084DE2B8
 gSpriteFrameImages_JP_084DE2B8: @ 0x084DE2B8
-	sprite_frame_image 0x08487D8C, 0x100
-	sprite_frame_image 0x08487E8C, 0x100
-	sprite_frame_image 0x08487F8C, 0x100
-	sprite_frame_image 0x0848808C, 0x100
-	sprite_frame_image 0x0848818C, 0x100
-	sprite_frame_image 0x0848828C, 0x100
-	sprite_frame_image 0x0848838C, 0x100
-	sprite_frame_image 0x0848848C, 0x100
-	sprite_frame_image 0x0848858C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08487D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08487E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08487F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848808C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848818C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848828C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848838C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848848C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848858C, 0x100
 	.globl gSpriteFrameImages_JP_084DE300
 gSpriteFrameImages_JP_084DE300: @ 0x084DE300
-	sprite_frame_image 0x0848868C, 0x100
-	sprite_frame_image 0x0848878C, 0x100
-	sprite_frame_image 0x0848888C, 0x100
-	sprite_frame_image 0x0848898C, 0x100
-	sprite_frame_image 0x08488A8C, 0x100
-	sprite_frame_image 0x08488B8C, 0x100
-	sprite_frame_image 0x08488C8C, 0x100
-	sprite_frame_image 0x08488D8C, 0x100
-	sprite_frame_image 0x08488E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848868C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848878C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848888C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848898C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08488A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08488B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08488C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08488D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08488E8C, 0x100
 	.globl gSpriteFrameImages_JP_084DE348
 gSpriteFrameImages_JP_084DE348: @ 0x084DE348
-	sprite_frame_image 0x08488F8C, 0x80
-	sprite_frame_image 0x0848900C, 0x80
-	sprite_frame_image 0x0848908C, 0x80
-	sprite_frame_image 0x0848910C, 0x80
-	sprite_frame_image 0x0848918C, 0x80
-	sprite_frame_image 0x0848920C, 0x80
-	sprite_frame_image 0x0848928C, 0x80
-	sprite_frame_image 0x0848930C, 0x80
-	sprite_frame_image 0x0848938C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_08488F8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848900C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848908C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848910C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848918C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848920C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848928C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848930C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848938C, 0x80
 	.globl gSpriteFrameImages_JP_084DE390
 gSpriteFrameImages_JP_084DE390: @ 0x084DE390
-	sprite_frame_image 0x0848940C, 0x80
-	sprite_frame_image 0x0848948C, 0x80
-	sprite_frame_image 0x0848950C, 0x80
-	sprite_frame_image 0x0848958C, 0x80
-	sprite_frame_image 0x0848960C, 0x80
-	sprite_frame_image 0x0848968C, 0x80
-	sprite_frame_image 0x0848970C, 0x80
-	sprite_frame_image 0x0848978C, 0x80
-	sprite_frame_image 0x0848980C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848940C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848948C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848950C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848958C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848960C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848968C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848970C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848978C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0848980C, 0x80
 	.globl gSpriteFrameImages_JP_084DE3D8
 gSpriteFrameImages_JP_084DE3D8: @ 0x084DE3D8
-	sprite_frame_image 0x0848988C, 0x100
-	sprite_frame_image 0x0848998C, 0x100
-	sprite_frame_image 0x08489A8C, 0x100
-	sprite_frame_image 0x08489B8C, 0x100
-	sprite_frame_image 0x08489C8C, 0x100
-	sprite_frame_image 0x08489D8C, 0x100
-	sprite_frame_image 0x08489E8C, 0x100
-	sprite_frame_image 0x08489F8C, 0x100
-	sprite_frame_image 0x0848A08C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848988C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848998C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08489A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08489B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08489C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08489D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08489E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08489F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848A08C, 0x100
 	.globl gSpriteFrameImages_JP_084DE420
 gSpriteFrameImages_JP_084DE420: @ 0x084DE420
-	sprite_frame_image 0x0848A18C, 0x100
-	sprite_frame_image 0x0848A28C, 0x100
-	sprite_frame_image 0x0848A38C, 0x100
-	sprite_frame_image 0x0848A48C, 0x100
-	sprite_frame_image 0x0848A58C, 0x100
-	sprite_frame_image 0x0848A68C, 0x100
-	sprite_frame_image 0x0848A78C, 0x100
-	sprite_frame_image 0x0848A88C, 0x100
-	sprite_frame_image 0x0848A98C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848A18C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848A28C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848A38C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848A48C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848A58C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848A68C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848A78C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848A88C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848A98C, 0x100
 	.globl gSpriteFrameImages_JP_084DE468
 gSpriteFrameImages_JP_084DE468: @ 0x084DE468
-	sprite_frame_image 0x0848AA8C, 0x100
-	sprite_frame_image 0x0848AB8C, 0x100
-	sprite_frame_image 0x0848AC8C, 0x100
-	sprite_frame_image 0x0848AD8C, 0x100
-	sprite_frame_image 0x0848AE8C, 0x100
-	sprite_frame_image 0x0848AF8C, 0x100
-	sprite_frame_image 0x0848B08C, 0x100
-	sprite_frame_image 0x0848B18C, 0x100
-	sprite_frame_image 0x0848B28C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848AA8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848AB8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848AC8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848AD8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848AE8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848AF8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848B08C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848B18C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848B28C, 0x100
 	.globl gSpriteFrameImages_JP_084DE4B0
 gSpriteFrameImages_JP_084DE4B0: @ 0x084DE4B0
-	sprite_frame_image 0x0848B38C, 0x100
-	sprite_frame_image 0x0848B48C, 0x100
-	sprite_frame_image 0x0848B58C, 0x100
-	sprite_frame_image 0x0848B68C, 0x100
-	sprite_frame_image 0x0848B78C, 0x100
-	sprite_frame_image 0x0848B88C, 0x100
-	sprite_frame_image 0x0848B98C, 0x100
-	sprite_frame_image 0x0848BA8C, 0x100
-	sprite_frame_image 0x0848BB8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848B38C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848B48C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848B58C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848B68C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848B78C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848B88C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848B98C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848BA8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848BB8C, 0x100
 	.globl gSpriteFrameImages_JP_084DE4F8
 gSpriteFrameImages_JP_084DE4F8: @ 0x084DE4F8
-	sprite_frame_image 0x0848BC8C, 0x100
-	sprite_frame_image 0x0848BD8C, 0x100
-	sprite_frame_image 0x0848BE8C, 0x100
-	sprite_frame_image 0x0848BF8C, 0x100
-	sprite_frame_image 0x0848C08C, 0x100
-	sprite_frame_image 0x0848C18C, 0x100
-	sprite_frame_image 0x0848C28C, 0x100
-	sprite_frame_image 0x0848C38C, 0x100
-	sprite_frame_image 0x0848C48C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848BC8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848BD8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848BE8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848BF8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848C08C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848C18C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848C28C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848C38C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848C48C, 0x100
 	.globl gSpriteFrameImages_JP_084DE540
 gSpriteFrameImages_JP_084DE540: @ 0x084DE540
-	sprite_frame_image 0x0848C58C, 0x100
-	sprite_frame_image 0x0848C68C, 0x100
-	sprite_frame_image 0x0848C78C, 0x100
-	sprite_frame_image 0x0848C88C, 0x100
-	sprite_frame_image 0x0848C98C, 0x100
-	sprite_frame_image 0x0848CA8C, 0x100
-	sprite_frame_image 0x0848CB8C, 0x100
-	sprite_frame_image 0x0848CC8C, 0x100
-	sprite_frame_image 0x0848CD8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848C58C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848C68C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848C78C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848C88C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848C98C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848CA8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848CB8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848CC8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848CD8C, 0x100
 	.globl gSpriteFrameImages_JP_084DE588
 gSpriteFrameImages_JP_084DE588: @ 0x084DE588
-	sprite_frame_image 0x0848CE8C, 0x100
-	sprite_frame_image 0x0848CF8C, 0x100
-	sprite_frame_image 0x0848D08C, 0x100
-	sprite_frame_image 0x0848D18C, 0x100
-	sprite_frame_image 0x0848D28C, 0x100
-	sprite_frame_image 0x0848D38C, 0x100
-	sprite_frame_image 0x0848D48C, 0x100
-	sprite_frame_image 0x0848D58C, 0x100
-	sprite_frame_image 0x0848D68C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848CE8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848CF8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848D08C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848D18C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848D28C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848D38C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848D48C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848D58C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848D68C, 0x100
 	.globl gSpriteFrameImages_JP_084DE5D0
 gSpriteFrameImages_JP_084DE5D0: @ 0x084DE5D0
-	sprite_frame_image 0x0848D78C, 0x100
-	sprite_frame_image 0x0848D88C, 0x100
-	sprite_frame_image 0x0848D98C, 0x100
-	sprite_frame_image 0x0848DA8C, 0x100
-	sprite_frame_image 0x0848DB8C, 0x100
-	sprite_frame_image 0x0848DC8C, 0x100
-	sprite_frame_image 0x0848DD8C, 0x100
-	sprite_frame_image 0x0848DE8C, 0x100
-	sprite_frame_image 0x0848DF8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848D78C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848D88C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848D98C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848DA8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848DB8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848DC8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848DD8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848DE8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848DF8C, 0x100
 	.globl gSpriteFrameImages_JP_084DE618
 gSpriteFrameImages_JP_084DE618: @ 0x084DE618
-	sprite_frame_image 0x0848E08C, 0x100
-	sprite_frame_image 0x0848E18C, 0x100
-	sprite_frame_image 0x0848E28C, 0x100
-	sprite_frame_image 0x0848E38C, 0x100
-	sprite_frame_image 0x0848E48C, 0x100
-	sprite_frame_image 0x0848E58C, 0x100
-	sprite_frame_image 0x0848E68C, 0x100
-	sprite_frame_image 0x0848E78C, 0x100
-	sprite_frame_image 0x0848E88C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848E08C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848E18C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848E28C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848E38C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848E48C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848E58C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848E68C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848E78C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848E88C, 0x100
 	.globl gSpriteFrameImages_JP_084DE660
 gSpriteFrameImages_JP_084DE660: @ 0x084DE660
-	sprite_frame_image 0x0848E98C, 0x100
-	sprite_frame_image 0x0848EA8C, 0x100
-	sprite_frame_image 0x0848EB8C, 0x100
-	sprite_frame_image 0x0848EC8C, 0x100
-	sprite_frame_image 0x0848ED8C, 0x100
-	sprite_frame_image 0x0848EE8C, 0x100
-	sprite_frame_image 0x0848EF8C, 0x100
-	sprite_frame_image 0x0848F08C, 0x100
-	sprite_frame_image 0x0848F18C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848E98C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848EA8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848EB8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848EC8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848ED8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848EE8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848EF8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848F08C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848F18C, 0x100
 	.globl gSpriteFrameImages_JP_084DE6A8
 gSpriteFrameImages_JP_084DE6A8: @ 0x084DE6A8
-	sprite_frame_image 0x0848F28C, 0x100
-	sprite_frame_image 0x0848F38C, 0x100
-	sprite_frame_image 0x0848F48C, 0x100
-	sprite_frame_image 0x0848F58C, 0x100
-	sprite_frame_image 0x0848F68C, 0x100
-	sprite_frame_image 0x0848F78C, 0x100
-	sprite_frame_image 0x0848F88C, 0x100
-	sprite_frame_image 0x0848F98C, 0x100
-	sprite_frame_image 0x0848FA8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848F28C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848F38C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848F48C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848F58C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848F68C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848F78C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848F88C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848F98C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848FA8C, 0x100
 	.globl gSpriteFrameImages_JP_084DE6F0
 gSpriteFrameImages_JP_084DE6F0: @ 0x084DE6F0
-	sprite_frame_image 0x0848FB8C, 0x100
-	sprite_frame_image 0x0848FC8C, 0x100
-	sprite_frame_image 0x0848FD8C, 0x100
-	sprite_frame_image 0x0848FE8C, 0x100
-	sprite_frame_image 0x0848FF8C, 0x100
-	sprite_frame_image 0x0849008C, 0x100
-	sprite_frame_image 0x0849018C, 0x100
-	sprite_frame_image 0x0849028C, 0x100
-	sprite_frame_image 0x0849038C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848FB8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848FC8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848FD8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848FE8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0848FF8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849008C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849018C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849028C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849038C, 0x100
 	.globl gSpriteFrameImages_JP_084DE738
 gSpriteFrameImages_JP_084DE738: @ 0x084DE738
-	sprite_frame_image 0x0849048C, 0x100
-	sprite_frame_image 0x0849058C, 0x100
-	sprite_frame_image 0x0849068C, 0x100
-	sprite_frame_image 0x0849078C, 0x100
-	sprite_frame_image 0x0849088C, 0x100
-	sprite_frame_image 0x0849098C, 0x100
-	sprite_frame_image 0x08490A8C, 0x100
-	sprite_frame_image 0x08490B8C, 0x100
-	sprite_frame_image 0x08490C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849048C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849058C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849068C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849078C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849088C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849098C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08490A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08490B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08490C8C, 0x100
 	.globl gSpriteFrameImages_JP_084DE780
 gSpriteFrameImages_JP_084DE780: @ 0x084DE780
-	sprite_frame_image 0x08490D8C, 0x100
-	sprite_frame_image 0x08490E8C, 0x100
-	sprite_frame_image 0x08490F8C, 0x100
-	sprite_frame_image 0x0849108C, 0x100
-	sprite_frame_image 0x0849118C, 0x100
-	sprite_frame_image 0x0849128C, 0x100
-	sprite_frame_image 0x0849138C, 0x100
-	sprite_frame_image 0x0849148C, 0x100
-	sprite_frame_image 0x0849158C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08490D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08490E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08490F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849108C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849118C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849128C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849138C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849148C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849158C, 0x100
 	.globl gSpriteFrameImages_JP_084DE7C8
 gSpriteFrameImages_JP_084DE7C8: @ 0x084DE7C8
-	sprite_frame_image 0x0849168C, 0x100
-	sprite_frame_image 0x0849178C, 0x100
-	sprite_frame_image 0x0849188C, 0x100
-	sprite_frame_image 0x0849168C, 0x100
-	sprite_frame_image 0x0849168C, 0x100
-	sprite_frame_image 0x0849178C, 0x100
-	sprite_frame_image 0x0849178C, 0x100
-	sprite_frame_image 0x0849188C, 0x100
-	sprite_frame_image 0x0849188C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849168C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849178C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849188C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849168C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849168C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849178C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849178C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849188C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849188C, 0x100
 	.globl gSpriteFrameImages_JP_084DE810
 gSpriteFrameImages_JP_084DE810: @ 0x084DE810
-	sprite_frame_image 0x0849198C, 0x100
-	sprite_frame_image 0x08491A8C, 0x100
-	sprite_frame_image 0x08491B8C, 0x100
-	sprite_frame_image 0x08491C8C, 0x100
-	sprite_frame_image 0x08491D8C, 0x100
-	sprite_frame_image 0x08491E8C, 0x100
-	sprite_frame_image 0x08491F8C, 0x100
-	sprite_frame_image 0x0849208C, 0x100
-	sprite_frame_image 0x0849218C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849198C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08491A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08491B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08491C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08491D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08491E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08491F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849208C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849218C, 0x100
 	.globl gSpriteFrameImages_JP_084DE858
 gSpriteFrameImages_JP_084DE858: @ 0x084DE858
-	sprite_frame_image 0x0849228C, 0x100
-	sprite_frame_image 0x0849238C, 0x100
-	sprite_frame_image 0x0849248C, 0x100
-	sprite_frame_image 0x0849228C, 0x100
-	sprite_frame_image 0x0849228C, 0x100
-	sprite_frame_image 0x0849238C, 0x100
-	sprite_frame_image 0x0849238C, 0x100
-	sprite_frame_image 0x0849248C, 0x100
-	sprite_frame_image 0x0849248C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849228C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849238C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849248C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849228C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849228C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849238C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849238C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849248C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849248C, 0x100
 	.globl gSpriteFrameImages_JP_084DE8A0
 gSpriteFrameImages_JP_084DE8A0: @ 0x084DE8A0
-	sprite_frame_image 0x0849258C, 0x100
-	sprite_frame_image 0x0849268C, 0x100
-	sprite_frame_image 0x0849278C, 0x100
-	sprite_frame_image 0x0849288C, 0x100
-	sprite_frame_image 0x0849298C, 0x100
-	sprite_frame_image 0x08492A8C, 0x100
-	sprite_frame_image 0x08492B8C, 0x100
-	sprite_frame_image 0x08492C8C, 0x100
-	sprite_frame_image 0x08492D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849258C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849268C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849278C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849288C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849298C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08492A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08492B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08492C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08492D8C, 0x100
 	.globl gSpriteFrameImages_JP_084DE8E8
 gSpriteFrameImages_JP_084DE8E8: @ 0x084DE8E8
-	sprite_frame_image 0x08492E8C, 0x100
-	sprite_frame_image 0x08492F8C, 0x100
-	sprite_frame_image 0x0849308C, 0x100
-	sprite_frame_image 0x0849318C, 0x100
-	sprite_frame_image 0x0849328C, 0x100
-	sprite_frame_image 0x0849338C, 0x100
-	sprite_frame_image 0x0849348C, 0x100
-	sprite_frame_image 0x0849358C, 0x100
-	sprite_frame_image 0x0849368C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08492E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08492F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849308C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849318C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849328C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849338C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849348C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849358C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849368C, 0x100
 	.globl gSpriteFrameImages_JP_084DE930
 gSpriteFrameImages_JP_084DE930: @ 0x084DE930
-	sprite_frame_image 0x0849378C, 0x100
-	sprite_frame_image 0x0849388C, 0x100
-	sprite_frame_image 0x0849398C, 0x100
-	sprite_frame_image 0x08493A8C, 0x100
-	sprite_frame_image 0x08493B8C, 0x100
-	sprite_frame_image 0x08493C8C, 0x100
-	sprite_frame_image 0x08493D8C, 0x100
-	sprite_frame_image 0x08493E8C, 0x100
-	sprite_frame_image 0x08493F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849378C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849388C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849398C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08493A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08493B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08493C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08493D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08493E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08493F8C, 0x100
 	.globl gSpriteFrameImages_JP_084DE978
 gSpriteFrameImages_JP_084DE978: @ 0x084DE978
-	sprite_frame_image 0x0849408C, 0x100
-	sprite_frame_image 0x0849418C, 0x100
-	sprite_frame_image 0x0849428C, 0x100
-	sprite_frame_image 0x0849438C, 0x100
-	sprite_frame_image 0x0849448C, 0x100
-	sprite_frame_image 0x0849458C, 0x100
-	sprite_frame_image 0x0849468C, 0x100
-	sprite_frame_image 0x0849478C, 0x100
-	sprite_frame_image 0x0849488C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849408C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849418C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849428C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849438C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849448C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849458C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849468C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849478C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849488C, 0x100
 	.globl gSpriteFrameImages_JP_084DE9C0
 gSpriteFrameImages_JP_084DE9C0: @ 0x084DE9C0
-	sprite_frame_image 0x0849498C, 0x100
-	sprite_frame_image 0x08494A8C, 0x100
-	sprite_frame_image 0x08494B8C, 0x100
-	sprite_frame_image 0x08494C8C, 0x100
-	sprite_frame_image 0x08494D8C, 0x100
-	sprite_frame_image 0x08494E8C, 0x100
-	sprite_frame_image 0x08494F8C, 0x100
-	sprite_frame_image 0x0849508C, 0x100
-	sprite_frame_image 0x0849518C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849498C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08494A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08494B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08494C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08494D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08494E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08494F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849508C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849518C, 0x100
 	.globl gSpriteFrameImages_JP_084DEA08
 gSpriteFrameImages_JP_084DEA08: @ 0x084DEA08
-	sprite_frame_image 0x0849528C, 0x100
-	sprite_frame_image 0x0849538C, 0x100
-	sprite_frame_image 0x0849548C, 0x100
-	sprite_frame_image 0x0849558C, 0x100
-	sprite_frame_image 0x0849568C, 0x100
-	sprite_frame_image 0x0849578C, 0x100
-	sprite_frame_image 0x0849588C, 0x100
-	sprite_frame_image 0x0849598C, 0x100
-	sprite_frame_image 0x08495A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849528C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849538C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849548C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849558C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849568C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849578C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849588C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849598C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08495A8C, 0x100
 	.globl gSpriteFrameImages_JP_084DEA50
 gSpriteFrameImages_JP_084DEA50: @ 0x084DEA50
-	sprite_frame_image 0x08495B8C, 0x100
-	sprite_frame_image 0x08495C8C, 0x100
-	sprite_frame_image 0x08495D8C, 0x100
-	sprite_frame_image 0x08495E8C, 0x100
-	sprite_frame_image 0x08495F8C, 0x100
-	sprite_frame_image 0x0849608C, 0x100
-	sprite_frame_image 0x0849618C, 0x100
-	sprite_frame_image 0x0849628C, 0x100
-	sprite_frame_image 0x0849638C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08495B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08495C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08495D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08495E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08495F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849608C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849618C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849628C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849638C, 0x100
 	.globl gSpriteFrameImages_JP_084DEA98
 gSpriteFrameImages_JP_084DEA98: @ 0x084DEA98
-	sprite_frame_image 0x0849648C, 0x100
-	sprite_frame_image 0x0849658C, 0x100
-	sprite_frame_image 0x0849668C, 0x100
-	sprite_frame_image 0x0849678C, 0x100
-	sprite_frame_image 0x0849688C, 0x100
-	sprite_frame_image 0x0849698C, 0x100
-	sprite_frame_image 0x08496A8C, 0x100
-	sprite_frame_image 0x08496B8C, 0x100
-	sprite_frame_image 0x08496C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849648C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849658C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849668C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849678C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849688C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849698C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08496A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08496B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08496C8C, 0x100
 	.globl gSpriteFrameImages_JP_084DEAE0
 gSpriteFrameImages_JP_084DEAE0: @ 0x084DEAE0
-	sprite_frame_image 0x08496D8C, 0x100
-	sprite_frame_image 0x08496E8C, 0x100
-	sprite_frame_image 0x08496F8C, 0x100
-	sprite_frame_image 0x0849708C, 0x100
-	sprite_frame_image 0x0849718C, 0x100
-	sprite_frame_image 0x0849728C, 0x100
-	sprite_frame_image 0x0849738C, 0x100
-	sprite_frame_image 0x0849748C, 0x100
-	sprite_frame_image 0x0849758C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08496D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08496E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08496F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849708C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849718C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849728C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849738C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849748C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849758C, 0x100
 	.globl gSpriteFrameImages_JP_084DEB28
 gSpriteFrameImages_JP_084DEB28: @ 0x084DEB28
-	sprite_frame_image 0x0849768C, 0x100
-	sprite_frame_image 0x0849778C, 0x100
-	sprite_frame_image 0x0849788C, 0x100
-	sprite_frame_image 0x0849798C, 0x100
-	sprite_frame_image 0x08497A8C, 0x100
-	sprite_frame_image 0x08497B8C, 0x100
-	sprite_frame_image 0x08497C8C, 0x100
-	sprite_frame_image 0x08497D8C, 0x100
-	sprite_frame_image 0x08497E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849768C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849778C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849788C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849798C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08497A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08497B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08497C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08497D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08497E8C, 0x100
 	.globl gSpriteFrameImages_JP_084DEB70
 gSpriteFrameImages_JP_084DEB70: @ 0x084DEB70
-	sprite_frame_image 0x08497F8C, 0x100
-	sprite_frame_image 0x0849808C, 0x100
-	sprite_frame_image 0x0849818C, 0x100
-	sprite_frame_image 0x0849828C, 0x100
-	sprite_frame_image 0x0849838C, 0x100
-	sprite_frame_image 0x0849848C, 0x100
-	sprite_frame_image 0x0849858C, 0x100
-	sprite_frame_image 0x0849868C, 0x100
-	sprite_frame_image 0x0849878C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08497F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849808C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849818C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849828C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849838C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849848C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849858C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849868C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849878C, 0x100
 	.globl gSpriteFrameImages_JP_084DEBB8
 gSpriteFrameImages_JP_084DEBB8: @ 0x084DEBB8
-	sprite_frame_image 0x0849918C, 0x100
-	sprite_frame_image 0x0849928C, 0x100
-	sprite_frame_image 0x0849938C, 0x100
-	sprite_frame_image 0x0849948C, 0x100
-	sprite_frame_image 0x0849958C, 0x100
-	sprite_frame_image 0x0849968C, 0x100
-	sprite_frame_image 0x0849978C, 0x100
-	sprite_frame_image 0x0849988C, 0x100
-	sprite_frame_image 0x0849998C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849918C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849928C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849938C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849948C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849958C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849968C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849978C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849988C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849998C, 0x100
 	.globl gSpriteFrameImages_JP_084DEC00
 gSpriteFrameImages_JP_084DEC00: @ 0x084DEC00
-	sprite_frame_image 0x08499A8C, 0x100
-	sprite_frame_image 0x08499B8C, 0x100
-	sprite_frame_image 0x08499C8C, 0x100
-	sprite_frame_image 0x08499D8C, 0x100
-	sprite_frame_image 0x08499E8C, 0x100
-	sprite_frame_image 0x08499F8C, 0x100
-	sprite_frame_image 0x0849A08C, 0x100
-	sprite_frame_image 0x0849A18C, 0x100
-	sprite_frame_image 0x0849A28C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08499A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08499B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08499C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08499D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08499E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08499F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849A08C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849A18C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849A28C, 0x100
 	.globl gSpriteFrameImages_JP_084DEC48
 gSpriteFrameImages_JP_084DEC48: @ 0x084DEC48
-	sprite_frame_image 0x0849A38C, 0x100
-	sprite_frame_image 0x0849A48C, 0x100
-	sprite_frame_image 0x0849A58C, 0x100
-	sprite_frame_image 0x0849A68C, 0x100
-	sprite_frame_image 0x0849A78C, 0x100
-	sprite_frame_image 0x0849A88C, 0x100
-	sprite_frame_image 0x0849A98C, 0x100
-	sprite_frame_image 0x0849AA8C, 0x100
-	sprite_frame_image 0x0849AB8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849A38C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849A48C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849A58C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849A68C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849A78C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849A88C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849A98C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849AA8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849AB8C, 0x100
 	.globl gSpriteFrameImages_JP_084DEC90
 gSpriteFrameImages_JP_084DEC90: @ 0x084DEC90
-	sprite_frame_image 0x0849AC8C, 0x100
-	sprite_frame_image 0x0849AD8C, 0x100
-	sprite_frame_image 0x0849AE8C, 0x100
-	sprite_frame_image 0x0849AF8C, 0x100
-	sprite_frame_image 0x0849B08C, 0x100
-	sprite_frame_image 0x0849B18C, 0x100
-	sprite_frame_image 0x0849B28C, 0x100
-	sprite_frame_image 0x0849B38C, 0x100
-	sprite_frame_image 0x0849B48C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849AC8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849AD8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849AE8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849AF8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849B08C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849B18C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849B28C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849B38C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849B48C, 0x100
 	.globl gSpriteFrameImages_JP_084DECD8
 gSpriteFrameImages_JP_084DECD8: @ 0x084DECD8
-	sprite_frame_image 0x0849B58C, 0x100
-	sprite_frame_image 0x0849B68C, 0x100
-	sprite_frame_image 0x0849B78C, 0x100
-	sprite_frame_image 0x0849B88C, 0x100
-	sprite_frame_image 0x0849B98C, 0x100
-	sprite_frame_image 0x0849BA8C, 0x100
-	sprite_frame_image 0x0849BB8C, 0x100
-	sprite_frame_image 0x0849BC8C, 0x100
-	sprite_frame_image 0x0849BD8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849B58C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849B68C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849B78C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849B88C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849B98C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849BA8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849BB8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849BC8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849BD8C, 0x100
 	.globl gSpriteFrameImages_JP_084DED20
 gSpriteFrameImages_JP_084DED20: @ 0x084DED20
-	sprite_frame_image 0x0849BE8C, 0x100
-	sprite_frame_image 0x0849BF8C, 0x100
-	sprite_frame_image 0x0849C08C, 0x100
-	sprite_frame_image 0x0849C18C, 0x100
-	sprite_frame_image 0x0849C28C, 0x100
-	sprite_frame_image 0x0849C38C, 0x100
-	sprite_frame_image 0x0849C48C, 0x100
-	sprite_frame_image 0x0849C58C, 0x100
-	sprite_frame_image 0x0849C68C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849BE8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849BF8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849C08C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849C18C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849C28C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849C38C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849C48C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849C58C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849C68C, 0x100
 	.globl gSpriteFrameImages_JP_084DED68
 gSpriteFrameImages_JP_084DED68: @ 0x084DED68
-	sprite_frame_image 0x0849C78C, 0x100
-	sprite_frame_image 0x0849C88C, 0x100
-	sprite_frame_image 0x0849C98C, 0x100
-	sprite_frame_image 0x0849CA8C, 0x100
-	sprite_frame_image 0x0849CB8C, 0x100
-	sprite_frame_image 0x0849CC8C, 0x100
-	sprite_frame_image 0x0849CD8C, 0x100
-	sprite_frame_image 0x0849CE8C, 0x100
-	sprite_frame_image 0x0849CF8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849C78C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849C88C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849C98C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849CA8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849CB8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849CC8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849CD8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849CE8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849CF8C, 0x100
 	.globl gSpriteFrameImages_JP_084DEDB0
 gSpriteFrameImages_JP_084DEDB0: @ 0x084DEDB0
-	sprite_frame_image 0x0849D08C, 0x100
-	sprite_frame_image 0x0849D18C, 0x100
-	sprite_frame_image 0x0849D28C, 0x100
-	sprite_frame_image 0x0849D38C, 0x100
-	sprite_frame_image 0x0849D48C, 0x100
-	sprite_frame_image 0x0849D58C, 0x100
-	sprite_frame_image 0x0849D68C, 0x100
-	sprite_frame_image 0x0849D78C, 0x100
-	sprite_frame_image 0x0849D88C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849D08C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849D18C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849D28C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849D38C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849D48C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849D58C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849D68C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849D78C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849D88C, 0x100
 	.globl gSpriteFrameImages_JP_084DEDF8
 gSpriteFrameImages_JP_084DEDF8: @ 0x084DEDF8
-	sprite_frame_image 0x0849D98C, 0x100
-	sprite_frame_image 0x0849DA8C, 0x100
-	sprite_frame_image 0x0849DB8C, 0x100
-	sprite_frame_image 0x0849DC8C, 0x100
-	sprite_frame_image 0x0849DD8C, 0x100
-	sprite_frame_image 0x0849DE8C, 0x100
-	sprite_frame_image 0x0849DF8C, 0x100
-	sprite_frame_image 0x0849E08C, 0x100
-	sprite_frame_image 0x0849E18C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849D98C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849DA8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849DB8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849DC8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849DD8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849DE8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849DF8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849E08C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849E18C, 0x100
 	.globl gSpriteFrameImages_JP_084DEE40
 gSpriteFrameImages_JP_084DEE40: @ 0x084DEE40
-	sprite_frame_image 0x0849E28C, 0x100
-	sprite_frame_image 0x0849E38C, 0x100
-	sprite_frame_image 0x0849E48C, 0x100
-	sprite_frame_image 0x0849E58C, 0x100
-	sprite_frame_image 0x0849E68C, 0x100
-	sprite_frame_image 0x0849E78C, 0x100
-	sprite_frame_image 0x0849E88C, 0x100
-	sprite_frame_image 0x0849E98C, 0x100
-	sprite_frame_image 0x0849EA8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849E28C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849E38C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849E48C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849E58C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849E68C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849E78C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849E88C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849E98C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849EA8C, 0x100
 	.globl gSpriteFrameImages_JP_084DEE88
 gSpriteFrameImages_JP_084DEE88: @ 0x084DEE88
-	sprite_frame_image 0x0849EB8C, 0x100
-	sprite_frame_image 0x0849EC8C, 0x100
-	sprite_frame_image 0x0849ED8C, 0x100
-	sprite_frame_image 0x0849EE8C, 0x100
-	sprite_frame_image 0x0849EF8C, 0x100
-	sprite_frame_image 0x0849F08C, 0x100
-	sprite_frame_image 0x0849F18C, 0x100
-	sprite_frame_image 0x0849F28C, 0x100
-	sprite_frame_image 0x0849F38C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849EB8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849EC8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849ED8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849EE8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849EF8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849F08C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849F18C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849F28C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849F38C, 0x100
 	.globl gSpriteFrameImages_JP_084DEED0
 gSpriteFrameImages_JP_084DEED0: @ 0x084DEED0
-	sprite_frame_image 0x0849F48C, 0x80
-	sprite_frame_image 0x0849F50C, 0x80
-	sprite_frame_image 0x0849F58C, 0x80
-	sprite_frame_image 0x0849F60C, 0x80
-	sprite_frame_image 0x0849F68C, 0x80
-	sprite_frame_image 0x0849F70C, 0x80
-	sprite_frame_image 0x0849F78C, 0x80
-	sprite_frame_image 0x0849F80C, 0x80
-	sprite_frame_image 0x0849F88C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849F48C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849F50C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849F58C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849F60C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849F68C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849F70C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849F78C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849F80C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849F88C, 0x80
 	.globl gSpriteFrameImages_JP_084DEF18
 gSpriteFrameImages_JP_084DEF18: @ 0x084DEF18
-	sprite_frame_image 0x0849F90C, 0x80
-	sprite_frame_image 0x0849F98C, 0x80
-	sprite_frame_image 0x0849FA0C, 0x80
-	sprite_frame_image 0x0849FA8C, 0x80
-	sprite_frame_image 0x0849FB0C, 0x80
-	sprite_frame_image 0x0849FB8C, 0x80
-	sprite_frame_image 0x0849FC0C, 0x80
-	sprite_frame_image 0x0849FC8C, 0x80
-	sprite_frame_image 0x0849FD0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849F90C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849F98C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849FA0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849FA8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849FB0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849FB8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849FC0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849FC8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_0849FD0C, 0x80
 	.globl gSpriteFrameImages_JP_084DEF60
 gSpriteFrameImages_JP_084DEF60: @ 0x084DEF60
-	sprite_frame_image 0x0849FD8C, 0x100
-	sprite_frame_image 0x0849FE8C, 0x100
-	sprite_frame_image 0x0849FF8C, 0x100
-	sprite_frame_image 0x084A008C, 0x100
-	sprite_frame_image 0x084A018C, 0x100
-	sprite_frame_image 0x084A028C, 0x100
-	sprite_frame_image 0x084A038C, 0x100
-	sprite_frame_image 0x084A048C, 0x100
-	sprite_frame_image 0x084A058C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849FD8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849FE8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0849FF8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A008C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A018C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A028C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A038C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A048C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A058C, 0x100
 	.globl gSpriteFrameImages_JP_084DEFA8
 gSpriteFrameImages_JP_084DEFA8: @ 0x084DEFA8
-	sprite_frame_image 0x084A068C, 0x200
-	sprite_frame_image 0x084A088C, 0x200
-	sprite_frame_image 0x084A0A8C, 0x200
-	sprite_frame_image 0x084A0C8C, 0x200
-	sprite_frame_image 0x084A0E8C, 0x200
-	sprite_frame_image 0x084A108C, 0x200
-	sprite_frame_image 0x084A128C, 0x200
-	sprite_frame_image 0x084A148C, 0x200
-	sprite_frame_image 0x084A168C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A068C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A088C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A0A8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A0C8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A0E8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A108C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A128C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A148C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A168C, 0x200
 	.globl gSpriteFrameImages_JP_084DEFF0
 gSpriteFrameImages_JP_084DEFF0: @ 0x084DEFF0
-	sprite_frame_image 0x084A188C, 0x200
-	sprite_frame_image 0x084A1A8C, 0x200
-	sprite_frame_image 0x084A1C8C, 0x200
-	sprite_frame_image 0x084A1E8C, 0x200
-	sprite_frame_image 0x084A208C, 0x200
-	sprite_frame_image 0x084A228C, 0x200
-	sprite_frame_image 0x084A248C, 0x200
-	sprite_frame_image 0x084A268C, 0x200
-	sprite_frame_image 0x084A288C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A188C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A1A8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A1C8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A1E8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A208C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A228C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A248C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A268C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084A288C, 0x200
 	.globl gSpriteFrameImages_JP_084DF038
 gSpriteFrameImages_JP_084DF038: @ 0x084DF038
-	sprite_frame_image 0x084A3C8C, 0x100
-	sprite_frame_image 0x084A3D8C, 0x100
-	sprite_frame_image 0x084A3E8C, 0x100
-	sprite_frame_image 0x084A3C8C, 0x100
-	sprite_frame_image 0x084A3C8C, 0x100
-	sprite_frame_image 0x084A3D8C, 0x100
-	sprite_frame_image 0x084A3D8C, 0x100
-	sprite_frame_image 0x084A3E8C, 0x100
-	sprite_frame_image 0x084A3E8C, 0x100
-	sprite_frame_image 0x084A3F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A3C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A3D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A3E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A3C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A3C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A3D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A3D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A3E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A3E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A3F8C, 0x100
 	.globl gSpriteFrameImages_JP_084DF088
 gSpriteFrameImages_JP_084DF088: @ 0x084DF088
-	sprite_frame_image 0x084A408C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084A408C, 0x80
 	.globl gSpriteFrameImages_JP_084DF090
 gSpriteFrameImages_JP_084DF090: @ 0x084DF090
-	sprite_frame_image 0x084A410C, 0x100
-	sprite_frame_image 0x084A420C, 0x100
-	sprite_frame_image 0x084A430C, 0x100
-	sprite_frame_image 0x084A440C, 0x100
-	sprite_frame_image 0x084A450C, 0x100
-	sprite_frame_image 0x084A460C, 0x100
-	sprite_frame_image 0x084A470C, 0x100
-	sprite_frame_image 0x084A480C, 0x100
-	sprite_frame_image 0x084A490C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A410C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A420C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A430C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A440C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A450C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A460C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A470C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A480C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A490C, 0x100
 	.globl gSpriteFrameImages_JP_084DF0D8
 gSpriteFrameImages_JP_084DF0D8: @ 0x084DF0D8
-	sprite_frame_image 0x084A2A8C, 0x100
-	sprite_frame_image 0x084A2B8C, 0x100
-	sprite_frame_image 0x084A2C8C, 0x100
-	sprite_frame_image 0x084A2D8C, 0x100
-	sprite_frame_image 0x084A2E8C, 0x100
-	sprite_frame_image 0x084A2F8C, 0x100
-	sprite_frame_image 0x084A308C, 0x100
-	sprite_frame_image 0x084A318C, 0x100
-	sprite_frame_image 0x084A328C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A2A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A2B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A2C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A2D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A2E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A2F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A308C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A318C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A328C, 0x100
 	.globl gSpriteFrameImages_JP_084DF120
 gSpriteFrameImages_JP_084DF120: @ 0x084DF120
-	sprite_frame_image 0x084A338C, 0x100
-	sprite_frame_image 0x084A348C, 0x100
-	sprite_frame_image 0x084A358C, 0x100
-	sprite_frame_image 0x084A368C, 0x100
-	sprite_frame_image 0x084A378C, 0x100
-	sprite_frame_image 0x084A388C, 0x100
-	sprite_frame_image 0x084A398C, 0x100
-	sprite_frame_image 0x084A3A8C, 0x100
-	sprite_frame_image 0x084A3B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A338C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A348C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A358C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A368C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A378C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A388C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A398C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A3A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A3B8C, 0x100
 	.globl gSpriteFrameImages_JP_084DF168
 gSpriteFrameImages_JP_084DF168: @ 0x084DF168
-	sprite_frame_image 0x084A4A0C, 0x100
-	sprite_frame_image 0x084A4B0C, 0x100
-	sprite_frame_image 0x084A4C0C, 0x100
-	sprite_frame_image 0x084A4D0C, 0x100
-	sprite_frame_image 0x084A4E0C, 0x100
-	sprite_frame_image 0x084A4F0C, 0x100
-	sprite_frame_image 0x084A500C, 0x100
-	sprite_frame_image 0x084A510C, 0x100
-	sprite_frame_image 0x084A520C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A4A0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A4B0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A4C0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A4D0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A4E0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A4F0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A500C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A510C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A520C, 0x100
 	.globl gSpriteFrameImages_JP_084DF1B0
 gSpriteFrameImages_JP_084DF1B0: @ 0x084DF1B0
-	sprite_frame_image 0x084A530C, 0x100
-	sprite_frame_image 0x084A540C, 0x100
-	sprite_frame_image 0x084A550C, 0x100
-	sprite_frame_image 0x084A560C, 0x100
-	sprite_frame_image 0x084A570C, 0x100
-	sprite_frame_image 0x084A580C, 0x100
-	sprite_frame_image 0x084A590C, 0x100
-	sprite_frame_image 0x084A5A0C, 0x100
-	sprite_frame_image 0x084A5B0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A530C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A540C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A550C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A560C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A570C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A580C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A590C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A5A0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A5B0C, 0x100
 	.globl gSpriteFrameImages_JP_084DF1F8
 gSpriteFrameImages_JP_084DF1F8: @ 0x084DF1F8
-	sprite_frame_image 0x084A5C0C, 0x100
-	sprite_frame_image 0x084A5D0C, 0x100
-	sprite_frame_image 0x084A5E0C, 0x100
-	sprite_frame_image 0x084A5F0C, 0x100
-	sprite_frame_image 0x084A600C, 0x100
-	sprite_frame_image 0x084A610C, 0x100
-	sprite_frame_image 0x084A620C, 0x100
-	sprite_frame_image 0x084A630C, 0x100
-	sprite_frame_image 0x084A640C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A5C0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A5D0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A5E0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A5F0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A600C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A610C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A620C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A630C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A640C, 0x100
 	.globl gSpriteFrameImages_JP_084DF240
 gSpriteFrameImages_JP_084DF240: @ 0x084DF240
-	sprite_frame_image 0x084A650C, 0x100
-	sprite_frame_image 0x084A660C, 0x100
-	sprite_frame_image 0x084A670C, 0x100
-	sprite_frame_image 0x084A680C, 0x100
-	sprite_frame_image 0x084A690C, 0x100
-	sprite_frame_image 0x084A6A0C, 0x100
-	sprite_frame_image 0x084A6B0C, 0x100
-	sprite_frame_image 0x084A6C0C, 0x100
-	sprite_frame_image 0x084A6D0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A650C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A660C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A670C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A680C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A690C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A6A0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A6B0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A6C0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A6D0C, 0x100
 	.globl gSpriteFrameImages_JP_084DF288
 gSpriteFrameImages_JP_084DF288: @ 0x084DF288
-	sprite_frame_image 0x084BA38C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BA38C, 0x80
 	.globl gSpriteFrameImages_JP_084DF290
 gSpriteFrameImages_JP_084DF290: @ 0x084DF290
-	sprite_frame_image 0x084BA40C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BA40C, 0x80
 	.globl gSpriteFrameImages_JP_084DF298
 gSpriteFrameImages_JP_084DF298: @ 0x084DF298
-	sprite_frame_image 0x084BA48C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BA48C, 0x80
 	.globl gSpriteFrameImages_JP_084DF2A0
 gSpriteFrameImages_JP_084DF2A0: @ 0x084DF2A0
-	sprite_frame_image 0x084BA50C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BA50C, 0x80
 	.globl gSpriteFrameImages_JP_084DF2A8
 gSpriteFrameImages_JP_084DF2A8: @ 0x084DF2A8
-	sprite_frame_image 0x084BA58C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BA58C, 0x80
 	.globl gSpriteFrameImages_JP_084DF2B0
 gSpriteFrameImages_JP_084DF2B0: @ 0x084DF2B0
-	sprite_frame_image 0x084BA60C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BA60C, 0x80
 	.globl gSpriteFrameImages_JP_084DF2B8
 gSpriteFrameImages_JP_084DF2B8: @ 0x084DF2B8
-	sprite_frame_image 0x084BCC0C, 0x80
-	sprite_frame_image 0x084BCC8C, 0x80
-	sprite_frame_image 0x084BCD0C, 0x80
-	sprite_frame_image 0x084BCD8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BCC0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BCC8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BCD0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BCD8C, 0x80
 	.globl gSpriteFrameImages_JP_084DF2D8
 gSpriteFrameImages_JP_084DF2D8: @ 0x084DF2D8
-	sprite_frame_image 0x084A6E0C, 0x100
-	sprite_frame_image 0x084A6F0C, 0x100
-	sprite_frame_image 0x084A700C, 0x100
-	sprite_frame_image 0x084A710C, 0x100
-	sprite_frame_image 0x084A720C, 0x100
-	sprite_frame_image 0x084A730C, 0x100
-	sprite_frame_image 0x084A740C, 0x100
-	sprite_frame_image 0x084A750C, 0x100
-	sprite_frame_image 0x084A760C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A6E0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A6F0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A700C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A710C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A720C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A730C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A740C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A750C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A760C, 0x100
 	.globl gSpriteFrameImages_JP_084DF320
 gSpriteFrameImages_JP_084DF320: @ 0x084DF320
-	sprite_frame_image 0x084A770C, 0x100
-	sprite_frame_image 0x084A780C, 0x100
-	sprite_frame_image 0x084A790C, 0x100
-	sprite_frame_image 0x084A7A0C, 0x100
-	sprite_frame_image 0x084A7B0C, 0x100
-	sprite_frame_image 0x084A7C0C, 0x100
-	sprite_frame_image 0x084A7D0C, 0x100
-	sprite_frame_image 0x084A7E0C, 0x100
-	sprite_frame_image 0x084A7F0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A770C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A780C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A790C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A7A0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A7B0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A7C0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A7D0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A7E0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A7F0C, 0x100
 	.globl gSpriteFrameImages_JP_084DF368
 gSpriteFrameImages_JP_084DF368: @ 0x084DF368
-	sprite_frame_image 0x084A800C, 0x100
-	sprite_frame_image 0x084A810C, 0x100
-	sprite_frame_image 0x084A820C, 0x100
-	sprite_frame_image 0x084A830C, 0x100
-	sprite_frame_image 0x084A840C, 0x100
-	sprite_frame_image 0x084A850C, 0x100
-	sprite_frame_image 0x084A860C, 0x100
-	sprite_frame_image 0x084A870C, 0x100
-	sprite_frame_image 0x084A880C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A800C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A810C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A820C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A830C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A840C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A850C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A860C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A870C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A880C, 0x100
 	.globl gSpriteFrameImages_JP_084DF3B0
 gSpriteFrameImages_JP_084DF3B0: @ 0x084DF3B0
-	sprite_frame_image 0x084BCE0C, 0x80
-	sprite_frame_image 0x084BCE8C, 0x80
-	sprite_frame_image 0x084BCF0C, 0x80
-	sprite_frame_image 0x084BCF8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BCE0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BCE8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BCF0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BCF8C, 0x80
 	.globl gSpriteFrameImages_JP_084DF3D0
 gSpriteFrameImages_JP_084DF3D0: @ 0x084DF3D0
-	sprite_frame_image 0x084BD00C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BD00C, 0x80
 	.globl gSpriteFrameImages_JP_084DF3D8
 gSpriteFrameImages_JP_084DF3D8: @ 0x084DF3D8
-	sprite_frame_image 0x084BD08C, 0x200
-	sprite_frame_image 0x084BD28C, 0x200
-	sprite_frame_image 0x084BD48C, 0x200
-	sprite_frame_image 0x084BD08C, 0x200
-	sprite_frame_image 0x084BD08C, 0x200
-	sprite_frame_image 0x084BD28C, 0x200
-	sprite_frame_image 0x084BD28C, 0x200
-	sprite_frame_image 0x084BD48C, 0x200
-	sprite_frame_image 0x084BD48C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BD08C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BD28C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BD48C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BD08C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BD08C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BD28C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BD28C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BD48C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BD48C, 0x200
 	.globl gSpriteFrameImages_JP_084DF420
 gSpriteFrameImages_JP_084DF420: @ 0x084DF420
-	sprite_frame_image 0x084BDCAC, 0x480
+	sprite_frame_image gObjectEventFrame_JP_084BDCAC, 0x480
 	.globl gSpriteFrameImages_JP_084DF428
 gSpriteFrameImages_JP_084DF428: @ 0x084DF428
 	sprite_frame_image gObjectEventFrameGfx_JP_084BE14C, 0x200
@@ -938,118 +938,118 @@ gSpriteFrameImages_JP_084DF508: @ 0x084DF508
 	sprite_frame_image gObjectEventFrameGfx_JP_084C0E0C, 0x200
 	.globl gSpriteFrameImages_JP_084DF550
 gSpriteFrameImages_JP_084DF550: @ 0x084DF550
-	sprite_frame_image 0x084A890C, 0x100
-	sprite_frame_image 0x084A8A0C, 0x100
-	sprite_frame_image 0x084A8B0C, 0x100
-	sprite_frame_image 0x084A8C0C, 0x100
-	sprite_frame_image 0x084A8D0C, 0x100
-	sprite_frame_image 0x084A8E0C, 0x100
-	sprite_frame_image 0x084A8F0C, 0x100
-	sprite_frame_image 0x084A900C, 0x100
-	sprite_frame_image 0x084A910C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A890C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A8A0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A8B0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A8C0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A8D0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A8E0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A8F0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A900C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A910C, 0x100
 	.globl gSpriteFrameImages_JP_084DF598
 gSpriteFrameImages_JP_084DF598: @ 0x084DF598
-	sprite_frame_image 0x0847B4CC, 0x100
-	sprite_frame_image 0x0847B5CC, 0x100
-	sprite_frame_image 0x0847B6CC, 0x100
-	sprite_frame_image 0x0847B7CC, 0x100
-	sprite_frame_image 0x0847B8CC, 0x100
-	sprite_frame_image 0x0847B9CC, 0x100
-	sprite_frame_image 0x0847BACC, 0x100
-	sprite_frame_image 0x0847BBCC, 0x100
-	sprite_frame_image 0x0847BCCC, 0x100
-	sprite_frame_image 0x0847BDCC, 0x100
-	sprite_frame_image 0x0847BECC, 0x100
-	sprite_frame_image 0x0847BFCC, 0x100
-	sprite_frame_image 0x0847C0CC, 0x100
-	sprite_frame_image 0x0847C1CC, 0x100
-	sprite_frame_image 0x0847C2CC, 0x100
-	sprite_frame_image 0x0847C3CC, 0x100
-	sprite_frame_image 0x0847C4CC, 0x100
-	sprite_frame_image 0x0847C5CC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847B4CC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847B5CC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847B6CC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847B7CC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847B8CC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847B9CC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847BACC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847BBCC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847BCCC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847BDCC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847BECC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847BFCC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847C0CC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847C1CC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847C2CC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847C3CC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847C4CC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847C5CC, 0x100
 	.globl gSpriteFrameImages_JP_084DF628
 gSpriteFrameImages_JP_084DF628: @ 0x084DF628
-	sprite_frame_image 0x0847DB0C, 0x200
-	sprite_frame_image 0x0847DD0C, 0x200
-	sprite_frame_image 0x0847DF0C, 0x200
-	sprite_frame_image 0x0847E10C, 0x200
-	sprite_frame_image 0x0847E30C, 0x200
-	sprite_frame_image 0x0847E50C, 0x200
-	sprite_frame_image 0x0847E70C, 0x200
-	sprite_frame_image 0x0847E90C, 0x200
-	sprite_frame_image 0x0847EB0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847DB0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847DD0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847DF0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847E10C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847E30C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847E50C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847E70C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847E90C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847EB0C, 0x200
 	.globl gSpriteFrameImages_JP_084DF670
 gSpriteFrameImages_JP_084DF670: @ 0x084DF670
-	sprite_frame_image 0x0847ED0C, 0x200
-	sprite_frame_image 0x0847EF0C, 0x200
-	sprite_frame_image 0x0847F10C, 0x200
-	sprite_frame_image 0x0847F30C, 0x200
-	sprite_frame_image 0x0847F50C, 0x200
-	sprite_frame_image 0x0847F70C, 0x200
-	sprite_frame_image 0x0847F90C, 0x200
-	sprite_frame_image 0x0847FB0C, 0x200
-	sprite_frame_image 0x0847FD0C, 0x200
-	sprite_frame_image 0x0847FF0C, 0x200
-	sprite_frame_image 0x0848010C, 0x200
-	sprite_frame_image 0x0848030C, 0x200
-	sprite_frame_image 0x0848050C, 0x200
-	sprite_frame_image 0x0848070C, 0x200
-	sprite_frame_image 0x0848090C, 0x200
-	sprite_frame_image 0x08480B0C, 0x200
-	sprite_frame_image 0x08480D0C, 0x200
-	sprite_frame_image 0x08480F0C, 0x200
-	sprite_frame_image 0x0848110C, 0x200
-	sprite_frame_image 0x0848130C, 0x200
-	sprite_frame_image 0x0848150C, 0x200
-	sprite_frame_image 0x0848170C, 0x200
-	sprite_frame_image 0x0848190C, 0x200
-	sprite_frame_image 0x08481B0C, 0x200
-	sprite_frame_image 0x08481D0C, 0x200
-	sprite_frame_image 0x08481F0C, 0x200
-	sprite_frame_image 0x0848210C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847ED0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847EF0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847F10C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847F30C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847F50C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847F70C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847F90C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847FB0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847FD0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847FF0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848010C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848030C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848050C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848070C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848090C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08480B0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08480D0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08480F0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848110C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848130C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848150C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848170C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848190C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08481B0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08481D0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08481F0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848210C, 0x200
 	.globl gSpriteFrameImages_JP_084DF748
 gSpriteFrameImages_JP_084DF748: @ 0x084DF748
-	sprite_frame_image 0x0848230C, 0x200
-	sprite_frame_image 0x0848270C, 0x200
-	sprite_frame_image 0x08482B0C, 0x200
-	sprite_frame_image 0x0848230C, 0x200
-	sprite_frame_image 0x0848230C, 0x200
-	sprite_frame_image 0x0848270C, 0x200
-	sprite_frame_image 0x0848270C, 0x200
-	sprite_frame_image 0x08482B0C, 0x200
-	sprite_frame_image 0x08482B0C, 0x200
-	sprite_frame_image 0x0848250C, 0x200
-	sprite_frame_image 0x0848290C, 0x200
-	sprite_frame_image 0x08482D0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848230C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848270C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08482B0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848230C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848230C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848270C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848270C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08482B0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08482B0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848250C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848290C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08482D0C, 0x200
 	.globl gSpriteFrameImages_JP_084DF7A8
 gSpriteFrameImages_JP_084DF7A8: @ 0x084DF7A8
-	sprite_frame_image 0x0847ACAC, 0x200
-	sprite_frame_image 0x0847AEAC, 0x200
-	sprite_frame_image 0x0847B0AC, 0x200
-	sprite_frame_image 0x0847ACAC, 0x200
-	sprite_frame_image 0x0847ACAC, 0x200
-	sprite_frame_image 0x0847AEAC, 0x200
-	sprite_frame_image 0x0847AEAC, 0x200
-	sprite_frame_image 0x0847B0AC, 0x200
-	sprite_frame_image 0x0847B0AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847ACAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847AEAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847B0AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847ACAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847ACAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847AEAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847AEAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847B0AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847B0AC, 0x200
 	.globl gSpriteFrameImages_JP_084DF7F0
 gSpriteFrameImages_JP_084DF7F0: @ 0x084DF7F0
-	sprite_frame_image 0x08482F0C, 0x200
-	sprite_frame_image 0x0848310C, 0x200
-	sprite_frame_image 0x0848330C, 0x200
-	sprite_frame_image 0x0848350C, 0x200
-	sprite_frame_image 0x0848370C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08482F0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848310C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848330C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848350C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848370C, 0x200
 	.globl gSpriteFrameImages_JP_084DF818
 gSpriteFrameImages_JP_084DF818: @ 0x084DF818
-	sprite_frame_image 0x084A920C, 0x100
-	sprite_frame_image 0x084A930C, 0x100
-	sprite_frame_image 0x084A940C, 0x100
-	sprite_frame_image 0x084A950C, 0x100
-	sprite_frame_image 0x084A960C, 0x100
-	sprite_frame_image 0x084A970C, 0x100
-	sprite_frame_image 0x084A980C, 0x100
-	sprite_frame_image 0x084A990C, 0x100
-	sprite_frame_image 0x084A9A0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A920C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A930C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A940C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A950C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A960C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A970C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A980C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A990C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A9A0C, 0x100
 	.globl gSpriteFrameImages_JP_084DF860
 gSpriteFrameImages_JP_084DF860: @ 0x084DF860
 	sprite_frame_image gObjectEventFrameGfx_JP_084D6C4C, 0x80
@@ -1058,285 +1058,285 @@ gSpriteFrameImages_JP_084DF868: @ 0x084DF868
 	sprite_frame_image gObjectEventFrameGfx_JP_084C102C, 0x800
 	.globl gSpriteFrameImages_JP_084DF870
 gSpriteFrameImages_JP_084DF870: @ 0x084DF870
-	sprite_frame_image 0x084A9B0C, 0x100
-	sprite_frame_image 0x084A9C0C, 0x100
-	sprite_frame_image 0x084A9D0C, 0x100
-	sprite_frame_image 0x084A9E0C, 0x100
-	sprite_frame_image 0x084A9F0C, 0x100
-	sprite_frame_image 0x084AA00C, 0x100
-	sprite_frame_image 0x084AA10C, 0x100
-	sprite_frame_image 0x084AA20C, 0x100
-	sprite_frame_image 0x084AA30C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A9B0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A9C0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A9D0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A9E0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084A9F0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AA00C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AA10C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AA20C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AA30C, 0x100
 	.globl gSpriteFrameImages_JP_084DF8B8
 gSpriteFrameImages_JP_084DF8B8: @ 0x084DF8B8
-	sprite_frame_image 0x084AA40C, 0x100
-	sprite_frame_image 0x084AA50C, 0x100
-	sprite_frame_image 0x084AA60C, 0x100
-	sprite_frame_image 0x084AA70C, 0x100
-	sprite_frame_image 0x084AA80C, 0x100
-	sprite_frame_image 0x084AA90C, 0x100
-	sprite_frame_image 0x084AAA0C, 0x100
-	sprite_frame_image 0x084AAB0C, 0x100
-	sprite_frame_image 0x084AAC0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AA40C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AA50C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AA60C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AA70C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AA80C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AA90C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AAA0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AAB0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AAC0C, 0x100
 	.globl gSpriteFrameImages_JP_084DF900
 gSpriteFrameImages_JP_084DF900: @ 0x084DF900
-	sprite_frame_image 0x084AAD0C, 0x100
-	sprite_frame_image 0x084AAE0C, 0x100
-	sprite_frame_image 0x084AAF0C, 0x100
-	sprite_frame_image 0x084AB00C, 0x100
-	sprite_frame_image 0x084AB10C, 0x100
-	sprite_frame_image 0x084AB20C, 0x100
-	sprite_frame_image 0x084AB30C, 0x100
-	sprite_frame_image 0x084AB40C, 0x100
-	sprite_frame_image 0x084AB50C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AAD0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AAE0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AAF0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AB00C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AB10C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AB20C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AB30C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AB40C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AB50C, 0x100
 	.globl gSpriteFrameImages_JP_084DF948
 gSpriteFrameImages_JP_084DF948: @ 0x084DF948
-	sprite_frame_image 0x084AB60C, 0x100
-	sprite_frame_image 0x084AB70C, 0x100
-	sprite_frame_image 0x084AB80C, 0x100
-	sprite_frame_image 0x084AB90C, 0x100
-	sprite_frame_image 0x084ABA0C, 0x100
-	sprite_frame_image 0x084ABB0C, 0x100
-	sprite_frame_image 0x084ABC0C, 0x100
-	sprite_frame_image 0x084ABD0C, 0x100
-	sprite_frame_image 0x084ABE0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AB60C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AB70C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AB80C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AB90C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ABA0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ABB0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ABC0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ABD0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ABE0C, 0x100
 	.globl gSpriteFrameImages_JP_084DF990
 gSpriteFrameImages_JP_084DF990: @ 0x084DF990
-	sprite_frame_image 0x084ABF0C, 0x100
-	sprite_frame_image 0x084AC00C, 0x100
-	sprite_frame_image 0x084AC10C, 0x100
-	sprite_frame_image 0x084AC20C, 0x100
-	sprite_frame_image 0x084AC30C, 0x100
-	sprite_frame_image 0x084AC40C, 0x100
-	sprite_frame_image 0x084AC50C, 0x100
-	sprite_frame_image 0x084AC60C, 0x100
-	sprite_frame_image 0x084AC70C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ABF0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AC00C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AC10C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AC20C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AC30C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AC40C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AC50C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AC60C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AC70C, 0x100
 	.globl gSpriteFrameImages_JP_084DF9D8
 gSpriteFrameImages_JP_084DF9D8: @ 0x084DF9D8
-	sprite_frame_image 0x084AC80C, 0x100
-	sprite_frame_image 0x084AC90C, 0x100
-	sprite_frame_image 0x084ACA0C, 0x100
-	sprite_frame_image 0x084ACB0C, 0x100
-	sprite_frame_image 0x084ACC0C, 0x100
-	sprite_frame_image 0x084ACD0C, 0x100
-	sprite_frame_image 0x084ACE0C, 0x100
-	sprite_frame_image 0x084ACF0C, 0x100
-	sprite_frame_image 0x084AD00C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AC80C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AC90C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ACA0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ACB0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ACC0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ACD0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ACE0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ACF0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD00C, 0x100
 	.globl gSpriteFrameImages_JP_084DFA20
 gSpriteFrameImages_JP_084DFA20: @ 0x084DFA20
-	sprite_frame_image 0x084AD10C, 0x100
-	sprite_frame_image 0x084AD20C, 0x100
-	sprite_frame_image 0x084AD30C, 0x100
-	sprite_frame_image 0x084AD10C, 0x100
-	sprite_frame_image 0x084AD10C, 0x100
-	sprite_frame_image 0x084AD20C, 0x100
-	sprite_frame_image 0x084AD20C, 0x100
-	sprite_frame_image 0x084AD30C, 0x100
-	sprite_frame_image 0x084AD30C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD10C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD20C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD30C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD10C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD10C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD20C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD20C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD30C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD30C, 0x100
 	.globl gSpriteFrameImages_JP_084DFA68
 gSpriteFrameImages_JP_084DFA68: @ 0x084DFA68
-	sprite_frame_image 0x084AD40C, 0x100
-	sprite_frame_image 0x084AD50C, 0x100
-	sprite_frame_image 0x084AD60C, 0x100
-	sprite_frame_image 0x084AD40C, 0x100
-	sprite_frame_image 0x084AD40C, 0x100
-	sprite_frame_image 0x084AD50C, 0x100
-	sprite_frame_image 0x084AD50C, 0x100
-	sprite_frame_image 0x084AD60C, 0x100
-	sprite_frame_image 0x084AD60C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD40C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD50C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD60C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD40C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD40C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD50C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD50C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD60C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD60C, 0x100
 	.globl gSpriteFrameImages_JP_084DFAB0
 gSpriteFrameImages_JP_084DFAB0: @ 0x084DFAB0
-	sprite_frame_image 0x084AD70C, 0x100
-	sprite_frame_image 0x084AD80C, 0x100
-	sprite_frame_image 0x084AD90C, 0x100
-	sprite_frame_image 0x084AD70C, 0x100
-	sprite_frame_image 0x084AD70C, 0x100
-	sprite_frame_image 0x084AD80C, 0x100
-	sprite_frame_image 0x084AD80C, 0x100
-	sprite_frame_image 0x084AD90C, 0x100
-	sprite_frame_image 0x084AD90C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD70C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD80C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD90C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD70C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD70C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD80C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD80C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD90C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AD90C, 0x100
 	.globl gSpriteFrameImages_JP_084DFAF8
 gSpriteFrameImages_JP_084DFAF8: @ 0x084DFAF8
-	sprite_frame_image 0x084ADA0C, 0x100
-	sprite_frame_image 0x084ADB0C, 0x100
-	sprite_frame_image 0x084ADC0C, 0x100
-	sprite_frame_image 0x084ADA0C, 0x100
-	sprite_frame_image 0x084ADA0C, 0x100
-	sprite_frame_image 0x084ADB0C, 0x100
-	sprite_frame_image 0x084ADB0C, 0x100
-	sprite_frame_image 0x084ADC0C, 0x100
-	sprite_frame_image 0x084ADC0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADA0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADB0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADC0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADA0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADA0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADB0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADB0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADC0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADC0C, 0x100
 	.globl gSpriteFrameImages_JP_084DFB40
 gSpriteFrameImages_JP_084DFB40: @ 0x084DFB40
-	sprite_frame_image 0x084ADD0C, 0x100
-	sprite_frame_image 0x084ADE0C, 0x100
-	sprite_frame_image 0x084ADF0C, 0x100
-	sprite_frame_image 0x084ADD0C, 0x100
-	sprite_frame_image 0x084ADD0C, 0x100
-	sprite_frame_image 0x084ADE0C, 0x100
-	sprite_frame_image 0x084ADE0C, 0x100
-	sprite_frame_image 0x084ADF0C, 0x100
-	sprite_frame_image 0x084ADF0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADD0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADE0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADF0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADD0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADD0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADE0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADE0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADF0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084ADF0C, 0x100
 	.globl gSpriteFrameImages_JP_084DFB88
 gSpriteFrameImages_JP_084DFB88: @ 0x084DFB88
-	sprite_frame_image 0x084AE00C, 0x100
-	sprite_frame_image 0x084AE10C, 0x100
-	sprite_frame_image 0x084AE20C, 0x100
-	sprite_frame_image 0x084AE00C, 0x100
-	sprite_frame_image 0x084AE00C, 0x100
-	sprite_frame_image 0x084AE10C, 0x100
-	sprite_frame_image 0x084AE10C, 0x100
-	sprite_frame_image 0x084AE20C, 0x100
-	sprite_frame_image 0x084AE20C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE00C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE10C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE20C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE00C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE00C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE10C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE10C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE20C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE20C, 0x100
 	.globl gSpriteFrameImages_JP_084DFBD0
 gSpriteFrameImages_JP_084DFBD0: @ 0x084DFBD0
-	sprite_frame_image 0x084AE30C, 0x100
-	sprite_frame_image 0x084AE40C, 0x100
-	sprite_frame_image 0x084AE50C, 0x100
-	sprite_frame_image 0x084AE30C, 0x100
-	sprite_frame_image 0x084AE30C, 0x100
-	sprite_frame_image 0x084AE40C, 0x100
-	sprite_frame_image 0x084AE40C, 0x100
-	sprite_frame_image 0x084AE50C, 0x100
-	sprite_frame_image 0x084AE50C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE30C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE40C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE50C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE30C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE30C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE40C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE40C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE50C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE50C, 0x100
 	.globl gSpriteFrameImages_JP_084DFC18
 gSpriteFrameImages_JP_084DFC18: @ 0x084DFC18
-	sprite_frame_image 0x084AE60C, 0x100
-	sprite_frame_image 0x084AE70C, 0x100
-	sprite_frame_image 0x084AE80C, 0x100
-	sprite_frame_image 0x084AE60C, 0x100
-	sprite_frame_image 0x084AE60C, 0x100
-	sprite_frame_image 0x084AE70C, 0x100
-	sprite_frame_image 0x084AE70C, 0x100
-	sprite_frame_image 0x084AE80C, 0x100
-	sprite_frame_image 0x084AE80C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE60C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE70C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE80C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE60C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE60C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE70C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE70C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE80C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE80C, 0x100
 	.globl gSpriteFrameImages_JP_084DFC60
 gSpriteFrameImages_JP_084DFC60: @ 0x084DFC60
-	sprite_frame_image 0x084AE90C, 0x100
-	sprite_frame_image 0x084AEA0C, 0x100
-	sprite_frame_image 0x084AEB0C, 0x100
-	sprite_frame_image 0x084AEC0C, 0x100
-	sprite_frame_image 0x084AED0C, 0x100
-	sprite_frame_image 0x084AEE0C, 0x100
-	sprite_frame_image 0x084AEF0C, 0x100
-	sprite_frame_image 0x084AF00C, 0x100
-	sprite_frame_image 0x084AF10C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AE90C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AEA0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AEB0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AEC0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AED0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AEE0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AEF0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF00C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF10C, 0x100
 	.globl gSpriteFrameImages_JP_084DFCA8
 gSpriteFrameImages_JP_084DFCA8: @ 0x084DFCA8
-	sprite_frame_image 0x084AF20C, 0x100
-	sprite_frame_image 0x084AF30C, 0x100
-	sprite_frame_image 0x084AF40C, 0x100
-	sprite_frame_image 0x084AF20C, 0x100
-	sprite_frame_image 0x084AF20C, 0x100
-	sprite_frame_image 0x084AF30C, 0x100
-	sprite_frame_image 0x084AF30C, 0x100
-	sprite_frame_image 0x084AF40C, 0x100
-	sprite_frame_image 0x084AF40C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF20C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF30C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF40C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF20C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF20C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF30C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF30C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF40C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF40C, 0x100
 	.globl gSpriteFrameImages_JP_084DFCF0
 gSpriteFrameImages_JP_084DFCF0: @ 0x084DFCF0
-	sprite_frame_image 0x084AF50C, 0x100
-	sprite_frame_image 0x084AF60C, 0x100
-	sprite_frame_image 0x084AF70C, 0x100
-	sprite_frame_image 0x084AF50C, 0x100
-	sprite_frame_image 0x084AF50C, 0x100
-	sprite_frame_image 0x084AF60C, 0x100
-	sprite_frame_image 0x084AF60C, 0x100
-	sprite_frame_image 0x084AF70C, 0x100
-	sprite_frame_image 0x084AF70C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF50C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF60C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF70C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF50C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF50C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF60C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF60C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF70C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF70C, 0x100
 	.globl gSpriteFrameImages_JP_084DFD38
 gSpriteFrameImages_JP_084DFD38: @ 0x084DFD38
-	sprite_frame_image 0x084AF80C, 0x100
-	sprite_frame_image 0x084AF90C, 0x100
-	sprite_frame_image 0x084AFA0C, 0x100
-	sprite_frame_image 0x084AF80C, 0x100
-	sprite_frame_image 0x084AF80C, 0x100
-	sprite_frame_image 0x084AF90C, 0x100
-	sprite_frame_image 0x084AF90C, 0x100
-	sprite_frame_image 0x084AFA0C, 0x100
-	sprite_frame_image 0x084AFA0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF80C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF90C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AFA0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF80C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF80C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF90C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AF90C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AFA0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AFA0C, 0x100
 	.globl gSpriteFrameImages_JP_084DFD80
 gSpriteFrameImages_JP_084DFD80: @ 0x084DFD80
-	sprite_frame_image 0x084AFB0C, 0x100
-	sprite_frame_image 0x084AFC0C, 0x100
-	sprite_frame_image 0x084AFD0C, 0x100
-	sprite_frame_image 0x084AFE0C, 0x100
-	sprite_frame_image 0x084AFF0C, 0x100
-	sprite_frame_image 0x084B000C, 0x100
-	sprite_frame_image 0x084B010C, 0x100
-	sprite_frame_image 0x084B020C, 0x100
-	sprite_frame_image 0x084B030C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AFB0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AFC0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AFD0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AFE0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084AFF0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B000C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B010C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B020C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B030C, 0x100
 	.globl gSpriteFrameImages_JP_084DFDC8
 gSpriteFrameImages_JP_084DFDC8: @ 0x084DFDC8
-	sprite_frame_image 0x084B040C, 0x100
-	sprite_frame_image 0x084B050C, 0x100
-	sprite_frame_image 0x084B060C, 0x100
-	sprite_frame_image 0x084B070C, 0x100
-	sprite_frame_image 0x084B080C, 0x100
-	sprite_frame_image 0x084B090C, 0x100
-	sprite_frame_image 0x084B0A0C, 0x100
-	sprite_frame_image 0x084B0B0C, 0x100
-	sprite_frame_image 0x084B0C0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B040C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B050C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B060C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B070C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B080C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B090C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B0A0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B0B0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B0C0C, 0x100
 	.globl gSpriteFrameImages_JP_084DFE10
 gSpriteFrameImages_JP_084DFE10: @ 0x084DFE10
-	sprite_frame_image 0x084B0D0C, 0x100
-	sprite_frame_image 0x084B0E0C, 0x100
-	sprite_frame_image 0x084B0F0C, 0x100
-	sprite_frame_image 0x084B100C, 0x100
-	sprite_frame_image 0x084B110C, 0x100
-	sprite_frame_image 0x084B120C, 0x100
-	sprite_frame_image 0x084B130C, 0x100
-	sprite_frame_image 0x084B140C, 0x100
-	sprite_frame_image 0x084B150C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B0D0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B0E0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B0F0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B100C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B110C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B120C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B130C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B140C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B150C, 0x100
 	.globl gSpriteFrameImages_JP_084DFE58
 gSpriteFrameImages_JP_084DFE58: @ 0x084DFE58
-	sprite_frame_image 0x084B160C, 0x80
-	sprite_frame_image 0x084B168C, 0x80
-	sprite_frame_image 0x084B170C, 0x80
-	sprite_frame_image 0x084B178C, 0x80
-	sprite_frame_image 0x084B180C, 0x80
-	sprite_frame_image 0x084B188C, 0x80
-	sprite_frame_image 0x084B190C, 0x80
-	sprite_frame_image 0x084B198C, 0x80
-	sprite_frame_image 0x084B1A0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B160C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B168C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B170C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B178C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B180C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B188C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B190C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B198C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B1A0C, 0x80
 	.globl gSpriteFrameImages_JP_084DFEA0
 gSpriteFrameImages_JP_084DFEA0: @ 0x084DFEA0
-	sprite_frame_image 0x08477EAC, 0x200
-	sprite_frame_image 0x084780AC, 0x200
-	sprite_frame_image 0x084782AC, 0x200
-	sprite_frame_image 0x084784AC, 0x200
-	sprite_frame_image 0x084786AC, 0x200
-	sprite_frame_image 0x084788AC, 0x200
-	sprite_frame_image 0x08478AAC, 0x200
-	sprite_frame_image 0x08478CAC, 0x200
-	sprite_frame_image 0x08478EAC, 0x200
-	sprite_frame_image 0x084790AC, 0x200
-	sprite_frame_image 0x084792AC, 0x200
-	sprite_frame_image 0x084794AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08477EAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084780AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084782AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084784AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084786AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084788AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08478AAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08478CAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08478EAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084790AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084792AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084794AC, 0x200
 	.globl gSpriteFrameImages_JP_084DFF00
 gSpriteFrameImages_JP_084DFF00: @ 0x084DFF00
-	sprite_frame_image 0x0848390C, 0x200
-	sprite_frame_image 0x08483B0C, 0x200
-	sprite_frame_image 0x08483D0C, 0x200
-	sprite_frame_image 0x08483F0C, 0x200
-	sprite_frame_image 0x0848410C, 0x200
-	sprite_frame_image 0x0848430C, 0x200
-	sprite_frame_image 0x0848450C, 0x200
-	sprite_frame_image 0x0848470C, 0x200
-	sprite_frame_image 0x0848490C, 0x200
-	sprite_frame_image 0x08484B0C, 0x200
-	sprite_frame_image 0x08484D0C, 0x200
-	sprite_frame_image 0x08484F0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848390C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08483B0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08483D0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08483F0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848410C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848430C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848450C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848470C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848490C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08484B0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08484D0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08484F0C, 0x200
 	.globl gSpriteFrameImages_JP_084DFF60
 gSpriteFrameImages_JP_084DFF60: @ 0x084DFF60
-	sprite_frame_image 0x084B1A8C, 0x100
-	sprite_frame_image 0x084B1B8C, 0x100
-	sprite_frame_image 0x084B1C8C, 0x100
-	sprite_frame_image 0x084B1D8C, 0x100
-	sprite_frame_image 0x084B1E8C, 0x100
-	sprite_frame_image 0x084B1F8C, 0x100
-	sprite_frame_image 0x084B208C, 0x100
-	sprite_frame_image 0x084B218C, 0x100
-	sprite_frame_image 0x084B228C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B1A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B1B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B1C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B1D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B1E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B1F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B208C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B218C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B228C, 0x100
 	.globl gSpriteFrameImages_JP_084DFFA8
 gSpriteFrameImages_JP_084DFFA8: @ 0x084DFFA8
 	sprite_frame_image gObjectEventFrameGfx_JP_084C184C, 0x780
@@ -1350,408 +1350,408 @@ gSpriteFrameImages_JP_084DFFA8: @ 0x084DFFA8
 	sprite_frame_image gObjectEventFrameGfx_JP_084C184C, 0x780
 	.globl gSpriteFrameImages_JP_084DFFF0
 gSpriteFrameImages_JP_084DFFF0: @ 0x084DFFF0
-	sprite_frame_image 0x084BD70C, 0x580
-	sprite_frame_image 0x084BD70C, 0x580
-	sprite_frame_image 0x084BD70C, 0x580
-	sprite_frame_image 0x084BD70C, 0x580
-	sprite_frame_image 0x084BD70C, 0x580
-	sprite_frame_image 0x084BD70C, 0x580
-	sprite_frame_image 0x084BD70C, 0x580
-	sprite_frame_image 0x084BD70C, 0x580
-	sprite_frame_image 0x084BD70C, 0x580
+	sprite_frame_image gObjectEventFrame_JP_084BD70C, 0x580
+	sprite_frame_image gObjectEventFrame_JP_084BD70C, 0x580
+	sprite_frame_image gObjectEventFrame_JP_084BD70C, 0x580
+	sprite_frame_image gObjectEventFrame_JP_084BD70C, 0x580
+	sprite_frame_image gObjectEventFrame_JP_084BD70C, 0x580
+	sprite_frame_image gObjectEventFrame_JP_084BD70C, 0x580
+	sprite_frame_image gObjectEventFrame_JP_084BD70C, 0x580
+	sprite_frame_image gObjectEventFrame_JP_084BD70C, 0x580
+	sprite_frame_image gObjectEventFrame_JP_084BD70C, 0x580
 	.globl gSpriteFrameImages_JP_084E0038
 gSpriteFrameImages_JP_084E0038: @ 0x084E0038
-	sprite_frame_image 0x084BA68C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BA68C, 0x80
 	.globl gSpriteFrameImages_JP_084E0040
 gSpriteFrameImages_JP_084E0040: @ 0x084E0040
-	sprite_frame_image 0x084BA70C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BA70C, 0x80
 	.globl gSpriteFrameImages_JP_084E0048
 gSpriteFrameImages_JP_084E0048: @ 0x084E0048
-	sprite_frame_image 0x084BA78C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BA78C, 0x80
 	.globl gSpriteFrameImages_JP_084E0050
 gSpriteFrameImages_JP_084E0050: @ 0x084E0050
-	sprite_frame_image 0x084BA80C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BA80C, 0x80
 	.globl gSpriteFrameImages_JP_084E0058
 gSpriteFrameImages_JP_084E0058: @ 0x084E0058
-	sprite_frame_image 0x084BA88C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BA88C, 0x80
 	.globl gSpriteFrameImages_JP_084E0060
 gSpriteFrameImages_JP_084E0060: @ 0x084E0060
-	sprite_frame_image 0x084BA90C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BA90C, 0x80
 	.globl gSpriteFrameImages_JP_084E0068
 gSpriteFrameImages_JP_084E0068: @ 0x084E0068
-	sprite_frame_image 0x084BA98C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BA98C, 0x80
 	.globl gSpriteFrameImages_JP_084E0070
 gSpriteFrameImages_JP_084E0070: @ 0x084E0070
-	sprite_frame_image 0x084BAA0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BAA0C, 0x80
 	.globl gSpriteFrameImages_JP_084E0078
 gSpriteFrameImages_JP_084E0078: @ 0x084E0078
-	sprite_frame_image 0x084BAA8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BAA8C, 0x80
 	.globl gSpriteFrameImages_JP_084E0080
 gSpriteFrameImages_JP_084E0080: @ 0x084E0080
-	sprite_frame_image 0x084BAB0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BAB0C, 0x80
 	.globl gSpriteFrameImages_JP_084E0088
 gSpriteFrameImages_JP_084E0088: @ 0x084E0088
-	sprite_frame_image 0x084BAB8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BAB8C, 0x80
 	.globl gSpriteFrameImages_JP_084E0090
 gSpriteFrameImages_JP_084E0090: @ 0x084E0090
-	sprite_frame_image 0x084BAC0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BAC0C, 0x80
 	.globl gSpriteFrameImages_JP_084E0098
 gSpriteFrameImages_JP_084E0098: @ 0x084E0098
-	sprite_frame_image 0x084BAC8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BAC8C, 0x80
 	.globl gSpriteFrameImages_JP_084E00A0
 gSpriteFrameImages_JP_084E00A0: @ 0x084E00A0
-	sprite_frame_image 0x084BAD0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BAD0C, 0x80
 	.globl gSpriteFrameImages_JP_084E00A8
 gSpriteFrameImages_JP_084E00A8: @ 0x084E00A8
-	sprite_frame_image 0x084BAD8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BAD8C, 0x80
 	.globl gSpriteFrameImages_JP_084E00B0
 gSpriteFrameImages_JP_084E00B0: @ 0x084E00B0
-	sprite_frame_image 0x084BAE0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BAE0C, 0x80
 	.globl gSpriteFrameImages_JP_084E00B8
 gSpriteFrameImages_JP_084E00B8: @ 0x084E00B8
-	sprite_frame_image 0x084BAE8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BAE8C, 0x80
 	.globl gSpriteFrameImages_JP_084E00C0
 gSpriteFrameImages_JP_084E00C0: @ 0x084E00C0
-	sprite_frame_image 0x084BAF0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BAF0C, 0x80
 	.globl gSpriteFrameImages_JP_084E00C8
 gSpriteFrameImages_JP_084E00C8: @ 0x084E00C8
-	sprite_frame_image 0x084BAF8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BAF8C, 0x80
 	.globl gSpriteFrameImages_JP_084E00D0
 gSpriteFrameImages_JP_084E00D0: @ 0x084E00D0
-	sprite_frame_image 0x084BB00C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB00C, 0x80
 	.globl gSpriteFrameImages_JP_084E00D8
 gSpriteFrameImages_JP_084E00D8: @ 0x084E00D8
-	sprite_frame_image 0x084BB08C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB08C, 0x80
 	.globl gSpriteFrameImages_JP_084E00E0
 gSpriteFrameImages_JP_084E00E0: @ 0x084E00E0
-	sprite_frame_image 0x084BB10C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB10C, 0x80
 	.globl gSpriteFrameImages_JP_084E00E8
 gSpriteFrameImages_JP_084E00E8: @ 0x084E00E8
-	sprite_frame_image 0x084BB18C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB18C, 0x80
 	.globl gSpriteFrameImages_JP_084E00F0
 gSpriteFrameImages_JP_084E00F0: @ 0x084E00F0
-	sprite_frame_image 0x084BB20C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB20C, 0x80
 	.globl gSpriteFrameImages_JP_084E00F8
 gSpriteFrameImages_JP_084E00F8: @ 0x084E00F8
-	sprite_frame_image 0x084BB28C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB28C, 0x80
 	.globl gSpriteFrameImages_JP_084E0100
 gSpriteFrameImages_JP_084E0100: @ 0x084E0100
-	sprite_frame_image 0x084BB30C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB30C, 0x80
 	.globl gSpriteFrameImages_JP_084E0108
 gSpriteFrameImages_JP_084E0108: @ 0x084E0108
-	sprite_frame_image 0x084BB38C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB38C, 0x80
 	.globl gSpriteFrameImages_JP_084E0110
 gSpriteFrameImages_JP_084E0110: @ 0x084E0110
-	sprite_frame_image 0x084BB40C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB40C, 0x80
 	.globl gSpriteFrameImages_JP_084E0118
 gSpriteFrameImages_JP_084E0118: @ 0x084E0118
-	sprite_frame_image 0x084BB48C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB48C, 0x80
 	.globl gSpriteFrameImages_JP_084E0120
 gSpriteFrameImages_JP_084E0120: @ 0x084E0120
-	sprite_frame_image 0x084BB50C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB50C, 0x80
 	.globl gSpriteFrameImages_JP_084E0128
 gSpriteFrameImages_JP_084E0128: @ 0x084E0128
-	sprite_frame_image 0x084BB58C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB58C, 0x80
 	.globl gSpriteFrameImages_JP_084E0130
 gSpriteFrameImages_JP_084E0130: @ 0x084E0130
-	sprite_frame_image 0x084BB60C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB60C, 0x80
 	.globl gSpriteFrameImages_JP_084E0138
 gSpriteFrameImages_JP_084E0138: @ 0x084E0138
-	sprite_frame_image 0x084BB68C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB68C, 0x80
 	.globl gSpriteFrameImages_JP_084E0140
 gSpriteFrameImages_JP_084E0140: @ 0x084E0140
-	sprite_frame_image 0x084BB70C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB70C, 0x80
 	.globl gSpriteFrameImages_JP_084E0148
 gSpriteFrameImages_JP_084E0148: @ 0x084E0148
-	sprite_frame_image 0x084BB78C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BB78C, 0x80
 	.globl gSpriteFrameImages_JP_084E0150
 gSpriteFrameImages_JP_084E0150: @ 0x084E0150
-	sprite_frame_image 0x084BB80C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BB80C, 0x200
 	.globl gSpriteFrameImages_JP_084E0158
 gSpriteFrameImages_JP_084E0158: @ 0x084E0158
-	sprite_frame_image 0x084BBA0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BBA0C, 0x200
 	.globl gSpriteFrameImages_JP_084E0160
 gSpriteFrameImages_JP_084E0160: @ 0x084E0160
-	sprite_frame_image 0x084BBC0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BBC0C, 0x200
 	.globl gSpriteFrameImages_JP_084E0168
 gSpriteFrameImages_JP_084E0168: @ 0x084E0168
-	sprite_frame_image 0x084BBE0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BBE0C, 0x200
 	.globl gSpriteFrameImages_JP_084E0170
 gSpriteFrameImages_JP_084E0170: @ 0x084E0170
-	sprite_frame_image 0x084BC00C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BC00C, 0x200
 	.globl gSpriteFrameImages_JP_084E0178
 gSpriteFrameImages_JP_084E0178: @ 0x084E0178
-	sprite_frame_image 0x084BC20C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BC20C, 0x200
 	.globl gSpriteFrameImages_JP_084E0180
 gSpriteFrameImages_JP_084E0180: @ 0x084E0180
-	sprite_frame_image 0x084BC40C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BC40C, 0x200
 	.globl gSpriteFrameImages_JP_084E0188
 gSpriteFrameImages_JP_084E0188: @ 0x084E0188
-	sprite_frame_image 0x084BC60C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BC60C, 0x200
 	.globl gSpriteFrameImages_JP_084E0190
 gSpriteFrameImages_JP_084E0190: @ 0x084E0190
-	sprite_frame_image 0x084BC80C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BC80C, 0x200
 	.globl gSpriteFrameImages_JP_084E0198
 gSpriteFrameImages_JP_084E0198: @ 0x084E0198
-	sprite_frame_image 0x084BCA0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084BCA0C, 0x200
 	.globl gSpriteFrameImages_JP_084E01A0
 gSpriteFrameImages_JP_084E01A0: @ 0x084E01A0
-	sprite_frame_image 0x084B238C, 0x200
-	sprite_frame_image 0x084B238C, 0x200
-	sprite_frame_image 0x084B238C, 0x200
-	sprite_frame_image 0x084B258C, 0x200
-	sprite_frame_image 0x084B278C, 0x200
-	sprite_frame_image 0x084B258C, 0x200
-	sprite_frame_image 0x084B278C, 0x200
-	sprite_frame_image 0x084B258C, 0x200
-	sprite_frame_image 0x084B278C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B238C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B238C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B238C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B258C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B278C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B258C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B278C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B258C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B278C, 0x200
 	.globl gSpriteFrameImages_JP_084E01E8
 gSpriteFrameImages_JP_084E01E8: @ 0x084E01E8
-	sprite_frame_image 0x084B298C, 0x100
-	sprite_frame_image 0x084B2A8C, 0x100
-	sprite_frame_image 0x084B2B8C, 0x100
-	sprite_frame_image 0x084B298C, 0x100
-	sprite_frame_image 0x084B298C, 0x100
-	sprite_frame_image 0x084B2A8C, 0x100
-	sprite_frame_image 0x084B2A8C, 0x100
-	sprite_frame_image 0x084B2B8C, 0x100
-	sprite_frame_image 0x084B2B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B298C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B2A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B2B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B298C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B298C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B2A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B2A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B2B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B2B8C, 0x100
 	.globl gSpriteFrameImages_JP_084E0230
 gSpriteFrameImages_JP_084E0230: @ 0x084E0230
-	sprite_frame_image 0x084B2C8C, 0x100
-	sprite_frame_image 0x084B2D8C, 0x100
-	sprite_frame_image 0x084B2E8C, 0x100
-	sprite_frame_image 0x084B2F8C, 0x100
-	sprite_frame_image 0x084B308C, 0x100
-	sprite_frame_image 0x084B318C, 0x100
-	sprite_frame_image 0x084B328C, 0x100
-	sprite_frame_image 0x084B338C, 0x100
-	sprite_frame_image 0x084B348C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B2C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B2D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B2E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B2F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B308C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B318C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B328C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B338C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B348C, 0x100
 	.globl gSpriteFrameImages_JP_084E0278
 gSpriteFrameImages_JP_084E0278: @ 0x084E0278
-	sprite_frame_image 0x084796AC, 0x200
-	sprite_frame_image 0x08479AAC, 0x200
-	sprite_frame_image 0x08479EAC, 0x200
-	sprite_frame_image 0x084798AC, 0x200
-	sprite_frame_image 0x084798AC, 0x200
-	sprite_frame_image 0x08479CAC, 0x200
-	sprite_frame_image 0x08479CAC, 0x200
-	sprite_frame_image 0x0847A0AC, 0x200
-	sprite_frame_image 0x0847A0AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084796AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08479AAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08479EAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084798AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084798AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08479CAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08479CAC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847A0AC, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0847A0AC, 0x200
 	.globl gSpriteFrameImages_JP_084E02C0
 gSpriteFrameImages_JP_084E02C0: @ 0x084E02C0
-	sprite_frame_image 0x0848510C, 0x200
-	sprite_frame_image 0x0848550C, 0x200
-	sprite_frame_image 0x0848590C, 0x200
-	sprite_frame_image 0x0848530C, 0x200
-	sprite_frame_image 0x0848530C, 0x200
-	sprite_frame_image 0x0848570C, 0x200
-	sprite_frame_image 0x0848570C, 0x200
-	sprite_frame_image 0x08485B0C, 0x200
-	sprite_frame_image 0x08485B0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848510C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848550C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848590C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848530C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848530C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848570C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_0848570C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08485B0C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_08485B0C, 0x200
 	.globl gSpriteFrameImages_JP_084E0308
 gSpriteFrameImages_JP_084E0308: @ 0x084E0308
-	sprite_frame_image 0x0847A2AC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847A2AC, 0x100
 	.globl gSpriteFrameImages_JP_084E0310
 gSpriteFrameImages_JP_084E0310: @ 0x084E0310
-	sprite_frame_image 0x0847A3AC, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847A3AC, 0x100
 	.globl gSpriteFrameImages_JP_084E0318
 gSpriteFrameImages_JP_084E0318: @ 0x084E0318
-	sprite_frame_image 0x084B358C, 0x100
-	sprite_frame_image 0x084B368C, 0x100
-	sprite_frame_image 0x084B378C, 0x100
-	sprite_frame_image 0x084B388C, 0x100
-	sprite_frame_image 0x084B398C, 0x100
-	sprite_frame_image 0x084B3A8C, 0x100
-	sprite_frame_image 0x084B3B8C, 0x100
-	sprite_frame_image 0x084B3C8C, 0x100
-	sprite_frame_image 0x084B3D8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B358C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B368C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B378C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B388C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B398C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B3A8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B3B8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B3C8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B3D8C, 0x100
 	.globl gSpriteFrameImages_JP_084E0360
 gSpriteFrameImages_JP_084E0360: @ 0x084E0360
-	sprite_frame_image 0x084B3E8C, 0x100
-	sprite_frame_image 0x084B3F8C, 0x100
-	sprite_frame_image 0x084B408C, 0x100
-	sprite_frame_image 0x084B418C, 0x100
-	sprite_frame_image 0x084B428C, 0x100
-	sprite_frame_image 0x084B438C, 0x100
-	sprite_frame_image 0x084B448C, 0x100
-	sprite_frame_image 0x084B458C, 0x100
-	sprite_frame_image 0x084B468C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B3E8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B3F8C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B408C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B418C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B428C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B438C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B448C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B458C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B468C, 0x100
 	.globl gSpriteFrameImages_JP_084E03A8
 gSpriteFrameImages_JP_084E03A8: @ 0x084E03A8
-	sprite_frame_image 0x084B478C, 0x200
-	sprite_frame_image 0x084B478C, 0x200
-	sprite_frame_image 0x084B478C, 0x200
-	sprite_frame_image 0x084B498C, 0x200
-	sprite_frame_image 0x084B498C, 0x200
-	sprite_frame_image 0x084B498C, 0x200
-	sprite_frame_image 0x084B498C, 0x200
-	sprite_frame_image 0x084B498C, 0x200
-	sprite_frame_image 0x084B498C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B478C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B478C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B478C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B498C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B498C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B498C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B498C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B498C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B498C, 0x200
 	.globl gSpriteFrameImages_JP_084E03F0
 gSpriteFrameImages_JP_084E03F0: @ 0x084E03F0
-	sprite_frame_image 0x084B4F8C, 0x200
-	sprite_frame_image 0x084B4F8C, 0x200
-	sprite_frame_image 0x084B4F8C, 0x200
-	sprite_frame_image 0x084B518C, 0x200
-	sprite_frame_image 0x084B518C, 0x200
-	sprite_frame_image 0x084B518C, 0x200
-	sprite_frame_image 0x084B518C, 0x200
-	sprite_frame_image 0x084B518C, 0x200
-	sprite_frame_image 0x084B518C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B4F8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B4F8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B4F8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B518C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B518C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B518C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B518C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B518C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B518C, 0x200
 	.globl gSpriteFrameImages_JP_084E0438
 gSpriteFrameImages_JP_084E0438: @ 0x084E0438
-	sprite_frame_image 0x084B4B8C, 0x200
-	sprite_frame_image 0x084B4B8C, 0x200
-	sprite_frame_image 0x084B4B8C, 0x200
-	sprite_frame_image 0x084B4D8C, 0x200
-	sprite_frame_image 0x084B4D8C, 0x200
-	sprite_frame_image 0x084B4D8C, 0x200
-	sprite_frame_image 0x084B4D8C, 0x200
-	sprite_frame_image 0x084B4D8C, 0x200
-	sprite_frame_image 0x084B4D8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B4B8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B4B8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B4B8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B4D8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B4D8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B4D8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B4D8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B4D8C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B4D8C, 0x200
 	.globl gSpriteFrameImages_JP_084E0480
 gSpriteFrameImages_JP_084E0480: @ 0x084E0480
-	sprite_frame_image 0x084B538C, 0x200
-	sprite_frame_image 0x084B538C, 0x200
-	sprite_frame_image 0x084B538C, 0x200
-	sprite_frame_image 0x084B558C, 0x200
-	sprite_frame_image 0x084B558C, 0x200
-	sprite_frame_image 0x084B558C, 0x200
-	sprite_frame_image 0x084B558C, 0x200
-	sprite_frame_image 0x084B558C, 0x200
-	sprite_frame_image 0x084B558C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B538C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B538C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B538C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B558C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B558C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B558C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B558C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B558C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B558C, 0x200
 	.globl gSpriteFrameImages_JP_084E04C8
 gSpriteFrameImages_JP_084E04C8: @ 0x084E04C8
-	sprite_frame_image 0x084BD68C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084BD68C, 0x80
 	.globl gSpriteFrameImages_JP_084E04D0
 gSpriteFrameImages_JP_084E04D0: @ 0x084E04D0
-	sprite_frame_image 0x084B578C, 0x200
-	sprite_frame_image 0x084B578C, 0x200
-	sprite_frame_image 0x084B578C, 0x200
-	sprite_frame_image 0x084B578C, 0x200
-	sprite_frame_image 0x084B578C, 0x200
-	sprite_frame_image 0x084B578C, 0x200
-	sprite_frame_image 0x084B578C, 0x200
-	sprite_frame_image 0x084B578C, 0x200
-	sprite_frame_image 0x084B578C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B578C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B578C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B578C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B578C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B578C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B578C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B578C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B578C, 0x200
+	sprite_frame_image gObjectEventFrame_JP_084B578C, 0x200
 	.globl gSpriteFrameImages_JP_084E0518
 gSpriteFrameImages_JP_084E0518: @ 0x084E0518
-	sprite_frame_image 0x084B598C, 0x80
-	sprite_frame_image 0x084B5A0C, 0x80
-	sprite_frame_image 0x084B5A8C, 0x80
-	sprite_frame_image 0x084B598C, 0x80
-	sprite_frame_image 0x084B598C, 0x80
-	sprite_frame_image 0x084B5A0C, 0x80
-	sprite_frame_image 0x084B5A0C, 0x80
-	sprite_frame_image 0x084B5A8C, 0x80
-	sprite_frame_image 0x084B5A8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B598C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B5A0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B5A8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B598C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B598C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B5A0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B5A0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B5A8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B5A8C, 0x80
 	.globl gSpriteFrameImages_JP_084E0560
 gSpriteFrameImages_JP_084E0560: @ 0x084E0560
-	sprite_frame_image 0x084B5B0C, 0x80
-	sprite_frame_image 0x084B5B8C, 0x80
-	sprite_frame_image 0x084B5C0C, 0x80
-	sprite_frame_image 0x084B5B0C, 0x80
-	sprite_frame_image 0x084B5B0C, 0x80
-	sprite_frame_image 0x084B5B8C, 0x80
-	sprite_frame_image 0x084B5B8C, 0x80
-	sprite_frame_image 0x084B5C0C, 0x80
-	sprite_frame_image 0x084B5C0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B5B0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B5B8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B5C0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B5B0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B5B0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B5B8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B5B8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B5C0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B5C0C, 0x80
 	.globl gSpriteFrameImages_JP_084E05A8
 gSpriteFrameImages_JP_084E05A8: @ 0x084E05A8
-	sprite_frame_image 0x084B5C8C, 0x800
-	sprite_frame_image 0x084B648C, 0x800
-	sprite_frame_image 0x084B6C8C, 0x800
-	sprite_frame_image 0x084B748C, 0x800
-	sprite_frame_image 0x084B7C8C, 0x800
+	sprite_frame_image gObjectEventFrame_JP_084B5C8C, 0x800
+	sprite_frame_image gObjectEventFrame_JP_084B648C, 0x800
+	sprite_frame_image gObjectEventFrame_JP_084B6C8C, 0x800
+	sprite_frame_image gObjectEventFrame_JP_084B748C, 0x800
+	sprite_frame_image gObjectEventFrame_JP_084B7C8C, 0x800
 	.globl gSpriteFrameImages_JP_084E05D0
 gSpriteFrameImages_JP_084E05D0: @ 0x084E05D0
-	sprite_frame_image 0x084B848C, 0x800
-	sprite_frame_image 0x084B848C, 0x800
-	sprite_frame_image 0x084B848C, 0x800
-	sprite_frame_image 0x084B848C, 0x800
-	sprite_frame_image 0x084B848C, 0x800
-	sprite_frame_image 0x084B848C, 0x800
-	sprite_frame_image 0x084B848C, 0x800
-	sprite_frame_image 0x084B848C, 0x800
-	sprite_frame_image 0x084B848C, 0x800
+	sprite_frame_image gObjectEventFrame_JP_084B848C, 0x800
+	sprite_frame_image gObjectEventFrame_JP_084B848C, 0x800
+	sprite_frame_image gObjectEventFrame_JP_084B848C, 0x800
+	sprite_frame_image gObjectEventFrame_JP_084B848C, 0x800
+	sprite_frame_image gObjectEventFrame_JP_084B848C, 0x800
+	sprite_frame_image gObjectEventFrame_JP_084B848C, 0x800
+	sprite_frame_image gObjectEventFrame_JP_084B848C, 0x800
+	sprite_frame_image gObjectEventFrame_JP_084B848C, 0x800
+	sprite_frame_image gObjectEventFrame_JP_084B848C, 0x800
 	.globl gSpriteFrameImages_JP_084E0618
 gSpriteFrameImages_JP_084E0618: @ 0x084E0618
-	sprite_frame_image 0x084B8C8C, 0x80
-	sprite_frame_image 0x084B8D0C, 0x80
-	sprite_frame_image 0x084B8D8C, 0x80
-	sprite_frame_image 0x084B8C8C, 0x80
-	sprite_frame_image 0x084B8C8C, 0x80
-	sprite_frame_image 0x084B8D0C, 0x80
-	sprite_frame_image 0x084B8D0C, 0x80
-	sprite_frame_image 0x084B8D8C, 0x80
-	sprite_frame_image 0x084B8D8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8C8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8D0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8D8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8C8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8C8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8D0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8D0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8D8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8D8C, 0x80
 	.globl gSpriteFrameImages_JP_084E0660
 gSpriteFrameImages_JP_084E0660: @ 0x084E0660
-	sprite_frame_image 0x084B8E0C, 0x80
-	sprite_frame_image 0x084B8E8C, 0x80
-	sprite_frame_image 0x084B8F0C, 0x80
-	sprite_frame_image 0x084B8E0C, 0x80
-	sprite_frame_image 0x084B8E0C, 0x80
-	sprite_frame_image 0x084B8E8C, 0x80
-	sprite_frame_image 0x084B8E8C, 0x80
-	sprite_frame_image 0x084B8F0C, 0x80
-	sprite_frame_image 0x084B8F0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8E0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8E8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8F0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8E0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8E0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8E8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8E8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8F0C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8F0C, 0x80
 	.globl gSpriteFrameImages_JP_084E06A8
 gSpriteFrameImages_JP_084E06A8: @ 0x084E06A8
-	sprite_frame_image 0x084B8F8C, 0x80
-	sprite_frame_image 0x084B900C, 0x80
-	sprite_frame_image 0x084B908C, 0x80
-	sprite_frame_image 0x084B8F8C, 0x80
-	sprite_frame_image 0x084B8F8C, 0x80
-	sprite_frame_image 0x084B900C, 0x80
-	sprite_frame_image 0x084B900C, 0x80
-	sprite_frame_image 0x084B908C, 0x80
-	sprite_frame_image 0x084B908C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8F8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B900C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B908C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8F8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B8F8C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B900C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B900C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B908C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B908C, 0x80
 	.globl gSpriteFrameImages_JP_084E06F0
 gSpriteFrameImages_JP_084E06F0: @ 0x084E06F0
-	sprite_frame_image 0x084B910C, 0x80
-	sprite_frame_image 0x084B920C, 0x80
-	sprite_frame_image 0x084B930C, 0x80
-	sprite_frame_image 0x084B918C, 0x80
-	sprite_frame_image 0x084B918C, 0x80
-	sprite_frame_image 0x084B928C, 0x80
-	sprite_frame_image 0x084B928C, 0x80
-	sprite_frame_image 0x084B938C, 0x80
-	sprite_frame_image 0x084B938C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B910C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B920C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B930C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B918C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B918C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B928C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B928C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B938C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B938C, 0x80
 	.globl gSpriteFrameImages_JP_084E0738
 gSpriteFrameImages_JP_084E0738: @ 0x084E0738
-	sprite_frame_image 0x084B940C, 0x80
-	sprite_frame_image 0x084B948C, 0x80
-	sprite_frame_image 0x084B950C, 0x80
-	sprite_frame_image 0x084B958C, 0x80
-	sprite_frame_image 0x084B960C, 0x80
-	sprite_frame_image 0x084B968C, 0x80
-	sprite_frame_image 0x084B970C, 0x80
-	sprite_frame_image 0x084B978C, 0x80
-	sprite_frame_image 0x084B980C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B940C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B948C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B950C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B958C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B960C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B968C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B970C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B978C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B980C, 0x80
 	.globl gSpriteFrameImages_JP_084E0780
 gSpriteFrameImages_JP_084E0780: @ 0x084E0780
-	sprite_frame_image 0x084B988C, 0x80
-	sprite_frame_image 0x084B990C, 0x80
-	sprite_frame_image 0x084B998C, 0x80
-	sprite_frame_image 0x084B988C, 0x80
-	sprite_frame_image 0x084B988C, 0x80
-	sprite_frame_image 0x084B990C, 0x80
-	sprite_frame_image 0x084B990C, 0x80
-	sprite_frame_image 0x084B998C, 0x80
-	sprite_frame_image 0x084B998C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B988C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B990C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B998C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B988C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B988C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B990C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B990C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B998C, 0x80
+	sprite_frame_image gObjectEventFrame_JP_084B998C, 0x80
 	.globl gSpriteFrameImages_JP_084E07C8
 gSpriteFrameImages_JP_084E07C8: @ 0x084E07C8
-	sprite_frame_image 0x084B9A0C, 0x100
-	sprite_frame_image 0x084B9B0C, 0x100
-	sprite_frame_image 0x084B9C0C, 0x100
-	sprite_frame_image 0x084B9D0C, 0x100
-	sprite_frame_image 0x084B9E0C, 0x100
-	sprite_frame_image 0x084B9F0C, 0x100
-	sprite_frame_image 0x084BA00C, 0x100
-	sprite_frame_image 0x084BA10C, 0x100
-	sprite_frame_image 0x084BA20C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B9A0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B9B0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B9C0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B9D0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B9E0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084B9F0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084BA00C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084BA10C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_084BA20C, 0x100
 	.globl gSpriteFrameImages_JP_084E0810
 gSpriteFrameImages_JP_084E0810: @ 0x084E0810
 	sprite_frame_image gObjectEventFrameGfx_JP_084D4A4C, 0x100
@@ -1980,26 +1980,26 @@ gSpriteFrameImages_JP_084E0D78: @ 0x084E0D78
 	sprite_frame_image gObjectEventFrameGfx_JP_084DD66C, 0x200
 	.globl gSpriteFrameImages_JP_084E0DC0
 gSpriteFrameImages_JP_084E0DC0: @ 0x084E0DC0
-	sprite_frame_image 0x08470C6C, 0x100
-	sprite_frame_image 0x08470D6C, 0x100
-	sprite_frame_image 0x08470E6C, 0x100
-	sprite_frame_image 0x08470F6C, 0x100
-	sprite_frame_image 0x0847106C, 0x100
-	sprite_frame_image 0x0847116C, 0x100
-	sprite_frame_image 0x0847126C, 0x100
-	sprite_frame_image 0x0847136C, 0x100
-	sprite_frame_image 0x0847146C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08470C6C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08470D6C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08470E6C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_08470F6C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847106C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847116C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847126C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847136C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847146C, 0x100
 	.globl gSpriteFrameImages_JP_084E0E08
 gSpriteFrameImages_JP_084E0E08: @ 0x084E0E08
-	sprite_frame_image 0x0847C70C, 0x100
-	sprite_frame_image 0x0847C80C, 0x100
-	sprite_frame_image 0x0847C90C, 0x100
-	sprite_frame_image 0x0847CA0C, 0x100
-	sprite_frame_image 0x0847CB0C, 0x100
-	sprite_frame_image 0x0847CC0C, 0x100
-	sprite_frame_image 0x0847CD0C, 0x100
-	sprite_frame_image 0x0847CE0C, 0x100
-	sprite_frame_image 0x0847CF0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847C70C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847C80C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847C90C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847CA0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847CB0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847CC0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847CD0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847CE0C, 0x100
+	sprite_frame_image gObjectEventFrame_JP_0847CF0C, 0x100
 	@ preserved non-SpriteFrameImage data: 0x084E0E50-0x084E18FF
 	@ Named ObjectEventGraphicsInfo resource pointer targets.
 	@ ObjectEvent sprite animation commands.
