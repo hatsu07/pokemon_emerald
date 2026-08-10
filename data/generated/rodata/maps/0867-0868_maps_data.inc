@@ -401,8 +401,8 @@ gUnknown_8571278: @ 0x08571278
 	@ pret/pokeemerald-jp direct xref for 0x085712A4: electric.s: sub_0810BE64
 	.globl gElectricData_085712A4
 gElectricData_085712A4:
-	.globl gUnknown_85712A4
-gUnknown_85712A4: @ 0x085712A4
+	.globl gBattleAnimSpriteTemplate_ElectricSpark
+gBattleAnimSpriteTemplate_ElectricSpark: @ 0x085712A4
 	@ analyzed canonical ROM range 0x085712A4-0x0857140B
 	@ pointer/nullable table
 	.4byte 0x27352735 @ +0x0
@@ -658,8 +658,8 @@ gUnknown_8571614: @ 0x08571614
 	@ pret/pokeemerald-jp direct xref for 0x0857174C: ice.s: AnimHailBegin
 	.globl gIceData_0857174C
 gIceData_0857174C:
-	.globl gUnknown_857174C
-gUnknown_857174C: @ 0x0857174C
+	.globl gBattleAnimSpriteTemplate_IceEffectParticle
+gBattleAnimSpriteTemplate_IceEffectParticle: @ 0x0857174C
 	@ analyzed canonical ROM range 0x0857174C-0x0857183F
 	@ pointer/nullable table
 	.4byte 0x279D279D @ +0x0
@@ -1706,8 +1706,8 @@ gUnknown_8572A14: @ 0x08572A14
 	@ pret/pokeemerald-jp direct xref for 0x08572F3C: fight.s: sub_0810D780
 	.globl gFightData_08572F3C
 gFightData_08572F3C:
-	.globl gUnknown_8572F3C
-gUnknown_8572F3C: @ 0x08572F3C
+	.globl gBattleAnimSpriteTemplate_BasicHit
+gBattleAnimSpriteTemplate_BasicHit: @ 0x08572F3C
 	@ analyzed canonical ROM range 0x08572F3C-0x08572F6B
 	@ pointer/nullable table
 	.4byte 0x27972797 @ +0x0
@@ -1716,6 +1716,8 @@ gUnknown_8572F3C: @ 0x08572F3C
 	.4byte 0 @ +0xC
 	.4byte 0x08572F2C @ +0x10
 	.4byte sub_08116BD8 @ +0x14
+	.globl gBattleAnimSpriteTemplate_BasicHitFlipped
+gBattleAnimSpriteTemplate_BasicHitFlipped: @ 0x08572F54
 	.4byte 0x27972797 @ +0x18
 	.4byte 0x084FD1A0 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
@@ -1725,8 +1727,8 @@ gUnknown_8572F3C: @ 0x08572F3C
 	@ pret/pokeemerald-jp direct xref for 0x08572F6C: water.s: sub_08109010
 	.globl gWaterData_08572F6C
 gWaterData_08572F6C:
-	.globl gUnknown_8572F6C
-gUnknown_8572F6C: @ 0x08572F6C
+	.globl gBattleAnimSpriteTemplate_WaterHit
+gBattleAnimSpriteTemplate_WaterHit: @ 0x08572F6C
 	@ analyzed canonical ROM range 0x08572F6C-0x08572FCB
 	@ pointer/nullable table
 	.4byte 0x27A427A4 @ +0x0
@@ -1735,12 +1737,16 @@ gUnknown_8572F6C: @ 0x08572F6C
 	.4byte 0 @ +0xC
 	.4byte 0x08572F2C @ +0x10
 	.4byte sub_08116BD8 @ +0x14
+	.globl gBattleAnimSpriteTemplate_WaterHitRandomOffset
+gBattleAnimSpriteTemplate_WaterHitRandomOffset: @ 0x08572F84
 	.4byte 0x27972797 @ +0x18
 	.4byte 0x084FD1A0 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
 	.4byte 0 @ +0x24
 	.4byte 0x08572F2C @ +0x28
 	.4byte sub_08116CA8 @ +0x2C
+	.globl gBattleAnimSpriteTemplate_WaterHitOnBattler
+gBattleAnimSpriteTemplate_WaterHitOnBattler: @ 0x08572F9C
 	.4byte 0x27972797 @ +0x30
 	.4byte 0x084FD1A0 @ +0x34
 	.4byte gDummySpriteAnimTable @ +0x38
@@ -1756,8 +1762,8 @@ gUnknown_8572F6C: @ 0x08572F6C
 	@ pret/pokeemerald-jp direct xref for 0x08572FCC: flying.s: sub_0810F3D8
 	.globl gFlyingData_08572FCC
 gFlyingData_08572FCC:
-	.globl gUnknown_8572FCC
-gUnknown_8572FCC: @ 0x08572FCC
+	.globl gBattleAnimSpriteTemplate_PiercingHit
+gBattleAnimSpriteTemplate_PiercingHit: @ 0x08572FCC
 	@ analyzed canonical ROM range 0x08572FCC-0x08572FFB
 	@ pointer/nullable table
 	.4byte 0x27972797 @ +0x0
@@ -1766,6 +1772,8 @@ gUnknown_8572FCC: @ 0x08572FCC
 	.4byte 0 @ +0xC
 	.4byte 0x08572F2C @ +0x10
 	.4byte sub_08116DF8 @ +0x14
+	.globl gBattleAnimSpriteTemplate_PiercingHitStoredCallback
+gBattleAnimSpriteTemplate_PiercingHitStoredCallback: @ 0x08572FE4
 	.4byte 0x27972797 @ +0x18
 	.4byte 0x084FD1A0 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20

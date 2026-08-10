@@ -1629,8 +1629,8 @@ gUnknown_856E8B4: @ 0x0856E8B4
 	@ pret/pokeemerald-jp direct xref for 0x0856EAA0: battle_anim_effects_1.s: sub_08102EF8
 	.globl gBattleAnimEffects1Data_0856EAA0
 gBattleAnimEffects1Data_0856EAA0:
-	.globl gUnknown_856EAA0
-gUnknown_856EAA0: @ 0x0856EAA0
+	.globl gBattleAnimSpriteTemplate_MoonlightMoon
+gBattleAnimSpriteTemplate_MoonlightMoon: @ 0x0856EAA0
 	@ analyzed canonical ROM range 0x0856EAA0-0x0856EACF
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x27D2, 0x27D2, 0xD148, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000
@@ -1639,8 +1639,8 @@ gUnknown_856EAA0: @ 0x0856EAA0
 	@ pret/pokeemerald-jp direct xref for 0x0856EAD0: battle_anim_effects_1.s: sub_08102EF8
 	.globl gBattleAnimEffects1Data_0856EAD0
 gBattleAnimEffects1Data_0856EAD0:
-	.globl gUnknown_856EAD0
-gUnknown_856EAD0: @ 0x0856EAD0
+	.globl gBattleAnimSpriteTemplate_MoonlightSparkle
+gBattleAnimSpriteTemplate_MoonlightSparkle: @ 0x0856EAD0
 	@ analyzed canonical ROM range 0x0856EAD0-0x0856EC03
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x27D3, 0x27D3, 0xD018, 0x084F, 0xEACC, 0x0856, 0x0000, 0x0000
@@ -1689,8 +1689,8 @@ gUnknown_856EC04: @ 0x0856EC04
 	@ pret/pokeemerald-jp direct xref for 0x0856ECF8: battle_anim_effects_3.s: sub_0815AF90
 	.globl gBattleAnimEffects3Data_0856ECF8
 gBattleAnimEffects3Data_0856ECF8:
-	.globl gUnknown_856ECF8
-gUnknown_856ECF8: @ 0x0856ECF8
+	.globl gBattleAnimSpriteTemplate_FingerWag
+gBattleAnimSpriteTemplate_FingerWag: @ 0x0856ECF8
 	@ analyzed canonical ROM range 0x0856ECF8-0x0856EF93
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x27E1, 0x27E1, 0xD020, 0x084F, 0xECE8, 0x0856, 0x0000, 0x0000
