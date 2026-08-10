@@ -233,6 +233,8 @@ gUnknown_8560CAC: @ 0x08560CAC
 	.4byte gText_Rom_24B45C
 	.globl gUnknown_8560CF4
 gUnknown_8560CF4: @ 0x08560CF4
+	@ confirmed contiguous ROM pointer table: 32 entries from this address
+sPointerTable_08560CF4:
 	@ analyzed canonical ROM range 0x08560CF4-0x08560D73
 sAnalyzedData_08560CF4: @ 0x08560CF4
 	@ pointer/nullable table

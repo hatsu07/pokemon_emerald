@@ -1539,6 +1539,8 @@ sAnalyzedData_084FE3C0: @ 0x084FE3C0
 	.2byte 0x1000, 0x08D9, 0x282F, 0x0000, 0xBFA4, 0x08C1, 0x2830, 0x0000
 	.globl gUnknown_84FE460
 gUnknown_84FE460: @ 0x084FE460
+	@ confirmed contiguous ROM pointer table: 81 entries from this address
+sPointerTable_084FE460:
 	@ analyzed canonical ROM range 0x084FE460-0x084FE5A3
 sAnalyzedData_084FE460: @ 0x084FE460
 	@ pointer/nullable table

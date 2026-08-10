@@ -305,6 +305,8 @@ sAnalyzedData_085C7A34: @ 0x085C7A34
 	.byte 0x7B, 0x5F, 0xDE, 0x5B, 0x9D, 0x5B, 0x5A, 0x4F, 0x9C, 0x47, 0xFF, 0x3F, 0xBD, 0x37, 0x3F, 0x57
 	.globl gUnknown_85C7A74
 gUnknown_85C7A74: @ 0x085C7A74
+	@ confirmed GBA LZ77 stream: compressed=0x73B, decompressed=0x1000
+sLz77Block_085C7A74:
 	@ analyzed canonical ROM range 0x085C7A74-0x085C81AF
 sAnalyzedGfx_085C7A74: @ 0x085C7A74
 	.incbin "build/graphics/analyzed/gunknown_85c7a74_085c7a74.4bpp.lz"
@@ -313,6 +315,8 @@ sAnalyzedGfx_085C7A74: @ 0x085C7A74
 	.endif
 	.globl gUnknown_85C81B0
 gUnknown_85C81B0: @ 0x085C81B0
+	@ confirmed GBA LZ77 stream: compressed=0x9F7, decompressed=0x1A00
+sLz77Block_085C81B0:
 	@ analyzed canonical ROM range 0x085C81B0-0x085C8BA7
 sAnalyzedGfx_085C81B0: @ 0x085C81B0
 	.incbin "build/graphics/analyzed/gunknown_85c81b0_085c81b0.4bpp.lz"

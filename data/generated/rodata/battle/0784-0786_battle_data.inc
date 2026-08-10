@@ -169,6 +169,8 @@ sAnalyzedData_0854BA7C: @ 0x0854BA7C
 	.byte 0x44, 0x44, 0x55, 0x77, 0x55, 0x55, 0x75, 0x77, 0x77, 0x77, 0x77, 0x77, 0x77, 0x77, 0x77, 0x07
 	.globl gUnknown_854BBFC
 gUnknown_854BBFC: @ 0x0854BBFC
+	@ confirmed GBA LZ77 stream: compressed=0x95, decompressed=0x100
+sLz77Block_0854BBFC:
 	@ analyzed canonical ROM range 0x0854BBFC-0x0854BC93
 sAnalyzedGfx_0854BBFC: @ 0x0854BBFC
 	.incbin "build/graphics/analyzed/gunknown_854bbfc_0854bbfc.4bpp.lz"
@@ -177,6 +179,8 @@ sAnalyzedGfx_0854BBFC: @ 0x0854BBFC
 	.endif
 	.globl gUnknown_854BC94
 gUnknown_854BC94: @ 0x0854BC94
+	@ confirmed GBA LZ77 stream: compressed=0x10C, decompressed=0x800
+sLz77Block_0854BC94:
 	@ analyzed canonical ROM range 0x0854BC94-0x0854BDBF
 sAnalyzedData_0854BC94: @ 0x0854BC94
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -201,6 +205,8 @@ sAnalyzedData_0854BC94: @ 0x0854BC94
 	.byte 0xB7, 0x33, 0x74, 0x27, 0x94, 0x27, 0x96, 0x3B, 0x32, 0x1F, 0x52, 0x56
 	.globl gUnknown_854BDC0
 gUnknown_854BDC0: @ 0x0854BDC0
+	@ confirmed GBA LZ77 stream: compressed=0xFB, decompressed=0x500
+sLz77Block_0854BDC0:
 	@ analyzed canonical ROM range 0x0854BDC0-0x0854BEBB
 sAnalyzedGfx_0854BDC0: @ 0x0854BDC0
 	.incbin "build/graphics/analyzed/gunknown_854bdc0_0854bdc0.4bpp.lz"
@@ -253,6 +259,8 @@ sAnalyzedData_0854BF7C: @ 0x0854BF7C
 	.byte 0xDC, 0x7F, 0xBB, 0x7B, 0xBA, 0x7B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.globl gUnknown_854BF9C
 gUnknown_854BF9C: @ 0x0854BF9C
+	@ confirmed GBA LZ77 stream: compressed=0x6C0, decompressed=0x1200
+sLz77Block_0854BF9C:
 	@ analyzed canonical ROM range 0x0854BF9C-0x0854C65B
 sAnalyzedGfx_0854BF9C: @ 0x0854BF9C
 	.incbin "build/graphics/analyzed/gunknown_854bf9c_0854bf9c.4bpp.lz"
@@ -261,6 +269,8 @@ sAnalyzedGfx_0854BF9C: @ 0x0854BF9C
 	.endif
 	.globl gUnknown_854C65C
 gUnknown_854C65C: @ 0x0854C65C
+	@ confirmed GBA LZ77 stream: compressed=0xAF, decompressed=0x210
+sLz77Block_0854C65C:
 	@ analyzed canonical ROM range 0x0854C65C-0x0854C70B
 sAnalyzedData_0854C65C: @ 0x0854C65C
 	@ structured u8 payload; no safe higher-level semantic type was provable

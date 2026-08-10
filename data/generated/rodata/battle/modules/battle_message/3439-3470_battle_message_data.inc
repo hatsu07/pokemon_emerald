@@ -54,6 +54,8 @@ gText_Rom_5AB0C8: @ 0x085AB0C8
 	.endif
 	.globl gUnknown_85AB0D0
 gUnknown_85AB0D0: @ 0x085AB0D0
+	@ confirmed contiguous ROM pointer table: 5 entries from this address
+sPointerTable_085AB0D0:
 	@ analyzed canonical ROM range 0x085AB0D0-0x085AB0E8
 sAnalyzedData_085AB0D0: @ 0x085AB0D0
 	@ structured u8 payload; no safe higher-level semantic type was provable

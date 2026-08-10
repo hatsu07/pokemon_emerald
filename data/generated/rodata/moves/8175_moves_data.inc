@@ -15,6 +15,8 @@ sAnalyzedData_08DBA7C0: @ 0x08DBA7C0
 	.byte 0xC5, 0x2C, 0x31, 0x7B, 0xAC, 0x76, 0xFF, 0x4B, 0x5D, 0x2B, 0xBA, 0x0A, 0xB6, 0x01, 0x11, 0x01
 	.globl gUnknown_8DBA860
 gUnknown_8DBA860: @ 0x08DBA860
+	@ confirmed GBA LZ77 stream: compressed=0x19D6, decompressed=0x4000
+sLz77Block_08DBA860:
 	@ analyzed canonical ROM range 0x08DBA860-0x08DBC58F
 sAnalyzedData_08DBA860: @ 0x08DBA860
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -487,6 +489,8 @@ sAnalyzedData_08DBA860: @ 0x08DBA860
 	.byte 0x33, 0x40, 0x1A, 0xE0, 0x01, 0xF8, 0x90, 0x2F, 0xF0, 0x1D, 0xC0, 0x2B, 0xF0, 0x4F, 0xA0, 0x01
 	.globl gUnknown_8DBC590
 gUnknown_8DBC590: @ 0x08DBC590
+	@ confirmed GBA LZ77 stream: compressed=0x72C, decompressed=0x2000
+sLz77Block_08DBC590:
 	@ analyzed canonical ROM range 0x08DBC590-0x08DBCCBB
 sAnalyzedGfx_08DBC590: @ 0x08DBC590
 	.incbin "build/graphics/analyzed/gunknown_8dbc590_08dbc590.4bpp.lz"

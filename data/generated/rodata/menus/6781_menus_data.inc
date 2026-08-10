@@ -176,6 +176,8 @@ gUnknown_85E13AC: @ 0x085E13AC
 	.4byte gText_Rom_5CA195
 	.globl gUnknown_85E1418
 gUnknown_85E1418: @ 0x085E1418
+	@ confirmed contiguous ROM pointer table: 13 entries from this address
+sPointerTable_085E1418:
 	@ analyzed canonical ROM range 0x085E1418-0x085E14BF
 sAnalyzedData_085E1418: @ 0x085E1418
 	@ structured u16 table (semantic role inferred only to scalar width)
@@ -192,6 +194,8 @@ sAnalyzedData_085E1418: @ 0x085E1418
 	.2byte 0x0094, 0x00F9, 0x007F, 0x0123
 	.globl gUnknown_85E14C0
 gUnknown_85E14C0: @ 0x085E14C0
+	@ confirmed contiguous ROM pointer table: 66 entries from this address
+sPointerTable_085E14C0:
 	@ analyzed canonical ROM range 0x085E14C0-0x085E15EF
 sAnalyzedData_085E14C0: @ 0x085E14C0
 	@ pointer/nullable table
@@ -336,6 +340,8 @@ gUnknown_85E1654: @ 0x085E1654
 	.4byte TYPE_ELECTRIC
 	.globl gUnknown_85E16C4
 gUnknown_85E16C4: @ 0x085E16C4
+	@ confirmed contiguous ROM pointer table: 9 entries from this address
+sPointerTable_085E16C4:
 	@ analyzed canonical ROM range 0x085E16C4-0x085E1767
 sAnalyzedData_085E16C4: @ 0x085E16C4
 	@ structured u8 payload; no safe higher-level semantic type was provable

@@ -2482,9 +2482,9 @@ _0808DFF0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808DFF8: .4byte 0x084E4D5C
-_0808DFFC: .4byte 0x084E4C04
-_0808E000: .4byte 0x084E4CB0
+_0808DFF8: .4byte gBerryTreeObjectEventGraphicsIdTablePointers
+_0808DFFC: .4byte gBerryTreePicTablePointers
+_0808E000: .4byte gBerryTreePaletteSlotTablePointers
 	thumb_func_end get_berry_tree_graphics
 
 	thumb_func_start GetEventObjectGraphicsInfo
@@ -2525,7 +2525,7 @@ _0808E042:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808E048: .4byte 0x084DDA74
+_0808E048: .4byte gObjectEventGraphicsInfoPointers
 	thumb_func_end GetEventObjectGraphicsInfo
 
 	thumb_func_start SetEventObjectDynamicGraphicsId

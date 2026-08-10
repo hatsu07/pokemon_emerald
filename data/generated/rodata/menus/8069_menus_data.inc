@@ -1,5 +1,7 @@
 	.globl gUnknown_85FD7EC
 gUnknown_85FD7EC: @ 0x085FD7EC
+	@ confirmed contiguous ROM pointer table: 14 entries from this address
+sPointerTable_085FD7EC:
 	@ analyzed canonical ROM range 0x085FD7EC-0x08625813
 sAnalyzedData_085FD7EC: @ 0x085FD7EC
 	@ structured u16 table (semantic role inferred only to scalar width)

@@ -10,6 +10,8 @@ sAnalyzedData_085570CC: @ 0x085570CC
 	.2byte 0xFFFE, 0x0000
 	.globl gUnknown_8557110
 gUnknown_8557110: @ 0x08557110
+	@ confirmed contiguous ROM pointer table: 5 entries from this address
+sPointerTable_08557110:
 	@ analyzed canonical ROM range 0x08557110-0x08557143
 sAnalyzedData_08557110: @ 0x08557110
 	@ pointer/nullable table

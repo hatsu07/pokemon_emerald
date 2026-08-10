@@ -533,6 +533,8 @@ sPokedexUi8543De8:
 	.endif
 	.globl gUnknown_8543F84
 gUnknown_8543F84: @ 0x08543F84
+	@ confirmed GBA LZ77 stream: compressed=0x188, decompressed=0x500
+sLz77Block_08543F84:
 	@ analyzed canonical ROM range 0x08543F84-0x0854410B
 sAnalyzedGfx_08543F84: @ 0x08543F84
 	.incbin "build/graphics/analyzed/gunknown_8543f84_08543f84.4bpp.lz"
@@ -619,6 +621,8 @@ gUnknown_8544228: @ 0x08544228
 	.4byte NULL
 	.globl gUnknown_8544260
 gUnknown_8544260: @ 0x08544260
+	@ confirmed contiguous ROM pointer table: 20 entries from this address
+sPointerTable_08544260:
 	@ analyzed canonical ROM range 0x08544260-0x085442B7
 sAnalyzedData_08544260: @ 0x08544260
 	@ pointer/nullable table
@@ -646,6 +650,8 @@ sAnalyzedData_08544260: @ 0x08544260
 	.4byte 0 @ +0x54
 	.globl gUnknown_85442B8
 gUnknown_85442B8: @ 0x085442B8
+	@ confirmed contiguous ROM pointer table: 22 entries from this address
+sPointerTable_085442B8:
 	@ analyzed canonical ROM range 0x085442B8-0x08544317
 sAnalyzedData_085442B8: @ 0x085442B8
 	@ pointer/nullable table
@@ -675,6 +681,8 @@ sAnalyzedData_085442B8: @ 0x085442B8
 	.4byte 0 @ +0x5C
 	.globl gUnknown_8544318
 gUnknown_8544318: @ 0x08544318
+	@ confirmed contiguous ROM pointer table: 36 entries from this address
+sPointerTable_08544318:
 	@ analyzed canonical ROM range 0x08544318-0x085443AF
 sAnalyzedData_08544318: @ 0x08544318
 	@ pointer/nullable table

@@ -899,6 +899,8 @@ sAnalyzedData_08564218: @ 0x08564218
 	.2byte 0x41E0, 0x0856, 0x0006, 0x0000
 	.globl gUnknown_85645A0
 gUnknown_85645A0: @ 0x085645A0
+	@ confirmed contiguous ROM pointer table: 30 entries from this address
+sPointerTable_085645A0:
 	@ analyzed canonical ROM range 0x085645A0-0x08564617
 sAnalyzedData_085645A0: @ 0x085645A0
 	@ pointer/nullable table
@@ -1195,6 +1197,8 @@ sAnalyzedData_08565258: @ 0x08565258
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x7C, 0x6B, 0x00, 0x00, 0x7C, 0x6B, 0x00, 0x00
 	.globl gUnknown_8565318
 gUnknown_8565318: @ 0x08565318
+	@ confirmed GBA LZ77 stream: compressed=0x1D5, decompressed=0x600
+sLz77Block_08565318:
 	@ analyzed canonical ROM range 0x08565318-0x08565523
 sAnalyzedData_08565318: @ 0x08565318
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -1233,6 +1237,8 @@ sAnalyzedData_08565318: @ 0x08565318
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.globl gUnknown_8565524
 gUnknown_8565524: @ 0x08565524
+	@ confirmed GBA LZ77 stream: compressed=0xD9, decompressed=0x500
+sLz77Block_08565524:
 	@ analyzed canonical ROM range 0x08565524-0x085655FF
 sAnalyzedGfx_08565524: @ 0x08565524
 	.incbin "build/graphics/analyzed/gunknown_8565524_08565524.4bpp.lz"
@@ -1241,6 +1247,8 @@ sAnalyzedGfx_08565524: @ 0x08565524
 	.endif
 	.globl gUnknown_8565600
 gUnknown_8565600: @ 0x08565600
+	@ confirmed GBA LZ77 stream: compressed=0xC8, decompressed=0x500
+sLz77Block_08565600:
 	@ analyzed canonical ROM range 0x08565600-0x085656C7
 sAnalyzedGfx_08565600: @ 0x08565600
 	.incbin "build/graphics/analyzed/gunknown_8565600_08565600.4bpp.lz"
@@ -1249,6 +1257,8 @@ sAnalyzedGfx_08565600: @ 0x08565600
 	.endif
 	.globl gUnknown_85656C8
 gUnknown_85656C8: @ 0x085656C8
+	@ confirmed GBA LZ77 stream: compressed=0xC8, decompressed=0x500
+sLz77Block_085656C8:
 	@ analyzed canonical ROM range 0x085656C8-0x08565857
 sAnalyzedData_085656C8: @ 0x085656C8
 	@ structured u8 payload; no safe higher-level semantic type was provable

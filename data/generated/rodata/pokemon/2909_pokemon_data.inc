@@ -295,6 +295,8 @@ sAnalyzedData_085922EC: @ 0x085922EC
 	.byte 0x10, 0x42, 0x52, 0x4A, 0x94, 0x52, 0xD6, 0x5A, 0x18, 0x63, 0x5A, 0x6B, 0x9C, 0x73, 0xFF, 0x7F
 	.globl gUnknown_85922FC
 gUnknown_85922FC: @ 0x085922FC
+	@ confirmed GBA LZ77 stream: compressed=0x1E0, decompressed=0x800
+sLz77Block_085922FC:
 	@ analyzed canonical ROM range 0x085922FC-0x085924DB
 sAnalyzedGfx_085922FC: @ 0x085922FC
 	.incbin "build/graphics/analyzed/gunknown_85922fc_085922fc.4bpp.lz"
@@ -303,6 +305,8 @@ sAnalyzedGfx_085922FC: @ 0x085922FC
 	.endif
 	.globl gUnknown_85924DC
 gUnknown_85924DC: @ 0x085924DC
+	@ confirmed GBA LZ77 stream: compressed=0xB1, decompressed=0x400
+sLz77Block_085924DC:
 	@ analyzed canonical ROM range 0x085924DC-0x0859258F
 sAnalyzedGfx_085924DC: @ 0x085924DC
 	.incbin "build/graphics/analyzed/gunknown_85924dc_085924dc.4bpp.lz"
@@ -701,6 +705,8 @@ sAnalyzedData_08592A8C: @ 0x08592A8C
 	.2byte 0x0002, 0x0300, 0x0000, 0x0000, 0x0000, 0x07D0, 0x0064, 0x0000
 	.globl gUnknown_8592A9C
 gUnknown_8592A9C: @ 0x08592A9C
+	@ confirmed contiguous ROM pointer table: 25 entries from this address
+sPointerTable_08592A9C:
 	@ analyzed canonical ROM range 0x08592A9C-0x08592AFF
 sAnalyzedData_08592A9C: @ 0x08592A9C
 	@ pointer/nullable table

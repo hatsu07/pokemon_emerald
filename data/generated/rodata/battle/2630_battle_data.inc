@@ -1,5 +1,7 @@
 	.globl gUnknown_8579ED8
 gUnknown_8579ED8: @ 0x08579ED8
+	@ confirmed contiguous ROM pointer table: 22 entries from this address
+sPointerTable_08579ED8:
 	@ analyzed canonical ROM range 0x08579ED8-0x08579F2F
 sAnalyzedData_08579ED8: @ 0x08579ED8
 	@ pointer/nullable table

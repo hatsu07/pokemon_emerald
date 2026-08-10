@@ -583,6 +583,8 @@ gUnknown_853718C: @ 0x0853718C
 	.4byte sub_080B867C
 	.globl gUnknown_85371A0
 gUnknown_85371A0: @ 0x085371A0
+	@ confirmed contiguous ROM pointer table: 9 entries from this address
+sPointerTable_085371A0:
 	@ analyzed canonical ROM range 0x085371A0-0x085371F3
 sAnalyzedData_085371A0: @ 0x085371A0
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -618,6 +620,8 @@ sAnalyzedData_08537218: @ 0x08537218
 	.byte 0x04, 0x00, 0x08, 0x00
 	.globl gUnknown_853723C
 gUnknown_853723C: @ 0x0853723C
+	@ confirmed contiguous ROM pointer table: 4 entries from this address
+sPointerTable_0853723C:
 	@ analyzed canonical ROM range 0x0853723C-0x08537297
 sAnalyzedData_0853723C: @ 0x0853723C
 	@ structured u8 payload; no safe higher-level semantic type was provable

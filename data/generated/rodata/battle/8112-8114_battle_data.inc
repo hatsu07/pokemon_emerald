@@ -182,6 +182,8 @@ sAnalyzedData_0890F1E8: @ 0x0890F1E8
 	.byte 0x30, 0x00, 0x00, 0x00
 	.globl gUnknown_890F1EC
 gUnknown_890F1EC: @ 0x0890F1EC
+	@ confirmed contiguous ROM pointer table: 10 entries from this address
+sPointerTable_0890F1EC:
 	@ analyzed canonical ROM range 0x0890F1EC-0x0890F21B
 sAnalyzedData_0890F1EC: @ 0x0890F1EC
 	@ pointer/nullable table

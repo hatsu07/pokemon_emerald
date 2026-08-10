@@ -18,9 +18,9 @@ sCameraObjectSpriteTemplate:
 gUnknown_846FA40: @ 0x0846FA40
 sFieldObjectData_846FA40:
 sFieldObjectCallbackTable_846FA40:
-	.4byte 0x0808E711 @ +0x0
-	.4byte 0x0808E74D @ +0x4
-	.4byte 0x0808E785 @ +0x8
+	.4byte CameraObject_0 @ +0x0
+	.4byte CameraObject_1 @ +0x4
+	.4byte CameraObject_2 @ +0x8
 sFieldObjectTiles_846FA4C:
 	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp"
 	.if (. - sFieldObjectTiles_846FA4C) != 0x1200

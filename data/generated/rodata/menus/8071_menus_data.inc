@@ -1,5 +1,7 @@
 	.globl gUnknown_8627C44
 gUnknown_8627C44: @ 0x08627C44
+	@ confirmed GBA RLE stream: compressed=0x6, decompressed=0x3C
+sRleBlock_08627C44:
 	@ analyzed canonical ROM range 0x08627C44-0x0863C27B
 sAnalyzedData_08627C44: @ 0x08627C44
 	@ structured u16 table (semantic role inferred only to scalar width)

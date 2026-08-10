@@ -815,6 +815,8 @@ sAnalyzedData_085D75E8: @ 0x085D75E8
 	.byte 0xFF, 0x7F, 0xC1, 0x7E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1F, 0x3B, 0x39, 0x6B, 0xB5, 0x5E
 	.globl gUnknown_85D7608
 gUnknown_85D7608: @ 0x085D7608
+	@ confirmed GBA LZ77 stream: compressed=0x3E2, decompressed=0x1000
+sLz77Block_085D7608:
 	@ analyzed canonical ROM range 0x085D7608-0x085D79EB
 sAnalyzedGfx_085D7608: @ 0x085D7608
 	.incbin "build/graphics/analyzed/gunknown_85d7608_085d7608.4bpp.lz"

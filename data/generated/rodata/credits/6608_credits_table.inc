@@ -22,6 +22,8 @@ sAnalyzedData_085D7A1C: @ 0x085D7A1C
 	.2byte 0x1C40, 0x0202, 0x1C54, 0x0202, 0x1C68, 0x0202
 	.globl gUnknown_85D7A28
 gUnknown_85D7A28: @ 0x085D7A28
+	@ confirmed contiguous ROM pointer table: 6 entries from this address
+sPointerTable_085D7A28:
 	@ analyzed canonical ROM range 0x085D7A28-0x085D7A53
 sAnalyzedData_085D7A28: @ 0x085D7A28
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -47,6 +49,8 @@ gUnknown_85D7A84: @ 0x085D7A84
 	.4byte gText_Rom_5CC452
 	.globl gUnknown_85D7AA0
 gUnknown_85D7AA0: @ 0x085D7AA0
+	@ confirmed contiguous ROM pointer table: 4 entries from this address
+sPointerTable_085D7AA0:
 	@ analyzed canonical ROM range 0x085D7AA0-0x085D7AAF
 sAnalyzedData_085D7AA0: @ 0x085D7AA0
 	@ pointer/nullable table

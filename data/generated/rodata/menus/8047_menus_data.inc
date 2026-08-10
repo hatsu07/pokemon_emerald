@@ -20,6 +20,8 @@ sAnalyzedData_085FB994: @ 0x085FB994
 	.2byte 0x0100, 0x0302, 0x0504, 0x0000
 	.globl gUnknown_85FB99C
 gUnknown_85FB99C: @ 0x085FB99C
+	@ confirmed contiguous ROM pointer table: 7 entries from this address
+sPointerTable_085FB99C:
 	@ analyzed canonical ROM range 0x085FB99C-0x085FBA27
 sAnalyzedData_085FB99C: @ 0x085FB99C
 	@ structured u8 payload; no safe higher-level semantic type was provable

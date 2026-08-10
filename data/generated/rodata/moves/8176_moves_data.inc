@@ -1,5 +1,7 @@
 	.globl gUnknown_8DBCCBC
 gUnknown_8DBCCBC: @ 0x08DBCCBC
+	@ confirmed GBA LZ77 stream: compressed=0x10A5, decompressed=0x4000
+sLz77Block_08DBCCBC:
 	@ analyzed canonical ROM range 0x08DBCCBC-0x08FFFFFF
 sAnalyzedData_08DBCCBC: @ 0x08DBCCBC
 	@ structured u16 table (semantic role inferred only to scalar width)

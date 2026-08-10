@@ -155,6 +155,8 @@ sAnalyzedData_085BE992: @ 0x085BE992
 	.2byte 0x3333, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.globl gUnknown_85BEBC0
 gUnknown_85BEBC0: @ 0x085BEBC0
+	@ confirmed GBA LZ77 stream: compressed=0x173, decompressed=0x800
+sLz77Block_085BEBC0:
 	@ analyzed canonical ROM range 0x085BEBC0-0x085BF87F
 sAnalyzedData_085BEBC0: @ 0x085BEBC0
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -392,6 +394,8 @@ sAnalyzedData_085BF8C0: @ 0x085BF8C0
 	.byte 0x78, 0x22, 0x72, 0x00, 0x22, 0x22, 0x07, 0x00, 0x22, 0x77, 0x00, 0x00, 0x77, 0x00, 0x00, 0x00
 	.globl gUnknown_85BF9A0
 gUnknown_85BF9A0: @ 0x085BF9A0
+	@ confirmed GBA LZ77 stream: compressed=0xA9, decompressed=0x500
+sLz77Block_085BF9A0:
 	@ analyzed canonical ROM range 0x085BF9A0-0x085BFA4B
 sAnalyzedGfx_085BF9A0: @ 0x085BF9A0
 	.incbin "build/graphics/analyzed/gunknown_85bf9a0_085bf9a0.4bpp.lz"
@@ -411,6 +415,8 @@ sAnalyzedData_085BFA4C: @ 0x085BFA4C
 	.byte 0x77, 0x29, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x77, 0x7B
 	.globl gUnknown_85BFAAC
 gUnknown_85BFAAC: @ 0x085BFAAC
+	@ confirmed GBA LZ77 stream: compressed=0x781, decompressed=0xFA0
+sLz77Block_085BFAAC:
 	@ analyzed canonical ROM range 0x085BFAAC-0x085C022F
 sAnalyzedGfx_085BFAAC: @ 0x085BFAAC
 	.incbin "build/graphics/analyzed/gunknown_85bfaac_085bfaac.4bpp.lz"
@@ -419,6 +425,8 @@ sAnalyzedGfx_085BFAAC: @ 0x085BFAAC
 	.endif
 	.globl gUnknown_85C0230
 gUnknown_85C0230: @ 0x085C0230
+	@ confirmed GBA LZ77 stream: compressed=0x18F, decompressed=0x500
+sLz77Block_085C0230:
 	@ analyzed canonical ROM range 0x085C0230-0x085C040F
 sAnalyzedData_085C0230: @ 0x085C0230
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -467,6 +475,8 @@ sAnalyzedData_085C0410: @ 0x085C0410
 	.2byte 0x03E0, 0x03E0, 0x03E0, 0x03E0
 	.globl gUnknown_85C0488
 gUnknown_85C0488: @ 0x085C0488
+	@ confirmed GBA LZ77 stream: compressed=0xA2, decompressed=0x500
+sLz77Block_085C0488:
 	@ analyzed canonical ROM range 0x085C0488-0x085C0993
 sAnalyzedData_085C0488: @ 0x085C0488
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -810,6 +820,8 @@ sAnalyzedData_085C0C74: @ 0x085C0C74
 	.byte 0x46, 0x29, 0xAA, 0x35, 0x0D, 0x42, 0x71, 0x4E, 0xD4, 0x5A, 0x38, 0x67, 0x9B, 0x73, 0xFF, 0x7F
 	.globl gUnknown_85C0C94
 gUnknown_85C0C94: @ 0x085C0C94
+	@ confirmed GBA LZ77 stream: compressed=0x263, decompressed=0x4E0
+sLz77Block_085C0C94:
 	@ analyzed canonical ROM range 0x085C0C94-0x085C0EF7
 sAnalyzedGfx_085C0C94: @ 0x085C0C94
 	.incbin "build/graphics/analyzed/gunknown_85c0c94_085c0c94.4bpp.lz"
@@ -818,6 +830,8 @@ sAnalyzedGfx_085C0C94: @ 0x085C0C94
 	.endif
 	.globl gUnknown_85C0EF8
 gUnknown_85C0EF8: @ 0x085C0EF8
+	@ confirmed GBA LZ77 stream: compressed=0x14A, decompressed=0x800
+sLz77Block_085C0EF8:
 	@ analyzed canonical ROM range 0x085C0EF8-0x085C1677
 sAnalyzedData_085C0EF8: @ 0x085C0EF8
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -980,6 +994,8 @@ sAnalyzedData_085C1678: @ 0x085C1678
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.globl gUnknown_85C1878
 gUnknown_85C1878: @ 0x085C1878
+	@ confirmed GBA LZ77 stream: compressed=0x3B2, decompressed=0x800
+sLz77Block_085C1878:
 	@ analyzed canonical ROM range 0x085C1878-0x085C1C2B
 sAnalyzedGfx_085C1878: @ 0x085C1878
 	.incbin "build/graphics/analyzed/gunknown_85c1878_085c1878.4bpp.lz"
@@ -988,6 +1004,8 @@ sAnalyzedGfx_085C1878: @ 0x085C1878
 	.endif
 	.globl gUnknown_85C1C2C
 gUnknown_85C1C2C: @ 0x085C1C2C
+	@ confirmed GBA LZ77 stream: compressed=0x332, decompressed=0x800
+sLz77Block_085C1C2C:
 	@ analyzed canonical ROM range 0x085C1C2C-0x085C1F5F
 sAnalyzedGfx_085C1C2C: @ 0x085C1C2C
 	.incbin "build/graphics/analyzed/gunknown_85c1c2c_085c1c2c.4bpp.lz"
@@ -996,6 +1014,8 @@ sAnalyzedGfx_085C1C2C: @ 0x085C1C2C
 	.endif
 	.globl gUnknown_85C1F60
 gUnknown_85C1F60: @ 0x085C1F60
+	@ confirmed GBA LZ77 stream: compressed=0x2ED, decompressed=0x800
+sLz77Block_085C1F60:
 	@ analyzed canonical ROM range 0x085C1F60-0x085C224F
 sAnalyzedGfx_085C1F60: @ 0x085C1F60
 	.incbin "build/graphics/analyzed/gunknown_85c1f60_085c1f60.4bpp.lz"
@@ -1004,6 +1024,8 @@ sAnalyzedGfx_085C1F60: @ 0x085C1F60
 	.endif
 	.globl gUnknown_85C2250
 gUnknown_85C2250: @ 0x085C2250
+	@ confirmed GBA LZ77 stream: compressed=0x215, decompressed=0x800
+sLz77Block_085C2250:
 	@ analyzed canonical ROM range 0x085C2250-0x085C2467
 sAnalyzedGfx_085C2250: @ 0x085C2250
 	.incbin "build/graphics/analyzed/gunknown_85c2250_085c2250.4bpp.lz"
@@ -1012,6 +1034,8 @@ sAnalyzedGfx_085C2250: @ 0x085C2250
 	.endif
 	.globl gUnknown_85C2468
 gUnknown_85C2468: @ 0x085C2468
+	@ confirmed GBA LZ77 stream: compressed=0x216E, decompressed=0x8000
+sLz77Block_085C2468:
 	@ analyzed canonical ROM range 0x085C2468-0x085C45D7
 sAnalyzedGfx_085C2468: @ 0x085C2468
 	.incbin "build/graphics/analyzed/gunknown_85c2468_085c2468.4bpp.lz"
@@ -1057,6 +1081,8 @@ sAnalyzedData_085C45D8: @ 0x085C45D8
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.globl gUnknown_85C47D8
 gUnknown_85C47D8: @ 0x085C47D8
+	@ confirmed GBA LZ77 stream: compressed=0x12F, decompressed=0x400
+sLz77Block_085C47D8:
 	@ analyzed canonical ROM range 0x085C47D8-0x085C4907
 sAnalyzedGfx_085C47D8: @ 0x085C47D8
 	.incbin "build/graphics/analyzed/gunknown_85c47d8_085c47d8.4bpp.lz"
@@ -1065,6 +1091,8 @@ sAnalyzedGfx_085C47D8: @ 0x085C47D8
 	.endif
 	.globl gUnknown_85C4908
 gUnknown_85C4908: @ 0x085C4908
+	@ confirmed GBA LZ77 stream: compressed=0xB54, decompressed=0x4000
+sLz77Block_085C4908:
 	@ analyzed canonical ROM range 0x085C4908-0x085C5B27
 sAnalyzedData_085C4908: @ 0x085C4908
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -1509,6 +1537,8 @@ sAnalyzedData_085C5E18: @ 0x085C5E18
 	.2byte 0x0180, 0x0010, 0x0140, 0x0010, 0x0100, 0x0010, 0xFFFF, 0x0000
 	.globl gUnknown_85C5E78
 gUnknown_85C5E78: @ 0x085C5E78
+	@ confirmed contiguous ROM pointer table: 4 entries from this address
+sPointerTable_085C5E78:
 	@ analyzed canonical ROM range 0x085C5E78-0x085C5F47
 sAnalyzedData_085C5E78: @ 0x085C5E78
 	@ structured u8 payload; no safe higher-level semantic type was provable

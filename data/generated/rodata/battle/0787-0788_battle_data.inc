@@ -1,5 +1,7 @@
 	.globl gUnknown_8551868
 gUnknown_8551868: @ 0x08551868
+	@ confirmed contiguous ROM pointer table: 48 entries from this address
+sPointerTable_08551868:
 	@ analyzed canonical ROM range 0x08551868-0x08555A3F
 sAnalyzedData_08551868: @ 0x08551868
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -1059,6 +1061,8 @@ sAnalyzedData_08551868: @ 0x08551868
 	.byte 0x30, 0x00, 0x0B, 0x00, 0x34, 0x70, 0x01, 0x00
 	.globl gUnknown_8555A40
 gUnknown_8555A40: @ 0x08555A40
+	@ confirmed contiguous ROM pointer table: 78 entries from this address
+sPointerTable_08555A40:
 	@ analyzed canonical ROM range 0x08555A40-0x08555AFF
 sAnalyzedData_08555A40: @ 0x08555A40
 	@ pointer/nullable table

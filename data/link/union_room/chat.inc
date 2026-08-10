@@ -38,6 +38,8 @@ sAnalyzedData_082C5091: @ 0x082C5091
 	.byte 0xC6, 0xC7, 0xC8, 0xC9, 0xCA, 0xCB, 0xCC, 0xCD, 0xCE, 0xCF, 0xD0, 0xD1, 0xD2, 0xD3, 0xD4
 	.globl gUnknown_82C5180
 gUnknown_82C5180: @ 0x082C5180
+	@ confirmed contiguous ROM pointer table: 28 entries from this address
+sPointerTable_082C5180:
 	@ analyzed canonical ROM range 0x082C5180-0x082C521F
 sAnalyzedData_082C5180: @ 0x082C5180
 	@ pointer/nullable table
@@ -90,6 +92,8 @@ sAnalyzedData_082C5220: @ 0x082C5220
 	.byte 0x90, 0x6A, 0xBD, 0x2F, 0x08, 0x21, 0xCE, 0x39, 0xB5, 0x56, 0x9C, 0x7F, 0x00, 0x00, 0xFF, 0x7F
 	.globl gUnknown_82C5240
 gUnknown_82C5240: @ 0x082C5240
+	@ confirmed GBA LZ77 stream: compressed=0x5A, decompressed=0x120
+sLz77Block_082C5240:
 	@ analyzed canonical ROM range 0x082C5240-0x082C529B
 sAnalyzedGfx_082C5240: @ 0x082C5240
 	.incbin "build/graphics/analyzed/gunknown_82c5240_082c5240.4bpp.lz"
@@ -98,6 +102,8 @@ sAnalyzedGfx_082C5240: @ 0x082C5240
 	.endif
 	.globl gUnknown_82C529C
 gUnknown_82C529C: @ 0x082C529C
+	@ confirmed GBA LZ77 stream: compressed=0xAC, decompressed=0x500
+sLz77Block_082C529C:
 	@ analyzed canonical ROM range 0x082C529C-0x082C5347
 sAnalyzedGfx_082C529C: @ 0x082C529C
 	.incbin "build/graphics/analyzed/gunknown_82c529c_082c529c.4bpp.lz"
@@ -120,6 +126,8 @@ sAnalyzedData_082C5368: @ 0x082C5368
 	.byte 0x5F, 0x4A, 0x90, 0x6A, 0xBD, 0x2F, 0x9C, 0x7F, 0xB5, 0x56, 0xCE, 0x39, 0xFF, 0x7F, 0x08, 0x21
 	.globl gUnknown_82C5388
 gUnknown_82C5388: @ 0x082C5388
+	@ confirmed GBA LZ77 stream: compressed=0x234, decompressed=0x4C0
+sLz77Block_082C5388:
 	@ analyzed canonical ROM range 0x082C5388-0x082C55BB
 sAnalyzedGfx_082C5388: @ 0x082C5388
 	.incbin "build/graphics/analyzed/gunknown_82c5388_082c5388.4bpp.lz"
@@ -128,6 +136,8 @@ sAnalyzedGfx_082C5388: @ 0x082C5388
 	.endif
 	.globl gUnknown_82C55BC
 gUnknown_82C55BC: @ 0x082C55BC
+	@ confirmed GBA LZ77 stream: compressed=0xF8, decompressed=0x500
+sLz77Block_082C55BC:
 	@ analyzed canonical ROM range 0x082C55BC-0x082C56B3
 sAnalyzedGfx_082C55BC: @ 0x082C55BC
 	.incbin "build/graphics/analyzed/gunknown_82c55bc_082c55bc.4bpp.lz"

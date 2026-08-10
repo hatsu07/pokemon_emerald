@@ -1381,6 +1381,8 @@ sAnalyzedData_0852AD40: @ 0x0852AD40
 	.2byte 0x014F, 0x014F, 0x014F, 0x014F, 0x014F, 0x0000, 0x0008, 0x0000
 	.globl gUnknown_852B220
 gUnknown_852B220: @ 0x0852B220
+	@ confirmed contiguous ROM pointer table: 4 entries from this address
+sPointerTable_0852B220:
 	@ analyzed canonical ROM range 0x0852B220-0x0852B22F
 sAnalyzedData_0852B220: @ 0x0852B220
 	@ pointer/nullable table

@@ -1,5 +1,7 @@
 	.globl gUnknown_8D8DA9C
 gUnknown_8D8DA9C: @ 0x08D8DA9C
+	@ confirmed GBA LZ77 stream: compressed=0x26, decompressed=0x20
+sLz77Block_08D8DA9C:
 	@ analyzed canonical ROM range 0x08D8DA9C-0x08D8E97B
 sAnalyzedData_08D8DA9C: @ 0x08D8DA9C
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -544,6 +546,8 @@ sAnalyzedData_08D8EBD8: @ 0x08D8EBD8
 	.byte 0x25, 0x27, 0x1D, 0x00, 0x00, 0x70, 0x01, 0x00
 	.globl gUnknown_8D8FB50
 gUnknown_8D8FB50: @ 0x08D8FB50
+	@ confirmed GBA LZ77 stream: compressed=0x24, decompressed=0x20
+sLz77Block_08D8FB50:
 	@ analyzed canonical ROM range 0x08D8FB50-0x08D8FC27
 sAnalyzedData_08D8FB50: @ 0x08D8FB50
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -567,6 +571,8 @@ gMonIcon_Egg: @ 0x08D8FC28 [412]
 	.incbin "build/graphics/pokemon/egg/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D90028-0x08D9154B
 sAnalyzedData_08D90028: @ 0x08D90028
+	@ confirmed GBA LZ77 stream: compressed=0xCC6, decompressed=0x2000
+sLz77Block_08D90028:
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0x00, 0x20, 0x00, 0x2A, 0xCC, 0xCC, 0x00, 0x01, 0xCB, 0x20, 0x05, 0xCD, 0x30, 0x04, 0xCD
 	.byte 0x98, 0x00, 0x07, 0xDC, 0xDC, 0x00, 0x06, 0x10, 0x0F, 0xDC, 0xCD, 0xCD, 0x03, 0xDD, 0xDD, 0xDC

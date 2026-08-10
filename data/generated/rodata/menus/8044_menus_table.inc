@@ -1,5 +1,7 @@
 	.globl gUnknown_85FB90C
 gUnknown_85FB90C: @ 0x085FB90C
+	@ confirmed contiguous ROM pointer table: 4 entries from this address
+sPointerTable_085FB90C:
 	@ analyzed canonical ROM range 0x085FB90C-0x085FB91B
 sAnalyzedData_085FB90C: @ 0x085FB90C
 	@ pointer/nullable table

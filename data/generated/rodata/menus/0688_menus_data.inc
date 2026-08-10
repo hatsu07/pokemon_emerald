@@ -22,6 +22,8 @@ sAnalyzedData_084E8C24: @ 0x084E8C24
 	.2byte 0x0100, 0x0C01, 0x0F04, 0x0008
 	.globl gUnknown_84E8C2C
 gUnknown_84E8C2C: @ 0x084E8C2C
+	@ confirmed contiguous ROM pointer table: 26 entries from this address
+sPointerTable_084E8C2C:
 	@ analyzed canonical ROM range 0x084E8C2C-0x084E8C93
 sAnalyzedData_084E8C2C: @ 0x084E8C2C
 	@ pointer/nullable table

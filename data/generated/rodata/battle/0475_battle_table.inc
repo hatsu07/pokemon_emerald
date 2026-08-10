@@ -1,34 +1,34 @@
 	.globl gUnknown_82EC600
 gUnknown_82EC600: @ 0x082EC600
 sTurnActionsFuncsTable:
-	.4byte 0x0803DCF9 @ [B_ACTION_USE_MOVE]
-	.4byte 0x0803E54D @ [B_ACTION_USE_ITEM]
-	.4byte 0x0803E4A9 @ [B_ACTION_SWITCH]
-	.4byte 0x0803EA89 @ [B_ACTION_RUN]
-	.4byte 0x0803EBE9 @ [B_ACTION_SAFARI_WATCH_CAREFULLY]
-	.4byte 0x0803EC31 @ [B_ACTION_SAFARI_BALL]
-	.4byte 0x0803EC91 @ [B_ACTION_SAFARI_POKEBLOCK]
-	.4byte 0x0803ED61 @ [B_ACTION_SAFARI_GO_NEAR]
-	.4byte 0x0803EE31 @ [B_ACTION_SAFARI_RUN]
-	.4byte 0x0803EE6D @ [B_ACTION_WALLY_THROW]
-	.4byte 0x080454F5 @ [B_ACTION_EXEC_SCRIPT]
-	.4byte 0x0803EEE5 @ [B_ACTION_TRY_FINISH]
-	.4byte 0x0803EF41 @ [B_ACTION_FINISHED]
-	.4byte 0x0803EF0D @ [B_ACTION_NOTHING_FAINTED]
+	.4byte HandleAction_UseMove @ [B_ACTION_USE_MOVE]
+	.4byte HandleAction_UseItem @ [B_ACTION_USE_ITEM]
+	.4byte HandleAction_Switch @ [B_ACTION_SWITCH]
+	.4byte HandleAction_Run @ [B_ACTION_RUN]
+	.4byte HandleAction_WatchesCarefully @ [B_ACTION_SAFARI_WATCH_CAREFULLY]
+	.4byte HandleAction_SafariZoneBallThrow @ [B_ACTION_SAFARI_BALL]
+	.4byte HandleAction_ThrowPokeblock @ [B_ACTION_SAFARI_POKEBLOCK]
+	.4byte HandleAction_GoNear @ [B_ACTION_SAFARI_GO_NEAR]
+	.4byte HandleAction_SafariZoneRun @ [B_ACTION_SAFARI_RUN]
+	.4byte HandleAction_WallyBallThrow @ [B_ACTION_WALLY_THROW]
+	.4byte sub_080454F4 @ [B_ACTION_EXEC_SCRIPT]
+	.4byte sub_0803EEE4 @ [B_ACTION_TRY_FINISH]
+	.4byte HandleAction_ActionFinished @ [B_ACTION_FINISHED]
+	.4byte HandleAction_NothingIsFainted @ [B_ACTION_NOTHING_FAINTED]
 	.globl gUnknown_82EC638
 gUnknown_82EC638: @ 0x082EC638
 sEndTurnFuncsTable:
-	.4byte 0x0803B549 @ [0]
-	.4byte 0x0803D505 @ [B_OUTCOME_WON]
-	.4byte 0x0803D701 @ [B_OUTCOME_LOST]
-	.4byte 0x0803D701 @ [B_OUTCOME_DREW]
-	.4byte 0x0803D7E1 @ [B_OUTCOME_RAN]
-	.4byte 0x0803D919 @ [B_OUTCOME_PLAYER_TELEPORTED]
-	.4byte 0x0803D8C5 @ [B_OUTCOME_MON_FLED]
-	.4byte 0x0803D919 @ [B_OUTCOME_CAUGHT]
-	.4byte 0x0803D919 @ [B_OUTCOME_NO_SAFARI_BALLS]
-	.4byte 0x0803D919 @ [B_OUTCOME_FORFEITED]
-	.4byte 0x0803D919 @ [B_OUTCOME_MON_TELEPORTED]
+	.4byte HandleEndTurn_ContinueBattle @ [0]
+	.4byte HandleEndTurn_BattleWon @ [B_OUTCOME_WON]
+	.4byte HandleEndTurn_BattleLost @ [B_OUTCOME_LOST]
+	.4byte HandleEndTurn_BattleLost @ [B_OUTCOME_DREW]
+	.4byte HandleEndTurn_RanFromBattle @ [B_OUTCOME_RAN]
+	.4byte HandleEndTurn_FinishBattle @ [B_OUTCOME_PLAYER_TELEPORTED]
+	.4byte HandleEndTurn_MonFled @ [B_OUTCOME_MON_FLED]
+	.4byte HandleEndTurn_FinishBattle @ [B_OUTCOME_CAUGHT]
+	.4byte HandleEndTurn_FinishBattle @ [B_OUTCOME_NO_SAFARI_BALLS]
+	.4byte HandleEndTurn_FinishBattle @ [B_OUTCOME_FORFEITED]
+	.4byte HandleEndTurn_FinishBattle @ [B_OUTCOME_MON_TELEPORTED]
 	.globl gUnknown_82EC664
 gUnknown_82EC664: @ 0x082EC664
 sPkblToEscapeFactor:
@@ -349,6 +349,8 @@ sAnalyzedData_082ECAB8: @ 0x082ECAB8
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.globl gUnknown_82ECBA8
 gUnknown_82ECBA8: @ 0x082ECBA8
+	@ confirmed contiguous ROM pointer table: 39 entries from this address
+sPointerTable_082ECBA8:
 	@ analyzed canonical ROM range 0x082ECBA8-0x082ECC4B
 sAnalyzedData_082ECBA8: @ 0x082ECBA8
 	@ pointer/nullable table
@@ -402,6 +404,8 @@ sAnalyzedData_082ECC4C: @ 0x082ECC4C
 	.byte 0x2B, 0x5A, 0x0F, 0x67, 0x00, 0x00, 0x00, 0x00, 0x0F, 0x7F, 0x00, 0x44, 0x1F, 0x42, 0x14, 0x00
 	.globl gUnknown_82ECC6C
 gUnknown_82ECC6C: @ 0x082ECC6C
+	@ confirmed GBA LZ77 stream: compressed=0xC7, decompressed=0x480
+sLz77Block_082ECC6C:
 	@ analyzed canonical ROM range 0x082ECC6C-0x082ECD43
 sAnalyzedData_082ECC6C: @ 0x082ECC6C
 	@ structured u8 payload; no safe higher-level semantic type was provable

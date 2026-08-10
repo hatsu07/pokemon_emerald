@@ -20,6 +20,8 @@ gUnknown_852B3E8: @ 0x0852B3E8
 	.4byte WaitRevealHiddenTrainer
 	.globl gUnknown_852B418
 gUnknown_852B418: @ 0x0852B418
+	@ confirmed contiguous ROM pointer table: 4 entries from this address
+sPointerTable_0852B418:
 	@ Replaced baserom.gba range: offset=0x52B418, size=0x48
 	@ semanticized-mass: resolved embedded ROM pointers
 	.4byte RevealHiddenTrainer @ ROM pointer 0x080B3B05

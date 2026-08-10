@@ -1,5 +1,7 @@
 	.globl gUnknown_8D9C3E4
 gUnknown_8D9C3E4: @ 0x08D9C3E4
+	@ confirmed GBA LZ77 stream: compressed=0x10D, decompressed=0x800
+sLz77Block_08D9C3E4:
 	@ analyzed canonical ROM range 0x08D9C3E4-0x08DA3667
 sAnalyzedData_08D9C3E4: @ 0x08D9C3E4
 	@ structured u8 payload; no safe higher-level semantic type was provable

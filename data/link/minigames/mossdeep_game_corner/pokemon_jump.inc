@@ -249,6 +249,8 @@ sAnalyzedData_082CF734: @ 0x082CF734
 	.2byte 0x0010, 0x0028, 0x0048, 0x0068, 0x0088, 0x00A8, 0x00C8, 0x00E0
 	.globl gUnknown_82CF744
 gUnknown_82CF744: @ 0x082CF744
+	@ confirmed contiguous ROM pointer table: 4 entries from this address
+sPointerTable_082CF744:
 	@ analyzed canonical ROM range 0x082CF744-0x082CF897
 sAnalyzedData_082CF744: @ 0x082CF744
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -295,6 +297,8 @@ sAnalyzedData_082CF8D0: @ 0x082CF8D0
 	.byte 0x9D, 0x43, 0xDE, 0x4F, 0x7B, 0x57, 0x8D, 0x57, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C
 	.globl gUnknown_82CF8F0
 gUnknown_82CF8F0: @ 0x082CF8F0
+	@ confirmed GBA LZ77 stream: compressed=0x22A, decompressed=0x7E0
+sLz77Block_082CF8F0:
 	@ analyzed canonical ROM range 0x082CF8F0-0x082CFB1B
 sAnalyzedGfx_082CF8F0: @ 0x082CF8F0
 	.incbin "build/graphics/analyzed/gunknown_82cf8f0_082cf8f0.4bpp.lz"
@@ -303,6 +307,8 @@ sAnalyzedGfx_082CF8F0: @ 0x082CF8F0
 	.endif
 	.globl gUnknown_82CFB1C
 gUnknown_82CFB1C: @ 0x082CFB1C
+	@ confirmed GBA LZ77 stream: compressed=0x1AD, decompressed=0x500
+sLz77Block_082CFB1C:
 	@ analyzed canonical ROM range 0x082CFB1C-0x082CFCCB
 sAnalyzedGfx_082CFB1C: @ 0x082CFB1C
 	.incbin "build/graphics/analyzed/gunknown_82cfb1c_082cfb1c.4bpp.lz"
@@ -318,6 +324,8 @@ sAnalyzedData_082CFCCC: @ 0x082CFCCC
 	.byte 0x3C, 0x21, 0x1F, 0x3A, 0xD3, 0x47, 0x3B, 0x1B, 0xBF, 0x2B, 0x88, 0x0E, 0x2D, 0x23, 0xFF, 0x7F
 	.globl gUnknown_82CFCEC
 gUnknown_82CFCEC: @ 0x082CFCEC
+	@ confirmed GBA LZ77 stream: compressed=0x94E, decompressed=0x1000
+sLz77Block_082CFCEC:
 	@ analyzed canonical ROM range 0x082CFCEC-0x082D063B
 sAnalyzedGfx_082CFCEC: @ 0x082CFCEC
 	.incbin "build/graphics/analyzed/gunknown_82cfcec_082cfcec.4bpp.lz"
@@ -326,6 +334,8 @@ sAnalyzedGfx_082CFCEC: @ 0x082CFCEC
 	.endif
 	.globl gUnknown_82D063C
 gUnknown_82D063C: @ 0x082D063C
+	@ confirmed GBA LZ77 stream: compressed=0x3B6, decompressed=0x1000
+sLz77Block_082D063C:
 	@ analyzed canonical ROM range 0x082D063C-0x082D09F3
 sAnalyzedGfx_082D063C: @ 0x082D063C
 	.incbin "build/graphics/analyzed/gunknown_82d063c_082d063c.4bpp.lz"
@@ -341,6 +351,8 @@ sAnalyzedData_082D09F4: @ 0x082D09F4
 	.byte 0x54, 0x2E, 0xF9, 0x2A, 0xBF, 0x27, 0x93, 0x72, 0x6B, 0x35, 0x55, 0x36, 0x3C, 0x3F, 0xF6, 0x7A
 	.globl gUnknown_82D0A14
 gUnknown_82D0A14: @ 0x082D0A14
+	@ confirmed GBA LZ77 stream: compressed=0xAAF, decompressed=0x1540
+sLz77Block_082D0A14:
 	@ analyzed canonical ROM range 0x082D0A14-0x082D14C3
 sAnalyzedGfx_082D0A14: @ 0x082D0A14
 	.incbin "build/graphics/analyzed/gunknown_82d0a14_082d0a14.4bpp.lz"
@@ -349,6 +361,8 @@ sAnalyzedGfx_082D0A14: @ 0x082D0A14
 	.endif
 	.globl gUnknown_82D14C4
 gUnknown_82D14C4: @ 0x082D14C4
+	@ confirmed GBA LZ77 stream: compressed=0x52A, decompressed=0x2000
+sLz77Block_082D14C4:
 	@ analyzed canonical ROM range 0x082D14C4-0x082D19EF
 sAnalyzedGfx_082D14C4: @ 0x082D14C4
 	.incbin "build/graphics/analyzed/gunknown_82d14c4_082d14c4.4bpp.lz"
@@ -420,6 +434,8 @@ sAnalyzedData_082D1A80: @ 0x082D1A80
 	.2byte 0x0006, 0x0008, 0x000B, 0x0006, 0x0010, 0x0008, 0x0014, 0x0006
 	.globl gUnknown_82D1AC0
 gUnknown_82D1AC0: @ 0x082D1AC0
+	@ confirmed contiguous ROM pointer table: 4 entries from this address
+sPointerTable_082D1AC0:
 	@ analyzed canonical ROM range 0x082D1AC0-0x082D1AEB
 sAnalyzedData_082D1AC0: @ 0x082D1AC0
 	@ structured u16 table (semantic role inferred only to scalar width)
@@ -428,6 +444,8 @@ sAnalyzedData_082D1AC0: @ 0x082D1AC0
 	.2byte 0x00B8, 0x0038, 0x0058, 0x0078, 0x0098, 0x00B8
 	.globl gUnknown_82D1AEC
 gUnknown_82D1AEC: @ 0x082D1AEC
+	@ confirmed contiguous ROM pointer table: 4 entries from this address
+sPointerTable_082D1AEC:
 	@ analyzed canonical ROM range 0x082D1AEC-0x082D1AFB
 sAnalyzedData_082D1AEC: @ 0x082D1AEC
 	@ pointer/nullable table

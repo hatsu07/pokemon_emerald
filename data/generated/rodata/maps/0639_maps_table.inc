@@ -105,6 +105,10 @@ sAnalyzedData_084DDA21: @ 0x084DDA21
 	.byte 0x04, 0x00, 0x00
 	.globl gUnknown_84DDA74
 gUnknown_84DDA74: @ 0x084DDA74
+	@ confirmed contiguous ROM pointer table: 284 entries from this address
+sPointerTable_084DDA74:
+	.globl gObjectEventGraphicsInfoPointers
+gObjectEventGraphicsInfoPointers:
 	@ analyzed canonical ROM range 0x084DDA74-0x084DDE2F
 sAnalyzedData_084DDA74: @ 0x084DDA74
 	@ pointer/nullable table

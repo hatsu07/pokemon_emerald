@@ -67,6 +67,8 @@ gMonIcon_UnownB: @ 0x08D44B9C [413]
   .incbin "build/graphics/pokemon/unown_b/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D44F9C-0x08D451AF
 sAnalyzedGfx_08D44F9C: @ 0x08D44F9C
+	@ confirmed GBA LZ77 stream: compressed=0x211, decompressed=0x800
+sLz77Block_08D44F9C:
 	.incbin "build/graphics/analyzed/gmonicon_unownb_08d44f9c.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D44F9C) != 0x214
 	.error "gMonIcon_UnownB compressed size mismatch"
@@ -81,6 +83,8 @@ gMonIcon_UnownC: @ 0x08D4545C [414]
   .incbin "build/graphics/pokemon/unown_c/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D4585C-0x08D45A53
 sAnalyzedGfx_08D4585C: @ 0x08D4585C
+	@ confirmed GBA LZ77 stream: compressed=0x1F5, decompressed=0x800
+sLz77Block_08D4585C:
 	.incbin "build/graphics/analyzed/gmonicon_unownc_08d4585c.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D4585C) != 0x1F8
 	.error "gMonIcon_UnownC compressed size mismatch"
@@ -95,6 +99,8 @@ gMonIcon_UnownD: @ 0x08D45CAC [415]
   .incbin "build/graphics/pokemon/unown_d/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D460AC-0x08D46263
 sAnalyzedGfx_08D460AC: @ 0x08D460AC
+	@ confirmed GBA LZ77 stream: compressed=0x1B5, decompressed=0x800
+sLz77Block_08D460AC:
 	.incbin "build/graphics/analyzed/gmonicon_unownd_08d460ac.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D460AC) != 0x1B8
 	.error "gMonIcon_UnownD compressed size mismatch"
@@ -109,6 +115,8 @@ gMonIcon_UnownE: @ 0x08D46464 [416]
   .incbin "build/graphics/pokemon/unown_e/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D46864-0x08D46A57
 sAnalyzedGfx_08D46864: @ 0x08D46864
+	@ confirmed GBA LZ77 stream: compressed=0x1F4, decompressed=0x800
+sLz77Block_08D46864:
 	.incbin "build/graphics/analyzed/gmonicon_unowne_08d46864.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D46864) != 0x1F4
 	.error "gMonIcon_UnownE compressed size mismatch"
@@ -123,6 +131,8 @@ gMonIcon_UnownF: @ 0x08D46C74 [417]
   .incbin "build/graphics/pokemon/unown_f/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D47074-0x08D4724F
 sAnalyzedGfx_08D47074: @ 0x08D47074
+	@ confirmed GBA LZ77 stream: compressed=0x1DC, decompressed=0x800
+sLz77Block_08D47074:
 	.incbin "build/graphics/analyzed/gmonicon_unownf_08d47074.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D47074) != 0x1DC
 	.error "gMonIcon_UnownF compressed size mismatch"
@@ -137,6 +147,8 @@ gMonIcon_UnownG: @ 0x08D4749C [418]
   .incbin "build/graphics/pokemon/unown_g/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D4789C-0x08D47ADF
 sAnalyzedGfx_08D4789C: @ 0x08D4789C
+	@ confirmed GBA LZ77 stream: compressed=0x243, decompressed=0x800
+sLz77Block_08D4789C:
 	.incbin "build/graphics/analyzed/gmonicon_unowng_08d4789c.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D4789C) != 0x244
 	.error "gMonIcon_UnownG compressed size mismatch"
@@ -151,6 +163,8 @@ gMonIcon_UnownH: @ 0x08D47DA4 [419]
   .incbin "build/graphics/pokemon/unown_h/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D481A4-0x08D4833B
 sAnalyzedGfx_08D481A4: @ 0x08D481A4
+	@ confirmed GBA LZ77 stream: compressed=0x198, decompressed=0x800
+sLz77Block_08D481A4:
 	.incbin "build/graphics/analyzed/gmonicon_unownh_08d481a4.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D481A4) != 0x198
 	.error "gMonIcon_UnownH compressed size mismatch"
@@ -165,6 +179,8 @@ gMonIcon_UnownI: @ 0x08D484E4 [420]
   .incbin "build/graphics/pokemon/unown_i/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D488E4-0x08D48AA7
 sAnalyzedGfx_08D488E4: @ 0x08D488E4
+	@ confirmed GBA LZ77 stream: compressed=0x1C4, decompressed=0x800
+sLz77Block_08D488E4:
 	.incbin "build/graphics/analyzed/gmonicon_unowni_08d488e4.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D488E4) != 0x1C4
 	.error "gMonIcon_UnownI compressed size mismatch"
@@ -179,6 +195,8 @@ gMonIcon_UnownJ: @ 0x08D48C90 [421]
   .incbin "build/graphics/pokemon/unown_j/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D49090-0x08D4925F
 sAnalyzedGfx_08D49090: @ 0x08D49090
+	@ confirmed GBA LZ77 stream: compressed=0x1CD, decompressed=0x800
+sLz77Block_08D49090:
 	.incbin "build/graphics/analyzed/gmonicon_unownj_08d49090.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D49090) != 0x1D0
 	.error "gMonIcon_UnownJ compressed size mismatch"
@@ -193,6 +211,8 @@ gMonIcon_UnownK: @ 0x08D49458 [422]
   .incbin "build/graphics/pokemon/unown_k/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D49858-0x08D49A07
 sAnalyzedGfx_08D49858: @ 0x08D49858
+	@ confirmed GBA LZ77 stream: compressed=0x1B0, decompressed=0x800
+sLz77Block_08D49858:
 	.incbin "build/graphics/analyzed/gmonicon_unownk_08d49858.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D49858) != 0x1B0
 	.error "gMonIcon_UnownK compressed size mismatch"
@@ -207,6 +227,8 @@ gMonIcon_UnownL: @ 0x08D49BDC [423]
   .incbin "build/graphics/pokemon/unown_l/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D49FDC-0x08D4A1FF
 sAnalyzedGfx_08D49FDC: @ 0x08D49FDC
+	@ confirmed GBA LZ77 stream: compressed=0x222, decompressed=0x800
+sLz77Block_08D49FDC:
 	.incbin "build/graphics/analyzed/gmonicon_unownl_08d49fdc.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D49FDC) != 0x224
 	.error "gMonIcon_UnownL compressed size mismatch"
@@ -221,6 +243,8 @@ gMonIcon_UnownM: @ 0x08D4A4A8 [424]
   .incbin "build/graphics/pokemon/unown_m/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D4A8A8-0x08D4AA9F
 sAnalyzedGfx_08D4A8A8: @ 0x08D4A8A8
+	@ confirmed GBA LZ77 stream: compressed=0x1F6, decompressed=0x800
+sLz77Block_08D4A8A8:
 	.incbin "build/graphics/analyzed/gmonicon_unownm_08d4a8a8.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D4A8A8) != 0x1F8
 	.error "gMonIcon_UnownM compressed size mismatch"
@@ -235,6 +259,8 @@ gMonIcon_UnownN: @ 0x08D4AD0C [425]
   .incbin "build/graphics/pokemon/unown_n/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D4B10C-0x08D4B343
 sAnalyzedGfx_08D4B10C: @ 0x08D4B10C
+	@ confirmed GBA LZ77 stream: compressed=0x238, decompressed=0x800
+sLz77Block_08D4B10C:
 	.incbin "build/graphics/analyzed/gmonicon_unownn_08d4b10c.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D4B10C) != 0x238
 	.error "gMonIcon_UnownN compressed size mismatch"
@@ -249,6 +275,8 @@ gMonIcon_UnownO: @ 0x08D4B604 [426]
   .incbin "build/graphics/pokemon/unown_o/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D4BA04-0x08D4BBA3
 sAnalyzedGfx_08D4BA04: @ 0x08D4BA04
+	@ confirmed GBA LZ77 stream: compressed=0x19E, decompressed=0x800
+sLz77Block_08D4BA04:
 	.incbin "build/graphics/analyzed/gmonicon_unowno_08d4ba04.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D4BA04) != 0x1A0
 	.error "gMonIcon_UnownO compressed size mismatch"
@@ -263,6 +291,8 @@ gMonIcon_UnownP: @ 0x08D4BD68 [427]
   .incbin "build/graphics/pokemon/unown_p/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D4C168-0x08D4C31B
 sAnalyzedGfx_08D4C168: @ 0x08D4C168
+	@ confirmed GBA LZ77 stream: compressed=0x1B2, decompressed=0x800
+sLz77Block_08D4C168:
 	.incbin "build/graphics/analyzed/gmonicon_unownp_08d4c168.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D4C168) != 0x1B4
 	.error "gMonIcon_UnownP compressed size mismatch"
@@ -277,6 +307,8 @@ gMonIcon_UnownQ: @ 0x08D4C4E8 [428]
   .incbin "build/graphics/pokemon/unown_q/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D4C8E8-0x08D4CA8B
 sAnalyzedGfx_08D4C8E8: @ 0x08D4C8E8
+	@ confirmed GBA LZ77 stream: compressed=0x1A2, decompressed=0x800
+sLz77Block_08D4C8E8:
 	.incbin "build/graphics/analyzed/gmonicon_unownq_08d4c8e8.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D4C8E8) != 0x1A4
 	.error "gMonIcon_UnownQ compressed size mismatch"
@@ -291,6 +323,8 @@ gMonIcon_UnownR: @ 0x08D4CC54 [429]
   .incbin "build/graphics/pokemon/unown_r/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D4D054-0x08D4D23B
 sAnalyzedGfx_08D4D054: @ 0x08D4D054
+	@ confirmed GBA LZ77 stream: compressed=0x1E7, decompressed=0x800
+sLz77Block_08D4D054:
 	.incbin "build/graphics/analyzed/gmonicon_unownr_08d4d054.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D4D054) != 0x1E8
 	.error "gMonIcon_UnownR compressed size mismatch"
@@ -305,6 +339,8 @@ gMonIcon_UnownS: @ 0x08D4D490 [430]
   .incbin "build/graphics/pokemon/unown_s/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D4D890-0x08D4DA3F
 sAnalyzedGfx_08D4D890: @ 0x08D4D890
+	@ confirmed GBA LZ77 stream: compressed=0x1AF, decompressed=0x800
+sLz77Block_08D4D890:
 	.incbin "build/graphics/analyzed/gmonicon_unowns_08d4d890.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D4D890) != 0x1B0
 	.error "gMonIcon_UnownS compressed size mismatch"
@@ -319,6 +355,8 @@ gMonIcon_UnownT: @ 0x08D4DBF4 [431]
   .incbin "build/graphics/pokemon/unown_t/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D4DFF4-0x08D4E20B
 sAnalyzedGfx_08D4DFF4: @ 0x08D4DFF4
+	@ confirmed GBA LZ77 stream: compressed=0x218, decompressed=0x800
+sLz77Block_08D4DFF4:
 	.incbin "build/graphics/analyzed/gmonicon_unownt_08d4dff4.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D4DFF4) != 0x218
 	.error "gMonIcon_UnownT compressed size mismatch"
@@ -333,6 +371,8 @@ gMonIcon_UnownU: @ 0x08D4E460 [432]
   .incbin "build/graphics/pokemon/unown_u/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D4E860-0x08D4EA43
 sAnalyzedGfx_08D4E860: @ 0x08D4E860
+	@ confirmed GBA LZ77 stream: compressed=0x1E2, decompressed=0x800
+sLz77Block_08D4E860:
 	.incbin "build/graphics/analyzed/gmonicon_unownu_08d4e860.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D4E860) != 0x1E4
 	.error "gMonIcon_UnownU compressed size mismatch"
@@ -347,6 +387,8 @@ gMonIcon_UnownV: @ 0x08D4EC74 [433]
   .incbin "build/graphics/pokemon/unown_v/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D4F074-0x08D4F247
 sAnalyzedGfx_08D4F074: @ 0x08D4F074
+	@ confirmed GBA LZ77 stream: compressed=0x1D3, decompressed=0x800
+sLz77Block_08D4F074:
 	.incbin "build/graphics/analyzed/gmonicon_unownv_08d4f074.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D4F074) != 0x1D4
 	.error "gMonIcon_UnownV compressed size mismatch"
@@ -361,6 +403,8 @@ gMonIcon_UnownW: @ 0x08D4F44C [434]
   .incbin "build/graphics/pokemon/unown_w/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D4F84C-0x08D4FA0F
 sAnalyzedGfx_08D4F84C: @ 0x08D4F84C
+	@ confirmed GBA LZ77 stream: compressed=0x1C1, decompressed=0x800
+sLz77Block_08D4F84C:
 	.incbin "build/graphics/analyzed/gmonicon_unownw_08d4f84c.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D4F84C) != 0x1C4
 	.error "gMonIcon_UnownW compressed size mismatch"
@@ -375,6 +419,8 @@ gMonIcon_UnownX: @ 0x08D4FC00 [435]
   .incbin "build/graphics/pokemon/unown_x/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D50000-0x08D501D7
 sAnalyzedGfx_08D50000: @ 0x08D50000
+	@ confirmed GBA LZ77 stream: compressed=0x1D6, decompressed=0x800
+sLz77Block_08D50000:
 	.incbin "build/graphics/analyzed/gmonicon_unownx_08d50000.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D50000) != 0x1D8
 	.error "gMonIcon_UnownX compressed size mismatch"
@@ -389,6 +435,8 @@ gMonIcon_UnownY: @ 0x08D503CC [436]
   .incbin "build/graphics/pokemon/unown_y/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D507CC-0x08D5097B
 sAnalyzedGfx_08D507CC: @ 0x08D507CC
+	@ confirmed GBA LZ77 stream: compressed=0x1B0, decompressed=0x800
+sLz77Block_08D507CC:
 	.incbin "build/graphics/analyzed/gmonicon_unowny_08d507cc.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D507CC) != 0x1B0
 	.error "gMonIcon_UnownY compressed size mismatch"
@@ -403,6 +451,8 @@ gMonIcon_UnownZ: @ 0x08D50B58 [437]
   .incbin "build/graphics/pokemon/unown_z/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D50F58-0x08D510E7
 sAnalyzedGfx_08D50F58: @ 0x08D50F58
+	@ confirmed GBA LZ77 stream: compressed=0x190, decompressed=0x800
+sLz77Block_08D50F58:
 	.incbin "build/graphics/analyzed/gmonicon_unownz_08d50f58.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D50F58) != 0x190
 	.error "gMonIcon_UnownZ compressed size mismatch"
@@ -417,6 +467,8 @@ gMonIcon_UnownEmark: @ 0x08D512B0 [438]
   .incbin "build/graphics/pokemon/unown_emark/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D516B0-0x08D5186B
 sAnalyzedGfx_08D516B0: @ 0x08D516B0
+	@ confirmed GBA LZ77 stream: compressed=0x1BC, decompressed=0x800
+sLz77Block_08D516B0:
 	.incbin "build/graphics/analyzed/gmonicon_unownemark_08d516b0.4bpp.lz"
 	.if (. - sAnalyzedGfx_08D516B0) != 0x1BC
 	.error "gMonIcon_UnownEmark compressed size mismatch"

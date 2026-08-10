@@ -1631,6 +1631,8 @@ sAnalyzedData_084E41CC: @ 0x084E41CC
 	.2byte 0x1103, 0x1104, 0x1105, 0x1106, 0x1107, 0x1108, 0x1109, 0x110A
 	.globl gUnknown_84E428C
 gUnknown_84E428C: @ 0x084E428C
+	@ confirmed contiguous ROM pointer table: 5 entries from this address
+sPointerTable_084E428C:
 	@ analyzed canonical ROM range 0x084E428C-0x084E4C03
 sAnalyzedData_084E428C: @ 0x084E428C
 	@ structured u16 table (semantic role inferred only to scalar width)
@@ -1788,6 +1790,10 @@ sAnalyzedData_084E428C: @ 0x084E428C
 	.2byte 0x3D3D, 0x3D3D, 0x3E3E, 0x003E
 	.globl gUnknown_84E4C04
 gUnknown_84E4C04: @ 0x084E4C04
+	@ confirmed contiguous ROM pointer table: 133 entries from this address
+sPointerTable_084E4C04:
+	.globl gBerryTreePicTablePointers
+gBerryTreePicTablePointers:
 	@ analyzed canonical ROM range 0x084E4C04-0x084E4CAF
 sAnalyzedData_084E4C04: @ 0x084E4C04
 	@ pointer/nullable table
@@ -1836,6 +1842,8 @@ sAnalyzedData_084E4C04: @ 0x084E4C04
 	.4byte 0x084E4B5C @ +0xA8
 	.globl gUnknown_84E4CB0
 gUnknown_84E4CB0: @ 0x084E4CB0
+	.globl gBerryTreePaletteSlotTablePointers
+gBerryTreePaletteSlotTablePointers:
 	@ analyzed canonical ROM range 0x084E4CB0-0x084E4D5B
 sAnalyzedData_084E4CB0: @ 0x084E4CB0
 	@ pointer/nullable table
@@ -1884,6 +1892,8 @@ sAnalyzedData_084E4CB0: @ 0x084E4CB0
 	.4byte 0x084E4BA4 @ +0xA8
 	.globl gUnknown_84E4D5C
 gUnknown_84E4D5C: @ 0x084E4D5C
+	.globl gBerryTreeObjectEventGraphicsIdTablePointers
+gBerryTreeObjectEventGraphicsIdTablePointers:
 	@ analyzed canonical ROM range 0x084E4D5C-0x084E4E1B
 sAnalyzedData_084E4D5C: @ 0x084E4D5C
 	@ pointer/nullable table
@@ -2991,6 +3001,8 @@ sAnalyzedData_084E6093: @ 0x084E6093
 	.byte 0x00
 	.globl gUnknown_84E60A4
 gUnknown_84E60A4: @ 0x084E60A4
+	@ confirmed contiguous ROM pointer table: 166 entries from this address
+sPointerTable_084E60A4:
 	@ analyzed canonical ROM range 0x084E60A4-0x084E633B
 sAnalyzedData_084E60A4: @ 0x084E60A4
 	@ pointer/nullable table
@@ -3445,6 +3457,8 @@ gUnknown_84E6AC8: @ 0x084E6AC8
 	.4byte Step8
 	.globl gUnknown_84E6BA8
 gUnknown_84E6BA8: @ 0x084E6BA8
+	@ confirmed contiguous ROM pointer table: 5 entries from this address
+sPointerTable_084E6BA8:
 	@ analyzed canonical ROM range 0x084E6BA8-0x084E6BBB
 sAnalyzedData_084E6BA8: @ 0x084E6BA8
 	@ pointer/nullable table

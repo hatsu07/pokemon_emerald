@@ -1,5 +1,7 @@
 	.globl gUnknown_8D9B2C0
 gUnknown_8D9B2C0: @ 0x08D9B2C0
+	@ confirmed GBA LZ77 stream: compressed=0x28, decompressed=0x20
+sLz77Block_08D9B2C0:
 	@ analyzed canonical ROM range 0x08D9B2C0-0x08D9B2E7
 sAnalyzedGfx_08D9B2C0: @ 0x08D9B2C0
 	.incbin "build/graphics/analyzed/gunknown_8d9b2c0_08d9b2c0.4bpp.lz"
@@ -8,6 +10,8 @@ sAnalyzedGfx_08D9B2C0: @ 0x08D9B2C0
 	.endif
 	.globl gUnknown_8D9B2E8
 gUnknown_8D9B2E8: @ 0x08D9B2E8
+	@ confirmed GBA LZ77 stream: compressed=0x13E, decompressed=0x800
+sLz77Block_08D9B2E8:
 	@ analyzed canonical ROM range 0x08D9B2E8-0x08D9B4B3
 sAnalyzedData_08D9B2E8: @ 0x08D9B2E8
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -42,6 +46,8 @@ sAnalyzedData_08D9B2E8: @ 0x08D9B2E8
 	.byte 0x01, 0x66, 0x00, 0x59, 0x6D, 0x00, 0x39, 0xC0, 0xF0, 0x3C, 0x30, 0x01
 	.globl gUnknown_8D9B4B4
 gUnknown_8D9B4B4: @ 0x08D9B4B4
+	@ confirmed GBA LZ77 stream: compressed=0x207, decompressed=0x500
+sLz77Block_08D9B4B4:
 	@ analyzed canonical ROM range 0x08D9B4B4-0x08D9B6BB
 sAnalyzedGfx_08D9B4B4: @ 0x08D9B4B4
 	.incbin "build/graphics/analyzed/gunknown_8d9b4b4_08d9b4b4.4bpp.lz"
@@ -50,6 +56,8 @@ sAnalyzedGfx_08D9B4B4: @ 0x08D9B4B4
 	.endif
 	.globl gUnknown_8D9B6BC
 gUnknown_8D9B6BC: @ 0x08D9B6BC
+	@ confirmed GBA LZ77 stream: compressed=0x6E, decompressed=0xC0
+sLz77Block_08D9B6BC:
 	@ analyzed canonical ROM range 0x08D9B6BC-0x08D9BA13
 sAnalyzedData_08D9B6BC: @ 0x08D9B6BC
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -109,6 +117,8 @@ sAnalyzedData_08D9B6BC: @ 0x08D9B6BC
 	.byte 0x95, 0x29, 0xFE, 0x2D, 0x74, 0x5A, 0xDE, 0x7B
 	.globl gUnknown_8D9BA14
 gUnknown_8D9BA14: @ 0x08D9BA14
+	@ confirmed GBA LZ77 stream: compressed=0x148, decompressed=0x800
+sLz77Block_08D9BA14:
 	@ analyzed canonical ROM range 0x08D9BA14-0x08D9BB5B
 sAnalyzedGfx_08D9BA14: @ 0x08D9BA14
 	.incbin "build/graphics/analyzed/gunknown_8d9ba14_08d9ba14.4bpp.lz"
@@ -168,6 +178,8 @@ gPokeblockPalette_Gold: @ 0x08D9BC7C
 
 	.globl gUnknown_8D9BC90
 gUnknown_8D9BC90: @ 0x08D9BC90
+	@ confirmed GBA LZ77 stream: compressed=0x100, decompressed=0x800
+sLz77Block_08D9BC90:
 	@ analyzed canonical ROM range 0x08D9BC90-0x08D9BD8F
 sAnalyzedGfx_08D9BC90: @ 0x08D9BC90
 	.incbin "build/graphics/analyzed/gunknown_8d9bc90_08d9bc90.4bpp.lz"
@@ -176,6 +188,8 @@ sAnalyzedGfx_08D9BC90: @ 0x08D9BC90
 	.endif
 	.globl gUnknown_8D9BD90
 gUnknown_8D9BD90: @ 0x08D9BD90
+	@ confirmed GBA LZ77 stream: compressed=0x41C, decompressed=0xB40
+sLz77Block_08D9BD90:
 	@ analyzed canonical ROM range 0x08D9BD90-0x08D9C1AB
 sAnalyzedGfx_08D9BD90: @ 0x08D9BD90
 	.incbin "build/graphics/analyzed/gunknown_8d9bd90_08d9bd90.4bpp.lz"
@@ -184,6 +198,8 @@ sAnalyzedGfx_08D9BD90: @ 0x08D9BD90
 	.endif
 	.globl gUnknown_8D9C1AC
 gUnknown_8D9C1AC: @ 0x08D9C1AC
+	@ confirmed GBA LZ77 stream: compressed=0xA8, decompressed=0xC0
+sLz77Block_08D9C1AC:
 	@ analyzed canonical ROM range 0x08D9C1AC-0x08D9C253
 sAnalyzedGfx_08D9C1AC: @ 0x08D9C1AC
 	.incbin "build/graphics/analyzed/gunknown_8d9c1ac_08d9c1ac.4bpp.lz"
@@ -192,6 +208,8 @@ sAnalyzedGfx_08D9C1AC: @ 0x08D9C1AC
 	.endif
 	.globl gUnknown_8D9C254
 gUnknown_8D9C254: @ 0x08D9C254
+	@ confirmed GBA LZ77 stream: compressed=0x18E, decompressed=0x800
+sLz77Block_08D9C254:
 	@ analyzed canonical ROM range 0x08D9C254-0x08D9C3E3
 sAnalyzedGfx_08D9C254: @ 0x08D9C254
 	.incbin "build/graphics/analyzed/gunknown_8d9c254_08d9c254.4bpp.lz"

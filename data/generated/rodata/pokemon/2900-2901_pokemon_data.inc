@@ -37,6 +37,8 @@ sAnalyzedData_085886AC: @ 0x085886AC
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.globl gUnknown_85888AC
 gUnknown_85888AC: @ 0x085888AC
+	@ confirmed GBA RLE stream: compressed=0x1083, decompressed=0x1600
+sRleBlock_085888AC:
 	@ analyzed canonical ROM range 0x085888AC-0x0858992F
 sAnalyzedData_085888AC: @ 0x085888AC
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -307,6 +309,8 @@ sAnalyzedData_085888AC: @ 0x085888AC
 	.byte 0xDD, 0x88, 0x11, 0x00
 	.globl gUnknown_8589930
 gUnknown_8589930: @ 0x08589930
+	@ confirmed GBA RLE stream: compressed=0xC30, decompressed=0x1600
+sRleBlock_08589930:
 	@ analyzed canonical ROM range 0x08589930-0x0858A55F
 sAnalyzedData_08589930: @ 0x08589930
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -507,6 +511,8 @@ sAnalyzedData_08589930: @ 0x08589930
 	.byte 0x65, 0x66, 0x76, 0x77, 0x56, 0x66, 0x66, 0x77, 0x56, 0x65, 0x66, 0x77, 0x55, 0x65, 0x56, 0x77
 	.globl gUnknown_858A560
 gUnknown_858A560: @ 0x0858A560
+	@ confirmed GBA RLE stream: compressed=0xB36, decompressed=0x1600
+sRleBlock_0858A560:
 	@ analyzed canonical ROM range 0x0858A560-0x0858B097
 sAnalyzedData_0858A560: @ 0x0858A560
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -692,6 +698,8 @@ sAnalyzedData_0858A560: @ 0x0858A560
 	.byte 0x80, 0x33, 0x00, 0x37, 0xA4, 0x33, 0x00, 0x00
 	.globl gUnknown_858B098
 gUnknown_858B098: @ 0x0858B098
+	@ confirmed GBA RLE stream: compressed=0xFB7, decompressed=0x1600
+sRleBlock_0858B098:
 	@ analyzed canonical ROM range 0x0858B098-0x0858C04F
 sAnalyzedData_0858B098: @ 0x0858B098
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -949,6 +957,8 @@ sAnalyzedData_0858B098: @ 0x0858B098
 	.byte 0x55, 0x80, 0x33, 0x00, 0x55, 0x88, 0x33, 0x00
 	.globl gUnknown_858C050
 gUnknown_858C050: @ 0x0858C050
+	@ confirmed GBA RLE stream: compressed=0x112D, decompressed=0x1600
+sRleBlock_0858C050:
 	@ analyzed canonical ROM range 0x0858C050-0x0858D17F
 sAnalyzedData_0858C050: @ 0x0858C050
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -1229,6 +1239,8 @@ sAnalyzedData_0858C050: @ 0x0858C050
 	.byte 0x55, 0x79, 0x77, 0x99, 0x55, 0x79, 0x77, 0x99, 0x59, 0x99, 0x77, 0x97, 0x59, 0x00, 0x00, 0x00
 	.globl gUnknown_858D180
 gUnknown_858D180: @ 0x0858D180
+	@ confirmed GBA RLE stream: compressed=0x603, decompressed=0xAC0
+sRleBlock_0858D180:
 	@ analyzed canonical ROM range 0x0858D180-0x0858D783
 sAnalyzedData_0858D180: @ 0x0858D180
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -1331,6 +1343,8 @@ sAnalyzedData_0858D180: @ 0x0858D180
 	.byte 0x22, 0x81, 0x11, 0x00
 	.globl gUnknown_858D784
 gUnknown_858D784: @ 0x0858D784
+	@ confirmed GBA RLE stream: compressed=0x509, decompressed=0x800
+sRleBlock_0858D784:
 	@ analyzed canonical ROM range 0x0858D784-0x0858DC8F
 sAnalyzedData_0858D784: @ 0x0858D784
 	@ structured u16 table (semantic role inferred only to scalar width)
@@ -1417,6 +1431,8 @@ sAnalyzedData_0858D784: @ 0x0858D784
 	.2byte 0xFF00, 0xFF00, 0xFF00, 0xF800, 0x0000, 0x0000
 	.globl gUnknown_858DC90
 gUnknown_858DC90: @ 0x0858DC90
+	@ confirmed GBA RLE stream: compressed=0x509, decompressed=0x800
+sRleBlock_0858DC90:
 	@ analyzed canonical ROM range 0x0858DC90-0x0858E19B
 sAnalyzedData_0858DC90: @ 0x0858DC90
 	@ structured u16 table (semantic role inferred only to scalar width)
@@ -1503,6 +1519,8 @@ sAnalyzedData_0858DC90: @ 0x0858DC90
 	.2byte 0xFF00, 0xFF00, 0xFF00, 0xF800, 0x0000, 0x0000
 	.globl gUnknown_858E19C
 gUnknown_858E19C: @ 0x0858E19C
+	@ confirmed GBA RLE stream: compressed=0x509, decompressed=0x800
+sRleBlock_0858E19C:
 	@ analyzed canonical ROM range 0x0858E19C-0x0858E6A7
 sAnalyzedData_0858E19C: @ 0x0858E19C
 	@ structured u16 table (semantic role inferred only to scalar width)
