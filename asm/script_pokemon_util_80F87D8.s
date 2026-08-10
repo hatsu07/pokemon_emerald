@@ -583,13 +583,13 @@ _080F94A8: .4byte 0x03005AEC
 _080F94AC: .4byte 0x02036FF0
 _080F94B0: .4byte 0x020205AC
 _080F94B4: .4byte 0x020226A0
-_080F94B8: .4byte 0x08471E6C
+_080F94B8: .4byte gObjectEventPal_RubySapphireMay
 _080F94BC:
 	lsrs r1, r4, #0x10
 	ldr r0, _080F94C4
 	b _080F94D2
 	.align 2, 0
-_080F94C4: .4byte 0x0847D90C
+_080F94C4: .4byte gObjectEventPal_May
 _080F94C8:
 	ldrb r0, [r1, #0x13]
 	cmp r0, #0
@@ -601,7 +601,7 @@ _080F94D2:
 	bl LoadPalette
 	b _080F94EA
 	.align 2, 0
-_080F94DC: .4byte 0x08470C4C
+_080F94DC: .4byte gObjectEventPal_RubySapphireBrendan
 _080F94E0:
 	lsrs r1, r4, #0x10
 	ldr r0, _080F9504
@@ -623,7 +623,7 @@ _080F94FE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080F9504: .4byte 0x0847C6CC
+_080F9504: .4byte gObjectEventPal_Brendan
 _080F9508: .4byte 0x02039BD0
 	thumb_func_end sub_080F9424
 

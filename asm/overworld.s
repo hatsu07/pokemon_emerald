@@ -471,7 +471,7 @@ _0808434E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08084354: .4byte 0x0845A1F4
+_08084354: .4byte gMapLayouts
 	thumb_func_end GetMapLayout
 
 	thumb_func_start ApplyCurrentWarp
@@ -576,7 +576,7 @@ Overworld_GetMapHeaderByGroupAndId: @ 0x080843F8
 	ldr r0, [r1]
 	bx lr
 	.align 2, 0
-_0808440C: .4byte 0x0845E998
+_0808440C: .4byte gMapGroups
 	thumb_func_end Overworld_GetMapHeaderByGroupAndId
 
 	thumb_func_start GetDestinationWarpMapHeader

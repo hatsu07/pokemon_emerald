@@ -29,6 +29,8 @@
 	.include "asm/macros/wild_encounter.inc"
 	.include "asm/macros/window.inc"
 	.include "asm/macros/rodata.inc"
+	.include "asm/macros/m4a.inc"
+	.include "asm/macros/music_voice.inc"
 
 	.include "data/generated/full_analysis_compat_symbols.inc"
 

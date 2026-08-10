@@ -55,61 +55,61 @@ gBattlerPicTable_OpponentRight: @ 0x082D2C98
 
 	.globl gTrainerBackPicTable_Brendan
 gTrainerBackPicTable_Brendan: @ 0x082D2CB8
-	.4byte 0x08D66524, 0x00000800 @ gTrainerBackPic_Brendan + 0x0
-	.4byte 0x08D66D24, 0x00000800 @ gTrainerBackPic_Brendan + 0x800
-	.4byte 0x08D67524, 0x00000800 @ gTrainerBackPic_Brendan + 0x1000
-	.4byte 0x08D67D24, 0x00000800 @ gTrainerBackPic_Brendan + 0x1800
+	.4byte gTrainerBackPic_Brendan, 0x00000800 @ gTrainerBackPic_Brendan + 0x0
+	.4byte gTrainerBackPic_Brendan + 0x800, 0x00000800 @ gTrainerBackPic_Brendan + 0x800
+	.4byte gTrainerBackPic_Brendan + 0x1000, 0x00000800 @ gTrainerBackPic_Brendan + 0x1000
+	.4byte gTrainerBackPic_Brendan + 0x1800, 0x00000800 @ gTrainerBackPic_Brendan + 0x1800
 
 	.globl gTrainerBackPicTable_May
 gTrainerBackPicTable_May: @ 0x082D2CD8
-	.4byte 0x08D68524, 0x00000800 @ gTrainerBackPic_May + 0x0
-	.4byte 0x08D68D24, 0x00000800 @ gTrainerBackPic_May + 0x800
-	.4byte 0x08D69524, 0x00000800 @ gTrainerBackPic_May + 0x1000
-	.4byte 0x08D69D24, 0x00000800 @ gTrainerBackPic_May + 0x1800
+	.4byte gTrainerBackPic_Brendan + 0x2000, 0x00000800 @ gTrainerBackPic_May + 0x0
+	.4byte gTrainerBackPic_May + 0x800, 0x00000800 @ gTrainerBackPic_May + 0x800
+	.4byte gTrainerBackPic_May + 0x1000, 0x00000800 @ gTrainerBackPic_May + 0x1000
+	.4byte gTrainerBackPic_May + 0x1800, 0x00000800 @ gTrainerBackPic_May + 0x1800
 
 	.globl gTrainerBackPicTable_Red
 gTrainerBackPicTable_Red: @ 0x082D2CF8
-	.4byte 0x08D6A524, 0x00000800 @ gTrainerBackPic_Red + 0x0
-	.4byte 0x08D6AD24, 0x00000800 @ gTrainerBackPic_Red + 0x800
-	.4byte 0x08D6B524, 0x00000800 @ gTrainerBackPic_Red + 0x1000
-	.4byte 0x08D6BD24, 0x00000800 @ gTrainerBackPic_Red + 0x1800
-	.4byte 0x08D6C524, 0x00000800 @ gTrainerBackPic_Red + 0x2000
+	.4byte gTrainerBackPic_May + 0x2000, 0x00000800 @ gTrainerBackPic_Red + 0x0
+	.4byte gTrainerBackPic_Red + 0x800, 0x00000800 @ gTrainerBackPic_Red + 0x800
+	.4byte gTrainerBackPic_Red + 0x1000, 0x00000800 @ gTrainerBackPic_Red + 0x1000
+	.4byte gTrainerBackPic_Red + 0x1800, 0x00000800 @ gTrainerBackPic_Red + 0x1800
+	.4byte gTrainerBackPic_Red + 0x2000, 0x00000800 @ gTrainerBackPic_Red + 0x2000
 
 	.globl gTrainerBackPicTable_Leaf
 gTrainerBackPicTable_Leaf: @ 0x082D2D20
-	.4byte 0x08D6CD24, 0x00000800 @ gTrainerBackPic_Leaf + 0x0
-	.4byte 0x08D6D524, 0x00000800 @ gTrainerBackPic_Leaf + 0x800
-	.4byte 0x08D6DD24, 0x00000800 @ gTrainerBackPic_Leaf + 0x1000
-	.4byte 0x08D6E524, 0x00000800 @ gTrainerBackPic_Leaf + 0x1800
-	.4byte 0x08D6ED24, 0x00000800 @ gTrainerBackPic_Leaf + 0x2000
+	.4byte gTrainerBackPic_Leaf, 0x00000800 @ gTrainerBackPic_Leaf + 0x0
+	.4byte gTrainerBackPic_Leaf + 0x800, 0x00000800 @ gTrainerBackPic_Leaf + 0x800
+	.4byte gTrainerBackPic_Leaf + 0x1000, 0x00000800 @ gTrainerBackPic_Leaf + 0x1000
+	.4byte gTrainerBackPic_Leaf + 0x1800, 0x00000800 @ gTrainerBackPic_Leaf + 0x1800
+	.4byte gTrainerBackPic_Leaf + 0x2000, 0x00000800 @ gTrainerBackPic_Leaf + 0x2000
 
 	.globl gTrainerBackPicTable_RubySapphireBrendan
 gTrainerBackPicTable_RubySapphireBrendan: @ 0x082D2D48
-	.4byte 0x08D6F524, 0x00000800 @ gTrainerBackPic_RubySapphireBrendan + 0x0
-	.4byte 0x08D6FD24, 0x00000800 @ gTrainerBackPic_RubySapphireBrendan + 0x800
-	.4byte 0x08D70524, 0x00000800 @ gTrainerBackPic_RubySapphireBrendan + 0x1000
-	.4byte 0x08D70D24, 0x00000800 @ gTrainerBackPic_RubySapphireBrendan + 0x1800
+	.4byte gTrainerBackPic_RubySapphireBrendan, 0x00000800 @ gTrainerBackPic_RubySapphireBrendan + 0x0
+	.4byte gTrainerBackPic_RubySapphireBrendan + 0x800, 0x00000800 @ gTrainerBackPic_RubySapphireBrendan + 0x800
+	.4byte gTrainerBackPic_RubySapphireBrendan + 0x1000, 0x00000800 @ gTrainerBackPic_RubySapphireBrendan + 0x1000
+	.4byte gTrainerBackPic_RubySapphireBrendan + 0x1800, 0x00000800 @ gTrainerBackPic_RubySapphireBrendan + 0x1800
 
 	.globl gTrainerBackPicTable_RubySapphireMay
 gTrainerBackPicTable_RubySapphireMay: @ 0x082D2D68
-	.4byte 0x08D71524, 0x00000800 @ gTrainerBackPic_RubySapphireMay + 0x0
-	.4byte 0x08D71D24, 0x00000800 @ gTrainerBackPic_RubySapphireMay + 0x800
-	.4byte 0x08D72524, 0x00000800 @ gTrainerBackPic_RubySapphireMay + 0x1000
-	.4byte 0x08D72D24, 0x00000800 @ gTrainerBackPic_RubySapphireMay + 0x1800
+	.4byte gTrainerBackPic_RubySapphireBrendan + 0x2000, 0x00000800 @ gTrainerBackPic_RubySapphireMay + 0x0
+	.4byte gTrainerBackPic_RubySapphireMay + 0x800, 0x00000800 @ gTrainerBackPic_RubySapphireMay + 0x800
+	.4byte gTrainerBackPic_RubySapphireMay + 0x1000, 0x00000800 @ gTrainerBackPic_RubySapphireMay + 0x1000
+	.4byte gTrainerBackPic_RubySapphireMay + 0x1800, 0x00000800 @ gTrainerBackPic_RubySapphireMay + 0x1800
 
 	.globl gTrainerBackPicTable_Wally
 gTrainerBackPicTable_Wally: @ 0x082D2D88
-	.4byte 0x08D73524, 0x00000800 @ gTrainerBackPic_Wally + 0x0
-	.4byte 0x08D73D24, 0x00000800 @ gTrainerBackPic_Wally + 0x800
-	.4byte 0x08D74524, 0x00000800 @ gTrainerBackPic_Wally + 0x1000
-	.4byte 0x08D74D24, 0x00000800 @ gTrainerBackPic_Wally + 0x1800
+	.4byte gTrainerBackPic_RubySapphireMay + 0x2000, 0x00000800 @ gTrainerBackPic_Wally + 0x0
+	.4byte gTrainerBackPic_Wally + 0x800, 0x00000800 @ gTrainerBackPic_Wally + 0x800
+	.4byte gTrainerBackPic_Wally + 0x1000, 0x00000800 @ gTrainerBackPic_Wally + 0x1000
+	.4byte gTrainerBackPic_Wally + 0x1800, 0x00000800 @ gTrainerBackPic_Wally + 0x1800
 
 	.globl gTrainerBackPicTable_Steven
 gTrainerBackPicTable_Steven: @ 0x082D2DA8
-	.4byte 0x08D75524, 0x00000800 @ gTrainerBackPic_Steven + 0x0
-	.4byte 0x08D75D24, 0x00000800 @ gTrainerBackPic_Steven + 0x800
-	.4byte 0x08D76524, 0x00000800 @ gTrainerBackPic_Steven + 0x1000
-	.4byte 0x08D76D24, 0x00000800 @ gTrainerBackPic_Steven + 0x1800
+	.4byte gTrainerBackPic_Wally + 0x2000, 0x00000800 @ gTrainerBackPic_Steven + 0x0
+	.4byte gTrainerBackPic_Steven + 0x800, 0x00000800 @ gTrainerBackPic_Steven + 0x800
+	.4byte gTrainerBackPic_Steven + 0x1000, 0x00000800 @ gTrainerBackPic_Steven + 0x1000
+	.4byte gTrainerBackPic_Steven + 0x1800, 0x00000800 @ gTrainerBackPic_Steven + 0x1800
 
 sAnim_GeneralFrame0: @ 0x082D2DC8
 	.2byte 0x0000, 0x0000 @ frame=0, duration=0

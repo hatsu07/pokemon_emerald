@@ -1,217 +1,434 @@
 	.globl gUnknown_846F3AC
 gUnknown_846F3AC: @ 0x0846F3AC
-	@ analyzed canonical ROM range 0x0846F3AC-0x0846F3BF
-sAnalyzedData_0846F3AC: @ 0x0846F3AC
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0004, 0xFFFF, 0x0004, 0x0000, 0x0004, 0x0100, 0x0004, 0x0200
-	.2byte 0x0000, 0x0000
+	.globl gDoorOpenAnimFrames
+gDoorOpenAnimFrames:
+	.byte 4, 0
+	.2byte 0xFFFF
+	.byte 4, 0
+	.2byte 0x0000
+	.byte 4, 0
+	.2byte 0x0100
+	.byte 4, 0
+	.2byte 0x0200
+	.byte 0, 0
+	.2byte 0x0000
+
 	.globl gUnknown_846F3C0
 gUnknown_846F3C0: @ 0x0846F3C0
-	@ analyzed canonical ROM range 0x0846F3C0-0x0846F3D3
-sAnalyzedData_0846F3C0: @ 0x0846F3C0
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0004, 0x0200, 0x0004, 0x0100, 0x0004, 0x0000, 0x0004, 0xFFFF
-	.2byte 0x0000, 0x0000
+	.globl gDoorCloseAnimFrames
+gDoorCloseAnimFrames:
+	.byte 4, 0
+	.2byte 0x0200
+	.byte 4, 0
+	.2byte 0x0100
+	.byte 4, 0
+	.2byte 0x0000
+	.byte 4, 0
+	.2byte 0xFFFF
+	.byte 0, 0
+	.2byte 0x0000
+
 	.globl gUnknown_846F3D4
 gUnknown_846F3D4: @ 0x0846F3D4
-	@ analyzed canonical ROM range 0x0846F3D4-0x0846F593
-sAnalyzedData_0846F3D4: @ 0x0846F3D4
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0004, 0xFFFF, 0x0004, 0x0000, 0x0004, 0x0200, 0x0004, 0x0400
-	.2byte 0x0000, 0x0000, 0x0004, 0x0400, 0x0004, 0x0200, 0x0004, 0x0000
-	.2byte 0x0004, 0xFFFF, 0x0000, 0x0000, 0x0101, 0x0101, 0x0101, 0x0101
-	.2byte 0x0101, 0x0101, 0x0101, 0x0101, 0x0505, 0x0505, 0x0505, 0x0505
-	.2byte 0x0000, 0x0101, 0x0101, 0x0101, 0x0A0A, 0x0606, 0x0606, 0x0606
-	.2byte 0x0808, 0x0808, 0x0808, 0x0808, 0x0B0B, 0x0B0B, 0x0B0B, 0x0B0B
-	.2byte 0x0A0A, 0x0A0A, 0x0A0A, 0x0A0A, 0x0707, 0x0707, 0x0707, 0x0707
-	.2byte 0x0808, 0x0808, 0x0808, 0x0808, 0x0A0A, 0x0909, 0x0909, 0x0909
-	.2byte 0x0909, 0x0101, 0x0101, 0x0101, 0x0808, 0x0808, 0x0808, 0x0808
-	.2byte 0x0909, 0x0909, 0x0909, 0x0909, 0x0606, 0x0606, 0x0606, 0x0606
-	.2byte 0x0606, 0x0606, 0x0606, 0x0606, 0x0000, 0x0505, 0x0505, 0x0505
-	.2byte 0x0606, 0x0101, 0x0101, 0x0101, 0x0707, 0x0707, 0x0707, 0x0707
-	.2byte 0x0606, 0x0505, 0x0505, 0x0505, 0x0505, 0x0505, 0x0505, 0x0505
-	.2byte 0x0101, 0x0101, 0x0101, 0x0101, 0x0606, 0x0606, 0x0606, 0x0606
-	.2byte 0x0707, 0x0707, 0x0707, 0x0707, 0x0505, 0x0505, 0x0505, 0x0505
-	.2byte 0x0909, 0x0909, 0x0909, 0x0909, 0x0808, 0x0808, 0x0808, 0x0808
-	.2byte 0x0606, 0x0606, 0x0606, 0x0606, 0x0707, 0x0707, 0x0707, 0x0707
-	.2byte 0x0B0B, 0x0707, 0x0707, 0x0707, 0x0707, 0x0707, 0x0707, 0x0707
-	.2byte 0x0606, 0x0707, 0x0707, 0x0707, 0x0909, 0x0909, 0x0909, 0x0909
-	.2byte 0x0707, 0x0707, 0x0707, 0x0707, 0x0909, 0x0909, 0x0909, 0x0909
-	.2byte 0x0101, 0x0101, 0x0101, 0x0101, 0x0909, 0x0909, 0x0909, 0x0909
-	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0505, 0x0505, 0x0505, 0x0505
-	.2byte 0x0707, 0x0707, 0x0707, 0x0707, 0x0707, 0x0707, 0x0707, 0x0707
-	.2byte 0x0707, 0x0707, 0x0707, 0x0707, 0x0101, 0x0101, 0x0101, 0x0101
-	.2byte 0x0707, 0x0707, 0x0707, 0x0707, 0x0707, 0x0707, 0x0707, 0x0707
-	.2byte 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101
-	.2byte 0x0909, 0x0707, 0x0707, 0x0707, 0x0909, 0x0909, 0x0909, 0x0909
-	.2byte 0x0707, 0x0707, 0x0707, 0x0707, 0x0909, 0x0707, 0x0707, 0x0707
+	.globl gBigDoorOpenAnimFrames
+gBigDoorOpenAnimFrames:
+	.byte 4, 0
+	.2byte 0xFFFF
+	.byte 4, 0
+	.2byte 0x0000
+	.byte 4, 0
+	.2byte 0x0200
+	.byte 4, 0
+	.2byte 0x0400
+	.byte 0, 0
+	.2byte 0x0000
+
+	.globl gBigDoorCloseAnimFrames
+gBigDoorCloseAnimFrames:
+	.byte 4, 0
+	.2byte 0x0400
+	.byte 4, 0
+	.2byte 0x0200
+	.byte 4, 0
+	.2byte 0x0000
+	.byte 4, 0
+	.2byte 0xFFFF
+	.byte 0, 0
+	.2byte 0x0000
+
+gDoorAnimPalettes_General: @ 0x0846F3FC
+	.byte 1, 1, 1, 1, 1, 1, 1, 1
+
+gDoorAnimPalettes_PokeCenter: @ 0x0846F404
+	.byte 1, 1, 1, 1, 1, 1, 1, 1
+
+gDoorAnimPalettes_Gym: @ 0x0846F40C
+	.byte 5, 5, 5, 5, 5, 5, 5, 5
+
+gDoorAnimPalettes_PokeMart: @ 0x0846F414
+	.byte 0, 0, 1, 1, 1, 1, 1, 1
+
+gDoorAnimPalettes_Littleroot: @ 0x0846F41C
+	.byte 10, 10, 6, 6, 6, 6, 6, 6
+
+gDoorAnimPalettes_BirchsLab: @ 0x0846F424
+	.byte 8, 8, 8, 8, 8, 8, 8, 8
+
+gDoorAnimPalettes_RustboroTan: @ 0x0846F42C
+	.byte 11, 11, 11, 11, 11, 11, 11, 11
+
+gDoorAnimPalettes_RustboroGray: @ 0x0846F434
+	.byte 10, 10, 10, 10, 10, 10, 10, 10
+
+gDoorAnimPalettes_FallarborLightRoof: @ 0x0846F43C
+	.byte 7, 7, 7, 7, 7, 7, 7, 7
+
+gDoorAnimPalettes_Lilycove: @ 0x0846F444
+	.byte 8, 8, 8, 8, 8, 8, 8, 8
+
+gDoorAnimPalettes_Oldale: @ 0x0846F44C
+	.byte 10, 10, 9, 9, 9, 9, 9, 9
+
+gDoorAnimPalettes_Mossdeep: @ 0x0846F454
+	.byte 9, 9, 1, 1, 1, 1, 1, 1
+
+gDoorAnimPalettes_PokemonLeague: @ 0x0846F45C
+	.byte 8, 8, 8, 8, 8, 8, 8, 8
+
+gDoorAnimPalettes_Pacifidlog: @ 0x0846F464
+	.byte 9, 9, 9, 9, 9, 9, 9, 9
+
+gDoorAnimPalettes_SootopolisPeakedRoof: @ 0x0846F46C
+	.byte 6, 6, 6, 6, 6, 6, 6, 6
+
+gDoorAnimPalettes_Sootopolis: @ 0x0846F474
+	.byte 6, 6, 6, 6, 6, 6, 6, 6
+
+gDoorAnimPalettes_Dewford: @ 0x0846F47C
+	.byte 0, 0, 5, 5, 5, 5, 5, 5
+
+gDoorAnimPalettes_Slateport: @ 0x0846F484
+	.byte 6, 6, 1, 1, 1, 1, 1, 1
+
+gDoorAnimPalettes_Mauville: @ 0x0846F48C
+	.byte 7, 7, 7, 7, 7, 7, 7, 7
+
+gDoorAnimPalettes_Verdanturf: @ 0x0846F494
+	.byte 6, 6, 5, 5, 5, 5, 5, 5
+
+gDoorAnimPalettes_LilycoveWooden: @ 0x0846F49C
+	.byte 5, 5, 5, 5, 5, 5, 5, 5
+
+gDoorAnimPalettes_Contest: @ 0x0846F4A4
+	.byte 1, 1, 1, 1, 1, 1, 1, 1
+
+gDoorAnimPalettes_PetalburgGym: @ 0x0846F4AC
+	.byte 6, 6, 6, 6, 6, 6, 6, 6
+
+gDoorAnimPalettes_CyclingRoad: @ 0x0846F4B4
+	.byte 7, 7, 7, 7, 7, 7, 7, 7
+
+gDoorAnimPalettes_LilycoveDeptStore: @ 0x0846F4BC
+	.byte 5, 5, 5, 5, 5, 5, 5, 5
+
+gDoorAnimPalettes_SafariZone: @ 0x0846F4C4
+	.byte 9, 9, 9, 9, 9, 9, 9, 9
+
+gDoorAnimPalettes_MossdeepSpaceCenter: @ 0x0846F4CC
+	.byte 8, 8, 8, 8, 8, 8, 8, 8
+
+gDoorAnimPalettes_CableClub: @ 0x0846F4D4
+	.byte 6, 6, 6, 6, 6, 6, 6, 6
+
+gDoorAnimPalettes_AbandonedShip: @ 0x0846F4DC
+	.byte 7, 7, 7, 7, 7, 7, 7, 7
+
+gDoorAnimPalettes_FallarborDarkRoof: @ 0x0846F4E4
+	.byte 11, 11, 7, 7, 7, 7, 7, 7
+
+gDoorAnimPalettes_AbandonedShipRoom: @ 0x0846F4EC
+	.byte 7, 7, 7, 7, 7, 7, 7, 7
+
+gDoorAnimPalettes_LilycoveDeptStoreElevator: @ 0x0846F4F4
+	.byte 6, 6, 7, 7, 7, 7, 7, 7
+
+gDoorAnimPalettes_BattleTowerOld: @ 0x0846F4FC
+	.byte 9, 9, 9, 9, 9, 9, 9, 9
+
+gDoorAnimPalettes_BattleTowerElevator: @ 0x0846F504
+	.byte 7, 7, 7, 7, 7, 7, 7, 7
+
+gDoorAnimPalettes_UnusedBattleFrontier: @ 0x0846F50C
+	.byte 9, 9, 9, 9, 9, 9, 9, 9
+
+gDoorAnimPalettes_BattleDome: @ 0x0846F514
+	.byte 1, 1, 1, 1, 1, 1, 1, 1
+
+gDoorAnimPalettes_BattleFactory: @ 0x0846F51C
+	.byte 9, 9, 9, 9, 9, 9, 9, 9
+
+gDoorAnimPalettes_BattleTower: @ 0x0846F524
+	.byte 0, 0, 0, 0, 0, 0, 0, 0
+
+gDoorAnimPalettes_BattleArena: @ 0x0846F52C
+	.byte 5, 5, 5, 5, 5, 5, 5, 5
+
+gDoorAnimPalettes_BattleArenaLobby: @ 0x0846F534
+	.byte 7, 7, 7, 7, 7, 7, 7, 7
+
+gDoorAnimPalettes_BattleDomeLobby: @ 0x0846F53C
+	.byte 7, 7, 7, 7, 7, 7, 7, 7
+
+gDoorAnimPalettes_BattlePalaceLobby: @ 0x0846F544
+	.byte 7, 7, 7, 7, 7, 7, 7, 7
+
+gDoorAnimPalettes_BattleTent: @ 0x0846F54C
+	.byte 1, 1, 1, 1, 1, 1, 1, 1
+
+gDoorAnimPalettes_BattleDomeCorridor: @ 0x0846F554
+	.byte 7, 7, 7, 7, 7, 7, 7, 7
+
+gDoorAnimPalettes_BattleTowerMultiCorridor: @ 0x0846F55C
+	.byte 7, 7, 7, 7, 7, 7, 7, 7
+
+gDoorAnimPalettes_Unused: @ 0x0846F564
+	.byte 1, 1, 1, 1, 1, 1, 1, 1
+
+gDoorAnimPalettes_BattleFrontier: @ 0x0846F56C
+	.byte 1, 1, 1, 1, 1, 1, 1, 1
+
+gDoorAnimPalettes_BattleDomePreBattleRoom: @ 0x0846F574
+	.byte 9, 9, 7, 7, 7, 7, 7, 7
+
+gDoorAnimPalettes_BattleTentInterior: @ 0x0846F57C
+	.byte 9, 9, 9, 9, 9, 9, 9, 9
+
+gDoorAnimPalettes_TrainerHillLobbyElevator: @ 0x0846F584
+	.byte 7, 7, 7, 7, 7, 7, 7, 7
+
+gDoorAnimPalettes_TrainerHillRoofElevator: @ 0x0846F58C
+	.byte 9, 9, 7, 7, 7, 7, 7, 7
+
 	.globl gUnknown_846F594
+	.globl gDoorAnimGraphicsTable
 gUnknown_846F594: @ 0x0846F594
-	@ analyzed canonical ROM range 0x0846F594-0x0846F81B
-sAnalyzedData_0846F594: @ 0x0846F594
-	@ pointer/nullable table
-	.4byte 0x01000021 @ +0x0
-	.4byte 0x084603AC @ +0x4
-	.4byte 0x0846F3FC @ +0x8
-	.4byte 0x01010061 @ +0xC
-	.4byte 0x084606CC @ +0x10
-	.4byte 0x0846F404 @ +0x14
-	.4byte 0x010101CD @ +0x18
-	.4byte 0x084609CC @ +0x1C
-	.4byte 0x0846F40C @ +0x20
-	.4byte 0x01010041 @ +0x24
-	.4byte 0x08460CCC @ +0x28
-	.4byte 0x0846F414 @ +0x2C
-	.4byte 0x01000248 @ +0x30
-	.4byte 0x0845F40C @ +0x34
-	.4byte 0x0846F41C @ +0x38
-	.4byte 0x01000249 @ +0x3C
-	.4byte 0x0845F72C @ +0x40
-	.4byte 0x0846F424 @ +0x44
-	.4byte 0x0100022F @ +0x48
-	.4byte 0x08460FCC @ +0x4C
-	.4byte 0x0846F42C @ +0x50
-	.4byte 0x0100021F @ +0x54
-	.4byte 0x084612EC @ +0x58
-	.4byte 0x0846F434 @ +0x5C
-	.4byte 0x010002A5 @ +0x60
-	.4byte 0x0845FA4C @ +0x64
-	.4byte 0x0846F43C @ +0x68
-	.4byte 0x01000287 @ +0x6C
-	.4byte 0x0846160C @ +0x70
-	.4byte 0x0846F44C @ +0x74
-	.4byte 0x010002AC @ +0x78
-	.4byte 0x084674EC @ +0x7C
-	.4byte 0x0846F48C @ +0x80
-	.4byte 0x010003A1 @ +0x84
-	.4byte 0x0846780C @ +0x88
-	.4byte 0x0846F494 @ +0x8C
-	.4byte 0x010002DC @ +0x90
-	.4byte 0x08467B2C @ +0x94
-	.4byte 0x0846F484 @ +0x98
-	.4byte 0x01000225 @ +0x9C
-	.4byte 0x08467E4C @ +0xA0
-	.4byte 0x0846F47C @ +0xA4
-	.4byte 0x010101DB @ +0xA8
-	.4byte 0x0846816C @ +0xAC
-	.4byte 0x0846F4A4 @ +0xB0
-	.4byte 0x01000246 @ +0xB4
-	.4byte 0x0845FD6C @ +0xB8
-	.4byte 0x0846F444 @ +0xBC
-	.4byte 0x0100028E @ +0xC0
-	.4byte 0x0846008C @ +0xC4
-	.4byte 0x0846F49C @ +0xC8
-	.4byte 0x010002A1 @ +0xCC
-	.4byte 0x0846848C @ +0xD0
-	.4byte 0x0846F454 @ +0xD4
-	.4byte 0x0100021C @ +0xD8
-	.4byte 0x084687AC @ +0xDC
-	.4byte 0x0846F46C @ +0xE0
-	.4byte 0x0100021E @ +0xE4
-	.4byte 0x08468ACC @ +0xE8
-	.4byte 0x0846F474 @ +0xEC
-	.4byte 0x0101021D @ +0xF0
-	.4byte 0x08468DEC @ +0xF4
-	.4byte 0x0846F45C @ +0xF8
-	.4byte 0x0100021A @ +0xFC
-	.4byte 0x0846910C @ +0x100
-	.4byte 0x0846F464 @ +0x104
-	.4byte 0x01000224 @ +0x108
-	.4byte 0x0846942C @ +0x10C
-	.4byte 0x0846F4AC @ +0x110
-	.4byte 0x01000289 @ +0x114
-	.4byte 0x0846974C @ +0x118
-	.4byte 0x0846F4B4 @ +0x11C
-	.4byte 0x0101030C @ +0x120
-	.4byte 0x08469A6C @ +0x124
-	.4byte 0x0846F4BC @ +0x128
-	.4byte 0x0101032D @ +0x12C
-	.4byte 0x08469D8C @ +0x130
-	.4byte 0x0846F4C4 @ +0x134
-	.4byte 0x010102ED @ +0x138
-	.4byte 0x0846A0AC @ +0x13C
-	.4byte 0x0846F4CC @ +0x140
-	.4byte 0x01010264 @ +0x144
-	.4byte 0x0846A3CC @ +0x148
-	.4byte 0x0846F4D4 @ +0x14C
-	.4byte 0x0100022B @ +0x150
-	.4byte 0x0846A6EC @ +0x154
-	.4byte 0x0846F4DC @ +0x158
-	.4byte 0x010002F7 @ +0x15C
-	.4byte 0x0846AA0C @ +0x160
-	.4byte 0x0846F4E4 @ +0x164
-	.4byte 0x01000297 @ +0x168
-	.4byte 0x0846AD2C @ +0x16C
-	.4byte 0x0846F4EC @ +0x170
-	.4byte 0x01010285 @ +0x174
-	.4byte 0x0846B04C @ +0x178
-	.4byte 0x0846F4F4 @ +0x17C
-	.4byte 0x0101025D @ +0x180
-	.4byte 0x0846B36C @ +0x184
-	.4byte 0x0846F4FC @ +0x188
-	.4byte 0x0101020E @ +0x18C
-	.4byte 0x0846B68C @ +0x190
-	.4byte 0x0846F504 @ +0x194
-	.4byte 0x010103B0 @ +0x198
-	.4byte 0x0846B9AC @ +0x19C
-	.4byte 0x0846F50C @ +0x1A0
-	.4byte 0x0101028A @ +0x1A4
-	.4byte 0x0846BCCC @ +0x1A8
-	.4byte 0x0846F514 @ +0x1AC
-	.4byte 0x01010263 @ +0x1B0
-	.4byte 0x0846BFEC @ +0x1B4
-	.4byte 0x0846F51C @ +0x1B8
-	.4byte 0x01010329 @ +0x1BC
-	.4byte 0x0846C30C @ +0x1C0
-	.4byte 0x0846F524 @ +0x1C4
-	.4byte 0x01000291 @ +0x1C8
-	.4byte 0x0846C62C @ +0x1CC
-	.4byte 0x0846F52C @ +0x1D0
-	.4byte 0x0102021B @ +0x1D4
-	.4byte 0x0846C94C @ +0x1D8
-	.4byte 0x0846F534 @ +0x1DC
-	.4byte 0x01010209 @ +0x1E0
-	.4byte 0x0846CC6C @ +0x1E4
-	.4byte 0x0846F53C @ +0x1E8
-	.4byte 0x01000219 @ +0x1EC
-	.4byte 0x0846CF8C @ +0x1F0
-	.4byte 0x0846F544 @ +0x1F4
-	.4byte 0x01010393 @ +0x1F8
-	.4byte 0x0846D28C @ +0x1FC
-	.4byte 0x0846F54C @ +0x200
-	.4byte 0x010103D4 @ +0x204
-	.4byte 0x0846D28C @ +0x208
-	.4byte 0x0846F54C @ +0x20C
-	.4byte 0x0101036C @ +0x210
-	.4byte 0x0846D28C @ +0x214
-	.4byte 0x0846F54C @ +0x218
-	.4byte 0x0101025E @ +0x21C
-	.4byte 0x0846D6AC @ +0x220
-	.4byte 0x0846F554 @ +0x224
-	.4byte 0x020102AD @ +0x228
-	.4byte 0x0846D9CC @ +0x22C
-	.4byte 0x0846F55C @ +0x230
-	.4byte 0x010003FC @ +0x234
-	.4byte 0x0846DFEC @ +0x238
-	.4byte 0x0846F56C @ +0x23C
-	.4byte 0x01010396 @ +0x240
-	.4byte 0x0846E30C @ +0x244
-	.4byte 0x0846F56C @ +0x248
-	.4byte 0x0101020A @ +0x24C
-	.4byte 0x0846E62C @ +0x250
-	.4byte 0x0846F574 @ +0x254
-	.4byte 0x0101026B @ +0x258
-	.4byte 0x0846E94C @ +0x25C
-	.4byte 0x0846F57C @ +0x260
-	.4byte 0x0101032C @ +0x264
-	.4byte 0x0846ED6C @ +0x268
-	.4byte 0x0846F584 @ +0x26C
-	.4byte 0x01010383 @ +0x270
-	.4byte 0x0846F08C @ +0x274
-	.4byte 0x0846F58C @ +0x278
-	.4byte 0 @ +0x27C
-	.4byte 0 @ +0x280
-	.4byte 0 @ +0x284
+gDoorAnimGraphicsTable:
+	@ entry 0
+	.2byte 0x0021
+	.byte 0, 1
+	.4byte gDoorAnimTiles_General, gDoorAnimPalettes_General
+	@ entry 1
+	.2byte 0x0061
+	.byte 1, 1
+	.4byte gDoorAnimTiles_PokeCenter, gDoorAnimPalettes_PokeCenter
+	@ entry 2
+	.2byte 0x01CD
+	.byte 1, 1
+	.4byte gDoorAnimTiles_Gym, gDoorAnimPalettes_Gym
+	@ entry 3
+	.2byte 0x0041
+	.byte 1, 1
+	.4byte gDoorAnimTiles_PokeMart, gDoorAnimPalettes_PokeMart
+	@ entry 4
+	.2byte 0x0248
+	.byte 0, 1
+	.4byte gDoorAnimTiles_Littleroot, gDoorAnimPalettes_Littleroot
+	@ entry 5
+	.2byte 0x0249
+	.byte 0, 1
+	.4byte gDoorAnimTiles_BirchsLab, gDoorAnimPalettes_BirchsLab
+	@ entry 6
+	.2byte 0x022F
+	.byte 0, 1
+	.4byte gDoorAnimTiles_RustboroTan, gDoorAnimPalettes_RustboroTan
+	@ entry 7
+	.2byte 0x021F
+	.byte 0, 1
+	.4byte gDoorAnimTiles_RustboroGray, gDoorAnimPalettes_RustboroGray
+	@ entry 8
+	.2byte 0x02A5
+	.byte 0, 1
+	.4byte gDoorAnimTiles_FallarborLightRoof, gDoorAnimPalettes_FallarborLightRoof
+	@ entry 9
+	.2byte 0x0287
+	.byte 0, 1
+	.4byte gDoorAnimTiles_Oldale, gDoorAnimPalettes_Oldale
+	@ entry 10
+	.2byte 0x02AC
+	.byte 0, 1
+	.4byte gDoorAnimTiles_Mauville, gDoorAnimPalettes_Mauville
+	@ entry 11
+	.2byte 0x03A1
+	.byte 0, 1
+	.4byte gDoorAnimTiles_Verdanturf, gDoorAnimPalettes_Verdanturf
+	@ entry 12
+	.2byte 0x02DC
+	.byte 0, 1
+	.4byte gDoorAnimTiles_Slateport, gDoorAnimPalettes_Slateport
+	@ entry 13
+	.2byte 0x0225
+	.byte 0, 1
+	.4byte gDoorAnimTiles_Dewford, gDoorAnimPalettes_Dewford
+	@ entry 14
+	.2byte 0x01DB
+	.byte 1, 1
+	.4byte gDoorAnimTiles_Contest, gDoorAnimPalettes_Contest
+	@ entry 15
+	.2byte 0x0246
+	.byte 0, 1
+	.4byte gDoorAnimTiles_Lilycove, gDoorAnimPalettes_Lilycove
+	@ entry 16
+	.2byte 0x028E
+	.byte 0, 1
+	.4byte gDoorAnimTiles_LilycoveWooden, gDoorAnimPalettes_LilycoveWooden
+	@ entry 17
+	.2byte 0x02A1
+	.byte 0, 1
+	.4byte gDoorAnimTiles_Mossdeep, gDoorAnimPalettes_Mossdeep
+	@ entry 18
+	.2byte 0x021C
+	.byte 0, 1
+	.4byte gDoorAnimTiles_SootopolisPeakedRoof, gDoorAnimPalettes_SootopolisPeakedRoof
+	@ entry 19
+	.2byte 0x021E
+	.byte 0, 1
+	.4byte gDoorAnimTiles_Sootopolis, gDoorAnimPalettes_Sootopolis
+	@ entry 20
+	.2byte 0x021D
+	.byte 1, 1
+	.4byte gDoorAnimTiles_PokemonLeague, gDoorAnimPalettes_PokemonLeague
+	@ entry 21
+	.2byte 0x021A
+	.byte 0, 1
+	.4byte gDoorAnimTiles_Pacifidlog, gDoorAnimPalettes_Pacifidlog
+	@ entry 22
+	.2byte 0x0224
+	.byte 0, 1
+	.4byte gDoorAnimTiles_PetalburgGym, gDoorAnimPalettes_PetalburgGym
+	@ entry 23
+	.2byte 0x0289
+	.byte 0, 1
+	.4byte gDoorAnimTiles_CyclingRoad, gDoorAnimPalettes_CyclingRoad
+	@ entry 24
+	.2byte 0x030C
+	.byte 1, 1
+	.4byte gDoorAnimTiles_LilycoveDeptStore, gDoorAnimPalettes_LilycoveDeptStore
+	@ entry 25
+	.2byte 0x032D
+	.byte 1, 1
+	.4byte gDoorAnimTiles_SafariZone, gDoorAnimPalettes_SafariZone
+	@ entry 26
+	.2byte 0x02ED
+	.byte 1, 1
+	.4byte gDoorAnimTiles_MossdeepSpaceCenter, gDoorAnimPalettes_MossdeepSpaceCenter
+	@ entry 27
+	.2byte 0x0264
+	.byte 1, 1
+	.4byte gDoorAnimTiles_CableClub, gDoorAnimPalettes_CableClub
+	@ entry 28
+	.2byte 0x022B
+	.byte 0, 1
+	.4byte gDoorAnimTiles_AbandonedShip, gDoorAnimPalettes_AbandonedShip
+	@ entry 29
+	.2byte 0x02F7
+	.byte 0, 1
+	.4byte gDoorAnimTiles_FallarborDarkRoof, gDoorAnimPalettes_FallarborDarkRoof
+	@ entry 30
+	.2byte 0x0297
+	.byte 0, 1
+	.4byte gDoorAnimTiles_AbandonedShipRoom, gDoorAnimPalettes_AbandonedShipRoom
+	@ entry 31
+	.2byte 0x0285
+	.byte 1, 1
+	.4byte gDoorAnimTiles_LilycoveDeptStoreElevator, gDoorAnimPalettes_LilycoveDeptStoreElevator
+	@ entry 32
+	.2byte 0x025D
+	.byte 1, 1
+	.4byte gDoorAnimTiles_BattleTowerOld, gDoorAnimPalettes_BattleTowerOld
+	@ entry 33
+	.2byte 0x020E
+	.byte 1, 1
+	.4byte gDoorAnimTiles_BattleTowerElevator, gDoorAnimPalettes_BattleTowerElevator
+	@ entry 34
+	.2byte 0x03B0
+	.byte 1, 1
+	.4byte gDoorAnimTiles_UnusedBattleFrontier, gDoorAnimPalettes_UnusedBattleFrontier
+	@ entry 35
+	.2byte 0x028A
+	.byte 1, 1
+	.4byte gDoorAnimTiles_BattleDome, gDoorAnimPalettes_BattleDome
+	@ entry 36
+	.2byte 0x0263
+	.byte 1, 1
+	.4byte gDoorAnimTiles_BattleFactory, gDoorAnimPalettes_BattleFactory
+	@ entry 37
+	.2byte 0x0329
+	.byte 1, 1
+	.4byte gDoorAnimTiles_BattleTower, gDoorAnimPalettes_BattleTower
+	@ entry 38
+	.2byte 0x0291
+	.byte 0, 1
+	.4byte gDoorAnimTiles_BattleArena, gDoorAnimPalettes_BattleArena
+	@ entry 39
+	.2byte 0x021B
+	.byte 2, 1
+	.4byte gDoorAnimTiles_BattleArenaLobby, gDoorAnimPalettes_BattleArenaLobby
+	@ entry 40
+	.2byte 0x0209
+	.byte 1, 1
+	.4byte gDoorAnimTiles_BattleDomeLobby, gDoorAnimPalettes_BattleDomeLobby
+	@ entry 41
+	.2byte 0x0219
+	.byte 0, 1
+	.4byte gDoorAnimTiles_BattlePalaceLobby, gDoorAnimPalettes_BattlePalaceLobby
+	@ entry 42
+	.2byte 0x0393
+	.byte 1, 1
+	.4byte gDoorAnimTiles_BattleTent, gDoorAnimPalettes_BattleTent
+	@ entry 43
+	.2byte 0x03D4
+	.byte 1, 1
+	.4byte gDoorAnimTiles_BattleTent, gDoorAnimPalettes_BattleTent
+	@ entry 44
+	.2byte 0x036C
+	.byte 1, 1
+	.4byte gDoorAnimTiles_BattleTent, gDoorAnimPalettes_BattleTent
+	@ entry 45
+	.2byte 0x025E
+	.byte 1, 1
+	.4byte gDoorAnimTiles_BattleDomeCorridor, gDoorAnimPalettes_BattleDomeCorridor
+	@ entry 46
+	.2byte 0x02AD
+	.byte 1, 2
+	.4byte gDoorAnimTiles_BattleTowerMultiCorridor, gDoorAnimPalettes_BattleTowerMultiCorridor
+	@ entry 47
+	.2byte 0x03FC
+	.byte 0, 1
+	.4byte gDoorAnimTiles_BattleFrontier, gDoorAnimPalettes_BattleFrontier
+	@ entry 48
+	.2byte 0x0396
+	.byte 1, 1
+	.4byte gDoorAnimTiles_BattleFrontierSliding, gDoorAnimPalettes_BattleFrontier
+	@ entry 49
+	.2byte 0x020A
+	.byte 1, 1
+	.4byte gDoorAnimTiles_BattleDomePreBattleRoom, gDoorAnimPalettes_BattleDomePreBattleRoom
+	@ entry 50
+	.2byte 0x026B
+	.byte 1, 1
+	.4byte gDoorAnimTiles_BattleTentInterior, gDoorAnimPalettes_BattleTentInterior
+	@ entry 51
+	.2byte 0x032C
+	.byte 1, 1
+	.4byte gDoorAnimTiles_TrainerHillLobbyElevator, gDoorAnimPalettes_TrainerHillLobbyElevator
+	@ entry 52
+	.2byte 0x0383
+	.byte 1, 1
+	.4byte gDoorAnimTiles_TrainerHillRoofElevator, gDoorAnimPalettes_TrainerHillRoofElevator
+	@ terminator
+	.2byte 0
+	.byte 0, 0
+	.4byte 0, 0
 	.globl gUnknown_846F81C
 gUnknown_846F81C: @ 0x0846F81C
 	.4byte MetatileBehavior_IsTrickHouseSlipperyFloor

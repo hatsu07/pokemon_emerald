@@ -697,71 +697,94 @@ sAnalyzedGfx_0851A9CC: @ 0x0851A9CC
 	.endif
 	.globl gUnknown_851AC0C
 gUnknown_851AC0C: @ 0x0851AC0C
-	@ analyzed canonical ROM range 0x0851AC0C-0x0851ACB3
-sAnalyzedData_0851AC0C: @ 0x0851AC0C
-	@ structured u16 table (semantic role inferred only to scalar width)
+	.globl gTitleScreenAlphaBlend
+gTitleScreenAlphaBlend:
+	@ 64 BLDALPHA values: (16,0)..(0,16), then held at (0,16)
 	.2byte 0x0010, 0x0110, 0x0210, 0x0310, 0x0410, 0x0510, 0x0610, 0x0710
 	.2byte 0x0810, 0x0910, 0x0A10, 0x0B10, 0x0C10, 0x0D10, 0x0E10, 0x0F10
 	.2byte 0x100F, 0x100E, 0x100D, 0x100C, 0x100B, 0x100A, 0x1009, 0x1008
 	.2byte 0x1007, 0x1006, 0x1005, 0x1004, 0x1003, 0x1002, 0x1001, 0x1000
-	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000
-	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000
-	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000
-	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000
-	.2byte 0x60A0, 0xC000, 0x0000, 0x0000, 0x20A0, 0x8000, 0x0000, 0x0000
-	.2byte 0x0000, 0x001E, 0xFFFF, 0x0000, 0x0040, 0x001E, 0xFFFF, 0x0000
-	.2byte 0xAC9C, 0x0851, 0xACA4, 0x0851
+	.fill 32, 2, 0x1000
+sVersionBannerLeftOamData: @ 0x0851AC8C
+	.2byte 0x60A0, 0xC000, 0x0000, 0x0000
+sVersionBannerRightOamData: @ 0x0851AC94
+	.2byte 0x20A0, 0x8000, 0x0000, 0x0000
+sVersionBannerLeftAnimSequence: @ 0x0851AC9C
+	.2byte 0x0000, 0x001E, 0xFFFF, 0x0000
+sVersionBannerRightAnimSequence: @ 0x0851ACA4
+	.2byte 0x0040, 0x001E, 0xFFFF, 0x0000
+sVersionBannerLeftAnimTable: @ 0x0851ACAC
+	.4byte sVersionBannerLeftAnimSequence
+sVersionBannerRightAnimTable: @ 0x0851ACB0
+	.4byte sVersionBannerRightAnimSequence
 	.globl gUnknown_851ACB4
 gUnknown_851ACB4: @ 0x0851ACB4
-	@ analyzed canonical ROM range 0x0851ACB4-0x0851ACCB
-sSpriteTemplate_0851ACB4: @ 0x0851ACB4
-	rodata_sprite_template 0x03E8, 0x03E8, 0x0851AC8C, 0x0851ACAC, 0, gDummySpriteAffineAnimTable, SpriteCB_VersionBannerLeft
+sVersionBannerLeftSpriteTemplate:
+	rodata_sprite_template 0x03E8, 0x03E8, sVersionBannerLeftOamData, sVersionBannerLeftAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCB_VersionBannerLeft
 	.globl gUnknown_851ACCC
 gUnknown_851ACCC: @ 0x0851ACCC
-	@ analyzed canonical ROM range 0x0851ACCC-0x0851ACE3
-sSpriteTemplate_0851ACCC: @ 0x0851ACCC
-	rodata_sprite_template 0x03E8, 0x03E8, 0x0851AC94, 0x0851ACB0, 0, gDummySpriteAffineAnimTable, SpriteCB_VersionBannerRight
+sVersionBannerRightSpriteTemplate:
+	rodata_sprite_template 0x03E8, 0x03E8, sVersionBannerRightOamData, sVersionBannerRightAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCB_VersionBannerRight
 	.globl gUnknown_851ACE4
 gUnknown_851ACE4: @ 0x0851ACE4
-	@ analyzed canonical ROM range 0x0851ACE4-0x0851AD73
-sAnalyzedData_0851ACE4: @ 0x0851ACE4
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x938C, 0x0851, 0x1000, 0x03E8, 0x0000, 0x0000, 0x0000, 0x0000
-	.2byte 0x40A0, 0x4000, 0x0000, 0x0000, 0x0001, 0x0004, 0xFFFF, 0x0000
-	.2byte 0x0005, 0x0004, 0xFFFF, 0x0000, 0x0009, 0x0004, 0xFFFF, 0x0000
-	.2byte 0x000D, 0x0004, 0xFFFF, 0x0000, 0x0011, 0x0004, 0xFFFF, 0x0000
-	.2byte 0x0015, 0x0004, 0xFFFF, 0x0000, 0x0019, 0x0004, 0xFFFF, 0x0000
-	.2byte 0x001D, 0x0004, 0xFFFF, 0x0000, 0x0021, 0x0004, 0xFFFF, 0x0000
-	.2byte 0x0025, 0x0004, 0xFFFF, 0x0000, 0xACFC, 0x0851, 0xAD04, 0x0851
-	.2byte 0xAD0C, 0x0851, 0xAD14, 0x0851, 0xAD1C, 0x0851, 0xAD24, 0x0851
-	.2byte 0xAD2C, 0x0851, 0xAD34, 0x0851, 0xAD3C, 0x0851, 0xAD44, 0x0851
+sSpriteSheet_EmeraldVersion:
+	.4byte 0x0851938C
+	.2byte 0x1000, 0x03E8
+	.fill 8, 1, 0
+sOamData_CopyrightBanner: @ 0x0851ACF4
+	.2byte 0x40A0, 0x4000, 0x0000, 0x0000
+sAnim_PressStart_0: @ 0x0851ACFC
+	.2byte 0x0001, 0x0004, 0xFFFF, 0x0000
+sAnim_PressStart_1: @ 0x0851AD04
+	.2byte 0x0005, 0x0004, 0xFFFF, 0x0000
+sAnim_PressStart_2: @ 0x0851AD0C
+	.2byte 0x0009, 0x0004, 0xFFFF, 0x0000
+sAnim_PressStart_3: @ 0x0851AD14
+	.2byte 0x000D, 0x0004, 0xFFFF, 0x0000
+sAnim_PressStart_4: @ 0x0851AD1C
+	.2byte 0x0011, 0x0004, 0xFFFF, 0x0000
+sAnim_Copyright_0: @ 0x0851AD24
+	.2byte 0x0015, 0x0004, 0xFFFF, 0x0000
+sAnim_Copyright_1: @ 0x0851AD2C
+	.2byte 0x0019, 0x0004, 0xFFFF, 0x0000
+sAnim_Copyright_2: @ 0x0851AD34
+	.2byte 0x001D, 0x0004, 0xFFFF, 0x0000
+sAnim_Copyright_3: @ 0x0851AD3C
+	.2byte 0x0021, 0x0004, 0xFFFF, 0x0000
+sAnim_Copyright_4: @ 0x0851AD44
+	.2byte 0x0025, 0x0004, 0xFFFF, 0x0000
+sStartCopyrightBannerAnimTable: @ 0x0851AD4C
+	.4byte sAnim_PressStart_0, sAnim_PressStart_1, sAnim_PressStart_2, sAnim_PressStart_3, sAnim_PressStart_4
+	.4byte sAnim_Copyright_0, sAnim_Copyright_1, sAnim_Copyright_2, sAnim_Copyright_3, sAnim_Copyright_4
 	.globl gUnknown_851AD74
 gUnknown_851AD74: @ 0x0851AD74
-	@ analyzed canonical ROM range 0x0851AD74-0x0851AD8B
-sSpriteTemplate_0851AD74: @ 0x0851AD74
-	rodata_sprite_template 0x03E9, 0x03E9, 0x0851ACF4, 0x0851AD4C, 0, gDummySpriteAffineAnimTable, SpriteCB_PressStartCopyrightBanner
+sStartCopyrightBannerSpriteTemplate:
+	rodata_sprite_template 0x03E9, 0x03E9, sOamData_CopyrightBanner, sStartCopyrightBannerAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCB_PressStartCopyrightBanner
 	.globl gUnknown_851AD8C
 gUnknown_851AD8C: @ 0x0851AD8C
-	@ analyzed canonical ROM range 0x0851AD8C-0x0851AD9B
-sAnalyzedData_0851AD8C: @ 0x0851AD8C
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x76F4, 0x0851, 0x0520, 0x03E9, 0x0000, 0x0000, 0x0000, 0x0000
+sSpriteSheet_PressStart:
+	.4byte 0x085176F4
+	.2byte 0x0520, 0x03E9
+	.fill 8, 1, 0
 	.globl gUnknown_851AD9C
 gUnknown_851AD9C: @ 0x0851AD9C
-	@ analyzed canonical ROM range 0x0851AD9C-0x0851ADBF
-sAnalyzedData_0851AD9C: @ 0x0851AD9C
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x76D4, 0x0851, 0x03E9, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
-	.2byte 0x00A0, 0xC000, 0x0000, 0x0000, 0x0000, 0x0004, 0xFFFF, 0x0000
-	.2byte 0xADB4, 0x0851
+sSpritePalette_PressStart:
+	.4byte 0x085176D4
+	.2byte 0x03E9, 0
+	.fill 8, 1, 0
+sPokemonLogoShineOamData: @ 0x0851ADAC
+	.2byte 0x00A0, 0xC000, 0x0000, 0x0000
+sPokemonLogoShineAnimSequence: @ 0x0851ADB4
+	.2byte 0x0000, 0x0004, 0xFFFF, 0x0000
+sPokemonLogoShineAnimTable: @ 0x0851ADBC
+	.4byte sPokemonLogoShineAnimSequence
 	.globl gUnknown_851ADC0
 gUnknown_851ADC0: @ 0x0851ADC0
-	@ analyzed canonical ROM range 0x0851ADC0-0x0851ADD7
-sSpriteTemplate_0851ADC0: @ 0x0851ADC0
-	rodata_sprite_template 0x03EA, 0x03E9, 0x0851ADAC, 0x0851ADBC, 0, gDummySpriteAffineAnimTable, SpriteCB_PokemonLogoShine
+sPokemonLogoShineSpriteTemplate:
+	rodata_sprite_template 0x03EA, 0x03E9, sPokemonLogoShineOamData, sPokemonLogoShineAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCB_PokemonLogoShine
 	.globl gUnknown_851ADD8
 gUnknown_851ADD8: @ 0x0851ADD8
-	@ analyzed canonical ROM range 0x0851ADD8-0x0851ADE7
-sAnalyzedData_0851ADD8: @ 0x0851ADD8
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0xA598, 0x0851, 0x0800, 0x03EA, 0x0000, 0x0000, 0x0000, 0x0000
+sPokemonLogoShineSpriteSheet:
+	.4byte 0x0851A598
+	.2byte 0x0800, 0x03EA
+	.fill 8, 1, 0

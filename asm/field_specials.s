@@ -1077,12 +1077,12 @@ _08138522:
 	ldr r0, _08138528
 	b _08138536
 	.align 2, 0
-_08138528: .4byte 0x08471E6C
+_08138528: .4byte gObjectEventPal_RubySapphireMay
 _0813852C:
 	ldr r0, _08138530
 	b _08138536
 	.align 2, 0
-_08138530: .4byte 0x0847D90C
+_08138530: .4byte gObjectEventPal_May
 _08138534:
 	ldr r0, _08138544
 _08138536:
@@ -1093,7 +1093,7 @@ _08138536:
 	bl LoadPalette
 	b _08138556
 	.align 2, 0
-_08138544: .4byte 0x08470C4C
+_08138544: .4byte gObjectEventPal_RubySapphireBrendan
 _08138548:
 	ldr r0, _0813855C
 	movs r2, #0x80
@@ -1106,7 +1106,7 @@ _08138556:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0813855C: .4byte 0x0847C6CC
+_0813855C: .4byte gObjectEventPal_Brendan
 	thumb_func_end LoadLinkPartnerEventObjectSpritePalette
 
 	thumb_func_start MauvilleGymSpecial1

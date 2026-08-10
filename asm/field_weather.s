@@ -1102,7 +1102,7 @@ _080AB100:
 	blo _080AB06C
 	b _080AB12A
 	.align 2, 0
-_080AB10C: .4byte 0x0851ADE8
+_080AB10C: .4byte gWeatherGammaShiftTable
 _080AB110: .4byte 0x020377B4
 _080AB114: .4byte 0x020373B4
 _080AB118:
@@ -1444,7 +1444,7 @@ _080AB386:
 	bx r0
 	.align 2, 0
 _080AB3A0: .4byte 0x020373B4
-_080AB3A4: .4byte 0x0851ADE8
+_080AB3A4: .4byte gWeatherGammaShiftTable
 _080AB3A8: .4byte 0x020377B4
 	thumb_func_end ApplyDroughtGammaShiftWithBlend
 

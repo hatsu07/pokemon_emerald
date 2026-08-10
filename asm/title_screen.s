@@ -57,7 +57,7 @@ _080A9D32:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A9D38: .4byte 0x0851AC0C
+_080A9D38: .4byte gTitleScreenAlphaBlend
 	thumb_func_end SpriteCB_VersionBannerLeft
 
 	thumb_func_start SpriteCB_VersionBannerRight

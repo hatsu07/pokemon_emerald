@@ -391,382 +391,382 @@ gTrainerFrontPicCoords:
 gUnknown_82D8EE4: @ 0x082D8EE4
 	.globl gTrainerFrontPicTable
 gTrainerFrontPicTable:
-	.4byte 0x08D51E6C @ gTrainerFrontPic_Hiker
+	.4byte gTrainerFrontPic_Hiker @ gTrainerFrontPic_Hiker
 	.2byte 0x0800, 0 @ size, trainer pic index
-	.4byte 0x08D52314 @ gTrainerFrontPic_AquaGruntM
+	.4byte gTrainerFrontPic_AquaGruntM @ gTrainerFrontPic_AquaGruntM
 	.2byte 0x0800, 1 @ size, trainer pic index
-	.4byte 0x08D5269C @ gTrainerFrontPic_PokemonBreederF
+	.4byte gTrainerFrontPic_PokemonBreederF @ gTrainerFrontPic_PokemonBreederF
 	.2byte 0x0800, 2 @ size, trainer pic index
-	.4byte 0x08D529F8 @ gTrainerFrontPic_CoolTrainerM
+	.4byte gTrainerFrontPic_CoolTrainerM @ gTrainerFrontPic_CoolTrainerM
 	.2byte 0x0800, 3 @ size, trainer pic index
-	.4byte 0x08D52D08 @ gTrainerFrontPic_BirdKeeper
+	.4byte gTrainerFrontPic_BirdKeeper @ gTrainerFrontPic_BirdKeeper
 	.2byte 0x0800, 4 @ size, trainer pic index
-	.4byte 0x08D53068 @ gTrainerFrontPic_Collector
+	.4byte gTrainerFrontPic_Collector @ gTrainerFrontPic_Collector
 	.2byte 0x0800, 5 @ size, trainer pic index
-	.4byte 0x08D53494 @ gTrainerFrontPic_AquaGruntF
+	.4byte gTrainerFrontPic_AquaGruntF @ gTrainerFrontPic_AquaGruntF
 	.2byte 0x0800, 6 @ size, trainer pic index
-	.4byte 0x08D537F8 @ gTrainerFrontPic_SwimmerM
+	.4byte gTrainerFrontPic_SwimmerM @ gTrainerFrontPic_SwimmerM
 	.2byte 0x0800, 7 @ size, trainer pic index
-	.4byte 0x08D53AE0 @ gTrainerFrontPic_MagmaGruntM
+	.4byte gTrainerFrontPic_MagmaGruntM @ gTrainerFrontPic_MagmaGruntM
 	.2byte 0x0800, 8 @ size, trainer pic index
-	.4byte 0x08D53E88 @ gTrainerFrontPic_ExpertM
+	.4byte gTrainerFrontPic_ExpertM @ gTrainerFrontPic_ExpertM
 	.2byte 0x0800, 9 @ size, trainer pic index
-	.4byte 0x08D541F0 @ gTrainerFrontPic_AquaAdminM
+	.4byte gTrainerFrontPic_AquaAdminM @ gTrainerFrontPic_AquaAdminM
 	.2byte 0x0800, 10 @ size, trainer pic index
-	.4byte 0x08D545CC @ gTrainerFrontPic_BlackBelt
+	.4byte gTrainerFrontPic_BlackBelt @ gTrainerFrontPic_BlackBelt
 	.2byte 0x0800, 11 @ size, trainer pic index
-	.4byte 0x08D54958 @ gTrainerFrontPic_AquaAdminF
+	.4byte gTrainerFrontPic_AquaAdminF @ gTrainerFrontPic_AquaAdminF
 	.2byte 0x0800, 12 @ size, trainer pic index
-	.4byte 0x08D54D44 @ gTrainerFrontPic_AquaLeaderArchie
+	.4byte gTrainerFrontPic_AquaLeaderArchie @ gTrainerFrontPic_AquaLeaderArchie
 	.2byte 0x0800, 13 @ size, trainer pic index
-	.4byte 0x08D550A8 @ gTrainerFrontPic_HexManiac
+	.4byte gTrainerFrontPic_HexManiac @ gTrainerFrontPic_HexManiac
 	.2byte 0x0800, 14 @ size, trainer pic index
-	.4byte 0x08D5543C @ gTrainerFrontPic_AromaLady
+	.4byte gTrainerFrontPic_AromaLady @ gTrainerFrontPic_AromaLady
 	.2byte 0x0800, 15 @ size, trainer pic index
-	.4byte 0x08D55728 @ gTrainerFrontPic_RuinManiac
+	.4byte gTrainerFrontPic_RuinManiac @ gTrainerFrontPic_RuinManiac
 	.2byte 0x0800, 16 @ size, trainer pic index
-	.4byte 0x08D55AEC @ gTrainerFrontPic_Interviewer
+	.4byte gTrainerFrontPic_Interviewer @ gTrainerFrontPic_Interviewer
 	.2byte 0x0800, 17 @ size, trainer pic index
-	.4byte 0x08D55FB8 @ gTrainerFrontPic_TuberF
+	.4byte gTrainerFrontPic_TuberF @ gTrainerFrontPic_TuberF
 	.2byte 0x0800, 18 @ size, trainer pic index
-	.4byte 0x08D56284 @ gTrainerFrontPic_TuberM
+	.4byte gTrainerFrontPic_TuberM @ gTrainerFrontPic_TuberM
 	.2byte 0x0800, 19 @ size, trainer pic index
-	.4byte 0x08D56538 @ gTrainerFrontPic_CoolTrainerF
+	.4byte gTrainerFrontPic_CoolTrainerF @ gTrainerFrontPic_CoolTrainerF
 	.2byte 0x0800, 20 @ size, trainer pic index
-	.4byte 0x08D56874 @ gTrainerFrontPic_Lady
+	.4byte gTrainerFrontPic_Lady @ gTrainerFrontPic_Lady
 	.2byte 0x0800, 21 @ size, trainer pic index
-	.4byte 0x08D56C50 @ gTrainerFrontPic_Beauty
+	.4byte gTrainerFrontPic_Beauty @ gTrainerFrontPic_Beauty
 	.2byte 0x0800, 22 @ size, trainer pic index
-	.4byte 0x08D56F60 @ gTrainerFrontPic_RichBoy
+	.4byte gTrainerFrontPic_RichBoy @ gTrainerFrontPic_RichBoy
 	.2byte 0x0800, 23 @ size, trainer pic index
-	.4byte 0x08D5723C @ gTrainerFrontPic_ExpertF
+	.4byte gTrainerFrontPic_ExpertF @ gTrainerFrontPic_ExpertF
 	.2byte 0x0800, 24 @ size, trainer pic index
-	.4byte 0x08D57580 @ gTrainerFrontPic_Pokemaniac
+	.4byte gTrainerFrontPic_Pokemaniac @ gTrainerFrontPic_Pokemaniac
 	.2byte 0x0800, 25 @ size, trainer pic index
-	.4byte 0x08D57918 @ gTrainerFrontPic_MagmaGruntF
+	.4byte gTrainerFrontPic_MagmaGruntF @ gTrainerFrontPic_MagmaGruntF
 	.2byte 0x0800, 26 @ size, trainer pic index
-	.4byte 0x08D57CCC @ gTrainerFrontPic_Guitarist
+	.4byte gTrainerFrontPic_Guitarist @ gTrainerFrontPic_Guitarist
 	.2byte 0x0800, 27 @ size, trainer pic index
-	.4byte 0x08D58078 @ gTrainerFrontPic_Kindler
+	.4byte gTrainerFrontPic_Kindler @ gTrainerFrontPic_Kindler
 	.2byte 0x0800, 28 @ size, trainer pic index
-	.4byte 0x08D5840C @ gTrainerFrontPic_Camper
+	.4byte gTrainerFrontPic_Camper @ gTrainerFrontPic_Camper
 	.2byte 0x0800, 29 @ size, trainer pic index
-	.4byte 0x08D5871C @ gTrainerFrontPic_Picnicker
+	.4byte gTrainerFrontPic_Picnicker @ gTrainerFrontPic_Picnicker
 	.2byte 0x0800, 30 @ size, trainer pic index
-	.4byte 0x08D58A24 @ gTrainerFrontPic_BugManiac
+	.4byte gTrainerFrontPic_BugManiac @ gTrainerFrontPic_BugManiac
 	.2byte 0x0800, 31 @ size, trainer pic index
-	.4byte 0x08D58E9C @ gTrainerFrontPic_PokemonBreederM
+	.4byte gTrainerFrontPic_PokemonBreederM @ gTrainerFrontPic_PokemonBreederM
 	.2byte 0x0800, 32 @ size, trainer pic index
-	.4byte 0x08D591F4 @ gTrainerFrontPic_PsychicM
+	.4byte gTrainerFrontPic_PsychicM @ gTrainerFrontPic_PsychicM
 	.2byte 0x0800, 33 @ size, trainer pic index
-	.4byte 0x08D59548 @ gTrainerFrontPic_PsychicF
+	.4byte gTrainerFrontPic_PsychicF @ gTrainerFrontPic_PsychicF
 	.2byte 0x0800, 34 @ size, trainer pic index
-	.4byte 0x08D59898 @ gTrainerFrontPic_Gentleman
+	.4byte gTrainerFrontPic_Gentleman @ gTrainerFrontPic_Gentleman
 	.2byte 0x0800, 35 @ size, trainer pic index
-	.4byte 0x08D59BC0 @ gTrainerFrontPic_EliteFourSidney
+	.4byte gTrainerFrontPic_EliteFourSidney @ gTrainerFrontPic_EliteFourSidney
 	.2byte 0x0800, 36 @ size, trainer pic index
-	.4byte 0x08D59F1C @ gTrainerFrontPic_EliteFourPhoebe
+	.4byte gTrainerFrontPic_EliteFourPhoebe @ gTrainerFrontPic_EliteFourPhoebe
 	.2byte 0x0800, 37 @ size, trainer pic index
-	.4byte 0x08D5A244 @ gTrainerFrontPic_EliteFourGlacia
+	.4byte gTrainerFrontPic_EliteFourGlacia @ gTrainerFrontPic_EliteFourGlacia
 	.2byte 0x0800, 38 @ size, trainer pic index
-	.4byte 0x08D5A5F0 @ gTrainerFrontPic_EliteFourDrake
+	.4byte gTrainerFrontPic_EliteFourDrake @ gTrainerFrontPic_EliteFourDrake
 	.2byte 0x0800, 39 @ size, trainer pic index
-	.4byte 0x08D5A9C0 @ gTrainerFrontPic_LeaderRoxanne
+	.4byte gTrainerFrontPic_LeaderRoxanne @ gTrainerFrontPic_LeaderRoxanne
 	.2byte 0x0800, 40 @ size, trainer pic index
-	.4byte 0x08D5ACD4 @ gTrainerFrontPic_LeaderBrawly
+	.4byte gTrainerFrontPic_LeaderBrawly @ gTrainerFrontPic_LeaderBrawly
 	.2byte 0x0800, 41 @ size, trainer pic index
-	.4byte 0x08D5B090 @ gTrainerFrontPic_LeaderWattson
+	.4byte gTrainerFrontPic_LeaderWattson @ gTrainerFrontPic_LeaderWattson
 	.2byte 0x0800, 42 @ size, trainer pic index
-	.4byte 0x08D5B400 @ gTrainerFrontPic_LeaderFlannery
+	.4byte gTrainerFrontPic_LeaderFlannery @ gTrainerFrontPic_LeaderFlannery
 	.2byte 0x0800, 43 @ size, trainer pic index
-	.4byte 0x08D5B7A8 @ gTrainerFrontPic_LeaderNorman
+	.4byte gTrainerFrontPic_LeaderNorman @ gTrainerFrontPic_LeaderNorman
 	.2byte 0x0800, 44 @ size, trainer pic index
-	.4byte 0x08D5BB0C @ gTrainerFrontPic_LeaderWinona
+	.4byte gTrainerFrontPic_LeaderWinona @ gTrainerFrontPic_LeaderWinona
 	.2byte 0x0800, 45 @ size, trainer pic index
-	.4byte 0x08D5BEB4 @ gTrainerFrontPic_LeaderTateAndLiza
+	.4byte gTrainerFrontPic_LeaderTateAndLiza @ gTrainerFrontPic_LeaderTateAndLiza
 	.2byte 0x0800, 46 @ size, trainer pic index
-	.4byte 0x08D5C320 @ gTrainerFrontPic_LeaderJuan
+	.4byte gTrainerFrontPic_LeaderJuan @ gTrainerFrontPic_LeaderJuan
 	.2byte 0x0800, 47 @ size, trainer pic index
-	.4byte 0x08D5C6F0 @ gTrainerFrontPic_SchoolKidM
+	.4byte gTrainerFrontPic_SchoolKidM @ gTrainerFrontPic_SchoolKidM
 	.2byte 0x0800, 48 @ size, trainer pic index
-	.4byte 0x08D5C9D8 @ gTrainerFrontPic_SchoolKidF
+	.4byte gTrainerFrontPic_SchoolKidF @ gTrainerFrontPic_SchoolKidF
 	.2byte 0x0800, 49 @ size, trainer pic index
-	.4byte 0x08D5CC9C @ gTrainerFrontPic_SrAndJr
+	.4byte gTrainerFrontPic_SrAndJr @ gTrainerFrontPic_SrAndJr
 	.2byte 0x1000, 50 @ size, trainer pic index
-	.4byte 0x08D5D134 @ gTrainerFrontPic_PokefanM
+	.4byte gTrainerFrontPic_PokefanM @ gTrainerFrontPic_PokefanM
 	.2byte 0x1000, 51 @ size, trainer pic index
-	.4byte 0x08D5D518 @ gTrainerFrontPic_PokefanF
+	.4byte gTrainerFrontPic_PokefanF @ gTrainerFrontPic_PokefanF
 	.2byte 0x0800, 52 @ size, trainer pic index
-	.4byte 0x08D5D90C @ gTrainerFrontPic_Youngster
+	.4byte gTrainerFrontPic_Youngster @ gTrainerFrontPic_Youngster
 	.2byte 0x0800, 53 @ size, trainer pic index
-	.4byte 0x08D5DBDC @ gTrainerFrontPic_ChampionWallace
+	.4byte gTrainerFrontPic_ChampionWallace @ gTrainerFrontPic_ChampionWallace
 	.2byte 0x1000, 54 @ size, trainer pic index
-	.4byte 0x08D5E058 @ gTrainerFrontPic_Fisherman
+	.4byte gTrainerFrontPic_Fisherman @ gTrainerFrontPic_Fisherman
 	.2byte 0x0800, 55 @ size, trainer pic index
-	.4byte 0x08D5E464 @ gTrainerFrontPic_CyclingTriathleteM
+	.4byte gTrainerFrontPic_CyclingTriathleteM @ gTrainerFrontPic_CyclingTriathleteM
 	.2byte 0x1000, 56 @ size, trainer pic index
-	.4byte 0x08D5E89C @ gTrainerFrontPic_CyclingTriathleteF
+	.4byte gTrainerFrontPic_CyclingTriathleteF @ gTrainerFrontPic_CyclingTriathleteF
 	.2byte 0x0800, 57 @ size, trainer pic index
-	.4byte 0x08D5ECD0 @ gTrainerFrontPic_RunningTriathleteM
+	.4byte gTrainerFrontPic_RunningTriathleteM @ gTrainerFrontPic_RunningTriathleteM
 	.2byte 0x0800, 58 @ size, trainer pic index
-	.4byte 0x08D5EFB0 @ gTrainerFrontPic_RunningTriathleteF
+	.4byte gTrainerFrontPic_RunningTriathleteF @ gTrainerFrontPic_RunningTriathleteF
 	.2byte 0x0800, 59 @ size, trainer pic index
-	.4byte 0x08D5F27C @ gTrainerFrontPic_SwimmingTriathleteM
+	.4byte gTrainerFrontPic_SwimmingTriathleteM @ gTrainerFrontPic_SwimmingTriathleteM
 	.2byte 0x0800, 60 @ size, trainer pic index
-	.4byte 0x08D5F5D0 @ gTrainerFrontPic_SwimmingTriathleteF
+	.4byte gTrainerFrontPic_SwimmingTriathleteF @ gTrainerFrontPic_SwimmingTriathleteF
 	.2byte 0x0800, 61 @ size, trainer pic index
-	.4byte 0x08D5F8D4 @ gTrainerFrontPic_DragonTamer
+	.4byte gTrainerFrontPic_DragonTamer @ gTrainerFrontPic_DragonTamer
 	.2byte 0x0800, 62 @ size, trainer pic index
-	.4byte 0x08D5FC50 @ gTrainerFrontPic_NinjaBoy
+	.4byte gTrainerFrontPic_NinjaBoy @ gTrainerFrontPic_NinjaBoy
 	.2byte 0x0800, 63 @ size, trainer pic index
-	.4byte 0x08D5FF54 @ gTrainerFrontPic_BattleGirl
+	.4byte gTrainerFrontPic_BattleGirl @ gTrainerFrontPic_BattleGirl
 	.2byte 0x1000, 64 @ size, trainer pic index
-	.4byte 0x08D6029C @ gTrainerFrontPic_ParasolLady
+	.4byte gTrainerFrontPic_ParasolLady @ gTrainerFrontPic_ParasolLady
 	.2byte 0x0800, 65 @ size, trainer pic index
-	.4byte 0x08D605FC @ gTrainerFrontPic_SwimmerF
+	.4byte gTrainerFrontPic_SwimmerF @ gTrainerFrontPic_SwimmerF
 	.2byte 0x0800, 66 @ size, trainer pic index
-	.4byte 0x08D608F4 @ gTrainerFrontPic_Twins
+	.4byte gTrainerFrontPic_Twins @ gTrainerFrontPic_Twins
 	.2byte 0x0800, 67 @ size, trainer pic index
-	.4byte 0x08D60CE0 @ gTrainerFrontPic_Sailor
+	.4byte gTrainerFrontPic_Sailor @ gTrainerFrontPic_Sailor
 	.2byte 0x0800, 68 @ size, trainer pic index
-	.4byte 0x08D610B8 @ gTrainerFrontPic_MagmaAdmin
+	.4byte gTrainerFrontPic_MagmaAdmin @ gTrainerFrontPic_MagmaAdmin
 	.2byte 0x0800, 69 @ size, trainer pic index
-	.4byte 0x08D614B8 @ gTrainerFrontPic_Wally
+	.4byte gTrainerFrontPic_Wally @ gTrainerFrontPic_Wally
 	.2byte 0x0800, 70 @ size, trainer pic index
-	.4byte 0x08D617B0 @ gTrainerFrontPic_Brendan
+	.4byte gTrainerFrontPic_Brendan @ gTrainerFrontPic_Brendan
 	.2byte 0x0800, 71 @ size, trainer pic index
-	.4byte 0x08D61AFC @ gTrainerFrontPic_May
+	.4byte gTrainerFrontPic_May @ gTrainerFrontPic_May
 	.2byte 0x0800, 72 @ size, trainer pic index
-	.4byte 0x08D61E24 @ gTrainerFrontPic_BugCatcher
+	.4byte gTrainerFrontPic_BugCatcher @ gTrainerFrontPic_BugCatcher
 	.2byte 0x0800, 73 @ size, trainer pic index
-	.4byte 0x08D62178 @ gTrainerFrontPic_PokemonRangerM
+	.4byte gTrainerFrontPic_PokemonRangerM @ gTrainerFrontPic_PokemonRangerM
 	.2byte 0x0800, 74 @ size, trainer pic index
-	.4byte 0x08D624E8 @ gTrainerFrontPic_PokemonRangerF
+	.4byte gTrainerFrontPic_PokemonRangerF @ gTrainerFrontPic_PokemonRangerF
 	.2byte 0x0800, 75 @ size, trainer pic index
-	.4byte 0x08D62844 @ gTrainerFrontPic_MagmaLeaderMaxie
+	.4byte gTrainerFrontPic_MagmaLeaderMaxie @ gTrainerFrontPic_MagmaLeaderMaxie
 	.2byte 0x0800, 76 @ size, trainer pic index
-	.4byte 0x08D62B60 @ gTrainerFrontPic_Lass
+	.4byte gTrainerFrontPic_Lass @ gTrainerFrontPic_Lass
 	.2byte 0x0800, 77 @ size, trainer pic index
-	.4byte 0x08D62E60 @ gTrainerFrontPic_YoungCouple
+	.4byte gTrainerFrontPic_YoungCouple @ gTrainerFrontPic_YoungCouple
 	.2byte 0x0800, 78 @ size, trainer pic index
-	.4byte 0x08D63248 @ gTrainerFrontPic_OldCouple
+	.4byte gTrainerFrontPic_OldCouple @ gTrainerFrontPic_OldCouple
 	.2byte 0x0800, 79 @ size, trainer pic index
-	.4byte 0x08D63780 @ gTrainerFrontPic_SisAndBro
+	.4byte gTrainerFrontPic_SisAndBro @ gTrainerFrontPic_SisAndBro
 	.2byte 0x0800, 80 @ size, trainer pic index
-	.4byte 0x08D63BF4 @ gTrainerFrontPic_Steven
+	.4byte gTrainerFrontPic_Steven @ gTrainerFrontPic_Steven
 	.2byte 0x0800, 81 @ size, trainer pic index
-	.4byte 0x08D63F54 @ gTrainerFrontPic_SalonMaidenAnabel
+	.4byte gTrainerFrontPic_SalonMaidenAnabel @ gTrainerFrontPic_SalonMaidenAnabel
 	.2byte 0x0800, 82 @ size, trainer pic index
-	.4byte 0x08D64284 @ gTrainerFrontPic_DomeAceTucker
+	.4byte gTrainerFrontPic_DomeAceTucker @ gTrainerFrontPic_DomeAceTucker
 	.2byte 0x0800, 83 @ size, trainer pic index
-	.4byte 0x08D646B0 @ gTrainerFrontPic_PalaceMavenSpenser
+	.4byte gTrainerFrontPic_PalaceMavenSpenser @ gTrainerFrontPic_PalaceMavenSpenser
 	.2byte 0x0800, 84 @ size, trainer pic index
-	.4byte 0x08D64A7C @ gTrainerFrontPic_ArenaTycoonGreta
+	.4byte gTrainerFrontPic_ArenaTycoonGreta @ gTrainerFrontPic_ArenaTycoonGreta
 	.2byte 0x1000, 85 @ size, trainer pic index
-	.4byte 0x08D64DD4 @ gTrainerFrontPic_FactoryHeadNoland
+	.4byte gTrainerFrontPic_FactoryHeadNoland @ gTrainerFrontPic_FactoryHeadNoland
 	.2byte 0x0800, 86 @ size, trainer pic index
-	.4byte 0x08D65178 @ gTrainerFrontPic_PikeQueenLucy
+	.4byte gTrainerFrontPic_PikeQueenLucy @ gTrainerFrontPic_PikeQueenLucy
 	.2byte 0x0800, 87 @ size, trainer pic index
-	.4byte 0x08D65494 @ gTrainerFrontPic_PyramidKingBrandon
+	.4byte gTrainerFrontPic_PyramidKingBrandon @ gTrainerFrontPic_PyramidKingBrandon
 	.2byte 0x0800, 88 @ size, trainer pic index
-	.4byte 0x08D65828 @ gTrainerFrontPic_Red
+	.4byte gTrainerFrontPic_Red @ gTrainerFrontPic_Red
 	.2byte 0x0800, 89 @ size, trainer pic index
-	.4byte 0x08D65B5C @ gTrainerFrontPic_Leaf
+	.4byte gTrainerFrontPic_Leaf @ gTrainerFrontPic_Leaf
 	.2byte 0x0800, 90 @ size, trainer pic index
-	.4byte 0x08D65EC0 @ gTrainerFrontPic_RubySapphireBrendan
+	.4byte gTrainerFrontPic_RubySapphireBrendan @ gTrainerFrontPic_RubySapphireBrendan
 	.2byte 0x0800, 91 @ size, trainer pic index
-	.4byte 0x08D661FC @ gTrainerFrontPic_RubySapphireMay
+	.4byte gTrainerFrontPic_RubySapphireMay @ gTrainerFrontPic_RubySapphireMay
 	.2byte 0x0800, 92 @ size, trainer pic index
 
 	.globl gUnknown_82D91CC
 gUnknown_82D91CC: @ 0x082D91CC
 	.globl gTrainerFrontPicPaletteTable
 gTrainerFrontPicPaletteTable:
-	.4byte 0x08D522EC @ gTrainerPalette_Hiker
+	.4byte gTrainerPalette_Hiker @ gTrainerPalette_Hiker
 	.4byte 0 @ trainer pic index
-	.4byte 0x08D52674 @ gTrainerPalette_AquaGruntM
+	.4byte gTrainerPalette_AquaGruntM @ gTrainerPalette_AquaGruntM
 	.4byte 1 @ trainer pic index
-	.4byte 0x08D529D0 @ gTrainerPalette_PokemonBreederF
+	.4byte gTrainerPalette_PokemonBreederF @ gTrainerPalette_PokemonBreederF
 	.4byte 2 @ trainer pic index
-	.4byte 0x08D52CE0 @ gTrainerPalette_CoolTrainerM
+	.4byte gTrainerPalette_CoolTrainerM @ gTrainerPalette_CoolTrainerM
 	.4byte 3 @ trainer pic index
-	.4byte 0x08D53040 @ gTrainerPalette_BirdKeeper
+	.4byte gTrainerPalette_BirdKeeper @ gTrainerPalette_BirdKeeper
 	.4byte 4 @ trainer pic index
-	.4byte 0x08D5346C @ gTrainerPalette_Collector
+	.4byte gTrainerPalette_Collector @ gTrainerPalette_Collector
 	.4byte 5 @ trainer pic index
-	.4byte 0x08D537D0 @ gTrainerPalette_AquaGruntF
+	.4byte gTrainerPalette_AquaGruntF @ gTrainerPalette_AquaGruntF
 	.4byte 6 @ trainer pic index
-	.4byte 0x08D53AB8 @ gTrainerPalette_SwimmerM
+	.4byte gTrainerPalette_SwimmerM @ gTrainerPalette_SwimmerM
 	.4byte 7 @ trainer pic index
-	.4byte 0x08D53E60 @ gTrainerPalette_MagmaGruntM
+	.4byte gTrainerPalette_MagmaGruntM @ gTrainerPalette_MagmaGruntM
 	.4byte 8 @ trainer pic index
-	.4byte 0x08D541C8 @ gTrainerPalette_ExpertM
+	.4byte gTrainerPalette_ExpertM @ gTrainerPalette_ExpertM
 	.4byte 9 @ trainer pic index
-	.4byte 0x08D545A4 @ gTrainerPalette_AquaAdminM
+	.4byte gTrainerPalette_AquaAdminM @ gTrainerPalette_AquaAdminM
 	.4byte 10 @ trainer pic index
-	.4byte 0x08D54930 @ gTrainerPalette_BlackBelt
+	.4byte gTrainerPalette_BlackBelt @ gTrainerPalette_BlackBelt
 	.4byte 11 @ trainer pic index
-	.4byte 0x08D54D1C @ gTrainerPalette_AquaAdminF
+	.4byte gTrainerPalette_AquaAdminF @ gTrainerPalette_AquaAdminF
 	.4byte 12 @ trainer pic index
-	.4byte 0x08D55080 @ gTrainerPalette_AquaLeaderArchie
+	.4byte gTrainerPalette_AquaLeaderArchie @ gTrainerPalette_AquaLeaderArchie
 	.4byte 13 @ trainer pic index
-	.4byte 0x08D55414 @ gTrainerPalette_HexManiac
+	.4byte gTrainerPalette_HexManiac @ gTrainerPalette_HexManiac
 	.4byte 14 @ trainer pic index
-	.4byte 0x08D55700 @ gTrainerPalette_AromaLady
+	.4byte gTrainerPalette_AromaLady @ gTrainerPalette_AromaLady
 	.4byte 15 @ trainer pic index
-	.4byte 0x08D55AC4 @ gTrainerPalette_RuinManiac
+	.4byte gTrainerPalette_RuinManiac @ gTrainerPalette_RuinManiac
 	.4byte 16 @ trainer pic index
-	.4byte 0x08D55F90 @ gTrainerPalette_Interviewer
+	.4byte gTrainerPalette_Interviewer @ gTrainerPalette_Interviewer
 	.4byte 17 @ trainer pic index
-	.4byte 0x08D5625C @ gTrainerPalette_TuberF
+	.4byte gTrainerPalette_TuberF @ gTrainerPalette_TuberF
 	.4byte 18 @ trainer pic index
-	.4byte 0x08D56510 @ gTrainerPalette_TuberM
+	.4byte gTrainerPalette_TuberM @ gTrainerPalette_TuberM
 	.4byte 19 @ trainer pic index
-	.4byte 0x08D5684C @ gTrainerPalette_CoolTrainerF
+	.4byte gTrainerPalette_CoolTrainerF @ gTrainerPalette_CoolTrainerF
 	.4byte 20 @ trainer pic index
-	.4byte 0x08D56C28 @ gTrainerPalette_Lady
+	.4byte gTrainerPalette_Lady @ gTrainerPalette_Lady
 	.4byte 21 @ trainer pic index
-	.4byte 0x08D56F38 @ gTrainerPalette_Beauty
+	.4byte gTrainerPalette_Beauty @ gTrainerPalette_Beauty
 	.4byte 22 @ trainer pic index
-	.4byte 0x08D57214 @ gTrainerPalette_RichBoy
+	.4byte gTrainerPalette_RichBoy @ gTrainerPalette_RichBoy
 	.4byte 23 @ trainer pic index
-	.4byte 0x08D57558 @ gTrainerPalette_ExpertF
+	.4byte gTrainerPalette_ExpertF @ gTrainerPalette_ExpertF
 	.4byte 24 @ trainer pic index
-	.4byte 0x08D578F0 @ gTrainerPalette_Pokemaniac
+	.4byte gTrainerPalette_Pokemaniac @ gTrainerPalette_Pokemaniac
 	.4byte 25 @ trainer pic index
-	.4byte 0x08D57CA4 @ gTrainerPalette_MagmaGruntF
+	.4byte gTrainerPalette_MagmaGruntF @ gTrainerPalette_MagmaGruntF
 	.4byte 26 @ trainer pic index
-	.4byte 0x08D58050 @ gTrainerPalette_Guitarist
+	.4byte gTrainerPalette_Guitarist @ gTrainerPalette_Guitarist
 	.4byte 27 @ trainer pic index
-	.4byte 0x08D583E4 @ gTrainerPalette_Kindler
+	.4byte gTrainerPalette_Kindler @ gTrainerPalette_Kindler
 	.4byte 28 @ trainer pic index
-	.4byte 0x08D586F4 @ gTrainerPalette_Camper
+	.4byte gTrainerPalette_Camper @ gTrainerPalette_Camper
 	.4byte 29 @ trainer pic index
-	.4byte 0x08D589FC @ gTrainerPalette_Picnicker
+	.4byte gTrainerPalette_Picnicker @ gTrainerPalette_Picnicker
 	.4byte 30 @ trainer pic index
-	.4byte 0x08D58E74 @ gTrainerPalette_BugManiac
+	.4byte gTrainerPalette_BugManiac @ gTrainerPalette_BugManiac
 	.4byte 31 @ trainer pic index
-	.4byte 0x08D591CC @ gTrainerPalette_PokemonBreederM
+	.4byte gTrainerPalette_PokemonBreederM @ gTrainerPalette_PokemonBreederM
 	.4byte 32 @ trainer pic index
-	.4byte 0x08D59520 @ gTrainerPalette_PsychicM
+	.4byte gTrainerPalette_PsychicM @ gTrainerPalette_PsychicM
 	.4byte 33 @ trainer pic index
-	.4byte 0x08D59870 @ gTrainerPalette_PsychicF
+	.4byte gTrainerPalette_PsychicF @ gTrainerPalette_PsychicF
 	.4byte 34 @ trainer pic index
-	.4byte 0x08D59B98 @ gTrainerPalette_Gentleman
+	.4byte gTrainerPalette_Gentleman @ gTrainerPalette_Gentleman
 	.4byte 35 @ trainer pic index
-	.4byte 0x08D59EF4 @ gTrainerPalette_EliteFourSidney
+	.4byte gTrainerPalette_EliteFourSidney @ gTrainerPalette_EliteFourSidney
 	.4byte 36 @ trainer pic index
-	.4byte 0x08D5A21C @ gTrainerPalette_EliteFourPhoebe
+	.4byte gTrainerPalette_EliteFourPhoebe @ gTrainerPalette_EliteFourPhoebe
 	.4byte 37 @ trainer pic index
-	.4byte 0x08D5A5C8 @ gTrainerPalette_EliteFourGlacia
+	.4byte gTrainerPalette_EliteFourGlacia @ gTrainerPalette_EliteFourGlacia
 	.4byte 38 @ trainer pic index
-	.4byte 0x08D5A998 @ gTrainerPalette_EliteFourDrake
+	.4byte gTrainerPalette_EliteFourDrake @ gTrainerPalette_EliteFourDrake
 	.4byte 39 @ trainer pic index
-	.4byte 0x08D5ACAC @ gTrainerPalette_LeaderRoxanne
+	.4byte gTrainerPalette_LeaderRoxanne @ gTrainerPalette_LeaderRoxanne
 	.4byte 40 @ trainer pic index
-	.4byte 0x08D5B068 @ gTrainerPalette_LeaderBrawly
+	.4byte gTrainerPalette_LeaderBrawly @ gTrainerPalette_LeaderBrawly
 	.4byte 41 @ trainer pic index
-	.4byte 0x08D5B3D8 @ gTrainerPalette_LeaderWattson
+	.4byte gTrainerPalette_LeaderWattson @ gTrainerPalette_LeaderWattson
 	.4byte 42 @ trainer pic index
-	.4byte 0x08D5B780 @ gTrainerPalette_LeaderFlannery
+	.4byte gTrainerPalette_LeaderFlannery @ gTrainerPalette_LeaderFlannery
 	.4byte 43 @ trainer pic index
-	.4byte 0x08D5BAE4 @ gTrainerPalette_LeaderNorman
+	.4byte gTrainerPalette_LeaderNorman @ gTrainerPalette_LeaderNorman
 	.4byte 44 @ trainer pic index
-	.4byte 0x08D5BE8C @ gTrainerPalette_LeaderWinona
+	.4byte gTrainerPalette_LeaderWinona @ gTrainerPalette_LeaderWinona
 	.4byte 45 @ trainer pic index
-	.4byte 0x08D5C2F8 @ gTrainerPalette_LeaderTateAndLiza
+	.4byte gTrainerPalette_LeaderTateAndLiza @ gTrainerPalette_LeaderTateAndLiza
 	.4byte 46 @ trainer pic index
-	.4byte 0x08D5C6C8 @ gTrainerPalette_LeaderJuan
+	.4byte gTrainerPalette_LeaderJuan @ gTrainerPalette_LeaderJuan
 	.4byte 47 @ trainer pic index
-	.4byte 0x08D5C9B0 @ gTrainerPalette_SchoolKidM
+	.4byte gTrainerPalette_SchoolKidM @ gTrainerPalette_SchoolKidM
 	.4byte 48 @ trainer pic index
-	.4byte 0x08D5CC74 @ gTrainerPalette_SchoolKidF
+	.4byte gTrainerPalette_SchoolKidF @ gTrainerPalette_SchoolKidF
 	.4byte 49 @ trainer pic index
-	.4byte 0x08D5D10C @ gTrainerPalette_SrAndJr
+	.4byte gTrainerPalette_SrAndJr @ gTrainerPalette_SrAndJr
 	.4byte 50 @ trainer pic index
-	.4byte 0x08D5D4F0 @ gTrainerPalette_PokefanM
+	.4byte gTrainerPalette_PokefanM @ gTrainerPalette_PokefanM
 	.4byte 51 @ trainer pic index
-	.4byte 0x08D5D8E4 @ gTrainerPalette_PokefanF
+	.4byte gTrainerPalette_PokefanF @ gTrainerPalette_PokefanF
 	.4byte 52 @ trainer pic index
-	.4byte 0x08D5DBB4 @ gTrainerPalette_Youngster
+	.4byte gTrainerPalette_Youngster @ gTrainerPalette_Youngster
 	.4byte 53 @ trainer pic index
-	.4byte 0x08D5E030 @ gTrainerPalette_ChampionWallace
+	.4byte gTrainerPalette_ChampionWallace @ gTrainerPalette_ChampionWallace
 	.4byte 54 @ trainer pic index
-	.4byte 0x08D5E43C @ gTrainerPalette_Fisherman
+	.4byte gTrainerPalette_Fisherman @ gTrainerPalette_Fisherman
 	.4byte 55 @ trainer pic index
-	.4byte 0x08D5E874 @ gTrainerPalette_CyclingTriathleteM
+	.4byte gTrainerPalette_CyclingTriathleteM @ gTrainerPalette_CyclingTriathleteM
 	.4byte 56 @ trainer pic index
-	.4byte 0x08D5ECA8 @ gTrainerPalette_CyclingTriathleteF
+	.4byte gTrainerPalette_CyclingTriathleteF @ gTrainerPalette_CyclingTriathleteF
 	.4byte 57 @ trainer pic index
-	.4byte 0x08D5EF88 @ gTrainerPalette_RunningTriathleteM
+	.4byte gTrainerPalette_RunningTriathleteM @ gTrainerPalette_RunningTriathleteM
 	.4byte 58 @ trainer pic index
-	.4byte 0x08D5F254 @ gTrainerPalette_RunningTriathleteF
+	.4byte gTrainerPalette_RunningTriathleteF @ gTrainerPalette_RunningTriathleteF
 	.4byte 59 @ trainer pic index
-	.4byte 0x08D5F5A8 @ gTrainerPalette_SwimmingTriathleteM
+	.4byte gTrainerPalette_SwimmingTriathleteM @ gTrainerPalette_SwimmingTriathleteM
 	.4byte 60 @ trainer pic index
-	.4byte 0x08D5F8AC @ gTrainerPalette_SwimmingTriathleteF
+	.4byte gTrainerPalette_SwimmingTriathleteF @ gTrainerPalette_SwimmingTriathleteF
 	.4byte 61 @ trainer pic index
-	.4byte 0x08D5FC28 @ gTrainerPalette_DragonTamer
+	.4byte gTrainerPalette_DragonTamer @ gTrainerPalette_DragonTamer
 	.4byte 62 @ trainer pic index
-	.4byte 0x08D5FF2C @ gTrainerPalette_NinjaBoy
+	.4byte gTrainerPalette_NinjaBoy @ gTrainerPalette_NinjaBoy
 	.4byte 63 @ trainer pic index
-	.4byte 0x08D60274 @ gTrainerPalette_BattleGirl
+	.4byte gTrainerPalette_BattleGirl @ gTrainerPalette_BattleGirl
 	.4byte 64 @ trainer pic index
-	.4byte 0x08D605D4 @ gTrainerPalette_ParasolLady
+	.4byte gTrainerPalette_ParasolLady @ gTrainerPalette_ParasolLady
 	.4byte 65 @ trainer pic index
-	.4byte 0x08D608CC @ gTrainerPalette_SwimmerF
+	.4byte gTrainerPalette_SwimmerF @ gTrainerPalette_SwimmerF
 	.4byte 66 @ trainer pic index
-	.4byte 0x08D60CB8 @ gTrainerPalette_Twins
+	.4byte gTrainerPalette_Twins @ gTrainerPalette_Twins
 	.4byte 67 @ trainer pic index
-	.4byte 0x08D61090 @ gTrainerPalette_Sailor
+	.4byte gTrainerPalette_Sailor @ gTrainerPalette_Sailor
 	.4byte 68 @ trainer pic index
-	.4byte 0x08D61490 @ gTrainerPalette_MagmaAdmin
+	.4byte gTrainerPalette_MagmaAdmin @ gTrainerPalette_MagmaAdmin
 	.4byte 69 @ trainer pic index
-	.4byte 0x08D61788 @ gTrainerPalette_Wally
+	.4byte gTrainerPalette_Wally @ gTrainerPalette_Wally
 	.4byte 70 @ trainer pic index
-	.4byte 0x08D61AD4 @ gTrainerPalette_Brendan
+	.4byte gTrainerPalette_Brendan @ gTrainerPalette_Brendan
 	.4byte 71 @ trainer pic index
-	.4byte 0x08D61DFC @ gTrainerPalette_May
+	.4byte gTrainerPalette_May @ gTrainerPalette_May
 	.4byte 72 @ trainer pic index
-	.4byte 0x08D62150 @ gTrainerPalette_BugCatcher
+	.4byte gTrainerPalette_BugCatcher @ gTrainerPalette_BugCatcher
 	.4byte 73 @ trainer pic index
-	.4byte 0x08D624C0 @ gTrainerPalette_PokemonRangerM
+	.4byte gTrainerPalette_PokemonRangerM @ gTrainerPalette_PokemonRangerM
 	.4byte 74 @ trainer pic index
-	.4byte 0x08D6281C @ gTrainerPalette_PokemonRangerF
+	.4byte gTrainerPalette_PokemonRangerF @ gTrainerPalette_PokemonRangerF
 	.4byte 75 @ trainer pic index
-	.4byte 0x08D62B38 @ gTrainerPalette_MagmaLeaderMaxie
+	.4byte gTrainerPalette_MagmaLeaderMaxie @ gTrainerPalette_MagmaLeaderMaxie
 	.4byte 76 @ trainer pic index
-	.4byte 0x08D62E38 @ gTrainerPalette_Lass
+	.4byte gTrainerPalette_Lass @ gTrainerPalette_Lass
 	.4byte 77 @ trainer pic index
-	.4byte 0x08D63220 @ gTrainerPalette_YoungCouple
+	.4byte gTrainerPalette_YoungCouple @ gTrainerPalette_YoungCouple
 	.4byte 78 @ trainer pic index
-	.4byte 0x08D63758 @ gTrainerPalette_OldCouple
+	.4byte gTrainerPalette_OldCouple @ gTrainerPalette_OldCouple
 	.4byte 79 @ trainer pic index
-	.4byte 0x08D63BCC @ gTrainerPalette_SisAndBro
+	.4byte gTrainerPalette_SisAndBro @ gTrainerPalette_SisAndBro
 	.4byte 80 @ trainer pic index
-	.4byte 0x08D63F2C @ gTrainerPalette_Steven
+	.4byte gTrainerPalette_Steven @ gTrainerPalette_Steven
 	.4byte 81 @ trainer pic index
-	.4byte 0x08D6425C @ gTrainerPalette_SalonMaidenAnabel
+	.4byte gTrainerPalette_SalonMaidenAnabel @ gTrainerPalette_SalonMaidenAnabel
 	.4byte 82 @ trainer pic index
-	.4byte 0x08D64688 @ gTrainerPalette_DomeAceTucker
+	.4byte gTrainerPalette_DomeAceTucker @ gTrainerPalette_DomeAceTucker
 	.4byte 83 @ trainer pic index
-	.4byte 0x08D64A54 @ gTrainerPalette_PalaceMavenSpenser
+	.4byte gTrainerPalette_PalaceMavenSpenser @ gTrainerPalette_PalaceMavenSpenser
 	.4byte 84 @ trainer pic index
-	.4byte 0x08D64DAC @ gTrainerPalette_ArenaTycoonGreta
+	.4byte gTrainerPalette_ArenaTycoonGreta @ gTrainerPalette_ArenaTycoonGreta
 	.4byte 85 @ trainer pic index
-	.4byte 0x08D65150 @ gTrainerPalette_FactoryHeadNoland
+	.4byte gTrainerPalette_FactoryHeadNoland @ gTrainerPalette_FactoryHeadNoland
 	.4byte 86 @ trainer pic index
-	.4byte 0x08D6546C @ gTrainerPalette_PikeQueenLucy
+	.4byte gTrainerPalette_PikeQueenLucy @ gTrainerPalette_PikeQueenLucy
 	.4byte 87 @ trainer pic index
-	.4byte 0x08D65800 @ gTrainerPalette_PyramidKingBrandon
+	.4byte gTrainerPalette_PyramidKingBrandon @ gTrainerPalette_PyramidKingBrandon
 	.4byte 88 @ trainer pic index
-	.4byte 0x08D65B34 @ gTrainerPalette_Red
+	.4byte gTrainerPalette_Red @ gTrainerPalette_Red
 	.4byte 89 @ trainer pic index
-	.4byte 0x08D65E98 @ gTrainerPalette_Leaf
+	.4byte gTrainerPalette_Leaf @ gTrainerPalette_Leaf
 	.4byte 90 @ trainer pic index
-	.4byte 0x08D661D4 @ gTrainerPalette_RubySapphireBrendan
+	.4byte gTrainerPalette_RubySapphireBrendan @ gTrainerPalette_RubySapphireBrendan
 	.4byte 91 @ trainer pic index
-	.4byte 0x08D664FC @ gTrainerPalette_RubySapphireMay
+	.4byte gTrainerPalette_RubySapphireMay @ gTrainerPalette_RubySapphireMay
 	.4byte 92 @ trainer pic index
 
 sAnimCmd_Brendan_1: @ 0x082D94B4
@@ -880,40 +880,40 @@ gTrainerBackPicCoords:
 gUnknown_82D95DC: @ 0x082D95DC
 	.globl gTrainerBackPicTable
 gTrainerBackPicTable:
-	.4byte 0x08D66524 @ gTrainerBackPic_Brendan
+	.4byte gTrainerBackPic_Brendan @ gTrainerBackPic_Brendan
 	.2byte 0x2000, 0 @ size, trainer back pic index
-	.4byte 0x08D68524 @ gTrainerBackPic_May
+	.4byte gTrainerBackPic_May @ gTrainerBackPic_May
 	.2byte 0x2000, 1 @ size, trainer back pic index
-	.4byte 0x08D6A524 @ gTrainerBackPic_Red
+	.4byte gTrainerBackPic_Red @ gTrainerBackPic_Red
 	.2byte 0x2800, 2 @ size, trainer back pic index
-	.4byte 0x08D6CD24 @ gTrainerBackPic_Leaf
+	.4byte gTrainerBackPic_Leaf @ gTrainerBackPic_Leaf
 	.2byte 0x2800, 3 @ size, trainer back pic index
-	.4byte 0x08D6F524 @ gTrainerBackPic_RubySapphireBrendan
+	.4byte gTrainerBackPic_RubySapphireBrendan @ gTrainerBackPic_RubySapphireBrendan
 	.2byte 0x2000, 4 @ size, trainer back pic index
-	.4byte 0x08D71524 @ gTrainerBackPic_RubySapphireMay
+	.4byte gTrainerBackPic_RubySapphireMay @ gTrainerBackPic_RubySapphireMay
 	.2byte 0x2000, 5 @ size, trainer back pic index
-	.4byte 0x08D73524 @ gTrainerBackPic_Wally
+	.4byte gTrainerBackPic_Wally @ gTrainerBackPic_Wally
 	.2byte 0x2000, 6 @ size, trainer back pic index
-	.4byte 0x08D75524 @ gTrainerBackPic_Steven
+	.4byte gTrainerBackPic_Steven @ gTrainerBackPic_Steven
 	.2byte 0x2000, 7 @ size, trainer back pic index
 
 	.globl gUnknown_82D961C
 gUnknown_82D961C: @ 0x082D961C
 	.globl gTrainerBackPicPaletteTable
 gTrainerBackPicPaletteTable:
-	.4byte 0x08D61AD4 @ trainer back palette Brendan
+	.4byte gTrainerPalette_Brendan @ trainer back palette Brendan
 	.4byte 0 @ trainer back pic index
-	.4byte 0x08D61DFC @ trainer back palette May
+	.4byte gTrainerPalette_May @ trainer back palette May
 	.4byte 1 @ trainer back pic index
-	.4byte 0x08D77524 @ trainer back palette Red
+	.4byte gTrainerBackPalette_Red @ trainer back palette Red
 	.4byte 2 @ trainer back pic index
-	.4byte 0x08D7754C @ trainer back palette Leaf
+	.4byte gTrainerBackPalette_Leaf @ trainer back palette Leaf
 	.4byte 3 @ trainer back pic index
-	.4byte 0x08D661D4 @ trainer back palette RubySapphireBrendan
+	.4byte gTrainerPalette_RubySapphireBrendan @ trainer back palette RubySapphireBrendan
 	.4byte 4 @ trainer back pic index
-	.4byte 0x08D664FC @ trainer back palette RubySapphireMay
+	.4byte gTrainerPalette_RubySapphireMay @ trainer back palette RubySapphireMay
 	.4byte 5 @ trainer back pic index
-	.4byte 0x08D61788 @ trainer back palette Wally
+	.4byte gTrainerPalette_Wally @ trainer back palette Wally
 	.4byte 6 @ trainer back pic index
-	.4byte 0x08D63F2C @ trainer back palette Steven
+	.4byte gTrainerPalette_Steven @ trainer back palette Steven
 	.4byte 7 @ trainer back pic index

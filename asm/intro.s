@@ -4580,7 +4580,7 @@ _0816EF2C:
 	b _0816EF90
 	.align 2, 0
 _0816EF4C: .4byte 0x03005B60
-_0816EF50: .4byte 0x0851AC0C
+_0816EF50: .4byte gTitleScreenAlphaBlend
 _0816EF54:
 	ldrh r1, [r4, #0xa]
 	movs r2, #0xa
@@ -4603,7 +4603,7 @@ _0816EF54:
 	bl SetGpuReg
 	b _0816EFBE
 	.align 2, 0
-_0816EF80: .4byte 0x0851AC0C
+_0816EF80: .4byte gTitleScreenAlphaBlend
 _0816EF84:
 	ldr r0, _0816EF9C
 	ldrh r1, [r0]
@@ -4617,7 +4617,7 @@ _0816EF90:
 	strh r0, [r4, #8]
 	b _0816EFBE
 	.align 2, 0
-_0816EF9C: .4byte 0x0851AC0C
+_0816EF9C: .4byte gTitleScreenAlphaBlend
 _0816EFA0:
 	movs r0, #0x50
 	movs r1, #0
@@ -4670,7 +4670,7 @@ _0816EFE4:
 	b _0816F048
 	.align 2, 0
 _0816F004: .4byte 0x03005B60
-_0816F008: .4byte 0x0851AC0C
+_0816F008: .4byte gTitleScreenAlphaBlend
 _0816F00C:
 	ldrh r1, [r4, #0xa]
 	movs r2, #0xa
@@ -4693,7 +4693,7 @@ _0816F00C:
 	bl SetGpuReg
 	b _0816F086
 	.align 2, 0
-_0816F038: .4byte 0x0851AC0C
+_0816F038: .4byte gTitleScreenAlphaBlend
 _0816F03C:
 	ldr r0, _0816F054
 	ldrh r1, [r0, #0x3e]
@@ -4707,7 +4707,7 @@ _0816F048:
 	strh r0, [r4, #8]
 	b _0816F086
 	.align 2, 0
-_0816F054: .4byte 0x0851AC0C
+_0816F054: .4byte gTitleScreenAlphaBlend
 _0816F058:
 	ldrh r1, [r4, #0xa]
 	movs r2, #0xa
