@@ -41,7 +41,7 @@
 - フォント・グラフィックの解析
 - イベント・スクリプト仕様の整理
 - ハック可能な箇所のドキュメント化
-- **テキスト一括抽出基盤**（`tools/extract_all_text.py` + `data/text/generated/`）
+- **テキスト一括抽出済みデータ**（`data/generated/`）
 
 ### Phase 3 - Modding
 
@@ -81,6 +81,8 @@
 
 ## 現在の進捗
 
+現在は Matching 済みの日本版ROMを維持しながら、テキスト・主要データ・一部 `.rodata` の構造化を進めています。
+
 ### Phase 1 - Matching
 
 - [x] ROM解析
@@ -94,23 +96,23 @@
 
 - [x] 日本語文字コード表（`data/charmap/charmap.txt`）
 - [x] `.string` ビルド連携（`tools/preproc` + `CMakeLists.txt`）
-- [x] オダマキ博士オープニングセリフのテキスト化（`data/text/birch_speech.inc`）
+- [x] オダマキ博士オープニングセリフのテキスト化（`data/text/events/birch_speech.inc`）
 - [x] セリフ参照のシンボル化（`asm/main_menu.s` → `gText_Birch_*`）
-- [x] ミシロタウンNPC 3件のテキスト化（`data/text/littleroot_town.inc`）
-- [x] オダマキ研究所テキスト 25件のテキスト化（`data/text/birch_lab.inc`）
-- [x] ミシロタウン看板テキストのテキスト化（`data/text/littleroot_signs.inc`）
+- [x] ミシロタウンNPC 3件のテキスト化（`data/text/maps/littleroot_town.inc`）
+- [x] オダマキ研究所テキスト 25件のテキスト化（`data/text/maps/birch_lab.inc`）
+- [x] ミシロタウン看板テキストのテキスト化（`data/text/maps/littleroot_town.inc`）
 - [x] テキスト分離後の Matching 確認（CMake の `compare` ターゲット）
-- [x] **テキスト一括抽出基盤（`tools/extract_all_text.py`）**
-  - [x] `script_data` セクションの全通常テキストを固定アドレスで抽出（`data/text/generated/event_scripts.inc`：6,741スロット）
-  - [x] `.rodata` セクションの全通常テキストを固定アドレスで抽出（`data/rodata.inc`：6,158スロット）
-  - [x] 抽出結果のマニフェスト（`data/text/generated/manifest.json`）
+- [x] **テキスト一括抽出済みデータ**
+  - [x] `script_data` セクションの全通常テキストを固定アドレスで抽出（`data/generated/event_scripts/`：6,741スロット）
+  - [x] `.rodata` セクションの全通常テキストを固定アドレスで抽出（`data/generated/rodata/`：6,158スロット）
+  - [x] 抽出結果の索引（`data/generated/event_scripts/index.inc`）
   - [x] 抽出状態での `compare` ターゲット一致確認
 - [x] ハックガイド作成（[docs/hacking.md](docs/hacking.md)）
 - [x] テキスト編集ドキュメント（[docs/text_editing.md](docs/text_editing.md)）
 - [x] ROM構造の網羅的ドキュメント（[docs/rom_structure.md](docs/rom_structure.md)）
 - [x] フォント・グラフィック解析（[docs/font_graphics.md](docs/font_graphics.md)）
 - [x] イベント・スクリプト仕様の整理（[docs/event_scripts.md](docs/event_scripts.md)）
-- [x] **rodata データの分割・構造化**（`data/text/rodata/`）
+- [x] **rodata テキスト/データの分割・構造化**（`data/generated/rodata/`）
   - [x] 戦闘データ（`battle/`）
   - [x] コンテストデータ（`contests/`）
   - [x] クレジットテキスト（`credits/`）
@@ -135,15 +137,15 @@
 - [ ] マップ / イベント追加基盤
 - [ ] ポケモン・技・アイテム等のデータ編集基盤
 
-**最新更新**: 2026-08-03
+**最新更新**: 2026-08-10
 
 - Phase 1 (Matching) 完了
 - SHA-1: `d7cf8f156ba9c455d164e1ea780a6bf1945465c2`（オリジナルと一致）
 - Phase 2: オダマキOP・ミシロタウンNPC 3件・オダマキ研究所テキスト 25件・ミシロタウン看板を `.string` 化
-- **全体テキスト抽出基盤 構築完了**: `script_data`（6,741スロット）と `.rodata`（6,158スロット）の全通常テキストを `data/text/generated/*.inc` に固定アドレスで抽出
-- **rodata データの分割・構造化完了**: `data/text/rodata/` 以下に戦闘・コンテスト・クレジット・アイテム・マップ・メニュー・技・ポケモン・リボンデータを分割・構造化
+- **全体テキスト抽出基盤 構築完了**: `script_data`（6,741スロット）と `.rodata`（6,158スロット）の全通常テキストを `data/generated/event_scripts/`、`data/generated/rodata/` に固定アドレスで抽出
+- **rodata テキスト/データの分割・構造化完了**: `data/generated/rodata/` 以下に戦闘・コンテスト・クレジット・アイテム・マップ・メニュー・技・ポケモン・リボンデータを分割・構造化
 - **主要ゲームデータを構造化**: `data/pokemon/`、`data/moves/`、`data/items/`、`data/abilities/`、`data/trainers/`、`data/wild_encounters/`、`data/decorations/`、`data/pokeball/` に編集可能な定義を配置
-- **`.rodata` の機能別分割を開始**: `data/rodata.inc` から `main`、`window`、`text`、`fonts`、`sprite` などのファイルへ分割。`sDummyWindowTemplate` は `.incbin` を使わない8バイトのフィールド定義に変換
+- **`.rodata` 冒頭の機能別分割**: 旧 `data/rodata.inc` 相当の冒頭データを `data/rodata/main.inc`、`window.inc`、`text.inc`、`fonts.inc`、`sprite.inc` などへ分割。`sDummyWindowTemplate` は `.incbin` を使わない8バイトのフィールド定義に変換
 - テキスト編集方法は [docs/text_editing.md](docs/text_editing.md) に集約
 - ハック手順は [docs/hacking.md](docs/hacking.md) に集約
 
@@ -151,12 +153,14 @@
 
 ## ビルド（要約）
 
+詳細な環境構築手順は [INSTALL.md](INSTALL.md) を参照してください。
+
 ```sh
 # 日本版ROMを baserom.gba として配置したうえで
 ./build_tools.sh
 cmake -S . -B build
-cmake --build build --parallel
-cmake --build build --target compare
+cmake --build build --target pokeemerald_jp -j4
+cmake --build build --target compare -j4
 ```
 
 成果物: `build/pokeemerald_jp.gba`
