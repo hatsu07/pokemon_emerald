@@ -37,9 +37,25 @@ ONE_ARG_COMMANDS = {
 }
 
 UNSUPPORTED_COMMANDS = {
-    0xB6, 0xB7, 0xB8, 0xB9,
+    0xB6, 0xB7, 0xB8,
     0xC6, 0xC7, 0xC9, 0xCA, 0xCB,
-    0xCD,
+}
+
+XCMD_NAMES = {
+    0x00: "XXX",
+    0x01: "XWAVE",
+    0x02: "XTYPE",
+    0x03: "XXX",
+    0x04: "XATTA",
+    0x05: "XDECA",
+    0x06: "XSUST",
+    0x07: "XRELE",
+    0x08: "XIECV",
+    0x09: "XIECL",
+    0x0A: "XLENG",
+    0x0B: "XSWEE",
+    0x0C: "XCMD_0C",
+    0x0D: "XCMD_0D",
 }
 
 BYTE_RE = re.compile(r"^\s*\.byte\s+(.+?)(?:\s*@.*)?$")
@@ -128,6 +144,51 @@ def format_note(status: int, operands: list[int], implicit: bool) -> str:
     return f"\t{macro} {h(status)}{comment}"
 
 
+def format_memacc(bytes_: list[int], pos: int) -> tuple[list[str], int]:
+    if pos + 3 > len(bytes_):
+        raise DecodeError("truncated MEMACC operand")
+    op, address, data = bytes_[pos:pos + 3]
+    pos += 3
+    if op <= 5:
+        return [f"\tm4a_memacc {h(op)}, {h(address)}, {h(data)}"], pos
+    if op <= 0x11:
+        target = ptr(bytes_, pos)
+        return [f"\tm4a_memacc_cond {h(op)}, {h(address)}, {h(data)}, 0x{target:08X}"], pos + 4
+    raise DecodeError(f"unsupported MEMACC op {h(op)}")
+
+
+def format_xcmd(bytes_: list[int], pos: int, implicit: bool) -> tuple[list[str], int]:
+    if pos >= len(bytes_):
+        raise DecodeError("truncated XCMD operand")
+    command = bytes_[pos]
+    pos += 1
+    if command not in XCMD_NAMES:
+        raise DecodeError(f"unsupported XCMD subcommand {h(command)}")
+
+    prefix = "m4a_running_xcmd" if implicit else "m4a_xcmd"
+    comment = f" @ {XCMD_NAMES[command]}"
+    if implicit:
+        comment += " (running status)"
+
+    if command in {0x00, 0x03}:
+        return [f"\t{prefix} {h(command)}{comment}"], pos
+
+    if command in {0x01, 0x0D}:
+        target = ptr(bytes_, pos)
+        return [f"\t{prefix}_ptr {h(command)}, 0x{target:08X}{comment}"], pos + 4
+
+    if command == 0x0C:
+        if pos + 2 > len(bytes_):
+            raise DecodeError("truncated XCMD_0C operand")
+        value = bytes_[pos] | (bytes_[pos + 1] << 8)
+        return [f"\t{prefix}_u16 {h(command)}, 0x{value:04X}{comment}"], pos + 2
+
+    if pos >= len(bytes_):
+        raise DecodeError(f"truncated {XCMD_NAMES[command]} operand")
+    value = bytes_[pos]
+    return [f"\t{prefix}_u8 {h(command)}, {h(value)}{comment}"], pos + 1
+
+
 def decode_command(bytes_: list[int], pos: int, last_status: int | None) -> tuple[list[str], int, int | None]:
     implicit = bytes_[pos] < 0x80
     if implicit:
@@ -171,6 +232,10 @@ def decode_command(bytes_: list[int], pos: int, last_status: int | None) -> tupl
         target = ptr(bytes_, pos + 1)
         return [f"\tm4a_rept {h(count)}, 0x{target:08X}"], pos + 5, last_status
 
+    if status == 0xB9:
+        decoded, pos = format_memacc(bytes_, pos)
+        return decoded, pos, last_status
+
     if status in ONE_ARG_COMMANDS:
         if pos >= len(bytes_) or bytes_[pos] >= 0x80:
             raise DecodeError(f"missing operand for {h(status)}")
@@ -179,6 +244,10 @@ def decode_command(bytes_: list[int], pos: int, last_status: int | None) -> tupl
         if implicit:
             return [f"\tm4a_running_cmd_u8 {h(value)} @ {name} (running status)"], pos + 1, last_status
         return [f"\t{macro} {h(value)}"], pos + 1, last_status
+
+    if status == 0xCD:
+        decoded, pos = format_xcmd(bytes_, pos, implicit)
+        return decoded, pos, last_status
 
     if status == 0xCE:
         if pos < len(bytes_) and bytes_[pos] < 0x80:

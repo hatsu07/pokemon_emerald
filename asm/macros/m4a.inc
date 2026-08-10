@@ -9,6 +9,7 @@
 	.equiv M4A_CMD_PATT,  0xB3
 	.equiv M4A_CMD_PEND,  0xB4
 	.equiv M4A_CMD_REPT,  0xB5
+	.equiv M4A_CMD_MEMACC, 0xB9
 	.equiv M4A_CMD_PRIO,  0xBA
 	.equiv M4A_CMD_TEMPO, 0xBB
 	.equiv M4A_CMD_KEYSH, 0xBC
@@ -23,6 +24,7 @@
 	.equiv M4A_CMD_MODT,  0xC5
 	.equiv M4A_CMD_TUNE,  0xC8
 	.equiv M4A_CMD_PORT,  0xCC
+	.equiv M4A_CMD_XCMD,  0xCD
 	.equiv M4A_CMD_EOT,   0xCE
 	.equiv M4A_CMD_TIE,   0xCF
 
@@ -81,6 +83,15 @@
     .4byte \target
 .endm
 
+.macro m4a_memacc op:req, address:req, data:req
+    .byte M4A_CMD_MEMACC, \op, \address, \data
+.endm
+
+.macro m4a_memacc_cond op:req, address:req, data:req, target:req
+    .byte M4A_CMD_MEMACC, \op, \address, \data
+    .4byte \target
+.endm
+
 .macro m4a_prio priority:req
     m4a_cmd_u8 M4A_CMD_PRIO, \priority
 .endm
@@ -135,6 +146,42 @@
 
 .macro m4a_port port:req
     m4a_cmd_u8 M4A_CMD_PORT, \port
+.endm
+
+.macro m4a_xcmd command:req
+    m4a_cmd_u8 M4A_CMD_XCMD, \command
+.endm
+
+.macro m4a_xcmd_u8 command:req, value:req
+    .byte M4A_CMD_XCMD, \command, \value
+.endm
+
+.macro m4a_xcmd_u16 command:req, value:req
+    .byte M4A_CMD_XCMD, \command
+    .2byte \value
+.endm
+
+.macro m4a_xcmd_ptr command:req, target:req
+    .byte M4A_CMD_XCMD, \command
+    .4byte \target
+.endm
+
+.macro m4a_running_xcmd command:req
+    .byte \command
+.endm
+
+.macro m4a_running_xcmd_u8 command:req, value:req
+    .byte \command, \value
+.endm
+
+.macro m4a_running_xcmd_u16 command:req, value:req
+    .byte \command
+    .2byte \value
+.endm
+
+.macro m4a_running_xcmd_ptr command:req, target:req
+    .byte \command
+    .4byte \target
 .endm
 
 .macro m4a_eot
