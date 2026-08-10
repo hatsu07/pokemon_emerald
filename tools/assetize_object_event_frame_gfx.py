@@ -68,7 +68,7 @@ def preferred_width(size: int) -> int:
     return 32
 
 
-def find_blocks(lines: list[str]) -> list[FrameBlock]:
+def find_blocks(lines: list[str], *, skip_incomplete: bool = False) -> list[FrameBlock]:
     blocks: list[FrameBlock] = []
     i = 0
     while i < len(lines):
@@ -104,6 +104,9 @@ def find_blocks(lines: list[str]) -> list[FrameBlock]:
             j += 1
 
         if len(raw) != size:
+            if skip_incomplete:
+                i += 1
+                continue
             raise ValueError(
                 f"{label}: expected 0x{size:X} bytes, found 0x{len(raw):X}"
             )
@@ -176,9 +179,10 @@ def process_file(
     dry_run: bool,
     check: bool,
     limit: int | None,
+    skip_incomplete: bool,
 ) -> int:
     lines = path.read_text().splitlines(keepends=True)
-    blocks = find_blocks(lines)
+    blocks = find_blocks(lines, skip_incomplete=skip_incomplete)
     if limit is not None:
         blocks = blocks[:limit]
 
@@ -246,6 +250,11 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--limit", type=int)
+    parser.add_argument(
+        "--skip-incomplete",
+        action="store_true",
+        help="skip frame blocks whose inline bytes do not cover the declared size",
+    )
     args = parser.parse_args()
 
     if args.dry_run and args.check:
@@ -261,6 +270,7 @@ def main() -> int:
                 dry_run=args.dry_run,
                 check=args.check,
                 limit=args.limit,
+                skip_incomplete=args.skip_incomplete,
             )
     except Exception as exc:
         print(f"error: {exc}", file=sys.stderr)
