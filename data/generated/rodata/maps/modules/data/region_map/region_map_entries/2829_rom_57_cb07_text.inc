@@ -9,6 +9,7 @@ gText_Rom_57CB07: @ 0x0857CB07
 	.space 0xa - (. - gText_Rom_57CB07)
 	.endif
 	@ analyzed canonical ROM range 0x0857CB11-0x0857CB16
-sAnalyzedData_0857CB11: @ 0x0857CB11
-	@ structured u8 payload; no safe higher-level semantic type was provable
+	.globl gText_Rom_57CB11
+gText_Rom_57CB11: @ 0x0857CB11
+	@ text fragment: "ロケットだん"
 	.byte 0x7B, 0x59, 0xA0, 0x64, 0x41, 0x2E

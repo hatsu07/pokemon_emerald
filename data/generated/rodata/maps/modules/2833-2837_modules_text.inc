@@ -20,8 +20,9 @@ gText_Rom_57CB34: @ 0x0857CB34
 	.space 0x8 - (. - gText_Rom_57CB34)
 	.endif
 	@ analyzed canonical ROM range 0x0857CB3C-0x0857CB4E
-sAnalyzedData_0857CB3C: @ 0x0857CB3C
-	@ structured u8 payload; no safe higher-level semantic type was provable
+	.globl gText_Rom_57CB3C
+gText_Rom_57CB3C: @ 0x0857CB3C
+	@ text fragments: "イワヤマトンネル$", "ふたごじま$", "ポケモン"
 	.byte 0x52, 0x7C, 0x74, 0x6F, 0x64, 0x7E, 0x68, 0x79, 0xFF, 0x1C, 0x10, 0x3B, 0x3D, 0x1F, 0xFF, 0x9F
 	.byte 0x59, 0x73, 0x7E
 	.globl gText_Rom_57CB4F
@@ -34,6 +35,7 @@ gText_Rom_57CB4F: @ 0x0857CB4F
 	.space 0x4 - (. - gText_Rom_57CB4F)
 	.endif
 	@ analyzed canonical ROM range 0x0857CB53-0x0857CB56
-sAnalyzedData_0857CB53: @ 0x0857CB53
-	@ structured u8 payload; no safe higher-level semantic type was provable
+	.globl gText_Rom_57CB53
+gText_Rom_57CB53: @ 0x0857CB53
+	@ text fragment: "ハナダの"
 	.byte 0x6A, 0x65, 0x91, 0x19
