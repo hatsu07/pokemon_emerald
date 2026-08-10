@@ -905,20 +905,24 @@ gUnknown_84E8900: @ 0x084E8900
 gScrcmdData_084E8904:
 	.globl gUnknown_84E8904
 gUnknown_84E8904: @ 0x084E8904
-	@ analyzed canonical ROM range 0x084E8904-0x084E8917
-sAnalyzedData_084E8904: @ 0x084E8904
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0001, 0x0000, 0x0001, 0x0000, 0x0101, 0x0001, 0x0100, 0x0101
-	.2byte 0x0100, 0x0000
+gScriptConditionResultTable: @ 0x084E8904
+	@ Indexed by condition * 3 + ScriptContext.comparisonResult.
+	.byte 1, 0, 0 @ condition 0
+	.byte 0, 1, 0 @ condition 1
+	.byte 0, 0, 1 @ condition 2
+	.byte 1, 1, 0 @ condition 3
+	.byte 0, 1, 1 @ condition 4
+	.byte 1, 0, 1 @ condition 5
+	.byte 0, 0 @ padding
 	@ pret/pokeemerald-jp direct xref for 0x084E8918: scrcmd.s: ScrCmd_bufferboxname, ScrCmd_bufferdecorationname, ScrCmd_bufferitemname, ScrCmd_bufferleadmonspeciesname, ScrCmd_buffermovename (+8 more)
 	.globl gScrcmdData_084E8918
 gScrcmdData_084E8918:
 	.globl gUnknown_84E8918
 gUnknown_84E8918: @ 0x084E8918
-	@ analyzed canonical ROM range 0x084E8918-0x084E8923
-sAnalyzedData_084E8918: @ 0x084E8918
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x1C40, 0x0202, 0x1C54, 0x0202, 0x1C68, 0x0202
+gScriptStringVarPointers: @ 0x084E8918
+	.4byte 0x02021C40 @ gStringVar1
+	.4byte 0x02021C54 @ gStringVar2
+	.4byte 0x02021C68 @ gStringVar3
 	.globl gUnknown_84E8924
 gUnknown_84E8924: @ 0x084E8924
 	@ Resolved pointer table; original ROM range 0x4E8924..0x4E898B.
@@ -963,51 +967,88 @@ gUnknown_84E898C: @ 0x084E898C
 gFieldTasksData_084E89AC:
 	.globl gUnknown_84E89AC
 gUnknown_84E89AC: @ 0x084E89AC
-	@ analyzed canonical ROM range 0x084E89AC-0x084E89CB
-sAnalyzedData_084E89AC: @ 0x084E89AC
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0000, 0x0259, 0x0100, 0x0261, 0xFF00, 0x0259, 0x0000, 0x0261
-	.2byte 0x0000, 0x0252, 0x0001, 0x0253, 0x00FF, 0x0252, 0x0000, 0x0253
+gHalfSubmergedBridgeMetatileOffsets: @ 0x084E89AC
+	@ Four records selected by Pacifidlog bridge metatile behavior.
+	.byte 0, 0
+	.2byte 0x0259
+	.byte 0, 1
+	.2byte 0x0261
+	.byte 0, -1
+	.2byte 0x0259
+	.byte 0, 0
+	.2byte 0x0261
+	.byte 0, 0
+	.2byte 0x0252
+	.byte 1, 0
+	.2byte 0x0253
+	.byte -1, 0
+	.2byte 0x0252
+	.byte 0, 0
+	.2byte 0x0253
 	@ pret/pokeemerald-jp direct xref for 0x084E89CC: field_tasks.s: UpdateFullySubmergedBridgeMetatiles
 	.globl gFieldTasksData_084E89CC
 gFieldTasksData_084E89CC:
 	.globl gUnknown_84E89CC
 gUnknown_84E89CC: @ 0x084E89CC
-	@ analyzed canonical ROM range 0x084E89CC-0x084E89EB
-sAnalyzedData_084E89CC: @ 0x084E89CC
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0000, 0x025A, 0x0100, 0x0262, 0xFF00, 0x025A, 0x0000, 0x0262
-	.2byte 0x0000, 0x0254, 0x0001, 0x0255, 0x00FF, 0x0254, 0x0000, 0x0255
+gFullySubmergedBridgeMetatileOffsets: @ 0x084E89CC
+	.byte 0, 0
+	.2byte 0x025A
+	.byte 0, 1
+	.2byte 0x0262
+	.byte 0, -1
+	.2byte 0x025A
+	.byte 0, 0
+	.2byte 0x0262
+	.byte 0, 0
+	.2byte 0x0254
+	.byte 1, 0
+	.2byte 0x0255
+	.byte -1, 0
+	.2byte 0x0254
+	.byte 0, 0
+	.2byte 0x0255
 	@ pret/pokeemerald-jp direct xref for 0x084E89EC: field_tasks.s: UpdateFloatingBridgeMetatiles
 	.globl gFieldTasksData_084E89EC
 gFieldTasksData_084E89EC:
 	.globl gUnknown_84E89EC
 gUnknown_84E89EC: @ 0x084E89EC
-	@ analyzed canonical ROM range 0x084E89EC-0x084E8A0B
-sAnalyzedData_084E89EC: @ 0x084E89EC
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0000, 0x0258, 0x0100, 0x0260, 0xFF00, 0x0258, 0x0000, 0x0260
-	.2byte 0x0000, 0x0250, 0x0001, 0x0251, 0x00FF, 0x0250, 0x0000, 0x0251
+gFloatingBridgeMetatileOffsets: @ 0x084E89EC
+	.byte 0, 0
+	.2byte 0x0258
+	.byte 0, 1
+	.2byte 0x0260
+	.byte 0, -1
+	.2byte 0x0258
+	.byte 0, 0
+	.2byte 0x0260
+	.byte 0, 0
+	.2byte 0x0250
+	.byte 1, 0
+	.2byte 0x0251
+	.byte -1, 0
+	.2byte 0x0250
+	.byte 0, 0
+	.2byte 0x0251
 	@ pret/pokeemerald-jp direct xref for 0x084E8A0C: field_tasks.s: CoordInIcePuzzleRegion, IsIcePuzzleCoordVisited, MarkIcePuzzleCoordVisited
 	.globl gFieldTasksData_084E8A0C
 gFieldTasksData_084E8A0C:
 	.globl gUnknown_84E8A0C
 gUnknown_84E8A0C: @ 0x084E8A0C
-	@ analyzed canonical ROM range 0x084E8A0C-0x084E8A3F
-sAnalyzedData_084E8A0C: @ 0x084E8A0C
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x40, 0x02, 0x40
-	.byte 0x03, 0x40, 0x04, 0x40, 0x00, 0x00, 0x00, 0x00, 0x05, 0x40, 0x06, 0x40, 0x07, 0x40, 0x00, 0x00
-	.byte 0x00, 0x00, 0x08, 0x40, 0x09, 0x40, 0x0A, 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00
+gSootopolisGymIcePuzzleVarsByYCoord: @ 0x084E8A0C
+	@ Indexed directly by map y coordinate.
+	.2byte 0, 0, 0, 0, 0, 0
+	.2byte 0x4001, 0x4002, 0x4003, 0x4004
+	.2byte 0, 0
+	.2byte 0x4005, 0x4006, 0x4007
+	.2byte 0, 0
+	.2byte 0x4008, 0x4009, 0x400A
+	.2byte 0, 0, 0, 0, 0, 0
 	@ pret/pokeemerald-jp direct xref for 0x084E8A40: field_tasks.s: SetMuddySlopeMetatile
 	.globl gFieldTasksData_084E8A40
 gFieldTasksData_084E8A40:
 	.globl gUnknown_84E8A40
 gUnknown_84E8A40: @ 0x084E8A40
-	@ analyzed canonical ROM range 0x084E8A40-0x084E8A47
-sAnalyzedData_084E8A40: @ 0x084E8A40
-	@ structured u16 table (semantic role inferred only to scalar width)
+gMuddySlopeMetatileIdsByTimerBucket: @ 0x084E8A40
 	.2byte 0x00E8, 0x00EB, 0x00EA, 0x00E9
 	@ pret/pokeemerald-jp direct xref for 0x084E8A48: reset_rtc_screen.s: sub_0809E920
 	.globl gResetRtcScreenData_084E8A48
