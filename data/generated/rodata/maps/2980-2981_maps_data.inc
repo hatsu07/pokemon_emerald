@@ -4,8 +4,8 @@ gBattleTransitionData_085A6690:
 	.globl gUnknown_85A6690
 gUnknown_85A6690: @ 0x085A6690
 	@ analyzed canonical ROM range 0x085A6690-0x085A768F
-sAnalyzedData_085A6690: @ 0x085A6690
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gBattleTransitionRayquazaScreenblockTilemap: @ 0x085A6690
+	@ BG screenblock tilemap copied by Phase2_Rayquaza_Func4
 	.byte 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0
 	.byte 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0
 	.byte 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0xF0
@@ -268,8 +268,8 @@ gBattleTransitionData_085A7690:
 	.globl gUnknown_85A7690
 gUnknown_85A7690: @ 0x085A7690
 	@ analyzed canonical ROM range 0x085A7690-0x085A76AF
-sAnalyzedData_085A7690: @ 0x085A7690
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gBattleTransitionPhase29_30Palette: @ 0x085A7690
+	@ 16-color BGR555 palette loaded by Phase2_29_Func1 and Phase2_30_Func1
 	.byte 0x0C, 0x4B, 0xFF, 0x7F, 0x56, 0x7F, 0x25, 0x7E, 0xEE, 0x41, 0x1E, 0x48, 0x7A, 0x48, 0xD7, 0x48
 	.byte 0x54, 0x49, 0xB0, 0x49, 0x0D, 0x4A, 0x8A, 0x4A, 0xE6, 0x4A, 0x43, 0x4B, 0xC0, 0x4B, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085A76B0: battle_transition.s: Phase2_29_Func1, Phase2_30_Func1
@@ -304,8 +304,8 @@ gBattleTransitionData_085A8028:
 	.globl gUnknown_85A8028
 gUnknown_85A8028: @ 0x085A8028
 	@ analyzed canonical ROM range 0x085A8028-0x085A8047
-sAnalyzedData_085A8028: @ 0x085A8028
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gBattleTransitionPhase31_32_33Palette: @ 0x085A8028
+	@ 16-color BGR555 palette loaded by Phase2_31/32/33 setup
 	.byte 0x0C, 0x30, 0xFF, 0x7F, 0x56, 0x7F, 0x25, 0x7E, 0xEE, 0x41, 0xFF, 0x7F, 0x56, 0x7F, 0x25, 0x7E
 	.byte 0xFF, 0x7F, 0x1F, 0x00, 0xDB, 0x6F, 0x98, 0x67, 0x55, 0x63, 0x12, 0x5B, 0xCF, 0x56, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085A8048: battle_transition.s: Phase2_31_Func1, Phase2_32_Func1, Phase2_33_Func1
@@ -366,8 +366,8 @@ gBattleTransitionData_085A83D8:
 	.globl gUnknown_85A83D8
 gUnknown_85A83D8: @ 0x085A83D8
 	@ analyzed canonical ROM range 0x085A83D8-0x085A83F7
-sAnalyzedData_085A83D8: @ 0x085A83D8
-	@ structured u16 table (semantic role inferred only to scalar width)
+gBattleTransitionPhase31_32_33TileIds: @ 0x085A83D8
+	@ tile IDs used by the Phase2_31/32/33 animation routines
 	.2byte 0x0002, 0x0003, 0x0004, 0x0005, 0x0006, 0x0007, 0x0008, 0x0009
 	.2byte 0x000A, 0x000B, 0x000C, 0x000D, 0x000E, 0x000F, 0x0010, 0x0011
 	.globl gUnknown_85A83F8
@@ -548,8 +548,8 @@ gBattleTransitionData_085A8638:
 	.globl gUnknown_85A8638
 gUnknown_85A8638: @ 0x085A8638
 	@ analyzed canonical ROM range 0x085A8638-0x085A863B
-sAnalyzedData_085A8638: @ 0x085A8638
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gBattleTransitionPokeballsTrailXDirections: @ 0x085A8638
+	@ signed x direction choices copied by Phase2_PokeballsTrail_Func2
 	.byte 0xF0, 0xFF, 0x00, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x085A863C: battle_transition.s: Phase2_PokeballsTrail_Func2
 	.globl gBattleTransitionData_085A863C
@@ -557,8 +557,8 @@ gBattleTransitionData_085A863C:
 	.globl gUnknown_85A863C
 gUnknown_85A863C: @ 0x085A863C
 	@ analyzed canonical ROM range 0x085A863C-0x085A8645
-sAnalyzedData_085A863C: @ 0x085A863C
-	@ structured u16 table (semantic role inferred only to scalar width)
+gBattleTransitionPokeballsTrailYStarts: @ 0x085A863C
+	@ starting y offsets for Phase2_PokeballsTrail_Func2
 	.2byte 0x0000, 0x0020, 0x0040, 0x0012, 0x0030
 	@ pret/pokeemerald-jp direct xref for 0x085A8646: battle_transition.s: sub_081471FC
 	.globl gBattleTransitionData_085A8646
@@ -566,8 +566,8 @@ gBattleTransitionData_085A8646:
 	.globl gUnknown_85A8646
 gUnknown_85A8646: @ 0x085A8646
 	@ analyzed canonical ROM range 0x085A8646-0x085A864B
-sAnalyzedData_085A8646: @ 0x085A8646
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gBattleTransitionPokeballFieldEffectDeltas: @ 0x085A8646
+	@ signed movement deltas used by sub_081471FC
 	.byte 0x08, 0x00, 0xF8, 0xFF, 0x00, 0x00
 	.globl gUnknown_85A864C
 gUnknown_85A864C: @ 0x085A864C
@@ -605,8 +605,8 @@ gBattleTransitionData_085A86A4:
 	.globl gUnknown_85A86A4
 gUnknown_85A86A4: @ 0x085A86A4
 	@ analyzed canonical ROM range 0x085A86A4-0x085A86A9
-sAnalyzedData_085A86A4: @ 0x085A86A4
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gBattleTransitionMugshotSpriteTileNums: @ 0x085A86A4
+	@ tile numbers used while creating the mugshot opponent/player sprites
 	.byte 0x24, 0x25, 0x26, 0x27, 0x36, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085A86AA: battle_transition.s: Mugshots_CreateOpponentPlayerSprites
 	.globl gBattleTransitionData_085A86AA
@@ -614,8 +614,8 @@ gBattleTransitionData_085A86AA:
 	.globl gUnknown_85A86AA
 gUnknown_85A86AA: @ 0x085A86AA
 	@ analyzed canonical ROM range 0x085A86AA-0x085A86BD
-sAnalyzedData_085A86AA: @ 0x085A86AA
-	@ structured u16 table (semantic role inferred only to scalar width)
+gBattleTransitionMugshotSpriteScaleValues: @ 0x085A86AA
+	@ affine scale values used while creating the mugshot opponent/player sprites
 	.2byte 0x0200, 0x0200, 0x0200, 0x0200, 0x01B0, 0x01B0, 0x01A0, 0x01A0
 	.2byte 0x0188, 0x0188
 	@ pret/pokeemerald-jp direct xref for 0x085A86BE: battle_transition.s: Mugshots_CreateOpponentPlayerSprites
@@ -624,8 +624,8 @@ gBattleTransitionData_085A86BE:
 	.globl gUnknown_85A86BE
 gUnknown_85A86BE: @ 0x085A86BE
 	@ analyzed canonical ROM range 0x085A86BE-0x085A86D3
-sAnalyzedData_085A86BE: @ 0x085A86BE
-	@ structured u16 table (semantic role inferred only to scalar width)
+gBattleTransitionMugshotSpriteOffsetValues: @ 0x085A86BE
+	@ sprite position offsets used while creating the mugshot opponent/player sprites
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0xFFFC, 0x0004, 0x0000, 0x0005
 	.2byte 0xFFF8, 0x0007, 0x0000
 	.globl gUnknown_85A86D4
@@ -647,8 +647,8 @@ gBattleTransitionData_085A86F4:
 	.globl gUnknown_85A86F4
 gUnknown_85A86F4: @ 0x085A86F4
 	@ analyzed canonical ROM range 0x085A86F4-0x085A86F7
-sAnalyzedData_085A86F4: @ 0x085A86F4
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gBattleTransitionMugshotSpriteVelocityPairs: @ 0x085A86F4
+	@ signed velocity pair table used by sub_0814846C
 	.byte 0xFF, 0xFF, 0x01, 0x00
 	.globl gUnknown_85A86F8
 gUnknown_85A86F8: @ 0x085A86F8
@@ -667,8 +667,8 @@ gBattleTransitionData_085A8714:
 	.globl gUnknown_85A8714
 gUnknown_85A8714: @ 0x085A8714
 	@ analyzed canonical ROM range 0x085A8714-0x085A8715
-sAnalyzedData_085A8714: @ 0x085A8714
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gBattleTransitionShredSplitScanlineStarts: @ 0x085A8714
+	@ initial scanline offsets used by Phase2_ShredSplit_Func2
 	.byte 0x27, 0x77
 	@ pret/pokeemerald-jp direct xref for 0x085A8716: battle_transition.s: Phase2_ShredSplit_Func2
 	.globl gBattleTransitionData_085A8716
@@ -676,8 +676,8 @@ gBattleTransitionData_085A8716:
 	.globl gUnknown_85A8716
 gUnknown_85A8716: @ 0x085A8716
 	@ analyzed canonical ROM range 0x085A8716-0x085A871B
-sAnalyzedData_085A8716: @ 0x085A8716
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gBattleTransitionShredSplitScanlineDeltas: @ 0x085A8716
+	@ signed scanline deltas used by Phase2_ShredSplit_Func2
 	.byte 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
 	.globl gUnknown_85A871C
 gUnknown_85A871C: @ 0x085A871C
@@ -694,8 +694,8 @@ gBattleTransitionData_085A8730:
 	.globl gUnknown_85A8730
 gUnknown_85A8730: @ 0x085A8730
 	@ analyzed canonical ROM range 0x085A8730-0x085A8733
-sAnalyzedData_085A8730: @ 0x085A8730
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gBattleTransitionBlackhole1ScanlineDeltas: @ 0x085A8730
+	@ signed scanline deltas used by Phase2_Blackhole1_Func2
 	.byte 0xFA, 0xFF, 0x04, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085A8734: battle_transition.s: Phase2Task_Registeel
 	.globl gBattleTransitionData_085A8734
@@ -704,7 +704,7 @@ gBattleTransitionData_085A8734:
 gUnknown_85A8734: @ 0x085A8734
 	@ analyzed canonical ROM range 0x085A8734-0x085A87E7
 	@ semantic recovery: rodata; byte-verified against linked ROM
-sAnalyzedData_085A8734: @ 0x085A8734
+gBattleTransitionRegisteelPhaseData: @ 0x085A8734
 FunctionPointerTable_JP_085A8734: @ 0x085A8734
 	@ proven function-pointer table
 	.4byte Phase2_RectangularSpiral_Func1
@@ -727,7 +727,7 @@ gBattleTransitionData_085A87E8:
 	.globl gUnknown_85A87E8
 gUnknown_85A87E8: @ 0x085A87E8
 	@ analyzed canonical ROM range 0x085A87E8-0x085A87EF
-sAnalyzedData_085A87E8: @ 0x085A87E8
+gBattleTransitionRectangularSpiralDataLists: @ 0x085A87E8
 	@ pointer/nullable table
 	.4byte 0x085A87A8 @ +0x0
 	.4byte 0x085A87C8 @ +0x4
@@ -767,8 +767,8 @@ gBattleTransitionData_085A8850:
 	.globl gUnknown_85A8850
 gUnknown_85A8850: @ 0x085A8850
 	@ analyzed canonical ROM range 0x085A8850-0x085A885F
-sAnalyzedData_085A8850: @ 0x085A8850
-	@ structured u16 table (semantic role inferred only to scalar width)
+gBattleTransitionWhiteFadeBlendSteps: @ 0x085A8850
+	@ blend step table used by Phase2_WhiteFade_Func2
 	.2byte 0x0000, 0x0014, 0x000F, 0x0028, 0x000A, 0x0019, 0x0023, 0x0005
 	.globl gUnknown_85A8860
 gUnknown_85A8860: @ 0x085A8860
@@ -788,8 +788,8 @@ gBattleTransitionData_085A8880:
 	.globl gUnknown_85A8880
 gUnknown_85A8880: @ 0x085A8880
 	@ analyzed canonical ROM range 0x085A8880-0x085A88C5
-sAnalyzedData_085A8880: @ 0x085A8880
-	@ structured u16 table (semantic role inferred only to scalar width)
+gBattleTransitionShardsSpriteInitData: @ 0x085A8880
+	@ coordinate and velocity data used by Phase2_Shards_Func2
 	.2byte 0x0038, 0x0000, 0x0000, 0x00A0, 0x0000, 0x0068, 0x00A0, 0x00F0
 	.2byte 0x0058, 0x0001, 0x00F0, 0x0048, 0x0038, 0x0000, 0x0001, 0x0000
 	.2byte 0x0020, 0x0090, 0x00A0, 0x0000, 0x0090, 0x00A0, 0x00B8, 0x0000
@@ -801,8 +801,8 @@ gBattleTransitionData_085A88C6:
 	.globl gUnknown_85A88C6
 gUnknown_85A88C6: @ 0x085A88C6
 	@ analyzed canonical ROM range 0x085A88C6-0x085A88D3
-sAnalyzedData_085A88C6: @ 0x085A88C6
-	@ structured u16 table (semantic role inferred only to scalar width)
+gBattleTransitionShardsFrameDelays: @ 0x085A88C6
+	@ frame delay table used by Phase2_Shards_Func4
 	.2byte 0x0008, 0x0004, 0x0002, 0x0001, 0x0001, 0x0001, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085A88D4: battle_transition.s: Phase2Task_Magma
 	.globl gBattleTransitionData_085A88D4
@@ -811,7 +811,7 @@ gBattleTransitionData_085A88D4:
 gUnknown_85A88D4: @ 0x085A88D4
 	@ analyzed canonical ROM range 0x085A88D4-0x085A8917
 	@ semantic recovery: rodata; byte-verified against linked ROM
-sAnalyzedData_085A88D4: @ 0x085A88D4
+gBattleTransitionMagmaPhaseData: @ 0x085A88D4
 FunctionPointerTable_JP_085A88D4: @ 0x085A88D4
 	@ proven function-pointer table
 	.4byte Phase1_TransitionAll_Func1
@@ -826,7 +826,7 @@ gBattleTransitionData_085A8918:
 	.globl gUnknown_85A8918
 gUnknown_85A8918: @ 0x085A8918
 	@ analyzed canonical ROM range 0x085A8918-0x085A8983
-sAnalyzedData_085A8918: @ 0x085A8918
+gBattleTransitionPokeballFieldEffectResources: @ 0x085A8918
 	@ pointer/nullable table
 	.4byte 0x1009FFFF @ +0x0
 	.4byte 0x084E1970 @ +0x4
@@ -861,8 +861,8 @@ gBattleTransitionData_085A8984:
 	.globl gUnknown_85A8984
 gUnknown_85A8984: @ 0x085A8984
 	@ analyzed canonical ROM range 0x085A8984-0x085A8A8B
-sAnalyzedData_085A8984: @ 0x085A8984
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gBattleTransitionSharedPalettes: @ 0x085A8984
+	@ shared BGR555 palette data for Big Pokeball, Pokeballs Trail, Grid Squares, and Rectangular Spiral
 	.byte 0xAC, 0x76, 0x3E, 0x00, 0x5D, 0x5B, 0xDB, 0x4A, 0xFF, 0x7F, 0x9B, 0x77, 0x37, 0x73, 0xD3, 0x6E
 	.byte 0x6C, 0x5A, 0x12, 0x00, 0x18, 0x63, 0x9D, 0x53, 0x3B, 0x43, 0xDA, 0x36, 0x79, 0x2A, 0x00, 0x00
 	.byte 0x84, 0x89, 0x5A, 0x08, 0x09, 0x10, 0x00, 0x00, 0xD5, 0x18, 0xCE, 0x39, 0x52, 0x4A, 0xD6, 0x5A
@@ -888,7 +888,7 @@ gUnknown_85A8A8C: @ 0x085A8A8C
 	@ confirmed contiguous ROM pointer table: 7 entries from this address
 sPointerTable_085A8A8C:
 	@ analyzed canonical ROM range 0x085A8A8C-0x085A8A9F
-sAnalyzedData_085A8A8C: @ 0x085A8A8C
+gBattleTransitionMugshotPaletteGroupPointers: @ 0x085A8A8C
 	@ pointer/nullable table
 	.4byte 0x085A89AC @ +0x0
 	.4byte 0x085A89CC @ +0x4
@@ -901,8 +901,8 @@ gBattleTransitionData_085A8AA0:
 	.globl gUnknown_85A8AA0
 gUnknown_85A8AA0: @ 0x085A8AA0
 	@ analyzed canonical ROM range 0x085A8AA0-0x085A8ACF
-sAnalyzedData_085A8AA0: @ 0x085A8AA0
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gBattleTransitionMugshotPaletteGroups: @ 0x085A8AA0
+	@ remaining mugshot palette pointer and BGR555 palette data
 	.byte 0x4C, 0x8A, 0x5A, 0x08, 0x6C, 0x8A, 0x5A, 0x08, 0x0E, 0x53, 0x7F, 0x67, 0x9B, 0x4A, 0x19, 0x3A
 	.byte 0x6F, 0x29, 0x27, 0x3D, 0xE5, 0x30, 0xA3, 0x28, 0x82, 0x1C, 0x9B, 0x77, 0x1F, 0x2F, 0x77, 0x2E
 	.byte 0x9F, 0x2D, 0x18, 0x21, 0xFF, 0x7F, 0x00, 0x00, 0xA8, 0x8A, 0x5A, 0x08, 0x0A, 0x10, 0x00, 0x00
@@ -912,8 +912,8 @@ gBattleTransitionData_085A8AD0:
 	.globl gUnknown_85A8AD0
 gUnknown_85A8AD0: @ 0x085A8AD0
 	@ analyzed canonical ROM range 0x085A8AD0-0x085A8F7F
-sAnalyzedData_085A8AD0: @ 0x085A8AD0
-	@ structured u16 table (semantic role inferred only to scalar width)
+gBattleTransitionBigPokeballTilemap: @ 0x085A8AD0
+	@ BG screenblock tilemap used by Phase2_BigPokeball_Func2
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
@@ -995,8 +995,8 @@ gBattleTransitionData_085A8F80:
 	.globl gUnknown_85A8F80
 gUnknown_85A8F80: @ 0x085A8F80
 	@ analyzed canonical ROM range 0x085A8F80-0x085A947F
-sAnalyzedData_085A8F80: @ 0x085A8F80
-	@ structured u16 table (semantic role inferred only to scalar width)
+gBattleTransitionMugshotTilemap: @ 0x085A8F80
+	@ BG screenblock tilemap used by Phase2_Mugshot_Func2
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
@@ -1117,8 +1117,8 @@ gBattleTransitionData_085A94E0:
 	.globl gUnknown_85A94E0
 gUnknown_85A94E0: @ 0x085A94E0
 	@ analyzed canonical ROM range 0x085A94E0-0x085A9502
-sAnalyzedData_085A94E0: @ 0x085A94E0
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gBattleTransitionPhase33RevealOrder: @ 0x085A94E0
+	@ tile reveal order used by Phase2_33_Func2 and Phase2_33_Func4
 	.byte 0x1C, 0x1D, 0x1E, 0x1F, 0x20, 0x21, 0x22, 0x1B, 0x14, 0x0D, 0x06, 0x05, 0x04, 0x03, 0x02, 0x01
 	.byte 0x00, 0x07, 0x0E, 0x15, 0x16, 0x17, 0x18, 0x19, 0x1A, 0x13, 0x0C, 0x0B, 0x0A, 0x09, 0x08, 0x0F
 	.byte 0x10, 0x11, 0x12
@@ -1128,8 +1128,8 @@ gBattleTransitionData_085A9503:
 	.globl gUnknown_85A9503
 gUnknown_85A9503: @ 0x085A9503
 	@ analyzed canonical ROM range 0x085A9503-0x085A9543
-sAnalyzedData_085A9503: @ 0x085A9503
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gBattleTransitionPhase32RevealOrder: @ 0x085A9503
+	@ tile reveal order used by Phase2_32_Func2 and Phase2_32_Func4
 	.byte 0x00, 0x10, 0x29, 0x16, 0x2C, 0x02, 0x2B, 0x15, 0x2E, 0x1B, 0x09, 0x30, 0x26, 0x05, 0x39, 0x3B
 	.byte 0x0C, 0x3F, 0x23, 0x1C, 0x0A, 0x35, 0x07, 0x31, 0x27, 0x17, 0x37, 0x01, 0x3E, 0x11, 0x3D, 0x1E
 	.byte 0x06, 0x22, 0x0F, 0x33, 0x20, 0x3A, 0x0D, 0x2D, 0x25, 0x34, 0x0B, 0x18, 0x3C, 0x13, 0x38, 0x21
@@ -1144,7 +1144,7 @@ gUnknown_85A9544: @ 0x085A9544
 sPointerTable_085A9544:
 	@ analyzed canonical ROM range 0x085A9544-0x085A966E
 	@ semantic recovery: rodata; byte-verified against linked ROM
-sAnalyzedData_085A9544: @ 0x085A9544
+gLinkPartnerBufferCommandHandlers: @ 0x085A9544
 FunctionPointerTable_JP_085A9544: @ 0x085A9544
 	@ proven function-pointer table
 	.4byte LinkPartnerHandleGetMonData
