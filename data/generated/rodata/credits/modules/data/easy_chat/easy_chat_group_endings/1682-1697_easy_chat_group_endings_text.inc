@@ -108,7 +108,7 @@ sAnalyzedData_085764B3: @ 0x085764B3
 gEasyChatGroup_Endings: @ 0x085764B4
 	easy_chat_word_info gText_Rom_5763A4, 0, 1 @ word 0
 	easy_chat_word_info gText_Rom_5763AA, 1, 1 @ word 1
-	easy_chat_word_info sAnalyzedData_085763AF, 2, 1 @ word 2
+	easy_chat_word_info gText_Rom_5763AF, 2, 1 @ word 2
 	easy_chat_word_info 0x085763B1, 3, 1 @ word 3
 	easy_chat_word_info gText_Rom_5763B4, 4, 1 @ word 4
 	easy_chat_word_info 0x085763B8, 5, 1 @ word 5
@@ -120,7 +120,7 @@ gEasyChatGroup_Endings: @ 0x085764B4
 	easy_chat_word_info 0x085763D0, 11, 1 @ word 11
 	easy_chat_word_info gText_Rom_5763D3, 12, 1 @ word 12
 	easy_chat_word_info gText_Rom_5763D7, 13, 1 @ word 13
-	easy_chat_word_info sAnalyzedData_085763DB, 14, 1 @ word 14
+	easy_chat_word_info gText_Rom_5763DB, 14, 1 @ word 14
 	easy_chat_word_info 0x085763DE, 15, 1 @ word 15
 	easy_chat_word_info 0x085763E1, 16, 1 @ word 16
 	easy_chat_word_info 0x085763E3, 17, 1 @ word 17

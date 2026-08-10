@@ -9,7 +9,6 @@ gText_Rom_5CAE35: @ 0x085CAE35
 	.space 0x5 - (. - gText_Rom_5CAE35)
 	.endif
 	@ analyzed canonical ROM range 0x085CAE3A-0x085CAE3E
-sAnalyzedData_085CAE3A: @ 0x085CAE3A
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x0C, 0x36, 0x03, 0x48, 0x16
 	.globl gText_Rom_5CAE3F
@@ -22,6 +21,5 @@ gText_Rom_5CAE3F: @ 0x085CAE3F
 	.space 0x5 - (. - gText_Rom_5CAE3F)
 	.endif
 	@ analyzed canonical ROM range 0x085CAE44-0x085CAE4D
-sAnalyzedData_085CAE44: @ 0x085CAE44
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x05, 0x0C, 0x04, 0x15, 0x02, 0xFF, 0x64, 0x7A, 0xAE, 0x95

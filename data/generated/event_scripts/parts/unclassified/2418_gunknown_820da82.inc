@@ -2,7 +2,6 @@
 gUnknown_820DA82: @ 0x0820DA82
 	@ analyzed canonical ROM range 0x0820DA82-0x0820DA90
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0820DA82: @ 0x0820DA82
 EventScript_JP_0820DA82: @ 0x0820DA82
 	@ event command: gotostd_if
 	.byte 0x0A
@@ -21,7 +20,6 @@ EventScript_JP_0820DA82: @ 0x0820DA82
 gUnknown_820DA91: @ 0x0820DA91
 	@ analyzed canonical ROM range 0x0820DA91-0x0820DA9E
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0820DA91: @ 0x0820DA91
 	.byte 0x0B, 0x02, 0x02, 0x00, 0x00
 	@ event command: setdooropen
 	.byte 0xAF
@@ -35,7 +33,6 @@ sAnalyzedEventData_0820DA91: @ 0x0820DA91
 gUnknown_820DA9F: @ 0x0820DA9F
 	@ analyzed canonical ROM range 0x0820DA9F-0x0820DACA
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0820DA9F: @ 0x0820DA9F
 EventScript_0820DA9F: @ 0x0820DA9F
 EventScript_JP_0820DA9F: @ 0x0820DA9F
 	@ event command: lockall

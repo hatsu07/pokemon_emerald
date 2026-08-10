@@ -5,7 +5,6 @@ gWildEncounterData_0852E6C0:
 	.globl gUnknown_852E6C0
 gUnknown_852E6C0: @ 0x0852E6C0
 	@ analyzed canonical ROM range 0x0852E6C0-0x0852E723
-sAnalyzedData_0852E6C0: @ 0x0852E6C0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x0000, 0xE610, 0x0852, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0200, 0x0000, 0xE648, 0x0852, 0x0000, 0x0000
@@ -20,6 +19,5 @@ gWildEncounterData_0852E724:
 	.globl gUnknown_852E724
 gUnknown_852E724: @ 0x0852E724
 	@ analyzed canonical ROM range 0x0852E724-0x0852E727
-sAnalyzedData_0852E724: @ 0x0852E724
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x14, 0x19, 0x48, 0x01

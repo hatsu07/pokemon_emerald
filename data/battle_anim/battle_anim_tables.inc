@@ -7,13 +7,11 @@
 
 	.globl gUnknown_82772F0
 gUnknown_82772F0:
-sAnalyzedEventData_082772F0:
 gMovesWithQuietBGM::
 	.2byte MOVE_SING, MOVE_PERISH_SONG, MOVE_GRASS_WHISTLE, 0xFFFF
 
 	.globl gUnknown_82772F8
 gUnknown_82772F8:
-sAnalyzedEventData_082772F8:
 gBattleAnims_Moves::
 	.4byte Move_NONE
 	.4byte Move_POUND
@@ -374,7 +372,6 @@ gBattleAnims_Moves::
 
 	.globl gUnknown_8277888
 gUnknown_8277888:
-sAnalyzedEventData_08277888:
 EventScript_08277888:
 gBattleAnims_StatusConditions::
 	.4byte Status_Poison
@@ -389,7 +386,6 @@ gBattleAnims_StatusConditions::
 
 	.globl gUnknown_82778AC
 gUnknown_82778AC:
-sAnalyzedEventData_082778AC:
 gBattleAnims_General::
 	.4byte General_CastformChange
 	.4byte General_StatsChange

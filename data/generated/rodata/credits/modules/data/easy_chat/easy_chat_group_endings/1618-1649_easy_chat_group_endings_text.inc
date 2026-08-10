@@ -20,7 +20,8 @@ gText_Rom_5763AA: @ 0x085763AA
 	.space 0x5 - (. - gText_Rom_5763AA)
 	.endif
 	@ analyzed canonical ROM range 0x085763AF-0x085763B3
-sAnalyzedData_085763AF: @ 0x085763AF
+	.globl gText_Rom_5763AF
+gText_Rom_5763AF: @ 0x085763AF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x06, 0xFF, 0x06, 0x02, 0xFF
 	.globl gText_Rom_5763B4
@@ -94,7 +95,8 @@ gText_Rom_5763D7: @ 0x085763D7
 	.space 0x4 - (. - gText_Rom_5763D7)
 	.endif
 	@ analyzed canonical ROM range 0x085763DB-0x085763E4
-sAnalyzedData_085763DB: @ 0x085763DB
+	.globl gText_Rom_5763DB
+gText_Rom_5763DB: @ 0x085763DB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x3F, 0xAB, 0xFF, 0x40, 0xAB, 0xFF, 0x10, 0xFF, 0x41, 0xFF
 	.globl gText_Rom_5763E5
@@ -180,4 +182,3 @@ gText_Rom_576412: @ 0x08576412
 	.endif
 	.globl gText_Rom_576413
 	.set gText_Rom_576413, gText_Rom_576412 + 0x1
-

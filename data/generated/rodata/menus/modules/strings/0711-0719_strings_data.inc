@@ -15,7 +15,6 @@ gCableClubData_0852B23C:
 	.globl gUnknown_852B23C
 gUnknown_852B23C: @ 0x0852B23C
 	@ analyzed canonical ROM range 0x0852B23C-0x0852B23E
-sAnalyzedData_0852B23C: @ 0x0852B23C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x10, 0x0B
 	@ pret/pokeemerald-jp direct xref for 0x0852B23F: cable_club.s: GetLinkTrainerCardColor
@@ -24,7 +23,6 @@ gCableClubData_0852B23F:
 	.globl gUnknown_852B23F
 gUnknown_852B23F: @ 0x0852B23F
 	@ analyzed canonical ROM range 0x0852B23F-0x0852B243
-sAnalyzedData_0852B23F: @ 0x0852B23F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x0B, 0x02, 0x0F, 0x46, 0x01
 	.globl gText_Rom_52B244
@@ -70,7 +68,6 @@ gText_Rom_52B253: @ 0x0852B253
 	.space 0x5 - (. - gText_Rom_52B253)
 	.endif
 	@ analyzed canonical ROM range 0x0852B258-0x0852B3D7
-sAnalyzedData_0852B258: @ 0x0852B258
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0xEE, 0xEE, 0xEE, 0xE0, 0xFE, 0xFF, 0xFF, 0xE0, 0xEF, 0xEE, 0xEE
 	.byte 0xE0, 0xEF, 0xEE, 0xFF, 0xE0, 0xEF, 0xEE, 0xFF, 0xE0, 0xEF, 0xEE, 0xFF, 0xE0, 0xEF, 0xEE, 0xFE

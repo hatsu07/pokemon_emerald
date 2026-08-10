@@ -2,7 +2,6 @@
 gUnknown_822D6B1: @ 0x0822D6B1
 	@ analyzed canonical ROM range 0x0822D6B1-0x0822D717
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0822D6B1: @ 0x0822D6B1
 EventScript_JP_0822D6B1: @ 0x0822D6B1
 	@ event command: call
 	.byte 0x04
@@ -92,7 +91,6 @@ EventScript_JP_0822D70E: @ 0x0822D70E
 gUnknown_822D718: @ 0x0822D718
 	@ analyzed canonical ROM range 0x0822D718-0x0822D732
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0822D718: @ 0x0822D718
 EventScript_JP_0822D718: @ 0x0822D718
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -122,7 +120,6 @@ EventScript_JP_0822D718: @ 0x0822D718
 gUnknown_822D733: @ 0x0822D733
 	@ analyzed canonical ROM range 0x0822D733-0x0822D750
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0822D733: @ 0x0822D733
 EventScript_JP_0822D733: @ 0x0822D733
 	@ event command: setvar
 	.byte 0x16
@@ -156,7 +153,6 @@ EventScript_JP_0822D750: @ 0x0822D750
 gUnknown_822D751: @ 0x0822D751
 	@ analyzed canonical ROM range 0x0822D751-0x0822D755
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0822D751: @ 0x0822D751
 EventScript_JP_0822D751: @ 0x0822D751
 	@ event command: goto
 	.byte 0x05

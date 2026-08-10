@@ -17,7 +17,6 @@ gUnknown_8300AFC: @ 0x08300AFC
 	@ confirmed contiguous ROM pointer table: 6 entries from this address
 sPointerTable_08300AFC:
 	@ analyzed canonical ROM range 0x08300AFC-0x08300B27
-sAnalyzedData_08300AFC: @ 0x08300AFC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0ABD, 0x0830, 0x0AC1, 0x0830, 0x0AD1, 0x0830, 0x0AD8, 0x0830
 	.2byte 0x0AE0, 0x0830, 0x0AEE, 0x0830, 0x635D, 0x60AE, 0x2D5D, 0x2920
@@ -30,7 +29,6 @@ gUnknown_8300B28: @ 0x08300B28
 	@ confirmed contiguous ROM pointer table: 4 entries from this address
 sPointerTable_08300B28:
 	@ analyzed canonical ROM range 0x08300B28-0x08300B37
-sAnalyzedData_08300B28: @ 0x08300B28
 	@ pointer/nullable table
 	.4byte 0x08300B14 @ +0x0
 	.4byte sub_08079A38 @ +0x4

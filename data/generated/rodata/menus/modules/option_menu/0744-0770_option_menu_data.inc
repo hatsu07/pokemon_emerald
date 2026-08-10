@@ -40,7 +40,6 @@ gScanlineEffectData_0853738A:
 	.globl gUnknown_853738A
 gUnknown_853738A: @ 0x0853738A
 	@ analyzed canonical ROM range 0x0853738A-0x08537392
-sAnalyzedData_0853738A: @ 0x0853738A
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFC, 0x01, 0x06, 0xFC, 0x03, 0x07, 0x20, 0x29, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x08537393: scanline_effect.s: Sound_DrawChoices
@@ -49,7 +48,6 @@ gScanlineEffectData_08537393:
 	.globl gUnknown_8537393
 gUnknown_8537393: @ 0x08537393
 	@ analyzed canonical ROM range 0x08537393-0x0853739C
-sAnalyzedData_08537393: @ 0x08537393
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFC, 0x01, 0x06, 0xFC, 0x03, 0x07, 0x20, 0x15, 0x02, 0xFF
 	.globl gUnknown_853739D

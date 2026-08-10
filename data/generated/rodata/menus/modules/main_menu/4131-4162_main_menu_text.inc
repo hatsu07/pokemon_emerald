@@ -45,7 +45,6 @@ gText_Rom_5C8F18: @ 0x085C8F18
 	.space 0x4 - (. - gText_Rom_5C8F18)
 	.endif
 	@ analyzed canonical ROM range 0x085C8F1C-0x085C8F23
-sAnalyzedData_085C8F1C: @ 0x085C8F1C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0xFF, 0x51, 0x7E, 0xFF, 0xFF, 0xFF, 0xFF
 	.globl gText_Rom_5C8F24
@@ -93,7 +92,6 @@ gText_Rom_5C8F34: @ 0x085C8F34
 	.space 0x5 - (. - gText_Rom_5C8F34)
 	.endif
 	@ analyzed canonical ROM range 0x085C8F39-0x085C8F45
-sAnalyzedData_085C8F39: @ 0x085C8F39
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0x5B, 0x54, 0xFF, 0xFF, 0xFF, 0xFF, 0x5D, 0x52, 0xFF, 0xFF, 0xFF, 0xFF
 	.globl gText_Rom_5C8F46
@@ -154,7 +152,6 @@ gText_Rom_5C8F5E: @ 0x085C8F5E
 	.space 0x4 - (. - gText_Rom_5C8F5E)
 	.endif
 	@ analyzed canonical ROM range 0x085C8F62-0x085C8F69
-sAnalyzedData_085C8F62: @ 0x085C8F62
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0xFF, 0x6B, 0x65, 0xFF, 0xFF, 0xFF, 0xFF
 	.globl gText_Rom_5C8F6A

@@ -11,7 +11,6 @@ gText_Rom_255E3A: @ 0x08255E3A
 	.endif
 	@ analyzed canonical ROM range 0x08255E40-0x08255EAA
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08255E40: @ 0x08255E40
 EventText_JP_08255E40: @ 0x08255E40
 	.string "あめに　ふられた$"
 EventText_JP_08255E49: @ 0x08255E49
@@ -29,7 +28,6 @@ gText_Rom_255EAB: @ 0x08255EAB
 	.endif
 	@ analyzed canonical ROM range 0x08255EB1-0x08255F19
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_08255EB1: @ 0x08255EB1
 EventText_JP_08255EB1: @ 0x08255EB1
 	.string "ずかんを　みた$"
 EventText_JP_08255EB9: @ 0x08255EB9
@@ -46,6 +44,5 @@ gText_Rom_255F1A: @ 0x08255F1A
 	.space 0x6 - (. - gText_Rom_255F1A)
 	.endif
 	@ analyzed canonical ROM range 0x08255F20-0x08255F24
-sAnalyzedEventData_08255F20: @ 0x08255F20
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x78, 0x9A, 0x7E, 0x2D, 0x00

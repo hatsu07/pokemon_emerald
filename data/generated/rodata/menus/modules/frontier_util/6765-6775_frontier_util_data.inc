@@ -74,7 +74,6 @@ gFrontierUtilData_085DD564:
 	.globl gUnknown_85DD564
 gUnknown_85DD564: @ 0x085DD564
 	@ analyzed canonical ROM range 0x085DD564-0x085DD569
-sAnalyzedData_085DD564: @ 0x085DD564
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xA2, 0xFF, 0xA3, 0xFF, 0xA4, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085DD56A: frontier_util.s: CopyFrontierBrainTrainerName, PrintHyphens, sub_081A48F8
@@ -83,7 +82,6 @@ gFrontierUtilData_085DD56A:
 	.globl gUnknown_85DD56A
 gUnknown_85DD56A: @ 0x085DD56A
 	@ analyzed canonical ROM range 0x085DD56A-0x085DD577
-sAnalyzedData_085DD56A: @ 0x085DD56A
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0325, 0x0326, 0x0327, 0x0328, 0x0329, 0x032A, 0x032B
 	.globl gText_Rom_5DD578

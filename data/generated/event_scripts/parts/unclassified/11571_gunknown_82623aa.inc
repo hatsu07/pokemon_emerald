@@ -2,7 +2,6 @@
 gUnknown_82623AA: @ 0x082623AA
 	@ analyzed canonical ROM range 0x082623AA-0x082623CC
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082623AA: @ 0x082623AA
 EventScript_JP_082623AA: @ 0x082623AA
 	@ event command: setvar
 	.byte 0x16
@@ -39,7 +38,6 @@ EventScript_JP_082623BB: @ 0x082623BB
 gUnknown_82623CD: @ 0x082623CD
 	@ analyzed canonical ROM range 0x082623CD-0x082623E7
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082623CD: @ 0x082623CD
 EventScript_082623CD: @ 0x082623CD
 EventScript_JP_082623CD: @ 0x082623CD
 	@ event command: lockall
@@ -72,7 +70,6 @@ EventScript_JP_082623E3: @ 0x082623E3
 gUnknown_82623E8: @ 0x082623E8
 	@ analyzed canonical ROM range 0x082623E8-0x082623F8
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082623E8: @ 0x082623E8
 EventScript_082623E8: @ 0x082623E8
 EventScript_JP_082623E8: @ 0x082623E8
 	@ event command: lockall
@@ -96,7 +93,6 @@ EventScript_JP_082623E8: @ 0x082623E8
 gUnknown_82623F9: @ 0x082623F9
 	@ analyzed canonical ROM range 0x082623F9-0x08262409
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_082623F9: @ 0x082623F9
 EventScript_082623F9: @ 0x082623F9
 EventScript_JP_082623F9: @ 0x082623F9
 	@ event command: lockall
@@ -120,7 +116,6 @@ EventScript_JP_082623F9: @ 0x082623F9
 gUnknown_826240A: @ 0x0826240A
 	@ analyzed canonical ROM range 0x0826240A-0x08262451
 	@ semantic recovery: script_data; byte-verified against linked ROM
-sAnalyzedEventData_0826240A: @ 0x0826240A
 EventScript_JP_0826240A: @ 0x0826240A
 	@ event command: lockall
 	.byte 0x69
