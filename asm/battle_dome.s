@@ -2207,7 +2207,7 @@ _0818F824: .4byte 0x020243E8
 _0818F828: .4byte 0x03005AF0
 _0818F82C: .4byte 0x00000D64
 _0818F830: .4byte 0x0203B958
-_0818F834: .4byte 0x085ADBF4
+_0818F834: .4byte gUnknown_85ADBF4
 	thumb_func_end CreateDomeOpponentMon
 
 	thumb_func_start CreateDomeOpponentMons
@@ -3536,14 +3536,14 @@ _0819025E:
 	strh r0, [r6, #8]
 	b _081903CE
 	.align 2, 0
-_08190268: .4byte 0x08D83DF4
-_0819026C: .4byte 0x08D84A08
-_08190270: .4byte 0x08D84F98
+_08190268: .4byte gBattleDomeData_08D83DF4
+_0819026C: .4byte gBattleDomeData_08D84A08
+_08190270: .4byte gBattleDomeData_08D84F98
 _08190274: .4byte gBattleDomeTourneyTreeButtonSheets
-_08190278: .4byte 0x08D8533C
+_08190278: .4byte gBattleDomeData_08D8533C
 _0819027C: .4byte gBattleDomeTourneyTreeButtons_Pal
-_08190280: .4byte 0x08D855E4
-_08190284: .4byte 0x08D854AC
+_08190280: .4byte gUnknown_8D855E4
+_08190284: .4byte gBattleDomeData_08D854AC
 _08190288: .4byte 0x020377B4
 _0819028C: .4byte 0x05000100
 _08190290:
@@ -11240,14 +11240,14 @@ _0819401C:
 	b _08194466
 	.align 2, 0
 _0819402C: .4byte 0x0203CA48
-_08194030: .4byte 0x08D839A4
-_08194034: .4byte 0x08D82FB4
-_08194038: .4byte 0x08D835A0
-_0819403C: .4byte 0x08D83BD0
-_08194040: .4byte 0x08D83CE0
-_08194044: .4byte 0x08D8533C
+_08194030: .4byte gBattleDomeData_08D839A4
+_08194034: .4byte gBattleDomeData_08D82FB4
+_08194038: .4byte gBattleDomeData_08D835A0
+_0819403C: .4byte gBattleDomeData_08D83BD0
+_08194040: .4byte gBattleDomeData_08D83CE0
+_08194044: .4byte gBattleDomeData_08D8533C
 _08194048: .4byte gBattleDomeTourneyTreeButtons_Pal
-_0819404C: .4byte 0x08D855E4
+_0819404C: .4byte gUnknown_8D855E4
 _08194050: .4byte 0x020377B4
 _08194054: .4byte 0x05000100
 _08194058: .4byte 0x03005B60
@@ -12340,9 +12340,9 @@ InitDomeFacilityTrainersAndMons: @ 0x08194948
 	bx lr
 	.align 2, 0
 _08194958: .4byte 0x0203B958
-_0819495C: .4byte 0x085B8700
+_0819495C: .4byte gUnknown_85B8700
 _08194960: .4byte 0x0203B954
-_08194964: .4byte 0x085B4A10
+_08194964: .4byte gUnknown_85B4A10
 	thumb_func_end InitDomeFacilityTrainersAndMons
 
 	thumb_func_start RestoreDomePlayerParty

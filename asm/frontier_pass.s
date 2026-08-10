@@ -426,7 +426,7 @@ _080C4D12:
 	bx r0
 	.align 2, 0
 _080C4D28: .4byte 0x02039990
-_080C4D2C: .4byte 0x0854AF04
+_080C4D2C: .4byte gFrontierPassData_0854AF04
 _080C4D30: .4byte 0x0203998C
 	thumb_func_end VblankCb_FrontierPass
 
@@ -555,7 +555,7 @@ _080C4E0C:
 	bl SetBgAttribute
 	b _080C4FF0
 	.align 2, 0
-_080C4E4C: .4byte 0x0854AF0C
+_080C4E4C: .4byte gFrontierPassData_0854AF0C
 _080C4E50: .4byte 0x02039990
 _080C4E54: .4byte 0x00001032
 _080C4E58: .4byte 0x00002032
@@ -565,7 +565,7 @@ _080C4E5C:
 	bl DeactivateAllTextPrinters
 	b _080C4FF0
 	.align 2, 0
-_080C4E68: .4byte 0x0854AF24
+_080C4E68: .4byte gFrontierPassData_0854AF24
 _080C4E6C:
 	ldr r0, _080C4EB4
 	add r1, sp, #8
@@ -598,12 +598,12 @@ _080C4E6C:
 	bl decompress_and_copy_tile_data_to_vram
 	b _080C4FF0
 	.align 2, 0
-_080C4EB4: .4byte 0x0854AE1C
+_080C4EB4: .4byte gFrontierPassData_0854AE1C
 _080C4EB8: .4byte 0x02039990
-_080C4EBC: .4byte 0x08549B58
-_080C4EC0: .4byte 0x08549DE8
-_080C4EC4: .4byte 0x085469A4
-_080C4EC8: .4byte 0x08549E20
+_080C4EBC: .4byte gFrontierPassData_08549B58
+_080C4EC0: .4byte gFrontierPassData_08549DE8
+_080C4EC4: .4byte gFrontierPassData_085469A4
+_080C4EC8: .4byte gFrontierPassData_08549E20
 _080C4ECC:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -682,7 +682,7 @@ _080C4F70:
 	movs r0, #1
 	b _080C4FFC
 	.align 2, 0
-_080C4F78: .4byte 0x085467E4
+_080C4F78: .4byte gFrontierPassData_085467E4
 _080C4F7C: .4byte 0x0203998C
 _080C4F80:
 	movs r1, #0x82
@@ -899,7 +899,7 @@ _080C513E:
 	lsrs r0, r0, #0x18
 	b _080C515C
 	.align 2, 0
-_080C5148: .4byte 0x0854AF78
+_080C5148: .4byte gFrontierPassData_0854AF78
 _080C514C: .4byte 0x0203998C
 _080C5150:
 	adds r0, r4, #1
@@ -1700,7 +1700,7 @@ _080C577E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C57A4: .4byte 0x0854AF6C
+_080C57A4: .4byte gFrontierPassData_0854AF6C
 _080C57A8: .4byte 0x085CCA93
 _080C57AC: .4byte 0x085CCA9E
 _080C57B0: .4byte 0x085CCAA8
@@ -1740,8 +1740,8 @@ PrintAreaDescription: @ 0x080C57BC
 	b _080C5826
 	.align 2, 0
 _080C57F8: .4byte 0x0203998C
-_080C57FC: .4byte 0x0854AF6F
-_080C5800: .4byte 0x0854B138
+_080C57FC: .4byte gFrontierPassData_0854AF6F
+_080C5800: .4byte gFrontierPassData_0854B138
 _080C5804:
 	cmp r4, #0
 	beq _080C5826
@@ -1770,8 +1770,8 @@ _080C5826:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C583C: .4byte 0x0854AF6F
-_080C5840: .4byte 0x0854B138
+_080C583C: .4byte gFrontierPassData_0854AF6F
+_080C5840: .4byte gFrontierPassData_0854B138
 	thumb_func_end PrintAreaDescription
 
 	thumb_func_start sub_080C5844
@@ -1918,7 +1918,7 @@ _080C58F0:
 	bl SetBgAffine
 	b _080C59DA
 	.align 2, 0
-_080C5968: .4byte 0x0854AF04
+_080C5968: .4byte gFrontierPassData_0854AF04
 _080C596C: .4byte 0x0203998C
 _080C5970:
 	movs r4, #0x80
@@ -1979,7 +1979,7 @@ _080C59DA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C59E8: .4byte 0x0854AF04
+_080C59E8: .4byte gFrontierPassData_0854AF04
 _080C59EC: .4byte 0x0203998C
 	thumb_func_end sub_080C5844
 
@@ -2078,7 +2078,7 @@ _080C5A90:
 	bl CopyToBgTilemapBufferRect_ChangePalette
 	b _080C5ABA
 	.align 2, 0
-_080C5AAC: .4byte 0x08549DB8
+_080C5AAC: .4byte gFrontierPassData_08549DB8
 _080C5AB0:
 	subs r0, r4, #1
 	lsls r0, r0, #0x18
@@ -2175,7 +2175,7 @@ _080C5B50:
 	bl CopyToBgTilemapBufferRect_ChangePalette
 	b _080C5B7A
 	.align 2, 0
-_080C5B6C: .4byte 0x08549DD0
+_080C5B6C: .4byte gFrontierPassData_08549DD0
 _080C5B70:
 	subs r0, r5, #1
 	lsls r0, r0, #0x18
@@ -2218,7 +2218,7 @@ sub_080C5B88: @ 0x080C5B88
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C5BC0: .4byte 0x08549610
+_080C5BC0: .4byte gFrontierPassData_08549610
 _080C5BC4: .4byte 0x0203998C
 	thumb_func_end sub_080C5B88
 
@@ -2345,15 +2345,15 @@ _080C5CAE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C5CC4: .4byte 0x0854B008
-_080C5CC8: .4byte 0x0854AFE0
-_080C5CCC: .4byte 0x0854B0D8
+_080C5CC4: .4byte gFrontierPassData_0854B008
+_080C5CC8: .4byte gFrontierPassData_0854AFE0
+_080C5CCC: .4byte gFrontierPassData_0854B0D8
 _080C5CD0: .4byte 0x0203998C
 _080C5CD4: .4byte 0x02039990
 _080C5CD8: .4byte 0x020205AC
-_080C5CDC: .4byte 0x0854B108
+_080C5CDC: .4byte gFrontierPassData_0854B108
 _080C5CE0: .4byte 0x0000FFFF
-_080C5CE4: .4byte 0x0854AF78
+_080C5CE4: .4byte gFrontierPassData_0854AF78
 	thumb_func_end LoadCursorAndSymbolSprites
 
 	thumb_func_start FreeCursorAndSymbolSprites
@@ -2554,7 +2554,7 @@ _080C5E24:
 	bl CopyBgTilemapBufferToVram
 	b _080C5F04
 	.align 2, 0
-_080C5E9C: .4byte 0x0854AF18
+_080C5E9C: .4byte gFrontierPassData_0854AF18
 _080C5EA0: .4byte 0x02039994
 _080C5EA4: .4byte 0x00001012
 _080C5EA8: .4byte 0x00002012
@@ -2572,8 +2572,8 @@ _080C5EAC:
 	bl decompress_and_copy_tile_data_to_vram
 	b _080C5F80
 	.align 2, 0
-_080C5ECC: .4byte 0x0854AF4C
-_080C5ED0: .4byte 0x08548168
+_080C5ECC: .4byte gFrontierPassData_0854AF4C
+_080C5ED0: .4byte gFrontierPassData_08548168
 _080C5ED4:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -2599,8 +2599,8 @@ _080C5F04:
 	bl CopyBgTilemapBufferToVram
 	b _080C5F80
 	.align 2, 0
-_080C5F0C: .4byte 0x085467E4
-_080C5F10: .4byte 0x085498F8
+_080C5F0C: .4byte gFrontierPassData_085467E4
+_080C5F10: .4byte gFrontierPassData_085498F8
 _080C5F14:
 	movs r1, #0x82
 	lsls r1, r1, #5
@@ -3151,12 +3151,12 @@ _080C6360:
 	movs r5, #0
 	b _080C63DE
 	.align 2, 0
-_080C6368: .4byte 0x0854B008
-_080C636C: .4byte 0x0854AFE0
-_080C6370: .4byte 0x0854B0D8
+_080C6368: .4byte gFrontierPassData_0854B008
+_080C636C: .4byte gFrontierPassData_0854AFE0
+_080C6370: .4byte gFrontierPassData_0854B0D8
 _080C6374: .4byte 0x02039994
 _080C6378: .4byte 0x020205AC
-_080C637C: .4byte 0x0854B174
+_080C637C: .4byte gFrontierPassData_0854B174
 _080C6380: .4byte 0x03005AEC
 _080C6384:
 	lsls r0, r0, #0x10
@@ -3231,8 +3231,8 @@ _080C63DE:
 	b _080C642A
 	.align 2, 0
 _080C6408: .4byte 0x03005AEC
-_080C640C: .4byte 0x0854AFF8
-_080C6410: .4byte 0x0854B120
+_080C640C: .4byte gFrontierPassData_0854AFF8
+_080C6410: .4byte gFrontierPassData_0854B120
 _080C6414: .4byte 0x03005AF0
 _080C6418:
 	lsls r1, r7, #0x13
@@ -3328,9 +3328,9 @@ _080C64A4:
 	bl AddTextPrinterParameterized3
 	b _080C64FA
 	.align 2, 0
-_080C64D0: .4byte 0x0854B174
+_080C64D0: .4byte gFrontierPassData_0854B174
 _080C64D4: .4byte 0x02039994
-_080C64D8: .4byte 0x0854AF72
+_080C64D8: .4byte gFrontierPassData_0854AF72
 _080C64DC:
 	lsls r1, r4, #4
 	adds r3, r1, #2
@@ -3387,9 +3387,9 @@ _080C652C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C654C: .4byte 0x0854AF6F
-_080C6550: .4byte 0x0854AF6C
-_080C6554: .4byte 0x0854B174
+_080C654C: .4byte gFrontierPassData_0854AF6F
+_080C6550: .4byte gFrontierPassData_0854AF6C
+_080C6554: .4byte gFrontierPassData_0854B174
 _080C6558: .4byte 0x02039994
 	thumb_func_end PrintOnFrontierMap
 
@@ -3521,8 +3521,8 @@ _080C6636:
 	bx r0
 	.align 2, 0
 _080C6660: .4byte 0x02039994
-_080C6664: .4byte 0x0854AF6F
-_080C6668: .4byte 0x0854B174
+_080C6664: .4byte gFrontierPassData_0854AF6F
+_080C6668: .4byte gFrontierPassData_0854B174
 	thumb_func_end HandleFrontierMapCursorMove
 
 	thumb_func_start sub_080C666C

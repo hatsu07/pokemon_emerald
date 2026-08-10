@@ -211,12 +211,12 @@ sub_08140450: @ 0x08140450
 	bx r0
 	.align 2, 0
 _081404C0: .4byte 0x0203A854
-_081404C4: .4byte 0x08595CEC
+_081404C4: .4byte gRouletteData_08595CEC
 _081404C8: .4byte 0x0000117C
 _081404CC: .4byte 0x0000317C
-_081404D0: .4byte 0x08595CF8
+_081404D0: .4byte gRouletteData_08595CF8
 _081404D4: .4byte 0x0203A858
-_081404D8: .4byte 0x085959A8
+_081404D8: .4byte gRouletteData_085959A8
 _081404DC: .4byte 0x0000397C
 	thumb_func_end sub_08140450
 
@@ -334,11 +334,11 @@ _08140572:
 	ldrh r2, [r0]
 	b _081405F0
 	.align 2, 0
-_081405CC: .4byte 0x08595FCC
+_081405CC: .4byte gRouletteData_08595FCC
 _081405D0: .4byte 0x0203A854
 _081405D4: .4byte 0x02037280
-_081405D8: .4byte 0x08595EF4
-_081405DC: .4byte 0x08595EF0
+_081405D8: .4byte gRouletteData_08595EF4
+_081405DC: .4byte gRouletteData_08595EF0
 _081405E0: .4byte 0x020373B4
 _081405E4: .4byte 0x020377B4
 _081405E8:
@@ -404,7 +404,7 @@ _0814065C: .4byte 0x020373B4
 _08140660: .4byte 0x020377B4
 _08140664: .4byte 0x0000FFFF
 _08140668: .4byte 0x0203A854
-_0814066C: .4byte 0x08595F34
+_0814066C: .4byte gRouletteData_08595F34
 _08140670: .4byte 0x02024190
 _08140674:
 	ldr r0, [r5]
@@ -505,8 +505,8 @@ _0814072A:
 	bl decompress_and_copy_tile_data_to_vram
 	b _081408C0
 	.align 2, 0
-_08140758: .4byte 0x085957A8
-_0814075C: .4byte 0x08DBC590
+_08140758: .4byte gRouletteData_085957A8
+_0814075C: .4byte gRouletteData_08DBC590
 _08140760: .4byte 0x08DBCCBC
 _08140764:
 	bl free_temp_tile_data_buffers_if_possible
@@ -523,7 +523,7 @@ _08140770:
 	bl CopyToBgTilemapBuffer
 	b _081408C0
 	.align 2, 0
-_08140784: .4byte 0x08595B4C
+_08140784: .4byte gRouletteData_08595B4C
 _08140788:
 	movs r0, #0
 	bl sub_08142CD8
@@ -1166,7 +1166,7 @@ _08140CC6:
 	b _08140D36
 	.align 2, 0
 _08140CEC: .4byte 0x0203A854
-_08140CF0: .4byte 0x08595D00
+_08140CF0: .4byte gRouletteData_08595D00
 _08140CF4: .4byte 0x03005B60
 _08140CF8:
 	movs r3, #6
@@ -1222,7 +1222,7 @@ _08140D36:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08140D64: .4byte 0x08595D00
+_08140D64: .4byte gRouletteData_08595D00
 _08140D68: .4byte 0x03005B60
 _08140D6C: .4byte 0x08140C55
 	thumb_func_end sub_08140C98
@@ -1263,7 +1263,7 @@ sub_08140D70: @ 0x08140D70
 	movs r6, #5
 	b _08140DE4
 	.align 2, 0
-_08140DB8: .4byte 0x08595FD2
+_08140DB8: .4byte gRouletteData_08595FD2
 _08140DBC:
 	cmp r5, #3
 	bgt _08140DE4
@@ -1578,7 +1578,7 @@ _08141020: .4byte 0x0000FFFF
 _08141024: .4byte 0x020205AC
 _08141028: .4byte 0x000003FF
 _0814102C: .4byte 0xFFFFFC00
-_08141030: .4byte 0x08595D00
+_08141030: .4byte gRouletteData_08595D00
 	thumb_func_end sub_08140E34
 
 	thumb_func_start sub_08141034
@@ -1775,7 +1775,7 @@ _08141162:
 _081411A0: .4byte 0x03005B60
 _081411A4: .4byte 0x03002360
 _081411A8: .4byte 0x0203A854
-_081411AC: .4byte 0x08595D00
+_081411AC: .4byte gRouletteData_08595D00
 _081411B0:
 	movs r0, #0x5f
 	bl m4aSongNumStart
@@ -1907,7 +1907,7 @@ _08141294:
 	b _08141402
 	.align 2, 0
 _081412A4: .4byte 0x03005A50
-_081412A8: .4byte 0x08595EF4
+_081412A8: .4byte gRouletteData_08595EF4
 _081412AC:
 	movs r0, #3
 	ands r0, r1
@@ -1922,7 +1922,7 @@ _081412AC:
 	lsrs r0, r0, #1
 	b _08141402
 	.align 2, 0
-_081412C4: .4byte 0x08595EF4
+_081412C4: .4byte gRouletteData_08595EF4
 _081412C8:
 	ldr r0, _081412D8
 	ldrb r1, [r3, #4]
@@ -1932,7 +1932,7 @@ _081412C8:
 	ldrb r0, [r1, #2]
 	b _08141402
 	.align 2, 0
-_081412D8: .4byte 0x08595EF4
+_081412D8: .4byte gRouletteData_08595EF4
 _081412DC:
 	ldr r0, _08141308
 	ldrb r0, [r0, #2]
@@ -1958,7 +1958,7 @@ _081412F6:
 	b _08141402
 	.align 2, 0
 _08141308: .4byte 0x03005A50
-_0814130C: .4byte 0x08595EF4
+_0814130C: .4byte gRouletteData_08595EF4
 _08141310:
 	movs r0, #1
 	ands r0, r1
@@ -1975,7 +1975,7 @@ _08141310:
 	lsrs r0, r0, #2
 	b _08141402
 	.align 2, 0
-_0814132C: .4byte 0x08595EF4
+_0814132C: .4byte gRouletteData_08595EF4
 _08141330:
 	ldr r1, _08141344
 	ldr r0, [r5]
@@ -1987,7 +1987,7 @@ _08141330:
 	lsrs r0, r0, #1
 	b _08141402
 	.align 2, 0
-_08141344: .4byte 0x08595EF4
+_08141344: .4byte gRouletteData_08595EF4
 _08141348:
 	ldr r0, _08141364
 	ldrb r0, [r0, #2]
@@ -2016,7 +2016,7 @@ _08141368:
 	lsrs r0, r0, #1
 	b _08141402
 	.align 2, 0
-_0814137C: .4byte 0x08595EF4
+_0814137C: .4byte gRouletteData_08595EF4
 _08141380:
 	movs r0, #3
 	ands r0, r1
@@ -2034,7 +2034,7 @@ _08141380:
 	lsrs r0, r0, #1
 	b _08141402
 	.align 2, 0
-_081413A0: .4byte 0x08595EF4
+_081413A0: .4byte gRouletteData_08595EF4
 _081413A4:
 	ldr r1, _081413B4
 	ldr r0, [r5]
@@ -2045,7 +2045,7 @@ _081413A4:
 	ldrb r0, [r0, #2]
 	b _08141402
 	.align 2, 0
-_081413B4: .4byte 0x08595EF4
+_081413B4: .4byte gRouletteData_08595EF4
 _081413B8:
 	movs r0, #0x80
 	lsls r0, r0, #8
@@ -2063,7 +2063,7 @@ _081413B8:
 	ldrb r0, [r0, #2]
 	b _08141402
 	.align 2, 0
-_081413D8: .4byte 0x08595EF4
+_081413D8: .4byte gRouletteData_08595EF4
 _081413DC:
 	ldr r1, _081413EC
 	ldr r0, [r5]
@@ -2074,7 +2074,7 @@ _081413DC:
 	ldrb r0, [r0, #1]
 	b _08141402
 	.align 2, 0
-_081413EC: .4byte 0x08595EF4
+_081413EC: .4byte gRouletteData_08595EF4
 _081413F0:
 	ldr r1, _08141408
 	ldr r0, [r5]
@@ -2090,7 +2090,7 @@ _08141402:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08141408: .4byte 0x08595EF4
+_08141408: .4byte gRouletteData_08595EF4
 	thumb_func_end sub_08141254
 
 	thumb_func_start sub_0814140C
@@ -2162,7 +2162,7 @@ _08141490:
 	lsls r0, r5, #0x19
 	b _081414B2
 	.align 2, 0
-_08141498: .4byte 0x08595FD6
+_08141498: .4byte gRouletteData_08595FD6
 _0814149C: .4byte 0x0203A854
 _081414A0: .4byte 0x03005B60
 _081414A4: .4byte 0x03005A50
@@ -2325,7 +2325,7 @@ _081415C0:
 	bx r0
 	.align 2, 0
 _081415F8: .4byte 0x0203A854
-_081415FC: .4byte 0x08595EF4
+_081415FC: .4byte gRouletteData_08595EF4
 _08141600: .4byte 0x47800000
 _08141604: .4byte 0x40A00000
 _08141608: .4byte 0x3F000000
@@ -3077,7 +3077,7 @@ sub_08141B88: @ 0x08141B88
 _08141C08: .4byte 0x0203A854
 _08141C0C: .4byte 0x0000FFFF
 _08141C10: .4byte 0x020205AC
-_08141C14: .4byte 0x08595D00
+_08141C14: .4byte gRouletteData_08595D00
 _08141C18: .4byte 0x03005B60
 _08141C1C: .4byte 0x08141C21
 	thumb_func_end sub_08141B88
@@ -3780,8 +3780,8 @@ sub_08142198: @ 0x08142198
 	movs r0, #0
 	b _08142290
 	.align 2, 0
-_081421CC: .4byte 0x08595FE0
-_081421D0: .4byte 0x08595FF0
+_081421CC: .4byte gRouletteData_08595FE0
+_081421D0: .4byte gRouletteData_08595FF0
 _081421D4:
 	ldr r6, _081422A0
 	ldr r3, [r6]
@@ -3894,8 +3894,8 @@ _08142290:
 	.align 2, 0
 _081422A0: .4byte 0x0203A854
 _081422A4: .4byte 0x03005B60
-_081422A8: .4byte 0x08595E90
-_081422AC: .4byte 0x08595E94
+_081422A8: .4byte gRouletteData_08595E90
+_081422AC: .4byte gRouletteData_08595E94
 	thumb_func_end sub_08142198
 
 	thumb_func_start sub_081422B0
@@ -4041,7 +4041,7 @@ _081423B0:
 	b _081425AA
 	.align 2, 0
 _081423C8: .4byte 0x0203A854
-_081423CC: .4byte 0x08595D00
+_081423CC: .4byte gRouletteData_08595D00
 _081423D0: .4byte 0x0000DFFF
 _081423D4:
 	mov r0, sp
@@ -4084,7 +4084,7 @@ _081423F2:
 	mov ip, r4
 	b _0814249C
 	.align 2, 0
-_08142424: .4byte 0x08595F9C
+_08142424: .4byte gRouletteData_08595F9C
 _08142428: .4byte 0xFFFF0000
 _0814242C: .4byte 0x0203A854
 _08142430:
@@ -4182,7 +4182,7 @@ _0814249C:
 	.align 2, 0
 _081424EC: .4byte 0x020205AC
 _081424F0: .4byte 0x0203A854
-_081424F4: .4byte 0x08595D00
+_081424F4: .4byte gRouletteData_08595D00
 _081424F8:
 	movs r4, #0
 	lsls r5, r7, #2
@@ -4284,7 +4284,7 @@ _081425AA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081425BC: .4byte 0x08595D00
+_081425BC: .4byte gRouletteData_08595D00
 _081425C0: .4byte 0x0203A854
 	thumb_func_end sub_0814234C
 
@@ -4575,7 +4575,7 @@ _08142800:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08142810: .4byte 0x08595D00
+_08142810: .4byte gRouletteData_08595D00
 _08142814: .4byte 0x0203A854
 _08142818: .4byte 0x0000117C
 _0814281C: .4byte 0x0000397C
@@ -4611,8 +4611,8 @@ _08142838:
 	beq _08142866
 	b _081428D0
 	.align 2, 0
-_08142858: .4byte 0x08595FFC
-_0814285C: .4byte 0x08595D00
+_08142858: .4byte gRouletteData_08595FFC
+_0814285C: .4byte gRouletteData_08595D00
 _08142860:
 	cmp r0, #0xc
 	beq _081428B0
@@ -4968,7 +4968,7 @@ _08142B28:
 	bx r0
 	.align 2, 0
 _08142B30: .4byte 0x03002360
-_08142B34: .4byte 0x08595EF0
+_08142B34: .4byte gRouletteData_08595EF0
 _08142B38: .4byte 0x02037280
 _08142B3C: .4byte 0x02021C40
 _08142B40: .4byte 0x02021C7C
@@ -5043,7 +5043,7 @@ Task_Roulette_0: @ 0x08142B50
 	b _08142C7A
 	.align 2, 0
 _08142BD8: .4byte 0x03005B60
-_08142BDC: .4byte 0x08595EF0
+_08142BDC: .4byte gRouletteData_08595EF0
 _08142BE0: .4byte 0x02037280
 _08142BE4: .4byte 0x02021C40
 _08142BE8: .4byte 0x08262D23
@@ -5169,10 +5169,10 @@ sub_08142CD8: @ 0x08142CD8
 	bl LoadCompressedSpriteSheet
 	b _08142D26
 	.align 2, 0
-_08142D00: .4byte 0x08596F38
-_08142D04: .4byte 0x08597418
-_08142D08: .4byte 0x0859752C
-_08142D0C: .4byte 0x085975F4
+_08142D00: .4byte gRouletteData_08596F38
+_08142D04: .4byte gRouletteData_08597418
+_08142D08: .4byte gRouletteData_0859752C
+_08142D0C: .4byte gRouletteData_085975F4
 _08142D10:
 	movs r0, #0xe
 	bl FreeSpriteTilesByTag
@@ -5411,14 +5411,14 @@ _08142E98:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08142EE8: .4byte 0x0859703C
+_08142EE8: .4byte gRouletteData_0859703C
 _08142EEC: .4byte 0x0201C000
-_08142EF0: .4byte 0x08597044
+_08142EF0: .4byte gRouletteData_08597044
 _08142EF4: .4byte 0x020205AC
-_08142EF8: .4byte 0x08597164
+_08142EF8: .4byte gRouletteData_08597164
 _08142EFC: .4byte 0x0203A854
-_08142F00: .4byte 0x085970BC
-_08142F04: .4byte 0x0859711C
+_08142F00: .4byte gRouletteData_085970BC
+_08142F04: .4byte gRouletteData_0859711C
 	thumb_func_end sub_08142D9C
 
 	thumb_func_start unref_sub_8142E3C
@@ -5531,7 +5531,7 @@ _08142F9E:
 	b _08142FF8
 	.align 2, 0
 _08142FD4: .4byte 0x0203A854
-_08142FD8: .4byte 0x08595E90
+_08142FD8: .4byte gRouletteData_08595E90
 _08142FDC: .4byte 0x020205AC
 _08142FE0:
 	adds r0, r2, r4
@@ -5679,7 +5679,7 @@ _08143058:
 	.align 2, 0
 _081430F4: .4byte 0x0203A854
 _081430F8: .4byte 0x020205AC
-_081430FC: .4byte 0x085974DC
+_081430FC: .4byte gRouletteData_085974DC
 _08143100: .4byte 0x081439D9
 	thumb_func_end sub_08143048
 
@@ -5759,7 +5759,7 @@ _08143174:
 	.align 2, 0
 _08143190: .4byte 0x0203A854
 _08143194: .4byte 0x020205AC
-_08143198: .4byte 0x08595D00
+_08143198: .4byte gRouletteData_08595D00
 _0814319C:
 	adds r5, r6, #0
 	adds r5, #0x31
@@ -5902,7 +5902,7 @@ _0814329C:
 	.align 2, 0
 _081432A4: .4byte 0x020205AC
 _081432A8: .4byte 0x0203A854
-_081432AC: .4byte 0x08595D00
+_081432AC: .4byte gRouletteData_08595D00
 	thumb_func_end sub_0814321C
 
 	thumb_func_start sub_081432B0
@@ -5975,10 +5975,10 @@ _081432E2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08143338: .4byte 0x08596FD0
+_08143338: .4byte gRouletteData_08596FD0
 _0814333C: .4byte 0x0201C000
 _08143340: .4byte 0x020205AC
-_08143344: .4byte 0x085971C4
+_08143344: .4byte gRouletteData_085971C4
 _08143348: .4byte 0x0203A854
 	thumb_func_end sub_081432B0
 
@@ -6292,16 +6292,16 @@ _081434E8:
 	bx r0
 	.align 2, 0
 _081435B4: .4byte 0x0201C000
-_081435B8: .4byte 0x08597304
+_081435B8: .4byte gRouletteData_08597304
 _081435BC: .4byte 0xFFFF0000
 _081435C0: .4byte 0x0000FFFF
-_081435C4: .4byte 0x08597398
+_081435C4: .4byte gRouletteData_08597398
 _081435C8: .4byte 0x0203A854
 _081435CC: .4byte 0x020205AC
-_081435D0: .4byte 0x085973B0
-_081435D4: .4byte 0x085973C8
-_081435D8: .4byte 0x085973E0
-_081435DC: .4byte 0x085973F8
+_081435D0: .4byte gRouletteData_085973B0
+_081435D4: .4byte gRouletteData_085973C8
+_081435D8: .4byte gRouletteData_085973E0
+_081435DC: .4byte gRouletteData_085973F8
 	thumb_func_end sub_081433E0
 
 	thumb_func_start sub_081435E0
@@ -6461,8 +6461,8 @@ _081436F8:
 	beq _08143726
 	b _08143790
 	.align 2, 0
-_08143718: .4byte 0x085976B8
-_0814371C: .4byte 0x08595D00
+_08143718: .4byte gRouletteData_085976B8
+_0814371C: .4byte gRouletteData_08595D00
 _08143720:
 	cmp r0, #0xc
 	beq _08143770
@@ -6882,9 +6882,9 @@ sub_081439E8: @ 0x081439E8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08143A54: .4byte 0x085974FC
+_08143A54: .4byte gRouletteData_085974FC
 _08143A58: .4byte 0x0201C000
-_08143A5C: .4byte 0x08597504
+_08143A5C: .4byte gRouletteData_08597504
 _08143A60: .4byte 0x020205AC
 _08143A64: .4byte 0x0203A854
 	thumb_func_end sub_081439E8
@@ -6973,7 +6973,7 @@ _08143AF0:
 	.align 2, 0
 _08143B00: .4byte 0x0203A854
 _08143B04: .4byte 0x020205AC
-_08143B08: .4byte 0x085974DC
+_08143B08: .4byte gRouletteData_085974DC
 	thumb_func_end sub_08143A94
 
 	thumb_func_start sub_08143B0C
@@ -7516,7 +7516,7 @@ _08143F08:
 	bl __divsf3
 	b _08143FC8
 	.align 2, 0
-_08143F60: .4byte 0x08595EF4
+_08143F60: .4byte gRouletteData_08595EF4
 _08143F64: .4byte 0x0203A854
 _08143F68:
 	movs r1, #0x2e
@@ -7629,7 +7629,7 @@ _0814404C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0814405C: .4byte 0x08595EF4
+_0814405C: .4byte gRouletteData_08595EF4
 _08144060: .4byte 0x0203A854
 _08144064: .4byte 0x40000000
 _08144068: .4byte 0x00000000
@@ -8056,7 +8056,7 @@ sub_08144330: @ 0x08144330
 	bl m4aSongNumStartOrChange
 	b _081444C4
 	.align 2, 0
-_081443BC: .4byte 0x08595E90
+_081443BC: .4byte gRouletteData_08595E90
 _081443C0: .4byte 0x0203A854
 _081443C4: .4byte 0x08143D5D
 _081443C8:
@@ -8089,7 +8089,7 @@ _081443C8:
 	b _08144444
 	.align 2, 0
 _08144404: .4byte 0x00000000
-_08144408: .4byte 0x08595EF4
+_08144408: .4byte gRouletteData_08595EF4
 _0814440C:
 	ldr r7, [r4]
 	adds r4, r7, #0
@@ -8139,8 +8139,8 @@ _08144444:
 	strh r0, [r6, #0x32]
 	b _081444B4
 	.align 2, 0
-_0814446C: .4byte 0x08595EF4
-_08144470: .4byte 0x08595E90
+_0814446C: .4byte gRouletteData_08595EF4
+_08144470: .4byte gRouletteData_08595E90
 _08144474: .4byte 0x0203A854
 _08144478:
 	strh r1, [r6, #0x2e]
@@ -8268,7 +8268,7 @@ _08144542:
 _08144570: .4byte 0x0203A854
 _08144574: .4byte 0x3F000000
 _08144578: .4byte 0x00000000
-_0814457C: .4byte 0x08595EF4
+_0814457C: .4byte gRouletteData_08595EF4
 _08144580: .4byte 0x43800000
 _08144584: .4byte 0x08144331
 _08144588:
@@ -8748,12 +8748,12 @@ _08144848:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08144968: .4byte 0x085976BE
+_08144968: .4byte gRouletteData_085976BE
 _0814496C: .4byte 0x0203A854
-_08144970: .4byte 0x085975AC
-_08144974: .4byte 0x08597670
+_08144970: .4byte gRouletteData_085975AC
+_08144974: .4byte gRouletteData_08597670
 _08144978: .4byte 0x020205AC
-_0814497C: .4byte 0x08595EF4
+_0814497C: .4byte gRouletteData_08595EF4
 _08144980: .4byte 0x0000FFFF
 	thumb_func_end sub_081447A8
 
@@ -8926,12 +8926,12 @@ _08144A5E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08144AD8: .4byte 0x085976C6
-_08144ADC: .4byte 0x085975C4
+_08144AD8: .4byte gRouletteData_085976C6
+_08144ADC: .4byte gRouletteData_085975C4
 _08144AE0: .4byte 0x0203A854
 _08144AE4: .4byte 0x020205AC
-_08144AE8: .4byte 0x085976A0
-_08144AEC: .4byte 0x08595EF4
+_08144AE8: .4byte gRouletteData_085976A0
+_08144AEC: .4byte gRouletteData_08595EF4
 	thumb_func_end sub_08144984
 
 	thumb_func_start sub_08144AF0
@@ -9056,7 +9056,7 @@ _08144BB8:
 	.align 2, 0
 _08144BDC: .4byte 0x0203A854
 _08144BE0: .4byte 0x00000000
-_08144BE4: .4byte 0x08595EF4
+_08144BE4: .4byte gRouletteData_08595EF4
 _08144BE8:
 	movs r0, #1
 	strh r0, [r7, #0x2e]
@@ -9209,8 +9209,8 @@ _08144CE4:
 	ldrh r0, [r0, #0xc]
 	b _08144D20
 	.align 2, 0
-_08144D0C: .4byte 0x08595D0C
-_08144D10: .4byte 0x08595E94
+_08144D0C: .4byte gRouletteData_08595D0C
+_08144D10: .4byte gRouletteData_08595E94
 _08144D14:
 	ldr r0, [sp, #0x10]
 	mov r1, sb
@@ -9281,7 +9281,7 @@ _08144D8C:
 	bx r0
 	.align 2, 0
 _08144D94: .4byte 0x0203A854
-_08144D98: .4byte 0x085976CE
+_08144D98: .4byte gRouletteData_085976CE
 	thumb_func_end sub_08144D3C
 
 	thumb_func_start sub_08144D9C
@@ -9349,7 +9349,7 @@ _08144DFA:
 	strb r0, [r3]
 	b _08144E4A
 	.align 2, 0
-_08144E18: .4byte 0x085976E2
+_08144E18: .4byte gRouletteData_085976E2
 _08144E1C: .4byte 0x02021B3A
 _08144E20:
 	ldr r1, _08144E54
@@ -9473,7 +9473,7 @@ _08144F0A:
 	.align 2, 0
 _08144F10: .4byte 0x3D1FBE77
 _08144F14: .4byte 0x0203A854
-_08144F18: .4byte 0x085976CE
+_08144F18: .4byte gRouletteData_085976CE
 _08144F1C: .4byte 0x08144D3D
 _08144F20: .4byte 0x020205AC
 _08144F24: .4byte 0x0000FFFE
@@ -9506,7 +9506,7 @@ sub_08144F2C: @ 0x08144F2C
 	b _08144F72
 	.align 2, 0
 _08144F58: .4byte 0x0203A854
-_08144F5C: .4byte 0x08595EF4
+_08144F5C: .4byte gRouletteData_08595EF4
 _08144F60:
 	movs r0, #0x34
 	ldrsh r2, [r1, r0]
@@ -9542,9 +9542,9 @@ _08144F72:
 	strh r0, [r1, #0x34]
 	b _08145048
 	.align 2, 0
-_08144FA4: .4byte 0x08595EF4
+_08144FA4: .4byte gRouletteData_08595EF4
 _08144FA8: .4byte 0x0203A854
-_08144FAC: .4byte 0x085976CE
+_08144FAC: .4byte gRouletteData_085976CE
 _08144FB0:
 	ldr r5, _08144FF0
 	ldr r3, [r5]
@@ -9581,8 +9581,8 @@ _08144FD2:
 	b _0814500E
 	.align 2, 0
 _08144FF0: .4byte 0x0203A854
-_08144FF4: .4byte 0x085976CE
-_08144FF8: .4byte 0x08595EF4
+_08144FF4: .4byte gRouletteData_085976CE
+_08144FF8: .4byte gRouletteData_08595EF4
 _08144FFC:
 	movs r0, #0x34
 	ldrsh r2, [r1, r0]
@@ -9628,7 +9628,7 @@ _08145048:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08145050: .4byte 0x08595EF4
+_08145050: .4byte gRouletteData_08595EF4
 _08145054: .4byte 0x020205AC
 _08145058: .4byte 0x08144E61
 _0814505C: .4byte 0x08007141
@@ -9863,8 +9863,8 @@ sub_081451A4: @ 0x081451A4
 	bl m4aMPlayPanpotControl
 	b _081452D4
 	.align 2, 0
-_08145220: .4byte 0x085976FA
-_08145224: .4byte 0x085976FC
+_08145220: .4byte gRouletteData_085976FA
+_08145224: .4byte gRouletteData_085976FC
 _08145228: .4byte 0x0203A854
 _0814522C: .4byte 0x03007510
 _08145230: .4byte 0x0000FFFF
@@ -10006,7 +10006,7 @@ sub_081452E4: @ 0x081452E4
 	strb r0, [r2]
 	b _08145354
 	.align 2, 0
-_08145344: .4byte 0x085976FA
+_08145344: .4byte gRouletteData_085976FA
 _08145348: .4byte 0x0203A854
 _0814534C: .4byte 0x020205AC
 _08145350:
@@ -10054,7 +10054,7 @@ sub_08145360: @ 0x08145360
 	b _081453D2
 	.align 2, 0
 _0814539C: .4byte 0x0203A854
-_081453A0: .4byte 0x08595EF4
+_081453A0: .4byte gRouletteData_08595EF4
 _081453A4: .4byte 0x020205AC
 _081453A8:
 	movs r0, #0x34
@@ -10111,7 +10111,7 @@ _0814540A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08145410: .4byte 0x08595EF4
+_08145410: .4byte gRouletteData_08595EF4
 _08145414: .4byte 0x020205AC
 _08145418: .4byte 0x081452E5
 _0814541C: .4byte 0x081451A5

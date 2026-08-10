@@ -503,7 +503,7 @@ _08084384: .4byte 0x02031F7C
 _08084388: .4byte 0x03005AEC
 _0808438C: .4byte 0x02031F84
 _08084390: .4byte 0x02031F8C
-_08084394: .4byte 0x0830FC88
+_08084394: .4byte gOverworldData_0830FC88
 _08084398: .4byte 0x02031F94
 	thumb_func_end ApplyCurrentWarp
 
@@ -1951,7 +1951,7 @@ _08084E46:
 	bx r0
 	.align 2, 0
 _08084E4C: .4byte 0x03005AEC
-_08084E50: .4byte 0x0852AB14
+_08084E50: .4byte gOverworldData_0852AB14
 	thumb_func_end SetDefaultFlashLevel
 
 	thumb_func_start Overworld_SetFlashLevel
@@ -1974,7 +1974,7 @@ _08084E66:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08084E74: .4byte 0x0852AB14
+_08084E74: .4byte gOverworldData_0852AB14
 _08084E78: .4byte 0x03005AEC
 	thumb_func_end Overworld_SetFlashLevel
 
@@ -3086,7 +3086,7 @@ InitOverworldBgs: @ 0x08085610
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808568C: .4byte 0x0830FCF8
+_0808568C: .4byte gOverworldData_0830FCF8
 _08085690: .4byte 0x03005B00
 _08085694: .4byte 0x03005AFC
 _08085698: .4byte 0x03005B04
@@ -3893,7 +3893,7 @@ InitCurrentFlashLevelScanlineEffect: @ 0x08085D14
 	bl ScanlineEffect_SetParams
 	b _08085D54
 	.align 2, 0
-_08085D34: .4byte 0x0830FD08
+_08085D34: .4byte gOverworldData_0830FD08
 _08085D38:
 	bl Overworld_GetFlashLevel
 	lsls r0, r0, #0x18
@@ -3910,7 +3910,7 @@ _08085D54:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08085D58: .4byte 0x0830FD08
+_08085D58: .4byte gOverworldData_0830FD08
 	thumb_func_end InitCurrentFlashLevelScanlineEffect
 
 	thumb_func_start map_loading_iteration_3
@@ -6013,7 +6013,7 @@ _08086D98:
 	ldr r0, _08086DB0
 	b _08086DDA
 	.align 2, 0
-_08086D9C: .4byte 0x0830FCB0
+_08086D9C: .4byte gUnknown_830FCB0
 _08086DA0: .4byte 0xFFFF0000
 _08086DA4: .4byte 0x0000FFFF
 _08086DA8: .4byte 0xFFFFFF00
@@ -6785,7 +6785,7 @@ _0808732C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08087334: .4byte 0x0830FD4C
+_08087334: .4byte gOverworldData_0830FD4C
 _08087338: .4byte 0x0830FD14
 	thumb_func_end SetPlayerFacingDirection
 

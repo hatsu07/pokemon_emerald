@@ -83,8 +83,8 @@ MCB2_InitRegionMapRegisters: @ 0x0816FFBC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08170048: .4byte 0x085C6124
-_0817004C: .4byte 0x085C612C
+_08170048: .4byte gFieldRegionMapData_085C6124
+_0817004C: .4byte gFieldRegionMapData_085C612C
 _08170050: .4byte 0x0817006D
 _08170054: .4byte 0x08170059
 	thumb_func_end MCB2_InitRegionMapRegisters

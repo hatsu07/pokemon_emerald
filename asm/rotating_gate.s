@@ -158,7 +158,7 @@ _080FC150:
 	b _080FC172
 	.align 2, 0
 _080FC15C: .4byte 0x02039D10
-_080FC160: .4byte 0x0856A494
+_080FC160: .4byte gRotatingGateData_0856A494
 _080FC164: .4byte 0x02039D14
 _080FC168:
 	ldr r1, _080FC188
@@ -182,7 +182,7 @@ _080FC184:
 	bx r0
 	.align 2, 0
 _080FC188: .4byte 0x02039D10
-_080FC18C: .4byte 0x0856A4D4
+_080FC18C: .4byte gRotatingGateData_0856A4D4
 _080FC190: .4byte 0x02039D14
 _080FC194: .4byte 0x02039D04
 	thumb_func_end RotatingGate_LoadPuzzleConfig
@@ -323,7 +323,7 @@ _080FC294:
 	b _080FC2A8
 	.align 2, 0
 _080FC29C: .4byte 0x02039D10
-_080FC2A0: .4byte 0x0856DBC4
+_080FC2A0: .4byte gRotatingGateData_0856DBC4
 _080FC2A4:
 	mov r1, sp
 	ldr r0, _080FC33C
@@ -398,7 +398,7 @@ _080FC2A8:
 	adds r0, r5, #0
 	b _080FC346
 	.align 2, 0
-_080FC33C: .4byte 0x0856DBAC
+_080FC33C: .4byte gRotatingGateData_0856DBAC
 _080FC340: .4byte 0x020205AC
 _080FC344:
 	movs r0, #0x40
@@ -570,7 +570,7 @@ LoadRotatingGatePics: @ 0x080FC470
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080FC47C: .4byte 0x0856D93C
+_080FC47C: .4byte gRotatingGateData_0856D93C
 	thumb_func_end LoadRotatingGatePics
 
 	thumb_func_start RotatingGate_DestroyGatesOutsideViewport
@@ -694,7 +694,7 @@ RotatingGate_CanRotate: @ 0x080FC54C
 	mov sl, r0
 	b _080FC578
 	.align 2, 0
-_080FC568: .4byte 0x0856DC3C
+_080FC568: .4byte gRotatingGateData_0856DC3C
 _080FC56C:
 	cmp r1, #2
 	beq _080FC574
@@ -789,9 +789,9 @@ _080FC608:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080FC618: .4byte 0x0856DC1C
+_080FC618: .4byte gRotatingGateData_0856DC1C
 _080FC61C: .4byte 0x02039D10
-_080FC620: .4byte 0x0856DC5C
+_080FC620: .4byte gRotatingGateData_0856DC5C
 	thumb_func_end RotatingGate_CanRotate
 
 	thumb_func_start RotatingGate_HasArm
@@ -836,7 +836,7 @@ _080FC64A:
 	bx r1
 	.align 2, 0
 _080FC670: .4byte 0x02039D10
-_080FC674: .4byte 0x0856DC5C
+_080FC674: .4byte gRotatingGateData_0856DC5C
 	thumb_func_end RotatingGate_HasArm
 
 	thumb_func_start RotatingGate_TriggerRotationAnimation
@@ -882,21 +882,21 @@ RotatingGate_GetRotationInfo: @ 0x080FC6AC
 	ldr r3, _080FC6C4
 	b _080FC6EA
 	.align 2, 0
-_080FC6C4: .4byte 0x0856DBDC
+_080FC6C4: .4byte gRotatingGateData_0856DBDC
 _080FC6C8:
 	cmp r0, #1
 	bne _080FC6D4
 	ldr r3, _080FC6D0
 	b _080FC6EA
 	.align 2, 0
-_080FC6D0: .4byte 0x0856DBEC
+_080FC6D0: .4byte gRotatingGateData_0856DBEC
 _080FC6D4:
 	cmp r0, #3
 	bne _080FC6E0
 	ldr r3, _080FC6DC
 	b _080FC6EA
 	.align 2, 0
-_080FC6DC: .4byte 0x0856DBFC
+_080FC6DC: .4byte gRotatingGateData_0856DBFC
 _080FC6E0:
 	cmp r3, #4
 	beq _080FC6E8
@@ -916,7 +916,7 @@ _080FC6F8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080FC6FC: .4byte 0x0856DC0C
+_080FC6FC: .4byte gRotatingGateData_0856DC0C
 	thumb_func_end RotatingGate_GetRotationInfo
 
 	thumb_func_start RotatingGate_InitPuzzle

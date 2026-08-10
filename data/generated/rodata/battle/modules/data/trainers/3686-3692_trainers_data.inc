@@ -130,6 +130,7 @@ sAnalyzedData_085BCC3A: @ 0x085BCC3A
 	.2byte 0x0A0B, 0x0C04, 0x0C04, 0x1E25, 0x0C03, 0x0A0B, 0x0E24, 0xFFFF
 	.2byte 0x1223, 0x0C01, 0xFFFF, 0x0A0B, 0x1034, 0x0E0C, 0x1228, 0x0C01
 	.2byte 0xFFFF, 0xC940, 0x085B
+	@ pret/pokeemerald-jp direct xref for 0x085BCF70: battle_factory.s: RestorePlayerPartyHeldItems, SetPlayerAndOpponentParties, SetRentalsToOpponentParty; battle_factory_screen.s: CreateTentFactorySelectableMons; battle_tent.s: sub_081B9B60, sub_081B9CE0; battle_tower.s: SetTentPtrsGetLevel
 	.globl gUnknown_85BCF70
 gUnknown_85BCF70: @ 0x085BCF70
 	@ analyzed canonical ROM range 0x085BCF70-0x085BD553
@@ -230,6 +231,9 @@ sAnalyzedData_085BCF70: @ 0x085BCF70
 	.2byte 0x0022, 0x0005, 0x000F, 0x0007, 0x002A, 0xFFFF, 0x0012, 0x0015
 	.2byte 0x001A, 0x001D, 0x0029, 0xFFFF, 0x0017, 0x001A, 0x001B, 0x001C
 	.2byte 0x001F, 0xFFFF
+	@ pret/pokeemerald-jp direct xref for 0x085BD554: battle_tower.s: SetTentPtrsGetLevel
+	.globl gBattleTowerData_085BD554
+gBattleTowerData_085BD554:
 	.globl gUnknown_85BD554
 gUnknown_85BD554: @ 0x085BD554
 	@ analyzed canonical ROM range 0x085BD554-0x085BD68F

@@ -1,9 +1,13 @@
+	@ pret/pokeemerald-jp direct xref for 0x0846FA13: field_player_avatar.s: sub_0808CB6C, sub_0808CCFC
+	.globl gFieldPlayerAvatarData_0846FA13
+gFieldPlayerAvatarData_0846FA13:
 	.globl gUnknown_846FA13
 gUnknown_846FA13: @ 0x0846FA13
 	@ analyzed canonical ROM range 0x0846FA13-0x0846FA17
 sAnalyzedData_0846FA13: @ 0x0846FA13
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x01, 0x03, 0x04, 0x02, 0x01
+	@ pret/pokeemerald-jp direct xref for 0x0846FA18: event_object_movement.s: LoadPlayerObjectReflectionPalette, LoadSpecialObjectReflectionPalette; field_effect_helpers.s: SetUpReflection, UpdateObjectReflectionSprite
 	.globl gUnknown_846FA18
 gUnknown_846FA18: @ 0x0846FA18
 	@ analyzed canonical ROM range 0x0846FA18-0x0846FA27

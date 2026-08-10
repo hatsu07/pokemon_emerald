@@ -99,6 +99,9 @@ gText_Rom_5CA25C: @ 0x085CA25C
 	.if (. - gText_Rom_5CA25C) < 0x17
 	.space 0x17 - (. - gText_Rom_5CA25C)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085CA273: party_menu.s: CursorCb_Register, CursorCb_Trade1, CursorCb_Trade2
+	.globl gPartyMenuData_085CA273
+gPartyMenuData_085CA273:
 	.globl gUnknown_85CA273
 gUnknown_85CA273: @ 0x085CA273
 	@ analyzed canonical ROM range 0x085CA273-0x085CA275

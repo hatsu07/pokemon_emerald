@@ -82,12 +82,18 @@ gText_Rom_5C9337: @ 0x085C9337
 	.space 0x13 - (. - gText_Rom_5C9337)
 	.endif
 	.space 0x1, 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x085C934B: hall_of_fame.s: HallOfFame_PrintMonInfo
+	.globl gHallOfFameData_085C934B
+gHallOfFameData_085C934B:
 	.globl gUnknown_85C934B
 gUnknown_85C934B: @ 0x085C934B
 	@ analyzed canonical ROM range 0x085C934B-0x085C934E
 sAnalyzedData_085C934B: @ 0x085C934B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xC8, 0xE3, 0xB8, 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x085C934F: hall_of_fame.s: HallOfFame_PrintMonInfo
+	.globl gHallOfFameData_085C934F
+gHallOfFameData_085C934F:
 	.globl gUnknown_85C934F
 gUnknown_85C934F: @ 0x085C934F
 	@ analyzed canonical ROM range 0x085C934F-0x085C9358

@@ -235,7 +235,7 @@ _081A17FE:
 	.align 2, 0
 _081A1804: .4byte 0x02037290
 _081A1808: .4byte 0x03005AF0
-_081A180C: .4byte 0x085DD228
+_081A180C: .4byte gFrontierUtilData_085DD228
 	thumb_func_end sub_081A16D8
 
 	thumb_func_start sub_081A1810
@@ -405,7 +405,7 @@ _081A196C:
 	bx r0
 	.align 2, 0
 _081A1974: .4byte 0x03005AF0
-_081A1978: .4byte 0x085DD228
+_081A1978: .4byte gFrontierUtilData_085DD228
 	thumb_func_end sub_081A1810
 
 	thumb_func_start sub_081A197C
@@ -461,7 +461,7 @@ sub_081A19D0: @ 0x081A19D0
 	bx lr
 	.align 2, 0
 _081A19D8: .4byte 0x0203B954
-_081A19DC: .4byte 0x085B4A10
+_081A19DC: .4byte gUnknown_85B4A10
 	thumb_func_end sub_081A19D0
 
 	thumb_func_start sub_081A19E0
@@ -849,7 +849,7 @@ ShowTowerResultsWindow: @ 0x081A1C9C
 	b _081A1D14
 	.align 2, 0
 _081A1CCC: .4byte 0x0203A840
-_081A1CD0: .4byte 0x085DD2A0
+_081A1CD0: .4byte gFrontierUtilData_085DD2A0
 _081A1CD4: .4byte 0x02021C7C
 _081A1CD8: .4byte 0x085DD2EC
 _081A1CDC:
@@ -1167,7 +1167,7 @@ ShowDomeResultsWindow: @ 0x081A1F30
 	b _081A1F80
 	.align 2, 0
 _081A1F68: .4byte 0x0203A840
-_081A1F6C: .4byte 0x085DD2A8
+_081A1F6C: .4byte gFrontierUtilData_085DD2A8
 _081A1F70: .4byte 0x02021C7C
 _081A1F74: .4byte 0x085DD34A
 _081A1F78:
@@ -1541,7 +1541,7 @@ ShowPalaceResultsWindow: @ 0x081A2250
 	b _081A2298
 	.align 2, 0
 _081A2280: .4byte 0x0203A840
-_081A2284: .4byte 0x085DD2B0
+_081A2284: .4byte gFrontierUtilData_085DD2B0
 _081A2288: .4byte 0x02021C7C
 _081A228C: .4byte 0x085DD37B
 _081A2290:
@@ -1925,7 +1925,7 @@ _081A24FE:
 	bx r0
 	.align 2, 0
 _081A25BC: .4byte 0x0203A840
-_081A25C0: .4byte 0x085DD2B8
+_081A25C0: .4byte gFrontierUtilData_085DD2B8
 _081A25C4: .4byte 0x02021C7C
 _081A25C8: .4byte 0x085DD3A6
 _081A25CC: .4byte 0x085DD40E
@@ -2211,7 +2211,7 @@ _081A277A:
 	bx r0
 	.align 2, 0
 _081A2828: .4byte 0x0203A840
-_081A282C: .4byte 0x085DD2C0
+_081A282C: .4byte gFrontierUtilData_085DD2C0
 _081A2830: .4byte 0x085DD2E8
 _081A2834: .4byte 0x02021C7C
 _081A2838: .4byte 0x085DD3B7
@@ -2527,7 +2527,7 @@ ShowFactoryResultsWindow: @ 0x081A2A78
 	b _081A2AC0
 	.align 2, 0
 _081A2AA8: .4byte 0x0203A840
-_081A2AAC: .4byte 0x085DD2C8
+_081A2AAC: .4byte gFrontierUtilData_085DD2C8
 _081A2AB0: .4byte 0x02021C7C
 _081A2AB4: .4byte 0x085DD3CC
 _081A2AB8:
@@ -2901,7 +2901,7 @@ _081A2D64:
 	bx r0
 	.align 2, 0
 _081A2DC8: .4byte 0x0203A840
-_081A2DCC: .4byte 0x085DD2D0
+_081A2DCC: .4byte gFrontierUtilData_085DD2D0
 _081A2DD0: .4byte 0x02021C7C
 _081A2DD4: .4byte 0x085DD3F9
 _081A2DD8: .4byte 0x085DD40E
@@ -3080,7 +3080,7 @@ _081A2EF2:
 	bx r0
 	.align 2, 0
 _081A2F54: .4byte 0x0203A840
-_081A2F58: .4byte 0x085DD2D8
+_081A2F58: .4byte gFrontierUtilData_085DD2D8
 _081A2F5C: .4byte 0x02021C7C
 _081A2F60: .4byte 0x085CCEA5
 _081A2F64: .4byte 0x085CCEB9
@@ -3629,7 +3629,7 @@ sub_081A33A0: @ 0x081A33A0
 	.align 2, 0
 _081A33E0: .4byte 0x000040CF
 _081A33E4: .4byte 0x000040CE
-_081A33E8: .4byte 0x085DCB7C
+_081A33E8: .4byte gFrontierUtilData_085DCB7C
 _081A33EC:
 	lsls r0, r6, #0x18
 	lsrs r0, r0, #0x18
@@ -3658,7 +3658,7 @@ _081A3410:
 	movs r0, #3
 	b _081A344A
 	.align 2, 0
-_081A3420: .4byte 0x085DCB7C
+_081A3420: .4byte gFrontierUtilData_085DCB7C
 _081A3424:
 	adds r0, r1, #1
 	adds r0, r2, r0
@@ -3938,7 +3938,7 @@ _081A3656:
 	b _081A368E
 	.align 2, 0
 _081A3660: .4byte 0x02022C90
-_081A3664: .4byte 0x085DC23E
+_081A3664: .4byte gFrontierUtilData_085DC23E
 _081A3668:
 	ldr r0, _081A3694
 	ldr r1, [r0]
@@ -3964,7 +3964,7 @@ _081A368E:
 	.align 2, 0
 _081A3694: .4byte 0x03005AF0
 _081A3698: .4byte 0xFFFFFE70
-_081A369C: .4byte 0x085DC23E
+_081A369C: .4byte gFrontierUtilData_085DC23E
 	thumb_func_end CopyFrontierTrainerText
 
 	thumb_func_start sub_081A36A0
@@ -4472,7 +4472,7 @@ _081A3A8E:
 	.align 2, 0
 _081A3AA0: .4byte 0x03005AF0
 _081A3AA4: .4byte 0x00000E1A
-_081A3AA8: .4byte 0x085DCEE0
+_081A3AA8: .4byte gFrontierUtilData_085DCEE0
 _081A3AAC: .4byte 0x0203886A
 _081A3AB0: .4byte 0x000003FE
 _081A3AB4: .4byte 0x00000EB8
@@ -4622,7 +4622,7 @@ _081A3BD2:
 	bl StringAppend
 	b _081A3BFC
 	.align 2, 0
-_081A3BDC: .4byte 0x085ABC70
+_081A3BDC: .4byte gFrontierUtilData_085ABC70
 _081A3BE0:
 	ldr r0, _081A3BEC
 	ldr r1, _081A3BF0
@@ -4630,7 +4630,7 @@ _081A3BE0:
 	b _081A3BFC
 	.align 2, 0
 _081A3BEC: .4byte 0x02021C40
-_081A3BF0: .4byte 0x085ABC6E
+_081A3BF0: .4byte gFrontierUtilData_085ABC6E
 _081A3BF4:
 	ldr r0, _081A3C04
 	ldr r1, _081A3C08
@@ -4768,7 +4768,7 @@ _081A3CDA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081A3CE8: .4byte 0x085DD48E
+_081A3CE8: .4byte gUnknown_85DD48E
 _081A3CEC: .4byte 0x0000FFFF
 	thumb_func_end AppendIfValid
 
@@ -4945,9 +4945,9 @@ _081A3E22:
 _081A3E44: .4byte 0x02037290
 _081A3E48: .4byte 0x02021C40
 _081A3E4C: .4byte 0x02037280
-_081A3E50: .4byte 0x085DD48E
+_081A3E50: .4byte gUnknown_85DD48E
 _081A3E54: .4byte 0x0000FFFF
-_081A3E58: .4byte 0x085ABC72
+_081A3E58: .4byte gFrontierUtilData_085ABC72
 _081A3E5C:
 	ldr r1, _081A3E68
 _081A3E5E:
@@ -4955,7 +4955,7 @@ _081A3E5E:
 	bl StringAppend
 	b _081A3E8E
 	.align 2, 0
-_081A3E68: .4byte 0x085ABC75
+_081A3E68: .4byte gFrontierUtilData_085ABC75
 _081A3E6C:
 	ldr r1, _081A3EA0
 	movs r0, #0
@@ -5524,7 +5524,7 @@ _081A42CC:
 	bx r0
 	.align 2, 0
 _081A42DC: .4byte 0x0203A840
-_081A42E0: .4byte 0x085DD564
+_081A42E0: .4byte gFrontierUtilData_085DD564
 _081A42E4: .4byte 0x0000270F
 _081A42E8: .4byte 0x02021C54
 _081A42EC: .4byte 0x02021C7C
@@ -5649,7 +5649,7 @@ _081A43D0:
 	bx r0
 	.align 2, 0
 _081A43E0: .4byte 0x0203A840
-_081A43E4: .4byte 0x085DD564
+_081A43E4: .4byte gFrontierUtilData_085DD564
 _081A43E8: .4byte 0x0000270F
 _081A43EC: .4byte 0x02021C54
 _081A43F0: .4byte 0x02021C7C
@@ -5963,10 +5963,10 @@ _081A4636:
 	b _081A468C
 	.align 2, 0
 _081A464C: .4byte 0x02021C40
-_081A4650: .4byte 0x085DD4A4
+_081A4650: .4byte gFrontierUtilData_085DD4A4
 _081A4654: .4byte 0x02021C7C
 _081A4658: .4byte 0x0203A840
-_081A465C: .4byte 0x085DD504
+_081A465C: .4byte gFrontierUtilData_085DD504
 _081A4660: .4byte 0x03005AF0
 _081A4664: .4byte 0x00000EE8
 _081A4668:
@@ -6025,7 +6025,7 @@ ShowRankingHallRecordsWindow: @ 0x081A469C
 	bx r0
 	.align 2, 0
 _081A46D8: .4byte 0x0203A840
-_081A46DC: .4byte 0x085DD2E0
+_081A46DC: .4byte gFrontierUtilData_085DD2E0
 _081A46E0: .4byte 0x02037282
 	thumb_func_end ShowRankingHallRecordsWindow
 
@@ -6289,7 +6289,7 @@ _081A48D6:
 	.align 2, 0
 _081A48EC: .4byte 0x000040CF
 _081A48F0: .4byte 0x082E383C
-_081A48F4: .4byte 0x085DD56A
+_081A48F4: .4byte gFrontierUtilData_085DD56A
 	thumb_func_end PrintHyphens
 
 	thumb_func_start sub_081A48F8
@@ -6327,7 +6327,7 @@ _081A4922:
 	.align 2, 0
 _081A4938: .4byte 0x000040CF
 _081A493C: .4byte 0x082E383C
-_081A4940: .4byte 0x085DD56A
+_081A4940: .4byte gFrontierUtilData_085DD56A
 	thumb_func_end sub_081A48F8
 
 	thumb_func_start CopyFrontierBrainTrainerName
@@ -6379,7 +6379,7 @@ _081A4980:
 	.align 2, 0
 _081A499C: .4byte 0x000040CF
 _081A49A0: .4byte 0x082E383C
-_081A49A4: .4byte 0x085DD56A
+_081A49A4: .4byte gFrontierUtilData_085DD56A
 	thumb_func_end CopyFrontierBrainTrainerName
 
 	thumb_func_start IsFrontierBrainFemale
@@ -6397,7 +6397,7 @@ IsFrontierBrainFemale: @ 0x081A49A8
 	bx r1
 	.align 2, 0
 _081A49C0: .4byte 0x000040CF
-_081A49C4: .4byte 0x085DD47F
+_081A49C4: .4byte gFrontierUtilData_085DD47F
 	thumb_func_end IsFrontierBrainFemale
 
 	thumb_func_start SetFrontierBrainEventObjGfx_2
@@ -6418,7 +6418,7 @@ SetFrontierBrainEventObjGfx_2: @ 0x081A49C8
 	.align 2, 0
 _081A49E8: .4byte 0x000040CF
 _081A49EC: .4byte 0x00004010
-_081A49F0: .4byte 0x085DD47F
+_081A49F0: .4byte gFrontierUtilData_085DD47F
 	thumb_func_end SetFrontierBrainEventObjGfx_2
 
 	thumb_func_start CreateFrontierBrainPokemon
@@ -6655,9 +6655,9 @@ _081A4BC0:
 	bx r0
 	.align 2, 0
 _081A4BD0: .4byte 0x0000EF2A
-_081A4BD4: .4byte 0x085DCB98
+_081A4BD4: .4byte gFrontierUtilData_085DCB98
 _081A4BD8: .4byte 0x020243E8
-_081A4BDC: .4byte 0x085DCBA4
+_081A4BDC: .4byte gFrontierUtilData_085DCBA4
 	thumb_func_end CreateFrontierBrainPokemon
 
 	thumb_func_start GetFrontierBrainMonSpecies
@@ -6690,7 +6690,7 @@ GetFrontierBrainMonSpecies: @ 0x081A4BE0
 	bx r1
 	.align 2, 0
 _081A4C18: .4byte 0x000040CF
-_081A4C1C: .4byte 0x085DCB98
+_081A4C1C: .4byte gFrontierUtilData_085DCB98
 	thumb_func_end GetFrontierBrainMonSpecies
 
 	thumb_func_start SetFrontierBrainEventObjGfx
@@ -6714,7 +6714,7 @@ SetFrontierBrainEventObjGfx: @ 0x081A4C20
 _081A4C40: .4byte 0x0203886A
 _081A4C44: .4byte 0x000003FE
 _081A4C48: .4byte 0x00004010
-_081A4C4C: .4byte 0x085DD47F
+_081A4C4C: .4byte gFrontierUtilData_085DD47F
 	thumb_func_end SetFrontierBrainEventObjGfx
 
 	thumb_func_start GetFrontierBrainMonMove
@@ -6754,7 +6754,7 @@ GetFrontierBrainMonMove: @ 0x081A4C50
 	bx r1
 	.align 2, 0
 _081A4C98: .4byte 0x000040CF
-_081A4C9C: .4byte 0x085DCB98
+_081A4C9C: .4byte gFrontierUtilData_085DCB98
 	thumb_func_end GetFrontierBrainMonMove
 
 	thumb_func_start GetFrontierBrainMonNature
@@ -6787,7 +6787,7 @@ GetFrontierBrainMonNature: @ 0x081A4CA0
 	bx r1
 	.align 2, 0
 _081A4CD8: .4byte 0x000040CF
-_081A4CDC: .4byte 0x085DCB98
+_081A4CDC: .4byte gFrontierUtilData_085DCB98
 	thumb_func_end GetFrontierBrainMonNature
 
 	thumb_func_start GetFrontierBrainMonEvs
@@ -6826,7 +6826,7 @@ GetFrontierBrainMonEvs: @ 0x081A4CE0
 	bx r1
 	.align 2, 0
 _081A4D24: .4byte 0x000040CF
-_081A4D28: .4byte 0x085DCB98
+_081A4D28: .4byte gFrontierUtilData_085DCB98
 	thumb_func_end GetFrontierBrainMonEvs
 
 	thumb_func_start GetFronterBrainSymbol
@@ -6860,7 +6860,7 @@ GetFronterBrainSymbol: @ 0x081A4D2C
 	b _081A4D90
 	.align 2, 0
 _081A4D68: .4byte 0x000040CF
-_081A4D6C: .4byte 0x085DCB7C
+_081A4D6C: .4byte gFrontierUtilData_085DCB7C
 _081A4D70:
 	adds r0, r3, #1
 	adds r0, r2, r0

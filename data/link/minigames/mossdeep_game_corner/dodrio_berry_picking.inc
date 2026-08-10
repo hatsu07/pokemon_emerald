@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x082C7D28: dodrio_berry_picking.s: sub_080260EC, sub_08026748, sub_08026A50
+	.globl gDodrioBerryPickingData_082C7D28
+gDodrioBerryPickingData_082C7D28:
 	.globl gUnknown_82C7D28
 gUnknown_82C7D28: @ 0x082C7D28
 	@ analyzed canonical ROM range 0x082C7D28-0x082C7E3A
@@ -21,6 +24,9 @@ sAnalyzedData_082C7D28: @ 0x082C7D28
 	.byte 0x01, 0x02, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x00, 0x01, 0x02, 0x03, 0x04, 0x06, 0x07, 0x08
 	.byte 0x09, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x08, 0x09, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05
 	.byte 0x06, 0x07, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x082C7E3B: dodrio_berry_picking.s: sub_080263FC
+	.globl gDodrioBerryPickingData_082C7E3B
+gDodrioBerryPickingData_082C7E3B:
 	.globl gUnknown_82C7E3B
 gUnknown_82C7E3B: @ 0x082C7E3B
 	@ analyzed canonical ROM range 0x082C7E3B-0x082C7E85
@@ -31,6 +37,9 @@ sAnalyzedData_082C7E3B: @ 0x082C7E3B
 	.byte 0x06, 0x06, 0x07, 0x02, 0x02, 0x03, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0x04, 0x05
 	.byte 0x05, 0x06, 0x07, 0x07, 0x08, 0x01, 0x01, 0x02, 0x03, 0x00, 0x00, 0x00, 0x04, 0x05, 0x06, 0x06
 	.byte 0x07, 0x08, 0x08, 0x09, 0x00, 0x00, 0x01, 0x02, 0x02, 0x03, 0x04
+	@ pret/pokeemerald-jp direct xref for 0x082C7E86: dodrio_berry_picking.s: sub_08026B70
+	.globl gDodrioBerryPickingData_082C7E86
+gDodrioBerryPickingData_082C7E86:
 	.globl gUnknown_82C7E86
 gUnknown_82C7E86: @ 0x082C7E86
 	@ analyzed canonical ROM range 0x082C7E86-0x082C7ED3
@@ -41,6 +50,9 @@ sAnalyzedData_082C7E86: @ 0x082C7E86
 	.2byte 0x0001, 0x0201, 0x0201, 0x0000, 0x0000, 0x0000, 0x0300, 0x0100
 	.2byte 0x0100, 0x0102, 0x0302, 0x0302, 0x0000, 0x0000, 0x0004, 0x0001
 	.2byte 0x0201, 0x0201, 0x0203, 0x0403, 0x0403, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x082C7ED4: dodrio_berry_picking.s: sub_08026B4C
+	.globl gDodrioBerryPickingData_082C7ED4
+gDodrioBerryPickingData_082C7ED4:
 	.globl gUnknown_82C7ED4
 gUnknown_82C7ED4: @ 0x082C7ED4
 	@ analyzed canonical ROM range 0x082C7ED4-0x082C7F0A
@@ -50,6 +62,9 @@ sAnalyzedData_082C7ED4: @ 0x082C7ED4
 	.byte 0x01, 0x01, 0x00, 0x09, 0x09, 0x09, 0x09, 0x09, 0x02, 0x02, 0x00, 0x00, 0x01, 0x01, 0x01, 0x09
 	.byte 0x09, 0x09, 0x03, 0x03, 0x00, 0x00, 0x01, 0x01, 0x02, 0x02, 0x03, 0x09, 0x03, 0x03, 0x04, 0x04
 	.byte 0x00, 0x00, 0x01, 0x01, 0x02, 0x02, 0x03
+	@ pret/pokeemerald-jp direct xref for 0x082C7F0B: dodrio_berry_picking.s: sub_08026B70
+	.globl gDodrioBerryPickingData_082C7F0B
+gDodrioBerryPickingData_082C7F0B:
 	.globl gUnknown_82C7F0B
 gUnknown_82C7F0B: @ 0x082C7F0B
 	@ analyzed canonical ROM range 0x082C7F0B-0x082CB313
@@ -888,24 +903,36 @@ sAnalyzedData_082C7F0B: @ 0x082C7F0B
 	.byte 0x00, 0x9C, 0x00, 0x18, 0x9D, 0x00, 0x9E, 0xF0, 0x2C, 0xF0, 0x01, 0x00, 0xA7, 0x00, 0x10, 0xA8
 	.byte 0x00, 0xA6, 0x80, 0x05, 0xA9, 0x00, 0xAA, 0x00, 0x01, 0xAB, 0x00, 0xAC, 0x00, 0xAD, 0x00, 0xAE
 	.byte 0xF0, 0x2C, 0x80, 0xF0, 0x01, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x082CB314: dodrio_berry_picking.s: sub_080260EC, sub_080264E4
+	.globl gDodrioBerryPickingData_082CB314
+gDodrioBerryPickingData_082CB314:
 	.globl gUnknown_82CB314
 gUnknown_82CB314: @ 0x082CB314
 	@ analyzed canonical ROM range 0x082CB314-0x082CB31F
 sAnalyzedData_082CB314: @ 0x082CB314
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1828, 0x200D, 0x0A13, 0x0D16, 0x0007, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x082CB320: dodrio_berry_picking.s: sub_0802602C
+	.globl gDodrioBerryPickingData_082CB320
+gDodrioBerryPickingData_082CB320:
 	.globl gUnknown_82CB320
 gUnknown_82CB320: @ 0x082CB320
 	@ analyzed canonical ROM range 0x082CB320-0x082CB327
 sAnalyzedData_082CB320: @ 0x082CB320
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0508, 0x0B08, 0x000F, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x082CB328: dodrio_berry_picking.s: sub_08026ADC
+	.globl gDodrioBerryPickingData_082CB328
+gDodrioBerryPickingData_082CB328:
 	.globl gUnknown_82CB328
 gUnknown_82CB328: @ 0x082CB328
 	@ analyzed canonical ROM range 0x082CB328-0x082CB32F
 sAnalyzedData_082CB328: @ 0x082CB328
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x05, 0x0A, 0x14, 0x1E, 0x32, 0x46, 0x64, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x082CB330: dodrio_berry_picking.s: sub_080271B0
+	.globl gDodrioBerryPickingData_082CB330
+gDodrioBerryPickingData_082CB330:
 	.globl gUnknown_82CB330
 gUnknown_82CB330: @ 0x082CB330
 	@ analyzed canonical ROM range 0x082CB330-0x082CB34F
@@ -941,12 +968,18 @@ gUnknown_82CB380: @ 0x082CB380
 	.4byte sub_08025474
 	.4byte sub_08025520
 	.4byte sub_08024F20
+	@ pret/pokeemerald-jp direct xref for 0x082CB3B0: dodrio_berry_picking.s: sub_08027480
+	.globl gDodrioBerryPickingData_082CB3B0
+gDodrioBerryPickingData_082CB3B0:
 	.globl gUnknown_82CB3B0
 gUnknown_82CB3B0: @ 0x082CB3B0
 	@ analyzed canonical ROM range 0x082CB3B0-0x082CB3B7
 sAnalyzedData_082CB3B0: @ 0x082CB3B0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x000A, 0x001E, 0x0032, 0x0032
+	@ pret/pokeemerald-jp direct xref for 0x082CB3B8: dodrio_berry_picking.s: sub_0802788C
+	.globl gDodrioBerryPickingData_082CB3B8
+gDodrioBerryPickingData_082CB3B8:
 	.globl gUnknown_82CB3B8
 gUnknown_82CB3B8: @ 0x082CB3B8
 	@ analyzed canonical ROM range 0x082CB3B8-0x082CB3BF
@@ -958,24 +991,36 @@ gUnknown_82CB3C0: @ 0x082CB3C0
 	.4byte gText_Rom_5CCD06
 	.4byte gText_Rom_5CCD13
 	.4byte gText_Rom_5CCD1D
+	@ pret/pokeemerald-jp direct xref for 0x082CB3CC: dodrio_berry_picking.s: sub_0802792C
+	.globl gDodrioBerryPickingData_082CB3CC
+gDodrioBerryPickingData_082CB3CC:
 	.globl gUnknown_82CB3CC
 gUnknown_82CB3CC: @ 0x082CB3CC
 	@ analyzed canonical ROM range 0x082CB3CC-0x082CB3CF
 sAnalyzedData_082CB3CC: @ 0x082CB3CC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x04, 0x07, 0x04, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x082CB3D0: dodrio_berry_picking.s: sub_0802792C
+	.globl gDodrioBerryPickingData_082CB3D0
+gDodrioBerryPickingData_082CB3D0:
 	.globl gUnknown_82CB3D0
 gUnknown_82CB3D0: @ 0x082CB3D0
 	@ analyzed canonical ROM range 0x082CB3D0-0x082CB3D5
 sAnalyzedData_082CB3D0: @ 0x082CB3D0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x1A, 0x00, 0x2A, 0x00, 0x3A, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x082CB3D6: dodrio_berry_picking.s: sub_0802792C
+	.globl gDodrioBerryPickingData_082CB3D6
+gDodrioBerryPickingData_082CB3D6:
 	.globl gUnknown_82CB3D6
 gUnknown_82CB3D6: @ 0x082CB3D6
 	@ analyzed canonical ROM range 0x082CB3D6-0x082CB3DB
 sAnalyzedData_082CB3D6: @ 0x082CB3D6
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x1A, 0x00, 0x2A, 0x00, 0x48, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x082CB3DC: dodrio_berry_picking.s: sub_08027A64
+	.globl gDodrioBerryPickingData_082CB3DC
+gDodrioBerryPickingData_082CB3DC:
 	.globl gUnknown_82CB3DC
 gUnknown_82CB3DC: @ 0x082CB3DC
 	@ analyzed canonical ROM range 0x082CB3DC-0x082CB403
@@ -1022,6 +1067,9 @@ gUnknown_82CB41C: @ 0x082CB41C
 	.4byte gText_Rom_2CB404
 	.4byte gText_Rom_2CB40C
 	.4byte gText_Rom_2CB414
+	@ pret/pokeemerald-jp direct xref for 0x082CB430: dodrio_berry_picking.s: sub_0802A49C
+	.globl gDodrioBerryPickingData_082CB430
+gDodrioBerryPickingData_082CB430:
 	.globl gUnknown_82CB430
 gUnknown_82CB430: @ 0x082CB430
 	@ analyzed canonical ROM range 0x082CB430-0x082CB447
@@ -1029,30 +1077,45 @@ sAnalyzedData_082CB430: @ 0x082CB430
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x01E0, 0x0000, 0x12C9, 0x0000, 0x12EA, 0x0000, 0x21FF, 0x0000
 	.2byte 0x00FF, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x082CB448: dodrio_berry_picking.s: sub_080295A4
+	.globl gDodrioBerryPickingData_082CB448
+gDodrioBerryPickingData_082CB448:
 	.globl gUnknown_82CB448
 gUnknown_82CB448: @ 0x082CB448
 	@ analyzed canonical ROM range 0x082CB448-0x082CB457
 sAnalyzedData_082CB448: @ 0x082CB448
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x1C01, 0x0D03, 0x0013, 0x0100, 0x1C06, 0x0D0D, 0x0067
+	@ pret/pokeemerald-jp direct xref for 0x082CB458: dodrio_berry_picking.s: sub_080295A4
+	.globl gDodrioBerryPickingData_082CB458
+gDodrioBerryPickingData_082CB458:
 	.globl gUnknown_82CB458
 gUnknown_82CB458: @ 0x082CB458
 	@ analyzed canonical ROM range 0x082CB458-0x082CB45F
 sAnalyzedData_082CB458: @ 0x082CB458
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x1C06, 0x0D07, 0x0067
+	@ pret/pokeemerald-jp direct xref for 0x082CB460: dodrio_berry_picking.s: sub_08029D28
+	.globl gDodrioBerryPickingData_082CB460
+gDodrioBerryPickingData_082CB460:
 	.globl gUnknown_82CB460
 gUnknown_82CB460: @ 0x082CB460
 	@ analyzed canonical ROM range 0x082CB460-0x082CB46F
 sAnalyzedData_082CB460: @ 0x082CB460
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x1308, 0x0D03, 0x0013, 0x1600, 0x0607, 0x0D04, 0x004C
+	@ pret/pokeemerald-jp direct xref for 0x082CB470: dodrio_berry_picking.s: sub_0802A27C
+	.globl gDodrioBerryPickingData_082CB470
+gDodrioBerryPickingData_082CB470:
 	.globl gUnknown_82CB470
 gUnknown_82CB470: @ 0x082CB470
 	@ analyzed canonical ROM range 0x082CB470-0x082CB477
 sAnalyzedData_082CB470: @ 0x082CB470
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0400, 0x1606, 0x0D05, 0x0013
+	@ pret/pokeemerald-jp direct xref for 0x082CB478: dodrio_berry_picking.s: sub_0802A148
+	.globl gDodrioBerryPickingData_082CB478
+gDodrioBerryPickingData_082CB478:
 	.globl gUnknown_82CB478
 gUnknown_82CB478: @ 0x082CB478
 	@ analyzed canonical ROM range 0x082CB478-0x082CB67B
@@ -1091,6 +1154,9 @@ sAnalyzedData_082CB478: @ 0x082CB478
 	.2byte 0x0303, 0x0404, 0x0000, 0x0101, 0x0202, 0x0503, 0x0000, 0x0000
 	.2byte 0x0604, 0x0000, 0x0300, 0x0705, 0x0000, 0x0402, 0x0806, 0x0100
 	.2byte 0x0503, 0x0906
+	@ pret/pokeemerald-jp direct xref for 0x082CB67C: dodrio_berry_picking.s: sub_0802A5DC
+	.globl gDodrioBerryPickingData_082CB67C
+gDodrioBerryPickingData_082CB67C:
 	.globl gUnknown_82CB67C
 gUnknown_82CB67C: @ 0x082CB67C
 	@ analyzed canonical ROM range 0x082CB67C-0x082CB73B
@@ -1108,6 +1174,9 @@ sAnalyzedData_082CB67C: @ 0x082CB67C
 	.byte 0x1F, 0x63, 0x3F, 0x46, 0xDF, 0x18, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xDF, 0x00
 	.byte 0xFC, 0x7F, 0x08, 0x21, 0x73, 0x72, 0xCE, 0x5D, 0xD1, 0x6B, 0x4C, 0x57, 0x5F, 0x1F, 0xBE, 0x1E
 	.byte 0xBD, 0x77, 0x40, 0x6A, 0x1C, 0x1A, 0x60, 0x5E, 0x5F, 0x46, 0x80, 0x7F, 0x9A, 0x2D, 0xA0, 0x7F
+	@ pret/pokeemerald-jp direct xref for 0x082CB73C: dodrio_berry_picking.s: sub_08028760
+	.globl gDodrioBerryPickingData_082CB73C
+gDodrioBerryPickingData_082CB73C:
 	.globl gUnknown_82CB73C
 gUnknown_82CB73C: @ 0x082CB73C
 	@ confirmed GBA LZ77 stream: compressed=0x1B1, decompressed=0x480
@@ -1145,6 +1214,9 @@ sAnalyzedData_082CB73C: @ 0x082CB73C
 	.byte 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0xDC, 0x7F, 0xFF, 0x7F, 0xFD, 0x7F, 0xFE, 0x7F, 0x9C, 0x7B
 	.byte 0xBB, 0x7B, 0xDB, 0x7B, 0xBD, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x082CB910: dodrio_berry_picking.s: sub_0802A5DC
+	.globl gDodrioBerryPickingData_082CB910
+gDodrioBerryPickingData_082CB910:
 	.globl gUnknown_82CB910
 gUnknown_82CB910: @ 0x082CB910
 	@ confirmed GBA LZ77 stream: compressed=0x88D, decompressed=0x1000
@@ -1155,6 +1227,9 @@ sAnalyzedGfx_082CB910: @ 0x082CB910
 	.if (. - sAnalyzedGfx_082CB910) != 0x890
 	.error "gUnknown_82CB910 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x082CC1A0: dodrio_berry_picking.s: sub_0802A5DC
+	.globl gDodrioBerryPickingData_082CC1A0
+gDodrioBerryPickingData_082CC1A0:
 	.globl gUnknown_82CC1A0
 gUnknown_82CC1A0: @ 0x082CC1A0
 	@ confirmed GBA LZ77 stream: compressed=0xDC9, decompressed=0x1A00
@@ -1165,6 +1240,9 @@ sAnalyzedGfx_082CC1A0: @ 0x082CC1A0
 	.if (. - sAnalyzedGfx_082CC1A0) != 0xDCC
 	.error "gUnknown_82CC1A0 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x082CCF6C: dodrio_berry_picking.s: sub_08028460
+	.globl gDodrioBerryPickingData_082CCF6C
+gDodrioBerryPickingData_082CCF6C:
 	.globl gUnknown_82CCF6C
 gUnknown_82CCF6C: @ 0x082CCF6C
 	@ confirmed GBA LZ77 stream: compressed=0x93, decompressed=0x180
@@ -1175,6 +1253,9 @@ sAnalyzedGfx_082CCF6C: @ 0x082CCF6C
 	.if (. - sAnalyzedGfx_082CCF6C) != 0x94
 	.error "gUnknown_82CCF6C compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x082CD000: dodrio_berry_picking.s: sub_08028A70
+	.globl gDodrioBerryPickingData_082CD000
+gDodrioBerryPickingData_082CD000:
 	.globl gUnknown_82CD000
 gUnknown_82CD000: @ 0x082CD000
 	@ confirmed GBA LZ77 stream: compressed=0x148, decompressed=0x400
@@ -1185,6 +1266,9 @@ sAnalyzedGfx_082CD000: @ 0x082CD000
 	.if (. - sAnalyzedGfx_082CD000) != 0x148
 	.error "gUnknown_82CD000 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x082CD148: dodrio_berry_picking.s: sub_080280D4
+	.globl gDodrioBerryPickingData_082CD148
+gDodrioBerryPickingData_082CD148:
 	.globl gUnknown_82CD148
 gUnknown_82CD148: @ 0x082CD148
 	@ confirmed GBA LZ77 stream: compressed=0x121C, decompressed=0x3000
@@ -1195,6 +1279,9 @@ sAnalyzedGfx_082CD148: @ 0x082CD148
 	.if (. - sAnalyzedGfx_082CD148) != 0x121C
 	.error "gUnknown_82CD148 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x082CE364: dodrio_berry_picking.s: sub_08029064
+	.globl gDodrioBerryPickingData_082CE364
+gDodrioBerryPickingData_082CE364:
 	.globl gUnknown_82CE364
 gUnknown_82CE364: @ 0x082CE364
 	@ confirmed GBA LZ77 stream: compressed=0x269, decompressed=0x500
@@ -1205,6 +1292,9 @@ sAnalyzedGfx_082CE364: @ 0x082CE364
 	.if (. - sAnalyzedGfx_082CE364) != 0x26C
 	.error "gUnknown_82CE364 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x082CE5D0: dodrio_berry_picking.s: sub_08029064
+	.globl gDodrioBerryPickingData_082CE5D0
+gDodrioBerryPickingData_082CE5D0:
 	.globl gUnknown_82CE5D0
 gUnknown_82CE5D0: @ 0x082CE5D0
 	@ confirmed GBA LZ77 stream: compressed=0x24D, decompressed=0x500
@@ -1215,6 +1305,9 @@ sAnalyzedGfx_082CE5D0: @ 0x082CE5D0
 	.if (. - sAnalyzedGfx_082CE5D0) != 0x250
 	.error "gUnknown_82CE5D0 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x082CE820: dodrio_berry_picking.s: sub_08029064
+	.globl gDodrioBerryPickingData_082CE820
+gDodrioBerryPickingData_082CE820:
 	.globl gUnknown_82CE820
 gUnknown_82CE820: @ 0x082CE820
 	@ confirmed GBA LZ77 stream: compressed=0x249, decompressed=0x500
@@ -1225,6 +1318,9 @@ sAnalyzedGfx_082CE820: @ 0x082CE820
 	.if (. - sAnalyzedGfx_082CE820) != 0x24C
 	.error "gUnknown_82CE820 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x082CEA6C: dodrio_berry_picking.s: sub_08028134
+	.globl gDodrioBerryPickingData_082CEA6C
+gDodrioBerryPickingData_082CEA6C:
 	.globl gUnknown_82CEA6C
 gUnknown_82CEA6C: @ 0x082CEA6C
 	@ analyzed canonical ROM range 0x082CEA6C-0x082CEAB3
@@ -1235,6 +1331,9 @@ sAnalyzedData_082CEA6C: @ 0x082CEA6C
 	.2byte 0x0000, 0x0014, 0xFFFE, 0x0000, 0x0040, 0x0014, 0xFFFE, 0x0000
 	.2byte 0x0080, 0x0014, 0xFFFE, 0x0000, 0x00C0, 0x0014, 0xFFFE, 0x0000
 	.2byte 0x0100, 0x0014, 0xFFFE, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x082CEAB4: dodrio_berry_picking.s: sub_08028134
+	.globl gDodrioBerryPickingData_082CEAB4
+gDodrioBerryPickingData_082CEAB4:
 	.globl gUnknown_82CEAB4
 gUnknown_82CEAB4: @ 0x082CEAB4
 	@ confirmed contiguous ROM pointer table: 5 entries from this address
@@ -1253,24 +1352,36 @@ sAnalyzedData_082CEAB4: @ 0x082CEAB4
 	.byte 0xEC, 0xEA, 0x2C, 0x08, 0xF4, 0xEA, 0x2C, 0x08, 0xFC, 0xEA, 0x2C, 0x08, 0x04, 0xEB, 0x2C, 0x08
 	.byte 0x0C, 0xEB, 0x2C, 0x08, 0x14, 0xEB, 0x2C, 0x08, 0x1C, 0xEB, 0x2C, 0x08, 0x24, 0xEB, 0x2C, 0x08
 	.byte 0x2C, 0xEB, 0x2C, 0x08, 0x00, 0x00, 0x14, 0x00, 0xFE, 0xFF, 0x00, 0x00, 0x58, 0xEB, 0x2C, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x082CEB64: dodrio_berry_picking.s: sub_080280D4
+	.globl gDodrioBerryPickingData_082CEB64
+gDodrioBerryPickingData_082CEB64:
 	.globl gUnknown_82CEB64
 gUnknown_82CEB64: @ 0x082CEB64
 	@ analyzed canonical ROM range 0x082CEB64-0x082CEB6B
 sAnalyzedData_082CEB64: @ 0x082CEB64
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xBC, 0xB6, 0x2C, 0x08, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x082CEB6C: dodrio_berry_picking.s: sub_080280D4
+	.globl gDodrioBerryPickingData_082CEB6C
+gDodrioBerryPickingData_082CEB6C:
 	.globl gUnknown_82CEB6C
 gUnknown_82CEB6C: @ 0x082CEB6C
 	@ analyzed canonical ROM range 0x082CEB6C-0x082CEB73
 sAnalyzedData_082CEB6C: @ 0x082CEB6C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xDC, 0xB6, 0x2C, 0x08, 0x01, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x082CEB74: dodrio_berry_picking.s: sub_08028460
+	.globl gDodrioBerryPickingData_082CEB74
+gDodrioBerryPickingData_082CEB74:
 	.globl gUnknown_82CEB74
 gUnknown_82CEB74: @ 0x082CEB74
 	@ analyzed canonical ROM range 0x082CEB74-0x082CEB7B
 sAnalyzedData_082CEB74: @ 0x082CEB74
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFC, 0xB6, 0x2C, 0x08, 0x02, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x082CEB7C: dodrio_berry_picking.s: sub_08028460
+	.globl gDodrioBerryPickingData_082CEB7C
+gDodrioBerryPickingData_082CEB7C:
 	.globl gUnknown_82CEB7C
 gUnknown_82CEB7C: @ 0x082CEB7C
 	@ analyzed canonical ROM range 0x082CEB7C-0x082CEB9F
@@ -1279,57 +1390,87 @@ sAnalyzedData_082CEB7C: @ 0x082CEB7C
 	.byte 0x01, 0x00, 0x02, 0x00, 0x74, 0xEA, 0x2C, 0x08, 0xE0, 0xEA, 0x2C, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x0D, 0x84, 0x02, 0x08, 0xD4, 0x3E, 0x3F, 0x40, 0x41, 0x42, 0x43, 0x44
 	.byte 0x45, 0xFB, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x082CEBA0: dodrio_berry_picking.s: sub_08028760
+	.globl gDodrioBerryPickingData_082CEBA0
+gDodrioBerryPickingData_082CEBA0:
 	.globl gUnknown_82CEBA0
 gUnknown_82CEBA0: @ 0x082CEBA0
 	@ analyzed canonical ROM range 0x082CEBA0-0x082CEBA7
 sAnalyzedData_082CEBA0: @ 0x082CEBA0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x1C, 0xB7, 0x2C, 0x08, 0x03, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x082CEBA8: dodrio_berry_picking.s: sub_080287B4
+	.globl gDodrioBerryPickingData_082CEBA8
+gDodrioBerryPickingData_082CEBA8:
 	.globl gUnknown_82CEBA8
 gUnknown_82CEBA8: @ 0x082CEBA8
 	@ analyzed canonical ROM range 0x082CEBA8-0x082CEBAF
 sAnalyzedData_082CEBA8: @ 0x082CEBA8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0058, 0x0080, 0x00A8, 0x00D0
+	@ pret/pokeemerald-jp direct xref for 0x082CEBB0: dodrio_berry_picking.s: sub_080287B4
+	.globl gDodrioBerryPickingData_082CEBB0
+gDodrioBerryPickingData_082CEBB0:
 	.globl gUnknown_82CEBB0
 gUnknown_82CEBB0: @ 0x082CEBB0
 	@ analyzed canonical ROM range 0x082CEBB0-0x082CEBC7
 sSpriteTemplate_082CEBB0: @ 0x082CEBB0
 	rodata_sprite_template 0x0002, 0x0003, 0x082CEA7C, 0x082CEB34, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x082CEBC8: dodrio_berry_picking.s: sub_080287B4
+	.globl gDodrioBerryPickingData_082CEBC8
+gDodrioBerryPickingData_082CEBC8:
 	.globl gUnknown_82CEBC8
 gUnknown_82CEBC8: @ 0x082CEBC8
 	@ analyzed canonical ROM range 0x082CEBC8-0x082CEBDF
 sSpriteTemplate_082CEBC8: @ 0x082CEBC8
 	rodata_sprite_template 0x0002, 0x0003, 0x082CEA74, 0x082CEB34, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x082CEBE0: dodrio_berry_picking.s: sub_08028A20
+	.globl gDodrioBerryPickingData_082CEBE0
+gDodrioBerryPickingData_082CEBE0:
 	.globl gUnknown_82CEBE0
 gUnknown_82CEBE0: @ 0x082CEBE0
 	@ analyzed canonical ROM range 0x082CEBE0-0x082CEBE1
 sAnalyzedData_082CEBE0: @ 0x082CEBE0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x1E, 0x14
+	@ pret/pokeemerald-jp direct xref for 0x082CEBE2: dodrio_berry_picking.s: sub_08028A70, sub_08028B28
+	.globl gDodrioBerryPickingData_082CEBE2
+gDodrioBerryPickingData_082CEBE2:
 	.globl gUnknown_82CEBE2
 gUnknown_82CEBE2: @ 0x082CEBE2
 	@ analyzed canonical ROM range 0x082CEBE2-0x082CEBEB
 sAnalyzedData_082CEBE2: @ 0x082CEBE2
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x00E6, 0x0037, 0x001E, 0x004A, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x082CEBEC: dodrio_berry_picking.s: sub_08028A70
+	.globl gDodrioBerryPickingData_082CEBEC
+gDodrioBerryPickingData_082CEBEC:
 	.globl gUnknown_82CEBEC
 gUnknown_82CEBEC: @ 0x082CEBEC
 	@ analyzed canonical ROM range 0x082CEBEC-0x082CEBF3
 sAnalyzedData_082CEBEC: @ 0x082CEBEC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF0, 0xB8, 0x2C, 0x08, 0x06, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x082CEBF4: dodrio_berry_picking.s: sub_08028A70
+	.globl gDodrioBerryPickingData_082CEBF4
+gDodrioBerryPickingData_082CEBF4:
 	.globl gUnknown_82CEBF4
 gUnknown_82CEBF4: @ 0x082CEBF4
 	@ analyzed canonical ROM range 0x082CEBF4-0x082CEC0B
 sSpriteTemplate_082CEBF4: @ 0x082CEBF4
 	rodata_sprite_template 0x0005, 0x0006, 0x082CEA84, 0x082CEB60, 0, gDummySpriteAffineAnimTable, sub_08028A20
+	@ pret/pokeemerald-jp direct xref for 0x082CEC0C: dodrio_berry_picking.s: sub_0802916C, sub_080293D4, sub_080295A4
+	.globl gDodrioBerryPickingData_082CEC0C
+gDodrioBerryPickingData_082CEC0C:
 	.globl gUnknown_82CEC0C
 gUnknown_82CEC0C: @ 0x082CEC0C
 	@ analyzed canonical ROM range 0x082CEC0C-0x082CEC0E
 sAnalyzedData_082CEC0C: @ 0x082CEC0C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x01, 0x02, 0x03
+	@ pret/pokeemerald-jp direct xref for 0x082CEC0F: dodrio_berry_picking.s: sub_080295A4
+	.globl gDodrioBerryPickingData_082CEC0F
+gDodrioBerryPickingData_082CEC0F:
 	.globl gUnknown_82CEC0F
 gUnknown_82CEC0F: @ 0x082CEC0F
 	@ analyzed canonical ROM range 0x082CEC0F-0x082CEC53
@@ -1340,6 +1481,9 @@ sAnalyzedData_082CEC0F: @ 0x082CEC0F
 	.byte 0x00, 0x09, 0x0A, 0x00, 0x00, 0x0F, 0x06, 0x00, 0x00, 0x15, 0x0A, 0x00, 0x00, 0x03, 0x06, 0x00
 	.byte 0x00, 0x0C, 0x06, 0x00, 0x00, 0x12, 0x0A, 0x00, 0x00, 0x17, 0x06, 0x00, 0x00, 0x01, 0x06, 0x00
 	.byte 0x00, 0x06, 0x0A, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x082CEC54: dodrio_berry_picking.s: sub_0802916C
+	.globl gDodrioBerryPickingData_082CEC54
+gDodrioBerryPickingData_082CEC54:
 	.globl gUnknown_82CEC54
 gUnknown_82CEC54: @ 0x082CEC54
 	@ confirmed contiguous ROM pointer table: 5 entries from this address
@@ -1359,18 +1503,27 @@ gUnknown_82CEC68: @ 0x082CEC68
 	.4byte gText_Rom_5CCD7D
 	.4byte gText_Rom_5CCD80
 	.4byte gText_Rom_5CCD83
+	@ pret/pokeemerald-jp direct xref for 0x082CEC7C: dodrio_berry_picking.s: sub_080295A4
+	.globl gDodrioBerryPickingData_082CEC7C
+gDodrioBerryPickingData_082CEC7C:
 	.globl gUnknown_82CEC7C
 gUnknown_82CEC7C: @ 0x082CEC7C
 	@ analyzed canonical ROM range 0x082CEC7C-0x082CEC83
 sAnalyzedData_082CEC7C: @ 0x082CEC7C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x005C, 0x0084, 0x00AC, 0x00DC
+	@ pret/pokeemerald-jp direct xref for 0x082CEC84: dodrio_berry_picking.s: sub_080295A4
+	.globl gDodrioBerryPickingData_082CEC84
+gDodrioBerryPickingData_082CEC84:
 	.globl gUnknown_82CEC84
 gUnknown_82CEC84: @ 0x082CEC84
 	@ analyzed canonical ROM range 0x082CEC84-0x082CEC8D
 sAnalyzedData_082CEC84: @ 0x082CEC84
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x001E, 0x002D, 0x003C, 0x004B, 0x005A
+	@ pret/pokeemerald-jp direct xref for 0x082CEC8E: dodrio_berry_picking.s: sub_080293D4
+	.globl gDodrioBerryPickingData_082CEC8E
+gDodrioBerryPickingData_082CEC8E:
 	.globl gUnknown_82CEC8E
 gUnknown_82CEC8E: @ 0x082CEC8E
 	@ analyzed canonical ROM range 0x082CEC8E-0x082CEC97
@@ -1400,6 +1553,9 @@ gUnknown_82CEC98: @ 0x082CEC98
 	.4byte sub_0802A3F0
 	.4byte ABILITY_STATIC
 	.4byte sub_0802A41C
+	@ pret/pokeemerald-jp direct xref for 0x082CECE8: dodrio_berry_picking.s: sub_080293D4
+	.globl gDodrioBerryPickingData_082CECE8
+gDodrioBerryPickingData_082CECE8:
 	.globl gUnknown_82CECE8
 gUnknown_82CECE8: @ 0x082CECE8
 	@ analyzed canonical ROM range 0x082CECE8-0x082CECEF

@@ -32,7 +32,7 @@ UpdateGymLeaderRematch: @ 0x081D9DCC
 	b _081D9E1A
 	.align 2, 0
 _081D9E08: .4byte 0x00000864
-_081D9E0C: .4byte 0x085FC01C
+_081D9E0C: .4byte gGymLeaderRematchData_085FC01C
 _081D9E10:
 	ldr r0, _081D9E20
 	movs r1, #7
@@ -42,7 +42,7 @@ _081D9E1A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D9E20: .4byte 0x085FC02C
+_081D9E20: .4byte gGymLeaderRematchData_085FC02C
 	thumb_func_end UpdateGymLeaderRematch
 
 	thumb_func_start UpdateGymLeaderRematchFromArray
@@ -196,7 +196,7 @@ _081D9F24:
 	adds r0, r4, #0
 	b _081D9F48
 	.align 2, 0
-_081D9F3C: .4byte 0x0852AD40
+_081D9F3C: .4byte gUnknown_852AD40
 _081D9F40:
 	adds r4, #1
 	cmp r4, #4

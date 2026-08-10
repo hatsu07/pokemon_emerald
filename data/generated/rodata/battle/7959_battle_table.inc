@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x085F79B4: pokenav_match_call_data.s: MatchCallFlagGetByIndex, MatchCallMapSecGetByIndex, MatchCall_GetMessage, MatchCall_GetRematchTableIdx, MatchCall_IsRematchable (+2 more)
+	.globl gPokenavMatchCallDataData_085F79B4
+gPokenavMatchCallDataData_085F79B4:
 	.globl gUnknown_85F79B4
 gUnknown_85F79B4: @ 0x085F79B4
 	@ analyzed canonical ROM range 0x085F79B4-0x085F7A07
@@ -73,6 +76,9 @@ gUnknown_85F7A80: @ 0x085F7A80
 	.4byte MatchCall_GetNameAndDesc_Type2
 	.4byte MatchCall_GetNameAndDesc_Type4
 	.4byte MatchCall_GetNameAndDesc_Type0
+	@ pret/pokeemerald-jp direct xref for 0x085F7A94: pokenav_match_call_data.s: sub_081D0F04, sub_081D123C, sub_081D12CC
+	.globl gPokenavMatchCallDataData_085F7A94
+gPokenavMatchCallDataData_085F7A94:
 	.globl gUnknown_85F7A94
 gUnknown_85F7A94: @ 0x085F7A94
 	@ analyzed canonical ROM range 0x085F7A94-0x085F7AF3
@@ -102,6 +108,9 @@ sAnalyzedData_085F7A94: @ 0x085F7A94
 	.4byte gText_Rom_5CC846 @ +0x54
 	.4byte gText_Rom_5CC856 @ +0x58
 	.4byte gText_Rom_5CC866 @ +0x5C
+	@ pret/pokeemerald-jp direct xref for 0x085F7AF4: menu_specialized.s: sub_081D1380
+	.globl gMenuSpecializedData_085F7AF4
+gMenuSpecializedData_085F7AF4:
 	.globl gUnknown_85F7AF4
 gUnknown_85F7AF4: @ 0x085F7AF4
 	@ analyzed canonical ROM range 0x085F7AF4-0x085F7B0B
@@ -109,12 +118,18 @@ sAnalyzedData_085F7AF4: @ 0x085F7AF4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x0801, 0x0F02, 0x0008, 0x1500, 0x0801, 0x0F12, 0x0018
 	.2byte 0x0100, 0x0B01, 0x0F08, 0x0018
+	@ pret/pokeemerald-jp direct xref for 0x085F7B0C: menu_specialized.s: sub_081D1704
+	.globl gMenuSpecializedData_085F7B0C
+gMenuSpecializedData_085F7B0C:
 	.globl gUnknown_85F7B0C
 gUnknown_85F7B0C: @ 0x085F7B0C
 	@ analyzed canonical ROM range 0x085F7B0C-0x085F7B17
 sAnalyzedData_085F7B0C: @ 0x085F7B0C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0040, 0x0400, 0x0001, 0xA660, 0x0001, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085F7B18: menu_specialized.s: sub_081D1D70
+	.globl gMenuSpecializedData_085F7B18
+gMenuSpecializedData_085F7B18:
 	.globl gUnknown_85F7B18
 gUnknown_85F7B18: @ 0x085F7B18
 	@ analyzed canonical ROM range 0x085F7B18-0x085F7C17
@@ -136,6 +151,9 @@ sAnalyzedData_085F7B18: @ 0x085F7B18
 	.2byte 0x2020, 0x2020, 0x2020, 0x2020, 0x2121, 0x2121, 0x2121, 0x2121
 	.2byte 0x2121, 0x2121, 0x2121, 0x2121, 0x2121, 0x2221, 0x2222, 0x2222
 	.2byte 0x2222, 0x2222, 0x2222, 0x2222, 0x2222, 0x2222, 0x2222, 0x2322
+	@ pret/pokeemerald-jp direct xref for 0x085F7C18: menu_specialized.s: InitMoveRelearnerWindows
+	.globl gMenuSpecializedData_085F7C18
+gMenuSpecializedData_085F7C18:
 	.globl gUnknown_85F7C18
 gUnknown_85F7C18: @ 0x085F7C18
 	@ analyzed canonical ROM range 0x085F7C18-0x085F7C47
@@ -144,6 +162,9 @@ sAnalyzedData_085F7C18: @ 0x085F7C18
 	.2byte 0x0101, 0x1201, 0x0F0C, 0x000A, 0x0101, 0x1201, 0x0F0C, 0x00E2
 	.2byte 0x1501, 0x0801, 0x0F0C, 0x01BA, 0x0401, 0x160F, 0x0F04, 0x021A
 	.2byte 0x1600, 0x0508, 0x0F04, 0x0272, 0x00FF, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085F7C48: menu_specialized.s: MoveRelearnerCreateYesNoMenu
+	.globl gMenuSpecializedData_085F7C48
+gMenuSpecializedData_085F7C48:
 	.globl gUnknown_85F7C48
 gUnknown_85F7C48: @ 0x085F7C48
 	@ analyzed canonical ROM range 0x085F7C48-0x085F7C4F

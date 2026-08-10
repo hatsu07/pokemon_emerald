@@ -372,9 +372,9 @@ AddMoneyLabelObject: @ 0x080E4B88
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E4BC0: .4byte 0x08565FBC
-_080E4BC4: .4byte 0x08565FC4
-_080E4BC8: .4byte 0x08565FA4
+_080E4BC0: .4byte gMoneyData_08565FBC
+_080E4BC4: .4byte gMoneyData_08565FC4
+_080E4BC8: .4byte gMoneyData_08565FA4
 _080E4BCC: .4byte 0x02039C39
 	thumb_func_end AddMoneyLabelObject
 

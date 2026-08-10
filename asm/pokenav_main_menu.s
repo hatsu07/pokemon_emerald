@@ -122,7 +122,7 @@ _081C6F40:
 	movs r0, #1
 	b _081C6FEC
 	.align 2, 0
-_081C6F6C: .4byte 0x085F13C8
+_081C6F6C: .4byte gPokenavMainMenuData_085F13C8
 _081C6F70:
 	movs r0, #0
 	bl GetSubstructPtr
@@ -151,9 +151,9 @@ _081C6F70:
 	movs r0, #0
 	b _081C6FEC
 	.align 2, 0
-_081C6FB0: .4byte 0x085EFA00
-_081C6FB4: .4byte 0x085EFC2C
-_081C6FB8: .4byte 0x085EF9E0
+_081C6FB0: .4byte gPokenavMainMenuData_085EFA00
+_081C6FB4: .4byte gPokenavMainMenuData_085EFC2C
+_081C6FB8: .4byte gPokenavMainMenuData_085EF9E0
 _081C6FBC:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -682,7 +682,7 @@ sub_081C7334: @ 0x081C7334
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C7360: .4byte 0x085F13CC
+_081C7360: .4byte gPokenavMainMenuData_085F13CC
 	thumb_func_end sub_081C7334
 
 	thumb_func_start sub_081C7364
@@ -714,8 +714,8 @@ sub_081C7364: @ 0x081C7364
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C73A0: .4byte 0x085F140C
-_081C73A4: .4byte 0x085F13DC
+_081C73A0: .4byte gPokenavMainMenuData_085F140C
+_081C73A4: .4byte gPokenavMainMenuData_085F13DC
 	thumb_func_end sub_081C7364
 
 	thumb_func_start sub_081C73A8
@@ -800,9 +800,9 @@ _081C73F6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C7444: .4byte 0x085F1410
-_081C7448: .4byte 0x085F1418
-_081C744C: .4byte 0x085F14C8
+_081C7444: .4byte gPokenavMainMenuData_085F1410
+_081C7448: .4byte gPokenavMainMenuData_085F1418
+_081C744C: .4byte gPokenavMainMenuData_085F14C8
 _081C7450: .4byte 0x020205AC
 	thumb_func_end InitPokenavMainMenuResources
 
@@ -979,10 +979,10 @@ _081C7510:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C75A4: .4byte 0x085F1428
+_081C75A4: .4byte gPokenavMainMenuData_085F1428
 _081C75A8: .4byte 0x020205AC
-_081C75AC: .4byte 0x085F14F0
-_081C75B0: .4byte 0x085F1508
+_081C75AC: .4byte gPokenavMainMenuData_085F14F0
+_081C75B0: .4byte gPokenavMainMenuData_085F1508
 _081C75B4: .4byte 0x000003FF
 _081C75B8: .4byte 0xFFFFFC00
 	thumb_func_end InitHoennMapHeaderSprites
@@ -1113,8 +1113,8 @@ _081C76A8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C76B4: .4byte 0x085F1430
-_081C76B8: .4byte 0x085F021C
+_081C76B4: .4byte gPokenavMainMenuData_085F1430
+_081C76B8: .4byte gPokenavMainMenuData_085F021C
 _081C76BC: .4byte 0x0201C000
 _081C76C0: .4byte 0x06010000
 _081C76C4: .4byte 0x000003FF
@@ -1173,8 +1173,8 @@ _081C7732:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C7738: .4byte 0x085F1460
-_081C773C: .4byte 0x085F021C
+_081C7738: .4byte gPokenavMainMenuData_085F1460
+_081C773C: .4byte gPokenavMainMenuData_085F021C
 _081C7740: .4byte 0x0201D000
 _081C7744: .4byte 0x06010800
 	thumb_func_end LoadLeftHeaderGfxForSubMenu

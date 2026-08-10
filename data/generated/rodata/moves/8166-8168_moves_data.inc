@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x08D91D6C: berry_blender.s: LoadBerryBlenderGfx
+	.globl gBerryBlenderData_08D91D6C
+gBerryBlenderData_08D91D6C:
 	.globl gUnknown_8D91D6C
 gUnknown_8D91D6C: @ 0x08D91D6C
 	@ confirmed GBA LZ77 stream: compressed=0xA33, decompressed=0x2000
@@ -8,6 +11,9 @@ sAnalyzedGfx_08D91D6C: @ 0x08D91D6C
 	.if (. - sAnalyzedGfx_08D91D6C) != 0xA34
 	.error "gUnknown_8D91D6C compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D927A0: berry_blender.s: LoadBerryBlenderGfx
+	.globl gBerryBlenderData_08D927A0
+gBerryBlenderData_08D927A0:
 	.globl gUnknown_8D927A0
 gUnknown_8D927A0: @ 0x08D927A0
 	@ confirmed GBA LZ77 stream: compressed=0x311, decompressed=0x800
@@ -191,6 +197,9 @@ sAnalyzedData_08D927A0: @ 0x08D927A0
 	.byte 0xF0, 0x01, 0xF0, 0x01, 0xF9, 0xFF, 0xB9, 0xFB, 0x02, 0x8B, 0x97, 0xFF, 0x90, 0x03, 0xF0, 0x01
 	.byte 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0
 	.byte 0x01, 0x80, 0xB0, 0x01
+	@ pret/pokeemerald-jp direct xref for 0x08D93294: ice.s: AnimTask_Haze1, AnimTask_LoadMistTiles
+	.globl gIceData_08D93294
+gIceData_08D93294:
 	.globl gUnknown_8D93294
 gUnknown_8D93294: @ 0x08D93294
 	@ confirmed GBA LZ77 stream: compressed=0x176, decompressed=0x800
@@ -242,6 +251,9 @@ sAnalyzedData_08D93294: @ 0x08D93294
 	.byte 0xE2, 0x31, 0x07, 0x71, 0x67, 0xF1, 0x07, 0x10, 0x01, 0x0F, 0x63, 0x00, 0x50, 0x55, 0x11, 0x26
 	.byte 0x00, 0x2A, 0xE1, 0x87, 0x00, 0x03, 0x1B, 0x60, 0x55, 0x05, 0x20, 0x07, 0x11, 0x93, 0x50, 0xF1
 	.byte 0x87, 0x71, 0x67, 0xC0, 0xF1, 0x07, 0x30, 0x01
+	@ pret/pokeemerald-jp direct xref for 0x08D9354C: battle_anim_effects_2.s: sub_08106D48
+	.globl gBattleAnimEffects2Data_08D9354C
+gBattleAnimEffects2Data_08D9354C:
 	.globl gUnknown_8D9354C
 gUnknown_8D9354C: @ 0x08D9354C
 	@ confirmed GBA LZ77 stream: compressed=0x1E4, decompressed=0x800
@@ -252,6 +264,9 @@ sAnalyzedGfx_08D9354C: @ 0x08D9354C
 	.if (. - sAnalyzedGfx_08D9354C) != 0x1E4
 	.error "gUnknown_8D9354C compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D93730: battle_anim_effects_2.s: sub_08106D48
+	.globl gBattleAnimEffects2Data_08D93730
+gBattleAnimEffects2Data_08D93730:
 	.globl gUnknown_8D93730
 gUnknown_8D93730: @ 0x08D93730
 	@ confirmed GBA LZ77 stream: compressed=0x1E4, decompressed=0x800
@@ -262,6 +277,9 @@ sAnalyzedGfx_08D93730: @ 0x08D93730
 	.if (. - sAnalyzedGfx_08D93730) != 0x1E4
 	.error "gUnknown_8D93730 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D93914: battle_anim_effects_2.s: sub_08106D48
+	.globl gBattleAnimEffects2Data_08D93914
+gBattleAnimEffects2Data_08D93914:
 	.globl gUnknown_8D93914
 gUnknown_8D93914: @ 0x08D93914
 	@ confirmed GBA LZ77 stream: compressed=0x1E2, decompressed=0x800
@@ -547,6 +565,9 @@ sAnalyzedData_08D93914: @ 0x08D93914
 	.byte 0x10, 0x20, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0xDF, 0x5F, 0xDF, 0x07, 0x00, 0xDF, 0x06
 	.byte 0xFF, 0x05, 0xFF, 0x04, 0x1F, 0x04, 0x00, 0x19, 0x04, 0x13, 0x04, 0x0D, 0x04, 0x00, 0x00, 0x08
 	.byte 0x92, 0x79, 0x00, 0x00, 0x10, 0x01, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08D94A6C: water.s: AnimTask_CreateSurfWave
+	.globl gWaterData_08D94A6C
+gWaterData_08D94A6C:
 	.globl gUnknown_8D94A6C
 gUnknown_8D94A6C: @ 0x08D94A6C
 	@ confirmed GBA LZ77 stream: compressed=0x131D, decompressed=0x2000
@@ -557,6 +578,9 @@ sAnalyzedGfx_08D94A6C: @ 0x08D94A6C
 	.if (. - sAnalyzedGfx_08D94A6C) != 0x1320
 	.error "gUnknown_8D94A6C compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D95D8C: water.s: AnimTask_CreateSurfWave
+	.globl gWaterData_08D95D8C
+gWaterData_08D95D8C:
 	.globl gUnknown_8D95D8C
 gUnknown_8D95D8C: @ 0x08D95D8C
 	@ confirmed GBA LZ77 stream: compressed=0x25, decompressed=0x20
@@ -567,6 +591,9 @@ sAnalyzedGfx_08D95D8C: @ 0x08D95D8C
 	.if (. - sAnalyzedGfx_08D95D8C) != 0x28
 	.error "gUnknown_8D95D8C compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D95DB4: water.s: AnimTask_CreateSurfWave
+	.globl gWaterData_08D95DB4
+gWaterData_08D95DB4:
 	.globl gUnknown_8D95DB4
 gUnknown_8D95DB4: @ 0x08D95DB4
 	@ confirmed GBA LZ77 stream: compressed=0x2D0, decompressed=0x1000
@@ -577,6 +604,9 @@ sAnalyzedGfx_08D95DB4: @ 0x08D95DB4
 	.if (. - sAnalyzedGfx_08D95DB4) != 0x2D0
 	.error "gUnknown_8D95DB4 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D96084: water.s: AnimTask_CreateSurfWave
+	.globl gWaterData_08D96084
+gWaterData_08D96084:
 	.globl gUnknown_8D96084
 gUnknown_8D96084: @ 0x08D96084
 	@ confirmed GBA LZ77 stream: compressed=0x2D3, decompressed=0x1000
@@ -587,6 +617,9 @@ sAnalyzedGfx_08D96084: @ 0x08D96084
 	.if (. - sAnalyzedGfx_08D96084) != 0x2D4
 	.error "gUnknown_8D96084 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D96358: water.s: AnimTask_CreateSurfWave
+	.globl gWaterData_08D96358
+gWaterData_08D96358:
 	.globl gUnknown_8D96358
 gUnknown_8D96358: @ 0x08D96358
 	@ confirmed GBA LZ77 stream: compressed=0x2F2, decompressed=0x1000
@@ -663,6 +696,9 @@ sAnalyzedData_08D96358: @ 0x08D96358
 	.byte 0x0B, 0xC0, 0x5F, 0x13, 0x91, 0x22, 0xFB, 0x70, 0x19, 0x92, 0xE3, 0xF0, 0x01, 0x80, 0x50, 0x01
 	.byte 0x10, 0x20, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x18, 0x6B, 0x52, 0x5A, 0x08, 0x8C, 0x49
 	.byte 0x00, 0x00, 0xF0, 0x01, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08D967A0: party_menu.s: AllocPartyMiscGfx
+	.globl gPartyMenuData_08D967A0
+gPartyMenuData_08D967A0:
 	.globl gUnknown_8D967A0
 gUnknown_8D967A0: @ 0x08D967A0
 	@ confirmed GBA LZ77 stream: compressed=0x2C5, decompressed=0x7C0
@@ -673,6 +709,9 @@ sAnalyzedGfx_08D967A0: @ 0x08D967A0
 	.if (. - sAnalyzedGfx_08D967A0) != 0x2C8
 	.error "gUnknown_8D967A0 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D96A68: party_menu.s: AllocPartyMiscGfx
+	.globl gPartyMenuData_08D96A68
+gPartyMenuData_08D96A68:
 	.globl gUnknown_8D96A68
 gUnknown_8D96A68: @ 0x08D96A68
 	@ confirmed GBA LZ77 stream: compressed=0xEC, decompressed=0x160
@@ -683,6 +722,9 @@ sAnalyzedGfx_08D96A68: @ 0x08D96A68
 	.if (. - sAnalyzedGfx_08D96A68) != 0xEC
 	.error "gUnknown_8D96A68 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D96B54: party_menu.s: AllocPartyMiscGfx
+	.globl gPartyMenuData_08D96B54
+gPartyMenuData_08D96B54:
 	.globl gUnknown_8D96B54
 gUnknown_8D96B54: @ 0x08D96B54
 	@ confirmed GBA LZ77 stream: compressed=0x138, decompressed=0x800
@@ -962,6 +1004,9 @@ sAnalyzedData_08D96B54: @ 0x08D96B54
 	.byte 0x2D, 0xFE, 0x09, 0x2D, 0x58, 0xE1, 0x00, 0x20, 0x11, 0x00, 0x20, 0xD8, 0xDF, 0x1E, 0xF1, 0x1E
 	.byte 0x25, 0xF1, 0x1F, 0x00, 0x03, 0xFE, 0xEE, 0x00, 0x53, 0x1E, 0x78, 0xE1, 0x8F, 0x78, 0xFF, 0xEE
 	.byte 0x1E, 0xFE, 0x00, 0xD3, 0x02, 0xFF, 0x00, 0x90, 0x19, 0x92, 0x80, 0xB8, 0xFF, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08D97C54: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
+	.globl gPokemonSummaryScreenData_08D97C54
+gPokemonSummaryScreenData_08D97C54:
 	.globl gUnknown_8D97C54
 gUnknown_8D97C54: @ 0x08D97C54
 	@ confirmed GBA LZ77 stream: compressed=0x67, decompressed=0x60
@@ -993,6 +1038,9 @@ sAnalyzedData_08D97C54: @ 0x08D97C54
 	.byte 0x58, 0xF0, 0x5F, 0xF0, 0x27, 0xF0, 0x1F, 0xF0, 0x01, 0xF0, 0x37, 0xF0, 0x37, 0xF0, 0x1F, 0x00
 	.byte 0x33, 0x00, 0x00, 0x00, 0x10, 0x20, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x03, 0x52, 0x02, 0xA6
 	.byte 0x7E, 0x09, 0x86, 0x49, 0x00, 0x00, 0x90, 0x01, 0x5F, 0x19, 0x30, 0x07
+	@ pret/pokeemerald-jp direct xref for 0x08D97DD0: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
+	.globl gPokemonSummaryScreenData_08D97DD0
+gPokemonSummaryScreenData_08D97DD0:
 	.globl gUnknown_8D97DD0
 gUnknown_8D97DD0: @ 0x08D97DD0
 	@ confirmed GBA LZ77 stream: compressed=0x9CA, decompressed=0x1B20
@@ -1003,6 +1051,9 @@ sAnalyzedGfx_08D97DD0: @ 0x08D97DD0
 	.if (. - sAnalyzedGfx_08D97DD0) != 0x9CC
 	.error "gUnknown_8D97DD0 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D9879C: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
+	.globl gPokemonSummaryScreenData_08D9879C
+gPokemonSummaryScreenData_08D9879C:
 	.globl gUnknown_8D9879C
 gUnknown_8D9879C: @ 0x08D9879C
 	@ confirmed GBA LZ77 stream: compressed=0xEF, decompressed=0x100
@@ -1013,6 +1064,9 @@ sAnalyzedGfx_08D9879C: @ 0x08D9879C
 	.if (. - sAnalyzedGfx_08D9879C) != 0xF0
 	.error "gUnknown_8D9879C compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D9888C: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
+	.globl gPokemonSummaryScreenData_08D9888C
+gPokemonSummaryScreenData_08D9888C:
 	.globl gUnknown_8D9888C
 gUnknown_8D9888C: @ 0x08D9888C
 	@ confirmed GBA LZ77 stream: compressed=0x1B8, decompressed=0x800
@@ -1023,6 +1077,9 @@ sAnalyzedGfx_08D9888C: @ 0x08D9888C
 	.if (. - sAnalyzedGfx_08D9888C) != 0x1B8
 	.error "gUnknown_8D9888C compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D98A44: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
+	.globl gPokemonSummaryScreenData_08D98A44
+gPokemonSummaryScreenData_08D98A44:
 	.globl gUnknown_8D98A44
 gUnknown_8D98A44: @ 0x08D98A44
 	@ confirmed GBA LZ77 stream: compressed=0x163, decompressed=0x800
@@ -1033,6 +1090,9 @@ sAnalyzedGfx_08D98A44: @ 0x08D98A44
 	.if (. - sAnalyzedGfx_08D98A44) != 0x164
 	.error "gUnknown_8D98A44 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D98BA8: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
+	.globl gPokemonSummaryScreenData_08D98BA8
+gPokemonSummaryScreenData_08D98BA8:
 	.globl gUnknown_8D98BA8
 gUnknown_8D98BA8: @ 0x08D98BA8
 	@ confirmed GBA LZ77 stream: compressed=0x16B, decompressed=0x800
@@ -1043,6 +1103,9 @@ sAnalyzedGfx_08D98BA8: @ 0x08D98BA8
 	.if (. - sAnalyzedGfx_08D98BA8) != 0x16C
 	.error "gUnknown_8D98BA8 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D98D14: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
+	.globl gPokemonSummaryScreenData_08D98D14
+gPokemonSummaryScreenData_08D98D14:
 	.globl gUnknown_8D98D14
 gUnknown_8D98D14: @ 0x08D98D14
 	@ confirmed GBA LZ77 stream: compressed=0x175, decompressed=0x800
@@ -1053,6 +1116,9 @@ sAnalyzedGfx_08D98D14: @ 0x08D98D14
 	.if (. - sAnalyzedGfx_08D98D14) != 0x178
 	.error "gUnknown_8D98D14 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D98E8C: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
+	.globl gPokemonSummaryScreenData_08D98E8C
+gPokemonSummaryScreenData_08D98E8C:
 	.globl gUnknown_8D98E8C
 gUnknown_8D98E8C: @ 0x08D98E8C
 	@ confirmed GBA LZ77 stream: compressed=0x1A3, decompressed=0x800
@@ -1455,6 +1521,9 @@ sAnalyzedData_08D98E8C: @ 0x08D98E8C
 	.byte 0x10, 0x20, 0x00, 0x00, 0x00, 0x0E, 0x53, 0xEE, 0x47, 0x6C, 0x3F, 0x0A, 0x37, 0x00, 0x89, 0x2E
 	.byte 0x27, 0x26, 0xA6, 0x1D, 0x44, 0x15, 0x00, 0xC3, 0x0C, 0x61, 0x04, 0xF3, 0x43, 0x5A, 0x6F, 0x00
 	.byte 0xF7, 0x62, 0x8C, 0x39, 0xFF, 0x7F, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08D9A734: item_menu.s: LoadBagMenu_Graphics
+	.globl gItemMenuData_08D9A734
+gItemMenuData_08D9A734:
 	.globl gUnknown_8D9A734
 gUnknown_8D9A734: @ 0x08D9A734
 	@ confirmed GBA LZ77 stream: compressed=0x4A, decompressed=0x40
@@ -1465,6 +1534,9 @@ sAnalyzedGfx_08D9A734: @ 0x08D9A734
 	.if (. - sAnalyzedGfx_08D9A734) != 0x4C
 	.error "gUnknown_8D9A734 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D9A780: item_menu.s: LoadBagMenu_Graphics
+	.globl gItemMenuData_08D9A780
+gItemMenuData_08D9A780:
 	.globl gUnknown_8D9A780
 gUnknown_8D9A780: @ 0x08D9A780
 	@ confirmed GBA LZ77 stream: compressed=0x4A, decompressed=0x40
@@ -1475,6 +1547,7 @@ sAnalyzedGfx_08D9A780: @ 0x08D9A780
 	.if (. - sAnalyzedGfx_08D9A780) != 0x4C
 	.error "gUnknown_8D9A780 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D9A7CC: battle_pyramid_bag.s: sub_081C4A40; item_menu.s: LoadBagMenu_Graphics
 	.globl gUnknown_8D9A7CC
 gUnknown_8D9A7CC: @ 0x08D9A7CC
 	@ confirmed GBA LZ77 stream: compressed=0x2B7, decompressed=0x6A0
@@ -1485,6 +1558,9 @@ sAnalyzedGfx_08D9A7CC: @ 0x08D9A7CC
 	.if (. - sAnalyzedGfx_08D9A7CC) != 0x2B8
 	.error "gUnknown_8D9A7CC compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D9AA84: item_menu.s: LoadBagMenu_Graphics
+	.globl gItemMenuData_08D9AA84
+gItemMenuData_08D9AA84:
 	.globl gUnknown_8D9AA84
 gUnknown_8D9AA84: @ 0x08D9AA84
 	@ confirmed GBA LZ77 stream: compressed=0x15D, decompressed=0x800
@@ -1577,6 +1653,9 @@ sAnalyzedData_08D9AA84: @ 0x08D9AA84
 	.byte 0x1F, 0xF0, 0x1F, 0x20, 0x1F, 0xC0, 0x00, 0xE2, 0x00, 0x1D, 0x53, 0x33, 0x33, 0x53, 0x75, 0x54
 	.byte 0x07, 0x55, 0x75, 0x07, 0x77, 0x77, 0xB1, 0xD4, 0x10, 0x0D, 0xF1, 0xE6, 0xE0, 0xF0, 0x01, 0xF0
 	.byte 0x01, 0x30, 0x01, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08D9AFC8: battle_pyramid_bag.s: sub_081C6658
+	.globl gBattlePyramidBagData_08D9AFC8
+gBattlePyramidBagData_08D9AFC8:
 	.globl gUnknown_8D9AFC8
 gUnknown_8D9AFC8: @ 0x08D9AFC8
 	@ confirmed GBA LZ77 stream: compressed=0x33, decompressed=0x40
@@ -1587,6 +1666,9 @@ sAnalyzedGfx_08D9AFC8: @ 0x08D9AFC8
 	.if (. - sAnalyzedGfx_08D9AFC8) != 0x34
 	.error "gUnknown_8D9AFC8 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D9AFFC: battle_pyramid_bag.s: sub_081C4A40
+	.globl gBattlePyramidBagData_08D9AFFC
+gBattlePyramidBagData_08D9AFFC:
 	.globl gUnknown_8D9AFFC
 gUnknown_8D9AFFC: @ 0x08D9AFFC
 	@ confirmed GBA LZ77 stream: compressed=0x13E, decompressed=0x800
@@ -1597,6 +1679,9 @@ sAnalyzedGfx_08D9AFFC: @ 0x08D9AFFC
 	.if (. - sAnalyzedGfx_08D9AFFC) != 0x140
 	.error "gUnknown_8D9AFFC compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D9B13C: battle_pyramid_bag.s: sub_081C4A40
+	.globl gBattlePyramidBagData_08D9B13C
+gBattlePyramidBagData_08D9B13C:
 	.globl gUnknown_8D9B13C
 gUnknown_8D9B13C: @ 0x08D9B13C
 	@ confirmed GBA LZ77 stream: compressed=0x28, decompressed=0x20
@@ -1612,6 +1697,9 @@ sAnalyzedData_08D9B13C: @ 0x08D9B13C
 	.byte 0xF0, 0x23, 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xC0, 0x5F, 0xF0, 0x1A, 0xF0, 0x1F, 0xF0
 	.byte 0x01, 0xF0, 0x01, 0xC0, 0xF0, 0x01, 0x20, 0x01, 0x10, 0x20, 0x00, 0x00, 0x30, 0x00, 0x00, 0xF0
 	.byte 0x01, 0x50, 0x01, 0x73, 0x4E, 0xBB, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08D9B1B4: shop.s: BuyMenuDecompressBgGraphics
+	.globl gShopData_08D9B1B4
+gShopData_08D9B1B4:
 	.globl gUnknown_8D9B1B4
 gUnknown_8D9B1B4: @ 0x08D9B1B4
 	@ confirmed GBA LZ77 stream: compressed=0x109, decompressed=0x3A0

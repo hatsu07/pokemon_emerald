@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x082D254C: rtc.s: RtcGetInfo
+	.globl gRtcData_082D254C
+gRtcData_082D254C:
 	.globl gUnknown_82D254C
 gUnknown_82D254C: @ 0x082D254C
 	@ analyzed canonical ROM range 0x082D254C-0x082D2557

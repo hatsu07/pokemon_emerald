@@ -32,6 +32,9 @@ gText_Rom_56588F: @ 0x0856588F
 	.if (. - gText_Rom_56588F) < 0x11
 	.space 0x11 - (. - gText_Rom_56588F)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085658A0: naming_screen.s: sub_080E46E4
+	.globl gNamingScreenData_085658A0
+gNamingScreenData_085658A0:
 	.globl gUnknown_85658A0
 gUnknown_85658A0: @ 0x085658A0
 	@ analyzed canonical ROM range 0x085658A0-0x085658C0

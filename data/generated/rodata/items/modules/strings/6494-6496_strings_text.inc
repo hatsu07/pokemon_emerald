@@ -12,6 +12,9 @@ gText_Rom_5CCDEA: @ 0x085CCDEA
 gUnknown_85CCDF8: @ 0x085CCDF8
 	@ Decoded text from ROM range: offset=0x5CCDF8, size=0x3
 	.string "てん$"
+	@ pret/pokeemerald-jp direct xref for 0x085CCDFB: pokemon_jump.s: sub_0802D884
+	.globl gPokemonJumpData_085CCDFB
+gPokemonJumpData_085CCDFB:
 	.globl gUnknown_85CCDFB
 gUnknown_85CCDFB: @ 0x085CCDFB
 	@ analyzed canonical ROM range 0x085CCDFB-0x085CCDFD

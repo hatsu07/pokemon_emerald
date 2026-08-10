@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x08DA3668: rayquaza_scene.s: sub_081D69A8, sub_081D77D8
+	.globl gRayquazaSceneData_08DA3668
+gRayquazaSceneData_08DA3668:
 	.globl gUnknown_8DA3668
 gUnknown_8DA3668: @ 0x08DA3668
 	@ confirmed GBA LZ77 stream: compressed=0x425, decompressed=0x9C0
@@ -8,6 +11,9 @@ sAnalyzedGfx_08DA3668: @ 0x08DA3668
 	.if (. - sAnalyzedGfx_08DA3668) != 0x428
 	.error "gUnknown_8DA3668 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA3A90: rayquaza_scene.s: sub_081D69A8
+	.globl gRayquazaSceneData_08DA3A90
+gRayquazaSceneData_08DA3A90:
 	.globl gUnknown_8DA3A90
 gUnknown_8DA3A90: @ 0x08DA3A90
 	@ confirmed GBA LZ77 stream: compressed=0x3A, decompressed=0x40
@@ -18,6 +24,9 @@ sAnalyzedGfx_08DA3A90: @ 0x08DA3A90
 	.if (. - sAnalyzedGfx_08DA3A90) != 0x3C
 	.error "gUnknown_8DA3A90 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA3ACC: rayquaza_scene.s: sub_081D69A8
+	.globl gRayquazaSceneData_08DA3ACC
+gRayquazaSceneData_08DA3ACC:
 	.globl gUnknown_8DA3ACC
 gUnknown_8DA3ACC: @ 0x08DA3ACC
 	@ confirmed GBA LZ77 stream: compressed=0x164, decompressed=0x800
@@ -28,6 +37,9 @@ sAnalyzedGfx_08DA3ACC: @ 0x08DA3ACC
 	.if (. - sAnalyzedGfx_08DA3ACC) != 0x164
 	.error "gUnknown_8DA3ACC compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA3C30: rayquaza_scene.s: sub_081D69A8, sub_081D77D8
+	.globl gRayquazaSceneData_08DA3C30
+gRayquazaSceneData_08DA3C30:
 	.globl gUnknown_8DA3C30
 gUnknown_8DA3C30: @ 0x08DA3C30
 	@ confirmed GBA LZ77 stream: compressed=0xFD, decompressed=0x800
@@ -38,6 +50,9 @@ sAnalyzedGfx_08DA3C30: @ 0x08DA3C30
 	.if (. - sAnalyzedGfx_08DA3C30) != 0x100
 	.error "gUnknown_8DA3C30 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA3D30: rayquaza_scene.s: sub_081D69A8
+	.globl gRayquazaSceneData_08DA3D30
+gRayquazaSceneData_08DA3D30:
 	.globl gUnknown_8DA3D30
 gUnknown_8DA3D30: @ 0x08DA3D30
 	@ confirmed GBA LZ77 stream: compressed=0x135, decompressed=0x800
@@ -78,6 +93,9 @@ sAnalyzedData_08DA3D30: @ 0x08DA3D30
 	.byte 0x34, 0x33, 0x03, 0x23, 0x44, 0x45, 0x24, 0x00, 0x54, 0x00, 0x35, 0x10, 0x3A, 0xC0, 0x20, 0x3C
 	.byte 0x00, 0x01, 0x00, 0x00, 0x10, 0x20, 0x00, 0x00, 0x00, 0x64, 0x39, 0x10, 0x42, 0xB5, 0x56, 0x5A
 	.byte 0x6B, 0x02, 0xDE, 0x7B, 0x9C, 0x73, 0x00, 0x00, 0xF0, 0x01, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08DA3F3C: rayquaza_scene.s: sub_081D77D8
+	.globl gRayquazaSceneData_08DA3F3C
+gRayquazaSceneData_08DA3F3C:
 	.globl gUnknown_8DA3F3C
 gUnknown_8DA3F3C: @ 0x08DA3F3C
 	@ confirmed GBA LZ77 stream: compressed=0x1112, decompressed=0x38C0
@@ -88,6 +106,9 @@ sAnalyzedGfx_08DA3F3C: @ 0x08DA3F3C
 	.if (. - sAnalyzedGfx_08DA3F3C) != 0x1114
 	.error "gUnknown_8DA3F3C compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA5050: rayquaza_scene.s: sub_081D77D8
+	.globl gRayquazaSceneData_08DA5050
+gRayquazaSceneData_08DA5050:
 	.globl gUnknown_8DA5050
 gUnknown_8DA5050: @ 0x08DA5050
 	@ confirmed GBA LZ77 stream: compressed=0x41, decompressed=0x40
@@ -98,6 +119,9 @@ sAnalyzedGfx_08DA5050: @ 0x08DA5050
 	.if (. - sAnalyzedGfx_08DA5050) != 0x44
 	.error "gUnknown_8DA5050 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA5094: rayquaza_scene.s: sub_081D77D8
+	.globl gRayquazaSceneData_08DA5094
+gRayquazaSceneData_08DA5094:
 	.globl gUnknown_8DA5094
 gUnknown_8DA5094: @ 0x08DA5094
 	@ confirmed GBA LZ77 stream: compressed=0x182, decompressed=0x400
@@ -108,6 +132,9 @@ sAnalyzedGfx_08DA5094: @ 0x08DA5094
 	.if (. - sAnalyzedGfx_08DA5094) != 0x184
 	.error "gUnknown_8DA5094 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA5218: rayquaza_scene.s: sub_081D77D8
+	.globl gRayquazaSceneData_08DA5218
+gRayquazaSceneData_08DA5218:
 	.globl gUnknown_8DA5218
 gUnknown_8DA5218: @ 0x08DA5218
 	@ confirmed GBA LZ77 stream: compressed=0x1145, decompressed=0x2720
@@ -118,6 +145,9 @@ sAnalyzedGfx_08DA5218: @ 0x08DA5218
 	.if (. - sAnalyzedGfx_08DA5218) != 0x1148
 	.error "gUnknown_8DA5218 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA6360: rayquaza_scene.s: sub_081D77D8
+	.globl gRayquazaSceneData_08DA6360
+gRayquazaSceneData_08DA6360:
 	.globl gUnknown_8DA6360
 gUnknown_8DA6360: @ 0x08DA6360
 	@ confirmed GBA LZ77 stream: compressed=0x388, decompressed=0x800
@@ -270,6 +300,9 @@ sAnalyzedData_08DA6360: @ 0x08DA6360
 	.byte 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xFF, 0xF0, 0x01, 0xF0
 	.byte 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xC0, 0xF0, 0x01
 	.byte 0xB0, 0x01, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08DA6C64: rayquaza_scene.s: sub_081D7C94
+	.globl gRayquazaSceneData_08DA6C64
+gRayquazaSceneData_08DA6C64:
 	.globl gUnknown_8DA6C64
 gUnknown_8DA6C64: @ 0x08DA6C64
 	@ confirmed GBA LZ77 stream: compressed=0xB6A, decompressed=0x1340
@@ -280,6 +313,9 @@ sAnalyzedGfx_08DA6C64: @ 0x08DA6C64
 	.if (. - sAnalyzedGfx_08DA6C64) != 0xB6C
 	.error "gUnknown_8DA6C64 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA77D0: rayquaza_scene.s: sub_081D7C94
+	.globl gRayquazaSceneData_08DA77D0
+gRayquazaSceneData_08DA77D0:
 	.globl gUnknown_8DA77D0
 gUnknown_8DA77D0: @ 0x08DA77D0
 	@ confirmed GBA LZ77 stream: compressed=0x219, decompressed=0x800
@@ -290,6 +326,9 @@ sAnalyzedGfx_08DA77D0: @ 0x08DA77D0
 	.if (. - sAnalyzedGfx_08DA77D0) != 0x21C
 	.error "gUnknown_8DA77D0 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA79EC: rayquaza_scene.s: sub_081D7C94
+	.globl gRayquazaSceneData_08DA79EC
+gRayquazaSceneData_08DA79EC:
 	.globl gUnknown_8DA79EC
 gUnknown_8DA79EC: @ 0x08DA79EC
 	@ confirmed GBA LZ77 stream: compressed=0x3F, decompressed=0x40
@@ -300,6 +339,9 @@ sAnalyzedGfx_08DA79EC: @ 0x08DA79EC
 	.if (. - sAnalyzedGfx_08DA79EC) != 0x40
 	.error "gUnknown_8DA79EC compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA7A2C: rayquaza_scene.s: sub_081D7C94
+	.globl gRayquazaSceneData_08DA7A2C
+gRayquazaSceneData_08DA7A2C:
 	.globl gUnknown_8DA7A2C
 gUnknown_8DA7A2C: @ 0x08DA7A2C
 	@ confirmed GBA LZ77 stream: compressed=0x327, decompressed=0x800
@@ -310,6 +352,9 @@ sAnalyzedGfx_08DA7A2C: @ 0x08DA7A2C
 	.if (. - sAnalyzedGfx_08DA7A2C) != 0x328
 	.error "gUnknown_8DA7A2C compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA7D54: rayquaza_scene.s: sub_081D7C94
+	.globl gRayquazaSceneData_08DA7D54
+gRayquazaSceneData_08DA7D54:
 	.globl gUnknown_8DA7D54
 gUnknown_8DA7D54: @ 0x08DA7D54
 	@ confirmed GBA LZ77 stream: compressed=0x183, decompressed=0x800
@@ -320,6 +365,9 @@ sAnalyzedGfx_08DA7D54: @ 0x08DA7D54
 	.if (. - sAnalyzedGfx_08DA7D54) != 0x184
 	.error "gUnknown_8DA7D54 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA7ED8: rayquaza_scene.s: sub_081D820C
+	.globl gRayquazaSceneData_08DA7ED8
+gRayquazaSceneData_08DA7ED8:
 	.globl gUnknown_8DA7ED8
 gUnknown_8DA7ED8: @ 0x08DA7ED8
 	@ confirmed GBA LZ77 stream: compressed=0x13A, decompressed=0x300
@@ -330,6 +378,9 @@ sAnalyzedGfx_08DA7ED8: @ 0x08DA7ED8
 	.if (. - sAnalyzedGfx_08DA7ED8) != 0x13C
 	.error "gUnknown_8DA7ED8 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA8014: rayquaza_scene.s: sub_081D820C
+	.globl gRayquazaSceneData_08DA8014
+gRayquazaSceneData_08DA8014:
 	.globl gUnknown_8DA8014
 gUnknown_8DA8014: @ 0x08DA8014
 	@ confirmed GBA LZ77 stream: compressed=0x13F, decompressed=0x800
@@ -340,6 +391,9 @@ sAnalyzedGfx_08DA8014: @ 0x08DA8014
 	.if (. - sAnalyzedGfx_08DA8014) != 0x140
 	.error "gUnknown_8DA8014 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA8154: rayquaza_scene.s: sub_081D820C
+	.globl gRayquazaSceneData_08DA8154
+gRayquazaSceneData_08DA8154:
 	.globl gUnknown_8DA8154
 gUnknown_8DA8154: @ 0x08DA8154
 	@ confirmed GBA LZ77 stream: compressed=0x106, decompressed=0x260
@@ -350,6 +404,9 @@ sAnalyzedGfx_08DA8154: @ 0x08DA8154
 	.if (. - sAnalyzedGfx_08DA8154) != 0x108
 	.error "gUnknown_8DA8154 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA825C: rayquaza_scene.s: sub_081D820C
+	.globl gRayquazaSceneData_08DA825C
+gRayquazaSceneData_08DA825C:
 	.globl gUnknown_8DA825C
 gUnknown_8DA825C: @ 0x08DA825C
 	@ confirmed GBA LZ77 stream: compressed=0x105, decompressed=0x800
@@ -360,6 +417,9 @@ sAnalyzedGfx_08DA825C: @ 0x08DA825C
 	.if (. - sAnalyzedGfx_08DA825C) != 0x108
 	.error "gUnknown_8DA825C compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA8364: rayquaza_scene.s: sub_081D820C
+	.globl gRayquazaSceneData_08DA8364
+gRayquazaSceneData_08DA8364:
 	.globl gUnknown_8DA8364
 gUnknown_8DA8364: @ 0x08DA8364
 	@ confirmed GBA LZ77 stream: compressed=0xA84, decompressed=0x1360
@@ -370,6 +430,9 @@ sAnalyzedGfx_08DA8364: @ 0x08DA8364
 	.if (. - sAnalyzedGfx_08DA8364) != 0xA84
 	.error "gUnknown_8DA8364 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA8DE8: rayquaza_scene.s: sub_081D820C
+	.globl gRayquazaSceneData_08DA8DE8
+gRayquazaSceneData_08DA8DE8:
 	.globl gUnknown_8DA8DE8
 gUnknown_8DA8DE8: @ 0x08DA8DE8
 	@ confirmed GBA LZ77 stream: compressed=0x22C, decompressed=0x800
@@ -380,6 +443,9 @@ sAnalyzedGfx_08DA8DE8: @ 0x08DA8DE8
 	.if (. - sAnalyzedGfx_08DA8DE8) != 0x22C
 	.error "gUnknown_8DA8DE8 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA9014: rayquaza_scene.s: sub_081D820C
+	.globl gRayquazaSceneData_08DA9014
+gRayquazaSceneData_08DA9014:
 	.globl gUnknown_8DA9014
 gUnknown_8DA9014: @ 0x08DA9014
 	@ confirmed GBA LZ77 stream: compressed=0x116, decompressed=0x800
@@ -390,6 +456,9 @@ sAnalyzedGfx_08DA9014: @ 0x08DA9014
 	.if (. - sAnalyzedGfx_08DA9014) != 0x118
 	.error "gUnknown_8DA9014 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DA912C: rayquaza_scene.s: sub_081D820C
+	.globl gRayquazaSceneData_08DA912C
+gRayquazaSceneData_08DA912C:
 	.globl gUnknown_8DA912C
 gUnknown_8DA912C: @ 0x08DA912C
 	@ confirmed GBA LZ77 stream: compressed=0x51, decompressed=0x80
@@ -816,6 +885,9 @@ sAnalyzedData_08DA912C: @ 0x08DA912C
 	.byte 0x1D, 0x08, 0x22, 0x49, 0x3E, 0x00, 0xEB, 0x46, 0x72, 0x5B, 0x6C, 0x35, 0xB5, 0x1C, 0x00, 0x3C
 	.byte 0x19, 0x9E, 0x31, 0x58, 0x32, 0x5B, 0x77, 0x00, 0xFF, 0x7F, 0x3B, 0x03, 0xBF, 0x03, 0x63, 0x0C
 	.byte 0x10, 0x20, 0x00, 0x00, 0x03, 0x73, 0x7E, 0xFF, 0x7F, 0x00, 0x00, 0xF0, 0x01, 0x50, 0x01, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08DAAB5C: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_08DAAB5C
+gRayquazaSceneData_08DAAB5C:
 	.globl gUnknown_8DAAB5C
 gUnknown_8DAAB5C: @ 0x08DAAB5C
 	@ confirmed GBA LZ77 stream: compressed=0x26D, decompressed=0xAE0
@@ -826,6 +898,9 @@ sAnalyzedGfx_08DAAB5C: @ 0x08DAAB5C
 	.if (. - sAnalyzedGfx_08DAAB5C) != 0x270
 	.error "gUnknown_8DAAB5C compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DAADCC: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_08DAADCC
+gRayquazaSceneData_08DAADCC:
 	.globl gUnknown_8DAADCC
 gUnknown_8DAADCC: @ 0x08DAADCC
 	@ confirmed GBA LZ77 stream: compressed=0xF8, decompressed=0x740
@@ -836,6 +911,9 @@ sAnalyzedGfx_08DAADCC: @ 0x08DAADCC
 	.if (. - sAnalyzedGfx_08DAADCC) != 0xF8
 	.error "gUnknown_8DAADCC compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DAAEC4: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_08DAAEC4
+gRayquazaSceneData_08DAAEC4:
 	.globl gUnknown_8DAAEC4
 gUnknown_8DAAEC4: @ 0x08DAAEC4
 	@ confirmed GBA LZ77 stream: compressed=0x235, decompressed=0x800
@@ -846,6 +924,9 @@ sAnalyzedGfx_08DAAEC4: @ 0x08DAAEC4
 	.if (. - sAnalyzedGfx_08DAAEC4) != 0x238
 	.error "gUnknown_8DAAEC4 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DAB0FC: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_08DAB0FC
+gRayquazaSceneData_08DAB0FC:
 	.globl gUnknown_8DAB0FC
 gUnknown_8DAB0FC: @ 0x08DAB0FC
 	@ confirmed GBA LZ77 stream: compressed=0x143, decompressed=0x800
@@ -856,6 +937,9 @@ sAnalyzedGfx_08DAB0FC: @ 0x08DAB0FC
 	.if (. - sAnalyzedGfx_08DAB0FC) != 0x144
 	.error "gUnknown_8DAB0FC compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08DAB240: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_08DAB240
+gRayquazaSceneData_08DAB240:
 	.globl gUnknown_8DAB240
 gUnknown_8DAB240: @ 0x08DAB240
 	@ confirmed GBA LZ77 stream: compressed=0x53, decompressed=0x100

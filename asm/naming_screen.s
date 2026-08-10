@@ -250,7 +250,7 @@ _080E2440: .4byte 0x00001E1C
 _080E2444: .4byte 0x00001E1E
 _080E2448: .4byte 0x00001E21
 _080E244C: .4byte 0x00001E28
-_080E2450: .4byte 0x08565CE8
+_080E2450: .4byte gNamingScreenData_08565CE8
 _080E2454: .4byte 0x00001E2C
 _080E2458: .4byte 0x00001E22
 _080E245C: .4byte 0x00001E16
@@ -480,8 +480,8 @@ _080E25A0:
 	.align 2, 0
 _080E2640: .4byte 0x040000D4
 _080E2644: .4byte 0x81000800
-_080E2648: .4byte 0x085659FC
-_080E264C: .4byte 0x08565A0C
+_080E2648: .4byte gNamingScreenData_085659FC
+_080E264C: .4byte gNamingScreenData_08565A0C
 _080E2650: .4byte 0x02039C34
 _080E2654: .4byte 0x00001E11
 _080E2658: .4byte 0x0000080C
@@ -610,7 +610,7 @@ GetCurrentPageColumnCount: @ 0x080E2734
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080E2754: .4byte 0x08565A3C
+_080E2754: .4byte gNamingScreenData_08565A3C
 	thumb_func_end GetCurrentPageColumnCount
 
 	thumb_func_start sub_080E2758
@@ -632,7 +632,7 @@ sub_080E2758: @ 0x080E2758
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080E277C: .4byte 0x08565A42
+_080E277C: .4byte gNamingScreenData_08565A42
 _080E2780: .4byte 0x02039C34
 _080E2784: .4byte 0x00001E22
 	thumb_func_end sub_080E2758
@@ -656,7 +656,7 @@ sub_080E2788: @ 0x080E2788
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080E27AC: .4byte 0x08565A48
+_080E27AC: .4byte gNamingScreenData_08565A48
 _080E27B0: .4byte 0x02039C34
 _080E27B4: .4byte 0x00001E22
 	thumb_func_end sub_080E2788
@@ -704,11 +704,11 @@ MainState_BeginFadeIn: @ 0x080E27B8
 	bl sub_080E44A4
 	b _080E287A
 	.align 2, 0
-_080E2818: .4byte 0x08565524
+_080E2818: .4byte gNamingScreenData_08565524
 _080E281C: .4byte 0x02039C34
 _080E2820: .4byte 0x00001E22
-_080E2824: .4byte 0x085656C8
-_080E2828: .4byte 0x08565600
+_080E2824: .4byte gNamingScreenData_085656C8
+_080E2828: .4byte gNamingScreenData_08565600
 _080E282C: .4byte 0x00001E12
 _080E2830: .4byte 0x00001E11
 _080E2834:
@@ -780,8 +780,8 @@ _080E287A:
 	.align 2, 0
 _080E28D4: .4byte 0x02039C34
 _080E28D8: .4byte 0x00001E22
-_080E28DC: .4byte 0x085656C8
-_080E28E0: .4byte 0x08565600
+_080E28DC: .4byte gNamingScreenData_085656C8
+_080E28E0: .4byte gNamingScreenData_08565600
 _080E28E4: .4byte 0x00001E11
 _080E28E8: .4byte 0x00001E12
 _080E28EC: .4byte 0x00001E10
@@ -1895,7 +1895,7 @@ _080E3176:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E318C: .4byte 0x08565A60
+_080E318C: .4byte gNamingScreenData_08565A60
 	thumb_func_end sub_080E3144
 
 	thumb_func_start sub_080E3190
@@ -1918,7 +1918,7 @@ sub_080E3190: @ 0x080E3190
 	strh r0, [r4, #0x30]
 	b _080E31E2
 	.align 2, 0
-_080E31B8: .4byte 0x08565A68
+_080E31B8: .4byte gNamingScreenData_08565A68
 _080E31BC:
 	movs r1, #0x30
 	ldrsh r0, [r4, r1]
@@ -2026,7 +2026,7 @@ CursorInit: @ 0x080E3208
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E328C: .4byte 0x08565E50
+_080E328C: .4byte gNamingScreenData_08565E50
 _080E3290: .4byte 0x02039C34
 _080E3294: .4byte 0x00001E23
 _080E3298: .4byte 0x020205AC
@@ -2251,7 +2251,7 @@ GetKeyRoleAtCursorPos: @ 0x080E3414
 	ldrb r0, [r1]
 	b _080E3442
 	.align 2, 0
-_080E343C: .4byte 0x08565A70
+_080E343C: .4byte gNamingScreenData_08565A70
 _080E3440:
 	movs r0, #0
 _080E3442:
@@ -2341,14 +2341,14 @@ CreatePageSwitcherSprites: @ 0x080E344C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E34F0: .4byte 0x08565DD8
+_080E34F0: .4byte gNamingScreenData_08565DD8
 _080E34F4: .4byte 0x02039C34
 _080E34F8: .4byte 0x00001E24
 _080E34FC: .4byte 0x020205AC
-_080E3500: .4byte 0x08565D68
-_080E3504: .4byte 0x08565E08
-_080E3508: .4byte 0x08565D70
-_080E350C: .4byte 0x08565DF0
+_080E3500: .4byte gNamingScreenData_08565D68
+_080E3504: .4byte gNamingScreenData_08565E08
+_080E3508: .4byte gNamingScreenData_08565D70
+_080E350C: .4byte gNamingScreenData_08565DF0
 	thumb_func_end CreatePageSwitcherSprites
 
 	thumb_func_start sub_080E3510
@@ -2588,8 +2588,8 @@ sub_080E3678: @ 0x080E3678
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E36D0: .4byte 0x08565A84
-_080E36D4: .4byte 0x08565A8A
+_080E36D0: .4byte gNamingScreenData_08565A84
+_080E36D4: .4byte gNamingScreenData_08565A8A
 	thumb_func_end sub_080E3678
 
 	thumb_func_start CreateBackOkSprites
@@ -2643,10 +2643,10 @@ CreateBackOkSprites: @ 0x080E36D8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E3740: .4byte 0x08565E20
+_080E3740: .4byte gNamingScreenData_08565E20
 _080E3744: .4byte 0x020205AC
-_080E3748: .4byte 0x08565D88
-_080E374C: .4byte 0x08565E38
+_080E3748: .4byte gNamingScreenData_08565D88
+_080E374C: .4byte gNamingScreenData_08565E38
 	thumb_func_end CreateBackOkSprites
 
 	thumb_func_start CreateUnderscoreSprites
@@ -2745,10 +2745,10 @@ _080E3800:
 	.align 2, 0
 _080E3808: .4byte 0x02039C34
 _080E380C: .4byte 0x00001E16
-_080E3810: .4byte 0x08565E68
+_080E3810: .4byte gNamingScreenData_08565E68
 _080E3814: .4byte 0x020205AC
 _080E3818: .4byte 0x00001E28
-_080E381C: .4byte 0x08565E80
+_080E381C: .4byte gNamingScreenData_08565E80
 	thumb_func_end CreateUnderscoreSprites
 
 	thumb_func_start CreateInputTargetIcon
@@ -2852,9 +2852,9 @@ NamingScreen_CreatePCIcon: @ 0x080E38AC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E38E0: .4byte 0x08565E98
+_080E38E0: .4byte gNamingScreenData_08565E98
 _080E38E4: .4byte 0x020205AC
-_080E38E8: .4byte 0x08565D90
+_080E38E8: .4byte gNamingScreenData_08565D90
 	thumb_func_end NamingScreen_CreatePCIcon
 
 	thumb_func_start NamingScreen_CreateMonIcon
@@ -3383,9 +3383,9 @@ _080E3C9C:
 	add r0, r8
 	b _080E3CE4
 	.align 2, 0
-_080E3CB8: .4byte 0x08565AC0
-_080E3CBC: .4byte 0x08565ACA
-_080E3CC0: .4byte 0x08565AD4
+_080E3CB8: .4byte gNamingScreenData_08565AC0
+_080E3CBC: .4byte gNamingScreenData_08565ACA
+_080E3CC0: .4byte gNamingScreenData_08565AD4
 _080E3CC4: .4byte 0x08565ADC
 _080E3CC8: .4byte 0x03002360
 _080E3CCC:
@@ -3671,7 +3671,7 @@ _080E3ED8: .4byte 0x02039C34
 _080E3EDC: .4byte 0x00001E36
 _080E3EE0: .4byte 0x085C940C
 _080E3EE4: .4byte 0x00001E13
-_080E3EE8: .4byte 0x08565B00
+_080E3EE8: .4byte gNamingScreenData_08565B00
 	thumb_func_end sub_080E3E7C
 
 	thumb_func_start GetCharAtKeyboardPos
@@ -3700,7 +3700,7 @@ GetCharAtKeyboardPos: @ 0x080E3EEC
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080E3F1C: .4byte 0x08565EB0
+_080E3F1C: .4byte gNamingScreenData_08565EB0
 	thumb_func_end GetCharAtKeyboardPos
 
 	thumb_func_start GetTextCaretPosition
@@ -3940,8 +3940,8 @@ _080E40CC:
 	b _080E40F6
 	.align 2, 0
 _080E40E0: .4byte 0x02039C34
-_080E40E4: .4byte 0x08565B06
-_080E40E8: .4byte 0x08565BC1
+_080E40E4: .4byte gNamingScreenData_08565B06
+_080E40E8: .4byte gNamingScreenData_08565BC1
 _080E40EC:
 	adds r2, #1
 	adds r4, #1
@@ -4413,11 +4413,11 @@ choose_name_or_words_screen_load_bg_tile_patterns: @ 0x080E43EC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E443C: .4byte 0x08565318
+_080E443C: .4byte gNamingScreenData_08565318
 _080E4440: .4byte 0x02039C34
 _080E4444: .4byte 0x00001810
-_080E4448: .4byte 0x08565EE0
-_080E444C: .4byte 0x08565F48
+_080E4448: .4byte gNamingScreenData_08565EE0
+_080E444C: .4byte gNamingScreenData_08565F48
 	thumb_func_end choose_name_or_words_screen_load_bg_tile_patterns
 
 	thumb_func_start sub_080E4450
@@ -4449,8 +4449,8 @@ choose_name_or_words_screen_apply_bg_pals: @ 0x080E4460
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E4488: .4byte 0x08565258
-_080E448C: .4byte 0x08565218
+_080E4488: .4byte gNamingScreenData_08565258
+_080E448C: .4byte gNamingScreenData_08565218
 	thumb_func_end choose_name_or_words_screen_apply_bg_pals
 
 	thumb_func_start sub_080E4490
@@ -4518,7 +4518,7 @@ _080E4504:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E450C: .4byte 0x08565C7B
+_080E450C: .4byte gNamingScreenData_08565C7B
 	thumb_func_end sub_080E44A4
 
 	thumb_func_start sub_080E4510
@@ -4670,9 +4670,9 @@ _080E45FA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E463C: .4byte 0x08565C8C
-_080E4640: .4byte 0x08565C90
-_080E4644: .4byte 0x08565EB0
+_080E463C: .4byte gNamingScreenData_08565C8C
+_080E4640: .4byte gNamingScreenData_08565C90
+_080E4644: .4byte gNamingScreenData_08565EB0
 	thumb_func_end sub_080E45D0
 
 	thumb_func_start sub_080E4648
@@ -4741,7 +4741,7 @@ _080E4682:
 	.align 2, 0
 _080E46D4: .4byte 0x02039C34
 _080E46D8: .4byte 0x00001E12
-_080E46DC: .4byte 0x08565C9C
+_080E46DC: .4byte gNamingScreenData_08565C9C
 _080E46E0: .4byte 0x00001E22
 	thumb_func_end sub_080E4648
 
@@ -4787,10 +4787,10 @@ sub_080E46E4: @ 0x080E46E4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E473C: .4byte 0x08565CB4
+_080E473C: .4byte gNamingScreenData_08565CB4
 _080E4740: .4byte 0x02039C34
 _080E4744: .4byte 0x00001E15
-_080E4748: .4byte 0x085658A0
+_080E4748: .4byte gNamingScreenData_085658A0
 	thumb_func_end sub_080E46E4
 
 	thumb_func_start sub_080E474C

@@ -9,6 +9,9 @@ gText_Rom_300AEE: @ 0x08300AEE
 	.space 0xd - (. - gText_Rom_300AEE)
 	.endif
 	.space 0x1, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08300AFC: trade.s: sub_08076DD8, sub_08077558, sub_080787A0, sub_08078900, sub_080799C0
+	.globl gTradeData_08300AFC
+gTradeData_08300AFC:
 	.globl gUnknown_8300AFC
 gUnknown_8300AFC: @ 0x08300AFC
 	@ confirmed contiguous ROM pointer table: 6 entries from this address
@@ -19,6 +22,9 @@ sAnalyzedData_08300AFC: @ 0x08300AFC
 	.2byte 0x0ABD, 0x0830, 0x0AC1, 0x0830, 0x0AD1, 0x0830, 0x0AD8, 0x0830
 	.2byte 0x0AE0, 0x0830, 0x0AEE, 0x0830, 0x635D, 0x60AE, 0x2D5D, 0x2920
 	.2byte 0x0AFF, 0x0603, 0x162E, 0x0D41, 0x00FF, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x08300B28: trade.s: sub_080787A0
+	.globl gTradeData_08300B28
+gTradeData_08300B28:
 	.globl gUnknown_8300B28
 gUnknown_8300B28: @ 0x08300B28
 	@ confirmed contiguous ROM pointer table: 4 entries from this address

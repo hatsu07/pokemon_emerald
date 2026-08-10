@@ -695,7 +695,7 @@ _081AAE6C:
 	bl decompress_and_copy_tile_data_to_vram
 	b _081AAF1E
 	.align 2, 0
-_081AAE84: .4byte 0x08D9A7CC
+_081AAE84: .4byte gUnknown_8D9A7CC
 _081AAE88:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -710,7 +710,7 @@ _081AAE88:
 	ldr r1, [r4]
 	b _081AAF22
 	.align 2, 0
-_081AAEA4: .4byte 0x08D9AA84
+_081AAEA4: .4byte gItemMenuData_08D9AA84
 _081AAEA8: .4byte 0x0203CB20
 _081AAEAC:
 	bl IsWallysBag
@@ -729,7 +729,7 @@ _081AAEAC:
 	b _081AAF1E
 	.align 2, 0
 _081AAECC: .4byte 0x03005AF0
-_081AAED0: .4byte 0x08D9A780
+_081AAED0: .4byte gItemMenuData_08D9A780
 _081AAED4:
 	ldr r0, _081AAEE0
 	movs r1, #0
@@ -737,7 +737,7 @@ _081AAED4:
 	bl LoadCompressedPalette
 	b _081AAF1E
 	.align 2, 0
-_081AAEE0: .4byte 0x08D9A734
+_081AAEE0: .4byte gItemMenuData_08D9A734
 _081AAEE4:
 	bl IsWallysBag
 	lsls r0, r0, #0x18
@@ -755,13 +755,13 @@ _081AAEFA:
 	b _081AAF1E
 	.align 2, 0
 _081AAF04: .4byte 0x03005AF0
-_081AAF08: .4byte 0x0855A664
+_081AAF08: .4byte gItemMenuData_0855A664
 _081AAF0C:
 	ldr r0, _081AAF14
 	bl LoadCompressedSpriteSheet
 	b _081AAF1E
 	.align 2, 0
-_081AAF14: .4byte 0x0855A66C
+_081AAF14: .4byte gItemMenuData_0855A66C
 _081AAF18:
 	ldr r0, _081AAF30
 	bl LoadCompressedSpritePalette
@@ -776,7 +776,7 @@ _081AAF22:
 	strh r0, [r1]
 	b _081AAF54
 	.align 2, 0
-_081AAF30: .4byte 0x0855A674
+_081AAF30: .4byte gItemMenuData_0855A674
 _081AAF34: .4byte 0x0203CB20
 _081AAF38: .4byte 0x00000834
 _081AAF3C:
@@ -1092,7 +1092,7 @@ _081AB1AE:
 	.align 2, 0
 _081AB1B4: .4byte 0x02021C40
 _081AB1B8: .4byte 0x02021C54
-_081AB1BC: .4byte 0x085C976F
+_081AB1BC: .4byte gUnknown_85C976F
 	thumb_func_end GetItemName
 
 	thumb_func_start BagMenu_MoveCursorCallback
@@ -6419,7 +6419,7 @@ _081ADD60:
 	bx r0
 	.align 2, 0
 _081ADD8C: .4byte 0x085DFA2C
-_081ADD90: .4byte 0x085D7B04
+_081ADD90: .4byte gUnknown_85D7B04
 	thumb_func_end SetupBagMenu_Textboxes
 
 	thumb_func_start BagMenu_Print

@@ -482,6 +482,9 @@ gUnknown_846F8BC: @ 0x0846F8BC
 	.4byte MetatileBehavior_IsIsolatedHorizontalRail
 	.4byte MetatileBehavior_IsVerticalRail
 	.4byte MetatileBehavior_IsHorizontalRail
+	@ pret/pokeemerald-jp direct xref for 0x0846F8D0: field_player_avatar.s: check_acro_bike_metatile
+	.globl gFieldPlayerAvatarData_0846F8D0
+gFieldPlayerAvatarData_0846F8D0:
 	.globl gUnknown_846F8D0
 gUnknown_846F8D0: @ 0x0846F8D0
 	@ analyzed canonical ROM range 0x0846F8D0-0x0846F8D7
@@ -504,30 +507,45 @@ gUnknown_846F8F8: @ 0x0846F8F8
 	.4byte MetatileBehavior_IsNorthArrowWarp
 	.4byte MetatileBehavior_IsWestArrowWarp
 	.4byte MetatileBehavior_IsEastArrowWarp
+	@ pret/pokeemerald-jp direct xref for 0x0846F908: field_player_avatar.s: GetPlayerAvatarGraphicsIdByStateIdAndGender
+	.globl gFieldPlayerAvatarData_0846F908
+gFieldPlayerAvatarData_0846F908:
 	.globl gUnknown_846F908
 gUnknown_846F908: @ 0x0846F908
 	@ analyzed canonical ROM range 0x0846F908-0x0846F917
 sAnalyzedData_0846F908: @ 0x0846F908
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x64, 0x69, 0x65, 0x6A, 0x66, 0x6B, 0x67, 0x6C, 0x6F, 0x70, 0x68, 0x6D, 0x89, 0x8A, 0xBF, 0xC0
+	@ pret/pokeemerald-jp direct xref for 0x0846F918: field_player_avatar.s: sub_0808B6B8
+	.globl gFieldPlayerAvatarData_0846F918
+gFieldPlayerAvatarData_0846F918:
 	.globl gUnknown_846F918
 gUnknown_846F918: @ 0x0846F918
 	@ analyzed canonical ROM range 0x0846F918-0x0846F927
 sAnalyzedData_0846F918: @ 0x0846F918
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x59, 0x01, 0x5A, 0x3F, 0x5B, 0x02, 0x5C, 0x6F, 0x70, 0x03, 0x5D, 0x89, 0x8A, 0xBF, 0xC0
+	@ pret/pokeemerald-jp direct xref for 0x0846F928: field_player_avatar.s: sub_0808B6D0
+	.globl gFieldPlayerAvatarData_0846F928
+gFieldPlayerAvatarData_0846F928:
 	.globl gUnknown_846F928
 gUnknown_846F928: @ 0x0846F928
 	@ analyzed canonical ROM range 0x0846F928-0x0846F929
 sAnalyzedData_0846F928: @ 0x0846F928
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xE6, 0xE7
+	@ pret/pokeemerald-jp direct xref for 0x0846F92A: field_player_avatar.s: GetFRLGAvatarGraphicsIdByGender
+	.globl gFieldPlayerAvatarData_0846F92A
+gFieldPlayerAvatarData_0846F92A:
 	.globl gUnknown_846F92A
 gUnknown_846F92A: @ 0x0846F92A
 	@ analyzed canonical ROM range 0x0846F92A-0x0846F92B
 sAnalyzedData_0846F92A: @ 0x0846F92A
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xEB, 0xEC
+	@ pret/pokeemerald-jp direct xref for 0x0846F92C: field_player_avatar.s: GetPlayerAvatarGraphicsIdByCurrentState, GetPlayerAvatarStateTransitionByGraphicsId
+	.globl gFieldPlayerAvatarData_0846F92C
+gFieldPlayerAvatarData_0846F92C:
 	.globl gUnknown_846F92C
 gUnknown_846F92C: @ 0x0846F92C
 	@ analyzed canonical ROM range 0x0846F92C-0x0846F93F
@@ -555,12 +573,18 @@ gUnknown_846F960: @ 0x0846F960
 	.4byte PlayerAvatar_SecretBaseMatSpinStep1
 	.4byte PlayerAvatar_SecretBaseMatSpinStep2
 	.4byte PlayerAvatar_SecretBaseMatSpinStep3
+	@ pret/pokeemerald-jp direct xref for 0x0846F970: field_player_avatar.s: PlayerAvatar_SecretBaseMatSpinStep1
+	.globl gFieldPlayerAvatarData_0846F970
+gFieldPlayerAvatarData_0846F970:
 	.globl gUnknown_846F970
 gUnknown_846F970: @ 0x0846F970
 	@ analyzed canonical ROM range 0x0846F970-0x0846F973
 sAnalyzedData_0846F970: @ 0x0846F970
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x03, 0x04, 0x02, 0x01
+	@ pret/pokeemerald-jp direct xref for 0x0846F974: field_player_avatar.s: PlayerAvatar_SecretBaseMatSpinStep2
+	.globl gFieldPlayerAvatarData_0846F974
+gFieldPlayerAvatarData_0846F974:
 	.globl gUnknown_846F974
 gUnknown_846F974: @ 0x0846F974
 	@ analyzed canonical ROM range 0x0846F974-0x0846F97B
@@ -585,18 +609,27 @@ gUnknown_846F97C: @ 0x0846F97C
 	.4byte Fishing14
 	.4byte Fishing15
 	.4byte Fishing16
+	@ pret/pokeemerald-jp direct xref for 0x0846F9BC: field_player_avatar.s: Fishing2
+	.globl gFieldPlayerAvatarData_0846F9BC
+gFieldPlayerAvatarData_0846F9BC:
 	.globl gUnknown_846F9BC
 gUnknown_846F9BC: @ 0x0846F9BC
 	@ analyzed canonical ROM range 0x0846F9BC-0x0846F9C1
 sAnalyzedData_0846F9BC: @ 0x0846F9BC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x01, 0x00, 0x01, 0x00, 0x01, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0846F9C2: field_player_avatar.s: Fishing2
+	.globl gFieldPlayerAvatarData_0846F9C2
+gFieldPlayerAvatarData_0846F9C2:
 	.globl gUnknown_846F9C2
 gUnknown_846F9C2: @ 0x0846F9C2
 	@ analyzed canonical ROM range 0x0846F9C2-0x0846F9C7
 sAnalyzedData_0846F9C2: @ 0x0846F9C2
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x01, 0x00, 0x03, 0x00, 0x06, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0846F9C8: field_player_avatar.s: Fishing5
+	.globl gFieldPlayerAvatarData_0846F9C8
+gFieldPlayerAvatarData_0846F9C8:
 	.globl gUnknown_846F9C8
 gUnknown_846F9C8: @ 0x0846F9C8
 	@ analyzed canonical ROM range 0x0846F9C8-0x0846F9C9
@@ -607,12 +640,18 @@ sAnalyzedData_0846F9C8: @ 0x0846F9C8
 gUnknown_846F9CA: @ 0x0846F9CA
 	@ Decoded text from ROM range: offset=0x46F9CA, size=0xC
 	.string "ひいてる　ひいてる！！$"
+	@ pret/pokeemerald-jp direct xref for 0x0846F9D6: field_player_avatar.s: Fishing8
+	.globl gFieldPlayerAvatarData_0846F9D6
+gFieldPlayerAvatarData_0846F9D6:
 	.globl gUnknown_846F9D6
 gUnknown_846F9D6: @ 0x0846F9D6
 	@ analyzed canonical ROM range 0x0846F9D6-0x0846F9DB
 sAnalyzedData_0846F9D6: @ 0x0846F9D6
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x24, 0x00, 0x21, 0x00, 0x1E, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0846F9DC: field_player_avatar.s: Fishing9
+	.globl gFieldPlayerAvatarData_0846F9DC
+gFieldPlayerAvatarData_0846F9DC:
 	.globl gUnknown_846F9DC
 gUnknown_846F9DC: @ 0x0846F9DC
 	@ analyzed canonical ROM range 0x0846F9DC-0x0846F9E7

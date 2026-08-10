@@ -8,6 +8,9 @@ gText_Rom_5AAF76: @ 0x085AAF76
 	.if (. - gText_Rom_5AAF76) < 0x18
 	.space 0x18 - (. - gText_Rom_5AAF76)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085AAF8E: battle_message.s: BufferStringBattle
+	.globl gBattleMessageData_085AAF8E
+gBattleMessageData_085AAF8E:
 	.globl gUnknown_85AAF8E
 gUnknown_85AAF8E: @ 0x085AAF8E
 	@ analyzed canonical ROM range 0x085AAF8E-0x085AAFA5
@@ -67,6 +70,9 @@ gText_Rom_5AAFC9: @ 0x085AAFC9
 	.if (. - gText_Rom_5AAFC9) < 0xf
 	.space 0xf - (. - gText_Rom_5AAFC9)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085AAFD8: battle_message.s: BufferStringBattle
+	.globl gBattleMessageData_085AAFD8
+gBattleMessageData_085AAFD8:
 	.globl gUnknown_85AAFD8
 gUnknown_85AAFD8: @ 0x085AAFD8
 	@ analyzed canonical ROM range 0x085AAFD8-0x085AAFEA
@@ -74,12 +80,18 @@ sAnalyzedData_085AAFD8: @ 0x085AAFD8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFD, 0x1C, 0x19, 0x00, 0xFD, 0x1D, 0x1A, 0xFE, 0xFD, 0x00, 0x2D, 0x00, 0x1B, 0x50, 0x0A, 0x22
 	.byte 0x10, 0xAB, 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x085AAFEB: battle_message.s: BufferStringBattle
+	.globl gBattleMessageData_085AAFEB
+gBattleMessageData_085AAFEB:
 	.globl gUnknown_85AAFEB
 gUnknown_85AAFEB: @ 0x085AAFEB
 	@ analyzed canonical ROM range 0x085AAFEB-0x085AAFF9
 sAnalyzedData_085AAFEB: @ 0x085AAFEB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFD, 0x20, 0x1A, 0xFE, 0xFD, 0x00, 0x2D, 0x00, 0x1B, 0x50, 0x0A, 0x22, 0x10, 0xAB, 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x085AAFFA: battle_message.s: BufferStringBattle
+	.globl gBattleMessageData_085AAFFA
+gBattleMessageData_085AAFFA:
 	.globl gUnknown_85AAFFA
 gUnknown_85AAFFA: @ 0x085AAFFA
 	@ analyzed canonical ROM range 0x085AAFFA-0x085AB008
@@ -191,6 +203,9 @@ gText_Rom_5AB02F: @ 0x085AB02F
 	.if (. - gText_Rom_5AB02F) < 0x5
 	.space 0x5 - (. - gText_Rom_5AB02F)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085AB034: battle_message.s: BufferStringBattle
+	.globl gBattleMessageData_085AB034
+gBattleMessageData_085AB034:
 	.globl gUnknown_85AB034
 gUnknown_85AB034: @ 0x085AB034
 	@ analyzed canonical ROM range 0x085AB034-0x085AB03B

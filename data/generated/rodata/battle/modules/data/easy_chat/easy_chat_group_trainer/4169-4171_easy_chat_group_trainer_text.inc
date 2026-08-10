@@ -12,6 +12,9 @@ gText_Rom_5C8FA7: @ 0x085C8FA7
 gUnknown_85C8FAC: @ 0x085C8FAC
 	@ Decoded text from ROM range: offset=0x5C8FAC, size=0x7
 	.string "？？？,？m$"
+	@ pret/pokeemerald-jp direct xref for 0x085C8FB3: pokedex.s: sub_080BE1C8
+	.globl gPokedexData_085C8FB3
+gPokedexData_085C8FB3:
 	.globl gUnknown_85C8FB3
 gUnknown_85C8FB3: @ 0x085C8FB3
 	@ analyzed canonical ROM range 0x085C8FB3-0x085C8FBA

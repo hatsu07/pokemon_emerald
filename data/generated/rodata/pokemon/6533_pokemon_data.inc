@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x085CCF0B: ereader_screen.s: sub_081D4704
+	.globl gEreaderScreenData_085CCF0B
+gEreaderScreenData_085CCF0B:
 	.globl gUnknown_85CCF0B
 gUnknown_85CCF0B: @ 0x085CCF0B
 	@ analyzed canonical ROM range 0x085CCF0B-0x085CCF29

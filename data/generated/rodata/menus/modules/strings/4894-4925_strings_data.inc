@@ -8,6 +8,9 @@ gText_Rom_5CA512: @ 0x085CA512
 	.if (. - gText_Rom_5CA512) < 0x29
 	.space 0x29 - (. - gText_Rom_5CA512)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085CA53B: pokemon_summary_screen.s: BufferMonTrainerMemo
+	.globl gPokemonSummaryScreenData_085CA53B
+gPokemonSummaryScreenData_085CA53B:
 	.globl gUnknown_85CA53B
 gUnknown_85CA53B: @ 0x085CA53B
 	@ analyzed canonical ROM range 0x085CA53B-0x085CA562

@@ -1,14 +1,23 @@
+	@ pret/pokeemerald-jp direct xref for 0x0851769C: battle_anim_status_effects.s: sub_080A97BC
+	.globl gBattleAnimStatusEffectsData_0851769C
+gBattleAnimStatusEffectsData_0851769C:
 	.globl gUnknown_851769C
 gUnknown_851769C: @ 0x0851769C
 	@ analyzed canonical ROM range 0x0851769C-0x085176A3
 sAnalyzedData_0851769C: @ 0x0851769C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x04, 0x00, 0x00, 0x00, 0x8C, 0x76, 0x51, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x085176A4: battle_anim_status_effects.s: sub_080A97BC
+	.globl gBattleAnimStatusEffectsData_085176A4
+gBattleAnimStatusEffectsData_085176A4:
 	.globl gUnknown_85176A4
 gUnknown_85176A4: @ 0x085176A4
 	@ analyzed canonical ROM range 0x085176A4-0x085176BB
 sSpriteTemplate_085176A4: @ 0x085176A4
 	rodata_sprite_template 0x271A, 0x271A, 0x084FD148, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085176BC: battle_anim_status_effects.s: sub_080A9538
+	.globl gBattleAnimStatusEffectsData_085176BC
+gBattleAnimStatusEffectsData_085176BC:
 	.globl gUnknown_85176BC
 gUnknown_85176BC: @ 0x085176BC
 	@ analyzed canonical ROM range 0x085176BC-0x08517A9F
@@ -77,6 +86,9 @@ sAnalyzedData_085176BC: @ 0x085176BC
 	.byte 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01
 	.byte 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0x40
 	.byte 0x01, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08517AA0: title_screen.s: CB2_InitTitleScreen
+	.globl gTitleScreenData_08517AA0
+gTitleScreenData_08517AA0:
 	.globl gUnknown_8517AA0
 gUnknown_8517AA0: @ 0x08517AA0
 	@ analyzed canonical ROM range 0x08517AA0-0x08517B57
@@ -85,6 +97,9 @@ sAnalyzedGfx_08517AA0: @ 0x08517AA0
 	.if (. - sAnalyzedGfx_08517AA0) != 0xB8
 	.error "gUnknown_8517AA0 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08517B58: title_screen.s: CB2_InitTitleScreen
+	.globl gTitleScreenData_08517B58
+gTitleScreenData_08517B58:
 	.globl gUnknown_8517B58
 gUnknown_8517B58: @ 0x08517B58
 	@ analyzed canonical ROM range 0x08517B58-0x08517C17
@@ -102,6 +117,9 @@ sAnalyzedData_08517B58: @ 0x08517B58
 	.byte 0xA1, 0x21, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0xB7, 0x05, 0x20, 0x26, 0xFF, 0x7F, 0xA2, 0x32, 0x61, 0x36, 0x21, 0x3A, 0xE1, 0x3D, 0xC0, 0x41
 	.byte 0x80, 0x45, 0x40, 0x49, 0x20, 0x51, 0x20, 0x31, 0x96, 0x57, 0xFF, 0x7F, 0x1F, 0x00, 0x20, 0x31
+	@ pret/pokeemerald-jp direct xref for 0x08517C18: title_screen.s: CB2_InitTitleScreen
+	.globl gTitleScreenData_08517C18
+gTitleScreenData_08517C18:
 	.globl gUnknown_8517C18
 gUnknown_8517C18: @ 0x08517C18
 	@ analyzed canonical ROM range 0x08517C18-0x08519AB3
@@ -597,6 +615,9 @@ sAnalyzedData_08517C18: @ 0x08517C18
 	.byte 0xF5, 0x4B, 0xE0, 0x71, 0xFF, 0x7F, 0xFF, 0x7F, 0x1F, 0x00, 0xFF, 0x02, 0xB7, 0x05, 0x20, 0x26
 	.byte 0xFF, 0x7F, 0xA1, 0x19, 0xC1, 0x1D, 0xE2, 0x21, 0x02, 0x26, 0x43, 0x2A, 0x63, 0x2E, 0x84, 0x32
 	.byte 0xC5, 0x3A, 0x01, 0x1D, 0x96, 0x57, 0xFF, 0x7F, 0x1F, 0x00, 0xFF, 0x02
+	@ pret/pokeemerald-jp direct xref for 0x08519AB4: title_screen.s: CB2_InitTitleScreen
+	.globl gTitleScreenData_08519AB4
+gTitleScreenData_08519AB4:
 	.globl gUnknown_8519AB4
 gUnknown_8519AB4: @ 0x08519AB4
 	@ analyzed canonical ROM range 0x08519AB4-0x0851A297
@@ -605,6 +626,9 @@ sAnalyzedGfx_08519AB4: @ 0x08519AB4
 	.if (. - sAnalyzedGfx_08519AB4) != 0x7E4
 	.error "gUnknown_8519AB4 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x0851A298: title_screen.s: CB2_InitTitleScreen
+	.globl gTitleScreenData_0851A298
+gTitleScreenData_0851A298:
 	.globl gUnknown_851A298
 gUnknown_851A298: @ 0x0851A298
 	@ analyzed canonical ROM range 0x0851A298-0x0851A6E7
@@ -679,6 +703,9 @@ sAnalyzedData_0851A298: @ 0x0851A298
 	.byte 0xF0, 0x6E, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0
 	.byte 0x01, 0xF1, 0xDF, 0xF1, 0xDF, 0xF1, 0xDF, 0xF1, 0xDF, 0xFF, 0xF1, 0xDF, 0xF1, 0xDF, 0xF0, 0xFD
 	.byte 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xC0, 0xF0, 0x01, 0x30, 0x01, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0851A6E8: title_screen.s: CB2_InitTitleScreen
+	.globl gTitleScreenData_0851A6E8
+gTitleScreenData_0851A6E8:
 	.globl gUnknown_851A6E8
 gUnknown_851A6E8: @ 0x0851A6E8
 	@ analyzed canonical ROM range 0x0851A6E8-0x0851A9CB
@@ -687,6 +714,9 @@ sAnalyzedGfx_0851A6E8: @ 0x0851A6E8
 	.if (. - sAnalyzedGfx_0851A6E8) != 0x2E4
 	.error "gUnknown_851A6E8 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x0851A9CC: title_screen.s: CB2_InitTitleScreen
+	.globl gTitleScreenData_0851A9CC
+gTitleScreenData_0851A9CC:
 	.globl gUnknown_851A9CC
 gUnknown_851A9CC: @ 0x0851A9CC
 	@ analyzed canonical ROM range 0x0851A9CC-0x0851AC0B

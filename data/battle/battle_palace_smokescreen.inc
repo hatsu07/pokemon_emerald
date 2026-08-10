@@ -1,6 +1,9 @@
 @ Battle Palace target + Smokescreen/Enemy Shadow metadata.
 @ ROM 0x082ECF8C-0x082ED04F.
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECF8C: battle_gfx_sfx_util.s: BattlePalaceGetTargetRetValue
+	.globl gBattleGfxSfxUtilData_082ECF8C
+gBattleGfxSfxUtilData_082ECF8C:
 	.globl gUnknown_82ECF8C
 gUnknown_82ECF8C: @ 0x082ECF8C
 	.globl gBattlePalaceNatureToMoveTarget
@@ -32,12 +35,18 @@ gBattlePalaceNatureToMoveTarget:
 	.byte 0 @ NATURE_QUIRKY: PALACE_TARGET_STRONGER
 	.byte 0, 0, 0 @ alignment
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECFA8: smokescreen.s: sub_08074C24, sub_08074D78
+	.globl gSmokescreenData_082ECFA8
+gSmokescreenData_082ECFA8:
 	.globl gUnknown_82ECFA8
 gUnknown_82ECFA8: @ 0x082ECFA8
 sSmokescreenImpactSpriteSheet:
 	.4byte 0x08C0164C @ gSmokescreenImpactTiles
 	.2byte 0x0180, 0xD6EB @ size, TAG_SMOKESCREEN
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECFB0: smokescreen.s: sub_08074C24, sub_08074D78
+	.globl gSmokescreenData_082ECFB0
+gSmokescreenData_082ECFB0:
 	.globl gUnknown_82ECFB0
 gUnknown_82ECFB0: @ 0x082ECFB0
 sSmokescreenImpactSpritePalette:
@@ -79,6 +88,9 @@ sAnims_SmokescreenImpact: @ 0x082ED000
 	.4byte sAnim_SmokescreenImpact_2
 	.4byte sAnim_SmokescreenImpact_3
 
+	@ pret/pokeemerald-jp direct xref for 0x082ED010: smokescreen.s: sub_08074C24
+	.globl gSmokescreenData_082ED010
+gSmokescreenData_082ED010:
 	.globl gUnknown_82ED010
 gUnknown_82ED010: @ 0x082ED010
 sSmokescreenImpactSpriteTemplate:
@@ -89,6 +101,9 @@ sSmokescreenImpactSpriteTemplate:
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte sub_08074DBC @ callback
 
+	@ pret/pokeemerald-jp direct xref for 0x082ED028: battle_gfx_sfx_util.s: LoadAndCreateEnemyShadowSprites
+	.globl gBattleGfxSfxUtilData_082ED028
+gBattleGfxSfxUtilData_082ED028:
 	.globl gUnknown_82ED028
 gUnknown_82ED028: @ 0x082ED028
 	.globl gSpriteSheet_EnemyShadow
@@ -101,6 +116,9 @@ sOamData_EnemyShadow: @ 0x082ED030
 	.2byte 0x0C00
 	.2byte 0x0000
 
+	@ pret/pokeemerald-jp direct xref for 0x082ED038: battle_gfx_sfx_util.s: LoadAndCreateEnemyShadowSprites
+	.globl gBattleGfxSfxUtilData_082ED038
+gBattleGfxSfxUtilData_082ED038:
 	.globl gUnknown_82ED038
 gUnknown_82ED038: @ 0x082ED038
 	.globl gSpriteTemplate_EnemyShadow

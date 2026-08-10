@@ -166,14 +166,14 @@ _08122E00:
 	b _08122E5E
 	.align 2, 0
 _08122E1C: .4byte 0x02039E10
-_08122E20: .4byte 0x0857B34C
+_08122E20: .4byte gRegionMapData_0857B34C
 _08122E24:
 	ldr r0, _08122E30
 	ldr r1, _08122E34
 	bl LZ77UnCompVram
 	b _08123020
 	.align 2, 0
-_08122E30: .4byte 0x0857B34C
+_08122E30: .4byte gRegionMapData_0857B34C
 _08122E34: .4byte 0x06008000
 _08122E38:
 	ldr r4, _08122E68
@@ -201,14 +201,14 @@ _08122E5E:
 	b _08123020
 	.align 2, 0
 _08122E68: .4byte 0x02039E10
-_08122E6C: .4byte 0x0857C0B0
+_08122E6C: .4byte gRegionMapData_0857C0B0
 _08122E70:
 	ldr r0, _08122E7C
 	ldr r1, _08122E80
 	bl LZ77UnCompVram
 	b _08123020
 	.align 2, 0
-_08122E7C: .4byte 0x0857C0B0
+_08122E7C: .4byte gRegionMapData_0857C0B0
 _08122E80: .4byte 0x0600E000
 _08122E84:
 	bl free_temp_tile_data_buffers_if_possible
@@ -223,7 +223,7 @@ _08122E90:
 	bl LoadPalette
 	b _08123020
 	.align 2, 0
-_08122E9C: .4byte 0x0857B30C
+_08122E9C: .4byte gRegionMapData_0857B30C
 _08122EA0:
 	ldr r0, _08122EB4
 	ldr r1, _08122EB8
@@ -234,7 +234,7 @@ _08122EA0:
 	bl LZ77UnCompWram
 	b _08123020
 	.align 2, 0
-_08122EB4: .4byte 0x0857B1DC
+_08122EB4: .4byte gRegionMapData_0857B1DC
 _08122EB8: .4byte 0x02039E10
 _08122EBC:
 	ldr r0, _08122ED0
@@ -246,7 +246,7 @@ _08122EBC:
 	bl LZ77UnCompWram
 	b _08123020
 	.align 2, 0
-_08122ED0: .4byte 0x0857B220
+_08122ED0: .4byte gRegionMapData_0857B220
 _08122ED4: .4byte 0x02039E10
 _08122ED8:
 	bl RegionMap_InitializeStateBasedOnPlayerLocation
@@ -1568,7 +1568,7 @@ _081238B0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081238B4: .4byte 0x0857C53C
+_081238B4: .4byte gRegionMapData_0857C53C
 	thumb_func_end GetRegionMapSectionIdAt_Internal
 
 	thumb_func_start RegionMap_InitializeStateBasedOnPlayerLocation
@@ -1890,7 +1890,7 @@ _08123B3E:
 	beq _08123BA0
 	b _08123BD2
 	.align 2, 0
-_08123B50: .4byte 0x0857CD6C
+_08123B50: .4byte gUnknown_857CD6C
 _08123B54: .4byte 0x02039E10
 _08123B58:
 	cmp r7, #0x33
@@ -2161,7 +2161,7 @@ _08123D1C:
 	bx r0
 	.align 2, 0
 _08123D5C: .4byte 0x02039E10
-_08123D60: .4byte 0x0857CD6C
+_08123D60: .4byte gUnknown_857CD6C
 	thumb_func_end RegionMap_InitializeStateBasedOnSSTidalLocation
 
 	thumb_func_start get_flagnr_blue_points
@@ -2385,7 +2385,7 @@ _08123ECA:
 	lsrs r0, r0, #0x10
 	b _08123F0C
 	.align 2, 0
-_08123EDC: .4byte 0x0857D474
+_08123EDC: .4byte gRegionMapData_0857D474
 _08123EE0:
 	adds r1, #2
 	adds r2, #1
@@ -2403,7 +2403,7 @@ _08123EF2:
 	ldrh r0, [r1, #2]
 	b _08123F0C
 	.align 2, 0
-_08123EFC: .4byte 0x0857D414
+_08123EFC: .4byte gRegionMapData_0857D414
 _08123F00:
 	adds r1, #4
 	adds r2, #4
@@ -2438,7 +2438,7 @@ _08123F24:
 	bx r1
 	.align 2, 0
 _08123F34: .4byte 0x00004037
-_08123F38: .4byte 0x0857D47A
+_08123F38: .4byte gRegionMapData_0857D47A
 	thumb_func_end RegionMap_GetTerraCaveMapSecId
 
 	thumb_func_start RegionMap_GetMarineCaveCoords
@@ -2474,7 +2474,7 @@ _08123F58:
 	.align 2, 0
 _08123F74: .4byte 0x00004037
 _08123F78: .4byte 0xFFF70000
-_08123F7C: .4byte 0x0857D49C
+_08123F7C: .4byte gRegionMapData_0857D49C
 	thumb_func_end RegionMap_GetMarineCaveCoords
 
 	thumb_func_start RegionMap_IsPlayerInCave
@@ -2492,7 +2492,7 @@ _08123F8A:
 	movs r0, #1
 	b _08123FA4
 	.align 2, 0
-_08123F98: .4byte 0x0857D4BC
+_08123F98: .4byte gRegionMapData_0857D4BC
 _08123F9C:
 	adds r1, #1
 	cmp r1, #0
@@ -2742,8 +2742,8 @@ CreateRegionMapCursor: @ 0x081240E0
 	ldr r0, _08124160
 	b _0812417A
 	.align 2, 0
-_08124150: .4byte 0x0857D4F0
-_08124154: .4byte 0x0857D4F8
+_08124150: .4byte gRegionMapData_0857D4F0
+_08124154: .4byte gRegionMapData_0857D4F8
 _08124158: .4byte 0x02039E10
 _0812415C: .4byte 0xFFFF0000
 _08124160: .4byte 0x08124095
@@ -2952,11 +2952,11 @@ CreateRegionMapPlayerIcon: @ 0x08124294
 	str r5, [r0, #0x20]
 	b _081243B0
 	.align 2, 0
-_081242EC: .4byte 0x0857C41C
-_081242F0: .4byte 0x0857C3FC
+_081242EC: .4byte gRegionMapData_0857C41C
+_081242F0: .4byte gRegionMapData_0857C3FC
 _081242F4: .4byte 0xFFFF0000
-_081242F8: .4byte 0x0857D510
-_081242FC: .4byte 0x0857D520
+_081242F8: .4byte gRegionMapData_0857D510
+_081242FC: .4byte gRegionMapData_0857D520
 _08124300: .4byte gDummySpriteAffineAnimTable
 _08124304: .4byte 0x08007141
 _08124308: .4byte 0x02036FB8
@@ -3014,8 +3014,8 @@ _08124322:
 	b _081243AE
 	.align 2, 0
 _08124378: .4byte 0x03005AF0
-_0812437C: .4byte 0x0857C4BC
-_08124380: .4byte 0x0857C49C
+_0812437C: .4byte gRegionMapData_0857C4BC
+_08124380: .4byte gRegionMapData_0857C49C
 _08124384: .4byte 0x02039E10
 _08124388: .4byte 0x020205AC
 _0812438C: .4byte 0x081244F9
@@ -3321,7 +3321,7 @@ _08124590:
 	adds r1, r0, #0
 	b _081245BE
 	.align 2, 0
-_081245A8: .4byte 0x0857CD6C
+_081245A8: .4byte gUnknown_857CD6C
 _081245AC:
 	cmp r4, #0
 	bne _081245B2
@@ -3428,7 +3428,7 @@ sub_0812463C: @ 0x0812463C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08124660: .4byte 0x0857CD6C
+_08124660: .4byte gUnknown_857CD6C
 	thumb_func_end sub_0812463C
 
 	thumb_func_start sub_08124664
@@ -3457,7 +3457,7 @@ _0812467E:
 	movs r0, #1
 	b _08124698
 	.align 2, 0
-_0812468C: .4byte 0x0857D524
+_0812468C: .4byte gRegionMapData_0857D524
 _08124690:
 	adds r1, #1
 	cmp r1, #2
@@ -3559,14 +3559,14 @@ _08124772:
 	bl InitBgsFromTemplates
 	b _081248A8
 	.align 2, 0
-_08124784: .4byte 0x0857D7D4
+_08124784: .4byte gRegionMapData_0857D7D4
 _08124788:
 	ldr r0, _08124794
 	bl InitWindows
 	bl DeactivateAllTextPrinters
 	b _081248A8
 	.align 2, 0
-_08124794: .4byte 0x0857D7E0
+_08124794: .4byte gRegionMapData_0857D7E0
 _08124798:
 	movs r0, #0
 	movs r1, #0x51
@@ -3609,7 +3609,7 @@ _081247F0:
 	bl LZ77UnCompVram
 	b _081248A8
 	.align 2, 0
-_081247FC: .4byte 0x0857D548
+_081247FC: .4byte gRegionMapData_0857D548
 _08124800: .4byte 0x0600C000
 _08124804:
 	ldr r0, _08124810
@@ -3617,7 +3617,7 @@ _08124804:
 	bl LZ77UnCompVram
 	b _081248A8
 	.align 2, 0
-_08124810: .4byte 0x0857D580
+_08124810: .4byte gRegionMapData_0857D580
 _08124814: .4byte 0x0600F000
 _08124818:
 	ldr r0, _08124850
@@ -3643,7 +3643,7 @@ _08124818:
 	bl schedule_bg_copy_tilemap_to_vram
 	b _081248A8
 	.align 2, 0
-_08124850: .4byte 0x0857D528
+_08124850: .4byte gRegionMapData_0857D528
 _08124854: .4byte 0x085C9398
 _08124858:
 	bl sub_08124A58
@@ -3818,7 +3818,7 @@ _08124930:
 	b _081249CA
 	.align 2, 0
 _081249B4: .4byte 0x02039E14
-_081249B8: .4byte 0x0857D7CC
+_081249B8: .4byte gRegionMapData_0857D7CC
 _081249BC: .4byte 0x03001180
 _081249C0:
 	adds r0, r3, #1
@@ -3929,12 +3929,12 @@ sub_08124A58: @ 0x08124A58
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08124AA4: .4byte 0x0857D658
+_08124AA4: .4byte gRegionMapData_0857D658
 _08124AA8: .4byte 0x02039E14
 _08124AAC: .4byte 0x0000088C
 _08124AB0: .4byte 0xFFFF0000
 _08124AB4: .4byte 0x0000FFFF
-_08124AB8: .4byte 0x0857D800
+_08124AB8: .4byte gRegionMapData_0857D800
 	thumb_func_end sub_08124A58
 
 	thumb_func_start sub_08124ABC
@@ -4034,7 +4034,7 @@ _08124B2C:
 	str r1, [r0]
 	b _08124B8A
 	.align 2, 0
-_08124B78: .4byte 0x0857D86C
+_08124B78: .4byte gRegionMapData_0857D86C
 _08124B7C: .4byte 0x020205AC
 _08124B80: .4byte 0x08124CA5
 _08124B84:
@@ -4179,9 +4179,9 @@ _08124C84:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08124C94: .4byte 0x0857D808
+_08124C94: .4byte gRegionMapData_0857D808
 _08124C98: .4byte 0x020205AC
-_08124C9C: .4byte 0x0857D86C
+_08124C9C: .4byte gRegionMapData_0857D86C
 _08124CA0: .4byte 0x08124CA5
 	thumb_func_end sub_08124BCC
 

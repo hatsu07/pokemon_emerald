@@ -14,12 +14,18 @@ gUnknown_85DBC24: @ 0x085DBC24
 	.4byte Select_OptionSummary
 	.4byte Select_OptionRentDeselect
 	.4byte Select_OptionOthers
+	@ pret/pokeemerald-jp direct xref for 0x085DBC30: battle_factory_screen.s: CB2_InitSelectScreen
+	.globl gBattleFactoryScreenData_085DBC30
+gBattleFactoryScreenData_085DBC30:
 	.globl gUnknown_85DBC30
 gUnknown_85DBC30: @ 0x085DBC30
 	@ analyzed canonical ROM range 0x085DBC30-0x085DBC3B
 sAnalyzedData_085DBC30: @ 0x085DBC30
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0180, 0x0000, 0x3195, 0x0000, 0x21BB, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085DBC3C: battle_factory_screen.s: CB2_InitSelectScreen
+	.globl gBattleFactoryScreenData_085DBC3C
+gBattleFactoryScreenData_085DBC3C:
 	.globl gUnknown_85DBC3C
 gUnknown_85DBC3C: @ 0x085DBC3C
 	@ analyzed canonical ROM range 0x085DBC3C-0x085DBC73
@@ -29,18 +35,27 @@ sAnalyzedData_085DBC3C: @ 0x085DBC3C
 	.2byte 0x0000, 0x140F, 0x0F03, 0x0021, 0x1700, 0x060E, 0x0F06, 0x005D
 	.2byte 0x1700, 0x030E, 0x0F04, 0x0081, 0x1400, 0x0900, 0x0F02, 0x008D
 	.2byte 0x00FF, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085DBC74: battle_factory_screen.s: CB2_InitSelectScreen
+	.globl gBattleFactoryScreenData_085DBC74
+gBattleFactoryScreenData_085DBC74:
 	.globl gUnknown_85DBC74
 gUnknown_85DBC74: @ 0x085DBC74
 	@ analyzed canonical ROM range 0x085DBC74-0x085DBC7D
 sAnalyzedData_085DBC74: @ 0x085DBC74
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x0000, 0x7FFF, 0x0000, 0x001F
+	@ pret/pokeemerald-jp direct xref for 0x085DBC7E: battle_factory_screen.s: Select_PrintMenuOptions, Select_PrintYesNoOptions
+	.globl gBattleFactoryScreenData_085DBC7E
+gBattleFactoryScreenData_085DBC7E:
 	.globl gUnknown_85DBC7E
 gUnknown_85DBC7E: @ 0x085DBC7E
 	@ analyzed canonical ROM range 0x085DBC7E-0x085DBC80
 sAnalyzedData_085DBC7E: @ 0x085DBC7E
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x02, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085DBC81: battle_factory_screen.s: Select_PrintMonSpecies
+	.globl gBattleFactoryScreenData_085DBC81
+gBattleFactoryScreenData_085DBC81:
 	.globl gUnknown_85DBC81
 gUnknown_85DBC81: @ 0x085DBC81
 	@ analyzed canonical ROM range 0x085DBC81-0x085DBDDF
@@ -68,31 +83,49 @@ sAnalyzedData_085DBC81: @ 0x085DBC81
 	.byte 0x01, 0x00, 0x00, 0x05, 0x00, 0x05, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x14, 0xBD, 0x5D, 0x08, 0x74, 0xBD, 0x5D, 0x08, 0xC4, 0xBD, 0x5D, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x085DBDE0: battle_factory_screen.s: Select_InitAllSprites
+	.globl gBattleFactoryScreenData_085DBDE0
+gBattleFactoryScreenData_085DBDE0:
 	.globl gUnknown_85DBDE0
 gUnknown_85DBDE0: @ 0x085DBDE0
 	@ analyzed canonical ROM range 0x085DBDE0-0x085DBDF7
 sSpriteTemplate_085DBDE0: @ 0x085DBDE0
 	rodata_sprite_template 0x0064, 0x0064, 0x085DBC84, 0x085DBD0C, 0, gDummySpriteAffineAnimTable, sub_0819A0EC
+	@ pret/pokeemerald-jp direct xref for 0x085DBDF8: battle_factory_screen.s: Select_InitAllSprites
+	.globl gBattleFactoryScreenData_085DBDF8
+gBattleFactoryScreenData_085DBDF8:
 	.globl gUnknown_85DBDF8
 gUnknown_85DBDF8: @ 0x085DBDF8
 	@ analyzed canonical ROM range 0x085DBDF8-0x085DBE0F
 sSpriteTemplate_085DBDF8: @ 0x085DBDF8
 	rodata_sprite_template 0x0065, 0x0066, 0x085DBC8C, 0x085DBD04, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085DBE10: battle_factory_screen.s: Select_InitAllSprites
+	.globl gBattleFactoryScreenData_085DBE10
+gBattleFactoryScreenData_085DBE10:
 	.globl gUnknown_85DBE10
 gUnknown_85DBE10: @ 0x085DBE10
 	@ analyzed canonical ROM range 0x085DBE10-0x085DBE27
 sSpriteTemplate_085DBE10: @ 0x085DBE10
 	rodata_sprite_template 0x0066, 0x0066, 0x085DBC94, 0x085DBD04, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085DBE28: battle_factory_screen.s: Select_InitAllSprites
+	.globl gBattleFactoryScreenData_085DBE28
+gBattleFactoryScreenData_085DBE28:
 	.globl gUnknown_85DBE28
 gUnknown_85DBE28: @ 0x085DBE28
 	@ analyzed canonical ROM range 0x085DBE28-0x085DBE3F
 sSpriteTemplate_085DBE28: @ 0x085DBE28
 	rodata_sprite_template 0x0067, 0x0066, 0x085DBC94, 0x085DBD04, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085DBE40: battle_factory_screen.s: Select_ShowSummaryMonSprite, sub_0819C19C
+	.globl gBattleFactoryScreenData_085DBE40
+gBattleFactoryScreenData_085DBE40:
 	.globl gUnknown_85DBE40
 gUnknown_85DBE40: @ 0x085DBE40
 	@ analyzed canonical ROM range 0x085DBE40-0x085DBE57
 sSpriteTemplate_085DBE40: @ 0x085DBE40
 	rodata_sprite_template 0x006D, 0x0067, 0x085DBC9C, 0x085DBD08, 0, 0x085DBDD4, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085DBE58: battle_factory_screen.s: CB2_InitSwapScreen
+	.globl gBattleFactoryScreenData_085DBE58
+gBattleFactoryScreenData_085DBE58:
 	.globl gUnknown_85DBE58
 gUnknown_85DBE58: @ 0x085DBE58
 	@ analyzed canonical ROM range 0x085DBE58-0x085DBEA7
@@ -103,12 +136,18 @@ sAnalyzedData_085DBE58: @ 0x085DBE58
 	.byte 0xB8, 0xA1, 0x5D, 0x08, 0x00, 0x01, 0x69, 0x00, 0xB8, 0xA2, 0x5D, 0x08, 0x00, 0x01, 0x6A, 0x00
 	.byte 0x38, 0xA3, 0x5D, 0x08, 0x00, 0x01, 0x6B, 0x00, 0x38, 0xA4, 0x5D, 0x08, 0x00, 0x01, 0x6C, 0x00
 	.byte 0x38, 0xA5, 0x5D, 0x08, 0x00, 0x08, 0x6D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085DBEA8: battle_factory_screen.s: CB2_InitSwapScreen
+	.globl gBattleFactoryScreenData_085DBEA8
+gBattleFactoryScreenData_085DBEA8:
 	.globl gUnknown_85DBEA8
 gUnknown_85DBEA8: @ 0x085DBEA8
 	@ analyzed canonical ROM range 0x085DBEA8-0x085DBEB7
 sAnalyzedData_085DBEA8: @ 0x085DBEA8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x06BC, 0x0859, 0x0800, 0x0064, 0x0000, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085DBEB8: battle_factory_screen.s: CB2_InitSwapScreen
+	.globl gBattleFactoryScreenData_085DBEB8
+gBattleFactoryScreenData_085DBEB8:
 	.globl gUnknown_85DBEB8
 gUnknown_85DBEB8: @ 0x085DBEB8
 	@ analyzed canonical ROM range 0x085DBEB8-0x085DC03B
@@ -139,26 +178,41 @@ sAnalyzedData_085DBEB8: @ 0x085DBEB8
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000, 0x0100, 0x0100, 0x0000, 0x0000
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000, 0xBF70, 0x085D, 0xBFD0, 0x085D
 	.2byte 0xC020, 0x085D
+	@ pret/pokeemerald-jp direct xref for 0x085DC03C: battle_factory_screen.s: Swap_InitAllSprites
+	.globl gBattleFactoryScreenData_085DC03C
+gBattleFactoryScreenData_085DC03C:
 	.globl gUnknown_85DC03C
 gUnknown_85DC03C: @ 0x085DC03C
 	@ analyzed canonical ROM range 0x085DC03C-0x085DC053
 sSpriteTemplate_085DC03C: @ 0x085DC03C
 	rodata_sprite_template 0x0064, 0x0064, 0x085DBEE0, 0x085DBF68, 0, gDummySpriteAffineAnimTable, sub_0819A0EC
+	@ pret/pokeemerald-jp direct xref for 0x085DC054: battle_factory_screen.s: Swap_InitAllSprites
+	.globl gBattleFactoryScreenData_085DC054
+gBattleFactoryScreenData_085DC054:
 	.globl gUnknown_85DC054
 gUnknown_85DC054: @ 0x085DC054
 	@ analyzed canonical ROM range 0x085DC054-0x085DC06B
 sSpriteTemplate_085DC054: @ 0x085DC054
 	rodata_sprite_template 0x0065, 0x0066, 0x085DBEE8, 0x085DBF60, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085DC06C: battle_factory_screen.s: Swap_InitAllSprites
+	.globl gBattleFactoryScreenData_085DC06C
+gBattleFactoryScreenData_085DC06C:
 	.globl gUnknown_85DC06C
 gUnknown_85DC06C: @ 0x085DC06C
 	@ analyzed canonical ROM range 0x085DC06C-0x085DC083
 sSpriteTemplate_085DC06C: @ 0x085DC06C
 	rodata_sprite_template 0x0066, 0x0066, 0x085DBEF0, 0x085DBF60, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085DC084: battle_factory_screen.s: Swap_InitAllSprites
+	.globl gBattleFactoryScreenData_085DC084
+gBattleFactoryScreenData_085DC084:
 	.globl gUnknown_85DC084
 gUnknown_85DC084: @ 0x085DC084
 	@ analyzed canonical ROM range 0x085DC084-0x085DC09B
 sSpriteTemplate_085DC084: @ 0x085DC084
 	rodata_sprite_template 0x0067, 0x0066, 0x085DBEF0, 0x085DBF60, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085DC09C: battle_factory_screen.s: Swap_ShowSummaryMonSprite, sub_0819F1A0
+	.globl gBattleFactoryScreenData_085DC09C
+gBattleFactoryScreenData_085DC09C:
 	.globl gUnknown_85DC09C
 gUnknown_85DC09C: @ 0x085DC09C
 	@ analyzed canonical ROM range 0x085DC09C-0x085DC0B3

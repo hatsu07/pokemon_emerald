@@ -8,6 +8,9 @@ gText_Rom_5CBEC7: @ 0x085CBEC7
 	.if (. - gText_Rom_5CBEC7) < 0x4
 	.space 0x4 - (. - gText_Rom_5CBEC7)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085CBECB: reset_rtc_screen.s: Task_ShowResetRtcPrompt
+	.globl gResetRtcScreenData_085CBECB
+gResetRtcScreenData_085CBECB:
 	.globl gUnknown_85CBECB
 gUnknown_85CBECB: @ 0x085CBECB
 	@ analyzed canonical ROM range 0x085CBECB-0x085CBEE8

@@ -74,7 +74,7 @@ _0813CA96:
 	bl LoadBgTilemap
 	b _0813CB00
 	.align 2, 0
-_0813CAC0: .4byte 0x0859383C
+_0813CAC0: .4byte gPokedexAreaScreenData_0859383C
 _0813CAC4: .4byte 0x0203A848
 _0813CAC8:
 	bl free_temp_tile_data_buffers_if_possible
@@ -87,7 +87,7 @@ _0813CAC8:
 	bl CpuSet
 	b _0813CB00
 	.align 2, 0
-_0813CAE0: .4byte 0x0859381C
+_0813CAE0: .4byte gPokedexAreaScreenData_0859381C
 _0813CAE4: .4byte 0x020374F4
 _0813CAE8: .4byte 0x04000008
 _0813CAEC:
@@ -216,8 +216,8 @@ _0813CBCC: .4byte 0x0000403E
 _0813CBD0: .4byte 0x000006E4
 _0813CBD4: .4byte 0x03005AEC
 _0813CBD8: .4byte 0x000031DC
-_0813CBDC: .4byte 0x08593970
-_0813CBE0: .4byte 0x08593978
+_0813CBDC: .4byte gPokedexAreaScreenData_08593970
+_0813CBE0: .4byte gPokedexAreaScreenData_08593978
 _0813CBE4:
 	cmp r0, #0x1a
 	beq _0813CBF6
@@ -276,7 +276,7 @@ _0813CC2A:
 	beq _0813CC5E
 	b _0813CC78
 	.align 2, 0
-_0813CC50: .4byte 0x08593978
+_0813CC50: .4byte gPokedexAreaScreenData_08593978
 _0813CC54: .4byte 0x0852D9F4
 _0813CC58:
 	cmp r0, #0x1a
@@ -508,8 +508,8 @@ _0813CDFE:
 	bx r0
 	.align 2, 0
 _0813CE04: .4byte 0x0203A848
-_0813CE08: .4byte 0x08593972
-_0813CE0C: .4byte 0x08593984
+_0813CE08: .4byte gPokedexAreaScreenData_08593972
+_0813CE0C: .4byte gPokedexAreaScreenData_08593984
 	thumb_func_end SetSpecialMapHasMon
 
 	thumb_func_start GetRegionMapSectionId
@@ -1524,7 +1524,7 @@ _0813D5AC:
 	bl StringFill
 	b _0813D688
 	.align 2, 0
-_0813D5D0: .4byte 0x085939A0
+_0813D5D0: .4byte gPokedexAreaScreenData_085939A0
 _0813D5D4: .4byte 0x0203A848
 _0813D5D8:
 	bl sub_081C4698
@@ -1929,16 +1929,16 @@ _0813D8DC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0813D8FC: .4byte 0x085939A4
-_0813D900: .4byte 0x085939AC
+_0813D8FC: .4byte gPokedexAreaScreenData_085939A4
+_0813D900: .4byte gPokedexAreaScreenData_085939AC
 _0813D904: .4byte 0x03001204
 _0813D908: .4byte 0x03001200
 _0813D90C: .4byte 0x0203A848
 _0813D910: .4byte 0x03001202
 _0813D914: .4byte 0x030011FC
-_0813D918: .4byte 0x0857CD6C
+_0813D918: .4byte gUnknown_857CD6C
 _0813D91C: .4byte 0x030011FE
-_0813D920: .4byte 0x085939BC
+_0813D920: .4byte gPokedexAreaScreenData_085939BC
 _0813D924: .4byte 0x020205AC
 	thumb_func_end CreateAreaMarkerSprites
 
@@ -2033,8 +2033,8 @@ LoadAreaUnknownGraphics: @ 0x0813D9AC
 _0813D9D8: .4byte 0x0203A848
 _0813D9DC: .4byte 0x00000FBC
 _0813D9E0: .4byte 0x00030600
-_0813D9E4: .4byte 0x08593ABC
-_0813D9E8: .4byte 0x08593A74
+_0813D9E4: .4byte gPokedexAreaScreenData_08593ABC
+_0813D9E8: .4byte gPokedexAreaScreenData_08593A74
 	thumb_func_end LoadAreaUnknownGraphics
 
 	thumb_func_start CreateAreaUnknownSprites
@@ -2112,7 +2112,7 @@ _0813DA28:
 	b _0813DA9E
 	.align 2, 0
 _0813DA78: .4byte 0x020205AC
-_0813DA7C: .4byte 0x08593A84
+_0813DA7C: .4byte gPokedexAreaScreenData_08593A84
 _0813DA80: .4byte 0x000003FF
 _0813DA84: .4byte 0xFFFFFC00
 _0813DA88: .4byte 0x0203A848

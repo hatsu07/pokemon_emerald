@@ -345,6 +345,9 @@ sAnalyzedData_084E7065: @ 0x084E7065
 	.byte 0xFF, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xDE, 0xFF, 0xFF, 0x00, 0xCD
 	.byte 0x8F, 0xF7, 0x0F, 0xFF, 0xFF, 0xF8, 0xF8, 0x8F, 0x5F, 0x8F, 0xF8, 0x7F, 0xF8, 0xFF, 0xFF, 0xFF
 	.byte 0x8F, 0x0F, 0x00, 0xF0, 0x88, 0x0F, 0x00, 0x00, 0xFF, 0x0F, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x084E8360: save_failed_screen.s: CB2_SaveFailedScreen
+	.globl gSaveFailedScreenData_084E8360
+gSaveFailedScreenData_084E8360:
 	.globl gUnknown_84E8360
 gUnknown_84E8360: @ 0x084E8360
 	@ analyzed canonical ROM range 0x084E8360-0x084E85DF
@@ -390,6 +393,9 @@ sAnalyzedData_084E8360: @ 0x084E8360
 	.byte 0xFD, 0x53, 0x5D, 0x43, 0x1F, 0x7C, 0xF8, 0x3F, 0x54, 0x2B, 0xF0, 0x22, 0xFF, 0x7F, 0x09, 0x29
 	.byte 0x52, 0x32, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x5F, 0x7F, 0xDF, 0x6E, 0x50, 0x0D, 0x1F, 0x42
 	.byte 0x1D, 0x21, 0x53, 0x4F, 0x8D, 0x36, 0xA6, 0x19, 0xF6, 0x5A, 0x5B, 0x6F, 0xFF, 0x7F, 0x09, 0x29
+	@ pret/pokeemerald-jp direct xref for 0x084E85E0: text_window.s: LoadMessageBoxGfx
+	.globl gTextWindowData_084E85E0
+gTextWindowData_084E85E0:
 	.globl gUnknown_84E85E0
 gUnknown_84E85E0: @ 0x084E85E0
 	@ analyzed canonical ROM range 0x084E85E0-0x084E879F
@@ -423,6 +429,9 @@ sAnalyzedData_084E85E0: @ 0x084E85E0
 	.byte 0xCB, 0xCC, 0xCC, 0xCC, 0xCB, 0xCC, 0xCC, 0xCC, 0xCB, 0xCC, 0xCC, 0xCC, 0xCB, 0xCC, 0xCC, 0xCC
 	.byte 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE
 	.byte 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE
+	@ pret/pokeemerald-jp direct xref for 0x084E87A0: text_window.s: stdpal_get
+	.globl gTextWindowData_084E87A0
+gTextWindowData_084E87A0:
 	.globl gUnknown_84E87A0
 gUnknown_84E87A0: @ 0x084E87A0
 	@ analyzed canonical ROM range 0x084E87A0-0x084E883F
@@ -438,6 +447,9 @@ sAnalyzedData_084E87A0: @ 0x084E87A0
 	.byte 0x46, 0x65, 0x14, 0x7B, 0x1F, 0x7C, 0x59, 0x6B, 0x33, 0x6F, 0xCC, 0x3D, 0xA8, 0x72, 0x90, 0x5A
 	.byte 0x2E, 0x53, 0xFF, 0x7F, 0x8C, 0x31, 0x5A, 0x67, 0x3C, 0x04, 0xFF, 0x3A, 0x64, 0x06, 0xD2, 0x4B
 	.byte 0x46, 0x65, 0x14, 0x7B, 0x87, 0x39, 0x10, 0x42, 0x94, 0x52, 0x18, 0x67, 0x9C, 0x77, 0x68, 0x35
+	@ pret/pokeemerald-jp direct xref for 0x084E8840: text_window.s: GetOverworldTextboxPalettePtr
+	.globl gTextWindowData_084E8840
+gTextWindowData_084E8840:
 	.globl gUnknown_84E8840
 gUnknown_84E8840: @ 0x084E8840
 	@ analyzed canonical ROM range 0x084E8840-0x084E885F
@@ -445,6 +457,9 @@ sAnalyzedData_084E8840: @ 0x084E8840
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x2E, 0x53, 0xFF, 0x7F, 0x8C, 0x31, 0x5A, 0x67, 0x3C, 0x04, 0xFF, 0x3A, 0x64, 0x06, 0xD2, 0x4B
 	.byte 0x46, 0x65, 0x14, 0x7B, 0xFF, 0x7F, 0xBC, 0x73, 0xFF, 0x7F, 0xE0, 0x4F, 0x20, 0x5F, 0xC9, 0x51
+	@ pret/pokeemerald-jp direct xref for 0x084E8860: text_window.s: GetWindowFrameTilesPal, LoadWindowGfx, sub_080985F4
+	.globl gTextWindowData_084E8860
+gTextWindowData_084E8860:
 	.globl gUnknown_84E8860
 gUnknown_84E8860: @ 0x084E8860
 	@ analyzed canonical ROM range 0x084E8860-0x084E88FF
@@ -493,6 +508,9 @@ sAnalyzedData_084E8860: @ 0x084E8860
 	.globl gUnknown_84E8900
 gUnknown_84E8900: @ 0x084E8900
 	.space 0x4, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x084E8904: scrcmd.s: ScrCmd_call_if, ScrCmd_callstd_if, ScrCmd_goto_if, ScrCmd_gotostd_if, ScrCmd_vcall_if (+1 more)
+	.globl gScrcmdData_084E8904
+gScrcmdData_084E8904:
 	.globl gUnknown_84E8904
 gUnknown_84E8904: @ 0x084E8904
 	@ analyzed canonical ROM range 0x084E8904-0x084E8917
@@ -500,6 +518,9 @@ sAnalyzedData_084E8904: @ 0x084E8904
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0001, 0x0000, 0x0001, 0x0000, 0x0101, 0x0001, 0x0100, 0x0101
 	.2byte 0x0100, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x084E8918: scrcmd.s: ScrCmd_bufferboxname, ScrCmd_bufferdecorationname, ScrCmd_bufferitemname, ScrCmd_bufferleadmonspeciesname, ScrCmd_buffermovename (+8 more)
+	.globl gScrcmdData_084E8918
+gScrcmdData_084E8918:
 	.globl gUnknown_84E8918
 gUnknown_84E8918: @ 0x084E8918
 	@ analyzed canonical ROM range 0x084E8918-0x084E8923
@@ -545,6 +566,9 @@ gUnknown_84E898C: @ 0x084E898C
 	.4byte EndTruckSequence
 	.4byte SecretBasePerStepCallback
 	.4byte CrackedFloorPerStepCallback
+	@ pret/pokeemerald-jp direct xref for 0x084E89AC: field_tasks.s: UpdateHalfSubmergedBridgeMetatiles
+	.globl gFieldTasksData_084E89AC
+gFieldTasksData_084E89AC:
 	.globl gUnknown_84E89AC
 gUnknown_84E89AC: @ 0x084E89AC
 	@ analyzed canonical ROM range 0x084E89AC-0x084E89CB
@@ -552,6 +576,9 @@ sAnalyzedData_084E89AC: @ 0x084E89AC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x0259, 0x0100, 0x0261, 0xFF00, 0x0259, 0x0000, 0x0261
 	.2byte 0x0000, 0x0252, 0x0001, 0x0253, 0x00FF, 0x0252, 0x0000, 0x0253
+	@ pret/pokeemerald-jp direct xref for 0x084E89CC: field_tasks.s: UpdateFullySubmergedBridgeMetatiles
+	.globl gFieldTasksData_084E89CC
+gFieldTasksData_084E89CC:
 	.globl gUnknown_84E89CC
 gUnknown_84E89CC: @ 0x084E89CC
 	@ analyzed canonical ROM range 0x084E89CC-0x084E89EB
@@ -559,6 +586,9 @@ sAnalyzedData_084E89CC: @ 0x084E89CC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x025A, 0x0100, 0x0262, 0xFF00, 0x025A, 0x0000, 0x0262
 	.2byte 0x0000, 0x0254, 0x0001, 0x0255, 0x00FF, 0x0254, 0x0000, 0x0255
+	@ pret/pokeemerald-jp direct xref for 0x084E89EC: field_tasks.s: UpdateFloatingBridgeMetatiles
+	.globl gFieldTasksData_084E89EC
+gFieldTasksData_084E89EC:
 	.globl gUnknown_84E89EC
 gUnknown_84E89EC: @ 0x084E89EC
 	@ analyzed canonical ROM range 0x084E89EC-0x084E8A0B
@@ -566,6 +596,9 @@ sAnalyzedData_084E89EC: @ 0x084E89EC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x0258, 0x0100, 0x0260, 0xFF00, 0x0258, 0x0000, 0x0260
 	.2byte 0x0000, 0x0250, 0x0001, 0x0251, 0x00FF, 0x0250, 0x0000, 0x0251
+	@ pret/pokeemerald-jp direct xref for 0x084E8A0C: field_tasks.s: CoordInIcePuzzleRegion, IsIcePuzzleCoordVisited, MarkIcePuzzleCoordVisited
+	.globl gFieldTasksData_084E8A0C
+gFieldTasksData_084E8A0C:
 	.globl gUnknown_84E8A0C
 gUnknown_84E8A0C: @ 0x084E8A0C
 	@ analyzed canonical ROM range 0x084E8A0C-0x084E8A3F
@@ -575,18 +608,27 @@ sAnalyzedData_084E8A0C: @ 0x084E8A0C
 	.byte 0x03, 0x40, 0x04, 0x40, 0x00, 0x00, 0x00, 0x00, 0x05, 0x40, 0x06, 0x40, 0x07, 0x40, 0x00, 0x00
 	.byte 0x00, 0x00, 0x08, 0x40, 0x09, 0x40, 0x0A, 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x084E8A40: field_tasks.s: SetMuddySlopeMetatile
+	.globl gFieldTasksData_084E8A40
+gFieldTasksData_084E8A40:
 	.globl gUnknown_84E8A40
 gUnknown_84E8A40: @ 0x084E8A40
 	@ analyzed canonical ROM range 0x084E8A40-0x084E8A47
 sAnalyzedData_084E8A40: @ 0x084E8A40
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x00E8, 0x00EB, 0x00EA, 0x00E9
+	@ pret/pokeemerald-jp direct xref for 0x084E8A48: reset_rtc_screen.s: sub_0809E920
+	.globl gResetRtcScreenData_084E8A48
+gResetRtcScreenData_084E8A48:
 	.globl gUnknown_84E8A48
 gUnknown_84E8A48: @ 0x084E8A48
 	@ analyzed canonical ROM range 0x084E8A48-0x084E8A4B
 sAnalyzedData_084E8A48: @ 0x084E8A48
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF0, 0x01, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x084E8A4C: reset_rtc_screen.s: sub_0809E920
+	.globl gResetRtcScreenData_084E8A4C
+gResetRtcScreenData_084E8A4C:
 	.globl gUnknown_84E8A4C
 gUnknown_84E8A4C: @ 0x084E8A4C
 	@ analyzed canonical ROM range 0x084E8A4C-0x084E8A63
@@ -594,6 +636,9 @@ sAnalyzedData_084E8A4C: @ 0x084E8A4C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x1301, 0x0F09, 0x0155, 0x0400, 0x160F, 0x0F04, 0x00FD
 	.2byte 0x00FF, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x084E8A64: reset_rtc_screen.s: Task_ResetRtc_0
+	.globl gResetRtcScreenData_084E8A64
+gResetRtcScreenData_084E8A64:
 	.globl gUnknown_84E8A64
 gUnknown_84E8A64: @ 0x084E8A64
 	@ analyzed canonical ROM range 0x084E8A64-0x084E8A6B
@@ -613,6 +658,9 @@ gText_Rom_4E8A6C: @ 0x084E8A6C
 	.if (. - gText_Rom_4E8A6C) < 0x3
 	.space 0x3 - (. - gText_Rom_4E8A6C)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x084E8A6F: reset_rtc_screen.s: PrintTime
+	.globl gResetRtcScreenData_084E8A6F
+gResetRtcScreenData_084E8A6F:
 	.globl gUnknown_84E8A6F
 gUnknown_84E8A6F: @ 0x084E8A6F
 	@ analyzed canonical ROM range 0x084E8A6F-0x084E8A70

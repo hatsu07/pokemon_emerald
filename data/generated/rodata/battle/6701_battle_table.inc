@@ -300,6 +300,9 @@ gUnknown_85DC95C: @ 0x085DC95C
 	.4byte gText_Rom_26CF24
 	.4byte gText_Rom_26CF43
 	.4byte gText_Rom_26CF63
+	@ pret/pokeemerald-jp direct xref for 0x085DC99C: apprentice.s: sub_0819FE70
+	.globl gApprenticeData_085DC99C
+gApprenticeData_085DC99C:
 	.globl gUnknown_85DC99C
 gUnknown_85DC99C: @ 0x085DC99C
 	@ analyzed canonical ROM range 0x085DC99C-0x085DCAFE
@@ -328,6 +331,9 @@ sAnalyzedData_085DC99C: @ 0x085DC99C
 	.byte 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x00, 0x01, 0x00, 0x01, 0x01
 	.byte 0x01, 0x01, 0x01, 0x01, 0x01, 0x00, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x00, 0x01
 	.byte 0x01, 0x01, 0x01
+	@ pret/pokeemerald-jp direct xref for 0x085DCAFF: apprentice.s: sub_0819FC3C
+	.globl gApprenticeData_085DCAFF
+gApprenticeData_085DCAFF:
 	.globl gUnknown_85DCAFF
 gUnknown_85DCAFF: @ 0x085DCAFF
 	@ analyzed canonical ROM range 0x085DCAFF-0x085DCB0B
@@ -362,12 +368,18 @@ gUnknown_85DCB0C: @ 0x085DCB0C
 	.4byte Script_SetPlayerApprenticeTrainerGfxId
 	.4byte sub_081A1550
 	.4byte sub_081A127C
+	@ pret/pokeemerald-jp direct xref for 0x085DCB74: apprentice.s: sub_0819FAA0
+	.globl gApprenticeData_085DCB74
+gApprenticeData_085DCB74:
 	.globl gUnknown_85DCB74
 gUnknown_85DCB74: @ 0x085DCB74
 	@ analyzed canonical ROM range 0x085DCB74-0x085DCB7B
 sAnalyzedData_085DCB74: @ 0x085DCB74
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x0302, 0x0706, 0x0908
+	@ pret/pokeemerald-jp direct xref for 0x085DCB7C: frontier_util.s: GetFronterBrainSymbol, sub_081A33A0
+	.globl gFrontierUtilData_085DCB7C
+gFrontierUtilData_085DCB7C:
 	.globl gUnknown_85DCB7C
 gUnknown_85DCB7C: @ 0x085DCB7C
 	@ analyzed canonical ROM range 0x085DCB7C-0x085DCB97
@@ -375,12 +387,18 @@ sAnalyzedData_085DCB7C: @ 0x085DCB7C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x23, 0x46, 0x23, 0x01, 0x04, 0x09, 0x05, 0x00, 0x15, 0x2A, 0x15, 0x01, 0x1C, 0x38, 0x1C, 0x01
 	.byte 0x15, 0x2A, 0x15, 0x01, 0x1C, 0x8C, 0x38, 0x01, 0x15, 0x46, 0x23, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085DCB98: frontier_util.s: CreateFrontierBrainPokemon, GetFrontierBrainMonEvs, GetFrontierBrainMonMove, GetFrontierBrainMonNature, GetFrontierBrainMonSpecies
+	.globl gFrontierUtilData_085DCB98
+gFrontierUtilData_085DCB98:
 	.globl gUnknown_85DCB98
 gUnknown_85DCB98: @ 0x085DCB98
 	@ analyzed canonical ROM range 0x085DCB98-0x085DCBA3
 sAnalyzedData_085DCB98: @ 0x085DCB98
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0041, 0x00B3, 0x0F18, 0x006A, 0x9898, 0x0064
+	@ pret/pokeemerald-jp direct xref for 0x085DCBA4: frontier_util.s: CreateFrontierBrainPokemon
+	.globl gFrontierUtilData_085DCBA4
+gFrontierUtilData_085DCBA4:
 	.globl gUnknown_85DCBA4
 gUnknown_85DCBA4: @ 0x085DCBA4
 	@ analyzed canonical ROM range 0x085DCBA4-0x085DCEDF
@@ -438,6 +456,9 @@ sAnalyzedData_085DCBA4: @ 0x085DCBA4
 	.2byte 0x014C, 0x0073, 0x0091, 0x008D, 0x101F, 0x0006, 0xFCFC, 0x0000
 	.2byte 0x0057, 0x00C5, 0x0041, 0x0071, 0x0092, 0x00B3, 0x101F, 0x0006
 	.2byte 0xFCFC, 0x0000, 0x007E, 0x003F, 0x014C, 0x00DB
+	@ pret/pokeemerald-jp direct xref for 0x085DCEE0: frontier_util.s: sub_081A38FC
+	.globl gFrontierUtilData_085DCEE0
+gFrontierUtilData_085DCEE0:
 	.globl gUnknown_85DCEE0
 gUnknown_85DCEE0: @ 0x085DCEE0
 	@ analyzed canonical ROM range 0x085DCEE0-0x085DD227
@@ -496,6 +517,9 @@ sAnalyzedData_085DCEE0: @ 0x085DCEE0
 	.2byte 0x0F0F, 0x0000, 0x000F, 0x0000, 0x000F, 0x0000, 0x0F0F, 0x0F0F
 	.2byte 0x0F0F, 0x0000, 0x0F0F, 0x0000, 0x000F, 0x0000, 0x0F0F, 0x0000
 	.2byte 0x000F, 0x0000, 0x000F, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085DD228: frontier_util.s: sub_081A16D8, sub_081A1810
+	.globl gFrontierUtilData_085DD228
+gFrontierUtilData_085DD228:
 	.globl gUnknown_85DD228
 gUnknown_85DD228: @ 0x085DD228
 	@ analyzed canonical ROM range 0x085DD228-0x085DD243
@@ -528,54 +552,81 @@ gUnknown_85DD244: @ 0x085DD244
 	.4byte GetFrontierBrainTrainerClass
 	.4byte sub_081A4108
 	.4byte GetFrontierBrainTrainerPicIndex
+	@ pret/pokeemerald-jp direct xref for 0x085DD2A0: frontier_util.s: ShowTowerResultsWindow
+	.globl gFrontierUtilData_085DD2A0
+gFrontierUtilData_085DD2A0:
 	.globl gUnknown_85DD2A0
 gUnknown_85DD2A0: @ 0x085DD2A0
 	@ analyzed canonical ROM range 0x085DD2A0-0x085DD2A7
 sAnalyzedData_085DD2A0: @ 0x085DD2A0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x1C01, 0x0F12, 0x0001
+	@ pret/pokeemerald-jp direct xref for 0x085DD2A8: frontier_util.s: ShowDomeResultsWindow
+	.globl gFrontierUtilData_085DD2A8
+gFrontierUtilData_085DD2A8:
 	.globl gUnknown_85DD2A8
 gUnknown_85DD2A8: @ 0x085DD2A8
 	@ analyzed canonical ROM range 0x085DD2A8-0x085DD2AF
 sAnalyzedData_085DD2A8: @ 0x085DD2A8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x1C01, 0x0F12, 0x0001
+	@ pret/pokeemerald-jp direct xref for 0x085DD2B0: frontier_util.s: ShowPalaceResultsWindow
+	.globl gFrontierUtilData_085DD2B0
+gFrontierUtilData_085DD2B0:
 	.globl gUnknown_85DD2B0
 gUnknown_85DD2B0: @ 0x085DD2B0
 	@ analyzed canonical ROM range 0x085DD2B0-0x085DD2B7
 sAnalyzedData_085DD2B0: @ 0x085DD2B0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x1C01, 0x0F12, 0x0001
+	@ pret/pokeemerald-jp direct xref for 0x085DD2B8: frontier_util.s: ShowPikeResultsWindow
+	.globl gFrontierUtilData_085DD2B8
+gFrontierUtilData_085DD2B8:
 	.globl gUnknown_85DD2B8
 gUnknown_85DD2B8: @ 0x085DD2B8
 	@ analyzed canonical ROM range 0x085DD2B8-0x085DD2BF
 sAnalyzedData_085DD2B8: @ 0x085DD2B8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x1C01, 0x0F12, 0x0001
+	@ pret/pokeemerald-jp direct xref for 0x085DD2C0: frontier_util.s: ShowArenaResultsWindow
+	.globl gFrontierUtilData_085DD2C0
+gFrontierUtilData_085DD2C0:
 	.globl gUnknown_85DD2C0
 gUnknown_85DD2C0: @ 0x085DD2C0
 	@ analyzed canonical ROM range 0x085DD2C0-0x085DD2C7
 sAnalyzedData_085DD2C0: @ 0x085DD2C0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x1C01, 0x0F12, 0x0001
+	@ pret/pokeemerald-jp direct xref for 0x085DD2C8: frontier_util.s: ShowFactoryResultsWindow
+	.globl gFrontierUtilData_085DD2C8
+gFrontierUtilData_085DD2C8:
 	.globl gUnknown_85DD2C8
 gUnknown_85DD2C8: @ 0x085DD2C8
 	@ analyzed canonical ROM range 0x085DD2C8-0x085DD2CF
 sAnalyzedData_085DD2C8: @ 0x085DD2C8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x1C01, 0x0F12, 0x0001
+	@ pret/pokeemerald-jp direct xref for 0x085DD2D0: frontier_util.s: ShowPyramidResultsWindow
+	.globl gFrontierUtilData_085DD2D0
+gFrontierUtilData_085DD2D0:
 	.globl gUnknown_85DD2D0
 gUnknown_85DD2D0: @ 0x085DD2D0
 	@ analyzed canonical ROM range 0x085DD2D0-0x085DD2D7
 sAnalyzedData_085DD2D0: @ 0x085DD2D0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x1C01, 0x0F12, 0x0001
+	@ pret/pokeemerald-jp direct xref for 0x085DD2D8: frontier_util.s: PrintHallRecords
+	.globl gFrontierUtilData_085DD2D8
+gFrontierUtilData_085DD2D8:
 	.globl gUnknown_85DD2D8
 gUnknown_85DD2D8: @ 0x085DD2D8
 	@ analyzed canonical ROM range 0x085DD2D8-0x085DD2DF
 sAnalyzedData_085DD2D8: @ 0x085DD2D8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x1B02, 0x0F10, 0x0001
+	@ pret/pokeemerald-jp direct xref for 0x085DD2E0: frontier_util.s: ShowRankingHallRecordsWindow
+	.globl gFrontierUtilData_085DD2E0
+gFrontierUtilData_085DD2E0:
 	.globl gUnknown_85DD2E0
 gUnknown_85DD2E0: @ 0x085DD2E0
 	@ analyzed canonical ROM range 0x085DD2E0-0x085DD2E7

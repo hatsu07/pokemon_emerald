@@ -19,6 +19,9 @@ gText_Rom_5CC9FA: @ 0x085CC9FA
 	.endif
 	.globl gUnknown_85CC9FC
 	.set gUnknown_85CC9FC, gText_Rom_5CC9FA + 0x2
+	@ pret/pokeemerald-jp direct xref for 0x085CCA04: berry_crush.s: sub_08021ABC
+	.globl gBerryCrushData_085CCA04
+gBerryCrushData_085CCA04:
 	.globl gUnknown_85CCA04
 gUnknown_85CCA04: @ 0x085CCA04
 	@ analyzed canonical ROM range 0x085CCA04-0x085CCA06

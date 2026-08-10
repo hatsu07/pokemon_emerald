@@ -123,7 +123,7 @@ _080355B2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080355B8: .4byte 0x08D855E4
+_080355B8: .4byte gUnknown_8D855E4
 _080355BC: .4byte 0x02022C90
 _080355C0: .4byte 0x020373B4
 _080355C4: .4byte 0x020378A0
@@ -149,11 +149,11 @@ DrawMainBattleBackground: @ 0x080355C8
 	.align 2, 0
 _080355EC: .4byte 0x02022C90
 _080355F0: .4byte 0x023F0902
-_080355F4: .4byte 0x08D7C4E4
+_080355F4: .4byte gUnknown_8D7C4E4
 _080355F8: .4byte 0x06008000
-_080355FC: .4byte 0x08D7CACC
+_080355FC: .4byte gBattleBgData_08D7CACC
 _08035600: .4byte 0x0600D000
-_08035604: .4byte 0x08D7CA90
+_08035604: .4byte gUnknown_8D7CA90
 _08035608:
 	movs r0, #0x80
 	lsls r0, r0, #0x15
@@ -169,11 +169,11 @@ _08035608:
 	ldr r0, _08035638
 	b _080358A6
 	.align 2, 0
-_08035628: .4byte 0x08D7BBB8
+_08035628: .4byte gBattleBgData_08D7BBB8
 _0803562C: .4byte 0x06008000
-_08035630: .4byte 0x08D7C1F8
+_08035630: .4byte gBattleBgData_08D7C1F8
 _08035634: .4byte 0x0600D000
-_08035638: .4byte 0x08D7DFD4
+_08035638: .4byte gBattleBgData_08D7DFD4
 _0803563C:
 	movs r0, #0x80
 	lsls r0, r0, #0x16
@@ -189,11 +189,11 @@ _0803563C:
 	ldr r0, _0803566C
 	b _080358A6
 	.align 2, 0
-_0803565C: .4byte 0x08D7A1AC
+_0803565C: .4byte gBattleBgData_08D7A1AC
 _08035660: .4byte 0x06008000
-_08035664: .4byte 0x08D7A7C4
+_08035664: .4byte gBattleBgData_08D7A7C4
 _08035668: .4byte 0x0600D000
-_0803566C: .4byte 0x08D7DF98
+_0803566C: .4byte gBattleBgData_08D7DF98
 _08035670:
 	movs r0, #0x80
 	lsls r0, r0, #0x17
@@ -209,11 +209,11 @@ _08035670:
 	ldr r0, _080356A0
 	b _080358A6
 	.align 2, 0
-_08035690: .4byte 0x08D7D634
+_08035690: .4byte gBattleBgData_08D7D634
 _08035694: .4byte 0x06008000
-_08035698: .4byte 0x08D7DCA8
+_08035698: .4byte gBattleBgData_08D7DCA8
 _0803569C: .4byte 0x0600D000
-_080356A0: .4byte 0x08D7E2D8
+_080356A0: .4byte gBattleBgData_08D7E2D8
 _080356A4:
 	movs r0, #8
 	ands r1, r0
@@ -238,11 +238,11 @@ _080356A4:
 	.align 2, 0
 _080356D0: .4byte 0x082E383C
 _080356D4: .4byte 0x0203886A
-_080356D8: .4byte 0x08D7C4E4
+_080356D8: .4byte gUnknown_8D7C4E4
 _080356DC: .4byte 0x06008000
-_080356E0: .4byte 0x08D7CACC
+_080356E0: .4byte gBattleBgData_08D7CACC
 _080356E4: .4byte 0x0600D000
-_080356E8: .4byte 0x08D7E068
+_080356E8: .4byte gBattleBgData_08D7E068
 _080356EC:
 	cmp r0, #0x26
 	bne _08035718
@@ -255,11 +255,11 @@ _080356EC:
 	ldr r0, _08035714
 	b _080358A6
 	.align 2, 0
-_08035704: .4byte 0x08D7CD7C
+_08035704: .4byte gBattleBgData_08D7CD7C
 _08035708: .4byte 0x06008000
-_0803570C: .4byte 0x08D7D384
+_0803570C: .4byte gBattleBgData_08D7D384
 _08035710: .4byte 0x0600D000
-_08035714: .4byte 0x08D7E29C
+_08035714: .4byte gBattleBgData_08D7E29C
 _08035718:
 	bl GetCurrentMapBattleScene
 	lsls r0, r0, #0x18
@@ -326,11 +326,11 @@ _080357A4:
 	ldr r0, _080357C8
 	b _080358A6
 	.align 2, 0
-_080357B8: .4byte 0x08D7C4E4
+_080357B8: .4byte gUnknown_8D7C4E4
 _080357BC: .4byte 0x06008000
-_080357C0: .4byte 0x08D7CACC
+_080357C0: .4byte gBattleBgData_08D7CACC
 _080357C4: .4byte 0x0600D000
-_080357C8: .4byte 0x08D7E02C
+_080357C8: .4byte gBattleBgData_08D7E02C
 _080357CC:
 	ldr r0, _080357E0
 	ldr r1, _080357E4
@@ -341,11 +341,11 @@ _080357CC:
 	ldr r0, _080357F0
 	b _080358A6
 	.align 2, 0
-_080357E0: .4byte 0x08D7CD7C
+_080357E0: .4byte gBattleBgData_08D7CD7C
 _080357E4: .4byte 0x06008000
-_080357E8: .4byte 0x08D7D384
+_080357E8: .4byte gBattleBgData_08D7D384
 _080357EC: .4byte 0x0600D000
-_080357F0: .4byte 0x08D7E104
+_080357F0: .4byte gBattleBgData_08D7E104
 _080357F4:
 	ldr r0, _08035808
 	ldr r1, _0803580C
@@ -356,11 +356,11 @@ _080357F4:
 	ldr r0, _08035818
 	b _080358A6
 	.align 2, 0
-_08035808: .4byte 0x08D7CD7C
+_08035808: .4byte gBattleBgData_08D7CD7C
 _0803580C: .4byte 0x06008000
-_08035810: .4byte 0x08D7D384
+_08035810: .4byte gBattleBgData_08D7D384
 _08035814: .4byte 0x0600D000
-_08035818: .4byte 0x08D7E0A4
+_08035818: .4byte gBattleBgData_08D7E0A4
 _0803581C:
 	ldr r0, _08035830
 	ldr r1, _08035834
@@ -371,11 +371,11 @@ _0803581C:
 	ldr r0, _08035840
 	b _080358A6
 	.align 2, 0
-_08035830: .4byte 0x08D7CD7C
+_08035830: .4byte gBattleBgData_08D7CD7C
 _08035834: .4byte 0x06008000
-_08035838: .4byte 0x08D7D384
+_08035838: .4byte gBattleBgData_08D7D384
 _0803583C: .4byte 0x0600D000
-_08035840: .4byte 0x08D7E170
+_08035840: .4byte gBattleBgData_08D7E170
 _08035844:
 	ldr r0, _08035858
 	ldr r1, _0803585C
@@ -386,11 +386,11 @@ _08035844:
 	ldr r0, _08035868
 	b _080358A6
 	.align 2, 0
-_08035858: .4byte 0x08D7CD7C
+_08035858: .4byte gBattleBgData_08D7CD7C
 _0803585C: .4byte 0x06008000
-_08035860: .4byte 0x08D7D384
+_08035860: .4byte gBattleBgData_08D7D384
 _08035864: .4byte 0x0600D000
-_08035868: .4byte 0x08D7E1C0
+_08035868: .4byte gBattleBgData_08D7E1C0
 _0803586C:
 	ldr r0, _08035880
 	ldr r1, _08035884
@@ -401,11 +401,11 @@ _0803586C:
 	ldr r0, _08035890
 	b _080358A6
 	.align 2, 0
-_08035880: .4byte 0x08D7CD7C
+_08035880: .4byte gBattleBgData_08D7CD7C
 _08035884: .4byte 0x06008000
-_08035888: .4byte 0x08D7D384
+_08035888: .4byte gBattleBgData_08D7D384
 _0803588C: .4byte 0x0600D000
-_08035890: .4byte 0x08D7E208
+_08035890: .4byte gBattleBgData_08D7E208
 _08035894:
 	ldr r0, _080358B0
 	ldr r1, _080358B4
@@ -420,11 +420,11 @@ _080358A6:
 	bl LoadCompressedPalette
 	b _080358DE
 	.align 2, 0
-_080358B0: .4byte 0x08D7CD7C
+_080358B0: .4byte gBattleBgData_08D7CD7C
 _080358B4: .4byte 0x06008000
-_080358B8: .4byte 0x08D7D384
+_080358B8: .4byte gBattleBgData_08D7D384
 _080358BC: .4byte 0x0600D000
-_080358C0: .4byte 0x08D7E24C
+_080358C0: .4byte gBattleBgData_08D7E24C
 _080358C4:
 	ldr r0, _080358E4
 	ldr r1, _080358E8
@@ -441,11 +441,11 @@ _080358DE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080358E4: .4byte 0x08D7C4E4
+_080358E4: .4byte gUnknown_8D7C4E4
 _080358E8: .4byte 0x06008000
-_080358EC: .4byte 0x08D7CACC
+_080358EC: .4byte gBattleBgData_08D7CACC
 _080358F0: .4byte 0x0600D000
-_080358F4: .4byte 0x08D7CA90
+_080358F4: .4byte gUnknown_8D7CA90
 	thumb_func_end DrawMainBattleBackground
 
 	thumb_func_start LoadBattleTextboxAndBackground
@@ -683,7 +683,7 @@ sub_08035AA0: @ 0x08035AA0
 	b _08035BBC
 	.align 2, 0
 _08035AB4: .4byte 0x02023FDE
-_08035AB8: .4byte 0x085ABC8E
+_08035AB8: .4byte gBattleBgData_085ABC8E
 _08035ABC:
 	ldr r0, _08035AEC
 	ldr r0, [r0]
@@ -770,8 +770,8 @@ _08035B50:
 	.align 2, 0
 _08035B64: .4byte 0x020226A0
 _08035B68: .4byte 0x02024118
-_08035B6C: .4byte 0x085ABC82
-_08035B70: .4byte 0x085ABC88
+_08035B6C: .4byte gBattleBgData_085ABC82
+_08035B70: .4byte gBattleBgData_085ABC88
 _08035B74:
 	ldr r2, _08035B9C
 	ldr r0, _08035BA0
@@ -795,8 +795,8 @@ _08035B8A:
 	.align 2, 0
 _08035B9C: .4byte 0x020226A0
 _08035BA0: .4byte 0x02024118
-_08035BA4: .4byte 0x085ABC82
-_08035BA8: .4byte 0x085ABC88
+_08035BA4: .4byte gBattleBgData_085ABC82
+_08035BA8: .4byte gBattleBgData_085ABC88
 _08035BAC:
 	ldr r0, _08035BC0
 	movs r1, #0x17
@@ -808,8 +808,8 @@ _08035BBC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08035BC0: .4byte 0x085ABC82
-_08035BC4: .4byte 0x085ABC88
+_08035BC0: .4byte gBattleBgData_085ABC82
+_08035BC4: .4byte gBattleBgData_085ABC88
 	thumb_func_end sub_08035AA0
 
 	thumb_func_start sub_08035BC8
@@ -1356,13 +1356,13 @@ DrawBattleEntryBackground: @ 0x08035FB8
 	b _0803620C
 	.align 2, 0
 _0803603C: .4byte 0x02022C90
-_08036040: .4byte 0x08D77994
+_08036040: .4byte gBattleBgData_08D77994
 _08036044: .4byte 0x06004000
-_08036048: .4byte 0x08D77BB0
+_08036048: .4byte gBattleBgData_08D77BB0
 _0803604C: .4byte 0x06010000
-_08036050: .4byte 0x08D77B88
+_08036050: .4byte gBattleBgData_08D77B88
 _08036054: .4byte 0x00005C04
-_08036058: .4byte 0x08D77A7C
+_08036058: .4byte gBattleBgData_08D77A7C
 _0803605C: .4byte 0x02022ACE
 _08036060: .4byte 0x0000FF5C
 _08036064: .4byte 0x02022AD2
@@ -1392,9 +1392,9 @@ _08036088:
 _08036094: .4byte 0x023F0902
 _08036098: .4byte 0x0203886E
 _0803609C: .4byte 0x00000C03
-_080360A0: .4byte 0x08D82178
+_080360A0: .4byte gBattleBgData_08D82178
 _080360A4: .4byte 0x06004000
-_080360A8: .4byte 0x08D82588
+_080360A8: .4byte gBattleBgData_08D82588
 _080360AC:
 	movs r0, #1
 	movs r1, #1
@@ -1420,8 +1420,8 @@ _080360AC:
 	bl CopyBgTilemapBufferToVram
 	b _0803620C
 	.align 2, 0
-_080360E8: .4byte 0x08D8578C
-_080360EC: .4byte 0x08D85A00
+_080360E8: .4byte gBattleBgData_08D8578C
+_080360EC: .4byte gBattleBgData_08D85A00
 _080360F0:
 	movs r0, #0x80
 	lsls r0, r0, #0x15
@@ -1434,9 +1434,9 @@ _080360F0:
 	ldr r0, _08036110
 	b _080361E2
 	.align 2, 0
-_08036108: .4byte 0x08D816B4
+_08036108: .4byte gBattleBgData_08D816B4
 _0803610C: .4byte 0x06004000
-_08036110: .4byte 0x08D81ED0
+_08036110: .4byte gBattleBgData_08D81ED0
 _08036114:
 	movs r0, #0x80
 	lsls r0, r0, #0x16
@@ -1449,9 +1449,9 @@ _08036114:
 	ldr r0, _08036134
 	b _080361E2
 	.align 2, 0
-_0803612C: .4byte 0x08D7FA9C
+_0803612C: .4byte gBattleBgData_08D7FA9C
 _08036130: .4byte 0x06004000
-_08036134: .4byte 0x08D7FF68
+_08036134: .4byte gBattleBgData_08D7FF68
 _08036138:
 	movs r0, #0x80
 	lsls r0, r0, #0x17
@@ -1464,9 +1464,9 @@ _08036138:
 	ldr r0, _08036158
 	b _080361E2
 	.align 2, 0
-_08036150: .4byte 0x08D826AC
+_08036150: .4byte gBattleBgData_08D826AC
 _08036154: .4byte 0x06004000
-_08036158: .4byte 0x08D82D14
+_08036158: .4byte gBattleBgData_08D82D14
 _0803615C:
 	movs r0, #8
 	ands r1, r0
@@ -1488,9 +1488,9 @@ _0803615C:
 	.align 2, 0
 _08036180: .4byte 0x082E383C
 _08036184: .4byte 0x0203886A
-_08036188: .4byte 0x08D82178
+_08036188: .4byte gBattleBgData_08D82178
 _0803618C: .4byte 0x06004000
-_08036190: .4byte 0x08D82588
+_08036190: .4byte gBattleBgData_08D82588
 _08036194:
 	cmp r0, #0x26
 	bne _080361B0
@@ -1500,9 +1500,9 @@ _08036194:
 	ldr r0, _080361AC
 	b _080361E2
 	.align 2, 0
-_080361A4: .4byte 0x08D82178
+_080361A4: .4byte gBattleBgData_08D82178
 _080361A8: .4byte 0x06004000
-_080361AC: .4byte 0x08D82588
+_080361AC: .4byte gBattleBgData_08D82588
 _080361B0:
 	bl GetCurrentMapBattleScene
 	lsls r0, r0, #0x18
@@ -1548,9 +1548,9 @@ _0803620C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08036214: .4byte 0x08D82178
+_08036214: .4byte gBattleBgData_08D82178
 _08036218: .4byte 0x06004000
-_0803621C: .4byte 0x08D82588
+_0803621C: .4byte gBattleBgData_08D82588
 _08036220: .4byte 0x0600E000
 	thumb_func_end DrawBattleEntryBackground
 
@@ -1622,7 +1622,7 @@ _08036294:
 	.align 2, 0
 _080362B0: .4byte 0x02022C90
 _080362B4: .4byte 0x023F0902
-_080362B8: .4byte 0x08D7BBB8
+_080362B8: .4byte gBattleBgData_08D7BBB8
 _080362BC:
 	movs r0, #8
 	ands r1, r0
@@ -1643,7 +1643,7 @@ _080362BC:
 	.align 2, 0
 _080362DC: .4byte 0x082E383C
 _080362E0: .4byte 0x0203886A
-_080362E4: .4byte 0x08D7CD7C
+_080362E4: .4byte gBattleBgData_08D7CD7C
 _080362E8:
 	bl GetCurrentMapBattleScene
 	lsls r0, r0, #0x18
@@ -1684,32 +1684,32 @@ _08036344:
 	ldr r0, _08036348
 	b _08036376
 	.align 2, 0
-_08036348: .4byte 0x08D7CD7C
+_08036348: .4byte gBattleBgData_08D7CD7C
 _0803634C:
 	ldr r0, _08036350
 	b _08036376
 	.align 2, 0
-_08036350: .4byte 0x08D7CD7C
+_08036350: .4byte gBattleBgData_08D7CD7C
 _08036354:
 	ldr r0, _08036358
 	b _08036376
 	.align 2, 0
-_08036358: .4byte 0x08D7CD7C
+_08036358: .4byte gBattleBgData_08D7CD7C
 _0803635C:
 	ldr r0, _08036360
 	b _08036376
 	.align 2, 0
-_08036360: .4byte 0x08D7CD7C
+_08036360: .4byte gBattleBgData_08D7CD7C
 _08036364:
 	ldr r0, _08036368
 	b _08036376
 	.align 2, 0
-_08036368: .4byte 0x08D7CD7C
+_08036368: .4byte gBattleBgData_08D7CD7C
 _0803636C:
 	ldr r0, _08036370
 	b _08036376
 	.align 2, 0
-_08036370: .4byte 0x08D7CD7C
+_08036370: .4byte gBattleBgData_08D7CD7C
 _08036374:
 	ldr r0, _08036380
 _08036376:
@@ -1717,7 +1717,7 @@ _08036376:
 	bl LZDecompressWram
 	b _080365AC
 	.align 2, 0
-_08036380: .4byte 0x08D7C4E4
+_08036380: .4byte gUnknown_8D7C4E4
 _08036384: .4byte 0x06008000
 _08036388:
 	ldr r0, _080363AC
@@ -1743,12 +1743,12 @@ _08036396:
 _080363AC: .4byte 0x02022C90
 _080363B0: .4byte 0x023F0902
 _080363B4: .4byte gGameVersion
-_080363B8: .4byte 0x08D7C1F8
+_080363B8: .4byte gBattleBgData_08D7C1F8
 _080363BC:
 	ldr r0, _080363C0
 	b _0803647E
 	.align 2, 0
-_080363C0: .4byte 0x08D7A7C4
+_080363C0: .4byte gBattleBgData_08D7A7C4
 _080363C4:
 	movs r0, #8
 	ands r1, r0
@@ -1769,7 +1769,7 @@ _080363C4:
 	.align 2, 0
 _080363E4: .4byte 0x082E383C
 _080363E8: .4byte 0x0203886A
-_080363EC: .4byte 0x08D7D384
+_080363EC: .4byte gBattleBgData_08D7D384
 _080363F0:
 	bl GetCurrentMapBattleScene
 	lsls r0, r0, #0x18
@@ -1811,32 +1811,32 @@ _0803644C:
 	ldr r0, _08036450
 	b _0803647E
 	.align 2, 0
-_08036450: .4byte 0x08D7D384
+_08036450: .4byte gBattleBgData_08D7D384
 _08036454:
 	ldr r0, _08036458
 	b _0803647E
 	.align 2, 0
-_08036458: .4byte 0x08D7D384
+_08036458: .4byte gBattleBgData_08D7D384
 _0803645C:
 	ldr r0, _08036460
 	b _0803647E
 	.align 2, 0
-_08036460: .4byte 0x08D7D384
+_08036460: .4byte gBattleBgData_08D7D384
 _08036464:
 	ldr r0, _08036468
 	b _0803647E
 	.align 2, 0
-_08036468: .4byte 0x08D7D384
+_08036468: .4byte gBattleBgData_08D7D384
 _0803646C:
 	ldr r0, _08036470
 	b _0803647E
 	.align 2, 0
-_08036470: .4byte 0x08D7D384
+_08036470: .4byte gBattleBgData_08D7D384
 _08036474:
 	ldr r0, _08036478
 	b _0803647E
 	.align 2, 0
-_08036478: .4byte 0x08D7D384
+_08036478: .4byte gBattleBgData_08D7D384
 _0803647C:
 	ldr r0, _08036488
 _0803647E:
@@ -1844,7 +1844,7 @@ _0803647E:
 	bl LZDecompressWram
 	b _080365AC
 	.align 2, 0
-_08036488: .4byte 0x08D7CACC
+_08036488: .4byte gBattleBgData_08D7CACC
 _0803648C: .4byte 0x0600D000
 _08036490:
 	ldr r0, _080364B4
@@ -1870,12 +1870,12 @@ _0803649E:
 _080364B4: .4byte 0x02022C90
 _080364B8: .4byte 0x023F0902
 _080364BC: .4byte gGameVersion
-_080364C0: .4byte 0x08D7DFD4
+_080364C0: .4byte gBattleBgData_08D7DFD4
 _080364C4:
 	ldr r0, _080364C8
 	b _08036596
 	.align 2, 0
-_080364C8: .4byte 0x08D7DF98
+_080364C8: .4byte gBattleBgData_08D7DF98
 _080364CC:
 	movs r0, #8
 	ands r1, r0
@@ -1894,14 +1894,14 @@ _080364CC:
 	.align 2, 0
 _080364E8: .4byte 0x082E383C
 _080364EC: .4byte 0x0203886A
-_080364F0: .4byte 0x08D7E068
+_080364F0: .4byte gBattleBgData_08D7E068
 _080364F4:
 	cmp r0, #0x26
 	bne _08036500
 	ldr r0, _080364FC
 	b _08036596
 	.align 2, 0
-_080364FC: .4byte 0x08D7E29C
+_080364FC: .4byte gBattleBgData_08D7E29C
 _08036500:
 	bl GetCurrentMapBattleScene
 	lsls r0, r0, #0x18
@@ -1943,37 +1943,37 @@ _0803655C:
 	ldr r0, _08036560
 	b _08036596
 	.align 2, 0
-_08036560: .4byte 0x08D7E02C
+_08036560: .4byte gBattleBgData_08D7E02C
 _08036564:
 	ldr r0, _08036568
 	b _08036596
 	.align 2, 0
-_08036568: .4byte 0x08D7E104
+_08036568: .4byte gBattleBgData_08D7E104
 _0803656C:
 	ldr r0, _08036570
 	b _08036596
 	.align 2, 0
-_08036570: .4byte 0x08D7E0A4
+_08036570: .4byte gBattleBgData_08D7E0A4
 _08036574:
 	ldr r0, _08036578
 	b _08036596
 	.align 2, 0
-_08036578: .4byte 0x08D7E170
+_08036578: .4byte gBattleBgData_08D7E170
 _0803657C:
 	ldr r0, _08036580
 	b _08036596
 	.align 2, 0
-_08036580: .4byte 0x08D7E1C0
+_08036580: .4byte gBattleBgData_08D7E1C0
 _08036584:
 	ldr r0, _08036588
 	b _08036596
 	.align 2, 0
-_08036588: .4byte 0x08D7E208
+_08036588: .4byte gBattleBgData_08D7E208
 _0803658C:
 	ldr r0, _08036590
 	b _08036596
 	.align 2, 0
-_08036590: .4byte 0x08D7E24C
+_08036590: .4byte gBattleBgData_08D7E24C
 _08036594:
 	ldr r0, _080365A0
 _08036596:
@@ -1982,7 +1982,7 @@ _08036596:
 	bl LoadCompressedPalette
 	b _080365AC
 	.align 2, 0
-_080365A0: .4byte 0x08D7CA90
+_080365A0: .4byte gUnknown_8D7CA90
 _080365A4:
 	bl LoadBattleMenuWindowGfx
 	b _080365AC

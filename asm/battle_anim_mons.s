@@ -51,7 +51,7 @@ _080A5578:
 	ldrb r0, [r0]
 	b _080A5678
 	.align 2, 0
-_080A5598: .4byte 0x084FE664
+_080A5598: .4byte gBattleAnimMonsData_084FE664
 _080A559C: .4byte 0x02022C90
 _080A55A0:
 	ldr r4, _080A55C0
@@ -69,7 +69,7 @@ _080A55A0:
 	ldrb r0, [r0, #1]
 	b _080A5678
 	.align 2, 0
-_080A55C0: .4byte 0x084FE664
+_080A55C0: .4byte gBattleAnimMonsData_084FE664
 _080A55C4: .4byte 0x02022C90
 _080A55C8:
 	bl IsContest
@@ -388,7 +388,7 @@ _080A5820:
 	b _080A585C
 	.align 2, 0
 _080A5838: .4byte 0x00000181
-_080A583C: .4byte 0x084FE684
+_080A583C: .4byte gUnknown_84FE684
 _080A5840: .4byte 0x02024188
 _080A5844:
 	movs r0, #0xce
@@ -446,7 +446,7 @@ GetBattlerElevation: @ 0x080A5868
 	b _080A58C6
 	.align 2, 0
 _080A58A4: .4byte 0x00000181
-_080A58A8: .4byte 0x084FE694
+_080A58A8: .4byte gBattleAnimMonsData_084FE694
 _080A58AC: .4byte 0x02024188
 _080A58B0:
 	movs r0, #0xce
@@ -548,7 +548,7 @@ _080A5964:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080A596C: .4byte 0x084FE664
+_080A596C: .4byte gBattleAnimMonsData_084FE664
 _080A5970: .4byte 0x02022C90
 	thumb_func_end GetBattlerSpriteFinal_Y
 
@@ -4856,7 +4856,7 @@ _080A78E0:
 	ldrb r0, [r1]
 	b _080A790A
 	.align 2, 0
-_080A78E8: .4byte 0x084FE694
+_080A78E8: .4byte gBattleAnimMonsData_084FE694
 _080A78EC:
 	ldr r0, _080A78F8
 _080A78EE:
@@ -5455,8 +5455,8 @@ _080A7D26:
 	movs r2, #1
 	b _080A7DD2
 	.align 2, 0
-_080A7D3C: .4byte 0x084FE6CC
-_080A7D40: .4byte 0x084FE69C
+_080A7D3C: .4byte gBattleAnimMonsData_084FE6CC
+_080A7D40: .4byte gBattleAnimMonsData_084FE69C
 _080A7D44: .4byte 0x02024178
 _080A7D48: .4byte 0x02024174
 _080A7D4C: .4byte 0x082DDA1C
@@ -5587,7 +5587,7 @@ _080A7E08:
 _080A7E54: .4byte 0x082D6148
 _080A7E58: .4byte 0x02024178
 _080A7E5C: .4byte 0x06010000
-_080A7E60: .4byte 0x084FE69C
+_080A7E60: .4byte gBattleAnimMonsData_084FE69C
 _080A7E64: .4byte 0x082D45C8
 _080A7E68:
 	lsls r0, r7, #1
@@ -5638,7 +5638,7 @@ _080A7EB6:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080A7EC8: .4byte 0x084FE69C
+_080A7EC8: .4byte gBattleAnimMonsData_084FE69C
 _080A7ECC: .4byte 0x082D5A68
 _080A7ED0: .4byte 0x020205AC
 _080A7ED4: .4byte 0x082D2F50
@@ -5936,7 +5936,7 @@ _080A80FC:
 	.align 2, 0
 _080A810C: .4byte 0x00000181
 _080A8110: .4byte 0x02024188
-_080A8114: .4byte 0x084FE684
+_080A8114: .4byte gUnknown_84FE684
 _080A8118:
 	movs r0, #0xce
 	lsls r0, r0, #1

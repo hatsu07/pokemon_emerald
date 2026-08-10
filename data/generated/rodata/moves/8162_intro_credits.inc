@@ -288,6 +288,9 @@ gIntroCreditsMayGfx: @ 0x08D87C88
 	.if (. - gUnknown_8D85E60) != 0x2618
 	.error "Intro credits rider and Flygon graphics must retain their original size"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D88478: intro.s: Task_IntroLoadGroudonScene
+	.globl gIntroData_08D88478
+gIntroData_08D88478:
 	.globl gUnknown_8D88478
 gUnknown_8D88478: @ 0x08D88478
 	@ confirmed GBA LZ77 stream: compressed=0x8AC, decompressed=0x4000
@@ -298,6 +301,9 @@ sAnalyzedGfx_08D88478: @ 0x08D88478
 	.if (. - sAnalyzedGfx_08D88478) != 0x8AC
 	.error "gUnknown_8D88478 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D88D24: intro.s: Task_IntroLoadGroudonScene
+	.globl gIntroData_08D88D24
+gIntroData_08D88D24:
 	.globl gUnknown_8D88D24
 gUnknown_8D88D24: @ 0x08D88D24
 	@ confirmed GBA LZ77 stream: compressed=0x4E2, decompressed=0x2000
@@ -308,6 +314,9 @@ sAnalyzedGfx_08D88D24: @ 0x08D88D24
 	.if (. - sAnalyzedGfx_08D88D24) != 0x4E4
 	.error "gUnknown_8D88D24 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D89208: intro.s: Task_IntroLoadKyogreScene
+	.globl gIntroData_08D89208
+gIntroData_08D89208:
 	.globl gUnknown_8D89208
 gUnknown_8D89208: @ 0x08D89208
 	@ confirmed GBA LZ77 stream: compressed=0x896, decompressed=0x4000
@@ -318,6 +327,9 @@ sAnalyzedGfx_08D89208: @ 0x08D89208
 	.if (. - sAnalyzedGfx_08D89208) != 0x898
 	.error "gUnknown_8D89208 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D89AA0: intro.s: Task_IntroLoadKyogreScene
+	.globl gIntroData_08D89AA0
+gIntroData_08D89AA0:
 	.globl gUnknown_8D89AA0
 gUnknown_8D89AA0: @ 0x08D89AA0
 	@ confirmed GBA LZ77 stream: compressed=0x4BE, decompressed=0x2000
@@ -328,6 +340,9 @@ sAnalyzedGfx_08D89AA0: @ 0x08D89AA0
 	.if (. - sAnalyzedGfx_08D89AA0) != 0x4C0
 	.error "gUnknown_8D89AA0 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D89F60: intro.s: Task_IntroLoadGroudonScene
+	.globl gIntroData_08D89F60
+gIntroData_08D89F60:
 	.globl gUnknown_8D89F60
 gUnknown_8D89F60: @ 0x08D89F60
 	@ confirmed GBA LZ77 stream: compressed=0x899, decompressed=0x4000
@@ -338,6 +353,9 @@ sAnalyzedGfx_08D89F60: @ 0x08D89F60
 	.if (. - sAnalyzedGfx_08D89F60) != 0x89C
 	.error "gUnknown_8D89F60 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D8A7FC: intro.s: Task_IntroLoadGroudonScene
+	.globl gIntroData_08D8A7FC
+gIntroData_08D8A7FC:
 	.globl gUnknown_8D8A7FC
 gUnknown_8D8A7FC: @ 0x08D8A7FC
 	@ confirmed GBA LZ77 stream: compressed=0x11C, decompressed=0x800

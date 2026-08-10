@@ -2,6 +2,9 @@
 gUnknown_85CD123: @ 0x085CD123
 	@ Decoded text from ROM range: offset=0x5CD123, size=0x10
 	.string "できごとを　よみこみちゅう！！$"
+	@ pret/pokeemerald-jp direct xref for 0x085CD133: berry_tag_screen.s: CB2_MysteryEventMenu
+	.globl gBerryTagScreenData_085CD133
+gBerryTagScreenData_085CD133:
 	.globl gUnknown_85CD133
 gUnknown_85CD133: @ 0x085CD133
 	@ analyzed canonical ROM range 0x085CD133-0x085CD158

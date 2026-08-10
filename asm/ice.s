@@ -1354,9 +1354,9 @@ _0810C932:
 _0810C994: .4byte 0x00003F42
 _0810C998: .4byte 0x02022ACC
 _0810C99C: .4byte 0x02022ACE
-_0810C9A0: .4byte 0x0852776C
-_0810C9A4: .4byte 0x08D93294
-_0810C9A8: .4byte 0x08526F0C
+_0810C9A0: .4byte gIceData_0852776C
+_0810C9A4: .4byte gIceData_08D93294
+_0810C9A8: .4byte gUnknown_8526F0C
 _0810C9AC: .4byte 0x03005B60
 _0810C9B0: .4byte 0x0810C9B5
 	thumb_func_end AnimTask_Haze1
@@ -1444,7 +1444,7 @@ _0810CA26:
 	strh r5, [r4, #0x1e]
 	b _0810CB2A
 	.align 2, 0
-_0810CA60: .4byte 0x08571840
+_0810CA60: .4byte gIceData_08571840
 _0810CA64:
 	lsls r0, r4, #2
 	adds r0, r0, r4
@@ -1655,9 +1655,9 @@ _0810CBB6:
 _0810CC1C: .4byte 0x00003F42
 _0810CC20: .4byte 0x02022ACC
 _0810CC24: .4byte 0x02022ACE
-_0810CC28: .4byte 0x0852776C
-_0810CC2C: .4byte 0x08D93294
-_0810CC30: .4byte 0x08526F0C
+_0810CC28: .4byte gIceData_0852776C
+_0810CC2C: .4byte gIceData_08D93294
+_0810CC30: .4byte gUnknown_8526F0C
 _0810CC34: .4byte 0x03005B60
 _0810CC38: .4byte 0x0000FFFF
 _0810CC3C: .4byte 0x0810CC41
@@ -1733,7 +1733,7 @@ _0810CC90:
 	strh r0, [r4, #0x1e]
 	b _0810CD9A
 	.align 2, 0
-_0810CCD0: .4byte 0x0857186C
+_0810CCD0: .4byte gIceData_0857186C
 _0810CCD4:
 	lsls r0, r4, #2
 	adds r0, r0, r4
@@ -2489,7 +2489,7 @@ GenerateHailParticle: @ 0x0810D234
 	beq _0810D2E6
 	b _0810D332
 	.align 2, 0
-_0810D2AC: .4byte 0x08571898
+_0810D2AC: .4byte gIceData_08571898
 _0810D2B0:
 	adds r0, r5, #0
 	movs r1, #1
@@ -2595,7 +2595,7 @@ _0810D332:
 	movs r0, #1
 	b _0810D396
 	.align 2, 0
-_0810D38C: .4byte 0x08571910
+_0810D38C: .4byte gIceData_08571910
 _0810D390: .4byte 0x020205AC
 _0810D394:
 	movs r0, #0
@@ -2693,7 +2693,7 @@ _0810D436:
 	bl DestroySprite
 	b _0810D482
 	.align 2, 0
-_0810D448: .4byte 0x0857174C
+_0810D448: .4byte gIceData_0857174C
 _0810D44C: .4byte 0x020205AC
 _0810D450: .4byte 0x0810D48D
 _0810D454:

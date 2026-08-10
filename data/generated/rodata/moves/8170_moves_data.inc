@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x08D9C3E4: berry_tag_screen.s: LoadBerryTagGfx
+	.globl gBerryTagScreenData_08D9C3E4
+gBerryTagScreenData_08D9C3E4:
 	.globl gUnknown_8D9C3E4
 gUnknown_8D9C3E4: @ 0x08D9C3E4
 	@ confirmed GBA LZ77 stream: compressed=0x10D, decompressed=0x800

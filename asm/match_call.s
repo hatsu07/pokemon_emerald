@@ -290,7 +290,7 @@ _08195C00:
 	ldrh r0, [r6]
 	b _08195C2C
 	.align 2, 0
-_08195C1C: .4byte 0x0852AD40
+_08195C1C: .4byte gUnknown_852AD40
 _08195C20:
 	subs r5, #1
 _08195C22:
@@ -456,7 +456,7 @@ LoadMatchCallWindowGfx: @ 0x08195D2C
 	b _08195DE0
 	.align 2, 0
 _08195D54: .4byte 0x03005B68
-_08195D58: .4byte 0x085D7A14
+_08195D58: .4byte gMatchCallData_085D7A14
 _08195D5C:
 	ldr r1, _08195D80
 	movs r2, #0x80
@@ -474,7 +474,7 @@ _08195D5C:
 	adds r0, r4, #0
 	b _08195DE0
 	.align 2, 0
-_08195D80: .4byte 0x085D74E8
+_08195D80: .4byte gMatchCallData_085D74E8
 _08195D84: .4byte 0xFFFF0000
 _08195D88:
 	ldr r1, _08195DC4
@@ -503,10 +503,10 @@ _08195D88:
 	movs r0, #1
 	b _08195DE6
 	.align 2, 0
-_08195DC4: .4byte 0x085D7608
+_08195DC4: .4byte gMatchCallData_085D7608
 _08195DC8: .4byte 0x00000279
-_08195DCC: .4byte 0x085D74C8
-_08195DD0: .4byte 0x085D75E8
+_08195DCC: .4byte gMatchCallData_085D74C8
+_08195DD0: .4byte gMatchCallData_085D75E8
 _08195DD4: .4byte 0xFFFFE000
 _08195DD8:
 	ldrb r0, [r5, #4]
@@ -1202,7 +1202,7 @@ GetRematchTrainerLocation: @ 0x0819632C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08196344: .4byte 0x0852AD40
+_08196344: .4byte gUnknown_852AD40
 	thumb_func_end GetRematchTrainerLocation
 
 	thumb_func_start GetNumRematchTrainersFought
@@ -1228,7 +1228,7 @@ _0819635E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08196370: .4byte 0x0852AD40
+_08196370: .4byte gUnknown_852AD40
 	thumb_func_end GetNumRematchTrainersFought
 
 	thumb_func_start sub_08196374
@@ -1249,7 +1249,7 @@ _0819637E:
 	adds r0, r4, #0
 	b _081963A4
 	.align 2, 0
-_08196394: .4byte 0x0852AD40
+_08196394: .4byte gUnknown_852AD40
 _08196398:
 	adds r6, #1
 _0819639A:
@@ -1601,7 +1601,7 @@ _0819661A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08196628: .4byte 0x085D7A1C
+_08196628: .4byte gMatchCallData_085D7A1C
 	thumb_func_end PopulateMatchCallStringVars
 
 	thumb_func_start PopulateMatchCallStringVar
@@ -1616,7 +1616,7 @@ PopulateMatchCallStringVar: @ 0x0819662C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08196640: .4byte 0x085D7A28
+_08196640: .4byte gMatchCallData_085D7A28
 	thumb_func_end PopulateMatchCallStringVar
 
 	thumb_func_start PopulateTrainerName
@@ -1645,7 +1645,7 @@ _0819665A:
 	b _0819668C
 	.align 2, 0
 _08196670: .4byte gMatchCallTrainers
-_08196674: .4byte 0x085D7A54
+_08196674: .4byte gMatchCallData_085D7A54
 _08196678:
 	adds r1, #8
 	adds r3, #1
@@ -1909,7 +1909,7 @@ _08196822:
 	b _0819685E
 	.align 2, 0
 _0819684C: .4byte 0x0852D9F4
-_08196850: .4byte 0x0852AD40
+_08196850: .4byte gUnknown_852AD40
 _08196854: .4byte 0x082EA31C
 _08196858:
 	movs r0, #0xff
@@ -2046,7 +2046,7 @@ GetNumOwnedBadges: @ 0x08196940
 	ldr r5, _08196948
 	b _08196950
 	.align 2, 0
-_08196948: .4byte 0x085D7AA0
+_08196948: .4byte gMatchCallData_085D7AA0
 _0819694C:
 	adds r5, #2
 	adds r4, #1
@@ -2629,8 +2629,8 @@ sub_08196D78: @ 0x08196D78
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08196DB0: .4byte 0x085D74E8
-_08196DB4: .4byte 0x085D74C8
+_08196DB0: .4byte gMatchCallData_085D74E8
+_08196DB4: .4byte gMatchCallData_085D74C8
 	thumb_func_end sub_08196D78
 
 	thumb_func_start sub_08196DB8

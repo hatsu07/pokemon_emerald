@@ -8,6 +8,9 @@ gText_Rom_30F78E: @ 0x0830F78E
 	.if (. - gText_Rom_30F78E) < 0xd
 	.space 0xd - (. - gText_Rom_30F78E)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x0830F79B: berry_blender.s: CB2_HandleBlenderEndGame
+	.globl gBerryBlenderData_0830F79B
+gBerryBlenderData_0830F79B:
 	.globl gUnknown_830F79B
 gUnknown_830F79B: @ 0x0830F79B
 	@ analyzed canonical ROM range 0x0830F79B-0x0830F7B1

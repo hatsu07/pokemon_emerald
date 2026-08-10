@@ -312,7 +312,7 @@ _0805CF82:
 	.align 2, 0
 _0805CF8C: .4byte 0x02023D08
 _0805CF90: .4byte 0x02023D70
-_0805CF94: .4byte 0x082ECE18
+_0805CF94: .4byte gBattleGfxSfxUtilData_082ECE18
 _0805CF98: .4byte 0x082FACB4
 _0805CF9C: .4byte 0x02024140
 _0805CFA0: .4byte 0x000001FF
@@ -665,7 +665,7 @@ _0805D29C:
 	beq _0805D2D6
 	b _0805D316
 	.align 2, 0
-_0805D2C8: .4byte 0x082ECF8C
+_0805D2C8: .4byte gBattleGfxSfxUtilData_082ECF8C
 _0805D2CC: .4byte 0x02023D08
 _0805D2D0:
 	cmp r4, #2
@@ -3529,8 +3529,8 @@ _0805E972:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805E97C: .4byte 0x082ED028
-_0805E980: .4byte 0x082ED038
+_0805E97C: .4byte gBattleGfxSfxUtilData_082ED028
+_0805E980: .4byte gBattleGfxSfxUtilData_082ED038
 _0805E984: .4byte 0x02024174
 _0805E988: .4byte 0x020205AC
 	thumb_func_end LoadAndCreateEnemyShadowSprites

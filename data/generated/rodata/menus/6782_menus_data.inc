@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x085E19E0: unk_text_util_2.s: DecompressGlyphFont6
+	.globl gUnkTextUtil2Data_085E19E0
+gUnkTextUtil2Data_085E19E0:
 	.globl gUnknown_85E19E0
 gUnknown_85E19E0: @ 0x085E19E0
 	@ analyzed canonical ROM range 0x085E19E0-0x085E72E3

@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x084E8B14: reset_rtc_screen.s: CreateCursor, FreeCursorPalette
+	.globl gResetRtcScreenData_084E8B14
+gResetRtcScreenData_084E8B14:
 	.globl gUnknown_84E8B14
 gUnknown_84E8B14: @ 0x084E8B14
 	@ analyzed canonical ROM range 0x084E8B14-0x084E8B3F
@@ -6,6 +9,9 @@ sAnalyzedData_084E8B14: @ 0x084E8B14
 	.2byte 0x8AFC, 0x084E, 0x1000, 0x0000, 0x0000, 0x001E, 0xFFFE, 0x0000
 	.2byte 0x0000, 0x009E, 0xFFFE, 0x0000, 0x0001, 0x001E, 0xFFFE, 0x0000
 	.2byte 0x8B1C, 0x084E, 0x8B24, 0x084E, 0x8B2C, 0x084E
+	@ pret/pokeemerald-jp direct xref for 0x084E8B40: reset_rtc_screen.s: CreateCursor
+	.globl gResetRtcScreenData_084E8B40
+gResetRtcScreenData_084E8B40:
 	.globl gUnknown_84E8B40
 gUnknown_84E8B40: @ 0x084E8B40
 	@ analyzed canonical ROM range 0x084E8B40-0x084E8B57

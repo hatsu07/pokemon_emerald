@@ -711,7 +711,7 @@ sub_0810FF90: @ 0x0810FF90
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0810FFBC: .4byte 0x08572324
+_0810FFBC: .4byte gPsychicData_08572324
 _0810FFC0: .4byte 0x0810FFC5
 	thumb_func_end sub_0810FF90
 
@@ -794,7 +794,7 @@ sub_08110024: @ 0x08110024
 	bx r0
 	.align 2, 0
 _08110054: .4byte 0x03005B60
-_08110058: .4byte 0x08572340
+_08110058: .4byte gPsychicData_08572340
 _0811005C: .4byte 0x08110061
 	thumb_func_end sub_08110024
 
@@ -862,7 +862,7 @@ _081100C0:
 	.align 2, 0
 _081100D8: .4byte 0x03005B60
 _081100DC: .4byte 0x020380D6
-_081100E0: .4byte 0x08572360
+_081100E0: .4byte gPsychicData_08572360
 _081100E4: .4byte 0x081100E9
 	thumb_func_end sub_0811008C
 
@@ -1094,7 +1094,7 @@ _0811026A:
 	beq _081102B6
 	b _0811030E
 	.align 2, 0
-_081102A8: .4byte 0x08572378
+_081102A8: .4byte gPsychicData_08572378
 _081102AC:
 	cmp r0, #2
 	beq _081102E0
@@ -1532,7 +1532,7 @@ _08110604:
 	strh r0, [r5, #8]
 	b _08110638
 	.align 2, 0
-_0811061C: .4byte 0x08572448
+_0811061C: .4byte gPsychicData_08572448
 _08110620: .4byte 0x020205AC
 _08110624:
 	ldrh r0, [r5, #0xa]

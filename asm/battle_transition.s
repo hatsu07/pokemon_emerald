@@ -1167,8 +1167,8 @@ Phase2_Aqua_Func1: @ 0x081467CC
 	bx r1
 	.align 2, 0
 _08146814: .4byte 0x01000400
-_08146818: .4byte 0x0859A980
-_0814681C: .4byte 0x0859A960
+_08146818: .4byte gBattleTransitionData_0859A980
+_0814681C: .4byte gBattleTransitionData_0859A960
 	thumb_func_end Phase2_Aqua_Func1
 
 	thumb_func_start Phase2_Magma_Func1
@@ -1206,8 +1206,8 @@ Phase2_Magma_Func1: @ 0x08146820
 	bx r1
 	.align 2, 0
 _08146868: .4byte 0x01000400
-_0814686C: .4byte 0x0859AF54
-_08146870: .4byte 0x0859A960
+_0814686C: .4byte gBattleTransitionData_0859AF54
+_08146870: .4byte gBattleTransitionData_0859A960
 	thumb_func_end Phase2_Magma_Func1
 
 	thumb_func_start Phase2_Regi_Func1
@@ -1243,7 +1243,7 @@ Phase2_Regi_Func1: @ 0x08146874
 	bx r1
 	.align 2, 0
 _081468B8: .4byte 0x01000400
-_081468BC: .4byte 0x0859B6C4
+_081468BC: .4byte gBattleTransitionData_0859B6C4
 	thumb_func_end Phase2_Regi_Func1
 
 	thumb_func_start Phase2_BigPokeball_Func1
@@ -1281,8 +1281,8 @@ Phase2_BigPokeball_Func1: @ 0x081468C0
 	bx r1
 	.align 2, 0
 _08146908: .4byte 0x01000400
-_0814690C: .4byte 0x08598DE0
-_08146910: .4byte 0x085A8984
+_0814690C: .4byte gBattleTransitionData_08598DE0
+_08146910: .4byte gBattleTransitionData_085A8984
 	thumb_func_end Phase2_BigPokeball_Func1
 
 	thumb_func_start Phase2_BigPokeball_Func2
@@ -1356,7 +1356,7 @@ _08146940:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0814699C: .4byte 0x085A8AD0
+_0814699C: .4byte gBattleTransitionData_085A8AD0
 _081469A0: .4byte 0x020388C8
 	thumb_func_end Phase2_BigPokeball_Func2
 
@@ -1391,7 +1391,7 @@ Phase2_Aqua_Func2: @ 0x081469A4
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081469E4: .4byte 0x0859ACF8
+_081469E4: .4byte gBattleTransitionData_0859ACF8
 _081469E8: .4byte 0x020388C8
 	thumb_func_end Phase2_Aqua_Func2
 
@@ -1426,7 +1426,7 @@ Phase2_Magma_Func2: @ 0x081469EC
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08146A2C: .4byte 0x0859B3E0
+_08146A2C: .4byte gBattleTransitionData_0859B3E0
 _08146A30: .4byte 0x020388C8
 	thumb_func_end Phase2_Magma_Func2
 
@@ -1467,8 +1467,8 @@ Phase2_Regice_Func2: @ 0x08146A34
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08146A80: .4byte 0x0859BD64
-_08146A84: .4byte 0x0859BDC4
+_08146A80: .4byte gBattleTransitionData_0859BD64
+_08146A84: .4byte gBattleTransitionData_0859BDC4
 _08146A88: .4byte 0x020388C8
 	thumb_func_end Phase2_Regice_Func2
 
@@ -1509,8 +1509,8 @@ Phase2_Registeel_Func2: @ 0x08146A8C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08146AD8: .4byte 0x0859BD84
-_08146ADC: .4byte 0x0859C5C4
+_08146AD8: .4byte gBattleTransitionData_0859BD84
+_08146ADC: .4byte gBattleTransitionData_0859C5C4
 _08146AE0: .4byte 0x020388C8
 	thumb_func_end Phase2_Registeel_Func2
 
@@ -1551,8 +1551,8 @@ Phase2_Regirock_Func2: @ 0x08146AE4
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08146B30: .4byte 0x0859BDA4
-_08146B34: .4byte 0x0859CDC4
+_08146B30: .4byte gBattleTransitionData_0859BDA4
+_08146B34: .4byte gBattleTransitionData_0859CDC4
 _08146B38: .4byte 0x020388C8
 	thumb_func_end Phase2_Regirock_Func2
 
@@ -1587,8 +1587,8 @@ Phase2_Kyogre_Func3: @ 0x08146B3C
 	bx r1
 	.align 2, 0
 _08146B7C: .4byte 0x01000400
-_08146B80: .4byte 0x0859D5E4
-_08146B84: .4byte 0x0859DC98
+_08146B80: .4byte gBattleTransitionData_0859D5E4
+_08146B84: .4byte gBattleTransitionData_0859DC98
 	thumb_func_end Phase2_Kyogre_Func3
 
 	thumb_func_start Phase2_Kyogre_Func4
@@ -1636,7 +1636,7 @@ _08146BD8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08146BE0: .4byte 0x0859E850
+_08146BE0: .4byte gBattleTransitionData_0859E850
 	thumb_func_end Phase2_Kyogre_Func4
 
 	thumb_func_start Phase2_Kyogre_Func5
@@ -1682,7 +1682,7 @@ _08146C2E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08146C38: .4byte 0x0859E990
+_08146C38: .4byte gBattleTransitionData_0859E990
 	thumb_func_end Phase2_Kyogre_Func5
 
 	thumb_func_start Phase2_WeatherDuo_Func6
@@ -2282,9 +2282,9 @@ Phase2_PokeballsTrail_Func1: @ 0x0814708C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081470CC: .4byte 0x08599360
+_081470CC: .4byte gBattleTransitionData_08599360
 _081470D0: .4byte 0x05000200
-_081470D4: .4byte 0x085A8984
+_081470D4: .4byte gBattleTransitionData_085A8984
 	thumb_func_end Phase2_PokeballsTrail_Func1
 
 	thumb_func_start Phase2_PokeballsTrail_Func2
@@ -2351,8 +2351,8 @@ _08147106:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08147158: .4byte 0x085A8638
-_0814715C: .4byte 0x085A863C
+_08147158: .4byte gBattleTransitionData_085A8638
+_0814715C: .4byte gBattleTransitionData_085A863C
 _08147160: .4byte 0x020388A8
 	thumb_func_end Phase2_PokeballsTrail_Func2
 
@@ -2424,7 +2424,7 @@ FldEff_Pokeball: @ 0x08147190
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081471EC: .4byte 0x085A8918
+_081471EC: .4byte gBattleTransitionData_085A8918
 _081471F0: .4byte 0x020388A8
 _081471F4: .4byte 0x020205AC
 _081471F8: .4byte 0x0000FFFF
@@ -2448,7 +2448,7 @@ sub_081471FC: @ 0x081471FC
 	strh r0, [r4, #0x30]
 	b _081472B2
 	.align 2, 0
-_0814721C: .4byte 0x085A8646
+_0814721C: .4byte gBattleTransitionData_085A8646
 _08147220:
 	ldrh r0, [r4, #0x20]
 	lsls r1, r0, #0x10
@@ -3936,10 +3936,10 @@ _08147D3E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08147D8C: .4byte 0x085A8F80
-_08147D90: .4byte 0x085995A0
-_08147D94: .4byte 0x085A8A8C
-_08147D98: .4byte 0x085A8AA0
+_08147D8C: .4byte gBattleTransitionData_085A8F80
+_08147D90: .4byte gBattleTransitionData_085995A0
+_08147D94: .4byte gBattleTransitionData_085A8A8C
+_08147D98: .4byte gBattleTransitionData_085A8AA0
 _08147D9C: .4byte 0x03005AF0
 _08147DA0: .4byte 0x081482A1
 	thumb_func_end Phase2_Mugshot_Func2
@@ -4772,13 +4772,13 @@ Mugshots_CreateOpponentPlayerSprites: @ 0x081482D8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08148420: .4byte 0x085A86A4
-_08148424: .4byte 0x085A86BE
+_08148420: .4byte gBattleTransitionData_085A86A4
+_08148424: .4byte gBattleTransitionData_085A86BE
 _08148428: .4byte 0x0201C000
 _0814842C: .4byte 0x03005AF0
 _08148430: .4byte 0x020205AC
 _08148434: .4byte 0x08148441
-_08148438: .4byte 0x085A86AA
+_08148438: .4byte gBattleTransitionData_085A86AA
 _0814843C: .4byte 0xFFFFFE00
 	thumb_func_end Mugshots_CreateOpponentPlayerSprites
 
@@ -4847,7 +4847,7 @@ sub_0814846C: @ 0x0814846C
 	bx r1
 	.align 2, 0
 _081484B0: .4byte 0x085A86F0
-_081484B4: .4byte 0x085A86F4
+_081484B4: .4byte gBattleTransitionData_085A86F4
 	thumb_func_end sub_0814846C
 
 	thumb_func_start sub_081484B8
@@ -5528,8 +5528,8 @@ _081489A2:
 	str r0, [sp, #8]
 	b _08148A00
 	.align 2, 0
-_081489CC: .4byte 0x085A8714
-_081489D0: .4byte 0x085A8716
+_081489CC: .4byte gBattleTransitionData_085A8714
+_081489D0: .4byte gBattleTransitionData_085A8716
 _081489D4: .4byte 0x0203A86C
 _081489D8: .4byte 0x02038B48
 _081489DC: .4byte 0x02038DC8
@@ -6097,7 +6097,7 @@ _08148E0C:
 	bx r1
 	.align 2, 0
 _08148E20: .4byte 0x0203A86C
-_08148E24: .4byte 0x085A8730
+_08148E24: .4byte gBattleTransitionData_085A8730
 _08148E28: .4byte 0x020388C8
 	thumb_func_end Phase2_Blackhole1_Func2
 
@@ -6244,7 +6244,7 @@ _08148F26:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08148F44: .4byte 0x085A8734
+_08148F44: .4byte gBattleTransitionData_085A8734
 _08148F48: .4byte 0x03005B60
 	thumb_func_end Phase2Task_Registeel
 
@@ -6328,9 +6328,9 @@ Phase2_RectangularSpiral_Func1: @ 0x08148F4C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08148FF0: .4byte 0x0859A780
+_08148FF0: .4byte gBattleTransitionData_0859A780
 _08148FF4: .4byte 0x01000400
-_08148FF8: .4byte 0x085A8984
+_08148FF8: .4byte gBattleTransitionData_085A8984
 _08148FFC: .4byte 0x03001210
 _08149000: .4byte 0x0000FFFF
 _08149004: .4byte 0x0000FFFD
@@ -6429,7 +6429,7 @@ _081490A8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081490B8: .4byte 0x085A87E8
+_081490B8: .4byte gBattleTransitionData_085A87E8
 _081490BC: .4byte 0x03001210
 _081490C0: .4byte 0x0000027D
 _081490C4: .4byte 0x0000F002
@@ -6668,8 +6668,8 @@ Phase2_Groudon_Func3: @ 0x08149238
 	bx r1
 	.align 2, 0
 _0814927C: .4byte 0x01000400
-_08149280: .4byte 0x0859DFCC
-_08149284: .4byte 0x0859E538
+_08149280: .4byte gBattleTransitionData_0859DFCC
+_08149284: .4byte gBattleTransitionData_0859E538
 	thumb_func_end Phase2_Groudon_Func3
 
 	thumb_func_start Phase2_Groudon_Func4
@@ -6717,7 +6717,7 @@ _081492D8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081492E0: .4byte 0x0859EB50
+_081492E0: .4byte gBattleTransitionData_0859EB50
 	thumb_func_end Phase2_Groudon_Func4
 
 	thumb_func_start Phase2_Groudon_Func5
@@ -6763,7 +6763,7 @@ _0814932E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08149338: .4byte 0x0859ED50
+_08149338: .4byte gBattleTransitionData_0859ED50
 	thumb_func_end Phase2_Groudon_Func5
 
 	thumb_func_start Phase2Task_Shards
@@ -6861,9 +6861,9 @@ _081493D6:
 	.align 2, 0
 _081493FC: .4byte 0x00009A08
 _08149400: .4byte 0x01000400
-_08149404: .4byte 0x0859F150
+_08149404: .4byte gBattleTransitionData_0859F150
 _08149408: .4byte 0x0203A86C
-_0814940C: .4byte 0x0859EFF0
+_0814940C: .4byte gBattleTransitionData_0859EFF0
 _08149410: .4byte 0x020388C8
 _08149414: .4byte 0x081495C9
 	thumb_func_end Phase2_Rayquaza_Func3
@@ -6890,7 +6890,7 @@ Phase2_Rayquaza_Func4: @ 0x08149418
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08149444: .4byte 0x085A6690
+_08149444: .4byte gBattleTransitionData_085A6690
 	thumb_func_end Phase2_Rayquaza_Func4
 
 	thumb_func_start Phase2_Rayquaza_Func5
@@ -6936,7 +6936,7 @@ _0814948C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08149494: .4byte 0x0859EF50
+_08149494: .4byte gBattleTransitionData_0859EF50
 	thumb_func_end Phase2_Rayquaza_Func5
 
 	thumb_func_start Phase2_Rayquaza_Func6
@@ -7091,7 +7091,7 @@ _081495B0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081495B8: .4byte 0x0859EF50
+_081495B8: .4byte gBattleTransitionData_0859EF50
 _081495BC: .4byte 0x0203A86C
 _081495C0: .4byte 0x08147029
 _081495C4: .4byte 0x02039048
@@ -7288,7 +7288,7 @@ _081496FC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08149750: .4byte 0x085A8850
+_08149750: .4byte gBattleTransitionData_085A8850
 _08149754: .4byte 0x08149925
 _08149758: .4byte 0x020205AC
 	thumb_func_end Phase2_WhiteFade_Func2
@@ -7713,9 +7713,9 @@ Phase2_GridSquares_Func1: @ 0x08149A54
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08149A9C: .4byte 0x0859A780
+_08149A9C: .4byte gBattleTransitionData_0859A780
 _08149AA0: .4byte 0x01000400
-_08149AA4: .4byte 0x085A8984
+_08149AA4: .4byte gBattleTransitionData_085A8984
 	thumb_func_end Phase2_GridSquares_Func1
 
 	thumb_func_start Phase2_GridSquares_Func2
@@ -7761,7 +7761,7 @@ _08149AEA:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08149AFC: .4byte 0x0859A780
+_08149AFC: .4byte gBattleTransitionData_0859A780
 	thumb_func_end Phase2_GridSquares_Func2
 
 	thumb_func_start Phase2_GridSquares_Func3
@@ -7925,7 +7925,7 @@ Phase2_Shards_Func2: @ 0x08149BC8
 	bx r1
 	.align 2, 0
 _08149C3C: .4byte 0x0203A86C
-_08149C40: .4byte 0x085A8880
+_08149C40: .4byte gBattleTransitionData_085A8880
 	thumb_func_end Phase2_Shards_Func2
 
 	thumb_func_start Phase2_Shards_Func3
@@ -8097,7 +8097,7 @@ _08149D84:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08149D88: .4byte 0x085A88C6
+_08149D88: .4byte gBattleTransitionData_085A88C6
 	thumb_func_end Phase2_Shards_Func4
 
 	thumb_func_start Phase2_Shards_Func5
@@ -8286,7 +8286,7 @@ _08149ECE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08149EEC: .4byte 0x085A88D4
+_08149EEC: .4byte gBattleTransitionData_085A88D4
 _08149EF0: .4byte 0x03005B60
 	thumb_func_end Phase2Task_Magma
 
@@ -9018,8 +9018,8 @@ Phase2_29_Func1: @ 0x0814A3E4
 	bx r1
 	.align 2, 0
 _0814A428: .4byte 0x01000400
-_0814A42C: .4byte 0x085A76B0
-_0814A430: .4byte 0x085A7690
+_0814A42C: .4byte gBattleTransitionData_085A76B0
+_0814A430: .4byte gBattleTransitionData_085A7690
 	thumb_func_end Phase2_29_Func1
 
 	thumb_func_start Phase2_29_Func2
@@ -9053,7 +9053,7 @@ Phase2_29_Func2: @ 0x0814A434
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0814A474: .4byte 0x085A7D3C
+_0814A474: .4byte gBattleTransitionData_085A7D3C
 _0814A478: .4byte 0x020388C8
 	thumb_func_end Phase2_29_Func2
 
@@ -9186,8 +9186,8 @@ _0814A57C: .4byte 0x00003F41
 _0814A580: .4byte 0x04000050
 _0814A584: .4byte 0x04000052
 _0814A588: .4byte 0x01000400
-_0814A58C: .4byte 0x085A76B0
-_0814A590: .4byte 0x085A7690
+_0814A58C: .4byte gBattleTransitionData_085A76B0
+_0814A590: .4byte gBattleTransitionData_085A7690
 	thumb_func_end Phase2_30_Func1
 
 	thumb_func_start Phase2_30_Func2
@@ -9210,7 +9210,7 @@ Phase2_30_Func2: @ 0x0814A594
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0814A5BC: .4byte 0x085A7D3C
+_0814A5BC: .4byte gBattleTransitionData_085A7D3C
 	thumb_func_end Phase2_30_Func2
 
 	thumb_func_start Phase2_30_Func3
@@ -9618,8 +9618,8 @@ Phase2_31_Func1: @ 0x0814A858
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0814A8E0: .4byte 0x085A8048
-_0814A8E4: .4byte 0x085A8028
+_0814A8E0: .4byte gBattleTransitionData_085A8048
+_0814A8E4: .4byte gBattleTransitionData_085A8028
 	thumb_func_end Phase2_31_Func1
 
 	thumb_func_start Phase2_31_Func2
@@ -9678,7 +9678,7 @@ _0814A94A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0814A954: .4byte 0x085A83D8
+_0814A954: .4byte gBattleTransitionData_085A83D8
 	thumb_func_end Phase2_31_Func2
 
 	thumb_func_start Phase2_31_Func3
@@ -9742,12 +9742,12 @@ _0814A9BC:
 	b _0814A9DE
 	.align 2, 0
 _0814A9CC: .4byte 0xFFFF7FFF
-_0814A9D0: .4byte 0x085A81A4
+_0814A9D0: .4byte gBattleTransitionData_085A81A4
 _0814A9D4:
 	ldr r0, _0814A9D8
 	b _0814A9DE
 	.align 2, 0
-_0814A9D8: .4byte 0x085A82A4
+_0814A9D8: .4byte gBattleTransitionData_085A82A4
 _0814A9DC:
 	ldr r0, _0814A9E8
 _0814A9DE:
@@ -9755,7 +9755,7 @@ _0814A9DE:
 	bl LZ77UnCompVram
 	b _0814AA0C
 	.align 2, 0
-_0814A9E8: .4byte 0x085A8354
+_0814A9E8: .4byte gBattleTransitionData_085A8354
 _0814A9EC:
 	movs r0, #0x20
 	str r0, [sp]
@@ -9856,8 +9856,8 @@ Phase2_33_Func1: @ 0x0814AA20
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0814AABC: .4byte 0x085A8048
-_0814AAC0: .4byte 0x085A8028
+_0814AABC: .4byte gBattleTransitionData_085A8048
+_0814AAC0: .4byte gBattleTransitionData_085A8028
 	thumb_func_end Phase2_33_Func1
 
 	thumb_func_start Phase2_33_Func2
@@ -9919,8 +9919,8 @@ _0814AB30:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0814AB3C: .4byte 0x085A94E0
-_0814AB40: .4byte 0x085A83D8
+_0814AB3C: .4byte gBattleTransitionData_085A94E0
+_0814AB40: .4byte gBattleTransitionData_085A83D8
 	thumb_func_end Phase2_33_Func2
 
 	thumb_func_start Phase2_33_Func3
@@ -10004,8 +10004,8 @@ Phase2_33_Func4: @ 0x0814AB78
 	bl CopyRectToBgTilemapBufferRect
 	b _0814AC38
 	.align 2, 0
-_0814ABE4: .4byte 0x085A83D8
-_0814ABE8: .4byte 0x085A94E0
+_0814ABE4: .4byte gBattleTransitionData_085A83D8
+_0814ABE8: .4byte gBattleTransitionData_085A94E0
 _0814ABEC:
 	movs r1, #0xc
 	ldrsh r0, [r7, r1]
@@ -10062,7 +10062,7 @@ _0814AC46:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0814AC5C: .4byte 0x085A94E0
+_0814AC5C: .4byte gBattleTransitionData_085A94E0
 	thumb_func_end Phase2_33_Func4
 
 	thumb_func_start Phase2_31_33_Func5
@@ -10196,8 +10196,8 @@ Phase2_32_Func1: @ 0x0814ACF8
 	beq _0814AD8E
 	b _0814ADDC
 	.align 2, 0
-_0814AD74: .4byte 0x085A8048
-_0814AD78: .4byte 0x085A8028
+_0814AD74: .4byte gBattleTransitionData_085A8048
+_0814AD78: .4byte gBattleTransitionData_085A8028
 _0814AD7C: .4byte 0x02022AC8
 _0814AD80: .4byte 0x02022ACA
 _0814AD84: .4byte 0x0814ACA5
@@ -10320,8 +10320,8 @@ _0814AE60:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0814AE6C: .4byte 0x085A9503
-_0814AE70: .4byte 0x085A83D8
+_0814AE6C: .4byte gBattleTransitionData_085A9503
+_0814AE70: .4byte gBattleTransitionData_085A83D8
 	thumb_func_end Phase2_32_Func2
 
 	thumb_func_start Phase2_32_Func3
@@ -10393,7 +10393,7 @@ _0814AEEE:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0814AEF8: .4byte 0x085A9503
+_0814AEF8: .4byte gBattleTransitionData_085A9503
 _0814AEFC: .4byte 0x0814ACA5
 	thumb_func_end Phase2_32_Func4
 

@@ -81,9 +81,9 @@ _080D25CA:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080D2600: .4byte 0x085570CC
-_080D2604: .4byte 0x08557110
-_080D2608: .4byte 0x08557144
+_080D2600: .4byte gPokemonIconData_085570CC
+_080D2604: .4byte gPokemonIconData_08557110
+_080D2608: .4byte gPokemonIconData_08557144
 _080D260C: .4byte 0x08556EE4
 _080D2610: .4byte 0x0000DAC0
 _080D2614: .4byte 0x020205AC
@@ -148,9 +148,9 @@ sub_080D2618: @ 0x080D2618
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080D2690: .4byte 0x085570CC
-_080D2694: .4byte 0x08557110
-_080D2698: .4byte 0x08557144
+_080D2690: .4byte gPokemonIconData_085570CC
+_080D2694: .4byte gPokemonIconData_08557110
+_080D2698: .4byte gPokemonIconData_08557144
 _080D269C: .4byte 0x08556EE4
 _080D26A0: .4byte 0x0000DAC0
 _080D26A4: .4byte 0x020205AC
@@ -673,7 +673,7 @@ _080D29CA:
 	ldrb r7, [r5]
 	b _080D2A44
 	.align 2, 0
-_080D2A28: .4byte 0x0855714C
+_080D2A28: .4byte gPokemonIconData_0855714C
 _080D2A2C: .4byte 0x06010000
 _080D2A30:
 	lsls r0, r2, #0x1a
@@ -797,7 +797,7 @@ CreateMonIconSprite: @ 0x080D2A54
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080D2B1C: .4byte 0x0855714C
+_080D2B1C: .4byte gPokemonIconData_0855714C
 _080D2B20: .4byte 0xFFFF0000
 _080D2B24: .4byte 0x0000FFFF
 _080D2B28: .4byte 0x020205AC
@@ -831,7 +831,7 @@ sub_080D2B2C: @ 0x080D2B2C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080D2B60: .4byte 0x0855714C
+_080D2B60: .4byte gPokemonIconData_0855714C
 _080D2B64: .4byte 0xFFFF0000
 	thumb_func_end sub_080D2B2C
 

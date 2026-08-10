@@ -8,6 +8,9 @@ gText_Rom_5AD9C0: @ 0x085AD9C0
 	.if (. - gText_Rom_5AD9C0) < 0x14
 	.space 0x14 - (. - gText_Rom_5AD9C0)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085AD9D4: move_relearner.s: DoMoveRelearnerMain
+	.globl gMoveRelearnerData_085AD9D4
+gMoveRelearnerData_085AD9D4:
 	.globl gUnknown_85AD9D4
 gUnknown_85AD9D4: @ 0x085AD9D4
 	@ analyzed canonical ROM range 0x085AD9D4-0x085ADA26
@@ -32,6 +35,9 @@ gText_Rom_5ADA27: @ 0x085ADA27
 	.endif
 	.globl gText_Rom_5ADA39
 	.set gText_Rom_5ADA39, gText_Rom_5ADA27 + 0x12
+	@ pret/pokeemerald-jp direct xref for 0x085ADA42: move_relearner.s: DoMoveRelearnerMain
+	.globl gMoveRelearnerData_085ADA42
+gMoveRelearnerData_085ADA42:
 	.globl gUnknown_85ADA42
 gUnknown_85ADA42: @ 0x085ADA42
 	@ analyzed canonical ROM range 0x085ADA42-0x085ADA44
@@ -47,6 +53,9 @@ gText_Rom_5ADA45: @ 0x085ADA45
 	.if (. - gText_Rom_5ADA45) < 0x22
 	.space 0x22 - (. - gText_Rom_5ADA45)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085ADA67: move_relearner.s: DoMoveRelearnerMain
+	.globl gMoveRelearnerData_085ADA67
+gMoveRelearnerData_085ADA67:
 	.globl gUnknown_85ADA67
 gUnknown_85ADA67: @ 0x085ADA67
 	@ analyzed canonical ROM range 0x085ADA67-0x085ADA86

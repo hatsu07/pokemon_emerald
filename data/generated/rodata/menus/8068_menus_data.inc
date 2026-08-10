@@ -1,5 +1,6 @@
 	.globl gUnknown_85FD500
 gUnknown_85FD500:
+	@ pret/pokeemerald-jp direct xref for 0x085FD500: m4a.s: sub_0828DDEC
 	.globl gMPlayJumpTableTemplate
 gMPlayJumpTableTemplate: @ 0x085FD500
 	@ confirmed contiguous ROM pointer table: 36 entries from this address
@@ -45,6 +46,7 @@ sAnalyzedData_085FD500: @ 0x085FD500
 	.4byte SoundMainBTM @ +0x8C
 	.globl gUnknown_85FD590
 gUnknown_85FD590:
+	@ pret/pokeemerald-jp direct xref for 0x085FD590: m4a.s: sub_0828DCE0
 	.globl gDeltaEncodingTable
 gDeltaEncodingTable: @ 0x085FD590
 	@ analyzed canonical ROM range 0x085FD590-0x085FD59F
@@ -53,6 +55,7 @@ sAnalyzedData_085FD590: @ 0x085FD590
 	.byte 0x00, 0x01, 0x04, 0x09, 0x10, 0x19, 0x24, 0x31, 0xC0, 0xCF, 0xDC, 0xE7, 0xF0, 0xF7, 0xFC, 0xFF
 	.globl gUnknown_85FD5A0
 gUnknown_85FD5A0:
+	@ pret/pokeemerald-jp direct xref for 0x085FD5A0: m4a.s: MidiKeyToFreq
 	.globl gScaleTable
 gScaleTable: @ 0x085FD5A0
 	@ analyzed canonical ROM range 0x085FD5A0-0x085FD653
@@ -72,6 +75,7 @@ sAnalyzedData_085FD5A0: @ 0x085FD5A0
 	.byte 0x08, 0x09, 0x0A, 0x0B
 	.globl gUnknown_85FD654
 gUnknown_85FD654:
+	@ pret/pokeemerald-jp direct xref for 0x085FD654: m4a.s: MidiKeyToFreq
 	.globl gFreqTable
 gFreqTable: @ 0x085FD654
 	@ analyzed canonical ROM range 0x085FD654-0x085FD683
@@ -82,6 +86,7 @@ sAnalyzedData_085FD654: @ 0x085FD654
 	.byte 0x2A, 0xF5, 0x2F, 0xCB, 0xCB, 0xFC, 0x44, 0xD7, 0x3A, 0xF0, 0x11, 0xE4, 0x39, 0xBF, 0xA1, 0xF1
 	.globl gUnknown_85FD684
 gUnknown_85FD684:
+	@ pret/pokeemerald-jp direct xref for 0x085FD684: m4a.s: SampleFreqSet
 	.globl gPcmSamplesPerVBlankTable
 gPcmSamplesPerVBlankTable: @ 0x085FD684
 	@ analyzed canonical ROM range 0x085FD684-0x085FD69B
@@ -91,6 +96,7 @@ sAnalyzedData_085FD684: @ 0x085FD684
 	.2byte 0x0210, 0x0260, 0x02A0, 0x02C0
 	.globl gUnknown_85FD69C
 gUnknown_85FD69C:
+	@ pret/pokeemerald-jp direct xref for 0x085FD69C: m4a.s: MidiKeyToCgbFreq
 	.globl gCgbScaleTable
 gCgbScaleTable: @ 0x085FD69C
 	@ analyzed canonical ROM range 0x085FD69C-0x085FD71F
@@ -107,6 +113,7 @@ sAnalyzedData_085FD69C: @ 0x085FD69C
 	.byte 0xA8, 0xA9, 0xAA, 0xAB
 	.globl gUnknown_85FD720
 gUnknown_85FD720:
+	@ pret/pokeemerald-jp direct xref for 0x085FD720: m4a.s: MidiKeyToCgbFreq
 	.globl gCgbFreqTable
 gCgbFreqTable: @ 0x085FD720
 	@ analyzed canonical ROM range 0x085FD720-0x085FD737
@@ -116,6 +123,7 @@ sAnalyzedData_085FD720: @ 0x085FD720
 	.byte 0x12, 0xFB, 0x58, 0xFB, 0x9B, 0xFB, 0xDA, 0xFB
 	.globl gUnknown_85FD738
 gUnknown_85FD738:
+	@ pret/pokeemerald-jp direct xref for 0x085FD738: m4a.s: MidiKeyToCgbFreq
 	.globl gNoiseTable
 gNoiseTable: @ 0x085FD738
 	@ analyzed canonical ROM range 0x085FD738-0x085FD773
@@ -127,6 +135,7 @@ sAnalyzedData_085FD738: @ 0x085FD738
 	.byte 0x17, 0x16, 0x15, 0x14, 0x07, 0x06, 0x05, 0x04, 0x03, 0x02, 0x01, 0x00
 	.globl gUnknown_85FD774
 gUnknown_85FD774:
+	@ pret/pokeemerald-jp direct xref for 0x085FD774: m4a.s: CgbSound
 	.globl gCgb3Vol
 gCgb3Vol: @ 0x085FD774
 	@ analyzed canonical ROM range 0x085FD774-0x085FD783
@@ -135,6 +144,7 @@ sAnalyzedData_085FD774: @ 0x085FD774
 	.byte 0x00, 0x00, 0x60, 0x60, 0x60, 0x60, 0x40, 0x40, 0x40, 0x40, 0x80, 0x80, 0x80, 0x80, 0x20, 0x20
 	.globl gUnknown_85FD784
 gUnknown_85FD784:
+	@ pret/pokeemerald-jp direct xref for 0x085FD784: m4a.s: ply_note, sub_0828E23C
 	.globl gClockTable
 gClockTable: @ 0x085FD784
 	@ analyzed canonical ROM range 0x085FD784-0x085FD7B7
@@ -146,6 +156,7 @@ sAnalyzedData_085FD784: @ 0x085FD784
 	.byte 0x60, 0x00, 0x00, 0x00
 	.globl gUnknown_85FD7B8
 gUnknown_85FD7B8:
+	@ pret/pokeemerald-jp direct xref for 0x085FD7B8: m4a.s: m4aSoundInit
 	.globl gPokemonCrySongTemplate
 gPokemonCrySongTemplate: @ 0x085FD7B8
 	@ analyzed canonical ROM range 0x085FD7B8-0x085FD7EB

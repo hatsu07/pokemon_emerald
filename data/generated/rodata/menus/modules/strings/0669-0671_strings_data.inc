@@ -8,6 +8,9 @@ gText_Rom_4E8B84: @ 0x084E8B84
 	.if (. - gText_Rom_4E8B84) < 0x10
 	.space 0x10 - (. - gText_Rom_4E8B84)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x084E8B94: start_menu.s: ShowSafariBallsWindow
+	.globl gStartMenuData_084E8B94
+gStartMenuData_084E8B94:
 	.globl gUnknown_84E8B94
 gUnknown_84E8B94: @ 0x084E8B94
 	@ analyzed canonical ROM range 0x084E8B94-0x084E8B9B

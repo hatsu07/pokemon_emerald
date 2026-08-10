@@ -134,6 +134,9 @@ gText_Rom_5C8E5C: @ 0x085C8E5C
 	.globl gText_Rom_5C8E63
 	.set gText_Rom_5C8E63, gText_Rom_5C8E5C + 0x7
 	.space 0x1, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085C8E68: hall_of_fame.s: Task_HofPC_DrawSpritesPrintText
+	.globl gHallOfFameData_085C8E68
+gHallOfFameData_085C8E68:
 	.globl gUnknown_85C8E68
 gUnknown_85C8E68: @ 0x085C8E68
 	@ analyzed canonical ROM range 0x085C8E68-0x085C8E74
@@ -150,6 +153,9 @@ gText_Rom_5C8E75: @ 0x085C8E75
 	.space 0x4 - (. - gText_Rom_5C8E75)
 	.endif
 	.space 0x3, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085C8E7C: hall_of_fame.s: Task_HofPC_DrawSpritesPrintText
+	.globl gHallOfFameData_085C8E7C
+gHallOfFameData_085C8E7C:
 	.globl gUnknown_85C8E7C
 gUnknown_85C8E7C: @ 0x085C8E7C
 	@ analyzed canonical ROM range 0x085C8E7C-0x085C8E85

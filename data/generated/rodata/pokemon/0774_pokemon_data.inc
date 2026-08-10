@@ -1,12 +1,18 @@
 	.globl gUnknown_85430F0
 gUnknown_85430F0: @ 0x085430F0
 	.space 0x20, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08543110: pokedex.s: sub_080BE0C0
+	.globl gPokedexData_08543110
+gPokedexData_08543110:
 	.globl gUnknown_8543110
 gUnknown_8543110: @ 0x08543110
 	@ analyzed canonical ROM range 0x08543110-0x0854311F
 sAnalyzedData_08543110: @ 0x08543110
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x30C8, 0x0000, 0x00D1, 0x0000, 0x10EA, 0x0000, 0x20F3, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x08543120: pokedex.s: sub_080BE0C0
+	.globl gPokedexData_08543120
+gPokedexData_08543120:
 	.globl gUnknown_8543120
 gUnknown_8543120: @ 0x08543120
 	@ analyzed canonical ROM range 0x08543120-0x08543147
@@ -15,12 +21,18 @@ sAnalyzedData_08543120: @ 0x08543120
 	.2byte 0x0002, 0x2000, 0x0014, 0x0001, 0x1902, 0x0208, 0x0F02, 0x0281
 	.2byte 0x0000, 0x200C, 0x0807, 0x0285, 0x1202, 0x0A03, 0x0908, 0x0365
 	.2byte 0x00FF, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x08543148: pokedex.s: sub_080BF6F4
+	.globl gPokedexData_08543148
+gPokedexData_08543148:
 	.globl gUnknown_8543148
 gUnknown_8543148: @ 0x08543148
 	@ analyzed canonical ROM range 0x08543148-0x0854314F
 sAnalyzedData_08543148: @ 0x08543148
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x20EA, 0x0000, 0x30F7, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x08543150: pokedex.s: sub_080BF6F4
+	.globl gPokedexData_08543150
+gPokedexData_08543150:
 	.globl gUnknown_8543150
 gUnknown_8543150: @ 0x08543150
 	@ analyzed canonical ROM range 0x08543150-0x08543167
@@ -531,6 +543,9 @@ sPokedexUi8543De8:
 	.if (. - gUnknown_8543DE8) != 0x19C
 	.error "gUnknown_8543DE8 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08543F84: pokedex.s: sub_080C0850
+	.globl gPokedexData_08543F84
+gPokedexData_08543F84:
 	.globl gUnknown_8543F84
 gUnknown_8543F84: @ 0x08543F84
 	@ confirmed GBA LZ77 stream: compressed=0x188, decompressed=0x500
@@ -541,6 +556,9 @@ sAnalyzedGfx_08543F84: @ 0x08543F84
 	.if (. - sAnalyzedGfx_08543F84) != 0x188
 	.error "gUnknown_8543F84 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x0854410C: pokedex.s: sub_080C0488
+	.globl gPokedexData_0854410C
+gPokedexData_0854410C:
 	.globl gUnknown_854410C
 gUnknown_854410C: @ 0x0854410C
 	@ analyzed canonical ROM range 0x0854410C-0x08544133
@@ -549,6 +567,9 @@ sAnalyzedData_0854410C: @ 0x0854410C
 	.2byte 0x0000, 0x0000, 0x0551, 0x0000, 0x0556, 0x0587, 0x055B, 0x058C
 	.2byte 0x0560, 0x0591, 0x0565, 0x0000, 0x056A, 0x0A96, 0x056F, 0x0000
 	.2byte 0x0577, 0x0000, 0x0374, 0x037C
+	@ pret/pokeemerald-jp direct xref for 0x08544134: pokedex.s: sub_080C1440, sub_080C1684
+	.globl gPokedexData_08544134
+gPokedexData_08544134:
 	.globl gUnknown_8544134
 gUnknown_8544134: @ 0x08544134
 	@ analyzed canonical ROM range 0x08544134-0x0854414B
@@ -556,6 +577,9 @@ sAnalyzedData_08544134: @ 0x08544134
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x35, 0x90, 0x5C, 0x08, 0x00, 0x00, 0x05, 0x00, 0x52, 0x90, 0x5C, 0x08, 0x06, 0x00, 0x05, 0x00
 	.byte 0x66, 0x90, 0x5C, 0x08, 0x0C, 0x00, 0x05, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0854414C: pokedex.s: sub_080C1440, sub_080C16B8
+	.globl gPokedexData_0854414C
+gPokedexData_0854414C:
 	.globl gUnknown_854414C
 gUnknown_854414C: @ 0x0854414C
 	@ analyzed canonical ROM range 0x0854414C-0x0854419F
@@ -567,6 +591,9 @@ sAnalyzedData_0854414C: @ 0x0854414C
 	.2byte 0x9081, 0x085C, 0x0800, 0x0505, 0x0C08, 0x0000, 0x9071, 0x085C
 	.2byte 0x0A00, 0x0505, 0x0C0A, 0x0000, 0x90F0, 0x085C, 0x0C00, 0x0005
 	.2byte 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085441A0: pokedex.s: sub_080C0C7C
+	.globl gPokedexData_085441A0
+gPokedexData_085441A0:
 	.globl gUnknown_85441A0
 gUnknown_85441A0: @ 0x085441A0
 	@ analyzed canonical ROM range 0x085441A0-0x085441BB
@@ -574,6 +601,9 @@ sAnalyzedData_085441A0: @ 0x085441A0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xFFFF, 0x01FF, 0xFFFF, 0x0200, 0x03FF, 0x0401, 0xFF02, 0x0401
 	.2byte 0xFFFF, 0x0502, 0xFFFF, 0x0604, 0xFFFF, 0xFF05
+	@ pret/pokeemerald-jp direct xref for 0x085441BC: pokedex.s: sub_080C0C7C
+	.globl gPokedexData_085441BC
+gPokedexData_085441BC:
 	.globl gUnknown_85441BC
 gUnknown_85441BC: @ 0x085441BC
 	@ analyzed canonical ROM range 0x085441BC-0x085441D7
@@ -581,6 +611,9 @@ sAnalyzedData_085441BC: @ 0x085441BC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF
 	.2byte 0xFFFF, 0x05FF, 0xFFFF, 0x0604, 0xFFFF, 0xFF05
+	@ pret/pokeemerald-jp direct xref for 0x085441D8: pokedex.s: sub_080C0C7C
+	.globl gPokedexData_085441D8
+gPokedexData_085441D8:
 	.globl gUnknown_85441D8
 gUnknown_85441D8: @ 0x085441D8
 	@ analyzed canonical ROM range 0x085441D8-0x085441F3
@@ -588,6 +621,9 @@ sAnalyzedData_085441D8: @ 0x085441D8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xFFFF, 0x01FF, 0xFFFF, 0x0200, 0x03FF, 0x0401, 0xFF02, 0x0401
 	.2byte 0xFFFF, 0x0602, 0xFFFF, 0xFFFF, 0xFFFF, 0xFF04
+	@ pret/pokeemerald-jp direct xref for 0x085441F4: pokedex.s: sub_080C0C7C
+	.globl gPokedexData_085441F4
+gPokedexData_085441F4:
 	.globl gUnknown_85441F4
 gUnknown_85441F4: @ 0x085441F4
 	@ analyzed canonical ROM range 0x085441F4-0x0854420F
@@ -619,6 +655,9 @@ gUnknown_8544228: @ 0x08544228
 	.4byte gText_Rom_5C9141
 	.4byte NULL
 	.4byte NULL
+	@ pret/pokeemerald-jp direct xref for 0x08544260: pokedex.s: sub_080C175C
+	.globl gPokedexData_08544260
+gPokedexData_08544260:
 	.globl gUnknown_8544260
 gUnknown_8544260: @ 0x08544260
 	@ confirmed contiguous ROM pointer table: 20 entries from this address
@@ -648,6 +687,9 @@ sAnalyzedData_08544260: @ 0x08544260
 	.4byte gText_Rom_5C9179 @ +0x4C
 	.4byte 0 @ +0x50
 	.4byte 0 @ +0x54
+	@ pret/pokeemerald-jp direct xref for 0x085442B8: pokedex.s: sub_080C175C
+	.globl gPokedexData_085442B8
+gPokedexData_085442B8:
 	.globl gUnknown_85442B8
 gUnknown_85442B8: @ 0x085442B8
 	@ confirmed contiguous ROM pointer table: 22 entries from this address
@@ -679,6 +721,9 @@ sAnalyzedData_085442B8: @ 0x085442B8
 	.4byte gText_Rom_5C91A3 @ +0x54
 	.4byte 0 @ +0x58
 	.4byte 0 @ +0x5C
+	@ pret/pokeemerald-jp direct xref for 0x08544318: pokedex.s: sub_080C175C
+	.globl gPokedexData_08544318
+gPokedexData_08544318:
 	.globl gUnknown_8544318
 gUnknown_8544318: @ 0x08544318
 	@ confirmed contiguous ROM pointer table: 36 entries from this address
@@ -724,6 +769,9 @@ sAnalyzedData_08544318: @ 0x08544318
 	.4byte gTypeName_Dark @ +0x8C
 	.4byte 0 @ +0x90
 	.4byte 0 @ +0x94
+	@ pret/pokeemerald-jp direct xref for 0x085443B0: pokedex.s: sub_080C19BC
+	.globl gPokedexData_085443B0
+gPokedexData_085443B0:
 	.globl gUnknown_85443B0
 gUnknown_85443B0: @ 0x085443B0
 	@ analyzed canonical ROM range 0x085443B0-0x085443B1

@@ -40,6 +40,9 @@ gUnknown_85ADB6C: @ 0x085ADB6C
 sMoveRelearnerMenuBackgroundTemplates:
 	bg_template 0, 0, 31, 0, 0, 0, 0 @ raw=0x000001F0
 	bg_template 1, 0, 30, 0, 0, 1, 0 @ raw=0x000011E1
+	@ pret/pokeemerald-jp direct xref for 0x085ADB74: roamer.s: CreateInitialRoamerMon, RoamerMove, RoamerMoveToOtherLocationSet
+	.globl gRoamerData_085ADB74
+gRoamerData_085ADB74:
 	.globl gUnknown_85ADB74
 gUnknown_85ADB74: @ 0x085ADB74
 	@ analyzed canonical ROM range 0x085ADB74-0x085ADBF3
@@ -53,6 +56,7 @@ sAnalyzedData_085ADB74: @ 0x085ADB74
 	.byte 0x2C, 0xFF, 0xFF, 0xFF, 0x2C, 0x2B, 0x2D, 0xFF, 0xFF, 0xFF, 0x2D, 0x2C, 0x2E, 0xFF, 0xFF, 0xFF
 	.byte 0x2E, 0x2D, 0x2F, 0xFF, 0xFF, 0xFF, 0x2F, 0x2E, 0x30, 0xFF, 0xFF, 0xFF, 0x30, 0x2F, 0x31, 0xFF
 	.byte 0xFF, 0xFF, 0x31, 0x30, 0x19, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085ADBF4: battle_dome.s: CreateDomeOpponentMon; battle_factory.s: FillFactoryBrainParty, GenerateInitialRentalMons, GenerateOpponentMons, RestorePlayerPartyHeldItems, SetPlayerAndOpponentParties (+1 more); battle_factory_screen.s: CreateFrontierFa...
 	.globl gUnknown_85ADBF4
 gUnknown_85ADBF4: @ 0x085ADBF4
 	@ analyzed canonical ROM range 0x085ADBF4-0x085B0BE8

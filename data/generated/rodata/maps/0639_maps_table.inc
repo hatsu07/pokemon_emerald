@@ -81,6 +81,9 @@ gUnknown_84DD88C: @ 0x084DD88C
 	.4byte MovementType_WalkSlowlyInPlace
 	.4byte MovementType_WalkSlowlyInPlace
 	.4byte MovementType_WalkSlowlyInPlace
+	@ pret/pokeemerald-jp direct xref for 0x084DD9D0: event_object_movement.s: InitEventObjectStateFromTemplate
+	.globl gEventObjectMovementData_084DD9D0
+gEventObjectMovementData_084DD9D0:
 	.globl gUnknown_84DD9D0
 gUnknown_84DD9D0: @ 0x084DD9D0
 	@ analyzed canonical ROM range 0x084DD9D0-0x084DDA20
@@ -92,6 +95,9 @@ sAnalyzedData_084DD9D0: @ 0x084DD9D0
 	.byte 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00
+	@ pret/pokeemerald-jp direct xref for 0x084DDA21: event_object_movement.s: CopyablePlayerMovement_FaceDirection, CopyablePlayerMovement_GoSpeed0, CopyablePlayerMovement_GoSpeed1, CopyablePlayerMovement_GoSpeed2, CopyablePlayerMovement_GoSpeed4 (+6 more)
+	.globl gEventObjectMovementData_084DDA21
+gEventObjectMovementData_084DDA21:
 	.globl gUnknown_84DDA21
 gUnknown_84DDA21: @ 0x084DDA21
 	@ analyzed canonical ROM range 0x084DDA21-0x084DDA73
@@ -351,6 +357,9 @@ sAnalyzedData_084DDA74: @ 0x084DDA74
 	.4byte 0x084E3FB0 @ +0x3B0
 	.4byte 0x084E3FD4 @ +0x3B4
 	.4byte 0x084E3FF8 @ +0x3B8
+	@ pret/pokeemerald-jp direct xref for 0x084DDE30: event_object_movement.s: GetEventObjectGraphicsInfo
+	.globl gEventObjectMovementData_084DDE30
+gEventObjectMovementData_084DDE30:
 	.globl gUnknown_84DDE30
 gUnknown_84DDE30: @ 0x084DDE30
 	@ analyzed canonical ROM range 0x084DDE30-0x084DDE4B

@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x0830FD4C: overworld.s: SetPlayerFacingDirection
+	.globl gOverworldData_0830FD4C
+gOverworldData_0830FD4C:
 	.globl gUnknown_830FD4C
 gUnknown_830FD4C: @ 0x0830FD4C
 	@ analyzed canonical ROM range 0x0830FD4C-0x083B8093

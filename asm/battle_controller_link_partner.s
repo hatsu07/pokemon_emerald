@@ -57,7 +57,7 @@ _0814AFC0: .4byte 0x02023D0C
 _0814AFC4: .4byte 0x082FACB4
 _0814AFC8: .4byte 0x02023D08
 _0814AFCC: .4byte 0x02022D08
-_0814AFD0: .4byte 0x085A9544
+_0814AFD0: .4byte gBattleControllerLinkPartnerData_085A9544
 _0814AFD4:
 	bl LinkPartnerBufferExecCompleted
 _0814AFD8:

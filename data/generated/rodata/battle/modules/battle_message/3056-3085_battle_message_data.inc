@@ -64,6 +64,9 @@ gText_Rom_5A9CFB: @ 0x085A9CFB
 	.endif
 	.globl gText_Rom_5A9D10
 	.set gText_Rom_5A9D10, gText_Rom_5A9CFB + 0x15
+	@ pret/pokeemerald-jp direct xref for 0x085A9D15: pokemon.s: sub_0806CA3C
+	.globl gPokemonData_085A9D15
+gPokemonData_085A9D15:
 	.globl gUnknown_85A9D15
 gUnknown_85A9D15: @ 0x085A9D15
 	@ analyzed canonical ROM range 0x085A9D15-0x085A9D25
@@ -79,6 +82,9 @@ gText_Rom_5A9D26: @ 0x085A9D26
 	.endif
 	.globl gText_Rom_5A9D35
 	.set gText_Rom_5A9D35, gText_Rom_5A9D26 + 0xf
+	@ pret/pokeemerald-jp direct xref for 0x085A9D39: pokemon.s: sub_0806CA3C
+	.globl gPokemonData_085A9D39
+gPokemonData_085A9D39:
 	.globl gUnknown_85A9D39
 gUnknown_85A9D39: @ 0x085A9D39
 	@ analyzed canonical ROM range 0x085A9D39-0x085A9D45

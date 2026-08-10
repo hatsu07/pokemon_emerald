@@ -8,18 +8,27 @@ gText_Rom_30FC24: @ 0x0830FC24
 	.if (. - gText_Rom_30FC24) < 0x5
 	.space 0x5 - (. - gText_Rom_30FC24)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x0830FC29: berry_blender.s: Blender_PrintBlendingResults
+	.globl gBerryBlenderData_0830FC29
+gBerryBlenderData_0830FC29:
 	.globl gUnknown_830FC29
 gUnknown_830FC29: @ 0x0830FC29
 	@ analyzed canonical ROM range 0x0830FC29-0x0830FC2D
 sAnalyzedData_0830FC29: @ 0x0830FC29
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x06, 0x06, 0x06, 0x06, 0x05
+	@ pret/pokeemerald-jp direct xref for 0x0830FC2E: berry_blender.s: Blender_PrintBlendingResults
+	.globl gBerryBlenderData_0830FC2E
+gBerryBlenderData_0830FC2E:
 	.globl gUnknown_830FC2E
 gUnknown_830FC2E: @ 0x0830FC2E
 	@ analyzed canonical ROM range 0x0830FC2E-0x0830FC32
 sAnalyzedData_0830FC2E: @ 0x0830FC2E
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x03, 0x03, 0x03, 0x02, 0x02
+	@ pret/pokeemerald-jp direct xref for 0x0830FC33: berry_blender.s: Blender_PrintBlendingRanking
+	.globl gBerryBlenderData_0830FC33
+gBerryBlenderData_0830FC33:
 	.globl gUnknown_830FC33
 gUnknown_830FC33: @ 0x0830FC33
 	@ analyzed canonical ROM range 0x0830FC33-0x0830FC37

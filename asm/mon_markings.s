@@ -702,16 +702,16 @@ _0812030E:
 	b _081203CE
 	.align 2, 0
 _08120398: .4byte 0x02039DF0
-_0812039C: .4byte 0x08579F58
-_081203A0: .4byte 0x08579F38
+_0812039C: .4byte gMonMarkingsData_08579F58
+_081203A0: .4byte gMonMarkingsData_08579F38
 _081203A4: .4byte 0x0857AAA0
-_081203A8: .4byte 0x0857AB38
+_081203A8: .4byte gMonMarkingsData_0857AB38
 _081203AC: .4byte gDummySpriteAffineAnimTable
 _081203B0: .4byte 0x0812045D
 _081203B4: .4byte 0x020205AC
-_081203B8: .4byte 0x0857AB00
+_081203B8: .4byte gMonMarkingsData_0857AB00
 _081203BC: .4byte 0x08120461
-_081203C0: .4byte 0x0857AAA8
+_081203C0: .4byte gMonMarkingsData_0857AAA8
 _081203C4: .4byte 0x08007141
 _081203C8:
 	ldr r1, [r6]
@@ -862,7 +862,7 @@ _081204C4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081204D0: .4byte 0x0857A278
+_081204D0: .4byte gMonMarkingsData_0857A278
 	thumb_func_end sub_081204B4
 
 	thumb_func_start sub_081204D4
@@ -881,7 +881,7 @@ _081204E4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081204F0: .4byte 0x0857A278
+_081204F0: .4byte gMonMarkingsData_0857A278
 	thumb_func_end sub_081204D4
 
 	thumb_func_start sub_081204F4
@@ -945,10 +945,10 @@ sub_081204F4: @ 0x081204F4
 	movs r0, #0
 	b _08120592
 	.align 2, 0
-_08120570: .4byte 0x0857A298
+_08120570: .4byte gMonMarkingsData_0857A298
 _08120574: .4byte 0xFFFF0000
-_08120578: .4byte 0x0857AB40
-_0812057C: .4byte 0x0857ABC8
+_08120578: .4byte gMonMarkingsData_0857AB40
+_0812057C: .4byte gMonMarkingsData_0857ABC8
 _08120580: .4byte gDummySpriteAffineAnimTable
 _08120584: .4byte 0x0812045D
 _08120588:
@@ -981,6 +981,6 @@ sub_081205A4: @ 0x081205A4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081205BC: .4byte 0x0857A298
+_081205BC: .4byte gMonMarkingsData_0857A298
 	thumb_func_end sub_081205A4
 

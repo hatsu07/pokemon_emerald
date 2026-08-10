@@ -284,7 +284,7 @@ AddBerryTagTextToBg0: @ 0x08177CFC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08177D68: .4byte 0x085CD068
+_08177D68: .4byte gBerryTagScreenData_085CD068
 _08177D6C: .4byte 0x0203B9C0
 	thumb_func_end AddBerryTagTextToBg0
 
@@ -333,7 +333,7 @@ _08177DB4:
 	adds r1, r1, r0
 	b _08177EBE
 	.align 2, 0
-_08177DD4: .4byte 0x08D9BD90
+_08177DD4: .4byte gBerryTagScreenData_08D9BD90
 _08177DD8: .4byte 0x0203B9C0
 _08177DDC: .4byte 0x00001808
 _08177DE0:
@@ -351,7 +351,7 @@ _08177DEE:
 	ldr r1, [r4]
 	b _08177EBA
 	.align 2, 0
-_08177DFC: .4byte 0x08D9C254
+_08177DFC: .4byte gBerryTagScreenData_08D9C254
 _08177E00: .4byte 0x0203B9C0
 _08177E04:
 	ldr r0, _08177E1C
@@ -365,7 +365,7 @@ _08177E04:
 	adds r1, r1, r0
 	b _08177EBE
 	.align 2, 0
-_08177E1C: .4byte 0x08D9C3E4
+_08177E1C: .4byte gBerryTagScreenData_08D9C3E4
 _08177E20: .4byte 0x00001808
 _08177E24:
 	ldr r0, _08177E50
@@ -432,7 +432,7 @@ _08177E90:
 	adds r1, r1, r0
 	b _08177EBE
 	.align 2, 0
-_08177EA4: .4byte 0x08D9C1AC
+_08177EA4: .4byte gBerryTagScreenData_08D9C1AC
 _08177EA8: .4byte 0x0203B9C0
 _08177EAC: .4byte 0x00001808
 _08177EB0:
@@ -449,7 +449,7 @@ _08177EBE:
 	strh r0, [r1]
 	b _08177EE4
 	.align 2, 0
-_08177EC8: .4byte 0x0855A91C
+_08177EC8: .4byte gBerryTagScreenData_0855A91C
 _08177ECC: .4byte 0x0203B9C0
 _08177ED0: .4byte 0x00001808
 _08177ED4:
@@ -458,7 +458,7 @@ _08177ED4:
 	movs r0, #1
 	b _08177EE6
 	.align 2, 0
-_08177EE0: .4byte 0x0855A924
+_08177EE0: .4byte gBerryTagScreenData_0855A924
 _08177EE4:
 	movs r0, #0
 _08177EE6:
@@ -497,8 +497,8 @@ _08177F08:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08177F2C: .4byte 0x085CD0A0
-_08177F30: .4byte 0x085CD078
+_08177F2C: .4byte gBerryTagScreenData_085CD0A0
+_08177F30: .4byte gBerryTagScreenData_085CD078
 	thumb_func_end PrintMysteryMenuText
 
 	thumb_func_start PrintTextInBerryTagScreen
@@ -534,7 +534,7 @@ PrintTextInBerryTagScreen: @ 0x08177F34
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08177F74: .4byte 0x085CD098
+_08177F74: .4byte gBerryTagScreenData_085CD098
 	thumb_func_end PrintTextInBerryTagScreen
 
 	thumb_func_start PrintBerrySize
@@ -1849,7 +1849,7 @@ _081789D8:
 	b _08178CF4
 	.align 2, 0
 _081789F4: .4byte 0x02037C74
-_081789F8: .4byte 0x085CD0DC
+_081789F8: .4byte gBerryTagScreenData_085CD0DC
 _081789FC: .4byte 0x03002360
 _08178A00:
 	movs r0, #0
@@ -1910,7 +1910,7 @@ _08178A50:
 	b _08178BB8
 	.align 2, 0
 _08178A78: .4byte 0x03003180
-_08178A7C: .4byte 0x085CD0FE
+_08178A7C: .4byte gBerryTagScreenData_085CD0FE
 _08178A80: .4byte 0x03002360
 _08178A84:
 	movs r0, #0
@@ -2027,7 +2027,7 @@ _08178B64:
 	bl sub_08178D7C
 	b _08178CEC
 	.align 2, 0
-_08178B80: .4byte 0x085CD133
+_08178B80: .4byte gBerryTagScreenData_085CD133
 _08178B84:
 	bl CloseLink
 _08178B88:

@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x085CBC7B: easy_chat.s: sub_0811C5F4
+	.globl gEasyChatData_085CBC7B
+gEasyChatData_085CBC7B:
 	.globl gUnknown_85CBC7B
 gUnknown_85CBC7B: @ 0x085CBC7B
 	@ analyzed canonical ROM range 0x085CBC7B-0x085CBC80

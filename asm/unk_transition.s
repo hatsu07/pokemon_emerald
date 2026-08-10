@@ -28,11 +28,11 @@ sub_081D9F50: @ 0x081D9F50
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D9F88: .4byte 0x085FC03C
-_081D9F8C: .4byte 0x085FC218
-_081D9F90: .4byte 0x085FC824
-_081D9F94: .4byte 0x085FCA0C
-_081D9F98: .4byte 0x085FCA14
+_081D9F88: .4byte gUnkTransitionData_085FC03C
+_081D9F8C: .4byte gUnkTransitionData_085FC218
+_081D9F90: .4byte gUnkTransitionData_085FC824
+_081D9F94: .4byte gUnkTransitionData_085FCA0C
+_081D9F98: .4byte gUnkTransitionData_085FCA14
 	thumb_func_end sub_081D9F50
 
 	thumb_func_start sub_081D9F9C
@@ -81,7 +81,7 @@ sub_081D9F9C: @ 0x081D9F9C
 	beq _081DA008
 	b _081D9FFC
 	.align 2, 0
-_081D9FF4: .4byte 0x085FCA40
+_081D9FF4: .4byte gUnkTransitionData_085FCA40
 _081D9FF8:
 	cmp r7, #2
 	beq _081DA034
@@ -284,7 +284,7 @@ sub_081DA10C: @ 0x081DA10C
 	beq _081DA184
 	b _081DA178
 	.align 2, 0
-_081DA170: .4byte 0x085FCA40
+_081DA170: .4byte gUnkTransitionData_085FCA40
 _081DA174:
 	cmp r5, #2
 	beq _081DA1B0

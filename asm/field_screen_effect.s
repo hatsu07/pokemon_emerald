@@ -2193,7 +2193,7 @@ _080AF9B2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AF9E0: .4byte 0x0852AB00
+_080AF9E0: .4byte gFieldScreenEffectData_0852AB00
 	thumb_func_end sub_080AF998
 
 	thumb_func_start WriteFlashScanlineEffectBuffer
@@ -2225,7 +2225,7 @@ _080AFA12:
 	bx r0
 	.align 2, 0
 _080AFA18: .4byte 0x020388C8
-_080AFA1C: .4byte 0x0852AB00
+_080AFA1C: .4byte gFieldScreenEffectData_0852AB00
 	thumb_func_end WriteFlashScanlineEffectBuffer
 
 	thumb_func_start WriteBattlePyramidViewScanlineEffectBuffer
@@ -2597,7 +2597,7 @@ _080AFD0C: .4byte 0x0400004A
 _080AFD10: .4byte sBlendTarget2ObjBackdropMasks
 _080AFD14: .4byte 0x0000070C
 _080AFD18: .4byte 0x020388C8
-_080AFD1C: .4byte 0x0852AB18
+_080AFD1C: .4byte gFieldScreenEffectData_0852AB18
 _080AFD20:
 	movs r0, #0
 	movs r1, #0x11

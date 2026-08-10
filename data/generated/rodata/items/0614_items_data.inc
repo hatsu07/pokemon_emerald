@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x083B8098: decoration.s: AddDecorationIconObjectFromEventObject, gpu_pal_decompress_alloc_tag_and_upload, sub_081291AC
+	.globl gDecorationData_083B8098
+gDecorationData_083B8098:
 	.globl gUnknown_83B8098
 gUnknown_83B8098: @ 0x083B8098
 	@ analyzed canonical ROM range 0x083B8098-0x0845A1F3

@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x085570CC: pokemon_icon.s: CreateMonIcon, sub_080D2618
+	.globl gPokemonIconData_085570CC
+gPokemonIconData_085570CC:
 	.globl gUnknown_85570CC
 gUnknown_85570CC: @ 0x085570CC
 	@ analyzed canonical ROM range 0x085570CC-0x0855710F
@@ -8,6 +11,9 @@ sAnalyzedData_085570CC: @ 0x085570CC
 	.2byte 0x0000, 0x000E, 0x0001, 0x000E, 0xFFFE, 0x0000, 0x0000, 0x0016
 	.2byte 0x0001, 0x0016, 0xFFFE, 0x0000, 0x0000, 0x001D, 0x0000, 0x001D
 	.2byte 0xFFFE, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x08557110: pokemon_icon.s: CreateMonIcon, sub_080D2618
+	.globl gPokemonIconData_08557110
+gPokemonIconData_08557110:
 	.globl gUnknown_8557110
 gUnknown_8557110: @ 0x08557110
 	@ confirmed contiguous ROM pointer table: 5 entries from this address
@@ -28,6 +34,9 @@ sAnalyzedData_08557110: @ 0x08557110
 	.4byte 0x00007A00 @ +0x28
 	.4byte 0x00007FFF @ +0x2C
 	.4byte 0 @ +0x30
+	@ pret/pokeemerald-jp direct xref for 0x08557144: pokemon_icon.s: CreateMonIcon, sub_080D2618
+	.globl gPokemonIconData_08557144
+gPokemonIconData_08557144:
 	.globl gUnknown_8557144
 gUnknown_8557144: @ 0x08557144
 	@ analyzed canonical ROM range 0x08557144-0x0855714B
@@ -35,6 +44,9 @@ sAnalyzedData_08557144: @ 0x08557144
 	@ pointer/nullable table
 	.4byte 0x08557124 @ +0x0
 	.4byte 0x08557134 @ +0x4
+	@ pret/pokeemerald-jp direct xref for 0x0855714C: pokemon_icon.s: CreateMonIconSprite, UpdateMonIconFrame, sub_080D2B2C
+	.globl gPokemonIconData_0855714C
+gPokemonIconData_0855714C:
 	.globl gUnknown_855714C
 gUnknown_855714C: @ 0x0855714C
 	@ analyzed canonical ROM range 0x0855714C-0x08557163
@@ -45,6 +57,9 @@ sAnalyzedData_0855714C: @ 0x0855714C
 	.globl gUnknown_8557164
 gUnknown_8557164: @ 0x08557164
 	.space 0x2, 0xFE
+	@ pret/pokeemerald-jp direct xref for 0x08557166: fldeff_cut.s: SetUpFieldMove_Cut
+	.globl gFldeffCutData_08557166
+gFldeffCutData_08557166:
 	.globl gUnknown_8557166
 gUnknown_8557166: @ 0x08557166
 	@ analyzed canonical ROM range 0x08557166-0x085571C7
@@ -57,11 +72,17 @@ sAnalyzedData_08557166: @ 0x08557166
 	.2byte 0x0000, 0x1401, 0x0000, 0x0000, 0x001E, 0xFFFE, 0x0000, 0x71AC
 	.2byte 0x0855, 0xF2AC, 0x084C, 0x0020, 0x0000, 0xF2EC, 0x084C, 0x1000
 	.2byte 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085571C8: fldeff_cut.s: FldEff_CutGrass
+	.globl gFldeffCutData_085571C8
+gFldeffCutData_085571C8:
 	.globl gUnknown_85571C8
 gUnknown_85571C8: @ 0x085571C8
 	@ analyzed canonical ROM range 0x085571C8-0x085571DF
 sSpriteTemplate_085571C8: @ 0x085571C8
 	rodata_sprite_template 0xFFFF, 0x1000, 0x085571A4, 0x085571B4, 0x085571B8, gDummySpriteAffineAnimTable, CutGrassSpriteCallback1
+	@ pret/pokeemerald-jp direct xref for 0x085571E0: map_name_popup.s: LoadMapNamePopUpWindowBg
+	.globl gMapNamePopupData_085571E0
+gMapNamePopupData_085571E0:
 	.globl gUnknown_85571E0
 gUnknown_85571E0: @ 0x085571E0
 	@ analyzed canonical ROM range 0x085571E0-0x0855885F
@@ -427,6 +448,9 @@ sAnalyzedData_085571E0: @ 0x085571E0
 	.byte 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x67, 0x66, 0x66, 0x66
 	.byte 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x76
 	.byte 0x66, 0x66, 0x66, 0x77, 0x66, 0x66, 0x76, 0x77, 0x66, 0x66, 0x77, 0x77, 0x66, 0x76, 0x77, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x08558860: map_name_popup.s: LoadMapNamePopUpWindowBg
+	.globl gMapNamePopupData_08558860
+gMapNamePopupData_08558860:
 	.globl gUnknown_8558860
 gUnknown_8558860: @ 0x08558860
 	@ analyzed canonical ROM range 0x08558860-0x08559EDF
@@ -792,6 +816,9 @@ sAnalyzedData_08558860: @ 0x08558860
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x88, 0x88, 0x98, 0x00, 0x88, 0x88, 0x09, 0x00, 0x98, 0x99, 0x00, 0x00, 0x09, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08559EE0: map_name_popup.s: LoadMapNamePopUpWindowBg
+	.globl gMapNamePopupData_08559EE0
+gMapNamePopupData_08559EE0:
 	.globl gUnknown_8559EE0
 gUnknown_8559EE0: @ 0x08559EE0
 	@ analyzed canonical ROM range 0x08559EE0-0x08559F9F
@@ -809,6 +836,9 @@ sAnalyzedData_08559EE0: @ 0x08559EE0
 	.byte 0x4D, 0x56, 0xC5, 0x2C, 0x8C, 0x47, 0x2B, 0x3F, 0xCB, 0x36, 0x6B, 0x32, 0xC7, 0x11, 0xC5, 0x2C
 	.byte 0x0E, 0x53, 0x00, 0x00, 0xFD, 0x7F, 0x08, 0x3D, 0xFF, 0x7F, 0x76, 0x7F, 0xB1, 0x6A, 0xEC, 0x55
 	.byte 0x27, 0x41, 0x62, 0x2C, 0x5F, 0x53, 0xBC, 0x3E, 0x7B, 0x3A, 0x78, 0x1D, 0xD6, 0x0C, 0xFF, 0x7F
+	@ pret/pokeemerald-jp direct xref for 0x08559FA0: map_name_popup.s: LoadMapNamePopUpWindowBg
+	.globl gMapNamePopupData_08559FA0
+gMapNamePopupData_08559FA0:
 	.globl gUnknown_8559FA0
 gUnknown_8559FA0: @ 0x08559FA0
 	@ analyzed canonical ROM range 0x08559FA0-0x08559FBF
@@ -816,6 +846,9 @@ sAnalyzedData_08559FA0: @ 0x08559FA0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x0E, 0x53, 0x00, 0x00, 0xFD, 0x7F, 0x08, 0x3D, 0xFF, 0x7F, 0x76, 0x7F, 0xB1, 0x6A, 0xEC, 0x55
 	.byte 0x27, 0x41, 0x62, 0x2C, 0x76, 0x7F, 0xB1, 0x6A, 0xEC, 0x55, 0x27, 0x41, 0x62, 0x2C, 0xFF, 0x7F
+	@ pret/pokeemerald-jp direct xref for 0x08559FC0: map_name_popup.s: LoadMapNamePopUpWindowBg
+	.globl gMapNamePopupData_08559FC0
+gMapNamePopupData_08559FC0:
 	.globl gUnknown_8559FC0
 gUnknown_8559FC0: @ 0x08559FC0
 	@ analyzed canonical ROM range 0x08559FC0-0x0855A073
@@ -833,6 +866,9 @@ sAnalyzedData_08559FC0: @ 0x08559FC0
 	.byte 0x9C, 0x77, 0x70, 0xA0, 0x95, 0xA6, 0x41, 0x2E, 0x22, 0xFF, 0x9C, 0x77, 0x70, 0xA0, 0x95, 0xA7
 	.byte 0x41, 0x2E, 0x22, 0xFF, 0x9C, 0x77, 0x70, 0xA0, 0x95, 0xA8, 0x41, 0x2E, 0x22, 0xFF, 0x9C, 0x77
 	.byte 0x70, 0xA0, 0x95, 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x0855A074: map_name_popup.s: ShowMapNamePopUpWindow
+	.globl gMapNamePopupData_0855A074
+gMapNamePopupData_0855A074:
 	.globl gUnknown_855A074
 gUnknown_855A074: @ 0x0855A074
 	@ analyzed canonical ROM range 0x0855A074-0x0855A663
@@ -933,24 +969,36 @@ sAnalyzedData_0855A074: @ 0x0855A074
 	.2byte 0x0000, 0x0000, 0x02FE, 0x0000, 0x0000, 0x0000, 0x0402, 0x0000
 	.2byte 0x0000, 0x0000, 0x04FE, 0x0000, 0x0000, 0x0000, 0x0202, 0x0000
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000, 0xA624, 0x0855, 0xA634, 0x0855
+	@ pret/pokeemerald-jp direct xref for 0x0855A664: item_menu.s: LoadBagMenu_Graphics
+	.globl gItemMenuData_0855A664
+gItemMenuData_0855A664:
 	.globl gUnknown_855A664
 gUnknown_855A664: @ 0x0855A664
 	@ analyzed canonical ROM range 0x0855A664-0x0855A66B
 sAnalyzedData_0855A664: @ 0x0855A664
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x30, 0x90, 0xD9, 0x08, 0x00, 0x30, 0x64, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0855A66C: item_menu.s: LoadBagMenu_Graphics
+	.globl gItemMenuData_0855A66C
+gItemMenuData_0855A66C:
 	.globl gUnknown_855A66C
 gUnknown_855A66C: @ 0x0855A66C
 	@ analyzed canonical ROM range 0x0855A66C-0x0855A673
 sAnalyzedData_0855A66C: @ 0x0855A66C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xAC, 0x9B, 0xD9, 0x08, 0x00, 0x30, 0x64, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0855A674: item_menu.s: LoadBagMenu_Graphics
+	.globl gItemMenuData_0855A674
+gItemMenuData_0855A674:
 	.globl gUnknown_855A674
 gUnknown_855A674: @ 0x0855A674
 	@ analyzed canonical ROM range 0x0855A674-0x0855A67B
 sAnalyzedData_0855A674: @ 0x0855A674
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x0C, 0xA7, 0xD9, 0x08, 0x64, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0855A67C: item_menu_icons.s: AddBagVisualSprite
+	.globl gItemMenuIconsData_0855A67C
+gItemMenuIconsData_0855A67C:
 	.globl gUnknown_855A67C
 gUnknown_855A67C: @ 0x0855A67C
 	@ analyzed canonical ROM range 0x0855A67C-0x0855A6C7
@@ -961,30 +1009,45 @@ sAnalyzedData_0855A67C: @ 0x0855A67C
 	.2byte 0x0000, 0x0000, 0xFFFF, 0x0000, 0xA69C, 0x0855, 0x0000, 0x0000
 	.2byte 0x1008, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x10F8, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0855A6C8: item_menu_icons.s: SpriteCB_SwitchPocketRotatingBallInit
+	.globl gItemMenuIconsData_0855A6C8
+gItemMenuIconsData_0855A6C8:
 	.globl gUnknown_855A6C8
 gUnknown_855A6C8: @ 0x0855A6C8
 	@ analyzed canonical ROM range 0x0855A6C8-0x0855A6CB
 sAnalyzedData_0855A6C8: @ 0x0855A6C8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xA8, 0xA6, 0x55, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x0855A6CC: item_menu_icons.s: SpriteCB_SwitchPocketRotatingBallInit
+	.globl gItemMenuIconsData_0855A6CC
+gItemMenuIconsData_0855A6CC:
 	.globl gUnknown_855A6CC
 gUnknown_855A6CC: @ 0x0855A6CC
 	@ analyzed canonical ROM range 0x0855A6CC-0x0855A6CF
 sAnalyzedData_0855A6CC: @ 0x0855A6CC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xB8, 0xA6, 0x55, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x0855A6D0: item_menu_icons.s: AddSwitchPocketRotatingBallSprite
+	.globl gItemMenuIconsData_0855A6D0
+gItemMenuIconsData_0855A6D0:
 	.globl gUnknown_855A6D0
 gUnknown_855A6D0: @ 0x0855A6D0
 	@ analyzed canonical ROM range 0x0855A6D0-0x0855A6D7
 sAnalyzedData_0855A6D0: @ 0x0855A6D0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xB4, 0xA0, 0x55, 0x08, 0x80, 0x00, 0x65, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0855A6D8: item_menu_icons.s: AddSwitchPocketRotatingBallSprite
+	.globl gItemMenuIconsData_0855A6D8
+gItemMenuIconsData_0855A6D8:
 	.globl gUnknown_855A6D8
 gUnknown_855A6D8: @ 0x0855A6D8
 	@ analyzed canonical ROM range 0x0855A6D8-0x0855A6DF
 sAnalyzedData_0855A6D8: @ 0x0855A6D8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x94, 0xA0, 0x55, 0x08, 0x65, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0855A6E0: item_menu_icons.s: AddSwitchPocketRotatingBallSprite
+	.globl gItemMenuIconsData_0855A6E0
+gItemMenuIconsData_0855A6E0:
 	.globl gUnknown_855A6E0
 gUnknown_855A6E0: @ 0x0855A6E0
 	@ analyzed canonical ROM range 0x0855A6E0-0x0855A71B
@@ -994,6 +1057,9 @@ sAnalyzedData_0855A6E0: @ 0x0855A6E0
 	.byte 0xC8, 0xA6, 0x55, 0x08, 0x35, 0x47, 0x0D, 0x08, 0x00, 0x00, 0x00, 0xC0, 0x00, 0x74, 0x00, 0x00
 	.byte 0x00, 0x03, 0x00, 0xC0, 0x00, 0x70, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00
 	.byte 0x08, 0xA7, 0x55, 0x08, 0x00, 0xC0, 0x01, 0x02, 0x00, 0x08, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0855A71C: item_menu_icons.s: CreateBerryTagSprite
+	.globl gItemMenuIconsData_0855A71C
+gItemMenuIconsData_0855A71C:
 	.globl gUnknown_855A71C
 gUnknown_855A71C: @ 0x0855A71C
 	@ analyzed canonical ROM range 0x0855A71C-0x0855A7AB
@@ -1008,11 +1074,17 @@ sAnalyzedData_0855A71C: @ 0x0855A71C
 	.byte 0xFE, 0xFF, 0xFE, 0xFF, 0x01, 0x40, 0x00, 0x00, 0xF8, 0xFF, 0x00, 0x00, 0x00, 0x10, 0x00, 0x00
 	.byte 0x00, 0x00, 0xF8, 0xFF, 0x00, 0x10, 0x00, 0x00, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00
 	.byte 0xFE, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x34, 0xA7, 0x55, 0x08, 0x6C, 0xA7, 0x55, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x0855A7AC: item_menu_icons.s: LoadSpinningBerryPicGfx
+	.globl gItemMenuIconsData_0855A7AC
+gItemMenuIconsData_0855A7AC:
 	.globl gUnknown_855A7AC
 gUnknown_855A7AC: @ 0x0855A7AC
 	@ analyzed canonical ROM range 0x0855A7AC-0x0855A7C3
 sSpriteTemplate_0855A7AC: @ 0x0855A7AC
 	rodata_sprite_template 0xFFFF, 0x7544, 0x0855A700, 0x0855A710, 0x0855A714, 0x0855A7A4, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x0855A7C4: item_menu_icons.s: LoadBerryGfx
+	.globl gItemMenuIconsData_0855A7C4
+gItemMenuIconsData_0855A7C4:
 	.globl gUnknown_855A7C4
 gUnknown_855A7C4: @ 0x0855A7C4
 	@ analyzed canonical ROM range 0x0855A7C4-0x0855A91B
@@ -1104,12 +1176,18 @@ sAnalyzedData_0855A7C4: @ 0x0855A7C4
 	.4byte 0x08DA20D0 @ +0x14C
 	.4byte 0x08DA1850 @ +0x150
 	.4byte 0x08DA20F8 @ +0x154
+	@ pret/pokeemerald-jp direct xref for 0x0855A91C: berry_tag_screen.s: LoadBerryTagGfx
+	.globl gBerryTagScreenData_0855A91C
+gBerryTagScreenData_0855A91C:
 	.globl gUnknown_855A91C
 gUnknown_855A91C: @ 0x0855A91C
 	@ analyzed canonical ROM range 0x0855A91C-0x0855A923
 sAnalyzedData_0855A91C: @ 0x0855A91C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF4, 0xC4, 0xD9, 0x08, 0x00, 0x08, 0x10, 0x27
+	@ pret/pokeemerald-jp direct xref for 0x0855A924: berry_tag_screen.s: LoadBerryTagGfx
+	.globl gBerryTagScreenData_0855A924
+gBerryTagScreenData_0855A924:
 	.globl gUnknown_855A924
 gUnknown_855A924: @ 0x0855A924
 	@ analyzed canonical ROM range 0x0855A924-0x0855A93F
@@ -1117,6 +1195,9 @@ sAnalyzedData_0855A924: @ 0x0855A924
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xAC, 0xC1, 0xD9, 0x08, 0x10, 0x27, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80, 0x00, 0x04, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x34, 0xA9, 0x55, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x0855A940: item_menu_icons.s: CreateBerryFlavorCircleSprite
+	.globl gItemMenuIconsData_0855A940
+gItemMenuIconsData_0855A940:
 	.globl gUnknown_855A940
 gUnknown_855A940: @ 0x0855A940
 	@ analyzed canonical ROM range 0x0855A940-0x0855A9CF

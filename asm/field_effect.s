@@ -571,7 +571,7 @@ CreateTrainerSprite: @ 0x080B55C4
 	.align 2, 0
 _080B564C: .4byte 0x082D91CC
 _080B5650: .4byte 0x082D8EE4
-_080B5654: .4byte 0x08536EBC
+_080B5654: .4byte gFieldEffectData_08536EBC
 _080B5658: .4byte gDummySpriteAnimTable
 _080B565C: .4byte gDummySpriteAffineAnimTable
 _080B5660: .4byte 0x08007141
@@ -634,8 +634,8 @@ AddNewGameBirchObject: @ 0x080B569C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B56D4: .4byte 0x08536EDC
-_080B56D8: .4byte 0x08536EF0
+_080B56D4: .4byte gFieldEffectData_08536EDC
+_080B56D8: .4byte gFieldEffectData_08536EF0
 	thumb_func_end AddNewGameBirchObject
 
 	thumb_func_start CreateMonSprite_PicBox
@@ -1436,8 +1436,8 @@ _080B5CBA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B5CC0: .4byte 0x08536FB0
-_080B5CC4: .4byte 0x08537050
+_080B5CC0: .4byte gFieldEffectData_08536FB0
+_080B5CC4: .4byte gFieldEffectData_08537050
 _080B5CC8: .4byte 0x020205AC
 	thumb_func_end PokeballGlowEffect_0
 
@@ -1615,8 +1615,8 @@ _080B5E1A:
 	bx r0
 	.align 2, 0
 _080B5E28: .4byte 0x00001007
-_080B5E2C: .4byte 0x08537068
-_080B5E30: .4byte 0x0853706C
+_080B5E2C: .4byte gFieldEffectData_08537068
+_080B5E30: .4byte gFieldEffectData_0853706C
 _080B5E34: .4byte 0x08537070
 _080B5E38: .4byte 0x01050000
 _080B5E3C: .4byte 0x01030000
@@ -1727,8 +1727,8 @@ _080B5E70:
 	bx r0
 	.align 2, 0
 _080B5F1C: .4byte 0x00001007
-_080B5F20: .4byte 0x08537068
-_080B5F24: .4byte 0x0853706C
+_080B5F20: .4byte gFieldEffectData_08537068
+_080B5F24: .4byte gFieldEffectData_0853706C
 _080B5F28: .4byte 0x08537070
 _080B5F2C: .4byte 0x01050000
 _080B5F30: .4byte 0x01030000
@@ -1855,9 +1855,9 @@ PokecenterHealEffectHelper: @ 0x080B5FA8
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B5FF8: .4byte 0x08536FC8
+_080B5FF8: .4byte gFieldEffectData_08536FC8
 _080B5FFC: .4byte 0x020205AC
-_080B6000: .4byte 0x08536F58
+_080B6000: .4byte gFieldEffectData_08536F58
 	thumb_func_end PokecenterHealEffectHelper
 
 	thumb_func_start SpriteCB_PokecenterMonitor
@@ -1926,9 +1926,9 @@ HallOfFameRecordEffectHelper: @ 0x080B6044
 	bl SetSubspriteTables
 	b _080B60A0
 	.align 2, 0
-_080B6080: .4byte 0x08536FE0
+_080B6080: .4byte gFieldEffectData_08536FE0
 _080B6084: .4byte 0x020205AC
-_080B6088: .4byte 0x08536F70
+_080B6088: .4byte gFieldEffectData_08536F70
 _080B608C:
 	ldr r0, _080B60C0
 	lsls r1, r1, #0x10
@@ -1956,7 +1956,7 @@ _080B60A0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B60C0: .4byte 0x08536FF8
+_080B60C0: .4byte gFieldEffectData_08536FF8
 _080B60C4: .4byte 0x020205AC
 	thumb_func_end HallOfFameRecordEffectHelper
 
@@ -4181,7 +4181,7 @@ FldEff_LavaridgeGymWarp: @ 0x080B714C
 	bx r1
 	.align 2, 0
 _080B71A4: .4byte 0x020388A8
-_080B71A8: .4byte 0x084DDE4C
+_080B71A8: .4byte gUnknown_84DDE4C
 _080B71AC: .4byte 0x020205AC
 	thumb_func_end FldEff_LavaridgeGymWarp
 
@@ -4486,7 +4486,7 @@ FldEff_PopOutOfAsh: @ 0x080B73A0
 	bx r1
 	.align 2, 0
 _080B73F8: .4byte 0x020388A8
-_080B73FC: .4byte 0x084DDE4C
+_080B73FC: .4byte gUnknown_84DDE4C
 _080B7400: .4byte 0x020205AC
 	thumb_func_end FldEff_PopOutOfAsh
 
@@ -4640,7 +4640,7 @@ _080B74DE:
 	bl DestroyTask
 	b _080B7598
 	.align 2, 0
-_080B7530: .4byte 0x08537128
+_080B7530: .4byte gFieldEffectData_08537128
 _080B7534: .4byte 0x02037230
 _080B7538: .4byte 0x02036FF0
 _080B753C: .4byte 0x02037C74
@@ -4834,7 +4834,7 @@ _080B768A:
 	bl DestroyTask
 	b _080B7718
 	.align 2, 0
-_080B76C4: .4byte 0x08537128
+_080B76C4: .4byte gFieldEffectData_08537128
 _080B76C8: .4byte 0x02037230
 _080B76CC: .4byte 0x02036FF0
 _080B76D0: .4byte 0x080B75ED
@@ -5005,7 +5005,7 @@ _080B7806:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B7810: .4byte 0x08537128
+_080B7810: .4byte gFieldEffectData_08537128
 _080B7814: .4byte 0x02037230
 _080B7818: .4byte 0x02036FF0
 	thumb_func_end TeleportFieldEffectTask2
@@ -5110,7 +5110,7 @@ _080B78D6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B78E0: .4byte 0x08537128
+_080B78E0: .4byte gFieldEffectData_08537128
 _080B78E4: .4byte 0x02037230
 _080B78E8: .4byte 0x02036FF0
 _080B78EC: .4byte 0x020205AC
@@ -5345,7 +5345,7 @@ sub_080B7A64: @ 0x080B7A64
 	strb r0, [r3]
 	b _080B7B02
 	.align 2, 0
-_080B7ACC: .4byte 0x08537128
+_080B7ACC: .4byte gFieldEffectData_08537128
 _080B7AD0: .4byte 0x02037230
 _080B7AD4: .4byte 0x02036FF0
 _080B7AD8: .4byte 0x020205AC
@@ -5484,7 +5484,7 @@ _080B7BDC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B7BE4: .4byte 0x08537128
+_080B7BE4: .4byte gFieldEffectData_08537128
 _080B7BE8: .4byte 0x02037230
 _080B7BEC: .4byte 0x02036FF0
 _080B7BF0: .4byte 0x080B79A9
@@ -5697,7 +5697,7 @@ sub_080B7D50: @ 0x080B7D50
 	bx r0
 	.align 2, 0
 _080B7DA8: .4byte 0x04000008
-_080B7DAC: .4byte 0x08535AFC
+_080B7DAC: .4byte gFieldEffectData_08535AFC
 _080B7DB0: .4byte 0x05000200
 _080B7DB4: .4byte 0x08535CFC
 	thumb_func_end sub_080B7D50
@@ -6011,7 +6011,7 @@ _080B7FE2:
 	bx r0
 	.align 2, 0
 _080B8000: .4byte 0x06000140
-_080B8004: .4byte 0x08535D1C
+_080B8004: .4byte gFieldEffectData_08535D1C
 _080B8008: .4byte 0x0000013F
 	thumb_func_end sub_080B7FCC
 
@@ -6115,9 +6115,9 @@ sub_080B8078: @ 0x080B8078
 	bx r0
 	.align 2, 0
 _080B80D4: .4byte 0x04000008
-_080B80D8: .4byte 0x08535F9C
+_080B80D8: .4byte gFieldEffectData_08535F9C
 _080B80DC: .4byte 0x05000200
-_080B80E0: .4byte 0x0853601C
+_080B80E0: .4byte gFieldEffectData_0853601C
 	thumb_func_end sub_080B8078
 
 	thumb_func_start sub_080B80E4
@@ -6433,7 +6433,7 @@ _080B8330:
 	bx r1
 	.align 2, 0
 _080B8340: .4byte 0x06000140
-_080B8344: .4byte 0x0853603C
+_080B8344: .4byte gFieldEffectData_0853603C
 	thumb_func_end sub_080B8290
 
 	thumb_func_start sub_080B8348
@@ -7042,16 +7042,16 @@ _080B87A8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B87F4: .4byte 0x084DDE4C
+_080B87F4: .4byte gUnknown_84DDE4C
 _080B87F8: .4byte 0x020205AC
 _080B87FC: .4byte 0x0000FFFF
 _080B8800: .4byte 0x00003E41
 _080B8804: .4byte 0x00000E0E
 _080B8808: .4byte 0x00003F3F
-_080B880C: .4byte 0x085362BC
+_080B880C: .4byte gFieldEffectData_085362BC
 _080B8810: .4byte 0x0600F800
 _080B8814: .4byte 0x0000BFF4
-_080B8818: .4byte 0x085362DC
+_080B8818: .4byte gFieldEffectData_085362DC
 _080B881C: .4byte 0x06008020
 _080B8820: .4byte 0x06008022
 	thumb_func_end sub_080B86F0
@@ -7094,7 +7094,7 @@ FldEff_NPCFlyOut: @ 0x080B8824
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B8870: .4byte 0x084DDE4C
+_080B8870: .4byte gUnknown_84DDE4C
 _080B8874: .4byte 0x020205AC
 _080B8878: .4byte 0x080B8881
 _080B887C: .4byte 0x020388A8
@@ -7211,7 +7211,7 @@ sub_080B892C: @ 0x080B892C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B8954: .4byte 0x085371A0
+_080B8954: .4byte gFieldEffectData_085371A0
 _080B8958: .4byte 0x03005B60
 	thumb_func_end sub_080B892C
 
@@ -7599,7 +7599,7 @@ sub_080B8C1C: @ 0x080B8C1C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B8C54: .4byte 0x084DDE4C
+_080B8C54: .4byte gUnknown_84DDE4C
 _080B8C58: .4byte 0x020205AC
 _080B8C5C: .4byte 0x080B8CD5
 	thumb_func_end sub_080B8C1C
@@ -7759,7 +7759,7 @@ _080B8D80:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B8D88: .4byte 0x085371F4
+_080B8D88: .4byte gFieldEffectData_085371F4
 _080B8D8C: .4byte 0x0000FFD0
 _080B8D90: .4byte 0x000007FF
 	thumb_func_end sub_080B8CD4
@@ -7938,7 +7938,7 @@ _080B8EDC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B8EE4: .4byte 0x085371F4
+_080B8EE4: .4byte gFieldEffectData_085371F4
 _080B8EE8: .4byte 0x0000FFE0
 	thumb_func_end sub_080B8E08
 
@@ -8181,7 +8181,7 @@ _080B90BA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B90C4: .4byte 0x08537218
+_080B90C4: .4byte gFieldEffectData_08537218
 _080B90C8: .4byte 0x02037230
 _080B90CC: .4byte 0x020205AC
 	thumb_func_end sub_080B907C
@@ -8538,7 +8538,7 @@ sub_080B9370: @ 0x080B9370
 	bx r0
 	.align 2, 0
 _080B9378: .4byte 0x03005B68
-_080B937C: .4byte 0x0853723C
+_080B937C: .4byte gFieldEffectData_0853723C
 	thumb_func_end sub_080B9370
 
 	thumb_func_start sub_080B9380
@@ -8733,7 +8733,7 @@ _080B94EE:
 	.align 2, 0
 _080B9500: .4byte 0x03005B4C
 _080B9504: .4byte 0x03005B48
-_080B9508: .4byte 0x08537298
+_080B9508: .4byte gFieldEffectData_08537298
 _080B950C: .4byte 0x020205AC
 	thumb_func_end sub_080B947C
 

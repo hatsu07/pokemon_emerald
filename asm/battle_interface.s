@@ -3880,7 +3880,7 @@ _08073B56:
 	b _08073B7E
 	.align 2, 0
 _08073B64: .4byte 0x02022AE0
-_08073B68: .4byte 0x085CC4EA
+_08073B68: .4byte gBattleInterfaceData_085CC4EA
 _08073B6C: .4byte 0x082EA31C
 _08073B70: .4byte 0x085CC4FA
 _08073B74:
@@ -4722,7 +4722,7 @@ _0807424E:
 	.align 2, 0
 _08074254: .4byte 0x020205AC
 _08074258: .4byte 0x02024178
-_0807425C: .4byte 0x085ABC38
+_0807425C: .4byte gBattleInterfaceData_085ABC38
 _08074260:
 	adds r0, r1, #0
 	subs r0, #0x4b

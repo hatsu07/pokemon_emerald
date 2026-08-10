@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x08591074: wallclock.s: CB2_ViewWallClock
+	.globl gWallclockData_08591074
+gWallclockData_08591074:
 	.globl gUnknown_8591074
 gUnknown_8591074: @ 0x08591074
 	@ analyzed canonical ROM range 0x08591074-0x0859130B
@@ -6,6 +9,9 @@ sAnalyzedGfx_08591074: @ 0x08591074
 	.if (. - sAnalyzedGfx_08591074) != 0x298
 	.error "gUnknown_8591074 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x0859130C: wallclock.s: LoadWallClockGraphics
+	.globl gWallclockData_0859130C
+gWallclockData_0859130C:
 	.globl gUnknown_859130C
 gUnknown_859130C: @ 0x0859130C
 	@ analyzed canonical ROM range 0x0859130C-0x08591C03

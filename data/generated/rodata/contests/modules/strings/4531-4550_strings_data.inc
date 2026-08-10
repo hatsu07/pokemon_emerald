@@ -69,6 +69,9 @@ gText_Rom_5C98EC: @ 0x085C98EC
 	.if (. - gText_Rom_5C98EC) < 0x17
 	.space 0x17 - (. - gText_Rom_5C98EC)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085C9903: shop.s: Task_BuyMenu
+	.globl gShopData_085C9903
+gShopData_085C9903:
 	.globl gUnknown_85C9903
 gUnknown_85C9903: @ 0x085C9903
 	@ analyzed canonical ROM range 0x085C9903-0x085C991E

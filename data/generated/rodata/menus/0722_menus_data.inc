@@ -1,4 +1,7 @@
 
+	@ pret/pokeemerald-jp direct xref for 0x0852E6C0: wild_encounter.s: StandardWildEncounter, SweetScentWildEncounter
+	.globl gWildEncounterData_0852E6C0
+gWildEncounterData_0852E6C0:
 	.globl gUnknown_852E6C0
 gUnknown_852E6C0: @ 0x0852E6C0
 	@ analyzed canonical ROM range 0x0852E6C0-0x0852E723
@@ -11,6 +14,9 @@ sAnalyzedData_0852E6C0: @ 0x0852E6C0
 	.2byte 0xE6B8, 0x0852, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0xFFFF, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0852E724: wild_encounter.s: FishingWildEncounter
+	.globl gWildEncounterData_0852E724
+gWildEncounterData_0852E724:
 	.globl gUnknown_852E724
 gUnknown_852E724: @ 0x0852E724
 	@ analyzed canonical ROM range 0x0852E724-0x0852E727

@@ -654,7 +654,7 @@ sub_080FDD58: @ 0x080FDD58
 	b _080FDE16
 	.align 2, 0
 _080FDDAC: .4byte 0x03005B68
-_080FDDB0: .4byte 0x0856DCC8
+_080FDDB0: .4byte gItemUseData_0856DCC8
 _080FDDB4: .4byte 0x080FE2E9
 _080FDDB8:
 	bl GetPlayerFacingDirection
@@ -689,7 +689,7 @@ _080FDDD8:
 	strh r0, [r4, #4]
 	b _080FDE16
 	.align 2, 0
-_080FDDF4: .4byte 0x0856DCC8
+_080FDDF4: .4byte gItemUseData_0856DCC8
 _080FDDF8: .4byte 0x03005B60
 _080FDDFC: .4byte 0x080FE331
 _080FDE00:
@@ -1414,7 +1414,7 @@ _080FE31E:
 	bx r0
 	.align 2, 0
 _080FE324: .4byte 0x02036FF0
-_080FE328: .4byte 0x085C958E
+_080FE328: .4byte gItemUseData_085C958E
 _080FE32C: .4byte 0x080FDE21
 	thumb_func_end sub_080FE2E8
 
@@ -1482,7 +1482,7 @@ _080FE3A4:
 	.align 2, 0
 _080FE3AC: .4byte 0x03005B68
 _080FE3B0: .4byte 0x02036FF0
-_080FE3B4: .4byte 0x0856DCC8
+_080FE3B4: .4byte gItemUseData_0856DCC8
 _080FE3B8: .4byte 0x085C95B6
 _080FE3BC: .4byte 0x080FDE21
 	thumb_func_end sub_080FE330
@@ -2097,7 +2097,7 @@ sub_080FE874: @ 0x080FE874
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080FE888: .4byte 0x0856DCCC
+_080FE888: .4byte gItemUseData_0856DCCC
 	thumb_func_end sub_080FE874
 
 	thumb_func_start sub_080FE88C

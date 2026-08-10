@@ -25,6 +25,9 @@ gText_Rom_5AA883: @ 0x085AA883
 sAnalyzedData_085AA889: @ 0x085AA889
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFD, 0x0F, 0x19, 0xFE, 0xFD, 0x00, 0x37, 0x00, 0xFD, 0x01, 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x085AA894: pokemon.s: sub_0806C9E8
+	.globl gPokemonData_085AA894
+gPokemonData_085AA894:
 	.globl gUnknown_85AA894
 gUnknown_85AA894: @ 0x085AA894
 	@ analyzed canonical ROM range 0x085AA894-0x085AA8ED

@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x085CC379: trainer_card.s: PrintIdOnCard
+	.globl gTrainerCardData_085CC379
+gTrainerCardData_085CC379:
 	.globl gUnknown_85CC379
 gUnknown_85CC379: @ 0x085CC379
 	@ analyzed canonical ROM range 0x085CC379-0x085CC382

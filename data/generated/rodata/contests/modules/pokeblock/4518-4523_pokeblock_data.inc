@@ -8,6 +8,9 @@ gText_Rom_5C985C: @ 0x085C985C
 	.endif
 	.globl gText_Rom_5C9860
 	.set gText_Rom_5C9860, gText_Rom_5C985C + 0x4
+	@ pret/pokeemerald-jp direct xref for 0x085C9864: pokeblock.spokeblock.s: sub_08135F30
+	.globl gPokeblockSpokeblockData_085C9864
+gPokeblockSpokeblockData_085C9864:
 	.globl gUnknown_85C9864
 gUnknown_85C9864: @ 0x085C9864
 	@ analyzed canonical ROM range 0x085C9864-0x085C9868

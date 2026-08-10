@@ -528,7 +528,7 @@ _08057476:
 	adds r0, #1
 	b _080574B0
 	.align 2, 0
-_08057494: .4byte 0x082ECF80
+_08057494: .4byte gBattleControllerPlayerData_082ECF80
 _08057498: .4byte 0x03005AD4
 _0805749C: .4byte 0x02023D10
 _080574A0: .4byte 0x03002360
@@ -1395,7 +1395,7 @@ _08057BAE:
 	bx r0
 	.align 2, 0
 _08057BB8: .4byte 0x03005AD4
-_08057BBC: .4byte 0x085ABBD8
+_08057BBC: .4byte gBattleControllerPlayerData_085ABBD8
 _08057BC0: .4byte 0x03005AC0
 _08057BC4: .4byte 0x02023D08
 _08057BC8: .4byte 0x08057D49
@@ -9285,9 +9285,9 @@ _0805BC7E:
 _0805BCB0: .4byte 0x03005AC0
 _0805BCB4: .4byte 0x02023D08
 _0805BCB8: .4byte 0x0805BC21
-_0805BCBC: .4byte 0x085ABB72
+_0805BCBC: .4byte gUnknown_85ABB72
 _0805BCC0: .4byte 0x02024150
-_0805BCC4: .4byte 0x085ABB43
+_0805BCC4: .4byte gBattleControllerPlayerData_085ABB43
 _0805BCC8: .4byte 0x02022AE0
 	thumb_func_end PlayerHandleChooseAction
 
@@ -9325,7 +9325,7 @@ PlayerHandleUnknownYesNoBox: @ 0x0805BCCC
 	b _0805BD28
 	.align 2, 0
 _0805BD10: .4byte 0x02023D08
-_0805BD14: .4byte 0x085ABBC9
+_0805BD14: .4byte gUnknown_85ABBC9
 _0805BD18: .4byte 0x03005AD4
 _0805BD1C: .4byte 0x03005AC0
 _0805BD20: .4byte 0x080595E5

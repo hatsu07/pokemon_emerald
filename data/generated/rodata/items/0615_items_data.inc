@@ -3,6 +3,7 @@ gUnknown_845A1F4: @ 0x0845A1F4
 	@ analyzed canonical ROM range 0x0845A1F4-0x0845DFD9
 	@ pass3: gMapLayouts + MapHeader table; byte-verified
 sAnalyzedData_0845A1F4: @ 0x0845A1F4
+	@ pret/pokeemerald-jp direct xref for 0x0845A1F4: battle_pyramid.s: GenerateBattlePyramidFloorLayout; overworld.s: GetMapLayout
 	.globl gMapLayouts
 gMapLayouts: @ 0x0845A1F4
 	.4byte MapLayout_JP_083B8944, MapLayout_JP_083B9C24, MapLayout_JP_083BA284, MapLayout_JP_083BB564, MapLayout_JP_083BBBC4, MapLayout_JP_083BD4E4

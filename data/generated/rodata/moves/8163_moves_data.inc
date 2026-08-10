@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x08D8A918: intro.s: Task_IntroLoadKyogreScene
+	.globl gIntroData_08D8A918
+gIntroData_08D8A918:
 	.globl gUnknown_8D8A918
 gUnknown_8D8A918: @ 0x08D8A918
 	@ confirmed GBA LZ77 stream: compressed=0x11E, decompressed=0x800
@@ -8,6 +11,9 @@ sAnalyzedGfx_08D8A918: @ 0x08D8A918
 	.if (. - sAnalyzedGfx_08D8A918) != 0x120
 	.error "gUnknown_8D8A918 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D8AA38: intro.s: Task_IntroLoadClouds1
+	.globl gIntroData_08D8AA38
+gIntroData_08D8AA38:
 	.globl gUnknown_8D8AA38
 gUnknown_8D8AA38: @ 0x08D8AA38
 	@ confirmed GBA LZ77 stream: compressed=0x729, decompressed=0x2000
@@ -18,6 +24,9 @@ sAnalyzedGfx_08D8AA38: @ 0x08D8AA38
 	.if (. - sAnalyzedGfx_08D8AA38) != 0x72C
 	.error "gUnknown_8D8AA38 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D8B164: intro.s: Task_IntroLoadClouds2
+	.globl gIntroData_08D8B164
+gIntroData_08D8B164:
 	.globl gUnknown_8D8B164
 gUnknown_8D8B164: @ 0x08D8B164
 	@ confirmed GBA LZ77 stream: compressed=0x2BE, decompressed=0x1000
@@ -28,6 +37,9 @@ sAnalyzedGfx_08D8B164: @ 0x08D8B164
 	.if (. - sAnalyzedGfx_08D8B164) != 0x2C0
 	.error "gUnknown_8D8B164 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D8B424: intro.s: Task_IntroLoadClouds2
+	.globl gIntroData_08D8B424
+gIntroData_08D8B424:
 	.globl gUnknown_8D8B424
 gUnknown_8D8B424: @ 0x08D8B424
 	@ confirmed GBA LZ77 stream: compressed=0x2A6, decompressed=0x1000
@@ -38,6 +50,9 @@ sAnalyzedGfx_08D8B424: @ 0x08D8B424
 	.if (. - sAnalyzedGfx_08D8B424) != 0x2A8
 	.error "gUnknown_8D8B424 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D8B6CC: intro.s: Task_IntroLoadClouds1
+	.globl gIntroData_08D8B6CC
+gIntroData_08D8B6CC:
 	.globl gUnknown_8D8B6CC
 gUnknown_8D8B6CC: @ 0x08D8B6CC
 	@ confirmed GBA LZ77 stream: compressed=0x124, decompressed=0x800
@@ -102,6 +117,9 @@ sAnalyzedData_08D8B6CC: @ 0x08D8B6CC
 	.byte 0x00, 0x23, 0xE0, 0x20, 0xF3, 0x92, 0xD1, 0x91, 0x26, 0x00, 0x00, 0x00, 0xE9, 0x56, 0xFF, 0x4B
 	.byte 0x5F, 0x03, 0xF9, 0x1A, 0xFF, 0x7F, 0x2A, 0x25, 0xAE, 0x29, 0x32, 0x32, 0xD6, 0x3A, 0x5A, 0x43
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08D8BA58: intro.s: Task_IntroLoadRayquazaLightningScene
+	.globl gIntroData_08D8BA58
+gIntroData_08D8BA58:
 	.globl gUnknown_8D8BA58
 gUnknown_8D8BA58: @ 0x08D8BA58
 	@ confirmed GBA LZ77 stream: compressed=0x6F6, decompressed=0x2000
@@ -112,6 +130,9 @@ sAnalyzedGfx_08D8BA58: @ 0x08D8BA58
 	.if (. - sAnalyzedGfx_08D8BA58) != 0x6F8
 	.error "gUnknown_8D8BA58 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D8C150: intro.s: Task_IntroLoadRayquazaLightningScene
+	.globl gIntroData_08D8C150
+gIntroData_08D8C150:
 	.globl gUnknown_8D8C150
 gUnknown_8D8C150: @ 0x08D8C150
 	@ confirmed GBA LZ77 stream: compressed=0x208, decompressed=0x800
@@ -228,6 +249,9 @@ sAnalyzedData_08D8C150: @ 0x08D8C150
 	.byte 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0
 	.byte 0x01, 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01
 	.byte 0xF0, 0x01, 0xE0, 0xF0, 0x01, 0xF0, 0x01, 0xE0, 0x01, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08D8C81C: intro.s: Task_IntroLoadRayquazaLightningScene
+	.globl gIntroData_08D8C81C
+gIntroData_08D8C81C:
 	.globl gUnknown_8D8C81C
 gUnknown_8D8C81C: @ 0x08D8C81C
 	@ confirmed GBA LZ77 stream: compressed=0x48F, decompressed=0x2000
@@ -238,6 +262,9 @@ sAnalyzedGfx_08D8C81C: @ 0x08D8C81C
 	.if (. - sAnalyzedGfx_08D8C81C) != 0x490
 	.error "gUnknown_8D8C81C compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D8CCAC: intro.s: Task_IntroLoadRayquazaLightningScene
+	.globl gIntroData_08D8CCAC
+gIntroData_08D8CCAC:
 	.globl gUnknown_8D8CCAC
 gUnknown_8D8CCAC: @ 0x08D8CCAC
 	@ confirmed GBA LZ77 stream: compressed=0x27A, decompressed=0x800
@@ -362,6 +389,9 @@ sAnalyzedData_08D8CCAC: @ 0x08D8CCAC
 	.byte 0x32, 0x42, 0x32, 0x42, 0x43, 0x03, 0x83, 0x00, 0x36, 0x30, 0x42, 0x43, 0x43, 0x03, 0x00, 0xF6
 	.byte 0x81, 0xB5, 0x00, 0x00, 0x00, 0x43, 0x30, 0x30, 0x04, 0x34, 0x03, 0x1C, 0x44, 0x00, 0x40, 0x00
 	.byte 0x32, 0xA1, 0xE5, 0x40, 0x01, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08D8D3F4: rock.s: AnimTask_LoadSandstormBackground
+	.globl gRockData_08D8D3F4
+gRockData_08D8D3F4:
 	.globl gUnknown_8D8D3F4
 gUnknown_8D8D3F4: @ 0x08D8D3F4
 	@ confirmed GBA LZ77 stream: compressed=0x17C, decompressed=0x800
@@ -372,6 +402,9 @@ sAnalyzedGfx_08D8D3F4: @ 0x08D8D3F4
 	.if (. - sAnalyzedGfx_08D8D3F4) != 0x17C
 	.error "gUnknown_8D8D3F4 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D8D570: rock.s: AnimTask_LoadSandstormBackground
+	.globl gRockData_08D8D570
+gRockData_08D8D570:
 	.globl gUnknown_8D8D570
 gUnknown_8D8D570: @ 0x08D8D570
 	@ confirmed GBA LZ77 stream: compressed=0x52C, decompressed=0x800

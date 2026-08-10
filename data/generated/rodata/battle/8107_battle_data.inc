@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x088BA568: libc.s: _sbrk
+	.globl gLibcData_088BA568
+gLibcData_088BA568:
 	.globl gUnknown_88BA568
 gUnknown_88BA568: @ 0x088BA568
 	@ analyzed canonical ROM range 0x088BA568-0x088CF3AF

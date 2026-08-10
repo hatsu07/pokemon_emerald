@@ -82,7 +82,7 @@ _0814549E:
 	.align 2, 0
 _081454B8: .4byte 0x0203A85C
 _081454BC: .4byte 0x0203A860
-_081454C0: .4byte 0x085987C4
+_081454C0: .4byte gPokedexCryScreenData_085987C4
 _081454C4:
 	movs r4, #0
 	ldr r1, _081454F8
@@ -131,7 +131,7 @@ _08145516:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08145524: .4byte 0x085987A4
+_08145524: .4byte gPokedexCryScreenData_085987A4
 	thumb_func_end sub_08145420
 
 	thumb_func_start sub_08145528
@@ -436,7 +436,7 @@ _0814574A:
 	bx r0
 	.align 2, 0
 _0814576C: .4byte 0x0203A85C
-_08145770: .4byte 0x085987C4
+_08145770: .4byte gPokedexCryScreenData_085987C4
 	thumb_func_end sub_08145714
 
 	thumb_func_start sub_08145774
@@ -536,10 +536,10 @@ _081457CC:
 _08145830: .4byte 0x40920000
 _08145834: .4byte 0x00000000
 _08145838: .4byte 0x0203A85C
-_0814583C: .4byte 0x085987E4
+_0814583C: .4byte gPokedexCryScreenData_085987E4
 _08145840: .4byte 0x0203A860
-_08145844: .4byte 0x08598324
-_08145848: .4byte 0x085987E6
+_08145844: .4byte gPokedexCryScreenData_08598324
+_08145848: .4byte gPokedexCryScreenData_085987E6
 _0814584C:
 	lsls r3, r6, #4
 	mov sl, r3
@@ -610,8 +610,8 @@ _081458B6:
 	bx r0
 	.align 2, 0
 _081458D0: .4byte 0x0203A860
-_081458D4: .4byte 0x08598324
-_081458D8: .4byte 0x085987E6
+_081458D4: .4byte gPokedexCryScreenData_08598324
+_081458D8: .4byte gPokedexCryScreenData_085987E6
 _081458DC: .4byte 0x0203A85C
 	thumb_func_end sub_08145774
 
@@ -695,8 +695,8 @@ _08145950:
 	b _081459C4
 	.align 2, 0
 _08145970: .4byte 0x0203A864
-_08145974: .4byte 0x08597FEC
-_08145978: .4byte 0x08597FCC
+_08145974: .4byte gPokedexCryScreenData_08597FEC
+_08145978: .4byte gPokedexCryScreenData_08597FCC
 _0814597C:
 	ldr r0, _081459D0
 	bl LoadSpriteSheets
@@ -739,9 +739,9 @@ _081459C4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081459D0: .4byte 0x08598834
-_081459D4: .4byte 0x08598844
-_081459D8: .4byte 0x0859881C
+_081459D0: .4byte gPokedexCryScreenData_08598834
+_081459D4: .4byte gPokedexCryScreenData_08598844
+_081459D8: .4byte gPokedexCryScreenData_0859881C
 _081459DC: .4byte 0x0203A864
 	thumb_func_end sub_0814591C
 

@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x08565BC1: naming_screen.s: sub_080E40A8
+	.globl gNamingScreenData_08565BC1
+gNamingScreenData_08565BC1:
 	.globl gUnknown_8565BC1
 gUnknown_8565BC1: @ 0x08565BC1
 	@ analyzed canonical ROM range 0x08565BC1-0x08565C7A
@@ -15,6 +18,9 @@ sAnalyzedData_08565BC1: @ 0x08565BC1
 	.byte 0xE9, 0xEA, 0xEB, 0xEC, 0xED, 0xEE, 0xBB, 0xBC, 0xBD, 0xBE, 0xBF, 0xC0, 0xC1, 0xC2, 0xC3, 0xC4
 	.byte 0xC5, 0xC6, 0xC7, 0xC8, 0xC9, 0xCA, 0xCB, 0xCC, 0xCD, 0xCE, 0xCF, 0xD0, 0xD1, 0xD2, 0xD3, 0xD4
 	.byte 0xA2, 0xA3, 0xA4, 0xA5, 0xA6, 0xA7, 0xA8, 0xA9, 0xAA, 0xA1
+	@ pret/pokeemerald-jp direct xref for 0x08565C7B: naming_screen.s: sub_080E44A4
+	.globl gNamingScreenData_08565C7B
+gNamingScreenData_08565C7B:
 	.globl gUnknown_8565C7B
 gUnknown_8565C7B: @ 0x08565C7B
 	@ analyzed canonical ROM range 0x08565C7B-0x08565C8B
@@ -22,12 +28,18 @@ sAnalyzedData_08565C7B: @ 0x08565C7B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x02, 0x01, 0x03, 0x00, 0x00, 0x0D, 0x01, 0x02, 0x00, 0x0E, 0x01, 0x02, 0x00, 0x0F, 0x01, 0x02
 	.byte 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08565C8C: naming_screen.s: sub_080E45D0
+	.globl gNamingScreenData_08565C8C
+gNamingScreenData_08565C8C:
 	.globl gUnknown_8565C8C
 gUnknown_8565C8C: @ 0x08565C8C
 	@ analyzed canonical ROM range 0x08565C8C-0x08565C8F
 sAnalyzedData_08565C8C: @ 0x08565C8C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xEE, 0xDD, 0xFF, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08565C90: naming_screen.s: sub_080E45D0
+	.globl gNamingScreenData_08565C90
+gNamingScreenData_08565C90:
 	.globl gUnknown_8565C90
 gUnknown_8565C90: @ 0x08565C90
 	@ analyzed canonical ROM range 0x08565C90-0x08565C9B
@@ -36,11 +48,17 @@ sAnalyzedData_08565C90: @ 0x08565C90
 	.4byte 0x08565C84 @ +0x0
 	.4byte 0x08565C80 @ +0x4
 	.4byte 0x08565C88 @ +0x8
+	@ pret/pokeemerald-jp direct xref for 0x08565C9C: naming_screen.s: sub_080E4648
+	.globl gNamingScreenData_08565C9C
+gNamingScreenData_08565C9C:
 	.globl gUnknown_8565C9C
 gUnknown_8565C9C: @ 0x08565C9C
 	@ analyzed canonical ROM range 0x08565C9C-0x08565CB3
 sSpriteTemplate_08565C9C: @ 0x08565C9C
 	rodata_sprite_template 0x5600, 0x0856, 0x08565790, gUnknown_85656C8, gUnknown_8565600, gUnknown_85656C8, 0x08565790
+	@ pret/pokeemerald-jp direct xref for 0x08565CB4: naming_screen.s: sub_080E46E4
+	.globl gNamingScreenData_08565CB4
+gNamingScreenData_08565CB4:
 	.globl gUnknown_8565CB4
 gUnknown_8565CB4: @ 0x08565CB4
 	@ analyzed canonical ROM range 0x08565CB4-0x08565CE7
@@ -50,6 +68,9 @@ sAnalyzedData_08565CB4: @ 0x08565CB4
 	.2byte 0x0800, 0x0002, 0x1300, 0x0000, 0x5874, 0x0856, 0x0500, 0x0103
 	.2byte 0x2300, 0x0000, 0x5881, 0x0856, 0x0C01, 0x0004, 0x0B01, 0x0000
 	.2byte 0x588F, 0x0856
+	@ pret/pokeemerald-jp direct xref for 0x08565CE8: naming_screen.s: NamingScreen_Init
+	.globl gNamingScreenData_08565CE8
+gNamingScreenData_08565CE8:
 	.globl gUnknown_8565CE8
 gUnknown_8565CE8: @ 0x08565CE8
 	@ analyzed canonical ROM range 0x08565CE8-0x08565D67
@@ -63,23 +84,35 @@ sAnalyzedData_08565CE8: @ 0x08565CE8
 	.byte 0x04, 0xFC, 0x10, 0x40, 0xF4, 0xFC, 0x01, 0x40, 0x04, 0xFC, 0x20, 0x40, 0xEC, 0xF4, 0x05, 0x40
 	.byte 0x0C, 0xF4, 0x40, 0x40, 0xEC, 0xFC, 0x55, 0x40, 0x0C, 0xFC, 0x90, 0x40, 0xEC, 0x04, 0xA5, 0x40
 	.byte 0x0C, 0x04, 0xE0, 0x40, 0xF8, 0xF4, 0x01, 0xC0, 0xF8, 0xFC, 0x21, 0xC0, 0xF8, 0x04, 0x41, 0xC0
+	@ pret/pokeemerald-jp direct xref for 0x08565D68: naming_screen.s: CreatePageSwitcherSprites
+	.globl gNamingScreenData_08565D68
+gNamingScreenData_08565D68:
 	.globl gUnknown_8565D68
 gUnknown_8565D68: @ 0x08565D68
 	@ analyzed canonical ROM range 0x08565D68-0x08565D6F
 sAnalyzedData_08565D68: @ 0x08565D68
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x08, 0x00, 0x00, 0x00, 0x14, 0x5D, 0x56, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x08565D70: naming_screen.s: CreatePageSwitcherSprites
+	.globl gNamingScreenData_08565D70
+gNamingScreenData_08565D70:
 	.globl gUnknown_8565D70
 gUnknown_8565D70: @ 0x08565D70
 	@ analyzed canonical ROM range 0x08565D70-0x08565D87
 sSpriteTemplate_08565D70: @ 0x08565D70
 	rodata_sprite_template 0x0002, 0x0000, 0x08565D34, 0x00000002, 0x08565D3C, 0x00000002, 0x08565D34
+	@ pret/pokeemerald-jp direct xref for 0x08565D88: naming_screen.s: CreateBackOkSprites
+	.globl gNamingScreenData_08565D88
+gNamingScreenData_08565D88:
 	.globl gUnknown_8565D88
 gUnknown_8565D88: @ 0x08565D88
 	@ analyzed canonical ROM range 0x08565D88-0x08565D8F
 sAnalyzedData_08565D88: @ 0x08565D88
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x06, 0x00, 0x00, 0x00, 0x44, 0x5D, 0x56, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x08565D90: naming_screen.s: NamingScreen_CreatePCIcon
+	.globl gNamingScreenData_08565D90
+gNamingScreenData_08565D90:
 	.globl gUnknown_8565D90
 gUnknown_8565D90: @ 0x08565D90
 	@ analyzed canonical ROM range 0x08565D90-0x08565DD7
@@ -90,51 +123,81 @@ sAnalyzedData_08565D90: @ 0x08565D90
 	.2byte 0x0004, 0x0008, 0x0008, 0x0008, 0xFFFF, 0x0000, 0x0000, 0x0002
 	.2byte 0x0001, 0x0002, 0xFFFE, 0x0000, 0x5DA8, 0x0856, 0x5DA8, 0x0856
 	.2byte 0x5DB0, 0x0856, 0x5DBC, 0x0856
+	@ pret/pokeemerald-jp direct xref for 0x08565DD8: naming_screen.s: CreatePageSwitcherSprites
+	.globl gNamingScreenData_08565DD8
+gNamingScreenData_08565DD8:
 	.globl gUnknown_8565DD8
 gUnknown_8565DD8: @ 0x08565DD8
 	@ analyzed canonical ROM range 0x08565DD8-0x08565DEF
 sSpriteTemplate_08565DD8: @ 0x08565DD8
 	rodata_sprite_template 0x0002, 0x0004, 0x08565CFC, 0x08565DC8, 0, gDummySpriteAffineAnimTable, sub_080E3544
+	@ pret/pokeemerald-jp direct xref for 0x08565DF0: naming_screen.s: CreatePageSwitcherSprites
+	.globl gNamingScreenData_08565DF0
+gNamingScreenData_08565DF0:
 	.globl gUnknown_8565DF0
 gUnknown_8565DF0: @ 0x08565DF0
 	@ analyzed canonical ROM range 0x08565DF0-0x08565E07
 sSpriteTemplate_08565DF0: @ 0x08565DF0
 	rodata_sprite_template 0x0003, 0x0001, 0x08565D0C, 0x08565DC8, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x08565E08: naming_screen.s: CreatePageSwitcherSprites
+	.globl gNamingScreenData_08565E08
+gNamingScreenData_08565E08:
 	.globl gUnknown_8565E08
 gUnknown_8565E08: @ 0x08565E08
 	@ analyzed canonical ROM range 0x08565E08-0x08565E1F
 sSpriteTemplate_08565E08: @ 0x08565E08
 	rodata_sprite_template 0x0004, 0x0004, 0x08565CFC, 0x08565DC8, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x08565E20: naming_screen.s: CreateBackOkSprites
+	.globl gNamingScreenData_08565E20
+gNamingScreenData_08565E20:
 	.globl gUnknown_8565E20
 gUnknown_8565E20: @ 0x08565E20
 	@ analyzed canonical ROM range 0x08565E20-0x08565E37
 sSpriteTemplate_08565E20: @ 0x08565E20
 	rodata_sprite_template 0x0000, 0x0006, 0x08565CFC, 0x08565DC8, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x08565E38: naming_screen.s: CreateBackOkSprites
+	.globl gNamingScreenData_08565E38
+gNamingScreenData_08565E38:
 	.globl gUnknown_8565E38
 gUnknown_8565E38: @ 0x08565E38
 	@ analyzed canonical ROM range 0x08565E38-0x08565E4F
 sSpriteTemplate_08565E38: @ 0x08565E38
 	rodata_sprite_template 0x0001, 0x0007, 0x08565CFC, 0x08565DC8, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x08565E50: naming_screen.s: CursorInit
+	.globl gNamingScreenData_08565E50
+gNamingScreenData_08565E50:
 	.globl gUnknown_8565E50
 gUnknown_8565E50: @ 0x08565E50
 	@ analyzed canonical ROM range 0x08565E50-0x08565E67
 sSpriteTemplate_08565E50: @ 0x08565E50
 	rodata_sprite_template 0x0007, 0x0005, 0x08565D04, 0x08565DCC, 0, gDummySpriteAffineAnimTable, sub_080E3060
+	@ pret/pokeemerald-jp direct xref for 0x08565E68: naming_screen.s: CreateUnderscoreSprites
+	.globl gNamingScreenData_08565E68
+gNamingScreenData_08565E68:
 	.globl gUnknown_8565E68
 gUnknown_8565E68: @ 0x08565E68
 	@ analyzed canonical ROM range 0x08565E68-0x08565E7F
 sSpriteTemplate_08565E68: @ 0x08565E68
 	rodata_sprite_template 0x000A, 0x0003, 0x08565CFC, 0x08565DC8, 0, gDummySpriteAffineAnimTable, sub_080E3144
+	@ pret/pokeemerald-jp direct xref for 0x08565E80: naming_screen.s: CreateUnderscoreSprites
+	.globl gNamingScreenData_08565E80
+gNamingScreenData_08565E80:
 	.globl gUnknown_8565E80
 gUnknown_8565E80: @ 0x08565E80
 	@ analyzed canonical ROM range 0x08565E80-0x08565E97
 sSpriteTemplate_08565E80: @ 0x08565E80
 	rodata_sprite_template 0x000B, 0x0003, 0x08565CFC, 0x08565DC8, 0, gDummySpriteAffineAnimTable, sub_080E3190
+	@ pret/pokeemerald-jp direct xref for 0x08565E98: naming_screen.s: NamingScreen_CreatePCIcon
+	.globl gNamingScreenData_08565E98
+gNamingScreenData_08565E98:
 	.globl gUnknown_8565E98
 gUnknown_8565E98: @ 0x08565E98
 	@ analyzed canonical ROM range 0x08565E98-0x08565EAF
 sSpriteTemplate_08565E98: @ 0x08565E98
 	rodata_sprite_template 0xFFFF, 0x0000, 0x08565CFC, 0x08565DD4, 0x08565D98, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x08565EB0: naming_screen.s: GetCharAtKeyboardPos, sub_080E45D0
+	.globl gNamingScreenData_08565EB0
+gNamingScreenData_08565EB0:
 	.globl gUnknown_8565EB0
 gUnknown_8565EB0: @ 0x08565EB0
 	@ analyzed canonical ROM range 0x08565EB0-0x08565EDF
@@ -152,6 +215,9 @@ sAnalyzedData_08565EB0: @ 0x08565EB0
 	.4byte 0x085659AB @ +0x24
 	.4byte 0x085659BF @ +0x28
 	.4byte 0x085659D3 @ +0x2C
+	@ pret/pokeemerald-jp direct xref for 0x08565EE0: naming_screen.s: choose_name_or_words_screen_load_bg_tile_patterns
+	.globl gNamingScreenData_08565EE0
+gNamingScreenData_08565EE0:
 	.globl gUnknown_8565EE0
 gUnknown_8565EE0: @ 0x08565EE0
 	@ analyzed canonical ROM range 0x08565EE0-0x08565F47
@@ -164,6 +230,9 @@ sAnalyzedData_08565EE0: @ 0x08565EE0
 	.byte 0x78, 0x4F, 0x56, 0x08, 0x80, 0x00, 0x08, 0x00, 0xF8, 0x4F, 0x56, 0x08, 0x80, 0x00, 0x09, 0x00
 	.byte 0x78, 0x48, 0x56, 0x08, 0x20, 0x00, 0x0A, 0x00, 0x78, 0x4A, 0x56, 0x08, 0x20, 0x00, 0x0B, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08565F48: naming_screen.s: choose_name_or_words_screen_load_bg_tile_patterns
+	.globl gNamingScreenData_08565F48
+gNamingScreenData_08565F48:
 	.globl gUnknown_8565F48
 gUnknown_8565F48: @ 0x08565F48
 	@ analyzed canonical ROM range 0x08565F48-0x08565FA3
@@ -192,23 +261,33 @@ sAnalyzedData_08565F48: @ 0x08565F48
 	.4byte 0 @ +0x50
 	.4byte 0x0000FFFF @ +0x54
 	.4byte 0x08565F98 @ +0x58
+	@ pret/pokeemerald-jp direct xref for 0x08565FA4: money.s: AddMoneyLabelObject
+	.globl gMoneyData_08565FA4
+gMoneyData_08565FA4:
 	.globl gUnknown_8565FA4
 gUnknown_8565FA4: @ 0x08565FA4
 	@ analyzed canonical ROM range 0x08565FA4-0x08565FBB
 sSpriteTemplate_08565FA4: @ 0x08565FA4
 	rodata_sprite_template 0x2722, 0x2722, 0x08565F90, 0x08565FA0, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x08565FBC: money.s: AddMoneyLabelObject
+	.globl gMoneyData_08565FBC
+gMoneyData_08565FBC:
 	.globl gUnknown_8565FBC
 gUnknown_8565FBC: @ 0x08565FBC
 	@ analyzed canonical ROM range 0x08565FBC-0x08565FC3
 sAnalyzedData_08565FBC: @ 0x08565FBC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x28, 0xB4, 0xD9, 0x08, 0x00, 0x01, 0x22, 0x27
+	@ pret/pokeemerald-jp direct xref for 0x08565FC4: money.s: AddMoneyLabelObject
+	.globl gMoneyData_08565FC4
+gMoneyData_08565FC4:
 	.globl gUnknown_8565FC4
 gUnknown_8565FC4: @ 0x08565FC4
 	@ analyzed canonical ROM range 0x08565FC4-0x08565FCB
 sAnalyzedData_08565FC4: @ 0x08565FC4
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xC0, 0xB2, 0xD9, 0x08, 0x22, 0x27, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08565FCC: contest.s: Contest_GetMoveExcitement, sub_080D7CBC, sub_080D8334, sub_080DAA50, sub_080DAAD4 (+2 more); contest_ai.s: ContestAICmd_check_most_appealing_move, ContestAICmd_get_move_effect, ContestAICmd_get_move_effect_type, ContestAICmd_g...
 	.globl gUnknown_8565FCC
 gUnknown_8565FCC: @ 0x08565FCC
 	@ analyzed canonical ROM range 0x08565FCC-0x08566AE3
@@ -392,6 +471,7 @@ sAnalyzedData_08565FCC: @ 0x08565FCC
 	.2byte 0x0423, 0x0000, 0x0000, 0x0000, 0x001D, 0x0D00, 0x0000, 0x0000
 	.2byte 0x012B, 0x0100, 0x0000, 0x0000, 0x002F, 0x0000, 0x0000, 0x0000
 	.2byte 0x0301, 0x3E00, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x08566AE4: contest.s: sub_080DAA50, sub_080DAAD4, sub_080DC7E4; contest_ai.s: ContestAICmd_check_most_appealing_move, ContestAICmd_get_move_effect_type, ContestAICmd_unk_2F, ContestAICmd_unk_31, ContestAICmd_unk_36 (+1 more); contest_effect.s: Cont...
 	.globl gUnknown_8566AE4
 gUnknown_8566AE4: @ 0x08566AE4
 	@ analyzed canonical ROM range 0x08566AE4-0x08566BA3
@@ -409,6 +489,9 @@ sAnalyzedData_08566AE4: @ 0x08566AE4
 	.2byte 0x1405, 0x0000, 0x1E05, 0x0000, 0x0A05, 0x0000, 0x0A05, 0x0000
 	.2byte 0x1E06, 0x0000, 0x1E06, 0x0000, 0x1E06, 0x0000, 0x1E06, 0x0000
 	.2byte 0x0A05, 0x0000, 0x1403, 0x000A, 0x0A05, 0x0000, 0x1E04, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x08566BA4: contest_effect.s: AreMovesContestCombo, ContestEffect_MakeFollowingMonsNervous
+	.globl gContestEffectData_08566BA4
+gContestEffectData_08566BA4:
 	.globl gUnknown_8566BA4
 gUnknown_8566BA4: @ 0x08566BA4
 	@ analyzed canonical ROM range 0x08566BA4-0x08566BE3

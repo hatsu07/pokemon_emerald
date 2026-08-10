@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x08579ED8: easy_chat.s: GetEasyChatWordGroupName, unref_sub_811F3E0
+	.globl gEasyChatData_08579ED8
+gEasyChatData_08579ED8:
 	.globl gUnknown_8579ED8
 gUnknown_8579ED8: @ 0x08579ED8
 	@ confirmed contiguous ROM pointer table: 22 entries from this address
@@ -27,18 +30,27 @@ sAnalyzedData_08579ED8: @ 0x08579ED8
 	.4byte gText_Rom_579EC4 @ +0x4C
 	.4byte 0x08579EC8 @ +0x50
 	.4byte gText_Rom_579ECF @ +0x54
+	@ pret/pokeemerald-jp direct xref for 0x08579F30: easy_chat.s: CopyEasyChatWord, GetEasyChatWordStringLength
+	.globl gEasyChatData_08579F30
+gEasyChatData_08579F30:
 	.globl gUnknown_8579F30
 gUnknown_8579F30: @ 0x08579F30
 	@ analyzed canonical ROM range 0x08579F30-0x08579F33
 sAnalyzedData_08579F30: @ 0x08579F30
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xAC, 0xAC, 0xAC, 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x08579F34: easy_chat.s: GetFooterOptionXOffset
+	.globl gEasyChatData_08579F34
+gEasyChatData_08579F34:
 	.globl gUnknown_8579F34
 gUnknown_8579F34: @ 0x08579F34
 	@ analyzed canonical ROM range 0x08579F34-0x08579F37
 sAnalyzedData_08579F34: @ 0x08579F34
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x9A, 0x01, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08579F38: mon_markings.s: sub_081201A0
+	.globl gMonMarkingsData_08579F38
+gMonMarkingsData_08579F38:
 	.globl gUnknown_8579F38
 gUnknown_8579F38: @ 0x08579F38
 	@ analyzed canonical ROM range 0x08579F38-0x08579F57
@@ -46,6 +58,9 @@ sAnalyzedData_08579F38: @ 0x08579F38
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x50, 0xFF, 0x7F, 0x00, 0x00, 0x5B, 0x6F, 0x00, 0x00, 0xF6, 0x5A, 0x9D, 0x77, 0xEF, 0x3D
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08579F58: mon_markings.s: sub_081201A0
+	.globl gMonMarkingsData_08579F58
+gMonMarkingsData_08579F58:
 	.globl gUnknown_8579F58
 gUnknown_8579F58: @ 0x08579F58
 	@ analyzed canonical ROM range 0x08579F58-0x0857A277
@@ -101,6 +116,9 @@ sAnalyzedData_08579F58: @ 0x08579F58
 	.2byte 0x2251, 0x5522, 0x5511, 0x1555, 0x1111, 0x1111, 0x1111, 0x1111
 	.2byte 0x1111, 0x1111, 0x1111, 0x1111, 0x1111, 0x1111, 0x1111, 0x1111
 	.2byte 0x1111, 0x1111, 0x1111, 0x1111, 0x1111, 0x1111, 0x1111, 0x1111
+	@ pret/pokeemerald-jp direct xref for 0x0857A278: mon_markings.s: sub_081204B4, sub_081204D4
+	.globl gMonMarkingsData_0857A278
+gMonMarkingsData_0857A278:
 	.globl gUnknown_857A278
 gUnknown_857A278: @ 0x0857A278
 	@ analyzed canonical ROM range 0x0857A278-0x0857A297
@@ -108,6 +126,9 @@ sAnalyzedData_0857A278: @ 0x0857A278
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xB5, 0x56, 0x6B, 0x49, 0xEC, 0x49, 0xFF, 0x7F, 0x39, 0x67, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0857A298: mon_markings.s: sub_081204F4, sub_081205A4
+	.globl gMonMarkingsData_0857A298
+gMonMarkingsData_0857A298:
 	.globl gUnknown_857A298
 gUnknown_857A298: @ 0x0857A298
 	@ analyzed canonical ROM range 0x0857A298-0x0857AA97

@@ -678,13 +678,13 @@ _081A6120: .4byte 0x00000CA9
 _081A6124: .4byte 0x000040CE
 _081A6128: .4byte 0x00000DE2
 _081A612C: .4byte 0x0203B954
-_081A6130: .4byte 0x085B4A10
+_081A6130: .4byte gUnknown_85B4A10
 _081A6134: .4byte 0x00000CB2
 _081A6138: .4byte 0x00000CB4
 _081A613C: .4byte 0x0203886A
 _081A6140: .4byte 0x0203B958
 _081A6144: .4byte 0x00000351
-_081A6148: .4byte 0x085ADBF4
+_081A6148: .4byte gUnknown_85ADBF4
 _081A614C: .4byte 0x03005FD8
 	thumb_func_end GenerateOpponentMons
 
@@ -722,7 +722,7 @@ SetRentalsToOpponentParty: @ 0x081A6164
 _081A6184: .4byte 0x03005AF0
 _081A6188: .4byte 0x00000CA9
 _081A618C: .4byte 0x0203B958
-_081A6190: .4byte 0x085B8700
+_081A6190: .4byte gUnknown_85B8700
 _081A6194:
 	ldr r1, _081A6238
 	ldr r0, _081A623C
@@ -806,14 +806,14 @@ _081A61A0:
 	bx r0
 	.align 2, 0
 _081A6238: .4byte 0x0203B958
-_081A623C: .4byte 0x085BCF70
+_081A623C: .4byte gUnknown_85BCF70
 _081A6240: .4byte 0x03005AF0
 _081A6244: .4byte 0x03005FD8
 _081A6248: .4byte 0x020243E8
 _081A624C: .4byte 0x00000E78
 _081A6250: .4byte 0x00000E74
 _081A6254: .4byte 0x00000E79
-_081A6258: .4byte 0x085ADBF4
+_081A6258: .4byte gUnknown_85ADBF4
 	thumb_func_end SetRentalsToOpponentParty
 
 	thumb_func_start SetPlayerAndOpponentParties
@@ -844,7 +844,7 @@ SetPlayerAndOpponentParties: @ 0x081A625C
 _081A6288: .4byte 0x03005AF0
 _081A628C: .4byte 0x00000CA9
 _081A6290: .4byte 0x0203B958
-_081A6294: .4byte 0x085BCF70
+_081A6294: .4byte gUnknown_85BCF70
 _081A6298:
 	ldr r1, _081A6558
 	ldr r0, _081A655C
@@ -1200,13 +1200,13 @@ _081A6546:
 	bx r0
 	.align 2, 0
 _081A6558: .4byte 0x0203B958
-_081A655C: .4byte 0x085B8700
+_081A655C: .4byte gUnknown_85B8700
 _081A6560: .4byte 0x02037282
 _081A6564: .4byte 0x03005AF0
 _081A6568: .4byte 0x00000E78
 _081A656C: .4byte 0x02024190
 _081A6570: .4byte 0x00000E74
-_081A6574: .4byte 0x085ADBF4
+_081A6574: .4byte gUnknown_85ADBF4
 _081A6578: .4byte 0x00000E79
 _081A657C: .4byte 0x020243E8
 _081A6580: .4byte 0x00000E9D
@@ -1299,13 +1299,13 @@ _081A6610:
 	b _081A6650
 	.align 2, 0
 _081A662C: .4byte 0x0203B954
-_081A6630: .4byte 0x085B4A10
+_081A6630: .4byte gUnknown_85B4A10
 _081A6634: .4byte 0x03005AF0
 _081A6638: .4byte 0x00000CA9
 _081A663C: .4byte 0x000040CE
 _081A6640: .4byte 0x00000DE2
 _081A6644: .4byte 0x0203B958
-_081A6648: .4byte 0x085B8700
+_081A6648: .4byte gUnknown_85B8700
 _081A664C:
 	movs r5, #0
 	str r5, [sp, #0x28]
@@ -1422,7 +1422,7 @@ _081A66FC:
 	b _081A6734
 	.align 2, 0
 _081A6724: .4byte 0x0203B958
-_081A6728: .4byte 0x085ADBF4
+_081A6728: .4byte gUnknown_85ADBF4
 _081A672C:
 	adds r5, #2
 	adds r3, #1
@@ -1481,7 +1481,7 @@ _081A6782:
 	.align 2, 0
 _081A6794: .4byte 0x03005AF0
 _081A6798: .4byte 0x0203B958
-_081A679C: .4byte 0x085ADBF4
+_081A679C: .4byte gUnknown_85ADBF4
 	thumb_func_end GenerateInitialRentalMons
 
 	thumb_func_start GetOpponentMostCommonMonType
@@ -1564,7 +1564,7 @@ _081A681C:
 	b _081A684A
 	.align 2, 0
 _081A6830: .4byte 0x0203B958
-_081A6834: .4byte 0x085B8700
+_081A6834: .4byte gUnknown_85B8700
 _081A6838: .4byte 0x02037290
 _081A683C: .4byte 0x03005FD8
 _081A6840: .4byte 0x082F0D54
@@ -1697,7 +1697,7 @@ _081A691E:
 	bx r0
 	.align 2, 0
 _081A6928: .4byte 0x0203B958
-_081A692C: .4byte 0x085B8700
+_081A692C: .4byte gUnknown_85B8700
 _081A6930: .4byte 0x03005FD8
 _081A6934: .4byte 0x02037290
 _081A6938: .4byte 0x085DD7F8
@@ -1794,7 +1794,7 @@ RestorePlayerPartyHeldItems: @ 0x081A69B4
 _081A69D0: .4byte 0x03005AF0
 _081A69D4: .4byte 0x00000CA9
 _081A69D8: .4byte 0x0203B958
-_081A69DC: .4byte 0x085B8700
+_081A69DC: .4byte gUnknown_85B8700
 _081A69E0:
 	ldr r1, _081A6A2C
 	ldr r0, _081A6A30
@@ -1836,10 +1836,10 @@ _081A69E8:
 	bx r0
 	.align 2, 0
 _081A6A2C: .4byte 0x0203B958
-_081A6A30: .4byte 0x085BCF70
+_081A6A30: .4byte gUnknown_85BCF70
 _081A6A34: .4byte 0x02024190
 _081A6A38: .4byte 0x03005AF0
-_081A6A3C: .4byte 0x085ADBF4
+_081A6A3C: .4byte gUnknown_85ADBF4
 	thumb_func_end RestorePlayerPartyHeldItems
 
 	thumb_func_start GetFactoryMonFixedIV
@@ -2137,7 +2137,7 @@ _081A6C70: .4byte 0x000040CE
 _081A6C74: .4byte 0x00000DE2
 _081A6C78: .4byte 0x0203B958
 _081A6C7C: .4byte 0x00000351
-_081A6C80: .4byte 0x085ADBF4
+_081A6C80: .4byte gUnknown_85ADBF4
 _081A6C84: .4byte 0x020243E8
 	thumb_func_end FillFactoryBrainParty
 

@@ -168,7 +168,7 @@ _081779D8: .4byte 0x085C8BA8
 _081779DC: .4byte 0x085C8C00
 _081779E0: .4byte 0x03005AF0
 _081779E4: .4byte 0x085C8BAE
-_081779E8: .4byte 0x085C8BBB
+_081779E8: .4byte gOptionMenuData_085C8BBB
 _081779EC: .4byte 0x085C8BB6
 _081779F0:
 	movs r0, #0x14
@@ -230,7 +230,7 @@ InitDiplomaBg: @ 0x08177A2C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08177A7C: .4byte 0x085C8C08
+_08177A7C: .4byte gOptionMenuData_085C8C08
 _08177A80: .4byte 0x0203B9BC
 	thumb_func_end InitDiplomaBg
 
@@ -252,8 +252,8 @@ InitDiplomaWindow: @ 0x08177A84
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08177AAC: .4byte 0x085C8C10
-_08177AB0: .4byte 0x085D7B04
+_08177AAC: .4byte gOptionMenuData_085C8C10
+_08177AB0: .4byte gUnknown_85D7B04
 	thumb_func_end InitDiplomaWindow
 
 	thumb_func_start PrintDiplomaText
@@ -290,6 +290,6 @@ PrintDiplomaText: @ 0x08177AB4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08177AF8: .4byte 0x085C8C20
+_08177AF8: .4byte gOptionMenuData_085C8C20
 	thumb_func_end PrintDiplomaText
 

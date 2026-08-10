@@ -57,7 +57,7 @@ _0805EDD0: .4byte 0x02023D0C
 _0805EDD4: .4byte 0x082FACB4
 _0805EDD8: .4byte 0x02023D08
 _0805EDDC: .4byte 0x02022D08
-_0805EDE0: .4byte 0x082ED050
+_0805EDE0: .4byte gBattleControllerOpponentData_082ED050
 _0805EDE4:
 	bl OpponentBufferExecCompleted
 _0805EDE8:

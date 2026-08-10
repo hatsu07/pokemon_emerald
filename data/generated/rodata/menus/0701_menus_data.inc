@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x084F09A8: tileset_anims.s: QueueAnimTiles_BikeShop_BlinkingLights
+	.globl gTilesetAnimsData_084F09A8
+gTilesetAnimsData_084F09A8:
 	.globl gUnknown_84F09A8
 gUnknown_84F09A8: @ 0x084F09A8
 	@ analyzed canonical ROM range 0x084F09A8-0x084F89CF

@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x085FB90C: trainer_hill.s: PrintOnTrainerHillRecordsWindow
+	.globl gTrainerHillData_085FB90C
+gTrainerHillData_085FB90C:
 	.globl gUnknown_85FB90C
 gUnknown_85FB90C: @ 0x085FB90C
 	@ confirmed contiguous ROM pointer table: 4 entries from this address

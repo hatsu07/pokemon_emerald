@@ -25,6 +25,9 @@ gUnknown_85ECE24: @ 0x085ECE24
 	.4byte gText_Rom_5ECE14
 	.4byte gText_Rom_5ECE19
 	.4byte gText_Rom_5ECE1F
+	@ pret/pokeemerald-jp direct xref for 0x085ECE88: pokemon_summary_screen.s: InitBGs
+	.globl gPokemonSummaryScreenData_085ECE88
+gPokemonSummaryScreenData_085ECE88:
 	.globl gUnknown_85ECE88
 gUnknown_85ECE88: @ 0x085ECE88
 	@ analyzed canonical ROM range 0x085ECE88-0x085ECFBB
@@ -50,6 +53,9 @@ sAnalyzedData_085ECE88: @ 0x085ECE88
 	.2byte 0x1823, 0x1824, 0x1824, 0x1824, 0x1824, 0x103D, 0x103D, 0x103D
 	.2byte 0x103D, 0x182E, 0x182D, 0x182D, 0x182D, 0x182D, 0x182D, 0x182D
 	.2byte 0x182D, 0x182D
+	@ pret/pokeemerald-jp direct xref for 0x085ECFBC: pokemon_summary_screen.s: sub_081C1AC8
+	.globl gPokemonSummaryScreenData_085ECFBC
+gPokemonSummaryScreenData_085ECFBC:
 	.globl gUnknown_85ECFBC
 gUnknown_85ECFBC: @ 0x085ECFBC
 	@ analyzed canonical ROM range 0x085ECFBC-0x085ED033
@@ -63,36 +69,54 @@ sAnalyzedData_085ECFBC: @ 0x085ECFBC
 	.2byte 0x003E, 0x0021, 0x0021, 0x0021, 0x0021, 0x0021, 0x0021, 0x0021
 	.2byte 0x0021, 0x0021, 0x0021, 0x0021, 0x0021, 0x0021, 0x0021, 0x0021
 	.2byte 0x0021, 0x0021, 0x0021, 0x0021
+	@ pret/pokeemerald-jp direct xref for 0x085ED034: pokemon_summary_screen.s: sub_081C19A8, sub_081C1A24
+	.globl gPokemonSummaryScreenData_085ED034
+gPokemonSummaryScreenData_085ED034:
 	.globl gUnknown_85ED034
 gUnknown_85ED034: @ 0x085ED034
 	@ analyzed canonical ROM range 0x085ED034-0x085ED03F
 sAnalyzedData_085ED034: @ 0x085ED034
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xCE98, 0x085E, 0x0001, 0x020A, 0x1100, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085ED040: pokemon_summary_screen.s: sub_081C19A8, sub_081C1A24
+	.globl gPokemonSummaryScreenData_085ED040
+gPokemonSummaryScreenData_085ED040:
 	.globl gUnknown_85ED040
 gUnknown_85ED040: @ 0x085ED040
 	@ analyzed canonical ROM range 0x085ED040-0x085ED04B
 sAnalyzedData_085ED040: @ 0x085ED040
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xCE98, 0x085E, 0x0001, 0x020A, 0x3100, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085ED04C: pokemon_summary_screen.s: sub_081C16D8, sub_081C1754
+	.globl gPokemonSummaryScreenData_085ED04C
+gPokemonSummaryScreenData_085ED04C:
 	.globl gUnknown_85ED04C
 gUnknown_85ED04C: @ 0x085ED04C
 	@ analyzed canonical ROM range 0x085ED04C-0x085ED057
 sAnalyzedData_085ED04C: @ 0x085ED04C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xCEC0, 0x085E, 0x0000, 0x0709, 0x2D01, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085ED058: pokemon_summary_screen.s: sub_081C1830, sub_081C18B4
+	.globl gPokemonSummaryScreenData_085ED058
+gPokemonSummaryScreenData_085ED058:
 	.globl gUnknown_85ED058
 gUnknown_85ED058: @ 0x085ED058
 	@ analyzed canonical ROM range 0x085ED058-0x085ED063
 sAnalyzedData_085ED058: @ 0x085ED058
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xCF3E, 0x085E, 0x0000, 0x0709, 0x2D01, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085ED064: pokemon_summary_screen.s: sub_081C02E8
+	.globl gPokemonSummaryScreenData_085ED064
+gPokemonSummaryScreenData_085ED064:
 	.globl gUnknown_85ED064
 gUnknown_85ED064: @ 0x085ED064
 	@ analyzed canonical ROM range 0x085ED064-0x085ED06B
 sAnalyzedData_085ED064: @ 0x085ED064
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0200, 0x0103, 0x0504, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085ED06C: pokemon_summary_screen.s: ResetWindows
+	.globl gPokemonSummaryScreenData_085ED06C
+gPokemonSummaryScreenData_085ED06C:
 	.globl gUnknown_85ED06C
 gUnknown_85ED06C: @ 0x085ED06C
 	@ analyzed canonical ROM range 0x085ED06C-0x085ED113
@@ -109,6 +133,9 @@ sAnalyzedData_085ED06C: @ 0x085ED06C
 	.2byte 0x1600, 0x0204, 0x0602, 0x0131, 0x0100, 0x0402, 0x0702, 0x0135
 	.2byte 0x0100, 0x090C, 0x0602, 0x013D, 0x0400, 0x060E, 0x0602, 0x014F
 	.2byte 0x00FF, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085ED114: pokemon_summary_screen.s: PrintEggMemo, PrintEggOTID, PrintEggState, PrintLeftColumnStats, PrintMonAbilityDescription (+4 more)
+	.globl gPokemonSummaryScreenData_085ED114
+gPokemonSummaryScreenData_085ED114:
 	.globl gUnknown_85ED114
 gUnknown_85ED114: @ 0x085ED114
 	@ analyzed canonical ROM range 0x085ED114-0x085ED133
@@ -116,6 +143,9 @@ sAnalyzedData_085ED114: @ 0x085ED114
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0E00, 0x0704, 0x0602, 0x015B, 0x1800, 0x0504, 0x0602, 0x0169
 	.2byte 0x0B00, 0x1209, 0x0604, 0x0173, 0x0B00, 0x120E, 0x0604, 0x01BB
+	@ pret/pokeemerald-jp direct xref for 0x085ED134: pokemon_summary_screen.s: PrintExpPointsNextLevel, PrintHeldItemName, PrintRibbonCount, ShowPokemonSummaryScreenSet40EF, sub_081C303C
+	.globl gPokemonSummaryScreenData_085ED134
+gPokemonSummaryScreenData_085ED134:
 	.globl gUnknown_85ED134
 gUnknown_85ED134: @ 0x085ED134
 	@ analyzed canonical ROM range 0x085ED134-0x085ED15B
@@ -124,6 +154,9 @@ sAnalyzedData_085ED134: @ 0x085ED134
 	.2byte 0x0B00, 0x0904, 0x0602, 0x015B, 0x1500, 0x0804, 0x0602, 0x016D
 	.2byte 0x0F00, 0x0707, 0x0606, 0x017D, 0x1A00, 0x0307, 0x0606, 0x01A7
 	.2byte 0x1500, 0x080E, 0x0604, 0x01B9
+	@ pret/pokeemerald-jp direct xref for 0x085ED15C: pokemon_summary_screen.s: PrintContestMoveDescription, PrintEggOTName, PrintHMMovesCantBeForgotten, PrintMoveDetails, PrintMoveNameAndPP (+2 more)
+	.globl gPokemonSummaryScreenData_085ED15C
+gPokemonSummaryScreenData_085ED15C:
 	.globl gUnknown_85ED15C
 gUnknown_85ED15C: @ 0x085ED15C
 	@ analyzed canonical ROM range 0x085ED15C-0x085ED17B
@@ -131,6 +164,9 @@ sAnalyzedData_085ED15C: @ 0x085ED15C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0F00, 0x0704, 0x060A, 0x015B, 0x1700, 0x0604, 0x080A, 0x01A1
 	.2byte 0x0B00, 0x120F, 0x0604, 0x01DD, 0x0600, 0x030F, 0x0604, 0x0225
+	@ pret/pokeemerald-jp direct xref for 0x085ED17C: pokemon_summary_screen.s: SummaryScreen_PrintTextOnWindow
+	.globl gPokemonSummaryScreenData_085ED17C
+gPokemonSummaryScreenData_085ED17C:
 	.globl gUnknown_85ED17C
 gUnknown_85ED17C: @ 0x085ED17C
 	@ analyzed canonical ROM range 0x085ED17C-0x085ED222
@@ -147,6 +183,9 @@ sAnalyzedData_085ED17C: @ 0x085ED17C
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xEF, 0xDD, 0x0D, 0x00, 0xEF, 0xDD, 0x00, 0x00, 0xEE
 	.byte 0xDD, 0x00, 0x00, 0xDD, 0x0D, 0x00, 0x00, 0x0D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085ED223: pokemon_summary_screen.s: PrintAOrBButtonIcon
+	.globl gPokemonSummaryScreenData_085ED223
+gPokemonSummaryScreenData_085ED223:
 	.globl gUnknown_85ED223
 gUnknown_85ED223: @ 0x085ED223
 	@ analyzed canonical ROM range 0x085ED223-0x085ED2A3

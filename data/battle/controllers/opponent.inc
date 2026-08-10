@@ -1,6 +1,9 @@
 @ Opponent controller table. ROM 0x082ED050-0x082ED13B.
 @ Numeric pointers retained; semantic target names are comments.
 
+	@ pret/pokeemerald-jp direct xref for 0x082ED050: battle_controller_opponent.s: OpponentBufferRunCommand
+	.globl gBattleControllerOpponentData_082ED050
+gBattleControllerOpponentData_082ED050:
 	.globl gUnknown_82ED050
 gUnknown_82ED050: @ 0x082ED050
 sOpponentBufferCommands:

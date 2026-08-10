@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x08D9B2C0: shop.s: BuyMenuDecompressBgGraphics
+	.globl gShopData_08D9B2C0
+gShopData_08D9B2C0:
 	.globl gUnknown_8D9B2C0
 gUnknown_8D9B2C0: @ 0x08D9B2C0
 	@ confirmed GBA LZ77 stream: compressed=0x28, decompressed=0x20
@@ -8,6 +11,9 @@ sAnalyzedGfx_08D9B2C0: @ 0x08D9B2C0
 	.if (. - sAnalyzedGfx_08D9B2C0) != 0x28
 	.error "gUnknown_8D9B2C0 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D9B2E8: shop.s: BuyMenuDecompressBgGraphics
+	.globl gShopData_08D9B2E8
+gShopData_08D9B2E8:
 	.globl gUnknown_8D9B2E8
 gUnknown_8D9B2E8: @ 0x08D9B2E8
 	@ confirmed GBA LZ77 stream: compressed=0x13E, decompressed=0x800
@@ -44,6 +50,9 @@ sAnalyzedData_08D9B2E8: @ 0x08D9B2E8
 	.byte 0x3D, 0xD0, 0x2B, 0x80, 0x10, 0x01, 0x6C, 0x6C, 0x66, 0x60, 0x6D, 0xD6, 0x6D, 0x71, 0xD6, 0x10
 	.byte 0x77, 0xF0, 0x1D, 0x10, 0x1F, 0xC6, 0xC6, 0x66, 0x00, 0x89, 0x35, 0x26, 0x60, 0x10, 0x59, 0xF0
 	.byte 0x01, 0x66, 0x00, 0x59, 0x6D, 0x00, 0x39, 0xC0, 0xF0, 0x3C, 0x30, 0x01
+	@ pret/pokeemerald-jp direct xref for 0x08D9B4B4: pokeblock.spokeblock.s: sub_08135C88
+	.globl gPokeblockSpokeblockData_08D9B4B4
+gPokeblockSpokeblockData_08D9B4B4:
 	.globl gUnknown_8D9B4B4
 gUnknown_8D9B4B4: @ 0x08D9B4B4
 	@ confirmed GBA LZ77 stream: compressed=0x207, decompressed=0x500
@@ -54,6 +63,9 @@ sAnalyzedGfx_08D9B4B4: @ 0x08D9B4B4
 	.if (. - sAnalyzedGfx_08D9B4B4) != 0x208
 	.error "gUnknown_8D9B4B4 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D9B6BC: pokeblock.spokeblock.s: sub_08135C88
+	.globl gPokeblockSpokeblockData_08D9B6BC
+gPokeblockSpokeblockData_08D9B6BC:
 	.globl gUnknown_8D9B6BC
 gUnknown_8D9B6BC: @ 0x08D9B6BC
 	@ confirmed GBA LZ77 stream: compressed=0x6E, decompressed=0xC0
@@ -115,6 +127,9 @@ sAnalyzedData_08D9B6BC: @ 0x08D9B6BC
 	.byte 0x10, 0x20, 0x00, 0x00, 0x00, 0x7F, 0x7E, 0x6A, 0x35, 0x19, 0x6F, 0xEB, 0x49, 0x00, 0x8B, 0x56
 	.byte 0xEC, 0x6E, 0x55, 0x77, 0x58, 0x32, 0x00, 0x18, 0x1B, 0x0C, 0x33, 0x1F, 0x4B, 0x46, 0x7A, 0x00
 	.byte 0x95, 0x29, 0xFE, 0x2D, 0x74, 0x5A, 0xDE, 0x7B
+	@ pret/pokeemerald-jp direct xref for 0x08D9BA14: pokeblock.spokeblock.s: sub_08135C88
+	.globl gPokeblockSpokeblockData_08D9BA14
+gPokeblockSpokeblockData_08D9BA14:
 	.globl gUnknown_8D9BA14
 gUnknown_8D9BA14: @ 0x08D9BA14
 	@ confirmed GBA LZ77 stream: compressed=0x148, decompressed=0x800
@@ -176,6 +191,9 @@ gPokeblockPalette_Gold: @ 0x08D9BC7C
 	.error "Pokeblock palettes must contain fourteen 0x14-byte LZ77 streams"
 	.endif
 
+	@ pret/pokeemerald-jp direct xref for 0x08D9BC90: pokeblock_feed.s: LoadMonAndSceneGfx
+	.globl gPokeblockFeedData_08D9BC90
+gPokeblockFeedData_08D9BC90:
 	.globl gUnknown_8D9BC90
 gUnknown_8D9BC90: @ 0x08D9BC90
 	@ confirmed GBA LZ77 stream: compressed=0x100, decompressed=0x800
@@ -186,6 +204,9 @@ sAnalyzedGfx_08D9BC90: @ 0x08D9BC90
 	.if (. - sAnalyzedGfx_08D9BC90) != 0x100
 	.error "gUnknown_8D9BC90 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D9BD90: berry_tag_screen.s: LoadBerryTagGfx
+	.globl gBerryTagScreenData_08D9BD90
+gBerryTagScreenData_08D9BD90:
 	.globl gUnknown_8D9BD90
 gUnknown_8D9BD90: @ 0x08D9BD90
 	@ confirmed GBA LZ77 stream: compressed=0x41C, decompressed=0xB40
@@ -196,6 +217,9 @@ sAnalyzedGfx_08D9BD90: @ 0x08D9BD90
 	.if (. - sAnalyzedGfx_08D9BD90) != 0x41C
 	.error "gUnknown_8D9BD90 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D9C1AC: berry_tag_screen.s: LoadBerryTagGfx
+	.globl gBerryTagScreenData_08D9C1AC
+gBerryTagScreenData_08D9C1AC:
 	.globl gUnknown_8D9C1AC
 gUnknown_8D9C1AC: @ 0x08D9C1AC
 	@ confirmed GBA LZ77 stream: compressed=0xA8, decompressed=0xC0
@@ -206,6 +230,9 @@ sAnalyzedGfx_08D9C1AC: @ 0x08D9C1AC
 	.if (. - sAnalyzedGfx_08D9C1AC) != 0xA8
 	.error "gUnknown_8D9C1AC compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D9C254: berry_tag_screen.s: LoadBerryTagGfx
+	.globl gBerryTagScreenData_08D9C254
+gBerryTagScreenData_08D9C254:
 	.globl gUnknown_8D9C254
 gUnknown_8D9C254: @ 0x08D9C254
 	@ confirmed GBA LZ77 stream: compressed=0x18E, decompressed=0x800

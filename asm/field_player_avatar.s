@@ -1313,7 +1313,7 @@ _0808AC54:
 	b _0808AC82
 	.align 2, 0
 _0808AC70: .4byte 0x0846F8BC
-_0808AC74: .4byte 0x0846F8D0
+_0808AC74: .4byte gFieldPlayerAvatarData_0846F8D0
 _0808AC78:
 	adds r0, r4, #1
 	lsls r0, r0, #0x18
@@ -2686,7 +2686,7 @@ GetPlayerAvatarGraphicsIdByStateIdAndGender: @ 0x0808B6A0
 	ldrb r0, [r1]
 	bx lr
 	.align 2, 0
-_0808B6B4: .4byte 0x0846F908
+_0808B6B4: .4byte gFieldPlayerAvatarData_0846F908
 	thumb_func_end GetPlayerAvatarGraphicsIdByStateIdAndGender
 
 	thumb_func_start sub_0808B6B8
@@ -2701,7 +2701,7 @@ sub_0808B6B8: @ 0x0808B6B8
 	ldrb r0, [r1]
 	bx lr
 	.align 2, 0
-_0808B6CC: .4byte 0x0846F918
+_0808B6CC: .4byte gFieldPlayerAvatarData_0846F918
 	thumb_func_end sub_0808B6B8
 
 	thumb_func_start sub_0808B6D0
@@ -2713,7 +2713,7 @@ sub_0808B6D0: @ 0x0808B6D0
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_0808B6DC: .4byte 0x0846F928
+_0808B6DC: .4byte gFieldPlayerAvatarData_0846F928
 	thumb_func_end sub_0808B6D0
 
 	thumb_func_start GetFRLGAvatarGraphicsIdByGender
@@ -2725,7 +2725,7 @@ GetFRLGAvatarGraphicsIdByGender: @ 0x0808B6E0
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_0808B6EC: .4byte 0x0846F92A
+_0808B6EC: .4byte gFieldPlayerAvatarData_0846F92A
 	thumb_func_end GetFRLGAvatarGraphicsIdByGender
 
 	thumb_func_start GetPlayerAvatarGraphicsIdByStateId
@@ -2994,7 +2994,7 @@ _0808B8A6:
 	ldrb r0, [r0]
 	b _0808B8C8
 	.align 2, 0
-_0808B8B8: .4byte 0x0846F92C
+_0808B8B8: .4byte gFieldPlayerAvatarData_0846F92C
 _0808B8BC:
 	adds r0, r2, #1
 	lsls r0, r0, #0x18
@@ -3034,7 +3034,7 @@ _0808B8E4:
 	b _0808B90C
 	.align 2, 0
 _0808B8F8: .4byte 0x02037230
-_0808B8FC: .4byte 0x0846F92C
+_0808B8FC: .4byte gFieldPlayerAvatarData_0846F92C
 _0808B900:
 	adds r0, r2, #1
 	lsls r0, r0, #0x18
@@ -3944,7 +3944,7 @@ _0808C010:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808C01C: .4byte 0x0846F970
+_0808C01C: .4byte gFieldPlayerAvatarData_0846F970
 	thumb_func_end PlayerAvatar_SecretBaseMatSpinStep1
 
 	thumb_func_start PlayerAvatar_SecretBaseMatSpinStep2
@@ -3977,7 +3977,7 @@ _0808C050:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808C05C: .4byte 0x0846F974
+_0808C05C: .4byte gFieldPlayerAvatarData_0846F974
 	thumb_func_end PlayerAvatar_SecretBaseMatSpinStep2
 
 	thumb_func_start PlayerAvatar_SecretBaseMatSpinStep3
@@ -4305,8 +4305,8 @@ Fishing2: @ 0x0808C27C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808C304: .4byte 0x0846F9BC
-_0808C308: .4byte 0x0846F9C2
+_0808C304: .4byte gFieldPlayerAvatarData_0846F9BC
+_0808C308: .4byte gFieldPlayerAvatarData_0846F9C2
 _0808C30C: .4byte 0x02036FF0
 _0808C310: .4byte 0x02037230
 	thumb_func_end Fishing2
@@ -4405,7 +4405,7 @@ _0808C3BA:
 	movs r0, #1
 	b _0808C41A
 	.align 2, 0
-_0808C3C0: .4byte 0x0846F9C8
+_0808C3C0: .4byte gFieldPlayerAvatarData_0846F9C8
 _0808C3C4: .4byte 0x03002360
 _0808C3C8:
 	lsls r0, r1, #0x10
@@ -4604,7 +4604,7 @@ Fishing8: @ 0x0808C514
 	movs r0, #0xc
 	b _0808C55C
 	.align 2, 0
-_0808C548: .4byte 0x0846F9D6
+_0808C548: .4byte gFieldPlayerAvatarData_0846F9D6
 _0808C54C:
 	ldr r0, _0808C568
 	ldrh r1, [r0, #0x2e]
@@ -4677,7 +4677,7 @@ _0808C5C6:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808C5D0: .4byte 0x0846F9DC
+_0808C5D0: .4byte gFieldPlayerAvatarData_0846F9DC
 	thumb_func_end Fishing9
 
 	thumb_func_start Fishing10
@@ -5539,7 +5539,7 @@ _0808CC6E:
 	strh r0, [r5, #0x10]
 	b _0808CCA2
 	.align 2, 0
-_0808CC88: .4byte 0x0846FA13
+_0808CC88: .4byte gFieldPlayerAvatarData_0846FA13
 _0808CC8C:
 	adds r1, r5, #2
 	adds r0, r4, #0
@@ -5641,7 +5641,7 @@ _0808CD18:
 	ldrb r0, [r0]
 	b _0808CD5A
 	.align 2, 0
-_0808CD50: .4byte 0x0846FA13
+_0808CD50: .4byte gFieldPlayerAvatarData_0846FA13
 _0808CD54:
 	ldrb r0, [r5, #0x18]
 	lsls r0, r0, #0x1c

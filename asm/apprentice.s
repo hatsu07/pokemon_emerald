@@ -317,7 +317,7 @@ _0819FAB2:
 	b _0819FB10
 	.align 2, 0
 _0819FAE0: .4byte 0x03005AF0
-_0819FAE4: .4byte 0x085DCB74
+_0819FAE4: .4byte gApprenticeData_085DCB74
 _0819FAE8:
 	adds r4, r2, #0
 _0819FAEA:
@@ -781,7 +781,7 @@ _0819FE46:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0819FE64: .4byte 0x085DCAFF
+_0819FE64: .4byte gApprenticeData_085DCAFF
 _0819FE68: .4byte 0x0300602C
 _0819FE6C: .4byte 0x03005AF0
 	thumb_func_end sub_0819FC3C
@@ -1048,7 +1048,7 @@ _081A004C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081A0068: .4byte 0x085DC99C
+_081A0068: .4byte gApprenticeData_085DC99C
 _081A006C: .4byte 0x0300602C
 	thumb_func_end sub_0819FE70
 
@@ -1473,7 +1473,7 @@ _081A034E:
 	b _081A03AC
 	.align 2, 0
 _081A0380: .4byte 0x03005AF0
-_081A0384: .4byte 0x085DC228
+_081A0384: .4byte gApprenticeData_085DC228
 _081A0388:
 	cmp r1, #2
 	bne _081A03AC
@@ -1614,7 +1614,7 @@ _081A0448:
 	.align 2, 0
 _081A0494: .4byte 0x082EA31C
 _081A0498: .4byte 0x03005AF0
-_081A049C: .4byte 0x085DC228
+_081A049C: .4byte gApprenticeData_085DC228
 _081A04A0:
 	movs r0, #0x12
 	mov sl, r0
@@ -3706,8 +3706,8 @@ _081A144E:
 	.align 2, 0
 _081A1460: .4byte 0x085DC21C
 _081A1464: .4byte 0x03005AF0
-_081A1468: .4byte 0x085BBE20
-_081A146C: .4byte 0x085BBE52
+_081A1468: .4byte gUnknown_85BBE20
+_081A146C: .4byte gUnknown_85BBE52
 _081A1470: .4byte 0x00004010
 _081A1474:
 	movs r1, #0
@@ -3737,8 +3737,8 @@ _081A14A0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081A14A4: .4byte 0x085BBE3E
-_081A14A8: .4byte 0x085BBE70
+_081A14A4: .4byte gUnknown_85BBE3E
+_081A14A8: .4byte gUnknown_85BBE70
 _081A14AC: .4byte 0x00004010
 	thumb_func_end sub_081A1418
 
@@ -3782,8 +3782,8 @@ _081A14E2:
 	.align 2, 0
 _081A14F4: .4byte 0x085DC21C
 _081A14F8: .4byte 0x03005AF0
-_081A14FC: .4byte 0x085BBE20
-_081A1500: .4byte 0x085BBE52
+_081A14FC: .4byte gUnknown_85BBE20
+_081A1500: .4byte gUnknown_85BBE52
 _081A1504: .4byte 0x00004010
 _081A1508:
 	movs r1, #0
@@ -3813,8 +3813,8 @@ _081A1534:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081A1538: .4byte 0x085BBE3E
-_081A153C: .4byte 0x085BBE70
+_081A1538: .4byte gUnknown_85BBE3E
+_081A153C: .4byte gUnknown_85BBE70
 _081A1540: .4byte 0x00004010
 	thumb_func_end Script_SetPlayerApprenticeTrainerGfxId
 

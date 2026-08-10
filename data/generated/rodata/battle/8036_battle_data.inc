@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x085FB6A0: trainer_hill.s: GetTrainerEncounterMusicIdInTrainerHill
+	.globl gTrainerHillData_085FB6A0
+gTrainerHillData_085FB6A0:
 	.globl gUnknown_85FB6A0
 gUnknown_85FB6A0: @ 0x085FB6A0
 	@ analyzed canonical ROM range 0x085FB6A0-0x085FB8B7
@@ -37,6 +40,9 @@ sAnalyzedData_085FB6A0: @ 0x085FB6A0
 	.2byte 0xB7F0, 0x085F, 0xB7FC, 0x085F, 0xB808, 0x085F, 0xB814, 0x085F
 	.2byte 0xB820, 0x085F, 0xB82C, 0x085F, 0xB838, 0x085F, 0xB844, 0x085F
 	.2byte 0xB850, 0x085F, 0xB85C, 0x085F
+	@ pret/pokeemerald-jp direct xref for 0x085FB8B8: trainer_hill.s: sub_081D5F98
+	.globl gTrainerHillData_085FB8B8
+gTrainerHillData_085FB8B8:
 	.globl gUnknown_85FB8B8
 gUnknown_85FB8B8: @ 0x085FB8B8
 	@ analyzed canonical ROM range 0x085FB8B8-0x085FB8BF
@@ -47,6 +53,9 @@ sAnalyzedData_085FB8B8: @ 0x085FB8B8
 	.globl gUnknown_85FB8C0
 gUnknown_85FB8C0: @ 0x085FB8C0
 	.space 0x20, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085FB8E0: trainer_hill.s: PrintOnTrainerHillRecordsWindow
+	.globl gTrainerHillData_085FB8E0
+gTrainerHillData_085FB8E0:
 	.globl gUnknown_85FB8E0
 gUnknown_85FB8E0: @ 0x085FB8E0
 	@ analyzed canonical ROM range 0x085FB8E0-0x085FB8E2

@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x085D7B48: menu.s: sub_081981B4
+	.globl gMenuData_085D7B48
+gMenuData_085D7B48:
 	.globl gUnknown_85D7B48
 gUnknown_85D7B48: @ 0x085D7B48
 	@ analyzed canonical ROM range 0x085D7B48-0x085D7B67
@@ -5,18 +8,27 @@ sAnalyzedData_085D7B48: @ 0x085D7B48
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x2E, 0x53, 0xFF, 0x7F, 0x8C, 0x31, 0x5A, 0x67, 0x3C, 0x04, 0xFF, 0x3A, 0x64, 0x06, 0xD2, 0x4B
 	.byte 0x46, 0x65, 0x14, 0x7B, 0xFF, 0x7F, 0x29, 0x77, 0x86, 0x76, 0x60, 0x41, 0x83, 0x61, 0x20, 0x2E
+	@ pret/pokeemerald-jp direct xref for 0x085D7B68: menu.s: sub_08198244
+	.globl gMenuData_085D7B68
+gMenuData_085D7B68:
 	.globl gUnknown_85D7B68
 gUnknown_85D7B68: @ 0x085D7B68
 	@ analyzed canonical ROM range 0x085D7B68-0x085D7B6B
 sAnalyzedData_085D7B68: @ 0x085D7B68
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x0F, 0x01, 0x02, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085D7B6C: menu.s: RedrawMenuCursor, sub_08199170
+	.globl gMenuData_085D7B6C
+gMenuData_085D7B6C:
 	.globl gUnknown_85D7B6C
 gUnknown_85D7B6C: @ 0x085D7B6C
 	@ analyzed canonical ROM range 0x085D7B6C-0x085D7B6F
 sAnalyzedData_085D7B6C: @ 0x085D7B6C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xEF, 0xFF, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085D7B70: menu.s: blit_move_info_icon
+	.globl gMenuData_085D7B70
+gMenuData_085D7B70:
 	.globl gUnknown_85D7B70
 gUnknown_85D7B70: @ 0x085D7B70
 	@ analyzed canonical ROM range 0x085D7B70-0x085D7BD7
@@ -29,6 +41,9 @@ sAnalyzedData_085D7B70: @ 0x085D7B70
 	.2byte 0x0C1E, 0x004C, 0x0C1E, 0x00A0, 0x0C1E, 0x008C, 0x0C1E, 0x00A8
 	.2byte 0x0C1E, 0x00AC, 0x0C1E, 0x00C0, 0x0C1E, 0x00C4, 0x0C1E, 0x00C8
 	.2byte 0x0808, 0x00CC, 0x0808, 0x00CD
+	@ pret/pokeemerald-jp direct xref for 0x085D7BD8: menu.s: sub_08199F54
+	.globl gMenuData_085D7BD8
+gMenuData_085D7BD8:
 	.globl gUnknown_85D7BD8
 gUnknown_85D7BD8: @ 0x085D7BD8
 	@ analyzed canonical ROM range 0x085D7BD8-0x085D7BF7
@@ -36,6 +51,9 @@ sAnalyzedData_085D7BD8: @ 0x085D7BD8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x426F, 0x77BD, 0x0000, 0x5F5A, 0x3E95, 0x3E1F, 0x00DD, 0x08DB
 	.2byte 0x14D8, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085D7BF8: menu.s: sub_08199F54
+	.globl gMenuData_085D7BF8
+gMenuData_085D7BF8:
 	.globl gUnknown_85D7BF8
 gUnknown_85D7BF8: @ 0x085D7BF8
 	@ analyzed canonical ROM range 0x085D7BF8-0x085D7C17
@@ -43,6 +61,9 @@ sAnalyzedData_085D7BF8: @ 0x085D7BF8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x6F, 0x42, 0xDD, 0x00, 0x1E, 0x1A, 0xDF, 0x0A, 0x9B, 0x1B, 0x2F, 0x2B, 0x73, 0x6F, 0x4D, 0x7A
 	.byte 0x14, 0x51, 0xB5, 0x3E, 0x7B, 0x63, 0x97, 0x1E, 0x7F, 0x45, 0xEA, 0x45, 0x08, 0x21, 0xFF, 0x7F
+	@ pret/pokeemerald-jp direct xref for 0x085D7C18: menu.s: sub_08199F54
+	.globl gMenuData_085D7C18
+gMenuData_085D7C18:
 	.globl gUnknown_85D7C18
 gUnknown_85D7C18: @ 0x085D7C18
 	@ analyzed canonical ROM range 0x085D7C18-0x085D7C37
@@ -50,6 +71,9 @@ sAnalyzedData_085D7C18: @ 0x085D7C18
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x2E, 0x53, 0xFF, 0x7F, 0x8C, 0x31, 0x5A, 0x67, 0xFF, 0x7F, 0x9C, 0x73, 0x18, 0x63, 0xBD, 0x77
 	.byte 0x18, 0x63, 0x52, 0x4A, 0x1F, 0x00, 0x16, 0x00, 0x1F, 0x63, 0x4A, 0x7D, 0xC6, 0x58, 0x18, 0x7F
+	@ pret/pokeemerald-jp direct xref for 0x085D7C38: menu.s: blit_move_info_icon
+	.globl gMenuData_085D7C38
+gMenuData_085D7C38:
 	.globl gUnknown_85D7C38
 gUnknown_85D7C38: @ 0x085D7C38
 	@ analyzed canonical ROM range 0x085D7C38-0x085D813F

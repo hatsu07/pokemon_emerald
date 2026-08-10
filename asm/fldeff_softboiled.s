@@ -356,7 +356,7 @@ sub_081616BC: @ 0x081616BC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081616EC: .4byte 0x085C9B07
+_081616EC: .4byte gFldeffSoftboiledData_085C9B07
 _081616F0: .4byte 0x03005B60
 _081616F4: .4byte 0x08161689
 	thumb_func_end sub_081616BC

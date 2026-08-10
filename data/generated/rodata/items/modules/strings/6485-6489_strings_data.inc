@@ -12,6 +12,9 @@ gText_Rom_5CCD86: @ 0x085CCD86
 gUnknown_85CCD9F: @ 0x085CCD9F
 	@ Decoded text from ROM range: offset=0x5CCD9F, size=0xC
 	.string "{SE_M_HYPER_BEAM2}は　いっぱいです…$"
+	@ pret/pokeemerald-jp direct xref for 0x085CCDAB: dodrio_berry_picking.s: sub_080295A4
+	.globl gDodrioBerryPickingData_085CCDAB
+gDodrioBerryPickingData_085CCDAB:
 	.globl gUnknown_85CCDAB
 gUnknown_85CCDAB: @ 0x085CCDAB
 	@ analyzed canonical ROM range 0x085CCDAB-0x085CCDBC

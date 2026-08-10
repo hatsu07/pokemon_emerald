@@ -56,6 +56,9 @@ sAnalyzedData_08D77974: @ 0x08D77974
 	.byte 0x00, 0x80, 0xCC, 0xDE, 0x9E, 0x0C, 0xE0, 0xF8, 0x00, 0x01, 0x33, 0x7B, 0x79, 0x30, 0x07, 0x1F
 	.byte 0x38, 0x9C, 0xFC, 0x7C, 0xF8, 0x78, 0xE0, 0x00, 0x1C, 0x39, 0x3C, 0x3E, 0x1F, 0x1E, 0x07, 0x00
 
+	@ pret/pokeemerald-jp direct xref for 0x08D77994: battle_bg.s: DrawBattleEntryBackground
+	.globl gBattleBgData_08D77994
+gBattleBgData_08D77994:
 	.globl gUnknown_8D77994
 gUnknown_8D77994: @ 0x08D77994
 	@ confirmed GBA LZ77 stream: compressed=0xE5, decompressed=0x200
@@ -66,6 +69,9 @@ sAnalyzedGfx_08D77994: @ 0x08D77994
 	.if (. - sAnalyzedGfx_08D77994) != 0xE8
 	.error "gUnknown_8D77994 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D77A7C: battle_bg.s: DrawBattleEntryBackground
+	.globl gBattleBgData_08D77A7C
+gBattleBgData_08D77A7C:
 	.globl gUnknown_8D77A7C
 gUnknown_8D77A7C: @ 0x08D77A7C
 	@ confirmed GBA LZ77 stream: compressed=0x10A, decompressed=0x800
@@ -76,6 +82,9 @@ sAnalyzedGfx_08D77A7C: @ 0x08D77A7C
 	.if (. - sAnalyzedGfx_08D77A7C) != 0x10C
 	.error "gUnknown_8D77A7C compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D77B88: battle_bg.s: DrawBattleEntryBackground
+	.globl gBattleBgData_08D77B88
+gBattleBgData_08D77B88:
 	.globl gUnknown_8D77B88
 gUnknown_8D77B88: @ 0x08D77B88
 	@ confirmed GBA LZ77 stream: compressed=0x28, decompressed=0x20
@@ -86,6 +95,9 @@ sAnalyzedGfx_08D77B88: @ 0x08D77B88
 	.if (. - sAnalyzedGfx_08D77B88) != 0x28
 	.error "gUnknown_8D77B88 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08D77BB0: battle_bg.s: DrawBattleEntryBackground
+	.globl gBattleBgData_08D77BB0
+gBattleBgData_08D77BB0:
 	.globl gUnknown_8D77BB0
 gUnknown_8D77BB0: @ 0x08D77BB0
 	@ confirmed GBA LZ77 stream: compressed=0x25B, decompressed=0x1000
@@ -701,6 +713,9 @@ sAnalyzedData_08D77BB0: @ 0x08D77BB0
 	.byte 0xF0, 0x01, 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0
 	.byte 0x01, 0xF0, 0x01, 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF7, 0xFF, 0xF0, 0x01, 0xF0, 0x01
 	.byte 0xF0, 0x01, 0xF0, 0x01, 0xE0, 0xF0, 0x01, 0xF0, 0x01, 0xD0, 0x01, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08D7A1AC: battle_bg.s: DrawMainBattleBackground
+	.globl gBattleBgData_08D7A1AC
+gBattleBgData_08D7A1AC:
 	.globl gUnknown_8D7A1AC
 gUnknown_8D7A1AC: @ 0x08D7A1AC
 	@ confirmed GBA LZ77 stream: compressed=0x5D2, decompressed=0x2000

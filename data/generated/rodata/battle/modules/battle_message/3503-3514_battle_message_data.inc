@@ -45,6 +45,9 @@ gText_Rom_5AB3AD: @ 0x085AB3AD
 	.if (. - gText_Rom_5AB3AD) < 0x10
 	.space 0x10 - (. - gText_Rom_5AB3AD)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085AB3BD: battle_main.s: BattleTurnPassed, TryDoEventsBeforeFirstTurn
+	.globl gBattleMainData_085AB3BD
+gBattleMainData_085AB3BD:
 	.globl gUnknown_85AB3BD
 gUnknown_85AB3BD: @ 0x085AB3BD
 	@ analyzed canonical ROM range 0x085AB3BD-0x085AB3DB
@@ -52,6 +55,7 @@ sAnalyzedData_085AB3BD: @ 0x085AB3BD
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0xFF, 0x0A, 0x0A, 0x44, 0x00, 0x9A, 0xAE, 0x79, 0x2D, 0x00, 0x15, 0x3A, 0x29, 0x2E, 0x41
 	.byte 0x18, 0xFE, 0x4A, 0x08, 0xB0, 0xB0, 0x00, 0x24, 0x50, 0x13, 0x20, 0x29, 0x26, 0xAB, 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x085AB3DC: battle_message.s: BufferStringBattle, ExpandBattleTextBuffPlaceholders; evolution_scene.s: Task_EvolutionScene, Task_TradeEvolutionScene
 	.globl gUnknown_85AB3DC
 gUnknown_85AB3DC: @ 0x085AB3DC
 	@ analyzed canonical ROM range 0x085AB3DC-0x085AB99F
@@ -426,6 +430,9 @@ sAnalyzedData_085AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_243E80 @ +0x5B8
 	.4byte 0x085AC098 @ +0x5BC
 	.4byte 0x085AC09B @ +0x5C0
+	@ pret/pokeemerald-jp direct xref for 0x085AB9A0: battle_script_commands.s: atk0F_resultmessage
+	.globl gBattleScriptCommandsData_085AB9A0
+gBattleScriptCommandsData_085AB9A0:
 	.globl gUnknown_85AB9A0
 gUnknown_85AB9A0: @ 0x085AB9A0
 	@ analyzed canonical ROM range 0x085AB9A0-0x085ABAED
@@ -452,6 +459,9 @@ sAnalyzedData_085AB9A0: @ 0x085AB9A0
 	.2byte 0x0125, 0x0124, 0x0127, 0x0129, 0x0156, 0x0131, 0x0163, 0x016A
 	.2byte 0x00C7, 0x0163, 0x016A, 0x00C9, 0x0163, 0x016A, 0x0166, 0x0167
 	.2byte 0x0168, 0x00CB, 0x0137, 0x0177, 0x0178, 0x0179, 0x017A
+	@ pret/pokeemerald-jp direct xref for 0x085ABAEE: battle_script_commands.s: SetMoveEffect
+	.globl gBattleScriptCommandsData_085ABAEE
+gBattleScriptCommandsData_085ABAEE:
 	.globl gUnknown_85ABAEE
 gUnknown_85ABAEE: @ 0x085ABAEE
 	@ analyzed canonical ROM range 0x085ABAEE-0x085ABAFB

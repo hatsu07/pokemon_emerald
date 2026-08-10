@@ -3,6 +3,9 @@ gUnknown_8563134: @ 0x08563134
 	@ Decoded text from ROM range: offset=0x563134, size=0x1C
 	.string "いの　きのみ。$"
 	.string "ほしの　ちからを　もっている　らしい。$"
+	@ pret/pokeemerald-jp direct xref for 0x08563150: berry_crush.s: sub_08021758
+	.globl gBerryCrushData_08563150
+gBerryCrushData_08563150:
 	.globl gUnknown_8563150
 gUnknown_8563150: @ 0x08563150
 	@ analyzed canonical ROM range 0x08563150-0x08563603
@@ -84,6 +87,9 @@ sAnalyzedData_08563150: @ 0x08563150
 	.2byte 0x0A18, 0x0A0A, 0x0A0A, 0x001E, 0x9065, 0xFFFF, 0xFFFF, 0x00FF
 	.2byte 0x0000, 0x0102, 0x312C, 0x0856, 0x313C, 0x0856, 0x2818, 0x2828
 	.2byte 0x2828, 0x0028
+	@ pret/pokeemerald-jp direct xref for 0x08563604: berry_crush.s: sub_08022C80
+	.globl gBerryCrushData_08563604
+gBerryCrushData_08563604:
 	.globl gUnknown_8563604
 gUnknown_8563604: @ 0x08563604
 	@ analyzed canonical ROM range 0x08563604-0x085636AF
@@ -100,6 +106,9 @@ sAnalyzedData_08563604: @ 0x08563604
 	.2byte 0x00A0, 0x00FA, 0x00A0, 0x00FA, 0x00A0, 0x00FA, 0x00B4, 0x01F4
 	.2byte 0x00B4, 0x01F4, 0x00B4, 0x01F4, 0x00B4, 0x01F4, 0x00B4, 0x01F4
 	.2byte 0x00C8, 0x02EE, 0x00C8, 0x02EE, 0x0096, 0x00C8
+	@ pret/pokeemerald-jp direct xref for 0x085636B0: berry.s: BerryTreeGrow, BerryTreeTimeUpdate, ClearBerryTrees, PlantBerryTree, RemoveBerryTree
+	.globl gBerryData_085636B0
+gBerryData_085636B0:
 	.globl gUnknown_85636B0
 gUnknown_85636B0: @ 0x085636B0
 	@ analyzed canonical ROM range 0x085636B0-0x08564217
@@ -835,6 +844,9 @@ sAnalyzedData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0xB5C
 	.4byte gText_Rom_5C93C8 @ +0xB60
 	.4byte 0 @ +0xB64
+	@ pret/pokeemerald-jp direct xref for 0x08564218: script_menu.s: DrawMultichoiceMenu, sp106_CreateStartMenu
+	.globl gScriptMenuData_08564218
+gScriptMenuData_08564218:
 	.globl gUnknown_8564218
 gUnknown_8564218: @ 0x08564218
 	@ analyzed canonical ROM range 0x08564218-0x0856459F
@@ -897,6 +909,7 @@ sAnalyzedData_08564218: @ 0x08564218
 	.2byte 0x4160, 0x0856, 0x0002, 0x0000, 0x4170, 0x0856, 0x0004, 0x0000
 	.2byte 0x4190, 0x0856, 0x0004, 0x0000, 0x41B0, 0x0856, 0x0006, 0x0000
 	.2byte 0x41E0, 0x0856, 0x0006, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085645A0: scrcmd.s: ScrCmd_bufferstdstring; tv.s: CopyContestCategoryToStringVar, CopyContestRankToStringVar
 	.globl gUnknown_85645A0
 gUnknown_85645A0: @ 0x085645A0
 	@ confirmed contiguous ROM pointer table: 30 entries from this address
@@ -934,6 +947,9 @@ sAnalyzedData_085645A0: @ 0x085645A0
 	.4byte gText_Rom_5CC442 @ +0x6C
 	.4byte gText_Rom_5CC44A @ +0x70
 	.4byte gText_Rom_5CC452 @ +0x74
+	@ pret/pokeemerald-jp direct xref for 0x08564618: script_menu.s: sub_080E14CC
+	.globl gScriptMenuData_08564618
+gScriptMenuData_08564618:
 	.globl gUnknown_8564618
 gUnknown_8564618: @ 0x08564618
 	@ analyzed canonical ROM range 0x08564618-0x0856461F
@@ -979,6 +995,9 @@ gUnknown_8564680: @ 0x08564680
 	.4byte gText_Rom_247BB3
 	.4byte gText_Rom_247BD5
 	.4byte gText_Rom_24809D
+	@ pret/pokeemerald-jp direct xref for 0x0856468C: script_menu.s: sub_080E1F88
+	.globl gScriptMenuData_0856468C
+gScriptMenuData_0856468C:
 	.globl gUnknown_856468C
 gUnknown_856468C: @ 0x0856468C
 	@ analyzed canonical ROM range 0x0856468C-0x08565217
@@ -1169,6 +1188,9 @@ sAnalyzedData_0856468C: @ 0x0856468C
 	.byte 0x30, 0x55, 0x55, 0x55, 0x00, 0x33, 0x33, 0x33, 0x00, 0x00, 0x00, 0x00, 0x33, 0x33, 0x33, 0x00
 	.byte 0x33, 0x0D, 0x00, 0x00, 0x33, 0x33, 0x33, 0x00, 0x88, 0x88, 0x88, 0x03, 0x38, 0xDD, 0x8D, 0x03
 	.byte 0x55, 0x55, 0x55, 0x03, 0x33, 0x33, 0x33, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08565218: naming_screen.s: choose_name_or_words_screen_apply_bg_pals
+	.globl gNamingScreenData_08565218
+gNamingScreenData_08565218:
 	.globl gUnknown_8565218
 gUnknown_8565218: @ 0x08565218
 	@ analyzed canonical ROM range 0x08565218-0x08565257
@@ -1178,6 +1200,9 @@ sAnalyzedData_08565218: @ 0x08565218
 	.byte 0x46, 0x65, 0x14, 0x7B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xAF, 0x62, 0x7A, 0x3A, 0xF2, 0x36
 	.byte 0x0E, 0x53, 0x5F, 0x5B, 0x1F, 0x4B, 0x5B, 0x3A, 0x0F, 0x21, 0xBA, 0x22, 0xB3, 0x11, 0x2D, 0x11
 	.byte 0xEE, 0x02, 0xE8, 0x01, 0x04, 0x09, 0xDA, 0x51, 0x14, 0x39, 0x8A, 0x20, 0x9C, 0x1B, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08565258: naming_screen.s: choose_name_or_words_screen_apply_bg_pals
+	.globl gNamingScreenData_08565258
+gNamingScreenData_08565258:
 	.globl gUnknown_8565258
 gUnknown_8565258: @ 0x08565258
 	@ analyzed canonical ROM range 0x08565258-0x08565317
@@ -1195,6 +1220,9 @@ sAnalyzedData_08565258: @ 0x08565258
 	.byte 0xD5, 0x25, 0x7A, 0x3A, 0x6C, 0x1E, 0xF2, 0x36, 0x97, 0x12, 0x7C, 0x2F, 0xE7, 0x1C, 0xE7, 0x1C
 	.byte 0x6D, 0x6A, 0x3F, 0x04, 0xFB, 0x24, 0x16, 0x29, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x7C, 0x6B, 0x00, 0x00, 0x7C, 0x6B, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08565318: naming_screen.s: choose_name_or_words_screen_load_bg_tile_patterns
+	.globl gNamingScreenData_08565318
+gNamingScreenData_08565318:
 	.globl gUnknown_8565318
 gUnknown_8565318: @ 0x08565318
 	@ confirmed GBA LZ77 stream: compressed=0x1D5, decompressed=0x600
@@ -1235,6 +1263,9 @@ sAnalyzedData_08565318: @ 0x08565318
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08565524: naming_screen.s: MainState_BeginFadeIn
+	.globl gNamingScreenData_08565524
+gNamingScreenData_08565524:
 	.globl gUnknown_8565524
 gUnknown_8565524: @ 0x08565524
 	@ confirmed GBA LZ77 stream: compressed=0xD9, decompressed=0x500
@@ -1245,6 +1276,9 @@ sAnalyzedGfx_08565524: @ 0x08565524
 	.if (. - sAnalyzedGfx_08565524) != 0xDC
 	.error "gUnknown_8565524 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08565600: naming_screen.s: MainState_BeginFadeIn
+	.globl gNamingScreenData_08565600
+gNamingScreenData_08565600:
 	.globl gUnknown_8565600
 gUnknown_8565600: @ 0x08565600
 	@ confirmed GBA LZ77 stream: compressed=0xC8, decompressed=0x500
@@ -1255,6 +1289,9 @@ sAnalyzedGfx_08565600: @ 0x08565600
 	.if (. - sAnalyzedGfx_08565600) != 0xC8
 	.error "gUnknown_8565600 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085656C8: naming_screen.s: MainState_BeginFadeIn
+	.globl gNamingScreenData_085656C8
+gNamingScreenData_085656C8:
 	.globl gUnknown_85656C8
 gUnknown_85656C8: @ 0x085656C8
 	@ confirmed GBA LZ77 stream: compressed=0xC8, decompressed=0x500

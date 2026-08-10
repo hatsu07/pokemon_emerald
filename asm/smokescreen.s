@@ -147,12 +147,12 @@ _08074C56:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08074D5C: .4byte 0x082ECFA8
+_08074D5C: .4byte gSmokescreenData_082ECFA8
 _08074D60: .4byte 0xFFFF0000
-_08074D64: .4byte 0x082ECFB0
+_08074D64: .4byte gSmokescreenData_082ECFB0
 _08074D68: .4byte 0x08074D79
 _08074D6C: .4byte 0x020205AC
-_08074D70: .4byte 0x082ED010
+_08074D70: .4byte gSmokescreenData_082ED010
 _08074D74: .4byte 0xFFF00000
 	thumb_func_end sub_08074C24
 
@@ -178,8 +178,8 @@ sub_08074D78: @ 0x08074D78
 	bl DestroySprite
 	b _08074DB0
 	.align 2, 0
-_08074DA4: .4byte 0x082ECFA8
-_08074DA8: .4byte 0x082ECFB0
+_08074DA4: .4byte gSmokescreenData_082ECFA8
+_08074DA8: .4byte gSmokescreenData_082ECFB0
 _08074DAC:
 	ldr r0, _08074DB8
 	str r0, [r4, #0x1c]

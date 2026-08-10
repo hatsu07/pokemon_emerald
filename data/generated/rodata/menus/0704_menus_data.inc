@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x084FE6CC: battle_anim_mons.s: sub_080A7C5C
+	.globl gBattleAnimMonsData_084FE6CC
+gBattleAnimMonsData_084FE6CC:
 	.globl gUnknown_84FE6CC
 gUnknown_84FE6CC: @ 0x084FE6CC
 	@ analyzed canonical ROM range 0x084FE6CC-0x0851769B

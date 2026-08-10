@@ -51,7 +51,7 @@ GetTrainerIdxByRematchIdx: @ 0x081D0CD8
 	ldrh r0, [r0]
 	bx lr
 	.align 2, 0
-_081D0CE4: .4byte 0x0852AD40
+_081D0CE4: .4byte gUnknown_852AD40
 	thumb_func_end GetTrainerIdxByRematchIdx
 
 	thumb_func_start GetRematchIdxByTrainerIdx
@@ -67,7 +67,7 @@ _081D0CF0:
 	adds r0, r1, #0
 	b _081D0D0C
 	.align 2, 0
-_081D0CFC: .4byte 0x0852AD40
+_081D0CFC: .4byte gUnknown_852AD40
 _081D0D00:
 	adds r2, #0x10
 	adds r1, #1
@@ -99,7 +99,7 @@ MatchCallFlagGetByIndex: @ 0x081D0D10
 	bl _call_via_r1
 	b _081D0D3E
 	.align 2, 0
-_081D0D34: .4byte 0x085F79B4
+_081D0D34: .4byte gPokenavMatchCallDataData_085F79B4
 _081D0D38: .4byte 0x085F7A08
 _081D0D3C:
 	movs r0, #0
@@ -244,7 +244,7 @@ MatchCallMapSecGetByIndex: @ 0x081D0DF8
 	lsrs r0, r0, #0x18
 	b _081D0E2A
 	.align 2, 0
-_081D0E20: .4byte 0x085F79B4
+_081D0E20: .4byte gPokenavMatchCallDataData_085F79B4
 _081D0E24: .4byte 0x085F7A1C
 _081D0E28:
 	movs r0, #0
@@ -328,7 +328,7 @@ MatchCall_IsRematchable: @ 0x081D0E74
 	bl _call_via_r1
 	b _081D0EA2
 	.align 2, 0
-_081D0E98: .4byte 0x085F79B4
+_081D0E98: .4byte gPokenavMatchCallDataData_085F79B4
 _081D0E9C: .4byte 0x085F7A30
 _081D0EA0:
 	movs r0, #0
@@ -428,7 +428,7 @@ _081D0F2E:
 	movs r0, #1
 	b _081D0F50
 	.align 2, 0
-_081D0F34: .4byte 0x085F79B4
+_081D0F34: .4byte gPokenavMatchCallDataData_085F79B4
 _081D0F38: .4byte 0x085F7A44
 _081D0F3C:
 	movs r2, #0
@@ -448,7 +448,7 @@ _081D0F50:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081D0F58: .4byte 0x085F7A94
+_081D0F58: .4byte gPokenavMatchCallDataData_085F7A94
 	thumb_func_end sub_081D0F04
 
 	thumb_func_start sub_081D0F5C
@@ -500,7 +500,7 @@ MatchCall_GetRematchTableIdx: @ 0x081D0F70
 	bl _call_via_r1
 	b _081D0F9E
 	.align 2, 0
-_081D0F94: .4byte 0x085F79B4
+_081D0F94: .4byte gPokenavMatchCallDataData_085F79B4
 _081D0F98: .4byte 0x085F7A58
 _081D0F9C:
 	movs r0, #0x4e
@@ -564,7 +564,7 @@ _081D0FDE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D0FE4: .4byte 0x085F79B4
+_081D0FE4: .4byte gPokenavMatchCallDataData_085F79B4
 _081D0FE8: .4byte 0x085F7A6C
 	thumb_func_end MatchCall_GetMessage
 
@@ -817,7 +817,7 @@ _081D11A2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D11A8: .4byte 0x085F79B4
+_081D11A8: .4byte gPokenavMatchCallDataData_085F79B4
 _081D11AC: .4byte 0x085F7A80
 	thumb_func_end sub_081D1178
 
@@ -976,7 +976,7 @@ _081D12A4:
 	ldr r0, [r0]
 	b _081D12C0
 	.align 2, 0
-_081D12B4: .4byte 0x085F7A94
+_081D12B4: .4byte gPokenavMatchCallDataData_085F7A94
 _081D12B8:
 	adds r5, #1
 	cmp r5, #3
@@ -1004,7 +1004,7 @@ _081D12D4:
 	ldrh r0, [r1, #2]
 	b _081D12F0
 	.align 2, 0
-_081D12E0: .4byte 0x085F7A94
+_081D12E0: .4byte gPokenavMatchCallDataData_085F7A94
 _081D12E4:
 	adds r1, #0x18
 	adds r2, #1

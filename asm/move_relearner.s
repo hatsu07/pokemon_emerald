@@ -518,7 +518,7 @@ _081609EC:
 	adds r0, #1
 	b _08160DB4
 	.align 2, 0
-_081609FC: .4byte 0x085AD9D4
+_081609FC: .4byte gMoveRelearnerData_085AD9D4
 _08160A00: .4byte 0x0203B900
 _08160A04:
 	bl MoveRelearnerRunTextPrinters
@@ -898,7 +898,7 @@ _08160D20: .4byte 0x02024190
 _08160D24: .4byte 0x02021C68
 _08160D28: .4byte 0x082EACC4
 _08160D2C: .4byte 0x02021C54
-_08160D30: .4byte 0x085ADA42
+_08160D30: .4byte gMoveRelearnerData_085ADA42
 _08160D34: .4byte 0x02037280
 _08160D38:
 	bl MoveRelearnerRunTextPrinters
@@ -915,7 +915,7 @@ _08160D38:
 	bl PlayFanfare
 	b _08160DB6
 	.align 2, 0
-_08160D58: .4byte 0x085ADA67
+_08160D58: .4byte gMoveRelearnerData_085ADA67
 _08160D5C: .4byte 0x0203B900
 _08160D60: .4byte 0x0000016F
 _08160D64:
@@ -1630,8 +1630,8 @@ _081612F8:
 	bl StartSpriteAnim
 	b _0816133A
 	.align 2, 0
-_08161314: .4byte 0x08566AE4
-_08161318: .4byte 0x08565FCC
+_08161314: .4byte gUnknown_8566AE4
+_08161318: .4byte gUnknown_8565FCC
 _0816131C: .4byte 0x0203B900
 _08161320: .4byte 0x020205AC
 _08161324:
@@ -1703,8 +1703,8 @@ _08161388:
 	bl StartSpriteAnim
 	b _081613D8
 	.align 2, 0
-_081613AC: .4byte 0x08566AE4
-_081613B0: .4byte 0x08565FCC
+_081613AC: .4byte gUnknown_8566AE4
+_081613B0: .4byte gUnknown_8565FCC
 _081613B4: .4byte 0x0203B900
 _081613B8: .4byte 0x020205AC
 _081613BC:

@@ -61,6 +61,9 @@ sPlayerBufferCommands:
 	.4byte PlayerHandleCmd55
 	.4byte PlayerCmdEnd
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECF80: battle_controller_player.s: HandleInputChooseTarget
+	.globl gBattleControllerPlayerData_082ECF80
+gBattleControllerPlayerData_082ECF80:
 	.globl gUnknown_82ECF80
 gUnknown_82ECF80: @ 0x082ECF80
 sTargetIdentities:

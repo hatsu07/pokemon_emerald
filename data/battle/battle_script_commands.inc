@@ -255,6 +255,9 @@ gBattleScriptingCommandsTable:
 	.4byte atkF7_finishturn
 	.4byte atkF8_trainerslideout
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECA78: battle_script_commands.s: atk01_accuracycheck
+	.globl gBattleScriptCommandsData_082ECA78
+gBattleScriptCommandsData_082ECA78:
 	.globl gUnknown_82ECA78
 gUnknown_82ECA78: @ 0x082ECA78
 sAccuracyStageRatios:
@@ -272,12 +275,18 @@ sAccuracyStageRatios:
 	.byte 133, 50, 0, 0 @ stage +5
 	.byte 3, 1, 0, 0 @ stage +6
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECAAC: battle_script_commands.s: atk04_critcalc
+	.globl gBattleScriptCommandsData_082ECAAC
+gBattleScriptCommandsData_082ECAAC:
 	.globl gUnknown_82ECAAC
 gUnknown_82ECAAC: @ 0x082ECAAC
 sCriticalHitChance:
 	.2byte 16, 8, 4, 3, 2
 	.2byte 0 @ alignment
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECAB8: battle_script_commands.s: SetMoveEffect, atk18_clearstatusfromeffect
+	.globl gBattleScriptCommandsData_082ECAB8
+gBattleScriptCommandsData_082ECAB8:
 	.globl gUnknown_82ECAB8
 gUnknown_82ECAB8: @ 0x082ECAB8
 sStatusFlagsForMoveEffects:
@@ -342,6 +351,9 @@ sStatusFlagsForMoveEffects:
 	.4byte MOVE_POINTS_COMBO @ move effect 58
 	.4byte MOVE_POINTS_COMBO @ move effect 59
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECBA8: battle_script_commands.s: SetMoveEffect
+	.globl gBattleScriptCommandsData_082ECBA8
+gBattleScriptCommandsData_082ECBA8:
 	.globl gUnknown_82ECBA8
 gUnknown_82ECBA8: @ 0x082ECBA8
 sMoveEffectBS_Ptrs:
@@ -388,11 +400,17 @@ sMoveEffectBS_Ptrs:
 sUnusedWinTemplate: @ 0x082ECC44
 	.byte 0, 1, 3, 7, 15, 31; .2byte 0x003F
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECC4C: battle_script_commands.s: sub_0804ED94
+	.globl gBattleScriptCommandsData_082ECC4C
+gBattleScriptCommandsData_082ECC4C:
 	.globl gUnknown_82ECC4C
 gUnknown_82ECC4C: @ 0x082ECC4C
 sLevelUpBanner_Pal:
 	.incbin "build/graphics/battle_interface/level_up_banner.gbapal"
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECC6C: battle_script_commands.s: sub_0804ED94
+	.globl gBattleScriptCommandsData_082ECC6C
+gBattleScriptCommandsData_082ECC6C:
 	.globl gUnknown_82ECC6C
 gUnknown_82ECC6C: @ 0x082ECC6C
 sLevelUpBanner_Gfx:
@@ -413,6 +431,9 @@ sOamData_MonIconOnLvlUpBanner: @ 0x082ECD3C
 	.2byte 0x0000
 	.2byte 0x0000
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECD44: battle_script_commands.s: PutMonIconOnLvlUpBox
+	.globl gBattleScriptCommandsData_082ECD44
+gBattleScriptCommandsData_082ECD44:
 	.globl gUnknown_82ECD44
 gUnknown_82ECD44: @ 0x082ECD44
 sSpriteTemplate_MonIconOnLvlUpBanner:
@@ -423,11 +444,17 @@ sSpriteTemplate_MonIconOnLvlUpBanner:
 	.4byte gDummySpriteAffineAnimTable @ gDummySpriteAffineAnimTable
 	.4byte SpriteCB_MonIconOnLvlUpBox @ SpriteCB_MonIconOnLvlUpBanner
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECD5C: battle_script_commands.s: atk77_setprotectlike
+	.globl gBattleScriptCommandsData_082ECD5C
+gBattleScriptCommandsData_082ECD5C:
 	.globl gUnknown_82ECD5C
 gUnknown_82ECD5C: @ 0x082ECD5C
 sProtectSuccessRates:
 	.2byte 0xFFFF, 0x7FFF, 0x3FFF, 0x1FFF @ USHRT_MAX, /2, /4, /8
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECD64: battle_script_commands.s: IsMoveUncopyableByMimic, atk9E_metronome, atkDE_assistattackselect
+	.globl gBattleScriptCommandsData_082ECD64
+gBattleScriptCommandsData_082ECD64:
 	.globl gUnknown_82ECD64
 gUnknown_82ECD64: @ 0x082ECD64
 sMovesForbiddenToCopy:
@@ -452,6 +479,9 @@ sMovesForbiddenToCopy:
 	.2byte MOVE_FOCUS_PUNCH @ 0x0108
 	.2byte 0xFFFF @ 0xFFFF
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECD8C: battle_script_commands.s: atkAC_remaininghptopower
+	.globl gBattleScriptCommandsData_082ECD8C
+gBattleScriptCommandsData_082ECD8C:
 	.globl gUnknown_82ECD8C
 gUnknown_82ECD8C: @ 0x082ECD8C
 sFlailHpScaleToPowerTable:
@@ -462,6 +492,9 @@ sFlailHpScaleToPowerTable:
 	.byte 32, 40
 	.byte 48, 20
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECD98: battle_script_commands.s: atkCC_callterrainattack
+	.globl gBattleScriptCommandsData_082ECD98
+gBattleScriptCommandsData_082ECD98:
 	.globl gUnknown_82ECD98
 gUnknown_82ECD98: @ 0x082ECD98
 sNaturePowerMoves:
@@ -476,6 +509,9 @@ sNaturePowerMoves:
 	.2byte MOVE_SWIFT @ BATTLE_ENVIRONMENT_BUILDING
 	.2byte MOVE_SWIFT @ BATTLE_ENVIRONMENT_PLAIN
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECDAC: battle_script_commands.s: atkDD_weightdamagecalculation
+	.globl gBattleScriptCommandsData_082ECDAC
+gBattleScriptCommandsData_082ECDAC:
 	.globl gUnknown_82ECDAC
 gUnknown_82ECDAC: @ 0x082ECDAC
 sWeightToDamageTable:
@@ -486,6 +522,9 @@ sWeightToDamageTable:
 	.2byte 2000, 100
 	.2byte 65535, 65535
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECDC4: battle_script_commands.s: atkE5_pickup
+	.globl gBattleScriptCommandsData_082ECDC4
+gBattleScriptCommandsData_082ECDC4:
 	.globl gUnknown_82ECDC4
 gUnknown_82ECDC4: @ 0x082ECDC4
 sPickupItems:
@@ -508,6 +547,9 @@ sPickupItems:
 	.2byte ITEM_PP_UP @ 0x0045
 	.2byte ITEM_MAX_ELIXIR @ 0x0025
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECDE8: battle_script_commands.s: atkE5_pickup
+	.globl gBattleScriptCommandsData_082ECDE8
+gBattleScriptCommandsData_082ECDE8:
 	.globl gUnknown_82ECDE8
 gUnknown_82ECDE8: @ 0x082ECDE8
 sRarePickupItems:
@@ -523,23 +565,35 @@ sRarePickupItems:
 	.2byte ITEM_LEFTOVERS @ 0x00C8
 	.2byte ITEM_TM_EARTHQUAKE @ 0x013A
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECDFE: battle_script_commands.s: atkE5_pickup
+	.globl gBattleScriptCommandsData_082ECDFE
+gBattleScriptCommandsData_082ECDFE:
 	.globl gUnknown_82ECDFE
 gUnknown_82ECDFE: @ 0x082ECDFE
 sPickupProbabilities:
 	.byte 30, 40, 50, 60, 70, 80, 90, 94, 98
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECE07: battle_script_commands.s: atkEB_settypetoterrain
+	.globl gBattleScriptCommandsData_082ECE07
+gBattleScriptCommandsData_082ECE07:
 	.globl gUnknown_82ECE07
 gUnknown_82ECE07: @ 0x082ECE07
 sEnvironmentToType:
 	.byte TYPE_GRASS, TYPE_GRASS, TYPE_GROUND, TYPE_WATER, TYPE_WATER
 	.byte TYPE_WATER, TYPE_ROCK, TYPE_ROCK, TYPE_NORMAL, TYPE_NORMAL
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECE11: battle_script_commands.s: atkEF_handleballthrow
+	.globl gBattleScriptCommandsData_082ECE11
+gBattleScriptCommandsData_082ECE11:
 	.globl gUnknown_82ECE11
 gUnknown_82ECE11: @ 0x082ECE11
 sBallCatchBonuses:
 	.byte 20, 15, 10, 15
 	.byte 0, 0, 0 @ alignment
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECE18: battle_gfx_sfx_util.s: ChooseMoveAndTargetInBattlePalace
+	.globl gBattleGfxSfxUtilData_082ECE18
+gBattleGfxSfxUtilData_082ECE18:
 	.globl gUnknown_82ECE18
 gUnknown_82ECE18: @ 0x082ECE18
 	.globl gBattlePalaceNatureToMoveGroupLikelihood
@@ -570,6 +624,9 @@ gBattlePalaceNatureToMoveGroupLikelihood:
 	.byte 42, 92, 42, 47 @ NATURE_CAREFUL
 	.byte 56, 78, 56, 78 @ NATURE_QUIRKY
 
+	@ pret/pokeemerald-jp direct xref for 0x082ECE7C: battle_script_commands.s: atk76_various
+	.globl gBattleScriptCommandsData_082ECE7C
+gBattleScriptCommandsData_082ECE7C:
 	.globl gUnknown_82ECE7C
 gUnknown_82ECE7C: @ 0x082ECE7C
 sBattlePalaceNatureToFlavorTextId:

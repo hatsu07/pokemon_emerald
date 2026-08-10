@@ -802,8 +802,8 @@ LoadListMenuArrowsGfx: @ 0x08122334
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08122348: .4byte 0x0857B0E4
-_0812234C: .4byte 0x0857B0EC
+_08122348: .4byte gMenuHelpersData_0857B0E4
+_0812234C: .4byte gMenuHelpersData_0857B0EC
 	thumb_func_end LoadListMenuArrowsGfx
 
 	thumb_func_start sub_08122350
@@ -860,7 +860,7 @@ _081223A8:
 	bx r0
 	.align 2, 0
 _081223B4: .4byte 0x020205AC
-_081223B8: .4byte 0x0857B0F4
+_081223B8: .4byte gMenuHelpersData_0857B0F4
 	thumb_func_end sub_08122350
 
 	thumb_func_start sub_081223BC

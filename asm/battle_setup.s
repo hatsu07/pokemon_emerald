@@ -1117,7 +1117,7 @@ _080B07F4:
 	lsls r1, r5, #1
 	b _080B0810
 	.align 2, 0
-_080B07FC: .4byte 0x0852AB24
+_080B07FC: .4byte gBattleSetupData_0852AB24
 _080B0800:
 	bl InBattlePyramid
 	lsls r0, r0, #0x18
@@ -1131,7 +1131,7 @@ _080B0810:
 	ldrb r0, [r1]
 	b _080B081E
 	.align 2, 0
-_080B0818: .4byte 0x0852AB24
+_080B0818: .4byte gBattleSetupData_0852AB24
 _080B081C:
 	movs r0, #0xa
 _080B081E:
@@ -1241,7 +1241,7 @@ _080B08B2:
 	adds r0, #1
 	b _080B08E8
 	.align 2, 0
-_080B08E0: .4byte 0x0852AB2C
+_080B08E0: .4byte gBattleSetupData_0852AB2C
 _080B08E4:
 	ldr r0, _080B08F4
 	lsls r1, r6, #1
@@ -1253,7 +1253,7 @@ _080B08EC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B08F4: .4byte 0x0852AB2C
+_080B08F4: .4byte gBattleSetupData_0852AB2C
 	thumb_func_end GetTrainerBattleTransition
 
 	thumb_func_start sub_080B08F8
@@ -1294,7 +1294,7 @@ _080B0934:
 	movs r1, #3
 	b _080B0A00
 	.align 2, 0
-_080B0944: .4byte 0x0852AB40
+_080B0944: .4byte gBattleSetupData_0852AB40
 _080B0948:
 	ldr r4, _080B0954
 	bl Random
@@ -1302,7 +1302,7 @@ _080B0948:
 	lsls r0, r5, #0x10
 	b _080B0A06
 	.align 2, 0
-_080B0954: .4byte 0x0852AB43
+_080B0954: .4byte gBattleSetupData_0852AB43
 _080B0958:
 	ldr r0, _080B0974
 	bl VarGet
@@ -1317,7 +1317,7 @@ _080B0958:
 	b _080B09FE
 	.align 2, 0
 _080B0974: .4byte 0x000040CE
-_080B0978: .4byte 0x0852AB34
+_080B0978: .4byte gBattleSetupData_0852AB34
 _080B097C:
 	cmp r5, #0xa
 	beq _080B0992
@@ -1339,7 +1339,7 @@ _080B0992:
 	movs r1, #3
 	b _080B0A00
 	.align 2, 0
-_080B09A0: .4byte 0x0852AB40
+_080B09A0: .4byte gBattleSetupData_0852AB40
 _080B09A4:
 	ldr r4, _080B09B0
 	bl Random
@@ -1347,7 +1347,7 @@ _080B09A4:
 	lsls r0, r5, #0x10
 	b _080B0A06
 	.align 2, 0
-_080B09B0: .4byte 0x0852AB43
+_080B09B0: .4byte gBattleSetupData_0852AB43
 _080B09B4:
 	ldr r0, _080B09D0
 	bl VarGet
@@ -1362,7 +1362,7 @@ _080B09B4:
 	b _080B09FE
 	.align 2, 0
 _080B09D0: .4byte 0x000040CE
-_080B09D4: .4byte 0x0852AB34
+_080B09D4: .4byte gBattleSetupData_0852AB34
 _080B09D8:
 	ldr r0, _080B0A14
 	ldr r1, [r0]
@@ -1400,7 +1400,7 @@ _080B0A0C:
 _080B0A14: .4byte 0x03005AF0
 _080B0A18: .4byte 0x00000CB2
 _080B0A1C: .4byte 0x00000CB4
-_080B0A20: .4byte 0x0852AB34
+_080B0A20: .4byte gBattleSetupData_0852AB34
 	thumb_func_end sub_080B08F8
 
 	thumb_func_start ChooseStarter
@@ -1839,13 +1839,13 @@ _080B0D80:
 	ldr r0, _080B0D90
 	b _080B0F0A
 	.align 2, 0
-_080B0D8C: .4byte 0x0852AC20
+_080B0D8C: .4byte gBattleSetupData_0852AC20
 _080B0D90: .4byte 0x0824245C
 _080B0D94:
 	ldr r0, _080B0D98
 	b _080B0DC2
 	.align 2, 0
-_080B0D98: .4byte 0x0852ABD8
+_080B0D98: .4byte gBattleSetupData_0852ABD8
 _080B0D9C:
 	ldr r0, _080B0DA8
 	ldrb r0, [r0]
@@ -1855,17 +1855,17 @@ _080B0D9C:
 	b _080B0EEA
 	.align 2, 0
 _080B0DA8: .4byte 0x0203889C
-_080B0DAC: .4byte 0x0852AB90
+_080B0DAC: .4byte gBattleSetupData_0852AB90
 _080B0DB0:
 	ldr r0, _080B0DB4
 	b _080B0F02
 	.align 2, 0
-_080B0DB4: .4byte 0x0852ACF8
+_080B0DB4: .4byte gBattleSetupData_0852ACF8
 _080B0DB8:
 	ldr r0, _080B0DBC
 	b _080B0EEA
 	.align 2, 0
-_080B0DBC: .4byte 0x0852AB90
+_080B0DBC: .4byte gBattleSetupData_0852AB90
 _080B0DC0:
 	ldr r0, _080B0DD0
 _080B0DC2:
@@ -1875,7 +1875,7 @@ _080B0DC2:
 	ldr r0, _080B0DD4
 	b _080B0F0A
 	.align 2, 0
-_080B0DD0: .4byte 0x0852AC68
+_080B0DD0: .4byte gBattleSetupData_0852AC68
 _080B0DD4: .4byte 0x08242424
 _080B0DD8:
 	ldr r0, _080B0DF4
@@ -1889,7 +1889,7 @@ _080B0DD8:
 	ldr r0, _080B0DFC
 	b _080B0F0A
 	.align 2, 0
-_080B0DF4: .4byte 0x0852ABD8
+_080B0DF4: .4byte gBattleSetupData_0852ABD8
 _080B0DF8: .4byte 0x0203886A
 _080B0DFC: .4byte 0x08242492
 _080B0E00:
@@ -1904,7 +1904,7 @@ _080B0E00:
 	ldr r0, _080B0E24
 	b _080B0F0A
 	.align 2, 0
-_080B0E1C: .4byte 0x0852AB48
+_080B0E1C: .4byte gBattleSetupData_0852AB48
 _080B0E20: .4byte 0x0203886A
 _080B0E24: .4byte 0x0824246B
 _080B0E28:
@@ -1923,7 +1923,7 @@ _080B0E28:
 	b _080B0E6A
 	.align 2, 0
 _080B0E48: .4byte 0x0203889C
-_080B0E4C: .4byte 0x0852AB48
+_080B0E4C: .4byte gBattleSetupData_0852AB48
 _080B0E50: .4byte 0x02037292
 _080B0E54: .4byte 0x0203886A
 _080B0E58:
@@ -1939,14 +1939,14 @@ _080B0E6A:
 	strh r0, [r1]
 	b _080B0F08
 	.align 2, 0
-_080B0E70: .4byte 0x0852ACB0
+_080B0E70: .4byte gBattleSetupData_0852ACB0
 _080B0E74: .4byte 0x02037292
 _080B0E78: .4byte 0x0203886C
 _080B0E7C:
 	ldr r0, _080B0E80
 	b _080B0E86
 	.align 2, 0
-_080B0E80: .4byte 0x0852AB48
+_080B0E80: .4byte gBattleSetupData_0852AB48
 _080B0E84:
 	ldr r0, _080B0E90
 _080B0E86:
@@ -1955,7 +1955,7 @@ _080B0E86:
 	movs r0, #0
 	b _080B0F0A
 	.align 2, 0
-_080B0E90: .4byte 0x0852ACB0
+_080B0E90: .4byte gBattleSetupData_0852ACB0
 _080B0E94:
 	ldr r0, _080B0EB4
 	ldrb r0, [r0]
@@ -1972,7 +1972,7 @@ _080B0E94:
 	b _080B0E6A
 	.align 2, 0
 _080B0EB4: .4byte 0x0203889C
-_080B0EB8: .4byte 0x0852AB48
+_080B0EB8: .4byte gBattleSetupData_0852AB48
 _080B0EBC: .4byte 0x02037292
 _080B0EC0: .4byte 0x0203886A
 _080B0EC4:
@@ -1984,7 +1984,7 @@ _080B0EC4:
 	bl LocalIdToHillTrainerId
 	b _080B0E68
 	.align 2, 0
-_080B0ED8: .4byte 0x0852ACB0
+_080B0ED8: .4byte gBattleSetupData_0852ACB0
 _080B0EDC: .4byte 0x02037292
 _080B0EE0:
 	ldr r0, _080B0EF8
@@ -1999,7 +1999,7 @@ _080B0EEA:
 	b _080B0F08
 	.align 2, 0
 _080B0EF8: .4byte 0x0203889C
-_080B0EFC: .4byte 0x0852AB48
+_080B0EFC: .4byte gBattleSetupData_0852AB48
 _080B0F00:
 	ldr r0, _080B0F10
 _080B0F02:
@@ -2012,7 +2012,7 @@ _080B0F0A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B0F10: .4byte 0x0852ACB0
+_080B0F10: .4byte gBattleSetupData_0852ACB0
 _080B0F14: .4byte 0x082423FC
 	thumb_func_end BattleSetup_ConfigureTrainerBattle
 
@@ -2810,7 +2810,7 @@ _080B1560:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B1564: .4byte 0x085C93D0
+_080B1564: .4byte gBattleSetupData_085C93D0
 	thumb_func_end ReturnEmptyStringIfNull
 
 	thumb_func_start GetIntroSpeechOfApproachingTrainer
@@ -3139,7 +3139,7 @@ _080B17A0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B17A8: .4byte 0x0852AD40
+_080B17A8: .4byte gUnknown_852AD40
 	thumb_func_end UpdateRematchIfDefeated
 
 	thumb_func_start DoesSomeoneWantRematchIn_
@@ -3424,7 +3424,7 @@ _080B1984:
 	adds r0, r1, r4
 	b _080B199E
 	.align 2, 0
-_080B1990: .4byte 0x0852AD40
+_080B1990: .4byte gUnknown_852AD40
 _080B1994:
 	adds r2, #0x10
 	adds r1, #1
@@ -3515,7 +3515,7 @@ _080B1A1C:
 	movs r0, #1
 	b _080B1A42
 	.align 2, 0
-_080B1A34: .4byte 0x0852B220
+_080B1A34: .4byte gBattleSetupData_0852B220
 _080B1A38:
 	adds r4, #2
 	adds r5, #1
@@ -3608,7 +3608,7 @@ _080B1ACC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B1AD4: .4byte 0x0852AD40
+_080B1AD4: .4byte gUnknown_852AD40
 _080B1AD8: .4byte 0x03005AEC
 _080B1ADC: .4byte 0x000009C8
 	thumb_func_end TryUpdateRandomTrainerRematches
@@ -3628,7 +3628,7 @@ DoesSomeoneWantRematchIn: @ 0x080B1AE0
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B1AFC: .4byte 0x0852AD40
+_080B1AFC: .4byte gUnknown_852AD40
 	thumb_func_end DoesSomeoneWantRematchIn
 
 	thumb_func_start IsRematchTrainerIn
@@ -3646,7 +3646,7 @@ IsRematchTrainerIn: @ 0x080B1B00
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B1B1C: .4byte 0x0852AD40
+_080B1B1C: .4byte gUnknown_852AD40
 	thumb_func_end IsRematchTrainerIn
 
 	thumb_func_start GetRematchTrainerId
@@ -3662,7 +3662,7 @@ GetRematchTrainerId: @ 0x080B1B20
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B1B38: .4byte 0x0852AD40
+_080B1B38: .4byte gUnknown_852AD40
 	thumb_func_end GetRematchTrainerId
 
 	thumb_func_start GetLastBeatenRematchTrainerId
@@ -3678,7 +3678,7 @@ GetLastBeatenRematchTrainerId: @ 0x080B1B3C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B1B54: .4byte 0x0852AD40
+_080B1B54: .4byte gUnknown_852AD40
 	thumb_func_end GetLastBeatenRematchTrainerId
 
 	thumb_func_start ShouldTryRematchBattle
@@ -3699,7 +3699,7 @@ ShouldTryRematchBattle: @ 0x080B1B58
 	lsrs r0, r0, #0x18
 	b _080B1B86
 	.align 2, 0
-_080B1B7C: .4byte 0x0852AD40
+_080B1B7C: .4byte gUnknown_852AD40
 _080B1B80: .4byte 0x0203886A
 _080B1B84:
 	movs r0, #1
@@ -3721,7 +3721,7 @@ IsTrainerReadyForRematch: @ 0x080B1B8C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B1BA0: .4byte 0x0852AD40
+_080B1BA0: .4byte gUnknown_852AD40
 _080B1BA4: .4byte 0x0203886A
 	thumb_func_end IsTrainerReadyForRematch
 
@@ -3736,7 +3736,7 @@ HandleRematchVarsOnBattleEnd: @ 0x080B1BA8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B1BBC: .4byte 0x0852AD40
+_080B1BBC: .4byte gUnknown_852AD40
 _080B1BC0: .4byte 0x0203886A
 	thumb_func_end HandleRematchVarsOnBattleEnd
 
@@ -3790,7 +3790,7 @@ CountBattledRematchTeams: @ 0x080B1C04
 	movs r0, #0
 	b _080B1C50
 	.align 2, 0
-_080B1C20: .4byte 0x0852AD40
+_080B1C20: .4byte gUnknown_852AD40
 _080B1C24:
 	movs r5, #1
 	adds r0, r4, #2

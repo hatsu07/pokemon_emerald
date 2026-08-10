@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x085C8FDB: pokedex.s: sub_080BF0C8
+	.globl gPokedexData_085C8FDB
+gPokedexData_085C8FDB:
 	.globl gUnknown_85C8FDB
 gUnknown_85C8FDB: @ 0x085C8FDB
 	@ analyzed canonical ROM range 0x085C8FDB-0x085C8FDC

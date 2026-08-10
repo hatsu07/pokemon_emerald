@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x08539C0E: pokedex.s: CreateCaughtBall
+	.globl gPokedexData_08539C0E
+gPokedexData_08539C0E:
 	.globl gUnknown_8539C0E
 gUnknown_8539C0E: @ 0x08539C0E
 	@ analyzed canonical ROM range 0x08539C0E-0x08539C4F

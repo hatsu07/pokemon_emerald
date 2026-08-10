@@ -2313,11 +2313,11 @@ _080BBD58: .4byte 0x02037C74
 _080BBD5C: .4byte 0x020397EC
 _080BBD60: .4byte 0x0000064A
 _080BBD64: .4byte 0x0000062D
-_080BBD68: .4byte 0x08539BE8
-_080BBD6C: .4byte 0x08537E8C
-_080BBD70: .4byte 0x08537804
-_080BBD74: .4byte 0x08537954
-_080BBD78: .4byte 0x08537660
+_080BBD68: .4byte gPokedexData_08539BE8
+_080BBD6C: .4byte gPokedexData_08537E8C
+_080BBD70: .4byte gPokedexData_08537804
+_080BBD74: .4byte gPokedexData_08537954
+_080BBD78: .4byte gPokedexData_08537660
 _080BBD7C:
 	ldr r1, _080BBDA4
 	movs r3, #0xa0
@@ -2339,7 +2339,7 @@ _080BBD8A:
 	ands r0, r2
 	b _080BBDBE
 	.align 2, 0
-_080BBDA4: .4byte 0x08537730
+_080BBDA4: .4byte gPokedexData_08537730
 _080BBDA8: .4byte 0x020397EC
 _080BBDAC: .4byte 0x0000064C
 _080BBDB0:
@@ -2377,7 +2377,7 @@ _080BBDBE:
 	.align 2, 0
 _080BBDF8: .4byte 0x020397EC
 _080BBDFC: .4byte 0x0000064C
-_080BBE00: .4byte 0x08539BF8
+_080BBE00: .4byte gPokedexData_08539BF8
 _080BBE04: .4byte 0x03002360
 _080BBE08:
 	bl ResetSpriteData
@@ -2394,8 +2394,8 @@ _080BBE08:
 	b _080BBF34
 	.align 2, 0
 _080BBE2C: .4byte 0x030030BC
-_080BBE30: .4byte 0x08539BBC
-_080BBE34: .4byte 0x08539BCC
+_080BBE30: .4byte gPokedexData_08539BBC
+_080BBE34: .4byte gPokedexData_08539BCC
 _080BBE38:
 	movs r2, #0x87
 	lsls r2, r2, #3
@@ -2553,7 +2553,7 @@ LoadPokedexBgPalette: @ 0x080BBF80
 	ldr r0, _080BBF90
 	b _080BBF9E
 	.align 2, 0
-_080BBF90: .4byte 0x085374E2
+_080BBF90: .4byte gPokedexData_085374E2
 _080BBF94:
 	bl IsNationalPokedexEnabled
 	cmp r0, #0
@@ -2565,7 +2565,7 @@ _080BBF9E:
 	bl LoadPalette
 	b _080BBFB6
 	.align 2, 0
-_080BBFA8: .4byte 0x08537422
+_080BBFA8: .4byte gPokedexData_08537422
 _080BBFAC:
 	ldr r0, _080BBFC8
 	movs r1, #1
@@ -2579,7 +2579,7 @@ _080BBFB6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080BBFC8: .4byte 0x085375A2
+_080BBFC8: .4byte gPokedexData_085375A2
 	thumb_func_end LoadPokedexBgPalette
 
 	thumb_func_start sub_080BBFCC
@@ -2951,7 +2951,7 @@ _080BC294:
 	.align 2, 0
 _080BC2A8: .4byte 0x020397EC
 _080BC2AC: .4byte 0x0000060C
-_080BC2B0: .4byte 0x08538FF4
+_080BC2B0: .4byte gPokedexData_08538FF4
 _080BC2B4:
 	ldr r4, _080BC330
 	lsls r0, r4, #0x10
@@ -3018,7 +3018,7 @@ _080BC31E:
 _080BC330: .4byte 0x00000181
 _080BC334: .4byte 0x020397EC
 _080BC338: .4byte 0x0000060C
-_080BC33C: .4byte 0x0853932A
+_080BC33C: .4byte gPokedexData_0853932A
 _080BC340: .4byte 0xFFFF0000
 _080BC344:
 	movs r4, #0
@@ -3092,7 +3092,7 @@ _080BC3BA:
 _080BC3CC: .4byte 0x020397EC
 _080BC3D0: .4byte 0x0000060C
 _080BC3D4: .4byte 0x00000181
-_080BC3D8: .4byte 0x0853932A
+_080BC3D8: .4byte gPokedexData_0853932A
 _080BC3DC:
 	ldr r4, _080BC458
 	lsls r0, r4, #0x10
@@ -3159,7 +3159,7 @@ _080BC446:
 _080BC458: .4byte 0x00000181
 _080BC45C: .4byte 0x020397EC
 _080BC460: .4byte 0x0000060C
-_080BC464: .4byte 0x0853962E
+_080BC464: .4byte gPokedexData_0853962E
 _080BC468: .4byte 0xFFFF0000
 _080BC46C:
 	movs r4, #0
@@ -3285,7 +3285,7 @@ _080BC544:
 _080BC554: .4byte 0x020397EC
 _080BC558: .4byte 0x0000060C
 _080BC55C: .4byte 0x00000181
-_080BC560: .4byte 0x0853962E
+_080BC560: .4byte gPokedexData_0853962E
 _080BC564: .4byte 0x0000FFFF
 	thumb_func_end sub_080BC010
 
@@ -3783,7 +3783,7 @@ CreateCaughtBall: @ 0x080BC930
 	bl BlitBitmapToWindow
 	b _080BC970
 	.align 2, 0
-_080BC958: .4byte 0x08539C0E
+_080BC958: .4byte gPokedexData_08539C0E
 _080BC95C:
 	lsls r2, r3, #3
 	lsls r3, r4, #3
@@ -4660,9 +4660,9 @@ _080BD042:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080BD054: .4byte 0x08539BDC
+_080BD054: .4byte gPokedexData_08539BDC
 _080BD058: .4byte 0x020397EC
-_080BD05C: .4byte 0x08539BE1
+_080BD05C: .4byte gPokedexData_08539BE1
 _080BD060: .4byte 0x0000062E
 _080BD064: .4byte 0x00000636
 _080BD068: .4byte 0x00000634
@@ -5243,13 +5243,13 @@ _080BD476:
 	mov r8, r0
 	b _080BD518
 	.align 2, 0
-_080BD4E8: .4byte 0x08539AFC
+_080BD4E8: .4byte gPokedexData_08539AFC
 _080BD4EC: .4byte 0x020205AC
-_080BD4F0: .4byte 0x08539AE4
-_080BD4F4: .4byte 0x08539B14
-_080BD4F8: .4byte 0x08539B2C
-_080BD4FC: .4byte 0x08539B44
-_080BD500: .4byte 0x08539B74
+_080BD4F0: .4byte gPokedexData_08539AE4
+_080BD4F4: .4byte gPokedexData_08539B14
+_080BD4F8: .4byte gPokedexData_08539B2C
+_080BD4FC: .4byte gPokedexData_08539B44
+_080BD500: .4byte gPokedexData_08539B74
 _080BD504: .4byte 0x020397EC
 _080BD508: .4byte 0x0000061A
 _080BD50C:
@@ -5296,7 +5296,7 @@ _080BD550:
 	bl StartSpriteAnim
 	b _080BD588
 	.align 2, 0
-_080BD564: .4byte 0x08539B74
+_080BD564: .4byte gPokedexData_08539B74
 _080BD568: .4byte 0x020397EC
 _080BD56C: .4byte 0x0000061A
 _080BD570: .4byte 0x020205AC
@@ -5372,7 +5372,7 @@ _080BD588:
 	b _080BD62C
 	.align 2, 0
 _080BD60C: .4byte 0x020205AC
-_080BD610: .4byte 0x08539B74
+_080BD610: .4byte gPokedexData_08539B74
 _080BD614: .4byte 0x020397EC
 _080BD618: .4byte 0x0000061A
 _080BD61C: .4byte 0x0000061C
@@ -5420,7 +5420,7 @@ _080BD664:
 	bl StartSpriteAnim
 	b _080BD69C
 	.align 2, 0
-_080BD678: .4byte 0x08539B74
+_080BD678: .4byte gPokedexData_08539B74
 _080BD67C: .4byte 0x020397EC
 _080BD680: .4byte 0x0000061C
 _080BD684: .4byte 0x020205AC
@@ -5466,7 +5466,7 @@ _080BD69C:
 	b _080BDB82
 	.align 2, 0
 _080BD6DC: .4byte 0x020205AC
-_080BD6E0: .4byte 0x08539B74
+_080BD6E0: .4byte gPokedexData_08539B74
 _080BD6E4: .4byte 0x020397EC
 _080BD6E8: .4byte 0x0000061C
 _080BD6EC:
@@ -5559,9 +5559,9 @@ _080BD6EC:
 	mov r8, r0
 	b _080BD7D0
 	.align 2, 0
-_080BD7B8: .4byte 0x08539B44
-_080BD7BC: .4byte 0x08539B5C
-_080BD7C0: .4byte 0x08539B8C
+_080BD7B8: .4byte gPokedexData_08539B44
+_080BD7BC: .4byte gPokedexData_08539B5C
+_080BD7C0: .4byte gPokedexData_08539B8C
 _080BD7C4:
 	adds r0, r4, #0
 	adds r0, #0x3e
@@ -5602,7 +5602,7 @@ _080BD800:
 	bl StartSpriteAnim
 	b _080BD830
 	.align 2, 0
-_080BD814: .4byte 0x08539B8C
+_080BD814: .4byte gPokedexData_08539B8C
 _080BD818: .4byte 0x020205AC
 _080BD81C:
 	ldr r1, _080BD8AC
@@ -5673,7 +5673,7 @@ _080BD830:
 	b _080BD8C8
 	.align 2, 0
 _080BD8AC: .4byte 0x020205AC
-_080BD8B0: .4byte 0x08539B8C
+_080BD8B0: .4byte gPokedexData_08539B8C
 _080BD8B4: .4byte 0x020397EC
 _080BD8B8: .4byte 0x0000061A
 _080BD8BC:
@@ -5720,7 +5720,7 @@ _080BD900:
 	bl StartSpriteAnim
 	b _080BD938
 	.align 2, 0
-_080BD914: .4byte 0x08539B8C
+_080BD914: .4byte gPokedexData_08539B8C
 _080BD918: .4byte 0x020397EC
 _080BD91C: .4byte 0x0000061A
 _080BD920: .4byte 0x020205AC
@@ -5797,7 +5797,7 @@ _080BD938:
 	b _080BD9DC
 	.align 2, 0
 _080BD9C0: .4byte 0x020205AC
-_080BD9C4: .4byte 0x08539B8C
+_080BD9C4: .4byte gPokedexData_08539B8C
 _080BD9C8: .4byte 0x020397EC
 _080BD9CC: .4byte 0x0000061A
 _080BD9D0:
@@ -5840,7 +5840,7 @@ _080BDA0C:
 	bl StartSpriteAnim
 	b _080BDA3C
 	.align 2, 0
-_080BDA20: .4byte 0x08539B8C
+_080BDA20: .4byte gPokedexData_08539B8C
 _080BDA24: .4byte 0x020205AC
 _080BDA28:
 	ldr r1, _080BDAB8
@@ -5911,7 +5911,7 @@ _080BDA3C:
 	b _080BDAD4
 	.align 2, 0
 _080BDAB8: .4byte 0x020205AC
-_080BDABC: .4byte 0x08539B8C
+_080BDABC: .4byte gPokedexData_08539B8C
 _080BDAC0: .4byte 0x020397EC
 _080BDAC4: .4byte 0x0000061C
 _080BDAC8:
@@ -5958,7 +5958,7 @@ _080BDB0C:
 	bl StartSpriteAnim
 	b _080BDB44
 	.align 2, 0
-_080BDB20: .4byte 0x08539B8C
+_080BDB20: .4byte gPokedexData_08539B8C
 _080BDB24: .4byte 0x020397EC
 _080BDB28: .4byte 0x0000061C
 _080BDB2C: .4byte 0x020205AC
@@ -6017,10 +6017,10 @@ _080BDB82:
 	b _080BDBCC
 	.align 2, 0
 _080BDBA0: .4byte 0x020205AC
-_080BDBA4: .4byte 0x08539B8C
+_080BDBA4: .4byte gPokedexData_08539B8C
 _080BDBA8: .4byte 0x020397EC
 _080BDBAC: .4byte 0x0000061C
-_080BDBB0: .4byte 0x08539BA4
+_080BDBB0: .4byte gPokedexData_08539BA4
 _080BDBB4:
 	ldr r0, _080BDBE4
 	movs r1, #0x90
@@ -6047,7 +6047,7 @@ _080BDBCC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080BDBE4: .4byte 0x08539BA4
+_080BDBE4: .4byte gPokedexData_08539BA4
 	thumb_func_end CreateInterfaceSprites
 
 	thumb_func_start nullsub_38
@@ -6777,8 +6777,8 @@ sub_080BE0C0: @ 0x080BE0C0
 _080BE154: .4byte 0x020397F4
 _080BE158: .4byte 0x080BE1C9
 _080BE15C: .4byte 0x03005B60
-_080BE160: .4byte 0x08543110
-_080BE164: .4byte 0x08543120
+_080BE160: .4byte gPokedexData_08543110
+_080BE164: .4byte gPokedexData_08543120
 	thumb_func_end sub_080BE0C0
 
 	thumb_func_start sub_080BE168
@@ -6960,8 +6960,8 @@ _080BE294:
 	adds r1, r1, r3
 	b _080BE5F4
 	.align 2, 0
-_080BE2E4: .4byte 0x08537E8C
-_080BE2E8: .4byte 0x08537A10
+_080BE2E4: .4byte gPokedexData_08537E8C
+_080BE2E8: .4byte gPokedexData_08537A10
 _080BE2EC: .4byte 0x020397F4
 _080BE2F0: .4byte 0x03002360
 _080BE2F4:
@@ -7102,8 +7102,8 @@ _080BE384:
 	.align 2, 0
 _080BE420: .4byte 0x020397F4
 _080BE424: .4byte 0x085C8FBB
-_080BE428: .4byte 0x085C8FC5
-_080BE42C: .4byte 0x085C8FCC
+_080BE428: .4byte gPokedexData_085C8FC5
+_080BE42C: .4byte gPokedexData_085C8FCC
 _080BE430: .4byte 0x0854069C
 _080BE434:
 	ldr r0, _080BE484
@@ -7140,7 +7140,7 @@ _080BE466:
 	.align 2, 0
 _080BE484: .4byte 0x085C8FA2
 _080BE488: .4byte 0x085C8FAC
-_080BE48C: .4byte 0x085C8FB3
+_080BE48C: .4byte gPokedexData_085C8FB3
 _080BE490: .4byte 0x08539C50
 _080BE494: .4byte 0x020373B6
 _080BE498:
@@ -8027,8 +8027,8 @@ _080BEB94:
 	adds r1, r1, r3
 	b _080BEE1E
 	.align 2, 0
-_080BEBD8: .4byte 0x08537E8C
-_080BEBDC: .4byte 0x08537B44
+_080BEBD8: .4byte gPokedexData_08537E8C
+_080BEBDC: .4byte gPokedexData_08537B44
 _080BEBE0: .4byte 0x03002360
 _080BEBE4:
 	movs r0, #0xd
@@ -8085,7 +8085,7 @@ _080BEC24:
 	b _080BEE1E
 	.align 2, 0
 _080BEC5C: .4byte 0x020397F4
-_080BEC60: .4byte 0x085C8FD4
+_080BEC60: .4byte gPokedexData_085C8FD4
 _080BEC64: .4byte 0x085C8FD6
 _080BEC68: .4byte 0x03002360
 _080BEC6C:
@@ -8696,8 +8696,8 @@ _080BF174:
 	bl PutWindowTilemap
 	b _080BF40A
 	.align 2, 0
-_080BF1A4: .4byte 0x08537E8C
-_080BF1A8: .4byte 0x08537C30
+_080BF1A4: .4byte gPokedexData_08537E8C
+_080BF1A8: .4byte gPokedexData_08537C30
 _080BF1AC:
 	movs r0, #0xd
 	bl sub_080BF5B0
@@ -8744,7 +8744,7 @@ _080BF1D8:
 	b _080BF412
 	.align 2, 0
 _080BF214: .4byte 0x020397F4
-_080BF218: .4byte 0x085C8FDB
+_080BF218: .4byte gPokedexData_085C8FDB
 _080BF21C: .4byte 0x03005AF0
 _080BF220: .4byte 0x085C8FDD
 _080BF224: .4byte 0x03002360
@@ -9165,7 +9165,7 @@ sub_080BF598: @ 0x080BF598
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080BF5AC: .4byte 0x08537D24
+_080BF5AC: .4byte gPokedexData_08537D24
 	thumb_func_end sub_080BF598
 
 	thumb_func_start sub_080BF5B0
@@ -9179,7 +9179,7 @@ sub_080BF5B0: @ 0x080BF5B0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080BF5C4: .4byte 0x08537DB4
+_080BF5C4: .4byte gPokedexData_08537DB4
 	thumb_func_end sub_080BF5B0
 
 	thumb_func_start sub_080BF5C8
@@ -9428,8 +9428,8 @@ _080BF74E:
 _080BF7B0: .4byte 0x02037C74
 _080BF7B4: .4byte 0x03005E14
 _080BF7B8: .4byte 0x03002360
-_080BF7BC: .4byte 0x08543148
-_080BF7C0: .4byte 0x08543150
+_080BF7BC: .4byte gPokedexData_08543148
+_080BF7C0: .4byte gPokedexData_08543150
 _080BF7C4: .4byte 0x03005B60
 _080BF7C8:
 	ldr r1, _080BF828
@@ -9471,8 +9471,8 @@ _080BF7C8:
 	strh r0, [r4, #8]
 	b _080BF9D0
 	.align 2, 0
-_080BF828: .4byte 0x08537E8C
-_080BF82C: .4byte 0x08537A10
+_080BF828: .4byte gPokedexData_08537E8C
+_080BF82C: .4byte gPokedexData_08537A10
 _080BF830: .4byte 0x03005B60
 _080BF834:
 	lsls r0, r7, #2
@@ -9560,8 +9560,8 @@ _080BF878:
 	b _080BF98A
 	.align 2, 0
 _080BF8F4: .4byte 0x085C8FBB
-_080BF8F8: .4byte 0x085C8FC5
-_080BF8FC: .4byte 0x085C8FCC
+_080BF8F8: .4byte gPokedexData_085C8FC5
+_080BF8FC: .4byte gPokedexData_085C8FCC
 _080BF900: .4byte 0x0854069C
 _080BF904:
 	adds r0, r5, #0
@@ -9731,7 +9731,7 @@ _080BFA44:
 	b _080BFA7A
 	.align 2, 0
 _080BFA68: .4byte 0x03005B60
-_080BFA6C: .4byte 0x08537422
+_080BFA6C: .4byte gPokedexData_08537422
 _080BFA70:
 	ldr r0, _080BFA84
 	movs r1, #0x31
@@ -9743,7 +9743,7 @@ _080BFA7A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080BFA84: .4byte 0x08537482
+_080BFA84: .4byte gPokedexData_08537482
 	thumb_func_end sub_080BF9E4
 
 	thumb_func_start blockset_load_palette_to_gpu
@@ -11401,7 +11401,7 @@ _080C0684:
 _080C069C: .4byte 0x00000181
 _080C06A0: .4byte 0x020397EC
 _080C06A4: .4byte 0x0000060C
-_080C06A8: .4byte 0x0854410C
+_080C06A8: .4byte gPokedexData_0854410C
 _080C06AC: .4byte 0x082EA31C
 _080C06B0: .4byte 0x082F0D54
 _080C06B4:
@@ -11724,10 +11724,10 @@ _080C08A2:
 _080C0938: .4byte 0x02037C74
 _080C093C: .4byte 0x020397EC
 _080C0940: .4byte 0x0000064A
-_080C0944: .4byte 0x085443FC
-_080C0948: .4byte 0x0854440C
+_080C0944: .4byte gPokedexData_085443FC
+_080C0948: .4byte gPokedexData_0854440C
 _080C094C: .4byte 0x0854385C
-_080C0950: .4byte 0x08543F84
+_080C0950: .4byte gPokedexData_08543F84
 _080C0954:
 	ldr r1, _080C0978
 	movs r0, #3
@@ -11790,8 +11790,8 @@ _080C09A2:
 	bl CopyBgTilemapBufferToVram
 	b _080C0A4A
 	.align 2, 0
-_080C09E4: .4byte 0x08539BBC
-_080C09E8: .4byte 0x08539BCC
+_080C09E4: .4byte gPokedexData_08539BBC
+_080C09E8: .4byte gPokedexData_08539BCC
 _080C09EC: .4byte 0x03005B68
 _080C09F0:
 	movs r0, #1
@@ -12128,8 +12128,8 @@ sub_080C0C7C: @ 0x080C0C7C
 	b _080C0CBC
 	.align 2, 0
 _080C0CA4: .4byte 0x03005B60
-_080C0CA8: .4byte 0x085441BC
-_080C0CAC: .4byte 0x085441F4
+_080C0CA8: .4byte gPokedexData_085441BC
+_080C0CAC: .4byte gPokedexData_085441F4
 _080C0CB0:
 	bl IsNationalPokedexEnabled
 	ldr r6, _080C0CE8
@@ -12158,8 +12158,8 @@ _080C0CBC:
 	str r0, [r1]
 	b _080C0F14
 	.align 2, 0
-_080C0CE8: .4byte 0x085441A0
-_080C0CEC: .4byte 0x085441D8
+_080C0CE8: .4byte gPokedexData_085441A0
+_080C0CEC: .4byte gPokedexData_085441D8
 _080C0CF0: .4byte 0x03002360
 _080C0CF4: .4byte 0x03005B60
 _080C0CF8: .4byte 0x080C0AE1
@@ -12687,7 +12687,7 @@ sub_080C1104: @ 0x080C1104
 	bx r0
 	.align 2, 0
 _080C116C: .4byte 0x03005B60
-_080C1170: .4byte 0x085443CC
+_080C1170: .4byte gPokedexData_085443CC
 _080C1174: .4byte 0x085C9299
 _080C1178: .4byte 0x080C117D
 	thumb_func_end sub_080C1104
@@ -12741,7 +12741,7 @@ sub_080C117C: @ 0x080C117C
 	b _080C1210
 	.align 2, 0
 _080C11DC: .4byte 0x03005B60
-_080C11E0: .4byte 0x085443CC
+_080C11E0: .4byte gPokedexData_085443CC
 _080C11E4: .4byte 0x03002360
 _080C11E8:
 	movs r0, #2
@@ -13084,7 +13084,7 @@ _080C1498:
 	ldrb r2, [r0, #5]
 	b _080C1506
 	.align 2, 0
-_080C14A4: .4byte 0x08544134
+_080C14A4: .4byte gPokedexData_08544134
 _080C14A8:
 	ldr r2, _080C14D4
 	subs r1, r4, #3
@@ -13109,7 +13109,7 @@ _080C14C0:
 	ldrb r3, [r0, #9]
 	b _080C1508
 	.align 2, 0
-_080C14D4: .4byte 0x0854414C
+_080C14D4: .4byte gPokedexData_0854414C
 _080C14D8:
 	ldr r0, _080C14E4
 	ldrb r1, [r0, #0x1c]
@@ -13117,7 +13117,7 @@ _080C14D8:
 	ldrb r3, [r0, #0x1e]
 	b _080C1508
 	.align 2, 0
-_080C14E4: .4byte 0x0854414C
+_080C14E4: .4byte gPokedexData_0854414C
 _080C14E8:
 	bl IsNationalPokedexEnabled
 	cmp r0, #0
@@ -13140,7 +13140,7 @@ _080C1508:
 	bl sub_080C13DC
 	b _080C152C
 	.align 2, 0
-_080C1510: .4byte 0x0854414C
+_080C1510: .4byte gPokedexData_0854414C
 _080C1514:
 	ldr r2, _080C1534
 	subs r1, r4, #3
@@ -13158,7 +13158,7 @@ _080C152C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C1534: .4byte 0x0854414C
+_080C1534: .4byte gPokedexData_0854414C
 	thumb_func_end sub_080C1440
 
 	thumb_func_start sub_080C1538
@@ -13332,7 +13332,7 @@ sub_080C1684: @ 0x080C1684
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C16B4: .4byte 0x08544134
+_080C16B4: .4byte gPokedexData_08544134
 	thumb_func_end sub_080C1684
 
 	thumb_func_start sub_080C16B8
@@ -13414,7 +13414,7 @@ _080C1732:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C1758: .4byte 0x0854414C
+_080C1758: .4byte gPokedexData_0854414C
 	thumb_func_end sub_080C16B8
 
 	thumb_func_start sub_080C175C
@@ -13512,9 +13512,9 @@ _080C181A:
 	bx r0
 	.align 2, 0
 _080C1820: .4byte 0x03005B60
-_080C1824: .4byte 0x08544260
-_080C1828: .4byte 0x085442B8
-_080C182C: .4byte 0x08544318
+_080C1824: .4byte gPokedexData_08544260
+_080C1828: .4byte gPokedexData_085442B8
+_080C182C: .4byte gPokedexData_08544318
 _080C1830: .4byte 0x08544228
 _080C1834: .4byte 0x08544210
 	thumb_func_end sub_080C175C
@@ -13671,7 +13671,7 @@ sub_080C1918: @ 0x080C1918
 	ldrh r4, [r7]
 	b _080C1986
 	.align 2, 0
-_080C195C: .4byte 0x085443CC
+_080C195C: .4byte gPokedexData_085443CC
 _080C1960: .4byte 0x03005B60
 _080C1964:
 	adds r0, r1, r6
@@ -13754,7 +13754,7 @@ sub_080C19BC: @ 0x080C19BC
 	mov pc, r0
 	.align 2, 0
 _080C19FC: .4byte 0x03005B68
-_080C1A00: .4byte 0x085443CC
+_080C1A00: .4byte gPokedexData_085443CC
 _080C1A04: .4byte 0x080C1A08
 _080C1A08: @ jump table
 	.4byte _080C1A34 @ case 0
@@ -13770,7 +13770,7 @@ _080C1A24:
 	ldr r0, _080C1A28
 	b _080C1A50
 	.align 2, 0
-_080C1A28: .4byte 0x085443B0
+_080C1A28: .4byte gPokedexData_085443B0
 _080C1A2C:
 	ldr r0, _080C1A30
 	b _080C1A50
@@ -13917,7 +13917,7 @@ sub_080C1AF0: @ 0x080C1AF0
 	b _080C1B32
 	.align 2, 0
 _080C1B28: .4byte 0x03005B60
-_080C1B2C: .4byte 0x085443CC
+_080C1B2C: .4byte gPokedexData_085443CC
 _080C1B30:
 	movs r0, #1
 _080C1B32:
@@ -13959,7 +13959,7 @@ sub_080C1B38: @ 0x080C1B38
 	b _080C1B7E
 	.align 2, 0
 _080C1B74: .4byte 0x03005B60
-_080C1B78: .4byte 0x085443CC
+_080C1B78: .4byte gPokedexData_085443CC
 _080C1B7C:
 	movs r0, #1
 _080C1B7E:
@@ -14124,7 +14124,7 @@ sub_080C1C38: @ 0x080C1C38
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C1CB0: .4byte 0x08539AFC
+_080C1CB0: .4byte gPokedexData_08539AFC
 _080C1CB4: .4byte 0x020205AC
 _080C1CB8: .4byte 0x080C1B85
 	thumb_func_end sub_080C1C38

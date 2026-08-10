@@ -1069,7 +1069,7 @@ sub_0810445C: @ 0x0810445C
 	b _081044E0
 	.align 2, 0
 _081044B0: .4byte 0x03005B60
-_081044B4: .4byte 0x0856EF94
+_081044B4: .4byte gBattleAnimEffects2Data_0856EF94
 _081044B8: .4byte 0x020205AC
 _081044BC:
 	ldrb r2, [r6, #3]
@@ -1522,7 +1522,7 @@ sub_08104838: @ 0x08104838
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08104860: .4byte 0x0856F084
+_08104860: .4byte gBattleAnimEffects2Data_0856F084
 _08104864: .4byte 0x08104869
 	thumb_func_end sub_08104838
 
@@ -2742,7 +2742,7 @@ _081051DA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081051E0: .4byte 0x0856F1CC
+_081051E0: .4byte gBattleAnimEffects2Data_0856F1CC
 _081051E4: .4byte 0x081051E9
 	thumb_func_end AnimTask_Splash
 
@@ -2889,7 +2889,7 @@ _081052F8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08105300: .4byte 0x0856F1CC
+_08105300: .4byte gBattleAnimEffects2Data_0856F1CC
 	thumb_func_end AnimTask_SplashStep
 
 	thumb_func_start sub_08105304
@@ -2917,7 +2917,7 @@ sub_08105304: @ 0x08105304
 	bx r0
 	.align 2, 0
 _08105334: .4byte 0x03005B60
-_08105338: .4byte 0x0856F1EC
+_08105338: .4byte gBattleAnimEffects2Data_0856F1EC
 _0810533C: .4byte 0x08105341
 	thumb_func_end sub_08105304
 
@@ -3108,7 +3108,7 @@ sub_08105488: @ 0x08105488
 	bx r0
 	.align 2, 0
 _081054BC: .4byte 0x03005B60
-_081054C0: .4byte 0x0856F288
+_081054C0: .4byte gBattleAnimEffects2Data_0856F288
 _081054C4: .4byte 0x081054C9
 	thumb_func_end sub_08105488
 
@@ -4583,7 +4583,7 @@ sub_08105FCC: @ 0x08105FCC
 	bx r0
 	.align 2, 0
 _08105FFC: .4byte 0x03005B60
-_08106000: .4byte 0x0856F494
+_08106000: .4byte gBattleAnimEffects2Data_0856F494
 _08106004: .4byte 0x08106009
 	thumb_func_end sub_08105FCC
 
@@ -5182,9 +5182,9 @@ _081063EE:
 	strh r0, [r4, #8]
 	b _08106492
 	.align 2, 0
-_08106478: .4byte 0x0856F4C0
+_08106478: .4byte gBattleAnimEffects2Data_0856F4C0
 _0810647C: .4byte 0x020205AC
-_08106480: .4byte 0x0856F4D8
+_08106480: .4byte gBattleAnimEffects2Data_0856F4D8
 _08106484:
 	movs r1, #0x22
 	ldrsh r0, [r4, r1]
@@ -5358,7 +5358,7 @@ _081065BA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081065D4: .4byte 0x0856F534
+_081065D4: .4byte gBattleAnimEffects2Data_0856F534
 	thumb_func_end sub_081065B0
 
 	thumb_func_start sub_081065D8
@@ -5406,7 +5406,7 @@ sub_081065D8: @ 0x081065D8
 	.align 2, 0
 _0810662C: .4byte 0x000003FF
 _08106630: .4byte 0xFFFFFC00
-_08106634: .4byte 0x0856F534
+_08106634: .4byte gBattleAnimEffects2Data_0856F534
 	thumb_func_end sub_081065D8
 
 	thumb_func_start sub_08106638
@@ -5722,7 +5722,7 @@ sub_08106870: @ 0x08106870
 	b _081068F4
 	.align 2, 0
 _081068C0: .4byte 0x03005B60
-_081068C4: .4byte 0x0856F56C
+_081068C4: .4byte gBattleAnimEffects2Data_0856F56C
 _081068C8: .4byte 0x020205AC
 _081068CC:
 	ldr r1, _081068FC
@@ -5791,7 +5791,7 @@ sub_08106900: @ 0x08106900
 	b _08106984
 	.align 2, 0
 _08106950: .4byte 0x03005B60
-_08106954: .4byte 0x0856F56C
+_08106954: .4byte gBattleAnimEffects2Data_0856F56C
 _08106958: .4byte 0x020205AC
 _0810695C:
 	ldr r1, _0810698C
@@ -6339,7 +6339,7 @@ _08106D8A:
 _08106DB8: .4byte 0x00003F42
 _08106DBC: .4byte 0x02022ACC
 _08106DC0: .4byte 0x02022ACE
-_08106DC4: .4byte 0x08D93914
+_08106DC4: .4byte gBattleAnimEffects2Data_08D93914
 _08106DC8:
 	ldr r0, _08106DE4
 	ldrb r0, [r0]
@@ -6356,7 +6356,7 @@ _08106DDA:
 	b _08106DF6
 	.align 2, 0
 _08106DE4: .4byte 0x020380D7
-_08106DE8: .4byte 0x08D9354C
+_08106DE8: .4byte gBattleAnimEffects2Data_08D9354C
 _08106DEC:
 	ldr r1, _08106E28
 	mov r0, sp
@@ -6387,7 +6387,7 @@ _08106DF6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08106E28: .4byte 0x08D93730
+_08106E28: .4byte gBattleAnimEffects2Data_08D93730
 _08106E2C: .4byte 0x08C24A9C
 _08106E30: .4byte 0x08C24A74
 _08106E34: .4byte 0x03005B60
@@ -7432,7 +7432,7 @@ sub_081075E0: @ 0x081075E0
 	.align 2, 0
 _08107614: .4byte 0x020380BE
 _08107618: .4byte 0x03005B60
-_0810761C: .4byte 0x0856F77C
+_0810761C: .4byte gBattleAnimEffects2Data_0856F77C
 _08107620: .4byte 0x08107625
 	thumb_func_end sub_081075E0
 

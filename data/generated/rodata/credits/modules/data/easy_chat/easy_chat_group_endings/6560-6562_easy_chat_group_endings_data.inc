@@ -8,6 +8,9 @@ gText_Rom_5CD0FA: @ 0x085CD0FA
 	.if (. - gText_Rom_5CD0FA) < 0x4
 	.space 0x4 - (. - gText_Rom_5CD0FA)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085CD0FE: berry_tag_screen.s: CB2_MysteryEventMenu
+	.globl gBerryTagScreenData_085CD0FE
+gBerryTagScreenData_085CD0FE:
 	.globl gUnknown_85CD0FE
 gUnknown_85CD0FE: @ 0x085CD0FE
 	@ analyzed canonical ROM range 0x085CD0FE-0x085CD11E

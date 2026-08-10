@@ -148,7 +148,7 @@ _081348B4:
 	.align 2, 0
 _08134930: .4byte 0x040000D4
 _08134934: .4byte 0x81000800
-_08134938: .4byte 0x0859130C
+_08134938: .4byte gWallclockData_0859130C
 _0813493C: .4byte 0x02037280
 _08134940: .4byte 0x08590D68
 _08134944:
@@ -197,11 +197,11 @@ _0813494E:
 	bx r0
 	.align 2, 0
 _081349BC: .4byte 0x08590D88
-_081349C0: .4byte 0x08591C20
-_081349C4: .4byte 0x08591C48
-_081349C8: .4byte 0x08591C28
-_081349CC: .4byte 0x08591C54
-_081349D0: .4byte 0x08591C64
+_081349C0: .4byte gWallclockData_08591C20
+_081349C4: .4byte gWallclockData_08591C48
+_081349C8: .4byte gWallclockData_08591C28
+_081349CC: .4byte gWallclockData_08591C54
+_081349D0: .4byte gWallclockData_08591C64
 	thumb_func_end LoadWallClockGraphics
 
 	thumb_func_start WallClockInit
@@ -392,11 +392,11 @@ _08134B64: .4byte 0x08590DA8
 _08134B68: .4byte 0x06003800
 _08134B6C: .4byte 0x08134D05
 _08134B70: .4byte 0x03005B60
-_08134B74: .4byte 0x08591C9C
+_08134B74: .4byte gWallclockData_08591C9C
 _08134B78: .4byte 0x020205AC
-_08134B7C: .4byte 0x08591CB4
-_08134B80: .4byte 0x08591CEC
-_08134B84: .4byte 0x08591D04
+_08134B7C: .4byte gWallclockData_08591CB4
+_08134B80: .4byte gWallclockData_08591CEC
+_08134B84: .4byte gWallclockData_08591D04
 _08134B88: .4byte 0x08591C15
 	thumb_func_end CB2_StartWallClock
 
@@ -434,7 +434,7 @@ CB2_ViewWallClock: @ 0x08134B8C
 	str r0, [sp, #0xc]
 	b _08134BEC
 	.align 2, 0
-_08134BD4: .4byte 0x08591074
+_08134BD4: .4byte gWallclockData_08591074
 _08134BD8: .4byte 0x06003800
 _08134BDC: .4byte 0x08134F65
 _08134BE0: .4byte 0x03005B60
@@ -550,11 +550,11 @@ _08134BEC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08134CD0: .4byte 0x08591C9C
+_08134CD0: .4byte gWallclockData_08591C9C
 _08134CD4: .4byte 0x020205AC
-_08134CD8: .4byte 0x08591CB4
-_08134CDC: .4byte 0x08591CEC
-_08134CE0: .4byte 0x08591D04
+_08134CD8: .4byte gWallclockData_08591CB4
+_08134CDC: .4byte gWallclockData_08591CEC
+_08134CE0: .4byte gWallclockData_08591D04
 _08134CE4: .4byte 0x08591C1A
 	thumb_func_end CB2_ViewWallClock
 
@@ -759,7 +759,7 @@ Task_SetClock3: @ 0x08134E10
 	bx r0
 	.align 2, 0
 _08134E74: .4byte 0x08591C04
-_08134E78: .4byte 0x08591C40
+_08134E78: .4byte gWallclockData_08591C40
 _08134E7C: .4byte 0x03005B60
 _08134E80: .4byte 0x08134E85
 	thumb_func_end Task_SetClock3
@@ -1335,7 +1335,7 @@ _08135284:
 	bx r0
 	.align 2, 0
 _08135290: .4byte 0x03005B60
-_08135294: .4byte 0x08591D1C
+_08135294: .4byte gWallclockData_08591D1C
 	thumb_func_end SpriteCB_MinuteHand
 
 	thumb_func_start SpriteCB_HourHand
@@ -1415,7 +1415,7 @@ _0813531C:
 	bx r0
 	.align 2, 0
 _08135328: .4byte 0x03005B60
-_0813532C: .4byte 0x08591D1C
+_0813532C: .4byte gWallclockData_08591D1C
 	thumb_func_end SpriteCB_HourHand
 
 	thumb_func_start SpriteCB_AMIndicator

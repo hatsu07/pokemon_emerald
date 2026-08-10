@@ -4,6 +4,9 @@
 gUnknown_85CC339: @ 0x085CC339
 	@ Decoded text from ROM range: offset=0x5CC339, size=0x3
 	.string "ひき$"
+	@ pret/pokeemerald-jp direct xref for 0x085CC33C: trainer_card.s: PrintMoneyOnCard
+	.globl gTrainerCardData_085CC33C
+gTrainerCardData_085CC33C:
 	.globl gUnknown_85CC33C
 gUnknown_85CC33C: @ 0x085CC33C
 	@ analyzed canonical ROM range 0x085CC33C-0x085CC340

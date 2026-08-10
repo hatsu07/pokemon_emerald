@@ -847,8 +847,8 @@ _080B9CC2:
 	.align 2, 0
 _080B9DE4: .4byte 0x040000D4
 _080B9DE8: .4byte 0x81000800
-_080B9DEC: .4byte 0x08537414
-_080B9DF0: .4byte 0x085373FC
+_080B9DEC: .4byte gScanlineEffectData_08537414
+_080B9DF0: .4byte gScanlineEffectData_085373FC
 _080B9DF4:
 	bl ResetPaletteFade
 	bl ScanlineEffect_Stop
@@ -897,7 +897,7 @@ _080B9E38:
 	adds r1, r1, r0
 	b _080B9F4C
 	.align 2, 0
-_080B9E64: .4byte 0x0853741C
+_080B9E64: .4byte gScanlineEffectData_0853741C
 _080B9E68: .4byte 0x03005AF0
 _080B9E6C: .4byte 0x03002360
 _080B9E70:
@@ -907,7 +907,7 @@ _080B9E70:
 	bl LoadPalette
 	b _080B9F44
 	.align 2, 0
-_080B9E7C: .4byte 0x085372B0
+_080B9E7C: .4byte gScanlineEffectData_085372B0
 _080B9E80:
 	movs r0, #0
 	bl PutWindowTilemap
@@ -1670,8 +1670,8 @@ Sound_DrawChoices: @ 0x080BA40C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080BA460: .4byte 0x0853738A
-_080BA464: .4byte 0x08537393
+_080BA460: .4byte gScanlineEffectData_0853738A
+_080BA464: .4byte gScanlineEffectData_08537393
 	thumb_func_end Sound_DrawChoices
 
 	thumb_func_start DrawOptionMenuTexts
@@ -2135,7 +2135,7 @@ sub_080BA780: @ 0x080BA780
 	.align 2, 0
 _080BA7F4: .4byte 0x085373DA
 _080BA7F8: .4byte 0x085373E5
-_080BA7FC: .4byte 0x085373EE
+_080BA7FC: .4byte gScanlineEffectData_085373EE
 	thumb_func_end sub_080BA780
 
 	thumb_func_start DrawTextOption

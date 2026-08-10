@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x085FB96C: trainer_hill.s: sub_081D56F0
+	.globl gTrainerHillData_085FB96C
+gTrainerHillData_085FB96C:
 	.globl gUnknown_85FB96C
 gUnknown_85FB96C: @ 0x085FB96C
 	@ analyzed canonical ROM range 0x085FB96C-0x085FB983
@@ -12,12 +15,18 @@ gUnknown_85FB984: @ 0x085FB984
 	.4byte GENDER_FEMALE_25
 	.4byte PSR_F_BIT
 	.4byte ABILITY_OVERGROW
+	@ pret/pokeemerald-jp direct xref for 0x085FB994: trainer_hill.s: sub_081D5C68
+	.globl gTrainerHillData_085FB994
+gTrainerHillData_085FB994:
 	.globl gUnknown_85FB994
 gUnknown_85FB994: @ 0x085FB994
 	@ analyzed canonical ROM range 0x085FB994-0x085FB99B
 sAnalyzedData_085FB994: @ 0x085FB994
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x0302, 0x0504, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085FB99C: rayquaza_scene.s: CB2_InitRayquazaScene, Task_SetNextAnim
+	.globl gRayquazaSceneData_085FB99C
+gRayquazaSceneData_085FB99C:
 	.globl gUnknown_85FB99C
 gUnknown_85FB99C: @ 0x085FB99C
 	@ confirmed contiguous ROM pointer table: 7 entries from this address
@@ -41,6 +50,9 @@ FunctionPointerTable_JP_085FB99C: @ 0x085FB99C
 	.byte 0x00, 0x00, 0x1E, 0x00, 0x40, 0x00, 0x1E, 0x00, 0x80, 0x00, 0x1E, 0x00, 0x40, 0x00, 0x1E, 0x00
 	.byte 0xFE, 0xFF, 0x00, 0x00, 0xC0, 0x00, 0x1E, 0x00, 0x00, 0x01, 0x1E, 0x00, 0x40, 0x01, 0x1E, 0x00
 	.byte 0x00, 0x01, 0x1E, 0x00, 0xFE, 0xFF, 0x00, 0x00, 0xF8, 0xB9, 0x5F, 0x08, 0x0C, 0xBA, 0x5F, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x085FBA28: rayquaza_scene.s: sub_081D62C0
+	.globl gRayquazaSceneData_085FBA28
+gRayquazaSceneData_085FBA28:
 	.globl gUnknown_85FBA28
 gUnknown_85FBA28: @ 0x085FBA28
 	@ analyzed canonical ROM range 0x085FBA28-0x085FBA4B
@@ -55,6 +67,9 @@ sAnalyzedData_085FBA28: @ 0x085FBA28
 	.4byte 0x00010000 @ +0x18
 	.4byte 0x0000FFFF @ +0x1C
 	.4byte 0x085FBA40 @ +0x20
+	@ pret/pokeemerald-jp direct xref for 0x085FBA4C: rayquaza_scene.s: sub_081D62C0
+	.globl gRayquazaSceneData_085FBA4C
+gRayquazaSceneData_085FBA4C:
 	.globl gUnknown_85FBA4C
 gUnknown_85FBA4C: @ 0x085FBA4C
 	@ analyzed canonical ROM range 0x085FBA4C-0x085FBA6F
@@ -69,6 +84,9 @@ sAnalyzedData_085FBA4C: @ 0x085FBA4C
 	.4byte 0x00010000 @ +0x18
 	.4byte 0x0000FFFF @ +0x1C
 	.4byte 0x085FBA64 @ +0x20
+	@ pret/pokeemerald-jp direct xref for 0x085FBA70: rayquaza_scene.s: sub_081D62C0
+	.globl gRayquazaSceneData_085FBA70
+gRayquazaSceneData_085FBA70:
 	.globl gUnknown_85FBA70
 gUnknown_85FBA70: @ 0x085FBA70
 	@ analyzed canonical ROM range 0x085FBA70-0x085FBB17
@@ -85,6 +103,9 @@ sAnalyzedData_085FBA70: @ 0x085FBA70
 	.2byte 0xFFFE, 0x0000, 0xBA88, 0x085F, 0xBA90, 0x085F, 0xBA98, 0x085F
 	.2byte 0xBAA0, 0x085F, 0xBAA8, 0x085F, 0xBAB0, 0x085F, 0xBAB8, 0x085F
 	.2byte 0xBACC, 0x085F, 0xBAE0, 0x085F
+	@ pret/pokeemerald-jp direct xref for 0x085FBB18: rayquaza_scene.s: sub_081D64B8
+	.globl gRayquazaSceneData_085FBB18
+gRayquazaSceneData_085FBB18:
 	.globl gUnknown_85FBB18
 gUnknown_85FBB18: @ 0x085FBB18
 	@ analyzed canonical ROM range 0x085FBB18-0x085FBB47
@@ -93,22 +114,34 @@ sAnalyzedData_085FBB18: @ 0x085FBB18
 	.byte 0x2C, 0x77, 0x2C, 0x77, 0xD0, 0xB9, 0x5F, 0x08, 0xF4, 0xBA, 0x5F, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x41, 0x71, 0x00, 0x08, 0x00, 0x00, 0x24, 0x00, 0x02, 0x00, 0x24, 0x00
 	.byte 0x04, 0x00, 0x24, 0x00, 0x02, 0x00, 0x24, 0x00, 0xFE, 0xFF, 0x00, 0x00, 0x30, 0xBB, 0x5F, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x085FBB48: rayquaza_scene.s: sub_081D64B8
+	.globl gRayquazaSceneData_085FBB48
+gRayquazaSceneData_085FBB48:
 	.globl gUnknown_85FBB48
 gUnknown_85FBB48: @ 0x085FBB48
 	@ analyzed canonical ROM range 0x085FBB48-0x085FBB5F
 sSpriteTemplate_085FBB48: @ 0x085FBB48
 	rodata_sprite_template 0x772D, 0x772C, 0x085FB9D8, 0x085FBB44, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085FBB60: rayquaza_scene.s: sub_081D64B8
+	.globl gRayquazaSceneData_085FBB60
+gRayquazaSceneData_085FBB60:
 	.globl gUnknown_85FBB60
 gUnknown_85FBB60: @ 0x085FBB60
 	@ analyzed canonical ROM range 0x085FBB60-0x085FBB77
 sSpriteTemplate_085FBB60: @ 0x085FBB60
 	rodata_sprite_template 0x772E, 0x772C, 0x085FB9C0, 0x085FBA48, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085FBB78: rayquaza_scene.s: Task_DuoFightAnim
+	.globl gRayquazaSceneData_085FBB78
+gRayquazaSceneData_085FBB78:
 	.globl gUnknown_85FBB78
 gUnknown_85FBB78: @ 0x085FBB78
 	@ analyzed canonical ROM range 0x085FBB78-0x085FBB83
 sAnalyzedData_085FBB78: @ 0x085FBB78
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0014, 0x0400, 0x0001, 0xA260, 0x0001, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085FBB84: rayquaza_scene.s: sub_081D691C
+	.globl gRayquazaSceneData_085FBB84
+gRayquazaSceneData_085FBB84:
 	.globl gUnknown_85FBB84
 gUnknown_85FBB84: @ 0x085FBB84
 	@ analyzed canonical ROM range 0x085FBB84-0x085FBBBF
@@ -118,18 +151,27 @@ sAnalyzedData_085FBB84: @ 0x085FBB84
 	.2byte 0x0040, 0x0014, 0x0080, 0x0014, 0x0040, 0x0014, 0xFFFE, 0x0000
 	.2byte 0x00C0, 0x0014, 0x0100, 0x0014, 0x0140, 0x0014, 0x0100, 0x0014
 	.2byte 0xFFFE, 0x0000, 0xBB90, 0x085F, 0xBBA4, 0x085F
+	@ pret/pokeemerald-jp direct xref for 0x085FBBC0: rayquaza_scene.s: sub_081D69A8
+	.globl gRayquazaSceneData_085FBBC0
+gRayquazaSceneData_085FBBC0:
 	.globl gUnknown_85FBBC0
 gUnknown_85FBBC0: @ 0x085FBBC0
 	@ analyzed canonical ROM range 0x085FBBC0-0x085FBBC7
 sAnalyzedData_085FBBC0: @ 0x085FBBC0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x20, 0x21, 0xDA, 0x08, 0x00, 0x30, 0x29, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x085FBBC8: rayquaza_scene.s: sub_081D69A8
+	.globl gRayquazaSceneData_085FBBC8
+gRayquazaSceneData_085FBBC8:
 	.globl gUnknown_85FBBC8
 gUnknown_85FBBC8: @ 0x085FBBC8
 	@ analyzed canonical ROM range 0x085FBBC8-0x085FBBCF
 sAnalyzedData_085FBBC8: @ 0x085FBBC8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x18, 0x36, 0xDA, 0x08, 0x29, 0x77, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085FBBD0: rayquaza_scene.s: sub_081D6FA0
+	.globl gRayquazaSceneData_085FBBD0
+gRayquazaSceneData_085FBBD0:
 	.globl gUnknown_85FBBD0
 gUnknown_85FBBD0: @ 0x085FBBD0
 	@ analyzed canonical ROM range 0x085FBBD0-0x085FBBF3
@@ -144,12 +186,18 @@ sAnalyzedData_085FBBD0: @ 0x085FBBD0
 	.4byte 0x00010000 @ +0x18
 	.4byte 0x0000FFFF @ +0x1C
 	.4byte 0x085FBBE8 @ +0x20
+	@ pret/pokeemerald-jp direct xref for 0x085FBBF4: rayquaza_scene.s: sub_081D69A8
+	.globl gRayquazaSceneData_085FBBF4
+gRayquazaSceneData_085FBBF4:
 	.globl gUnknown_85FBBF4
 gUnknown_85FBBF4: @ 0x085FBBF4
 	@ analyzed canonical ROM range 0x085FBBF4-0x085FBBFB
 sAnalyzedData_085FBBF4: @ 0x085FBBF4
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x04, 0x2D, 0xDA, 0x08, 0x00, 0x02, 0x2A, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x085FBBFC: rayquaza_scene.s: sub_081D6FA0
+	.globl gRayquazaSceneData_085FBBFC
+gRayquazaSceneData_085FBBFC:
 	.globl gUnknown_85FBBFC
 gUnknown_85FBBFC: @ 0x085FBBFC
 	@ analyzed canonical ROM range 0x085FBBFC-0x085FBC1F
@@ -164,12 +212,18 @@ sAnalyzedData_085FBBFC: @ 0x085FBBFC
 	.4byte 0x00010000 @ +0x18
 	.4byte 0x0000FFFF @ +0x1C
 	.4byte 0x085FBC14 @ +0x20
+	@ pret/pokeemerald-jp direct xref for 0x085FBC20: rayquaza_scene.s: sub_081D69A8
+	.globl gRayquazaSceneData_085FBC20
+gRayquazaSceneData_085FBC20:
 	.globl gUnknown_85FBC20
 gUnknown_85FBC20: @ 0x085FBC20
 	@ analyzed canonical ROM range 0x085FBC20-0x085FBC27
 sAnalyzedData_085FBC20: @ 0x085FBC20
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xD0, 0x2D, 0xDA, 0x08, 0x00, 0x04, 0x2B, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x085FBC28: rayquaza_scene.s: sub_081D6FA0
+	.globl gRayquazaSceneData_085FBC28
+gRayquazaSceneData_085FBC28:
 	.globl gUnknown_85FBC28
 gUnknown_85FBC28: @ 0x085FBC28
 	@ analyzed canonical ROM range 0x085FBC28-0x085FBCCF
@@ -186,18 +240,27 @@ sAnalyzedData_085FBC28: @ 0x085FBC28
 	.2byte 0xFFFE, 0x0000, 0xBC40, 0x085F, 0xBC48, 0x085F, 0xBC50, 0x085F
 	.2byte 0xBC58, 0x085F, 0xBC60, 0x085F, 0xBC68, 0x085F, 0xBC70, 0x085F
 	.2byte 0xBC84, 0x085F, 0xBC98, 0x085F
+	@ pret/pokeemerald-jp direct xref for 0x085FBCD0: rayquaza_scene.s: sub_081D69A8
+	.globl gRayquazaSceneData_085FBCD0
+gRayquazaSceneData_085FBCD0:
 	.globl gUnknown_85FBCD0
 gUnknown_85FBCD0: @ 0x085FBCD0
 	@ analyzed canonical ROM range 0x085FBCD0-0x085FBCD7
 sAnalyzedData_085FBCD0: @ 0x085FBCD0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xC4, 0x2F, 0xDA, 0x08, 0x00, 0x0F, 0x2C, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x085FBCD8: rayquaza_scene.s: sub_081D69A8
+	.globl gRayquazaSceneData_085FBCD8
+gRayquazaSceneData_085FBCD8:
 	.globl gUnknown_85FBCD8
 gUnknown_85FBCD8: @ 0x085FBCD8
 	@ analyzed canonical ROM range 0x085FBCD8-0x085FBCDF
 sAnalyzedData_085FBCD8: @ 0x085FBCD8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x40, 0x36, 0xDA, 0x08, 0x2C, 0x77, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085FBCE0: rayquaza_scene.s: sub_081D71F8
+	.globl gRayquazaSceneData_085FBCE0
+gRayquazaSceneData_085FBCE0:
 	.globl gUnknown_85FBCE0
 gUnknown_85FBCE0: @ 0x085FBCE0
 	@ analyzed canonical ROM range 0x085FBCE0-0x085FBD0F
@@ -206,28 +269,43 @@ sAnalyzedData_085FBCE0: @ 0x085FBCE0
 	.byte 0x2C, 0x77, 0x2C, 0x77, 0xD0, 0xB9, 0x5F, 0x08, 0xAC, 0xBC, 0x5F, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x41, 0x71, 0x00, 0x08, 0x00, 0x00, 0x18, 0x00, 0x02, 0x00, 0x18, 0x00
 	.byte 0x04, 0x00, 0x18, 0x00, 0x02, 0x00, 0x18, 0x00, 0xFE, 0xFF, 0x00, 0x00, 0xF8, 0xBC, 0x5F, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x085FBD10: rayquaza_scene.s: sub_081D69A8
+	.globl gRayquazaSceneData_085FBD10
+gRayquazaSceneData_085FBD10:
 	.globl gUnknown_85FBD10
 gUnknown_85FBD10: @ 0x085FBD10
 	@ analyzed canonical ROM range 0x085FBD10-0x085FBD17
 sAnalyzedData_085FBD10: @ 0x085FBD10
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF8, 0x34, 0xDA, 0x08, 0xC0, 0x00, 0x2D, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x085FBD18: rayquaza_scene.s: sub_081D71F8
+	.globl gRayquazaSceneData_085FBD18
+gRayquazaSceneData_085FBD18:
 	.globl gUnknown_85FBD18
 gUnknown_85FBD18: @ 0x085FBD18
 	@ analyzed canonical ROM range 0x085FBD18-0x085FBD2F
 sSpriteTemplate_085FBD18: @ 0x085FBD18
 	rodata_sprite_template 0x772D, 0x772C, 0x085FB9D8, 0x085FBD0C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085FBD30: rayquaza_scene.s: sub_081D69A8
+	.globl gRayquazaSceneData_085FBD30
+gRayquazaSceneData_085FBD30:
 	.globl gUnknown_85FBD30
 gUnknown_85FBD30: @ 0x085FBD30
 	@ analyzed canonical ROM range 0x085FBD30-0x085FBD37
 sAnalyzedData_085FBD30: @ 0x085FBD30
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x4C, 0x35, 0xDA, 0x08, 0x00, 0x02, 0x2E, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x085FBD38: rayquaza_scene.s: sub_081D71F8
+	.globl gRayquazaSceneData_085FBD38
+gRayquazaSceneData_085FBD38:
 	.globl gUnknown_85FBD38
 gUnknown_85FBD38: @ 0x085FBD38
 	@ analyzed canonical ROM range 0x085FBD38-0x085FBD4F
 sSpriteTemplate_085FBD38: @ 0x085FBD38
 	rodata_sprite_template 0x772E, 0x772C, 0x085FB9C0, 0x085FBBF0, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085FBD50: rayquaza_scene.s: sub_081D774C
+	.globl gRayquazaSceneData_085FBD50
+gRayquazaSceneData_085FBD50:
 	.globl gUnknown_85FBD50
 gUnknown_85FBD50: @ 0x085FBD50
 	@ analyzed canonical ROM range 0x085FBD50-0x085FBD8B
@@ -237,23 +315,35 @@ sAnalyzedData_085FBD50: @ 0x085FBD50
 	.2byte 0xFFFF, 0x0000, 0xBD5C, 0x085F, 0xFFC0, 0xFFC0, 0x0100, 0x0000
 	.2byte 0x0020, 0x0020, 0x0E00, 0x0000, 0x0100, 0x0100, 0x0000, 0x0000
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000, 0xBD68, 0x085F
+	@ pret/pokeemerald-jp direct xref for 0x085FBD8C: rayquaza_scene.s: sub_081D77D8
+	.globl gRayquazaSceneData_085FBD8C
+gRayquazaSceneData_085FBD8C:
 	.globl gUnknown_85FBD8C
 gUnknown_85FBD8C: @ 0x085FBD8C
 	@ analyzed canonical ROM range 0x085FBD8C-0x085FBD93
 sAnalyzedData_085FBD8C: @ 0x085FBD8C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x68, 0x3E, 0xDA, 0x08, 0x00, 0x01, 0x5B, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x085FBD94: rayquaza_scene.s: sub_081D77D8
+	.globl gRayquazaSceneData_085FBD94
+gRayquazaSceneData_085FBD94:
 	.globl gUnknown_85FBD94
 gUnknown_85FBD94: @ 0x085FBD94
 	@ analyzed canonical ROM range 0x085FBD94-0x085FBD9B
 sAnalyzedData_085FBD94: @ 0x085FBD94
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x24, 0x3F, 0xDA, 0x08, 0x5B, 0x77, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085FBD9C: rayquaza_scene.s: sub_081D7AE0
+	.globl gRayquazaSceneData_085FBD9C
+gRayquazaSceneData_085FBD9C:
 	.globl gUnknown_85FBD9C
 gUnknown_85FBD9C: @ 0x085FBD9C
 	@ analyzed canonical ROM range 0x085FBD9C-0x085FBDB3
 sSpriteTemplate_085FBD9C: @ 0x085FBD9C
 	rodata_sprite_template 0x775B, 0x775B, 0x085FB9D0, 0x085FBD64, 0, 0x085FBD88, sub_081D7B9C
+	@ pret/pokeemerald-jp direct xref for 0x085FBDB4: rayquaza_scene.s: sub_081D7AE0, sub_081D7B9C
+	.globl gRayquazaSceneData_085FBDB4
+gRayquazaSceneData_085FBDB4:
 	.globl gUnknown_85FBDB4
 gUnknown_85FBDB4: @ 0x085FBDB4
 	@ analyzed canonical ROM range 0x085FBDB4-0x085FBDC7
@@ -261,6 +351,9 @@ sAnalyzedData_085FBDB4: @ 0x085FBDB4
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0x05, 0xFD, 0xFC, 0x05, 0xFD, 0xF9, 0x02, 0xF7, 0xFF, 0x01, 0xFB, 0x03, 0x04, 0xFB, 0x03
 	.byte 0x07, 0xFE, 0x09, 0x01
+	@ pret/pokeemerald-jp direct xref for 0x085FBDC8: rayquaza_scene.s: sub_081D7BEC
+	.globl gRayquazaSceneData_085FBDC8
+gRayquazaSceneData_085FBDC8:
 	.globl gUnknown_85FBDC8
 gUnknown_85FBDC8: @ 0x085FBDC8
 	@ analyzed canonical ROM range 0x085FBDC8-0x085FBDF7
@@ -269,34 +362,52 @@ sAnalyzedData_085FBDC8: @ 0x085FBDC8
 	.2byte 0x01F0, 0x0000, 0x11E5, 0x0000, 0x21DA, 0x0000, 0x31C7, 0x0000
 	.2byte 0x0000, 0x0020, 0x0040, 0x0020, 0xFFFE, 0x0000, 0xBDD8, 0x085F
 	.2byte 0x0000, 0x0020, 0x0008, 0x0020, 0xFFFE, 0x0000, 0xBDE8, 0x085F
+	@ pret/pokeemerald-jp direct xref for 0x085FBDF8: rayquaza_scene.s: sub_081D7C94
+	.globl gRayquazaSceneData_085FBDF8
+gRayquazaSceneData_085FBDF8:
 	.globl gUnknown_85FBDF8
 gUnknown_85FBDF8: @ 0x085FBDF8
 	@ analyzed canonical ROM range 0x085FBDF8-0x085FBDFF
 sAnalyzedData_085FBDF8: @ 0x085FBDF8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xE8, 0x66, 0xDA, 0x08, 0x00, 0x10, 0x5C, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x085FBE00: rayquaza_scene.s: sub_081D7C94
+	.globl gRayquazaSceneData_085FBE00
+gRayquazaSceneData_085FBE00:
 	.globl gUnknown_85FBE00
 gUnknown_85FBE00: @ 0x085FBE00
 	@ analyzed canonical ROM range 0x085FBE00-0x085FBE07
 sAnalyzedData_085FBE00: @ 0x085FBE00
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x54, 0x6B, 0xDA, 0x08, 0x00, 0x02, 0x5D, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x085FBE08: rayquaza_scene.s: sub_081D7C94
+	.globl gRayquazaSceneData_085FBE08
+gRayquazaSceneData_085FBE08:
 	.globl gUnknown_85FBE08
 gUnknown_85FBE08: @ 0x085FBE08
 	@ analyzed canonical ROM range 0x085FBE08-0x085FBE0F
 sAnalyzedData_085FBE08: @ 0x085FBE08
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x50, 0x50, 0xDA, 0x08, 0x5C, 0x77, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085FBE10: rayquaza_scene.s: sub_081D8008
+	.globl gRayquazaSceneData_085FBE10
+gRayquazaSceneData_085FBE10:
 	.globl gUnknown_85FBE10
 gUnknown_85FBE10: @ 0x085FBE10
 	@ analyzed canonical ROM range 0x085FBE10-0x085FBE27
 sSpriteTemplate_085FBE10: @ 0x085FBE10
 	rodata_sprite_template 0x775C, 0x775C, 0x085FB9B8, 0x085FBDE4, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085FBE28: rayquaza_scene.s: sub_081D8008
+	.globl gRayquazaSceneData_085FBE28
+gRayquazaSceneData_085FBE28:
 	.globl gUnknown_85FBE28
 gUnknown_85FBE28: @ 0x085FBE28
 	@ analyzed canonical ROM range 0x085FBE28-0x085FBE3F
 sSpriteTemplate_085FBE28: @ 0x085FBE28
 	rodata_sprite_template 0x775D, 0x775C, 0x085FB9E0, 0x085FBDF4, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085FBE40: rayquaza_scene.s: sub_081D8164
+	.globl gRayquazaSceneData_085FBE40
+gRayquazaSceneData_085FBE40:
 	.globl gUnknown_85FBE40
 gUnknown_85FBE40: @ 0x085FBE40
 	@ analyzed canonical ROM range 0x085FBE40-0x085FBF23
@@ -317,120 +428,183 @@ sAnalyzedData_085FBE40: @ 0x085FBE40
 	.2byte 0xBEEC, 0x085F, 0x0000, 0x0008, 0x0004, 0x0008, 0x0008, 0x0008
 	.2byte 0x000C, 0x0008, 0x0010, 0x0008, 0x0014, 0x0008, 0xFFFE, 0x0000
 	.2byte 0xBF04, 0x085F
+	@ pret/pokeemerald-jp direct xref for 0x085FBF24: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_085FBF24
+gRayquazaSceneData_085FBF24:
 	.globl gUnknown_85FBF24
 gUnknown_85FBF24: @ 0x085FBF24
 	@ analyzed canonical ROM range 0x085FBF24-0x085FBF2B
 sAnalyzedData_085FBF24: @ 0x085FBF24
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x80, 0x91, 0xDA, 0x08, 0x00, 0x18, 0x65, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x085FBF2C: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_085FBF2C
+gRayquazaSceneData_085FBF2C:
 	.globl gUnknown_85FBF2C
 gUnknown_85FBF2C: @ 0x085FBF2C
 	@ analyzed canonical ROM range 0x085FBF2C-0x085FBF33
 sAnalyzedData_085FBF2C: @ 0x085FBF2C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x18, 0x99, 0xDA, 0x08, 0x80, 0x00, 0x66, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x085FBF34: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_085FBF34
+gRayquazaSceneData_085FBF34:
 	.globl gUnknown_85FBF34
 gUnknown_85FBF34: @ 0x085FBF34
 	@ analyzed canonical ROM range 0x085FBF34-0x085FBF3B
 sAnalyzedData_085FBF34: @ 0x085FBF34
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x5C, 0x99, 0xDA, 0x08, 0x00, 0x06, 0x68, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x085FBF3C: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_085FBF3C
+gRayquazaSceneData_085FBF3C:
 	.globl gUnknown_85FBF3C
 gUnknown_85FBF3C: @ 0x085FBF3C
 	@ analyzed canonical ROM range 0x085FBF3C-0x085FBF43
 sAnalyzedData_085FBF3C: @ 0x085FBF3C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xA4, 0x9B, 0xDA, 0x08, 0x00, 0x20, 0x69, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x085FBF44: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_085FBF44
+gRayquazaSceneData_085FBF44:
 	.globl gUnknown_85FBF44
 gUnknown_85FBF44: @ 0x085FBF44
 	@ analyzed canonical ROM range 0x085FBF44-0x085FBF4B
 sAnalyzedData_085FBF44: @ 0x085FBF44
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x4C, 0xA8, 0xDA, 0x08, 0x00, 0x08, 0x6A, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x085FBF4C: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_085FBF4C
+gRayquazaSceneData_085FBF4C:
 	.globl gUnknown_85FBF4C
 gUnknown_85FBF4C: @ 0x085FBF4C
 	@ analyzed canonical ROM range 0x085FBF4C-0x085FBF53
 sAnalyzedData_085FBF4C: @ 0x085FBF4C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x3C, 0xAA, 0xDA, 0x08, 0x00, 0x03, 0x6B, 0x77
+	@ pret/pokeemerald-jp direct xref for 0x085FBF54: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_085FBF54
+gRayquazaSceneData_085FBF54:
 	.globl gUnknown_85FBF54
 gUnknown_85FBF54: @ 0x085FBF54
 	@ analyzed canonical ROM range 0x085FBF54-0x085FBF5B
 sAnalyzedData_085FBF54: @ 0x085FBF54
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xD4, 0xAA, 0xDA, 0x08, 0x65, 0x77, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085FBF5C: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_085FBF5C
+gRayquazaSceneData_085FBF5C:
 	.globl gUnknown_85FBF5C
 gUnknown_85FBF5C: @ 0x085FBF5C
 	@ analyzed canonical ROM range 0x085FBF5C-0x085FBF63
 sAnalyzedData_085FBF5C: @ 0x085FBF5C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFC, 0xAA, 0xDA, 0x08, 0x68, 0x77, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085FBF64: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_085FBF64
+gRayquazaSceneData_085FBF64:
 	.globl gUnknown_85FBF64
 gUnknown_85FBF64: @ 0x085FBF64
 	@ analyzed canonical ROM range 0x085FBF64-0x085FBF6B
 sAnalyzedData_085FBF64: @ 0x085FBF64
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x24, 0xAB, 0xDA, 0x08, 0x69, 0x77, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085FBF6C: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_085FBF6C
+gRayquazaSceneData_085FBF6C:
 	.globl gUnknown_85FBF6C
 gUnknown_85FBF6C: @ 0x085FBF6C
 	@ analyzed canonical ROM range 0x085FBF6C-0x085FBF73
 sAnalyzedData_085FBF6C: @ 0x085FBF6C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x4C, 0xAB, 0xDA, 0x08, 0x6B, 0x77, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085FBF74: rayquaza_scene.s: sub_081D89E4
+	.globl gRayquazaSceneData_085FBF74
+gRayquazaSceneData_085FBF74:
 	.globl gUnknown_85FBF74
 gUnknown_85FBF74: @ 0x085FBF74
 	@ analyzed canonical ROM range 0x085FBF74-0x085FBF8B
 sSpriteTemplate_085FBF74: @ 0x085FBF74
 	rodata_sprite_template 0x7765, 0x7765, 0x085FB9B8, 0x085FBE6C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085FBF8C: rayquaza_scene.s: sub_081D89E4
+	.globl gRayquazaSceneData_085FBF8C
+gRayquazaSceneData_085FBF8C:
 	.globl gUnknown_85FBF8C
 gUnknown_85FBF8C: @ 0x085FBF8C
 	@ analyzed canonical ROM range 0x085FBF8C-0x085FBFA3
 sSpriteTemplate_085FBF8C: @ 0x085FBF8C
 	rodata_sprite_template 0x7766, 0x7765, 0x085FB9E8, 0x085FBE7C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085FBFA4: rayquaza_scene.s: sub_081D89E4
+	.globl gRayquazaSceneData_085FBFA4
+gRayquazaSceneData_085FBFA4:
 	.globl gUnknown_85FBFA4
 gUnknown_85FBFA4: @ 0x085FBFA4
 	@ analyzed canonical ROM range 0x085FBFA4-0x085FBFBB
 sSpriteTemplate_085FBFA4: @ 0x085FBFA4
 	rodata_sprite_template 0x7768, 0x7768, 0x085FB9C0, 0x085FBE98, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085FBFBC: rayquaza_scene.s: sub_081D89E4
+	.globl gRayquazaSceneData_085FBFBC
+gRayquazaSceneData_085FBFBC:
 	.globl gUnknown_85FBFBC
 gUnknown_85FBFBC: @ 0x085FBFBC
 	@ analyzed canonical ROM range 0x085FBFBC-0x085FBFD3
 sSpriteTemplate_085FBFBC: @ 0x085FBFBC
 	rodata_sprite_template 0x7769, 0x7769, 0x085FB9B8, 0x085FBEC4, 0, gDummySpriteAffineAnimTable, sub_081D8F58
+	@ pret/pokeemerald-jp direct xref for 0x085FBFD4: rayquaza_scene.s: sub_081D89E4
+	.globl gRayquazaSceneData_085FBFD4
+gRayquazaSceneData_085FBFD4:
 	.globl gUnknown_85FBFD4
 gUnknown_85FBFD4: @ 0x085FBFD4
 	@ analyzed canonical ROM range 0x085FBFD4-0x085FBFEB
 sSpriteTemplate_085FBFD4: @ 0x085FBFD4
 	rodata_sprite_template 0x776A, 0x7769, 0x085FB9C0, 0x085FBEF4, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085FBFEC: rayquaza_scene.s: sub_081D8E64
+	.globl gRayquazaSceneData_085FBFEC
+gRayquazaSceneData_085FBFEC:
 	.globl gUnknown_85FBFEC
 gUnknown_85FBFEC: @ 0x085FBFEC
 	@ analyzed canonical ROM range 0x085FBFEC-0x085FC003
 sSpriteTemplate_085FBFEC: @ 0x085FBFEC
 	rodata_sprite_template 0x776B, 0x776B, 0x085FB9F0, 0x085FBF20, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085FC004: rayquaza_scene.s: sub_081D8574
+	.globl gRayquazaSceneData_085FC004
+gRayquazaSceneData_085FC004:
 	.globl gUnknown_85FC004
 gUnknown_85FC004: @ 0x085FC004
 	@ analyzed canonical ROM range 0x085FC004-0x085FC00F
 sAnalyzedData_085FC004: @ 0x085FC004
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x11F4, 0x0000, 0x21E5, 0x0000, 0x01D2, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085FC010: walda_phrase.s: CB2_HandleGivenWaldaPhrase
+	.globl gWaldaPhraseData_085FC010
+gWaldaPhraseData_085FC010:
 	.globl gUnknown_85FC010
 gUnknown_85FC010: @ 0x085FC010
 	@ analyzed canonical ROM range 0x085FC010-0x085FC01B
 sAnalyzedData_085FC010: @ 0x085FC010
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1502, 0x0202, 0x0215, 0x0146, 0xFFAE, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085FC01C: gym_leader_rematch.s: UpdateGymLeaderRematch
+	.globl gGymLeaderRematchData_085FC01C
+gGymLeaderRematchData_085FC01C:
 	.globl gUnknown_85FC01C
 gUnknown_85FC01C: @ 0x085FC01C
 	@ analyzed canonical ROM range 0x085FC01C-0x085FC02B
 sAnalyzedData_085FC01C: @ 0x085FC01C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0041, 0x0042, 0x0043, 0x0044, 0x0045, 0x0046, 0x0047, 0x0048
+	@ pret/pokeemerald-jp direct xref for 0x085FC02C: gym_leader_rematch.s: UpdateGymLeaderRematch
+	.globl gGymLeaderRematchData_085FC02C
+gGymLeaderRematchData_085FC02C:
 	.globl gUnknown_85FC02C
 gUnknown_85FC02C: @ 0x085FC02C
 	@ analyzed canonical ROM range 0x085FC02C-0x085FC03B
 sAnalyzedData_085FC02C: @ 0x085FC02C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0041, 0x0042, 0x0044, 0x0045, 0x0046, 0x0047, 0x0048, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085FC03C: unk_transition.s: sub_081D9F50
+	.globl gUnkTransitionData_085FC03C
+gUnkTransitionData_085FC03C:
 	.globl gUnknown_85FC03C
 gUnknown_85FC03C: @ 0x085FC03C
 	@ analyzed canonical ROM range 0x085FC03C-0x085FC217
@@ -439,6 +613,9 @@ sAnalyzedGfx_085FC03C: @ 0x085FC03C
 	.if (. - sAnalyzedGfx_085FC03C) != 0x1DC
 	.error "gUnknown_85FC03C compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085FC218: unk_transition.s: sub_081D9F50
+	.globl gUnkTransitionData_085FC218
+gUnkTransitionData_085FC218:
 	.globl gUnknown_85FC218
 gUnknown_85FC218: @ 0x085FC218
 	@ analyzed canonical ROM range 0x085FC218-0x085FC823
@@ -541,6 +718,9 @@ sAnalyzedData_085FC218: @ 0x085FC218
 	.byte 0xF0, 0x01, 0xF7, 0xFF, 0xFF, 0xF7, 0xFF, 0xF7, 0xFF, 0xF7, 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF7
 	.byte 0xFF, 0xF7, 0xFF, 0xF7, 0xFF, 0xFF, 0xF7, 0xFF, 0xF7, 0xFF, 0xF7, 0xFF, 0xF7, 0xFF, 0xF7, 0xFF
 	.byte 0xF7, 0xFF, 0xF7, 0xFF, 0xF0, 0x01, 0xC0, 0xF0, 0x01, 0x50, 0x01, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085FC824: unk_transition.s: sub_081D9F50
+	.globl gUnkTransitionData_085FC824
+gUnkTransitionData_085FC824:
 	.globl gUnknown_85FC824
 gUnknown_85FC824: @ 0x085FC824
 	@ analyzed canonical ROM range 0x085FC824-0x085FCA0B
@@ -577,12 +757,18 @@ sAnalyzedData_085FC824: @ 0x085FC824
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0xC000, 0x0400, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085FCA0C: unk_transition.s: sub_081D9F50
+	.globl gUnkTransitionData_085FCA0C
+gUnkTransitionData_085FCA0C:
 	.globl gUnknown_85FCA0C
 gUnknown_85FCA0C: @ 0x085FCA0C
 	@ analyzed canonical ROM range 0x085FCA0C-0x085FCA13
 sAnalyzedData_085FCA0C: @ 0x085FCA0C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xC4, 0xC3, 0x5F, 0x08, 0x00, 0x18, 0x90, 0x2E
+	@ pret/pokeemerald-jp direct xref for 0x085FCA14: unk_transition.s: sub_081D9F50
+	.globl gUnkTransitionData_085FCA14
+gUnkTransitionData_085FCA14:
 	.globl gUnknown_85FCA14
 gUnknown_85FCA14: @ 0x085FCA14
 	@ analyzed canonical ROM range 0x085FCA14-0x085FCA3F
@@ -591,6 +777,9 @@ sAnalyzedData_085FCA14: @ 0x085FCA14
 	.2byte 0xC824, 0x085F, 0x2E90, 0x0000, 0x0000, 0x0001, 0xFFFF, 0x0000
 	.2byte 0x0040, 0x0001, 0xFFFF, 0x0000, 0x0080, 0x0001, 0xFFFF, 0x0000
 	.2byte 0xCA1C, 0x085F, 0xCA24, 0x085F, 0xCA2C, 0x085F
+	@ pret/pokeemerald-jp direct xref for 0x085FCA40: unk_transition.s: sub_081D9F9C, sub_081DA10C
+	.globl gUnkTransitionData_085FCA40
+gUnkTransitionData_085FCA40:
 	.globl gUnknown_85FCA40
 gUnknown_85FCA40: @ 0x085FCA40
 	@ analyzed canonical ROM range 0x085FCA40-0x085FCA57
@@ -652,6 +841,9 @@ gUnknown_85FCAE4: @ 0x085FCAE4
 	.4byte sub_081DA40C
 	.4byte sub_081DA39C
 	.4byte sub_081DAB78
+	@ pret/pokeemerald-jp direct xref for 0x085FCAF8: mystery_event_script.s: MEScrCmd_setenigmaberry
+	.globl gMysteryEventScriptData_085FCAF8
+gMysteryEventScriptData_085FCAF8:
 	.globl gUnknown_85FCAF8
 gUnknown_85FCAF8: @ 0x085FCAF8
 	@ analyzed canonical ROM range 0x085FCAF8-0x085FCB18
@@ -660,6 +852,9 @@ sAnalyzedData_085FCAF8: @ 0x085FCAF8
 	.byte 0xFD, 0x03, 0x19, 0x20, 0x2D, 0x00, 0x13, 0x16, 0x00, 0x02, 0x2A, 0x10, 0xAB, 0xFE, 0x64, 0x53
 	.byte 0x56, 0x8D, 0x71, 0x19, 0x00, 0x9B, 0x9B, 0x06, 0x27, 0x00, 0x03, 0x09, 0x14, 0x2B, 0x03, 0xAB
 	.byte 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x085FCB19: mystery_event_script.s: MEScrCmd_setenigmaberry
+	.globl gMysteryEventScriptData_085FCB19
+gMysteryEventScriptData_085FCB19:
 	.globl gUnknown_85FCB19
 gUnknown_85FCB19: @ 0x085FCB19
 	@ analyzed canonical ROM range 0x085FCB19-0x085FCB2B
@@ -667,6 +862,9 @@ sAnalyzedData_085FCB19: @ 0x085FCB19
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFD, 0x02, 0x19, 0x20, 0x1A, 0xFE, 0xFD, 0x03, 0x19, 0x20, 0x16, 0x00, 0x1D, 0x2E, 0x06, 0x0C
 	.byte 0x10, 0xAB, 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x085FCB2C: mystery_event_script.s: MEScrCmd_setenigmaberry
+	.globl gMysteryEventScriptData_085FCB2C
+gMysteryEventScriptData_085FCB2C:
 	.globl gUnknown_85FCB2C
 gUnknown_85FCB2C: @ 0x085FCB2C
 	@ analyzed canonical ROM range 0x085FCB2C-0x085FCB3C

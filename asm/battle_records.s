@@ -742,7 +742,7 @@ _0813C52A:
 	bx r0
 	.align 2, 0
 _0813C560: .4byte 0x0203A840
-_0813C564: .4byte 0x085937D8
+_0813C564: .4byte gBattleRecordsData_085937D8
 _0813C568: .4byte 0x02021C7C
 _0813C56C: .4byte 0x085937E0
 _0813C570: .4byte 0x03005AEC
@@ -1144,9 +1144,9 @@ LoadTrainerHillRecordsWindowGfx: @ 0x0813C86C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0813C8A8: .4byte 0x08592EE0
-_0813C8AC: .4byte 0x08592FC0
-_0813C8B0: .4byte 0x08592FA0
+_0813C8A8: .4byte gBattleRecordsData_08592EE0
+_0813C8AC: .4byte gBattleRecordsData_08592FC0
+_0813C8B0: .4byte gBattleRecordsData_08592FA0
 	thumb_func_end LoadTrainerHillRecordsWindowGfx
 
 	thumb_func_start VblankCB_TrainerHillRecords
@@ -1242,7 +1242,7 @@ _0813C952:
 	b _0813C9DC
 	.align 2, 0
 _0813C97C: .4byte 0x0203A844
-_0813C980: .4byte 0x085937C0
+_0813C980: .4byte gBattleRecordsData_085937C0
 _0813C984:
 	movs r0, #3
 	bl LoadTrainerHillRecordsWindowGfx
@@ -1271,7 +1271,7 @@ _0813C9BA:
 	bl DeactivateAllTextPrinters
 	b _0813C9DC
 	.align 2, 0
-_0813C9C8: .4byte 0x085937C8
+_0813C9C8: .4byte gBattleRecordsData_085937C8
 _0813C9CC:
 	movs r0, #1
 	rsbs r0, r0, #0

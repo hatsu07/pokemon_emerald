@@ -92,7 +92,7 @@ _08145E3E:
 	bne _08145E58
 	b _08145E78
 	.align 2, 0
-_08145E4C: .4byte 0x08598C68
+_08145E4C: .4byte gLandmarkData_08598C68
 _08145E50:
 	adds r0, r4, #4
 	adds r0, r1, r0
@@ -123,6 +123,6 @@ _08145E7A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08145E80: .4byte 0x08598C68
+_08145E80: .4byte gLandmarkData_08598C68
 	thumb_func_end GetLandmarks
 

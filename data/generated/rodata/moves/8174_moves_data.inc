@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x08DAB294: rayquaza_scene.s: sub_081D8600
+	.globl gRayquazaSceneData_08DAB294
+gRayquazaSceneData_08DAB294:
 	.globl gUnknown_8DAB294
 gUnknown_8DAB294: @ 0x08DAB294
 	@ confirmed GBA LZ77 stream: compressed=0x69, decompressed=0x60

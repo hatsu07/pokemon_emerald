@@ -1,9 +1,15 @@
+	@ pret/pokeemerald-jp direct xref for 0x085CA388: pokemon_summary_screen.s: sub_081C21CC
+	.globl gPokemonSummaryScreenData_085CA388
+gPokemonSummaryScreenData_085CA388:
 	.globl gUnknown_85CA388
 gUnknown_85CA388: @ 0x085CA388
 	@ analyzed canonical ROM range 0x085CA388-0x085CA38A
 sAnalyzedData_085CA388: @ 0x085CA388
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xC2, 0xCA, 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x085CA38B: pokemon_summary_screen.s: PrintExpPointsNextLevel
+	.globl gPokemonSummaryScreenData_085CA38B
+gPokemonSummaryScreenData_085CA38B:
 	.globl gUnknown_85CA38B
 gUnknown_85CA38B: @ 0x085CA38B
 	@ analyzed canonical ROM range 0x085CA38B-0x085CA38D

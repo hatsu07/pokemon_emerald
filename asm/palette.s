@@ -2485,7 +2485,7 @@ _080A23FC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A2404: .4byte 0x084FCFA8
+_080A2404: .4byte gPaletteData_084FCFA8
 	thumb_func_end TintPalette_GrayScale2
 
 	thumb_func_start TintPalette_SepiaTone

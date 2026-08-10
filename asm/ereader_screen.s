@@ -540,7 +540,7 @@ _081D47FC:
 	strb r0, [r4, #8]
 	b _081D4B0A
 	.align 2, 0
-_081D4810: .4byte 0x085CCF0B
+_081D4810: .4byte gEreaderScreenData_085CCF0B
 _081D4814: .4byte 0x085CCF2A
 _081D4818:
 	adds r0, r4, #0
@@ -648,8 +648,8 @@ _081D48E8:
 	.align 2, 0
 _081D4900: .4byte 0x085CCFAD
 _081D4904: .4byte 0x03006110
-_081D4908: .4byte 0x08912454
-_081D490C: .4byte 0x0890F374
+_081D4908: .4byte gUnknown_8912454
+_081D490C: .4byte gEreaderScreenData_0890F374
 _081D4910:
 	ldr r0, _081D4928
 	bl sub_081D4468

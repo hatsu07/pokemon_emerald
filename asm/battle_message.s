@@ -145,7 +145,7 @@ _0814E2A8:
 _0814E2AC: .4byte 0x02022C90
 _0814E2B0: .4byte 0x02000002
 _0814E2B4: .4byte 0x085AAE91
-_0814E2B8: .4byte 0x085AC12D
+_0814E2B8: .4byte gBattleMessageData_085AC12D
 _0814E2BC:
 	ldr r0, _0814E2CC
 	ldrh r1, [r0]
@@ -157,7 +157,7 @@ _0814E2BC:
 	b _0814E788
 	.align 2, 0
 _0814E2CC: .4byte 0x0203886A
-_0814E2D0: .4byte 0x085AAE68
+_0814E2D0: .4byte gBattleMessageData_085AAE68
 _0814E2D4:
 	movs r0, #0x80
 	lsls r0, r0, #0x11
@@ -171,7 +171,7 @@ _0814E2E2:
 	b _0814E788
 	.align 2, 0
 _0814E2E8: .4byte 0x085AAE7F
-_0814E2EC: .4byte 0x085AC118
+_0814E2EC: .4byte gBattleMessageData_085AC118
 _0814E2F0:
 	movs r0, #0x80
 	lsls r0, r0, #0xf
@@ -189,8 +189,8 @@ _0814E308:
 	ldr r7, _0814E310
 	b _0814E788
 	.align 2, 0
-_0814E30C: .4byte 0x085AAE68
-_0814E310: .4byte 0x085ABDF4
+_0814E30C: .4byte gBattleMessageData_085AAE68
+_0814E310: .4byte gBattleMessageData_085ABDF4
 _0814E314:
 	movs r0, #0x80
 	lsls r0, r0, #6
@@ -200,7 +200,7 @@ _0814E314:
 	ldr r7, _0814E324
 	b _0814E788
 	.align 2, 0
-_0814E324: .4byte 0x085AAE22
+_0814E324: .4byte gBattleMessageData_085AAE22
 _0814E328:
 	movs r0, #1
 	ands r0, r2
@@ -209,7 +209,7 @@ _0814E328:
 	ldr r7, _0814E334
 	b _0814E788
 	.align 2, 0
-_0814E334: .4byte 0x085AAE4E
+_0814E334: .4byte gBattleMessageData_085AAE4E
 _0814E338:
 	movs r0, #0x80
 	lsls r0, r0, #2
@@ -222,8 +222,8 @@ _0814E346:
 	ldr r7, _0814E350
 	b _0814E788
 	.align 2, 0
-_0814E34C: .4byte 0x085AAE0C
-_0814E350: .4byte 0x085AAE36
+_0814E34C: .4byte gBattleMessageData_085AAE0C
+_0814E350: .4byte gBattleMessageData_085AAE36
 _0814E354:
 	mov r1, ip
 	ldrb r0, [r1]
@@ -246,7 +246,7 @@ _0814E354:
 	b _0814E788
 	.align 2, 0
 _0814E37C: .4byte 0x02022C90
-_0814E380: .4byte 0x085ABE13
+_0814E380: .4byte gBattleMessageData_085ABE13
 _0814E384:
 	movs r0, #0x80
 	lsls r0, r0, #8
@@ -269,7 +269,7 @@ _0814E3A4:
 	b _0814E788
 	.align 2, 0
 _0814E3A8: .4byte 0x085AAF4B
-_0814E3AC: .4byte 0x085AAF8E
+_0814E3AC: .4byte gBattleMessageData_085AAF8E
 _0814E3B0:
 	ldr r7, _0814E3B4
 	b _0814E788
@@ -297,7 +297,7 @@ _0814E3D8:
 	b _0814E788
 	.align 2, 0
 _0814E3DC: .4byte 0x02022C90
-_0814E3E0: .4byte 0x085ABDBB
+_0814E3E0: .4byte gBattleMessageData_085ABDBB
 _0814E3E4:
 	movs r0, #0x40
 	ands r0, r1
@@ -306,7 +306,7 @@ _0814E3E4:
 	ldr r7, _0814E3F0
 	b _0814E788
 	.align 2, 0
-_0814E3F0: .4byte 0x085AAF06
+_0814E3F0: .4byte gBattleMessageData_085AAF06
 _0814E3F4:
 	ldr r0, _0814E404
 	ands r1, r0
@@ -319,8 +319,8 @@ _0814E400:
 	b _0814E788
 	.align 2, 0
 _0814E404: .4byte 0x02000002
-_0814E408: .4byte 0x085AAEBA
-_0814E40C: .4byte 0x085AAEF3
+_0814E408: .4byte gBattleMessageData_085AAEBA
+_0814E40C: .4byte gBattleMessageData_085AAEF3
 _0814E410:
 	ldr r0, _0814E42C
 	ands r1, r0
@@ -340,8 +340,8 @@ _0814E428:
 	.align 2, 0
 _0814E42C: .4byte 0x02000002
 _0814E430: .4byte 0x0203886A
-_0814E434: .4byte 0x085AAEE4
-_0814E438: .4byte 0x085AAEA7
+_0814E434: .4byte gBattleMessageData_085AAEE4
+_0814E438: .4byte gBattleMessageData_085AAEA7
 _0814E43C:
 	mov r1, ip
 	ldrb r0, [r1]
@@ -414,13 +414,13 @@ _0814E4BC:
 	.align 2, 0
 _0814E4C0: .4byte 0x0203886A
 _0814E4C4: .4byte 0x02022C90
-_0814E4C8: .4byte 0x085AAFEB
-_0814E4CC: .4byte 0x085AAFFA
+_0814E4C8: .4byte gBattleMessageData_085AAFEB
+_0814E4CC: .4byte gBattleMessageData_085AAFFA
 _0814E4D0:
 	ldr r7, _0814E4D4
 	b _0814E788
 	.align 2, 0
-_0814E4D4: .4byte 0x085AAFD8
+_0814E4D4: .4byte gBattleMessageData_085AAFD8
 _0814E4D8:
 	mov r4, r8
 	ldrb r0, [r4, #0x17]
@@ -506,7 +506,7 @@ _0814E574:
 	.align 2, 0
 _0814E578: .4byte 0x0203886A
 _0814E57C: .4byte 0x085AAF24
-_0814E580: .4byte 0x085AAED1
+_0814E580: .4byte gBattleMessageData_085AAED1
 _0814E584:
 	movs r0, #0x80
 	lsls r0, r0, #8
@@ -523,7 +523,7 @@ _0814E592:
 _0814E59A:
 	b _0814E574
 	.align 2, 0
-_0814E59C: .4byte 0x085ABDE1
+_0814E59C: .4byte gBattleMessageData_085ABDE1
 _0814E5A0:
 	mov r0, sb
 	bl ChooseMoveUsedParticle
@@ -549,7 +549,7 @@ _0814E5A0:
 _0814E5CC: .4byte 0x0203A874
 _0814E5D0: .4byte 0x02022C1C
 _0814E5D4: .4byte 0x02024140
-_0814E5D8: .4byte 0x085ABC9A
+_0814E5D8: .4byte gBattleMessageData_085ABC9A
 _0814E5DC:
 	ldr r0, _0814E5F4
 	ldrh r1, [r2]
@@ -565,7 +565,7 @@ _0814E5EA:
 	.align 2, 0
 _0814E5F4: .4byte 0x02022C1C
 _0814E5F8: .4byte 0x082EACC4
-_0814E5FC: .4byte 0x085AB034
+_0814E5FC: .4byte gBattleMessageData_085AB034
 _0814E600:
 	ldr r4, _0814E640
 	ldrb r1, [r4]
@@ -613,7 +613,7 @@ _0814E648:
 	b _0814E788
 	.align 2, 0
 _0814E658: .4byte 0x02022C90
-_0814E65C: .4byte 0x085AAA45
+_0814E65C: .4byte gBattleMessageData_085AAA45
 _0814E660:
 	ldr r0, _0814E66C
 	ldrh r1, [r0]
@@ -672,7 +672,7 @@ _0814E6BE:
 	b _0814E788
 	.align 2, 0
 _0814E6D0: .4byte 0x085AA9D6
-_0814E6D4: .4byte 0x085ABE2F
+_0814E6D4: .4byte gBattleMessageData_085ABE2F
 _0814E6D8:
 	ldr r7, _0814E6DC
 	b _0814E788
@@ -710,17 +710,17 @@ _0814E716:
 	ldr r7, _0814E71C
 	b _0814E788
 	.align 2, 0
-_0814E71C: .4byte 0x085AAD22
+_0814E71C: .4byte gBattleMessageData_085AAD22
 _0814E720:
 	ldr r7, _0814E724
 	b _0814E788
 	.align 2, 0
-_0814E724: .4byte 0x085AC0B1
+_0814E724: .4byte gBattleMessageData_085AC0B1
 _0814E728:
 	ldr r7, _0814E72C
 	b _0814E788
 	.align 2, 0
-_0814E72C: .4byte 0x085AC0C6
+_0814E72C: .4byte gBattleMessageData_085AC0C6
 _0814E730:
 	ldr r0, _0814E744
 	ldrb r0, [r0]
@@ -781,7 +781,7 @@ _0814E78E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0814E79C: .4byte 0x085AB3DC
+_0814E79C: .4byte gUnknown_85AB3DC
 	thumb_func_end BufferStringBattle
 
 	thumb_func_start TryGetStatusString
@@ -1672,7 +1672,7 @@ _0814EF82:
 	.align 2, 0
 _0814EF94: .4byte 0x0203A874
 _0814EF98: .4byte 0x02024140
-_0814EF9C: .4byte 0x085ABC9A
+_0814EF9C: .4byte gBattleMessageData_085ABC9A
 _0814EFA0:
 	ldrh r0, [r2, #2]
 _0814EFA2:
@@ -2603,7 +2603,7 @@ _0814F6C8:
 	ldr r1, [r1]
 	b _0814F8D6
 	.align 2, 0
-_0814F6E0: .4byte 0x085AB3DC
+_0814F6E0: .4byte gUnknown_85AB3DC
 _0814F6E4:
 	ldrb r0, [r4, #1]
 	cmp r0, #2
@@ -2789,7 +2789,7 @@ _0814F844:
 	ldr r1, [r0]
 	b _0814F862
 	.align 2, 0
-_0814F854: .4byte 0x085AB0D0
+_0814F854: .4byte gBattleMessageData_085AB0D0
 _0814F858:
 	adds r0, r5, r7
 	ldrb r1, [r0, #1]
@@ -2914,7 +2914,7 @@ _0814F930:
 	b _0814F95C
 	.align 2, 0
 _0814F944: .4byte 0x0203A874
-_0814F948: .4byte 0x085AC146
+_0814F948: .4byte gBattleMessageData_085AC146
 _0814F94C: .4byte 0x085ABC96
 _0814F950:
 	cmp r2, #4
@@ -2969,7 +2969,7 @@ _0814F99C:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_0814F9A8: .4byte 0x085AC146
+_0814F9A8: .4byte gBattleMessageData_085AC146
 _0814F9AC: .4byte 0x0203A874
 _0814F9B0: .4byte 0x0814F9B4
 _0814F9B4: @ jump table
@@ -3038,7 +3038,7 @@ sub_0814FA04: @ 0x0814FA04
 	ands r7, r0
 	b _0814FA56
 	.align 2, 0
-_0814FA30: .4byte 0x085AC468
+_0814FA30: .4byte gBattleMessageData_085AC468
 _0814FA34: .4byte 0x02024118
 _0814FA38:
 	lsls r0, r7, #1
@@ -3171,7 +3171,7 @@ _0814FB20:
 	ldrb r6, [r0]
 	b _0814FB48
 	.align 2, 0
-_0814FB3C: .4byte 0x085AC470
+_0814FB3C: .4byte gBattleMessageData_085AC470
 _0814FB40:
 	bl GetPlayerTextSpeedDelay
 	lsls r0, r0, #0x18
@@ -3259,8 +3259,8 @@ _0814FBE0: .4byte 0x02023D08
 _0814FBE4: .4byte 0x02022D0C
 _0814FBE8: .4byte 0x02024154
 _0814FBEC: .4byte 0x020373B4
-_0814FBF0: .4byte 0x08D85604
-_0814FBF4: .4byte 0x08D85606
+_0814FBF0: .4byte gUnknown_8D85604
+_0814FBF4: .4byte gBattleMessageData_08D85606
 _0814FBF8: .4byte 0x0203786C
 	thumb_func_end SetPpNumbersPaletteInMoveSelection
 

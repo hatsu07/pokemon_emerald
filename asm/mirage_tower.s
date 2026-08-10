@@ -103,7 +103,7 @@ _081BE3B4:
 	bx r0
 	.align 2, 0
 _081BE3BC: .4byte 0x03005AEC
-_081BE3C0: .4byte 0x085E7FD4
+_081BE3C0: .4byte gMirageTowerData_085E7FD4
 _081BE3C4: .4byte 0x081BE335
 	thumb_func_end TryStartMirageTowerPulseBlendEffect
 
@@ -431,7 +431,7 @@ DoMirageTowerCeilingCrumble: @ 0x081BE630
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081BE654: .4byte 0x085E7F50
+_081BE654: .4byte gMirageTowerData_085E7F50
 _081BE658: .4byte 0x081BE65D
 	thumb_func_end DoMirageTowerCeilingCrumble
 
@@ -575,10 +575,10 @@ _081BE714:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081BE764: .4byte 0x085E7F20
+_081BE764: .4byte gMirageTowerData_085E7F20
 _081BE768: .4byte 0x020205AC
-_081BE76C: .4byte 0x085E801C
-_081BE770: .4byte 0x085E7FF0
+_081BE76C: .4byte gMirageTowerData_085E801C
+_081BE770: .4byte gMirageTowerData_085E7FF0
 	thumb_func_end CreateCeilingCrumbleSprites
 
 	thumb_func_start MoveCeilingCrumbleSprite
@@ -619,7 +619,7 @@ _081BE7B6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081BE7BC: .4byte 0x085E7F20
+_081BE7BC: .4byte gMirageTowerData_085E7F20
 	thumb_func_end MoveCeilingCrumbleSprite
 
 	thumb_func_start SetInvisibleMirageTowerMetatiles
@@ -646,7 +646,7 @@ _081BE7C6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081BE7EC: .4byte 0x085E7F60
+_081BE7EC: .4byte gMirageTowerData_085E7F60
 	thumb_func_end SetInvisibleMirageTowerMetatiles
 
 	thumb_func_start StartMirageTowerDisintegration
@@ -817,7 +817,7 @@ _081BE924:
 	bl LoadBgTiles
 	b _081BE974
 	.align 2, 0
-_081BE944: .4byte 0x085E7430
+_081BE944: .4byte gMirageTowerData_085E7430
 _081BE948: .4byte 0x0203CBD0
 _081BE94C:
 	ldr r0, _081BE988
@@ -849,7 +849,7 @@ _081BE974:
 	b _081BE9DC
 	.align 2, 0
 _081BE988: .4byte 0x0203CBD4
-_081BE98C: .4byte 0x085E7D50
+_081BE98C: .4byte gMirageTowerData_085E7D50
 _081BE990: .4byte 0x03005B60
 _081BE994:
 	movs r0, #0
@@ -1321,7 +1321,7 @@ _081BED5A:
 	b _081BEEC4
 	.align 2, 0
 _081BED70: .4byte 0x0203CBD8
-_081BED74: .4byte 0x085E7E00
+_081BED74: .4byte gMirageTowerData_085E7E00
 _081BED78:
 	ldr r0, _081BED88
 	ldr r0, [r0]
@@ -1393,7 +1393,7 @@ _081BEDE8:
 	bls _081BEDE8
 	b _081BEEC4
 	.align 2, 0
-_081BEE00: .4byte 0x085E7FBC
+_081BEE00: .4byte gMirageTowerData_085E7FBC
 _081BEE04: .4byte 0x0203CBD8
 _081BEE08: .4byte 0x020205AC
 _081BEE0C:

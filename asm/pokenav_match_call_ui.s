@@ -1540,7 +1540,7 @@ sub_081C8484: @ 0x081C8484
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C84F0: .4byte 0x085F15A8
+_081C84F0: .4byte gPokenavMatchCallUiData_085F15A8
 	thumb_func_end sub_081C8484
 
 	thumb_func_start sub_081C84F4
@@ -1674,7 +1674,7 @@ PrintMatchCallFieldNames: @ 0x081C8564
 	bx r0
 	.align 2, 0
 _081C85F4: .4byte 0x085F15AC
-_081C85F8: .4byte 0x085F15B8
+_081C85F8: .4byte gPokenavMatchCallUiData_085F15B8
 	thumb_func_end PrintMatchCallFieldNames
 
 	thumb_func_start sub_081C85FC
@@ -1704,7 +1704,7 @@ sub_081C85FC: @ 0x081C85FC
 	bl StringCopyPadded
 	b _081C8642
 	.align 2, 0
-_081C8630: .4byte 0x085F15BB
+_081C8630: .4byte gPokenavMatchCallUiData_085F15BB
 _081C8634:
 	adds r4, r5, #0
 	adds r4, #0x48
@@ -1761,8 +1761,8 @@ _081C8682:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C869C: .4byte 0x085F15C0
-_081C86A0: .4byte 0x085F15C8
+_081C869C: .4byte gPokenavMatchCallUiData_085F15C0
+_081C86A0: .4byte gPokenavMatchCallUiData_085F15C8
 	thumb_func_end sub_081C867C
 
 	thumb_func_start sub_081C86A4
@@ -1869,10 +1869,10 @@ sub_081C86A4: @ 0x081C86A4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C8774: .4byte 0x085F15E0
+_081C8774: .4byte gPokenavMatchCallUiData_085F15E0
 _081C8778: .4byte 0xFFFC0000
 _081C877C: .4byte 0x020205AC
-_081C8780: .4byte 0x085F1600
+_081C8780: .4byte gPokenavMatchCallUiData_085F1600
 _081C8784: .4byte 0x000003FF
 _081C8788: .4byte 0xFFFFFC00
 _081C878C: .4byte 0x081C8855

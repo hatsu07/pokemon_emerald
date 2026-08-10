@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x0859DC98: battle_transition.s: Phase2_Kyogre_Func3
+	.globl gBattleTransitionData_0859DC98
+gBattleTransitionData_0859DC98:
 	.globl gUnknown_859DC98
 gUnknown_859DC98: @ 0x0859DC98
 	@ analyzed canonical ROM range 0x0859DC98-0x0859DFCB
@@ -6,6 +9,9 @@ sAnalyzedGfx_0859DC98: @ 0x0859DC98
 	.if (. - sAnalyzedGfx_0859DC98) != 0x334
 	.error "gUnknown_859DC98 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x0859DFCC: battle_transition.s: Phase2_Groudon_Func3
+	.globl gBattleTransitionData_0859DFCC
+gBattleTransitionData_0859DFCC:
 	.globl gUnknown_859DFCC
 gUnknown_859DFCC: @ 0x0859DFCC
 	@ analyzed canonical ROM range 0x0859DFCC-0x0859E537
@@ -14,6 +20,9 @@ sAnalyzedGfx_0859DFCC: @ 0x0859DFCC
 	.if (. - sAnalyzedGfx_0859DFCC) != 0x56C
 	.error "gUnknown_859DFCC compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x0859E538: battle_transition.s: Phase2_Groudon_Func3
+	.globl gBattleTransitionData_0859E538
+gBattleTransitionData_0859E538:
 	.globl gUnknown_859E538
 gUnknown_859E538: @ 0x0859E538
 	@ analyzed canonical ROM range 0x0859E538-0x0859E84F
@@ -22,6 +31,9 @@ sAnalyzedGfx_0859E538: @ 0x0859E538
 	.if (. - sAnalyzedGfx_0859E538) != 0x318
 	.error "gUnknown_859E538 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x0859E850: battle_transition.s: Phase2_Kyogre_Func4
+	.globl gBattleTransitionData_0859E850
+gBattleTransitionData_0859E850:
 	.globl gUnknown_859E850
 gUnknown_859E850: @ 0x0859E850
 	@ analyzed canonical ROM range 0x0859E850-0x0859E98F
@@ -47,6 +59,9 @@ sAnalyzedData_0859E850: @ 0x0859E850
 	.2byte 0x0016, 0x0011, 0x000D, 0x0000, 0x0009, 0x000D, 0x0011, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x001B, 0x001F, 0x001B, 0x0016
 	.2byte 0x0011, 0x000D, 0x0000, 0x0009, 0x000D, 0x0011, 0x0016, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0859E990: battle_transition.s: Phase2_Kyogre_Func5
+	.globl gBattleTransitionData_0859E990
+gBattleTransitionData_0859E990:
 	.globl gUnknown_859E990
 gUnknown_859E990: @ 0x0859E990
 	@ analyzed canonical ROM range 0x0859E990-0x0859EB4F
@@ -80,6 +95,9 @@ sAnalyzedData_0859E990: @ 0x0859E990
 	.2byte 0x421F, 0x421F, 0x421F, 0x421F, 0x421F, 0x421F, 0x421F, 0x001F
 	.2byte 0x0000, 0x0000, 0x001F, 0x253F, 0x253F, 0x253F, 0x253F, 0x253F
 	.2byte 0x253F, 0x253F, 0x253F, 0x253F, 0x253F, 0x253F, 0x253F, 0x001C
+	@ pret/pokeemerald-jp direct xref for 0x0859EB50: battle_transition.s: Phase2_Groudon_Func4
+	.globl gBattleTransitionData_0859EB50
+gBattleTransitionData_0859EB50:
 	.globl gUnknown_859EB50
 gUnknown_859EB50: @ 0x0859EB50
 	@ analyzed canonical ROM range 0x0859EB50-0x0859ED4F
@@ -117,6 +135,9 @@ sAnalyzedData_0859EB50: @ 0x0859EB50
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0859ED50: battle_transition.s: Phase2_Groudon_Func5
+	.globl gBattleTransitionData_0859ED50
+gBattleTransitionData_0859ED50:
 	.globl gUnknown_859ED50
 gUnknown_859ED50: @ 0x0859ED50
 	@ analyzed canonical ROM range 0x0859ED50-0x0859EF4F
@@ -154,6 +175,9 @@ sAnalyzedData_0859ED50: @ 0x0859ED50
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0859EF50: battle_transition.s: Phase2_Rayquaza_Func5, Phase2_Rayquaza_Func9
+	.globl gBattleTransitionData_0859EF50
+gBattleTransitionData_0859EF50:
 	.globl gUnknown_859EF50
 gUnknown_859EF50: @ 0x0859EF50
 	@ analyzed canonical ROM range 0x0859EF50-0x0859EFEF
@@ -169,6 +193,9 @@ sAnalyzedData_0859EF50: @ 0x0859EF50
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x03FF, 0x03FF, 0x03FF, 0x03FF, 0x039C
 	.2byte 0x02B5, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0859EFF0: battle_transition.s: Phase2_Rayquaza_Func3
+	.globl gBattleTransitionData_0859EFF0
+gBattleTransitionData_0859EFF0:
 	.globl gUnknown_859EFF0
 gUnknown_859EFF0: @ 0x0859EFF0
 	@ analyzed canonical ROM range 0x0859EFF0-0x0859F14F

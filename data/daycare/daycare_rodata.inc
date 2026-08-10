@@ -70,6 +70,9 @@ gUnknown_82FC0E8: @ 0x082FC0E8
 	.4byte gText_Rom_2FC09A
 	.4byte gText_Rom_2FC0AE
 	.4byte gText_Rom_2FC0C4
+	@ pret/pokeemerald-jp direct xref for 0x082FC0F8: daycare.s: GetDaycareLevelMenuLevelText, GetDaycareLevelMenuText
+	.globl gDaycareData_082FC0F8
+gDaycareData_082FC0F8:
 	.globl gUnknown_82FC0F8
 gUnknown_82FC0F8: @ 0x082FC0F8
 	@ analyzed canonical ROM range 0x082FC0F8-0x082FC0F9

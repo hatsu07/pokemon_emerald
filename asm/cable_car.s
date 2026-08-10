@@ -234,8 +234,8 @@ _0814FDD8:
 	adds r0, #1
 	b _08150200
 	.align 2, 0
-_0814FE48: .4byte 0x08526DE8
-_0814FE4C: .4byte 0x085AC474
+_0814FE48: .4byte gUnknown_8526DE8
+_0814FE4C: .4byte gCableCarData_085AC474
 _0814FE50: .4byte 0x0203A878
 _0814FE54: .4byte 0x000010FC
 _0814FE58: .4byte 0x000020FC
@@ -306,19 +306,19 @@ _0814FE72:
 	adds r0, #1
 	b _08150200
 	.align 2, 0
-_0814FEF4: .4byte 0x085AC95C
-_0814FEF8: .4byte 0x085AC97C
-_0814FEFC: .4byte 0x085AC484
+_0814FEF4: .4byte gCableCarData_085AC95C
+_0814FEF8: .4byte gCableCarData_085AC97C
+_0814FEFC: .4byte gCableCarData_085AC484
 _0814FF00: .4byte 0x0203A878
 _0814FF04: .4byte 0x000040FC
-_0814FF08: .4byte 0x085AC5DC
-_0814FF0C: .4byte 0x085AC760
+_0814FF08: .4byte gCableCarData_085AC5DC
+_0814FF0C: .4byte gCableCarData_085AC760
 _0814FF10: .4byte 0x00004104
-_0814FF14: .4byte 0x085AC938
+_0814FF14: .4byte gCableCarData_085AC938
 _0814FF18: .4byte 0x0000410C
 _0814FF1C: .4byte 0x00004108
-_0814FF20: .4byte 0x085AC924
-_0814FF24: .4byte 0x08DBA860
+_0814FF20: .4byte gCableCarData_085AC924
+_0814FF24: .4byte gCableCarData_08DBA860
 _0814FF28: .4byte 0x03002360
 _0814FF2C:
 	bl free_temp_tile_data_buffers_if_possible
@@ -339,7 +339,7 @@ _0814FF38:
 	adds r0, #1
 	b _08150200
 	.align 2, 0
-_0814FF50: .4byte 0x08DBA7C0
+_0814FF50: .4byte gCableCarData_08DBA7C0
 _0814FF54: .4byte 0x03002360
 _0814FF58:
 	bl LoadCableCarSprites
@@ -404,7 +404,7 @@ _0814FFBA:
 	adds r0, #1
 	b _08150200
 	.align 2, 0
-_0814FFD0: .4byte 0x08526DE8
+_0814FFD0: .4byte gUnknown_8526DE8
 _0814FFD4:
 	ldr r6, _08150058
 	ldr r0, [r6]
@@ -843,7 +843,7 @@ _0815031C:
 	bx r0
 	.align 2, 0
 _08150394: .4byte 0x02021B38
-_08150398: .4byte 0x08526DE8
+_08150398: .4byte gUnknown_8526DE8
 _0815039C: .4byte 0x0203A878
 _081503A0: .4byte 0x00004108
 _081503A4: .4byte 0x0000410C
@@ -948,7 +948,7 @@ _08150454:
 	strb r0, [r1, #1]
 	b _0815051E
 	.align 2, 0
-_08150468: .4byte 0x08526DE8
+_08150468: .4byte gUnknown_8526DE8
 _0815046C:
 	ldr r0, _08150480
 	ldr r2, [r0]
@@ -961,7 +961,7 @@ _0815046C:
 	strb r0, [r3, #1]
 	b _0815051E
 	.align 2, 0
-_08150480: .4byte 0x08526DE8
+_08150480: .4byte gUnknown_8526DE8
 _08150484:
 	ldrh r1, [r3, #6]
 	ldrh r0, [r3, #4]
@@ -1388,7 +1388,7 @@ _081507C2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081507D4: .4byte 0x08526DE8
+_081507D4: .4byte gUnknown_8526DE8
 _081507D8: .4byte 0x000006FC
 	thumb_func_end sub_08150640
 
@@ -2142,16 +2142,16 @@ _08150DAC:
 	bl SetCurrentAndNextWeatherNoDelay
 	b _08150F16
 	.align 2, 0
-_08150E18: .4byte 0x085AC9EC
-_08150E1C: .4byte 0x085AC9EE
-_08150E20: .4byte 0x085AC9F2
-_08150E24: .4byte 0x085AC9FA
+_08150E18: .4byte gCableCarData_085AC9EC
+_08150E1C: .4byte gCableCarData_085AC9EE
+_08150E20: .4byte gCableCarData_085AC9F2
+_08150E24: .4byte gCableCarData_085AC9FA
 _08150E28: .4byte 0x085ACA00
 _08150E2C: .4byte 0x02037280
 _08150E30: .4byte 0x03005AF0
 _08150E34: .4byte 0x08150925
 _08150E38: .4byte 0x020205AC
-_08150E3C: .4byte 0x085AC9A4
+_08150E3C: .4byte gCableCarData_085AC9A4
 _08150E40: .4byte 0x0203A878
 _08150E44:
 	ldr r7, _08150FE4
@@ -2363,10 +2363,10 @@ _08150FE8: .4byte 0x000040FC
 _08150FEC: .4byte 0x03005AF0
 _08150FF0: .4byte 0x08150925
 _08150FF4: .4byte 0x020205AC
-_08150FF8: .4byte 0x085AC9A4
+_08150FF8: .4byte gCableCarData_085AC9A4
 _08150FFC: .4byte 0x00000109
 _08151000: .4byte 0xFFF80000
-_08151004: .4byte 0x085AC9D4
+_08151004: .4byte gCableCarData_085AC9D4
 _08151008: .4byte 0x02037280
 _0815100C:
 	adds r0, r4, #0

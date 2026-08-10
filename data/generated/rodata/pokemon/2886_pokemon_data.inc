@@ -32,6 +32,9 @@ gUnknown_8581A5C: @ 0x08581A5C
 	.4byte sub_08127A3C
 	.4byte sub_08133D54
 	.4byte sub_08127A3C
+	@ pret/pokeemerald-jp direct xref for 0x08581A74: decoration.s: sub_081269BC
+	.globl gDecorationData_08581A74
+gDecorationData_08581A74:
 	.globl gUnknown_8581A74
 gUnknown_8581A74: @ 0x08581A74
 	@ analyzed canonical ROM range 0x08581A74-0x08581A93
@@ -39,6 +42,9 @@ sAnalyzedData_08581A74: @ 0x08581A74
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x0901, 0x0F08, 0x0001, 0x0100, 0x0D01, 0x0D12, 0x0049
 	.2byte 0x1200, 0x0B01, 0x0F02, 0x0133, 0x1100, 0x0C0D, 0x0F06, 0x0149
+	@ pret/pokeemerald-jp direct xref for 0x08581A94: decoration.s: SecretBasePC_PrepMenuForSelectingStoredDecors, ShowDecorationCategoriesWindow
+	.globl gDecorationData_08581A94
+gDecorationData_08581A94:
 	.globl gUnknown_8581A94
 gUnknown_8581A94: @ 0x08581A94
 	@ analyzed canonical ROM range 0x08581A94-0x08581AB3
@@ -46,6 +52,9 @@ sAnalyzedData_08581A94: @ 0x08581A94
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x2E, 0x53, 0xFF, 0x7F, 0x8C, 0x31, 0x5A, 0x67, 0x9C, 0x73, 0x18, 0x63, 0x00, 0x00, 0xBD, 0x77
 	.byte 0x18, 0x63, 0x52, 0x4A, 0x1F, 0x00, 0x16, 0x00, 0x1F, 0x63, 0x4A, 0x7D, 0xC6, 0x58, 0x18, 0x7F
+	@ pret/pokeemerald-jp direct xref for 0x08581AB4: decoration.s: PrintDecorationItemMenuItems
+	.globl gDecorationData_08581AB4
+gDecorationData_08581AB4:
 	.globl gUnknown_8581AB4
 gUnknown_8581AB4: @ 0x08581AB4
 	@ analyzed canonical ROM range 0x08581AB4-0x08581ACB
@@ -57,6 +66,9 @@ FunctionPointerTable_JP_08581AB8: @ 0x08581AB8
 	.4byte DecorationItemsMenu_OnCursorMove
 	.4byte sub_08127450
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x2A, 0x31, 0x00, 0x01
+	@ pret/pokeemerald-jp direct xref for 0x08581ACC: decoration.s: AddDecorationIconObject, GetDecorationIconPicOrPalette
+	.globl gDecorationData_08581ACC
+gDecorationData_08581ACC:
 	.globl gUnknown_8581ACC
 gUnknown_8581ACC: @ 0x08581ACC
 	@ analyzed canonical ROM range 0x08581ACC-0x08582093
@@ -155,6 +167,9 @@ sAnalyzedData_08581ACC: @ 0x08581ACC
 	.2byte 0x0706, 0x0706, 0x0504, 0x0504, 0x0504, 0x0706, 0x0706, 0x0706
 	.2byte 0x0504, 0x0504, 0x0504, 0x0706, 0x0706, 0x0706, 0x0504, 0x0504
 	.2byte 0x0504, 0x0706, 0x0706, 0x0706
+	@ pret/pokeemerald-jp direct xref for 0x08582094: decoration.s: sub_081291C8
+	.globl gDecorationData_08582094
+gDecorationData_08582094:
 	.globl gUnknown_8582094
 gUnknown_8582094: @ 0x08582094
 	@ analyzed canonical ROM range 0x08582094-0x08582133
@@ -200,6 +215,9 @@ sAnalyzedData_08582094: @ 0x08582094
 	.4byte 0x08581FC4 @ +0x94
 	.4byte 0x0858207C @ +0x98
 	.4byte 0x00000018 @ +0x9C
+	@ pret/pokeemerald-jp direct xref for 0x08582134: decoration.s: ConfigureCameraObjectForPlacingDecoration, SetDecorSelectionBoxOamAttributes, SetUpPlacingDecorationPlayerAvatar
+	.globl gDecorationData_08582134
+gDecorationData_08582134:
 	.globl gUnknown_8582134
 gUnknown_8582134: @ 0x08582134
 	@ analyzed canonical ROM range 0x08582134-0x0858216F
@@ -209,16 +227,25 @@ sAnalyzedData_08582134: @ 0x08582134
 	.byte 0x00, 0x02, 0x80, 0x46, 0x02, 0x02, 0x78, 0x46, 0x02, 0x03, 0x80, 0x56, 0x02, 0x03, 0x80, 0x36
 	.byte 0x00, 0x03, 0x90, 0x46, 0x01, 0x03, 0x90, 0x46, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00
 	.byte 0x5C, 0x21, 0x58, 0x08, 0xE0, 0x9E, 0x03, 0x02, 0x00, 0x08, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08582170: decoration.s: gpu_pal_decompress_alloc_tag_and_upload
+	.globl gDecorationData_08582170
+gDecorationData_08582170:
 	.globl gUnknown_8582170
 gUnknown_8582170: @ 0x08582170
 	@ analyzed canonical ROM range 0x08582170-0x08582187
 sSpriteTemplate_08582170: @ 0x08582170
 	rodata_sprite_template 0xFFFF, 0x0BE5, 0x0203A708, 0x08582164, 0x08582168, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x08582188: decoration.s: AddDecorationIconObjectFromEventObject
+	.globl gDecorationData_08582188
+gDecorationData_08582188:
 	.globl gUnknown_8582188
 gUnknown_8582188: @ 0x08582188
 	@ analyzed canonical ROM range 0x08582188-0x0858219F
 sSpriteTemplate_08582188: @ 0x08582188
 	rodata_sprite_template 0x0000, 0x0000, 0x0203A708, 0x08582164, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085821A0: decoration.s: gpu_pal_decompress_alloc_tag_and_upload
+	.globl gDecorationData_085821A0
+gDecorationData_085821A0:
 	.globl gUnknown_85821A0
 gUnknown_85821A0: @ 0x085821A0
 	@ analyzed canonical ROM range 0x085821A0-0x085821A7
@@ -239,18 +266,27 @@ gUnknown_85821B8: @ 0x085821B8
 	.4byte sub_081283EC
 	.4byte sub_08129BBC
 	.4byte sub_08129BE8
+	@ pret/pokeemerald-jp direct xref for 0x085821C8: decoration.s: GetDecorationElevation
+	.globl gDecorationData_085821C8
+gDecorationData_085821C8:
 	.globl gUnknown_85821C8
 gUnknown_85821C8: @ 0x085821C8
 	@ analyzed canonical ROM range 0x085821C8-0x085821CF
 sAnalyzedData_085821C8: @ 0x085821C8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0404, 0x0404, 0x0300, 0x0003
+	@ pret/pokeemerald-jp direct xref for 0x085821D0: decoration.s: GetDecorationElevation
+	.globl gDecorationData_085821D0
+gDecorationData_085821D0:
 	.globl gUnknown_85821D0
 gUnknown_85821D0: @ 0x085821D0
 	@ analyzed canonical ROM range 0x085821D0-0x085821D7
 sAnalyzedData_085821D0: @ 0x085821D0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0404, 0x0404, 0x0400, 0x0003
+	@ pret/pokeemerald-jp direct xref for 0x085821D8: decoration.s: AddDecorationIconObjectFromEventObject
+	.globl gDecorationData_085821D8
+gDecorationData_085821D8:
 	.globl gUnknown_85821D8
 gUnknown_85821D8: @ 0x085821D8
 	@ analyzed canonical ROM range 0x085821D8-0x0858222B
@@ -266,6 +302,9 @@ sAnalyzedData_085821D8: @ 0x085821D8
 gUnknown_858222C: @ 0x0858222C
 	.4byte sub_0812A1CC
 	.4byte sub_08129B24
+	@ pret/pokeemerald-jp direct xref for 0x08582234: decoration.s: sub_0812A1FC
+	.globl gDecorationData_08582234
+gDecorationData_08582234:
 	.globl gUnknown_8582234
 gUnknown_8582234: @ 0x08582234
 	@ analyzed canonical ROM range 0x08582234-0x085822BB
@@ -283,12 +322,18 @@ FunctionPointerTable_JP_08582234: @ 0x08582234
 	.byte 0x0E, 0x00, 0x00, 0x00, 0x0E, 0x00, 0x00, 0x00, 0xEE, 0x00, 0x00, 0x00, 0xE0, 0xEE, 0xEE, 0xEE
 	.byte 0x00, 0x00, 0x00, 0xE0, 0x00, 0x00, 0x00, 0xE0, 0x00, 0x00, 0x00, 0xE0, 0x00, 0x00, 0x00, 0xE0
 	.byte 0x00, 0x00, 0x00, 0xE0, 0x00, 0x00, 0x00, 0xE0, 0x00, 0x00, 0x00, 0xEE, 0xEE, 0xEE, 0xEE, 0x0E
+	@ pret/pokeemerald-jp direct xref for 0x085822BC: decoration.s: sub_0812A3A8
+	.globl gDecorationData_085822BC
+gDecorationData_085822BC:
 	.globl gUnknown_85822BC
 gUnknown_85822BC: @ 0x085822BC
 	@ analyzed canonical ROM range 0x085822BC-0x085822C3
 sAnalyzedData_085822BC: @ 0x085822BC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x21EC, 0x0858, 0x0008, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085822C4: decoration.s: sub_0812A3A8
+	.globl gDecorationData_085822C4
+gDecorationData_085822C4:
 	.globl gUnknown_85822C4
 gUnknown_85822C4: @ 0x085822C4
 	@ analyzed canonical ROM range 0x085822C4-0x085822E7
@@ -297,11 +342,17 @@ sAnalyzedData_085822C4: @ 0x085822C4
 	.2byte 0x220C, 0x0858, 0x0008, 0x0000, 0x0000, 0x4000, 0x0400, 0x0000
 	.2byte 0x0000, 0x0000, 0xFFFF, 0x0000, 0x22D4, 0x0858, 0x223C, 0x0858
 	.2byte 0x0080, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085822E8: decoration.s: SetUpPuttingAwayDecorationPlayerAvatar
+	.globl gDecorationData_085822E8
+gDecorationData_085822E8:
 	.globl gUnknown_85822E8
 gUnknown_85822E8: @ 0x085822E8
 	@ analyzed canonical ROM range 0x085822E8-0x085822FF
 sSpriteTemplate_085822E8: @ 0x085822E8
 	rodata_sprite_template 0xFFFF, 0x0008, 0x085822CC, 0x085822DC, 0x085822E0, gDummySpriteAffineAnimTable, sub_0812A378
+	@ pret/pokeemerald-jp direct xref for 0x08582300: decoration.s: sub_0812A468
+	.globl gDecorationData_08582300
+gDecorationData_08582300:
 	.globl gUnknown_8582300
 gUnknown_8582300: @ 0x08582300
 	@ analyzed canonical ROM range 0x08582300-0x08582A2C

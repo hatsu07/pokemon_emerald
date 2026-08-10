@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x085AC0C6: battle_message.s: BufferStringBattle
+	.globl gBattleMessageData_085AC0C6
+gBattleMessageData_085AC0C6:
 	.globl gUnknown_85AC0C6
 gUnknown_85AC0C6: @ 0x085AC0C6
 	@ analyzed canonical ROM range 0x085AC0C6-0x085AC0DC

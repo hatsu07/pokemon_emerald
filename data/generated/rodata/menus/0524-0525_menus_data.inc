@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x08309BE4: trade.s: sub_0807B064
+	.globl gTradeData_08309BE4
+gTradeData_08309BE4:
 	.globl gUnknown_8309BE4
 gUnknown_8309BE4: @ 0x08309BE4
 	@ analyzed canonical ROM range 0x08309BE4-0x0830ABE3
@@ -259,6 +262,9 @@ sAnalyzedData_08309BE4: @ 0x08309BE4
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0830ABE4: trade.s: sub_0807B064
+	.globl gTradeData_0830ABE4
+gTradeData_0830ABE4:
 	.globl gUnknown_830ABE4
 gUnknown_830ABE4: @ 0x0830ABE4
 	@ analyzed canonical ROM range 0x0830ABE4-0x0830BBE3
@@ -520,6 +526,9 @@ sAnalyzedData_0830ABE4: @ 0x0830ABE4
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0830BBE4: trade.s: sub_0807B064
+	.globl gTradeData_0830BBE4
+gTradeData_0830BBE4:
 	.globl gUnknown_830BBE4
 gUnknown_830BBE4: @ 0x0830BBE4
 	@ confirmed GBA LZ77 stream: compressed=0xFD, decompressed=0x800
@@ -530,6 +539,9 @@ sAnalyzedGfx_0830BBE4: @ 0x0830BBE4
 	.if (. - sAnalyzedGfx_0830BBE4) != 0x100
 	.error "gUnknown_830BBE4 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x0830BCE4: trade.s: c3_08054588
+	.globl gTradeData_0830BCE4
+gTradeData_0830BCE4:
 	.globl gUnknown_830BCE4
 gUnknown_830BCE4: @ 0x0830BCE4
 	@ analyzed canonical ROM range 0x0830BCE4-0x0830BEE3
@@ -567,6 +579,9 @@ sAnalyzedData_0830BCE4: @ 0x0830BCE4
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x56B5, 0x7FFF
 	.2byte 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x56B5
+	@ pret/pokeemerald-jp direct xref for 0x0830BEE4: trade.s: c3_08054588
+	.globl gTradeData_0830BEE4
+gTradeData_0830BEE4:
 	.globl gUnknown_830BEE4
 gUnknown_830BEE4: @ 0x0830BEE4
 	@ analyzed canonical ROM range 0x0830BEE4-0x0830C0E3
@@ -607,6 +622,9 @@ sAnalyzedData_0830BEE4: @ 0x0830BEE4
 	.globl gUnknown_830C0E4
 gUnknown_830C0E4: @ 0x0830C0E4
 	.space 0x20, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0830C104: trade.s: sub_0807B064
+	.globl gTradeData_0830C104
+gTradeData_0830C104:
 	.globl gUnknown_830C104
 gUnknown_830C104: @ 0x0830C104
 	@ confirmed GBA LZ77 stream: compressed=0x68E, decompressed=0x1800
@@ -617,6 +635,9 @@ sAnalyzedGfx_0830C104: @ 0x0830C104
 	.if (. - sAnalyzedGfx_0830C104) != 0x690
 	.error "gUnknown_830C104 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x0830C794: trade.s: sub_0807B064
+	.globl gTradeData_0830C794
+gTradeData_0830C794:
 	.globl gUnknown_830C794
 gUnknown_830C794: @ 0x0830C794
 	@ confirmed GBA LZ77 stream: compressed=0x6F2, decompressed=0x800
@@ -749,18 +770,27 @@ sAnalyzedData_0830C794: @ 0x0830C794
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x05, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00
 	.byte 0x00, 0x14, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10, 0xCF, 0x30, 0x08
 	.byte 0x20, 0xCF, 0x30, 0x08, 0x30, 0xCF, 0x30, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x0830CF5C: trade.s: sub_0807A8AC, sub_0807ACC8
+	.globl gTradeData_0830CF5C
+gTradeData_0830CF5C:
 	.globl gUnknown_830CF5C
 gUnknown_830CF5C: @ 0x0830CF5C
 	@ analyzed canonical ROM range 0x0830CF5C-0x0830CF63
 sAnalyzedData_0830CF5C: @ 0x0830CF5C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0D64, 0x0830, 0x0600, 0x15B5
+	@ pret/pokeemerald-jp direct xref for 0x0830CF64: trade.s: sub_0807A8AC, sub_0807ACC8
+	.globl gTradeData_0830CF64
+gTradeData_0830CF64:
 	.globl gUnknown_830CF64
 gUnknown_830CF64: @ 0x0830CF64
 	@ analyzed canonical ROM range 0x0830CF64-0x0830CF6B
 sAnalyzedData_0830CF64: @ 0x0830CF64
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0D44, 0x0830, 0x15B6, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0830CF6C: trade.s: sub_0807B624, sub_0807CA00
+	.globl gTradeData_0830CF6C
+gTradeData_0830CF6C:
 	.globl gUnknown_830CF6C
 gUnknown_830CF6C: @ 0x0830CF6C
 	@ analyzed canonical ROM range 0x0830CF6C-0x0830CFB3
@@ -771,24 +801,36 @@ sAnalyzedData_0830CF6C: @ 0x0830CF6C
 	.byte 0x00, 0x00, 0xC5, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x8C, 0xCF, 0x30, 0x08, 0xF6, 0xFF, 0xF6, 0xFF
 	.byte 0x00, 0x05, 0x00, 0x00, 0x0A, 0x00, 0x0A, 0x00, 0x00, 0x05, 0x00, 0x00, 0xFE, 0x7F, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x98, 0xCF, 0x30, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x0830CFB4: trade.s: sub_0807B4CC
+	.globl gTradeData_0830CFB4
+gTradeData_0830CFB4:
 	.globl gUnknown_830CFB4
 gUnknown_830CFB4: @ 0x0830CFB4
 	@ analyzed canonical ROM range 0x0830CFB4-0x0830CFBB
 sAnalyzedData_0830CFB4: @ 0x0830CFB4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x3704, 0x0830, 0x0200, 0x15AE
+	@ pret/pokeemerald-jp direct xref for 0x0830CFBC: trade.s: sub_0807B4CC
+	.globl gTradeData_0830CFBC
+gTradeData_0830CFBC:
 	.globl gUnknown_830CFBC
 gUnknown_830CFBC: @ 0x0830CFBC
 	@ analyzed canonical ROM range 0x0830CFBC-0x0830CFC3
 sAnalyzedData_0830CFBC: @ 0x0830CFBC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x36E4, 0x0830, 0x15AF, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0830CFC4: trade.s: sub_0807B4CC
+	.globl gTradeData_0830CFC4
+gTradeData_0830CFC4:
 	.globl gUnknown_830CFC4
 gUnknown_830CFC4: @ 0x0830CFC4
 	@ analyzed canonical ROM range 0x0830CFC4-0x0830CFCB
 sAnalyzedData_0830CFC4: @ 0x0830CFC4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x3684, 0x0830, 0x15B3, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0830CFCC: trade.s: sub_0807B624, sub_0807CA00
+	.globl gTradeData_0830CFCC
+gTradeData_0830CFCC:
 	.globl gUnknown_830CFCC
 gUnknown_830CFCC: @ 0x0830CFCC
 	@ analyzed canonical ROM range 0x0830CFCC-0x0830D003
@@ -798,12 +840,18 @@ sAnalyzedData_0830CFCC: @ 0x0830CFCC
 	.byte 0xB0, 0xCF, 0x30, 0x08, 0x99, 0xA4, 0x07, 0x08, 0x00, 0x80, 0x00, 0x80, 0x00, 0x04, 0x00, 0x00
 	.byte 0x00, 0x00, 0xC5, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x08, 0x00, 0xC5, 0x00, 0xFF, 0xFF, 0x00, 0x00
 	.byte 0xEC, 0xCF, 0x30, 0x08, 0xF4, 0xCF, 0x30, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x0830D004: trade.s: sub_0807B4CC
+	.globl gTradeData_0830D004
+gTradeData_0830D004:
 	.globl gUnknown_830D004
 gUnknown_830D004: @ 0x0830D004
 	@ analyzed canonical ROM range 0x0830D004-0x0830D00B
 sAnalyzedData_0830D004: @ 0x0830D004
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x3904, 0x0830, 0x0300, 0x15B0
+	@ pret/pokeemerald-jp direct xref for 0x0830D00C: trade.s: sub_0807B624, sub_0807CA00
+	.globl gTradeData_0830D00C
+gTradeData_0830D00C:
 	.globl gUnknown_830D00C
 gUnknown_830D00C: @ 0x0830D00C
 	@ analyzed canonical ROM range 0x0830D00C-0x0830D037
@@ -812,12 +860,18 @@ sAnalyzedData_0830D00C: @ 0x0830D00C
 	.byte 0xB0, 0x15, 0xAF, 0x15, 0xE4, 0xCF, 0x30, 0x08, 0xFC, 0xCF, 0x30, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0xED, 0xA4, 0x07, 0x08, 0x00, 0x80, 0x00, 0x80, 0x00, 0x04, 0x00, 0x00
 	.byte 0x00, 0x00, 0x0A, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x2C, 0xD0, 0x30, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x0830D038: trade.s: sub_0807B4CC
+	.globl gTradeData_0830D038
+gTradeData_0830D038:
 	.globl gUnknown_830D038
 gUnknown_830D038: @ 0x0830D038
 	@ analyzed canonical ROM range 0x0830D038-0x0830D03F
 sAnalyzedData_0830D038: @ 0x0830D038
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x3B04, 0x0830, 0x0100, 0x15B2
+	@ pret/pokeemerald-jp direct xref for 0x0830D040: trade.s: sub_0807B624
+	.globl gTradeData_0830D040
+gTradeData_0830D040:
 	.globl gUnknown_830D040
 gUnknown_830D040: @ 0x0830D040
 	@ analyzed canonical ROM range 0x0830D040-0x0830D0AF
@@ -830,22 +884,34 @@ sAnalyzedData_0830D040: @ 0x0830D040
 	.2byte 0xFFFF, 0x0000, 0x0000, 0x00C2, 0x0020, 0x00C2, 0x0040, 0x00C2
 	.2byte 0x0060, 0x00C2, 0x0040, 0x00C2, 0x0020, 0x00C2, 0x0000, 0x00C2
 	.2byte 0xFFFD, 0x0002, 0xFFFF, 0x0000, 0xD060, 0x0830, 0xD084, 0x0830
+	@ pret/pokeemerald-jp direct xref for 0x0830D0B0: trade.s: sub_0807B4CC
+	.globl gTradeData_0830D0B0
+gTradeData_0830D0B0:
 	.globl gUnknown_830D0B0
 gUnknown_830D0B0: @ 0x0830D0B0
 	@ analyzed canonical ROM range 0x0830D0B0-0x0830D0B7
 sAnalyzedData_0830D0B0: @ 0x0830D0B0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x3D04, 0x0830, 0x1000, 0x15B4
+	@ pret/pokeemerald-jp direct xref for 0x0830D0B8: trade.s: sub_0807B624, sub_0807CA00
+	.globl gTradeData_0830D0B8
+gTradeData_0830D0B8:
 	.globl gUnknown_830D0B8
 gUnknown_830D0B8: @ 0x0830D0B8
 	@ analyzed canonical ROM range 0x0830D0B8-0x0830D0CF
 sSpriteTemplate_0830D0B8: @ 0x0830D0B8
 	rodata_sprite_template 0x15B4, 0x15B3, 0x0830D058, 0x0830D0A8, 0, gDummySpriteAffineAnimTable, sub_0807A574
+	@ pret/pokeemerald-jp direct xref for 0x0830D0D0: trade.s: sub_0807CA00
+	.globl gTradeData_0830D0D0
+gTradeData_0830D0D0:
 	.globl gUnknown_830D0D0
 gUnknown_830D0D0: @ 0x0830D0D0
 	@ analyzed canonical ROM range 0x0830D0D0-0x0830D0E7
 sSpriteTemplate_0830D0D0: @ 0x0830D0D0
 	rodata_sprite_template 0x15B4, 0x15B3, 0x0830D058, 0x0830D0AC, 0, gDummySpriteAffineAnimTable, sub_0807A574
+	@ pret/pokeemerald-jp direct xref for 0x0830D0E8: trade.s: sub_0807A4EC
+	.globl gTradeData_0830D0E8
+gTradeData_0830D0E8:
 	.globl gUnknown_830D0E8
 gUnknown_830D0E8: @ 0x0830D0E8
 	@ analyzed canonical ROM range 0x0830D0E8-0x0830D10F
@@ -854,12 +920,18 @@ sAnalyzedData_0830D0E8: @ 0x0830D0E8
 	.byte 0x12, 0x7F, 0x12, 0x7F, 0x12, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F, 0x12, 0x7F, 0x12, 0x7F
 	.byte 0x12, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F, 0x00, 0xFF, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00
 	.byte 0xFE, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0830D110: trade.s: sub_0807B624, sub_0807CA00
+	.globl gTradeData_0830D110
+gTradeData_0830D110:
 	.globl gUnknown_830D110
 gUnknown_830D110: @ 0x0830D110
 	@ analyzed canonical ROM range 0x0830D110-0x0830D113
 sAnalyzedData_0830D110: @ 0x0830D110
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0xD1, 0x30, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x0830D114: trade.s: GetInGameTradeSpeciesInfo, SetTradeSceneStrings, _CreateInGameTradePokemon, sub_0807E1C4
+	.globl gTradeData_0830D114
+gTradeData_0830D114:
 	.globl gUnknown_830D114
 gUnknown_830D114: @ 0x0830D114
 	@ analyzed canonical ROM range 0x0830D114-0x0830D203
@@ -880,6 +952,9 @@ sAnalyzedData_0830D114: @ 0x0830D114
 	.2byte 0x0034, 0x0504, 0x0504, 0x0404, 0x0000, 0x0000, 0x6559, 0x0001
 	.2byte 0x0505, 0x1E05, 0x0005, 0x0000, 0x008B, 0x0000, 0x0084, 0x6F02
 	.2byte 0xA078, 0xFF9E, 0x0000, 0x0000, 0x0000, 0x0A01, 0x013B, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0830D204: trade.s: sub_0807E3B4
+	.globl gTradeData_0830D204
+gTradeData_0830D204:
 	.globl gUnknown_830D204
 gUnknown_830D204: @ 0x0830D204
 	@ analyzed canonical ROM range 0x0830D204-0x0830D23F

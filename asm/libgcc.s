@@ -250,7 +250,7 @@ _08295B62:
 	b _08295E42
 	.align 2, 0
 _08295B6C: .4byte 0x00FFFFFF
-_08295B70: .4byte 0x0890EF58
+_08295B70: .4byte gLibgccData_0890EF58
 _08295B74: .4byte 0x0000FFFF
 _08295B78:
 	cmp r2, #0
@@ -295,7 +295,7 @@ _08295BA6:
 	b _08295C6A
 	.align 2, 0
 _08295BC4: .4byte 0x00FFFFFF
-_08295BC8: .4byte 0x0890EF58
+_08295BC8: .4byte gLibgccData_0890EF58
 _08295BCC:
 	subs r1, r1, r2
 	lsls r7, r2
@@ -483,7 +483,7 @@ _08295D34:
 	b _08295E3C
 	.align 2, 0
 _08295D3C: .4byte 0x00FFFFFF
-_08295D40: .4byte 0x0890EF58
+_08295D40: .4byte gLibgccData_0890EF58
 _08295D44:
 	movs r6, #0
 	b _08295E3E
@@ -1109,7 +1109,7 @@ _082961AA:
 	b _08296336
 	.align 2, 0
 _082961B0: .4byte 0x00FFFFFF
-_082961B4: .4byte 0x0890F058
+_082961B4: .4byte gLibgccData_0890F058
 _082961B8: .4byte 0x0000FFFF
 _082961BC:
 	cmp r2, #0
@@ -1154,7 +1154,7 @@ _082961EA:
 	b _082962AE
 	.align 2, 0
 _08296208: .4byte 0x00FFFFFF
-_0829620C: .4byte 0x0890F058
+_0829620C: .4byte gLibgccData_0890F058
 _08296210:
 	subs r1, r1, r2
 	lsls r7, r2
@@ -1343,7 +1343,7 @@ _08296378:
 	b _08296480
 	.align 2, 0
 _08296380: .4byte 0x00FFFFFF
-_08296384: .4byte 0x0890F058
+_08296384: .4byte gLibgccData_0890F058
 _08296388:
 	movs r6, #0
 	b _08296482

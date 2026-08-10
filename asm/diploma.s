@@ -276,6 +276,6 @@ InitClearSaveDataScreenWindows: @ 0x0817AEEC
 	bx r0
 	.align 2, 0
 _0817AF1C: .4byte gClearSaveDataScreenWindowTemplates
-_0817AF20: .4byte 0x085D7B04
+_0817AF20: .4byte gUnknown_85D7B04
 	thumb_func_end InitClearSaveDataScreenWindows
 

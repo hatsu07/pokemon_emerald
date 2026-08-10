@@ -1,9 +1,15 @@
+	@ pret/pokeemerald-jp direct xref for 0x085CD068: berry_tag_screen.s: AddBerryTagTextToBg0
+	.globl gBerryTagScreenData_085CD068
+gBerryTagScreenData_085CD068:
 	.globl gUnknown_85CD068
 gUnknown_85CD068: @ 0x085CD068
 	@ analyzed canonical ROM range 0x085CD068-0x085CD077
 sAnalyzedData_085CD068: @ 0x085CD068
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x01F0, 0x0000, 0x11E1, 0x0000, 0x21D2, 0x0000, 0x31C3, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085CD078: berry_tag_screen.s: PrintMysteryMenuText
+	.globl gBerryTagScreenData_085CD078
+gBerryTagScreenData_085CD078:
 	.globl gUnknown_85CD078
 gUnknown_85CD078: @ 0x085CD078
 	@ analyzed canonical ROM range 0x085CD078-0x085CD097
@@ -11,12 +17,18 @@ sAnalyzedData_085CD078: @ 0x085CD078
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0x7F, 0xFF, 0x7F, 0x8C, 0x31, 0x5A, 0x67, 0x3C, 0x04, 0xFF, 0x3A, 0x64, 0x06, 0xD2, 0x4B
 	.byte 0x46, 0x65, 0x14, 0x7B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x17, 0x22, 0x88, 0x00, 0x7D, 0x57
+	@ pret/pokeemerald-jp direct xref for 0x085CD098: berry_tag_screen.s: PrintTextInBerryTagScreen
+	.globl gBerryTagScreenData_085CD098
+gBerryTagScreenData_085CD098:
 	.globl gUnknown_85CD098
 gUnknown_85CD098: @ 0x085CD098
 	@ analyzed canonical ROM range 0x085CD098-0x085CD09F
 sAnalyzedData_085CD098: @ 0x085CD098
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0200, 0x0F03, 0x0D0E, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085CD0A0: berry_tag_screen.s: PrintMysteryMenuText
+	.globl gBerryTagScreenData_085CD0A0
+gBerryTagScreenData_085CD0A0:
 	.globl gUnknown_85CD0A0
 gUnknown_85CD0A0: @ 0x085CD0A0
 	@ analyzed canonical ROM range 0x085CD0A0-0x085CD0C7
@@ -32,6 +44,9 @@ gUnknown_85CD0C8: @ 0x085CD0C8
 	.4byte gText_Rom_5C979E
 	.4byte gText_Rom_5C97A2
 	.4byte gText_Rom_5C97AA
+	@ pret/pokeemerald-jp direct xref for 0x085CD0DC: berry_tag_screen.s: CB2_MysteryEventMenu
+	.globl gBerryTagScreenData_085CD0DC
+gBerryTagScreenData_085CD0DC:
 	.globl gUnknown_85CD0DC
 gUnknown_85CD0DC: @ 0x085CD0DC
 	@ analyzed canonical ROM range 0x085CD0DC-0x085CD0F9

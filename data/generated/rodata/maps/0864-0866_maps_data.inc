@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x08569552: field_poison.s: sub_080FA3A0
+	.globl gFieldPoisonData_08569552
+gFieldPoisonData_08569552:
 	.globl gUnknown_8569552
 gUnknown_8569552: @ 0x08569552
 	@ analyzed canonical ROM range 0x08569552-0x0856A1E3
@@ -205,16 +208,25 @@ sAnalyzedData_08569552: @ 0x08569552
 	.2byte 0x0000, 0x989C, 0x0856, 0x0080, 0x0000, 0x991C, 0x0856, 0x0080
 	.2byte 0x0000, 0x999C, 0x0856, 0x0080, 0x0000, 0x9A1C, 0x0856, 0x0080
 	.2byte 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0856A1E4: fldeff_misc.s: FldEff_SecretPowerCave
+	.globl gFldeffMiscData_0856A1E4
+gFldeffMiscData_0856A1E4:
 	.globl gUnknown_856A1E4
 gUnknown_856A1E4: @ 0x0856A1E4
 	@ analyzed canonical ROM range 0x0856A1E4-0x0856A1FB
 sSpriteTemplate_0856A1E4: @ 0x0856A1E4
 	rodata_sprite_template 0xFFFF, 0x1003, 0x0856A0BC, 0x0856A154, 0x0856A16C, gDummySpriteAffineAnimTable, CaveEntranceSpriteCallback1
+	@ pret/pokeemerald-jp direct xref for 0x0856A1FC: fldeff_misc.s: FldEff_SecretPowerTree
+	.globl gFldeffMiscData_0856A1FC
+gFldeffMiscData_0856A1FC:
 	.globl gUnknown_856A1FC
 gUnknown_856A1FC: @ 0x0856A1FC
 	@ analyzed canonical ROM range 0x0856A1FC-0x0856A213
 sSpriteTemplate_0856A1FC: @ 0x0856A1FC
 	rodata_sprite_template 0xFFFF, 0x1008, 0x0856A0BC, 0x0856A158, 0x0856A194, gDummySpriteAffineAnimTable, TreeEntranceSpriteCallback1
+	@ pret/pokeemerald-jp direct xref for 0x0856A214: fldeff_misc.s: FldEff_SecretPowerShrub
+	.globl gFldeffMiscData_0856A214
+gFldeffMiscData_0856A214:
 	.globl gUnknown_856A214
 gUnknown_856A214: @ 0x0856A214
 	@ analyzed canonical ROM range 0x0856A214-0x0856A26F
@@ -226,6 +238,9 @@ sAnalyzedData_0856A214: @ 0x0856A214
 	.byte 0x00, 0x00, 0x06, 0x00, 0x01, 0x00, 0x06, 0x00, 0x02, 0x00, 0x06, 0x00, 0xFF, 0xFF, 0x00, 0x00
 	.byte 0x44, 0xA2, 0x56, 0x08, 0xBC, 0x9D, 0x56, 0x08, 0x00, 0x01, 0x00, 0x00, 0xBC, 0x9E, 0x56, 0x08
 	.byte 0x00, 0x01, 0x00, 0x00, 0xBC, 0x9F, 0x56, 0x08, 0x00, 0x01, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0856A270: fldeff_misc.s: FldEff_SandPillar
+	.globl gFldeffMiscData_0856A270
+gFldeffMiscData_0856A270:
 	.globl gUnknown_856A270
 gUnknown_856A270: @ 0x0856A270
 	@ analyzed canonical ROM range 0x0856A270-0x0856A447
@@ -261,6 +276,9 @@ sAnalyzedData_0856A270: @ 0x0856A270
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0xA290, 0x0856, 0x0080, 0x0000, 0xA310, 0x0856, 0x0080, 0x0000
 	.2byte 0xA390, 0x0856, 0x0080, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0856A448: fldeff_misc.s: CreateRecordMixingSprite
+	.globl gFldeffMiscData_0856A448
+gFldeffMiscData_0856A448:
 	.globl gUnknown_856A448
 gUnknown_856A448: @ 0x0856A448
 	@ analyzed canonical ROM range 0x0856A448-0x0856A463
@@ -268,11 +286,17 @@ sAnalyzedData_0856A448: @ 0x0856A448
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xA410, 0x0856, 0x1000, 0x0000, 0x0000, 0x001E, 0x0001, 0x001E
 	.2byte 0x0002, 0x001E, 0xFFFE, 0x0000, 0xA450, 0x0856
+	@ pret/pokeemerald-jp direct xref for 0x0856A464: fldeff_misc.s: CreateRecordMixingSprite, DestroyRecordMixingSprite
+	.globl gFldeffMiscData_0856A464
+gFldeffMiscData_0856A464:
 	.globl gUnknown_856A464
 gUnknown_856A464: @ 0x0856A464
 	@ analyzed canonical ROM range 0x0856A464-0x0856A47B
 sSpriteTemplate_0856A464: @ 0x0856A464
 	rodata_sprite_template 0xFFFF, 0x1000, 0x084E1958, 0x0856A460, 0x0856A430, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x0856A47C: field_special_scene.s: Task_Truck2, Task_Truck3
+	.globl gFieldSpecialSceneData_0856A47C
+gFieldSpecialSceneData_0856A47C:
 	.globl gUnknown_856A47C
 gUnknown_856A47C: @ 0x0856A47C
 	@ analyzed canonical ROM range 0x0856A47C-0x0856A48E
@@ -280,18 +304,27 @@ sAnalyzedData_0856A47C: @ 0x0856A47C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0xFF
 	.byte 0xFF, 0xFF, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0856A48F: field_special_scene.s: Task_HandlePorthole
+	.globl gFieldSpecialSceneData_0856A48F
+gFieldSpecialSceneData_0856A48F:
 	.globl gUnknown_856A48F
 gUnknown_856A48F: @ 0x0856A48F
 	@ analyzed canonical ROM range 0x0856A48F-0x0856A490
 sAnalyzedData_0856A48F: @ 0x0856A48F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x18, 0xFE
+	@ pret/pokeemerald-jp direct xref for 0x0856A491: field_special_scene.s: Task_HandlePorthole
+	.globl gFieldSpecialSceneData_0856A491
+gFieldSpecialSceneData_0856A491:
 	.globl gUnknown_856A491
 gUnknown_856A491: @ 0x0856A491
 	@ analyzed canonical ROM range 0x0856A491-0x0856A493
 sAnalyzedData_0856A491: @ 0x0856A491
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x17, 0xFE, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0856A494: rotating_gate.s: RotatingGate_LoadPuzzleConfig
+	.globl gRotatingGateData_0856A494
+gRotatingGateData_0856A494:
 	.globl gUnknown_856A494
 gUnknown_856A494: @ 0x0856A494
 	@ analyzed canonical ROM range 0x0856A494-0x0856A4D3
@@ -301,6 +334,9 @@ sAnalyzedData_0856A494: @ 0x0856A494
 	.2byte 0x0003, 0x0013, 0x0105, 0x0000, 0x0002, 0x0006, 0x0104, 0x0000
 	.2byte 0x0009, 0x000C, 0x0004, 0x0000, 0x0006, 0x0017, 0x0004, 0x0000
 	.2byte 0x000C, 0x0016, 0x0004, 0x0000, 0x0006, 0x0003, 0x0203, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0856A4D4: rotating_gate.s: RotatingGate_LoadPuzzleConfig
+	.globl gRotatingGateData_0856A4D4
+gRotatingGateData_0856A4D4:
 	.globl gUnknown_856A4D4
 gUnknown_856A4D4: @ 0x0856A4D4
 	@ analyzed canonical ROM range 0x0856A4D4-0x0856D93B
@@ -1145,6 +1181,9 @@ sAnalyzedData_0856A4D4: @ 0x0856A4D4
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0xC000, 0x2800, 0x0000
 	.2byte 0x0100, 0x8000, 0x2800, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0856D93C: rotating_gate.s: LoadRotatingGatePics
+	.globl gRotatingGateData_0856D93C
+gRotatingGateData_0856D93C:
 	.globl gUnknown_856D93C
 gUnknown_856D93C: @ 0x0856D93C
 	@ analyzed canonical ROM range 0x0856D93C-0x0856DBAB
@@ -1189,40 +1228,61 @@ sAnalyzedData_0856D93C: @ 0x0856D93C
 	.2byte 0xD9DC, 0x0856, 0xD9F4, 0x0856, 0xDA0C, 0x0856, 0xDA24, 0x0856
 	.2byte 0xDAFC, 0x0856, 0xDB44, 0x0856, 0xDB2C, 0x0856, 0xDB14, 0x0856
 	.2byte 0xDA9C, 0x0856, 0xDAB4, 0x0856, 0xDACC, 0x0856, 0xDAE4, 0x0856
+	@ pret/pokeemerald-jp direct xref for 0x0856DBAC: rotating_gate.s: RotatingGate_CreateGate
+	.globl gRotatingGateData_0856DBAC
+gRotatingGateData_0856DBAC:
 	.globl gUnknown_856DBAC
 gUnknown_856DBAC: @ 0x0856DBAC
 	@ analyzed canonical ROM range 0x0856DBAC-0x0856DBC3
 sSpriteTemplate_0856DBAC: @ 0x0856DBAC
 	rodata_sprite_template 0x1300, 0xFFFF, 0x0856D92C, 0x0856D994, 0, 0x0856DB5C, SpriteCallback_RotatingGate
+	@ pret/pokeemerald-jp direct xref for 0x0856DBC4: rotating_gate.s: RotatingGate_CreateGate
+	.globl gRotatingGateData_0856DBC4
+gRotatingGateData_0856DBC4:
 	.globl gUnknown_856DBC4
 gUnknown_856DBC4: @ 0x0856DBC4
 	@ analyzed canonical ROM range 0x0856DBC4-0x0856DBDB
 sSpriteTemplate_0856DBC4: @ 0x0856DBC4
 	rodata_sprite_template 0x1300, 0xFFFF, 0x0856D934, 0x0856D998, 0, 0x0856DB5C, SpriteCallback_RotatingGate
+	@ pret/pokeemerald-jp direct xref for 0x0856DBDC: rotating_gate.s: RotatingGate_GetRotationInfo
+	.globl gRotatingGateData_0856DBDC
+gRotatingGateData_0856DBDC:
 	.globl gUnknown_856DBDC
 gUnknown_856DBDC: @ 0x0856DBDC
 	@ analyzed canonical ROM range 0x0856DBDC-0x0856DBEB
 sAnalyzedData_0856DBDC: @ 0x0856DBDC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xFFFF, 0xFFFF, 0x2627, 0x1312, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF
+	@ pret/pokeemerald-jp direct xref for 0x0856DBEC: rotating_gate.s: RotatingGate_GetRotationInfo
+	.globl gRotatingGateData_0856DBEC
+gRotatingGateData_0856DBEC:
 	.globl gUnknown_856DBEC
 gUnknown_856DBEC: @ 0x0856DBEC
 	@ analyzed canonical ROM range 0x0856DBEC-0x0856DBFB
 sAnalyzedData_0856DBEC: @ 0x0856DBEC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0x1617, 0x2322, 0xFFFF, 0xFFFF
+	@ pret/pokeemerald-jp direct xref for 0x0856DBFC: rotating_gate.s: RotatingGate_GetRotationInfo
+	.globl gRotatingGateData_0856DBFC
+gRotatingGateData_0856DBFC:
 	.globl gUnknown_856DBFC
 gUnknown_856DBFC: @ 0x0856DBFC
 	@ analyzed canonical ROM range 0x0856DBFC-0x0856DC0B
 sAnalyzedData_0856DBFC: @ 0x0856DBFC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x11FF, 0xFFFF, 0x10FF, 0xFFFF, 0x24FF, 0xFFFF, 0x25FF, 0xFFFF
+	@ pret/pokeemerald-jp direct xref for 0x0856DC0C: rotating_gate.s: RotatingGate_GetRotationInfo
+	.globl gRotatingGateData_0856DC0C
+gRotatingGateData_0856DC0C:
 	.globl gUnknown_856DC0C
 gUnknown_856DC0C: @ 0x0856DC0C
 	@ analyzed canonical ROM range 0x0856DC0C-0x0856DC1B
 sAnalyzedData_0856DC0C: @ 0x0856DC0C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0xFF, 0x21, 0xFF, 0xFF, 0xFF, 0x20, 0xFF, 0xFF, 0xFF, 0x14, 0xFF, 0xFF, 0xFF, 0x15, 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x0856DC1C: rotating_gate.s: RotatingGate_CanRotate
+	.globl gRotatingGateData_0856DC1C
+gRotatingGateData_0856DC1C:
 	.globl gUnknown_856DC1C
 gUnknown_856DC1C: @ 0x0856DC1C
 	@ analyzed canonical ROM range 0x0856DC1C-0x0856DC3B
@@ -1230,6 +1290,9 @@ sAnalyzedData_0856DC1C: @ 0x0856DC1C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xFF00, 0x0000, 0xFE01, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000
 	.2byte 0x00FF, 0x0000, 0x01FF, 0x0000, 0xFFFF, 0x0000, 0xFFFE, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0856DC3C: rotating_gate.s: RotatingGate_CanRotate
+	.globl gRotatingGateData_0856DC3C
+gRotatingGateData_0856DC3C:
 	.globl gUnknown_856DC3C
 gUnknown_856DC3C: @ 0x0856DC3C
 	@ analyzed canonical ROM range 0x0856DC3C-0x0856DC5B
@@ -1237,6 +1300,9 @@ sAnalyzedData_0856DC3C: @ 0x0856DC3C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xFFFF, 0x0000, 0xFEFF, 0x0000, 0xFF00, 0x0000, 0xFF01, 0x0000
 	.2byte 0x0000, 0x0000, 0x0100, 0x0000, 0x00FF, 0x0000, 0x00FE, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0856DC5C: rotating_gate.s: RotatingGate_CanRotate, RotatingGate_HasArm
+	.globl gRotatingGateData_0856DC5C
+gRotatingGateData_0856DC5C:
 	.globl gUnknown_856DC5C
 gUnknown_856DC5C: @ 0x0856DC5C
 	@ analyzed canonical ROM range 0x0856DC5C-0x0856DCBB
@@ -1253,12 +1319,18 @@ gUnknown_856DCBC: @ 0x0856DCBC
 	.4byte sub_081B5E1C
 	.4byte CB2_ReturnToField
 	.4byte NULL
+	@ pret/pokeemerald-jp direct xref for 0x0856DCC8: item_use.s: sub_080FDD58, sub_080FE330
+	.globl gItemUseData_0856DCC8
+gItemUseData_0856DCC8:
 	.globl gUnknown_856DCC8
 gUnknown_856DCC8: @ 0x0856DCC8
 	@ analyzed canonical ROM range 0x0856DCC8-0x0856DCCB
 sAnalyzedData_0856DCC8: @ 0x0856DCC8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x02, 0x04, 0x01, 0x03
+	@ pret/pokeemerald-jp direct xref for 0x0856DCCC: item_use.s: sub_080FE874
+	.globl gItemUseData_0856DCCC
+gItemUseData_0856DCCC:
 	.globl gUnknown_856DCCC
 gUnknown_856DCCC: @ 0x0856DCCC
 	@ analyzed canonical ROM range 0x0856DCCC-0x0856DDF3
@@ -1286,6 +1358,9 @@ FunctionPointerTable_JP_0856DCCC: @ 0x0856DCCC
 	.byte 0xA3, 0x27, 0xA3, 0x27, 0x98, 0xD1, 0x4F, 0x08, 0xAC, 0xDD, 0x56, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0xC0, 0xDD, 0x56, 0x08, 0x31, 0xF1, 0x0F, 0x08, 0xA3, 0x27, 0xA3, 0x27, 0x10, 0xD0, 0x4F, 0x08
 	.byte 0x8C, 0xDD, 0x56, 0x08, 0x00, 0x00, 0x00, 0x00, 0x10, 0xF3, 0x2B, 0x08, 0x81, 0xF1, 0x0F, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x0856DDF4: battle_anim_effects_1.s: AnimTask_CreateSmallSolarbeamOrbs
+	.globl gBattleAnimEffects1Data_0856DDF4
+gBattleAnimEffects1Data_0856DDF4:
 	.globl gUnknown_856DDF4
 gUnknown_856DDF4: @ 0x0856DDF4
 	@ analyzed canonical ROM range 0x0856DDF4-0x0856E2E3
@@ -1370,6 +1445,9 @@ sAnalyzedData_0856DDF4: @ 0x0856DDF4
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000, 0xE26C, 0x0856, 0xE27C, 0x0856
 	.2byte 0xE194, 0x0856, 0xE1B4, 0x0856, 0x27F0, 0x27F0, 0xD080, 0x084F
 	.2byte 0xE190, 0x0856, 0x0000, 0x0000, 0xE2BC, 0x0856, 0x060D, 0x0810
+	@ pret/pokeemerald-jp direct xref for 0x0856E2E4: battle_anim_effects_1.s: AnimTrickBagStep2
+	.globl gBattleAnimEffects1Data_0856E2E4
+gBattleAnimEffects1Data_0856E2E4:
 	.globl gUnknown_856E2E4
 gUnknown_856E2E4: @ 0x0856E2E4
 	@ analyzed canonical ROM range 0x0856E2E4-0x0856E35B
@@ -1383,6 +1461,9 @@ sAnalyzedData_0856E2E4: @ 0x0856E2E4
 	.2byte 0xFFFF, 0x0000, 0x001C, 0x0001, 0xFFFF, 0x0000, 0xE308, 0x0856
 	.2byte 0xE310, 0x0856, 0xE318, 0x0856, 0xE320, 0x0856, 0xE328, 0x0856
 	.2byte 0xE330, 0x0856, 0xE338, 0x0856
+	@ pret/pokeemerald-jp direct xref for 0x0856E35C: battle_anim_effects_1.s: sub_08100810, sub_08100D74
+	.globl gBattleAnimEffects1Data_0856E35C
+gBattleAnimEffects1Data_0856E35C:
 	.globl gUnknown_856E35C
 gUnknown_856E35C: @ 0x0856E35C
 	@ analyzed canonical ROM range 0x0856E35C-0x0856E45B
@@ -1452,6 +1533,9 @@ sAnalyzedData_0856E35C: @ 0x0856E35C
 	.4byte 0 @ +0xF4
 	.4byte 0x0856E410 @ +0xF8
 	.4byte sub_08100E90 @ +0xFC
+	@ pret/pokeemerald-jp direct xref for 0x0856E45C: battle_anim_effects_1.s: sub_08101014
+	.globl gBattleAnimEffects1Data_0856E45C
+gBattleAnimEffects1Data_0856E45C:
 	.globl gUnknown_856E45C
 gUnknown_856E45C: @ 0x0856E45C
 	@ analyzed canonical ROM range 0x0856E45C-0x0856E8B3
@@ -1527,6 +1611,9 @@ sAnalyzedData_0856E45C: @ 0x0856E45C
 	.2byte 0xF304, 0x082B, 0x0000, 0x0000, 0xF310, 0x082B, 0x1DFD, 0x0810
 	.2byte 0x271E, 0x271E, 0xD018, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000
 	.2byte 0xF310, 0x082B, 0x20E9, 0x0810
+	@ pret/pokeemerald-jp direct xref for 0x0856E8B4: battle_anim_effects_1.s: sub_08101E24
+	.globl gBattleAnimEffects1Data_0856E8B4
+gBattleAnimEffects1Data_0856E8B4:
 	.globl gUnknown_856E8B4
 gUnknown_856E8B4: @ 0x0856E8B4
 	@ analyzed canonical ROM range 0x0856E8B4-0x0856EA9F
@@ -1563,6 +1650,9 @@ sAnalyzedData_0856E8B4: @ 0x0856E8B4
 	.2byte 0x0001, 0x0005, 0x0002, 0x0005, 0x0003, 0x0005, 0xFFFF, 0x0000
 	.2byte 0xEA70, 0x0856, 0x2722, 0x2722, 0xD1F0, 0x084F, 0xEA84, 0x0856
 	.2byte 0x0000, 0x0000, 0xEA54, 0x0856, 0x2B9D, 0x0810
+	@ pret/pokeemerald-jp direct xref for 0x0856EAA0: battle_anim_effects_1.s: sub_08102EF8
+	.globl gBattleAnimEffects1Data_0856EAA0
+gBattleAnimEffects1Data_0856EAA0:
 	.globl gUnknown_856EAA0
 gUnknown_856EAA0: @ 0x0856EAA0
 	@ analyzed canonical ROM range 0x0856EAA0-0x0856EACF
@@ -1571,6 +1661,9 @@ sAnalyzedData_0856EAA0: @ 0x0856EAA0
 	.2byte 0x27D2, 0x27D2, 0xD148, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000
 	.2byte 0xF310, 0x082B, 0x2D31, 0x0810, 0x0000, 0x0008, 0x0004, 0x0008
 	.2byte 0x0008, 0x0008, 0x000C, 0x0008, 0xFFFE, 0x0000, 0xEAB8, 0x0856
+	@ pret/pokeemerald-jp direct xref for 0x0856EAD0: battle_anim_effects_1.s: sub_08102EF8
+	.globl gBattleAnimEffects1Data_0856EAD0
+gBattleAnimEffects1Data_0856EAD0:
 	.globl gUnknown_856EAD0
 gUnknown_856EAD0: @ 0x0856EAD0
 	@ analyzed canonical ROM range 0x0856EAD0-0x0856EC03
@@ -1596,6 +1689,9 @@ sAnalyzedData_0856EAD0: @ 0x0856EAD0
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000, 0xEBD0, 0x0856, 0x2758, 0x2758
 	.2byte 0xD0D8, 0x084F, 0xEBB0, 0x0856, 0x0000, 0x0000, 0xEBE8, 0x0856
 	.2byte 0x3525, 0x0810
+	@ pret/pokeemerald-jp direct xref for 0x0856EC04: battle_anim_effects_1.s: sub_08103438, sub_081034F0, sub_08103524, sub_08103634, sub_08103878
+	.globl gBattleAnimEffects1Data_0856EC04
+gBattleAnimEffects1Data_0856EC04:
 	.globl gUnknown_856EC04
 gUnknown_856EC04: @ 0x0856EC04
 	@ analyzed canonical ROM range 0x0856EC04-0x0856ECF7
@@ -1617,6 +1713,9 @@ sAnalyzedData_0856EC04: @ 0x0856EC04
 	.byte 0x30, 0x00, 0x02, 0x00, 0x20, 0x00, 0x02, 0x00, 0x10, 0x00, 0x02, 0x00, 0x00, 0x00, 0x02, 0x00
 	.byte 0xFF, 0xFF, 0x00, 0x00, 0x98, 0xEC, 0x56, 0x08, 0xC0, 0xEC, 0x56, 0x08, 0xAC, 0xEC, 0x56, 0x08
 	.byte 0xD4, 0xEC, 0x56, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x0856ECF8: battle_anim_effects_3.s: sub_0815AF90
+	.globl gBattleAnimEffects3Data_0856ECF8
+gBattleAnimEffects3Data_0856ECF8:
 	.globl gUnknown_856ECF8
 gUnknown_856ECF8: @ 0x0856ECF8
 	@ analyzed canonical ROM range 0x0856ECF8-0x0856EF93
@@ -1664,6 +1763,9 @@ sAnalyzedData_0856ECF8: @ 0x0856ECF8
 	.2byte 0xD1E8, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000, 0xEF60, 0x0856
 	.2byte 0x40CD, 0x0810, 0x2713, 0x2713, 0xD220, 0x084F, 0xF304, 0x082B
 	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x4119, 0x0810
+	@ pret/pokeemerald-jp direct xref for 0x0856EF94: battle_anim_effects_2.s: sub_0810445C
+	.globl gBattleAnimEffects2Data_0856EF94
+gBattleAnimEffects2Data_0856EF94:
 	.globl gUnknown_856EF94
 gUnknown_856EF94: @ 0x0856EF94
 	@ analyzed canonical ROM range 0x0856EF94-0x0856F083
@@ -1684,6 +1786,9 @@ sAnalyzedData_0856EF94: @ 0x0856EF94
 	.byte 0x30, 0x28, 0x30, 0x28, 0x20, 0xD1, 0x4F, 0x08, 0x04, 0xF3, 0x2B, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x08, 0xF0, 0x56, 0x08, 0xE5, 0x94, 0x10, 0x08, 0xBF, 0x27, 0xBF, 0x27, 0x18, 0xD0, 0x4F, 0x08
 	.byte 0x04, 0xF3, 0x2B, 0x08, 0x00, 0x00, 0x00, 0x00, 0x10, 0xF3, 0x2B, 0x08, 0x75, 0x71, 0x0A, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x0856F084: battle_anim_effects_2.s: sub_08104838
+	.globl gBattleAnimEffects2Data_0856F084
+gBattleAnimEffects2Data_0856F084:
 	.globl gUnknown_856F084
 gUnknown_856F084: @ 0x0856F084
 	@ analyzed canonical ROM range 0x0856F084-0x0856F1CB
@@ -1710,6 +1815,9 @@ sAnalyzedData_0856F084: @ 0x0856F084
 	.byte 0x20, 0x00, 0xC1, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x8C, 0xF1, 0x56, 0x08, 0x9C, 0xF1, 0x56, 0x08
 	.byte 0x9A, 0x27, 0x9A, 0x27, 0x40, 0xD1, 0x4F, 0x08, 0xAC, 0xF1, 0x56, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x65, 0x4C, 0x10, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x0856F1CC: battle_anim_effects_2.s: AnimTask_Splash, AnimTask_SplashStep
+	.globl gBattleAnimEffects2Data_0856F1CC
+gBattleAnimEffects2Data_0856F1CC:
 	.globl gUnknown_856F1CC
 gUnknown_856F1CC: @ 0x0856F1CC
 	@ analyzed canonical ROM range 0x0856F1CC-0x0856F1EB
@@ -1717,6 +1825,9 @@ sAnalyzedData_0856F1CC: @ 0x0856F1CC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xFFFA, 0x0004, 0x0800, 0x0000, 0x000A, 0xFFF6, 0x0800, 0x0000
 	.2byte 0xFFFC, 0x0006, 0x0800, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0856F1EC: battle_anim_effects_2.s: sub_08105304
+	.globl gBattleAnimEffects2Data_0856F1EC
+gBattleAnimEffects2Data_0856F1EC:
 	.globl gUnknown_856F1EC
 gUnknown_856F1EC: @ 0x0856F1EC
 	@ analyzed canonical ROM range 0x0856F1EC-0x0856F287
@@ -1732,6 +1843,9 @@ sAnalyzedData_0856F1EC: @ 0x0856F1EC
 	.2byte 0xFFF5, 0xFFF5, 0x0800, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
 	.2byte 0xF254, 0x0856, 0x2767, 0x2767, 0xD078, 0x084F, 0xF304, 0x082B
 	.2byte 0x0000, 0x0000, 0xF26C, 0x0856, 0x53FD, 0x0810
+	@ pret/pokeemerald-jp direct xref for 0x0856F288: battle_anim_effects_2.s: sub_08105488
+	.globl gBattleAnimEffects2Data_0856F288
+gBattleAnimEffects2Data_0856F288:
 	.globl gUnknown_856F288
 gUnknown_856F288: @ 0x0856F288
 	@ analyzed canonical ROM range 0x0856F288-0x0856F493
@@ -1770,6 +1884,9 @@ sAnalyzedData_0856F288: @ 0x0856F288
 	.byte 0x08, 0xD2, 0x4F, 0x08, 0x04, 0xF3, 0x2B, 0x08, 0x00, 0x00, 0x00, 0x00, 0xFC, 0xF3, 0x56, 0x08
 	.byte 0xF5, 0x5A, 0x10, 0x08, 0xDB, 0x27, 0xDB, 0x27, 0x08, 0xD2, 0x4F, 0x08, 0x04, 0xF3, 0x2B, 0x08
 	.byte 0x00, 0x00, 0x00, 0x00, 0xF4, 0xF3, 0x56, 0x08, 0x39, 0x5D, 0x10, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x0856F494: battle_anim_effects_2.s: sub_08105FCC
+	.globl gBattleAnimEffects2Data_0856F494
+gBattleAnimEffects2Data_0856F494:
 	.globl gUnknown_856F494
 gUnknown_856F494: @ 0x0856F494
 	@ analyzed canonical ROM range 0x0856F494-0x0856F4BF
@@ -1778,11 +1895,17 @@ sAnalyzedData_0856F494: @ 0x0856F494
 	.2byte 0x0060, 0xFFF3, 0x0800, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0003, 0x0004, 0x0003, 0x0008, 0x0003, 0x0004, 0x0003
 	.2byte 0x0000, 0x0003, 0xFFFF, 0x0000, 0xF4A4, 0x0856
+	@ pret/pokeemerald-jp direct xref for 0x0856F4C0: battle_anim_effects_2.s: sub_08106358
+	.globl gBattleAnimEffects2Data_0856F4C0
+gBattleAnimEffects2Data_0856F4C0:
 	.globl gUnknown_856F4C0
 gUnknown_856F4C0: @ 0x0856F4C0
 	@ analyzed canonical ROM range 0x0856F4C0-0x0856F4D7
 sSpriteTemplate_0856F4C0: @ 0x0856F4C0
 	rodata_sprite_template 0x27DF, 0x27DF, 0x084FD018, 0x0856F4BC, 0, gDummySpriteAffineAnimTable, sub_08106498
+	@ pret/pokeemerald-jp direct xref for 0x0856F4D8: battle_anim_effects_2.s: sub_08106358
+	.globl gBattleAnimEffects2Data_0856F4D8
+gBattleAnimEffects2Data_0856F4D8:
 	.globl gUnknown_856F4D8
 gUnknown_856F4D8: @ 0x0856F4D8
 	@ analyzed canonical ROM range 0x0856F4D8-0x0856F533
@@ -1794,6 +1917,9 @@ sAnalyzedData_0856F4D8: @ 0x0856F4D8
 	.2byte 0x0020, 0x000F, 0x0010, 0x0006, 0x0000, 0x0006, 0xFFFF, 0x0000
 	.2byte 0xF4E0, 0x0856, 0x27DD, 0x27DD, 0xD020, 0x084F, 0xF518, 0x0856
 	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x7091, 0x080A
+	@ pret/pokeemerald-jp direct xref for 0x0856F534: battle_anim_effects_2.s: sub_081065B0, sub_081065D8
+	.globl gBattleAnimEffects2Data_0856F534
+gBattleAnimEffects2Data_0856F534:
 	.globl gUnknown_856F534
 gUnknown_856F534: @ 0x0856F534
 	@ analyzed canonical ROM range 0x0856F534-0x0856F56B
@@ -1813,6 +1939,9 @@ sAnalyzedData_0856F534: @ 0x0856F534
 	.4byte 0 @ +0x2C
 	.4byte gDummySpriteAffineAnimTable @ +0x30
 	.4byte sub_081066B0 @ +0x34
+	@ pret/pokeemerald-jp direct xref for 0x0856F56C: battle_anim_effects_2.s: sub_08106870, sub_08106900
+	.globl gBattleAnimEffects2Data_0856F56C
+gBattleAnimEffects2Data_0856F56C:
 	.globl gUnknown_856F56C
 gUnknown_856F56C: @ 0x0856F56C
 	@ analyzed canonical ROM range 0x0856F56C-0x0856F77B
@@ -1851,6 +1980,9 @@ sAnalyzedData_0856F56C: @ 0x0856F56C
 	.byte 0x20, 0x00, 0x48, 0x00, 0x10, 0x00, 0x48, 0x00, 0x00, 0x00, 0x48, 0x00, 0xFF, 0xFF, 0x00, 0x00
 	.byte 0x34, 0xF7, 0x56, 0x08, 0x48, 0xF7, 0x56, 0x08, 0xE7, 0x27, 0xE7, 0x27, 0x20, 0xD0, 0x4F, 0x08
 	.byte 0x5C, 0xF7, 0x56, 0x08, 0x00, 0x00, 0x00, 0x00, 0x10, 0xF3, 0x2B, 0x08, 0x21, 0x75, 0x10, 0x08
+	@ pret/pokeemerald-jp direct xref for 0x0856F77C: battle_anim_effects_2.s: sub_081075E0
+	.globl gBattleAnimEffects2Data_0856F77C
+gBattleAnimEffects2Data_0856F77C:
 	.globl gUnknown_856F77C
 gUnknown_856F77C: @ 0x0856F77C
 	@ analyzed canonical ROM range 0x0856F77C-0x08570C03

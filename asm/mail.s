@@ -72,7 +72,7 @@ _081215DE:
 	b _08121600
 	.align 2, 0
 _081215EC: .4byte 0x02039E00
-_081215F0: .4byte 0x0857AFE0
+_081215F0: .4byte gMailData_0857AFE0
 _081215F4:
 	adds r2, r0, #0
 	adds r2, #0xe8
@@ -108,7 +108,7 @@ _08121600:
 	strb r0, [r1]
 	b _08121660
 	.align 2, 0
-_08121638: .4byte 0x0857B054
+_08121638: .4byte gMailData_0857B054
 _0812163C: .4byte 0xFFFF0000
 _08121640: .4byte 0x02039E00
 _08121644:
@@ -270,7 +270,7 @@ _08121790:
 	bl SetBgTilemapBuffer
 	b _08121A44
 	.align 2, 0
-_081217BC: .4byte 0x0857AEB4
+_081217BC: .4byte gMailData_0857AEB4
 _081217C0: .4byte 0x02039E00
 _081217C4: .4byte 0x000010EC
 _081217C8:
@@ -279,7 +279,7 @@ _081217C8:
 	bl DeactivateAllTextPrinters
 	b _08121A44
 	.align 2, 0
-_081217D4: .4byte 0x0857AEC0
+_081217D4: .4byte gMailData_0857AEC0
 _081217D8:
 	ldr r2, _08121800
 	ldr r0, _08121804
@@ -300,7 +300,7 @@ _081217D8:
 	bl decompress_and_copy_tile_data_to_vram
 	b _08121A44
 	.align 2, 0
-_08121800: .4byte 0x0857AEE4
+_08121800: .4byte gMailData_0857AEE4
 _08121804: .4byte 0x02039E00
 _08121808:
 	bl free_temp_tile_data_buffers_if_possible
@@ -344,7 +344,7 @@ _08121816:
 	bl CopyToBgTilemapBuffer
 	b _08121A44
 	.align 2, 0
-_0812185C: .4byte 0x0857AEE4
+_0812185C: .4byte gMailData_0857AEE4
 _08121860: .4byte 0x02039E00
 _08121864:
 	movs r0, #0
@@ -437,10 +437,10 @@ _08121878:
 	b _08121A44
 	.align 2, 0
 _08121920: .4byte 0x020373B4
-_08121924: .4byte 0x0857AEE4
+_08121924: .4byte gMailData_0857AEE4
 _08121928: .4byte 0x02039E00
 _0812192C: .4byte 0x020377B4
-_08121930: .4byte 0x0857AEDC
+_08121930: .4byte gMailData_0857AEDC
 _08121934: .4byte 0x03005AF0
 _08121938:
 	ldr r0, _0812194C
@@ -703,7 +703,7 @@ _08121AFA:
 	strb r1, [r2]
 	b _08121B5A
 	.align 2, 0
-_08121B44: .4byte 0x0857B0B4
+_08121B44: .4byte gMailData_0857B0B4
 _08121B48: .4byte 0x02039E00
 _08121B4C:
 	adds r0, r1, #0
@@ -842,7 +842,7 @@ _08121C10:
 	bx r0
 	.align 2, 0
 _08121C58: .4byte 0x02039E00
-_08121C5C: .4byte 0x0857AED8
+_08121C5C: .4byte gMailData_0857AED8
 	thumb_func_end sub_08121B64
 
 	thumb_func_start VBlankCB_MailRead

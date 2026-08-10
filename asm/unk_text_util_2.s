@@ -473,7 +473,7 @@ _081BA268:
 	strb r0, [r6, #0x1f]
 	b _081BA2CE
 	.align 2, 0
-_081BA29C: .4byte 0x085E19DC
+_081BA29C: .4byte gUnkTextUtil2Data_085E19DC
 _081BA2A0: .4byte 0x03005AF0
 _081BA2A4:
 	ldrb r0, [r6, #4]
@@ -577,7 +577,7 @@ DecompressGlyphFont6: @ 0x081BA308
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081BA364: .4byte 0x085E19E0
+_081BA364: .4byte gUnkTextUtil2Data_085E19E0
 _081BA368: .4byte 0x03003030
 	thumb_func_end DecompressGlyphFont6
 

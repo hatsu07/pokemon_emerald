@@ -270,7 +270,7 @@ _08137396:
 	movs r0, #1
 	b _081373CA
 	.align 2, 0
-_081373B4: .4byte 0x08592214
+_081373B4: .4byte gFldeffFlashData_08592214
 _081373B8:
 	adds r0, r3, #1
 	lsls r0, r0, #0x18
@@ -313,7 +313,7 @@ _081373E6:
 	ldrb r0, [r2, #2]
 	b _08137412
 	.align 2, 0
-_081373FC: .4byte 0x08592214
+_081373FC: .4byte gFldeffFlashData_08592214
 _08137400:
 	adds r0, r3, #1
 	lsls r0, r0, #0x18
@@ -356,7 +356,7 @@ _0813742E:
 	ldrb r0, [r2, #3]
 	b _0813745A
 	.align 2, 0
-_08137444: .4byte 0x08592214
+_08137444: .4byte gFldeffFlashData_08592214
 _08137448:
 	adds r0, r3, #1
 	lsls r0, r0, #0x18
@@ -457,12 +457,12 @@ sub_08137490: @ 0x08137490
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0813750C: .4byte 0x085924DC
+_0813750C: .4byte gFldeffFlashData_085924DC
 _08137510: .4byte 0x0600C000
-_08137514: .4byte 0x085922FC
+_08137514: .4byte gFldeffFlashData_085922FC
 _08137518: .4byte 0x0600F800
-_0813751C: .4byte 0x0859229C
-_08137520: .4byte 0x085922EC
+_0813751C: .4byte gFldeffFlashData_0859229C
+_08137520: .4byte gFldeffFlashData_085922EC
 _08137524: .4byte 0x00003E41
 _08137528: .4byte 0x00001F0C
 _0813752C: .4byte 0x03005B60
@@ -540,7 +540,7 @@ sub_0813757C: @ 0x0813757C
 	.align 2, 0
 _081375B8: .4byte 0x00001010
 _081375BC: .4byte 0x03005B60
-_081375C0: .4byte 0x085922EC
+_081375C0: .4byte gFldeffFlashData_085922EC
 _081375C4:
 	ldr r0, _081375DC
 	movs r1, #0
@@ -555,7 +555,7 @@ _081375D6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081375DC: .4byte 0x0859229C
+_081375DC: .4byte gFldeffFlashData_0859229C
 _081375E0: .4byte 0x081375E5
 	thumb_func_end sub_0813757C
 
@@ -674,12 +674,12 @@ sub_08137648: @ 0x08137648
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081376C4: .4byte 0x085924DC
+_081376C4: .4byte gFldeffFlashData_085924DC
 _081376C8: .4byte 0x0600C000
-_081376CC: .4byte 0x085922FC
+_081376CC: .4byte gFldeffFlashData_085922FC
 _081376D0: .4byte 0x0600F800
 _081376D4: .4byte 0x00001F0C
-_081376D8: .4byte 0x0859229C
+_081376D8: .4byte gFldeffFlashData_0859229C
 _081376DC: .4byte 0x085922BC
 _081376E0: .4byte 0x03005B60
 _081376E4: .4byte 0x081376E9
@@ -713,7 +713,7 @@ sub_081376E8: @ 0x081376E8
 	b _08137738
 	.align 2, 0
 _0813771C: .4byte 0x03005B60
-_08137720: .4byte 0x085922DC
+_08137720: .4byte gFldeffFlashData_085922DC
 _08137724:
 	ldr r1, _08137740
 	movs r0, #0x52

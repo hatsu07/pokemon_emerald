@@ -173,7 +173,7 @@ _08083D58:
 	.align 2, 0
 _08083D7C: .4byte 0x03005AEC
 _08083D80: .4byte 0x00002E90
-_08083D84: .4byte 0x0830FC68
+_08083D84: .4byte gNewGameData_0830FC68
 	thumb_func_end ClearAllContestWinnerPics
 
 	thumb_func_start ClearFrontierRecord

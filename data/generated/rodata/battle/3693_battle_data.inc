@@ -1,3 +1,6 @@
+	@ pret/pokeemerald-jp direct xref for 0x085BDB6C: battle_tower.s: SetTentPtrsGetLevel
+	.globl gBattleTowerData_085BDB6C
+gBattleTowerData_085BDB6C:
 	.globl gUnknown_85BDB6C
 gUnknown_85BDB6C: @ 0x085BDB6C
 	@ analyzed canonical ROM range 0x085BDB6C-0x085BDFC7
@@ -73,6 +76,9 @@ sAnalyzedData_085BDB6C: @ 0x085BDB6C
 	.2byte 0xFFFF, 0x0007, 0x0008, 0x001C, 0x001D, 0x001F, 0x0020, 0xFFFF
 	.2byte 0x0004, 0x0005, 0x0006, 0x000C, 0x000D, 0xFFFF, 0x0016, 0x0018
 	.2byte 0x001A, 0x001B, 0x0022, 0x0025, 0xFFFF, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085BDFC8: battle_tower.s: SetTentPtrsGetLevel
+	.globl gBattleTowerData_085BDFC8
+gBattleTowerData_085BDFC8:
 	.globl gUnknown_85BDFC8
 gUnknown_85BDFC8: @ 0x085BDFC8
 	@ analyzed canonical ROM range 0x085BDFC8-0x085BE124

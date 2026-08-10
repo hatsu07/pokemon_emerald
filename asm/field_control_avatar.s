@@ -576,7 +576,7 @@ _0809BC06:
 	movs r0, #0
 	b _0809BC46
 	.align 2, 0
-_0809BC0C: .4byte 0x0830FCB0
+_0809BC0C: .4byte gUnknown_830FCB0
 _0809BC10: .4byte 0x02036FF0
 _0809BC14:
 	movs r4, #0
@@ -683,7 +683,7 @@ _0809BCD8:
 	b _0809BD26
 	.align 2, 0
 _0809BCDC: .4byte 0x02036FF0
-_0809BCE0: .4byte 0x0830FCB0
+_0809BCE0: .4byte gUnknown_830FCB0
 _0809BCE4:
 	ldr r0, _0809BD08
 	strb r4, [r0]

@@ -65,7 +65,7 @@ _081358BA:
 	b _08135922
 	.align 2, 0
 _081358CC: .4byte 0x00000804
-_081358D0: .4byte 0x085920E7
+_081358D0: .4byte gPokeblockSpokeblockData_085920E7
 _081358D4: .4byte 0x00000808
 _081358D8:
 	ldr r1, _081358E8
@@ -78,7 +78,7 @@ _081358D8:
 	b _08135924
 	.align 2, 0
 _081358E8: .4byte 0x00000804
-_081358EC: .4byte 0x085920E9
+_081358EC: .4byte gPokeblockSpokeblockData_085920E9
 _081358F0: .4byte 0x00000808
 _081358F4:
 	ldr r0, _08135904
@@ -91,7 +91,7 @@ _081358F4:
 	b _08135922
 	.align 2, 0
 _08135904: .4byte 0x00000804
-_08135908: .4byte 0x085920EB
+_08135908: .4byte gPokeblockSpokeblockData_085920EB
 _0813590C: .4byte 0x00000808
 _08135910:
 	ldr r0, _08135930
@@ -114,7 +114,7 @@ _08135924:
 	.align 2, 0
 _08135930: .4byte 0x0203A81C
 _08135934: .4byte 0x00000804
-_08135938: .4byte 0x085920E4
+_08135938: .4byte gPokeblockSpokeblockData_085920E4
 _0813593C: .4byte 0x00000808
 _08135940: .4byte 0x0813599D
 	thumb_func_end sub_08135850
@@ -498,7 +498,7 @@ sub_08135C2C: @ 0x08135C2C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08135C80: .4byte 0x0859206C
+_08135C80: .4byte gPokeblockSpokeblockData_0859206C
 _08135C84: .4byte 0x0203A81C
 	thumb_func_end sub_08135C2C
 
@@ -541,7 +541,7 @@ _08135CCC:
 	bl decompress_and_copy_tile_data_to_vram
 	b _08135D2E
 	.align 2, 0
-_08135CE4: .4byte 0x08D9B4B4
+_08135CE4: .4byte gPokeblockSpokeblockData_08D9B4B4
 _08135CE8:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -555,7 +555,7 @@ _08135CE8:
 	ldr r1, [r4]
 	b _08135D32
 	.align 2, 0
-_08135D04: .4byte 0x08D9BA14
+_08135D04: .4byte gPokeblockSpokeblockData_08D9BA14
 _08135D08: .4byte 0x0203A81C
 _08135D0C:
 	ldr r0, _08135D18
@@ -564,13 +564,13 @@ _08135D0C:
 	bl LoadCompressedPalette
 	b _08135D2E
 	.align 2, 0
-_08135D18: .4byte 0x08D9B6BC
+_08135D18: .4byte gPokeblockSpokeblockData_08D9B6BC
 _08135D1C:
 	ldr r0, _08135D24
 	bl LoadCompressedSpriteSheet
 	b _08135D2E
 	.align 2, 0
-_08135D24: .4byte 0x08592140
+_08135D24: .4byte gUnknown_8592140
 _08135D28:
 	ldr r0, _08135D40
 	bl LoadCompressedSpritePalette
@@ -585,7 +585,7 @@ _08135D32:
 	strh r0, [r1]
 	b _08135D68
 	.align 2, 0
-_08135D40: .4byte 0x08592148
+_08135D40: .4byte gUnknown_8592148
 _08135D44: .4byte 0x0203A81C
 _08135D48: .4byte 0x00000D36
 _08135D4C:
@@ -647,8 +647,8 @@ _08135DA0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08135DC4: .4byte 0x08592194
-_08135DC8: .4byte 0x085D7B04
+_08135DC4: .4byte gPokeblockSpokeblockData_08592194
+_08135DC8: .4byte gUnknown_85D7B04
 	thumb_func_end sub_08135D74
 
 	thumb_func_start sub_08135DCC
@@ -672,7 +672,7 @@ sub_08135DCC: @ 0x08135DCC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08135DF4: .4byte 0x08592168
+_08135DF4: .4byte gPokeblockSpokeblockData_08592168
 	thumb_func_end sub_08135DCC
 
 	thumb_func_start sub_08135DF8
@@ -816,7 +816,7 @@ _08135F18: .4byte 0x00000954
 _08135F1C: .4byte 0x0000080C
 _08135F20: .4byte 0x085C985C
 _08135F24: .4byte 0x03006050
-_08135F28: .4byte 0x085921FC
+_08135F28: .4byte gPokeblockSpokeblockData_085921FC
 _08135F2C: .4byte 0x0000080B
 	thumb_func_end sub_08135E60
 
@@ -877,7 +877,7 @@ _08135FA0: .4byte 0x08592078
 _08135FA4: .4byte 0x03005AEC
 _08135FA8: .4byte 0x00000848
 _08135FAC: .4byte 0x02021C40
-_08135FB0: .4byte 0x085C9864
+_08135FB0: .4byte gPokeblockSpokeblockData_085C9864
 	thumb_func_end sub_08135F30
 
 	thumb_func_start sub_08135FB4
@@ -1539,7 +1539,7 @@ sub_08136484: @ 0x08136484
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081364AC: .4byte 0x08592150
+_081364AC: .4byte gPokeblockSpokeblockData_08592150
 	thumb_func_end sub_08136484
 
 	thumb_func_start sub_081364B0
@@ -1577,7 +1577,7 @@ _081364CE:
 	strh r5, [r4, #0x30]
 	b _08136520
 	.align 2, 0
-_081364F0: .4byte 0x0859213C
+_081364F0: .4byte gPokeblockSpokeblockData_0859213C
 _081364F4:
 	ldrh r0, [r4, #0x30]
 	adds r0, #1
@@ -2418,8 +2418,8 @@ sub_08136BB8: @ 0x08136BB8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08136BE0: .4byte 0x085921F4
-_08136BE4: .4byte 0x085920F0
+_08136BE0: .4byte gPokeblockSpokeblockData_085921F4
+_08136BE4: .4byte gPokeblockSpokeblockData_085920F0
 	thumb_func_end sub_08136BB8
 
 	thumb_func_start sub_08136BE8
@@ -3049,7 +3049,7 @@ _0813709A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081370B0: .4byte 0x08591FEC
+_081370B0: .4byte gUnknown_8591FEC
 	thumb_func_end sub_08137054
 
 	thumb_func_start sub_081370B4
@@ -3099,7 +3099,7 @@ _081370E4:
 	b _0813711C
 	.align 2, 0
 _08137108: .4byte 0x08592078
-_0813710C: .4byte 0x0859216C
+_0813710C: .4byte gPokeblockSpokeblockData_0859216C
 _08137110:
 	adds r0, r4, #1
 	lsls r0, r0, #0x18

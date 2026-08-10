@@ -516,7 +516,7 @@ sub_082927D4: @ 0x082927D4
 	ldr r3, _082927E0
 	b _082927EE
 	.align 2, 0
-_082927DC: .4byte 0x0890EED0
+_082927DC: .4byte gLibrfuRfuData_0890EED0
 _082927E0: .4byte 0x030000F0
 _082927E4:
 	ldrb r0, [r3]
@@ -3552,7 +3552,7 @@ _08293E6A:
 	adds r1, #0xf
 	b _08293E86
 	.align 2, 0
-_08293E78: .4byte gUnknown_890EEA4
+_08293E78: .4byte gLibrfuRfuData_0890EEA4
 _08293E7C:
 	cmp r0, #0
 	bne _08293E88
@@ -4619,7 +4619,7 @@ _08294652:
 	b _082946B4
 	.align 2, 0
 _08294664: .4byte gUnknown_3007630
-_08294668: .4byte gUnknown_890EEA4
+_08294668: .4byte gLibrfuRfuData_0890EEA4
 _0829466C: .4byte 0x00008022
 _08294670:
 	ldr r0, _0829469C
@@ -4878,7 +4878,7 @@ _08294826:
 	b _08294864
 	.align 2, 0
 _0829484C: .4byte gUnknown_3007630
-_08294850: .4byte gUnknown_890EEA4
+_08294850: .4byte gLibrfuRfuData_0890EEA4
 _08294854: .4byte gUnknown_3007638
 _08294858:
 	movs r0, #0x10
@@ -5214,7 +5214,7 @@ rfu_STC_analyzeLLSF: @ 0x08294A98
 	b _08294CC6
 	.align 2, 0
 _08294ACC: .4byte gUnknown_3007630
-_08294AD0: .4byte gUnknown_890EEA4
+_08294AD0: .4byte gLibrfuRfuData_0890EEA4
 _08294AD4:
 	movs r5, #0
 	movs r4, #0

@@ -1,15 +1,24 @@
+	@ pret/pokeemerald-jp direct xref for 0x085F41A8: pokenav_unk_4.s: sub_081CB780
+	.globl gPokenavUnk4Data_085F41A8
+gPokenavUnk4Data_085F41A8:
 	.globl gUnknown_85F41A8
 gUnknown_85F41A8: @ 0x085F41A8
 	@ analyzed canonical ROM range 0x085F41A8-0x085F41AF
 sAnalyzedData_085F41A8: @ 0x085F41A8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0101, 0x1C0C, 0x0104, 0x000A
+	@ pret/pokeemerald-jp direct xref for 0x085F41B0: pokenav_unk_4.s: sub_081CB968
+	.globl gPokenavUnk4Data_085F41B0
+gPokenavUnk4Data_085F41B0:
 	.globl gUnknown_85F41B0
 gUnknown_85F41B0: @ 0x085F41B0
 	@ analyzed canonical ROM range 0x085F41B0-0x085F41B7
 sAnalyzedData_085F41B0: @ 0x085F41B0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x58, 0x40, 0x5F, 0x08, 0x40, 0x00, 0x07, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085F41B8: pokenav_unk_4.s: sub_081CB968
+	.globl gPokenavUnk4Data_085F41B8
+gPokenavUnk4Data_085F41B8:
 	.globl gUnknown_85F41B8
 gUnknown_85F41B8: @ 0x085F41B8
 	@ analyzed canonical ROM range 0x085F41B8-0x085F41CF
@@ -17,6 +26,9 @@ sAnalyzedData_085F41B8: @ 0x085F41B8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x4038, 0x085F, 0x000C, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x8000, 0x0000, 0x0400, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085F41D0: pokenav_unk_4.s: sub_081CBA44
+	.globl gPokenavUnk4Data_085F41D0
+gPokenavUnk4Data_085F41D0:
 	.globl gUnknown_85F41D0
 gUnknown_85F41D0: @ 0x085F41D0
 	@ analyzed canonical ROM range 0x085F41D0-0x085F41EF
@@ -30,11 +42,17 @@ sAnalyzedData_085F41D0: @ 0x085F41D0
 	.4byte sub_081CBAA0 @ +0x14
 	.4byte 0xC0000000 @ +0x18
 	.4byte 0x00000400 @ +0x1C
+	@ pret/pokeemerald-jp direct xref for 0x085F41F0: pokenav_unk_4.s: sub_081CBAC4
+	.globl gPokenavUnk4Data_085F41F0
+gPokenavUnk4Data_085F41F0:
 	.globl gUnknown_85F41F0
 gUnknown_85F41F0: @ 0x085F41F0
 	@ analyzed canonical ROM range 0x085F41F0-0x085F4207
 sSpriteTemplate_085F41F0: @ 0x085F41F0
 	rodata_sprite_template 0x0008, 0x000D, 0x085F41E8, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x085F4208: pokenav_unk_4.s: sub_081CC170
+	.globl gPokenavUnk4Data_085F4208
+gPokenavUnk4Data_085F4208:
 	.globl gUnknown_85F4208
 gUnknown_85F4208: @ 0x085F4208
 	@ analyzed canonical ROM range 0x085F4208-0x085F4227
@@ -42,6 +60,9 @@ sAnalyzedData_085F4208: @ 0x085F4208
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x7FFF, 0x0000, 0x6B5A, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085F4228: pokenav_unk_4.s: sub_081CC170
+	.globl gPokenavUnk4Data_085F4228
+gPokenavUnk4Data_085F4228:
 	.globl gUnknown_85F4228
 gUnknown_85F4228: @ 0x085F4228
 	@ analyzed canonical ROM range 0x085F4228-0x085F4247
@@ -49,6 +70,9 @@ sAnalyzedData_085F4228: @ 0x085F4228
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0x00, 0x00, 0x1F, 0x02, 0x1F, 0x21, 0x70, 0x7A, 0x42, 0x7C, 0x32, 0x4A, 0xFF, 0x7F
 	.byte 0x00, 0x03, 0x16, 0x36, 0x1B, 0x70, 0xF3, 0x7F, 0x9C, 0x73, 0x8E, 0x14, 0x08, 0x26, 0x19, 0x2A
+	@ pret/pokeemerald-jp direct xref for 0x085F4248: pokenav_unk_4.s: sub_081CC170
+	.globl gPokenavUnk4Data_085F4248
+gPokenavUnk4Data_085F4248:
 	.globl gUnknown_85F4248
 gUnknown_85F4248: @ 0x085F4248
 	@ confirmed GBA LZ77 stream: compressed=0x1F3, decompressed=0x800
@@ -228,6 +252,9 @@ sAnalyzedData_085F4248: @ 0x085F4248
 	.byte 0x06, 0x70, 0x1F, 0x40, 0x03, 0x10, 0x50, 0x90, 0x69, 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01
 	.byte 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xE0, 0xF0, 0x01, 0xF0, 0x01, 0xD0
 	.byte 0x01, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085F4CFC: pokenav_unk_4.s: sub_081CBE48
+	.globl gPokenavUnk4Data_085F4CFC
+gPokenavUnk4Data_085F4CFC:
 	.globl gUnknown_85F4CFC
 gUnknown_85F4CFC: @ 0x085F4CFC
 	@ analyzed canonical ROM range 0x085F4CFC-0x085F4D07
@@ -241,6 +268,9 @@ gUnknown_85F4D08: @ 0x085F4D08
 	.4byte sub_081CBFCC
 	.4byte sub_081CC02C
 	.4byte sub_081CC0B0
+	@ pret/pokeemerald-jp direct xref for 0x085F4D1C: pokenav_unk_4.s: sub_081CC114
+	.globl gPokenavUnk4Data_085F4D1C
+gPokenavUnk4Data_085F4D1C:
 	.globl gUnknown_85F4D1C
 gUnknown_85F4D1C: @ 0x085F4D1C
 	@ analyzed canonical ROM range 0x085F4D1C-0x085F4D23
@@ -254,12 +284,18 @@ gUnknown_85F4D24: @ 0x085F4D24
 	.4byte TYPE_WATER
 	.4byte 0
 	.4byte 0
+	@ pret/pokeemerald-jp direct xref for 0x085F4D34: pokenav_unk_4.s: sub_081CC170
+	.globl gPokenavUnk4Data_085F4D34
+gPokenavUnk4Data_085F4D34:
 	.globl gUnknown_85F4D34
 gUnknown_85F4D34: @ 0x085F4D34
 	@ analyzed canonical ROM range 0x085F4D34-0x085F4D3B
 sAnalyzedData_085F4D34: @ 0x085F4D34
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1101, 0x0C04, 0x010D, 0x004C
+	@ pret/pokeemerald-jp direct xref for 0x085F4D3C: pokenav_unk_4.s: sub_081CC474, sub_081CC4B0
+	.globl gPokenavUnk4Data_085F4D3C
+gPokenavUnk4Data_085F4D3C:
 	.globl gUnknown_85F4D3C
 gUnknown_85F4D3C: @ 0x085F4D3C
 	@ analyzed canonical ROM range 0x085F4D3C-0x085F4DF3
@@ -277,11 +313,17 @@ sAnalyzedData_085F4D3C: @ 0x085F4D3C
 	.byte 0x0D, 0x00, 0x01, 0x00, 0x98, 0x49, 0x5F, 0x08, 0x0E, 0x00, 0x00, 0x00, 0x94, 0x48, 0x5F, 0x08
 	.byte 0x0F, 0x00, 0x00, 0x00, 0xD4, 0x48, 0x5F, 0x08, 0x0F, 0x00, 0x01, 0x00, 0x1C, 0x49, 0x5F, 0x08
 	.byte 0x00, 0x40, 0x00, 0x40, 0x00, 0x04, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085F4DF4: pokenav_unk_4.s: sub_081CC598
+	.globl gPokenavUnk4Data_085F4DF4
+gPokenavUnk4Data_085F4DF4:
 	.globl gUnknown_85F4DF4
 gUnknown_85F4DF4: @ 0x085F4DF4
 	@ analyzed canonical ROM range 0x085F4DF4-0x085F4E0B
 sSpriteTemplate_085F4DF4: @ 0x085F4DF4
 	rodata_sprite_template 0x0006, 0x000B, 0x085F4DEC, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_081CC634
+	@ pret/pokeemerald-jp direct xref for 0x085F4E0C: pokenav_unk_4.s: sub_081CD5F4
+	.globl gPokenavUnk4Data_085F4E0C
+gPokenavUnk4Data_085F4E0C:
 	.globl gUnknown_85F4E0C
 gUnknown_85F4E0C: @ 0x085F4E0C
 	@ analyzed canonical ROM range 0x085F4E0C-0x085F4E2B
@@ -289,6 +331,7 @@ sAnalyzedData_085F4E0C: @ 0x085F4E0C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x0C, 0x33, 0x8C, 0x39, 0xD7, 0x62, 0x77, 0x7B, 0xFE, 0x7F, 0x10, 0x4A, 0x7F, 0x32, 0x5F, 0x5B
 	.byte 0xDF, 0x1F, 0xFF, 0x5B, 0x8E, 0x3B, 0xFA, 0x5F, 0xBF, 0x6A, 0x7F, 0x7F, 0x70, 0x7E, 0xBB, 0x7F
+	@ pret/pokeemerald-jp direct xref for 0x085F4E2C: pokenav_unk_4.s: sub_081CD5F4; use_pokeblock.s: sub_08167734
 	.globl gUnknown_85F4E2C
 gUnknown_85F4E2C: @ 0x085F4E2C
 	@ analyzed canonical ROM range 0x085F4E2C-0x085F4E4B
@@ -296,6 +339,7 @@ sAnalyzedData_085F4E2C: @ 0x085F4E2C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x03E0, 0x03E0, 0x03E0, 0x03E0, 0x03E0, 0x03E0, 0x03E0, 0x03E0
 	.2byte 0x03E0, 0x03E0, 0x03E0, 0x03E0, 0x03E0, 0x03E0, 0x03E0, 0x03E0
+	@ pret/pokeemerald-jp direct xref for 0x085F4E4C: pokenav_unk_4.s: sub_081CD5F4; use_pokeblock.s: sub_08167734
 	.globl gUnknown_85F4E4C
 gUnknown_85F4E4C: @ 0x085F4E4C
 	@ analyzed canonical ROM range 0x085F4E4C-0x085F4E6B
@@ -303,6 +347,9 @@ sAnalyzedData_085F4E4C: @ 0x085F4E4C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0xFF, 0x7F, 0x8C, 0x31, 0x5A, 0x67, 0x28, 0x7F, 0x20, 0x5E, 0x7F, 0x4A, 0x77, 0x29
 	.byte 0x8C, 0x39, 0xFE, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085F4E6C: pokenav_unk_4.s: sub_081CD5F4
+	.globl gPokenavUnk4Data_085F4E6C
+gPokenavUnk4Data_085F4E6C:
 	.globl gUnknown_85F4E6C
 gUnknown_85F4E6C: @ 0x085F4E6C
 	@ confirmed GBA LZ77 stream: compressed=0x794, decompressed=0xF20
@@ -313,6 +360,9 @@ sAnalyzedGfx_085F4E6C: @ 0x085F4E6C
 	.if (. - sAnalyzedGfx_085F4E6C) != 0x794
 	.error "gUnknown_85F4E6C compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085F5600: pokenav_unk_4.s: sub_081CD5F4
+	.globl gPokenavUnk4Data_085F5600
+gPokenavUnk4Data_085F5600:
 	.globl gUnknown_85F5600
 gUnknown_85F5600: @ 0x085F5600
 	@ confirmed GBA LZ77 stream: compressed=0x1E9, decompressed=0x800
@@ -323,6 +373,9 @@ sAnalyzedGfx_085F5600: @ 0x085F5600
 	.if (. - sAnalyzedGfx_085F5600) != 0x1EC
 	.error "gUnknown_85F5600 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085F57EC: pokenav_unk_4.s: sub_081CD5F4
+	.globl gPokenavUnk4Data_085F57EC
+gPokenavUnk4Data_085F57EC:
 	.globl gUnknown_85F57EC
 gUnknown_85F57EC: @ 0x085F57EC
 	@ confirmed GBA LZ77 stream: compressed=0x11, decompressed=0x40
@@ -333,6 +386,9 @@ sAnalyzedGfx_085F57EC: @ 0x085F57EC
 	.if (. - sAnalyzedGfx_085F57EC) != 0x14
 	.error "gUnknown_85F57EC compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085F5800: pokenav_unk_4.s: sub_081CD5F4
+	.globl gPokenavUnk4Data_085F5800
+gPokenavUnk4Data_085F5800:
 	.globl gUnknown_85F5800
 gUnknown_85F5800: @ 0x085F5800
 	@ confirmed GBA LZ77 stream: compressed=0xF9, decompressed=0x800
@@ -343,6 +399,9 @@ sAnalyzedGfx_085F5800: @ 0x085F5800
 	.if (. - sAnalyzedGfx_085F5800) != 0xFC
 	.error "gUnknown_85F5800 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085F58FC: pokenav_unk_4.s: sub_081CD5F4
+	.globl gPokenavUnk4Data_085F58FC
+gPokenavUnk4Data_085F58FC:
 	.globl gUnknown_85F58FC
 gUnknown_85F58FC: @ 0x085F58FC
 	@ analyzed canonical ROM range 0x085F58FC-0x085F5943
@@ -353,6 +412,9 @@ sAnalyzedData_085F58FC: @ 0x085F58FC
 	.2byte 0x1005, 0x1075, 0x1074, 0x1005, 0x1005, 0x1005, 0x1005, 0x1005
 	.2byte 0x1005, 0x1005, 0x1075, 0x1076, 0x1077, 0x1077, 0x1077, 0x1077
 	.2byte 0x1077, 0x1077, 0x1077, 0x1078
+	@ pret/pokeemerald-jp direct xref for 0x085F5944: pokenav_unk_4.s: sub_081CE118
+	.globl gPokenavUnk4Data_085F5944
+gPokenavUnk4Data_085F5944:
 	.globl gUnknown_85F5944
 gUnknown_85F5944: @ 0x085F5944
 	@ analyzed canonical ROM range 0x085F5944-0x085F5963
@@ -360,30 +422,45 @@ sAnalyzedData_085F5944: @ 0x085F5944
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x77, 0x7B, 0x14, 0x73, 0x35, 0x73, 0xFF, 0x7F, 0xBC, 0x7B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085F5964: pokenav_unk_4.s: sub_081CD5F4
+	.globl gPokenavUnk4Data_085F5964
+gPokenavUnk4Data_085F5964:
 	.globl gUnknown_85F5964
 gUnknown_85F5964: @ 0x085F5964
 	@ analyzed canonical ROM range 0x085F5964-0x085F596F
 sAnalyzedData_085F5964: @ 0x085F5964
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x11F5, 0x0000, 0x21DE, 0x0000, 0x31EB, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085F5970: pokenav_unk_4.s: sub_081CD5F4
+	.globl gPokenavUnk4Data_085F5970
+gPokenavUnk4Data_085F5970:
 	.globl gUnknown_85F5970
 gUnknown_85F5970: @ 0x085F5970
 	@ analyzed canonical ROM range 0x085F5970-0x085F5977
 sAnalyzedData_085F5970: @ 0x085F5970
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0D01, 0x0C01, 0x0F04, 0x0002
+	@ pret/pokeemerald-jp direct xref for 0x085F5978: pokenav_unk_4.s: sub_081CD5F4
+	.globl gPokenavUnk4Data_085F5978
+gPokenavUnk4Data_085F5978:
 	.globl gUnknown_85F5978
 gUnknown_85F5978: @ 0x085F5978
 	@ analyzed canonical ROM range 0x085F5978-0x085F597F
 sAnalyzedData_085F5978: @ 0x085F5978
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0101, 0x0706, 0x0F02, 0x0032
+	@ pret/pokeemerald-jp direct xref for 0x085F5980: pokenav_unk_4.s: sub_081CD5F4
+	.globl gPokenavUnk4Data_085F5980
+gPokenavUnk4Data_085F5980:
 	.globl gUnknown_85F5980
 gUnknown_85F5980: @ 0x085F5980
 	@ analyzed canonical ROM range 0x085F5980-0x085F5987
 sAnalyzedData_085F5980: @ 0x085F5980
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0101, 0x051C, 0x0F02, 0x0040
+	@ pret/pokeemerald-jp direct xref for 0x085F5988: pokenav_unk_4.s: sub_081CD5F4
+	.globl gPokenavUnk4Data_085F5988
+gPokenavUnk4Data_085F5988:
 	.globl gUnknown_85F5988
 gUnknown_85F5988: @ 0x085F5988
 	@ analyzed canonical ROM range 0x085F5988-0x085F598F
@@ -413,6 +490,9 @@ gUnknown_85F59C0: @ 0x085F59C0
 	.4byte sub_081CE8F8
 	.4byte sub_081CE90C
 	.4byte sub_081CE9AC
+	@ pret/pokeemerald-jp direct xref for 0x085F59D0: pokenav_unk_4.s: sub_081CEB4C
+	.globl gPokenavUnk4Data_085F59D0
+gPokenavUnk4Data_085F59D0:
 	.globl gUnknown_85F59D0
 gUnknown_85F59D0: @ 0x085F59D0
 	@ analyzed canonical ROM range 0x085F59D0-0x085F59EF
@@ -420,6 +500,9 @@ sAnalyzedData_085F59D0: @ 0x085F59D0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x03, 0xAC, 0x72, 0xFF, 0x7F, 0xCD, 0x3D, 0x00, 0x00, 0xEB, 0x51, 0x06, 0x25, 0x78, 0x7F
 	.byte 0x72, 0x66, 0x93, 0x66, 0x18, 0x63, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085F59F0: pokenav_unk_4.s: sub_081CEB4C
+	.globl gPokenavUnk4Data_085F59F0
+gPokenavUnk4Data_085F59F0:
 	.globl gUnknown_85F59F0
 gUnknown_85F59F0: @ 0x085F59F0
 	@ confirmed GBA LZ77 stream: compressed=0xC6, decompressed=0x200
@@ -430,6 +513,9 @@ sAnalyzedGfx_085F59F0: @ 0x085F59F0
 	.if (. - sAnalyzedGfx_085F59F0) != 0xC8
 	.error "gUnknown_85F59F0 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085F5AB8: pokenav_unk_4.s: sub_081CEB4C
+	.globl gPokenavUnk4Data_085F5AB8
+gPokenavUnk4Data_085F5AB8:
 	.globl gUnknown_85F5AB8
 gUnknown_85F5AB8: @ 0x085F5AB8
 	@ confirmed GBA LZ77 stream: compressed=0xC2, decompressed=0x500
@@ -440,6 +526,9 @@ sAnalyzedGfx_085F5AB8: @ 0x085F5AB8
 	.if (. - sAnalyzedGfx_085F5AB8) != 0xC4
 	.error "gUnknown_85F5AB8 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085F5B7C: pokenav_unk_4.s: sub_081CEB4C
+	.globl gPokenavUnk4Data_085F5B7C
+gPokenavUnk4Data_085F5B7C:
 	.globl gUnknown_85F5B7C
 gUnknown_85F5B7C: @ 0x085F5B7C
 	@ analyzed canonical ROM range 0x085F5B7C-0x085F5B9B
@@ -447,12 +536,18 @@ sAnalyzedData_085F5B7C: @ 0x085F5B7C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x03, 0xAC, 0x72, 0xFF, 0x7F, 0xCD, 0x3D, 0x00, 0x00, 0x65, 0x7F, 0x60, 0x55, 0x9F, 0x66
 	.byte 0x72, 0x10, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085F5B9C: pokenav_unk_4.s: sub_081CEB4C
+	.globl gPokenavUnk4Data_085F5B9C
+gPokenavUnk4Data_085F5B9C:
 	.globl gUnknown_85F5B9C
 gUnknown_85F5B9C: @ 0x085F5B9C
 	@ analyzed canonical ROM range 0x085F5B9C-0x085F5B9F
 sAnalyzedData_085F5B9C: @ 0x085F5B9C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x65, 0x20, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085F5BA0: pokenav_unk_4.s: sub_081CEF4C
+	.globl gPokenavUnk4Data_085F5BA0
+gPokenavUnk4Data_085F5BA0:
 	.globl gUnknown_85F5BA0
 gUnknown_85F5BA0: @ 0x085F5BA0
 	@ analyzed canonical ROM range 0x085F5BA0-0x085F5BA3
@@ -468,6 +563,9 @@ gUnknown_85F5BA4: @ 0x085F5BA4
 	.4byte sub_081CEDE4
 	.4byte sub_081CEE4C
 	.4byte sub_081CEE8C
+	@ pret/pokeemerald-jp direct xref for 0x085F5BC0: pokenav_unk_4.s: sub_081CEEBC
+	.globl gPokenavUnk4Data_085F5BC0
+gPokenavUnk4Data_085F5BC0:
 	.globl gUnknown_85F5BC0
 gUnknown_85F5BC0: @ 0x085F5BC0
 	@ analyzed canonical ROM range 0x085F5BC0-0x085F5BC7
@@ -479,6 +577,9 @@ gUnknown_85F5BC8: @ 0x085F5BC8
 	.4byte sub_081CF260
 	.4byte sub_081CF300
 	.4byte sub_081CF314
+	@ pret/pokeemerald-jp direct xref for 0x085F5BD4: pokenav_unk_4.s: sub_081CF58C
+	.globl gPokenavUnk4Data_085F5BD4
+gPokenavUnk4Data_085F5BD4:
 	.globl gUnknown_85F5BD4
 gUnknown_85F5BD4: @ 0x085F5BD4
 	@ analyzed canonical ROM range 0x085F5BD4-0x085F5BF3
@@ -486,6 +587,9 @@ sAnalyzedData_085F5BD4: @ 0x085F5BD4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0300, 0x367F, 0x7FFF, 0x3DCD, 0x0000, 0x21B7, 0x2506, 0x4F7F
 	.2byte 0x2A16, 0x3637, 0x6318, 0x7FFF, 0x0000, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085F5BF4: pokenav_unk_4.s: sub_081CF58C
+	.globl gPokenavUnk4Data_085F5BF4
+gPokenavUnk4Data_085F5BF4:
 	.globl gUnknown_85F5BF4
 gUnknown_85F5BF4: @ 0x085F5BF4
 	@ confirmed GBA LZ77 stream: compressed=0xC6, decompressed=0x200
@@ -496,6 +600,9 @@ sAnalyzedGfx_085F5BF4: @ 0x085F5BF4
 	.if (. - sAnalyzedGfx_085F5BF4) != 0xC8
 	.error "gUnknown_85F5BF4 compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085F5CBC: pokenav_unk_4.s: sub_081CF58C
+	.globl gPokenavUnk4Data_085F5CBC
+gPokenavUnk4Data_085F5CBC:
 	.globl gUnknown_85F5CBC
 gUnknown_85F5CBC: @ 0x085F5CBC
 	@ confirmed GBA LZ77 stream: compressed=0xC2, decompressed=0x500
@@ -506,6 +613,9 @@ sAnalyzedGfx_085F5CBC: @ 0x085F5CBC
 	.if (. - sAnalyzedGfx_085F5CBC) != 0xC4
 	.error "gUnknown_85F5CBC compressed size mismatch"
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085F5D80: pokenav_unk_4.s: sub_081CF58C
+	.globl gPokenavUnk4Data_085F5D80
+gPokenavUnk4Data_085F5D80:
 	.globl gUnknown_85F5D80
 gUnknown_85F5D80: @ 0x085F5D80
 	@ analyzed canonical ROM range 0x085F5D80-0x085F5D9F
@@ -513,12 +623,18 @@ sAnalyzedData_085F5D80: @ 0x085F5D80
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0300, 0x367F, 0x7FFF, 0x3DCD, 0x0000, 0x7F65, 0x5560, 0x669F
 	.2byte 0x1072, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085F5DA0: pokenav_unk_4.s: sub_081CF58C
+	.globl gPokenavUnk4Data_085F5DA0
+gPokenavUnk4Data_085F5DA0:
 	.globl gUnknown_85F5DA0
 gUnknown_85F5DA0: @ 0x085F5DA0
 	@ analyzed canonical ROM range 0x085F5DA0-0x085F5DA3
 sAnalyzedData_085F5DA0: @ 0x085F5DA0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x65, 0x20, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085F5DA4: pokenav_unk_4.s: sub_081CF9A4
+	.globl gPokenavUnk4Data_085F5DA4
+gPokenavUnk4Data_085F5DA4:
 	.globl gUnknown_85F5DA4
 gUnknown_85F5DA4: @ 0x085F5DA4
 	@ analyzed canonical ROM range 0x085F5DA4-0x085F5DA7
@@ -534,18 +650,27 @@ gUnknown_85F5DA8: @ 0x085F5DA8
 	.4byte sub_081CF808
 	.4byte sub_081CF870
 	.4byte sub_081CF8B0
+	@ pret/pokeemerald-jp direct xref for 0x085F5DC4: pokenav_unk_4.s: sub_081CF8E0
+	.globl gPokenavUnk4Data_085F5DC4
+gPokenavUnk4Data_085F5DC4:
 	.globl gUnknown_85F5DC4
 gUnknown_85F5DC4: @ 0x085F5DC4
 	@ analyzed canonical ROM range 0x085F5DC4-0x085F5DCB
 sAnalyzedData_085F5DC4: @ 0x085F5DC4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0101, 0x0706, 0x0102, 0x0014
+	@ pret/pokeemerald-jp direct xref for 0x085F5DCC: pokenav_unk_4.s: sub_081CF8E0
+	.globl gPokenavUnk4Data_085F5DCC
+gPokenavUnk4Data_085F5DCC:
 	.globl gUnknown_85F5DCC
 gUnknown_85F5DCC: @ 0x085F5DCC
 	@ analyzed canonical ROM range 0x085F5DCC-0x085F5DD2
 sAnalyzedData_085F5DCC: @ 0x085F5DCC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0x00, 0xBA, 0xF7, 0x00, 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x085F5DD3: pokenav_unk_4.s: sub_081CF9F8
+	.globl gPokenavUnk4Data_085F5DD3
+gPokenavUnk4Data_085F5DD3:
 	.globl gUnknown_85F5DD3
 gUnknown_85F5DD3: @ 0x085F5DD3
 	@ analyzed canonical ROM range 0x085F5DD3-0x085F5DEA
@@ -553,6 +678,9 @@ sAnalyzedData_085F5DD3: @ 0x085F5DD3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF7, 0x00, 0x00, 0xFC, 0x04, 0x05, 0x01, 0x06, 0xB5, 0xFC, 0x04, 0x02, 0x01, 0x03, 0xBA, 0xF9
 	.byte 0x05, 0xF7, 0x01, 0x00, 0xF7, 0x02, 0x0A, 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x085F5DEB: pokenav_unk_4.s: sub_081CF9F8
+	.globl gPokenavUnk4Data_085F5DEB
+gPokenavUnk4Data_085F5DEB:
 	.globl gUnknown_85F5DEB
 gUnknown_85F5DEB: @ 0x085F5DEB
 	@ analyzed canonical ROM range 0x085F5DEB-0x085F5E02
@@ -560,6 +688,9 @@ sAnalyzedData_085F5DEB: @ 0x085F5DEB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF7, 0x00, 0x00, 0xFC, 0x04, 0x07, 0x01, 0x08, 0xB6, 0xFC, 0x04, 0x02, 0x01, 0x03, 0xBA, 0xF9
 	.byte 0x05, 0xF7, 0x01, 0x00, 0xF7, 0x02, 0x0A, 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x085F5E03: pokenav_unk_4.s: sub_081CF9F8
+	.globl gPokenavUnk4Data_085F5E03
+gPokenavUnk4Data_085F5E03:
 	.globl gUnknown_85F5E03
 gUnknown_85F5E03: @ 0x085F5E03
 	@ analyzed canonical ROM range 0x085F5E03-0x085F5E13
@@ -567,6 +698,9 @@ sAnalyzedData_085F5E03: @ 0x085F5E03
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF7, 0x00, 0x00, 0x00, 0xBA, 0xF9, 0x05, 0xF7, 0x01, 0x00, 0xF7, 0x02, 0x0A, 0xFF, 0x00, 0x00
 	.byte 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085F5E14: pokenav_unk_10.s: sub_081CFEC4
+	.globl gPokenavUnk10Data_085F5E14
+gPokenavUnk10Data_085F5E14:
 	.globl gUnknown_85F5E14
 gUnknown_85F5E14: @ 0x085F5E14
 	@ analyzed canonical ROM range 0x085F5E14-0x085F5E57

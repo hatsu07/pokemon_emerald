@@ -8,6 +8,9 @@ gText_Rom_566D8F: @ 0x08566D8F
 	.if (. - gText_Rom_566D8F) < 0x4
 	.space 0x4 - (. - gText_Rom_566D8F)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08566D93: record_mixing.s: sub_080E8AA0
+	.globl gRecordMixingData_08566D93
+gRecordMixingData_08566D93:
 	.globl gUnknown_8566D93
 gUnknown_8566D93: @ 0x08566D93
 	@ analyzed canonical ROM range 0x08566D93-0x08566D98
@@ -23,6 +26,9 @@ gText_Rom_566D99: @ 0x08566D99
 	.if (. - gText_Rom_566D99) < 0x4
 	.space 0x4 - (. - gText_Rom_566D99)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08566D9D: record_mixing.s: sub_080E8AA0
+	.globl gRecordMixingData_08566D9D
+gRecordMixingData_08566D9D:
 	.globl gUnknown_8566D9D
 gUnknown_8566D9D: @ 0x08566D9D
 	@ analyzed canonical ROM range 0x08566D9D-0x08566DA2
@@ -38,6 +44,9 @@ gText_Rom_566DA3: @ 0x08566DA3
 	.if (. - gText_Rom_566DA3) < 0x4
 	.space 0x4 - (. - gText_Rom_566DA3)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08566DA7: record_mixing.s: sub_080E8AA0
+	.globl gRecordMixingData_08566DA7
+gRecordMixingData_08566DA7:
 	.globl gUnknown_8566DA7
 gUnknown_8566DA7: @ 0x08566DA7
 	@ analyzed canonical ROM range 0x08566DA7-0x08566DAC
@@ -53,6 +62,9 @@ gText_Rom_566DAD: @ 0x08566DAD
 	.if (. - gText_Rom_566DAD) < 0x4
 	.space 0x4 - (. - gText_Rom_566DAD)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08566DB1: record_mixing.s: sub_080E8AA0
+	.globl gRecordMixingData_08566DB1
+gRecordMixingData_08566DB1:
 	.globl gUnknown_8566DB1
 gUnknown_8566DB1: @ 0x08566DB1
 	@ analyzed canonical ROM range 0x08566DB1-0x08566DB6
@@ -76,6 +88,9 @@ gUnknown_8566DBB: @ 0x08566DBB
 gUnknown_8566DC5: @ 0x08566DC5
 	@ Decoded text from ROM range: offset=0x566DC5, size=0xA
 	.string "PROGRESS…$"
+	@ pret/pokeemerald-jp direct xref for 0x08566DCF: record_mixing.s: sub_080E8AA0
+	.globl gRecordMixingData_08566DCF
+gRecordMixingData_08566DCF:
 	.globl gUnknown_8566DCF
 gUnknown_8566DCF: @ 0x08566DCF
 	@ analyzed canonical ROM range 0x08566DCF-0x08566DD4
@@ -99,6 +114,9 @@ gUnknown_8566DD9: @ 0x08566DD9
 gUnknown_8566DE3: @ 0x08566DE3
 	@ Decoded text from ROM range: offset=0x566DE3, size=0x9
 	.string "さいせいちゆう…$"
+	@ pret/pokeemerald-jp direct xref for 0x08566DEC: record_mixing.s: sub_080E8AA0
+	.globl gRecordMixingData_08566DEC
+gRecordMixingData_08566DEC:
 	.globl gUnknown_8566DEC
 gUnknown_8566DEC: @ 0x08566DEC
 	@ analyzed canonical ROM range 0x08566DEC-0x08566DF0
@@ -114,6 +132,9 @@ gText_Rom_566DF1: @ 0x08566DF1
 	.if (. - gText_Rom_566DF1) < 0x4
 	.space 0x4 - (. - gText_Rom_566DF1)
 	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08566DF5: record_mixing.s: sub_080E8AA0
+	.globl gRecordMixingData_08566DF5
+gRecordMixingData_08566DF5:
 	.globl gUnknown_8566DF5
 gUnknown_8566DF5: @ 0x08566DF5
 	@ analyzed canonical ROM range 0x08566DF5-0x08566DF9
