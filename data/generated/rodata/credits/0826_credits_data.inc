@@ -674,15 +674,15 @@ sAnalyzedData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0x8B4
 	.4byte gText_Rom_5C93C8 @ +0x8B8
 	.4byte 0 @ +0x8BC
-	.4byte 0x085CAE11 @ +0x8C0
+	.4byte gText_Rom_5CAE11 @ +0x8C0
 	.4byte 0 @ +0x8C4
-	.4byte 0x085CAE18 @ +0x8C8
+	.4byte gText_Rom_5CAE18 @ +0x8C8
 	.4byte 0 @ +0x8CC
 	.4byte gText_Rom_5C93C8 @ +0x8D0
 	.4byte 0 @ +0x8D4
 	.4byte gText_Rom_5CAAD8 @ +0x8D8
 	.4byte 0 @ +0x8DC
-	.4byte 0x085CAE20 @ +0x8E0
+	.4byte gText_Rom_5CAE20 @ +0x8E0
 	.4byte 0 @ +0x8E4
 	.4byte 0x085CAE9D @ +0x8E8
 	.4byte 0 @ +0x8EC
@@ -1330,4 +1330,3 @@ gUnknown_8565858: @ 0x08565858
 	.4byte gText_Rom_243E2A
 	.4byte gText_Rom_243E4C
 	.4byte gText_Rom_243E80
-

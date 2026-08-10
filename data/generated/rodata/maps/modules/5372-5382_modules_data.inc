@@ -9,8 +9,7 @@ gText_Rom_5CB025: @ 0x085CB025
 	.space 0x3 - (. - gText_Rom_5CB025)
 	.endif
 	@ analyzed canonical ROM range 0x085CB028-0x085CB029
-sAnalyzedData_085CB028: @ 0x085CB028
-	@ structured u8 payload; no safe higher-level semantic type was provable
+gText_CyclingRoadTimesSuffix: @ 0x085CB028
 	.byte 0xB8, 0xFF
 	.globl gUnknown_85CB02A
 gUnknown_85CB02A: @ 0x085CB02A
@@ -64,4 +63,3 @@ gText_Rom_5CB03C: @ 0x085CB03C
 	.if (. - gText_Rom_5CB03C) < 0x4
 	.space 0x4 - (. - gText_Rom_5CB03C)
 	.endif
-
