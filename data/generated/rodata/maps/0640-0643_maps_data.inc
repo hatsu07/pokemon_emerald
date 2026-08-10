@@ -4875,8 +4875,7 @@ gEventObjectMovementData_084E5B30:
 	.globl gUnknown_84E5B30
 gUnknown_84E5B30: @ 0x084E5B30
 	@ analyzed canonical ROM range 0x084E5B30-0x084E5B3F
-sAnalyzedData_084E5B30: @ 0x084E5B30
-	@ structured u16 table (semantic role inferred only to scalar width)
+sMovementDelayDurations_Wander: @ 0x084E5B30
 	.2byte 0x0020, 0x0040, 0x0060, 0x0080, 0x0020, 0x0040, 0x0080, 0x00C0
 	@ pret/pokeemerald-jp direct xref for 0x084E5B40: event_object_movement.s: MovementType_FaceDownAndLeft_Step2, MovementType_FaceDownAndRight_Step2, MovementType_FaceDownLeftAndRight_Step2, MovementType_FaceDownUpAndLeft_Step2, MovementType_FaceDownUpAndRight_Step2 (+3 more)
 	.globl gEventObjectMovementData_084E5B40
@@ -4884,8 +4883,7 @@ gEventObjectMovementData_084E5B40:
 	.globl gUnknown_84E5B40
 gUnknown_84E5B40: @ 0x084E5B40
 	@ analyzed canonical ROM range 0x084E5B40-0x084E5B47
-sAnalyzedData_084E5B40: @ 0x084E5B40
-	@ structured u16 table (semantic role inferred only to scalar width)
+sMovementDelayDurations_FaceDirectionPairs: @ 0x084E5B40
 	.2byte 0x0020, 0x0030, 0x0040, 0x0050
 	.globl gUnknown_84E5B48
 gUnknown_84E5B48: @ 0x084E5B48
@@ -4902,8 +4900,7 @@ gEventObjectMovementData_084E5B64:
 	.globl gUnknown_84E5B64
 gUnknown_84E5B64: @ 0x084E5B64
 	@ analyzed canonical ROM range 0x084E5B64-0x084E5B67
-sAnalyzedData_084E5B64: @ 0x084E5B64
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_DownUpLeftRight: @ 0x084E5B64
 	.byte 0x01, 0x02, 0x03, 0x04
 	.globl gUnknown_84E5B68
 gUnknown_84E5B68: @ 0x084E5B68
@@ -4940,8 +4937,7 @@ gEventObjectMovementData_084E5BC4:
 	.globl gUnknown_84E5BC4
 gUnknown_84E5BC4: @ 0x084E5BC4
 	@ analyzed canonical ROM range 0x084E5BC4-0x084E5BC7
-sAnalyzedData_084E5BC4: @ 0x084E5BC4
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_DownUp: @ 0x084E5BC4
 	.byte 0x01, 0x02, 0x00, 0x00
 	.globl gUnknown_84E5BC8
 gUnknown_84E5BC8: @ 0x084E5BC8
@@ -4958,8 +4954,7 @@ gEventObjectMovementData_084E5BE4:
 	.globl gUnknown_84E5BE4
 gUnknown_84E5BE4: @ 0x084E5BE4
 	@ analyzed canonical ROM range 0x084E5BE4-0x084E5BE7
-sAnalyzedData_084E5BE4: @ 0x084E5BE4
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_LeftRight: @ 0x084E5BE4
 	.byte 0x03, 0x04, 0x00, 0x00
 	.globl gUnknown_84E5BE8
 gUnknown_84E5BE8: @ 0x084E5BE8
@@ -5000,8 +4995,7 @@ gEventObjectMovementData_084E5C44:
 	.globl gUnknown_84E5C44
 gUnknown_84E5C44: @ 0x084E5C44
 	@ analyzed canonical ROM range 0x084E5C44-0x084E5C47
-sAnalyzedData_084E5C44: @ 0x084E5C44
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_UpLeft: @ 0x084E5C44
 	.byte 0x02, 0x03, 0x00, 0x00
 	.globl gUnknown_84E5C48
 gUnknown_84E5C48: @ 0x084E5C48
@@ -5016,8 +5010,7 @@ gEventObjectMovementData_084E5C5C:
 	.globl gUnknown_84E5C5C
 gUnknown_84E5C5C: @ 0x084E5C5C
 	@ analyzed canonical ROM range 0x084E5C5C-0x084E5C5F
-sAnalyzedData_084E5C5C: @ 0x084E5C5C
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_UpRight: @ 0x084E5C5C
 	.byte 0x02, 0x04, 0x00, 0x00
 	.globl gUnknown_84E5C60
 gUnknown_84E5C60: @ 0x084E5C60
@@ -5032,8 +5025,7 @@ gEventObjectMovementData_084E5C74:
 	.globl gUnknown_84E5C74
 gUnknown_84E5C74: @ 0x084E5C74
 	@ analyzed canonical ROM range 0x084E5C74-0x084E5C77
-sAnalyzedData_084E5C74: @ 0x084E5C74
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_DownLeft: @ 0x084E5C74
 	.byte 0x01, 0x03, 0x00, 0x00
 	.globl gUnknown_84E5C78
 gUnknown_84E5C78: @ 0x084E5C78
@@ -5048,8 +5040,7 @@ gEventObjectMovementData_084E5C8C:
 	.globl gUnknown_84E5C8C
 gUnknown_84E5C8C: @ 0x084E5C8C
 	@ analyzed canonical ROM range 0x084E5C8C-0x084E5C8F
-sAnalyzedData_084E5C8C: @ 0x084E5C8C
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_DownRight: @ 0x084E5C8C
 	.byte 0x01, 0x04, 0x00, 0x00
 	.globl gUnknown_84E5C90
 gUnknown_84E5C90: @ 0x084E5C90
@@ -5064,8 +5055,7 @@ gEventObjectMovementData_084E5CA4:
 	.globl gUnknown_84E5CA4
 gUnknown_84E5CA4: @ 0x084E5CA4
 	@ analyzed canonical ROM range 0x084E5CA4-0x084E5CA7
-sAnalyzedData_084E5CA4: @ 0x084E5CA4
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_DownUpLeft: @ 0x084E5CA4
 	.byte 0x02, 0x01, 0x03, 0x01
 	.globl gUnknown_84E5CA8
 gUnknown_84E5CA8: @ 0x084E5CA8
@@ -5080,8 +5070,7 @@ gEventObjectMovementData_084E5CBC:
 	.globl gUnknown_84E5CBC
 gUnknown_84E5CBC: @ 0x084E5CBC
 	@ analyzed canonical ROM range 0x084E5CBC-0x084E5CBF
-sAnalyzedData_084E5CBC: @ 0x084E5CBC
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_DownUpRight: @ 0x084E5CBC
 	.byte 0x01, 0x02, 0x04, 0x01
 	.globl gUnknown_84E5CC0
 gUnknown_84E5CC0: @ 0x084E5CC0
@@ -5096,8 +5085,7 @@ gEventObjectMovementData_084E5CD4:
 	.globl gUnknown_84E5CD4
 gUnknown_84E5CD4: @ 0x084E5CD4
 	@ analyzed canonical ROM range 0x084E5CD4-0x084E5CD7
-sAnalyzedData_084E5CD4: @ 0x084E5CD4
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_UpLeftRight: @ 0x084E5CD4
 	.byte 0x02, 0x03, 0x04, 0x02
 	.globl gUnknown_84E5CD8
 gUnknown_84E5CD8: @ 0x084E5CD8
@@ -5112,8 +5100,7 @@ gEventObjectMovementData_084E5CEC:
 	.globl gUnknown_84E5CEC
 gUnknown_84E5CEC: @ 0x084E5CEC
 	@ analyzed canonical ROM range 0x084E5CEC-0x084E5CEF
-sAnalyzedData_084E5CEC: @ 0x084E5CEC
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_DownLeftRight: @ 0x084E5CEC
 	.byte 0x03, 0x04, 0x01, 0x01
 	.globl gUnknown_84E5CF0
 gUnknown_84E5CF0: @ 0x084E5CF0
@@ -5127,9 +5114,8 @@ gEventObjectMovementData_084E5D00:
 	.globl gUnknown_84E5D00
 gUnknown_84E5D00: @ 0x084E5D00
 	@ analyzed canonical ROM range 0x084E5D00-0x084E5D07
-sAnalyzedData_084E5D00: @ 0x084E5D00
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0401, 0x0103, 0x0002, 0x0000
+sMovementDirections_RotateCounterclockwise: @ 0x084E5D00
+	.byte 0x01, 0x04, 0x03, 0x01, 0x02, 0x00, 0x00, 0x00
 	.globl gUnknown_84E5D08
 gUnknown_84E5D08: @ 0x084E5D08
 	.4byte MovementType_RotateClockwise_Step0
@@ -5142,9 +5128,8 @@ gEventObjectMovementData_084E5D18:
 	.globl gUnknown_84E5D18
 gUnknown_84E5D18: @ 0x084E5D18
 	@ analyzed canonical ROM range 0x084E5D18-0x084E5D1F
-sAnalyzedData_084E5D18: @ 0x084E5D18
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0301, 0x0204, 0x0001, 0x0000
+sMovementDirections_RotateClockwise: @ 0x084E5D18
+	.byte 0x01, 0x03, 0x04, 0x02, 0x01, 0x00, 0x00, 0x00
 	.globl gUnknown_84E5D20
 gUnknown_84E5D20: @ 0x084E5D20
 	.4byte MovementType_WalkBackAndForth_Step0
@@ -5162,8 +5147,7 @@ gEventObjectMovementData_084E5D3C:
 	.globl gUnknown_84E5D3C
 gUnknown_84E5D3C: @ 0x084E5D3C
 	@ analyzed canonical ROM range 0x084E5D3C-0x084E5D3F
-sAnalyzedData_084E5D3C: @ 0x084E5D3C
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceUpRightLeftDown: @ 0x084E5D3C
 	.byte 0x02, 0x04, 0x03, 0x01
 	.globl gUnknown_84E5D40
 gUnknown_84E5D40: @ 0x084E5D40
@@ -5176,8 +5160,7 @@ gEventObjectMovementData_084E5D4C:
 	.globl gUnknown_84E5D4C
 gUnknown_84E5D4C: @ 0x084E5D4C
 	@ analyzed canonical ROM range 0x084E5D4C-0x084E5D4F
-sAnalyzedData_084E5D4C: @ 0x084E5D4C
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceRightLeftDownUp: @ 0x084E5D4C
 	.byte 0x04, 0x03, 0x01, 0x02
 	.globl gUnknown_84E5D50
 gUnknown_84E5D50: @ 0x084E5D50
@@ -5190,8 +5173,7 @@ gEventObjectMovementData_084E5D5C:
 	.globl gUnknown_84E5D5C
 gUnknown_84E5D5C: @ 0x084E5D5C
 	@ analyzed canonical ROM range 0x084E5D5C-0x084E5D5F
-sAnalyzedData_084E5D5C: @ 0x084E5D5C
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceDownUpRightLeft: @ 0x084E5D5C
 	.byte 0x01, 0x02, 0x04, 0x03
 	.globl gUnknown_84E5D60
 gUnknown_84E5D60: @ 0x084E5D60
@@ -5204,8 +5186,7 @@ gEventObjectMovementData_084E5D6C:
 	.globl gUnknown_84E5D6C
 gUnknown_84E5D6C: @ 0x084E5D6C
 	@ analyzed canonical ROM range 0x084E5D6C-0x084E5D6F
-sAnalyzedData_084E5D6C: @ 0x084E5D6C
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceLeftDownUpRight: @ 0x084E5D6C
 	.byte 0x03, 0x01, 0x02, 0x04
 	.globl gUnknown_84E5D70
 gUnknown_84E5D70: @ 0x084E5D70
@@ -5218,8 +5199,7 @@ gEventObjectMovementData_084E5D7C:
 	.globl gUnknown_84E5D7C
 gUnknown_84E5D7C: @ 0x084E5D7C
 	@ analyzed canonical ROM range 0x084E5D7C-0x084E5D7F
-sAnalyzedData_084E5D7C: @ 0x084E5D7C
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceUpLeftRightDown: @ 0x084E5D7C
 	.byte 0x02, 0x03, 0x04, 0x01
 	.globl gUnknown_84E5D80
 gUnknown_84E5D80: @ 0x084E5D80
@@ -5232,8 +5212,7 @@ gEventObjectMovementData_084E5D8C:
 	.globl gUnknown_84E5D8C
 gUnknown_84E5D8C: @ 0x084E5D8C
 	@ analyzed canonical ROM range 0x084E5D8C-0x084E5D8F
-sAnalyzedData_084E5D8C: @ 0x084E5D8C
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceLeftRightDownUp: @ 0x084E5D8C
 	.byte 0x03, 0x04, 0x01, 0x02
 	.globl gUnknown_84E5D90
 gUnknown_84E5D90: @ 0x084E5D90
@@ -5251,8 +5230,7 @@ gEventObjectMovementData_084E5DA8:
 	.globl gUnknown_84E5DA8
 gUnknown_84E5DA8: @ 0x084E5DA8
 	@ analyzed canonical ROM range 0x084E5DA8-0x084E5DAB
-sAnalyzedData_084E5DA8: @ 0x084E5DA8
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceRightDownUpLeft: @ 0x084E5DA8
 	.byte 0x04, 0x01, 0x02, 0x03
 	.globl gUnknown_84E5DAC
 gUnknown_84E5DAC: @ 0x084E5DAC
@@ -5265,8 +5243,7 @@ gEventObjectMovementData_084E5DB8:
 	.globl gUnknown_84E5DB8
 gUnknown_84E5DB8: @ 0x084E5DB8
 	@ analyzed canonical ROM range 0x084E5DB8-0x084E5DBB
-sAnalyzedData_084E5DB8: @ 0x084E5DB8
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceLeftUpDownRight: @ 0x084E5DB8
 	.byte 0x03, 0x02, 0x01, 0x04
 	.globl gUnknown_84E5DBC
 gUnknown_84E5DBC: @ 0x084E5DBC
@@ -5279,8 +5256,7 @@ gEventObjectMovementData_084E5DC8:
 	.globl gUnknown_84E5DC8
 gUnknown_84E5DC8: @ 0x084E5DC8
 	@ analyzed canonical ROM range 0x084E5DC8-0x084E5DCB
-sAnalyzedData_084E5DC8: @ 0x084E5DC8
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceUpDownRightLeft: @ 0x084E5DC8
 	.byte 0x02, 0x01, 0x04, 0x03
 	.globl gUnknown_84E5DCC
 gUnknown_84E5DCC: @ 0x084E5DCC
@@ -5293,8 +5269,7 @@ gEventObjectMovementData_084E5DD8:
 	.globl gUnknown_84E5DD8
 gUnknown_84E5DD8: @ 0x084E5DD8
 	@ analyzed canonical ROM range 0x084E5DD8-0x084E5DDB
-sAnalyzedData_084E5DD8: @ 0x084E5DD8
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceRightLeftUpDown: @ 0x084E5DD8
 	.byte 0x04, 0x03, 0x02, 0x01
 	.globl gUnknown_84E5DDC
 gUnknown_84E5DDC: @ 0x084E5DDC
@@ -5307,8 +5282,7 @@ gEventObjectMovementData_084E5DE8:
 	.globl gUnknown_84E5DE8
 gUnknown_84E5DE8: @ 0x084E5DE8
 	@ analyzed canonical ROM range 0x084E5DE8-0x084E5DEB
-sAnalyzedData_084E5DE8: @ 0x084E5DE8
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceDownRightLeftUp: @ 0x084E5DE8
 	.byte 0x01, 0x04, 0x03, 0x02
 	.globl gUnknown_84E5DEC
 gUnknown_84E5DEC: @ 0x084E5DEC
@@ -5321,8 +5295,7 @@ gEventObjectMovementData_084E5DF8:
 	.globl gUnknown_84E5DF8
 gUnknown_84E5DF8: @ 0x084E5DF8
 	@ analyzed canonical ROM range 0x084E5DF8-0x084E5DFB
-sAnalyzedData_084E5DF8: @ 0x084E5DF8
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceRightUpDownLeft: @ 0x084E5DF8
 	.byte 0x04, 0x02, 0x01, 0x03
 	.globl gUnknown_84E5DFC
 gUnknown_84E5DFC: @ 0x084E5DFC
@@ -5335,8 +5308,7 @@ gEventObjectMovementData_084E5E08:
 	.globl gUnknown_84E5E08
 gUnknown_84E5E08: @ 0x084E5E08
 	@ analyzed canonical ROM range 0x084E5E08-0x084E5E0B
-sAnalyzedData_084E5E08: @ 0x084E5E08
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceUpDownLeftRight: @ 0x084E5E08
 	.byte 0x02, 0x01, 0x03, 0x04
 	.globl gUnknown_84E5E0C
 gUnknown_84E5E0C: @ 0x084E5E0C
@@ -5349,8 +5321,7 @@ gEventObjectMovementData_084E5E18:
 	.globl gUnknown_84E5E18
 gUnknown_84E5E18: @ 0x084E5E18
 	@ analyzed canonical ROM range 0x084E5E18-0x084E5E1B
-sAnalyzedData_084E5E18: @ 0x084E5E18
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceLeftRightUpDown: @ 0x084E5E18
 	.byte 0x03, 0x04, 0x02, 0x01
 	.globl gUnknown_84E5E1C
 gUnknown_84E5E1C: @ 0x084E5E1C
@@ -5363,8 +5334,7 @@ gEventObjectMovementData_084E5E28:
 	.globl gUnknown_84E5E28
 gUnknown_84E5E28: @ 0x084E5E28
 	@ analyzed canonical ROM range 0x084E5E28-0x084E5E2B
-sAnalyzedData_084E5E28: @ 0x084E5E28
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceDownLeftRightUp: @ 0x084E5E28
 	.byte 0x01, 0x03, 0x04, 0x02
 	.globl gUnknown_84E5E2C
 gUnknown_84E5E2C: @ 0x084E5E2C
@@ -5377,8 +5347,7 @@ gEventObjectMovementData_084E5E38:
 	.globl gUnknown_84E5E38
 gUnknown_84E5E38: @ 0x084E5E38
 	@ analyzed canonical ROM range 0x084E5E38-0x084E5E3B
-sAnalyzedData_084E5E38: @ 0x084E5E38
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceUpLeftDownRight: @ 0x084E5E38
 	.byte 0x02, 0x03, 0x01, 0x04
 	.globl gUnknown_84E5E3C
 gUnknown_84E5E3C: @ 0x084E5E3C
@@ -5391,8 +5360,7 @@ gEventObjectMovementData_084E5E48:
 	.globl gUnknown_84E5E48
 gUnknown_84E5E48: @ 0x084E5E48
 	@ analyzed canonical ROM range 0x084E5E48-0x084E5E4B
-sAnalyzedData_084E5E48: @ 0x084E5E48
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceDownRightUpLeft: @ 0x084E5E48
 	.byte 0x01, 0x04, 0x02, 0x03
 	.globl gUnknown_84E5E4C
 gUnknown_84E5E4C: @ 0x084E5E4C
@@ -5405,8 +5373,7 @@ gEventObjectMovementData_084E5E58:
 	.globl gUnknown_84E5E58
 gUnknown_84E5E58: @ 0x084E5E58
 	@ analyzed canonical ROM range 0x084E5E58-0x084E5E5B
-sAnalyzedData_084E5E58: @ 0x084E5E58
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceLeftDownRightUp: @ 0x084E5E58
 	.byte 0x03, 0x01, 0x04, 0x02
 	.globl gUnknown_84E5E5C
 gUnknown_84E5E5C: @ 0x084E5E5C
@@ -5419,8 +5386,7 @@ gEventObjectMovementData_084E5E68:
 	.globl gUnknown_84E5E68
 gUnknown_84E5E68: @ 0x084E5E68
 	@ analyzed canonical ROM range 0x084E5E68-0x084E5E6B
-sAnalyzedData_084E5E68: @ 0x084E5E68
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceRightUpLeftDown: @ 0x084E5E68
 	.byte 0x04, 0x02, 0x03, 0x01
 	.globl gUnknown_84E5E6C
 gUnknown_84E5E6C: @ 0x084E5E6C
@@ -5433,8 +5399,7 @@ gEventObjectMovementData_084E5E78:
 	.globl gUnknown_84E5E78
 gUnknown_84E5E78: @ 0x084E5E78
 	@ analyzed canonical ROM range 0x084E5E78-0x084E5E7B
-sAnalyzedData_084E5E78: @ 0x084E5E78
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceUpRightDownLeft: @ 0x084E5E78
 	.byte 0x02, 0x04, 0x01, 0x03
 	.globl gUnknown_84E5E7C
 gUnknown_84E5E7C: @ 0x084E5E7C
@@ -5447,8 +5412,7 @@ gEventObjectMovementData_084E5E88:
 	.globl gUnknown_84E5E88
 gUnknown_84E5E88: @ 0x084E5E88
 	@ analyzed canonical ROM range 0x084E5E88-0x084E5E8B
-sAnalyzedData_084E5E88: @ 0x084E5E88
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceDownLeftUpRight: @ 0x084E5E88
 	.byte 0x01, 0x03, 0x02, 0x04
 	.globl gUnknown_84E5E8C
 gUnknown_84E5E8C: @ 0x084E5E8C
@@ -5461,8 +5425,7 @@ gEventObjectMovementData_084E5E98:
 	.globl gUnknown_84E5E98
 gUnknown_84E5E98: @ 0x084E5E98
 	@ analyzed canonical ROM range 0x084E5E98-0x084E5E9B
-sAnalyzedData_084E5E98: @ 0x084E5E98
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceLeftUpRightDown: @ 0x084E5E98
 	.byte 0x03, 0x02, 0x04, 0x01
 	.globl gUnknown_84E5E9C
 gUnknown_84E5E9C: @ 0x084E5E9C
@@ -5475,8 +5438,7 @@ gEventObjectMovementData_084E5EA8:
 	.globl gUnknown_84E5EA8
 gUnknown_84E5EA8: @ 0x084E5EA8
 	@ analyzed canonical ROM range 0x084E5EA8-0x084E5EAB
-sAnalyzedData_084E5EA8: @ 0x084E5EA8
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sMovementDirections_WalkSequenceRightDownLeftUp: @ 0x084E5EA8
 	.byte 0x04, 0x01, 0x03, 0x02
 	.globl gUnknown_84E5EAC
 gUnknown_84E5EAC: @ 0x084E5EAC
