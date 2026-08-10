@@ -2,7 +2,6 @@
 gUnknown_845E998: @ 0x0845E998
 	@ analyzed canonical ROM range 0x0845E998-0x0845F317
 	@ pass3: gMapGroups + MapConnections; byte-verified
-sAnalyzedData_0845E998: @ 0x0845E998
 	@ pret/pokeemerald-jp direct xref for 0x0845E998: overworld.s: Overworld_GetMapHeaderByGroupAndId
 	.globl gMapGroups
 gMapGroups: @ 0x0845E998

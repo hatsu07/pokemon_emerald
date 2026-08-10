@@ -4,16 +4,15 @@ gFieldPlayerAvatarData_0846FA13:
 	.globl gUnknown_846FA13
 gUnknown_846FA13: @ 0x0846FA13
 	@ analyzed canonical ROM range 0x0846FA13-0x0846FA17
-sAnalyzedData_0846FA13: @ 0x0846FA13
-	@ structured u8 payload; no safe higher-level semantic type was provable
+sPlayerAvatarTransitionDirections: @ 0x0846FA13
 	.byte 0x01, 0x03, 0x04, 0x02, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x0846FA18: event_object_movement.s: LoadPlayerObjectReflectionPalette, LoadSpecialObjectReflectionPalette; field_effect_helpers.s: SetUpReflection, UpdateObjectReflectionSprite
 	.globl gUnknown_846FA18
 gUnknown_846FA18: @ 0x0846FA18
 	@ analyzed canonical ROM range 0x0846FA18-0x0846FA27
-sAnalyzedData_0846FA18: @ 0x0846FA18
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0101, 0x0706, 0x0908, 0x0706, 0x0908, 0x0B0B, 0x0000, 0x0000
+sObjectReflectionPaletteSlots: @ 0x0846FA18
+	.byte 0x01, 0x01, 0x06, 0x07, 0x08, 0x09, 0x06, 0x07
+	.byte 0x08, 0x09, 0x0B, 0x0B, 0x00, 0x00, 0x00, 0x00
 	.globl gUnknown_846FA28
 gUnknown_846FA28: @ 0x0846FA28
 sCameraObjectSpriteTemplate:
