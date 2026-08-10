@@ -2796,11 +2796,24 @@ gUnknown_84E1900: @ 0x084E1900
 sAnalyzedData_084E1900: @ 0x084E1900
 	@ ObjectEvent graphics resource tables plus 245 proven struct ObjectEventGraphicsInfo objects.
 	@ preserved non-ObjectEventGraphicsInfo data: 0x084E1900-0x084E1DA7
-	@ Unresolved 0x084E1900-0x084E193F data preserved verbatim.
-	.byte 0x04, 0x15, 0x4E, 0x08, 0x01, 0x03, 0x00, 0x02, 0x54, 0x15, 0x4E, 0x08, 0x01, 0x03, 0x00, 0x02 @ 0x084E1900
-	.byte 0xDC, 0x16, 0x4E, 0x08, 0x01, 0x03, 0x00, 0x02, 0x3C, 0x17, 0x4E, 0x08, 0x01, 0x03, 0x00, 0x02 @ 0x084E1910
-	.byte 0xDC, 0x17, 0x4E, 0x08, 0x01, 0x03, 0x00, 0x02, 0x3C, 0x18, 0x4E, 0x08, 0x01, 0x03, 0x00, 0x02 @ 0x084E1920
-	.byte 0xB8, 0x18, 0x4E, 0x08, 0x01, 0x03, 0x00, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 @ 0x084E1930
+	@ ObjectEvent animation table lookup entries used by sub_080923BC.
+sObjectEventAnimTableLookup_084E1900: @ 0x084E1900
+	.4byte sObjectEventAnimTable_084E1504
+	.4byte 0x02000301 @ unknown flags/attributes
+	.4byte sObjectEventAnimTable_084E1554
+	.4byte 0x02000301 @ unknown flags/attributes
+	.4byte sObjectEventAnimTable_084E16DC
+	.4byte 0x02000301 @ unknown flags/attributes
+	.4byte sObjectEventAnimTable_084E173C
+	.4byte 0x02000301 @ unknown flags/attributes
+	.4byte sObjectEventAnimTable_084E17DC
+	.4byte 0x02000301 @ unknown flags/attributes
+	.4byte sObjectEventAnimTable_084E183C
+	.4byte 0x02000301 @ unknown flags/attributes
+	.4byte sObjectEventAnimTable_084E18B8
+	.4byte 0x02000301 @ unknown flags/attributes
+	.4byte 0
+	.4byte 0
 	@ struct OamData entries used by ObjectEventGraphicsInfo.
 sObjectEventOam_8x8: @ 0x084E1940
 	rodata_sprite_oam_data 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0x0000
