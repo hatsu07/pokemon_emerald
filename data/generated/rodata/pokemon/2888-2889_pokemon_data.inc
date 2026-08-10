@@ -4,7 +4,6 @@ gSlotMachineData_085843A8:
 	.globl gUnknown_85843A8
 gUnknown_85843A8: @ 0x085843A8
 	@ analyzed canonical ROM range 0x085843A8-0x085843B7
-sAnalyzedData_085843A8: @ 0x085843A8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x01F8, 0x0000, 0x11C5, 0x0000, 0x21D6, 0x0000, 0x11E7, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085843B8: slot_machine.s: SlotMachineSetup_0_0
@@ -13,7 +12,6 @@ gSlotMachineData_085843B8:
 	.globl gUnknown_85843B8
 gUnknown_85843B8: @ 0x085843B8
 	@ analyzed canonical ROM range 0x085843B8-0x085843C7
-sAnalyzedData_085843B8: @ 0x085843B8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0400, 0x160F, 0x0F04, 0x01A8, 0x00FF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085843C8: slot_machine.s: InfoBox_8104B80
@@ -22,7 +20,6 @@ gSlotMachineData_085843C8:
 	.globl gUnknown_85843C8
 gUnknown_85843C8: @ 0x085843C8
 	@ analyzed canonical ROM range 0x085843C8-0x085843CF
-sAnalyzedData_085843C8: @ 0x085843C8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0200, 0x1204, 0x0D0C, 0x0001
 	@ pret/pokeemerald-jp direct xref for 0x085843D0: slot_machine.s: InfoBox_AddText
@@ -31,7 +28,6 @@ gSlotMachineData_085843D0:
 	.globl gUnknown_85843D0
 gUnknown_85843D0: @ 0x085843D0
 	@ analyzed canonical ROM range 0x085843D0-0x085843D3
-sAnalyzedData_085843D0: @ 0x085843D0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x03, 0x01, 0x02, 0x00
 	.globl gUnknown_85843D4
@@ -93,7 +89,6 @@ gSlotMachineData_08584480:
 	.globl gUnknown_8584480
 gUnknown_8584480: @ 0x08584480
 	@ analyzed canonical ROM range 0x08584480-0x0858448B
-sAnalyzedData_08584480: @ 0x08584480
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0002, 0x0004, 0x0004, 0x0004, 0x0008, 0x0000
 	.globl gUnknown_858448C
@@ -132,7 +127,6 @@ gSlotMachineData_085844D4:
 	.globl gUnknown_85844D4
 gUnknown_85844D4: @ 0x085844D4
 	@ analyzed canonical ROM range 0x085844D4-0x085844DB
-sAnalyzedData_085844D4: @ 0x085844D4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0005, 0x000A, 0x000F, 0x0000
 	.globl gUnknown_85844DC
@@ -147,7 +141,6 @@ gSlotMachineData_085844EC:
 	.globl gUnknown_85844EC
 gUnknown_85844EC: @ 0x085844EC
 	@ analyzed canonical ROM range 0x085844EC-0x085844ED
-sAnalyzedData_085844EC: @ 0x085844EC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x9E, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085844EE: slot_machine.s: sub_0812D3C4
@@ -156,7 +149,6 @@ gSlotMachineData_085844EE:
 	.globl gUnknown_85844EE
 gUnknown_85844EE: @ 0x085844EE
 	@ analyzed canonical ROM range 0x085844EE-0x085844F7
-sAnalyzedData_085844EE: @ 0x085844EE
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x006E, 0x009F, 0x006F, 0x00AF, 0x007F
 	.globl gUnknown_85844F8
@@ -186,7 +178,6 @@ gSlotMachineData_08584544:
 	.globl gUnknown_8584544
 gUnknown_8584544: @ 0x08584544
 	@ analyzed canonical ROM range 0x08584544-0x08584547
-sAnalyzedData_08584544: @ 0x08584544
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x01, 0x01, 0x02, 0x02
 	@ pret/pokeemerald-jp direct xref for 0x08584548: slot_machine.s: ReeltimeAction3
@@ -195,7 +186,6 @@ gSlotMachineData_08584548:
 	.globl gUnknown_8584548
 gUnknown_8584548: @ 0x08584548
 	@ analyzed canonical ROM range 0x08584548-0x0858454F
-sAnalyzedData_08584548: @ 0x08584548
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0040, 0x0030, 0x0018, 0x0008
 	@ pret/pokeemerald-jp direct xref for 0x08584550: slot_machine.s: ReeltimeAction3
@@ -204,7 +194,6 @@ gSlotMachineData_08584550:
 	.globl gUnknown_8584550
 gUnknown_8584550: @ 0x08584550
 	@ analyzed canonical ROM range 0x08584550-0x08584557
-sAnalyzedData_08584550: @ 0x08584550
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x000A, 0x0008, 0x0006, 0x0004
 	.globl gUnknown_8584558
@@ -233,7 +222,6 @@ gSlotMachineData_08584598:
 	.globl gUnknown_8584598
 gUnknown_8584598: @ 0x08584598
 	@ analyzed canonical ROM range 0x08584598-0x08584599
-sAnalyzedData_08584598: @ 0x08584598
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0858459A: slot_machine.s: sub_0812ECA4
@@ -242,7 +230,6 @@ gSlotMachineData_0858459A:
 	.globl gUnknown_858459A
 gUnknown_858459A: @ 0x0858459A
 	@ analyzed canonical ROM range 0x0858459A-0x085845A1
-sAnalyzedData_0858459A: @ 0x0858459A
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x0040, 0x0080, 0x00C0
 	@ pret/pokeemerald-jp direct xref for 0x085845A2: slot_machine.s: sub_0812F090
@@ -251,7 +238,6 @@ gSlotMachineData_085845A2:
 	.globl gUnknown_85845A2
 gUnknown_85845A2: @ 0x085845A2
 	@ analyzed canonical ROM range 0x085845A2-0x085845A9
-sAnalyzedData_085845A2: @ 0x085845A2
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x04, 0x00, 0xFC, 0xFF, 0x04, 0x00, 0xFC, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085845AA: slot_machine.s: sub_0812F090
@@ -260,7 +246,6 @@ gSlotMachineData_085845AA:
 	.globl gUnknown_85845AA
 gUnknown_85845AA: @ 0x085845AA
 	@ analyzed canonical ROM range 0x085845AA-0x085845B1
-sAnalyzedData_085845AA: @ 0x085845AA
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x04, 0x00, 0x04, 0x00, 0xFC, 0xFF, 0xFC, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085845B2: slot_machine.s: sub_0812F524
@@ -269,7 +254,6 @@ gSlotMachineData_085845B2:
 	.globl gUnknown_85845B2
 gUnknown_85845B2: @ 0x085845B2
 	@ analyzed canonical ROM range 0x085845B2-0x085845C1
-sAnalyzedData_085845B2: @ 0x085845B2
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0xFFD8, 0x0000, 0x0000, 0x0030, 0x0000, 0x0018, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085845C2: slot_machine.s: sub_0812F524
@@ -278,7 +262,6 @@ gSlotMachineData_085845C2:
 	.globl gUnknown_85845C2
 gUnknown_85845C2: @ 0x085845C2
 	@ analyzed canonical ROM range 0x085845C2-0x085845D1
-sAnalyzedData_085845C2: @ 0x085845C2
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xE0, 0xFF, 0x00, 0x00, 0xE0, 0xFF, 0xD0, 0xFF, 0x00, 0x00, 0xD0, 0xFF, 0x00, 0x00, 0xD0, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085845D2: slot_machine.s: sub_0812F524
@@ -287,7 +270,6 @@ gSlotMachineData_085845D2:
 	.globl gUnknown_85845D2
 gUnknown_85845D2: @ 0x085845D2
 	@ analyzed canonical ROM range 0x085845D2-0x085845E1
-sAnalyzedData_085845D2: @ 0x085845D2
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0010, 0x000C, 0x0010, 0x0000, 0x0000, 0x0004, 0x0008, 0x0008
 	@ pret/pokeemerald-jp direct xref for 0x085845E2: slot_machine.s: sub_0812F5F0
@@ -296,7 +278,6 @@ gSlotMachineData_085845E2:
 	.globl gUnknown_85845E2
 gUnknown_85845E2: @ 0x085845E2
 	@ analyzed canonical ROM range 0x085845E2-0x085845F1
-sAnalyzedData_085845E2: @ 0x085845E2
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x00A0, 0x00C0, 0x00E0, 0x0068, 0x0050, 0x0040, 0x0030, 0x0018
 	@ pret/pokeemerald-jp direct xref for 0x085845F2: slot_machine.s: GetNearbyTag_Quantized
@@ -305,7 +286,6 @@ gSlotMachineData_085845F2:
 	.globl gUnknown_85845F2
 gUnknown_85845F2: @ 0x085845F2
 	@ analyzed canonical ROM range 0x085845F2-0x08584630
-sAnalyzedData_085845F2: @ 0x085845F2
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x04, 0x02, 0x06, 0x05, 0x03, 0x01, 0x03, 0x04, 0x05, 0x06, 0x02, 0x00, 0x05, 0x03, 0x06
 	.byte 0x02, 0x01, 0x05, 0x03, 0x06, 0x00, 0x04, 0x06, 0x03, 0x02, 0x04, 0x06, 0x05, 0x05, 0x03, 0x01
@@ -317,7 +297,6 @@ gSlotMachineData_08584631:
 	.globl gUnknown_8584631
 gUnknown_8584631: @ 0x08584631
 	@ analyzed canonical ROM range 0x08584631-0x08584637
-sAnalyzedData_08584631: @ 0x08584631
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x01, 0x00, 0x05, 0x04, 0x03, 0x02, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08584638: slot_machine.s: SlotMachineSetup_0_1
@@ -326,7 +305,6 @@ gSlotMachineData_08584638:
 	.globl gUnknown_8584638
 gUnknown_8584638: @ 0x08584638
 	@ analyzed canonical ROM range 0x08584638-0x08584643
-sAnalyzedData_08584638: @ 0x08584638
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x0006, 0x0000, 0x000A, 0x0000, 0x0002
 	@ pret/pokeemerald-jp direct xref for 0x08584644: slot_machine.s: IsThisRoundLucky
@@ -335,7 +313,6 @@ gSlotMachineData_08584644:
 	.globl gUnknown_8584644
 gUnknown_8584644: @ 0x08584644
 	@ analyzed canonical ROM range 0x08584644-0x08584655
-sAnalyzedData_08584644: @ 0x08584644
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0101, 0x010C, 0x0E01, 0x0202, 0x020E, 0x0E02, 0x0302, 0x0310
 	.2byte 0x1003
@@ -345,7 +322,6 @@ gSlotMachineData_08584656:
 	.globl gUnknown_8584656
 gUnknown_8584656: @ 0x08584656
 	@ analyzed canonical ROM range 0x08584656-0x08584667
-sAnalyzedData_08584656: @ 0x08584656
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1919, 0x281E, 0x3228, 0x1919, 0x1E1E, 0x2323, 0x1919, 0x191E
 	.2byte 0x1E19
@@ -355,7 +331,6 @@ gSlotMachineData_08584668:
 	.globl gUnknown_8584668
 gUnknown_8584668: @ 0x08584668
 	@ analyzed canonical ROM range 0x08584668-0x08584685
-sAnalyzedData_08584668: @ 0x08584668
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1914, 0x1419, 0x1919, 0x0F0C, 0x120F, 0x1613, 0x1919, 0x1E19
 	.2byte 0x281E, 0x1919, 0x1414, 0x0F0F, 0x2828, 0x2323, 0x2828
@@ -365,7 +340,6 @@ gSlotMachineData_08584686:
 	.globl gUnknown_8584686
 gUnknown_8584686: @ 0x08584686
 	@ analyzed canonical ROM range 0x08584686-0x085846EB
-sAnalyzedData_08584686: @ 0x08584686
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF3, 0xF3, 0xF3, 0x50, 0x50, 0x50, 0x50, 0x28, 0x28, 0x28, 0x28, 0x28, 0x28, 0x05, 0x05, 0x05
 	.byte 0x05, 0x05, 0x05, 0x05, 0x96, 0x96, 0x96, 0x96, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x64, 0x64
@@ -380,7 +354,6 @@ gSlotMachineData_085846EC:
 	.globl gUnknown_85846EC
 gUnknown_85846EC: @ 0x085846EC
 	@ analyzed canonical ROM range 0x085846EC-0x08584751
-sAnalyzedData_085846EC: @ 0x085846EC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xF3F3, 0xC8F3, 0xC8C8, 0xA0C8, 0xA0A0, 0xA0A0, 0x46A0, 0x4646
 	.2byte 0x0505, 0x0505, 0x1919, 0x1919, 0x0505, 0x0505, 0x0505, 0x0202
@@ -395,7 +368,6 @@ gSlotMachineData_08584752:
 	.globl gUnknown_8584752
 gUnknown_8584752: @ 0x08584752
 	@ analyzed canonical ROM range 0x08584752-0x0858475B
-sAnalyzedData_08584752: @ 0x08584752
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0080, 0x00AF, 0x00C8, 0x00E1, 0x0100
 	@ pret/pokeemerald-jp direct xref for 0x0858475C: slot_machine.s: SlowReelSpeed
@@ -404,7 +376,6 @@ gSlotMachineData_0858475C:
 	.globl gUnknown_858475C
 gUnknown_858475C: @ 0x0858475C
 	@ analyzed canonical ROM range 0x0858475C-0x0858476F
-sAnalyzedData_0858475C: @ 0x0858475C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x000A, 0x0005, 0x000A, 0x000A, 0x000A, 0x000F, 0x000A, 0x0019
 	.2byte 0x000A, 0x0023
@@ -414,7 +385,6 @@ gSlotMachineData_08584770:
 	.globl gUnknown_8584770
 gUnknown_8584770: @ 0x08584770
 	@ analyzed canonical ROM range 0x08584770-0x08584779
-sAnalyzedData_08584770: @ 0x08584770
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x0005, 0x000A, 0x000F, 0x0014
 	@ pret/pokeemerald-jp direct xref for 0x0858477A: slot_machine.s: GetBiasTag
@@ -423,7 +393,6 @@ gSlotMachineData_0858477A:
 	.globl gUnknown_858477A
 gUnknown_858477A: @ 0x0858477A
 	@ analyzed canonical ROM range 0x0858477A-0x08584781
-sAnalyzedData_0858477A: @ 0x0858477A
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0406, 0x0203, 0x0005, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08584782: slot_machine.s: DrawLuckyFlags
@@ -432,7 +401,6 @@ gSlotMachineData_08584782:
 	.globl gUnknown_8584782
 gUnknown_8584782: @ 0x08584782
 	@ analyzed canonical ROM range 0x08584782-0x08584787
-sAnalyzedData_08584782: @ 0x08584782
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x80, 0x00, 0x20, 0x00, 0x40, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08584788: slot_machine.s: DrawLuckyFlags
@@ -441,7 +409,6 @@ gSlotMachineData_08584788:
 	.globl gUnknown_8584788
 gUnknown_8584788: @ 0x08584788
 	@ analyzed canonical ROM range 0x08584788-0x08584791
-sAnalyzedData_08584788: @ 0x08584788
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0010, 0x0008, 0x0004, 0x0002, 0x0001
 	@ pret/pokeemerald-jp direct xref for 0x08584792: slot_machine.s: GetMatchFromSymbolsInRow
@@ -450,7 +417,6 @@ gSlotMachineData_08584792:
 	.globl gUnknown_8584792
 gUnknown_8584792: @ 0x08584792
 	@ analyzed canonical ROM range 0x08584792-0x08584799
-sAnalyzedData_08584792: @ 0x08584792
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0807, 0x0304, 0x0500, 0x0002
 	@ pret/pokeemerald-jp direct xref for 0x0858479A: slot_machine.s: CheckMatch_CenterRow, CheckMatch_Diagonals, CheckMatch_TopAndBottom
@@ -459,7 +425,6 @@ gSlotMachineData_0858479A:
 	.globl gUnknown_858479A
 gUnknown_858479A: @ 0x0858479A
 	@ analyzed canonical ROM range 0x0858479A-0x085847AB
-sAnalyzedData_0858479A: @ 0x0858479A
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0001, 0x0002, 0x0004, 0x0008, 0x0010, 0x0020, 0x0040, 0x0080
 	.2byte 0x0100
@@ -469,7 +434,6 @@ gSlotMachineData_085847AC:
 	.globl gUnknown_85847AC
 gUnknown_85847AC: @ 0x085847AC
 	@ analyzed canonical ROM range 0x085847AC-0x085847BD
-sAnalyzedData_085847AC: @ 0x085847AC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0002, 0x0004, 0x0000, 0x0006, 0x000C, 0x0003, 0x005A, 0x012C
 	.2byte 0x012C
@@ -479,7 +443,6 @@ gSlotMachineData_085847BE:
 	.globl gUnknown_85847BE
 gUnknown_85847BE: @ 0x085847BE
 	@ analyzed canonical ROM range 0x085847BE-0x0858484B
-sAnalyzedData_085847BE: @ 0x085847BE
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x00D0, 0x0038, 0x00B8, 0x0000, 0x00C8, 0x0008, 0x00D8, 0x0010
 	.2byte 0x00E8, 0x0018, 0x00D0, 0x0048, 0x00D0, 0x0008, 0x00D0, 0x0040
@@ -499,7 +462,6 @@ gUnknown_858484C: @ 0x0858484C
 sPointerTable_0858484C:
 	@ analyzed canonical ROM range 0x0858484C-0x08584987
 	@ semantic recovery: rodata; byte-verified against linked ROM
-sAnalyzedData_0858484C: @ 0x0858484C
 FunctionPointerTable_JP_0858484C: @ 0x0858484C
 	@ proven function-pointer table
 	.4byte sub_0812F088
@@ -556,7 +518,6 @@ gUnknown_8584988: @ 0x08584988
 	@ confirmed contiguous ROM pointer table: 14 entries from this address
 sPointerTable_08584988:
 	@ analyzed canonical ROM range 0x08584988-0x085849A3
-sAnalyzedData_08584988: @ 0x08584988
 	@ pointer/nullable table
 	.4byte 0x085848D8 @ +0x0
 	.4byte 0x085848E8 @ +0x4
@@ -572,7 +533,6 @@ gSlotMachineData_085849A4:
 gUnknown_85849A4: @ 0x085849A4
 	@ analyzed canonical ROM range 0x085849A4-0x08584C63
 	@ semantic recovery: rodata; byte-verified against linked ROM
-sAnalyzedData_085849A4: @ 0x085849A4
 FunctionPointerTable_JP_085849A4: @ 0x085849A4
 	@ proven function-pointer table
 	.4byte sub_0812F7D0
@@ -743,7 +703,6 @@ gSlotMachineData_08584DB4:
 	.globl gUnknown_8584DB4
 gUnknown_8584DB4: @ 0x08584DB4
 	@ analyzed canonical ROM range 0x08584DB4-0x08584F1B
-sAnalyzedData_08584DB4: @ 0x08584DB4
 	@ pointer/nullable table
 	.4byte 0x0004FFFF @ +0x0
 	.4byte 0x085849D0 @ +0x4
@@ -841,7 +800,6 @@ gSlotMachineData_08584F1C:
 	.globl gUnknown_8584F1C
 gUnknown_8584F1C: @ 0x08584F1C
 	@ analyzed canonical ROM range 0x08584F1C-0x08584F43
-sAnalyzedData_08584F1C: @ 0x08584F1C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0xFF, 0x04, 0x00, 0xC0, 0x49, 0x58, 0x08, 0x7C, 0x4B, 0x58, 0x08, 0x78, 0x4A, 0x58, 0x08
 	.byte 0x60, 0x4C, 0x58, 0x08, 0x65, 0xEF, 0x12, 0x08, 0xC0, 0xC0, 0x0C, 0xC0, 0x00, 0xC0, 0x0C, 0xC0
@@ -852,7 +810,6 @@ gSlotMachineData_08584F44:
 	.globl gUnknown_8584F44
 gUnknown_8584F44: @ 0x08584F44
 	@ analyzed canonical ROM range 0x08584F44-0x08584F63
-sAnalyzedData_08584F44: @ 0x08584F44
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x04, 0x00, 0x00, 0x00, 0x34, 0x4F, 0x58, 0x08, 0xE0, 0xF4, 0x05, 0x40, 0x00, 0xF4, 0x45, 0x40
 	.byte 0xE0, 0xFC, 0x85, 0x40, 0x00, 0xFC, 0xC5, 0x40, 0xE0, 0x04, 0x05, 0x41, 0x00, 0x04, 0x45, 0x41
@@ -862,7 +819,6 @@ gSlotMachineData_08584F64:
 	.globl gUnknown_8584F64
 gUnknown_8584F64: @ 0x08584F64
 	@ analyzed canonical ROM range 0x08584F64-0x08584F77
-sAnalyzedData_08584F64: @ 0x08584F64
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x06, 0x00, 0x00, 0x00, 0x4C, 0x4F, 0x58, 0x08, 0xE0, 0xEC, 0x0D, 0x40, 0xE0, 0x0C, 0x05, 0x42
 	.byte 0x00, 0x0C, 0x45, 0x42
@@ -872,7 +828,6 @@ gSlotMachineData_08584F78:
 	.globl gUnknown_8584F78
 gUnknown_8584F78: @ 0x08584F78
 	@ analyzed canonical ROM range 0x08584F78-0x08584F93
-sAnalyzedData_08584F78: @ 0x08584F78
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x03, 0x00, 0x00, 0x00, 0x6C, 0x4F, 0x58, 0x08, 0xE0, 0xE8, 0x0D, 0x40, 0xE0, 0x08, 0x05, 0x42
 	.byte 0x00, 0x08, 0x45, 0x42, 0xE0, 0x10, 0x85, 0x42, 0x00, 0x10, 0xC5, 0x42
@@ -882,7 +837,6 @@ gSlotMachineData_08584F94:
 	.globl gUnknown_8584F94
 gUnknown_8584F94: @ 0x08584F94
 	@ analyzed canonical ROM range 0x08584F94-0x08584FAB
-sAnalyzedData_08584F94: @ 0x08584F94
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x05, 0x00, 0x00, 0x00, 0x80, 0x4F, 0x58, 0x08, 0xE0, 0xF8, 0x05, 0x40, 0x00, 0xF8, 0x45, 0x40
 	.byte 0xE0, 0x00, 0x85, 0x40, 0x00, 0x00, 0xC5, 0x40
@@ -892,7 +846,6 @@ gSlotMachineData_08584FAC:
 	.globl gUnknown_8584FAC
 gUnknown_8584FAC: @ 0x08584FAC
 	@ analyzed canonical ROM range 0x08584FAC-0x08584FBF
-sAnalyzedData_08584FAC: @ 0x08584FAC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x04, 0x00, 0x00, 0x00, 0x9C, 0x4F, 0x58, 0x08, 0xF8, 0xF4, 0x01, 0x40, 0xF8, 0xFC, 0x01, 0x40
 	.byte 0xF8, 0x04, 0x01, 0x40
@@ -902,7 +855,6 @@ gSlotMachineData_08584FC0:
 	.globl gUnknown_8584FC0
 gUnknown_8584FC0: @ 0x08584FC0
 	@ analyzed canonical ROM range 0x08584FC0-0x085851E7
-sAnalyzedData_08584FC0: @ 0x08584FC0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x03, 0x00, 0x00, 0x00, 0xB4, 0x4F, 0x58, 0x08, 0xE0, 0xE8, 0x0D, 0xC0, 0xE0, 0x08, 0x05, 0xC2
 	.byte 0x00, 0x08, 0x45, 0xC2, 0xE0, 0x10, 0x85, 0xC2, 0x00, 0x10, 0xC5, 0xC2, 0x05, 0x00, 0x00, 0x00
@@ -945,7 +897,6 @@ gSlotMachineData_085851E8:
 	.globl gUnknown_85851E8
 gUnknown_85851E8: @ 0x085851E8
 	@ analyzed canonical ROM range 0x085851E8-0x0858524F
-sAnalyzedData_085851E8: @ 0x085851E8
 	@ pointer/nullable table
 	.4byte 0x08584DCC @ +0x0
 	.4byte 0x08584DE4 @ +0x4
@@ -979,7 +930,6 @@ gSlotMachineData_08585250:
 	.globl gUnknown_8585250
 gUnknown_8585250: @ 0x08585250
 	@ analyzed canonical ROM range 0x08585250-0x085852B7
-sAnalyzedData_08585250: @ 0x08585250
 	@ pointer/nullable table
 	.4byte 0x08584FDC @ +0x0
 	.4byte 0x08584FF4 @ +0x4
@@ -1013,7 +963,6 @@ gSlotMachineData_085852B8:
 	.globl gUnknown_85852B8
 gUnknown_85852B8: @ 0x085852B8
 	@ analyzed canonical ROM range 0x085852B8-0x08585367
-sAnalyzedData_085852B8: @ 0x085852B8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x2308, 0x0858, 0x0200, 0x0000, 0x2508, 0x0858, 0x0200, 0x0001
 	.2byte 0x2708, 0x0858, 0x0200, 0x0002, 0x2908, 0x0858, 0x0200, 0x0003
@@ -1032,7 +981,6 @@ gSlotMachineData_08585368:
 	.globl gUnknown_8585368
 gUnknown_8585368: @ 0x08585368
 	@ analyzed canonical ROM range 0x08585368-0x0858544B
-sAnalyzedData_08585368: @ 0x08585368
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x48, 0x43, 0x58, 0x08, 0xFF, 0x7F, 0xEF, 0x3D, 0xF7, 0x5A, 0xFF, 0x7F, 0x00, 0x7C, 0xC2, 0x7D
 	.byte 0x8E, 0x7E, 0x8E, 0x26, 0xB3, 0x27, 0x1F, 0x00, 0x7F, 0x01, 0x5F, 0x02, 0x7B, 0x12, 0xBF, 0x13
@@ -1055,7 +1003,6 @@ gSlotMachineData_0858544C:
 	.globl gUnknown_858544C
 gUnknown_858544C: @ 0x0858544C
 	@ analyzed canonical ROM range 0x0858544C-0x0858550B
-sAnalyzedData_0858544C: @ 0x0858544C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0xE7, 0x18, 0x9C, 0x73, 0xFF, 0x7F, 0x50, 0x57, 0xE6, 0x25, 0xAB, 0x36, 0x1F, 0x7C
 	.byte 0xAB, 0x36, 0x9F, 0x16, 0x9F, 0x1D, 0x1F, 0x4F, 0xF5, 0x00, 0x00, 0x0D, 0x8C, 0x2D, 0x00, 0x00
@@ -1077,7 +1024,6 @@ gUnknown_858550C: @ 0x0858550C
 	@ confirmed contiguous ROM pointer table: 10 entries from this address
 sPointerTable_0858550C:
 	@ analyzed canonical ROM range 0x0858550C-0x0858551F
-sAnalyzedData_0858550C: @ 0x0858550C
 	@ pointer/nullable table
 	.4byte 0x08585500 @ +0x0
 	.4byte 0x08585502 @ +0x4
@@ -1090,7 +1036,6 @@ gSlotMachineData_08585520:
 	.globl gUnknown_8585520
 gUnknown_8585520: @ 0x08585520
 	@ analyzed canonical ROM range 0x08585520-0x08585533
-sAnalyzedData_08585520: @ 0x08585520
 	@ pointer/nullable table
 	.4byte 0x085854E0 @ +0x0
 	.4byte 0x085854E2 @ +0x4
@@ -1103,7 +1048,6 @@ gSlotMachineData_08585534:
 	.globl gUnknown_8585534
 gUnknown_8585534: @ 0x08585534
 	@ analyzed canonical ROM range 0x08585534-0x08585538
-sAnalyzedData_08585534: @ 0x08585534
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x4A, 0x4B, 0x4C, 0x4E, 0x4D
 	@ pret/pokeemerald-jp direct xref for 0x08585539: slot_machine.s: LoadBetTiles, sub_0812CEC8
@@ -1112,7 +1056,6 @@ gSlotMachineData_08585539:
 	.globl gUnknown_8585539
 gUnknown_8585539: @ 0x08585539
 	@ analyzed canonical ROM range 0x08585539-0x0858553E
-sAnalyzedData_08585539: @ 0x08585539
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0x01, 0x02, 0x03, 0x04
 	@ pret/pokeemerald-jp direct xref for 0x0858553F: slot_machine.s: LoadBetTiles, sub_0812CEC8
@@ -1121,7 +1064,6 @@ gSlotMachineData_0858553F:
 	.globl gUnknown_858553F
 gUnknown_858553F: @ 0x0858553F
 	@ analyzed canonical ROM range 0x0858553F-0x085855A3
-sAnalyzedData_0858553F: @ 0x0858553F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x01, 0x02, 0x02, 0x7B, 0x6F, 0xFF, 0x7F, 0x50, 0x57, 0xFF, 0x43, 0xDF, 0x22, 0xFF, 0x7F, 0xFF
 	.byte 0x43, 0xFF, 0x43, 0xDF, 0x22, 0xDF, 0x22, 0x7F, 0x01, 0x7F, 0x01, 0xBB, 0x00, 0x1F, 0x7C, 0x13
@@ -1138,7 +1080,6 @@ gUnknown_85855A4: @ 0x085855A4
 	@ confirmed contiguous ROM pointer table: 4 entries from this address
 sPointerTable_085855A4:
 	@ analyzed canonical ROM range 0x085855A4-0x085855AF
-sAnalyzedData_085855A4: @ 0x085855A4
 	@ pointer/nullable table
 	.4byte 0x08585542 @ +0x0
 	.4byte 0x08585562 @ +0x4
@@ -1149,7 +1090,6 @@ gSlotMachineData_085855B0:
 	.globl gUnknown_85855B0
 gUnknown_85855B0: @ 0x085855B0
 	@ analyzed canonical ROM range 0x085855B0-0x08585613
-sAnalyzedData_085855B0: @ 0x085855B0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x6C, 0x54, 0x58, 0x08, 0x8C, 0x2D, 0xFF, 0x0A, 0x10, 0x00, 0xFF, 0x0A, 0x18, 0x09, 0x18, 0x09
 	.byte 0x18, 0x09, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C
@@ -1166,7 +1106,6 @@ gUnknown_8585614: @ 0x08585614
 	@ confirmed contiguous ROM pointer table: 5 entries from this address
 sPointerTable_08585614:
 	@ analyzed canonical ROM range 0x08585614-0x08585623
-sAnalyzedData_08585614: @ 0x08585614
 	@ pointer/nullable table
 	.4byte 0x085855B4 @ +0x0
 	.4byte 0x085855D4 @ +0x4
@@ -1178,7 +1117,6 @@ gSlotMachineData_08585624:
 	.globl gUnknown_8585624
 gUnknown_8585624: @ 0x08585624
 	@ analyzed canonical ROM range 0x08585624-0x08585627
-sAnalyzedData_08585624: @ 0x08585624
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x2C, 0x54, 0x58, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x08585628: slot_machine.s: sub_0812F918
@@ -1187,7 +1125,6 @@ gSlotMachineData_08585628:
 	.globl gUnknown_8585628
 gUnknown_8585628: @ 0x08585628
 	@ analyzed canonical ROM range 0x08585628-0x08585647
-sAnalyzedData_08585628: @ 0x08585628
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0xFFFF, 0x0000, 0x2108, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
@@ -1197,7 +1134,6 @@ gSlotMachineData_08585648:
 	.globl gUnknown_8585648
 gUnknown_8585648: @ 0x08585648
 	@ analyzed canonical ROM range 0x08585648-0x0858568F
-sAnalyzedData_08585648: @ 0x08585648
 	@ pointer/nullable table
 	.4byte 0x0858536C @ +0x0
 	.4byte 0 @ +0x4
@@ -1225,9 +1161,8 @@ gUnknown_8585690: @ 0x08585690
 	@ confirmed GBA LZ77 stream: compressed=0x766, decompressed=0x3200
 sLz77Block_08585690:
 	@ analyzed canonical ROM range 0x08585690-0x08585DF7
-sAnalyzedGfx_08585690: @ 0x08585690
 	.incbin "build/graphics/analyzed/gunknown_8585690_08585690.4bpp.lz"
-	.if (. - sAnalyzedGfx_08585690) != 0x768
+	.if (. - sLz77Block_08585690) != 0x768
 	.error "gUnknown_8585690 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08585DF8: slot_machine.s: sub_0812F7F4
@@ -1238,9 +1173,8 @@ gUnknown_8585DF8: @ 0x08585DF8
 	@ confirmed GBA LZ77 stream: compressed=0x1154, decompressed=0x3600
 sLz77Block_08585DF8:
 	@ analyzed canonical ROM range 0x08585DF8-0x08586F4B
-sAnalyzedGfx_08585DF8: @ 0x08585DF8
 	.incbin "build/graphics/analyzed/gunknown_8585df8_08585df8.4bpp.lz"
-	.if (. - sAnalyzedGfx_08585DF8) != 0x1154
+	.if (. - sLz77Block_08585DF8) != 0x1154
 	.error "gUnknown_8585DF8 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08586F4C: slot_machine.s: sub_0812F918
@@ -1251,9 +1185,8 @@ gUnknown_8586F4C: @ 0x08586F4C
 	@ confirmed GBA LZ77 stream: compressed=0xB9D, decompressed=0x1E00
 sLz77Block_08586F4C:
 	@ analyzed canonical ROM range 0x08586F4C-0x08587AEB
-sAnalyzedGfx_08586F4C: @ 0x08586F4C
 	.incbin "build/graphics/analyzed/gunknown_8586f4c_08586f4c.4bpp.lz"
-	.if (. - sAnalyzedGfx_08586F4C) != 0xBA0
+	.if (. - sLz77Block_08586F4C) != 0xBA0
 	.error "gUnknown_8586F4C compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08587AEC: slot_machine.s: sub_0812F978
@@ -1262,7 +1195,6 @@ gSlotMachineData_08587AEC:
 	.globl gUnknown_8587AEC
 gUnknown_8587AEC: @ 0x08587AEC
 	@ analyzed canonical ROM range 0x08587AEC-0x08587F9B
-sAnalyzedData_08587AEC: @ 0x08587AEC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1084, 0x1085, 0x1086, 0x1087, 0x1088, 0x1089, 0x4001, 0x00C7
 	.2byte 0x00C8, 0x00C9, 0x00C9, 0x00C9, 0x00C9, 0x04C8, 0x04C7, 0x4401
@@ -1345,7 +1277,6 @@ gSlotMachineData_08587F9C:
 	.globl gUnknown_8587F9C
 gUnknown_8587F9C: @ 0x08587F9C
 	@ analyzed canonical ROM range 0x08587F9C-0x08588153
-sAnalyzedData_08587F9C: @ 0x08587F9C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x30A0, 0x30A1, 0x30A1, 0x30A1, 0x30A1, 0x30A1, 0x30A1, 0x30A1
 	.2byte 0x30A1, 0x30A1, 0x30A1, 0x30A1, 0x30A1, 0x30A1, 0x30A1, 0x30A1
@@ -1381,7 +1312,6 @@ gSlotMachineData_08588154:
 	.globl gUnknown_8588154
 gUnknown_8588154: @ 0x08588154
 	@ analyzed canonical ROM range 0x08588154-0x08588603
-sAnalyzedData_08588154: @ 0x08588154
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1084, 0x1085, 0x1086, 0x1087, 0x1088, 0x1089, 0x4001, 0x00C7
 	.2byte 0x00C8, 0x00C9, 0x00C9, 0x00C9, 0x00C9, 0x04C8, 0x04C7, 0x4401
