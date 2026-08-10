@@ -1,7 +1,5 @@
 	@ Six JP-only bytes following the 22-entry table.
 	.byte 0xF7, 0x00, 0xAF, 0xF7, 0x01, 0xFF
-	.globl gUnknown_82C2454
-gUnknown_82C2454: @ 0x082C2454
 sTextboxBorder_Pal:
 	.2byte 0x4A52 @ RGB5(18, 18, 18)
 	.2byte 0x7EF2 @ RGB5(18, 23, 31)
@@ -19,8 +17,6 @@ sTextboxBorder_Pal:
 	.2byte 0x4A52 @ RGB5(18, 18, 18)
 	.2byte 0x6318 @ RGB5(24, 24, 24)
 	.2byte 0x0000 @ RGB5(0, 0, 0)
-	.globl gUnknown_82C2474
-gUnknown_82C2474: @ 0x082C2474
 sTextboxBorder_Gfx:
 	@ GBA LZ77 stream, decompressed size 0x100 bytes.
 	.4byte 0x00010010
@@ -35,15 +31,11 @@ sTextboxBorder_Gfx:
 	.4byte 0xF001F001
 	.4byte 0xF001F001
 	.4byte 0x00000001
-	.globl gUnknown_82C24A4
-gUnknown_82C24A4: @ 0x082C24A4
 sBGTemplates:
 	.4byte 0x000000F8 @ BG0: charBase=2, mapBase=15, priority=0
 	.4byte 0x000010E1 @ BG1: charBase=0, mapBase=14, priority=1
 	.4byte 0x000020D2 @ BG2: charBase=0, mapBase=13, priority=2
 	.4byte 0x000030C3 @ BG3: charBase=0, mapBase=12, priority=3
-	.globl gUnknown_82C24B4
-gUnknown_82C24B4: @ 0x082C24B4
 sMainWindows:
 sWindowTemplate_MysteryGiftHeader:
 	.byte 0 @ bg
@@ -75,8 +67,6 @@ sWindowTemplate_MysteryGiftUnused:
 sWindowTemplate_MysteryGiftDummy:
 	.byte 0xFF, 0, 0, 0, 0, 0
 	.2byte 0
-	.globl gUnknown_82C24D4
-gUnknown_82C24D4: @ 0x082C24D4
 sWindowTemplate_YesNoMsg_Wide:
 	.byte 0 @ bg
 	.byte 1 @ tilemapLeft
@@ -85,8 +75,6 @@ sWindowTemplate_YesNoMsg_Wide:
 	.byte 4 @ height
 	.byte 12 @ paletteNum
 	.2byte 0x00E5 @ baseBlock
-	.globl gUnknown_82C24DC
-gUnknown_82C24DC: @ 0x082C24DC
 sWindowTemplate_YesNoMsg:
 	.byte 0 @ bg
 	.byte 1 @ tilemapLeft
@@ -95,8 +83,6 @@ sWindowTemplate_YesNoMsg:
 	.byte 4 @ height
 	.byte 12 @ paletteNum
 	.2byte 0x00E5 @ baseBlock
-	.globl gUnknown_82C24E4
-gUnknown_82C24E4: @ 0x082C24E4
 sWindowTemplate_GiftSelect:
 	.byte 0 @ bg
 	.byte 1 @ tilemapLeft
@@ -105,8 +91,6 @@ sWindowTemplate_GiftSelect:
 	.byte 4 @ height
 	.byte 12 @ paletteNum
 	.2byte 0x00E5 @ baseBlock
-	.globl gUnknown_82C24EC
-gUnknown_82C24EC: @ 0x082C24EC
 sWindowTemplate_ThreeOptions:
 	.byte 0 @ bg
 	.byte 8 @ tilemapLeft
@@ -115,8 +99,6 @@ sWindowTemplate_ThreeOptions:
 	.byte 6 @ height
 	.byte 12 @ paletteNum
 	.2byte 0x0155 @ baseBlock
-	.globl gUnknown_82C24F4
-gUnknown_82C24F4: @ 0x082C24F4
 sWindowTemplate_YesNoBox:
 	.byte 0 @ bg
 	.byte 23 @ tilemapLeft
@@ -125,8 +107,6 @@ sWindowTemplate_YesNoBox:
 	.byte 4 @ height
 	.byte 12 @ paletteNum
 	.2byte 0x0155 @ baseBlock
-	.globl gUnknown_82C24FC
-gUnknown_82C24FC: @ 0x082C24FC
 sWindowTemplate_GiftSelect_3Options:
 	.byte 0 @ bg
 	.byte 22 @ tilemapLeft
@@ -135,8 +115,6 @@ sWindowTemplate_GiftSelect_3Options:
 	.byte 8 @ height
 	.byte 12 @ paletteNum
 	.2byte 0x0155 @ baseBlock
-	.globl gUnknown_82C2504
-gUnknown_82C2504: @ 0x082C2504
 sWindowTemplate_GiftSelect_2Options:
 	.byte 0 @ bg
 	.byte 22 @ tilemapLeft
@@ -145,8 +123,6 @@ sWindowTemplate_GiftSelect_2Options:
 	.byte 6 @ height
 	.byte 12 @ paletteNum
 	.2byte 0x0155 @ baseBlock
-	.globl gUnknown_82C250C
-gUnknown_82C250C: @ 0x082C250C
 sWindowTemplate_GiftSelect_1Option:
 	.byte 0 @ bg
 	.byte 22 @ tilemapLeft
@@ -215,8 +191,6 @@ gText_Cancel2:
 	@ address range through gText_Rom_2C251C, so define the semantic alias here.
 	.globl gText_WirelessCommunication
 	.set gText_WirelessCommunication, gText_Rom_2C251C + 0xC
-	.globl gUnknown_82C253C
-gUnknown_82C253C: @ 0x082C253C
 sListMenuItems_CardsOrNews:
 	.4byte gText_WonderCards
 	.4byte 0
@@ -224,8 +198,6 @@ sListMenuItems_CardsOrNews:
 	.4byte 1
 	.4byte gText_Exit3
 	.4byte -2 @ LIST_CANCEL
-	.globl gUnknown_82C2554
-gUnknown_82C2554: @ 0x082C2554
 sListMenuItems_WirelessOrFriend:
 	.4byte gText_WirelessCommunication
 	.4byte 0
@@ -233,8 +205,6 @@ sListMenuItems_WirelessOrFriend:
 	.4byte 1
 	.4byte gText_Cancel2
 	.4byte -2 @ LIST_CANCEL
-	.globl gUnknown_82C256C
-gUnknown_82C256C: @ 0x082C256C
 sListMenuTemplate_ThreeOptions:
 	.4byte 0 @ items; supplied at runtime
 	.4byte ListMenuDefaultCursorMoveFunc
@@ -309,8 +279,6 @@ sListMenuItems_Receive:
 	.4byte 0
 	.4byte gText_Cancel2
 	.4byte -2 @ LIST_CANCEL
-	.globl gUnknown_82C25F4
-gUnknown_82C25F4: @ 0x082C25F4
 sListMenu_ReceiveSendToss:
 	.4byte sListMenuItems_ReceiveSendToss
 	.4byte ListMenuDefaultCursorMoveFunc
@@ -325,8 +293,6 @@ sListMenu_ReceiveSendToss:
 	.byte (3 << 4) | 1 @ cursorShadowPal=3, fillValue=1
 	.byte (0 << 6) | (0 << 3) | 1 @ scrollMultiple=0, itemVerticalPadding=0, lettersSpacing=1
 	.byte (0 << 6) | 1 @ cursorKind=0, fontId=1
-	.globl gUnknown_82C260C
-gUnknown_82C260C: @ 0x082C260C
 sListMenu_ReceiveToss:
 	.4byte sListMenuItems_ReceiveToss
 	.4byte ListMenuDefaultCursorMoveFunc
@@ -341,8 +307,6 @@ sListMenu_ReceiveToss:
 	.byte (3 << 4) | 1 @ cursorShadowPal=3, fillValue=1
 	.byte (0 << 6) | (0 << 3) | 0 @ scrollMultiple=0, itemVerticalPadding=0, lettersSpacing=0
 	.byte (0 << 6) | 1 @ cursorKind=0, fontId=1
-	.globl gUnknown_82C2624
-gUnknown_82C2624: @ 0x082C2624
 sListMenu_ReceiveSend:
 	.4byte sListMenuItems_ReceiveSend
 	.4byte ListMenuDefaultCursorMoveFunc
@@ -357,8 +321,6 @@ sListMenu_ReceiveSend:
 	.byte (3 << 4) | 1 @ cursorShadowPal=3, fillValue=1
 	.byte (0 << 6) | (0 << 3) | 1 @ scrollMultiple=0, itemVerticalPadding=0, lettersSpacing=1
 	.byte (0 << 6) | 1 @ cursorKind=0, fontId=1
-	.globl gUnknown_82C263C
-gUnknown_82C263C: @ 0x082C263C
 sListMenu_Receive:
 	.4byte sListMenuItems_Receive
 	.4byte ListMenuDefaultCursorMoveFunc
@@ -426,8 +388,6 @@ sUnusedMenuTexts:
 	.4byte gText_WonderCardsInPossession + 2
 	.4byte gText_ReadNewsThatArrived + 2
 	.4byte gText_ReturnToTitle + 3
-	.globl gUnknown_82C26C4
-gUnknown_82C26C4: @ 0x082C26C4
 
 	@ src/strings.c:1054 gText_DontHaveCardNewOneInput
 	.globl gText_Rom_2C26C4
@@ -440,8 +400,6 @@ gText_DontHaveCardNewOneInput:
 	.if (. - gText_Rom_2C26C4) < 0x24
 	.space 0x24 - (. - gText_Rom_2C26C4)
 	.endif
-	.globl gUnknown_82C26E8
-gUnknown_82C26E8: @ 0x082C26E8
 
 	@ src/strings.c:1055 gText_DontHaveNewsNewOneInput
 	.globl gText_Rom_2C26E8
@@ -464,8 +422,6 @@ gText_WhereShouldCardBeAccessed:
 	.if (. - gText_Rom_2C270E) != 0x1b
 	.error "gText_Rom_2C270E must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2710
-	.set gUnknown_82C2710, gText_Rom_2C270E + 0x2
 
 	@ src/strings.c:1057 gText_WhereShouldNewsBeAccessed
 	@ Preserve exact byte length: internal label.
@@ -476,8 +432,6 @@ gText_WhereShouldNewsBeAccessed:
 	.if (. - gText_Rom_2C2729) != 0x1d
 	.error "gText_Rom_2C2729 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C272C
-	.set gUnknown_82C272C, gText_Rom_2C2729 + 0x3
 	.space 2, 0 @ align gText_CommunicationStandbyBButtonCancel
 
 	.globl gText_CommunicationStandbyBButtonCancel
@@ -487,8 +441,6 @@ gText_CommunicationStandbyBButtonCancel: @ 0x082C2748
 	.error "gText_CommunicationStandbyBButtonCancel must retain its original byte length"
 	.endif
 	.space 0x1, 0x00 @ alignment
-	.globl gUnknown_82C276C
-gUnknown_82C276C: @ 0x082C276C
 
 	@ asm/mystery_gift.s:2007 task00_mystery_gift
 	.globl gText_Rom_2C276C
@@ -511,10 +463,8 @@ gText_Rom_2C277A: @ 0x082C277A
 	.if (. - gText_Rom_2C277A) != 0x14
 	.error "gText_Rom_2C277A must retain its original byte length"
 	.endif
-	.globl gUnknown_82C277C
-	.set gUnknown_82C277C, gText_Rom_2C277A + 0x2
 	.globl gText_CommunicationCompleted
-	.set gText_CommunicationCompleted, gUnknown_82C277C
+	.set gText_CommunicationCompleted, gText_Rom_2C277A + 0x2
 
 	@ src/strings.c:1061 gText_CommunicationError
 	@ Preserve exact byte length: internal label.
@@ -524,12 +474,8 @@ gText_Rom_2C278E: @ 0x082C278E
 	.if (. - gText_Rom_2C278E) != 0x12
 	.error "gText_Rom_2C278E must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2790
-	.set gUnknown_82C2790, gText_Rom_2C278E + 0x2
 	.globl gText_CommunicationError
-	.set gText_CommunicationError, gUnknown_82C2790
-	.globl gUnknown_82C27A0
-gUnknown_82C27A0: @ 0x082C27A0
+	.set gText_CommunicationError, gText_Rom_2C278E + 0x2
 
 	@ src/strings.c:1062 gText_CommunicationCanceled
 	.globl gText_Rom_2C27A0
@@ -552,10 +498,8 @@ gText_Rom_2C27B1: @ 0x082C27B1
 	.if (. - gText_Rom_2C27B1) != 0x28
 	.error "gText_Rom_2C27B1 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C27B4
-	.set gUnknown_82C27B4, gText_Rom_2C27B1 + 0x3
 	.globl gText_ThrowAwayWonderCard
-	.set gText_ThrowAwayWonderCard, gUnknown_82C27B4
+	.set gText_ThrowAwayWonderCard, gText_Rom_2C27B1 + 0x3
 
 	@ src/strings.c:1064 gText_HaventReceivedCardsGift
 	@ Preserve exact byte length: internal label.
@@ -565,12 +509,8 @@ gText_Rom_2C27D9: @ 0x082C27D9
 	.if (. - gText_Rom_2C27D9) != 0x2b
 	.error "gText_Rom_2C27D9 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C27DC
-	.set gUnknown_82C27DC, gText_Rom_2C27D9 + 0x3
 	.globl gText_HaventReceivedCardsGift
-	.set gText_HaventReceivedCardsGift, gUnknown_82C27DC
-	.globl gUnknown_82C2804
-gUnknown_82C2804: @ 0x082C2804
+	.set gText_HaventReceivedCardsGift, gText_Rom_2C27D9 + 0x3
 
 	@ src/strings.c:1065 gText_WonderCardReceivedFrom
 	.globl gText_Rom_2C2804
@@ -585,8 +525,6 @@ gText_Rom_2C2804: @ 0x082C2804
 	.space 0x1a - (. - gText_Rom_2C2804)
 	.endif
 	.space 0x2, 0x00
-	.globl gUnknown_82C2820
-gUnknown_82C2820: @ 0x082C2820
 	.globl gText_WonderNewsReceivedFrom
 gText_WonderNewsReceivedFrom: @ 0x082C2820
 	.string "{STR_VAR_1}から ニュースが\nおくられて きました!$"
@@ -599,10 +537,8 @@ gText_Rom_2C2837: @ 0x082C2837
 	.if (. - gText_Rom_2C2837) != 0x1c
 	.error "gText_Rom_2C2837 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2838
-	.set gUnknown_82C2838, gText_Rom_2C2837 + 0x1
 	.globl gText_WonderCardReceived
-	.set gText_WonderCardReceived, gUnknown_82C2838
+	.set gText_WonderCardReceived, gText_Rom_2C2837 + 0x1
 
 	@ src/strings.c:1068 gText_WonderNewsReceived
 	@ Preserve exact byte length: internal label.
@@ -612,28 +548,18 @@ gText_Rom_2C2853: @ 0x082C2853
 	.if (. - gText_Rom_2C2853) != 0x19
 	.error "gText_Rom_2C2853 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2854
-	.set gUnknown_82C2854, gText_Rom_2C2853 + 0x1
 	.globl gText_WonderNewsReceived
-	.set gText_WonderNewsReceived, gUnknown_82C2854
-	.globl gUnknown_82C286C
-gUnknown_82C286C: @ 0x082C286C
+	.set gText_WonderNewsReceived, gText_Rom_2C2853 + 0x1
 	.globl gText_NewStampReceived
 gText_NewStampReceived: @ 0x082C286C
 	.string "あたらしい スタンプが\nおくられて きました!$"
-	.globl gUnknown_82C2884
-gUnknown_82C2884: @ 0x082C2884
 	.globl gText_NewTrainerReceived
 gText_NewTrainerReceived: @ 0x082C2884
 	.string "あたらしい トレーナーが\nおくられて きました!$"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C28A0
-gUnknown_82C28A0: @ 0x082C28A0
 	.globl gText_AlreadyHadCard
 gText_AlreadyHadCard: @ 0x082C28A0
 	.string "おなじ ふしぎなカードを\nすでに もっています$"
-	.globl gUnknown_82C28B8
-gUnknown_82C28B8: @ 0x082C28B8
 
 	@ src/strings.c:1072 gText_AlreadyHadNews
 	.globl gText_Rom_2C28B8
@@ -656,10 +582,8 @@ gText_Rom_2C28CD: @ 0x082C28CD
 	.if (. - gText_Rom_2C28CD) != 0x18
 	.error "gText_Rom_2C28CD must retain its original byte length"
 	.endif
-	.globl gUnknown_82C28D0
-	.set gUnknown_82C28D0, gText_Rom_2C28CD + 0x3
 	.globl gText_AlreadyHadStamp
-	.set gText_AlreadyHadStamp, gUnknown_82C28D0
+	.set gText_AlreadyHadStamp, gText_Rom_2C28CD + 0x3
 
 	@ src/strings.c:1074 gText_NoMoreRoomForStamps
 	@ Preserve exact byte length: internal label.
@@ -669,10 +593,8 @@ gText_Rom_2C28E5: @ 0x082C28E5
 	.if (. - gText_Rom_2C28E5) != 0x1c
 	.error "gText_Rom_2C28E5 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C28E8
-	.set gUnknown_82C28E8, gText_Rom_2C28E5 + 0x3
 	.globl gText_NoMoreRoomForStamps
-	.set gText_NoMoreRoomForStamps, gUnknown_82C28E8
+	.set gText_NoMoreRoomForStamps, gText_Rom_2C28E5 + 0x3
 
 	@ src/strings.c:1075 gText_RecordUploadedViaWireless
 	@ Preserve exact byte length: internal label.
@@ -682,10 +604,8 @@ gText_Rom_2C2901: @ 0x082C2901
 	.if (. - gText_Rom_2C2901) != 0x21
 	.error "gText_Rom_2C2901 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2904
-	.set gUnknown_82C2904, gText_Rom_2C2901 + 0x3
 	.globl gText_RecordUploadedViaWireless
-	.set gText_RecordUploadedViaWireless, gUnknown_82C2904
+	.set gText_RecordUploadedViaWireless, gText_Rom_2C2901 + 0x3
 
 	@ src/strings.c:1076 gText_CantAcceptCardFromTrainer
 	@ Preserve exact byte length: internal label.
@@ -695,13 +615,9 @@ gText_Rom_2C2922: @ 0x082C2922
 	.if (. - gText_Rom_2C2922) != 0x1f
 	.error "gText_Rom_2C2922 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2924
-	.set gUnknown_82C2924, gText_Rom_2C2922 + 0x2
 	.globl gText_CantAcceptCardFromTrainer
-	.set gText_CantAcceptCardFromTrainer, gUnknown_82C2924
+	.set gText_CantAcceptCardFromTrainer, gText_Rom_2C2922 + 0x2
 	.space 0x3, 0x00
-	.globl gUnknown_82C2944
-gUnknown_82C2944: @ 0x082C2944
 	.globl gText_CantAcceptNewsFromTrainer
 gText_CantAcceptNewsFromTrainer: @ 0x082C2944
 	.string "この あいて からは ニュースを\nうけとれません!$"
@@ -714,10 +630,8 @@ gText_Rom_2C295E: @ 0x082C295E
 	.if (. - gText_Rom_2C295E) != 0x15
 	.error "gText_Rom_2C295E must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2960
-	.set gUnknown_82C2960, gText_Rom_2C295E + 0x2
 	.globl gText_NothingSentOver
-	.set gText_NothingSentOver, gUnknown_82C2960
+	.set gText_NothingSentOver, gText_Rom_2C295E + 0x2
 	.globl gText_Rom_2C296F
 	.set gText_Rom_2C296F, gText_Rom_2C295E + 0x11
 
@@ -729,10 +643,8 @@ gText_Rom_2C2973: @ 0x082C2973
 	.if (. - gText_Rom_2C2973) != 0xe
 	.error "gText_Rom_2C2973 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2974
-	.set gUnknown_82C2974, gText_Rom_2C2973 + 0x1
 	.globl gText_WhatToDoWithCards
-	.set gText_WhatToDoWithCards, gUnknown_82C2974
+	.set gText_WhatToDoWithCards, gText_Rom_2C2973 + 0x1
 
 	@ src/strings.c:1080 gText_WhatToDoWithNews
 	@ Preserve exact byte length: internal label.
@@ -742,13 +654,9 @@ gText_Rom_2C2981: @ 0x082C2981
 	.if (. - gText_Rom_2C2981) != 0x11
 	.error "gText_Rom_2C2981 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2984
-	.set gUnknown_82C2984, gText_Rom_2C2981 + 0x3
 	.globl gText_WhatToDoWithNews
-	.set gText_WhatToDoWithNews, gUnknown_82C2984
+	.set gText_WhatToDoWithNews, gText_Rom_2C2981 + 0x3
 	.space 0x2, 0x00
-	.globl gUnknown_82C2994
-gUnknown_82C2994: @ 0x082C2994
 
 	@ asm/mystery_gift.s:2502 task00_mystery_gift
 	.globl gText_Rom_2C2994
@@ -763,8 +671,6 @@ gText_Rom_2C2994: @ 0x082C2994
 	.space 0x16 - (. - gText_Rom_2C2994)
 	.endif
 	.space 0x2, 0x00
-	.globl gUnknown_82C29AC
-gUnknown_82C29AC: @ 0x082C29AC
 
 	@ asm/mystery_gift.s:2512 task00_mystery_gift
 	.globl gText_Rom_2C29AC
@@ -780,8 +686,6 @@ gText_Rom_2C29AC: @ 0x082C29AC
 	.endif
 	.space 0x2, 0x00
 
-	.globl gUnknown_82C29C0
-gUnknown_82C29C0: @ 0x082C29C0
 
 	@ src/strings.c:1083 gText_WonderCardSentTo
 	.globl gText_Rom_2C29C0
@@ -796,18 +700,12 @@ gText_Rom_2C29C0: @ 0x082C29C0
 	.space 0x16 - (. - gText_Rom_2C29C0)
 	.endif
 	.space 0x2, 0x00
-	.globl gUnknown_82C29D8
-gUnknown_82C29D8: @ 0x082C29D8
 	.globl gText_WonderNewsSentTo
 gText_WonderNewsSentTo: @ 0x082C29D8
 	.string "{STR_VAR_1}に　ニュース　を\nおくり　ました！$"
-	.globl gUnknown_82C29EC
-gUnknown_82C29EC: @ 0x082C29EC
 	.globl gText_StampSentTo
 gText_StampSentTo: @ 0x082C29EC
 	.string "{STR_VAR_1}に　スタンプ　を\nおくり　ました！$"
-	.globl gUnknown_82C2A00
-gUnknown_82C2A00: @ 0x082C2A00
 
 	@ src/strings.c:1086 gText_GiftSentTo
 	.globl gText_Rom_2C2A00
@@ -832,8 +730,6 @@ gText_Rom_2C2A11: @ 0x082C2A11
 	.if (. - gText_Rom_2C2A11) != 0x1d
 	.error "gText_Rom_2C2A11 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2A14
-	.set gUnknown_82C2A14, gText_Rom_2C2A11 + 0x3
 
 	@ src/strings.c:1088 gText_OtherTrainerHasNews
 	@ Preserve exact byte length: internal label.
@@ -845,8 +741,6 @@ gText_Rom_2C2A2E: @ 0x082C2A2E
 	.if (. - gText_Rom_2C2A2E) != 0x19
 	.error "gText_Rom_2C2A2E must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2A30
-	.set gUnknown_82C2A30, gText_Rom_2C2A2E + 0x2
 
 	@ src/strings.c:1089 gText_OtherTrainerHasStamp
 	@ Preserve exact byte length: internal label.
@@ -858,8 +752,6 @@ gText_Rom_2C2A47: @ 0x082C2A47
 	.if (. - gText_Rom_2C2A47) != 0x18
 	.error "gText_Rom_2C2A47 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2A48
-	.set gUnknown_82C2A48, gText_Rom_2C2A47 + 0x1
 
 	@ src/strings.c:1090 gText_OtherTrainerCanceled
 	@ Preserve exact byte length: internal label.
@@ -871,8 +763,6 @@ gText_Rom_2C2A5F: @ 0x082C2A5F
 	.if (. - gText_Rom_2C2A5F) != 0x18
 	.error "gText_Rom_2C2A5F must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2A60
-	.set gUnknown_82C2A60, gText_Rom_2C2A5F + 0x1
 
 	@ src/strings.c:1091 gText_CantSendGiftToTrainer
 	@ Preserve exact byte length: internal label, semantic suffix text pointer.
@@ -882,12 +772,8 @@ gText_Rom_2C2A77: @ 0x082C2A77
 	.if (. - gText_Rom_2C2A77) != 0x1d
 	.error "gText_Rom_2C2A77 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2A78
-	.set gUnknown_82C2A78, gText_Rom_2C2A77 + 0x1
 	.globl gText_Rom_2C2A90
 	.set gText_Rom_2C2A90, gText_Rom_2C2A77 + 0x19
-	.globl gUnknown_82C2A94
-gUnknown_82C2A94: @ 0x082C2A94
 
 	@ src/strings.c:1092 gText_IfThrowAwayCardEventWontHappen
 	.globl gText_Rom_2C2A94
@@ -908,10 +794,6 @@ gText_Rom_2C2AB2: @ 0x082C2AB2
 	.if (. - gText_Rom_2C2AB2) != 0x1a
 	.error "gText_Rom_2C2AB2 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2AB4
-	.set gUnknown_82C2AB4, gText_Rom_2C2AB2 + 0x2
-	.globl gUnknown_82C2ACC
-gUnknown_82C2ACC: @ 0x082C2ACC
 
 	@ src/strings.c:1094 gText_HaventReceivedGiftOkayToDiscard
 	.globl gText_Rom_2C2ACC
@@ -932,8 +814,6 @@ gText_Rom_2C2AEA: @ 0x082C2AEA
 	.if (. - gText_Rom_2C2AEA) != 0x1c
 	.error "gText_Rom_2C2AEA must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2AEC
-	.set gUnknown_82C2AEC, gText_Rom_2C2AEA + 0x2
 	.globl gText_Rom_2C2AF9
 	.set gText_Rom_2C2AF9, gText_Rom_2C2AEA + 0xf
 
@@ -945,8 +825,6 @@ gText_Rom_2C2B06: @ 0x082C2B06
 	.if (. - gText_Rom_2C2B06) != 0x1f
 	.error "gText_Rom_2C2B06 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2B08
-	.set gUnknown_82C2B08, gText_Rom_2C2B06 + 0x2
 
 	@ src/strings.c:1097 gText_WonderCardThrownAway
 	@ Preserve exact byte length: internal label.
@@ -956,8 +834,6 @@ gText_Rom_2C2B25: @ 0x082C2B25
 	.if (. - gText_Rom_2C2B25) != 0x12
 	.error "gText_Rom_2C2B25 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2B28
-	.set gUnknown_82C2B28, gText_Rom_2C2B25 + 0x3
 
 	@ src/strings.c:1098 gText_WonderNewsThrownAway
 	@ Preserve exact byte length: internal label.
@@ -967,16 +843,10 @@ gText_Rom_2C2B37: @ 0x082C2B37
 	.if (. - gText_Rom_2C2B37) != 0xd
 	.error "gText_Rom_2C2B37 must retain its original byte length"
 	.endif
-	.globl gUnknown_82C2B38
-	.set gUnknown_82C2B38, gText_Rom_2C2B37 + 0x1
-	.globl gUnknown_82C2B44
-gUnknown_82C2B44: @ 0x082C2B44
 	.globl gText_MysteryGift
 gText_MysteryGift: @ 0x082C2B44
 	.string "ふしぎなおくりもの$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C2B50
-gUnknown_82C2B50: @ 0x082C2B50
 
 	@ src/strings.c:1101 gText_PickOKCancel
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -993,16 +863,12 @@ gText_Rom_2C2B50: @ 0x082C2B50
 	.globl gText_Rom_2C2B5F
 	.set gText_Rom_2C2B5F, gText_Rom_2C2B50 + 0xf
 	.space 0x1, 0x00
-	.globl gUnknown_82C2B64
-gUnknown_82C2B64: @ 0x082C2B64
 sTextColors_Header:
 	.byte 0, 1, 2 @ TRANSPARENT, WHITE, DARK_GRAY
 	.byte 0 @ alignment
 sTextColors_Header_Copy:
 	.byte 0, 1, 2 @ TRANSPARENT, WHITE, DARK_GRAY
 	.byte 0 @ alignment
-	.globl gUnknown_82C2B6C
-gUnknown_82C2B6C: @ 0x082C2B6C
 sMG_Ereader_TextColor_2:
 	.byte 1, 2, 3 @ WHITE, DARK_GRAY, LIGHT_GRAY
 
@@ -1018,15 +884,11 @@ gText_Rom_2C2B6F: @ 0x082C2B6F
 	.endif
 	@ Decoded text from ROM range: offset=0x2C2B73, size=0x9
 	.string "むげんのチケット$"
-	.globl gUnknown_82C2B7C
-gUnknown_82C2B7C: @ 0x082C2B7C
 sUnionRoomObjGfxIds:
 	@ MALE
 	.byte 0x21, 0x2C, 0x1F, 0x23, 0x25, 0x24, 0x41, 0x42, 0x00, 0x00
 	@ FEMALE
 	.byte 0x22, 0x28, 0x20, 0x2F, 0x2F, 0x0E, 0x14, 0x2D, 0x00, 0x00
-	.globl gUnknown_82C2B90
-gUnknown_82C2B90: @ 0x082C2B90
 sUnionRoomPlayerCoords:
 	.2byte 4, 6
 	.2byte 13, 8
@@ -1036,52 +898,32 @@ sUnionRoomPlayerCoords:
 	.2byte 7, 4
 	.2byte 1, 4
 	.2byte 7, 8
-	.globl gUnknown_82C2BB0
-gUnknown_82C2BB0: @ 0x082C2BB0
 sUnionRoomGroupOffsets:
 	.byte 0, 0
 	.byte 1, 0
 	.byte 0, -1
 	.byte -1, 0
 	.byte 0, 1
-	.globl gUnknown_82C2BBA
-gUnknown_82C2BBA: @ 0x082C2BBA
 sOppositeFacingDirection:
 	.byte 0, 2, 1, 4, 3 @ NONE, NORTH, SOUTH, EAST, WEST
-	.globl gUnknown_82C2BBF
-gUnknown_82C2BBF: @ 0x082C2BBF
 sMemberFacingDirections:
 	.byte 1, 3, 1, 4, 2 @ SOUTH, WEST, SOUTH, EAST, NORTH
-	.globl gUnknown_82C2BC4
-gUnknown_82C2BC4: @ 0x082C2BC4
 sUnionRoomLocalIds:
 	.byte 9, 8, 7, 2, 6, 5, 4, 3
 sHidePlayerFlags:
 	.2byte 0x02BF, 0x02C0, 0x02C1, 0x02C2, 0x02C3, 0x02C4, 0x02C5, 0x02C6
-	.globl gUnknown_82C2BDC
-gUnknown_82C2BDC: @ 0x082C2BDC
 sDebugFile_RfuUnionTool:
 	.asciz "rfu_union_tool.c"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C2BF0
-gUnknown_82C2BF0: @ 0x082C2BF0
 sRfuUnionToolAssertLine:
 	.4byte 48
-	.globl gUnknown_82C2BF4
-gUnknown_82C2BF4: @ 0x082C2BF4
 sAssert_UnionObjWorkNotNull:
 	.asciz "UnionObjWork != NULL"
-	.globl gUnknown_82C2C09
-gUnknown_82C2C09: @ 0x082C2C09
 sMovement_UnionPlayerExit:
 	.byte 0x9C, 0xFE @ FLY_UP, STEP_END
-	.globl gUnknown_82C2C0B
-gUnknown_82C2C0B: @ 0x082C2C0B
 sMovement_UnionPlayerEnter:
 	.byte 0x9D, 0xFE @ FLY_DOWN, STEP_END
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C2C10
-gUnknown_82C2C10: @ 0x082C2C10
 sWirelessStatusPalettes:
 	@ palette 0
 	.2byte 0x0000, 0x2D6B, 0x2D6B, 0x2D6B, 0x2D6B, 0x2D6B, 0x2D6B, 0x2D6B
@@ -1131,8 +973,6 @@ sWirelessStatusPalettes:
 	@ palette 15
 	.2byte 0x0000, 0x2D6B, 0x2D6B, 0x2D6B, 0x2D6B, 0x2D6B, 0x2D6B, 0x2D6B
 	.2byte 0x1CE7, 0x01F5, 0x2D6B, 0x1CE7, 0x5294, 0x02DF, 0x35AD, 0x2529
-	.globl gUnknown_82C2E10
-gUnknown_82C2E10: @ 0x082C2E10
 sWirelessStatusBgTiles_Gfx:
 	@ GBA LZ77: decompressed=0x800, stream=0x210, stored=0x210
 	.byte 0x10, 0x00, 0x08, 0x00, 0x08, 0xEE, 0xEF, 0xFE, 0xEE, 0x10, 0x03, 0xFF, 0xFF, 0xFF, 0x40, 0xFF
@@ -1168,8 +1008,6 @@ sWirelessStatusBgTiles_Gfx:
 	.byte 0x3F, 0x02, 0x3A, 0x33, 0x10, 0x03, 0xF2, 0x1F, 0x87, 0x32, 0x7F, 0x38, 0x83, 0x22, 0x28, 0x10
 	.byte 0x03, 0xF0, 0x5F, 0x30, 0x5F, 0x7F, 0x82, 0x02, 0xBC, 0x10, 0x03, 0xF0, 0x5F, 0x33, 0x1F, 0xF1
 	.byte 0x7B, 0x31, 0x7B, 0x40, 0x1F, 0xF8, 0xF1, 0x7B, 0x41, 0x7B, 0x33, 0xFF, 0xF1, 0x7B, 0x92, 0x2F
-	.globl gUnknown_82C3020
-gUnknown_82C3020: @ 0x082C3020
 sWirelessStatusBgTiles_Tilemap:
 	@ GBA LZ77: decompressed=0x800, stream=0x193, stored=0x194
 	.byte 0x10, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x02, 0x00, 0x03, 0x00, 0x07, 0x04, 0x00
@@ -1198,13 +1036,9 @@ sWirelessStatusBgTiles_Tilemap:
 	.byte 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xFF, 0xF0, 0x01
 	.byte 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xC0, 0xF0
 	.byte 0x01, 0x10, 0x01, 0x00
-	.globl gUnknown_82C31B4
-gUnknown_82C31B4: @ 0x082C31B4
 sWirelessStatusBgTemplates:
 	.4byte 0x000001F8 @ bg=0, charBase=2, mapBase=31, priority=0
 	.4byte 0x00001081 @ bg=1, charBase=0, mapBase=8, priority=1
-	.globl gUnknown_82C31BC
-gUnknown_82C31BC: @ 0x082C31BC
 sWirelessStatusWindowTemplates:
 	@ WIN_TITLE
 	.byte 0, 6, 0, 24, 3, 15
@@ -1244,8 +1078,6 @@ gText_Rom_2C31DC: @ 0x082C31DC
 	.set gText_PeopleInUnionRoom, gText_Rom_2C31DC + 0x2A
 	.globl gText_PeopleCommunicating
 	.set gText_PeopleCommunicating, gText_Rom_2C31DC + 0x38
-	.globl gUnknown_82C3220
-gUnknown_82C3220: @ 0x082C3220
 
 	@ src/strings.c:1030 gText_F700Players
 	.globl gText_Rom_2C3220
@@ -1302,16 +1134,12 @@ gText_Rom_2C3232: @ 0x082C3232
 	.space 0x5 - (. - gText_Rom_2C3232)
 	.endif
 	.space 0x1, 0x00
-	.globl gUnknown_82C3238
-gUnknown_82C3238: @ 0x082C3238
 sWirelessStatusHeaderTexts:
 	.4byte gText_WirelessCommStatus
 	.4byte gText_PeopleTrading
 	.4byte gText_PeopleBattling
 	.4byte gText_PeopleInUnionRoom
 	.4byte gText_PeopleCommunicating
-	.globl gUnknown_82C324C
-gUnknown_82C324C: @ 0x082C324C
 sWirelessStatusActivityGroupInfo:
 	.byte 0x01, 0x01, 2 @ BATTLE_SINGLE, BATTLE, 2
 	.byte 0x02, 0x01, 2 @ BATTLE_DOUBLE, BATTLE, 2
@@ -1345,12 +1173,8 @@ sWirelessStatusActivityGroupInfo:
 	.byte 0x1C, 0x01, 2 @ BATTLE_TOWER, BATTLE, 2
 	.byte 0x0E, 0x01, 2 @ BATTLE_TOWER_OPEN, BATTLE, 2
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C32AC
-gUnknown_82C32AC: @ 0x082C32AC
 sUnionRoomBattleBgTemplates:
 	.4byte 0x000001FC @ bg=0, charBase=3, mapBase=31
-	.globl gUnknown_82C32B0
-gUnknown_82C32B0: @ 0x082C32B0
 sUnionRoomBattleWindowTemplates:
 	@ message window
 	.byte 0, 3, 15, 24, 4, 14
@@ -1358,12 +1182,8 @@ sUnionRoomBattleWindowTemplates:
 	@ DUMMY_WIN_TEMPLATE
 	.byte 255, 0, 0, 0, 0, 0
 	.2byte 0x0000
-	.globl gUnknown_82C32C0
-gUnknown_82C32C0: @ 0x082C32C0
 sUnionRoomBattleTextColors:
 	.byte 1, 2, 3 @ WHITE, DARK_GRAY, LIGHT_GRAY
-	.globl gUnknown_82C32C3
-gUnknown_82C32C3: @ 0x082C32C3
 
 	@ src/strings.c:1145 gText_CommStandbyAwaitingOtherPlayer
 	.globl gText_Rom_2C32C3
@@ -1377,8 +1197,6 @@ gText_Rom_2C32C3: @ 0x082C32C3
 	.if (. - gText_Rom_2C32C3) < 0x1e
 	.space 0x1e - (. - gText_Rom_2C32C3)
 	.endif
-	.globl gUnknown_82C32E1
-gUnknown_82C32E1: @ 0x082C32E1
 
 	@ src/strings.c:1146 gText_BattleWasRefused
 	.globl gText_Rom_2C32E1
@@ -1392,8 +1210,6 @@ gText_Rom_2C32E1: @ 0x082C32E1
 	.if (. - gText_Rom_2C32E1) < 0x12
 	.space 0x12 - (. - gText_Rom_2C32E1)
 	.endif
-	.globl gUnknown_82C32F3
-gUnknown_82C32F3: @ 0x082C32F3
 
 	@ src/strings.c:1147 gText_RefusedBattle
 	.globl gText_Rom_2C32F3
@@ -1407,32 +1223,20 @@ gText_Rom_2C32F3: @ 0x082C32F3
 	.if (. - gText_Rom_2C32F3) < 0x11
 	.space 0x11 - (. - gText_Rom_2C32F3)
 	.endif
-	.globl gUnknown_82C3304
-gUnknown_82C3304: @ 0x082C3304
 sReceivedGiftFlags:
 	.2byte 0x013A, 0x013B, 0x013C, 0x013D, 0x013E, 0x013F, 0x0140, 0x0141, 0x0142, 0x0143, 0x0144, 0x0145, 0x0146, 0x0147, 0x0148, 0x0149, 0x014A, 0x014B, 0x014C, 0x014D
-	.globl gUnknown_82C332C
-gUnknown_82C332C: @ 0x082C332C
 sDebugFile_MEvent:
 	.asciz "mevent.c"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C3338
-gUnknown_82C3338: @ 0x082C3338
 sMEventAssertLine:
 	.4byte 48
-	.globl gUnknown_82C333C
-gUnknown_82C333C: @ 0x082C333C
 sCard_TextColorTable:
 	.byte 0, 2, 3 @ TRANSPARENT, DARK_GRAY, LIGHT_GRAY
 	.byte 0, 1, 2 @ TRANSPARENT, WHITE, DARK_GRAY
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C3344
-gUnknown_82C3344: @ 0x082C3344
 sCard_FooterTextOffsets:
 	.byte 7, 4, 7
 	.byte 0 @ alignment
-	.globl gUnknown_82C3348
-gUnknown_82C3348: @ 0x082C3348
 sCard_WindowTemplates:
 	@ CARD_WIN_HEADER
 	.byte 1, 1, 1, 25, 4, 2
@@ -1751,14 +1555,10 @@ sStampShadowGfx: @ 0x082C41C8
 	.byte 0x23, 0x10, 0x6B, 0x10, 0x73, 0x10, 0x7B, 0xC0, 0x2F, 0x50, 0x47, 0xF7, 0x10, 0x73, 0x50, 0x5F
 	.byte 0xF0, 0x1F, 0x20, 0x01, 0x12, 0xF0, 0x1F, 0x10, 0x1F, 0x00, 0x67, 0xF0, 0x00, 0x6B, 0x10, 0x73
 	.byte 0x10, 0x7B, 0xD0, 0x01
-	.globl gUnknown_82C422C
-gUnknown_82C422C: @ 0x082C422C
 sSpriteSheet_StampShadow:
 	.4byte sStampShadowGfx
 	.2byte 0x0100 @ size
 	.2byte 0x8000 @ TAG_STAMP_SHADOW
-	.globl gUnknown_82C4234
-gUnknown_82C4234: @ 0x082C4234
 sSpritePalettes_StampShadow:
 	.4byte sStampShadowPal1
 	.2byte 0x8000 @ TAG_STAMP_SHADOW
@@ -1784,8 +1584,6 @@ sSpritePalettes_StampShadow:
 	.4byte sStampShadowPal8
 	.2byte 0x8000 @ TAG_STAMP_SHADOW
 	.2byte 0 @ padding
-	.globl gUnknown_82C4274
-gUnknown_82C4274: @ 0x082C4274
 sSpriteTemplate_StampShadow:
 	.2byte 0x8000 @ tileTag
 	.2byte 0x8000 @ paletteTag
@@ -1794,8 +1592,6 @@ sSpriteTemplate_StampShadow:
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ gDummySpriteAffineAnimTable
 	.4byte SpriteCallbackDummy @ SpriteCallbackDummy
-	.globl gUnknown_82C428C
-gUnknown_82C428C: @ 0x082C428C
 sCardGraphics:
 	@ bgType 0
 	.byte 0x01, 0x00, 0x00, 0x00 @ packed palettes + padding
@@ -1837,14 +1633,10 @@ sCardGraphics:
 	.4byte sWonderCardBgGfx8
 	.4byte sWonderCardBgTilemap8
 	.4byte sWonderCardBgPal8
-	.globl gUnknown_82C430C
-gUnknown_82C430C: @ 0x082C430C
 sNews_TextColorTable:
 	.byte 0, 2, 3 @ TRANSPARENT, DARK_GRAY, LIGHT_GRAY
 	.byte 0, 1, 2 @ TRANSPARENT, WHITE, DARK_GRAY
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C4314
-gUnknown_82C4314: @ 0x082C4314
 sNews_WindowTemplates:
 	@ NEWS_WIN_TITLE
 	.byte 0, 1, 0, 28, 3, 2
@@ -1852,8 +1644,6 @@ sNews_WindowTemplates:
 	@ NEWS_WIN_BODY
 	.byte 2, 1, 3, 28, 20, 2
 	.2byte 0x007C
-	.globl gUnknown_82C4324
-gUnknown_82C4324: @ 0x082C4324
 sNews_ArrowsTemplate:
 	@ ScrollArrowsTemplate (up/down arrows, thresholds/tags)
 	.byte 0x02, 0xE8, 0x18, 0x03, 0xE8, 0x98, 0x00, 0x00, 0x02, 0x00, 0x00, 0x10, 0x00, 0x10, 0x00, 0x00
@@ -2002,8 +1792,6 @@ sWonderNewsTilemap8: @ 0x082C4918
 	.byte 0xF0, 0x77, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x77, 0xF0, 0x01, 0xFF, 0xF0, 0x01, 0xF0, 0x77, 0xF0
 	.byte 0x77, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x77, 0xF0, 0x01, 0xF0, 0x01, 0xFF, 0xF0, 0x77, 0xF0, 0x01
 	.byte 0xF0, 0x01, 0xF0, 0x77, 0xF0, 0x77, 0xF0, 0x01, 0xF0, 0x01, 0x10, 0x77
-	.globl gUnknown_82C49F4
-gUnknown_82C49F4: @ 0x082C49F4
 sNewsGraphics:
 	@ bgType 0
 	.byte 0x01, 0x00, 0x00, 0x00 @ packed palettes + padding
@@ -2045,45 +1833,29 @@ sNewsGraphics:
 	.4byte sWonderNewsGfx8
 	.4byte sWonderNewsTilemap8
 	.4byte sWonderNewsPal8
-	.globl gUnknown_82C4A74
-gUnknown_82C4A74: @ 0x082C4A74
 sDebugFile_MEventServer:
 	.asciz "mevent_server.c"
-	.globl gUnknown_82C4A84
-gUnknown_82C4A84: @ 0x082C4A84
 sAssert_MEventSendSize:
 	.asciz "size <= ME_SEND_BUF_SIZE"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C4AA0
-gUnknown_82C4AA0: @ 0x082C4AA0
 sAssert_MEventCmdParameterNull:
 	.asciz "cmd->parameter == NULL"
 	.space 1, 0 @ alignment
-	.globl gUnknown_82C4AB8
-gUnknown_82C4AB8: @ 0x082C4AB8
 sAssert_MEventCmdFlagFalse:
 	.asciz "cmd->flag == FALSE"
 	.space 1, 0 @ alignment
-	.globl gUnknown_82C4ACC
-gUnknown_82C4ACC: @ 0x082C4ACC
 sAssert_MEventCmdFlagFalseParameterNull:
 	.asciz "cmd->flag == FALSE && cmd->parameter == NULL"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C4AFC
-gUnknown_82C4AFC: @ 0x082C4AFC
 sMEventServerMainSeqFuncs:
 	.4byte common_mainseq_0
 	.4byte common_mainseq_1
 	.4byte common_mainseq_2
 	.4byte common_mainseq_3
 	.4byte common_mainseq_4
-	.globl gUnknown_82C4B10
-gUnknown_82C4B10: @ 0x082C4B10
 sAssert_MEventServerMainSeqInRange:
 	.asciz "svr->mainseqno < NELEMS(func_tbl)"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C4B34
-gUnknown_82C4B34: @ 0x082C4B34
 sMEventClientMainSeqFuncs:
 	.4byte mainseq_0 @ Client_Init
 	.4byte mainseq_1 @ Client_Done
@@ -2096,8 +1868,6 @@ sMEventClientMainSeqFuncs:
 sText_CanceledReadingCard: @ 0x082C4B54
 	.string "カードの　よみこみを\nキャンセル　しました$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C4B6C
-gUnknown_82C4B6C: @ 0x082C4B6C
 gMysteryGiftClientScript_Init: @ 0x082C4B6C
 	.4byte 2 @ CLI_RECV
 	.4byte 0x10
@@ -2375,8 +2145,6 @@ sServerScript_NothingSent: @ 0x082C4F30
 	.4byte 0 @ SVR_RETURN
 	.4byte 0x0 @ flag / size
 	.4byte 0
-	.globl gUnknown_82C4F60
-gUnknown_82C4F60: @ 0x082C4F60
 gMysteryGiftServerScript_SendWonderNews: @ 0x082C4F60
 	.4byte 27 @ SVR_COPY_SAVED_NEWS
 	.4byte 0x0 @ flag / size
@@ -2402,8 +2170,6 @@ gMysteryGiftServerScript_SendWonderNews: @ 0x082C4F60
 	.4byte 3 @ SVR_GOTO
 	.4byte 0x0 @ flag / size
 	.4byte sServerScript_SendNews
-	.globl gUnknown_82C4FC0
-gUnknown_82C4FC0: @ 0x082C4FC0
 gMysteryGiftServerScript_SendWonderCard: @ 0x082C4FC0
 	.4byte 26 @ SVR_COPY_SAVED_CARD
 	.4byte 0x0 @ flag / size
@@ -2441,12 +2207,8 @@ gMysteryGiftServerScript_SendWonderCard: @ 0x082C4FC0
 	.4byte 3 @ SVR_GOTO
 	.4byte 0x0 @ flag / size
 	.4byte sServerScript_HasCard
-	.globl gUnknown_82C5050
-gUnknown_82C5050: @ 0x082C5050
 sDebugFile_MEventNews: @ 0x082C5050
 	.asciz "menews_jisan.c"
 	.byte 0 @ alignment
-	.globl gUnknown_82C5060
-gUnknown_82C5060: @ 0x082C5060
 sMEventNewsAssertLine: @ 0x082C5060
 	.4byte 48
