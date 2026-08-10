@@ -9,7 +9,7 @@ gText_Rom_4CF8AB: @ 0x084CF8AB
 	.space 0x6 - (. - gText_Rom_4CF8AB)
 	.endif
 	@ analyzed canonical ROM range 0x084CF8B1-0x084DD88B
-sAnalyzedData_084CF8B1: @ 0x084CF8B1
+gObjectFieldEffectFrameGfx_JP_084CF8B1: @ 0x084CF8B1
 	@ Object-event / field-effect 4bpp frame payloads proven by struct SpriteFrameImage references.
 	@ unreferenced payload gap: 0x084CF8B1-0x084D414B
 	.byte 0x00, 0x00, 0x00, 0xFE, 0x00, 0x00, 0x00, 0xFE, 0x00, 0x00, 0x00, 0xFE, 0xFF, 0xFF, 0x00, 0xEE

@@ -9,7 +9,7 @@ gText_Rom_4BE0F1: @ 0x084BE0F1
 	.space 0x4 - (. - gText_Rom_4BE0F1)
 	.endif
 	@ analyzed canonical ROM range 0x084BE0F5-0x084CF8AA
-sAnalyzedData_084BE0F5: @ 0x084BE0F5
+gObjectEventFrameGfx_JP_084BE0F5: @ 0x084BE0F5
 	@ Object-event / field-effect 4bpp frame payloads proven by struct SpriteFrameImage references.
 	@ 0x084BE0F5-0x084BE12B also lies inside the declared 0x084BDCAC ObjectEvent frame range.
 	.byte 0xFF, 0xFF, 0xFF, 0xFF, 0xDF, 0x88, 0xFD, 0xFF, 0x68, 0x88, 0x86, 0xFF, 0x87, 0x66, 0x78, 0xFF
