@@ -4,7 +4,6 @@ gBattleAnimStatusEffectsData_0851769C:
 	.globl gUnknown_851769C
 gUnknown_851769C: @ 0x0851769C
 	@ analyzed canonical ROM range 0x0851769C-0x085176A3
-sAnalyzedData_0851769C: @ 0x0851769C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x04, 0x00, 0x00, 0x00, 0x8C, 0x76, 0x51, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x085176A4: battle_anim_status_effects.s: sub_080A97BC
@@ -21,7 +20,6 @@ gBattleAnimStatusEffectsData_085176BC:
 	.globl gUnknown_85176BC
 gUnknown_85176BC: @ 0x085176BC
 	@ analyzed canonical ROM range 0x085176BC-0x08517A9F
-sAnalyzedData_085176BC: @ 0x085176BC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x98, 0x27, 0x98, 0x27, 0x10, 0xD0, 0x4F, 0x08, 0x04, 0xF3, 0x2B, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x0D, 0x97, 0x0A, 0x08, 0x6E, 0x32, 0x00, 0x00, 0x72, 0x52, 0xF6, 0x5E
@@ -92,9 +90,8 @@ gTitleScreenData_08517AA0:
 	.globl gUnknown_8517AA0
 gUnknown_8517AA0: @ 0x08517AA0
 	@ analyzed canonical ROM range 0x08517AA0-0x08517B57
-sAnalyzedGfx_08517AA0: @ 0x08517AA0
 	.incbin "build/graphics/analyzed/gunknown_8517aa0_08517aa0.4bpp.lz"
-	.if (. - sAnalyzedGfx_08517AA0) != 0xB8
+	.if (. - gUnknown_8517AA0) != 0xB8
 	.error "gUnknown_8517AA0 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08517B58: title_screen.s: CB2_InitTitleScreen
@@ -103,7 +100,6 @@ gTitleScreenData_08517B58:
 	.globl gUnknown_8517B58
 gUnknown_8517B58: @ 0x08517B58
 	@ analyzed canonical ROM range 0x08517B58-0x08517C17
-sAnalyzedData_08517B58: @ 0x08517B58
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0x42, 0x08, 0x21, 0x04, 0x29, 0x25, 0xE7, 0x1C, 0xC6, 0x18, 0xA5, 0x14, 0xCE, 0x3D
 	.byte 0x6B, 0x2D, 0xB5, 0x56, 0x94, 0x52, 0x52, 0x4E, 0x30, 0x46, 0x0F, 0x42, 0xAC, 0x35, 0xF6, 0x5E
@@ -123,7 +119,6 @@ gTitleScreenData_08517C18:
 	.globl gUnknown_8517C18
 gUnknown_8517C18: @ 0x08517C18
 	@ analyzed canonical ROM range 0x08517C18-0x08519AB3
-sAnalyzedData_08517C18: @ 0x08517C18
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0x00, 0x28, 0x00, 0x3F, 0x00, 0x00, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0
 	.byte 0x01, 0xF0, 0x01, 0xF2, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0x10, 0x01, 0x02, 0x02, 0x40, 0x01
@@ -621,9 +616,8 @@ gTitleScreenData_08519AB4:
 	.globl gUnknown_8519AB4
 gUnknown_8519AB4: @ 0x08519AB4
 	@ analyzed canonical ROM range 0x08519AB4-0x0851A297
-sAnalyzedGfx_08519AB4: @ 0x08519AB4
 	.incbin "build/graphics/analyzed/gunknown_8519ab4_08519ab4.4bpp.lz"
-	.if (. - sAnalyzedGfx_08519AB4) != 0x7E4
+	.if (. - gUnknown_8519AB4) != 0x7E4
 	.error "gUnknown_8519AB4 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0851A298: title_screen.s: CB2_InitTitleScreen
@@ -632,7 +626,6 @@ gTitleScreenData_0851A298:
 	.globl gUnknown_851A298
 gUnknown_851A298: @ 0x0851A298
 	@ analyzed canonical ROM range 0x0851A298-0x0851A6E7
-sAnalyzedData_0851A298: @ 0x0851A298
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0x00, 0x08, 0x00, 0x3C, 0x9F, 0xE0, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0x10, 0x01, 0x00
 	.byte 0x00, 0x0F, 0x00, 0x00, 0x9E, 0xE0, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0x10, 0x01, 0x9E, 0x10
@@ -709,9 +702,8 @@ gTitleScreenData_0851A6E8:
 	.globl gUnknown_851A6E8
 gUnknown_851A6E8: @ 0x0851A6E8
 	@ analyzed canonical ROM range 0x0851A6E8-0x0851A9CB
-sAnalyzedGfx_0851A6E8: @ 0x0851A6E8
 	.incbin "build/graphics/analyzed/gunknown_851a6e8_0851a6e8.4bpp.lz"
-	.if (. - sAnalyzedGfx_0851A6E8) != 0x2E4
+	.if (. - gUnknown_851A6E8) != 0x2E4
 	.error "gUnknown_851A6E8 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0851A9CC: title_screen.s: CB2_InitTitleScreen
@@ -720,9 +712,8 @@ gTitleScreenData_0851A9CC:
 	.globl gUnknown_851A9CC
 gUnknown_851A9CC: @ 0x0851A9CC
 	@ analyzed canonical ROM range 0x0851A9CC-0x0851AC0B
-sAnalyzedGfx_0851A9CC: @ 0x0851A9CC
 	.incbin "build/graphics/analyzed/gunknown_851a9cc_0851a9cc.4bpp.lz"
-	.if (. - sAnalyzedGfx_0851A9CC) != 0x240
+	.if (. - gUnknown_851A9CC) != 0x240
 	.error "gUnknown_851A9CC compressed size mismatch"
 	.endif
 	.globl gUnknown_851AC0C

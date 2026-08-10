@@ -4,7 +4,6 @@ gFrontierPassData_08548168:
 	.globl gUnknown_8548168
 gUnknown_8548168: @ 0x08548168
 	@ analyzed canonical ROM range 0x08548168-0x0854960F
-sAnalyzedData_08548168: @ 0x08548168
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0x00, 0x1C, 0x00, 0x33, 0x00, 0x00, 0xF0, 0x01, 0x90, 0x01, 0xEE, 0xEE, 0xF0, 0x01, 0xF0
 	.byte 0x01, 0x8B, 0x00, 0x01, 0x1E, 0x11, 0x11, 0x30, 0x03, 0xE1, 0x00, 0x0B, 0x60, 0x03, 0x61, 0x11
@@ -343,9 +342,8 @@ gFrontierPassData_08549610:
 	.globl gUnknown_8549610
 gUnknown_8549610: @ 0x08549610
 	@ analyzed canonical ROM range 0x08549610-0x085498F7
-sAnalyzedGfx_08549610: @ 0x08549610
 	.incbin "build/graphics/analyzed/gunknown_8549610_08549610.4bpp.lz"
-	.if (. - sAnalyzedGfx_08549610) != 0x2E8
+	.if (. - gUnknown_8549610) != 0x2E8
 	.error "gUnknown_8549610 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085498F8: frontier_pass.s: InitFrontierMap
@@ -354,9 +352,8 @@ gFrontierPassData_085498F8:
 	.globl gUnknown_85498F8
 gUnknown_85498F8: @ 0x085498F8
 	@ analyzed canonical ROM range 0x085498F8-0x08549B57
-sAnalyzedGfx_085498F8: @ 0x085498F8
 	.incbin "build/graphics/analyzed/gunknown_85498f8_085498f8.4bpp.lz"
-	.if (. - sAnalyzedGfx_085498F8) != 0x260
+	.if (. - gUnknown_85498F8) != 0x260
 	.error "gUnknown_85498F8 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08549B58: frontier_pass.s: InitFrontierPass
@@ -365,7 +362,6 @@ gFrontierPassData_08549B58:
 	.globl gUnknown_8549B58
 gUnknown_8549B58: @ 0x08549B58
 	@ analyzed canonical ROM range 0x08549B58-0x08549DB7
-sAnalyzedData_08549B58: @ 0x08549B58
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0xA0, 0x02, 0x00, 0x00, 0x00, 0x71, 0x01, 0x71, 0x02, 0x71, 0x03, 0x71, 0x00, 0x04, 0x71
 	.byte 0x05, 0x71, 0x06, 0x71, 0x07, 0x71, 0x00, 0x08, 0x71, 0x09, 0x71, 0x0A, 0x71, 0x0B, 0x71, 0x00
@@ -411,7 +407,6 @@ gFrontierPassData_08549DB8:
 	.globl gUnknown_8549DB8
 gUnknown_8549DB8: @ 0x08549DB8
 	@ analyzed canonical ROM range 0x08549DB8-0x08549DCF
-sAnalyzedData_08549DB8: @ 0x08549DB8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0039, 0x003A, 0x003B, 0x003C, 0x003D, 0x003E, 0x0049, 0x004A
 	.2byte 0x004B, 0x004C, 0x004D, 0x004E
@@ -421,7 +416,6 @@ gFrontierPassData_08549DD0:
 	.globl gUnknown_8549DD0
 gUnknown_8549DD0: @ 0x08549DD0
 	@ analyzed canonical ROM range 0x08549DD0-0x08549DE7
-sAnalyzedData_08549DD0: @ 0x08549DD0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0003, 0x0004, 0x0005, 0x0006, 0x0007, 0x0008, 0x000A, 0x000B
 	.2byte 0x000C, 0x000D, 0x000E, 0x000F
@@ -431,7 +425,6 @@ gFrontierPassData_08549DE8:
 	.globl gUnknown_8549DE8
 gUnknown_8549DE8: @ 0x08549DE8
 	@ analyzed canonical ROM range 0x08549DE8-0x08549E1F
-sAnalyzedData_08549DE8: @ 0x08549DE8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0x90, 0x00, 0x00, 0x10, 0x59, 0x00, 0x5A, 0xF0, 0x01, 0x00, 0x5B, 0x00, 0x69, 0x20, 0x00
 	.byte 0x6A, 0xF0, 0x01, 0x00, 0x6B, 0x00, 0x79, 0x00, 0x40, 0x7A, 0xF0, 0x01, 0x00, 0x7B, 0x00, 0x5C
@@ -443,9 +436,8 @@ gFrontierPassData_08549E20:
 	.globl gUnknown_8549E20
 gUnknown_8549E20: @ 0x08549E20
 	@ analyzed canonical ROM range 0x08549E20-0x0854AE1B
-sAnalyzedGfx_08549E20: @ 0x08549E20
 	.incbin "build/graphics/analyzed/gunknown_8549e20_08549e20.4bpp.lz"
-	.if (. - sAnalyzedGfx_08549E20) != 0xFFC
+	.if (. - gUnknown_8549E20) != 0xFFC
 	.error "gUnknown_8549E20 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0854AE1C: frontier_pass.s: InitFrontierPass
@@ -454,7 +446,6 @@ gFrontierPassData_0854AE1C:
 	.globl gUnknown_854AE1C
 gUnknown_854AE1C: @ 0x0854AE1C
 	@ analyzed canonical ROM range 0x0854AE1C-0x0854AF03
-sAnalyzedData_0854AE1C: @ 0x0854AE1C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0xFC, 0x00, 0x00, 0x00, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x00, 0x0C, 0x0D
 	.byte 0x0E, 0x0F, 0x14, 0x15, 0x16, 0x17, 0x00, 0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F, 0x00
@@ -477,7 +468,6 @@ gFrontierPassData_0854AF04:
 	.globl gUnknown_854AF04
 gUnknown_854AF04: @ 0x0854AF04
 	@ analyzed canonical ROM range 0x0854AF04-0x0854AF0B
-sAnalyzedData_0854AF04: @ 0x0854AF04
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x00D8, 0x0020, 0x00D8, 0x0080
 	@ pret/pokeemerald-jp direct xref for 0x0854AF0C: frontier_pass.s: InitFrontierPass
@@ -486,7 +476,6 @@ gFrontierPassData_0854AF0C:
 	.globl gUnknown_854AF0C
 gUnknown_854AF0C: @ 0x0854AF0C
 	@ analyzed canonical ROM range 0x0854AF0C-0x0854AF17
-sAnalyzedData_0854AF0C: @ 0x0854AF0C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x11F8, 0x0000, 0x21E1, 0x0000, 0x0BD6, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0854AF18: frontier_pass.s: InitFrontierMap
@@ -495,7 +484,6 @@ gFrontierPassData_0854AF18:
 	.globl gUnknown_854AF18
 gUnknown_854AF18: @ 0x0854AF18
 	@ analyzed canonical ROM range 0x0854AF18-0x0854AF23
-sAnalyzedData_0854AF18: @ 0x0854AF18
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x01F8, 0x0000, 0x11E1, 0x0000, 0x21D2, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0854AF24: frontier_pass.s: InitFrontierPass
@@ -504,7 +492,6 @@ gFrontierPassData_0854AF24:
 	.globl gUnknown_854AF24
 gUnknown_854AF24: @ 0x0854AF24
 	@ analyzed canonical ROM range 0x0854AF24-0x0854AF4B
-sAnalyzedData_0854AF24: @ 0x0854AF24
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0200, 0x0C03, 0x0F03, 0x0001, 0x0200, 0x0C0A, 0x0F03, 0x0026
 	.2byte 0x0200, 0x0C0D, 0x0F04, 0x004B, 0x0100, 0x1C12, 0x0F03, 0x007C
@@ -515,7 +502,6 @@ gFrontierPassData_0854AF4C:
 	.globl gUnknown_854AF4C
 gUnknown_854AF4C: @ 0x0854AF4C
 	@ analyzed canonical ROM range 0x0854AF4C-0x0854AF6B
-sAnalyzedData_0854AF4C: @ 0x0854AF4C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0000, 0x0F01, 0x0F05, 0x0001, 0x1400, 0x0A01, 0x0F0E, 0x004D
 	.2byte 0x0300, 0x1A10, 0x0F04, 0x00DA, 0x00FF, 0x0000, 0x0000, 0x0000
@@ -525,7 +511,6 @@ gFrontierPassData_0854AF6C:
 	.globl gUnknown_854AF6C
 gUnknown_854AF6C: @ 0x0854AF6C
 	@ analyzed canonical ROM range 0x0854AF6C-0x0854AF6E
-sAnalyzedData_0854AF6C: @ 0x0854AF6C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x02, 0x03
 	@ pret/pokeemerald-jp direct xref for 0x0854AF6F: frontier_pass.s: HandleFrontierMapCursorMove, PrintAreaDescription, PrintOnFrontierMap
@@ -534,7 +519,6 @@ gFrontierPassData_0854AF6F:
 	.globl gUnknown_854AF6F
 gUnknown_854AF6F: @ 0x0854AF6F
 	@ analyzed canonical ROM range 0x0854AF6F-0x0854AF71
-sAnalyzedData_0854AF6F: @ 0x0854AF6F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x01, 0x09
 	@ pret/pokeemerald-jp direct xref for 0x0854AF72: frontier_pass.s: PrintOnFrontierMap
@@ -543,7 +527,6 @@ gFrontierPassData_0854AF72:
 	.globl gUnknown_854AF72
 gUnknown_854AF72: @ 0x0854AF72
 	@ analyzed canonical ROM range 0x0854AF72-0x0854AF77
-sAnalyzedData_0854AF72: @ 0x0854AF72
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x04, 0x05, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0854AF78: frontier_pass.s: GetCursorAreaFromCoords, LoadCursorAndSymbolSprites
@@ -552,7 +535,6 @@ gFrontierPassData_0854AF78:
 	.globl gUnknown_854AF78
 gUnknown_854AF78: @ 0x0854AF78
 	@ analyzed canonical ROM range 0x0854AF78-0x0854AFDF
-sAnalyzedData_0854AF78: @ 0x0854AF78
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x001C, 0x004C, 0x0084, 0x00DC, 0x0054, 0x0084, 0x0084, 0x00DC
 	.2byte 0x0050, 0x0066, 0x0014, 0x006C, 0x0000, 0x0010, 0x0098, 0x00F0
@@ -567,7 +549,6 @@ gFrontierPassData_0854AFE0:
 	.globl gUnknown_854AFE0
 gUnknown_854AFE0: @ 0x0854AFE0
 	@ analyzed canonical ROM range 0x0854AFE0-0x0854AFF7
-sAnalyzedData_0854AFE0: @ 0x0854AFE0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x54, 0x91, 0x54, 0x08, 0x00, 0x01, 0x00, 0x00, 0x10, 0x95, 0x54, 0x08, 0x00, 0x04, 0x01, 0x00
 	.byte 0xF0, 0x91, 0x54, 0x08, 0x80, 0x03, 0x02, 0x00
@@ -577,7 +558,6 @@ gFrontierPassData_0854AFF8:
 	.globl gUnknown_854AFF8
 gUnknown_854AFF8: @ 0x0854AFF8
 	@ analyzed canonical ROM range 0x0854AFF8-0x0854B007
-sAnalyzedData_0854AFF8: @ 0x0854AFF8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x9454, 0x0854, 0x0100, 0x0004, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0854B008: frontier_pass.s: InitFrontierMapSprites, LoadCursorAndSymbolSprites
@@ -586,7 +566,6 @@ gFrontierPassData_0854B008:
 	.globl gUnknown_854B008
 gUnknown_854B008: @ 0x0854B008
 	@ analyzed canonical ROM range 0x0854B008-0x0854B0D7
-sAnalyzedData_0854B008: @ 0x0854B008
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x68E4, 0x0854, 0x0000, 0x0000, 0x6904, 0x0854, 0x0001, 0x0000
 	.2byte 0x6924, 0x0854, 0x0002, 0x0000, 0x6944, 0x0854, 0x0003, 0x0000
@@ -607,7 +586,6 @@ gFrontierPassData_0854B0D8:
 	.globl gUnknown_854B0D8
 gUnknown_854B0D8: @ 0x0854B0D8
 	@ analyzed canonical ROM range 0x0854B0D8-0x0854B107
-sAnalyzedData_0854B0D8: @ 0x0854B0D8
 	@ pointer/nullable table
 	.4byte 0 @ +0x0
 	.4byte 0x084FD018 @ +0x4
@@ -643,7 +621,6 @@ gFrontierPassData_0854B138:
 	.globl gUnknown_854B138
 gUnknown_854B138: @ 0x0854B138
 	@ analyzed canonical ROM range 0x0854B138-0x0854B173
-sAnalyzedData_0854B138: @ 0x0854B138
 	@ pointer/nullable table
 	.4byte gText_Rom_5CCB94 @ +0x0
 	.4byte gText_Rom_5CCAB5 @ +0x4
@@ -666,7 +643,6 @@ gFrontierPassData_0854B174:
 	.globl gUnknown_854B174
 gUnknown_854B174: @ 0x0854B174
 	@ analyzed canonical ROM range 0x0854B174-0x0854B1E3
-sAnalyzedData_0854B174: @ 0x0854B174
 	@ pointer/nullable table
 	.4byte gText_Rom_5CCBA8 @ +0x0
 	.4byte gText_Rom_5CCBE0 @ +0x4
@@ -702,7 +678,6 @@ gPokemonStorageSystemData_0854B1E4:
 	.globl gUnknown_854B1E4
 gUnknown_854B1E4: @ 0x0854B1E4
 	@ analyzed canonical ROM range 0x0854B1E4-0x0854B20B
-sAnalyzedData_0854B1E4: @ 0x0854B1E4
 	@ pointer/nullable table
 	.4byte gText_Rom_5CB449 @ +0x0
 	.4byte gText_Rom_5CB47A @ +0x4
@@ -720,7 +695,6 @@ gPokemonStorageSystemData_0854B20C:
 	.globl gUnknown_854B20C
 gUnknown_854B20C: @ 0x0854B20C
 	@ analyzed canonical ROM range 0x0854B20C-0x0854B233
-sAnalyzedData_0854B20C: @ 0x0854B20C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x1101, 0x0F0A, 0x0001, 0x0000, 0x0005, 0xFFFF, 0x0000
 	.2byte 0x0004, 0x0005, 0xFFFF, 0x0000, 0x0006, 0x0005, 0xFFFF, 0x0000
@@ -731,7 +705,6 @@ gPokemonStorageSystemData_0854B234:
 	.globl gUnknown_854B234
 gUnknown_854B234: @ 0x0854B234
 	@ analyzed canonical ROM range 0x0854B234-0x0854B257
-sAnalyzedData_0854B234: @ 0x0854B234
 	@ pointer/nullable table
 	.4byte 0x0854B214 @ +0x0
 	.4byte 0x0854B21C @ +0x4

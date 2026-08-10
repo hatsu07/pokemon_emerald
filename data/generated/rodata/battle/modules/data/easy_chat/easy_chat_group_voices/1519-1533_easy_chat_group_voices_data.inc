@@ -90,7 +90,8 @@ gText_Rom_575CDA: @ 0x08575CDA
 	.space 0x5 - (. - gText_Rom_575CDA)
 	.endif
 	@ analyzed canonical ROM range 0x08575CDF-0x08575FDB
-sAnalyzedData_08575CDF: @ 0x08575CDF
+	.globl gText_Rom_575CDF
+gText_Rom_575CDF: @ 0x08575CDF
 	@ struct EasyChatWordInfo[]; format verified against every 12-byte record
 	@ prefix before aligned word-info array: 0x9 bytes
 	.byte 0x2C, 0x1A, 0x1A, 0x1A, 0xAB, 0xFF, 0x00, 0x00, 0x00
@@ -103,7 +104,7 @@ gEasyChatGroup_Voices: @ 0x08575CE8
 	easy_chat_word_info 0x08575BFE, 4, 1 @ word 4
 	easy_chat_word_info 0x08575C00, 5, 1 @ word 5
 	easy_chat_word_info gText_Rom_575C03, 6, 1 @ word 6
-	easy_chat_word_info sAnalyzedData_08575C07, 7, 1 @ word 7
+	easy_chat_word_info gText_Rom_575C07, 7, 1 @ word 7
 	easy_chat_word_info gText_Rom_575C09, 8, 1 @ word 8
 	easy_chat_word_info gText_Rom_575C0D, 9, 1 @ word 9
 	easy_chat_word_info gText_Rom_575C11, 10, 1 @ word 10
@@ -158,4 +159,4 @@ gEasyChatGroup_Voices: @ 0x08575CE8
 	easy_chat_word_info gText_Rom_575CD1, 59, 1 @ word 59
 	easy_chat_word_info 0x08575CD7, 60, 1 @ word 60
 	easy_chat_word_info gText_Rom_575CDA, 61, 1 @ word 61
-	easy_chat_word_info sAnalyzedData_08575CDF, 62, 1 @ word 62
+	easy_chat_word_info gText_Rom_575CDF, 62, 1 @ word 62

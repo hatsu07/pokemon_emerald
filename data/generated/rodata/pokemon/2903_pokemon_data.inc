@@ -4,9 +4,8 @@ gWallclockData_08591074:
 	.globl gUnknown_8591074
 gUnknown_8591074: @ 0x08591074
 	@ analyzed canonical ROM range 0x08591074-0x0859130B
-sAnalyzedGfx_08591074: @ 0x08591074
 	.incbin "build/graphics/analyzed/gunknown_8591074_08591074.4bpp.lz"
-	.if (. - sAnalyzedGfx_08591074) != 0x298
+	.if (. - gUnknown_8591074) != 0x298
 	.error "gUnknown_8591074 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0859130C: wallclock.s: LoadWallClockGraphics
@@ -15,7 +14,6 @@ gWallclockData_0859130C:
 	.globl gUnknown_859130C
 gUnknown_859130C: @ 0x0859130C
 	@ analyzed canonical ROM range 0x0859130C-0x08591C03
-sAnalyzedData_0859130C: @ 0x0859130C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x10, 0x00, 0x10, 0x00, 0x33, 0x00, 0x00, 0xF0, 0x01, 0x90, 0x01, 0x99, 0x99, 0xF0, 0x01, 0xF0
 	.byte 0x01, 0xFA, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0x60, 0x01, 0xB9, 0x00, 0x02, 0xFF

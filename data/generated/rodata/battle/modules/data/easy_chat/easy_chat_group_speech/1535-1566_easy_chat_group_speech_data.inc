@@ -80,7 +80,8 @@ gText_Rom_576002: @ 0x08576002
 	.space 0x4 - (. - gText_Rom_576002)
 	.endif
 	@ analyzed canonical ROM range 0x08576006-0x08576013
-sAnalyzedData_08576006: @ 0x08576006
+	.globl gText_Rom_576006
+gText_Rom_576006: @ 0x08576006
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x09, 0x45, 0xFF, 0x0A, 0x0F, 0xFF, 0x0A, 0x14, 0xFF, 0x8C, 0xFF, 0x0B, 0x01, 0xFF
 	.globl gText_Rom_576014

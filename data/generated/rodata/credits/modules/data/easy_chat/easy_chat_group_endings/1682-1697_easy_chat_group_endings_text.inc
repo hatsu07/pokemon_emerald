@@ -10,7 +10,8 @@ gText_Rom_57646D: @ 0x0857646D
 	.space 0x5 - (. - gText_Rom_57646D)
 	.endif
 	@ analyzed canonical ROM range 0x08576472-0x0857647B
-sAnalyzedData_08576472: @ 0x08576472
+	.globl gText_Rom_576472
+gText_Rom_576472: @ 0x08576472
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x18, 0xFF, 0x18, 0xAE, 0xFF, 0x19, 0xFF, 0x19, 0xAC, 0xFF
 	.globl gText_Rom_57647C
@@ -100,7 +101,6 @@ gText_Rom_5764AF: @ 0x085764AF
 	.space 0x4 - (. - gText_Rom_5764AF)
 	.endif
 	@ analyzed canonical ROM range 0x085764B3-0x085767EF
-sAnalyzedData_085764B3: @ 0x085764B3
 	@ struct EasyChatWordInfo[]; format verified against every 12-byte record
 	@ prefix before aligned word-info array: 0x1 bytes
 	.byte 0x00
@@ -156,7 +156,7 @@ gEasyChatGroup_Endings: @ 0x085764B4
 	easy_chat_word_info gText_Rom_576463, 47, 1 @ word 47
 	easy_chat_word_info gText_Rom_576468, 48, 1 @ word 48
 	easy_chat_word_info gText_Rom_57646D, 49, 1 @ word 49
-	easy_chat_word_info sAnalyzedData_08576472, 50, 1 @ word 50
+	easy_chat_word_info gText_Rom_576472, 50, 1 @ word 50
 	easy_chat_word_info 0x08576474, 51, 1 @ word 51
 	easy_chat_word_info 0x08576477, 52, 1 @ word 52
 	easy_chat_word_info 0x08576479, 53, 1 @ word 53
