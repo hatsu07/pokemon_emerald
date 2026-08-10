@@ -5928,59 +5928,179 @@ gStateToDirectionTable: @ 0x084E6093
 gEventObjectMovementData_084E60A4:
 	.globl gUnknown_84E60A4
 gUnknown_84E60A4: @ 0x084E60A4
-	@ confirmed contiguous ROM pointer table: 166 entries from this address
-sPointerTable_084E60A4:
-	@ analyzed canonical ROM range 0x084E60A4-0x084E633B
-	@ semantic recovery: rodata; byte-verified against linked ROM
-sAnalyzedData_084E60A4: @ 0x084E60A4
-	.byte 0x1C, 0x63, 0x4E, 0x08, 0x24, 0x63, 0x4E, 0x08, 0x2C, 0x63, 0x4E, 0x08, 0x34, 0x63, 0x4E, 0x08
-	.byte 0x80, 0x63, 0x4E, 0x08, 0x8C, 0x63, 0x4E, 0x08, 0x98, 0x63, 0x4E, 0x08, 0xA4, 0x63, 0x4E, 0x08
-	.byte 0xE0, 0x63, 0x4E, 0x08, 0xEC, 0x63, 0x4E, 0x08, 0xF8, 0x63, 0x4E, 0x08, 0x04, 0x64, 0x4E, 0x08
-	.byte 0x1C, 0x64, 0x4E, 0x08, 0x28, 0x64, 0x4E, 0x08, 0x34, 0x64, 0x4E, 0x08, 0x40, 0x64, 0x4E, 0x08
-	.byte 0x4C, 0x64, 0x4E, 0x08, 0x58, 0x64, 0x4E, 0x08, 0x64, 0x64, 0x4E, 0x08, 0x70, 0x64, 0x4E, 0x08
-	.byte 0x7C, 0x64, 0x4E, 0x08, 0x88, 0x64, 0x4E, 0x08, 0x94, 0x64, 0x4E, 0x08, 0xA0, 0x64, 0x4E, 0x08
-	.byte 0xAC, 0x64, 0x4E, 0x08, 0xB8, 0x64, 0x4E, 0x08, 0xC4, 0x64, 0x4E, 0x08, 0xD0, 0x64, 0x4E, 0x08
-	.byte 0xDC, 0x64, 0x4E, 0x08, 0xE8, 0x64, 0x4E, 0x08, 0xF4, 0x64, 0x4E, 0x08, 0x00, 0x65, 0x4E, 0x08
-	.byte 0x0C, 0x65, 0x4E, 0x08, 0x18, 0x65, 0x4E, 0x08, 0x24, 0x65, 0x4E, 0x08, 0x30, 0x65, 0x4E, 0x08
-	.byte 0x3C, 0x65, 0x4E, 0x08, 0x48, 0x65, 0x4E, 0x08, 0x54, 0x65, 0x4E, 0x08, 0x60, 0x65, 0x4E, 0x08
-	.byte 0x6C, 0x65, 0x4E, 0x08, 0x78, 0x65, 0x4E, 0x08, 0x84, 0x65, 0x4E, 0x08, 0x90, 0x65, 0x4E, 0x08
-	.byte 0x9C, 0x65, 0x4E, 0x08, 0xA8, 0x65, 0x4E, 0x08, 0xB4, 0x65, 0x4E, 0x08, 0xC0, 0x65, 0x4E, 0x08
-	.byte 0xCC, 0x65, 0x4E, 0x08, 0xD8, 0x65, 0x4E, 0x08, 0xE4, 0x65, 0x4E, 0x08, 0xF0, 0x65, 0x4E, 0x08
-	.byte 0xFC, 0x65, 0x4E, 0x08, 0x08, 0x66, 0x4E, 0x08, 0x14, 0x66, 0x4E, 0x08, 0x20, 0x66, 0x4E, 0x08
-	.byte 0x2C, 0x66, 0x4E, 0x08, 0x38, 0x66, 0x4E, 0x08, 0x44, 0x66, 0x4E, 0x08, 0x50, 0x66, 0x4E, 0x08
-	.byte 0x5C, 0x66, 0x4E, 0x08, 0x68, 0x66, 0x4E, 0x08, 0x74, 0x66, 0x4E, 0x08, 0x7C, 0x66, 0x4E, 0x08
-	.byte 0x84, 0x66, 0x4E, 0x08, 0x8C, 0x66, 0x4E, 0x08, 0x94, 0x66, 0x4E, 0x08, 0xA0, 0x66, 0x4E, 0x08
-	.byte 0xAC, 0x66, 0x4E, 0x08, 0xB8, 0x66, 0x4E, 0x08, 0xC4, 0x66, 0x4E, 0x08, 0xD0, 0x66, 0x4E, 0x08
-	.byte 0xDC, 0x66, 0x4E, 0x08, 0xE8, 0x66, 0x4E, 0x08, 0xF4, 0x66, 0x4E, 0x08, 0x00, 0x67, 0x4E, 0x08
-	.byte 0x0C, 0x67, 0x4E, 0x08, 0x18, 0x67, 0x4E, 0x08, 0x24, 0x67, 0x4E, 0x08, 0x2C, 0x67, 0x4E, 0x08
-	.byte 0x38, 0x67, 0x4E, 0x08, 0x40, 0x67, 0x4E, 0x08, 0x48, 0x67, 0x4E, 0x08, 0x50, 0x67, 0x4E, 0x08
-	.byte 0x58, 0x67, 0x4E, 0x08, 0x60, 0x67, 0x4E, 0x08, 0x68, 0x67, 0x4E, 0x08, 0x70, 0x67, 0x4E, 0x08
-	.byte 0x78, 0x67, 0x4E, 0x08, 0x80, 0x67, 0x4E, 0x08, 0x8C, 0x67, 0x4E, 0x08, 0x9C, 0x67, 0x4E, 0x08
-	.byte 0xAC, 0x67, 0x4E, 0x08, 0xB4, 0x67, 0x4E, 0x08, 0xBC, 0x67, 0x4E, 0x08, 0xC4, 0x67, 0x4E, 0x08
-	.byte 0xCC, 0x67, 0x4E, 0x08, 0xD4, 0x67, 0x4E, 0x08, 0xDC, 0x67, 0x4E, 0x08, 0xE8, 0x67, 0x4E, 0x08
-	.byte 0x0C, 0x68, 0x4E, 0x08, 0x14, 0x68, 0x4E, 0x08, 0x1C, 0x68, 0x4E, 0x08, 0x24, 0x68, 0x4E, 0x08
-	.byte 0x2C, 0x68, 0x4E, 0x08, 0x38, 0x68, 0x4E, 0x08, 0x44, 0x68, 0x4E, 0x08, 0x50, 0x68, 0x4E, 0x08
-	.byte 0x5C, 0x68, 0x4E, 0x08, 0x68, 0x68, 0x4E, 0x08, 0x74, 0x68, 0x4E, 0x08, 0x80, 0x68, 0x4E, 0x08
-	.byte 0xC8, 0x68, 0x4E, 0x08, 0xD4, 0x68, 0x4E, 0x08, 0xE0, 0x68, 0x4E, 0x08, 0xEC, 0x68, 0x4E, 0x08
-	.byte 0xF8, 0x68, 0x4E, 0x08, 0x04, 0x69, 0x4E, 0x08, 0x10, 0x69, 0x4E, 0x08, 0x1C, 0x69, 0x4E, 0x08
-	.byte 0x28, 0x69, 0x4E, 0x08, 0x34, 0x69, 0x4E, 0x08, 0x40, 0x69, 0x4E, 0x08, 0x4C, 0x69, 0x4E, 0x08
-	.byte 0x58, 0x69, 0x4E, 0x08, 0x64, 0x69, 0x4E, 0x08, 0x70, 0x69, 0x4E, 0x08, 0x7C, 0x69, 0x4E, 0x08
-	.byte 0x88, 0x69, 0x4E, 0x08, 0x94, 0x69, 0x4E, 0x08, 0xA0, 0x69, 0x4E, 0x08, 0xAC, 0x69, 0x4E, 0x08
-	.byte 0xB8, 0x69, 0x4E, 0x08, 0xC4, 0x69, 0x4E, 0x08, 0xD0, 0x69, 0x4E, 0x08, 0xDC, 0x69, 0x4E, 0x08
-	.byte 0xE8, 0x69, 0x4E, 0x08, 0xF4, 0x69, 0x4E, 0x08, 0x00, 0x6A, 0x4E, 0x08, 0x0C, 0x6A, 0x4E, 0x08
-	.byte 0xB0, 0x63, 0x4E, 0x08, 0xBC, 0x63, 0x4E, 0x08, 0xC8, 0x63, 0x4E, 0x08, 0xD4, 0x63, 0x4E, 0x08
-	.byte 0x50, 0x63, 0x4E, 0x08, 0x5C, 0x63, 0x4E, 0x08, 0x68, 0x63, 0x4E, 0x08, 0x74, 0x63, 0x4E, 0x08
-	.byte 0xB8, 0x6C, 0x4E, 0x08, 0xC0, 0x6C, 0x4E, 0x08, 0xF4, 0x67, 0x4E, 0x08, 0x00, 0x68, 0x4E, 0x08
-	.byte 0x18, 0x6A, 0x4E, 0x08, 0x20, 0x6A, 0x4E, 0x08, 0x28, 0x6A, 0x4E, 0x08, 0xBC, 0x68, 0x4E, 0x08
-	.byte 0xC8, 0x6C, 0x4E, 0x08, 0xD4, 0x6C, 0x4E, 0x08
+	@ confirmed contiguous ROM pointer table: 158 entries from this address
+gMovementActionFuncTablePointers: @ 0x084E60A4
+	@ 158-entry movement action dispatch table used by EventObjectExecHeldMovementAction.
+	.4byte sMovementActionFuncs_FaceDown @ movement action 0
+	.4byte sMovementActionFuncs_FaceUp @ movement action 1
+	.4byte sMovementActionFuncs_FaceLeft @ movement action 2
+	.4byte sMovementActionFuncs_FaceRight @ movement action 3
+	.4byte sMovementActionFuncs_WalkSlowDown @ movement action 4
+	.4byte sMovementActionFuncs_WalkSlowUp @ movement action 5
+	.4byte sMovementActionFuncs_WalkSlowLeft @ movement action 6
+	.4byte sMovementActionFuncs_WalkSlowRight @ movement action 7
+	.4byte sMovementActionFuncs_WalkNormalDown @ movement action 8
+	.4byte sMovementActionFuncs_WalkNormalUp @ movement action 9
+	.4byte sMovementActionFuncs_WalkNormalLeft @ movement action 10
+	.4byte sMovementActionFuncs_WalkNormalRight @ movement action 11
+	.4byte sMovementActionFuncs_Jump2Down @ movement action 12
+	.4byte sMovementActionFuncs_Jump2Up @ movement action 13
+	.4byte sMovementActionFuncs_Jump2Left @ movement action 14
+	.4byte sMovementActionFuncs_Jump2Right @ movement action 15
+	.4byte sMovementActionFuncs_Delay1 @ movement action 16
+	.4byte sMovementActionFuncs_Delay2 @ movement action 17
+	.4byte sMovementActionFuncs_Delay4 @ movement action 18
+	.4byte sMovementActionFuncs_Delay8 @ movement action 19
+	.4byte sMovementActionFuncs_Delay16 @ movement action 20
+	.4byte sMovementActionFuncs_WalkFastDown @ movement action 21
+	.4byte sMovementActionFuncs_WalkFastUp @ movement action 22
+	.4byte sMovementActionFuncs_WalkFastLeft @ movement action 23
+	.4byte sMovementActionFuncs_WalkFastRight @ movement action 24
+	.4byte sMovementActionFuncs_WalkInPlaceSlowDown @ movement action 25
+	.4byte sMovementActionFuncs_WalkInPlaceSlowUp @ movement action 26
+	.4byte sMovementActionFuncs_WalkInPlaceSlowLeft @ movement action 27
+	.4byte sMovementActionFuncs_WalkInPlaceSlowRight @ movement action 28
+	.4byte sMovementActionFuncs_WalkInPlaceNormalDown @ movement action 29
+	.4byte sMovementActionFuncs_WalkInPlaceNormalUp @ movement action 30
+	.4byte sMovementActionFuncs_WalkInPlaceNormalLeft @ movement action 31
+	.4byte sMovementActionFuncs_WalkInPlaceNormalRight @ movement action 32
+	.4byte sMovementActionFuncs_WalkInPlaceFastDown @ movement action 33
+	.4byte sMovementActionFuncs_WalkInPlaceFastUp @ movement action 34
+	.4byte sMovementActionFuncs_WalkInPlaceFastLeft @ movement action 35
+	.4byte sMovementActionFuncs_WalkInPlaceFastRight @ movement action 36
+	.4byte sMovementActionFuncs_WalkInPlaceFastestDown @ movement action 37
+	.4byte sMovementActionFuncs_WalkInPlaceFastestUp @ movement action 38
+	.4byte sMovementActionFuncs_WalkInPlaceFastestLeft @ movement action 39
+	.4byte sMovementActionFuncs_WalkInPlaceFastestRight @ movement action 40
+	.4byte sMovementActionFuncs_RideWaterCurrentDown @ movement action 41
+	.4byte sMovementActionFuncs_RideWaterCurrentUp @ movement action 42
+	.4byte sMovementActionFuncs_RideWaterCurrentLeft @ movement action 43
+	.4byte sMovementActionFuncs_RideWaterCurrentRight @ movement action 44
+	.4byte sMovementActionFuncs_WalkFastestDown @ movement action 45
+	.4byte sMovementActionFuncs_WalkFastestUp @ movement action 46
+	.4byte sMovementActionFuncs_WalkFastestLeft @ movement action 47
+	.4byte sMovementActionFuncs_WalkFastestRight @ movement action 48
+	.4byte sMovementActionFuncs_SlideDown @ movement action 49
+	.4byte sMovementActionFuncs_SlideUp @ movement action 50
+	.4byte sMovementActionFuncs_SlideLeft @ movement action 51
+	.4byte sMovementActionFuncs_SlideRight @ movement action 52
+	.4byte sMovementActionFuncs_PlayerRunDown @ movement action 53
+	.4byte sMovementActionFuncs_PlayerRunUp @ movement action 54
+	.4byte sMovementActionFuncs_PlayerRunLeft @ movement action 55
+	.4byte sMovementActionFuncs_PlayerRunRight @ movement action 56
+	.4byte sMovementActionFuncs_StartAnimInDirection @ movement action 57
+	.4byte sMovementActionFuncs_JumpSpecialDown @ movement action 58
+	.4byte sMovementActionFuncs_JumpSpecialUp @ movement action 59
+	.4byte sMovementActionFuncs_JumpSpecialLeft @ movement action 60
+	.4byte sMovementActionFuncs_JumpSpecialRight @ movement action 61
+	.4byte sMovementActionFuncs_FacePlayer @ movement action 62
+	.4byte sMovementActionFuncs_FaceAwayPlayer @ movement action 63
+	.4byte sMovementActionFuncs_LockFacingDirection @ movement action 64
+	.4byte sMovementActionFuncs_UnlockFacingDirection @ movement action 65
+	.4byte sMovementActionFuncs_JumpDown @ movement action 66
+	.4byte sMovementActionFuncs_JumpUp @ movement action 67
+	.4byte sMovementActionFuncs_JumpLeft @ movement action 68
+	.4byte sMovementActionFuncs_JumpRight @ movement action 69
+	.4byte sMovementActionFuncs_JumpInPlaceDown @ movement action 70
+	.4byte sMovementActionFuncs_JumpInPlaceUp @ movement action 71
+	.4byte sMovementActionFuncs_JumpInPlaceLeft @ movement action 72
+	.4byte sMovementActionFuncs_JumpInPlaceRight @ movement action 73
+	.4byte sMovementActionFuncs_JumpInPlaceDownUp @ movement action 74
+	.4byte sMovementActionFuncs_JumpInPlaceUpDown @ movement action 75
+	.4byte sMovementActionFuncs_JumpInPlaceLeftRight @ movement action 76
+	.4byte sMovementActionFuncs_JumpInPlaceRightLeft @ movement action 77
+	.4byte sMovementActionFuncs_FaceOriginalDirection @ movement action 78
+	.4byte sMovementActionFuncs_NurseJoyBowDown @ movement action 79
+	.4byte sMovementActionFuncs_EnableJumpLandingGroundEffect @ movement action 80
+	.4byte sMovementActionFuncs_DisableJumpLandingGroundEffect @ movement action 81
+	.4byte sMovementActionFuncs_DisableAnimation @ movement action 82
+	.4byte sMovementActionFuncs_RestoreAnimation @ movement action 83
+	.4byte sMovementActionFuncs_SetInvisible @ movement action 84
+	.4byte sMovementActionFuncs_SetVisible @ movement action 85
+	.4byte sMovementActionFuncs_EmoteExclamationMark @ movement action 86
+	.4byte sMovementActionFuncs_EmoteQuestionMark @ movement action 87
+	.4byte sMovementActionFuncs_EmoteHeart @ movement action 88
+	.4byte sMovementActionFuncs_RevealTrainer @ movement action 89
+	.4byte sMovementActionFuncs_RockSmashBreak @ movement action 90
+	.4byte sMovementActionFuncs_CutTree @ movement action 91
+	.4byte sMovementActionFuncs_SetFixedPriority @ movement action 92
+	.4byte sMovementActionFuncs_ClearFixedPriority @ movement action 93
+	.4byte sMovementActionFuncs_InitAffineAnim @ movement action 94
+	.4byte sMovementActionFuncs_ClearAffineAnim @ movement action 95
+	.4byte sMovementActionFuncs_Unknown1 @ movement action 96
+	.4byte sMovementActionFuncs_Unknown2 @ movement action 97
+	.4byte sMovementActionFuncs_WalkDownStartAffine @ movement action 98
+	.4byte sMovementActionFuncs_WalkDownAffine @ movement action 99
+	.4byte sMovementActionFuncs_AcroWheelieFaceDown @ movement action 100
+	.4byte sMovementActionFuncs_AcroWheelieFaceUp @ movement action 101
+	.4byte sMovementActionFuncs_AcroWheelieFaceLeft @ movement action 102
+	.4byte sMovementActionFuncs_AcroWheelieFaceRight @ movement action 103
+	.4byte sMovementActionFuncs_AcroPopWheelieDown @ movement action 104
+	.4byte sMovementActionFuncs_AcroPopWheelieUp @ movement action 105
+	.4byte sMovementActionFuncs_AcroPopWheelieLeft @ movement action 106
+	.4byte sMovementActionFuncs_AcroPopWheelieRight @ movement action 107
+	.4byte sMovementActionFuncs_AcroEndWheelieFaceDown @ movement action 108
+	.4byte sMovementActionFuncs_AcroEndWheelieFaceUp @ movement action 109
+	.4byte sMovementActionFuncs_sub_08095388 @ movement action 110
+	.4byte sMovementActionFuncs_AcroEndWheelieFaceRight @ movement action 111
+	.4byte sMovementActionFuncs_AcroWheelieHopFaceDown @ movement action 112
+	.4byte sMovementActionFuncs_AcroWheelieHopFaceUp @ movement action 113
+	.4byte sMovementActionFuncs_AcroWheelieHopFaceLeft @ movement action 114
+	.4byte sMovementActionFuncs_AcroWheelieHopFaceRight @ movement action 115
+	.4byte sMovementActionFuncs_AcroWheelieHopDown @ movement action 116
+	.4byte sMovementActionFuncs_AcroWheelieHopUp @ movement action 117
+	.4byte sMovementActionFuncs_AcroWheelieHopLeft @ movement action 118
+	.4byte sMovementActionFuncs_AcroWheelieHopRight @ movement action 119
+	.4byte sMovementActionFuncs_AcroWheelieJumpDown @ movement action 120
+	.4byte sMovementActionFuncs_AcroWheelieJumpUp @ movement action 121
+	.4byte sMovementActionFuncs_AcroWheelieJumpLeft @ movement action 122
+	.4byte sMovementActionFuncs_AcroWheelieJumpRight @ movement action 123
+	.4byte sMovementActionFuncs_AcroWheelieInPlaceDown @ movement action 124
+	.4byte sMovementActionFuncs_AcroWheelieInPlaceUp @ movement action 125
+	.4byte sMovementActionFuncs_AcroWheelieInPlaceLeft @ movement action 126
+	.4byte sMovementActionFuncs_AcroWheelieInPlaceRight @ movement action 127
+	.4byte sMovementActionFuncs_sub_08095A70 @ movement action 128
+	.4byte sMovementActionFuncs_sub_08095AB0 @ movement action 129
+	.4byte sMovementActionFuncs_sub_08095AF0 @ movement action 130
+	.4byte sMovementActionFuncs_sub_08095B30 @ movement action 131
+	.4byte sMovementActionFuncs_AcroWheelieMoveDown @ movement action 132
+	.4byte sMovementActionFuncs_AcroWheelieMoveUp @ movement action 133
+	.4byte sMovementActionFuncs_AcroWheelieMoveLeft @ movement action 134
+	.4byte sMovementActionFuncs_AcroWheelieMoveRight @ movement action 135
+	.4byte sMovementActionFuncs_AcroEndWheelieMoveDown @ movement action 136
+	.4byte sMovementActionFuncs_AcroEndWheelieMoveUp @ movement action 137
+	.4byte sMovementActionFuncs_AcroEndWheelieMoveLeft @ movement action 138
+	.4byte sMovementActionFuncs_AcroEndWheelieMoveRight @ movement action 139
+	.4byte sMovementActionFuncs_WalkNormalDiagonalUpLeft @ movement action 140
+	.4byte sMovementActionFuncs_WalkNormalDiagonalUpRight @ movement action 141
+	.4byte sMovementActionFuncs_WalkNormalDiagonalDownLeft @ movement action 142
+	.4byte sMovementActionFuncs_WalkNormalDiagonalDownRight @ movement action 143
+	.4byte sMovementActionFuncs_WalkSlowDiagonalUpLeft @ movement action 144
+	.4byte sMovementActionFuncs_WalkSlowDiagonalUpRight @ movement action 145
+	.4byte sMovementActionFuncs_WalkSlowDiagonalDownLeft @ movement action 146
+	.4byte sMovementActionFuncs_WalkSlowDiagonalDownRight @ movement action 147
+	.4byte sMovementActionFuncs_StoreAndLockAnim @ movement action 148
+	.4byte sMovementActionFuncs_FreeAndUnlockAnim @ movement action 149
+	.4byte sMovementActionFuncs_WalkLeftAffine @ movement action 150
+	.4byte sMovementActionFuncs_WalkRightAffine @ movement action 151
+	.4byte sMovementActionFuncs_Levitate @ movement action 152
+	.4byte sMovementActionFuncs_StopLevitate @ movement action 153
+	.4byte sMovementActionFuncs_DestroyExtraTaskIfAtTop @ movement action 154
+	.4byte sMovementActionFuncs_Figure8 @ movement action 155
+	.4byte sMovementActionFuncs_FlyUp @ movement action 156
+	.4byte sMovementActionFuncs_FlyDown @ movement action 157
 FunctionPointerTable_JP_084E631C: @ 0x084E631C
 	@ proven function-pointer table
+sMovementActionFuncs_FaceDown: @ 0x084E631C
 	.4byte MovementAction_FaceDown_Step0
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_FaceUp: @ 0x084E6324
 	.4byte MovementAction_FaceUp_Step0
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_FaceLeft: @ 0x084E632C
 	.4byte MovementAction_FaceLeft_Step0
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_FaceRight: @ 0x084E6334
 	.4byte MovementAction_FaceRight_Step0
 	.4byte MovementAction_PauseSpriteAnim
 	.globl gUnknown_84E633C
@@ -5990,51 +6110,67 @@ gUnknown_84E633C: @ 0x084E633C
 	.4byte GetJumpMovementAction
 	.4byte GetJumpSpecialMovementAction
 	.4byte GetPlayerRunMovementAction
+sMovementActionFuncs_WalkSlowDiagonalUpLeft: @ 0x084E6350
 	.4byte MovementAction_WalkSlowDiagonalUpLeft_Step0
 	.4byte sub_08093554
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkSlowDiagonalUpRight: @ 0x084E635C
 	.4byte MovementAction_WalkSlowDiagonalUpRight_Step0
 	.4byte MovementAction_WalkSlowDiagonalUpRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkSlowDiagonalDownLeft: @ 0x084E6368
 	.4byte MovementAction_WalkSlowDiagonalDownLeft_Step0
 	.4byte MovementAction_WalkSlowDiagonalDownLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkSlowDiagonalDownRight: @ 0x084E6374
 	.4byte MovementAction_WalkSlowDiagonalDownRight_Step0
 	.4byte MovementAction_WalkSlowDiagonalDownRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkSlowDown: @ 0x084E6380
 	.4byte MovementAction_WalkSlowDown_Step0
 	.4byte MovementAction_WalkSlowDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkSlowUp: @ 0x084E638C
 	.4byte MovementAction_WalkSlowUp_Step0
 	.4byte MovementAction_WalkSlowUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkSlowLeft: @ 0x084E6398
 	.4byte MovementAction_WalkSlowLeft_Step0
 	.4byte MovementAction_WalkSlowLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkSlowRight: @ 0x084E63A4
 	.4byte MovementAction_WalkSlowRight_Step0
 	.4byte MovementAction_WalkSlowRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkNormalDiagonalUpLeft: @ 0x084E63B0
 	.4byte MovementAction_WalkNormalDiagonalUpLeft_Step0
 	.4byte MovementAction_WalkNormalDiagonalUpLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkNormalDiagonalUpRight: @ 0x084E63BC
 	.4byte MovementAction_WalkNormalDiagonalUpRight_Step0
 	.4byte MovementAction_WalkNormalDiagonalUpRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkNormalDiagonalDownLeft: @ 0x084E63C8
 	.4byte MovementAction_WalkNormalDiagonalDownLeft_Step0
 	.4byte MovementAction_WalkNormalDiagonalDownLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkNormalDiagonalDownRight: @ 0x084E63D4
 	.4byte MovementAction_WalkNormalDiagonalDownRight_Step0
 	.4byte MovementAction_WalkNormalDiagonalDownRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkNormalDown: @ 0x084E63E0
 	.4byte MovementAction_WalkNormalDown_Step0
 	.4byte MovementAction_WalkNormalDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkNormalUp: @ 0x084E63EC
 	.4byte MovementAction_WalkNormalUp_Step0
 	.4byte MovementAction_WalkNormalUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkNormalLeft: @ 0x084E63F8
 	.4byte MovementAction_WalkNormalLeft_Step0
 	.4byte MovementAction_WalkNormalLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkNormalRight: @ 0x084E6404
 	.4byte MovementAction_WalkNormalRight_Step0
 	.4byte MovementAction_WalkNormalRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
@@ -6058,287 +6194,389 @@ sAnalyzedData_084E6416: @ 0x084E6416
 	.byte 0x00, 0x00, 0x00, 0x00, 0x01, 0x00
 FunctionPointerTable_JP_084E641C: @ 0x084E641C
 	@ proven function-pointer table
+sMovementActionFuncs_Jump2Down: @ 0x084E641C
 	.4byte MovementAction_Jump2Down_Step0
 	.4byte MovementAction_Jump2Down_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_Jump2Up: @ 0x084E6428
 	.4byte MovementAction_Jump2Up_Step0
 	.4byte MovementAction_Jump2Up_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_Jump2Left: @ 0x084E6434
 	.4byte MovementAction_Jump2Left_Step0
 	.4byte MovementAction_Jump2Left_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_Jump2Right: @ 0x084E6440
 	.4byte MovementAction_Jump2Right_Step0
 	.4byte MovementAction_Jump2Right_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_Delay1: @ 0x084E644C
 	.4byte MovementAction_Delay1_Step0
 	.4byte MovementAction_Delay_Step1
 	.4byte sub_08095E28
+sMovementActionFuncs_Delay2: @ 0x084E6458
 	.4byte MovementAction_Delay2_Step0
 	.4byte MovementAction_Delay_Step1
 	.4byte sub_08095E28
+sMovementActionFuncs_Delay4: @ 0x084E6464
 	.4byte MovementAction_Delay4_Step0
 	.4byte MovementAction_Delay_Step1
 	.4byte sub_08095E28
+sMovementActionFuncs_Delay8: @ 0x084E6470
 	.4byte MovementAction_Delay8_Step0
 	.4byte MovementAction_Delay_Step1
 	.4byte sub_08095E28
+sMovementActionFuncs_Delay16: @ 0x084E647C
 	.4byte MovementAction_Delay16_Step0
 	.4byte MovementAction_Delay_Step1
 	.4byte sub_08095E28
+sMovementActionFuncs_WalkFastDown: @ 0x084E6488
 	.4byte MovementAction_WalkFastDown_Step0
 	.4byte MovementAction_WalkFastDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkFastUp: @ 0x084E6494
 	.4byte MovementAction_WalkFastUp_Step0
 	.4byte MovementAction_WalkFastUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkFastLeft: @ 0x084E64A0
 	.4byte MovementAction_WalkFastLeft_Step0
 	.4byte MovementAction_WalkFastLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkFastRight: @ 0x084E64AC
 	.4byte MovementAction_WalkFastRight_Step0
 	.4byte MovementAction_WalkFastRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceSlowDown: @ 0x084E64B8
 	.4byte MovementAction_WalkInPlaceSlowDown_Step0
 	.4byte MovementAction_WalkInPlaceSlow_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceSlowUp: @ 0x084E64C4
 	.4byte MovementAction_WalkInPlaceSlowUp_Step0
 	.4byte MovementAction_WalkInPlaceSlow_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceSlowLeft: @ 0x084E64D0
 	.4byte MovementAction_WalkInPlaceSlowLeft_Step0
 	.4byte MovementAction_WalkInPlaceSlow_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceSlowRight: @ 0x084E64DC
 	.4byte MovementAction_WalkInPlaceSlowRight_Step0
 	.4byte MovementAction_WalkInPlaceSlow_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceNormalDown: @ 0x084E64E8
 	.4byte MovementAction_WalkInPlaceNormalDown_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceNormalUp: @ 0x084E64F4
 	.4byte MovementAction_WalkInPlaceNormalUp_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceNormalLeft: @ 0x084E6500
 	.4byte MovementAction_WalkInPlaceNormalLeft_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceNormalRight: @ 0x084E650C
 	.4byte MovementAction_WalkInPlaceNormalRight_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceFastDown: @ 0x084E6518
 	.4byte MovementAction_WalkInPlaceFastDown_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceFastUp: @ 0x084E6524
 	.4byte MovementAction_WalkInPlaceFastUp_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceFastLeft: @ 0x084E6530
 	.4byte MovementAction_WalkInPlaceFastLeft_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceFastRight: @ 0x084E653C
 	.4byte MovementAction_WalkInPlaceFastRight_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceFastestDown: @ 0x084E6548
 	.4byte MovementAction_WalkInPlaceFastestDown_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceFastestUp: @ 0x084E6554
 	.4byte MovementAction_WalkInPlaceFastestUp_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceFastestLeft: @ 0x084E6560
 	.4byte MovementAction_WalkInPlaceFastestLeft_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkInPlaceFastestRight: @ 0x084E656C
 	.4byte MovementAction_WalkInPlaceFastestRight_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_RideWaterCurrentDown: @ 0x084E6578
 	.4byte MovementAction_RideWaterCurrentDown_Step0
 	.4byte MovementAction_RideWaterCurrentDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_RideWaterCurrentUp: @ 0x084E6584
 	.4byte MovementAction_RideWaterCurrentUp_Step0
 	.4byte MovementAction_RideWaterCurrentUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_RideWaterCurrentLeft: @ 0x084E6590
 	.4byte MovementAction_RideWaterCurrentLeft_Step0
 	.4byte MovementAction_RideWaterCurrentLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_RideWaterCurrentRight: @ 0x084E659C
 	.4byte MovementAction_RideWaterCurrentRight_Step0
 	.4byte MovementAction_RideWaterCurrentRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkFastestDown: @ 0x084E65A8
 	.4byte MovementAction_WalkFastestDown_Step0
 	.4byte MovementAction_WalkFastestDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkFastestUp: @ 0x084E65B4
 	.4byte MovementAction_WalkFastestUp_Step0
 	.4byte MovementAction_WalkFastestUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkFastestLeft: @ 0x084E65C0
 	.4byte MovementAction_WalkFastestLeft_Step0
 	.4byte MovementAction_WalkFastestLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkFastestRight: @ 0x084E65CC
 	.4byte MovementAction_WalkFastestRight_Step0
 	.4byte MovementAction_WalkFastestRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_SlideDown: @ 0x084E65D8
 	.4byte MovementAction_SlideDown_Step0
 	.4byte MovementAction_SlideDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_SlideUp: @ 0x084E65E4
 	.4byte MovementAction_SlideUp_Step0
 	.4byte MovementAction_SlideUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_SlideLeft: @ 0x084E65F0
 	.4byte MovementAction_SlideLeft_Step0
 	.4byte MovementAction_SlideLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_SlideRight: @ 0x084E65FC
 	.4byte MovementAction_SlideRight_Step0
 	.4byte MovementAction_SlideRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_PlayerRunDown: @ 0x084E6608
 	.4byte MovementAction_PlayerRunDown_Step0
 	.4byte MovementAction_PlayerRunDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_PlayerRunUp: @ 0x084E6614
 	.4byte MovementAction_PlayerRunUp_Step0
 	.4byte MovementAction_PlayerRunUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_PlayerRunLeft: @ 0x084E6620
 	.4byte MovementAction_PlayerRunLeft_Step0
 	.4byte MovementAction_PlayerRunLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_PlayerRunRight: @ 0x084E662C
 	.4byte MovementAction_PlayerRunRight_Step0
 	.4byte MovementAction_PlayerRunRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_StartAnimInDirection: @ 0x084E6638
 	.4byte MovementAction_StartAnimInDirection_Step0
 	.4byte MovementAction_WaitSpriteAnim
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpSpecialDown: @ 0x084E6644
 	.4byte MovementAction_JumpSpecialDown_Step0
 	.4byte MovementAction_JumpSpecialDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpSpecialUp: @ 0x084E6650
 	.4byte MovementAction_JumpSpecialUp_Step0
 	.4byte MovementAction_JumpSpecialUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpSpecialLeft: @ 0x084E665C
 	.4byte MovementAction_JumpSpecialLeft_Step0
 	.4byte MovementAction_JumpSpecialLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpSpecialRight: @ 0x084E6668
 	.4byte MovementAction_JumpSpecialRight_Step0
 	.4byte MovementAction_JumpSpecialRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_FacePlayer: @ 0x084E6674
 	.4byte MovementAction_FacePlayer_Step0
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_FaceAwayPlayer: @ 0x084E667C
 	.4byte MovementAction_FaceAwayPlayer_Step0
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_LockFacingDirection: @ 0x084E6684
 	.4byte MovementAction_LockFacingDirection_Step0
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_UnlockFacingDirection: @ 0x084E668C
 	.4byte MovementAction_UnlockFacingDirection_Step0
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpDown: @ 0x084E6694
 	.4byte MovementAction_JumpDown_Step0
 	.4byte MovementAction_JumpDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpUp: @ 0x084E66A0
 	.4byte MovementAction_JumpUp_Step0
 	.4byte MovementAction_JumpUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpLeft: @ 0x084E66AC
 	.4byte MovementAction_JumpLeft_Step0
 	.4byte MovementAction_JumpLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpRight: @ 0x084E66B8
 	.4byte MovementAction_JumpRight_Step0
 	.4byte MovementAction_JumpRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpInPlaceDown: @ 0x084E66C4
 	.4byte MovementAction_JumpInPlaceDown_Step0
 	.4byte MovementAction_JumpInPlaceDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpInPlaceUp: @ 0x084E66D0
 	.4byte MovementAction_JumpInPlaceUp_Step0
 	.4byte MovementAction_JumpInPlaceUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpInPlaceLeft: @ 0x084E66DC
 	.4byte MovementAction_JumpInPlaceLeft_Step0
 	.4byte MovementAction_JumpInPlaceLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpInPlaceRight: @ 0x084E66E8
 	.4byte MovementAction_JumpInPlaceRight_Step0
 	.4byte MovementAction_JumpInPlaceRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpInPlaceDownUp: @ 0x084E66F4
 	.4byte MovementAction_JumpInPlaceDownUp_Step0
 	.4byte MovementAction_JumpInPlaceDownUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpInPlaceUpDown: @ 0x084E6700
 	.4byte MovementAction_JumpInPlaceUpDown_Step0
 	.4byte MovementAction_JumpInPlaceUpDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpInPlaceLeftRight: @ 0x084E670C
 	.4byte MovementAction_JumpInPlaceLeftRight_Step0
 	.4byte MovementAction_JumpInPlaceLeftRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_JumpInPlaceRightLeft: @ 0x084E6718
 	.4byte MovementAction_JumpInPlaceRightLeft_Step0
 	.4byte MovementAction_JumpInPlaceRightLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_FaceOriginalDirection: @ 0x084E6724
 	.4byte MovementAction_FaceOriginalDirection_Step0
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_NurseJoyBowDown: @ 0x084E672C
 	.4byte MovementAction_NurseJoyBowDown_Step0
 	.4byte MovementAction_WaitSpriteAnim
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_EnableJumpLandingGroundEffect: @ 0x084E6738
 	.4byte MovementAction_EnableJumpLandingGroundEffect_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_DisableJumpLandingGroundEffect: @ 0x084E6740
 	.4byte MovementAction_DisableJumpLandingGroundEffect_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_DisableAnimation: @ 0x084E6748
 	.4byte MovementAction_DisableAnimation_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_RestoreAnimation: @ 0x084E6750
 	.4byte MovementAction_RestoreAnimation_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_SetInvisible: @ 0x084E6758
 	.4byte MovementAction_SetInvisible_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_SetVisible: @ 0x084E6760
 	.4byte MovementAction_SetVisible_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_EmoteExclamationMark: @ 0x084E6768
 	.4byte MovementAction_EmoteExclamationMark_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_EmoteQuestionMark: @ 0x084E6770
 	.4byte MovementAction_EmoteQuestionMark_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_EmoteHeart: @ 0x084E6778
 	.4byte MovementAction_EmoteHeart_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_RevealTrainer: @ 0x084E6780
 	.4byte MovementAction_RevealTrainer_Step0
 	.4byte MovementAction_RevealTrainer_Step1
 	.4byte sub_08095E28
+sMovementActionFuncs_RockSmashBreak: @ 0x084E678C
 	.4byte MovementAction_RockSmashBreak_Step0
 	.4byte MovementAction_RockSmashBreak_Step1
 	.4byte MovementAction_RockSmashBreak_Step2
 	.4byte sub_08095E28
+sMovementActionFuncs_CutTree: @ 0x084E679C
 	.4byte MovementAction_CutTree_Step0
 	.4byte MovementAction_CutTree_Step1
 	.4byte MovementAction_CutTree_Step2
 	.4byte sub_08095E28
+sMovementActionFuncs_SetFixedPriority: @ 0x084E67AC
 	.4byte MovementAction_SetFixedPriority_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_ClearFixedPriority: @ 0x084E67B4
 	.4byte MovementAction_ClearFixedPriority_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_InitAffineAnim: @ 0x084E67BC
 	.4byte MovementAction_InitAffineAnim_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_ClearAffineAnim: @ 0x084E67C4
 	.4byte MovementAction_ClearAffineAnim_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_Unknown1: @ 0x084E67CC
 	.4byte MovementAction_Unknown1_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_Unknown2: @ 0x084E67D4
 	.4byte MovementAction_Unknown2_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_WalkDownStartAffine: @ 0x084E67DC
 	.4byte MovementAction_WalkDownStartAffine_Step0
 	.4byte MovementAction_WalkDownStartAffine_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkDownAffine: @ 0x084E67E8
 	.4byte MovementAction_WalkDownAffine_Step0
 	.4byte MovementAction_WalkDownAffine_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkLeftAffine: @ 0x084E67F4
 	.4byte MovementAction_WalkLeftAffine_Step0
 	.4byte MovementAction_WalkLeftAffine_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_WalkRightAffine: @ 0x084E6800
 	.4byte MovementAction_WalkRightAffine_Step0
 	.4byte MovementAction_WalkRightAffine_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieFaceDown: @ 0x084E680C
 	.4byte MovementAction_AcroWheelieFaceDown_Step0
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieFaceUp: @ 0x084E6814
 	.4byte MovementAction_AcroWheelieFaceUp_Step0
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieFaceLeft: @ 0x084E681C
 	.4byte MovementAction_AcroWheelieFaceLeft_Step0
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieFaceRight: @ 0x084E6824
 	.4byte MovementAction_AcroWheelieFaceRight_Step0
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroPopWheelieDown: @ 0x084E682C
 	.4byte MovementAction_AcroPopWheelieDown_Step0
 	.4byte MovementAction_WaitSpriteAnim
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroPopWheelieUp: @ 0x084E6838
 	.4byte MovementAction_AcroPopWheelieUp_Step0
 	.4byte MovementAction_WaitSpriteAnim
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroPopWheelieLeft: @ 0x084E6844
 	.4byte MovementAction_AcroPopWheelieLeft_Step0
 	.4byte MovementAction_WaitSpriteAnim
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroPopWheelieRight: @ 0x084E6850
 	.4byte MovementAction_AcroPopWheelieRight_Step0
 	.4byte MovementAction_WaitSpriteAnim
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroEndWheelieFaceDown: @ 0x084E685C
 	.4byte MovementAction_AcroEndWheelieFaceDown_Step0
 	.4byte MovementAction_WaitSpriteAnim
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroEndWheelieFaceUp: @ 0x084E6868
 	.4byte MovementAction_AcroEndWheelieFaceUp_Step0
 	.4byte MovementAction_WaitSpriteAnim
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_sub_08095388: @ 0x084E6874
 	.4byte sub_08095388
 	.4byte MovementAction_WaitSpriteAnim
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroEndWheelieFaceRight: @ 0x084E6880
 	.4byte MovementAction_AcroEndWheelieFaceRight_Step0
 	.4byte MovementAction_WaitSpriteAnim
 	.4byte MovementAction_PauseSpriteAnim
@@ -6354,97 +6592,129 @@ FunctionPointerTable_JP_084E641C: @ 0x084E641C
 	.4byte MovementAction_UnusedAcroActionRight_Step0
 	.4byte MovementAction_WaitSpriteAnim
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_Figure8: @ 0x084E68BC
 	.4byte MovementAction_Figure8_Step0
 	.4byte sub_080954D4
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieHopFaceDown: @ 0x084E68C8
 	.4byte MovementAction_AcroWheelieHopFaceDown_Step0
 	.4byte MovementAction_AcroWheelieHopFaceDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieHopFaceUp: @ 0x084E68D4
 	.4byte MovementAction_AcroWheelieHopFaceUp_Step0
 	.4byte MovementAction_AcroWheelieHopFaceUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieHopFaceLeft: @ 0x084E68E0
 	.4byte MovementAction_AcroWheelieHopFaceLeft_Step0
 	.4byte MovementAction_AcroWheelieHopFaceLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieHopFaceRight: @ 0x084E68EC
 	.4byte MovementAction_AcroWheelieHopFaceRight_Step0
 	.4byte MovementAction_AcroWheelieHopFaceRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieHopDown: @ 0x084E68F8
 	.4byte MovementAction_AcroWheelieHopDown_Step0
 	.4byte MovementAction_AcroWheelieHopDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieHopUp: @ 0x084E6904
 	.4byte MovementAction_AcroWheelieHopUp_Step0
 	.4byte MovementAction_AcroWheelieHopUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieHopLeft: @ 0x084E6910
 	.4byte MovementAction_AcroWheelieHopLeft_Step0
 	.4byte MovementAction_AcroWheelieHopLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieHopRight: @ 0x084E691C
 	.4byte MovementAction_AcroWheelieHopRight_Step0
 	.4byte MovementAction_AcroWheelieHopRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieJumpDown: @ 0x084E6928
 	.4byte MovementAction_AcroWheelieJumpDown_Step0
 	.4byte MovementAction_AcroWheelieJumpDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieJumpUp: @ 0x084E6934
 	.4byte MovementAction_AcroWheelieJumpUp_Step0
 	.4byte MovementAction_AcroWheelieJumpUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieJumpLeft: @ 0x084E6940
 	.4byte MovementAction_AcroWheelieJumpLeft_Step0
 	.4byte MovementAction_AcroWheelieJumpLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieJumpRight: @ 0x084E694C
 	.4byte MovementAction_AcroWheelieJumpRight_Step0
 	.4byte MovementAction_AcroWheelieJumpRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieInPlaceDown: @ 0x084E6958
 	.4byte MovementAction_AcroWheelieInPlaceDown_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieInPlaceUp: @ 0x084E6964
 	.4byte MovementAction_AcroWheelieInPlaceUp_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieInPlaceLeft: @ 0x084E6970
 	.4byte MovementAction_AcroWheelieInPlaceLeft_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieInPlaceRight: @ 0x084E697C
 	.4byte MovementAction_AcroWheelieInPlaceRight_Step0
 	.4byte MovementAction_WalkInPlace_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_sub_08095A70: @ 0x084E6988
 	.4byte sub_08095A70
 	.4byte MovementAction_AcroPopWheelieMoveDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_sub_08095AB0: @ 0x084E6994
 	.4byte sub_08095AB0
 	.4byte MovementAction_AcroPopWheelieMoveUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_sub_08095AF0: @ 0x084E69A0
 	.4byte sub_08095AF0
 	.4byte MovementAction_AcroPopWheelieMoveLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_sub_08095B30: @ 0x084E69AC
 	.4byte sub_08095B30
 	.4byte MovementAction_AcroPopWheelieMoveRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieMoveDown: @ 0x084E69B8
 	.4byte MovementAction_AcroWheelieMoveDown_Step0
 	.4byte MovementAction_AcroWheelieMoveDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieMoveUp: @ 0x084E69C4
 	.4byte MovementAction_AcroWheelieMoveUp_Step0
 	.4byte MovementAction_AcroWheelieMoveUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieMoveLeft: @ 0x084E69D0
 	.4byte MovementAction_AcroWheelieMoveLeft_Step0
 	.4byte MovementAction_AcroWheelieMoveLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroWheelieMoveRight: @ 0x084E69DC
 	.4byte MovementAction_AcroWheelieMoveRight_Step0
 	.4byte MovementAction_AcroWheelieMoveRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroEndWheelieMoveDown: @ 0x084E69E8
 	.4byte MovementAction_AcroEndWheelieMoveDown_Step0
 	.4byte MovementAction_AcroEndWheelieMoveDown_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroEndWheelieMoveUp: @ 0x084E69F4
 	.4byte MovementAction_AcroEndWheelieMoveUp_Step0
 	.4byte MovementAction_AcroEndWheelieMoveUp_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroEndWheelieMoveLeft: @ 0x084E6A00
 	.4byte MovementAction_AcroEndWheelieMoveLeft_Step0
 	.4byte MovementAction_AcroEndWheelieMoveLeft_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_AcroEndWheelieMoveRight: @ 0x084E6A0C
 	.4byte MovementAction_AcroEndWheelieMoveRight_Step0
 	.4byte MovementAction_AcroEndWheelieMoveRight_Step1
 	.4byte MovementAction_PauseSpriteAnim
+sMovementActionFuncs_Levitate: @ 0x084E6A18
 	.4byte MovementAction_Levitate_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_StopLevitate: @ 0x084E6A20
 	.4byte MovementAction_StopLevitate_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_DestroyExtraTaskIfAtTop: @ 0x084E6A28
 	.4byte MovementAction_DestroyExtraTaskIfAtTop_Step0
 	.4byte sub_08095E28
 	.globl gUnknown_84E6A30
@@ -6709,13 +6979,17 @@ sAnalyzedData_084E6CA8: @ 0x084E6CA8
 gUnknown_84E6CB4: @ 0x084E6CB4
 	@ Resolved pointer table; original ROM range 0x4E6CB4..0x4E6CDF.
 	.4byte MAP_NUM_ROUTE133
+sMovementActionFuncs_StoreAndLockAnim: @ 0x084E6CB8
 	.4byte MovementAction_StoreAndLockAnim_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_FreeAndUnlockAnim: @ 0x084E6CC0
 	.4byte MovementAction_FreeAndUnlockAnim_Step0
 	.4byte sub_08095E28
+sMovementActionFuncs_FlyUp: @ 0x084E6CC8
 	.4byte MovementAction_FlyUp_Step0
 	.4byte MovementAction_FlyUp_Step1
 	.4byte MovementAction_Finish
+sMovementActionFuncs_FlyDown: @ 0x084E6CD4
 	.4byte MovementAction_FlyDown_Step0
 	.4byte MovementAction_FlyDown_Step1
 	.4byte MovementAction_Finish
