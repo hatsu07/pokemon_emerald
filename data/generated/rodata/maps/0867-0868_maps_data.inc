@@ -506,9 +506,8 @@ sSpriteTemplate_0857140C: @ 0x0857140C
 	@ pret/pokeemerald-jp direct xref for 0x08571424: electric.s: sub_0810B27C
 	.globl gElectricData_08571424
 gElectricData_08571424:
-	.globl gUnknown_8571424
-gUnknown_8571424: @ 0x08571424
 	@ analyzed canonical ROM range 0x08571424-0x0857143B
+	.globl sSpriteTemplate_08571424
 sSpriteTemplate_08571424: @ 0x08571424
 	rodata_sprite_template 0x27BD, 0x27BD, 0x084FD040, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_0810B27C
 	@ pret/pokeemerald-jp direct xref for 0x0857143C: electric.s: sub_0810B3C8
@@ -1217,9 +1216,8 @@ gUnknown_85727A4: @ 0x085727A4
 	@ pret/pokeemerald-jp direct xref for 0x085727F4: intro.s: CreateGroudonRockSprites
 	.globl gIntroData_085727F4
 gIntroData_085727F4:
-	.globl gUnknown_85727F4
-gUnknown_85727F4: @ 0x085727F4
 	@ analyzed canonical ROM range 0x085727F4-0x0857280B
+	.globl sSpriteTemplate_085727F4
 sSpriteTemplate_085727F4: @ 0x085727F4
 	rodata_sprite_template 0x274A, 0x274A, 0x084FD020, 0x085727DC, 0, gDummySpriteAffineAnimTable, AnimRaiseSprite
 	@ pret/pokeemerald-jp direct xref for 0x0857280C: rock.s: sub_08111A64

@@ -638,9 +638,8 @@ gUnknown_85AD158: @ 0x085AD158
 	@ pret/pokeemerald-jp direct xref for 0x085AD190: battle_anim_special.s: sub_08172DD0
 	.globl gBattleAnimSpecialData_085AD190
 gBattleAnimSpecialData_085AD190:
-	.globl gUnknown_85AD190
-gUnknown_85AD190: @ 0x085AD190
 	@ analyzed canonical ROM range 0x085AD190-0x085AD1A7
+	.globl sSpriteTemplate_085AD190
 sSpriteTemplate_085AD190: @ 0x085AD190
 	rodata_sprite_template 0x27F9, 0x27F9, 0x084FD018, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_0815B3D8
 	@ pret/pokeemerald-jp direct xref for 0x085AD1A8: battle_anim_effects_3.s: AnimMeteorMashStarStep, sub_0815B410; battle_anim_special.s: sub_08172DD0
@@ -694,9 +693,8 @@ gUnknown_85AD268: @ 0x085AD268
 	@ pret/pokeemerald-jp direct xref for 0x085AD294: battle_anim_effects_3.s: sub_0815BD40
 	.globl gBattleAnimEffects3Data_085AD294
 gBattleAnimEffects3Data_085AD294:
-	.globl gUnknown_85AD294
-gUnknown_85AD294: @ 0x085AD294
 	@ analyzed canonical ROM range 0x085AD294-0x085AD2AB
+	.globl sSpriteTemplate_085AD294
 sSpriteTemplate_085AD294: @ 0x085AD294
 	rodata_sprite_template 0x2801, 0x2801, 0x084FD018, 0x085AD288, 0, gDummySpriteAffineAnimTable, sub_0815BD40
 	@ pret/pokeemerald-jp direct xref for 0x085AD2AC: battle_anim_effects_3.s: sub_0815BFE0
@@ -977,4 +975,3 @@ gUnknown_85AD7D0: @ 0x085AD7D0
 	.2byte 0xCCCC, 0x0CCC, 0xCCC0, 0x0DCC, 0xCC00, 0x00DC, 0xC000, 0x000D
 	.globl gUnknown_85AD9A0
 gUnknown_85AD9A0: @ 0x085AD9A0
-

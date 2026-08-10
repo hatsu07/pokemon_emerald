@@ -109,8 +109,6 @@
 	.set BG_SOLAR_BEAM_CONTESTS, 26
 	.endif
 
-	.globl gUnknown_8277908
-gUnknown_8277908: @ 0x08277908
 sBattleAnimationScriptData:
 gBattleAnims_Special::
 	.4byte Special_LevelUp
@@ -803,11 +801,11 @@ Move_THUNDER_WAVE:
 	ba_playsewithpan 0x008A, SOUND_PAN_TARGET
 	ba_delay 20
 	ba_loopsewithpan 0x0077, SOUND_PAN_TARGET, 10, 4
-	ba_createsprite gUnknown_8571424, ANIM_TARGET, 2, -16, -16
+	ba_createsprite sSpriteTemplate_08571424, ANIM_TARGET, 2, -16, -16
 	ba_delay 4
-	ba_createsprite gUnknown_8571424, ANIM_TARGET, 2, -16, 0
+	ba_createsprite sSpriteTemplate_08571424, ANIM_TARGET, 2, -16, 0
 	ba_delay 4
-	ba_createsprite gUnknown_8571424, ANIM_TARGET, 2, -16, 16
+	ba_createsprite sSpriteTemplate_08571424, ANIM_TARGET, 2, -16, 16
 	ba_waitforvisualfinish
 	ba_createvisualtask sub_08116E70, 10, 1, 0, 6, 0, 0
 	ba_waitforvisualfinish
@@ -6291,20 +6289,20 @@ Move_NATURE_POWER:
 	ba_monbg ANIM_DEF_PARTNER
 	ba_setalpha 12, 8
 	ba_createsprite 0x08572EBC, ANIM_ATTACKER, 2, 4, 1, 10, 1
-	ba_createsprite gUnknown_85727F4, ANIM_ATTACKER, 2, 20, 32, -48, 50, 2
-	ba_createsprite gUnknown_85727F4, ANIM_ATTACKER, 2, 0, 32, -38, 25, 5
-	ba_createsprite gUnknown_85727F4, ANIM_ATTACKER, 2, 32, 32, -28, 40, 3
-	ba_createsprite gUnknown_85727F4, ANIM_ATTACKER, 2, -20, 32, -48, 50, 2
-	ba_createsprite gUnknown_85727F4, ANIM_ATTACKER, 2, 20, 32, -28, 60, 1
-	ba_createsprite gUnknown_85727F4, ANIM_ATTACKER, 2, 0, 32, -28, 30, 4
+	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, 20, 32, -48, 50, 2
+	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, 0, 32, -38, 25, 5
+	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, 32, 32, -28, 40, 3
+	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, -20, 32, -48, 50, 2
+	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, 20, 32, -28, 60, 1
+	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, 0, 32, -28, 30, 4
 	ba_createvisualtask AnimTask_ShakeMon2, 2, 0, 1, 0, 30, 1
 	ba_playsewithpan 0x00AB, SOUND_PAN_ATTACKER
 	ba_delay 10
-	ba_createsprite gUnknown_85727F4, ANIM_ATTACKER, 2, 15, 32, -48, 25, 5
-	ba_createsprite gUnknown_85727F4, ANIM_ATTACKER, 2, -10, 32, -42, 30, 4
+	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, 15, 32, -48, 25, 5
+	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, -10, 32, -42, 30, 4
 	ba_delay 10
-	ba_createsprite gUnknown_85727F4, ANIM_ATTACKER, 2, 0, 32, -42, 25, 5
-	ba_createsprite gUnknown_85727F4, ANIM_ATTACKER, 2, -25, 32, -48, 30, 4
+	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, 0, 32, -42, 25, 5
+	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, -25, 32, -48, 30, 4
 	ba_waitforvisualfinish
 	ba_createsprite 0x0855A9A0, ANIM_ATTACKER, 2, 0, 16, 0, 0, 4
 	ba_delay 3
@@ -7511,7 +7509,7 @@ Move_WISH:
 	ba_createsprite 0x08572E58, ANIM_ATTACKER, 2, 1, 3, 0, 10, 0
 	ba_waitforvisualfinish
 	ba_panse_27 0x00CF, SOUND_PAN_TARGET, SOUND_PAN_ATTACKER, 253, 0
-	ba_createsprite gUnknown_85AD190, ANIM_ATTACKER, 40
+	ba_createsprite sSpriteTemplate_085AD190, ANIM_ATTACKER, 40
 	ba_waitforvisualfinish
 	ba_delay 60
 	ba_loopsewithpan 0x00C3, SOUND_PAN_ATTACKER, 16, 3
@@ -7665,7 +7663,7 @@ Move_MORNING_SUN:
 	ba_call BattleAnimScript_08285F66
 	ba_end
 BattleAnimScript_082831FF: @ 0x082831FF
-	ba_createsprite gUnknown_85AD294, ANIM_ATTACKER, 2, 30, 640
+	ba_createsprite sSpriteTemplate_085AD294, ANIM_ATTACKER, 2, 30, 640
 	ba_delay 5
 	ba_return
 Move_SWEET_SCENT:
