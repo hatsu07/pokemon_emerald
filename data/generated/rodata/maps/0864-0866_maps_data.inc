@@ -4,7 +4,6 @@ gFieldPoisonData_08569552:
 	.globl gUnknown_8569552
 gUnknown_8569552: @ 0x08569552
 	@ analyzed canonical ROM range 0x08569552-0x0856A1E3
-sAnalyzedData_08569552: @ 0x08569552
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x4948, 0x4B4A, 0x4D4C, 0x004E, 0x0000, 0x00C0, 0x0000, 0xB000
 	.2byte 0x00CB, 0xBB00, 0x0CBB, 0xBBB0, 0xCCCB, 0xBBC0, 0xCCCB, 0xDD00
@@ -230,7 +229,6 @@ gFldeffMiscData_0856A214:
 	.globl gUnknown_856A214
 gUnknown_856A214: @ 0x0856A214
 	@ analyzed canonical ROM range 0x0856A214-0x0856A26F
-sAnalyzedData_0856A214: @ 0x0856A214
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0xFF, 0x08, 0x10, 0xBC, 0xA0, 0x56, 0x08, 0x68, 0xA1, 0x56, 0x08, 0xBC, 0xA1, 0x56, 0x08
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x6D, 0xAC, 0x0F, 0x08, 0xFC, 0x97, 0x56, 0x08, 0x03, 0x10, 0x00, 0x00
@@ -244,7 +242,6 @@ gFldeffMiscData_0856A270:
 	.globl gUnknown_856A270
 gUnknown_856A270: @ 0x0856A270
 	@ analyzed canonical ROM range 0x0856A270-0x0856A447
-sAnalyzedData_0856A270: @ 0x0856A270
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xFFFF, 0x100E, 0xA23C, 0x0856, 0xA254, 0x0856, 0xA258, 0x0856
 	.2byte 0xF310, 0x082B, 0xB415, 0x080F, 0xAF08, 0x0835, 0x100E, 0x0000
@@ -282,7 +279,6 @@ gFldeffMiscData_0856A448:
 	.globl gUnknown_856A448
 gUnknown_856A448: @ 0x0856A448
 	@ analyzed canonical ROM range 0x0856A448-0x0856A463
-sAnalyzedData_0856A448: @ 0x0856A448
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xA410, 0x0856, 0x1000, 0x0000, 0x0000, 0x001E, 0x0001, 0x001E
 	.2byte 0x0002, 0x001E, 0xFFFE, 0x0000, 0xA450, 0x0856
@@ -300,7 +296,6 @@ gFieldSpecialSceneData_0856A47C:
 	.globl gUnknown_856A47C
 gUnknown_856A47C: @ 0x0856A47C
 	@ analyzed canonical ROM range 0x0856A47C-0x0856A48E
-sAnalyzedData_0856A47C: @ 0x0856A47C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0xFF
 	.byte 0xFF, 0xFF, 0x00
@@ -310,7 +305,6 @@ gFieldSpecialSceneData_0856A48F:
 	.globl gUnknown_856A48F
 gUnknown_856A48F: @ 0x0856A48F
 	@ analyzed canonical ROM range 0x0856A48F-0x0856A490
-sAnalyzedData_0856A48F: @ 0x0856A48F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x18, 0xFE
 	@ pret/pokeemerald-jp direct xref for 0x0856A491: field_special_scene.s: Task_HandlePorthole
@@ -319,7 +313,6 @@ gFieldSpecialSceneData_0856A491:
 	.globl gUnknown_856A491
 gUnknown_856A491: @ 0x0856A491
 	@ analyzed canonical ROM range 0x0856A491-0x0856A493
-sAnalyzedData_0856A491: @ 0x0856A491
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x17, 0xFE, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0856A494: rotating_gate.s: RotatingGate_LoadPuzzleConfig
@@ -328,7 +321,6 @@ gRotatingGateData_0856A494:
 	.globl gUnknown_856A494
 gUnknown_856A494: @ 0x0856A494
 	@ analyzed canonical ROM range 0x0856A494-0x0856A4D3
-sAnalyzedData_0856A494: @ 0x0856A494
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0006, 0x0007, 0x0105, 0x0000, 0x0009, 0x000F, 0x0205, 0x0000
 	.2byte 0x0003, 0x0013, 0x0105, 0x0000, 0x0002, 0x0006, 0x0104, 0x0000
@@ -340,7 +332,6 @@ gRotatingGateData_0856A4D4:
 	.globl gUnknown_856A4D4
 gUnknown_856A4D4: @ 0x0856A4D4
 	@ analyzed canonical ROM range 0x0856A4D4-0x0856D93B
-sAnalyzedData_0856A4D4: @ 0x0856A4D4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x000E, 0x0005, 0x0104, 0x0000, 0x000A, 0x0006, 0x0201, 0x0000
 	.2byte 0x0006, 0x0006, 0x0103, 0x0000, 0x000E, 0x0008, 0x0104, 0x0000
@@ -1187,7 +1178,6 @@ gRotatingGateData_0856D93C:
 	.globl gUnknown_856D93C
 gUnknown_856D93C: @ 0x0856D93C
 	@ analyzed canonical ROM range 0x0856D93C-0x0856DBAB
-sAnalyzedData_0856D93C: @ 0x0856D93C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xA52C, 0x0856, 0x0200, 0x1300, 0xA72C, 0x0856, 0x0800, 0x1301
 	.2byte 0xAF2C, 0x0856, 0x0800, 0x1302, 0xB72C, 0x0856, 0x0800, 0x1303
@@ -1250,7 +1240,6 @@ gRotatingGateData_0856DBDC:
 	.globl gUnknown_856DBDC
 gUnknown_856DBDC: @ 0x0856DBDC
 	@ analyzed canonical ROM range 0x0856DBDC-0x0856DBEB
-sAnalyzedData_0856DBDC: @ 0x0856DBDC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xFFFF, 0xFFFF, 0x2627, 0x1312, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF
 	@ pret/pokeemerald-jp direct xref for 0x0856DBEC: rotating_gate.s: RotatingGate_GetRotationInfo
@@ -1259,7 +1248,6 @@ gRotatingGateData_0856DBEC:
 	.globl gUnknown_856DBEC
 gUnknown_856DBEC: @ 0x0856DBEC
 	@ analyzed canonical ROM range 0x0856DBEC-0x0856DBFB
-sAnalyzedData_0856DBEC: @ 0x0856DBEC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0x1617, 0x2322, 0xFFFF, 0xFFFF
 	@ pret/pokeemerald-jp direct xref for 0x0856DBFC: rotating_gate.s: RotatingGate_GetRotationInfo
@@ -1268,7 +1256,6 @@ gRotatingGateData_0856DBFC:
 	.globl gUnknown_856DBFC
 gUnknown_856DBFC: @ 0x0856DBFC
 	@ analyzed canonical ROM range 0x0856DBFC-0x0856DC0B
-sAnalyzedData_0856DBFC: @ 0x0856DBFC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x11FF, 0xFFFF, 0x10FF, 0xFFFF, 0x24FF, 0xFFFF, 0x25FF, 0xFFFF
 	@ pret/pokeemerald-jp direct xref for 0x0856DC0C: rotating_gate.s: RotatingGate_GetRotationInfo
@@ -1277,7 +1264,6 @@ gRotatingGateData_0856DC0C:
 	.globl gUnknown_856DC0C
 gUnknown_856DC0C: @ 0x0856DC0C
 	@ analyzed canonical ROM range 0x0856DC0C-0x0856DC1B
-sAnalyzedData_0856DC0C: @ 0x0856DC0C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xFF, 0xFF, 0x21, 0xFF, 0xFF, 0xFF, 0x20, 0xFF, 0xFF, 0xFF, 0x14, 0xFF, 0xFF, 0xFF, 0x15, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x0856DC1C: rotating_gate.s: RotatingGate_CanRotate
@@ -1286,7 +1272,6 @@ gRotatingGateData_0856DC1C:
 	.globl gUnknown_856DC1C
 gUnknown_856DC1C: @ 0x0856DC1C
 	@ analyzed canonical ROM range 0x0856DC1C-0x0856DC3B
-sAnalyzedData_0856DC1C: @ 0x0856DC1C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xFF00, 0x0000, 0xFE01, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000
 	.2byte 0x00FF, 0x0000, 0x01FF, 0x0000, 0xFFFF, 0x0000, 0xFFFE, 0x0000
@@ -1296,7 +1281,6 @@ gRotatingGateData_0856DC3C:
 	.globl gUnknown_856DC3C
 gUnknown_856DC3C: @ 0x0856DC3C
 	@ analyzed canonical ROM range 0x0856DC3C-0x0856DC5B
-sAnalyzedData_0856DC3C: @ 0x0856DC3C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xFFFF, 0x0000, 0xFEFF, 0x0000, 0xFF00, 0x0000, 0xFF01, 0x0000
 	.2byte 0x0000, 0x0000, 0x0100, 0x0000, 0x00FF, 0x0000, 0x00FE, 0x0000
@@ -1306,7 +1290,6 @@ gRotatingGateData_0856DC5C:
 	.globl gUnknown_856DC5C
 gUnknown_856DC5C: @ 0x0856DC5C
 	@ analyzed canonical ROM range 0x0856DC5C-0x0856DCBB
-sAnalyzedData_0856DC5C: @ 0x0856DC5C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0001, 0x0001, 0x0000, 0x0000, 0x0101, 0x0001, 0x0000, 0x0000
 	.2byte 0x0001, 0x0101, 0x0000, 0x0000, 0x0101, 0x0101, 0x0000, 0x0000
@@ -1325,7 +1308,6 @@ gItemUseData_0856DCC8:
 	.globl gUnknown_856DCC8
 gUnknown_856DCC8: @ 0x0856DCC8
 	@ analyzed canonical ROM range 0x0856DCC8-0x0856DCCB
-sAnalyzedData_0856DCC8: @ 0x0856DCC8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x02, 0x04, 0x01, 0x03
 	@ pret/pokeemerald-jp direct xref for 0x0856DCCC: item_use.s: sub_080FE874
@@ -1335,7 +1317,6 @@ gItemUseData_0856DCCC:
 gUnknown_856DCCC: @ 0x0856DCCC
 	@ analyzed canonical ROM range 0x0856DCCC-0x0856DDF3
 	@ semantic recovery: rodata; byte-verified against linked ROM
-sAnalyzedData_0856DCCC: @ 0x0856DCCC
 FunctionPointerTable_JP_0856DCCC: @ 0x0856DCCC
 	@ proven function-pointer table
 	.4byte sub_080FE88C
@@ -1364,7 +1345,6 @@ gBattleAnimEffects1Data_0856DDF4:
 	.globl gUnknown_856DDF4
 gUnknown_856DDF4: @ 0x0856DDF4
 	@ analyzed canonical ROM range 0x0856DDF4-0x0856E2E3
-sAnalyzedData_0856DDF4: @ 0x0856DDF4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x27A3, 0x27A3, 0xD010, 0x084F, 0xDDA8, 0x0856, 0x0000, 0x0000
 	.2byte 0xF310, 0x082B, 0xF1D9, 0x080F, 0x0140, 0x0140, 0x0000, 0x0000
@@ -1451,7 +1431,6 @@ gBattleAnimEffects1Data_0856E2E4:
 	.globl gUnknown_856E2E4
 gUnknown_856E2E4: @ 0x0856E2E4
 	@ analyzed canonical ROM range 0x0856E2E4-0x0856E35B
-sAnalyzedData_0856E2E4: @ 0x0856E2E4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1805, 0x0001, 0x0004, 0x1008, 0x00FF, 0x0002, 0x1008, 0x0001
 	.2byte 0x0002, 0x1008, 0x0001, 0x0002, 0x1008, 0x0001, 0x0010, 0x0000
@@ -1467,7 +1446,6 @@ gBattleAnimEffects1Data_0856E35C:
 	.globl gUnknown_856E35C
 gUnknown_856E35C: @ 0x0856E35C
 	@ analyzed canonical ROM range 0x0856E35C-0x0856E45B
-sAnalyzedData_0856E35C: @ 0x0856E35C
 	@ pointer/nullable table
 	.4byte 0x274F274F @ +0x0
 	.4byte 0x084FD018 @ +0x4
@@ -1539,7 +1517,6 @@ gBattleAnimEffects1Data_0856E45C:
 	.globl gUnknown_856E45C
 gUnknown_856E45C: @ 0x0856E45C
 	@ analyzed canonical ROM range 0x0856E45C-0x0856E8B3
-sAnalyzedData_0856E45C: @ 0x0856E45C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x001F, 0x027F, 0x03FF, 0x03E0, 0x7DC5, 0x7D56, 0x7EB6, 0x0000
 	.2byte 0x281A, 0x281A, 0xD078, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000
@@ -1617,7 +1594,6 @@ gBattleAnimEffects1Data_0856E8B4:
 	.globl gUnknown_856E8B4
 gUnknown_856E8B4: @ 0x0856E8B4
 	@ analyzed canonical ROM range 0x0856E8B4-0x0856EA9F
-sAnalyzedData_0856E8B4: @ 0x0856E8B4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x4040, 0xC000, 0x40C0, 0xE020, 0x0000, 0x0000, 0xF2F8, 0x082B
 	.2byte 0xF304, 0x082B, 0x0000, 0x0000, 0xF310, 0x082B, 0x2191, 0x0810
@@ -1656,7 +1632,6 @@ gBattleAnimEffects1Data_0856EAA0:
 	.globl gUnknown_856EAA0
 gUnknown_856EAA0: @ 0x0856EAA0
 	@ analyzed canonical ROM range 0x0856EAA0-0x0856EACF
-sAnalyzedData_0856EAA0: @ 0x0856EAA0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x27D2, 0x27D2, 0xD148, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000
 	.2byte 0xF310, 0x082B, 0x2D31, 0x0810, 0x0000, 0x0008, 0x0004, 0x0008
@@ -1667,7 +1642,6 @@ gBattleAnimEffects1Data_0856EAD0:
 	.globl gUnknown_856EAD0
 gUnknown_856EAD0: @ 0x0856EAD0
 	@ analyzed canonical ROM range 0x0856EAD0-0x0856EC03
-sAnalyzedData_0856EAD0: @ 0x0856EAD0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x27D3, 0x27D3, 0xD018, 0x084F, 0xEACC, 0x0856, 0x0000, 0x0000
 	.2byte 0xF310, 0x082B, 0x2D91, 0x0810, 0x0000, 0x0002, 0x0010, 0x0002
@@ -1695,7 +1669,6 @@ gBattleAnimEffects1Data_0856EC04:
 	.globl gUnknown_856EC04
 gUnknown_856EC04: @ 0x0856EC04
 	@ analyzed canonical ROM range 0x0856EC04-0x0856ECF7
-sAnalyzedData_0856EC04: @ 0x0856EC04
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x58, 0x27, 0xFF, 0x7F, 0x5F, 0x73, 0xDF, 0x6A, 0x3F, 0x62, 0xBF, 0x59, 0x71, 0x27, 0xFF, 0x7F
 	.byte 0xF9, 0x6B, 0xF4, 0x57, 0xEF, 0x43, 0xEA, 0x33, 0xC9, 0x27, 0xFF, 0x7F, 0xFF, 0x63, 0xFF, 0x47
@@ -1719,7 +1692,6 @@ gBattleAnimEffects3Data_0856ECF8:
 	.globl gUnknown_856ECF8
 gUnknown_856ECF8: @ 0x0856ECF8
 	@ analyzed canonical ROM range 0x0856ECF8-0x0856EF93
-sAnalyzedData_0856ECF8: @ 0x0856ECF8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x27E1, 0x27E1, 0xD020, 0x084F, 0xECE8, 0x0856, 0x0000, 0x0000
 	.2byte 0xF310, 0x082B, 0x39B5, 0x0810, 0x0010, 0x0010, 0x0000, 0x0000
@@ -1769,7 +1741,6 @@ gBattleAnimEffects2Data_0856EF94:
 	.globl gUnknown_856EF94
 gUnknown_856EF94: @ 0x0856EF94
 	@ analyzed canonical ROM range 0x0856EF94-0x0856F083
-sAnalyzedData_0856EF94: @ 0x0856EF94
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x13, 0x27, 0x13, 0x27, 0x60, 0xD1, 0x4F, 0x08, 0x04, 0xF3, 0x2B, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0xF5, 0x42, 0x10, 0x08, 0x20, 0x00, 0x20, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -1792,7 +1763,6 @@ gBattleAnimEffects2Data_0856F084:
 	.globl gUnknown_856F084
 gUnknown_856F084: @ 0x0856F084
 	@ analyzed canonical ROM range 0x0856F084-0x0856F1CB
-sAnalyzedData_0856F084: @ 0x0856F084
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xC2, 0x27, 0xC2, 0x27, 0x48, 0xD1, 0x4F, 0x08, 0x04, 0xF3, 0x2B, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x39, 0x48, 0x10, 0x08, 0x08, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
@@ -1821,7 +1791,6 @@ gBattleAnimEffects2Data_0856F1CC:
 	.globl gUnknown_856F1CC
 gUnknown_856F1CC: @ 0x0856F1CC
 	@ analyzed canonical ROM range 0x0856F1CC-0x0856F1EB
-sAnalyzedData_0856F1CC: @ 0x0856F1CC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xFFFA, 0x0004, 0x0800, 0x0000, 0x000A, 0xFFF6, 0x0800, 0x0000
 	.2byte 0xFFFC, 0x0006, 0x0800, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
@@ -1831,7 +1800,6 @@ gBattleAnimEffects2Data_0856F1EC:
 	.globl gUnknown_856F1EC
 gUnknown_856F1EC: @ 0x0856F1EC
 	@ analyzed canonical ROM range 0x0856F1EC-0x0856F287
-sAnalyzedData_0856F1EC: @ 0x0856F1EC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0xFFFC, 0xFFFB, 0x0C00, 0x0000, 0x0000, 0x0000, 0x1800, 0x0000
 	.2byte 0x0004, 0x0005, 0x0C00, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
@@ -1849,7 +1817,6 @@ gBattleAnimEffects2Data_0856F288:
 	.globl gUnknown_856F288
 gUnknown_856F288: @ 0x0856F288
 	@ analyzed canonical ROM range 0x0856F288-0x0856F493
-sAnalyzedData_0856F288: @ 0x0856F288
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF6, 0xFF, 0x09, 0x00, 0x00, 0x07, 0x00, 0x00, 0x14, 0x00, 0xEC, 0xFF, 0x00, 0x07, 0x00, 0x00
 	.byte 0xEC, 0xFF, 0x14, 0x00, 0x00, 0x07, 0x00, 0x00, 0x0A, 0x00, 0xF7, 0xFF, 0x00, 0x07, 0x00, 0x00
@@ -1890,7 +1857,6 @@ gBattleAnimEffects2Data_0856F494:
 	.globl gUnknown_856F494
 gUnknown_856F494: @ 0x0856F494
 	@ analyzed canonical ROM range 0x0856F494-0x0856F4BF
-sAnalyzedData_0856F494: @ 0x0856F494
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0060, 0xFFF3, 0x0800, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0003, 0x0004, 0x0003, 0x0008, 0x0003, 0x0004, 0x0003
@@ -1909,7 +1875,6 @@ gBattleAnimEffects2Data_0856F4D8:
 	.globl gUnknown_856F4D8
 gUnknown_856F4D8: @ 0x0856F4D8
 	@ analyzed canonical ROM range 0x0856F4D8-0x0856F533
-sAnalyzedData_0856F4D8: @ 0x0856F4D8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x1C1E, 0x18EC, 0x1A10, 0x1CF6, 0x0000, 0x0006, 0x0010, 0x0006
 	.2byte 0x0020, 0x000F, 0x0010, 0x0006, 0x0000, 0x0006, 0x0010, 0x0046
@@ -1923,7 +1888,6 @@ gBattleAnimEffects2Data_0856F534:
 	.globl gUnknown_856F534
 gUnknown_856F534: @ 0x0856F534
 	@ analyzed canonical ROM range 0x0856F534-0x0856F56B
-sAnalyzedData_0856F534: @ 0x0856F534
 	@ pointer/nullable table
 	.4byte 0x270F27DE @ +0x0
 	.4byte 0x0000270E @ +0x4
@@ -1945,7 +1909,6 @@ gBattleAnimEffects2Data_0856F56C:
 	.globl gUnknown_856F56C
 gUnknown_856F56C: @ 0x0856F56C
 	@ analyzed canonical ROM range 0x0856F56C-0x0856F77B
-sAnalyzedData_0856F56C: @ 0x0856F56C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x0A, 0x00, 0xF3, 0xFF, 0x00, 0x0A, 0x00, 0x00, 0xF6, 0xFF, 0x0D, 0x00, 0x00, 0x0A, 0x00, 0x00
 	.byte 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE8, 0x27, 0xE8, 0x27, 0x18, 0xD0, 0x4F, 0x08
@@ -1986,7 +1949,6 @@ gBattleAnimEffects2Data_0856F77C:
 	.globl gUnknown_856F77C
 gUnknown_856F77C: @ 0x0856F77C
 	@ analyzed canonical ROM range 0x0856F77C-0x08570C03
-sAnalyzedData_0856F77C: @ 0x0856F77C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0xF4, 0xFF, 0x08, 0x00, 0x00, 0x04, 0x00, 0x00, 0x14, 0x00, 0xEC, 0xFF, 0x00, 0x04, 0x00, 0x00
 	.byte 0xF8, 0xFF, 0x0C, 0x00, 0x00, 0x04, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
