@@ -2001,6 +2001,35 @@ gSpriteFrameImages_JP_084E0E08: @ 0x084E0E08
 	sprite_frame_image 0x0847CE0C, 0x100
 	sprite_frame_image 0x0847CF0C, 0x100
 	@ preserved non-SpriteFrameImage data: 0x084E0E50-0x084E18FF
+	@ Named ObjectEventGraphicsInfo resource pointer targets.
+	.set sObjectEventAnimTable_084E1500, 0x084E1500
+	.set sObjectEventAnimTable_084E1504, 0x084E1504
+	.set sObjectEventAnimTable_084E1554, 0x084E1554
+	.set sObjectEventAnimTable_084E15A4, 0x084E15A4
+	.set sObjectEventAnimTable_084E15F4, 0x084E15F4
+	.set sObjectEventAnimTable_084E168C, 0x084E168C
+	.set sObjectEventAnimTable_084E16DC, 0x084E16DC
+	.set sObjectEventAnimTable_084E173C, 0x084E173C
+	.set sObjectEventAnimTable_084E17DC, 0x084E17DC
+	.set sObjectEventAnimTable_084E183C, 0x084E183C
+	.set sObjectEventAnimTable_084E1890, 0x084E1890
+	.set sObjectEventAnimTable_084E1894, 0x084E1894
+	.set sObjectEventAnimTable_084E18A8, 0x084E18A8
+	.set sObjectEventAnimTable_084E18B0, 0x084E18B0
+	.set sObjectEventAnimTable_084E18B8, 0x084E18B8
+	.set sObjectEventAffineAnimTable_084E18E8, 0x084E18E8
+	.set sObjectEventOam_8x8, 0x084E1940
+	.set sObjectEventOam_16x16, 0x084E1950
+	.set sObjectEventOam_16x32, 0x084E1968
+	.set sObjectEventOam_32x32, 0x084E1970
+	.set sObjectEventOam_64x64, 0x084E1978
+	.set sObjectEventSubspriteTables_16x16, 0x084E19A0
+	.set sObjectEventSubspriteTables_16x32, 0x084E19F4
+	.set sObjectEventSubspriteTables_32x32, 0x084E1A48
+	.set sObjectEventSubspriteTables_48x48, 0x084E1AA8
+	.set sObjectEventSubspriteTables_64x64, 0x084E1B28
+	.set sObjectEventSubspriteTables_96x40, 0x084E1C48
+	.set sObjectEventSubspriteTables_88x32, 0x084E1D78
 	.byte 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x08, 0x00
 	.byte 0xFE, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x10, 0x00, 0xFE, 0xFF, 0x00, 0x00, 0x01, 0x00, 0x10, 0x00
 	.byte 0xFE, 0xFF, 0x00, 0x00, 0x02, 0x00, 0x10, 0x00, 0xFE, 0xFF, 0x00, 0x00, 0x02, 0x00, 0x50, 0x00
@@ -2257,739 +2286,739 @@ sAnalyzedData_084E1900: @ 0x084E1900
 	.byte 0x10, 0x00, 0x00, 0x00, 0x38, 0x1D, 0x4E, 0x08
 	.globl gObjectEventGraphicsInfo_JP_000
 gObjectEventGraphicsInfo_JP_000: @ 0x084E1DA8
-	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 16, 32, 0x10, 1, 0x084E1968, 0x084E19F4, 0x084E16DC, 0x084DDEE0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 16, 32, 0x10, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E16DC, gSpriteFrameImages_JP_084DDEE0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_001
 gObjectEventGraphicsInfo_JP_001: @ 0x084E1DCC
-	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x10, 2, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084DDF70, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x10, 2, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DDF70, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_063
 gObjectEventGraphicsInfo_JP_063: @ 0x084E1DF0
-	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x10, 2, 0x084E1970, 0x084E1A48, 0x084E173C, 0x084DDFB8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x10, 2, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E173C, gSpriteFrameImages_JP_084DDFB8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_002
 gObjectEventGraphicsInfo_JP_002: @ 0x084E1E14
-	object_event_graphics_info 0xFFFF, 0x1100, 0x11FF, 0x0200, 32, 32, 0x90, 1, 0x084E1970, 0x084E1A48, 0x084E17DC, 0x084DE090, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1100, 0x11FF, 0x0200, 32, 32, 0x90, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E17DC, gSpriteFrameImages_JP_084DE090, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_003
 gObjectEventGraphicsInfo_JP_003: @ 0x084E1E38
-	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x10, 1, 0x084E1970, 0x084E1A48, 0x084E1890, 0x084DE138, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x10, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1890, gSpriteFrameImages_JP_084DE138, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_004
 gObjectEventGraphicsInfo_JP_004: @ 0x084E1E5C
-	object_event_graphics_info 0xFFFF, 0x110B, 0x11FF, 0x0200, 32, 32, 0x2A, 1, 0x084E1970, 0x084E1A48, 0x084E1504, 0x084DE160, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x110B, 0x11FF, 0x0200, 32, 32, 0x2A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1504, gSpriteFrameImages_JP_084DE160, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_005
 gObjectEventGraphicsInfo_JP_005: @ 0x084E1E80
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, 0x084E1950, 0x084E19A0, 0x084E1554, 0x084DE198, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE198, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_006
 gObjectEventGraphicsInfo_JP_006: @ 0x084E1EA4
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE1E0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE1E0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_007
 gObjectEventGraphicsInfo_JP_007: @ 0x084E1EC8
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE228, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE228, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_008
 gObjectEventGraphicsInfo_JP_008: @ 0x084E1EEC
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE270, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE270, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_009
 gObjectEventGraphicsInfo_JP_009: @ 0x084E1F10
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE2B8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE2B8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_010
 gObjectEventGraphicsInfo_JP_010: @ 0x084E1F34
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE300, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE300, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_011
 gObjectEventGraphicsInfo_JP_011: @ 0x084E1F58
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0080, 16, 16, 0x15, 1, 0x084E1950, 0x084E19A0, 0x084E1554, 0x084DE348, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0080, 16, 16, 0x15, 1, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE348, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_012
 gObjectEventGraphicsInfo_JP_012: @ 0x084E1F7C
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x13, 1, 0x084E1950, 0x084E19A0, 0x084E1554, 0x084DE390, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x13, 1, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE390, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_013
 gObjectEventGraphicsInfo_JP_013: @ 0x084E1FA0
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE3D8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE3D8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_014
 gObjectEventGraphicsInfo_JP_014: @ 0x084E1FC4
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE420, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE420, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_015
 gObjectEventGraphicsInfo_JP_015: @ 0x084E1FE8
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE468, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE468, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_016
 gObjectEventGraphicsInfo_JP_016: @ 0x084E200C
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE4B0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE4B0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_017
 gObjectEventGraphicsInfo_JP_017: @ 0x084E2030
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE4F8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE4F8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_018
 gObjectEventGraphicsInfo_JP_018: @ 0x084E2054
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE540, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE540, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_019
 gObjectEventGraphicsInfo_JP_019: @ 0x084E2078
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE588, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE588, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_020
 gObjectEventGraphicsInfo_JP_020: @ 0x084E209C
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE5D0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE5D0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_021
 gObjectEventGraphicsInfo_JP_021: @ 0x084E20C0
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE618, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE618, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_022
 gObjectEventGraphicsInfo_JP_022: @ 0x084E20E4
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE660, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE660, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_023
 gObjectEventGraphicsInfo_JP_023: @ 0x084E2108
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE6A8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE6A8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_024
 gObjectEventGraphicsInfo_JP_024: @ 0x084E212C
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE6F0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE6F0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_025
 gObjectEventGraphicsInfo_JP_025: @ 0x084E2150
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE738, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE738, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_026
 gObjectEventGraphicsInfo_JP_026: @ 0x084E2174
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE780, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE780, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_027
 gObjectEventGraphicsInfo_JP_027: @ 0x084E2198
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE7C8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE7C8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_028
 gObjectEventGraphicsInfo_JP_028: @ 0x084E21BC
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE810, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE810, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_029
 gObjectEventGraphicsInfo_JP_029: @ 0x084E21E0
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE858, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE858, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_030
 gObjectEventGraphicsInfo_JP_030: @ 0x084E2204
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE8A0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE8A0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_031
 gObjectEventGraphicsInfo_JP_031: @ 0x084E2228
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE8E8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE8E8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_032
 gObjectEventGraphicsInfo_JP_032: @ 0x084E224C
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE930, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE930, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_033
 gObjectEventGraphicsInfo_JP_033: @ 0x084E2270
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE978, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE978, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_034
 gObjectEventGraphicsInfo_JP_034: @ 0x084E2294
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DE9C0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE9C0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_035
 gObjectEventGraphicsInfo_JP_035: @ 0x084E22B8
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DEA08, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEA08, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_036
 gObjectEventGraphicsInfo_JP_036: @ 0x084E22DC
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DEA50, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEA50, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_037
 gObjectEventGraphicsInfo_JP_037: @ 0x084E2300
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DEA98, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEA98, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_038
 gObjectEventGraphicsInfo_JP_038: @ 0x084E2324
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DEAE0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEAE0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_039
 gObjectEventGraphicsInfo_JP_039: @ 0x084E2348
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DEB28, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEB28, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_040
 gObjectEventGraphicsInfo_JP_040: @ 0x084E236C
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DEB70, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEB70, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_041
 gObjectEventGraphicsInfo_JP_041: @ 0x084E2390
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0800, 64, 64, 0x94, 1, 0x084E1978, 0x084E1B28, 0x084E1554, 0x084E05D0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0800, 64, 64, 0x94, 1, sObjectEventOam_64x64, sObjectEventSubspriteTables_64x64, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E05D0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_042
 gObjectEventGraphicsInfo_JP_042: @ 0x084E23B4
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DEBB8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEBB8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_043
 gObjectEventGraphicsInfo_JP_043: @ 0x084E23D8
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DEC00, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEC00, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_044
 gObjectEventGraphicsInfo_JP_044: @ 0x084E23FC
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DEC48, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEC48, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_045
 gObjectEventGraphicsInfo_JP_045: @ 0x084E2420
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DEC90, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEC90, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_046
 gObjectEventGraphicsInfo_JP_046: @ 0x084E2444
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DECD8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DECD8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_047
 gObjectEventGraphicsInfo_JP_047: @ 0x084E2468
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DED20, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DED20, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_048
 gObjectEventGraphicsInfo_JP_048: @ 0x084E248C
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DED68, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DED68, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_049
 gObjectEventGraphicsInfo_JP_049: @ 0x084E24B0
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DEDB0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEDB0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_050
 gObjectEventGraphicsInfo_JP_050: @ 0x084E24D4
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DEDF8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEDF8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_051
 gObjectEventGraphicsInfo_JP_051: @ 0x084E24F8
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DEE40, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEE40, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_052
 gObjectEventGraphicsInfo_JP_052: @ 0x084E251C
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DEE88, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEE88, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_053
 gObjectEventGraphicsInfo_JP_053: @ 0x084E2540
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, 0x084E1950, 0x084E19A0, 0x084E1554, 0x084DEED0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEED0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_054
 gObjectEventGraphicsInfo_JP_054: @ 0x084E2564
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x13, 1, 0x084E1950, 0x084E19A0, 0x084E1554, 0x084DEF18, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x13, 1, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEF18, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_055
 gObjectEventGraphicsInfo_JP_055: @ 0x084E2588
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DEF60, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DEF60, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_056
 gObjectEventGraphicsInfo_JP_056: @ 0x084E25AC
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0200, 32, 32, 0x14, 2, 0x084E1970, 0x084E1A48, 0x084E173C, 0x084DEFA8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0200, 32, 32, 0x14, 2, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E173C, gSpriteFrameImages_JP_084DEFA8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_057
 gObjectEventGraphicsInfo_JP_057: @ 0x084E25D0
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0200, 32, 32, 0x12, 2, 0x084E1970, 0x084E1A48, 0x084E173C, 0x084DEFF0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0200, 32, 32, 0x12, 2, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E173C, gSpriteFrameImages_JP_084DEFF0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_058
 gObjectEventGraphicsInfo_JP_058: @ 0x084E25F4
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E183C, 0x084DF038, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E183C, gSpriteFrameImages_JP_084DF038, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_059
 gObjectEventGraphicsInfo_JP_059: @ 0x084E2618
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084DF088, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084DF088, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_060
 gObjectEventGraphicsInfo_JP_060: @ 0x084E263C
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 16, 0x42, 0, 0x084E1950, 0, 0x084E1894, 0x084E429C, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 16, 0x42, 0, sObjectEventOam_16x16, 0, sObjectEventAnimTable_084E1894, 0x084E429C, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_061
 gObjectEventGraphicsInfo_JP_061: @ 0x084E2660
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1894, 0x084E429C, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1894, 0x084E429C, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_062
 gObjectEventGraphicsInfo_JP_062: @ 0x084E2684
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x42, 0, 0x084E1968, 0x084E19F4, 0x084E1894, 0x084E429C, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x42, 0, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1894, 0x084E429C, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_064
 gObjectEventGraphicsInfo_JP_064: @ 0x084E26A8
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF090, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF090, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_065
 gObjectEventGraphicsInfo_JP_065: @ 0x084E26CC
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF0D8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF0D8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_066
 gObjectEventGraphicsInfo_JP_066: @ 0x084E26F0
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF120, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF120, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_067
 gObjectEventGraphicsInfo_JP_067: @ 0x084E2714
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF168, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF168, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_068
 gObjectEventGraphicsInfo_JP_068: @ 0x084E2738
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF1B0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF1B0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_069
 gObjectEventGraphicsInfo_JP_069: @ 0x084E275C
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF1F8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF1F8, gDummySpriteAffineAnimTable
 	.globl gMauvilleOldManGraphicsInfo_JP_01
 gMauvilleOldManGraphicsInfo_JP_01: @ 0x084E2780
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF1F8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF1F8, gDummySpriteAffineAnimTable
 	.globl gMauvilleOldManGraphicsInfo_JP_02
 gMauvilleOldManGraphicsInfo_JP_02: @ 0x084E27A4
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF1F8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF1F8, gDummySpriteAffineAnimTable
 	.globl gMauvilleOldManGraphicsInfo_JP_03
 gMauvilleOldManGraphicsInfo_JP_03: @ 0x084E27C8
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF240, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF240, gDummySpriteAffineAnimTable
 	.globl gMauvilleOldManGraphicsInfo_JP_04
 gMauvilleOldManGraphicsInfo_JP_04: @ 0x084E27EC
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF240, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF240, gDummySpriteAffineAnimTable
 	.globl gMauvilleOldManGraphicsInfo_JP_05
 gMauvilleOldManGraphicsInfo_JP_05: @ 0x084E2810
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF240, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF240, gDummySpriteAffineAnimTable
 	.globl gMauvilleOldManGraphicsInfo_JP_06
 gMauvilleOldManGraphicsInfo_JP_06: @ 0x084E2834
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF240, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF240, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_076
 gObjectEventGraphicsInfo_JP_076: @ 0x084E2858
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084DF288, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084DF288, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_077
 gObjectEventGraphicsInfo_JP_077: @ 0x084E287C
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084DF290, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084DF290, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_078
 gObjectEventGraphicsInfo_JP_078: @ 0x084E28A0
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084DF298, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084DF298, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_079
 gObjectEventGraphicsInfo_JP_079: @ 0x084E28C4
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084DF2A0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084DF2A0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_080
 gObjectEventGraphicsInfo_JP_080: @ 0x084E28E8
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084DF2A8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084DF2A8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_081
 gObjectEventGraphicsInfo_JP_081: @ 0x084E290C
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084DF2B0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084DF2B0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_082
 gObjectEventGraphicsInfo_JP_082: @ 0x084E2930
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, 0x084E1950, 0x084E19A0, 0x084E18B0, 0x084DF2B8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E18B0, gSpriteFrameImages_JP_084DF2B8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_083
 gObjectEventGraphicsInfo_JP_083: @ 0x084E2954
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF2D8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF2D8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_084
 gObjectEventGraphicsInfo_JP_084: @ 0x084E2978
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF320, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF320, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_085
 gObjectEventGraphicsInfo_JP_085: @ 0x084E299C
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF368, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF368, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_086
 gObjectEventGraphicsInfo_JP_086: @ 0x084E29C0
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E18A8, 0x084DF3B0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E18A8, gSpriteFrameImages_JP_084DF3B0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_087
 gObjectEventGraphicsInfo_JP_087: @ 0x084E29E4
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084DF3D0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084DF3D0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_088
 gObjectEventGraphicsInfo_JP_088: @ 0x084E2A08
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0200, 32, 32, 0x14, 0, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084DF3D8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0200, 32, 32, 0x14, 0, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF3D8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_089
 gObjectEventGraphicsInfo_JP_089: @ 0x084E2A2C
-	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 16, 32, 0x10, 1, 0x084E1968, 0x084E19F4, 0x084E16DC, 0x084DF598, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 16, 32, 0x10, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E16DC, gSpriteFrameImages_JP_084DF598, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_090
 gObjectEventGraphicsInfo_JP_090: @ 0x084E2A50
-	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x10, 2, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084DF628, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x10, 2, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF628, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_091
 gObjectEventGraphicsInfo_JP_091: @ 0x084E2A74
-	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x10, 2, 0x084E1970, 0x084E1A48, 0x084E173C, 0x084DF670, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x10, 2, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E173C, gSpriteFrameImages_JP_084DF670, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_092
 gObjectEventGraphicsInfo_JP_092: @ 0x084E2A98
-	object_event_graphics_info 0xFFFF, 0x1110, 0x11FF, 0x0200, 32, 32, 0x90, 1, 0x084E1970, 0x084E1A48, 0x084E17DC, 0x084DF748, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1110, 0x11FF, 0x0200, 32, 32, 0x90, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E17DC, gSpriteFrameImages_JP_084DF748, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_093
 gObjectEventGraphicsInfo_JP_093: @ 0x084E2ABC
-	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x10, 1, 0x084E1970, 0x084E1A48, 0x084E1890, 0x084DF7F0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x10, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1890, gSpriteFrameImages_JP_084DF7F0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_094
 gObjectEventGraphicsInfo_JP_094: @ 0x084E2AE0
-	object_event_graphics_info 0xFFFF, 0x110D, 0x11FF, 0x0480, 48, 48, 0x5A, 0, 0x084E1970, 0x084E1AA8, 0x084E1500, 0x084DF420, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x110D, 0x11FF, 0x0480, 48, 48, 0x5A, 0, sObjectEventOam_32x32, sObjectEventSubspriteTables_48x48, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084DF420, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_095
 gObjectEventGraphicsInfo_JP_095: @ 0x084E2B04
-	object_event_graphics_info 0xFFFF, 0x110E, 0x11FF, 0x0200, 32, 32, 0x1A, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084DF428, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x110E, 0x11FF, 0x0200, 32, 32, 0x1A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF428, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_096
 gObjectEventGraphicsInfo_JP_096: @ 0x084E2B28
-	object_event_graphics_info 0xFFFF, 0x110E, 0x11FF, 0x0200, 32, 32, 0x1A, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084DF470, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x110E, 0x11FF, 0x0200, 32, 32, 0x1A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF470, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_097
 gObjectEventGraphicsInfo_JP_097: @ 0x084E2B4C
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084DF4B8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084DF4B8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_098
 gObjectEventGraphicsInfo_JP_098: @ 0x084E2B70
-	object_event_graphics_info 0xFFFF, 0x110F, 0x11FF, 0x0200, 32, 32, 0x1A, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084DF4C0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x110F, 0x11FF, 0x0200, 32, 32, 0x1A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF4C0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_220
 gObjectEventGraphicsInfo_JP_220: @ 0x084E2B94
-	object_event_graphics_info 0xFFFF, 0x111C, 0x11FF, 0x0200, 32, 32, 0x1A, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084DF508, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x111C, 0x11FF, 0x0200, 32, 32, 0x1A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF508, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_099
 gObjectEventGraphicsInfo_JP_099: @ 0x084E2BB8
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF550, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF550, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_100
 gObjectEventGraphicsInfo_JP_100: @ 0x084E2BDC
-	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0100, 16, 32, 0x1A, 1, 0x084E1968, 0x084E19F4, 0x084E16DC, 0x084DDEE0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0100, 16, 32, 0x1A, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E16DC, gSpriteFrameImages_JP_084DDEE0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_101
 gObjectEventGraphicsInfo_JP_101: @ 0x084E2C00
-	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x1A, 2, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084DDF70, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x1A, 2, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DDF70, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_102
 gObjectEventGraphicsInfo_JP_102: @ 0x084E2C24
-	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x1A, 2, 0x084E1970, 0x084E1A48, 0x084E173C, 0x084DDFB8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x1A, 2, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E173C, gSpriteFrameImages_JP_084DDFB8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_103
 gObjectEventGraphicsInfo_JP_103: @ 0x084E2C48
-	object_event_graphics_info 0xFFFF, 0x1100, 0x11FF, 0x0200, 32, 32, 0x9A, 1, 0x084E1970, 0x084E1A48, 0x084E17DC, 0x084DE090, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1100, 0x11FF, 0x0200, 32, 32, 0x9A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E17DC, gSpriteFrameImages_JP_084DE090, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_104
 gObjectEventGraphicsInfo_JP_104: @ 0x084E2C6C
-	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x1A, 1, 0x084E1970, 0x084E1A48, 0x084E1890, 0x084DE138, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x1A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1890, gSpriteFrameImages_JP_084DE138, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_105
 gObjectEventGraphicsInfo_JP_105: @ 0x084E2C90
-	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0100, 16, 32, 0x1A, 1, 0x084E1968, 0x084E19F4, 0x084E16DC, 0x084DF598, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0100, 16, 32, 0x1A, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E16DC, gSpriteFrameImages_JP_084DF598, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_106
 gObjectEventGraphicsInfo_JP_106: @ 0x084E2CB4
-	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x1A, 2, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084DF628, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x1A, 2, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF628, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_107
 gObjectEventGraphicsInfo_JP_107: @ 0x084E2CD8
-	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x1A, 2, 0x084E1970, 0x084E1A48, 0x084E173C, 0x084DF670, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x1A, 2, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E173C, gSpriteFrameImages_JP_084DF670, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_108
 gObjectEventGraphicsInfo_JP_108: @ 0x084E2CFC
-	object_event_graphics_info 0xFFFF, 0x1110, 0x11FF, 0x0200, 32, 32, 0x9A, 1, 0x084E1970, 0x084E1A48, 0x084E17DC, 0x084DF748, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1110, 0x11FF, 0x0200, 32, 32, 0x9A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E17DC, gSpriteFrameImages_JP_084DF748, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_109
 gObjectEventGraphicsInfo_JP_109: @ 0x084E2D20
-	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x1A, 1, 0x084E1970, 0x084E1A48, 0x084E1890, 0x084DF7F0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x1A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1890, gSpriteFrameImages_JP_084DF7F0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_110
 gObjectEventGraphicsInfo_JP_110: @ 0x084E2D44
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF818, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF818, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_111
 gObjectEventGraphicsInfo_JP_111: @ 0x084E2D68
-	object_event_graphics_info 0xFFFF, 0x1115, 0x11FF, 0x0200, 32, 32, 0x90, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084DE0F0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1115, 0x11FF, 0x0200, 32, 32, 0x90, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DE0F0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_112
 gObjectEventGraphicsInfo_JP_112: @ 0x084E2D8C
-	object_event_graphics_info 0xFFFF, 0x1115, 0x11FF, 0x0200, 32, 32, 0x9A, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084DF7A8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1115, 0x11FF, 0x0200, 32, 32, 0x9A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF7A8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_113
 gObjectEventGraphicsInfo_JP_113: @ 0x084E2DB0
-	object_event_graphics_info 0xFFFF, 0x1112, 0x11FF, 0x0080, 16, 16, 0x4A, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084DF860, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1112, 0x11FF, 0x0080, 16, 16, 0x4A, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084DF860, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_114
 gObjectEventGraphicsInfo_JP_114: @ 0x084E2DD4
-	object_event_graphics_info 0xFFFF, 0x1113, 0x11FF, 0x0800, 64, 64, 0x5A, 0, 0x084E1978, 0x084E1B28, 0x084E1500, 0x084DF868, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1113, 0x11FF, 0x0800, 64, 64, 0x5A, 0, sObjectEventOam_64x64, sObjectEventSubspriteTables_64x64, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084DF868, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_115
 gObjectEventGraphicsInfo_JP_115: @ 0x084E2DF8
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF870, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF870, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_116
 gObjectEventGraphicsInfo_JP_116: @ 0x084E2E1C
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF8B8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF8B8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_117
 gObjectEventGraphicsInfo_JP_117: @ 0x084E2E40
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF900, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF900, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_118
 gObjectEventGraphicsInfo_JP_118: @ 0x084E2E64
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF948, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF948, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_119
 gObjectEventGraphicsInfo_JP_119: @ 0x084E2E88
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF990, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF990, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_120
 gObjectEventGraphicsInfo_JP_120: @ 0x084E2EAC
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DF9D8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DF9D8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_121
 gObjectEventGraphicsInfo_JP_121: @ 0x084E2ED0
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFA20, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFA20, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_122
 gObjectEventGraphicsInfo_JP_122: @ 0x084E2EF4
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFA68, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFA68, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_123
 gObjectEventGraphicsInfo_JP_123: @ 0x084E2F18
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFAB0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFAB0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_124
 gObjectEventGraphicsInfo_JP_124: @ 0x084E2F3C
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFAF8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFAF8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_125
 gObjectEventGraphicsInfo_JP_125: @ 0x084E2F60
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFB40, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFB40, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_126
 gObjectEventGraphicsInfo_JP_126: @ 0x084E2F84
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFB88, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFB88, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_127
 gObjectEventGraphicsInfo_JP_127: @ 0x084E2FA8
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFBD0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFBD0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_128
 gObjectEventGraphicsInfo_JP_128: @ 0x084E2FCC
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFC18, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFC18, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_129
 gObjectEventGraphicsInfo_JP_129: @ 0x084E2FF0
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFC60, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFC60, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_130
 gObjectEventGraphicsInfo_JP_130: @ 0x084E3014
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFCA8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFCA8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_131
 gObjectEventGraphicsInfo_JP_131: @ 0x084E3038
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFCF0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFCF0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_132
 gObjectEventGraphicsInfo_JP_132: @ 0x084E305C
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFD38, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFD38, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_133
 gObjectEventGraphicsInfo_JP_133: @ 0x084E3080
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFD80, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFD80, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_134
 gObjectEventGraphicsInfo_JP_134: @ 0x084E30A4
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFDC8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFDC8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_135
 gObjectEventGraphicsInfo_JP_135: @ 0x084E30C8
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFE10, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFE10, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_136
 gObjectEventGraphicsInfo_JP_136: @ 0x084E30EC
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, 0x084E1950, 0x084E19A0, 0x084E1554, 0x084DFE58, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFE58, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_137
 gObjectEventGraphicsInfo_JP_137: @ 0x084E3110
-	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x10, 1, 0x084E1970, 0x084E1A48, 0x084E18B8, 0x084DFEA0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x10, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E18B8, gSpriteFrameImages_JP_084DFEA0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_138
 gObjectEventGraphicsInfo_JP_138: @ 0x084E3134
-	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x10, 1, 0x084E1970, 0x084E1A48, 0x084E18B8, 0x084DFF00, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x10, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E18B8, gSpriteFrameImages_JP_084DFF00, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_139
 gObjectEventGraphicsInfo_JP_139: @ 0x084E3158
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084DFF60, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFF60, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_140
 gObjectEventGraphicsInfo_JP_140: @ 0x084E317C
-	object_event_graphics_info 0xFFFF, 0x1114, 0x11FF, 0x0780, 96, 40, 0x1A, 0, 0x084E1940, 0x084E1C48, 0x084E1554, 0x084DFFA8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1114, 0x11FF, 0x0780, 96, 40, 0x1A, 0, sObjectEventOam_8x8, sObjectEventSubspriteTables_96x40, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFFA8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_141
 gObjectEventGraphicsInfo_JP_141: @ 0x084E31A0
-	object_event_graphics_info 0xFFFF, 0x111B, 0x11FF, 0x0580, 88, 32, 0x1A, 0, 0x084E1940, 0x084E1D78, 0x084E1554, 0x084DFFF0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x111B, 0x11FF, 0x0580, 88, 32, 0x1A, 0, sObjectEventOam_8x8, sObjectEventSubspriteTables_88x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084DFFF0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_142
 gObjectEventGraphicsInfo_JP_142: @ 0x084E31C4
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0038, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0038, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_143
 gObjectEventGraphicsInfo_JP_143: @ 0x084E31E8
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0040, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0040, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_144
 gObjectEventGraphicsInfo_JP_144: @ 0x084E320C
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0048, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0048, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_145
 gObjectEventGraphicsInfo_JP_145: @ 0x084E3230
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0050, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0050, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_146
 gObjectEventGraphicsInfo_JP_146: @ 0x084E3254
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0080, 16, 16, 0x45, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0058, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0080, 16, 16, 0x45, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0058, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_147
 gObjectEventGraphicsInfo_JP_147: @ 0x084E3278
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0060, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0060, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_148
 gObjectEventGraphicsInfo_JP_148: @ 0x084E329C
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0068, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0068, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_149
 gObjectEventGraphicsInfo_JP_149: @ 0x084E32C0
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0070, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0070, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_150
 gObjectEventGraphicsInfo_JP_150: @ 0x084E32E4
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0078, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0078, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_151
 gObjectEventGraphicsInfo_JP_151: @ 0x084E3308
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0080, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0080, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_152
 gObjectEventGraphicsInfo_JP_152: @ 0x084E332C
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0080, 16, 16, 0x45, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0088, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0080, 16, 16, 0x45, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0088, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_153
 gObjectEventGraphicsInfo_JP_153: @ 0x084E3350
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0080, 16, 16, 0x45, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0090, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0080, 16, 16, 0x45, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0090, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_154
 gObjectEventGraphicsInfo_JP_154: @ 0x084E3374
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0098, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0098, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_155
 gObjectEventGraphicsInfo_JP_155: @ 0x084E3398
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E00A0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E00A0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_156
 gObjectEventGraphicsInfo_JP_156: @ 0x084E33BC
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E00A8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E00A8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_157
 gObjectEventGraphicsInfo_JP_157: @ 0x084E33E0
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0080, 16, 16, 0x45, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E00B0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0080, 16, 16, 0x45, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E00B0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_158
 gObjectEventGraphicsInfo_JP_158: @ 0x084E3404
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E00B8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E00B8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_159
 gObjectEventGraphicsInfo_JP_159: @ 0x084E3428
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E00C0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E00C0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_160
 gObjectEventGraphicsInfo_JP_160: @ 0x084E344C
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E00C8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E00C8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_161
 gObjectEventGraphicsInfo_JP_161: @ 0x084E3470
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E00D0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E00D0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_162
 gObjectEventGraphicsInfo_JP_162: @ 0x084E3494
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E00D8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E00D8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_163
 gObjectEventGraphicsInfo_JP_163: @ 0x084E34B8
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E00E0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E00E0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_164
 gObjectEventGraphicsInfo_JP_164: @ 0x084E34DC
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E00E8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E00E8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_165
 gObjectEventGraphicsInfo_JP_165: @ 0x084E3500
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E00F0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E00F0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_166
 gObjectEventGraphicsInfo_JP_166: @ 0x084E3524
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E00F8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E00F8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_167
 gObjectEventGraphicsInfo_JP_167: @ 0x084E3548
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0100, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0100, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_168
 gObjectEventGraphicsInfo_JP_168: @ 0x084E356C
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0108, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0108, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_169
 gObjectEventGraphicsInfo_JP_169: @ 0x084E3590
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0080, 16, 16, 0x45, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0110, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0080, 16, 16, 0x45, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0110, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_170
 gObjectEventGraphicsInfo_JP_170: @ 0x084E35B4
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0118, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0118, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_171
 gObjectEventGraphicsInfo_JP_171: @ 0x084E35D8
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0120, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0120, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_172
 gObjectEventGraphicsInfo_JP_172: @ 0x084E35FC
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0080, 16, 16, 0x45, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0128, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0080, 16, 16, 0x45, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0128, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_173
 gObjectEventGraphicsInfo_JP_173: @ 0x084E3620
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0130, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0130, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_174
 gObjectEventGraphicsInfo_JP_174: @ 0x084E3644
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0138, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x44, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0138, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_175
 gObjectEventGraphicsInfo_JP_175: @ 0x084E3668
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0140, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x43, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0140, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_176
 gObjectEventGraphicsInfo_JP_176: @ 0x084E368C
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E0148, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0148, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_177
 gObjectEventGraphicsInfo_JP_177: @ 0x084E36B0
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0200, 32, 32, 0x55, 0, 0x084E1970, 0x084E1A48, 0x084E1500, 0x084E0150, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0200, 32, 32, 0x55, 0, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0150, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_178
 gObjectEventGraphicsInfo_JP_178: @ 0x084E36D4
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0200, 32, 32, 0x55, 0, 0x084E1970, 0x084E1A48, 0x084E1500, 0x084E0158, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0200, 32, 32, 0x55, 0, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0158, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_179
 gObjectEventGraphicsInfo_JP_179: @ 0x084E36F8
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0200, 32, 32, 0x52, 0, 0x084E1970, 0x084E1A48, 0x084E1500, 0x084E0160, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0200, 32, 32, 0x52, 0, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0160, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_180
 gObjectEventGraphicsInfo_JP_180: @ 0x084E371C
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0200, 32, 32, 0x54, 0, 0x084E1970, 0x084E1A48, 0x084E1500, 0x084E0168, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0200, 32, 32, 0x54, 0, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0168, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_181
 gObjectEventGraphicsInfo_JP_181: @ 0x084E3740
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0200, 32, 32, 0x53, 0, 0x084E1970, 0x084E1A48, 0x084E1500, 0x084E0170, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0200, 32, 32, 0x53, 0, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0170, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_182
 gObjectEventGraphicsInfo_JP_182: @ 0x084E3764
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0200, 32, 32, 0x52, 0, 0x084E1970, 0x084E1A48, 0x084E1500, 0x084E0178, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0200, 32, 32, 0x52, 0, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0178, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_183
 gObjectEventGraphicsInfo_JP_183: @ 0x084E3788
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0200, 32, 32, 0x55, 0, 0x084E1970, 0x084E1A48, 0x084E1500, 0x084E0180, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0200, 32, 32, 0x55, 0, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0180, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_184
 gObjectEventGraphicsInfo_JP_184: @ 0x084E37AC
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0200, 32, 32, 0x52, 0, 0x084E1970, 0x084E1A48, 0x084E1500, 0x084E0188, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0200, 32, 32, 0x52, 0, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0188, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_185
 gObjectEventGraphicsInfo_JP_185: @ 0x084E37D0
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0200, 32, 32, 0x54, 0, 0x084E1970, 0x084E1A48, 0x084E1500, 0x084E0190, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0200, 32, 32, 0x54, 0, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0190, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_186
 gObjectEventGraphicsInfo_JP_186: @ 0x084E37F4
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0200, 32, 32, 0x55, 0, 0x084E1970, 0x084E1A48, 0x084E1500, 0x084E0198, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0200, 32, 32, 0x55, 0, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0198, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_187
 gObjectEventGraphicsInfo_JP_187: @ 0x084E3818
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0200, 32, 32, 0x13, 0, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084E01A0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0200, 32, 32, 0x13, 0, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E01A0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_188
 gObjectEventGraphicsInfo_JP_188: @ 0x084E383C
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0200, 32, 32, 0x12, 0, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084E01A0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0200, 32, 32, 0x12, 0, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E01A0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_189
 gObjectEventGraphicsInfo_JP_189: @ 0x084E3860
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E01E8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E01E8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_190
 gObjectEventGraphicsInfo_JP_190: @ 0x084E3884
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0230, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0230, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_191
 gObjectEventGraphicsInfo_JP_191: @ 0x084E38A8
-	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x10, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084E0278, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0200, 32, 32, 0x10, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0278, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_192
 gObjectEventGraphicsInfo_JP_192: @ 0x084E38CC
-	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x10, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084E02C0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0200, 32, 32, 0x10, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E02C0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_193
 gObjectEventGraphicsInfo_JP_193: @ 0x084E38F0
-	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0100, 16, 32, 0x5A, 1, 0x084E1968, 0x084E19F4, 0x084E1500, 0x084E0308, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1100, 0x1102, 0x0100, 16, 32, 0x5A, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0308, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_194
 gObjectEventGraphicsInfo_JP_194: @ 0x084E3914
-	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0100, 16, 32, 0x5A, 1, 0x084E1968, 0x084E19F4, 0x084E1500, 0x084E0310, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0100, 16, 32, 0x5A, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0310, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_195
 gObjectEventGraphicsInfo_JP_195: @ 0x084E3938
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0318, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0318, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_196
 gObjectEventGraphicsInfo_JP_196: @ 0x084E395C
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0360, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0100, 16, 32, 0x13, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0360, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_197
 gObjectEventGraphicsInfo_JP_197: @ 0x084E3980
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0200, 32, 32, 0x15, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084E03A8, 0x084E18E8
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0200, 32, 32, 0x15, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E03A8, sObjectEventAffineAnimTable_084E18E8
 	.globl gObjectEventGraphicsInfo_JP_198
 gObjectEventGraphicsInfo_JP_198: @ 0x084E39A4
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0200, 32, 32, 0x14, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084E03F0, 0x084E18E8
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0200, 32, 32, 0x14, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E03F0, sObjectEventAffineAnimTable_084E18E8
 	.globl gObjectEventGraphicsInfo_JP_221
 gObjectEventGraphicsInfo_JP_221: @ 0x084E39C8
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0200, 32, 32, 0x15, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084E0438, 0x084E18E8
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0200, 32, 32, 0x15, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0438, sObjectEventAffineAnimTable_084E18E8
 	.globl gObjectEventGraphicsInfo_JP_222
 gObjectEventGraphicsInfo_JP_222: @ 0x084E39EC
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0200, 32, 32, 0x14, 1, 0x084E1970, 0x084E1A48, 0x084E15F4, 0x084E0480, 0x084E18E8
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0200, 32, 32, 0x14, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E15F4, gSpriteFrameImages_JP_084E0480, sObjectEventAffineAnimTable_084E18E8
 	.globl gObjectEventGraphicsInfo_JP_199
 gObjectEventGraphicsInfo_JP_199: @ 0x084E3A10
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, 0x084E1950, 0x084E19A0, 0x084E1500, 0x084E04C8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x42, 0, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E04C8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_200
 gObjectEventGraphicsInfo_JP_200: @ 0x084E3A34
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0200, 32, 32, 0x53, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084E04D0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0200, 32, 32, 0x53, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E04D0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_201
 gObjectEventGraphicsInfo_JP_201: @ 0x084E3A58
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0200, 32, 32, 0x54, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084E04D0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0200, 32, 32, 0x54, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E04D0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_202
 gObjectEventGraphicsInfo_JP_202: @ 0x084E3A7C
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0200, 32, 32, 0x55, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084E04D0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0200, 32, 32, 0x55, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E04D0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_203
 gObjectEventGraphicsInfo_JP_203: @ 0x084E3AA0
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, 0x084E1950, 0x084E19A0, 0x084E1554, 0x084E0518, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0518, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_204
 gObjectEventGraphicsInfo_JP_204: @ 0x084E3AC4
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x14, 1, 0x084E1950, 0x084E19A0, 0x084E1554, 0x084E0560, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0080, 16, 16, 0x14, 1, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0560, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_205
 gObjectEventGraphicsInfo_JP_205: @ 0x084E3AE8
-	object_event_graphics_info 0xFFFF, 0x1116, 0x11FF, 0x0200, 32, 32, 0x1A, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084E03A8, 0x084E18E8
+	object_event_graphics_info 0xFFFF, 0x1116, 0x11FF, 0x0200, 32, 32, 0x1A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E03A8, sObjectEventAffineAnimTable_084E18E8
 	.globl gObjectEventGraphicsInfo_JP_206
 gObjectEventGraphicsInfo_JP_206: @ 0x084E3B0C
-	object_event_graphics_info 0xFFFF, 0x1118, 0x11FF, 0x0200, 32, 32, 0x1A, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084E03F0, 0x084E18E8
+	object_event_graphics_info 0xFFFF, 0x1118, 0x11FF, 0x0200, 32, 32, 0x1A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E03F0, sObjectEventAffineAnimTable_084E18E8
 	.globl gObjectEventGraphicsInfo_JP_207
 gObjectEventGraphicsInfo_JP_207: @ 0x084E3B30
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0800, 64, 64, 0x94, 1, 0x084E1978, 0x084E1B28, 0x084E168C, 0x084E05A8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0800, 64, 64, 0x94, 1, sObjectEventOam_64x64, sObjectEventSubspriteTables_64x64, sObjectEventAnimTable_084E168C, gSpriteFrameImages_JP_084E05A8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_208
 gObjectEventGraphicsInfo_JP_208: @ 0x084E3B54
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, 0x084E1950, 0x084E19A0, 0x084E1554, 0x084E0618, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0618, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_209
 gObjectEventGraphicsInfo_JP_209: @ 0x084E3B78
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x13, 1, 0x084E1950, 0x084E19A0, 0x084E1554, 0x084E0660, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x13, 1, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0660, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_210
 gObjectEventGraphicsInfo_JP_210: @ 0x084E3B9C
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, 0x084E1950, 0x084E19A0, 0x084E1554, 0x084E06A8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E06A8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_211
 gObjectEventGraphicsInfo_JP_211: @ 0x084E3BC0
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, 0x084E1950, 0x084E19A0, 0x084E1554, 0x084E06F0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E06F0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_212
 gObjectEventGraphicsInfo_JP_212: @ 0x084E3BE4
-	object_event_graphics_info 0xFFFF, 0x1105, 0x1102, 0x0080, 16, 16, 0x1A, 1, 0x084E1950, 0x084E19A0, 0x084E1554, 0x084E0560, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x1102, 0x0080, 16, 16, 0x1A, 1, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0560, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_213
 gObjectEventGraphicsInfo_JP_213: @ 0x084E3C08
-	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x13, 1, 0x084E1950, 0x084E19A0, 0x084E1554, 0x084E0738, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1104, 0x11FF, 0x0080, 16, 16, 0x13, 1, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0738, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_214
 gObjectEventGraphicsInfo_JP_214: @ 0x084E3C2C
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, 0x084E1950, 0x084E19A0, 0x084E1554, 0x084E0780, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0080, 16, 16, 0x12, 1, sObjectEventOam_16x16, sObjectEventSubspriteTables_16x16, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0780, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_215
 gObjectEventGraphicsInfo_JP_215: @ 0x084E3C50
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E07C8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E07C8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_216
 gObjectEventGraphicsInfo_JP_216: @ 0x084E3C74
-	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0100, 16, 32, 0x1A, 1, 0x084E1968, 0x084E19F4, 0x084E16DC, 0x084DDEE0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0100, 16, 32, 0x1A, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E16DC, gSpriteFrameImages_JP_084DDEE0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_217
 gObjectEventGraphicsInfo_JP_217: @ 0x084E3C98
-	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0100, 16, 32, 0x1A, 1, 0x084E1968, 0x084E19F4, 0x084E16DC, 0x084DF598, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1110, 0x1102, 0x0100, 16, 32, 0x1A, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E16DC, gSpriteFrameImages_JP_084DF598, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_218
 gObjectEventGraphicsInfo_JP_218: @ 0x084E3CBC
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0858, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0858, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_219
 gObjectEventGraphicsInfo_JP_219: @ 0x084E3CE0
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0810, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0810, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_223
 gObjectEventGraphicsInfo_JP_223: @ 0x084E3D04
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E08A0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E08A0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_224
 gObjectEventGraphicsInfo_JP_224: @ 0x084E3D28
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x55, 1, 0x084E1968, 0x084E19F4, 0x084E1500, 0x084E08E8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x55, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E08E8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_225
 gObjectEventGraphicsInfo_JP_225: @ 0x084E3D4C
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x04, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0938, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x04, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0938, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_226
 gObjectEventGraphicsInfo_JP_226: @ 0x084E3D70
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E08F0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E08F0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_227
 gObjectEventGraphicsInfo_JP_227: @ 0x084E3D94
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0980, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0980, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_230
 gObjectEventGraphicsInfo_JP_230: @ 0x084E3DB8
-	object_event_graphics_info 0xFFFF, 0x111D, 0x11FF, 0x0100, 16, 32, 0x1A, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0A58, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x111D, 0x11FF, 0x0100, 16, 32, 0x1A, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0A58, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_231
 gObjectEventGraphicsInfo_JP_231: @ 0x084E3DDC
-	object_event_graphics_info 0xFFFF, 0x111D, 0x11FF, 0x0100, 16, 32, 0x1A, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0AA0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x111D, 0x11FF, 0x0100, 16, 32, 0x1A, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0AA0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_228
 gObjectEventGraphicsInfo_JP_228: @ 0x084E3E00
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E09C8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E09C8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_229
 gObjectEventGraphicsInfo_JP_229: @ 0x084E3E24
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0A10, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0A10, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_232
 gObjectEventGraphicsInfo_JP_232: @ 0x084E3E48
-	object_event_graphics_info 0xFFFF, 0x111E, 0x11FF, 0x0200, 32, 32, 0x1A, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084E0AE8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x111E, 0x11FF, 0x0200, 32, 32, 0x1A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0AE8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_233
 gObjectEventGraphicsInfo_JP_233: @ 0x084E3E6C
-	object_event_graphics_info 0xFFFF, 0x111F, 0x11FF, 0x0200, 32, 32, 0x5A, 1, 0x084E1970, 0x084E1A48, 0x084E1500, 0x084E0B30, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x111F, 0x11FF, 0x0200, 32, 32, 0x5A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1500, gSpriteFrameImages_JP_084E0B30, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_070
 gObjectEventGraphicsInfo_JP_070: @ 0x084E3E90
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0B38, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0B38, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_071
 gObjectEventGraphicsInfo_JP_071: @ 0x084E3EB4
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0B80, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0B80, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_072
 gObjectEventGraphicsInfo_JP_072: @ 0x084E3ED8
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0C10, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0C10, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_073
 gObjectEventGraphicsInfo_JP_073: @ 0x084E3EFC
-	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0BC8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1103, 0x11FF, 0x0100, 16, 32, 0x12, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0BC8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_074
 gObjectEventGraphicsInfo_JP_074: @ 0x084E3F20
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0C58, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0C58, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_075
 gObjectEventGraphicsInfo_JP_075: @ 0x084E3F44
-	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0CA0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1106, 0x11FF, 0x0100, 16, 32, 0x15, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0CA0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_234
 gObjectEventGraphicsInfo_JP_234: @ 0x084E3F68
-	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0CE8, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1105, 0x11FF, 0x0100, 16, 32, 0x14, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0CE8, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_235
 gObjectEventGraphicsInfo_JP_235: @ 0x084E3F8C
-	object_event_graphics_info 0xFFFF, 0x1122, 0x11FF, 0x0100, 16, 32, 0x1A, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0DC0, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1122, 0x11FF, 0x0100, 16, 32, 0x1A, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0DC0, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_236
 gObjectEventGraphicsInfo_JP_236: @ 0x084E3FB0
-	object_event_graphics_info 0xFFFF, 0x1123, 0x11FF, 0x0100, 16, 32, 0x1A, 1, 0x084E1968, 0x084E19F4, 0x084E1554, 0x084E0E08, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1123, 0x11FF, 0x0100, 16, 32, 0x1A, 1, sObjectEventOam_16x32, sObjectEventSubspriteTables_16x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0E08, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_237
 gObjectEventGraphicsInfo_JP_237: @ 0x084E3FD4
-	object_event_graphics_info 0xFFFF, 0x1121, 0x11FF, 0x0200, 32, 32, 0x1A, 1, 0x084E1970, 0x084E1A48, 0x084E1554, 0x084E0D30, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1121, 0x11FF, 0x0200, 32, 32, 0x1A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E1554, gSpriteFrameImages_JP_084E0D30, gDummySpriteAffineAnimTable
 	.globl gObjectEventGraphicsInfo_JP_238
 gObjectEventGraphicsInfo_JP_238: @ 0x084E3FF8
-	object_event_graphics_info 0xFFFF, 0x1120, 0x11FF, 0x0200, 32, 32, 0x1A, 1, 0x084E1970, 0x084E1A48, 0x084E15A4, 0x084E0D78, gDummySpriteAffineAnimTable
+	object_event_graphics_info 0xFFFF, 0x1120, 0x11FF, 0x0200, 32, 32, 0x1A, 1, sObjectEventOam_32x32, sObjectEventSubspriteTables_32x32, sObjectEventAnimTable_084E15A4, gSpriteFrameImages_JP_084E0D78, gDummySpriteAffineAnimTable
 	.globl gEventObjectMovementData_084E401C
 gEventObjectMovementData_084E401C:
 	.globl gUnknown_84E401C
