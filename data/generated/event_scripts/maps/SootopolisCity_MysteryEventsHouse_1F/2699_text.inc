@@ -9,6 +9,7 @@ gText_Rom_2100DA: @ 0x082100DA
 	.space 0x28 - (. - gText_Rom_2100DA)
 	.endif
 	@ analyzed canonical ROM range 0x08210102-0x08210104
+	@ semantic recovery: script_data; byte-verified against linked ROM
 sAnalyzedEventData_08210102: @ 0x08210102
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xFD, 0x02, 0xFF
+EventText_JP_08210102: @ 0x08210102
+	.string "{STR_VAR_1}$"

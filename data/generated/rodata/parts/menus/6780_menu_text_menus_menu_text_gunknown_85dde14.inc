@@ -391,10 +391,12 @@ gUnknown_85DF7C8: @ 0x085DF7C8
 	.globl gUnknown_85DF7D4
 gUnknown_85DF7D4: @ 0x085DF7D4
 	@ Replaced baserom.gba range: offset=0x5DF7D4, size=0x18
-	@ semanticized-mass: resolved embedded ROM pointers
+	@ semantic recovery: rodata; byte-verified against linked ROM
 	.byte 0x00, 0x00, 0x00, 0x00
-	.4byte BagMenu_MoveCursorCallback @ ROM pointer 0x081AB1C1
-	.4byte PrintItemQuantityPlusGFX @ ROM pointer 0x081AB291
+FunctionPointerTable_JP_085DF7D8: @ 0x085DF7D8
+	@ proven function-pointer table
+	.4byte BagMenu_MoveCursorCallback
+	.4byte PrintItemQuantityPlusGFX
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x12, 0x30, 0x00, 0x01
 	.globl gUnknown_85DF7EC
 gUnknown_85DF7EC: @ 0x085DF7EC

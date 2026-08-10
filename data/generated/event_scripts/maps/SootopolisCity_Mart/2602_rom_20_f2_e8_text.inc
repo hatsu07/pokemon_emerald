@@ -9,30 +9,96 @@ gText_Rom_20F2E8: @ 0x0820F2E8
 	.space 0x18 - (. - gText_Rom_20F2E8)
 	.endif
 	@ analyzed canonical ROM range 0x0820F300-0x0820F354
+	@ semantic recovery: script_data; byte-verified against linked ROM
 sAnalyzedEventData_0820F300: @ 0x0820F300
 EventScript_0820F300: @ 0x0820F300
-	nop
-	lock
-	faceplayer
-	checkflag 0x0079
-	goto_if 0x01, EventScript_0820F338
-	loadword 0x00, gText_Rom_20F355
-	callstd 0x04
-	setorcopyvar 0x8000, 0x013F
-	setorcopyvar 0x8001, 0x0001
-	callstd 0x00
-	compare_var_to_value 0x800D, 0x0000
-	goto_if 0x01, 0x082430E0
-	setflag 0x0079
-	loadword 0x00, gText_Rom_20F391
-	callstd 0x04
-	release
-	end
+	.byte 0x00
+EventScript_JP_0820F301: @ 0x0820F301
+	@ event command: lock
+	.byte 0x6A
+	@ event command: faceplayer
+	.byte 0x5A
+	@ event command: checkflag
+	.byte 0x2B
+	.2byte 0x0079
+	@ event command: goto_if
+	.byte 0x06
+	.byte 0x01
+	.4byte 0x0820F338 @ EventScript_JP_0820F338
+	@ event command: loadword
+	.byte 0x0F
+	.byte 0x00
+	.4byte 0x0820F355 @ gText_Rom_20F355
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x04
+	@ event command: setorcopyvar
+	.byte 0x1A
+	.2byte 0x8000
+	.2byte 0x013F
+	@ event command: setorcopyvar
+	.byte 0x1A
+	.2byte 0x8001
+	.2byte 0x0001
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x00
+	@ event command: compare_var_to_value
+	.byte 0x21
+	.2byte 0x800D
+	.2byte 0x0000
+	@ event command: goto_if
+	.byte 0x06
+	.byte 0x01
+	.4byte 0x082430E0
+	@ event command: setflag
+	.byte 0x29
+	.2byte 0x0079
+	@ event command: loadword
+	.byte 0x0F
+	.byte 0x00
+	.4byte 0x0820F391 @ gText_Rom_20F391
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x04
+	@ event command: release
+	.byte 0x6C
+	@ event command: end
+	.byte 0x02
 EventScript_0820F338: @ 0x0820F338
-	loadword 0x00, gText_Rom_20F391
-	callstd 0x04
-	release
-	end
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x6A, 0x5A, 0x30, 0xA1, 0x3D, 0x01, 0x00, 0x00, 0x0F, 0x00, 0xB7, 0xF3, 0x20, 0x08, 0x09, 0x04
-	.byte 0xC5, 0x6C, 0x02
+EventScript_JP_0820F338: @ 0x0820F338
+	@ event command: loadword
+	.byte 0x0F
+	.byte 0x00
+	.4byte 0x0820F391 @ gText_Rom_20F391
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x04
+	@ event command: release
+	.byte 0x6C
+	@ event command: end
+	.byte 0x02
+EventScript_JP_0820F342: @ 0x0820F342
+	@ event command: lock
+	.byte 0x6A
+	@ event command: faceplayer
+	.byte 0x5A
+	@ event command: waitse
+	.byte 0x30
+	@ event command: playmoncry
+	.byte 0xA1
+	.2byte 0x013D
+	.2byte 0x0000
+	@ event command: loadword
+	.byte 0x0F
+	.byte 0x00
+	.4byte 0x0820F3B7 @ gText_Rom_20F3B7
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x04
+	@ event command: waitmoncry
+	.byte 0xC5
+	@ event command: release
+	.byte 0x6C
+	@ event command: end
+	.byte 0x02

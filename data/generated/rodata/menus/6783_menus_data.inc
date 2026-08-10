@@ -26,73 +26,69 @@ sAnalyzedData_085E72E4: @ 0x085E72E4
 	.globl gUnknown_85E732C
 gUnknown_85E732C: @ 0x085E732C
 	@ analyzed canonical ROM range 0x085E732C-0x085E742F
+	@ semantic recovery: rodata; byte-verified against linked ROM
 sAnalyzedData_085E732C: @ 0x085E732C
-	@ pointer/nullable table
-	.4byte PlayerPartnerHandleGetMonData @ +0x0
-	.4byte PlayerPartnerHandleGetRawMonData @ +0x4
-	.4byte PlayerPartnerHandleSetMonData @ +0x8
-	.4byte PlayerPartnerHandleSetRawMonData @ +0xC
-	.4byte PlayerPartnerHandleLoadMonSprite @ +0x10
-	.4byte PlayerPartnerHandleSwitchInAnim @ +0x14
-	.4byte PlayerPartnerHandleReturnMonToBall @ +0x18
-	.4byte PlayerPartnerHandleDrawTrainerPic @ +0x1C
-	.4byte PlayerPartnerHandleTrainerSlide @ +0x20
-	.4byte PlayerPartnerHandleTrainerSlideBack @ +0x24
-	.4byte PlayerPartnerHandleFaintAnimation @ +0x28
-	.4byte PlayerPartnerHandlePaletteFade @ +0x2C
-	.4byte PlayerPartnerHandleSuccessBallThrowAnim @ +0x30
-	.4byte PlayerPartnerHandleBallThrowAnim @ +0x34
-	.4byte PlayerPartnerHandlePause @ +0x38
-	.4byte PlayerPartnerHandleMoveAnimation @ +0x3C
-	.4byte PlayerPartnerHandlePrintString @ +0x40
-	.4byte PlayerPartnerHandlePrintSelectionString @ +0x44
-	.4byte PlayerPartnerHandleChooseAction @ +0x48
-	.4byte PlayerPartnerHandleUnknownYesNoBox @ +0x4C
-	.4byte PlayerPartnerHandleChooseMove @ +0x50
-	.4byte PlayerPartnerHandleChooseItem @ +0x54
-	.4byte PlayerPartnerHandleChoosePokemon @ +0x58
-	.4byte PlayerPartnerHandleCmd23 @ +0x5C
-	.4byte PlayerPartnerHandleHealthBarUpdate @ +0x60
-	.4byte PlayerPartnerHandleExpUpdate @ +0x64
-	.4byte PlayerPartnerHandleStatusIconUpdate @ +0x68
-	.4byte PlayerPartnerHandleStatusAnimation @ +0x6C
-	.4byte PlayerPartnerHandleStatusXor @ +0x70
-	.4byte PlayerPartnerHandleDataTransfer @ +0x74
-	.4byte PlayerPartnerHandleDMA3Transfer @ +0x78
-	.4byte PlayerPartnerHandlePlayBGM @ +0x7C
-	.4byte PlayerPartnerHandleCmd32 @ +0x80
-	.4byte PlayerPartnerHandleTwoReturnValues @ +0x84
-	.4byte PlayerPartnerHandleChosenMonReturnValue @ +0x88
-	.4byte PlayerPartnerHandleOneReturnValue @ +0x8C
-	.4byte PlayerPartnerHandleOneReturnValue_Duplicate @ +0x90
-	.4byte PlayerPartnerHandleCmd37 @ +0x94
-	.4byte PlayerPartnerHandleCmd38 @ +0x98
-	.4byte PlayerPartnerHandleCmd39 @ +0x9C
-	.4byte PlayerPartnerHandleCmd40 @ +0xA0
-	.4byte PlayerPartnerHandleHitAnimation @ +0xA4
-	.4byte PlayerPartnerHandleCmd42 @ +0xA8
-	.4byte PlayerPartnerHandlePlaySE @ +0xAC
-	.4byte PlayerPartnerHandlePlayFanfareOrBGM @ +0xB0
-	.4byte PlayerPartnerHandleFaintingCry @ +0xB4
-	.4byte PlayerPartnerHandleIntroSlide @ +0xB8
-	.4byte PlayerPartnerHandleIntroTrainerBallThrow @ +0xBC
-	.4byte PlayerPartnerHandleDrawPartyStatusSummary @ +0xC0
-	.4byte PlayerPartnerHandleHidePartyStatusSummary @ +0xC4
-	.4byte PlayerPartnerHandleEndBounceEffect @ +0xC8
-	.4byte PlayerPartnerHandleSpriteInvisibility @ +0xCC
-	.4byte PlayerPartnerHandleBattleAnimation @ +0xD0
-	.4byte PlayerPartnerHandleLinkStandbyMsg @ +0xD4
-	.4byte PlayerPartnerHandleResetActionMoveSelection @ +0xD8
-	.4byte PlayerPartnerHandleCmd55 @ +0xDC
-	.4byte nullsub_77 @ +0xE0
-	.4byte 0x5FF34D83 @ +0xE4
-	.4byte 0x3EEB4F6F @ +0xE8
-	.4byte 0x46102E67 @ +0xEC
-	.4byte 0x35283D8C @ +0xF0
-	.4byte 0x7F152CC5 @ +0xF4
-	.4byte 0x539D56B5 @ +0xF8
-	.4byte 0x36DA433B @ +0xFC
-	.4byte 0x530E2A79 @ +0x100
+FunctionPointerTable_JP_085E732C: @ 0x085E732C
+	@ proven function-pointer table
+	.4byte PlayerPartnerHandleGetMonData
+	.4byte PlayerPartnerHandleGetRawMonData
+	.4byte PlayerPartnerHandleSetMonData
+	.4byte PlayerPartnerHandleSetRawMonData
+	.4byte PlayerPartnerHandleLoadMonSprite
+	.4byte PlayerPartnerHandleSwitchInAnim
+	.4byte PlayerPartnerHandleReturnMonToBall
+	.4byte PlayerPartnerHandleDrawTrainerPic
+	.4byte PlayerPartnerHandleTrainerSlide
+	.4byte PlayerPartnerHandleTrainerSlideBack
+	.4byte PlayerPartnerHandleFaintAnimation
+	.4byte PlayerPartnerHandlePaletteFade
+	.4byte PlayerPartnerHandleSuccessBallThrowAnim
+	.4byte PlayerPartnerHandleBallThrowAnim
+	.4byte PlayerPartnerHandlePause
+	.4byte PlayerPartnerHandleMoveAnimation
+	.4byte PlayerPartnerHandlePrintString
+	.4byte PlayerPartnerHandlePrintSelectionString
+	.4byte PlayerPartnerHandleChooseAction
+	.4byte PlayerPartnerHandleUnknownYesNoBox
+	.4byte PlayerPartnerHandleChooseMove
+	.4byte PlayerPartnerHandleChooseItem
+	.4byte PlayerPartnerHandleChoosePokemon
+	.4byte PlayerPartnerHandleCmd23
+	.4byte PlayerPartnerHandleHealthBarUpdate
+	.4byte PlayerPartnerHandleExpUpdate
+	.4byte PlayerPartnerHandleStatusIconUpdate
+	.4byte PlayerPartnerHandleStatusAnimation
+	.4byte PlayerPartnerHandleStatusXor
+	.4byte PlayerPartnerHandleDataTransfer
+	.4byte PlayerPartnerHandleDMA3Transfer
+	.4byte PlayerPartnerHandlePlayBGM
+	.4byte PlayerPartnerHandleCmd32
+	.4byte PlayerPartnerHandleTwoReturnValues
+	.4byte PlayerPartnerHandleChosenMonReturnValue
+	.4byte PlayerPartnerHandleOneReturnValue
+	.4byte PlayerPartnerHandleOneReturnValue_Duplicate
+	.4byte PlayerPartnerHandleCmd37
+	.4byte PlayerPartnerHandleCmd38
+	.4byte PlayerPartnerHandleCmd39
+	.4byte PlayerPartnerHandleCmd40
+	.4byte PlayerPartnerHandleHitAnimation
+	.4byte PlayerPartnerHandleCmd42
+	.4byte PlayerPartnerHandlePlaySE
+	.4byte PlayerPartnerHandlePlayFanfareOrBGM
+	.4byte PlayerPartnerHandleFaintingCry
+	.4byte PlayerPartnerHandleIntroSlide
+	.4byte PlayerPartnerHandleIntroTrainerBallThrow
+	.4byte PlayerPartnerHandleDrawPartyStatusSummary
+	.4byte PlayerPartnerHandleHidePartyStatusSummary
+	.4byte PlayerPartnerHandleEndBounceEffect
+	.4byte PlayerPartnerHandleSpriteInvisibility
+	.4byte PlayerPartnerHandleBattleAnimation
+	.4byte PlayerPartnerHandleLinkStandbyMsg
+	.4byte PlayerPartnerHandleResetActionMoveSelection
+	.4byte PlayerPartnerHandleCmd55
+	.4byte nullsub_77
+	.byte 0x83, 0x4D, 0xF3, 0x5F, 0x6F, 0x4F, 0xEB, 0x3E, 0x67, 0x2E, 0x10, 0x46, 0x8C, 0x3D, 0x28, 0x35
+	.byte 0xC5, 0x2C, 0x15, 0x7F, 0xB5, 0x56, 0x9D, 0x53, 0x3B, 0x43, 0xDA, 0x36, 0x79, 0x2A, 0x0E, 0x53
 	.globl gUnknown_85E7430
 gUnknown_85E7430: @ 0x085E7430
 	@ analyzed canonical ROM range 0x085E7430-0x085E7D4F

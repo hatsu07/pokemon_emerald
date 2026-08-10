@@ -10,29 +10,148 @@ gText_Rom_2563A5: @ 0x082563A5
 	.space 0x1f - (. - gText_Rom_2563A5)
 	.endif
 	@ analyzed canonical ROM range 0x082563C4-0x0825645B
+	@ semantic recovery: script_data; byte-verified against linked ROM
 sAnalyzedEventData_082563C4: @ 0x082563C4
 EventScript_082563C4: @ 0x082563C4
-	lock
-	faceplayer
-	loadword 0x00, gText_Rom_256362
-	callstd 0x05
-	compare_var_to_value 0x800D, 0x0001
-	goto_if 0x01, 0x082563E5
-	compare_var_to_value 0x800D, 0x0000
-	goto_if 0x01, EventScript_08256448
-	end
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x25, 0x6A, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x27, 0x64, 0x25, 0x08, 0x21, 0x0D
-	.byte 0x80, 0x00, 0x00, 0x06, 0x01, 0x52, 0x64, 0x25, 0x08, 0x02, 0x25, 0x6A, 0x00, 0x21, 0x0D, 0x80
-	.byte 0x01, 0x00, 0x06, 0x01, 0x19, 0x64, 0x25, 0x08, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0x52
-	.byte 0x64, 0x25, 0x08, 0x02, 0x0F, 0x00, 0x97, 0x63, 0x25, 0x08, 0x09, 0x04, 0x05, 0x27, 0x64, 0x25
-	.byte 0x08, 0x02, 0x25, 0x69, 0x00, 0x25, 0x8D, 0x00, 0x66, 0x6E, 0x14, 0x08, 0x21, 0x0D, 0x80, 0x01
-	.byte 0x00, 0x06, 0x01, 0xFF, 0x63, 0x25, 0x08, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0xFF, 0x63
-	.byte 0x25, 0x08, 0x02
+EventScript_JP_082563C4: @ 0x082563C4
+	@ event command: lock
+	.byte 0x6A
+	@ event command: faceplayer
+	.byte 0x5A
+	@ event command: loadword
+	.byte 0x0F
+	.byte 0x00
+	.4byte 0x08256362 @ gText_Rom_256362
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x05
+	@ event command: compare_var_to_value
+	.byte 0x21
+	.2byte 0x800D
+	.2byte 0x0001
+	@ event command: goto_if
+	.byte 0x06
+	.byte 0x01
+	.4byte 0x082563E5 @ EventScript_JP_082563E5
+	@ event command: compare_var_to_value
+	.byte 0x21
+	.2byte 0x800D
+	.2byte 0x0000
+	@ event command: goto_if
+	.byte 0x06
+	.byte 0x01
+	.4byte 0x08256448 @ EventScript_JP_08256448
+	@ event command: end
+	.byte 0x02
+EventScript_JP_082563E5: @ 0x082563E5
+	@ event command: special
+	.byte 0x25
+	.2byte 0x006A
+	@ event command: compare_var_to_value
+	.byte 0x21
+	.2byte 0x800D
+	.2byte 0x0001
+	@ event command: goto_if
+	.byte 0x06
+	.byte 0x01
+	.4byte 0x08256427 @ EventScript_JP_08256427
+	@ event command: compare_var_to_value
+	.byte 0x21
+	.2byte 0x800D
+	.2byte 0x0000
+	@ event command: goto_if
+	.byte 0x06
+	.byte 0x01
+	.4byte 0x08256452 @ EventScript_JP_08256452
+	@ event command: end
+	.byte 0x02
+EventScript_JP_082563FF: @ 0x082563FF
+	@ event command: special
+	.byte 0x25
+	.2byte 0x006A
+	@ event command: compare_var_to_value
+	.byte 0x21
+	.2byte 0x800D
+	.2byte 0x0001
+	@ event command: goto_if
+	.byte 0x06
+	.byte 0x01
+	.4byte 0x08256419 @ EventScript_JP_08256419
+	@ event command: compare_var_to_value
+	.byte 0x21
+	.2byte 0x800D
+	.2byte 0x0000
+	@ event command: goto_if
+	.byte 0x06
+	.byte 0x01
+	.4byte 0x08256452 @ EventScript_JP_08256452
+	@ event command: end
+	.byte 0x02
+EventScript_JP_08256419: @ 0x08256419
+	@ event command: loadword
+	.byte 0x0F
+	.byte 0x00
+	.4byte 0x08256397 @ gText_Rom_256397
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x04
+	@ event command: goto
+	.byte 0x05
+	.4byte 0x08256427 @ EventScript_JP_08256427
+	.byte 0x02
+EventScript_JP_08256427: @ 0x08256427
+	@ event command: special
+	.byte 0x25
+	.2byte 0x0069
+	@ event command: special
+	.byte 0x25
+	.2byte 0x008D
+	@ event command: waitmessage
+	.byte 0x66
+	@ event command: yesnobox
+	.byte 0x6E
+	.byte 0x14
+	.byte 0x08
+	@ event command: compare_var_to_value
+	.byte 0x21
+	.2byte 0x800D
+	.2byte 0x0001
+	@ event command: goto_if
+	.byte 0x06
+	.byte 0x01
+	.4byte 0x082563FF @ EventScript_JP_082563FF
+	@ event command: compare_var_to_value
+	.byte 0x21
+	.2byte 0x800D
+	.2byte 0x0000
+	@ event command: goto_if
+	.byte 0x06
+	.byte 0x01
+	.4byte 0x082563FF @ EventScript_JP_082563FF
+	@ event command: end
+	.byte 0x02
 EventScript_08256448: @ 0x08256448
-	loadword 0x00, gText_Rom_25638A
-	callstd 0x04
-	release
-	end
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x000F, 0x63A5, 0x0825, 0x0409, 0x026C
+EventScript_JP_08256448: @ 0x08256448
+	@ event command: loadword
+	.byte 0x0F
+	.byte 0x00
+	.4byte 0x0825638A @ gText_Rom_25638A
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x04
+	@ event command: release
+	.byte 0x6C
+	@ event command: end
+	.byte 0x02
+EventScript_JP_08256452: @ 0x08256452
+	@ event command: loadword
+	.byte 0x0F
+	.byte 0x00
+	.4byte 0x082563A5 @ gText_Rom_2563A5
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x04
+	@ event command: release
+	.byte 0x6C
+	@ event command: end
+	.byte 0x02

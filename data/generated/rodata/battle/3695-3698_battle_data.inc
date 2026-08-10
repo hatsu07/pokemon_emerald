@@ -787,10 +787,14 @@ gUnknown_85C0C20: @ 0x085C0C20
 	.globl gUnknown_85C0C28
 gUnknown_85C0C28: @ 0x085C0C28
 	@ analyzed canonical ROM range 0x085C0C28-0x085C0C3F
+	@ semantic recovery: rodata; byte-verified against linked ROM
 sAnalyzedData_085C0C28: @ 0x085C0C28
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0000, 0x0000, 0xBC1D, 0x0816, 0xBC85, 0x0816, 0x0000, 0x0000
-	.2byte 0x0000, 0x0008, 0x312A, 0x0100
+	.byte 0x00, 0x00, 0x00, 0x00
+FunctionPointerTable_JP_085C0C2C: @ 0x085C0C2C
+	@ proven function-pointer table
+	.4byte ItemStorage_MoveCursor
+	.4byte fish4_goto_x5_or_x6
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x2A, 0x31, 0x00, 0x01
 	.globl gUnknown_85C0C40
 gUnknown_85C0C40: @ 0x085C0C40
 	@ analyzed canonical ROM range 0x085C0C40-0x085C0C67

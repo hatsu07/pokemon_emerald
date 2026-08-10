@@ -10,7 +10,7 @@ gText_Rom_25528A: @ 0x0825528A
 	.space 0x27 - (. - gText_Rom_25528A)
 	.endif
 	@ analyzed canonical ROM range 0x082552B1-0x082552C4
+	@ semantic recovery: script_data; byte-verified against linked ROM
 sAnalyzedEventData_082552B1: @ 0x082552B1
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x14, 0x0A, 0x2B, 0x44, 0xB0, 0xFE, 0x1F, 0x41, 0x00, 0x44, 0x2E, 0x0E, 0x12, 0x00, 0x07, 0x07
-	.byte 0x10, 0x02, 0xAC, 0xFF
+EventText_JP_082552B1: @ 0x082552B1
+	.string "ところで…\nまだ　でんせつ　ききたい?$"

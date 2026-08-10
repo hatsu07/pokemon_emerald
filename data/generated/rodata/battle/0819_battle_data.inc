@@ -97,10 +97,14 @@ sAnalyzedData_085629C4: @ 0x085629C4
 	.globl gUnknown_85629CC
 gUnknown_85629CC: @ 0x085629CC
 	@ analyzed canonical ROM range 0x085629CC-0x085629E3
+	@ semantic recovery: rodata; byte-verified against linked ROM
 sAnalyzedData_085629CC: @ 0x085629CC
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0000, 0x0000, 0xF595, 0x080D, 0xF671, 0x080D, 0x0000, 0x0000
-	.2byte 0x0001, 0x0008, 0x3022, 0x0100
+	.byte 0x00, 0x00, 0x00, 0x00
+FunctionPointerTable_JP_085629D0: @ 0x085629D0
+	@ proven function-pointer table
+	.4byte BuyMenuPrintItemDescriptionAndShowItemIcon
+	.4byte CreateShopMenu
+	.byte 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x08, 0x00, 0x22, 0x30, 0x00, 0x01
 	.globl gUnknown_85629E4
 gUnknown_85629E4: @ 0x085629E4
 	@ analyzed canonical ROM range 0x085629E4-0x085629F3

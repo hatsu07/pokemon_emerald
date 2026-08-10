@@ -9,16 +9,87 @@ gText_Rom_20AB2C: @ 0x0820AB2C
 	.space 0x22 - (. - gText_Rom_20AB2C)
 	.endif
 	@ analyzed canonical ROM range 0x0820AB4E-0x0820ABB3
+	@ semantic recovery: script_data; byte-verified against linked ROM
 sAnalyzedEventData_0820AB4E: @ 0x0820AB4E
 EventScript_0820AB4E: @ 0x0820AB4E
-	nop
-	loadword 0x00, gText_Rom_20ABB4
-	callstd 0x02
-	end
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x000F, 0xABF1, 0x0820, 0x0209, 0x0F02, 0x2800, 0x20AC, 0x0908
-	.2byte 0x0202, 0x5A6A, 0x0F67, 0x2439, 0x6608, 0x8486, 0x20AB, 0x0F08
-	.2byte 0x2000, 0x2439, 0x0908, 0x6C04, 0x0002, 0x0000, 0x0146, 0x0139
-	.2byte 0x012E, 0x012F, 0x0000, 0x026C, 0x5A6A, 0x0F67, 0x2439, 0x6608
-	.2byte 0xA886, 0x20AB, 0x0F08, 0x2000, 0x2439, 0x0908, 0x6C04, 0x0002
-	.2byte 0x0131, 0x0134, 0x0141, 0x0130, 0x0000, 0x026C
+	.byte 0x00
+EventScript_JP_0820AB4F: @ 0x0820AB4F
+	@ event command: loadword
+	.byte 0x0F
+	.byte 0x00
+	.4byte 0x0820ABB4 @ gText_Rom_20ABB4
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x02
+	@ event command: end
+	.byte 0x02
+EventScript_JP_0820AB58: @ 0x0820AB58
+	@ event command: loadword
+	.byte 0x0F
+	.byte 0x00
+	.4byte 0x0820ABF1 @ gText_Rom_20ABF1
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x02
+	@ event command: end
+	.byte 0x02
+EventScript_JP_0820AB61: @ 0x0820AB61
+	@ event command: loadword
+	.byte 0x0F
+	.byte 0x00
+	.4byte 0x0820AC28 @ gText_Rom_20AC28
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x02
+	@ event command: end
+	.byte 0x02
+EventScript_JP_0820AB6A: @ 0x0820AB6A
+	@ event command: lock
+	.byte 0x6A
+	@ event command: faceplayer
+	.byte 0x5A
+	@ event command: message
+	.byte 0x67
+	.4byte 0x0824390F @ gText_Rom_24390F
+	@ event command: waitmessage
+	.byte 0x66
+	@ event command: pokemart
+	.byte 0x86
+	.4byte 0x0820AB84
+	@ event command: loadword
+	.byte 0x0F
+	.byte 0x00
+	.4byte 0x08243920 @ gText_Rom_243920
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x04
+	@ event command: release
+	.byte 0x6C
+	@ event command: end
+	.byte 0x02
+	.byte 0x00, 0x00, 0x00, 0x46, 0x01, 0x39, 0x01, 0x2E, 0x01, 0x2F, 0x01, 0x00, 0x00, 0x6C, 0x02
+EventScript_JP_0820AB90: @ 0x0820AB90
+	@ event command: lock
+	.byte 0x6A
+	@ event command: faceplayer
+	.byte 0x5A
+	@ event command: message
+	.byte 0x67
+	.4byte 0x0824390F @ gText_Rom_24390F
+	@ event command: waitmessage
+	.byte 0x66
+	@ event command: pokemart
+	.byte 0x86
+	.4byte 0x0820ABA8
+	@ event command: loadword
+	.byte 0x0F
+	.byte 0x00
+	.4byte 0x08243920 @ gText_Rom_243920
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x04
+	@ event command: release
+	.byte 0x6C
+	@ event command: end
+	.byte 0x02
+	.byte 0x00, 0x31, 0x01, 0x34, 0x01, 0x41, 0x01, 0x30, 0x01, 0x00, 0x00, 0x6C, 0x02

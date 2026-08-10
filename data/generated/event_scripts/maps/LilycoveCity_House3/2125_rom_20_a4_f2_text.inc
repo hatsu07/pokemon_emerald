@@ -9,11 +9,27 @@ gText_Rom_20A4F2: @ 0x0820A4F2
 	.space 0x28 - (. - gText_Rom_20A4F2)
 	.endif
 	@ analyzed canonical ROM range 0x0820A51A-0x0820A52C
+	@ semantic recovery: script_data; byte-verified against linked ROM
 sAnalyzedEventData_0820A51A: @ 0x0820A51A
 EventScript_0820A51A: @ 0x0820A51A
-	nop
-	loadword 0x00, gText_Rom_20A52D
-	callstd 0x02
-	end
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x0F, 0x00, 0x6C, 0xA5, 0x20, 0x08, 0x09, 0x02, 0x02
+	.byte 0x00
+EventScript_JP_0820A51B: @ 0x0820A51B
+	@ event command: loadword
+	.byte 0x0F
+	.byte 0x00
+	.4byte 0x0820A52D @ gText_Rom_20A52D
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x02
+	@ event command: end
+	.byte 0x02
+EventScript_JP_0820A524: @ 0x0820A524
+	@ event command: loadword
+	.byte 0x0F
+	.byte 0x00
+	.4byte 0x0820A56C @ gText_Rom_20A56C
+	@ event command: callstd
+	.byte 0x09
+	.byte 0x02
+	@ event command: end
+	.byte 0x02
