@@ -117,258 +117,259 @@ sPointerTable_084DDA74:
 gObjectEventGraphicsInfoPointers:
 	@ analyzed canonical ROM range 0x084DDA74-0x084DDE2F
 sAnalyzedData_084DDA74: @ 0x084DDA74
-	@ pointer/nullable table
-	.4byte 0x084E1DA8 @ +0x0
-	.4byte 0x084E1DCC @ +0x4
-	.4byte 0x084E1E14 @ +0x8
-	.4byte 0x084E1E38 @ +0xC
-	.4byte 0x084E1E5C @ +0x10
-	.4byte 0x084E1E80 @ +0x14
-	.4byte 0x084E1EA4 @ +0x18
-	.4byte 0x084E1EC8 @ +0x1C
-	.4byte 0x084E1EEC @ +0x20
-	.4byte 0x084E1F10 @ +0x24
-	.4byte 0x084E1F34 @ +0x28
-	.4byte 0x084E1F58 @ +0x2C
-	.4byte 0x084E1F7C @ +0x30
-	.4byte 0x084E1FA0 @ +0x34
-	.4byte 0x084E1FC4 @ +0x38
-	.4byte 0x084E1FE8 @ +0x3C
-	.4byte 0x084E200C @ +0x40
-	.4byte 0x084E2030 @ +0x44
-	.4byte 0x084E2054 @ +0x48
-	.4byte 0x084E2078 @ +0x4C
-	.4byte 0x084E209C @ +0x50
-	.4byte 0x084E20C0 @ +0x54
-	.4byte 0x084E20E4 @ +0x58
-	.4byte 0x084E2108 @ +0x5C
-	.4byte 0x084E212C @ +0x60
-	.4byte 0x084E2150 @ +0x64
-	.4byte 0x084E2174 @ +0x68
-	.4byte 0x084E2198 @ +0x6C
-	.4byte 0x084E21BC @ +0x70
-	.4byte 0x084E21E0 @ +0x74
-	.4byte 0x084E2204 @ +0x78
-	.4byte 0x084E2228 @ +0x7C
-	.4byte 0x084E224C @ +0x80
-	.4byte 0x084E2270 @ +0x84
-	.4byte 0x084E2294 @ +0x88
-	.4byte 0x084E22B8 @ +0x8C
-	.4byte 0x084E22DC @ +0x90
-	.4byte 0x084E2300 @ +0x94
-	.4byte 0x084E2324 @ +0x98
-	.4byte 0x084E2348 @ +0x9C
-	.4byte 0x084E236C @ +0xA0
-	.4byte 0x084E2390 @ +0xA4
-	.4byte 0x084E23B4 @ +0xA8
-	.4byte 0x084E23D8 @ +0xAC
-	.4byte 0x084E23FC @ +0xB0
-	.4byte 0x084E2420 @ +0xB4
-	.4byte 0x084E2444 @ +0xB8
-	.4byte 0x084E2468 @ +0xBC
-	.4byte 0x084E248C @ +0xC0
-	.4byte 0x084E24B0 @ +0xC4
-	.4byte 0x084E24D4 @ +0xC8
-	.4byte 0x084E24F8 @ +0xCC
-	.4byte 0x084E251C @ +0xD0
-	.4byte 0x084E2540 @ +0xD4
-	.4byte 0x084E2564 @ +0xD8
-	.4byte 0x084E2588 @ +0xDC
-	.4byte 0x084E25AC @ +0xE0
-	.4byte 0x084E25D0 @ +0xE4
-	.4byte 0x084E25F4 @ +0xE8
-	.4byte 0x084E2618 @ +0xEC
-	.4byte 0x084E263C @ +0xF0
-	.4byte 0x084E2660 @ +0xF4
-	.4byte 0x084E2684 @ +0xF8
-	.4byte 0x084E1DF0 @ +0xFC
-	.4byte 0x084E26A8 @ +0x100
-	.4byte 0x084E26CC @ +0x104
-	.4byte 0x084E26F0 @ +0x108
-	.4byte 0x084E2714 @ +0x10C
-	.4byte 0x084E2738 @ +0x110
-	.4byte 0x084E275C @ +0x114
-	.4byte 0x084E3E90 @ +0x118
-	.4byte 0x084E3EB4 @ +0x11C
-	.4byte 0x084E3ED8 @ +0x120
-	.4byte 0x084E3EFC @ +0x124
-	.4byte 0x084E3F20 @ +0x128
-	.4byte 0x084E3F44 @ +0x12C
-	.4byte 0x084E2858 @ +0x130
-	.4byte 0x084E287C @ +0x134
-	.4byte 0x084E28A0 @ +0x138
-	.4byte 0x084E28C4 @ +0x13C
-	.4byte 0x084E28E8 @ +0x140
-	.4byte 0x084E290C @ +0x144
-	.4byte 0x084E2930 @ +0x148
-	.4byte 0x084E2954 @ +0x14C
-	.4byte 0x084E2978 @ +0x150
-	.4byte 0x084E299C @ +0x154
-	.4byte 0x084E29C0 @ +0x158
-	.4byte 0x084E29E4 @ +0x15C
-	.4byte 0x084E2A08 @ +0x160
-	.4byte 0x084E2A2C @ +0x164
-	.4byte 0x084E2A50 @ +0x168
-	.4byte 0x084E2A74 @ +0x16C
-	.4byte 0x084E2A98 @ +0x170
-	.4byte 0x084E2ABC @ +0x174
-	.4byte 0x084E2AE0 @ +0x178
-	.4byte 0x084E2B04 @ +0x17C
-	.4byte 0x084E2B28 @ +0x180
-	.4byte 0x084E2B4C @ +0x184
-	.4byte 0x084E2B70 @ +0x188
-	.4byte 0x084E2BB8 @ +0x18C
-	.4byte 0x084E2BDC @ +0x190
-	.4byte 0x084E2C00 @ +0x194
-	.4byte 0x084E2C24 @ +0x198
-	.4byte 0x084E2C48 @ +0x19C
-	.4byte 0x084E2C6C @ +0x1A0
-	.4byte 0x084E2C90 @ +0x1A4
-	.4byte 0x084E2CB4 @ +0x1A8
-	.4byte 0x084E2CD8 @ +0x1AC
-	.4byte 0x084E2CFC @ +0x1B0
-	.4byte 0x084E2D20 @ +0x1B4
-	.4byte 0x084E2D44 @ +0x1B8
-	.4byte 0x084E2D68 @ +0x1BC
-	.4byte 0x084E2D8C @ +0x1C0
-	.4byte 0x084E2DB0 @ +0x1C4
-	.4byte 0x084E2DD4 @ +0x1C8
-	.4byte 0x084E2DF8 @ +0x1CC
-	.4byte 0x084E2E1C @ +0x1D0
-	.4byte 0x084E2E40 @ +0x1D4
-	.4byte 0x084E2E64 @ +0x1D8
-	.4byte 0x084E2E88 @ +0x1DC
-	.4byte 0x084E2EAC @ +0x1E0
-	.4byte 0x084E2ED0 @ +0x1E4
-	.4byte 0x084E2EF4 @ +0x1E8
-	.4byte 0x084E2F18 @ +0x1EC
-	.4byte 0x084E2F3C @ +0x1F0
-	.4byte 0x084E2F60 @ +0x1F4
-	.4byte 0x084E2F84 @ +0x1F8
-	.4byte 0x084E2FA8 @ +0x1FC
-	.4byte 0x084E2FCC @ +0x200
-	.4byte 0x084E2FF0 @ +0x204
-	.4byte 0x084E3014 @ +0x208
-	.4byte 0x084E3038 @ +0x20C
-	.4byte 0x084E305C @ +0x210
-	.4byte 0x084E3080 @ +0x214
-	.4byte 0x084E30A4 @ +0x218
-	.4byte 0x084E30C8 @ +0x21C
-	.4byte 0x084E30EC @ +0x220
-	.4byte 0x084E3110 @ +0x224
-	.4byte 0x084E3134 @ +0x228
-	.4byte 0x084E3158 @ +0x22C
-	.4byte 0x084E317C @ +0x230
-	.4byte 0x084E31A0 @ +0x234
-	.4byte 0x084E31C4 @ +0x238
-	.4byte 0x084E31E8 @ +0x23C
-	.4byte 0x084E320C @ +0x240
-	.4byte 0x084E3230 @ +0x244
-	.4byte 0x084E3254 @ +0x248
-	.4byte 0x084E3278 @ +0x24C
-	.4byte 0x084E329C @ +0x250
-	.4byte 0x084E32C0 @ +0x254
-	.4byte 0x084E32E4 @ +0x258
-	.4byte 0x084E3308 @ +0x25C
-	.4byte 0x084E332C @ +0x260
-	.4byte 0x084E3350 @ +0x264
-	.4byte 0x084E3374 @ +0x268
-	.4byte 0x084E3398 @ +0x26C
-	.4byte 0x084E33BC @ +0x270
-	.4byte 0x084E33E0 @ +0x274
-	.4byte 0x084E3404 @ +0x278
-	.4byte 0x084E3428 @ +0x27C
-	.4byte 0x084E344C @ +0x280
-	.4byte 0x084E3470 @ +0x284
-	.4byte 0x084E3494 @ +0x288
-	.4byte 0x084E34B8 @ +0x28C
-	.4byte 0x084E34DC @ +0x290
-	.4byte 0x084E3500 @ +0x294
-	.4byte 0x084E3524 @ +0x298
-	.4byte 0x084E3548 @ +0x29C
-	.4byte 0x084E356C @ +0x2A0
-	.4byte 0x084E3590 @ +0x2A4
-	.4byte 0x084E35B4 @ +0x2A8
-	.4byte 0x084E35D8 @ +0x2AC
-	.4byte 0x084E35FC @ +0x2B0
-	.4byte 0x084E3620 @ +0x2B4
-	.4byte 0x084E3644 @ +0x2B8
-	.4byte 0x084E3668 @ +0x2BC
-	.4byte 0x084E368C @ +0x2C0
-	.4byte 0x084E36B0 @ +0x2C4
-	.4byte 0x084E36D4 @ +0x2C8
-	.4byte 0x084E36F8 @ +0x2CC
-	.4byte 0x084E371C @ +0x2D0
-	.4byte 0x084E3740 @ +0x2D4
-	.4byte 0x084E3764 @ +0x2D8
-	.4byte 0x084E3788 @ +0x2DC
-	.4byte 0x084E37AC @ +0x2E0
-	.4byte 0x084E37D0 @ +0x2E4
-	.4byte 0x084E37F4 @ +0x2E8
-	.4byte 0x084E3818 @ +0x2EC
-	.4byte 0x084E383C @ +0x2F0
-	.4byte 0x084E3860 @ +0x2F4
-	.4byte 0x084E3884 @ +0x2F8
-	.4byte 0x084E38A8 @ +0x2FC
-	.4byte 0x084E38CC @ +0x300
-	.4byte 0x084E38F0 @ +0x304
-	.4byte 0x084E3914 @ +0x308
-	.4byte 0x084E3938 @ +0x30C
-	.4byte 0x084E395C @ +0x310
-	.4byte 0x084E3980 @ +0x314
-	.4byte 0x084E39A4 @ +0x318
-	.4byte 0x084E3A10 @ +0x31C
-	.4byte 0x084E3A34 @ +0x320
-	.4byte 0x084E3A58 @ +0x324
-	.4byte 0x084E3A7C @ +0x328
-	.4byte 0x084E3AA0 @ +0x32C
-	.4byte 0x084E3AC4 @ +0x330
-	.4byte 0x084E3AE8 @ +0x334
-	.4byte 0x084E3B0C @ +0x338
-	.4byte 0x084E3B30 @ +0x33C
-	.4byte 0x084E3B54 @ +0x340
-	.4byte 0x084E3B78 @ +0x344
-	.4byte 0x084E3B9C @ +0x348
-	.4byte 0x084E3BC0 @ +0x34C
-	.4byte 0x084E3BE4 @ +0x350
-	.4byte 0x084E3C08 @ +0x354
-	.4byte 0x084E3C2C @ +0x358
-	.4byte 0x084E3C50 @ +0x35C
-	.4byte 0x084E3C74 @ +0x360
-	.4byte 0x084E3C98 @ +0x364
-	.4byte 0x084E3CBC @ +0x368
-	.4byte 0x084E3CE0 @ +0x36C
-	.4byte 0x084E2B94 @ +0x370
-	.4byte 0x084E39C8 @ +0x374
-	.4byte 0x084E39EC @ +0x378
-	.4byte 0x084E3D04 @ +0x37C
-	.4byte 0x084E3D28 @ +0x380
-	.4byte 0x084E3D4C @ +0x384
-	.4byte 0x084E3D70 @ +0x388
-	.4byte 0x084E3D94 @ +0x38C
-	.4byte 0x084E3E00 @ +0x390
-	.4byte 0x084E3E24 @ +0x394
-	.4byte 0x084E3DB8 @ +0x398
-	.4byte 0x084E3DDC @ +0x39C
-	.4byte 0x084E3E48 @ +0x3A0
-	.4byte 0x084E3E6C @ +0x3A4
-	.4byte 0x084E3F68 @ +0x3A8
-	.4byte 0x084E3F8C @ +0x3AC
-	.4byte 0x084E3FB0 @ +0x3B0
-	.4byte 0x084E3FD4 @ +0x3B4
-	.4byte 0x084E3FF8 @ +0x3B8
-	@ pret/pokeemerald-jp direct xref for 0x084DDE30: event_object_movement.s: GetEventObjectGraphicsInfo
+	@ 239-entry OBJ_EVENT_GFX table; boundary corrected from Stage1 pointer-run inference.
+	.4byte gObjectEventGraphicsInfo_JP_000 @ OBJ_EVENT_GFX index 0
+	.4byte gObjectEventGraphicsInfo_JP_001 @ OBJ_EVENT_GFX index 1
+	.4byte gObjectEventGraphicsInfo_JP_002 @ OBJ_EVENT_GFX index 2
+	.4byte gObjectEventGraphicsInfo_JP_003 @ OBJ_EVENT_GFX index 3
+	.4byte gObjectEventGraphicsInfo_JP_004 @ OBJ_EVENT_GFX index 4
+	.4byte gObjectEventGraphicsInfo_JP_005 @ OBJ_EVENT_GFX index 5
+	.4byte gObjectEventGraphicsInfo_JP_006 @ OBJ_EVENT_GFX index 6
+	.4byte gObjectEventGraphicsInfo_JP_007 @ OBJ_EVENT_GFX index 7
+	.4byte gObjectEventGraphicsInfo_JP_008 @ OBJ_EVENT_GFX index 8
+	.4byte gObjectEventGraphicsInfo_JP_009 @ OBJ_EVENT_GFX index 9
+	.4byte gObjectEventGraphicsInfo_JP_010 @ OBJ_EVENT_GFX index 10
+	.4byte gObjectEventGraphicsInfo_JP_011 @ OBJ_EVENT_GFX index 11
+	.4byte gObjectEventGraphicsInfo_JP_012 @ OBJ_EVENT_GFX index 12
+	.4byte gObjectEventGraphicsInfo_JP_013 @ OBJ_EVENT_GFX index 13
+	.4byte gObjectEventGraphicsInfo_JP_014 @ OBJ_EVENT_GFX index 14
+	.4byte gObjectEventGraphicsInfo_JP_015 @ OBJ_EVENT_GFX index 15
+	.4byte gObjectEventGraphicsInfo_JP_016 @ OBJ_EVENT_GFX index 16
+	.4byte gObjectEventGraphicsInfo_JP_017 @ OBJ_EVENT_GFX index 17
+	.4byte gObjectEventGraphicsInfo_JP_018 @ OBJ_EVENT_GFX index 18
+	.4byte gObjectEventGraphicsInfo_JP_019 @ OBJ_EVENT_GFX index 19
+	.4byte gObjectEventGraphicsInfo_JP_020 @ OBJ_EVENT_GFX index 20
+	.4byte gObjectEventGraphicsInfo_JP_021 @ OBJ_EVENT_GFX index 21
+	.4byte gObjectEventGraphicsInfo_JP_022 @ OBJ_EVENT_GFX index 22
+	.4byte gObjectEventGraphicsInfo_JP_023 @ OBJ_EVENT_GFX index 23
+	.4byte gObjectEventGraphicsInfo_JP_024 @ OBJ_EVENT_GFX index 24
+	.4byte gObjectEventGraphicsInfo_JP_025 @ OBJ_EVENT_GFX index 25
+	.4byte gObjectEventGraphicsInfo_JP_026 @ OBJ_EVENT_GFX index 26
+	.4byte gObjectEventGraphicsInfo_JP_027 @ OBJ_EVENT_GFX index 27
+	.4byte gObjectEventGraphicsInfo_JP_028 @ OBJ_EVENT_GFX index 28
+	.4byte gObjectEventGraphicsInfo_JP_029 @ OBJ_EVENT_GFX index 29
+	.4byte gObjectEventGraphicsInfo_JP_030 @ OBJ_EVENT_GFX index 30
+	.4byte gObjectEventGraphicsInfo_JP_031 @ OBJ_EVENT_GFX index 31
+	.4byte gObjectEventGraphicsInfo_JP_032 @ OBJ_EVENT_GFX index 32
+	.4byte gObjectEventGraphicsInfo_JP_033 @ OBJ_EVENT_GFX index 33
+	.4byte gObjectEventGraphicsInfo_JP_034 @ OBJ_EVENT_GFX index 34
+	.4byte gObjectEventGraphicsInfo_JP_035 @ OBJ_EVENT_GFX index 35
+	.4byte gObjectEventGraphicsInfo_JP_036 @ OBJ_EVENT_GFX index 36
+	.4byte gObjectEventGraphicsInfo_JP_037 @ OBJ_EVENT_GFX index 37
+	.4byte gObjectEventGraphicsInfo_JP_038 @ OBJ_EVENT_GFX index 38
+	.4byte gObjectEventGraphicsInfo_JP_039 @ OBJ_EVENT_GFX index 39
+	.4byte gObjectEventGraphicsInfo_JP_040 @ OBJ_EVENT_GFX index 40
+	.4byte gObjectEventGraphicsInfo_JP_041 @ OBJ_EVENT_GFX index 41
+	.4byte gObjectEventGraphicsInfo_JP_042 @ OBJ_EVENT_GFX index 42
+	.4byte gObjectEventGraphicsInfo_JP_043 @ OBJ_EVENT_GFX index 43
+	.4byte gObjectEventGraphicsInfo_JP_044 @ OBJ_EVENT_GFX index 44
+	.4byte gObjectEventGraphicsInfo_JP_045 @ OBJ_EVENT_GFX index 45
+	.4byte gObjectEventGraphicsInfo_JP_046 @ OBJ_EVENT_GFX index 46
+	.4byte gObjectEventGraphicsInfo_JP_047 @ OBJ_EVENT_GFX index 47
+	.4byte gObjectEventGraphicsInfo_JP_048 @ OBJ_EVENT_GFX index 48
+	.4byte gObjectEventGraphicsInfo_JP_049 @ OBJ_EVENT_GFX index 49
+	.4byte gObjectEventGraphicsInfo_JP_050 @ OBJ_EVENT_GFX index 50
+	.4byte gObjectEventGraphicsInfo_JP_051 @ OBJ_EVENT_GFX index 51
+	.4byte gObjectEventGraphicsInfo_JP_052 @ OBJ_EVENT_GFX index 52
+	.4byte gObjectEventGraphicsInfo_JP_053 @ OBJ_EVENT_GFX index 53
+	.4byte gObjectEventGraphicsInfo_JP_054 @ OBJ_EVENT_GFX index 54
+	.4byte gObjectEventGraphicsInfo_JP_055 @ OBJ_EVENT_GFX index 55
+	.4byte gObjectEventGraphicsInfo_JP_056 @ OBJ_EVENT_GFX index 56
+	.4byte gObjectEventGraphicsInfo_JP_057 @ OBJ_EVENT_GFX index 57
+	.4byte gObjectEventGraphicsInfo_JP_058 @ OBJ_EVENT_GFX index 58
+	.4byte gObjectEventGraphicsInfo_JP_059 @ OBJ_EVENT_GFX index 59
+	.4byte gObjectEventGraphicsInfo_JP_060 @ OBJ_EVENT_GFX index 60
+	.4byte gObjectEventGraphicsInfo_JP_061 @ OBJ_EVENT_GFX index 61
+	.4byte gObjectEventGraphicsInfo_JP_062 @ OBJ_EVENT_GFX index 62
+	.4byte gObjectEventGraphicsInfo_JP_063 @ OBJ_EVENT_GFX index 63
+	.4byte gObjectEventGraphicsInfo_JP_064 @ OBJ_EVENT_GFX index 64
+	.4byte gObjectEventGraphicsInfo_JP_065 @ OBJ_EVENT_GFX index 65
+	.4byte gObjectEventGraphicsInfo_JP_066 @ OBJ_EVENT_GFX index 66
+	.4byte gObjectEventGraphicsInfo_JP_067 @ OBJ_EVENT_GFX index 67
+	.4byte gObjectEventGraphicsInfo_JP_068 @ OBJ_EVENT_GFX index 68
+	.4byte gObjectEventGraphicsInfo_JP_069 @ OBJ_EVENT_GFX index 69
+	.4byte gObjectEventGraphicsInfo_JP_070 @ OBJ_EVENT_GFX index 70
+	.4byte gObjectEventGraphicsInfo_JP_071 @ OBJ_EVENT_GFX index 71
+	.4byte gObjectEventGraphicsInfo_JP_072 @ OBJ_EVENT_GFX index 72
+	.4byte gObjectEventGraphicsInfo_JP_073 @ OBJ_EVENT_GFX index 73
+	.4byte gObjectEventGraphicsInfo_JP_074 @ OBJ_EVENT_GFX index 74
+	.4byte gObjectEventGraphicsInfo_JP_075 @ OBJ_EVENT_GFX index 75
+	.4byte gObjectEventGraphicsInfo_JP_076 @ OBJ_EVENT_GFX index 76
+	.4byte gObjectEventGraphicsInfo_JP_077 @ OBJ_EVENT_GFX index 77
+	.4byte gObjectEventGraphicsInfo_JP_078 @ OBJ_EVENT_GFX index 78
+	.4byte gObjectEventGraphicsInfo_JP_079 @ OBJ_EVENT_GFX index 79
+	.4byte gObjectEventGraphicsInfo_JP_080 @ OBJ_EVENT_GFX index 80
+	.4byte gObjectEventGraphicsInfo_JP_081 @ OBJ_EVENT_GFX index 81
+	.4byte gObjectEventGraphicsInfo_JP_082 @ OBJ_EVENT_GFX index 82
+	.4byte gObjectEventGraphicsInfo_JP_083 @ OBJ_EVENT_GFX index 83
+	.4byte gObjectEventGraphicsInfo_JP_084 @ OBJ_EVENT_GFX index 84
+	.4byte gObjectEventGraphicsInfo_JP_085 @ OBJ_EVENT_GFX index 85
+	.4byte gObjectEventGraphicsInfo_JP_086 @ OBJ_EVENT_GFX index 86
+	.4byte gObjectEventGraphicsInfo_JP_087 @ OBJ_EVENT_GFX index 87
+	.4byte gObjectEventGraphicsInfo_JP_088 @ OBJ_EVENT_GFX index 88
+	.4byte gObjectEventGraphicsInfo_JP_089 @ OBJ_EVENT_GFX index 89
+	.4byte gObjectEventGraphicsInfo_JP_090 @ OBJ_EVENT_GFX index 90
+	.4byte gObjectEventGraphicsInfo_JP_091 @ OBJ_EVENT_GFX index 91
+	.4byte gObjectEventGraphicsInfo_JP_092 @ OBJ_EVENT_GFX index 92
+	.4byte gObjectEventGraphicsInfo_JP_093 @ OBJ_EVENT_GFX index 93
+	.4byte gObjectEventGraphicsInfo_JP_094 @ OBJ_EVENT_GFX index 94
+	.4byte gObjectEventGraphicsInfo_JP_095 @ OBJ_EVENT_GFX index 95
+	.4byte gObjectEventGraphicsInfo_JP_096 @ OBJ_EVENT_GFX index 96
+	.4byte gObjectEventGraphicsInfo_JP_097 @ OBJ_EVENT_GFX index 97
+	.4byte gObjectEventGraphicsInfo_JP_098 @ OBJ_EVENT_GFX index 98
+	.4byte gObjectEventGraphicsInfo_JP_099 @ OBJ_EVENT_GFX index 99
+	.4byte gObjectEventGraphicsInfo_JP_100 @ OBJ_EVENT_GFX index 100
+	.4byte gObjectEventGraphicsInfo_JP_101 @ OBJ_EVENT_GFX index 101
+	.4byte gObjectEventGraphicsInfo_JP_102 @ OBJ_EVENT_GFX index 102
+	.4byte gObjectEventGraphicsInfo_JP_103 @ OBJ_EVENT_GFX index 103
+	.4byte gObjectEventGraphicsInfo_JP_104 @ OBJ_EVENT_GFX index 104
+	.4byte gObjectEventGraphicsInfo_JP_105 @ OBJ_EVENT_GFX index 105
+	.4byte gObjectEventGraphicsInfo_JP_106 @ OBJ_EVENT_GFX index 106
+	.4byte gObjectEventGraphicsInfo_JP_107 @ OBJ_EVENT_GFX index 107
+	.4byte gObjectEventGraphicsInfo_JP_108 @ OBJ_EVENT_GFX index 108
+	.4byte gObjectEventGraphicsInfo_JP_109 @ OBJ_EVENT_GFX index 109
+	.4byte gObjectEventGraphicsInfo_JP_110 @ OBJ_EVENT_GFX index 110
+	.4byte gObjectEventGraphicsInfo_JP_111 @ OBJ_EVENT_GFX index 111
+	.4byte gObjectEventGraphicsInfo_JP_112 @ OBJ_EVENT_GFX index 112
+	.4byte gObjectEventGraphicsInfo_JP_113 @ OBJ_EVENT_GFX index 113
+	.4byte gObjectEventGraphicsInfo_JP_114 @ OBJ_EVENT_GFX index 114
+	.4byte gObjectEventGraphicsInfo_JP_115 @ OBJ_EVENT_GFX index 115
+	.4byte gObjectEventGraphicsInfo_JP_116 @ OBJ_EVENT_GFX index 116
+	.4byte gObjectEventGraphicsInfo_JP_117 @ OBJ_EVENT_GFX index 117
+	.4byte gObjectEventGraphicsInfo_JP_118 @ OBJ_EVENT_GFX index 118
+	.4byte gObjectEventGraphicsInfo_JP_119 @ OBJ_EVENT_GFX index 119
+	.4byte gObjectEventGraphicsInfo_JP_120 @ OBJ_EVENT_GFX index 120
+	.4byte gObjectEventGraphicsInfo_JP_121 @ OBJ_EVENT_GFX index 121
+	.4byte gObjectEventGraphicsInfo_JP_122 @ OBJ_EVENT_GFX index 122
+	.4byte gObjectEventGraphicsInfo_JP_123 @ OBJ_EVENT_GFX index 123
+	.4byte gObjectEventGraphicsInfo_JP_124 @ OBJ_EVENT_GFX index 124
+	.4byte gObjectEventGraphicsInfo_JP_125 @ OBJ_EVENT_GFX index 125
+	.4byte gObjectEventGraphicsInfo_JP_126 @ OBJ_EVENT_GFX index 126
+	.4byte gObjectEventGraphicsInfo_JP_127 @ OBJ_EVENT_GFX index 127
+	.4byte gObjectEventGraphicsInfo_JP_128 @ OBJ_EVENT_GFX index 128
+	.4byte gObjectEventGraphicsInfo_JP_129 @ OBJ_EVENT_GFX index 129
+	.4byte gObjectEventGraphicsInfo_JP_130 @ OBJ_EVENT_GFX index 130
+	.4byte gObjectEventGraphicsInfo_JP_131 @ OBJ_EVENT_GFX index 131
+	.4byte gObjectEventGraphicsInfo_JP_132 @ OBJ_EVENT_GFX index 132
+	.4byte gObjectEventGraphicsInfo_JP_133 @ OBJ_EVENT_GFX index 133
+	.4byte gObjectEventGraphicsInfo_JP_134 @ OBJ_EVENT_GFX index 134
+	.4byte gObjectEventGraphicsInfo_JP_135 @ OBJ_EVENT_GFX index 135
+	.4byte gObjectEventGraphicsInfo_JP_136 @ OBJ_EVENT_GFX index 136
+	.4byte gObjectEventGraphicsInfo_JP_137 @ OBJ_EVENT_GFX index 137
+	.4byte gObjectEventGraphicsInfo_JP_138 @ OBJ_EVENT_GFX index 138
+	.4byte gObjectEventGraphicsInfo_JP_139 @ OBJ_EVENT_GFX index 139
+	.4byte gObjectEventGraphicsInfo_JP_140 @ OBJ_EVENT_GFX index 140
+	.4byte gObjectEventGraphicsInfo_JP_141 @ OBJ_EVENT_GFX index 141
+	.4byte gObjectEventGraphicsInfo_JP_142 @ OBJ_EVENT_GFX index 142
+	.4byte gObjectEventGraphicsInfo_JP_143 @ OBJ_EVENT_GFX index 143
+	.4byte gObjectEventGraphicsInfo_JP_144 @ OBJ_EVENT_GFX index 144
+	.4byte gObjectEventGraphicsInfo_JP_145 @ OBJ_EVENT_GFX index 145
+	.4byte gObjectEventGraphicsInfo_JP_146 @ OBJ_EVENT_GFX index 146
+	.4byte gObjectEventGraphicsInfo_JP_147 @ OBJ_EVENT_GFX index 147
+	.4byte gObjectEventGraphicsInfo_JP_148 @ OBJ_EVENT_GFX index 148
+	.4byte gObjectEventGraphicsInfo_JP_149 @ OBJ_EVENT_GFX index 149
+	.4byte gObjectEventGraphicsInfo_JP_150 @ OBJ_EVENT_GFX index 150
+	.4byte gObjectEventGraphicsInfo_JP_151 @ OBJ_EVENT_GFX index 151
+	.4byte gObjectEventGraphicsInfo_JP_152 @ OBJ_EVENT_GFX index 152
+	.4byte gObjectEventGraphicsInfo_JP_153 @ OBJ_EVENT_GFX index 153
+	.4byte gObjectEventGraphicsInfo_JP_154 @ OBJ_EVENT_GFX index 154
+	.4byte gObjectEventGraphicsInfo_JP_155 @ OBJ_EVENT_GFX index 155
+	.4byte gObjectEventGraphicsInfo_JP_156 @ OBJ_EVENT_GFX index 156
+	.4byte gObjectEventGraphicsInfo_JP_157 @ OBJ_EVENT_GFX index 157
+	.4byte gObjectEventGraphicsInfo_JP_158 @ OBJ_EVENT_GFX index 158
+	.4byte gObjectEventGraphicsInfo_JP_159 @ OBJ_EVENT_GFX index 159
+	.4byte gObjectEventGraphicsInfo_JP_160 @ OBJ_EVENT_GFX index 160
+	.4byte gObjectEventGraphicsInfo_JP_161 @ OBJ_EVENT_GFX index 161
+	.4byte gObjectEventGraphicsInfo_JP_162 @ OBJ_EVENT_GFX index 162
+	.4byte gObjectEventGraphicsInfo_JP_163 @ OBJ_EVENT_GFX index 163
+	.4byte gObjectEventGraphicsInfo_JP_164 @ OBJ_EVENT_GFX index 164
+	.4byte gObjectEventGraphicsInfo_JP_165 @ OBJ_EVENT_GFX index 165
+	.4byte gObjectEventGraphicsInfo_JP_166 @ OBJ_EVENT_GFX index 166
+	.4byte gObjectEventGraphicsInfo_JP_167 @ OBJ_EVENT_GFX index 167
+	.4byte gObjectEventGraphicsInfo_JP_168 @ OBJ_EVENT_GFX index 168
+	.4byte gObjectEventGraphicsInfo_JP_169 @ OBJ_EVENT_GFX index 169
+	.4byte gObjectEventGraphicsInfo_JP_170 @ OBJ_EVENT_GFX index 170
+	.4byte gObjectEventGraphicsInfo_JP_171 @ OBJ_EVENT_GFX index 171
+	.4byte gObjectEventGraphicsInfo_JP_172 @ OBJ_EVENT_GFX index 172
+	.4byte gObjectEventGraphicsInfo_JP_173 @ OBJ_EVENT_GFX index 173
+	.4byte gObjectEventGraphicsInfo_JP_174 @ OBJ_EVENT_GFX index 174
+	.4byte gObjectEventGraphicsInfo_JP_175 @ OBJ_EVENT_GFX index 175
+	.4byte gObjectEventGraphicsInfo_JP_176 @ OBJ_EVENT_GFX index 176
+	.4byte gObjectEventGraphicsInfo_JP_177 @ OBJ_EVENT_GFX index 177
+	.4byte gObjectEventGraphicsInfo_JP_178 @ OBJ_EVENT_GFX index 178
+	.4byte gObjectEventGraphicsInfo_JP_179 @ OBJ_EVENT_GFX index 179
+	.4byte gObjectEventGraphicsInfo_JP_180 @ OBJ_EVENT_GFX index 180
+	.4byte gObjectEventGraphicsInfo_JP_181 @ OBJ_EVENT_GFX index 181
+	.4byte gObjectEventGraphicsInfo_JP_182 @ OBJ_EVENT_GFX index 182
+	.4byte gObjectEventGraphicsInfo_JP_183 @ OBJ_EVENT_GFX index 183
+	.4byte gObjectEventGraphicsInfo_JP_184 @ OBJ_EVENT_GFX index 184
+	.4byte gObjectEventGraphicsInfo_JP_185 @ OBJ_EVENT_GFX index 185
+	.4byte gObjectEventGraphicsInfo_JP_186 @ OBJ_EVENT_GFX index 186
+	.4byte gObjectEventGraphicsInfo_JP_187 @ OBJ_EVENT_GFX index 187
+	.4byte gObjectEventGraphicsInfo_JP_188 @ OBJ_EVENT_GFX index 188
+	.4byte gObjectEventGraphicsInfo_JP_189 @ OBJ_EVENT_GFX index 189
+	.4byte gObjectEventGraphicsInfo_JP_190 @ OBJ_EVENT_GFX index 190
+	.4byte gObjectEventGraphicsInfo_JP_191 @ OBJ_EVENT_GFX index 191
+	.4byte gObjectEventGraphicsInfo_JP_192 @ OBJ_EVENT_GFX index 192
+	.4byte gObjectEventGraphicsInfo_JP_193 @ OBJ_EVENT_GFX index 193
+	.4byte gObjectEventGraphicsInfo_JP_194 @ OBJ_EVENT_GFX index 194
+	.4byte gObjectEventGraphicsInfo_JP_195 @ OBJ_EVENT_GFX index 195
+	.4byte gObjectEventGraphicsInfo_JP_196 @ OBJ_EVENT_GFX index 196
+	.4byte gObjectEventGraphicsInfo_JP_197 @ OBJ_EVENT_GFX index 197
+	.4byte gObjectEventGraphicsInfo_JP_198 @ OBJ_EVENT_GFX index 198
+	.4byte gObjectEventGraphicsInfo_JP_199 @ OBJ_EVENT_GFX index 199
+	.4byte gObjectEventGraphicsInfo_JP_200 @ OBJ_EVENT_GFX index 200
+	.4byte gObjectEventGraphicsInfo_JP_201 @ OBJ_EVENT_GFX index 201
+	.4byte gObjectEventGraphicsInfo_JP_202 @ OBJ_EVENT_GFX index 202
+	.4byte gObjectEventGraphicsInfo_JP_203 @ OBJ_EVENT_GFX index 203
+	.4byte gObjectEventGraphicsInfo_JP_204 @ OBJ_EVENT_GFX index 204
+	.4byte gObjectEventGraphicsInfo_JP_205 @ OBJ_EVENT_GFX index 205
+	.4byte gObjectEventGraphicsInfo_JP_206 @ OBJ_EVENT_GFX index 206
+	.4byte gObjectEventGraphicsInfo_JP_207 @ OBJ_EVENT_GFX index 207
+	.4byte gObjectEventGraphicsInfo_JP_208 @ OBJ_EVENT_GFX index 208
+	.4byte gObjectEventGraphicsInfo_JP_209 @ OBJ_EVENT_GFX index 209
+	.4byte gObjectEventGraphicsInfo_JP_210 @ OBJ_EVENT_GFX index 210
+	.4byte gObjectEventGraphicsInfo_JP_211 @ OBJ_EVENT_GFX index 211
+	.4byte gObjectEventGraphicsInfo_JP_212 @ OBJ_EVENT_GFX index 212
+	.4byte gObjectEventGraphicsInfo_JP_213 @ OBJ_EVENT_GFX index 213
+	.4byte gObjectEventGraphicsInfo_JP_214 @ OBJ_EVENT_GFX index 214
+	.4byte gObjectEventGraphicsInfo_JP_215 @ OBJ_EVENT_GFX index 215
+	.4byte gObjectEventGraphicsInfo_JP_216 @ OBJ_EVENT_GFX index 216
+	.4byte gObjectEventGraphicsInfo_JP_217 @ OBJ_EVENT_GFX index 217
+	.4byte gObjectEventGraphicsInfo_JP_218 @ OBJ_EVENT_GFX index 218
+	.4byte gObjectEventGraphicsInfo_JP_219 @ OBJ_EVENT_GFX index 219
+	.4byte gObjectEventGraphicsInfo_JP_220 @ OBJ_EVENT_GFX index 220
+	.4byte gObjectEventGraphicsInfo_JP_221 @ OBJ_EVENT_GFX index 221
+	.4byte gObjectEventGraphicsInfo_JP_222 @ OBJ_EVENT_GFX index 222
+	.4byte gObjectEventGraphicsInfo_JP_223 @ OBJ_EVENT_GFX index 223
+	.4byte gObjectEventGraphicsInfo_JP_224 @ OBJ_EVENT_GFX index 224
+	.4byte gObjectEventGraphicsInfo_JP_225 @ OBJ_EVENT_GFX index 225
+	.4byte gObjectEventGraphicsInfo_JP_226 @ OBJ_EVENT_GFX index 226
+	.4byte gObjectEventGraphicsInfo_JP_227 @ OBJ_EVENT_GFX index 227
+	.4byte gObjectEventGraphicsInfo_JP_228 @ OBJ_EVENT_GFX index 228
+	.4byte gObjectEventGraphicsInfo_JP_229 @ OBJ_EVENT_GFX index 229
+	.4byte gObjectEventGraphicsInfo_JP_230 @ OBJ_EVENT_GFX index 230
+	.4byte gObjectEventGraphicsInfo_JP_231 @ OBJ_EVENT_GFX index 231
+	.4byte gObjectEventGraphicsInfo_JP_232 @ OBJ_EVENT_GFX index 232
+	.4byte gObjectEventGraphicsInfo_JP_233 @ OBJ_EVENT_GFX index 233
+	.4byte gObjectEventGraphicsInfo_JP_234 @ OBJ_EVENT_GFX index 234
+	.4byte gObjectEventGraphicsInfo_JP_235 @ OBJ_EVENT_GFX index 235
+	.4byte gObjectEventGraphicsInfo_JP_236 @ OBJ_EVENT_GFX index 236
+	.4byte gObjectEventGraphicsInfo_JP_237 @ OBJ_EVENT_GFX index 237
+	.4byte gObjectEventGraphicsInfo_JP_238 @ OBJ_EVENT_GFX index 238
 	.globl gEventObjectMovementData_084DDE30
 gEventObjectMovementData_084DDE30:
 	.globl gUnknown_84DDE30
 gUnknown_84DDE30: @ 0x084DDE30
 	@ analyzed canonical ROM range 0x084DDE30-0x084DDE4B
 sAnalyzedData_084DDE30: @ 0x084DDE30
-	@ pointer/nullable table
-	.4byte 0x084E275C @ +0x0
-	.4byte 0x084E2780 @ +0x4
-	.4byte 0x084E27A4 @ +0x8
-	.4byte 0x084E27C8 @ +0xC
-	.4byte 0x084E27EC @ +0x10
-	.4byte 0x084E2810 @ +0x14
-	.4byte 0x084E2834 @ +0x18
+	.globl gMauvilleOldManGraphicsInfoPointers
+gMauvilleOldManGraphicsInfoPointers:
+	@ 7-entry Mauville old-man graphics-info selector table.
+	.4byte gObjectEventGraphicsInfo_JP_069 @ MAUVILLE_MAN_BARD
+	.4byte gMauvilleOldManGraphicsInfo_JP_01 @ MAUVILLE_MAN_HIPSTER
+	.4byte gMauvilleOldManGraphicsInfo_JP_02 @ MAUVILLE_MAN_TRADER
+	.4byte gMauvilleOldManGraphicsInfo_JP_03 @ MAUVILLE_MAN_STORYTELLER
+	.4byte gMauvilleOldManGraphicsInfo_JP_04 @ MAUVILLE_MAN_GIDDY
+	.4byte gMauvilleOldManGraphicsInfo_JP_05 @ MAUVILLE_MAN_UNUSED1
+	.4byte gMauvilleOldManGraphicsInfo_JP_06 @ MAUVILLE_MAN_UNUSED2

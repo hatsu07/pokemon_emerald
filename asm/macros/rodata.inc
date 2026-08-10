@@ -375,3 +375,25 @@
     .byte \pal_num, 0
 .endm
 
+
+@ struct EasyChatWordInfo (12 bytes): text pointer, alphabetical-order index, enabled flag.
+.macro easy_chat_word_info text:req, alphabetical_order:req, enabled:req
+    .4byte \text
+    .4byte \alphabetical_order
+    .4byte \enabled
+.endm
+
+@ struct ObjectEventGraphicsInfo (0x24 bytes in Emerald JP).
+.macro object_event_graphics_info tile_tag:req, palette_tag:req, reflection_palette_tag:req, size:req, width:req, height:req, flags:req, tracks:req, oam:req, subsprites:req, anims:req, images:req, affine_anims:req
+    .2byte \tile_tag, \palette_tag, \reflection_palette_tag, \size
+    .2byte \width, \height
+    .byte \flags, \tracks
+    .2byte 0 @ structure padding
+    .4byte \oam, \subsprites, \anims, \images, \affine_anims
+.endm
+
+@ struct SpriteFrameImage (8 bytes in this ROM): graphics pointer and byte size.
+.macro sprite_frame_image data:req, size:req
+    .4byte \data
+    .4byte \size
+.endm
