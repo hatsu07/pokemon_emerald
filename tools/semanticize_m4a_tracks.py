@@ -237,7 +237,7 @@ def decode_command(bytes_: list[int], pos: int, last_status: int | None) -> tupl
         return decoded, pos, last_status
 
     if status in ONE_ARG_COMMANDS:
-        if pos >= len(bytes_) or bytes_[pos] >= 0x80:
+        if pos >= len(bytes_):
             raise DecodeError(f"missing operand for {h(status)}")
         value = bytes_[pos]
         macro, name = ONE_ARG_COMMANDS[status]
