@@ -1,4 +1,10 @@
 	@ pret/pokeemerald-jp direct xref for 0x082D2588: main_menu.s: CB2_NewGameBirchSpeech_ReturnFromNamingScreen, sub_0803058C
+	@ Semantic names recovered from main_menu.c declaration order and JP consumers.
+	.globl sBirchSpeechBgPals
+sBirchSpeechBgPals = gMainMenuData_082D2588
+	.globl sBirchSpeechShadowGfx
+sBirchSpeechShadowGfx = gMainMenuData_082D25C8
+
 	.globl gMainMenuData_082D2588
 gMainMenuData_082D2588:
 	.globl gUnknown_82D2588
@@ -27,157 +33,164 @@ gMainMenuData_082D277C:
 	.globl gUnknown_82D277C
 gUnknown_82D277C: @ 0x082D277C
 	@ confirmed GBA LZ77 stream: compressed=0x126, decompressed=0x500
+	.globl sBirchSpeechBgMap
+sBirchSpeechBgMap:
 sLz77Block_082D277C:
 	@ analyzed canonical ROM range 0x082D277C-0x082D28A5
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x10, 0x00, 0x05, 0x00, 0x3D, 0x01, 0x10, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0x50, 0x01, 0x02
-	.byte 0xF0, 0x01, 0xEF, 0xF0, 0x01, 0xF0, 0x01, 0x60, 0x01, 0x03, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01
-	.byte 0x60, 0x01, 0x79, 0x04, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0x60, 0x01, 0x05, 0x00, 0xF0, 0x01
-	.byte 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0
-	.byte 0x01, 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01
-	.byte 0xF0, 0x01, 0xC0, 0xF0, 0x01, 0x50, 0x01, 0x10, 0x00, 0x11, 0x00, 0x12, 0x00, 0x00, 0x13, 0x00
-	.byte 0x14, 0x00, 0x15, 0x00, 0x16, 0x00, 0x00, 0x17, 0x00, 0x17, 0x04, 0x16, 0x04, 0x15, 0x04, 0x01
-	.byte 0x14, 0x04, 0x13, 0x04, 0x12, 0x04, 0x11, 0x01, 0x6E, 0xC0, 0xF0, 0x31, 0xB0, 0x01, 0x20, 0x00
-	.byte 0x21, 0x00, 0x22, 0x00, 0x00, 0x23, 0x00, 0x24, 0x00, 0x25, 0x00, 0x26, 0x00, 0x00, 0x27, 0x00
-	.byte 0x27, 0x04, 0x26, 0x04, 0x25, 0x04, 0x00, 0x24, 0x04, 0x23, 0x04, 0x22, 0x04, 0x21, 0x04, 0x60
-	.byte 0x20, 0xF0, 0x3F, 0xC0, 0x01, 0x18, 0x00, 0x19, 0x00, 0x1A, 0x00, 0x00, 0x1B, 0x00, 0x1C, 0x00
-	.byte 0x1D, 0x00, 0x1E, 0x00, 0x00, 0x1F, 0x00, 0x1F, 0x04, 0x1E, 0x04, 0x1D, 0x00, 0x04, 0x1C, 0x04
-	.byte 0x1B, 0x04, 0x1A, 0x04, 0x19, 0x30, 0x04, 0x18, 0xF0, 0x3F, 0xC0, 0x01, 0x28, 0x00, 0x29, 0x00
-	.byte 0x00, 0x2A, 0x00, 0x2B, 0x00, 0x2C, 0x00, 0x2D, 0x00, 0x00, 0x2E, 0x00, 0x2F, 0x00, 0x2F, 0x04
-	.byte 0x2E, 0x04, 0x00, 0x2D, 0x04, 0x2C, 0x04, 0x2B, 0x04, 0x2A, 0x04, 0x1F, 0x29, 0x04, 0x28, 0xF0
-	.byte 0x3F, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01
-	.byte 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xFF, 0xF0, 0x01, 0xF0, 0x01, 0xF0
-	.byte 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0xF8, 0xF0, 0x01, 0xF0, 0x01
-	.byte 0xF0, 0x01, 0xF0, 0x01, 0xE0, 0x01, 0x00, 0x00, 0x0A, 0xFF
-	@ pret/pokeemerald-jp direct xref for 0x082D28A6: main_menu.s: Task_NewGameBirchSpeech_FadePlatformIn, Task_NewGameBirchSpeech_FadePlatformOut
+	.incbin "build/graphics/raw_cleanup/main_menu/birch_speech_bg.bin.lz"
+	.if (. - sLz77Block_082D277C) > 0x12A
+	.error "sLz77Block_082D277C exceeds its exact ROM slot"
+	.endif
+	@ Compatibility aliases for the old generated split inside
+	@ sBirchSpeechBgGradientPal. These emit no bytes.
 	.globl gMainMenuData_082D28A6
-gMainMenuData_082D28A6:
+	.set gMainMenuData_082D28A6, sBirchSpeechBgGradientPal
 	.globl gUnknown_82D28A6
-gUnknown_82D28A6: @ 0x082D28A6
-	@ analyzed canonical ROM range 0x082D28A6-0x082D28A7
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xFF, 0x53
-	@ pret/pokeemerald-jp direct xref for 0x082D28A8: main_menu.s: CB2_NewGameBirchSpeech_ReturnFromNamingScreen
+	.set gUnknown_82D28A6, sBirchSpeechBgGradientPal
+
 	.globl gMainMenuData_082D28A8
-gMainMenuData_082D28A8:
+	.set gMainMenuData_082D28A8, sBirchSpeechBgGradientPal + 2
 	.globl gUnknown_82D28A8
-gUnknown_82D28A8: @ 0x082D28A8
-	@ analyzed canonical ROM range 0x082D28A8-0x082D28B5
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x37FF, 0x2F7B, 0x26F7, 0x1E73, 0x19EF, 0x116B, 0x08E7
+	.set gUnknown_82D28A8, sBirchSpeechBgGradientPal + 2
+
 	.globl gUnknown_82D28B6
-gUnknown_82D28B6: @ 0x082D28B6
-	.space 0x12, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x082D28C8: main_menu.s: InitMainMenu, Task_DisplayMainMenu
+	.set gUnknown_82D28B6, sBirchSpeechBgGradientPal + 0x10
+
+	.globl sBirchSpeechBgGradientPal
+sBirchSpeechBgGradientPal: @ 0x082D28A6
+	.incbin "build/graphics/raw_cleanup/main_menu/birch_speech_bg_gradient.gbapal"
+	.if (. - sBirchSpeechBgGradientPal) != 0x20
+	.error "sBirchSpeechBgGradientPal size mismatch"
+	.endif
+	.2byte 0 @ alignment
+	.globl gMainMenuData_082D28A6
+gMainMenuData_082D28A6 = sBirchSpeechBgGradientPal
+	.globl gUnknown_82D28A6
+gUnknown_82D28A6 = sBirchSpeechBgGradientPal
+	.globl sWindowTemplates_MainMenu
+sWindowTemplates_MainMenu: @ 0x082D28C8
+	window_template 0, 2, 1, 26, 2, 15, 0x001
+	window_template 0, 2, 5, 26, 2, 15, 0x035
+	window_template 0, 2, 1, 26, 6, 15, 0x001
+	window_template 0, 2, 9, 26, 2, 15, 0x09D
+	window_template 0, 2, 13, 26, 2, 15, 0x0D1
+	window_template 0, 2, 17, 26, 2, 15, 0x105
+	window_template 0, 2, 21, 26, 2, 15, 0x139
+	window_template 0, 2, 15, 26, 4, 15, 0x16D
+	null_window_template
+
 	.globl gMainMenuData_082D28C8
-gMainMenuData_082D28C8:
-	.globl gUnknown_82D28C8
-gUnknown_82D28C8: @ 0x082D28C8
-	@ analyzed canonical ROM range 0x082D28C8-0x082D28D7
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0200, 0x1A01, 0x0F02, 0x0001, 0x0200, 0x1A05, 0x0F02, 0x0035
-	@ pret/pokeemerald-jp direct xref for 0x082D28D8: main_menu.s: Task_DisplayMainMenu
+gMainMenuData_082D28C8 = sWindowTemplates_MainMenu
 	.globl gMainMenuData_082D28D8
-gMainMenuData_082D28D8:
-	.globl gUnknown_82D28D8
-gUnknown_82D28D8: @ 0x082D28D8
-	@ analyzed canonical ROM range 0x082D28D8-0x082D28FF
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0200, 0x1A01, 0x0F06, 0x0001, 0x0200, 0x1A09, 0x0F02, 0x009D
-	.2byte 0x0200, 0x1A0D, 0x0F02, 0x00D1, 0x0200, 0x1A11, 0x0F02, 0x0105
-	.2byte 0x0200, 0x1A15, 0x0F02, 0x0139
-	@ pret/pokeemerald-jp direct xref for 0x082D2900: main_menu.s: CreateMainMenuErrorWindow, Task_WaitForBatteryDryErrorWindow, Task_WaitForSaveFileErrorWindow
+gMainMenuData_082D28D8 = sWindowTemplates_MainMenu + 0x10
 	.globl gMainMenuData_082D2900
-gMainMenuData_082D2900:
+gMainMenuData_082D2900 = sWindowTemplates_MainMenu + 0x38
+	.globl gUnknown_82D28C8
+gUnknown_82D28C8 = sWindowTemplates_MainMenu
+	.globl gUnknown_82D28D8
+gUnknown_82D28D8 = sWindowTemplates_MainMenu + 0x10
 	.globl gUnknown_82D2900
-gUnknown_82D2900: @ 0x082D2900
-	@ analyzed canonical ROM range 0x082D2900-0x082D290F
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0200, 0x1A0F, 0x0F04, 0x016D, 0x00FF, 0x0000, 0x0000, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x082D2910: main_menu.s: CB2_NewGameBirchSpeech_ReturnFromNamingScreen, Task_NewGameBirchSpeech_WaitForSpriteFadeInWelcome
+gUnknown_82D2900 = sWindowTemplates_MainMenu + 0x38
+
+	.globl sNewGameBirchSpeechTextWindows
+sNewGameBirchSpeechTextWindows: @ 0x082D2910
+	window_template 0, 4, 15, 22, 4, 15, 0x001
+	window_template 0, 3, 5, 5, 4, 15, 0x059
+	window_template 0, 3, 2, 9, 10, 15, 0x06D
+	null_window_template
+
 	.globl gMainMenuData_082D2910
-gMainMenuData_082D2910:
-	.globl gUnknown_82D2910
-gUnknown_82D2910: @ 0x082D2910
-	@ analyzed canonical ROM range 0x082D2910-0x082D2917
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0400, 0x160F, 0x0F04, 0x0001
-	@ pret/pokeemerald-jp direct xref for 0x082D2918: main_menu.s: NewGameBirchSpeech_ShowGenderMenu
+gMainMenuData_082D2910 = sNewGameBirchSpeechTextWindows
 	.globl gMainMenuData_082D2918
-gMainMenuData_082D2918:
+gMainMenuData_082D2918 = sNewGameBirchSpeechTextWindows + 8
+	.globl gUnknown_82D2910
+gUnknown_82D2910 = sNewGameBirchSpeechTextWindows
 	.globl gUnknown_82D2918
-gUnknown_82D2918: @ 0x082D2918
-	@ analyzed canonical ROM range 0x082D2918-0x082D292F
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0300, 0x0505, 0x0F04, 0x0059, 0x0300, 0x0902, 0x0F0A, 0x006D
-	.2byte 0x00FF, 0x0000, 0x0000, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x082D2930: main_menu.s: InitMainMenu
+gUnknown_82D2918 = sNewGameBirchSpeechTextWindows + 8
+	.globl sMainMenuBgPal
+sMainMenuBgPal: @ 0x082D2930
+	.incbin "build/graphics/raw_cleanup/main_menu/main_menu_bg.gbapal"
+	.if (. - sMainMenuBgPal) != 0x20
+	.error "sMainMenuBgPal size mismatch"
+	.endif
+
+	.globl sMainMenuTextPal
+sMainMenuTextPal: @ 0x082D2950
+	.incbin "build/graphics/raw_cleanup/main_menu/main_menu_text.gbapal"
+	.if (. - sMainMenuTextPal) != 0x20
+	.error "sMainMenuTextPal size mismatch"
+	.endif
+
+	.set MAIN_MENU_TEXT_DYNAMIC_COLOR_1, 10
+	.set MAIN_MENU_TEXT_COLOR_WHITE, 1
+	.set MAIN_MENU_TEXT_DYNAMIC_COLOR_2, 11
+	.set MAIN_MENU_TEXT_DYNAMIC_COLOR_3, 12
+	.globl sTextColor_Headers
+sTextColor_Headers: @ 0x082D2970
+	.byte MAIN_MENU_TEXT_DYNAMIC_COLOR_1, MAIN_MENU_TEXT_DYNAMIC_COLOR_2, MAIN_MENU_TEXT_DYNAMIC_COLOR_3
+	.globl sTextColor_MenuInfo
+sTextColor_MenuInfo: @ 0x082D2973
+	.byte MAIN_MENU_TEXT_DYNAMIC_COLOR_1, MAIN_MENU_TEXT_COLOR_WHITE, MAIN_MENU_TEXT_DYNAMIC_COLOR_3
+	.2byte 0 @ alignment
+
+	.globl sMainMenuBgTemplates
+sMainMenuBgTemplates: @ 0x082D2978
+	bg_template 0, 2, 30, 0, 0, 0, 0
+	bg_template 1, 0, 7, 0, 0, 3, 0
+	.globl sBirchBgTemplate
+sBirchBgTemplate: @ 0x082D2980
+	bg_template 0, 3, 30, 0, 0, 0, 0
+
+	.globl sScrollArrowsTemplate_MainMenu
+sScrollArrowsTemplate_MainMenu: @ 0x082D2984
+	.byte 2, 0x78, 8, 3, 0x78, 0x98
+	.2byte 3, 4, 1, 1
+	.byte 0, 0 @ palNum, compiler padding
+
+	.globl sSpriteAffineAnim_PlayerShrink
+sSpriteAffineAnim_PlayerShrink: @ 0x082D2994
+	@ struct AffineAnimFrameCmd: s16 xScale, s16 yScale, u8 rotation, u8 duration
+	.2byte -2, -2
+	.byte 0, 0x30
+	.2byte 0 @ original structure/alignment padding
+	rodata_affine_anim_end
+	.globl sSpriteAffineAnimTable_PlayerShrink
+sSpriteAffineAnimTable_PlayerShrink: @ 0x082D29A4
+	.4byte sSpriteAffineAnim_PlayerShrink
+
 	.globl gMainMenuData_082D2930
-gMainMenuData_082D2930:
-	.globl gUnknown_82D2930
-gUnknown_82D2930: @ 0x082D2930
-	@ analyzed canonical ROM range 0x082D2930-0x082D294F
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x51, 0x7E, 0xFF, 0x7F, 0xE6, 0x28, 0x8B, 0x39, 0x21, 0x08, 0x72, 0x56, 0x79, 0x77, 0xD6, 0x5E
-	.byte 0x37, 0x6F, 0x84, 0x18, 0x0F, 0x46, 0x46, 0x3D, 0xE5, 0x61, 0x27, 0x6A, 0x8B, 0x72, 0x11, 0x7B
-	@ pret/pokeemerald-jp direct xref for 0x082D2950: main_menu.s: InitMainMenu
+gMainMenuData_082D2930 = sMainMenuBgPal
 	.globl gMainMenuData_082D2950
-gMainMenuData_082D2950:
-	.globl gUnknown_82D2950
-gUnknown_82D2950: @ 0x082D2950
-	@ analyzed canonical ROM range 0x082D2950-0x082D296F
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xFF, 0x7F, 0xFF, 0x7F, 0x8C, 0x31, 0x5A, 0x67, 0x3C, 0x04, 0xFF, 0x3A, 0x64, 0x06, 0xD2, 0x4B
-	.byte 0x46, 0x65, 0x14, 0x7B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x082D2970: main_menu.s: Task_DisplayMainMenu
+gMainMenuData_082D2950 = sMainMenuTextPal
 	.globl gMainMenuData_082D2970
-gMainMenuData_082D2970:
-	.globl gUnknown_82D2970
-gUnknown_82D2970: @ 0x082D2970
-	@ analyzed canonical ROM range 0x082D2970-0x082D2972
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x0A, 0x0B, 0x0C
-	@ pret/pokeemerald-jp direct xref for 0x082D2973: main_menu.s: MainMenu_FormatSavegameBadges, MainMenu_FormatSavegamePlayer, MainMenu_FormatSavegamePokedex, MainMenu_FormatSavegameTime
+gMainMenuData_082D2970 = sTextColor_Headers
 	.globl gMainMenuData_082D2973
-gMainMenuData_082D2973:
-	.globl gUnknown_82D2973
-gUnknown_82D2973: @ 0x082D2973
-	@ analyzed canonical ROM range 0x082D2973-0x082D2977
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x0A, 0x01, 0x0C, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x082D2978: main_menu.s: CB2_NewGameBirchSpeech_ReturnFromNamingScreen, InitMainMenu
+gMainMenuData_082D2973 = sTextColor_MenuInfo
 	.globl gMainMenuData_082D2978
-gMainMenuData_082D2978:
-	.globl gUnknown_82D2978
-gUnknown_82D2978: @ 0x082D2978
-	@ analyzed canonical ROM range 0x082D2978-0x082D297F
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x01E8, 0x0000, 0x3071, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x082D2980: main_menu.s: CB2_NewGameBirchSpeech_ReturnFromNamingScreen, sub_0803058C
+gMainMenuData_082D2978 = sMainMenuBgTemplates
 	.globl gMainMenuData_082D2980
-gMainMenuData_082D2980:
-	.globl gUnknown_82D2980
-gUnknown_82D2980: @ 0x082D2980
-	@ analyzed canonical ROM range 0x082D2980-0x082D2983
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xEC, 0x01, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x082D2984: main_menu.s: Task_DisplayMainMenu
+gMainMenuData_082D2980 = sBirchBgTemplate
 	.globl gMainMenuData_082D2984
-gMainMenuData_082D2984:
-	.globl gUnknown_82D2984
-gUnknown_82D2984: @ 0x082D2984
-	@ analyzed canonical ROM range 0x082D2984-0x082D29A3
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x7802, 0x0308, 0x9878, 0x0003, 0x0004, 0x0001, 0x0001, 0x0000
-	.2byte 0xFFFE, 0xFFFE, 0x3000, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x082D29A4: main_menu.s: Task_NewGameBirchSpeech_ShrinkPlayer
+gMainMenuData_082D2984 = sScrollArrowsTemplate_MainMenu
 	.globl gMainMenuData_082D29A4
-gMainMenuData_082D29A4:
+gMainMenuData_082D29A4 = sSpriteAffineAnimTable_PlayerShrink
+	.globl gUnknown_82D2930
+gUnknown_82D2930 = sMainMenuBgPal
+	.globl gUnknown_82D2950
+gUnknown_82D2950 = sMainMenuTextPal
+	.globl gUnknown_82D2970
+gUnknown_82D2970 = sTextColor_Headers
+	.globl gUnknown_82D2973
+gUnknown_82D2973 = sTextColor_MenuInfo
+	.globl gUnknown_82D2978
+gUnknown_82D2978 = sMainMenuBgTemplates
+	.globl gUnknown_82D2980
+gUnknown_82D2980 = sBirchBgTemplate
+	.globl gUnknown_82D2984
+gUnknown_82D2984 = sScrollArrowsTemplate_MainMenu
 	.globl gUnknown_82D29A4
-gUnknown_82D29A4: @ 0x082D29A4
-	@ analyzed canonical ROM range 0x082D29A4-0x082D29A7
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x94, 0x29, 0x2D, 0x08
+gUnknown_82D29A4 = sSpriteAffineAnimTable_PlayerShrink
 	.globl gUnknown_82D29A8
 gUnknown_82D29A8: @ 0x082D29A8
 	.4byte gText_Rom_5C8E92

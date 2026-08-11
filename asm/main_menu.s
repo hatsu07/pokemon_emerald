@@ -142,8 +142,8 @@ _0802F438: .4byte 0x8100C000
 _0802F43C: .4byte 0x85000100
 _0802F440: .4byte 0x05000002
 _0802F444: .4byte 0x810001FF
-_0802F448: .4byte gMainMenuData_082D2930
-_0802F44C: .4byte gMainMenuData_082D2950
+_0802F448: .4byte sMainMenuBgPal
+_0802F44C: .4byte sMainMenuTextPal
 _0802F450:
 	movs r0, #1
 	rsbs r0, r0, #0
@@ -227,8 +227,8 @@ _0802F462:
 	bx r1
 	.align 2, 0
 _0802F520: .4byte 0x0000FFFF
-_0802F524: .4byte gMainMenuData_082D2978
-_0802F528: .4byte gMainMenuData_082D28C8
+_0802F524: .4byte sMainMenuBgTemplates
+_0802F528: .4byte sWindowTemplates_MainMenu
 _0802F52C: .4byte 0x000001D5
 _0802F530: .4byte 0x0802F32D
 _0802F534: .4byte 0x0802F315
@@ -503,7 +503,7 @@ _0802F754:
 	bx r0
 	.align 2, 0
 _0802F75C: .4byte 0x03002360
-_0802F760: .4byte gMainMenuData_082D2900
+_0802F760: .4byte sWindowTemplates_MainMenu + 0x38
 _0802F764: .4byte 0x03005B60
 _0802F768: .4byte 0x0802F76D
 	thumb_func_end Task_WaitForBatteryDryErrorWindow
@@ -613,7 +613,7 @@ _0802F848:
 	bx r0
 	.align 2, 0
 _0802F850: .4byte 0x03002360
-_0802F854: .4byte gMainMenuData_082D2900
+_0802F854: .4byte sWindowTemplates_MainMenu + 0x38
 _0802F858: .4byte 0x03005B60
 _0802F85C: .4byte 0x0802F861
 	thumb_func_end Task_WaitForSaveFileErrorWindow
@@ -793,10 +793,10 @@ _0802F978:
 	.align 2, 0
 _0802F9E4: .4byte 0x0000547F
 _0802F9E8: .4byte 0x03005B60
-_0802F9EC: .4byte gMainMenuData_082D2970
+_0802F9EC: .4byte sTextColor_Headers
 _0802F9F0: .4byte 0x085C8C70
 _0802F9F4: .4byte 0x085C8C87
-_0802F9F8: .4byte gMainMenuData_082D28C8
+_0802F9F8: .4byte sWindowTemplates_MainMenu
 _0802F9FC: .4byte 0x000001D5
 _0802FA00:
 	movs r0, #2
@@ -866,11 +866,11 @@ _0802FA00:
 	adds r4, #0x10
 	b _0802FBDC
 	.align 2, 0
-_0802FAA4: .4byte gMainMenuData_082D2970
+_0802FAA4: .4byte sTextColor_Headers
 _0802FAA8: .4byte 0x085C8C7C
 _0802FAAC: .4byte 0x085C8C70
 _0802FAB0: .4byte 0x085C8C87
-_0802FAB4: .4byte gMainMenuData_082D28D8
+_0802FAB4: .4byte sWindowTemplates_MainMenu + 0x10
 _0802FAB8: .4byte 0x000001D5
 _0802FABC:
 	movs r0, #2
@@ -915,7 +915,7 @@ _0802FABC:
 	ldr r0, _0802FB28
 	b _0802FB3A
 	.align 2, 0
-_0802FB1C: .4byte gMainMenuData_082D2970
+_0802FB1C: .4byte sTextColor_Headers
 _0802FB20: .4byte 0x085C8C7C
 _0802FB24: .4byte 0x085C8C70
 _0802FB28: .4byte 0x085C8C91
@@ -1001,9 +1001,9 @@ _0802FBDC:
 	b _0802FD5E
 	.align 2, 0
 _0802FBE8: .4byte 0x085C8C9C
-_0802FBEC: .4byte gMainMenuData_082D2970
+_0802FBEC: .4byte sTextColor_Headers
 _0802FBF0: .4byte 0x085C8C87
-_0802FBF4: .4byte gMainMenuData_082D28D8
+_0802FBF4: .4byte sWindowTemplates_MainMenu + 0x10
 _0802FBF8: .4byte 0x000001D5
 _0802FBFC:
 	movs r0, #2
@@ -1171,15 +1171,15 @@ _0802FD6C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802FD7C: .4byte gMainMenuData_082D2970
+_0802FD7C: .4byte sTextColor_Headers
 _0802FD80: .4byte 0x085C8C7C
 _0802FD84: .4byte 0x085C8C70
 _0802FD88: .4byte 0x085C8C9C
 _0802FD8C: .4byte 0x085C8CA7
 _0802FD90: .4byte 0x085C8C87
-_0802FD94: .4byte gMainMenuData_082D28D8
+_0802FD94: .4byte sWindowTemplates_MainMenu + 0x10
 _0802FD98: .4byte 0x000001D5
-_0802FD9C: .4byte gMainMenuData_082D2984
+_0802FD9C: .4byte sScrollArrowsTemplate_MainMenu
 _0802FDA0: .4byte 0x020229BA
 _0802FDA4: .4byte 0x081AF275
 _0802FDA8: .4byte 0x03005B60
@@ -2205,11 +2205,11 @@ sub_0803058C: @ 0x0803058C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080305D0: .4byte gMainMenuData_082D2980
-_080305D4: .4byte gMainMenuData_082D25C8
-_080305D8: .4byte gMainMenuData_082D277C
+_080305D0: .4byte sBirchBgTemplate
+_080305D4: .4byte sBirchSpeechShadowGfx
+_080305D8: .4byte sBirchSpeechBgMap
 _080305DC: .4byte 0x06003800
-_080305E0: .4byte gMainMenuData_082D2588
+_080305E0: .4byte sBirchSpeechBgPals
 _080305E4: .4byte 0x082D28B6
 _080305E8: .4byte 0x03005B60
 _080305EC: .4byte 0x080305F1
@@ -2347,7 +2347,7 @@ _080306F6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080306FC: .4byte gMainMenuData_082D2910
+_080306FC: .4byte sNewGameBirchSpeechTextWindows
 _08030700: .4byte 0x02021C7C
 _08030704: .4byte gText_Birch_Welcome
 _08030708: .4byte 0x0803070D
@@ -3844,7 +3844,7 @@ _0803129C:
 	.align 2, 0
 _080312A8: .4byte 0x03005B60
 _080312AC: .4byte 0x020205AC
-_080312B0: .4byte gMainMenuData_082D29A4
+_080312B0: .4byte sSpriteAffineAnimTable_PlayerShrink
 _080312B4: .4byte 0x08031619
 _080312B8: .4byte 0x0000FFFF
 _080312BC: .4byte 0x080312C1
@@ -4094,17 +4094,17 @@ CB2_NewGameBirchSpeech_ReturnFromNamingScreen: @ 0x080313B8
 	ldrb r3, [r4, #0x1e]
 	b _08031520
 	.align 2, 0
-_080314E0: .4byte gMainMenuData_082D2978
-_080314E4: .4byte gMainMenuData_082D2980
+_080314E0: .4byte sMainMenuBgTemplates
+_080314E4: .4byte sBirchBgTemplate
 _080314E8: .4byte 0x040000D4
 _080314EC: .4byte 0x8100C000
 _080314F0: .4byte 0x85000100
 _080314F4: .4byte 0x81000200
-_080314F8: .4byte gMainMenuData_082D25C8
-_080314FC: .4byte gMainMenuData_082D277C
+_080314F8: .4byte sBirchSpeechShadowGfx
+_080314FC: .4byte sBirchSpeechBgMap
 _08031500: .4byte 0x06003800
-_08031504: .4byte gMainMenuData_082D2588
-_08031508: .4byte gMainMenuData_082D28A8
+_08031504: .4byte sBirchSpeechBgPals
+_08031508: .4byte sBirchSpeechBgGradientPal + 2
 _0803150C: .4byte 0x080324B5
 _08031510: .4byte 0x03005B60
 _08031514: .4byte 0x0000FFC4
@@ -4208,7 +4208,7 @@ _08031600: .4byte 0x04000208
 _08031604: .4byte 0x04000200
 _08031608: .4byte 0x0802F32D
 _0803160C: .4byte 0x0802F315
-_08031610: .4byte gMainMenuData_082D2910
+_08031610: .4byte sNewGameBirchSpeechTextWindows
 	thumb_func_end CB2_NewGameBirchSpeech_ReturnFromNamingScreen
 
 	thumb_func_start SpriteCB_Null
@@ -4697,7 +4697,7 @@ _080319BC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080319C4: .4byte gMainMenuData_082D28A6
+_080319C4: .4byte sBirchSpeechBgGradientPal
 	thumb_func_end Task_NewGameBirchSpeech_FadePlatformIn
 
 	thumb_func_start NewGameBirchSpeech_StartFadePlatformIn
@@ -4790,7 +4790,7 @@ _08031A68:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08031A70: .4byte gMainMenuData_082D28A6
+_08031A70: .4byte sBirchSpeechBgGradientPal
 	thumb_func_end Task_NewGameBirchSpeech_FadePlatformOut
 
 	thumb_func_start NewGameBirchSpeech_StartFadePlatformOut
@@ -4871,7 +4871,7 @@ NewGameBirchSpeech_ShowGenderMenu: @ 0x08031AB4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08031B18: .4byte gMainMenuData_082D2918
+_08031B18: .4byte sNewGameBirchSpeechTextWindows + 8
 _08031B1C: .4byte 0x082D29A8
 	thumb_func_end NewGameBirchSpeech_ShowGenderMenu
 
@@ -4969,7 +4969,7 @@ CreateMainMenuErrorWindow: @ 0x08031B84
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08031BD8: .4byte gMainMenuData_082D2900
+_08031BD8: .4byte sWindowTemplates_MainMenu + 0x38
 _08031BDC: .4byte 0x000001D5
 _08031BE0: .4byte 0x000009E7
 _08031BE4: .4byte 0x0000719F
@@ -5019,7 +5019,7 @@ _08031C38: .4byte 0x02021C40
 _08031C3C: .4byte 0x03005AF0
 _08031C40: .4byte 0x02021C7C
 _08031C44: .4byte 0x085CCCBD
-_08031C48: .4byte gMainMenuData_082D2973
+_08031C48: .4byte sTextColor_MenuInfo
 	thumb_func_end MainMenu_FormatSavegamePlayer
 
 	thumb_func_start MainMenu_FormatSavegameTime
@@ -5064,7 +5064,7 @@ _08031C9C: .4byte 0x03005AF0
 _08031CA0: .4byte 0x02021C54
 _08031CA4: .4byte 0x02021C7C
 _08031CA8: .4byte 0x085CCCC7
-_08031CAC: .4byte gMainMenuData_082D2973
+_08031CAC: .4byte sTextColor_MenuInfo
 	thumb_func_end MainMenu_FormatSavegameTime
 
 	thumb_func_start MainMenu_FormatSavegamePokedex
@@ -5119,7 +5119,7 @@ _08031D0E:
 _08031D18: .4byte 0x02021C40
 _08031D1C: .4byte 0x02021C7C
 _08031D20: .4byte 0x085CCCD4
-_08031D24: .4byte gMainMenuData_082D2973
+_08031D24: .4byte sTextColor_MenuInfo
 	thumb_func_end MainMenu_FormatSavegamePokedex
 
 	thumb_func_start MainMenu_FormatSavegameBadges
@@ -5173,7 +5173,7 @@ _08031D88: .4byte 0x0000086E
 _08031D8C: .4byte 0x02021C40
 _08031D90: .4byte 0x02021C7C
 _08031D94: .4byte 0x085CCCE1
-_08031D98: .4byte gMainMenuData_082D2973
+_08031D98: .4byte sTextColor_MenuInfo
 	thumb_func_end MainMenu_FormatSavegameBadges
 
 	thumb_func_start LoadMainMenuWindowFrameTiles

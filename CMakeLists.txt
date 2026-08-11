@@ -524,6 +524,42 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
 
     elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/raw_cleanup/(.+)\\.4bpp\\.lz$")
+        set(RAW_CLEAN_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/raw_cleanup/${RAW_CLEAN_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/raw_cleanup_exact_assets.py"
+                repack-png --key "${RAW_CLEAN_STEM}.4bpp.lz" "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${CMAKE_SOURCE_DIR}/tools/raw_cleanup_exact_assets.py" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/raw_cleanup/(.+)\\.bin\\.lz$")
+        set(RAW_CLEAN_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_INC "${CMAKE_SOURCE_DIR}/graphics/raw_cleanup/${RAW_CLEAN_STEM}.tilemap.inc")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/raw_cleanup_exact_assets.py"
+                repack-inc --key "${RAW_CLEAN_STEM}.bin.lz" "${INPUT_INC}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_INC}" "${CMAKE_SOURCE_DIR}/tools/raw_cleanup_exact_assets.py" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/raw_cleanup/(.+)\\.gbapal$")
+        set(RAW_CLEAN_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/raw_cleanup/${RAW_CLEAN_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/raw_cleanup_exact_assets.py"
+                encode-palette "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${CMAKE_SOURCE_DIR}/tools/raw_cleanup_exact_assets.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/battle_interface/(.+)\\.4bpp\\.lz$")
         set(STEM "${CMAKE_MATCH_1}")
         set(INPUT_PNG
