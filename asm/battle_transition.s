@@ -1588,7 +1588,7 @@ Phase2_Kyogre_Func3: @ 0x08146B3C
 	.align 2, 0
 _08146B7C: .4byte 0x01000400
 _08146B80: .4byte gBattleTransitionData_0859D5E4
-_08146B84: .4byte gBattleTransitionData_0859DC98
+_08146B84: .4byte gBattleTransitionKyogre_Tilemap
 	thumb_func_end Phase2_Kyogre_Func3
 
 	thumb_func_start Phase2_Kyogre_Func4
@@ -6668,8 +6668,8 @@ Phase2_Groudon_Func3: @ 0x08149238
 	bx r1
 	.align 2, 0
 _0814927C: .4byte 0x01000400
-_08149280: .4byte gBattleTransitionData_0859DFCC
-_08149284: .4byte gBattleTransitionData_0859E538
+_08149280: .4byte gBattleTransitionGroudon_Gfx
+_08149284: .4byte gBattleTransitionGroudon_Tilemap
 	thumb_func_end Phase2_Groudon_Func3
 
 	thumb_func_start Phase2_Groudon_Func4

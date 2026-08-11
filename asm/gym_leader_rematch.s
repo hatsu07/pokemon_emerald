@@ -32,7 +32,7 @@ UpdateGymLeaderRematch: @ 0x081D9DCC
 	b _081D9E1A
 	.align 2, 0
 _081D9E08: .4byte 0x00000864
-_081D9E0C: .4byte gGymLeaderRematchData_085FC01C
+_081D9E0C: .4byte gGymLeaderRematches_AfterNewMauville
 _081D9E10:
 	ldr r0, _081D9E20
 	movs r1, #7
@@ -42,7 +42,7 @@ _081D9E1A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D9E20: .4byte gGymLeaderRematchData_085FC02C
+_081D9E20: .4byte gGymLeaderRematches_BeforeNewMauville
 	thumb_func_end UpdateGymLeaderRematch
 
 	thumb_func_start UpdateGymLeaderRematchFromArray

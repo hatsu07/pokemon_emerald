@@ -468,7 +468,7 @@ _080C6B38:
 	bl CopyWindowToVram
 	b _080C6BA4
 	.align 2, 0
-_080C6B94: .4byte gPokemonStorageSystemData_0854B1E4
+_080C6B94: .4byte gPokemonStorageMainMenuTexts
 _080C6B98:
 	bl IsWeatherNotFadingIn
 	lsls r0, r0, #0x18
@@ -568,7 +568,7 @@ _080C6C1E:
 	b _080C6DF6
 	.align 2, 0
 _080C6C54: .4byte 0x03002360
-_080C6C58: .4byte gPokemonStorageSystemData_0854B1E4
+_080C6C58: .4byte gPokemonStorageMainMenuTexts
 _080C6C5C:
 	ldrh r0, [r5, #0x26]
 	lsls r0, r0, #0x18
@@ -662,7 +662,7 @@ _080C6CF6:
 	b _080C6DB4
 	.align 2, 0
 _080C6D20: .4byte 0x03002360
-_080C6D24: .4byte gPokemonStorageSystemData_0854B1E4
+_080C6D24: .4byte gPokemonStorageMainMenuTexts
 _080C6D28:
 	movs r0, #0x40
 	ands r0, r1
@@ -699,7 +699,7 @@ _080C6D44:
 	str r4, [sp]
 	b _080C6DB4
 	.align 2, 0
-_080C6D70: .4byte gPokemonStorageSystemData_0854B1E4
+_080C6D70: .4byte gPokemonStorageMainMenuTexts
 _080C6D74:
 	movs r0, #0x80
 	ands r0, r1
@@ -745,7 +745,7 @@ _080C6DBE:
 	strh r4, [r5, #8]
 	b _080C6DF6
 	.align 2, 0
-_080C6DCC: .4byte gPokemonStorageSystemData_0854B1E4
+_080C6DCC: .4byte gPokemonStorageMainMenuTexts
 _080C6DD0:
 	ldr r0, _080C6E00
 	ldrb r1, [r0, #7]
@@ -893,8 +893,8 @@ sub_080C6E88: @ 0x080C6E88
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C6F08: .4byte gPokemonStorageSystemData_0854B20C
-_080C6F0C: .4byte gPokemonStorageSystemData_0854B1E4
+_080C6F08: .4byte gPokemonStorageMainMenuWindowTemplate
+_080C6F0C: .4byte gPokemonStorageMainMenuTexts
 	thumb_func_end sub_080C6E88
 
 	thumb_func_start Cb2_ExitPSS
@@ -1510,7 +1510,7 @@ _080C73B4: .4byte 0x0854B258
 _080C73B8: .4byte 0x020399A4
 _080C73BC: .4byte 0x00000242
 _080C73C0: .4byte 0x020205AC
-_080C73C4: .4byte gPokemonStorageSystemData_0854B234
+_080C73C4: .4byte gPokemonStorageAnims_ChooseBoxMenu
 _080C73C8: .4byte 0x00000246
 _080C73CC: .4byte 0x080C7591
 	thumb_func_end sub_080C71F0

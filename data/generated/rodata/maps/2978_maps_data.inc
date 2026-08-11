@@ -1,34 +1,25 @@
 	@ pret/pokeemerald-jp direct xref for 0x0859DC98: battle_transition.s: Phase2_Kyogre_Func3
-	.globl gBattleTransitionData_0859DC98
-gBattleTransitionData_0859DC98:
-	.globl gUnknown_859DC98
-gUnknown_859DC98: @ 0x0859DC98
-	@ analyzed canonical ROM range 0x0859DC98-0x0859DFCB
-	.incbin "build/graphics/analyzed/gunknown_859dc98_0859dc98.4bpp.lz"
-	.if (. - gUnknown_859DC98) != 0x334
-	.error "gUnknown_859DC98 compressed size mismatch"
+	@ Priority B: Kyogre transition tilemap.
+	.globl gBattleTransitionKyogre_Tilemap
+gBattleTransitionKyogre_Tilemap: @ 0x0859DC98
+	.incbin "build/graphics/priority_b/battle_transitions/kyogre.bin.lz"
+	.if (. - gBattleTransitionKyogre_Tilemap) != 0x334
+	.error "Kyogre transition tilemap exact slot size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x0859DFCC: battle_transition.s: Phase2_Groudon_Func3
-	.globl gBattleTransitionData_0859DFCC
-gBattleTransitionData_0859DFCC:
-	.globl gUnknown_859DFCC
-gUnknown_859DFCC: @ 0x0859DFCC
-	@ analyzed canonical ROM range 0x0859DFCC-0x0859E537
-	.incbin "build/graphics/analyzed/gunknown_859dfcc_0859dfcc.4bpp.lz"
-	.if (. - gUnknown_859DFCC) != 0x56C
-	.error "gUnknown_859DFCC compressed size mismatch"
+	@ Priority B: Groudon transition tileset.
+	.globl gBattleTransitionGroudon_Gfx
+gBattleTransitionGroudon_Gfx: @ 0x0859DFCC
+	.incbin "build/graphics/priority_b/battle_transitions/groudon.4bpp.lz"
+	.if (. - gBattleTransitionGroudon_Gfx) != 0x56C
+	.error "Groudon transition gfx exact slot size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x0859E538: battle_transition.s: Phase2_Groudon_Func3
-	.globl gBattleTransitionData_0859E538
-gBattleTransitionData_0859E538:
-	.globl gUnknown_859E538
-gUnknown_859E538: @ 0x0859E538
-	@ analyzed canonical ROM range 0x0859E538-0x0859E84F
-	.incbin "build/graphics/analyzed/gunknown_859e538_0859e538.4bpp.lz"
-	.if (. - gUnknown_859E538) != 0x318
-	.error "gUnknown_859E538 compressed size mismatch"
+	@ Priority B: Groudon transition tilemap.
+	.globl gBattleTransitionGroudon_Tilemap
+gBattleTransitionGroudon_Tilemap: @ 0x0859E538
+	.incbin "build/graphics/priority_b/battle_transitions/groudon.bin.lz"
+	.if (. - gBattleTransitionGroudon_Tilemap) != 0x318
+	.error "Groudon transition tilemap exact slot size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x0859E850: battle_transition.s: Phase2_Kyogre_Func4
 	.globl gBattleTransitionData_0859E850
 gBattleTransitionData_0859E850:
 	.globl gUnknown_859E850

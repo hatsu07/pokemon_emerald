@@ -28,11 +28,11 @@ sub_081D9F50: @ 0x081D9F50
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D9F88: .4byte gUnkTransitionData_085FC03C
-_081D9F8C: .4byte gUnkTransitionData_085FC218
-_081D9F90: .4byte gUnkTransitionData_085FC824
-_081D9F94: .4byte gUnkTransitionData_085FCA0C
-_081D9F98: .4byte gUnkTransitionData_085FCA14
+_081D9F88: .4byte gBattleTransitionFrontierLogoCenter_Gfx
+_081D9F8C: .4byte gBattleTransitionFrontierLogoCenter_Tilemap
+_081D9F90: .4byte gBattleTransitionFrontierLogoCircles_Pal
+_081D9F94: .4byte gBattleTransitionFrontierLogoCirclesSpriteSheet
+_081D9F98: .4byte gBattleTransitionFrontierLogoCirclesSpritePalette
 	thumb_func_end sub_081D9F50
 
 	thumb_func_start sub_081D9F9C
@@ -81,7 +81,7 @@ sub_081D9F9C: @ 0x081D9F9C
 	beq _081DA008
 	b _081D9FFC
 	.align 2, 0
-_081D9FF4: .4byte gUnkTransitionData_085FCA40
+_081D9FF4: .4byte gBattleTransitionFrontierLogoCirclesSpriteTemplate
 _081D9FF8:
 	cmp r7, #2
 	beq _081DA034
@@ -284,7 +284,7 @@ sub_081DA10C: @ 0x081DA10C
 	beq _081DA184
 	b _081DA178
 	.align 2, 0
-_081DA170: .4byte gUnkTransitionData_085FCA40
+_081DA170: .4byte gBattleTransitionFrontierLogoCirclesSpriteTemplate
 _081DA174:
 	cmp r5, #2
 	beq _081DA1B0
@@ -674,7 +674,7 @@ _081DA43E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081DA45C: .4byte 0x085FCA58
+_081DA45C: .4byte gBattleTransitionFrontierCirclesMeet_Funcs
 _081DA460: .4byte 0x03005B60
 	thumb_func_end Phase2Task_34
 
@@ -785,7 +785,7 @@ _081DA516:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081DA534: .4byte 0x085FCA6C
+_081DA534: .4byte gBattleTransitionFrontierCirclesCross_Funcs
 _081DA538: .4byte 0x03005B60
 	thumb_func_end Phase2Task_35
 
@@ -896,7 +896,7 @@ _081DA5EE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081DA60C: .4byte 0x085FCA80
+_081DA60C: .4byte gBattleTransitionFrontierCirclesAsymmetricSpiral_Funcs
 _081DA610: .4byte 0x03005B60
 	thumb_func_end Phase2Task_36
 
@@ -1017,7 +1017,7 @@ _081DA6DA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081DA6F8: .4byte 0x085FCA94
+_081DA6F8: .4byte gBattleTransitionFrontierCirclesSymmetricSpiral_Funcs
 _081DA6FC: .4byte 0x03005B60
 	thumb_func_end Phase2Task_37
 
@@ -1140,7 +1140,7 @@ _081DA7CA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081DA7E8: .4byte 0x085FCAA8
+_081DA7E8: .4byte gBattleTransitionFrontierCirclesMeetInSeq_Funcs
 _081DA7EC: .4byte 0x03005B60
 	thumb_func_end Phase2Task_38
 
@@ -1270,7 +1270,7 @@ _081DA8C2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081DA8E0: .4byte 0x085FCABC
+_081DA8E0: .4byte gBattleTransitionFrontierCirclesCrossInSeq_Funcs
 _081DA8E4: .4byte 0x03005B60
 	thumb_func_end Phase2Task_39
 
@@ -1400,7 +1400,7 @@ _081DA9BA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081DA9D8: .4byte 0x085FCAD0
+_081DA9D8: .4byte gBattleTransitionFrontierCirclesAsymmetricSpiralInSeq_Funcs
 _081DA9DC: .4byte 0x03005B60
 	thumb_func_end Phase2Task_40
 
@@ -1534,7 +1534,7 @@ _081DAABA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081DAAD8: .4byte 0x085FCAE4
+_081DAAD8: .4byte gBattleTransitionFrontierCirclesSymmetricSpiralInSeq_Funcs
 _081DAADC: .4byte 0x03005B60
 	thumb_func_end Phase2Task_41
 

@@ -294,48 +294,63 @@ gFrontierPassMapLandmarks: @ 0x0854B174
 	frontier_pass_landmark gPriorityAFrontierPassTextBattlePikeName, gPriorityAFrontierPassTextBattlePikeDesc, 57, 57, 1 @ facility 5
 	frontier_pass_landmark gPriorityAFrontierPassTextBattlePyramidName, gPriorityAFrontierPassTextBattlePyramidDesc, 134, 41, 1 @ facility 6
 	@ pret/pokeemerald-jp direct xref for 0x0854B1E4: pokemon_storage_system.s: Task_PokemonStorageSystemPC, sub_080C6E88
-	.globl gPokemonStorageSystemData_0854B1E4
-gPokemonStorageSystemData_0854B1E4:
-	.globl gUnknown_854B1E4
-gUnknown_854B1E4: @ 0x0854B1E4
-	@ analyzed canonical ROM range 0x0854B1E4-0x0854B20B
-	@ pointer/nullable table
-	.4byte gText_Rom_5CB449 @ +0x0
-	.4byte gText_Rom_5CB47A @ +0x4
-	.4byte 0x085CB455 @ +0x8
-	.4byte 0x085CB4A2 @ +0xC
-	.4byte 0x085CB461 @ +0x10
-	.4byte gText_Rom_5CB4CA @ +0x14
-	.4byte gText_Rom_5CB46D @ +0x18
-	.4byte gText_Rom_5CB4F2 @ +0x1C
-	.4byte gText_Rom_5CB474 @ +0x20
-	.4byte 0x085CB50C @ +0x24
-	@ pret/pokeemerald-jp direct xref for 0x0854B20C: pokemon_storage_system.s: sub_080C6E88
-	.globl gPokemonStorageSystemData_0854B20C
-gPokemonStorageSystemData_0854B20C:
-	.globl gUnknown_854B20C
-gUnknown_854B20C: @ 0x0854B20C
-	@ analyzed canonical ROM range 0x0854B20C-0x0854B233
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0100, 0x1101, 0x0F0A, 0x0001, 0x0000, 0x0005, 0xFFFF, 0x0000
-	.2byte 0x0004, 0x0005, 0xFFFF, 0x0000, 0x0006, 0x0005, 0xFFFF, 0x0000
-	.2byte 0x000A, 0x0005, 0xFFFF, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x0854B234: pokemon_storage_system.s: sub_080C71F0
-	.globl gPokemonStorageSystemData_0854B234
-gPokemonStorageSystemData_0854B234:
-	.globl gUnknown_854B234
-gUnknown_854B234: @ 0x0854B234
-	@ analyzed canonical ROM range 0x0854B234-0x0854B257
-	@ pointer/nullable table
-	.4byte 0x0854B214 @ +0x0
-	.4byte 0x0854B21C @ +0x4
-	.4byte 0x0854B224 @ +0x8
-	.4byte 0x0854B22C @ +0xC
-	.4byte 0x00E000E0 @ +0x10
-	.4byte 0 @ +0x14
-	.4byte 0x00007FFF @ +0x18
-	.4byte 0 @ +0x1C
-	.4byte 0x0854B244 @ +0x20
+	@ Priority B: Pokémon Storage System menu and choose-box animation tables.
+	@ Text aliases are proven by pret table order and JP consumer indexing.
+	.set gPokemonStorageText_WithdrawPokemon, 0x085CB449
+	.set gPokemonStorageText_WithdrawMonDescription, 0x085CB47A
+	.set gPokemonStorageText_DepositPokemon, 0x085CB455
+	.set gPokemonStorageText_DepositMonDescription, 0x085CB4A2
+	.set gPokemonStorageText_MovePokemon, 0x085CB461
+	.set gPokemonStorageText_MoveMonDescription, 0x085CB4CA
+	.set gPokemonStorageText_MoveItems, 0x085CB46D
+	.set gPokemonStorageText_MoveItemsDescription, 0x085CB4F2
+	.set gPokemonStorageText_SeeYa, 0x085CB474
+	.set gPokemonStorageText_SeeYaDescription, 0x085CB50C
+
+	.globl gPokemonStorageMainMenuTexts
+gPokemonStorageMainMenuTexts: @ 0x0854B1E4
+	.4byte gPokemonStorageText_WithdrawPokemon, gPokemonStorageText_WithdrawMonDescription
+	.4byte gPokemonStorageText_DepositPokemon, gPokemonStorageText_DepositMonDescription
+	.4byte gPokemonStorageText_MovePokemon, gPokemonStorageText_MoveMonDescription
+	.4byte gPokemonStorageText_MoveItems, gPokemonStorageText_MoveItemsDescription
+	.4byte gPokemonStorageText_SeeYa, gPokemonStorageText_SeeYaDescription
+
+	.globl gPokemonStorageMainMenuWindowTemplate
+gPokemonStorageMainMenuWindowTemplate: @ 0x0854B20C
+	window_template 0x00, 0x01, 0x01, 0x11, 0x0A, 0x0F, 0x0001
+
+	.globl gPokemonStorageAnim_ChooseBoxMenu_TopLeft
+gPokemonStorageAnim_ChooseBoxMenu_TopLeft: @ 0x0854B214
+	rodata_anim_frame 0, 5, 0, 0
+	rodata_anim_end
+	.globl gPokemonStorageAnim_ChooseBoxMenu_BottomLeft
+gPokemonStorageAnim_ChooseBoxMenu_BottomLeft: @ 0x0854B21C
+	rodata_anim_frame 4, 5, 0, 0
+	rodata_anim_end
+	.globl gPokemonStorageAnim_ChooseBoxMenu_TopRight
+gPokemonStorageAnim_ChooseBoxMenu_TopRight: @ 0x0854B224
+	rodata_anim_frame 6, 5, 0, 0
+	rodata_anim_end
+	.globl gPokemonStorageAnim_ChooseBoxMenu_BottomRight
+gPokemonStorageAnim_ChooseBoxMenu_BottomRight: @ 0x0854B22C
+	rodata_anim_frame 10, 5, 0, 0
+	rodata_anim_end
+
+	.globl gPokemonStorageAnims_ChooseBoxMenu
+gPokemonStorageAnims_ChooseBoxMenu: @ 0x0854B234
+	.4byte gPokemonStorageAnim_ChooseBoxMenu_TopLeft
+	.4byte gPokemonStorageAnim_ChooseBoxMenu_BottomLeft
+	.4byte gPokemonStorageAnim_ChooseBoxMenu_TopRight
+	.4byte gPokemonStorageAnim_ChooseBoxMenu_BottomRight
+
+	.globl gPokemonStorageAffineAnim_ChooseBoxMenu
+gPokemonStorageAffineAnim_ChooseBoxMenu: @ 0x0854B244
+	rodata_affine_anim_frame 0x00E0, 0x00E0, 0, 0
+	rodata_affine_anim_end
+
+	.globl gPokemonStorageAffineAnims_ChooseBoxMenu
+gPokemonStorageAffineAnims_ChooseBoxMenu: @ 0x0854B254
+	.4byte gPokemonStorageAffineAnim_ChooseBoxMenu
 	.globl gUnknown_854B258
 gUnknown_854B258: @ 0x0854B258
 

@@ -1650,7 +1650,7 @@ _081D5820: .4byte 0x00000CB4
 _081D5824: .4byte 0x0000FFFF
 _081D5828: .4byte 0x05000180
 _081D582C: .4byte 0x0203CC20
-_081D5830: .4byte gTrainerHillData_085FB96C
+_081D5830: .4byte gTrainerHillTrainerObjectEventTemplate
 _081D5834: .4byte 0x000003BA
 _081D5838: .4byte 0x000003BB
 _081D583C: .4byte 0x08276D0C
@@ -2035,7 +2035,7 @@ _081D5B12:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081D5B18: .4byte 0x085FB984
+_081D5B18: .4byte gTrainerHillNextFloorMapNums
 	thumb_func_end sub_081D5AD0
 
 	thumb_func_start LocalIdToHillTrainerId
@@ -2300,7 +2300,7 @@ _081D5D06:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D5D14: .4byte gTrainerHillData_085FB994
+_081D5D14: .4byte gTrainerHillTrainerPartySlots
 _081D5D18: .4byte 0x020243E8
 _081D5D1C: .4byte 0x0203CC20
 	thumb_func_end sub_081D5C68
