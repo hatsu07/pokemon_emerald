@@ -127,11 +127,11 @@ gEasyChatGroup_Speech: @ 0x085760D4
 	easy_chat_word_info gText_Rom_575FFB, 7, 1 @ word 7
 	easy_chat_word_info 0x08575FFF, 8, 1 @ word 8
 	easy_chat_word_info gText_Rom_576002, 9, 1 @ word 9
-	easy_chat_word_info gText_Rom_576006, 10, 1 @ word 10
-	easy_chat_word_info 0x08576009, 11, 1 @ word 11
-	easy_chat_word_info 0x0857600C, 12, 1 @ word 12
-	easy_chat_word_info 0x0857600F, 13, 1 @ word 13
-	easy_chat_word_info 0x08576011, 14, 1 @ word 14
+	easy_chat_word_info gEasyChatWord_Speech_Kedo, 10, 1 @ word 10
+	easy_chat_word_info gEasyChatWord_Speech_Koso, 11, 1 @ word 11
+	easy_chat_word_info gEasyChatWord_Speech_Koto, 12, 1 @ word 12
+	easy_chat_word_info gEasyChatWord_Speech_Za, 13, 1 @ word 13
+	easy_chat_word_info gEasyChatWord_Speech_Saa, 14, 1 @ word 14
 	easy_chat_word_info gText_Rom_576014, 15, 1 @ word 15
 	easy_chat_word_info gText_Rom_576019, 16, 1 @ word 16
 	easy_chat_word_info gText_Rom_57601C, 17, 1 @ word 17

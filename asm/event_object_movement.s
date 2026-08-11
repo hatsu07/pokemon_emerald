@@ -12255,7 +12255,7 @@ sub_080923BC: @ 0x080923BC
 	ldr r1, _080923C4
 	b _080923D4
 	.align 2, 0
-_080923C4: .4byte gEventObjectMovementData_084E1900
+_080923C4: .4byte gObjectEventStepAnimTables
 _080923C8:
 	ldr r0, [r1]
 	cmp r0, r2

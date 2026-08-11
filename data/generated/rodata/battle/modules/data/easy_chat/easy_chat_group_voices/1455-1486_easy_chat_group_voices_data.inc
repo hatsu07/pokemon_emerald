@@ -8,11 +8,16 @@ gText_Rom_575C03: @ 0x08575C03
 	.if (. - gText_Rom_575C03) < 0x4
 	.space 0x4 - (. - gText_Rom_575C03)
 	.endif
-	@ analyzed canonical ROM range 0x08575C07-0x08575C08
+
+	@ Priority C: Easy Chat / Voices word 7.
 	.globl gText_Rom_575C07
-gText_Rom_575C07: @ 0x08575C07
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xAE, 0xFF
+gText_Rom_575C07:
+	.globl gEasyChatWord_Voices_Dash
+gEasyChatWord_Voices_Dash: @ 0x08575C07
+	.string "ー$"
+	.if (. - gEasyChatWord_Voices_Dash) != 0x2
+	.error "gEasyChatWord_Voices_Dash must retain its original 2-byte slot"
+	.endif
 	.globl gText_Rom_575C09
 gText_Rom_575C09: @ 0x08575C09
 	.string "ーーー$"

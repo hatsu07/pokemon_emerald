@@ -79,11 +79,33 @@ gText_Rom_576002: @ 0x08576002
 	.if (. - gText_Rom_576002) < 0x4
 	.space 0x4 - (. - gText_Rom_576002)
 	.endif
-	@ analyzed canonical ROM range 0x08576006-0x08576013
+
+	@ Priority C: Easy Chat / Speech words 10-14.
 	.globl gText_Rom_576006
-gText_Rom_576006: @ 0x08576006
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x09, 0x45, 0xFF, 0x0A, 0x0F, 0xFF, 0x0A, 0x14, 0xFF, 0x8C, 0xFF, 0x0B, 0x01, 0xFF
+gText_Rom_576006:
+	.globl gEasyChatWord_Speech_Kedo
+gEasyChatWord_Speech_Kedo: @ 0x08576006
+	.string "けど$"
+
+	.globl gEasyChatWord_Speech_Koso
+gEasyChatWord_Speech_Koso: @ 0x08576009
+	.string "こそ$"
+
+	.globl gEasyChatWord_Speech_Koto
+gEasyChatWord_Speech_Koto: @ 0x0857600C
+	.string "こと$"
+
+	.globl gEasyChatWord_Speech_Za
+gEasyChatWord_Speech_Za: @ 0x0857600F
+	.string "ザ$"
+
+	.globl gEasyChatWord_Speech_Saa
+gEasyChatWord_Speech_Saa: @ 0x08576011
+	.string "さあ$"
+
+	.if (. - gEasyChatWord_Speech_Kedo) != 0xE
+	.error "Easy Chat Speech words 10-14 must retain their original 0xE-byte range"
+	.endif
 	.globl gText_Rom_576014
 gText_Rom_576014: @ 0x08576014
 	.string "さっぱり$"

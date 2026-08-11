@@ -761,33 +761,42 @@ gBattleTransitionFrontierCirclesSymmetricSpiralInSeq_Funcs: @ 0x085FCAE4
 	.4byte sub_081DA40C @ WaitForLogoCirclesAnim
 	.4byte sub_081DA39C @ FadeInCenterLogoCircle
 	.4byte sub_081DAB78 @ CirclesSymmetricSpiralInSeq_End
+
+	@ Priority C: Mystery Event Enigma Berry result messages.
+	@ These are normal localized strings consumed by MEScrCmd_setenigmaberry.
+
 	.globl gMysteryEventScriptData_085FCAF8
 gMysteryEventScriptData_085FCAF8:
 	.globl gUnknown_85FCAF8
-gUnknown_85FCAF8: @ 0x085FCAF8
-	@ analyzed canonical ROM range 0x085FCAF8-0x085FCB18
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xFD, 0x03, 0x19, 0x20, 0x2D, 0x00, 0x13, 0x16, 0x00, 0x02, 0x2A, 0x10, 0xAB, 0xFE, 0x64, 0x53
-	.byte 0x56, 0x8D, 0x71, 0x19, 0x00, 0x9B, 0x9B, 0x06, 0x27, 0x00, 0x03, 0x09, 0x14, 0x2B, 0x03, 0xAB
-	.byte 0xFF
-	@ pret/pokeemerald-jp direct xref for 0x085FCB19: mystery_event_script.s: MEScrCmd_setenigmaberry
+gUnknown_85FCAF8:
+	.globl gText_MysteryEventBerry
+gText_MysteryEventBerry: @ 0x085FCAF8
+	.string "{0xFD}{0x03}のみを　てに　いれた！\nトウカジムの　パパから　うけとろう！$"
+	.if (. - gText_MysteryEventBerry) != 0x21
+	.error "gText_MysteryEventBerry must retain its original 0x21-byte slot"
+	.endif
+
 	.globl gMysteryEventScriptData_085FCB19
 gMysteryEventScriptData_085FCB19:
 	.globl gUnknown_85FCB19
-gUnknown_85FCB19: @ 0x085FCB19
-	@ analyzed canonical ROM range 0x085FCB19-0x085FCB2B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xFD, 0x02, 0x19, 0x20, 0x1A, 0xFE, 0xFD, 0x03, 0x19, 0x20, 0x16, 0x00, 0x1D, 0x2E, 0x06, 0x0C
-	.byte 0x10, 0xAB, 0xFF
-	@ pret/pokeemerald-jp direct xref for 0x085FCB2C: mystery_event_script.s: MEScrCmd_setenigmaberry
+gUnknown_85FCB19:
+	.globl gText_MysteryEventBerryTransform
+gText_MysteryEventBerryTransform: @ 0x085FCB19
+	.string "{0xFD}{0x02}のみは\n{0xFD}{0x03}のみに　へんかした！$"
+	.if (. - gText_MysteryEventBerryTransform) != 0x13
+	.error "gText_MysteryEventBerryTransform must retain its original 0x13-byte slot"
+	.endif
+
 	.globl gMysteryEventScriptData_085FCB2C
 gMysteryEventScriptData_085FCB2C:
 	.globl gUnknown_85FCB2C
-gUnknown_85FCB2C: @ 0x085FCB2C
-	@ analyzed canonical ROM range 0x085FCB2C-0x085FCB3C
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xFD, 0x02, 0x19, 0x20, 0x1A, 0x00, 0x0D, 0x44, 0x16, 0xFE, 0x1A, 0x02, 0x50, 0x13, 0x02, 0x10
-	.byte 0xFF
+gUnknown_85FCB2C:
+	.globl gText_MysteryEventBerryObtained
+gText_MysteryEventBerryObtained: @ 0x085FCB2C
+	.string "{0xFD}{0x02}のみは　すでに\nはいっていた$"
+	.if (. - gText_MysteryEventBerryObtained) != 0x11
+	.error "gText_MysteryEventBerryObtained must retain its original 0x11-byte slot"
+	.endif
 	.globl gUnknown_85FCB3D
 gUnknown_85FCB3D: @ 0x085FCB3D
 

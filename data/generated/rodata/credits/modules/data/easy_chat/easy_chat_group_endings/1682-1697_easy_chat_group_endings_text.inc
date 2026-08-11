@@ -9,11 +9,29 @@ gText_Rom_57646D: @ 0x0857646D
 	.if (. - gText_Rom_57646D) < 0x5
 	.space 0x5 - (. - gText_Rom_57646D)
 	.endif
-	@ analyzed canonical ROM range 0x08576472-0x0857647B
+
+	@ Priority C: Easy Chat / Endings words 50-53.
 	.globl gText_Rom_576472
-gText_Rom_576472: @ 0x08576472
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x18, 0xFF, 0x18, 0xAE, 0xFF, 0x19, 0xFF, 0x19, 0xAC, 0xFF
+gText_Rom_576472:
+	.globl gEasyChatWord_Endings_Ne
+gEasyChatWord_Endings_Ne: @ 0x08576472
+	.string "ね$"
+
+	.globl gEasyChatWord_Endings_Nee
+gEasyChatWord_Endings_Nee: @ 0x08576474
+	.string "ねー$"
+
+	.globl gEasyChatWord_Endings_No
+gEasyChatWord_Endings_No: @ 0x08576477
+	.string "の$"
+
+	.globl gEasyChatWord_Endings_NoQuestion
+gEasyChatWord_Endings_NoQuestion: @ 0x08576479
+	.string "の?$"
+
+	.if (. - gEasyChatWord_Endings_Ne) != 0xA
+	.error "Easy Chat Endings words 50-53 must retain their original 0xA-byte range"
+	.endif
 	.globl gText_Rom_57647C
 gText_Rom_57647C: @ 0x0857647C
 	.string "ばっかり$"
@@ -156,10 +174,10 @@ gEasyChatGroup_Endings: @ 0x085764B4
 	easy_chat_word_info gText_Rom_576463, 47, 1 @ word 47
 	easy_chat_word_info gText_Rom_576468, 48, 1 @ word 48
 	easy_chat_word_info gText_Rom_57646D, 49, 1 @ word 49
-	easy_chat_word_info gText_Rom_576472, 50, 1 @ word 50
-	easy_chat_word_info 0x08576474, 51, 1 @ word 51
-	easy_chat_word_info 0x08576477, 52, 1 @ word 52
-	easy_chat_word_info 0x08576479, 53, 1 @ word 53
+	easy_chat_word_info gEasyChatWord_Endings_Ne, 50, 1 @ word 50
+	easy_chat_word_info gEasyChatWord_Endings_Nee, 51, 1 @ word 51
+	easy_chat_word_info gEasyChatWord_Endings_No, 52, 1 @ word 52
+	easy_chat_word_info gEasyChatWord_Endings_NoQuestion, 53, 1 @ word 53
 	easy_chat_word_info gText_Rom_57647C, 54, 1 @ word 54
 	easy_chat_word_info gText_Rom_576481, 55, 1 @ word 55
 	easy_chat_word_info 0x08576486, 56, 1 @ word 56

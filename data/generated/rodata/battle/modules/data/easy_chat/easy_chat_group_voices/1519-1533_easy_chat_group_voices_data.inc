@@ -104,7 +104,7 @@ gEasyChatGroup_Voices: @ 0x08575CE8
 	easy_chat_word_info 0x08575BFE, 4, 1 @ word 4
 	easy_chat_word_info 0x08575C00, 5, 1 @ word 5
 	easy_chat_word_info gText_Rom_575C03, 6, 1 @ word 6
-	easy_chat_word_info gText_Rom_575C07, 7, 1 @ word 7
+	easy_chat_word_info gEasyChatWord_Voices_Dash, 7, 1 @ word 7
 	easy_chat_word_info gText_Rom_575C09, 8, 1 @ word 8
 	easy_chat_word_info gText_Rom_575C0D, 9, 1 @ word 9
 	easy_chat_word_info gText_Rom_575C11, 10, 1 @ word 10

@@ -2792,23 +2792,32 @@ sObjectEventGraphicsResources: @ 0x084E1900
 	@ ObjectEvent graphics resource tables plus 245 proven struct ObjectEventGraphicsInfo objects.
 	@ preserved non-ObjectEventGraphicsInfo data: 0x084E1900-0x084E1DA7
 	@ ObjectEvent animation table lookup entries used by sub_080923BC.
-sObjectEventAnimTableLookup_084E1900: @ 0x084E1900
-	.4byte sObjectEventAnimTable_084E1504
-	.4byte 0x02000301 @ unknown flags/attributes
-	.4byte sObjectEventAnimTable_084E1554
-	.4byte 0x02000301 @ unknown flags/attributes
-	.4byte sObjectEventAnimTable_084E16DC
-	.4byte 0x02000301 @ unknown flags/attributes
-	.4byte sObjectEventAnimTable_084E173C
-	.4byte 0x02000301 @ unknown flags/attributes
-	.4byte sObjectEventAnimTable_084E17DC
-	.4byte 0x02000301 @ unknown flags/attributes
-	.4byte sObjectEventAnimTable_084E183C
-	.4byte 0x02000301 @ unknown flags/attributes
-	.4byte sObjectEventAnimTable_084E18B8
-	.4byte 0x02000301 @ unknown flags/attributes
-	.4byte 0
-	.4byte 0
+
+	@ Priority C: struct StepAnimTable[].
+	@ Layout: const union AnimCmd *const *anims; u8 animPos[4].
+	.globl gObjectEventStepAnimTables
+gObjectEventStepAnimTables: @ 0x084E1900
+sObjectEventAnimTableLookup_084E1900:
+	.4byte sObjectEventAnimTable_084E1504 @ Quinty/Plump
+	.byte 1, 3, 0, 2
+	.4byte sObjectEventAnimTable_084E1554 @ Standard
+	.byte 1, 3, 0, 2
+	.4byte sObjectEventAnimTable_084E16DC @ Brendan/May normal
+	.byte 1, 3, 0, 2
+	.4byte sObjectEventAnimTable_084E173C @ Acro Bike
+	.byte 1, 3, 0, 2
+	.4byte sObjectEventAnimTable_084E17DC @ Surfing
+	.byte 1, 3, 0, 2
+	.4byte sObjectEventAnimTable_084E183C @ Nurse
+	.byte 1, 3, 0, 2
+	.4byte sObjectEventAnimTable_084E18B8 @ Fishing
+	.byte 1, 3, 0, 2
+	.4byte 0 @ terminator
+	.byte 0, 0, 0, 0
+
+	.if (. - gObjectEventStepAnimTables) != 0x40
+	.error "gObjectEventStepAnimTables must retain its original 0x40-byte range"
+	.endif
 	@ struct OamData entries used by ObjectEventGraphicsInfo.
 sObjectEventOam_8x8: @ 0x084E1940
 	rodata_sprite_oam_data 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0x0000
