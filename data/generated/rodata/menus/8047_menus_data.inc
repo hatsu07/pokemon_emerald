@@ -26,6 +26,32 @@ gUnknown_85FB994: @ 0x085FB994
 	@ All globally visible names are module-prefixed to avoid C-static name collisions in ASM.
 	@ Priority A: Rayquaza scene static data fully typed from JP consumer boundaries.
 	@ All globally visible names are module-prefixed to avoid C-static name collisions in ASM.
+	@ Priority A external graphics/palette targets identified from pret rayquaza_scene.c.
+	@ Local aliases emit no bytes and avoid depending on C static symbol visibility.
+	.set gPriorityARayDuoFightGroudonGfx, 0x08DA2120 @ gRaySceneDuoFight_Groudon_Gfx
+	.set gPriorityARayDuoFightGroudonPal, 0x08DA3618 @ gRaySceneDuoFight_Groudon_Pal
+	.set gPriorityARayDuoFightGroudonShoulderGfx, 0x08DA2D04 @ gRaySceneDuoFight_GroudonShoulder_Gfx
+	.set gPriorityARayDuoFightGroudonClawGfx, 0x08DA2DD0 @ gRaySceneDuoFight_GroudonClaw_Gfx
+	.set gPriorityARayDuoFightKyogreGfx, 0x08DA2FC4 @ gRaySceneDuoFight_Kyogre_Gfx
+	.set gPriorityARayDuoFightKyogrePal, 0x08DA3640 @ gRaySceneDuoFight_Kyogre_Pal
+	.set gPriorityARayDuoFightKyogrePectoralFinGfx, 0x08DA34F8 @ gRaySceneDuoFight_KyogrePectoralFin_Gfx
+	.set gPriorityARayDuoFightKyogreDorsalFinGfx, 0x08DA354C @ gRaySceneDuoFight_KyogreDorsalFin_Gfx
+	.set gPriorityARayTakesFlightSmokeGfx, 0x08DA3E68 @ gRaySceneTakesFlight_Smoke_Gfx
+	.set gPriorityARayTakesFlightSmokePal, 0x08DA3F24 @ gRaySceneTakesFlight_Smoke_Pal
+	.set gPriorityARayDescendsRayquazaGfx, 0x08DA66E8 @ gRaySceneDescends_Rayquaza_Gfx
+	.set gPriorityARayDescendsRayquazaTailGfx, 0x08DA6B54 @ gRaySceneDescends_RayquazaTail_Gfx
+	.set gPriorityARayTakesFlightRayquazaPal, 0x08DA5050 @ gRaySceneTakesFlight_Rayquaza_Pal
+	.set gPriorityARayChasesAwayGroudonGfx, 0x08DA9180 @ gRaySceneChasesAway_Groudon_Gfx
+	.set gPriorityARayChasesAwayGroudonTailGfx, 0x08DA9918 @ gRaySceneChasesAway_GroudonTail_Gfx
+	.set gPriorityARayChasesAwayKyogreGfx, 0x08DA995C @ gRaySceneChasesAway_Kyogre_Gfx
+	.set gPriorityARayChasesAwayRayquazaGfx, 0x08DA9BA4 @ gRaySceneChasesAway_Rayquaza_Gfx
+	.set gPriorityARayChasesAwayRayquazaTailGfx, 0x08DAA84C @ gRaySceneChasesAway_RayquazaTail_Gfx
+	.set gPriorityARayChasesAwayKyogreSplashGfx, 0x08DAAA3C @ gRaySceneChasesAway_KyogreSplash_Gfx
+	.set gPriorityARayChasesAwayGroudonPal, 0x08DAAAD4 @ gRaySceneChasesAway_Groudon_Pal
+	.set gPriorityARayChasesAwayKyogrePal, 0x08DAAAFC @ gRaySceneChasesAway_Kyogre_Pal
+	.set gPriorityARayChasesAwayRayquazaPal, 0x08DAAB24 @ gRaySceneChasesAway_Rayquaza_Pal
+	.set gPriorityARayChasesAwayKyogreSplashPal, 0x08DAAB4C @ gRaySceneChasesAway_KyogreSplash_Pal
+
 	.globl gRayquazaSceneTasksForAnimations
 gRayquazaSceneTasksForAnimations: @ 0x085FB99C
 	.4byte Task_DuoFightAnim
@@ -79,7 +105,7 @@ gRayquazaSceneAnims_DuoFightPre_Groudon: @ 0x085FBA20
 	.4byte gRayquazaSceneAnim_DuoFightPre_Groudon_Body
 	.globl gRayquazaSceneSpriteTemplate_DuoFightPre_Groudon
 gRayquazaSceneSpriteTemplate_DuoFightPre_Groudon: @ 0x085FBA28
-	rodata_sprite_template 0x7729, 0x7729, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_DuoFightPre_Groudon, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x7729, 0x7729, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_DuoFightPre_Groudon, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneAnim_DuoFightPre_GroudonShoulderKyogreDorsalFin
 gRayquazaSceneAnim_DuoFightPre_GroudonShoulderKyogreDorsalFin: @ 0x085FBA40
 	rodata_anim_frame 0x0, 0x1, 0, 0
@@ -89,7 +115,7 @@ gRayquazaSceneAnims_DuoFightPre_GroudonShoulderKyogreDorsalFin: @ 0x085FBA48
 	.4byte gRayquazaSceneAnim_DuoFightPre_GroudonShoulderKyogreDorsalFin
 	.globl gRayquazaSceneSpriteTemplate_DuoFightPre_GroudonShoulder
 gRayquazaSceneSpriteTemplate_DuoFightPre_GroudonShoulder: @ 0x085FBA4C
-	rodata_sprite_template 0x772A, 0x7729, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_DuoFightPre_GroudonShoulderKyogreDorsalFin, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x772A, 0x7729, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_DuoFightPre_GroudonShoulderKyogreDorsalFin, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneAnim_DuoFightPre_GroudonClaw
 gRayquazaSceneAnim_DuoFightPre_GroudonClaw: @ 0x085FBA64
 	rodata_anim_frame 0x0, 0x1, 0, 0
@@ -99,7 +125,7 @@ gRayquazaSceneAnims_DuoFightPre_GroudonClaw: @ 0x085FBA6C
 	.4byte gRayquazaSceneAnim_DuoFightPre_GroudonClaw
 	.globl gRayquazaSceneSpriteTemplate_DuoFightPre_GroudonClaw
 gRayquazaSceneSpriteTemplate_DuoFightPre_GroudonClaw: @ 0x085FBA70
-	rodata_sprite_template 0x772B, 0x7729, gRayquazaSceneOam_64x32, gRayquazaSceneAnims_DuoFightPre_GroudonClaw, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x772B, 0x7729, gRayquazaSceneOam_64x32, gRayquazaSceneAnims_DuoFightPre_GroudonClaw, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneAnim_DuoFightPre_Kyogre_TopLeft
 gRayquazaSceneAnim_DuoFightPre_Kyogre_TopLeft: @ 0x085FBA88
 	rodata_anim_frame 0x0, 0x1, 0, 0
@@ -158,7 +184,7 @@ gRayquazaSceneAnims_DuoFightPre_Kyogre: @ 0x085FBAF4
 	.4byte gRayquazaSceneAnim_DuoFightPre_Kyogre_RightShoulder
 	.globl gRayquazaSceneSpriteTemplate_DuoFightPre_Kyogre
 gRayquazaSceneSpriteTemplate_DuoFightPre_Kyogre: @ 0x085FBB18
-	rodata_sprite_template 0x772C, 0x772C, gRayquazaSceneOam_32x16, gRayquazaSceneAnims_DuoFightPre_Kyogre, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x772C, 0x772C, gRayquazaSceneOam_32x16, gRayquazaSceneAnims_DuoFightPre_Kyogre, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneAnim_DuoFightPre_KyogrePectoralFin
 gRayquazaSceneAnim_DuoFightPre_KyogrePectoralFin: @ 0x085FBB30
 	rodata_anim_frame 0x0, 0x24, 0, 0
@@ -171,10 +197,10 @@ gRayquazaSceneAnims_DuoFightPre_KyogrePectoralFin: @ 0x085FBB44
 	.4byte gRayquazaSceneAnim_DuoFightPre_KyogrePectoralFin
 	.globl gRayquazaSceneSpriteTemplate_DuoFightPre_KyogrePectoralFin
 gRayquazaSceneSpriteTemplate_DuoFightPre_KyogrePectoralFin: @ 0x085FBB48
-	rodata_sprite_template 0x772D, 0x772C, gRayquazaSceneOam_16x8, gRayquazaSceneAnims_DuoFightPre_KyogrePectoralFin, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x772D, 0x772C, gRayquazaSceneOam_16x8, gRayquazaSceneAnims_DuoFightPre_KyogrePectoralFin, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneSpriteTemplate_DuoFightPre_KyogreDorsalFin
 gRayquazaSceneSpriteTemplate_DuoFightPre_KyogreDorsalFin: @ 0x085FBB60
-	rodata_sprite_template 0x772E, 0x772C, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_DuoFightPre_GroudonShoulderKyogreDorsalFin, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x772E, 0x772C, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_DuoFightPre_GroudonShoulderKyogreDorsalFin, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneScanlineParams_DuoFight_Clouds
 gRayquazaSceneScanlineParams_DuoFight_Clouds: @ 0x085FBB78
 	rayquaza_scanline_params 0x04000014, 0xA2600001, 0x01
@@ -203,13 +229,13 @@ gRayquazaSceneAnims_DuoFight_Groudon: @ 0x085FBBB8
 	.4byte gRayquazaSceneAnim_DuoFight_Groudon_Body
 	.globl gRayquazaSceneSpriteSheet_DuoFight_Groudon
 gRayquazaSceneSpriteSheet_DuoFight_Groudon: @ 0x085FBBC0
-	rodata_compressed_sprite_sheet 0x08DA2120, 0x3000, 0x7729
+	rodata_compressed_sprite_sheet gPriorityARayDuoFightGroudonGfx, 0x3000, 0x7729
 	.globl gRayquazaSceneSpritePal_DuoFight_Groudon
 gRayquazaSceneSpritePal_DuoFight_Groudon: @ 0x085FBBC8
-	rodata_sprite_palette 0x08DA3618, 0x7729
+	rodata_sprite_palette gPriorityARayDuoFightGroudonPal, 0x7729
 	.globl gRayquazaSceneSpriteTemplate_DuoFight_Groudon
 gRayquazaSceneSpriteTemplate_DuoFight_Groudon: @ 0x085FBBD0
-	rodata_sprite_template 0x7729, 0x7729, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_DuoFight_Groudon, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x7729, 0x7729, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_DuoFight_Groudon, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneAnim_DuoFight_GroudonShoulderKyogreDorsalFin
 gRayquazaSceneAnim_DuoFight_GroudonShoulderKyogreDorsalFin: @ 0x085FBBE8
 	rodata_anim_frame 0x0, 0x1, 0, 0
@@ -219,10 +245,10 @@ gRayquazaSceneAnims_DuoFight_GroudonShoulderKyogreDorsalFin: @ 0x085FBBF0
 	.4byte gRayquazaSceneAnim_DuoFight_GroudonShoulderKyogreDorsalFin
 	.globl gRayquazaSceneSpriteSheet_DuoFight_GroudonShoulder
 gRayquazaSceneSpriteSheet_DuoFight_GroudonShoulder: @ 0x085FBBF4
-	rodata_compressed_sprite_sheet 0x08DA2D04, 0x0200, 0x772A
+	rodata_compressed_sprite_sheet gPriorityARayDuoFightGroudonShoulderGfx, 0x0200, 0x772A
 	.globl gRayquazaSceneSpriteTemplate_DuoFight_GroudonShoulder
 gRayquazaSceneSpriteTemplate_DuoFight_GroudonShoulder: @ 0x085FBBFC
-	rodata_sprite_template 0x772A, 0x7729, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_DuoFight_GroudonShoulderKyogreDorsalFin, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x772A, 0x7729, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_DuoFight_GroudonShoulderKyogreDorsalFin, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneAnim_DuoFight_GroudonClaw
 gRayquazaSceneAnim_DuoFight_GroudonClaw: @ 0x085FBC14
 	rodata_anim_frame 0x0, 0x1, 0, 0
@@ -232,10 +258,10 @@ gRayquazaSceneAnims_DuoFight_GroudonClaw: @ 0x085FBC1C
 	.4byte gRayquazaSceneAnim_DuoFight_GroudonClaw
 	.globl gRayquazaSceneSpriteSheet_DuoFight_GroudonClaw
 gRayquazaSceneSpriteSheet_DuoFight_GroudonClaw: @ 0x085FBC20
-	rodata_compressed_sprite_sheet 0x08DA2DD0, 0x0400, 0x772B
+	rodata_compressed_sprite_sheet gPriorityARayDuoFightGroudonClawGfx, 0x0400, 0x772B
 	.globl gRayquazaSceneSpriteTemplate_DuoFight_GroudonClaw
 gRayquazaSceneSpriteTemplate_DuoFight_GroudonClaw: @ 0x085FBC28
-	rodata_sprite_template 0x772B, 0x7729, gRayquazaSceneOam_64x32, gRayquazaSceneAnims_DuoFight_GroudonClaw, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x772B, 0x7729, gRayquazaSceneOam_64x32, gRayquazaSceneAnims_DuoFight_GroudonClaw, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneAnim_DuoFight_Kyogre_TopLeft
 gRayquazaSceneAnim_DuoFight_Kyogre_TopLeft: @ 0x085FBC40
 	rodata_anim_frame 0x0, 0x1, 0, 0
@@ -294,13 +320,13 @@ gRayquazaSceneAnims_DuoFight_Kyogre: @ 0x085FBCAC
 	.4byte gRayquazaSceneAnim_DuoFight_Kyogre_RightShoulder
 	.globl gRayquazaSceneSpriteSheet_DuoFight_Kyogre
 gRayquazaSceneSpriteSheet_DuoFight_Kyogre: @ 0x085FBCD0
-	rodata_compressed_sprite_sheet 0x08DA2FC4, 0x0F00, 0x772C
+	rodata_compressed_sprite_sheet gPriorityARayDuoFightKyogreGfx, 0x0F00, 0x772C
 	.globl gRayquazaSceneSpritePal_DuoFight_Kyogre
 gRayquazaSceneSpritePal_DuoFight_Kyogre: @ 0x085FBCD8
-	rodata_sprite_palette 0x08DA3640, 0x772C
+	rodata_sprite_palette gPriorityARayDuoFightKyogrePal, 0x772C
 	.globl gRayquazaSceneSpriteTemplate_DuoFight_Kyogre
 gRayquazaSceneSpriteTemplate_DuoFight_Kyogre: @ 0x085FBCE0
-	rodata_sprite_template 0x772C, 0x772C, gRayquazaSceneOam_32x16, gRayquazaSceneAnims_DuoFight_Kyogre, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x772C, 0x772C, gRayquazaSceneOam_32x16, gRayquazaSceneAnims_DuoFight_Kyogre, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneAnim_DuoFight_KyogrePectoralFin
 gRayquazaSceneAnim_DuoFight_KyogrePectoralFin: @ 0x085FBCF8
 	rodata_anim_frame 0x0, 0x18, 0, 0
@@ -313,16 +339,16 @@ gRayquazaSceneAnims_DuoFight_KyogrePectoralFin: @ 0x085FBD0C
 	.4byte gRayquazaSceneAnim_DuoFight_KyogrePectoralFin
 	.globl gRayquazaSceneSpriteSheet_DuoFight_KyogrePectoralFin
 gRayquazaSceneSpriteSheet_DuoFight_KyogrePectoralFin: @ 0x085FBD10
-	rodata_compressed_sprite_sheet 0x08DA34F8, 0x00C0, 0x772D
+	rodata_compressed_sprite_sheet gPriorityARayDuoFightKyogrePectoralFinGfx, 0x00C0, 0x772D
 	.globl gRayquazaSceneSpriteTemplate_DuoFight_KyogrePectoralFin
 gRayquazaSceneSpriteTemplate_DuoFight_KyogrePectoralFin: @ 0x085FBD18
-	rodata_sprite_template 0x772D, 0x772C, gRayquazaSceneOam_16x8, gRayquazaSceneAnims_DuoFight_KyogrePectoralFin, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x772D, 0x772C, gRayquazaSceneOam_16x8, gRayquazaSceneAnims_DuoFight_KyogrePectoralFin, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneSpriteSheet_DuoFight_KyogreDorsalFin
 gRayquazaSceneSpriteSheet_DuoFight_KyogreDorsalFin: @ 0x085FBD30
-	rodata_compressed_sprite_sheet 0x08DA354C, 0x0200, 0x772E
+	rodata_compressed_sprite_sheet gPriorityARayDuoFightKyogreDorsalFinGfx, 0x0200, 0x772E
 	.globl gRayquazaSceneSpriteTemplate_DuoFight_KyogreDorsalFin
 gRayquazaSceneSpriteTemplate_DuoFight_KyogreDorsalFin: @ 0x085FBD38
-	rodata_sprite_template 0x772E, 0x772C, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_DuoFight_GroudonShoulderKyogreDorsalFin, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x772E, 0x772C, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_DuoFight_GroudonShoulderKyogreDorsalFin, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneBgTemplates_TakesFlight
 gRayquazaSceneBgTemplates_TakesFlight: @ 0x085FBD50
 	bg_template 0x0, 0x2, 0x1F, 0x0, 0x0, 0x0, 0x0
@@ -346,10 +372,10 @@ gRayquazaSceneAffineAnims_TakesFlight_Smoke: @ 0x085FBD88
 	.4byte gRayquazaSceneAffineAnim_TakesFlight_Smoke
 	.globl gRayquazaSceneSpriteSheet_TakesFlight_Smoke
 gRayquazaSceneSpriteSheet_TakesFlight_Smoke: @ 0x085FBD8C
-	rodata_compressed_sprite_sheet 0x08DA3E68, 0x0100, 0x775B
+	rodata_compressed_sprite_sheet gPriorityARayTakesFlightSmokeGfx, 0x0100, 0x775B
 	.globl gRayquazaSceneSpritePal_TakesFlight_Smoke
 gRayquazaSceneSpritePal_TakesFlight_Smoke: @ 0x085FBD94
-	rodata_sprite_palette 0x08DA3F24, 0x775B
+	rodata_sprite_palette gPriorityARayTakesFlightSmokePal, 0x775B
 	.globl gRayquazaSceneSpriteTemplate_TakesFlight_Smoke
 gRayquazaSceneSpriteTemplate_TakesFlight_Smoke: @ 0x085FBD9C
 	rodata_sprite_template 0x775B, 0x775B, gRayquazaSceneOam_32x16, gRayquazaSceneAnims_TakesFlight_Smoke, 0, gRayquazaSceneAffineAnims_TakesFlight_Smoke, sub_081D7B9C
@@ -389,19 +415,19 @@ gRayquazaSceneAnims_Descends_RayquazaTail: @ 0x085FBDF4
 	.4byte gRayquazaSceneAnim_Descends_RayquazaTail
 	.globl gRayquazaSceneSpriteSheet_Descends_Rayquaza
 gRayquazaSceneSpriteSheet_Descends_Rayquaza: @ 0x085FBDF8
-	rodata_compressed_sprite_sheet 0x08DA66E8, 0x1000, 0x775C
+	rodata_compressed_sprite_sheet gPriorityARayDescendsRayquazaGfx, 0x1000, 0x775C
 	.globl gRayquazaSceneSpriteSheet_Descends_RayquazaTail
 gRayquazaSceneSpriteSheet_Descends_RayquazaTail: @ 0x085FBE00
-	rodata_compressed_sprite_sheet 0x08DA6B54, 0x0200, 0x775D
+	rodata_compressed_sprite_sheet gPriorityARayDescendsRayquazaTailGfx, 0x0200, 0x775D
 	.globl gRayquazaSceneSpritePal_Descends_Rayquaza
 gRayquazaSceneSpritePal_Descends_Rayquaza: @ 0x085FBE08
-	rodata_sprite_palette 0x08DA5050, 0x775C
+	rodata_sprite_palette gPriorityARayTakesFlightRayquazaPal, 0x775C
 	.globl gRayquazaSceneSpriteTemplate_Descends_Rayquaza
 gRayquazaSceneSpriteTemplate_Descends_Rayquaza: @ 0x085FBE10
-	rodata_sprite_template 0x775C, 0x775C, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_Descends_Rayquaza, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x775C, 0x775C, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_Descends_Rayquaza, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneSpriteTemplate_Descends_RayquazaTail
 gRayquazaSceneSpriteTemplate_Descends_RayquazaTail: @ 0x085FBE28
-	rodata_sprite_template 0x775D, 0x775C, gRayquazaSceneOam_16x32, gRayquazaSceneAnims_Descends_RayquazaTail, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x775D, 0x775C, gRayquazaSceneOam_16x32, gRayquazaSceneAnims_Descends_RayquazaTail, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneBgTemplates_Charges
 gRayquazaSceneBgTemplates_Charges: @ 0x085FBE40
 	bg_template 0x0, 0x2, 0x1F, 0x0, 0x0, 0x0, 0x0
@@ -505,52 +531,52 @@ gRayquazaSceneAnims_ChasesAway_KyogreSplash: @ 0x085FBF20
 	.4byte gRayquazaSceneAnim_ChasesAway_KyogreSplash
 	.globl gRayquazaSceneSpriteSheet_ChasesAway_Groudon
 gRayquazaSceneSpriteSheet_ChasesAway_Groudon: @ 0x085FBF24
-	rodata_compressed_sprite_sheet 0x08DA9180, 0x1800, 0x7765
+	rodata_compressed_sprite_sheet gPriorityARayChasesAwayGroudonGfx, 0x1800, 0x7765
 	.globl gRayquazaSceneSpriteSheet_ChasesAway_GroudonTail
 gRayquazaSceneSpriteSheet_ChasesAway_GroudonTail: @ 0x085FBF2C
-	rodata_compressed_sprite_sheet 0x08DA9918, 0x0080, 0x7766
+	rodata_compressed_sprite_sheet gPriorityARayChasesAwayGroudonTailGfx, 0x0080, 0x7766
 	.globl gRayquazaSceneSpriteSheet_ChasesAway_Kyogre
 gRayquazaSceneSpriteSheet_ChasesAway_Kyogre: @ 0x085FBF34
-	rodata_compressed_sprite_sheet 0x08DA995C, 0x0600, 0x7768
+	rodata_compressed_sprite_sheet gPriorityARayChasesAwayKyogreGfx, 0x0600, 0x7768
 	.globl gRayquazaSceneSpriteSheet_ChasesAway_Rayquaza
 gRayquazaSceneSpriteSheet_ChasesAway_Rayquaza: @ 0x085FBF3C
-	rodata_compressed_sprite_sheet 0x08DA9BA4, 0x2000, 0x7769
+	rodata_compressed_sprite_sheet gPriorityARayChasesAwayRayquazaGfx, 0x2000, 0x7769
 	.globl gRayquazaSceneSpriteSheet_ChasesAway_RayquazaTail
 gRayquazaSceneSpriteSheet_ChasesAway_RayquazaTail: @ 0x085FBF44
-	rodata_compressed_sprite_sheet 0x08DAA84C, 0x0800, 0x776A
+	rodata_compressed_sprite_sheet gPriorityARayChasesAwayRayquazaTailGfx, 0x0800, 0x776A
 	.globl gRayquazaSceneSpriteSheet_ChasesAway_KyogreSplash
 gRayquazaSceneSpriteSheet_ChasesAway_KyogreSplash: @ 0x085FBF4C
-	rodata_compressed_sprite_sheet 0x08DAAA3C, 0x0300, 0x776B
+	rodata_compressed_sprite_sheet gPriorityARayChasesAwayKyogreSplashGfx, 0x0300, 0x776B
 	.globl gRayquazaSceneSpritePal_ChasesAway_Groudon
 gRayquazaSceneSpritePal_ChasesAway_Groudon: @ 0x085FBF54
-	rodata_sprite_palette 0x08DAAAD4, 0x7765
+	rodata_sprite_palette gPriorityARayChasesAwayGroudonPal, 0x7765
 	.globl gRayquazaSceneSpritePal_ChasesAway_Kyogre
 gRayquazaSceneSpritePal_ChasesAway_Kyogre: @ 0x085FBF5C
-	rodata_sprite_palette 0x08DAAAFC, 0x7768
+	rodata_sprite_palette gPriorityARayChasesAwayKyogrePal, 0x7768
 	.globl gRayquazaSceneSpritePal_ChasesAway_Rayquaza
 gRayquazaSceneSpritePal_ChasesAway_Rayquaza: @ 0x085FBF64
-	rodata_sprite_palette 0x08DAAB24, 0x7769
+	rodata_sprite_palette gPriorityARayChasesAwayRayquazaPal, 0x7769
 	.globl gRayquazaSceneSpritePal_ChasesAway_KyogreSplash
 gRayquazaSceneSpritePal_ChasesAway_KyogreSplash: @ 0x085FBF6C
-	rodata_sprite_palette 0x08DAAB4C, 0x776B
+	rodata_sprite_palette gPriorityARayChasesAwayKyogreSplashPal, 0x776B
 	.globl gRayquazaSceneSpriteTemplate_ChasesAway_Groudon
 gRayquazaSceneSpriteTemplate_ChasesAway_Groudon: @ 0x085FBF74
-	rodata_sprite_template 0x7765, 0x7765, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_ChasesAway_Groudon, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x7765, 0x7765, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_ChasesAway_Groudon, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneSpriteTemplate_ChasesAway_GroudonTail
 gRayquazaSceneSpriteTemplate_ChasesAway_GroudonTail: @ 0x085FBF8C
-	rodata_sprite_template 0x7766, 0x7765, gRayquazaSceneOam_16x16, gRayquazaSceneAnims_ChasesAway_GroudonTail, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x7766, 0x7765, gRayquazaSceneOam_16x16, gRayquazaSceneAnims_ChasesAway_GroudonTail, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneSpriteTemplate_ChasesAway_Kyogre
 gRayquazaSceneSpriteTemplate_ChasesAway_Kyogre: @ 0x085FBFA4
-	rodata_sprite_template 0x7768, 0x7768, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_ChasesAway_Kyogre, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x7768, 0x7768, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_ChasesAway_Kyogre, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneSpriteTemplate_ChasesAway_Rayquaza
 gRayquazaSceneSpriteTemplate_ChasesAway_Rayquaza: @ 0x085FBFBC
-	rodata_sprite_template 0x7769, 0x7769, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_ChasesAway_Rayquaza, 0, 0x082BF310, sub_081D8F58
+	rodata_sprite_template 0x7769, 0x7769, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_ChasesAway_Rayquaza, 0, gDummySpriteAffineAnimTable, sub_081D8F58
 	.globl gRayquazaSceneSpriteTemplate_ChasesAway_RayquazaTail
 gRayquazaSceneSpriteTemplate_ChasesAway_RayquazaTail: @ 0x085FBFD4
-	rodata_sprite_template 0x776A, 0x7769, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_ChasesAway_RayquazaTail, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x776A, 0x7769, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_ChasesAway_RayquazaTail, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneSpriteTemplate_ChasesAway_KyogreSplash
 gRayquazaSceneSpriteTemplate_ChasesAway_KyogreSplash: @ 0x085FBFEC
-	rodata_sprite_template 0x776B, 0x776B, gRayquazaSceneOam_32x8, gRayquazaSceneAnims_ChasesAway_KyogreSplash, 0, 0x082BF310, SpriteCallbackDummy
+	rodata_sprite_template 0x776B, 0x776B, gRayquazaSceneOam_32x8, gRayquazaSceneAnims_ChasesAway_KyogreSplash, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	.globl gRayquazaSceneBgTemplates_ChasesAway
 gRayquazaSceneBgTemplates_ChasesAway: @ 0x085FC004
 	bg_template 0x0, 0x1, 0x1F, 0x0, 0x0, 0x1, 0x0

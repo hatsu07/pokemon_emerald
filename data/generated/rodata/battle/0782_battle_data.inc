@@ -2,6 +2,51 @@
 	@ baserom.gba is used only by tools/semanticize_priority_a_full.py; build uses the extracted files below.
 	@ Priority A: Frontier Pass fully split into exact assets and typed tables.
 	@ baserom.gba is used only by tools/semanticize_priority_a_full.py; build uses the extracted files below.
+	@ Priority A external targets identified from Frontier Pass consumers / pret declarations.
+	@ Local aliases emit no bytes and avoid depending on C static symbol visibility.
+	.set gPriorityAFrontierPassCursorPal, 0x085468E4 @ gFrontierPassCursor_Pal
+	.set gPriorityAFrontierPassMapCursorPal, 0x08546904 @ gFrontierPassMapCursor_Pal
+	.set gPriorityAFrontierPassMedalsSilverPal, 0x08546924 @ gFrontierPassMedalsSilver_Pal
+	.set gPriorityAFrontierPassMedalsGoldPal, 0x08546944 @ gFrontierPassMedalsGold_Pal
+	.set gPriorityAFrontierPassMaleHeadPal, 0x08546964 @ sMaleHead_Pal
+	.set gPriorityAFrontierPassFemaleHeadPal, 0x08546984 @ sFemaleHead_Pal
+	.set gPriorityAFrontierPassOam16x16, 0x084FD018 @ gOamData_AffineOff_ObjNormal_16x16
+	.set gPriorityAFrontierPassOam32x16, 0x084FD040 @ gOamData_AffineOff_ObjNormal_32x16
+	.set gPriorityAFrontierPassDummyAffineAnimTable, 0x082BF310 @ gDummySpriteAffineAnimTable
+	.set gPriorityAFrontierPassSpriteCallbackDummy, 0x08007141 @ SpriteCallbackDummy (Thumb)
+	.set gPriorityAFrontierPassSpriteCbDummy, 0x080C5D3D @ JP SpriteCb_Dummy (Thumb)
+
+	.set gPriorityAFrontierPassTextThereIsNoBattleRecord, 0x085CCB94
+	.set gPriorityAFrontierPassTextCheckFrontierMap, 0x085CCAB5
+	.set gPriorityAFrontierPassTextCheckTrainerCard, 0x085CCAC9
+	.set gPriorityAFrontierPassTextViewRecordedBattle, 0x085CCAD7
+	.set gPriorityAFrontierPassTextPutAwayFrontierPass, 0x085CCAE7
+	.set gPriorityAFrontierPassTextCurrentBattlePoints, 0x085CCAF6
+	.set gPriorityAFrontierPassTextCollectedSymbols, 0x085CCB0A
+	.set gPriorityAFrontierPassTextBattleTowerAbilitySymbol, 0x085CCB1A
+	.set gPriorityAFrontierPassTextBattleDomeTacticsSymbol, 0x085CCB2B
+	.set gPriorityAFrontierPassTextBattlePalaceSpiritsSymbol, 0x085CCB3D
+	.set gPriorityAFrontierPassTextBattleArenaGutsSymbol, 0x085CCB4E
+	.set gPriorityAFrontierPassTextBattleFactoryKnowledgeSymbol, 0x085CCB5E
+	.set gPriorityAFrontierPassTextBattlePikeLuckSymbol, 0x085CCB72
+	.set gPriorityAFrontierPassTextBattlePyramidBraveSymbol, 0x085CCB82
+	.set gPriorityAFrontierPassTextEmptyString, 0x085CCAB4
+
+	.set gPriorityAFrontierPassTextBattleTowerName, 0x085CCBA8
+	.set gPriorityAFrontierPassTextBattleTowerDesc, 0x085CCBE0
+	.set gPriorityAFrontierPassTextBattleDomeName, 0x085CCBAF
+	.set gPriorityAFrontierPassTextBattleDomeDesc, 0x085CCC00
+	.set gPriorityAFrontierPassTextBattlePalaceName, 0x085CCBB6
+	.set gPriorityAFrontierPassTextBattlePalaceDesc, 0x085CCC1C
+	.set gPriorityAFrontierPassTextBattleArenaName, 0x085CCBBD
+	.set gPriorityAFrontierPassTextBattleArenaDesc, 0x085CCC3B
+	.set gPriorityAFrontierPassTextBattleFactoryName, 0x085CCBC5
+	.set gPriorityAFrontierPassTextBattleFactoryDesc, 0x085CCC5E
+	.set gPriorityAFrontierPassTextBattlePikeName, 0x085CCBCF
+	.set gPriorityAFrontierPassTextBattlePikeDesc, 0x085CCC7C
+	.set gPriorityAFrontierPassTextBattlePyramidName, 0x085CCBD7
+	.set gPriorityAFrontierPassTextBattlePyramidDesc, 0x085CCC9D
+
 	.globl gFrontierPassMapScreen_Gfx
 gFrontierPassMapScreen_Gfx: @ 0x08548168
 	.incbin "build/graphics/priority_a/frontier_pass/map_screen.4bpp.lz"
@@ -137,12 +182,12 @@ gFrontierPassHeadsSpriteSheet: @ 0x0854AFF8
 	rodata_compressed_sprite_sheet 0, 0x0000, 0x0000
 	.globl gFrontierPassSpritePalettes
 gFrontierPassSpritePalettes: @ 0x0854B008
-	rodata_sprite_palette 0x085468E4, 0x0000
-	rodata_sprite_palette 0x08546904, 0x0001
-	rodata_sprite_palette 0x08546924, 0x0002
-	rodata_sprite_palette 0x08546944, 0x0003
-	rodata_sprite_palette 0x08546964, 0x0004
-	rodata_sprite_palette 0x08546984, 0x0005
+	rodata_sprite_palette gPriorityAFrontierPassCursorPal, 0x0000
+	rodata_sprite_palette gPriorityAFrontierPassMapCursorPal, 0x0001
+	rodata_sprite_palette gPriorityAFrontierPassMedalsSilverPal, 0x0002
+	rodata_sprite_palette gPriorityAFrontierPassMedalsGoldPal, 0x0003
+	rodata_sprite_palette gPriorityAFrontierPassMaleHeadPal, 0x0004
+	rodata_sprite_palette gPriorityAFrontierPassFemaleHeadPal, 0x0005
 	rodata_sprite_palette 0, 0x0000
 	.globl gFrontierPassAnim_Frame1_Unused
 gFrontierPassAnim_Frame1_Unused: @ 0x0854B040
@@ -212,42 +257,42 @@ gFrontierPassAffineAnims_Unused: @ 0x0854B0D4
 	.4byte gFrontierPassAffineAnim_Unused
 	.globl gFrontierPassCursorSpriteTemplate
 gFrontierPassCursorSpriteTemplate: @ 0x0854B0D8
-	rodata_sprite_template 0x0000, 0x0000, 0x084FD018, gFrontierPassAnims_TwoFrame, 0, 0x082BF310, 0x08007141
+	rodata_sprite_template 0x0000, 0x0000, gPriorityAFrontierPassOam16x16, gFrontierPassAnims_TwoFrame, 0, gPriorityAFrontierPassDummyAffineAnimTable, gPriorityAFrontierPassSpriteCallbackDummy
 	.globl gFrontierPassMapIndicatorSpriteTemplate
 gFrontierPassMapIndicatorSpriteTemplate: @ 0x0854B0F0
-	rodata_sprite_template 0x0001, 0x0001, 0x084FD040, gFrontierPassAnims_MapIndicator, 0, 0x082BF310, 0x08007141
+	rodata_sprite_template 0x0001, 0x0001, gPriorityAFrontierPassOam32x16, gFrontierPassAnims_MapIndicator, 0, gPriorityAFrontierPassDummyAffineAnimTable, gPriorityAFrontierPassSpriteCallbackDummy
 	.globl gFrontierPassMedalSpriteTemplate
 gFrontierPassMedalSpriteTemplate: @ 0x0854B108
-	rodata_sprite_template 0x0002, 0x0002, 0x084FD018, gFrontierPassAnims_Medal, 0, 0x082BF310, 0x08007141
+	rodata_sprite_template 0x0002, 0x0002, gPriorityAFrontierPassOam16x16, gFrontierPassAnims_Medal, 0, gPriorityAFrontierPassDummyAffineAnimTable, gPriorityAFrontierPassSpriteCallbackDummy
 	.globl gFrontierPassPlayerHeadSpriteTemplate
 gFrontierPassPlayerHeadSpriteTemplate: @ 0x0854B120
-	rodata_sprite_template 0x0004, 0x0004, 0x084FD018, gFrontierPassAnims_TwoFrame, 0, 0x082BF310, 0x080C5D3D
+	rodata_sprite_template 0x0004, 0x0004, gPriorityAFrontierPassOam16x16, gFrontierPassAnims_TwoFrame, 0, gPriorityAFrontierPassDummyAffineAnimTable, gPriorityAFrontierPassSpriteCbDummy
 	.globl gFrontierPassAreaDescriptions
 gFrontierPassAreaDescriptions: @ 0x0854B138
-	.4byte 0x085CCB94
-	.4byte 0x085CCAB5
-	.4byte 0x085CCAC9
-	.4byte 0x085CCAD7
-	.4byte 0x085CCAE7
-	.4byte 0x085CCAF6
-	.4byte 0x085CCB0A
-	.4byte 0x085CCB1A
-	.4byte 0x085CCB2B
-	.4byte 0x085CCB3D
-	.4byte 0x085CCB4E
-	.4byte 0x085CCB5E
-	.4byte 0x085CCB72
-	.4byte 0x085CCB82
-	.4byte 0x085CCAB4
+	.4byte gPriorityAFrontierPassTextThereIsNoBattleRecord
+	.4byte gPriorityAFrontierPassTextCheckFrontierMap
+	.4byte gPriorityAFrontierPassTextCheckTrainerCard
+	.4byte gPriorityAFrontierPassTextViewRecordedBattle
+	.4byte gPriorityAFrontierPassTextPutAwayFrontierPass
+	.4byte gPriorityAFrontierPassTextCurrentBattlePoints
+	.4byte gPriorityAFrontierPassTextCollectedSymbols
+	.4byte gPriorityAFrontierPassTextBattleTowerAbilitySymbol
+	.4byte gPriorityAFrontierPassTextBattleDomeTacticsSymbol
+	.4byte gPriorityAFrontierPassTextBattlePalaceSpiritsSymbol
+	.4byte gPriorityAFrontierPassTextBattleArenaGutsSymbol
+	.4byte gPriorityAFrontierPassTextBattleFactoryKnowledgeSymbol
+	.4byte gPriorityAFrontierPassTextBattlePikeLuckSymbol
+	.4byte gPriorityAFrontierPassTextBattlePyramidBraveSymbol
+	.4byte gPriorityAFrontierPassTextEmptyString
 	.globl gFrontierPassMapLandmarks
 gFrontierPassMapLandmarks: @ 0x0854B174
-	frontier_pass_landmark 0x085CCBA8, 0x085CCBE0, 89, 40, 1 @ facility 0
-	frontier_pass_landmark 0x085CCBAF, 0x085CCC00, 33, 42, 1 @ facility 1
-	frontier_pass_landmark 0x085CCBB6, 0x085CCC1C, 120, 86, 0 @ facility 2
-	frontier_pass_landmark 0x085CCBBD, 0x085CCC3B, 114, 59, 0 @ facility 3
-	frontier_pass_landmark 0x085CCBC5, 0x085CCC5E, 25, 67, 0 @ facility 4
-	frontier_pass_landmark 0x085CCBCF, 0x085CCC7C, 57, 57, 1 @ facility 5
-	frontier_pass_landmark 0x085CCBD7, 0x085CCC9D, 134, 41, 1 @ facility 6
+	frontier_pass_landmark gPriorityAFrontierPassTextBattleTowerName, gPriorityAFrontierPassTextBattleTowerDesc, 89, 40, 1 @ facility 0
+	frontier_pass_landmark gPriorityAFrontierPassTextBattleDomeName, gPriorityAFrontierPassTextBattleDomeDesc, 33, 42, 1 @ facility 1
+	frontier_pass_landmark gPriorityAFrontierPassTextBattlePalaceName, gPriorityAFrontierPassTextBattlePalaceDesc, 120, 86, 0 @ facility 2
+	frontier_pass_landmark gPriorityAFrontierPassTextBattleArenaName, gPriorityAFrontierPassTextBattleArenaDesc, 114, 59, 0 @ facility 3
+	frontier_pass_landmark gPriorityAFrontierPassTextBattleFactoryName, gPriorityAFrontierPassTextBattleFactoryDesc, 25, 67, 0 @ facility 4
+	frontier_pass_landmark gPriorityAFrontierPassTextBattlePikeName, gPriorityAFrontierPassTextBattlePikeDesc, 57, 57, 1 @ facility 5
+	frontier_pass_landmark gPriorityAFrontierPassTextBattlePyramidName, gPriorityAFrontierPassTextBattlePyramidDesc, 134, 41, 1 @ facility 6
 	@ pret/pokeemerald-jp direct xref for 0x0854B1E4: pokemon_storage_system.s: Task_PokemonStorageSystemPC, sub_080C6E88
 	.globl gPokemonStorageSystemData_0854B1E4
 gPokemonStorageSystemData_0854B1E4:
