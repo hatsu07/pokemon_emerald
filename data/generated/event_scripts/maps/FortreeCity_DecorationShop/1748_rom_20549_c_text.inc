@@ -12,29 +12,13 @@ gText_Rom_20549C: @ 0x0820549C
 	@ semantic recovery: script_data; byte-verified against linked ROM
 	.byte 0x00
 EventScript_JP_082054FD: @ 0x082054FD
-	@ event command: lockall
-	.byte 0x69
-	@ event command: checkflag
-	.byte 0x2B
-	.2byte 0x0864
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x0820555E @ EventScript_JP_0820555E
-	@ event command: checkflag
-	.byte 0x2B
-	.2byte 0x086D
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x08205537 @ EventScript_JP_08205537
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082055D8 @ gText_Rom_2055D8
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
+	lockall
+	checkflag 0x0864
+	goto_if 0x01, EventScript_JP_0820555E
+	checkflag 0x086D
+	goto_if 0x01, EventScript_JP_08205537
+	loadword 0x00, gText_Rom_2055D8
+	callstd 0x04
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
@@ -42,15 +26,9 @@ EventScript_JP_082054FD: @ 0x082054FD
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08205647 @ gText_Rom_205647
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: closemessage
-	.byte 0x68
+	loadword 0x00, gText_Rom_205647
+	callstd 0x04
+	closemessage
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
@@ -58,18 +36,11 @@ EventScript_JP_082054FD: @ 0x082054FD
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: releaseall
-	.byte 0x6B
-	@ event command: end
-	.byte 0x02
+	releaseall
+	end
 EventScript_JP_08205537: @ 0x08205537
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082056BC @ gText_Rom_2056BC
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
+	loadword 0x00, gText_Rom_2056BC
+	callstd 0x04
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
@@ -77,15 +48,9 @@ EventScript_JP_08205537: @ 0x08205537
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820571C @ gText_Rom_20571C
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: closemessage
-	.byte 0x68
+	loadword 0x00, gText_Rom_20571C
+	callstd 0x04
+	closemessage
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
@@ -93,18 +58,11 @@ EventScript_JP_08205537: @ 0x08205537
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: releaseall
-	.byte 0x6B
-	@ event command: end
-	.byte 0x02
+	releaseall
+	end
 EventScript_JP_0820555E: @ 0x0820555E
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082057A5 @ gText_Rom_2057A5
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
+	loadword 0x00, gText_Rom_2057A5
+	callstd 0x04
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
@@ -112,15 +70,9 @@ EventScript_JP_0820555E: @ 0x0820555E
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08205812 @ gText_Rom_205812
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: closemessage
-	.byte 0x68
+	loadword 0x00, gText_Rom_205812
+	callstd 0x04
+	closemessage
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
@@ -128,16 +80,11 @@ EventScript_JP_0820555E: @ 0x0820555E
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: releaseall
-	.byte 0x6B
-	@ event command: end
-	.byte 0x02
+	releaseall
+	end
 EventScript_JP_08205585: @ 0x08205585
-	@ event command: lockall
-	.byte 0x69
-	@ event command: playse
-	.byte 0x2F
-	.2byte 0x0015
+	lockall
+	playse 0x0015
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
@@ -159,15 +106,9 @@ EventScript_JP_08205585: @ 0x08205585
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08205699 @ gText_Rom_205699
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: closemessage
-	.byte 0x68
+	loadword 0x00, gText_Rom_205699
+	callstd 0x04
+	closemessage
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
@@ -186,24 +127,22 @@ EventScript_JP_08205585: @ 0x08205585
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	release
+	end
 Movement_JP_082055CD: @ 0x082055CD
 	@ object movement sequence
-	.byte 0x03 @ face_right
-	.byte 0x40 @ lock_facing_direction
-	.byte 0x0A @ walk_left
-	.byte 0x41 @ unlock_facing_direction
-	.byte 0xFE @ step_end
+	face_right
+	lock_facing_direction
+	walk_left
+	unlock_facing_direction
+	step_end
 Movement_JP_082055D2: @ 0x082055D2
 	@ object movement sequence
-	.byte 0x09 @ walk_up
-	.byte 0xFE @ step_end
+	walk_up
+	step_end
 Movement_JP_082055D4: @ 0x082055D4
 	@ object movement sequence
-	.byte 0x00 @ face_down
-	.byte 0x08 @ walk_down
-	.byte 0x01 @ face_up
-	.byte 0xFE @ step_end
+	face_down
+	walk_down
+	face_up
+	step_end

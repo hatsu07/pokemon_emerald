@@ -107,199 +107,73 @@ EventText_JP_08256224: @ 0x08256224
 EventText_JP_0825622F: @ 0x0825622F
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nおんせんに　はいった　らしい!\p{STR_VAR_3}は　きっと\nおはだが　ツルツルの　トレーナー　だろう!$"
 EventScript_JP_0825627D: @ 0x0825627D
-	@ event command: lock
-	.byte 0x6A
-	@ event command: faceplayer
-	.byte 0x5A
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8008
-	.2byte 0x0000
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8009
-	.2byte 0x0000
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x800A
-	.2byte 0x0000
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x800B
-	.2byte 0x0000
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08255186 @ gText_Rom_255186
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x05
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x0825634C @ EventScript_JP_0825634C
-	@ event command: specialvar_
-	.byte 0x26
-	.2byte 0x800D
-	.2byte 0x006B
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x0825630D @ EventScript_JP_0825630D
-	@ event command: message
-	.byte 0x67
-	.4byte 0x082551C3 @ gText_Rom_2551C3
-	@ event command: waitmessage
-	.byte 0x66
+	lock
+	faceplayer
+	setvar 0x8008, 0x0000
+	setvar 0x8009, 0x0000
+	setvar 0x800A, 0x0000
+	setvar 0x800B, 0x0000
+	loadword 0x00, gText_Rom_255186
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_0825634C
+	specialvar_ 0x800D, 0x006B
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_0825630D
+	message gText_Rom_2551C3
+	waitmessage
 	@ event command: special
 	.byte 0x25
 	.2byte 0x006D
-	@ event command: waitstate
-	.byte 0x27
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082562EA @ EventScript_JP_082562EA
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8008
-	.2byte 0x0001
+	waitstate
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_082562EA
+	setvar 0x8008, 0x0001
 	@ event command: special
 	.byte 0x25
 	.2byte 0x006C
-	@ event command: waitmessage
-	.byte 0x66
-	@ event command: waitbuttonpress
-	.byte 0x6D
-	@ event command: specialvar_
-	.byte 0x26
-	.2byte 0x800D
-	.2byte 0x006E
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082562F0 @ EventScript_JP_082562F0
-	@ event command: goto
-	.byte 0x05
-	.4byte 0x08256342 @ EventScript_JP_08256342
+	waitmessage
+	waitbuttonpress
+	specialvar_ 0x800D, 0x006E
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_082562F0
+	goto EventScript_JP_08256342
 EventScript_JP_082562EA: @ 0x082562EA
-	@ event command: goto
-	.byte 0x05
-	.4byte 0x0825634C @ EventScript_JP_0825634C
+	goto EventScript_JP_0825634C
 	.byte 0x02
 EventScript_JP_082562F0: @ 0x082562F0
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0825525F @ gText_Rom_25525F
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: specialvar_
-	.byte 0x26
-	.2byte 0x800D
-	.2byte 0x0070
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x08256360 @ EventScript_JP_08256360
-	@ event command: goto
-	.byte 0x05
-	.4byte 0x08256315 @ EventScript_JP_08256315
+	loadword 0x00, gText_Rom_25525F
+	callstd 0x04
+	specialvar_ 0x800D, 0x0070
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScript_JP_08256360
+	goto EventScript_JP_08256315
 EventScript_JP_0825630D: @ 0x0825630D
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082551E6 @ gText_Rom_2551E6
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
+	loadword 0x00, gText_Rom_2551E6
+	callstd 0x04
 EventScript_JP_08256315: @ 0x08256315
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0825528A @ gText_Rom_25528A
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x05
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x0825634C @ EventScript_JP_0825634C
-	@ event command: specialvar_
-	.byte 0x26
-	.2byte 0x800D
-	.2byte 0x006F
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x08256342 @ EventScript_JP_08256342
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082552C5 @ gText_Rom_2552C5
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_25528A
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_0825634C
+	specialvar_ 0x800D, 0x006F
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScript_JP_08256342
+	loadword 0x00, gText_Rom_2552C5
+	callstd 0x04
+	release
+	end
 EventScript_JP_08256342: @ 0x08256342
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08255225 @ gText_Rom_255225
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_255225
+	callstd 0x04
+	release
+	end
 EventScript_JP_0825634C: @ 0x0825634C
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082551B4 @ gText_Rom_2551B4
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_2551B4
+	callstd 0x04
+	release
+	end
 	.byte 0x0F, 0x00, 0xED, 0x52, 0x25, 0x08, 0x09, 0x04, 0x6C, 0x02
 EventScript_JP_08256360: @ 0x08256360
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	release
+	end

@@ -1,4 +1,5 @@
 	@ pret/pokeemerald-jp direct xref for 0x083B8098: decoration.s: AddDecorationIconObjectFromEventObject, gpu_pal_decompress_alloc_tag_and_upload, sub_081291AC
+.include "asm/macros/semantic_raw_structs.inc"
 	.globl gDecorationData_083B8098
 gDecorationData_083B8098:
 	.globl gUnknown_83B8098
@@ -9,173 +10,71 @@ gUnknown_83B8098: @ 0x083B8098
 
 Tileset_JP_083B809C: @ 0x083B809C
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_0835B068
-	.4byte TilesetPalettes_JP_0835C0E4
-	.4byte Metatiles_JP_083A2308
-	.4byte MetatileAttributes_JP_083A37C8
-	.4byte InitTilesetAnim_Underwater
+	semantic_tileset 1, 1, TilesetTiles_JP_0835B068, TilesetPalettes_JP_0835C0E4, Metatiles_JP_083A2308, MetatileAttributes_JP_083A37C8, InitTilesetAnim_Underwater
 
 Tileset_JP_083B80B4: @ 0x083B80B4
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_0835C2E4
-	.4byte TilesetPalettes_JP_0835CFE8
-	.4byte Metatiles_JP_083A3A60
-	.4byte MetatileAttributes_JP_083A5A30
-	.4byte 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0835C2E4, TilesetPalettes_JP_0835CFE8, Metatiles_JP_083A3A60, MetatileAttributes_JP_083A5A30, 0
 
 Tileset_JP_083B80CC: @ 0x083B80CC
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_0835D1E8
-	.4byte TilesetPalettes_JP_0835D960
-	.4byte Metatiles_JP_083A5E2A
-	.4byte MetatileAttributes_JP_083A690A
-	.4byte 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0835D1E8, TilesetPalettes_JP_0835D960, Metatiles_JP_083A5E2A, MetatileAttributes_JP_083A690A, 0
 
 Tileset_JP_083B80E4: @ 0x083B80E4
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_0835DB60
-	.4byte TilesetPalettes_JP_0835EDB0
-	.4byte Metatiles_JP_083A6A66
-	.4byte MetatileAttributes_JP_083A8516
-	.4byte InitTilesetAnim_BattleDome
+	semantic_tileset 1, 1, TilesetTiles_JP_0835DB60, TilesetPalettes_JP_0835EDB0, Metatiles_JP_083A6A66, MetatileAttributes_JP_083A8516, InitTilesetAnim_BattleDome
 
 Tileset_JP_083B80FC: @ 0x083B80FC
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_0835EFB0
-	.4byte TilesetPalettes_JP_0836019C
-	.4byte Metatiles_JP_083A886C
-	.4byte MetatileAttributes_JP_083A9E8C
-	.4byte 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0835EFB0, TilesetPalettes_JP_0836019C, Metatiles_JP_083A886C, MetatileAttributes_JP_083A9E8C, 0
 
 Tileset_JP_083B8114: @ 0x083B8114
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_0836039C
-	.4byte TilesetPalettes_JP_08361670
-	.4byte Metatiles_JP_083AA150
-	.4byte MetatileAttributes_JP_083AB700
-	.4byte 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0836039C, TilesetPalettes_JP_08361670, Metatiles_JP_083AA150, MetatileAttributes_JP_083AB700, 0
 
 Tileset_JP_083B812C: @ 0x083B812C
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_08361870
-	.4byte TilesetPalettes_JP_083623AC
-	.4byte Metatiles_JP_083AB9B6
-	.4byte MetatileAttributes_JP_083AC4C6
-	.4byte 0
+	semantic_tileset 1, 1, TilesetTiles_JP_08361870, TilesetPalettes_JP_083623AC, Metatiles_JP_083AB9B6, MetatileAttributes_JP_083AC4C6, 0
 
 Tileset_JP_083B8144: @ 0x083B8144
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_083625AC
-	.4byte TilesetPalettes_JP_083637BC
-	.4byte Metatiles_JP_083AC628
-	.4byte MetatileAttributes_JP_083AD3F8
-	.4byte InitTilesetAnim_Sootopolis
+	semantic_tileset 1, 1, TilesetTiles_JP_083625AC, TilesetPalettes_JP_083637BC, Metatiles_JP_083AC628, MetatileAttributes_JP_083AD3F8, InitTilesetAnim_Sootopolis
 
 Tileset_JP_083B815C: @ 0x083B815C
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_083639BC
-	.4byte TilesetPalettes_JP_08365404
-	.4byte Metatiles_JP_083AD5B2
-	.4byte MetatileAttributes_JP_083AEF92
-	.4byte 0
+	semantic_tileset 1, 1, TilesetTiles_JP_083639BC, TilesetPalettes_JP_08365404, Metatiles_JP_083AD5B2, MetatileAttributes_JP_083AEF92, 0
 
 Tileset_JP_083B8174: @ 0x083B8174
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_08365604
-	.4byte TilesetPalettes_JP_08365A24
-	.4byte Metatiles_JP_083AF2CE
-	.4byte MetatileAttributes_JP_083AF61E
-	.4byte 0
+	semantic_tileset 1, 1, TilesetTiles_JP_08365604, TilesetPalettes_JP_08365A24, Metatiles_JP_083AF2CE, MetatileAttributes_JP_083AF61E, 0
 
 Tileset_JP_083B818C: @ 0x083B818C
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_08365C24
-	.4byte TilesetPalettes_JP_083675F4
-	.4byte Metatiles_JP_083AF688
-	.4byte MetatileAttributes_JP_083B13E8
-	.4byte 0
+	semantic_tileset 1, 1, TilesetTiles_JP_08365C24, TilesetPalettes_JP_083675F4, Metatiles_JP_083AF688, MetatileAttributes_JP_083B13E8, 0
 
 Tileset_JP_083B81A4: @ 0x083B81A4
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_083677F4
-	.4byte TilesetPalettes_JP_083688E4
-	.4byte Metatiles_JP_083B1794
-	.4byte MetatileAttributes_JP_083B35F4
-	.4byte 0
+	semantic_tileset 1, 1, TilesetTiles_JP_083677F4, TilesetPalettes_JP_083688E4, Metatiles_JP_083B1794, MetatileAttributes_JP_083B35F4, 0
 
 Tileset_JP_083B81BC: @ 0x083B81BC
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_08368AE4
-	.4byte TilesetPalettes_JP_0836A678
-	.4byte Metatiles_JP_083B39C0
-	.4byte MetatileAttributes_JP_083B55F0
-	.4byte 0
+	semantic_tileset 1, 1, TilesetTiles_JP_08368AE4, TilesetPalettes_JP_0836A678, Metatiles_JP_083B39C0, MetatileAttributes_JP_083B55F0, 0
 
 Tileset_JP_083B81D4: @ 0x083B81D4
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_0836A878
-	.4byte TilesetPalettes_JP_0836B0CC
-	.4byte Metatiles_JP_083B5976
-	.4byte MetatileAttributes_JP_083B5F56
-	.4byte 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0836A878, TilesetPalettes_JP_0836B0CC, Metatiles_JP_083B5976, MetatileAttributes_JP_083B5F56, 0
 
 Tileset_JP_083B81EC: @ 0x083B81EC
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_0836B2CC
-	.4byte TilesetPalettes_JP_0836BD30
-	.4byte Metatiles_JP_083B6012
-	.4byte MetatileAttributes_JP_083B70E2
-	.4byte 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0836B2CC, TilesetPalettes_JP_0836BD30, Metatiles_JP_083B6012, MetatileAttributes_JP_083B70E2, 0
 
 Tileset_JP_083B8204: @ 0x083B8204
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_0836BF30
-	.4byte TilesetPalettes_JP_0836D898
-	.4byte Metatiles_JP_083B72FC
-	.4byte MetatileAttributes_JP_083B772C
-	.4byte 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0836BF30, TilesetPalettes_JP_0836D898, Metatiles_JP_083B72FC, MetatileAttributes_JP_083B772C, 0
 
 Tileset_JP_083B821C: @ 0x083B821C
 	@ struct Tileset
-	.byte 1, 1
-	.2byte 0
-	.4byte TilesetTiles_JP_0836DC98
-	.4byte TilesetPalettes_JP_0836DA98
-	.4byte Metatiles_JP_083B77B2
-	.4byte MetatileAttributes_JP_083B7AC2
-	.4byte 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0836DC98, TilesetPalettes_JP_0836DA98, Metatiles_JP_083B77B2, MetatileAttributes_JP_083B7AC2, 0
 
 MapBorder_JP_083B8234: @ 0x083B8234
 	@ 2x2 map border

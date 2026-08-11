@@ -13,56 +13,23 @@ gText_Rom_20F3B7: @ 0x0820F3B7
 EventScript_0820F3C6: @ 0x0820F3C6
 	.byte 0x00
 EventScript_JP_0820F3C7: @ 0x0820F3C7
-	@ event command: lock
-	.byte 0x6A
-	@ event command: faceplayer
-	.byte 0x5A
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820F3FB @ gText_Rom_20F3FB
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x05
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x0820F3E9 @ EventScript_JP_0820F3E9
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x0820F3F2 @ EventScript_JP_0820F3F2
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	lock
+	faceplayer
+	loadword 0x00, gText_Rom_20F3FB
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0001
+	call_if 0x01, EventScript_JP_0820F3E9
+	compare_var_to_value 0x800D, 0x0000
+	call_if 0x01, EventScript_JP_0820F3F2
+	release
+	end
 EventScript_0820F3E9: @ 0x0820F3E9
 EventScript_JP_0820F3E9: @ 0x0820F3E9
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820F42A @ gText_Rom_20F42A
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: return
-	.byte 0x03
+	loadword 0x00, gText_Rom_20F42A
+	callstd 0x04
+	return
 EventScript_0820F3F2: @ 0x0820F3F2
 EventScript_JP_0820F3F2: @ 0x0820F3F2
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820F45E @ gText_Rom_20F45E
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: return
-	.byte 0x03
+	loadword 0x00, gText_Rom_20F45E
+	callstd 0x04
+	return

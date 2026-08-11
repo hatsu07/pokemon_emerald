@@ -23,20 +23,15 @@ MapScriptTable_JP_08211292: @ 0x08211292
 	.4byte EventScript_JP_0821129C
 	.2byte 0
 EventScript_JP_0821129C: @ 0x0821129C
-	@ event command: turnobject
-	.byte 0x5B
-	.2byte 0x00FF
-	.byte 0x02
-	@ event command: end
-	.byte 0x02
+	turnobject 0x00FF, 0x02
+	end
 MapScriptTable_JP_082112A1: @ 0x082112A1
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_082112AB
 	.2byte 0
 EventScript_JP_082112AB: @ 0x082112AB
-	@ event command: lockall
-	.byte 0x69
+	lockall
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
@@ -59,15 +54,9 @@ EventScript_JP_082112AB: @ 0x082112AB
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08211369 @ gText_Rom_211369
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: closemessage
-	.byte 0x68
+	loadword 0x00, gText_Rom_211369
+	callstd 0x04
+	closemessage
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
@@ -79,9 +68,7 @@ EventScript_JP_082112AB: @ 0x082112AB
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: delay
-	.byte 0x28
-	.2byte 0x0014
+	delay 0x0014
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
@@ -93,15 +80,9 @@ EventScript_JP_082112AB: @ 0x082112AB
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082113B4 @ gText_Rom_2113B4
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: closemessage
-	.byte 0x68
+	loadword 0x00, gText_Rom_2113B4
+	callstd 0x04
+	closemessage
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
@@ -113,93 +94,50 @@ EventScript_JP_082112AB: @ 0x082112AB
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: delay
-	.byte 0x28
-	.2byte 0x0014
-	@ event command: dofieldeffect
-	.byte 0x9C
-	.2byte 0x003E
-	@ event command: waitfieldeffect
-	.byte 0x9E
-	.2byte 0x003E
-	@ event command: delay
-	.byte 0x28
-	.2byte 0x0028
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x4001
-	.2byte 0x0001
-	@ event command: call
-	.byte 0x04
-	.4byte 0x0824285B
-	@ event command: checkplayergender
-	.byte 0xA0
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x08211344 @ EventScript_JP_08211344
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x08211350 @ EventScript_JP_08211350
-	@ event command: end
-	.byte 0x02
+	delay 0x0014
+	dofieldeffect 0x003E
+	waitfieldeffect 0x003E
+	delay 0x0028
+	setvar 0x4001, 0x0001
+	call 0x0824285B
+	checkplayergender
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_08211344
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScript_JP_08211350
+	end
 EventScript_JP_08211344: @ 0x08211344
-	@ event command: setrespawn
-	.byte 0x9F
-	.2byte 0x0001
-	@ event command: fadescreenspeed
-	.byte 0x98
-	.byte 0x01
-	.byte 0x18
+	setrespawn 0x0001
+	fadescreenspeed 0x01, 0x18
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0110
-	@ event command: waitstate
-	.byte 0x27
-	@ event command: releaseall
-	.byte 0x6B
-	@ event command: end
-	.byte 0x02
+	waitstate
+	releaseall
+	end
 EventScript_JP_08211350: @ 0x08211350
-	@ event command: setrespawn
-	.byte 0x9F
-	.2byte 0x0002
-	@ event command: fadescreenspeed
-	.byte 0x98
-	.byte 0x01
-	.byte 0x18
+	setrespawn 0x0002
+	fadescreenspeed 0x01, 0x18
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0110
-	@ event command: waitstate
-	.byte 0x27
-	@ event command: releaseall
-	.byte 0x6B
-	@ event command: end
-	.byte 0x02
+	waitstate
+	releaseall
+	end
 Movement_JP_0821135C: @ 0x0821135C
 	@ object movement sequence
-	.byte 0x09 @ walk_up
-	.byte 0x09 @ walk_up
-	.byte 0x09 @ walk_up
-	.byte 0x09 @ walk_up
-	.byte 0x09 @ walk_up
-	.byte 0x09 @ walk_up
-	.byte 0xFE @ step_end
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
 Movement_JP_08211363: @ 0x08211363
 	@ object movement sequence
-	.byte 0x09 @ walk_up
-	.byte 0x09 @ walk_up
-	.byte 0x09 @ walk_up
-	.byte 0x09 @ walk_up
-	.byte 0x09 @ walk_up
-	.byte 0xFE @ step_end
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end

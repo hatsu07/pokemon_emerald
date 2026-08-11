@@ -18,62 +18,25 @@ MapScripts_JP_0820FD60: @ 0x0820FD60
 	.4byte MapScriptTable_JP_0820FDAA
 	.byte 0
 EventScript_JP_0820FD6B: @ 0x0820FD6B
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0010
+	setvar 0x8004, 0x0010
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00E7
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x0820FD8A @ EventScript_JP_0820FD8A
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x40C0
-	.2byte 0x0000
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x05
-	.4byte 0x0820FD9E @ EventScript_JP_0820FD9E
-	@ event command: end
-	.byte 0x02
+	compare_var_to_value 0x800D, 0x0000
+	call_if 0x01, EventScript_JP_0820FD8A
+	compare_var_to_value 0x40C0, 0x0000
+	call_if 0x05, EventScript_JP_0820FD9E
+	end
 EventScript_JP_0820FD8A: @ 0x0820FD8A
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x4001
-	.2byte 0x0001
-	@ event command: setobjectxyperm
-	.byte 0x63
-	.2byte 0x0001
-	.2byte 0x0003
-	.2byte 0x0002
-	@ event command: setobjectmovementtype
-	.byte 0x65
-	.2byte 0x0001
-	.byte 0x08
-	@ event command: setmaplayoutindex
-	.byte 0xA7
-	.2byte 0x01B9
-	@ event command: return
-	.byte 0x03
+	setvar 0x4001, 0x0001
+	setobjectxyperm 0x0001, 0x0003, 0x0002
+	setobjectmovementtype 0x0001, 0x08
+	setmaplayoutindex 0x01B9
+	return
 EventScript_JP_0820FD9E: @ 0x0820FD9E
-	@ event command: setobjectxyperm
-	.byte 0x63
-	.2byte 0x0001
-	.2byte 0x0002
-	.2byte 0x0002
-	@ event command: setobjectmovementtype
-	.byte 0x65
-	.2byte 0x0001
-	.byte 0x0A
-	@ event command: return
-	.byte 0x03
+	setobjectxyperm 0x0001, 0x0002, 0x0002
+	setobjectmovementtype 0x0001, 0x0A
+	return
 MapScriptTable_JP_0820FDAA: @ 0x0820FDAA
 	@ conditional map script table
 	.2byte 0x40C0, 0x0001
@@ -84,8 +47,7 @@ MapScriptTable_JP_0820FDAA: @ 0x0820FDAA
 	.4byte EventScript_JP_0820FDC4
 	.2byte 0
 EventScript_JP_0820FDC4: @ 0x0820FDC4
-	@ event command: lockall
-	.byte 0x69
+	lockall
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
@@ -100,9 +62,7 @@ EventScript_JP_0820FDC4: @ 0x0820FDC4
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: moveobjectoffscreen
-	.byte 0x64
-	.2byte 0x0001
+	moveobjectoffscreen 0x0001
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
@@ -110,131 +70,59 @@ EventScript_JP_0820FDC4: @ 0x0820FDC4
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x40C0
-	.2byte 0x0001
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x0820FE11 @ EventScript_JP_0820FE11
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x40C0
-	.2byte 0x0002
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x0820FE1A @ EventScript_JP_0820FE1A
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x40C0
-	.2byte 0x0003
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x0820FE23 @ EventScript_JP_0820FE23
+	compare_var_to_value 0x40C0, 0x0001
+	call_if 0x01, EventScript_JP_0820FE11
+	compare_var_to_value 0x40C0, 0x0002
+	call_if 0x01, EventScript_JP_0820FE1A
+	compare_var_to_value 0x40C0, 0x0003
+	call_if 0x01, EventScript_JP_0820FE23
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x40C0
-	.2byte 0x0000
-	@ event command: releaseall
-	.byte 0x6B
-	@ event command: end
-	.byte 0x02
+	setvar 0x40C0, 0x0000
+	releaseall
+	end
 EventScript_JP_0820FE11: @ 0x0820FE11
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082100DA @ gText_Rom_2100DA
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: return
-	.byte 0x03
+	loadword 0x00, gText_Rom_2100DA
+	callstd 0x04
+	return
 EventScript_JP_0820FE1A: @ 0x0820FE1A
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08210105 @ gText_Rom_210105
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: return
-	.byte 0x03
+	loadword 0x00, gText_Rom_210105
+	callstd 0x04
+	return
 EventScript_JP_0820FE23: @ 0x0820FE23
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082100AA @ gText_Rom_2100AA
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: return
-	.byte 0x03
+	loadword 0x00, gText_Rom_2100AA
+	callstd 0x04
+	return
 Movement_JP_0820FE2C: @ 0x0820FE2C
 	@ object movement sequence
-	.byte 0x08 @ walk_down
-	.byte 0xFE @ step_end
+	walk_down
+	step_end
 Movement_JP_0820FE2E: @ 0x0820FE2E
 	@ object movement sequence
-	.byte 0x0B @ walk_right
-	.byte 0x25 @ walk_in_place_fastest_down
-	.byte 0xFE @ step_end
+	walk_right
+	walk_in_place_fastest_down
+	step_end
 EventScript_JP_0820FE31: @ 0x0820FE31
-	@ event command: lock
-	.byte 0x6A
-	@ event command: faceplayer
-	.byte 0x5A
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0010
+	lock
+	faceplayer
+	setvar 0x8004, 0x0010
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00E7
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x0820FE5B @ EventScript_JP_0820FE5B
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x4001
-	.2byte 0x0001
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x0820FE65 @ EventScript_JP_0820FE65
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820FF53 @ gText_Rom_20FF53
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScript_JP_0820FE5B
+	compare_var_to_value 0x4001, 0x0001
+	goto_if 0x01, EventScript_JP_0820FE65
+	loadword 0x00, gText_Rom_20FF53
+	callstd 0x04
+	release
+	end
 EventScript_JP_0820FE5B: @ 0x0820FE5B
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820FF53 @ gText_Rom_20FF53
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20FF53
+	callstd 0x04
+	release
+	end
 EventScript_JP_0820FE65: @ 0x0820FE65
 	@ event command: special
 	.byte 0x25
@@ -242,100 +130,38 @@ EventScript_JP_0820FE65: @ 0x0820FE65
 	@ event command: special
 	.byte 0x25
 	.2byte 0x011C
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820FFC6 @ gText_Rom_20FFC6
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x05
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x0820FEEF @ EventScript_JP_0820FEEF
-	@ event command: call
-	.byte 0x04
-	.4byte 0x0820FEFC @ EventScript_JP_0820FEFC
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x0820FEEF @ EventScript_JP_0820FEEF
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0821005E @ gText_Rom_21005E
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x05
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x0820FEEF @ EventScript_JP_0820FEEF
+	loadword 0x00, gText_Rom_20FFC6
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_0820FEEF
+	call EventScript_JP_0820FEFC
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_0820FEEF
+	loadword 0x00, gText_Rom_21005E
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_0820FEEF
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028
-	@ event command: call
-	.byte 0x04
-	.4byte 0x082423E9
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x0820FEEF @ EventScript_JP_0820FEEF
+	call 0x082423E9
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_0820FEEF
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0027
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00F8
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08210081 @ gText_Rom_210081
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: closemessage
-	.byte 0x68
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800C
-	.2byte 0x0002
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x0820FF0B @ EventScript_JP_0820FF0B
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800C
-	.2byte 0x0004
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x0820FF1D @ EventScript_JP_0820FF1D
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800C
-	.2byte 0x0003
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x0820FF2F @ EventScript_JP_0820FF2F
+	loadword 0x00, gText_Rom_210081
+	callstd 0x04
+	closemessage
+	compare_var_to_value 0x800C, 0x0002
+	call_if 0x01, EventScript_JP_0820FF0B
+	compare_var_to_value 0x800C, 0x0004
+	call_if 0x01, EventScript_JP_0820FF1D
+	compare_var_to_value 0x800C, 0x0003
+	call_if 0x01, EventScript_JP_0820FF2F
 	@ event command: warp
 	.byte 0x39
 	.byte 0x0F
@@ -348,35 +174,19 @@ EventScript_JP_0820FEEF: @ 0x0820FEEF
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820FFFA @ gText_Rom_20FFFA
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20FFFA
+	callstd 0x04
+	release
+	end
 EventScript_JP_0820FEFC: @ 0x0820FEFC
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0821001A @ gText_Rom_21001A
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: fadescreen
-	.byte 0x97
-	.byte 0x01
+	loadword 0x00, gText_Rom_21001A
+	callstd 0x04
+	fadescreen 0x01
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0029
-	@ event command: waitstate
-	.byte 0x27
-	@ event command: return
-	.byte 0x03
+	waitstate
+	return
 EventScript_JP_0820FF0B: @ 0x0820FF0B
 	@ event command: applymovement
 	.byte 0x4F
@@ -389,8 +199,7 @@ EventScript_JP_0820FF0B: @ 0x0820FF0B
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: return
-	.byte 0x03
+	return
 EventScript_JP_0820FF1D: @ 0x0820FF1D
 	@ event command: applymovement
 	.byte 0x4F
@@ -403,8 +212,7 @@ EventScript_JP_0820FF1D: @ 0x0820FF1D
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: return
-	.byte 0x03
+	return
 EventScript_JP_0820FF2F: @ 0x0820FF2F
 	@ event command: applymovement
 	.byte 0x4F
@@ -417,33 +225,32 @@ EventScript_JP_0820FF2F: @ 0x0820FF2F
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: return
-	.byte 0x03
+	return
 Movement_JP_0820FF41: @ 0x0820FF41
 	@ object movement sequence
-	.byte 0x14 @ delay_16
-	.byte 0x09 @ walk_up
-	.byte 0x09 @ walk_up
-	.byte 0xFE @ step_end
+	delay_16
+	walk_up
+	walk_up
+	step_end
 Movement_JP_0820FF45: @ 0x0820FF45
 	@ object movement sequence
-	.byte 0x14 @ delay_16
-	.byte 0x0B @ walk_right
-	.byte 0x09 @ walk_up
-	.byte 0xFE @ step_end
+	delay_16
+	walk_right
+	walk_up
+	step_end
 Movement_JP_0820FF49: @ 0x0820FF49
 	@ object movement sequence
-	.byte 0x14 @ delay_16
-	.byte 0x0A @ walk_left
-	.byte 0x09 @ walk_up
-	.byte 0xFE @ step_end
+	delay_16
+	walk_left
+	walk_up
+	step_end
 Movement_JP_0820FF4D: @ 0x0820FF4D
 	@ object movement sequence
-	.byte 0x0A @ walk_left
-	.byte 0x28 @ walk_in_place_fastest_right
-	.byte 0xFE @ step_end
+	walk_left
+	walk_in_place_fastest_right
+	step_end
 Movement_JP_0820FF50: @ 0x0820FF50
 	@ object movement sequence
-	.byte 0x0B @ walk_right
-	.byte 0x27 @ walk_in_place_fastest_left
-	.byte 0xFE @ step_end
+	walk_right
+	walk_in_place_fastest_left
+	step_end

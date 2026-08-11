@@ -13,69 +13,27 @@ gText_Rom_203D38: @ 0x08203D38
 EventScript_08203D7C: @ 0x08203D7C
 	.byte 0x00
 EventScript_JP_08203D7D: @ 0x08203D7D
-	@ event command: lock
-	.byte 0x6A
-	@ event command: faceplayer
-	.byte 0x5A
-	@ event command: checkflag
-	.byte 0x2B
-	.2byte 0x0089
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x08203DA9 @ EventScript_JP_08203DA9
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08203DBC @ gText_Rom_203DBC
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: setorcopyvar
-	.byte 0x1A
-	.2byte 0x8000
-	.2byte 0x0153
-	@ event command: setorcopyvar
-	.byte 0x1A
-	.2byte 0x8001
-	.2byte 0x0001
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x00
-	@ event command: setflag
-	.byte 0x29
-	.2byte 0x0089
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08203E46 @ gText_Rom_203E46
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	lock
+	faceplayer
+	checkflag 0x0089
+	goto_if 0x01, EventScript_JP_08203DA9
+	loadword 0x00, gText_Rom_203DBC
+	callstd 0x04
+	setorcopyvar 0x8000, 0x0153
+	setorcopyvar 0x8001, 0x0001
+	callstd 0x00
+	setflag 0x0089
+	loadword 0x00, gText_Rom_203E46
+	callstd 0x04
+	release
+	end
 EventScript_08203DA9: @ 0x08203DA9
 EventScript_JP_08203DA9: @ 0x08203DA9
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08203E46 @ gText_Rom_203E46
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_203E46
+	callstd 0x04
+	release
+	end
 EventScript_JP_08203DB3: @ 0x08203DB3
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08203ED7 @ gText_Rom_203ED7
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x02
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_203ED7
+	callstd 0x02
+	end

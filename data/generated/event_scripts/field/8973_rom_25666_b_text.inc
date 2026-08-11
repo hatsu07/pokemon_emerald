@@ -13,68 +13,23 @@ gText_Rom_25666B: @ 0x0825666B
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_0825667C: @ 0x0825667C
 EventScript_JP_0825667C: @ 0x0825667C
-	@ event command: lockall
-	.byte 0x69
-	@ event command: checkflag
-	.byte 0x2B
-	.2byte 0x0869
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x00
-	.4byte 0x08256703 @ EventScript_JP_08256703
-	@ event command: checkpartymove
-	.byte 0x7C
-	.2byte 0x00F9
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0006
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x08256703 @ EventScript_JP_08256703
-	@ event command: setfieldeffectargument
-	.byte 0x9D
-	.byte 0x00
-	.2byte 0x800D
-	@ event command: bufferpartymonnick
-	.byte 0x7F
-	.byte 0x00
-	.2byte 0x800D
-	@ event command: buffermovename
-	.byte 0x82
-	.byte 0x01
-	.2byte 0x00F9
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08256710 @ gText_Rom_256710
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x05
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x0825670D @ EventScript_JP_0825670D
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0825665C @ gText_Rom_25665C
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: closemessage
-	.byte 0x68
-	@ event command: dofieldeffect
-	.byte 0x9C
-	.2byte 0x0025
-	@ event command: waitstate
-	.byte 0x27
-	@ event command: goto
-	.byte 0x05
-	.4byte 0x082566D1 @ EventScript_JP_082566D1
+	lockall
+	checkflag 0x0869
+	goto_if 0x00, EventScript_JP_08256703
+	checkpartymove 0x00F9
+	compare_var_to_value 0x800D, 0x0006
+	goto_if 0x01, EventScript_JP_08256703
+	setfieldeffectargument 0x00, 0x800D
+	bufferpartymonnick 0x00, 0x800D
+	buffermovename 0x01, 0x00F9
+	loadword 0x00, gText_Rom_256710
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_0825670D
+	loadword 0x00, gText_Rom_25665C
+	callstd 0x04
+	closemessage
+	dofieldeffect 0x0025
+	waitstate
+	goto EventScript_JP_082566D1
 	.byte 0x02

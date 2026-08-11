@@ -29,185 +29,70 @@ EventText_JP_082743BE: @ 0x082743BE
 	.byte 0x00, 0x02, 0x02, 0x16, 0x04, 0x40, 0x01, 0x00, 0x5B, 0xFF, 0x00, 0x02, 0x59, 0x01, 0x00, 0x1A
 	.byte 0x25, 0x02
 EventScript_JP_082743D7: @ 0x082743D7
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8007
-	.2byte 0x0000
-	@ event command: goto
-	.byte 0x05
-	.4byte 0x082743F8 @ EventScript_JP_082743F8
+	setvar 0x8007, 0x0000
+	goto EventScript_JP_082743F8
 	.byte 0x02
 EventScript_JP_082743E2: @ 0x082743E2
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8007
-	.2byte 0x0001
-	@ event command: goto
-	.byte 0x05
-	.4byte 0x082743F8 @ EventScript_JP_082743F8
+	setvar 0x8007, 0x0001
+	goto EventScript_JP_082743F8
 	.byte 0x02
 EventScript_JP_082743ED: @ 0x082743ED
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8007
-	.2byte 0x0002
-	@ event command: goto
-	.byte 0x05
-	.4byte 0x082743F8 @ EventScript_JP_082743F8
+	setvar 0x8007, 0x0002
+	goto EventScript_JP_082743F8
 	.byte 0x02
 EventScript_JP_082743F8: @ 0x082743F8
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0001
+	setvar 0x8004, 0x0001
+	setvar 0x8005, 0x0001
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EF
-	@ event command: addvar
-	.byte 0x17
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0002
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0001
-	@ event command: copyvar
-	.byte 0x19
-	.2byte 0x8006
-	.2byte 0x800D
+	addvar 0x800D, 0x0001
+	setvar 0x8004, 0x0002
+	setvar 0x8005, 0x0001
+	copyvar 0x8006, 0x800D
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EF
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0002
+	setvar 0x8004, 0x0001
+	setvar 0x8005, 0x0002
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00E7
-	@ event command: addvar
-	.byte 0x17
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0002
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0002
-	@ event command: copyvar
-	.byte 0x19
-	.2byte 0x8006
-	.2byte 0x800D
+	addvar 0x800D, 0x0001
+	setvar 0x8004, 0x0002
+	setvar 0x8005, 0x0002
+	copyvar 0x8006, 0x800D
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00E7
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0000
+	setvar 0x8004, 0x0000
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EF
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0005
+	setvar 0x8004, 0x0005
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EF
-	@ event command: copyvar
-	.byte 0x19
-	.2byte 0x8000
-	.2byte 0x800D
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x8000
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082744B9 @ EventScript_JP_082744B9
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x8000
-	.2byte 0x0001
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082744B9 @ EventScript_JP_082744B9
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x8000
-	.2byte 0x0002
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082744B9 @ EventScript_JP_082744B9
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x8000
-	.2byte 0x0003
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082744B9 @ EventScript_JP_082744B9
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x8000
-	.2byte 0x0004
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082744B9 @ EventScript_JP_082744B9
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x8000
-	.2byte 0x0005
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082744D2 @ EventScript_JP_082744D2
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x8000
-	.2byte 0x0006
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082744B9 @ EventScript_JP_082744B9
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x8000
-	.2byte 0x0007
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082744B9 @ EventScript_JP_082744B9
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x8000
-	.2byte 0x0008
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082744B9 @ EventScript_JP_082744B9
-	@ event command: end
-	.byte 0x02
+	copyvar 0x8000, 0x800D
+	compare_var_to_value 0x8000, 0x0000
+	goto_if 0x01, EventScript_JP_082744B9
+	compare_var_to_value 0x8000, 0x0001
+	goto_if 0x01, EventScript_JP_082744B9
+	compare_var_to_value 0x8000, 0x0002
+	goto_if 0x01, EventScript_JP_082744B9
+	compare_var_to_value 0x8000, 0x0003
+	goto_if 0x01, EventScript_JP_082744B9
+	compare_var_to_value 0x8000, 0x0004
+	goto_if 0x01, EventScript_JP_082744B9
+	compare_var_to_value 0x8000, 0x0005
+	goto_if 0x01, EventScript_JP_082744D2
+	compare_var_to_value 0x8000, 0x0006
+	goto_if 0x01, EventScript_JP_082744B9
+	compare_var_to_value 0x8000, 0x0007
+	goto_if 0x01, EventScript_JP_082744B9
+	compare_var_to_value 0x8000, 0x0008
+	goto_if 0x01, EventScript_JP_082744B9
+	end
 EventScript_JP_082744B9: @ 0x082744B9
 	@ event command: applymovement
 	.byte 0x4F
@@ -216,9 +101,7 @@ EventScript_JP_082744B9: @ 0x082744B9
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: call
-	.byte 0x04
-	.4byte 0x08233520
+	call 0x08233520
 	@ event command: warpsilent
 	.byte 0x3A
 	.byte 0x1A
@@ -235,9 +118,7 @@ EventScript_JP_082744D2: @ 0x082744D2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: call
-	.byte 0x04
-	.4byte 0x08233520
+	call 0x08233520
 	@ event command: warpsilent
 	.byte 0x3A
 	.byte 0x1A
@@ -247,210 +128,86 @@ EventScript_JP_082744D2: @ 0x082744D2
 	.2byte 0x0013
 	.byte 0x27, 0x02
 EventScript_JP_082744EB: @ 0x082744EB
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x4003
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x4002
-	.2byte 0x0001
-	@ event command: end
-	.byte 0x02
+	setvar 0x4003, 0x0001
+	setvar 0x4002, 0x0001
+	end
 EventScript_JP_082744F6: @ 0x082744F6
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x4003
-	.2byte 0x0000
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x4002
-	.2byte 0x0000
-	@ event command: lockall
-	.byte 0x69
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082341E4 @ gText_Rom_2341E4
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: closemessage
-	.byte 0x68
-	@ event command: end
-	.byte 0x02
+	setvar 0x4003, 0x0000
+	setvar 0x4002, 0x0000
+	lockall
+	loadword 0x00, gText_Rom_2341E4
+	callstd 0x04
+	closemessage
+	end
 EventScript_JP_0827450B: @ 0x0827450B
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x4003
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x4002
-	.2byte 0x0001
-	@ event command: end
-	.byte 0x02
+	setvar 0x4003, 0x0001
+	setvar 0x4002, 0x0001
+	end
 EventScript_JP_08274516: @ 0x08274516
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x4003
-	.2byte 0x0000
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x4002
-	.2byte 0x0000
-	@ event command: lockall
-	.byte 0x69
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082341E4 @ gText_Rom_2341E4
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: closemessage
-	.byte 0x68
-	@ event command: end
-	.byte 0x02
+	setvar 0x4003, 0x0000
+	setvar 0x4002, 0x0000
+	lockall
+	loadword 0x00, gText_Rom_2341E4
+	callstd 0x04
+	closemessage
+	end
 EventScript_JP_0827452B: @ 0x0827452B
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0019
+	setvar 0x8004, 0x0019
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EF
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x082745B1 @ EventScript_JP_082745B1
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x05
-	.4byte 0x082745BF @ EventScript_JP_082745BF
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0001
+	compare_var_to_value 0x800D, 0x0001
+	call_if 0x01, EventScript_JP_082745B1
+	compare_var_to_value 0x800D, 0x0001
+	call_if 0x05, EventScript_JP_082745BF
+	setvar 0x8004, 0x0001
+	setvar 0x8005, 0x0001
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EF
-	@ event command: addvar
-	.byte 0x17
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0002
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0001
-	@ event command: copyvar
-	.byte 0x19
-	.2byte 0x8006
-	.2byte 0x800D
+	addvar 0x800D, 0x0001
+	setvar 0x8004, 0x0002
+	setvar 0x8005, 0x0001
+	copyvar 0x8006, 0x800D
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EF
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0002
+	setvar 0x8004, 0x0001
+	setvar 0x8005, 0x0002
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00E7
-	@ event command: addvar
-	.byte 0x17
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0002
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0002
-	@ event command: copyvar
-	.byte 0x19
-	.2byte 0x8006
-	.2byte 0x800D
+	addvar 0x800D, 0x0001
+	setvar 0x8004, 0x0002
+	setvar 0x8005, 0x0002
+	copyvar 0x8006, 0x800D
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00E7
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0003
+	setvar 0x8004, 0x0003
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EF
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x082745CD @ EventScript_JP_082745CD
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x082745E5 @ EventScript_JP_082745E5
-	@ event command: waitstate
-	.byte 0x27
-	@ event command: end
-	.byte 0x02
+	compare_var_to_value 0x800D, 0x0001
+	call_if 0x01, EventScript_JP_082745CD
+	compare_var_to_value 0x800D, 0x0000
+	call_if 0x01, EventScript_JP_082745E5
+	waitstate
+	end
 EventScript_JP_082745B1: @ 0x082745B1
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0018
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0001
+	setvar 0x8004, 0x0018
+	setvar 0x8005, 0x0001
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EF
-	@ event command: return
-	.byte 0x03
+	return
 EventScript_JP_082745BF: @ 0x082745BF
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0018
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0000
+	setvar 0x8004, 0x0018
+	setvar 0x8005, 0x0000
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EF
-	@ event command: return
-	.byte 0x03
+	return
 EventScript_JP_082745CD: @ 0x082745CD
 	@ event command: applymovement
 	.byte 0x4F
@@ -459,9 +216,7 @@ EventScript_JP_082745CD: @ 0x082745CD
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: call
-	.byte 0x04
-	.4byte 0x08233520
+	call 0x08233520
 	@ event command: warpsilent
 	.byte 0x3A
 	.byte 0x1A
@@ -478,9 +233,7 @@ EventScript_JP_082745E5: @ 0x082745E5
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
-	@ event command: call
-	.byte 0x04
-	.4byte 0x08233520
+	call 0x08233520
 	@ event command: warpsilent
 	.byte 0x3A
 	.byte 0x1A
@@ -490,169 +243,68 @@ EventScript_JP_082745E5: @ 0x082745E5
 	.2byte 0x000A
 	.byte 0x03
 EventScript_JP_082745FD: @ 0x082745FD
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0007
+	setvar 0x8004, 0x0007
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EF
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0019
+	setvar 0x8004, 0x0019
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EF
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x082745B1 @ EventScript_JP_082745B1
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x05
-	.4byte 0x082745BF @ EventScript_JP_082745BF
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0001
+	compare_var_to_value 0x800D, 0x0001
+	call_if 0x01, EventScript_JP_082745B1
+	compare_var_to_value 0x800D, 0x0001
+	call_if 0x05, EventScript_JP_082745BF
+	setvar 0x8004, 0x0001
+	setvar 0x8005, 0x0001
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EF
-	@ event command: addvar
-	.byte 0x17
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0002
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0001
-	@ event command: copyvar
-	.byte 0x19
-	.2byte 0x8006
-	.2byte 0x800D
+	addvar 0x800D, 0x0001
+	setvar 0x8004, 0x0002
+	setvar 0x8005, 0x0001
+	copyvar 0x8006, 0x800D
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EF
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0002
+	setvar 0x8004, 0x0001
+	setvar 0x8005, 0x0002
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00E7
-	@ event command: addvar
-	.byte 0x17
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0002
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0002
-	@ event command: copyvar
-	.byte 0x19
-	.2byte 0x8006
-	.2byte 0x800D
+	addvar 0x800D, 0x0001
+	setvar 0x8004, 0x0002
+	setvar 0x8005, 0x0002
+	copyvar 0x8006, 0x800D
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00E7
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0003
+	setvar 0x8004, 0x0003
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EF
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x082745CD @ EventScript_JP_082745CD
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x082745E5 @ EventScript_JP_082745E5
-	@ event command: waitstate
-	.byte 0x27
-	@ event command: end
-	.byte 0x02
+	compare_var_to_value 0x800D, 0x0001
+	call_if 0x01, EventScript_JP_082745CD
+	compare_var_to_value 0x800D, 0x0000
+	call_if 0x01, EventScript_JP_082745E5
+	waitstate
+	end
 EventScript_JP_0827468B: @ 0x0827468B
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x4003
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x4002
-	.2byte 0x0001
-	@ event command: end
-	.byte 0x02
+	setvar 0x4003, 0x0001
+	setvar 0x4002, 0x0001
+	end
 EventScript_JP_08274696: @ 0x08274696
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x4003
-	.2byte 0x0000
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x4002
-	.2byte 0x0000
-	@ event command: lockall
-	.byte 0x69
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082341E4 @ gText_Rom_2341E4
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: closemessage
-	.byte 0x68
-	@ event command: end
-	.byte 0x02
+	setvar 0x4003, 0x0000
+	setvar 0x4002, 0x0000
+	lockall
+	loadword 0x00, gText_Rom_2341E4
+	callstd 0x04
+	closemessage
+	end
 EventScript_JP_082746AB: @ 0x082746AB
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0002
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0000
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8006
-	.2byte 0x0004
+	setvar 0x8004, 0x0002
+	setvar 0x8005, 0x0000
+	setvar 0x8006, 0x0004
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00E7
@@ -669,5 +321,5 @@ EventScript_JP_082746AB: @ 0x082746AB
 	.byte 0x0D, 0x80, 0x06, 0x80, 0x02, 0x16, 0x04, 0x80, 0x15, 0x00, 0x25, 0xE7, 0x00, 0x03
 Movement_JP_08274703: @ 0x08274703
 	@ object movement sequence
-	.byte 0x54 @ set_invisible
-	.byte 0xFE @ step_end
+	set_invisible
+	step_end

@@ -19,15 +19,9 @@ EventScript_JP_0820EAC7: @ 0x0820EAC7
 	.2byte 0x0000
 	.4byte 0x0820EBAD @ gText_Rom_20EBAD
 	.4byte 0x0820EBD7 @ gText_Rom_20EBD7
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820EBE4 @ gText_Rom_20EBE4
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x06
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20EBE4
+	callstd 0x06
+	end
 EventScript_JP_0820EADE: @ 0x0820EADE
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -36,15 +30,9 @@ EventScript_JP_0820EADE: @ 0x0820EADE
 	.2byte 0x0000
 	.4byte 0x0820EC01 @ gText_Rom_20EC01
 	.4byte 0x0820EC2B @ gText_Rom_20EC2B
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820EC47 @ gText_Rom_20EC47
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x06
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20EC47
+	callstd 0x06
+	end
 EventScript_JP_0820EAF5: @ 0x0820EAF5
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -53,15 +41,9 @@ EventScript_JP_0820EAF5: @ 0x0820EAF5
 	.2byte 0x0000
 	.4byte 0x0820EF83 @ gText_Rom_20EF83
 	.4byte 0x0820EF9B @ gText_Rom_20EF9B
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820EFB2 @ gText_Rom_20EFB2
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x06
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20EFB2
+	callstd 0x06
+	end
 EventScript_JP_0820EB0C: @ 0x0820EB0C
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -70,15 +52,9 @@ EventScript_JP_0820EB0C: @ 0x0820EB0C
 	.2byte 0x0000
 	.4byte 0x0820ECF5 @ gText_Rom_20ECF5
 	.4byte 0x0820ED1B @ gText_Rom_20ED1B
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820ED25 @ gText_Rom_20ED25
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x06
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20ED25
+	callstd 0x06
+	end
 EventScript_JP_0820EB23: @ 0x0820EB23
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -87,15 +63,9 @@ EventScript_JP_0820EB23: @ 0x0820EB23
 	.2byte 0x0000
 	.4byte 0x0820ED5F @ gText_Rom_20ED5F
 	.4byte 0x0820ED8D @ gText_Rom_20ED8D
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820ED9C @ gText_Rom_20ED9C
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x06
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20ED9C
+	callstd 0x06
+	end
 EventScript_JP_0820EB3A: @ 0x0820EB3A
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -104,15 +74,9 @@ EventScript_JP_0820EB3A: @ 0x0820EB3A
 	.2byte 0x0000
 	.4byte 0x0820EDE1 @ gText_Rom_20EDE1
 	.4byte 0x0820EE11 @ gText_Rom_20EE11
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820EE1C @ gText_Rom_20EE1C
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x06
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20EE1C
+	callstd 0x06
+	end
 EventScript_JP_0820EB51: @ 0x0820EB51
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -121,15 +85,9 @@ EventScript_JP_0820EB51: @ 0x0820EB51
 	.2byte 0x0000
 	.4byte 0x0820EE44 @ gText_Rom_20EE44
 	.4byte 0x0820EE74 @ gText_Rom_20EE74
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820EE7C @ gText_Rom_20EE7C
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x06
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20EE7C
+	callstd 0x06
+	end
 EventScript_JP_0820EB68: @ 0x0820EB68
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -138,15 +96,9 @@ EventScript_JP_0820EB68: @ 0x0820EB68
 	.2byte 0x0000
 	.4byte 0x0820EEA4 @ gText_Rom_20EEA4
 	.4byte 0x0820EEC9 @ gText_Rom_20EEC9
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820EECD @ gText_Rom_20EECD
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x06
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20EECD
+	callstd 0x06
+	end
 EventScript_JP_0820EB7F: @ 0x0820EB7F
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -155,15 +107,9 @@ EventScript_JP_0820EB7F: @ 0x0820EB7F
 	.2byte 0x0000
 	.4byte 0x0820EEE8 @ gText_Rom_20EEE8
 	.4byte 0x0820EF0E @ gText_Rom_20EF0E
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820EF29 @ gText_Rom_20EF29
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x06
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20EF29
+	callstd 0x06
+	end
 EventScript_JP_0820EB96: @ 0x0820EB96
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -172,12 +118,6 @@ EventScript_JP_0820EB96: @ 0x0820EB96
 	.2byte 0x0000
 	.4byte 0x0820EC6E @ gText_Rom_20EC6E
 	.4byte 0x0820ECA7 @ gText_Rom_20ECA7
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820ECC1 @ gText_Rom_20ECC1
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x06
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20ECC1
+	callstd 0x06
+	end

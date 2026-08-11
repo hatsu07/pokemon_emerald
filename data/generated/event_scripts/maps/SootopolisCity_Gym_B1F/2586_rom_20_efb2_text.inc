@@ -18,110 +18,44 @@ MapScripts_JP_0820EFD5: @ 0x0820EFD5
 	.4byte 0x0824790F
 	.byte 0
 EventScript_JP_0820EFE0: @ 0x0820EFE0
-	@ event command: setrespawn
-	.byte 0x9F
-	.2byte 0x000A
-	@ event command: end
-	.byte 0x02
+	setrespawn 0x000A
+	end
 EventScript_JP_0820EFE4: @ 0x0820EFE4
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x800B
-	.2byte 0x0001
-	@ event command: call
-	.byte 0x04
-	.4byte 0x082429B8
-	@ event command: waitmessage
-	.byte 0x66
-	@ event command: waitbuttonpress
-	.byte 0x6D
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	setvar 0x800B, 0x0001
+	call 0x082429B8
+	waitmessage
+	waitbuttonpress
+	release
+	end
 EventScript_JP_0820EFF2: @ 0x0820EFF2
-	@ event command: lock
-	.byte 0x6A
-	@ event command: faceplayer
-	.byte 0x5A
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x40CA
-	.2byte 0x0002
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x04
-	.4byte 0x0820F012 @ EventScript_JP_0820F012
-	@ event command: checkflag
-	.byte 0x2B
-	.2byte 0x0081
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x00
-	.4byte 0x0820F012 @ EventScript_JP_0820F012
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820F0D5 @ gText_Rom_20F0D5
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	lock
+	faceplayer
+	compare_var_to_value 0x40CA, 0x0002
+	goto_if 0x04, EventScript_JP_0820F012
+	checkflag 0x0081
+	goto_if 0x00, EventScript_JP_0820F012
+	loadword 0x00, gText_Rom_20F0D5
+	callstd 0x04
+	release
+	end
 EventScript_JP_0820F012: @ 0x0820F012
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820F046 @ gText_Rom_20F046
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20F046
+	callstd 0x04
+	release
+	end
 EventScript_JP_0820F01C: @ 0x0820F01C
-	@ event command: lock
-	.byte 0x6A
-	@ event command: faceplayer
-	.byte 0x5A
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x40CA
-	.2byte 0x0002
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x04
-	.4byte 0x0820F03C @ EventScript_JP_0820F03C
-	@ event command: checkflag
-	.byte 0x2B
-	.2byte 0x0081
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x00
-	.4byte 0x0820F03C @ EventScript_JP_0820F03C
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820F15E @ gText_Rom_20F15E
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	lock
+	faceplayer
+	compare_var_to_value 0x40CA, 0x0002
+	goto_if 0x04, EventScript_JP_0820F03C
+	checkflag 0x0081
+	goto_if 0x00, EventScript_JP_0820F03C
+	loadword 0x00, gText_Rom_20F15E
+	callstd 0x04
+	release
+	end
 EventScript_JP_0820F03C: @ 0x0820F03C
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820F117 @ gText_Rom_20F117
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20F117
+	callstd 0x04
+	release
+	end

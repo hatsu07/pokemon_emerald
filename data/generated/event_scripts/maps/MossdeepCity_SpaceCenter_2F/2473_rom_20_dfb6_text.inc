@@ -30,30 +30,16 @@ MapScriptTable_JP_0820E038: @ 0x0820E038
 	.4byte 0x0824699B
 	.2byte 0
 EventScript_JP_0820E042: @ 0x0820E042
-	@ event command: lock
-	.byte 0x6A
-	@ event command: faceplayer
-	.byte 0x5A
-	@ event command: goto
-	.byte 0x05
-	.4byte 0x08247913
+	lock
+	faceplayer
+	goto 0x08247913
 	.byte 0x6C, 0x02
 EventScript_JP_0820E04B: @ 0x0820E04B
-	@ event command: lock
-	.byte 0x6A
-	@ event command: faceplayer
-	.byte 0x5A
-	@ event command: goto
-	.byte 0x05
-	.4byte 0x08247970
+	lock
+	faceplayer
+	goto 0x08247970
 	.byte 0x6C, 0x02
 EventScript_JP_0820E054: @ 0x0820E054
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820E0BA @ gText_Rom_20E0BA
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x03
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20E0BA
+	callstd 0x03
+	end

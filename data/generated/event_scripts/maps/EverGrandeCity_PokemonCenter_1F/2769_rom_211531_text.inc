@@ -21,258 +21,90 @@ MapScripts_JP_082115F0: @ 0x082115F0
 	.4byte EventScript_JP_082115F6
 	.byte 0
 EventScript_JP_082115F6: @ 0x082115F6
-	@ event command: setflag
-	.byte 0x29
-	.2byte 0x089D
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x4090
-	.2byte 0x0001
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x08211612 @ EventScript_JP_08211612
-	@ event command: checkflag
-	.byte 0x2B
-	.2byte 0x00BC
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x0821160E @ EventScript_JP_0821160E
-	@ event command: end
-	.byte 0x02
+	setflag 0x089D
+	compare_var_to_value 0x4090, 0x0001
+	call_if 0x01, EventScript_JP_08211612
+	checkflag 0x00BC
+	call_if 0x01, EventScript_JP_0821160E
+	end
 EventScript_JP_0821160E: @ 0x0821160E
-	@ event command: setflag
-	.byte 0x29
-	.2byte 0x032E
-	@ event command: return
-	.byte 0x03
+	setflag 0x032E
+	return
 EventScript_JP_08211612: @ 0x08211612
-	@ event command: setobjectxyperm
-	.byte 0x63
-	.2byte 0x0001
-	.2byte 0x0009
-	.2byte 0x0003
-	@ event command: setobjectmovementtype
-	.byte 0x65
-	.2byte 0x0001
-	.byte 0x32
-	@ event command: setobjectxyperm
-	.byte 0x63
-	.2byte 0x0002
-	.2byte 0x0009
-	.2byte 0x0006
-	@ event command: setobjectmovementtype
-	.byte 0x65
-	.2byte 0x0002
-	.byte 0x33
-	@ event command: return
-	.byte 0x03
+	setobjectxyperm 0x0001, 0x0009, 0x0003
+	setobjectmovementtype 0x0001, 0x32
+	setobjectxyperm 0x0002, 0x0009, 0x0006
+	setobjectmovementtype 0x0002, 0x33
+	return
 EventScript_JP_08211629: @ 0x08211629
-	@ event command: lock
-	.byte 0x6A
-	@ event command: faceplayer
-	.byte 0x5A
-	@ event command: checkflag
-	.byte 0x2B
-	.2byte 0x0093
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x00
-	.4byte 0x0821164C @ EventScript_JP_0821164C
-	@ event command: checkflag
-	.byte 0x2B
-	.2byte 0x00BD
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x00
-	.4byte 0x082116A3 @ EventScript_JP_082116A3
-	@ event command: checkflag
-	.byte 0x2B
-	.2byte 0x0095
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x00
-	.4byte 0x082116BC @ EventScript_JP_082116BC
-	@ event command: goto
-	.byte 0x05
-	.4byte 0x08211670 @ EventScript_JP_08211670
+	lock
+	faceplayer
+	checkflag 0x0093
+	call_if 0x00, EventScript_JP_0821164C
+	checkflag 0x00BD
+	goto_if 0x00, EventScript_JP_082116A3
+	checkflag 0x0095
+	goto_if 0x00, EventScript_JP_082116BC
+	goto EventScript_JP_08211670
 	.byte 0x02
 EventScript_JP_0821164C: @ 0x0821164C
-	@ event command: setflag
-	.byte 0x29
-	.2byte 0x0093
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08211732 @ gText_Rom_211732
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08211749 @ gText_Rom_211749
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x05
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082116D5 @ EventScript_JP_082116D5
-	@ event command: goto
-	.byte 0x05
-	.4byte 0x082116E9 @ EventScript_JP_082116E9
+	setflag 0x0093
+	loadword 0x00, gText_Rom_211732
+	callstd 0x04
+	loadword 0x00, gText_Rom_211749
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_082116D5
+	goto EventScript_JP_082116E9
 	.byte 0x02
 EventScript_JP_08211670: @ 0x08211670
-	@ event command: message
-	.byte 0x67
-	.4byte 0x0821192C @ gText_Rom_21192C
-	@ event command: waitmessage
-	.byte 0x66
-	@ event command: multichoicedefault
-	.byte 0x70
-	.byte 0x14
-	.byte 0x08
-	.byte 0x0E
-	.byte 0x01
-	.byte 0x00
-	@ event command: copyvar
-	.byte 0x19
-	.2byte 0x8000
-	.2byte 0x800D
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x8000
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082116E9 @ EventScript_JP_082116E9
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x8000
-	.2byte 0x0001
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082116DF @ EventScript_JP_082116DF
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x8000
-	.2byte 0x007F
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082116DF @ EventScript_JP_082116DF
-	@ event command: end
-	.byte 0x02
+	message gText_Rom_21192C
+	waitmessage
+	multichoicedefault 0x14, 0x08, 0x0E, 0x01, 0x00
+	copyvar 0x8000, 0x800D
+	compare_var_to_value 0x8000, 0x0000
+	goto_if 0x01, EventScript_JP_082116E9
+	compare_var_to_value 0x8000, 0x0001
+	goto_if 0x01, EventScript_JP_082116DF
+	compare_var_to_value 0x8000, 0x007F
+	goto_if 0x01, EventScript_JP_082116DF
+	end
 EventScript_JP_082116A3: @ 0x082116A3
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0821185C @ gText_Rom_21185C
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x05
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082116D5 @ EventScript_JP_082116D5
-	@ event command: goto
-	.byte 0x05
-	.4byte 0x082116E9 @ EventScript_JP_082116E9
+	loadword 0x00, gText_Rom_21185C
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_082116D5
+	goto EventScript_JP_082116E9
 	.byte 0x02
 EventScript_JP_082116BC: @ 0x082116BC
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082118C7 @ gText_Rom_2118C7
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x05
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x082116D5 @ EventScript_JP_082116D5
-	@ event command: goto
-	.byte 0x05
-	.4byte 0x082116E9 @ EventScript_JP_082116E9
+	loadword 0x00, gText_Rom_2118C7
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_082116D5
+	goto EventScript_JP_082116E9
 	.byte 0x02
 EventScript_JP_082116D5: @ 0x082116D5
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0821181B @ gText_Rom_21181B
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_21181B
+	callstd 0x04
+	release
+	end
 EventScript_JP_082116DF: @ 0x082116DF
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0821195C @ gText_Rom_21195C
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_21195C
+	callstd 0x04
+	release
+	end
 EventScript_JP_082116E9: @ 0x082116E9
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082117FE @ gText_Rom_2117FE
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: call
-	.byte 0x04
-	.4byte 0x08242F21
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x408E
-	.2byte 0x0001
-	@ event command: clearflag
-	.byte 0x2A
-	.2byte 0x02E2
-	@ event command: setflag
-	.byte 0x29
-	.2byte 0x02E3
-	@ event command: setflag
-	.byte 0x29
-	.2byte 0x0371
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x405A
-	.2byte 0x0008
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x4063
-	.2byte 0x0002
-	@ event command: setflag
-	.byte 0x29
-	.2byte 0x032E
-	@ event command: setflag
-	.byte 0x29
-	.2byte 0x02CF
+	loadword 0x00, gText_Rom_2117FE
+	callstd 0x04
+	call 0x08242F21
+	setvar 0x408E, 0x0001
+	clearflag 0x02E2
+	setflag 0x02E3
+	setflag 0x0371
+	setvar 0x405A, 0x0008
+	setvar 0x4063, 0x0002
+	setflag 0x032E
+	setflag 0x02CF
 	@ event command: warp
 	.byte 0x39
 	.byte 0x00
@@ -282,26 +114,12 @@ EventScript_JP_082116E9: @ 0x082116E9
 	.2byte 0x0033
 	.byte 0x27, 0x6B, 0x02
 EventScript_JP_0821171F: @ 0x0821171F
-	@ event command: lock
-	.byte 0x6A
-	@ event command: faceplayer
-	.byte 0x5A
-	@ event command: waitse
-	.byte 0x30
-	@ event command: playmoncry
-	.byte 0xA1
-	.2byte 0x0135
-	.2byte 0x0000
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082119A3 @ gText_Rom_2119A3
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: waitmoncry
-	.byte 0xC5
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	lock
+	faceplayer
+	waitse
+	playmoncry 0x0135, 0x0000
+	loadword 0x00, gText_Rom_2119A3
+	callstd 0x04
+	waitmoncry
+	release
+	end

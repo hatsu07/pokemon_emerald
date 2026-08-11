@@ -13,22 +13,10 @@ gText_Rom_20A4F2: @ 0x0820A4F2
 EventScript_0820A51A: @ 0x0820A51A
 	.byte 0x00
 EventScript_JP_0820A51B: @ 0x0820A51B
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820A52D @ gText_Rom_20A52D
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x02
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20A52D
+	callstd 0x02
+	end
 EventScript_JP_0820A524: @ 0x0820A524
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820A56C @ gText_Rom_20A56C
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x02
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20A56C
+	callstd 0x02
+	end

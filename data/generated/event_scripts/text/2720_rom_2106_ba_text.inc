@@ -21,116 +21,52 @@ MapScriptTable_JP_082106DD: @ 0x082106DD
 	.4byte EventScript_JP_082106E7
 	.2byte 0
 EventScript_JP_082106E7: @ 0x082106E7
-	@ event command: lockall
-	.byte 0x69
-	@ event command: call
-	.byte 0x04
-	.4byte 0x082434F8
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x409C
-	.2byte 0x0004
-	@ event command: releaseall
-	.byte 0x6B
-	@ event command: end
-	.byte 0x02
+	lockall
+	call 0x082434F8
+	setvar 0x409C, 0x0004
+	releaseall
+	end
 EventScript_JP_082106F4: @ 0x082106F4
-	@ event command: checkflag
-	.byte 0x2B
-	.2byte 0x04FE
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x08210709 @ EventScript_JP_08210709
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x409C
-	.2byte 0x0004
-	@ event command: call_if
-	.byte 0x07
-	.byte 0x01
-	.4byte 0x0821070F @ EventScript_JP_0821070F
-	@ event command: end
-	.byte 0x02
+	checkflag 0x04FE
+	call_if 0x01, EventScript_JP_08210709
+	compare_var_to_value 0x409C, 0x0004
+	call_if 0x01, EventScript_JP_0821070F
+	end
 EventScript_JP_08210709: @ 0x08210709
-	@ event command: call
-	.byte 0x04
-	.4byte 0x0824353F
-	@ event command: return
-	.byte 0x03
+	call 0x0824353F
+	return
 EventScript_JP_0821070F: @ 0x0821070F
-	@ event command: call
-	.byte 0x04
-	.4byte 0x082435E2
-	@ event command: return
-	.byte 0x03
+	call 0x082435E2
+	return
 EventScript_JP_08210715: @ 0x08210715
-	@ event command: lock
-	.byte 0x6A
-	@ event command: faceplayer
-	.byte 0x5A
-	@ event command: checkflag
-	.byte 0x2B
-	.2byte 0x04FE
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x0821073C @ EventScript_JP_0821073C
-	@ event command: playbgm
-	.byte 0x33
-	.2byte 0x01C2
-	.byte 0x00
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08210760 @ gText_Rom_210760
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
+	lock
+	faceplayer
+	checkflag 0x04FE
+	goto_if 0x01, EventScript_JP_0821073C
+	playbgm 0x01C2, 0x00
+	loadword 0x00, gText_Rom_210760
+	callstd 0x04
 	@ event command: trainerbattle
 	.byte 0x5C
 	.byte 0x03
 	.2byte 0x0108
 	.2byte 0x0000
 	.4byte 0x08210814 @ gText_Rom_210814
-	@ event command: goto
-	.byte 0x05
-	.4byte 0x08210746 @ EventScript_JP_08210746
+	goto EventScript_JP_08210746
 	.byte 0x02
 EventScript_JP_0821073C: @ 0x0821073C
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08210822 @ gText_Rom_210822
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_210822
+	callstd 0x04
+	release
+	end
 EventScript_JP_08210746: @ 0x08210746
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0000
+	setvar 0x8004, 0x0000
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00AA
-	@ event command: setflag
-	.byte 0x29
-	.2byte 0x04FE
-	@ event command: call
-	.byte 0x04
-	.4byte 0x0824347B
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08210822 @ gText_Rom_210822
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	setflag 0x04FE
+	call 0x0824347B
+	loadword 0x00, gText_Rom_210822
+	callstd 0x04
+	release
+	end

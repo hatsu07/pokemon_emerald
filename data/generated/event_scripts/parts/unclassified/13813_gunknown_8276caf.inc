@@ -3,26 +3,15 @@ gUnknown_8276CAF: @ 0x08276CAF
 	@ analyzed canonical ROM range 0x08276CAF-0x08276D0B
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_08276CAF: @ 0x08276CAF
-	@ event command: lockall
-	.byte 0x69
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0007
+	lockall
+	setvar 0x8004, 0x0007
 	@ event command: special
 	.byte 0x25
 	.2byte 0x01F8
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0823BEEC @ gText_Rom_23BEEC
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x04
-	@ event command: releaseall
-	.byte 0x6B
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_23BEEC
+	callstd 0x04
+	releaseall
+	end
 	.byte 0x16, 0x02, 0x40, 0x01, 0x00, 0x16, 0x04, 0x80, 0x09, 0x00, 0x25, 0xF8, 0x01, 0x21, 0x0D, 0x80
 	.byte 0x01, 0x00, 0x06, 0x01, 0xDB, 0x6C, 0x27, 0x08, 0x02
 EventText_JP_08276CDB: @ 0x08276CDB
@@ -43,18 +32,11 @@ EventScript_JP_08276D0C: @ 0x08276D0C
 	.2byte 0x0000
 	.4byte 0x0822D756 @ gText_Rom_22D756
 	.4byte 0x0822D756 @ gText_Rom_22D756
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x000B
+	setvar 0x8004, 0x000B
 	@ event command: special
 	.byte 0x25
 	.2byte 0x01F8
-	@ event command: waitmessage
-	.byte 0x66
-	@ event command: waitbuttonpress
-	.byte 0x6D
-	@ event command: closemessage
-	.byte 0x68
-	@ event command: end
-	.byte 0x02
+	waitmessage
+	waitbuttonpress
+	closemessage
+	end

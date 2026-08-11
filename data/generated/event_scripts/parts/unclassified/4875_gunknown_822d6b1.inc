@@ -3,73 +3,32 @@ gUnknown_822D6B1: @ 0x0822D6B1
 	@ analyzed canonical ROM range 0x0822D6B1-0x0822D717
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_0822D6B1: @ 0x0822D6B1
-	@ event command: call
-	.byte 0x04
-	.4byte 0x08221FB3
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0002
+	call 0x08221FB3
+	setvar 0x8004, 0x0001
+	setvar 0x8005, 0x0002
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00E7
-	@ event command: addvar
-	.byte 0x17
-	.2byte 0x800D
-	.2byte 0x0001
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0002
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0002
-	@ event command: copyvar
-	.byte 0x19
-	.2byte 0x8006
-	.2byte 0x800D
+	addvar 0x800D, 0x0001
+	setvar 0x8004, 0x0002
+	setvar 0x8005, 0x0002
+	copyvar 0x8006, 0x800D
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00E7
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x800D
-	.2byte 0x0007
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x0822D70E @ EventScript_JP_0822D70E
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0006
+	compare_var_to_value 0x800D, 0x0007
+	goto_if 0x01, EventScript_JP_0822D70E
+	setvar 0x8004, 0x0006
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00F0
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0002
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8005
-	.2byte 0x0000
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8006
-	.2byte 0x0000
+	setvar 0x8004, 0x0002
+	setvar 0x8005, 0x0000
+	setvar 0x8006, 0x0000
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00E7
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x800D
-	.2byte 0x0000
+	setvar 0x800D, 0x0000
 	@ event command: warp
 	.byte 0x39
 	.byte 0x1A
@@ -99,61 +58,36 @@ EventScript_JP_0822D718: @ 0x0822D718
 	.2byte 0x0000
 	.4byte 0x0822D756 @ gText_Rom_22D756
 	.4byte 0x0822D756 @ gText_Rom_22D756
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x000A
+	setvar 0x8004, 0x000A
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00F0
-	@ event command: waitmessage
-	.byte 0x66
-	@ event command: waitbuttonpress
-	.byte 0x6D
-	@ event command: closemessage
-	.byte 0x68
-	@ event command: releaseall
-	.byte 0x6B
-	@ event command: end
-	.byte 0x02
+	waitmessage
+	waitbuttonpress
+	closemessage
+	releaseall
+	end
 	.globl gUnknown_822D733
 gUnknown_822D733: @ 0x0822D733
 	@ analyzed canonical ROM range 0x0822D733-0x0822D750
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_0822D733: @ 0x0822D733
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0007
+	setvar 0x8004, 0x0007
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00F0
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x01
-	@ event command: compare_var_to_value
-	.byte 0x21
-	.2byte 0x8007
-	.2byte 0x0000
-	@ event command: goto_if
-	.byte 0x06
-	.byte 0x01
-	.4byte 0x0822D750 @ EventScript_JP_0822D750
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x8004
-	.2byte 0x0008
+	callstd 0x01
+	compare_var_to_value 0x8007, 0x0000
+	goto_if 0x01, EventScript_JP_0822D750
+	setvar 0x8004, 0x0008
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00F0
 EventScript_JP_0822D750: @ 0x0822D750
-	@ event command: end
-	.byte 0x02
+	end
 	.globl gUnknown_822D751
 gUnknown_822D751: @ 0x0822D751
 	@ analyzed canonical ROM range 0x0822D751-0x0822D755
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_0822D751: @ 0x0822D751
-	@ event command: goto
-	.byte 0x05
-	.4byte 0x0822D60B @ EventScript_JP_0822D60B
+	goto EventScript_JP_0822D60B

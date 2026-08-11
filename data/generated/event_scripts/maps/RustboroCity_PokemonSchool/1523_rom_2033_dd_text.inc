@@ -18,57 +18,25 @@ MapScripts_JP_082034B3: @ 0x082034B3
 	.4byte 0x0824790F
 	.byte 0
 EventScript_JP_082034BE: @ 0x082034BE
-	@ event command: setrespawn
-	.byte 0x9F
-	.2byte 0x0006
-	@ event command: call
-	.byte 0x04
-	.4byte 0x08242978
-	@ event command: end
-	.byte 0x02
+	setrespawn 0x0006
+	call 0x08242978
+	end
 EventScript_JP_082034C7: @ 0x082034C7
-	@ event command: setvar
-	.byte 0x16
-	.2byte 0x800B
-	.2byte 0x0001
-	@ event command: call
-	.byte 0x04
-	.4byte 0x082429B8
-	@ event command: waitmessage
-	.byte 0x66
-	@ event command: waitbuttonpress
-	.byte 0x6D
-	@ event command: release
-	.byte 0x6C
-	@ event command: end
-	.byte 0x02
+	setvar 0x800B, 0x0001
+	call 0x082429B8
+	waitmessage
+	waitbuttonpress
+	release
+	end
 EventScript_JP_082034D5: @ 0x082034D5
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x082034F0 @ gText_Rom_2034F0
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x02
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_2034F0
+	callstd 0x02
+	end
 EventScript_JP_082034DE: @ 0x082034DE
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x0820353E @ gText_Rom_20353E
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x02
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_20353E
+	callstd 0x02
+	end
 EventScript_JP_082034E7: @ 0x082034E7
-	@ event command: loadword
-	.byte 0x0F
-	.byte 0x00
-	.4byte 0x08203580 @ gText_Rom_203580
-	@ event command: callstd
-	.byte 0x09
-	.byte 0x02
-	@ event command: end
-	.byte 0x02
+	loadword 0x00, gText_Rom_203580
+	callstd 0x02
+	end
