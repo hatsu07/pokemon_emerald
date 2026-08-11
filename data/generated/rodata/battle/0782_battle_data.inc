@@ -4,49 +4,49 @@
 	@ baserom.gba is used only by tools/semanticize_priority_a_full.py; build uses the extracted files below.
 	.globl gFrontierPassMapScreen_Gfx
 gFrontierPassMapScreen_Gfx: @ 0x08548168
-	.incbin "graphics/frontier_pass/rom_exact/map_screen.4bpp.lz"
+	.incbin "build/graphics/priority_a/frontier_pass/map_screen.4bpp.lz"
 	.if (. - gFrontierPassMapScreen_Gfx) != 0xFEC
 	.error "gFrontierPassMapScreen_Gfx exact asset size mismatch"
 	.endif
 	.globl gFrontierPassCursor_Gfx
 gFrontierPassCursor_Gfx: @ 0x08549154
-	.incbin "graphics/frontier_pass/rom_exact/cursor.4bpp.lz"
+	.incbin "build/graphics/priority_a/frontier_pass/cursor.4bpp.lz"
 	.if (. - gFrontierPassCursor_Gfx) != 0x9C
 	.error "gFrontierPassCursor_Gfx exact asset size mismatch"
 	.endif
 	.globl gFrontierPassMedals_Gfx
 gFrontierPassMedals_Gfx: @ 0x085491F0
-	.incbin "graphics/frontier_pass/rom_exact/medals.4bpp.lz"
+	.incbin "build/graphics/priority_a/frontier_pass/medals.4bpp.lz"
 	.if (. - gFrontierPassMedals_Gfx) != 0x264
 	.error "gFrontierPassMedals_Gfx exact asset size mismatch"
 	.endif
 	.globl gFrontierPassHeads_Gfx
 gFrontierPassHeads_Gfx: @ 0x08549454
-	.incbin "graphics/frontier_pass/rom_exact/map_heads.4bpp.lz"
+	.incbin "build/graphics/priority_a/frontier_pass/map_heads.4bpp.lz"
 	.if (. - gFrontierPassHeads_Gfx) != 0xBC
 	.error "gFrontierPassHeads_Gfx exact asset size mismatch"
 	.endif
 	.globl gFrontierPassMapCursor_Gfx
 gFrontierPassMapCursor_Gfx: @ 0x08549510
-	.incbin "graphics/frontier_pass/rom_exact/map_cursor.4bpp.lz"
+	.incbin "build/graphics/priority_a/frontier_pass/map_cursor.4bpp.lz"
 	.if (. - gFrontierPassMapCursor_Gfx) != 0x100
 	.error "gFrontierPassMapCursor_Gfx exact asset size mismatch"
 	.endif
 	.globl gFrontierPassBg_Tilemap
 gFrontierPassBg_Tilemap: @ 0x08549610
-	.incbin "graphics/frontier_pass/rom_exact/pass_bg.bin.lz"
+	.incbin "build/graphics/priority_a/frontier_pass/pass_bg.bin.lz"
 	.if (. - gFrontierPassBg_Tilemap) != 0x2E8
 	.error "gFrontierPassBg_Tilemap exact asset size mismatch"
 	.endif
 	.globl gFrontierPassMapScreen_Tilemap
 gFrontierPassMapScreen_Tilemap: @ 0x085498F8
-	.incbin "graphics/frontier_pass/rom_exact/map_screen.bin.lz"
+	.incbin "build/graphics/priority_a/frontier_pass/map_screen.bin.lz"
 	.if (. - gFrontierPassMapScreen_Tilemap) != 0x260
 	.error "gFrontierPassMapScreen_Tilemap exact asset size mismatch"
 	.endif
 	.globl gFrontierPassMapAndCardZoomedOut_Tilemap
 gFrontierPassMapAndCardZoomedOut_Tilemap: @ 0x08549B58
-	.incbin "graphics/frontier_pass/rom_exact/small_map_and_card.bin.lz"
+	.incbin "build/graphics/priority_a/frontier_pass/small_map_and_card.bin.lz"
 	.if (. - gFrontierPassMapAndCardZoomedOut_Tilemap) != 0x260
 	.error "gFrontierPassMapAndCardZoomedOut_Tilemap exact asset size mismatch"
 	.endif
@@ -58,19 +58,19 @@ gFrontierPassCancelButtonHighlighted_Tilemap: @ 0x08549DD0
 	.2byte 0x0003, 0x0004, 0x0005, 0x0006, 0x0007, 0x0008, 0x000A, 0x000B, 0x000C, 0x000D, 0x000E, 0x000F
 	.globl gFrontierPassBattleRecord_Tilemap
 gFrontierPassBattleRecord_Tilemap: @ 0x08549DE8
-	.incbin "graphics/frontier_pass/rom_exact/record_frame.bin.lz"
+	.incbin "build/graphics/priority_a/frontier_pass/record_frame.bin.lz"
 	.if (. - gFrontierPassBattleRecord_Tilemap) != 0x38
 	.error "gFrontierPassBattleRecord_Tilemap exact asset size mismatch"
 	.endif
 	.globl gFrontierPassMapAndCard_Gfx
 gFrontierPassMapAndCard_Gfx: @ 0x08549E20
-	.incbin "graphics/frontier_pass/rom_exact/map_and_card.4bpp.lz"
+	.incbin "build/graphics/priority_a/frontier_pass/map_and_card.4bpp.lz"
 	.if (. - gFrontierPassMapAndCard_Gfx) != 0xFFC
 	.error "gFrontierPassMapAndCard_Gfx exact asset size mismatch"
 	.endif
 	.globl gFrontierPassMapAndCardZooming_Tilemap
 gFrontierPassMapAndCardZooming_Tilemap: @ 0x0854AE1C
-	.incbin "graphics/frontier_pass/rom_exact/small_map_and_card_affine.bin.lz"
+	.incbin "build/graphics/priority_a/frontier_pass/small_map_and_card_affine.bin.lz"
 	.if (. - gFrontierPassMapAndCardZooming_Tilemap) != 0xE8
 	.error "gFrontierPassMapAndCardZooming_Tilemap exact asset size mismatch"
 	.endif

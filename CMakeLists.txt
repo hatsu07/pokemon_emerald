@@ -127,7 +127,7 @@ set(GRAPHICS_RELATIVE_OUTPUTS)
 foreach(SCAN_FILE IN LISTS GRAPHICS_SCAN_FILES)
     file(READ "${SCAN_FILE}" SCAN_CONTENT)
     string(REGEX MATCHALL
-        "build/graphics/[A-Za-z0-9_./-]+\\.(1bpp|4bpp(\\.lz)?|gbapal(\\.lz)?|hwjpnfont|latfont|bin\\.lz)"
+        "build/graphics/[A-Za-z0-9_./-]+\\.(1bpp|4bpp(\\.lz)?|8bpp(\\.lz)?|gbapal(\\.lz)?|hwjpnfont|latfont|bin\\.lz)"
         FOUND_GRAPHICS
         "${SCAN_CONTENT}")
     list(APPEND GRAPHICS_RELATIVE_OUTPUTS ${FOUND_GRAPHICS})
@@ -147,6 +147,62 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     get_filename_component(OUTPUT_DIR "${OUTPUT_ABS}" DIRECTORY)
 
     if("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/priority_a/(.+)[.](4bpp|8bpp)[.]lz$")
+        set(PRIORITY_A_STEM "${CMAKE_MATCH_1}")
+        set(PRIORITY_A_BPP "${CMAKE_MATCH_2}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/priority_a/${PRIORITY_A_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
+                repack-png
+                --key "${PRIORITY_A_STEM}.${PRIORITY_A_BPP}.lz"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/priority_a/(.+)[.]bin[.]lz$")
+        set(PRIORITY_A_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_INC
+            "${CMAKE_SOURCE_DIR}/graphics/priority_a/${PRIORITY_A_STEM}.tilemap.inc")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
+                repack-inc
+                --key "${PRIORITY_A_STEM}.bin.lz"
+                "${INPUT_INC}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_INC}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/priority_a/(.+)[.]gbapal$")
+        set(PRIORITY_A_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/priority_a/${PRIORITY_A_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
+                encode-palette
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/analyzed/(.+)[.]4bpp[.]lz$")
         set(STEM "${CMAKE_MATCH_1}")
         set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/analyzed/${STEM}.png")

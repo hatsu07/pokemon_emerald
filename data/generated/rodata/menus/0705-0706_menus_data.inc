@@ -11,67 +11,67 @@ gBattleAnimFlashingCircleImpactSpriteTemplate: @ 0x085176BC
 	rodata_sprite_template 0x2798, 0x2798, 0x084FD010, 0x082BF304, 0, 0x082BF310, 0x080A970D
 	.globl gTitleScreenPressStart_Pal
 gTitleScreenPressStart_Pal: @ 0x085176D4
-	.incbin "graphics/title_screen/rom_exact/press_start.gbapal"
+	.incbin "build/graphics/priority_a/title_screen/press_start_palette.gbapal"
 	.if (. - gTitleScreenPressStart_Pal) != 0x20
 	.error "gTitleScreenPressStart_Pal exact asset size mismatch"
 	.endif
 	.globl gTitleScreenPressStart_Gfx
 gTitleScreenPressStart_Gfx: @ 0x085176F4
-	.incbin "graphics/title_screen/rom_exact/press_start.4bpp.lz"
+	.incbin "build/graphics/priority_a/title_screen/press_start.4bpp.lz"
 	.if (. - gTitleScreenPressStart_Gfx) != 0x3AC
 	.error "gTitleScreenPressStart_Gfx exact asset size mismatch"
 	.endif
 	.globl gTitleScreenPokemonLogo_Tilemap
 gTitleScreenPokemonLogo_Tilemap: @ 0x08517AA0
-	.incbin "graphics/title_screen/rom_exact/pokemon_logo.bin.lz"
+	.incbin "build/graphics/priority_a/title_screen/pokemon_logo.bin.lz"
 	.if (. - gTitleScreenPokemonLogo_Tilemap) != 0xB8
 	.error "gTitleScreenPokemonLogo_Tilemap exact asset size mismatch"
 	.endif
 	.globl gTitleScreenBgPalettes
 gTitleScreenBgPalettes: @ 0x08517B58
-	.incbin "graphics/title_screen/rom_exact/bg_palettes.gbapal"
+	.incbin "build/graphics/priority_a/title_screen/bg_palettes.gbapal"
 	.if (. - gTitleScreenBgPalettes) != 0xC0
 	.error "gTitleScreenBgPalettes exact asset size mismatch"
 	.endif
 	.globl gTitleScreenPokemonLogo_Gfx
 gTitleScreenPokemonLogo_Gfx: @ 0x08517C18
-	.incbin "graphics/title_screen/rom_exact/pokemon_logo.8bpp.lz"
+	.incbin "build/graphics/priority_a/title_screen/pokemon_logo.8bpp.lz"
 	.if (. - gTitleScreenPokemonLogo_Gfx) != 0x1774
 	.error "gTitleScreenPokemonLogo_Gfx exact asset size mismatch"
 	.endif
 	.globl gTitleScreenEmeraldVersion_Gfx
 gTitleScreenEmeraldVersion_Gfx: @ 0x0851938C
-	.incbin "graphics/title_screen/rom_exact/emerald_version.8bpp.lz"
+	.incbin "build/graphics/priority_a/title_screen/emerald_version.8bpp.lz"
 	.if (. - gTitleScreenEmeraldVersion_Gfx) != 0x728
 	.error "gTitleScreenEmeraldVersion_Gfx exact asset size mismatch"
 	.endif
 	.globl gTitleScreenRayquaza_Gfx
 gTitleScreenRayquaza_Gfx: @ 0x08519AB4
-	.incbin "graphics/title_screen/rom_exact/rayquaza.4bpp.lz"
+	.incbin "build/graphics/priority_a/title_screen/rayquaza.4bpp.lz"
 	.if (. - gTitleScreenRayquaza_Gfx) != 0x7E4
 	.error "gTitleScreenRayquaza_Gfx exact asset size mismatch"
 	.endif
 	.globl gTitleScreenRayquaza_Tilemap
 gTitleScreenRayquaza_Tilemap: @ 0x0851A298
-	.incbin "graphics/title_screen/rom_exact/rayquaza.bin.lz"
+	.incbin "build/graphics/priority_a/title_screen/rayquaza.bin.lz"
 	.if (. - gTitleScreenRayquaza_Tilemap) != 0x300
 	.error "gTitleScreenRayquaza_Tilemap exact asset size mismatch"
 	.endif
 	.globl gTitleScreenLogoShine_Gfx
 gTitleScreenLogoShine_Gfx: @ 0x0851A598
-	.incbin "graphics/title_screen/rom_exact/logo_shine.4bpp.lz"
+	.incbin "build/graphics/priority_a/title_screen/logo_shine.4bpp.lz"
 	.if (. - gTitleScreenLogoShine_Gfx) != 0x150
 	.error "gTitleScreenLogoShine_Gfx exact asset size mismatch"
 	.endif
 	.globl gTitleScreenClouds_Gfx
 gTitleScreenClouds_Gfx: @ 0x0851A6E8
-	.incbin "graphics/title_screen/rom_exact/clouds.4bpp.lz"
+	.incbin "build/graphics/priority_a/title_screen/clouds.4bpp.lz"
 	.if (. - gTitleScreenClouds_Gfx) != 0x2E4
 	.error "gTitleScreenClouds_Gfx exact asset size mismatch"
 	.endif
 	.globl gTitleScreenClouds_Tilemap
 gTitleScreenClouds_Tilemap: @ 0x0851A9CC
-	.incbin "graphics/title_screen/rom_exact/clouds.bin.lz"
+	.incbin "build/graphics/priority_a/title_screen/clouds.bin.lz"
 	.if (. - gTitleScreenClouds_Tilemap) != 0x240
 	.error "gTitleScreenClouds_Tilemap exact asset size mismatch"
 	.endif
