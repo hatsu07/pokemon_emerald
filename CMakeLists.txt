@@ -146,7 +146,61 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     set(OUTPUT_ABS "${CMAKE_SOURCE_DIR}/${RELATIVE_OUTPUT}")
     get_filename_component(OUTPUT_DIR "${OUTPUT_ABS}" DIRECTORY)
 
+    # BEGIN MAP TILESET PNG PIPELINE
     if("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/tilesets/(.+)/tiles[.]4bpp[.]lz$")
+        set(TILESET_ASSET_DIR "${CMAKE_MATCH_1}")
+        set(TILESET_SOURCE_DIR
+            "${CMAKE_SOURCE_DIR}/graphics/tilesets/${TILESET_ASSET_DIR}")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/tileset_asset_codec.py"
+                encode-tiles "${TILESET_SOURCE_DIR}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${TILESET_SOURCE_DIR}/tiles.png"
+                "${TILESET_SOURCE_DIR}/metadata.json"
+                "${TILESET_SOURCE_DIR}/lz_plan.json"
+                "${CMAKE_SOURCE_DIR}/tools/tileset_asset_codec.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/tilesets/(.+)/tiles[.]4bpp$")
+        set(TILESET_ASSET_DIR "${CMAKE_MATCH_1}")
+        set(TILESET_SOURCE_DIR
+            "${CMAKE_SOURCE_DIR}/graphics/tilesets/${TILESET_ASSET_DIR}")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/tileset_asset_codec.py"
+                encode-tiles "${TILESET_SOURCE_DIR}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${TILESET_SOURCE_DIR}/tiles.png"
+                "${TILESET_SOURCE_DIR}/metadata.json"
+                "${CMAKE_SOURCE_DIR}/tools/tileset_asset_codec.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/tilesets/(.+)/palettes[.]gbapal$")
+        set(TILESET_ASSET_DIR "${CMAKE_MATCH_1}")
+        set(TILESET_SOURCE_DIR
+            "${CMAKE_SOURCE_DIR}/graphics/tilesets/${TILESET_ASSET_DIR}")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/tileset_asset_codec.py"
+                encode-palettes "${TILESET_SOURCE_DIR}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${TILESET_SOURCE_DIR}/palettes.png"
+                "${TILESET_SOURCE_DIR}/metadata.json"
+                "${CMAKE_SOURCE_DIR}/tools/tileset_asset_codec.py"
+            VERBATIM)
+    # END MAP TILESET PNG PIPELINE
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/priority_b/(.+)[.]4bpp[.]lz$")
         set(PRIORITY_B_STEM "${CMAKE_MATCH_1}")
         set(INPUT_PNG

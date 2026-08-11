@@ -1,0 +1,40 @@
+{
+  "format": "pokemon-emerald-jp-tileset-v1",
+  "index": 1,
+  "directory": "001_fallarbor",
+  "is_compressed": true,
+  "is_secondary": true,
+  "callback": "InitTilesetAnim_Fallarbor",
+  "source": {
+    "file": "data/generated/rodata/items/0612_items_data.inc",
+    "line": 43914
+  },
+  "labels": {
+    "tiles": "TilesetTiles_JP_08312228",
+    "palettes": "TilesetPalettes_JP_08312B24",
+    "metatiles": "Metatiles_JP_08370910",
+    "metatile_attributes": "MetatileAttributes_JP_08371210"
+  },
+  "tiles": {
+    "stored_size": 2300,
+    "raw_size": 5088,
+    "tile_count": 159,
+    "sheet_columns": 16,
+    "preview_palette": 0,
+    "stored_sha1": "7a961ca7ce471c7aedfe3f20a387b651594e8e23",
+    "raw_sha1": "ed286d0fc2d8d9553399b00cfb230a2bac644eb3"
+  },
+  "palettes": {
+    "stored_size": 512,
+    "count": 16,
+    "stored_sha1": "29d21249a8a4ab5aee5ee67ecef18277073caacc",
+    "note": "Only the first 0x200 bytes referenced as the map palette table are converted; any recovered tail after that remains in assembly."
+  },
+  "metatiles": {
+    "stored_size": 2304,
+    "count": 144
+  },
+  "metatile_attributes": {
+    "stored_size": 288
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "format": "pokemon-emerald-jp-tileset-v1",
+  "index": 3,
+  "directory": "003_battle_frontier_outside_west",
+  "is_compressed": true,
+  "is_secondary": true,
+  "callback": "InitTilesetAnim_BattleFrontierOutsideWest",
+  "source": {
+    "file": "data/generated/rodata/items/0612_items_data.inc",
+    "line": 43922
+  },
+  "labels": {
+    "tiles": "TilesetTiles_JP_083144E0",
+    "palettes": "TilesetPalettes_JP_08315960",
+    "metatiles": "Metatiles_JP_08372BCC",
+    "metatile_attributes": "MetatileAttributes_JP_0837437C"
+  },
+  "tiles": {
+    "stored_size": 5248,
+    "raw_size": 16096,
+    "tile_count": 503,
+    "sheet_columns": 16,
+    "preview_palette": 0,
+    "stored_sha1": "086594668ee23a94a31bcd155dd48d86c105c06e",
+    "raw_sha1": "7efc597f53a1da203f5e5f59301453af89064bc5"
+  },
+  "palettes": {
+    "stored_size": 512,
+    "count": 16,
+    "stored_sha1": "f4da9e3b19d96850a13253b5345830df6010c7f4",
+    "note": "Only the first 0x200 bytes referenced as the map palette table are converted; any recovered tail after that remains in assembly."
+  },
+  "metatiles": {
+    "stored_size": 6064,
+    "count": 379
+  },
+  "metatile_attributes": {
+    "stored_size": 758
+  }
+}
