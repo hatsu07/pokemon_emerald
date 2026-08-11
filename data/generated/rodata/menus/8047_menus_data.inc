@@ -22,17 +22,12 @@ gUnknown_85FB994: @ 0x085FB994
 	@ analyzed canonical ROM range 0x085FB994-0x085FB99B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x0100, 0x0302, 0x0504, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x085FB99C: rayquaza_scene.s: CB2_InitRayquazaScene, Task_SetNextAnim
-	.globl gRayquazaSceneData_085FB99C
-gRayquazaSceneData_085FB99C:
-	.globl gUnknown_85FB99C
-gUnknown_85FB99C: @ 0x085FB99C
-	@ confirmed contiguous ROM pointer table: 7 entries from this address
-sPointerTable_085FB99C:
-	@ analyzed canonical ROM range 0x085FB99C-0x085FBA27
-	@ semantic recovery: rodata; byte-verified against linked ROM
-FunctionPointerTable_JP_085FB99C: @ 0x085FB99C
-	@ proven function-pointer table
+	@ Priority A: Rayquaza scene static data fully typed from JP consumer boundaries.
+	@ All globally visible names are module-prefixed to avoid C-static name collisions in ASM.
+	@ Priority A: Rayquaza scene static data fully typed from JP consumer boundaries.
+	@ All globally visible names are module-prefixed to avoid C-static name collisions in ASM.
+	.globl gRayquazaSceneTasksForAnimations
+gRayquazaSceneTasksForAnimations: @ 0x085FB99C
 	.4byte Task_DuoFightAnim
 	.4byte Task_DuoFightAnim
 	.4byte Task_RayTakesFlightAnim
@@ -40,500 +35,527 @@ FunctionPointerTable_JP_085FB99C: @ 0x085FB99C
 	.4byte Task_RayChargesAnim
 	.4byte Task_RayChasesAwayAnim
 	.4byte Task_EndAfterFadeScreen
-	.byte 0x00, 0x00, 0x00, 0xC0, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80, 0x00, 0x08, 0x00, 0x00
-	.byte 0x00, 0x40, 0x00, 0xC0, 0x00, 0x08, 0x00, 0x00, 0x00, 0x40, 0x00, 0x80, 0x00, 0x08, 0x00, 0x00
-	.byte 0x00, 0x40, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x80, 0x00, 0x80, 0x00, 0x08, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x40, 0x00, 0x08, 0x00, 0x00, 0x00, 0x40, 0x00, 0x40, 0x00, 0x08, 0x00, 0x00
-	.byte 0x00, 0x00, 0x1E, 0x00, 0x40, 0x00, 0x1E, 0x00, 0x80, 0x00, 0x1E, 0x00, 0x40, 0x00, 0x1E, 0x00
-	.byte 0xFE, 0xFF, 0x00, 0x00, 0xC0, 0x00, 0x1E, 0x00, 0x00, 0x01, 0x1E, 0x00, 0x40, 0x01, 0x1E, 0x00
-	.byte 0x00, 0x01, 0x1E, 0x00, 0xFE, 0xFF, 0x00, 0x00, 0xF8, 0xB9, 0x5F, 0x08, 0x0C, 0xBA, 0x5F, 0x08
-	@ pret/pokeemerald-jp direct xref for 0x085FBA28: rayquaza_scene.s: sub_081D62C0
-	.globl gRayquazaSceneData_085FBA28
-gRayquazaSceneData_085FBA28:
-	.globl gUnknown_85FBA28
-gUnknown_85FBA28: @ 0x085FBA28
-	@ analyzed canonical ROM range 0x085FBA28-0x085FBA4B
-	@ pointer/nullable table
-	.4byte 0x77297729 @ +0x0
-	.4byte 0x085FB9B8 @ +0x4
-	.4byte 0x085FBA20 @ +0x8
-	.4byte 0 @ +0xC
-	.4byte gDummySpriteAffineAnimTable @ +0x10
-	.4byte SpriteCallbackDummy @ +0x14
-	.4byte 0x00010000 @ +0x18
-	.4byte 0x0000FFFF @ +0x1C
-	.4byte 0x085FBA40 @ +0x20
-	@ pret/pokeemerald-jp direct xref for 0x085FBA4C: rayquaza_scene.s: sub_081D62C0
-	.globl gRayquazaSceneData_085FBA4C
-gRayquazaSceneData_085FBA4C:
-	.globl gUnknown_85FBA4C
-gUnknown_85FBA4C: @ 0x085FBA4C
-	@ analyzed canonical ROM range 0x085FBA4C-0x085FBA6F
-	@ pointer/nullable table
-	.4byte 0x7729772A @ +0x0
-	.4byte 0x085FB9C0 @ +0x4
-	.4byte 0x085FBA48 @ +0x8
-	.4byte 0 @ +0xC
-	.4byte gDummySpriteAffineAnimTable @ +0x10
-	.4byte SpriteCallbackDummy @ +0x14
-	.4byte 0x00010000 @ +0x18
-	.4byte 0x0000FFFF @ +0x1C
-	.4byte 0x085FBA64 @ +0x20
-	@ pret/pokeemerald-jp direct xref for 0x085FBA70: rayquaza_scene.s: sub_081D62C0
-	.globl gRayquazaSceneData_085FBA70
-gRayquazaSceneData_085FBA70:
-	.globl gUnknown_85FBA70
-gUnknown_85FBA70: @ 0x085FBA70
-	@ analyzed canonical ROM range 0x085FBA70-0x085FBB17
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x772B, 0x7729, 0xB9C8, 0x085F, 0xBA6C, 0x085F, 0x0000, 0x0000
-	.2byte 0xF310, 0x082B, 0x7141, 0x0800, 0x0000, 0x0001, 0xFFFF, 0x0000
-	.2byte 0x0008, 0x0001, 0xFFFF, 0x0000, 0x0010, 0x0001, 0xFFFF, 0x0000
-	.2byte 0x0018, 0x0001, 0xFFFF, 0x0000, 0x0020, 0x0001, 0xFFFF, 0x0000
-	.2byte 0x0028, 0x0001, 0xFFFF, 0x0000, 0x0030, 0x0024, 0x0040, 0x0024
-	.2byte 0x0050, 0x0024, 0x0040, 0x0024, 0xFFFE, 0x0000, 0x0038, 0x0024
-	.2byte 0x0048, 0x0024, 0x0058, 0x0024, 0x0048, 0x0024, 0xFFFE, 0x0000
-	.2byte 0x0060, 0x0024, 0x0068, 0x0024, 0x0070, 0x0024, 0x0068, 0x0024
-	.2byte 0xFFFE, 0x0000, 0xBA88, 0x085F, 0xBA90, 0x085F, 0xBA98, 0x085F
-	.2byte 0xBAA0, 0x085F, 0xBAA8, 0x085F, 0xBAB0, 0x085F, 0xBAB8, 0x085F
-	.2byte 0xBACC, 0x085F, 0xBAE0, 0x085F
-	@ pret/pokeemerald-jp direct xref for 0x085FBB18: rayquaza_scene.s: sub_081D64B8
-	.globl gRayquazaSceneData_085FBB18
-gRayquazaSceneData_085FBB18:
-	.globl gUnknown_85FBB18
-gUnknown_85FBB18: @ 0x085FBB18
-	@ analyzed canonical ROM range 0x085FBB18-0x085FBB47
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x2C, 0x77, 0x2C, 0x77, 0xD0, 0xB9, 0x5F, 0x08, 0xF4, 0xBA, 0x5F, 0x08, 0x00, 0x00, 0x00, 0x00
-	.byte 0x10, 0xF3, 0x2B, 0x08, 0x41, 0x71, 0x00, 0x08, 0x00, 0x00, 0x24, 0x00, 0x02, 0x00, 0x24, 0x00
-	.byte 0x04, 0x00, 0x24, 0x00, 0x02, 0x00, 0x24, 0x00, 0xFE, 0xFF, 0x00, 0x00, 0x30, 0xBB, 0x5F, 0x08
-	@ pret/pokeemerald-jp direct xref for 0x085FBB48: rayquaza_scene.s: sub_081D64B8
-	.globl gRayquazaSceneData_085FBB48
-gRayquazaSceneData_085FBB48:
-	.globl gUnknown_85FBB48
-gUnknown_85FBB48: @ 0x085FBB48
-	@ analyzed canonical ROM range 0x085FBB48-0x085FBB5F
-sSpriteTemplate_085FBB48: @ 0x085FBB48
-	rodata_sprite_template 0x772D, 0x772C, 0x085FB9D8, 0x085FBB44, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x085FBB60: rayquaza_scene.s: sub_081D64B8
-	.globl gRayquazaSceneData_085FBB60
-gRayquazaSceneData_085FBB60:
-	.globl gUnknown_85FBB60
-gUnknown_85FBB60: @ 0x085FBB60
-	@ analyzed canonical ROM range 0x085FBB60-0x085FBB77
-sSpriteTemplate_085FBB60: @ 0x085FBB60
-	rodata_sprite_template 0x772E, 0x772C, 0x085FB9C0, 0x085FBA48, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x085FBB78: rayquaza_scene.s: Task_DuoFightAnim
-	.globl gRayquazaSceneData_085FBB78
-gRayquazaSceneData_085FBB78:
-	.globl gUnknown_85FBB78
-gUnknown_85FBB78: @ 0x085FBB78
-	@ analyzed canonical ROM range 0x085FBB78-0x085FBB83
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x0014, 0x0400, 0x0001, 0xA260, 0x0001, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x085FBB84: rayquaza_scene.s: sub_081D691C
-	.globl gRayquazaSceneData_085FBB84
-gRayquazaSceneData_085FBB84:
-	.globl gUnknown_85FBB84
-gUnknown_85FBB84: @ 0x085FBB84
-	@ analyzed canonical ROM range 0x085FBB84-0x085FBBBF
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x01F0, 0x0000, 0x21E1, 0x0000, 0x11D2, 0x0000, 0x0000, 0x0014
-	.2byte 0x0040, 0x0014, 0x0080, 0x0014, 0x0040, 0x0014, 0xFFFE, 0x0000
-	.2byte 0x00C0, 0x0014, 0x0100, 0x0014, 0x0140, 0x0014, 0x0100, 0x0014
-	.2byte 0xFFFE, 0x0000, 0xBB90, 0x085F, 0xBBA4, 0x085F
-	@ pret/pokeemerald-jp direct xref for 0x085FBBC0: rayquaza_scene.s: sub_081D69A8
-	.globl gRayquazaSceneData_085FBBC0
-gRayquazaSceneData_085FBBC0:
-	.globl gUnknown_85FBBC0
-gUnknown_85FBBC0: @ 0x085FBBC0
-	@ analyzed canonical ROM range 0x085FBBC0-0x085FBBC7
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x20, 0x21, 0xDA, 0x08, 0x00, 0x30, 0x29, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x085FBBC8: rayquaza_scene.s: sub_081D69A8
-	.globl gRayquazaSceneData_085FBBC8
-gRayquazaSceneData_085FBBC8:
-	.globl gUnknown_85FBBC8
-gUnknown_85FBBC8: @ 0x085FBBC8
-	@ analyzed canonical ROM range 0x085FBBC8-0x085FBBCF
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x18, 0x36, 0xDA, 0x08, 0x29, 0x77, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x085FBBD0: rayquaza_scene.s: sub_081D6FA0
-	.globl gRayquazaSceneData_085FBBD0
-gRayquazaSceneData_085FBBD0:
-	.globl gUnknown_85FBBD0
-gUnknown_85FBBD0: @ 0x085FBBD0
-	@ analyzed canonical ROM range 0x085FBBD0-0x085FBBF3
-	@ pointer/nullable table
-	.4byte 0x77297729 @ +0x0
-	.4byte 0x085FB9B8 @ +0x4
-	.4byte 0x085FBBB8 @ +0x8
-	.4byte 0 @ +0xC
-	.4byte gDummySpriteAffineAnimTable @ +0x10
-	.4byte SpriteCallbackDummy @ +0x14
-	.4byte 0x00010000 @ +0x18
-	.4byte 0x0000FFFF @ +0x1C
-	.4byte 0x085FBBE8 @ +0x20
-	@ pret/pokeemerald-jp direct xref for 0x085FBBF4: rayquaza_scene.s: sub_081D69A8
-	.globl gRayquazaSceneData_085FBBF4
-gRayquazaSceneData_085FBBF4:
-	.globl gUnknown_85FBBF4
-gUnknown_85FBBF4: @ 0x085FBBF4
-	@ analyzed canonical ROM range 0x085FBBF4-0x085FBBFB
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x04, 0x2D, 0xDA, 0x08, 0x00, 0x02, 0x2A, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x085FBBFC: rayquaza_scene.s: sub_081D6FA0
-	.globl gRayquazaSceneData_085FBBFC
-gRayquazaSceneData_085FBBFC:
-	.globl gUnknown_85FBBFC
-gUnknown_85FBBFC: @ 0x085FBBFC
-	@ analyzed canonical ROM range 0x085FBBFC-0x085FBC1F
-	@ pointer/nullable table
-	.4byte 0x7729772A @ +0x0
-	.4byte 0x085FB9C0 @ +0x4
-	.4byte 0x085FBBF0 @ +0x8
-	.4byte 0 @ +0xC
-	.4byte gDummySpriteAffineAnimTable @ +0x10
-	.4byte SpriteCallbackDummy @ +0x14
-	.4byte 0x00010000 @ +0x18
-	.4byte 0x0000FFFF @ +0x1C
-	.4byte 0x085FBC14 @ +0x20
-	@ pret/pokeemerald-jp direct xref for 0x085FBC20: rayquaza_scene.s: sub_081D69A8
-	.globl gRayquazaSceneData_085FBC20
-gRayquazaSceneData_085FBC20:
-	.globl gUnknown_85FBC20
-gUnknown_85FBC20: @ 0x085FBC20
-	@ analyzed canonical ROM range 0x085FBC20-0x085FBC27
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xD0, 0x2D, 0xDA, 0x08, 0x00, 0x04, 0x2B, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x085FBC28: rayquaza_scene.s: sub_081D6FA0
-	.globl gRayquazaSceneData_085FBC28
-gRayquazaSceneData_085FBC28:
-	.globl gUnknown_85FBC28
-gUnknown_85FBC28: @ 0x085FBC28
-	@ analyzed canonical ROM range 0x085FBC28-0x085FBCCF
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x772B, 0x7729, 0xB9C8, 0x085F, 0xBC1C, 0x085F, 0x0000, 0x0000
-	.2byte 0xF310, 0x082B, 0x7141, 0x0800, 0x0000, 0x0001, 0xFFFF, 0x0000
-	.2byte 0x0008, 0x0001, 0xFFFF, 0x0000, 0x0010, 0x0001, 0xFFFF, 0x0000
-	.2byte 0x0018, 0x0001, 0xFFFF, 0x0000, 0x0020, 0x0001, 0xFFFF, 0x0000
-	.2byte 0x0028, 0x0001, 0xFFFF, 0x0000, 0x0030, 0x0018, 0x0040, 0x0018
-	.2byte 0x0050, 0x0018, 0x0040, 0x0018, 0xFFFE, 0x0000, 0x0038, 0x0018
-	.2byte 0x0048, 0x0018, 0x0058, 0x0018, 0x0048, 0x0018, 0xFFFE, 0x0000
-	.2byte 0x0060, 0x0018, 0x0068, 0x0018, 0x0070, 0x0018, 0x0068, 0x0018
-	.2byte 0xFFFE, 0x0000, 0xBC40, 0x085F, 0xBC48, 0x085F, 0xBC50, 0x085F
-	.2byte 0xBC58, 0x085F, 0xBC60, 0x085F, 0xBC68, 0x085F, 0xBC70, 0x085F
-	.2byte 0xBC84, 0x085F, 0xBC98, 0x085F
-	@ pret/pokeemerald-jp direct xref for 0x085FBCD0: rayquaza_scene.s: sub_081D69A8
-	.globl gRayquazaSceneData_085FBCD0
-gRayquazaSceneData_085FBCD0:
-	.globl gUnknown_85FBCD0
-gUnknown_85FBCD0: @ 0x085FBCD0
-	@ analyzed canonical ROM range 0x085FBCD0-0x085FBCD7
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xC4, 0x2F, 0xDA, 0x08, 0x00, 0x0F, 0x2C, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x085FBCD8: rayquaza_scene.s: sub_081D69A8
-	.globl gRayquazaSceneData_085FBCD8
-gRayquazaSceneData_085FBCD8:
-	.globl gUnknown_85FBCD8
-gUnknown_85FBCD8: @ 0x085FBCD8
-	@ analyzed canonical ROM range 0x085FBCD8-0x085FBCDF
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x40, 0x36, 0xDA, 0x08, 0x2C, 0x77, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x085FBCE0: rayquaza_scene.s: sub_081D71F8
-	.globl gRayquazaSceneData_085FBCE0
-gRayquazaSceneData_085FBCE0:
-	.globl gUnknown_85FBCE0
-gUnknown_85FBCE0: @ 0x085FBCE0
-	@ analyzed canonical ROM range 0x085FBCE0-0x085FBD0F
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x2C, 0x77, 0x2C, 0x77, 0xD0, 0xB9, 0x5F, 0x08, 0xAC, 0xBC, 0x5F, 0x08, 0x00, 0x00, 0x00, 0x00
-	.byte 0x10, 0xF3, 0x2B, 0x08, 0x41, 0x71, 0x00, 0x08, 0x00, 0x00, 0x18, 0x00, 0x02, 0x00, 0x18, 0x00
-	.byte 0x04, 0x00, 0x18, 0x00, 0x02, 0x00, 0x18, 0x00, 0xFE, 0xFF, 0x00, 0x00, 0xF8, 0xBC, 0x5F, 0x08
-	@ pret/pokeemerald-jp direct xref for 0x085FBD10: rayquaza_scene.s: sub_081D69A8
-	.globl gRayquazaSceneData_085FBD10
-gRayquazaSceneData_085FBD10:
-	.globl gUnknown_85FBD10
-gUnknown_85FBD10: @ 0x085FBD10
-	@ analyzed canonical ROM range 0x085FBD10-0x085FBD17
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xF8, 0x34, 0xDA, 0x08, 0xC0, 0x00, 0x2D, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x085FBD18: rayquaza_scene.s: sub_081D71F8
-	.globl gRayquazaSceneData_085FBD18
-gRayquazaSceneData_085FBD18:
-	.globl gUnknown_85FBD18
-gUnknown_85FBD18: @ 0x085FBD18
-	@ analyzed canonical ROM range 0x085FBD18-0x085FBD2F
-sSpriteTemplate_085FBD18: @ 0x085FBD18
-	rodata_sprite_template 0x772D, 0x772C, 0x085FB9D8, 0x085FBD0C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x085FBD30: rayquaza_scene.s: sub_081D69A8
-	.globl gRayquazaSceneData_085FBD30
-gRayquazaSceneData_085FBD30:
-	.globl gUnknown_85FBD30
-gUnknown_85FBD30: @ 0x085FBD30
-	@ analyzed canonical ROM range 0x085FBD30-0x085FBD37
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x4C, 0x35, 0xDA, 0x08, 0x00, 0x02, 0x2E, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x085FBD38: rayquaza_scene.s: sub_081D71F8
-	.globl gRayquazaSceneData_085FBD38
-gRayquazaSceneData_085FBD38:
-	.globl gUnknown_85FBD38
-gUnknown_85FBD38: @ 0x085FBD38
-	@ analyzed canonical ROM range 0x085FBD38-0x085FBD4F
-sSpriteTemplate_085FBD38: @ 0x085FBD38
-	rodata_sprite_template 0x772E, 0x772C, 0x085FB9C0, 0x085FBBF0, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x085FBD50: rayquaza_scene.s: sub_081D774C
-	.globl gRayquazaSceneData_085FBD50
-gRayquazaSceneData_085FBD50:
-	.globl gUnknown_85FBD50
-gUnknown_85FBD50: @ 0x085FBD50
-	@ analyzed canonical ROM range 0x085FBD50-0x085FBD8B
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x01F8, 0x0000, 0x21E1, 0x0000, 0x13D6, 0x0000, 0x0000, 0x0001
-	.2byte 0xFFFF, 0x0000, 0xBD5C, 0x085F, 0xFFC0, 0xFFC0, 0x0100, 0x0000
-	.2byte 0x0020, 0x0020, 0x0E00, 0x0000, 0x0100, 0x0100, 0x0000, 0x0000
-	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000, 0xBD68, 0x085F
-	@ pret/pokeemerald-jp direct xref for 0x085FBD8C: rayquaza_scene.s: sub_081D77D8
-	.globl gRayquazaSceneData_085FBD8C
-gRayquazaSceneData_085FBD8C:
-	.globl gUnknown_85FBD8C
-gUnknown_85FBD8C: @ 0x085FBD8C
-	@ analyzed canonical ROM range 0x085FBD8C-0x085FBD93
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x68, 0x3E, 0xDA, 0x08, 0x00, 0x01, 0x5B, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x085FBD94: rayquaza_scene.s: sub_081D77D8
-	.globl gRayquazaSceneData_085FBD94
-gRayquazaSceneData_085FBD94:
-	.globl gUnknown_85FBD94
-gUnknown_85FBD94: @ 0x085FBD94
-	@ analyzed canonical ROM range 0x085FBD94-0x085FBD9B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x24, 0x3F, 0xDA, 0x08, 0x5B, 0x77, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x085FBD9C: rayquaza_scene.s: sub_081D7AE0
-	.globl gRayquazaSceneData_085FBD9C
-gRayquazaSceneData_085FBD9C:
-	.globl gUnknown_85FBD9C
-gUnknown_85FBD9C: @ 0x085FBD9C
-	@ analyzed canonical ROM range 0x085FBD9C-0x085FBDB3
-sSpriteTemplate_085FBD9C: @ 0x085FBD9C
-	rodata_sprite_template 0x775B, 0x775B, 0x085FB9D0, 0x085FBD64, 0, 0x085FBD88, sub_081D7B9C
-	@ pret/pokeemerald-jp direct xref for 0x085FBDB4: rayquaza_scene.s: sub_081D7AE0, sub_081D7B9C
-	.globl gRayquazaSceneData_085FBDB4
-gRayquazaSceneData_085FBDB4:
-	.globl gUnknown_85FBDB4
-gUnknown_85FBDB4: @ 0x085FBDB4
-	@ analyzed canonical ROM range 0x085FBDB4-0x085FBDC7
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xFF, 0x05, 0xFD, 0xFC, 0x05, 0xFD, 0xF9, 0x02, 0xF7, 0xFF, 0x01, 0xFB, 0x03, 0x04, 0xFB, 0x03
-	.byte 0x07, 0xFE, 0x09, 0x01
-	@ pret/pokeemerald-jp direct xref for 0x085FBDC8: rayquaza_scene.s: sub_081D7BEC
-	.globl gRayquazaSceneData_085FBDC8
-gRayquazaSceneData_085FBDC8:
-	.globl gUnknown_85FBDC8
-gUnknown_85FBDC8: @ 0x085FBDC8
-	@ analyzed canonical ROM range 0x085FBDC8-0x085FBDF7
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x01F0, 0x0000, 0x11E5, 0x0000, 0x21DA, 0x0000, 0x31C7, 0x0000
-	.2byte 0x0000, 0x0020, 0x0040, 0x0020, 0xFFFE, 0x0000, 0xBDD8, 0x085F
-	.2byte 0x0000, 0x0020, 0x0008, 0x0020, 0xFFFE, 0x0000, 0xBDE8, 0x085F
-	@ pret/pokeemerald-jp direct xref for 0x085FBDF8: rayquaza_scene.s: sub_081D7C94
-	.globl gRayquazaSceneData_085FBDF8
-gRayquazaSceneData_085FBDF8:
-	.globl gUnknown_85FBDF8
-gUnknown_85FBDF8: @ 0x085FBDF8
-	@ analyzed canonical ROM range 0x085FBDF8-0x085FBDFF
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xE8, 0x66, 0xDA, 0x08, 0x00, 0x10, 0x5C, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x085FBE00: rayquaza_scene.s: sub_081D7C94
-	.globl gRayquazaSceneData_085FBE00
-gRayquazaSceneData_085FBE00:
-	.globl gUnknown_85FBE00
-gUnknown_85FBE00: @ 0x085FBE00
-	@ analyzed canonical ROM range 0x085FBE00-0x085FBE07
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x54, 0x6B, 0xDA, 0x08, 0x00, 0x02, 0x5D, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x085FBE08: rayquaza_scene.s: sub_081D7C94
-	.globl gRayquazaSceneData_085FBE08
-gRayquazaSceneData_085FBE08:
-	.globl gUnknown_85FBE08
-gUnknown_85FBE08: @ 0x085FBE08
-	@ analyzed canonical ROM range 0x085FBE08-0x085FBE0F
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x50, 0x50, 0xDA, 0x08, 0x5C, 0x77, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x085FBE10: rayquaza_scene.s: sub_081D8008
-	.globl gRayquazaSceneData_085FBE10
-gRayquazaSceneData_085FBE10:
-	.globl gUnknown_85FBE10
-gUnknown_85FBE10: @ 0x085FBE10
-	@ analyzed canonical ROM range 0x085FBE10-0x085FBE27
-sSpriteTemplate_085FBE10: @ 0x085FBE10
-	rodata_sprite_template 0x775C, 0x775C, 0x085FB9B8, 0x085FBDE4, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x085FBE28: rayquaza_scene.s: sub_081D8008
-	.globl gRayquazaSceneData_085FBE28
-gRayquazaSceneData_085FBE28:
-	.globl gUnknown_85FBE28
-gUnknown_85FBE28: @ 0x085FBE28
-	@ analyzed canonical ROM range 0x085FBE28-0x085FBE3F
-sSpriteTemplate_085FBE28: @ 0x085FBE28
-	rodata_sprite_template 0x775D, 0x775C, 0x085FB9E0, 0x085FBDF4, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x085FBE40: rayquaza_scene.s: sub_081D8164
-	.globl gRayquazaSceneData_085FBE40
-gRayquazaSceneData_085FBE40:
-	.globl gUnknown_85FBE40
-gUnknown_85FBE40: @ 0x085FBE40
-	@ analyzed canonical ROM range 0x085FBE40-0x085FBF23
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x01F8, 0x0000, 0x11E5, 0x0000, 0x21DA, 0x0000, 0x31CF, 0x0000
-	.2byte 0x0000, 0x0001, 0xFFFF, 0x0000, 0x0000, 0x0030, 0x0040, 0x0020
-	.2byte 0x0000, 0x0030, 0x0080, 0x0020, 0xFFFE, 0x0000, 0xBE50, 0x085F
-	.2byte 0xBE58, 0x085F, 0x0000, 0x0001, 0xFFFF, 0x0000, 0xBE74, 0x085F
-	.2byte 0x0000, 0x0001, 0xFFFF, 0x0000, 0x0010, 0x0001, 0xFFFF, 0x0000
-	.2byte 0x0020, 0x0001, 0xFFFF, 0x0000, 0xBE80, 0x085F, 0xBE88, 0x085F
-	.2byte 0xBE90, 0x085F, 0x0000, 0x0001, 0xFFFF, 0x0000, 0x0040, 0x0001
-	.2byte 0xFFFF, 0x0000, 0x0080, 0x0001, 0xFFFF, 0x0000, 0x00C0, 0x0001
-	.2byte 0xFFFF, 0x0000, 0xBEA4, 0x085F, 0xBEAC, 0x085F, 0xBEB4, 0x085F
-	.2byte 0xBEBC, 0x085F, 0x0000, 0x0001, 0xFFFF, 0x0000, 0x0010, 0x0001
-	.2byte 0xFFFF, 0x0000, 0x0020, 0x0001, 0xFFFF, 0x0000, 0x0030, 0x0001
-	.2byte 0xFFFF, 0x0000, 0xBED4, 0x085F, 0xBEDC, 0x085F, 0xBEE4, 0x085F
-	.2byte 0xBEEC, 0x085F, 0x0000, 0x0008, 0x0004, 0x0008, 0x0008, 0x0008
-	.2byte 0x000C, 0x0008, 0x0010, 0x0008, 0x0014, 0x0008, 0xFFFE, 0x0000
-	.2byte 0xBF04, 0x085F
-	@ pret/pokeemerald-jp direct xref for 0x085FBF24: rayquaza_scene.s: sub_081D8600
-	.globl gRayquazaSceneData_085FBF24
-gRayquazaSceneData_085FBF24:
-	.globl gUnknown_85FBF24
-gUnknown_85FBF24: @ 0x085FBF24
-	@ analyzed canonical ROM range 0x085FBF24-0x085FBF2B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x80, 0x91, 0xDA, 0x08, 0x00, 0x18, 0x65, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x085FBF2C: rayquaza_scene.s: sub_081D8600
-	.globl gRayquazaSceneData_085FBF2C
-gRayquazaSceneData_085FBF2C:
-	.globl gUnknown_85FBF2C
-gUnknown_85FBF2C: @ 0x085FBF2C
-	@ analyzed canonical ROM range 0x085FBF2C-0x085FBF33
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x18, 0x99, 0xDA, 0x08, 0x80, 0x00, 0x66, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x085FBF34: rayquaza_scene.s: sub_081D8600
-	.globl gRayquazaSceneData_085FBF34
-gRayquazaSceneData_085FBF34:
-	.globl gUnknown_85FBF34
-gUnknown_85FBF34: @ 0x085FBF34
-	@ analyzed canonical ROM range 0x085FBF34-0x085FBF3B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x5C, 0x99, 0xDA, 0x08, 0x00, 0x06, 0x68, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x085FBF3C: rayquaza_scene.s: sub_081D8600
-	.globl gRayquazaSceneData_085FBF3C
-gRayquazaSceneData_085FBF3C:
-	.globl gUnknown_85FBF3C
-gUnknown_85FBF3C: @ 0x085FBF3C
-	@ analyzed canonical ROM range 0x085FBF3C-0x085FBF43
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xA4, 0x9B, 0xDA, 0x08, 0x00, 0x20, 0x69, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x085FBF44: rayquaza_scene.s: sub_081D8600
-	.globl gRayquazaSceneData_085FBF44
-gRayquazaSceneData_085FBF44:
-	.globl gUnknown_85FBF44
-gUnknown_85FBF44: @ 0x085FBF44
-	@ analyzed canonical ROM range 0x085FBF44-0x085FBF4B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x4C, 0xA8, 0xDA, 0x08, 0x00, 0x08, 0x6A, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x085FBF4C: rayquaza_scene.s: sub_081D8600
-	.globl gRayquazaSceneData_085FBF4C
-gRayquazaSceneData_085FBF4C:
-	.globl gUnknown_85FBF4C
-gUnknown_85FBF4C: @ 0x085FBF4C
-	@ analyzed canonical ROM range 0x085FBF4C-0x085FBF53
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x3C, 0xAA, 0xDA, 0x08, 0x00, 0x03, 0x6B, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x085FBF54: rayquaza_scene.s: sub_081D8600
-	.globl gRayquazaSceneData_085FBF54
-gRayquazaSceneData_085FBF54:
-	.globl gUnknown_85FBF54
-gUnknown_85FBF54: @ 0x085FBF54
-	@ analyzed canonical ROM range 0x085FBF54-0x085FBF5B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xD4, 0xAA, 0xDA, 0x08, 0x65, 0x77, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x085FBF5C: rayquaza_scene.s: sub_081D8600
-	.globl gRayquazaSceneData_085FBF5C
-gRayquazaSceneData_085FBF5C:
-	.globl gUnknown_85FBF5C
-gUnknown_85FBF5C: @ 0x085FBF5C
-	@ analyzed canonical ROM range 0x085FBF5C-0x085FBF63
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0xFC, 0xAA, 0xDA, 0x08, 0x68, 0x77, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x085FBF64: rayquaza_scene.s: sub_081D8600
-	.globl gRayquazaSceneData_085FBF64
-gRayquazaSceneData_085FBF64:
-	.globl gUnknown_85FBF64
-gUnknown_85FBF64: @ 0x085FBF64
-	@ analyzed canonical ROM range 0x085FBF64-0x085FBF6B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x24, 0xAB, 0xDA, 0x08, 0x69, 0x77, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x085FBF6C: rayquaza_scene.s: sub_081D8600
-	.globl gRayquazaSceneData_085FBF6C
-gRayquazaSceneData_085FBF6C:
-	.globl gUnknown_85FBF6C
-gUnknown_85FBF6C: @ 0x085FBF6C
-	@ analyzed canonical ROM range 0x085FBF6C-0x085FBF73
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x4C, 0xAB, 0xDA, 0x08, 0x6B, 0x77, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x085FBF74: rayquaza_scene.s: sub_081D89E4
-	.globl gRayquazaSceneData_085FBF74
-gRayquazaSceneData_085FBF74:
-	.globl gUnknown_85FBF74
-gUnknown_85FBF74: @ 0x085FBF74
-	@ analyzed canonical ROM range 0x085FBF74-0x085FBF8B
-sSpriteTemplate_085FBF74: @ 0x085FBF74
-	rodata_sprite_template 0x7765, 0x7765, 0x085FB9B8, 0x085FBE6C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x085FBF8C: rayquaza_scene.s: sub_081D89E4
-	.globl gRayquazaSceneData_085FBF8C
-gRayquazaSceneData_085FBF8C:
-	.globl gUnknown_85FBF8C
-gUnknown_85FBF8C: @ 0x085FBF8C
-	@ analyzed canonical ROM range 0x085FBF8C-0x085FBFA3
-sSpriteTemplate_085FBF8C: @ 0x085FBF8C
-	rodata_sprite_template 0x7766, 0x7765, 0x085FB9E8, 0x085FBE7C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x085FBFA4: rayquaza_scene.s: sub_081D89E4
-	.globl gRayquazaSceneData_085FBFA4
-gRayquazaSceneData_085FBFA4:
-	.globl gUnknown_85FBFA4
-gUnknown_85FBFA4: @ 0x085FBFA4
-	@ analyzed canonical ROM range 0x085FBFA4-0x085FBFBB
-sSpriteTemplate_085FBFA4: @ 0x085FBFA4
-	rodata_sprite_template 0x7768, 0x7768, 0x085FB9C0, 0x085FBE98, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x085FBFBC: rayquaza_scene.s: sub_081D89E4
-	.globl gRayquazaSceneData_085FBFBC
-gRayquazaSceneData_085FBFBC:
-	.globl gUnknown_85FBFBC
-gUnknown_85FBFBC: @ 0x085FBFBC
-	@ analyzed canonical ROM range 0x085FBFBC-0x085FBFD3
-sSpriteTemplate_085FBFBC: @ 0x085FBFBC
-	rodata_sprite_template 0x7769, 0x7769, 0x085FB9B8, 0x085FBEC4, 0, gDummySpriteAffineAnimTable, sub_081D8F58
-	@ pret/pokeemerald-jp direct xref for 0x085FBFD4: rayquaza_scene.s: sub_081D89E4
-	.globl gRayquazaSceneData_085FBFD4
-gRayquazaSceneData_085FBFD4:
-	.globl gUnknown_85FBFD4
-gUnknown_85FBFD4: @ 0x085FBFD4
-	@ analyzed canonical ROM range 0x085FBFD4-0x085FBFEB
-sSpriteTemplate_085FBFD4: @ 0x085FBFD4
-	rodata_sprite_template 0x776A, 0x7769, 0x085FB9C0, 0x085FBEF4, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x085FBFEC: rayquaza_scene.s: sub_081D8E64
-	.globl gRayquazaSceneData_085FBFEC
-gRayquazaSceneData_085FBFEC:
-	.globl gUnknown_85FBFEC
-gUnknown_85FBFEC: @ 0x085FBFEC
-	@ analyzed canonical ROM range 0x085FBFEC-0x085FC003
-sSpriteTemplate_085FBFEC: @ 0x085FBFEC
-	rodata_sprite_template 0x776B, 0x776B, 0x085FB9F0, 0x085FBF20, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x085FC004: rayquaza_scene.s: sub_081D8574
-	.globl gRayquazaSceneData_085FC004
-gRayquazaSceneData_085FC004:
-	.globl gUnknown_85FC004
-gUnknown_85FC004: @ 0x085FC004
-	@ analyzed canonical ROM range 0x085FC004-0x085FC00F
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x11F4, 0x0000, 0x21E5, 0x0000, 0x01D2, 0x0000
+	.globl gRayquazaSceneOam_64x64
+gRayquazaSceneOam_64x64: @ 0x085FB9B8
+	rodata_sprite_oam_data 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x3, 0x0, 0x2, 0x0, 0x0
+	.globl gRayquazaSceneOam_32x32
+gRayquazaSceneOam_32x32: @ 0x085FB9C0
+	rodata_sprite_oam_data 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x2, 0x0, 0x2, 0x0, 0x0
+	.globl gRayquazaSceneOam_64x32
+gRayquazaSceneOam_64x32: @ 0x085FB9C8
+	rodata_sprite_oam_data 0x0, 0x0, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x3, 0x0, 0x2, 0x0, 0x0
+	.globl gRayquazaSceneOam_32x16
+gRayquazaSceneOam_32x16: @ 0x085FB9D0
+	rodata_sprite_oam_data 0x0, 0x0, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x2, 0x0, 0x2, 0x0, 0x0
+	.globl gRayquazaSceneOam_16x8
+gRayquazaSceneOam_16x8: @ 0x085FB9D8
+	rodata_sprite_oam_data 0x0, 0x0, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0
+	.globl gRayquazaSceneOam_16x32
+gRayquazaSceneOam_16x32: @ 0x085FB9E0
+	rodata_sprite_oam_data 0x0, 0x0, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x2, 0x0, 0x2, 0x0, 0x0
+	.globl gRayquazaSceneOam_16x16
+gRayquazaSceneOam_16x16: @ 0x085FB9E8
+	rodata_sprite_oam_data 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1, 0x0, 0x2, 0x0, 0x0
+	.globl gRayquazaSceneOam_32x8
+gRayquazaSceneOam_32x8: @ 0x085FB9F0
+	rodata_sprite_oam_data 0x0, 0x0, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x1, 0x0, 0x2, 0x0, 0x0
+	.globl gRayquazaSceneAnim_DuoFightPre_Groudon_Head
+gRayquazaSceneAnim_DuoFightPre_Groudon_Head: @ 0x085FB9F8
+	rodata_anim_frame 0x0, 0x1E, 0, 0
+	rodata_anim_frame 0x40, 0x1E, 0, 0
+	rodata_anim_frame 0x80, 0x1E, 0, 0
+	rodata_anim_frame 0x40, 0x1E, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnim_DuoFightPre_Groudon_Body
+gRayquazaSceneAnim_DuoFightPre_Groudon_Body: @ 0x085FBA0C
+	rodata_anim_frame 0xC0, 0x1E, 0, 0
+	rodata_anim_frame 0x100, 0x1E, 0, 0
+	rodata_anim_frame 0x140, 0x1E, 0, 0
+	rodata_anim_frame 0x100, 0x1E, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnims_DuoFightPre_Groudon
+gRayquazaSceneAnims_DuoFightPre_Groudon: @ 0x085FBA20
+	.4byte gRayquazaSceneAnim_DuoFightPre_Groudon_Head
+	.4byte gRayquazaSceneAnim_DuoFightPre_Groudon_Body
+	.globl gRayquazaSceneSpriteTemplate_DuoFightPre_Groudon
+gRayquazaSceneSpriteTemplate_DuoFightPre_Groudon: @ 0x085FBA28
+	rodata_sprite_template 0x7729, 0x7729, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_DuoFightPre_Groudon, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneAnim_DuoFightPre_GroudonShoulderKyogreDorsalFin
+gRayquazaSceneAnim_DuoFightPre_GroudonShoulderKyogreDorsalFin: @ 0x085FBA40
+	rodata_anim_frame 0x0, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnims_DuoFightPre_GroudonShoulderKyogreDorsalFin
+gRayquazaSceneAnims_DuoFightPre_GroudonShoulderKyogreDorsalFin: @ 0x085FBA48
+	.4byte gRayquazaSceneAnim_DuoFightPre_GroudonShoulderKyogreDorsalFin
+	.globl gRayquazaSceneSpriteTemplate_DuoFightPre_GroudonShoulder
+gRayquazaSceneSpriteTemplate_DuoFightPre_GroudonShoulder: @ 0x085FBA4C
+	rodata_sprite_template 0x772A, 0x7729, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_DuoFightPre_GroudonShoulderKyogreDorsalFin, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneAnim_DuoFightPre_GroudonClaw
+gRayquazaSceneAnim_DuoFightPre_GroudonClaw: @ 0x085FBA64
+	rodata_anim_frame 0x0, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnims_DuoFightPre_GroudonClaw
+gRayquazaSceneAnims_DuoFightPre_GroudonClaw: @ 0x085FBA6C
+	.4byte gRayquazaSceneAnim_DuoFightPre_GroudonClaw
+	.globl gRayquazaSceneSpriteTemplate_DuoFightPre_GroudonClaw
+gRayquazaSceneSpriteTemplate_DuoFightPre_GroudonClaw: @ 0x085FBA70
+	rodata_sprite_template 0x772B, 0x7729, gRayquazaSceneOam_64x32, gRayquazaSceneAnims_DuoFightPre_GroudonClaw, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneAnim_DuoFightPre_Kyogre_TopLeft
+gRayquazaSceneAnim_DuoFightPre_Kyogre_TopLeft: @ 0x085FBA88
+	rodata_anim_frame 0x0, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_DuoFightPre_Kyogre_TopRight
+gRayquazaSceneAnim_DuoFightPre_Kyogre_TopRight: @ 0x085FBA90
+	rodata_anim_frame 0x8, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_DuoFightPre_Kyogre_FaceLeft
+gRayquazaSceneAnim_DuoFightPre_Kyogre_FaceLeft: @ 0x085FBA98
+	rodata_anim_frame 0x10, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_DuoFightPre_Kyogre_FaceRight
+gRayquazaSceneAnim_DuoFightPre_Kyogre_FaceRight: @ 0x085FBAA0
+	rodata_anim_frame 0x18, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_DuoFightPre_Kyogre_ChinLeft
+gRayquazaSceneAnim_DuoFightPre_Kyogre_ChinLeft: @ 0x085FBAA8
+	rodata_anim_frame 0x20, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_DuoFightPre_Kyogre_ChinRight
+gRayquazaSceneAnim_DuoFightPre_Kyogre_ChinRight: @ 0x085FBAB0
+	rodata_anim_frame 0x28, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_DuoFightPre_Kyogre_LeftPectoralFin
+gRayquazaSceneAnim_DuoFightPre_Kyogre_LeftPectoralFin: @ 0x085FBAB8
+	rodata_anim_frame 0x30, 0x24, 0, 0
+	rodata_anim_frame 0x40, 0x24, 0, 0
+	rodata_anim_frame 0x50, 0x24, 0, 0
+	rodata_anim_frame 0x40, 0x24, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnim_DuoFightPre_Kyogre_LeftShoulder
+gRayquazaSceneAnim_DuoFightPre_Kyogre_LeftShoulder: @ 0x085FBACC
+	rodata_anim_frame 0x38, 0x24, 0, 0
+	rodata_anim_frame 0x48, 0x24, 0, 0
+	rodata_anim_frame 0x58, 0x24, 0, 0
+	rodata_anim_frame 0x48, 0x24, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnim_DuoFightPre_Kyogre_RightShoulder
+gRayquazaSceneAnim_DuoFightPre_Kyogre_RightShoulder: @ 0x085FBAE0
+	rodata_anim_frame 0x60, 0x24, 0, 0
+	rodata_anim_frame 0x68, 0x24, 0, 0
+	rodata_anim_frame 0x70, 0x24, 0, 0
+	rodata_anim_frame 0x68, 0x24, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnims_DuoFightPre_Kyogre
+gRayquazaSceneAnims_DuoFightPre_Kyogre: @ 0x085FBAF4
+	.4byte gRayquazaSceneAnim_DuoFightPre_Kyogre_TopLeft
+	.4byte gRayquazaSceneAnim_DuoFightPre_Kyogre_TopRight
+	.4byte gRayquazaSceneAnim_DuoFightPre_Kyogre_FaceLeft
+	.4byte gRayquazaSceneAnim_DuoFightPre_Kyogre_FaceRight
+	.4byte gRayquazaSceneAnim_DuoFightPre_Kyogre_ChinLeft
+	.4byte gRayquazaSceneAnim_DuoFightPre_Kyogre_ChinRight
+	.4byte gRayquazaSceneAnim_DuoFightPre_Kyogre_LeftPectoralFin
+	.4byte gRayquazaSceneAnim_DuoFightPre_Kyogre_LeftShoulder
+	.4byte gRayquazaSceneAnim_DuoFightPre_Kyogre_RightShoulder
+	.globl gRayquazaSceneSpriteTemplate_DuoFightPre_Kyogre
+gRayquazaSceneSpriteTemplate_DuoFightPre_Kyogre: @ 0x085FBB18
+	rodata_sprite_template 0x772C, 0x772C, gRayquazaSceneOam_32x16, gRayquazaSceneAnims_DuoFightPre_Kyogre, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneAnim_DuoFightPre_KyogrePectoralFin
+gRayquazaSceneAnim_DuoFightPre_KyogrePectoralFin: @ 0x085FBB30
+	rodata_anim_frame 0x0, 0x24, 0, 0
+	rodata_anim_frame 0x2, 0x24, 0, 0
+	rodata_anim_frame 0x4, 0x24, 0, 0
+	rodata_anim_frame 0x2, 0x24, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnims_DuoFightPre_KyogrePectoralFin
+gRayquazaSceneAnims_DuoFightPre_KyogrePectoralFin: @ 0x085FBB44
+	.4byte gRayquazaSceneAnim_DuoFightPre_KyogrePectoralFin
+	.globl gRayquazaSceneSpriteTemplate_DuoFightPre_KyogrePectoralFin
+gRayquazaSceneSpriteTemplate_DuoFightPre_KyogrePectoralFin: @ 0x085FBB48
+	rodata_sprite_template 0x772D, 0x772C, gRayquazaSceneOam_16x8, gRayquazaSceneAnims_DuoFightPre_KyogrePectoralFin, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneSpriteTemplate_DuoFightPre_KyogreDorsalFin
+gRayquazaSceneSpriteTemplate_DuoFightPre_KyogreDorsalFin: @ 0x085FBB60
+	rodata_sprite_template 0x772E, 0x772C, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_DuoFightPre_GroudonShoulderKyogreDorsalFin, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneScanlineParams_DuoFight_Clouds
+gRayquazaSceneScanlineParams_DuoFight_Clouds: @ 0x085FBB78
+	rayquaza_scanline_params 0x04000014, 0xA2600001, 0x01
+	.globl gRayquazaSceneBgTemplates_DuoFight
+gRayquazaSceneBgTemplates_DuoFight: @ 0x085FBB84
+	bg_template 0x0, 0x0, 0x1F, 0x0, 0x0, 0x0, 0x0
+	bg_template 0x1, 0x0, 0x1E, 0x0, 0x0, 0x2, 0x0
+	bg_template 0x2, 0x0, 0x1D, 0x0, 0x0, 0x1, 0x0
+	.globl gRayquazaSceneAnim_DuoFight_Groudon_Head
+gRayquazaSceneAnim_DuoFight_Groudon_Head: @ 0x085FBB90
+	rodata_anim_frame 0x0, 0x14, 0, 0
+	rodata_anim_frame 0x40, 0x14, 0, 0
+	rodata_anim_frame 0x80, 0x14, 0, 0
+	rodata_anim_frame 0x40, 0x14, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnim_DuoFight_Groudon_Body
+gRayquazaSceneAnim_DuoFight_Groudon_Body: @ 0x085FBBA4
+	rodata_anim_frame 0xC0, 0x14, 0, 0
+	rodata_anim_frame 0x100, 0x14, 0, 0
+	rodata_anim_frame 0x140, 0x14, 0, 0
+	rodata_anim_frame 0x100, 0x14, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnims_DuoFight_Groudon
+gRayquazaSceneAnims_DuoFight_Groudon: @ 0x085FBBB8
+	.4byte gRayquazaSceneAnim_DuoFight_Groudon_Head
+	.4byte gRayquazaSceneAnim_DuoFight_Groudon_Body
+	.globl gRayquazaSceneSpriteSheet_DuoFight_Groudon
+gRayquazaSceneSpriteSheet_DuoFight_Groudon: @ 0x085FBBC0
+	rodata_compressed_sprite_sheet 0x08DA2120, 0x3000, 0x7729
+	.globl gRayquazaSceneSpritePal_DuoFight_Groudon
+gRayquazaSceneSpritePal_DuoFight_Groudon: @ 0x085FBBC8
+	rodata_sprite_palette 0x08DA3618, 0x7729
+	.globl gRayquazaSceneSpriteTemplate_DuoFight_Groudon
+gRayquazaSceneSpriteTemplate_DuoFight_Groudon: @ 0x085FBBD0
+	rodata_sprite_template 0x7729, 0x7729, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_DuoFight_Groudon, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneAnim_DuoFight_GroudonShoulderKyogreDorsalFin
+gRayquazaSceneAnim_DuoFight_GroudonShoulderKyogreDorsalFin: @ 0x085FBBE8
+	rodata_anim_frame 0x0, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnims_DuoFight_GroudonShoulderKyogreDorsalFin
+gRayquazaSceneAnims_DuoFight_GroudonShoulderKyogreDorsalFin: @ 0x085FBBF0
+	.4byte gRayquazaSceneAnim_DuoFight_GroudonShoulderKyogreDorsalFin
+	.globl gRayquazaSceneSpriteSheet_DuoFight_GroudonShoulder
+gRayquazaSceneSpriteSheet_DuoFight_GroudonShoulder: @ 0x085FBBF4
+	rodata_compressed_sprite_sheet 0x08DA2D04, 0x0200, 0x772A
+	.globl gRayquazaSceneSpriteTemplate_DuoFight_GroudonShoulder
+gRayquazaSceneSpriteTemplate_DuoFight_GroudonShoulder: @ 0x085FBBFC
+	rodata_sprite_template 0x772A, 0x7729, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_DuoFight_GroudonShoulderKyogreDorsalFin, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneAnim_DuoFight_GroudonClaw
+gRayquazaSceneAnim_DuoFight_GroudonClaw: @ 0x085FBC14
+	rodata_anim_frame 0x0, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnims_DuoFight_GroudonClaw
+gRayquazaSceneAnims_DuoFight_GroudonClaw: @ 0x085FBC1C
+	.4byte gRayquazaSceneAnim_DuoFight_GroudonClaw
+	.globl gRayquazaSceneSpriteSheet_DuoFight_GroudonClaw
+gRayquazaSceneSpriteSheet_DuoFight_GroudonClaw: @ 0x085FBC20
+	rodata_compressed_sprite_sheet 0x08DA2DD0, 0x0400, 0x772B
+	.globl gRayquazaSceneSpriteTemplate_DuoFight_GroudonClaw
+gRayquazaSceneSpriteTemplate_DuoFight_GroudonClaw: @ 0x085FBC28
+	rodata_sprite_template 0x772B, 0x7729, gRayquazaSceneOam_64x32, gRayquazaSceneAnims_DuoFight_GroudonClaw, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneAnim_DuoFight_Kyogre_TopLeft
+gRayquazaSceneAnim_DuoFight_Kyogre_TopLeft: @ 0x085FBC40
+	rodata_anim_frame 0x0, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_DuoFight_Kyogre_TopRight
+gRayquazaSceneAnim_DuoFight_Kyogre_TopRight: @ 0x085FBC48
+	rodata_anim_frame 0x8, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_DuoFight_Kyogre_FaceLeft
+gRayquazaSceneAnim_DuoFight_Kyogre_FaceLeft: @ 0x085FBC50
+	rodata_anim_frame 0x10, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_DuoFight_Kyogre_FaceRight
+gRayquazaSceneAnim_DuoFight_Kyogre_FaceRight: @ 0x085FBC58
+	rodata_anim_frame 0x18, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_DuoFight_Kyogre_ChinLeft
+gRayquazaSceneAnim_DuoFight_Kyogre_ChinLeft: @ 0x085FBC60
+	rodata_anim_frame 0x20, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_DuoFight_Kyogre_ChinRight
+gRayquazaSceneAnim_DuoFight_Kyogre_ChinRight: @ 0x085FBC68
+	rodata_anim_frame 0x28, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_DuoFight_Kyogre_LeftPectoralFin
+gRayquazaSceneAnim_DuoFight_Kyogre_LeftPectoralFin: @ 0x085FBC70
+	rodata_anim_frame 0x30, 0x18, 0, 0
+	rodata_anim_frame 0x40, 0x18, 0, 0
+	rodata_anim_frame 0x50, 0x18, 0, 0
+	rodata_anim_frame 0x40, 0x18, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnim_DuoFight_Kyogre_LeftShoulder
+gRayquazaSceneAnim_DuoFight_Kyogre_LeftShoulder: @ 0x085FBC84
+	rodata_anim_frame 0x38, 0x18, 0, 0
+	rodata_anim_frame 0x48, 0x18, 0, 0
+	rodata_anim_frame 0x58, 0x18, 0, 0
+	rodata_anim_frame 0x48, 0x18, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnim_DuoFight_Kyogre_RightShoulder
+gRayquazaSceneAnim_DuoFight_Kyogre_RightShoulder: @ 0x085FBC98
+	rodata_anim_frame 0x60, 0x18, 0, 0
+	rodata_anim_frame 0x68, 0x18, 0, 0
+	rodata_anim_frame 0x70, 0x18, 0, 0
+	rodata_anim_frame 0x68, 0x18, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnims_DuoFight_Kyogre
+gRayquazaSceneAnims_DuoFight_Kyogre: @ 0x085FBCAC
+	.4byte gRayquazaSceneAnim_DuoFight_Kyogre_TopLeft
+	.4byte gRayquazaSceneAnim_DuoFight_Kyogre_TopRight
+	.4byte gRayquazaSceneAnim_DuoFight_Kyogre_FaceLeft
+	.4byte gRayquazaSceneAnim_DuoFight_Kyogre_FaceRight
+	.4byte gRayquazaSceneAnim_DuoFight_Kyogre_ChinLeft
+	.4byte gRayquazaSceneAnim_DuoFight_Kyogre_ChinRight
+	.4byte gRayquazaSceneAnim_DuoFight_Kyogre_LeftPectoralFin
+	.4byte gRayquazaSceneAnim_DuoFight_Kyogre_LeftShoulder
+	.4byte gRayquazaSceneAnim_DuoFight_Kyogre_RightShoulder
+	.globl gRayquazaSceneSpriteSheet_DuoFight_Kyogre
+gRayquazaSceneSpriteSheet_DuoFight_Kyogre: @ 0x085FBCD0
+	rodata_compressed_sprite_sheet 0x08DA2FC4, 0x0F00, 0x772C
+	.globl gRayquazaSceneSpritePal_DuoFight_Kyogre
+gRayquazaSceneSpritePal_DuoFight_Kyogre: @ 0x085FBCD8
+	rodata_sprite_palette 0x08DA3640, 0x772C
+	.globl gRayquazaSceneSpriteTemplate_DuoFight_Kyogre
+gRayquazaSceneSpriteTemplate_DuoFight_Kyogre: @ 0x085FBCE0
+	rodata_sprite_template 0x772C, 0x772C, gRayquazaSceneOam_32x16, gRayquazaSceneAnims_DuoFight_Kyogre, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneAnim_DuoFight_KyogrePectoralFin
+gRayquazaSceneAnim_DuoFight_KyogrePectoralFin: @ 0x085FBCF8
+	rodata_anim_frame 0x0, 0x18, 0, 0
+	rodata_anim_frame 0x2, 0x18, 0, 0
+	rodata_anim_frame 0x4, 0x18, 0, 0
+	rodata_anim_frame 0x2, 0x18, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnims_DuoFight_KyogrePectoralFin
+gRayquazaSceneAnims_DuoFight_KyogrePectoralFin: @ 0x085FBD0C
+	.4byte gRayquazaSceneAnim_DuoFight_KyogrePectoralFin
+	.globl gRayquazaSceneSpriteSheet_DuoFight_KyogrePectoralFin
+gRayquazaSceneSpriteSheet_DuoFight_KyogrePectoralFin: @ 0x085FBD10
+	rodata_compressed_sprite_sheet 0x08DA34F8, 0x00C0, 0x772D
+	.globl gRayquazaSceneSpriteTemplate_DuoFight_KyogrePectoralFin
+gRayquazaSceneSpriteTemplate_DuoFight_KyogrePectoralFin: @ 0x085FBD18
+	rodata_sprite_template 0x772D, 0x772C, gRayquazaSceneOam_16x8, gRayquazaSceneAnims_DuoFight_KyogrePectoralFin, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneSpriteSheet_DuoFight_KyogreDorsalFin
+gRayquazaSceneSpriteSheet_DuoFight_KyogreDorsalFin: @ 0x085FBD30
+	rodata_compressed_sprite_sheet 0x08DA354C, 0x0200, 0x772E
+	.globl gRayquazaSceneSpriteTemplate_DuoFight_KyogreDorsalFin
+gRayquazaSceneSpriteTemplate_DuoFight_KyogreDorsalFin: @ 0x085FBD38
+	rodata_sprite_template 0x772E, 0x772C, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_DuoFight_GroudonShoulderKyogreDorsalFin, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneBgTemplates_TakesFlight
+gRayquazaSceneBgTemplates_TakesFlight: @ 0x085FBD50
+	bg_template 0x0, 0x2, 0x1F, 0x0, 0x0, 0x0, 0x0
+	bg_template 0x1, 0x0, 0x1E, 0x0, 0x0, 0x2, 0x0
+	bg_template 0x2, 0x1, 0x1D, 0x1, 0x0, 0x1, 0x0
+	.globl gRayquazaSceneAnim_TakesFlight_Smoke
+gRayquazaSceneAnim_TakesFlight_Smoke: @ 0x085FBD5C
+	rodata_anim_frame 0x0, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnims_TakesFlight_Smoke
+gRayquazaSceneAnims_TakesFlight_Smoke: @ 0x085FBD64
+	.4byte gRayquazaSceneAnim_TakesFlight_Smoke
+	.globl gRayquazaSceneAffineAnim_TakesFlight_Smoke
+gRayquazaSceneAffineAnim_TakesFlight_Smoke: @ 0x085FBD68
+	rodata_affine_anim_frame 0xFFC0, 0xFFC0, 0x0100, 0x0000
+	rodata_affine_anim_frame 0x0020, 0x0020, 0x0E00, 0x0000
+	rodata_affine_anim_frame 0x0100, 0x0100, 0x0000, 0x0000
+	rodata_affine_anim_frame 0x7FFE, 0x0000, 0x0000, 0x0000
+	.globl gRayquazaSceneAffineAnims_TakesFlight_Smoke
+gRayquazaSceneAffineAnims_TakesFlight_Smoke: @ 0x085FBD88
+	.4byte gRayquazaSceneAffineAnim_TakesFlight_Smoke
+	.globl gRayquazaSceneSpriteSheet_TakesFlight_Smoke
+gRayquazaSceneSpriteSheet_TakesFlight_Smoke: @ 0x085FBD8C
+	rodata_compressed_sprite_sheet 0x08DA3E68, 0x0100, 0x775B
+	.globl gRayquazaSceneSpritePal_TakesFlight_Smoke
+gRayquazaSceneSpritePal_TakesFlight_Smoke: @ 0x085FBD94
+	rodata_sprite_palette 0x08DA3F24, 0x775B
+	.globl gRayquazaSceneSpriteTemplate_TakesFlight_Smoke
+gRayquazaSceneSpriteTemplate_TakesFlight_Smoke: @ 0x085FBD9C
+	rodata_sprite_template 0x775B, 0x775B, gRayquazaSceneOam_32x16, gRayquazaSceneAnims_TakesFlight_Smoke, 0, gRayquazaSceneAffineAnims_TakesFlight_Smoke, sub_081D7B9C
+	.globl gRayquazaSceneTakesFlight_SmokeCoords
+gRayquazaSceneTakesFlight_SmokeCoords: @ 0x085FBDB4
+	.byte -1, 5
+	.byte -3, -4
+	.byte 5, -3
+	.byte -7, 2
+	.byte -9, -1
+	.byte 1, -5
+	.byte 3, 4
+	.byte -5, 3
+	.byte 7, -2
+	.byte 9, 1
+	.globl gRayquazaSceneBgTemplates_Descends
+gRayquazaSceneBgTemplates_Descends: @ 0x085FBDC8
+	bg_template 0x0, 0x0, 0x1F, 0x0, 0x0, 0x0, 0x0
+	bg_template 0x1, 0x1, 0x1E, 0x0, 0x0, 0x1, 0x0
+	bg_template 0x2, 0x2, 0x1D, 0x0, 0x0, 0x2, 0x0
+	bg_template 0x3, 0x1, 0x1C, 0x0, 0x0, 0x3, 0x0
+	.globl gRayquazaSceneAnim_Descends_Rayquaza
+gRayquazaSceneAnim_Descends_Rayquaza: @ 0x085FBDD8
+	rodata_anim_frame 0x0, 0x20, 0, 0
+	rodata_anim_frame 0x40, 0x20, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnims_Descends_Rayquaza
+gRayquazaSceneAnims_Descends_Rayquaza: @ 0x085FBDE4
+	.4byte gRayquazaSceneAnim_Descends_Rayquaza
+	.globl gRayquazaSceneAnim_Descends_RayquazaTail
+gRayquazaSceneAnim_Descends_RayquazaTail: @ 0x085FBDE8
+	rodata_anim_frame 0x0, 0x20, 0, 0
+	rodata_anim_frame 0x8, 0x20, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnims_Descends_RayquazaTail
+gRayquazaSceneAnims_Descends_RayquazaTail: @ 0x085FBDF4
+	.4byte gRayquazaSceneAnim_Descends_RayquazaTail
+	.globl gRayquazaSceneSpriteSheet_Descends_Rayquaza
+gRayquazaSceneSpriteSheet_Descends_Rayquaza: @ 0x085FBDF8
+	rodata_compressed_sprite_sheet 0x08DA66E8, 0x1000, 0x775C
+	.globl gRayquazaSceneSpriteSheet_Descends_RayquazaTail
+gRayquazaSceneSpriteSheet_Descends_RayquazaTail: @ 0x085FBE00
+	rodata_compressed_sprite_sheet 0x08DA6B54, 0x0200, 0x775D
+	.globl gRayquazaSceneSpritePal_Descends_Rayquaza
+gRayquazaSceneSpritePal_Descends_Rayquaza: @ 0x085FBE08
+	rodata_sprite_palette 0x08DA5050, 0x775C
+	.globl gRayquazaSceneSpriteTemplate_Descends_Rayquaza
+gRayquazaSceneSpriteTemplate_Descends_Rayquaza: @ 0x085FBE10
+	rodata_sprite_template 0x775C, 0x775C, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_Descends_Rayquaza, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneSpriteTemplate_Descends_RayquazaTail
+gRayquazaSceneSpriteTemplate_Descends_RayquazaTail: @ 0x085FBE28
+	rodata_sprite_template 0x775D, 0x775C, gRayquazaSceneOam_16x32, gRayquazaSceneAnims_Descends_RayquazaTail, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneBgTemplates_Charges
+gRayquazaSceneBgTemplates_Charges: @ 0x085FBE40
+	bg_template 0x0, 0x2, 0x1F, 0x0, 0x0, 0x0, 0x0
+	bg_template 0x1, 0x1, 0x1E, 0x0, 0x0, 0x1, 0x0
+	bg_template 0x2, 0x2, 0x1D, 0x0, 0x0, 0x2, 0x0
+	bg_template 0x3, 0x3, 0x1C, 0x0, 0x0, 0x3, 0x0
+	.globl gRayquazaSceneAnim_ChasesAway_Groudon_Still
+gRayquazaSceneAnim_ChasesAway_Groudon_Still: @ 0x085FBE50
+	rodata_anim_frame 0x0, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_ChasesAway_Groudon_Moving
+gRayquazaSceneAnim_ChasesAway_Groudon_Moving: @ 0x085FBE58
+	rodata_anim_frame 0x0, 0x30, 0, 0
+	rodata_anim_frame 0x40, 0x20, 0, 0
+	rodata_anim_frame 0x0, 0x30, 0, 0
+	rodata_anim_frame 0x80, 0x20, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnims_ChasesAway_Groudon
+gRayquazaSceneAnims_ChasesAway_Groudon: @ 0x085FBE6C
+	.4byte gRayquazaSceneAnim_ChasesAway_Groudon_Still
+	.4byte gRayquazaSceneAnim_ChasesAway_Groudon_Moving
+	.globl gRayquazaSceneAnim_ChasesAway_GroudonTail
+gRayquazaSceneAnim_ChasesAway_GroudonTail: @ 0x085FBE74
+	rodata_anim_frame 0x0, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnims_ChasesAway_GroudonTail
+gRayquazaSceneAnims_ChasesAway_GroudonTail: @ 0x085FBE7C
+	.4byte gRayquazaSceneAnim_ChasesAway_GroudonTail
+	.globl gRayquazaSceneAnim_ChasesAway_Kyogre_Front
+gRayquazaSceneAnim_ChasesAway_Kyogre_Front: @ 0x085FBE80
+	rodata_anim_frame 0x0, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_ChasesAway_Kyogre_Back
+gRayquazaSceneAnim_ChasesAway_Kyogre_Back: @ 0x085FBE88
+	rodata_anim_frame 0x10, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_ChasesAway_Kyogre_Tail
+gRayquazaSceneAnim_ChasesAway_Kyogre_Tail: @ 0x085FBE90
+	rodata_anim_frame 0x20, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnims_ChasesAway_Kyogre
+gRayquazaSceneAnims_ChasesAway_Kyogre: @ 0x085FBE98
+	.4byte gRayquazaSceneAnim_ChasesAway_Kyogre_Front
+	.4byte gRayquazaSceneAnim_ChasesAway_Kyogre_Back
+	.4byte gRayquazaSceneAnim_ChasesAway_Kyogre_Tail
+	.globl gRayquazaSceneAnim_ChasesAway_Rayquaza_FlyingDown
+gRayquazaSceneAnim_ChasesAway_Rayquaza_FlyingDown: @ 0x085FBEA4
+	rodata_anim_frame 0x0, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_ChasesAway_Rayquaza_Arriving
+gRayquazaSceneAnim_ChasesAway_Rayquaza_Arriving: @ 0x085FBEAC
+	rodata_anim_frame 0x40, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_ChasesAway_Rayquaza_Floating
+gRayquazaSceneAnim_ChasesAway_Rayquaza_Floating: @ 0x085FBEB4
+	rodata_anim_frame 0x80, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_ChasesAway_Rayquaza_Shouting
+gRayquazaSceneAnim_ChasesAway_Rayquaza_Shouting: @ 0x085FBEBC
+	rodata_anim_frame 0xC0, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnims_ChasesAway_Rayquaza
+gRayquazaSceneAnims_ChasesAway_Rayquaza: @ 0x085FBEC4
+	.4byte gRayquazaSceneAnim_ChasesAway_Rayquaza_FlyingDown
+	.4byte gRayquazaSceneAnim_ChasesAway_Rayquaza_Arriving
+	.4byte gRayquazaSceneAnim_ChasesAway_Rayquaza_Floating
+	.4byte gRayquazaSceneAnim_ChasesAway_Rayquaza_Shouting
+	.globl gRayquazaSceneAnim_ChasesAway_RayquazaTail_FlyingDown
+gRayquazaSceneAnim_ChasesAway_RayquazaTail_FlyingDown: @ 0x085FBED4
+	rodata_anim_frame 0x0, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_ChasesAway_RayquazaTail_Arriving
+gRayquazaSceneAnim_ChasesAway_RayquazaTail_Arriving: @ 0x085FBEDC
+	rodata_anim_frame 0x10, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_ChasesAway_RayquazaTail_Floating
+gRayquazaSceneAnim_ChasesAway_RayquazaTail_Floating: @ 0x085FBEE4
+	rodata_anim_frame 0x20, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnim_ChasesAway_RayquazaTail_Shouting
+gRayquazaSceneAnim_ChasesAway_RayquazaTail_Shouting: @ 0x085FBEEC
+	rodata_anim_frame 0x30, 0x1, 0, 0
+	rodata_anim_end
+	.globl gRayquazaSceneAnims_ChasesAway_RayquazaTail
+gRayquazaSceneAnims_ChasesAway_RayquazaTail: @ 0x085FBEF4
+	.4byte gRayquazaSceneAnim_ChasesAway_RayquazaTail_FlyingDown
+	.4byte gRayquazaSceneAnim_ChasesAway_RayquazaTail_Arriving
+	.4byte gRayquazaSceneAnim_ChasesAway_RayquazaTail_Floating
+	.4byte gRayquazaSceneAnim_ChasesAway_RayquazaTail_Shouting
+	.globl gRayquazaSceneAnim_ChasesAway_KyogreSplash
+gRayquazaSceneAnim_ChasesAway_KyogreSplash: @ 0x085FBF04
+	rodata_anim_frame 0x0, 0x8, 0, 0
+	rodata_anim_frame 0x4, 0x8, 0, 0
+	rodata_anim_frame 0x8, 0x8, 0, 0
+	rodata_anim_frame 0xC, 0x8, 0, 0
+	rodata_anim_frame 0x10, 0x8, 0, 0
+	rodata_anim_frame 0x14, 0x8, 0, 0
+	rodata_anim_jump 0x0
+	.globl gRayquazaSceneAnims_ChasesAway_KyogreSplash
+gRayquazaSceneAnims_ChasesAway_KyogreSplash: @ 0x085FBF20
+	.4byte gRayquazaSceneAnim_ChasesAway_KyogreSplash
+	.globl gRayquazaSceneSpriteSheet_ChasesAway_Groudon
+gRayquazaSceneSpriteSheet_ChasesAway_Groudon: @ 0x085FBF24
+	rodata_compressed_sprite_sheet 0x08DA9180, 0x1800, 0x7765
+	.globl gRayquazaSceneSpriteSheet_ChasesAway_GroudonTail
+gRayquazaSceneSpriteSheet_ChasesAway_GroudonTail: @ 0x085FBF2C
+	rodata_compressed_sprite_sheet 0x08DA9918, 0x0080, 0x7766
+	.globl gRayquazaSceneSpriteSheet_ChasesAway_Kyogre
+gRayquazaSceneSpriteSheet_ChasesAway_Kyogre: @ 0x085FBF34
+	rodata_compressed_sprite_sheet 0x08DA995C, 0x0600, 0x7768
+	.globl gRayquazaSceneSpriteSheet_ChasesAway_Rayquaza
+gRayquazaSceneSpriteSheet_ChasesAway_Rayquaza: @ 0x085FBF3C
+	rodata_compressed_sprite_sheet 0x08DA9BA4, 0x2000, 0x7769
+	.globl gRayquazaSceneSpriteSheet_ChasesAway_RayquazaTail
+gRayquazaSceneSpriteSheet_ChasesAway_RayquazaTail: @ 0x085FBF44
+	rodata_compressed_sprite_sheet 0x08DAA84C, 0x0800, 0x776A
+	.globl gRayquazaSceneSpriteSheet_ChasesAway_KyogreSplash
+gRayquazaSceneSpriteSheet_ChasesAway_KyogreSplash: @ 0x085FBF4C
+	rodata_compressed_sprite_sheet 0x08DAAA3C, 0x0300, 0x776B
+	.globl gRayquazaSceneSpritePal_ChasesAway_Groudon
+gRayquazaSceneSpritePal_ChasesAway_Groudon: @ 0x085FBF54
+	rodata_sprite_palette 0x08DAAAD4, 0x7765
+	.globl gRayquazaSceneSpritePal_ChasesAway_Kyogre
+gRayquazaSceneSpritePal_ChasesAway_Kyogre: @ 0x085FBF5C
+	rodata_sprite_palette 0x08DAAAFC, 0x7768
+	.globl gRayquazaSceneSpritePal_ChasesAway_Rayquaza
+gRayquazaSceneSpritePal_ChasesAway_Rayquaza: @ 0x085FBF64
+	rodata_sprite_palette 0x08DAAB24, 0x7769
+	.globl gRayquazaSceneSpritePal_ChasesAway_KyogreSplash
+gRayquazaSceneSpritePal_ChasesAway_KyogreSplash: @ 0x085FBF6C
+	rodata_sprite_palette 0x08DAAB4C, 0x776B
+	.globl gRayquazaSceneSpriteTemplate_ChasesAway_Groudon
+gRayquazaSceneSpriteTemplate_ChasesAway_Groudon: @ 0x085FBF74
+	rodata_sprite_template 0x7765, 0x7765, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_ChasesAway_Groudon, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneSpriteTemplate_ChasesAway_GroudonTail
+gRayquazaSceneSpriteTemplate_ChasesAway_GroudonTail: @ 0x085FBF8C
+	rodata_sprite_template 0x7766, 0x7765, gRayquazaSceneOam_16x16, gRayquazaSceneAnims_ChasesAway_GroudonTail, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneSpriteTemplate_ChasesAway_Kyogre
+gRayquazaSceneSpriteTemplate_ChasesAway_Kyogre: @ 0x085FBFA4
+	rodata_sprite_template 0x7768, 0x7768, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_ChasesAway_Kyogre, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneSpriteTemplate_ChasesAway_Rayquaza
+gRayquazaSceneSpriteTemplate_ChasesAway_Rayquaza: @ 0x085FBFBC
+	rodata_sprite_template 0x7769, 0x7769, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_ChasesAway_Rayquaza, 0, 0x082BF310, sub_081D8F58
+	.globl gRayquazaSceneSpriteTemplate_ChasesAway_RayquazaTail
+gRayquazaSceneSpriteTemplate_ChasesAway_RayquazaTail: @ 0x085FBFD4
+	rodata_sprite_template 0x776A, 0x7769, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_ChasesAway_RayquazaTail, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneSpriteTemplate_ChasesAway_KyogreSplash
+gRayquazaSceneSpriteTemplate_ChasesAway_KyogreSplash: @ 0x085FBFEC
+	rodata_sprite_template 0x776B, 0x776B, gRayquazaSceneOam_32x8, gRayquazaSceneAnims_ChasesAway_KyogreSplash, 0, 0x082BF310, SpriteCallbackDummy
+	.globl gRayquazaSceneBgTemplates_ChasesAway
+gRayquazaSceneBgTemplates_ChasesAway: @ 0x085FC004
+	bg_template 0x0, 0x1, 0x1F, 0x0, 0x0, 0x1, 0x0
+	bg_template 0x1, 0x1, 0x1E, 0x0, 0x0, 0x2, 0x0
+	bg_template 0x2, 0x0, 0x1D, 0x0, 0x0, 0x0, 0x0
 	@ pret/pokeemerald-jp direct xref for 0x085FC010: walda_phrase.s: CB2_HandleGivenWaldaPhrase
 	.globl gWaldaPhraseData_085FC010
 gWaldaPhraseData_085FC010:

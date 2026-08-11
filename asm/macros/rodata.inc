@@ -413,3 +413,20 @@
     .4byte \data
     .4byte \size
 .endm
+
+@ Priority-A recovered structures.
+	.macro frontier_pass_area_bounds y_start, y_end, x_start, x_end
+	.2byte \y_start, \y_end, \x_start, \x_end
+	.endm
+
+	.macro frontier_pass_landmark name, description, x, y, anim
+	.4byte \name, \description
+	.2byte \x, \y
+	.byte \anim, 0, 0, 0
+	.endm
+
+	.macro rayquaza_scanline_params dma_dest, dma_control, init_state
+	.4byte \dma_dest, \dma_control
+	.byte \init_state, 0
+	.2byte 0
+	.endm

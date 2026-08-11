@@ -148,7 +148,7 @@ _081348B4:
 	.align 2, 0
 _08134930: .4byte 0x040000D4
 _08134934: .4byte 0x81000800
-_08134938: .4byte gWallclockData_0859130C
+_08134938: .4byte gWallClock_Gfx
 _0813493C: .4byte 0x02037280
 _08134940: .4byte 0x08590D68
 _08134944:
@@ -434,7 +434,7 @@ CB2_ViewWallClock: @ 0x08134B8C
 	str r0, [sp, #0xc]
 	b _08134BEC
 	.align 2, 0
-_08134BD4: .4byte gWallclockData_08591074
+_08134BD4: .4byte gWallclockHand_Gfx
 _08134BD8: .4byte 0x06003800
 _08134BDC: .4byte 0x08134F65
 _08134BE0: .4byte 0x03005B60
