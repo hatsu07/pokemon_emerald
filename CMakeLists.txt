@@ -593,6 +593,35 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END RAYQUAZA SCENE 5 EXACT PIPELINE
 
+    # BEGIN ITEM ICON ALL EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/items/itemicon_exact/(gItemIcon[^/]+)[.](4bpp|gbapal)[.]lz$")
+        set(ITEM_ICON_EXACT_KEY "${CMAKE_MATCH_1}")
+        set(ITEM_ICON_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/items/item_icons_all_lz77_plan.json")
+
+        file(GLOB_RECURSE ITEM_ICON_EXACT_EDITABLE_SOURCES
+            CONFIGURE_DEPENDS
+            "${CMAKE_SOURCE_DIR}/graphics/items/icons/*.png"
+            "${CMAKE_SOURCE_DIR}/graphics/items/icon_palettes/*.png")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/item_icon_exact_assets.py"
+                --manifest "${ITEM_ICON_EXACT_MANIFEST}"
+                --key "${ITEM_ICON_EXACT_KEY}"
+                --repo-root "${CMAKE_SOURCE_DIR}"
+                --output "${OUTPUT_ABS}"
+            DEPENDS
+                ${ITEM_ICON_EXACT_EDITABLE_SOURCES}
+                "${ITEM_ICON_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/item_icon_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END ITEM ICON ALL EXACT PIPELINE
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/priority_b/(.+)[.]4bpp[.]lz$")
         set(PRIORITY_B_STEM "${CMAKE_MATCH_1}")
