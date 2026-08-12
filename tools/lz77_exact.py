@@ -9,6 +9,11 @@ bytes are always taken from the current PNG.
 This makes the generated .4bpp.lz byte-identical to the original ROM while
 keeping the actual graphics editable and avoiding baserom.gba at normal build
 time.
+
+A manifest entry may also contain ``pic`` and ``palette`` sub-plans. In that
+case repack-png writes the exact compressed 4bpp picture immediately followed
+by the exact compressed 16-color palette. This is used by trainer front
+sprites so one indexed PNG is the editable source for both ROM objects.
 """
 from __future__ import annotations
 
@@ -189,18 +194,24 @@ def repack_raw_with_plan(raw: bytes, plan: dict[str, Any]) -> bytes:
     return bytes(encoded)
 
 
-def indexed_png_to_4bpp(path: Path) -> bytes:
+def _open_indexed_png(path: Path):
     try:
         from PIL import Image
     except ImportError as exc:
         raise SystemExit("Pillow is required: sudo apt install python3-pil") from exc
 
-    with Image.open(path) as img:
-        if img.mode != "P":
-            raise ValueError(
-                f"{path}: indexed PNG required (mode P), got {img.mode}. "
-                "Do not convert analyzed graphics to RGB/RGBA."
-            )
+    image = Image.open(path)
+    if image.mode != "P":
+        image.close()
+        raise ValueError(
+            f"{path}: indexed PNG required (mode P), got {image.mode}. "
+            "Do not convert analyzed graphics to RGB/RGBA."
+        )
+    return image
+
+
+def indexed_png_to_4bpp(path: Path) -> bytes:
+    with _open_indexed_png(path) as img:
         w, h = img.size
         if w % 8 or h % 8:
             raise ValueError(f"{path}: dimensions must be multiples of 8, got {w}x{h}")
@@ -225,27 +236,73 @@ def indexed_png_to_4bpp(path: Path) -> bytes:
     return bytes(out)
 
 
+def indexed_png_to_gbapal(path: Path) -> bytes:
+    with _open_indexed_png(path) as img:
+        palette = img.getpalette()
+        if palette is None or len(palette) < 48:
+            raise ValueError(f"{path}: missing 16-color indexed palette")
+
+    out = bytearray()
+    for i in range(16):
+        r8, g8, b8 = palette[i * 3 : i * 3 + 3]
+        value = (r8 >> 3) | ((g8 >> 3) << 5) | ((b8 >> 3) << 10)
+        out.extend((value & 0xFF, value >> 8))
+    return bytes(out)
+
+
 def load_manifest(path: Path) -> dict[str, Any]:
-    obj = json.loads(path.read_text(encoding="utf-8"))
+    text = path.read_text(encoding="utf-8").strip()
+    if not text:
+        return {"format": FORMAT, "entries": {}}
+    obj = json.loads(text)
     if obj.get("format") != FORMAT:
         raise ValueError(f"unsupported LZ77 plan format: {obj.get('format')!r}")
     return obj
 
 
+def load_embedded_png_plan(path: Path) -> dict[str, Any] | None:
+    try:
+        from PIL import Image
+    except ImportError as exc:
+        raise SystemExit("Pillow is required: sudo apt install python3-pil") from exc
+
+    with Image.open(path) as img:
+        text = img.info.get("pokeemerald_lz77_plan")
+    if not text:
+        return None
+    obj = json.loads(text)
+    if not isinstance(obj, dict):
+        raise ValueError(f"{path}: embedded LZ77 plan must be a JSON object")
+    return obj
+
+
 def cmd_repack_png(args: argparse.Namespace) -> None:
-    manifest = load_manifest(Path(args.manifest))
-    entries = manifest["entries"]
-    if args.stem not in entries:
-        raise SystemExit(
-            f"LZ77 plan not found for {args.stem!r}. "
-            "Run: python3 tools/fix_all_lz77_exact.py --apply"
-        )
-    raw = indexed_png_to_4bpp(Path(args.input))
-    encoded = repack_raw_with_plan(raw, entries[args.stem])
+    input_path = Path(args.input)
+    entry = load_embedded_png_plan(input_path)
+
+    if entry is None:
+        manifest = load_manifest(Path(args.manifest))
+        entries = manifest["entries"]
+        if args.stem not in entries:
+            raise SystemExit(
+                f"LZ77 plan not found for {args.stem!r}. "
+                "Run: python3 tools/fix_all_lz77_exact.py --apply"
+            )
+        entry = entries[args.stem]
+
+    raw = indexed_png_to_4bpp(input_path)
+
+    if isinstance(entry, dict) and "pic" in entry and "palette" in entry:
+        encoded = bytearray(repack_raw_with_plan(raw, entry["pic"]))
+        palette_raw = indexed_png_to_gbapal(input_path)
+        encoded.extend(repack_raw_with_plan(palette_raw, entry["palette"]))
+        encoded = bytes(encoded)
+    else:
+        encoded = repack_raw_with_plan(raw, entry)
+
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_bytes(encoded)
-
 
 def main() -> None:
     ap = argparse.ArgumentParser()
