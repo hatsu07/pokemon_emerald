@@ -650,6 +650,7 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END DECORATION ICON ALL EXACT PIPELINE
 
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/priority_b/(.+)[.]4bpp[.]lz$")
         set(PRIORITY_B_STEM "${CMAKE_MATCH_1}")
@@ -1633,3 +1634,58 @@ add_custom_target(distclean
         "${MAP_FILE}"
     COMMENT "Removing build outputs, including converted graphics and audio"
     VERBATIM)
+
+# BEGIN MOVES 8117 LZ77 CONFIGURE EXACT PIPELINE
+# These files are consumed by .incbin directives in
+# data/generated/rodata/moves/8117_moves_data.inc.
+#
+# Generate them during CMake configuration rather than as independent custom
+# command outputs. data/data.o contains the nested .inc file and the previous
+# per-output rules were not ordered before its assembler invocation.
+#
+# CMAKE_CONFIGURE_DEPENDS makes edits to PNG sources / exact plan / helpers
+# trigger automatic reconfigure before the next build.
+if(NOT Python3_EXECUTABLE)
+    find_package(Python3 REQUIRED COMPONENTS Interpreter)
+endif()
+
+set(MOVES_8117_EXACT_ROOT
+    "${CMAKE_SOURCE_DIR}/graphics/unknown/moves_8117_lz77")
+set(MOVES_8117_EXACT_MANIFEST
+    "${MOVES_8117_EXACT_ROOT}/manifests/moves_8117_lz77_exact_plan.json")
+set(MOVES_8117_EXACT_OUTPUT_DIR
+    "${CMAKE_BINARY_DIR}/graphics/unknown/moves_8117_lz77/exact")
+
+file(GLOB MOVES_8117_EXACT_EDITABLE_SOURCES
+    CONFIGURE_DEPENDS
+    "${MOVES_8117_EXACT_ROOT}/png/*.png")
+
+set_property(
+    DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
+    ${MOVES_8117_EXACT_EDITABLE_SOURCES}
+    "${MOVES_8117_EXACT_MANIFEST}"
+    "${CMAKE_SOURCE_DIR}/tools/moves_8117_exact_assets.py"
+    "${CMAKE_SOURCE_DIR}/tools/moves_8117_exact_assets_batch.py"
+    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py")
+
+execute_process(
+    COMMAND
+        "${Python3_EXECUTABLE}"
+        "${CMAKE_SOURCE_DIR}/tools/moves_8117_exact_assets_batch.py"
+        --manifest "${MOVES_8117_EXACT_MANIFEST}"
+        --repo-root "${CMAKE_SOURCE_DIR}"
+        --output-dir "${MOVES_8117_EXACT_OUTPUT_DIR}"
+        --quiet
+    WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
+    RESULT_VARIABLE MOVES_8117_EXACT_RESULT
+    OUTPUT_VARIABLE MOVES_8117_EXACT_STDOUT
+    ERROR_VARIABLE MOVES_8117_EXACT_STDERR)
+
+if(NOT MOVES_8117_EXACT_RESULT EQUAL 0)
+    message(FATAL_ERROR
+        "moves/8117 exact PNG asset generation failed "
+        "(exit ${MOVES_8117_EXACT_RESULT})\n"
+        "stdout:\n${MOVES_8117_EXACT_STDOUT}\n"
+        "stderr:\n${MOVES_8117_EXACT_STDERR}")
+endif()
+# END MOVES 8117 LZ77 CONFIGURE EXACT PIPELINE
