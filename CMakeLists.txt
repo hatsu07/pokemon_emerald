@@ -1012,8 +1012,7 @@ if(AUDIO_GENERATED_BINARIES)
         VERBATIM)
 endif()
 
-set_property(DIRECTORY APPEND PROPERTY ADDITIONAL_CLEAN_FILES
-    "${AUDIO_BUILD_DIR}")
+# DirectSoundの生成.binも画像生成物と同様、通常cleanでは保持する。
 # END DIRECTSOUND WAV PIPELINE
 
 file(GLOB_RECURSE TEXT_SOURCES CONFIGURE_DEPENDS
@@ -1169,7 +1168,7 @@ add_custom_target(compare
     DEPENDS "${ROM_FILE}"
     VERBATIM)
 
-# 通常cleanの対象に加えて、PNGから変換した画像生成物も削除する。
+# 通常cleanの対象に加えて、変換済みの画像・音声生成物も削除する。
 # CMake構成時のgenerated/とld_script_jp.ldは保持するため、
 # distclean後も再構成せずにビルドできる。
 add_custom_target(distclean
@@ -1177,9 +1176,10 @@ add_custom_target(distclean
     COMMAND "${CMAKE_COMMAND}" -E remove_directory "${DATA_BUILD_DIR}"
     COMMAND "${CMAKE_COMMAND}" -E remove_directory "${CHARMAP_BUILD_DIR}"
     COMMAND "${CMAKE_COMMAND}" -E remove_directory "${GRAPHICS_BUILD_DIR}"
+    COMMAND "${CMAKE_COMMAND}" -E remove_directory "${AUDIO_BUILD_DIR}"
     COMMAND "${CMAKE_COMMAND}" -E remove -f
         "${ROM_FILE}"
         "${ELF_FILE}"
         "${MAP_FILE}"
-    COMMENT "Removing build outputs, including converted graphics"
+    COMMENT "Removing build outputs, including converted graphics and audio"
     VERBATIM)
