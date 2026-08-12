@@ -2,8 +2,8 @@
   "format": "pokemon-emerald-jp-directsound-v1",
   "note": "WaveData headers remain in ASM. WAV files represent editable sample payloads only. agbp preserves the exact GBA pitch field; agbl preserves the original stored fourth header field.",
   "asset_count": 493,
-  "complete_count": 483,
-  "truncated_count": 10,
+  "complete_count": 493,
+  "truncated_count": 0,
   "assets": [
     {
       "label": "DirectSoundWaveData_Cry_092_JP_0872C1F0",
@@ -2859,10 +2859,10 @@
       "encoding": "dpcm4",
       "loop_enabled": false,
       "sample_rate_hint": 10512,
-      "source_size": 2878,
+      "source_size": 3280,
       "expected_size": 3280,
-      "source_sha1": "039c40b749cb413e9c4e31b7aa9a5a8e2110fc9d",
-      "status": "truncated",
+      "source_sha1": "69748fb8766e0d964c2ff4bd87715f11c794e48d",
+      "status": "complete",
       "synthetic_tail_sample": false
     },
     {
@@ -5323,10 +5323,10 @@
       "encoding": "dpcm4",
       "loop_enabled": false,
       "sample_rate_hint": 10512,
-      "source_size": 1654,
+      "source_size": 1988,
       "expected_size": 1988,
-      "source_sha1": "b849ddb7ff60edd71e4ddf5702034f740662644e",
-      "status": "truncated",
+      "source_sha1": "7d7a5b0b7c72dec83aaf8897f6d508978570b2a4",
+      "status": "complete",
       "synthetic_tail_sample": false
     },
     {
@@ -5565,10 +5565,10 @@
       "encoding": "pcm_s8",
       "loop_enabled": true,
       "sample_rate_hint": 13379,
-      "source_size": 3529,
+      "source_size": 28548,
       "expected_size": 28548,
-      "source_sha1": "0615477c6112c47e4694ad05683664239ffcf02d",
-      "status": "truncated",
+      "source_sha1": "457260161469c23fd2bab5a591e33d6b85462d08",
+      "status": "complete",
       "synthetic_tail_sample": false
     },
     {
@@ -7391,10 +7391,10 @@
       "encoding": "pcm_s8",
       "loop_enabled": false,
       "sample_rate_hint": 13379,
-      "source_size": 726,
+      "source_size": 5300,
       "expected_size": 5300,
-      "source_sha1": "1890092501dd9913411564df509f4e1a8fde0646",
-      "status": "truncated",
+      "source_sha1": "01b6af79e5db30dc74db73f155a68dca3b092fa9",
+      "status": "complete",
       "synthetic_tail_sample": false
     },
     {
@@ -7589,10 +7589,10 @@
       "encoding": "pcm_s8",
       "loop_enabled": true,
       "sample_rate_hint": 13379,
-      "source_size": 1017,
+      "source_size": 2708,
       "expected_size": 2708,
-      "source_sha1": "9ad6f4ff3f6e6e16ab3fb0c553eb73c7d61fc228",
-      "status": "truncated",
+      "source_sha1": "7e97fcae8725566276cbc8c86e1adc7b2764e082",
+      "status": "complete",
       "synthetic_tail_sample": false
     },
     {
@@ -7699,10 +7699,10 @@
       "encoding": "pcm_s8",
       "loop_enabled": false,
       "sample_rate_hint": 13379,
-      "source_size": 3716,
+      "source_size": 4888,
       "expected_size": 4888,
-      "source_sha1": "0272494e7c487b98726d23b66d3327cbf0533b35",
-      "status": "truncated",
+      "source_sha1": "ce13b57d327d83d3383aeb986ac158644821a6b6",
+      "status": "complete",
       "synthetic_tail_sample": false
     },
     {
@@ -9261,10 +9261,10 @@
       "encoding": "dpcm4",
       "loop_enabled": false,
       "sample_rate_hint": 10512,
-      "source_size": 5666,
+      "source_size": 5952,
       "expected_size": 5952,
-      "source_sha1": "6c9135266a73a5b2de70e93fbd979ef0ce8069c0",
-      "status": "truncated",
+      "source_sha1": "34fd2821db7df9b16ba4308ec665f8c695442419",
+      "status": "complete",
       "synthetic_tail_sample": true
     },
     {
@@ -9789,10 +9789,10 @@
       "encoding": "dpcm4",
       "loop_enabled": false,
       "sample_rate_hint": 10512,
-      "source_size": 1330,
+      "source_size": 4500,
       "expected_size": 4500,
-      "source_sha1": "17723c0f542d9fd275876e041aed4d8296e9ddd3",
-      "status": "truncated",
+      "source_sha1": "40bcefa0a64f18570b1bd480a3f34c86747075ec",
+      "status": "complete",
       "synthetic_tail_sample": false
     },
     {
@@ -10273,10 +10273,10 @@
       "encoding": "pcm_s8",
       "loop_enabled": true,
       "sample_rate_hint": 10512,
-      "source_size": 2597,
+      "source_size": 2700,
       "expected_size": 2700,
-      "source_sha1": "16b5b4b5c9b18567a37617976482879c213496d5",
-      "status": "truncated",
+      "source_sha1": "8da672615982694d0b19eaef316d56e5c0479c77",
+      "status": "complete",
       "synthetic_tail_sample": false
     },
     {
@@ -10845,10 +10845,10 @@
       "encoding": "pcm_s8",
       "loop_enabled": true,
       "sample_rate_hint": 13379,
-      "source_size": 4458,
+      "source_size": 5712,
       "expected_size": 5712,
-      "source_sha1": "b67972e46353ae8535352931602910e287736ff6",
-      "status": "truncated",
+      "source_sha1": "647ea20ed2e89e16c171d4523223789cf016a670",
+      "status": "complete",
       "synthetic_tail_sample": false
     }
   ]

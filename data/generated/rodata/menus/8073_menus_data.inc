@@ -621,4 +621,4 @@ DirectSoundWaveData_Instrument_007_JP_086435BC: @ 0x086435BC
 DirectSoundWaveData_Instrument_008_JP_08644900: @ 0x08644900
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x00D10C00, 0x000007AE, 0x00000A93
-	.incbin "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_008_JP_08644900.bin" @ 1017 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_008_JP_08644900.bin" @ 1017 DirectSound sample bytes
