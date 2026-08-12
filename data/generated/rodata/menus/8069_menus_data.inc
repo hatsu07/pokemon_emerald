@@ -18,8 +18,8 @@ gXcmdTable:
 	.4byte ply_xcmd_0C
 	.4byte ply_xcmd_0D
 VoiceGroup_JP_085FD824: @ 0x085FD824
-	voice_keysplit_all 0x085FDB0C @ 0x085FD824
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x085FD830
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x085FD824
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x085FD830
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FD83C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FD848
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FD854
@@ -66,7 +66,7 @@ VoiceGroup_JP_085FD824: @ 0x085FD824
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDA40
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDA4C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 204, 193, 239 @ 0x085FDA58
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x085FDA64
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x085FDA64
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDA70
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDA7C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDA88
@@ -74,7 +74,7 @@ VoiceGroup_JP_085FD824: @ 0x085FD824
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDAA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDAAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDAB8
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x085FDAC4
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x085FDAC4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDAD0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDADC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDAE8
@@ -92,7 +92,7 @@ VoiceGroup_JP_085FDB0C: @ 0x085FDB0C
 	voice_square_1 0, 2, 0, 1, 6, 0 @ 0x085FDB6C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDB78
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDB84
-	voice_programmable_wave 0x0863C0EC, 0, 7, 15, 1 @ 0x085FDB90
+	voice_programmable_wave M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 1 @ 0x085FDB90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDB9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDBA8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDBB4
@@ -100,7 +100,7 @@ VoiceGroup_JP_085FDB0C: @ 0x085FDB0C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDBCC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDBD8
 	voice_square_2 2, 0, 1, 6, 0 @ 0x085FDBE4
-	voice_programmable_wave 0x0863C10C, 0, 7, 15, 1 @ 0x085FDBF0
+	voice_programmable_wave M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 1 @ 0x085FDBF0
 	voice_square_1 0, 2, 0, 1, 6, 0 @ 0x085FDBFC
 	voice_square_2 3, 0, 1, 6, 0 @ 0x085FDC08
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FDC14
@@ -459,7 +459,7 @@ VoiceGroup_JP_085FEC40: @ 0x085FEC40
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_050_JP_0867B868, 255, 0, 224, 165 @ 0x085FEC40
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_051_JP_086827FC, 255, 0, 218, 165 @ 0x085FEC4C
 VoiceGroup_JP_085FEC58: @ 0x085FEC58
-	voice_keysplit_all 0x08604358 @ 0x085FEC58
+	voice_keysplit_all VoiceGroup_JP_08604358 @ 0x085FEC58
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FEC64
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FEC70
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FEC7C
@@ -507,7 +507,7 @@ VoiceGroup_JP_085FEC58: @ 0x085FEC58
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FEE74
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 0, 204 @ 0x085FEE80
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x085FEE8C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x085FEE98
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x085FEE98
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FEEA4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FEEB0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FEEBC
@@ -515,11 +515,11 @@ VoiceGroup_JP_085FEC58: @ 0x085FEC58
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FEED4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FEEE0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FEEEC
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x085FEEF8
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x085FEEF8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FEF04
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x085FEF10
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x085FEF10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FEF1C
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x085FEF28
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x085FEF28
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FEF34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FEF40
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FEF4C
@@ -540,11 +540,11 @@ VoiceGroup_JP_085FEC58: @ 0x085FEC58
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF000
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF00C
 	voice_square_2 3, 0, 1, 7, 1 @ 0x085FF018
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 2 @ 0x085FF024
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 2 @ 0x085FF024
 	voice_square_1 0, 3, 0, 1, 7, 1 @ 0x085FF030
 	voice_square_1 0, 3, 0, 0, 7, 1 @ 0x085FF03C
 VoiceGroup_JP_085FF048: @ 0x085FF048
-	voice_keysplit_all 0x08601F58 @ 0x085FF048
+	voice_keysplit_all VoiceGroup_JP_08601F58 @ 0x085FF048
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF054
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF060
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF06C
@@ -592,7 +592,7 @@ VoiceGroup_JP_085FF048: @ 0x085FF048
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF264
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF270
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF27C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x085FF288
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x085FF288
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF294
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF2A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF2AC
@@ -618,7 +618,7 @@ VoiceGroup_JP_085FF048: @ 0x085FF048
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF39C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF3A8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_052_JP_08686D80, 255, 127, 231, 127 @ 0x085FF3B4
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 1 @ 0x085FF3C0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 1 @ 0x085FF3C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF3CC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF3D8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF3E4
@@ -673,8 +673,8 @@ VoiceGroup_JP_085FF048: @ 0x085FF048
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF630
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x085FF63C
 VoiceGroup_JP_085FF648: @ 0x085FF648
-	voice_keysplit_all 0x085FDB0C @ 0x085FF648
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x085FF654
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x085FF648
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x085FF654
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_080_JP_086B99E0, 255, 178, 180, 165 @ 0x085FF660
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF66C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF678
@@ -721,7 +721,7 @@ VoiceGroup_JP_085FF648: @ 0x085FF648
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF864
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 0, 204 @ 0x085FF870
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x085FF87C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x085FF888
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x085FF888
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF894
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF8A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF8AC
@@ -729,11 +729,11 @@ VoiceGroup_JP_085FF648: @ 0x085FF648
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF8C4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF8D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF8DC
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x085FF8E8
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x085FF8E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF8F4
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x085FF900
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x085FF900
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF90C
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x085FF918
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x085FF918
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF924
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF930
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FF93C
@@ -760,8 +760,8 @@ VoiceGroup_JP_085FF648: @ 0x085FF648
 	voice_square_2_alt 2, 0, 1, 4, 1 @ 0x085FFA38
 	voice_square_1_alt 0, 2, 0, 1, 4, 1 @ 0x085FFA44
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFA50
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 2 @ 0x085FFA5C
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 2 @ 0x085FFA68
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 2 @ 0x085FFA5C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 2 @ 0x085FFA68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFA74
 	voice_square_2 2, 0, 1, 4, 1 @ 0x085FFA80
 	voice_square_1 0, 2, 0, 1, 4, 1 @ 0x085FFA8C
@@ -776,7 +776,7 @@ VoiceGroup_JP_085FF648: @ 0x085FF648
 	voice_square_1_alt 29, 2, 0, 2, 0, 0 @ 0x085FFAF8
 	voice_square_1_alt 22, 2, 0, 2, 0, 0 @ 0x085FFB04
 VoiceGroup_JP_085FFB10: @ 0x085FFB10
-	voice_keysplit_all 0x085FDB0C @ 0x085FFB10
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x085FFB10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFB1C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFB28
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFB34
@@ -824,7 +824,7 @@ VoiceGroup_JP_085FFB10: @ 0x085FFB10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFD2C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFD38
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x085FFD44
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x085FFD50
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x085FFD50
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFD5C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFD68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFD74
@@ -832,11 +832,11 @@ VoiceGroup_JP_085FFB10: @ 0x085FFB10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFD8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFD98
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFDA4
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x085FFDB0
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x085FFDB0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFDBC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFDC8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFDD4
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x085FFDE0
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x085FFDE0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFDEC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFDF8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFE04
@@ -863,12 +863,12 @@ VoiceGroup_JP_085FFB10: @ 0x085FFB10
 	voice_square_2_alt 3, 0, 1, 7, 1 @ 0x085FFF00
 	voice_square_1_alt 0, 3, 0, 1, 7, 1 @ 0x085FFF0C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFF18
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 1 @ 0x085FFF24
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 1 @ 0x085FFF24
 	voice_square_1_alt 0, 1, 0, 0, 7, 1 @ 0x085FFF30
 	voice_square_1_alt 0, 3, 0, 0, 7, 1 @ 0x085FFF3C
 VoiceGroup_JP_085FFF48: @ 0x085FFF48
-	voice_keysplit_all 0x085FDB0C @ 0x085FFF48
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x085FFF54
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x085FFF48
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x085FFF54
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFF60
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x085FFF6C
 	voice_square_2_alt 3, 0, 1, 6, 1 @ 0x085FFF78
@@ -915,7 +915,7 @@ VoiceGroup_JP_085FFF48: @ 0x085FFF48
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600164
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 246, 0, 235 @ 0x08600170
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x0860017C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08600188
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08600188
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600194
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086001A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086001AC
@@ -923,11 +923,11 @@ VoiceGroup_JP_085FFF48: @ 0x085FFF48
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086001C4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086001D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086001DC
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x086001E8
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x086001E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086001F4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600200
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860020C
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08600218
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08600218
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600224
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600230
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860023C
@@ -948,13 +948,13 @@ VoiceGroup_JP_085FFF48: @ 0x085FFF48
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086002F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086002FC
 	voice_square_2_alt 3, 0, 1, 7, 1 @ 0x08600308
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 1 @ 0x08600314
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 1 @ 0x08600314
 	voice_square_1_alt 0, 3, 0, 1, 7, 1 @ 0x08600320
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 0 @ 0x0860032C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 0 @ 0x0860032C
 	voice_square_1_alt 0, 3, 0, 0, 7, 0 @ 0x08600338
 VoiceGroup_JP_08600344: @ 0x08600344
-	voice_keysplit_all 0x08600794 @ 0x08600344
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08600350
+	voice_keysplit_all VoiceGroup_JP_08600794 @ 0x08600344
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08600350
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860035C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600368
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600374
@@ -1001,7 +1001,7 @@ VoiceGroup_JP_08600344: @ 0x08600344
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600560
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860056C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600578
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08600584
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08600584
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600590
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860059C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086005A8
@@ -1027,14 +1027,14 @@ VoiceGroup_JP_08600344: @ 0x08600344
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600698
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086006A4
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_052_JP_08686D80, 255, 127, 231, 127 @ 0x086006B0
-	voice_programmable_wave 0x0863C0EC, 0, 7, 15, 1 @ 0x086006BC
+	voice_programmable_wave M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 1 @ 0x086006BC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086006C8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086006D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086006E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086006EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086006F8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600704
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 2 @ 0x08600710
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 2 @ 0x08600710
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860071C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600728
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600734
@@ -1112,7 +1112,7 @@ VoiceGroup_JP_08600794: @ 0x08600794
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600A88
 	voice_directsound_no_resample 72, 62, DirectSoundWaveData_Instrument_026_JP_08654220, 255, 0, 255, 0 @ 0x08600A94
 VoiceGroup_JP_08600AA0: @ 0x08600AA0
-	voice_keysplit_all 0x085FDB0C @ 0x08600AA0
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08600AA0
 	voice_square_2_alt 2, 0, 3, 3, 1 @ 0x08600AAC
 	voice_square_1_alt 0, 2, 0, 3, 3, 1 @ 0x08600AB8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600AC4
@@ -1160,7 +1160,7 @@ VoiceGroup_JP_08600AA0: @ 0x08600AA0
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 216, 0, 165 @ 0x08600CBC
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 0, 204 @ 0x08600CC8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600CD4
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08600CE0
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08600CE0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600CEC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600CF8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600D04
@@ -1170,9 +1170,9 @@ VoiceGroup_JP_08600AA0: @ 0x08600AA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600D34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600D40
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600D4C
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x08600D58
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x08600D58
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600D64
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08600D70
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08600D70
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600D7C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600D88
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600D94
@@ -1186,26 +1186,26 @@ VoiceGroup_JP_08600AA0: @ 0x08600AA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600DF4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600E00
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_052_JP_08686D80, 255, 127, 231, 127 @ 0x08600E0C
-	voice_programmable_wave 0x0863C0EC, 0, 7, 15, 0 @ 0x08600E18
+	voice_programmable_wave M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 0 @ 0x08600E18
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600E24
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600E30
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600E3C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600E48
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600E54
 	voice_square_2_alt 2, 1, 1, 7, 2 @ 0x08600E60
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 2 @ 0x08600E6C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 2 @ 0x08600E6C
 	voice_square_1_alt 0, 2, 1, 1, 7, 2 @ 0x08600E78
 	voice_square_2_alt 3, 1, 1, 7, 2 @ 0x08600E84
 	voice_square_1_alt 0, 3, 1, 1, 7, 2 @ 0x08600E90
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 3 @ 0x08600E9C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 3 @ 0x08600E9C
 	voice_square_1_alt 0, 2, 0, 0, 7, 2 @ 0x08600EA8
 	voice_square_1_alt 0, 3, 0, 0, 7, 2 @ 0x08600EB4
 	voice_square_2_alt 1, 1, 2, 6, 2 @ 0x08600EC0
 	voice_square_1_alt 0, 1, 1, 2, 6, 2 @ 0x08600ECC
 	voice_square_1_alt 0, 1, 0, 0, 6, 2 @ 0x08600ED8
 VoiceGroup_JP_08600EE4: @ 0x08600EE4
-	voice_keysplit_all 0x085FDB0C @ 0x08600EE4
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08600EF0
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08600EE4
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08600EF0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600EFC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08600F08
 	voice_square_2_alt 0, 0, 1, 7, 1 @ 0x08600F14
@@ -1252,7 +1252,7 @@ VoiceGroup_JP_08600EE4: @ 0x08600EE4
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 216, 0, 165 @ 0x08601100
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860110C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601118
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08601124
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08601124
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601130
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860113C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601148
@@ -1285,7 +1285,7 @@ VoiceGroup_JP_08600EE4: @ 0x08600EE4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860128C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601298
 	voice_square_2_alt 2, 0, 1, 7, 1 @ 0x086012A4
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 2 @ 0x086012B0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 2 @ 0x086012B0
 	voice_square_1_alt 0, 2, 0, 1, 7, 1 @ 0x086012BC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086012C8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086012D4
@@ -1381,7 +1381,7 @@ VoiceGroup_JP_086014E4: @ 0x086014E4
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 216, 0, 165 @ 0x08601700
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860170C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601718
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08601724
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08601724
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601730
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860173C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601748
@@ -1391,9 +1391,9 @@ VoiceGroup_JP_086014E4: @ 0x086014E4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601778
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601784
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601790
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x0860179C
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x0860179C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086017A8
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x086017B4
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x086017B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086017C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086017CC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086017D8
@@ -1414,12 +1414,12 @@ VoiceGroup_JP_086014E4: @ 0x086014E4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860188C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601898
 	voice_square_2_alt 2, 0, 1, 7, 1 @ 0x086018A4
-	voice_programmable_wave_alt 0x0863C12C, 0, 7, 15, 2 @ 0x086018B0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C12C, 0, 7, 15, 2 @ 0x086018B0
 	voice_square_1_alt 0, 2, 0, 1, 7, 1 @ 0x086018BC
 	voice_square_1_alt 0, 2, 0, 0, 7, 1 @ 0x086018C8
 	voice_square_1_alt 0, 1, 0, 0, 7, 1 @ 0x086018D4
 VoiceGroup_JP_086018E0: @ 0x086018E0
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x086018E0
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x086018E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086018EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086018F8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601904
@@ -1467,7 +1467,7 @@ VoiceGroup_JP_086018E0: @ 0x086018E0
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 216, 0, 165 @ 0x08601AFC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601B08
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601B14
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08601B20
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08601B20
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601B2C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601B38
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601B44
@@ -1477,7 +1477,7 @@ VoiceGroup_JP_086018E0: @ 0x086018E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601B74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601B80
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601B8C
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x08601B98
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x08601B98
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601BA4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601BB0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601BBC
@@ -1507,7 +1507,7 @@ VoiceGroup_JP_086018E0: @ 0x086018E0
 	voice_square_1_alt 0, 1, 0, 0, 6, 2 @ 0x08601CDC
 	voice_square_1 0, 2, 0, 0, 7, 1 @ 0x08601CE8
 VoiceGroup_JP_08601CF4: @ 0x08601CF4
-	voice_keysplit_all 0x085FDB0C @ 0x08601CF4
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08601CF4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601D00
 	voice_square_2_alt 3, 0, 2, 0, 0 @ 0x08601D0C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601D18
@@ -1555,7 +1555,7 @@ VoiceGroup_JP_08601CF4: @ 0x08601CF4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601F10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601F1C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x08601F28
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08601F34
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08601F34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601F40
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601F4C
 VoiceGroup_JP_08601F58: @ 0x08601F58
@@ -1564,11 +1564,11 @@ VoiceGroup_JP_08601F58: @ 0x08601F58
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601F70
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601F7C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601F88
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08601F94
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08601F94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601FA0
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x08601FAC
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x08601FAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601FB8
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08601FC4
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08601FC4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601FD0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601FDC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08601FE8
@@ -1589,11 +1589,11 @@ VoiceGroup_JP_08601F58: @ 0x08601F58
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860209C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086020A8
 	voice_square_2_alt 0, 0, 1, 7, 0 @ 0x086020B4
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 1 @ 0x086020C0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 1 @ 0x086020C0
 	voice_square_1_alt 0, 0, 0, 1, 7, 0 @ 0x086020CC
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 0 @ 0x086020D8
-	voice_programmable_wave_alt 0x0863C12C, 0, 7, 15, 0 @ 0x086020E4
-	voice_programmable_wave_alt 0x0863C12C, 0, 7, 15, 1 @ 0x086020F0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 0 @ 0x086020D8
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C12C, 0, 7, 15, 0 @ 0x086020E4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C12C, 0, 7, 15, 1 @ 0x086020F0
 	voice_square_1_alt 0, 0, 0, 0, 7, 0 @ 0x086020FC
 	voice_directsound_no_resample 60, 64, DirectSoundWaveData_Instrument_014_JP_0864CD90, 255, 0, 255, 242 @ 0x08602108
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602114
@@ -1625,8 +1625,8 @@ VoiceGroup_JP_08601F58: @ 0x08601F58
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860224C
 	voice_directsound_no_resample 72, 61, DirectSoundWaveData_Instrument_026_JP_08654220, 255, 0, 255, 0 @ 0x08602258
 VoiceGroup_JP_08602264: @ 0x08602264
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08602264
-	voice_keysplit_all 0x085FDB0C @ 0x08602270
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08602264
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08602270
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860227C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602288
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602294
@@ -1673,7 +1673,7 @@ VoiceGroup_JP_08602264: @ 0x08602264
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602480
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 246, 0, 235 @ 0x0860248C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602498
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086024A4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086024A4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086024B0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086024BC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086024C8
@@ -1681,7 +1681,7 @@ VoiceGroup_JP_08602264: @ 0x08602264
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086024E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086024EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086024F8
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08602504
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08602504
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602510
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860251C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602528
@@ -1706,7 +1706,7 @@ VoiceGroup_JP_08602264: @ 0x08602264
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860260C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602618
 	voice_square_2_alt 2, 0, 1, 7, 0 @ 0x08602624
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 1 @ 0x08602630
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 1 @ 0x08602630
 	voice_square_1_alt 0, 2, 0, 1, 7, 0 @ 0x0860263C
 	voice_square_2_alt 2, 0, 1, 6, 1 @ 0x08602648
 	voice_square_1_alt 0, 2, 0, 1, 6, 1 @ 0x08602654
@@ -1715,7 +1715,7 @@ VoiceGroup_JP_08602264: @ 0x08602264
 	voice_square_1_alt 0, 2, 0, 0, 7, 0 @ 0x08602678
 	voice_square_1_alt 0, 3, 0, 0, 7, 0 @ 0x08602684
 VoiceGroup_JP_08602690: @ 0x08602690
-	voice_keysplit_all 0x085FDB0C @ 0x08602690
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08602690
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860269C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086026A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086026B4
@@ -1763,7 +1763,7 @@ VoiceGroup_JP_08602690: @ 0x08602690
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 216, 0, 165 @ 0x086028AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086028B8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x086028C4
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086028D0
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086028D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086028DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086028E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086028F4
@@ -1771,11 +1771,11 @@ VoiceGroup_JP_08602690: @ 0x08602690
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860290C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602918
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602924
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08602930
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08602930
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860293C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602948
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602954
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08602960
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08602960
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860296C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602978
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602984
@@ -1796,7 +1796,7 @@ VoiceGroup_JP_08602690: @ 0x08602690
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602A38
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602A44
 	voice_square_2_alt 2, 0, 1, 7, 0 @ 0x08602A50
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 1 @ 0x08602A5C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 1 @ 0x08602A5C
 	voice_square_1_alt 0, 2, 0, 1, 7, 0 @ 0x08602A68
 	voice_square_2_alt 2, 0, 2, 0, 0 @ 0x08602A74
 	voice_square_2_alt 3, 0, 1, 7, 0 @ 0x08602A80
@@ -1804,10 +1804,10 @@ VoiceGroup_JP_08602690: @ 0x08602690
 	voice_square_1_alt 0, 2, 0, 2, 0, 0 @ 0x08602A98
 	voice_square_1_alt 0, 3, 0, 0, 7, 0 @ 0x08602AA4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602AB0
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 0 @ 0x08602ABC
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 1 @ 0x08602AC8
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 0 @ 0x08602ABC
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 1 @ 0x08602AC8
 VoiceGroup_JP_08602AD4: @ 0x08602AD4
-	voice_keysplit_all 0x085FDB0C @ 0x08602AD4
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08602AD4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602AE0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602AEC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602AF8
@@ -1863,9 +1863,9 @@ VoiceGroup_JP_08602AD4: @ 0x08602AD4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602D50
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602D5C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602D68
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08602D74
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08602D74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602D80
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x08602D8C
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x08602D8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602D98
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602DA4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602DB0
@@ -1888,11 +1888,11 @@ VoiceGroup_JP_08602AD4: @ 0x08602AD4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602E7C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602E88
 	voice_square_2_alt 1, 0, 1, 7, 1 @ 0x08602E94
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 1 @ 0x08602EA0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 1 @ 0x08602EA0
 	voice_square_1_alt 0, 1, 0, 1, 7, 1 @ 0x08602EAC
 	voice_square_2_alt 2, 0, 1, 0, 0 @ 0x08602EB8
 VoiceGroup_JP_08602EC4: @ 0x08602EC4
-	voice_keysplit_all 0x085FDB0C @ 0x08602EC4
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08602EC4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602ED0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602EDC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08602EE8
@@ -1952,7 +1952,7 @@ VoiceGroup_JP_08602EC4: @ 0x08602EC4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603170
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860317C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603188
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08603194
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08603194
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086031A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086031AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086031B8
@@ -1973,13 +1973,13 @@ VoiceGroup_JP_08602EC4: @ 0x08602EC4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860326C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603278
 	voice_square_2_alt 2, 0, 1, 9, 0 @ 0x08603284
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 0 @ 0x08603290
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 0 @ 0x08603290
 	voice_square_1_alt 0, 2, 0, 1, 9, 0 @ 0x0860329C
 	voice_square_2_alt 3, 0, 1, 7, 0 @ 0x086032A8
 	voice_square_1_alt 0, 3, 0, 1, 7, 0 @ 0x086032B4
 VoiceGroup_JP_086032C0: @ 0x086032C0
-	voice_keysplit_all 0x085FDB0C @ 0x086032C0
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x086032CC
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x086032C0
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x086032CC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086032D8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086032E4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086032F0
@@ -2051,7 +2051,7 @@ VoiceGroup_JP_086032C0: @ 0x086032C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603608
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603614
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603620
-	voice_programmable_wave 0x0863C0EC, 0, 7, 15, 0 @ 0x0860362C
+	voice_programmable_wave M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 0 @ 0x0860362C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603638
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603644
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603650
@@ -2059,7 +2059,7 @@ VoiceGroup_JP_086032C0: @ 0x086032C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603668
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603674
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603680
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x0860368C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x0860368C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603698
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086036A4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086036B0
@@ -2107,7 +2107,7 @@ VoiceGroup_JP_086032C0: @ 0x086032C0
 	voice_noise_alt 0, 0, 4, 1, 4 @ 0x086038A8
 	voice_noise_alt 0, 0, 1, 0, 2 @ 0x086038B4
 VoiceGroup_JP_086038C0: @ 0x086038C0
-	voice_keysplit_all 0x085FDB0C @ 0x086038C0
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x086038C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086038CC
 	voice_square_1 0, 3, 0, 1, 0, 0 @ 0x086038D8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086038E4
@@ -2163,7 +2163,7 @@ VoiceGroup_JP_086038C0: @ 0x086038C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603B3C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603B48
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603B54
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08603B60
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08603B60
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603B6C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603B78
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603B84
@@ -2188,10 +2188,10 @@ VoiceGroup_JP_086038C0: @ 0x086038C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603C68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603C74
 	voice_square_2 2, 0, 2, 0, 0 @ 0x08603C80
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x08603C8C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x08603C8C
 	voice_square_2 3, 0, 4, 0, 0 @ 0x08603C98
 VoiceGroup_JP_08603CA4: @ 0x08603CA4
-	voice_keysplit_all 0x085FDB0C @ 0x08603CA4
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08603CA4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603CB0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603CBC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603CC8
@@ -2239,7 +2239,7 @@ VoiceGroup_JP_08603CA4: @ 0x08603CA4
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 216, 0, 165 @ 0x08603EC0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603ECC
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x08603ED8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08603EE4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08603EE4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603EF0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603EFC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603F08
@@ -2247,11 +2247,11 @@ VoiceGroup_JP_08603CA4: @ 0x08603CA4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603F20
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603F2C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603F38
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08603F44
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08603F44
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603F50
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603F5C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603F68
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08603F74
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08603F74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603F80
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603F8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08603F98
@@ -2272,7 +2272,7 @@ VoiceGroup_JP_08603CA4: @ 0x08603CA4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860404C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604058
 	voice_square_2_alt 3, 0, 1, 7, 0 @ 0x08604064
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 1 @ 0x08604070
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 1 @ 0x08604070
 	voice_square_1_alt 0, 3, 0, 1, 7, 0 @ 0x0860407C
 	voice_square_2_alt 3, 0, 1, 0, 0 @ 0x08604088
 	voice_square_1_alt 0, 3, 0, 1, 0, 0 @ 0x08604094
@@ -2280,8 +2280,8 @@ VoiceGroup_JP_08603CA4: @ 0x08603CA4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086040AC
 	voice_square_1_alt 0, 0, 0, 1, 7, 0 @ 0x086040B8
 VoiceGroup_JP_086040C4: @ 0x086040C4
-	voice_keysplit_all 0x08604358 @ 0x086040C4
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x086040D0
+	voice_keysplit_all VoiceGroup_JP_08604358 @ 0x086040C4
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x086040D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086040DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086040E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086040F4
@@ -2341,7 +2341,7 @@ VoiceGroup_JP_08604358: @ 0x08604358
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604370
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860437C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604388
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08604394
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08604394
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086043A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086043AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086043B8
@@ -2362,7 +2362,7 @@ VoiceGroup_JP_08604358: @ 0x08604358
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860446C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604478
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604484
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 1 @ 0x08604490
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 1 @ 0x08604490
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860449C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086044A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086044B4
@@ -2402,8 +2402,8 @@ VoiceGroup_JP_08604358: @ 0x08604358
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860464C
 	voice_directsound_no_resample 72, 74, DirectSoundWaveData_Instrument_026_JP_08654220, 255, 0, 255, 0 @ 0x08604658
 VoiceGroup_JP_08604664: @ 0x08604664
-	voice_keysplit_all 0x08600794 @ 0x08604664
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08604670
+	voice_keysplit_all VoiceGroup_JP_08600794 @ 0x08604664
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08604670
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860467C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604688
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604694
@@ -2476,14 +2476,14 @@ VoiceGroup_JP_08604664: @ 0x08604664
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086049B8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086049C4
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_052_JP_08686D80, 255, 127, 231, 127 @ 0x086049D0
-	voice_programmable_wave 0x0863C0EC, 0, 7, 15, 1 @ 0x086049DC
+	voice_programmable_wave M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 1 @ 0x086049DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086049E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086049F4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604A00
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604A0C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604A18
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604A24
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 2 @ 0x08604A30
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 2 @ 0x08604A30
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604A3C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604A48
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604A54
@@ -2531,7 +2531,7 @@ VoiceGroup_JP_08604664: @ 0x08604664
 	voice_noise_alt 0, 0, 4, 1, 4 @ 0x08604C4C
 	voice_noise_alt 0, 0, 1, 0, 2 @ 0x08604C58
 VoiceGroup_JP_08604C64: @ 0x08604C64
-	voice_keysplit_all 0x085FDB0C @ 0x08604C64
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08604C64
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604C70
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604C7C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604C88
@@ -2579,7 +2579,7 @@ VoiceGroup_JP_08604C64: @ 0x08604C64
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604E80
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 246, 0, 235 @ 0x08604E8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604E98
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08604EA4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08604EA4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604EB0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604EBC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604EC8
@@ -2591,7 +2591,7 @@ VoiceGroup_JP_08604C64: @ 0x08604C64
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604F10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604F1C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604F28
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08604F34
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08604F34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604F40
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604F4C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08604F58
@@ -2615,8 +2615,8 @@ VoiceGroup_JP_08604C64: @ 0x08604C64
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605030
 	voice_square_1_alt 0, 2, 0, 1, 4, 1 @ 0x0860503C
 VoiceGroup_JP_08605048: @ 0x08605048
-	voice_keysplit_all 0x085FDB0C @ 0x08605048
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08605054
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08605048
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08605054
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605060
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860506C
 	voice_square_2 2, 0, 1, 4, 2 @ 0x08605078
@@ -2663,7 +2663,7 @@ VoiceGroup_JP_08605048: @ 0x08605048
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 226, 0, 38 @ 0x08605264
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605270
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860527C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08605288
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08605288
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605294
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086052A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086052AC
@@ -2698,10 +2698,10 @@ VoiceGroup_JP_08605048: @ 0x08605048
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605408
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605414
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605420
-	voice_programmable_wave 0x0863C1DC, 0, 7, 15, 2 @ 0x0860542C
+	voice_programmable_wave M4aProgrammableWave_JP_0863C1DC, 0, 7, 15, 2 @ 0x0860542C
 VoiceGroup_JP_08605438: @ 0x08605438
-	voice_keysplit_all 0x08604358 @ 0x08605438
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08605444
+	voice_keysplit_all VoiceGroup_JP_08604358 @ 0x08605438
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08605444
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605450
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860545C
 	voice_square_2_alt 2, 0, 1, 7, 1 @ 0x08605468
@@ -2748,7 +2748,7 @@ VoiceGroup_JP_08605438: @ 0x08605438
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605654
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605660
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x0860566C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08605678
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08605678
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605684
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605690
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860569C
@@ -2756,11 +2756,11 @@ VoiceGroup_JP_08605438: @ 0x08605438
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086056B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086056C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086056CC
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x086056D8
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x086056D8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086056E4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086056F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086056FC
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08605708
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08605708
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605714
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605720
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860572C
@@ -2781,12 +2781,12 @@ VoiceGroup_JP_08605438: @ 0x08605438
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086057E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086057EC
 	voice_square_2_alt 3, 0, 1, 6, 1 @ 0x086057F8
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 2 @ 0x08605804
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 2 @ 0x08605804
 	voice_square_1_alt 0, 3, 0, 1, 6, 1 @ 0x08605810
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 0 @ 0x0860581C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 0 @ 0x0860581C
 	voice_square_1_alt 0, 3, 0, 0, 6, 1 @ 0x08605828
 VoiceGroup_JP_08605834: @ 0x08605834
-	voice_keysplit_all 0x085FDB0C @ 0x08605834
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08605834
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605840
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860584C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605858
@@ -2834,7 +2834,7 @@ VoiceGroup_JP_08605834: @ 0x08605834
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 216, 0, 165 @ 0x08605A50
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 246, 0, 235 @ 0x08605A5C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605A68
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08605A74
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08605A74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605A80
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605A8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605A98
@@ -2846,7 +2846,7 @@ VoiceGroup_JP_08605834: @ 0x08605834
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605AE0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605AEC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605AF8
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08605B04
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08605B04
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605B10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605B1C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605B28
@@ -2859,7 +2859,7 @@ VoiceGroup_JP_08605834: @ 0x08605834
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605B7C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605B88
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605B94
-	voice_programmable_wave 0x0863C0EC, 0, 7, 15, 0 @ 0x08605BA0
+	voice_programmable_wave M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 0 @ 0x08605BA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605BAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605BB8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605BC4
@@ -2915,7 +2915,7 @@ VoiceGroup_JP_08605834: @ 0x08605834
 	voice_noise_alt 0, 0, 4, 1, 4 @ 0x08605E1C
 	voice_noise_alt 0, 0, 1, 0, 2 @ 0x08605E28
 VoiceGroup_JP_08605E34: @ 0x08605E34
-	voice_keysplit_all 0x08604358 @ 0x08605E34
+	voice_keysplit_all VoiceGroup_JP_08604358 @ 0x08605E34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605E40
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605E4C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08605E58
@@ -2963,7 +2963,7 @@ VoiceGroup_JP_08605E34: @ 0x08605E34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606050
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 246, 0, 235 @ 0x0860605C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x08606068
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08606074
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08606074
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606080
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860608C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606098
@@ -2973,9 +2973,9 @@ VoiceGroup_JP_08605E34: @ 0x08605E34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086060C8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086060D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086060E0
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x086060EC
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x086060EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086060F8
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08606104
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08606104
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606110
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860611C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606128
@@ -2996,16 +2996,16 @@ VoiceGroup_JP_08605E34: @ 0x08605E34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086061DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086061E8
 	voice_square_2_alt 0, 0, 1, 7, 1 @ 0x086061F4
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 2 @ 0x08606200
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 2 @ 0x08606200
 	voice_square_1_alt 0, 0, 0, 1, 7, 1 @ 0x0860620C
 	voice_square_1_alt 0, 0, 0, 0, 7, 1 @ 0x08606218
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606224
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606230
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860623C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606248
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 2 @ 0x08606254
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 2 @ 0x08606254
 VoiceGroup_JP_08606260: @ 0x08606260
-	voice_keysplit_all 0x085FDB0C @ 0x08606260
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08606260
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860626C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606278
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606284
@@ -3086,9 +3086,9 @@ VoiceGroup_JP_08606260: @ 0x08606260
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606608
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606614
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606620
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 0 @ 0x0860662C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 0 @ 0x0860662C
 VoiceGroup_JP_08606638: @ 0x08606638
-	voice_keysplit_all 0x085FDB0C @ 0x08606638
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08606638
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606644
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606650
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860665C
@@ -3136,7 +3136,7 @@ VoiceGroup_JP_08606638: @ 0x08606638
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606854
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606860
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860686C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08606878
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08606878
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606884
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606890
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860689C
@@ -3144,11 +3144,11 @@ VoiceGroup_JP_08606638: @ 0x08606638
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086068B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086068C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086068CC
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x086068D8
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x086068D8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086068E4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086068F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086068FC
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08606908
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08606908
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606914
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606920
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860692C
@@ -3171,7 +3171,7 @@ VoiceGroup_JP_08606638: @ 0x08606638
 	voice_square_1_alt 0, 2, 0, 2, 4, 0 @ 0x086069F8
 	voice_square_2_alt 1, 0, 2, 4, 0 @ 0x08606A04
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606A10
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x08606A1C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x08606A1C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606A28
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606A34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606A40
@@ -3217,7 +3217,7 @@ VoiceGroup_JP_08606638: @ 0x08606638
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08606C20
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08606C2C
 VoiceGroup_JP_08606C38: @ 0x08606C38
-	voice_keysplit_all 0x085FDB0C @ 0x08606C38
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08606C38
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606C44
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606C50
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606C5C
@@ -3265,7 +3265,7 @@ VoiceGroup_JP_08606C38: @ 0x08606C38
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606E54
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606E60
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606E6C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08606E78
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08606E78
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606E84
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606E90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606E9C
@@ -3273,11 +3273,11 @@ VoiceGroup_JP_08606C38: @ 0x08606C38
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606EB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606EC0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606ECC
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08606ED8
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08606ED8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606EE4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606EF0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606EFC
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08606F08
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08606F08
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606F14
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606F20
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08606F2C
@@ -3300,7 +3300,7 @@ VoiceGroup_JP_08606C38: @ 0x08606C38
 	voice_square_1_alt 0, 2, 0, 2, 4, 0 @ 0x08606FF8
 	voice_square_2_alt 1, 0, 2, 4, 0 @ 0x08607004
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607010
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x0860701C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x0860701C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607028
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607034
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607040
@@ -3346,7 +3346,7 @@ VoiceGroup_JP_08606C38: @ 0x08606C38
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08607220
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860722C
 VoiceGroup_JP_08607238: @ 0x08607238
-	voice_keysplit_all 0x085FDB0C @ 0x08607238
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08607238
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607244
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607250
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860725C
@@ -3394,7 +3394,7 @@ VoiceGroup_JP_08607238: @ 0x08607238
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607454
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607460
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860746C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08607478
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08607478
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607484
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607490
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860749C
@@ -3402,11 +3402,11 @@ VoiceGroup_JP_08607238: @ 0x08607238
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086074B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086074C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086074CC
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x086074D8
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x086074D8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086074E4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086074F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086074FC
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08607508
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08607508
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607514
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607520
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860752C
@@ -3429,7 +3429,7 @@ VoiceGroup_JP_08607238: @ 0x08607238
 	voice_square_1_alt 0, 2, 0, 2, 4, 0 @ 0x086075F8
 	voice_square_2_alt 1, 0, 2, 4, 0 @ 0x08607604
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607610
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x0860761C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x0860761C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607628
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607634
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607640
@@ -3475,7 +3475,7 @@ VoiceGroup_JP_08607238: @ 0x08607238
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08607820
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860782C
 VoiceGroup_JP_08607838: @ 0x08607838
-	voice_keysplit_all 0x085FDB0C @ 0x08607838
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08607838
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607844
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607850
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860785C
@@ -3523,7 +3523,7 @@ VoiceGroup_JP_08607838: @ 0x08607838
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607A54
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607A60
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607A6C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08607A78
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08607A78
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607A84
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607A90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607A9C
@@ -3531,11 +3531,11 @@ VoiceGroup_JP_08607838: @ 0x08607838
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607AB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607AC0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607ACC
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08607AD8
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08607AD8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607AE4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607AF0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607AFC
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08607B08
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08607B08
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607B14
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607B20
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607B2C
@@ -3558,7 +3558,7 @@ VoiceGroup_JP_08607838: @ 0x08607838
 	voice_square_1_alt 0, 2, 0, 2, 4, 0 @ 0x08607BF8
 	voice_square_2_alt 1, 0, 2, 4, 0 @ 0x08607C04
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607C10
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x08607C1C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x08607C1C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607C28
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607C34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607C40
@@ -3605,7 +3605,7 @@ VoiceGroup_JP_08607838: @ 0x08607838
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08607E2C
 VoiceGroup_JP_08607E38: @ 0x08607E38
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607E38
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08607E44
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08607E44
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607E50
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607E5C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08607E68
@@ -3652,7 +3652,7 @@ VoiceGroup_JP_08607E38: @ 0x08607E38
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608054
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608060
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860806C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08608078
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08608078
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608084
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608090
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860809C
@@ -3662,7 +3662,7 @@ VoiceGroup_JP_08607E38: @ 0x08607E38
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086080CC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086080D8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086080E4
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x086080F0
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x086080F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086080FC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608108
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608114
@@ -3686,7 +3686,7 @@ VoiceGroup_JP_08607E38: @ 0x08607E38
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086081EC
 	voice_square_2_alt 1, 0, 2, 4, 0 @ 0x086081F8
 VoiceGroup_JP_08608204: @ 0x08608204
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08608204
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08608204
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608210
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860821C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608228
@@ -3734,7 +3734,7 @@ VoiceGroup_JP_08608204: @ 0x08608204
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 226, 0, 38 @ 0x08608420
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860842C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608438
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08608444
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08608444
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608450
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860845C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608468
@@ -3766,19 +3766,19 @@ VoiceGroup_JP_08608204: @ 0x08608204
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086085A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086085AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086085B8
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 1 @ 0x086085C4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 1 @ 0x086085C4
 VoiceGroup_JP_086085D0: @ 0x086085D0
-	voice_keysplit_all 0x085FDB0C @ 0x086085D0
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x086085D0
 	voice_square_1_alt 0, 1, 0, 2, 0, 1 @ 0x086085DC
 	voice_square_1_alt 0, 3, 1, 2, 6, 0 @ 0x086085E8
 	voice_square_2_alt 3, 1, 2, 6, 0 @ 0x086085F4
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 1 @ 0x08608600
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 1 @ 0x08608600
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860860C
 	voice_square_2_alt 1, 0, 2, 0, 1 @ 0x08608618
-	voice_programmable_wave_alt 0x0863C11C, 1, 7, 15, 1 @ 0x08608624
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C11C, 1, 7, 15, 1 @ 0x08608624
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608630
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860863C
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08608648
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08608648
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608654
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608660
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860866C
@@ -3816,7 +3816,7 @@ VoiceGroup_JP_086085D0: @ 0x086085D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086087EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086087F8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608804
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08608810
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08608810
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860881C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608828
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608834
@@ -3897,11 +3897,11 @@ VoiceGroup_JP_086085D0: @ 0x086085D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608BB8
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08608BC4
 VoiceGroup_JP_08608BD0: @ 0x08608BD0
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08608BD0
-	voice_programmable_wave_alt 0x0863C1BC, 0, 1, 12, 0 @ 0x08608BDC
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08608BD0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1BC, 0, 1, 12, 0 @ 0x08608BDC
 	voice_square_1_alt 0, 0, 1, 1, 9, 0 @ 0x08608BE8
 	voice_square_2_alt 2, 0, 2, 6, 3 @ 0x08608BF4
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 1 @ 0x08608C00
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 1 @ 0x08608C00
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_002_JP_0863E2C4, 255, 253, 0, 216 @ 0x08608C0C
 	voice_square_2_alt 1, 0, 2, 6, 3 @ 0x08608C18
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608C24
@@ -3945,7 +3945,7 @@ VoiceGroup_JP_08608BD0: @ 0x08608BD0
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 226, 0, 165 @ 0x08608DEC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608DF8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608E04
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08608E10
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08608E10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608E1C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608E28
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08608E34
@@ -4026,7 +4026,7 @@ VoiceGroup_JP_08608BD0: @ 0x08608BD0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086091B8
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x086091C4
 VoiceGroup_JP_086091D0: @ 0x086091D0
-	voice_keysplit_all 0x085FDB0C @ 0x086091D0
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x086091D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086091DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086091E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086091F4
@@ -4074,7 +4074,7 @@ VoiceGroup_JP_086091D0: @ 0x086091D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086093EC
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 0, 204 @ 0x086093F8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 204, 193, 239 @ 0x08609404
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08609410
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08609410
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860941C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609428
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609434
@@ -4082,11 +4082,11 @@ VoiceGroup_JP_086091D0: @ 0x086091D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860944C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609458
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609464
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08609470
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08609470
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860947C
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x08609488
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x08609488
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609494
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x086094A0
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x086094A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086094AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086094B8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086094C4
@@ -4107,9 +4107,9 @@ VoiceGroup_JP_086091D0: @ 0x086091D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609578
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609584
 	voice_square_2_alt 2, 0, 1, 6, 2 @ 0x08609590
-	voice_programmable_wave_alt 0x0863C1DC, 0, 7, 15, 0 @ 0x0860959C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1DC, 0, 7, 15, 0 @ 0x0860959C
 	voice_square_2_alt 3, 0, 1, 4, 1 @ 0x086095A8
-	voice_programmable_wave_alt 0x0863C10C, 1, 7, 15, 2 @ 0x086095B4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 1, 7, 15, 2 @ 0x086095B4
 	voice_square_2_alt 1, 1, 1, 4, 1 @ 0x086095C0
 	voice_square_1_alt 0, 1, 1, 2, 4, 1 @ 0x086095CC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086095D8
@@ -4155,7 +4155,7 @@ VoiceGroup_JP_086091D0: @ 0x086091D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086097B8
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x086097C4
 VoiceGroup_JP_086097D0: @ 0x086097D0
-	voice_keysplit_all 0x085FDB0C @ 0x086097D0
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x086097D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086097DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086097E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086097F4
@@ -4203,7 +4203,7 @@ VoiceGroup_JP_086097D0: @ 0x086097D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086099EC
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 0, 242 @ 0x086099F8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 193, 239 @ 0x08609A04
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08609A10
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08609A10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609A1C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609A28
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609A34
@@ -4211,11 +4211,11 @@ VoiceGroup_JP_086097D0: @ 0x086097D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609A4C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609A58
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609A64
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08609A70
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08609A70
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609A7C
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x08609A88
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x08609A88
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609A94
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08609AA0
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08609AA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609AAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609AB8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609AC4
@@ -4228,7 +4228,7 @@ VoiceGroup_JP_086097D0: @ 0x086097D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609B18
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609B24
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609B30
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 0 @ 0x08609B3C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 0 @ 0x08609B3C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609B48
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609B54
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609B60
@@ -4239,13 +4239,13 @@ VoiceGroup_JP_086097D0: @ 0x086097D0
 	voice_square_1_alt 0, 3, 0, 3, 6, 0 @ 0x08609B9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609BA8
 	voice_square_1_alt 0, 0, 0, 3, 3, 0 @ 0x08609BB4
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 12, 1 @ 0x08609BC0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 12, 1 @ 0x08609BC0
 	voice_square_2_alt 1, 0, 1, 4, 3 @ 0x08609BCC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609BD8
 	voice_square_2_alt 0, 0, 2, 4, 0 @ 0x08609BE4
 VoiceGroup_JP_08609BF0: @ 0x08609BF0
-	voice_keysplit_all 0x085FDB0C @ 0x08609BF0
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08609BFC
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08609BF0
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08609BFC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609C08
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609C14
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609C20
@@ -4292,7 +4292,7 @@ VoiceGroup_JP_08609BF0: @ 0x08609BF0
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 226, 0, 38 @ 0x08609E0C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 0, 242 @ 0x08609E18
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 193, 226 @ 0x08609E24
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08609E30
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08609E30
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609E3C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609E48
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609E54
@@ -4300,11 +4300,11 @@ VoiceGroup_JP_08609BF0: @ 0x08609BF0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609E6C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609E78
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609E84
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08609E90
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08609E90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609E9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609EA8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609EB4
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08609EC0
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08609EC0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609ECC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609ED8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609EE4
@@ -4327,7 +4327,7 @@ VoiceGroup_JP_08609BF0: @ 0x08609BF0
 	voice_square_1_alt 0, 2, 0, 2, 4, 1 @ 0x08609FB0
 	voice_square_2_alt 1, 1, 3, 4, 2 @ 0x08609FBC
 	voice_square_1_alt 0, 3, 0, 1, 4, 1 @ 0x08609FC8
-	voice_programmable_wave_alt 0x0863C13C, 1, 7, 15, 0 @ 0x08609FD4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 1, 7, 15, 0 @ 0x08609FD4
 	voice_square_2_alt 2, 0, 2, 4, 2 @ 0x08609FE0
 	voice_square_2_alt 1, 1, 3, 4, 2 @ 0x08609FEC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08609FF8
@@ -4373,8 +4373,8 @@ VoiceGroup_JP_08609BF0: @ 0x08609BF0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860A1D8
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860A1E4
 VoiceGroup_JP_0860A1F0: @ 0x0860A1F0
-	voice_keysplit_all 0x085FDB0C @ 0x0860A1F0
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x0860A1FC
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860A1F0
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x0860A1FC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860A208
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860A214
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860A220
@@ -4456,7 +4456,7 @@ VoiceGroup_JP_0860A1F0: @ 0x0860A1F0
 	voice_square_2_alt 3, 0, 1, 4, 1 @ 0x0860A5B0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860A5BC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860A5C8
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 1 @ 0x0860A5D4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 1 @ 0x0860A5D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860A5E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860A5EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860A5F8
@@ -4502,8 +4502,8 @@ VoiceGroup_JP_0860A1F0: @ 0x0860A1F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860A7D8
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860A7E4
 VoiceGroup_JP_0860A7F0: @ 0x0860A7F0
-	voice_keysplit_all 0x085FDB0C @ 0x0860A7F0
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x0860A7FC
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860A7F0
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x0860A7FC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860A808
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860A814
 	voice_square_2_alt 2, 1, 4, 4, 2 @ 0x0860A820
@@ -4550,7 +4550,7 @@ VoiceGroup_JP_0860A7F0: @ 0x0860A7F0
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 226, 0, 99 @ 0x0860AA0C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AA18
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AA24
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0860AA30
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0860AA30
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AA3C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AA48
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AA54
@@ -4577,7 +4577,7 @@ VoiceGroup_JP_0860A7F0: @ 0x0860A7F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AB50
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_052_JP_08686D80, 255, 0, 255, 165 @ 0x0860AB5C
 VoiceGroup_JP_0860AB68: @ 0x0860AB68
-	voice_keysplit_all 0x085FDB0C @ 0x0860AB68
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860AB68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AB74
 	voice_square_1 0, 3, 1, 2, 6, 0 @ 0x0860AB80
 	voice_square_2 3, 1, 2, 6, 0 @ 0x0860AB8C
@@ -4606,7 +4606,7 @@ VoiceGroup_JP_0860AB68: @ 0x0860AB68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860ACA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860ACAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860ACB8
-	voice_programmable_wave_alt 0x0863C11C, 0, 7, 15, 0 @ 0x0860ACC4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C11C, 0, 7, 15, 0 @ 0x0860ACC4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860ACD0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860ACDC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860ACE8
@@ -4625,7 +4625,7 @@ VoiceGroup_JP_0860AB68: @ 0x0860AB68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AD84
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AD90
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 193, 226 @ 0x0860AD9C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0860ADA8
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0860ADA8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860ADB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860ADC0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860ADCC
@@ -4633,11 +4633,11 @@ VoiceGroup_JP_0860AB68: @ 0x0860AB68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860ADE4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860ADF0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860ADFC
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0860AE08
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0860AE08
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AE14
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x0860AE20
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x0860AE20
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AE2C
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0860AE38
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0860AE38
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AE44
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AE50
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AE5C
@@ -4659,9 +4659,9 @@ VoiceGroup_JP_0860AB68: @ 0x0860AB68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AF1C
 	voice_square_2_alt 1, 0, 1, 6, 1 @ 0x0860AF28
 	voice_square_1_alt 0, 0, 0, 1, 7, 1 @ 0x0860AF34
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 1 @ 0x0860AF40
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 1 @ 0x0860AF40
 	voice_square_2_alt 0, 0, 1, 4, 2 @ 0x0860AF4C
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 1 @ 0x0860AF58
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 1 @ 0x0860AF58
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AF64
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860AF70
 	voice_square_1_alt 0, 1, 0, 7, 6, 1 @ 0x0860AF7C
@@ -4706,8 +4706,8 @@ VoiceGroup_JP_0860AB68: @ 0x0860AB68
 	voice_noise_alt 0, 3, 1, 10, 0 @ 0x0860B150
 	voice_noise_alt 0, 0, 2, 0, 0 @ 0x0860B15C
 VoiceGroup_JP_0860B168: @ 0x0860B168
-	voice_keysplit_all 0x085FDB0C @ 0x0860B168
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x0860B174
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860B168
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x0860B174
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B180
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B18C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B198
@@ -4754,7 +4754,7 @@ VoiceGroup_JP_0860B168: @ 0x0860B168
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 226, 0, 38 @ 0x0860B384
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B390
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B39C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0860B3A8
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0860B3A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B3B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B3C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B3CC
@@ -4789,7 +4789,7 @@ VoiceGroup_JP_0860B168: @ 0x0860B168
 	voice_square_2_alt 2, 0, 1, 4, 2 @ 0x0860B528
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B534
 	voice_square_1_alt 0, 3, 0, 1, 4, 1 @ 0x0860B540
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 12, 0 @ 0x0860B54C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 12, 0 @ 0x0860B54C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B558
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B564
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B570
@@ -4835,7 +4835,7 @@ VoiceGroup_JP_0860B168: @ 0x0860B168
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B750
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860B75C
 VoiceGroup_JP_0860B768: @ 0x0860B768
-	voice_keysplit_all 0x085FDB0C @ 0x0860B768
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860B768
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B774
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B780
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B78C
@@ -4883,7 +4883,7 @@ VoiceGroup_JP_0860B768: @ 0x0860B768
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 226, 0, 38 @ 0x0860B984
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 0, 242 @ 0x0860B990
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B99C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0860B9A8
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0860B9A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B9B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B9C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B9CC
@@ -4893,9 +4893,9 @@ VoiceGroup_JP_0860B768: @ 0x0860B768
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860B9FC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BA08
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BA14
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x0860BA20
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x0860BA20
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BA2C
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0860BA38
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0860BA38
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BA44
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BA50
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BA5C
@@ -4917,7 +4917,7 @@ VoiceGroup_JP_0860B768: @ 0x0860B768
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BB1C
 	voice_square_2_alt 2, 0, 1, 5, 2 @ 0x0860BB28
 	voice_square_1_alt 0, 3, 0, 1, 4, 1 @ 0x0860BB34
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 0 @ 0x0860BB40
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 0 @ 0x0860BB40
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BB4C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BB58
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BB64
@@ -4964,7 +4964,7 @@ VoiceGroup_JP_0860B768: @ 0x0860B768
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BD50
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860BD5C
 VoiceGroup_JP_0860BD68: @ 0x0860BD68
-	voice_keysplit_all 0x085FDB0C @ 0x0860BD68
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860BD68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BD74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BD80
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BD8C
@@ -5012,7 +5012,7 @@ VoiceGroup_JP_0860BD68: @ 0x0860BD68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BF84
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 0, 204 @ 0x0860BF90
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 204, 193, 239 @ 0x0860BF9C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0860BFA8
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0860BFA8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BFB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BFC0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BFCC
@@ -5020,11 +5020,11 @@ VoiceGroup_JP_0860BD68: @ 0x0860BD68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BFE4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BFF0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860BFFC
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0860C008
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0860C008
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C014
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x0860C020
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x0860C020
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C02C
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0860C038
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0860C038
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C044
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C050
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C05C
@@ -5046,8 +5046,8 @@ VoiceGroup_JP_0860BD68: @ 0x0860BD68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C11C
 	voice_square_2_alt 2, 0, 1, 4, 1 @ 0x0860C128
 	voice_square_1_alt 0, 3, 0, 1, 6, 0 @ 0x0860C134
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x0860C140
-	voice_programmable_wave_alt 0x0863C11C, 0, 7, 15, 2 @ 0x0860C14C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x0860C140
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C11C, 0, 7, 15, 2 @ 0x0860C14C
 	voice_square_2_alt 1, 1, 1, 4, 1 @ 0x0860C158
 	voice_square_1_alt 0, 1, 0, 1, 4, 2 @ 0x0860C164
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C170
@@ -5093,7 +5093,7 @@ VoiceGroup_JP_0860BD68: @ 0x0860BD68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C350
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860C35C
 VoiceGroup_JP_0860C368: @ 0x0860C368
-	voice_keysplit_all 0x085FDB0C @ 0x0860C368
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860C368
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C374
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C380
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C38C
@@ -5141,7 +5141,7 @@ VoiceGroup_JP_0860C368: @ 0x0860C368
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C584
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C590
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C59C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0860C5A8
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0860C5A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C5B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C5C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C5CC
@@ -5153,7 +5153,7 @@ VoiceGroup_JP_0860C368: @ 0x0860C368
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C614
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C620
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C62C
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0860C638
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0860C638
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C644
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C650
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C65C
@@ -5180,7 +5180,7 @@ VoiceGroup_JP_0860C368: @ 0x0860C368
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C758
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C764
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C770
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 1 @ 0x0860C77C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 1 @ 0x0860C77C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C788
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C794
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C7A0
@@ -5222,7 +5222,7 @@ VoiceGroup_JP_0860C368: @ 0x0860C368
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C950
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860C95C
 VoiceGroup_JP_0860C968: @ 0x0860C968
-	voice_keysplit_all 0x085FDB0C @ 0x0860C968
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860C968
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C974
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C980
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860C98C
@@ -5270,7 +5270,7 @@ VoiceGroup_JP_0860C968: @ 0x0860C968
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 226, 0, 38 @ 0x0860CB84
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 0, 242 @ 0x0860CB90
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 193, 226 @ 0x0860CB9C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0860CBA8
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0860CBA8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860CBB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860CBC0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860CBCC
@@ -5304,7 +5304,7 @@ VoiceGroup_JP_0860C968: @ 0x0860C968
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860CD1C
 	voice_square_1_alt 0, 2, 0, 1, 4, 1 @ 0x0860CD28
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860CD34
-	voice_programmable_wave_alt 0x0863C0EC, 1, 4, 10, 1 @ 0x0860CD40
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 1, 4, 10, 1 @ 0x0860CD40
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860CD4C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860CD58
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860CD64
@@ -5351,7 +5351,7 @@ VoiceGroup_JP_0860C968: @ 0x0860C968
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0860CF50
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860CF5C
 VoiceGroup_JP_0860CF68: @ 0x0860CF68
-	voice_keysplit_all 0x085FDB0C @ 0x0860CF68
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860CF68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860CF74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860CF80
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860CF8C
@@ -5407,9 +5407,9 @@ VoiceGroup_JP_0860CF68: @ 0x0860CF68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D1E4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D1F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D1FC
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0860D208
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0860D208
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D214
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x0860D220
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x0860D220
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D22C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D238
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D244
@@ -5426,7 +5426,7 @@ VoiceGroup_JP_0860CF68: @ 0x0860CF68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D2C8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D2D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D2E0
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 0 @ 0x0860D2EC
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 0 @ 0x0860D2EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D2F8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D304
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D310
@@ -5480,13 +5480,13 @@ VoiceGroup_JP_0860CF68: @ 0x0860CF68
 	voice_noise_alt 0, 0, 2, 4, 0 @ 0x0860D550
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860D55C
 VoiceGroup_JP_0860D568: @ 0x0860D568
-	voice_keysplit_all 0x085FDB0C @ 0x0860D568
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x0860D574
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860D568
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x0860D574
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D580
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D58C
 	voice_square_2_alt 1, 1, 1, 6, 2 @ 0x0860D598
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 0 @ 0x0860D5A4
-	voice_programmable_wave_alt 0x0863C12C, 0, 7, 15, 0 @ 0x0860D5B0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 0 @ 0x0860D5A4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C12C, 0, 7, 15, 0 @ 0x0860D5B0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D5BC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D5C8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_000_JP_0863D428, 255, 165, 51, 242 @ 0x0860D5D4
@@ -5528,7 +5528,7 @@ VoiceGroup_JP_0860D568: @ 0x0860D568
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D784
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x0860D790
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 180, 239 @ 0x0860D79C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0860D7A8
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0860D7A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D7B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D7C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D7CC
@@ -5536,11 +5536,11 @@ VoiceGroup_JP_0860D568: @ 0x0860D568
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D7E4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D7F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D7FC
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0860D808
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0860D808
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D814
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x0860D820
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x0860D820
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D82C
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0860D838
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0860D838
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D844
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D850
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D85C
@@ -5562,16 +5562,16 @@ VoiceGroup_JP_0860D568: @ 0x0860D568
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D91C
 	voice_square_1_alt 0, 2, 0, 1, 6, 2 @ 0x0860D928
 	voice_square_2_alt 2, 0, 1, 6, 0 @ 0x0860D934
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 0 @ 0x0860D940
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 0 @ 0x0860D940
 	voice_square_1_alt 0, 1, 0, 1, 4, 1 @ 0x0860D94C
 	voice_square_1_alt 0, 1, 1, 2, 4, 0 @ 0x0860D958
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D964
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D970
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x0860D97C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x0860D97C
 	voice_square_2_alt 3, 0, 1, 6, 2 @ 0x0860D988
 VoiceGroup_JP_0860D994: @ 0x0860D994
-	voice_keysplit_all 0x085FDB0C @ 0x0860D994
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x0860D9A0
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860D994
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x0860D9A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D9AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D9B8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860D9C4
@@ -5618,7 +5618,7 @@ VoiceGroup_JP_0860D994: @ 0x0860D994
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 128, 226, 0, 38 @ 0x0860DBB0
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x0860DBBC
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 180, 246 @ 0x0860DBC8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0860DBD4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0860DBD4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860DBE0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860DBEC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860DBF8
@@ -5626,11 +5626,11 @@ VoiceGroup_JP_0860D994: @ 0x0860D994
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860DC10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860DC1C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860DC28
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0860DC34
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0860DC34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860DC40
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x0860DC4C
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x0860DC4C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860DC58
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0860DC64
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0860DC64
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860DC70
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860DC7C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860DC88
@@ -5699,7 +5699,7 @@ VoiceGroup_JP_0860D994: @ 0x0860D994
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860DF7C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860DF88
 VoiceGroup_JP_0860DF94: @ 0x0860DF94
-	voice_keysplit_all 0x085FDB0C @ 0x0860DF94
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860DF94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860DFA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860DFAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860DFB8
@@ -5755,7 +5755,7 @@ VoiceGroup_JP_0860DF94: @ 0x0860DF94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E210
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E21C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E228
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0860E234
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0860E234
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E240
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E24C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E258
@@ -5782,8 +5782,8 @@ VoiceGroup_JP_0860DF94: @ 0x0860DF94
 	voice_square_1_alt 0, 2, 0, 1, 4, 1 @ 0x0860E354
 	voice_square_2_alt 2, 0, 1, 4, 1 @ 0x0860E360
 	voice_square_2_alt 0, 0, 1, 4, 1 @ 0x0860E36C
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 0 @ 0x0860E378
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x0860E384
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 0 @ 0x0860E378
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x0860E384
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E390
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E39C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E3A8
@@ -5828,7 +5828,7 @@ VoiceGroup_JP_0860DF94: @ 0x0860DF94
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0860E57C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860E588
 VoiceGroup_JP_0860E594: @ 0x0860E594
-	voice_keysplit_all 0x085FDB0C @ 0x0860E594
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860E594
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E5A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E5AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E5B8
@@ -5857,7 +5857,7 @@ VoiceGroup_JP_0860E594: @ 0x0860E594
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E6CC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E6D8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E6E4
-	voice_programmable_wave_alt 0x0863C1CC, 0, 7, 15, 0 @ 0x0860E6F0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1CC, 0, 7, 15, 0 @ 0x0860E6F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E6FC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E708
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E714
@@ -5884,7 +5884,7 @@ VoiceGroup_JP_0860E594: @ 0x0860E594
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E810
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E81C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E828
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0860E834
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0860E834
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E840
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E84C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860E858
@@ -5957,7 +5957,7 @@ VoiceGroup_JP_0860E594: @ 0x0860E594
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0860EB7C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860EB88
 VoiceGroup_JP_0860EB94: @ 0x0860EB94
-	voice_keysplit_all 0x085FDB0C @ 0x0860EB94
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860EB94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860EBA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860EBAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860EBB8
@@ -6013,7 +6013,7 @@ VoiceGroup_JP_0860EB94: @ 0x0860EB94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860EE10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860EE1C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860EE28
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0860EE34
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0860EE34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860EE40
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860EE4C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860EE58
@@ -6040,8 +6040,8 @@ VoiceGroup_JP_0860EB94: @ 0x0860EB94
 	voice_square_1_alt 0, 1, 0, 1, 4, 1 @ 0x0860EF54
 	voice_square_2_alt 1, 0, 1, 4, 1 @ 0x0860EF60
 	voice_square_2_alt 0, 0, 1, 4, 1 @ 0x0860EF6C
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 0 @ 0x0860EF78
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x0860EF84
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 0 @ 0x0860EF78
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x0860EF84
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860EF90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860EF9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860EFA8
@@ -6086,7 +6086,7 @@ VoiceGroup_JP_0860EB94: @ 0x0860EB94
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0860F17C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860F188
 VoiceGroup_JP_0860F194: @ 0x0860F194
-	voice_keysplit_all 0x085FDB0C @ 0x0860F194
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860F194
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F1A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F1AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F1B8
@@ -6134,7 +6134,7 @@ VoiceGroup_JP_0860F194: @ 0x0860F194
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F3B0
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x0860F3BC
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 180, 246 @ 0x0860F3C8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0860F3D4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0860F3D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F3E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F3EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F3F8
@@ -6146,7 +6146,7 @@ VoiceGroup_JP_0860F194: @ 0x0860F194
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F440
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F44C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F458
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0860F464
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0860F464
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F470
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F47C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F488
@@ -6168,7 +6168,7 @@ VoiceGroup_JP_0860F194: @ 0x0860F194
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F548
 	voice_square_1_alt 0, 0, 0, 1, 4, 1 @ 0x0860F554
 	voice_square_2_alt 0, 0, 1, 4, 1 @ 0x0860F560
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 0 @ 0x0860F56C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 0 @ 0x0860F56C
 	voice_square_2_alt 3, 0, 1, 4, 1 @ 0x0860F578
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F584
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F590
@@ -6215,8 +6215,8 @@ VoiceGroup_JP_0860F194: @ 0x0860F194
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0860F77C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860F788
 VoiceGroup_JP_0860F794: @ 0x0860F794
-	voice_keysplit_all 0x085FDB0C @ 0x0860F794
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x0860F7A0
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860F794
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x0860F7A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F7AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F7B8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860F7C4
@@ -6271,7 +6271,7 @@ VoiceGroup_JP_0860F794: @ 0x0860F794
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860FA10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860FA1C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860FA28
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0860FA34
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0860FA34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860FA40
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860FA4C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860FA58
@@ -6298,11 +6298,11 @@ VoiceGroup_JP_0860F794: @ 0x0860F794
 	voice_square_1_alt 0, 1, 0, 1, 4, 1 @ 0x0860FB54
 	voice_square_2_alt 1, 0, 1, 4, 1 @ 0x0860FB60
 	voice_square_2_alt 0, 0, 1, 4, 1 @ 0x0860FB6C
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 0 @ 0x0860FB78
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x0860FB84
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 0 @ 0x0860FB78
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x0860FB84
 	voice_square_1_alt 0, 2, 0, 1, 4, 1 @ 0x0860FB90
 	voice_square_2_alt 2, 0, 1, 4, 1 @ 0x0860FB9C
-	voice_programmable_wave_alt 0x0863C1DC, 0, 7, 15, 0 @ 0x0860FBA8
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1DC, 0, 7, 15, 0 @ 0x0860FBA8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860FBB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860FBC0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860FBCC
@@ -6344,7 +6344,7 @@ VoiceGroup_JP_0860F794: @ 0x0860F794
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0860FD7C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0860FD88
 VoiceGroup_JP_0860FD94: @ 0x0860FD94
-	voice_keysplit_all 0x085FDB0C @ 0x0860FD94
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0860FD94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860FDA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860FDAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0860FDB8
@@ -6426,7 +6426,7 @@ VoiceGroup_JP_0860FD94: @ 0x0860FD94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610148
 	voice_square_1 0, 1, 0, 1, 4, 1 @ 0x08610154
 	voice_square_2_alt 1, 0, 1, 4, 1 @ 0x08610160
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 3 @ 0x0861016C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 3 @ 0x0861016C
 	voice_square_2_alt 3, 0, 1, 4, 1 @ 0x08610178
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610184
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610190
@@ -6473,8 +6473,8 @@ VoiceGroup_JP_0860FD94: @ 0x0860FD94
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0861037C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08610388
 VoiceGroup_JP_08610394: @ 0x08610394
-	voice_keysplit_all 0x085FDB0C @ 0x08610394
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x086103A0
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08610394
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x086103A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086103AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086103B8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086103C4
@@ -6529,7 +6529,7 @@ VoiceGroup_JP_08610394: @ 0x08610394
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610610
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861061C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610628
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08610634
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08610634
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610640
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861064C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610658
@@ -6556,8 +6556,8 @@ VoiceGroup_JP_08610394: @ 0x08610394
 	voice_square_1_alt 0, 1, 0, 1, 4, 1 @ 0x08610754
 	voice_square_2_alt 1, 0, 1, 4, 1 @ 0x08610760
 	voice_square_2_alt 0, 0, 1, 4, 1 @ 0x0861076C
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 0 @ 0x08610778
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x08610784
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 0 @ 0x08610778
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x08610784
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610790
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861079C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086107A8
@@ -6602,8 +6602,8 @@ VoiceGroup_JP_08610394: @ 0x08610394
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0861097C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08610988
 VoiceGroup_JP_08610994: @ 0x08610994
-	voice_keysplit_all 0x085FDB0C @ 0x08610994
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x086109A0
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08610994
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x086109A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086109AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086109B8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086109C4
@@ -6658,7 +6658,7 @@ VoiceGroup_JP_08610994: @ 0x08610994
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610C10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610C1C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610C28
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08610C34
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08610C34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610C40
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610C4C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610C58
@@ -6685,8 +6685,8 @@ VoiceGroup_JP_08610994: @ 0x08610994
 	voice_square_1 0, 2, 0, 2, 3, 1 @ 0x08610D54
 	voice_square_2_alt 2, 0, 2, 3, 1 @ 0x08610D60
 	voice_square_2_alt 0, 0, 1, 4, 1 @ 0x08610D6C
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 0 @ 0x08610D78
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x08610D84
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 0 @ 0x08610D78
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x08610D84
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610D90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610D9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610DA8
@@ -6731,7 +6731,7 @@ VoiceGroup_JP_08610994: @ 0x08610994
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08610F7C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08610F88
 VoiceGroup_JP_08610F94: @ 0x08610F94
-	voice_keysplit_all 0x085FDB0C @ 0x08610F94
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08610F94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610FA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610FAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08610FB8
@@ -6779,7 +6779,7 @@ VoiceGroup_JP_08610F94: @ 0x08610F94
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 226, 0, 38 @ 0x086111B0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086111BC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086111C8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086111D4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086111D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086111E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086111EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086111F8
@@ -6789,7 +6789,7 @@ VoiceGroup_JP_08610F94: @ 0x08610F94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611228
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611234
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611240
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x0861124C
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x0861124C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611258
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611264
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611270
@@ -6814,7 +6814,7 @@ VoiceGroup_JP_08610F94: @ 0x08610F94
 	voice_square_1_alt 0, 0, 0, 1, 4, 1 @ 0x08611354
 	voice_square_2_alt 0, 0, 1, 4, 1 @ 0x08611360
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861136C
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 3 @ 0x08611378
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 3 @ 0x08611378
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611384
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611390
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861139C
@@ -6860,7 +6860,7 @@ VoiceGroup_JP_08610F94: @ 0x08610F94
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0861157C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08611588
 VoiceGroup_JP_08611594: @ 0x08611594
-	voice_keysplit_all 0x085FDB0C @ 0x08611594
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08611594
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086115A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086115AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086115B8
@@ -6908,7 +6908,7 @@ VoiceGroup_JP_08611594: @ 0x08611594
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086117B0
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x086117BC
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 180, 246 @ 0x086117C8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086117D4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086117D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086117E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086117EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086117F8
@@ -6916,7 +6916,7 @@ VoiceGroup_JP_08611594: @ 0x08611594
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611810
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861181C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611828
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08611834
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08611834
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611840
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861184C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611858
@@ -6943,7 +6943,7 @@ VoiceGroup_JP_08611594: @ 0x08611594
 	voice_square_1_alt 0, 0, 0, 1, 4, 1 @ 0x08611954
 	voice_square_2_alt 2, 0, 1, 4, 1 @ 0x08611960
 	voice_square_2_alt 0, 0, 1, 4, 1 @ 0x0861196C
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 0 @ 0x08611978
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 0 @ 0x08611978
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611984
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611990
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861199C
@@ -6989,7 +6989,7 @@ VoiceGroup_JP_08611594: @ 0x08611594
 	voice_noise_alt 0, 0, 2, 4, 0 @ 0x08611B7C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08611B88
 VoiceGroup_JP_08611B94: @ 0x08611B94
-	voice_keysplit_all 0x085FDB0C @ 0x08611B94
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08611B94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611BA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611BAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611BB8
@@ -7045,11 +7045,11 @@ VoiceGroup_JP_08611B94: @ 0x08611B94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611E10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611E1C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611E28
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08611E34
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08611E34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611E40
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x08611E4C
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x08611E4C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611E58
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08611E64
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08611E64
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611E70
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611E7C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611E88
@@ -7072,7 +7072,7 @@ VoiceGroup_JP_08611B94: @ 0x08611B94
 	voice_square_1_alt 0, 0, 0, 1, 4, 1 @ 0x08611F54
 	voice_square_2_alt 0, 0, 1, 4, 1 @ 0x08611F60
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611F6C
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 2 @ 0x08611F78
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 2 @ 0x08611F78
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611F84
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611F90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08611F9C
@@ -7118,8 +7118,8 @@ VoiceGroup_JP_08611B94: @ 0x08611B94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861217C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08612188
 VoiceGroup_JP_08612194: @ 0x08612194
-	voice_keysplit_all 0x085FDB0C @ 0x08612194
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x086121A0
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08612194
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x086121A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086121AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086121B8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086121C4
@@ -7166,7 +7166,7 @@ VoiceGroup_JP_08612194: @ 0x08612194
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086123B0
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x086123BC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086123C8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086123D4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086123D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086123E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086123EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086123F8
@@ -7174,11 +7174,11 @@ VoiceGroup_JP_08612194: @ 0x08612194
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612410
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861241C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612428
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08612434
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08612434
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612440
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861244C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612458
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08612464
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08612464
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612470
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861247C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612488
@@ -7200,8 +7200,8 @@ VoiceGroup_JP_08612194: @ 0x08612194
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612548
 	voice_square_1_alt 0, 2, 0, 1, 4, 1 @ 0x08612554
 	voice_square_2_alt 2, 0, 1, 4, 1 @ 0x08612560
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x0861256C
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 0 @ 0x08612578
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x0861256C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 0 @ 0x08612578
 	voice_square_2_alt 0, 0, 1, 4, 0 @ 0x08612584
 	voice_square_1_alt 0, 0, 0, 1, 4, 0 @ 0x08612590
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861259C
@@ -7247,8 +7247,8 @@ VoiceGroup_JP_08612194: @ 0x08612194
 	voice_noise_alt 0, 0, 2, 4, 0 @ 0x0861277C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08612788
 VoiceGroup_JP_08612794: @ 0x08612794
-	voice_keysplit_all 0x085FDB0C @ 0x08612794
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x086127A0
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08612794
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x086127A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086127AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086127B8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086127C4
@@ -7295,7 +7295,7 @@ VoiceGroup_JP_08612794: @ 0x08612794
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086129B0
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x086129BC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086129C8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086129D4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086129D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086129E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086129EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086129F8
@@ -7303,11 +7303,11 @@ VoiceGroup_JP_08612794: @ 0x08612794
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612A10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612A1C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612A28
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08612A34
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08612A34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612A40
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612A4C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612A58
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08612A64
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08612A64
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612A70
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612A7C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612A88
@@ -7329,7 +7329,7 @@ VoiceGroup_JP_08612794: @ 0x08612794
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612B48
 	voice_square_1_alt 0, 2, 0, 2, 4, 1 @ 0x08612B54
 	voice_square_2_alt 2, 0, 2, 4, 1 @ 0x08612B60
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x08612B6C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x08612B6C
 	voice_square_2_alt 0, 0, 1, 4, 0 @ 0x08612B78
 	voice_square_1_alt 0, 0, 0, 1, 4, 0 @ 0x08612B84
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612B90
@@ -7376,7 +7376,7 @@ VoiceGroup_JP_08612794: @ 0x08612794
 	voice_noise_alt 0, 0, 2, 4, 0 @ 0x08612D7C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08612D88
 VoiceGroup_JP_08612D94: @ 0x08612D94
-	voice_keysplit_all 0x085FDB0C @ 0x08612D94
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08612D94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612DA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612DAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08612DB8
@@ -7458,12 +7458,12 @@ VoiceGroup_JP_08612D94: @ 0x08612D94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613148
 	voice_square_1_alt 0, 2, 0, 1, 4, 0 @ 0x08613154
 	voice_square_2_alt 2, 0, 1, 4, 0 @ 0x08613160
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 0 @ 0x0861316C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 0 @ 0x0861316C
 	voice_square_2_alt 0, 0, 1, 4, 1 @ 0x08613178
 	voice_square_1_alt 0, 1, 0, 1, 4, 1 @ 0x08613184
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613190
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861319C
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x086131A8
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x086131A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086131B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086131C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086131CC
@@ -7505,8 +7505,8 @@ VoiceGroup_JP_08612D94: @ 0x08612D94
 	voice_noise_alt 0, 0, 2, 4, 0 @ 0x0861337C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08613388
 VoiceGroup_JP_08613394: @ 0x08613394
-	voice_keysplit_all 0x085FDB0C @ 0x08613394
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x086133A0
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08613394
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x086133A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086133AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086133B8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086133C4
@@ -7553,7 +7553,7 @@ VoiceGroup_JP_08613394: @ 0x08613394
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086135B0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086135BC
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 180, 246 @ 0x086135C8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086135D4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086135D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086135E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086135EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086135F8
@@ -7561,11 +7561,11 @@ VoiceGroup_JP_08613394: @ 0x08613394
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613610
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861361C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613628
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08613634
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08613634
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613640
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x0861364C
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x0861364C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613658
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08613664
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08613664
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613670
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861367C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613688
@@ -7587,10 +7587,10 @@ VoiceGroup_JP_08613394: @ 0x08613394
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613748
 	voice_square_1_alt 0, 1, 0, 2, 3, 1 @ 0x08613754
 	voice_square_2_alt 2, 0, 1, 4, 1 @ 0x08613760
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x0861376C
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 0 @ 0x08613778
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x0861376C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 0 @ 0x08613778
 	voice_square_2_alt 1, 0, 1, 4, 1 @ 0x08613784
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 1 @ 0x08613790
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 1 @ 0x08613790
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861379C
 	voice_square_1_alt 0, 0, 0, 2, 3, 1 @ 0x086137A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086137B4
@@ -7634,7 +7634,7 @@ VoiceGroup_JP_08613394: @ 0x08613394
 	voice_noise_alt 0, 0, 3, 4, 0 @ 0x0861397C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08613988
 VoiceGroup_JP_08613994: @ 0x08613994
-	voice_keysplit_all 0x085FDB0C @ 0x08613994
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08613994
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086139A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086139AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086139B8
@@ -7690,7 +7690,7 @@ VoiceGroup_JP_08613994: @ 0x08613994
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613C10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613C1C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613C28
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08613C34
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08613C34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613C40
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613C4C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613C58
@@ -7716,8 +7716,8 @@ VoiceGroup_JP_08613994: @ 0x08613994
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613D48
 	voice_square_1_alt 0, 1, 0, 1, 4, 1 @ 0x08613D54
 	voice_square_2_alt 1, 0, 1, 4, 1 @ 0x08613D60
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x08613D6C
-	voice_programmable_wave_alt 0x0863C1CC, 0, 7, 15, 0 @ 0x08613D78
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x08613D6C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1CC, 0, 7, 15, 0 @ 0x08613D78
 	voice_square_1_alt 0, 0, 0, 1, 4, 1 @ 0x08613D84
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613D90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613D9C
@@ -7763,7 +7763,7 @@ VoiceGroup_JP_08613994: @ 0x08613994
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08613F7C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08613F88
 VoiceGroup_JP_08613F94: @ 0x08613F94
-	voice_keysplit_all 0x085FDB0C @ 0x08613F94
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08613F94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613FA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613FAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08613FB8
@@ -7811,7 +7811,7 @@ VoiceGroup_JP_08613F94: @ 0x08613F94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086141B0
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x086141BC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086141C8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086141D4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086141D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086141E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086141EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086141F8
@@ -7845,7 +7845,7 @@ VoiceGroup_JP_08613F94: @ 0x08613F94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614348
 	voice_square_1_alt 0, 1, 0, 1, 4, 1 @ 0x08614354
 	voice_square_2_alt 1, 0, 1, 4, 1 @ 0x08614360
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 0 @ 0x0861436C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 0 @ 0x0861436C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614378
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614384
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614390
@@ -7892,7 +7892,7 @@ VoiceGroup_JP_08613F94: @ 0x08613F94
 	voice_noise_alt 0, 0, 2, 4, 0 @ 0x0861457C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08614588
 VoiceGroup_JP_08614594: @ 0x08614594
-	voice_keysplit_all 0x085FDB0C @ 0x08614594
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08614594
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086145A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086145AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086145B8
@@ -7940,7 +7940,7 @@ VoiceGroup_JP_08614594: @ 0x08614594
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 226, 0, 38 @ 0x086147B0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086147BC
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 180, 246 @ 0x086147C8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086147D4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086147D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086147E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086147EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086147F8
@@ -7952,7 +7952,7 @@ VoiceGroup_JP_08614594: @ 0x08614594
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614840
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861484C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614858
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08614864
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08614864
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614870
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861487C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614888
@@ -7974,7 +7974,7 @@ VoiceGroup_JP_08614594: @ 0x08614594
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614948
 	voice_square_1_alt 0, 1, 0, 1, 4, 1 @ 0x08614954
 	voice_square_2_alt 1, 0, 1, 4, 1 @ 0x08614960
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 0 @ 0x0861496C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 0 @ 0x0861496C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614978
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614984
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614990
@@ -8021,8 +8021,8 @@ VoiceGroup_JP_08614594: @ 0x08614594
 	voice_noise_alt 0, 0, 2, 4, 0 @ 0x08614B7C
 	voice_noise_alt 0, 0, 2, 0, 2 @ 0x08614B88
 VoiceGroup_JP_08614B94: @ 0x08614B94
-	voice_keysplit_all 0x085FDB0C @ 0x08614B94
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08614BA0
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08614B94
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08614BA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614BAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614BB8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614BC4
@@ -8060,7 +8060,7 @@ VoiceGroup_JP_08614B94: @ 0x08614B94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614D44
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614D50
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614D5C
-	voice_programmable_wave_alt 0x0863C12C, 0, 7, 6, 2 @ 0x08614D68
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C12C, 0, 7, 6, 2 @ 0x08614D68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614D74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614D80
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614D8C
@@ -8069,7 +8069,7 @@ VoiceGroup_JP_08614B94: @ 0x08614B94
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 226, 0, 38 @ 0x08614DB0
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x08614DBC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614DC8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08614DD4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08614DD4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614DE0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614DEC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614DF8
@@ -8103,9 +8103,9 @@ VoiceGroup_JP_08614B94: @ 0x08614B94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614F48
 	voice_square_1_alt 0, 3, 0, 2, 4, 1 @ 0x08614F54
 	voice_square_2_alt 3, 0, 1, 6, 2 @ 0x08614F60
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 0 @ 0x08614F6C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 0 @ 0x08614F6C
 	voice_square_1_alt 0, 2, 0, 2, 6, 5 @ 0x08614F78
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 4, 4 @ 0x08614F84
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 4, 4 @ 0x08614F84
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614F90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08614F9C
 	voice_square_2_alt 2, 0, 1, 6, 2 @ 0x08614FA8
@@ -8150,7 +8150,7 @@ VoiceGroup_JP_08614B94: @ 0x08614B94
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0861517C
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08615188
 VoiceGroup_JP_08615194: @ 0x08615194
-	voice_keysplit_all 0x085FDB0C @ 0x08615194
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08615194
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086151A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086151AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086151B8
@@ -8198,7 +8198,7 @@ VoiceGroup_JP_08615194: @ 0x08615194
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 226, 0, 38 @ 0x086153B0
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x086153BC
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 180, 246 @ 0x086153C8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086153D4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086153D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086153E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086153EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086153F8
@@ -8210,7 +8210,7 @@ VoiceGroup_JP_08615194: @ 0x08615194
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615440
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861544C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615458
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08615464
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08615464
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615470
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861547C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615488
@@ -8232,7 +8232,7 @@ VoiceGroup_JP_08615194: @ 0x08615194
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615548
 	voice_square_1_alt 0, 1, 0, 1, 4, 1 @ 0x08615554
 	voice_square_2_alt 1, 0, 1, 4, 1 @ 0x08615560
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 0 @ 0x0861556C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 0 @ 0x0861556C
 	voice_square_2_alt 3, 0, 1, 4, 1 @ 0x08615578
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615584
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615590
@@ -8280,10 +8280,10 @@ VoiceGroup_JP_08615194: @ 0x08615194
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08615788
 VoiceGroup_JP_08615794: @ 0x08615794
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615794
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x086157A0
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x086157A0
 VoiceGroup_JP_086157AC: @ 0x086157AC
-	voice_keysplit_all 0x085FDB0C @ 0x086157AC
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x086157B8
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x086157AC
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x086157B8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086157C4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086157D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086157DC
@@ -8330,7 +8330,7 @@ VoiceGroup_JP_086157AC: @ 0x086157AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086159C8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086159D4
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 180, 246 @ 0x086159E0
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086159EC
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086159EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086159F8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615A04
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615A10
@@ -8338,11 +8338,11 @@ VoiceGroup_JP_086157AC: @ 0x086157AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615A28
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615A34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615A40
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08615A4C
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08615A4C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615A58
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615A64
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615A70
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08615A7C
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08615A7C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615A88
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615A94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615AA0
@@ -8364,8 +8364,8 @@ VoiceGroup_JP_086157AC: @ 0x086157AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615B60
 	voice_square_1_alt 0, 3, 0, 2, 4, 1 @ 0x08615B6C
 	voice_square_2_alt 3, 0, 1, 6, 2 @ 0x08615B78
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x08615B84
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 4, 4 @ 0x08615B90
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x08615B84
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 4, 4 @ 0x08615B90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615B9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615BA8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615BB4
@@ -8411,8 +8411,8 @@ VoiceGroup_JP_086157AC: @ 0x086157AC
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08615D94
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08615DA0
 VoiceGroup_JP_08615DAC: @ 0x08615DAC
-	voice_keysplit_all 0x085FDB0C @ 0x08615DAC
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08615DB8
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08615DAC
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08615DB8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615DC4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615DD0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615DDC
@@ -8459,7 +8459,7 @@ VoiceGroup_JP_08615DAC: @ 0x08615DAC
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 226, 0, 38 @ 0x08615FC8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 0, 242 @ 0x08615FD4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615FE0
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08615FEC
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08615FEC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08615FF8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616004
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616010
@@ -8469,9 +8469,9 @@ VoiceGroup_JP_08615DAC: @ 0x08615DAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616040
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861604C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616058
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x08616064
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x08616064
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616070
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0861607C
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0861607C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616088
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616094
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086160A0
@@ -8493,10 +8493,10 @@ VoiceGroup_JP_08615DAC: @ 0x08615DAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616160
 	voice_square_1_alt 0, 2, 0, 1, 4, 1 @ 0x0861616C
 	voice_square_2_alt 2, 0, 1, 4, 2 @ 0x08616178
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 6, 4 @ 0x08616184
-	voice_programmable_wave_alt 0x0863C0EC, 0, 2, 6, 1 @ 0x08616190
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 6, 4 @ 0x08616184
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 2, 6, 1 @ 0x08616190
 VoiceGroup_JP_0861619C: @ 0x0861619C
-	voice_keysplit_all 0x085FDB0C @ 0x0861619C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0861619C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086161A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086161B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086161C0
@@ -8544,7 +8544,7 @@ VoiceGroup_JP_0861619C: @ 0x0861619C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086163B8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x086163C4
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 180, 246 @ 0x086163D0
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086163DC
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086163DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086163E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086163F4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616400
@@ -8556,7 +8556,7 @@ VoiceGroup_JP_0861619C: @ 0x0861619C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616448
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616454
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616460
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0861646C
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0861646C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616478
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616484
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616490
@@ -8583,7 +8583,7 @@ VoiceGroup_JP_0861619C: @ 0x0861619C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861658C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616598
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086165A4
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 1 @ 0x086165B0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 1 @ 0x086165B0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086165BC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086165C8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086165D4
@@ -8625,7 +8625,7 @@ VoiceGroup_JP_0861619C: @ 0x0861619C
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08616784
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08616790
 VoiceGroup_JP_0861679C: @ 0x0861679C
-	voice_keysplit_all 0x085FDB0C @ 0x0861679C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0861679C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086167A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086167B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086167C0
@@ -8681,7 +8681,7 @@ VoiceGroup_JP_0861679C: @ 0x0861679C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616A18
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616A24
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616A30
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08616A3C
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08616A3C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616A48
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616A54
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616A60
@@ -8708,8 +8708,8 @@ VoiceGroup_JP_0861679C: @ 0x0861679C
 	voice_square_1_alt 0, 2, 1, 2, 4, 0 @ 0x08616B5C
 	voice_square_2_alt 1, 0, 2, 4, 0 @ 0x08616B68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616B74
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 1 @ 0x08616B80
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 13, 1 @ 0x08616B8C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 1 @ 0x08616B80
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 13, 1 @ 0x08616B8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616B98
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616BA4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616BB0
@@ -8754,7 +8754,7 @@ VoiceGroup_JP_0861679C: @ 0x0861679C
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08616D84
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08616D90
 VoiceGroup_JP_08616D9C: @ 0x08616D9C
-	voice_keysplit_all 0x085FDB0C @ 0x08616D9C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08616D9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616DA8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616DB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616DC0
@@ -8802,7 +8802,7 @@ VoiceGroup_JP_08616D9C: @ 0x08616D9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616FB8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x08616FC4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616FD0
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08616FDC
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08616FDC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616FE8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08616FF4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617000
@@ -8810,11 +8810,11 @@ VoiceGroup_JP_08616D9C: @ 0x08616D9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617018
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617024
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617030
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0861703C
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0861703C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617048
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617054
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617060
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0861706C
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0861706C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617078
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617084
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617090
@@ -8837,7 +8837,7 @@ VoiceGroup_JP_08616D9C: @ 0x08616D9C
 	voice_square_1_alt 0, 2, 0, 2, 4, 0 @ 0x0861715C
 	voice_square_2_alt 1, 0, 2, 4, 0 @ 0x08617168
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617174
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x08617180
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x08617180
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861718C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617198
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086171A4
@@ -8883,7 +8883,7 @@ VoiceGroup_JP_08616D9C: @ 0x08616D9C
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08617384
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08617390
 VoiceGroup_JP_0861739C: @ 0x0861739C
-	voice_keysplit_all 0x085FDB0C @ 0x0861739C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0861739C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086173A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086173B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086173C0
@@ -8912,7 +8912,7 @@ VoiceGroup_JP_0861739C: @ 0x0861739C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086174D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086174E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086174EC
-	voice_programmable_wave_alt 0x0863C1CC, 0, 7, 15, 0 @ 0x086174F8
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1CC, 0, 7, 15, 0 @ 0x086174F8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617504
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617510
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861751C
@@ -8939,11 +8939,11 @@ VoiceGroup_JP_0861739C: @ 0x0861739C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617618
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617624
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617630
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0861763C
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0861763C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617648
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617654
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617660
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0861766C
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0861766C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617678
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617684
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617690
@@ -8966,7 +8966,7 @@ VoiceGroup_JP_0861739C: @ 0x0861739C
 	voice_square_1_alt 0, 0, 0, 1, 4, 1 @ 0x0861775C
 	voice_square_2_alt 0, 0, 1, 4, 1 @ 0x08617768
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617774
-	voice_programmable_wave_alt 0x0863C1DC, 0, 7, 15, 0 @ 0x08617780
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1DC, 0, 7, 15, 0 @ 0x08617780
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861778C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617798
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086177A4
@@ -9012,13 +9012,13 @@ VoiceGroup_JP_0861739C: @ 0x0861739C
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08617984
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08617990
 VoiceGroup_JP_0861799C: @ 0x0861799C
-	voice_keysplit_all 0x085FDB0C @ 0x0861799C
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x086179A8
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0861799C
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x086179A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086179B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086179C0
 	voice_square_2_alt 1, 1, 1, 6, 2 @ 0x086179CC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086179D8
-	voice_programmable_wave_alt 0x0863C12C, 0, 7, 15, 0 @ 0x086179E4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C12C, 0, 7, 15, 0 @ 0x086179E4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086179F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086179FC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617A08
@@ -9060,7 +9060,7 @@ VoiceGroup_JP_0861799C: @ 0x0861799C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617BB8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x08617BC4
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 180, 239 @ 0x08617BD0
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08617BDC
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08617BDC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617BE8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617BF4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617C00
@@ -9068,11 +9068,11 @@ VoiceGroup_JP_0861799C: @ 0x0861799C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617C18
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617C24
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617C30
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08617C3C
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08617C3C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617C48
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x08617C54
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x08617C54
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617C60
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08617C6C
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08617C6C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617C78
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617C84
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617C90
@@ -9094,12 +9094,12 @@ VoiceGroup_JP_0861799C: @ 0x0861799C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617D50
 	voice_square_1_alt 0, 1, 0, 1, 6, 2 @ 0x08617D5C
 	voice_square_2_alt 1, 0, 2, 4, 0 @ 0x08617D68
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 0 @ 0x08617D74
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 0 @ 0x08617D74
 	voice_square_1_alt 0, 1, 0, 1, 4, 1 @ 0x08617D80
 	voice_square_1_alt 0, 1, 1, 1, 6, 0 @ 0x08617D8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617D98
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617DA4
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 0 @ 0x08617DB0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 0 @ 0x08617DB0
 	voice_square_2_alt 3, 0, 1, 6, 2 @ 0x08617DBC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617DC8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617DD4
@@ -9141,7 +9141,7 @@ VoiceGroup_JP_0861799C: @ 0x0861799C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617F84
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08617F90
 VoiceGroup_JP_08617F9C: @ 0x08617F9C
-	voice_keysplit_all 0x085FDB0C @ 0x08617F9C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08617F9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617FA8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617FB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08617FC0
@@ -9189,7 +9189,7 @@ VoiceGroup_JP_08617F9C: @ 0x08617F9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086181B8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086181C4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086181D0
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086181DC
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086181DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086181E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086181F4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618200
@@ -9201,7 +9201,7 @@ VoiceGroup_JP_08617F9C: @ 0x08617F9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618248
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618254
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618260
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0861826C
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0861826C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618278
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618284
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618290
@@ -9223,9 +9223,9 @@ VoiceGroup_JP_08617F9C: @ 0x08617F9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618350
 	voice_square_1_alt 0, 1, 0, 2, 4, 3 @ 0x0861835C
 	voice_square_2_alt 2, 0, 2, 4, 0 @ 0x08618368
-	voice_programmable_wave_alt 0x0863C12C, 0, 7, 15, 0 @ 0x08618374
-	voice_programmable_wave_alt 0x0863C1DC, 0, 7, 15, 0 @ 0x08618380
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 0 @ 0x0861838C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C12C, 0, 7, 15, 0 @ 0x08618374
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1DC, 0, 7, 15, 0 @ 0x08618380
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 0 @ 0x0861838C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618398
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086183A4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086183B0
@@ -9270,7 +9270,7 @@ VoiceGroup_JP_08617F9C: @ 0x08617F9C
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08618584
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08618590
 VoiceGroup_JP_0861859C: @ 0x0861859C
-	voice_keysplit_all 0x085FDB0C @ 0x0861859C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0861859C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086185A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086185B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086185C0
@@ -9352,7 +9352,7 @@ VoiceGroup_JP_0861859C: @ 0x0861859C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618950
 	voice_square_1_alt 0, 0, 0, 2, 4, 1 @ 0x0861895C
 	voice_square_2_alt 0, 0, 2, 4, 1 @ 0x08618968
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x08618974
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x08618974
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618980
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861898C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618998
@@ -9399,8 +9399,8 @@ VoiceGroup_JP_0861859C: @ 0x0861859C
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08618B84
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08618B90
 VoiceGroup_JP_08618B9C: @ 0x08618B9C
-	voice_keysplit_all 0x085FDB0C @ 0x08618B9C
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08618BA8
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08618B9C
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08618BA8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618BB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618BC0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618BCC
@@ -9447,7 +9447,7 @@ VoiceGroup_JP_08618B9C: @ 0x08618B9C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 226, 0, 38 @ 0x08618DB8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 0, 242 @ 0x08618DC4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618DD0
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08618DDC
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08618DDC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618DE8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618DF4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618E00
@@ -9457,9 +9457,9 @@ VoiceGroup_JP_08618B9C: @ 0x08618B9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618E30
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618E3C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618E48
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x08618E54
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x08618E54
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618E60
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08618E6C
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08618E6C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618E78
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618E84
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618E90
@@ -9481,8 +9481,8 @@ VoiceGroup_JP_08618B9C: @ 0x08618B9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618F50
 	voice_square_1_alt 0, 2, 0, 1, 5, 2 @ 0x08618F5C
 	voice_square_2_alt 2, 0, 1, 5, 2 @ 0x08618F68
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 7, 0 @ 0x08618F74
-	voice_programmable_wave_alt 0x0863C0EC, 0, 2, 6, 1 @ 0x08618F80
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 7, 0 @ 0x08618F74
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 2, 6, 1 @ 0x08618F80
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618F8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618F98
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08618FA4
@@ -9528,7 +9528,7 @@ VoiceGroup_JP_08618B9C: @ 0x08618B9C
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08619184
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08619190
 VoiceGroup_JP_0861919C: @ 0x0861919C
-	voice_keysplit_all 0x085FDB0C @ 0x0861919C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0861919C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086191A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086191B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086191C0
@@ -9610,7 +9610,7 @@ VoiceGroup_JP_0861919C: @ 0x0861919C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619550
 	voice_square_1_alt 0, 2, 0, 1, 4, 1 @ 0x0861955C
 	voice_square_2_alt 2, 0, 1, 4, 2 @ 0x08619568
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 7, 0 @ 0x08619574
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 7, 0 @ 0x08619574
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619580
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861958C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619598
@@ -9657,7 +9657,7 @@ VoiceGroup_JP_0861919C: @ 0x0861919C
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08619784
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08619790
 VoiceGroup_JP_0861979C: @ 0x0861979C
-	voice_keysplit_all 0x085FDB0C @ 0x0861979C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0861979C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086197A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086197B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086197C0
@@ -9705,7 +9705,7 @@ VoiceGroup_JP_0861979C: @ 0x0861979C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086199B8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 0, 242 @ 0x086199C4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086199D0
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086199DC
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086199DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086199E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086199F4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619A00
@@ -9715,9 +9715,9 @@ VoiceGroup_JP_0861979C: @ 0x0861979C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619A30
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619A3C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619A48
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x08619A54
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x08619A54
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619A60
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08619A6C
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08619A6C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619A78
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619A84
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619A90
@@ -9739,7 +9739,7 @@ VoiceGroup_JP_0861979C: @ 0x0861979C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619B50
 	voice_square_1_alt 0, 1, 0, 1, 4, 1 @ 0x08619B5C
 	voice_square_2_alt 1, 0, 1, 4, 1 @ 0x08619B68
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 7, 0 @ 0x08619B74
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 7, 0 @ 0x08619B74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619B80
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619B8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619B98
@@ -9786,7 +9786,7 @@ VoiceGroup_JP_0861979C: @ 0x0861979C
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08619D84
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x08619D90
 VoiceGroup_JP_08619D9C: @ 0x08619D9C
-	voice_keysplit_all 0x085FDB0C @ 0x08619D9C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08619D9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619DA8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619DB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619DC0
@@ -9834,7 +9834,7 @@ VoiceGroup_JP_08619D9C: @ 0x08619D9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619FB8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619FC4
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 180, 246 @ 0x08619FD0
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08619FDC
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08619FDC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619FE8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08619FF4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A000
@@ -9842,11 +9842,11 @@ VoiceGroup_JP_08619D9C: @ 0x08619D9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A018
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A024
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A030
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0861A03C
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0861A03C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A048
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A054
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A060
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0861A06C
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0861A06C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A078
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A084
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A090
@@ -9868,7 +9868,7 @@ VoiceGroup_JP_08619D9C: @ 0x08619D9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A150
 	voice_square_1_alt 0, 0, 0, 1, 4, 1 @ 0x0861A15C
 	voice_square_2_alt 0, 0, 1, 4, 1 @ 0x0861A168
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 7, 0 @ 0x0861A174
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 7, 0 @ 0x0861A174
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A180
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A18C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A198
@@ -9915,7 +9915,7 @@ VoiceGroup_JP_08619D9C: @ 0x08619D9C
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0861A384
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0861A390
 VoiceGroup_JP_0861A39C: @ 0x0861A39C
-	voice_keysplit_all 0x085FDB0C @ 0x0861A39C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0861A39C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A3A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A3B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A3C0
@@ -9997,7 +9997,7 @@ VoiceGroup_JP_0861A39C: @ 0x0861A39C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A750
 	voice_square_1_alt 0, 1, 0, 1, 4, 1 @ 0x0861A75C
 	voice_square_2_alt 1, 0, 1, 4, 1 @ 0x0861A768
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 3 @ 0x0861A774
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 3 @ 0x0861A774
 	voice_square_2_alt 3, 0, 1, 4, 1 @ 0x0861A780
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A78C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A798
@@ -10044,7 +10044,7 @@ VoiceGroup_JP_0861A39C: @ 0x0861A39C
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0861A984
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0861A990
 VoiceGroup_JP_0861A99C: @ 0x0861A99C
-	voice_keysplit_all 0x085FDB0C @ 0x0861A99C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0861A99C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A9A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A9B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861A9C0
@@ -10100,7 +10100,7 @@ VoiceGroup_JP_0861A99C: @ 0x0861A99C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861AC18
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861AC24
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861AC30
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0861AC3C
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0861AC3C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861AC48
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861AC54
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861AC60
@@ -10128,7 +10128,7 @@ VoiceGroup_JP_0861A99C: @ 0x0861A99C
 	voice_square_2_alt 0, 0, 1, 4, 1 @ 0x0861AD68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861AD74
 	voice_square_1_alt 0, 0, 0, 1, 4, 1 @ 0x0861AD80
-	voice_programmable_wave_alt 0x0863C1CC, 0, 7, 15, 0 @ 0x0861AD8C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1CC, 0, 7, 15, 0 @ 0x0861AD8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861AD98
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861ADA4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861ADB0
@@ -10173,8 +10173,8 @@ VoiceGroup_JP_0861A99C: @ 0x0861A99C
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0861AF84
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0861AF90
 VoiceGroup_JP_0861AF9C: @ 0x0861AF9C
-	voice_keysplit_all 0x085FDB0C @ 0x0861AF9C
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x0861AFA8
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0861AF9C
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x0861AFA8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861AFB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861AFC0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861AFCC
@@ -10231,9 +10231,9 @@ VoiceGroup_JP_0861AF9C: @ 0x0861AF9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B230
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B23C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B248
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x0861B254
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x0861B254
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B260
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0861B26C
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0861B26C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B278
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B284
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B290
@@ -10255,7 +10255,7 @@ VoiceGroup_JP_0861AF9C: @ 0x0861AF9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B350
 	voice_square_1_alt 0, 3, 0, 1, 4, 1 @ 0x0861B35C
 	voice_square_2_alt 3, 0, 1, 4, 1 @ 0x0861B368
-	voice_programmable_wave_alt 0x0863C12C, 0, 7, 7, 0 @ 0x0861B374
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C12C, 0, 7, 7, 0 @ 0x0861B374
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B380
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B38C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B398
@@ -10302,7 +10302,7 @@ VoiceGroup_JP_0861AF9C: @ 0x0861AF9C
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0861B584
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0861B590
 VoiceGroup_JP_0861B59C: @ 0x0861B59C
-	voice_keysplit_all 0x085FDB0C @ 0x0861B59C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0861B59C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B5A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B5B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B5C0
@@ -10358,9 +10358,9 @@ VoiceGroup_JP_0861B59C: @ 0x0861B59C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B818
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B824
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B830
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0861B83C
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0861B83C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B848
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x0861B854
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x0861B854
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B860
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B86C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B878
@@ -10384,7 +10384,7 @@ VoiceGroup_JP_0861B59C: @ 0x0861B59C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B950
 	voice_square_1_alt 0, 0, 0, 1, 4, 0 @ 0x0861B95C
 	voice_square_2_alt 0, 0, 1, 4, 0 @ 0x0861B968
-	voice_programmable_wave_alt 0x0863C12C, 0, 7, 7, 0 @ 0x0861B974
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C12C, 0, 7, 7, 0 @ 0x0861B974
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B980
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B98C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861B998
@@ -10431,7 +10431,7 @@ VoiceGroup_JP_0861B59C: @ 0x0861B59C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_016_JP_0864D924, 255, 255, 255, 127 @ 0x0861BB84
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0861BB90
 VoiceGroup_JP_0861BB9C: @ 0x0861BB9C
-	voice_keysplit_all 0x085FDB0C @ 0x0861BB9C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0861BB9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861BBA8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861BBB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861BBC0
@@ -10487,7 +10487,7 @@ VoiceGroup_JP_0861BB9C: @ 0x0861BB9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861BE18
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861BE24
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861BE30
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0861BE3C
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0861BE3C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861BE48
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861BE54
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861BE60
@@ -10513,7 +10513,7 @@ VoiceGroup_JP_0861BB9C: @ 0x0861BB9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861BF50
 	voice_square_1_alt 0, 0, 0, 1, 4, 0 @ 0x0861BF5C
 	voice_square_2_alt 0, 0, 1, 4, 0 @ 0x0861BF68
-	voice_programmable_wave_alt 0x0863C12C, 0, 7, 7, 0 @ 0x0861BF74
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C12C, 0, 7, 7, 0 @ 0x0861BF74
 	voice_square_1_alt 0, 1, 2, 1, 5, 0 @ 0x0861BF80
 	voice_square_2_alt 1, 2, 1, 5, 0 @ 0x0861BF8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861BF98
@@ -10560,7 +10560,7 @@ VoiceGroup_JP_0861BB9C: @ 0x0861BB9C
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0861C184
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0861C190
 VoiceGroup_JP_0861C19C: @ 0x0861C19C
-	voice_keysplit_all 0x085FDB0C @ 0x0861C19C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0861C19C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C1A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C1B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C1C0
@@ -10589,7 +10589,7 @@ VoiceGroup_JP_0861C19C: @ 0x0861C19C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C2D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C2E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C2EC
-	voice_programmable_wave_alt 0x0863C1CC, 0, 7, 15, 0 @ 0x0861C2F8
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1CC, 0, 7, 15, 0 @ 0x0861C2F8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C304
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C310
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C31C
@@ -10616,7 +10616,7 @@ VoiceGroup_JP_0861C19C: @ 0x0861C19C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C418
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C424
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C430
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0861C43C
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0861C43C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C448
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C454
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C460
@@ -10645,7 +10645,7 @@ VoiceGroup_JP_0861C19C: @ 0x0861C19C
 	voice_square_2_alt 2, 1, 1, 4, 1 @ 0x0861C574
 	voice_square_2_alt 1, 0, 1, 4, 1 @ 0x0861C580
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C58C
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 0 @ 0x0861C598
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 0 @ 0x0861C598
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C5A4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C5B0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C5BC
@@ -10689,13 +10689,13 @@ VoiceGroup_JP_0861C19C: @ 0x0861C19C
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0861C784
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0861C790
 VoiceGroup_JP_0861C79C: @ 0x0861C79C
-	voice_keysplit_all 0x085FDB0C @ 0x0861C79C
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x0861C7A8
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0861C79C
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x0861C7A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C7B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C7C0
 	voice_square_1_alt 0, 1, 1, 5, 2, 4 @ 0x0861C7CC
 	voice_square_2_alt 1, 1, 5, 2, 4 @ 0x0861C7D8
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 0 @ 0x0861C7E4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 0 @ 0x0861C7E4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C7F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C7FC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C808
@@ -10737,7 +10737,7 @@ VoiceGroup_JP_0861C79C: @ 0x0861C79C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C9B8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x0861C9C4
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 180, 239 @ 0x0861C9D0
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0861C9DC
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0861C9DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C9E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861C9F4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CA00
@@ -10745,11 +10745,11 @@ VoiceGroup_JP_0861C79C: @ 0x0861C79C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CA18
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CA24
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CA30
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0861CA3C
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0861CA3C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CA48
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x0861CA54
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x0861CA54
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CA60
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0861CA6C
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0861CA6C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CA78
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CA84
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CA90
@@ -10763,7 +10763,7 @@ VoiceGroup_JP_0861C79C: @ 0x0861C79C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CAF0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CAFC
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_052_JP_08686D80, 255, 0, 255, 165 @ 0x0861CB08
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x0861CB14
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x0861CB14
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CB20
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CB2C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CB38
@@ -10771,12 +10771,12 @@ VoiceGroup_JP_0861C79C: @ 0x0861C79C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CB50
 	voice_square_2_alt 1, 1, 1, 6, 0 @ 0x0861CB5C
 	voice_square_1_alt 0, 0, 0, 4, 6, 2 @ 0x0861CB68
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 0 @ 0x0861CB74
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 0 @ 0x0861CB74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CB80
 	voice_square_1_alt 0, 0, 0, 1, 6, 0 @ 0x0861CB8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CB98
 	voice_square_2_alt 1, 1, 4, 6, 1 @ 0x0861CBA4
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x0861CBB0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x0861CBB0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CBBC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CBC8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861CBD4
@@ -10884,7 +10884,7 @@ VoiceGroup_JP_0861CCC4: @ 0x0861CCC4
 	voice_square_2_alt 2, 0, 6, 0, 6 @ 0x0861D090
 VoiceGroup_JP_0861D09C: @ 0x0861D09C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D09C
-	voice_keysplit_all 0x085FDC68 @ 0x0861D0A8
+	voice_keysplit_all VoiceGroup_JP_085FDC68 @ 0x0861D0A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D0B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D0C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D0CC
@@ -10931,7 +10931,7 @@ VoiceGroup_JP_0861D09C: @ 0x0861D09C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D2B8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x0861D2C4
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 180, 239 @ 0x0861D2D0
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0861D2DC
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0861D2DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D2E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D2F4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D300
@@ -10939,11 +10939,11 @@ VoiceGroup_JP_0861D09C: @ 0x0861D09C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D318
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D324
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D330
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0861D33C
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0861D33C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D348
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D354
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D360
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0861D36C
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0861D36C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D378
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D384
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D390
@@ -10966,8 +10966,8 @@ VoiceGroup_JP_0861D09C: @ 0x0861D09C
 	voice_square_1_alt 0, 1, 1, 1, 6, 0 @ 0x0861D45C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D468
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D474
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 1 @ 0x0861D480
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 1 @ 0x0861D48C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 1 @ 0x0861D480
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 1 @ 0x0861D48C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D498
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D4A4
 	voice_square_2_alt 1, 0, 0, 10, 1 @ 0x0861D4B0
@@ -10975,7 +10975,7 @@ VoiceGroup_JP_0861D09C: @ 0x0861D09C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D4C8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D4D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D4E0
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 1 @ 0x0861D4EC
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 1 @ 0x0861D4EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D4F8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D504
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D510
@@ -11012,7 +11012,7 @@ VoiceGroup_JP_0861D09C: @ 0x0861D09C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D684
 	voice_noise_alt 0, 0, 2, 6, 1 @ 0x0861D690
 VoiceGroup_JP_0861D69C: @ 0x0861D69C
-	voice_keysplit_all 0x085FDEF0 @ 0x0861D69C
+	voice_keysplit_all VoiceGroup_JP_085FDEF0 @ 0x0861D69C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D6A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861D6B4
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_054_JP_08689134, 255, 0, 206, 242 @ 0x0861D6C0
@@ -11095,8 +11095,8 @@ VoiceGroup_JP_0861D69C: @ 0x0861D69C
 	voice_square_1_alt 0, 1, 2, 0, 12, 5 @ 0x0861DA5C
 	voice_square_2_alt 0, 0, 0, 10, 4 @ 0x0861DA68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DA74
-	voice_programmable_wave_alt 0x0863C13C, 0, 0, 15, 0 @ 0x0861DA80
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 0 @ 0x0861DA8C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 0, 15, 0 @ 0x0861DA80
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 0 @ 0x0861DA8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DA98
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DAA4
 	voice_square_2_alt 1, 2, 0, 12, 5 @ 0x0861DAB0
@@ -11104,7 +11104,7 @@ VoiceGroup_JP_0861D69C: @ 0x0861D69C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DAC8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DAD4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DAE0
-	voice_programmable_wave_alt 0x0863C0EC, 0, 0, 15, 0 @ 0x0861DAEC
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 0, 15, 0 @ 0x0861DAEC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DAF8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DB04
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DB10
@@ -11121,7 +11121,7 @@ VoiceGroup_JP_0861D69C: @ 0x0861D69C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DB94
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_056_JP_0868E4F0, 255, 0, 206, 242 @ 0x0861DBA0
 VoiceGroup_JP_0861DBAC: @ 0x0861DBAC
-	voice_keysplit_all 0x085FDC68 @ 0x0861DBAC
+	voice_keysplit_all VoiceGroup_JP_085FDC68 @ 0x0861DBAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DBB8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DBC4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DBD0
@@ -11203,15 +11203,15 @@ VoiceGroup_JP_0861DBAC: @ 0x0861DBAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DF60
 	voice_square_1_alt 0, 2, 0, 2, 9, 4 @ 0x0861DF6C
 	voice_square_2_alt 2, 0, 2, 9, 4 @ 0x0861DF78
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 1 @ 0x0861DF84
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 1 @ 0x0861DF84
 VoiceGroup_JP_0861DF90: @ 0x0861DF90
-	voice_keysplit_all 0x085FDC68 @ 0x0861DF90
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x0861DF9C
+	voice_keysplit_all VoiceGroup_JP_085FDC68 @ 0x0861DF90
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x0861DF9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DFA8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DFB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DFC0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DFCC
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 0 @ 0x0861DFD8
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 0 @ 0x0861DFD8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DFE4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DFF0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861DFFC
@@ -11253,7 +11253,7 @@ VoiceGroup_JP_0861DF90: @ 0x0861DF90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E1AC
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x0861E1B8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 180, 246 @ 0x0861E1C4
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0861E1D0
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0861E1D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E1DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E1E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E1F4
@@ -11261,11 +11261,11 @@ VoiceGroup_JP_0861DF90: @ 0x0861DF90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E20C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E218
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E224
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0861E230
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0861E230
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E23C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E248
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E254
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0861E260
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0861E260
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E26C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_059_JP_08695588, 255, 0, 255, 127 @ 0x0861E278
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E284
@@ -11279,7 +11279,7 @@ VoiceGroup_JP_0861DF90: @ 0x0861DF90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E2E4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E2F0
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_052_JP_08686D80, 255, 0, 255, 165 @ 0x0861E2FC
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x0861E308
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x0861E308
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E314
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E320
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E32C
@@ -11289,10 +11289,10 @@ VoiceGroup_JP_0861DF90: @ 0x0861DF90
 	voice_square_2_alt 2, 0, 1, 4, 1 @ 0x0861E35C
 	voice_square_2_alt 0, 0, 1, 4, 1 @ 0x0861E368
 	voice_square_1_alt 0, 0, 0, 1, 4, 1 @ 0x0861E374
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 0 @ 0x0861E380
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 0 @ 0x0861E380
 	voice_square_1_alt 0, 3, 0, 1, 4, 1 @ 0x0861E38C
 	voice_square_2_alt 3, 0, 1, 4, 1 @ 0x0861E398
-	voice_programmable_wave_alt 0x0863C12C, 0, 7, 15, 0 @ 0x0861E3A4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C12C, 0, 7, 15, 0 @ 0x0861E3A4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E3B0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E3BC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E3C8
@@ -11334,13 +11334,13 @@ VoiceGroup_JP_0861DF90: @ 0x0861DF90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E578
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0861E584
 VoiceGroup_JP_0861E590: @ 0x0861E590
-	voice_keysplit_all 0x085FDC68 @ 0x0861E590
+	voice_keysplit_all VoiceGroup_JP_085FDC68 @ 0x0861E590
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E59C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E5A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E5B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E5C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E5CC
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 0 @ 0x0861E5D8
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 0 @ 0x0861E5D8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E5E4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E5F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E5FC
@@ -11382,7 +11382,7 @@ VoiceGroup_JP_0861E590: @ 0x0861E590
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E7AC
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x0861E7B8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E7C4
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0861E7D0
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0861E7D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E7DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E7E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E7F4
@@ -11394,7 +11394,7 @@ VoiceGroup_JP_0861E590: @ 0x0861E590
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E83C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E848
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E854
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0861E860
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0861E860
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E86C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E878
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E884
@@ -11408,7 +11408,7 @@ VoiceGroup_JP_0861E590: @ 0x0861E590
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E8E4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E8F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E8FC
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x0861E908
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x0861E908
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E914
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E920
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E92C
@@ -11418,10 +11418,10 @@ VoiceGroup_JP_0861E590: @ 0x0861E590
 	voice_square_2_alt 2, 0, 1, 4, 1 @ 0x0861E95C
 	voice_square_2_alt 0, 0, 1, 4, 1 @ 0x0861E968
 	voice_square_1_alt 0, 0, 0, 1, 4, 1 @ 0x0861E974
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 0 @ 0x0861E980
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 0 @ 0x0861E980
 	voice_square_1_alt 0, 3, 0, 1, 4, 1 @ 0x0861E98C
 	voice_square_2_alt 3, 0, 1, 4, 1 @ 0x0861E998
-	voice_programmable_wave_alt 0x0863C12C, 0, 7, 15, 0 @ 0x0861E9A4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C12C, 0, 7, 15, 0 @ 0x0861E9A4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E9B0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E9BC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861E9C8
@@ -11463,8 +11463,8 @@ VoiceGroup_JP_0861E590: @ 0x0861E590
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861EB78
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0861EB84
 VoiceGroup_JP_0861EB90: @ 0x0861EB90
-	voice_keysplit_all 0x085FE178 @ 0x0861EB90
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x0861EB9C
+	voice_keysplit_all VoiceGroup_JP_085FE178 @ 0x0861EB90
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x0861EB9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861EBA8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861EBB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861EBC0
@@ -11547,15 +11547,15 @@ VoiceGroup_JP_0861EB90: @ 0x0861EB90
 	voice_square_2_alt 0, 0, 0, 9, 2 @ 0x0861EF5C
 	voice_square_2_alt 1, 0, 0, 7, 1 @ 0x0861EF68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861EF74
-	voice_programmable_wave_alt 0x0863C11C, 0, 7, 15, 1 @ 0x0861EF80
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C11C, 0, 7, 15, 1 @ 0x0861EF80
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861EF8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861EF98
-	voice_programmable_wave_alt 0x0863C0FC, 0, 0, 15, 0 @ 0x0861EFA4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 0, 15, 0 @ 0x0861EFA4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861EFB0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861EFBC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861EFC8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861EFD4
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 1 @ 0x0861EFE0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 1 @ 0x0861EFE0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861EFEC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861EFF8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F004
@@ -11592,7 +11592,7 @@ VoiceGroup_JP_0861EB90: @ 0x0861EB90
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0861F178
 	voice_noise_alt 0, 0, 1, 0, 0 @ 0x0861F184
 VoiceGroup_JP_0861F190: @ 0x0861F190
-	voice_keysplit_all 0x085FE178 @ 0x0861F190
+	voice_keysplit_all VoiceGroup_JP_085FE178 @ 0x0861F190
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F19C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F1A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F1B4
@@ -11674,10 +11674,10 @@ VoiceGroup_JP_0861F190: @ 0x0861F190
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F544
 	voice_square_1_alt 0, 0, 0, 0, 13, 1 @ 0x0861F550
 	voice_square_2_alt 0, 0, 0, 12, 1 @ 0x0861F55C
-	voice_programmable_wave_alt 0x0863C1DC, 0, 7, 15, 0 @ 0x0861F568
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1DC, 0, 7, 15, 0 @ 0x0861F568
 VoiceGroup_JP_0861F574: @ 0x0861F574
-	voice_keysplit_all 0x085FDC68 @ 0x0861F574
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x0861F580
+	voice_keysplit_all VoiceGroup_JP_085FDC68 @ 0x0861F574
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x0861F580
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F58C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F598
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F5A4
@@ -11724,7 +11724,7 @@ VoiceGroup_JP_0861F574: @ 0x0861F574
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F790
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x0861F79C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 0, 180, 239 @ 0x0861F7A8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0861F7B4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0861F7B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F7C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F7CC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F7D8
@@ -11732,11 +11732,11 @@ VoiceGroup_JP_0861F574: @ 0x0861F574
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F7F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F7FC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F808
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x0861F814
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x0861F814
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F820
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F82C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F838
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0861F844
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0861F844
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F850
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F85C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F868
@@ -11759,8 +11759,8 @@ VoiceGroup_JP_0861F574: @ 0x0861F574
 	voice_square_1_alt 0, 1, 1, 1, 6, 0 @ 0x0861F934
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F940
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F94C
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 1 @ 0x0861F958
-	voice_programmable_wave_alt 0x0863C0FC, 0, 7, 15, 1 @ 0x0861F964
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 1 @ 0x0861F958
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0FC, 0, 7, 15, 1 @ 0x0861F964
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F970
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F97C
 	voice_square_2_alt 3, 0, 0, 10, 1 @ 0x0861F988
@@ -11768,7 +11768,7 @@ VoiceGroup_JP_0861F574: @ 0x0861F574
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F9A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F9AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F9B8
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 1 @ 0x0861F9C4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 1 @ 0x0861F9C4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F9D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F9DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861F9E8
@@ -11805,7 +11805,7 @@ VoiceGroup_JP_0861F574: @ 0x0861F574
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861FB5C
 	voice_noise_alt 0, 0, 2, 6, 1 @ 0x0861FB68
 VoiceGroup_JP_0861FB74: @ 0x0861FB74
-	voice_keysplit_all 0x085FDC68 @ 0x0861FB74
+	voice_keysplit_all VoiceGroup_JP_085FDC68 @ 0x0861FB74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861FB80
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861FB8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861FB98
@@ -11888,8 +11888,8 @@ VoiceGroup_JP_0861FB74: @ 0x0861FB74
 	voice_square_1_alt 0, 1, 0, 1, 7, 1 @ 0x0861FF34
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861FF40
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861FF4C
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 1 @ 0x0861FF58
-	voice_programmable_wave_alt 0x0863C1CC, 0, 7, 15, 1 @ 0x0861FF64
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 1 @ 0x0861FF58
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1CC, 0, 7, 15, 1 @ 0x0861FF64
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861FF70
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861FF7C
 	voice_square_2_alt 3, 0, 1, 7, 1 @ 0x0861FF88
@@ -11897,7 +11897,7 @@ VoiceGroup_JP_0861FB74: @ 0x0861FB74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861FFA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861FFAC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861FFB8
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 1 @ 0x0861FFC4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 1 @ 0x0861FFC4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861FFD0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861FFDC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0861FFE8
@@ -11934,11 +11934,11 @@ VoiceGroup_JP_0861FB74: @ 0x0861FB74
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x0862015C
 	voice_noise_alt 0, 0, 2, 6, 1 @ 0x08620168
 VoiceGroup_JP_08620174: @ 0x08620174
-	voice_keysplit_all 0x085FDEF0 @ 0x08620174
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08620180
+	voice_keysplit_all VoiceGroup_JP_085FDEF0 @ 0x08620174
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08620180
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862018C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620198
-	voice_programmable_wave_alt 0x0863C22C, 0, 7, 15, 1 @ 0x086201A4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C22C, 0, 7, 15, 1 @ 0x086201A4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086201B0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086201BC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086201C8
@@ -11982,7 +11982,7 @@ VoiceGroup_JP_08620174: @ 0x08620174
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620390
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x0862039C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086203A8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086203B4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086203B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086203C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086203CC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086203D8
@@ -11994,7 +11994,7 @@ VoiceGroup_JP_08620174: @ 0x08620174
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620420
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862042C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620438
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08620444
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08620444
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620450
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862045C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620468
@@ -12063,17 +12063,17 @@ VoiceGroup_JP_08620174: @ 0x08620174
 	voice_noise_alt 0, 0, 7, 10, 1 @ 0x0862075C
 	voice_noise_alt 0, 0, 2, 6, 1 @ 0x08620768
 VoiceGroup_JP_08620774: @ 0x08620774
-	voice_keysplit_all 0x085FDC68 @ 0x08620774
-	voice_programmable_wave_alt 0x0863C24C, 0, 7, 15, 1 @ 0x08620780
-	voice_programmable_wave_alt 0x0863C26C, 0, 7, 15, 1 @ 0x0862078C
-	voice_programmable_wave_alt 0x0863C25C, 0, 7, 15, 1 @ 0x08620798
-	voice_programmable_wave_alt 0x0863C22C, 0, 7, 15, 1 @ 0x086207A4
-	voice_programmable_wave_alt 0x0863C23C, 0, 7, 15, 1 @ 0x086207B0
-	voice_programmable_wave_alt 0x0863C16C, 0, 7, 15, 1 @ 0x086207BC
-	voice_programmable_wave_alt 0x0863C17C, 0, 7, 15, 1 @ 0x086207C8
-	voice_programmable_wave_alt 0x0863C18C, 0, 7, 15, 1 @ 0x086207D4
-	voice_programmable_wave_alt 0x0863C19C, 0, 7, 15, 1 @ 0x086207E0
-	voice_programmable_wave_alt 0x0863C1AC, 0, 7, 15, 1 @ 0x086207EC
+	voice_keysplit_all VoiceGroup_JP_085FDC68 @ 0x08620774
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C24C, 0, 7, 15, 1 @ 0x08620780
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C26C, 0, 7, 15, 1 @ 0x0862078C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C25C, 0, 7, 15, 1 @ 0x08620798
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C22C, 0, 7, 15, 1 @ 0x086207A4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C23C, 0, 7, 15, 1 @ 0x086207B0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C16C, 0, 7, 15, 1 @ 0x086207BC
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C17C, 0, 7, 15, 1 @ 0x086207C8
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C18C, 0, 7, 15, 1 @ 0x086207D4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C19C, 0, 7, 15, 1 @ 0x086207E0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1AC, 0, 7, 15, 1 @ 0x086207EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086207F8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_087_JP_086C59C8, 255, 235, 0, 204 @ 0x08620804
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620810
@@ -12102,7 +12102,7 @@ VoiceGroup_JP_08620774: @ 0x08620774
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_003_JP_0863EE90, 255, 235, 128, 99 @ 0x08620924
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620930
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_004_JP_0863FDC8, 255, 252, 0, 115 @ 0x0862093C
-	voice_programmable_wave_alt 0x0863C1DC, 0, 7, 15, 1 @ 0x08620948
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1DC, 0, 7, 15, 1 @ 0x08620948
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620954
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620960
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862096C
@@ -12119,11 +12119,11 @@ VoiceGroup_JP_08620774: @ 0x08620774
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086209F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086209FC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620A08
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08620A14
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08620A14
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620A20
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620A2C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620A38
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08620A44
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08620A44
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620A50
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620A5C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620A68
@@ -12150,7 +12150,7 @@ VoiceGroup_JP_08620774: @ 0x08620774
 	voice_square_2_alt 3, 0, 7, 7, 0 @ 0x08620B64
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620B70
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620B7C
-	voice_programmable_wave_alt 0x0863C1CC, 0, 7, 15, 1 @ 0x08620B88
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1CC, 0, 7, 15, 1 @ 0x08620B88
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620B94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620BA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620BAC
@@ -12192,7 +12192,7 @@ VoiceGroup_JP_08620774: @ 0x08620774
 	voice_noise_alt 0, 0, 1, 7, 1 @ 0x08620D5C
 	voice_noise_alt 0, 0, 2, 6, 1 @ 0x08620D68
 VoiceGroup_JP_08620D74: @ 0x08620D74
-	voice_keysplit_all 0x085FDB0C @ 0x08620D74
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08620D74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620D80
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620D8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620D98
@@ -12240,7 +12240,7 @@ VoiceGroup_JP_08620D74: @ 0x08620D74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620F90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620F9C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x08620FA8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08620FB4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08620FB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620FC0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620FCC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620FD8
@@ -12248,11 +12248,11 @@ VoiceGroup_JP_08620D74: @ 0x08620D74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620FF0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08620FFC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621008
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08621014
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08621014
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621020
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862102C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621038
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08621044
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08621044
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621050
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862105C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621068
@@ -12321,8 +12321,8 @@ VoiceGroup_JP_08620D74: @ 0x08620D74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862135C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_024_JP_08652DDC, 255, 246, 0, 216 @ 0x08621368
 VoiceGroup_JP_08621374: @ 0x08621374
-	voice_keysplit_all 0x085FDC68 @ 0x08621374
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08621380
+	voice_keysplit_all VoiceGroup_JP_085FDC68 @ 0x08621374
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08621380
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862138C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621398
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_065_JP_086A42F0, 128, 249, 0, 188 @ 0x086213A4
@@ -12369,7 +12369,7 @@ VoiceGroup_JP_08621374: @ 0x08621374
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 216, 0, 165 @ 0x08621590
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 242, 51, 242 @ 0x0862159C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x086215A8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086215B4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086215B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086215C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086215CC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086215D8
@@ -12377,11 +12377,11 @@ VoiceGroup_JP_08621374: @ 0x08621374
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086215F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086215FC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621608
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08621614
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08621614
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621620
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862162C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621638
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08621644
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08621644
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621650
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_059_JP_08695588, 255, 165, 180, 165 @ 0x0862165C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621668
@@ -12408,9 +12408,9 @@ VoiceGroup_JP_08621374: @ 0x08621374
 	voice_square_2_alt 0, 0, 2, 6, 5 @ 0x08621764
 	voice_square_1_alt 0, 0, 0, 1, 6, 0 @ 0x08621770
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862177C
-	voice_programmable_wave_alt 0x0863C22C, 0, 7, 15, 1 @ 0x08621788
-	voice_programmable_wave_alt 0x0863C0EC, 0, 7, 15, 0 @ 0x08621794
-	voice_programmable_wave_alt 0x0863C1CC, 0, 1, 9, 2 @ 0x086217A0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C22C, 0, 7, 15, 1 @ 0x08621788
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C0EC, 0, 7, 15, 0 @ 0x08621794
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C1CC, 0, 1, 9, 2 @ 0x086217A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086217AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086217B8
 	voice_square_2_alt 2, 0, 2, 6, 3 @ 0x086217C4
@@ -12450,8 +12450,8 @@ VoiceGroup_JP_08621374: @ 0x08621374
 	voice_noise_alt 0, 0, 2, 6, 2 @ 0x0862195C
 	voice_noise_alt 0, 0, 1, 6, 0 @ 0x08621968
 VoiceGroup_JP_08621974: @ 0x08621974
-	voice_keysplit_all 0x085FDC68 @ 0x08621974
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08621980
+	voice_keysplit_all VoiceGroup_JP_085FDC68 @ 0x08621974
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08621980
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862198C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621998
 	voice_square_2_alt 3, 0, 2, 6, 5 @ 0x086219A4
@@ -12498,7 +12498,7 @@ VoiceGroup_JP_08621974: @ 0x08621974
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621B90
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621B9C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621BA8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08621BB4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08621BB4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621BC0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621BCC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621BD8
@@ -12506,11 +12506,11 @@ VoiceGroup_JP_08621974: @ 0x08621974
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621BF0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621BFC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621C08
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08621C14
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08621C14
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621C20
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621C2C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621C38
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08621C44
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08621C44
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621C50
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_059_JP_08695588, 255, 0, 255, 127 @ 0x08621C5C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621C68
@@ -12532,12 +12532,12 @@ VoiceGroup_JP_08621974: @ 0x08621974
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621D28
 	voice_square_1_alt 0, 1, 0, 2, 7, 2 @ 0x08621D34
 	voice_square_2_alt 3, 0, 3, 3, 0 @ 0x08621D40
-	voice_programmable_wave_alt 0x0863C22C, 0, 3, 6, 5 @ 0x08621D4C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C22C, 0, 3, 6, 5 @ 0x08621D4C
 	voice_square_1_alt 0, 0, 0, 2, 7, 2 @ 0x08621D58
-	voice_programmable_wave_alt 0x0863C22C, 0, 7, 15, 0 @ 0x08621D64
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C22C, 0, 7, 15, 0 @ 0x08621D64
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621D70
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621D7C
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 0 @ 0x08621D88
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 0 @ 0x08621D88
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621D94
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621DA0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621DAC
@@ -12579,7 +12579,7 @@ VoiceGroup_JP_08621974: @ 0x08621974
 	voice_noise_alt 0, 0, 2, 6, 0 @ 0x08621F5C
 	voice_noise_alt 0, 0, 1, 6, 1 @ 0x08621F68
 VoiceGroup_JP_08621F74: @ 0x08621F74
-	voice_keysplit_all 0x085FDB0C @ 0x08621F74
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08621F74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621F80
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621F8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08621F98
@@ -12627,7 +12627,7 @@ VoiceGroup_JP_08621F74: @ 0x08621F74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622190
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 246, 0, 235 @ 0x0862219C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x086221A8
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086221B4
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086221B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086221C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086221CC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086221D8
@@ -12635,11 +12635,11 @@ VoiceGroup_JP_08621F74: @ 0x08621F74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086221F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086221FC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622208
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08622214
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08622214
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622220
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x0862222C
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x0862222C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622238
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08622244
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08622244
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622250
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862225C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622268
@@ -12660,9 +12660,9 @@ VoiceGroup_JP_08621F74: @ 0x08621F74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862231C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622328
 	voice_square_2 3, 0, 1, 7, 1 @ 0x08622334
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 2 @ 0x08622340
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 2 @ 0x08622340
 VoiceGroup_JP_0862234C: @ 0x0862234C
-	voice_keysplit_all 0x085FDB0C @ 0x0862234C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x0862234C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622358
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622364
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622370
@@ -12710,7 +12710,7 @@ VoiceGroup_JP_0862234C: @ 0x0862234C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622568
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 246, 0, 235 @ 0x08622574
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x08622580
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x0862258C
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x0862258C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622598
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086225A4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086225B0
@@ -12720,9 +12720,9 @@ VoiceGroup_JP_0862234C: @ 0x0862234C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086225E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086225EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086225F8
-	voice_keysplit 0x085FEC28, 0x0863C038 @ 0x08622604
+	voice_keysplit VoiceGroup_JP_085FEC28, M4aKeySplitTable_JP_0863C038 @ 0x08622604
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622610
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x0862261C
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x0862261C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622628
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622634
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622640
@@ -12743,10 +12743,10 @@ VoiceGroup_JP_0862234C: @ 0x0862234C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086226F4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622700
 	voice_square_2 2, 0, 1, 7, 1 @ 0x0862270C
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 2 @ 0x08622718
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 2 @ 0x08622718
 	voice_square_1 0, 2, 0, 1, 7, 1 @ 0x08622724
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622730
-	voice_programmable_wave_alt 0x0863C13C, 0, 7, 15, 2 @ 0x0862273C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C13C, 0, 7, 15, 2 @ 0x0862273C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622748
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622754
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622760
@@ -12754,8 +12754,8 @@ VoiceGroup_JP_0862234C: @ 0x0862234C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622778
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_085_JP_086C1CB8, 255, 0, 255, 127 @ 0x08622784
 VoiceGroup_JP_08622790: @ 0x08622790
-	voice_keysplit_all 0x085FDB0C @ 0x08622790
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x0862279C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08622790
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x0862279C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086227A8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086227B4
 	voice_square_2 0, 0, 2, 4, 1 @ 0x086227C0
@@ -12802,7 +12802,7 @@ VoiceGroup_JP_08622790: @ 0x08622790
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086229AC
 	voice_directsound_no_resample 60, 0, DirectSoundWaveData_Instrument_067_JP_086A7D00, 255, 246, 0, 226 @ 0x086229B8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x086229C4
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x086229D0
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x086229D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086229DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086229E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086229F4
@@ -12810,11 +12810,11 @@ VoiceGroup_JP_08622790: @ 0x08622790
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622A0C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622A18
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622A24
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08622A30
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08622A30
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622A3C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622A48
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622A54
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08622A60
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08622A60
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622A6C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622A78
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622A84
@@ -12835,7 +12835,7 @@ VoiceGroup_JP_08622790: @ 0x08622790
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622B38
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622B44
 	voice_square_2 2, 0, 1, 7, 1 @ 0x08622B50
-	voice_programmable_wave_alt 0x0863C12C, 0, 7, 15, 2 @ 0x08622B5C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C12C, 0, 7, 15, 2 @ 0x08622B5C
 	voice_square_1 0, 2, 0, 1, 7, 1 @ 0x08622B68
 	voice_square_2 1, 0, 1, 9, 1 @ 0x08622B74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622B80
@@ -12844,10 +12844,10 @@ VoiceGroup_JP_08622790: @ 0x08622790
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622BA4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622BB0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622BBC
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 2 @ 0x08622BC8
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 2 @ 0x08622BC8
 VoiceGroup_JP_08622BD4: @ 0x08622BD4
-	voice_keysplit_all 0x085FDB0C @ 0x08622BD4
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08622BE0
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08622BD4
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08622BE0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622BEC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622BF8
 	voice_square_2 2, 0, 2, 6, 1 @ 0x08622C04
@@ -12894,7 +12894,7 @@ VoiceGroup_JP_08622BD4: @ 0x08622BD4
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 216, 0, 165 @ 0x08622DF0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622DFC
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x08622E08
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08622E14
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08622E14
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622E20
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622E2C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622E38
@@ -12902,11 +12902,11 @@ VoiceGroup_JP_08622BD4: @ 0x08622BD4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622E50
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622E5C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622E68
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08622E74
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08622E74
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622E80
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622E8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622E98
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08622EA4
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08622EA4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622EB0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622EBC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622EC8
@@ -12927,7 +12927,7 @@ VoiceGroup_JP_08622BD4: @ 0x08622BD4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622F7C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622F88
 	voice_square_2 2, 0, 1, 7, 1 @ 0x08622F94
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 2 @ 0x08622FA0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 2 @ 0x08622FA0
 	voice_square_1 0, 2, 0, 1, 7, 1 @ 0x08622FAC
 	voice_square_1 0, 2, 0, 0, 7, 1 @ 0x08622FB8
 	voice_square_2 3, 0, 1, 7, 1 @ 0x08622FC4
@@ -12936,10 +12936,10 @@ VoiceGroup_JP_08622BD4: @ 0x08622BD4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622FE8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08622FF4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623000
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 2 @ 0x0862300C
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 2 @ 0x0862300C
 VoiceGroup_JP_08623018: @ 0x08623018
-	voice_keysplit_all 0x085FDB0C @ 0x08623018
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08623024
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08623018
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08623024
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623030
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862303C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623048
@@ -12986,7 +12986,7 @@ VoiceGroup_JP_08623018: @ 0x08623018
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 216, 0, 165 @ 0x08623234
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623240
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x0862324C
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08623258
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08623258
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623264
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623270
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862327C
@@ -12994,11 +12994,11 @@ VoiceGroup_JP_08623018: @ 0x08623018
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623294
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086232A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086232AC
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x086232B8
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x086232B8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086232C4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086232D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086232DC
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x086232E8
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x086232E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086232F4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623300
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862330C
@@ -13019,13 +13019,13 @@ VoiceGroup_JP_08623018: @ 0x08623018
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086233C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086233CC
 	voice_square_2 2, 0, 1, 7, 1 @ 0x086233D8
-	voice_programmable_wave_alt 0x0863C14C, 0, 7, 15, 2 @ 0x086233E4
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C14C, 0, 7, 15, 2 @ 0x086233E4
 	voice_square_1 0, 2, 0, 1, 7, 1 @ 0x086233F0
 	voice_square_2 0, 0, 1, 7, 1 @ 0x086233FC
 	voice_square_1 0, 0, 0, 1, 7, 1 @ 0x08623408
 	voice_square_1 0, 0, 0, 0, 7, 1 @ 0x08623414
 VoiceGroup_JP_08623420: @ 0x08623420
-	voice_keysplit_all 0x085FDB0C @ 0x08623420
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08623420
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862342C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623438
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623444
@@ -13073,7 +13073,7 @@ VoiceGroup_JP_08623420: @ 0x08623420
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_072_JP_086AE614, 255, 216, 0, 165 @ 0x0862363C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623648
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x08623654
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08623660
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08623660
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862366C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623678
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623684
@@ -13085,7 +13085,7 @@ VoiceGroup_JP_08623420: @ 0x08623420
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086236CC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086236D8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086236E4
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x086236F0
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x086236F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086236FC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623708
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623714
@@ -13106,11 +13106,11 @@ VoiceGroup_JP_08623420: @ 0x08623420
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086237C8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086237D4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086237E0
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 2 @ 0x086237EC
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 2 @ 0x086237EC
 	voice_square_1 0, 3, 0, 1, 9, 1 @ 0x086237F8
 	voice_square_1 0, 3, 0, 0, 9, 1 @ 0x08623804
 VoiceGroup_JP_08623810: @ 0x08623810
-	voice_keysplit_all 0x085FDB0C @ 0x08623810
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08623810
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862381C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623828
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623834
@@ -13158,7 +13158,7 @@ VoiceGroup_JP_08623810: @ 0x08623810
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623A2C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623A38
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x08623A44
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08623A50
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08623A50
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623A5C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623A68
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623A74
@@ -13166,11 +13166,11 @@ VoiceGroup_JP_08623810: @ 0x08623810
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623A8C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623A98
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623AA4
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x08623AB0
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x08623AB0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623ABC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623AC8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623AD4
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x08623AE0
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x08623AE0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623AEC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623AF8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623B04
@@ -13239,8 +13239,8 @@ VoiceGroup_JP_08623810: @ 0x08623810
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623DF8
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_024_JP_08652DDC, 255, 246, 0, 216 @ 0x08623E04
 VoiceGroup_JP_08623E10: @ 0x08623E10
-	voice_keysplit_all 0x085FDB0C @ 0x08623E10
-	voice_keysplit 0x085FE5B0, 0x0863BF54 @ 0x08623E1C
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08623E10
+	voice_keysplit VoiceGroup_JP_085FE5B0, M4aKeySplitTable_JP_0863BF54 @ 0x08623E1C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623E28
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08623E34
 	voice_square_2 2, 0, 2, 3, 1 @ 0x08623E40
@@ -13287,7 +13287,7 @@ VoiceGroup_JP_08623E10: @ 0x08623E10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862402C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_086_JP_086C4F98, 255, 246, 0, 235 @ 0x08624038
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x08624044
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08624050
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08624050
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862405C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624068
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624074
@@ -13295,11 +13295,11 @@ VoiceGroup_JP_08623E10: @ 0x08623E10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862408C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624098
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086240A4
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x086240B0
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x086240B0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086240BC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086240C8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086240D4
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x086240E0
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x086240E0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086240EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086240F8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624104
@@ -13320,14 +13320,14 @@ VoiceGroup_JP_08623E10: @ 0x08623E10
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086241B8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086241C4
 	voice_square_2 3, 0, 1, 7, 1 @ 0x086241D0
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 2 @ 0x086241DC
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 2 @ 0x086241DC
 	voice_square_1 0, 3, 0, 1, 7, 1 @ 0x086241E8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086241F4
 	voice_square_2 2, 0, 1, 7, 1 @ 0x08624200
 	voice_square_1 0, 2, 0, 1, 7, 1 @ 0x0862420C
 	voice_square_2 3, 0, 2, 7, 1 @ 0x08624218
 VoiceGroup_JP_08624224: @ 0x08624224
-	voice_keysplit_all 0x085FDB0C @ 0x08624224
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08624224
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624230
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862423C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624248
@@ -13375,7 +13375,7 @@ VoiceGroup_JP_08624224: @ 0x08624224
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624440
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862444C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x08624458
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08624464
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08624464
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624470
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862447C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624488
@@ -13383,11 +13383,11 @@ VoiceGroup_JP_08624224: @ 0x08624224
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086244A0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086244AC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086244B8
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x086244C4
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x086244C4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086244D0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086244DC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086244E8
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x086244F4
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x086244F4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624500
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862450C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624518
@@ -13408,11 +13408,11 @@ VoiceGroup_JP_08624224: @ 0x08624224
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086245CC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086245D8
 	voice_square_2 3, 0, 1, 7, 1 @ 0x086245E4
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 2 @ 0x086245F0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 2 @ 0x086245F0
 	voice_square_1 0, 3, 0, 1, 7, 1 @ 0x086245FC
 	voice_square_1 0, 3, 0, 0, 7, 1 @ 0x08624608
 VoiceGroup_JP_08624614: @ 0x08624614
-	voice_keysplit_all 0x085FDB0C @ 0x08624614
+	voice_keysplit_all VoiceGroup_JP_085FDB0C @ 0x08624614
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624620
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862462C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624638
@@ -13460,7 +13460,7 @@ VoiceGroup_JP_08624614: @ 0x08624614
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624830
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862483C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x08624848
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08624854
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08624854
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624860
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862486C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624878
@@ -13468,11 +13468,11 @@ VoiceGroup_JP_08624614: @ 0x08624614
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624890
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x0862489C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086248A8
-	voice_keysplit 0x085FE604, 0x0863BFE4 @ 0x086248B4
+	voice_keysplit VoiceGroup_JP_085FE604, M4aKeySplitTable_JP_0863BFE4 @ 0x086248B4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086248C0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086248CC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086248D8
-	voice_keysplit 0x085FEC40, 0x0863C080 @ 0x086248E4
+	voice_keysplit VoiceGroup_JP_085FEC40, M4aKeySplitTable_JP_0863C080 @ 0x086248E4
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086248F0
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086248FC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624908
@@ -13493,7 +13493,7 @@ VoiceGroup_JP_08624614: @ 0x08624614
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086249BC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086249C8
 	voice_square_2 3, 1, 1, 6, 1 @ 0x086249D4
-	voice_programmable_wave_alt 0x0863C10C, 0, 7, 15, 2 @ 0x086249E0
+	voice_programmable_wave_alt M4aProgrammableWave_JP_0863C10C, 0, 7, 15, 2 @ 0x086249E0
 	voice_square_1 0, 3, 1, 1, 6, 1 @ 0x086249EC
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x086249F8
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624A04
@@ -13589,7 +13589,7 @@ VoiceGroup_JP_08624C14: @ 0x08624C14
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624E30
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624E3C
 	voice_directsound 60, 0, DirectSoundWaveData_Instrument_005_JP_08640A3C, 255, 246, 0, 226 @ 0x08624E48
-	voice_keysplit 0x085FE5E0, 0x0863BF9C @ 0x08624E54
+	voice_keysplit VoiceGroup_JP_085FE5E0, M4aKeySplitTable_JP_0863BF9C @ 0x08624E54
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624E60
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624E6C
 	voice_square_1 0, 2, 0, 0, 15, 0 @ 0x08624E78

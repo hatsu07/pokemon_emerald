@@ -92,7 +92,7 @@ SongTrack_MUS_CABLE_CAR_09: @ 0x088A1999
 	.globl SongHeader_MUS_CABLE_CAR
 SongHeader_MUS_CABLE_CAR: @ 0x088A19E8
 	@ M4A song header: song 425 (MUS_CABLE_CAR)
-	m4a_song_header 9, 0, 0, 0xB2, 0x08611B94
+	m4a_song_header 9, 0, 0, 0xB2, VoiceGroup_JP_08611B94
 	.4byte SongTrack_MUS_CABLE_CAR_01
 	.4byte SongTrack_MUS_CABLE_CAR_02
 	.4byte SongTrack_MUS_CABLE_CAR_03
@@ -4082,7 +4082,7 @@ SongTrack_MUS_GAME_CORNER_10: @ 0x088A2F81
 	.globl SongHeader_MUS_GAME_CORNER
 SongHeader_MUS_GAME_CORNER: @ 0x088A310C
 	@ M4A song header: song 426 (MUS_GAME_CORNER)
-	m4a_song_header 10, 0, 0, 0xB2, 0x08612194
+	m4a_song_header 10, 0, 0, 0xB2, VoiceGroup_JP_08612194
 	.4byte SongTrack_MUS_GAME_CORNER_01
 	.4byte SongTrack_MUS_GAME_CORNER_02
 	.4byte SongTrack_MUS_GAME_CORNER_03
@@ -6667,7 +6667,7 @@ SongTrack_MUS_DEWFORD_10: @ 0x088A3E17
 	.globl SongHeader_MUS_DEWFORD
 SongHeader_MUS_DEWFORD: @ 0x088A3F58
 	@ M4A song header: song 427 (MUS_DEWFORD)
-	m4a_song_header 10, 0, 0, 0xB2, 0x08612794
+	m4a_song_header 10, 0, 0, 0xB2, VoiceGroup_JP_08612794
 	.4byte SongTrack_MUS_DEWFORD_01
 	.4byte SongTrack_MUS_DEWFORD_02
 	.4byte SongTrack_MUS_DEWFORD_03
@@ -7809,7 +7809,7 @@ SongTrack_MUS_SAFARI_ZONE_09: @ 0x088A464A
 	.globl SongHeader_MUS_SAFARI_ZONE
 SongHeader_MUS_SAFARI_ZONE: @ 0x088A46E8
 	@ M4A song header: song 428 (MUS_SAFARI_ZONE)
-	m4a_song_header 9, 0, 0, 0xB2, 0x08612D94
+	m4a_song_header 9, 0, 0, 0xB2, VoiceGroup_JP_08612D94
 	.4byte SongTrack_MUS_SAFARI_ZONE_01
 	.4byte SongTrack_MUS_SAFARI_ZONE_02
 	.4byte SongTrack_MUS_SAFARI_ZONE_03
@@ -11747,7 +11747,7 @@ SongTrack_MUS_VICTORY_ROAD_10: @ 0x088A59FB
 	.globl SongHeader_MUS_VICTORY_ROAD
 SongHeader_MUS_VICTORY_ROAD: @ 0x088A5A84
 	@ M4A song header: song 429 (MUS_VICTORY_ROAD)
-	m4a_song_header 10, 0, 0, 0xB2, 0x08613394
+	m4a_song_header 10, 0, 0, 0xB2, VoiceGroup_JP_08613394
 	.4byte SongTrack_MUS_VICTORY_ROAD_01
 	.4byte SongTrack_MUS_VICTORY_ROAD_02
 	.4byte SongTrack_MUS_VICTORY_ROAD_03
@@ -13197,7 +13197,7 @@ SongTrack_MUS_AQUA_MAGMA_HIDEOUT_09: @ 0x088A6211
 	.globl SongHeader_MUS_AQUA_MAGMA_HIDEOUT
 SongHeader_MUS_AQUA_MAGMA_HIDEOUT: @ 0x088A6394
 	@ M4A song header: song 430 (MUS_AQUA_MAGMA_HIDEOUT)
-	m4a_song_header 9, 0, 0, 0xB2, 0x08613994
+	m4a_song_header 9, 0, 0, 0xB2, VoiceGroup_JP_08613994
 	.4byte SongTrack_MUS_AQUA_MAGMA_HIDEOUT_01
 	.4byte SongTrack_MUS_AQUA_MAGMA_HIDEOUT_02
 	.4byte SongTrack_MUS_AQUA_MAGMA_HIDEOUT_03
@@ -15684,7 +15684,7 @@ SongTrack_MUS_SAILING_09: @ 0x088A70AE
 	.globl SongHeader_MUS_SAILING
 SongHeader_MUS_SAILING: @ 0x088A719C
 	@ M4A song header: song 431 (MUS_SAILING)
-	m4a_song_header 9, 0, 0, 0xB2, 0x08613F94
+	m4a_song_header 9, 0, 0, 0xB2, VoiceGroup_JP_08613F94
 	.4byte SongTrack_MUS_SAILING_01
 	.4byte SongTrack_MUS_SAILING_02
 	.4byte SongTrack_MUS_SAILING_03
@@ -18069,7 +18069,7 @@ SongTrack_MUS_MT_PYRE_10: @ 0x088A7C34
 	.globl SongHeader_MUS_MT_PYRE
 SongHeader_MUS_MT_PYRE: @ 0x088A7E4C
 	@ M4A song header: song 432 (MUS_MT_PYRE)
-	m4a_song_header 10, 0, 0, 0xB2, 0x08614594
+	m4a_song_header 10, 0, 0, 0xB2, VoiceGroup_JP_08614594
 	.4byte SongTrack_MUS_MT_PYRE_01
 	.4byte SongTrack_MUS_MT_PYRE_02
 	.4byte SongTrack_MUS_MT_PYRE_03
@@ -23301,7 +23301,7 @@ SongTrack_MUS_SLATEPORT_10: @ 0x088A9A8E
 	.globl SongHeader_MUS_SLATEPORT
 SongHeader_MUS_SLATEPORT: @ 0x088A9C88
 	@ M4A song header: song 433 (MUS_SLATEPORT)
-	m4a_song_header 10, 0, 0, 0xB2, 0x08614B94
+	m4a_song_header 10, 0, 0, 0xB2, VoiceGroup_JP_08614B94
 	.4byte SongTrack_MUS_SLATEPORT_01
 	.4byte SongTrack_MUS_SLATEPORT_02
 	.4byte SongTrack_MUS_SLATEPORT_03
@@ -29141,7 +29141,7 @@ SongTrack_MUS_MT_PYRE_EXTERIOR_10: @ 0x088ABD5D
 	.globl SongHeader_MUS_MT_PYRE_EXTERIOR
 SongHeader_MUS_MT_PYRE_EXTERIOR: @ 0x088ABEDC
 	@ M4A song header: song 434 (MUS_MT_PYRE_EXTERIOR)
-	m4a_song_header 10, 0, 0, 0xB2, 0x08615194
+	m4a_song_header 10, 0, 0, 0xB2, VoiceGroup_JP_08615194
 	.4byte SongTrack_MUS_MT_PYRE_EXTERIOR_01
 	.4byte SongTrack_MUS_MT_PYRE_EXTERIOR_02
 	.4byte SongTrack_MUS_MT_PYRE_EXTERIOR_03
@@ -29798,7 +29798,7 @@ SongTrack_MUS_SCHOOL_04: @ 0x088AC199
 	.globl SongHeader_MUS_SCHOOL
 SongHeader_MUS_SCHOOL: @ 0x088AC23C
 	@ M4A song header: song 435 (MUS_SCHOOL)
-	m4a_song_header 4, 0, 0, 0xB2, 0x08615794
+	m4a_song_header 4, 0, 0, 0xB2, VoiceGroup_JP_08615794
 	.4byte SongTrack_MUS_SCHOOL_01
 	.4byte SongTrack_MUS_SCHOOL_02
 	.4byte SongTrack_MUS_SCHOOL_03
@@ -32013,7 +32013,7 @@ SongTrack_MUS_HALL_OF_FAME_10: @ 0x088ACCD8
 	.globl SongHeader_MUS_HALL_OF_FAME
 SongHeader_MUS_HALL_OF_FAME: @ 0x088ACDD4
 	@ M4A song header: song 436 (MUS_HALL_OF_FAME)
-	m4a_song_header 10, 0, 0, 0xB2, 0x086157AC
+	m4a_song_header 10, 0, 0, 0xB2, VoiceGroup_JP_086157AC
 	.4byte SongTrack_MUS_HALL_OF_FAME_01
 	.4byte SongTrack_MUS_HALL_OF_FAME_02
 	.4byte SongTrack_MUS_HALL_OF_FAME_03
@@ -34794,7 +34794,7 @@ SongTrack_MUS_FALLARBOR_09: @ 0x088ADB06
 	.globl SongHeader_MUS_FALLARBOR
 SongHeader_MUS_FALLARBOR: @ 0x088ADC90
 	@ M4A song header: song 437 (MUS_FALLARBOR)
-	m4a_song_header 9, 0, 0, 0xB2, 0x08615DAC
+	m4a_song_header 9, 0, 0, 0xB2, VoiceGroup_JP_08615DAC
 	.4byte SongTrack_MUS_FALLARBOR_01
 	.4byte SongTrack_MUS_FALLARBOR_02
 	.4byte SongTrack_MUS_FALLARBOR_03
@@ -36081,7 +36081,7 @@ SongTrack_MUS_SEALED_CHAMBER_08: @ 0x088AE353
 	.globl SongHeader_MUS_SEALED_CHAMBER
 SongHeader_MUS_SEALED_CHAMBER: @ 0x088AE4A4
 	@ M4A song header: song 438 (MUS_SEALED_CHAMBER)
-	m4a_song_header 8, 0, 0, 0xB2, 0x0861619C
+	m4a_song_header 8, 0, 0, 0xB2, VoiceGroup_JP_0861619C
 	.4byte SongTrack_MUS_SEALED_CHAMBER_01
 	.4byte SongTrack_MUS_SEALED_CHAMBER_02
 	.4byte SongTrack_MUS_SEALED_CHAMBER_03
@@ -37252,7 +37252,7 @@ SongTrack_MUS_CONTEST_WINNER_08: @ 0x088AE9EB
 	.globl SongHeader_MUS_CONTEST_WINNER
 SongHeader_MUS_CONTEST_WINNER: @ 0x088AEAB0
 	@ M4A song header: song 439 (MUS_CONTEST_WINNER)
-	m4a_song_header 8, 0, 0, 0xB2, 0x0861679C
+	m4a_song_header 8, 0, 0, 0xB2, VoiceGroup_JP_0861679C
 	.4byte SongTrack_MUS_CONTEST_WINNER_01
 	.4byte SongTrack_MUS_CONTEST_WINNER_02
 	.4byte SongTrack_MUS_CONTEST_WINNER_03
@@ -40252,7 +40252,7 @@ SongTrack_MUS_CONTEST_08: @ 0x088AF82D
 	.globl SongHeader_MUS_CONTEST
 SongHeader_MUS_CONTEST: @ 0x088AF974
 	@ M4A song header: song 440 (MUS_CONTEST)
-	m4a_song_header 8, 0, 0, 0xB2, 0x08616D9C
+	m4a_song_header 8, 0, 0, 0xB2, VoiceGroup_JP_08616D9C
 	.4byte SongTrack_MUS_CONTEST_01
 	.4byte SongTrack_MUS_CONTEST_02
 	.4byte SongTrack_MUS_CONTEST_03
@@ -42369,7 +42369,7 @@ SongTrack_MUS_ENCOUNTER_MAGMA_10: @ 0x088B0429
 	.globl SongHeader_MUS_ENCOUNTER_MAGMA
 SongHeader_MUS_ENCOUNTER_MAGMA: @ 0x088B04D4
 	@ M4A song header: song 441 (MUS_ENCOUNTER_MAGMA)
-	m4a_song_header 10, 0, 0, 0xB2, 0x0861739C
+	m4a_song_header 10, 0, 0, 0xB2, VoiceGroup_JP_0861739C
 	.4byte SongTrack_MUS_ENCOUNTER_MAGMA_01
 	.4byte SongTrack_MUS_ENCOUNTER_MAGMA_02
 	.4byte SongTrack_MUS_ENCOUNTER_MAGMA_03

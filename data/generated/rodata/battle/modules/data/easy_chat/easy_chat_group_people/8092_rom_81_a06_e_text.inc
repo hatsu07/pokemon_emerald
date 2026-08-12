@@ -378,7 +378,7 @@ DirectSoundWaveData_Instrument_104_JP_088662E0: @ 0x088662E0
 	.globl SongHeader_MUS_DUMMY
 SongHeader_MUS_DUMMY: @ 0x088683E0
 	@ M4A song header: song 0 (MUS_DUMMY)
-	m4a_song_header 0, 0, 0, 0xA8, 0x085FD824
+	m4a_song_header 0, 0, 0, 0xA8, VoiceGroup_JP_085FD824
 
 	.globl SongTrack_SE_USE_ITEM_01
 SongTrack_SE_USE_ITEM_01: @ 0x088683E8
@@ -401,7 +401,7 @@ SongTrack_SE_USE_ITEM_01: @ 0x088683E8
 	.globl SongHeader_SE_USE_ITEM
 SongHeader_SE_USE_ITEM: @ 0x08868400
 	@ M4A song header: song 1 (SE_USE_ITEM)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_USE_ITEM_01
 
 	.globl SongTrack_SE_PC_LOGIN_01
@@ -427,7 +427,7 @@ SongTrack_SE_PC_LOGIN_01: @ 0x0886840C
 	.globl SongHeader_SE_PC_LOGIN
 SongHeader_SE_PC_LOGIN: @ 0x0886842C
 	@ M4A song header: song 2 (SE_PC_LOGIN)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_PC_LOGIN_01
 
 	.globl SongTrack_SE_PC_OFF_01
@@ -453,7 +453,7 @@ SongTrack_SE_PC_OFF_01: @ 0x08868438
 	.globl SongHeader_SE_PC_OFF
 SongHeader_SE_PC_OFF: @ 0x08868450
 	@ M4A song header: song 3 (SE_PC_OFF)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_PC_OFF_01
 
 	.globl SongTrack_SE_PC_ON_01
@@ -505,7 +505,7 @@ SongTrack_SE_PC_ON_01: @ 0x0886845C
 	.globl SongHeader_SE_PC_ON
 SongHeader_SE_PC_ON: @ 0x08868494
 	@ M4A song header: song 4 (SE_PC_ON)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_PC_ON_01
 
 	.globl SongTrack_SE_SELECT_01
@@ -533,7 +533,7 @@ SongTrack_SE_SELECT_01: @ 0x088684A0
 	.globl SongHeader_SE_SELECT
 SongHeader_SE_SELECT: @ 0x088684C0
 	@ M4A song header: song 5 (SE_SELECT)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_SELECT_01
 
 	.globl SongTrack_SE_WIN_OPEN_01
@@ -552,7 +552,7 @@ SongTrack_SE_WIN_OPEN_01: @ 0x088684CC
 	.globl SongHeader_SE_WIN_OPEN
 SongHeader_SE_WIN_OPEN: @ 0x088684DC
 	@ M4A song header: song 6 (SE_WIN_OPEN)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_WIN_OPEN_01
 
 	.globl SongTrack_SE_WALL_HIT_01
@@ -571,7 +571,7 @@ SongTrack_SE_WALL_HIT_01: @ 0x088684E8
 	.globl SongHeader_SE_WALL_HIT
 SongHeader_SE_WALL_HIT: @ 0x088684F8
 	@ M4A song header: song 7 (SE_WALL_HIT)
-	m4a_song_header 1, 0, 2, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 2, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_WALL_HIT_01
 
 	.globl SongTrack_SE_DOOR_01
@@ -590,7 +590,7 @@ SongTrack_SE_DOOR_01: @ 0x08868504
 	.globl SongHeader_SE_DOOR
 SongHeader_SE_DOOR: @ 0x08868514
 	@ M4A song header: song 8 (SE_DOOR)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_DOOR_01
 
 	.globl SongTrack_SE_EXIT_01
@@ -628,7 +628,7 @@ SongTrack_SE_EXIT_01: @ 0x08868520
 	.globl SongHeader_SE_EXIT
 SongHeader_SE_EXIT: @ 0x08868548
 	@ M4A song header: song 9 (SE_EXIT)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_EXIT_01
 
 	.globl SongTrack_SE_LEDGE_01
@@ -652,7 +652,7 @@ SongTrack_SE_LEDGE_01: @ 0x08868554
 	.globl SongHeader_SE_LEDGE
 SongHeader_SE_LEDGE: @ 0x0886856C
 	@ M4A song header: song 10 (SE_LEDGE)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_LEDGE_01
 
 	.globl SongTrack_SE_BIKE_BELL_01
@@ -670,7 +670,7 @@ SongTrack_SE_BIKE_BELL_01: @ 0x08868578
 	.globl SongHeader_SE_BIKE_BELL
 SongHeader_SE_BIKE_BELL: @ 0x08868588
 	@ M4A song header: song 11 (SE_BIKE_BELL)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_BIKE_BELL_01
 
 	.globl SongTrack_SE_NOT_EFFECTIVE_01
@@ -703,7 +703,7 @@ SongTrack_SE_NOT_EFFECTIVE_02: @ 0x088685A5
 	.globl SongHeader_SE_NOT_EFFECTIVE
 SongHeader_SE_NOT_EFFECTIVE: @ 0x088685B4
 	@ M4A song header: song 12 (SE_NOT_EFFECTIVE)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_NOT_EFFECTIVE_01
 	.4byte SongTrack_SE_NOT_EFFECTIVE_02
 
@@ -763,7 +763,7 @@ SongTrack_SE_EFFECTIVE_02: @ 0x088685E6
 	.globl SongHeader_SE_EFFECTIVE
 SongHeader_SE_EFFECTIVE: @ 0x08868600
 	@ M4A song header: song 13 (SE_EFFECTIVE)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_EFFECTIVE_01
 	.4byte SongTrack_SE_EFFECTIVE_02
 
@@ -846,7 +846,7 @@ SongTrack_SE_SUPER_EFFECTIVE_02: @ 0x08868646
 	.globl SongHeader_SE_SUPER_EFFECTIVE
 SongHeader_SE_SUPER_EFFECTIVE: @ 0x0886867C
 	@ M4A song header: song 14 (SE_SUPER_EFFECTIVE)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_SUPER_EFFECTIVE_01
 	.4byte SongTrack_SE_SUPER_EFFECTIVE_02
 
@@ -906,7 +906,7 @@ SongTrack_SE_BALL_OPEN_03: @ 0x088686BB
 	.globl SongHeader_SE_BALL_OPEN
 SongHeader_SE_BALL_OPEN: @ 0x088686D0
 	@ M4A song header: song 15 (SE_BALL_OPEN)
-	m4a_song_header 3, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 3, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_BALL_OPEN_01
 	.4byte SongTrack_SE_BALL_OPEN_02
 	.4byte SongTrack_SE_BALL_OPEN_03
@@ -967,7 +967,7 @@ SongTrack_SE_FAINT_03: @ 0x08868712
 	.globl SongHeader_SE_FAINT
 SongHeader_SE_FAINT: @ 0x08868724
 	@ M4A song header: song 16 (SE_FAINT)
-	m4a_song_header 3, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 3, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_FAINT_01
 	.4byte SongTrack_SE_FAINT_02
 	.4byte SongTrack_SE_FAINT_03
@@ -1011,7 +1011,7 @@ SongTrack_SE_FLEE_01: @ 0x08868738
 	.globl SongHeader_SE_FLEE
 SongHeader_SE_FLEE: @ 0x08868774
 	@ M4A song header: song 17 (SE_FLEE)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_FLEE_01
 
 	.globl SongTrack_SE_SLIDING_DOOR_01
@@ -1030,7 +1030,7 @@ SongTrack_SE_SLIDING_DOOR_01: @ 0x08868780
 	.globl SongHeader_SE_SLIDING_DOOR
 SongHeader_SE_SLIDING_DOOR: @ 0x08868790
 	@ M4A song header: song 18 (SE_SLIDING_DOOR)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_SLIDING_DOOR_01
 
 	.globl SongTrack_SE_SHIP_01
@@ -1104,7 +1104,7 @@ SongTrack_SE_SHIP_01: @ 0x0886879C
 	.globl SongHeader_SE_SHIP
 SongHeader_SE_SHIP: @ 0x088687E4
 	@ M4A song header: song 19 (SE_SHIP)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_SHIP_01
 
 	.globl SongTrack_SE_BANG_01
@@ -1154,7 +1154,7 @@ SongTrack_SE_BANG_01: @ 0x088687F0
 	.globl SongHeader_SE_BANG
 SongHeader_SE_BANG: @ 0x0886882C
 	@ M4A song header: song 20 (SE_BANG)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_BANG_01
 
 	.globl SongTrack_SE_PIN_01
@@ -1182,7 +1182,7 @@ SongTrack_SE_PIN_01: @ 0x08868838
 	.globl SongHeader_SE_PIN
 SongHeader_SE_PIN: @ 0x08868858
 	@ M4A song header: song 21 (SE_PIN)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_PIN_01
 
 	.globl SongTrack_SE_BOO_01
@@ -1206,7 +1206,7 @@ SongTrack_SE_BOO_01: @ 0x08868864
 	.globl SongHeader_SE_BOO
 SongHeader_SE_BOO: @ 0x0886887C
 	@ M4A song header: song 22 (SE_BOO)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_BOO_01
 
 	.globl SongTrack_SE_BALL_01
@@ -1230,7 +1230,7 @@ SongTrack_SE_BALL_01: @ 0x08868888
 	.globl SongHeader_SE_BALL
 SongHeader_SE_BALL: @ 0x088688A0
 	@ M4A song header: song 23 (SE_BALL)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_BALL_01
 
 	.globl SongTrack_SE_CONTEST_PLACE_01
@@ -1288,7 +1288,7 @@ SongTrack_SE_CONTEST_PLACE_03: @ 0x088688DE
 	.globl SongHeader_SE_CONTEST_PLACE
 SongHeader_SE_CONTEST_PLACE: @ 0x088688F0
 	@ M4A song header: song 24 (SE_CONTEST_PLACE)
-	m4a_song_header 3, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 3, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_CONTEST_PLACE_01
 	.4byte SongTrack_SE_CONTEST_PLACE_02
 	.4byte SongTrack_SE_CONTEST_PLACE_03
@@ -1312,7 +1312,7 @@ SongTrack_SE_A_01: @ 0x08868904
 	.globl SongHeader_SE_A
 SongHeader_SE_A: @ 0x08868918
 	@ M4A song header: song 25 (SE_A)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_A_01
 
 	.globl SongTrack_SE_I_01
@@ -1334,7 +1334,7 @@ SongTrack_SE_I_01: @ 0x08868924
 	.globl SongHeader_SE_I
 SongHeader_SE_I: @ 0x08868938
 	@ M4A song header: song 26 (SE_I)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_I_01
 
 	.globl SongTrack_SE_U_01
@@ -1356,7 +1356,7 @@ SongTrack_SE_U_01: @ 0x08868944
 	.globl SongHeader_SE_U
 SongHeader_SE_U: @ 0x08868958
 	@ M4A song header: song 27 (SE_U)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_U_01
 
 	.globl SongTrack_SE_E_01
@@ -1378,7 +1378,7 @@ SongTrack_SE_E_01: @ 0x08868964
 	.globl SongHeader_SE_E
 SongHeader_SE_E: @ 0x08868978
 	@ M4A song header: song 28 (SE_E)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_E_01
 
 	.globl SongTrack_SE_O_01
@@ -1400,7 +1400,7 @@ SongTrack_SE_O_01: @ 0x08868984
 	.globl SongHeader_SE_O
 SongHeader_SE_O: @ 0x08868998
 	@ M4A song header: song 29 (SE_O)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_O_01
 
 	.globl SongTrack_SE_N_01
@@ -1422,7 +1422,7 @@ SongTrack_SE_N_01: @ 0x088689A4
 	.globl SongHeader_SE_N
 SongHeader_SE_N: @ 0x088689B8
 	@ M4A song header: song 30 (SE_N)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_N_01
 
 	.globl SongTrack_SE_SUCCESS_01
@@ -1443,7 +1443,7 @@ SongTrack_SE_SUCCESS_01: @ 0x088689C4
 	.globl SongHeader_SE_SUCCESS
 SongHeader_SE_SUCCESS: @ 0x088689D8
 	@ M4A song header: song 31 (SE_SUCCESS)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_SUCCESS_01
 
 	.globl SongTrack_SE_FAILURE_01
@@ -1476,7 +1476,7 @@ SongTrack_SE_FAILURE_01: @ 0x088689E4
 	.globl SongHeader_SE_FAILURE
 SongHeader_SE_FAILURE: @ 0x08868A08
 	@ M4A song header: song 32 (SE_FAILURE)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_FAILURE_01
 
 	.globl SongTrack_SE_EXP_01
@@ -1603,7 +1603,7 @@ SongTrack_SE_EXP_01: @ 0x08868A14
 	.globl SongHeader_SE_EXP
 SongHeader_SE_EXP: @ 0x08868A9C
 	@ M4A song header: song 33 (SE_EXP)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_EXP_01
 
 	.globl SongTrack_SE_BIKE_HOP_01
@@ -1626,7 +1626,7 @@ SongTrack_SE_BIKE_HOP_01: @ 0x08868AA8
 	.globl SongHeader_SE_BIKE_HOP
 SongHeader_SE_BIKE_HOP: @ 0x08868AC0
 	@ M4A song header: song 34 (SE_BIKE_HOP)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_BIKE_HOP_01
 
 	.globl SongTrack_SE_SWITCH_01
@@ -1651,7 +1651,7 @@ SongTrack_SE_SWITCH_01: @ 0x08868ACC
 	.globl SongHeader_SE_SWITCH
 SongHeader_SE_SWITCH: @ 0x08868AE4
 	@ M4A song header: song 35 (SE_SWITCH)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_SWITCH_01
 
 	.globl SongTrack_SE_CLICK_01
@@ -1675,7 +1675,7 @@ SongTrack_SE_CLICK_01: @ 0x08868AF0
 	.globl SongHeader_SE_CLICK
 SongHeader_SE_CLICK: @ 0x08868B08
 	@ M4A song header: song 36 (SE_CLICK)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_CLICK_01
 
 	.globl SongTrack_SE_FU_ZAKU_01
@@ -1707,7 +1707,7 @@ SongTrack_SE_FU_ZAKU_01: @ 0x08868B14
 	.globl SongHeader_SE_FU_ZAKU
 SongHeader_SE_FU_ZAKU: @ 0x08868B38
 	@ M4A song header: song 37 (SE_FU_ZAKU)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_FU_ZAKU_01
 
 	.globl SongTrack_SE_CONTEST_CONDITION_LOSE_01
@@ -1733,7 +1733,7 @@ SongTrack_SE_CONTEST_CONDITION_LOSE_01: @ 0x08868B44
 	.globl SongHeader_SE_CONTEST_CONDITION_LOSE
 SongHeader_SE_CONTEST_CONDITION_LOSE: @ 0x08868B5C
 	@ M4A song header: song 38 (SE_CONTEST_CONDITION_LOSE)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_CONTEST_CONDITION_LOSE_01
 
 	.globl SongTrack_SE_LAVARIDGE_FALL_WARP_01
@@ -1784,7 +1784,7 @@ SongTrack_SE_LAVARIDGE_FALL_WARP_01: @ 0x08868B68
 	.globl SongHeader_SE_LAVARIDGE_FALL_WARP
 SongHeader_SE_LAVARIDGE_FALL_WARP: @ 0x08868BA8
 	@ M4A song header: song 39 (SE_LAVARIDGE_FALL_WARP)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_LAVARIDGE_FALL_WARP_01
 
 	.globl SongTrack_SE_ICE_STAIRS_01
@@ -1825,7 +1825,7 @@ SongTrack_SE_ICE_STAIRS_02: @ 0x08868BCD
 	.globl SongHeader_SE_ICE_STAIRS
 SongHeader_SE_ICE_STAIRS: @ 0x08868BE0
 	@ M4A song header: song 40 (SE_ICE_STAIRS)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_ICE_STAIRS_01
 	.4byte SongTrack_SE_ICE_STAIRS_02
 
@@ -1886,7 +1886,7 @@ SongTrack_SE_ICE_BREAK_02: @ 0x08868C1E
 	.globl SongHeader_SE_ICE_BREAK
 SongHeader_SE_ICE_BREAK: @ 0x08868C34
 	@ M4A song header: song 41 (SE_ICE_BREAK)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_ICE_BREAK_01
 	.4byte SongTrack_SE_ICE_BREAK_02
 
@@ -1927,7 +1927,7 @@ SongTrack_SE_ICE_CRACK_02: @ 0x08868C5B
 	.globl SongHeader_SE_ICE_CRACK
 SongHeader_SE_ICE_CRACK: @ 0x08868C70
 	@ M4A song header: song 42 (SE_ICE_CRACK)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_ICE_CRACK_01
 	.4byte SongTrack_SE_ICE_CRACK_02
 
@@ -1985,7 +1985,7 @@ SongTrack_SE_FALL_01: @ 0x08868C80
 	.globl SongHeader_SE_FALL
 SongHeader_SE_FALL: @ 0x08868CC8
 	@ M4A song header: song 43 (SE_FALL)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_FALL_01
 
 	.globl SongTrack_SE_UNLOCK_01
@@ -2038,7 +2038,7 @@ SongTrack_SE_UNLOCK_02: @ 0x08868CFA
 	.globl SongHeader_SE_UNLOCK
 SongHeader_SE_UNLOCK: @ 0x08868D0C
 	@ M4A song header: song 44 (SE_UNLOCK)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_UNLOCK_01
 	.4byte SongTrack_SE_UNLOCK_02
 
@@ -2073,7 +2073,7 @@ SongTrack_SE_WARP_IN_01: @ 0x08868D1C
 	.globl SongHeader_SE_WARP_IN
 SongHeader_SE_WARP_IN: @ 0x08868D48
 	@ M4A song header: song 45 (SE_WARP_IN)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_WARP_IN_01
 
 	.globl SongTrack_SE_WARP_OUT_01
@@ -2111,7 +2111,7 @@ SongTrack_SE_WARP_OUT_01: @ 0x08868D54
 	.globl SongHeader_SE_WARP_OUT
 SongHeader_SE_WARP_OUT: @ 0x08868D88
 	@ M4A song header: song 46 (SE_WARP_OUT)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_WARP_OUT_01
 
 	.globl SongTrack_SE_REPEL_01
@@ -2144,7 +2144,7 @@ SongTrack_SE_REPEL_01: @ 0x08868D94
 	.globl SongHeader_SE_REPEL
 SongHeader_SE_REPEL: @ 0x08868DB4
 	@ M4A song header: song 47 (SE_REPEL)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_REPEL_01
 
 	.globl SongTrack_SE_ROTATING_GATE_01
@@ -2185,7 +2185,7 @@ SongTrack_SE_ROTATING_GATE_01: @ 0x08868DC0
 	.globl SongHeader_SE_ROTATING_GATE
 SongHeader_SE_ROTATING_GATE: @ 0x08868DF0
 	@ M4A song header: song 48 (SE_ROTATING_GATE)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_ROTATING_GATE_01
 
 	.globl SongTrack_SE_TRUCK_MOVE_01
@@ -2304,7 +2304,7 @@ SongTrack_SE_TRUCK_MOVE_02: @ 0x08868E28
 	.globl SongHeader_SE_TRUCK_MOVE
 SongHeader_SE_TRUCK_MOVE: @ 0x08868E9C
 	@ M4A song header: song 49 (SE_TRUCK_MOVE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_TRUCK_MOVE_01
 	.4byte SongTrack_SE_TRUCK_MOVE_02
 
@@ -2404,7 +2404,7 @@ SongTrack_SE_TRUCK_STOP_03: @ 0x08868F00
 	.globl SongHeader_SE_TRUCK_STOP
 SongHeader_SE_TRUCK_STOP: @ 0x08868F14
 	@ M4A song header: song 50 (SE_TRUCK_STOP)
-	m4a_song_header 3, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 3, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_TRUCK_STOP_01
 	.4byte SongTrack_SE_TRUCK_STOP_02
 	.4byte SongTrack_SE_TRUCK_STOP_03
@@ -2433,7 +2433,7 @@ SongTrack_SE_TRUCK_UNLOAD_01: @ 0x08868F28
 	.globl SongHeader_SE_TRUCK_UNLOAD
 SongHeader_SE_TRUCK_UNLOAD: @ 0x08868F40
 	@ M4A song header: song 51 (SE_TRUCK_UNLOAD)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_TRUCK_UNLOAD_01
 
 	.globl SongTrack_SE_TRUCK_DOOR_01
@@ -2471,7 +2471,7 @@ SongTrack_SE_TRUCK_DOOR_02: @ 0x08868F61
 	.globl SongHeader_SE_TRUCK_DOOR
 SongHeader_SE_TRUCK_DOOR: @ 0x08868F74
 	@ M4A song header: song 52 (SE_TRUCK_DOOR)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_TRUCK_DOOR_01
 	.4byte SongTrack_SE_TRUCK_DOOR_02
 
@@ -2498,7 +2498,7 @@ SongTrack_SE_BERRY_BLENDER_01: @ 0x08868F84
 	.globl SongHeader_SE_BERRY_BLENDER
 SongHeader_SE_BERRY_BLENDER: @ 0x08868FA0
 	@ M4A song header: song 53 (SE_BERRY_BLENDER)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_BERRY_BLENDER_01
 
 	.globl SongTrack_SE_CARD_01
@@ -2582,7 +2582,7 @@ SongTrack_SE_CARD_02: @ 0x08868FE6
 	.globl SongHeader_SE_CARD
 SongHeader_SE_CARD: @ 0x08869014
 	@ M4A song header: song 54 (SE_CARD)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08624C14
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_CARD_01
 	.4byte SongTrack_SE_CARD_02
 
@@ -2637,7 +2637,7 @@ SongTrack_SE_SAVE_02: @ 0x08869042
 	.globl SongHeader_SE_SAVE
 SongHeader_SE_SAVE: @ 0x0886905C
 	@ M4A song header: song 55 (SE_SAVE)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_SAVE_01
 	.4byte SongTrack_SE_SAVE_02
 
@@ -2667,7 +2667,7 @@ SongTrack_SE_BALL_BOUNCE_1_02: @ 0x0886907B
 	.globl SongHeader_SE_BALL_BOUNCE_1
 SongHeader_SE_BALL_BOUNCE_1: @ 0x08869088
 	@ M4A song header: song 56 (SE_BALL_BOUNCE_1)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_BALL_BOUNCE_1_01
 	.4byte SongTrack_SE_BALL_BOUNCE_1_02
 
@@ -2697,7 +2697,7 @@ SongTrack_SE_BALL_BOUNCE_2_02: @ 0x088690A7
 	.globl SongHeader_SE_BALL_BOUNCE_2
 SongHeader_SE_BALL_BOUNCE_2: @ 0x088690B4
 	@ M4A song header: song 57 (SE_BALL_BOUNCE_2)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_BALL_BOUNCE_2_01
 	.4byte SongTrack_SE_BALL_BOUNCE_2_02
 
@@ -2727,7 +2727,7 @@ SongTrack_SE_BALL_BOUNCE_3_02: @ 0x088690D3
 	.globl SongHeader_SE_BALL_BOUNCE_3
 SongHeader_SE_BALL_BOUNCE_3: @ 0x088690E0
 	@ M4A song header: song 58 (SE_BALL_BOUNCE_3)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_BALL_BOUNCE_3_01
 	.4byte SongTrack_SE_BALL_BOUNCE_3_02
 
@@ -2757,7 +2757,7 @@ SongTrack_SE_BALL_BOUNCE_4_02: @ 0x088690FF
 	.globl SongHeader_SE_BALL_BOUNCE_4
 SongHeader_SE_BALL_BOUNCE_4: @ 0x0886910C
 	@ M4A song header: song 59 (SE_BALL_BOUNCE_4)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_BALL_BOUNCE_4_01
 	.4byte SongTrack_SE_BALL_BOUNCE_4_02
 
@@ -2813,7 +2813,7 @@ SongTrack_SE_BALL_TRADE_02: @ 0x08869146
 	.globl SongHeader_SE_BALL_TRADE
 SongHeader_SE_BALL_TRADE: @ 0x08869160
 	@ M4A song header: song 60 (SE_BALL_TRADE)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_BALL_TRADE_01
 	.4byte SongTrack_SE_BALL_TRADE_02
 
@@ -2856,7 +2856,7 @@ SongTrack_SE_BALL_THROW_01: @ 0x08869170
 	.globl SongHeader_SE_BALL_THROW
 SongHeader_SE_BALL_THROW: @ 0x088691A4
 	@ M4A song header: song 61 (SE_BALL_THROW)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_BALL_THROW_01
 
 	.globl SongTrack_SE_NOTE_C_01
@@ -2892,7 +2892,7 @@ SongTrack_SE_NOTE_C_02: @ 0x088691C4
 	.globl SongHeader_SE_NOTE_C
 SongHeader_SE_NOTE_C: @ 0x088691D8
 	@ M4A song header: song 62 (SE_NOTE_C)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_NOTE_C_01
 	.4byte SongTrack_SE_NOTE_C_02
 
@@ -2929,7 +2929,7 @@ SongTrack_SE_NOTE_D_02: @ 0x088691FC
 	.globl SongHeader_SE_NOTE_D
 SongHeader_SE_NOTE_D: @ 0x08869210
 	@ M4A song header: song 63 (SE_NOTE_D)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_NOTE_D_01
 	.4byte SongTrack_SE_NOTE_D_02
 
@@ -2966,7 +2966,7 @@ SongTrack_SE_NOTE_E_02: @ 0x08869234
 	.globl SongHeader_SE_NOTE_E
 SongHeader_SE_NOTE_E: @ 0x08869248
 	@ M4A song header: song 64 (SE_NOTE_E)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_NOTE_E_01
 	.4byte SongTrack_SE_NOTE_E_02
 
@@ -3003,7 +3003,7 @@ SongTrack_SE_NOTE_F_02: @ 0x0886926C
 	.globl SongHeader_SE_NOTE_F
 SongHeader_SE_NOTE_F: @ 0x08869280
 	@ M4A song header: song 65 (SE_NOTE_F)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_NOTE_F_01
 	.4byte SongTrack_SE_NOTE_F_02
 
@@ -3040,7 +3040,7 @@ SongTrack_SE_NOTE_G_02: @ 0x088692A4
 	.globl SongHeader_SE_NOTE_G
 SongHeader_SE_NOTE_G: @ 0x088692B8
 	@ M4A song header: song 66 (SE_NOTE_G)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_NOTE_G_01
 	.4byte SongTrack_SE_NOTE_G_02
 
@@ -3077,7 +3077,7 @@ SongTrack_SE_NOTE_A_02: @ 0x088692DC
 	.globl SongHeader_SE_NOTE_A
 SongHeader_SE_NOTE_A: @ 0x088692F0
 	@ M4A song header: song 67 (SE_NOTE_A)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_NOTE_A_01
 	.4byte SongTrack_SE_NOTE_A_02
 
@@ -3114,7 +3114,7 @@ SongTrack_SE_NOTE_B_02: @ 0x08869314
 	.globl SongHeader_SE_NOTE_B
 SongHeader_SE_NOTE_B: @ 0x08869328
 	@ M4A song header: song 68 (SE_NOTE_B)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_NOTE_B_01
 	.4byte SongTrack_SE_NOTE_B_02
 
@@ -3151,7 +3151,7 @@ SongTrack_SE_NOTE_C_HIGH_02: @ 0x0886934C
 	.globl SongHeader_SE_NOTE_C_HIGH
 SongHeader_SE_NOTE_C_HIGH: @ 0x08869360
 	@ M4A song header: song 69 (SE_NOTE_C_HIGH)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_NOTE_C_HIGH_01
 	.4byte SongTrack_SE_NOTE_C_HIGH_02
 
@@ -3183,7 +3183,7 @@ SongTrack_SE_PUDDLE_01: @ 0x08869370
 	.globl SongHeader_SE_PUDDLE
 SongHeader_SE_PUDDLE: @ 0x08869394
 	@ M4A song header: song 70 (SE_PUDDLE)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_PUDDLE_01
 
 	.globl SongTrack_SE_BRIDGE_WALK_01
@@ -3207,7 +3207,7 @@ SongTrack_SE_BRIDGE_WALK_01: @ 0x088693A0
 	.globl SongHeader_SE_BRIDGE_WALK
 SongHeader_SE_BRIDGE_WALK: @ 0x088693B8
 	@ M4A song header: song 71 (SE_BRIDGE_WALK)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_BRIDGE_WALK_01
 
 	.globl SongTrack_SE_ITEMFINDER_01
@@ -3263,7 +3263,7 @@ SongTrack_SE_ITEMFINDER_02: @ 0x088693E9
 	.globl SongHeader_SE_ITEMFINDER
 SongHeader_SE_ITEMFINDER: @ 0x08869404
 	@ M4A song header: song 72 (SE_ITEMFINDER)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_ITEMFINDER_01
 	.4byte SongTrack_SE_ITEMFINDER_02
 
@@ -3339,7 +3339,7 @@ SongTrack_SE_DING_DONG_02: @ 0x0886943D
 	.globl SongHeader_SE_DING_DONG
 SongHeader_SE_DING_DONG: @ 0x08869464
 	@ M4A song header: song 73 (SE_DING_DONG)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_DING_DONG_01
 	.4byte SongTrack_SE_DING_DONG_02
 
@@ -3371,7 +3371,7 @@ SongTrack_SE_BALLOON_RED_01: @ 0x08869474
 	.globl SongHeader_SE_BALLOON_RED
 SongHeader_SE_BALLOON_RED: @ 0x08869498
 	@ M4A song header: song 74 (SE_BALLOON_RED)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_BALLOON_RED_01
 
 	.globl SongTrack_SE_BALLOON_BLUE_01
@@ -3401,7 +3401,7 @@ SongTrack_SE_BALLOON_BLUE_01: @ 0x088694A4
 	.globl SongHeader_SE_BALLOON_BLUE
 SongHeader_SE_BALLOON_BLUE: @ 0x088694C8
 	@ M4A song header: song 75 (SE_BALLOON_BLUE)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_BALLOON_BLUE_01
 
 	.globl SongTrack_SE_BALLOON_YELLOW_01
@@ -3439,7 +3439,7 @@ SongTrack_SE_BALLOON_YELLOW_01: @ 0x088694D4
 	.globl SongHeader_SE_BALLOON_YELLOW
 SongHeader_SE_BALLOON_YELLOW: @ 0x08869500
 	@ M4A song header: song 76 (SE_BALLOON_YELLOW)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_BALLOON_YELLOW_01
 
 	.globl SongTrack_SE_BREAKABLE_DOOR_01
@@ -3491,7 +3491,7 @@ SongTrack_SE_BREAKABLE_DOOR_01: @ 0x0886950C
 	.globl SongHeader_SE_BREAKABLE_DOOR
 SongHeader_SE_BREAKABLE_DOOR: @ 0x08869544
 	@ M4A song header: song 77 (SE_BREAKABLE_DOOR)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_BREAKABLE_DOOR_01
 
 	.globl SongTrack_SE_MUD_BALL_01
@@ -3521,7 +3521,7 @@ SongTrack_SE_MUD_BALL_01: @ 0x08869550
 	.globl SongHeader_SE_MUD_BALL
 SongHeader_SE_MUD_BALL: @ 0x08869574
 	@ M4A song header: song 78 (SE_MUD_BALL)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_MUD_BALL_01
 
 	.globl SongTrack_SE_FIELD_POISON_01
@@ -3549,7 +3549,7 @@ SongTrack_SE_FIELD_POISON_01: @ 0x08869580
 	.globl SongHeader_SE_FIELD_POISON
 SongHeader_SE_FIELD_POISON: @ 0x0886959C
 	@ M4A song header: song 79 (SE_FIELD_POISON)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_FIELD_POISON_01
 
 	.globl SongTrack_SE_ESCALATOR_01
@@ -3622,7 +3622,7 @@ SongTrack_SE_ESCALATOR_01: @ 0x088695A8
 	.globl SongHeader_SE_ESCALATOR
 SongHeader_SE_ESCALATOR: @ 0x08869604
 	@ M4A song header: song 80 (SE_ESCALATOR)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_ESCALATOR_01
 
 	.globl SongTrack_SE_THUNDERSTORM_01
@@ -3663,7 +3663,7 @@ SongTrack_SE_THUNDERSTORM_01: @ 0x08869610
 	.globl SongHeader_SE_THUNDERSTORM
 SongHeader_SE_THUNDERSTORM: @ 0x08869640
 	@ M4A song header: song 81 (SE_THUNDERSTORM)
-	m4a_song_header 1, 0, 2, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 2, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_THUNDERSTORM_01
 
 	.globl SongTrack_SE_THUNDERSTORM_STOP_01
@@ -3714,7 +3714,7 @@ SongTrack_SE_THUNDERSTORM_STOP_01: @ 0x0886964C
 	.globl SongHeader_SE_THUNDERSTORM_STOP
 SongHeader_SE_THUNDERSTORM_STOP: @ 0x08869680
 	@ M4A song header: song 82 (SE_THUNDERSTORM_STOP)
-	m4a_song_header 1, 0, 2, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 2, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_THUNDERSTORM_STOP_01
 
 	.globl SongTrack_SE_DOWNPOUR_01
@@ -3754,7 +3754,7 @@ SongTrack_SE_DOWNPOUR_01: @ 0x0886968C
 	.globl SongHeader_SE_DOWNPOUR
 SongHeader_SE_DOWNPOUR: @ 0x088696BC
 	@ M4A song header: song 83 (SE_DOWNPOUR)
-	m4a_song_header 1, 0, 2, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 2, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_DOWNPOUR_01
 
 	.globl SongTrack_SE_DOWNPOUR_STOP_01
@@ -3805,7 +3805,7 @@ SongTrack_SE_DOWNPOUR_STOP_01: @ 0x088696C8
 	.globl SongHeader_SE_DOWNPOUR_STOP
 SongHeader_SE_DOWNPOUR_STOP: @ 0x088696FC
 	@ M4A song header: song 84 (SE_DOWNPOUR_STOP)
-	m4a_song_header 1, 0, 2, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 2, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_DOWNPOUR_STOP_01
 
 	.globl SongTrack_SE_RAIN_01
@@ -3846,7 +3846,7 @@ SongTrack_SE_RAIN_01: @ 0x08869708
 	.globl SongHeader_SE_RAIN
 SongHeader_SE_RAIN: @ 0x08869738
 	@ M4A song header: song 85 (SE_RAIN)
-	m4a_song_header 1, 0, 2, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 2, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_RAIN_01
 
 	.globl SongTrack_SE_RAIN_STOP_01
@@ -3897,7 +3897,7 @@ SongTrack_SE_RAIN_STOP_01: @ 0x08869744
 	.globl SongHeader_SE_RAIN_STOP
 SongHeader_SE_RAIN_STOP: @ 0x08869778
 	@ M4A song header: song 86 (SE_RAIN_STOP)
-	m4a_song_header 1, 0, 2, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 2, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_RAIN_STOP_01
 
 	.globl SongTrack_SE_THUNDER_01
@@ -3974,7 +3974,7 @@ SongTrack_SE_THUNDER_01: @ 0x08869784
 	.globl SongHeader_SE_THUNDER
 SongHeader_SE_THUNDER: @ 0x088697E0
 	@ M4A song header: song 87 (SE_THUNDER)
-	m4a_song_header 1, 0, 3, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 3, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_THUNDER_01
 
 	.globl SongTrack_SE_THUNDER2_01
@@ -4033,7 +4033,7 @@ SongTrack_SE_THUNDER2_01: @ 0x088697EC
 	.globl SongHeader_SE_THUNDER2
 SongHeader_SE_THUNDER2: @ 0x08869830
 	@ M4A song header: song 88 (SE_THUNDER2)
-	m4a_song_header 1, 0, 3, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 3, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_THUNDER2_01
 
 	.globl SongTrack_SE_ELEVATOR_01
@@ -4082,7 +4082,7 @@ SongTrack_SE_ELEVATOR_02: @ 0x08869856
 	.globl SongHeader_SE_ELEVATOR
 SongHeader_SE_ELEVATOR: @ 0x0886986C
 	@ M4A song header: song 89 (SE_ELEVATOR)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_ELEVATOR_01
 	.4byte SongTrack_SE_ELEVATOR_02
 
@@ -4109,7 +4109,7 @@ SongTrack_SE_LOW_HEALTH_01: @ 0x0886987C
 	.globl SongHeader_SE_LOW_HEALTH
 SongHeader_SE_LOW_HEALTH: @ 0x0886989C
 	@ M4A song header: song 90 (SE_LOW_HEALTH)
-	m4a_song_header 1, 0, 3, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 3, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_LOW_HEALTH_01
 
 	.globl SongTrack_SE_EXP_MAX_01
@@ -4162,7 +4162,7 @@ SongTrack_SE_EXP_MAX_02: @ 0x088698CB
 	.globl SongHeader_SE_EXP_MAX
 SongHeader_SE_EXP_MAX: @ 0x088698E8
 	@ M4A song header: song 91 (SE_EXP_MAX)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_EXP_MAX_01
 	.4byte SongTrack_SE_EXP_MAX_02
 
@@ -4186,7 +4186,7 @@ SongTrack_SE_ROULETTE_BALL_01: @ 0x088698F8
 	.globl SongHeader_SE_ROULETTE_BALL
 SongHeader_SE_ROULETTE_BALL: @ 0x0886990C
 	@ M4A song header: song 92 (SE_ROULETTE_BALL)
-	m4a_song_header 1, 0, 2, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 2, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_ROULETTE_BALL_01
 
 	.globl SongTrack_SE_ROULETTE_BALL2_01
@@ -4238,7 +4238,7 @@ SongTrack_SE_ROULETTE_BALL2_01: @ 0x08869918
 	.globl SongHeader_SE_ROULETTE_BALL2
 SongHeader_SE_ROULETTE_BALL2: @ 0x08869960
 	@ M4A song header: song 93 (SE_ROULETTE_BALL2)
-	m4a_song_header 1, 0, 2, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 2, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_ROULETTE_BALL2_01
 
 	.globl SongTrack_SE_TAILLOW_WING_FLAP_01
@@ -4333,7 +4333,7 @@ SongTrack_SE_TAILLOW_WING_FLAP_02: @ 0x088699C7
 	.globl SongHeader_SE_TAILLOW_WING_FLAP
 SongHeader_SE_TAILLOW_WING_FLAP: @ 0x088699F4
 	@ M4A song header: song 94 (SE_TAILLOW_WING_FLAP)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_TAILLOW_WING_FLAP_01
 	.4byte SongTrack_SE_TAILLOW_WING_FLAP_02
 
@@ -4373,7 +4373,7 @@ SongTrack_SE_SHOP_02: @ 0x08869A1E
 	.globl SongHeader_SE_SHOP
 SongHeader_SE_SHOP: @ 0x08869A30
 	@ M4A song header: song 95 (SE_SHOP)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_SHOP_01
 	.4byte SongTrack_SE_SHOP_02
 
@@ -4396,7 +4396,7 @@ SongTrack_SE_CONTEST_HEART_01: @ 0x08869A40
 	.globl SongHeader_SE_CONTEST_HEART
 SongHeader_SE_CONTEST_HEART: @ 0x08869A54
 	@ M4A song header: song 96 (SE_CONTEST_HEART)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_CONTEST_HEART_01
 
 	.globl SongTrack_SE_CONTEST_CURTAIN_RISE_01
@@ -4468,7 +4468,7 @@ SongTrack_SE_CONTEST_CURTAIN_RISE_02: @ 0x08869A80
 	.globl SongHeader_SE_CONTEST_CURTAIN_RISE
 SongHeader_SE_CONTEST_CURTAIN_RISE: @ 0x08869AB8
 	@ M4A song header: song 97 (SE_CONTEST_CURTAIN_RISE)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_CONTEST_CURTAIN_RISE_01
 	.4byte SongTrack_SE_CONTEST_CURTAIN_RISE_02
 
@@ -4541,7 +4541,7 @@ SongTrack_SE_CONTEST_CURTAIN_FALL_02: @ 0x08869AE8
 	.globl SongHeader_SE_CONTEST_CURTAIN_FALL
 SongHeader_SE_CONTEST_CURTAIN_FALL: @ 0x08869B20
 	@ M4A song header: song 98 (SE_CONTEST_CURTAIN_FALL)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_CONTEST_CURTAIN_FALL_01
 	.4byte SongTrack_SE_CONTEST_CURTAIN_FALL_02
 
@@ -4565,7 +4565,7 @@ SongTrack_SE_CONTEST_ICON_CHANGE_01: @ 0x08869B30
 	.globl SongHeader_SE_CONTEST_ICON_CHANGE
 SongHeader_SE_CONTEST_ICON_CHANGE: @ 0x08869B48
 	@ M4A song header: song 99 (SE_CONTEST_ICON_CHANGE)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_CONTEST_ICON_CHANGE_01
 
 	.globl SongTrack_SE_CONTEST_ICON_CLEAR_01
@@ -4598,7 +4598,7 @@ SongTrack_SE_CONTEST_ICON_CLEAR_01: @ 0x08869B54
 	.globl SongHeader_SE_CONTEST_ICON_CLEAR
 SongHeader_SE_CONTEST_ICON_CLEAR: @ 0x08869B7C
 	@ M4A song header: song 100 (SE_CONTEST_ICON_CLEAR)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_CONTEST_ICON_CLEAR_01
 
 	.globl SongTrack_SE_CONTEST_MONS_TURN_01
@@ -4630,7 +4630,7 @@ SongTrack_SE_CONTEST_MONS_TURN_01: @ 0x08869B88
 	.globl SongHeader_SE_CONTEST_MONS_TURN
 SongHeader_SE_CONTEST_MONS_TURN: @ 0x08869BA8
 	@ M4A song header: song 101 (SE_CONTEST_MONS_TURN)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_CONTEST_MONS_TURN_01
 
 	.globl SongTrack_SE_SHINY_01
@@ -4713,7 +4713,7 @@ SongTrack_SE_SHINY_01: @ 0x08869BB4
 	.globl SongHeader_SE_SHINY
 SongHeader_SE_SHINY: @ 0x08869C24
 	@ M4A song header: song 102 (SE_SHINY)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_SHINY_01
 
 	.globl SongTrack_SE_INTRO_BLAST_01
@@ -4866,7 +4866,7 @@ SongTrack_SE_INTRO_BLAST_01: @ 0x08869C30
 	.globl SongHeader_SE_INTRO_BLAST
 SongHeader_SE_INTRO_BLAST: @ 0x08869CE4
 	@ M4A song header: song 103 (SE_INTRO_BLAST)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_INTRO_BLAST_01
 
 	.globl SongTrack_SE_MUGSHOT_01
@@ -5055,7 +5055,7 @@ SongTrack_SE_MUGSHOT_02: @ 0x08869D3A
 	.globl SongHeader_SE_MUGSHOT
 SongHeader_SE_MUGSHOT: @ 0x08869DCC
 	@ M4A song header: song 104 (SE_MUGSHOT)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_MUGSHOT_01
 	.4byte SongTrack_SE_MUGSHOT_02
 
@@ -5214,7 +5214,7 @@ SongTrack_SE_APPLAUSE_01: @ 0x08869DDC
 	.globl SongHeader_SE_APPLAUSE
 SongHeader_SE_APPLAUSE: @ 0x08869EE4
 	@ M4A song header: song 105 (SE_APPLAUSE)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_APPLAUSE_01
 
 	.globl SongTrack_SE_VEND_01
@@ -5238,7 +5238,7 @@ SongTrack_SE_VEND_01: @ 0x08869EF0
 	.globl SongHeader_SE_VEND
 SongHeader_SE_VEND: @ 0x08869F08
 	@ M4A song header: song 106 (SE_VEND)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_VEND_01
 
 	.globl SongTrack_SE_ORB_01
@@ -5460,7 +5460,7 @@ SongTrack_SE_ORB_02: @ 0x08869F98
 	.globl SongHeader_SE_ORB
 SongHeader_SE_ORB: @ 0x0886A01C
 	@ M4A song header: song 107 (SE_ORB)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_ORB_01
 	.4byte SongTrack_SE_ORB_02
 
@@ -5485,7 +5485,7 @@ SongTrack_SE_DEX_SCROLL_01: @ 0x0886A02C
 	.globl SongHeader_SE_DEX_SCROLL
 SongHeader_SE_DEX_SCROLL: @ 0x0886A048
 	@ M4A song header: song 108 (SE_DEX_SCROLL)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_DEX_SCROLL_01
 
 	.globl SongTrack_SE_DEX_PAGE_01
@@ -5517,7 +5517,7 @@ SongTrack_SE_DEX_PAGE_01: @ 0x0886A054
 	.globl SongHeader_SE_DEX_PAGE
 SongHeader_SE_DEX_PAGE: @ 0x0886A07C
 	@ M4A song header: song 109 (SE_DEX_PAGE)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_DEX_PAGE_01
 
 	.globl SongTrack_SE_POKENAV_ON_01
@@ -5580,7 +5580,7 @@ SongTrack_SE_POKENAV_ON_02: @ 0x0886A0B5
 	.globl SongHeader_SE_POKENAV_ON
 SongHeader_SE_POKENAV_ON: @ 0x0886A0E0
 	@ M4A song header: song 110 (SE_POKENAV_ON)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_POKENAV_ON_01
 	.4byte SongTrack_SE_POKENAV_ON_02
 
@@ -5644,7 +5644,7 @@ SongTrack_SE_POKENAV_OFF_02: @ 0x0886A11D
 	.globl SongHeader_SE_POKENAV_OFF
 SongHeader_SE_POKENAV_OFF: @ 0x0886A148
 	@ M4A song header: song 111 (SE_POKENAV_OFF)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_POKENAV_OFF_01
 	.4byte SongTrack_SE_POKENAV_OFF_02
 
@@ -5926,7 +5926,7 @@ SongTrack_SE_DEX_SEARCH_02: @ 0x0886A251
 	.globl SongHeader_SE_DEX_SEARCH
 SongHeader_SE_DEX_SEARCH: @ 0x0886A344
 	@ M4A song header: song 112 (SE_DEX_SEARCH)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_DEX_SEARCH_01
 	.4byte SongTrack_SE_DEX_SEARCH_02
 
@@ -6015,7 +6015,7 @@ SongTrack_SE_EGG_HATCH_02: @ 0x0886A39B
 	.globl SongHeader_SE_EGG_HATCH
 SongHeader_SE_EGG_HATCH: @ 0x0886A3D0
 	@ M4A song header: song 113 (SE_EGG_HATCH)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_EGG_HATCH_01
 	.4byte SongTrack_SE_EGG_HATCH_02
 
@@ -6068,7 +6068,7 @@ SongTrack_SE_BALL_TRAY_ENTER_02: @ 0x0886A40D
 	.globl SongHeader_SE_BALL_TRAY_ENTER
 SongHeader_SE_BALL_TRAY_ENTER: @ 0x0886A420
 	@ M4A song header: song 114 (SE_BALL_TRAY_ENTER)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_BALL_TRAY_ENTER_01
 	.4byte SongTrack_SE_BALL_TRAY_ENTER_02
 
@@ -6096,7 +6096,7 @@ SongTrack_SE_BALL_TRAY_BALL_01: @ 0x0886A430
 	.globl SongHeader_SE_BALL_TRAY_BALL
 SongHeader_SE_BALL_TRAY_BALL: @ 0x0886A44C
 	@ M4A song header: song 115 (SE_BALL_TRAY_BALL)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_BALL_TRAY_BALL_01
 
 	.globl SongTrack_SE_BALL_TRAY_EXIT_01
@@ -6117,7 +6117,7 @@ SongTrack_SE_BALL_TRAY_EXIT_01: @ 0x0886A458
 	.globl SongHeader_SE_BALL_TRAY_EXIT
 SongHeader_SE_BALL_TRAY_EXIT: @ 0x0886A46C
 	@ M4A song header: song 116 (SE_BALL_TRAY_EXIT)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_BALL_TRAY_EXIT_01
 
 	.globl SongTrack_SE_GLASS_FLUTE_01
@@ -6156,7 +6156,7 @@ SongTrack_SE_GLASS_FLUTE_01: @ 0x0886A478
 	.globl SongHeader_SE_GLASS_FLUTE
 SongHeader_SE_GLASS_FLUTE: @ 0x0886A4A8
 	@ M4A song header: song 117 (SE_GLASS_FLUTE)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_GLASS_FLUTE_01
 
 	.globl SongTrack_SE_M_THUNDERBOLT_01
@@ -6250,7 +6250,7 @@ SongTrack_SE_M_THUNDERBOLT_02: @ 0x0886A514
 	.globl SongHeader_SE_M_THUNDERBOLT
 SongHeader_SE_M_THUNDERBOLT: @ 0x0886A53C
 	@ M4A song header: song 118 (SE_M_THUNDERBOLT)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_THUNDERBOLT_01
 	.4byte SongTrack_SE_M_THUNDERBOLT_02
 
@@ -6312,7 +6312,7 @@ SongTrack_SE_M_THUNDERBOLT2_02: @ 0x0886A57D
 	.globl SongHeader_SE_M_THUNDERBOLT2
 SongHeader_SE_M_THUNDERBOLT2: @ 0x0886A5A8
 	@ M4A song header: song 119 (SE_M_THUNDERBOLT2)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_THUNDERBOLT2_01
 	.4byte SongTrack_SE_M_THUNDERBOLT2_02
 
@@ -6363,7 +6363,7 @@ SongTrack_SE_M_HARDEN_02: @ 0x0886A5DF
 	.globl SongHeader_SE_M_HARDEN
 SongHeader_SE_M_HARDEN: @ 0x0886A5F0
 	@ M4A song header: song 120 (SE_M_HARDEN)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_HARDEN_01
 	.4byte SongTrack_SE_M_HARDEN_02
 
@@ -6486,7 +6486,7 @@ SongTrack_SE_M_NIGHTMARE_02: @ 0x0886A652
 	.globl SongHeader_SE_M_NIGHTMARE
 SongHeader_SE_M_NIGHTMARE: @ 0x0886A6B4
 	@ M4A song header: song 121 (SE_M_NIGHTMARE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_NIGHTMARE_01
 	.4byte SongTrack_SE_M_NIGHTMARE_02
 
@@ -6539,7 +6539,7 @@ SongTrack_SE_M_VITAL_THROW_02: @ 0x0886A6F3
 	.globl SongHeader_SE_M_VITAL_THROW
 SongHeader_SE_M_VITAL_THROW: @ 0x0886A708
 	@ M4A song header: song 122 (SE_M_VITAL_THROW)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_VITAL_THROW_01
 	.4byte SongTrack_SE_M_VITAL_THROW_02
 
@@ -6625,7 +6625,7 @@ SongTrack_SE_M_VITAL_THROW2_02: @ 0x0886A76D
 	.globl SongHeader_SE_M_VITAL_THROW2
 SongHeader_SE_M_VITAL_THROW2: @ 0x0886A788
 	@ M4A song header: song 123 (SE_M_VITAL_THROW2)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_VITAL_THROW2_01
 	.4byte SongTrack_SE_M_VITAL_THROW2_02
 
@@ -6660,7 +6660,7 @@ SongTrack_SE_M_BUBBLE_01: @ 0x0886A798
 	.globl SongHeader_SE_M_BUBBLE
 SongHeader_SE_M_BUBBLE: @ 0x0886A7C0
 	@ M4A song header: song 124 (SE_M_BUBBLE)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_BUBBLE_01
 
 	.globl SongTrack_SE_M_BUBBLE2_01
@@ -6697,7 +6697,7 @@ SongTrack_SE_M_BUBBLE2_02: @ 0x0886A7E5
 	.globl SongHeader_SE_M_BUBBLE2
 SongHeader_SE_M_BUBBLE2: @ 0x0886A7F4
 	@ M4A song header: song 125 (SE_M_BUBBLE2)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_BUBBLE2_01
 	.4byte SongTrack_SE_M_BUBBLE2_02
 
@@ -6740,7 +6740,7 @@ SongTrack_SE_M_BUBBLE3_01: @ 0x0886A804
 	.globl SongHeader_SE_M_BUBBLE3
 SongHeader_SE_M_BUBBLE3: @ 0x0886A834
 	@ M4A song header: song 126 (SE_M_BUBBLE3)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_BUBBLE3_01
 
 	.globl SongTrack_SE_M_RAIN_DANCE_01
@@ -6835,7 +6835,7 @@ SongTrack_SE_M_RAIN_DANCE_01: @ 0x0886A840
 	.globl SongHeader_SE_M_RAIN_DANCE
 SongHeader_SE_M_RAIN_DANCE: @ 0x0886A8AC
 	@ M4A song header: song 127 (SE_M_RAIN_DANCE)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_RAIN_DANCE_01
 
 	.globl SongTrack_SE_M_CUT_01
@@ -6916,7 +6916,7 @@ SongTrack_SE_M_CUT_02: @ 0x0886A916
 	.globl SongHeader_SE_M_CUT
 SongHeader_SE_M_CUT: @ 0x0886A92C
 	@ M4A song header: song 128 (SE_M_CUT)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_CUT_01
 	.4byte SongTrack_SE_M_CUT_02
 
@@ -6975,7 +6975,7 @@ SongTrack_SE_M_STRING_SHOT_01: @ 0x0886A93C
 	.globl SongHeader_SE_M_STRING_SHOT
 SongHeader_SE_M_STRING_SHOT: @ 0x0886A984
 	@ M4A song header: song 129 (SE_M_STRING_SHOT)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_STRING_SHOT_01
 
 	.globl SongTrack_SE_M_STRING_SHOT2_01
@@ -7083,7 +7083,7 @@ SongTrack_SE_M_STRING_SHOT2_02: @ 0x0886A9FF
 	.globl SongHeader_SE_M_STRING_SHOT2
 SongHeader_SE_M_STRING_SHOT2: @ 0x0886AA28
 	@ M4A song header: song 130 (SE_M_STRING_SHOT2)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_STRING_SHOT2_01
 	.4byte SongTrack_SE_M_STRING_SHOT2_02
 
@@ -7126,7 +7126,7 @@ SongTrack_SE_M_ROCK_THROW_01: @ 0x0886AA38
 	.globl SongHeader_SE_M_ROCK_THROW
 SongHeader_SE_M_ROCK_THROW: @ 0x0886AA74
 	@ M4A song header: song 131 (SE_M_ROCK_THROW)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_ROCK_THROW_01
 
 	.globl SongTrack_SE_M_GUST_01
@@ -7205,7 +7205,7 @@ SongTrack_SE_M_GUST_01: @ 0x0886AA80
 	.globl SongHeader_SE_M_GUST
 SongHeader_SE_M_GUST: @ 0x0886AAF0
 	@ M4A song header: song 132 (SE_M_GUST)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_GUST_01
 
 	.globl SongTrack_SE_M_GUST2_01
@@ -7257,7 +7257,7 @@ SongTrack_SE_M_GUST2_01: @ 0x0886AAFC
 	.globl SongHeader_SE_M_GUST2
 SongHeader_SE_M_GUST2: @ 0x0886AB3C
 	@ M4A song header: song 133 (SE_M_GUST2)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_GUST2_01
 
 	.globl SongTrack_SE_M_DOUBLE_SLAP_01
@@ -7287,7 +7287,7 @@ SongTrack_SE_M_DOUBLE_SLAP_01: @ 0x0886AB48
 	.globl SongHeader_SE_M_DOUBLE_SLAP
 SongHeader_SE_M_DOUBLE_SLAP: @ 0x0886AB70
 	@ M4A song header: song 134 (SE_M_DOUBLE_SLAP)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_DOUBLE_SLAP_01
 
 	.globl SongTrack_SE_M_DOUBLE_TEAM_01
@@ -7335,7 +7335,7 @@ SongTrack_SE_M_DOUBLE_TEAM_01: @ 0x0886AB7C
 	.globl SongHeader_SE_M_DOUBLE_TEAM
 SongHeader_SE_M_DOUBLE_TEAM: @ 0x0886ABBC
 	@ M4A song header: song 135 (SE_M_DOUBLE_TEAM)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_DOUBLE_TEAM_01
 
 	.globl SongTrack_SE_M_RAZOR_WIND_01
@@ -7397,7 +7397,7 @@ SongTrack_SE_M_RAZOR_WIND_02: @ 0x0886AC0B
 	.globl SongHeader_SE_M_RAZOR_WIND
 SongHeader_SE_M_RAZOR_WIND: @ 0x0886AC1C
 	@ M4A song header: song 136 (SE_M_RAZOR_WIND)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_RAZOR_WIND_01
 	.4byte SongTrack_SE_M_RAZOR_WIND_02
 
@@ -7448,7 +7448,7 @@ SongTrack_SE_M_ICY_WIND_02: @ 0x0886AC4C
 	.globl SongHeader_SE_M_ICY_WIND
 SongHeader_SE_M_ICY_WIND: @ 0x0886AC68
 	@ M4A song header: song 137 (SE_M_ICY_WIND)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_ICY_WIND_01
 	.4byte SongTrack_SE_M_ICY_WIND_02
 
@@ -7532,7 +7532,7 @@ SongTrack_SE_M_THUNDER_WAVE_02: @ 0x0886ACC4
 	.globl SongHeader_SE_M_THUNDER_WAVE
 SongHeader_SE_M_THUNDER_WAVE: @ 0x0886ACEC
 	@ M4A song header: song 138 (SE_M_THUNDER_WAVE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_THUNDER_WAVE_01
 	.4byte SongTrack_SE_M_THUNDER_WAVE_02
 
@@ -7587,7 +7587,7 @@ SongTrack_SE_M_COMET_PUNCH_02: @ 0x0886AD26
 	.globl SongHeader_SE_M_COMET_PUNCH
 SongHeader_SE_M_COMET_PUNCH: @ 0x0886AD40
 	@ M4A song header: song 139 (SE_M_COMET_PUNCH)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_COMET_PUNCH_01
 	.4byte SongTrack_SE_M_COMET_PUNCH_02
 
@@ -7717,7 +7717,7 @@ SongTrack_SE_M_MEGA_KICK_01: @ 0x0886AD50
 	.globl SongHeader_SE_M_MEGA_KICK
 SongHeader_SE_M_MEGA_KICK: @ 0x0886AE0C
 	@ M4A song header: song 140 (SE_M_MEGA_KICK)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_MEGA_KICK_01
 
 	.globl SongTrack_SE_M_MEGA_KICK2_01
@@ -7823,7 +7823,7 @@ SongTrack_SE_M_MEGA_KICK2_02: @ 0x0886AE80
 	.globl SongHeader_SE_M_MEGA_KICK2
 SongHeader_SE_M_MEGA_KICK2: @ 0x0886AEAC
 	@ M4A song header: song 141 (SE_M_MEGA_KICK2)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_MEGA_KICK2_01
 	.4byte SongTrack_SE_M_MEGA_KICK2_02
 
@@ -7859,7 +7859,7 @@ SongTrack_SE_M_CRABHAMMER_01: @ 0x0886AEBC
 	.globl SongHeader_SE_M_CRABHAMMER
 SongHeader_SE_M_CRABHAMMER: @ 0x0886AEE8
 	@ M4A song header: song 142 (SE_M_CRABHAMMER)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_CRABHAMMER_01
 
 	.globl SongTrack_SE_M_JUMP_KICK_01
@@ -7907,7 +7907,7 @@ SongTrack_SE_M_JUMP_KICK_01: @ 0x0886AEF4
 	.globl SongHeader_SE_M_JUMP_KICK
 SongHeader_SE_M_JUMP_KICK: @ 0x0886AF34
 	@ M4A song header: song 143 (SE_M_JUMP_KICK)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_JUMP_KICK_01
 
 	.globl SongTrack_SE_M_FLAME_WHEEL_01
@@ -8003,7 +8003,7 @@ SongTrack_SE_M_FLAME_WHEEL_02: @ 0x0886AF8B
 	.globl SongHeader_SE_M_FLAME_WHEEL
 SongHeader_SE_M_FLAME_WHEEL: @ 0x0886AFB4
 	@ M4A song header: song 144 (SE_M_FLAME_WHEEL)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_FLAME_WHEEL_01
 	.4byte SongTrack_SE_M_FLAME_WHEEL_02
 
@@ -8080,7 +8080,7 @@ SongTrack_SE_M_FLAME_WHEEL2_02: @ 0x0886B00B
 	.globl SongHeader_SE_M_FLAME_WHEEL2
 SongHeader_SE_M_FLAME_WHEEL2: @ 0x0886B024
 	@ M4A song header: song 145 (SE_M_FLAME_WHEEL2)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_FLAME_WHEEL2_01
 	.4byte SongTrack_SE_M_FLAME_WHEEL2_02
 
@@ -8228,7 +8228,7 @@ SongTrack_SE_M_FLAMETHROWER_02: @ 0x0886B0DB
 	.globl SongHeader_SE_M_FLAMETHROWER
 SongHeader_SE_M_FLAMETHROWER: @ 0x0886B0F8
 	@ M4A song header: song 146 (SE_M_FLAMETHROWER)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_FLAMETHROWER_01
 	.4byte SongTrack_SE_M_FLAMETHROWER_02
 
@@ -8344,7 +8344,7 @@ SongTrack_SE_M_FIRE_PUNCH_02: @ 0x0886B17E
 	.globl SongHeader_SE_M_FIRE_PUNCH
 SongHeader_SE_M_FIRE_PUNCH: @ 0x0886B19C
 	@ M4A song header: song 147 (SE_M_FIRE_PUNCH)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_FIRE_PUNCH_01
 	.4byte SongTrack_SE_M_FIRE_PUNCH_02
 
@@ -8410,7 +8410,7 @@ SongTrack_SE_M_TOXIC_01: @ 0x0886B1AC
 	.globl SongHeader_SE_M_TOXIC
 SongHeader_SE_M_TOXIC: @ 0x0886B20C
 	@ M4A song header: song 148 (SE_M_TOXIC)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_TOXIC_01
 
 	.globl SongTrack_SE_M_SACRED_FIRE_01
@@ -8493,7 +8493,7 @@ SongTrack_SE_M_SACRED_FIRE_02: @ 0x0886B260
 	.globl SongHeader_SE_M_SACRED_FIRE
 SongHeader_SE_M_SACRED_FIRE: @ 0x0886B280
 	@ M4A song header: song 149 (SE_M_SACRED_FIRE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SACRED_FIRE_01
 	.4byte SongTrack_SE_M_SACRED_FIRE_02
 
@@ -8652,7 +8652,7 @@ SongTrack_SE_M_SACRED_FIRE2_02: @ 0x0886B33D
 	.globl SongHeader_SE_M_SACRED_FIRE2
 SongHeader_SE_M_SACRED_FIRE2: @ 0x0886B360
 	@ M4A song header: song 150 (SE_M_SACRED_FIRE2)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SACRED_FIRE2_01
 	.4byte SongTrack_SE_M_SACRED_FIRE2_02
 
@@ -8691,7 +8691,7 @@ SongTrack_SE_M_EMBER_01: @ 0x0886B370
 	.globl SongHeader_SE_M_EMBER
 SongHeader_SE_M_EMBER: @ 0x0886B39C
 	@ M4A song header: song 151 (SE_M_EMBER)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_EMBER_01
 
 	.globl SongTrack_SE_M_TAKE_DOWN_01
@@ -8765,7 +8765,7 @@ SongTrack_SE_M_TAKE_DOWN_01: @ 0x0886B3A8
 	.globl SongHeader_SE_M_TAKE_DOWN
 SongHeader_SE_M_TAKE_DOWN: @ 0x0886B404
 	@ M4A song header: song 152 (SE_M_TAKE_DOWN)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_TAKE_DOWN_01
 
 	.globl SongTrack_SE_M_BLIZZARD_01
@@ -8844,7 +8844,7 @@ SongTrack_SE_M_BLIZZARD_01: @ 0x0886B410
 	.globl SongHeader_SE_M_BLIZZARD
 SongHeader_SE_M_BLIZZARD: @ 0x0886B480
 	@ M4A song header: song 153 (SE_M_BLIZZARD)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_BLIZZARD_01
 
 	.globl SongTrack_SE_M_BLIZZARD2_01
@@ -8896,7 +8896,7 @@ SongTrack_SE_M_BLIZZARD2_01: @ 0x0886B48C
 	.globl SongHeader_SE_M_BLIZZARD2
 SongHeader_SE_M_BLIZZARD2: @ 0x0886B4CC
 	@ M4A song header: song 154 (SE_M_BLIZZARD2)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_BLIZZARD2_01
 
 	.globl SongTrack_SE_M_SCRATCH_01
@@ -8944,7 +8944,7 @@ SongTrack_SE_M_SCRATCH_01: @ 0x0886B4D8
 	.globl SongHeader_SE_M_SCRATCH
 SongHeader_SE_M_SCRATCH: @ 0x0886B514
 	@ M4A song header: song 155 (SE_M_SCRATCH)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SCRATCH_01
 
 	.globl SongTrack_SE_M_VICEGRIP_01
@@ -9010,7 +9010,7 @@ SongTrack_SE_M_VICEGRIP_02: @ 0x0886B56A
 	.globl SongHeader_SE_M_VICEGRIP
 SongHeader_SE_M_VICEGRIP: @ 0x0886B57C
 	@ M4A song header: song 156 (SE_M_VICEGRIP)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_VICEGRIP_01
 	.4byte SongTrack_SE_M_VICEGRIP_02
 
@@ -9113,7 +9113,7 @@ SongTrack_SE_M_WING_ATTACK_02: @ 0x0886B5ED
 	.globl SongHeader_SE_M_WING_ATTACK
 SongHeader_SE_M_WING_ATTACK: @ 0x0886B618
 	@ M4A song header: song 157 (SE_M_WING_ATTACK)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_WING_ATTACK_01
 	.4byte SongTrack_SE_M_WING_ATTACK_02
 
@@ -9343,7 +9343,7 @@ SongTrack_SE_M_FLY_02: @ 0x0886B71C
 	.globl SongHeader_SE_M_FLY
 SongHeader_SE_M_FLY: @ 0x0886B77C
 	@ M4A song header: song 158 (SE_M_FLY)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_FLY_01
 	.4byte SongTrack_SE_M_FLY_02
 
@@ -9415,7 +9415,7 @@ SongTrack_SE_M_SAND_ATTACK_02: @ 0x0886B7D5
 	.globl SongHeader_SE_M_SAND_ATTACK
 SongHeader_SE_M_SAND_ATTACK: @ 0x0886B7E4
 	@ M4A song header: song 159 (SE_M_SAND_ATTACK)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SAND_ATTACK_01
 	.4byte SongTrack_SE_M_SAND_ATTACK_02
 
@@ -9458,7 +9458,7 @@ SongTrack_SE_M_RAZOR_WIND2_01: @ 0x0886B7F4
 	.globl SongHeader_SE_M_RAZOR_WIND2
 SongHeader_SE_M_RAZOR_WIND2: @ 0x0886B828
 	@ M4A song header: song 160 (SE_M_RAZOR_WIND2)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_RAZOR_WIND2_01
 
 	.globl SongTrack_SE_M_BITE_01
@@ -9534,7 +9534,7 @@ SongTrack_SE_M_BITE_02: @ 0x0886B892
 	.globl SongHeader_SE_M_BITE
 SongHeader_SE_M_BITE: @ 0x0886B8A4
 	@ M4A song header: song 161 (SE_M_BITE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_BITE_01
 	.4byte SongTrack_SE_M_BITE_02
 
@@ -9600,7 +9600,7 @@ SongTrack_SE_M_HEADBUTT_01: @ 0x0886B8B4
 	.globl SongHeader_SE_M_HEADBUTT
 SongHeader_SE_M_HEADBUTT: @ 0x0886B910
 	@ M4A song header: song 162 (SE_M_HEADBUTT)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_HEADBUTT_01
 
 	.globl SongTrack_SE_M_SURF_01
@@ -9686,7 +9686,7 @@ SongTrack_SE_M_SURF_01: @ 0x0886B91C
 	.globl SongHeader_SE_M_SURF
 SongHeader_SE_M_SURF: @ 0x0886B990
 	@ M4A song header: song 163 (SE_M_SURF)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SURF_01
 
 	.globl SongTrack_SE_M_HYDRO_PUMP_01
@@ -9789,7 +9789,7 @@ SongTrack_SE_M_HYDRO_PUMP_02: @ 0x0886B9EF
 	.globl SongHeader_SE_M_HYDRO_PUMP
 SongHeader_SE_M_HYDRO_PUMP: @ 0x0886BA10
 	@ M4A song header: song 164 (SE_M_HYDRO_PUMP)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_HYDRO_PUMP_01
 	.4byte SongTrack_SE_M_HYDRO_PUMP_02
 
@@ -9893,7 +9893,7 @@ SongTrack_SE_M_WHIRLPOOL_01: @ 0x0886BA20
 	.globl SongHeader_SE_M_WHIRLPOOL
 SongHeader_SE_M_WHIRLPOOL: @ 0x0886BAAC
 	@ M4A song header: song 165 (SE_M_WHIRLPOOL)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_WHIRLPOOL_01
 
 	.globl SongTrack_SE_M_HORN_ATTACK_01
@@ -9940,7 +9940,7 @@ SongTrack_SE_M_HORN_ATTACK_01: @ 0x0886BAB8
 	.globl SongHeader_SE_M_HORN_ATTACK
 SongHeader_SE_M_HORN_ATTACK: @ 0x0886BAF8
 	@ M4A song header: song 166 (SE_M_HORN_ATTACK)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_HORN_ATTACK_01
 
 	.globl SongTrack_SE_M_TAIL_WHIP_01
@@ -9980,7 +9980,7 @@ SongTrack_SE_M_TAIL_WHIP_01: @ 0x0886BB04
 	.globl SongHeader_SE_M_TAIL_WHIP
 SongHeader_SE_M_TAIL_WHIP: @ 0x0886BB38
 	@ M4A song header: song 167 (SE_M_TAIL_WHIP)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_TAIL_WHIP_01
 
 	.globl SongTrack_SE_M_MIST_01
@@ -10052,7 +10052,7 @@ SongTrack_SE_M_MIST_01: @ 0x0886BB44
 	.globl SongHeader_SE_M_MIST
 SongHeader_SE_M_MIST: @ 0x0886BBB0
 	@ M4A song header: song 168 (SE_M_MIST)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_MIST_01
 
 	.globl SongTrack_SE_M_POISON_POWDER_01
@@ -10090,7 +10090,7 @@ SongTrack_SE_M_POISON_POWDER_01: @ 0x0886BBBC
 	.globl SongHeader_SE_M_POISON_POWDER
 SongHeader_SE_M_POISON_POWDER: @ 0x0886BBEC
 	@ M4A song header: song 169 (SE_M_POISON_POWDER)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_POISON_POWDER_01
 
 	.globl SongTrack_SE_M_BIND_01
@@ -10148,7 +10148,7 @@ SongTrack_SE_M_BIND_01: @ 0x0886BBF8
 	.globl SongHeader_SE_M_BIND
 SongHeader_SE_M_BIND: @ 0x0886BC44
 	@ M4A song header: song 170 (SE_M_BIND)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_BIND_01
 
 	.globl SongTrack_SE_M_DRAGON_RAGE_01
@@ -10277,7 +10277,7 @@ SongTrack_SE_M_DRAGON_RAGE_01: @ 0x0886BC50
 	.globl SongHeader_SE_M_DRAGON_RAGE
 SongHeader_SE_M_DRAGON_RAGE: @ 0x0886BD0C
 	@ M4A song header: song 171 (SE_M_DRAGON_RAGE)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_DRAGON_RAGE_01
 
 	.globl SongTrack_SE_M_SING_01
@@ -10495,7 +10495,7 @@ SongTrack_SE_M_SING_03: @ 0x0886BDD9
 	.globl SongHeader_SE_M_SING
 SongHeader_SE_M_SING: @ 0x0886BE3C
 	@ M4A song header: song 172 (SE_M_SING)
-	m4a_song_header 3, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 3, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SING_01
 	.4byte SongTrack_SE_M_SING_02
 	.4byte SongTrack_SE_M_SING_03
@@ -10762,7 +10762,7 @@ SongTrack_SE_M_PERISH_SONG_03: @ 0x0886BF10
 	.globl SongHeader_SE_M_PERISH_SONG
 SongHeader_SE_M_PERISH_SONG: @ 0x0886BF8C
 	@ M4A song header: song 173 (SE_M_PERISH_SONG)
-	m4a_song_header 3, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 3, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_PERISH_SONG_01
 	.4byte SongTrack_SE_M_PERISH_SONG_02
 	.4byte SongTrack_SE_M_PERISH_SONG_03
@@ -10849,7 +10849,7 @@ SongTrack_SE_M_PAY_DAY_01: @ 0x0886BFA0
 	.globl SongHeader_SE_M_PAY_DAY
 SongHeader_SE_M_PAY_DAY: @ 0x0886C018
 	@ M4A song header: song 174 (SE_M_PAY_DAY)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_PAY_DAY_01
 
 	.globl SongTrack_SE_M_DIG_01
@@ -10893,7 +10893,7 @@ SongTrack_SE_M_DIG_01: @ 0x0886C024
 	.globl SongHeader_SE_M_DIG
 SongHeader_SE_M_DIG: @ 0x0886C060
 	@ M4A song header: song 175 (SE_M_DIG)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_DIG_01
 
 	.globl SongTrack_SE_M_DIZZY_PUNCH_01
@@ -10951,7 +10951,7 @@ SongTrack_SE_M_DIZZY_PUNCH_01: @ 0x0886C06C
 	.globl SongHeader_SE_M_DIZZY_PUNCH
 SongHeader_SE_M_DIZZY_PUNCH: @ 0x0886C0C0
 	@ M4A song header: song 176 (SE_M_DIZZY_PUNCH)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_DIZZY_PUNCH_01
 
 	.globl SongTrack_SE_M_SELF_DESTRUCT_01
@@ -11002,7 +11002,7 @@ SongTrack_SE_M_SELF_DESTRUCT_01: @ 0x0886C0CC
 	.globl SongHeader_SE_M_SELF_DESTRUCT
 SongHeader_SE_M_SELF_DESTRUCT: @ 0x0886C10C
 	@ M4A song header: song 177 (SE_M_SELF_DESTRUCT)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SELF_DESTRUCT_01
 
 	.globl SongTrack_SE_M_EXPLOSION_01
@@ -11099,7 +11099,7 @@ SongTrack_SE_M_EXPLOSION_02: @ 0x0886C177
 	.globl SongHeader_SE_M_EXPLOSION
 SongHeader_SE_M_EXPLOSION: @ 0x0886C194
 	@ M4A song header: song 178 (SE_M_EXPLOSION)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_EXPLOSION_01
 	.4byte SongTrack_SE_M_EXPLOSION_02
 
@@ -11232,7 +11232,7 @@ SongTrack_SE_M_ABSORB_2_02: @ 0x0886C203
 	.globl SongHeader_SE_M_ABSORB_2
 SongHeader_SE_M_ABSORB_2: @ 0x0886C250
 	@ M4A song header: song 179 (SE_M_ABSORB_2)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_ABSORB_2_01
 	.4byte SongTrack_SE_M_ABSORB_2_02
 
@@ -11284,7 +11284,7 @@ SongTrack_SE_M_ABSORB_01: @ 0x0886C260
 	.globl SongHeader_SE_M_ABSORB
 SongHeader_SE_M_ABSORB: @ 0x0886C2A8
 	@ M4A song header: song 180 (SE_M_ABSORB)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_ABSORB_01
 
 	.globl SongTrack_SE_M_SCREECH_01
@@ -11373,7 +11373,7 @@ SongTrack_SE_M_SCREECH_02: @ 0x0886C306
 	.globl SongHeader_SE_M_SCREECH
 SongHeader_SE_M_SCREECH: @ 0x0886C324
 	@ M4A song header: song 181 (SE_M_SCREECH)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SCREECH_01
 	.4byte SongTrack_SE_M_SCREECH_02
 
@@ -11520,7 +11520,7 @@ SongTrack_SE_M_BUBBLE_BEAM_01: @ 0x0886C334
 	.globl SongHeader_SE_M_BUBBLE_BEAM
 SongHeader_SE_M_BUBBLE_BEAM: @ 0x0886C3EC
 	@ M4A song header: song 182 (SE_M_BUBBLE_BEAM)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_BUBBLE_BEAM_01
 
 	.globl SongTrack_SE_M_BUBBLE_BEAM2_01
@@ -11630,7 +11630,7 @@ SongTrack_SE_M_BUBBLE_BEAM2_01: @ 0x0886C3F8
 	.globl SongHeader_SE_M_BUBBLE_BEAM2
 SongHeader_SE_M_BUBBLE_BEAM2: @ 0x0886C4A8
 	@ M4A song header: song 183 (SE_M_BUBBLE_BEAM2)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_BUBBLE_BEAM2_01
 
 	.globl SongTrack_SE_M_SUPERSONIC_01
@@ -11771,7 +11771,7 @@ SongTrack_SE_M_SUPERSONIC_01: @ 0x0886C4B4
 	.globl SongHeader_SE_M_SUPERSONIC
 SongHeader_SE_M_SUPERSONIC: @ 0x0886C594
 	@ M4A song header: song 184 (SE_M_SUPERSONIC)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SUPERSONIC_01
 
 	.globl SongTrack_SE_M_BELLY_DRUM_01
@@ -11820,7 +11820,7 @@ SongTrack_SE_M_BELLY_DRUM_01: @ 0x0886C5A0
 	.globl SongHeader_SE_M_BELLY_DRUM
 SongHeader_SE_M_BELLY_DRUM: @ 0x0886C5D4
 	@ M4A song header: song 185 (SE_M_BELLY_DRUM)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_BELLY_DRUM_01
 
 	.globl SongTrack_SE_M_METRONOME_01
@@ -11877,7 +11877,7 @@ SongTrack_SE_M_METRONOME_01: @ 0x0886C5E0
 	.globl SongHeader_SE_M_METRONOME
 SongHeader_SE_M_METRONOME: @ 0x0886C630
 	@ M4A song header: song 186 (SE_M_METRONOME)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_METRONOME_01
 
 	.globl SongTrack_SE_M_BONEMERANG_01
@@ -11912,7 +11912,7 @@ SongTrack_SE_M_BONEMERANG_01: @ 0x0886C63C
 	.globl SongHeader_SE_M_BONEMERANG
 SongHeader_SE_M_BONEMERANG: @ 0x0886C668
 	@ M4A song header: song 187 (SE_M_BONEMERANG)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_BONEMERANG_01
 
 	.globl SongTrack_SE_M_LICK_01
@@ -12021,7 +12021,7 @@ SongTrack_SE_M_LICK_01: @ 0x0886C674
 	.globl SongHeader_SE_M_LICK
 SongHeader_SE_M_LICK: @ 0x0886C71C
 	@ M4A song header: song 188 (SE_M_LICK)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_LICK_01
 
 	.globl SongTrack_SE_M_PSYBEAM_01
@@ -12142,7 +12142,7 @@ SongTrack_SE_M_PSYBEAM_02: @ 0x0886C78F
 	.globl SongHeader_SE_M_PSYBEAM
 SongHeader_SE_M_PSYBEAM: @ 0x0886C7BC
 	@ M4A song header: song 189 (SE_M_PSYBEAM)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_PSYBEAM_01
 	.4byte SongTrack_SE_M_PSYBEAM_02
 
@@ -12211,7 +12211,7 @@ SongTrack_SE_M_FAINT_ATTACK_01: @ 0x0886C7CC
 	.globl SongHeader_SE_M_FAINT_ATTACK
 SongHeader_SE_M_FAINT_ATTACK: @ 0x0886C824
 	@ M4A song header: song 190 (SE_M_FAINT_ATTACK)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_FAINT_ATTACK_01
 
 	.globl SongTrack_SE_M_SWORDS_DANCE_01
@@ -12400,7 +12400,7 @@ SongTrack_SE_M_SWORDS_DANCE_02: @ 0x0886C92A
 	.globl SongHeader_SE_M_SWORDS_DANCE
 SongHeader_SE_M_SWORDS_DANCE: @ 0x0886C948
 	@ M4A song header: song 191 (SE_M_SWORDS_DANCE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SWORDS_DANCE_01
 	.4byte SongTrack_SE_M_SWORDS_DANCE_02
 
@@ -12483,7 +12483,7 @@ SongTrack_SE_M_LEER_02: @ 0x0886C9AB
 	.globl SongHeader_SE_M_LEER
 SongHeader_SE_M_LEER: @ 0x0886C9C4
 	@ M4A song header: song 192 (SE_M_LEER)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_LEER_01
 	.4byte SongTrack_SE_M_LEER_02
 
@@ -12541,7 +12541,7 @@ SongTrack_SE_M_SWAGGER_01: @ 0x0886C9D4
 	.globl SongHeader_SE_M_SWAGGER
 SongHeader_SE_M_SWAGGER: @ 0x0886CA20
 	@ M4A song header: song 193 (SE_M_SWAGGER)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SWAGGER_01
 
 	.globl SongTrack_SE_M_SWAGGER2_01
@@ -12575,7 +12575,7 @@ SongTrack_SE_M_SWAGGER2_01: @ 0x0886CA2C
 	.globl SongHeader_SE_M_SWAGGER2
 SongHeader_SE_M_SWAGGER2: @ 0x0886CA58
 	@ M4A song header: song 194 (SE_M_SWAGGER2)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SWAGGER2_01
 
 	.globl SongTrack_SE_M_HEAL_BELL_01
@@ -12635,7 +12635,7 @@ SongTrack_SE_M_HEAL_BELL_01: @ 0x0886CA64
 	.globl SongHeader_SE_M_HEAL_BELL
 SongHeader_SE_M_HEAL_BELL: @ 0x0886CAA8
 	@ M4A song header: song 195 (SE_M_HEAL_BELL)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_HEAL_BELL_01
 
 	.globl SongTrack_SE_M_CONFUSE_RAY_01
@@ -12730,7 +12730,7 @@ SongTrack_SE_M_CONFUSE_RAY_01: @ 0x0886CAB4
 	.globl SongHeader_SE_M_CONFUSE_RAY
 SongHeader_SE_M_CONFUSE_RAY: @ 0x0886CB34
 	@ M4A song header: song 196 (SE_M_CONFUSE_RAY)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_CONFUSE_RAY_01
 
 	.globl SongTrack_SE_M_SNORE_01
@@ -12811,7 +12811,7 @@ SongTrack_SE_M_SNORE_02: @ 0x0886CB75
 	.globl SongHeader_SE_M_SNORE
 SongHeader_SE_M_SNORE: @ 0x0886CB98
 	@ M4A song header: song 197 (SE_M_SNORE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SNORE_01
 	.4byte SongTrack_SE_M_SNORE_02
 
@@ -12889,7 +12889,7 @@ SongTrack_SE_M_BRICK_BREAK_02: @ 0x0886CBE9
 	.globl SongHeader_SE_M_BRICK_BREAK
 SongHeader_SE_M_BRICK_BREAK: @ 0x0886CC10
 	@ M4A song header: song 198 (SE_M_BRICK_BREAK)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_BRICK_BREAK_01
 	.4byte SongTrack_SE_M_BRICK_BREAK_02
 
@@ -12949,7 +12949,7 @@ SongTrack_SE_M_GIGA_DRAIN_01: @ 0x0886CC20
 	.globl SongHeader_SE_M_GIGA_DRAIN
 SongHeader_SE_M_GIGA_DRAIN: @ 0x0886CC78
 	@ M4A song header: song 199 (SE_M_GIGA_DRAIN)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_GIGA_DRAIN_01
 
 	.globl SongTrack_SE_M_PSYBEAM2_01
@@ -13145,7 +13145,7 @@ SongTrack_SE_M_PSYBEAM2_01: @ 0x0886CC84
 	.globl SongHeader_SE_M_PSYBEAM2
 SongHeader_SE_M_PSYBEAM2: @ 0x0886CDCC
 	@ M4A song header: song 200 (SE_M_PSYBEAM2)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_PSYBEAM2_01
 
 	.globl SongTrack_SE_M_SOLAR_BEAM_01
@@ -13288,7 +13288,7 @@ SongTrack_SE_M_SOLAR_BEAM_01: @ 0x0886CDD8
 	.globl SongHeader_SE_M_SOLAR_BEAM
 SongHeader_SE_M_SOLAR_BEAM: @ 0x0886CEA0
 	@ M4A song header: song 201 (SE_M_SOLAR_BEAM)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SOLAR_BEAM_01
 
 	.globl SongTrack_SE_M_PETAL_DANCE_01
@@ -13470,7 +13470,7 @@ SongTrack_SE_M_PETAL_DANCE_02: @ 0x0886CF49
 	.globl SongHeader_SE_M_PETAL_DANCE
 SongHeader_SE_M_PETAL_DANCE: @ 0x0886CFB0
 	@ M4A song header: song 202 (SE_M_PETAL_DANCE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_PETAL_DANCE_01
 	.4byte SongTrack_SE_M_PETAL_DANCE_02
 
@@ -13614,7 +13614,7 @@ SongTrack_SE_M_TELEPORT_01: @ 0x0886CFC0
 	.globl SongHeader_SE_M_TELEPORT
 SongHeader_SE_M_TELEPORT: @ 0x0886D094
 	@ M4A song header: song 203 (SE_M_TELEPORT)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_TELEPORT_01
 
 	.globl SongTrack_SE_M_MINIMIZE_01
@@ -13757,7 +13757,7 @@ SongTrack_SE_M_MINIMIZE_01: @ 0x0886D0A0
 	.globl SongHeader_SE_M_MINIMIZE
 SongHeader_SE_M_MINIMIZE: @ 0x0886D174
 	@ M4A song header: song 204 (SE_M_MINIMIZE)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_MINIMIZE_01
 
 	.globl SongTrack_SE_M_SKETCH_01
@@ -13804,7 +13804,7 @@ SongTrack_SE_M_SKETCH_01: @ 0x0886D180
 	.globl SongHeader_SE_M_SKETCH
 SongHeader_SE_M_SKETCH: @ 0x0886D1C0
 	@ M4A song header: song 205 (SE_M_SKETCH)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SKETCH_01
 
 	.globl SongTrack_SE_M_SWIFT_01
@@ -13892,7 +13892,7 @@ SongTrack_SE_M_SWIFT_02: @ 0x0886D239
 	.globl SongHeader_SE_M_SWIFT
 SongHeader_SE_M_SWIFT: @ 0x0886D24C
 	@ M4A song header: song 206 (SE_M_SWIFT)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SWIFT_01
 	.4byte SongTrack_SE_M_SWIFT_02
 
@@ -14137,7 +14137,7 @@ SongTrack_SE_M_REFLECT_02: @ 0x0886D374
 	.globl SongHeader_SE_M_REFLECT
 SongHeader_SE_M_REFLECT: @ 0x0886D3DC
 	@ M4A song header: song 207 (SE_M_REFLECT)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_REFLECT_01
 	.4byte SongTrack_SE_M_REFLECT_02
 
@@ -14389,7 +14389,7 @@ SongTrack_SE_M_BARRIER_02: @ 0x0886D514
 	.globl SongHeader_SE_M_BARRIER
 SongHeader_SE_M_BARRIER: @ 0x0886D57C
 	@ M4A song header: song 208 (SE_M_BARRIER)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_BARRIER_01
 	.4byte SongTrack_SE_M_BARRIER_02
 
@@ -14462,7 +14462,7 @@ SongTrack_SE_M_DETECT_01: @ 0x0886D58C
 	.globl SongHeader_SE_M_DETECT
 SongHeader_SE_M_DETECT: @ 0x0886D5EC
 	@ M4A song header: song 209 (SE_M_DETECT)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_DETECT_01
 
 	.globl SongTrack_SE_M_LOCK_ON_01
@@ -14509,7 +14509,7 @@ SongTrack_SE_M_LOCK_ON_01: @ 0x0886D5F8
 	.globl SongHeader_SE_M_LOCK_ON
 SongHeader_SE_M_LOCK_ON: @ 0x0886D63C
 	@ M4A song header: song 210 (SE_M_LOCK_ON)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_LOCK_ON_01
 
 	.globl SongTrack_SE_M_MOONLIGHT_01
@@ -14687,7 +14687,7 @@ SongTrack_SE_M_MOONLIGHT_02: @ 0x0886D6DE
 	.globl SongHeader_SE_M_MOONLIGHT
 SongHeader_SE_M_MOONLIGHT: @ 0x0886D760
 	@ M4A song header: song 211 (SE_M_MOONLIGHT)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_MOONLIGHT_01
 	.4byte SongTrack_SE_M_MOONLIGHT_02
 
@@ -14763,7 +14763,7 @@ SongTrack_SE_M_CHARM_01: @ 0x0886D770
 	.globl SongHeader_SE_M_CHARM
 SongHeader_SE_M_CHARM: @ 0x0886D7E0
 	@ M4A song header: song 212 (SE_M_CHARM)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_CHARM_01
 
 	.globl SongTrack_SE_M_CHARGE_01
@@ -14929,7 +14929,7 @@ SongTrack_SE_M_CHARGE_01: @ 0x0886D7EC
 	.globl SongHeader_SE_M_CHARGE
 SongHeader_SE_M_CHARGE: @ 0x0886D8D0
 	@ M4A song header: song 213 (SE_M_CHARGE)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_CHARGE_01
 
 	.globl SongTrack_SE_M_STRENGTH_01
@@ -14990,7 +14990,7 @@ SongTrack_SE_M_STRENGTH_02: @ 0x0886D90D
 	.globl SongHeader_SE_M_STRENGTH
 SongHeader_SE_M_STRENGTH: @ 0x0886D934
 	@ M4A song header: song 214 (SE_M_STRENGTH)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_STRENGTH_01
 	.4byte SongTrack_SE_M_STRENGTH_02
 
@@ -15050,7 +15050,7 @@ SongTrack_SE_M_HYPER_BEAM_02: @ 0x0886D972
 	.globl SongHeader_SE_M_HYPER_BEAM
 SongHeader_SE_M_HYPER_BEAM: @ 0x0886D990
 	@ M4A song header: song 215 (SE_M_HYPER_BEAM)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_HYPER_BEAM_01
 	.4byte SongTrack_SE_M_HYPER_BEAM_02
 
@@ -15163,7 +15163,7 @@ SongTrack_SE_M_WATERFALL_02: @ 0x0886DA1D
 	.globl SongHeader_SE_M_WATERFALL
 SongHeader_SE_M_WATERFALL: @ 0x0886DA44
 	@ M4A song header: song 216 (SE_M_WATERFALL)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_WATERFALL_01
 	.4byte SongTrack_SE_M_WATERFALL_02
 
@@ -15478,7 +15478,7 @@ SongTrack_SE_M_REVERSAL_02: @ 0x0886DBBB
 	.globl SongHeader_SE_M_REVERSAL
 SongHeader_SE_M_REVERSAL: @ 0x0886DC40
 	@ M4A song header: song 217 (SE_M_REVERSAL)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_REVERSAL_01
 	.4byte SongTrack_SE_M_REVERSAL_02
 
@@ -15659,7 +15659,7 @@ SongTrack_SE_M_ACID_ARMOR_01: @ 0x0886DC50
 	.globl SongHeader_SE_M_ACID_ARMOR
 SongHeader_SE_M_ACID_ARMOR: @ 0x0886DD60
 	@ M4A song header: song 218 (SE_M_ACID_ARMOR)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_ACID_ARMOR_01
 
 	.globl SongTrack_SE_M_SANDSTORM_01
@@ -15833,7 +15833,7 @@ SongTrack_SE_M_SANDSTORM_02: @ 0x0886DE02
 	.globl SongHeader_SE_M_SANDSTORM
 SongHeader_SE_M_SANDSTORM: @ 0x0886DE5C
 	@ M4A song header: song 219 (SE_M_SANDSTORM)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SANDSTORM_01
 	.4byte SongTrack_SE_M_SANDSTORM_02
 
@@ -15910,7 +15910,7 @@ SongTrack_SE_M_TRI_ATTACK_02: @ 0x0886DEB2
 	.globl SongHeader_SE_M_TRI_ATTACK
 SongHeader_SE_M_TRI_ATTACK: @ 0x0886DECC
 	@ M4A song header: song 220 (SE_M_TRI_ATTACK)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_TRI_ATTACK_01
 	.4byte SongTrack_SE_M_TRI_ATTACK_02
 
@@ -16012,7 +16012,7 @@ SongTrack_SE_M_TRI_ATTACK2_02: @ 0x0886DF53
 	.globl SongHeader_SE_M_TRI_ATTACK2
 SongHeader_SE_M_TRI_ATTACK2: @ 0x0886DF64
 	@ M4A song header: song 221 (SE_M_TRI_ATTACK2)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_TRI_ATTACK2_01
 	.4byte SongTrack_SE_M_TRI_ATTACK2_02
 
@@ -16050,7 +16050,7 @@ SongTrack_SE_M_ENCORE_01: @ 0x0886DF74
 	.globl SongHeader_SE_M_ENCORE
 SongHeader_SE_M_ENCORE: @ 0x0886DF9C
 	@ M4A song header: song 222 (SE_M_ENCORE)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_ENCORE_01
 
 	.globl SongTrack_SE_M_ENCORE2_01
@@ -16196,7 +16196,7 @@ SongTrack_SE_M_ENCORE2_01: @ 0x0886DFA8
 	.globl SongHeader_SE_M_ENCORE2
 SongHeader_SE_M_ENCORE2: @ 0x0886E074
 	@ M4A song header: song 223 (SE_M_ENCORE2)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_ENCORE2_01
 
 	.globl SongTrack_SE_M_BATON_PASS_01
@@ -16341,7 +16341,7 @@ SongTrack_SE_M_BATON_PASS_02: @ 0x0886E129
 	.globl SongHeader_SE_M_BATON_PASS
 SongHeader_SE_M_BATON_PASS: @ 0x0886E14C
 	@ M4A song header: song 224 (SE_M_BATON_PASS)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_BATON_PASS_01
 	.4byte SongTrack_SE_M_BATON_PASS_02
 
@@ -16448,7 +16448,7 @@ SongTrack_SE_M_MILK_DRINK_02: @ 0x0886E1E1
 	.globl SongHeader_SE_M_MILK_DRINK
 SongHeader_SE_M_MILK_DRINK: @ 0x0886E1F8
 	@ M4A song header: song 225 (SE_M_MILK_DRINK)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_MILK_DRINK_01
 	.4byte SongTrack_SE_M_MILK_DRINK_02
 
@@ -16552,7 +16552,7 @@ SongTrack_SE_M_ATTRACT_02: @ 0x0886E254
 	.globl SongHeader_SE_M_ATTRACT
 SongHeader_SE_M_ATTRACT: @ 0x0886E290
 	@ M4A song header: song 226 (SE_M_ATTRACT)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_ATTRACT_01
 	.4byte SongTrack_SE_M_ATTRACT_02
 
@@ -16656,7 +16656,7 @@ SongTrack_SE_M_ATTRACT2_02: @ 0x0886E2E3
 	.globl SongHeader_SE_M_ATTRACT2
 SongHeader_SE_M_ATTRACT2: @ 0x0886E328
 	@ M4A song header: song 227 (SE_M_ATTRACT2)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_ATTRACT2_01
 	.4byte SongTrack_SE_M_ATTRACT2_02
 
@@ -16769,7 +16769,7 @@ SongTrack_SE_M_MORNING_SUN_02: @ 0x0886E391
 	.globl SongHeader_SE_M_MORNING_SUN
 SongHeader_SE_M_MORNING_SUN: @ 0x0886E3D0
 	@ M4A song header: song 228 (SE_M_MORNING_SUN)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_MORNING_SUN_01
 	.4byte SongTrack_SE_M_MORNING_SUN_02
 
@@ -16816,7 +16816,7 @@ SongTrack_SE_M_FLATTER_01: @ 0x0886E3E0
 	.globl SongHeader_SE_M_FLATTER
 SongHeader_SE_M_FLATTER: @ 0x0886E41C
 	@ M4A song header: song 229 (SE_M_FLATTER)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_FLATTER_01
 
 	.globl SongTrack_SE_M_SAND_TOMB_01
@@ -16990,7 +16990,7 @@ SongTrack_SE_M_SAND_TOMB_02: @ 0x0886E4BE
 	.globl SongHeader_SE_M_SAND_TOMB
 SongHeader_SE_M_SAND_TOMB: @ 0x0886E518
 	@ M4A song header: song 230 (SE_M_SAND_TOMB)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SAND_TOMB_01
 	.4byte SongTrack_SE_M_SAND_TOMB_02
 
@@ -17098,7 +17098,7 @@ SongTrack_SE_M_GRASSWHISTLE_02: @ 0x0886E567
 	.globl SongHeader_SE_M_GRASSWHISTLE
 SongHeader_SE_M_GRASSWHISTLE: @ 0x0886E5AC
 	@ M4A song header: song 231 (SE_M_GRASSWHISTLE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_GRASSWHISTLE_01
 	.4byte SongTrack_SE_M_GRASSWHISTLE_02
 
@@ -17163,7 +17163,7 @@ SongTrack_SE_M_SPIT_UP_02: @ 0x0886E5FD
 	.globl SongHeader_SE_M_SPIT_UP
 SongHeader_SE_M_SPIT_UP: @ 0x0886E610
 	@ M4A song header: song 232 (SE_M_SPIT_UP)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SPIT_UP_01
 	.4byte SongTrack_SE_M_SPIT_UP_02
 
@@ -17263,7 +17263,7 @@ SongTrack_SE_M_DIVE_02: @ 0x0886E68E
 	.globl SongHeader_SE_M_DIVE
 SongHeader_SE_M_DIVE: @ 0x0886E6AC
 	@ M4A song header: song 233 (SE_M_DIVE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_DIVE_01
 	.4byte SongTrack_SE_M_DIVE_02
 
@@ -17538,7 +17538,7 @@ SongTrack_SE_M_EARTHQUAKE_02: @ 0x0886E80D
 	.globl SongHeader_SE_M_EARTHQUAKE
 SongHeader_SE_M_EARTHQUAKE: @ 0x0886E8B4
 	@ M4A song header: song 234 (SE_M_EARTHQUAKE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_EARTHQUAKE_01
 	.4byte SongTrack_SE_M_EARTHQUAKE_02
 
@@ -17726,7 +17726,7 @@ SongTrack_SE_M_TWISTER_02: @ 0x0886E982
 	.globl SongHeader_SE_M_TWISTER
 SongHeader_SE_M_TWISTER: @ 0x0886E9B0
 	@ M4A song header: song 235 (SE_M_TWISTER)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_TWISTER_01
 	.4byte SongTrack_SE_M_TWISTER_02
 
@@ -17897,7 +17897,7 @@ SongTrack_SE_M_SWEET_SCENT_02: @ 0x0886EA33
 	.globl SongHeader_SE_M_SWEET_SCENT
 SongHeader_SE_M_SWEET_SCENT: @ 0x0886EAA0
 	@ M4A song header: song 236 (SE_M_SWEET_SCENT)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SWEET_SCENT_01
 	.4byte SongTrack_SE_M_SWEET_SCENT_02
 
@@ -18004,7 +18004,7 @@ SongTrack_SE_M_YAWN_02: @ 0x0886EB04
 	.globl SongHeader_SE_M_YAWN
 SongHeader_SE_M_YAWN: @ 0x0886EB24
 	@ M4A song header: song 237 (SE_M_YAWN)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_YAWN_01
 	.4byte SongTrack_SE_M_YAWN_02
 
@@ -18085,7 +18085,7 @@ SongTrack_SE_M_SKY_UPPERCUT_02: @ 0x0886EB81
 	.globl SongHeader_SE_M_SKY_UPPERCUT
 SongHeader_SE_M_SKY_UPPERCUT: @ 0x0886EB98
 	@ M4A song header: song 238 (SE_M_SKY_UPPERCUT)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_SKY_UPPERCUT_01
 	.4byte SongTrack_SE_M_SKY_UPPERCUT_02
 
@@ -18346,7 +18346,7 @@ SongTrack_SE_M_STAT_INCREASE_02: @ 0x0886ECD2
 	.globl SongHeader_SE_M_STAT_INCREASE
 SongHeader_SE_M_STAT_INCREASE: @ 0x0886ED18
 	@ M4A song header: song 239 (SE_M_STAT_INCREASE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_STAT_INCREASE_01
 	.4byte SongTrack_SE_M_STAT_INCREASE_02
 
@@ -18531,7 +18531,7 @@ SongTrack_SE_M_HEAT_WAVE_02: @ 0x0886EDED
 	.globl SongHeader_SE_M_HEAT_WAVE
 SongHeader_SE_M_HEAT_WAVE: @ 0x0886EE1C
 	@ M4A song header: song 240 (SE_M_HEAT_WAVE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_HEAT_WAVE_01
 	.4byte SongTrack_SE_M_HEAT_WAVE_02
 
@@ -18596,7 +18596,7 @@ SongTrack_SE_M_UPROAR_01: @ 0x0886EE2C
 	.globl SongHeader_SE_M_UPROAR
 SongHeader_SE_M_UPROAR: @ 0x0886EE7C
 	@ M4A song header: song 241 (SE_M_UPROAR)
-	m4a_song_header 1, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 1, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_UPROAR_01
 
 	.globl SongTrack_SE_M_HAIL_01
@@ -18671,7 +18671,7 @@ SongTrack_SE_M_HAIL_02: @ 0x0886EECD
 	.globl SongHeader_SE_M_HAIL
 SongHeader_SE_M_HAIL: @ 0x0886EEEC
 	@ M4A song header: song 242 (SE_M_HAIL)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_HAIL_01
 	.4byte SongTrack_SE_M_HAIL_02
 
@@ -18857,7 +18857,7 @@ SongTrack_SE_M_COSMIC_POWER_02: @ 0x0886EF9A
 	.globl SongHeader_SE_M_COSMIC_POWER
 SongHeader_SE_M_COSMIC_POWER: @ 0x0886F008
 	@ M4A song header: song 243 (SE_M_COSMIC_POWER)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_COSMIC_POWER_01
 	.4byte SongTrack_SE_M_COSMIC_POWER_02
 
@@ -18956,7 +18956,7 @@ SongTrack_SE_M_TEETER_DANCE_02: @ 0x0886F071
 	.globl SongHeader_SE_M_TEETER_DANCE
 SongHeader_SE_M_TEETER_DANCE: @ 0x0886F0AC
 	@ M4A song header: song 244 (SE_M_TEETER_DANCE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_TEETER_DANCE_01
 	.4byte SongTrack_SE_M_TEETER_DANCE_02
 
@@ -19205,7 +19205,7 @@ SongTrack_SE_M_STAT_DECREASE_02: @ 0x0886F1D4
 	.globl SongHeader_SE_M_STAT_DECREASE
 SongHeader_SE_M_STAT_DECREASE: @ 0x0886F21C
 	@ M4A song header: song 245 (SE_M_STAT_DECREASE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_STAT_DECREASE_01
 	.4byte SongTrack_SE_M_STAT_DECREASE_02
 
@@ -19433,7 +19433,7 @@ SongTrack_SE_M_HAZE_02: @ 0x0886F312
 	.globl SongHeader_SE_M_HAZE
 SongHeader_SE_M_HAZE: @ 0x0886F350
 	@ M4A song header: song 246 (SE_M_HAZE)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_HAZE_01
 	.4byte SongTrack_SE_M_HAZE_02
 
@@ -19523,7 +19523,7 @@ SongTrack_SE_M_HYPER_BEAM2_02: @ 0x0886F3B7
 	.globl SongHeader_SE_M_HYPER_BEAM2
 SongHeader_SE_M_HYPER_BEAM2: @ 0x0886F3D4
 	@ M4A song header: song 247 (SE_M_HYPER_BEAM2)
-	m4a_song_header 2, 0, 4, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 4, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_M_HYPER_BEAM2_01
 	.4byte SongTrack_SE_M_HYPER_BEAM2_02
 
@@ -19587,7 +19587,7 @@ SongTrack_SE_RG_DOOR_02: @ 0x0886F3FF
 	.globl SongHeader_SE_RG_DOOR
 SongHeader_SE_RG_DOOR: @ 0x0886F42C
 	@ M4A song header: song 248 (SE_RG_DOOR)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_RG_DOOR_01
 	.4byte SongTrack_SE_RG_DOOR_02
 
@@ -19614,7 +19614,7 @@ SongTrack_SE_RG_CARD_FLIP_01: @ 0x0886F43C
 	.globl SongHeader_SE_RG_CARD_FLIP
 SongHeader_SE_RG_CARD_FLIP: @ 0x0886F45C
 	@ M4A song header: song 249 (SE_RG_CARD_FLIP)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_RG_CARD_FLIP_01
 
 	.globl SongTrack_SE_RG_CARD_FLIPPING_01
@@ -19656,7 +19656,7 @@ SongTrack_SE_RG_CARD_FLIPPING_01: @ 0x0886F468
 	.globl SongHeader_SE_RG_CARD_FLIPPING
 SongHeader_SE_RG_CARD_FLIPPING: @ 0x0886F494
 	@ M4A song header: song 250 (SE_RG_CARD_FLIPPING)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_RG_CARD_FLIPPING_01
 
 	.globl SongTrack_SE_RG_CARD_OPEN_01
@@ -19743,7 +19743,7 @@ SongTrack_SE_RG_CARD_OPEN_02: @ 0x0886F509
 	.globl SongHeader_SE_RG_CARD_OPEN
 SongHeader_SE_RG_CARD_OPEN: @ 0x0886F520
 	@ M4A song header: song 251 (SE_RG_CARD_OPEN)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_RG_CARD_OPEN_01
 	.4byte SongTrack_SE_RG_CARD_OPEN_02
 
@@ -19781,7 +19781,7 @@ SongTrack_SE_RG_BAG_CURSOR_02: @ 0x0886F546
 	.globl SongHeader_SE_RG_BAG_CURSOR
 SongHeader_SE_RG_BAG_CURSOR: @ 0x0886F558
 	@ M4A song header: song 252 (SE_RG_BAG_CURSOR)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_RG_BAG_CURSOR_01
 	.4byte SongTrack_SE_RG_BAG_CURSOR_02
 
@@ -19824,7 +19824,7 @@ SongTrack_SE_RG_BAG_POCKET_02: @ 0x0886F580
 	.globl SongHeader_SE_RG_BAG_POCKET
 SongHeader_SE_RG_BAG_POCKET: @ 0x0886F59C
 	@ M4A song header: song 253 (SE_RG_BAG_POCKET)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_RG_BAG_POCKET_01
 	.4byte SongTrack_SE_RG_BAG_POCKET_02
 
@@ -19871,7 +19871,7 @@ SongTrack_SE_RG_BALL_CLICK_02: @ 0x0886F5C9
 	.globl SongHeader_SE_RG_BALL_CLICK
 SongHeader_SE_RG_BALL_CLICK: @ 0x0886F5DC
 	@ M4A song header: song 254 (SE_RG_BALL_CLICK)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_RG_BALL_CLICK_01
 	.4byte SongTrack_SE_RG_BALL_CLICK_02
 
@@ -19896,7 +19896,7 @@ SongTrack_SE_RG_SHOP_01: @ 0x0886F5EC
 	.globl SongHeader_SE_RG_SHOP
 SongHeader_SE_RG_SHOP: @ 0x0886F604
 	@ M4A song header: song 255 (SE_RG_SHOP)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_RG_SHOP_01
 
 	.globl SongTrack_SE_RG_SS_ANNE_HORN_01
@@ -20035,7 +20035,7 @@ SongTrack_SE_RG_SS_ANNE_HORN_02: @ 0x0886F687
 	.globl SongHeader_SE_RG_SS_ANNE_HORN
 SongHeader_SE_RG_SS_ANNE_HORN: @ 0x0886F6BC
 	@ M4A song header: song 256 (SE_RG_SS_ANNE_HORN)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_RG_SS_ANNE_HORN_01
 	.4byte SongTrack_SE_RG_SS_ANNE_HORN_02
 
@@ -20096,7 +20096,7 @@ SongTrack_SE_RG_HELP_OPEN_01: @ 0x0886F6CC
 	.globl SongHeader_SE_RG_HELP_OPEN
 SongHeader_SE_RG_HELP_OPEN: @ 0x0886F730
 	@ M4A song header: song 257 (SE_RG_HELP_OPEN)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_RG_HELP_OPEN_01
 
 	.globl SongTrack_SE_RG_HELP_CLOSE_01
@@ -20156,7 +20156,7 @@ SongTrack_SE_RG_HELP_CLOSE_01: @ 0x0886F73C
 	.globl SongHeader_SE_RG_HELP_CLOSE
 SongHeader_SE_RG_HELP_CLOSE: @ 0x0886F79C
 	@ M4A song header: song 258 (SE_RG_HELP_CLOSE)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_RG_HELP_CLOSE_01
 
 	.globl SongTrack_SE_RG_HELP_ERROR_01
@@ -20198,7 +20198,7 @@ SongTrack_SE_RG_HELP_ERROR_01: @ 0x0886F7A8
 	.globl SongHeader_SE_RG_HELP_ERROR
 SongHeader_SE_RG_HELP_ERROR: @ 0x0886F7E4
 	@ M4A song header: song 259 (SE_RG_HELP_ERROR)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_RG_HELP_ERROR_01
 
 	.globl SongTrack_SE_RG_DEOXYS_MOVE_01
@@ -20378,7 +20378,7 @@ SongTrack_SE_RG_DEOXYS_MOVE_03: @ 0x0886F863
 	.globl SongHeader_SE_RG_DEOXYS_MOVE
 SongHeader_SE_RG_DEOXYS_MOVE: @ 0x0886F8C4
 	@ M4A song header: song 260 (SE_RG_DEOXYS_MOVE)
-	m4a_song_header 3, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 3, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_RG_DEOXYS_MOVE_01
 	.4byte SongTrack_SE_RG_DEOXYS_MOVE_02
 	.4byte SongTrack_SE_RG_DEOXYS_MOVE_03
@@ -20512,7 +20512,7 @@ SongTrack_SE_RG_POKE_JUMP_SUCCESS_02: @ 0x0886F937
 	.globl SongHeader_SE_RG_POKE_JUMP_SUCCESS
 SongHeader_SE_RG_POKE_JUMP_SUCCESS: @ 0x0886F984
 	@ M4A song header: song 261 (SE_RG_POKE_JUMP_SUCCESS)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08625214
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08625214
 	.4byte SongTrack_SE_RG_POKE_JUMP_SUCCESS_01
 	.4byte SongTrack_SE_RG_POKE_JUMP_SUCCESS_02
 
@@ -20546,7 +20546,7 @@ SongTrack_SE_RG_POKE_JUMP_FAILURE_01: @ 0x0886F994
 	.globl SongHeader_SE_RG_POKE_JUMP_FAILURE
 SongHeader_SE_RG_POKE_JUMP_FAILURE: @ 0x0886F9B8
 	@ M4A song header: song 262 (SE_RG_POKE_JUMP_FAILURE)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08624C14
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08624C14
 	.4byte SongTrack_SE_RG_POKE_JUMP_FAILURE_01
 
 	.globl SongTrack_SE_POKENAV_CALL_01
@@ -20669,7 +20669,7 @@ SongTrack_SE_POKENAV_CALL_02: @ 0x0886F9FD
 	.globl SongHeader_SE_POKENAV_CALL
 SongHeader_SE_POKENAV_CALL: @ 0x0886FA58
 	@ M4A song header: song 263 (SE_POKENAV_CALL)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_POKENAV_CALL_01
 	.4byte SongTrack_SE_POKENAV_CALL_02
 
@@ -20734,7 +20734,7 @@ SongTrack_SE_POKENAV_HANG_UP_02: @ 0x0886FA83
 	.globl SongHeader_SE_POKENAV_HANG_UP
 SongHeader_SE_POKENAV_HANG_UP: @ 0x0886FAB8
 	@ M4A song header: song 264 (SE_POKENAV_HANG_UP)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_POKENAV_HANG_UP_01
 	.4byte SongTrack_SE_POKENAV_HANG_UP_02
 
@@ -20770,7 +20770,7 @@ SongTrack_SE_ARENA_TIMEUP1_02: @ 0x0886FAD9
 	.globl SongHeader_SE_ARENA_TIMEUP1
 SongHeader_SE_ARENA_TIMEUP1: @ 0x0886FAEC
 	@ M4A song header: song 265 (SE_ARENA_TIMEUP1)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_ARENA_TIMEUP1_01
 	.4byte SongTrack_SE_ARENA_TIMEUP1_02
 
@@ -20818,7 +20818,7 @@ SongTrack_SE_ARENA_TIMEUP2_02: @ 0x0886FB18
 	.globl SongHeader_SE_ARENA_TIMEUP2
 SongHeader_SE_ARENA_TIMEUP2: @ 0x0886FB30
 	@ M4A song header: song 266 (SE_ARENA_TIMEUP2)
-	m4a_song_header 2, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 2, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_ARENA_TIMEUP2_01
 	.4byte SongTrack_SE_ARENA_TIMEUP2_02
 
@@ -20961,7 +20961,7 @@ SongTrack_SE_PIKE_CURTAIN_CLOSE_03: @ 0x0886FBD7
 	.globl SongHeader_SE_PIKE_CURTAIN_CLOSE
 SongHeader_SE_PIKE_CURTAIN_CLOSE: @ 0x0886FC04
 	@ M4A song header: song 267 (SE_PIKE_CURTAIN_CLOSE)
-	m4a_song_header 3, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 3, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_PIKE_CURTAIN_CLOSE_01
 	.4byte SongTrack_SE_PIKE_CURTAIN_CLOSE_02
 	.4byte SongTrack_SE_PIKE_CURTAIN_CLOSE_03
@@ -21107,7 +21107,7 @@ SongTrack_SE_PIKE_CURTAIN_OPEN_03: @ 0x0886FCB3
 	.globl SongHeader_SE_PIKE_CURTAIN_OPEN
 SongHeader_SE_PIKE_CURTAIN_OPEN: @ 0x0886FCE0
 	@ M4A song header: song 268 (SE_PIKE_CURTAIN_OPEN)
-	m4a_song_header 3, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 3, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_PIKE_CURTAIN_OPEN_01
 	.4byte SongTrack_SE_PIKE_CURTAIN_OPEN_02
 	.4byte SongTrack_SE_PIKE_CURTAIN_OPEN_03
@@ -21140,7 +21140,7 @@ SongTrack_SE_SUDOWOODO_SHAKE_01: @ 0x0886FCF4
 	.globl SongHeader_SE_SUDOWOODO_SHAKE
 SongHeader_SE_SUDOWOODO_SHAKE: @ 0x0886FD20
 	@ M4A song header: song 269 (SE_SUDOWOODO_SHAKE)
-	m4a_song_header 1, 0, 5, 0xB2, 0x08627C74
+	m4a_song_header 1, 0, 5, 0xB2, VoiceGroup_JP_08627C74
 	.4byte SongTrack_SE_SUDOWOODO_SHAKE_01
 
 	.globl SongTrack_MUS_LITTLEROOT_TEST_01
@@ -22809,7 +22809,7 @@ SongTrack_MUS_LITTLEROOT_TEST_09: @ 0x0887068E
 	.globl SongHeader_MUS_LITTLEROOT_TEST
 SongHeader_MUS_LITTLEROOT_TEST: @ 0x08870718
 	@ M4A song header: song 350 (MUS_LITTLEROOT_TEST)
-	m4a_song_header 9, 0, 0, 0xB2, 0x08605048
+	m4a_song_header 9, 0, 0, 0xB2, VoiceGroup_JP_08605048
 	.4byte SongTrack_MUS_LITTLEROOT_TEST_01
 	.4byte SongTrack_MUS_LITTLEROOT_TEST_02
 	.4byte SongTrack_MUS_LITTLEROOT_TEST_03
@@ -23520,7 +23520,7 @@ SongTrack_MUS_GSC_ROUTE38_04: @ 0x08870A2F
 	.globl SongHeader_MUS_GSC_ROUTE38
 SongHeader_MUS_GSC_ROUTE38: @ 0x08870AF0
 	@ M4A song header: song 351 (MUS_GSC_ROUTE38)
-	m4a_song_header 4, 0, 0, 0xB2, 0x085FD824
+	m4a_song_header 4, 0, 0, 0xB2, VoiceGroup_JP_085FD824
 	.4byte SongTrack_MUS_GSC_ROUTE38_01
 	.4byte SongTrack_MUS_GSC_ROUTE38_02
 	.4byte SongTrack_MUS_GSC_ROUTE38_03
@@ -24348,7 +24348,7 @@ SongTrack_MUS_CAUGHT_07: @ 0x08870E7E
 	.globl SongHeader_MUS_CAUGHT
 SongHeader_MUS_CAUGHT: @ 0x08870F24
 	@ M4A song header: song 352 (MUS_CAUGHT)
-	m4a_song_header 7, 0, 0, 0xB2, 0x08602AD4
+	m4a_song_header 7, 0, 0, 0xB2, VoiceGroup_JP_08602AD4
 	.4byte SongTrack_MUS_CAUGHT_01
 	.4byte SongTrack_MUS_CAUGHT_02
 	.4byte SongTrack_MUS_CAUGHT_03
@@ -25368,7 +25368,7 @@ SongTrack_MUS_VICTORY_WILD_07: @ 0x088713B2
 	.globl SongHeader_MUS_VICTORY_WILD
 SongHeader_MUS_VICTORY_WILD: @ 0x08871454
 	@ M4A song header: song 353 (MUS_VICTORY_WILD)
-	m4a_song_header 7, 0, 0, 0xB2, 0x08602AD4
+	m4a_song_header 7, 0, 0, 0xB2, VoiceGroup_JP_08602AD4
 	.4byte SongTrack_MUS_VICTORY_WILD_01
 	.4byte SongTrack_MUS_VICTORY_WILD_02
 	.4byte SongTrack_MUS_VICTORY_WILD_03
@@ -28259,7 +28259,7 @@ SongTrack_MUS_VICTORY_GYM_LEADER_08: @ 0x088721BD
 	.globl SongHeader_MUS_VICTORY_GYM_LEADER
 SongHeader_MUS_VICTORY_GYM_LEADER: @ 0x08872344
 	@ M4A song header: song 354 (MUS_VICTORY_GYM_LEADER)
-	m4a_song_header 8, 0, 0, 0xB2, 0x08602690
+	m4a_song_header 8, 0, 0, 0xB2, VoiceGroup_JP_08602690
 	.4byte SongTrack_MUS_VICTORY_GYM_LEADER_01
 	.4byte SongTrack_MUS_VICTORY_GYM_LEADER_02
 	.4byte SongTrack_MUS_VICTORY_GYM_LEADER_03
@@ -30549,7 +30549,7 @@ SongTrack_MUS_VICTORY_LEAGUE_08: @ 0x08872DCB
 	.globl SongHeader_MUS_VICTORY_LEAGUE
 SongHeader_MUS_VICTORY_LEAGUE: @ 0x08872ED8
 	@ M4A song header: song 355 (MUS_VICTORY_LEAGUE)
-	m4a_song_header 8, 0, 0, 0xB2, 0x08603CA4
+	m4a_song_header 8, 0, 0, 0xB2, VoiceGroup_JP_08603CA4
 	.4byte SongTrack_MUS_VICTORY_LEAGUE_01
 	.4byte SongTrack_MUS_VICTORY_LEAGUE_02
 	.4byte SongTrack_MUS_VICTORY_LEAGUE_03
@@ -31103,7 +31103,7 @@ SongTrack_MUS_C_COMM_CENTER_03: @ 0x088730F0
 	.globl SongHeader_MUS_C_COMM_CENTER
 SongHeader_MUS_C_COMM_CENTER: @ 0x088731BC
 	@ M4A song header: song 356 (MUS_C_COMM_CENTER)
-	m4a_song_header 3, 0, 0, 0xB2, 0x085FD824
+	m4a_song_header 3, 0, 0, 0xB2, VoiceGroup_JP_085FD824
 	.4byte SongTrack_MUS_C_COMM_CENTER_01
 	.4byte SongTrack_MUS_C_COMM_CENTER_02
 	.4byte SongTrack_MUS_C_COMM_CENTER_03
@@ -32068,7 +32068,7 @@ SongTrack_MUS_GSC_PEWTER_04: @ 0x0887361A
 	.globl SongHeader_MUS_GSC_PEWTER
 SongHeader_MUS_GSC_PEWTER: @ 0x0887377C
 	@ M4A song header: song 357 (MUS_GSC_PEWTER)
-	m4a_song_header 4, 0, 0, 0xB2, 0x085FD824
+	m4a_song_header 4, 0, 0, 0xB2, VoiceGroup_JP_085FD824
 	.4byte SongTrack_MUS_GSC_PEWTER_01
 	.4byte SongTrack_MUS_GSC_PEWTER_02
 	.4byte SongTrack_MUS_GSC_PEWTER_03
@@ -33893,7 +33893,7 @@ SongTrack_MUS_C_VS_LEGEND_BEAST_03: @ 0x08873DC1
 	.globl SongHeader_MUS_C_VS_LEGEND_BEAST
 SongHeader_MUS_C_VS_LEGEND_BEAST: @ 0x08874154
 	@ M4A song header: song 358 (MUS_C_VS_LEGEND_BEAST)
-	m4a_song_header 3, 0, 0, 0xB2, 0x085FD824
+	m4a_song_header 3, 0, 0, 0xB2, VoiceGroup_JP_085FD824
 	.4byte SongTrack_MUS_C_VS_LEGEND_BEAST_01
 	.4byte SongTrack_MUS_C_VS_LEGEND_BEAST_02
 	.4byte SongTrack_MUS_C_VS_LEGEND_BEAST_03
@@ -35511,7 +35511,7 @@ SongTrack_MUS_ROUTE101_08: @ 0x0887490E
 	.globl SongHeader_MUS_ROUTE101
 SongHeader_MUS_ROUTE101: @ 0x08874A20
 	@ M4A song header: song 359 (MUS_ROUTE101)
-	m4a_song_header 8, 0, 0, 0xB2, 0x085FF048
+	m4a_song_header 8, 0, 0, 0xB2, VoiceGroup_JP_085FF048
 	.4byte SongTrack_MUS_ROUTE101_01
 	.4byte SongTrack_MUS_ROUTE101_02
 	.4byte SongTrack_MUS_ROUTE101_03

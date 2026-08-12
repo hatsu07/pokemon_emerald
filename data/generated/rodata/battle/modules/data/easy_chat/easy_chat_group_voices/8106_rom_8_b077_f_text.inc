@@ -1811,7 +1811,7 @@ SongTrack_MUS_INTRO_BATTLE_09: @ 0x088B0FE1
 	.globl SongHeader_MUS_INTRO_BATTLE
 SongHeader_MUS_INTRO_BATTLE: @ 0x088B10F8
 	@ M4A song header: song 442 (MUS_INTRO_BATTLE)
-	m4a_song_header 9, 0, 0, 0xB2, 0x0861799C
+	m4a_song_header 9, 0, 0, 0xB2, VoiceGroup_JP_0861799C
 	.4byte SongTrack_MUS_INTRO_BATTLE_01
 	.4byte SongTrack_MUS_INTRO_BATTLE_02
 	.4byte SongTrack_MUS_INTRO_BATTLE_03
@@ -2828,7 +2828,7 @@ SongTrack_MUS_ABNORMAL_WEATHER_06: @ 0x088B1592
 	.globl SongHeader_MUS_ABNORMAL_WEATHER
 SongHeader_MUS_ABNORMAL_WEATHER: @ 0x088B1758
 	@ M4A song header: song 443 (MUS_ABNORMAL_WEATHER)
-	m4a_song_header 6, 0, 0, 0xB2, 0x08617F9C
+	m4a_song_header 6, 0, 0, 0xB2, VoiceGroup_JP_08617F9C
 	.4byte SongTrack_MUS_ABNORMAL_WEATHER_01
 	.4byte SongTrack_MUS_ABNORMAL_WEATHER_02
 	.4byte SongTrack_MUS_ABNORMAL_WEATHER_03
@@ -3324,7 +3324,7 @@ SongTrack_MUS_WEATHER_GROUDON_03: @ 0x088B1989
 	.globl SongHeader_MUS_WEATHER_GROUDON
 SongHeader_MUS_WEATHER_GROUDON: @ 0x088B1A34
 	@ M4A song header: song 444 (MUS_WEATHER_GROUDON)
-	m4a_song_header 3, 0, 0, 0xB2, 0x0861859C
+	m4a_song_header 3, 0, 0, 0xB2, VoiceGroup_JP_0861859C
 	.4byte SongTrack_MUS_WEATHER_GROUDON_01
 	.4byte SongTrack_MUS_WEATHER_GROUDON_02
 	.4byte SongTrack_MUS_WEATHER_GROUDON_03
@@ -6371,7 +6371,7 @@ SongTrack_MUS_SOOTOPOLIS_08: @ 0x088B271B
 	.globl SongHeader_MUS_SOOTOPOLIS
 SongHeader_MUS_SOOTOPOLIS: @ 0x088B2B10
 	@ M4A song header: song 445 (MUS_SOOTOPOLIS)
-	m4a_song_header 8, 0, 0, 0xB2, 0x08618B9C
+	m4a_song_header 8, 0, 0, 0xB2, VoiceGroup_JP_08618B9C
 	.4byte SongTrack_MUS_SOOTOPOLIS_01
 	.4byte SongTrack_MUS_SOOTOPOLIS_02
 	.4byte SongTrack_MUS_SOOTOPOLIS_03
@@ -7125,7 +7125,7 @@ SongTrack_MUS_CONTEST_RESULTS_08: @ 0x088B2EFA
 	.globl SongHeader_MUS_CONTEST_RESULTS
 SongHeader_MUS_CONTEST_RESULTS: @ 0x088B2F74
 	@ M4A song header: song 446 (MUS_CONTEST_RESULTS)
-	m4a_song_header 8, 0, 0, 0xB2, 0x0861919C
+	m4a_song_header 8, 0, 0, 0xB2, VoiceGroup_JP_0861919C
 	.4byte SongTrack_MUS_CONTEST_RESULTS_01
 	.4byte SongTrack_MUS_CONTEST_RESULTS_02
 	.4byte SongTrack_MUS_CONTEST_RESULTS_03
@@ -8677,7 +8677,7 @@ SongTrack_MUS_HALL_OF_FAME_ROOM_07: @ 0x088B36AB
 	.globl SongHeader_MUS_HALL_OF_FAME_ROOM
 SongHeader_MUS_HALL_OF_FAME_ROOM: @ 0x088B3730
 	@ M4A song header: song 447 (MUS_HALL_OF_FAME_ROOM)
-	m4a_song_header 7, 0, 0, 0xB2, 0x0861979C
+	m4a_song_header 7, 0, 0, 0xB2, VoiceGroup_JP_0861979C
 	.4byte SongTrack_MUS_HALL_OF_FAME_ROOM_01
 	.4byte SongTrack_MUS_HALL_OF_FAME_ROOM_02
 	.4byte SongTrack_MUS_HALL_OF_FAME_ROOM_03
@@ -11504,7 +11504,7 @@ SongTrack_MUS_TRICK_HOUSE_08: @ 0x088B43EE
 	.globl SongHeader_MUS_TRICK_HOUSE
 SongHeader_MUS_TRICK_HOUSE: @ 0x088B4610
 	@ M4A song header: song 448 (MUS_TRICK_HOUSE)
-	m4a_song_header 8, 0, 0, 0xB2, 0x08619D9C
+	m4a_song_header 8, 0, 0, 0xB2, VoiceGroup_JP_08619D9C
 	.4byte SongTrack_MUS_TRICK_HOUSE_01
 	.4byte SongTrack_MUS_TRICK_HOUSE_02
 	.4byte SongTrack_MUS_TRICK_HOUSE_03
@@ -12460,7 +12460,7 @@ SongTrack_MUS_ENCOUNTER_TWINS_10: @ 0x088B4A7D
 	.globl SongHeader_MUS_ENCOUNTER_TWINS
 SongHeader_MUS_ENCOUNTER_TWINS: @ 0x088B4B18
 	@ M4A song header: song 449 (MUS_ENCOUNTER_TWINS)
-	m4a_song_header 10, 0, 0, 0xB2, 0x0861A39C
+	m4a_song_header 10, 0, 0, 0xB2, VoiceGroup_JP_0861A39C
 	.4byte SongTrack_MUS_ENCOUNTER_TWINS_01
 	.4byte SongTrack_MUS_ENCOUNTER_TWINS_02
 	.4byte SongTrack_MUS_ENCOUNTER_TWINS_03
@@ -14730,7 +14730,7 @@ SongTrack_MUS_ENCOUNTER_ELITE_FOUR_09: @ 0x088B5620
 	.globl SongHeader_MUS_ENCOUNTER_ELITE_FOUR
 SongHeader_MUS_ENCOUNTER_ELITE_FOUR: @ 0x088B57A0
 	@ M4A song header: song 450 (MUS_ENCOUNTER_ELITE_FOUR)
-	m4a_song_header 9, 0, 0, 0xB2, 0x0861A99C
+	m4a_song_header 9, 0, 0, 0xB2, VoiceGroup_JP_0861A99C
 	.4byte SongTrack_MUS_ENCOUNTER_ELITE_FOUR_01
 	.4byte SongTrack_MUS_ENCOUNTER_ELITE_FOUR_02
 	.4byte SongTrack_MUS_ENCOUNTER_ELITE_FOUR_03
@@ -15711,7 +15711,7 @@ SongTrack_MUS_ENCOUNTER_HIKER_08: @ 0x088B5C7C
 	.globl SongHeader_MUS_ENCOUNTER_HIKER
 SongHeader_MUS_ENCOUNTER_HIKER: @ 0x088B5D24
 	@ M4A song header: song 451 (MUS_ENCOUNTER_HIKER)
-	m4a_song_header 8, 0, 0, 0xB2, 0x0861AF9C
+	m4a_song_header 8, 0, 0, 0xB2, VoiceGroup_JP_0861AF9C
 	.4byte SongTrack_MUS_ENCOUNTER_HIKER_01
 	.4byte SongTrack_MUS_ENCOUNTER_HIKER_02
 	.4byte SongTrack_MUS_ENCOUNTER_HIKER_03
@@ -16792,7 +16792,7 @@ SongTrack_MUS_CONTEST_LOBBY_08: @ 0x088B6306
 	.globl SongHeader_MUS_CONTEST_LOBBY
 SongHeader_MUS_CONTEST_LOBBY: @ 0x088B63AC
 	@ M4A song header: song 452 (MUS_CONTEST_LOBBY)
-	m4a_song_header 8, 0, 0, 0xB2, 0x0861B59C
+	m4a_song_header 8, 0, 0, 0xB2, VoiceGroup_JP_0861B59C
 	.4byte SongTrack_MUS_CONTEST_LOBBY_01
 	.4byte SongTrack_MUS_CONTEST_LOBBY_02
 	.4byte SongTrack_MUS_CONTEST_LOBBY_03
@@ -17808,7 +17808,7 @@ SongTrack_MUS_ENCOUNTER_INTERVIEWER_09: @ 0x088B689D
 	.globl SongHeader_MUS_ENCOUNTER_INTERVIEWER
 SongHeader_MUS_ENCOUNTER_INTERVIEWER: @ 0x088B6930
 	@ M4A song header: song 453 (MUS_ENCOUNTER_INTERVIEWER)
-	m4a_song_header 9, 0, 0, 0xB2, 0x0861BB9C
+	m4a_song_header 9, 0, 0, 0xB2, VoiceGroup_JP_0861BB9C
 	.4byte SongTrack_MUS_ENCOUNTER_INTERVIEWER_01
 	.4byte SongTrack_MUS_ENCOUNTER_INTERVIEWER_02
 	.4byte SongTrack_MUS_ENCOUNTER_INTERVIEWER_03
@@ -21029,7 +21029,7 @@ SongTrack_MUS_ENCOUNTER_CHAMPION_10: @ 0x088B78E8
 	.globl SongHeader_MUS_ENCOUNTER_CHAMPION
 SongHeader_MUS_ENCOUNTER_CHAMPION: @ 0x088B7A18
 	@ M4A song header: song 454 (MUS_ENCOUNTER_CHAMPION)
-	m4a_song_header 10, 0, 0, 0xB2, 0x0861C19C
+	m4a_song_header 10, 0, 0, 0xB2, VoiceGroup_JP_0861C19C
 	.4byte SongTrack_MUS_ENCOUNTER_CHAMPION_01
 	.4byte SongTrack_MUS_ENCOUNTER_CHAMPION_02
 	.4byte SongTrack_MUS_ENCOUNTER_CHAMPION_03
@@ -28414,7 +28414,7 @@ SongTrack_MUS_CREDITS_10: @ 0x088B9BA1
 	.globl SongHeader_MUS_CREDITS
 SongHeader_MUS_CREDITS: @ 0x088BA044
 	@ M4A song header: song 455 (MUS_CREDITS)
-	m4a_song_header 10, 0, 0, 0xB2, 0x0861C79C
+	m4a_song_header 10, 0, 0, 0xB2, VoiceGroup_JP_0861C79C
 	.4byte SongTrack_MUS_CREDITS_01
 	.4byte SongTrack_MUS_CREDITS_02
 	.4byte SongTrack_MUS_CREDITS_03

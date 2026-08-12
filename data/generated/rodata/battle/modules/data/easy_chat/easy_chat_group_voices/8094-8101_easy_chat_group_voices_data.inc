@@ -120,7 +120,7 @@ SongTrack_MUS_ROUTE110_09: @ 0x088754FE
 	.globl SongHeader_MUS_ROUTE110
 SongHeader_MUS_ROUTE110: @ 0x08875598
 	@ M4A song header: song 360 (MUS_ROUTE110)
-	m4a_song_header 9, 0, 0, 0xB2, 0x085FEC58
+	m4a_song_header 9, 0, 0, 0xB2, VoiceGroup_JP_085FEC58
 	.4byte SongTrack_MUS_ROUTE110_01
 	.4byte SongTrack_MUS_ROUTE110_02
 	.4byte SongTrack_MUS_ROUTE110_03
