@@ -622,6 +622,34 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END ITEM ICON ALL EXACT PIPELINE
 
+    # BEGIN DECORATION ICON ALL EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/decorations/decor_exact/(gDecorIcon[^/]+)[.](4bpp|gbapal)[.]lz$")
+        set(DECOR_ICON_EXACT_KEY "${CMAKE_MATCH_1}")
+        set(DECOR_ICON_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/decorations/decorations_lz77_plan.json")
+
+        file(GLOB DECOR_ICON_EXACT_EDITABLE_SOURCES
+            CONFIGURE_DEPENDS
+            "${CMAKE_SOURCE_DIR}/graphics/decorations/*.png")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/decoration_exact_assets.py"
+                --manifest "${DECOR_ICON_EXACT_MANIFEST}"
+                --key "${DECOR_ICON_EXACT_KEY}"
+                --repo-root "${CMAKE_SOURCE_DIR}"
+                --output "${OUTPUT_ABS}"
+            DEPENDS
+                ${DECOR_ICON_EXACT_EDITABLE_SOURCES}
+                "${DECOR_ICON_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/decoration_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END DECORATION ICON ALL EXACT PIPELINE
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/priority_b/(.+)[.]4bpp[.]lz$")
         set(PRIORITY_B_STEM "${CMAKE_MATCH_1}")
