@@ -36,373 +36,373 @@ gText_Rom_81A06E: @ 0x0881A06E
 DirectSoundWaveData_Cry_334_JP_0881A1BC: @ 0x0881A1BC
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00004C03
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_334_JP_0881A1BC.bin" @ 10036 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_334_JP_0881A1BC.bin" @ 10036 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_335_JP_0881C900
 DirectSoundWaveData_Cry_335_JP_0881C900: @ 0x0881C900
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00001435
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_335_JP_0881C900.bin" @ 2668 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_335_JP_0881C900.bin" @ 2668 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_336_JP_0881D37C
 DirectSoundWaveData_Cry_336_JP_0881D37C: @ 0x0881D37C
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00000F9B
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_336_JP_0881D37C.bin" @ 2064 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_336_JP_0881D37C.bin" @ 2064 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_337_JP_0881DB9C
 DirectSoundWaveData_Cry_337_JP_0881DB9C: @ 0x0881DB9C
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00001FE3
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_337_JP_0881DB9C.bin" @ 4212 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_337_JP_0881DB9C.bin" @ 4212 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_338_JP_0881EC20
 DirectSoundWaveData_Cry_338_JP_0881EC20: @ 0x0881EC20
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00000AEE
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_338_JP_0881EC20.bin" @ 1444 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_338_JP_0881EC20.bin" @ 1444 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_339_JP_0881F1D4
 DirectSoundWaveData_Cry_339_JP_0881F1D4: @ 0x0881F1D4
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x000016D6
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_339_JP_0881F1D4.bin" @ 3016 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_339_JP_0881F1D4.bin" @ 3016 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_340_JP_0881FDAC
 DirectSoundWaveData_Cry_340_JP_0881FDAC: @ 0x0881FDAC
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00004640
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_340_JP_0881FDAC.bin" @ 9276 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_340_JP_0881FDAC.bin" @ 9276 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_341_JP_088221F8
 DirectSoundWaveData_Cry_341_JP_088221F8: @ 0x088221F8
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00002363
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_341_JP_088221F8.bin" @ 4672 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_341_JP_088221F8.bin" @ 4672 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_342_JP_08823448
 DirectSoundWaveData_Cry_342_JP_08823448: @ 0x08823448
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00001EB6
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_342_JP_08823448.bin" @ 4056 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_342_JP_08823448.bin" @ 4056 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_343_JP_08824430
 DirectSoundWaveData_Cry_343_JP_08824430: @ 0x08824430
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00002B55
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_343_JP_08824430.bin" @ 5724 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_343_JP_08824430.bin" @ 5724 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_344_JP_08825A9C
 DirectSoundWaveData_Cry_344_JP_08825A9C: @ 0x08825A9C
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00001294
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_344_JP_08825A9C.bin" @ 2456 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_344_JP_08825A9C.bin" @ 2456 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_345_JP_08826444
 DirectSoundWaveData_Cry_345_JP_08826444: @ 0x08826444
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x0000387C
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_345_JP_08826444.bin" @ 7456 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_345_JP_08826444.bin" @ 7456 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_346_JP_08828174
 DirectSoundWaveData_Cry_346_JP_08828174: @ 0x08828174
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00001693
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_346_JP_08828174.bin" @ 2984 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_346_JP_08828174.bin" @ 2984 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_347_JP_08828D2C
 DirectSoundWaveData_Cry_347_JP_08828D2C: @ 0x08828D2C
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00002C21
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_347_JP_08828D2C.bin" @ 5828 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_347_JP_08828D2C.bin" @ 5828 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_348_JP_0882A400
 DirectSoundWaveData_Cry_348_JP_0882A400: @ 0x0882A400
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x0000128A
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_348_JP_0882A400.bin" @ 2448 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_348_JP_0882A400.bin" @ 2448 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_349_JP_0882ADA0
 DirectSoundWaveData_Cry_349_JP_0882ADA0: @ 0x0882ADA0
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00002464
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_349_JP_0882ADA0.bin" @ 4804 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_349_JP_0882ADA0.bin" @ 4804 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_350_JP_0882C074
 DirectSoundWaveData_Cry_350_JP_0882C074: @ 0x0882C074
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00004C6A
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_350_JP_0882C074.bin" @ 10088 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_350_JP_0882C074.bin" @ 10088 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_351_JP_0882E7EC
 DirectSoundWaveData_Cry_351_JP_0882E7EC: @ 0x0882E7EC
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00000F0B
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_351_JP_0882E7EC.bin" @ 1988 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_351_JP_0882E7EC.bin" @ 1988 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_352_JP_0882EFC0
 DirectSoundWaveData_Cry_352_JP_0882EFC0: @ 0x0882EFC0
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x000026B5
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_352_JP_0882EFC0.bin" @ 5112 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_352_JP_0882EFC0.bin" @ 5112 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_353_JP_088303C8
 DirectSoundWaveData_Cry_353_JP_088303C8: @ 0x088303C8
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00003DA3
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_353_JP_088303C8.bin" @ 8140 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_353_JP_088303C8.bin" @ 8140 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_354_JP_088323A4
 DirectSoundWaveData_Cry_354_JP_088323A4: @ 0x088323A4
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00003DEE
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_354_JP_088323A4.bin" @ 8176 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_354_JP_088323A4.bin" @ 8176 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_355_JP_088343A4
 DirectSoundWaveData_Cry_355_JP_088343A4: @ 0x088343A4
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00002C82
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_355_JP_088343A4.bin" @ 5876 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_355_JP_088343A4.bin" @ 5876 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_356_JP_08835AA8
 DirectSoundWaveData_Cry_356_JP_08835AA8: @ 0x08835AA8
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x0000184B
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_356_JP_08835AA8.bin" @ 3208 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_356_JP_08835AA8.bin" @ 3208 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_357_JP_08836740
 DirectSoundWaveData_Cry_357_JP_08836740: @ 0x08836740
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00001639
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_357_JP_08836740.bin" @ 2936 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_357_JP_08836740.bin" @ 2936 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_358_JP_088372C8
 DirectSoundWaveData_Cry_358_JP_088372C8: @ 0x088372C8
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00002106
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_358_JP_088372C8.bin" @ 4360 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_358_JP_088372C8.bin" @ 4360 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_359_JP_088383E0
 DirectSoundWaveData_Cry_359_JP_088383E0: @ 0x088383E0
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x000011DE
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_359_JP_088383E0.bin" @ 2360 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_359_JP_088383E0.bin" @ 2360 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_360_JP_08838D28
 DirectSoundWaveData_Cry_360_JP_08838D28: @ 0x08838D28
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x000025C1
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_360_JP_08838D28.bin" @ 4988 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_360_JP_08838D28.bin" @ 4988 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_361_JP_0883A0B4
 DirectSoundWaveData_Cry_361_JP_0883A0B4: @ 0x0883A0B4
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00001A77
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_361_JP_0883A0B4.bin" @ 3496 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_361_JP_0883A0B4.bin" @ 3496 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_362_JP_0883AE6C
 DirectSoundWaveData_Cry_362_JP_0883AE6C: @ 0x0883AE6C
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00001670
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_362_JP_0883AE6C.bin" @ 2964 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_362_JP_0883AE6C.bin" @ 2964 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_363_JP_0883BA10
 DirectSoundWaveData_Cry_363_JP_0883BA10: @ 0x0883BA10
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00001629
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_363_JP_0883BA10.bin" @ 2928 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_363_JP_0883BA10.bin" @ 2928 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_364_JP_0883C590
 DirectSoundWaveData_Cry_364_JP_0883C590: @ 0x0883C590
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x000011A6
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_364_JP_0883C590.bin" @ 2332 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_364_JP_0883C590.bin" @ 2332 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_365_JP_0883CEBC
 DirectSoundWaveData_Cry_365_JP_0883CEBC: @ 0x0883CEBC
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00002845
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_365_JP_0883CEBC.bin" @ 5320 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_365_JP_0883CEBC.bin" @ 5320 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_366_JP_0883E394
 DirectSoundWaveData_Cry_366_JP_0883E394: @ 0x0883E394
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00003196
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_366_JP_0883E394.bin" @ 6548 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_366_JP_0883E394.bin" @ 6548 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_367_JP_0883FD38
 DirectSoundWaveData_Cry_367_JP_0883FD38: @ 0x0883FD38
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00002705
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_367_JP_0883FD38.bin" @ 5152 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_367_JP_0883FD38.bin" @ 5152 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_368_JP_08841168
 DirectSoundWaveData_Cry_368_JP_08841168: @ 0x08841168
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00000946
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_368_JP_08841168.bin" @ 1228 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_368_JP_08841168.bin" @ 1228 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_369_JP_08841644
 DirectSoundWaveData_Cry_369_JP_08841644: @ 0x08841644
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x000047B4
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_369_JP_08841644.bin" @ 9468 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_369_JP_08841644.bin" @ 9468 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_370_JP_08843B50
 DirectSoundWaveData_Cry_370_JP_08843B50: @ 0x08843B50
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00004524
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_370_JP_08843B50.bin" @ 9128 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_370_JP_08843B50.bin" @ 9128 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_371_JP_08845F08
 DirectSoundWaveData_Cry_371_JP_08845F08: @ 0x08845F08
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00003871
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_371_JP_08845F08.bin" @ 7452 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_371_JP_08845F08.bin" @ 7452 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_372_JP_08847C34
 DirectSoundWaveData_Cry_372_JP_08847C34: @ 0x08847C34
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x0000308F
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_372_JP_08847C34.bin" @ 6412 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_372_JP_08847C34.bin" @ 6412 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_373_JP_08849550
 DirectSoundWaveData_Cry_373_JP_08849550: @ 0x08849550
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00001896
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_373_JP_08849550.bin" @ 3248 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_373_JP_08849550.bin" @ 3248 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_374_JP_0884A210
 DirectSoundWaveData_Cry_374_JP_0884A210: @ 0x0884A210
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00001102
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_374_JP_0884A210.bin" @ 2248 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_374_JP_0884A210.bin" @ 2248 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_375_JP_0884AAE8
 DirectSoundWaveData_Cry_375_JP_0884AAE8: @ 0x0884AAE8
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00003B3D
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_375_JP_0884AAE8.bin" @ 7820 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_375_JP_0884AAE8.bin" @ 7820 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_376_JP_0884C984
 DirectSoundWaveData_Cry_376_JP_0884C984: @ 0x0884C984
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00003F6C
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_376_JP_0884C984.bin" @ 8372 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_376_JP_0884C984.bin" @ 8372 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_377_JP_0884EA48
 DirectSoundWaveData_Cry_377_JP_0884EA48: @ 0x0884EA48
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x000036E3
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_377_JP_0884EA48.bin" @ 7248 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_377_JP_0884EA48.bin" @ 7248 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_378_JP_088506A8
 DirectSoundWaveData_Cry_378_JP_088506A8: @ 0x088506A8
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00001648
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_378_JP_088506A8.bin" @ 2944 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_378_JP_088506A8.bin" @ 2944 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_379_JP_08851238
 DirectSoundWaveData_Cry_379_JP_08851238: @ 0x08851238
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x000036B4
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_379_JP_08851238.bin" @ 7224 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_379_JP_08851238.bin" @ 7224 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_380_JP_08852E80
 DirectSoundWaveData_Cry_380_JP_08852E80: @ 0x08852E80
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00001964
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_380_JP_08852E80.bin" @ 3352 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_380_JP_08852E80.bin" @ 3352 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_381_JP_08853BA8
 DirectSoundWaveData_Cry_381_JP_08853BA8: @ 0x08853BA8
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x0000516E
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_381_JP_08853BA8.bin" @ 10752 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_381_JP_08853BA8.bin" @ 10752 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_382_JP_088565B8
 DirectSoundWaveData_Cry_382_JP_088565B8: @ 0x088565B8
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00000FA9
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_382_JP_088565B8.bin" @ 2068 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_382_JP_088565B8.bin" @ 2068 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_383_JP_08856DDC
 DirectSoundWaveData_Cry_383_JP_08856DDC: @ 0x08856DDC
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x000020E2
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_383_JP_08856DDC.bin" @ 4344 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_383_JP_08856DDC.bin" @ 4344 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_384_JP_08857EE4
 DirectSoundWaveData_Cry_384_JP_08857EE4: @ 0x08857EE4
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00002A7C
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_384_JP_08857EE4.bin" @ 5608 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_384_JP_08857EE4.bin" @ 5608 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_385_JP_088594DC
 DirectSoundWaveData_Cry_385_JP_088594DC: @ 0x088594DC
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00001A14
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_385_JP_088594DC.bin" @ 3444 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_385_JP_088594DC.bin" @ 3444 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_386_JP_0885A260
 DirectSoundWaveData_Cry_386_JP_0885A260: @ 0x0885A260
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x00002842
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_386_JP_0885A260.bin" @ 5316 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_386_JP_0885A260.bin" @ 5316 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Cry_387_JP_0885B734
 DirectSoundWaveData_Cry_387_JP_0885B734: @ 0x0885B734
 	@ M4A DirectSound WaveData (cry)
 	m4a_wave_data_header 0x00000001, 0x00A44000, 0x00000000, 0x0000135D
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_387_JP_0885B734.bin" @ 2560 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Cry_387_JP_0885B734.bin" @ 2560 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_097_JP_0885C144
 DirectSoundWaveData_Instrument_097_JP_0885C144: @ 0x0885C144
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x00000000, 0x00D10C00, 0x00000000, 0x00001F4F
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_097_JP_0885C144.bin" @ 8016 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_097_JP_0885C144.bin" @ 8016 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_098_JP_0885E0A4
 DirectSoundWaveData_Instrument_098_JP_0885E0A4: @ 0x0885E0A4
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x00D10C00, 0x000013E6, 0x00001A8E
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_098_JP_0885E0A4.bin" @ 6800 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_098_JP_0885E0A4.bin" @ 6800 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_099_JP_0885FB44
 DirectSoundWaveData_Instrument_099_JP_0885FB44: @ 0x0885FB44
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x00688600, 0x00001693, 0x00001F5D
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_099_JP_0885FB44.bin" @ 8032 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_099_JP_0885FB44.bin" @ 8032 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_100_JP_08861AB4
 DirectSoundWaveData_Instrument_100_JP_08861AB4: @ 0x08861AB4
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x00D10C00, 0x000014A8, 0x00001827
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_100_JP_08861AB4.bin" @ 6184 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_100_JP_08861AB4.bin" @ 6184 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_101_JP_088632EC
 DirectSoundWaveData_Instrument_101_JP_088632EC: @ 0x088632EC
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x00688600, 0x000007C2, 0x000013BE
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_101_JP_088632EC.bin" @ 5056 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_101_JP_088632EC.bin" @ 5056 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_102_JP_088646BC
 DirectSoundWaveData_Instrument_102_JP_088646BC: @ 0x088646BC
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x00D10C00, 0x00000CE5, 0x000011B0
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_102_JP_088646BC.bin" @ 4532 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_102_JP_088646BC.bin" @ 4532 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_103_JP_08865880
 DirectSoundWaveData_Instrument_103_JP_08865880: @ 0x08865880
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x00D10C00, 0x0000051A, 0x00000A4C
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_103_JP_08865880.bin" @ 2640 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_103_JP_08865880.bin" @ 2640 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_104_JP_088662E0
 DirectSoundWaveData_Instrument_104_JP_088662E0: @ 0x088662E0
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x00D10C00, 0x00001A23, 0x000020EE
-	.incbin "audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_104_JP_088662E0.bin" @ 8432 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8092_rom_81_a06_e_text/DirectSoundWaveData_Instrument_104_JP_088662E0.bin" @ 8432 DirectSound sample bytes
 
 	.globl SongHeader_MUS_DUMMY
 SongHeader_MUS_DUMMY: @ 0x088683E0

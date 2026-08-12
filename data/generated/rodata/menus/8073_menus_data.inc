@@ -573,49 +573,49 @@ DirectSoundWaveData_JP_0863D428: @ 0x0863D428
 DirectSoundWaveData_Instrument_000_JP_0863D428: @ 0x0863D428
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x00344300, 0x000002BB, 0x00000692
-	.incbin "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_000_JP_0863D428.bin" @ 1684 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_000_JP_0863D428.bin" @ 1684 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_001_JP_0863DACC
 DirectSoundWaveData_Instrument_001_JP_0863DACC: @ 0x0863DACC
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x00688600, 0x0000047E, 0x000007E7
-	.incbin "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_001_JP_0863DACC.bin" @ 2024 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_001_JP_0863DACC.bin" @ 2024 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_002_JP_0863E2C4
 DirectSoundWaveData_Instrument_002_JP_0863E2C4: @ 0x0863E2C4
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x03443000, 0x00000482, 0x00000BB8
-	.incbin "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_002_JP_0863E2C4.bin" @ 3004 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_002_JP_0863E2C4.bin" @ 3004 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_003_JP_0863EE90
 DirectSoundWaveData_Instrument_003_JP_0863EE90: @ 0x0863EE90
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x02B11000, 0x000009DC, 0x00000F26
-	.incbin "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_003_JP_0863EE90.bin" @ 3880 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_003_JP_0863EE90.bin" @ 3880 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_004_JP_0863FDC8
 DirectSoundWaveData_Instrument_004_JP_0863FDC8: @ 0x0863FDC8
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x01588800, 0x0000071A, 0x00000C61
-	.incbin "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_004_JP_0863FDC8.bin" @ 3172 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_004_JP_0863FDC8.bin" @ 3172 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_005_JP_08640A3C
 DirectSoundWaveData_Instrument_005_JP_08640A3C: @ 0x08640A3C
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x01A21800, 0x00000ED5, 0x000014BD
-	.incbin "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_005_JP_08640A3C.bin" @ 5312 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_005_JP_08640A3C.bin" @ 5312 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_006_JP_08641F0C
 DirectSoundWaveData_Instrument_006_JP_08641F0C: @ 0x08641F0C
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x00D10C00, 0x00000FA1, 0x0000169C
-	.incbin "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_006_JP_08641F0C.bin" @ 5792 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_006_JP_08641F0C.bin" @ 5792 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_007_JP_086435BC
 DirectSoundWaveData_Instrument_007_JP_086435BC: @ 0x086435BC
 	@ M4A DirectSound WaveData (instrument)
 	m4a_wave_data_header 0x40000000, 0x00D10C00, 0x00000B5E, 0x00001330
-	.incbin "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_007_JP_086435BC.bin" @ 4916 DirectSound sample bytes
+	.incbin "build/audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_007_JP_086435BC.bin" @ 4916 DirectSound sample bytes
 
 	.globl DirectSoundWaveData_Instrument_008_JP_08644900
 DirectSoundWaveData_Instrument_008_JP_08644900: @ 0x08644900
