@@ -8,8 +8,6 @@ gText_Rom_5DD41D: @ 0x085DD41D
 	.if (. - gText_Rom_5DD41D) < 0x8
 	.space 0x8 - (. - gText_Rom_5DD41D)
 	.endif
-	.globl gUnknown_85DD425
-gUnknown_85DD425: @ 0x085DD425
 
 	@ src/strings.c:893 gText_Current
 	.globl gText_Rom_5DD425

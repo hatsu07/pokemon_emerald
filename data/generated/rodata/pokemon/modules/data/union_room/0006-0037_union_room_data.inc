@@ -15,8 +15,6 @@ sText_ID:
 	@ {ID} is encoded as F9 07.
 	.string "{ID}$"
 	.byte 0 @ alignment
-	.globl gUnknown_82C064C
-gUnknown_82C064C: @ 0x082C064C
 
 	@ asm/union_room.s:5239 sub_08014A50
 	.globl gText_Rom_2C064C
@@ -37,8 +35,6 @@ sText_AwaitingCommunication2:
 	@ Unused in the corresponding decomp source.
 	.string "ともだちからの　れんらくを\nまっています$"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C069C
-gUnknown_82C069C: @ 0x082C069C
 
 	@ asm/union_room.s:233 sub_08012134
 	.globl gText_Rom_2C069C
@@ -51,8 +47,6 @@ gText_Rom_2C069C: @ 0x082C069C
 	.space 0x19 - (. - gText_Rom_2C069C)
 	.endif
 	.space 0x3, 0x00
-	.globl gUnknown_82C06B8
-gUnknown_82C06B8: @ 0x082C06B8
 
 	@ asm/union_room.s:574 sub_08012288
 	.globl gText_Rom_2C06B8
@@ -268,8 +262,6 @@ sPlayersNeededOrModeTexts: @ 0x082C0840, const u8 *[5][5]
 	.4byte sText_2PlayersNeeded, sText_1PlayerNeeded, sText_3PlayerMode, sText_4PlayerMode, sText_5PlayerMode
 	@ 2-4 players required
 	.4byte sText_1PlayerNeeded, sText_2PlayerMode, sText_3PlayerMode, sText_4PlayerMode, 0
-	.globl gUnknown_82C08A4
-gUnknown_82C08A4: @ 0x082C08A4
 
 	@ src/data/union_room.h:88 sText_BButtonCancel (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -299,8 +291,6 @@ gUnknown_82C08DC: @ 0x082C08DC
 sText_PlayerContactedYouShareX: @ 0x082C08DC
 	.string "{STR_VAR_2}から れんらくあり！\n{STR_VAR_1}を くばりますか？$"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C08F8
-gUnknown_82C08F8: @ 0x082C08F8
 
 	@ asm/union_room.s:1352 sub_08012AC4
 	.globl gText_Rom_2C08F8
@@ -326,8 +316,6 @@ gUnknown_82C092C: @ 0x082C092C
 sText_CancelModeWithTheseMembers: @ 0x082C092C
 	.string "この メンバーで {STR_VAR_1}を\nするのは やめますか？$"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C0948
-gUnknown_82C0948: @ 0x082C0948
 
 	@ asm/union_room.s:931 sub_08012288
 	.globl gText_Rom_2C0948
@@ -374,8 +362,6 @@ sPlayerUnavailableTexts: @ 0x082C09E0
 sText_TrainerAppearsUnavailable: @ 0x082C09E8
 	.string "つごうが わるいみたい…\p$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C09F8
-gUnknown_82C09F8: @ 0x082C09F8
 
 	@ asm/union_room.s:1506 sub_08012C60
 	.globl gText_Rom_2C09F8
@@ -389,8 +375,6 @@ sText_PlayerSentBackOK:
 	.space 0x16 - (. - gText_Rom_2C09F8)
 	.endif
 	.space 0x2, 0x00
-	.globl gUnknown_82C0A10
-gUnknown_82C0A10: @ 0x082C0A10
 
 	@ asm/union_room.s:1513 sub_08012C60
 	.globl gText_Rom_2C0A10
@@ -407,8 +391,6 @@ sText_PlayerOKdRegistration:
 sText_PlayerRepliedNo: @ 0x082C0A30
 	.string "{STR_VAR_1}から NGとの\nへんじが きてしまいました…\p$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C0A4C
-gUnknown_82C0A4C: @ 0x082C0A4C
 
 	@ asm/union_room.s:2354 sub_08012FEC
 	.globl gText_Rom_2C0A4C
@@ -445,8 +427,6 @@ sPlayerDisconnectedTexts: @ 0x082C0A84
 	.4byte 0 @ RFU_STATUS_WAIT_ACK_JOIN_GROUP
 	.4byte 0 @ RFU_STATUS_LEAVE_GROUP_NOTICE
 	.4byte sText_StoppedBeingMember @ RFU_STATUS_LEAVE_GROUP
-	.globl gUnknown_82C0AAC
-gUnknown_82C0AAC: @ 0x082C0AAC
 
 	@ asm/union_room.s:5578 sub_08014DFC
 	.globl gText_Rom_2C0AAC

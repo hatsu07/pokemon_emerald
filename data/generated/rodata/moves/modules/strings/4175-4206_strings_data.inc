@@ -8,8 +8,6 @@ gText_Rom_5C8FDD: @ 0x085C8FDD
 	.if (. - gText_Rom_5C8FDD) < 0xa
 	.space 0xa - (. - gText_Rom_5C8FDD)
 	.endif
-	.globl gUnknown_85C8FE7
-gUnknown_85C8FE7: @ 0x085C8FE7
 
 	@ src/strings.c:60 gText_PokedexRegistration
 	.globl gText_Rom_5C8FE7
@@ -21,8 +19,6 @@ gText_Rom_5C8FE7: @ 0x085C8FE7
 	.if (. - gText_Rom_5C8FE7) < 0x15
 	.space 0x15 - (. - gText_Rom_5C8FE7)
 	.endif
-	.globl gUnknown_85C8FFC
-gUnknown_85C8FFC: @ 0x085C8FFC
 
 	@ src/strings.c:63 gText_SearchingPleaseWait
 	.globl gText_Rom_5C8FFC
@@ -34,8 +30,6 @@ gText_Rom_5C8FFC: @ 0x085C8FFC
 	.if (. - gText_Rom_5C8FFC) < 0xe
 	.space 0xe - (. - gText_Rom_5C8FFC)
 	.endif
-	.globl gUnknown_85C900A
-gUnknown_85C900A: @ 0x085C900A
 
 	@ src/strings.c:64 gText_SearchCompleted
 	.globl gText_Rom_5C900A
@@ -47,8 +41,6 @@ gText_Rom_5C900A: @ 0x085C900A
 	.if (. - gText_Rom_5C900A) < 0x13
 	.space 0x13 - (. - gText_Rom_5C900A)
 	.endif
-	.globl gUnknown_85C901D
-gUnknown_85C901D: @ 0x085C901D
 
 	@ src/strings.c:65 gText_NoMatchingPkmnWereFound
 	.globl gText_Rom_5C901D
@@ -159,4 +151,3 @@ gText_Rom_5C90F0: @ 0x085C90F0
 	.endif
 	.globl gText_Rom_5C90FF
 	.set gText_Rom_5C90FF, gText_Rom_5C90F0 + 0xf
-

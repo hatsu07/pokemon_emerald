@@ -10,8 +10,6 @@ gText_Rom_5CA925: @ 0x085CA925
 	.set gText_Rom_5CA932, gText_Rom_5CA925 + 0xd
 	.globl gText_Rom_5CA934
 	.set gText_Rom_5CA934, gText_Rom_5CA925 + 0xf
-	.globl gUnknown_85CA938
-gUnknown_85CA938: @ 0x085CA938
 
 	@ src/player_pc.c:176 sText_WithdrawHowManyItems
 	.globl gText_Rom_5CA938
@@ -23,8 +21,6 @@ gText_Rom_5CA938: @ 0x085CA938
 	.if (. - gText_Rom_5CA938) < 0x11
 	.space 0x11 - (. - gText_Rom_5CA938)
 	.endif
-	.globl gUnknown_85CA949
-gUnknown_85CA949: @ 0x085CA949
 
 	@ src/player_pc.c:177 sText_WithdrawXItems
 	.globl gText_Rom_5CA949

@@ -35,8 +35,6 @@ gUnknown_830FC33: @ 0x0830FC33
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x5
 	.byte 0x03, 0x03, 0x03, 0x03, 0x02
-	.globl gUnknown_830FC38
-gUnknown_830FC38: @ 0x0830FC38
 
 	@ src/berry_blender.c:315 sText_BlenderMaxSpeedRecord
 	.globl gText_Rom_30FC38
@@ -48,8 +46,6 @@ gText_Rom_30FC38: @ 0x0830FC38
 	.if (. - gText_Rom_30FC38) < 0x18
 	.space 0x18 - (. - gText_Rom_30FC38)
 	.endif
-	.globl gUnknown_830FC50
-gUnknown_830FC50: @ 0x0830FC50
 
 	@ src/berry_blender.c:316 sText_234Players
 	.globl gText_Rom_30FC50

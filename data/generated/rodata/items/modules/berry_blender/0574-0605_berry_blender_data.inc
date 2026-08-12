@@ -8,8 +8,6 @@ gText_Rom_30F834: @ 0x0830F834
 	.if (. - gText_Rom_30F834) < 0x3
 	.space 0x3 - (. - gText_Rom_30F834)
 	.endif
-	.globl gUnknown_830F837
-gUnknown_830F837: @ 0x0830F837
 
 	@ src/berry_blender.c:288 sText_Sec (+1 aliases)
 	.globl gText_Rom_30F837
@@ -21,8 +19,6 @@ gText_Rom_30F837: @ 0x0830F837
 	.if (. - gText_Rom_30F837) < 0x4
 	.space 0x4 - (. - gText_Rom_30F837)
 	.endif
-	.globl gUnknown_830F83B
-gUnknown_830F83B: @ 0x0830F83B
 
 	@ src/berry_blender.c:289 sText_MaximumSpeed
 	.globl gText_Rom_30F83B
@@ -34,8 +30,6 @@ gText_Rom_30F83B: @ 0x0830F83B
 	.if (. - gText_Rom_30F83B) < 0x8
 	.space 0x8 - (. - gText_Rom_30F83B)
 	.endif
-	.globl gUnknown_830F843
-gUnknown_830F843: @ 0x0830F843
 
 	@ src/berry_blender.c:290 sText_RPM
 	.globl gText_Rom_30F843
@@ -47,8 +41,6 @@ gText_Rom_30F843: @ 0x0830F843
 	.if (. - gText_Rom_30F843) < 0x4
 	.space 0x4 - (. - gText_Rom_30F843)
 	.endif
-	.globl gUnknown_830F847
-gUnknown_830F847: @ 0x0830F847
 
 	@ asm/berry_blender.s:7807 Blender_PrintBlendingResults
 	.globl gText_Rom_30F847
@@ -69,8 +61,6 @@ gUnknown_830F849: @ 0x0830F849
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0xFE, 0xFF, 0x00, 0xFF
-	.globl gUnknown_830F84D
-gUnknown_830F84D: @ 0x0830F84D
 
 	@ src/berry_blender.c:309 sText_Ranking
 	.globl gText_Rom_30F84D
@@ -82,8 +72,6 @@ gText_Rom_30F84D: @ 0x0830F84D
 	.if (. - gText_Rom_30F84D) < 0x6
 	.space 0x6 - (. - gText_Rom_30F84D)
 	.endif
-	.globl gUnknown_830F853
-gUnknown_830F853: @ 0x0830F853
 
 	@ src/berry_blender.c:310 sText_TheLevelIs (+1 aliases)
 	.globl gText_Rom_30F853
@@ -95,8 +83,6 @@ gText_Rom_30F853: @ 0x0830F853
 	.if (. - gText_Rom_30F853) < 0x4
 	.space 0x4 - (. - gText_Rom_30F853)
 	.endif
-	.globl gUnknown_830F857
-gUnknown_830F857: @ 0x0830F857
 
 	@ src/berry_blender.c:311 sText_TheFeelIs
 	.globl gText_Rom_30F857
@@ -108,8 +94,6 @@ gText_Rom_30F857: @ 0x0830F857
 	.if (. - gText_Rom_30F857) < 0x9
 	.space 0x9 - (. - gText_Rom_30F857)
 	.endif
-	.globl gUnknown_830F860
-gUnknown_830F860: @ 0x0830F860
 
 	@ asm/berry_blender.s:8215 Blender_PrintMadePokeblockString
 	.globl gText_Rom_30F860
@@ -406,8 +390,6 @@ gUnknown_830FBB8: @ 0x0830FBB8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0x161C, 0x1A13, 0x0E19, 0x0B0D, 0x1507, 0x0A0B, 0x0F03, 0xFF08
-	.globl gUnknown_830FBC8
-gUnknown_830FBC8: @ 0x0830FBC8
 
 	@ src/berry_blender.c:314 sText_SavingDontTurnOff2
 	.globl gText_Rom_30FBC8
@@ -489,4 +471,3 @@ gText_Rom_30FC1F: @ 0x0830FC1F
 	.space 0x4 - (. - gText_Rom_30FC1F)
 	.endif
 	.space 0x1, 0x00
-

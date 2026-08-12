@@ -11,8 +11,6 @@ gText_Rom_5CB025: @ 0x085CB025
 	@ analyzed canonical ROM range 0x085CB028-0x085CB029
 gText_CyclingRoadTimesSuffix: @ 0x085CB028
 	.byte 0xB8, 0xFF
-	.globl gUnknown_85CB02A
-gUnknown_85CB02A: @ 0x085CB02A
 
 	@ src/field_specials.c:175 sText_BigGuy
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -24,8 +22,6 @@ gText_Rom_5CB02A: @ 0x085CB02A
 	.endif
 	.globl gText_Rom_5CB02D
 	.set gText_Rom_5CB02D, gText_Rom_5CB02A + 0x3
-	.globl gUnknown_85CB031
-gUnknown_85CB031: @ 0x085CB031
 
 	@ src/field_specials.c:176 sText_BigGirl
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -37,8 +33,6 @@ gText_Rom_5CB031: @ 0x085CB031
 	.endif
 	.globl gText_Rom_5CB034
 	.set gText_Rom_5CB034, gText_Rom_5CB031 + 0x3
-	.globl gUnknown_85CB038
-gUnknown_85CB038: @ 0x085CB038
 
 	@ src/field_specials.c:177 sText_Son
 	.globl gText_Rom_5CB038
@@ -50,8 +44,6 @@ gText_Rom_5CB038: @ 0x085CB038
 	.if (. - gText_Rom_5CB038) < 0x4
 	.space 0x4 - (. - gText_Rom_5CB038)
 	.endif
-	.globl gUnknown_85CB03C
-gUnknown_85CB03C: @ 0x085CB03C
 
 	@ src/field_specials.c:178 sText_Daughter
 	.globl gText_Rom_5CB03C

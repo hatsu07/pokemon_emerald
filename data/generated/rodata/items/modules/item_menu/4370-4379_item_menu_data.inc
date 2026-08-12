@@ -8,8 +8,6 @@ gText_Rom_5C94A1: @ 0x085C94A1
 	.endif
 	.globl gText_Rom_5C94A6
 	.set gText_Rom_5C94A6, gText_Rom_5C94A1 + 0x5
-	.globl gUnknown_85C94B9
-gUnknown_85C94B9: @ 0x085C94B9
 
 	@ src/item_menu.c:220 sText_DepositHowManyVar1
 	.globl gText_Rom_5C94B9
@@ -21,8 +19,6 @@ gText_Rom_5C94B9: @ 0x085C94B9
 	.if (. - gText_Rom_5C94B9) < 0x11
 	.space 0x11 - (. - gText_Rom_5C94B9)
 	.endif
-	.globl gUnknown_85C94CA
-gUnknown_85C94CA: @ 0x085C94CA
 
 	@ src/item_menu.c:221 sText_DepositedVar2Var1s
 	.globl gText_Rom_5C94CA
@@ -34,8 +30,6 @@ gText_Rom_5C94CA: @ 0x085C94CA
 	.if (. - gText_Rom_5C94CA) < 0x10
 	.space 0x10 - (. - gText_Rom_5C94CA)
 	.endif
-	.globl gUnknown_85C94DA
-gUnknown_85C94DA: @ 0x085C94DA
 
 	@ src/item_menu.c:222 sText_NoRoomForItems
 	.globl gText_Rom_5C94DA
@@ -47,8 +41,6 @@ gText_Rom_5C94DA: @ 0x085C94DA
 	.if (. - gText_Rom_5C94DA) < 0x11
 	.space 0x11 - (. - gText_Rom_5C94DA)
 	.endif
-	.globl gUnknown_85C94EB
-gUnknown_85C94EB: @ 0x085C94EB
 
 	@ src/item_menu.c:223 sText_CantStoreImportantItems
 	.globl gText_Rom_5C94EB

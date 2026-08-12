@@ -17,8 +17,6 @@ gUnknown_85C9864: @ 0x085C9864
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x5
 	.byte 0xF9, 0x05, 0xFD, 0x02, 0xFF
-	.globl gUnknown_85C9869
-gUnknown_85C9869: @ 0x085C9869
 
 	@ src/pokeblock.c:135 sText_ThrowAwayVar1
 	.globl gText_Rom_5C9869
@@ -30,8 +28,6 @@ gText_Rom_5C9869: @ 0x085C9869
 	.if (. - gText_Rom_5C9869) < 0x12
 	.space 0x12 - (. - gText_Rom_5C9869)
 	.endif
-	.globl gUnknown_85C987B
-gUnknown_85C987B: @ 0x085C987B
 
 	@ src/pokeblock.c:136 sText_Var1ThrownAway
 	.globl gText_Rom_5C987B

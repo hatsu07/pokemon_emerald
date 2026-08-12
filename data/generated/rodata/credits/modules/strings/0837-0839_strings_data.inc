@@ -8,8 +8,6 @@ gText_Rom_566CA4: @ 0x08566CA4
 	.if (. - gText_Rom_566CA4) < 0xd
 	.space 0xd - (. - gText_Rom_566CA4)
 	.endif
-	.globl gUnknown_8566CB1
-gUnknown_8566CB1: @ 0x08566CB1
 
 	@ src/strings.c:991 gText_RecordMixingComplete
 	@ Preserve exact byte length: semantic suffix text pointer.

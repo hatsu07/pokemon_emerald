@@ -52,8 +52,6 @@ gText_Rom_5CB5D0: @ 0x085CB5D0
 	.if (. - gText_Rom_5CB5D0) < 0xc
 	.space 0xc - (. - gText_Rom_5CB5D0)
 	.endif
-	.globl gUnknown_85CB5DC
-gUnknown_85CB5DC: @ 0x085CB5DC
 
 	@ src/pokenav_menu_handler_gfx.c:111 gText_NoRibbonWinners
 	@ Preserve exact byte length: semantic suffix text pointer.

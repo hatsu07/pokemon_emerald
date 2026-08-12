@@ -8,8 +8,6 @@ gText_Rom_5ED2C4: @ 0x085ED2C4
 	.if (. - gText_Rom_5ED2C4) < 0x7
 	.space 0x7 - (. - gText_Rom_5ED2C4)
 	.endif
-	.globl gUnknown_85ED2CB
-gUnknown_85ED2CB: @ 0x085ED2CB
 
 	@ src/pokemon_summary_screen.c:781 sMemoMiscTextColor
 	.globl gText_Rom_5ED2CB
@@ -21,8 +19,6 @@ gText_Rom_5ED2CB: @ 0x085ED2CB
 	.if (. - gText_Rom_5ED2CB) < 0x7
 	.space 0x7 - (. - gText_Rom_5ED2CB)
 	.endif
-	.globl gUnknown_85ED2D2
-gUnknown_85ED2D2: @ 0x085ED2D2
 
 	@ src/pokemon_summary_screen.c:782 sStatsLeftColumnLayout
 	.globl gText_Rom_5ED2D2
@@ -34,8 +30,6 @@ gText_Rom_5ED2D2: @ 0x085ED2D2
 	.if (. - gText_Rom_5ED2D2) < 0xc
 	.space 0xc - (. - gText_Rom_5ED2D2)
 	.endif
-	.globl gUnknown_85ED2DE
-gUnknown_85ED2DE: @ 0x085ED2DE
 
 	@ src/pokemon_summary_screen.c:783 sStatsLeftIVEVColumnLayout (+1 aliases)
 	.globl gText_Rom_5ED2DE
@@ -47,8 +41,6 @@ gText_Rom_5ED2DE: @ 0x085ED2DE
 	.if (. - gText_Rom_5ED2DE) < 0x9
 	.space 0x9 - (. - gText_Rom_5ED2DE)
 	.endif
-	.globl gUnknown_85ED2E7
-gUnknown_85ED2E7: @ 0x085ED2E7
 
 	@ src/pokemon_summary_screen.c:785 sMovesPPLayout
 	.globl gText_Rom_5ED2E7

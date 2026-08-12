@@ -84,10 +84,8 @@ gTitleScreenClouds_Tilemap: @ 0x0851A9CC
 	.if (. - gTitleScreenClouds_Tilemap) != 0x240
 	.error "gTitleScreenClouds_Tilemap exact asset size mismatch"
 	.endif
-	.globl gUnknown_851AC0C
-gUnknown_851AC0C: @ 0x0851AC0C
 	.globl gTitleScreenAlphaBlend
-gTitleScreenAlphaBlend:
+gTitleScreenAlphaBlend: @ 0x0851AC0C
 	@ 64 BLDALPHA values: (16,0)..(0,16), then held at (0,16)
 	.2byte 0x0010, 0x0110, 0x0210, 0x0310, 0x0410, 0x0510, 0x0610, 0x0710
 	.2byte 0x0810, 0x0910, 0x0A10, 0x0B10, 0x0C10, 0x0D10, 0x0E10, 0x0F10

@@ -8,8 +8,6 @@ gText_Rom_5C8D44: @ 0x085C8D44
 	.if (. - gText_Rom_5C8D44) < 0x27
 	.space 0x27 - (. - gText_Rom_5C8D44)
 	.endif
-	.globl gUnknown_85C8D6B
-gUnknown_85C8D6B: @ 0x085C8D6B
 
 	@ src/main_menu.c:260 gText_SaveFileErased
 	.globl gText_Rom_5C8D6B
@@ -21,8 +19,6 @@ gText_Rom_5C8D6B: @ 0x085C8D6B
 	.if (. - gText_Rom_5C8D6B) < 0x15
 	.space 0x15 - (. - gText_Rom_5C8D6B)
 	.endif
-	.globl gUnknown_85C8D80
-gUnknown_85C8D80: @ 0x085C8D80
 
 	@ src/main_menu.c:261 gJPText_No1MSubCircuit
 	.globl gText_Rom_5C8D80
@@ -34,8 +30,6 @@ gText_Rom_5C8D80: @ 0x085C8D80
 	.if (. - gText_Rom_5C8D80) < 0x13
 	.space 0x13 - (. - gText_Rom_5C8D80)
 	.endif
-	.globl gUnknown_85C8D93
-gUnknown_85C8D93: @ 0x085C8D93
 
 	@ src/main_menu.c:262 gText_BatteryRunDry
 	.globl gText_Rom_5C8D93
@@ -58,4 +52,3 @@ gText_Rom_5C8DDD: @ 0x085C8DDD
 	.if (. - gText_Rom_5C8DDD) < 0x7
 	.space 0x7 - (. - gText_Rom_5C8DDD)
 	.endif
-

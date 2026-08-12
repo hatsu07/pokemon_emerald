@@ -45,8 +45,6 @@ gText_Rom_5CC474: @ 0x085CC474
 	.set gText_Rom_5CC477, gText_Rom_5CC474 + 0x3
 	@ ANALYSIS: RAW_RANGE offset=0x5CC47C, size=0x3
 	.byte 0xFD, 0x02, 0xFF
-	.globl gUnknown_85CC47F
-gUnknown_85CC47F: @ 0x085CC47F
 
 	@ src/strings.c:708 gText_Give
 	.globl gText_Rom_5CC47F
@@ -58,8 +56,6 @@ gText_Rom_5CC47F: @ 0x085CC47F
 	.if (. - gText_Rom_5CC47F) < 0x7
 	.space 0x7 - (. - gText_Rom_5CC47F)
 	.endif
-	.globl gUnknown_85CC486
-gUnknown_85CC486: @ 0x085CC486
 
 	@ src/strings.c:709 gText_NoNeed
 	.globl gText_Rom_5CC486

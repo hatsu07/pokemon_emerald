@@ -19,8 +19,6 @@ gText_Rom_5CA6BD: @ 0x085CA6BD
 	.endif
 	.globl gText_Rom_5CA6C2
 	.set gText_Rom_5CA6C2, gText_Rom_5CA6BD + 0x5
-	.globl gUnknown_85CA6C6
-gUnknown_85CA6C6: @ 0x085CA6C6
 
 	@ src/strings.c:421 gText_Color161Shadow161
 	.globl gText_Rom_5CA6C6

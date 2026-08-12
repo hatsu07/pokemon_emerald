@@ -8,8 +8,6 @@ gText_Rom_5CC48C: @ 0x085CC48C
 	.if (. - gText_Rom_5CC48C) < 0x7
 	.space 0x7 - (. - gText_Rom_5CC48C)
 	.endif
-	.globl gUnknown_85CC493
-gUnknown_85CC493: @ 0x085CC493
 
 	@ src/contest.c:2078 contest_line_2078 (+1 aliases)
 	.globl gText_Rom_5CC493
@@ -21,8 +19,6 @@ gText_Rom_5CC493: @ 0x085CC493
 	.if (. - gText_Rom_5CC493) < 0x4
 	.space 0x4 - (. - gText_Rom_5CC493)
 	.endif
-	.globl gUnknown_85CC497
-gUnknown_85CC497: @ 0x085CC497
 
 	@ asm/contest.s:6814 Contest_CopyStringWithColor
 	@ Preserve exact byte length: internal label, semantic suffix text pointer, internal terminator.

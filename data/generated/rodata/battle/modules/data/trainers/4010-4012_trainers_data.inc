@@ -8,8 +8,6 @@ gText_Rom_5C8C5A: @ 0x085C8C5A
 	.if (. - gText_Rom_5C8C5A) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8C5A)
 	.endif
-	.globl gUnknown_85C8C5E
-gUnknown_85C8C5E: @ 0x085C8C5E
 
 	@ src/data/trainers.h:26347 trainers_line_26347 (+18 aliases)
 	.globl gText_Rom_5C8C5E

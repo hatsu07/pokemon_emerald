@@ -8,8 +8,6 @@ gText_Rom_5AD9A0: @ 0x085AD9A0
 	.if (. - gText_Rom_5AD9A0) < 0x12
 	.space 0x12 - (. - gText_Rom_5AD9A0)
 	.endif
-	.globl gUnknown_85AD9B2
-gUnknown_85AD9B2: @ 0x085AD9B2
 
 	@ asm/move_relearner.s:1150 sub_08160E70
 	.globl gText_Rom_5AD9B2

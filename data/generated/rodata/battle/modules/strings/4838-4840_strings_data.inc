@@ -8,8 +8,6 @@ gText_Rom_5CA38E: @ 0x085CA38E
 	.if (. - gText_Rom_5CA38E) < 0x4
 	.space 0x4 - (. - gText_Rom_5CA38E)
 	.endif
-	.globl gUnknown_85CA392
-gUnknown_85CA392: @ 0x085CA392
 
 	@ src/strings.c:376 gText_RentalPkmn
 	@ Preserve exact byte length: semantic suffix text pointer.

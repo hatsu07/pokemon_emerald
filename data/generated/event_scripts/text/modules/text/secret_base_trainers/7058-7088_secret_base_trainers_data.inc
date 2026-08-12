@@ -52,8 +52,6 @@ gText_Rom_2458E3: @ 0x082458E3
 	.if (. - gText_Rom_2458E3) < 0x11
 	.space 0x11 - (. - gText_Rom_2458E3)
 	.endif
-	.globl gUnknown_82458F4
-gUnknown_82458F4: @ 0x082458F4
 
 	@ data/text/secret_base_trainers.inc:154 SecretBase_Text_Trainer4Defeated
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -120,8 +118,6 @@ gText_Rom_2459F0: @ 0x082459F0
 	.endif
 	.globl gText_Rom_245A02
 	.set gText_Rom_245A02, gText_Rom_2459F0 + 0x12
-	.globl gUnknown_8245A06
-gUnknown_8245A06: @ 0x08245A06
 
 	@ data/text/secret_base_trainers.inc:172 SecretBase_Text_Trainer9Defeated
 	.globl gText_Rom_245A06

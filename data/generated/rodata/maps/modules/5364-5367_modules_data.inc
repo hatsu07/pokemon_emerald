@@ -8,8 +8,6 @@ gText_Rom_5CB00E: @ 0x085CB00E
 	.endif
 	.globl gText_Rom_5CB013
 	.set gText_Rom_5CB013, gText_Rom_5CB00E + 0x5
-	.globl gUnknown_85CB018
-gUnknown_85CB018: @ 0x085CB018
 
 	@ src/field_specials.c:180 sText_1MinutePlus
 	@ Preserve exact byte length: semantic suffix text pointer.

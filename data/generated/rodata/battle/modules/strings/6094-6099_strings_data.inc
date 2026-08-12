@@ -8,8 +8,6 @@ gText_Rom_5CC3D9: @ 0x085CC3D9
 	.if (. - gText_Rom_5CC3D9) < 0x11
 	.space 0x11 - (. - gText_Rom_5CC3D9)
 	.endif
-	.globl gUnknown_85CC3EA
-gUnknown_85CC3EA: @ 0x085CC3EA
 
 	@ src/strings.c:690 gText_BattlePtsWon
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -23,8 +21,6 @@ gText_Rom_5CC3EA: @ 0x085CC3EA
 	.set gText_Rom_5CC3F0, gText_Rom_5CC3EA + 0x6
 	.globl gText_Rom_5CC3F3
 	.set gText_Rom_5CC3F3, gText_Rom_5CC3EA + 0x9
-	.globl gUnknown_85CC3F8
-gUnknown_85CC3F8: @ 0x085CC3F8
 
 	@ src/strings.c:691 gText_NumBP
 	.globl gText_Rom_5CC3F8

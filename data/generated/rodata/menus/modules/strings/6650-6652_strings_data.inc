@@ -8,8 +8,6 @@ gText_Rom_5DC0F4: @ 0x085DC0F4
 	.if (. - gText_Rom_5DC0F4) < 0x7
 	.space 0x7 - (. - gText_Rom_5DC0F4)
 	.endif
-	.globl gUnknown_85DC0FB
-gUnknown_85DC0FB: @ 0x085DC0FB
 
 	@ src/strings.c:1010 gText_QuitSwapping
 	.globl gText_Rom_5DC0FB

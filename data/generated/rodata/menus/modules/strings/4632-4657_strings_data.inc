@@ -8,8 +8,6 @@ gText_Rom_5C9CDA: @ 0x085C9CDA
 	.if (. - gText_Rom_5C9CDA) < 0x15
 	.space 0x15 - (. - gText_Rom_5C9CDA)
 	.endif
-	.globl gUnknown_85C9CEF
-gUnknown_85C9CEF: @ 0x085C9CEF
 
 	@ src/strings.c:268 gText_SwitchedPkmnItem
 	.globl gText_Rom_5C9CEF
@@ -21,8 +19,6 @@ gText_Rom_5C9CEF: @ 0x085C9CEF
 	.if (. - gText_Rom_5C9CEF) < 0x1d
 	.space 0x1d - (. - gText_Rom_5C9CEF)
 	.endif
-	.globl gUnknown_85C9D0C
-gUnknown_85C9D0C: @ 0x085C9D0C
 
 	@ src/strings.c:269 gText_PkmnHoldingItemCantHoldMail
 	.globl gText_Rom_5C9D0C
@@ -34,8 +30,6 @@ gText_Rom_5C9D0C: @ 0x085C9D0C
 	.if (. - gText_Rom_5C9D0C) < 0x26
 	.space 0x26 - (. - gText_Rom_5C9D0C)
 	.endif
-	.globl gUnknown_85C9D32
-gUnknown_85C9D32: @ 0x085C9D32
 
 	@ src/strings.c:270 gText_MailTransferredFromMailbox
 	.globl gText_Rom_5C9D32
@@ -47,8 +41,6 @@ gText_Rom_5C9D32: @ 0x085C9D32
 	.if (. - gText_Rom_5C9D32) < 0x15
 	.space 0x15 - (. - gText_Rom_5C9D32)
 	.endif
-	.globl gUnknown_85C9D47
-gUnknown_85C9D47: @ 0x085C9D47
 
 	@ src/strings.c:271 gText_BagFullCouldNotRemoveItem
 	.globl gText_Rom_5C9D47
@@ -60,8 +52,6 @@ gText_Rom_5C9D47: @ 0x085C9D47
 	.if (. - gText_Rom_5C9D47) < 0x21
 	.space 0x21 - (. - gText_Rom_5C9D47)
 	.endif
-	.globl gUnknown_85C9D68
-gUnknown_85C9D68: @ 0x085C9D68
 
 	@ src/strings.c:272 gText_PkmnLearnedMove3
 	.globl gText_Rom_5C9D68
@@ -73,8 +63,6 @@ gText_Rom_5C9D68: @ 0x085C9D68
 	.if (. - gText_Rom_5C9D68) < 0x14
 	.space 0x14 - (. - gText_Rom_5C9D68)
 	.endif
-	.globl gUnknown_85C9D7C
-gUnknown_85C9D7C: @ 0x085C9D7C
 
 	@ src/strings.c:274 gText_PkmnCantLearnMove
 	.globl gText_Rom_5C9D7C
@@ -86,8 +74,6 @@ gText_Rom_5C9D7C: @ 0x085C9D7C
 	.if (. - gText_Rom_5C9D7C) < 0x25
 	.space 0x25 - (. - gText_Rom_5C9D7C)
 	.endif
-	.globl gUnknown_85C9DA1
-gUnknown_85C9DA1: @ 0x085C9DA1
 
 	@ src/strings.c:275 gText_PkmnNeedsToReplaceMove (+1 aliases)
 	.globl gText_Rom_5C9DA1
@@ -99,8 +85,6 @@ gText_Rom_5C9DA1: @ 0x085C9DA1
 	.if (. - gText_Rom_5C9DA1) < 0x51
 	.space 0x51 - (. - gText_Rom_5C9DA1)
 	.endif
-	.globl gUnknown_85C9DF2
-gUnknown_85C9DF2: @ 0x085C9DF2
 
 	@ src/strings.c:276 gText_StopLearningMove2
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -112,8 +96,6 @@ gText_Rom_5C9DF2: @ 0x085C9DF2
 	.endif
 	.globl gText_Rom_5C9E04
 	.set gText_Rom_5C9E04, gText_Rom_5C9DF2 + 0x12
-	.globl gUnknown_85C9E0D
-gUnknown_85C9E0D: @ 0x085C9E0D
 
 	@ src/strings.c:277 gText_MoveNotLearned
 	.globl gText_Rom_5C9E0D
@@ -125,8 +107,6 @@ gText_Rom_5C9E0D: @ 0x085C9E0D
 	.if (. - gText_Rom_5C9E0D) < 0x16
 	.space 0x16 - (. - gText_Rom_5C9E0D)
 	.endif
-	.globl gUnknown_85C9E23
-gUnknown_85C9E23: @ 0x085C9E23
 
 	@ src/strings.c:278 gText_WhichMoveToForget
 	.globl gText_Rom_5C9E23
@@ -138,8 +118,6 @@ gText_Rom_5C9E23: @ 0x085C9E23
 	.if (. - gText_Rom_5C9E23) < 0x12
 	.space 0x12 - (. - gText_Rom_5C9E23)
 	.endif
-	.globl gUnknown_85C9E35
-gUnknown_85C9E35: @ 0x085C9E35
 
 	@ src/strings.c:279 gText_12PoofForgotMove
 	.globl gText_Rom_5C9E35
@@ -151,8 +129,6 @@ gText_Rom_5C9E35: @ 0x085C9E35
 	.if (. - gText_Rom_5C9E35) < 0x44
 	.space 0x44 - (. - gText_Rom_5C9E35)
 	.endif
-	.globl gUnknown_85C9E79
-gUnknown_85C9E79: @ 0x085C9E79
 
 	@ src/strings.c:280 gText_PkmnAlreadyKnows
 	.globl gText_Rom_5C9E79

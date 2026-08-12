@@ -8,8 +8,6 @@ gText_Rom_5ABC43: @ 0x085ABC43
 	.if (. - gText_Rom_5ABC43) < 0x8
 	.space 0x8 - (. - gText_Rom_5ABC43)
 	.endif
-	.globl gUnknown_85ABC4B
-gUnknown_85ABC4B: @ 0x085ABC4B
 
 	@ asm/battle_interface.s:4844 sub_08074320
 	.globl gText_Rom_5ABC4B

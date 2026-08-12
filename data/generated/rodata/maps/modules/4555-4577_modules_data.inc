@@ -8,8 +8,6 @@ gText_Rom_5C9998: @ 0x085C9998
 	.if (. - gText_Rom_5C9998) < 0x20
 	.space 0x20 - (. - gText_Rom_5C9998)
 	.endif
-	.globl gUnknown_85C99B8
-gUnknown_85C99B8: @ 0x085C99B8
 
 	@ src/strings.c:232 gText_YouDontHaveMoney
 	.globl gText_Rom_5C99B8
@@ -21,8 +19,6 @@ gText_Rom_5C99B8: @ 0x085C99B8
 	.if (. - gText_Rom_5C99B8) < 0x10
 	.space 0x10 - (. - gText_Rom_5C99B8)
 	.endif
-	.globl gUnknown_85C99C8
-gUnknown_85C99C8: @ 0x085C99C8
 
 	@ src/strings.c:233 gText_NoMoreRoomForThis
 	.globl gText_Rom_5C99C8
@@ -34,8 +30,6 @@ gText_Rom_5C99C8: @ 0x085C99C8
 	.if (. - gText_Rom_5C99C8) < 0x16
 	.space 0x16 - (. - gText_Rom_5C99C8)
 	.endif
-	.globl gUnknown_85C99DE
-gUnknown_85C99DE: @ 0x085C99DE
 
 	@ src/strings.c:234 gText_SpaceForVar1Full
 	.globl gText_Rom_5C99DE
@@ -47,8 +41,6 @@ gText_Rom_5C99DE: @ 0x085C99DE
 	.if (. - gText_Rom_5C99DE) < 0x17
 	.space 0x17 - (. - gText_Rom_5C99DE)
 	.endif
-	.globl gUnknown_85C99F5
-gUnknown_85C99F5: @ 0x085C99F5
 
 	@ src/strings.c:235 gText_AnythingElseICanHelp
 	.globl gText_Rom_5C99F5
@@ -60,8 +52,6 @@ gText_Rom_5C99F5: @ 0x085C99F5
 	.if (. - gText_Rom_5C99F5) < 0x20
 	.space 0x20 - (. - gText_Rom_5C99F5)
 	.endif
-	.globl gUnknown_85C9A15
-gUnknown_85C9A15: @ 0x085C9A15
 
 	@ src/strings.c:236 gText_CanIHelpWithAnythingElse
 	.globl gText_Rom_5C9A15
@@ -73,8 +63,6 @@ gText_Rom_5C9A15: @ 0x085C9A15
 	.if (. - gText_Rom_5C9A15) < 0x18
 	.space 0x18 - (. - gText_Rom_5C9A15)
 	.endif
-	.globl gUnknown_85C9A2D
-gUnknown_85C9A2D: @ 0x085C9A2D
 
 	@ src/strings.c:237 gText_ThrowInPremierBall
 	.globl gText_Rom_5C9A2D
@@ -86,8 +74,6 @@ gText_Rom_5C9A2D: @ 0x085C9A2D
 	.if (. - gText_Rom_5C9A2D) < 0x1a
 	.space 0x1a - (. - gText_Rom_5C9A2D)
 	.endif
-	.globl gUnknown_85C9A47
-gUnknown_85C9A47: @ 0x085C9A47
 
 	@ src/strings.c:239 gText_CantBuyKeyItem
 	.globl gText_Rom_5C9A47
@@ -99,8 +85,6 @@ gText_Rom_5C9A47: @ 0x085C9A47
 	.if (. - gText_Rom_5C9A47) < 0x16
 	.space 0x16 - (. - gText_Rom_5C9A47)
 	.endif
-	.globl gUnknown_85C9A5D
-gUnknown_85C9A5D: @ 0x085C9A5D
 
 	@ src/strings.c:240 gText_HowManyToSell
 	.globl gText_Rom_5C9A5D
@@ -112,8 +96,6 @@ gText_Rom_5C9A5D: @ 0x085C9A5D
 	.if (. - gText_Rom_5C9A5D) < 0xf
 	.space 0xf - (. - gText_Rom_5C9A5D)
 	.endif
-	.globl gUnknown_85C9A6C
-gUnknown_85C9A6C: @ 0x085C9A6C
 
 	@ src/strings.c:241 gText_ICanPayVar1
 	.globl gText_Rom_5C9A6C
@@ -125,8 +107,6 @@ gText_Rom_5C9A6C: @ 0x085C9A6C
 	.if (. - gText_Rom_5C9A6C) < 0x1c
 	.space 0x1c - (. - gText_Rom_5C9A6C)
 	.endif
-	.globl gUnknown_85C9A88
-gUnknown_85C9A88: @ 0x085C9A88
 
 	@ src/strings.c:242 gText_TurnedOverVar1ForVar2
 	.globl gText_Rom_5C9A88
@@ -138,8 +118,6 @@ gText_Rom_5C9A88: @ 0x085C9A88
 	.if (. - gText_Rom_5C9A88) < 0x15
 	.space 0x15 - (. - gText_Rom_5C9A88)
 	.endif
-	.globl gUnknown_85C9A9D
-gUnknown_85C9A9D: @ 0x085C9A9D
 
 	@ src/strings.c:243 gText_PokedollarVar1
 	.globl gText_Rom_5C9A9D
@@ -151,4 +129,3 @@ gText_Rom_5C9A9D: @ 0x085C9A9D
 	.if (. - gText_Rom_5C9A9D) < 0x4
 	.space 0x4 - (. - gText_Rom_5C9A9D)
 	.endif
-

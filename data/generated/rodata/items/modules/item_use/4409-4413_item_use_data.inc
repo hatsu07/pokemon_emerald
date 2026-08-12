@@ -8,8 +8,6 @@ gText_Rom_5C9675: @ 0x085C9675
 	.if (. - gText_Rom_5C9675) < 0x24
 	.space 0x24 - (. - gText_Rom_5C9675)
 	.endif
-	.globl gUnknown_85C9699
-gUnknown_85C9699: @ 0x085C9699
 
 	@ src/item_use.c:98 sText_UsedVar2WildRepelled
 	.globl gText_Rom_5C9699
@@ -25,8 +23,6 @@ gText_Rom_5C9699: @ 0x085C9699
 gUnknown_85C96BD: @ 0x085C96BD
 	@ Decoded text from ROM range: offset=0x5C96BD, size=0x11
 	.string "ボックスが　いっぱい　です！{PAUSE_UNTIL_PRESS}$"
-	.globl gUnknown_85C96CE
-gUnknown_85C96CE: @ 0x085C96CE
 
 	@ src/item_use.c:93 sText_PowderQty
 	.globl gText_Rom_5C96CE

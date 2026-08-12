@@ -8,8 +8,6 @@ gText_Rom_5C9738: @ 0x085C9738
 	.if (. - gText_Rom_5C9738) < 0xa
 	.space 0xa - (. - gText_Rom_5C9738)
 	.endif
-	.globl gUnknown_85C9742
-gUnknown_85C9742: @ 0x085C9742
 
 	@ src/strings.c:207 strings_line_207
 	.globl gText_Rom_5C9742

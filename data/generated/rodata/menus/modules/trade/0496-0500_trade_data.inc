@@ -8,8 +8,6 @@ gText_Rom_300AA9: @ 0x08300AA9
 	.if (. - gText_Rom_300AA9) < 0x5
 	.space 0x5 - (. - gText_Rom_300AA9)
 	.endif
-	.globl gUnknown_8300AAE
-gUnknown_8300AAE: @ 0x08300AAE
 
 	@ asm/trade.s:2612 sub_08078120
 	.globl gText_Rom_300AAE
@@ -21,8 +19,6 @@ gText_Rom_300AAE: @ 0x08300AAE
 	.if (. - gText_Rom_300AAE) < 0x3
 	.space 0x3 - (. - gText_Rom_300AAE)
 	.endif
-	.globl gUnknown_8300AB1
-gUnknown_8300AB1: @ 0x08300AB1
 
 	@ asm/trade.s:2618 sub_08078120
 	.globl gText_Rom_300AB1

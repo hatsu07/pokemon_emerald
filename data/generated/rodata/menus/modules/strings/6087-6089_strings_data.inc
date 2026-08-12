@@ -8,8 +8,6 @@ gText_Rom_5CC3A7: @ 0x085CC3A7
 	.if (. - gText_Rom_5CC3A7) < 0x18
 	.space 0x18 - (. - gText_Rom_5CC3A7)
 	.endif
-	.globl gUnknown_85CC3BF
-gUnknown_85CC3BF: @ 0x085CC3BF
 
 	@ src/strings.c:687 gText_PokeblocksWithFriends
 	@ Preserve exact byte length: semantic suffix text pointer.

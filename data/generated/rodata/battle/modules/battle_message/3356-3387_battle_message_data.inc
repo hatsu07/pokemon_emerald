@@ -128,8 +128,6 @@ gUnknown_85AAE68: @ 0x085AAE68
 	@ ANALYSIS: RAW_BLOCK size=0x17
 	.byte 0xFD, 0x1C, 0x19, 0x00, 0xFD, 0x1D, 0x37, 0xFE, 0x0C, 0x36, 0x03, 0x48, 0x2D, 0x00, 0x0C, 0x06
 	.byte 0x09, 0x13, 0x07, 0x10, 0xAB, 0xFB, 0xFF
-	.globl gUnknown_85AAE7F
-gUnknown_85AAE7F: @ 0x085AAE7F
 
 	@ src/battle_message.c:97 sText_LinkTrainerWantsToBattle
 	.globl gText_Rom_5AAE7F
@@ -141,8 +139,6 @@ gText_Rom_5AAE7F: @ 0x085AAE7F
 	.if (. - gText_Rom_5AAE7F) < 0x12
 	.space 0x12 - (. - gText_Rom_5AAE7F)
 	.endif
-	.globl gUnknown_85AAE91
-gUnknown_85AAE91: @ 0x085AAE91
 
 	@ src/battle_message.c:98 sText_TwoLinkTrainersWantToBattle
 	.globl gText_Rom_5AAE91
@@ -213,8 +209,6 @@ gUnknown_85AAF06: @ 0x085AAF06
 	@ ANALYSIS: RAW_BLOCK size=0x1E
 	.byte 0xFD, 0x20, 0x1A, 0x00, 0xFD, 0x0A, 0x2D, 0x00, 0x08, 0x28, 0x41, 0x0C, 0x10, 0xAB, 0xFE, 0xFD
 	.byte 0x21, 0x1A, 0x00, 0xFD, 0x0C, 0x2D, 0x00, 0x08, 0x28, 0x41, 0x0C, 0x10, 0xAB, 0xFF
-	.globl gUnknown_85AAF24
-gUnknown_85AAF24: @ 0x085AAF24
 
 	@ src/battle_message.c:103 sText_LinkTrainerSentOutPkmn
 	.globl gText_Rom_5AAF24
@@ -226,8 +220,6 @@ gText_Rom_5AAF24: @ 0x085AAF24
 	.if (. - gText_Rom_5AAF24) < 0xf
 	.space 0xf - (. - gText_Rom_5AAF24)
 	.endif
-	.globl gUnknown_85AAF33
-gUnknown_85AAF33: @ 0x085AAF33
 
 	@ src/battle_message.c:108 sText_LinkTrainerMultiSentOutPkmn
 	.globl gText_Rom_5AAF33
@@ -239,8 +231,6 @@ gText_Rom_5AAF33: @ 0x085AAF33
 	.if (. - gText_Rom_5AAF33) < 0xf
 	.space 0xf - (. - gText_Rom_5AAF33)
 	.endif
-	.globl gUnknown_85AAF42
-gUnknown_85AAF42: @ 0x085AAF42
 
 	@ src/battle_message.c:109 sText_GoPkmn
 	.globl gText_Rom_5AAF42
@@ -252,8 +242,6 @@ gText_Rom_5AAF42: @ 0x085AAF42
 	.if (. - gText_Rom_5AAF42) < 0x9
 	.space 0x9 - (. - gText_Rom_5AAF42)
 	.endif
-	.globl gUnknown_85AAF4B
-gUnknown_85AAF4B: @ 0x085AAF4B
 
 	@ src/battle_message.c:110 sText_GoTwoPkmn
 	.globl gText_Rom_5AAF4B
@@ -265,8 +253,6 @@ gText_Rom_5AAF4B: @ 0x085AAF4B
 	.if (. - gText_Rom_5AAF4B) < 0xd
 	.space 0xd - (. - gText_Rom_5AAF4B)
 	.endif
-	.globl gUnknown_85AAF58
-gUnknown_85AAF58: @ 0x085AAF58
 
 	@ src/battle_message.c:111 sText_GoPkmn2
 	.globl gText_Rom_5AAF58
@@ -278,8 +264,6 @@ gText_Rom_5AAF58: @ 0x085AAF58
 	.if (. - gText_Rom_5AAF58) < 0x9
 	.space 0x9 - (. - gText_Rom_5AAF58)
 	.endif
-	.globl gUnknown_85AAF61
-gUnknown_85AAF61: @ 0x085AAF61
 
 	@ src/battle_message.c:112 sText_DoItPkmn
 	.globl gText_Rom_5AAF61
@@ -291,8 +275,6 @@ gText_Rom_5AAF61: @ 0x085AAF61
 	.if (. - gText_Rom_5AAF61) < 0xb
 	.space 0xb - (. - gText_Rom_5AAF61)
 	.endif
-	.globl gUnknown_85AAF6C
-gUnknown_85AAF6C: @ 0x085AAF6C
 
 	@ src/battle_message.c:113 sText_GoForItPkmn
 	.globl gText_Rom_5AAF6C
@@ -306,4 +288,3 @@ gText_Rom_5AAF6C: @ 0x085AAF6C
 	.endif
 	.globl gUnknown_85AAF76
 gUnknown_85AAF76: @ 0x085AAF76
-

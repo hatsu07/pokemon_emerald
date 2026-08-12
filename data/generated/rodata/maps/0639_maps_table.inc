@@ -356,11 +356,9 @@ gObjectEventGraphicsInfoPointers:
 	.4byte gObjectEventGraphicsInfo_JP_238 @ OBJ_EVENT_GFX index 238
 	.globl gEventObjectMovementData_084DDE30
 gEventObjectMovementData_084DDE30:
-	.globl gUnknown_84DDE30
-gUnknown_84DDE30: @ 0x084DDE30
 	@ analyzed canonical ROM range 0x084DDE30-0x084DDE4B
 	.globl gMauvilleOldManGraphicsInfoPointers
-gMauvilleOldManGraphicsInfoPointers:
+gMauvilleOldManGraphicsInfoPointers: @ 0x084DDE30
 	@ 7-entry Mauville old-man graphics-info selector table.
 	.4byte gObjectEventGraphicsInfo_JP_069 @ MAUVILLE_MAN_BARD
 	.4byte gMauvilleOldManGraphicsInfo_JP_01 @ MAUVILLE_MAN_HIPSTER

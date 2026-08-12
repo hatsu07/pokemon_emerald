@@ -8,8 +8,6 @@ gText_Rom_5CCCEE: @ 0x085CCCEE
 	.if (. - gText_Rom_5CCCEE) < 0x7
 	.space 0x7 - (. - gText_Rom_5CCCEE)
 	.endif
-	.globl gUnknown_85CCCF5
-gUnknown_85CCCF5: @ 0x085CCCF5
 
 	@ src/strings.c:821 gText_BerryPickingRecords
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -54,8 +52,6 @@ gText_Rom_5CCD1D: @ 0x085CCD1D
 	.if (. - gText_Rom_5CCD1D) < 0x17
 	.space 0x17 - (. - gText_Rom_5CCD1D)
 	.endif
-	.globl gUnknown_85CCD34
-gUnknown_85CCD34: @ 0x085CCD34
 
 	@ src/strings.c:825 gText_BerryPickingResults
 	.globl gText_Rom_5CCD34

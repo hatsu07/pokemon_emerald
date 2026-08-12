@@ -19,8 +19,6 @@ gText_Rom_5CCA89: @ 0x085CCA89
 	.endif
 	.globl gUnknown_85CCA8C
 	.set gUnknown_85CCA8C, gText_Rom_5CCA89 + 0x3
-	.globl gUnknown_85CCA93
-gUnknown_85CCA93: @ 0x085CCA93
 
 	@ src/strings.c:787 gText_SymbolsEarned
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -32,8 +30,6 @@ gText_Rom_5CCA93: @ 0x085CCA93
 	.endif
 	.globl gText_Rom_5CCA99
 	.set gText_Rom_5CCA99, gText_Rom_5CCA93 + 0x6
-	.globl gUnknown_85CCA9E
-gUnknown_85CCA9E: @ 0x085CCA9E
 
 	@ src/strings.c:788 gText_BattleRecord
 	@ Preserve exact byte length: semantic suffix text pointer.

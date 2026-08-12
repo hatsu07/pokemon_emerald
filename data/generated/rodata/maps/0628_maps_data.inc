@@ -1,5 +1,3 @@
-	.globl gUnknown_847D90C
-gUnknown_847D90C: @ 0x0847D90C
 	.globl gObjectEventPal_May
 gObjectEventPal_May: @ 0x0847D90C
 	@ 16-color object-event palette

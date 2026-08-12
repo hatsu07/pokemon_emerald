@@ -27,8 +27,6 @@ gUnknown_85CCE65: @ 0x085CCE65
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.byte 0xF7, 0x00, 0x1A, 0x00, 0x02, 0x50, 0x4B, 0x02, 0x44, 0x0D, 0xB0, 0xFF
-	.globl gUnknown_85CCE71
-gUnknown_85CCE71: @ 0x085CCE71
 
 	@ src/strings.c:837 gText_WantToPlayAgain (+1 aliases)
 	.globl gText_Rom_5CCE71
@@ -40,8 +38,6 @@ gText_Rom_5CCE71: @ 0x085CCE71
 	.if (. - gText_Rom_5CCE71) < 0xe
 	.space 0xe - (. - gText_Rom_5CCE71)
 	.endif
-	.globl gUnknown_85CCE7F
-gUnknown_85CCE7F: @ 0x085CCE7F
 
 	@ src/strings.c:851 gText_SomeoneDroppedOut2
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -53,8 +49,6 @@ gText_Rom_5CCE7F: @ 0x085CCE7F
 	.endif
 	.globl gText_Rom_5CCE95
 	.set gText_Rom_5CCE95, gText_Rom_5CCE7F + 0x16
-	.globl gUnknown_85CCE99
-gUnknown_85CCE99: @ 0x085CCE99
 
 	@ src/strings.c:852 gText_CommunicationStandby4
 	.globl gText_Rom_5CCE99
@@ -66,8 +60,6 @@ gText_Rom_5CCE99: @ 0x085CCE99
 	.if (. - gText_Rom_5CCE99) < 0xc
 	.space 0xc - (. - gText_Rom_5CCE99)
 	.endif
-	.globl gUnknown_85CCEA5
-gUnknown_85CCEA5: @ 0x085CCEA5
 
 	@ src/strings.c:853 gText_LinkContestResults
 	.globl gText_Rom_5CCEA5

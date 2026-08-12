@@ -53,8 +53,6 @@ gText_Rom_245447: @ 0x08245447
 	.if (. - gText_Rom_245447) < 0xe
 	.space 0xe - (. - gText_Rom_245447)
 	.endif
-	.globl gUnknown_8245455
-gUnknown_8245455: @ 0x08245455
 
 	@ data/text/secret_base_trainers.inc:64 SecretBase_Text_Trainer6Defeated
 	.globl gText_Rom_245455
@@ -121,8 +119,6 @@ gText_Rom_245537: @ 0x08245537
 	.if (. - gText_Rom_245537) < 0x19
 	.space 0x19 - (. - gText_Rom_245537)
 	.endif
-	.globl gUnknown_8245550
-gUnknown_8245550: @ 0x08245550
 
 	@ data/text/secret_base_trainers.inc:82 SecretBase_Text_Trainer2Defeated
 	.globl gText_Rom_245550
@@ -167,4 +163,3 @@ gText_Rom_2455E1: @ 0x082455E1
 	.if (. - gText_Rom_2455E1) < 0x5e
 	.space 0x5e - (. - gText_Rom_2455E1)
 	.endif
-

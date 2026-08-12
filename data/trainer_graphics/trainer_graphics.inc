@@ -590,60 +590,81 @@ gTrainerFrontPicPaletteTable:
 
 
 sAnimCmd_Brendan_1: @ 0x082D94B4
-	.2byte 0x0000, 0x0018 @ frame=0, duration=24
-	.2byte 0x0001, 0x0009 @ frame=1, duration=9
-	.2byte 0x0002, 0x0018 @ frame=2, duration=24
-	.2byte 0x0000, 0x0009 @ frame=0, duration=9
-	.2byte 0x0003, 0x0032 @ frame=3, duration=50
-	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
+	trainer_back_anim_frame 0, 24
+	trainer_back_anim_frame 1, 9
+	trainer_back_anim_frame 2, 24
+	trainer_back_anim_frame 0, 9
+	trainer_back_anim_frame 3, 50
+	trainer_back_anim_end
+	.if (. - sAnimCmd_Brendan_1) != TRAINER_BACK_ANIM_SEQUENCE_SIZE
+	.error "sAnimCmd_Brendan_1 size changed"
+	.endif
 
 sAnimCmd_May_Steven_1: @ 0x082D94CC
-	.2byte 0x0000, 0x0018 @ frame=0, duration=24
-	.2byte 0x0001, 0x0009 @ frame=1, duration=9
-	.2byte 0x0002, 0x0018 @ frame=2, duration=24
-	.2byte 0x0000, 0x0009 @ frame=0, duration=9
-	.2byte 0x0003, 0x0032 @ frame=3, duration=50
-	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
+	trainer_back_anim_frame 0, 24
+	trainer_back_anim_frame 1, 9
+	trainer_back_anim_frame 2, 24
+	trainer_back_anim_frame 0, 9
+	trainer_back_anim_frame 3, 50
+	trainer_back_anim_end
+	.if (. - sAnimCmd_May_Steven_1) != TRAINER_BACK_ANIM_SEQUENCE_SIZE
+	.error "sAnimCmd_May_Steven_1 size changed"
+	.endif
 
 sAnimCmd_Wally_1: @ 0x082D94E4
-	.2byte 0x0000, 0x0018 @ frame=0, duration=24
-	.2byte 0x0001, 0x0009 @ frame=1, duration=9
-	.2byte 0x0002, 0x0018 @ frame=2, duration=24
-	.2byte 0x0000, 0x0009 @ frame=0, duration=9
-	.2byte 0x0003, 0x0032 @ frame=3, duration=50
-	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
+	trainer_back_anim_frame 0, 24
+	trainer_back_anim_frame 1, 9
+	trainer_back_anim_frame 2, 24
+	trainer_back_anim_frame 0, 9
+	trainer_back_anim_frame 3, 50
+	trainer_back_anim_end
+	.if (. - sAnimCmd_Wally_1) != TRAINER_BACK_ANIM_SEQUENCE_SIZE
+	.error "sAnimCmd_Wally_1 size changed"
+	.endif
 
 sAnimCmd_Red_1: @ 0x082D94FC
-	.2byte 0x0001, 0x0014 @ frame=1, duration=20
-	.2byte 0x0002, 0x0006 @ frame=2, duration=6
-	.2byte 0x0003, 0x0006 @ frame=3, duration=6
-	.2byte 0x0004, 0x0018 @ frame=4, duration=24
-	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
+	trainer_back_anim_frame 1, 20
+	trainer_back_anim_frame 2, 6
+	trainer_back_anim_frame 3, 6
+	trainer_back_anim_frame 4, 24
+	trainer_back_anim_frame 0, 1
+	trainer_back_anim_end
+	.if (. - sAnimCmd_Red_1) != TRAINER_BACK_ANIM_SEQUENCE_SIZE
+	.error "sAnimCmd_Red_1 size changed"
+	.endif
 
 sAnimCmd_Leaf_1: @ 0x082D9514
-	.2byte 0x0001, 0x0014 @ frame=1, duration=20
-	.2byte 0x0002, 0x0006 @ frame=2, duration=6
-	.2byte 0x0003, 0x0006 @ frame=3, duration=6
-	.2byte 0x0004, 0x0018 @ frame=4, duration=24
-	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
+	trainer_back_anim_frame 1, 20
+	trainer_back_anim_frame 2, 6
+	trainer_back_anim_frame 3, 6
+	trainer_back_anim_frame 4, 24
+	trainer_back_anim_frame 0, 1
+	trainer_back_anim_end
+	.if (. - sAnimCmd_Leaf_1) != TRAINER_BACK_ANIM_SEQUENCE_SIZE
+	.error "sAnimCmd_Leaf_1 size changed"
+	.endif
 
 sAnimCmd_RubySapphireBrendan_1: @ 0x082D952C
-	.2byte 0x0000, 0x0018 @ frame=0, duration=24
-	.2byte 0x0001, 0x0009 @ frame=1, duration=9
-	.2byte 0x0002, 0x0018 @ frame=2, duration=24
-	.2byte 0x0000, 0x0009 @ frame=0, duration=9
-	.2byte 0x0003, 0x0032 @ frame=3, duration=50
-	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
+	trainer_back_anim_frame 0, 24
+	trainer_back_anim_frame 1, 9
+	trainer_back_anim_frame 2, 24
+	trainer_back_anim_frame 0, 9
+	trainer_back_anim_frame 3, 50
+	trainer_back_anim_end
+	.if (. - sAnimCmd_RubySapphireBrendan_1) != TRAINER_BACK_ANIM_SEQUENCE_SIZE
+	.error "sAnimCmd_RubySapphireBrendan_1 size changed"
+	.endif
 
 sAnimCmd_RubySapphireMay_1: @ 0x082D9544
-	.2byte 0x0000, 0x0018 @ frame=0, duration=24
-	.2byte 0x0001, 0x0009 @ frame=1, duration=9
-	.2byte 0x0002, 0x0018 @ frame=2, duration=24
-	.2byte 0x0000, 0x0009 @ frame=0, duration=9
-	.2byte 0x0003, 0x0032 @ frame=3, duration=50
-	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
+	trainer_back_anim_frame 0, 24
+	trainer_back_anim_frame 1, 9
+	trainer_back_anim_frame 2, 24
+	trainer_back_anim_frame 0, 9
+	trainer_back_anim_frame 3, 50
+	trainer_back_anim_end
+	.if (. - sAnimCmd_RubySapphireMay_1) != TRAINER_BACK_ANIM_SEQUENCE_SIZE
+	.error "sAnimCmd_RubySapphireMay_1 size changed"
+	.endif
 
 sTrainerBackAnims_Brendan: @ 0x082D955C
 	.4byte sAnim_GeneralFrame3

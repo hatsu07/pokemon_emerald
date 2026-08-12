@@ -1,5 +1,3 @@
-	.globl gUnknown_8471E6C
-gUnknown_8471E6C: @ 0x08471E6C
 	.globl gObjectEventPal_RubySapphireMay
 gObjectEventPal_RubySapphireMay: @ 0x08471E6C
 	@ 16-color object-event palette

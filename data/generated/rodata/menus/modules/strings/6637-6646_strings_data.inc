@@ -218,8 +218,6 @@ gUnknown_85DC09C: @ 0x085DC09C
 	@ analyzed canonical ROM range 0x085DC09C-0x085DC0B3
 sSpriteTemplate_085DC09C: @ 0x085DC09C
 	rodata_sprite_template 0x006D, 0x0067, 0x085DBEF8, 0x085DBF64, 0, 0x085DC030, SpriteCallbackDummy
-	.globl gUnknown_85DC0B4
-gUnknown_85DC0B4: @ 0x085DC0B4
 
 	@ src/strings.c:1004 gText_PkmnSwap
 	.globl gText_Rom_5DC0B4
@@ -231,8 +229,6 @@ gText_Rom_5DC0B4: @ 0x085DC0B4
 	.if (. - gText_Rom_5DC0B4) < 0xe
 	.space 0xe - (. - gText_Rom_5DC0B4)
 	.endif
-	.globl gUnknown_85DC0C2
-gUnknown_85DC0C2: @ 0x085DC0C2
 
 	@ src/strings.c:1005 gText_SelectPkmnToSwap
 	.globl gText_Rom_5DC0C2
@@ -244,8 +240,6 @@ gText_Rom_5DC0C2: @ 0x085DC0C2
 	.if (. - gText_Rom_5DC0C2) < 0x13
 	.space 0x13 - (. - gText_Rom_5DC0C2)
 	.endif
-	.globl gUnknown_85DC0D5
-gUnknown_85DC0D5: @ 0x085DC0D5
 
 	@ src/strings.c:1006 gText_SelectPkmnToAccept
 	.globl gText_Rom_5DC0D5
@@ -257,8 +251,6 @@ gText_Rom_5DC0D5: @ 0x085DC0D5
 	.if (. - gText_Rom_5DC0D5) < 0x13
 	.space 0x13 - (. - gText_Rom_5DC0D5)
 	.endif
-	.globl gUnknown_85DC0E8
-gUnknown_85DC0E8: @ 0x085DC0E8
 
 	@ src/strings.c:1007 gText_Swap (+1 aliases)
 	.globl gText_Rom_5DC0E8

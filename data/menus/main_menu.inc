@@ -31,11 +31,9 @@ sLz77Block_082D25C8:
 	@ pret/pokeemerald-jp direct xref for 0x082D277C: main_menu.s: CB2_NewGameBirchSpeech_ReturnFromNamingScreen, sub_0803058C
 	.globl gMainMenuData_082D277C
 gMainMenuData_082D277C:
-	.globl gUnknown_82D277C
-gUnknown_82D277C: @ 0x082D277C
 	@ confirmed GBA LZ77 stream: compressed=0x126, decompressed=0x500
 	.globl sBirchSpeechBgMap
-sBirchSpeechBgMap:
+sBirchSpeechBgMap: @ 0x082D277C
 sLz77Block_082D277C:
 	@ analyzed canonical ROM range 0x082D277C-0x082D28A5
 	@ structured u8 payload; no safe higher-level semantic type was provable

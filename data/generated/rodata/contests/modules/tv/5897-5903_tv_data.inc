@@ -8,8 +8,6 @@ gText_Rom_5CBFAD: @ 0x085CBFAD
 	.if (. - gText_Rom_5CBFAD) < 0x5
 	.space 0x5 - (. - gText_Rom_5CBFAD)
 	.endif
-	.globl gUnknown_85CBFB2
-gUnknown_85CBFB2: @ 0x085CBFB2
 
 	@ asm/tv.s:15288 DoTVShowFindThatGamer
 	.globl gText_Rom_5CBFB2
@@ -21,8 +19,6 @@ gText_Rom_5CBFB2: @ 0x085CBFB2
 	.if (. - gText_Rom_5CBFB2) < 0x6
 	.space 0x6 - (. - gText_Rom_5CBFB2)
 	.endif
-	.globl gUnknown_85CBFB8
-gUnknown_85CBFB8: @ 0x085CBFB8
 
 	@ asm/tv.s:14135 DoTVShow3CheersForPokeblocks
 	.globl gText_Rom_5CBFB8
@@ -34,8 +30,6 @@ gText_Rom_5CBFB8: @ 0x085CBFB8
 	.if (. - gText_Rom_5CBFB8) < 0x3
 	.space 0x3 - (. - gText_Rom_5CBFB8)
 	.endif
-	.globl gUnknown_85CBFBB
-gUnknown_85CBFBB: @ 0x085CBFBB
 
 	@ asm/tv.s:14127 DoTVShow3CheersForPokeblocks
 	.globl gText_Rom_5CBFBB

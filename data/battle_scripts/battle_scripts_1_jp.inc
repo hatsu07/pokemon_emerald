@@ -1,8 +1,6 @@
 @ Japanese Emerald battle scripts (move effects and shared battle scripts).
 @ Recovered from ROM bytes with command widths taken from battle_script.inc.
 
-	.globl gUnknown_8286C30
-gUnknown_8286C30:
 	.globl gBattleScriptsForMoveEffects
 gBattleScriptsForMoveEffects: @ 0x08286C30
 	.4byte BattleScript_EFFECT_HIT @ EFFECT_HIT

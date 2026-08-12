@@ -12,10 +12,8 @@ sTilesPerImage:
 	.byte 0x02, 0x04, 0x08, 0x20 @ ST_OAM_V_RECTANGLE
 	.byte 0x00, 0x00, 0x00, 0x00 @ unused shape row
 
-	.globl gUnknown_82D2A68
-gUnknown_82D2A68: @ 0x082D2A68
 	.globl gMinigameDigits_Pal
-gMinigameDigits_Pal:
+gMinigameDigits_Pal: @ 0x082D2A68
 	.incbin "build/graphics/link/minigame_digits.gbapal"
 
 	.globl gMinigameDigits_Gfx
@@ -214,10 +212,8 @@ gAffineAnims_BattleSpriteOpponentSide:
 	.4byte sAffineAnim_Battler_BigToSmall
 	.4byte sAffineAnim_Battler_Spin
 
-	.globl gUnknown_82D2F50
-gUnknown_82D2F50: @ 0x082D2F50
 	.globl gAffineAnims_BattleSpriteContest
-gAffineAnims_BattleSpriteContest:
+gAffineAnims_BattleSpriteContest: @ 0x082D2F50
 	.4byte sAffineAnim_Battler_Flipped
 	.4byte sAffineAnim_Battler_Emerge
 	.4byte sAffineAnim_Battler_Return
@@ -246,10 +242,8 @@ sAnim_MonPic_3: @ 0x082D2F94
 	.2byte 0x0003, 0x0000 @ frame=3, duration=0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
-	.globl gUnknown_82D2F9C
-gUnknown_82D2F9C: @ 0x082D2F9C
 	.globl gAnims_MonPic
-gAnims_MonPic:
+gAnims_MonPic: @ 0x082D2F9C
 	.4byte sAnim_MonPic_0
 	.4byte sAnim_MonPic_1
 	.4byte sAnim_MonPic_2
@@ -3050,10 +3044,8 @@ sUnusedAnimsTable: @ 0x082D3EE8
 	.4byte sUnusedAnims_Species438 @ species index 438
 	.4byte sUnusedAnims_Species439 @ species index 439
 
-	.globl gUnknown_82D45C8
-gUnknown_82D45C8: @ 0x082D45C8
 	.globl gMonFrontPicCoords
-gMonFrontPicCoords:
+gMonFrontPicCoords: @ 0x082D45C8
 	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 0: size, y_offset, ABI pad
 	.byte SPECIES_BELLSPROUT, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 1: size, y_offset, ABI pad
 	.byte SPECIES_SEEL, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 2: size, y_offset, ABI pad
@@ -3495,10 +3487,8 @@ gMonFrontPicCoords:
 	.byte SPECIES_PERSIAN, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 438: size, y_offset, ABI pad
 	.byte SPECIES_PERSIAN, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 439: size, y_offset, ABI pad
 
-	.globl gUnknown_82D4CA8
-gUnknown_82D4CA8: @ 0x082D4CA8
 	.globl gMonStillFrontPicTable
-gMonStillFrontPicTable:
+gMonStillFrontPicTable: @ 0x082D4CA8
 	.4byte 0x08C00758; .2byte 0x0800, SPECIES_NONE @ species index 0, MON_PIC_SIZE
 	.4byte 0x08C2FAAC; .2byte 0x0800, SPECIES_BULBASAUR @ species index 1, MON_PIC_SIZE
 	.4byte 0x08C30464; .2byte 0x0800, SPECIES_IVYSAUR @ species index 2, MON_PIC_SIZE
@@ -3940,10 +3930,8 @@ gMonStillFrontPicTable:
 	.4byte 0x08D50F58; .2byte 0x0800, SPECIES_UNOWN_EMARK @ species index 438, MON_PIC_SIZE
 	.4byte 0x08D516B0; .2byte 0x0800, SPECIES_UNOWN_QMARK @ species index 439, MON_PIC_SIZE
 
-	.globl gUnknown_82D5A68
-gUnknown_82D5A68: @ 0x082D5A68
 	.globl gMonBackPicCoords
-gMonBackPicCoords:
+gMonBackPicCoords: @ 0x082D5A68
 	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 0: size, y_offset, ABI pad
 	.byte SPECIES_VOLTORB, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 1: size, y_offset, ABI pad
 	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 2: size, y_offset, ABI pad

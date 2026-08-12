@@ -1,5 +1,3 @@
-	.globl gUnknown_863C27C
-gUnknown_863C27C: @ 0x0863C27C
 	.globl gMPlayTable
 gMPlayTable: @ 0x0863C27C
 	@ 4 x struct MusicPlayer

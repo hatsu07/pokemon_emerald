@@ -8,8 +8,6 @@ gText_Rom_4E8CB0: @ 0x084E8CB0
 	.if (. - gText_Rom_4E8CB0) < 0x7
 	.space 0x7 - (. - gText_Rom_4E8CB0)
 	.endif
-	.globl gUnknown_84E8CB7
-gUnknown_84E8CB7: @ 0x084E8CB7
 
 	@ src/main_menu.c:277 gText_ContinueMenuBadges (+2 aliases)
 	.globl gText_Rom_4E8CB7

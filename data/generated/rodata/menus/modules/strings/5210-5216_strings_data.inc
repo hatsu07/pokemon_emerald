@@ -8,8 +8,6 @@ gText_Rom_5CACEC: @ 0x085CACEC
 	.endif
 	.globl gText_Rom_5CACF0
 	.set gText_Rom_5CACF0, gText_Rom_5CACEC + 0x4
-	.globl gUnknown_85CACF5
-gUnknown_85CACF5: @ 0x085CACF5
 
 	@ src/strings.c:481 gText_LanettesPC
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -21,8 +19,6 @@ gText_Rom_5CACF5: @ 0x085CACF5
 	.endif
 	.globl gText_Rom_5CACF9
 	.set gText_Rom_5CACF9, gText_Rom_5CACF5 + 0x4
-	.globl gUnknown_85CACFE
-gUnknown_85CACFE: @ 0x085CACFE
 
 	@ src/strings.c:483 gText_PlayersPC
 	@ Preserve exact byte length: semantic suffix text pointer.

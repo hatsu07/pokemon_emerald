@@ -18,8 +18,6 @@ gUnknown_85AAF8E: @ 0x085AAF8E
 	@ ANALYSIS: RAW_BLOCK size=0x18
 	.byte 0xFD, 0x1F, 0x1A, 0x00, 0xFD, 0x0B, 0x2D, 0x00, 0x08, 0x28, 0x41, 0x0C, 0x10, 0xAB, 0xFE, 0x25
 	.byte 0x09, 0x50, 0xAB, 0x00, 0xFD, 0x09, 0xAB, 0xFF
-	.globl gUnknown_85AAFA6
-gUnknown_85AAFA6: @ 0x085AAFA6
 
 	@ src/battle_message.c:123 sText_PkmnThatsEnough
 	.globl gText_Rom_5AAFA6
@@ -31,8 +29,6 @@ gText_Rom_5AAFA6: @ 0x085AAFA6
 	.if (. - gText_Rom_5AAFA6) < 0xe
 	.space 0xe - (. - gText_Rom_5AAFA6)
 	.endif
-	.globl gUnknown_85AAFB4
-gUnknown_85AAFB4: @ 0x085AAFB4
 
 	@ src/battle_message.c:124 sText_PkmnComeBack
 	.globl gText_Rom_5AAFB4
@@ -44,8 +40,6 @@ gText_Rom_5AAFB4: @ 0x085AAFB4
 	.if (. - gText_Rom_5AAFB4) < 0x8
 	.space 0x8 - (. - gText_Rom_5AAFB4)
 	.endif
-	.globl gUnknown_85AAFBC
-gUnknown_85AAFBC: @ 0x085AAFBC
 
 	@ src/battle_message.c:125 sText_PkmnOkComeBack
 	.globl gText_Rom_5AAFBC
@@ -57,8 +51,6 @@ gText_Rom_5AAFBC: @ 0x085AAFBC
 	.if (. - gText_Rom_5AAFBC) < 0xd
 	.space 0xd - (. - gText_Rom_5AAFBC)
 	.endif
-	.globl gUnknown_85AAFC9
-gUnknown_85AAFC9: @ 0x085AAFC9
 
 	@ src/battle_message.c:126 sText_PkmnGoodComeBack
 	.globl gText_Rom_5AAFC9
@@ -98,8 +90,6 @@ gUnknown_85AAFFA: @ 0x085AAFFA
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xF
 	.byte 0xFD, 0x22, 0x1A, 0xFE, 0xFD, 0x00, 0x2D, 0x00, 0x1B, 0x50, 0x0A, 0x22, 0x10, 0xAB, 0xFF
-	.globl gUnknown_85AB009
-gUnknown_85AB009: @ 0x085AB009
 
 	@ src/battle_message.c:131 sText_WildPkmnPrefix (+1 aliases)
 	.globl gText_Rom_5AB009
@@ -111,8 +101,6 @@ gText_Rom_5AB009: @ 0x085AB009
 	.if (. - gText_Rom_5AB009) < 0x6
 	.space 0x6 - (. - gText_Rom_5AB009)
 	.endif
-	.globl gUnknown_85AB00F
-gUnknown_85AB00F: @ 0x085AB00F
 
 	@ src/battle_message.c:132 sText_FoePkmnPrefix (+1 aliases)
 	.globl gText_Rom_5AB00F
@@ -125,8 +113,6 @@ gText_Rom_5AB00F: @ 0x085AB00F
 	.space 0x6 - (. - gText_Rom_5AB00F)
 	.endif
 	.space 0x1, 0xFF
-	.globl gUnknown_85AB016
-gUnknown_85AB016: @ 0x085AB016
 
 	@ src/battle_message.c:136 sText_FoePkmnPrefix2 (+2 aliases)
 	.globl gText_Rom_5AB016
@@ -138,8 +124,6 @@ gText_Rom_5AB016: @ 0x085AB016
 	.if (. - gText_Rom_5AB016) < 0x5
 	.space 0x5 - (. - gText_Rom_5AB016)
 	.endif
-	.globl gUnknown_85AB01B
-gUnknown_85AB01B: @ 0x085AB01B
 
 	@ src/battle_message.c:137 sText_AllyPkmnPrefix (+2 aliases)
 	.globl gText_Rom_5AB01B
@@ -151,8 +135,6 @@ gText_Rom_5AB01B: @ 0x085AB01B
 	.if (. - gText_Rom_5AB01B) < 0x5
 	.space 0x5 - (. - gText_Rom_5AB01B)
 	.endif
-	.globl gUnknown_85AB020
-gUnknown_85AB020: @ 0x085AB020
 
 	@ src/battle_message.c:138 sText_FoePkmnPrefix3
 	.globl gText_Rom_5AB020
@@ -164,8 +146,6 @@ gText_Rom_5AB020: @ 0x085AB020
 	.if (. - gText_Rom_5AB020) < 0x5
 	.space 0x5 - (. - gText_Rom_5AB020)
 	.endif
-	.globl gUnknown_85AB025
-gUnknown_85AB025: @ 0x085AB025
 
 	@ src/battle_message.c:139 sText_AllyPkmnPrefix2
 	.globl gText_Rom_5AB025
@@ -177,8 +157,6 @@ gText_Rom_5AB025: @ 0x085AB025
 	.if (. - gText_Rom_5AB025) < 0x5
 	.space 0x5 - (. - gText_Rom_5AB025)
 	.endif
-	.globl gUnknown_85AB02A
-gUnknown_85AB02A: @ 0x085AB02A
 
 	@ src/battle_message.c:140 sText_FoePkmnPrefix4
 	.globl gText_Rom_5AB02A
@@ -190,8 +168,6 @@ gText_Rom_5AB02A: @ 0x085AB02A
 	.if (. - gText_Rom_5AB02A) < 0x5
 	.space 0x5 - (. - gText_Rom_5AB02A)
 	.endif
-	.globl gUnknown_85AB02F
-gUnknown_85AB02F: @ 0x085AB02F
 
 	@ src/battle_message.c:141 sText_AllyPkmnPrefix3
 	.globl gText_Rom_5AB02F
@@ -212,8 +188,6 @@ gUnknown_85AB034: @ 0x085AB034
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xFD, 0x0F, 0xFD, 0x00, 0xFE, 0xFD, 0x01, 0xFF
-	.globl gUnknown_85AB03C
-gUnknown_85AB03C: @ 0x085AB03C
 
 	@ src/battle_message.c:143 sText_ExclamationMark
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -229,8 +203,6 @@ gText_Rom_5AB03C: @ 0x085AB03C
 gUnknown_85AB044: @ 0x085AB044
 	@ Decoded text from ROM range: offset=0x5AB044, size=0x4
 	.string "した！$"
-	.globl gUnknown_85AB048
-gUnknown_85AB048: @ 0x085AB048
 
 	@ src/battle_message.c:145 sText_ExclamationMark3
 	.globl gText_Rom_5AB048
@@ -242,8 +214,6 @@ gText_Rom_5AB048: @ 0x085AB048
 	.if (. - gText_Rom_5AB048) < 0x6
 	.space 0x6 - (. - gText_Rom_5AB048)
 	.endif
-	.globl gUnknown_85AB04E
-gUnknown_85AB04E: @ 0x085AB04E
 
 	@ src/battle_message.c:146 sText_ExclamationMark4
 	.globl gText_Rom_5AB04E

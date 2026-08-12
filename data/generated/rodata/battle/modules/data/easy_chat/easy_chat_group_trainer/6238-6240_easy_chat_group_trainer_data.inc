@@ -8,8 +8,6 @@ gText_Rom_5CC76F: @ 0x085CC76F
 	.if (. - gText_Rom_5CC76F) < 0x5
 	.space 0x5 - (. - gText_Rom_5CC76F)
 	.endif
-	.globl gUnknown_85CC774
-gUnknown_85CC774: @ 0x085CC774
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:16 easy_chat_group_trainer_line_16 (+2 aliases)
 	.globl gText_Rom_5CC774

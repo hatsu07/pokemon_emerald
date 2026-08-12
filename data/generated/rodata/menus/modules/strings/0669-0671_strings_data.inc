@@ -17,8 +17,6 @@ gUnknown_84E8B94: @ 0x084E8B94
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0100, 0x0801, 0x0F04, 0x0008
-	.globl gUnknown_84E8B9C
-gUnknown_84E8B9C: @ 0x084E8B9C
 
 	@ src/strings.c:952 gText_BattlePyramidFloor
 	.globl gText_Rom_4E8B9C

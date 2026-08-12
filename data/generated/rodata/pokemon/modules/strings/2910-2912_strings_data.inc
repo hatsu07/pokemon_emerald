@@ -8,8 +8,6 @@ gText_Rom_5937E0: @ 0x085937E0
 	.if (. - gText_Rom_5937E0) < 0xf
 	.space 0xf - (. - gText_Rom_5937E0)
 	.endif
-	.globl gUnknown_85937EF
-gUnknown_85937EF: @ 0x085937EF
 
 	@ src/strings.c:1103 gText_TotalRecordWLD
 	.globl gText_Rom_5937EF

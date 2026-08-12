@@ -53,10 +53,8 @@ sVsLettersSpriteSheet:
 	.4byte gUnknown_8D77BB0 @ gVsLettersGfx
 	.2byte 0x1000, 10000 @ size, TAG_VS_LETTERS
 
-	.globl gUnknown_82EB860
-gUnknown_82EB860: @ 0x082EB860
 	.globl gBattleBgTemplates
-gBattleBgTemplates:
+gBattleBgTemplates: @ 0x082EB860
 	.2byte 0x0580, 0x0000 @ BG0: charBase=0 mapBase=24 screenSize=2 paletteMode=0 priority=0 baseTile=0
 	.2byte 0x05C5, 0x0000 @ BG1: charBase=1 mapBase=28 screenSize=2 paletteMode=0 priority=0 baseTile=0
 	.2byte 0x13E6, 0x0000 @ BG2: charBase=1 mapBase=30 screenSize=1 paletteMode=0 priority=1 baseTile=0
@@ -115,10 +113,8 @@ sBattleArenaWindowTemplates: @ 0x082EB938
 	.byte 0, 4, 15, 22, 4, 7; .2byte 0x0090 @ ARENA_WIN_JUDGMENT_TEXT
 	.byte 255, 0, 0, 0, 0, 0; .2byte 0x0000 @ DUMMY_WIN_TEMPLATE
 
-	.globl gUnknown_82EB9F8
-gUnknown_82EB9F8: @ 0x082EB9F8
 	.globl gBattleWindowTemplates
-gBattleWindowTemplates:
+gBattleWindowTemplates: @ 0x082EB9F8
 	.4byte sStandardBattleWindowTemplates
 	.4byte sBattleArenaWindowTemplates
 

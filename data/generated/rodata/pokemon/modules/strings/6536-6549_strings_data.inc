@@ -8,8 +8,6 @@ gText_Rom_5CCF72: @ 0x085CCF72
 	.if (. - gText_Rom_5CCF72) < 0xf
 	.space 0xf - (. - gText_Rom_5CCF72)
 	.endif
-	.globl gUnknown_85CCF81
-gUnknown_85CCF81: @ 0x085CCF81
 
 	@ src/strings.c:867 gJPText_CardReadingHasBeenHalted
 	.globl gText_Rom_5CCF81
@@ -32,8 +30,6 @@ gText_Rom_5CCF96: @ 0x085CCF96
 	.endif
 	.globl gText_Rom_5CCFA9
 	.set gText_Rom_5CCFA9, gText_Rom_5CCF96 + 0x13
-	.globl gUnknown_85CCFAD
-gUnknown_85CCFAD: @ 0x085CCFAD
 
 	@ src/strings.c:869 gJPText_Connecting
 	.globl gText_Rom_5CCFAD
@@ -45,8 +41,6 @@ gText_Rom_5CCFAD: @ 0x085CCFAD
 	.if (. - gText_Rom_5CCFAD) < 0xc
 	.space 0xc - (. - gText_Rom_5CCFAD)
 	.endif
-	.globl gUnknown_85CCFB9
-gUnknown_85CCFB9: @ 0x085CCFB9
 
 	@ src/strings.c:870 gJPText_ConnectionErrorCheckLink
 	.globl gText_Rom_5CCFB9
@@ -58,8 +52,6 @@ gText_Rom_5CCFB9: @ 0x085CCFB9
 	.if (. - gText_Rom_5CCFB9) < 0x1c
 	.space 0x1c - (. - gText_Rom_5CCFB9)
 	.endif
-	.globl gUnknown_85CCFD5
-gUnknown_85CCFD5: @ 0x085CCFD5
 
 	@ src/strings.c:871 gJPText_ConnectionErrorTryAgain
 	.globl gText_Rom_5CCFD5
@@ -71,8 +63,6 @@ gText_Rom_5CCFD5: @ 0x085CCFD5
 	.if (. - gText_Rom_5CCFD5) < 0x1d
 	.space 0x1d - (. - gText_Rom_5CCFD5)
 	.endif
-	.globl gUnknown_85CCFF2
-gUnknown_85CCFF2: @ 0x085CCFF2
 
 	@ src/strings.c:872 gJPText_AllowEReaderToLoadCard
 	.globl gText_Rom_5CCFF2

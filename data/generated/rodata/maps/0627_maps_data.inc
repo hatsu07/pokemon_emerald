@@ -1,5 +1,3 @@
-	.globl gUnknown_847C6CC
-gUnknown_847C6CC: @ 0x0847C6CC
 	.globl gObjectEventPal_Brendan
 gObjectEventPal_Brendan: @ 0x0847C6CC
 	@ 16-color object-event palette

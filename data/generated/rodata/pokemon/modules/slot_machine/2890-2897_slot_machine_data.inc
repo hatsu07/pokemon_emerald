@@ -8,8 +8,6 @@ gText_Rom_588606: @ 0x08588606
 	.if (. - gText_Rom_588606) < 0xc
 	.space 0xc - (. - gText_Rom_588606)
 	.endif
-	.globl gUnknown_8588612
-gUnknown_8588612: @ 0x08588612
 
 	@ asm/slot_machine.s:1721 SlotAction_PrintMessage_9999Coins
 	.globl gText_Rom_588612
@@ -21,8 +19,6 @@ gText_Rom_588612: @ 0x08588612
 	.if (. - gText_Rom_588612) < 0x15
 	.space 0x15 - (. - gText_Rom_588612)
 	.endif
-	.globl gUnknown_8588627
-gUnknown_8588627: @ 0x08588627
 
 	@ asm/slot_machine.s:1778 SlotAction_PrintMessage_NoMoreCoins
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -34,8 +30,6 @@ gText_Rom_588627: @ 0x08588627
 	.endif
 	.globl gText_Rom_58863D
 	.set gText_Rom_58863D, gText_Rom_588627 + 0x16
-	.globl gUnknown_8588641
-gUnknown_8588641: @ 0x08588641
 
 	@ asm/slot_machine.s:1036 SlotAction_PrintYouDontHaveThreeCoins
 	.globl gText_Rom_588641

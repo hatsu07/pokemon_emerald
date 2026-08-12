@@ -767,8 +767,6 @@ gBattleTransitionFrontierCirclesSymmetricSpiralInSeq_Funcs: @ 0x085FCAE4
 
 	.globl gMysteryEventScriptData_085FCAF8
 gMysteryEventScriptData_085FCAF8:
-	.globl gUnknown_85FCAF8
-gUnknown_85FCAF8:
 	.globl gText_MysteryEventBerry
 gText_MysteryEventBerry: @ 0x085FCAF8
 	.string "{0xFD}{0x03}のみを　てに　いれた！\nトウカジムの　パパから　うけとろう！$"
@@ -778,8 +776,6 @@ gText_MysteryEventBerry: @ 0x085FCAF8
 
 	.globl gMysteryEventScriptData_085FCB19
 gMysteryEventScriptData_085FCB19:
-	.globl gUnknown_85FCB19
-gUnknown_85FCB19:
 	.globl gText_MysteryEventBerryTransform
 gText_MysteryEventBerryTransform: @ 0x085FCB19
 	.string "{0xFD}{0x02}のみは\n{0xFD}{0x03}のみに　へんかした！$"
@@ -789,8 +785,6 @@ gText_MysteryEventBerryTransform: @ 0x085FCB19
 
 	.globl gMysteryEventScriptData_085FCB2C
 gMysteryEventScriptData_085FCB2C:
-	.globl gUnknown_85FCB2C
-gUnknown_85FCB2C:
 	.globl gText_MysteryEventBerryObtained
 gText_MysteryEventBerryObtained: @ 0x085FCB2C
 	.string "{0xFD}{0x02}のみは　すでに\nはいっていた$"
@@ -799,4 +793,3 @@ gText_MysteryEventBerryObtained: @ 0x085FCB2C
 	.endif
 	.globl gUnknown_85FCB3D
 gUnknown_85FCB3D: @ 0x085FCB3D
-

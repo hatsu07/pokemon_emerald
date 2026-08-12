@@ -1,7 +1,5 @@
 @ Japanese Emerald Contest AI script table and command stream.
 
-	.globl gUnknown_828C8D8
-gUnknown_828C8D8:
 	.globl gContestAI_ScriptsTable
 gContestAI_ScriptsTable: @ 0x0828C8D8
 	.4byte ContestAI_CheckBadMove @ Contest AI script index 0

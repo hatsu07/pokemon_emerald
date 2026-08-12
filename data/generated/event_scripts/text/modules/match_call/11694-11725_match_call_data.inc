@@ -8,8 +8,6 @@ gText_Rom_262E5F: @ 0x08262E5F
 	.if (. - gText_Rom_262E5F) < 0x22
 	.space 0x22 - (. - gText_Rom_262E5F)
 	.endif
-	.globl gUnknown_8262E81
-gUnknown_8262E81: @ 0x08262E81
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_262E81
@@ -21,8 +19,6 @@ gText_Rom_262E81: @ 0x08262E81
 	.if (. - gText_Rom_262E81) < 0x25
 	.space 0x25 - (. - gText_Rom_262E81)
 	.endif
-	.globl gUnknown_8262EA6
-gUnknown_8262EA6: @ 0x08262EA6
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_262EA6
@@ -34,8 +30,6 @@ gText_Rom_262EA6: @ 0x08262EA6
 	.if (. - gText_Rom_262EA6) < 0x29
 	.space 0x29 - (. - gText_Rom_262EA6)
 	.endif
-	.globl gUnknown_8262ECF
-gUnknown_8262ECF: @ 0x08262ECF
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_262ECF
@@ -47,8 +41,6 @@ gText_Rom_262ECF: @ 0x08262ECF
 	.if (. - gText_Rom_262ECF) < 0x26
 	.space 0x26 - (. - gText_Rom_262ECF)
 	.endif
-	.globl gUnknown_8262EF5
-gUnknown_8262EF5: @ 0x08262EF5
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_262EF5
@@ -60,8 +52,6 @@ gText_Rom_262EF5: @ 0x08262EF5
 	.if (. - gText_Rom_262EF5) < 0x23
 	.space 0x23 - (. - gText_Rom_262EF5)
 	.endif
-	.globl gUnknown_8262F18
-gUnknown_8262F18: @ 0x08262F18
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_262F18
@@ -73,8 +63,6 @@ gText_Rom_262F18: @ 0x08262F18
 	.if (. - gText_Rom_262F18) < 0x27
 	.space 0x27 - (. - gText_Rom_262F18)
 	.endif
-	.globl gUnknown_8262F3F
-gUnknown_8262F3F: @ 0x08262F3F
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_262F3F
@@ -86,8 +74,6 @@ gText_Rom_262F3F: @ 0x08262F3F
 	.if (. - gText_Rom_262F3F) < 0x22
 	.space 0x22 - (. - gText_Rom_262F3F)
 	.endif
-	.globl gUnknown_8262F61
-gUnknown_8262F61: @ 0x08262F61
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_262F61
@@ -99,8 +85,6 @@ gText_Rom_262F61: @ 0x08262F61
 	.if (. - gText_Rom_262F61) < 0x29
 	.space 0x29 - (. - gText_Rom_262F61)
 	.endif
-	.globl gUnknown_8262F8A
-gUnknown_8262F8A: @ 0x08262F8A
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_262F8A
@@ -112,8 +96,6 @@ gText_Rom_262F8A: @ 0x08262F8A
 	.if (. - gText_Rom_262F8A) < 0x23
 	.space 0x23 - (. - gText_Rom_262F8A)
 	.endif
-	.globl gUnknown_8262FAD
-gUnknown_8262FAD: @ 0x08262FAD
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_262FAD
@@ -125,8 +107,6 @@ gText_Rom_262FAD: @ 0x08262FAD
 	.if (. - gText_Rom_262FAD) < 0x34
 	.space 0x34 - (. - gText_Rom_262FAD)
 	.endif
-	.globl gUnknown_8262FE1
-gUnknown_8262FE1: @ 0x08262FE1
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_262FE1
@@ -138,8 +118,6 @@ gText_Rom_262FE1: @ 0x08262FE1
 	.if (. - gText_Rom_262FE1) < 0x2b
 	.space 0x2b - (. - gText_Rom_262FE1)
 	.endif
-	.globl gUnknown_826300C
-gUnknown_826300C: @ 0x0826300C
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_26300C
@@ -151,8 +129,6 @@ gText_Rom_26300C: @ 0x0826300C
 	.if (. - gText_Rom_26300C) < 0x26
 	.space 0x26 - (. - gText_Rom_26300C)
 	.endif
-	.globl gUnknown_8263032
-gUnknown_8263032: @ 0x08263032
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_263032
@@ -164,8 +140,6 @@ gText_Rom_263032: @ 0x08263032
 	.if (. - gText_Rom_263032) < 0x1e
 	.space 0x1e - (. - gText_Rom_263032)
 	.endif
-	.globl gUnknown_8263050
-gUnknown_8263050: @ 0x08263050
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_263050
@@ -177,8 +151,6 @@ gText_Rom_263050: @ 0x08263050
 	.if (. - gText_Rom_263050) < 0x22
 	.space 0x22 - (. - gText_Rom_263050)
 	.endif
-	.globl gUnknown_8263072
-gUnknown_8263072: @ 0x08263072
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_263072
@@ -190,8 +162,6 @@ gText_Rom_263072: @ 0x08263072
 	.if (. - gText_Rom_263072) < 0x23
 	.space 0x23 - (. - gText_Rom_263072)
 	.endif
-	.globl gUnknown_8263095
-gUnknown_8263095: @ 0x08263095
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_263095
@@ -205,4 +175,3 @@ gText_Rom_263095: @ 0x08263095
 	.endif
 	.globl gUnknown_82630C7
 gUnknown_82630C7: @ 0x082630C7
-

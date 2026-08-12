@@ -8,8 +8,6 @@ gText_Rom_5CA742: @ 0x085CA742
 	.if (. - gText_Rom_5CA742) < 0x3
 	.space 0x3 - (. - gText_Rom_5CA742)
 	.endif
-	.globl gUnknown_85CA745
-gUnknown_85CA745: @ 0x085CA745
 
 	@ src/strings.c:436 gText_PlaceItHere
 	.globl gText_Rom_5CA745
@@ -21,8 +19,6 @@ gText_Rom_5CA745: @ 0x085CA745
 	.if (. - gText_Rom_5CA745) < 0xb
 	.space 0xb - (. - gText_Rom_5CA745)
 	.endif
-	.globl gUnknown_85CA750
-gUnknown_85CA750: @ 0x085CA750
 
 	@ src/strings.c:437 gText_CantBePlacedHere
 	.globl gText_Rom_5CA750
@@ -34,8 +30,6 @@ gText_Rom_5CA750: @ 0x085CA750
 	.if (. - gText_Rom_5CA750) < 0xc
 	.space 0xc - (. - gText_Rom_5CA750)
 	.endif
-	.globl gUnknown_85CA75C
-gUnknown_85CA75C: @ 0x085CA75C
 
 	@ src/strings.c:438 gText_CancelDecorating
 	.globl gText_Rom_5CA75C
@@ -47,8 +41,6 @@ gText_Rom_5CA75C: @ 0x085CA75C
 	.if (. - gText_Rom_5CA75C) < 0xc
 	.space 0xc - (. - gText_Rom_5CA75C)
 	.endif
-	.globl gUnknown_85CA768
-gUnknown_85CA768: @ 0x085CA768
 
 	@ src/strings.c:439 gText_InUseAlready
 	.globl gText_Rom_5CA768
@@ -60,8 +52,6 @@ gText_Rom_5CA768: @ 0x085CA768
 	.if (. - gText_Rom_5CA768) < 0xe
 	.space 0xe - (. - gText_Rom_5CA768)
 	.endif
-	.globl gUnknown_85CA776
-gUnknown_85CA776: @ 0x085CA776
 
 	@ src/strings.c:440 gText_NoMoreDecorations
 	.globl gText_Rom_5CA776
@@ -73,8 +63,6 @@ gText_Rom_5CA776: @ 0x085CA776
 	.if (. - gText_Rom_5CA776) < 0x23
 	.space 0x23 - (. - gText_Rom_5CA776)
 	.endif
-	.globl gUnknown_85CA799
-gUnknown_85CA799: @ 0x085CA799
 
 	@ src/strings.c:441 gText_NoMoreDecorations2
 	.globl gText_Rom_5CA799
@@ -97,8 +85,6 @@ gText_Rom_5CA7B9: @ 0x085CA7B9
 	.if (. - gText_Rom_5CA7B9) < 0x20
 	.space 0x20 - (. - gText_Rom_5CA7B9)
 	.endif
-	.globl gUnknown_85CA7D9
-gUnknown_85CA7D9: @ 0x085CA7D9
 
 	@ src/strings.c:443 gText_CantPlaceInRoom
 	.globl gText_Rom_5CA7D9
@@ -110,8 +96,6 @@ gText_Rom_5CA7D9: @ 0x085CA7D9
 	.if (. - gText_Rom_5CA7D9) < 0x19
 	.space 0x19 - (. - gText_Rom_5CA7D9)
 	.endif
-	.globl gUnknown_85CA7F2
-gUnknown_85CA7F2: @ 0x085CA7F2
 
 	@ src/strings.c:444 gText_CantThrowAwayInUse
 	.globl gText_Rom_5CA7F2
@@ -123,8 +107,6 @@ gText_Rom_5CA7F2: @ 0x085CA7F2
 	.if (. - gText_Rom_5CA7F2) < 0x20
 	.space 0x20 - (. - gText_Rom_5CA7F2)
 	.endif
-	.globl gUnknown_85CA812
-gUnknown_85CA812: @ 0x085CA812
 
 	@ src/strings.c:445 gText_DecorationWillBeDiscarded
 	.globl gText_Rom_5CA812
@@ -136,8 +118,6 @@ gText_Rom_5CA812: @ 0x085CA812
 	.if (. - gText_Rom_5CA812) < 0x17
 	.space 0x17 - (. - gText_Rom_5CA812)
 	.endif
-	.globl gUnknown_85CA829
-gUnknown_85CA829: @ 0x085CA829
 
 	@ src/strings.c:446 gText_DecorationThrownAway
 	.globl gText_Rom_5CA829
@@ -149,8 +129,6 @@ gText_Rom_5CA829: @ 0x085CA829
 	.if (. - gText_Rom_5CA829) < 0xc
 	.space 0xc - (. - gText_Rom_5CA829)
 	.endif
-	.globl gUnknown_85CA835
-gUnknown_85CA835: @ 0x085CA835
 
 	@ src/strings.c:447 gText_StopPuttingAwayDecorations
 	.globl gText_Rom_5CA835
@@ -162,8 +140,6 @@ gText_Rom_5CA835: @ 0x085CA835
 	.if (. - gText_Rom_5CA835) < 0xd
 	.space 0xd - (. - gText_Rom_5CA835)
 	.endif
-	.globl gUnknown_85CA842
-gUnknown_85CA842: @ 0x085CA842
 
 	@ src/strings.c:448 gText_NoDecorationHere
 	.globl gText_Rom_5CA842
@@ -175,8 +151,6 @@ gText_Rom_5CA842: @ 0x085CA842
 	.if (. - gText_Rom_5CA842) < 0x10
 	.space 0x10 - (. - gText_Rom_5CA842)
 	.endif
-	.globl gUnknown_85CA852
-gUnknown_85CA852: @ 0x085CA852
 
 	@ src/strings.c:449 gText_ReturnDecorationToPC
 	.globl gText_Rom_5CA852
@@ -188,8 +162,6 @@ gText_Rom_5CA852: @ 0x085CA852
 	.if (. - gText_Rom_5CA852) < 0x15
 	.space 0x15 - (. - gText_Rom_5CA852)
 	.endif
-	.globl gUnknown_85CA867
-gUnknown_85CA867: @ 0x085CA867
 
 	@ src/strings.c:450 gText_DecorationReturnedToPC
 	.globl gText_Rom_5CA867
@@ -203,4 +175,3 @@ gText_Rom_5CA867: @ 0x085CA867
 	.endif
 	.globl gUnknown_85CA87A
 gUnknown_85CA87A: @ 0x085CA87A
-

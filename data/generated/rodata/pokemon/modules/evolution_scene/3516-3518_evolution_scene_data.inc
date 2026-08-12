@@ -8,8 +8,6 @@ gText_Rom_5ABB28: @ 0x085ABB28
 	.if (. - gText_Rom_5ABB28) < 0x16
 	.space 0x16 - (. - gText_Rom_5ABB28)
 	.endif
-	.globl gUnknown_85ABB3E
-gUnknown_85ABB3E: @ 0x085ABB3E
 
 	@ asm/evolution_scene.s:1927 Task_EvolutionScene
 	.globl gText_Rom_5ABB3E

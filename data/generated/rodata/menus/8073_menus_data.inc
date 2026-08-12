@@ -1,5 +1,3 @@
-	.globl gUnknown_863C2AC
-gUnknown_863C2AC: @ 0x0863C2AC
 	.globl gSongTable
 gSongTable: @ 0x0863C2AC
 	@ 559 x struct Song

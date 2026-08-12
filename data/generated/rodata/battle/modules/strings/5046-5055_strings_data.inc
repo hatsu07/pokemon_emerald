@@ -8,8 +8,6 @@ gText_Rom_5CA976: @ 0x085CA976
 	.if (. - gText_Rom_5CA976) < 0x12
 	.space 0x12 - (. - gText_Rom_5CA976)
 	.endif
-	.globl gUnknown_85CA988
-gUnknown_85CA988: @ 0x085CA988
 
 	@ src/strings.c:454 gText_WhatToDoWithVar1sMail
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -21,8 +19,6 @@ gText_Rom_5CA988: @ 0x085CA988
 	.endif
 	.globl gText_Rom_5CA98D
 	.set gText_Rom_5CA98D, gText_Rom_5CA988 + 0x5
-	.globl gUnknown_85CA99A
-gUnknown_85CA99A: @ 0x085CA99A
 
 	@ src/strings.c:455 gText_MessageWillBeLost
 	.globl gText_Rom_5CA99A
@@ -34,8 +30,6 @@ gText_Rom_5CA99A: @ 0x085CA99A
 	.if (. - gText_Rom_5CA99A) < 0x19
 	.space 0x19 - (. - gText_Rom_5CA99A)
 	.endif
-	.globl gUnknown_85CA9B3
-gUnknown_85CA9B3: @ 0x085CA9B3
 
 	@ src/strings.c:456 gText_BagIsFull
 	.globl gText_Rom_5CA9B3
@@ -47,8 +41,6 @@ gText_Rom_5CA9B3: @ 0x085CA9B3
 	.if (. - gText_Rom_5CA9B3) < 0xf
 	.space 0xf - (. - gText_Rom_5CA9B3)
 	.endif
-	.globl gUnknown_85CA9C2
-gUnknown_85CA9C2: @ 0x085CA9C2
 
 	@ src/strings.c:457 gText_MailToBagMessageErased
 	.globl gText_Rom_5CA9C2

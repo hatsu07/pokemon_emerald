@@ -17,8 +17,6 @@ gText_Rom_5AB1AA: @ 0x085AB1AA
 	.byte 0x58, 0x68, 0xAE, 0x71, 0x2D, 0x00, 0x12, 0x09, 0x1F, 0x0D, 0x06, 0xAC, 0xFF, 0xFD, 0x06, 0x1A
 	.byte 0x00, 0xFD, 0x27, 0x00, 0x9B, 0x5F, 0x5A, 0x7E, 0x16, 0xFE, 0x13, 0x2E, 0x0F, 0x03, 0x0B, 0x2A
 	.byte 0x10, 0xAB, 0xFF
-	.globl gUnknown_85AB225
-gUnknown_85AB225: @ 0x085AB225
 
 	@ src/battle_message.c:177 sText_Someones
 	.globl gText_Rom_5AB225
@@ -30,8 +28,6 @@ gText_Rom_5AB225: @ 0x085AB225
 	.if (. - gText_Rom_5AB225) < 0x5
 	.space 0x5 - (. - gText_Rom_5AB225)
 	.endif
-	.globl gUnknown_85AB22A
-gUnknown_85AB22A: @ 0x085AB22A
 
 	@ src/battle_message.c:178 sText_Lanettes
 	.globl gText_Rom_5AB22A
@@ -78,8 +74,6 @@ gText_Rom_5AB26A: @ 0x085AB26A
 	.if (. - gText_Rom_5AB26A) < 0x1e
 	.space 0x1e - (. - gText_Rom_5AB26A)
 	.endif
-	.globl gUnknown_85AB288
-gUnknown_85AB288: @ 0x085AB288
 
 	@ src/battle_message.c:180 sText_EnigmaBerry
 	.globl gText_Rom_5AB288
@@ -91,8 +85,6 @@ gText_Rom_5AB288: @ 0x085AB288
 	.if (. - gText_Rom_5AB288) < 0x5
 	.space 0x5 - (. - gText_Rom_5AB288)
 	.endif
-	.globl gUnknown_85AB28D
-gUnknown_85AB28D: @ 0x085AB28D
 
 	@ asm/battle_message.s:1734 BattleStringExpandPlaceholders
 	.globl gText_Rom_5AB28D
@@ -183,4 +175,3 @@ gText_Rom_5AB31D: @ 0x085AB31D
 	.if (. - gText_Rom_5AB31D) < 0x19
 	.space 0x19 - (. - gText_Rom_5AB31D)
 	.endif
-

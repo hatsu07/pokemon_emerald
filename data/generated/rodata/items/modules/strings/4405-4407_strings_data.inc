@@ -8,8 +8,6 @@ gText_Rom_5C9644: @ 0x085C9644
 	.if (. - gText_Rom_5C9644) < 0x10
 	.space 0x10 - (. - gText_Rom_5C9644)
 	.endif
-	.globl gUnknown_85C9654
-gUnknown_85C9654: @ 0x085C9654
 
 	@ src/strings.c:169 gText_RepelEffectsLingered
 	.globl gText_Rom_5C9654

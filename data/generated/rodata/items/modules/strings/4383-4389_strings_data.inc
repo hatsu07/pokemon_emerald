@@ -8,8 +8,6 @@ gText_Rom_5C9523: @ 0x085C9523
 	.if (. - gText_Rom_5C9523) < 0xf
 	.space 0xf - (. - gText_Rom_5C9523)
 	.endif
-	.globl gUnknown_85C9532
-gUnknown_85C9532: @ 0x085C9532
 
 	@ src/strings.c:165 gText_ThrewAwayVar2Var1s
 	.globl gText_Rom_5C9532
@@ -21,8 +19,6 @@ gText_Rom_5C9532: @ 0x085C9532
 	.if (. - gText_Rom_5C9532) < 0xe
 	.space 0xe - (. - gText_Rom_5C9532)
 	.endif
-	.globl gUnknown_85C9540
-gUnknown_85C9540: @ 0x085C9540
 
 	@ src/strings.c:166 gText_ConfirmTossItems
 	.globl gText_Rom_5C9540
@@ -34,8 +30,6 @@ gText_Rom_5C9540: @ 0x085C9540
 	.if (. - gText_Rom_5C9540) < 0x16
 	.space 0x16 - (. - gText_Rom_5C9540)
 	.endif
-	.globl gUnknown_85C9556
-gUnknown_85C9556: @ 0x085C9556
 
 	@ src/strings.c:167 gText_DadsAdvice
 	.globl gText_Rom_5C9556

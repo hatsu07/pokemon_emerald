@@ -19,8 +19,6 @@ gText_Rom_5C8C32: @ 0x085C8C32
 	.if (. - gText_Rom_5C8C32) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8C32)
 	.endif
-	.globl gUnknown_85C8C36
-gUnknown_85C8C36: @ 0x085C8C36
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:160 easy_chat_group_trainer_line_160 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

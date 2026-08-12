@@ -8,8 +8,6 @@ gText_Rom_5ABB9B: @ 0x085ABB9B
 	.if (. - gText_Rom_5ABB9B) < 0x6
 	.space 0x6 - (. - gText_Rom_5ABB9B)
 	.endif
-	.globl gUnknown_85ABBA1
-gUnknown_85ABBA1: @ 0x085ABBA1
 
 	@ asm/battle_controller_player.s:4773 PlayerHandleTwoReturnValues
 	@ Preserve exact byte length: semantic suffix text pointer.

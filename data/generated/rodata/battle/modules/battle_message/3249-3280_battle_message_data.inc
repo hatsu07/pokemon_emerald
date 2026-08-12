@@ -41,8 +41,6 @@ gText_Rom_5AA964: @ 0x085AA964
 	.if (. - gText_Rom_5AA964) < 0xc
 	.space 0xc - (. - gText_Rom_5AA964)
 	.endif
-	.globl gUnknown_85AA970
-gUnknown_85AA970: @ 0x085AA970
 
 	@ src/battle_message.c:79 sText_GotAwaySafely
 	.globl gText_Rom_5AA970
@@ -69,8 +67,6 @@ gText_Rom_5AA9B2: @ 0x085AA9B2
 	.if (. - gText_Rom_5AA9B2) < 0x14
 	.space 0x14 - (. - gText_Rom_5AA9B2)
 	.endif
-	.globl gUnknown_85AA9C6
-gUnknown_85AA9C6: @ 0x085AA9C6
 
 	@ src/battle_message.c:80 sText_PlayerDefeatedLinkTrainer
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -82,8 +78,6 @@ gText_Rom_5AA9C6: @ 0x085AA9C6
 	.endif
 	.globl gText_Rom_5AA9D1
 	.set gText_Rom_5AA9D1, gText_Rom_5AA9C6 + 0xb
-	.globl gUnknown_85AA9D6
-gUnknown_85AA9D6: @ 0x085AA9D6
 
 	@ src/battle_message.c:81 sText_TwoLinkTrainersDefeated
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -95,8 +89,6 @@ gText_Rom_5AA9D6: @ 0x085AA9D6
 	.endif
 	.globl gText_Rom_5AA9E5
 	.set gText_Rom_5AA9E5, gText_Rom_5AA9D6 + 0xf
-	.globl gUnknown_85AA9EA
-gUnknown_85AA9EA: @ 0x085AA9EA
 
 	@ src/battle_message.c:82 sText_PlayerLostAgainstLinkTrainer
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -108,8 +100,6 @@ gText_Rom_5AA9EA: @ 0x085AA9EA
 	.endif
 	.globl gText_Rom_5AA9F5
 	.set gText_Rom_5AA9F5, gText_Rom_5AA9EA + 0xb
-	.globl gUnknown_85AA9FA
-gUnknown_85AA9FA: @ 0x085AA9FA
 
 	@ src/battle_message.c:83 sText_PlayerLostToTwo
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -121,8 +111,6 @@ gText_Rom_5AA9FA: @ 0x085AA9FA
 	.endif
 	.globl gText_Rom_5AAA09
 	.set gText_Rom_5AAA09, gText_Rom_5AA9FA + 0xf
-	.globl gUnknown_85AAA0E
-gUnknown_85AAA0E: @ 0x085AAA0E
 
 	@ src/battle_message.c:84 sText_PlayerBattledToDrawLinkTrainer
 	.globl gText_Rom_5AAA0E
@@ -134,8 +122,6 @@ gText_Rom_5AAA0E: @ 0x085AAA0E
 	.if (. - gText_Rom_5AAA0E) < 0x12
 	.space 0x12 - (. - gText_Rom_5AAA0E)
 	.endif
-	.globl gUnknown_85AAA20
-gUnknown_85AAA20: @ 0x085AAA20
 
 	@ src/battle_message.c:85 sText_PlayerBattledToDrawVsTwo
 	.globl gText_Rom_5AAA20
@@ -147,8 +133,6 @@ gText_Rom_5AAA20: @ 0x085AAA20
 	.if (. - gText_Rom_5AAA20) < 0x16
 	.space 0x16 - (. - gText_Rom_5AAA20)
 	.endif
-	.globl gUnknown_85AAA36
-gUnknown_85AAA36: @ 0x085AAA36
 
 	@ src/battle_message.c:86 sText_WildFled
 	.globl gText_Rom_5AAA36
@@ -179,4 +163,3 @@ gText_Rom_5AAA58: @ 0x085AAA58
 	.if (. - gText_Rom_5AAA58) < 0x25
 	.space 0x25 - (. - gText_Rom_5AAA58)
 	.endif
-

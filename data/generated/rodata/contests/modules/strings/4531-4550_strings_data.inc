@@ -30,8 +30,6 @@ gText_Rom_5C98CC: @ 0x085C98CC
 	.if (. - gText_Rom_5C98CC) < 0x9
 	.space 0x9 - (. - gText_Rom_5C98CC)
 	.endif
-	.globl gUnknown_85C98D5
-gUnknown_85C98D5: @ 0x085C98D5
 
 	@ src/strings.c:222 gText_InBagVar1
 	.globl gText_Rom_5C98D5
@@ -43,8 +41,6 @@ gText_Rom_5C98D5: @ 0x085C98D5
 	.if (. - gText_Rom_5C98D5) < 0xb
 	.space 0xb - (. - gText_Rom_5C98D5)
 	.endif
-	.globl gUnknown_85C98E0
-gUnknown_85C98E0: @ 0x085C98E0
 
 	@ src/strings.c:223 gText_QuitShopping
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -56,8 +52,6 @@ gText_Rom_5C98E0: @ 0x085C98E0
 	.endif
 	.globl gText_Rom_5C98E7
 	.set gText_Rom_5C98E7, gText_Rom_5C98E0 + 0x7
-	.globl gUnknown_85C98EC
-gUnknown_85C98EC: @ 0x085C98EC
 
 	@ src/strings.c:224 gText_Var1CertainlyHowMany
 	.globl gText_Rom_5C98EC
@@ -79,8 +73,6 @@ gUnknown_85C9903: @ 0x085C9903
 	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.byte 0xFD, 0x02, 0x00, 0xB3, 0xFD, 0x03, 0xB4, 0x00, 0x2D, 0xFE, 0x02, 0x08, 0x12, 0x00, 0x05, 0x06
 	.byte 0x02, 0x01, 0x3A, 0x16, 0x00, 0x15, 0x28, 0x1F, 0x0D, 0x06, 0xAC, 0xFF
-	.globl gUnknown_85C991F
-gUnknown_85C991F: @ 0x085C991F
 
 	@ src/strings.c:226 gText_Var1AndYouWantedVar2
 	.globl gText_Rom_5C991F
@@ -92,8 +84,6 @@ gText_Rom_5C991F: @ 0x085C991F
 	.if (. - gText_Rom_5C991F) < 0x17
 	.space 0x17 - (. - gText_Rom_5C991F)
 	.endif
-	.globl gUnknown_85C9936
-gUnknown_85C9936: @ 0x085C9936
 
 	@ src/strings.c:227 gText_Var1IsItThatllBeVar2
 	.globl gText_Rom_5C9936
@@ -105,8 +95,6 @@ gText_Rom_5C9936: @ 0x085C9936
 	.if (. - gText_Rom_5C9936) < 0x15
 	.space 0x15 - (. - gText_Rom_5C9936)
 	.endif
-	.globl gUnknown_85C994B
-gUnknown_85C994B: @ 0x085C994B
 
 	@ src/strings.c:228 gText_YouWantedVar1ThatllBeVar2
 	.globl gText_Rom_5C994B
@@ -118,8 +106,6 @@ gText_Rom_5C994B: @ 0x085C994B
 	.if (. - gText_Rom_5C994B) < 0x17
 	.space 0x17 - (. - gText_Rom_5C994B)
 	.endif
-	.globl gUnknown_85C9962
-gUnknown_85C9962: @ 0x085C9962
 
 	@ src/strings.c:229 gText_HereYouGoThankYou
 	@ Preserve exact byte length: semantic suffix text pointer.

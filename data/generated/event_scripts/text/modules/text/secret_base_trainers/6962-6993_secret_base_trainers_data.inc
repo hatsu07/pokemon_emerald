@@ -30,8 +30,6 @@ gText_Rom_245161: @ 0x08245161
 	.if (. - gText_Rom_245161) < 0xe
 	.space 0xe - (. - gText_Rom_245161)
 	.endif
-	.globl gUnknown_824516F
-gUnknown_824516F: @ 0x0824516F
 
 	@ data/text/secret_base_trainers.inc:10 SecretBase_Text_Trainer0Defeated
 	.globl gText_Rom_24516F
@@ -98,8 +96,6 @@ gText_Rom_24525F: @ 0x0824525F
 	.if (. - gText_Rom_24525F) < 0xe
 	.space 0xe - (. - gText_Rom_24525F)
 	.endif
-	.globl gUnknown_824526D
-gUnknown_824526D: @ 0x0824526D
 
 	@ data/text/secret_base_trainers.inc:28 SecretBase_Text_Trainer5Defeated
 	.globl gText_Rom_24526D
@@ -166,8 +162,6 @@ gText_Rom_245359: @ 0x08245359
 	.if (. - gText_Rom_245359) < 0x1b
 	.space 0x1b - (. - gText_Rom_245359)
 	.endif
-	.globl gUnknown_8245374
-gUnknown_8245374: @ 0x08245374
 
 	@ data/text/secret_base_trainers.inc:46 SecretBase_Text_Trainer1Defeated
 	.globl gText_Rom_245374

@@ -9,8 +9,6 @@ gText_Rom_5CA69A: @ 0x085CA69A
 	.if (. - gText_Rom_5CA69A) < 0xa
 	.space 0xa - (. - gText_Rom_5CA69A)
 	.endif
-	.globl gUnknown_85CA6A4
-gUnknown_85CA6A4: @ 0x085CA6A4
 
 	@ src/strings.c:417 gText_Var3Var1SlashVar2
 	@ Preserve exact byte length: semantic suffix text pointer.

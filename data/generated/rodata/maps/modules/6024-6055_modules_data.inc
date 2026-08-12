@@ -151,8 +151,6 @@ gText_Rom_5CC301: @ 0x085CC301
 	.if (. - gText_Rom_5CC301) < 0xe
 	.space 0xe - (. - gText_Rom_5CC301)
 	.endif
-	.globl gUnknown_85CC30F
-gUnknown_85CC30F: @ 0x085CC30F
 
 	@ asm/field_poison.s:225 Task_WhiteOut
 	.globl gText_Rom_5CC30F
@@ -164,8 +162,6 @@ gText_Rom_5CC30F: @ 0x085CC30F
 	.if (. - gText_Rom_5CC30F) < 0xc
 	.space 0xc - (. - gText_Rom_5CC30F)
 	.endif
-	.globl gUnknown_85CC31B
-gUnknown_85CC31B: @ 0x085CC31B
 
 	@ src/strings.c:667 gText_Marco
 	.globl gText_Rom_5CC31B
@@ -179,4 +175,3 @@ gText_Rom_5CC31B: @ 0x085CC31B
 	.endif
 	.globl gUnknown_85CC31F
 gUnknown_85CC31F: @ 0x085CC31F
-

@@ -93,8 +93,6 @@ gText_Rom_259412: @ 0x08259412
 	.if (. - gText_Rom_259412) < 0xa
 	.space 0xa - (. - gText_Rom_259412)
 	.endif
-	.globl gUnknown_825941C
-gUnknown_825941C: @ 0x0825941C
 
 	@ asm/mauville_old_man.s:460 ScrSpecial_GenerateGiddyLine
 	.globl gText_Rom_25941C
@@ -107,8 +105,6 @@ gText_Rom_25941C: @ 0x0825941C
 	.if (. - gText_Rom_25941C) < 0x3
 	.space 0x3 - (. - gText_Rom_25941C)
 	.endif
-	.globl gUnknown_825941F
-gUnknown_825941F: @ 0x0825941F
 
 	@ asm/mauville_old_man.s:470 ScrSpecial_GenerateGiddyLine
 	.globl gText_Rom_25941F
@@ -193,4 +189,3 @@ gText_Rom_2594C5: @ 0x082594C5
 	.if (. - gText_Rom_2594C5) < 0x1a
 	.space 0x1a - (. - gText_Rom_2594C5)
 	.endif
-

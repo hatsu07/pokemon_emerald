@@ -8,8 +8,6 @@ gText_Rom_5C940A: @ 0x085C940A
 	.if (. - gText_Rom_5C940A) < 0x2
 	.space 0x2 - (. - gText_Rom_5C940A)
 	.endif
-	.globl gUnknown_85C940C
-gUnknown_85C940C: @ 0x085C940C
 
 	@ asm/naming_screen.s:3641 sub_080E3E7C
 	.globl gText_Rom_5C940C

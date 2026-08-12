@@ -8,8 +8,6 @@ gText_Rom_300AA0: @ 0x08300AA0
 	.if (. - gText_Rom_300AA0) < 0x2
 	.space 0x2 - (. - gText_Rom_300AA0)
 	.endif
-	.globl gUnknown_8300AA2
-gUnknown_8300AA2: @ 0x08300AA2
 
 	@ asm/trade.s:5098 sub_0807946C
 	.globl gText_Rom_300AA2

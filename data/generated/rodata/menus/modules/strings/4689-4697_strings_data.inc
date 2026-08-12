@@ -8,8 +8,6 @@ gText_Rom_5C9FE7: @ 0x085C9FE7
 	.if (. - gText_Rom_5C9FE7) < 0x10
 	.space 0x10 - (. - gText_Rom_5C9FE7)
 	.endif
-	.globl gUnknown_85C9FF7
-gUnknown_85C9FF7: @ 0x085C9FF7
 
 	@ src/strings.c:300 gText_PkmnGotOverInfatuation
 	.globl gText_Rom_5C9FF7
@@ -21,8 +19,6 @@ gText_Rom_5C9FF7: @ 0x085C9FF7
 	.if (. - gText_Rom_5C9FF7) < 0x10
 	.space 0x10 - (. - gText_Rom_5C9FF7)
 	.endif
-	.globl gUnknown_85CA007
-gUnknown_85CA007: @ 0x085CA007
 
 	@ src/strings.c:302 gText_ThrowAwayItem
 	.globl gText_Rom_5CA007
@@ -34,8 +30,6 @@ gText_Rom_5CA007: @ 0x085CA007
 	.if (. - gText_Rom_5CA007) < 0x11
 	.space 0x11 - (. - gText_Rom_5CA007)
 	.endif
-	.globl gUnknown_85CA018
-gUnknown_85CA018: @ 0x085CA018
 
 	@ src/strings.c:303 gText_ItemThrownAway
 	.globl gText_Rom_5CA018

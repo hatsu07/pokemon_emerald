@@ -1,7 +1,5 @@
-	.globl gUnknown_846F3AC
-gUnknown_846F3AC: @ 0x0846F3AC
 	.globl gDoorOpenAnimFrames
-gDoorOpenAnimFrames:
+gDoorOpenAnimFrames: @ 0x0846F3AC
 	.byte 4, 0
 	.2byte 0xFFFF
 	.byte 4, 0
@@ -13,10 +11,8 @@ gDoorOpenAnimFrames:
 	.byte 0, 0
 	.2byte 0x0000
 
-	.globl gUnknown_846F3C0
-gUnknown_846F3C0: @ 0x0846F3C0
 	.globl gDoorCloseAnimFrames
-gDoorCloseAnimFrames:
+gDoorCloseAnimFrames: @ 0x0846F3C0
 	.byte 4, 0
 	.2byte 0x0200
 	.byte 4, 0
@@ -28,10 +24,8 @@ gDoorCloseAnimFrames:
 	.byte 0, 0
 	.2byte 0x0000
 
-	.globl gUnknown_846F3D4
-gUnknown_846F3D4: @ 0x0846F3D4
 	.globl gBigDoorOpenAnimFrames
-gBigDoorOpenAnimFrames:
+gBigDoorOpenAnimFrames: @ 0x0846F3D4
 	.byte 4, 0
 	.2byte 0xFFFF
 	.byte 4, 0

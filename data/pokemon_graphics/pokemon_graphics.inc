@@ -2,10 +2,8 @@
 @ ROM range: 0x082D965C-0x082DDA1B.
 @ Contains enemy elevation and front-picture animation metadata.
 
-	.globl gUnknown_82D965C
-gUnknown_82D965C: @ 0x082D965C
 	.globl gEnemyMonElevation
-gEnemyMonElevation:
+gEnemyMonElevation: @ 0x082D965C
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x08
 	.byte 0x10, 0x00, 0x04, 0x00, 0x00, 0x00, 0x06, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -6508,10 +6506,8 @@ sFrontAnims_Species439: @ 0x082DD334
 	.4byte sAnim_GeneralFrame0
 	.4byte sFrontAnimCmd_Species439_1
 
-	.globl gUnknown_82DD33C
-gUnknown_82DD33C: @ 0x082DD33C
 	.globl gMonFrontPicAnimTable
-gMonFrontPicAnimTable:
+gMonFrontPicAnimTable: @ 0x082DD33C
 	.4byte sFrontAnims_Species000 @ species index 0
 	.4byte sFrontAnims_Species001 @ species index 1
 	.4byte sFrontAnims_Species002 @ species index 2

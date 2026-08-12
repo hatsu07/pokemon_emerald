@@ -8,8 +8,6 @@ gText_Rom_5CBFD9: @ 0x085CBFD9
 	.if (. - gText_Rom_5CBFD9) < 0x3
 	.space 0x3 - (. - gText_Rom_5CBFD9)
 	.endif
-	.globl gUnknown_85CBFDC
-gUnknown_85CBFDC: @ 0x085CBFDC
 
 	@ asm/tv.s:14100 DoTVShow3CheersForPokeblocks
 	.globl gText_Rom_5CBFDC

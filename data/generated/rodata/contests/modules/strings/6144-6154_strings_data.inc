@@ -8,8 +8,6 @@ gText_Rom_5CC4A3: @ 0x085CC4A3
 	.if (. - gText_Rom_5CC4A3) < 0xb
 	.space 0xb - (. - gText_Rom_5CC4A3)
 	.endif
-	.globl gUnknown_85CC4AE
-gUnknown_85CC4AE: @ 0x085CC4AE
 
 	@ src/strings.c:711 gText_PreliminaryResults
 	.globl gText_Rom_5CC4AE
@@ -21,8 +19,6 @@ gText_Rom_5CC4AE: @ 0x085CC4AE
 	.if (. - gText_Rom_5CC4AE) < 0xc
 	.space 0xc - (. - gText_Rom_5CC4AE)
 	.endif
-	.globl gUnknown_85CC4BA
-gUnknown_85CC4BA: @ 0x085CC4BA
 
 	@ src/strings.c:712 gText_Round2Results
 	.globl gText_Rom_5CC4BA
@@ -34,8 +30,6 @@ gText_Rom_5CC4BA: @ 0x085CC4BA
 	.if (. - gText_Rom_5CC4BA) < 0xc
 	.space 0xc - (. - gText_Rom_5CC4BA)
 	.endif
-	.globl gUnknown_85CC4C6
-gUnknown_85CC4C6: @ 0x085CC4C6
 
 	@ src/strings.c:713 gText_ContestantsMonWon
 	.globl gText_Rom_5CC4C6
@@ -47,8 +41,6 @@ gText_Rom_5CC4C6: @ 0x085CC4C6
 	.if (. - gText_Rom_5CC4C6) < 0xf
 	.space 0xf - (. - gText_Rom_5CC4C6)
 	.endif
-	.globl gUnknown_85CC4D5
-gUnknown_85CC4D5: @ 0x085CC4D5
 
 	@ src/strings.c:714 gText_CommunicationStandby
 	.globl gText_Rom_5CC4D5
@@ -60,8 +52,6 @@ gText_Rom_5CC4D5: @ 0x085CC4D5
 	.if (. - gText_Rom_5CC4D5) < 0xb
 	.space 0xb - (. - gText_Rom_5CC4D5)
 	.endif
-	.globl gUnknown_85CC4E0
-gUnknown_85CC4E0: @ 0x085CC4E0
 
 	@ src/strings.c:715 gText_ColorDarkGray
 	.globl gText_Rom_5CC4E0

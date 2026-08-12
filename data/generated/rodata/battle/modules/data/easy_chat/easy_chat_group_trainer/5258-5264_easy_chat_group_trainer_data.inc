@@ -8,8 +8,6 @@ gText_Rom_5CADAE: @ 0x085CADAE
 	.if (. - gText_Rom_5CADAE) < 0x4
 	.space 0x4 - (. - gText_Rom_5CADAE)
 	.endif
-	.globl gUnknown_85CADB2
-gUnknown_85CADB2: @ 0x085CADB2
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:88 easy_chat_group_trainer_line_88 (+7 aliases)
 	.globl gText_Rom_5CADB2
@@ -21,8 +19,6 @@ gText_Rom_5CADB2: @ 0x085CADB2
 	.if (. - gText_Rom_5CADB2) < 0x5
 	.space 0x5 - (. - gText_Rom_5CADB2)
 	.endif
-	.globl gUnknown_85CADB7
-gUnknown_85CADB7: @ 0x085CADB7
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:130 easy_chat_group_trainer_line_130 (+2 aliases)
 	.globl gText_Rom_5CADB7
@@ -34,8 +30,6 @@ gText_Rom_5CADB7: @ 0x085CADB7
 	.if (. - gText_Rom_5CADB7) < 0x4
 	.space 0x4 - (. - gText_Rom_5CADB7)
 	.endif
-	.globl gUnknown_85CADBB
-gUnknown_85CADBB: @ 0x085CADBB
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:82 easy_chat_group_trainer_line_82 (+2 aliases)
 	.globl gText_Rom_5CADBB

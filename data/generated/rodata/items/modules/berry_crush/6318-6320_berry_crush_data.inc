@@ -9,8 +9,6 @@ gText_Rom_5CC9C8: @ 0x085CC9C8
 	.space 0xb - (. - gText_Rom_5CC9C8)
 	.endif
 	.space 0x1, 0x00
-	.globl gUnknown_85CC9D4
-gUnknown_85CC9D4: @ 0x085CC9D4
 
 	@ asm/berry_crush.s:2157 sub_08021758
 	.globl gText_Rom_5CC9D4

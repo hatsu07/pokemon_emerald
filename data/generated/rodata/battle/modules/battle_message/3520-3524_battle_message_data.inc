@@ -8,8 +8,6 @@ gText_Rom_5ABB4D: @ 0x085ABB4D
 	.if (. - gText_Rom_5ABB4D) < 0xa
 	.space 0xa - (. - gText_Rom_5ABB4D)
 	.endif
-	.globl gUnknown_85ABB57
-gUnknown_85ABB57: @ 0x085ABB57
 
 	@ src/battle_message.c:1459 gText_WhatWillWallyDo
 	.globl gText_Rom_5ABB57
@@ -21,8 +19,6 @@ gText_Rom_5ABB57: @ 0x085ABB57
 	.if (. - gText_Rom_5ABB57) < 0xb
 	.space 0xb - (. - gText_Rom_5ABB57)
 	.endif
-	.globl gUnknown_85ABB62
-gUnknown_85ABB62: @ 0x085ABB62
 
 	@ src/battle_message.c:1460 gText_LinkStandby
 	.globl gText_Rom_5ABB62

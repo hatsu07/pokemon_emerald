@@ -30,8 +30,6 @@ gText_Rom_5CA8AC: @ 0x085CA8AC
 	.if (. - gText_Rom_5CA8AC) < 0x9
 	.space 0x9 - (. - gText_Rom_5CA8AC)
 	.endif
-	.globl gUnknown_85CA8B5
-gUnknown_85CA8B5: @ 0x085CA8B5
 
 	@ src/player_pc.c:174 sText_Mailbox
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -54,8 +52,6 @@ gText_Rom_5CA8BD: @ 0x085CA8BD
 	.endif
 	.globl gText_Rom_5CA8C2
 	.set gText_Rom_5CA8C2, gText_Rom_5CA8BD + 0x5
-	.globl gUnknown_85CA8C7
-gUnknown_85CA8C7: @ 0x085CA8C7
 
 	@ src/player_pc.c:171 sText_WithdrawItem
 	.globl gText_Rom_5CA8C7
@@ -67,8 +63,6 @@ gText_Rom_5CA8C7: @ 0x085CA8C7
 	.if (. - gText_Rom_5CA8C7) < 0xa
 	.space 0xa - (. - gText_Rom_5CA8C7)
 	.endif
-	.globl gUnknown_85CA8D1
-gUnknown_85CA8D1: @ 0x085CA8D1
 
 	@ src/player_pc.c:173 sText_TossItem
 	@ Preserve exact byte length: semantic suffix text pointer.

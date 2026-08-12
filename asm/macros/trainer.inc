@@ -62,6 +62,26 @@
     .4byte \palette, \trainerPic
 .endm
 
+@ Trainer back-sprite AnimCmd records.
+@ Binary layout is one 4-byte union AnimCmd record:
+@   frame command: u16 frame, u16 duration
+@   end command:   u16 0xFFFF, u16 0
+.macro trainer_back_anim_frame frame:req, duration:req
+.Ltrainer_back_anim_cmd_start\@:
+    .2byte \frame, \duration
+    .if (. - .Ltrainer_back_anim_cmd_start\@) != TRAINER_BACK_ANIM_CMD_SIZE
+        .error "trainer_back_anim_frame emitted unexpected size"
+    .endif
+.endm
+
+.macro trainer_back_anim_end
+.Ltrainer_back_anim_cmd_start\@:
+    .2byte 0xFFFF, 0
+    .if (. - .Ltrainer_back_anim_cmd_start\@) != TRAINER_BACK_ANIM_CMD_SIZE
+        .error "trainer_back_anim_end emitted unexpected size"
+    .endif
+.endm
+
 @ Trainer back-picture coordinate record:
 @   u8 size; u8 yOffset; u8 padding[2]
 .macro trainer_back_pic_coords trainerBackPic:req, yOffset:req

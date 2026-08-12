@@ -8,8 +8,6 @@ gText_Rom_5CCEBC: @ 0x085CCEBC
 	.if (. - gText_Rom_5CCEBC) < 0x3
 	.space 0x3 - (. - gText_Rom_5CCEBC)
 	.endif
-	.globl gUnknown_85CCEBF
-gUnknown_85CCEBF: @ 0x085CCEBF
 
 	@ src/strings.c:856 gText_3rd
 	.globl gText_Rom_5CCEBF
@@ -21,8 +19,6 @@ gText_Rom_5CCEBF: @ 0x085CCEBF
 	.if (. - gText_Rom_5CCEBF) < 0x3
 	.space 0x3 - (. - gText_Rom_5CCEBF)
 	.endif
-	.globl gUnknown_85CCEC2
-gUnknown_85CCEC2: @ 0x085CCEC2
 
 	@ src/strings.c:857 gText_4th
 	.globl gText_Rom_5CCEC2

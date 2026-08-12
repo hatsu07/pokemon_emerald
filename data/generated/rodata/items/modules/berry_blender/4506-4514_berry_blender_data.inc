@@ -8,8 +8,6 @@ gText_Rom_5C983E: @ 0x085C983E
 	.if (. - gText_Rom_5C983E) < 0x4
 	.space 0x4 - (. - gText_Rom_5C983E)
 	.endif
-	.globl gUnknown_85C9842
-gUnknown_85C9842: @ 0x085C9842
 
 	@ src/berry_blender.c:919 berry_blender_line_919 (+2 aliases)
 	.globl gText_Rom_5C9842
@@ -21,8 +19,6 @@ gText_Rom_5C9842: @ 0x085C9842
 	.if (. - gText_Rom_5C9842) < 0x4
 	.space 0x4 - (. - gText_Rom_5C9842)
 	.endif
-	.globl gUnknown_85C9846
-gUnknown_85C9846: @ 0x085C9846
 
 	@ src/berry_blender.c:919 berry_blender_line_919 (+3 aliases)
 	.globl gText_Rom_5C9846
@@ -34,8 +30,6 @@ gText_Rom_5C9846: @ 0x085C9846
 	.if (. - gText_Rom_5C9846) < 0x4
 	.space 0x4 - (. - gText_Rom_5C9846)
 	.endif
-	.globl gUnknown_85C984A
-gUnknown_85C984A: @ 0x085C984A
 
 	@ src/berry_blender.c:919 berry_blender_line_919 (+2 aliases)
 	.globl gText_Rom_5C984A
@@ -47,8 +41,6 @@ gText_Rom_5C984A: @ 0x085C984A
 	.if (. - gText_Rom_5C984A) < 0x4
 	.space 0x4 - (. - gText_Rom_5C984A)
 	.endif
-	.globl gUnknown_85C984E
-gUnknown_85C984E: @ 0x085C984E
 
 	@ src/berry_blender.c:919 berry_blender_line_919 (+2 aliases)
 	.globl gText_Rom_5C984E

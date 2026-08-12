@@ -1,10 +1,8 @@
 @ Battle script command/static tables decoded from 0475_battle_table.inc.
 @ ROM range: 0x082EC694-0x082ECE9B.
 
-	.globl gUnknown_82EC694
-gUnknown_82EC694: @ 0x082EC694
 	.globl gBattleScriptingCommandsTable
-gBattleScriptingCommandsTable:
+gBattleScriptingCommandsTable: @ 0x082EC694
 	.4byte atk00_attackcanceler
 	.4byte atk01_accuracycheck
 	.4byte atk02_attackstring
@@ -594,10 +592,8 @@ sBallCatchBonuses:
 	@ pret/pokeemerald-jp direct xref for 0x082ECE18: battle_gfx_sfx_util.s: ChooseMoveAndTargetInBattlePalace
 	.globl gBattleGfxSfxUtilData_082ECE18
 gBattleGfxSfxUtilData_082ECE18:
-	.globl gUnknown_82ECE18
-gUnknown_82ECE18: @ 0x082ECE18
 	.globl gBattlePalaceNatureToMoveGroupLikelihood
-gBattlePalaceNatureToMoveGroupLikelihood:
+gBattlePalaceNatureToMoveGroupLikelihood: @ 0x082ECE18
 	.byte 61, 68, 61, 68 @ NATURE_HARDY
 	.byte 20, 45, 84, 92 @ NATURE_LONELY
 	.byte 70, 85, 32, 92 @ NATURE_BRAVE

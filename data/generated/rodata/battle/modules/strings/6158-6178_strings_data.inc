@@ -8,8 +8,6 @@ gText_Rom_5CC4F0: @ 0x085CC4F0
 	.if (. - gText_Rom_5CC4F0) < 0x5
 	.space 0x5 - (. - gText_Rom_5CC4F0)
 	.endif
-	.globl gUnknown_85CC4F5
-gUnknown_85CC4F5: @ 0x085CC4F5
 
 	@ src/strings.c:720 gText_HealthboxGender_Female
 	.globl gText_Rom_5CC4F5
@@ -21,8 +19,6 @@ gText_Rom_5CC4F5: @ 0x085CC4F5
 	.if (. - gText_Rom_5CC4F5) < 0x5
 	.space 0x5 - (. - gText_Rom_5CC4F5)
 	.endif
-	.globl gUnknown_85CC4FA
-gUnknown_85CC4FA: @ 0x085CC4FA
 
 	@ src/strings.c:721 gText_HealthboxGender_None
 	.globl gText_Rom_5CC4FA

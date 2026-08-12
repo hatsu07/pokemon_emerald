@@ -8,8 +8,6 @@ gText_Rom_5ABC78: @ 0x085ABC78
 	.endif
 	.globl gText_Rom_5ABC7A
 	.set gText_Rom_5ABC7A, gText_Rom_5ABC78 + 0x2
-	.globl gUnknown_85ABC7E
-gUnknown_85ABC7E: @ 0x085ABC7E
 
 	@ src/battle_message.c:1492 gText_BattleWallyName (+8 aliases)
 	.globl gText_Rom_5ABC7E
@@ -48,8 +46,6 @@ gUnknown_85ABC8E: @ 0x085ABC8E
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xFC, 0x02, 0x00, 0x1B, 0x07, 0x2C, 0x09, 0xFF
-	.globl gUnknown_85ABC96
-gUnknown_85ABC96: @ 0x085ABC96
 
 	@ asm/battle_message.s:2911 ChooseMoveUsedParticle
 	.globl gText_Rom_5ABC96
@@ -61,8 +57,6 @@ gText_Rom_5ABC96: @ 0x085ABC96
 	.if (. - gText_Rom_5ABC96) < 0x2
 	.space 0x2 - (. - gText_Rom_5ABC96)
 	.endif
-	.globl gUnknown_85ABC98
-gUnknown_85ABC98: @ 0x085ABC98
 
 	@ asm/battle_message.s:2922 ChooseMoveUsedParticle
 	.globl gText_Rom_5ABC98
@@ -90,8 +84,6 @@ gUnknown_85ABC9A: @ 0x085ABC9A
 	.byte 0x3C, 0xFF, 0xFF, 0xFF, 0x08, 0x0B, 0x2C, 0x3C, 0xFF, 0xFF, 0xFF, 0x44, 0x2E, 0x07, 0x2C, 0x3C
 	.byte 0xFF, 0xFF, 0x54, 0x5D, 0x9B, 0xAE, 0x2C, 0x3C, 0xFF, 0x0A, 0x05, 0x28, 0x2C, 0x3C, 0xFF, 0xFF
 	.byte 0x95, 0x77, 0x8B, 0x7E, 0x2C, 0x3C, 0xFF, 0x01, 0x08, 0x2C, 0x3C, 0xFF, 0xFF, 0xFF
-	.globl gUnknown_85ABD18
-gUnknown_85ABD18: @ 0x085ABD18
 
 	@ src/battle_message.c:1498 gText_BattleTourney
 	@ Preserve exact byte length: semantic suffix text pointer.

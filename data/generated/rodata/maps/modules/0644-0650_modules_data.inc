@@ -1073,8 +1073,6 @@ gResetRtcScreenData_084E8A64:
 gUnknown_84E8A64: @ 0x084E8A64
 gResetRtcChooseTimeWindowTemplate: @ 0x084E8A64
 	window_template 0, 4, 9, 21, 2, 15, 0xD3
-	.globl gUnknown_84E8A6C
-gUnknown_84E8A6C: @ 0x084E8A6C
 
 	@ asm/reset_rtc_screen.s:427 PrintTime
 	.globl gText_Rom_4E8A6C
@@ -1095,8 +1093,6 @@ gResetRtcScreenData_084E8A6F:
 gUnknown_84E8A6F: @ 0x084E8A6F
 gText_ResetRtcTimeColon: @ 0x084E8A6F
 	.string ":$"
-	.globl gUnknown_84E8A71
-gUnknown_84E8A71: @ 0x084E8A71
 
 	@ src/strings.c:134 gMenuText_Confirm (+2 aliases)
 	.globl gText_Rom_4E8A71

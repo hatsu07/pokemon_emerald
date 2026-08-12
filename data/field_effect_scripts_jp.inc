@@ -1,7 +1,5 @@
 @ Japanese Emerald field-effect script table and command stream.
 
-	.globl gUnknown_8289F5C
-gUnknown_8289F5C:
 	.globl gFieldEffectScriptPointers
 gFieldEffectScriptPointers: @ 0x08289F5C
 	.4byte FieldEffectScript_ExclamationMarkIcon1 @ field effect 0: ExclamationMarkIcon1

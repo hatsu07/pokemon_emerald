@@ -8,8 +8,6 @@ gText_Rom_30D240: @ 0x0830D240
 	.if (. - gText_Rom_30D240) < 0xf
 	.space 0xf - (. - gText_Rom_30D240)
 	.endif
-	.globl gUnknown_830D24F
-gUnknown_830D24F: @ 0x0830D24F
 
 	@ asm/trade.s:9700 sub_0807B624
 	.globl gText_Rom_30D24F
@@ -21,8 +19,6 @@ gText_Rom_30D24F: @ 0x0830D24F
 	.if (. - gText_Rom_30D24F) < 0x9
 	.space 0x9 - (. - gText_Rom_30D24F)
 	.endif
-	.globl gUnknown_830D258
-gUnknown_830D258: @ 0x0830D258
 
 	@ asm/trade.s:11177 sub_0807B624
 	.globl gText_Rom_30D258
@@ -34,8 +30,6 @@ gText_Rom_30D258: @ 0x0830D258
 	.if (. - gText_Rom_30D258) < 0x12
 	.space 0x12 - (. - gText_Rom_30D258)
 	.endif
-	.globl gUnknown_830D26A
-gUnknown_830D26A: @ 0x0830D26A
 
 	@ asm/trade.s:11253 sub_0807B624
 	.globl gText_Rom_30D26A

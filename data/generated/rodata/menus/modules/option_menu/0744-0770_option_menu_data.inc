@@ -8,8 +8,6 @@ gText_Rom_53736C: @ 0x0853736C
 	.endif
 	.globl gText_Rom_537372
 	.set gText_Rom_537372, gText_Rom_53736C + 0x6
-	.globl gUnknown_8537376
-gUnknown_8537376: @ 0x08537376
 
 	@ src/option_menu.c:77 gText_TextSpeedMid
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -21,8 +19,6 @@ gText_Rom_537376: @ 0x08537376
 	.endif
 	.globl gText_Rom_53737C
 	.set gText_Rom_53737C, gText_Rom_537376 + 0x6
-	.globl gUnknown_8537380
-gUnknown_8537380: @ 0x08537380
 
 	@ src/option_menu.c:78 gText_TextSpeedFast
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -52,8 +48,6 @@ gUnknown_8537393: @ 0x08537393
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xA
 	.byte 0xFC, 0x01, 0x06, 0xFC, 0x03, 0x07, 0x20, 0x15, 0x02, 0xFF
-	.globl gUnknown_853739D
-gUnknown_853739D: @ 0x0853739D
 
 	@ src/option_menu.c:81 gText_BattleStyleShift
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -65,8 +59,6 @@ gText_Rom_53739D: @ 0x0853739D
 	.endif
 	.globl gText_Rom_5373A3
 	.set gText_Rom_5373A3, gText_Rom_53739D + 0x6
-	.globl gUnknown_85373A8
-gUnknown_85373A8: @ 0x085373A8
 
 	@ src/option_menu.c:82 gText_BattleStyleSet
 	.globl gText_Rom_5373A8
@@ -78,8 +70,6 @@ gText_Rom_5373A8: @ 0x085373A8
 	.if (. - gText_Rom_5373A8) < 0xb
 	.space 0xb - (. - gText_Rom_5373A8)
 	.endif
-	.globl gUnknown_85373B3
-gUnknown_85373B3: @ 0x085373B3
 
 	@ src/option_menu.c:83 gText_SoundMono
 	.globl gText_Rom_5373B3
@@ -91,8 +81,6 @@ gText_Rom_5373B3: @ 0x085373B3
 	.if (. - gText_Rom_5373B3) < 0xb
 	.space 0xb - (. - gText_Rom_5373B3)
 	.endif
-	.globl gUnknown_85373BE
-gUnknown_85373BE: @ 0x085373BE
 
 	@ src/option_menu.c:84 gText_SoundStereo
 	.globl gText_Rom_5373BE
@@ -104,8 +92,6 @@ gText_Rom_5373BE: @ 0x085373BE
 	.if (. - gText_Rom_5373BE) < 0xb
 	.space 0xb - (. - gText_Rom_5373BE)
 	.endif
-	.globl gUnknown_85373C9
-gUnknown_85373C9: @ 0x085373C9
 
 	@ src/option_menu.c:85 gText_FrameType
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -117,8 +103,6 @@ gText_Rom_5373C9: @ 0x085373C9
 	.endif
 	.globl gText_Rom_5373CF
 	.set gText_Rom_5373CF, gText_Rom_5373C9 + 0x6
-	.globl gUnknown_85373D3
-gUnknown_85373D3: @ 0x085373D3
 
 	@ src/option_menu.c:86 gText_FrameTypeNumber
 	.globl gText_Rom_5373D3
@@ -130,8 +114,6 @@ gText_Rom_5373D3: @ 0x085373D3
 	.if (. - gText_Rom_5373D3) < 0x7
 	.space 0x7 - (. - gText_Rom_5373D3)
 	.endif
-	.globl gUnknown_85373DA
-gUnknown_85373DA: @ 0x085373DA
 
 	@ src/option_menu.c:87 gText_ButtonTypeNormal
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -143,8 +125,6 @@ gText_Rom_5373DA: @ 0x085373DA
 	.endif
 	.globl gText_Rom_5373E0
 	.set gText_Rom_5373E0, gText_Rom_5373DA + 0x6
-	.globl gUnknown_85373E5
-gUnknown_85373E5: @ 0x085373E5
 
 	@ src/option_menu.c:88 gText_ButtonTypeLR
 	.globl gText_Rom_5373E5

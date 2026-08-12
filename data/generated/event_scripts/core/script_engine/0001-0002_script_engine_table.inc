@@ -783,10 +783,8 @@ gUnknown_81DAF8C: @ 0x081DAF8C
 	.4byte RemoveRecordsWindow
 	.4byte sub_08139C4C
 	.4byte sub_080B331C
-	.globl gUnknown_81DB7BC
-gUnknown_81DB7BC: @ 0x081DB7BC
 	.globl gStdScripts
-gStdScripts:
+gStdScripts: @ 0x081DB7BC
 	.4byte Std_ObtainItem
 	.4byte Std_FindItem
 	.4byte Std_MsgboxNPC
@@ -1975,4 +1973,3 @@ EventScript_JP_081DC9B7: @ 0x081DC9B7
 	waitstate
 	releaseall
 	end
-

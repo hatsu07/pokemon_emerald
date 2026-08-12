@@ -109,8 +109,6 @@ gText_Rom_247C79: @ 0x08247C79
 	.if (. - gText_Rom_247C79) < 0x1e
 	.space 0x1e - (. - gText_Rom_247C79)
 	.endif
-	.globl gUnknown_8247C97
-gUnknown_8247C97: @ 0x08247C97
 
 	@ data/text/cable_club.inc:32 gText_ConfirmLinkWhenPlayersReady
 	.globl gText_Rom_247C97
@@ -122,8 +120,6 @@ gText_Rom_247C97: @ 0x08247C97
 	.if (. - gText_Rom_247C97) < 0x1e
 	.space 0x1e - (. - gText_Rom_247C97)
 	.endif
-	.globl gUnknown_8247CB5
-gUnknown_8247CB5: @ 0x08247CB5
 
 	@ data/text/cable_club.inc:35 gText_ConfirmStartLinkWithXPlayers
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -135,8 +131,6 @@ gText_Rom_247CB5: @ 0x08247CB5
 	.endif
 	.globl gText_Rom_247CD6
 	.set gText_Rom_247CD6, gText_Rom_247CB5 + 0x21
-	.globl gUnknown_8247CDA
-gUnknown_8247CDA: @ 0x08247CDA
 
 	@ data/text/cable_club.inc:38 gText_AwaitingLinkup
 	.globl gText_Rom_247CDA

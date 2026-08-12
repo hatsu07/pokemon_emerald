@@ -172,8 +172,6 @@ gText_Rom_5C8E86: @ 0x085C8E86
 	.space 0x4 - (. - gText_Rom_5C8E86)
 	.endif
 	.space 0x2, 0x00
-	.globl gUnknown_85C8E8C
-gUnknown_85C8E8C: @ 0x085C8E8C
 
 	@ src/strings.c:43 gText_AButtonExit
 	@ Preserve exact byte length: semantic suffix text pointer.

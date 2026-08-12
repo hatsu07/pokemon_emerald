@@ -101,8 +101,6 @@ sFieldObjectTiles_846FA4C_End:
 	.if (. - sFieldObjectTiles_846FA4C) != 0x1200
 	.error "field object tiles must be 0x1200 bytes"
 	.endif
-	.globl gUnknown_8470C4C
-gUnknown_8470C4C: @ 0x08470C4C
 	.globl gObjectEventPal_RubySapphireBrendan
 gObjectEventPal_RubySapphireBrendan: @ 0x08470C4C
 	@ 16-color object-event palette

@@ -8,8 +8,6 @@ gText_Rom_5C8BF2: @ 0x085C8BF2
 	.if (. - gText_Rom_5C8BF2) < 0xe
 	.space 0xe - (. - gText_Rom_5C8BF2)
 	.endif
-	.globl gUnknown_85C8C00
-gUnknown_85C8C00: @ 0x085C8C00
 
 	@ src/strings.c:973 gText_DiplomaEmpty
 	.globl gText_Rom_5C8C00

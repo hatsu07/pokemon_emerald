@@ -8,8 +8,6 @@ gText_Rom_5CD01D: @ 0x085CD01D
 	.if (. - gText_Rom_5CD01D) < 0x19
 	.space 0x19 - (. - gText_Rom_5CD01D)
 	.endif
-	.globl gUnknown_85CD036
-gUnknown_85CD036: @ 0x085CD036
 
 	@ src/strings.c:875 gJPText_PleaseWaitAMoment
 	.globl gText_Rom_5CD036
@@ -21,8 +19,6 @@ gText_Rom_5CD036: @ 0x085CD036
 	.if (. - gText_Rom_5CD036) < 0xd
 	.space 0xd - (. - gText_Rom_5CD036)
 	.endif
-	.globl gUnknown_85CD043
-gUnknown_85CD043: @ 0x085CD043
 
 	@ src/strings.c:876 gJPText_WriteErrorUnableToSaveData
 	@ Preserve exact byte length: semantic suffix text pointer.

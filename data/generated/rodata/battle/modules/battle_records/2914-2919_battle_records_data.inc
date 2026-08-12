@@ -8,8 +8,6 @@ gText_Rom_593801: @ 0x08593801
 	.if (. - gText_Rom_593801) < 0x10
 	.space 0x10 - (. - gText_Rom_593801)
 	.endif
-	.globl gUnknown_8593811
-gUnknown_8593811: @ 0x08593811
 
 	@ asm/battle_records.s:542 PrintLinkBattleRecord
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -23,8 +21,6 @@ gText_Rom_593811: @ 0x08593811
 	.set gText_Rom_593812, gText_Rom_593811 + 0x1
 	.globl gText_Rom_593813
 	.set gText_Rom_593813, gText_Rom_593811 + 0x2
-	.globl gUnknown_8593817
-gUnknown_8593817: @ 0x08593817
 
 	@ src/battle_records.c:90 sText_DashesNoScore
 	@ Preserve exact byte length: semantic suffix text pointer.

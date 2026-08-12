@@ -4,10 +4,8 @@
 	@ pret/pokeemerald-jp direct xref for 0x082ECF8C: battle_gfx_sfx_util.s: BattlePalaceGetTargetRetValue
 	.globl gBattleGfxSfxUtilData_082ECF8C
 gBattleGfxSfxUtilData_082ECF8C:
-	.globl gUnknown_82ECF8C
-gUnknown_82ECF8C: @ 0x082ECF8C
 	.globl gBattlePalaceNatureToMoveTarget
-gBattlePalaceNatureToMoveTarget:
+gBattlePalaceNatureToMoveTarget: @ 0x082ECF8C
 	.byte 0 @ NATURE_HARDY: PALACE_TARGET_STRONGER
 	.byte 0 @ NATURE_LONELY: PALACE_TARGET_STRONGER
 	.byte 1 @ NATURE_BRAVE: PALACE_TARGET_WEAKER
@@ -104,10 +102,8 @@ sSmokescreenImpactSpriteTemplate:
 	@ pret/pokeemerald-jp direct xref for 0x082ED028: battle_gfx_sfx_util.s: LoadAndCreateEnemyShadowSprites
 	.globl gBattleGfxSfxUtilData_082ED028
 gBattleGfxSfxUtilData_082ED028:
-	.globl gUnknown_82ED028
-gUnknown_82ED028: @ 0x082ED028
 	.globl gSpriteSheet_EnemyShadow
-gSpriteSheet_EnemyShadow:
+gSpriteSheet_EnemyShadow: @ 0x082ED028
 	.4byte 0x08D8FB74 @ gEnemyMonShadow_Gfx
 	.2byte 0x0080, 0xD759 @ size, GFXTAG_SHADOW
 sOamData_EnemyShadow: @ 0x082ED030
@@ -119,10 +115,8 @@ sOamData_EnemyShadow: @ 0x082ED030
 	@ pret/pokeemerald-jp direct xref for 0x082ED038: battle_gfx_sfx_util.s: LoadAndCreateEnemyShadowSprites
 	.globl gBattleGfxSfxUtilData_082ED038
 gBattleGfxSfxUtilData_082ED038:
-	.globl gUnknown_82ED038
-gUnknown_82ED038: @ 0x082ED038
 	.globl gSpriteTemplate_EnemyShadow
-gSpriteTemplate_EnemyShadow:
+gSpriteTemplate_EnemyShadow: @ 0x082ED038
 	.2byte 0xD759, 0xD6FF
 	.4byte sOamData_EnemyShadow @ OAM
 	.4byte gDummySpriteAnimTable @ anims

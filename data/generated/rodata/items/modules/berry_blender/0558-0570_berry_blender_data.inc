@@ -18,8 +18,6 @@ gUnknown_830F79B: @ 0x0830F79B
 	@ ANALYSIS: RAW_BLOCK size=0x17
 	.byte 0x23, 0x03, 0x02, 0x11, 0x45, 0x00, 0x07, 0x19, 0x20, 0x2D, 0x00, 0x1F, 0x3F, 0x1F, 0x0D, 0x06
 	.byte 0xAC, 0xFE, 0x00, 0x00, 0x00, 0x00, 0xFF
-	.globl gUnknown_830F7B2
-gUnknown_830F7B2: @ 0x0830F7B2
 
 	@ src/berry_blender.c:280 sText_RunOutOfBerriesForBlending
 	.globl gText_Rom_30F7B2
@@ -31,8 +29,6 @@ gText_Rom_30F7B2: @ 0x0830F7B2
 	.if (. - gText_Rom_30F7B2) < 0x26
 	.space 0x26 - (. - gText_Rom_30F7B2)
 	.endif
-	.globl gUnknown_830F7D8
-gUnknown_830F7D8: @ 0x0830F7D8
 
 	@ src/berry_blender.c:281 sText_YourPokeblockCaseIsFull
 	.globl gText_Rom_30F7D8
@@ -44,8 +40,6 @@ gText_Rom_30F7D8: @ 0x0830F7D8
 	.if (. - gText_Rom_30F7D8) < 0x15
 	.space 0x15 - (. - gText_Rom_30F7D8)
 	.endif
-	.globl gUnknown_830F7ED
-gUnknown_830F7ED: @ 0x0830F7ED
 
 	@ src/berry_blender.c:282 sText_HasNoBerriesToPut
 	.globl gText_Rom_30F7ED
@@ -57,8 +51,6 @@ gText_Rom_30F7ED: @ 0x0830F7ED
 	.if (. - gText_Rom_30F7ED) < 0x1b
 	.space 0x1b - (. - gText_Rom_30F7ED)
 	.endif
-	.globl gUnknown_830F808
-gUnknown_830F808: @ 0x0830F808
 
 	@ src/berry_blender.c:283 sText_ApostropheSPokeblockCaseIsFull
 	.globl gText_Rom_30F808
@@ -70,8 +62,6 @@ gText_Rom_30F808: @ 0x0830F808
 	.if (. - gText_Rom_30F808) < 0x17
 	.space 0x17 - (. - gText_Rom_30F808)
 	.endif
-	.globl gUnknown_830F81F
-gUnknown_830F81F: @ 0x0830F81F
 
 	@ src/berry_blender.c:284 sText_BlendingResults
 	.globl gText_Rom_30F81F
@@ -85,8 +75,6 @@ gText_Rom_30F81F: @ 0x0830F81F
 	.endif
 	@ Decoded text from ROM range: offset=0x30F826, size=0x7
 	.string "いれた　たね$"
-	.globl gUnknown_830F82D
-gUnknown_830F82D: @ 0x0830F82D
 
 	@ asm/berry_blender.s:7852 Blender_PrintBlendingResults
 	.globl gText_Rom_30F82D

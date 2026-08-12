@@ -539,8 +539,6 @@ gUnknown_85ABAEE: @ 0x085ABAEE
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xE
 	.2byte 0x0014, 0x0023, 0x0053, 0x0080, 0x00FA, 0x0148, 0xFFFF
-	.globl gUnknown_85ABAFC
-gUnknown_85ABAFC: @ 0x085ABAFC
 
 	@ src/battle_message.c:1453 gText_PkmnIsEvolving
 	.globl gText_Rom_5ABAFC
@@ -552,8 +550,6 @@ gText_Rom_5ABAFC: @ 0x085ABAFC
 	.if (. - gText_Rom_5ABAFC) < 0x13
 	.space 0x13 - (. - gText_Rom_5ABAFC)
 	.endif
-	.globl gUnknown_85ABB0F
-gUnknown_85ABB0F: @ 0x085ABB0F
 
 	@ src/battle_message.c:1454 gText_CongratsPkmnEvolved
 	.globl gText_Rom_5ABB0F

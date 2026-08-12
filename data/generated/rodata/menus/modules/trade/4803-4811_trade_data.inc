@@ -8,8 +8,6 @@ gText_Rom_5CA294: @ 0x085CA294
 	.if (. - gText_Rom_5CA294) < 0x20
 	.space 0x20 - (. - gText_Rom_5CA294)
 	.endif
-	.globl gUnknown_85CA2B4
-gUnknown_85CA2B4: @ 0x085CA2B4
 
 	@ asm/trade.s:5988 sub_08079BD4 (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -21,8 +19,6 @@ gText_Rom_5CA2B4: @ 0x085CA2B4
 	.endif
 	.globl gText_Rom_5CA2C8
 	.set gText_Rom_5CA2C8, gText_Rom_5CA2B4 + 0x14
-	.globl gUnknown_85CA2CC
-gUnknown_85CA2CC: @ 0x085CA2CC
 
 	@ asm/trade.s:5988 sub_08079BD4 (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

@@ -21,8 +21,6 @@ gText_Rom_5C8F82: @ 0x085C8F82
 	.space 0x4 - (. - gText_Rom_5C8F82)
 	.endif
 	.space 0x2, 0xFF
-	.globl gUnknown_85C8F88
-gUnknown_85C8F88: @ 0x085C8F88
 
 	@ asm/main_menu.s:2379 Task_NewGameBirchSpeech_ThisIsAPokemon
 	.globl gText_Rom_5C8F88

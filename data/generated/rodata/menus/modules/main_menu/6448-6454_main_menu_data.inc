@@ -8,8 +8,6 @@ gText_Rom_5CCCBD: @ 0x085CCCBD
 	.if (. - gText_Rom_5CCCBD) < 0xa
 	.space 0xa - (. - gText_Rom_5CCCBD)
 	.endif
-	.globl gUnknown_85CCCC7
-gUnknown_85CCCC7: @ 0x085CCCC7
 
 	@ asm/main_menu.s:5043 MainMenu_FormatSavegameTime
 	.globl gText_Rom_5CCCC7
@@ -21,8 +19,6 @@ gText_Rom_5CCCC7: @ 0x085CCCC7
 	.if (. - gText_Rom_5CCCC7) < 0xd
 	.space 0xd - (. - gText_Rom_5CCCC7)
 	.endif
-	.globl gUnknown_85CCCD4
-gUnknown_85CCCD4: @ 0x085CCCD4
 
 	@ asm/main_menu.s:5099 MainMenu_FormatSavegamePokedex
 	.globl gText_Rom_5CCCD4
@@ -34,8 +30,6 @@ gText_Rom_5CCCD4: @ 0x085CCCD4
 	.if (. - gText_Rom_5CCCD4) < 0xd
 	.space 0xd - (. - gText_Rom_5CCCD4)
 	.endif
-	.globl gUnknown_85CCCE1
-gUnknown_85CCCE1: @ 0x085CCCE1
 
 	@ asm/main_menu.s:5152 MainMenu_FormatSavegameBadges
 	.globl gText_Rom_5CCCE1

@@ -8,8 +8,6 @@ gText_Rom_5DC113: @ 0x085DC113
 	.endif
 	.globl gText_Rom_5DC117
 	.set gText_Rom_5DC117, gText_Rom_5DC113 + 0x4
-	.globl gUnknown_85DC11C
-gUnknown_85DC11C: @ 0x085DC11C
 
 	@ src/strings.c:1014 gText_Cancel3
 	.globl gText_Rom_5DC11C
@@ -21,8 +19,6 @@ gText_Rom_5DC11C: @ 0x085DC11C
 	.if (. - gText_Rom_5DC11C) < 0x5
 	.space 0x5 - (. - gText_Rom_5DC11C)
 	.endif
-	.globl gUnknown_85DC121
-gUnknown_85DC121: @ 0x085DC121
 
 	@ src/strings.c:1007 gText_Swap (+1 aliases)
 	.globl gText_Rom_5DC121
@@ -34,8 +30,6 @@ gText_Rom_5DC121: @ 0x085DC121
 	.if (. - gText_Rom_5DC121) < 0x5
 	.space 0x5 - (. - gText_Rom_5DC121)
 	.endif
-	.globl gUnknown_85DC126
-gUnknown_85DC126: @ 0x085DC126
 
 	@ src/strings.c:1016 gText_Accept (+1 aliases)
 	.globl gText_Rom_5DC126
@@ -47,8 +41,6 @@ gText_Rom_5DC126: @ 0x085DC126
 	.if (. - gText_Rom_5DC126) < 0x5
 	.space 0x5 - (. - gText_Rom_5DC126)
 	.endif
-	.globl gUnknown_85DC12B
-gUnknown_85DC12B: @ 0x085DC12B
 
 	@ src/strings.c:1017 gText_AcceptThisPkmn
 	.globl gText_Rom_5DC12B

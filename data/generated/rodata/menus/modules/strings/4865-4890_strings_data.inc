@@ -8,8 +8,6 @@ gText_Rom_5CA3E4: @ 0x085CA3E4
 	.endif
 	.globl gText_Rom_5CA3E8
 	.set gText_Rom_5CA3E8, gText_Rom_5CA3E4 + 0x4
-	.globl gUnknown_85CA3EE
-gUnknown_85CA3EE: @ 0x085CA3EE
 
 	@ src/strings.c:390 gText_PkmnSkills
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -21,8 +19,6 @@ gText_Rom_5CA3EE: @ 0x085CA3EE
 	.endif
 	.globl gText_Rom_5CA3F2
 	.set gText_Rom_5CA3F2, gText_Rom_5CA3EE + 0x4
-	.globl gUnknown_85CA3F8
-gUnknown_85CA3F8: @ 0x085CA3F8
 
 	@ src/strings.c:391 gText_BattleMoves
 	.globl gText_Rom_5CA3F8
@@ -34,8 +30,6 @@ gText_Rom_5CA3F8: @ 0x085CA3F8
 	.if (. - gText_Rom_5CA3F8) < 0x7
 	.space 0x7 - (. - gText_Rom_5CA3F8)
 	.endif
-	.globl gUnknown_85CA3FF
-gUnknown_85CA3FF: @ 0x085CA3FF
 
 	@ src/strings.c:392 gText_ContestMoves (+1 aliases)
 	.globl gText_Rom_5CA3FF
@@ -47,8 +41,6 @@ gText_Rom_5CA3FF: @ 0x085CA3FF
 	.if (. - gText_Rom_5CA3FF) < 0x8
 	.space 0x8 - (. - gText_Rom_5CA3FF)
 	.endif
-	.globl gUnknown_85CA407
-gUnknown_85CA407: @ 0x085CA407
 
 	@ src/strings.c:393 gText_Info
 	.globl gText_Rom_5CA407
@@ -60,8 +52,6 @@ gText_Rom_5CA407: @ 0x085CA407
 	.if (. - gText_Rom_5CA407) < 0x5
 	.space 0x5 - (. - gText_Rom_5CA407)
 	.endif
-	.globl gUnknown_85CA40C
-gUnknown_85CA40C: @ 0x085CA40C
 
 	@ src/strings.c:394 gText_EggWillTakeALongTime
 	.globl gText_Rom_5CA40C
@@ -73,8 +63,6 @@ gText_Rom_5CA40C: @ 0x085CA40C
 	.if (. - gText_Rom_5CA40C) < 0x19
 	.space 0x19 - (. - gText_Rom_5CA40C)
 	.endif
-	.globl gUnknown_85CA425
-gUnknown_85CA425: @ 0x085CA425
 
 	@ src/strings.c:395 gText_EggWillTakeSomeTime
 	.globl gText_Rom_5CA425
@@ -86,8 +74,6 @@ gText_Rom_5CA425: @ 0x085CA425
 	.if (. - gText_Rom_5CA425) < 0x23
 	.space 0x23 - (. - gText_Rom_5CA425)
 	.endif
-	.globl gUnknown_85CA448
-gUnknown_85CA448: @ 0x085CA448
 
 	@ src/strings.c:396 gText_EggWillHatchSoon
 	.globl gText_Rom_5CA448
@@ -99,8 +85,6 @@ gText_Rom_5CA448: @ 0x085CA448
 	.if (. - gText_Rom_5CA448) < 0x23
 	.space 0x23 - (. - gText_Rom_5CA448)
 	.endif
-	.globl gUnknown_85CA46B
-gUnknown_85CA46B: @ 0x085CA46B
 
 	@ src/strings.c:397 gText_EggAboutToHatch
 	.globl gText_Rom_5CA46B
@@ -112,8 +96,6 @@ gText_Rom_5CA46B: @ 0x085CA46B
 	.if (. - gText_Rom_5CA46B) < 0x1c
 	.space 0x1c - (. - gText_Rom_5CA46B)
 	.endif
-	.globl gUnknown_85CA487
-gUnknown_85CA487: @ 0x085CA487
 
 	@ src/strings.c:398 gText_HMMovesCantBeForgotten2
 	.globl gText_Rom_5CA487
@@ -125,8 +107,6 @@ gText_Rom_5CA487: @ 0x085CA487
 	.if (. - gText_Rom_5CA487) < 0x1f
 	.space 0x1f - (. - gText_Rom_5CA487)
 	.endif
-	.globl gUnknown_85CA4A6
-gUnknown_85CA4A6: @ 0x085CA4A6
 
 	@ src/strings.c:399 gText_XNatureMetAtYZ
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -138,8 +118,6 @@ gText_Rom_5CA4A6: @ 0x085CA4A6
 	.endif
 	.globl gText_Rom_5CA4C8
 	.set gText_Rom_5CA4C8, gText_Rom_5CA4A6 + 0x22
-	.globl gUnknown_85CA4CC
-gUnknown_85CA4CC: @ 0x085CA4CC
 
 	@ src/strings.c:400 gText_XNatureHatchedAtYZ
 	.globl gText_Rom_5CA4CC

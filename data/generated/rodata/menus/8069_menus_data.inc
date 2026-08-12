@@ -1,7 +1,5 @@
-	.globl gUnknown_85FD7EC
-gUnknown_85FD7EC: @ 0x085FD7EC
 	.globl gXcmdTable
-gXcmdTable:
+gXcmdTable: @ 0x085FD7EC
 	@ M4A extended-command dispatch table (14 entries)
 	.4byte ply_xxx
 	.4byte ply_xwave

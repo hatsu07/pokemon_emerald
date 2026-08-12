@@ -8,8 +8,6 @@ gText_Rom_5CC383: @ 0x085CC383
 	.endif
 	.globl gText_Rom_5CC38B
 	.set gText_Rom_5CC38B, gText_Rom_5CC383 + 0x8
-	.globl gUnknown_85CC390
-gUnknown_85CC390: @ 0x085CC390
 
 	@ src/strings.c:684 gText_UnionTradesAndBattles
 	@ Preserve exact byte length: semantic suffix text pointer.

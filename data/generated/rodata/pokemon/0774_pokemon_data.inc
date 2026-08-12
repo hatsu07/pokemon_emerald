@@ -40,12 +40,10 @@ gUnknown_8543150: @ 0x08543150
 	@ ANALYSIS: RAW_BLOCK size=0x18
 	.2byte 0x0002, 0x2000, 0x0014, 0x0001, 0x1902, 0x0208, 0x0F02, 0x0281
 	.2byte 0x00FF, 0x0000, 0x0000, 0x0000
-	.globl gUnknown_8543168
-gUnknown_8543168: @ 0x08543168
 	.globl gMonFootprintTable
 	@ duplicate Pokédex footprint/palette semantic group removed; canonical definitions follow
 	.globl gMonFootprintTable
-gMonFootprintTable:
+gMonFootprintTable: @ 0x08543168
 	@ 413 species-indexed footprint pointers through SPECIES_EGG.
 	.4byte 0x08C30444 @ [SPECIES_NONE]
 	.4byte 0x08C30444 @ [SPECIES_BULBASAUR]
@@ -777,4 +775,3 @@ gUnknown_85443B0: @ 0x085443B0
 	.globl gUnknown_85443B2
 gUnknown_85443B2: @ 0x085443B2
 	.space 0x1, 0x00
-

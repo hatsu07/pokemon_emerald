@@ -1,6 +1,4 @@
 .include "asm/macros/semantic_raw_structs.inc"
-	.globl gUnknown_845A1F4
-gUnknown_845A1F4: @ 0x0845A1F4
 	@ analyzed canonical ROM range 0x0845A1F4-0x0845DFD9
 	@ pass3: gMapLayouts + MapHeader table; byte-verified
 	@ pret/pokeemerald-jp direct xref for 0x0845A1F4: battle_pyramid.s: GenerateBattlePyramidFloorLayout; overworld.s: GetMapLayout

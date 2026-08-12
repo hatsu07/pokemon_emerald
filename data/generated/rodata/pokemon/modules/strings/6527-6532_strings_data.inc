@@ -8,8 +8,6 @@ gText_Rom_5CCED5: @ 0x085CCED5
 	.if (. - gText_Rom_5CCED5) < 0xa
 	.space 0xa - (. - gText_Rom_5CCED5)
 	.endif
-	.globl gUnknown_85CCEDF
-gUnknown_85CCEDF: @ 0x085CCEDF
 
 	@ src/strings.c:861 gJPText_DecideStop
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -23,8 +21,6 @@ gText_Rom_5CCEDF: @ 0x085CCEDF
 	.set gText_Rom_5CCEE6, gText_Rom_5CCEDF + 0x7
 	.globl gText_Rom_5CCEE8
 	.set gText_Rom_5CCEE8, gText_Rom_5CCEDF + 0x9
-	.globl gUnknown_85CCEEC
-gUnknown_85CCEEC: @ 0x085CCEEC
 
 	@ src/strings.c:862 gJPText_ReceiveMysteryGiftWithEReader
 	.globl gText_Rom_5CCEEC

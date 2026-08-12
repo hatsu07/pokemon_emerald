@@ -22,8 +22,6 @@ gUnknown_85CCDAB: @ 0x085CCDAB
 	@ ANALYSIS: RAW_BLOCK size=0x12
 	.byte 0xF7, 0x00, 0x37, 0x00, 0x02, 0x50, 0x4B, 0x02, 0x16, 0x15, 0x50, 0x13, 0x0C, 0x1F, 0x50, 0x10
 	.byte 0xAB, 0xFF
-	.globl gUnknown_85CCDBD
-gUnknown_85CCDBD: @ 0x085CCDBD
 
 	@ src/strings.c:837 gText_WantToPlayAgain (+1 aliases)
 	.globl gText_Rom_5CCDBD
@@ -35,8 +33,6 @@ gText_Rom_5CCDBD: @ 0x085CCDBD
 	.if (. - gText_Rom_5CCDBD) < 0xe
 	.space 0xe - (. - gText_Rom_5CCDBD)
 	.endif
-	.globl gUnknown_85CCDCB
-gUnknown_85CCDCB: @ 0x085CCDCB
 
 	@ src/strings.c:838 gText_SomeoneDroppedOut
 	@ Preserve exact byte length: semantic suffix text pointer.

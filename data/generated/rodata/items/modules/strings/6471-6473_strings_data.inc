@@ -8,8 +8,6 @@ gText_Rom_5CCD5A: @ 0x085CCD5A
 	.if (. - gText_Rom_5CCD5A) < 0xe
 	.space 0xe - (. - gText_Rom_5CCD5A)
 	.endif
-	.globl gUnknown_85CCD68
-gUnknown_85CCD68: @ 0x085CCD68
 
 	@ src/strings.c:828 gText_AnnouncingPrizes
 	.globl gText_Rom_5CCD68

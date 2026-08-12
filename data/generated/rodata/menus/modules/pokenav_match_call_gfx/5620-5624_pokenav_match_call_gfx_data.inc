@@ -8,8 +8,6 @@ gText_Rom_5CB6AE: @ 0x085CB6AE
 	.if (. - gText_Rom_5CB6AE) < 0xa
 	.space 0xa - (. - gText_Rom_5CB6AE)
 	.endif
-	.globl gUnknown_85CB6B8
-gUnknown_85CB6B8: @ 0x085CB6B8
 
 	@ src/pokenav_match_call_gfx.c:128 gText_NumberOfBattles
 	.globl gText_Rom_5CB6B8
@@ -34,4 +32,3 @@ gText_Rom_5CB6C2: @ 0x085CB6C2
 	.endif
 	@ Decoded text from ROM range: offset=0x5CB6C8, size=0x5
 	.string "よびだす$"
-

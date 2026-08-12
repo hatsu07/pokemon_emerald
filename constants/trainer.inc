@@ -217,6 +217,9 @@
 .set TRAINER_PIC_COORDS_ENTRY_SIZE,           4
 .set TRAINER_PIC_TABLE_ENTRY_SIZE,            8
 .set TRAINER_PALETTE_TABLE_ENTRY_SIZE,        8
+.set TRAINER_BACK_ANIM_CMD_SIZE,              4
+.set TRAINER_BACK_ANIM_SEQUENCE_CMDS,         6
+.set TRAINER_BACK_ANIM_SEQUENCE_SIZE,        24
 
 @ Trainer back-picture IDs.
 .set TRAINER_BACK_PIC_BRENDAN                  , 0

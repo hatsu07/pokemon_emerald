@@ -8,8 +8,6 @@ gText_Rom_5C9EC0: @ 0x085C9EC0
 	.if (. - gText_Rom_5C9EC0) < 0x14
 	.space 0x14 - (. - gText_Rom_5C9EC0)
 	.endif
-	.globl gUnknown_85C9ED4
-gUnknown_85C9ED4: @ 0x085C9ED4
 
 	@ src/strings.c:284 gText_PkmnWokeUp2
 	.globl gText_Rom_5C9ED4
@@ -21,8 +19,6 @@ gText_Rom_5C9ED4: @ 0x085C9ED4
 	.if (. - gText_Rom_5C9ED4) < 0xe
 	.space 0xe - (. - gText_Rom_5C9ED4)
 	.endif
-	.globl gUnknown_85C9EE2
-gUnknown_85C9EE2: @ 0x085C9EE2
 
 	@ src/strings.c:285 gText_PkmnBurnHealed
 	.globl gText_Rom_5C9EE2
@@ -34,8 +30,6 @@ gText_Rom_5C9EE2: @ 0x085C9EE2
 	.if (. - gText_Rom_5C9EE2) < 0x10
 	.space 0x10 - (. - gText_Rom_5C9EE2)
 	.endif
-	.globl gUnknown_85C9EF2
-gUnknown_85C9EF2: @ 0x085C9EF2
 
 	@ src/strings.c:287 gText_PkmnThawedOut
 	.globl gText_Rom_5C9EF2
@@ -47,8 +41,6 @@ gText_Rom_5C9EF2: @ 0x085C9EF2
 	.if (. - gText_Rom_5C9EF2) < 0x14
 	.space 0x14 - (. - gText_Rom_5C9EF2)
 	.endif
-	.globl gUnknown_85C9F06
-gUnknown_85C9F06: @ 0x085C9F06
 
 	@ src/strings.c:288 gText_PPWasRestored
 	.globl gText_Rom_5C9F06
@@ -71,8 +63,6 @@ gText_Rom_5C9F18: @ 0x085C9F18
 	.if (. - gText_Rom_5C9F18) < 0x13
 	.space 0x13 - (. - gText_Rom_5C9F18)
 	.endif
-	.globl gUnknown_85C9F2B
-gUnknown_85C9F2B: @ 0x085C9F2B
 
 	@ src/strings.c:290 gText_PkmnBecameHealthy
 	.globl gText_Rom_5C9F2B
@@ -84,8 +74,6 @@ gText_Rom_5C9F2B: @ 0x085C9F2B
 	.if (. - gText_Rom_5C9F2B) < 0x10
 	.space 0x10 - (. - gText_Rom_5C9F2B)
 	.endif
-	.globl gUnknown_85C9F3B
-gUnknown_85C9F3B: @ 0x085C9F3B
 
 	@ src/strings.c:291 gText_MovesPPIncreased
 	.globl gText_Rom_5C9F3B
@@ -97,8 +85,6 @@ gText_Rom_5C9F3B: @ 0x085C9F3B
 	.if (. - gText_Rom_5C9F3B) < 0x13
 	.space 0x13 - (. - gText_Rom_5C9F3B)
 	.endif
-	.globl gUnknown_85C9F4E
-gUnknown_85C9F4E: @ 0x085C9F4E
 
 	@ src/strings.c:292 gText_PkmnElevatedToLvVar2
 	.globl gText_Rom_5C9F4E
@@ -110,8 +96,6 @@ gText_Rom_5C9F4E: @ 0x085C9F4E
 	.if (. - gText_Rom_5C9F4E) < 0x11
 	.space 0x11 - (. - gText_Rom_5C9F4E)
 	.endif
-	.globl gUnknown_85C9F5F
-gUnknown_85C9F5F: @ 0x085C9F5F
 
 	@ src/strings.c:295 gText_PkmnBaseVar2StatIncreased
 	.globl gText_Rom_5C9F5F
@@ -123,8 +107,6 @@ gText_Rom_5C9F5F: @ 0x085C9F5F
 	.if (. - gText_Rom_5C9F5F) < 0x19
 	.space 0x19 - (. - gText_Rom_5C9F5F)
 	.endif
-	.globl gUnknown_85C9F78
-gUnknown_85C9F78: @ 0x085C9F78
 
 	@ src/strings.c:296 gText_PkmnFriendlyBaseVar2Fell
 	.globl gText_Rom_5C9F78
@@ -136,8 +118,6 @@ gText_Rom_5C9F78: @ 0x085C9F78
 	.if (. - gText_Rom_5C9F78) < 0x23
 	.space 0x23 - (. - gText_Rom_5C9F78)
 	.endif
-	.globl gUnknown_85C9F9B
-gUnknown_85C9F9B: @ 0x085C9F9B
 
 	@ src/strings.c:297 gText_PkmnAdoresBaseVar2Fell
 	.globl gText_Rom_5C9F9B

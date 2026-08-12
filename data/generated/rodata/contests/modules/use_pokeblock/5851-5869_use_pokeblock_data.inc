@@ -63,8 +63,6 @@ gText_Rom_5CBD37: @ 0x085CBD37
 	.if (. - gText_Rom_5CBD37) < 0x6
 	.space 0x6 - (. - gText_Rom_5CBD37)
 	.endif
-	.globl gUnknown_85CBD3D
-gUnknown_85CBD3D: @ 0x085CBD3D
 
 	@ asm/use_pokeblock.s:1658 Pokeblock_BufferEnhancedStatText
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -76,8 +74,6 @@ gText_Rom_5CBD3D: @ 0x085CBD3D
 	.endif
 	.globl gText_Rom_5CBD45
 	.set gText_Rom_5CBD45, gText_Rom_5CBD3D + 0x8
-	.globl gUnknown_85CBD4A
-gUnknown_85CBD4A: @ 0x085CBD4A
 
 	@ src/use_pokeblock.c:161 sText_NothingChanged
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -89,8 +85,6 @@ gText_Rom_5CBD4A: @ 0x085CBD4A
 	.endif
 	.globl gText_Rom_5CBD52
 	.set gText_Rom_5CBD52, gText_Rom_5CBD4A + 0x8
-	.globl gUnknown_85CBD57
-gUnknown_85CBD57: @ 0x085CBD57
 
 	@ src/use_pokeblock.c:162 sText_WontEatAnymore
 	.globl gText_Rom_5CBD57

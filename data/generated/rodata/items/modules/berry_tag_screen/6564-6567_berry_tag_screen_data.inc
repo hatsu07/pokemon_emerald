@@ -16,8 +16,6 @@ gText_MysteryEventCannotConnect: @ 0x085CD178
 	.error "gText_MysteryEventCannotConnect must retain its original byte length"
 	.endif
 
-	.globl gUnknown_85CD19F
-gUnknown_85CD19F: @ 0x085CD19F
 
 	@ asm/berry_tag_screen.s:1756 GetEventLoadMessage
 	@ Preserve exact byte length: semantic suffix text pointer.

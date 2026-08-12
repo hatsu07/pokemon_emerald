@@ -12,8 +12,6 @@ gText_Rom_5CC31F: @ 0x085CC31F
 gUnknown_85CC323: @ 0x085CC323
 	@ Decoded text from ROM range: offset=0x5CC323, size=0x6
 	.string "IDNo,$"
-	.globl gUnknown_85CC329
-gUnknown_85CC329: @ 0x085CC329
 
 	@ src/data/easy_chat/easy_chat_group_lifestyle.h:22 easy_chat_group_lifestyle_line_22 (+1 aliases)
 	.globl gText_Rom_5CC329

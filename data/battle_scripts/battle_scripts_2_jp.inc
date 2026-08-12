@@ -1,7 +1,5 @@
 @ Japanese Emerald battle scripts for balls, items, running, and Safari actions.
 
-	.globl gUnknown_828A290
-gUnknown_828A290:
 	.globl gBattlescriptsForBallThrow
 gBattlescriptsForBallThrow: @ 0x0828A290
 	.4byte BattleScript_BallThrow @ entry 0

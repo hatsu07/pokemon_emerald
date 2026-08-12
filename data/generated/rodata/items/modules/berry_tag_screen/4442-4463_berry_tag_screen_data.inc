@@ -8,8 +8,6 @@ gText_Rom_5C977D: @ 0x085C977D
 	.if (. - gText_Rom_5C977D) < 0x5
 	.space 0x5 - (. - gText_Rom_5C977D)
 	.endif
-	.globl gUnknown_85C9782
-gUnknown_85C9782: @ 0x085C9782
 
 	@ src/berry_tag_screen.c:178 sText_FirmSlash
 	.globl gText_Rom_5C9782
@@ -21,8 +19,6 @@ gText_Rom_5C9782: @ 0x085C9782
 	.if (. - gText_Rom_5C9782) < 0x4
 	.space 0x4 - (. - gText_Rom_5C9782)
 	.endif
-	.globl gUnknown_85C9786
-gUnknown_85C9786: @ 0x085C9786
 
 	@ asm/berry_tag_screen.s:684 sub_0817804C
 	.globl gText_Rom_5C9786
@@ -89,8 +85,6 @@ gText_Rom_5C97AA: @ 0x085C97AA
 	.endif
 	.globl gText_Rom_5C97B1
 	.set gText_Rom_5C97B1, gText_Rom_5C97AA + 0x7
-	.globl gUnknown_85C97B5
-gUnknown_85C97B5: @ 0x085C97B5
 
 	@ src/berry_tag_screen.c:180 sText_NumberVar1Var2
 	.globl gText_Rom_5C97B5
@@ -102,8 +96,6 @@ gText_Rom_5C97B5: @ 0x085C97B5
 	.if (. - gText_Rom_5C97B5) < 0x8
 	.space 0x8 - (. - gText_Rom_5C97B5)
 	.endif
-	.globl gUnknown_85C97BD
-gUnknown_85C97BD: @ 0x085C97BD
 
 	@ src/berry_tag_screen.c:181 sText_BerryTag
 	.globl gText_Rom_5C97BD
@@ -115,4 +107,3 @@ gText_Rom_5C97BD: @ 0x085C97BD
 	.if (. - gText_Rom_5C97BD) < 0x7
 	.space 0x7 - (. - gText_Rom_5C97BD)
 	.endif
-

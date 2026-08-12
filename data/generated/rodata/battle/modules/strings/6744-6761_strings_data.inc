@@ -8,8 +8,6 @@ gText_Rom_5DD438: @ 0x085DD438
 	.endif
 	.globl gText_Rom_5DD43D
 	.set gText_Rom_5DD43D, gText_Rom_5DD438 + 0x5
-	.globl gUnknown_85DD442
-gUnknown_85DD442: @ 0x085DD442
 
 	@ src/strings.c:897 gText_Total
 	.globl gText_Rom_5DD442
@@ -21,8 +19,6 @@ gText_Rom_5DD442: @ 0x085DD442
 	.if (. - gText_Rom_5DD442) < 0x5
 	.space 0x5 - (. - gText_Rom_5DD442)
 	.endif
-	.globl gUnknown_85DD447
-gUnknown_85DD447: @ 0x085DD447
 
 	@ src/strings.c:898 gText_ClearStreak
 	.globl gText_Rom_5DD447
@@ -34,8 +30,6 @@ gText_Rom_5DD447: @ 0x085DD447
 	.if (. - gText_Rom_5DD447) < 0x6
 	.space 0x6 - (. - gText_Rom_5DD447)
 	.endif
-	.globl gUnknown_85DD44D
-gUnknown_85DD44D: @ 0x085DD44D
 
 	@ src/strings.c:899 gText_Championships
 	.globl gText_Rom_5DD44D
@@ -47,8 +41,6 @@ gText_Rom_5DD44D: @ 0x085DD44D
 	.if (. - gText_Rom_5DD44D) < 0xb
 	.space 0xb - (. - gText_Rom_5DD44D)
 	.endif
-	.globl gUnknown_85DD458
-gUnknown_85DD458: @ 0x085DD458
 
 	@ src/strings.c:900 gText_RoomsCleared
 	.globl gText_Rom_5DD458
@@ -64,8 +56,6 @@ gText_Rom_5DD458: @ 0x085DD458
 gUnknown_85DD461: @ 0x085DD461
 	@ Decoded text from ROM range: offset=0x5DD461, size=0x9
 	.string "{B_COPY_VAR_1}かい　クリア$"
-	.globl gUnknown_85DD46A
-gUnknown_85DD46A: @ 0x085DD46A
 
 	@ src/strings.c:902 gText_KOsInARow
 	.globl gText_Rom_5DD46A
@@ -77,8 +67,6 @@ gText_Rom_5DD46A: @ 0x085DD46A
 	.if (. - gText_Rom_5DD46A) < 0x7
 	.space 0x7 - (. - gText_Rom_5DD46A)
 	.endif
-	.globl gUnknown_85DD471
-gUnknown_85DD471: @ 0x085DD471
 
 	@ src/strings.c:903 gText_TimesVar1
 	.globl gText_Rom_5DD471
@@ -90,8 +78,6 @@ gText_Rom_5DD471: @ 0x085DD471
 	.if (. - gText_Rom_5DD471) < 0x5
 	.space 0x5 - (. - gText_Rom_5DD471)
 	.endif
-	.globl gUnknown_85DD476
-gUnknown_85DD476: @ 0x085DD476
 
 	@ src/strings.c:904 gText_FloorsCleared
 	.globl gText_Rom_5DD476
@@ -144,4 +130,3 @@ gText_Rom_5DD4F5: @ 0x085DD4F5
 	.space 0x6 - (. - gText_Rom_5DD4F5)
 	.endif
 	.space 0x1, 0x00
-

@@ -8,8 +8,6 @@ gText_Rom_5CA9DE: @ 0x085CA9DE
 	.if (. - gText_Rom_5CA9DE) < 0x3
 	.space 0x3 - (. - gText_Rom_5CA9DE)
 	.endif
-	.globl gUnknown_85CA9E1
-gUnknown_85CA9E1: @ 0x085CA9E1
 
 	@ asm/tv.s:8326 GetMomOrDadStringForTVMessage
 	.globl gText_Rom_5CA9E1

@@ -19,8 +19,6 @@ gText_Rom_5CB0B9: @ 0x085CB0B9
 	.if (. - gText_Rom_5CB0B9) < 0x6
 	.space 0x6 - (. - gText_Rom_5CB0B9)
 	.endif
-	.globl gUnknown_85CB0BF
-gUnknown_85CB0BF: @ 0x085CB0BF
 
 	@ src/strings.c:528 gText_ElevatorNowOn
 	.globl gText_Rom_5CB0BF
@@ -32,8 +30,6 @@ gText_Rom_5CB0BF: @ 0x085CB0BF
 	.if (. - gText_Rom_5CB0BF) < 0x9
 	.space 0x9 - (. - gText_Rom_5CB0BF)
 	.endif
-	.globl gUnknown_85CB0C8
-gUnknown_85CB0C8: @ 0x085CB0C8
 
 	@ asm/field_specials.s:5777 sub_0813A904
 	.globl gText_Rom_5CB0C8

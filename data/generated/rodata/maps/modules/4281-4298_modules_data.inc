@@ -11,8 +11,6 @@ gText_Rom_5C9299: @ 0x085C9299
 	@ analyzed canonical ROM range 0x085C929B-0x085C929C
 gText_HofArrowPadding: @ 0x085C929B
 	.byte 0x00, 0xFF
-	.globl gUnknown_85C929D
-gUnknown_85C929D: @ 0x085C929D
 
 	@ src/strings.c:115 gText_WelcomeToHOF
 	.globl gText_Rom_5C929D
@@ -39,8 +37,6 @@ gText_Rom_5C92EA: @ 0x085C92EA
 	.if (. - gText_Rom_5C92EA) < 0x27
 	.space 0x27 - (. - gText_Rom_5C92EA)
 	.endif
-	.globl gUnknown_85C9311
-gUnknown_85C9311: @ 0x085C9311
 
 	@ src/strings.c:118 gText_HOFCorrupted
 	.globl gText_Rom_5C9311
@@ -53,8 +49,6 @@ gText_Rom_5C9311: @ 0x085C9311
 	.space 0x16 - (. - gText_Rom_5C9311)
 	.endif
 	.space 0x1, 0x00
-	.globl gUnknown_85C9328
-gUnknown_85C9328: @ 0x085C9328
 
 	@ asm/hall_of_fame.s:2002 Task_HofPC_DrawSpritesPrintText
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -66,8 +60,6 @@ gText_Rom_5C9328: @ 0x085C9328
 	.endif
 	.globl gText_Rom_5C932A
 	.set gText_Rom_5C932A, gText_Rom_5C9328 + 0x2
-	.globl gUnknown_85C9337
-gUnknown_85C9337: @ 0x085C9337
 
 	@ src/strings.c:120 gText_LeagueChamp
 	.globl gText_Rom_5C9337
@@ -102,8 +94,6 @@ gText_HofLevelAndIdLabels: @ 0x085C934F
 	.if (. - gText_HofLevelAndIdLabels) != 0xA
 	.error "gText_HofLevelAndIdLabels must retain its original byte length"
 	.endif
-	.globl gUnknown_85C9359
-gUnknown_85C9359: @ 0x085C9359
 
 	@ src/data/easy_chat/easy_chat_group_lifestyle.h:184 easy_chat_group_lifestyle_line_184 (+5 aliases)
 	.globl gText_Rom_5C9359
@@ -119,8 +109,6 @@ gText_Rom_5C9359: @ 0x085C9359
 gUnknown_85C935D: @ 0x085C935D
 	@ Decoded text from ROM range: offset=0x5C935D, size=0x6
 	.string "IDNo,$"
-	.globl gUnknown_85C9363
-gUnknown_85C9363: @ 0x085C9363
 
 	@ src/strings.c:126 gText_BirchInTrouble
 	.globl gText_Rom_5C9363
@@ -132,8 +120,6 @@ gText_Rom_5C9363: @ 0x085C9363
 	.if (. - gText_Rom_5C9363) < 0x23
 	.space 0x23 - (. - gText_Rom_5C9363)
 	.endif
-	.globl gUnknown_85C9386
-gUnknown_85C9386: @ 0x085C9386
 
 	@ src/strings.c:127 gText_ConfirmStarterChoice
 	.globl gText_Rom_5C9386

@@ -21,10 +21,8 @@ sIntroScanlineParams32Bit: @ 0x082EBAD4
 	.4byte 0xA6600001 @ SCANLINE_EFFECT_DMACNT_32BIT
 	.4byte 1
 
-	.globl gUnknown_82EBAE0
-gUnknown_82EBAE0: @ 0x082EBAE0
 	.globl gUnusedBattleInitSprite
-gUnusedBattleInitSprite:
+gUnusedBattleInitSprite: @ 0x082EBAE0
 	.2byte 0, 0 @ tileTag, paletteTag
 	.4byte gDummyOamData @ gDummyOamData
 	.4byte gDummySpriteAnimTable @ gDummySpriteAnimTable
@@ -60,10 +58,8 @@ gUnknown_82EBB30: @ 0x082EBB30
 sCenterToCornerVecXs:
 	.byte -32, -16, -16, -32, -32, 0, 0, 0
 
-	.globl gUnknown_82EBB38
-gUnknown_82EBB38: @ 0x082EBB38
 	.globl gTypeEffectiveness
-gTypeEffectiveness:
+gTypeEffectiveness: @ 0x082EBB38
 	.byte TYPE_NORMAL, TYPE_ROCK, TYPE_MUL_NOT_EFFECTIVE
 	.byte TYPE_NORMAL, TYPE_STEEL, TYPE_MUL_NOT_EFFECTIVE
 	.byte TYPE_FIRE, TYPE_FIRE, TYPE_MUL_NOT_EFFECTIVE

@@ -23,8 +23,6 @@ gUnknown_830F6FB: @ 0x0830F6FB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0xFB, 0xFF
-	.globl gUnknown_830F6FD
-gUnknown_830F6FD: @ 0x0830F6FD
 
 	@ src/berry_blender.c:266 sText_WasMade
 	.globl gText_Rom_30F6FD

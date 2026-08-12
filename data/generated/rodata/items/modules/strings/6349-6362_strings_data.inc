@@ -8,8 +8,6 @@ gText_Rom_5CCA27: @ 0x085CCA27
 	.endif
 	.globl gUnknown_85CCA28
 	.set gUnknown_85CCA28, gText_Rom_5CCA27 + 0x1
-	.globl gUnknown_85CCA30
-gUnknown_85CCA30: @ 0x085CCA30
 
 	@ src/strings.c:779 gText_PressesRankings
 	@ Preserve exact byte length: semantic suffix text pointer.

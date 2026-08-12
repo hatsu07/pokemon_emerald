@@ -19,8 +19,6 @@ gText_Rom_30F75A: @ 0x0830F75A
 	.if (. - gText_Rom_30F75A) < 0x6
 	.space 0x6 - (. - gText_Rom_30F75A)
 	.endif
-	.globl gUnknown_830F760
-gUnknown_830F760: @ 0x0830F760
 
 	@ src/berry_blender.c:273 berry_blender_line_273
 	.globl gText_Rom_30F760

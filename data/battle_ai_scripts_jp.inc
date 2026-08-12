@@ -1,8 +1,6 @@
 @ Japanese Emerald Battle AI script table, command stream, and embedded lists.
 @ Control-flow roots come from the 32-entry Battle AI table.
 
-	.globl gUnknown_828A480
-gUnknown_828A480:
 	.globl gBattleAI_ScriptsTable
 gBattleAI_ScriptsTable: @ 0x0828A480
 	.4byte BattleAI_CheckBadMove @ AI script index 0

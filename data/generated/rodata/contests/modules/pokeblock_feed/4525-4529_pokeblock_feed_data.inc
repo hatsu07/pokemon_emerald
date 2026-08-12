@@ -8,8 +8,6 @@ gText_Rom_5C9885: @ 0x085C9885
 	.if (. - gText_Rom_5C9885) < 0xf
 	.space 0xf - (. - gText_Rom_5C9885)
 	.endif
-	.globl gUnknown_85C9894
-gUnknown_85C9894: @ 0x085C9894
 
 	@ src/pokeblock_feed.c:100 sText_Var1HappilyAteVar2
 	.globl gText_Rom_5C9894
@@ -21,8 +19,6 @@ gText_Rom_5C9894: @ 0x085C9894
 	.if (. - gText_Rom_5C9894) < 0x15
 	.space 0x15 - (. - gText_Rom_5C9894)
 	.endif
-	.globl gUnknown_85C98A9
-gUnknown_85C98A9: @ 0x085C98A9
 
 	@ src/pokeblock_feed.c:101 sText_Var1DisdainfullyAteVar2
 	.globl gText_Rom_5C98A9

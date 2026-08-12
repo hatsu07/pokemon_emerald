@@ -8,8 +8,6 @@ gText_Rom_5AC0DD: @ 0x085AC0DD
 	.if (. - gText_Rom_5AC0DD) < 0x1e
 	.space 0x1e - (. - gText_Rom_5AC0DD)
 	.endif
-	.globl gUnknown_85AC0FB
-gUnknown_85AC0FB: @ 0x085AC0FB
 
 	@ src/battle_message.c:1555 gText_BattleRecordedOnPass
 	.globl gText_Rom_5AC0FB

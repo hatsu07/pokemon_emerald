@@ -8,8 +8,6 @@ gText_Rom_5C9AED: @ 0x085C9AED
 	.if (. - gText_Rom_5C9AED) < 0x5
 	.space 0x5 - (. - gText_Rom_5C9AED)
 	.endif
-	.globl gUnknown_85C9AF2
-gUnknown_85C9AF2: @ 0x085C9AF2
 
 	@ src/battle_debug.c:341 battle_debug_line_341 (+5 aliases)
 	.globl gText_Rom_5C9AF2
