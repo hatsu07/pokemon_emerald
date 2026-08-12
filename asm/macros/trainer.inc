@@ -31,3 +31,53 @@
     .error "trainer_entry must emit 0x20 bytes"
 .endif
 .endm
+
+@ Trainer graphics tables.
+@
+@ gTrainerFrontPicCoords is a 93-entry table of 4-byte records:
+@   u8 size; u8 yOffset; u8 padding[2]
+@
+@ The original raw conversion accidentally grouped bytes such as
+@   08 01 00 00 08
+@ as ".byte 0x08" followed by the apparent ROM pointer 0x08000001.
+@ These macros keep the real record boundaries explicit.
+
+.macro trainer_front_pic_coords trainerPic:req, yOffset:req
+    .if ((. - gTrainerFrontPicCoords) / 4) != \trainerPic
+        .error "trainer_front_pic_coords order does not match TRAINER_PIC_*"
+    .endif
+    .byte 8, \yOffset, 0, 0
+.endm
+
+@ struct CompressedSpriteSheet-compatible trainer table entry:
+@   const void *data; u16 size; u16 trainerPic
+.macro trainer_front_pic_entry pic:req, size:req, trainerPic:req
+    .4byte \pic
+    .2byte \size, \trainerPic
+.endm
+
+@ Trainer palette table entry:
+@   const void *palette; u32 trainerPic
+.macro trainer_front_palette_entry palette:req, trainerPic:req
+    .4byte \palette, \trainerPic
+.endm
+
+@ Trainer back-picture table entry:
+@   const void *data; u16 size; u16 trainerBackPic
+.macro trainer_back_pic_entry pic:req, size:req, trainerBackPic:req
+    .4byte \pic
+    .2byte \size, \trainerBackPic
+.endm
+
+@ Trainer back-palette table entry:
+@   const void *palette; u32 trainerBackPic
+.macro trainer_back_palette_entry palette:req, trainerBackPic:req
+    .4byte \palette, \trainerBackPic
+.endm
+
+@ One 64x64 4bpp frame inside an uncompressed trainer back sprite.
+@ This removes adjacency-dependent spellings such as
+@ gTrainerBackPic_Wally + 0x2000 for the first Steven frame.
+.macro trainer_back_frame_entry pic:req, frame:req
+    .4byte \pic + (MON_PIC_SIZE * \frame), MON_PIC_SIZE
+.endm

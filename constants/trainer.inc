@@ -184,6 +184,16 @@
 .set TRAINER_PIC_RS_BRENDAN                    , 91
 .set TRAINER_PIC_RS_MAY                        , 92
 
+@ Trainer back-picture IDs.
+.set TRAINER_BACK_PIC_BRENDAN                  , 0
+.set TRAINER_BACK_PIC_MAY                      , 1
+.set TRAINER_BACK_PIC_RED                      , 2
+.set TRAINER_BACK_PIC_LEAF                     , 3
+.set TRAINER_BACK_PIC_RS_BRENDAN               , 4
+.set TRAINER_BACK_PIC_RS_MAY                   , 5
+.set TRAINER_BACK_PIC_WALLY                    , 6
+.set TRAINER_BACK_PIC_STEVEN                   , 7
+
 @ Battle facility class IDs.
 @ These are table indices used by gFacilityClassToPicIndex / gFacilityClassToTrainerClass.
 .set FACILITY_CLASS_HIKER                      , 0x00
