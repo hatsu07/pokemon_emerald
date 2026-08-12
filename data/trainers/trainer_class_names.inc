@@ -859,3 +859,8 @@ sTrainerClassName_RS_PROTAG:
 	.globl gText_Rom_2E3833
 	.set gText_Rom_2E3833, gText_Rom_2E382F + 0x4
 	.space 0x3, 0x00
+
+@ 66 logical 11-byte JP slots plus 2-byte final alignment before gTrainers.
+.if (. - gTrainerClassNames) != TRAINER_CLASS_NAME_TABLE_SIZE
+    .error "trainer class-name table size changed"
+.endif

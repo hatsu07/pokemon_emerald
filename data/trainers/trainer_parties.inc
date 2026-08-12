@@ -3,81 +3,51 @@
 @ Rebuilt from the raw party block using all 854 non-NULL party pointers
 @ from the corrected 0x20-byte gTrainers layout. Coverage is contiguous.
 
-.macro trainer_mon_no_item_default iv:req, level:req, species:req
-    .2byte \iv
-    .byte \level, 0
-    .2byte \species
-    .2byte 0 @ ABI padding
-.endm
-
-.macro trainer_mon_no_item_custom iv:req, level:req, species:req, move1:req, move2:req, move3:req, move4:req
-    .2byte \iv
-    .byte \level, 0
-    .2byte \species
-    .2byte \move1, \move2, \move3, \move4
-    .2byte 0 @ ABI padding
-.endm
-
-.macro trainer_mon_item_default iv:req, level:req, species:req, item:req
-    .2byte \iv
-    .byte \level, 0
-    .2byte \species
-    .2byte \item
-.endm
-
-.macro trainer_mon_item_custom iv:req, level:req, species:req, item:req, move1:req, move2:req, move3:req, move4:req
-    .2byte \iv
-    .byte \level, 0
-    .2byte \species
-    .2byte \item
-    .2byte \move1, \move2, \move3, \move4
-.endm
-
 sParty_Sawyer1: @ 0x082DEEBC
     @ TRAINER_SAWYER_1 (id 1): マサヒコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 21, SPECIES_GEODUDE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 21, SPECIES_GEODUDE
 
 sParty_GruntAquaHideout1: @ 0x082DEEC4
     @ TRAINER_GRUNT_AQUA_HIDEOUT_1 (id 2): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 32, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_POOCHYENA
 
 sParty_GruntAquaHideout2: @ 0x082DEECC
     @ TRAINER_GRUNT_AQUA_HIDEOUT_2 (id 3): したっぱ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 31, SPECIES_ZUBAT
-    trainer_mon_no_item_default 0, 31, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_CARVANHA
 
 sParty_GruntAquaHideout3: @ 0x082DEEDC
     @ TRAINER_GRUNT_AQUA_HIDEOUT_3 (id 4): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 32, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_ZUBAT
 
 sParty_GruntAquaHideout4: @ 0x082DEEE4
     @ TRAINER_GRUNT_AQUA_HIDEOUT_4 (id 5): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 32, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_CARVANHA
 
 sParty_GruntSeafloorCavern1: @ 0x082DEEEC
     @ TRAINER_GRUNT_SEAFLOOR_CAVERN_1 (id 6): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 36, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 36, SPECIES_POOCHYENA
 
 sParty_GruntSeafloorCavern2: @ 0x082DEEF4
     @ TRAINER_GRUNT_SEAFLOOR_CAVERN_2 (id 7): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 36, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 36, SPECIES_CARVANHA
 
 sParty_GruntSeafloorCavern3: @ 0x082DEEFC
     @ TRAINER_GRUNT_SEAFLOOR_CAVERN_3 (id 8): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 36, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 36, SPECIES_ZUBAT
 
 sParty_Gabrielle1: @ 0x082DEF04
     @ TRAINER_GABRIELLE_1 (id 9): フクミ ; flags=0, partySize=6
-    trainer_mon_no_item_default 0, 26, SPECIES_SKITTY
-    trainer_mon_no_item_default 0, 26, SPECIES_POOCHYENA
-    trainer_mon_no_item_default 0, 26, SPECIES_ZIGZAGOON
-    trainer_mon_no_item_default 0, 26, SPECIES_LOTAD
-    trainer_mon_no_item_default 0, 26, SPECIES_SEEDOT
-    trainer_mon_no_item_default 0, 26, SPECIES_TAILLOW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_SKITTY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_ZIGZAGOON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_LOTAD
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_SEEDOT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_TAILLOW
 
 sParty_GruntPetalburgWoods: @ 0x082DEF34
     @ TRAINER_GRUNT_PETALBURG_WOODS (id 10): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 9, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 9, SPECIES_POOCHYENA
 
 sParty_Marcel: @ 0x082DEF3C
     @ TRAINER_MARCEL (id 11): セツオ ; flags=0, partySize=2
@@ -86,79 +56,79 @@ sParty_Marcel: @ 0x082DEF3C
 
 sParty_Alberto: @ 0x082DEF4C
     @ TRAINER_ALBERTO (id 12): ヨウスケ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 30, SPECIES_PELIPPER
-    trainer_mon_no_item_default 0, 30, SPECIES_XATU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_PELIPPER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_XATU
 
 sParty_Ed: @ 0x082DEF5C
     @ TRAINER_ED (id 13): スグル ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 30, SPECIES_ZANGOOSE
-    trainer_mon_no_item_default 0, 30, SPECIES_SEVIPER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_ZANGOOSE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_SEVIPER
 
 sParty_GruntSeafloorCavern4: @ 0x082DEF6C
     @ TRAINER_GRUNT_SEAFLOOR_CAVERN_4 (id 14): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 36, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 36, SPECIES_CARVANHA
 
 sParty_Declan: @ 0x082DEF74
     @ TRAINER_DECLAN (id 15): イッペイ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_GYARADOS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_GYARADOS
 
 sParty_GruntRusturfTunnel: @ 0x082DEF7C
     @ TRAINER_GRUNT_RUSTURF_TUNNEL (id 16): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 11, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_POOCHYENA
 
 sParty_GruntWeatherInst1: @ 0x082DEF84
     @ TRAINER_GRUNT_WEATHER_INST_1 (id 17): したっぱ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 27, SPECIES_ZUBAT
-    trainer_mon_no_item_default 0, 27, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 27, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 27, SPECIES_POOCHYENA
 
 sParty_GruntWeatherInst2: @ 0x082DEF94
     @ TRAINER_GRUNT_WEATHER_INST_2 (id 18): したっぱ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 27, SPECIES_POOCHYENA
-    trainer_mon_no_item_default 0, 27, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 27, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 27, SPECIES_CARVANHA
 
 sParty_GruntWeatherInst3: @ 0x082DEFA4
     @ TRAINER_GRUNT_WEATHER_INST_3 (id 19): したっぱ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 26, SPECIES_POOCHYENA
-    trainer_mon_no_item_default 0, 26, SPECIES_ZUBAT
-    trainer_mon_no_item_default 0, 26, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_CARVANHA
 
 sParty_GruntMuseum1: @ 0x082DEFBC
     @ TRAINER_GRUNT_MUSEUM_1 (id 20): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 15, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 15, SPECIES_CARVANHA
 
 sParty_GruntMuseum2: @ 0x082DEFC4
     @ TRAINER_GRUNT_MUSEUM_2 (id 21): したっぱ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 14, SPECIES_ZUBAT
-    trainer_mon_no_item_default 0, 14, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_CARVANHA
 
 sParty_GruntSpaceCenter1: @ 0x082DEFD4
     @ TRAINER_GRUNT_SPACE_CENTER_1 (id 22): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 32, SPECIES_NUMEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_NUMEL
 
 sParty_GruntMtPyre1: @ 0x082DEFDC
     @ TRAINER_GRUNT_MT_PYRE_1 (id 23): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 32, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_ZUBAT
 
 sParty_GruntMtPyre2: @ 0x082DEFE4
     @ TRAINER_GRUNT_MT_PYRE_2 (id 24): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 32, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_CARVANHA
 
 sParty_GruntMtPyre3: @ 0x082DEFEC
     @ TRAINER_GRUNT_MT_PYRE_3 (id 25): したっぱ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 30, SPECIES_POOCHYENA
-    trainer_mon_no_item_default 0, 30, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_CARVANHA
 
 sParty_GruntWeatherInst4: @ 0x082DEFFC
     @ TRAINER_GRUNT_WEATHER_INST_4 (id 26): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 28, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 28, SPECIES_CARVANHA
 
 sParty_GruntAquaHideout5: @ 0x082DF004
     @ TRAINER_GRUNT_AQUA_HIDEOUT_5 (id 27): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 32, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_CARVANHA
 
 sParty_GruntAquaHideout6: @ 0x082DF00C
     @ TRAINER_GRUNT_AQUA_HIDEOUT_6 (id 28): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 32, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_ZUBAT
 
 sParty_Fredrick: @ 0x082DF014
     @ TRAINER_FREDRICK (id 29): トシシゲ ; flags=0, partySize=2
@@ -172,7 +142,7 @@ sParty_Matt: @ 0x082DF024
 
 sParty_Zander: @ 0x082DF034
     @ TRAINER_ZANDER (id 31): リョウジ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 31, SPECIES_HARIYAMA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_HARIYAMA
 
 sParty_ShellyWeatherInstitute: @ 0x082DF03C
     @ TRAINER_SHELLY_WEATHER_INSTITUTE (id 32): イズミ ; flags=0, partySize=2
@@ -192,28 +162,28 @@ sParty_Archie: @ 0x082DF05C
 
 sParty_Leah: @ 0x082DF074
     @ TRAINER_LEAH (id 35): エミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 31, SPECIES_SPOINK
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_SPOINK
 
 sParty_Daisy: @ 0x082DF07C
     @ TRAINER_DAISY (id 36): ミドリ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 14, SPECIES_SHROOMISH
-    trainer_mon_no_item_default 0, 14, SPECIES_ROSELIA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_SHROOMISH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_ROSELIA
 
 sParty_Rose1: @ 0x082DF08C
     @ TRAINER_ROSE_1 (id 37): ヤヨイ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 14, SPECIES_ROSELIA
-    trainer_mon_no_item_default 0, 14, SPECIES_SHROOMISH
-    trainer_mon_no_item_default 0, 14, SPECIES_ROSELIA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_ROSELIA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_SHROOMISH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_ROSELIA
 
 sParty_Felix: @ 0x082DF0A4
     @ TRAINER_FELIX (id 38): コウジロウ ; flags=1, partySize=2
-    trainer_mon_no_item_custom 0, 43, SPECIES_MEDICHAM, MOVE_PSYCHIC, MOVE_NONE, MOVE_NONE, MOVE_NONE
-    trainer_mon_no_item_custom 0, 43, SPECIES_CLAYDOL, MOVE_SKILL_SWAP, MOVE_EARTHQUAKE, MOVE_NONE, MOVE_NONE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 43, SPECIES_MEDICHAM, MOVE_PSYCHIC, MOVE_NONE, MOVE_NONE, MOVE_NONE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 43, SPECIES_CLAYDOL, MOVE_SKILL_SWAP, MOVE_EARTHQUAKE, MOVE_NONE, MOVE_NONE
 
 sParty_Violet: @ 0x082DF0C4
     @ TRAINER_VIOLET (id 39): チヅル ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 26, SPECIES_ROSELIA
-    trainer_mon_no_item_default 0, 26, SPECIES_GLOOM
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_ROSELIA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_GLOOM
 
 sParty_Rose2: @ 0x082DF0D4
     @ TRAINER_ROSE_2 (id 40): ヤヨイ ; flags=0, partySize=2
@@ -306,11 +276,11 @@ sParty_Lola1: @ 0x082DF23C
 
 sParty_Austina: @ 0x082DF24C
     @ TRAINER_AUSTINA (id 58): ヒロミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_MARILL
 
 sParty_Gwen: @ 0x082DF254
     @ TRAINER_GWEN (id 59): ノゾミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_MARILL
 
 sParty_Lola2: @ 0x082DF25C
     @ TRAINER_LOLA_2 (id 60): アユミ ; flags=0, partySize=2
@@ -338,12 +308,12 @@ sParty_Ricky1: @ 0x082DF29C
 
 sParty_Simon: @ 0x082DF2AC
     @ TRAINER_SIMON (id 65): ヤスノブ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 12, SPECIES_AZURILL
-    trainer_mon_no_item_default 0, 12, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 12, SPECIES_AZURILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 12, SPECIES_MARILL
 
 sParty_Charlie: @ 0x082DF2BC
     @ TRAINER_CHARLIE (id 66): マナブ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_MARILL
 
 sParty_Ricky2: @ 0x082DF2C4
     @ TRAINER_RICKY_2 (id 67): ユウタ ; flags=1, partySize=1
@@ -363,19 +333,19 @@ sParty_Ricky5: @ 0x082DF2F4
 
 sParty_Randall: @ 0x082DF304
     @ TRAINER_RANDALL (id 71): トシキ ; flags=3, partySize=1
-    trainer_mon_item_custom 255, 26, SPECIES_SWELLOW, ITEM_NONE, MOVE_QUICK_ATTACK, MOVE_AGILITY, MOVE_WING_ATTACK, MOVE_NONE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 26, SPECIES_SWELLOW, ITEM_NONE, MOVE_QUICK_ATTACK, MOVE_AGILITY, MOVE_WING_ATTACK, MOVE_NONE
 
 sParty_Parker: @ 0x082DF314
     @ TRAINER_PARKER (id 72): ヒデキ ; flags=3, partySize=1
-    trainer_mon_item_custom 255, 26, SPECIES_SPINDA, ITEM_NONE, MOVE_TEETER_DANCE, MOVE_DIZZY_PUNCH, MOVE_FOCUS_PUNCH, MOVE_NONE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 26, SPECIES_SPINDA, ITEM_NONE, MOVE_TEETER_DANCE, MOVE_DIZZY_PUNCH, MOVE_FOCUS_PUNCH, MOVE_NONE
 
 sParty_George: @ 0x082DF324
     @ TRAINER_GEORGE (id 73): カズマ ; flags=3, partySize=1
-    trainer_mon_item_custom 255, 26, SPECIES_SLAKOTH, ITEM_SITRUS_BERRY, MOVE_SLACK_OFF, MOVE_COUNTER, MOVE_SHADOW_BALL, MOVE_NONE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 26, SPECIES_SLAKOTH, ITEM_SITRUS_BERRY, MOVE_SLACK_OFF, MOVE_COUNTER, MOVE_SHADOW_BALL, MOVE_NONE
 
 sParty_Berke: @ 0x082DF334
     @ TRAINER_BERKE (id 74): ナオキ ; flags=3, partySize=1
-    trainer_mon_item_custom 255, 26, SPECIES_VIGOROTH, ITEM_NONE, MOVE_FOCUS_ENERGY, MOVE_SLASH, MOVE_NONE, MOVE_NONE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 26, SPECIES_VIGOROTH, ITEM_NONE, MOVE_FOCUS_ENERGY, MOVE_SLASH, MOVE_NONE, MOVE_NONE
 
 sParty_Braxton: @ 0x082DF344
     @ TRAINER_BRAXTON (id 75): ヨシオ ; flags=1, partySize=5
@@ -462,15 +432,15 @@ sParty_Warren: @ 0x082DF4A4
 
 sParty_Mary: @ 0x082DF4B4
     @ TRAINER_MARY (id 89): アヤカ ; flags=3, partySize=1
-    trainer_mon_item_custom 255, 26, SPECIES_DELCATTY, ITEM_NONE, MOVE_FAINT_ATTACK, MOVE_SHOCK_WAVE, MOVE_NONE, MOVE_NONE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 26, SPECIES_DELCATTY, ITEM_NONE, MOVE_FAINT_ATTACK, MOVE_SHOCK_WAVE, MOVE_NONE, MOVE_NONE
 
 sParty_Alexia: @ 0x082DF4C4
     @ TRAINER_ALEXIA (id 90): ミハル ; flags=3, partySize=1
-    trainer_mon_item_custom 255, 26, SPECIES_WIGGLYTUFF, ITEM_NONE, MOVE_DEFENSE_CURL, MOVE_DOUBLE_EDGE, MOVE_SHADOW_BALL, MOVE_NONE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 26, SPECIES_WIGGLYTUFF, ITEM_NONE, MOVE_DEFENSE_CURL, MOVE_DOUBLE_EDGE, MOVE_SHADOW_BALL, MOVE_NONE
 
 sParty_Jody: @ 0x082DF4D4
     @ TRAINER_JODY (id 91): サオリ ; flags=3, partySize=1
-    trainer_mon_item_custom 255, 26, SPECIES_ZANGOOSE, ITEM_NONE, MOVE_SWORDS_DANCE, MOVE_SLASH, MOVE_NONE, MOVE_NONE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 26, SPECIES_ZANGOOSE, ITEM_NONE, MOVE_SWORDS_DANCE, MOVE_SLASH, MOVE_NONE, MOVE_NONE
 
 sParty_Wendy: @ 0x082DF4E4
     @ TRAINER_WENDY (id 92): セツナ ; flags=1, partySize=3
@@ -544,22 +514,22 @@ sParty_Brooke5: @ 0x082DF5DC
 
 sParty_Patricia: @ 0x082DF5F4
     @ TRAINER_PATRICIA (id 105): コトネ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 41, SPECIES_BANETTE
-    trainer_mon_no_item_default 0, 41, SPECIES_LUNATONE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 41, SPECIES_BANETTE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 41, SPECIES_LUNATONE
 
 sParty_Kindra: @ 0x082DF604
     @ TRAINER_KINDRA (id 106): サチコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 30, SPECIES_DUSKULL
-    trainer_mon_no_item_default 0, 30, SPECIES_SHUPPET
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_DUSKULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_SHUPPET
 
 sParty_Tammy: @ 0x082DF614
     @ TRAINER_TAMMY (id 107): ミコト ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 29, SPECIES_DUSKULL
-    trainer_mon_no_item_default 0, 29, SPECIES_SHUPPET
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_DUSKULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_SHUPPET
 
 sParty_Valerie1: @ 0x082DF624
     @ TRAINER_VALERIE_1 (id 108): ホノカ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 32, SPECIES_SABLEYE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_SABLEYE
 
 sParty_Tasha: @ 0x082DF62C
     @ TRAINER_TASHA (id 109): ホタル ; flags=0, partySize=1
@@ -588,7 +558,7 @@ sParty_Valerie5: @ 0x082DF664
 
 sParty_Cindy1: @ 0x082DF67C
     @ TRAINER_CINDY_1 (id 114): レイカ ; flags=2, partySize=1
-    trainer_mon_item_default 0, 7, SPECIES_ZIGZAGOON, ITEM_NUGGET
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 7, SPECIES_ZIGZAGOON, ITEM_NUGGET
 
 sParty_Daphne: @ 0x082DF684
     @ TRAINER_DAPHNE (id 115): エイカ ; flags=3, partySize=2
@@ -597,13 +567,13 @@ sParty_Daphne: @ 0x082DF684
 
 sParty_GruntSpaceCenter2: @ 0x082DF6A4
     @ TRAINER_GRUNT_SPACE_CENTER_2 (id 116): したっぱ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 26, SPECIES_MIGHTYENA
-    trainer_mon_no_item_default 0, 28, SPECIES_MIGHTYENA
-    trainer_mon_no_item_default 0, 30, SPECIES_NUMEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_MIGHTYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 28, SPECIES_MIGHTYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_NUMEL
 
 sParty_Cindy2: @ 0x082DF6BC
     @ TRAINER_CINDY_2 (id 117): レイカ ; flags=3, partySize=1
-    trainer_mon_item_custom 0, 11, SPECIES_ZIGZAGOON, ITEM_NUGGET, MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_NONE, MOVE_NONE
+    trainer_mon_item_custom TRAINER_MON_IV_MIN, 11, SPECIES_ZIGZAGOON, ITEM_NUGGET, MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_NONE, MOVE_NONE
 
 sParty_Brianna: @ 0x082DF6CC
     @ TRAINER_BRIANNA (id 118): シオリ ; flags=2, partySize=1
@@ -631,20 +601,20 @@ sParty_Cindy6: @ 0x082DF6F4
 
 sParty_Melissa: @ 0x082DF704
     @ TRAINER_MELISSA (id 124): メグミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 21, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 21, SPECIES_MARILL
 
 sParty_Sheila: @ 0x082DF70C
     @ TRAINER_SHEILA (id 125): クニミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 21, SPECIES_SHROOMISH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 21, SPECIES_SHROOMISH
 
 sParty_Shirley: @ 0x082DF714
     @ TRAINER_SHIRLEY (id 126): アサミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 21, SPECIES_NUMEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 21, SPECIES_NUMEL
 
 sParty_Jessica1: @ 0x082DF71C
     @ TRAINER_JESSICA_1 (id 127): ヨリコ ; flags=1, partySize=2
-    trainer_mon_no_item_custom 0, 29, SPECIES_KECLEON, MOVE_BIND, MOVE_LICK, MOVE_FURY_SWIPES, MOVE_FAINT_ATTACK
-    trainer_mon_no_item_custom 0, 29, SPECIES_SEVIPER, MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 29, SPECIES_KECLEON, MOVE_BIND, MOVE_LICK, MOVE_FURY_SWIPES, MOVE_FAINT_ATTACK
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 29, SPECIES_SEVIPER, MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH
 
 sParty_Connie: @ 0x082DF73C
     @ TRAINER_CONNIE (id 128): マユコ ; flags=0, partySize=1
@@ -687,49 +657,49 @@ sParty_Jessica5: @ 0x082DF7EC
 
 sParty_Winston1: @ 0x082DF80C
     @ TRAINER_WINSTON_1 (id 136): ミツグ ; flags=2, partySize=1
-    trainer_mon_item_default 0, 7, SPECIES_ZIGZAGOON, ITEM_NUGGET
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 7, SPECIES_ZIGZAGOON, ITEM_NUGGET
 
 sParty_Mollie: @ 0x082DF814
     @ TRAINER_MOLLIE (id 137): ナエ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_WHISCASH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_WHISCASH
     trainer_mon_no_item_default 200, 33, SPECIES_MEDITITE
 
 sParty_Garret: @ 0x082DF824
     @ TRAINER_GARRET (id 138): ショウイチ ; flags=2, partySize=1
-    trainer_mon_item_default 0, 45, SPECIES_AZUMARILL, ITEM_NUGGET
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 45, SPECIES_AZUMARILL, ITEM_NUGGET
 
 sParty_Winston2: @ 0x082DF82C
     @ TRAINER_WINSTON_2 (id 139): ミツグ ; flags=2, partySize=1
-    trainer_mon_item_default 0, 27, SPECIES_LINOONE, ITEM_NUGGET
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 27, SPECIES_LINOONE, ITEM_NUGGET
 
 sParty_Winston3: @ 0x082DF834
     @ TRAINER_WINSTON_3 (id 140): ミツグ ; flags=2, partySize=1
-    trainer_mon_item_default 0, 30, SPECIES_LINOONE, ITEM_NUGGET
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 30, SPECIES_LINOONE, ITEM_NUGGET
 
 sParty_Winston4: @ 0x082DF83C
     @ TRAINER_WINSTON_4 (id 141): ミツグ ; flags=2, partySize=1
-    trainer_mon_item_default 0, 33, SPECIES_LINOONE, ITEM_NUGGET
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 33, SPECIES_LINOONE, ITEM_NUGGET
 
 sParty_Winston5: @ 0x082DF844
     @ TRAINER_WINSTON_5 (id 142): ミツグ ; flags=3, partySize=1
-    trainer_mon_item_custom 0, 36, SPECIES_LINOONE, ITEM_NUGGET, MOVE_FURY_SWIPES, MOVE_MUD_SPORT, MOVE_ODOR_SLEUTH, MOVE_SAND_ATTACK
+    trainer_mon_item_custom TRAINER_MON_IV_MIN, 36, SPECIES_LINOONE, ITEM_NUGGET, MOVE_FURY_SWIPES, MOVE_MUD_SPORT, MOVE_ODOR_SLEUTH, MOVE_SAND_ATTACK
 
 sParty_Steve1: @ 0x082DF854
     @ TRAINER_STEVE_1 (id 143): トシオ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 19, SPECIES_ARON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 19, SPECIES_ARON
 
 sParty_Thalia1: @ 0x082DF85C
     @ TRAINER_THALIA_1 (id 144): ショウ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 25, SPECIES_WAILMER
-    trainer_mon_no_item_default 0, 25, SPECIES_HORSEA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_HORSEA
 
 sParty_Mark: @ 0x082DF86C
     @ TRAINER_MARK (id 145): モトフミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 31, SPECIES_RHYHORN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_RHYHORN
 
 sParty_GruntMtChimney1: @ 0x082DF874
     @ TRAINER_GRUNT_MT_CHIMNEY_1 (id 146): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 20, SPECIES_NUMEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 20, SPECIES_NUMEL
 
 sParty_Steve2: @ 0x082DF87C
     @ TRAINER_STEVE_2 (id 147): トシオ ; flags=0, partySize=1
@@ -752,11 +722,11 @@ sParty_Steve5: @ 0x082DF8A4
 
 sParty_Luis: @ 0x082DF8B4
     @ TRAINER_LUIS (id 151): ヨウヘイ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_CARVANHA
 
 sParty_Dominik: @ 0x082DF8BC
     @ TRAINER_DOMINIK (id 152): ヒロミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_TENTACOOL
 
 sParty_Douglas: @ 0x082DF8C4
     @ TRAINER_DOUGLAS (id 153): タツオ ; flags=0, partySize=2
@@ -771,92 +741,92 @@ sParty_Darrin: @ 0x082DF8D4
 
 sParty_Tony1: @ 0x082DF8EC
     @ TRAINER_TONY_1 (id 155): エイイチ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_CARVANHA
 
 sParty_Jerome: @ 0x082DF8F4
     @ TRAINER_JEROME (id 156): モリオ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_TENTACRUEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_TENTACRUEL
 
 sParty_Matthew: @ 0x082DF8FC
     @ TRAINER_MATTHEW (id 157): クニヒコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_CARVANHA
 
 sParty_David: @ 0x082DF904
     @ TRAINER_DAVID (id 158): ケンイチ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 25, SPECIES_TENTACOOL
-    trainer_mon_no_item_default 0, 25, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_CARVANHA
 
 sParty_Spencer: @ 0x082DF914
     @ TRAINER_SPENCER (id 159): トシヒロ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_TENTACOOL
-    trainer_mon_no_item_default 0, 33, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_WINGULL
 
 sParty_Roland: @ 0x082DF924
     @ TRAINER_ROLAND (id 160): マサトシ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_CARVANHA
 
 sParty_Nolen: @ 0x082DF92C
     @ TRAINER_NOLEN (id 161): シノブ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_TENTACRUEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_TENTACRUEL
 
 sParty_Stan: @ 0x082DF934
     @ TRAINER_STAN (id 162): ケイシ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_HORSEA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_HORSEA
 
 sParty_Barry: @ 0x082DF93C
     @ TRAINER_BARRY (id 163): ガクジ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_GYARADOS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_GYARADOS
 
 sParty_Dean: @ 0x082DF944
     @ TRAINER_DEAN (id 164): レツジ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 31, SPECIES_CARVANHA
-    trainer_mon_no_item_default 0, 31, SPECIES_WINGULL
-    trainer_mon_no_item_default 0, 31, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_CARVANHA
 
 sParty_Rodney: @ 0x082DF95C
     @ TRAINER_RODNEY (id 165): マサヒロ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_GYARADOS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_GYARADOS
 
 sParty_Richard: @ 0x082DF964
     @ TRAINER_RICHARD (id 166): ハルキ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_PELIPPER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_PELIPPER
 
 sParty_Herman: @ 0x082DF96C
     @ TRAINER_HERMAN (id 167): ダイスケ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_WINGULL
-    trainer_mon_no_item_default 0, 33, SPECIES_TENTACRUEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_TENTACRUEL
 
 sParty_Santiago: @ 0x082DF97C
     @ TRAINER_SANTIAGO (id 168): シンジ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_TENTACRUEL
-    trainer_mon_no_item_default 0, 33, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_TENTACRUEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_WAILMER
 
 sParty_Gilbert: @ 0x082DF98C
     @ TRAINER_GILBERT (id 169): ゴウ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_SHARPEDO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_SHARPEDO
 
 sParty_Franklin: @ 0x082DF994
     @ TRAINER_FRANKLIN (id 170): シゲオ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_SEALEO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_SEALEO
 
 sParty_Kevin: @ 0x082DF99C
     @ TRAINER_KEVIN (id 171): ツトム ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_SPHEAL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_SPHEAL
 
 sParty_Jack: @ 0x082DF9A4
     @ TRAINER_JACK (id 172): ヒデノリ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_GYARADOS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_GYARADOS
 
 sParty_Dudley: @ 0x082DF9AC
     @ TRAINER_DUDLEY (id 173): トクオ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 33, SPECIES_TENTACOOL
-    trainer_mon_no_item_default 0, 33, SPECIES_WINGULL
-    trainer_mon_no_item_default 0, 33, SPECIES_TENTACRUEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_TENTACRUEL
 
 sParty_Chad: @ 0x082DF9C4
     @ TRAINER_CHAD (id 174): カツユキ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_TENTACOOL
-    trainer_mon_no_item_default 0, 33, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_WAILMER
 
 sParty_Tony2: @ 0x082DF9D4
     @ TRAINER_TONY_2 (id 175): エイイチ ; flags=0, partySize=1
@@ -940,12 +910,12 @@ sParty_Kirk: @ 0x082DFAAC
 
 sParty_GruntAquaHideout7: @ 0x082DFACC
     @ TRAINER_GRUNT_AQUA_HIDEOUT_7 (id 192): したっぱ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 31, SPECIES_POOCHYENA
-    trainer_mon_no_item_default 0, 31, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_ZUBAT
 
 sParty_GruntAquaHideout8: @ 0x082DFADC
     @ TRAINER_GRUNT_AQUA_HIDEOUT_8 (id 193): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 32, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_CARVANHA
 
 sParty_Shawn: @ 0x082DFAE4
     @ TRAINER_SHAWN (id 194): マイク ; flags=0, partySize=2
@@ -954,13 +924,13 @@ sParty_Shawn: @ 0x082DFAE4
 
 sParty_Fernando1: @ 0x082DFAF4
     @ TRAINER_FERNANDO_1 (id 195): ジョー ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 30, SPECIES_ELECTRIKE
-    trainer_mon_no_item_default 0, 30, SPECIES_LOUDRED
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_ELECTRIKE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_LOUDRED
 
 sParty_Dalton1: @ 0x082DFB04
     @ TRAINER_DALTON_1 (id 196): テリー ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 15, SPECIES_MAGNEMITE
-    trainer_mon_no_item_default 0, 15, SPECIES_WHISMUR
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 15, SPECIES_MAGNEMITE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 15, SPECIES_WHISMUR
 
 sParty_Dalton2: @ 0x082DFB14
     @ TRAINER_DALTON_2 (id 197): テリー ; flags=0, partySize=3
@@ -1009,8 +979,8 @@ sParty_Keegan: @ 0x082DFB9C
 
 sParty_Bernie1: @ 0x082DFBA4
     @ TRAINER_BERNIE_1 (id 206): ノブヒコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 18, SPECIES_SLUGMA
-    trainer_mon_no_item_default 0, 18, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_SLUGMA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_WINGULL
 
 sParty_Bernie2: @ 0x082DFBB4
     @ TRAINER_BERNIE_2 (id 207): ノブヒコ ; flags=0, partySize=2
@@ -1034,39 +1004,39 @@ sParty_Bernie5: @ 0x082DFBE4
 
 sParty_Drew: @ 0x082DFBF4
     @ TRAINER_DREW (id 211): ノリヒロ ; flags=1, partySize=1
-    trainer_mon_no_item_custom 0, 23, SPECIES_SANDSHREW, MOVE_DIG, MOVE_SAND_ATTACK, MOVE_POISON_STING, MOVE_SLASH
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 23, SPECIES_SANDSHREW, MOVE_DIG, MOVE_SAND_ATTACK, MOVE_POISON_STING, MOVE_SLASH
 
 sParty_Beau: @ 0x082DFC04
     @ TRAINER_BEAU (id 212): カズユキ ; flags=1, partySize=3
-    trainer_mon_no_item_custom 0, 21, SPECIES_BALTOY, MOVE_RAPID_SPIN, MOVE_MUD_SLAP, MOVE_PSYBEAM, MOVE_ROCK_TOMB
-    trainer_mon_no_item_custom 0, 21, SPECIES_SANDSHREW, MOVE_POISON_STING, MOVE_SAND_ATTACK, MOVE_SCRATCH, MOVE_DIG
-    trainer_mon_no_item_custom 0, 21, SPECIES_BALTOY, MOVE_RAPID_SPIN, MOVE_MUD_SLAP, MOVE_PSYBEAM, MOVE_ROCK_TOMB
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 21, SPECIES_BALTOY, MOVE_RAPID_SPIN, MOVE_MUD_SLAP, MOVE_PSYBEAM, MOVE_ROCK_TOMB
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 21, SPECIES_SANDSHREW, MOVE_POISON_STING, MOVE_SAND_ATTACK, MOVE_SCRATCH, MOVE_DIG
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 21, SPECIES_BALTOY, MOVE_RAPID_SPIN, MOVE_MUD_SLAP, MOVE_PSYBEAM, MOVE_ROCK_TOMB
 
 sParty_Larry: @ 0x082DFC34
     @ TRAINER_LARRY (id 213): キヨフミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 18, SPECIES_NUZLEAF
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_NUZLEAF
 
 sParty_Shane: @ 0x082DFC3C
     @ TRAINER_SHANE (id 214): トモヒロ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 18, SPECIES_SANDSHREW
-    trainer_mon_no_item_default 0, 18, SPECIES_NUZLEAF
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_SANDSHREW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_NUZLEAF
 
 sParty_Justin: @ 0x082DFC4C
     @ TRAINER_JUSTIN (id 215): マサミチ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 24, SPECIES_KECLEON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 24, SPECIES_KECLEON
 
 sParty_Ethan1: @ 0x082DFC54
     @ TRAINER_ETHAN_1 (id 216): ヨシハル ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 20, SPECIES_ZIGZAGOON
-    trainer_mon_no_item_default 0, 20, SPECIES_TAILLOW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 20, SPECIES_ZIGZAGOON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 20, SPECIES_TAILLOW
 
 sParty_Autumn: @ 0x082DFC64
     @ TRAINER_AUTUMN (id 217): ナツコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 21, SPECIES_SHROOMISH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 21, SPECIES_SHROOMISH
 
 sParty_Travis: @ 0x082DFC6C
     @ TRAINER_TRAVIS (id 218): ヨシヤ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 18, SPECIES_SANDSHREW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_SANDSHREW
 
 sParty_Ethan2: @ 0x082DFC74
     @ TRAINER_ETHAN_2 (id 219): ヨシハル ; flags=0, partySize=2
@@ -1108,9 +1078,9 @@ sParty_Taylor: @ 0x082DFCE4
 
 sParty_Jeffrey1: @ 0x082DFCFC
     @ TRAINER_JEFFREY_1 (id 226): ミキオ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 27, SPECIES_SURSKIT
-    trainer_mon_no_item_default 0, 27, SPECIES_SURSKIT
-    trainer_mon_no_item_default 0, 27, SPECIES_SURSKIT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 27, SPECIES_SURSKIT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 27, SPECIES_SURSKIT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 27, SPECIES_SURSKIT
 
 sParty_Derek: @ 0x082DFD14
     @ TRAINER_DEREK (id 227): ヨシアキ ; flags=0, partySize=2
@@ -1146,7 +1116,7 @@ sParty_Jeffrey5: @ 0x082DFD74
 
 sParty_Edward: @ 0x082DFD9C
     @ TRAINER_EDWARD (id 232): アキト ; flags=1, partySize=1
-    trainer_mon_no_item_custom 0, 15, SPECIES_ABRA, MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 15, SPECIES_ABRA, MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE
 
 sParty_Preston: @ 0x082DFDAC
     @ TRAINER_PRESTON (id 233): ヒロム ; flags=0, partySize=1
@@ -1162,18 +1132,18 @@ sParty_Blake: @ 0x082DFDBC
 
 sParty_William: @ 0x082DFDC4
     @ TRAINER_WILLIAM (id 236): テツヤ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 26, SPECIES_RALTS
-    trainer_mon_no_item_default 0, 26, SPECIES_RALTS
-    trainer_mon_no_item_default 0, 26, SPECIES_KIRLIA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_RALTS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_RALTS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_KIRLIA
 
 sParty_Joshua: @ 0x082DFDDC
     @ TRAINER_JOSHUA (id 237): シュウイチ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 41, SPECIES_KADABRA
-    trainer_mon_no_item_default 0, 41, SPECIES_SOLROCK
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 41, SPECIES_KADABRA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 41, SPECIES_SOLROCK
 
 sParty_Cameron1: @ 0x082DFDEC
     @ TRAINER_CAMERON_1 (id 238): カオル ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 31, SPECIES_SOLROCK
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_SOLROCK
 
 sParty_Cameron2: @ 0x082DFDF4
     @ TRAINER_CAMERON_2 (id 239): カオル ; flags=0, partySize=2
@@ -1197,7 +1167,7 @@ sParty_Cameron5: @ 0x082DFE24
 
 sParty_Jaclyn: @ 0x082DFE34
     @ TRAINER_JACLYN (id 243): マリコ ; flags=1, partySize=1
-    trainer_mon_no_item_custom 0, 16, SPECIES_ABRA, MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 16, SPECIES_ABRA, MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE
 
 sParty_Hannah: @ 0x082DFE44
     @ TRAINER_HANNAH (id 244): アスカ ; flags=0, partySize=1
@@ -1213,19 +1183,19 @@ sParty_Maura: @ 0x082DFE54
 
 sParty_Kayla: @ 0x082DFE5C
     @ TRAINER_KAYLA (id 247): オリエ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 26, SPECIES_WOBBUFFET
-    trainer_mon_no_item_default 0, 26, SPECIES_NATU
-    trainer_mon_no_item_default 0, 26, SPECIES_KADABRA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_WOBBUFFET
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_NATU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_KADABRA
 
 sParty_Alexis: @ 0x082DFE74
     @ TRAINER_ALEXIS (id 248): ナナコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 41, SPECIES_KIRLIA
-    trainer_mon_no_item_default 0, 41, SPECIES_XATU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 41, SPECIES_KIRLIA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 41, SPECIES_XATU
 
 sParty_Jacki1: @ 0x082DFE84
     @ TRAINER_JACKI_1 (id 249): シホミ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 30, SPECIES_KADABRA
-    trainer_mon_no_item_default 0, 30, SPECIES_LUNATONE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_KADABRA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_LUNATONE
 
 sParty_Jacki2: @ 0x082DFE94
     @ TRAINER_JACKI_2 (id 250): シホミ ; flags=0, partySize=2
@@ -1249,16 +1219,16 @@ sParty_Jacki5: @ 0x082DFEC4
 
 sParty_Walter1: @ 0x082DFED4
     @ TRAINER_WALTER_1 (id 254): ロバート ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_MANECTRIC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_MANECTRIC
 
 sParty_Micah: @ 0x082DFEDC
     @ TRAINER_MICAH (id 255): オルソン ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 44, SPECIES_MANECTRIC
-    trainer_mon_no_item_default 0, 44, SPECIES_MANECTRIC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 44, SPECIES_MANECTRIC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 44, SPECIES_MANECTRIC
 
 sParty_Thomas: @ 0x082DFEEC
     @ TRAINER_THOMAS (id 256): スコット ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 45, SPECIES_ZANGOOSE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 45, SPECIES_ZANGOOSE
 
 sParty_Walter2: @ 0x082DFEF4
     @ TRAINER_WALTER_2 (id 257): ロバート ; flags=0, partySize=1
@@ -1286,7 +1256,7 @@ sParty_Sidney: @ 0x082DFF6C
     trainer_mon_item_custom 250, 48, SPECIES_SHIFTRY, ITEM_NONE, MOVE_TORMENT, MOVE_DOUBLE_TEAM, MOVE_SWAGGER, MOVE_EXTRASENSORY
     trainer_mon_item_custom 250, 46, SPECIES_CACTURNE, ITEM_NONE, MOVE_LEECH_SEED, MOVE_FAINT_ATTACK, MOVE_NEEDLE_ARM, MOVE_COTTON_SPORE
     trainer_mon_item_custom 250, 48, SPECIES_CRAWDAUNT, ITEM_NONE, MOVE_SURF, MOVE_SWORDS_DANCE, MOVE_STRENGTH, MOVE_FACADE
-    trainer_mon_item_custom 255, 49, SPECIES_ABSOL, ITEM_SITRUS_BERRY, MOVE_AERIAL_ACE, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE, MOVE_SLASH
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 49, SPECIES_ABSOL, ITEM_SITRUS_BERRY, MOVE_AERIAL_ACE, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE, MOVE_SLASH
 
 sParty_Phoebe: @ 0x082DFFBC
     @ TRAINER_PHOEBE (id 262): フヨウ ; flags=3, partySize=5
@@ -1294,7 +1264,7 @@ sParty_Phoebe: @ 0x082DFFBC
     trainer_mon_item_custom 250, 49, SPECIES_BANETTE, ITEM_NONE, MOVE_SHADOW_BALL, MOVE_GRUDGE, MOVE_WILL_O_WISP, MOVE_FAINT_ATTACK
     trainer_mon_item_custom 250, 50, SPECIES_SABLEYE, ITEM_NONE, MOVE_SHADOW_BALL, MOVE_DOUBLE_TEAM, MOVE_NIGHT_SHADE, MOVE_FAINT_ATTACK
     trainer_mon_item_custom 250, 49, SPECIES_BANETTE, ITEM_NONE, MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_FACADE
-    trainer_mon_item_custom 255, 51, SPECIES_DUSCLOPS, ITEM_SITRUS_BERRY, MOVE_SHADOW_BALL, MOVE_ICE_BEAM, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 51, SPECIES_DUSCLOPS, ITEM_SITRUS_BERRY, MOVE_SHADOW_BALL, MOVE_ICE_BEAM, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE
 
 sParty_Glacia: @ 0x082E000C
     @ TRAINER_GLACIA (id 263): プリム ; flags=3, partySize=5
@@ -1302,7 +1272,7 @@ sParty_Glacia: @ 0x082E000C
     trainer_mon_item_custom 250, 50, SPECIES_GLALIE, ITEM_NONE, MOVE_LIGHT_SCREEN, MOVE_CRUNCH, MOVE_ICY_WIND, MOVE_ICE_BEAM
     trainer_mon_item_custom 250, 52, SPECIES_SEALEO, ITEM_NONE, MOVE_ATTRACT, MOVE_DOUBLE_EDGE, MOVE_HAIL, MOVE_BLIZZARD
     trainer_mon_item_custom 250, 52, SPECIES_GLALIE, ITEM_NONE, MOVE_SHADOW_BALL, MOVE_EXPLOSION, MOVE_HAIL, MOVE_ICE_BEAM
-    trainer_mon_item_custom 255, 53, SPECIES_WALREIN, ITEM_SITRUS_BERRY, MOVE_SURF, MOVE_BODY_SLAM, MOVE_ICE_BEAM, MOVE_SHEER_COLD
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 53, SPECIES_WALREIN, ITEM_SITRUS_BERRY, MOVE_SURF, MOVE_BODY_SLAM, MOVE_ICE_BEAM, MOVE_SHEER_COLD
 
 sParty_Drake: @ 0x082E005C
     @ TRAINER_DRAKE (id 264): ゲンジ ; flags=3, partySize=5
@@ -1310,7 +1280,7 @@ sParty_Drake: @ 0x082E005C
     trainer_mon_item_custom 250, 54, SPECIES_ALTARIA, ITEM_NONE, MOVE_DOUBLE_EDGE, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE, MOVE_AERIAL_ACE
     trainer_mon_item_custom 250, 53, SPECIES_KINGDRA, ITEM_NONE, MOVE_SMOKESCREEN, MOVE_DRAGON_DANCE, MOVE_SURF, MOVE_BODY_SLAM
     trainer_mon_item_custom 250, 53, SPECIES_FLYGON, ITEM_NONE, MOVE_FLAMETHROWER, MOVE_CRUNCH, MOVE_DRAGON_BREATH, MOVE_EARTHQUAKE
-    trainer_mon_item_custom 255, 55, SPECIES_SALAMENCE, ITEM_SITRUS_BERRY, MOVE_FLAMETHROWER, MOVE_DRAGON_CLAW, MOVE_ROCK_SLIDE, MOVE_CRUNCH
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 55, SPECIES_SALAMENCE, ITEM_SITRUS_BERRY, MOVE_FLAMETHROWER, MOVE_DRAGON_CLAW, MOVE_ROCK_SLIDE, MOVE_CRUNCH
 
 sParty_Roxanne1: @ 0x082E00AC
     @ TRAINER_ROXANNE_1 (id 265): ツツジ ; flags=3, partySize=3
@@ -1351,7 +1321,7 @@ sParty_Winona1: @ 0x082E01CC
     trainer_mon_item_custom 210, 29, SPECIES_TROPIUS, ITEM_NONE, MOVE_SUNNY_DAY, MOVE_AERIAL_ACE, MOVE_SOLAR_BEAM, MOVE_SYNTHESIS
     trainer_mon_item_custom 210, 30, SPECIES_PELIPPER, ITEM_NONE, MOVE_WATER_GUN, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_AERIAL_ACE
     trainer_mon_item_custom 220, 31, SPECIES_SKARMORY, ITEM_NONE, MOVE_SAND_ATTACK, MOVE_FURY_ATTACK, MOVE_STEEL_WING, MOVE_AERIAL_ACE
-    trainer_mon_item_custom 255, 33, SPECIES_ALTARIA, ITEM_ORAN_BERRY, MOVE_EARTHQUAKE, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE, MOVE_AERIAL_ACE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 33, SPECIES_ALTARIA, ITEM_ORAN_BERRY, MOVE_EARTHQUAKE, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE, MOVE_AERIAL_ACE
 
 sParty_TateAndLiza1: @ 0x082E021C
     @ TRAINER_TATE_AND_LIZA_1 (id 271): フウとラン ; flags=3, partySize=4
@@ -1434,13 +1404,13 @@ sParty_Karen5: @ 0x082E0364
 
 sParty_KateAndJoy: @ 0x082E0374
     @ TRAINER_KATE_AND_JOY (id 286): マナとユイ ; flags=1, partySize=2
-    trainer_mon_no_item_custom 0, 30, SPECIES_SPINDA, MOVE_HYPNOSIS, MOVE_PSYBEAM, MOVE_DIZZY_PUNCH, MOVE_TEETER_DANCE
-    trainer_mon_no_item_custom 0, 32, SPECIES_SLAKING, MOVE_FOCUS_PUNCH, MOVE_YAWN, MOVE_SLACK_OFF, MOVE_FAINT_ATTACK
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 30, SPECIES_SPINDA, MOVE_HYPNOSIS, MOVE_PSYBEAM, MOVE_DIZZY_PUNCH, MOVE_TEETER_DANCE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 32, SPECIES_SLAKING, MOVE_FOCUS_PUNCH, MOVE_YAWN, MOVE_SLACK_OFF, MOVE_FAINT_ATTACK
 
 sParty_AnnaAndMeg1: @ 0x082E0394
     @ TRAINER_ANNA_AND_MEG_1 (id 287): ミホとリコ ; flags=1, partySize=2
-    trainer_mon_no_item_custom 0, 15, SPECIES_ZIGZAGOON, MOVE_GROWL, MOVE_TAIL_WHIP, MOVE_HEADBUTT, MOVE_ODOR_SLEUTH
-    trainer_mon_no_item_custom 0, 17, SPECIES_MAKUHITA, MOVE_TACKLE, MOVE_FOCUS_ENERGY, MOVE_ARM_THRUST, MOVE_NONE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 15, SPECIES_ZIGZAGOON, MOVE_GROWL, MOVE_TAIL_WHIP, MOVE_HEADBUTT, MOVE_ODOR_SLEUTH
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 17, SPECIES_MAKUHITA, MOVE_TACKLE, MOVE_FOCUS_ENERGY, MOVE_ARM_THRUST, MOVE_NONE
 
 sParty_AnnaAndMeg2: @ 0x082E03B4
     @ TRAINER_ANNA_AND_MEG_2 (id 288): ミホとリコ ; flags=1, partySize=2
@@ -1469,32 +1439,32 @@ sParty_Victor: @ 0x082E0434
 
 sParty_Miguel1: @ 0x082E0444
     @ TRAINER_MIGUEL_1 (id 293): ミツハル ; flags=2, partySize=1
-    trainer_mon_item_default 0, 15, SPECIES_SKITTY, ITEM_ORAN_BERRY
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 15, SPECIES_SKITTY, ITEM_ORAN_BERRY
 
 sParty_Colton: @ 0x082E044C
     @ TRAINER_COLTON (id 294): ヒサシ ; flags=3, partySize=6
-    trainer_mon_item_custom 0, 22, SPECIES_SKITTY, ITEM_ORAN_BERRY, MOVE_ASSIST, MOVE_CHARM, MOVE_FAINT_ATTACK, MOVE_HEAL_BELL
-    trainer_mon_item_custom 0, 36, SPECIES_SKITTY, ITEM_ORAN_BERRY, MOVE_ASSIST, MOVE_CHARM, MOVE_FAINT_ATTACK, MOVE_HEAL_BELL
-    trainer_mon_item_custom 0, 40, SPECIES_SKITTY, ITEM_ORAN_BERRY, MOVE_ASSIST, MOVE_CHARM, MOVE_FAINT_ATTACK, MOVE_HEAL_BELL
-    trainer_mon_item_custom 0, 12, SPECIES_SKITTY, ITEM_ORAN_BERRY, MOVE_ASSIST, MOVE_CHARM, MOVE_FAINT_ATTACK, MOVE_HEAL_BELL
-    trainer_mon_item_custom 0, 30, SPECIES_SKITTY, ITEM_ORAN_BERRY, MOVE_ASSIST, MOVE_CHARM, MOVE_FAINT_ATTACK, MOVE_HEAL_BELL
-    trainer_mon_item_custom 0, 42, SPECIES_DELCATTY, ITEM_ORAN_BERRY, MOVE_ASSIST, MOVE_CHARM, MOVE_FAINT_ATTACK, MOVE_HEAL_BELL
+    trainer_mon_item_custom TRAINER_MON_IV_MIN, 22, SPECIES_SKITTY, ITEM_ORAN_BERRY, MOVE_ASSIST, MOVE_CHARM, MOVE_FAINT_ATTACK, MOVE_HEAL_BELL
+    trainer_mon_item_custom TRAINER_MON_IV_MIN, 36, SPECIES_SKITTY, ITEM_ORAN_BERRY, MOVE_ASSIST, MOVE_CHARM, MOVE_FAINT_ATTACK, MOVE_HEAL_BELL
+    trainer_mon_item_custom TRAINER_MON_IV_MIN, 40, SPECIES_SKITTY, ITEM_ORAN_BERRY, MOVE_ASSIST, MOVE_CHARM, MOVE_FAINT_ATTACK, MOVE_HEAL_BELL
+    trainer_mon_item_custom TRAINER_MON_IV_MIN, 12, SPECIES_SKITTY, ITEM_ORAN_BERRY, MOVE_ASSIST, MOVE_CHARM, MOVE_FAINT_ATTACK, MOVE_HEAL_BELL
+    trainer_mon_item_custom TRAINER_MON_IV_MIN, 30, SPECIES_SKITTY, ITEM_ORAN_BERRY, MOVE_ASSIST, MOVE_CHARM, MOVE_FAINT_ATTACK, MOVE_HEAL_BELL
+    trainer_mon_item_custom TRAINER_MON_IV_MIN, 42, SPECIES_DELCATTY, ITEM_ORAN_BERRY, MOVE_ASSIST, MOVE_CHARM, MOVE_FAINT_ATTACK, MOVE_HEAL_BELL
 
 sParty_Miguel2: @ 0x082E04AC
     @ TRAINER_MIGUEL_2 (id 295): ミツハル ; flags=2, partySize=1
-    trainer_mon_item_default 0, 29, SPECIES_SKITTY, ITEM_ORAN_BERRY
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 29, SPECIES_SKITTY, ITEM_ORAN_BERRY
 
 sParty_Miguel3: @ 0x082E04B4
     @ TRAINER_MIGUEL_3 (id 296): ミツハル ; flags=2, partySize=1
-    trainer_mon_item_default 0, 32, SPECIES_SKITTY, ITEM_ORAN_BERRY
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 32, SPECIES_SKITTY, ITEM_ORAN_BERRY
 
 sParty_Miguel4: @ 0x082E04BC
     @ TRAINER_MIGUEL_4 (id 297): ミツハル ; flags=2, partySize=1
-    trainer_mon_item_default 0, 35, SPECIES_DELCATTY, ITEM_ORAN_BERRY
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 35, SPECIES_DELCATTY, ITEM_ORAN_BERRY
 
 sParty_Miguel5: @ 0x082E04C4
     @ TRAINER_MIGUEL_5 (id 298): ミツハル ; flags=2, partySize=1
-    trainer_mon_item_default 0, 38, SPECIES_DELCATTY, ITEM_SITRUS_BERRY
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 38, SPECIES_DELCATTY, ITEM_SITRUS_BERRY
 
 sParty_Victoria: @ 0x082E04CC
     @ TRAINER_VICTORIA (id 299): ヤスエ ; flags=2, partySize=1
@@ -1502,7 +1472,7 @@ sParty_Victoria: @ 0x082E04CC
 
 sParty_Vanessa: @ 0x082E04D4
     @ TRAINER_VANESSA (id 300): ケサコ ; flags=2, partySize=1
-    trainer_mon_item_default 0, 30, SPECIES_PIKACHU, ITEM_ORAN_BERRY
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 30, SPECIES_PIKACHU, ITEM_ORAN_BERRY
 
 sParty_Bethany: @ 0x082E04DC
     @ TRAINER_BETHANY (id 301): テイコ ; flags=2, partySize=3
@@ -1512,8 +1482,8 @@ sParty_Bethany: @ 0x082E04DC
 
 sParty_Isabel1: @ 0x082E04F4
     @ TRAINER_ISABEL_1 (id 302): マサコ ; flags=2, partySize=2
-    trainer_mon_item_default 0, 14, SPECIES_PLUSLE, ITEM_ORAN_BERRY
-    trainer_mon_item_default 0, 14, SPECIES_MINUN, ITEM_ORAN_BERRY
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 14, SPECIES_PLUSLE, ITEM_ORAN_BERRY
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 14, SPECIES_MINUN, ITEM_ORAN_BERRY
 
 sParty_Isabel2: @ 0x082E0504
     @ TRAINER_ISABEL_2 (id 303): マサコ ; flags=2, partySize=2
@@ -1586,12 +1556,12 @@ sParty_Shelby5: @ 0x082E05DC
 
 sParty_Calvin1: @ 0x082E05EC
     @ TRAINER_CALVIN_1 (id 318): カズキ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_POOCHYENA
 
 sParty_Billy: @ 0x082E05F4
     @ TRAINER_BILLY (id 319): ケイタ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 5, SPECIES_ZIGZAGOON
-    trainer_mon_no_item_default 0, 7, SPECIES_SEEDOT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_ZIGZAGOON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 7, SPECIES_SEEDOT
 
 sParty_Josh: @ 0x082E0604
     @ TRAINER_JOSH (id 320): タロウ ; flags=1, partySize=1
@@ -1604,7 +1574,7 @@ sParty_Tommy: @ 0x082E0614
 
 sParty_Joey: @ 0x082E0624
     @ TRAINER_JOEY (id 322): タケオ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 9, SPECIES_MACHOP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 9, SPECIES_MACHOP
 
 sParty_Ben: @ 0x082E062C
     @ TRAINER_BEN (id 323): ヒロト ; flags=1, partySize=2
@@ -1623,11 +1593,11 @@ sParty_Katelynn: @ 0x082E066C
 
 sParty_Jaylen: @ 0x082E068C
     @ TRAINER_JAYLEN (id 326): マサユキ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 19, SPECIES_TRAPINCH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 19, SPECIES_TRAPINCH
 
 sParty_Dillon: @ 0x082E0694
     @ TRAINER_DILLON (id 327): ヨシト ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 19, SPECIES_ARON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 19, SPECIES_ARON
 
 sParty_Calvin2: @ 0x082E069C
     @ TRAINER_CALVIN_2 (id 328): カズキ ; flags=0, partySize=1
@@ -1652,51 +1622,51 @@ sParty_Calvin5: @ 0x082E06CC
 
 sParty_Eddie: @ 0x082E06E4
     @ TRAINER_EDDIE (id 332): ヤスユキ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 14, SPECIES_ZIGZAGOON
-    trainer_mon_no_item_default 0, 16, SPECIES_ZIGZAGOON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_ZIGZAGOON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 16, SPECIES_ZIGZAGOON
 
 sParty_Allen: @ 0x082E06F4
     @ TRAINER_ALLEN (id 333): イサム ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 4, SPECIES_ZIGZAGOON
-    trainer_mon_no_item_default 0, 3, SPECIES_TAILLOW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 4, SPECIES_ZIGZAGOON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 3, SPECIES_TAILLOW
 
 sParty_Timmy: @ 0x082E0704
     @ TRAINER_TIMMY (id 334): シンゴ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 15, SPECIES_ARON
-    trainer_mon_no_item_default 0, 13, SPECIES_ELECTRIKE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 15, SPECIES_ARON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 13, SPECIES_ELECTRIKE
 
 sParty_Wallace: @ 0x082E0714
     @ TRAINER_WALLACE (id 335): ミクリ ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 57, SPECIES_WAILORD, ITEM_NONE, MOVE_RAIN_DANCE, MOVE_WATER_SPOUT, MOVE_DOUBLE_EDGE, MOVE_BLIZZARD
-    trainer_mon_item_custom 255, 55, SPECIES_TENTACRUEL, ITEM_NONE, MOVE_TOXIC, MOVE_HYDRO_PUMP, MOVE_SLUDGE_BOMB, MOVE_ICE_BEAM
-    trainer_mon_item_custom 255, 56, SPECIES_LUDICOLO, ITEM_NONE, MOVE_GIGA_DRAIN, MOVE_SURF, MOVE_LEECH_SEED, MOVE_DOUBLE_TEAM
-    trainer_mon_item_custom 255, 56, SPECIES_WHISCASH, ITEM_NONE, MOVE_EARTHQUAKE, MOVE_SURF, MOVE_AMNESIA, MOVE_HYPER_BEAM
-    trainer_mon_item_custom 255, 56, SPECIES_GYARADOS, ITEM_NONE, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_HYPER_BEAM, MOVE_SURF
-    trainer_mon_item_custom 255, 58, SPECIES_MILOTIC, ITEM_SITRUS_BERRY, MOVE_RECOVER, MOVE_SURF, MOVE_ICE_BEAM, MOVE_TOXIC
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 57, SPECIES_WAILORD, ITEM_NONE, MOVE_RAIN_DANCE, MOVE_WATER_SPOUT, MOVE_DOUBLE_EDGE, MOVE_BLIZZARD
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 55, SPECIES_TENTACRUEL, ITEM_NONE, MOVE_TOXIC, MOVE_HYDRO_PUMP, MOVE_SLUDGE_BOMB, MOVE_ICE_BEAM
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 56, SPECIES_LUDICOLO, ITEM_NONE, MOVE_GIGA_DRAIN, MOVE_SURF, MOVE_LEECH_SEED, MOVE_DOUBLE_TEAM
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 56, SPECIES_WHISCASH, ITEM_NONE, MOVE_EARTHQUAKE, MOVE_SURF, MOVE_AMNESIA, MOVE_HYPER_BEAM
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 56, SPECIES_GYARADOS, ITEM_NONE, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_HYPER_BEAM, MOVE_SURF
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 58, SPECIES_MILOTIC, ITEM_SITRUS_BERRY, MOVE_RECOVER, MOVE_SURF, MOVE_ICE_BEAM, MOVE_TOXIC
 
 sParty_Andrew: @ 0x082E0774
     @ TRAINER_ANDREW (id 336): カツノリ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 5, SPECIES_MAGIKARP
-    trainer_mon_no_item_default 0, 10, SPECIES_TENTACOOL
-    trainer_mon_no_item_default 0, 15, SPECIES_MAGIKARP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_MAGIKARP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 10, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 15, SPECIES_MAGIKARP
 
 sParty_Ivan: @ 0x082E078C
     @ TRAINER_IVAN (id 337): ヨシタカ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 5, SPECIES_MAGIKARP
-    trainer_mon_no_item_default 0, 6, SPECIES_MAGIKARP
-    trainer_mon_no_item_default 0, 7, SPECIES_MAGIKARP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_MAGIKARP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 6, SPECIES_MAGIKARP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 7, SPECIES_MAGIKARP
 
 sParty_Claude: @ 0x082E07A4
     @ TRAINER_CLAUDE (id 338): ヒデユキ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 16, SPECIES_MAGIKARP
-    trainer_mon_no_item_default 0, 17, SPECIES_GOLDEEN
-    trainer_mon_no_item_default 0, 18, SPECIES_BARBOACH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 16, SPECIES_MAGIKARP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 17, SPECIES_GOLDEEN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_BARBOACH
 
 sParty_Elliot1: @ 0x082E07BC
     @ TRAINER_ELLIOT_1 (id 339): アキヒコ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 10, SPECIES_MAGIKARP
-    trainer_mon_no_item_default 0, 7, SPECIES_TENTACOOL
-    trainer_mon_no_item_default 0, 10, SPECIES_MAGIKARP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 10, SPECIES_MAGIKARP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 7, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 10, SPECIES_MAGIKARP
 
 sParty_Ned: @ 0x082E07D4
     @ TRAINER_NED (id 340): トモカズ ; flags=0, partySize=1
@@ -1704,23 +1674,23 @@ sParty_Ned: @ 0x082E07D4
 
 sParty_Dale: @ 0x082E07DC
     @ TRAINER_DALE (id 341): タカフミ ; flags=0, partySize=4
-    trainer_mon_no_item_default 0, 11, SPECIES_TENTACOOL
-    trainer_mon_no_item_default 0, 14, SPECIES_WAILMER
-    trainer_mon_no_item_default 0, 11, SPECIES_TENTACOOL
-    trainer_mon_no_item_default 0, 14, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_WAILMER
 
 sParty_Nolan: @ 0x082E07FC
     @ TRAINER_NOLAN (id 342): タカノリ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 19, SPECIES_BARBOACH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 19, SPECIES_BARBOACH
 
 sParty_Barny: @ 0x082E0804
     @ TRAINER_BARNY (id 343): カズヒコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 25, SPECIES_TENTACOOL
-    trainer_mon_no_item_default 0, 25, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_CARVANHA
 
 sParty_Wade: @ 0x082E0814
     @ TRAINER_WADE (id 344): イサオ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 16, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 16, SPECIES_TENTACOOL
 
 sParty_Carter: @ 0x082E081C
     @ TRAINER_CARTER (id 345): タカヒロ ; flags=0, partySize=2
@@ -1756,12 +1726,12 @@ sParty_Elliot5: @ 0x082E0884
 
 sParty_Ronald: @ 0x082E08A4
     @ TRAINER_RONALD (id 350): カズオ ; flags=0, partySize=6
-    trainer_mon_no_item_default 0, 19, SPECIES_MAGIKARP
-    trainer_mon_no_item_default 0, 21, SPECIES_GYARADOS
-    trainer_mon_no_item_default 0, 23, SPECIES_GYARADOS
-    trainer_mon_no_item_default 0, 26, SPECIES_GYARADOS
-    trainer_mon_no_item_default 0, 30, SPECIES_GYARADOS
-    trainer_mon_no_item_default 0, 35, SPECIES_GYARADOS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 19, SPECIES_MAGIKARP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 21, SPECIES_GYARADOS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 23, SPECIES_GYARADOS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_GYARADOS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_GYARADOS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 35, SPECIES_GYARADOS
 
 sParty_Jacob: @ 0x082E08D4
     @ TRAINER_JACOB (id 351): ススム ; flags=0, partySize=3
@@ -1771,12 +1741,12 @@ sParty_Jacob: @ 0x082E08D4
 
 sParty_Anthony: @ 0x082E08EC
     @ TRAINER_ANTHONY (id 352): シュンスケ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 14, SPECIES_MAGNEMITE
-    trainer_mon_no_item_default 0, 14, SPECIES_MAGNEMITE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_MAGNEMITE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_MAGNEMITE
 
 sParty_Benjamin1: @ 0x082E08FC
     @ TRAINER_BENJAMIN_1 (id 353): ヒデアキ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 16, SPECIES_MAGNEMITE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 16, SPECIES_MAGNEMITE
 
 sParty_Benjamin2: @ 0x082E0904
     @ TRAINER_BENJAMIN_2 (id 354): ヒデアキ ; flags=0, partySize=1
@@ -1796,13 +1766,13 @@ sParty_Benjamin5: @ 0x082E091C
 
 sParty_Abigail1: @ 0x082E0924
     @ TRAINER_ABIGAIL_1 (id 358): ショウコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 16, SPECIES_MAGNEMITE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 16, SPECIES_MAGNEMITE
 
 sParty_Jasmine: @ 0x082E092C
     @ TRAINER_JASMINE (id 359): ヒデミ ; flags=0, partySize=3
     trainer_mon_no_item_default 80, 14, SPECIES_MAGNEMITE
     trainer_mon_no_item_default 80, 14, SPECIES_MAGNEMITE
-    trainer_mon_no_item_default 0, 6, SPECIES_VOLTORB
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 6, SPECIES_VOLTORB
 
 sParty_Abigail2: @ 0x082E0944
     @ TRAINER_ABIGAIL_2 (id 360): ショウコ ; flags=0, partySize=1
@@ -1822,7 +1792,7 @@ sParty_Abigail5: @ 0x082E095C
 
 sParty_Dylan1: @ 0x082E0964
     @ TRAINER_DYLAN_1 (id 364): ツヨシ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 17, SPECIES_DODUO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 17, SPECIES_DODUO
 
 sParty_Dylan2: @ 0x082E096C
     @ TRAINER_DYLAN_2 (id 365): ツヨシ ; flags=0, partySize=1
@@ -1842,7 +1812,7 @@ sParty_Dylan5: @ 0x082E0984
 
 sParty_Maria1: @ 0x082E098C
     @ TRAINER_MARIA_1 (id 369): サエコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 17, SPECIES_DODUO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 17, SPECIES_DODUO
 
 sParty_Maria2: @ 0x082E0994
     @ TRAINER_MARIA_2 (id 370): サエコ ; flags=0, partySize=1
@@ -1862,26 +1832,26 @@ sParty_Maria5: @ 0x082E09AC
 
 sParty_Camden: @ 0x082E09B4
     @ TRAINER_CAMDEN (id 374): シゲハル ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_STARYU
-    trainer_mon_no_item_default 0, 33, SPECIES_STARYU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_STARYU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_STARYU
 
 sParty_Demetrius: @ 0x082E09C4
     @ TRAINER_DEMETRIUS (id 375): フミタケ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 25, SPECIES_ZIGZAGOON
-    trainer_mon_no_item_default 0, 25, SPECIES_ELECTRIKE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_ZIGZAGOON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_ELECTRIKE
 
 sParty_Isaiah1: @ 0x082E09D4
     @ TRAINER_ISAIAH_1 (id 376): エイスケ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 35, SPECIES_STARYU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 35, SPECIES_STARYU
 
 sParty_Pablo1: @ 0x082E09DC
     @ TRAINER_PABLO_1 (id 377): ヤスヒロ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_STARYU
-    trainer_mon_no_item_default 0, 33, SPECIES_STARYU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_STARYU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_STARYU
 
 sParty_Chase: @ 0x082E09EC
     @ TRAINER_CHASE (id 378): ショウゴ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 26, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_WINGULL
     trainer_mon_no_item_default 80, 34, SPECIES_STARYU
 
 sParty_Isaiah2: @ 0x082E09FC
@@ -1902,24 +1872,24 @@ sParty_Isaiah5: @ 0x082E0A14
 
 sParty_Isobel: @ 0x082E0A1C
     @ TRAINER_ISOBEL (id 383): キヌエ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_STARYU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_STARYU
 
 sParty_Donny: @ 0x082E0A24
     @ TRAINER_DONNY (id 384): ユヅル ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 26, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_WINGULL
     trainer_mon_no_item_default 160, 34, SPECIES_STARYU
 
 sParty_Talia: @ 0x082E0A34
     @ TRAINER_TALIA (id 385): ミカコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_STARYU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_STARYU
 
 sParty_Katelyn1: @ 0x082E0A3C
     @ TRAINER_KATELYN_1 (id 386): ナツミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 35, SPECIES_STARYU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 35, SPECIES_STARYU
 
 sParty_Allison: @ 0x082E0A44
     @ TRAINER_ALLISON (id 387): チサト ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 27, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 27, SPECIES_WINGULL
     trainer_mon_no_item_default 240, 33, SPECIES_STARYU
 
 sParty_Katelyn2: @ 0x082E0A54
@@ -1967,20 +1937,20 @@ sParty_Nicolas5: @ 0x082E0ABC
 
 sParty_Aaron: @ 0x082E0AD4
     @ TRAINER_AARON (id 397): タツマ ; flags=1, partySize=1
-    trainer_mon_no_item_custom 255, 34, SPECIES_BAGON, MOVE_DRAGON_BREATH, MOVE_HEADBUTT, MOVE_FOCUS_ENERGY, MOVE_EMBER
+    trainer_mon_no_item_custom TRAINER_MON_IV_MAX, 34, SPECIES_BAGON, MOVE_DRAGON_BREATH, MOVE_HEADBUTT, MOVE_FOCUS_ENERGY, MOVE_EMBER
 
 sParty_Perry: @ 0x082E0AE4
     @ TRAINER_PERRY (id 398): キヨヒコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_WINGULL
 
 sParty_Hugh: @ 0x082E0AEC
     @ TRAINER_HUGH (id 399): タクミ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 25, SPECIES_WINGULL
-    trainer_mon_no_item_default 0, 25, SPECIES_TROPIUS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_TROPIUS
 
 sParty_Phil: @ 0x082E0AFC
     @ TRAINER_PHIL (id 400): シュンペイ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_SWELLOW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_SWELLOW
 
 sParty_Jared: @ 0x082E0B04
     @ TRAINER_JARED (id 401): エイジ ; flags=0, partySize=3
@@ -1994,8 +1964,8 @@ sParty_Humberto: @ 0x082E0B1C
 
 sParty_Presley: @ 0x082E0B24
     @ TRAINER_PRESLEY (id 403): ナオヒロ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_TROPIUS
-    trainer_mon_no_item_default 0, 33, SPECIES_XATU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_TROPIUS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_XATU
 
 sParty_Edwardo: @ 0x082E0B34
     @ TRAINER_EDWARDO (id 404): ジョウタ ; flags=0, partySize=2
@@ -2004,23 +1974,23 @@ sParty_Edwardo: @ 0x082E0B34
 
 sParty_Colin: @ 0x082E0B44
     @ TRAINER_COLIN (id 405): モリカズ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 28, SPECIES_WINGULL
-    trainer_mon_no_item_default 0, 28, SPECIES_NATU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 28, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 28, SPECIES_NATU
 
 sParty_Robert1: @ 0x082E0B54
     @ TRAINER_ROBERT_1 (id 406): ツバサ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_SWABLU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_SWABLU
 
 sParty_Benny: @ 0x082E0B5C
     @ TRAINER_BENNY (id 407): アキマサ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 36, SPECIES_SWELLOW
-    trainer_mon_no_item_default 0, 36, SPECIES_PELIPPER
-    trainer_mon_no_item_default 0, 36, SPECIES_XATU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 36, SPECIES_SWELLOW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 36, SPECIES_PELIPPER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 36, SPECIES_XATU
 
 sParty_Chester: @ 0x082E0B74
     @ TRAINER_CHESTER (id 408): タイシ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 25, SPECIES_TAILLOW
-    trainer_mon_no_item_default 0, 25, SPECIES_SWELLOW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_TAILLOW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_SWELLOW
 
 sParty_Robert2: @ 0x082E0B84
     @ TRAINER_ROBERT_2 (id 409): ツバサ ; flags=0, partySize=2
@@ -2049,43 +2019,43 @@ sParty_Alex: @ 0x082E0BC4
 
 sParty_Beck: @ 0x082E0BD4
     @ TRAINER_BECK (id 414): トシアキ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_TROPIUS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_TROPIUS
 
 sParty_Yasu: @ 0x082E0BDC
     @ TRAINER_YASU (id 415): ヒロノブ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_NINJASK
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_NINJASK
 
 sParty_Takashi: @ 0x082E0BE4
     @ TRAINER_TAKASHI (id 416): シロウ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 25, SPECIES_NINJASK
-    trainer_mon_no_item_default 0, 25, SPECIES_KOFFING
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_NINJASK
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_KOFFING
 
 sParty_Dianne: @ 0x082E0BF4
     @ TRAINER_DIANNE (id 417): ココロ ; flags=3, partySize=2
-    trainer_mon_item_custom 0, 43, SPECIES_CLAYDOL, ITEM_NONE, MOVE_SKILL_SWAP, MOVE_EARTHQUAKE, MOVE_NONE, MOVE_NONE
-    trainer_mon_item_custom 0, 43, SPECIES_LANTURN, ITEM_NONE, MOVE_THUNDERBOLT, MOVE_EARTHQUAKE, MOVE_NONE, MOVE_NONE
+    trainer_mon_item_custom TRAINER_MON_IV_MIN, 43, SPECIES_CLAYDOL, ITEM_NONE, MOVE_SKILL_SWAP, MOVE_EARTHQUAKE, MOVE_NONE, MOVE_NONE
+    trainer_mon_item_custom TRAINER_MON_IV_MIN, 43, SPECIES_LANTURN, ITEM_NONE, MOVE_THUNDERBOLT, MOVE_EARTHQUAKE, MOVE_NONE, MOVE_NONE
 
 sParty_Jani: @ 0x082E0C14
     @ TRAINER_JANI (id 418): マミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_MARILL
 
 sParty_Lao1: @ 0x082E0C1C
     @ TRAINER_LAO_1 (id 419): キンジ ; flags=1, partySize=3
-    trainer_mon_no_item_custom 0, 17, SPECIES_KOFFING, MOVE_POISON_GAS, MOVE_TACKLE, MOVE_SMOG, MOVE_SELF_DESTRUCT
-    trainer_mon_no_item_custom 0, 17, SPECIES_KOFFING, MOVE_POISON_GAS, MOVE_TACKLE, MOVE_SMOG, MOVE_SELF_DESTRUCT
-    trainer_mon_no_item_custom 0, 17, SPECIES_KOFFING, MOVE_POISON_GAS, MOVE_TACKLE, MOVE_SLUDGE, MOVE_SELF_DESTRUCT
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 17, SPECIES_KOFFING, MOVE_POISON_GAS, MOVE_TACKLE, MOVE_SMOG, MOVE_SELF_DESTRUCT
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 17, SPECIES_KOFFING, MOVE_POISON_GAS, MOVE_TACKLE, MOVE_SMOG, MOVE_SELF_DESTRUCT
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 17, SPECIES_KOFFING, MOVE_POISON_GAS, MOVE_TACKLE, MOVE_SLUDGE, MOVE_SELF_DESTRUCT
 
 sParty_Lung: @ 0x082E0C4C
     @ TRAINER_LUNG (id 420): ムラマサ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 18, SPECIES_KOFFING
-    trainer_mon_no_item_default 0, 18, SPECIES_NINJASK
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_KOFFING
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_NINJASK
 
 sParty_Lao2: @ 0x082E0C5C
     @ TRAINER_LAO_2 (id 421): キンジ ; flags=1, partySize=4
-    trainer_mon_no_item_custom 0, 24, SPECIES_KOFFING, MOVE_POISON_GAS, MOVE_TACKLE, MOVE_SLUDGE, MOVE_SELF_DESTRUCT
-    trainer_mon_no_item_custom 0, 24, SPECIES_KOFFING, MOVE_POISON_GAS, MOVE_TACKLE, MOVE_SLUDGE, MOVE_NONE
-    trainer_mon_no_item_custom 0, 24, SPECIES_KOFFING, MOVE_POISON_GAS, MOVE_TACKLE, MOVE_SLUDGE, MOVE_SELF_DESTRUCT
-    trainer_mon_no_item_custom 0, 26, SPECIES_KOFFING, MOVE_TACKLE, MOVE_SLUDGE, MOVE_NONE, MOVE_NONE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 24, SPECIES_KOFFING, MOVE_POISON_GAS, MOVE_TACKLE, MOVE_SLUDGE, MOVE_SELF_DESTRUCT
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 24, SPECIES_KOFFING, MOVE_POISON_GAS, MOVE_TACKLE, MOVE_SLUDGE, MOVE_NONE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 24, SPECIES_KOFFING, MOVE_POISON_GAS, MOVE_TACKLE, MOVE_SLUDGE, MOVE_SELF_DESTRUCT
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 26, SPECIES_KOFFING, MOVE_TACKLE, MOVE_SLUDGE, MOVE_NONE, MOVE_NONE
 
 sParty_Lao3: @ 0x082E0C9C
     @ TRAINER_LAO_3 (id 422): キンジ ; flags=1, partySize=4
@@ -2151,12 +2121,12 @@ sParty_Cyndy5: @ 0x082E0DBC
 
 sParty_Madeline1: @ 0x082E0DCC
     @ TRAINER_MADELINE_1 (id 434): マドカ ; flags=1, partySize=1
-    trainer_mon_no_item_custom 0, 19, SPECIES_NUMEL, MOVE_EMBER, MOVE_TACKLE, MOVE_MAGNITUDE, MOVE_SUNNY_DAY
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 19, SPECIES_NUMEL, MOVE_EMBER, MOVE_TACKLE, MOVE_MAGNITUDE, MOVE_SUNNY_DAY
 
 sParty_Clarissa: @ 0x082E0DDC
     @ TRAINER_CLARISSA (id 435): ミカ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 28, SPECIES_ROSELIA
-    trainer_mon_no_item_default 0, 28, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 28, SPECIES_ROSELIA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 28, SPECIES_WAILMER
 
 sParty_Angelica: @ 0x082E0DEC
     @ TRAINER_ANGELICA (id 436): ウキエ ; flags=1, partySize=1
@@ -2182,169 +2152,169 @@ sParty_Madeline5: @ 0x082E0E3C
 
 sParty_Beverly: @ 0x082E0E5C
     @ TRAINER_BEVERLY (id 441): ナツキ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 25, SPECIES_WINGULL
-    trainer_mon_no_item_default 0, 25, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_WAILMER
 
 sParty_Imani: @ 0x082E0E6C
     @ TRAINER_IMANI (id 442): マユカ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_MARILL
 
 sParty_Kyla: @ 0x082E0E74
     @ TRAINER_KYLA (id 443): ミズハ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_WAILMER
 
 sParty_Denise: @ 0x082E0E7C
     @ TRAINER_DENISE (id 444): マサミ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 25, SPECIES_WINGULL
-    trainer_mon_no_item_default 0, 25, SPECIES_GOLDEEN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_GOLDEEN
 
 sParty_Beth: @ 0x082E0E8C
     @ TRAINER_BETH (id 445): ノリカ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_GOLDEEN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_GOLDEEN
 
 sParty_Tara: @ 0x082E0E94
     @ TRAINER_TARA (id 446): チヒロ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 25, SPECIES_HORSEA
-    trainer_mon_no_item_default 0, 25, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_HORSEA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_MARILL
 
 sParty_Missy: @ 0x082E0EA4
     @ TRAINER_MISSY (id 447): クミコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_GOLDEEN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_GOLDEEN
 
 sParty_Alice: @ 0x082E0EAC
     @ TRAINER_ALICE (id 448): エツコ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 24, SPECIES_GOLDEEN
-    trainer_mon_no_item_default 0, 24, SPECIES_WINGULL
-    trainer_mon_no_item_default 0, 24, SPECIES_GOLDEEN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 24, SPECIES_GOLDEEN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 24, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 24, SPECIES_GOLDEEN
 
 sParty_Jenny1: @ 0x082E0EC4
     @ TRAINER_JENNY_1 (id 449): ナギサ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_WAILMER
 
 sParty_Grace: @ 0x082E0ECC
     @ TRAINER_GRACE (id 450): アキエ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_MARILL
 
 sParty_Tanya: @ 0x082E0ED4
     @ TRAINER_TANYA (id 451): ケイコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_LUVDISC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_LUVDISC
 
 sParty_Sharon: @ 0x082E0EDC
     @ TRAINER_SHARON (id 452): サイカ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_SEAKING
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_SEAKING
 
 sParty_Nikki: @ 0x082E0EE4
     @ TRAINER_NIKKI (id 453): シズエ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_MARILL
-    trainer_mon_no_item_default 0, 33, SPECIES_SPHEAL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_SPHEAL
 
 sParty_Brenda: @ 0x082E0EF4
     @ TRAINER_BRENDA (id 454): テルミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_GOLDEEN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_GOLDEEN
 
 sParty_Katie: @ 0x082E0EFC
     @ TRAINER_KATIE (id 455): フミエ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_GOLDEEN
-    trainer_mon_no_item_default 0, 33, SPECIES_SPHEAL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_GOLDEEN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_SPHEAL
 
 sParty_Susie: @ 0x082E0F0C
     @ TRAINER_SUSIE (id 456): ミサキ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_LUVDISC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_LUVDISC
 
 sParty_Kara: @ 0x082E0F14
     @ TRAINER_KARA (id 457): マリエ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_SEAKING
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_SEAKING
 
 sParty_Dana: @ 0x082E0F1C
     @ TRAINER_DANA (id 458): ミユキ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_AZUMARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_AZUMARILL
 
 sParty_Sienna: @ 0x082E0F24
     @ TRAINER_SIENNA (id 459): イクコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_LUVDISC
-    trainer_mon_no_item_default 0, 33, SPECIES_LUVDISC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_LUVDISC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_LUVDISC
 
 sParty_Debra: @ 0x082E0F34
     @ TRAINER_DEBRA (id 460): リカコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_SEAKING
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_SEAKING
 
 sParty_Linda: @ 0x082E0F3C
     @ TRAINER_LINDA (id 461): ハルミ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_HORSEA
-    trainer_mon_no_item_default 0, 33, SPECIES_SEADRA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_HORSEA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_SEADRA
 
 sParty_Kaylee: @ 0x082E0F4C
     @ TRAINER_KAYLEE (id 462): タカコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 34, SPECIES_LANTURN
-    trainer_mon_no_item_default 0, 34, SPECIES_PELIPPER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_LANTURN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_PELIPPER
 
 sParty_Laurel: @ 0x082E0F5C
     @ TRAINER_LAUREL (id 463): ソノコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_LUVDISC
-    trainer_mon_no_item_default 0, 33, SPECIES_LUVDISC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_LUVDISC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_LUVDISC
 
 sParty_Carlee: @ 0x082E0F6C
     @ TRAINER_CARLEE (id 464): クニコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 35, SPECIES_SEAKING
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 35, SPECIES_SEAKING
 
 sParty_Jenny2: @ 0x082E0F74
     @ TRAINER_JENNY_2 (id 465): ナギサ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 38, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 38, SPECIES_WAILMER
 
 sParty_Jenny3: @ 0x082E0F7C
     @ TRAINER_JENNY_3 (id 466): ナギサ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 41, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 41, SPECIES_WAILMER
 
 sParty_Jenny4: @ 0x082E0F84
     @ TRAINER_JENNY_4 (id 467): ナギサ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 43, SPECIES_STARYU
-    trainer_mon_no_item_default 0, 43, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 43, SPECIES_STARYU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 43, SPECIES_WAILMER
 
 sParty_Jenny5: @ 0x082E0F94
     @ TRAINER_JENNY_5 (id 468): ナギサ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 45, SPECIES_LUVDISC
-    trainer_mon_no_item_default 0, 45, SPECIES_WAILMER
-    trainer_mon_no_item_default 0, 45, SPECIES_STARMIE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 45, SPECIES_LUVDISC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 45, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 45, SPECIES_STARMIE
 
 sParty_Heidi: @ 0x082E0FAC
     @ TRAINER_HEIDI (id 469): チカコ ; flags=1, partySize=2
-    trainer_mon_no_item_custom 0, 22, SPECIES_SANDSHREW, MOVE_DIG, MOVE_SAND_ATTACK, MOVE_POISON_STING, MOVE_SLASH
-    trainer_mon_no_item_custom 0, 22, SPECIES_BALTOY, MOVE_RAPID_SPIN, MOVE_MUD_SLAP, MOVE_PSYBEAM, MOVE_ROCK_TOMB
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 22, SPECIES_SANDSHREW, MOVE_DIG, MOVE_SAND_ATTACK, MOVE_POISON_STING, MOVE_SLASH
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 22, SPECIES_BALTOY, MOVE_RAPID_SPIN, MOVE_MUD_SLAP, MOVE_PSYBEAM, MOVE_ROCK_TOMB
 
 sParty_Becky: @ 0x082E0FCC
     @ TRAINER_BECKY (id 470): アイミ ; flags=1, partySize=2
-    trainer_mon_no_item_custom 0, 22, SPECIES_SANDSHREW, MOVE_SAND_ATTACK, MOVE_POISON_STING, MOVE_SLASH, MOVE_DIG
-    trainer_mon_no_item_custom 0, 22, SPECIES_MARILL, MOVE_ROLLOUT, MOVE_BUBBLE_BEAM, MOVE_TAIL_WHIP, MOVE_DEFENSE_CURL
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 22, SPECIES_SANDSHREW, MOVE_SAND_ATTACK, MOVE_POISON_STING, MOVE_SLASH, MOVE_DIG
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 22, SPECIES_MARILL, MOVE_ROLLOUT, MOVE_BUBBLE_BEAM, MOVE_TAIL_WHIP, MOVE_DEFENSE_CURL
 
 sParty_Carol: @ 0x082E0FEC
     @ TRAINER_CAROL (id 471): ヒロコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 17, SPECIES_TAILLOW
-    trainer_mon_no_item_default 0, 17, SPECIES_LOMBRE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 17, SPECIES_TAILLOW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 17, SPECIES_LOMBRE
 
 sParty_Nancy: @ 0x082E0FFC
     @ TRAINER_NANCY (id 472): サツキ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 18, SPECIES_MARILL
-    trainer_mon_no_item_default 0, 18, SPECIES_LOMBRE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_LOMBRE
 
 sParty_Martha: @ 0x082E100C
     @ TRAINER_MARTHA (id 473): トモコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 23, SPECIES_SKITTY
-    trainer_mon_no_item_default 0, 23, SPECIES_SWABLU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 23, SPECIES_SKITTY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 23, SPECIES_SWABLU
 
 sParty_Diana1: @ 0x082E101C
     @ TRAINER_DIANA_1 (id 474): コズエ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 19, SPECIES_SHROOMISH
-    trainer_mon_no_item_default 0, 19, SPECIES_ODDISH
-    trainer_mon_no_item_default 0, 19, SPECIES_SWABLU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 19, SPECIES_SHROOMISH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 19, SPECIES_ODDISH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 19, SPECIES_SWABLU
 
 sParty_Cedric: @ 0x082E1034
     @ TRAINER_CEDRIC (id 475): ヨシキヨ ; flags=1, partySize=1
-    trainer_mon_no_item_custom 0, 32, SPECIES_WOBBUFFET, MOVE_DESTINY_BOND, MOVE_SAFEGUARD, MOVE_COUNTER, MOVE_MIRROR_COAT
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 32, SPECIES_WOBBUFFET, MOVE_DESTINY_BOND, MOVE_SAFEGUARD, MOVE_COUNTER, MOVE_MIRROR_COAT
 
 sParty_Irene: @ 0x082E1044
     @ TRAINER_IRENE (id 476): ミズキ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 17, SPECIES_SHROOMISH
-    trainer_mon_no_item_default 0, 17, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 17, SPECIES_SHROOMISH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 17, SPECIES_MARILL
 
 sParty_Diana2: @ 0x082E1054
     @ TRAINER_DIANA_2 (id 477): コズエ ; flags=0, partySize=3
@@ -2372,8 +2342,8 @@ sParty_Diana5: @ 0x082E109C
 
 sParty_AmyAndLiv1: @ 0x082E10B4
     @ TRAINER_AMY_AND_LIV_1 (id 481): クミとルミ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 15, SPECIES_PLUSLE
-    trainer_mon_no_item_default 0, 15, SPECIES_MINUN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 15, SPECIES_PLUSLE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 15, SPECIES_MINUN
 
 sParty_AmyAndLiv2: @ 0x082E10C4
     @ TRAINER_AMY_AND_LIV_2 (id 482): クミとルミ ; flags=0, partySize=2
@@ -2382,23 +2352,23 @@ sParty_AmyAndLiv2: @ 0x082E10C4
 
 sParty_GinaAndMia1: @ 0x082E10D4
     @ TRAINER_GINA_AND_MIA_1 (id 483): ナオとミオ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 6, SPECIES_SEEDOT
-    trainer_mon_no_item_default 0, 6, SPECIES_LOTAD
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 6, SPECIES_SEEDOT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 6, SPECIES_LOTAD
 
 sParty_MiuAndYuki: @ 0x082E10E4
     @ TRAINER_MIU_AND_YUKI (id 484): ミウとユキ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 26, SPECIES_BEAUTIFLY
-    trainer_mon_no_item_default 0, 26, SPECIES_DUSTOX
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_BEAUTIFLY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_DUSTOX
 
 sParty_AmyAndLiv3: @ 0x082E10F4
     @ TRAINER_AMY_AND_LIV_3 (id 485): クミとルミ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 9, SPECIES_PLUSLE
-    trainer_mon_no_item_default 0, 9, SPECIES_MINUN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 9, SPECIES_PLUSLE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 9, SPECIES_MINUN
 
 sParty_GinaAndMia2: @ 0x082E1104
     @ TRAINER_GINA_AND_MIA_2 (id 486): ナオとミオ ; flags=1, partySize=2
-    trainer_mon_no_item_custom 0, 10, SPECIES_DUSKULL, MOVE_NIGHT_SHADE, MOVE_DISABLE, MOVE_NONE, MOVE_NONE
-    trainer_mon_no_item_custom 0, 10, SPECIES_SHROOMISH, MOVE_ABSORB, MOVE_LEECH_SEED, MOVE_NONE, MOVE_NONE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 10, SPECIES_DUSKULL, MOVE_NIGHT_SHADE, MOVE_DISABLE, MOVE_NONE, MOVE_NONE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 10, SPECIES_SHROOMISH, MOVE_ABSORB, MOVE_LEECH_SEED, MOVE_NONE, MOVE_NONE
 
 sParty_AmyAndLiv4: @ 0x082E1124
     @ TRAINER_AMY_AND_LIV_4 (id 487): クミとルミ ; flags=0, partySize=2
@@ -2422,34 +2392,34 @@ sParty_Huey: @ 0x082E1174
 
 sParty_Edmond: @ 0x082E1184
     @ TRAINER_EDMOND (id 491): カツヤ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 13, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 13, SPECIES_WINGULL
 
 sParty_Ernest1: @ 0x082E118C
     @ TRAINER_ERNEST_1 (id 492): ジロウ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_WINGULL
-    trainer_mon_no_item_default 0, 33, SPECIES_MACHOKE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_MACHOKE
 
 sParty_Dwayne: @ 0x082E119C
     @ TRAINER_DWAYNE (id 493): タツヒコ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 11, SPECIES_WINGULL
-    trainer_mon_no_item_default 0, 11, SPECIES_MACHOP
-    trainer_mon_no_item_default 0, 11, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_MACHOP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_TENTACOOL
 
 sParty_Phillip: @ 0x082E11B4
     @ TRAINER_PHILLIP (id 494): ユウサク ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 44, SPECIES_TENTACRUEL
-    trainer_mon_no_item_default 0, 44, SPECIES_MACHOKE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 44, SPECIES_TENTACRUEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 44, SPECIES_MACHOKE
 
 sParty_Leonard: @ 0x082E11C4
     @ TRAINER_LEONARD (id 495): ダイキ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 43, SPECIES_MACHOP
-    trainer_mon_no_item_default 0, 43, SPECIES_PELIPPER
-    trainer_mon_no_item_default 0, 43, SPECIES_MACHOKE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 43, SPECIES_MACHOP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 43, SPECIES_PELIPPER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 43, SPECIES_MACHOKE
 
 sParty_Duncan: @ 0x082E11DC
     @ TRAINER_DUNCAN (id 496): ヒデフミ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 25, SPECIES_SPHEAL
-    trainer_mon_no_item_default 0, 25, SPECIES_MACHOKE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_SPHEAL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_MACHOKE
 
 sParty_Ernest2: @ 0x082E11EC
     @ TRAINER_ERNEST_2 (id 497): ジロウ ; flags=0, partySize=3
@@ -2486,20 +2456,20 @@ sParty_Annika: @ 0x082E1254
 
 sParty_Jazmyn: @ 0x082E1274
     @ TRAINER_JAZMYN (id 503): ミワ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 27, SPECIES_ABSOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 27, SPECIES_ABSOL
 
 sParty_Jonas: @ 0x082E127C
     @ TRAINER_JONAS (id 504): シンスケ ; flags=1, partySize=1
-    trainer_mon_no_item_custom 0, 31, SPECIES_KOFFING, MOVE_TOXIC, MOVE_THUNDER, MOVE_SELF_DESTRUCT, MOVE_SLUDGE_BOMB
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 31, SPECIES_KOFFING, MOVE_TOXIC, MOVE_THUNDER, MOVE_SELF_DESTRUCT, MOVE_SLUDGE_BOMB
 
 sParty_Kayley: @ 0x082E128C
     @ TRAINER_KAYLEY (id 505): カオルコ ; flags=1, partySize=1
-    trainer_mon_no_item_custom 0, 31, SPECIES_CASTFORM_NORMAL, MOVE_SUNNY_DAY, MOVE_WEATHER_BALL, MOVE_FLAMETHROWER, MOVE_SOLAR_BEAM
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 31, SPECIES_CASTFORM_NORMAL, MOVE_SUNNY_DAY, MOVE_WEATHER_BALL, MOVE_FLAMETHROWER, MOVE_SOLAR_BEAM
 
 sParty_Auron: @ 0x082E129C
     @ TRAINER_AURON (id 506): イッケイ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_MANECTRIC
-    trainer_mon_no_item_default 0, 33, SPECIES_MACHAMP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_MANECTRIC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_MACHAMP
 
 sParty_Kelvin: @ 0x082E12AC
     @ TRAINER_KELVIN (id 507): ナオヤ ; flags=0, partySize=2
@@ -2508,7 +2478,7 @@ sParty_Kelvin: @ 0x082E12AC
 
 sParty_Marley: @ 0x082E12BC
     @ TRAINER_MARLEY (id 508): リツコ ; flags=3, partySize=1
-    trainer_mon_item_custom 255, 34, SPECIES_MANECTRIC, ITEM_NONE, MOVE_BITE, MOVE_ROAR, MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 34, SPECIES_MANECTRIC, ITEM_NONE, MOVE_BITE, MOVE_ROAR, MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT
 
 sParty_Reyna: @ 0x082E12CC
     @ TRAINER_REYNA (id 509): タマキ ; flags=0, partySize=2
@@ -2517,22 +2487,22 @@ sParty_Reyna: @ 0x082E12CC
 
 sParty_Hudson: @ 0x082E12DC
     @ TRAINER_HUDSON (id 510): ジュンヤ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_WAILMER
 
 sParty_Conor: @ 0x082E12E4
     @ TRAINER_CONOR (id 511): シゲヨシ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_CHINCHOU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_CHINCHOU
     trainer_mon_no_item_default 200, 33, SPECIES_HARIYAMA
 
 sParty_Edwin1: @ 0x082E12F4
     @ TRAINER_EDWIN_1 (id 512): モトキ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 14, SPECIES_LOMBRE
-    trainer_mon_no_item_default 0, 14, SPECIES_NUZLEAF
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_LOMBRE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_NUZLEAF
 
 sParty_Hector: @ 0x082E1304
     @ TRAINER_HECTOR (id 513): トシノブ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 18, SPECIES_ZANGOOSE
-    trainer_mon_no_item_default 0, 18, SPECIES_SEVIPER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_ZANGOOSE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_SEVIPER
 
 sParty_TabithaMossdeep: @ 0x082E1314
     @ TRAINER_TABITHA_MOSSDEEP (id 514): ホムラ ; flags=0, partySize=3
@@ -2542,23 +2512,23 @@ sParty_TabithaMossdeep: @ 0x082E1314
 
 sParty_Edwin2: @ 0x082E132C
     @ TRAINER_EDWIN_2 (id 515): モトキ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 26, SPECIES_LOMBRE
-    trainer_mon_no_item_default 0, 26, SPECIES_NUZLEAF
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_LOMBRE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_NUZLEAF
 
 sParty_Edwin3: @ 0x082E133C
     @ TRAINER_EDWIN_3 (id 516): モトキ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 29, SPECIES_LOMBRE
-    trainer_mon_no_item_default 0, 29, SPECIES_NUZLEAF
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_LOMBRE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_NUZLEAF
 
 sParty_Edwin4: @ 0x082E134C
     @ TRAINER_EDWIN_4 (id 517): モトキ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 32, SPECIES_LOMBRE
-    trainer_mon_no_item_default 0, 32, SPECIES_NUZLEAF
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_LOMBRE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_NUZLEAF
 
 sParty_Edwin5: @ 0x082E135C
     @ TRAINER_EDWIN_5 (id 518): モトキ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 35, SPECIES_LUDICOLO
-    trainer_mon_no_item_default 0, 35, SPECIES_SHIFTRY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 35, SPECIES_LUDICOLO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 35, SPECIES_SHIFTRY
 
 sParty_WallyVr1: @ 0x082E136C
     @ TRAINER_WALLY_VR_1 (id 519): ミツル ; flags=1, partySize=5
@@ -2570,7 +2540,7 @@ sParty_WallyVr1: @ 0x082E136C
 
 sParty_BrendanRoute103Mudkip: @ 0x082E13BC
     @ TRAINER_BRENDAN_ROUTE_103_MUDKIP (id 520, special 0): ユウキ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_TREECKO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_TREECKO
 
 sParty_BrendanRoute110Mudkip: @ 0x082E13C4
     @ TRAINER_BRENDAN_ROUTE_110_MUDKIP (id 521, special 1): ユウキ ; flags=0, partySize=3
@@ -2586,7 +2556,7 @@ sParty_BrendanRoute119Mudkip: @ 0x082E13DC
 
 sParty_BrendanRoute103Treecko: @ 0x082E13F4
     @ TRAINER_BRENDAN_ROUTE_103_TREECKO (id 523, special 3): ユウキ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_TORCHIC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_TORCHIC
 
 sParty_BrendanRoute110Treecko: @ 0x082E13FC
     @ TRAINER_BRENDAN_ROUTE_110_TREECKO (id 524, special 4): ユウキ ; flags=0, partySize=3
@@ -2602,7 +2572,7 @@ sParty_BrendanRoute119Treecko: @ 0x082E1414
 
 sParty_BrendanRoute103Torchic: @ 0x082E142C
     @ TRAINER_BRENDAN_ROUTE_103_TORCHIC (id 526, special 6): ユウキ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_MUDKIP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_MUDKIP
 
 sParty_BrendanRoute110Torchic: @ 0x082E1434
     @ TRAINER_BRENDAN_ROUTE_110_TORCHIC (id 527, special 7): ユウキ ; flags=0, partySize=3
@@ -2618,7 +2588,7 @@ sParty_BrendanRoute119Torchic: @ 0x082E144C
 
 sParty_MayRoute103Mudkip: @ 0x082E1464
     @ TRAINER_MAY_ROUTE_103_MUDKIP (id 529, special 9): ハルカ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_TREECKO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_TREECKO
 
 sParty_MayRoute110Mudkip: @ 0x082E146C
     @ TRAINER_MAY_ROUTE_110_MUDKIP (id 530, special 10): ハルカ ; flags=0, partySize=3
@@ -2634,7 +2604,7 @@ sParty_MayRoute119Mudkip: @ 0x082E1484
 
 sParty_MayRoute103Treecko: @ 0x082E149C
     @ TRAINER_MAY_ROUTE_103_TREECKO (id 532, special 12): ハルカ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_TORCHIC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_TORCHIC
 
 sParty_MayRoute110Treecko: @ 0x082E14A4
     @ TRAINER_MAY_ROUTE_110_TREECKO (id 533, special 13): ハルカ ; flags=0, partySize=3
@@ -2650,7 +2620,7 @@ sParty_MayRoute119Treecko: @ 0x082E14BC
 
 sParty_MayRoute103Torchic: @ 0x082E14D4
     @ TRAINER_MAY_ROUTE_103_TORCHIC (id 535, special 15): ハルカ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_MUDKIP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_MUDKIP
 
 sParty_MayRoute110Torchic: @ 0x082E14DC
     @ TRAINER_MAY_ROUTE_110_TORCHIC (id 536, special 16): ハルカ ; flags=0, partySize=3
@@ -2666,21 +2636,21 @@ sParty_MayRoute119Torchic: @ 0x082E14F4
 
 sParty_Isaac1: @ 0x082E150C
     @ TRAINER_ISAAC_1 (id 538, special 18): セイジ ; flags=0, partySize=6
-    trainer_mon_no_item_default 0, 11, SPECIES_WHISMUR
-    trainer_mon_no_item_default 0, 11, SPECIES_ZIGZAGOON
-    trainer_mon_no_item_default 0, 11, SPECIES_ARON
-    trainer_mon_no_item_default 0, 11, SPECIES_POOCHYENA
-    trainer_mon_no_item_default 0, 11, SPECIES_TAILLOW
-    trainer_mon_no_item_default 0, 11, SPECIES_MAKUHITA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_WHISMUR
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_ZIGZAGOON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_ARON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_TAILLOW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_MAKUHITA
 
 sParty_Davis: @ 0x082E153C
     @ TRAINER_DAVIS (id 539, special 19): ヨシロウ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 27, SPECIES_PINSIR
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 27, SPECIES_PINSIR
 
 sParty_Mitchell: @ 0x082E1544
     @ TRAINER_MITCHELL (id 540, special 20): テッペイ ; flags=1, partySize=2
-    trainer_mon_no_item_custom 0, 43, SPECIES_LUNATONE, MOVE_EXPLOSION, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_PSYCHIC
-    trainer_mon_no_item_custom 0, 43, SPECIES_SOLROCK, MOVE_EXPLOSION, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_SHADOW_BALL
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 43, SPECIES_LUNATONE, MOVE_EXPLOSION, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_PSYCHIC
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 43, SPECIES_SOLROCK, MOVE_EXPLOSION, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_SHADOW_BALL
 
 sParty_Isaac2: @ 0x082E1564
     @ TRAINER_ISAAC_2 (id 541, special 21): セイジ ; flags=0, partySize=6
@@ -2720,21 +2690,21 @@ sParty_Isaac5: @ 0x082E15F4
 
 sParty_Lydia1: @ 0x082E1624
     @ TRAINER_LYDIA_1 (id 545, special 25): イクエ ; flags=0, partySize=6
-    trainer_mon_no_item_default 0, 11, SPECIES_WINGULL
-    trainer_mon_no_item_default 0, 11, SPECIES_SHROOMISH
-    trainer_mon_no_item_default 0, 11, SPECIES_MARILL
-    trainer_mon_no_item_default 0, 11, SPECIES_ROSELIA
-    trainer_mon_no_item_default 0, 11, SPECIES_SKITTY
-    trainer_mon_no_item_default 0, 11, SPECIES_GOLDEEN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_SHROOMISH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_ROSELIA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_SKITTY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 11, SPECIES_GOLDEEN
 
 sParty_Halle: @ 0x082E1654
     @ TRAINER_HALLE (id 546, special 26): ヒロエ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 43, SPECIES_SABLEYE
-    trainer_mon_no_item_default 0, 43, SPECIES_ABSOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 43, SPECIES_SABLEYE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 43, SPECIES_ABSOL
 
 sParty_Garrison: @ 0x082E1664
     @ TRAINER_GARRISON (id 547, special 27): ツネヤス ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_SANDSLASH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_SANDSLASH
 
 sParty_Lydia2: @ 0x082E166C
     @ TRAINER_LYDIA_2 (id 548, special 28): イクエ ; flags=0, partySize=6
@@ -2841,7 +2811,7 @@ sParty_Catherine5: @ 0x082E17E4
 
 sParty_Julio: @ 0x082E17F4
     @ TRAINER_JULIO (id 566, special 46): ミツオ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 21, SPECIES_MAGNEMITE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 21, SPECIES_MAGNEMITE
 
 sParty_GruntSeafloorCavern5: @ 0x082E17FC
     @ TRAINER_GRUNT_SEAFLOOR_CAVERN_5 (id 567, special 47): したっぱ ; flags=0, partySize=2
@@ -2850,13 +2820,13 @@ sParty_GruntSeafloorCavern5: @ 0x082E17FC
 
 sParty_GruntUnused: @ 0x082E180C
     @ TRAINER_GRUNT_UNUSED (id 568, special 48): したっぱ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 31, SPECIES_WAILMER
-    trainer_mon_no_item_default 0, 31, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_ZUBAT
 
 sParty_GruntMtPyre4: @ 0x082E181C
     @ TRAINER_GRUNT_MT_PYRE_4 (id 569, special 49): したっぱ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 30, SPECIES_WAILMER
-    trainer_mon_no_item_default 0, 30, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_ZUBAT
 
 sParty_GruntJaggedPass: @ 0x082E182C
     @ TRAINER_GRUNT_JAGGED_PASS (id 570, special 50): したっぱ ; flags=0, partySize=2
@@ -2886,7 +2856,7 @@ sParty_Sylvia: @ 0x082E1864
 
 sParty_Leonardo: @ 0x082E186C
     @ TRAINER_LEONARDO (id 576, special 56): カズシゲ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_CARVANHA
 
 sParty_Athena: @ 0x082E1874
     @ TRAINER_ATHENA (id 577, special 57): エミリ ; flags=3, partySize=2
@@ -2895,19 +2865,19 @@ sParty_Athena: @ 0x082E1874
 
 sParty_Harrison: @ 0x082E1894
     @ TRAINER_HARRISON (id 578, special 58): マサアキ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 35, SPECIES_TENTACRUEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 35, SPECIES_TENTACRUEL
 
 sParty_GruntMtChimney2: @ 0x082E189C
     @ TRAINER_GRUNT_MT_CHIMNEY_2 (id 579, special 59): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 20, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 20, SPECIES_ZUBAT
 
 sParty_Clarence: @ 0x082E18A4
     @ TRAINER_CLARENCE (id 580, special 60): ヨシフミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_SHARPEDO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_SHARPEDO
 
 sParty_Terry: @ 0x082E18AC
     @ TRAINER_TERRY (id 581, special 61): ななし2 ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 37, SPECIES_GIRAFARIG
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 37, SPECIES_GIRAFARIG
 
 sParty_Nate: @ 0x082E18B4
     @ TRAINER_NATE (id 582, special 62): トニー ; flags=0, partySize=1
@@ -2919,36 +2889,36 @@ sParty_Kathleen: @ 0x082E18BC
 
 sParty_Clifford: @ 0x082E18C4
     @ TRAINER_CLIFFORD (id 584, special 64): スティーブ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 36, SPECIES_GIRAFARIG
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 36, SPECIES_GIRAFARIG
 
 sParty_Nicholas: @ 0x082E18CC
     @ TRAINER_NICHOLAS (id 585, special 65): リョウイチ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 36, SPECIES_WOBBUFFET
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 36, SPECIES_WOBBUFFET
 
 sParty_GruntSpaceCenter3: @ 0x082E18D4
     @ TRAINER_GRUNT_SPACE_CENTER_3 (id 586, special 66): したっぱ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 31, SPECIES_ZUBAT
-    trainer_mon_no_item_default 0, 31, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_POOCHYENA
 
 sParty_GruntSpaceCenter4: @ 0x082E18E4
     @ TRAINER_GRUNT_SPACE_CENTER_4 (id 587, special 67): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 32, SPECIES_BALTOY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_BALTOY
 
 sParty_GruntSpaceCenter5: @ 0x082E18EC
     @ TRAINER_GRUNT_SPACE_CENTER_5 (id 588, special 68): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 32, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_ZUBAT
 
 sParty_GruntSpaceCenter6: @ 0x082E18F4
     @ TRAINER_GRUNT_SPACE_CENTER_6 (id 589, special 69): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 32, SPECIES_MIGHTYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_MIGHTYENA
 
 sParty_GruntSpaceCenter7: @ 0x082E18FC
     @ TRAINER_GRUNT_SPACE_CENTER_7 (id 590, special 70): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 32, SPECIES_BALTOY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_BALTOY
 
 sParty_Macey: @ 0x082E1904
     @ TRAINER_MACEY (id 591, special 71): フサコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 36, SPECIES_NATU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 36, SPECIES_NATU
 
 sParty_BrendanRustboroTreecko: @ 0x082E190C
     @ TRAINER_BRENDAN_RUSTBORO_TREECKO (id 592, special 72): ユウキ ; flags=0, partySize=2
@@ -2962,17 +2932,17 @@ sParty_BrendanRustboroMudkip: @ 0x082E191C
 
 sParty_Paxton: @ 0x082E192C
     @ TRAINER_PAXTON (id 594, special 74): ゴウゾウ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_SWELLOW
-    trainer_mon_no_item_default 0, 33, SPECIES_BRELOOM
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_SWELLOW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_BRELOOM
 
 sParty_Isabella: @ 0x082E193C
     @ TRAINER_ISABELLA (id 595, special 75): カズハ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_STARYU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_STARYU
 
 sParty_GruntWeatherInst5: @ 0x082E1944
     @ TRAINER_GRUNT_WEATHER_INST_5 (id 596, special 76): したっぱ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 27, SPECIES_ZUBAT
-    trainer_mon_no_item_default 0, 27, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 27, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 27, SPECIES_POOCHYENA
 
 sParty_TabithaMtChimney: @ 0x082E1954
     @ TRAINER_TABITHA_MT_CHIMNEY (id 597, special 77): ホムラ ; flags=0, partySize=4
@@ -2983,8 +2953,8 @@ sParty_TabithaMtChimney: @ 0x082E1954
 
 sParty_Jonathan: @ 0x082E1974
     @ TRAINER_JONATHAN (id 598, special 78): リョウスケ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_KECLEON
-    trainer_mon_no_item_default 0, 33, SPECIES_LOUDRED
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_KECLEON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_LOUDRED
 
 sParty_BrendanRustboroTorchic: @ 0x082E1984
     @ TRAINER_BRENDAN_RUSTBORO_TORCHIC (id 599, special 79): ユウキ ; flags=0, partySize=2
@@ -3010,17 +2980,17 @@ sParty_MaxieMtChimney: @ 0x082E19BC
 
 sParty_Tiana: @ 0x082E19D4
     @ TRAINER_TIANA (id 603, special 83): チカ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 4, SPECIES_ZIGZAGOON
-    trainer_mon_no_item_default 0, 4, SPECIES_SHROOMISH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 4, SPECIES_ZIGZAGOON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 4, SPECIES_SHROOMISH
 
 sParty_Haley1: @ 0x082E19E4
     @ TRAINER_HALEY_1 (id 604, special 84): マキ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 6, SPECIES_LOTAD
-    trainer_mon_no_item_default 0, 6, SPECIES_SHROOMISH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 6, SPECIES_LOTAD
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 6, SPECIES_SHROOMISH
 
 sParty_Janice: @ 0x082E19F4
     @ TRAINER_JANICE (id 605, special 85): エリ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 9, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 9, SPECIES_MARILL
 
 sParty_Vivi: @ 0x082E19FC
     @ TRAINER_VIVI (id 606, special 86): アキ ; flags=0, partySize=3
@@ -3051,13 +3021,13 @@ sParty_Haley5: @ 0x082E1A44
 
 sParty_Sally: @ 0x082E1A5C
     @ TRAINER_SALLY (id 611, special 91): ミナ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 16, SPECIES_ODDISH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 16, SPECIES_ODDISH
 
 sParty_Robin: @ 0x082E1A64
     @ TRAINER_ROBIN (id 612, special 92): シホ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 14, SPECIES_SKITTY
-    trainer_mon_no_item_default 0, 14, SPECIES_SHROOMISH
-    trainer_mon_no_item_default 0, 14, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_SKITTY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_SHROOMISH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_MARILL
 
 sParty_Andrea: @ 0x082E1A7C
     @ TRAINER_ANDREA (id 613, special 93): ミキ ; flags=0, partySize=1
@@ -3070,15 +3040,15 @@ sParty_Crissy: @ 0x082E1A84
 
 sParty_Rick: @ 0x082E1A94
     @ TRAINER_RICK (id 615, special 95): シンイチ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 4, SPECIES_WURMPLE
-    trainer_mon_no_item_default 0, 4, SPECIES_WURMPLE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 4, SPECIES_WURMPLE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 4, SPECIES_WURMPLE
 
 sParty_Lyle: @ 0x082E1AA4
     @ TRAINER_LYLE (id 616, special 96): フジオ ; flags=0, partySize=4
-    trainer_mon_no_item_default 0, 3, SPECIES_WURMPLE
-    trainer_mon_no_item_default 0, 3, SPECIES_WURMPLE
-    trainer_mon_no_item_default 0, 3, SPECIES_WURMPLE
-    trainer_mon_no_item_default 0, 3, SPECIES_WURMPLE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 3, SPECIES_WURMPLE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 3, SPECIES_WURMPLE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 3, SPECIES_WURMPLE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 3, SPECIES_WURMPLE
 
 sParty_Jose: @ 0x082E1AC4
     @ TRAINER_JOSE (id 617, special 97): トモノリ ; flags=0, partySize=2
@@ -3087,22 +3057,22 @@ sParty_Jose: @ 0x082E1AC4
 
 sParty_Doug: @ 0x082E1AD4
     @ TRAINER_DOUG (id 618, special 98): オサム ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 28, SPECIES_NINCADA
-    trainer_mon_no_item_default 0, 28, SPECIES_NINJASK
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 28, SPECIES_NINCADA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 28, SPECIES_NINJASK
 
 sParty_Greg: @ 0x082E1AE4
     @ TRAINER_GREG (id 619, special 99): ヒロユキ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 25, SPECIES_VOLBEAT
-    trainer_mon_no_item_default 0, 25, SPECIES_ILLUMISE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_VOLBEAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_ILLUMISE
 
 sParty_Kent: @ 0x082E1AF4
     @ TRAINER_KENT (id 620, special 100): トモミチ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 25, SPECIES_NINJASK
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_NINJASK
 
 sParty_James1: @ 0x082E1AFC
     @ TRAINER_JAMES_1 (id 621, special 101): ミキヤ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 6, SPECIES_NINCADA
-    trainer_mon_no_item_default 0, 6, SPECIES_NINCADA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 6, SPECIES_NINCADA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 6, SPECIES_NINCADA
 
 sParty_James2: @ 0x082E1B0C
     @ TRAINER_JAMES_2 (id 622, special 102): ミキヤ ; flags=0, partySize=1
@@ -3128,54 +3098,54 @@ sParty_James5: @ 0x082E1B3C
 
 sParty_Brice: @ 0x082E1B5C
     @ TRAINER_BRICE (id 626, special 106): ハルノブ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 17, SPECIES_NUMEL
-    trainer_mon_no_item_default 0, 17, SPECIES_MACHOP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 17, SPECIES_NUMEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 17, SPECIES_MACHOP
 
 sParty_Trent1: @ 0x082E1B6C
     @ TRAINER_TRENT_1 (id 627, special 107): ケンサク ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 16, SPECIES_GEODUDE
-    trainer_mon_no_item_default 0, 17, SPECIES_GEODUDE
-    trainer_mon_no_item_default 0, 16, SPECIES_GEODUDE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 16, SPECIES_GEODUDE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 17, SPECIES_GEODUDE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 16, SPECIES_GEODUDE
 
 sParty_Lenny: @ 0x082E1B84
     @ TRAINER_LENNY (id 628, special 108): カツヒト ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 18, SPECIES_GEODUDE
-    trainer_mon_no_item_default 0, 18, SPECIES_MACHOP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_GEODUDE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_MACHOP
 
 sParty_Lucas1: @ 0x082E1B94
     @ TRAINER_LUCAS_1 (id 629, special 109): サブロウ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 18, SPECIES_GEODUDE
-    trainer_mon_no_item_default 0, 18, SPECIES_NUMEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_GEODUDE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_NUMEL
 
 sParty_Alan: @ 0x082E1BA4
     @ TRAINER_ALAN (id 630, special 110): マサノリ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 22, SPECIES_GEODUDE
-    trainer_mon_no_item_default 0, 22, SPECIES_NOSEPASS
-    trainer_mon_no_item_default 0, 22, SPECIES_GRAVELER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 22, SPECIES_GEODUDE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 22, SPECIES_NOSEPASS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 22, SPECIES_GRAVELER
 
 sParty_Clark: @ 0x082E1BBC
     @ TRAINER_CLARK (id 631, special 111): カズノリ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 8, SPECIES_GEODUDE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 8, SPECIES_GEODUDE
 
 sParty_Eric: @ 0x082E1BC4
     @ TRAINER_ERIC (id 632, special 112): ダイチ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 20, SPECIES_GEODUDE
-    trainer_mon_no_item_default 0, 20, SPECIES_BALTOY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 20, SPECIES_GEODUDE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 20, SPECIES_BALTOY
 
 sParty_Lucas2: @ 0x082E1BD4
     @ TRAINER_LUCAS_2 (id 633, special 113): サブロウ ; flags=1, partySize=1
-    trainer_mon_no_item_custom 0, 9, SPECIES_WAILMER, MOVE_SPLASH, MOVE_WATER_GUN, MOVE_NONE, MOVE_NONE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 9, SPECIES_WAILMER, MOVE_SPLASH, MOVE_WATER_GUN, MOVE_NONE, MOVE_NONE
 
 sParty_Mike1: @ 0x082E1BE4
     @ TRAINER_MIKE_1 (id 634, special 114): ノボル ; flags=1, partySize=2
-    trainer_mon_no_item_custom 0, 10, SPECIES_PELIPPER, MOVE_GUST, MOVE_GROWL, MOVE_NONE, MOVE_NONE
-    trainer_mon_no_item_custom 0, 10, SPECIES_POOCHYENA, MOVE_BITE, MOVE_SCARY_FACE, MOVE_NONE, MOVE_NONE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 10, SPECIES_PELIPPER, MOVE_GUST, MOVE_GROWL, MOVE_NONE, MOVE_NONE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 10, SPECIES_POOCHYENA, MOVE_BITE, MOVE_SCARY_FACE, MOVE_NONE, MOVE_NONE
 
 sParty_Mike2: @ 0x082E1C04
     @ TRAINER_MIKE_2 (id 635, special 115): ノボル ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 16, SPECIES_GEODUDE
-    trainer_mon_no_item_default 0, 16, SPECIES_GEODUDE
-    trainer_mon_no_item_default 0, 16, SPECIES_MACHOP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 16, SPECIES_GEODUDE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 16, SPECIES_GEODUDE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 16, SPECIES_MACHOP
 
 sParty_Trent2: @ 0x082E1C1C
     @ TRAINER_TRENT_2 (id 636, special 116): ケンサク ; flags=0, partySize=4
@@ -3207,18 +3177,18 @@ sParty_Trent5: @ 0x082E1C7C
 
 sParty_DezAndLuke: @ 0x082E1C9C
     @ TRAINER_DEZ_AND_LUKE (id 640, special 120): マコとテル ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 31, SPECIES_DELCATTY
-    trainer_mon_no_item_default 0, 31, SPECIES_MANECTRIC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_DELCATTY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_MANECTRIC
 
 sParty_LeaAndJed: @ 0x082E1CAC
     @ TRAINER_LEA_AND_JED (id 641, special 121): カホとジン ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 45, SPECIES_LUVDISC
-    trainer_mon_no_item_default 0, 45, SPECIES_LUVDISC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 45, SPECIES_LUVDISC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 45, SPECIES_LUVDISC
 
 sParty_KiraAndDan1: @ 0x082E1CBC
     @ TRAINER_KIRA_AND_DAN_1 (id 642, special 122): ナツとフミ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 25, SPECIES_VOLBEAT
-    trainer_mon_no_item_default 0, 25, SPECIES_ILLUMISE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_VOLBEAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_ILLUMISE
 
 sParty_KiraAndDan2: @ 0x082E1CCC
     @ TRAINER_KIRA_AND_DAN_2 (id 643, special 123): ナツとフミ ; flags=0, partySize=2
@@ -3242,7 +3212,7 @@ sParty_KiraAndDan5: @ 0x082E1CFC
 
 sParty_Johanna: @ 0x082E1D0C
     @ TRAINER_JOHANNA (id 647, special 127): アツコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 13, SPECIES_GOLDEEN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 13, SPECIES_GOLDEEN
 
 sParty_Gerald: @ 0x082E1D14
     @ TRAINER_GERALD (id 648, special 128): タクロウ ; flags=1, partySize=1
@@ -3259,18 +3229,18 @@ sParty_Danielle: @ 0x082E1D44
 
 sParty_Hideo: @ 0x082E1D54
     @ TRAINER_HIDEO (id 651, special 131): カツハル ; flags=1, partySize=2
-    trainer_mon_no_item_custom 0, 25, SPECIES_KOFFING, MOVE_TACKLE, MOVE_SELF_DESTRUCT, MOVE_SLUDGE, MOVE_SMOKESCREEN
-    trainer_mon_no_item_custom 0, 25, SPECIES_KOFFING, MOVE_TACKLE, MOVE_POISON_GAS, MOVE_SLUDGE, MOVE_SMOKESCREEN
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 25, SPECIES_KOFFING, MOVE_TACKLE, MOVE_SELF_DESTRUCT, MOVE_SLUDGE, MOVE_SMOKESCREEN
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 25, SPECIES_KOFFING, MOVE_TACKLE, MOVE_POISON_GAS, MOVE_SLUDGE, MOVE_SMOKESCREEN
 
 sParty_Keigo: @ 0x082E1D74
     @ TRAINER_KEIGO (id 652, special 132): テツジ ; flags=1, partySize=2
-    trainer_mon_no_item_custom 0, 28, SPECIES_KOFFING, MOVE_POISON_GAS, MOVE_SELF_DESTRUCT, MOVE_SLUDGE, MOVE_SMOKESCREEN
-    trainer_mon_no_item_custom 0, 28, SPECIES_NINJASK, MOVE_SAND_ATTACK, MOVE_DOUBLE_TEAM, MOVE_FURY_CUTTER, MOVE_SWORDS_DANCE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 28, SPECIES_KOFFING, MOVE_POISON_GAS, MOVE_SELF_DESTRUCT, MOVE_SLUDGE, MOVE_SMOKESCREEN
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 28, SPECIES_NINJASK, MOVE_SAND_ATTACK, MOVE_DOUBLE_TEAM, MOVE_FURY_CUTTER, MOVE_SWORDS_DANCE
 
 sParty_Riley: @ 0x082E1D94
     @ TRAINER_RILEY (id 653, special 133): タダヒロ ; flags=1, partySize=2
-    trainer_mon_no_item_custom 0, 28, SPECIES_NINCADA, MOVE_LEECH_LIFE, MOVE_FURY_SWIPES, MOVE_MIND_READER, MOVE_DIG
-    trainer_mon_no_item_custom 0, 28, SPECIES_KOFFING, MOVE_TACKLE, MOVE_SELF_DESTRUCT, MOVE_SLUDGE, MOVE_SMOKESCREEN
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 28, SPECIES_NINCADA, MOVE_LEECH_LIFE, MOVE_FURY_SWIPES, MOVE_MIND_READER, MOVE_DIG
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 28, SPECIES_KOFFING, MOVE_TACKLE, MOVE_SELF_DESTRUCT, MOVE_SLUDGE, MOVE_SMOKESCREEN
 
 sParty_Flint: @ 0x082E1DB4
     @ TRAINER_FLINT (id 654, special 134): テルオ ; flags=0, partySize=2
@@ -3363,20 +3333,20 @@ sParty_MayLilycoveTorchic: @ 0x082E1FC4
 
 sParty_Jonah: @ 0x082E1FE4
     @ TRAINER_JONAH (id 667, special 147): ヨシノリ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 30, SPECIES_WAILMER
-    trainer_mon_no_item_default 0, 31, SPECIES_TENTACOOL
-    trainer_mon_no_item_default 0, 32, SPECIES_SHARPEDO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 30, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_SHARPEDO
 
 sParty_Henry: @ 0x082E1FFC
     @ TRAINER_HENRY (id 668, special 148): ケンタロウ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 31, SPECIES_CARVANHA
-    trainer_mon_no_item_default 0, 34, SPECIES_TENTACRUEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_TENTACRUEL
 
 sParty_Roger: @ 0x082E200C
     @ TRAINER_ROGER (id 669, special 149): トモヒコ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 15, SPECIES_MAGIKARP
-    trainer_mon_no_item_default 0, 25, SPECIES_MAGIKARP
-    trainer_mon_no_item_default 0, 35, SPECIES_GYARADOS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 15, SPECIES_MAGIKARP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_MAGIKARP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 35, SPECIES_GYARADOS
 
 sParty_Alexa: @ 0x082E2024
     @ TRAINER_ALEXA (id 670, special 150): サヤカ ; flags=0, partySize=2
@@ -3390,47 +3360,47 @@ sParty_Ruben: @ 0x082E2034
 
 sParty_Koji1: @ 0x082E2044
     @ TRAINER_KOJI_1 (id 672, special 152): テツロウ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_MACHOKE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_MACHOKE
 
 sParty_Wayne: @ 0x082E204C
     @ TRAINER_WAYNE (id 673, special 153): コウサク ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 31, SPECIES_TENTACOOL
-    trainer_mon_no_item_default 0, 31, SPECIES_TENTACOOL
-    trainer_mon_no_item_default 0, 36, SPECIES_WAILMER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 31, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 36, SPECIES_WAILMER
 
 sParty_Aidan: @ 0x082E2064
     @ TRAINER_AIDAN (id 674, special 154): イクオ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 32, SPECIES_SWELLOW
-    trainer_mon_no_item_default 0, 32, SPECIES_SKARMORY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_SWELLOW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 32, SPECIES_SKARMORY
 
 sParty_Reed: @ 0x082E2074
     @ TRAINER_REED (id 675, special 155): アキオ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_SPHEAL
-    trainer_mon_no_item_default 0, 33, SPECIES_SHARPEDO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_SPHEAL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_SHARPEDO
 
 sParty_Tisha: @ 0x082E2084
     @ TRAINER_TISHA (id 676, special 156): ユカリ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 34, SPECIES_CHINCHOU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_CHINCHOU
 
 sParty_ToriAndTia: @ 0x082E208C
     @ TRAINER_TORI_AND_TIA (id 677, special 157): ナナとネネ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 19, SPECIES_SPINDA
-    trainer_mon_no_item_default 0, 19, SPECIES_SPINDA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 19, SPECIES_SPINDA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 19, SPECIES_SPINDA
 
 sParty_KimAndIris: @ 0x082E209C
     @ TRAINER_KIM_AND_IRIS (id 678, special 158): マホとナホ ; flags=1, partySize=2
-    trainer_mon_no_item_custom 0, 32, SPECIES_SWABLU, MOVE_SING, MOVE_FURY_ATTACK, MOVE_SAFEGUARD, MOVE_AERIAL_ACE
-    trainer_mon_no_item_custom 0, 35, SPECIES_NUMEL, MOVE_FLAMETHROWER, MOVE_TAKE_DOWN, MOVE_REST, MOVE_EARTHQUAKE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 32, SPECIES_SWABLU, MOVE_SING, MOVE_FURY_ATTACK, MOVE_SAFEGUARD, MOVE_AERIAL_ACE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 35, SPECIES_NUMEL, MOVE_FLAMETHROWER, MOVE_TAKE_DOWN, MOVE_REST, MOVE_EARTHQUAKE
 
 sParty_TyraAndIvy: @ 0x082E20BC
     @ TRAINER_TYRA_AND_IVY (id 679, special 159): カヨとイヨ ; flags=1, partySize=2
-    trainer_mon_no_item_custom 0, 18, SPECIES_ROSELIA, MOVE_GROWTH, MOVE_STUN_SPORE, MOVE_MEGA_DRAIN, MOVE_LEECH_SEED
-    trainer_mon_no_item_custom 0, 20, SPECIES_GRAVELER, MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_MUD_SPORT, MOVE_ROCK_THROW
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 18, SPECIES_ROSELIA, MOVE_GROWTH, MOVE_STUN_SPORE, MOVE_MEGA_DRAIN, MOVE_LEECH_SEED
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 20, SPECIES_GRAVELER, MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_MUD_SPORT, MOVE_ROCK_THROW
 
 sParty_MelAndPaul: @ 0x082E20DC
     @ TRAINER_MEL_AND_PAUL (id 680, special 160): シキとリキ ; flags=1, partySize=2
-    trainer_mon_no_item_custom 0, 27, SPECIES_DUSTOX, MOVE_GUST, MOVE_PSYBEAM, MOVE_TOXIC, MOVE_PROTECT
-    trainer_mon_no_item_custom 0, 27, SPECIES_BEAUTIFLY, MOVE_GUST, MOVE_MEGA_DRAIN, MOVE_ATTRACT, MOVE_STUN_SPORE
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 27, SPECIES_DUSTOX, MOVE_GUST, MOVE_PSYBEAM, MOVE_TOXIC, MOVE_PROTECT
+    trainer_mon_no_item_custom TRAINER_MON_IV_MIN, 27, SPECIES_BEAUTIFLY, MOVE_GUST, MOVE_MEGA_DRAIN, MOVE_ATTRACT, MOVE_STUN_SPORE
 
 sParty_JohnAndJay1: @ 0x082E20FC
     @ TRAINER_JOHN_AND_JAY_1 (id 681, special 161): ゲンとハツ ; flags=1, partySize=2
@@ -3459,82 +3429,82 @@ sParty_JohnAndJay5: @ 0x082E217C
 
 sParty_ReliAndIan: @ 0x082E219C
     @ TRAINER_RELI_AND_IAN (id 686, special 166): カツとアミ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 35, SPECIES_AZUMARILL
-    trainer_mon_no_item_default 0, 33, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 35, SPECIES_AZUMARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_WINGULL
 
 sParty_LilaAndRoy1: @ 0x082E21AC
     @ TRAINER_LILA_AND_ROY_1 (id 687, special 167): コウとカコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 34, SPECIES_CHINCHOU
-    trainer_mon_no_item_default 0, 33, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 34, SPECIES_CHINCHOU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_CARVANHA
 
 sParty_LilaAndRoy2: @ 0x082E21BC
     @ TRAINER_LILA_AND_ROY_2 (id 688, special 168): コウとカコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 42, SPECIES_CHINCHOU
-    trainer_mon_no_item_default 0, 40, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 42, SPECIES_CHINCHOU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 40, SPECIES_CARVANHA
 
 sParty_LilaAndRoy3: @ 0x082E21CC
     @ TRAINER_LILA_AND_ROY_3 (id 689, special 169): コウとカコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 45, SPECIES_LANTURN
-    trainer_mon_no_item_default 0, 43, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 45, SPECIES_LANTURN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 43, SPECIES_CARVANHA
 
 sParty_LilaAndRoy4: @ 0x082E21DC
     @ TRAINER_LILA_AND_ROY_4 (id 690, special 170): コウとカコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 48, SPECIES_LANTURN
-    trainer_mon_no_item_default 0, 46, SPECIES_SHARPEDO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 48, SPECIES_LANTURN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 46, SPECIES_SHARPEDO
 
 sParty_LilaAndRoy5: @ 0x082E21EC
     @ TRAINER_LILA_AND_ROY_5 (id 691, special 171): コウとカコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 51, SPECIES_LANTURN
-    trainer_mon_no_item_default 0, 49, SPECIES_SHARPEDO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 51, SPECIES_LANTURN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 49, SPECIES_SHARPEDO
 
 sParty_LisaAndRay: @ 0x082E21FC
     @ TRAINER_LISA_AND_RAY (id 692, special 172): シンとユミ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 27, SPECIES_GOLDEEN
-    trainer_mon_no_item_default 0, 25, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 27, SPECIES_GOLDEEN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_TENTACOOL
 
 sParty_Chris: @ 0x082E220C
     @ TRAINER_CHRIS (id 693, special 173): マサシ ; flags=0, partySize=4
-    trainer_mon_no_item_default 0, 29, SPECIES_MAGIKARP
-    trainer_mon_no_item_default 0, 20, SPECIES_TENTACOOL
-    trainer_mon_no_item_default 0, 26, SPECIES_FEEBAS
-    trainer_mon_no_item_default 0, 23, SPECIES_CARVANHA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_MAGIKARP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 20, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_FEEBAS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 23, SPECIES_CARVANHA
 
 sParty_Dawson: @ 0x082E222C
     @ TRAINER_DAWSON (id 694, special 174): ノゾム ; flags=2, partySize=2
-    trainer_mon_item_default 0, 8, SPECIES_ZIGZAGOON, ITEM_NUGGET
-    trainer_mon_item_default 0, 8, SPECIES_POOCHYENA, ITEM_NONE
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 8, SPECIES_ZIGZAGOON, ITEM_NUGGET
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 8, SPECIES_POOCHYENA, ITEM_NONE
 
 sParty_Sarah: @ 0x082E223C
     @ TRAINER_SARAH (id 695, special 175): サクラコ ; flags=2, partySize=2
-    trainer_mon_item_default 0, 8, SPECIES_LOTAD, ITEM_NONE
-    trainer_mon_item_default 0, 8, SPECIES_ZIGZAGOON, ITEM_NUGGET
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 8, SPECIES_LOTAD, ITEM_NONE
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 8, SPECIES_ZIGZAGOON, ITEM_NUGGET
 
 sParty_Darian: @ 0x082E224C
     @ TRAINER_DARIAN (id 696, special 176): ケンキチ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 9, SPECIES_MAGIKARP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 9, SPECIES_MAGIKARP
 
 sParty_Hailey: @ 0x082E2254
     @ TRAINER_HAILEY (id 697, special 177): ハナ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 13, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 13, SPECIES_MARILL
 
 sParty_Chandler: @ 0x082E225C
     @ TRAINER_CHANDLER (id 698, special 178): タイスケ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 12, SPECIES_TENTACOOL
-    trainer_mon_no_item_default 0, 12, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 12, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 12, SPECIES_TENTACOOL
 
 sParty_Kaleb: @ 0x082E226C
     @ TRAINER_KALEB (id 699, special 179): マサタカ ; flags=2, partySize=2
-    trainer_mon_item_default 0, 14, SPECIES_MINUN, ITEM_ORAN_BERRY
-    trainer_mon_item_default 0, 14, SPECIES_PLUSLE, ITEM_ORAN_BERRY
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 14, SPECIES_MINUN, ITEM_ORAN_BERRY
+    trainer_mon_item_default TRAINER_MON_IV_MIN, 14, SPECIES_PLUSLE, ITEM_ORAN_BERRY
 
 sParty_Joseph: @ 0x082E227C
     @ TRAINER_JOSEPH (id 700, special 180): ポール ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 14, SPECIES_ELECTRIKE
-    trainer_mon_no_item_default 0, 14, SPECIES_VOLTORB
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_ELECTRIKE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_VOLTORB
 
 sParty_Alyssa: @ 0x082E228C
     @ TRAINER_ALYSSA (id 701, special 181): サエミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 15, SPECIES_MAGNEMITE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 15, SPECIES_MAGNEMITE
 
 sParty_Marcos: @ 0x082E2294
     @ TRAINER_MARCOS (id 702, special 182): エリック ; flags=0, partySize=1
@@ -3546,124 +3516,124 @@ sParty_Rhett: @ 0x082E229C
 
 sParty_Tyron: @ 0x082E22A4
     @ TRAINER_TYRON (id 704, special 184): トシフミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 19, SPECIES_SANDSHREW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 19, SPECIES_SANDSHREW
 
 sParty_Celina: @ 0x082E22AC
     @ TRAINER_CELINA (id 705, special 185): ワカコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 18, SPECIES_ROSELIA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_ROSELIA
 
 sParty_Bianca: @ 0x082E22B4
     @ TRAINER_BIANCA (id 706, special 186): イオリ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 18, SPECIES_SHROOMISH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_SHROOMISH
 
 sParty_Hayden: @ 0x082E22BC
     @ TRAINER_HAYDEN (id 707, special 187): クニアキ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 18, SPECIES_NUMEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_NUMEL
 
 sParty_Sophie: @ 0x082E22C4
     @ TRAINER_SOPHIE (id 708, special 188): ノドカ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 17, SPECIES_MARILL
-    trainer_mon_no_item_default 0, 19, SPECIES_LOMBRE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 17, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 19, SPECIES_LOMBRE
 
 sParty_Coby: @ 0x082E22D4
     @ TRAINER_COBY (id 709, special 189): カズタカ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 17, SPECIES_SKARMORY
-    trainer_mon_no_item_default 0, 19, SPECIES_SWELLOW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 17, SPECIES_SKARMORY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 19, SPECIES_SWELLOW
 
 sParty_Lawrence: @ 0x082E22E4
     @ TRAINER_LAWRENCE (id 710, special 190): ユウゴ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 18, SPECIES_BALTOY
-    trainer_mon_no_item_default 0, 18, SPECIES_SANDSHREW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_BALTOY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_SANDSHREW
 
 sParty_Wyatt: @ 0x082E22F4
     @ TRAINER_WYATT (id 711, special 191): ミチオ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 18, SPECIES_ARON
-    trainer_mon_no_item_default 0, 18, SPECIES_ARON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_ARON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_ARON
 
 sParty_Angelina: @ 0x082E2304
     @ TRAINER_ANGELINA (id 712, special 192): マツリ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 18, SPECIES_LOMBRE
-    trainer_mon_no_item_default 0, 18, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_LOMBRE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_MARILL
 
 sParty_Kai: @ 0x082E2314
     @ TRAINER_KAI (id 713, special 193): ヒロミツ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 19, SPECIES_BARBOACH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 19, SPECIES_BARBOACH
 
 sParty_Charlotte: @ 0x082E231C
     @ TRAINER_CHARLOTTE (id 714, special 194): ミナミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 19, SPECIES_NUZLEAF
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 19, SPECIES_NUZLEAF
 
 sParty_Deandre: @ 0x082E2324
     @ TRAINER_DEANDRE (id 715, special 195): マサヤ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 14, SPECIES_ZIGZAGOON
-    trainer_mon_no_item_default 0, 14, SPECIES_ARON
-    trainer_mon_no_item_default 0, 14, SPECIES_ELECTRIKE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_ZIGZAGOON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_ARON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 14, SPECIES_ELECTRIKE
 
 sParty_GruntMagmaHideout1: @ 0x082E233C
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_1 (id 716, special 196): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_ZUBAT
 
 sParty_GruntMagmaHideout2: @ 0x082E2344
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_2 (id 717, special 197): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_POOCHYENA
 
 sParty_GruntMagmaHideout3: @ 0x082E234C
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_3 (id 718, special 198): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_NUMEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_NUMEL
 
 sParty_GruntMagmaHideout4: @ 0x082E2354
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_4 (id 719, special 199): したっぱ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 28, SPECIES_BALTOY
-    trainer_mon_no_item_default 0, 28, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 28, SPECIES_BALTOY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 28, SPECIES_ZUBAT
 
 sParty_GruntMagmaHideout5: @ 0x082E2364
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_5 (id 720, special 200): したっぱ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 28, SPECIES_BALTOY
-    trainer_mon_no_item_default 0, 28, SPECIES_NUMEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 28, SPECIES_BALTOY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 28, SPECIES_NUMEL
 
 sParty_GruntMagmaHideout6: @ 0x082E2374
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_6 (id 721, special 201): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_MIGHTYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_MIGHTYENA
 
 sParty_GruntMagmaHideout7: @ 0x082E237C
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_7 (id 722, special 202): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_ZUBAT
 
 sParty_GruntMagmaHideout8: @ 0x082E2384
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_8 (id 723, special 203): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_POOCHYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_POOCHYENA
 
 sParty_GruntMagmaHideout9: @ 0x082E238C
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_9 (id 724, special 204): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_ZUBAT
 
 sParty_GruntMagmaHideout10: @ 0x082E2394
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_10 (id 725, special 205): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_MIGHTYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_MIGHTYENA
 
 sParty_GruntMagmaHideout11: @ 0x082E239C
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_11 (id 726, special 206): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_BALTOY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_BALTOY
 
 sParty_GruntMagmaHideout12: @ 0x082E23A4
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_12 (id 727, special 207): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_NUMEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_NUMEL
 
 sParty_GruntMagmaHideout13: @ 0x082E23AC
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_13 (id 728, special 208): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_ZUBAT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_ZUBAT
 
 sParty_GruntMagmaHideout14: @ 0x082E23B4
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_14 (id 729, special 209): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_MIGHTYENA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_MIGHTYENA
 
 sParty_GruntMagmaHideout15: @ 0x082E23BC
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_15 (id 730, special 210): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_NUMEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_NUMEL
 
 sParty_GruntMagmaHideout16: @ 0x082E23C4
     @ TRAINER_GRUNT_MAGMA_HIDEOUT_16 (id 731, special 211): したっぱ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 29, SPECIES_BALTOY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_BALTOY
 
 sParty_TabithaMagmaHideout: @ 0x082E23CC
     @ TRAINER_TABITHA_MAGMA_HIDEOUT (id 732, special 212): ホムラ ; flags=0, partySize=4
@@ -3674,8 +3644,8 @@ sParty_TabithaMagmaHideout: @ 0x082E23CC
 
 sParty_Darcy: @ 0x082E23EC
     @ TRAINER_DARCY (id 733, special 213): ナルミ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_PELIPPER
-    trainer_mon_no_item_default 0, 33, SPECIES_CAMERUPT
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_PELIPPER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_CAMERUPT
 
 sParty_MaxieMossdeep: @ 0x082E23FC
     @ TRAINER_MAXIE_MOSSDEEP (id 734, special 214): マツブサ ; flags=0, partySize=3
@@ -3685,11 +3655,11 @@ sParty_MaxieMossdeep: @ 0x082E23FC
 
 sParty_Pete: @ 0x082E2414
     @ TRAINER_PETE (id 735, special 215): ヒデヒコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 15, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 15, SPECIES_TENTACOOL
 
 sParty_Isabelle: @ 0x082E241C
     @ TRAINER_ISABELLE (id 736, special 216): ユミコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 15, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 15, SPECIES_MARILL
 
 sParty_Andres1: @ 0x082E2424
     @ TRAINER_ANDRES_1 (id 737, special 217): ダイジロウ ; flags=0, partySize=2
@@ -3703,13 +3673,13 @@ sParty_Josue: @ 0x082E2434
 
 sParty_Camron: @ 0x082E2444
     @ TRAINER_CAMRON (id 739, special 219): クニオ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_STARYU
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_STARYU
 
 sParty_Cory1: @ 0x082E244C
     @ TRAINER_CORY_1 (id 740, special 220): ノリタカ ; flags=0, partySize=3
-    trainer_mon_no_item_default 0, 24, SPECIES_WINGULL
-    trainer_mon_no_item_default 0, 24, SPECIES_MACHOP
-    trainer_mon_no_item_default 0, 24, SPECIES_TENTACOOL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 24, SPECIES_WINGULL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 24, SPECIES_MACHOP
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 24, SPECIES_TENTACOOL
 
 sParty_Carolina: @ 0x082E2464
     @ TRAINER_CAROLINA (id 741, special 221): セイカ ; flags=0, partySize=3
@@ -3719,98 +3689,98 @@ sParty_Carolina: @ 0x082E2464
 
 sParty_Elijah: @ 0x082E247C
     @ TRAINER_ELIJAH (id 742, special 222): トシタカ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 25, SPECIES_SKARMORY
-    trainer_mon_no_item_default 0, 25, SPECIES_SKARMORY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_SKARMORY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_SKARMORY
 
 sParty_Celia: @ 0x082E248C
     @ TRAINER_CELIA (id 743, special 223): アキコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 22, SPECIES_MARILL
-    trainer_mon_no_item_default 0, 22, SPECIES_LOMBRE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 22, SPECIES_MARILL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 22, SPECIES_LOMBRE
 
 sParty_Bryan: @ 0x082E249C
     @ TRAINER_BRYAN (id 744, special 224): ヒロトシ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 22, SPECIES_SANDSHREW
-    trainer_mon_no_item_default 0, 22, SPECIES_SANDSLASH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 22, SPECIES_SANDSHREW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 22, SPECIES_SANDSLASH
 
 sParty_Branden: @ 0x082E24AC
     @ TRAINER_BRANDEN (id 745, special 225): ヤスノリ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 22, SPECIES_TAILLOW
-    trainer_mon_no_item_default 0, 22, SPECIES_NUZLEAF
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 22, SPECIES_TAILLOW
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 22, SPECIES_NUZLEAF
 
 sParty_Bryant: @ 0x082E24BC
     @ TRAINER_BRYANT (id 746, special 226): アツオ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 18, SPECIES_NUMEL
-    trainer_mon_no_item_default 0, 18, SPECIES_SLUGMA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_NUMEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_SLUGMA
 
 sParty_Shayla: @ 0x082E24CC
     @ TRAINER_SHAYLA (id 747, special 227): タエコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 18, SPECIES_SHROOMISH
-    trainer_mon_no_item_default 0, 18, SPECIES_ROSELIA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_SHROOMISH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_ROSELIA
 
 sParty_Kyra: @ 0x082E24DC
     @ TRAINER_KYRA (id 748, special 228): リンコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 26, SPECIES_DODUO
-    trainer_mon_no_item_default 0, 26, SPECIES_DODRIO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_DODUO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_DODRIO
 
 sParty_Jaiden: @ 0x082E24EC
     @ TRAINER_JAIDEN (id 749, special 229): ユウゾウ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 26, SPECIES_NINJASK
-    trainer_mon_no_item_default 0, 26, SPECIES_GULPIN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_NINJASK
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_GULPIN
 
 sParty_Alix: @ 0x082E24FC
     @ TRAINER_ALIX (id 750, special 230): シノ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 26, SPECIES_KADABRA
-    trainer_mon_no_item_default 0, 26, SPECIES_KIRLIA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_KADABRA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_KIRLIA
 
 sParty_Helene: @ 0x082E250C
     @ TRAINER_HELENE (id 751, special 231): チトセ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 26, SPECIES_MEDITITE
-    trainer_mon_no_item_default 0, 26, SPECIES_MAKUHITA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_MEDITITE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_MAKUHITA
 
 sParty_Marlene: @ 0x082E251C
     @ TRAINER_MARLENE (id 752, special 232): リネ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 18, SPECIES_MEDITITE
-    trainer_mon_no_item_default 0, 18, SPECIES_SPOINK
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_MEDITITE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 18, SPECIES_SPOINK
 
 sParty_Devan: @ 0x082E252C
     @ TRAINER_DEVAN (id 753, special 233): ミチヤス ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 8, SPECIES_GEODUDE
-    trainer_mon_no_item_default 0, 8, SPECIES_GEODUDE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 8, SPECIES_GEODUDE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 8, SPECIES_GEODUDE
 
 sParty_Johnson: @ 0x082E253C
     @ TRAINER_JOHNSON (id 754, special 234): ユウリ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 8, SPECIES_SHROOMISH
-    trainer_mon_no_item_default 0, 8, SPECIES_LOTAD
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 8, SPECIES_SHROOMISH
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 8, SPECIES_LOTAD
 
 sParty_Melina: @ 0x082E254C
     @ TRAINER_MELINA (id 755, special 235): モトコ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 17, SPECIES_DODUO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 17, SPECIES_DODUO
 
 sParty_Brandi: @ 0x082E2554
     @ TRAINER_BRANDI (id 756, special 236): ミナツ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 17, SPECIES_RALTS
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 17, SPECIES_RALTS
 
 sParty_Aisha: @ 0x082E255C
     @ TRAINER_AISHA (id 757, special 237): シマ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 17, SPECIES_MEDITITE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 17, SPECIES_MEDITITE
 
 sParty_Makayla: @ 0x082E2564
     @ TRAINER_MAKAYLA (id 758, special 238): スズ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 33, SPECIES_ROSELIA
-    trainer_mon_no_item_default 0, 33, SPECIES_MEDICHAM
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_ROSELIA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 33, SPECIES_MEDICHAM
 
 sParty_Fabian: @ 0x082E2574
     @ TRAINER_FABIAN (id 759, special 239): ジミー ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_MANECTRIC
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_MANECTRIC
 
 sParty_Dayton: @ 0x082E257C
     @ TRAINER_DAYTON (id 760, special 240): アツヒロ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 25, SPECIES_SLUGMA
-    trainer_mon_no_item_default 0, 25, SPECIES_NUMEL
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_SLUGMA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 25, SPECIES_NUMEL
 
 sParty_Rachel: @ 0x082E258C
     @ TRAINER_RACHEL (id 761, special 241): ミヅキ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 26, SPECIES_GOLDEEN
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 26, SPECIES_GOLDEEN
 
 sParty_Leonel: @ 0x082E2594
     @ TRAINER_LEONEL (id 762, special 242): カズヒロ ; flags=1, partySize=1
@@ -3818,13 +3788,13 @@ sParty_Leonel: @ 0x082E2594
 
 sParty_Callie: @ 0x082E25A4
     @ TRAINER_CALLIE (id 763, special 243): フウコ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 28, SPECIES_MEDITITE
-    trainer_mon_no_item_default 0, 28, SPECIES_MAKUHITA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 28, SPECIES_MEDITITE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 28, SPECIES_MAKUHITA
 
 sParty_Cale: @ 0x082E25B4
     @ TRAINER_CALE (id 764, special 244): ケンスケ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 29, SPECIES_DUSTOX
-    trainer_mon_no_item_default 0, 29, SPECIES_BEAUTIFLY
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_DUSTOX
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 29, SPECIES_BEAUTIFLY
 
 sParty_Myles: @ 0x082E25C4
     @ TRAINER_MYLES (id 765, special 245): ヤスオ ; flags=0, partySize=6
@@ -3861,267 +3831,267 @@ sParty_MayRustboroTorchic: @ 0x082E2644
 
 sParty_Roxanne2: @ 0x082E2654
     @ TRAINER_ROXANNE_2 (id 770, special 250): ツツジ ; flags=3, partySize=4
-    trainer_mon_item_custom 255, 32, SPECIES_GOLEM, ITEM_NONE, MOVE_PROTECT, MOVE_ROLLOUT, MOVE_MAGNITUDE, MOVE_EXPLOSION
-    trainer_mon_item_custom 255, 35, SPECIES_KABUTO, ITEM_SITRUS_BERRY, MOVE_SWORDS_DANCE, MOVE_ICE_BEAM, MOVE_SURF, MOVE_ROCK_SLIDE
-    trainer_mon_item_custom 255, 35, SPECIES_ONIX, ITEM_NONE, MOVE_IRON_TAIL, MOVE_EXPLOSION, MOVE_ROAR, MOVE_ROCK_SLIDE
-    trainer_mon_item_custom 255, 37, SPECIES_NOSEPASS, ITEM_SITRUS_BERRY, MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 32, SPECIES_GOLEM, ITEM_NONE, MOVE_PROTECT, MOVE_ROLLOUT, MOVE_MAGNITUDE, MOVE_EXPLOSION
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 35, SPECIES_KABUTO, ITEM_SITRUS_BERRY, MOVE_SWORDS_DANCE, MOVE_ICE_BEAM, MOVE_SURF, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 35, SPECIES_ONIX, ITEM_NONE, MOVE_IRON_TAIL, MOVE_EXPLOSION, MOVE_ROAR, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 37, SPECIES_NOSEPASS, ITEM_SITRUS_BERRY, MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE
 
 sParty_Roxanne3: @ 0x082E2694
     @ TRAINER_ROXANNE_3 (id 771, special 251): ツツジ ; flags=3, partySize=5
-    trainer_mon_item_custom 255, 37, SPECIES_OMANYTE, ITEM_NONE, MOVE_PROTECT, MOVE_ICE_BEAM, MOVE_ROCK_SLIDE, MOVE_SURF
-    trainer_mon_item_custom 255, 37, SPECIES_GOLEM, ITEM_NONE, MOVE_PROTECT, MOVE_ROLLOUT, MOVE_MAGNITUDE, MOVE_EXPLOSION
-    trainer_mon_item_custom 255, 40, SPECIES_KABUTOPS, ITEM_SITRUS_BERRY, MOVE_SWORDS_DANCE, MOVE_ICE_BEAM, MOVE_SURF, MOVE_ROCK_SLIDE
-    trainer_mon_item_custom 255, 40, SPECIES_ONIX, ITEM_NONE, MOVE_IRON_TAIL, MOVE_EXPLOSION, MOVE_ROAR, MOVE_ROCK_SLIDE
-    trainer_mon_item_custom 255, 42, SPECIES_NOSEPASS, ITEM_SITRUS_BERRY, MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 37, SPECIES_OMANYTE, ITEM_NONE, MOVE_PROTECT, MOVE_ICE_BEAM, MOVE_ROCK_SLIDE, MOVE_SURF
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 37, SPECIES_GOLEM, ITEM_NONE, MOVE_PROTECT, MOVE_ROLLOUT, MOVE_MAGNITUDE, MOVE_EXPLOSION
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 40, SPECIES_KABUTOPS, ITEM_SITRUS_BERRY, MOVE_SWORDS_DANCE, MOVE_ICE_BEAM, MOVE_SURF, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 40, SPECIES_ONIX, ITEM_NONE, MOVE_IRON_TAIL, MOVE_EXPLOSION, MOVE_ROAR, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 42, SPECIES_NOSEPASS, ITEM_SITRUS_BERRY, MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE
 
 sParty_Roxanne4: @ 0x082E26E4
     @ TRAINER_ROXANNE_4 (id 772, special 252): ツツジ ; flags=3, partySize=5
-    trainer_mon_item_custom 255, 42, SPECIES_OMASTAR, ITEM_NONE, MOVE_PROTECT, MOVE_ICE_BEAM, MOVE_ROCK_SLIDE, MOVE_SURF
-    trainer_mon_item_custom 255, 42, SPECIES_GOLEM, ITEM_NONE, MOVE_PROTECT, MOVE_ROLLOUT, MOVE_EARTHQUAKE, MOVE_EXPLOSION
-    trainer_mon_item_custom 255, 45, SPECIES_KABUTOPS, ITEM_SITRUS_BERRY, MOVE_SWORDS_DANCE, MOVE_ICE_BEAM, MOVE_SURF, MOVE_ROCK_SLIDE
-    trainer_mon_item_custom 255, 45, SPECIES_ONIX, ITEM_NONE, MOVE_IRON_TAIL, MOVE_EXPLOSION, MOVE_ROAR, MOVE_ROCK_SLIDE
-    trainer_mon_item_custom 255, 47, SPECIES_NOSEPASS, ITEM_SITRUS_BERRY, MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 42, SPECIES_OMASTAR, ITEM_NONE, MOVE_PROTECT, MOVE_ICE_BEAM, MOVE_ROCK_SLIDE, MOVE_SURF
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 42, SPECIES_GOLEM, ITEM_NONE, MOVE_PROTECT, MOVE_ROLLOUT, MOVE_EARTHQUAKE, MOVE_EXPLOSION
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 45, SPECIES_KABUTOPS, ITEM_SITRUS_BERRY, MOVE_SWORDS_DANCE, MOVE_ICE_BEAM, MOVE_SURF, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 45, SPECIES_ONIX, ITEM_NONE, MOVE_IRON_TAIL, MOVE_EXPLOSION, MOVE_ROAR, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 47, SPECIES_NOSEPASS, ITEM_SITRUS_BERRY, MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE
 
 sParty_Roxanne5: @ 0x082E2734
     @ TRAINER_ROXANNE_5 (id 773, special 253): ツツジ ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 47, SPECIES_AERODACTYL, ITEM_NONE, MOVE_ROCK_SLIDE, MOVE_HYPER_BEAM, MOVE_SUPERSONIC, MOVE_PROTECT
-    trainer_mon_item_custom 255, 47, SPECIES_GOLEM, ITEM_NONE, MOVE_FOCUS_PUNCH, MOVE_ROLLOUT, MOVE_EARTHQUAKE, MOVE_EXPLOSION
-    trainer_mon_item_custom 255, 47, SPECIES_OMASTAR, ITEM_NONE, MOVE_PROTECT, MOVE_ICE_BEAM, MOVE_ROCK_SLIDE, MOVE_SURF
-    trainer_mon_item_custom 255, 50, SPECIES_KABUTOPS, ITEM_SITRUS_BERRY, MOVE_SWORDS_DANCE, MOVE_ICE_BEAM, MOVE_SURF, MOVE_ROCK_SLIDE
-    trainer_mon_item_custom 255, 50, SPECIES_STEELIX, ITEM_NONE, MOVE_IRON_TAIL, MOVE_EXPLOSION, MOVE_ROAR, MOVE_ROCK_SLIDE
-    trainer_mon_item_custom 255, 52, SPECIES_NOSEPASS, ITEM_SITRUS_BERRY, MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 47, SPECIES_AERODACTYL, ITEM_NONE, MOVE_ROCK_SLIDE, MOVE_HYPER_BEAM, MOVE_SUPERSONIC, MOVE_PROTECT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 47, SPECIES_GOLEM, ITEM_NONE, MOVE_FOCUS_PUNCH, MOVE_ROLLOUT, MOVE_EARTHQUAKE, MOVE_EXPLOSION
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 47, SPECIES_OMASTAR, ITEM_NONE, MOVE_PROTECT, MOVE_ICE_BEAM, MOVE_ROCK_SLIDE, MOVE_SURF
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 50, SPECIES_KABUTOPS, ITEM_SITRUS_BERRY, MOVE_SWORDS_DANCE, MOVE_ICE_BEAM, MOVE_SURF, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 50, SPECIES_STEELIX, ITEM_NONE, MOVE_IRON_TAIL, MOVE_EXPLOSION, MOVE_ROAR, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 52, SPECIES_NOSEPASS, ITEM_SITRUS_BERRY, MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE
 
 sParty_Brawly2: @ 0x082E2794
     @ TRAINER_BRAWLY_2 (id 774, special 254): トウキ ; flags=3, partySize=4
-    trainer_mon_item_custom 255, 33, SPECIES_MACHAMP, ITEM_SITRUS_BERRY, MOVE_KARATE_CHOP, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH, MOVE_BULK_UP
-    trainer_mon_item_custom 255, 33, SPECIES_MEDITITE, ITEM_NONE, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_FOCUS_PUNCH
-    trainer_mon_item_custom 255, 35, SPECIES_HITMONTOP, ITEM_NONE, MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK
-    trainer_mon_item_custom 255, 37, SPECIES_HARIYAMA, ITEM_SITRUS_BERRY, MOVE_FAKE_OUT, MOVE_FOCUS_PUNCH, MOVE_BELLY_DRUM, MOVE_EARTHQUAKE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 33, SPECIES_MACHAMP, ITEM_SITRUS_BERRY, MOVE_KARATE_CHOP, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH, MOVE_BULK_UP
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 33, SPECIES_MEDITITE, ITEM_NONE, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_FOCUS_PUNCH
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 35, SPECIES_HITMONTOP, ITEM_NONE, MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 37, SPECIES_HARIYAMA, ITEM_SITRUS_BERRY, MOVE_FAKE_OUT, MOVE_FOCUS_PUNCH, MOVE_BELLY_DRUM, MOVE_EARTHQUAKE
 
 sParty_Brawly3: @ 0x082E27D4
     @ TRAINER_BRAWLY_3 (id 775, special 255): トウキ ; flags=3, partySize=4
-    trainer_mon_item_custom 255, 38, SPECIES_MACHAMP, ITEM_SITRUS_BERRY, MOVE_KARATE_CHOP, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH, MOVE_BULK_UP
-    trainer_mon_item_custom 255, 38, SPECIES_MEDICHAM, ITEM_NONE, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_FOCUS_PUNCH
-    trainer_mon_item_custom 255, 40, SPECIES_HITMONTOP, ITEM_NONE, MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK
-    trainer_mon_item_custom 255, 42, SPECIES_HARIYAMA, ITEM_SITRUS_BERRY, MOVE_FAKE_OUT, MOVE_FOCUS_PUNCH, MOVE_BELLY_DRUM, MOVE_EARTHQUAKE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 38, SPECIES_MACHAMP, ITEM_SITRUS_BERRY, MOVE_KARATE_CHOP, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH, MOVE_BULK_UP
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 38, SPECIES_MEDICHAM, ITEM_NONE, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_FOCUS_PUNCH
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 40, SPECIES_HITMONTOP, ITEM_NONE, MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 42, SPECIES_HARIYAMA, ITEM_SITRUS_BERRY, MOVE_FAKE_OUT, MOVE_FOCUS_PUNCH, MOVE_BELLY_DRUM, MOVE_EARTHQUAKE
 
 sParty_Brawly4: @ 0x082E2814
     @ TRAINER_BRAWLY_4 (id 776, special 256): トウキ ; flags=3, partySize=5
-    trainer_mon_item_custom 255, 40, SPECIES_HITMONCHAN, ITEM_NONE, MOVE_SKY_UPPERCUT, MOVE_PROTECT, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH
-    trainer_mon_item_custom 255, 43, SPECIES_MACHAMP, ITEM_SITRUS_BERRY, MOVE_KARATE_CHOP, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH, MOVE_BULK_UP
-    trainer_mon_item_custom 255, 43, SPECIES_MEDICHAM, ITEM_NONE, MOVE_FOCUS_PUNCH, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_PSYCHIC
-    trainer_mon_item_custom 255, 45, SPECIES_HITMONTOP, ITEM_NONE, MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK
-    trainer_mon_item_custom 255, 47, SPECIES_HARIYAMA, ITEM_SITRUS_BERRY, MOVE_FAKE_OUT, MOVE_FOCUS_PUNCH, MOVE_BELLY_DRUM, MOVE_EARTHQUAKE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 40, SPECIES_HITMONCHAN, ITEM_NONE, MOVE_SKY_UPPERCUT, MOVE_PROTECT, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 43, SPECIES_MACHAMP, ITEM_SITRUS_BERRY, MOVE_KARATE_CHOP, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH, MOVE_BULK_UP
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 43, SPECIES_MEDICHAM, ITEM_NONE, MOVE_FOCUS_PUNCH, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_PSYCHIC
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 45, SPECIES_HITMONTOP, ITEM_NONE, MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 47, SPECIES_HARIYAMA, ITEM_SITRUS_BERRY, MOVE_FAKE_OUT, MOVE_FOCUS_PUNCH, MOVE_BELLY_DRUM, MOVE_EARTHQUAKE
 
 sParty_Brawly5: @ 0x082E2864
     @ TRAINER_BRAWLY_5 (id 777, special 257): トウキ ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 46, SPECIES_HITMONLEE, ITEM_NONE, MOVE_MEGA_KICK, MOVE_FOCUS_PUNCH, MOVE_EARTHQUAKE, MOVE_BULK_UP
-    trainer_mon_item_custom 255, 46, SPECIES_HITMONCHAN, ITEM_NONE, MOVE_SKY_UPPERCUT, MOVE_PROTECT, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH
-    trainer_mon_item_custom 255, 48, SPECIES_MACHAMP, ITEM_SITRUS_BERRY, MOVE_CROSS_CHOP, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH, MOVE_BULK_UP
-    trainer_mon_item_custom 255, 48, SPECIES_MEDICHAM, ITEM_NONE, MOVE_FOCUS_PUNCH, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_PSYCHIC
-    trainer_mon_item_custom 255, 50, SPECIES_HITMONTOP, ITEM_NONE, MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK
-    trainer_mon_item_custom 255, 52, SPECIES_HARIYAMA, ITEM_SITRUS_BERRY, MOVE_FAKE_OUT, MOVE_FOCUS_PUNCH, MOVE_BELLY_DRUM, MOVE_EARTHQUAKE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 46, SPECIES_HITMONLEE, ITEM_NONE, MOVE_MEGA_KICK, MOVE_FOCUS_PUNCH, MOVE_EARTHQUAKE, MOVE_BULK_UP
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 46, SPECIES_HITMONCHAN, ITEM_NONE, MOVE_SKY_UPPERCUT, MOVE_PROTECT, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 48, SPECIES_MACHAMP, ITEM_SITRUS_BERRY, MOVE_CROSS_CHOP, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH, MOVE_BULK_UP
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 48, SPECIES_MEDICHAM, ITEM_NONE, MOVE_FOCUS_PUNCH, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_PSYCHIC
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 50, SPECIES_HITMONTOP, ITEM_NONE, MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 52, SPECIES_HARIYAMA, ITEM_SITRUS_BERRY, MOVE_FAKE_OUT, MOVE_FOCUS_PUNCH, MOVE_BELLY_DRUM, MOVE_EARTHQUAKE
 
 sParty_Wattson2: @ 0x082E28C4
     @ TRAINER_WATTSON_2 (id 778, special 258): テッセン ; flags=3, partySize=4
-    trainer_mon_item_custom 255, 36, SPECIES_MAREEP, ITEM_NONE, MOVE_THUNDER, MOVE_PROTECT, MOVE_THUNDER_WAVE, MOVE_LIGHT_SCREEN
-    trainer_mon_item_custom 255, 36, SPECIES_ELECTRODE, ITEM_NONE, MOVE_ROLLOUT, MOVE_THUNDER, MOVE_EXPLOSION, MOVE_RAIN_DANCE
-    trainer_mon_item_custom 255, 38, SPECIES_MAGNETON, ITEM_SITRUS_BERRY, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_THUNDER, MOVE_RAIN_DANCE
-    trainer_mon_item_custom 255, 40, SPECIES_MANECTRIC, ITEM_SITRUS_BERRY, MOVE_BITE, MOVE_THUNDER_WAVE, MOVE_THUNDER, MOVE_PROTECT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 36, SPECIES_MAREEP, ITEM_NONE, MOVE_THUNDER, MOVE_PROTECT, MOVE_THUNDER_WAVE, MOVE_LIGHT_SCREEN
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 36, SPECIES_ELECTRODE, ITEM_NONE, MOVE_ROLLOUT, MOVE_THUNDER, MOVE_EXPLOSION, MOVE_RAIN_DANCE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 38, SPECIES_MAGNETON, ITEM_SITRUS_BERRY, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_THUNDER, MOVE_RAIN_DANCE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 40, SPECIES_MANECTRIC, ITEM_SITRUS_BERRY, MOVE_BITE, MOVE_THUNDER_WAVE, MOVE_THUNDER, MOVE_PROTECT
 
 sParty_Wattson3: @ 0x082E2904
     @ TRAINER_WATTSON_3 (id 779, special 259): テッセン ; flags=3, partySize=5
-    trainer_mon_item_custom 255, 39, SPECIES_PIKACHU, ITEM_NONE, MOVE_THUNDER, MOVE_SLAM, MOVE_RAIN_DANCE, MOVE_SHOCK_WAVE
-    trainer_mon_item_custom 255, 41, SPECIES_FLAAFFY, ITEM_NONE, MOVE_THUNDER, MOVE_PROTECT, MOVE_THUNDER_WAVE, MOVE_LIGHT_SCREEN
-    trainer_mon_item_custom 255, 41, SPECIES_ELECTRODE, ITEM_NONE, MOVE_ROLLOUT, MOVE_THUNDER, MOVE_EXPLOSION, MOVE_RAIN_DANCE
-    trainer_mon_item_custom 255, 43, SPECIES_MAGNETON, ITEM_SITRUS_BERRY, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_THUNDER, MOVE_RAIN_DANCE
-    trainer_mon_item_custom 255, 45, SPECIES_MANECTRIC, ITEM_SITRUS_BERRY, MOVE_BITE, MOVE_THUNDER_WAVE, MOVE_THUNDER, MOVE_PROTECT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 39, SPECIES_PIKACHU, ITEM_NONE, MOVE_THUNDER, MOVE_SLAM, MOVE_RAIN_DANCE, MOVE_SHOCK_WAVE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 41, SPECIES_FLAAFFY, ITEM_NONE, MOVE_THUNDER, MOVE_PROTECT, MOVE_THUNDER_WAVE, MOVE_LIGHT_SCREEN
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 41, SPECIES_ELECTRODE, ITEM_NONE, MOVE_ROLLOUT, MOVE_THUNDER, MOVE_EXPLOSION, MOVE_RAIN_DANCE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 43, SPECIES_MAGNETON, ITEM_SITRUS_BERRY, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_THUNDER, MOVE_RAIN_DANCE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 45, SPECIES_MANECTRIC, ITEM_SITRUS_BERRY, MOVE_BITE, MOVE_THUNDER_WAVE, MOVE_THUNDER, MOVE_PROTECT
 
 sParty_Wattson4: @ 0x082E2954
     @ TRAINER_WATTSON_4 (id 780, special 260): テッセン ; flags=3, partySize=5
-    trainer_mon_item_custom 255, 44, SPECIES_RAICHU, ITEM_NONE, MOVE_THUNDER, MOVE_SLAM, MOVE_RAIN_DANCE, MOVE_PROTECT
-    trainer_mon_item_custom 255, 46, SPECIES_AMPHAROS, ITEM_NONE, MOVE_THUNDER, MOVE_PROTECT, MOVE_THUNDER_WAVE, MOVE_LIGHT_SCREEN
-    trainer_mon_item_custom 255, 46, SPECIES_ELECTRODE, ITEM_NONE, MOVE_ROLLOUT, MOVE_THUNDER, MOVE_EXPLOSION, MOVE_RAIN_DANCE
-    trainer_mon_item_custom 255, 48, SPECIES_MAGNETON, ITEM_SITRUS_BERRY, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_THUNDER, MOVE_RAIN_DANCE
-    trainer_mon_item_custom 255, 50, SPECIES_MANECTRIC, ITEM_SITRUS_BERRY, MOVE_BITE, MOVE_THUNDER_WAVE, MOVE_THUNDER, MOVE_PROTECT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 44, SPECIES_RAICHU, ITEM_NONE, MOVE_THUNDER, MOVE_SLAM, MOVE_RAIN_DANCE, MOVE_PROTECT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 46, SPECIES_AMPHAROS, ITEM_NONE, MOVE_THUNDER, MOVE_PROTECT, MOVE_THUNDER_WAVE, MOVE_LIGHT_SCREEN
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 46, SPECIES_ELECTRODE, ITEM_NONE, MOVE_ROLLOUT, MOVE_THUNDER, MOVE_EXPLOSION, MOVE_RAIN_DANCE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 48, SPECIES_MAGNETON, ITEM_SITRUS_BERRY, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_THUNDER, MOVE_RAIN_DANCE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 50, SPECIES_MANECTRIC, ITEM_SITRUS_BERRY, MOVE_BITE, MOVE_THUNDER_WAVE, MOVE_THUNDER, MOVE_PROTECT
 
 sParty_Wattson5: @ 0x082E29A4
     @ TRAINER_WATTSON_5 (id 781, special 261): テッセン ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 50, SPECIES_ELECTABUZZ, ITEM_NONE, MOVE_SWIFT, MOVE_FOCUS_PUNCH, MOVE_THUNDER_PUNCH, MOVE_LIGHT_SCREEN
-    trainer_mon_item_custom 255, 51, SPECIES_RAICHU, ITEM_NONE, MOVE_THUNDER, MOVE_SLAM, MOVE_RAIN_DANCE, MOVE_PROTECT
-    trainer_mon_item_custom 255, 51, SPECIES_AMPHAROS, ITEM_NONE, MOVE_THUNDER, MOVE_PROTECT, MOVE_THUNDER_WAVE, MOVE_LIGHT_SCREEN
-    trainer_mon_item_custom 255, 53, SPECIES_ELECTRODE, ITEM_NONE, MOVE_ROLLOUT, MOVE_THUNDER, MOVE_EXPLOSION, MOVE_RAIN_DANCE
-    trainer_mon_item_custom 255, 53, SPECIES_MAGNETON, ITEM_SITRUS_BERRY, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_THUNDER, MOVE_RAIN_DANCE
-    trainer_mon_item_custom 255, 55, SPECIES_MANECTRIC, ITEM_SITRUS_BERRY, MOVE_BITE, MOVE_THUNDER_WAVE, MOVE_THUNDER, MOVE_PROTECT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 50, SPECIES_ELECTABUZZ, ITEM_NONE, MOVE_SWIFT, MOVE_FOCUS_PUNCH, MOVE_THUNDER_PUNCH, MOVE_LIGHT_SCREEN
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 51, SPECIES_RAICHU, ITEM_NONE, MOVE_THUNDER, MOVE_SLAM, MOVE_RAIN_DANCE, MOVE_PROTECT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 51, SPECIES_AMPHAROS, ITEM_NONE, MOVE_THUNDER, MOVE_PROTECT, MOVE_THUNDER_WAVE, MOVE_LIGHT_SCREEN
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 53, SPECIES_ELECTRODE, ITEM_NONE, MOVE_ROLLOUT, MOVE_THUNDER, MOVE_EXPLOSION, MOVE_RAIN_DANCE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 53, SPECIES_MAGNETON, ITEM_SITRUS_BERRY, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_THUNDER, MOVE_RAIN_DANCE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 55, SPECIES_MANECTRIC, ITEM_SITRUS_BERRY, MOVE_BITE, MOVE_THUNDER_WAVE, MOVE_THUNDER, MOVE_PROTECT
 
 sParty_Flannery2: @ 0x082E2A04
     @ TRAINER_FLANNERY_2 (id 782, special 262): アスナ ; flags=3, partySize=4
-    trainer_mon_item_custom 255, 38, SPECIES_MAGCARGO, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_ATTRACT, MOVE_LIGHT_SCREEN, MOVE_ROCK_SLIDE
-    trainer_mon_item_custom 255, 36, SPECIES_PONYTA, ITEM_NONE, MOVE_FLAMETHROWER, MOVE_ATTRACT, MOVE_SOLAR_BEAM, MOVE_BOUNCE
-    trainer_mon_item_custom 255, 38, SPECIES_CAMERUPT, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EARTHQUAKE, MOVE_ATTRACT
-    trainer_mon_item_custom 255, 40, SPECIES_TORKOAL, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EXPLOSION, MOVE_ATTRACT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 38, SPECIES_MAGCARGO, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_ATTRACT, MOVE_LIGHT_SCREEN, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 36, SPECIES_PONYTA, ITEM_NONE, MOVE_FLAMETHROWER, MOVE_ATTRACT, MOVE_SOLAR_BEAM, MOVE_BOUNCE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 38, SPECIES_CAMERUPT, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EARTHQUAKE, MOVE_ATTRACT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 40, SPECIES_TORKOAL, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EXPLOSION, MOVE_ATTRACT
 
 sParty_Flannery3: @ 0x082E2A44
     @ TRAINER_FLANNERY_3 (id 783, special 263): アスナ ; flags=3, partySize=5
-    trainer_mon_item_custom 255, 41, SPECIES_GROWLITHE, ITEM_NONE, MOVE_HELPING_HAND, MOVE_FLAMETHROWER, MOVE_ROAR, MOVE_SUNNY_DAY
-    trainer_mon_item_custom 255, 43, SPECIES_MAGCARGO, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_ATTRACT, MOVE_LIGHT_SCREEN, MOVE_ROCK_SLIDE
-    trainer_mon_item_custom 255, 41, SPECIES_PONYTA, ITEM_NONE, MOVE_FLAMETHROWER, MOVE_ATTRACT, MOVE_SOLAR_BEAM, MOVE_BOUNCE
-    trainer_mon_item_custom 255, 43, SPECIES_CAMERUPT, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EARTHQUAKE, MOVE_ATTRACT
-    trainer_mon_item_custom 255, 45, SPECIES_TORKOAL, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EXPLOSION, MOVE_ATTRACT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 41, SPECIES_GROWLITHE, ITEM_NONE, MOVE_HELPING_HAND, MOVE_FLAMETHROWER, MOVE_ROAR, MOVE_SUNNY_DAY
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 43, SPECIES_MAGCARGO, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_ATTRACT, MOVE_LIGHT_SCREEN, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 41, SPECIES_PONYTA, ITEM_NONE, MOVE_FLAMETHROWER, MOVE_ATTRACT, MOVE_SOLAR_BEAM, MOVE_BOUNCE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 43, SPECIES_CAMERUPT, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EARTHQUAKE, MOVE_ATTRACT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 45, SPECIES_TORKOAL, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EXPLOSION, MOVE_ATTRACT
 
 sParty_Flannery4: @ 0x082E2A94
     @ TRAINER_FLANNERY_4 (id 784, special 264): アスナ ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 46, SPECIES_HOUNDOUR, ITEM_NONE, MOVE_ROAR, MOVE_SOLAR_BEAM, MOVE_TAUNT, MOVE_SUNNY_DAY
-    trainer_mon_item_custom 255, 46, SPECIES_GROWLITHE, ITEM_NONE, MOVE_HELPING_HAND, MOVE_FLAMETHROWER, MOVE_SUNNY_DAY, MOVE_ROAR
-    trainer_mon_item_custom 255, 48, SPECIES_MAGCARGO, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_ATTRACT, MOVE_LIGHT_SCREEN, MOVE_ROCK_SLIDE
-    trainer_mon_item_custom 255, 46, SPECIES_RAPIDASH, ITEM_NONE, MOVE_FLAMETHROWER, MOVE_ATTRACT, MOVE_SOLAR_BEAM, MOVE_BOUNCE
-    trainer_mon_item_custom 255, 48, SPECIES_CAMERUPT, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EARTHQUAKE, MOVE_ATTRACT
-    trainer_mon_item_custom 255, 50, SPECIES_TORKOAL, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EXPLOSION, MOVE_ATTRACT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 46, SPECIES_HOUNDOUR, ITEM_NONE, MOVE_ROAR, MOVE_SOLAR_BEAM, MOVE_TAUNT, MOVE_SUNNY_DAY
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 46, SPECIES_GROWLITHE, ITEM_NONE, MOVE_HELPING_HAND, MOVE_FLAMETHROWER, MOVE_SUNNY_DAY, MOVE_ROAR
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 48, SPECIES_MAGCARGO, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_ATTRACT, MOVE_LIGHT_SCREEN, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 46, SPECIES_RAPIDASH, ITEM_NONE, MOVE_FLAMETHROWER, MOVE_ATTRACT, MOVE_SOLAR_BEAM, MOVE_BOUNCE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 48, SPECIES_CAMERUPT, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EARTHQUAKE, MOVE_ATTRACT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 50, SPECIES_TORKOAL, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EXPLOSION, MOVE_ATTRACT
 
 sParty_Flannery5: @ 0x082E2AF4
     @ TRAINER_FLANNERY_5 (id 785, special 265): アスナ ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 51, SPECIES_ARCANINE, ITEM_NONE, MOVE_HELPING_HAND, MOVE_FLAMETHROWER, MOVE_SUNNY_DAY, MOVE_ROAR
-    trainer_mon_item_custom 255, 53, SPECIES_MAGCARGO, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_ATTRACT, MOVE_LIGHT_SCREEN, MOVE_ROCK_SLIDE
-    trainer_mon_item_custom 255, 51, SPECIES_HOUNDOOM, ITEM_NONE, MOVE_ROAR, MOVE_SOLAR_BEAM, MOVE_TAUNT, MOVE_SUNNY_DAY
-    trainer_mon_item_custom 255, 51, SPECIES_RAPIDASH, ITEM_NONE, MOVE_FLAMETHROWER, MOVE_ATTRACT, MOVE_SOLAR_BEAM, MOVE_BOUNCE
-    trainer_mon_item_custom 255, 53, SPECIES_CAMERUPT, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EARTHQUAKE, MOVE_ATTRACT
-    trainer_mon_item_custom 255, 55, SPECIES_TORKOAL, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EXPLOSION, MOVE_ATTRACT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 51, SPECIES_ARCANINE, ITEM_NONE, MOVE_HELPING_HAND, MOVE_FLAMETHROWER, MOVE_SUNNY_DAY, MOVE_ROAR
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 53, SPECIES_MAGCARGO, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_ATTRACT, MOVE_LIGHT_SCREEN, MOVE_ROCK_SLIDE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 51, SPECIES_HOUNDOOM, ITEM_NONE, MOVE_ROAR, MOVE_SOLAR_BEAM, MOVE_TAUNT, MOVE_SUNNY_DAY
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 51, SPECIES_RAPIDASH, ITEM_NONE, MOVE_FLAMETHROWER, MOVE_ATTRACT, MOVE_SOLAR_BEAM, MOVE_BOUNCE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 53, SPECIES_CAMERUPT, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EARTHQUAKE, MOVE_ATTRACT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 55, SPECIES_TORKOAL, ITEM_WHITE_HERB, MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EXPLOSION, MOVE_ATTRACT
 
 sParty_Norman2: @ 0x082E2B54
     @ TRAINER_NORMAN_2 (id 786, special 266): センリ ; flags=3, partySize=4
-    trainer_mon_item_custom 255, 42, SPECIES_CHANSEY, ITEM_NONE, MOVE_LIGHT_SCREEN, MOVE_SING, MOVE_SKILL_SWAP, MOVE_FOCUS_PUNCH
-    trainer_mon_item_custom 255, 42, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DOUBLE_EDGE, MOVE_FIRE_BLAST
-    trainer_mon_item_custom 255, 43, SPECIES_SPINDA, ITEM_NONE, MOVE_TEETER_DANCE, MOVE_SKILL_SWAP, MOVE_FACADE, MOVE_HYPNOSIS
-    trainer_mon_item_custom 255, 45, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_HYPER_BEAM, MOVE_FLAMETHROWER, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 42, SPECIES_CHANSEY, ITEM_NONE, MOVE_LIGHT_SCREEN, MOVE_SING, MOVE_SKILL_SWAP, MOVE_FOCUS_PUNCH
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 42, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DOUBLE_EDGE, MOVE_FIRE_BLAST
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 43, SPECIES_SPINDA, ITEM_NONE, MOVE_TEETER_DANCE, MOVE_SKILL_SWAP, MOVE_FACADE, MOVE_HYPNOSIS
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 45, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_HYPER_BEAM, MOVE_FLAMETHROWER, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL
 
 sParty_Norman3: @ 0x082E2B94
     @ TRAINER_NORMAN_3 (id 787, special 267): センリ ; flags=3, partySize=5
-    trainer_mon_item_custom 255, 47, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DOUBLE_EDGE, MOVE_FIRE_BLAST
-    trainer_mon_item_custom 255, 47, SPECIES_CHANSEY, ITEM_NONE, MOVE_LIGHT_SCREEN, MOVE_SING, MOVE_SKILL_SWAP, MOVE_FOCUS_PUNCH
-    trainer_mon_item_custom 255, 45, SPECIES_KANGASKHAN, ITEM_NONE, MOVE_FAKE_OUT, MOVE_DIZZY_PUNCH, MOVE_ENDURE, MOVE_REVERSAL
-    trainer_mon_item_custom 255, 48, SPECIES_SPINDA, ITEM_NONE, MOVE_TEETER_DANCE, MOVE_SKILL_SWAP, MOVE_FACADE, MOVE_HYPNOSIS
-    trainer_mon_item_custom 255, 50, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_HYPER_BEAM, MOVE_FLAMETHROWER, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 47, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DOUBLE_EDGE, MOVE_FIRE_BLAST
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 47, SPECIES_CHANSEY, ITEM_NONE, MOVE_LIGHT_SCREEN, MOVE_SING, MOVE_SKILL_SWAP, MOVE_FOCUS_PUNCH
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 45, SPECIES_KANGASKHAN, ITEM_NONE, MOVE_FAKE_OUT, MOVE_DIZZY_PUNCH, MOVE_ENDURE, MOVE_REVERSAL
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 48, SPECIES_SPINDA, ITEM_NONE, MOVE_TEETER_DANCE, MOVE_SKILL_SWAP, MOVE_FACADE, MOVE_HYPNOSIS
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 50, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_HYPER_BEAM, MOVE_FLAMETHROWER, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL
 
 sParty_Norman4: @ 0x082E2BE4
     @ TRAINER_NORMAN_4 (id 788, special 268): センリ ; flags=3, partySize=5
-    trainer_mon_item_custom 255, 52, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DOUBLE_EDGE, MOVE_FIRE_BLAST
-    trainer_mon_item_custom 255, 52, SPECIES_BLISSEY, ITEM_NONE, MOVE_LIGHT_SCREEN, MOVE_SING, MOVE_SKILL_SWAP, MOVE_FOCUS_PUNCH
-    trainer_mon_item_custom 255, 50, SPECIES_KANGASKHAN, ITEM_NONE, MOVE_FAKE_OUT, MOVE_DIZZY_PUNCH, MOVE_ENDURE, MOVE_REVERSAL
-    trainer_mon_item_custom 255, 53, SPECIES_SPINDA, ITEM_NONE, MOVE_TEETER_DANCE, MOVE_SKILL_SWAP, MOVE_FACADE, MOVE_HYPNOSIS
-    trainer_mon_item_custom 255, 55, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_HYPER_BEAM, MOVE_FLAMETHROWER, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 52, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DOUBLE_EDGE, MOVE_FIRE_BLAST
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 52, SPECIES_BLISSEY, ITEM_NONE, MOVE_LIGHT_SCREEN, MOVE_SING, MOVE_SKILL_SWAP, MOVE_FOCUS_PUNCH
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 50, SPECIES_KANGASKHAN, ITEM_NONE, MOVE_FAKE_OUT, MOVE_DIZZY_PUNCH, MOVE_ENDURE, MOVE_REVERSAL
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 53, SPECIES_SPINDA, ITEM_NONE, MOVE_TEETER_DANCE, MOVE_SKILL_SWAP, MOVE_FACADE, MOVE_HYPNOSIS
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 55, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_HYPER_BEAM, MOVE_FLAMETHROWER, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL
 
 sParty_Norman5: @ 0x082E2C34
     @ TRAINER_NORMAN_5 (id 789, special 269): センリ ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 57, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DOUBLE_EDGE, MOVE_FIRE_BLAST
-    trainer_mon_item_custom 255, 57, SPECIES_BLISSEY, ITEM_NONE, MOVE_PROTECT, MOVE_SING, MOVE_SKILL_SWAP, MOVE_FOCUS_PUNCH
-    trainer_mon_item_custom 255, 55, SPECIES_KANGASKHAN, ITEM_NONE, MOVE_FAKE_OUT, MOVE_DIZZY_PUNCH, MOVE_ENDURE, MOVE_REVERSAL
-    trainer_mon_item_custom 255, 57, SPECIES_TAUROS, ITEM_NONE, MOVE_TAKE_DOWN, MOVE_PROTECT, MOVE_FIRE_BLAST, MOVE_EARTHQUAKE
-    trainer_mon_item_custom 255, 58, SPECIES_SPINDA, ITEM_NONE, MOVE_TEETER_DANCE, MOVE_SKILL_SWAP, MOVE_FACADE, MOVE_HYPNOSIS
-    trainer_mon_item_custom 255, 60, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_HYPER_BEAM, MOVE_FLAMETHROWER, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 57, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DOUBLE_EDGE, MOVE_FIRE_BLAST
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 57, SPECIES_BLISSEY, ITEM_NONE, MOVE_PROTECT, MOVE_SING, MOVE_SKILL_SWAP, MOVE_FOCUS_PUNCH
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 55, SPECIES_KANGASKHAN, ITEM_NONE, MOVE_FAKE_OUT, MOVE_DIZZY_PUNCH, MOVE_ENDURE, MOVE_REVERSAL
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 57, SPECIES_TAUROS, ITEM_NONE, MOVE_TAKE_DOWN, MOVE_PROTECT, MOVE_FIRE_BLAST, MOVE_EARTHQUAKE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 58, SPECIES_SPINDA, ITEM_NONE, MOVE_TEETER_DANCE, MOVE_SKILL_SWAP, MOVE_FACADE, MOVE_HYPNOSIS
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 60, SPECIES_SLAKING, ITEM_SITRUS_BERRY, MOVE_HYPER_BEAM, MOVE_FLAMETHROWER, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL
 
 sParty_Winona2: @ 0x082E2C94
     @ TRAINER_WINONA_2 (id 790, special 270): ナギ ; flags=3, partySize=5
-    trainer_mon_item_custom 255, 40, SPECIES_DRATINI, ITEM_SITRUS_BERRY, MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT, MOVE_PROTECT, MOVE_ICE_BEAM
-    trainer_mon_item_custom 255, 38, SPECIES_TROPIUS, ITEM_NONE, MOVE_SUNNY_DAY, MOVE_AERIAL_ACE, MOVE_SOLAR_BEAM, MOVE_EARTHQUAKE
-    trainer_mon_item_custom 255, 41, SPECIES_PELIPPER, ITEM_NONE, MOVE_SURF, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_AERIAL_ACE
-    trainer_mon_item_custom 255, 43, SPECIES_SKARMORY, ITEM_NONE, MOVE_WHIRLWIND, MOVE_SPIKES, MOVE_STEEL_WING, MOVE_AERIAL_ACE
-    trainer_mon_item_custom 255, 45, SPECIES_ALTARIA, ITEM_CHESTO_BERRY, MOVE_AERIAL_ACE, MOVE_REST, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 40, SPECIES_DRATINI, ITEM_SITRUS_BERRY, MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT, MOVE_PROTECT, MOVE_ICE_BEAM
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 38, SPECIES_TROPIUS, ITEM_NONE, MOVE_SUNNY_DAY, MOVE_AERIAL_ACE, MOVE_SOLAR_BEAM, MOVE_EARTHQUAKE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 41, SPECIES_PELIPPER, ITEM_NONE, MOVE_SURF, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_AERIAL_ACE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 43, SPECIES_SKARMORY, ITEM_NONE, MOVE_WHIRLWIND, MOVE_SPIKES, MOVE_STEEL_WING, MOVE_AERIAL_ACE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 45, SPECIES_ALTARIA, ITEM_CHESTO_BERRY, MOVE_AERIAL_ACE, MOVE_REST, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE
 
 sParty_Winona3: @ 0x082E2CE4
     @ TRAINER_WINONA_3 (id 791, special 271): ナギ ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 43, SPECIES_HOOTHOOT, ITEM_NONE, MOVE_HYPNOSIS, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_DREAM_EATER
-    trainer_mon_item_custom 255, 43, SPECIES_TROPIUS, ITEM_NONE, MOVE_SUNNY_DAY, MOVE_AERIAL_ACE, MOVE_SOLAR_BEAM, MOVE_EARTHQUAKE
-    trainer_mon_item_custom 255, 45, SPECIES_DRAGONAIR, ITEM_SITRUS_BERRY, MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT, MOVE_PROTECT, MOVE_ICE_BEAM
-    trainer_mon_item_custom 255, 46, SPECIES_PELIPPER, ITEM_NONE, MOVE_SURF, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_AERIAL_ACE
-    trainer_mon_item_custom 255, 48, SPECIES_SKARMORY, ITEM_NONE, MOVE_WHIRLWIND, MOVE_SPIKES, MOVE_STEEL_WING, MOVE_AERIAL_ACE
-    trainer_mon_item_custom 255, 50, SPECIES_ALTARIA, ITEM_CHESTO_BERRY, MOVE_AERIAL_ACE, MOVE_REST, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 43, SPECIES_HOOTHOOT, ITEM_NONE, MOVE_HYPNOSIS, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_DREAM_EATER
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 43, SPECIES_TROPIUS, ITEM_NONE, MOVE_SUNNY_DAY, MOVE_AERIAL_ACE, MOVE_SOLAR_BEAM, MOVE_EARTHQUAKE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 45, SPECIES_DRAGONAIR, ITEM_SITRUS_BERRY, MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT, MOVE_PROTECT, MOVE_ICE_BEAM
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 46, SPECIES_PELIPPER, ITEM_NONE, MOVE_SURF, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_AERIAL_ACE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 48, SPECIES_SKARMORY, ITEM_NONE, MOVE_WHIRLWIND, MOVE_SPIKES, MOVE_STEEL_WING, MOVE_AERIAL_ACE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 50, SPECIES_ALTARIA, ITEM_CHESTO_BERRY, MOVE_AERIAL_ACE, MOVE_REST, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE
 
 sParty_Winona4: @ 0x082E2D44
     @ TRAINER_WINONA_4 (id 792, special 272): ナギ ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 48, SPECIES_NOCTOWL, ITEM_NONE, MOVE_HYPNOSIS, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_DREAM_EATER
-    trainer_mon_item_custom 255, 49, SPECIES_TROPIUS, ITEM_NONE, MOVE_SUNNY_DAY, MOVE_AERIAL_ACE, MOVE_SOLAR_BEAM, MOVE_EARTHQUAKE
-    trainer_mon_item_custom 255, 50, SPECIES_DRAGONAIR, ITEM_SITRUS_BERRY, MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT, MOVE_PROTECT, MOVE_ICE_BEAM
-    trainer_mon_item_custom 255, 51, SPECIES_PELIPPER, ITEM_NONE, MOVE_SURF, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_AERIAL_ACE
-    trainer_mon_item_custom 255, 53, SPECIES_SKARMORY, ITEM_NONE, MOVE_WHIRLWIND, MOVE_SPIKES, MOVE_STEEL_WING, MOVE_AERIAL_ACE
-    trainer_mon_item_custom 255, 55, SPECIES_ALTARIA, ITEM_CHESTO_BERRY, MOVE_AERIAL_ACE, MOVE_REST, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 48, SPECIES_NOCTOWL, ITEM_NONE, MOVE_HYPNOSIS, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_DREAM_EATER
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 49, SPECIES_TROPIUS, ITEM_NONE, MOVE_SUNNY_DAY, MOVE_AERIAL_ACE, MOVE_SOLAR_BEAM, MOVE_EARTHQUAKE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 50, SPECIES_DRAGONAIR, ITEM_SITRUS_BERRY, MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT, MOVE_PROTECT, MOVE_ICE_BEAM
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 51, SPECIES_PELIPPER, ITEM_NONE, MOVE_SURF, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_AERIAL_ACE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 53, SPECIES_SKARMORY, ITEM_NONE, MOVE_WHIRLWIND, MOVE_SPIKES, MOVE_STEEL_WING, MOVE_AERIAL_ACE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 55, SPECIES_ALTARIA, ITEM_CHESTO_BERRY, MOVE_AERIAL_ACE, MOVE_REST, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE
 
 sParty_Winona5: @ 0x082E2DA4
     @ TRAINER_WINONA_5 (id 793, special 273): ナギ ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 53, SPECIES_NOCTOWL, ITEM_NONE, MOVE_HYPNOSIS, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_DREAM_EATER
-    trainer_mon_item_custom 255, 54, SPECIES_TROPIUS, ITEM_NONE, MOVE_SUNNY_DAY, MOVE_AERIAL_ACE, MOVE_SOLAR_BEAM, MOVE_EARTHQUAKE
-    trainer_mon_item_custom 255, 55, SPECIES_PELIPPER, ITEM_NONE, MOVE_SURF, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_AERIAL_ACE
-    trainer_mon_item_custom 255, 55, SPECIES_DRAGONITE, ITEM_SITRUS_BERRY, MOVE_HYPER_BEAM, MOVE_THUNDERBOLT, MOVE_EARTHQUAKE, MOVE_ICE_BEAM
-    trainer_mon_item_custom 255, 58, SPECIES_SKARMORY, ITEM_NONE, MOVE_WHIRLWIND, MOVE_SPIKES, MOVE_STEEL_WING, MOVE_AERIAL_ACE
-    trainer_mon_item_custom 255, 60, SPECIES_ALTARIA, ITEM_CHESTO_BERRY, MOVE_SKY_ATTACK, MOVE_REST, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 53, SPECIES_NOCTOWL, ITEM_NONE, MOVE_HYPNOSIS, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_DREAM_EATER
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 54, SPECIES_TROPIUS, ITEM_NONE, MOVE_SUNNY_DAY, MOVE_AERIAL_ACE, MOVE_SOLAR_BEAM, MOVE_EARTHQUAKE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 55, SPECIES_PELIPPER, ITEM_NONE, MOVE_SURF, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_AERIAL_ACE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 55, SPECIES_DRAGONITE, ITEM_SITRUS_BERRY, MOVE_HYPER_BEAM, MOVE_THUNDERBOLT, MOVE_EARTHQUAKE, MOVE_ICE_BEAM
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 58, SPECIES_SKARMORY, ITEM_NONE, MOVE_WHIRLWIND, MOVE_SPIKES, MOVE_STEEL_WING, MOVE_AERIAL_ACE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 60, SPECIES_ALTARIA, ITEM_CHESTO_BERRY, MOVE_SKY_ATTACK, MOVE_REST, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE
 
 sParty_TateAndLiza2: @ 0x082E2E04
     @ TRAINER_TATE_AND_LIZA_2 (id 794, special 274): フウとラン ; flags=3, partySize=5
-    trainer_mon_item_custom 255, 48, SPECIES_SLOWPOKE, ITEM_NONE, MOVE_YAWN, MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_PROTECT
-    trainer_mon_item_custom 255, 49, SPECIES_CLAYDOL, ITEM_NONE, MOVE_EARTHQUAKE, MOVE_ANCIENT_POWER, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN
-    trainer_mon_item_custom 255, 49, SPECIES_XATU, ITEM_CHESTO_BERRY, MOVE_PSYCHIC, MOVE_REST, MOVE_CONFUSE_RAY, MOVE_CALM_MIND
-    trainer_mon_item_custom 255, 50, SPECIES_LUNATONE, ITEM_CHESTO_BERRY, MOVE_EARTHQUAKE, MOVE_PSYCHIC, MOVE_REST, MOVE_CALM_MIND
-    trainer_mon_item_custom 255, 50, SPECIES_SOLROCK, ITEM_SITRUS_BERRY, MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 48, SPECIES_SLOWPOKE, ITEM_NONE, MOVE_YAWN, MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_PROTECT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 49, SPECIES_CLAYDOL, ITEM_NONE, MOVE_EARTHQUAKE, MOVE_ANCIENT_POWER, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 49, SPECIES_XATU, ITEM_CHESTO_BERRY, MOVE_PSYCHIC, MOVE_REST, MOVE_CONFUSE_RAY, MOVE_CALM_MIND
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 50, SPECIES_LUNATONE, ITEM_CHESTO_BERRY, MOVE_EARTHQUAKE, MOVE_PSYCHIC, MOVE_REST, MOVE_CALM_MIND
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 50, SPECIES_SOLROCK, ITEM_SITRUS_BERRY, MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER
 
 sParty_TateAndLiza3: @ 0x082E2E54
     @ TRAINER_TATE_AND_LIZA_3 (id 795, special 275): フウとラン ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 53, SPECIES_DROWZEE, ITEM_NONE, MOVE_HYPNOSIS, MOVE_DREAM_EATER, MOVE_HEADBUTT, MOVE_PROTECT
-    trainer_mon_item_custom 255, 53, SPECIES_SLOWPOKE, ITEM_NONE, MOVE_YAWN, MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_PROTECT
-    trainer_mon_item_custom 255, 54, SPECIES_CLAYDOL, ITEM_NONE, MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN
-    trainer_mon_item_custom 255, 54, SPECIES_XATU, ITEM_CHESTO_BERRY, MOVE_PSYCHIC, MOVE_REST, MOVE_CONFUSE_RAY, MOVE_CALM_MIND
-    trainer_mon_item_custom 255, 55, SPECIES_LUNATONE, ITEM_CHESTO_BERRY, MOVE_EARTHQUAKE, MOVE_PSYCHIC, MOVE_REST, MOVE_CALM_MIND
-    trainer_mon_item_custom 255, 55, SPECIES_SOLROCK, ITEM_SITRUS_BERRY, MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 53, SPECIES_DROWZEE, ITEM_NONE, MOVE_HYPNOSIS, MOVE_DREAM_EATER, MOVE_HEADBUTT, MOVE_PROTECT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 53, SPECIES_SLOWPOKE, ITEM_NONE, MOVE_YAWN, MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_PROTECT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 54, SPECIES_CLAYDOL, ITEM_NONE, MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 54, SPECIES_XATU, ITEM_CHESTO_BERRY, MOVE_PSYCHIC, MOVE_REST, MOVE_CONFUSE_RAY, MOVE_CALM_MIND
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 55, SPECIES_LUNATONE, ITEM_CHESTO_BERRY, MOVE_EARTHQUAKE, MOVE_PSYCHIC, MOVE_REST, MOVE_CALM_MIND
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 55, SPECIES_SOLROCK, ITEM_SITRUS_BERRY, MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER
 
 sParty_TateAndLiza4: @ 0x082E2EB4
     @ TRAINER_TATE_AND_LIZA_4 (id 796, special 276): フウとラン ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 58, SPECIES_HYPNO, ITEM_NONE, MOVE_HYPNOSIS, MOVE_DREAM_EATER, MOVE_HEADBUTT, MOVE_PROTECT
-    trainer_mon_item_custom 255, 59, SPECIES_CLAYDOL, ITEM_NONE, MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN
-    trainer_mon_item_custom 255, 58, SPECIES_SLOWPOKE, ITEM_NONE, MOVE_YAWN, MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_PROTECT
-    trainer_mon_item_custom 255, 59, SPECIES_XATU, ITEM_CHESTO_BERRY, MOVE_PSYCHIC, MOVE_REST, MOVE_CONFUSE_RAY, MOVE_CALM_MIND
-    trainer_mon_item_custom 255, 60, SPECIES_LUNATONE, ITEM_CHESTO_BERRY, MOVE_EARTHQUAKE, MOVE_PSYCHIC, MOVE_REST, MOVE_CALM_MIND
-    trainer_mon_item_custom 255, 60, SPECIES_SOLROCK, ITEM_SITRUS_BERRY, MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 58, SPECIES_HYPNO, ITEM_NONE, MOVE_HYPNOSIS, MOVE_DREAM_EATER, MOVE_HEADBUTT, MOVE_PROTECT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 59, SPECIES_CLAYDOL, ITEM_NONE, MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 58, SPECIES_SLOWPOKE, ITEM_NONE, MOVE_YAWN, MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_PROTECT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 59, SPECIES_XATU, ITEM_CHESTO_BERRY, MOVE_PSYCHIC, MOVE_REST, MOVE_CONFUSE_RAY, MOVE_CALM_MIND
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 60, SPECIES_LUNATONE, ITEM_CHESTO_BERRY, MOVE_EARTHQUAKE, MOVE_PSYCHIC, MOVE_REST, MOVE_CALM_MIND
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 60, SPECIES_SOLROCK, ITEM_SITRUS_BERRY, MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER
 
 sParty_TateAndLiza5: @ 0x082E2F14
     @ TRAINER_TATE_AND_LIZA_5 (id 797, special 277): フウとラン ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 63, SPECIES_HYPNO, ITEM_NONE, MOVE_HYPNOSIS, MOVE_DREAM_EATER, MOVE_HEADBUTT, MOVE_PROTECT
-    trainer_mon_item_custom 255, 64, SPECIES_CLAYDOL, ITEM_NONE, MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN
-    trainer_mon_item_custom 255, 63, SPECIES_SLOWKING, ITEM_NONE, MOVE_YAWN, MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_PROTECT
-    trainer_mon_item_custom 255, 64, SPECIES_XATU, ITEM_CHESTO_BERRY, MOVE_PSYCHIC, MOVE_REST, MOVE_CONFUSE_RAY, MOVE_CALM_MIND
-    trainer_mon_item_custom 255, 65, SPECIES_LUNATONE, ITEM_CHESTO_BERRY, MOVE_EARTHQUAKE, MOVE_PSYCHIC, MOVE_REST, MOVE_CALM_MIND
-    trainer_mon_item_custom 255, 65, SPECIES_SOLROCK, ITEM_SITRUS_BERRY, MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 63, SPECIES_HYPNO, ITEM_NONE, MOVE_HYPNOSIS, MOVE_DREAM_EATER, MOVE_HEADBUTT, MOVE_PROTECT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 64, SPECIES_CLAYDOL, ITEM_NONE, MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 63, SPECIES_SLOWKING, ITEM_NONE, MOVE_YAWN, MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_PROTECT
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 64, SPECIES_XATU, ITEM_CHESTO_BERRY, MOVE_PSYCHIC, MOVE_REST, MOVE_CONFUSE_RAY, MOVE_CALM_MIND
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 65, SPECIES_LUNATONE, ITEM_CHESTO_BERRY, MOVE_EARTHQUAKE, MOVE_PSYCHIC, MOVE_REST, MOVE_CALM_MIND
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 65, SPECIES_SOLROCK, ITEM_SITRUS_BERRY, MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER
 
 sParty_Juan2: @ 0x082E2F74
     @ TRAINER_JUAN_2 (id 798, special 278): アダン ; flags=3, partySize=5
-    trainer_mon_item_custom 255, 46, SPECIES_POLIWAG, ITEM_NONE, MOVE_HYPNOSIS, MOVE_RAIN_DANCE, MOVE_PROTECT, MOVE_HYDRO_PUMP
-    trainer_mon_item_custom 255, 46, SPECIES_WHISCASH, ITEM_NONE, MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_FISSURE
-    trainer_mon_item_custom 255, 48, SPECIES_WALREIN, ITEM_NONE, MOVE_WATER_PULSE, MOVE_BODY_SLAM, MOVE_PROTECT, MOVE_ICE_BEAM
-    trainer_mon_item_custom 255, 48, SPECIES_CRAWDAUNT, ITEM_CHESTO_BERRY, MOVE_REST, MOVE_CRABHAMMER, MOVE_TAUNT, MOVE_DOUBLE_TEAM
-    trainer_mon_item_custom 255, 51, SPECIES_KINGDRA, ITEM_CHESTO_BERRY, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_ICE_BEAM, MOVE_REST
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 46, SPECIES_POLIWAG, ITEM_NONE, MOVE_HYPNOSIS, MOVE_RAIN_DANCE, MOVE_PROTECT, MOVE_HYDRO_PUMP
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 46, SPECIES_WHISCASH, ITEM_NONE, MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_FISSURE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 48, SPECIES_WALREIN, ITEM_NONE, MOVE_WATER_PULSE, MOVE_BODY_SLAM, MOVE_PROTECT, MOVE_ICE_BEAM
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 48, SPECIES_CRAWDAUNT, ITEM_CHESTO_BERRY, MOVE_REST, MOVE_CRABHAMMER, MOVE_TAUNT, MOVE_DOUBLE_TEAM
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 51, SPECIES_KINGDRA, ITEM_CHESTO_BERRY, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_ICE_BEAM, MOVE_REST
 
 sParty_Juan3: @ 0x082E2FC4
     @ TRAINER_JUAN_3 (id 799, special 279): アダン ; flags=3, partySize=5
-    trainer_mon_item_custom 255, 50, SPECIES_POLIWHIRL, ITEM_NONE, MOVE_HYPNOSIS, MOVE_RAIN_DANCE, MOVE_PROTECT, MOVE_HYDRO_PUMP
-    trainer_mon_item_custom 255, 51, SPECIES_WHISCASH, ITEM_NONE, MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_FISSURE
-    trainer_mon_item_custom 255, 53, SPECIES_WALREIN, ITEM_NONE, MOVE_WATER_PULSE, MOVE_BODY_SLAM, MOVE_PROTECT, MOVE_ICE_BEAM
-    trainer_mon_item_custom 255, 53, SPECIES_CRAWDAUNT, ITEM_CHESTO_BERRY, MOVE_REST, MOVE_GUILLOTINE, MOVE_TAUNT, MOVE_DOUBLE_TEAM
-    trainer_mon_item_custom 255, 56, SPECIES_KINGDRA, ITEM_CHESTO_BERRY, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_ICE_BEAM, MOVE_REST
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 50, SPECIES_POLIWHIRL, ITEM_NONE, MOVE_HYPNOSIS, MOVE_RAIN_DANCE, MOVE_PROTECT, MOVE_HYDRO_PUMP
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 51, SPECIES_WHISCASH, ITEM_NONE, MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_FISSURE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 53, SPECIES_WALREIN, ITEM_NONE, MOVE_WATER_PULSE, MOVE_BODY_SLAM, MOVE_PROTECT, MOVE_ICE_BEAM
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 53, SPECIES_CRAWDAUNT, ITEM_CHESTO_BERRY, MOVE_REST, MOVE_GUILLOTINE, MOVE_TAUNT, MOVE_DOUBLE_TEAM
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 56, SPECIES_KINGDRA, ITEM_CHESTO_BERRY, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_ICE_BEAM, MOVE_REST
 
 sParty_Juan4: @ 0x082E3014
     @ TRAINER_JUAN_4 (id 800, special 280): アダン ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 56, SPECIES_LAPRAS, ITEM_NONE, MOVE_HYDRO_PUMP, MOVE_PERISH_SONG, MOVE_ICE_BEAM, MOVE_CONFUSE_RAY
-    trainer_mon_item_custom 255, 58, SPECIES_WHISCASH, ITEM_NONE, MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_FISSURE
-    trainer_mon_item_custom 255, 56, SPECIES_POLIWHIRL, ITEM_NONE, MOVE_HYPNOSIS, MOVE_RAIN_DANCE, MOVE_PROTECT, MOVE_HYDRO_PUMP
-    trainer_mon_item_custom 255, 58, SPECIES_WALREIN, ITEM_NONE, MOVE_WATER_PULSE, MOVE_BODY_SLAM, MOVE_PROTECT, MOVE_ICE_BEAM
-    trainer_mon_item_custom 255, 58, SPECIES_CRAWDAUNT, ITEM_CHESTO_BERRY, MOVE_REST, MOVE_GUILLOTINE, MOVE_TAUNT, MOVE_DOUBLE_TEAM
-    trainer_mon_item_custom 255, 61, SPECIES_KINGDRA, ITEM_CHESTO_BERRY, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_ICE_BEAM, MOVE_REST
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 56, SPECIES_LAPRAS, ITEM_NONE, MOVE_HYDRO_PUMP, MOVE_PERISH_SONG, MOVE_ICE_BEAM, MOVE_CONFUSE_RAY
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 58, SPECIES_WHISCASH, ITEM_NONE, MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_FISSURE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 56, SPECIES_POLIWHIRL, ITEM_NONE, MOVE_HYPNOSIS, MOVE_RAIN_DANCE, MOVE_PROTECT, MOVE_HYDRO_PUMP
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 58, SPECIES_WALREIN, ITEM_NONE, MOVE_WATER_PULSE, MOVE_BODY_SLAM, MOVE_PROTECT, MOVE_ICE_BEAM
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 58, SPECIES_CRAWDAUNT, ITEM_CHESTO_BERRY, MOVE_REST, MOVE_GUILLOTINE, MOVE_TAUNT, MOVE_DOUBLE_TEAM
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 61, SPECIES_KINGDRA, ITEM_CHESTO_BERRY, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_ICE_BEAM, MOVE_REST
 
 sParty_Juan5: @ 0x082E3074
     @ TRAINER_JUAN_5 (id 801, special 281): アダン ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 61, SPECIES_LAPRAS, ITEM_NONE, MOVE_HYDRO_PUMP, MOVE_PERISH_SONG, MOVE_ICE_BEAM, MOVE_CONFUSE_RAY
-    trainer_mon_item_custom 255, 63, SPECIES_WHISCASH, ITEM_NONE, MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_FISSURE
-    trainer_mon_item_custom 255, 61, SPECIES_POLITOED, ITEM_NONE, MOVE_HYPNOSIS, MOVE_RAIN_DANCE, MOVE_HYDRO_PUMP, MOVE_PERISH_SONG
-    trainer_mon_item_custom 255, 63, SPECIES_WALREIN, ITEM_NONE, MOVE_WATER_PULSE, MOVE_BODY_SLAM, MOVE_PROTECT, MOVE_SHEER_COLD
-    trainer_mon_item_custom 255, 63, SPECIES_CRAWDAUNT, ITEM_CHESTO_BERRY, MOVE_REST, MOVE_GUILLOTINE, MOVE_TAUNT, MOVE_DOUBLE_TEAM
-    trainer_mon_item_custom 255, 66, SPECIES_KINGDRA, ITEM_CHESTO_BERRY, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_ICE_BEAM, MOVE_REST
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 61, SPECIES_LAPRAS, ITEM_NONE, MOVE_HYDRO_PUMP, MOVE_PERISH_SONG, MOVE_ICE_BEAM, MOVE_CONFUSE_RAY
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 63, SPECIES_WHISCASH, ITEM_NONE, MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_FISSURE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 61, SPECIES_POLITOED, ITEM_NONE, MOVE_HYPNOSIS, MOVE_RAIN_DANCE, MOVE_HYDRO_PUMP, MOVE_PERISH_SONG
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 63, SPECIES_WALREIN, ITEM_NONE, MOVE_WATER_PULSE, MOVE_BODY_SLAM, MOVE_PROTECT, MOVE_SHEER_COLD
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 63, SPECIES_CRAWDAUNT, ITEM_CHESTO_BERRY, MOVE_REST, MOVE_GUILLOTINE, MOVE_TAUNT, MOVE_DOUBLE_TEAM
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 66, SPECIES_KINGDRA, ITEM_CHESTO_BERRY, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_ICE_BEAM, MOVE_REST
 
 sParty_Angelo: @ 0x082E30D4
     @ TRAINER_ANGELO (id 802, special 282): モトヒロ ; flags=3, partySize=2
@@ -4134,40 +4104,40 @@ sParty_Darius: @ 0x082E30F4
 
 sParty_Steven: @ 0x082E30FC
     @ TRAINER_STEVEN (id 804, special 284): ダイゴ ; flags=3, partySize=6
-    trainer_mon_item_custom 255, 77, SPECIES_SKARMORY, ITEM_NONE, MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING
-    trainer_mon_item_custom 255, 75, SPECIES_CLAYDOL, ITEM_NONE, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_ANCIENT_POWER, MOVE_EARTHQUAKE
-    trainer_mon_item_custom 255, 76, SPECIES_AGGRON, ITEM_NONE, MOVE_THUNDER, MOVE_EARTHQUAKE, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW
-    trainer_mon_item_custom 255, 76, SPECIES_CRADILY, ITEM_NONE, MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_CONFUSE_RAY
-    trainer_mon_item_custom 255, 76, SPECIES_ARMALDO, ITEM_NONE, MOVE_WATER_PULSE, MOVE_ANCIENT_POWER, MOVE_AERIAL_ACE, MOVE_SLASH
-    trainer_mon_item_custom 255, 78, SPECIES_METAGROSS, ITEM_SITRUS_BERRY, MOVE_EARTHQUAKE, MOVE_PSYCHIC, MOVE_METEOR_MASH, MOVE_SHADOW_BALL
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 77, SPECIES_SKARMORY, ITEM_NONE, MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 75, SPECIES_CLAYDOL, ITEM_NONE, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_ANCIENT_POWER, MOVE_EARTHQUAKE
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 76, SPECIES_AGGRON, ITEM_NONE, MOVE_THUNDER, MOVE_EARTHQUAKE, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 76, SPECIES_CRADILY, ITEM_NONE, MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_CONFUSE_RAY
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 76, SPECIES_ARMALDO, ITEM_NONE, MOVE_WATER_PULSE, MOVE_ANCIENT_POWER, MOVE_AERIAL_ACE, MOVE_SLASH
+    trainer_mon_item_custom TRAINER_MON_IV_MAX, 78, SPECIES_METAGROSS, ITEM_SITRUS_BERRY, MOVE_EARTHQUAKE, MOVE_PSYCHIC, MOVE_METEOR_MASH, MOVE_SHADOW_BALL
 
 sParty_Anabel: @ 0x082E315C
     @ TRAINER_ANABEL (id 805, special 285): リラ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_BELDUM
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_BELDUM
 
 sParty_Tucker: @ 0x082E3164
     @ TRAINER_TUCKER (id 806, special 286): ヒース ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_BELDUM
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_BELDUM
 
 sParty_Spenser: @ 0x082E316C
     @ TRAINER_SPENSER (id 807, special 287): ウコン ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_BELDUM
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_BELDUM
 
 sParty_Greta: @ 0x082E3174
     @ TRAINER_GRETA (id 808, special 288): コゴミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_BELDUM
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_BELDUM
 
 sParty_Noland: @ 0x082E317C
     @ TRAINER_NOLAND (id 809, special 289): ダツラ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_BELDUM
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_BELDUM
 
 sParty_Lucy: @ 0x082E3184
     @ TRAINER_LUCY (id 810, special 290): アザミ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_BELDUM
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_BELDUM
 
 sParty_Brandon: @ 0x082E318C
     @ TRAINER_BRANDON (id 811, special 291): ジンダイ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_BELDUM
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_BELDUM
 
 sParty_Andres2: @ 0x082E3194
     @ TRAINER_ANDRES_2 (id 812, special 292): ダイジロウ ; flags=0, partySize=2
@@ -4393,29 +4363,34 @@ sParty_Thalia5: @ 0x082E350C
 
 sParty_Mariela: @ 0x082E3524
     @ TRAINER_MARIELA (id 848, special 328): ミハネ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 41, SPECIES_CHIMECHO
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 41, SPECIES_CHIMECHO
 
 sParty_Alvaro: @ 0x082E352C
     @ TRAINER_ALVARO (id 849, special 329): シンヤ ; flags=0, partySize=2
-    trainer_mon_no_item_default 0, 41, SPECIES_BANETTE
-    trainer_mon_no_item_default 0, 41, SPECIES_KADABRA
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 41, SPECIES_BANETTE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 41, SPECIES_KADABRA
 
 sParty_Everett: @ 0x082E353C
     @ TRAINER_EVERETT (id 850, special 330): ダグ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 41, SPECIES_WOBBUFFET
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 41, SPECIES_WOBBUFFET
 
 sParty_Red: @ 0x082E3544
     @ TRAINER_RED (id 851, special 331): レッド ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_CHARMANDER
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_CHARMANDER
 
 sParty_Leaf: @ 0x082E354C
     @ TRAINER_LEAF (id 852, special 332): リーフ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_BULBASAUR
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_BULBASAUR
 
 sParty_BrendanPlaceholder: @ 0x082E3554
     @ TRAINER_BRENDAN_PLACEHOLDER (id 853, special 333): ユウキ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_GROUDON
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_GROUDON
 
 sParty_MayPlaceholder: @ 0x082E355C
     @ TRAINER_MAY_PLACEHOLDER (id 854, special 334): ハルカ ; flags=0, partySize=1
-    trainer_mon_no_item_default 0, 5, SPECIES_KYOGRE
+    trainer_mon_no_item_default TRAINER_MON_IV_MIN, 5, SPECIES_KYOGRE
+
+@ Entire contiguous trainer-party block: 0x082DEEBC-0x082E3563.
+.if (. - sParty_Sawyer1) != TRAINER_PARTIES_DATA_SIZE
+    .error "trainer party data size changed"
+.endif

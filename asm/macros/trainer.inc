@@ -62,6 +62,15 @@
     .4byte \palette, \trainerPic
 .endm
 
+@ Trainer back-picture coordinate record:
+@   u8 size; u8 yOffset; u8 padding[2]
+.macro trainer_back_pic_coords trainerBackPic:req, yOffset:req
+    .if ((. - gTrainerBackPicCoords) / TRAINER_PIC_COORDS_ENTRY_SIZE) != \trainerBackPic
+        .error "trainer_back_pic_coords order does not match TRAINER_BACK_PIC_*"
+    .endif
+    .byte 8, \yOffset, 0, 0
+.endm
+
 @ Trainer back-picture table entry:
 @   const void *data; u16 size; u16 trainerBackPic
 .macro trainer_back_pic_entry pic:req, size:req, trainerBackPic:req
@@ -93,4 +102,64 @@
     .endif
 
     trainer_entry \partyFlags, \trainerClass, \encounterMusicGender, \trainerPic, \name0, \name1, \name2, \name3, \name4, \name5, \item1, \item2, \item3, \item4, \doubleBattle, \aiFlags, \partySize, \party
+.endm
+
+@ Trainer party member structures.
+@ These mirror the four TrainerMon layouts used by the engine.
+
+.macro trainer_mon_no_item_default iv:req, level:req, species:req
+.Ltrainer_mon_start\@:
+    .2byte \iv
+    .byte \level, 0
+    .2byte \species
+    .2byte 0 @ ABI padding
+    .if (. - .Ltrainer_mon_start\@) != TRAINER_MON_NO_ITEM_DEFAULT_SIZE
+        .error "trainer_mon_no_item_default emitted unexpected size"
+    .endif
+.endm
+
+.macro trainer_mon_no_item_custom iv:req, level:req, species:req, move1:req, move2:req, move3:req, move4:req
+.Ltrainer_mon_start\@:
+    .2byte \iv
+    .byte \level, 0
+    .2byte \species
+    .2byte \move1, \move2, \move3, \move4
+    .2byte 0 @ ABI padding
+    .if (. - .Ltrainer_mon_start\@) != TRAINER_MON_NO_ITEM_CUSTOM_SIZE
+        .error "trainer_mon_no_item_custom emitted unexpected size"
+    .endif
+.endm
+
+.macro trainer_mon_item_default iv:req, level:req, species:req, item:req
+.Ltrainer_mon_start\@:
+    .2byte \iv
+    .byte \level, 0
+    .2byte \species
+    .2byte \item
+    .if (. - .Ltrainer_mon_start\@) != TRAINER_MON_ITEM_DEFAULT_SIZE
+        .error "trainer_mon_item_default emitted unexpected size"
+    .endif
+.endm
+
+.macro trainer_mon_item_custom iv:req, level:req, species:req, item:req, move1:req, move2:req, move3:req, move4:req
+.Ltrainer_mon_start\@:
+    .2byte \iv
+    .byte \level, 0
+    .2byte \species
+    .2byte \item
+    .2byte \move1, \move2, \move3, \move4
+    .if (. - .Ltrainer_mon_start\@) != TRAINER_MON_ITEM_CUSTOM_SIZE
+        .error "trainer_mon_item_custom emitted unexpected size"
+    .endif
+.endm
+
+@ struct TrainerMoney:
+@   u8 trainerClass; u8 value; u16 ABI padding
+.macro trainer_money_entry trainerClass:req, value:req
+.Ltrainer_money_start\@:
+    .byte \trainerClass, \value
+    .2byte 0 @ ABI padding
+    .if (. - .Ltrainer_money_start\@) != TRAINER_MONEY_ENTRY_SIZE
+        .error "trainer_money_entry emitted unexpected size"
+    .endif
 .endm

@@ -189,9 +189,6 @@ sTrainerFrontAnims_RubySapphireBrendan: @ 0x082D8BF4
 	.4byte sAnim_GeneralFrame0
 sTrainerFrontAnims_RubySapphireMay: @ 0x082D8BF8
 	.4byte sAnim_GeneralFrame0
-
-	.globl gUnknown_82D8BFC
-gUnknown_82D8BFC: @ 0x082D8BFC
 	.globl gTrainerFrontAnimsPtrTable
 gTrainerFrontAnimsPtrTable:
 	.4byte sTrainerFrontAnims_Hiker
@@ -287,9 +284,10 @@ gTrainerFrontAnimsPtrTable:
 	.4byte sTrainerFrontAnims_Leaf
 	.4byte sTrainerFrontAnims_RubySapphireBrendan
 	.4byte sTrainerFrontAnims_RubySapphireMay
+	.if (. - gTrainerFrontAnimsPtrTable) != (TRAINER_FRONT_PIC_COUNT * TRAINER_ANIM_PTR_ENTRY_SIZE)
+	.error "gTrainerFrontAnimsPtrTable size changed"
+	.endif
 
-	.globl gUnknown_82D8D70
-gUnknown_82D8D70: @ 0x082D8D70
 	.globl gTrainerFrontPicCoords
 gTrainerFrontPicCoords:
 	@ 4-byte records: size=8 (64px), y_offset, ABI padding
@@ -386,9 +384,10 @@ gTrainerFrontPicCoords:
 	trainer_front_pic_coords TRAINER_PIC_LEAF, 1
 	trainer_front_pic_coords TRAINER_PIC_RS_BRENDAN, 1
 	trainer_front_pic_coords TRAINER_PIC_RS_MAY, 1
+	.if (. - gTrainerFrontPicCoords) != (TRAINER_FRONT_PIC_COUNT * TRAINER_PIC_COORDS_ENTRY_SIZE)
+	.error "gTrainerFrontPicCoords size changed"
+	.endif
 
-	.globl gUnknown_82D8EE4
-gUnknown_82D8EE4: @ 0x082D8EE4
 	.globl gTrainerFrontPicTable
 gTrainerFrontPicTable:
 	trainer_front_pic_entry gTrainerFrontPic_Hiker, MON_PIC_SIZE, TRAINER_PIC_HIKER
@@ -484,9 +483,10 @@ gTrainerFrontPicTable:
 	trainer_front_pic_entry gTrainerFrontPic_Leaf, MON_PIC_SIZE, TRAINER_PIC_LEAF
 	trainer_front_pic_entry gTrainerFrontPic_RubySapphireBrendan, MON_PIC_SIZE, TRAINER_PIC_RS_BRENDAN
 	trainer_front_pic_entry gTrainerFrontPic_RubySapphireMay, MON_PIC_SIZE, TRAINER_PIC_RS_MAY
+	.if (. - gTrainerFrontPicTable) != (TRAINER_FRONT_PIC_COUNT * TRAINER_PIC_TABLE_ENTRY_SIZE)
+	.error "gTrainerFrontPicTable size changed"
+	.endif
 
-	.globl gUnknown_82D91CC
-gUnknown_82D91CC: @ 0x082D91CC
 	.globl gTrainerFrontPicPaletteTable
 gTrainerFrontPicPaletteTable:
 	trainer_front_palette_entry gTrainerPalette_Hiker, TRAINER_PIC_HIKER
@@ -584,6 +584,11 @@ gTrainerFrontPicPaletteTable:
 	trainer_front_palette_entry gTrainerPalette_RubySapphireMay, TRAINER_PIC_RS_MAY
 
 
+	.if (. - gTrainerFrontPicPaletteTable) != (TRAINER_FRONT_PIC_COUNT * TRAINER_PALETTE_TABLE_ENTRY_SIZE)
+	.error "gTrainerFrontPicPaletteTable size changed"
+	.endif
+
+
 sAnimCmd_Brendan_1: @ 0x082D94B4
 	.2byte 0x0000, 0x0018 @ frame=0, duration=24
 	.2byte 0x0001, 0x0009 @ frame=1, duration=9
@@ -664,9 +669,6 @@ sTrainerBackAnims_Wally: @ 0x082D958C
 sTrainerBackAnims_Steven: @ 0x082D9594
 	.4byte sAnim_GeneralFrame3
 	.4byte sAnimCmd_May_Steven_1
-
-	.globl gUnknown_82D959C
-gUnknown_82D959C: @ 0x082D959C
 	.globl gTrainerBackAnimsPtrTable
 gTrainerBackAnimsPtrTable:
 	.4byte sTrainerBackAnims_Brendan
@@ -677,22 +679,24 @@ gTrainerBackAnimsPtrTable:
 	.4byte sTrainerBackAnims_RubySapphireMay
 	.4byte sTrainerBackAnims_Wally
 	.4byte sTrainerBackAnims_Steven
+	.if (. - gTrainerBackAnimsPtrTable) != (TRAINER_BACK_PIC_COUNT * TRAINER_ANIM_PTR_ENTRY_SIZE)
+	.error "gTrainerBackAnimsPtrTable size changed"
+	.endif
 
-	.globl gUnknown_82D95BC
-gUnknown_82D95BC: @ 0x082D95BC
 	.globl gTrainerBackPicCoords
 gTrainerBackPicCoords:
-	.byte 8, 4, 0, 0 @ Brendan: size, y_offset, ABI pad
-	.byte 8, 4, 0, 0 @ May: size, y_offset, ABI pad
-	.byte 8, 5, 0, 0 @ Red: size, y_offset, ABI pad
-	.byte 8, 5, 0, 0 @ Leaf: size, y_offset, ABI pad
-	.byte 8, 4, 0, 0 @ RubySapphireBrendan: size, y_offset, ABI pad
-	.byte 8, 4, 0, 0 @ RubySapphireMay: size, y_offset, ABI pad
-	.byte 8, 4, 0, 0 @ Wally: size, y_offset, ABI pad
-	.byte 8, 4, 0, 0 @ Steven: size, y_offset, ABI pad
+	trainer_back_pic_coords TRAINER_BACK_PIC_BRENDAN, 4
+	trainer_back_pic_coords TRAINER_BACK_PIC_MAY, 4
+	trainer_back_pic_coords TRAINER_BACK_PIC_RED, 5
+	trainer_back_pic_coords TRAINER_BACK_PIC_LEAF, 5
+	trainer_back_pic_coords TRAINER_BACK_PIC_RS_BRENDAN, 4
+	trainer_back_pic_coords TRAINER_BACK_PIC_RS_MAY, 4
+	trainer_back_pic_coords TRAINER_BACK_PIC_WALLY, 4
+	trainer_back_pic_coords TRAINER_BACK_PIC_STEVEN, 4
+	.if (. - gTrainerBackPicCoords) != (TRAINER_BACK_PIC_COUNT * TRAINER_PIC_COORDS_ENTRY_SIZE)
+	.error "gTrainerBackPicCoords size changed"
+	.endif
 
-	.globl gUnknown_82D95DC
-gUnknown_82D95DC: @ 0x082D95DC
 	.globl gTrainerBackPicTable
 gTrainerBackPicTable:
 	trainer_back_pic_entry gTrainerBackPic_Brendan, 4 * MON_PIC_SIZE, TRAINER_BACK_PIC_BRENDAN
@@ -703,9 +707,10 @@ gTrainerBackPicTable:
 	trainer_back_pic_entry gTrainerBackPic_RubySapphireMay, 4 * MON_PIC_SIZE, TRAINER_BACK_PIC_RS_MAY
 	trainer_back_pic_entry gTrainerBackPic_Wally, 4 * MON_PIC_SIZE, TRAINER_BACK_PIC_WALLY
 	trainer_back_pic_entry gTrainerBackPic_Steven, 4 * MON_PIC_SIZE, TRAINER_BACK_PIC_STEVEN
+	.if (. - gTrainerBackPicTable) != (TRAINER_BACK_PIC_COUNT * TRAINER_PIC_TABLE_ENTRY_SIZE)
+	.error "gTrainerBackPicTable size changed"
+	.endif
 
-	.globl gUnknown_82D961C
-gUnknown_82D961C: @ 0x082D961C
 	.globl gTrainerBackPicPaletteTable
 gTrainerBackPicPaletteTable:
 	trainer_back_palette_entry gTrainerPalette_Brendan, TRAINER_BACK_PIC_BRENDAN
@@ -716,3 +721,7 @@ gTrainerBackPicPaletteTable:
 	trainer_back_palette_entry gTrainerPalette_RubySapphireMay, TRAINER_BACK_PIC_RS_MAY
 	trainer_back_palette_entry gTrainerPalette_Wally, TRAINER_BACK_PIC_WALLY
 	trainer_back_palette_entry gTrainerPalette_Steven, TRAINER_BACK_PIC_STEVEN
+
+	.if (. - gTrainerBackPicPaletteTable) != (TRAINER_BACK_PIC_COUNT * TRAINER_PALETTE_TABLE_ENTRY_SIZE)
+	.error "gTrainerBackPicPaletteTable size changed"
+	.endif

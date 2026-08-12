@@ -1,7 +1,31 @@
 @ Japanese Emerald trainer constants.
 @ Values are compatible with the corresponding pret/pokeemerald constants.
 
-.set TRAINER_ENTRY_SIZE,       0x20
+.set TRAINER_ENTRY_SIZE,                0x20
+.set TRAINER_PARTIES_DATA_SIZE,         0x46A8
+
+@ Trainer party member structures (matching the four TrainerMon layouts).
+.set TRAINER_MON_NO_ITEM_DEFAULT_SIZE,   8
+.set TRAINER_MON_NO_ITEM_CUSTOM_SIZE,   16
+.set TRAINER_MON_ITEM_DEFAULT_SIZE,      8
+.set TRAINER_MON_ITEM_CUSTOM_SIZE,      16
+
+@ Trainer party IV parameter range.
+@ Intermediate values such as 50/100/150 are intentional tuning values.
+.set TRAINER_MON_IV_MIN,                 0
+.set TRAINER_MON_IV_MAX,               255
+
+@ Japanese trainer class-name table.
+.set TRAINER_CLASS_COUNT,               66
+.set TRAINER_CLASS_NAME_SLOT_SIZE,      11
+.set TRAINER_CLASS_NAME_TABLE_PADDING,   2
+.set TRAINER_CLASS_NAME_TABLE_SIZE,   0x2D8
+
+@ Trainer prize-money table.
+.set TRAINER_MONEY_ENTRY_SIZE,           4
+.set TRAINER_MONEY_ENTRY_COUNT,         56
+.set TRAINER_MONEY_DEFAULT_CLASS,     0xFF
+.set TRAINER_MONEY_DEFAULT_MULTIPLIER,   5
 
 .set TRAINER_PARTY_FLAGS_NONE, 0
 .set F_TRAINER_PARTY_CUSTOM_MOVESET, 1 << 0
@@ -185,6 +209,14 @@
 .set TRAINER_PIC_LEAF                          , 90
 .set TRAINER_PIC_RS_BRENDAN                    , 91
 .set TRAINER_PIC_RS_MAY                        , 92
+
+@ Trainer graphics table dimensions.
+.set TRAINER_FRONT_PIC_COUNT,                93
+.set TRAINER_BACK_PIC_COUNT,                  8
+.set TRAINER_ANIM_PTR_ENTRY_SIZE,             4
+.set TRAINER_PIC_COORDS_ENTRY_SIZE,           4
+.set TRAINER_PIC_TABLE_ENTRY_SIZE,            8
+.set TRAINER_PALETTE_TABLE_ENTRY_SIZE,        8
 
 @ Trainer back-picture IDs.
 .set TRAINER_BACK_PIC_BRENDAN                  , 0

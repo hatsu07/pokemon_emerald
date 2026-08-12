@@ -3744,3 +3744,7 @@ gTrainers: @ 0x082E383C
   @ ROM 0x2EA2FC
   @ src/data/trainers.h:26347 trainers_line_26347 (+18 aliases)
   trainer_entry_by_id TRAINER_MAY_PLACEHOLDER, TRAINER_PARTY_FLAGS_NONE, TRAINER_CLASS_RS_PROTAG, F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE, TRAINER_PIC_RS_MAY, 0x6A, 0x79, 0x56, 0xFF, 0x00, 0x00, ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE, FALSE, AI_SCRIPT_NONE, 1, sParty_MayPlaceholder @ ハルカ
+
+.if (. - gTrainers) != (TRAINERS_COUNT * TRAINER_ENTRY_SIZE)
+    .error "gTrainers table size changed"
+.endif
