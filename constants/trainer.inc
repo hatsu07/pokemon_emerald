@@ -1,6 +1,8 @@
 @ Japanese Emerald trainer constants.
 @ Values are compatible with the corresponding pret/pokeemerald constants.
 
+.set TRAINER_ENTRY_SIZE,       0x20
+
 .set TRAINER_PARTY_FLAGS_NONE, 0
 .set F_TRAINER_PARTY_CUSTOM_MOVESET, 1 << 0
 .set F_TRAINER_PARTY_HELD_ITEM,      1 << 1

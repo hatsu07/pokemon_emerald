@@ -27,8 +27,8 @@
     .byte \partySize
     .space 3, 0
     .4byte \party
-.if (. - .Ltrainer_entry_start\@) != 0x20
-    .error "trainer_entry must emit 0x20 bytes"
+.if (. - .Ltrainer_entry_start\@) != TRAINER_ENTRY_SIZE
+    .error "trainer_entry must emit TRAINER_ENTRY_SIZE bytes"
 .endif
 .endm
 
@@ -80,4 +80,17 @@
 @ gTrainerBackPic_Wally + 0x2000 for the first Steven frame.
 .macro trainer_back_frame_entry pic:req, frame:req
     .4byte \pic + (MON_PIC_SIZE * \frame), MON_PIC_SIZE
+.endm
+
+@ gTrainers entry with canonical opponent ID.
+@ Emits no ID field; trainerId is a build-time assertion for the array index.
+.macro trainer_entry_by_id trainerId:req, partyFlags:req, trainerClass:req, encounterMusicGender:req, trainerPic:req, name0:req, name1:req, name2:req, name3:req, name4:req, name5:req, item1:req, item2:req, item3:req, item4:req, doubleBattle:req, aiFlags:req, partySize:req, party:req
+    .if ((. - gTrainers) % TRAINER_ENTRY_SIZE) != 0
+        .error "gTrainers entry is not TRAINER_ENTRY_SIZE-aligned"
+    .endif
+    .if ((. - gTrainers) / TRAINER_ENTRY_SIZE) != \trainerId
+        .error "gTrainers entry order does not match TRAINER_* opponent ID"
+    .endif
+
+    trainer_entry \partyFlags, \trainerClass, \encounterMusicGender, \trainerPic, \name0, \name1, \name2, \name3, \name4, \name5, \item1, \item2, \item3, \item4, \doubleBattle, \aiFlags, \partySize, \party
 .endm
