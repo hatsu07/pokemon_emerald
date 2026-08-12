@@ -200,6 +200,55 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END MAP TILESET PNG PIPELINE
 
+
+    # BEGIN RAYQUAZA SCENE 1 EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_1/(.+)[.]4bpp[.]lz$")
+        set(RAY_SCENE1_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_1/${RAY_SCENE1_STEM}.png")
+        set(RAY_SCENE1_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_1/rayquaza_scene1_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene1_exact_assets.py"
+                repack-gfx
+                --manifest "${RAY_SCENE1_PLAN}"
+                --key "${RAY_SCENE1_STEM}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${RAY_SCENE1_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene1_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_1/(groudon|kyogre)[.]gbapal[.]lz$")
+        set(RAY_SCENE1_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_1/${RAY_SCENE1_STEM}.png")
+        set(RAY_SCENE1_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_1/rayquaza_scene1_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene1_exact_assets.py"
+                repack-pal
+                --manifest "${RAY_SCENE1_PLAN}"
+                --key "${RAY_SCENE1_STEM}_pal"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${RAY_SCENE1_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene1_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END RAYQUAZA SCENE 1 EXACT PIPELINE
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/priority_b/(.+)[.]4bpp[.]lz$")
         set(PRIORITY_B_STEM "${CMAKE_MATCH_1}")
