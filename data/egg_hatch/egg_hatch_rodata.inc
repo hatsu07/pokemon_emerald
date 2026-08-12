@@ -2,6 +2,7 @@
 
 	.globl gUnknown_82FC0FE
 gUnknown_82FC0FE: @ 0x082FC0FE
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0xF9, 0x05, 0xFF, 0x00
 
 sEggPalette: @ 0x082FC102
@@ -105,6 +106,7 @@ gUnknown_82FCA74:
 	.globl gUnknown_82FCA7C
 sEggShardVelocities: @ 0x082FCA7C
 gUnknown_82FCA7C:
+	@ ANALYSIS: RAW_BLOCK size=0x4C
 	.2byte -384, -960, -1280, -768, 896, -768, -1024, -960
 	.2byte 512, -384, -128, -1728, 1280, -576, -384, -960
 	.2byte 1152, -384, -256, -1728, 1024, -576, -896, -960

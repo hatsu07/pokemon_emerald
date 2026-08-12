@@ -1,4 +1,4 @@
-@ Automatically recovered from baserom.gba WildPokemonHeader data.
+@ Automatically recovered from reference ROM WildPokemonHeader data.
 
 @ PetalburgCity: WildPokemonHeader ROM offset 0x52E0FC
 	.set MAP_GROUP_PETALBURG_CITY, 0x00

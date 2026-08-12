@@ -20,6 +20,7 @@ gUnknown_82FAD34:
 sSpriteDimensions: @ 0x082FAD4C
 gUnknown_82FAD4C:
 	@ square: 8x8, 16x16, 32x32, 64x64 (in tiles)
+	@ ANALYSIS: RAW_BLOCK size=0x18
 	.byte 1, 1, 2, 2, 4, 4, 8, 8
 	@ horizontal: 16x8, 32x8, 32x16, 64x32
 	.byte 2, 1, 4, 1, 4, 2, 8, 4
@@ -29,6 +30,7 @@ gUnknown_82FAD4C:
 	.globl gUnknown_82FAD64
 sCrc16Table: @ 0x082FAD64
 gUnknown_82FAD64:
+	@ ANALYSIS: RAW_BLOCK size=0x200
 	.2byte 0x0000, 0x1189, 0x2312, 0x329B, 0x4624, 0x57AD, 0x6536, 0x74BF
 	.2byte 0x8C48, 0x9DC1, 0xAF5A, 0xBED3, 0xCA6C, 0xDBE5, 0xE97E, 0xF8F7
 	.2byte 0x1081, 0x0108, 0x3393, 0x221A, 0x56A5, 0x472C, 0x75B7, 0x643E

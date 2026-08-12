@@ -77,4 +77,5 @@ gDaycareData_082FC0F8:
 gUnknown_82FC0F8: @ 0x082FC0F8
 	@ analyzed canonical ROM range 0x082FC0F8-0x082FC0F9
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0xFE, 0xFF

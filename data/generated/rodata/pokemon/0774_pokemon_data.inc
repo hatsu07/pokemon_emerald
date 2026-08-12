@@ -8,6 +8,7 @@ gPokedexData_08543110:
 gUnknown_8543110: @ 0x08543110
 	@ analyzed canonical ROM range 0x08543110-0x0854311F
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0x30C8, 0x0000, 0x00D1, 0x0000, 0x10EA, 0x0000, 0x20F3, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08543120: pokedex.s: sub_080BE0C0
 	.globl gPokedexData_08543120
@@ -16,6 +17,7 @@ gPokedexData_08543120:
 gUnknown_8543120: @ 0x08543120
 	@ analyzed canonical ROM range 0x08543120-0x08543147
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x28
 	.2byte 0x0002, 0x2000, 0x0014, 0x0001, 0x1902, 0x0208, 0x0F02, 0x0281
 	.2byte 0x0000, 0x200C, 0x0807, 0x0285, 0x1202, 0x0A03, 0x0908, 0x0365
 	.2byte 0x00FF, 0x0000, 0x0000, 0x0000
@@ -26,6 +28,7 @@ gPokedexData_08543148:
 gUnknown_8543148: @ 0x08543148
 	@ analyzed canonical ROM range 0x08543148-0x0854314F
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x20EA, 0x0000, 0x30F7, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08543150: pokedex.s: sub_080BF6F4
 	.globl gPokedexData_08543150
@@ -34,6 +37,7 @@ gPokedexData_08543150:
 gUnknown_8543150: @ 0x08543150
 	@ analyzed canonical ROM range 0x08543150-0x08543167
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x18
 	.2byte 0x0002, 0x2000, 0x0014, 0x0001, 0x1902, 0x0208, 0x0F02, 0x0281
 	.2byte 0x00FF, 0x0000, 0x0000, 0x0000
 	.globl gUnknown_8543168
@@ -558,6 +562,7 @@ gPokedexData_0854410C:
 gUnknown_854410C: @ 0x0854410C
 	@ analyzed canonical ROM range 0x0854410C-0x08544133
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x28
 	.2byte 0x0000, 0x0000, 0x0551, 0x0000, 0x0556, 0x0587, 0x055B, 0x058C
 	.2byte 0x0560, 0x0591, 0x0565, 0x0000, 0x056A, 0x0A96, 0x056F, 0x0000
 	.2byte 0x0577, 0x0000, 0x0374, 0x037C
@@ -568,6 +573,7 @@ gPokedexData_08544134:
 gUnknown_8544134: @ 0x08544134
 	@ analyzed canonical ROM range 0x08544134-0x0854414B
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x18
 	.byte 0x35, 0x90, 0x5C, 0x08, 0x00, 0x00, 0x05, 0x00, 0x52, 0x90, 0x5C, 0x08, 0x06, 0x00, 0x05, 0x00
 	.byte 0x66, 0x90, 0x5C, 0x08, 0x0C, 0x00, 0x05, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0854414C: pokedex.s: sub_080C1440, sub_080C16B8
@@ -577,6 +583,7 @@ gPokedexData_0854414C:
 gUnknown_854414C: @ 0x0854414C
 	@ analyzed canonical ROM range 0x0854414C-0x0854419F
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x54
 	.2byte 0x9093, 0x085C, 0x0200, 0x0505, 0x0C02, 0x0000, 0x90B7, 0x085C
 	.2byte 0x0400, 0x0505, 0x0C04, 0x0000, 0x90D5, 0x085C, 0x0600, 0x0505
 	.2byte 0x0606, 0x0000, 0x90D5, 0x085C, 0x0600, 0x0B05, 0x0606, 0x0000
@@ -590,6 +597,7 @@ gPokedexData_085441A0:
 gUnknown_85441A0: @ 0x085441A0
 	@ analyzed canonical ROM range 0x085441A0-0x085441BB
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.2byte 0xFFFF, 0x01FF, 0xFFFF, 0x0200, 0x03FF, 0x0401, 0xFF02, 0x0401
 	.2byte 0xFFFF, 0x0502, 0xFFFF, 0x0604, 0xFFFF, 0xFF05
 	@ pret/pokeemerald-jp direct xref for 0x085441BC: pokedex.s: sub_080C0C7C
@@ -599,6 +607,7 @@ gPokedexData_085441BC:
 gUnknown_85441BC: @ 0x085441BC
 	@ analyzed canonical ROM range 0x085441BC-0x085441D7
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.2byte 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF
 	.2byte 0xFFFF, 0x05FF, 0xFFFF, 0x0604, 0xFFFF, 0xFF05
 	@ pret/pokeemerald-jp direct xref for 0x085441D8: pokedex.s: sub_080C0C7C
@@ -608,6 +617,7 @@ gPokedexData_085441D8:
 gUnknown_85441D8: @ 0x085441D8
 	@ analyzed canonical ROM range 0x085441D8-0x085441F3
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.2byte 0xFFFF, 0x01FF, 0xFFFF, 0x0200, 0x03FF, 0x0401, 0xFF02, 0x0401
 	.2byte 0xFFFF, 0x0602, 0xFFFF, 0xFFFF, 0xFFFF, 0xFF04
 	@ pret/pokeemerald-jp direct xref for 0x085441F4: pokedex.s: sub_080C0C7C
@@ -617,6 +627,7 @@ gPokedexData_085441F4:
 gUnknown_85441F4: @ 0x085441F4
 	@ analyzed canonical ROM range 0x085441F4-0x0854420F
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.2byte 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF
 	.2byte 0xFFFF, 0x06FF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFF04
 	.globl gUnknown_8544210
@@ -761,6 +772,7 @@ gPokedexData_085443B0:
 gUnknown_85443B0: @ 0x085443B0
 	@ analyzed canonical ROM range 0x085443B0-0x085443B1
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0x00, 0x01
 	.globl gUnknown_85443B2
 gUnknown_85443B2: @ 0x085443B2

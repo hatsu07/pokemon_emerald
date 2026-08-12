@@ -1,4 +1,4 @@
 	.globl gText_Rom_5CD05D
 	.set gText_Rom_5CD05D, gText_Rom_5CD043 + 0x1a
-	@ Replaced baserom.gba range: offset=0x5CD061, size=0x7
+	@ ANALYSIS: RAW_RANGE offset=0x5CD061, size=0x7
 	.byte 0x01, 0x06, 0xFF, 0x01, 0x05, 0xFF, 0x00

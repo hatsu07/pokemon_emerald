@@ -43,7 +43,7 @@ gText_Rom_5CC474: @ 0x085CC474
 	.endif
 	.globl gText_Rom_5CC477
 	.set gText_Rom_5CC477, gText_Rom_5CC474 + 0x3
-	@ Replaced baserom.gba range: offset=0x5CC47C, size=0x3
+	@ ANALYSIS: RAW_RANGE offset=0x5CC47C, size=0x3
 	.byte 0xFD, 0x02, 0xFF
 	.globl gUnknown_85CC47F
 gUnknown_85CC47F: @ 0x085CC47F

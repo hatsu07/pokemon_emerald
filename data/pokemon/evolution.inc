@@ -1,6 +1,6 @@
 .include "constants/evolution_constants.inc"
 
-@ Auto-generated from baserom.gba by tools/extract_evolutions.py
+@ Auto-generated from reference ROM by tools/extract_evolutions.py
 @ Species 1 ROM offset: 0x002F5CCC
 @ Species count: 412
 @ Evolutions per species: 5

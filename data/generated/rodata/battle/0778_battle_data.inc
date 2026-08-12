@@ -5,6 +5,7 @@ gTrainerCardData_085467C1:
 gUnknown_85467C1: @ 0x085467C1
 	@ analyzed canonical ROM range 0x085467C1-0x085467C3
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x0A, 0x10, 0x00
 	.globl gUnknown_85467C4
 gUnknown_85467C4: @ 0x085467C4
@@ -18,6 +19,7 @@ gTrainerCardData_085467D0:
 gUnknown_85467D0: @ 0x085467D0
 	@ analyzed canonical ROM range 0x085467D0-0x085467D5
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A
 	@ pret/pokeemerald-jp direct xref for 0x085467D6: trainer_card.s: TrainerCard_PrintPokemonIconsOnCard
 	.globl gTrainerCardData_085467D6
@@ -26,6 +28,7 @@ gTrainerCardData_085467D6:
 gUnknown_85467D6: @ 0x085467D6
 	@ analyzed canonical ROM range 0x085467D6-0x085467DB
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0x00, 0x04, 0x08, 0x0C, 0x10, 0x14
 	@ pret/pokeemerald-jp direct xref for 0x085467DC: trainer_card.s: PrintNameOnCard2
 	.globl gTrainerCardData_085467DC
@@ -34,6 +37,7 @@ gTrainerCardData_085467DC:
 gUnknown_85467DC: @ 0x085467DC
 	@ analyzed canonical ROM range 0x085467DC-0x085467DF
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x0B, 0x0C, 0x0D, 0x0E
 	@ pret/pokeemerald-jp direct xref for 0x085467E0: trainer_card.s: TrainerCard_PrintStarsAndBadgesOnCard
 	.globl gTrainerCardData_085467E0
@@ -42,6 +46,7 @@ gTrainerCardData_085467E0:
 gUnknown_85467E0: @ 0x085467E0
 	@ analyzed canonical ROM range 0x085467E0-0x085467E3
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x07, 0x07, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085467E4: frontier_pass.s: InitFrontierMap, InitFrontierPass
 	.globl gFrontierPassData_085467E4
@@ -50,6 +55,7 @@ gFrontierPassData_085467E4:
 gUnknown_85467E4: @ 0x085467E4
 	@ analyzed canonical ROM range 0x085467E4-0x085469A3
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x1C0
 	.byte 0x27, 0x25, 0xFF, 0x7F, 0x39, 0x67, 0x94, 0x52, 0xEF, 0x3D, 0x8C, 0x39, 0x27, 0x25, 0xDC, 0x7F
 	.byte 0xAC, 0x20, 0xFF, 0x73, 0x9C, 0x63, 0x9F, 0x10, 0x8C, 0x6E, 0x2A, 0x62, 0xC9, 0x55, 0x89, 0x35
 	.byte 0x91, 0x39, 0xFF, 0x7F, 0xFC, 0x6F, 0x94, 0x52, 0xEF, 0x3D, 0x8C, 0x39, 0xE5, 0x20, 0xA7, 0x45
@@ -85,6 +91,7 @@ gFrontierPassData_085469A4:
 gUnknown_85469A4: @ 0x085469A4
 	@ analyzed canonical ROM range 0x085469A4-0x08546F6A
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x5C7
 	.byte 0x10, 0x00, 0x40, 0x00, 0x33, 0x00, 0x00, 0xF0, 0x01, 0x90, 0x01, 0xEE, 0xEE, 0xF0, 0x01, 0x90
 	.byte 0x01, 0x30, 0x11, 0x11, 0xF0, 0x01, 0xE0, 0x01, 0x51, 0x55, 0x55, 0x11, 0x01, 0x24, 0x34, 0x33
 	.byte 0x11, 0x35, 0x21, 0x22, 0x20, 0x03, 0x52, 0x34, 0x00, 0x03, 0xE4, 0x00, 0x17, 0xE5, 0x11, 0x20

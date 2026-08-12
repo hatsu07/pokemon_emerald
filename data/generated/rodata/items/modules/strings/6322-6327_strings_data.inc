@@ -8,7 +8,7 @@ gText_Rom_5CC9D9: @ 0x085CC9D9
 	.endif
 	.globl gText_Rom_5CC9DB
 	.set gText_Rom_5CC9DB, gText_Rom_5CC9D9 + 0x2
-	@ Replaced baserom.gba range: offset=0x5CC9DF, size=0x7
+	@ ANALYSIS: RAW_RANGE offset=0x5CC9DF, size=0x7
 	.byte 0x00, 0xFD, 0x02, 0xB8, 0xFD, 0x03, 0xFF
 
 	@ src/strings.c:768 gText_Var1Berry

@@ -1431,7 +1431,7 @@ gItemIconPalette_OldSeaMap: @ 0x08DB7D20
 	@ BEGIN DECORATION ICON ALL EXACT ASSETS
 	@ 42 decoration PNGs / 84 exact compressed assets.
 	@ Each PNG supplies both 4bpp graphics and gbapal data.
-	@ JP addresses/bytes/compression verified against baserom.gba.
+	@ JP addresses/bytes/compression verified against reference ROM.
 	.globl gDecorIcon_HeavyDesk
 gDecorIcon_HeavyDesk: @ 0x08DB7D48
 	.incbin "build/graphics/decorations/decor_exact/gDecorIcon_HeavyDesk.4bpp.lz"

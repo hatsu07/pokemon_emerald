@@ -5,6 +5,7 @@ gCreditsData_085C7590:
 gUnknown_85C7590: @ 0x085C7590
 	@ analyzed canonical ROM range 0x085C7590-0x085C7913
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x384
 	.4byte 0x085C7180 @ +0x0
 	.4byte 0x085C7188 @ +0x4
 	.4byte 0x085C7190 @ +0x8
@@ -237,6 +238,7 @@ gCreditsData_085C7914:
 gUnknown_85C7914: @ 0x085C7914
 	@ analyzed canonical ROM range 0x085C7914-0x085C7917
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0xC8, 0x01, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085C7918: credits.s: sub_0817544C
 	.globl gCreditsData_085C7918
@@ -245,6 +247,7 @@ gCreditsData_085C7918:
 gUnknown_85C7918: @ 0x085C7918
 	@ analyzed canonical ROM range 0x085C7918-0x085C7927
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0x0000, 0x1E09, 0x080C, 0x0001, 0x00FF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085C7928: credits.s: sub_08176024
 	.globl gCreditsData_085C7928
@@ -253,6 +256,7 @@ gCreditsData_085C7928:
 gUnknown_85C7928: @ 0x085C7928
 	@ analyzed canonical ROM range 0x085C7928-0x085C797B
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x54
 	.2byte 0x2468, 0x2478, 0x2488, 0x0000, 0x0000, 0x0008, 0x0040, 0x0008
 	.2byte 0x0080, 0x0008, 0x00C0, 0x0008, 0xFFFE, 0x0000, 0x0000, 0x0004
 	.2byte 0x0040, 0x0004, 0x0080, 0x0004, 0x00C0, 0x0004, 0xFFFE, 0x0000
@@ -266,6 +270,7 @@ gCreditsData_085C797C:
 gUnknown_85C797C: @ 0x085C797C
 	@ analyzed canonical ROM range 0x085C797C-0x085C79BB
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x40
 	.2byte 0x7930, 0x085C, 0x7944, 0x085C, 0x7958, 0x085C, 0x7968, 0x085C
 	.2byte 0x0000, 0x0008, 0x0040, 0x0008, 0x0080, 0x0008, 0x00C0, 0x0008
 	.2byte 0xFFFE, 0x0000, 0x0000, 0x0004, 0x0040, 0x0004, 0x0080, 0x0004
@@ -277,6 +282,7 @@ gCreditsData_085C79BC:
 gUnknown_85C79BC: @ 0x085C79BC
 	@ analyzed canonical ROM range 0x085C79BC-0x085C79C7
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0xC
 	.4byte 0x085C798C @ +0x0
 	.4byte 0x085C79A0 @ +0x4
 	.4byte 0x085C79B4 @ +0x8
@@ -287,6 +293,7 @@ gCreditsData_085C79C8:
 gUnknown_85C79C8: @ 0x085C79C8
 	@ analyzed canonical ROM range 0x085C79C8-0x085C79D7
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0xC000, 0x0201, 0x1800, 0x03E9, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085C79D8: credits.s: sub_081757EC
 	.globl gCreditsData_085C79D8
@@ -295,6 +302,7 @@ gCreditsData_085C79D8:
 gUnknown_85C79D8: @ 0x085C79D8
 	@ analyzed canonical ROM range 0x085C79D8-0x085C7A13
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x3C
 	.2byte 0xD800, 0x0201, 0x03E9, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x00A0, 0xC000, 0x0400, 0x0000, 0x0000, 0x0008, 0xFFFF, 0x0000
 	.2byte 0x0040, 0x0008, 0xFFFF, 0x0000, 0x0080, 0x0008, 0xFFFF, 0x0000
@@ -314,6 +322,7 @@ gLotteryCornerData_085C7A2C:
 gUnknown_85C7A2C: @ 0x085C7A2C
 	@ analyzed canonical ROM range 0x085C7A2C-0x085C7A33
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0045, 0x00B6, 0x0019, 0x0001
 	@ pret/pokeemerald-jp direct xref for 0x085C7A34: lottery_corner.s: CB2_ShowDiploma
 	.globl gLotteryCornerData_085C7A34
@@ -322,6 +331,7 @@ gLotteryCornerData_085C7A34:
 gUnknown_85C7A34: @ 0x085C7A34
 	@ analyzed canonical ROM range 0x085C7A34-0x085C7A73
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x40
 	.byte 0xA3, 0x28, 0xFF, 0x6F, 0xFF, 0x5F, 0xBC, 0x2F, 0x7A, 0x03, 0xBD, 0x6F, 0x9B, 0x73, 0x7F, 0x63
 	.byte 0x7B, 0x5F, 0xDE, 0x5B, 0x9D, 0x5B, 0x5A, 0x4F, 0x9C, 0x47, 0xFF, 0x3F, 0xBD, 0x37, 0x3F, 0x57
 	.byte 0xA3, 0x28, 0xFF, 0x6F, 0xBE, 0x73, 0x99, 0x47, 0x75, 0x1B, 0xBD, 0x6F, 0x9B, 0x73, 0x7F, 0x63

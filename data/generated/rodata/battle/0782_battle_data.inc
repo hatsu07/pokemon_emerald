@@ -1,7 +1,7 @@
 	@ Priority A: Frontier Pass fully split into exact assets and typed tables.
-	@ baserom.gba is used only by tools/semanticize_priority_a_full.py; build uses the extracted files below.
+	@ reference ROM is used only by tools/semanticize_priority_a_full.py; build uses the extracted files below.
 	@ Priority A: Frontier Pass fully split into exact assets and typed tables.
-	@ baserom.gba is used only by tools/semanticize_priority_a_full.py; build uses the extracted files below.
+	@ reference ROM is used only by tools/semanticize_priority_a_full.py; build uses the extracted files below.
 	@ Priority A external targets identified from Frontier Pass consumers / pret declarations.
 	@ Local aliases emit no bytes and avoid depending on C static symbol visibility.
 	.set gPriorityAFrontierPassCursorPal, 0x085468E4 @ gFrontierPassCursor_Pal

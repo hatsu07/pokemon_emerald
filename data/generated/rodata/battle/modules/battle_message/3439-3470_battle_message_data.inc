@@ -73,7 +73,7 @@ gText_Rom_5AB0E9: @ 0x085AB0E9
 	.set gText_Rom_5AB0EB, gText_Rom_5AB0E9 + 0x2
 	.globl gText_Rom_5AB0EE
 	.set gText_Rom_5AB0EE, gText_Rom_5AB0E9 + 0x5
-	@ Replaced baserom.gba range: offset=0x5AB0F3, size=0x6
+	@ ANALYSIS: RAW_RANGE offset=0x5AB0F3, size=0x6
 	.byte 0x70, 0x62, 0x79, 0x1A, 0x00, 0xFE
 
 	@ src/battle_message.c:417 battle_message_line_417
@@ -88,7 +88,7 @@ gText_Rom_5AB0F9: @ 0x085AB0F9
 	.set gText_Rom_5AB0FB, gText_Rom_5AB0F9 + 0x2
 	.globl gText_Rom_5AB0FE
 	.set gText_Rom_5AB0FE, gText_Rom_5AB0F9 + 0x5
-	@ Replaced baserom.gba range: offset=0x5AB103, size=0x8
+	@ ANALYSIS: RAW_RANGE offset=0x5AB103, size=0x8
 	.byte 0xFD, 0x1C, 0x19, 0x00, 0xFD, 0x1D, 0x1A, 0xFE
 
 	@ src/battle_message.c:417 battle_message_line_417

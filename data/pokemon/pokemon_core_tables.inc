@@ -419,6 +419,7 @@ gUnknown_82FA374:
 	.globl gUnknown_82FA50F
 sMonAnimationDelayTable: @ 0x082FA50F
 gUnknown_82FA50F:
+	@ ANALYSIS: RAW_BLOCK size=0x19B
 	.byte   0 @ SPECIES_BULBASAUR
 	.byte   0 @ SPECIES_IVYSAUR
 	.byte   0 @ SPECIES_VENUSAUR
@@ -853,6 +854,7 @@ gUnknown_82FA6B2:
 	.globl gUnknown_82FA6B6
 gStatStageRatios: @ 0x082FA6B6
 gUnknown_82FA6B6:
+	@ ANALYSIS: RAW_BLOCK size=0x1A
 	.byte 10, 40 @ stage -6
 	.byte 10, 35 @ stage -5
 	.byte 10, 30 @ stage -4
@@ -874,6 +876,7 @@ sText_GameFreakJpn: @ 0x082FA6D0
 	.globl gUnknown_82FA6D6
 sDeoxysBaseStats: @ 0x082FA6D6
 gUnknown_82FA6D6:
+	@ ANALYSIS: RAW_BLOCK size=0xC
 	.2byte 50 @ HP
 	.2byte 95 @ Attack
 	.2byte 90 @ Defense
@@ -965,16 +968,19 @@ gUnknown_82FA844:
 	.globl gUnknown_82FA84E
 sGetMonDataEVConstants: @ 0x082FA84E
 gUnknown_82FA84E:
+	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0x1A, 0x1B, 0x1C, 0x1D, 0x1F, 0x1E
 
 	.globl gUnknown_82FA854
 sStatsToRaise: @ 0x082FA854
 gUnknown_82FA854:
+	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0x01, 0x01, 0x03, 0x02, 0x04, 0x06
 
 	.globl gUnknown_82FA85A
 sFriendshipEventModifiers: @ 0x082FA85A
 gUnknown_82FA85A:
+	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.byte 5, 3, 2 @ friendship event 0
 	.byte 5, 3, 2 @ friendship event 1
 	.byte 1, 1, 0 @ friendship event 2
@@ -991,6 +997,7 @@ sHMMoves: @ 0x082FA876
 gUnknown_82FA876:
 	.2byte MOVE_POINTS_EFFECT, MOVE_FLY, MOVE_SURF, MOVE_STRENGTH
 	.2byte MOVE_FLASH, MOVE_ROCK_SMASH, MOVE_WATERFALL, MOVE_DIVE
+	@ ANALYSIS: RAW_BLOCK size=0x2
 	.2byte 0xFFFF @ HM_MOVES_END
 
 	.globl gUnknown_82FA888

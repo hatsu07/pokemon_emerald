@@ -1,5 +1,5 @@
 @ Move Tutor learnsets
-@ Extracted from baserom.gba
+@ Extracted from reference ROM
 @ Tutor move list ROM offset: 0x5E08C4
 @ Learnset ROM offset:        0x5E0900
 @ Tutor move count:           30
@@ -116,6 +116,7 @@ gUnknown_85E0900: @ 0x085E0900
 
 @ 0: SPECIES_NONE
 @ Original: 0x00000000
+    @ ANALYSIS: RAW_BLOCK size=0x4
     .4byte 0
 
 @ 1: SPECIES_BULBASAUR
@@ -156,6 +157,7 @@ gUnknown_85E0900: @ 0x085E0900
 
 @ 10: SPECIES_CATERPIE
 @ Original: 0x00000000
+    @ ANALYSIS: RAW_BLOCK size=0x8
     .4byte 0
 
 @ 11: SPECIES_METAPOD
@@ -168,6 +170,7 @@ gUnknown_85E0900: @ 0x085E0900
 
 @ 13: SPECIES_WEEDLE
 @ Original: 0x00000000
+    @ ANALYSIS: RAW_BLOCK size=0x8
     .4byte 0
 
 @ 14: SPECIES_KAKUNA
@@ -632,6 +635,7 @@ gUnknown_85E0900: @ 0x085E0900
 
 @ 129: SPECIES_MAGIKARP
 @ Original: 0x00000000
+    @ ANALYSIS: RAW_BLOCK size=0x4
     .4byte 0
 
 @ 130: SPECIES_GYARADOS
@@ -644,6 +648,7 @@ gUnknown_85E0900: @ 0x085E0900
 
 @ 132: SPECIES_DITTO
 @ Original: 0x00000000
+    @ ANALYSIS: RAW_BLOCK size=0x4
     .4byte 0
 
 @ 133: SPECIES_EEVEE
@@ -920,6 +925,7 @@ gUnknown_85E0900: @ 0x085E0900
 
 @ 201: SPECIES_UNOWN
 @ Original: 0x00000000
+    @ ANALYSIS: RAW_BLOCK size=0x8
     .4byte 0
 
 @ 202: SPECIES_WOBBUFFET
@@ -1056,6 +1062,7 @@ gUnknown_85E0900: @ 0x085E0900
 
 @ 235: SPECIES_SMEARGLE
 @ Original: 0x00000000
+    @ ANALYSIS: RAW_BLOCK size=0x4
     .4byte 0
 
 @ 236: SPECIES_TYROGUE
@@ -1124,6 +1131,7 @@ gUnknown_85E0900: @ 0x085E0900
 
 @ 252: SPECIES_OLD_UNOWN_B
 @ Original: 0x00000000
+    @ ANALYSIS: RAW_BLOCK size=0x64
     .4byte 0
 
 @ 253: SPECIES_OLD_UNOWN_C
@@ -1276,6 +1284,7 @@ gUnknown_85E0900: @ 0x085E0900
 
 @ 290: SPECIES_WURMPLE
 @ Original: 0x00000000
+    @ ANALYSIS: RAW_BLOCK size=0x8
     .4byte 0
 
 @ 291: SPECIES_SILCOON
@@ -1288,6 +1297,7 @@ gUnknown_85E0900: @ 0x085E0900
 
 @ 293: SPECIES_CASCOON
 @ Original: 0x00000000
+    @ ANALYSIS: RAW_BLOCK size=0x4
     .4byte 0
 
 @ 294: SPECIES_DUSTOX
@@ -1556,6 +1566,7 @@ gUnknown_85E0900: @ 0x085E0900
 
 @ 360: SPECIES_WYNAUT
 @ Original: 0x00000000
+    @ ANALYSIS: RAW_BLOCK size=0x4
     .4byte 0
 
 @ 361: SPECIES_DUSKULL
@@ -1708,6 +1719,7 @@ gUnknown_85E0900: @ 0x085E0900
 
 @ 398: SPECIES_BELDUM
 @ Original: 0x00000000
+    @ ANALYSIS: RAW_BLOCK size=0x4
     .4byte 0
 
 @ 399: SPECIES_METANG

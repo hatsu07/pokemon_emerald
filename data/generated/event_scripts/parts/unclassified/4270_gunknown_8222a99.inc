@@ -1,7 +1,7 @@
 
 	.globl gUnknown_8222A99
 gUnknown_8222A99: @ 0x08222A99
-	@ Replaced baserom.gba range: offset=0x222A99, size=0x2B
+	@ ANALYSIS: SOURCE_RANGE offset=0x222A99, size=0x2B
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_08222A99: @ 0x08222A99
 	lock
@@ -29,7 +29,7 @@ EventScript_JP_08222A99: @ 0x08222A99
 
 	setwildbattle SPECIES_SUDOWOODO, 40, ITEM_NONE
 
-	@ Replaced baserom.gba range: offset=0x222ACA, size=0xE3
+	@ ANALYSIS: SOURCE_RANGE offset=0x222ACA, size=0xE3
 	@ semantic recovery: script_data; byte-verified against linked ROM
 	setflag 0x08C1
 	dowildbattle

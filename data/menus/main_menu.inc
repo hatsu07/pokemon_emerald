@@ -11,6 +11,7 @@ gMainMenuData_082D2588:
 gUnknown_82D2588: @ 0x082D2588
 	@ analyzed canonical ROM range 0x082D2588-0x082D25C7
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x40
 	.2byte 0x0000, 0x53FF, 0x37FF, 0x2F7B, 0x26F7, 0x1E73, 0x19EF, 0x116B
 	.2byte 0x08E7, 0x67F8, 0x43EF, 0x376E, 0x2EED, 0x226C, 0x19EB, 0x0000
 	.2byte 0x0000, 0x53FF, 0x37FF, 0x2F7B, 0x26F7, 0x1E73, 0x19EF, 0x116B
@@ -235,11 +236,13 @@ gUnknown_82D2A08: @ 0x082D2A08
 	@ pointer/nullable table
 	.4byte gText_Rom_5C8F12 @ +0x0
 	.4byte gText_Rom_5C8F18 @ +0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x085C8F1E @ +0x8
 	.4byte gText_Rom_5C8F24 @ +0xC
 	.4byte gText_Rom_5C8F28 @ +0x10
 	.4byte gText_Rom_5C8F2E @ +0x14
 	.4byte gText_Rom_5C8F34 @ +0x18
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x085C8F3A @ +0x1C
 	.4byte 0x085C8F40 @ +0x20
 	.4byte gText_Rom_5C8F46 @ +0x24
@@ -247,6 +250,7 @@ gUnknown_82D2A08: @ 0x082D2A08
 	.4byte gText_Rom_5C8F52 @ +0x2C
 	.4byte gText_Rom_5C8F58 @ +0x30
 	.4byte gText_Rom_5C8F5E @ +0x34
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x085C8F64 @ +0x38
 	.4byte gText_Rom_5C8F6A @ +0x3C
 	.4byte gText_Rom_5C8F70 @ +0x40

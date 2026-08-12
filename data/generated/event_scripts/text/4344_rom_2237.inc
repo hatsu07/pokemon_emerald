@@ -2,7 +2,7 @@
 	.set gText_Rom_2237E9, gText_Rom_2237C1 + 0x28
 	.globl gText_Rom_2237EB
 	.set gText_Rom_2237EB, gText_Rom_2237C1 + 0x2a
-	@ Replaced baserom.gba range: offset=0x2237EF, size=0xF1B
+	@ ANALYSIS: SOURCE_RANGE offset=0x2237EF, size=0xF1B
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_082237EF: @ 0x082237EF
 	.string "ぼくは\n{STR_VAR_1}さんの　{STR_VAR_2}ばん　でし\lそのなも　{STR_VAR_3}!$"

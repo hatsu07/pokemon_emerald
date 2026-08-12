@@ -1,6 +1,6 @@
 	.globl gText_Rom_20D67C
 	.set gText_Rom_20D67C, gText_Rom_20D5FC + 0x80
-	@ Replaced baserom.gba range: offset=0x20D682, size=0x400
+	@ ANALYSIS: SOURCE_RANGE offset=0x20D682, size=0x400
 	@ semantic recovery: script_data; byte-verified against linked ROM
 MapScripts_JP_0820D682: @ 0x0820D682
 	@ map script dispatch table

@@ -1,4 +1,4 @@
-  @ Replaced baserom.gba range: offset=0xB98B28, size=0x679C4
+  @ ANALYSIS: SOURCE_RANGE offset=0xB98B28, size=0x679C4
   @ confirmed unused ROM padding: 0x08B98B28-0x08BFFFFF
   .fill 0x674D8, 1, 0xFF
   @ data resumes at ROM 0x08C00000

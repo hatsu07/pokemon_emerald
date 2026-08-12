@@ -5,6 +5,7 @@ gTrainerHillData_085FB6A0:
 gUnknown_85FB6A0: @ 0x085FB6A0
 	@ analyzed canonical ROM range 0x085FB6A0-0x085FB8B7
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x218
 	.2byte 0x0603, 0x0000, 0x060B, 0x0000, 0x060D, 0x0000, 0x010F, 0x0000
 	.2byte 0x042B, 0x0000, 0x012D, 0x0000, 0x0924, 0x0000, 0x0429, 0x0000
 	.2byte 0x0505, 0x0000, 0x0418, 0x0000, 0x002F, 0x0000, 0x092E, 0x0000
@@ -46,6 +47,7 @@ gTrainerHillData_085FB8B8:
 gUnknown_85FB8B8: @ 0x085FB8B8
 	@ analyzed canonical ROM range 0x085FB8B8-0x085FB8BF
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x085FB868 @ +0x0
 	.4byte 0x085FB890 @ +0x4
 	.globl gUnknown_85FB8C0
@@ -58,6 +60,7 @@ gTrainerHillData_085FB8E0:
 gUnknown_85FB8E0: @ 0x085FB8E0
 	@ analyzed canonical ROM range 0x085FB8E0-0x085FB8E2
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x00, 0x02, 0x03
 	.globl gUnknown_85FB8E3
 gUnknown_85FB8E3: @ 0x085FB8E3

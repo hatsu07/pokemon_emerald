@@ -1271,4 +1271,5 @@ gUnknown_82EE940:
 	.endif
 
 	@ 0x082EEC76-0x082EEC77 alignment
+	@ ANALYSIS: RAW_BLOCK size=0x2
 	.2byte 0

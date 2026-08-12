@@ -2,7 +2,7 @@
 	.globl gMonIcon_UnownQmark
 gMonIcon_UnownQmark: @ 0x08D51A6C [439]
 	.incbin "build/graphics/pokemon/unown_qmark/icon.4bpp"
-	@ Replaced baserom.gba range: offset=0xD51E6C, size=0x24E80
+	@ ANALYSIS: SOURCE_RANGE offset=0xD51E6C, size=0x24E80
 	@ fully classified: trainer front pics/palettes, trainer back pics, trainer back palettes
 	.globl gTrainerFrontPic_Hiker
 gTrainerFrontPic_Hiker: @ 0x08D51E6C

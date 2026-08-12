@@ -279,6 +279,7 @@ gUnknown_85D381E: @ 0x085D381E
 	mon_anim_offset_step -2,  0, 12
 	mon_anim_offset_step  1, -1, 12
 	mon_anim_offset_step  0,  0,  0
+	@ ANALYSIS: RAW_BLOCK size=0x2
 	.2byte 0 @ alignment
 
 gBackAnimYellowFlashFastSteps: @ 0x085D382C
@@ -480,6 +481,7 @@ gDummyPicData:
 gUnknown_85D3AB8: @ 0x085D3AB8
 	.4byte NULL @ frames
 	.4byte NULL @ images
+	@ ANALYSIS: RAW_BLOCK size=0x3
 	.2byte 0 @ palette tag
 	.byte 0 @ sprite ID
 	.byte FALSE @ active
@@ -497,6 +499,7 @@ gUnknown_85D3ACC: @ 0x085D3ACC
 	.globl gUnknown_85D3AD4
 gContestLadyMonGfxIds:
 gUnknown_85D3AD4: @ 0x085D3AD4
+	@ ANALYSIS: RAW_BLOCK size=0xA
 	.2byte 98  @ CONTEST_COOL
 	.2byte 203 @ CONTEST_BEAUTY
 	.2byte 220 @ CONTEST_CUTE
@@ -506,6 +509,7 @@ gUnknown_85D3AD4: @ 0x085D3AD4
 	.globl gUnknown_85D3ADE
 gLilycoveLadyGfxIds:
 gUnknown_85D3ADE: @ 0x085D3ADE
+	@ ANALYSIS: RAW_BLOCK size=0x6
 	.2byte 26 @ Quiz Lady
 	.2byte 20 @ Favor Lady
 	.2byte 10 @ Contest Lady

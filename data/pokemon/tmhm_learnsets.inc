@@ -1,5 +1,5 @@
 @ TM/HM learnsets
-@ Extracted from baserom.gba
+@ Extracted from reference ROM
 @ ROM offset: 0x2EF220
 @ Species entries: 412
 

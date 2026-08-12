@@ -96,7 +96,7 @@ gText_Rom_5C8E37: @ 0x085C8E37
 	.endif
 	.globl gText_Rom_5C8E3C
 	.set gText_Rom_5C8E3C, gText_Rom_5C8E37 + 0x5
-	@ Replaced baserom.gba range: offset=0x5C8E41, size=0xB
+	@ ANALYSIS: RAW_RANGE offset=0x5C8E41, size=0xB
 	.byte 0x00, 0x00, 0x00, 0xF8, 0x0A, 0x04, 0x27, 0x48, 0x00, 0xF8, 0x00
 
 	@ src/strings.c:134 gMenuText_Confirm (+2 aliases)
@@ -141,6 +141,7 @@ gHallOfFameData_085C8E68:
 gUnknown_85C8E68: @ 0x085C8E68
 	@ analyzed canonical ROM range 0x085C8E68-0x085C8E74
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0xD
 	.byte 0xF8, 0x0A, 0x04, 0x27, 0x48, 0x00, 0xF8, 0x00, 0x12, 0x38, 0x00, 0xF8, 0x01
 	.globl gText_Rom_5C8E75
 gText_Rom_5C8E75: @ 0x085C8E75
@@ -159,6 +160,7 @@ gHallOfFameData_085C8E7C:
 gUnknown_85C8E7C: @ 0x085C8E7C
 	@ analyzed canonical ROM range 0x085C8E7C-0x085C8E85
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0xA
 	.2byte 0x0AF8, 0x2704, 0x0048, 0x00F8, 0x01F8
 	.globl gText_Rom_5C8E86
 gText_Rom_5C8E86: @ 0x085C8E86

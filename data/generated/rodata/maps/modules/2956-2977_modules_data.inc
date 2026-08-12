@@ -411,6 +411,7 @@ gUnknown_8598C68: @ 0x08598C68
 	@ analyzed canonical ROM range 0x08598C68-0x08598DDF
 .macro landmark_table_entry mapsec, idx, candidates
 	.byte \mapsec, \idx
+	@ ANALYSIS: RAW_BLOCK size=0x2
 	.2byte 0
 	.4byte \candidates
 .endm
@@ -462,6 +463,7 @@ gUnknown_8598C68: @ 0x08598C68
 	landmark_table_entry 0x31, 0x01, sLandmarkList_08598C48
 	landmark_table_entry 0x31, 0x02, sLandmarkList_08598C50
 	landmark_table_entry 0x38, 0x02, sLandmarkList_08598C5C
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xD5, 0
 	.2byte 0
 	.4byte 0

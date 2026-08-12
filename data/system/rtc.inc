@@ -5,6 +5,7 @@ gRtcData_082D254C:
 gUnknown_82D254C: @ 0x082D254C
 	@ analyzed canonical ROM range 0x082D254C-0x082D2557
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0xC
 	.2byte 0x0100, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000
 	.globl gUnknown_82D2558
 gUnknown_82D2558: @ 0x082D2558

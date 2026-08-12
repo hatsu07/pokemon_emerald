@@ -3,6 +3,7 @@
 gUnknown_85B8700: @ 0x085B8700
 	@ analyzed canonical ROM range 0x085B8700-0x085BBE1F
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x3720
 	.2byte 0x00BF, 0x0048, 0x010E, 0x00F1, 0x0071, 0x1136, 0x0007, 0x0000
 	.2byte 0x015E, 0x0160, 0x00D5, 0x002F, 0x00CC, 0x110C, 0x0013, 0x0000
 	.2byte 0x000A, 0x0021, 0x0051, 0x0000, 0x0000, 0x0306, 0x0018, 0x0000
@@ -890,6 +891,7 @@ gUnknown_85B8700: @ 0x085B8700
 gUnknown_85BBE20: @ 0x085BBE20
 	@ analyzed canonical ROM range 0x085BBE20-0x085BBE3D
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x1E
 	.2byte 0x110E, 0x1503, 0x0717, 0x190A, 0x1B1A, 0x1E1D, 0x2620, 0x0929
 	.2byte 0x2D2B, 0x302E, 0x3432, 0x3504, 0x053A, 0x4442, 0x0043
 	@ pret/pokeemerald-jp direct xref for 0x085BBE3E: apprentice.s: Script_SetPlayerApprenticeTrainerGfxId, sub_081A1418; battle_tower.s: FacilityClassToGraphicsId, FillEReaderTrainerWithPlayerData, GetBattleFacilityTrainerGfxId, IsFrontierTrainerFemale, SetBattleFacilityTrainerGfxId (+1 more)
@@ -897,6 +899,7 @@ gUnknown_85BBE20: @ 0x085BBE20
 gUnknown_85BBE3E: @ 0x085BBE3E
 	@ analyzed canonical ROM range 0x085BBE3E-0x085BBE51
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x14
 	.2byte 0x100D, 0x0C12, 0x1413, 0x271F, 0x162A, 0x312F, 0x3633, 0x3837
 	.2byte 0x021C, 0x4745
 	@ pret/pokeemerald-jp direct xref for 0x085BBE52: apprentice.s: Script_SetPlayerApprenticeTrainerGfxId, sub_081A1418; battle_tower.s: FacilityClassToGraphicsId, GetBattleFacilityTrainerGfxId, SetBattleFacilityTrainerGfxId
@@ -904,6 +907,7 @@ gUnknown_85BBE3E: @ 0x085BBE3E
 gUnknown_85BBE52: @ 0x085BBE52
 	@ analyzed canonical ROM range 0x085BBE52-0x085BBE6F
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x1E
 	.2byte 0x3637, 0x0F21, 0x3327, 0x422C, 0x1F42, 0x2527, 0x2630, 0x1519
 	.2byte 0x3223, 0x3338, 0x2133, 0x0542, 0x2731, 0x1F41, 0x3724
 	@ pret/pokeemerald-jp direct xref for 0x085BBE70: apprentice.s: Script_SetPlayerApprenticeTrainerGfxId, sub_081A1418; battle_tower.s: FacilityClassToGraphicsId, GetBattleFacilityTrainerGfxId, SetBattleFacilityTrainerGfxId
@@ -911,6 +915,7 @@ gUnknown_85BBE52: @ 0x085BBE52
 gUnknown_85BBE70: @ 0x085BBE70
 	@ analyzed canonical ROM range 0x085BBE70-0x085BBE83
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x14
 	.2byte 0x3514, 0x2822, 0x2D14, 0x0E2F, 0x1612, 0x3439, 0x0E34, 0x3422
 	.2byte 0x1420, 0x2F20
 	@ pret/pokeemerald-jp direct xref for 0x085BBE84: battle_tower.s: EmeraldBattleTowerRecordToRuby, RubyBattleTowerRecordToEmerald
@@ -920,6 +925,7 @@ gBattleTowerData_085BBE84:
 gUnknown_85BBE84: @ 0x085BBE84
 	@ analyzed canonical ROM range 0x085BBE84-0x085BC443
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x5C0
 	.4byte 0x01010B00 @ +0x0
 	.4byte 0x0D030602 @ +0x4
 	.4byte 0x0F050E04 @ +0x8
@@ -1295,6 +1301,7 @@ gBattleTowerData_085BC444:
 gUnknown_85BC444: @ 0x085BC444
 	@ analyzed canonical ROM range 0x085BC444-0x085BC5D3
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x190
 	.byte 0x47, 0x00, 0x00, 0x00, 0x5C, 0xC0, 0x5B, 0x08, 0x2B, 0x00, 0x00, 0x00, 0x70, 0xC0, 0x5B, 0x08
 	.byte 0x00, 0x00, 0x00, 0x00, 0x84, 0xC0, 0x5B, 0x08, 0x14, 0x00, 0x00, 0x00, 0x98, 0xC0, 0x5B, 0x08
 	.byte 0x2D, 0x00, 0x00, 0x00, 0xAC, 0xC0, 0x5B, 0x08, 0x13, 0x00, 0x00, 0x00, 0xC0, 0xC0, 0x5B, 0x08
@@ -1327,6 +1334,7 @@ gBattleTowerData_085BC5D4:
 gUnknown_85BC5D4: @ 0x085BC5D4
 	@ analyzed canonical ROM range 0x085BC5D4-0x085BC613
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x40
 	.4byte 0x085BBF1C @ +0x0
 	.4byte 0x085BBF30 @ +0x4
 	.4byte 0x085BBF44 @ +0x8
@@ -1350,6 +1358,7 @@ gBattleTowerData_085BC614:
 gUnknown_85BC614: @ 0x085BC614
 	@ analyzed canonical ROM range 0x085BC614-0x085BC618
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x5
 	.byte 0x8F, 0x01, 0x1F, 0x2A, 0x02
 	@ pret/pokeemerald-jp direct xref for 0x085BC619: battle_tower.s: FillPartnerParty
 	.globl gBattleTowerData_085BC619
@@ -1358,6 +1367,7 @@ gBattleTowerData_085BC619:
 gUnknown_85BC619: @ 0x085BC619
 	@ analyzed canonical ROM range 0x085BC619-0x085BC61F
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x7
 	.byte 0x00, 0xFC, 0xFC, 0x00, 0x06, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085BC620: battle_tower.s: FillPartnerParty
 	.globl gBattleTowerData_085BC620
@@ -1366,6 +1376,7 @@ gBattleTowerData_085BC620:
 gUnknown_85BC620: @ 0x085BC620
 	@ analyzed canonical ROM range 0x085BC620-0x085BC957
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x338
 	.2byte 0x0071, 0x005E, 0x0073, 0x00E8, 0x00E3, 0x2B1F, 0xFC08, 0x0000
 	.2byte 0x0600, 0x00FC, 0x005C, 0x014C, 0x00B6, 0x00D3, 0x0180, 0x2C1F
 	.2byte 0x0003, 0x00FC, 0xFC00, 0x0006, 0x0057, 0x00B6, 0x004C, 0x0151
@@ -1423,6 +1434,7 @@ gUnknown_85BC620: @ 0x085BC620
 gUnknown_85BC958: @ 0x085BC958
 	@ analyzed canonical ROM range 0x085BC958-0x085BC991
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x3A
 	.2byte 0x000D, 0x0000, 0x5251, 0xAE78, 0xFF7E, 0xFFFF, 0x1E00, 0x0C04
 	.2byte 0xFFFF, 0x1C02, 0x1034, 0x0A01, 0x2005, 0x0C04, 0xFFFF, 0x1C0E
 	.2byte 0x100B, 0x142F, 0x1436, 0x0C04, 0xFFFF, 0x1C0F, 0x0E17, 0x0C04

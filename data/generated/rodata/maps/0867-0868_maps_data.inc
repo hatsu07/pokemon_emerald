@@ -5,12 +5,14 @@ gWaterData_08570C04:
 gUnknown_8570C04: @ 0x08570C04
 	@ analyzed canonical ROM range 0x08570C04-0x08570E4B
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x27832783 @ +0x0
 	.4byte 0x084FD060 @ +0x4
 	.4byte 0x08570C00 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_08107A6C @ +0x14
+	@ ANALYSIS: RAW_BLOCK size=0x44
 	.4byte 0xFFFBFFFB @ +0x18
 	.4byte 0x00000A00 @ +0x1C
 	.4byte 0x00050005 @ +0x20
@@ -29,6 +31,7 @@ gUnknown_8570C04: @ 0x08570C04
 	.4byte 0 @ +0x54
 	.4byte 0x08570C34 @ +0x58
 	.4byte sub_08107AB0 @ +0x5C
+	@ ANALYSIS: RAW_BLOCK size=0x48
 	.4byte 0x00010000 @ +0x60
 	.4byte 0x0000FFFF @ +0x64
 	.4byte 0x00010004 @ +0x68
@@ -48,6 +51,7 @@ gUnknown_8570C04: @ 0x08570C04
 	.4byte 0 @ +0xA0
 	.4byte 0x08570C94 @ +0xA4
 	.4byte sub_08107C9C @ +0xA8
+	@ ANALYSIS: RAW_BLOCK size=0x28
 	.4byte 0x00010000 @ +0xAC
 	.4byte 0x00010004 @ +0xB0
 	.4byte 0x00010008 @ +0xB4
@@ -60,24 +64,30 @@ gUnknown_8570C04: @ 0x08570C04
 	.4byte 0 @ +0xD0
 	.4byte gDummySpriteAffineAnimTable @ +0xD4
 	.4byte sub_08107E3C @ +0xD8
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x28132813 @ +0xDC
 	.4byte 0x084FD138 @ +0xE0
 	.4byte 0x08570CC4 @ +0xE4
 	.4byte 0 @ +0xE8
 	.4byte gDummySpriteAffineAnimTable @ +0xEC
 	.4byte sub_08107E3C @ +0xF0
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x28182818 @ +0xF4
 	.4byte 0x084FD010 @ +0xF8
 	.4byte gDummySpriteAnimTable @ +0xFC
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x100
 	.4byte gDummySpriteAffineAnimTable @ +0x104
 	.4byte sub_08107E3C @ +0x108
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x28192819 @ +0x10C
 	.4byte 0x084FD010 @ +0x110
 	.4byte gDummySpriteAnimTable @ +0x114
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x118
 	.4byte gDummySpriteAffineAnimTable @ +0x11C
 	.4byte sub_08107E3C @ +0x120
+	@ ANALYSIS: RAW_BLOCK size=0x24
 	.4byte 0x00020010 @ +0x124
 	.4byte 0x00020020 @ +0x128
 	.4byte 0x00020030 @ +0x12C
@@ -89,12 +99,15 @@ gUnknown_8570C04: @ 0x08570C04
 	.4byte 0 @ +0x144
 	.4byte gDummySpriteAffineAnimTable @ +0x148
 	.4byte sub_08107E3C @ +0x14C
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27B527B5 @ +0x150
 	.4byte 0x084FD120 @ +0x154
 	.4byte gDummySpriteAnimTable @ +0x158
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x15C
 	.4byte 0x0856F004 @ +0x160
 	.4byte sub_08107E3C @ +0x164
+	@ ANALYSIS: RAW_BLOCK size=0x4C
 	.4byte 0x00030003 @ +0x168
 	.4byte 0x0000320A @ +0x16C
 	.4byte 0 @ +0x170
@@ -115,12 +128,14 @@ gUnknown_8570C04: @ 0x08570C04
 	.4byte 0 @ +0x1AC
 	.4byte 0x08570D9C @ +0x1B0
 	.4byte sub_08107F80 @ +0x1B4
+	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0x27A527A5 @ +0x1B8
 	.4byte 0x084FD1F8 @ +0x1BC
 	.4byte 0x08570CC4 @ +0x1C0
 	.4byte 0 @ +0x1C4
 	.4byte 0x08570DA0 @ +0x1C8
 	.4byte sub_08108010 @ +0x1CC
+	@ ANALYSIS: RAW_BLOCK size=0x28
 	.4byte 0x00010000 @ +0x1D0
 	.4byte 0x0000FFFF @ +0x1D4
 	.4byte 0x00010004 @ +0x1D8
@@ -133,21 +148,25 @@ gUnknown_8570C04: @ 0x08570C04
 	.4byte 0 @ +0x1F4
 	.4byte gDummySpriteAffineAnimTable @ +0x1F8
 	.4byte sub_080A7174 @ +0x1FC
+	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0x27AB27AB @ +0x200
 	.4byte 0x084FD1F8 @ +0x204
 	.4byte 0x08570DE8 @ +0x208
 	.4byte 0 @ +0x20C
 	.4byte 0x08571DEC @ +0x210
 	.4byte sub_081080E4 @ +0x214
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x279D279D @ +0x218
 	.4byte 0x084FD010 @ +0x21C
 	.4byte 0x0857169C @ +0x220
 	.4byte 0 @ +0x224
 	.4byte gDummySpriteAffineAnimTable @ +0x228
 	.4byte sub_08108120 @ +0x22C
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27AB27AB @ +0x230
 	.4byte 0x084FD010 @ +0x234
 	.4byte gDummySpriteAnimTable @ +0x238
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x23C
 	.4byte gDummySpriteAffineAnimTable @ +0x240
 	.4byte sub_08108884 @ +0x244
@@ -158,6 +177,7 @@ gWaterData_08570E4C:
 gUnknown_8570E4C: @ 0x08570E4C
 	@ analyzed canonical ROM range 0x08570E4C-0x08570EF3
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0xA8
 	.2byte 0x281C, 0x281C, 0xD010, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000
 	.2byte 0xF310, 0x082B, 0x8D6D, 0x0810, 0x0008, 0x0001, 0xFFFF, 0x0000
 	.2byte 0x0009, 0x0001, 0xFFFF, 0x0000, 0x0004, 0x0001, 0xFFFF, 0x0000
@@ -176,18 +196,21 @@ gWaterData_08570EF4:
 gUnknown_8570EF4: @ 0x08570EF4
 	@ analyzed canonical ROM range 0x08570EF4-0x08571197
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0x27AB27AB @ +0x0
 	.4byte 0x084FD070 @ +0x4
 	.4byte 0x08570E7C @ +0x8
 	.4byte 0 @ +0xC
 	.4byte 0x08570ED0 @ +0x10
 	.4byte sub_081094A4 @ +0x14
+	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0x27AB27AB @ +0x18
 	.4byte 0x084FD078 @ +0x1C
 	.4byte 0x08570E84 @ +0x20
 	.4byte 0 @ +0x24
 	.4byte 0x08570ED8 @ +0x28
 	.4byte sub_080A87AC @ +0x2C
+	@ ANALYSIS: RAW_BLOCK size=0x38
 	.4byte 0x00040010 @ +0x30
 	.4byte 0x00040020 @ +0x34
 	.4byte 0x00040030 @ +0x38
@@ -204,12 +227,14 @@ gUnknown_8570EF4: @ 0x08570EF4
 	.4byte 0 @ +0x64
 	.4byte gDummySpriteAffineAnimTable @ +0x68
 	.4byte sub_08109718 @ +0x6C
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x272D272D @ +0x70
 	.4byte 0x084FD020 @ +0x74
 	.4byte 0x08570F44 @ +0x78
 	.4byte 0 @ +0x7C
 	.4byte gDummySpriteAffineAnimTable @ +0x80
 	.4byte sub_08109758 @ +0x84
+	@ ANALYSIS: RAW_BLOCK size=0x74
 	.4byte 0x00030000 @ +0x88
 	.4byte 0x00030010 @ +0x8C
 	.4byte 0x00030020 @ +0x90
@@ -240,24 +265,28 @@ gUnknown_8570EF4: @ 0x08570EF4
 	.4byte 0 @ +0xF4
 	.4byte 0x08570FD8 @ +0xF8
 	.4byte sub_0810980C @ +0xFC
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x27312731 @ +0x100
 	.4byte 0x084FD020 @ +0x104
 	.4byte 0x08570FA0 @ +0x108
 	.4byte 0 @ +0x10C
 	.4byte gDummySpriteAffineAnimTable @ +0x110
 	.4byte sub_0810980C @ +0x114
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x27332733 @ +0x118
 	.4byte 0x084FD020 @ +0x11C
 	.4byte 0x08570FBC @ +0x120
 	.4byte 0 @ +0x124
 	.4byte gDummySpriteAffineAnimTable @ +0x128
 	.4byte sub_0810979C @ +0x12C
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x272D272D @ +0x130
 	.4byte 0x084FD020 @ +0x134
 	.4byte 0x08570FBC @ +0x138
 	.4byte 0 @ +0x13C
 	.4byte gDummySpriteAffineAnimTable @ +0x140
 	.4byte sub_0810979C @ +0x144
+	@ ANALYSIS: RAW_BLOCK size=0x24
 	.4byte 0x00060010 @ +0x148
 	.4byte 0x00060020 @ +0x14C
 	.4byte 0x00060030 @ +0x150
@@ -269,6 +298,7 @@ gUnknown_8570EF4: @ 0x08570EF4
 	.4byte 0 @ +0x168
 	.4byte gDummySpriteAffineAnimTable @ +0x16C
 	.4byte sub_081098B4 @ +0x170
+	@ ANALYSIS: RAW_BLOCK size=0x24
 	.4byte 0x00500050 @ +0x174
 	.4byte 0 @ +0x178
 	.4byte 0x00020002 @ +0x17C
@@ -279,9 +309,11 @@ gUnknown_8570EF4: @ 0x08570EF4
 	.4byte 0x27AD27AD @ +0x190
 	.4byte 0x084FD1A0 @ +0x194
 	.4byte gDummySpriteAnimTable @ +0x198
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x19C
 	.4byte 0x08571080 @ +0x1A0
 	.4byte sub_081099BC @ +0x1A4
+	@ ANALYSIS: RAW_BLOCK size=0x24
 	.4byte 0x00040000 @ +0x1A8
 	.4byte 0x00040010 @ +0x1AC
 	.4byte 0x00040020 @ +0x1B0
@@ -292,27 +324,32 @@ gUnknown_8570EF4: @ 0x08570EF4
 	.4byte 0x272D272D @ +0x1C4
 	.4byte 0x084FD020 @ +0x1C8
 	.4byte gDummySpriteAnimTable @ +0x1CC
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x1D0
 	.4byte gDummySpriteAffineAnimTable @ +0x1D4
 	.4byte TranslateAnimSpriteToTargetMonLocation @ +0x1D8
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x272D272D @ +0x1DC
 	.4byte 0x084FD020 @ +0x1E0
 	.4byte 0x085710B4 @ +0x1E4
 	.4byte 0 @ +0x1E8
 	.4byte gDummySpriteAffineAnimTable @ +0x1EC
 	.4byte AnimEmberFlare @ +0x1F0
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x272D272D @ +0x1F4
 	.4byte 0x084FD020 @ +0x1F8
 	.4byte 0x085710B4 @ +0x1FC
 	.4byte 0 @ +0x200
 	.4byte gDummySpriteAffineAnimTable @ +0x204
 	.4byte sub_08109A50 @ +0x208
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x272D272D @ +0x20C
 	.4byte 0x084FD020 @ +0x210
 	.4byte 0x085710B4 @ +0x214
 	.4byte 0 @ +0x218
 	.4byte gDummySpriteAffineAnimTable @ +0x21C
 	.4byte AnimFireRing @ +0x220
+	@ ANALYSIS: RAW_BLOCK size=0x48
 	.4byte 0x00060020 @ +0x224
 	.4byte 0x00060030 @ +0x228
 	.4byte 0x0000FFFE @ +0x22C
@@ -333,12 +370,14 @@ gUnknown_8570EF4: @ 0x08570EF4
 	.4byte 0 @ +0x268
 	.4byte gDummySpriteAffineAnimTable @ +0x26C
 	.4byte AnimFireCross @ +0x270
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x272D272D @ +0x274
 	.4byte 0x084FD020 @ +0x278
 	.4byte 0x085710B4 @ +0x27C
 	.4byte 0 @ +0x280
 	.4byte gDummySpriteAffineAnimTable @ +0x284
 	.4byte sub_08109BF4 @ +0x288
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x272D272D @ +0x28C
 	.4byte 0x084FD020 @ +0x290
 	.4byte 0x085710B4 @ +0x294
@@ -360,6 +399,7 @@ gFireData_085711B0:
 gUnknown_85711B0: @ 0x085711B0
 	@ analyzed canonical ROM range 0x085711B0-0x085711B1
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0xFE, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085711B2: fire.s: sub_0810A004
 	.globl gFireData_085711B2
@@ -368,6 +408,7 @@ gFireData_085711B2:
 gUnknown_85711B2: @ 0x085711B2
 	@ analyzed canonical ROM range 0x085711B2-0x08571267
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0xB6
 	.2byte 0xFFFB, 0xFFFF, 0xFFFF, 0x0003, 0xFFFA, 0x0004, 0xFFFE, 0x0002
 	.2byte 0xFFF8, 0xFFFB, 0xFFFB, 0x0004, 0xFFF9, 0x27D9, 0x27D9, 0xD020
 	.2byte 0x084F, 0xF304, 0x082B, 0x0000, 0x0000, 0xF310, 0x082B, 0xA261
@@ -387,6 +428,7 @@ gFireData_08571268:
 gUnknown_8571268: @ 0x08571268
 	@ analyzed canonical ROM range 0x08571268-0x08571277
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.byte 0xFF, 0xFF, 0x00, 0x01, 0x01, 0x00, 0x00, 0xFF, 0xFF, 0x01, 0x01, 0x00, 0x00, 0xFF, 0x00, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x08571278: fire.s: sub_0810A8E4
 	.globl gFireData_08571278
@@ -395,6 +437,7 @@ gFireData_08571278:
 gUnknown_8571278: @ 0x08571278
 	@ analyzed canonical ROM range 0x08571278-0x085712A3
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x2C
 	.2byte 0x00FF, 0x0001, 0x01FF, 0xFF00, 0x0100, 0xFF00, 0x0100, 0x0100
 	.2byte 0x0000, 0x0005, 0x0010, 0x0005, 0x0020, 0x0008, 0x0030, 0x0005
 	.2byte 0x0040, 0x0005, 0xFFFF, 0x0000, 0x1288, 0x0857
@@ -517,6 +560,7 @@ gElectricData_0857143C:
 gUnknown_857143C: @ 0x0857143C
 	@ analyzed canonical ROM range 0x0857143C-0x0857148B
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x50
 	.byte 0x3A, 0xC4, 0xC8, 0xDC, 0x08, 0xC8, 0xF0, 0x38, 0x3A, 0xF6, 0xC6, 0x0A, 0x30, 0xEE, 0xF8, 0x38
 	.byte 0x10, 0xC8, 0xC6, 0xD6, 0x3A, 0x1E, 0xD0, 0x28, 0x0C, 0xD0, 0x30, 0xF4, 0xC8, 0x12, 0x30, 0x30
 	.byte 0x03, 0x00, 0x01, 0x00, 0x02, 0x00, 0x01, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01, 0x00
@@ -529,6 +573,7 @@ gElectricData_0857148C:
 gUnknown_857148C: @ 0x0857148C
 	@ analyzed canonical ROM range 0x0857148C-0x085715E3
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x158
 	.2byte 0x27E3, 0x27E3, 0xD010, 0x084F, 0x1484, 0x0857, 0x0000, 0x0000
 	.2byte 0xF310, 0x082B, 0x7141, 0x0800, 0x0010, 0x0010, 0x0000, 0x0000
 	.2byte 0x0004, 0x0004, 0x3C00, 0x0000, 0x0100, 0x0100, 0x0000, 0x0000
@@ -558,15 +603,18 @@ gElectricData_085715E4:
 gUnknown_85715E4: @ 0x085715E4
 	@ analyzed canonical ROM range 0x085715E4-0x08571613
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0x27112711 @ +0x0
 	.4byte 0x084FD110 @ +0x4
 	.4byte 0x085715C0 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte 0x085715E0 @ +0x10
 	.4byte sub_0810BA40 @ +0x14
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27E427E4 @ +0x18
 	.4byte 0x084FD1A8 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x24
 	.4byte 0x08571534 @ +0x28
 	.4byte sub_0810BA8C @ +0x2C
@@ -577,12 +625,15 @@ gElectricData_08571614:
 gUnknown_8571614: @ 0x08571614
 	@ analyzed canonical ROM range 0x08571614-0x0857174B
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27112711 @ +0x0
 	.4byte 0x084FD010 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_0810BD6C @ +0x14
+	@ ANALYSIS: RAW_BLOCK size=0x18
 	.4byte 0x00450000 @ +0x18
 	.4byte 0x00450001 @ +0x1C
 	.4byte 0x0000FFFE @ +0x20
@@ -590,9 +641,11 @@ gUnknown_8571614: @ 0x08571614
 	.4byte 0x279D279D @ +0x28
 	.4byte 0x084FD010 @ +0x2C
 	.4byte gDummySpriteAnimTable @ +0x30
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x34
 	.4byte gDummySpriteAffineAnimTable @ +0x38
 	.4byte sub_0810BF14 @ +0x3C
+	@ ANALYSIS: RAW_BLOCK size=0x74
 	.4byte 0x00010000 @ +0x40
 	.4byte 0x0000FFFF @ +0x44
 	.4byte 0x00010004 @ +0x48
@@ -623,12 +676,14 @@ gUnknown_8571614: @ 0x08571614
 	.4byte 0 @ +0xAC
 	.4byte 0x085716B0 @ +0xB0
 	.4byte AnimIcePunchSwirlingParticle @ +0xB4
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x279D279D @ +0xB8
 	.4byte 0x084FD130 @ +0xBC
 	.4byte 0x08571690 @ +0xC0
 	.4byte 0 @ +0xC4
 	.4byte gDummySpriteAffineAnimTable @ +0xC8
 	.4byte AnimIcePunchSwirlingParticle @ +0xCC
+	@ ANALYSIS: RAW_BLOCK size=0x28
 	.4byte 0 @ +0xD0
 	.4byte 0x0000010A @ +0xD4
 	.4byte 0x00007FFE @ +0xD8
@@ -640,12 +695,14 @@ gUnknown_8571614: @ 0x08571614
 	.4byte 0 @ +0xF0
 	.4byte 0x085716F4 @ +0xF4
 	.4byte AnimIceBeamParticle @ +0xF8
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x279D279D @ +0xFC
 	.4byte 0x084FD130 @ +0x100
 	.4byte 0x08571690 @ +0x104
 	.4byte 0 @ +0x108
 	.4byte gDummySpriteAffineAnimTable @ +0x10C
 	.4byte AnimIceBeamParticle @ +0x110
+	@ ANALYSIS: RAW_BLOCK size=0x24
 	.4byte 0x00CE00CE @ +0x114
 	.4byte 0 @ +0x118
 	.4byte 0x00050005 @ +0x11C
@@ -730,6 +787,7 @@ gIceData_08571840:
 gUnknown_8571840: @ 0x08571840
 	@ analyzed canonical ROM range 0x08571840-0x0857186B
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x2C
 	.2byte 0x0100, 0x0202, 0x0202, 0x0403, 0x0404, 0x0605, 0x0606, 0x0706
 	.2byte 0x0808, 0x0908, 0x27AB, 0x27AB, 0xD018, 0x084F, 0xF304, 0x082B
 	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0xCB41, 0x0810
@@ -740,6 +798,7 @@ gIceData_0857186C:
 gUnknown_857186C: @ 0x0857186C
 	@ analyzed canonical ROM range 0x0857186C-0x08571897
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x2C
 	.2byte 0x0100, 0x0101, 0x0201, 0x0202, 0x0302, 0x0303, 0x0303, 0x0404
 	.2byte 0x0404, 0x0504, 0x27BC, 0x27BC, 0xD160, 0x084F, 0x180C, 0x0857
 	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0xCDB1, 0x0810
@@ -750,6 +809,7 @@ gIceData_08571898:
 gUnknown_8571898: @ 0x08571898
 	@ analyzed canonical ROM range 0x08571898-0x0857190F
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x78
 	.2byte 0xE064, 0x2001, 0xE055, 0x0001, 0xE0F2, 0x1011, 0xE042, 0x1021
 	.2byte 0xE0B6, 0x0031, 0xE03C, 0x2001, 0xE0D6, 0x0011, 0xE071, 0x1001
 	.2byte 0xE0D2, 0x1031, 0xE026, 0x0021, 0x0100, 0x0100, 0x0000, 0x0000
@@ -765,6 +825,7 @@ gIceData_08571910:
 gUnknown_8571910: @ 0x08571910
 	@ analyzed canonical ROM range 0x08571910-0x08572323
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0xA14
 	.2byte 0x2817, 0x2817, 0xD078, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000
 	.2byte 0x1900, 0x0857, 0xD3A9, 0x0810, 0x2817, 0x2817, 0xD078, 0x084F
 	.2byte 0xF304, 0x082B, 0x0000, 0x0000, 0x190C, 0x0857, 0x87AD, 0x080A
@@ -934,6 +995,7 @@ gPsychicData_08572324:
 gUnknown_8572324: @ 0x08572324
 	@ analyzed canonical ROM range 0x08572324-0x0857233F
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0x085722FC @ +0x0
 	.4byte 0x276D276D @ +0x4
 	.4byte 0x084FD020 @ +0x8
@@ -948,6 +1010,7 @@ gPsychicData_08572340:
 gUnknown_8572340: @ 0x08572340
 	@ analyzed canonical ROM range 0x08572340-0x0857235F
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x20
 	.2byte 0xFFF8, 0x000A, 0x1000, 0x0000, 0x0012, 0xFFEE, 0x1000, 0x0000
 	.2byte 0xFFEC, 0x0010, 0x0800, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08572360: psychic.s: sub_0811008C
@@ -957,6 +1020,7 @@ gPsychicData_08572360:
 gUnknown_8572360: @ 0x08572360
 	@ analyzed canonical ROM range 0x08572360-0x08572377
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x18
 	.2byte 0x0040, 0xFFFC, 0x1400, 0x0000, 0x0000, 0x0000, 0xC800, 0x0000
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08572378: psychic.s: sub_08110224
@@ -966,6 +1030,7 @@ gPsychicData_08572378:
 gUnknown_8572378: @ 0x08572378
 	@ analyzed canonical ROM range 0x08572378-0x08572447
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0xD0
 	.byte 0x09, 0x28, 0x09, 0x28, 0x38, 0xD1, 0x4F, 0x08, 0x04, 0xF3, 0x2B, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x41, 0x71, 0x00, 0x08, 0x0A, 0x28, 0x0A, 0x28, 0x28, 0xD0, 0x4F, 0x08
 	.byte 0x04, 0xF3, 0x2B, 0x08, 0x00, 0x00, 0x00, 0x00, 0x10, 0xF3, 0x2B, 0x08, 0xF9, 0x03, 0x11, 0x08
@@ -986,12 +1051,15 @@ gPsychicData_08572448:
 gUnknown_8572448: @ 0x08572448
 	@ analyzed canonical ROM range 0x08572448-0x085727A3
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x280B280B @ +0x0
 	.4byte 0x084FD078 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0xC
 	.4byte 0x08572438 @ +0x10
 	.4byte sub_08110640 @ +0x14
+	@ ANALYSIS: RAW_BLOCK size=0x24
 	.4byte 0x00200020 @ +0x18
 	.4byte 0 @ +0x1C
 	.4byte 0x00040004 @ +0x20
@@ -1002,9 +1070,11 @@ gUnknown_8572448: @ 0x08572448
 	.4byte 0x281B281B @ +0x34
 	.4byte 0x084FD208 @ +0x38
 	.4byte gDummySpriteAnimTable @ +0x3C
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x40
 	.4byte 0x08572478 @ +0x44
 	.4byte sub_080A7090 @ +0x48
+	@ ANALYSIS: RAW_BLOCK size=0x78
 	.4byte 0x00200020 @ +0x4C
 	.4byte 0 @ +0x50
 	.4byte 0x00100010 @ +0x54
@@ -1036,9 +1106,11 @@ gUnknown_8572448: @ 0x08572448
 	.4byte 0x27E427E4 @ +0xBC
 	.4byte 0x084FD208 @ +0xC0
 	.4byte gDummySpriteAnimTable @ +0xC4
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0xC8
 	.4byte 0x085724FC @ +0xCC
 	.4byte sub_08110A90 @ +0xD0
+	@ ANALYSIS: RAW_BLOCK size=0x44
 	.4byte 0x01000100 @ +0xD4
 	.4byte 0x0000001E @ +0xD8
 	.4byte 0x00007FFF @ +0xDC
@@ -1057,9 +1129,11 @@ gUnknown_8572448: @ 0x08572448
 	.4byte 0x27A927A9 @ +0x110
 	.4byte 0x084FD100 @ +0x114
 	.4byte gDummySpriteAnimTable @ +0x118
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x11C
 	.4byte 0x0857254C @ +0x120
 	.4byte sub_08110BB8 @ +0x124
+	@ ANALYSIS: RAW_BLOCK size=0x44
 	.4byte 0 @ +0x128
 	.4byte 0x000001DF @ +0x12C
 	.4byte 0x00007FFF @ +0x130
@@ -1078,21 +1152,27 @@ gUnknown_8572448: @ 0x08572448
 	.4byte 0x27B127B1 @ +0x164
 	.4byte 0x084FD078 @ +0x168
 	.4byte gDummySpriteAnimTable @ +0x16C
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x170
 	.4byte 0x085725A0 @ +0x174
 	.4byte sub_08110C88 @ +0x178
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27C427C4 @ +0x17C
 	.4byte 0x084FD010 @ +0x180
 	.4byte gDummySpriteAnimTable @ +0x184
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x188
 	.4byte gDummySpriteAffineAnimTable @ +0x18C
 	.4byte AnimTranslateWebThread @ +0x190
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27C327C3 @ +0x194
 	.4byte 0x084FD048 @ +0x198
 	.4byte gDummySpriteAnimTable @ +0x19C
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x1A0
 	.4byte gDummySpriteAffineAnimTable @ +0x1A4
 	.4byte sub_08110E04 @ +0x1A8
+	@ ANALYSIS: RAW_BLOCK size=0x24
 	.4byte 0x00100010 @ +0x1AC
 	.4byte 0 @ +0x1B0
 	.4byte 0x00060006 @ +0x1B4
@@ -1103,27 +1183,35 @@ gUnknown_8572448: @ 0x08572448
 	.4byte 0x27C527C5 @ +0x1C8
 	.4byte 0x084FD208 @ +0x1CC
 	.4byte gDummySpriteAnimTable @ +0x1D0
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x1D4
 	.4byte 0x0857260C @ +0x1D8
 	.4byte sub_08110ECC @ +0x1DC
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27B127B1 @ +0x1E0
 	.4byte 0x084FD078 @ +0x1E4
 	.4byte gDummySpriteAnimTable @ +0x1E8
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x1EC
 	.4byte gDummySpriteAffineAnimTable @ +0x1F0
 	.4byte AnimTranslateStinger @ +0x1F4
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27B127B1 @ +0x1F8
 	.4byte 0x084FD078 @ +0x1FC
 	.4byte gDummySpriteAnimTable @ +0x200
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x204
 	.4byte gDummySpriteAffineAnimTable @ +0x208
 	.4byte AnimMissileArc @ +0x20C
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x28162816 @ +0x210
 	.4byte 0x084FD080 @ +0x214
 	.4byte gDummySpriteAnimTable @ +0x218
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x21C
 	.4byte gDummySpriteAffineAnimTable @ +0x220
 	.4byte AnimMissileArc @ +0x224
+	@ ANALYSIS: RAW_BLOCK size=0x44
 	.4byte 0x00100010 @ +0x228
 	.4byte 0 @ +0x22C
 	.4byte 0x00080008 @ +0x230
@@ -1142,9 +1230,11 @@ gUnknown_8572448: @ 0x08572448
 	.4byte 0x27E427E4 @ +0x264
 	.4byte 0x084FD1A8 @ +0x268
 	.4byte gDummySpriteAnimTable @ +0x26C
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x270
 	.4byte 0x085726A8 @ +0x274
 	.4byte sub_081111E4 @ +0x278
+	@ ANALYSIS: RAW_BLOCK size=0x34
 	.4byte 0x00010020 @ +0x27C
 	.4byte 0x0000FFFF @ +0x280
 	.4byte 0x00010030 @ +0x284
@@ -1160,18 +1250,22 @@ gUnknown_8572448: @ 0x08572448
 	.4byte 0 @ +0x2AC
 	.4byte gDummySpriteAffineAnimTable @ +0x2B0
 	.4byte sub_08111240 @ +0x2B4
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x274A274A @ +0x2B8
 	.4byte 0x084FD020 @ +0x2BC
 	.4byte 0x085726DC @ +0x2C0
 	.4byte 0 @ +0x2C4
 	.4byte gDummySpriteAffineAnimTable @ +0x2C8
 	.4byte sub_08111304 @ +0x2CC
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x275A275A @ +0x2D0
 	.4byte 0x084FD010 @ +0x2D4
 	.4byte gDummySpriteAnimTable @ +0x2D8
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x2DC
 	.4byte gDummySpriteAffineAnimTable @ +0x2E0
 	.4byte sub_08111388 @ +0x2E4
+	@ ANALYSIS: RAW_BLOCK size=0x38
 	.4byte 0x00C000C0 @ +0x2E8
 	.4byte 0 @ +0x2EC
 	.4byte 0xFFFD0002 @ +0x2F0
@@ -1187,18 +1281,22 @@ gUnknown_8572448: @ 0x08572448
 	.4byte 0 @ +0x318
 	.4byte 0x08572750 @ +0x31C
 	.4byte sub_08111388 @ +0x320
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x272D272D @ +0x324
 	.4byte 0x084FD020 @ +0x328
 	.4byte 0x085710B4 @ +0x32C
 	.4byte 0 @ +0x330
 	.4byte gDummySpriteAffineAnimTable @ +0x334
 	.4byte sub_08111388 @ +0x338
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x28152815 @ +0x33C
 	.4byte 0x084FD040 @ +0x340
 	.4byte gDummySpriteAnimTable @ +0x344
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x348
 	.4byte gDummySpriteAffineAnimTable @ +0x34C
 	.4byte AnimDirtParticleAcrossScreen @ +0x350
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x400900F0 @ +0x354
 	.4byte 0x40890010 @ +0x358
 	@ pret/pokeemerald-jp direct xref for 0x085727A4: rock.s: AnimDirtParticleAcrossScreen
@@ -1208,6 +1306,7 @@ gRockData_085727A4:
 gUnknown_85727A4: @ 0x085727A4
 	@ analyzed canonical ROM range 0x085727A4-0x085727F3
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x50
 	.2byte 0x0002, 0x0000, 0x279C, 0x0857, 0x0000, 0x0001, 0xFFFF, 0x0000
 	.2byte 0x0010, 0x0001, 0xFFFF, 0x0000, 0x0020, 0x0001, 0xFFFF, 0x0000
 	.2byte 0x0030, 0x0001, 0xFFFF, 0x0000, 0x0040, 0x0001, 0xFFFF, 0x0000
@@ -1235,18 +1334,22 @@ gRockData_08572824:
 gUnknown_8572824: @ 0x08572824
 	@ analyzed canonical ROM range 0x08572824-0x0857299B
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x274A274A @ +0x0
 	.4byte 0x084FD020 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_08111B6C @ +0x14
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x274A274A @ +0x18
 	.4byte 0x084FD020 @ +0x1C
 	.4byte 0x085727DC @ +0x20
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte sub_08111BD8 @ +0x2C
+	@ ANALYSIS: RAW_BLOCK size=0x3C
 	.4byte 0 @ +0x30
 	.4byte 0x000005FB @ +0x34
 	.4byte 0x00007FFE @ +0x38
@@ -1263,24 +1366,28 @@ gUnknown_8572824: @ 0x08572824
 	.4byte 0 @ +0x64
 	.4byte 0x08572874 @ +0x68
 	.4byte sub_08111C68 @ +0x6C
+	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0x274A274A @ +0x70
 	.4byte 0x084FD080 @ +0x74
 	.4byte 0x085727DC @ +0x78
 	.4byte 0 @ +0x7C
 	.4byte 0x08572874 @ +0x80
 	.4byte sub_08111C94 @ +0x84
+	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0x274A274A @ +0x88
 	.4byte 0x084FD020 @ +0x8C
 	.4byte 0x085727EC @ +0x90
 	.4byte 0 @ +0x94
 	.4byte 0x08572874 @ +0x98
 	.4byte AnimMoveTwisterParticle @ +0x9C
+	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0x274A274A @ +0xA0
 	.4byte 0x084FD080 @ +0xA4
 	.4byte 0x085727E4 @ +0xA8
 	.4byte 0 @ +0xAC
 	.4byte 0x08572874 @ +0xB0
 	.4byte sub_080A87AC @ +0xB4
+	@ ANALYSIS: RAW_BLOCK size=0x24
 	.4byte 0x001E001E @ +0xB8
 	.4byte 0x0000050A @ +0xBC
 	.4byte 0xFFE2FFE2 @ +0xC0
@@ -1291,15 +1398,19 @@ gUnknown_8572824: @ 0x08572824
 	.4byte 0x271D271D @ +0xD4
 	.4byte 0x084FD0D8 @ +0xD8
 	.4byte gDummySpriteAnimTable @ +0xDC
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0xE0
 	.4byte 0x085728F4 @ +0xE4
 	.4byte sub_08111E5C @ +0xE8
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x271D271D @ +0xEC
 	.4byte 0x084FD138 @ +0xF0
 	.4byte gDummySpriteAnimTable @ +0xF4
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0xF8
 	.4byte gDummySpriteAffineAnimTable @ +0xFC
 	.4byte sub_08112044 @ +0x100
+	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.4byte 0 @ +0x104
 	.4byte 0x0000010A @ +0x108
 	.4byte 0x00007FFE @ +0x10C
@@ -1308,9 +1419,11 @@ gUnknown_8572824: @ 0x08572824
 	.4byte 0x27C027C0 @ +0x118
 	.4byte 0x084FD080 @ +0x11C
 	.4byte gDummySpriteAnimTable @ +0x120
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x124
 	.4byte 0x08572938 @ +0x128
 	.4byte InitAnimShadowBall @ +0x12C
+	@ ANALYSIS: RAW_BLOCK size=0x2C
 	.4byte 0x00020000 @ +0x130
 	.4byte 0x00020008 @ +0x134
 	.4byte 0x00020010 @ +0x138
@@ -1324,6 +1437,7 @@ gUnknown_8572824: @ 0x08572824
 	.4byte 0 @ +0x158
 	.4byte gDummySpriteAffineAnimTable @ +0x15C
 	.4byte sub_081123EC @ +0x160
+	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0x02000200 @ +0x164
 	.4byte 0 @ +0x168
 	.4byte 0x00007FFF @ +0x16C
@@ -1336,30 +1450,39 @@ gGhostData_0857299C:
 gUnknown_857299C: @ 0x0857299C
 	@ analyzed canonical ROM range 0x0857299C-0x08572A13
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27CC27CC @ +0x0
 	.4byte 0x084FD168 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_08112AB4 @ +0x14
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27D727D7 @ +0x18
 	.4byte 0x084FD160 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte sub_08113240 @ +0x2C
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27D827D8 @ +0x30
 	.4byte 0x084FD140 @ +0x34
 	.4byte gDummySpriteAnimTable @ +0x38
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x3C
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte sub_081133C8 @ +0x44
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27ED27ED @ +0x48
 	.4byte 0x084FD140 @ +0x4C
 	.4byte gDummySpriteAnimTable @ +0x50
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x54
 	.4byte gDummySpriteAffineAnimTable @ +0x58
 	.4byte sub_081133C8 @ +0x5C
+	@ ANALYSIS: RAW_BLOCK size=0x18
 	.4byte 0x00040000 @ +0x60
 	.4byte 0x00040008 @ +0x64
 	.4byte 0x00040010 @ +0x68
@@ -1373,18 +1496,22 @@ gGhostData_08572A14:
 gUnknown_8572A14: @ 0x08572A14
 	@ analyzed canonical ROM range 0x08572A14-0x08572F3B
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x280D280D @ +0x0
 	.4byte 0x084FD180 @ +0x4
 	.4byte 0x08572A10 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_081136EC @ +0x14
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x18
 	.4byte gDummyOamData @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte sub_081137B0 @ +0x2C
+	@ ANALYSIS: RAW_BLOCK size=0x2C
 	.4byte 0x00040000 @ +0x30
 	.4byte 0x00040010 @ +0x34
 	.4byte 0x00040020 @ +0x38
@@ -1398,6 +1525,7 @@ gUnknown_8572A14: @ 0x08572A14
 	.4byte 0 @ +0x58
 	.4byte gDummySpriteAffineAnimTable @ +0x5C
 	.4byte sub_081138B4 @ +0x60
+	@ ANALYSIS: RAW_BLOCK size=0x74
 	.4byte 0x00030010 @ +0x64
 	.4byte 0x00030020 @ +0x68
 	.4byte 0x00030030 @ +0x6C
@@ -1428,6 +1556,7 @@ gUnknown_8572A14: @ 0x08572A14
 	.4byte 0 @ +0xD0
 	.4byte 0x08572AD0 @ +0xD4
 	.4byte sub_08113A74 @ +0xD8
+	@ ANALYSIS: RAW_BLOCK size=0x2C
 	.4byte 0x00050000 @ +0xDC
 	.4byte 0x00050010 @ +0xE0
 	.4byte 0x00050020 @ +0xE4
@@ -1441,6 +1570,7 @@ gUnknown_8572A14: @ 0x08572A14
 	.4byte 0 @ +0x104
 	.4byte gDummySpriteAffineAnimTable @ +0x108
 	.4byte sub_08113A04 @ +0x10C
+	@ ANALYSIS: RAW_BLOCK size=0x54
 	.4byte 0x00030010 @ +0x110
 	.4byte 0x00030020 @ +0x114
 	.4byte 0x00030030 @ +0x118
@@ -1463,24 +1593,30 @@ gUnknown_8572A14: @ 0x08572A14
 	.4byte 0 @ +0x15C
 	.4byte 0x08572B5C @ +0x160
 	.4byte sub_08113A74 @ +0x164
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x28092809 @ +0x168
 	.4byte 0x084FD018 @ +0x16C
 	.4byte gDummySpriteAnimTable @ +0x170
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x174
 	.4byte gDummySpriteAffineAnimTable @ +0x178
 	.4byte sub_08113AA0 @ +0x17C
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x272D272D @ +0x180
 	.4byte 0x084FD020 @ +0x184
 	.4byte 0x08572A5C @ +0x188
 	.4byte 0 @ +0x18C
 	.4byte gDummySpriteAffineAnimTable @ +0x190
 	.4byte sub_08113E3C @ +0x194
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x271F271F @ +0x198
 	.4byte 0x084FD018 @ +0x19C
 	.4byte gDummySpriteAnimTable @ +0x1A0
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x1A4
 	.4byte gDummySpriteAffineAnimTable @ +0x1A8
 	.4byte sub_08114124 @ +0x1AC
+	@ ANALYSIS: RAW_BLOCK size=0xA8
 	.4byte 0 @ +0x1B0
 	.4byte 0x00000100 @ +0x1B4
 	.4byte 0x00007FFF @ +0x1B8
@@ -1524,15 +1660,19 @@ gUnknown_8572A14: @ 0x08572A14
 	.4byte 0x279B279B @ +0x250
 	.4byte 0x084FD1A8 @ +0x254
 	.4byte gDummySpriteAnimTable @ +0x258
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x25C
 	.4byte 0x08572C44 @ +0x260
 	.4byte sub_0811422C @ +0x264
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27A127A1 @ +0x268
 	.4byte 0x084FD1A8 @ +0x26C
 	.4byte gDummySpriteAnimTable @ +0x270
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x274
 	.4byte 0x08572C44 @ +0x278
 	.4byte sub_0811422C @ +0x27C
+	@ ANALYSIS: RAW_BLOCK size=0x40
 	.4byte 0x00C000C0 @ +0x280
 	.4byte 0x00000050 @ +0x284
 	.4byte 0 @ +0x288
@@ -1550,9 +1690,11 @@ gUnknown_8572A14: @ 0x08572A14
 	.4byte 0x27AB27AB @ +0x2B8
 	.4byte 0x084FD078 @ +0x2BC
 	.4byte gDummySpriteAnimTable @ +0x2C0
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x2C4
 	.4byte 0x08572CC4 @ +0x2C8
 	.4byte sub_081142E0 @ +0x2CC
+	@ ANALYSIS: RAW_BLOCK size=0x48
 	.4byte 0x00040000 @ +0x2D0
 	.4byte 0x00040010 @ +0x2D4
 	.4byte 0x00040020 @ +0x2D8
@@ -1573,6 +1715,7 @@ gUnknown_8572A14: @ 0x08572A14
 	.4byte 0 @ +0x314
 	.4byte gDummySpriteAffineAnimTable @ +0x318
 	.4byte sub_08114D0C @ +0x31C
+	@ ANALYSIS: RAW_BLOCK size=0x30
 	.4byte 0 @ +0x320
 	.4byte 0x0000010F @ +0x324
 	.4byte 0x00007FFE @ +0x328
@@ -1586,21 +1729,27 @@ gUnknown_8572A14: @ 0x08572A14
 	.4byte 0x27102710 @ +0x348
 	.4byte 0x084FD080 @ +0x34C
 	.4byte gDummySpriteAnimTable @ +0x350
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x354
 	.4byte 0x08572D54 @ +0x358
 	.4byte AnimBonemerangProjectile @ +0x35C
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27102710 @ +0x360
 	.4byte 0x084FD080 @ +0x364
 	.4byte gDummySpriteAnimTable @ +0x368
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x36C
 	.4byte 0x08572D58 @ +0x370
 	.4byte AnimBoneHitProjectile @ +0x374
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x275A275A @ +0x378
 	.4byte 0x084FD010 @ +0x37C
 	.4byte gDummySpriteAnimTable @ +0x380
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x384
 	.4byte gDummySpriteAffineAnimTable @ +0x388
 	.4byte AnimDirtScatter @ +0x38C
+	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.4byte 0x00010001 @ +0x390
 	.4byte 0x0000FFFF @ +0x394
 	.4byte 0x08572DA4 @ +0x398
@@ -1610,24 +1759,31 @@ gUnknown_8572A14: @ 0x08572A14
 	.4byte 0 @ +0x3A8
 	.4byte gDummySpriteAffineAnimTable @ +0x3AC
 	.4byte AnimDirtScatter @ +0x3B0
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x275A275A @ +0x3B4
 	.4byte 0x084FD018 @ +0x3B8
 	.4byte gDummySpriteAnimTable @ +0x3BC
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x3C0
 	.4byte gDummySpriteAffineAnimTable @ +0x3C4
 	.4byte AnimMudSportDirt @ +0x3C8
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x275A275A @ +0x3CC
 	.4byte 0x084FD010 @ +0x3D0
 	.4byte gDummySpriteAnimTable @ +0x3D4
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x3D8
 	.4byte gDummySpriteAffineAnimTable @ +0x3DC
 	.4byte AnimFissureDirtPlumeParticle @ +0x3E0
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x28292829 @ +0x3E4
 	.4byte 0x084FD040 @ +0x3E8
 	.4byte gDummySpriteAnimTable @ +0x3EC
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x3F0
 	.4byte gDummySpriteAffineAnimTable @ +0x3F4
 	.4byte AnimDigDirtMound @ +0x3F8
+	@ ANALYSIS: RAW_BLOCK size=0x40
 	.4byte 0x00080000 @ +0x3FC
 	.4byte 0x00080004 @ +0x400
 	.4byte 0x00480000 @ +0x404
@@ -1646,18 +1802,23 @@ gUnknown_8572A14: @ 0x08572A14
 	.4byte 0 @ +0x438
 	.4byte gDummySpriteAffineAnimTable @ +0x43C
 	.4byte AnimConfusionDuck @ +0x440
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x444
 	.4byte gDummyOamData @ +0x448
 	.4byte gDummySpriteAnimTable @ +0x44C
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x450
 	.4byte gDummySpriteAffineAnimTable @ +0x454
 	.4byte AnimSimplePaletteBlend @ +0x458
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x45C
 	.4byte gDummyOamData @ +0x460
 	.4byte gDummySpriteAnimTable @ +0x464
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x468
 	.4byte gDummySpriteAffineAnimTable @ +0x46C
 	.4byte sub_081160F4 @ +0x470
+	@ ANALYSIS: RAW_BLOCK size=0x2C
 	.4byte 0x00030000 @ +0x474
 	.4byte 0x00030010 @ +0x478
 	.4byte 0x00030020 @ +0x47C
@@ -1671,12 +1832,15 @@ gUnknown_8572A14: @ 0x08572A14
 	.4byte 0 @ +0x49C
 	.4byte gDummySpriteAffineAnimTable @ +0x4A0
 	.4byte sub_08116204 @ +0x4A4
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x4A8
 	.4byte gDummyOamData @ +0x4AC
 	.4byte gDummySpriteAnimTable @ +0x4B0
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x4B4
 	.4byte gDummySpriteAffineAnimTable @ +0x4B8
 	.4byte sub_081168F4 @ +0x4BC
+	@ ANALYSIS: RAW_BLOCK size=0x68
 	.4byte 0 @ +0x4C0
 	.4byte 0x00000800 @ +0x4C4
 	.4byte 0x00007FFF @ +0x4C8
@@ -1787,6 +1951,7 @@ gBattleAnimUtilityFuncsData_08572FFC:
 gUnknown_8572FFC: @ 0x08572FFC
 	@ analyzed canonical ROM range 0x08572FFC-0x08572FFD
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0xFF, 0x7F
 	@ pret/pokeemerald-jp direct xref for 0x08572FFE: battle_intro.s: SetAnimBgAttribute
 	.globl gBattleIntroData_08572FFE
@@ -1795,6 +1960,7 @@ gBattleIntroData_08572FFE:
 gUnknown_8572FFE: @ 0x08572FFE
 	@ analyzed canonical ROM range 0x08572FFE-0x08573001
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x08, 0x0A, 0x0C, 0x0E
 	@ pret/pokeemerald-jp direct xref for 0x08573002: battle_intro.s: GetAnimBgAttribute
 	.globl gBattleIntroData_08573002
@@ -1803,6 +1969,7 @@ gBattleIntroData_08573002:
 gUnknown_8573002: @ 0x08573002
 	@ analyzed canonical ROM range 0x08573002-0x08573007
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0x08, 0x0A, 0x0C, 0x0E, 0x00, 0x00
 	.globl gUnknown_8573008
 gUnknown_8573008: @ 0x08573008
@@ -1858,6 +2025,7 @@ gBikeData_0857309C:
 gUnknown_857309C: @ 0x0857309C
 	@ analyzed canonical ROM range 0x0857309C-0x085730A3
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0001, 0x0002, 0x0004, 0x0004
 	@ pret/pokeemerald-jp direct xref for 0x085730A4: bike.s: AcroBike_GetJumpDirection
 	.globl gBikeData_085730A4
@@ -1866,6 +2034,7 @@ gBikeData_085730A4:
 gUnknown_85730A4: @ 0x085730A4
 	@ analyzed canonical ROM range 0x085730A4-0x08573113
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x70
 	.2byte 0x0001, 0x0000, 0x0002, 0x0000, 0x000F, 0x0000, 0x000F, 0x0000
 	.2byte 0x30A2, 0x0857, 0x30A2, 0x0857, 0x0001, 0x0000, 0x0002, 0x0000
 	.2byte 0x0002, 0x0000, 0x000F, 0x0000, 0x000F, 0x0000, 0x30A2, 0x0857
@@ -1891,64 +2060,78 @@ gEasyChatData_08573134:
 gUnknown_8573134: @ 0x08573134
 	@ analyzed canonical ROM range 0x08573134-0x0857332B
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x00020200 @ +0x0
 	.4byte gText_Rom_5CBBB7 @ +0x4
 	.4byte gText_Rom_5CB867 @ +0x8
 	.4byte gText_Rom_5CB877 @ +0xC
 	.4byte gText_Rom_5CB916 @ +0x10
 	.4byte gText_Rom_5CB9B3 @ +0x14
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x01020301 @ +0x18
 	.4byte gText_Rom_5CBBBE @ +0x1C
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x085CB885 @ +0x20
 	.4byte 0x085CB89B @ +0x24
 	.4byte gText_Rom_5CB91E @ +0x28
 	.4byte gText_Rom_5CB9B3 @ +0x2C
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x01020302 @ +0x30
 	.4byte gText_Rom_5CBBCB @ +0x34
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x085CB885 @ +0x38
 	.4byte 0x085CB89B @ +0x3C
 	.4byte gText_Rom_5CB931 @ +0x40
 	.4byte gText_Rom_5CB9B3 @ +0x44
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x01020303 @ +0x48
 	.4byte gText_Rom_5CBBD7 @ +0x4C
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x085CB885 @ +0x50
 	.4byte 0x085CB89B @ +0x54
 	.4byte gText_Rom_5CB944 @ +0x58
 	.4byte gText_Rom_5CB9B3 @ +0x5C
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x02030304 @ +0x60
 	.4byte 0 @ +0x64
 	.4byte gText_Rom_5CB8D6 @ +0x68
 	.4byte gText_Rom_5CB8E6 @ +0x6C
 	.4byte gText_Rom_5CB95C @ +0x70
 	.4byte gText_Rom_5CB9B3 @ +0x74
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x05020205 @ +0x78
 	.4byte gText_Rom_5CBBF6 @ +0x7C
 	.4byte gText_Rom_5CB867 @ +0x80
 	.4byte gText_Rom_5CBA98 @ +0x84
 	.4byte gText_Rom_5CB957 @ +0x88
 	.4byte gText_Rom_5CB9B3 @ +0x8C
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x01020306 @ +0x90
 	.4byte gText_Rom_5CBBE3 @ +0x94
 	.4byte gText_Rom_5CB8F3 @ +0x98
 	.4byte gText_Rom_5CB903 @ +0x9C
 	.4byte gText_Rom_5CB97B @ +0xA0
 	.4byte gText_Rom_5CB9B3 @ +0xA4
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x04010107 @ +0xA8
 	.4byte gText_Rom_5CBBF6 @ +0xAC
 	.4byte gText_Rom_5CB8B1 @ +0xB0
 	.4byte gText_Rom_5CB8C1 @ +0xB4
 	.4byte gText_Rom_5CB957 @ +0xB8
 	.4byte gText_Rom_5CB9B3 @ +0xBC
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x03010209 @ +0xC0
 	.4byte gText_Rom_5CBBEA @ +0xC4
 	.4byte gText_Rom_5CB985 @ +0xC8
 	.4byte gText_Rom_5CB995 @ +0xCC
 	.4byte gText_Rom_5CB9A7 @ +0xD0
 	.4byte gText_Rom_5CB9B3 @ +0xD4
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x87030310 @ +0xD8
 	.4byte 0 @ +0xDC
 	.4byte gText_Rom_5CBC89 @ +0xE0
 	.4byte gText_Rom_5CBC94 @ +0xE4
+	@ ANALYSIS: RAW_BLOCK size=0xC
 	.4byte 0 @ +0xE8
 	.4byte 0 @ +0xEC
 	.4byte 0x8601010F @ +0xF0
@@ -1957,17 +2140,20 @@ gUnknown_8573134: @ 0x08573134
 	.4byte gText_Rom_5CBA0F @ +0xFC
 	.4byte gText_Rom_5CBA4E @ +0x100
 	.4byte gText_Rom_5CB9B3 @ +0x104
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x88030311 @ +0x108
 	.4byte 0 @ +0x10C
 	.4byte gText_Rom_5CB8D6 @ +0x110
 	.4byte gText_Rom_5CBA1F @ +0x114
 	.4byte gText_Rom_5CBCC0 @ +0x118
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x11C
 	.4byte 0x86010112 @ +0x120
 	.4byte gText_Rom_5CBCA0 @ +0x124
 	.4byte gText_Rom_5CBA2A @ +0x128
 	.4byte gText_Rom_5CBA3E @ +0x12C
 	.4byte gText_Rom_5CBCC0 @ +0x130
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x134
 	.4byte 0x01020306 @ +0x138
 	.4byte gText_Rom_5CBBE3 @ +0x13C
@@ -1975,42 +2161,49 @@ gUnknown_8573134: @ 0x08573134
 	.4byte gText_Rom_5CB903 @ +0x144
 	.4byte gText_Rom_5CB97B @ +0x148
 	.4byte gText_Rom_5CB9B3 @ +0x14C
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x01020313 @ +0x150
 	.4byte gText_Rom_5CBC18 @ +0x154
 	.4byte gText_Rom_5CB9E0 @ +0x158
 	.4byte gText_Rom_5CB9ED @ +0x15C
 	.4byte gText_Rom_5CBA58 @ +0x160
 	.4byte gText_Rom_5CB9B3 @ +0x164
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x0301020D @ +0x168
 	.4byte gText_Rom_5CBBFD @ +0x16C
 	.4byte gText_Rom_5CB9BE @ +0x170
 	.4byte gText_Rom_5CB9CE @ +0x174
 	.4byte gText_Rom_5CB957 @ +0x178
 	.4byte gText_Rom_5CB9B3 @ +0x17C
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x0401010A @ +0x180
 	.4byte gText_Rom_5CBBF6 @ +0x184
 	.4byte gText_Rom_5CB8B1 @ +0x188
 	.4byte gText_Rom_5CB8C1 @ +0x18C
 	.4byte gText_Rom_5CB957 @ +0x190
 	.4byte gText_Rom_5CB9B3 @ +0x194
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x0401010C @ +0x198
 	.4byte gText_Rom_5CBBF6 @ +0x19C
 	.4byte gText_Rom_5CB8B1 @ +0x1A0
 	.4byte gText_Rom_5CB8C1 @ +0x1A4
 	.4byte gText_Rom_5CB957 @ +0x1A8
 	.4byte gText_Rom_5CB9B3 @ +0x1AC
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x0401010B @ +0x1B0
 	.4byte gText_Rom_5CBBF6 @ +0x1B4
 	.4byte gText_Rom_5CB8B1 @ +0x1B8
 	.4byte gText_Rom_5CB8C1 @ +0x1BC
 	.4byte gText_Rom_5CB957 @ +0x1C0
 	.4byte gText_Rom_5CB9B3 @ +0x1C4
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x0401010E @ +0x1C8
 	.4byte gText_Rom_5CBC04 @ +0x1CC
 	.4byte gText_Rom_5CB9E0 @ +0x1D0
 	.4byte gText_Rom_5CB9ED @ +0x1D4
 	.4byte gText_Rom_5CB9FF @ +0x1D8
 	.4byte gText_Rom_5CB9B3 @ +0x1DC
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x00020214 @ +0x1E0
 	.4byte gText_Rom_5CBC22 @ +0x1E4
 	.4byte gText_Rom_5CB867 @ +0x1E8
@@ -2024,6 +2217,7 @@ gEasyChatData_0857332C:
 gUnknown_857332C: @ 0x0857332C
 	@ analyzed canonical ROM range 0x0857332C-0x08573333
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x143A, 0x1817, 0x2023, 0x200F
 	@ pret/pokeemerald-jp direct xref for 0x08573334: easy_chat.s: sub_0811C744
 	.globl gEasyChatData_08573334
@@ -2032,6 +2226,7 @@ gEasyChatData_08573334:
 gUnknown_8573334: @ 0x08573334
 	@ analyzed canonical ROM range 0x08573334-0x0857333B
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0A33, 0x140C, 0x143A, 0x0209
 	@ pret/pokeemerald-jp direct xref for 0x0857333C: easy_chat.s: sub_0811C764
 	.globl gEasyChatData_0857333C
@@ -2040,6 +2235,7 @@ gEasyChatData_0857333C:
 gUnknown_857333C: @ 0x0857333C
 	@ analyzed canonical ROM range 0x0857333C-0x08573E63
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0xB28
 	.byte 0x21, 0x14, 0x18, 0x06, 0x1F, 0x06, 0x04, 0x22, 0x22, 0x14, 0x97, 0x01, 0x15, 0x04, 0x98, 0x01
 	.byte 0x1E, 0x28, 0x18, 0x28, 0xFF, 0x4B, 0x1F, 0x4B, 0x3D, 0x2E, 0x77, 0x15, 0x5F, 0x6B, 0xDE, 0x5A
 	.byte 0x18, 0x42, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xC5, 0x18, 0x8C, 0x31, 0xF6, 0x5A
@@ -2226,6 +2422,7 @@ gEasyChatData_08573E64:
 gUnknown_8573E64: @ 0x08573E64
 	@ analyzed canonical ROM range 0x08573E64-0x08573E83
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0x00, 0x00, 0xFF, 0x3A, 0x3F, 0x1E, 0xF9, 0x19, 0xBF, 0x5B, 0xFF, 0x6B, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xC5, 0x18, 0xCE, 0x39, 0xF6, 0x5A, 0x5B, 0x6F, 0xFF, 0x7F
 	@ pret/pokeemerald-jp direct xref for 0x08573E84: easy_chat.s: sub_0811C868
@@ -2259,6 +2456,7 @@ gEasyChatData_0857423C:
 gUnknown_857423C: @ 0x0857423C
 	@ analyzed canonical ROM range 0x0857423C-0x0857425B
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0x0E, 0x53, 0xFF, 0x3A, 0x3F, 0x1E, 0x99, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0xBF, 0x5B, 0xFF, 0x6B, 0xCE, 0x39, 0xF6, 0x5A, 0x5B, 0x6F, 0xFF, 0x7F
 	@ pret/pokeemerald-jp direct xref for 0x0857425C: easy_chat.s: sub_0811D814
@@ -2268,6 +2466,7 @@ gEasyChatData_0857425C:
 gUnknown_857425C: @ 0x0857425C
 	@ analyzed canonical ROM range 0x0857425C-0x0857427B
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0x0E, 0x53, 0xF7, 0x47, 0x93, 0x37, 0xCF, 0x2E, 0x56, 0x7F, 0xD1, 0x72, 0x2E, 0x56, 0x00, 0x00
 	.byte 0x1F, 0x42, 0x5D, 0x29, 0xBF, 0x5B, 0xFF, 0x6B, 0xCE, 0x39, 0xF6, 0x5A, 0x5B, 0x6F, 0xFF, 0x7F
 	@ pret/pokeemerald-jp direct xref for 0x0857427C: easy_chat.s: sub_0811C868
@@ -2289,6 +2488,7 @@ gEasyChatData_08574344:
 gUnknown_8574344: @ 0x08574344
 	@ analyzed canonical ROM range 0x08574344-0x0857434B
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x00, 0x00, 0x00, 0x00, 0x27, 0x7F, 0xB5, 0x76
 	@ pret/pokeemerald-jp direct xref for 0x0857434C: easy_chat.s: sub_0811D814
 	.globl gEasyChatData_0857434C
@@ -2297,6 +2497,7 @@ gEasyChatData_0857434C:
 gUnknown_857434C: @ 0x0857434C
 	@ analyzed canonical ROM range 0x0857434C-0x08574357
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0xC
 	.byte 0x00, 0x00, 0xFF, 0x7F, 0x8C, 0x31, 0x5B, 0x6F, 0x28, 0x26, 0x9C, 0x73
 	@ pret/pokeemerald-jp direct xref for 0x08574358: easy_chat.s: sub_0811CBCC, sub_0811DB10, sub_0811DCAC, sub_0811DE14, sub_0811E6D8
 	.globl gEasyChatData_08574358
@@ -2305,6 +2506,7 @@ gEasyChatData_08574358:
 gUnknown_8574358: @ 0x08574358
 	@ analyzed canonical ROM range 0x08574358-0x0857437B
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x24
 	.2byte 0x1286, 0x0004, 0x1B81, 0x0004, 0x1C41, 0x0006, 0x1286, 0x0002
 	.2byte 0x0990, 0x0002, 0x128B, 0x0004, 0x0A8A, 0x0102, 0x1CC1, 0x0306
 	.2byte 0x1C41, 0x0206
@@ -2315,6 +2517,7 @@ gEasyChatData_0857437C:
 gUnknown_857437C: @ 0x0857437C
 	@ analyzed canonical ROM range 0x0857437C-0x0857438B
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0x01C0, 0x0000, 0x11DD, 0x0000, 0x21E2, 0x0020, 0x31FB, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0857438C: easy_chat.s: sub_0811C868
 	.globl gEasyChatData_0857438C
@@ -2323,6 +2526,7 @@ gEasyChatData_0857438C:
 gUnknown_857438C: @ 0x0857438C
 	@ analyzed canonical ROM range 0x0857438C-0x085743AB
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x20
 	.2byte 0x0701, 0x1000, 0x0A02, 0x0010, 0x0400, 0x160F, 0x0F04, 0x000A
 	.2byte 0x0102, 0x1C00, 0x0320, 0x0000, 0x00FF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085743AC: easy_chat.s: sub_0811DAE4
@@ -2332,6 +2536,7 @@ gEasyChatData_085743AC:
 gUnknown_85743AC: @ 0x085743AC
 	@ analyzed canonical ROM range 0x085743AC-0x085743B3
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x1600, 0x0509, 0x0F04, 0x0062
 	@ pret/pokeemerald-jp direct xref for 0x085743B4: easy_chat.s: sub_0811CC88
 	.globl gEasyChatData_085743B4
@@ -2340,6 +2545,7 @@ gEasyChatData_085743B4:
 gUnknown_85743B4: @ 0x085743B4
 	@ analyzed canonical ROM range 0x085743B4-0x085743BB
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0A03, 0x1111, 0x0A03, 0x150F
 	@ pret/pokeemerald-jp direct xref for 0x085743BC: easy_chat.s: sub_0811DF70
 	.globl gEasyChatData_085743BC
@@ -2361,6 +2567,7 @@ gEasyChatData_085743CC:
 gUnknown_85743CC: @ 0x085743CC
 	@ analyzed canonical ROM range 0x085743CC-0x085743EB
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x20
 	.4byte 0x08573390 @ +0x0
 	.4byte 0x00000020 @ +0x4
 	.4byte 0x085735D4 @ +0x8
@@ -2376,6 +2583,7 @@ gEasyChatData_085743EC:
 gUnknown_85743EC: @ 0x085743EC
 	@ analyzed canonical ROM range 0x085743EC-0x08574413
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x28
 	.4byte 0x08573350 @ +0x0
 	.4byte 0 @ +0x4
 	.4byte 0x08573370 @ +0x8
@@ -2393,6 +2601,7 @@ gEasyChatData_08574414:
 gUnknown_8574414: @ 0x08574414
 	@ analyzed canonical ROM range 0x08574414-0x0857443B
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x28
 	.2byte 0x3D30, 0x0857, 0x0800, 0x0005, 0x33D0, 0x0857, 0x1000, 0x0001
 	.2byte 0x3B08, 0x0857, 0x0800, 0x0006, 0x37F4, 0x0857, 0x1000, 0x0004
 	.2byte 0x0000, 0x0000, 0x0C00, 0x0000
@@ -2403,6 +2612,7 @@ gEasyChatData_0857443C:
 gUnknown_857443C: @ 0x0857443C
 	@ analyzed canonical ROM range 0x0857443C-0x0857448B
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x50
 	.byte 0x00, 0x00, 0x00, 0x00, 0x34, 0x44, 0x57, 0x08, 0x04, 0xF3, 0x2B, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x35, 0xE7, 0x11, 0x08, 0x00, 0x40, 0x00, 0xC0, 0x00, 0x04, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x20, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00
@@ -2415,6 +2625,7 @@ gEasyChatData_0857448C:
 gUnknown_857448C: @ 0x0857448C
 	@ analyzed canonical ROM range 0x0857448C-0x085744F3
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x68
 	.byte 0x01, 0x00, 0x01, 0x00, 0x54, 0x44, 0x57, 0x08, 0x7C, 0x44, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x35, 0xE7, 0x11, 0x08, 0x00, 0x40, 0x00, 0xC0, 0x00, 0x04, 0x00, 0x00
 	.byte 0x60, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x40, 0x00, 0x04, 0x00, 0x20, 0x00, 0x04, 0x00
@@ -2429,12 +2640,14 @@ gEasyChatData_085744F4:
 gUnknown_85744F4: @ 0x085744F4
 	@ analyzed canonical ROM range 0x085744F4-0x08574513
 	@ pointer/nullable table
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0x00020004 @ +0x0
 	.4byte 0x085744A4 @ +0x4
 	.4byte 0x085744E0 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0xC0000000 @ +0x18
 	.4byte 0x00000C00 @ +0x1C
 	@ pret/pokeemerald-jp direct xref for 0x08574514: easy_chat.s: sub_0811EAF8
@@ -2444,6 +2657,7 @@ gEasyChatData_08574514:
 gUnknown_8574514: @ 0x08574514
 	@ analyzed canonical ROM range 0x08574514-0x08574553
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x40
 	.byte 0x06, 0x00, 0x02, 0x00, 0x0C, 0x45, 0x57, 0x08, 0x04, 0xF3, 0x2B, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x41, 0x71, 0x00, 0x08, 0x00, 0x40, 0x00, 0x40, 0x00, 0x04, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x40, 0x00, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00
@@ -2463,6 +2677,7 @@ gEasyChatData_0857456C:
 gUnknown_857456C: @ 0x0857456C
 	@ analyzed canonical ROM range 0x0857456C-0x08574717
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x1AC
 	.2byte 0x0002, 0x0002, 0x4534, 0x0857, 0x454C, 0x0857, 0x0000, 0x0000
 	.2byte 0xF310, 0x082B, 0x7141, 0x0800, 0x0187, 0x0124, 0x0164, 0x0077
 	.2byte 0x0118, 0x0186, 0x0178, 0x0137, 0x0138, 0x004A, 0x0183, 0x00E3

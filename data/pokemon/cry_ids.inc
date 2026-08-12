@@ -3,6 +3,7 @@
 gSpeciesIdToCryId: @ 0x082EFFA4
 gUnknown_82EFFA4:
 	@ Hoenn species (SPECIES_TREECKO..SPECIES_CHIMECHO), one cry ID per entry.
+	@ ANALYSIS: RAW_BLOCK size=0x110
 	.2byte 273 @ SPECIES_TREECKO
 	.2byte 274 @ SPECIES_GROVYLE
 	.2byte 275 @ SPECIES_SCEPTILE

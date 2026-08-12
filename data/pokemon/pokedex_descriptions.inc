@@ -1,9 +1,10 @@
-@ Generated from baserom.gba
+@ Generated from reference ROM
 @ Original region: 0x08539C50-0x0854069B
 
 .align 2
 
 gUnknown_8539C50:: @ 0x08539C50
+    @ ANALYSIS: RAW_BLOCK size=0x1
     .byte 0xFF
 
 gNonePokedexText:: @ 0x08539C51

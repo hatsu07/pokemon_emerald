@@ -22,7 +22,7 @@ gUnknown_852B3E8: @ 0x0852B3E8
 gUnknown_852B418: @ 0x0852B418
 	@ confirmed contiguous ROM pointer table: 4 entries from this address
 sPointerTable_0852B418:
-	@ Replaced baserom.gba range: offset=0x52B418, size=0x48
+	@ ANALYSIS: SOURCE_RANGE offset=0x52B418, size=0x48
 	@ semantic recovery: rodata; byte-verified against linked ROM
 FunctionPointerTable_JP_0852B418: @ 0x0852B418
 	@ proven function-pointer table
@@ -36,14 +36,16 @@ FunctionPointerTable_JP_0852B418: @ 0x0852B418
 	.byte 0x48, 0xB4, 0x52, 0x08, 0x50, 0xB4, 0x52, 0x08
 	.globl gUnknown_852B460
 gUnknown_852B460: @ 0x0852B460
-	@ Replaced baserom.gba range: offset=0x52B460, size=0x18
+	@ ANALYSIS: SOURCE_RANGE offset=0x52B460, size=0x18
 	@ semanticized-mass: resolved embedded ROM pointers
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.byte 0xFF, 0xFF, 0xFF, 0xFF, 0x28, 0xB4, 0x52, 0x08, 0x58, 0xB4, 0x52, 0x08, 0x30, 0xB4, 0x52, 0x08
 	.4byte gDummySpriteAffineAnimTable @ ROM pointer 0x082BF310
 	.4byte SpriteCB_TrainerIcons @ ROM pointer 0x080B3E7D
 
-	@ Replaced baserom.gba range: offset=0x52B478, size=0x18
+	@ ANALYSIS: SOURCE_RANGE offset=0x52B478, size=0x18
 	@ semanticized-mass: resolved embedded ROM pointers
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.byte 0xFF, 0xFF, 0x04, 0x10, 0x28, 0xB4, 0x52, 0x08, 0x58, 0xB4, 0x52, 0x08, 0x40, 0xB4, 0x52, 0x08
 	.4byte gDummySpriteAffineAnimTable @ ROM pointer 0x082BF310
 	.4byte SpriteCB_TrainerIcons @ ROM pointer 0x080B3E7D

@@ -15,6 +15,7 @@ gMatchCallData_085D7A14:
 gUnknown_85D7A14: @ 0x085D7A14
 	@ analyzed canonical ROM range 0x085D7A14-0x085D7A1B
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0100, 0x1C0F, 0x0F04, 0x0200
 	@ pret/pokeemerald-jp direct xref for 0x085D7A1C: match_call.s: PopulateMatchCallStringVars
 	.globl gMatchCallData_085D7A1C
@@ -23,6 +24,7 @@ gMatchCallData_085D7A1C:
 gUnknown_85D7A1C: @ 0x085D7A1C
 	@ analyzed canonical ROM range 0x085D7A1C-0x085D7A27
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0xC
 	.2byte 0x1C40, 0x0202, 0x1C54, 0x0202, 0x1C68, 0x0202
 	@ pret/pokeemerald-jp direct xref for 0x085D7A28: match_call.s: PopulateMatchCallStringVar
 	.globl gMatchCallData_085D7A28
@@ -50,6 +52,7 @@ gMatchCallData_085D7A54:
 gUnknown_85D7A54: @ 0x085D7A54
 	@ analyzed canonical ROM range 0x085D7A54-0x085D7A83
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x30
 	.byte 0x82, 0x02, 0x00, 0x00, 0x40, 0x7A, 0x5D, 0x08, 0xE1, 0x01, 0x00, 0x00, 0x43, 0x7A, 0x5D, 0x08
 	.byte 0xA9, 0x02, 0x00, 0x00, 0x46, 0x7A, 0x5D, 0x08, 0xAF, 0x02, 0x00, 0x00, 0x49, 0x7A, 0x5D, 0x08
 	.byte 0x33, 0x00, 0x00, 0x00, 0x4C, 0x7A, 0x5D, 0x08, 0x1F, 0x01, 0x00, 0x00, 0x4F, 0x7A, 0x5D, 0x08
@@ -103,6 +106,7 @@ gUnknown_85D7AB0: @ 0x085D7AB0
 gUnknown_85D7B04: @ 0x085D7B04
 	@ analyzed canonical ROM range 0x085D7B04-0x085D7B23
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0xFF, 0x7F, 0xFF, 0x7F, 0x8C, 0x31, 0x5A, 0x67, 0x3C, 0x04, 0xFF, 0x3A, 0x64, 0x06, 0xD2, 0x4B
 	.byte 0x46, 0x65, 0x14, 0x7B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085D7B24: menu.s: GetPlayerTextSpeedDelay
@@ -112,6 +116,7 @@ gMenuData_085D7B24:
 gUnknown_85D7B24: @ 0x085D7B24
 	@ analyzed canonical ROM range 0x085D7B24-0x085D7B27
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x08, 0x04, 0x01, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085D7B28: menu.s: InitStandardTextBoxWindows
 	.globl gMenuData_085D7B28
@@ -120,6 +125,7 @@ gMenuData_085D7B28:
 gUnknown_85D7B28: @ 0x085D7B28
 	@ analyzed canonical ROM range 0x085D7B28-0x085D7B37
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0x0400, 0x160F, 0x0F04, 0x01A8, 0x00FF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085D7B38: menu.s: DisplayYesNoMenuDefaultYes, DisplayYesNoMenuWithDefault
 	.globl gMenuData_085D7B38
@@ -128,6 +134,7 @@ gMenuData_085D7B38:
 gUnknown_85D7B38: @ 0x085D7B38
 	@ analyzed canonical ROM range 0x085D7B38-0x085D7B3F
 	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x1500, 0x0509, 0x0F04, 0x0146
 	.globl gUnknown_85D7B40
 gUnknown_85D7B40: @ 0x085D7B40

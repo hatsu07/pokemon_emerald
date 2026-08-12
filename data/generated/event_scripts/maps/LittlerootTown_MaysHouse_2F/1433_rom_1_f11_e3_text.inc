@@ -8,7 +8,7 @@ gText_Rom_1F11E3: @ 0x081F11E3
 	.if (. - gText_Rom_1F11E3) < 0x49
 	.space 0x49 - (. - gText_Rom_1F11E3)
 	.endif
-	@ Replaced baserom.gba range: offset=0x1F122C, size=0x845
+	@ ANALYSIS: SOURCE_RANGE offset=0x1F122C, size=0x845
 	@ semantic recovery: script_data; byte-verified against linked ROM
 MapScripts_JP_081F122C: @ 0x081F122C
 	@ map script dispatch table
@@ -791,7 +791,7 @@ EventScript_JP_081F1A68: @ 0x081F1A68
 	end
 	.include "data/text/maps/birch_lab.inc"
 
-	@ Replaced baserom.gba range: offset=0x1F28D3, size=0xFB3D
+	@ ANALYSIS: SOURCE_RANGE offset=0x1F28D3, size=0xFB3D
 	@ semantic recovery: script_data; byte-verified against linked ROM
 	.byte 0x00
 EventScript_JP_081F28D4: @ 0x081F28D4

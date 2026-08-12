@@ -9,4 +9,5 @@ gRecordMixingData_08566D89:
 gUnknown_8566D89: @ 0x08566D89
 	@ analyzed canonical ROM range 0x08566D89-0x08566D8E
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0xD0, 0xC9, 0xC3, 0xBD, 0xBF, 0xB0

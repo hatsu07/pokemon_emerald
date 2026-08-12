@@ -800,7 +800,7 @@ gStdScripts:
 	.4byte Std_MsgboxPokenav
 gStdScripts_End:
 	.include "data/generated/maps/PetalburgCity.inc"
-	@ Replaced baserom.gba range: offset=0x1DBFD3, size=0x9EB
+	@ ANALYSIS: SOURCE_RANGE offset=0x1DBFD3, size=0x9EB
 	@ semantic recovery: script_data; byte-verified against linked ROM
 MapScripts_JP_081DBFD3: @ 0x081DBFD3
 	@ map script dispatch table
