@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085F5F60: pokenav_unk_10.s: sub_081D05AC
 	.globl gPokenavUnk10Data_085F5F60
-gPokenavUnk10Data_085F5F60:
-	.globl gUnknown_85F5F60
-gUnknown_85F5F60: @ 0x085F5F60
+gPokenavUnk10Data_085F5F60: @ 0x085F5F60
 	@ confirmed contiguous ROM pointer table: 50 entries from this address
 sPointerTable_085F5F60:
 	@ analyzed canonical ROM range 0x085F5F60-0x085F6027

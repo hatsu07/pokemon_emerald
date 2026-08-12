@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085CBD6B: save_failed_screen.s: CB2_SaveFailedScreen, CB2_WipeSave
 	.globl gSaveFailedScreenData_085CBD6B
-gSaveFailedScreenData_085CBD6B:
-	.globl gUnknown_85CBD6B
-gUnknown_85CBD6B: @ 0x085CBD6B
+gSaveFailedScreenData_085CBD6B: @ 0x085CBD6B
 	@ analyzed canonical ROM range 0x085CBD6B-0x085CBDB1
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x47
@@ -13,9 +11,7 @@ gUnknown_85CBD6B: @ 0x085CBD6B
 	.byte 0x06, 0x06, 0x28, 0x1F, 0x0D, 0xB2, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085CBDB2: save_failed_screen.s: CB2_WipeSave
 	.globl gSaveFailedScreenData_085CBDB2
-gSaveFailedScreenData_085CBDB2:
-	.globl gUnknown_85CBDB2
-gUnknown_85CBDB2: @ 0x085CBDB2
+gSaveFailedScreenData_085CBDB2: @ 0x085CBDB2
 	@ analyzed canonical ROM range 0x085CBDB2-0x085CBDF6
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x45
@@ -26,9 +22,7 @@ gUnknown_85CBDB2: @ 0x085CBDB2
 	.byte 0x44, 0x07, 0x1F, 0x0D, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085CBDF7: save_failed_screen.s: CB2_GameplayCannotBeContinued
 	.globl gSaveFailedScreenData_085CBDF7
-gSaveFailedScreenData_085CBDF7:
-	.globl gUnknown_85CBDF7
-gUnknown_85CBDF7: @ 0x085CBDF7
+gSaveFailedScreenData_085CBDF7: @ 0x085CBDF7
 	@ analyzed canonical ROM range 0x085CBDF7-0x085CBE1F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x29
@@ -37,4 +31,3 @@ gUnknown_85CBDF7: @ 0x085CBDF7
 	.byte 0x16, 0x00, 0x23, 0x45, 0x28, 0x1F, 0x0D, 0xB2, 0xFF
 	.globl gUnknown_85CBE20
 gUnknown_85CBE20: @ 0x085CBE20
-

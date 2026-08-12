@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085E1338: party_menu.s: DrawEmptySlot
 	.globl gPartyMenuData_085E1338
-gPartyMenuData_085E1338:
-	.globl gUnknown_85E1338
-gUnknown_85E1338: @ 0x085E1338
+gPartyMenuData_085E1338: @ 0x085E1338
 	@ analyzed canonical ROM range 0x085E1338-0x085E136D
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x36
@@ -12,207 +10,161 @@ gUnknown_85E1338: @ 0x085E1338
 	.2byte 0x2626, 0x2626, 0x2726
 	@ pret/pokeemerald-jp direct xref for 0x085E136E: party_menu.s: DisplayPartyPokemonGender
 	.globl gPartyMenuData_085E136E
-gPartyMenuData_085E136E:
-	.globl gUnknown_85E136E
-gUnknown_85E136E: @ 0x085E136E
+gPartyMenuData_085E136E: @ 0x085E136E
 	@ analyzed canonical ROM range 0x085E136E-0x085E136F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0x0B, 0x0C
 	@ pret/pokeemerald-jp direct xref for 0x085E1370: party_menu.s: DisplayPartyPokemonHPBar
 	.globl gPartyMenuData_085E1370
-gPartyMenuData_085E1370:
-	.globl gUnknown_85E1370
-gUnknown_85E1370: @ 0x085E1370
+gPartyMenuData_085E1370: @ 0x085E1370
 	@ analyzed canonical ROM range 0x085E1370-0x085E1371
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0x09, 0x0A
 	@ pret/pokeemerald-jp direct xref for 0x085E1372: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E1372
-gPartyMenuData_085E1372:
-	.globl gUnknown_85E1372
-gUnknown_85E1372: @ 0x085E1372
+gPartyMenuData_085E1372: @ 0x085E1372
 	@ analyzed canonical ROM range 0x085E1372-0x085E1374
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x04, 0x05, 0x06
 	@ pret/pokeemerald-jp direct xref for 0x085E1375: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E1375
-gPartyMenuData_085E1375:
-	.globl gUnknown_85E1375
-gUnknown_85E1375: @ 0x085E1375
+gPartyMenuData_085E1375: @ 0x085E1375
 	@ analyzed canonical ROM range 0x085E1375-0x085E1377
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x01, 0x07, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x085E1378: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E1378
-gPartyMenuData_085E1378:
-	.globl gUnknown_85E1378
-gUnknown_85E1378: @ 0x085E1378
+gPartyMenuData_085E1378: @ 0x085E1378
 	@ analyzed canonical ROM range 0x085E1378-0x085E137A
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x01, 0x0B, 0x0C
 	@ pret/pokeemerald-jp direct xref for 0x085E137B: party_menu.s: DisplayPartyPokemonGender
 	.globl gPartyMenuData_085E137B
-gPartyMenuData_085E137B:
-	.globl gUnknown_85E137B
-gUnknown_85E137B: @ 0x085E137B
+gPartyMenuData_085E137B: @ 0x085E137B
 	@ analyzed canonical ROM range 0x085E137B-0x085E137C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0x3B, 0x3C
 	@ pret/pokeemerald-jp direct xref for 0x085E137D: party_menu.s: DisplayPartyPokemonGender
 	.globl gPartyMenuData_085E137D
-gPartyMenuData_085E137D:
-	.globl gUnknown_85E137D
-gUnknown_85E137D: @ 0x085E137D
+gPartyMenuData_085E137D: @ 0x085E137D
 	@ analyzed canonical ROM range 0x085E137D-0x085E137E
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0x4B, 0x4C
 	@ pret/pokeemerald-jp direct xref for 0x085E137F: party_menu.s: DisplayPartyPokemonHPBar
 	.globl gPartyMenuData_085E137F
-gPartyMenuData_085E137F:
-	.globl gUnknown_85E137F
-gUnknown_85E137F: @ 0x085E137F
+gPartyMenuData_085E137F: @ 0x085E137F
 	@ analyzed canonical ROM range 0x085E137F-0x085E1380
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0x39, 0x3A
 	@ pret/pokeemerald-jp direct xref for 0x085E1381: party_menu.s: DisplayPartyPokemonHPBar
 	.globl gPartyMenuData_085E1381
-gPartyMenuData_085E1381:
-	.globl gUnknown_85E1381
-gUnknown_85E1381: @ 0x085E1381
+gPartyMenuData_085E1381: @ 0x085E1381
 	@ analyzed canonical ROM range 0x085E1381-0x085E1382
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0x49, 0x4A
 	@ pret/pokeemerald-jp direct xref for 0x085E1383: party_menu.s: DisplayPartyPokemonHPBar
 	.globl gPartyMenuData_085E1383
-gPartyMenuData_085E1383:
-	.globl gUnknown_85E1383
-gUnknown_85E1383: @ 0x085E1383
+gPartyMenuData_085E1383: @ 0x085E1383
 	@ analyzed canonical ROM range 0x085E1383-0x085E1384
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0x59, 0x5A
 	@ pret/pokeemerald-jp direct xref for 0x085E1385: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E1385
-gPartyMenuData_085E1385:
-	.globl gUnknown_85E1385
-gUnknown_85E1385: @ 0x085E1385
+gPartyMenuData_085E1385: @ 0x085E1385
 	@ analyzed canonical ROM range 0x085E1385-0x085E1387
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x34, 0x35, 0x36
 	@ pret/pokeemerald-jp direct xref for 0x085E1388: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E1388
-gPartyMenuData_085E1388:
-	.globl gUnknown_85E1388
-gUnknown_85E1388: @ 0x085E1388
+gPartyMenuData_085E1388: @ 0x085E1388
 	@ analyzed canonical ROM range 0x085E1388-0x085E138A
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x44, 0x45, 0x46
 	@ pret/pokeemerald-jp direct xref for 0x085E138B: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E138B
-gPartyMenuData_085E138B:
-	.globl gUnknown_85E138B
-gUnknown_85E138B: @ 0x085E138B
+gPartyMenuData_085E138B: @ 0x085E138B
 	@ analyzed canonical ROM range 0x085E138B-0x085E138D
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x54, 0x55, 0x56
 	@ pret/pokeemerald-jp direct xref for 0x085E138E: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E138E
-gPartyMenuData_085E138E:
-	.globl gUnknown_85E138E
-gUnknown_85E138E: @ 0x085E138E
+gPartyMenuData_085E138E: @ 0x085E138E
 	@ analyzed canonical ROM range 0x085E138E-0x085E1390
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x74, 0x75, 0x76
 	@ pret/pokeemerald-jp direct xref for 0x085E1391: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E1391
-gPartyMenuData_085E1391:
-	.globl gUnknown_85E1391
-gUnknown_85E1391: @ 0x085E1391
+gPartyMenuData_085E1391: @ 0x085E1391
 	@ analyzed canonical ROM range 0x085E1391-0x085E1393
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x84, 0x85, 0x86
 	@ pret/pokeemerald-jp direct xref for 0x085E1394: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E1394
-gPartyMenuData_085E1394:
-	.globl gUnknown_85E1394
-gUnknown_85E1394: @ 0x085E1394
+gPartyMenuData_085E1394: @ 0x085E1394
 	@ analyzed canonical ROM range 0x085E1394-0x085E1396
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x94, 0x95, 0x96
 	@ pret/pokeemerald-jp direct xref for 0x085E1397: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E1397
-gPartyMenuData_085E1397:
-	.globl gUnknown_85E1397
-gUnknown_85E1397: @ 0x085E1397
+gPartyMenuData_085E1397: @ 0x085E1397
 	@ analyzed canonical ROM range 0x085E1397-0x085E1399
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x64, 0x65, 0x66
 	@ pret/pokeemerald-jp direct xref for 0x085E139A: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E139A
-gPartyMenuData_085E139A:
-	.globl gUnknown_85E139A
-gUnknown_85E139A: @ 0x085E139A
+gPartyMenuData_085E139A: @ 0x085E139A
 	@ analyzed canonical ROM range 0x085E139A-0x085E139C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x31, 0x37, 0x38
 	@ pret/pokeemerald-jp direct xref for 0x085E139D: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E139D
-gPartyMenuData_085E139D:
-	.globl gUnknown_85E139D
-gUnknown_85E139D: @ 0x085E139D
+gPartyMenuData_085E139D: @ 0x085E139D
 	@ analyzed canonical ROM range 0x085E139D-0x085E139F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x41, 0x47, 0x48
 	@ pret/pokeemerald-jp direct xref for 0x085E13A0: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E13A0
-gPartyMenuData_085E13A0:
-	.globl gUnknown_85E13A0
-gUnknown_85E13A0: @ 0x085E13A0
+gPartyMenuData_085E13A0: @ 0x085E13A0
 	@ analyzed canonical ROM range 0x085E13A0-0x085E13A2
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x51, 0x57, 0x58
 	@ pret/pokeemerald-jp direct xref for 0x085E13A3: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E13A3
-gPartyMenuData_085E13A3:
-	.globl gUnknown_85E13A3
-gUnknown_85E13A3: @ 0x085E13A3
+gPartyMenuData_085E13A3: @ 0x085E13A3
 	@ analyzed canonical ROM range 0x085E13A3-0x085E13A5
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x61, 0x67, 0x68
 	@ pret/pokeemerald-jp direct xref for 0x085E13A6: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E13A6
-gPartyMenuData_085E13A6:
-	.globl gUnknown_85E13A6
-gUnknown_85E13A6: @ 0x085E13A6
+gPartyMenuData_085E13A6: @ 0x085E13A6
 	@ analyzed canonical ROM range 0x085E13A6-0x085E13A8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0xA1, 0xA7, 0xA8
 	@ pret/pokeemerald-jp direct xref for 0x085E13A9: party_menu.s: UpdateSelectedPartyBox
 	.globl gPartyMenuData_085E13A9
-gPartyMenuData_085E13A9:
-	.globl gUnknown_85E13A9
-gUnknown_85E13A9: @ 0x085E13A9
+gPartyMenuData_085E13A9: @ 0x085E13A9
 	@ analyzed canonical ROM range 0x085E13A9-0x085E13AB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
@@ -248,9 +200,7 @@ gUnknown_85E13AC: @ 0x085E13AC
 	.4byte gText_Rom_5CA195
 	@ pret/pokeemerald-jp direct xref for 0x085E1418: party_menu.s: DisplayPartyPokemonOtherText
 	.globl gPartyMenuData_085E1418
-gPartyMenuData_085E1418:
-	.globl gUnknown_85E1418
-gUnknown_85E1418: @ 0x085E1418
+gPartyMenuData_085E1418: @ 0x085E1418
 	@ confirmed contiguous ROM pointer table: 13 entries from this address
 sPointerTable_085E1418:
 	@ analyzed canonical ROM range 0x085E1418-0x085E14BF
@@ -268,9 +218,7 @@ sPointerTable_085E1418:
 	.2byte 0x0094, 0x00F9, 0x007F, 0x0123
 	@ pret/pokeemerald-jp direct xref for 0x085E14C0: party_menu.s: HandleMenuInput, sub_081B2E34
 	.globl gPartyMenuData_085E14C0
-gPartyMenuData_085E14C0:
-	.globl gUnknown_85E14C0
-gUnknown_85E14C0: @ 0x085E14C0
+gPartyMenuData_085E14C0: @ 0x085E14C0
 	@ confirmed contiguous ROM pointer table: 66 entries from this address
 sPointerTable_085E14C0:
 	@ analyzed canonical ROM range 0x085E14C0-0x085E15EF
@@ -353,9 +301,7 @@ sPointerTable_085E14C0:
 	.4byte 0x00000212 @ +0x12C
 	@ pret/pokeemerald-jp direct xref for 0x085E15F0: party_menu.s: sub_081B3054
 	.globl gPartyMenuData_085E15F0
-gPartyMenuData_085E15F0:
-	.globl gUnknown_85E15F0
-gUnknown_85E15F0: @ 0x085E15F0
+gPartyMenuData_085E15F0: @ 0x085E15F0
 	@ analyzed canonical ROM range 0x085E15F0-0x085E1627
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x38
@@ -375,18 +321,14 @@ gUnknown_85E15F0: @ 0x085E15F0
 	.4byte 0x085E15EB @ +0x34
 	@ pret/pokeemerald-jp direct xref for 0x085E1628: party_menu.s: sub_081B3054
 	.globl gPartyMenuData_085E1628
-gPartyMenuData_085E1628:
-	.globl gUnknown_85E1628
-gUnknown_85E1628: @ 0x085E1628
+gPartyMenuData_085E1628: @ 0x085E1628
 	@ analyzed canonical ROM range 0x085E1628-0x085E1635
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xE
 	.2byte 0x0300, 0x0303, 0x0303, 0x0203, 0x0303, 0x0303, 0x0303
 	@ pret/pokeemerald-jp direct xref for 0x085E1636: party_menu.s: CreateActionList
 	.globl gPartyMenuData_085E1636
-gPartyMenuData_085E1636:
-	.globl gUnknown_85E1636
-gUnknown_85E1636: @ 0x085E1636
+gPartyMenuData_085E1636: @ 0x085E1636
 	@ analyzed canonical ROM range 0x085E1636-0x085E1653
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x1E
@@ -425,9 +367,7 @@ gUnknown_85E1654: @ 0x085E1654
 	.4byte TYPE_ELECTRIC
 	@ pret/pokeemerald-jp direct xref for 0x085E16C4: party_menu.s: CursorCb_Trade1
 	.globl gPartyMenuData_085E16C4
-gPartyMenuData_085E16C4:
-	.globl gUnknown_85E16C4
-gUnknown_85E16C4: @ 0x085E16C4
+gPartyMenuData_085E16C4: @ 0x085E16C4
 	@ confirmed contiguous ROM pointer table: 9 entries from this address
 sPointerTable_085E16C4:
 	@ analyzed canonical ROM range 0x085E16C4-0x085E1767
@@ -445,27 +385,21 @@ sPointerTable_085E16C4:
 	.byte 0x58, 0x17, 0x5E, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x085E1768: party_menu.s: LoadHeldItemIcons
 	.globl gPartyMenuData_085E1768
-gPartyMenuData_085E1768:
-	.globl gUnknown_85E1768
-gUnknown_85E1768: @ 0x085E1768
+gPartyMenuData_085E1768: @ 0x085E1768
 	@ analyzed canonical ROM range 0x085E1768-0x085E176F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xE8, 0x16, 0x5E, 0x08, 0x40, 0x00, 0x50, 0xD7
 	@ pret/pokeemerald-jp direct xref for 0x085E1770: party_menu.s: LoadHeldItemIcons
 	.globl gPartyMenuData_085E1770
-gPartyMenuData_085E1770:
-	.globl gUnknown_85E1770
-gUnknown_85E1770: @ 0x085E1770
+gPartyMenuData_085E1770: @ 0x085E1770
 	@ analyzed canonical ROM range 0x085E1770-0x085E1777
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x28, 0x17, 0x5E, 0x08, 0x50, 0xD7, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085E1778: party_menu.s: party_menu_held_item_object, party_menu_link_mon_held_item_object, sub_081B5A90
 	.globl gPartyMenuData_085E1778
-gPartyMenuData_085E1778:
-	.globl gUnknown_85E1778
-gUnknown_85E1778: @ 0x085E1778
+gPartyMenuData_085E1778: @ 0x085E1778
 	@ analyzed canonical ROM range 0x085E1778-0x085E17AF
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x38
@@ -475,27 +409,21 @@ gUnknown_85E1778: @ 0x085E1778
 	.2byte 0x1798, 0x085E, 0x17A0, 0x085E
 	@ pret/pokeemerald-jp direct xref for 0x085E17B0: party_menu.s: LoadPartyMenuPokeballGfx
 	.globl gPartyMenuData_085E17B0
-gPartyMenuData_085E17B0:
-	.globl gUnknown_85E17B0
-gUnknown_85E17B0: @ 0x085E17B0
+gPartyMenuData_085E17B0: @ 0x085E17B0
 	@ analyzed canonical ROM range 0x085E17B0-0x085E17B7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x8C, 0x6C, 0xD9, 0x08, 0x00, 0x04, 0xB0, 0x04
 	@ pret/pokeemerald-jp direct xref for 0x085E17B8: party_menu.s: LoadPartyMenuPokeballGfx
 	.globl gPartyMenuData_085E17B8
-gPartyMenuData_085E17B8:
-	.globl gUnknown_85E17B8
-gUnknown_85E17B8: @ 0x085E17B8
+gPartyMenuData_085E17B8: @ 0x085E17B8
 	@ analyzed canonical ROM range 0x085E17B8-0x085E17BF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x20, 0x6F, 0xD9, 0x08, 0xB0, 0x04, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085E17C0: party_menu.s: party_menu_link_mon_pokeball_object, party_menu_pokeball_object, sub_081B5BD4
 	.globl gPartyMenuData_085E17C0
-gPartyMenuData_085E17C0:
-	.globl gUnknown_85E17C0
-gUnknown_85E17C0: @ 0x085E17C0
+gPartyMenuData_085E17C0: @ 0x085E17C0
 	@ analyzed canonical ROM range 0x085E17C0-0x085E1827
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x68
@@ -508,18 +436,14 @@ gUnknown_85E17C0: @ 0x085E17C0
 	.2byte 0x1800, 0x085E, 0x1808, 0x085E
 	@ pret/pokeemerald-jp direct xref for 0x085E1828: party_menu.s: LoadPartyMenuPokeballGfx
 	.globl gPartyMenuData_085E1828
-gPartyMenuData_085E1828:
-	.globl gUnknown_85E1828
-gUnknown_85E1828: @ 0x085E1828
+gPartyMenuData_085E1828: @ 0x085E1828
 	@ analyzed canonical ROM range 0x085E1828-0x085E182F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x0C, 0x6E, 0xD9, 0x08, 0x00, 0x03, 0xB1, 0x04
 	@ pret/pokeemerald-jp direct xref for 0x085E1830: party_menu.s: sub_081B5C14
 	.globl gPartyMenuData_085E1830
-gPartyMenuData_085E1830:
-	.globl gUnknown_85E1830
-gUnknown_85E1830: @ 0x085E1830
+gPartyMenuData_085E1830: @ 0x085E1830
 	@ analyzed canonical ROM range 0x085E1830-0x085E18AF
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x80
@@ -533,27 +457,21 @@ gUnknown_85E1830: @ 0x085E1830
 	.2byte 0x1870, 0x085E, 0x1878, 0x085E, 0x1880, 0x085E, 0x1888, 0x085E
 	@ pret/pokeemerald-jp direct xref for 0x085E18B0: party_menu.s: LoadPartyMenuAilmentGfx
 	.globl gPartyMenuData_085E18B0
-gPartyMenuData_085E18B0:
-	.globl gUnknown_85E18B0
-gUnknown_85E18B0: @ 0x085E18B0
+gPartyMenuData_085E18B0: @ 0x085E18B0
 	@ analyzed canonical ROM range 0x085E18B0-0x085E18B7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x44, 0x6F, 0xD9, 0x08, 0x00, 0x04, 0xB2, 0x04
 	@ pret/pokeemerald-jp direct xref for 0x085E18B8: party_menu.s: LoadPartyMenuAilmentGfx
 	.globl gPartyMenuData_085E18B8
-gPartyMenuData_085E18B8:
-	.globl gUnknown_85E18B8
-gUnknown_85E18B8: @ 0x085E18B8
+gPartyMenuData_085E18B8: @ 0x085E18B8
 	@ analyzed canonical ROM range 0x085E18B8-0x085E18BF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xA4, 0x71, 0xD9, 0x08, 0xB2, 0x04, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085E18C0: party_menu.s: party_menu_link_mon_status_condition_object, party_menu_status_condition_object
 	.globl gPartyMenuData_085E18C0
-gPartyMenuData_085E18C0:
-	.globl gUnknown_85E18C0
-gUnknown_85E18C0: @ 0x085E18C0
+gPartyMenuData_085E18C0: @ 0x085E18C0
 	@ analyzed canonical ROM range 0x085E18C0-0x085E18D7
 sSpriteTemplate_085E18C0: @ 0x085E18C0
 	rodata_sprite_template 0x04B2, 0x04B2, 0x085E1848, 0x085E1890, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
@@ -570,9 +488,7 @@ gUnknown_85E18D8: @ 0x085E18D8
 	.4byte gText_Rom_5CA383
 	@ pret/pokeemerald-jp direct xref for 0x085E18F8: party_menu.s: IsMoveHm, ItemIdToBattleMoveId
 	.globl gPartyMenuData_085E18F8
-gPartyMenuData_085E18F8:
-	.globl gUnknown_85E18F8
-gUnknown_85E18F8: @ 0x085E18F8
+gPartyMenuData_085E18F8: @ 0x085E18F8
 	@ analyzed canonical ROM range 0x085E18F8-0x085E196B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x74
@@ -596,9 +512,7 @@ gUnknown_85E196C: @ 0x085E196C
 	.4byte sub_081B97C8
 	@ pret/pokeemerald-jp direct xref for 0x085E198C: battle_tent.s: sub_081B97A0
 	.globl gBattleTentData_085E198C
-gBattleTentData_085E198C:
-	.globl gUnknown_85E198C
-gUnknown_85E198C: @ 0x085E198C
+gBattleTentData_085E198C: @ 0x085E198C
 	@ analyzed canonical ROM range 0x085E198C-0x085E198F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
@@ -614,9 +528,7 @@ gUnknown_85E1990: @ 0x085E1990
 	.4byte sub_081B9990
 	@ pret/pokeemerald-jp direct xref for 0x085E19AC: battle_tent.s: sub_081B9910
 	.globl gBattleTentData_085E19AC
-gBattleTentData_085E19AC:
-	.globl gUnknown_85E19AC
-gUnknown_85E19AC: @ 0x085E19AC
+gBattleTentData_085E19AC: @ 0x085E19AC
 	@ analyzed canonical ROM range 0x085E19AC-0x085E19AF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
@@ -635,18 +547,14 @@ gUnknown_85E19B0: @ 0x085E19B0
 	.4byte sub_081B9B60
 	@ pret/pokeemerald-jp direct xref for 0x085E19D8: battle_tent.s: sub_081B9A98
 	.globl gBattleTentData_085E19D8
-gBattleTentData_085E19D8:
-	.globl gUnknown_85E19D8
-gUnknown_85E19D8: @ 0x085E19D8
+gBattleTentData_085E19D8: @ 0x085E19D8
 	@ analyzed canonical ROM range 0x085E19D8-0x085E19DB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x17, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085E19DC: unk_text_util_2.s: Font6Func
 	.globl gUnkTextUtil2Data_085E19DC
-gUnkTextUtil2Data_085E19DC:
-	.globl gUnknown_85E19DC
-gUnknown_85E19DC: @ 0x085E19DC
+gUnkTextUtil2Data_085E19DC: @ 0x085E19DC
 	@ analyzed canonical ROM range 0x085E19DC-0x085E19DF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4

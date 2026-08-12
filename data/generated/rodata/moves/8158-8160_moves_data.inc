@@ -565,9 +565,7 @@ sLz77Block_08D7D634:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D7DCA8: battle_bg.s: DrawMainBattleBackground
 	.globl gBattleBgData_08D7DCA8
-gBattleBgData_08D7DCA8:
-	.globl gUnknown_8D7DCA8
-gUnknown_8D7DCA8: @ 0x08D7DCA8
+gBattleBgData_08D7DCA8: @ 0x08D7DCA8
 	@ confirmed GBA LZ77 stream: compressed=0x2AE, decompressed=0x1000
 sLz77Block_08D7DCA8:
 	@ analyzed canonical ROM range 0x08D7DCA8-0x08D7DF97
@@ -754,9 +752,7 @@ sLz77Block_08D7E29C:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D7E2D8: battle_bg.s: DrawMainBattleBackground
 	.globl gBattleBgData_08D7E2D8
-gBattleBgData_08D7E2D8:
-	.globl gUnknown_8D7E2D8
-gUnknown_8D7E2D8: @ 0x08D7E2D8
+gBattleBgData_08D7E2D8: @ 0x08D7E2D8
 	@ confirmed GBA LZ77 stream: compressed=0x49, decompressed=0x60
 sLz77Block_08D7E2D8:
 	@ analyzed canonical ROM range 0x08D7E2D8-0x08D7FA9B

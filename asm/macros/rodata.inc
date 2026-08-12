@@ -430,3 +430,38 @@
 	.byte \init_state, 0
 	.2byte 0
 	.endm
+
+
+@ JP semantic helpers for battle interface, daycare and egg hatch.
+.macro battle_interface_empty_text_dark_gray spaces:req
+    .byte 0xFC, 0x01, 0x01
+    .byte 0xFC, 0x02, 0x02
+    .space \spaces, 0
+.endm
+
+.macro battle_interface_empty_text_transparent spaces:req
+    .byte 0xFC, 0x01, 0x01
+    .byte 0xFC, 0x02, 0x00
+    .space \spaces, 0
+.endm
+
+.macro battle_status_icon_color index:req, red:req, green:req, blue:req
+    .if (\index) != ((. - sStatusIconColors) / 2)
+        .error "battle status icon colors are out of order"
+    .endif
+    .2byte ((\red) & 31) | (((\green) & 31) << 5) | (((\blue) & 31) << 10)
+.endm
+
+.macro daycare_compatibility_message index:req, text:req
+    .if (\index) != ((. - sCompatibilityMessages) / 4)
+        .error "daycare compatibility messages are out of order"
+    .endif
+    .4byte \text
+.endm
+
+.macro egg_shard_velocity index:req, x:req, y:req
+    .if (\index) != ((. - sEggShardVelocities) / 4)
+        .error "egg shard velocities are out of order"
+    .endif
+    .2byte \x, \y
+.endm

@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x0859F150: battle_transition.s: Phase2_Rayquaza_Func3
 	.globl gBattleTransitionData_0859F150
-gBattleTransitionData_0859F150:
-	.globl gUnknown_859F150
-gUnknown_859F150: @ 0x0859F150
+gBattleTransitionData_0859F150: @ 0x0859F150
 	@ analyzed canonical ROM range 0x0859F150-0x085A668F
 gBattleTransitionRayquazaTilemap: @ 0x0859F150
 	@ CpuSet source for Phase2_Rayquaza_Func3; first 0x1000 bytes copied in that step.

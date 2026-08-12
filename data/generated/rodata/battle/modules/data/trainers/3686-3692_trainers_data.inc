@@ -230,9 +230,7 @@ gUnknown_85BCF70: @ 0x085BCF70
 	.2byte 0x001F, 0xFFFF
 	@ pret/pokeemerald-jp direct xref for 0x085BD554: battle_tower.s: SetTentPtrsGetLevel
 	.globl gBattleTowerData_085BD554
-gBattleTowerData_085BD554:
-	.globl gUnknown_85BD554
-gUnknown_85BD554: @ 0x085BD554
+gBattleTowerData_085BD554: @ 0x085BD554
 	@ analyzed canonical ROM range 0x085BD554-0x085BD68F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x13C

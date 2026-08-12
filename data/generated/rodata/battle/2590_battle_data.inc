@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x08578D14: easy_chat.s: EasyChat_GetNumWordsInGroup, GetEasyChatWord, sub_0811F0C0, sub_0811F318, sub_0811F5E8 (+2 more)
 	.globl gEasyChatData_08578D14
-gEasyChatData_08578D14:
-	.globl gUnknown_8578D14
-gUnknown_8578D14: @ 0x08578D14
+gEasyChatData_08578D14: @ 0x08578D14
 	@ analyzed canonical ROM range 0x08578D14-0x08579D03
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xFF0
@@ -263,9 +261,7 @@ gUnknown_8578D14: @ 0x08578D14
 	.2byte 0x1044, 0x26A5, 0x1444, 0xFFFF, 0x0002, 0x2A42, 0x0042, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08579D04: easy_chat.s: sub_0811F9C8
 	.globl gEasyChatData_08579D04
-gEasyChatData_08579D04:
-	.globl gUnknown_8579D04
-gUnknown_8579D04: @ 0x08579D04
+gEasyChatData_08579D04: @ 0x08579D04
 	@ analyzed canonical ROM range 0x08579D04-0x08579E6B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x168

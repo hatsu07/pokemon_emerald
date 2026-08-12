@@ -8,9 +8,7 @@ gUnknown_85ABB72: @ 0x085ABB72
 	.byte 0x16, 0x3A, 0x29, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085ABB86: battle_controller_safari.s: SafariHandleChooseAction
 	.globl gBattleControllerSafariData_085ABB86
-gBattleControllerSafariData_085ABB86:
-	.globl gUnknown_85ABB86
-gUnknown_85ABB86: @ 0x085ABB86
+gBattleControllerSafariData_085ABB86: @ 0x085ABB86
 	@ analyzed canonical ROM range 0x085ABB86-0x085ABB9A
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x15
@@ -18,4 +16,3 @@ gUnknown_85ABB86: @ 0x085ABB86
 	.byte 0x00, 0x16, 0x3A, 0x29, 0xFF
 	.globl gUnknown_85ABB9B
 gUnknown_85ABB9B: @ 0x085ABB9B
-

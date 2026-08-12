@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x084E8E70: tileset_anims.s: QueueAnimTiles_General_Flower
 	.globl gTilesetAnimsData_084E8E70
-gTilesetAnimsData_084E8E70:
-	.globl gUnknown_84E8E70
-gUnknown_84E8E70: @ 0x084E8E70
+gTilesetAnimsData_084E8E70: @ 0x084E8E70
 	@ analyzed canonical ROM range 0x084E8E70-0x084E99CF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xB60
@@ -190,9 +188,7 @@ gUnknown_84E8E70: @ 0x084E8E70
 	.byte 0xED, 0xEE, 0xEE, 0xEE, 0xDD, 0xEE, 0xEE, 0xEE, 0xDD, 0xDD, 0xEE, 0xEE, 0xDD, 0xEE, 0xDD, 0xEE
 	@ pret/pokeemerald-jp direct xref for 0x084E99D0: battle_anim.s: ScriptCmd_loadspritegfx
 	.globl gBattleAnimData_084E99D0
-gBattleAnimData_084E99D0:
-	.globl gUnknown_84E99D0
-gUnknown_84E99D0: @ 0x084E99D0
+gBattleAnimData_084E99D0: @ 0x084E99D0
 	@ analyzed canonical ROM range 0x084E99D0-0x084EA2D7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x908
@@ -343,9 +339,7 @@ gUnknown_84E99D0: @ 0x084E99D0
 	.byte 0xDE, 0xDD, 0xDD, 0xDD, 0xEE, 0xDD, 0xDD, 0xDD
 	@ pret/pokeemerald-jp direct xref for 0x084EA2D8: battle_anim.s: ScriptCmd_loadspritegfx
 	.globl gBattleAnimData_084EA2D8
-gBattleAnimData_084EA2D8:
-	.globl gUnknown_84EA2D8
-gUnknown_84EA2D8: @ 0x084EA2D8
+gBattleAnimData_084EA2D8: @ 0x084EA2D8
 	@ analyzed canonical ROM range 0x084EA2D8-0x084EAC7F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x9A8
@@ -506,9 +500,7 @@ gUnknown_84EA2D8: @ 0x084EA2D8
 	.byte 0xDD, 0xDD, 0xDD, 0xCC, 0xDD, 0xDD, 0xDD, 0x99
 	@ pret/pokeemerald-jp direct xref for 0x084EAC80: tileset_anims.s: QueueAnimTiles_General_Water
 	.globl gTilesetAnimsData_084EAC80
-gTilesetAnimsData_084EAC80:
-	.globl gUnknown_84EAC80
-gUnknown_84EAC80: @ 0x084EAC80
+gTilesetAnimsData_084EAC80: @ 0x084EAC80
 	@ analyzed canonical ROM range 0x084EAC80-0x084EB55F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8E0
@@ -656,9 +648,7 @@ gUnknown_84EAC80: @ 0x084EAC80
 	.byte 0xDD, 0xCC, 0xBC, 0xCC, 0xDD, 0xCD, 0xCD, 0xCC, 0xD4, 0xCD, 0xCC, 0xDC, 0xD4, 0xCD, 0xCC, 0xCC
 	@ pret/pokeemerald-jp direct xref for 0x084EB560: tileset_anims.s: QueueAnimTiles_General_SandWaterEdge
 	.globl gTilesetAnimsData_084EB560
-gTilesetAnimsData_084EB560:
-	.globl gUnknown_84EB560
-gUnknown_84EB560: @ 0x084EB560
+gTilesetAnimsData_084EB560: @ 0x084EB560
 	@ analyzed canonical ROM range 0x084EB560-0x084EB87F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x320
@@ -714,9 +704,7 @@ gUnknown_84EB560: @ 0x084EB560
 	.byte 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0xDD, 0xDD, 0xDD, 0xDD
 	@ pret/pokeemerald-jp direct xref for 0x084EB880: tileset_anims.s: QueueAnimTiles_General_Waterfall
 	.globl gTilesetAnimsData_084EB880
-gTilesetAnimsData_084EB880:
-	.globl gUnknown_84EB880
-gUnknown_84EB880: @ 0x084EB880
+gTilesetAnimsData_084EB880: @ 0x084EB880
 	@ analyzed canonical ROM range 0x084EB880-0x084EBD8F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x510
@@ -803,9 +791,7 @@ gUnknown_84EB880: @ 0x084EB880
 	.byte 0x40, 0x44, 0xD4, 0xDD, 0x40, 0x44, 0x44, 0x44, 0x00, 0x44, 0x44, 0x44, 0x00, 0x00, 0x44, 0x04
 	@ pret/pokeemerald-jp direct xref for 0x084EBD90: tileset_anims.s: QueueAnimTiles_General_LandWaterEdge
 	.globl gTilesetAnimsData_084EBD90
-gTilesetAnimsData_084EBD90:
-	.globl gUnknown_84EBD90
-gUnknown_84EBD90: @ 0x084EBD90
+gTilesetAnimsData_084EBD90: @ 0x084EBD90
 	@ analyzed canonical ROM range 0x084EBD90-0x084EBF9F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x210
@@ -844,9 +830,7 @@ gUnknown_84EBD90: @ 0x084EBD90
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x084EBFA0: tileset_anims.s: QueueAnimTiles_Lavaridge_Steam
 	.globl gTilesetAnimsData_084EBFA0
-gTilesetAnimsData_084EBFA0:
-	.globl gUnknown_84EBFA0
-gUnknown_84EBFA0: @ 0x084EBFA0
+gTilesetAnimsData_084EBFA0: @ 0x084EBFA0
 	@ analyzed canonical ROM range 0x084EBFA0-0x084ECAEF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xB50
@@ -1033,9 +1017,7 @@ gUnknown_84EBFA0: @ 0x084EBFA0
 	.byte 0x27, 0xBD, 0xDC, 0x42, 0x23, 0xCD, 0xDC, 0x42, 0x50, 0x24, 0x22, 0x05, 0x00, 0x47, 0x74, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084ECAF0: tileset_anims.s: QueueAnimTiles_Pacifidlog_LogBridges
 	.globl gTilesetAnimsData_084ECAF0
-gTilesetAnimsData_084ECAF0:
-	.globl gUnknown_84ECAF0
-gUnknown_84ECAF0: @ 0x084ECAF0
+gTilesetAnimsData_084ECAF0: @ 0x084ECAF0
 	@ analyzed canonical ROM range 0x084ECAF0-0x084ECCFF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x210
@@ -1074,9 +1056,7 @@ gUnknown_84ECAF0: @ 0x084ECAF0
 	.byte 0x88, 0x88, 0x82, 0xC1, 0x81, 0x28, 0xC8, 0xC8, 0x88, 0xCC, 0xCC, 0xBC, 0xCC, 0xCC, 0xBB, 0xBB
 	@ pret/pokeemerald-jp direct xref for 0x084ECD00: tileset_anims.s: QueueAnimTiles_Underwater_Seaweed
 	.globl gTilesetAnimsData_084ECD00
-gTilesetAnimsData_084ECD00:
-	.globl gUnknown_84ECD00
-gUnknown_84ECD00: @ 0x084ECD00
+gTilesetAnimsData_084ECD00: @ 0x084ECD00
 	@ analyzed canonical ROM range 0x084ECD00-0x084ED50F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x810
@@ -1211,9 +1191,7 @@ gUnknown_84ECD00: @ 0x084ECD00
 	.byte 0xDE, 0xCD, 0x99, 0xE8, 0xEE, 0xDD, 0xCC, 0x88, 0xEE, 0xDD, 0x99, 0xCC, 0xDE, 0x9D, 0x99, 0xE8
 	@ pret/pokeemerald-jp direct xref for 0x084ED510: tileset_anims.s: QueueAnimTiles_Pacifidlog_WaterCurrents
 	.globl gTilesetAnimsData_084ED510
-gTilesetAnimsData_084ED510:
-	.globl gUnknown_84ED510
-gUnknown_84ED510: @ 0x084ED510
+gTilesetAnimsData_084ED510: @ 0x084ED510
 	@ analyzed canonical ROM range 0x084ED510-0x084EDA4F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x540
@@ -1303,9 +1281,7 @@ gUnknown_84ED510: @ 0x084ED510
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084EDA50: tileset_anims.s: QueueAnimTiles_Mauville_Flowers
 	.globl gTilesetAnimsData_084EDA50
-gTilesetAnimsData_084EDA50:
-	.globl gUnknown_84EDA50
-gUnknown_84EDA50: @ 0x084EDA50
+gTilesetAnimsData_084EDA50: @ 0x084EDA50
 	@ analyzed canonical ROM range 0x084EDA50-0x084EDA6F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -1313,9 +1289,7 @@ gUnknown_84EDA50: @ 0x084EDA50
 	.byte 0x00, 0x4E, 0x00, 0x06, 0x80, 0x4E, 0x00, 0x06, 0x00, 0x4F, 0x00, 0x06, 0x80, 0x4F, 0x00, 0x06
 	@ pret/pokeemerald-jp direct xref for 0x084EDA70: tileset_anims.s: QueueAnimTiles_Mauville_Flowers
 	.globl gTilesetAnimsData_084EDA70
-gTilesetAnimsData_084EDA70:
-	.globl gUnknown_84EDA70
-gUnknown_84EDA70: @ 0x084EDA70
+gTilesetAnimsData_084EDA70: @ 0x084EDA70
 	@ analyzed canonical ROM range 0x084EDA70-0x084EDA8F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -1323,9 +1297,7 @@ gUnknown_84EDA70: @ 0x084EDA70
 	.byte 0x00, 0x52, 0x00, 0x06, 0x80, 0x52, 0x00, 0x06, 0x00, 0x53, 0x00, 0x06, 0x80, 0x53, 0x00, 0x06
 	@ pret/pokeemerald-jp direct xref for 0x084EDA90: tileset_anims.s: QueueAnimTiles_Mauville_Flowers
 	.globl gTilesetAnimsData_084EDA90
-gTilesetAnimsData_084EDA90:
-	.globl gUnknown_84EDA90
-gUnknown_84EDA90: @ 0x084EDA90
+gTilesetAnimsData_084EDA90: @ 0x084EDA90
 	@ analyzed canonical ROM range 0x084EDA90-0x084EDABF
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x30
@@ -1343,9 +1315,7 @@ gUnknown_84EDA90: @ 0x084EDA90
 	.4byte 0x084ED5B0 @ +0x2C
 	@ pret/pokeemerald-jp direct xref for 0x084EDAC0: tileset_anims.s: QueueAnimTiles_Mauville_Flowers
 	.globl gTilesetAnimsData_084EDAC0
-gTilesetAnimsData_084EDAC0:
-	.globl gUnknown_84EDAC0
-gUnknown_84EDAC0: @ 0x084EDAC0
+gTilesetAnimsData_084EDAC0: @ 0x084EDAC0
 	@ analyzed canonical ROM range 0x084EDAC0-0x084EDAEF
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x30
@@ -1363,9 +1333,7 @@ gUnknown_84EDAC0: @ 0x084EDAC0
 	.4byte 0x084ED830 @ +0x2C
 	@ pret/pokeemerald-jp direct xref for 0x084EDAF0: tileset_anims.s: QueueAnimTiles_Mauville_Flowers
 	.globl gTilesetAnimsData_084EDAF0
-gTilesetAnimsData_084EDAF0:
-	.globl gUnknown_84EDAF0
-gUnknown_84EDAF0: @ 0x084EDAF0
+gTilesetAnimsData_084EDAF0: @ 0x084EDAF0
 	@ analyzed canonical ROM range 0x084EDAF0-0x084EDAFF
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x10
@@ -1375,9 +1343,7 @@ gUnknown_84EDAF0: @ 0x084EDAF0
 	.4byte 0x084ED730 @ +0xC
 	@ pret/pokeemerald-jp direct xref for 0x084EDB00: tileset_anims.s: QueueAnimTiles_Mauville_Flowers
 	.globl gTilesetAnimsData_084EDB00
-gTilesetAnimsData_084EDB00:
-	.globl gUnknown_84EDB00
-gUnknown_84EDB00: @ 0x084EDB00
+gTilesetAnimsData_084EDB00: @ 0x084EDB00
 	@ analyzed canonical ROM range 0x084EDB00-0x084EDF0F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x410
@@ -1448,9 +1414,7 @@ gUnknown_84EDB00: @ 0x084EDB00
 	.byte 0x99, 0x99, 0x99, 0x99, 0x99, 0x99, 0x99, 0x99, 0x99, 0x99, 0x99, 0x99, 0x99, 0x99, 0x99, 0x99
 	@ pret/pokeemerald-jp direct xref for 0x084EDF10: tileset_anims.s: QueueAnimTiles_Rustboro_WindyWater
 	.globl gTilesetAnimsData_084EDF10
-gTilesetAnimsData_084EDF10:
-	.globl gUnknown_84EDF10
-gUnknown_84EDF10: @ 0x084EDF10
+gTilesetAnimsData_084EDF10: @ 0x084EDF10
 	@ analyzed canonical ROM range 0x084EDF10-0x084EDF2F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -1458,9 +1422,7 @@ gUnknown_84EDF10: @ 0x084EDF10
 	.byte 0x00, 0x52, 0x00, 0x06, 0x80, 0x52, 0x00, 0x06, 0x00, 0x53, 0x00, 0x06, 0x80, 0x53, 0x00, 0x06
 	@ pret/pokeemerald-jp direct xref for 0x084EDF30: tileset_anims.s: QueueAnimTiles_Rustboro_WindyWater
 	.globl gTilesetAnimsData_084EDF30
-gTilesetAnimsData_084EDF30:
-	.globl gUnknown_84EDF30
-gUnknown_84EDF30: @ 0x084EDF30
+gTilesetAnimsData_084EDF30: @ 0x084EDF30
 	@ analyzed canonical ROM range 0x084EDF30-0x084EE06F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x140
@@ -1486,9 +1448,7 @@ gUnknown_84EDF30: @ 0x084EDF30
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084EE070: tileset_anims.s: QueueAnimTiles_Rustboro_Fountain
 	.globl gTilesetAnimsData_084EE070
-gTilesetAnimsData_084EE070:
-	.globl gUnknown_84EE070
-gUnknown_84EE070: @ 0x084EE070
+gTilesetAnimsData_084EE070: @ 0x084EE070
 	@ analyzed canonical ROM range 0x084EE070-0x084EE497
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x428
@@ -1561,9 +1521,7 @@ gUnknown_84EE070: @ 0x084EE070
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084EE498: tileset_anims.s: QueueAnimTiles_Cave_Lava, QueueAnimTiles_Lavaridge_Lava
 	.globl gTilesetAnimsData_084EE498
-gTilesetAnimsData_084EE498:
-	.globl gUnknown_84EE498
-gUnknown_84EE498: @ 0x084EE498
+gTilesetAnimsData_084EE498: @ 0x084EE498
 	@ analyzed canonical ROM range 0x084EE498-0x084EE8C7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x430
@@ -1636,9 +1594,7 @@ gUnknown_84EE498: @ 0x084EE498
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084EE8C8: tileset_anims.s: QueueAnimTiles_EverGrande_Flowers
 	.globl gTilesetAnimsData_084EE8C8
-gTilesetAnimsData_084EE8C8:
-	.globl gUnknown_84EE8C8
-gUnknown_84EE8C8: @ 0x084EE8C8
+gTilesetAnimsData_084EE8C8: @ 0x084EE8C8
 	@ analyzed canonical ROM range 0x084EE8C8-0x084EE8E7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -1646,9 +1602,7 @@ gUnknown_84EE8C8: @ 0x084EE8C8
 	.byte 0x00, 0x5E, 0x00, 0x06, 0x80, 0x5E, 0x00, 0x06, 0x00, 0x5F, 0x00, 0x06, 0x80, 0x5F, 0x00, 0x06
 	@ pret/pokeemerald-jp direct xref for 0x084EE8E8: tileset_anims.s: QueueAnimTiles_EverGrande_Flowers
 	.globl gTilesetAnimsData_084EE8E8
-gTilesetAnimsData_084EE8E8:
-	.globl gUnknown_84EE8E8
-gUnknown_84EE8E8: @ 0x084EE8E8
+gTilesetAnimsData_084EE8E8: @ 0x084EE8E8
 	@ analyzed canonical ROM range 0x084EE8E8-0x084EEC07
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x320
@@ -1704,9 +1658,7 @@ gUnknown_84EE8E8: @ 0x084EE8E8
 	.byte 0x99, 0xA9, 0x0A, 0x00, 0xA9, 0x0A, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084EEC08: tileset_anims.s: QueueAnimTiles_Dewford_Flag
 	.globl gTilesetAnimsData_084EEC08
-gTilesetAnimsData_084EEC08:
-	.globl gUnknown_84EEC08
-gUnknown_84EEC08: @ 0x084EEC08
+gTilesetAnimsData_084EEC08: @ 0x084EEC08
 	@ analyzed canonical ROM range 0x084EEC08-0x084EEF17
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x310
@@ -1761,9 +1713,7 @@ gUnknown_84EEC08: @ 0x084EEC08
 	.byte 0x92, 0xA9, 0x09, 0x00, 0xAA, 0x0A, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084EEF18: tileset_anims.s: QueueAnimTiles_BattleFrontierOutsideWest_Flag
 	.globl gTilesetAnimsData_084EEF18
-gTilesetAnimsData_084EEF18:
-	.globl gUnknown_84EEF18
-gUnknown_84EEF18: @ 0x084EEF18
+gTilesetAnimsData_084EEF18: @ 0x084EEF18
 	@ analyzed canonical ROM range 0x084EEF18-0x084EF227
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x310
@@ -1818,9 +1768,7 @@ gUnknown_84EEF18: @ 0x084EEF18
 	.byte 0x92, 0xA9, 0x09, 0x00, 0xAA, 0x0A, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084EF228: tileset_anims.s: QueueAnimTiles_BattleFrontierOutsideEast_Flag
 	.globl gTilesetAnimsData_084EF228
-gTilesetAnimsData_084EF228:
-	.globl gUnknown_84EF228
-gUnknown_84EF228: @ 0x084EF228
+gTilesetAnimsData_084EF228: @ 0x084EF228
 	@ analyzed canonical ROM range 0x084EF228-0x084EF437
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x210
@@ -1859,9 +1807,7 @@ gUnknown_84EF228: @ 0x084EF228
 	.byte 0x55, 0x22, 0x05, 0x00, 0x77, 0x55, 0x00, 0x00, 0x77, 0x45, 0x00, 0x00, 0x55, 0x45, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084EF438: tileset_anims.s: QueueAnimTiles_Slateport_Balloons
 	.globl gTilesetAnimsData_084EF438
-gTilesetAnimsData_084EF438:
-	.globl gUnknown_84EF438
-gUnknown_84EF438: @ 0x084EF438
+gTilesetAnimsData_084EF438: @ 0x084EF438
 	@ analyzed canonical ROM range 0x084EF438-0x084EF547
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x110
@@ -1884,9 +1830,7 @@ gUnknown_84EF438: @ 0x084EF438
 	.byte 0x77, 0x77, 0x17, 0x11, 0x11, 0x11, 0x11, 0x11, 0x99, 0x11, 0x11, 0x11, 0x22, 0x22, 0x12, 0x11
 	@ pret/pokeemerald-jp direct xref for 0x084EF548: tileset_anims.s: QueueAnimTiles_Building_TVTurnedOn
 	.globl gTilesetAnimsData_084EF548
-gTilesetAnimsData_084EF548:
-	.globl gUnknown_84EF548
-gUnknown_84EF548: @ 0x084EF548
+gTilesetAnimsData_084EF548: @ 0x084EF548
 	@ analyzed canonical ROM range 0x084EF548-0x084F014F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xC08
@@ -2085,9 +2029,7 @@ gUnknown_84EF548: @ 0x084EF548
 	.byte 0x11, 0x11, 0x11, 0x91, 0x99, 0x99, 0x99, 0x99
 	@ pret/pokeemerald-jp direct xref for 0x084F0150: tileset_anims.s: QueueAnimTiles_SootopolisGym_Waterfalls
 	.globl gTilesetAnimsData_084F0150
-gTilesetAnimsData_084F0150:
-	.globl gUnknown_84F0150
-gUnknown_84F0150: @ 0x084F0150
+gTilesetAnimsData_084F0150: @ 0x084F0150
 	@ analyzed canonical ROM range 0x084F0150-0x084F015B
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0xC
@@ -2096,9 +2038,7 @@ gUnknown_84F0150: @ 0x084F0150
 	.4byte 0x084EF850 @ +0x8
 	@ pret/pokeemerald-jp direct xref for 0x084F015C: tileset_anims.s: QueueAnimTiles_SootopolisGym_Waterfalls
 	.globl gTilesetAnimsData_084F015C
-gTilesetAnimsData_084F015C:
-	.globl gUnknown_84F015C
-gUnknown_84F015C: @ 0x084F015C
+gTilesetAnimsData_084F015C: @ 0x084F015C
 	@ analyzed canonical ROM range 0x084F015C-0x084F0307
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x1AC
@@ -2131,9 +2071,7 @@ gUnknown_84F015C: @ 0x084F015C
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084F0308: tileset_anims.s: QueueAnimTiles_EliteFour_WallLights
 	.globl gTilesetAnimsData_084F0308
-gTilesetAnimsData_084F0308:
-	.globl gUnknown_84F0308
-gUnknown_84F0308: @ 0x084F0308
+gTilesetAnimsData_084F0308: @ 0x084F0308
 	@ analyzed canonical ROM range 0x084F0308-0x084F0317
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x10
@@ -2143,9 +2081,7 @@ gUnknown_84F0308: @ 0x084F0308
 	.4byte 0x084F02C8 @ +0xC
 	@ pret/pokeemerald-jp direct xref for 0x084F0318: tileset_anims.s: QueueAnimTiles_EliteFour_GroundLights
 	.globl gTilesetAnimsData_084F0318
-gTilesetAnimsData_084F0318:
-	.globl gUnknown_84F0318
-gUnknown_84F0318: @ 0x084F0318
+gTilesetAnimsData_084F0318: @ 0x084F0318
 	@ analyzed canonical ROM range 0x084F0318-0x084F073F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x428
@@ -2218,9 +2154,7 @@ gUnknown_84F0318: @ 0x084F0318
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084F0740: tileset_anims.s: QueueAnimTiles_MauvilleGym_ElectricGates
 	.globl gTilesetAnimsData_084F0740
-gTilesetAnimsData_084F0740:
-	.globl gUnknown_84F0740
-gUnknown_84F0740: @ 0x084F0740
+gTilesetAnimsData_084F0740: @ 0x084F0740
 	@ analyzed canonical ROM range 0x084F0740-0x084F09A7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x268

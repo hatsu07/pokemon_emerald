@@ -10,9 +10,7 @@ gText_Rom_5CBEC7: @ 0x085CBEC7
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085CBECB: reset_rtc_screen.s: Task_ShowResetRtcPrompt
 	.globl gResetRtcScreenData_085CBECB
-gResetRtcScreenData_085CBECB:
-	.globl gUnknown_85CBECB
-gUnknown_85CBECB: @ 0x085CBECB
+gResetRtcScreenData_085CBECB: @ 0x085CBECB
 	@ analyzed canonical ROM range 0x085CBECB-0x085CBEE8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x1E

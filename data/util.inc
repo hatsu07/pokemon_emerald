@@ -1,7 +1,5 @@
 	.globl gBitTable
-	.globl gUnknown_82FACB4
 gBitTable: @ 0x082FACB4
-gUnknown_82FACB4:
 	.4byte 1 << 0,  1 << 1,  1 << 2,  1 << 3
 	.4byte 1 << 4,  1 << 5,  1 << 6,  1 << 7
 	.4byte 1 << 8,  1 << 9,  1 << 10, 1 << 11
@@ -11,14 +9,10 @@ gUnknown_82FACB4:
 	.4byte 1 << 24, 1 << 25, 1 << 26, 1 << 27
 	.4byte 1 << 28, 1 << 29, 1 << 30, 1 << 31
 
-	.globl gUnknown_82FAD34
 sInvisibleSpriteTemplate: @ 0x082FAD34
-gUnknown_82FAD34:
 	rodata_sprite_template 0, 0, gDummyOamData, gDummySpriteAnimTable, NULL, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 
-	.globl gUnknown_82FAD4C
 sSpriteDimensions: @ 0x082FAD4C
-gUnknown_82FAD4C:
 	@ square: 8x8, 16x16, 32x32, 64x64 (in tiles)
 	@ ANALYSIS: RAW_BLOCK size=0x18
 	.byte 1, 1, 2, 2, 4, 4, 8, 8
@@ -27,9 +21,7 @@ gUnknown_82FAD4C:
 	@ vertical: 8x16, 8x32, 16x32, 32x64
 	.byte 1, 2, 1, 4, 2, 4, 4, 8
 
-	.globl gUnknown_82FAD64
 sCrc16Table: @ 0x082FAD64
-gUnknown_82FAD64:
 	@ ANALYSIS: RAW_BLOCK size=0x200
 	.2byte 0x0000, 0x1189, 0x2312, 0x329B, 0x4624, 0x57AD, 0x6536, 0x74BF
 	.2byte 0x8C48, 0x9DC1, 0xAF5A, 0xBED3, 0xCA6C, 0xDBE5, 0xE97E, 0xF8F7

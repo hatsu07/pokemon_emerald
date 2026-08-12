@@ -3,9 +3,7 @@
 
 	@ pret/pokeemerald-jp direct xref for 0x082ED050: battle_controller_opponent.s: OpponentBufferRunCommand
 	.globl gBattleControllerOpponentData_082ED050
-gBattleControllerOpponentData_082ED050:
-	.globl gUnknown_82ED050
-gUnknown_82ED050: @ 0x082ED050
+gBattleControllerOpponentData_082ED050: @ 0x082ED050
 sOpponentBufferCommands:
 	.4byte OpponentHandleGetMonData @ OpponentHandleGetMonData (Thumb)
 	.4byte OpponentHandleGetRawMonData @ OpponentHandleGetRawMonData (Thumb)

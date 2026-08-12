@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x08569552: field_poison.s: sub_080FA3A0
 	.globl gFieldPoisonData_08569552
-gFieldPoisonData_08569552:
-	.globl gUnknown_8569552
-gUnknown_8569552: @ 0x08569552
+gFieldPoisonData_08569552: @ 0x08569552
 	@ analyzed canonical ROM range 0x08569552-0x0856A1E3
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xC92
@@ -210,25 +208,19 @@ gUnknown_8569552: @ 0x08569552
 	.2byte 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0856A1E4: fldeff_misc.s: FldEff_SecretPowerCave
 	.globl gFldeffMiscData_0856A1E4
-gFldeffMiscData_0856A1E4:
-	.globl gUnknown_856A1E4
-gUnknown_856A1E4: @ 0x0856A1E4
+gFldeffMiscData_0856A1E4: @ 0x0856A1E4
 	@ analyzed canonical ROM range 0x0856A1E4-0x0856A1FB
 sSpriteTemplate_0856A1E4: @ 0x0856A1E4
 	rodata_sprite_template 0xFFFF, 0x1003, 0x0856A0BC, 0x0856A154, 0x0856A16C, gDummySpriteAffineAnimTable, CaveEntranceSpriteCallback1
 	@ pret/pokeemerald-jp direct xref for 0x0856A1FC: fldeff_misc.s: FldEff_SecretPowerTree
 	.globl gFldeffMiscData_0856A1FC
-gFldeffMiscData_0856A1FC:
-	.globl gUnknown_856A1FC
-gUnknown_856A1FC: @ 0x0856A1FC
+gFldeffMiscData_0856A1FC: @ 0x0856A1FC
 	@ analyzed canonical ROM range 0x0856A1FC-0x0856A213
 sSpriteTemplate_0856A1FC: @ 0x0856A1FC
 	rodata_sprite_template 0xFFFF, 0x1008, 0x0856A0BC, 0x0856A158, 0x0856A194, gDummySpriteAffineAnimTable, TreeEntranceSpriteCallback1
 	@ pret/pokeemerald-jp direct xref for 0x0856A214: fldeff_misc.s: FldEff_SecretPowerShrub
 	.globl gFldeffMiscData_0856A214
-gFldeffMiscData_0856A214:
-	.globl gUnknown_856A214
-gUnknown_856A214: @ 0x0856A214
+gFldeffMiscData_0856A214: @ 0x0856A214
 	@ analyzed canonical ROM range 0x0856A214-0x0856A26F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x5C
@@ -240,9 +232,7 @@ gUnknown_856A214: @ 0x0856A214
 	.byte 0x00, 0x01, 0x00, 0x00, 0xBC, 0x9F, 0x56, 0x08, 0x00, 0x01, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0856A270: fldeff_misc.s: FldEff_SandPillar
 	.globl gFldeffMiscData_0856A270
-gFldeffMiscData_0856A270:
-	.globl gUnknown_856A270
-gUnknown_856A270: @ 0x0856A270
+gFldeffMiscData_0856A270: @ 0x0856A270
 	@ analyzed canonical ROM range 0x0856A270-0x0856A447
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x1D8
@@ -278,9 +268,7 @@ gUnknown_856A270: @ 0x0856A270
 	.2byte 0xA390, 0x0856, 0x0080, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0856A448: fldeff_misc.s: CreateRecordMixingSprite
 	.globl gFldeffMiscData_0856A448
-gFldeffMiscData_0856A448:
-	.globl gUnknown_856A448
-gUnknown_856A448: @ 0x0856A448
+gFldeffMiscData_0856A448: @ 0x0856A448
 	@ analyzed canonical ROM range 0x0856A448-0x0856A463
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x1C
@@ -288,17 +276,13 @@ gUnknown_856A448: @ 0x0856A448
 	.2byte 0x0002, 0x001E, 0xFFFE, 0x0000, 0xA450, 0x0856
 	@ pret/pokeemerald-jp direct xref for 0x0856A464: fldeff_misc.s: CreateRecordMixingSprite, DestroyRecordMixingSprite
 	.globl gFldeffMiscData_0856A464
-gFldeffMiscData_0856A464:
-	.globl gUnknown_856A464
-gUnknown_856A464: @ 0x0856A464
+gFldeffMiscData_0856A464: @ 0x0856A464
 	@ analyzed canonical ROM range 0x0856A464-0x0856A47B
 sSpriteTemplate_0856A464: @ 0x0856A464
 	rodata_sprite_template 0xFFFF, 0x1000, 0x084E1958, 0x0856A460, 0x0856A430, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x0856A47C: field_special_scene.s: Task_Truck2, Task_Truck3
 	.globl gFieldSpecialSceneData_0856A47C
-gFieldSpecialSceneData_0856A47C:
-	.globl gUnknown_856A47C
-gUnknown_856A47C: @ 0x0856A47C
+gFieldSpecialSceneData_0856A47C: @ 0x0856A47C
 	@ analyzed canonical ROM range 0x0856A47C-0x0856A48E
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x13
@@ -306,27 +290,21 @@ gUnknown_856A47C: @ 0x0856A47C
 	.byte 0xFF, 0xFF, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0856A48F: field_special_scene.s: Task_HandlePorthole
 	.globl gFieldSpecialSceneData_0856A48F
-gFieldSpecialSceneData_0856A48F:
-	.globl gUnknown_856A48F
-gUnknown_856A48F: @ 0x0856A48F
+gFieldSpecialSceneData_0856A48F: @ 0x0856A48F
 	@ analyzed canonical ROM range 0x0856A48F-0x0856A490
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0x18, 0xFE
 	@ pret/pokeemerald-jp direct xref for 0x0856A491: field_special_scene.s: Task_HandlePorthole
 	.globl gFieldSpecialSceneData_0856A491
-gFieldSpecialSceneData_0856A491:
-	.globl gUnknown_856A491
-gUnknown_856A491: @ 0x0856A491
+gFieldSpecialSceneData_0856A491: @ 0x0856A491
 	@ analyzed canonical ROM range 0x0856A491-0x0856A493
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x17, 0xFE, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0856A494: rotating_gate.s: RotatingGate_LoadPuzzleConfig
 	.globl gRotatingGateData_0856A494
-gRotatingGateData_0856A494:
-	.globl gUnknown_856A494
-gUnknown_856A494: @ 0x0856A494
+gRotatingGateData_0856A494: @ 0x0856A494
 	@ analyzed canonical ROM range 0x0856A494-0x0856A4D3
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x40
@@ -336,9 +314,7 @@ gUnknown_856A494: @ 0x0856A494
 	.2byte 0x000C, 0x0016, 0x0004, 0x0000, 0x0006, 0x0003, 0x0203, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0856A4D4: rotating_gate.s: RotatingGate_LoadPuzzleConfig
 	.globl gRotatingGateData_0856A4D4
-gRotatingGateData_0856A4D4:
-	.globl gUnknown_856A4D4
-gUnknown_856A4D4: @ 0x0856A4D4
+gRotatingGateData_0856A4D4: @ 0x0856A4D4
 	@ analyzed canonical ROM range 0x0856A4D4-0x0856D93B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x3468
@@ -1183,9 +1159,7 @@ gUnknown_856A4D4: @ 0x0856A4D4
 	.2byte 0x0100, 0x8000, 0x2800, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0856D93C: rotating_gate.s: LoadRotatingGatePics
 	.globl gRotatingGateData_0856D93C
-gRotatingGateData_0856D93C:
-	.globl gUnknown_856D93C
-gUnknown_856D93C: @ 0x0856D93C
+gRotatingGateData_0856D93C: @ 0x0856D93C
 	@ analyzed canonical ROM range 0x0856D93C-0x0856DBAB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x270
@@ -1230,61 +1204,47 @@ gUnknown_856D93C: @ 0x0856D93C
 	.2byte 0xDA9C, 0x0856, 0xDAB4, 0x0856, 0xDACC, 0x0856, 0xDAE4, 0x0856
 	@ pret/pokeemerald-jp direct xref for 0x0856DBAC: rotating_gate.s: RotatingGate_CreateGate
 	.globl gRotatingGateData_0856DBAC
-gRotatingGateData_0856DBAC:
-	.globl gUnknown_856DBAC
-gUnknown_856DBAC: @ 0x0856DBAC
+gRotatingGateData_0856DBAC: @ 0x0856DBAC
 	@ analyzed canonical ROM range 0x0856DBAC-0x0856DBC3
 sSpriteTemplate_0856DBAC: @ 0x0856DBAC
 	rodata_sprite_template 0x1300, 0xFFFF, 0x0856D92C, 0x0856D994, 0, 0x0856DB5C, SpriteCallback_RotatingGate
 	@ pret/pokeemerald-jp direct xref for 0x0856DBC4: rotating_gate.s: RotatingGate_CreateGate
 	.globl gRotatingGateData_0856DBC4
-gRotatingGateData_0856DBC4:
-	.globl gUnknown_856DBC4
-gUnknown_856DBC4: @ 0x0856DBC4
+gRotatingGateData_0856DBC4: @ 0x0856DBC4
 	@ analyzed canonical ROM range 0x0856DBC4-0x0856DBDB
 sSpriteTemplate_0856DBC4: @ 0x0856DBC4
 	rodata_sprite_template 0x1300, 0xFFFF, 0x0856D934, 0x0856D998, 0, 0x0856DB5C, SpriteCallback_RotatingGate
 	@ pret/pokeemerald-jp direct xref for 0x0856DBDC: rotating_gate.s: RotatingGate_GetRotationInfo
 	.globl gRotatingGateData_0856DBDC
-gRotatingGateData_0856DBDC:
-	.globl gUnknown_856DBDC
-gUnknown_856DBDC: @ 0x0856DBDC
+gRotatingGateData_0856DBDC: @ 0x0856DBDC
 	@ analyzed canonical ROM range 0x0856DBDC-0x0856DBEB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0xFFFF, 0xFFFF, 0x2627, 0x1312, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF
 	@ pret/pokeemerald-jp direct xref for 0x0856DBEC: rotating_gate.s: RotatingGate_GetRotationInfo
 	.globl gRotatingGateData_0856DBEC
-gRotatingGateData_0856DBEC:
-	.globl gUnknown_856DBEC
-gUnknown_856DBEC: @ 0x0856DBEC
+gRotatingGateData_0856DBEC: @ 0x0856DBEC
 	@ analyzed canonical ROM range 0x0856DBEC-0x0856DBFB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0x1617, 0x2322, 0xFFFF, 0xFFFF
 	@ pret/pokeemerald-jp direct xref for 0x0856DBFC: rotating_gate.s: RotatingGate_GetRotationInfo
 	.globl gRotatingGateData_0856DBFC
-gRotatingGateData_0856DBFC:
-	.globl gUnknown_856DBFC
-gUnknown_856DBFC: @ 0x0856DBFC
+gRotatingGateData_0856DBFC: @ 0x0856DBFC
 	@ analyzed canonical ROM range 0x0856DBFC-0x0856DC0B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0x11FF, 0xFFFF, 0x10FF, 0xFFFF, 0x24FF, 0xFFFF, 0x25FF, 0xFFFF
 	@ pret/pokeemerald-jp direct xref for 0x0856DC0C: rotating_gate.s: RotatingGate_GetRotationInfo
 	.globl gRotatingGateData_0856DC0C
-gRotatingGateData_0856DC0C:
-	.globl gUnknown_856DC0C
-gUnknown_856DC0C: @ 0x0856DC0C
+gRotatingGateData_0856DC0C: @ 0x0856DC0C
 	@ analyzed canonical ROM range 0x0856DC0C-0x0856DC1B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.byte 0xFF, 0xFF, 0x21, 0xFF, 0xFF, 0xFF, 0x20, 0xFF, 0xFF, 0xFF, 0x14, 0xFF, 0xFF, 0xFF, 0x15, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x0856DC1C: rotating_gate.s: RotatingGate_CanRotate
 	.globl gRotatingGateData_0856DC1C
-gRotatingGateData_0856DC1C:
-	.globl gUnknown_856DC1C
-gUnknown_856DC1C: @ 0x0856DC1C
+gRotatingGateData_0856DC1C: @ 0x0856DC1C
 	@ analyzed canonical ROM range 0x0856DC1C-0x0856DC3B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -1292,9 +1252,7 @@ gUnknown_856DC1C: @ 0x0856DC1C
 	.2byte 0x00FF, 0x0000, 0x01FF, 0x0000, 0xFFFF, 0x0000, 0xFFFE, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0856DC3C: rotating_gate.s: RotatingGate_CanRotate
 	.globl gRotatingGateData_0856DC3C
-gRotatingGateData_0856DC3C:
-	.globl gUnknown_856DC3C
-gUnknown_856DC3C: @ 0x0856DC3C
+gRotatingGateData_0856DC3C: @ 0x0856DC3C
 	@ analyzed canonical ROM range 0x0856DC3C-0x0856DC5B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -1302,9 +1260,7 @@ gUnknown_856DC3C: @ 0x0856DC3C
 	.2byte 0x0000, 0x0000, 0x0100, 0x0000, 0x00FF, 0x0000, 0x00FE, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0856DC5C: rotating_gate.s: RotatingGate_CanRotate, RotatingGate_HasArm
 	.globl gRotatingGateData_0856DC5C
-gRotatingGateData_0856DC5C:
-	.globl gUnknown_856DC5C
-gUnknown_856DC5C: @ 0x0856DC5C
+gRotatingGateData_0856DC5C: @ 0x0856DC5C
 	@ analyzed canonical ROM range 0x0856DC5C-0x0856DCBB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x60
@@ -1321,18 +1277,14 @@ gUnknown_856DCBC: @ 0x0856DCBC
 	.4byte NULL
 	@ pret/pokeemerald-jp direct xref for 0x0856DCC8: item_use.s: sub_080FDD58, sub_080FE330
 	.globl gItemUseData_0856DCC8
-gItemUseData_0856DCC8:
-	.globl gUnknown_856DCC8
-gUnknown_856DCC8: @ 0x0856DCC8
+gItemUseData_0856DCC8: @ 0x0856DCC8
 	@ analyzed canonical ROM range 0x0856DCC8-0x0856DCCB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x02, 0x04, 0x01, 0x03
 	@ pret/pokeemerald-jp direct xref for 0x0856DCCC: item_use.s: sub_080FE874
 	.globl gItemUseData_0856DCCC
-gItemUseData_0856DCCC:
-	.globl gUnknown_856DCCC
-gUnknown_856DCCC: @ 0x0856DCCC
+gItemUseData_0856DCCC: @ 0x0856DCCC
 	@ analyzed canonical ROM range 0x0856DCCC-0x0856DDF3
 	@ semantic recovery: rodata; byte-verified against linked ROM
 FunctionPointerTable_JP_0856DCCC: @ 0x0856DCCC
@@ -1359,9 +1311,7 @@ FunctionPointerTable_JP_0856DCCC: @ 0x0856DCCC
 	.byte 0x8C, 0xDD, 0x56, 0x08, 0x00, 0x00, 0x00, 0x00, 0x10, 0xF3, 0x2B, 0x08, 0x81, 0xF1, 0x0F, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0856DDF4: battle_anim_effects_1.s: AnimTask_CreateSmallSolarbeamOrbs
 	.globl gBattleAnimEffects1Data_0856DDF4
-gBattleAnimEffects1Data_0856DDF4:
-	.globl gUnknown_856DDF4
-gUnknown_856DDF4: @ 0x0856DDF4
+gBattleAnimEffects1Data_0856DDF4: @ 0x0856DDF4
 	@ analyzed canonical ROM range 0x0856DDF4-0x0856E2E3
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x4F0
@@ -1446,9 +1396,7 @@ gUnknown_856DDF4: @ 0x0856DDF4
 	.2byte 0xE190, 0x0856, 0x0000, 0x0000, 0xE2BC, 0x0856, 0x060D, 0x0810
 	@ pret/pokeemerald-jp direct xref for 0x0856E2E4: battle_anim_effects_1.s: AnimTrickBagStep2
 	.globl gBattleAnimEffects1Data_0856E2E4
-gBattleAnimEffects1Data_0856E2E4:
-	.globl gUnknown_856E2E4
-gUnknown_856E2E4: @ 0x0856E2E4
+gBattleAnimEffects1Data_0856E2E4: @ 0x0856E2E4
 	@ analyzed canonical ROM range 0x0856E2E4-0x0856E35B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x78
@@ -1462,9 +1410,7 @@ gUnknown_856E2E4: @ 0x0856E2E4
 	.2byte 0xE330, 0x0856, 0xE338, 0x0856
 	@ pret/pokeemerald-jp direct xref for 0x0856E35C: battle_anim_effects_1.s: sub_08100810, sub_08100D74
 	.globl gBattleAnimEffects1Data_0856E35C
-gBattleAnimEffects1Data_0856E35C:
-	.globl gUnknown_856E35C
-gUnknown_856E35C: @ 0x0856E35C
+gBattleAnimEffects1Data_0856E35C: @ 0x0856E35C
 	@ analyzed canonical ROM range 0x0856E35C-0x0856E45B
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x10
@@ -1542,9 +1488,7 @@ gUnknown_856E35C: @ 0x0856E35C
 	.4byte sub_08100E90 @ +0xFC
 	@ pret/pokeemerald-jp direct xref for 0x0856E45C: battle_anim_effects_1.s: sub_08101014
 	.globl gBattleAnimEffects1Data_0856E45C
-gBattleAnimEffects1Data_0856E45C:
-	.globl gUnknown_856E45C
-gUnknown_856E45C: @ 0x0856E45C
+gBattleAnimEffects1Data_0856E45C: @ 0x0856E45C
 	@ analyzed canonical ROM range 0x0856E45C-0x0856E8B3
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x458
@@ -1620,9 +1564,7 @@ gUnknown_856E45C: @ 0x0856E45C
 	.2byte 0xF310, 0x082B, 0x20E9, 0x0810
 	@ pret/pokeemerald-jp direct xref for 0x0856E8B4: battle_anim_effects_1.s: sub_08101E24
 	.globl gBattleAnimEffects1Data_0856E8B4
-gBattleAnimEffects1Data_0856E8B4:
-	.globl gUnknown_856E8B4
-gUnknown_856E8B4: @ 0x0856E8B4
+gBattleAnimEffects1Data_0856E8B4: @ 0x0856E8B4
 	@ analyzed canonical ROM range 0x0856E8B4-0x0856EA9F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x1EC
@@ -1696,9 +1638,7 @@ gBattleAnimSpriteTemplate_MoonlightSparkle: @ 0x0856EAD0
 	.2byte 0x3525, 0x0810
 	@ pret/pokeemerald-jp direct xref for 0x0856EC04: battle_anim_effects_1.s: sub_08103438, sub_081034F0, sub_08103524, sub_08103634, sub_08103878
 	.globl gBattleAnimEffects1Data_0856EC04
-gBattleAnimEffects1Data_0856EC04:
-	.globl gUnknown_856EC04
-gUnknown_856EC04: @ 0x0856EC04
+gBattleAnimEffects1Data_0856EC04: @ 0x0856EC04
 	@ analyzed canonical ROM range 0x0856EC04-0x0856ECF7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xF4
@@ -1769,9 +1709,7 @@ gBattleAnimSpriteTemplate_FingerWag: @ 0x0856ECF8
 	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x4119, 0x0810
 	@ pret/pokeemerald-jp direct xref for 0x0856EF94: battle_anim_effects_2.s: sub_0810445C
 	.globl gBattleAnimEffects2Data_0856EF94
-gBattleAnimEffects2Data_0856EF94:
-	.globl gUnknown_856EF94
-gUnknown_856EF94: @ 0x0856EF94
+gBattleAnimEffects2Data_0856EF94: @ 0x0856EF94
 	@ analyzed canonical ROM range 0x0856EF94-0x0856F083
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xF0
@@ -1792,9 +1730,7 @@ gUnknown_856EF94: @ 0x0856EF94
 	.byte 0x04, 0xF3, 0x2B, 0x08, 0x00, 0x00, 0x00, 0x00, 0x10, 0xF3, 0x2B, 0x08, 0x75, 0x71, 0x0A, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0856F084: battle_anim_effects_2.s: sub_08104838
 	.globl gBattleAnimEffects2Data_0856F084
-gBattleAnimEffects2Data_0856F084:
-	.globl gUnknown_856F084
-gUnknown_856F084: @ 0x0856F084
+gBattleAnimEffects2Data_0856F084: @ 0x0856F084
 	@ analyzed canonical ROM range 0x0856F084-0x0856F1CB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x148
@@ -1821,9 +1757,7 @@ gUnknown_856F084: @ 0x0856F084
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x65, 0x4C, 0x10, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0856F1CC: battle_anim_effects_2.s: AnimTask_Splash, AnimTask_SplashStep
 	.globl gBattleAnimEffects2Data_0856F1CC
-gBattleAnimEffects2Data_0856F1CC:
-	.globl gUnknown_856F1CC
-gUnknown_856F1CC: @ 0x0856F1CC
+gBattleAnimEffects2Data_0856F1CC: @ 0x0856F1CC
 	@ analyzed canonical ROM range 0x0856F1CC-0x0856F1EB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -1831,9 +1765,7 @@ gUnknown_856F1CC: @ 0x0856F1CC
 	.2byte 0xFFFC, 0x0006, 0x0800, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0856F1EC: battle_anim_effects_2.s: sub_08105304
 	.globl gBattleAnimEffects2Data_0856F1EC
-gBattleAnimEffects2Data_0856F1EC:
-	.globl gUnknown_856F1EC
-gUnknown_856F1EC: @ 0x0856F1EC
+gBattleAnimEffects2Data_0856F1EC: @ 0x0856F1EC
 	@ analyzed canonical ROM range 0x0856F1EC-0x0856F287
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x9C
@@ -1849,9 +1781,7 @@ gUnknown_856F1EC: @ 0x0856F1EC
 	.2byte 0x0000, 0x0000, 0xF26C, 0x0856, 0x53FD, 0x0810
 	@ pret/pokeemerald-jp direct xref for 0x0856F288: battle_anim_effects_2.s: sub_08105488
 	.globl gBattleAnimEffects2Data_0856F288
-gBattleAnimEffects2Data_0856F288:
-	.globl gUnknown_856F288
-gUnknown_856F288: @ 0x0856F288
+gBattleAnimEffects2Data_0856F288: @ 0x0856F288
 	@ analyzed canonical ROM range 0x0856F288-0x0856F493
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20C
@@ -1890,9 +1820,7 @@ gUnknown_856F288: @ 0x0856F288
 	.byte 0x00, 0x00, 0x00, 0x00, 0xF4, 0xF3, 0x56, 0x08, 0x39, 0x5D, 0x10, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0856F494: battle_anim_effects_2.s: sub_08105FCC
 	.globl gBattleAnimEffects2Data_0856F494
-gBattleAnimEffects2Data_0856F494:
-	.globl gUnknown_856F494
-gUnknown_856F494: @ 0x0856F494
+gBattleAnimEffects2Data_0856F494: @ 0x0856F494
 	@ analyzed canonical ROM range 0x0856F494-0x0856F4BF
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x2C
@@ -1901,17 +1829,13 @@ gUnknown_856F494: @ 0x0856F494
 	.2byte 0x0000, 0x0003, 0xFFFF, 0x0000, 0xF4A4, 0x0856
 	@ pret/pokeemerald-jp direct xref for 0x0856F4C0: battle_anim_effects_2.s: sub_08106358
 	.globl gBattleAnimEffects2Data_0856F4C0
-gBattleAnimEffects2Data_0856F4C0:
-	.globl gUnknown_856F4C0
-gUnknown_856F4C0: @ 0x0856F4C0
+gBattleAnimEffects2Data_0856F4C0: @ 0x0856F4C0
 	@ analyzed canonical ROM range 0x0856F4C0-0x0856F4D7
 sSpriteTemplate_0856F4C0: @ 0x0856F4C0
 	rodata_sprite_template 0x27DF, 0x27DF, 0x084FD018, 0x0856F4BC, 0, gDummySpriteAffineAnimTable, sub_08106498
 	@ pret/pokeemerald-jp direct xref for 0x0856F4D8: battle_anim_effects_2.s: sub_08106358
 	.globl gBattleAnimEffects2Data_0856F4D8
-gBattleAnimEffects2Data_0856F4D8:
-	.globl gUnknown_856F4D8
-gUnknown_856F4D8: @ 0x0856F4D8
+gBattleAnimEffects2Data_0856F4D8: @ 0x0856F4D8
 	@ analyzed canonical ROM range 0x0856F4D8-0x0856F533
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x5C
@@ -1923,9 +1847,7 @@ gUnknown_856F4D8: @ 0x0856F4D8
 	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x7091, 0x080A
 	@ pret/pokeemerald-jp direct xref for 0x0856F534: battle_anim_effects_2.s: sub_081065B0, sub_081065D8
 	.globl gBattleAnimEffects2Data_0856F534
-gBattleAnimEffects2Data_0856F534:
-	.globl gUnknown_856F534
-gUnknown_856F534: @ 0x0856F534
+gBattleAnimEffects2Data_0856F534: @ 0x0856F534
 	@ analyzed canonical ROM range 0x0856F534-0x0856F56B
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x10
@@ -1948,9 +1870,7 @@ gUnknown_856F534: @ 0x0856F534
 	.4byte sub_081066B0 @ +0x34
 	@ pret/pokeemerald-jp direct xref for 0x0856F56C: battle_anim_effects_2.s: sub_08106870, sub_08106900
 	.globl gBattleAnimEffects2Data_0856F56C
-gBattleAnimEffects2Data_0856F56C:
-	.globl gUnknown_856F56C
-gUnknown_856F56C: @ 0x0856F56C
+gBattleAnimEffects2Data_0856F56C: @ 0x0856F56C
 	@ analyzed canonical ROM range 0x0856F56C-0x0856F77B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x210
@@ -1989,9 +1909,7 @@ gUnknown_856F56C: @ 0x0856F56C
 	.byte 0x5C, 0xF7, 0x56, 0x08, 0x00, 0x00, 0x00, 0x00, 0x10, 0xF3, 0x2B, 0x08, 0x21, 0x75, 0x10, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0856F77C: battle_anim_effects_2.s: sub_081075E0
 	.globl gBattleAnimEffects2Data_0856F77C
-gBattleAnimEffects2Data_0856F77C:
-	.globl gUnknown_856F77C
-gUnknown_856F77C: @ 0x0856F77C
+gBattleAnimEffects2Data_0856F77C: @ 0x0856F77C
 	@ analyzed canonical ROM range 0x0856F77C-0x08570C03
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x1488

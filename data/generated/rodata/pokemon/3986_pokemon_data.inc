@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085C8BBB: option_menu.s: DisplayDiplomaText
 	.globl gOptionMenuData_085C8BBB
-gOptionMenuData_085C8BBB:
-	.globl gUnknown_85C8BBB
-gUnknown_85C8BBB: @ 0x085C8BBB
+gOptionMenuData_085C8BBB: @ 0x085C8BBB
 	@ analyzed canonical ROM range 0x085C8BBB-0x085C8BED
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x33

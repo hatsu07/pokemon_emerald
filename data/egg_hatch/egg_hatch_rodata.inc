@@ -38,24 +38,16 @@ sSpriteAnim_Egg_Cracked3: @ 0x082FC9C4
 sSpriteAnimTable_Egg: @ 0x082FC9CC
 	.4byte sSpriteAnim_Egg_Normal, sSpriteAnim_Egg_Cracked1, sSpriteAnim_Egg_Cracked2, sSpriteAnim_Egg_Cracked3
 
-	.globl gUnknown_82FC9DC
 sEggHatch_Sheet: @ 0x082FC9DC
-gUnknown_82FC9DC:
 	rodata_sprite_sheet sEggHatchTiles, 0x0800, GFXTAG_EGG
 
-	.globl gUnknown_82FC9E4
 sEggShards_Sheet: @ 0x082FC9E4
-gUnknown_82FC9E4:
 	rodata_sprite_sheet sEggShardTiles, 0x0080, GFXTAG_EGG_SHARD
 
-	.globl gUnknown_82FC9EC
 sEgg_SpritePalette: @ 0x082FC9EC
-gUnknown_82FC9EC:
 	rodata_sprite_palette sEggPalette, PALTAG_EGG
 
-	.globl gUnknown_82FC9F4
 sSpriteTemplate_Egg: @ 0x082FC9F4
-gUnknown_82FC9F4:
 	rodata_sprite_template GFXTAG_EGG, PALTAG_EGG, sOamData_Egg, sSpriteAnimTable_Egg, NULL, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 
 sOamData_EggShard: @ 0x082FCA0C
@@ -81,34 +73,45 @@ sSpriteAnim_EggShard3: @ 0x082FCA2C
 sSpriteAnimTable_EggShard: @ 0x082FCA34
 	.4byte sSpriteAnim_EggShard0, sSpriteAnim_EggShard1, sSpriteAnim_EggShard2, sSpriteAnim_EggShard3
 
-	.globl gUnknown_82FCA44
 sSpriteTemplate_EggShard: @ 0x082FCA44
-gUnknown_82FCA44:
 	rodata_sprite_template GFXTAG_EGG_SHARD, PALTAG_EGG, sOamData_EggShard, sSpriteAnimTable_EggShard, NULL, gDummySpriteAffineAnimTable, SpriteCB_EggShard
 
-	.globl gUnknown_82FCA5C
 sBgTemplates_EggHatch: @ 0x082FCA5C
-gUnknown_82FCA5C:
 	bg_template 0, 2, 24, 3, 0, 0, 0
 	bg_template 1, 0, 8, 1, 0, 2, 0
 
-	.globl gUnknown_82FCA64
 sWinTemplates_EggHatch: @ 0x082FCA64
-gUnknown_82FCA64:
 	window_template 0, 2, 15, 26, 4, 0, 64
 	null_window_template
 
-	.globl gUnknown_82FCA74
 sYesNoWinTemplate: @ 0x082FCA74
-gUnknown_82FCA74:
 	window_template 0, 21, 9, 5, 4, 15, 424
 
-	.globl gUnknown_82FCA7C
+	.globl sEggShardVelocities
 sEggShardVelocities: @ 0x082FCA7C
-gUnknown_82FCA7C:
-	@ ANALYSIS: RAW_BLOCK size=0x4C
-	.2byte -384, -960, -1280, -768, 896, -768, -1024, -960
-	.2byte 512, -384, -128, -1728, 1280, -576, -384, -960
-	.2byte 1152, -384, -256, -1728, 1024, -576, -896, -960
-	.2byte 256, -384, -900, -1728, 1152, -576, -128, -1920
-	.2byte 256, -1152, -640, -576, 640, -1920
+	@ signed Q8.8 (x, y) velocities; 19 records
+	@ first shake
+	egg_shard_velocity 0, -384, -960 @ (-1.5, -3.75)
+	@ third shake
+	egg_shard_velocity 1, -1280, -768 @ (-5.0, -3.0)
+	egg_shard_velocity 2, 896, -768 @ (3.5, -3.0)
+	@ hatching
+	egg_shard_velocity 3, -1024, -960 @ (-4.0, -3.75)
+	egg_shard_velocity 4, 512, -384 @ (2.0, -1.5)
+	egg_shard_velocity 5, -128, -1728 @ (-0.5, -6.75)
+	egg_shard_velocity 6, 1280, -576 @ (5.0, -2.25)
+	egg_shard_velocity 7, -384, -960 @ (-1.5, -3.75)
+	egg_shard_velocity 8, 1152, -384 @ (4.5, -1.5)
+	egg_shard_velocity 9, -256, -1728 @ (-1.0, -6.75)
+	egg_shard_velocity 10, 1024, -576 @ (4.0, -2.25)
+	egg_shard_velocity 11, -896, -960 @ (-3.5, -3.75)
+	egg_shard_velocity 12, 256, -384 @ (1.0, -1.5)
+	egg_shard_velocity 13, -900, -1728 @ (-3.515625, -6.75)
+	egg_shard_velocity 14, 1152, -576 @ (4.5, -2.25)
+	egg_shard_velocity 15, -128, -1920 @ (-0.5, -7.5)
+	egg_shard_velocity 16, 256, -1152 @ (1.0, -4.5)
+	egg_shard_velocity 17, -640, -576 @ (-2.5, -2.25)
+	egg_shard_velocity 18, 640, -1920 @ (2.5, -7.5)
+	.if (. - sEggShardVelocities) != 0x4C
+	.error "sEggShardVelocities size changed"
+	.endif

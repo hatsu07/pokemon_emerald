@@ -1,16 +1,12 @@
 	.globl gContestLadyCategoryTextPointers
-	.globl gUnknown_85D3DDC
-gContestLadyCategoryTextPointers:
-gUnknown_85D3DDC: @ 0x085D3DDC
+gContestLadyCategoryTextPointers: @ 0x085D3DDC
 	.4byte gText_ContestLadyCategory_Cool
 	.4byte gText_ContestLadyCategory_Beauty
 	.4byte gText_ContestLadyCategory_Cute
 	.4byte gText_ContestLadyCategory_Smart
 	.4byte gText_ContestLadyCategory_Tough
 	.globl gContestLadyMonSpecies
-	.globl gUnknown_85D3DF0
-gContestLadyMonSpecies:
-gUnknown_85D3DF0: @ 0x085D3DF0
+gContestLadyMonSpecies: @ 0x085D3DF0
 	.2byte SPECIES_ZIGZAGOON @ CONTEST_COOL
 	.2byte SPECIES_SKITTY    @ CONTEST_BEAUTY
 	.2byte SPECIES_POOCHYENA @ CONTEST_CUTE
@@ -18,14 +14,10 @@ gUnknown_85D3DF0: @ 0x085D3DF0
 	.2byte SPECIES_PIKACHU   @ CONTEST_TOUGH
 	.2byte SPECIES_NONE      @ padding
 	.globl gBattleDomeMovePoints
-	.globl gUnknown_85D3DFC
-gBattleDomeMovePoints:
-gUnknown_85D3DFC: @ 0x085D3DFC
+gBattleDomeMovePoints: @ 0x085D3DFC
 	.include "data/battle_frontier/battle_dome/move_points.inc"
 	.globl gBattleDomeStyleThresholds
-	.globl gUnknown_85D542C
-gBattleDomeStyleThresholds:
-gUnknown_85D542C: @ 0x085D542C
+gBattleDomeStyleThresholds: @ 0x085D542C
 	battle_dome_style_threshold DOME_BATTLE_STYLE_RISKY,           0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 	battle_dome_style_threshold DOME_BATTLE_STYLE_STALL,           0, 0, 0, 0, 2, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0
 	battle_dome_style_threshold DOME_BATTLE_STYLE_VARIED,          1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0
@@ -69,9 +61,7 @@ gBattleDomeUnusedArray: @ 0x085D561C
 	.byte 0, 254, 0, 0, 0, 0, 0, 254, 0, 0, 0, 0, 0, 254, 0, 0
 	.byte 0, 0, 0, 254, 0, 0, 0, 0, 0
 	.globl gBattleDomeTourneyTreeCursorMovementMap
-	.globl gUnknown_85D5695
-gBattleDomeTourneyTreeCursorMovementMap:
-gUnknown_85D5695: @ 0x085D5695
+gBattleDomeTourneyTreeCursorMovementMap: @ 0x085D5695
 	battle_dome_cursor_moves 0,  7, 1, 8, 16,  7, 1, 8, 16,  7, 1, 8, 16,  7, 1, 8, 16,  7, 1, 8, 16
 	battle_dome_cursor_moves 1,  0, 2, 9, 16,  0, 2, 9, 16,  0, 2, 9, 16,  0, 2, 9, 16,  0, 2, 9, 16
 	battle_dome_cursor_moves 2,  1, 3, 10, 17,  1, 3, 10, 17,  1, 3, 10, 17,  1, 3, 10, 17,  1, 3, 10, 17
@@ -106,33 +96,25 @@ gUnknown_85D5695: @ 0x085D5695
 	battle_dome_cursor_moves TOURNEY_TREE_CLOSE_BUTTON, 15, 8, 8, 0,  15, 8, 8, 0,  15, 8, 8, 0,  15, 8, 8, 0,  15, 8, 8, 0
 	.align 2, 0
 	.globl gBattleDomeTourneyTreeBgTemplates
-	.globl gUnknown_85D5918
-gBattleDomeTourneyTreeBgTemplates:
-gUnknown_85D5918: @ 0x085D5918
+gBattleDomeTourneyTreeBgTemplates: @ 0x085D5918
 	bg_template 0, 0, 28, 0, 0, 0, 0
 	bg_template 1, 1, 29, 0, 0, 1, 0
 	bg_template 2, 2, 30, 0, 0, 2, 0
 	bg_template 3, 2, 31, 0, 0, 2, 0
 	.globl gBattleDomeInfoCardBgTemplates
-	.globl gUnknown_85D5928
-gBattleDomeInfoCardBgTemplates:
-gUnknown_85D5928: @ 0x085D5928
+gBattleDomeInfoCardBgTemplates: @ 0x085D5928
 	bg_template 0, 0, 20, 3, 0, 0, 0
 	bg_template 1, 1, 24, 3, 0, 0, 0
 	bg_template 2, 2, 28, 3, 0, 1, 0
 	bg_template 3, 2, 7, 0, 0, 1, 0
 	.globl gBattleDomeTourneyTreeWindowTemplates
-	.globl gUnknown_85D5938
-gBattleDomeTourneyTreeWindowTemplates:
-gUnknown_85D5938: @ 0x085D5938
+gBattleDomeTourneyTreeWindowTemplates: @ 0x085D5938
 	window_template 0, 0, 3, 8, 16, 15, 0x10  @ names, left
 	window_template 0, 22, 3, 8, 16, 15, 0x90 @ names, right
 	window_template 0, 8, 1, 14, 2, 15, 0x110 @ title
 	null_window_template
 	.globl gBattleDomeInfoCardWindowTemplates
-	.globl gUnknown_85D5958
-gBattleDomeInfoCardWindowTemplates:
-gUnknown_85D5958: @ 0x085D5958
+gBattleDomeInfoCardWindowTemplates: @ 0x085D5958
 	window_template 0, 4, 2, 23, 2, 15, 0x1   @ trainer name
 	window_template 0, 16, 5, 8, 2, 15, 0x2F  @ trainer Pokemon 1
 	window_template 0, 20, 7, 8, 3, 15, 0x3F  @ trainer Pokemon 2
@@ -615,9 +597,7 @@ gBattleDomeTourneyTreePokeballCoords: @ 0x085D5E8D
 gBattleDomeTourneyTreeLineSections: @ 0x085D5ECC
 	.include "data/battle_frontier/battle_dome/tourney_tree_line_sections.inc"
 	.globl gBattleDomeTourneyTreeLineSectionPointers
-	.globl gUnknown_85D678C
-gBattleDomeTourneyTreeLineSectionPointers:
-gUnknown_85D678C: @ 0x085D678C
+gBattleDomeTourneyTreeLineSectionPointers: @ 0x085D678C
 	battle_dome_tourney_line_paths 0
 	battle_dome_tourney_line_paths 1
 	battle_dome_tourney_line_paths 2
@@ -638,9 +618,7 @@ gUnknown_85D678C: @ 0x085D678C
 	.error "Battle Dome tourney line section pointer table has the wrong size"
 	.endif
 	.globl gBattleDomeTourneyTreeLineSectionCounts
-	.globl gUnknown_85D688C
-gBattleDomeTourneyTreeLineSectionCounts:
-gUnknown_85D688C: @ 0x085D688C
+gBattleDomeTourneyTreeLineSectionCounts: @ 0x085D688C
 	.rept 16
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 4, 7, 11, 13
@@ -649,9 +627,7 @@ gUnknown_85D688C: @ 0x085D688C
 	.error "Battle Dome tourney line section count table has the wrong size"
 	.endif
 	.globl gBattlePalaceFunctions
-	.globl gUnknown_85D68CC
-gBattlePalaceFunctions:
-gUnknown_85D68CC: @ 0x085D68CC
+gBattlePalaceFunctions: @ 0x085D68CC
 	.4byte sub_08195580
 	.4byte sub_08195638
 	.4byte sub_081956E4
@@ -666,9 +642,7 @@ gUnknown_85D68CC: @ 0x085D68CC
 	.error "Battle Palace function table has the wrong size"
 	.endif
 	.globl gBattlePalaceVitaminPrizes
-	.globl gUnknown_85D68F4
-gBattlePalaceVitaminPrizes:
-gUnknown_85D68F4: @ 0x085D68F4
+gBattlePalaceVitaminPrizes: @ 0x085D68F4
 	.2byte ITEM_HP_UP
 	.2byte ITEM_PROTEIN
 	.2byte ITEM_IRON
@@ -679,9 +653,7 @@ gUnknown_85D68F4: @ 0x085D68F4
 	.error "Battle Palace vitamin prize table has the wrong size"
 	.endif
 	.globl gBattlePalaceHeldItemPrizes
-	.globl gUnknown_85D6900
-gBattlePalaceHeldItemPrizes:
-gUnknown_85D6900: @ 0x085D6900
+gBattlePalaceHeldItemPrizes: @ 0x085D6900
 	.2byte ITEM_BRIGHT_POWDER
 	.2byte ITEM_WHITE_HERB
 	.2byte ITEM_QUICK_CLAW
@@ -696,21 +668,15 @@ gUnknown_85D6900: @ 0x085D6900
 	.endif
 	.align 2, 0
 	.globl gBattlePalaceWinStreakFlags
-	.globl gUnknown_85D6914
-gBattlePalaceWinStreakFlags:
-gUnknown_85D6914: @ 0x085D6914
+gBattlePalaceWinStreakFlags: @ 0x085D6914
 	.4byte STREAK_PALACE_SINGLES_50, STREAK_PALACE_SINGLES_OPEN
 	.4byte STREAK_PALACE_DOUBLES_50, STREAK_PALACE_DOUBLES_OPEN
 	.globl gBattlePalaceWinStreakMasks
-	.globl gUnknown_85D6924
-gBattlePalaceWinStreakMasks:
-gUnknown_85D6924: @ 0x085D6924
+gBattlePalaceWinStreakMasks: @ 0x085D6924
 	.4byte ~STREAK_PALACE_SINGLES_50, ~STREAK_PALACE_SINGLES_OPEN
 	.4byte ~STREAK_PALACE_DOUBLES_50, ~STREAK_PALACE_DOUBLES_OPEN
 	.globl gMatchCallTrainers
-	.globl gUnknown_85D6934
-gMatchCallTrainers:
-gUnknown_85D6934: @ 0x085D6934
+gMatchCallTrainers: @ 0x085D6934
 	.include "data/match_call/trainers.inc"
 	.if (. - gMatchCallTrainers) != (64 * 20)
 	.error "Match Call trainer table has the wrong size"
@@ -746,9 +712,7 @@ gMatchCallTexts: @ 0x085D6E34
 	.set gMatchCallBattlePyramidTexts, gMatchCallTexts + (191 * 8)
 
 	.globl gMatchCallBattleTopics
-	.globl gUnknown_85D749C
-gMatchCallBattleTopics:
-gUnknown_85D749C: @ 0x085D749C
+gMatchCallBattleTopics: @ 0x085D749C
 	.4byte gMatchCallWildBattleTexts
 	.4byte gMatchCallNegativeBattleTexts
 	.4byte gMatchCallPositiveBattleTexts
@@ -757,9 +721,7 @@ gUnknown_85D749C: @ 0x085D749C
 	.endif
 
 	.globl gMatchCallBattleRequestTopics
-	.globl gUnknown_85D74A8
-gMatchCallBattleRequestTopics:
-gUnknown_85D74A8: @ 0x085D74A8
+gMatchCallBattleRequestTopics: @ 0x085D74A8
 	.4byte gMatchCallSameRouteBattleRequestTexts
 	.4byte gMatchCallDifferentRouteBattleRequestTexts
 	.if (. - gMatchCallBattleRequestTopics) != (2 * 4)
@@ -767,9 +729,7 @@ gUnknown_85D74A8: @ 0x085D74A8
 	.endif
 
 	.globl gMatchCallGeneralTopics
-	.globl gUnknown_85D74B0
-gMatchCallGeneralTopics:
-gUnknown_85D74B0: @ 0x085D74B0
+gMatchCallGeneralTopics: @ 0x085D74B0
 	.4byte gMatchCallPersonalizedTexts
 	.4byte gMatchCallBattleFrontierStreakTexts
 	.4byte gMatchCallBattleFrontierRecordStreakTexts
@@ -781,9 +741,7 @@ gUnknown_85D74B0: @ 0x085D74B0
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085D74C8: match_call.s: LoadMatchCallWindowGfx, sub_08196D78
 	.globl gMatchCallData_085D74C8
-gMatchCallData_085D74C8:
-	.globl gUnknown_85D74C8
-gUnknown_85D74C8: @ 0x085D74C8
+gMatchCallData_085D74C8: @ 0x085D74C8
 	@ analyzed canonical ROM range 0x085D74C8-0x085D74E7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -791,9 +749,7 @@ gUnknown_85D74C8: @ 0x085D74C8
 	.byte 0x9D, 0x7F, 0xFF, 0x5A, 0x7F, 0x6B, 0x57, 0x02, 0xBD, 0x73, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085D74E8: match_call.s: LoadMatchCallWindowGfx, sub_08196D78
 	.globl gMatchCallData_085D74E8
-gMatchCallData_085D74E8:
-	.globl gUnknown_85D74E8
-gUnknown_85D74E8: @ 0x085D74E8
+gMatchCallData_085D74E8: @ 0x085D74E8
 	@ analyzed canonical ROM range 0x085D74E8-0x085D75E7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x100
@@ -815,9 +771,7 @@ gUnknown_85D74E8: @ 0x085D74E8
 	.byte 0x55, 0x55, 0x55, 0x64, 0x55, 0x55, 0x45, 0x64, 0x44, 0x44, 0x44, 0x66, 0x66, 0x66, 0x66, 0x06
 	@ pret/pokeemerald-jp direct xref for 0x085D75E8: match_call.s: LoadMatchCallWindowGfx
 	.globl gMatchCallData_085D75E8
-gMatchCallData_085D75E8:
-	.globl gUnknown_85D75E8
-gUnknown_85D75E8: @ 0x085D75E8
+gMatchCallData_085D75E8: @ 0x085D75E8
 	@ analyzed canonical ROM range 0x085D75E8-0x085D7607
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -838,4 +792,3 @@ sLz77Block_085D7608:
 	.globl gUnknown_85D79EC
 gUnknown_85D79EC: @ 0x085D79EC
 	.space 0x2, 0xB0
-

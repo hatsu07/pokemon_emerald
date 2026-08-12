@@ -10,9 +10,7 @@ gText_Rom_5AD9C0: @ 0x085AD9C0
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085AD9D4: move_relearner.s: DoMoveRelearnerMain
 	.globl gMoveRelearnerData_085AD9D4
-gMoveRelearnerData_085AD9D4:
-	.globl gUnknown_85AD9D4
-gUnknown_85AD9D4: @ 0x085AD9D4
+gMoveRelearnerData_085AD9D4: @ 0x085AD9D4
 	@ analyzed canonical ROM range 0x085AD9D4-0x085ADA26
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x53
@@ -35,9 +33,7 @@ gText_Rom_5ADA27: @ 0x085ADA27
 	.set gText_Rom_5ADA39, gText_Rom_5ADA27 + 0x12
 	@ pret/pokeemerald-jp direct xref for 0x085ADA42: move_relearner.s: DoMoveRelearnerMain
 	.globl gMoveRelearnerData_085ADA42
-gMoveRelearnerData_085ADA42:
-	.globl gUnknown_85ADA42
-gUnknown_85ADA42: @ 0x085ADA42
+gMoveRelearnerData_085ADA42: @ 0x085ADA42
 	@ analyzed canonical ROM range 0x085ADA42-0x085ADA44
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
@@ -53,9 +49,7 @@ gText_Rom_5ADA45: @ 0x085ADA45
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085ADA67: move_relearner.s: DoMoveRelearnerMain
 	.globl gMoveRelearnerData_085ADA67
-gMoveRelearnerData_085ADA67:
-	.globl gUnknown_85ADA67
-gUnknown_85ADA67: @ 0x085ADA67
+gMoveRelearnerData_085ADA67: @ 0x085ADA67
 	@ analyzed canonical ROM range 0x085ADA67-0x085ADA86
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x20

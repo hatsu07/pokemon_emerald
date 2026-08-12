@@ -91,9 +91,7 @@ gText_Rom_5DD476: @ 0x085DD476
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085DD47F: frontier_util.s: IsFrontierBrainFemale, SetFrontierBrainEventObjGfx, SetFrontierBrainEventObjGfx_2
 	.globl gFrontierUtilData_085DD47F
-gFrontierUtilData_085DD47F:
-	.globl gUnknown_85DD47F
-gUnknown_85DD47F: @ 0x085DD47F
+gFrontierUtilData_085DD47F: @ 0x085DD47F
 	@ analyzed canonical ROM range 0x085DD47F-0x085DD48D
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xF
@@ -108,9 +106,7 @@ gUnknown_85DD48E: @ 0x085DD48E
 	.2byte 0x0199, 0x019A, 0xFFFF
 	@ pret/pokeemerald-jp direct xref for 0x085DD4A4: frontier_util.s: DomePrintPrevOrCurrentStreak
 	.globl gFrontierUtilData_085DD4A4
-gFrontierUtilData_085DD4A4:
-	.globl gUnknown_85DD4A4
-gUnknown_85DD4A4: @ 0x085DD4A4
+gFrontierUtilData_085DD4A4: @ 0x085DD4A4
 	@ analyzed canonical ROM range 0x085DD4A4-0x085DD4F4
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x51

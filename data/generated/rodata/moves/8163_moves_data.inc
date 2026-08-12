@@ -48,9 +48,7 @@ sLz77Block_08D8B424:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8B6CC: intro.s: Task_IntroLoadClouds1
 	.globl gIntroData_08D8B6CC
-gIntroData_08D8B6CC:
-	.globl gUnknown_8D8B6CC
-gUnknown_8D8B6CC: @ 0x08D8B6CC
+gIntroData_08D8B6CC: @ 0x08D8B6CC
 	@ confirmed GBA LZ77 stream: compressed=0x124, decompressed=0x800
 sLz77Block_08D8B6CC:
 	@ analyzed canonical ROM range 0x08D8B6CC-0x08D8BA57
@@ -127,9 +125,7 @@ sLz77Block_08D8BA58:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8C150: intro.s: Task_IntroLoadRayquazaLightningScene
 	.globl gIntroData_08D8C150
-gIntroData_08D8C150:
-	.globl gUnknown_8D8C150
-gUnknown_8D8C150: @ 0x08D8C150
+gIntroData_08D8C150: @ 0x08D8C150
 	@ confirmed GBA LZ77 stream: compressed=0x208, decompressed=0x800
 sLz77Block_08D8C150:
 	@ analyzed canonical ROM range 0x08D8C150-0x08D8C81B
@@ -258,9 +254,7 @@ sLz77Block_08D8C81C:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8CCAC: intro.s: Task_IntroLoadRayquazaLightningScene
 	.globl gIntroData_08D8CCAC
-gIntroData_08D8CCAC:
-	.globl gUnknown_8D8CCAC
-gUnknown_8D8CCAC: @ 0x08D8CCAC
+gIntroData_08D8CCAC: @ 0x08D8CCAC
 	@ confirmed GBA LZ77 stream: compressed=0x27A, decompressed=0x800
 sLz77Block_08D8CCAC:
 	@ analyzed canonical ROM range 0x08D8CCAC-0x08D8D3F3

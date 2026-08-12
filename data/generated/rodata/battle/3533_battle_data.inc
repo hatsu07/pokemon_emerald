@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085ABBD8: battle_controller_player.s: HandleInputChooseMove
 	.globl gBattleControllerPlayerData_085ABBD8
-gBattleControllerPlayerData_085ABBD8:
-	.globl gUnknown_85ABBD8
-gUnknown_85ABBD8: @ 0x085ABBD8
+gBattleControllerPlayerData_085ABBD8: @ 0x085ABBD8
 	@ analyzed canonical ROM range 0x085ABBD8-0x085ABC00
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x29

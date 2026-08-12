@@ -56,7 +56,7 @@ ScrCmd_showelevmenu: @ 0x08098C94
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08098C9C: .4byte 0x081DAF8C
+_08098C9C: .4byte gSpecials
 	thumb_func_end ScrCmd_showelevmenu
 
 	thumb_func_start ScrCmd_specialvar
@@ -86,7 +86,7 @@ ScrCmd_cmdDA: @ 0x08098CC8
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08098CD0: .4byte 0x081DAF8C
+_08098CD0: .4byte gSpecials
 	thumb_func_end ScrCmd_cmdDA
 
 	thumb_func_start ScrCmd_callnative
@@ -5833,4 +5833,3 @@ ScrCmd_warpE0: @ 0x0809B72C
 	bx r1
 	.align 2, 0
 	thumb_func_end ScrCmd_warpE0
-

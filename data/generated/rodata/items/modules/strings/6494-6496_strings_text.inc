@@ -14,9 +14,7 @@ gUnknown_85CCDF8: @ 0x085CCDF8
 	.string "てん$"
 	@ pret/pokeemerald-jp direct xref for 0x085CCDFB: pokemon_jump.s: sub_0802D884
 	.globl gPokemonJumpData_085CCDFB
-gPokemonJumpData_085CCDFB:
-	.globl gUnknown_85CCDFB
-gUnknown_85CCDFB: @ 0x085CCDFB
+gPokemonJumpData_085CCDFB: @ 0x085CCDFB
 	@ analyzed canonical ROM range 0x085CCDFB-0x085CCDFD
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3

@@ -83,9 +83,7 @@ gUnknown_84DD88C: @ 0x084DD88C
 	.4byte MovementType_WalkSlowlyInPlace
 	@ pret/pokeemerald-jp direct xref for 0x084DD9D0: event_object_movement.s: InitEventObjectStateFromTemplate
 	.globl gEventObjectMovementData_084DD9D0
-gEventObjectMovementData_084DD9D0:
-	.globl gUnknown_84DD9D0
-gUnknown_84DD9D0: @ 0x084DD9D0
+gEventObjectMovementData_084DD9D0: @ 0x084DD9D0
 	@ analyzed canonical ROM range 0x084DD9D0-0x084DDA20
 sMovementTypeInitialFacingCycleFlags: @ 0x084DD9D0
 	.byte 0x00, 0x00, 0x01, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -96,9 +94,7 @@ sMovementTypeInitialFacingCycleFlags: @ 0x084DD9D0
 	.byte 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084DDA21: event_object_movement.s: CopyablePlayerMovement_FaceDirection, CopyablePlayerMovement_GoSpeed0, CopyablePlayerMovement_GoSpeed1, CopyablePlayerMovement_GoSpeed2, CopyablePlayerMovement_GoSpeed4 (+6 more)
 	.globl gEventObjectMovementData_084DDA21
-gEventObjectMovementData_084DDA21:
-	.globl gUnknown_84DDA21
-gUnknown_84DDA21: @ 0x084DDA21
+gEventObjectMovementData_084DDA21: @ 0x084DDA21
 	@ analyzed canonical ROM range 0x084DDA21-0x084DDA73
 sMovementTypeInitialDirections: @ 0x084DDA21
 	.byte 0x01, 0x01, 0x01, 0x02, 0x01, 0x03, 0x04, 0x02, 0x01, 0x03, 0x04, 0x01, 0x01, 0x01, 0x03, 0x02

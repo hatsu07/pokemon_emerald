@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085CC403: trainer_card.s: sub_080C395C
 	.globl gTrainerCardData_085CC403
-gTrainerCardData_085CC403:
-	.globl gUnknown_85CC403
-gUnknown_85CC403: @ 0x085CC403
+gTrainerCardData_085CC403: @ 0x085CC403
 	@ analyzed canonical ROM range 0x085CC403-0x085CC417
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x15
@@ -10,4 +8,3 @@ gUnknown_85CC403: @ 0x085CC403
 	.byte 0x06, 0x11, 0x17, 0x07, 0xFF
 	.globl gUnknown_85CC418
 gUnknown_85CC418: @ 0x085CC418
-

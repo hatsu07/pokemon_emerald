@@ -3,9 +3,7 @@
 	@ 0x082FC04A-0x082FC04B alignment after egg_moves.inc
 	.2byte 0
 
-	.globl gUnknown_82FC04C
 sDaycareLevelMenuWindowTemplate: @ 0x082FC04C
-gUnknown_82FC04C:
 	@ JP layout differs from upstream: left=12, width=17.
 	window_template 0, 12, 1, 17, 6, 15, 8
 
@@ -14,9 +12,7 @@ sLevelMenuItems: @ 0x082FC054
 	rodata_list_menu_item 0x085C8C24, 1 @ gText_ExpandedPlaceholder_Empty
 	rodata_list_menu_item 0x085C93C8, 5 @ gText_Exit / DAYCARE_LEVEL_MENU_EXIT
 
-	.globl gUnknown_82FC06C
 sDaycareListMenuLevelTemplate: @ 0x082FC06C
-gUnknown_82FC06C:
 	@ items, cursor callback, item printer, counts, coordinates and packed style fields.
 	rodata_list_menu_template sLevelMenuItems, ListMenuDefaultCursorMoveFunc, DaycarePrintMonInfo, 3, 3, 0, 2, 12, 1, 0, 2, 1, 3, 1, 0, 0, FONT_NORMAL, 0
 
@@ -64,17 +60,18 @@ gText_Rom_2FC0C4: @ 0x082FC0C4
 	.space 0x21 - (. - gText_Rom_2FC0C4)
 	.endif
 	.space 0x3, 0x00
-	.globl gUnknown_82FC0E8
-gUnknown_82FC0E8: @ 0x082FC0E8
-	.4byte gText_Rom_2FC084
-	.4byte gText_Rom_2FC09A
-	.4byte gText_Rom_2FC0AE
-	.4byte gText_Rom_2FC0C4
+	.globl sCompatibilityMessages
+sCompatibilityMessages: @ 0x082FC0E8
+	daycare_compatibility_message 0, gText_Rom_2FC084 @ get along very well
+	daycare_compatibility_message 1, gText_Rom_2FC09A @ get along
+	daycare_compatibility_message 2, gText_Rom_2FC0AE @ do not like each other
+	daycare_compatibility_message 3, gText_Rom_2FC0C4 @ play with other Pokemon
+	.if (. - sCompatibilityMessages) != 0x10
+	.error "sCompatibilityMessages size changed"
+	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082FC0F8: daycare.s: GetDaycareLevelMenuLevelText, GetDaycareLevelMenuText
 	.globl gDaycareData_082FC0F8
-gDaycareData_082FC0F8:
-	.globl gUnknown_82FC0F8
-gUnknown_82FC0F8: @ 0x082FC0F8
+gDaycareData_082FC0F8: @ 0x082FC0F8
 	@ analyzed canonical ROM range 0x082FC0F8-0x082FC0F9
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2

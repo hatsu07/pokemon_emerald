@@ -35,18 +35,14 @@ gBattlePalaceNatureToMoveTarget: @ 0x082ECF8C
 
 	@ pret/pokeemerald-jp direct xref for 0x082ECFA8: smokescreen.s: sub_08074C24, sub_08074D78
 	.globl gSmokescreenData_082ECFA8
-gSmokescreenData_082ECFA8:
-	.globl gUnknown_82ECFA8
-gUnknown_82ECFA8: @ 0x082ECFA8
+gSmokescreenData_082ECFA8: @ 0x082ECFA8
 sSmokescreenImpactSpriteSheet:
 	.4byte 0x08C0164C @ gSmokescreenImpactTiles
 	.2byte 0x0180, 0xD6EB @ size, TAG_SMOKESCREEN
 
 	@ pret/pokeemerald-jp direct xref for 0x082ECFB0: smokescreen.s: sub_08074C24, sub_08074D78
 	.globl gSmokescreenData_082ECFB0
-gSmokescreenData_082ECFB0:
-	.globl gUnknown_82ECFB0
-gUnknown_82ECFB0: @ 0x082ECFB0
+gSmokescreenData_082ECFB0: @ 0x082ECFB0
 sSmokescreenImpactSpritePalette:
 	.4byte 0x08C0172C @ gSmokescreenImpactPalette
 	.4byte 0x0000D6EB @ TAG_SMOKESCREEN
@@ -88,9 +84,7 @@ sAnims_SmokescreenImpact: @ 0x082ED000
 
 	@ pret/pokeemerald-jp direct xref for 0x082ED010: smokescreen.s: sub_08074C24
 	.globl gSmokescreenData_082ED010
-gSmokescreenData_082ED010:
-	.globl gUnknown_82ED010
-gUnknown_82ED010: @ 0x082ED010
+gSmokescreenData_082ED010: @ 0x082ED010
 sSmokescreenImpactSpriteTemplate:
 	.2byte 0xD6EB, 0xD6EB
 	.4byte sOamData_SmokescreenImpact @ OAM

@@ -3,40 +3,30 @@
 	@ Editable sources -> exact original LZ77 build artifacts.
 	.globl gRayquazaSceneData_08DA3668
 gRayquazaSceneData_08DA3668:
-	.globl gUnknown_8DA3668
-gUnknown_8DA3668:
 sLz77Block_08DA3668:
 	.globl gRaySceneDuoFight_Clouds_Gfx
 gRaySceneDuoFight_Clouds_Gfx: @ 0x08DA3668
 	.incbin "build/graphics/rayquaza_scene/scene_1/clouds.4bpp.lz"
 	.globl gRayquazaSceneData_08DA3A90
 gRayquazaSceneData_08DA3A90:
-	.globl gUnknown_8DA3A90
-gUnknown_8DA3A90:
 sLz77Block_08DA3A90:
 	.globl gRaySceneDuoFight_Clouds_Pal
 gRaySceneDuoFight_Clouds_Pal: @ 0x08DA3A90
 	.incbin "build/graphics/rayquaza_scene/scene_1/clouds.gbapal.lz"
 	.globl gRayquazaSceneData_08DA3ACC
 gRayquazaSceneData_08DA3ACC:
-	.globl gUnknown_8DA3ACC
-gUnknown_8DA3ACC:
 sLz77Block_08DA3ACC:
 	.globl gRaySceneDuoFight_Clouds1_Tilemap
 gRaySceneDuoFight_Clouds1_Tilemap: @ 0x08DA3ACC
 	.incbin "build/graphics/rayquaza_scene/scene_1/clouds1.bin.lz"
 	.globl gRayquazaSceneData_08DA3C30
 gRayquazaSceneData_08DA3C30:
-	.globl gUnknown_8DA3C30
-gUnknown_8DA3C30:
 sLz77Block_08DA3C30:
 	.globl gRaySceneDuoFight_Clouds2_Tilemap
 gRaySceneDuoFight_Clouds2_Tilemap: @ 0x08DA3C30
 	.incbin "build/graphics/rayquaza_scene/scene_1/clouds2.bin.lz"
 	.globl gRayquazaSceneData_08DA3D30
 gRayquazaSceneData_08DA3D30:
-	.globl gUnknown_8DA3D30
-gUnknown_8DA3D30:
 sLz77Block_08DA3D30:
 	.globl gRaySceneDuoFight_Clouds3_Tilemap
 gRaySceneDuoFight_Clouds3_Tilemap: @ 0x08DA3D30
@@ -48,56 +38,42 @@ gRaySceneDuoFight_Clouds3_Tilemap: @ 0x08DA3D30
 	@ Editable sources -> exact original LZ77 artifacts.
 	.globl gRayquazaSceneData_08DA3E68
 gRayquazaSceneData_08DA3E68:
-	.globl gUnknown_DA3E68
-gUnknown_DA3E68:
 sLz77Block_08DA3E68:
 	.globl gRaySceneTakesFlight_Smoke_Gfx
 gRaySceneTakesFlight_Smoke_Gfx: @ 0x08DA3E68
 	.incbin "build/graphics/rayquaza_scene/scene_2/smoke.4bpp.lz"
 	.globl gRayquazaSceneData_08DA3F24
 gRayquazaSceneData_08DA3F24:
-	.globl gUnknown_DA3F24
-gUnknown_DA3F24:
 sLz77Block_08DA3F24:
 	.globl gRaySceneTakesFlight_Smoke_Pal
 gRaySceneTakesFlight_Smoke_Pal: @ 0x08DA3F24
 	.incbin "build/graphics/rayquaza_scene/scene_2/smoke.gbapal.lz"
 	.globl gRayquazaSceneData_08DA3F3C
 gRayquazaSceneData_08DA3F3C:
-	.globl gUnknown_DA3F3C
-gUnknown_DA3F3C:
 sLz77Block_08DA3F3C:
 	.globl gRaySceneTakesFlight_Rayquaza_Gfx
 gRaySceneTakesFlight_Rayquaza_Gfx: @ 0x08DA3F3C
 	.incbin "build/graphics/rayquaza_scene/scene_2/rayquaza.8bpp.lz"
 	.globl gRayquazaSceneData_08DA5050
 gRayquazaSceneData_08DA5050:
-	.globl gUnknown_DA5050
-gUnknown_DA5050:
 sLz77Block_08DA5050:
 	.globl gRaySceneTakesFlight_Rayquaza_Pal
 gRaySceneTakesFlight_Rayquaza_Pal: @ 0x08DA5050
 	.incbin "build/graphics/rayquaza_scene/scene_2/rayquaza.gbapal.lz"
 	.globl gRayquazaSceneData_08DA5094
 gRayquazaSceneData_08DA5094:
-	.globl gUnknown_DA5094
-gUnknown_DA5094:
 sLz77Block_08DA5094:
 	.globl gRaySceneTakesFlight_Rayquaza_Tilemap
 gRaySceneTakesFlight_Rayquaza_Tilemap: @ 0x08DA5094
 	.incbin "build/graphics/rayquaza_scene/scene_2/rayquaza.bin.lz"
 	.globl gRayquazaSceneData_08DA5218
 gRayquazaSceneData_08DA5218:
-	.globl gUnknown_DA5218
-gUnknown_DA5218:
 sLz77Block_08DA5218:
 	.globl gRaySceneTakesFlight_Bg_Gfx
 gRaySceneTakesFlight_Bg_Gfx: @ 0x08DA5218
 	.incbin "build/graphics/rayquaza_scene/scene_2/bg.4bpp.lz"
 	.globl gRayquazaSceneData_08DA6360
 gRayquazaSceneData_08DA6360:
-	.globl gUnknown_DA6360
-gUnknown_DA6360:
 sLz77Block_08DA6360:
 	.globl gRaySceneTakesFlight_Bg_Tilemap
 gRaySceneTakesFlight_Bg_Tilemap: @ 0x08DA6360
@@ -110,56 +86,42 @@ gRaySceneTakesFlight_Bg_Tilemap: @ 0x08DA6360
 	@ Editable sources -> exact original LZ77 artifacts.
 	.globl gRayquazaSceneData_08DA66E8
 gRayquazaSceneData_08DA66E8:
-	.globl gUnknown_8DA66E8
-gUnknown_8DA66E8:
 sLz77Block_08DA66E8:
 	.globl gRaySceneDescends_Rayquaza_Gfx
 gRaySceneDescends_Rayquaza_Gfx: @ 0x08DA66E8
 	.incbin "build/graphics/rayquaza_scene/scene_3/rayquaza.4bpp.lz"
 	.globl gRayquazaSceneData_08DA6B54
 gRayquazaSceneData_08DA6B54:
-	.globl gUnknown_8DA6B54
-gUnknown_8DA6B54:
 sLz77Block_08DA6B54:
 	.globl gRaySceneDescends_RayquazaTail_Gfx
 gRaySceneDescends_RayquazaTail_Gfx: @ 0x08DA6B54
 	.incbin "build/graphics/rayquaza_scene/scene_3/rayquaza_tail.4bpp.lz"
 	.globl gRayquazaSceneData_08DA6C64
 gRayquazaSceneData_08DA6C64:
-	.globl gUnknown_8DA6C64
-gUnknown_8DA6C64:
 sLz77Block_08DA6C64:
 	.globl gRaySceneDescends_Bg_Gfx
 gRaySceneDescends_Bg_Gfx: @ 0x08DA6C64
 	.incbin "build/graphics/rayquaza_scene/scene_3/bg.4bpp.lz"
 	.globl gRayquazaSceneData_08DA77D0
 gRayquazaSceneData_08DA77D0:
-	.globl gUnknown_8DA77D0
-gUnknown_8DA77D0:
 sLz77Block_08DA77D0:
 	.globl gRaySceneDescends_Light_Gfx
 gRaySceneDescends_Light_Gfx: @ 0x08DA77D0
 	.incbin "build/graphics/rayquaza_scene/scene_3/light.4bpp.lz"
 	.globl gRayquazaSceneData_08DA79EC
 gRayquazaSceneData_08DA79EC:
-	.globl gUnknown_8DA79EC
-gUnknown_8DA79EC:
 sLz77Block_08DA79EC:
 	.globl gRaySceneDescends_Bg_Pal
 gRaySceneDescends_Bg_Pal: @ 0x08DA79EC
 	.incbin "build/graphics/rayquaza_scene/scene_3/bg.gbapal.lz"
 	.globl gRayquazaSceneData_08DA7A2C
 gRayquazaSceneData_08DA7A2C:
-	.globl gUnknown_8DA7A2C
-gUnknown_8DA7A2C:
 sLz77Block_08DA7A2C:
 	.globl gRaySceneDescends_Bg_Tilemap
 gRaySceneDescends_Bg_Tilemap: @ 0x08DA7A2C
 	.incbin "build/graphics/rayquaza_scene/scene_3/bg.bin.lz"
 	.globl gRayquazaSceneData_08DA7D54
 gRayquazaSceneData_08DA7D54:
-	.globl gUnknown_8DA7D54
-gUnknown_8DA7D54:
 sLz77Block_08DA7D54:
 	.globl gRaySceneDescends_Light_Tilemap
 gRaySceneDescends_Light_Tilemap: @ 0x08DA7D54
@@ -172,64 +134,48 @@ gRaySceneDescends_Light_Tilemap: @ 0x08DA7D54
 	@ Editable sources -> exact original LZ77 artifacts.
 	.globl gRayquazaSceneData_08DA7ED8
 gRayquazaSceneData_08DA7ED8:
-	.globl gUnknown_8DA7ED8
-gUnknown_8DA7ED8:
 sLz77Block_08DA7ED8:
 	.globl gRaySceneCharges_Bg_Gfx
 gRaySceneCharges_Bg_Gfx: @ 0x08DA7ED8
 	.incbin "build/graphics/rayquaza_scene/scene_4/bg.4bpp.lz"
 	.globl gRayquazaSceneData_08DA8014
 gRayquazaSceneData_08DA8014:
-	.globl gUnknown_8DA8014
-gUnknown_8DA8014:
 sLz77Block_08DA8014:
 	.globl gRaySceneCharges_Bg_Tilemap
 gRaySceneCharges_Bg_Tilemap: @ 0x08DA8014
 	.incbin "build/graphics/rayquaza_scene/scene_4/bg.bin.lz"
 	.globl gRayquazaSceneData_08DA8154
 gRayquazaSceneData_08DA8154:
-	.globl gUnknown_8DA8154
-gUnknown_8DA8154:
 sLz77Block_08DA8154:
 	.globl gRaySceneCharges_Streaks_Gfx
 gRaySceneCharges_Streaks_Gfx: @ 0x08DA8154
 	.incbin "build/graphics/rayquaza_scene/scene_4/streaks.4bpp.lz"
 	.globl gRayquazaSceneData_08DA825C
 gRayquazaSceneData_08DA825C:
-	.globl gUnknown_8DA825C
-gUnknown_8DA825C:
 sLz77Block_08DA825C:
 	.globl gRaySceneCharges_Streaks_Tilemap
 gRaySceneCharges_Streaks_Tilemap: @ 0x08DA825C
 	.incbin "build/graphics/rayquaza_scene/scene_4/streaks.bin.lz"
 	.globl gRayquazaSceneData_08DA8364
 gRayquazaSceneData_08DA8364:
-	.globl gUnknown_8DA8364
-gUnknown_8DA8364:
 sLz77Block_08DA8364:
 	.globl gRaySceneCharges_Rayquaza_Gfx
 gRaySceneCharges_Rayquaza_Gfx: @ 0x08DA8364
 	.incbin "build/graphics/rayquaza_scene/scene_4/rayquaza.4bpp.lz"
 	.globl gRayquazaSceneData_08DA8DE8
 gRayquazaSceneData_08DA8DE8:
-	.globl gUnknown_8DA8DE8
-gUnknown_8DA8DE8:
 sLz77Block_08DA8DE8:
 	.globl gRaySceneCharges_Rayquaza_Tilemap
 gRaySceneCharges_Rayquaza_Tilemap: @ 0x08DA8DE8
 	.incbin "build/graphics/rayquaza_scene/scene_4/rayquaza.bin.lz"
 	.globl gRayquazaSceneData_08DA9014
 gRayquazaSceneData_08DA9014:
-	.globl gUnknown_8DA9014
-gUnknown_8DA9014:
 sLz77Block_08DA9014:
 	.globl gRaySceneCharges_Orbs_Tilemap
 gRaySceneCharges_Orbs_Tilemap: @ 0x08DA9014
 	.incbin "build/graphics/rayquaza_scene/scene_4/orbs.bin.lz"
 	.globl gRayquazaSceneData_08DA912C
 gRayquazaSceneData_08DA912C:
-	.globl gUnknown_8DA912C
-gUnknown_8DA912C:
 sLz77Block_08DA912C:
 	.globl gRaySceneCharges_Bg_Pal
 gRaySceneCharges_Bg_Pal: @ 0x08DA912C
@@ -241,120 +187,90 @@ gRaySceneCharges_Bg_Pal: @ 0x08DA912C
 	@ Editable sources -> exact original LZ77 artifacts.
 	.globl gRayquazaSceneData_08DA9180
 gRayquazaSceneData_08DA9180:
-	.globl gUnknown_8DA9180
-gUnknown_8DA9180:
 sLz77Block_08DA9180:
 	.globl gRaySceneChasesAway_Groudon_Gfx
 gRaySceneChasesAway_Groudon_Gfx: @ 0x08DA9180
 	.incbin "build/graphics/rayquaza_scene/scene_5/groudon.4bpp.lz"
 	.globl gRayquazaSceneData_08DA9918
 gRayquazaSceneData_08DA9918:
-	.globl gUnknown_8DA9918
-gUnknown_8DA9918:
 sLz77Block_08DA9918:
 	.globl gRaySceneChasesAway_GroudonTail_Gfx
 gRaySceneChasesAway_GroudonTail_Gfx: @ 0x08DA9918
 	.incbin "build/graphics/rayquaza_scene/scene_5/groudon_tail.4bpp.lz"
 	.globl gRayquazaSceneData_08DA995C
 gRayquazaSceneData_08DA995C:
-	.globl gUnknown_8DA995C
-gUnknown_8DA995C:
 sLz77Block_08DA995C:
 	.globl gRaySceneChasesAway_Kyogre_Gfx
 gRaySceneChasesAway_Kyogre_Gfx: @ 0x08DA995C
 	.incbin "build/graphics/rayquaza_scene/scene_5/kyogre.4bpp.lz"
 	.globl gRayquazaSceneData_08DA9BA4
 gRayquazaSceneData_08DA9BA4:
-	.globl gUnknown_8DA9BA4
-gUnknown_8DA9BA4:
 sLz77Block_08DA9BA4:
 	.globl gRaySceneChasesAway_Rayquaza_Gfx
 gRaySceneChasesAway_Rayquaza_Gfx: @ 0x08DA9BA4
 	.incbin "build/graphics/rayquaza_scene/scene_5/rayquaza.4bpp.lz"
 	.globl gRayquazaSceneData_08DAA84C
 gRayquazaSceneData_08DAA84C:
-	.globl gUnknown_8DAA84C
-gUnknown_8DAA84C:
 sLz77Block_08DAA84C:
 	.globl gRaySceneChasesAway_RayquazaTail_Gfx
 gRaySceneChasesAway_RayquazaTail_Gfx: @ 0x08DAA84C
 	.incbin "build/graphics/rayquaza_scene/scene_5/rayquaza_tail.4bpp.lz"
 	.globl gRayquazaSceneData_08DAAA3C
 gRayquazaSceneData_08DAAA3C:
-	.globl gUnknown_8DAAA3C
-gUnknown_8DAAA3C:
 sLz77Block_08DAAA3C:
 	.globl gRaySceneChasesAway_KyogreSplash_Gfx
 gRaySceneChasesAway_KyogreSplash_Gfx: @ 0x08DAAA3C
 	.incbin "build/graphics/rayquaza_scene/scene_5/kyogre_splash.4bpp.lz"
 	.globl gRayquazaSceneData_08DAAAD4
 gRayquazaSceneData_08DAAAD4:
-	.globl gUnknown_8DAAAD4
-gUnknown_8DAAAD4:
 sLz77Block_08DAAAD4:
 	.globl gRaySceneChasesAway_Groudon_Pal
 gRaySceneChasesAway_Groudon_Pal: @ 0x08DAAAD4
 	.incbin "build/graphics/rayquaza_scene/scene_5/groudon.gbapal.lz"
 	.globl gRayquazaSceneData_08DAAAFC
 gRayquazaSceneData_08DAAAFC:
-	.globl gUnknown_8DAAAFC
-gUnknown_8DAAAFC:
 sLz77Block_08DAAAFC:
 	.globl gRaySceneChasesAway_Kyogre_Pal
 gRaySceneChasesAway_Kyogre_Pal: @ 0x08DAAAFC
 	.incbin "build/graphics/rayquaza_scene/scene_5/kyogre.gbapal.lz"
 	.globl gRayquazaSceneData_08DAAB24
 gRayquazaSceneData_08DAAB24:
-	.globl gUnknown_8DAAB24
-gUnknown_8DAAB24:
 sLz77Block_08DAAB24:
 	.globl gRaySceneChasesAway_Rayquaza_Pal
 gRaySceneChasesAway_Rayquaza_Pal: @ 0x08DAAB24
 	.incbin "build/graphics/rayquaza_scene/scene_5/rayquaza.gbapal.lz"
 	.globl gRayquazaSceneData_08DAAB4C
 gRayquazaSceneData_08DAAB4C:
-	.globl gUnknown_8DAAB4C
-gUnknown_8DAAB4C:
 sLz77Block_08DAAB4C:
 	.globl gRaySceneChasesAway_KyogreSplash_Pal
 gRaySceneChasesAway_KyogreSplash_Pal: @ 0x08DAAB4C
 	.incbin "build/graphics/rayquaza_scene/scene_5/kyogre_splash.gbapal.lz"
 	.globl gRayquazaSceneData_08DAAB5C
 gRayquazaSceneData_08DAAB5C:
-	.globl gUnknown_8DAAB5C
-gUnknown_8DAAB5C:
 sLz77Block_08DAAB5C:
 	.globl gRaySceneChasesAway_Light_Gfx
 gRaySceneChasesAway_Light_Gfx: @ 0x08DAAB5C
 	.incbin "build/graphics/rayquaza_scene/scene_5/light.4bpp.lz"
 	.globl gRayquazaSceneData_08DAADCC
 gRayquazaSceneData_08DAADCC:
-	.globl gUnknown_8DAADCC
-gUnknown_8DAADCC:
 sLz77Block_08DAADCC:
 	.globl gRaySceneChasesAway_Ring_Gfx
 gRaySceneChasesAway_Ring_Gfx: @ 0x08DAADCC
 	.incbin "build/graphics/rayquaza_scene/scene_5/ring.8bpp.lz"
 	.globl gRayquazaSceneData_08DAAEC4
 gRayquazaSceneData_08DAAEC4:
-	.globl gUnknown_8DAAEC4
-gUnknown_8DAAEC4:
 sLz77Block_08DAAEC4:
 	.globl gRaySceneChasesAway_Light_Tilemap
 gRaySceneChasesAway_Light_Tilemap: @ 0x08DAAEC4
 	.incbin "build/graphics/rayquaza_scene/scene_5/light.bin.lz"
 	.globl gRayquazaSceneData_08DAB0FC
 gRayquazaSceneData_08DAB0FC:
-	.globl gUnknown_8DAB0FC
-gUnknown_8DAB0FC:
 sLz77Block_08DAB0FC:
 	.globl gRaySceneChasesAway_Bg_Tilemap
 gRaySceneChasesAway_Bg_Tilemap: @ 0x08DAB0FC
 	.incbin "build/graphics/rayquaza_scene/scene_5/bg.bin.lz"
 	.globl gRayquazaSceneData_08DAB240
 gRayquazaSceneData_08DAB240:
-	.globl gUnknown_8DAB240
-gUnknown_8DAB240:
 sLz77Block_08DAB240:
 	.globl gRaySceneChasesAway_Ring_Tilemap
 gRaySceneChasesAway_Ring_Tilemap: @ 0x08DAB240

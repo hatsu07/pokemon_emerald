@@ -70,18 +70,14 @@ gUnknown_85DD53C: @ 0x085DD53C
 	.4byte gText_Rom_5DD50C
 	@ pret/pokeemerald-jp direct xref for 0x085DD564: frontier_util.s: FactoryPrintPrevOrCurrentStreak, Print1PRecord
 	.globl gFrontierUtilData_085DD564
-gFrontierUtilData_085DD564:
-	.globl gUnknown_85DD564
-gUnknown_85DD564: @ 0x085DD564
+gFrontierUtilData_085DD564: @ 0x085DD564
 	@ analyzed canonical ROM range 0x085DD564-0x085DD569
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0xA2, 0xFF, 0xA3, 0xFF, 0xA4, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085DD56A: frontier_util.s: CopyFrontierBrainTrainerName, PrintHyphens, sub_081A48F8
 	.globl gFrontierUtilData_085DD56A
-gFrontierUtilData_085DD56A:
-	.globl gUnknown_85DD56A
-gUnknown_85DD56A: @ 0x085DD56A
+gFrontierUtilData_085DD56A: @ 0x085DD56A
 	@ analyzed canonical ROM range 0x085DD56A-0x085DD577
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xE

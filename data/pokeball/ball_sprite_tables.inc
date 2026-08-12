@@ -159,9 +159,7 @@ gBallSpriteAffineAnimSequences: @ 0x082FCF80
 @ Poke Ball SpriteTemplates
 @ -----------------------------------------------------------------------------
 .globl gBallSpriteTemplates
-.globl gUnknown_82FCF94
 gBallSpriteTemplates: @ 0x082FCF94
-gUnknown_82FCF94:
     rodata_sprite_template GFX_TAG_POKE_BALL       , GFX_TAG_POKE_BALL       , gBallSpriteOamData, gBallSpriteAnimSequences, NULL, gBallSpriteAffineAnimSequences, SpriteCB_TestBallThrow @ ball 0
     rodata_sprite_template GFX_TAG_GREAT_BALL      , GFX_TAG_GREAT_BALL      , gBallSpriteOamData, gBallSpriteAnimSequences, NULL, gBallSpriteAffineAnimSequences, SpriteCB_TestBallThrow @ ball 1
     rodata_sprite_template GFX_TAG_SAFARI_BALL     , GFX_TAG_SAFARI_BALL     , gBallSpriteOamData, gBallSpriteAnimSequences, NULL, gBallSpriteAffineAnimSequences, SpriteCB_TestBallThrow @ ball 2

@@ -1,9 +1,7 @@
 	@ pret/pokeemerald-jp direct xref for 0x084FE6CC: battle_anim_mons.s: sub_080A7C5C
 .include "asm/macros/semantic_raw_structs.inc"
 	.globl gBattleAnimMonsData_084FE6CC
-gBattleAnimMonsData_084FE6CC:
-	.globl gUnknown_84FE6CC
-gUnknown_84FE6CC: @ 0x084FE6CC
+gBattleAnimMonsData_084FE6CC: @ 0x084FE6CC
 	@ analyzed canonical ROM range 0x084FE6CC-0x0851769B
 	@ semantic recovery: rodata; byte-verified against linked ROM
 	@ ANALYSIS: RAW_BLOCK size=0x10

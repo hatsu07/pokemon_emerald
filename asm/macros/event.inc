@@ -1666,3 +1666,26 @@
 	setorcopyvar VAR_0x8000, \trainer
 	callstd STD_REGISTER_MATCH_CALL
 	.endm
+
+
+@ Semantic script-engine dispatch-table emitters.
+.macro script_cmd_handler opcode:req, handler:req
+    .if (\opcode) != ((. - gScriptCmdTable) / 4)
+        .error "script command handlers are out of opcode order"
+    .endif
+    .4byte \handler
+.endm
+
+.macro script_special_var index:req, variable:req
+    .if (\index) != ((. - gSpecialVars) / 4)
+        .error "special variable pointers are out of order"
+    .endif
+    .4byte \variable
+.endm
+
+.macro script_special_handler index:req, handler:req
+    .if (\index) != ((. - gSpecials) / 4)
+        .error "script specials are out of index order"
+    .endif
+    .4byte \handler
+.endm

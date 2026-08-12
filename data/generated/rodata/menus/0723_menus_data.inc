@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x0852E728: wild_encounter.s: CheckFeebas, GetRoute119WaterTileNum
 	.globl gWildEncounterData_0852E728
-gWildEncounterData_0852E728:
-	.globl gUnknown_852E728
-gUnknown_852E728: @ 0x0852E728
+gWildEncounterData_0852E728: @ 0x0852E728
 	@ analyzed canonical ROM range 0x0852E728-0x08535AFB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x73D4

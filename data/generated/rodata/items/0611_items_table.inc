@@ -1,17 +1,13 @@
 	@ pret/pokeemerald-jp direct xref for 0x0830FC60: berry_blender.s: ShowBerryBlenderRecordWindow
 	.globl gBerryBlenderData_0830FC60
-gBerryBlenderData_0830FC60:
-	.globl gUnknown_830FC60
-gUnknown_830FC60: @ 0x0830FC60
+gBerryBlenderData_0830FC60: @ 0x0830FC60
 	@ analyzed canonical ROM range 0x0830FC60-0x0830FC67
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0600, 0x1004, 0x0F0C, 0x0008
 	@ pret/pokeemerald-jp direct xref for 0x0830FC68: new_game.s: ClearAllContestWinnerPics
 	.globl gNewGameData_0830FC68
-gNewGameData_0830FC68:
-	.globl gUnknown_830FC68
-gUnknown_830FC68: @ 0x0830FC68
+gNewGameData_0830FC68: @ 0x0830FC68
 	@ analyzed canonical ROM range 0x0830FC68-0x0830FC87
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -19,9 +15,7 @@ gUnknown_830FC68: @ 0x0830FC68
 	.2byte 0x0000, 0x0000, 0x0000, 0x00FF, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0830FC88: overworld.s: ApplyCurrentWarp
 	.globl gOverworldData_0830FC88
-gOverworldData_0830FC88:
-	.globl gUnknown_830FC88
-gUnknown_830FC88: @ 0x0830FC88
+gOverworldData_0830FC88: @ 0x0830FC88
 	@ analyzed canonical ROM range 0x0830FC88-0x0830FCAF
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x28
@@ -41,18 +35,14 @@ gUnknown_830FCB0: @ 0x0830FCB0
 	.2byte 0x0001, 0x0000, 0xFFFF, 0xFFFF
 	@ pret/pokeemerald-jp direct xref for 0x0830FCF8: overworld.s: InitOverworldBgs
 	.globl gOverworldData_0830FCF8
-gOverworldData_0830FCF8:
-	.globl gUnknown_830FCF8
-gUnknown_830FCF8: @ 0x0830FCF8
+gOverworldData_0830FCF8: @ 0x0830FCF8
 	@ analyzed canonical ROM range 0x0830FCF8-0x0830FD07
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0x01F8, 0x0000, 0x11D1, 0x0000, 0x21C2, 0x0000, 0x31E3, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0830FD08: overworld.s: InitCurrentFlashLevelScanlineEffect
 	.globl gOverworldData_0830FD08
-gOverworldData_0830FD08:
-	.globl gUnknown_830FD08
-gUnknown_830FD08: @ 0x0830FD08
+gOverworldData_0830FD08: @ 0x0830FD08
 	@ analyzed canonical ROM range 0x0830FD08-0x0830FD13
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xC

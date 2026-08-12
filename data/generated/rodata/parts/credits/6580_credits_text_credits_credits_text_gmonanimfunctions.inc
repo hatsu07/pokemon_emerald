@@ -1,7 +1,5 @@
 	.globl gMonAnimFunctions
-	.globl gUnknown_85D34E8
-gMonAnimFunctions:
-gUnknown_85D34E8: @ 0x085D34E8
+gMonAnimFunctions: @ 0x085D34E8
 	mon_anim_function ANIM_V_SQUISH_AND_BOUNCE, pokemonanimfunc_00
 	mon_anim_function ANIM_CIRCULAR_STRETCH_TWICE, pokemonanimfunc_01
 	mon_anim_function ANIM_H_VIBRATE, pokemonanimfunc_02
@@ -157,9 +155,7 @@ gUnknown_85D34E8: @ 0x085D34E8
 	.error "Pokemon animation function table has the wrong size"
 	.endif
 	.globl gBackAnimSetToAnimIds
-	.globl gUnknown_85D3744
-gBackAnimSetToAnimIds:
-gUnknown_85D3744: @ 0x085D3744
+gBackAnimSetToAnimIds: @ 0x085D3744
 	back_anim_variants BACK_ANIM_H_VIBRATE, ANIM_H_VIBRATE_FASTEST, ANIM_H_VIBRATE_FAST, ANIM_H_VIBRATE
 	back_anim_variants BACK_ANIM_H_SLIDE, ANIM_H_SLIDE_FAST, ANIM_H_SLIDE, ANIM_H_SLIDE_SLOW
 	back_anim_variants BACK_ANIM_H_SPRING, ANIM_H_SPRING_FAST, ANIM_H_SPRING, ANIM_H_SPRING_SLOW
@@ -189,9 +185,7 @@ gUnknown_85D3744: @ 0x085D3744
 	.error "Pokemon back animation variant table has the wrong size"
 	.endif
 	.globl gBackAnimNatureModTable
-	.globl gUnknown_85D378F
-gBackAnimNatureModTable:
-gUnknown_85D378F: @ 0x085D378F
+gBackAnimNatureModTable: @ 0x085D378F
 	back_anim_nature_mod NATURE_HARDY,   0
 	back_anim_nature_mod NATURE_LONELY,  2
 	back_anim_nature_mod NATURE_BRAVE,   0
@@ -230,15 +224,11 @@ gMonAffineAnim_HorizontalFlip: @ 0x085D37B8
 	sprite_affine_anim_end
 
 	.globl gMonAffineAnims
-	.globl gUnknown_85D37C8
-gMonAffineAnims:
-gUnknown_85D37C8: @ 0x085D37C8
+gMonAffineAnims: @ 0x085D37C8
 	sprite_affine_anim_sequence gMonAffineAnim_Normal
 	sprite_affine_anim_sequence gMonAffineAnim_HorizontalFlip
 	.globl gMonAnimZigzagFastData
-	.globl gUnknown_85D37D0
-gMonAnimZigzagFastData:
-gUnknown_85D37D0: @ 0x085D37D0
+gMonAnimZigzagFastData: @ 0x085D37D0
 	mon_anim_offset_step -1, -1, 6
 	mon_anim_offset_step  2,  0, 6
 	mon_anim_offset_step -2,  2, 6
@@ -250,9 +240,7 @@ gUnknown_85D37D0: @ 0x085D37D0
 	mon_anim_offset_step -1, -1, 6
 	mon_anim_offset_step  0,  0, 0
 	.globl gMonAnimBounceRotateToSidesData
-	.globl gUnknown_85D37EE
-gMonAnimBounceRotateToSidesData:
-gUnknown_85D37EE: @ 0x085D37EE
+gMonAnimBounceRotateToSidesData: @ 0x085D37EE
 	@ Variant 0
 	mon_anim_interpolation_step  0,  8,  8
 	mon_anim_interpolation_step  8, -8, 12
@@ -272,9 +260,7 @@ gUnknown_85D37EE: @ 0x085D37EE
 	mon_anim_interpolation_step -8,  0, 24
 	mon_anim_interpolation_step  0,  0,  0
 	.globl gMonAnimTriangleDownData
-	.globl gUnknown_85D381E
-gMonAnimTriangleDownData:
-gUnknown_85D381E: @ 0x085D381E
+gMonAnimTriangleDownData: @ 0x085D381E
 	mon_anim_offset_step  1,  1, 12
 	mon_anim_offset_step -2,  0, 12
 	mon_anim_offset_step  1, -1, 12
@@ -333,24 +319,18 @@ gBackAnimYellowFlashSlowSteps: @ 0x085D38B4
 	back_anim_yellow_flash_step FALSE, -1
 
 	.globl gBackAnimYellowFlashStepTables
-	.globl gUnknown_85D38DC
-gBackAnimYellowFlashStepTables:
-gUnknown_85D38DC: @ 0x085D38DC
+gBackAnimYellowFlashStepTables: @ 0x085D38DC
 	.4byte gBackAnimYellowFlashFastSteps
 	.4byte gBackAnimYellowFlashNormalSteps
 	.4byte gBackAnimYellowFlashSlowSteps
 	.globl gBackAnimBlendColors
-	.globl gUnknown_85D38E8
-gBackAnimBlendColors:
-gUnknown_85D38E8: @ 0x085D38E8
+gBackAnimBlendColors: @ 0x085D38E8
 	.2byte MON_ANIM_BLEND_RED
 	.2byte MON_ANIM_BLEND_GREEN
 	.2byte MON_ANIM_BLEND_BLUE
 	.2byte MON_ANIM_BLEND_BLACK
 	.globl gRecordedOpponentBufferCommands
-	.globl gUnknown_85D38F0
-gRecordedOpponentBufferCommands:
-gUnknown_85D38F0: @ 0x085D38F0
+gRecordedOpponentBufferCommands: @ 0x085D38F0
 	battle_controller_command gRecordedOpponentBufferCommands, CONTROLLER_GETMONDATA, RecordedOpponentHandleGetMonData
 	battle_controller_command gRecordedOpponentBufferCommands, CONTROLLER_GETRAWMONDATA, RecordedOpponentHandleGetRawMonData
 	battle_controller_command gRecordedOpponentBufferCommands, CONTROLLER_SETMONDATA, RecordedOpponentHandleSetMonData
@@ -412,9 +392,7 @@ gUnknown_85D38F0: @ 0x085D38F0
 	.error "Recorded opponent command table has the wrong size"
 	.endif
 	.globl gRecordedPlayerBufferCommands
-	.globl gUnknown_85D39D4
-gRecordedPlayerBufferCommands:
-gUnknown_85D39D4: @ 0x085D39D4
+gRecordedPlayerBufferCommands: @ 0x085D39D4
 	battle_controller_command gRecordedPlayerBufferCommands, CONTROLLER_GETMONDATA, RecordedPlayerHandleGetMonData
 	battle_controller_command gRecordedPlayerBufferCommands, CONTROLLER_GETRAWMONDATA, RecordedPlayerHandleSuccessBallThrowAnim
 	battle_controller_command gRecordedPlayerBufferCommands, CONTROLLER_SETMONDATA, RecordedPlayerHandleSetMonData
@@ -476,9 +454,7 @@ gUnknown_85D39D4: @ 0x085D39D4
 	.error "Recorded player command table has the wrong size"
 	.endif
 	.globl gDummyPicData
-	.globl gUnknown_85D3AB8
-gDummyPicData:
-gUnknown_85D3AB8: @ 0x085D3AB8
+gDummyPicData: @ 0x085D3AB8
 	.4byte NULL @ frames
 	.4byte NULL @ images
 	@ ANALYSIS: RAW_BLOCK size=0x3
@@ -486,19 +462,13 @@ gUnknown_85D3AB8: @ 0x085D3AB8
 	.byte 0 @ sprite ID
 	.byte FALSE @ active
 	.globl gPicSpriteOamDataNormal
-	.globl gUnknown_85D3AC4
-gPicSpriteOamDataNormal:
-gUnknown_85D3AC4: @ 0x085D3AC4
+gPicSpriteOamDataNormal: @ 0x085D3AC4
 	rodata_sprite_oam_data 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0
 	.globl gPicSpriteOamDataAffine
-	.globl gUnknown_85D3ACC
-gPicSpriteOamDataAffine:
-gUnknown_85D3ACC: @ 0x085D3ACC
+gPicSpriteOamDataAffine: @ 0x085D3ACC
 	rodata_sprite_oam_data 0, 1, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0
 	.globl gContestLadyMonGfxIds
-	.globl gUnknown_85D3AD4
-gContestLadyMonGfxIds:
-gUnknown_85D3AD4: @ 0x085D3AD4
+gContestLadyMonGfxIds: @ 0x085D3AD4
 	@ ANALYSIS: RAW_BLOCK size=0xA
 	.2byte 98  @ CONTEST_COOL
 	.2byte 203 @ CONTEST_BEAUTY
@@ -506,9 +476,7 @@ gUnknown_85D3AD4: @ 0x085D3AD4
 	.2byte 204 @ CONTEST_SMART
 	.2byte 209 @ CONTEST_TOUGH
 	.globl gLilycoveLadyGfxIds
-	.globl gUnknown_85D3ADE
-gLilycoveLadyGfxIds:
-gUnknown_85D3ADE: @ 0x085D3ADE
+gLilycoveLadyGfxIds: @ 0x085D3ADE
 	@ ANALYSIS: RAW_BLOCK size=0x6
 	.2byte 26 @ Quiz Lady
 	.2byte 20 @ Favor Lady
@@ -516,11 +484,9 @@ gUnknown_85D3ADE: @ 0x085D3ADE
 	.globl gQuizLadyQuestions
 	.globl gQuizLadyQuestion0
 	.globl gUnknownEasyChatWordList_5D3AE4
-	.globl gUnknown_85D3AE4
 gQuizLadyQuestions:
 gQuizLadyQuestion0:
-gUnknownEasyChatWordList_5D3AE4:
-gUnknown_85D3AE4: @ 0x085D3AE4
+gUnknownEasyChatWordList_5D3AE4: @ 0x085D3AE4
 	quiz_lady_question 0, 0x0602, 0x1413, 0x020E, 0x0E1D, 0x1E1F, 0x0C03, 0x2A70, 0x2ADA, 0x013A
 	.globl gQuizLadyQuestion1
 gQuizLadyQuestion1: @ 0x085D3AF6

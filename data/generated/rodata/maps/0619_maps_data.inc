@@ -478,9 +478,7 @@ gUnknown_846F8BC: @ 0x0846F8BC
 	.4byte MetatileBehavior_IsHorizontalRail
 	@ pret/pokeemerald-jp direct xref for 0x0846F8D0: field_player_avatar.s: check_acro_bike_metatile
 	.globl gFieldPlayerAvatarData_0846F8D0
-gFieldPlayerAvatarData_0846F8D0:
-	.globl gUnknown_846F8D0
-gUnknown_846F8D0: @ 0x0846F8D0
+gFieldPlayerAvatarData_0846F8D0: @ 0x0846F8D0
 gAcroBikeMetatileCollisionTypeIds: @ 0x0846F8D0
 	@ Indexed with the predicate table at gUnknown_846F8BC by check_acro_bike_metatile.
 	.byte 0x09 @ bumpy slope
@@ -507,9 +505,7 @@ gUnknown_846F8F8: @ 0x0846F8F8
 	.4byte MetatileBehavior_IsEastArrowWarp
 	@ pret/pokeemerald-jp direct xref for 0x0846F908: field_player_avatar.s: GetPlayerAvatarGraphicsIdByStateIdAndGender
 	.globl gFieldPlayerAvatarData_0846F908
-gFieldPlayerAvatarData_0846F908:
-	.globl gUnknown_846F908
-gUnknown_846F908: @ 0x0846F908
+gFieldPlayerAvatarData_0846F908: @ 0x0846F908
 gPlayerAvatarGraphicsIdsByStateAndGender: @ 0x0846F908
 	@ state 0: normal
 	.byte 0x64, 0x69
@@ -529,9 +525,7 @@ gPlayerAvatarGraphicsIdsByStateAndGender: @ 0x0846F908
 	.byte 0xBF, 0xC0
 	@ pret/pokeemerald-jp direct xref for 0x0846F918: field_player_avatar.s: sub_0808B6B8
 	.globl gFieldPlayerAvatarData_0846F918
-gFieldPlayerAvatarData_0846F918:
-	.globl gUnknown_846F918
-gUnknown_846F918: @ 0x0846F918
+gFieldPlayerAvatarData_0846F918: @ 0x0846F918
 gPlayerAvatarGraphicsIdsByStateAndSaveGender: @ 0x0846F918
 	@ state 0: normal
 	.byte 0x00, 0x59
@@ -551,23 +545,17 @@ gPlayerAvatarGraphicsIdsByStateAndSaveGender: @ 0x0846F918
 	.byte 0xBF, 0xC0
 	@ pret/pokeemerald-jp direct xref for 0x0846F928: field_player_avatar.s: sub_0808B6D0
 	.globl gFieldPlayerAvatarData_0846F928
-gFieldPlayerAvatarData_0846F928:
-	.globl gUnknown_846F928
-gUnknown_846F928: @ 0x0846F928
+gFieldPlayerAvatarData_0846F928: @ 0x0846F928
 gUnknownPlayerAvatarGraphicsIdsByGender: @ 0x0846F928
 	.byte 0xE6, 0xE7
 	@ pret/pokeemerald-jp direct xref for 0x0846F92A: field_player_avatar.s: GetFRLGAvatarGraphicsIdByGender
 	.globl gFieldPlayerAvatarData_0846F92A
-gFieldPlayerAvatarData_0846F92A:
-	.globl gUnknown_846F92A
-gUnknown_846F92A: @ 0x0846F92A
+gFieldPlayerAvatarData_0846F92A: @ 0x0846F92A
 gFRLGPlayerAvatarGraphicsIdsByGender: @ 0x0846F92A
 	.byte 0xEB, 0xEC
 	@ pret/pokeemerald-jp direct xref for 0x0846F92C: field_player_avatar.s: GetPlayerAvatarGraphicsIdByCurrentState, GetPlayerAvatarStateTransitionByGraphicsId
 	.globl gFieldPlayerAvatarData_0846F92C
-gFieldPlayerAvatarData_0846F92C:
-	.globl gUnknown_846F92C
-gUnknown_846F92C: @ 0x0846F92C
+gFieldPlayerAvatarData_0846F92C: @ 0x0846F92C
 gPlayerAvatarGraphicsIdToStateFlagTable: @ 0x0846F92C
 	@ male save gender: graphicsId, state flag
 	.byte 0x00, 0x01 @ normal
@@ -603,17 +591,13 @@ gUnknown_846F960: @ 0x0846F960
 	.4byte PlayerAvatar_SecretBaseMatSpinStep3
 	@ pret/pokeemerald-jp direct xref for 0x0846F970: field_player_avatar.s: PlayerAvatar_SecretBaseMatSpinStep1
 	.globl gFieldPlayerAvatarData_0846F970
-gFieldPlayerAvatarData_0846F970:
-	.globl gUnknown_846F970
-gUnknown_846F970: @ 0x0846F970
+gFieldPlayerAvatarData_0846F970: @ 0x0846F970
 gSecretBaseSpinMatNextDirections: @ 0x0846F970
 	@ Indexed by facingDirection - 1.
 	.byte 0x03, 0x04, 0x02, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x0846F974: field_player_avatar.s: PlayerAvatar_SecretBaseMatSpinStep2
 	.globl gFieldPlayerAvatarData_0846F974
-gFieldPlayerAvatarData_0846F974:
-	.globl gUnknown_846F974
-gUnknown_846F974: @ 0x0846F974
+gFieldPlayerAvatarData_0846F974: @ 0x0846F974
 gSecretBaseSpinMatMovementActions: @ 0x0846F974
 	.byte 0x10, 0x10, 0x11, 0x12, 0x13
 	.byte 0x00, 0x00, 0x00 @ padding
@@ -637,27 +621,21 @@ gUnknown_846F97C: @ 0x0846F97C
 	.4byte Fishing16
 	@ pret/pokeemerald-jp direct xref for 0x0846F9BC: field_player_avatar.s: Fishing2
 	.globl gFieldPlayerAvatarData_0846F9BC
-gFieldPlayerAvatarData_0846F9BC:
-	.globl gUnknown_846F9BC
-gUnknown_846F9BC: @ 0x0846F9BC
+gFieldPlayerAvatarData_0846F9BC: @ 0x0846F9BC
 gFishingWaitStartByRod: @ 0x0846F9BC
 	.2byte 1 @ old rod
 	.2byte 1 @ good rod
 	.2byte 1 @ super rod
 	@ pret/pokeemerald-jp direct xref for 0x0846F9C2: field_player_avatar.s: Fishing2
 	.globl gFieldPlayerAvatarData_0846F9C2
-gFieldPlayerAvatarData_0846F9C2:
-	.globl gUnknown_846F9C2
-gUnknown_846F9C2: @ 0x0846F9C2
+gFieldPlayerAvatarData_0846F9C2: @ 0x0846F9C2
 gFishingWaitRangeByRod: @ 0x0846F9C2
 	.2byte 1 @ old rod
 	.2byte 3 @ good rod
 	.2byte 6 @ super rod
 	@ pret/pokeemerald-jp direct xref for 0x0846F9C8: field_player_avatar.s: Fishing5
 	.globl gFieldPlayerAvatarData_0846F9C8
-gFieldPlayerAvatarData_0846F9C8:
-	.globl gUnknown_846F9C8
-gUnknown_846F9C8: @ 0x0846F9C8
+gFieldPlayerAvatarData_0846F9C8: @ 0x0846F9C8
 gFishingEllipsisDotText: @ 0x0846F9C8
 	.string "・$"
 	.if (. - gFishingEllipsisDotText) != 0x2
@@ -672,18 +650,14 @@ gFishingMonOnHookText:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0846F9D6: field_player_avatar.s: Fishing8
 	.globl gFieldPlayerAvatarData_0846F9D6
-gFieldPlayerAvatarData_0846F9D6:
-	.globl gUnknown_846F9D6
-gUnknown_846F9D6: @ 0x0846F9D6
+gFieldPlayerAvatarData_0846F9D6: @ 0x0846F9D6
 gFishingButtonPressTimeoutByRod: @ 0x0846F9D6
 	.2byte 36 @ old rod
 	.2byte 33 @ good rod
 	.2byte 30 @ super rod
 	@ pret/pokeemerald-jp direct xref for 0x0846F9DC: field_player_avatar.s: Fishing9
 	.globl gFieldPlayerAvatarData_0846F9DC
-gFieldPlayerAvatarData_0846F9DC:
-	.globl gUnknown_846F9DC
-gUnknown_846F9DC: @ 0x0846F9DC
+gFieldPlayerAvatarData_0846F9DC: @ 0x0846F9DC
 gFishingBiteChanceByRodAndAttempt: @ 0x0846F9DC
 	@ old rod
 	.2byte 0, 0

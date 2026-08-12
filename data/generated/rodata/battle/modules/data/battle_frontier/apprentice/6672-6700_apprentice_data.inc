@@ -13,9 +13,7 @@ gText_Rom_5DC21C: @ 0x085DC21C
 	.byte 0x00, 0x00, 0x00, 0xC9, 0xBD, 0x43, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085DC228: apprentice.s: CreateMenuWithAnswers, sub_081A026C
 	.globl gApprenticeData_085DC228
-gApprenticeData_085DC228:
-	.globl gUnknown_85DC228
-gUnknown_85DC228: @ 0x085DC228
+gApprenticeData_085DC228: @ 0x085DC228
 	@ analyzed canonical ROM range 0x085DC228-0x085DC23D
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x16
@@ -23,9 +21,7 @@ gUnknown_85DC228: @ 0x085DC228
 	.2byte 0x00D6, 0x0182, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085DC23E: frontier_util.s: CopyFrontierTrainerText
 	.globl gFrontierUtilData_085DC23E
-gFrontierUtilData_085DC23E:
-	.globl gUnknown_85DC23E
-gUnknown_85DC23E: @ 0x085DC23E
+gFrontierUtilData_085DC23E: @ 0x085DC23E
 	@ analyzed canonical ROM range 0x085DC23E-0x085DC24B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xE

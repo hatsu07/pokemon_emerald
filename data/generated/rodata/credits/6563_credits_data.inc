@@ -4,9 +4,7 @@ gUnknown_85CD123: @ 0x085CD123
 	.string "できごとを　よみこみちゅう！！$"
 	@ pret/pokeemerald-jp direct xref for 0x085CD133: berry_tag_screen.s: CB2_MysteryEventMenu
 	.globl gBerryTagScreenData_085CD133
-gBerryTagScreenData_085CD133:
-	.globl gUnknown_85CD133
-gUnknown_85CD133: @ 0x085CD133
+gBerryTagScreenData_085CD133: @ 0x085CD133
 	@ analyzed canonical ROM range 0x085CD133-0x085CD158
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x26
@@ -15,4 +13,3 @@ gUnknown_85CD133: @ 0x085CD133
 	.byte 0x00, 0x08, 0x41, 0x0B, 0x02, 0xFF
 	.globl gUnknown_85CD159
 gUnknown_85CD159: @ 0x085CD159
-

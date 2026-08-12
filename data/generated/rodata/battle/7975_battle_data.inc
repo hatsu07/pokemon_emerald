@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085F7C80: menu_specialized.s: LoadMoveRelearnerMovesList
 	.globl gMenuSpecializedData_085F7C80
-gMenuSpecializedData_085F7C80:
-	.globl gUnknown_85F7C80
-gUnknown_85F7C80: @ 0x085F7C80
+gMenuSpecializedData_085F7C80: @ 0x085F7C80
 	@ analyzed canonical ROM range 0x085F7C80-0x085FA897
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2C18
@@ -714,18 +712,14 @@ gUnknown_85F7C80: @ 0x085F7C80
 	.byte 0x80, 0xA8, 0x5F, 0x08, 0x88, 0xA8, 0x5F, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x085FA898: menu_specialized.s: sub_081D2800
 	.globl gMenuSpecializedData_085FA898
-gMenuSpecializedData_085FA898:
-	.globl gUnknown_85FA898
-gUnknown_85FA898: @ 0x085FA898
+gMenuSpecializedData_085FA898: @ 0x085FA898
 	@ analyzed canonical ROM range 0x085FA898-0x085FA89F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0000, 0x0000, 0x0800, 0x0064
 	@ pret/pokeemerald-jp direct xref for 0x085FA8A0: menu_specialized.s: sub_081D2800
 	.globl gMenuSpecializedData_085FA8A0
-gMenuSpecializedData_085FA8A0:
-	.globl gUnknown_85FA8A0
-gUnknown_85FA8A0: @ 0x085FA8A0
+gMenuSpecializedData_085FA8A0: @ 0x085FA8A0
 	@ analyzed canonical ROM range 0x085FA8A0-0x085FA8B7
 sSpriteTemplate_085FA8A0: @ 0x085FA8A0
 	rodata_sprite_template 0x0064, 0x0064, 0x085FA870, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
@@ -737,9 +731,7 @@ gUnknown_85FA8B8: @ 0x085FA8B8
 	.4byte OFFSET_REG_NR13
 	@ pret/pokeemerald-jp direct xref for 0x085FA8C0: menu_specialized.s: sub_081D284C
 	.globl gMenuSpecializedData_085FA8C0
-gMenuSpecializedData_085FA8C0:
-	.globl gUnknown_85FA8C0
-gUnknown_85FA8C0: @ 0x085FA8C0
+gMenuSpecializedData_085FA8C0: @ 0x085FA8C0
 	@ analyzed canonical ROM range 0x085FA8C0-0x085FA8DF
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -753,9 +745,7 @@ gUnknown_85FA8C0: @ 0x085FA8C0
 	.4byte 0 @ +0x1C
 	@ pret/pokeemerald-jp direct xref for 0x085FA8E0: menu_specialized.s: sub_081D284C
 	.globl gMenuSpecializedData_085FA8E0
-gMenuSpecializedData_085FA8E0:
-	.globl gUnknown_85FA8E0
-gUnknown_85FA8E0: @ 0x085FA8E0
+gMenuSpecializedData_085FA8E0: @ 0x085FA8E0
 	@ analyzed canonical ROM range 0x085FA8E0-0x085FA8F7
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x18
@@ -763,26 +753,20 @@ gUnknown_85FA8E0: @ 0x085FA8E0
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085FA8F8: menu_specialized.s: sub_081D284C
 	.globl gMenuSpecializedData_085FA8F8
-gMenuSpecializedData_085FA8F8:
-	.globl gUnknown_85FA8F8
-gUnknown_85FA8F8: @ 0x085FA8F8
+gMenuSpecializedData_085FA8F8: @ 0x085FA8F8
 	@ analyzed canonical ROM range 0x085FA8F8-0x085FA90F
 sSpriteTemplate_085FA8F8: @ 0x085FA8F8
 	rodata_sprite_template 0x0065, 0x0065, 0x085FA878, 0x085FA890, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x085FA910: menu_specialized.s: sub_081D28E0
 	.globl gMenuSpecializedData_085FA910
-gMenuSpecializedData_085FA910:
-	.globl gUnknown_85FA910
-gUnknown_85FA910: @ 0x085FA910
+gMenuSpecializedData_085FA910: @ 0x085FA910
 	@ analyzed canonical ROM range 0x085FA910-0x085FA917
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x58, 0x9D, 0x5F, 0x08, 0x80, 0x03, 0x68, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085FA918: menu_specialized.s: sub_081D28E0
 	.globl gMenuSpecializedData_085FA918
-gMenuSpecializedData_085FA918:
-	.globl gUnknown_85FA918
-gUnknown_85FA918: @ 0x085FA918
+gMenuSpecializedData_085FA918: @ 0x085FA918
 	@ analyzed canonical ROM range 0x085FA918-0x085FA963
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4C
@@ -793,17 +777,13 @@ gUnknown_85FA918: @ 0x085FA918
 	.byte 0x48, 0xA9, 0x5F, 0x08, 0x50, 0xA9, 0x5F, 0x08, 0x58, 0xA9, 0x5F, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x085FA964: menu_specialized.s: sub_081D2AB0
 	.globl gMenuSpecializedData_085FA964
-gMenuSpecializedData_085FA964:
-	.globl gUnknown_85FA964
-gUnknown_85FA964: @ 0x085FA964
+gMenuSpecializedData_085FA964: @ 0x085FA964
 	@ analyzed canonical ROM range 0x085FA964-0x085FA97B
 sSpriteTemplate_085FA964: @ 0x085FA964
 	rodata_sprite_template 0x0068, 0x0068, 0x085FA920, 0x085FA948, 0, gDummySpriteAffineAnimTable, sub_081D2B94
 	@ pret/pokeemerald-jp direct xref for 0x085FA97C: menu_specialized.s: sub_081D2944
 	.globl gMenuSpecializedData_085FA97C
-gMenuSpecializedData_085FA97C:
-	.globl gUnknown_85FA97C
-gUnknown_85FA97C: @ 0x085FA97C
+gMenuSpecializedData_085FA97C: @ 0x085FA97C
 	@ analyzed canonical ROM range 0x085FA97C-0x085FA9A3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x28

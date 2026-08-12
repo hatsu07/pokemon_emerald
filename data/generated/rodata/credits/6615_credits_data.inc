@@ -280,9 +280,7 @@ gUnknown_85D9C38: @ 0x085D9C38
 	.byte 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0x0E
 	@ pret/pokeemerald-jp direct xref for 0x085DAD38: battle_factory_screen.s: CB2_InitSelectScreen, CB2_InitSwapScreen
 	.globl gBattleFactoryScreenData_085DAD38
-gBattleFactoryScreenData_085DAD38:
-	.globl gUnknown_85DAD38
-gUnknown_85DAD38: @ 0x085DAD38
+gBattleFactoryScreenData_085DAD38: @ 0x085DAD38
 	@ analyzed canonical ROM range 0x085DAD38-0x085DB177
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x440
@@ -356,9 +354,7 @@ gUnknown_85DAD38: @ 0x085DAD38
 	.byte 0x77, 0x77, 0x44, 0x44, 0x77, 0x77, 0x44, 0x44, 0x77, 0x77, 0x44, 0x44, 0x77, 0x77, 0x44, 0x44
 	@ pret/pokeemerald-jp direct xref for 0x085DB178: battle_factory_screen.s: CB2_InitSelectScreen, CB2_InitSwapScreen
 	.globl gBattleFactoryScreenData_085DB178
-gBattleFactoryScreenData_085DB178:
-	.globl gUnknown_85DB178
-gUnknown_85DB178: @ 0x085DB178
+gBattleFactoryScreenData_085DB178: @ 0x085DB178
 	@ analyzed canonical ROM range 0x085DB178-0x085DB977
 	@ semantic recovery: rodata; byte-verified against linked ROM
 	@ ANALYSIS: RAW_BLOCK size=0xCC
@@ -496,9 +492,7 @@ FunctionPointerTable_JP_085DB244: @ 0x085DB244
 	.byte 0x01, 0x00, 0x01, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085DB978: battle_factory_screen.s: CB2_InitSelectScreen, CB2_InitSwapScreen
 	.globl gBattleFactoryScreenData_085DB978
-gBattleFactoryScreenData_085DB978:
-	.globl gUnknown_85DB978
-gUnknown_85DB978: @ 0x085DB978
+gBattleFactoryScreenData_085DB978: @ 0x085DB978
 	@ analyzed canonical ROM range 0x085DB978-0x085DBA77
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x100
@@ -520,9 +514,7 @@ gUnknown_85DB978: @ 0x085DB978
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085DBA78: battle_factory_screen.s: CB2_InitSelectScreen, CB2_InitSwapScreen
 	.globl gBattleFactoryScreenData_085DBA78
-gBattleFactoryScreenData_085DBA78:
-	.globl gUnknown_85DBA78
-gUnknown_85DBA78: @ 0x085DBA78
+gBattleFactoryScreenData_085DBA78: @ 0x085DBA78
 	@ analyzed canonical ROM range 0x085DBA78-0x085DBAD7
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x60
@@ -534,9 +526,7 @@ gUnknown_85DBA78: @ 0x085DBA78
 	.2byte 0x1111, 0x1111, 0x1111, 0x1111, 0x1111, 0x1111, 0x1111, 0x1111
 	@ pret/pokeemerald-jp direct xref for 0x085DBAD8: battle_factory_screen.s: CB2_InitSelectScreen, CB2_InitSwapScreen
 	.globl gBattleFactoryScreenData_085DBAD8
-gBattleFactoryScreenData_085DBAD8:
-	.globl gUnknown_85DBAD8
-gUnknown_85DBAD8: @ 0x085DBAD8
+gBattleFactoryScreenData_085DBAD8: @ 0x085DBAD8
 	@ analyzed canonical ROM range 0x085DBAD8-0x085DBB17
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x40
@@ -556,9 +546,7 @@ gUnknown_85DBB18: @ 0x085DBB18
 	.byte 0xFA, 0x77, 0xFA, 0x77, 0xFA, 0x77, 0xFA, 0x77, 0xFA, 0x77, 0xFA, 0x77, 0xFA, 0x77, 0xFA, 0x77
 	@ pret/pokeemerald-jp direct xref for 0x085DBB38: battle_factory_screen.s: CB2_InitSelectScreen
 	.globl gBattleFactoryScreenData_085DBB38
-gBattleFactoryScreenData_085DBB38:
-	.globl gUnknown_85DBB38
-gUnknown_85DBB38: @ 0x085DBB38
+gBattleFactoryScreenData_085DBB38: @ 0x085DBB38
 	@ analyzed canonical ROM range 0x085DBB38-0x085DBB5F
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x28
@@ -574,18 +562,14 @@ gUnknown_85DBB38: @ 0x085DBB38
 	.4byte 0 @ +0x24
 	@ pret/pokeemerald-jp direct xref for 0x085DBB60: battle_factory_screen.s: CB2_InitSelectScreen
 	.globl gBattleFactoryScreenData_085DBB60
-gBattleFactoryScreenData_085DBB60:
-	.globl gUnknown_85DBB60
-gUnknown_85DBB60: @ 0x085DBB60
+gBattleFactoryScreenData_085DBB60: @ 0x085DBB60
 	@ analyzed canonical ROM range 0x085DBB60-0x085DBB6F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0x06BC, 0x0859, 0x0800, 0x0064, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085DBB70: battle_factory_screen.s: CB2_InitSelectScreen
 	.globl gBattleFactoryScreenData_085DBB70
-gBattleFactoryScreenData_085DBB70:
-	.globl gUnknown_85DBB70
-gUnknown_85DBB70: @ 0x085DBB70
+gBattleFactoryScreenData_085DBB70: @ 0x085DBB70
 	@ analyzed canonical ROM range 0x085DBB70-0x085DBB97
 	@ pointer/nullable table
 	.4byte gUnknown_85D9C38 @ +0x0
@@ -602,4 +586,3 @@ gUnknown_85DBB70: @ 0x085DBB70
 	.4byte 0 @ +0x24
 	.globl gUnknown_85DBB98
 gUnknown_85DBB98: @ 0x085DBB98
-

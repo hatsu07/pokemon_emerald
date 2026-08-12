@@ -10,9 +10,7 @@ gText_Rom_5C957F: @ 0x085C957F
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085C958E: item_use.s: sub_080FE2E8
 	.globl gItemUseData_085C958E
-gItemUseData_085C958E:
-	.globl gUnknown_85C958E
-gUnknown_85C958E: @ 0x085C958E
+gItemUseData_085C958E: @ 0x085C958E
 	@ analyzed canonical ROM range 0x085C958E-0x085C95B5
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x28

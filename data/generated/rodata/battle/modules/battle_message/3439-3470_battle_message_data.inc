@@ -54,9 +54,7 @@ gText_Rom_5AB0C8: @ 0x085AB0C8
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085AB0D0: battle_message.s: ExpandBattleTextBuffPlaceholders
 	.globl gBattleMessageData_085AB0D0
-gBattleMessageData_085AB0D0:
-	.globl gUnknown_85AB0D0
-gUnknown_85AB0D0: @ 0x085AB0D0
+gBattleMessageData_085AB0D0: @ 0x085AB0D0
 	@ confirmed contiguous ROM pointer table: 5 entries from this address
 sPointerTable_085AB0D0:
 	@ analyzed canonical ROM range 0x085AB0D0-0x085AB0E8
@@ -170,4 +168,3 @@ gText_Rom_5AB192: @ 0x085AB192
 	.if (. - gText_Rom_5AB192) < 0x18
 	.space 0x18 - (. - gText_Rom_5AB192)
 	.endif
-

@@ -10,9 +10,7 @@ gText_Rom_5C9AF7: @ 0x085C9AF7
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085C9B07: fldeff_softboiled.s: sub_081616BC
 	.globl gFldeffSoftboiledData_085C9B07
-gFldeffSoftboiledData_085C9B07:
-	.globl gUnknown_85C9B07
-gUnknown_85C9B07: @ 0x085C9B07
+gFldeffSoftboiledData_085C9B07: @ 0x085C9B07
 	@ analyzed canonical ROM range 0x085C9B07-0x085C9B19
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x13
@@ -53,9 +51,7 @@ gText_Rom_5C9B43: @ 0x085C9B43
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085C9B59: party_menu.s: sub_081B871C
 	.globl gPartyMenuData_085C9B59
-gPartyMenuData_085C9B59:
-	.globl gUnknown_85C9B59
-gUnknown_85C9B59: @ 0x085C9B59
+gPartyMenuData_085C9B59: @ 0x085C9B59
 	@ analyzed canonical ROM range 0x085C9B59-0x085C9B75
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x1D

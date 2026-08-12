@@ -5,9 +5,7 @@ gUnknown_8563134: @ 0x08563134
 	.string "ほしの　ちからを　もっている　らしい。$"
 	@ pret/pokeemerald-jp direct xref for 0x08563150: berry_crush.s: sub_08021758
 	.globl gBerryCrushData_08563150
-gBerryCrushData_08563150:
-	.globl gUnknown_8563150
-gUnknown_8563150: @ 0x08563150
+gBerryCrushData_08563150: @ 0x08563150
 	@ analyzed canonical ROM range 0x08563150-0x08563603
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x4B4
@@ -89,9 +87,7 @@ gUnknown_8563150: @ 0x08563150
 	.2byte 0x2828, 0x0028
 	@ pret/pokeemerald-jp direct xref for 0x08563604: berry_crush.s: sub_08022C80
 	.globl gBerryCrushData_08563604
-gBerryCrushData_08563604:
-	.globl gUnknown_8563604
-gUnknown_8563604: @ 0x08563604
+gBerryCrushData_08563604: @ 0x08563604
 	@ analyzed canonical ROM range 0x08563604-0x085636AF
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xAC
@@ -108,9 +104,7 @@ gUnknown_8563604: @ 0x08563604
 	.2byte 0x00C8, 0x02EE, 0x00C8, 0x02EE, 0x0096, 0x00C8
 	@ pret/pokeemerald-jp direct xref for 0x085636B0: berry.s: BerryTreeGrow, BerryTreeTimeUpdate, ClearBerryTrees, PlantBerryTree, RemoveBerryTree
 	.globl gBerryData_085636B0
-gBerryData_085636B0:
-	.globl gUnknown_85636B0
-gUnknown_85636B0: @ 0x085636B0
+gBerryData_085636B0: @ 0x085636B0
 	@ analyzed canonical ROM range 0x085636B0-0x08564217
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x8
@@ -1094,9 +1088,7 @@ gUnknown_85636B0: @ 0x085636B0
 	.4byte 0 @ +0xB64
 	@ pret/pokeemerald-jp direct xref for 0x08564218: script_menu.s: DrawMultichoiceMenu, sp106_CreateStartMenu
 	.globl gScriptMenuData_08564218
-gScriptMenuData_08564218:
-	.globl gUnknown_8564218
-gUnknown_8564218: @ 0x08564218
+gScriptMenuData_08564218: @ 0x08564218
 	@ analyzed canonical ROM range 0x08564218-0x0856459F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x388
@@ -1196,9 +1188,7 @@ sPointerTable_085645A0:
 	.4byte gText_Rom_5CC452 @ +0x74
 	@ pret/pokeemerald-jp direct xref for 0x08564618: script_menu.s: sub_080E14CC
 	.globl gScriptMenuData_08564618
-gScriptMenuData_08564618:
-	.globl gUnknown_8564618
-gUnknown_8564618: @ 0x08564618
+gScriptMenuData_08564618: @ 0x08564618
 	@ analyzed canonical ROM range 0x08564618-0x0856461F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
@@ -1244,9 +1234,7 @@ gUnknown_8564680: @ 0x08564680
 	.4byte gText_Rom_24809D
 	@ pret/pokeemerald-jp direct xref for 0x0856468C: script_menu.s: sub_080E1F88
 	.globl gScriptMenuData_0856468C
-gScriptMenuData_0856468C:
-	.globl gUnknown_856468C
-gUnknown_856468C: @ 0x0856468C
+gScriptMenuData_0856468C: @ 0x0856468C
 	@ analyzed canonical ROM range 0x0856468C-0x08565217
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xB8C
@@ -1437,9 +1425,7 @@ gUnknown_856468C: @ 0x0856468C
 	.byte 0x55, 0x55, 0x55, 0x03, 0x33, 0x33, 0x33, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08565218: naming_screen.s: choose_name_or_words_screen_apply_bg_pals
 	.globl gNamingScreenData_08565218
-gNamingScreenData_08565218:
-	.globl gUnknown_8565218
-gUnknown_8565218: @ 0x08565218
+gNamingScreenData_08565218: @ 0x08565218
 	@ analyzed canonical ROM range 0x08565218-0x08565257
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x40
@@ -1469,9 +1455,7 @@ gUnknown_8565258: @ 0x08565258
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x7C, 0x6B, 0x00, 0x00, 0x7C, 0x6B, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08565318: naming_screen.s: choose_name_or_words_screen_load_bg_tile_patterns
 	.globl gNamingScreenData_08565318
-gNamingScreenData_08565318:
-	.globl gUnknown_8565318
-gUnknown_8565318: @ 0x08565318
+gNamingScreenData_08565318: @ 0x08565318
 	@ confirmed GBA LZ77 stream: compressed=0x1D5, decompressed=0x600
 sLz77Block_08565318:
 	@ analyzed canonical ROM range 0x08565318-0x08565523

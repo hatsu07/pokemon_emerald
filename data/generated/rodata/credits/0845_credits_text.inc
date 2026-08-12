@@ -4,9 +4,7 @@ gUnknown_8566D7E: @ 0x08566D7E
 	.string "Aボタンで　さいせい$"
 	@ pret/pokeemerald-jp direct xref for 0x08566D89: record_mixing.s: sub_080E8AA0
 	.globl gRecordMixingData_08566D89
-gRecordMixingData_08566D89:
-	.globl gUnknown_8566D89
-gUnknown_8566D89: @ 0x08566D89
+gRecordMixingData_08566D89: @ 0x08566D89
 	@ analyzed canonical ROM range 0x08566D89-0x08566D8E
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x6

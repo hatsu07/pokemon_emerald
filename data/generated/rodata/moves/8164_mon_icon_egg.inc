@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x08D8DA9C: rock.s: AnimTask_LoadSandstormBackground
 	.globl gRockData_08D8DA9C
-gRockData_08D8DA9C:
-	.globl gUnknown_8D8DA9C
-gUnknown_8D8DA9C: @ 0x08D8DA9C
+gRockData_08D8DA9C: @ 0x08D8DA9C
 	@ confirmed GBA LZ77 stream: compressed=0x26, decompressed=0x20
 sLz77Block_08D8DA9C:
 	@ analyzed canonical ROM range 0x08D8DA9C-0x08D8E97B
@@ -248,9 +246,7 @@ sLz77Block_08D8DA9C:
 	.byte 0x50, 0x3F, 0x00, 0x5E, 0x30, 0x50, 0x60, 0x03, 0x00, 0x1D, 0x00, 0x66, 0x10, 0x1F, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08D8E97C: contest.s: GetTurnOrderNumberGfx
 	.globl gContestData_08D8E97C
-gContestData_08D8E97C:
-	.globl gUnknown_8D8E97C
-gUnknown_8D8E97C: @ 0x08D8E97C
+gContestData_08D8E97C: @ 0x08D8E97C
 	@ analyzed canonical ROM range 0x08D8E97C-0x08D8E9FB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x80
@@ -264,9 +260,7 @@ gUnknown_8D8E97C: @ 0x08D8E97C
 	.byte 0xFF, 0x88, 0xFF, 0x88, 0xFF, 0xFF, 0xFF, 0x8F, 0x88, 0x88, 0xFF, 0x88, 0x99, 0x99, 0x99, 0x99
 	@ pret/pokeemerald-jp direct xref for 0x08D8E9FC: contest.s: GetTurnOrderNumberGfx
 	.globl gContestData_08D8E9FC
-gContestData_08D8E9FC:
-	.globl gUnknown_8D8E9FC
-gUnknown_8D8E9FC: @ 0x08D8E9FC
+gContestData_08D8E9FC: @ 0x08D8E9FC
 	@ analyzed canonical ROM range 0x08D8E9FC-0x08D8EBD7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x1DC
@@ -302,9 +296,7 @@ gUnknown_8D8E9FC: @ 0x08D8E9FC
 	.byte 0xEF, 0x12, 0xF7, 0x12, 0xFF, 0xF2, 0xF5, 0xF0, 0x01, 0x50, 0x01, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08D8EBD8: contest.s: UpdateApplauseMeter
 	.globl gContestData_08D8EBD8
-gContestData_08D8EBD8:
-	.globl gUnknown_8D8EBD8
-gUnknown_8D8EBD8: @ 0x08D8EBD8
+gContestData_08D8EBD8: @ 0x08D8EBD8
 	@ analyzed canonical ROM range 0x08D8EBD8-0x08D8FB4F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xF78
@@ -558,9 +550,7 @@ gUnknown_8D8EBD8: @ 0x08D8EBD8
 	.byte 0x25, 0x27, 0x1D, 0x00, 0x00, 0x70, 0x01, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08D8FB50: water.s: AnimTask_CreateSurfWave
 	.globl gWaterData_08D8FB50
-gWaterData_08D8FB50:
-	.globl gUnknown_8D8FB50
-gUnknown_8D8FB50: @ 0x08D8FB50
+gWaterData_08D8FB50: @ 0x08D8FB50
 	@ confirmed GBA LZ77 stream: compressed=0x24, decompressed=0x20
 sLz77Block_08D8FB50:
 	@ analyzed canonical ROM range 0x08D8FB50-0x08D8FC27

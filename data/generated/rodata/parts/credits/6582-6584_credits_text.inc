@@ -1,7 +1,5 @@
 	.globl gQuizLadyQuestion4
-	.globl gUnknown_85D3B2C
-gQuizLadyQuestion4:
-gUnknown_85D3B2C: @ 0x085D3B2C
+gQuizLadyQuestion4: @ 0x085D3B2C
 	quiz_lady_question 4, 0x1644, 0x0E0C, 0x162D, 0x0E0A, 0x1413, 0x1428, 0x0E1D, 0x1E22, 0x0C03
 	.globl gQuizLadyQuestion5
 gQuizLadyQuestion5: @ 0x085D3B3E
@@ -37,9 +35,7 @@ gQuizLadyQuestion14: @ 0x085D3BE0
 gQuizLadyQuestion15: @ 0x085D3BF2
 	quiz_lady_question 15, 0x272C, 0x162E, 0x020E, 0x1E1F, 0x1011, 0x0C03, 0x0146, 0x014C, 0x2A1B
 	.globl gQuizLadyQuestionPointers
-	.globl gUnknown_85D3C04
-gQuizLadyQuestionPointers:
-gUnknown_85D3C04: @ 0x085D3C04
+gQuizLadyQuestionPointers: @ 0x085D3C04
 	quiz_lady_question_pointer 0, gQuizLadyQuestion0
 	quiz_lady_question_pointer 1, gQuizLadyQuestion1
 	quiz_lady_question_pointer 2, gQuizLadyQuestion2
@@ -57,18 +53,14 @@ gUnknown_85D3C04: @ 0x085D3C04
 	quiz_lady_question_pointer 14, gQuizLadyQuestion14
 	quiz_lady_question_pointer 15, gQuizLadyQuestion15
 	.globl gQuizLadyAnswers
-	.globl gUnknown_85D3C44
-gQuizLadyAnswers:
-gUnknown_85D3C44: @ 0x085D3C44
+gQuizLadyAnswers: @ 0x085D3C44
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.2byte 0x013A, 0x016F, 0x2A43, 0x1802
 	.2byte 0x262D, 0x1814, 0x2202, 0x1A01
 	.2byte 0x1C13, 0x0A09, 0x0115, 0x017C
 	.2byte 0x012A, 0x0420, 0x0410, 0x0146
 	.globl gQuizLadyPrizes
-	.globl gUnknown_85D3C64
-gQuizLadyPrizes:
-gUnknown_85D3C64: @ 0x085D3C64
+gQuizLadyPrizes: @ 0x085D3C64
 	.2byte ITEM_GLITTER_MAIL, ITEM_BEAD_MAIL, ITEM_TROPIC_MAIL
 	.2byte ITEM_MAX_ETHER, ITEM_MAX_ETHER, ITEM_MAX_ETHER
 	.2byte ITEM_WATMEL_BERRY, ITEM_BELUE_BERRY, ITEM_DURIN_BERRY
@@ -102,9 +94,7 @@ gText_FavorLady_Prickly: @ 0x085D3C9D
 	.string "ちくちく$"
 	.align 2, 0
 	.globl gFavorLadyRequestTextPointers
-	.globl gUnknown_85D3CA4
-gFavorLadyRequestTextPointers:
-gUnknown_85D3CA4: @ 0x085D3CA4
+gFavorLadyRequestTextPointers: @ 0x085D3CA4
 	.4byte gText_FavorLady_Smooth
 	.4byte gText_FavorLady_Round
 	.4byte gText_FavorLady_Crackly
@@ -157,9 +147,7 @@ gFavorLadyAcceptedItems_Prickly: @ 0x085D3D56
 	.2byte ITEM_PETAYA_BERRY, ITEM_SALAC_BERRY
 	.2byte ITEM_STARDUST, ITEM_STAR_PIECE, ITEM_NONE
 	.globl gFavorLadyAcceptedItemListPointers
-	.globl gUnknown_85D3D6C
-gFavorLadyAcceptedItemListPointers:
-gUnknown_85D3D6C: @ 0x085D3D6C
+gFavorLadyAcceptedItemListPointers: @ 0x085D3D6C
 	.4byte gFavorLadyAcceptedItems_Smooth
 	.4byte gFavorLadyAcceptedItems_Round
 	.4byte gFavorLadyAcceptedItems_Crackly
@@ -167,11 +155,8 @@ gUnknown_85D3D6C: @ 0x085D3D6C
 	.4byte gFavorLadyAcceptedItems_Sticky
 	.4byte gFavorLadyAcceptedItems_Prickly
 	.globl gFavorLadyPrizes
-	.globl gUnknown_85D3D84
-gFavorLadyPrizes:
-gUnknown_85D3D84: @ 0x085D3D84
+gFavorLadyPrizes: @ 0x085D3D84
 	.2byte ITEM_LUXURY_BALL, ITEM_NUGGET, ITEM_PROTEIN
 	.2byte ITEM_HEART_SCALE, ITEM_RARE_CANDY, ITEM_PP_MAX
 	.globl gUnknown_85D3D90
 gUnknown_85D3D90: @ 0x085D3D90
-

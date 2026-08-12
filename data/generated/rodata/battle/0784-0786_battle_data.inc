@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x0854B25C: pokemon_storage_system.s: sub_080C7080
 	.globl gPokemonStorageSystemData_0854B25C
-gPokemonStorageSystemData_0854B25C:
-	.globl gUnknown_854B25C
-gUnknown_854B25C: @ 0x0854B25C
+gPokemonStorageSystemData_0854B25C: @ 0x0854B25C
 	@ analyzed canonical ROM range 0x0854B25C-0x0854B27B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -10,9 +8,7 @@ gUnknown_854B25C: @ 0x0854B25C
 	.2byte 0x3B7E, 0x5B9E, 0x01F9, 0x012F, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0854B27C: pokemon_storage_system.s: sub_080C7080
 	.globl gPokemonStorageSystemData_0854B27C
-gPokemonStorageSystemData_0854B27C:
-	.globl gUnknown_854B27C
-gUnknown_854B27C: @ 0x0854B27C
+gPokemonStorageSystemData_0854B27C: @ 0x0854B27C
 	@ analyzed canonical ROM range 0x0854B27C-0x0854BA7B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x800
@@ -146,9 +142,7 @@ gUnknown_854B27C: @ 0x0854B27C
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0854BA7C: pokemon_storage_system.s: sub_080C7080
 	.globl gPokemonStorageSystemData_0854BA7C
-gPokemonStorageSystemData_0854BA7C:
-	.globl gUnknown_854BA7C
-gUnknown_854BA7C: @ 0x0854BA7C
+gPokemonStorageSystemData_0854BA7C: @ 0x0854BA7C
 	@ analyzed canonical ROM range 0x0854BA7C-0x0854BBFB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x180
@@ -190,9 +184,7 @@ sLz77Block_0854BBFC:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0854BC94: pokemon_storage_system.s: SetScrollingBackground
 	.globl gPokemonStorageSystemData_0854BC94
-gPokemonStorageSystemData_0854BC94:
-	.globl gUnknown_854BC94
-gUnknown_854BC94: @ 0x0854BC94
+gPokemonStorageSystemData_0854BC94: @ 0x0854BC94
 	@ confirmed GBA LZ77 stream: compressed=0x10C, decompressed=0x800
 sLz77Block_0854BC94:
 	@ analyzed canonical ROM range 0x0854BC94-0x0854BDBF
@@ -231,9 +223,7 @@ sLz77Block_0854BDC0:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0854BEBC: pokemon_storage_system.s: sub_080C7734
 	.globl gPokemonStorageSystemData_0854BEBC
-gPokemonStorageSystemData_0854BEBC:
-	.globl gUnknown_854BEBC
-gUnknown_854BEBC: @ 0x0854BEBC
+gPokemonStorageSystemData_0854BEBC: @ 0x0854BEBC
 	@ analyzed canonical ROM range 0x0854BEBC-0x0854BEFB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x40
@@ -243,9 +233,7 @@ gUnknown_854BEBC: @ 0x0854BEBC
 	.2byte 0x2111, 0x2112, 0x2113, 0x2114, 0x2115, 0x2116, 0x2117, 0x2118
 	@ pret/pokeemerald-jp direct xref for 0x0854BEFC: pokemon_storage_system.s: sub_080C994C
 	.globl gPokemonStorageSystemData_0854BEFC
-gPokemonStorageSystemData_0854BEFC:
-	.globl gUnknown_854BEFC
-gUnknown_854BEFC: @ 0x0854BEFC
+gPokemonStorageSystemData_0854BEFC: @ 0x0854BEFC
 	@ analyzed canonical ROM range 0x0854BEFC-0x0854BF1B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -253,9 +241,7 @@ gUnknown_854BEFC: @ 0x0854BEFC
 	.byte 0x34, 0x7B, 0xCF, 0x6A, 0x7F, 0x4B, 0x9A, 0x7F, 0x56, 0x7B, 0x33, 0x77, 0xFF, 0x7F, 0xEB, 0x77
 	@ pret/pokeemerald-jp direct xref for 0x0854BF1C: pokemon_storage_system.s: sub_080C994C
 	.globl gPokemonStorageSystemData_0854BF1C
-gPokemonStorageSystemData_0854BF1C:
-	.globl gUnknown_854BF1C
-gUnknown_854BF1C: @ 0x0854BF1C
+gPokemonStorageSystemData_0854BF1C: @ 0x0854BF1C
 	@ analyzed canonical ROM range 0x0854BF1C-0x0854BF3B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -263,9 +249,7 @@ gUnknown_854BF1C: @ 0x0854BF1C
 	.byte 0x34, 0x7B, 0xCF, 0x6A, 0xF8, 0x0E, 0x9A, 0x7F, 0x56, 0x7B, 0x33, 0x77, 0xD6, 0x5A, 0xEB, 0x77
 	@ pret/pokeemerald-jp direct xref for 0x0854BF3C: pokemon_storage_system.s: sub_080C9F68
 	.globl gPokemonStorageSystemData_0854BF3C
-gPokemonStorageSystemData_0854BF3C:
-	.globl gUnknown_854BF3C
-gUnknown_854BF3C: @ 0x0854BF3C
+gPokemonStorageSystemData_0854BF3C: @ 0x0854BF3C
 	@ analyzed canonical ROM range 0x0854BF3C-0x0854BF5B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -273,9 +257,7 @@ gUnknown_854BF3C: @ 0x0854BF3C
 	.byte 0xFF, 0x7F, 0xEF, 0x7E, 0xE0, 0x7D, 0x65, 0x51, 0x2F, 0x5B, 0x21, 0x21, 0xB4, 0x4B, 0x48, 0x2D
 	@ pret/pokeemerald-jp direct xref for 0x0854BF5C: pokemon_storage_system.s: sub_080C994C
 	.globl gPokemonStorageSystemData_0854BF5C
-gPokemonStorageSystemData_0854BF5C:
-	.globl gUnknown_854BF5C
-gUnknown_854BF5C: @ 0x0854BF5C
+gPokemonStorageSystemData_0854BF5C: @ 0x0854BF5C
 	@ analyzed canonical ROM range 0x0854BF5C-0x0854BF7B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -283,9 +265,7 @@ gUnknown_854BF5C: @ 0x0854BF5C
 	.byte 0xBF, 0x73, 0x9F, 0x6B, 0x7F, 0x67, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0854BF7C: pokemon_storage_system.s: sub_080C994C
 	.globl gPokemonStorageSystemData_0854BF7C
-gPokemonStorageSystemData_0854BF7C:
-	.globl gUnknown_854BF7C
-gUnknown_854BF7C: @ 0x0854BF7C
+gPokemonStorageSystemData_0854BF7C: @ 0x0854BF7C
 	@ analyzed canonical ROM range 0x0854BF7C-0x0854BF9B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -305,9 +285,7 @@ sLz77Block_0854BF9C:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0854C65C: pokemon_storage_system.s: sub_080C9F68
 	.globl gPokemonStorageSystemData_0854C65C
-gPokemonStorageSystemData_0854C65C:
-	.globl gUnknown_854C65C
-gUnknown_854C65C: @ 0x0854C65C
+gPokemonStorageSystemData_0854C65C: @ 0x0854C65C
 	@ confirmed GBA LZ77 stream: compressed=0xAF, decompressed=0x210
 sLz77Block_0854C65C:
 	@ analyzed canonical ROM range 0x0854C65C-0x0854C70B
@@ -326,9 +304,7 @@ sLz77Block_0854C65C:
 	.byte 0x3B, 0x11, 0x3C, 0x00, 0x11, 0x3D, 0x11, 0x3E, 0x11, 0x3F, 0x11, 0x66, 0x80, 0x40, 0x17, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0854C70C: pokemon_storage_system.s: sub_080C9F68
 	.globl gPokemonStorageSystemData_0854C70C
-gPokemonStorageSystemData_0854C70C:
-	.globl gUnknown_854C70C
-gUnknown_854C70C: @ 0x0854C70C
+gPokemonStorageSystemData_0854C70C: @ 0x0854C70C
 	@ analyzed canonical ROM range 0x0854C70C-0x0854C753
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x48
@@ -339,9 +315,7 @@ gUnknown_854C70C: @ 0x0854C70C
 	.2byte 0x018A, 0x018B, 0x018C, 0x018D
 	@ pret/pokeemerald-jp direct xref for 0x0854C754: pokemon_storage_system.s: sub_080CA30C
 	.globl gPokemonStorageSystemData_0854C754
-gPokemonStorageSystemData_0854C754:
-	.globl gUnknown_854C754
-gUnknown_854C754: @ 0x0854C754
+gPokemonStorageSystemData_0854C754: @ 0x0854C754
 	@ analyzed canonical ROM range 0x0854C754-0x0854C76B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x18
@@ -349,9 +323,7 @@ gUnknown_854C754: @ 0x0854C754
 	.2byte 0x1160, 0x1161, 0x1161, 0x1162
 	@ pret/pokeemerald-jp direct xref for 0x0854C76C: pokemon_storage_system.s: sub_080CA30C
 	.globl gPokemonStorageSystemData_0854C76C
-gPokemonStorageSystemData_0854C76C:
-	.globl gUnknown_854C76C
-gUnknown_854C76C: @ 0x0854C76C
+gPokemonStorageSystemData_0854C76C: @ 0x0854C76C
 	@ analyzed canonical ROM range 0x0854C76C-0x0854C9A3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x238
@@ -393,9 +365,7 @@ gUnknown_854C76C: @ 0x0854C76C
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x52, 0x56
 	@ pret/pokeemerald-jp direct xref for 0x0854C9A4: pokemon_storage_system.s: sub_080C994C
 	.globl gPokemonStorageSystemData_0854C9A4
-gPokemonStorageSystemData_0854C9A4:
-	.globl gUnknown_854C9A4
-gUnknown_854C9A4: @ 0x0854C9A4
+gPokemonStorageSystemData_0854C9A4: @ 0x0854C9A4
 	@ analyzed canonical ROM range 0x0854C9A4-0x0854C9C3
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -403,9 +373,7 @@ gUnknown_854C9A4: @ 0x0854C9A4
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0854C9C4: pokemon_storage_system.s: InitPSSWindows
 	.globl gPokemonStorageSystemData_0854C9C4
-gPokemonStorageSystemData_0854C9C4:
-	.globl gUnknown_854C9C4
-gUnknown_854C9C4: @ 0x0854C9C4
+gPokemonStorageSystemData_0854C9C4: @ 0x0854C9C4
 	@ analyzed canonical ROM range 0x0854C9C4-0x0854C9E3
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -413,44 +381,34 @@ gUnknown_854C9C4: @ 0x0854C9C4
 	.2byte 0x0000, 0x150D, 0x0F07, 0x0014, 0x00FF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0854C9E4: pokemon_storage_system.s: LoadPSSMenuGfx
 	.globl gPokemonStorageSystemData_0854C9E4
-gPokemonStorageSystemData_0854C9E4:
-	.globl gUnknown_854C9E4
-gUnknown_854C9E4: @ 0x0854C9E4
+gPokemonStorageSystemData_0854C9E4: @ 0x0854C9E4
 	@ analyzed canonical ROM range 0x0854C9E4-0x0854C9F3
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0x01D0, 0x0000, 0x11E5, 0x0040, 0x23BA, 0x0000, 0x31FF, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0854C9F4: pokemon_storage_system.s: LoadWaveformSpritePalette
 	.globl gPokemonStorageSystemData_0854C9F4
-gPokemonStorageSystemData_0854C9F4:
-	.globl gUnknown_854C9F4
-gUnknown_854C9F4: @ 0x0854C9F4
+gPokemonStorageSystemData_0854C9F4: @ 0x0854C9F4
 	@ analyzed canonical ROM range 0x0854C9F4-0x0854C9FB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x84, 0xC7, 0x54, 0x08, 0xCA, 0xDA, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0854C9FC: pokemon_storage_system.s: sub_080C9A38
 	.globl gPokemonStorageSystemData_0854C9FC
-gPokemonStorageSystemData_0854C9FC:
-	.globl gUnknown_854C9FC
-gUnknown_854C9FC: @ 0x0854C9FC
+gPokemonStorageSystemData_0854C9FC: @ 0x0854C9FC
 	@ analyzed canonical ROM range 0x0854C9FC-0x0854CA03
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xA4, 0xC7, 0x54, 0x08, 0xC0, 0x01, 0x05, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0854CA04: pokemon_storage_system.s: LoadCursorMonSprite
 	.globl gPokemonStorageSystemData_0854CA04
-gPokemonStorageSystemData_0854CA04:
-	.globl gUnknown_854CA04
-gUnknown_854CA04: @ 0x0854CA04
+gPokemonStorageSystemData_0854CA04: @ 0x0854CA04
 	@ analyzed canonical ROM range 0x0854CA04-0x0854CA1B
 sSpriteTemplate_0854CA04: @ 0x0854CA04
 	rodata_sprite_template 0x0002, 0xDAC6, 0x0854CB1C, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x0854CA1C: pokemon_storage_system.s: PrintStorageActionText
 	.globl gPokemonStorageSystemData_0854CA1C
-gPokemonStorageSystemData_0854CA1C:
-	.globl gUnknown_854CA1C
-gUnknown_854CA1C: @ 0x0854CA1C
+gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	@ analyzed canonical ROM range 0x0854CA1C-0x0854CB13
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x8
@@ -538,9 +496,7 @@ gUnknown_854CA1C: @ 0x0854CA1C
 	.4byte 0 @ +0xF4
 	@ pret/pokeemerald-jp direct xref for 0x0854CB14: pokemon_storage_system.s: ShowYesNoWindow
 	.globl gPokemonStorageSystemData_0854CB14
-gPokemonStorageSystemData_0854CB14:
-	.globl gUnknown_854CB14
-gUnknown_854CB14: @ 0x0854CB14
+gPokemonStorageSystemData_0854CB14: @ 0x0854CB14
 	@ analyzed canonical ROM range 0x0854CB14-0x0854CB6B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x58
@@ -552,17 +508,13 @@ gUnknown_854CB14: @ 0x0854CB14
 	.2byte 0xCB44, 0x0854, 0xCB4C, 0x0854
 	@ pret/pokeemerald-jp direct xref for 0x0854CB6C: pokemon_storage_system.s: sub_080C9A38
 	.globl gPokemonStorageSystemData_0854CB6C
-gPokemonStorageSystemData_0854CB6C:
-	.globl gUnknown_854CB6C
-gUnknown_854CB6C: @ 0x0854CB6C
+gPokemonStorageSystemData_0854CB6C: @ 0x0854CB6C
 	@ analyzed canonical ROM range 0x0854CB6C-0x0854CB83
 sSpriteTemplate_0854CB6C: @ 0x0854CB6C
 	rodata_sprite_template 0x0005, 0xDACA, 0x0854CB24, 0x0854CB5C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x0854CB84: pokemon_storage_system.s: sub_080CBAA4
 	.globl gPokemonStorageSystemData_0854CB84
-gPokemonStorageSystemData_0854CB84:
-	.globl gUnknown_854CB84
-gUnknown_854CB84: @ 0x0854CB84
+gPokemonStorageSystemData_0854CB84: @ 0x0854CB84
 	@ analyzed canonical ROM range 0x0854CB84-0x0854CBCB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x48
@@ -573,9 +525,7 @@ gUnknown_854CB84: @ 0x0854CB84
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0854CBCC: pokemon_storage_system.s: sub_080CB788
 	.globl gPokemonStorageSystemData_0854CBCC
-gPokemonStorageSystemData_0854CBCC:
-	.globl gUnknown_854CBCC
-gUnknown_854CBCC: @ 0x0854CBCC
+gPokemonStorageSystemData_0854CBCC: @ 0x0854CBCC
 	@ analyzed canonical ROM range 0x0854CBCC-0x08551823
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4C58
@@ -1803,9 +1753,7 @@ gUnknown_854CBCC: @ 0x0854CBCC
 	.byte 0xC9, 0x22, 0xC9, 0x22, 0xC9, 0x22, 0xCA, 0x22
 	@ pret/pokeemerald-jp direct xref for 0x08551824: pokemon_storage_system.s: sub_080CC3C4, sub_080CC57C, sub_080CC828
 	.globl gPokemonStorageSystemData_08551824
-gPokemonStorageSystemData_08551824:
-	.globl gUnknown_8551824
-gUnknown_8551824: @ 0x08551824
+gPokemonStorageSystemData_08551824: @ 0x08551824
 	@ analyzed canonical ROM range 0x08551824-0x08551867
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x44

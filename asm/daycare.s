@@ -2684,7 +2684,7 @@ _080708DA:
 	bx r0
 	.align 2, 0
 _080708EC: .4byte 0x02021C7C
-_080708F0: .4byte 0x082FC0E8
+_080708F0: .4byte sCompatibilityMessages
 	thumb_func_end SetDaycareCompatibilityString
 
 	thumb_func_start NameHasGenderSymbol
@@ -3264,4 +3264,3 @@ ChooseSendDaycareMon: @ 0x08070D50
 _08070D60: .4byte 0x03002360
 _08070D64: .4byte 0x08085A31
 	thumb_func_end ChooseSendDaycareMon
-

@@ -352,9 +352,7 @@ sBattleTvPointsStatIncreaseNotSelf:
 	.align 2, 0
 
 	.globl gBattleTvMovePoints
-	.globl gUnknown_85D3294
-gBattleTvMovePoints:
-gUnknown_85D3294: @ 0x085D3294
+gBattleTvMovePoints: @ 0x085D3294
 	.4byte gBattleTvMoveEffectPoints
 	.4byte sBattleTvPointsEffectiveness
 	.4byte sBattleTvPointsSetUp
@@ -385,9 +383,7 @@ gUnknown_85D3294: @ 0x085D3294
 	.4byte sBattleTvPointsStatIncreaseNotSelf
 
 	.globl gBattleTvSpecialBattleStrings
-	.globl gUnknown_85D3304
-gBattleTvSpecialBattleStrings:
-gUnknown_85D3304: @ 0x085D3304
+gBattleTvSpecialBattleStrings: @ 0x085D3304
 	@ ANALYSIS: RAW_BLOCK size=0x24
 	.2byte 151 @ STRINGID_PKMNPERISHCOUNTFELL
 	.2byte 178 @ STRINGID_PKMNWISHCAMETRUE
@@ -408,9 +404,7 @@ gUnknown_85D3304: @ 0x085D3304
 	.2byte 96  @ STRINGID_PKMNCRASHED
 	.2byte 0xFFFF @ terminator
 	.globl gSpeciesToBackAnimSet
-	.globl gUnknown_85D3328
-gSpeciesToBackAnimSet:
-gUnknown_85D3328: @ 0x085D3328
+gSpeciesToBackAnimSet: @ 0x085D3328
 	species_back_anim SPECIES_NONE, BACK_ANIM_NONE
 	species_back_anim SPECIES_BULBASAUR, BACK_ANIM_DIP_RIGHT_SIDE
 	species_back_anim SPECIES_IVYSAUR, BACK_ANIM_H_SLIDE
@@ -827,9 +821,7 @@ gUnknown_85D3328: @ 0x085D3328
 	.error "Pokemon back animation set table must cover every species before SPECIES_EGG"
 	.endif
 	.globl gYellowFlashData
-	.globl gUnknown_85D34C4
-gYellowFlashData:
-gUnknown_85D34C4: @ 0x085D34C4
+gYellowFlashData: @ 0x085D34C4
 	yellow_flash_step FALSE, 5
 	yellow_flash_step TRUE, 1
 	yellow_flash_step FALSE, 15
@@ -845,9 +837,7 @@ gUnknown_85D34C4: @ 0x085D34C4
 	yellow_flash_step FALSE, 2
 	yellow_flash_step FALSE, -1
 	.globl gVerticalShakeData
-	.globl gUnknown_85D34E0
-gVerticalShakeData:
-gUnknown_85D34E0: @ 0x085D34E0
+gVerticalShakeData: @ 0x085D34E0
 	vertical_shake_step 6, 30
 	vertical_shake_step -2, 15
 	vertical_shake_step 6, 30

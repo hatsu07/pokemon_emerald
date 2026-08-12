@@ -1,17 +1,13 @@
 	@ pret/pokeemerald-jp direct xref for 0x085659FC: naming_screen.s: NamingScreen_InitBGs
 	.globl gNamingScreenData_085659FC
-gNamingScreenData_085659FC:
-	.globl gUnknown_85659FC
-gUnknown_85659FC: @ 0x085659FC
+gNamingScreenData_085659FC: @ 0x085659FC
 	@ analyzed canonical ROM range 0x085659FC-0x08565A0B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0x01E0, 0x0000, 0x11D9, 0x0000, 0x21CA, 0x0000, 0x31FF, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08565A0C: naming_screen.s: NamingScreen_InitBGs
 	.globl gNamingScreenData_08565A0C
-gNamingScreenData_08565A0C:
-	.globl gUnknown_8565A0C
-gUnknown_8565A0C: @ 0x08565A0C
+gNamingScreenData_08565A0C: @ 0x08565A0C
 	@ analyzed canonical ROM range 0x08565A0C-0x08565A3B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x30
@@ -20,27 +16,21 @@ gUnknown_8565A0C: @ 0x08565A0C
 	.2byte 0x0000, 0x1E00, 0x0B02, 0x0074, 0x00FF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08565A3C: naming_screen.s: GetCurrentPageColumnCount
 	.globl gNamingScreenData_08565A3C
-gNamingScreenData_08565A3C:
-	.globl gUnknown_8565A3C
-gUnknown_8565A3C: @ 0x08565A3C
+gNamingScreenData_08565A3C: @ 0x08565A3C
 	@ analyzed canonical ROM range 0x08565A3C-0x08565A41
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0x00, 0x01, 0x02, 0x00, 0x02, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x08565A42: naming_screen.s: sub_080E2758
 	.globl gNamingScreenData_08565A42
-gNamingScreenData_08565A42:
-	.globl gUnknown_8565A42
-gUnknown_8565A42: @ 0x08565A42
+gNamingScreenData_08565A42: @ 0x08565A42
 	@ analyzed canonical ROM range 0x08565A42-0x08565A47
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0x01, 0x02, 0x00, 0x01, 0x00, 0x02
 	@ pret/pokeemerald-jp direct xref for 0x08565A48: naming_screen.s: sub_080E2788
 	.globl gNamingScreenData_08565A48
-gNamingScreenData_08565A48:
-	.globl gUnknown_8565A48
-gUnknown_8565A48: @ 0x08565A48
+gNamingScreenData_08565A48: @ 0x08565A48
 	@ analyzed canonical ROM range 0x08565A48-0x08565A4F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
@@ -53,27 +43,21 @@ gUnknown_8565A50: @ 0x08565A50
 	.4byte PageSwapAnimState_Done
 	@ pret/pokeemerald-jp direct xref for 0x08565A60: naming_screen.s: sub_080E3144
 	.globl gNamingScreenData_08565A60
-gNamingScreenData_08565A60:
-	.globl gUnknown_8565A60
-gUnknown_8565A60: @ 0x08565A60
+gNamingScreenData_08565A60: @ 0x08565A60
 	@ analyzed canonical ROM range 0x08565A60-0x08565A67
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x00, 0x00, 0xFC, 0xFF, 0xFE, 0xFF, 0xFF, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x08565A68: naming_screen.s: sub_080E3190
 	.globl gNamingScreenData_08565A68
-gNamingScreenData_08565A68:
-	.globl gUnknown_8565A68
-gUnknown_8565A68: @ 0x08565A68
+gNamingScreenData_08565A68: @ 0x08565A68
 	@ analyzed canonical ROM range 0x08565A68-0x08565A6F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0002, 0x0003, 0x0002, 0x0001
 	@ pret/pokeemerald-jp direct xref for 0x08565A70: naming_screen.s: GetKeyRoleAtCursorPos
 	.globl gNamingScreenData_08565A70
-gNamingScreenData_08565A70:
-	.globl gUnknown_8565A70
-gUnknown_8565A70: @ 0x08565A70
+gNamingScreenData_08565A70: @ 0x08565A70
 	@ analyzed canonical ROM range 0x08565A70-0x08565A73
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
@@ -86,18 +70,14 @@ gUnknown_8565A74: @ 0x08565A74
 	.4byte sub_080E3638
 	@ pret/pokeemerald-jp direct xref for 0x08565A84: naming_screen.s: sub_080E3678
 	.globl gNamingScreenData_08565A84
-gNamingScreenData_08565A84:
-	.globl gUnknown_8565A84
-gUnknown_8565A84: @ 0x08565A84
+gNamingScreenData_08565A84: @ 0x08565A84
 	@ analyzed canonical ROM range 0x08565A84-0x08565A89
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0x01, 0x00, 0x03, 0x00, 0x02, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08565A8A: naming_screen.s: sub_080E3678
 	.globl gNamingScreenData_08565A8A
-gNamingScreenData_08565A8A:
-	.globl gUnknown_8565A8A
-gUnknown_8565A8A: @ 0x08565A8A
+gNamingScreenData_08565A8A: @ 0x08565A8A
 	@ analyzed canonical ROM range 0x08565A8A-0x08565A8F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x6
@@ -122,27 +102,21 @@ gUnknown_8565AB4: @ 0x08565AB4
 	.4byte sub_080E3BD0
 	@ pret/pokeemerald-jp direct xref for 0x08565AC0: naming_screen.s: HandleDpadMovement
 	.globl gNamingScreenData_08565AC0
-gNamingScreenData_08565AC0:
-	.globl gUnknown_8565AC0
-gUnknown_8565AC0: @ 0x08565AC0
+gNamingScreenData_08565AC0: @ 0x08565AC0
 	@ analyzed canonical ROM range 0x08565AC0-0x08565AC9
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xA
 	.2byte 0x0000, 0x0000, 0x0000, 0xFFFF, 0x0001
 	@ pret/pokeemerald-jp direct xref for 0x08565ACA: naming_screen.s: HandleDpadMovement
 	.globl gNamingScreenData_08565ACA
-gNamingScreenData_08565ACA:
-	.globl gUnknown_8565ACA
-gUnknown_8565ACA: @ 0x08565ACA
+gNamingScreenData_08565ACA: @ 0x08565ACA
 	@ analyzed canonical ROM range 0x08565ACA-0x08565AD3
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xA
 	.2byte 0x0000, 0xFFFF, 0x0001, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08565AD4: naming_screen.s: HandleDpadMovement
 	.globl gNamingScreenData_08565AD4
-gNamingScreenData_08565AD4:
-	.globl gUnknown_8565AD4
-gUnknown_8565AD4: @ 0x08565AD4
+gNamingScreenData_08565AD4: @ 0x08565AD4
 	@ analyzed canonical ROM range 0x08565AD4-0x08565ADB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
@@ -166,18 +140,14 @@ gUnknown_8565AF8: @ 0x08565AF8
 	.4byte sub_080E3E7C
 	@ pret/pokeemerald-jp direct xref for 0x08565B00: naming_screen.s: sub_080E3E7C
 	.globl gNamingScreenData_08565B00
-gNamingScreenData_08565B00:
-	.globl gUnknown_8565B00
-gUnknown_8565B00: @ 0x08565B00
+gNamingScreenData_08565B00: @ 0x08565B00
 	@ analyzed canonical ROM range 0x08565B00-0x08565B05
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0x00, 0x09, 0x08, 0x00, 0x05, 0x04
 	@ pret/pokeemerald-jp direct xref for 0x08565B06: naming_screen.s: sub_080E40A8
 	.globl gNamingScreenData_08565B06
-gNamingScreenData_08565B06:
-	.globl gUnknown_8565B06
-gUnknown_8565B06: @ 0x08565B06
+gNamingScreenData_08565B06: @ 0x08565B06
 	@ analyzed canonical ROM range 0x08565B06-0x08565BBA
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xB5

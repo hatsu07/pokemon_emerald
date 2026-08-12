@@ -12,18 +12,14 @@ gUnknown_82C5064: @ 0x082C5064
 	.4byte sub_0801E79C
 	@ pret/pokeemerald-jp direct xref for 0x082C508C: union_room_chat.s: sub_0801EA08
 	.globl gUnionRoomChatData_082C508C
-gUnionRoomChatData_082C508C:
-	.globl gUnknown_82C508C
-gUnknown_82C508C: @ 0x082C508C
+gUnionRoomChatData_082C508C: @ 0x082C508C
 	@ analyzed canonical ROM range 0x082C508C-0x082C5090
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x5
 	.byte 0x09, 0x09, 0x07, 0x09, 0x09
 	@ pret/pokeemerald-jp direct xref for 0x082C5091: union_room_chat.s: sub_0801EBA0
 	.globl gUnionRoomChatData_082C5091
-gUnionRoomChatData_082C5091:
-	.globl gUnknown_82C5091
-gUnknown_82C5091: @ 0x082C5091
+gUnionRoomChatData_082C5091: @ 0x082C5091
 	@ analyzed canonical ROM range 0x082C5091-0x082C517F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xEF
@@ -44,9 +40,7 @@ gUnknown_82C5091: @ 0x082C5091
 	.byte 0xC6, 0xC7, 0xC8, 0xC9, 0xCA, 0xCB, 0xCC, 0xCD, 0xCE, 0xCF, 0xD0, 0xD1, 0xD2, 0xD3, 0xD4
 	@ pret/pokeemerald-jp direct xref for 0x082C5180: union_room_chat.s: sub_0801EAB8, sub_0801FF88
 	.globl gUnionRoomChatData_082C5180
-gUnionRoomChatData_082C5180:
-	.globl gUnknown_82C5180
-gUnknown_82C5180: @ 0x082C5180
+gUnionRoomChatData_082C5180: @ 0x082C5180
 	@ confirmed contiguous ROM pointer table: 28 entries from this address
 sPointerTable_082C5180:
 	@ analyzed canonical ROM range 0x082C5180-0x082C521F
@@ -93,9 +87,7 @@ sPointerTable_082C5180:
 	.4byte 0x085CC607 @ +0x9C
 	@ pret/pokeemerald-jp direct xref for 0x082C5220: union_room_chat.s: sub_080202D0
 	.globl gUnionRoomChatData_082C5220
-gUnionRoomChatData_082C5220:
-	.globl gUnknown_82C5220
-gUnknown_82C5220: @ 0x082C5220
+gUnionRoomChatData_082C5220: @ 0x082C5220
 	@ analyzed canonical ROM range 0x082C5220-0x082C523F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -127,9 +119,7 @@ sLz77Block_082C529C:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082C5348: union_room_chat.s: sub_080202D0
 	.globl gUnionRoomChatData_082C5348
-gUnionRoomChatData_082C5348:
-	.globl gUnknown_82C5348
-gUnknown_82C5348: @ 0x082C5348
+gUnionRoomChatData_082C5348: @ 0x082C5348
 	@ analyzed canonical ROM range 0x082C5348-0x082C5367
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -137,9 +127,7 @@ gUnknown_82C5348: @ 0x082C5348
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x082C5368: union_room_chat.s: sub_08020320
 	.globl gUnionRoomChatData_082C5368
-gUnionRoomChatData_082C5368:
-	.globl gUnknown_82C5368
-gUnknown_82C5368: @ 0x082C5368
+gUnionRoomChatData_082C5368: @ 0x082C5368
 	@ analyzed canonical ROM range 0x082C5368-0x082C5387
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -184,9 +172,7 @@ gUnknown_82C56B4: @ 0x082C56B4
 	.4byte 0
 	@ pret/pokeemerald-jp direct xref for 0x082C56D4: union_room_chat.s: sub_080203C0
 	.globl gUnionRoomChatData_082C56D4
-gUnionRoomChatData_082C56D4:
-	.globl gUnknown_82C56D4
-gUnknown_82C56D4: @ 0x082C56D4
+gUnionRoomChatData_082C56D4: @ 0x082C56D4
 	@ analyzed canonical ROM range 0x082C56D4-0x082C56F3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -194,18 +180,14 @@ gUnknown_82C56D4: @ 0x082C56D4
 	.byte 0x1F, 0x00, 0x5B, 0x63, 0xFF, 0x02, 0x9C, 0x6F, 0x18, 0x63, 0x85, 0x10, 0x00, 0x00, 0xE7, 0x1C
 	@ pret/pokeemerald-jp direct xref for 0x082C56F4: union_room_chat.s: sub_0801F2E0
 	.globl gUnionRoomChatData_082C56F4
-gUnionRoomChatData_082C56F4:
-	.globl gUnknown_82C56F4
-gUnknown_82C56F4: @ 0x082C56F4
+gUnionRoomChatData_082C56F4: @ 0x082C56F4
 	@ analyzed canonical ROM range 0x082C56F4-0x082C5703
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0x0070, 0x0000, 0x11FD, 0x0000, 0x217A, 0x0000, 0x70F7, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x082C5704: union_room_chat.s: sub_0801F2E0
 	.globl gUnionRoomChatData_082C5704
-gUnionRoomChatData_082C5704:
-	.globl gUnknown_82C5704
-gUnknown_82C5704: @ 0x082C5704
+gUnionRoomChatData_082C5704: @ 0x082C5704
 	@ analyzed canonical ROM range 0x082C5704-0x082C572B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x28
@@ -260,9 +242,7 @@ gUnknown_82C572C: @ 0x082C572C
 	.4byte sub_0801FB98
 	@ pret/pokeemerald-jp direct xref for 0x082C57D4: union_room_chat.s: sub_0801FD40
 	.globl gUnionRoomChatData_082C57D4
-gUnionRoomChatData_082C57D4:
-	.globl gUnknown_82C57D4
-gUnknown_82C57D4: @ 0x082C57D4
+gUnionRoomChatData_082C57D4: @ 0x082C57D4
 	@ analyzed canonical ROM range 0x082C57D4-0x082C5857
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x84
@@ -277,9 +257,7 @@ gUnknown_82C57D4: @ 0x082C57D4
 	.2byte 0x0002, 0x0001
 	@ pret/pokeemerald-jp direct xref for 0x082C5858: union_room_chat.s: sub_080200D8
 	.globl gUnionRoomChatData_082C5858
-gUnionRoomChatData_082C5858:
-	.globl gUnknown_82C5858
-gUnknown_82C5858: @ 0x082C5858
+gUnionRoomChatData_082C5858: @ 0x082C5858
 	@ analyzed canonical ROM range 0x082C5858-0x082C5889
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x32
@@ -289,9 +267,7 @@ gUnknown_82C5858: @ 0x082C5858
 	.byte 0x13, 0x33
 	@ pret/pokeemerald-jp direct xref for 0x082C588A: union_room_chat.s: sub_080206C4
 	.globl gUnionRoomChatData_082C588A
-gUnionRoomChatData_082C588A:
-	.globl gUnknown_82C588A
-gUnknown_82C588A: @ 0x082C588A
+gUnionRoomChatData_082C588A: @ 0x082C588A
 	@ analyzed canonical ROM range 0x082C588A-0x082C5D4B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4C2
@@ -374,9 +350,7 @@ gUnknown_82C588A: @ 0x082C588A
 	.byte 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x082C5D4C: union_room_chat.s: sub_080205AC
 	.globl gUnionRoomChatData_082C5D4C
-gUnionRoomChatData_082C5D4C:
-	.globl gUnknown_82C5D4C
-gUnknown_82C5D4C: @ 0x082C5D4C
+gUnionRoomChatData_082C5D4C: @ 0x082C5D4C
 	@ analyzed canonical ROM range 0x082C5D4C-0x082C5D73
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x28
@@ -385,9 +359,7 @@ gUnknown_82C5D4C: @ 0x082C5D4C
 	.byte 0xCC, 0x5B, 0x2C, 0x08, 0x00, 0x04, 0x04, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x082C5D74: union_room_chat.s: sub_080205AC
 	.globl gUnionRoomChatData_082C5D74
-gUnionRoomChatData_082C5D74:
-	.globl gUnknown_82C5D74
-gUnknown_82C5D74: @ 0x082C5D74
+gUnionRoomChatData_082C5D74: @ 0x082C5D74
 	@ analyzed canonical ROM range 0x082C5D74-0x082C5DB3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x40
@@ -397,9 +369,7 @@ gUnknown_82C5D74: @ 0x082C5D74
 	.byte 0x84, 0x5D, 0x2C, 0x08, 0x8C, 0x5D, 0x2C, 0x08, 0x94, 0x5D, 0x2C, 0x08, 0x9C, 0x5D, 0x2C, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x082C5DB4: union_room_chat.s: sub_08020604
 	.globl gUnionRoomChatData_082C5DB4
-gUnionRoomChatData_082C5DB4:
-	.globl gUnknown_82C5DB4
-gUnknown_82C5DB4: @ 0x082C5DB4
+gUnionRoomChatData_082C5DB4: @ 0x082C5DB4
 	@ analyzed canonical ROM range 0x082C5DB4-0x082C5DD3
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x10
@@ -414,17 +384,13 @@ gUnknown_82C5DB4: @ 0x082C5DB4
 	.4byte 0x00000800 @ +0x1C
 	@ pret/pokeemerald-jp direct xref for 0x082C5DD4: union_room_chat.s: sub_08020780
 	.globl gUnionRoomChatData_082C5DD4
-gUnionRoomChatData_082C5DD4:
-	.globl gUnknown_82C5DD4
-gUnknown_82C5DD4: @ 0x082C5DD4
+gUnionRoomChatData_082C5DD4: @ 0x082C5DD4
 	@ analyzed canonical ROM range 0x082C5DD4-0x082C5DEB
 sSpriteTemplate_082C5DD4: @ 0x082C5DD4
 	rodata_sprite_template 0x0002, 0x0000, 0x082C5DCC, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_080207D4
 	@ pret/pokeemerald-jp direct xref for 0x082C5DEC: union_room_chat.s: sub_08020780
 	.globl gUnionRoomChatData_082C5DEC
-gUnionRoomChatData_082C5DEC:
-	.globl gUnknown_82C5DEC
-gUnknown_82C5DEC: @ 0x082C5DEC
+gUnionRoomChatData_082C5DEC: @ 0x082C5DEC
 	@ analyzed canonical ROM range 0x082C5DEC-0x082C5E43
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x58
@@ -436,17 +402,13 @@ gUnknown_82C5DEC: @ 0x082C5DEC
 	.byte 0x24, 0x5E, 0x2C, 0x08, 0x2C, 0x5E, 0x2C, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x082C5E44: union_room_chat.s: sub_08020838
 	.globl gUnionRoomChatData_082C5E44
-gUnionRoomChatData_082C5E44:
-	.globl gUnknown_82C5E44
-gUnknown_82C5E44: @ 0x082C5E44
+gUnionRoomChatData_082C5E44: @ 0x082C5E44
 	@ analyzed canonical ROM range 0x082C5E44-0x082C5E5B
 sSpriteTemplate_082C5E44: @ 0x082C5E44
 	rodata_sprite_template 0x0003, 0x0000, 0x082C5E04, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x082C5E5C: union_room_chat.s: sub_08020838
 	.globl gUnionRoomChatData_082C5E5C
-gUnionRoomChatData_082C5E5C:
-	.globl gUnknown_82C5E5C
-gUnknown_82C5E5C: @ 0x082C5E5C
+gUnionRoomChatData_082C5E5C: @ 0x082C5E5C
 	@ analyzed canonical ROM range 0x082C5E5C-0x082C5E73
 sSpriteTemplate_082C5E5C: @ 0x082C5E5C
 	rodata_sprite_template 0x0004, 0x0000, 0x082C5E0C, 0x082C5E34, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy

@@ -382,9 +382,7 @@ gItemEffect_09E: @ 0x082EEF07
 	.byte 0, 0, 0
 
 	.globl gItemEffectTable
-	.globl gUnknown_82EEF14
 gItemEffectTable: @ 0x082EEF14
-gUnknown_82EEF14:
 	item_effect_table_entry ITEM_POTION, gItemEffect_Potion
 	item_effect_table_entry ITEM_ANTIDOTE, gItemEffect_Antidote
 	item_effect_table_entry ITEM_BURN_HEAL, gItemEffect_BurnHeal

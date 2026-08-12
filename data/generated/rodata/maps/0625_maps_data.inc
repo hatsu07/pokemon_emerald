@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x0846FA13: field_player_avatar.s: sub_0808CB6C, sub_0808CCFC
 	.globl gFieldPlayerAvatarData_0846FA13
-gFieldPlayerAvatarData_0846FA13:
-	.globl gUnknown_846FA13
-gUnknown_846FA13: @ 0x0846FA13
+gFieldPlayerAvatarData_0846FA13: @ 0x0846FA13
 	@ analyzed canonical ROM range 0x0846FA13-0x0846FA17
 sPlayerAvatarTransitionDirections: @ 0x0846FA13
 	.byte 0x01, 0x03, 0x04, 0x02, 0x01

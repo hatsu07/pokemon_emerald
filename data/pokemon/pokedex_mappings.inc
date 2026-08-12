@@ -16,9 +16,7 @@
 	.2byte \value
 .endm
 
-	.globl gUnknown_82EE2D4
 sSpeciesToHoennPokedexNum: @ 0x082EE2D4
-gUnknown_82EE2D4:
 	pokedex_species_value sSpeciesToHoennPokedexNum, SPECIES_BULBASAUR             , 0x00CB
 	pokedex_species_value sSpeciesToHoennPokedexNum, SPECIES_IVYSAUR               , 0x00CC
 	pokedex_species_value sSpeciesToHoennPokedexNum, SPECIES_VENUSAUR              , 0x00CD
@@ -434,9 +432,7 @@ gUnknown_82EE2D4:
 	.error "sSpeciesToHoennPokedexNum size mismatch"
 	.endif
 
-	.globl gUnknown_82EE60A
 sSpeciesToNationalPokedexNum: @ 0x082EE60A
-gUnknown_82EE60A:
 	pokedex_species_value sSpeciesToNationalPokedexNum, SPECIES_BULBASAUR             , 0x0001
 	pokedex_species_value sSpeciesToNationalPokedexNum, SPECIES_IVYSAUR               , 0x0002
 	pokedex_species_value sSpeciesToNationalPokedexNum, SPECIES_VENUSAUR              , 0x0003
@@ -852,9 +848,7 @@ gUnknown_82EE60A:
 	.error "sSpeciesToNationalPokedexNum size mismatch"
 	.endif
 
-	.globl gUnknown_82EE940
 sHoennToNationalOrder: @ 0x082EE940
-gUnknown_82EE940:
 	pokedex_order_value sHoennToNationalOrder,   1, 0x00FC
 	pokedex_order_value sHoennToNationalOrder,   2, 0x00FD
 	pokedex_order_value sHoennToNationalOrder,   3, 0x00FE

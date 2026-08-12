@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085886AC: contest_painting.s: sub_08130488
 	.globl gContestPaintingData_085886AC
-gContestPaintingData_085886AC:
-	.globl gUnknown_85886AC
-gUnknown_85886AC: @ 0x085886AC
+gContestPaintingData_085886AC: @ 0x085886AC
 	@ analyzed canonical ROM range 0x085886AC-0x085888AB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x200
@@ -40,9 +38,7 @@ gUnknown_85886AC: @ 0x085886AC
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085888AC: contest_painting.s: sub_08130488
 	.globl gContestPaintingData_085888AC
-gContestPaintingData_085888AC:
-	.globl gUnknown_85888AC
-gUnknown_85888AC: @ 0x085888AC
+gContestPaintingData_085888AC: @ 0x085888AC
 	@ confirmed GBA RLE stream: compressed=0x1083, decompressed=0x1600
 sRleBlock_085888AC:
 	@ analyzed canonical ROM range 0x085888AC-0x0858992F
@@ -314,9 +310,7 @@ sRleBlock_085888AC:
 	.byte 0xDD, 0x88, 0x11, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08589930: contest_painting.s: sub_08130488
 	.globl gContestPaintingData_08589930
-gContestPaintingData_08589930:
-	.globl gUnknown_8589930
-gUnknown_8589930: @ 0x08589930
+gContestPaintingData_08589930: @ 0x08589930
 	@ confirmed GBA RLE stream: compressed=0xC30, decompressed=0x1600
 sRleBlock_08589930:
 	@ analyzed canonical ROM range 0x08589930-0x0858A55F
@@ -518,9 +512,7 @@ sRleBlock_08589930:
 	.byte 0x65, 0x66, 0x76, 0x77, 0x56, 0x66, 0x66, 0x77, 0x56, 0x65, 0x66, 0x77, 0x55, 0x65, 0x56, 0x77
 	@ pret/pokeemerald-jp direct xref for 0x0858A560: contest_painting.s: sub_08130488
 	.globl gContestPaintingData_0858A560
-gContestPaintingData_0858A560:
-	.globl gUnknown_858A560
-gUnknown_858A560: @ 0x0858A560
+gContestPaintingData_0858A560: @ 0x0858A560
 	@ confirmed GBA RLE stream: compressed=0xB36, decompressed=0x1600
 sRleBlock_0858A560:
 	@ analyzed canonical ROM range 0x0858A560-0x0858B097
@@ -707,9 +699,7 @@ sRleBlock_0858A560:
 	.byte 0x80, 0x33, 0x00, 0x37, 0xA4, 0x33, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0858B098: contest_painting.s: sub_08130488
 	.globl gContestPaintingData_0858B098
-gContestPaintingData_0858B098:
-	.globl gUnknown_858B098
-gUnknown_858B098: @ 0x0858B098
+gContestPaintingData_0858B098: @ 0x0858B098
 	@ confirmed GBA RLE stream: compressed=0xFB7, decompressed=0x1600
 sRleBlock_0858B098:
 	@ analyzed canonical ROM range 0x0858B098-0x0858C04F
@@ -968,9 +958,7 @@ sRleBlock_0858B098:
 	.byte 0x55, 0x80, 0x33, 0x00, 0x55, 0x88, 0x33, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0858C050: contest_painting.s: sub_08130488
 	.globl gContestPaintingData_0858C050
-gContestPaintingData_0858C050:
-	.globl gUnknown_858C050
-gUnknown_858C050: @ 0x0858C050
+gContestPaintingData_0858C050: @ 0x0858C050
 	@ confirmed GBA RLE stream: compressed=0x112D, decompressed=0x1600
 sRleBlock_0858C050:
 	@ analyzed canonical ROM range 0x0858C050-0x0858D17F
@@ -1252,9 +1240,7 @@ sRleBlock_0858C050:
 	.byte 0x55, 0x79, 0x77, 0x99, 0x55, 0x79, 0x77, 0x99, 0x59, 0x99, 0x77, 0x97, 0x59, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0858D180: contest_painting.s: sub_08130488
 	.globl gContestPaintingData_0858D180
-gContestPaintingData_0858D180:
-	.globl gUnknown_858D180
-gUnknown_858D180: @ 0x0858D180
+gContestPaintingData_0858D180: @ 0x0858D180
 	@ confirmed GBA RLE stream: compressed=0x603, decompressed=0xAC0
 sRleBlock_0858D180:
 	@ analyzed canonical ROM range 0x0858D180-0x0858D783
@@ -1358,9 +1344,7 @@ sRleBlock_0858D180:
 	.byte 0x22, 0x81, 0x11, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0858D784: contest_painting.s: sub_08130488
 	.globl gContestPaintingData_0858D784
-gContestPaintingData_0858D784:
-	.globl gUnknown_858D784
-gUnknown_858D784: @ 0x0858D784
+gContestPaintingData_0858D784: @ 0x0858D784
 	@ confirmed GBA RLE stream: compressed=0x509, decompressed=0x800
 sRleBlock_0858D784:
 	@ analyzed canonical ROM range 0x0858D784-0x0858DC8F
@@ -1448,9 +1432,7 @@ sRleBlock_0858D784:
 	.2byte 0xFF00, 0xFF00, 0xFF00, 0xF800, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0858DC90: contest_painting.s: sub_08130488
 	.globl gContestPaintingData_0858DC90
-gContestPaintingData_0858DC90:
-	.globl gUnknown_858DC90
-gUnknown_858DC90: @ 0x0858DC90
+gContestPaintingData_0858DC90: @ 0x0858DC90
 	@ confirmed GBA RLE stream: compressed=0x509, decompressed=0x800
 sRleBlock_0858DC90:
 	@ analyzed canonical ROM range 0x0858DC90-0x0858E19B
@@ -1538,9 +1520,7 @@ sRleBlock_0858DC90:
 	.2byte 0xFF00, 0xFF00, 0xFF00, 0xF800, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0858E19C: contest_painting.s: sub_08130488
 	.globl gContestPaintingData_0858E19C
-gContestPaintingData_0858E19C:
-	.globl gUnknown_858E19C
-gUnknown_858E19C: @ 0x0858E19C
+gContestPaintingData_0858E19C: @ 0x0858E19C
 	@ confirmed GBA RLE stream: compressed=0x509, decompressed=0x800
 sRleBlock_0858E19C:
 	@ analyzed canonical ROM range 0x0858E19C-0x0858E6A7

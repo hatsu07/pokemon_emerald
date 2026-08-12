@@ -405,9 +405,7 @@ sLandmarkList_08598C5C: @ 0x08598C5C
 	.4byte 0
 	@ pret/pokeemerald-jp direct xref for 0x08598C68: landmark.s: GetLandmarks
 	.globl gLandmarkData_08598C68
-gLandmarkData_08598C68:
-	.globl gUnknown_8598C68
-gUnknown_8598C68: @ 0x08598C68
+gLandmarkData_08598C68: @ 0x08598C68
 	@ analyzed canonical ROM range 0x08598C68-0x08598DDF
 .macro landmark_table_entry mapsec, idx, candidates
 	.byte \mapsec, \idx
@@ -470,9 +468,7 @@ gUnknown_8598C68: @ 0x08598C68
 .purgem landmark_table_entry
 	@ pret/pokeemerald-jp direct xref for 0x08598DE0: battle_transition.s: Phase2_BigPokeball_Func1
 	.globl gBattleTransitionData_08598DE0
-gBattleTransitionData_08598DE0:
-	.globl gUnknown_8598DE0
-gUnknown_8598DE0: @ 0x08598DE0
+gBattleTransitionData_08598DE0: @ 0x08598DE0
 	@ analyzed canonical ROM range 0x08598DE0-0x0859935F
 gBattleTransitionBigPokeballTiles: @ 0x08598DE0
 	@ 0x580 bytes of 4bpp tile data copied to BG charblock by Phase2_BigPokeball_Func1
@@ -566,9 +562,7 @@ gBattleTransitionBigPokeballTiles: @ 0x08598DE0
 	.byte 0xFF, 0xFF, 0x7F, 0x55, 0xFF, 0xFF, 0xFF, 0xFF, 0x74, 0xFF, 0xFF, 0xFF, 0x44, 0xA4, 0xF7, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x08599360: battle_transition.s: Phase2_PokeballsTrail_Func1
 	.globl gBattleTransitionData_08599360
-gBattleTransitionData_08599360:
-	.globl gUnknown_8599360
-gUnknown_8599360: @ 0x08599360
+gBattleTransitionData_08599360: @ 0x08599360
 	@ analyzed canonical ROM range 0x08599360-0x0859959F
 gBattleTransitionPokeballsTrailTiles: @ 0x08599360
 	@ 4bpp tile data for the Pokeballs Trail transition
@@ -610,9 +604,7 @@ gBattleTransitionPokeballsTrailTiles: @ 0x08599360
 	.byte 0x0F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085995A0: battle_transition.s: Phase2_Mugshot_Func2
 	.globl gBattleTransitionData_085995A0
-gBattleTransitionData_085995A0:
-	.globl gUnknown_85995A0
-gUnknown_85995A0: @ 0x085995A0
+gBattleTransitionData_085995A0: @ 0x085995A0
 	@ analyzed canonical ROM range 0x085995A0-0x08599688
 gBattleTransitionMugshotTiles: @ 0x085995A0
 	@ 4bpp tile data read by Phase2_Mugshot_Func2
@@ -917,9 +909,7 @@ gBattleTransitionMugshotTiles_Continuation: @ 0x0859968D
 	.byte 0x66, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0859A780: battle_transition.s: Phase2_GridSquares_Func1, Phase2_GridSquares_Func2, Phase2_RectangularSpiral_Func1
 	.globl gBattleTransitionData_0859A780
-gBattleTransitionData_0859A780:
-	.globl gUnknown_859A780
-gUnknown_859A780: @ 0x0859A780
+gBattleTransitionData_0859A780: @ 0x0859A780
 	@ analyzed canonical ROM range 0x0859A780-0x0859A95F
 gBattleTransitionGridSquaresTilePatterns: @ 0x0859A780
 	@ 16-color tile patterns copied by Grid Squares and Rectangular Spiral transitions
@@ -955,9 +945,7 @@ gBattleTransitionGridSquaresTilePatterns: @ 0x0859A780
 	.2byte 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF
 	@ pret/pokeemerald-jp direct xref for 0x0859A960: battle_transition.s: Phase2_Aqua_Func1, Phase2_Magma_Func1
 	.globl gBattleTransitionData_0859A960
-gBattleTransitionData_0859A960:
-	.globl gUnknown_859A960
-gUnknown_859A960: @ 0x0859A960
+gBattleTransitionData_0859A960: @ 0x0859A960
 	@ analyzed canonical ROM range 0x0859A960-0x0859A97F
 gBattleTransitionAquaMagmaPalette: @ 0x0859A960
 	@ 16-color BGR555 palette loaded to slot 0xF0 by Aqua and Magma transitions
@@ -1013,9 +1001,7 @@ sLz77Block_0859B3E0:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0859B6C4: battle_transition.s: Phase2_Regi_Func1
 	.globl gBattleTransitionData_0859B6C4
-gBattleTransitionData_0859B6C4:
-	.globl gUnknown_859B6C4
-gUnknown_859B6C4: @ 0x0859B6C4
+gBattleTransitionData_0859B6C4: @ 0x0859B6C4
 	@ analyzed canonical ROM range 0x0859B6C4-0x0859BD63
 gBattleTransitionRegiIntroTiles: @ 0x0859B6C4
 	@ 4bpp tile data used as the BG charblock source by Phase2_Regi_Func1
@@ -1127,9 +1113,7 @@ gBattleTransitionRegiIntroTiles: @ 0x0859B6C4
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0859BD64: battle_transition.s: Phase2_Regice_Func2
 	.globl gBattleTransitionData_0859BD64
-gBattleTransitionData_0859BD64:
-	.globl gUnknown_859BD64
-gUnknown_859BD64: @ 0x0859BD64
+gBattleTransitionData_0859BD64: @ 0x0859BD64
 	@ analyzed canonical ROM range 0x0859BD64-0x0859BD83
 gBattleTransitionRegicePalette: @ 0x0859BD64
 	@ 16-color BGR555 palette loaded to slot 0xF0 by Phase2_Regice_Func2
@@ -1137,9 +1121,7 @@ gBattleTransitionRegicePalette: @ 0x0859BD64
 	.2byte 0x035B, 0x00E7, 0x01EF, 0x02F7, 0x03FF, 0x2BFF, 0x57FF, 0x7FFF
 	@ pret/pokeemerald-jp direct xref for 0x0859BD84: battle_transition.s: Phase2_Registeel_Func2
 	.globl gBattleTransitionData_0859BD84
-gBattleTransitionData_0859BD84:
-	.globl gUnknown_859BD84
-gUnknown_859BD84: @ 0x0859BD84
+gBattleTransitionData_0859BD84: @ 0x0859BD84
 	@ analyzed canonical ROM range 0x0859BD84-0x0859BDA3
 gBattleTransitionRegisteelPalette: @ 0x0859BD84
 	@ 16-color BGR555 palette loaded to slot 0xF0 by Phase2_Registeel_Func2
@@ -1147,9 +1129,7 @@ gBattleTransitionRegisteelPalette: @ 0x0859BD84
 	.2byte 0x001F, 0x0000, 0x0011, 0x0018, 0x001F, 0x211F, 0x463F, 0x7FFF
 	@ pret/pokeemerald-jp direct xref for 0x0859BDA4: battle_transition.s: Phase2_Regirock_Func2
 	.globl gBattleTransitionData_0859BDA4
-gBattleTransitionData_0859BDA4:
-	.globl gUnknown_859BDA4
-gUnknown_859BDA4: @ 0x0859BDA4
+gBattleTransitionData_0859BDA4: @ 0x0859BDA4
 	@ analyzed canonical ROM range 0x0859BDA4-0x0859BDC3
 gBattleTransitionRegirockPalette: @ 0x0859BDA4
 	@ 16-color BGR555 palette loaded to slot 0xF0 by Phase2_Regirock_Func2
@@ -1157,9 +1137,7 @@ gBattleTransitionRegirockPalette: @ 0x0859BDA4
 	.2byte 0x025A, 0x0000, 0x00C9, 0x0193, 0x027C, 0x2AFD, 0x577E, 0x7FFF
 	@ pret/pokeemerald-jp direct xref for 0x0859BDC4: battle_transition.s: Phase2_Regice_Func2
 	.globl gBattleTransitionData_0859BDC4
-gBattleTransitionData_0859BDC4:
-	.globl gUnknown_859BDC4
-gUnknown_859BDC4: @ 0x0859BDC4
+gBattleTransitionData_0859BDC4: @ 0x0859BDC4
 	@ analyzed canonical ROM range 0x0859BDC4-0x0859C5C3
 gBattleTransitionRegiceTiles: @ 0x0859BDC4
 	@ 4bpp tile data used as the BG charblock source by Phase2_Regice_Func2
@@ -1293,9 +1271,7 @@ gBattleTransitionRegiceTiles: @ 0x0859BDC4
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0859C5C4: battle_transition.s: Phase2_Registeel_Func2
 	.globl gBattleTransitionData_0859C5C4
-gBattleTransitionData_0859C5C4:
-	.globl gUnknown_859C5C4
-gUnknown_859C5C4: @ 0x0859C5C4
+gBattleTransitionData_0859C5C4: @ 0x0859C5C4
 	@ analyzed canonical ROM range 0x0859C5C4-0x0859CDC3
 gBattleTransitionRegisteelTiles: @ 0x0859C5C4
 	@ 4bpp tile data used as the BG charblock source by Phase2_Registeel_Func2
@@ -1429,9 +1405,7 @@ gBattleTransitionRegisteelTiles: @ 0x0859C5C4
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0859CDC4: battle_transition.s: Phase2_Regirock_Func2
 	.globl gBattleTransitionData_0859CDC4
-gBattleTransitionData_0859CDC4:
-	.globl gUnknown_859CDC4
-gUnknown_859CDC4: @ 0x0859CDC4
+gBattleTransitionData_0859CDC4: @ 0x0859CDC4
 	@ analyzed canonical ROM range 0x0859CDC4-0x0859D5E3
 gBattleTransitionRegirockTiles: @ 0x0859CDC4
 	@ 4bpp tile data used as the BG charblock source by Phase2_Regirock_Func2
@@ -1567,9 +1541,7 @@ gBattleTransitionRegirockTiles: @ 0x0859CDC4
 	.byte 0x13, 0x00, 0x15, 0x00, 0x17, 0x00, 0x18, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0859D5E4: battle_transition.s: Phase2_Kyogre_Func3
 	.globl gBattleTransitionData_0859D5E4
-gBattleTransitionData_0859D5E4:
-	.globl gUnknown_859D5E4
-gUnknown_859D5E4: @ 0x0859D5E4
+gBattleTransitionData_0859D5E4: @ 0x0859D5E4
 	@ analyzed canonical ROM range 0x0859D5E4-0x0859D8EA
 gBattleTransitionKyogreTilesLz: @ 0x0859D5E4
 	@ GBA LZ77-compressed 4bpp tile data decompressed by Phase2_Kyogre_Func3

@@ -113,9 +113,7 @@ gUnknown_857CD6C: @ 0x0857CD6C
 	.byte 0x08, 0x04, 0x01, 0x01, 0x62, 0xCD, 0x57, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0857D414: region_map.s: CorrectSpecialMapSecId_Internal
 	.globl gRegionMapData_0857D414
-gRegionMapData_0857D414:
-	.globl gUnknown_857D414
-gUnknown_857D414: @ 0x0857D414
+gRegionMapData_0857D414: @ 0x0857D414
 	@ analyzed canonical ROM range 0x0857D414-0x0857D473
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x60
@@ -127,18 +125,14 @@ gUnknown_857D414: @ 0x0857D414
 	.2byte 0x00D2, 0x0012, 0x00CA, 0x0012, 0x003D, 0x0017, 0x00D5, 0x00D5
 	@ pret/pokeemerald-jp direct xref for 0x0857D474: region_map.s: CorrectSpecialMapSecId_Internal
 	.globl gRegionMapData_0857D474
-gRegionMapData_0857D474:
-	.globl gUnknown_857D474
-gUnknown_857D474: @ 0x0857D474
+gRegionMapData_0857D474: @ 0x0857D474
 	@ analyzed canonical ROM range 0x0857D474-0x0857D479
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0xCB, 0x00, 0xCC, 0x00, 0xCC, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857D47A: region_map.s: RegionMap_GetTerraCaveMapSecId
 	.globl gRegionMapData_0857D47A
-gRegionMapData_0857D47A:
-	.globl gUnknown_857D47A
-gUnknown_857D47A: @ 0x0857D47A
+gRegionMapData_0857D47A: @ 0x0857D47A
 	@ analyzed canonical ROM range 0x0857D47A-0x0857D49B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x22
@@ -147,9 +141,7 @@ gUnknown_857D47A: @ 0x0857D47A
 	.2byte 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0857D49C: region_map.s: RegionMap_GetMarineCaveCoords
 	.globl gRegionMapData_0857D49C
-gRegionMapData_0857D49C:
-	.globl gUnknown_857D49C
-gUnknown_857D49C: @ 0x0857D49C
+gRegionMapData_0857D49C: @ 0x0857D49C
 	@ analyzed canonical ROM range 0x0857D49C-0x0857D4BB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -157,9 +149,7 @@ gUnknown_857D49C: @ 0x0857D49C
 	.2byte 0x0019, 0x0006, 0x0019, 0x0007, 0x0018, 0x000A, 0x0018, 0x000A
 	@ pret/pokeemerald-jp direct xref for 0x0857D4BC: region_map.s: RegionMap_IsPlayerInCave
 	.globl gRegionMapData_0857D4BC
-gRegionMapData_0857D4BC:
-	.globl gUnknown_857D4BC
-gUnknown_857D4BC: @ 0x0857D4BC
+gRegionMapData_0857D4BC: @ 0x0857D4BC
 	@ analyzed canonical ROM range 0x0857D4BC-0x0857D4EF
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x34
@@ -169,53 +159,41 @@ gUnknown_857D4BC: @ 0x0857D4BC
 	.2byte 0xD4D4, 0x0857
 	@ pret/pokeemerald-jp direct xref for 0x0857D4F0: region_map.s: CreateRegionMapCursor
 	.globl gRegionMapData_0857D4F0
-gRegionMapData_0857D4F0:
-	.globl gUnknown_857D4F0
-gUnknown_857D4F0: @ 0x0857D4F0
+gRegionMapData_0857D4F0: @ 0x0857D4F0
 	@ analyzed canonical ROM range 0x0857D4F0-0x0857D4F7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xBC, 0xB1, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857D4F8: region_map.s: CreateRegionMapCursor
 	.globl gRegionMapData_0857D4F8
-gRegionMapData_0857D4F8:
-	.globl gUnknown_857D4F8
-gUnknown_857D4F8: @ 0x0857D4F8
+gRegionMapData_0857D4F8: @ 0x0857D4F8
 	@ analyzed canonical ROM range 0x0857D4F8-0x0857D50F
 sSpriteTemplate_0857D4F8: @ 0x0857D4F8
 	rodata_sprite_template 0x0000, 0x0000, 0x0857D4C0, 0x0857D4E8, 0, gDummySpriteAffineAnimTable, SpriteCallback_CursorFull
 	@ pret/pokeemerald-jp direct xref for 0x0857D510: region_map.s: CreateRegionMapPlayerIcon
 	.globl gRegionMapData_0857D510
-gRegionMapData_0857D510:
-	.globl gUnknown_857D510
-gUnknown_857D510: @ 0x0857D510
+gRegionMapData_0857D510: @ 0x0857D510
 	@ analyzed canonical ROM range 0x0857D510-0x0857D51F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0x0000, 0x4000, 0x0800, 0x0000, 0x0000, 0x0005, 0xFFFF, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0857D520: region_map.s: CreateRegionMapPlayerIcon
 	.globl gRegionMapData_0857D520
-gRegionMapData_0857D520:
-	.globl gUnknown_857D520
-gUnknown_857D520: @ 0x0857D520
+gRegionMapData_0857D520: @ 0x0857D520
 	@ analyzed canonical ROM range 0x0857D520-0x0857D523
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x18, 0xD5, 0x57, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0857D524: region_map.s: sub_08124674
 	.globl gRegionMapData_0857D524
-gRegionMapData_0857D524:
-	.globl gUnknown_857D524
-gUnknown_857D524: @ 0x0857D524
+gRegionMapData_0857D524: @ 0x0857D524
 	@ analyzed canonical ROM range 0x0857D524-0x0857D527
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0xC8, 0xC9, 0xD3, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857D528: region_map.s: MCB2_FlyMap
 	.globl gRegionMapData_0857D528
-gRegionMapData_0857D528:
-	.globl gUnknown_857D528
-gUnknown_857D528: @ 0x0857D528
+gRegionMapData_0857D528: @ 0x0857D528
 	@ analyzed canonical ROM range 0x0857D528-0x0857D547
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -235,9 +213,7 @@ sLz77Block_0857D548:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857D580: region_map.s: MCB2_FlyMap
 	.globl gRegionMapData_0857D580
-gRegionMapData_0857D580:
-	.globl gUnknown_857D580
-gUnknown_857D580: @ 0x0857D580
+gRegionMapData_0857D580: @ 0x0857D580
 	@ confirmed GBA LZ77 stream: compressed=0xB5, decompressed=0x500
 sLz77Block_0857D580:
 	@ analyzed canonical ROM range 0x0857D580-0x0857D657
@@ -271,9 +247,7 @@ sLz77Block_0857D658:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857D72C: contest_painting_effects.s: sub_08124DF4
 	.globl gContestPaintingEffectsData_0857D72C
-gContestPaintingEffectsData_0857D72C:
-	.globl gUnknown_857D72C
-gUnknown_857D72C: @ 0x0857D72C
+gContestPaintingEffectsData_0857D72C: @ 0x0857D72C
 	@ analyzed canonical ROM range 0x0857D72C-0x0857D7CB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xA0
@@ -289,9 +263,7 @@ gUnknown_857D72C: @ 0x0857D72C
 	.2byte 0x3000, 0x0000, 0x0031, 0x0000, 0xBD00, 0x085C, 0xBD09, 0x085C
 	@ pret/pokeemerald-jp direct xref for 0x0857D7CC: region_map.s: sub_08124910
 	.globl gRegionMapData_0857D7CC
-gRegionMapData_0857D7CC:
-	.globl gUnknown_857D7CC
-gUnknown_857D7CC: @ 0x0857D7CC
+gRegionMapData_0857D7CC: @ 0x0857D7CC
 	@ analyzed canonical ROM range 0x0857D7CC-0x0857D7D3
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x8
@@ -299,18 +271,14 @@ gUnknown_857D7CC: @ 0x0857D7CC
 	.4byte 0x08B4000F @ +0x4
 	@ pret/pokeemerald-jp direct xref for 0x0857D7D4: region_map.s: MCB2_FlyMap
 	.globl gRegionMapData_0857D7D4
-gRegionMapData_0857D7D4:
-	.globl gUnknown_857D7D4
-gUnknown_857D7D4: @ 0x0857D7D4
+gRegionMapData_0857D7D4: @ 0x0857D7D4
 	@ analyzed canonical ROM range 0x0857D7D4-0x0857D7DF
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.2byte 0x01F0, 0x0000, 0x11ED, 0x0000, 0x2DCA, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0857D7E0: region_map.s: MCB2_FlyMap
 	.globl gRegionMapData_0857D7E0
-gRegionMapData_0857D7E0:
-	.globl gUnknown_857D7E0
-gUnknown_857D7E0: @ 0x0857D7E0
+gRegionMapData_0857D7E0: @ 0x0857D7E0
 	@ analyzed canonical ROM range 0x0857D7E0-0x0857D7FF
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -318,18 +286,14 @@ gUnknown_857D7E0: @ 0x0857D7E0
 	.2byte 0x0100, 0x0A12, 0x0F02, 0x003D, 0x00FF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0857D800: region_map.s: sub_08124A58
 	.globl gRegionMapData_0857D800
-gRegionMapData_0857D800:
-	.globl gUnknown_857D800
-gUnknown_857D800: @ 0x0857D800
+gRegionMapData_0857D800: @ 0x0857D800
 	@ analyzed canonical ROM range 0x0857D800-0x0857D807
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x38, 0xD6, 0x57, 0x08, 0x02, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857D808: region_map.s: sub_08124BCC
 	.globl gRegionMapData_0857D808
-gRegionMapData_0857D808:
-	.globl gUnknown_857D808
-gUnknown_857D808: @ 0x0857D808
+gRegionMapData_0857D808: @ 0x0857D808
 	@ analyzed canonical ROM range 0x0857D808-0x0857D86B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x64
@@ -342,17 +306,13 @@ gUnknown_857D808: @ 0x0857D808
 	.2byte 0xD848, 0x0857
 	@ pret/pokeemerald-jp direct xref for 0x0857D86C: region_map.s: sub_08124ABC, sub_08124BCC
 	.globl gRegionMapData_0857D86C
-gRegionMapData_0857D86C:
-	.globl gUnknown_857D86C
-gUnknown_857D86C: @ 0x0857D86C
+gRegionMapData_0857D86C: @ 0x0857D86C
 	@ analyzed canonical ROM range 0x0857D86C-0x0857D883
 sSpriteTemplate_0857D86C: @ 0x0857D86C
 	rodata_sprite_template 0x0002, 0x0002, 0x0857D810, 0x0857D850, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x0857D884: contest_painting_effects.s: sub_0812593C
 	.globl gContestPaintingEffectsData_0857D884
-gContestPaintingEffectsData_0857D884:
-	.globl gUnknown_857D884
-gUnknown_857D884: @ 0x0857D884
+gContestPaintingEffectsData_0857D884: @ 0x0857D884
 	@ analyzed canonical ROM range 0x0857D884-0x0857FE03
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x2580

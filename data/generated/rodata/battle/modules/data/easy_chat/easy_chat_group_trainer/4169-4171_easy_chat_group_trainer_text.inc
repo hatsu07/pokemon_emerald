@@ -14,9 +14,7 @@ gUnknown_85C8FAC: @ 0x085C8FAC
 	.string "？？？,？m$"
 	@ pret/pokeemerald-jp direct xref for 0x085C8FB3: pokedex.s: sub_080BE1C8
 	.globl gPokedexData_085C8FB3
-gPokedexData_085C8FB3:
-	.globl gUnknown_85C8FB3
-gUnknown_85C8FB3: @ 0x085C8FB3
+gPokedexData_085C8FB3: @ 0x085C8FB3
 	@ analyzed canonical ROM range 0x085C8FB3-0x085C8FBA
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8

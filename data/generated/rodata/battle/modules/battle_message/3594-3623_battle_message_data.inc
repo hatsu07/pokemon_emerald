@@ -25,18 +25,14 @@ gText_Rom_5ABDAA: @ 0x085ABDAA
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085ABDAE: battle_arena.s: BattleArena_ShowJudgmentWindow
 	.globl gBattleArenaData_085ABDAE
-gBattleArenaData_085ABDAE:
-	.globl gUnknown_85ABDAE
-gUnknown_85ABDAE: @ 0x085ABDAE
+gBattleArenaData_085ABDAE: @ 0x085ABDAE
 	@ analyzed canonical ROM range 0x085ABDAE-0x085ABDBA
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xD
 	.byte 0xFD, 0x00, 0x00, 0x00, 0x1A, 0x2E, 0x13, 0x02, 0x00, 0x00, 0xFD, 0x01, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085ABDBB: battle_message.s: BufferStringBattle
 	.globl gBattleMessageData_085ABDBB
-gBattleMessageData_085ABDBB:
-	.globl gUnknown_85ABDBB
-gUnknown_85ABDBB: @ 0x085ABDBB
+gBattleMessageData_085ABDBB: @ 0x085ABDBB
 	@ analyzed canonical ROM range 0x085ABDBB-0x085ABDE0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x26
@@ -45,9 +41,7 @@ gUnknown_85ABDBB: @ 0x085ABDBB
 	.byte 0x28, 0x41, 0x0C, 0x10, 0xAB, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085ABDE1: battle_message.s: BufferStringBattle
 	.globl gBattleMessageData_085ABDE1
-gBattleMessageData_085ABDE1:
-	.globl gUnknown_85ABDE1
-gUnknown_85ABDE1: @ 0x085ABDE1
+gBattleMessageData_085ABDE1: @ 0x085ABDE1
 	@ analyzed canonical ROM range 0x085ABDE1-0x085ABDF3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x13
@@ -55,9 +49,7 @@ gUnknown_85ABDE1: @ 0x085ABDE1
 	.byte 0x10, 0xAB, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085ABDF4: battle_message.s: BufferStringBattle
 	.globl gBattleMessageData_085ABDF4
-gBattleMessageData_085ABDF4:
-	.globl gUnknown_85ABDF4
-gUnknown_85ABDF4: @ 0x085ABDF4
+gBattleMessageData_085ABDF4: @ 0x085ABDF4
 	@ analyzed canonical ROM range 0x085ABDF4-0x085ABE12
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x1F
@@ -65,9 +57,7 @@ gUnknown_85ABDF4: @ 0x085ABDF4
 	.byte 0x0C, 0x36, 0x03, 0x48, 0x2D, 0x00, 0x0C, 0x06, 0x09, 0x13, 0x07, 0x10, 0xAB, 0xFB, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085ABE13: battle_message.s: BufferStringBattle
 	.globl gBattleMessageData_085ABE13
-gBattleMessageData_085ABE13:
-	.globl gUnknown_85ABE13
-gUnknown_85ABE13: @ 0x085ABE13
+gBattleMessageData_085ABE13: @ 0x085ABE13
 	@ analyzed canonical ROM range 0x085ABE13-0x085ABE25
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x13

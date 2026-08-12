@@ -103,9 +103,7 @@ gBattleDomeTourneyTreeButtons_Pal: @ 0x08D85428
 	.align 2, 0
 	@ pret/pokeemerald-jp direct xref for 0x08D854AC: battle_dome.s: Task_ShowOpponentInfo
 	.globl gBattleDomeData_08D854AC
-gBattleDomeData_08D854AC:
-	.globl gUnknown_8D854AC
-gUnknown_8D854AC: @ 0x08D854AC
+gBattleDomeData_08D854AC: @ 0x08D854AC
 	@ confirmed GBA LZ77 stream: compressed=0x1D, decompressed=0x20
 sLz77Block_08D854AC:
 	@ analyzed canonical ROM range 0x08D854AC-0x08D855CB
@@ -160,9 +158,7 @@ gUnknown_8D85604: @ 0x08D85604
 	.byte 0x1A, 0x03
 	@ pret/pokeemerald-jp direct xref for 0x08D85606: battle_message.s: SetPpNumbersPaletteInMoveSelection
 	.globl gBattleMessageData_08D85606
-gBattleMessageData_08D85606:
-	.globl gUnknown_8D85606
-gUnknown_8D85606: @ 0x08D85606
+gBattleMessageData_08D85606: @ 0x08D85606
 	@ analyzed canonical ROM range 0x08D85606-0x08D856AB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xA6
@@ -179,9 +175,7 @@ gUnknown_8D85606: @ 0x08D85606
 	.byte 0x19, 0x01, 0x13, 0x01, 0x0E, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x08D856AC: battle_pyramid.s: Task_SetPyramidFloorPalette
 	.globl gBattlePyramidData_08D856AC
-gBattlePyramidData_08D856AC:
-	.globl gUnknown_8D856AC
-gUnknown_8D856AC: @ 0x08D856AC
+gBattlePyramidData_08D856AC: @ 0x08D856AC
 	@ analyzed canonical ROM range 0x08D856AC-0x08D8578B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xE0
@@ -225,9 +219,7 @@ sLz77Block_08D85A00:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D85C34: intro.s: sub_0816F91C
 	.globl gIntroData_08D85C34
-gIntroData_08D85C34:
-	.globl gUnknown_8D85C34
-gUnknown_8D85C34: @ 0x08D85C34
+gIntroData_08D85C34: @ 0x08D85C34
 	@ analyzed canonical ROM range 0x08D85C34-0x08D85C53
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -235,9 +227,7 @@ gUnknown_8D85C34: @ 0x08D85C34
 	.byte 0x9B, 0x7F, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08D85C54: intro.s: sub_0816F91C
 	.globl gIntroData_08D85C54
-gIntroData_08D85C54:
-	.globl gUnknown_8D85C54
-gUnknown_8D85C54: @ 0x08D85C54
+gIntroData_08D85C54: @ 0x08D85C54
 	@ analyzed canonical ROM range 0x08D85C54-0x08D85C73
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -245,9 +235,7 @@ gUnknown_8D85C54: @ 0x08D85C54
 	.byte 0x29, 0x31, 0x4A, 0x29, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08D85C74: intro.s: sub_0816F91C
 	.globl gIntroData_08D85C74
-gIntroData_08D85C74:
-	.globl gUnknown_8D85C74
-gUnknown_8D85C74: @ 0x08D85C74
+gIntroData_08D85C74: @ 0x08D85C74
 	@ analyzed canonical ROM range 0x08D85C74-0x08D85C93
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -258,9 +246,7 @@ gIntroCreditsRiderPalette: @ 0x08D85C94
 	.incbin "build/graphics/intro_credits/intro_rider_palette.gbapal"
 	@ pret/pokeemerald-jp direct xref for 0x08D85CB4: intro.s: SpriteCB_IntroRayquazaLightning, Task_IntroGroudonScene, Task_IntroKyogreScene, Task_IntroLoadGroudonScene
 	.globl gIntroData_08D85CB4
-gIntroData_08D85CB4:
-	.globl gUnknown_8D85CB4
-gUnknown_8D85CB4: @ 0x08D85CB4
+gIntroData_08D85CB4: @ 0x08D85CB4
 	@ analyzed canonical ROM range 0x08D85CB4-0x08D85E35
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x182
@@ -291,18 +277,14 @@ gUnknown_8D85CB4: @ 0x08D85CB4
 	.byte 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08D85E36: intro.s: Task_IntroRayquazaGlowScene_1
 	.globl gIntroData_08D85E36
-gIntroData_08D85E36:
-	.globl gUnknown_8D85E36
-gUnknown_8D85E36: @ 0x08D85E36
+gIntroData_08D85E36: @ 0x08D85E36
 	@ analyzed canonical ROM range 0x08D85E36-0x08D85E3F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xA
 	.2byte 0x2949, 0x252B, 0x210D, 0x1D0F, 0x18F1
 	@ pret/pokeemerald-jp direct xref for 0x08D85E40: intro.s: Task_IntroRayquazaGlowScene_1
 	.globl gIntroData_08D85E40
-gIntroData_08D85E40:
-	.globl gUnknown_8D85E40
-gUnknown_8D85E40: @ 0x08D85E40
+gIntroData_08D85E40: @ 0x08D85E40
 	@ analyzed canonical ROM range 0x08D85E40-0x08D85E55
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x16
@@ -310,9 +292,7 @@ gUnknown_8D85E40: @ 0x08D85E40
 	.2byte 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08D85E56: intro.s: Task_IntroRayquazaGlowScene_1
 	.globl gIntroData_08D85E56
-gIntroData_08D85E56:
-	.globl gUnknown_8D85E56
-gUnknown_8D85E56: @ 0x08D85E56
+gIntroData_08D85E56: @ 0x08D85E56
 	@ analyzed canonical ROM range 0x08D85E56-0x08D85E5F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xA

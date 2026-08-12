@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085CA4F2: pokemon_summary_screen.s: BufferMonTrainerMemo
 	.globl gPokemonSummaryScreenData_085CA4F2
-gPokemonSummaryScreenData_085CA4F2:
-	.globl gUnknown_85CA4F2
-gUnknown_85CA4F2: @ 0x085CA4F2
+gPokemonSummaryScreenData_085CA4F2: @ 0x085CA4F2
 	@ analyzed canonical ROM range 0x085CA4F2-0x085CA50D
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x1C

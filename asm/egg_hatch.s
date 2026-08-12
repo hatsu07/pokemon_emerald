@@ -1700,7 +1700,7 @@ CreateRandomEggShardSprite: @ 0x08071B50
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08071B9C: .4byte 0x082FCA7C
+_08071B9C: .4byte sEggShardVelocities
 _08071BA0: .4byte 0x03000DE0
 	thumb_func_end CreateRandomEggShardSprite
 
@@ -1897,4 +1897,3 @@ sub_08071CF0: @ 0x08071CF0
 	pop {r1}
 	bx r1
 	thumb_func_end sub_08071CF0
-

@@ -1,8 +1,6 @@
 	@ Scene 5 final asset; the next unrelated data begins at 0x08DAB300.
 	.globl gRayquazaSceneData_08DAB294
 gRayquazaSceneData_08DAB294:
-	.globl gUnknown_8DAB294
-gUnknown_8DAB294:
 sLz77Block_08DAB294:
 	.globl gRaySceneChasesAway_Bg_Pal
 gRaySceneChasesAway_Bg_Pal: @ 0x08DAB294

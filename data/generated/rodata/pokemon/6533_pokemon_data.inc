@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085CCF0B: ereader_screen.s: sub_081D4704
 	.globl gEreaderScreenData_085CCF0B
-gEreaderScreenData_085CCF0B:
-	.globl gUnknown_85CCF0B
-gUnknown_85CCF0B: @ 0x085CCF0B
+gEreaderScreenData_085CCF0B: @ 0x085CCF0B
 	@ analyzed canonical ROM range 0x085CCF0B-0x085CCF29
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x1F
@@ -10,4 +8,3 @@ gUnknown_85CCF0B: @ 0x085CCF0B
 	.byte 0x06, 0x27, 0xFE, 0xB3, 0x12, 0x03, 0x0C, 0x2E, 0xB4, 0x2D, 0x00, 0x04, 0x27, 0x47, 0xFF
 	.globl gUnknown_85CCF2A
 gUnknown_85CCF2A: @ 0x085CCF2A
-

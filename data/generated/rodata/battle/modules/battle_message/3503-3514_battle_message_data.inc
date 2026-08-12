@@ -503,9 +503,7 @@ gUnknown_85AB3DC: @ 0x085AB3DC
 	.4byte 0x085AC09B @ +0x5C0
 	@ pret/pokeemerald-jp direct xref for 0x085AB9A0: battle_script_commands.s: atk0F_resultmessage
 	.globl gBattleScriptCommandsData_085AB9A0
-gBattleScriptCommandsData_085AB9A0:
-	.globl gUnknown_85AB9A0
-gUnknown_85AB9A0: @ 0x085AB9A0
+gBattleScriptCommandsData_085AB9A0: @ 0x085AB9A0
 	@ analyzed canonical ROM range 0x085AB9A0-0x085ABAED
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x14E
@@ -532,9 +530,7 @@ gUnknown_85AB9A0: @ 0x085AB9A0
 	.2byte 0x0168, 0x00CB, 0x0137, 0x0177, 0x0178, 0x0179, 0x017A
 	@ pret/pokeemerald-jp direct xref for 0x085ABAEE: battle_script_commands.s: SetMoveEffect
 	.globl gBattleScriptCommandsData_085ABAEE
-gBattleScriptCommandsData_085ABAEE:
-	.globl gUnknown_85ABAEE
-gUnknown_85ABAEE: @ 0x085ABAEE
+gBattleScriptCommandsData_085ABAEE: @ 0x085ABAEE
 	@ analyzed canonical ROM range 0x085ABAEE-0x085ABAFB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xE

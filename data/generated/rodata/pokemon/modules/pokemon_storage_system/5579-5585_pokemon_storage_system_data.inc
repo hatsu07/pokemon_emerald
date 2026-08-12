@@ -40,9 +40,7 @@ gText_Rom_5CB4F2: @ 0x085CB4F2
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085CB534: pokemon_storage_system.s: Task_PokemonStorageSystemPC
 	.globl gPokemonStorageSystemData_085CB534
-gPokemonStorageSystemData_085CB534:
-	.globl gUnknown_85CB534
-gUnknown_85CB534: @ 0x085CB534
+gPokemonStorageSystemData_085CB534: @ 0x085CB534
 	@ analyzed canonical ROM range 0x085CB534-0x085CB55B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x28
@@ -51,9 +49,7 @@ gUnknown_85CB534: @ 0x085CB534
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085CB55C: pokemon_storage_system.s: Task_PokemonStorageSystemPC
 	.globl gPokemonStorageSystemData_085CB55C
-gPokemonStorageSystemData_085CB55C:
-	.globl gUnknown_85CB55C
-gUnknown_85CB55C: @ 0x085CB55C
+gPokemonStorageSystemData_085CB55C: @ 0x085CB55C
 	@ analyzed canonical ROM range 0x085CB55C-0x085CB583
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x28

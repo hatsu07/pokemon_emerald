@@ -3,9 +3,7 @@
 @ two additional Medium Fast duplicate rows at indices 6 and 7.
 
 	.globl gExperienceTables
-	.globl gUnknown_82F00B4
 gExperienceTables: @ 0x082F00B4
-gUnknown_82F00B4:
 sExperienceTable_MediumFast: @ 0x082F00B4 - Medium Fast
 	.4byte 0x00000000, 0x00000001, 0x00000008, 0x0000001B @ levels 0-3
 	.4byte 0x00000040, 0x0000007D, 0x000000D8, 0x00000157 @ levels 4-7

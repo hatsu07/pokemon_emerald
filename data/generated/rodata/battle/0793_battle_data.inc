@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x08561028: contest.s: sub_080DA330, sub_080DA460
 	.globl gContestData_08561028
-gContestData_08561028:
-	.globl gUnknown_8561028
-gUnknown_8561028: @ 0x08561028
+gContestData_08561028: @ 0x08561028
 	@ analyzed canonical ROM range 0x08561028-0x085611EB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x1C4

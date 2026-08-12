@@ -21,9 +21,7 @@ gBattleTransitionGroudon_Tilemap: @ 0x0859E538
 	.error "Groudon transition tilemap exact slot size mismatch"
 	.endif
 	.globl gBattleTransitionData_0859E850
-gBattleTransitionData_0859E850:
-	.globl gUnknown_859E850
-gUnknown_859E850: @ 0x0859E850
+gBattleTransitionData_0859E850: @ 0x0859E850
 	@ analyzed canonical ROM range 0x0859E850-0x0859E98F
 gBattleTransitionKyogreIntroPaletteFrames: @ 0x0859E850
 	@ 10 16-color BGR555 palette frames loaded to palette slot 0xF0 by Phase2_Kyogre_Func4
@@ -49,9 +47,7 @@ gBattleTransitionKyogreIntroPaletteFrames: @ 0x0859E850
 	.2byte 0x0011, 0x000D, 0x0000, 0x0009, 0x000D, 0x0011, 0x0016, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0859E990: battle_transition.s: Phase2_Kyogre_Func5
 	.globl gBattleTransitionData_0859E990
-gBattleTransitionData_0859E990:
-	.globl gUnknown_859E990
-gUnknown_859E990: @ 0x0859E990
+gBattleTransitionData_0859E990: @ 0x0859E990
 	@ analyzed canonical ROM range 0x0859E990-0x0859EB4F
 gBattleTransitionKyogreFadePaletteFrames: @ 0x0859E990
 	@ 14 16-color BGR555 palette frames loaded to palette slot 0xF0 by Phase2_Kyogre_Func5
@@ -85,9 +81,7 @@ gBattleTransitionKyogreFadePaletteFrames: @ 0x0859E990
 	.2byte 0x253F, 0x253F, 0x253F, 0x253F, 0x253F, 0x253F, 0x253F, 0x001C
 	@ pret/pokeemerald-jp direct xref for 0x0859EB50: battle_transition.s: Phase2_Groudon_Func4
 	.globl gBattleTransitionData_0859EB50
-gBattleTransitionData_0859EB50:
-	.globl gUnknown_859EB50
-gUnknown_859EB50: @ 0x0859EB50
+gBattleTransitionData_0859EB50: @ 0x0859EB50
 	@ analyzed canonical ROM range 0x0859EB50-0x0859ED4F
 gBattleTransitionGroudonIntroPaletteFrames: @ 0x0859EB50
 	@ 16-color BGR555 palette frames loaded to palette slot 0xF0 by Phase2_Groudon_Func4
@@ -125,9 +119,7 @@ gBattleTransitionGroudonIntroPaletteFrames: @ 0x0859EB50
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0859ED50: battle_transition.s: Phase2_Groudon_Func5
 	.globl gBattleTransitionData_0859ED50
-gBattleTransitionData_0859ED50:
-	.globl gUnknown_859ED50
-gUnknown_859ED50: @ 0x0859ED50
+gBattleTransitionData_0859ED50: @ 0x0859ED50
 	@ analyzed canonical ROM range 0x0859ED50-0x0859EF4F
 gBattleTransitionGroudonFadePaletteFrames: @ 0x0859ED50
 	@ 16-color BGR555 palette frames loaded to palette slot 0xF0 by Phase2_Groudon_Func5
@@ -165,9 +157,7 @@ gBattleTransitionGroudonFadePaletteFrames: @ 0x0859ED50
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0859EF50: battle_transition.s: Phase2_Rayquaza_Func5, Phase2_Rayquaza_Func9
 	.globl gBattleTransitionData_0859EF50
-gBattleTransitionData_0859EF50:
-	.globl gUnknown_859EF50
-gUnknown_859EF50: @ 0x0859EF50
+gBattleTransitionData_0859EF50: @ 0x0859EF50
 	@ analyzed canonical ROM range 0x0859EF50-0x0859EFEF
 gBattleTransitionRayquazaPaletteFrames: @ 0x0859EF50
 	@ first 5 16-color BGR555 palette frames; Phase2_Rayquaza_Func5 continues at frame 5 below
@@ -183,9 +173,7 @@ gBattleTransitionRayquazaPaletteFrames: @ 0x0859EF50
 	.2byte 0x02B5, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0859EFF0: battle_transition.s: Phase2_Rayquaza_Func3
 	.globl gBattleTransitionData_0859EFF0
-gBattleTransitionData_0859EFF0:
-	.globl gUnknown_859EFF0
-gUnknown_859EFF0: @ 0x0859EFF0
+gBattleTransitionData_0859EFF0: @ 0x0859EFF0
 	@ analyzed canonical ROM range 0x0859EFF0-0x0859F14F
 gBattleTransitionRayquazaPaletteFrames_Frame5: @ 0x0859EFF0
 	@ remaining 11 16-color BGR555 palette frames; direct initial load target for Phase2_Rayquaza_Func3

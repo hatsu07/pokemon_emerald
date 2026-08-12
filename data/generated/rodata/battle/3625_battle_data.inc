@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085AC04C: battle_script_commands.s: atk76_various
 	.globl gBattleScriptCommandsData_085AC04C
-gBattleScriptCommandsData_085AC04C:
-	.globl gUnknown_85AC04C
-gUnknown_85AC04C: @ 0x085AC04C
+gBattleScriptCommandsData_085AC04C: @ 0x085AC04C
 	@ analyzed canonical ROM range 0x085AC04C-0x085AC0B0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x65
@@ -15,9 +13,7 @@ gUnknown_85AC04C: @ 0x085AC04C
 	.byte 0x41, 0x0C, 0x10, 0xAB, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085AC0B1: battle_message.s: BufferStringBattle
 	.globl gBattleMessageData_085AC0B1
-gBattleMessageData_085AC0B1:
-	.globl gUnknown_85AC0B1
-gUnknown_85AC0B1: @ 0x085AC0B1
+gBattleMessageData_085AC0B1: @ 0x085AC0B1
 	@ analyzed canonical ROM range 0x085AC0B1-0x085AC0C0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x10

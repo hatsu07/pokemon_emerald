@@ -12,9 +12,7 @@ sLz77Block_08D91D6C:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D927A0: berry_blender.s: LoadBerryBlenderGfx
 	.globl gBerryBlenderData_08D927A0
-gBerryBlenderData_08D927A0:
-	.globl gUnknown_8D927A0
-gUnknown_8D927A0: @ 0x08D927A0
+gBerryBlenderData_08D927A0: @ 0x08D927A0
 	@ confirmed GBA LZ77 stream: compressed=0x311, decompressed=0x800
 sLz77Block_08D927A0:
 	@ analyzed canonical ROM range 0x08D927A0-0x08D93293
@@ -198,9 +196,7 @@ sLz77Block_08D927A0:
 	.byte 0x01, 0x80, 0xB0, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x08D93294: ice.s: AnimTask_Haze1, AnimTask_LoadMistTiles
 	.globl gIceData_08D93294
-gIceData_08D93294:
-	.globl gUnknown_8D93294
-gUnknown_8D93294: @ 0x08D93294
+gIceData_08D93294: @ 0x08D93294
 	@ confirmed GBA LZ77 stream: compressed=0x176, decompressed=0x800
 sLz77Block_08D93294:
 	@ analyzed canonical ROM range 0x08D93294-0x08D9354B
@@ -276,9 +272,7 @@ sLz77Block_08D93730:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D93914: battle_anim_effects_2.s: sub_08106D48
 	.globl gBattleAnimEffects2Data_08D93914
-gBattleAnimEffects2Data_08D93914:
-	.globl gUnknown_8D93914
-gUnknown_8D93914: @ 0x08D93914
+gBattleAnimEffects2Data_08D93914: @ 0x08D93914
 	@ confirmed GBA LZ77 stream: compressed=0x1E2, decompressed=0x800
 sLz77Block_08D93914:
 	@ analyzed canonical ROM range 0x08D93914-0x08D94A6B
@@ -612,9 +606,7 @@ sLz77Block_08D96084:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D96358: water.s: AnimTask_CreateSurfWave
 	.globl gWaterData_08D96358
-gWaterData_08D96358:
-	.globl gUnknown_8D96358
-gUnknown_8D96358: @ 0x08D96358
+gWaterData_08D96358: @ 0x08D96358
 	@ confirmed GBA LZ77 stream: compressed=0x2F2, decompressed=0x1000
 sLz77Block_08D96358:
 	@ analyzed canonical ROM range 0x08D96358-0x08D9679F
@@ -715,9 +707,7 @@ sLz77Block_08D96A68:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D96B54: party_menu.s: AllocPartyMiscGfx
 	.globl gPartyMenuData_08D96B54
-gPartyMenuData_08D96B54:
-	.globl gUnknown_8D96B54
-gUnknown_8D96B54: @ 0x08D96B54
+gPartyMenuData_08D96B54: @ 0x08D96B54
 	@ confirmed GBA LZ77 stream: compressed=0x138, decompressed=0x800
 sLz77Block_08D96B54:
 	@ analyzed canonical ROM range 0x08D96B54-0x08D97C53
@@ -997,9 +987,7 @@ sLz77Block_08D96B54:
 	.byte 0x1E, 0xFE, 0x00, 0xD3, 0x02, 0xFF, 0x00, 0x90, 0x19, 0x92, 0x80, 0xB8, 0xFF, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08D97C54: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
 	.globl gPokemonSummaryScreenData_08D97C54
-gPokemonSummaryScreenData_08D97C54:
-	.globl gUnknown_8D97C54
-gUnknown_8D97C54: @ 0x08D97C54
+gPokemonSummaryScreenData_08D97C54: @ 0x08D97C54
 	@ confirmed GBA LZ77 stream: compressed=0x67, decompressed=0x60
 sLz77Block_08D97C54:
 	@ analyzed canonical ROM range 0x08D97C54-0x08D97DCF
@@ -1103,9 +1091,7 @@ sLz77Block_08D98D14:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D98E8C: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
 	.globl gPokemonSummaryScreenData_08D98E8C
-gPokemonSummaryScreenData_08D98E8C:
-	.globl gUnknown_8D98E8C
-gUnknown_8D98E8C: @ 0x08D98E8C
+gPokemonSummaryScreenData_08D98E8C: @ 0x08D98E8C
 	@ confirmed GBA LZ77 stream: compressed=0x1A3, decompressed=0x800
 sLz77Block_08D98E8C:
 	@ analyzed canonical ROM range 0x08D98E8C-0x08D9A733
@@ -1542,9 +1528,7 @@ sLz77Block_08D9A7CC:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9AA84: item_menu.s: LoadBagMenu_Graphics
 	.globl gItemMenuData_08D9AA84
-gItemMenuData_08D9AA84:
-	.globl gUnknown_8D9AA84
-gUnknown_8D9AA84: @ 0x08D9AA84
+gItemMenuData_08D9AA84: @ 0x08D9AA84
 	@ confirmed GBA LZ77 stream: compressed=0x15D, decompressed=0x800
 sLz77Block_08D9AA84:
 	@ analyzed canonical ROM range 0x08D9AA84-0x08D9AFC7
@@ -1661,9 +1645,7 @@ sLz77Block_08D9AFFC:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9B13C: battle_pyramid_bag.s: sub_081C4A40
 	.globl gBattlePyramidBagData_08D9B13C
-gBattlePyramidBagData_08D9B13C:
-	.globl gUnknown_8D9B13C
-gUnknown_8D9B13C: @ 0x08D9B13C
+gBattlePyramidBagData_08D9B13C: @ 0x08D9B13C
 	@ confirmed GBA LZ77 stream: compressed=0x28, decompressed=0x20
 sLz77Block_08D9B13C:
 	@ analyzed canonical ROM range 0x08D9B13C-0x08D9B1B3

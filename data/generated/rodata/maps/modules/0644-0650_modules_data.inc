@@ -358,9 +358,7 @@ gTextWindowFrameTiles_19: @ 0x084E8240
 	.byte 0x7F, 0xF8, 0xFF, 0xFF, 0xFF, 0x8F, 0x0F, 0x00, 0xF0, 0x88, 0x0F, 0x00, 0x00, 0xFF, 0x0F, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084E8360: save_failed_screen.s: CB2_SaveFailedScreen
 	.globl gSaveFailedScreenData_084E8360
-gSaveFailedScreenData_084E8360:
-	.globl gUnknown_84E8360
-gUnknown_84E8360: @ 0x084E8360
+gSaveFailedScreenData_084E8360: @ 0x084E8360
 	@ Text window frame palettes: 20 entries, each 16 RGB5 colors (0x20 bytes).
 gTextWindowFramePalette_0: @ 0x084E8360
 	rodata_rgb5 12, 24, 12 @ [00] raw=0x330C
@@ -704,9 +702,7 @@ gTextWindowFramePalette_19: @ 0x084E85C0
 	rodata_rgb5  9,  8, 10 @ [15] raw=0x2909
 	@ pret/pokeemerald-jp direct xref for 0x084E85E0: text_window.s: LoadMessageBoxGfx
 	.globl gTextWindowData_084E85E0
-gTextWindowData_084E85E0:
-	.globl gUnknown_84E85E0
-gUnknown_84E85E0: @ 0x084E85E0
+gTextWindowData_084E85E0: @ 0x084E85E0
 gMessageBoxFrameTiles: @ 0x084E85E0
 	@ Message box frame graphics loaded by LoadMessageBoxGfx; 14 4bpp tiles (0x1C0 bytes).
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -739,9 +735,7 @@ gMessageBoxFrameTiles: @ 0x084E85E0
 	.byte 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE, 0xEE
 	@ pret/pokeemerald-jp direct xref for 0x084E87A0: text_window.s: stdpal_get
 	.globl gTextWindowData_084E87A0
-gTextWindowData_084E87A0:
-	.globl gUnknown_84E87A0
-gUnknown_84E87A0: @ 0x084E87A0
+gTextWindowData_084E87A0: @ 0x084E87A0
 	@ Standard text palettes returned by stdpal_get; 5 entries.
 gStandardTextPalette_0: @ 0x084E87A0
 	rodata_rgb5 14, 25, 20 @ [00] raw=0x532E
@@ -830,9 +824,7 @@ gStandardTextPalette_4: @ 0x084E8820
 	rodata_rgb5  8, 11, 13 @ [15] raw=0x3568
 	@ pret/pokeemerald-jp direct xref for 0x084E8840: text_window.s: GetOverworldTextboxPalettePtr
 	.globl gTextWindowData_084E8840
-gTextWindowData_084E8840:
-	.globl gUnknown_84E8840
-gUnknown_84E8840: @ 0x084E8840
+gTextWindowData_084E8840: @ 0x084E8840
 	@ Palette returned by GetOverworldTextboxPalettePtr.
 gOverworldTextboxPalette: @ 0x084E8840
 	rodata_rgb5 14, 25, 20 @ [00] raw=0x532E
@@ -853,9 +845,7 @@ gOverworldTextboxPalette: @ 0x084E8840
 	rodata_rgb5  9, 14, 20 @ [15] raw=0x51C9
 	@ pret/pokeemerald-jp direct xref for 0x084E8860: text_window.s: GetWindowFrameTilesPal, LoadWindowGfx, sub_080985F4
 	.globl gTextWindowData_084E8860
-gTextWindowData_084E8860:
-	.globl gUnknown_84E8860
-gUnknown_84E8860: @ 0x084E8860
+gTextWindowData_084E8860: @ 0x084E8860
 	@ 20-entry table of {tiles, palette} pairs indexed by window frame type.
 	.4byte gTextWindowFrameTiles_0
 	.4byte gTextWindowFramePalette_0
@@ -902,9 +892,7 @@ gUnknown_84E8900: @ 0x084E8900
 	.space 0x4, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084E8904: scrcmd.s: ScrCmd_call_if, ScrCmd_callstd_if, ScrCmd_goto_if, ScrCmd_gotostd_if, ScrCmd_vcall_if (+1 more)
 	.globl gScrcmdData_084E8904
-gScrcmdData_084E8904:
-	.globl gUnknown_84E8904
-gUnknown_84E8904: @ 0x084E8904
+gScrcmdData_084E8904: @ 0x084E8904
 gScriptConditionResultTable: @ 0x084E8904
 	@ Indexed by condition * 3 + ScriptContext.comparisonResult.
 	.byte 1, 0, 0 @ condition 0
@@ -916,9 +904,7 @@ gScriptConditionResultTable: @ 0x084E8904
 	.byte 0, 0 @ padding
 	@ pret/pokeemerald-jp direct xref for 0x084E8918: scrcmd.s: ScrCmd_bufferboxname, ScrCmd_bufferdecorationname, ScrCmd_bufferitemname, ScrCmd_bufferleadmonspeciesname, ScrCmd_buffermovename (+8 more)
 	.globl gScrcmdData_084E8918
-gScrcmdData_084E8918:
-	.globl gUnknown_84E8918
-gUnknown_84E8918: @ 0x084E8918
+gScrcmdData_084E8918: @ 0x084E8918
 gScriptStringVarPointers: @ 0x084E8918
 	.4byte 0x02021C40 @ gStringVar1
 	.4byte 0x02021C54 @ gStringVar2
@@ -964,9 +950,7 @@ gUnknown_84E898C: @ 0x084E898C
 	.4byte CrackedFloorPerStepCallback
 	@ pret/pokeemerald-jp direct xref for 0x084E89AC: field_tasks.s: UpdateHalfSubmergedBridgeMetatiles
 	.globl gFieldTasksData_084E89AC
-gFieldTasksData_084E89AC:
-	.globl gUnknown_84E89AC
-gUnknown_84E89AC: @ 0x084E89AC
+gFieldTasksData_084E89AC: @ 0x084E89AC
 gHalfSubmergedBridgeMetatileOffsets: @ 0x084E89AC
 	@ Four records selected by Pacifidlog bridge metatile behavior.
 	.byte 0, 0
@@ -987,9 +971,7 @@ gHalfSubmergedBridgeMetatileOffsets: @ 0x084E89AC
 	.2byte 0x0253
 	@ pret/pokeemerald-jp direct xref for 0x084E89CC: field_tasks.s: UpdateFullySubmergedBridgeMetatiles
 	.globl gFieldTasksData_084E89CC
-gFieldTasksData_084E89CC:
-	.globl gUnknown_84E89CC
-gUnknown_84E89CC: @ 0x084E89CC
+gFieldTasksData_084E89CC: @ 0x084E89CC
 gFullySubmergedBridgeMetatileOffsets: @ 0x084E89CC
 	.byte 0, 0
 	.2byte 0x025A
@@ -1009,9 +991,7 @@ gFullySubmergedBridgeMetatileOffsets: @ 0x084E89CC
 	.2byte 0x0255
 	@ pret/pokeemerald-jp direct xref for 0x084E89EC: field_tasks.s: UpdateFloatingBridgeMetatiles
 	.globl gFieldTasksData_084E89EC
-gFieldTasksData_084E89EC:
-	.globl gUnknown_84E89EC
-gUnknown_84E89EC: @ 0x084E89EC
+gFieldTasksData_084E89EC: @ 0x084E89EC
 gFloatingBridgeMetatileOffsets: @ 0x084E89EC
 	.byte 0, 0
 	.2byte 0x0258
@@ -1031,9 +1011,7 @@ gFloatingBridgeMetatileOffsets: @ 0x084E89EC
 	.2byte 0x0251
 	@ pret/pokeemerald-jp direct xref for 0x084E8A0C: field_tasks.s: CoordInIcePuzzleRegion, IsIcePuzzleCoordVisited, MarkIcePuzzleCoordVisited
 	.globl gFieldTasksData_084E8A0C
-gFieldTasksData_084E8A0C:
-	.globl gUnknown_84E8A0C
-gUnknown_84E8A0C: @ 0x084E8A0C
+gFieldTasksData_084E8A0C: @ 0x084E8A0C
 gSootopolisGymIcePuzzleVarsByYCoord: @ 0x084E8A0C
 	@ Indexed directly by map y coordinate.
 	.2byte 0, 0, 0, 0, 0, 0
@@ -1045,32 +1023,24 @@ gSootopolisGymIcePuzzleVarsByYCoord: @ 0x084E8A0C
 	.2byte 0, 0, 0, 0, 0, 0
 	@ pret/pokeemerald-jp direct xref for 0x084E8A40: field_tasks.s: SetMuddySlopeMetatile
 	.globl gFieldTasksData_084E8A40
-gFieldTasksData_084E8A40:
-	.globl gUnknown_84E8A40
-gUnknown_84E8A40: @ 0x084E8A40
+gFieldTasksData_084E8A40: @ 0x084E8A40
 gMuddySlopeMetatileIdsByTimerBucket: @ 0x084E8A40
 	.2byte 0x00E8, 0x00EB, 0x00EA, 0x00E9
 	@ pret/pokeemerald-jp direct xref for 0x084E8A48: reset_rtc_screen.s: sub_0809E920
 	.globl gResetRtcScreenData_084E8A48
-gResetRtcScreenData_084E8A48:
-	.globl gUnknown_84E8A48
-gUnknown_84E8A48: @ 0x084E8A48
+gResetRtcScreenData_084E8A48: @ 0x084E8A48
 gResetRtcBgTemplate: @ 0x084E8A48
 	bg_template 0, 0, 31, 0, 0, 0, 0
 	@ pret/pokeemerald-jp direct xref for 0x084E8A4C: reset_rtc_screen.s: sub_0809E920
 	.globl gResetRtcScreenData_084E8A4C
-gResetRtcScreenData_084E8A4C:
-	.globl gUnknown_84E8A4C
-gUnknown_84E8A4C: @ 0x084E8A4C
+gResetRtcScreenData_084E8A4C: @ 0x084E8A4C
 gResetRtcWindowTemplates: @ 0x084E8A4C
 	window_template 0, 1, 1, 19, 9, 15, 0x155
 	window_template 0, 4, 15, 22, 4, 15, 0xFD
 	null_window_template
 	@ pret/pokeemerald-jp direct xref for 0x084E8A64: reset_rtc_screen.s: Task_ResetRtc_0
 	.globl gResetRtcScreenData_084E8A64
-gResetRtcScreenData_084E8A64:
-	.globl gUnknown_84E8A64
-gUnknown_84E8A64: @ 0x084E8A64
+gResetRtcScreenData_084E8A64: @ 0x084E8A64
 gResetRtcChooseTimeWindowTemplate: @ 0x084E8A64
 	window_template 0, 4, 9, 21, 2, 15, 0xD3
 
@@ -1088,9 +1058,7 @@ gResetRtcCursorStateInfoBase: @ 0x084E8A6C
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x084E8A6F: reset_rtc_screen.s: PrintTime
 	.globl gResetRtcScreenData_084E8A6F
-gResetRtcScreenData_084E8A6F:
-	.globl gUnknown_84E8A6F
-gUnknown_84E8A6F: @ 0x084E8A6F
+gResetRtcScreenData_084E8A6F: @ 0x084E8A6F
 gText_ResetRtcTimeColon: @ 0x084E8A6F
 	.string ":$"
 

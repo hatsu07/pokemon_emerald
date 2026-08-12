@@ -1,9 +1,7 @@
 	@ pret/pokeemerald-jp direct xref for 0x0830FD4C: overworld.s: SetPlayerFacingDirection
 .include "asm/macros/semantic_raw_structs.inc"
 	.globl gOverworldData_0830FD4C
-gOverworldData_0830FD4C:
-	.globl gUnknown_830FD4C
-gUnknown_830FD4C: @ 0x0830FD4C
+gOverworldData_0830FD4C: @ 0x0830FD4C
 	@ analyzed canonical ROM range 0x0830FD4C-0x083B8093
 	@ pass3: fully recovered Tileset asset/header region; byte-verified
 FunctionPointerTable_JP_0830FD4C: @ 0x0830FD4C

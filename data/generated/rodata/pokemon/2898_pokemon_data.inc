@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x08588651: slot_machine.s: InfoBox_AddText
 	.globl gSlotMachineData_08588651
-gSlotMachineData_08588651:
-	.globl gUnknown_8588651
-gUnknown_8588651: @ 0x08588651
+gSlotMachineData_08588651: @ 0x08588651
 	@ analyzed canonical ROM range 0x08588651-0x085886A3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x53

@@ -21,27 +21,21 @@ gText_Rom_5ABC7E: @ 0x085ABC7E
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085ABC82: battle_bg.s: sub_08035AA0
 	.globl gBattleBgData_085ABC82
-gBattleBgData_085ABC82:
-	.globl gUnknown_85ABC82
-gUnknown_85ABC82: @ 0x085ABC82
+gBattleBgData_085ABC82: @ 0x085ABC82
 	@ analyzed canonical ROM range 0x085ABC82-0x085ABC87
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0xFC, 0x02, 0x00, 0x06, 0x11, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085ABC88: battle_bg.s: sub_08035AA0
 	.globl gBattleBgData_085ABC88
-gBattleBgData_085ABC88:
-	.globl gUnknown_85ABC88
-gUnknown_85ABC88: @ 0x085ABC88
+gBattleBgData_085ABC88: @ 0x085ABC88
 	@ analyzed canonical ROM range 0x085ABC88-0x085ABC8D
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0xFC, 0x02, 0x00, 0x1F, 0x09, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085ABC8E: battle_bg.s: sub_08035AA0
 	.globl gBattleBgData_085ABC8E
-gBattleBgData_085ABC8E:
-	.globl gUnknown_85ABC8E
-gUnknown_85ABC8E: @ 0x085ABC8E
+gBattleBgData_085ABC8E: @ 0x085ABC8E
 	@ analyzed canonical ROM range 0x085ABC8E-0x085ABC95
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
@@ -70,9 +64,7 @@ gText_Rom_5ABC98: @ 0x085ABC98
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085ABC9A: battle_message.s: BattleStringExpandPlaceholders, BufferStringBattle
 	.globl gBattleMessageData_085ABC9A
-gBattleMessageData_085ABC9A:
-	.globl gUnknown_85ABC9A
-gUnknown_85ABC9A: @ 0x085ABC9A
+gBattleMessageData_085ABC9A: @ 0x085ABC9A
 	@ analyzed canonical ROM range 0x085ABC9A-0x085ABD17
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x7E

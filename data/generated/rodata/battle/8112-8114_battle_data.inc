@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x0890ED54: agb_flash.s: IdentifyFlash
 	.globl gAgbFlashData_0890ED54
-gAgbFlashData_0890ED54:
-	.globl gUnknown_890ED54
-gUnknown_890ED54: @ 0x0890ED54
+gAgbFlashData_0890ED54: @ 0x0890ED54
 	@ analyzed canonical ROM range 0x0890ED54-0x0890EEA3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x150
@@ -29,9 +27,7 @@ gUnknown_890ED54: @ 0x0890ED54
 	.byte 0x76, 0x1A, 0x00, 0x03, 0x76, 0x1A, 0x00, 0x03, 0x76, 0x1A, 0x00, 0x03, 0xC6, 0x00, 0x00, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0890EEA4: librfu_rfu.s: rfu_STC_NI_constructLLSF, rfu_STC_UNI_constructLLSF, rfu_STC_analyzeLLSF, rfu_STC_setSendData_org
 	.globl gLibrfuRfuData_0890EEA4
-gLibrfuRfuData_0890EEA4:
-	.globl gUnknown_890EEA4
-gUnknown_890EEA4: @ 0x0890EEA4
+gLibrfuRfuData_0890EEA4: @ 0x0890EEA4
 	@ analyzed canonical ROM range 0x0890EEA4-0x0890EECF
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x2C
@@ -40,18 +36,14 @@ gUnknown_890EEA4: @ 0x0890EEA4
 	.2byte 0x4652, 0x5F55, 0x3156, 0x3230, 0x0036, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0890EED0: librfu_rfu.s: sub_082927D4
 	.globl gLibrfuRfuData_0890EED0
-gLibrfuRfuData_0890EED0:
-	.globl gUnknown_890EED0
-gUnknown_890EED0: @ 0x0890EED0
+gLibrfuRfuData_0890EED0: @ 0x0890EED0
 	@ analyzed canonical ROM range 0x0890EED0-0x0890EEDB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.byte 0x52, 0x46, 0x55, 0x2D, 0x4D, 0x42, 0x4F, 0x4F, 0x54, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890EEDC: librfu.s: sub_08295510
 	.globl gLibrfuData_0890EEDC
-gLibrfuData_0890EEDC:
-	.globl gUnknown_890EEDC
-gUnknown_890EEDC: @ 0x0890EEDC
+gLibrfuData_0890EEDC: @ 0x0890EEDC
 	@ analyzed canonical ROM range 0x0890EEDC-0x0890EEF3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x18
@@ -59,9 +51,7 @@ gUnknown_890EEDC: @ 0x0890EEDC
 	.byte 0x30, 0x33, 0x30, 0x38, 0x32, 0x30, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890EEF4: libisagbprn.s: AGBAssert
 	.globl gLibisagbprnData_0890EEF4
-gLibisagbprnData_0890EEF4:
-	.globl gUnknown_890EEF4
-gUnknown_890EEF4: @ 0x0890EEF4
+gLibisagbprnData_0890EEF4: @ 0x0890EEF4
 	@ analyzed canonical ROM range 0x0890EEF4-0x0890EF27
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x34
@@ -71,9 +61,7 @@ gUnknown_890EEF4: @ 0x0890EEF4
 	.byte 0x0A, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890EF28: libisagbprn.s: AGBAssert
 	.globl gLibisagbprnData_0890EF28
-gLibisagbprnData_0890EF28:
-	.globl gUnknown_890EF28
-gUnknown_890EF28: @ 0x0890EF28
+gLibisagbprnData_0890EF28: @ 0x0890EF28
 	@ analyzed canonical ROM range 0x0890EF28-0x0890EF57
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x30
@@ -82,9 +70,7 @@ gUnknown_890EF28: @ 0x0890EF28
 	.byte 0x5B, 0x25, 0x73, 0x5D, 0x20, 0x0A, 0x00, 0x00, 0xF4, 0xEE, 0x90, 0x08, 0x28, 0xEF, 0x90, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0890EF58: libgcc.s: __divdi3
 	.globl gLibgccData_0890EF58
-gLibgccData_0890EF58:
-	.globl gUnknown_890EF58
-gUnknown_890EF58: @ 0x0890EF58
+gLibgccData_0890EF58: @ 0x0890EF58
 	@ analyzed canonical ROM range 0x0890EF58-0x0890F057
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x100
@@ -106,9 +92,7 @@ gUnknown_890EF58: @ 0x0890EF58
 	.2byte 0x0808, 0x0808, 0x0808, 0x0808, 0x0808, 0x0808, 0x0808, 0x0808
 	@ pret/pokeemerald-jp direct xref for 0x0890F058: libgcc.s: __udivdi3
 	.globl gLibgccData_0890F058
-gLibgccData_0890F058:
-	.globl gUnknown_890F058
-gUnknown_890F058: @ 0x0890F058
+gLibgccData_0890F058: @ 0x0890F058
 	@ analyzed canonical ROM range 0x0890F058-0x0890F15B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x104
@@ -137,27 +121,21 @@ gUnknown_890F16C: @ 0x0890F16C
 	.space 0x10, 0x30
 	@ pret/pokeemerald-jp direct xref for 0x0890F17C: libc.s: _vfprintf_r
 	.globl gLibcData_0890F17C
-gLibcData_0890F17C:
-	.globl gUnknown_890F17C
-gUnknown_890F17C: @ 0x0890F17C
+gLibcData_0890F17C: @ 0x0890F17C
 	@ analyzed canonical ROM range 0x0890F17C-0x0890F17F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x49, 0x6E, 0x66, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890F180: libc.s: _vfprintf_r
 	.globl gLibcData_0890F180
-gLibcData_0890F180:
-	.globl gUnknown_890F180
-gUnknown_890F180: @ 0x0890F180
+gLibcData_0890F180: @ 0x0890F180
 	@ analyzed canonical ROM range 0x0890F180-0x0890F183
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x4E, 0x61, 0x4E, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890F184: libc.s: _vfprintf_r
 	.globl gLibcData_0890F184
-gLibcData_0890F184:
-	.globl gUnknown_890F184
-gUnknown_890F184: @ 0x0890F184
+gLibcData_0890F184: @ 0x0890F184
 	@ analyzed canonical ROM range 0x0890F184-0x0890F197
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x14
@@ -165,18 +143,14 @@ gUnknown_890F184: @ 0x0890F184
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890F198: libc.s: _vfprintf_r
 	.globl gLibcData_0890F198
-gLibcData_0890F198:
-	.globl gUnknown_890F198
-gUnknown_890F198: @ 0x0890F198
+gLibcData_0890F198: @ 0x0890F198
 	@ analyzed canonical ROM range 0x0890F198-0x0890F19F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x28, 0x6E, 0x75, 0x6C, 0x6C, 0x29, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890F1A0: libc.s: _vfprintf_r
 	.globl gLibcData_0890F1A0
-gLibcData_0890F1A0:
-	.globl gUnknown_890F1A0
-gUnknown_890F1A0: @ 0x0890F1A0
+gLibcData_0890F1A0: @ 0x0890F1A0
 	@ analyzed canonical ROM range 0x0890F1A0-0x0890F1B3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x14
@@ -184,9 +158,7 @@ gUnknown_890F1A0: @ 0x0890F1A0
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890F1B4: libc.s: _vfprintf_r
 	.globl gLibcData_0890F1B4
-gLibcData_0890F1B4:
-	.globl gUnknown_890F1B4
-gUnknown_890F1B4: @ 0x0890F1B4
+gLibcData_0890F1B4: @ 0x0890F1B4
 	@ analyzed canonical ROM range 0x0890F1B4-0x0890F1CF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x1C
@@ -194,54 +166,42 @@ gUnknown_890F1B4: @ 0x0890F1B4
 	.byte 0x20, 0x62, 0x61, 0x64, 0x20, 0x62, 0x61, 0x73, 0x65, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890F1D0: libc.s: _vfprintf_r
 	.globl gLibcData_0890F1D0
-gLibcData_0890F1D0:
-	.globl gUnknown_890F1D0
-gUnknown_890F1D0: @ 0x0890F1D0
+gLibcData_0890F1D0: @ 0x0890F1D0
 	@ analyzed canonical ROM range 0x0890F1D0-0x0890F1D3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x30, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890F1D4: libc.s: _vfprintf_r
 	.globl gLibcData_0890F1D4
-gLibcData_0890F1D4:
-	.globl gUnknown_890F1D4
-gUnknown_890F1D4: @ 0x0890F1D4
+gLibcData_0890F1D4: @ 0x0890F1D4
 	@ analyzed canonical ROM range 0x0890F1D4-0x0890F1D7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x2E, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890F1D8: libc.s: _dtoa_r
 	.globl gLibcData_0890F1D8
-gLibcData_0890F1D8:
-	.globl gUnknown_890F1D8
-gUnknown_890F1D8: @ 0x0890F1D8
+gLibcData_0890F1D8: @ 0x0890F1D8
 	@ analyzed canonical ROM range 0x0890F1D8-0x0890F1E3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.byte 0x49, 0x6E, 0x66, 0x69, 0x6E, 0x69, 0x74, 0x79, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890F1E4: libc.s: _dtoa_r
 	.globl gLibcData_0890F1E4
-gLibcData_0890F1E4:
-	.globl gUnknown_890F1E4
-gUnknown_890F1E4: @ 0x0890F1E4
+gLibcData_0890F1E4: @ 0x0890F1E4
 	@ analyzed canonical ROM range 0x0890F1E4-0x0890F1E7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x4E, 0x61, 0x4E, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890F1E8: libc.s: _dtoa_r
 	.globl gLibcData_0890F1E8
-gLibcData_0890F1E8:
-	.globl gUnknown_890F1E8
-gUnknown_890F1E8: @ 0x0890F1E8
+gLibcData_0890F1E8: @ 0x0890F1E8
 	@ analyzed canonical ROM range 0x0890F1E8-0x0890F1EB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x30, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890F1EC: libc.s: _localeconv_r
 	.globl gLibcData_0890F1EC
-gLibcData_0890F1EC:
-	.globl gUnknown_890F1EC
-gUnknown_890F1EC: @ 0x0890F1EC
+gLibcData_0890F1EC: @ 0x0890F1EC
 	@ confirmed contiguous ROM pointer table: 10 entries from this address
 sPointerTable_0890F1EC:
 	@ analyzed canonical ROM range 0x0890F1EC-0x0890F21B
@@ -266,9 +226,7 @@ gUnknown_890F21C: @ 0x0890F21C
 	.4byte ABILITY_PRESSURE
 	@ pret/pokeemerald-jp direct xref for 0x0890F224: libc.s: _setlocale_r
 	.globl gLibcData_0890F224
-gLibcData_0890F224:
-	.globl gUnknown_890F224
-gUnknown_890F224: @ 0x0890F224
+gLibcData_0890F224: @ 0x0890F224
 	@ analyzed canonical ROM range 0x0890F224-0x0890F227
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
@@ -281,9 +239,7 @@ gUnknown_890F228: @ 0x0890F228
 	.4byte OFFSET_REG_NR44
 	@ pret/pokeemerald-jp direct xref for 0x0890F234: libc.s: _dtoa_r, _mprec_log10
 	.globl gLibcData_0890F234
-gLibcData_0890F234:
-	.globl gUnknown_890F234
-gUnknown_890F234: @ 0x0890F234
+gLibcData_0890F234: @ 0x0890F234
 	@ analyzed canonical ROM range 0x0890F234-0x0890F2FB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xC8
@@ -302,9 +258,7 @@ gUnknown_890F234: @ 0x0890F234
 	.byte 0x43, 0x78, 0xEA, 0x44, 0xB4, 0x9D, 0xD9, 0x79
 	@ pret/pokeemerald-jp direct xref for 0x0890F2FC: libc.s: _dtoa_r
 	.globl gLibcData_0890F2FC
-gLibcData_0890F2FC:
-	.globl gUnknown_890F2FC
-gUnknown_890F2FC: @ 0x0890F2FC
+gLibcData_0890F2FC: @ 0x0890F2FC
 	@ analyzed canonical ROM range 0x0890F2FC-0x0890F34B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x50
@@ -315,18 +269,14 @@ gUnknown_890F2FC: @ 0x0890F2FC
 	.byte 0x08, 0xBA, 0x5B, 0x25, 0x9D, 0x97, 0x8C, 0xCF, 0x28, 0x06, 0xC8, 0x0A, 0x43, 0x6F, 0xAC, 0x64
 	@ pret/pokeemerald-jp direct xref for 0x0890F34C: libc.s: initialise_monitor_handles
 	.globl gLibcData_0890F34C
-gLibcData_0890F34C:
-	.globl gUnknown_890F34C
-gUnknown_890F34C: @ 0x0890F34C
+gLibcData_0890F34C: @ 0x0890F34C
 	@ analyzed canonical ROM range 0x0890F34C-0x0890F34F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x3A, 0x74, 0x74, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890F350: libc.s: _sbrk
 	.globl gLibcData_0890F350
-gLibcData_0890F350:
-	.globl gUnknown_890F350
-gUnknown_890F350: @ 0x0890F350
+gLibcData_0890F350: @ 0x0890F350
 	@ analyzed canonical ROM range 0x0890F350-0x0890F373
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x24
@@ -335,9 +285,7 @@ gUnknown_890F350: @ 0x0890F350
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890F374: ereader_screen.s: sub_081D4704
 	.globl gEreaderScreenData_0890F374
-gEreaderScreenData_0890F374:
-	.globl gUnknown_890F374
-gUnknown_890F374: @ 0x0890F374
+gEreaderScreenData_0890F374: @ 0x0890F374
 	@ analyzed canonical ROM range 0x0890F374-0x08912453
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x30E0

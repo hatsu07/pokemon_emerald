@@ -1,789 +1,799 @@
 
-	.globl gUnknown_81DABAC
-gUnknown_81DABAC: @ 0x081DABAC
+	.globl gScriptCmdTable
+gScriptCmdTable: @ 0x081DABAC
+	script_cmd_handler 0x00, ScrCmd_nop
+	script_cmd_handler 0x01, ScrCmd_nop1
+	script_cmd_handler 0x02, ScrCmd_end
+	script_cmd_handler 0x03, ScrCmd_return
+	script_cmd_handler 0x04, ScrCmd_call
+	script_cmd_handler 0x05, ScrCmd_goto
+	script_cmd_handler 0x06, ScrCmd_goto_if
+	script_cmd_handler 0x07, ScrCmd_call_if
+	script_cmd_handler 0x08, ScrCmd_gotostd
+	script_cmd_handler 0x09, ScrCmd_callstd
+	script_cmd_handler 0x0A, ScrCmd_gotostd_if
+	script_cmd_handler 0x0B, ScrCmd_callstd_if
+	script_cmd_handler 0x0C, ScrCmd_returnram
+	script_cmd_handler 0x0D, ScrCmd_killscript
+	script_cmd_handler 0x0E, ScrCmd_setmysteryeventstatus
+	script_cmd_handler 0x0F, ScrCmd_loadword
+	script_cmd_handler 0x10, ScrCmd_loadbyte
+	script_cmd_handler 0x11, ScrCmd_writebytetoaddr
+	script_cmd_handler 0x12, ScrCmd_loadbytefromaddr
+	script_cmd_handler 0x13, ScrCmd_setptrbyte
+	script_cmd_handler 0x14, ScrCmd_copylocal
+	script_cmd_handler 0x15, ScrCmd_copybyte
+	script_cmd_handler 0x16, ScrCmd_setvar
+	script_cmd_handler 0x17, ScrCmd_addvar
+	script_cmd_handler 0x18, ScrCmd_subvar
+	script_cmd_handler 0x19, ScrCmd_copyvar
+	script_cmd_handler 0x1A, ScrCmd_setorcopyvar
+	script_cmd_handler 0x1B, ScrCmd_compare_local_to_local
+	script_cmd_handler 0x1C, ScrCmd_compare_local_to_value
+	script_cmd_handler 0x1D, ScrCmd_compare_local_to_addr
+	script_cmd_handler 0x1E, ScrCmd_compare_addr_to_local
+	script_cmd_handler 0x1F, ScrCmd_compare_addr_to_value
+	script_cmd_handler 0x20, ScrCmd_compare_addr_to_addr
+	script_cmd_handler 0x21, ScrCmd_compare_var_to_value
+	script_cmd_handler 0x22, ScrCmd_compare_var_to_var
+	script_cmd_handler 0x23, ScrCmd_callnative
+	script_cmd_handler 0x24, ScrCmd_gotonative
+	script_cmd_handler 0x25, ScrCmd_special
+	script_cmd_handler 0x26, ScrCmd_specialvar
+	script_cmd_handler 0x27, ScrCmd_waitstate
+	script_cmd_handler 0x28, ScrCmd_delay
+	script_cmd_handler 0x29, ScrCmd_setflag
+	script_cmd_handler 0x2A, ScrCmd_clearflag
+	script_cmd_handler 0x2B, ScrCmd_checkflag
+	script_cmd_handler 0x2C, ScrCmd_initclock
+	script_cmd_handler 0x2D, ScrCmd_dotimebasedevents
+	script_cmd_handler 0x2E, ScrCmd_gettime
+	script_cmd_handler 0x2F, ScrCmd_playse
+	script_cmd_handler 0x30, ScrCmd_waitse
+	script_cmd_handler 0x31, ScrCmd_playfanfare
+	script_cmd_handler 0x32, ScrCmd_waitfanfare
+	script_cmd_handler 0x33, ScrCmd_playbgm
+	script_cmd_handler 0x34, ScrCmd_savebgm
+	script_cmd_handler 0x35, ScrCmd_fadedefaultbgm
+	script_cmd_handler 0x36, ScrCmd_fadenewbgm
+	script_cmd_handler 0x37, ScrCmd_fadeoutbgm
+	script_cmd_handler 0x38, ScrCmd_fadeinbgm
+	script_cmd_handler 0x39, ScrCmd_warp
+	script_cmd_handler 0x3A, ScrCmd_warpsilent
+	script_cmd_handler 0x3B, ScrCmd_warpdoor
+	script_cmd_handler 0x3C, ScrCmd_warphole
+	script_cmd_handler 0x3D, ScrCmd_warpteleport
+	script_cmd_handler 0x3E, ScrCmd_setwarp
+	script_cmd_handler 0x3F, ScrCmd_setdynamicwarp
+	script_cmd_handler 0x40, ScrCmd_setdivewarp
+	script_cmd_handler 0x41, ScrCmd_setholewarp
+	script_cmd_handler 0x42, ScrCmd_getplayerxy
+	script_cmd_handler 0x43, ScrCmd_getpartysize
+	script_cmd_handler 0x44, ScrCmd_giveitem
+	script_cmd_handler 0x45, ScrCmd_takeitem
+	script_cmd_handler 0x46, ScrCmd_checkitemspace
+	script_cmd_handler 0x47, ScrCmd_checkitem
+	script_cmd_handler 0x48, ScrCmd_checkitemtype
+	script_cmd_handler 0x49, ScrCmd_givepcitem
+	script_cmd_handler 0x4A, ScrCmd_checkpcitem
+	script_cmd_handler 0x4B, ScrCmd_givedecoration
+	script_cmd_handler 0x4C, ScrCmd_takedecoration
+	script_cmd_handler 0x4D, ScrCmd_checkdecor
+	script_cmd_handler 0x4E, ScrCmd_checkdecorspace
+	script_cmd_handler 0x4F, ScrCmd_applymovement
+	script_cmd_handler 0x50, ScrCmd_applymovement_at
+	script_cmd_handler 0x51, ScrCmd_waitmovement
+	script_cmd_handler 0x52, ScrCmd_waitmovement_at
+	script_cmd_handler 0x53, ScrCmd_removeobject
+	script_cmd_handler 0x54, ScrCmd_removeobject_at
+	script_cmd_handler 0x55, ScrCmd_addobject
+	script_cmd_handler 0x56, ScrCmd_addobject_at
+	script_cmd_handler 0x57, ScrCmd_setobjectxy
+	script_cmd_handler 0x58, ScrCmd_showobject_at
+	script_cmd_handler 0x59, ScrCmd_hideobject_at
+	script_cmd_handler 0x5A, ScrCmd_faceplayer
+	script_cmd_handler 0x5B, ScrCmd_turnobject
+	script_cmd_handler 0x5C, ScrCmd_trainerbattle
+	script_cmd_handler 0x5D, ScrCmd_dotrainerbattle
+	script_cmd_handler 0x5E, ScrCmd_gotobeatenscript
+	script_cmd_handler 0x5F, ScrCmd_gotopostbattlescript
+	script_cmd_handler 0x60, ScrCmd_checktrainerflag
+	script_cmd_handler 0x61, ScrCmd_settrainerflag
+	script_cmd_handler 0x62, ScrCmd_cleartrainerflag
+	script_cmd_handler 0x63, ScrCmd_setobjectxyperm
+	script_cmd_handler 0x64, ScrCmd_moveobjectoffscreen
+	script_cmd_handler 0x65, ScrCmd_setobjectmovementtype
+	script_cmd_handler 0x66, ScrCmd_waitmessage
+	script_cmd_handler 0x67, ScrCmd_message
+	script_cmd_handler 0x68, ScrCmd_closemessage
+	script_cmd_handler 0x69, ScrCmd_lockall
+	script_cmd_handler 0x6A, ScrCmd_lock
+	script_cmd_handler 0x6B, ScrCmd_releaseall
+	script_cmd_handler 0x6C, ScrCmd_release
+	script_cmd_handler 0x6D, ScrCmd_waitbuttonpress
+	script_cmd_handler 0x6E, ScrCmd_yesnobox
+	script_cmd_handler 0x6F, ScrCmd_multichoice
+	script_cmd_handler 0x70, ScrCmd_multichoicedefault
+	script_cmd_handler 0x71, ScrCmd_multichoicegrid
+	script_cmd_handler 0x72, ScrCmd_erasebox
+	script_cmd_handler 0x73, ScrCmd_drawboxtext
+	script_cmd_handler 0x74, ScrCmd_mossdeepgym2
+	script_cmd_handler 0x75, ScrCmd_showmonpic
+	script_cmd_handler 0x76, ScrCmd_hidemonpic
+	script_cmd_handler 0x77, ScrCmd_showcontestwinner
+	script_cmd_handler 0x78, ScrCmd_braillemessage
+	script_cmd_handler 0x79, ScrCmd_givemon
+	script_cmd_handler 0x7A, ScrCmd_giveegg
+	script_cmd_handler 0x7B, ScrCmd_setmonmove
+	script_cmd_handler 0x7C, ScrCmd_checkpartymove
+	script_cmd_handler 0x7D, ScrCmd_buffermovename
+	script_cmd_handler 0x7E, ScrCmd_bufferleadmonspeciesname
+	script_cmd_handler 0x7F, ScrCmd_bufferpartymonnick
+	script_cmd_handler 0x80, ScrCmd_bufferitemname
+	script_cmd_handler 0x81, ScrCmd_bufferspeciesname
+	script_cmd_handler 0x82, ScrCmd_bufferdecorationname
+	script_cmd_handler 0x83, ScrCmd_buffernumberstring
+	script_cmd_handler 0x84, ScrCmd_bufferstdstring
+	script_cmd_handler 0x85, ScrCmd_bufferstring
+	script_cmd_handler 0x86, ScrCmd_pokemart
+	script_cmd_handler 0x87, ScrCmd_pokemartdecoration
+	script_cmd_handler 0x88, ScrCmd_pokemartdecoration2
+	script_cmd_handler 0x89, ScrCmd_playslotmachine
+	script_cmd_handler 0x8A, ScrCmd_setberrytree
+	script_cmd_handler 0x8B, ScrCmd_showcontestresults
+	script_cmd_handler 0x8C, ScrCmd_startcontest
+	script_cmd_handler 0x8D, ScrCmd_choosecontestmon
+	script_cmd_handler 0x8E, ScrCmd_contestlinktransfer
+	script_cmd_handler 0x8F, ScrCmd_random
+	script_cmd_handler 0x90, ScrCmd_givemoney
+	script_cmd_handler 0x91, ScrCmd_takemoney
+	script_cmd_handler 0x92, ScrCmd_checkmoney
+	script_cmd_handler 0x93, ScrCmd_showmoneybox
+	script_cmd_handler 0x94, ScrCmd_hidemoneybox
+	script_cmd_handler 0x95, ScrCmd_updatemoneybox
+	script_cmd_handler 0x96, ScrCmd_getpricereduction
+	script_cmd_handler 0x97, ScrCmd_fadescreen
+	script_cmd_handler 0x98, ScrCmd_fadescreenspeed
+	script_cmd_handler 0x99, ScrCmd_setflashradius
+	script_cmd_handler 0x9A, ScrCmd_animateflash
+	script_cmd_handler 0x9B, ScrCmd_messageautoscroll
+	script_cmd_handler 0x9C, ScrCmd_dofieldeffect
+	script_cmd_handler 0x9D, ScrCmd_setfieldeffectarg
+	script_cmd_handler 0x9E, ScrCmd_waitfieldeffect
+	script_cmd_handler 0x9F, ScrCmd_setrespawn
+	script_cmd_handler 0xA0, ScrCmd_checkplayergender
+	script_cmd_handler 0xA1, ScrCmd_playmoncry
+	script_cmd_handler 0xA2, ScrCmd_setmetatile
+	script_cmd_handler 0xA3, ScrCmd_doweather
+	script_cmd_handler 0xA4, ScrCmd_setweather
+	script_cmd_handler 0xA5, ScrCmd_resetweather
+	script_cmd_handler 0xA6, ScrCmd_setstepcallback
+	script_cmd_handler 0xA7, ScrCmd_setmaplayoutindex
+	script_cmd_handler 0xA8, ScrCmd_setobjectpriority
+	script_cmd_handler 0xA9, ScrCmd_resetobjectpriority
+	script_cmd_handler 0xAA, ScrCmd_createvobject
+	script_cmd_handler 0xAB, ScrCmd_turnvobject
+	script_cmd_handler 0xAC, ScrCmd_opendoor
+	script_cmd_handler 0xAD, ScrCmd_closedoor
+	script_cmd_handler 0xAE, ScrCmd_waitmoncry
+	script_cmd_handler 0xAF, ScrCmd_setdooropen
+	script_cmd_handler 0xB0, ScrCmd_setdoorclosed
+	script_cmd_handler 0xB1, ScrCmd_addelevmenuitem
+	script_cmd_handler 0xB2, ScrCmd_drawbox
+	script_cmd_handler 0xB3, ScrCmd_checkcoins
+	script_cmd_handler 0xB4, ScrCmd_givecoins
+	script_cmd_handler 0xB5, ScrCmd_takecoins
+	script_cmd_handler 0xB6, ScrCmd_setwildbattle
+	script_cmd_handler 0xB7, ScrCmd_dowildbattle
+	script_cmd_handler 0xB8, ScrCmd_setvaddress
+	script_cmd_handler 0xB9, ScrCmd_vgoto
+	script_cmd_handler 0xBA, ScrCmd_vcall
+	script_cmd_handler 0xBB, ScrCmd_vgoto_if
+	script_cmd_handler 0xBC, ScrCmd_vcall_if
+	script_cmd_handler 0xBD, ScrCmd_vmessage
+	script_cmd_handler 0xBE, ScrCmd_vloadword
+	script_cmd_handler 0xBF, ScrCmd_vbufferstring
+	script_cmd_handler 0xC0, ScrCmd_showcoinsbox
+	script_cmd_handler 0xC1, ScrCmd_hidecoinsbox
+	script_cmd_handler 0xC2, ScrCmd_updatecoinsbox
+	script_cmd_handler 0xC3, ScrCmd_incrementgamestat
+	script_cmd_handler 0xC4, ScrCmd_setescapewarp
+	script_cmd_handler 0xC5, ScrCmd_waitdooranim
+	script_cmd_handler 0xC6, ScrCmd_bufferboxname
+	script_cmd_handler 0xC7, ScrCmd_nop1
+	script_cmd_handler 0xC8, ScrCmd_nop1
+	script_cmd_handler 0xC9, ScrCmd_nop1
+	script_cmd_handler 0xCA, ScrCmd_nop1
+	script_cmd_handler 0xCB, ScrCmd_nop1
+	script_cmd_handler 0xCC, ScrCmd_nop1
+	script_cmd_handler 0xCD, ScrCmd_setmonobedient
+	script_cmd_handler 0xCE, ScrCmd_checkmonobedience
+	script_cmd_handler 0xCF, ScrCmd_gotoram
+	script_cmd_handler 0xD0, ScrCmd_nop1
+	script_cmd_handler 0xD1, ScrCmd_warpD1
+	script_cmd_handler 0xD2, ScrCmd_setmonmetlocation
+	script_cmd_handler 0xD3, ScrCmd_mossdeepgym1
+	script_cmd_handler 0xD4, sub_0809B48C
+	script_cmd_handler 0xD5, ScrCmd_mossdeepgym3
+	script_cmd_handler 0xD6, ScrCmd_buffercontesttype
+	script_cmd_handler 0xD7, ScrCmd_warpD7
+	script_cmd_handler 0xD8, ScrCmd_cmdD8
+	script_cmd_handler 0xD9, ScrCmd_cmdD9
+	script_cmd_handler 0xDA, ScrCmd_mossdeepgym4
+	script_cmd_handler 0xDB, ScrCmd_cmdDB
+	script_cmd_handler 0xDC, ScrCmd_fadescreenswapbuffers
+	script_cmd_handler 0xDD, ScrCmd_buffertrainerclassname
+	script_cmd_handler 0xDE, ScrCmd_buffertrainername
+	script_cmd_handler 0xDF, ScrCmd_pokenavcall
+	script_cmd_handler 0xE0, ScrCmd_warpE0
+	.if (. - gScriptCmdTable) != 0x384
+	.error "gScriptCmdTable size changed"
+	.endif
+	.globl gScriptCmdTableEnd
+gScriptCmdTableEnd: @ 0x081DAF30
 	.4byte ScrCmd_nop
-	.4byte ScrCmd_nop1
-	.4byte ScrCmd_end
-	.4byte ScrCmd_return
-	.4byte ScrCmd_call
-	.4byte ScrCmd_goto
-	.4byte ScrCmd_goto_if
-	.4byte ScrCmd_call_if
-	.4byte ScrCmd_gotostd
-	.4byte ScrCmd_callstd
-	.4byte ScrCmd_gotostd_if
-	.4byte ScrCmd_callstd_if
-	.4byte ScrCmd_returnram
-	.4byte ScrCmd_killscript
-	.4byte ScrCmd_setmysteryeventstatus
-	.4byte ScrCmd_loadword
-	.4byte ScrCmd_loadbyte
-	.4byte ScrCmd_writebytetoaddr
-	.4byte ScrCmd_loadbytefromaddr
-	.4byte ScrCmd_setptrbyte
-	.4byte ScrCmd_copylocal
-	.4byte ScrCmd_copybyte
-	.4byte ScrCmd_setvar
-	.4byte ScrCmd_addvar
-	.4byte ScrCmd_subvar
-	.4byte ScrCmd_copyvar
-	.4byte ScrCmd_setorcopyvar
-	.4byte ScrCmd_compare_local_to_local
-	.4byte ScrCmd_compare_local_to_value
-	.4byte ScrCmd_compare_local_to_addr
-	.4byte ScrCmd_compare_addr_to_local
-	.4byte ScrCmd_compare_addr_to_value
-	.4byte ScrCmd_compare_addr_to_addr
-	.4byte ScrCmd_compare_var_to_value
-	.4byte ScrCmd_compare_var_to_var
-	.4byte ScrCmd_callnative
-	.4byte ScrCmd_gotonative
-	.4byte ScrCmd_special
-	.4byte ScrCmd_specialvar
-	.4byte ScrCmd_waitstate
-	.4byte ScrCmd_delay
-	.4byte ScrCmd_setflag
-	.4byte ScrCmd_clearflag
-	.4byte ScrCmd_checkflag
-	.4byte ScrCmd_initclock
-	.4byte ScrCmd_dotimebasedevents
-	.4byte ScrCmd_gettime
-	.4byte ScrCmd_playse
-	.4byte ScrCmd_waitse
-	.4byte ScrCmd_playfanfare
-	.4byte ScrCmd_waitfanfare
-	.4byte ScrCmd_playbgm
-	.4byte ScrCmd_savebgm
-	.4byte ScrCmd_fadedefaultbgm
-	.4byte ScrCmd_fadenewbgm
-	.4byte ScrCmd_fadeoutbgm
-	.4byte ScrCmd_fadeinbgm
-	.4byte ScrCmd_warp
-	.4byte ScrCmd_warpsilent
-	.4byte ScrCmd_warpdoor
-	.4byte ScrCmd_warphole
-	.4byte ScrCmd_warpteleport
-	.4byte ScrCmd_setwarp
-	.4byte ScrCmd_setdynamicwarp
-	.4byte ScrCmd_setdivewarp
-	.4byte ScrCmd_setholewarp
-	.4byte ScrCmd_getplayerxy
-	.4byte ScrCmd_getpartysize
-	.4byte ScrCmd_giveitem
-	.4byte ScrCmd_takeitem
-	.4byte ScrCmd_checkitemspace
-	.4byte ScrCmd_checkitem
-	.4byte ScrCmd_checkitemtype
-	.4byte ScrCmd_givepcitem
-	.4byte ScrCmd_checkpcitem
-	.4byte ScrCmd_givedecoration
-	.4byte ScrCmd_takedecoration
-	.4byte ScrCmd_checkdecor
-	.4byte ScrCmd_checkdecorspace
-	.4byte ScrCmd_applymovement
-	.4byte ScrCmd_applymovement_at
-	.4byte ScrCmd_waitmovement
-	.4byte ScrCmd_waitmovement_at
-	.4byte ScrCmd_removeobject
-	.4byte ScrCmd_removeobject_at
-	.4byte ScrCmd_addobject
-	.4byte ScrCmd_addobject_at
-	.4byte ScrCmd_setobjectxy
-	.4byte ScrCmd_showobject_at
-	.4byte ScrCmd_hideobject_at
-	.4byte ScrCmd_faceplayer
-	.4byte ScrCmd_turnobject
-	.4byte ScrCmd_trainerbattle
-	.4byte ScrCmd_dotrainerbattle
-	.4byte ScrCmd_gotobeatenscript
-	.4byte ScrCmd_gotopostbattlescript
-	.4byte ScrCmd_checktrainerflag
-	.4byte ScrCmd_settrainerflag
-	.4byte ScrCmd_cleartrainerflag
-	.4byte ScrCmd_setobjectxyperm
-	.4byte ScrCmd_moveobjectoffscreen
-	.4byte ScrCmd_setobjectmovementtype
-	.4byte ScrCmd_waitmessage
-	.4byte ScrCmd_message
-	.4byte ScrCmd_closemessage
-	.4byte ScrCmd_lockall
-	.4byte ScrCmd_lock
-	.4byte ScrCmd_releaseall
-	.4byte ScrCmd_release
-	.4byte ScrCmd_waitbuttonpress
-	.4byte ScrCmd_yesnobox
-	.4byte ScrCmd_multichoice
-	.4byte ScrCmd_multichoicedefault
-	.4byte ScrCmd_multichoicegrid
-	.4byte ScrCmd_erasebox
-	.4byte ScrCmd_drawboxtext
-	.4byte ScrCmd_mossdeepgym2
-	.4byte ScrCmd_showmonpic
-	.4byte ScrCmd_hidemonpic
-	.4byte ScrCmd_showcontestwinner
-	.4byte ScrCmd_braillemessage
-	.4byte ScrCmd_givemon
-	.4byte ScrCmd_giveegg
-	.4byte ScrCmd_setmonmove
-	.4byte ScrCmd_checkpartymove
-	.4byte ScrCmd_buffermovename
-	.4byte ScrCmd_bufferleadmonspeciesname
-	.4byte ScrCmd_bufferpartymonnick
-	.4byte ScrCmd_bufferitemname
-	.4byte ScrCmd_bufferspeciesname
-	.4byte ScrCmd_bufferdecorationname
-	.4byte ScrCmd_buffernumberstring
-	.4byte ScrCmd_bufferstdstring
-	.4byte ScrCmd_bufferstring
-	.4byte ScrCmd_pokemart
-	.4byte ScrCmd_pokemartdecoration
-	.4byte ScrCmd_pokemartdecoration2
-	.4byte ScrCmd_playslotmachine
-	.4byte ScrCmd_setberrytree
-	.4byte ScrCmd_showcontestresults
-	.4byte ScrCmd_startcontest
-	.4byte ScrCmd_choosecontestmon
-	.4byte ScrCmd_contestlinktransfer
-	.4byte ScrCmd_random
-	.4byte ScrCmd_givemoney
-	.4byte ScrCmd_takemoney
-	.4byte ScrCmd_checkmoney
-	.4byte ScrCmd_showmoneybox
-	.4byte ScrCmd_hidemoneybox
-	.4byte ScrCmd_updatemoneybox
-	.4byte ScrCmd_getpricereduction
-	.4byte ScrCmd_fadescreen
-	.4byte ScrCmd_fadescreenspeed
-	.4byte ScrCmd_setflashradius
-	.4byte ScrCmd_animateflash
-	.4byte ScrCmd_messageautoscroll
-	.4byte ScrCmd_dofieldeffect
-	.4byte ScrCmd_setfieldeffectarg
-	.4byte ScrCmd_waitfieldeffect
-	.4byte ScrCmd_setrespawn
-	.4byte ScrCmd_checkplayergender
-	.4byte ScrCmd_playmoncry
-	.4byte ScrCmd_setmetatile
-	.4byte ScrCmd_doweather
-	.4byte ScrCmd_setweather
-	.4byte ScrCmd_resetweather
-	.4byte ScrCmd_setstepcallback
-	.4byte ScrCmd_setmaplayoutindex
-	.4byte ScrCmd_setobjectpriority
-	.4byte ScrCmd_resetobjectpriority
-	.4byte ScrCmd_createvobject
-	.4byte ScrCmd_turnvobject
-	.4byte ScrCmd_opendoor
-	.4byte ScrCmd_closedoor
-	.4byte ScrCmd_waitmoncry
-	.4byte ScrCmd_setdooropen
-	.4byte ScrCmd_setdoorclosed
-	.4byte ScrCmd_addelevmenuitem
-	.4byte ScrCmd_drawbox
-	.4byte ScrCmd_checkcoins
-	.4byte ScrCmd_givecoins
-	.4byte ScrCmd_takecoins
-	.4byte ScrCmd_setwildbattle
-	.4byte ScrCmd_dowildbattle
-	.4byte ScrCmd_setvaddress
-	.4byte ScrCmd_vgoto
-	.4byte ScrCmd_vcall
-	.4byte ScrCmd_vgoto_if
-	.4byte ScrCmd_vcall_if
-	.4byte ScrCmd_vmessage
-	.4byte ScrCmd_vloadword
-	.4byte ScrCmd_vbufferstring
-	.4byte ScrCmd_showcoinsbox
-	.4byte ScrCmd_hidecoinsbox
-	.4byte ScrCmd_updatecoinsbox
-	.4byte ScrCmd_incrementgamestat
-	.4byte ScrCmd_setescapewarp
-	.4byte ScrCmd_waitdooranim
-	.4byte ScrCmd_bufferboxname
-	.4byte ScrCmd_nop1
-	.4byte ScrCmd_nop1
-	.4byte ScrCmd_nop1
-	.4byte ScrCmd_nop1
-	.4byte ScrCmd_nop1
-	.4byte ScrCmd_nop1
-	.4byte ScrCmd_setmonobedient
-	.4byte ScrCmd_checkmonobedience
-	.4byte ScrCmd_gotoram
-	.4byte ScrCmd_nop1
-	.4byte ScrCmd_warpD1
-	.4byte ScrCmd_setmonmetlocation
-	.4byte ScrCmd_mossdeepgym1
-	.4byte sub_0809B48C
-	.4byte ScrCmd_mossdeepgym3
-	.4byte ScrCmd_buffercontesttype
-	.4byte ScrCmd_warpD7
-	.4byte ScrCmd_cmdD8
-	.4byte ScrCmd_cmdD9
-	.4byte ScrCmd_mossdeepgym4
-	.4byte ScrCmd_cmdDB
-	.4byte ScrCmd_fadescreenswapbuffers
-	.4byte ScrCmd_buffertrainerclassname
-	.4byte ScrCmd_buffertrainername
-	.4byte ScrCmd_pokenavcall
-	.4byte ScrCmd_warpE0
-	.globl gUnknown_81DAF30
-gUnknown_81DAF30: @ 0x081DAF30
-	.4byte ScrCmd_nop
+	.if (. - gScriptCmdTableEnd) != 4
+	.error "gScriptCmdTableEnd size changed"
+	.endif
 	.globl gUnknown_81DAF34
 	.globl gSpecialVars
 gUnknown_81DAF34: @ 0x081DAF34
 gSpecialVars:
 	@ Script variables 0x8000..0x8015.
-	@ EWRAM symbols are defined in sym_ewram_jp.txt.
-	.4byte gSpecialVar_0x8000
-	.4byte gSpecialVar_0x8001
-	.4byte gSpecialVar_0x8002
-	.4byte gSpecialVar_0x8003
-	.4byte gSpecialVar_0x8004
-	.4byte gSpecialVar_0x8005
-	.4byte gSpecialVar_0x8006
-	.4byte gSpecialVar_0x8007
-	.4byte gSpecialVar_0x8008
-	.4byte gSpecialVar_0x8009
-	.4byte gSpecialVar_0x800A
-	.4byte gSpecialVar_0x800B
-	.4byte gSpecialVar_Facing
-	.4byte gSpecialVar_Result
-	.4byte gSpecialVar_ItemId
-	.4byte gSpecialVar_LastTalked
-	.4byte gSpecialVar_ContestRank
-	.4byte gSpecialVar_ContestCategory
-	.4byte gSpecialVar_MonBoxId
-	.4byte gSpecialVar_MonBoxPos
-	.4byte gSpecialVar_Unused_0x8014
-	.4byte gTrainerBattleOpponent_A
-	.globl gUnknown_81DAF8C
-gUnknown_81DAF8C: @ 0x081DAF8C
-	.4byte HealPlayerParty
-	.4byte SetCableClubWarp
-	.4byte sub_080AF244
-	.4byte sub_080AF2F4
-	.4byte CleanupLinkRoomState
-	.4byte ExitLinkRoom
-	.4byte SetPlayerSecretBase
-	.4byte CheckPlayerHasSecretBase
-	.4byte EnterSecretBase
-	.4byte ClearAndLeaveSecretBase
-	.4byte MoveOutOfSecretBase
-	.4byte IsCurSecretBaseOwnedByAnotherPlayer
-	.4byte GetCurSecretBaseRegistrationValidity
-	.4byte ToggleCurSecretBaseRegistry
-	.4byte ShowSecretBaseDecorationMenu
-	.4byte ShowSecretBaseRegistryMenu
-	.4byte PrepSecretBaseBattleFlags
-	.4byte GetSecretBaseOwnerInteractionState
-	.4byte InitSecretBaseDecorationSprites
-	.4byte sub_08127DEC
-	.4byte sub_08129798
-	.4byte GetSecretBaseTypeInFrontOfPlayer
-	.4byte SetSecretBaseOwnerGfxId
-	.4byte sub_081296F0
-	.4byte EnterNewlyCreatedSecretBase
-	.4byte sub_080EAF54
-	.4byte DoSecretBasePCTurnOffEffect
-	.4byte RecordMixingPlayerSpotTriggered
-	.4byte sub_080B2680
-	.4byte sub_080B2728
-	.4byte sub_080B2750
-	.4byte CloseLink
-	.4byte ColosseumPlayerSpotTriggered
-	.4byte PlayerEnteredTradeSeat
-	.4byte nullsub_37
-	.4byte sub_080B2A00
-	.4byte sub_080B2784
-	.4byte GetLinkPartnerNames
-	.4byte SpawnLinkPartnerEventObject
-	.4byte SavePlayerParty
-	.4byte LoadPlayerParty
-	.4byte ChooseHalfPartyForBattle
-	.4byte sp02A_crash_sound
-	.4byte EventObjectInteractionGetBerryTreeData
-	.4byte Bag_ChooseBerry
-	.4byte EventObjectInteractionPlantBerryTree
-	.4byte EventObjectInteractionPickBerryTree
-	.4byte EventObjectInteractionRemoveBerryTree
-	.4byte EventObjectInteractionWaterBerryTree
-	.4byte PlayerHasBerries
-	.4byte IsEnigmaBerryValid
-	.4byte GetTrainerBattleMode
-	.4byte ShowTrainerIntroSpeech
-	.4byte ShowTrainerCantBattleSpeech
-	.4byte GetTrainerFlag
-	.4byte EndTrainerApproach
-	.4byte SetUpTrainerEncounterMusic
-	.4byte ShouldTryRematchBattle
-	.4byte IsTrainerReadyForRematch
-	.4byte BattleSetup_StartRematchBattle
-	.4byte ShowPokemonStorageSystemPC
-	.4byte HasEnoughMonsForDoubleBattle
-	.4byte TurnOffTVScreen
-	.4byte DoTVShow
-	.4byte DoPokeNews
-	.4byte special_0x44
-	.4byte special_0x45
-	.4byte InterviewBefore
-	.4byte InterviewAfter
-	.4byte sub_080F03E4
-	.4byte SetContestCategoryStringVarForInterview
-	.4byte special_0x4a
-	.4byte TV_IsScriptShowKindAlreadyInQueue
-	.4byte CheckForBigMovieOrEmergencyNewsOnTV
-	.4byte GetMomOrDadStringForTVMessage
-	.4byte ResetTVShowState
-	.4byte sub_080F8BA4
-	.4byte sub_080F8D34
-	.4byte sub_080F90A4
-	.4byte sub_080F8BD4
-	.4byte sub_080F8C14
-	.4byte sub_080F90E0
-	.4byte sub_080F8B3C
-	.4byte SetContestTrainerGfxIds
-	.4byte sub_080F87C0
-	.4byte sub_080F9200
-	.4byte sub_080F938C
-	.4byte sub_080F8B84
-	.4byte sub_080F880C
-	.4byte sub_080F888C
-	.4byte sub_080F95B4
-	.4byte GiveMonArtistRibbon
-	.4byte sub_080B27AC
-	.4byte SaveGame
-	.4byte DoWateringBerryTreeAnim
-	.4byte ShowEasyChatScreen
-	.4byte sub_0811F3AC
-	.4byte ScrSpecial_GetCurrentMauvilleMan
-	.4byte ScrSpecial_HasBardSongBeenChanged
-	.4byte ScrSpecial_SaveBardSongLyrics
-	.4byte ScrSpecial_GetHipsterSpokenFlag
-	.4byte ScrSpecial_SetHipsterSpokenFlag
-	.4byte ScrSpecial_HipsterTeachWord
-	.4byte ScrSpecial_PlayBardSong
-	.4byte ScrSpecial_SetMauvilleOldManEventObjGfx
-	.4byte ScrSpecial_GenerateGiddyLine
-	.4byte ScrSpecial_GiddyShouldTellAnotherTale
-	.4byte ScrSpecial_StorytellerInitializeRandomStat
-	.4byte sub_0812148C
-	.4byte ScrSpecial_StorytellerStoryListMenu
-	.4byte ScrSpecial_StorytellerUpdateStat
-	.4byte SanitizeReceivedEmeraldOldMan
-	.4byte ScrSpecial_HasStorytellerAlreadyRecorded
-	.4byte ScrSpecial_TraderMenuGetDecoration
-	.4byte ScrSpecial_GetTraderTradedFlag
-	.4byte ScrSpecial_DoesPlayerHaveNoDecorations
-	.4byte sub_08133CD4
-	.4byte CreateAvailableDecorationsMenu
-	.4byte ScrSpecial_TraderDoDecorationTrade
-	.4byte sub_080FA300
-	.4byte sub_080FA31C
-	.4byte sub_080FA358
-	.4byte sub_080FA374
-	.4byte TV_PutNameRaterShowOnTheAirIfNicknameChanged
-	.4byte TV_CopyNicknameToStringVar1AndEnsureTerminated
-	.4byte TV_CheckMonOTIDEqualsPlayerID
-	.4byte BufferTrendyPhraseString
-	.4byte TrendyPhraseIsOld
-	.4byte sub_0811F44C
-	.4byte GetDewfordHallPaintingNameIndex
-	.4byte SwapRegisteredBike
-	.4byte CalculatePlayerPartyCount
-	.4byte CountPartyNonEggMons
-	.4byte CountPartyAliveNonEggMons_IgnoreVar0x8004Slot
-	.4byte sub_080F9178
-	.4byte sub_080F916C
-	.4byte sub_080F90F4
-	.4byte CountPlayerContestPaintings
-	.4byte ShowContestWinner
-	.4byte MauvilleGymSpecial2
-	.4byte MauvilleGymSpecial1
-	.4byte ShowFieldMessageStringVar4
-	.4byte DrawWholeMapView
-	.4byte StorePlayerCoordsInVars
-	.4byte MauvilleGymSpecial3
-	.4byte PetalburgGymSpecial1
-	.4byte PetalburgGymSpecial2
-	.4byte GetPlayerTrainerIdOnesDigit
-	.4byte GetPlayerBigGuyGirlString
-	.4byte GetRivalSonDaughterString
-	.4byte SetFlagInVar
-	.4byte CableCarWarp
-	.4byte CableCar
-	.4byte Overworld_PlaySpecialMapMusic
-	.4byte StartWallClock
-	.4byte Special_ViewWallClock
-	.4byte ChooseStarter
-	.4byte StartWallyTutorialBattle
-	.4byte ChangePokemonNickname
-	.4byte sub_081B9150
-	.4byte sub_08136F64
-	.4byte DoBerryBlending
-	.4byte PlayRoulette
-	.4byte ShouldMoveLilycoveFanClubMember
-	.4byte GetNumMovedLilycoveFanClubMembers
-	.4byte BufferStreakTrainerText
-	.4byte sub_0813BA68
-	.4byte UpdateMovedLilycoveFanClubMembers
-	.4byte sub_0813BF84
-	.4byte sub_0813BA98
-	.4byte sub_0813BFA0
-	.4byte RockSmashWildEncounter
-	.4byte GabbyAndTyGetBattleNum
-	.4byte GabbyAndTyAfterInterview
-	.4byte GabbyAndTyBeforeInterview
-	.4byte DoTVShowInSearchOfTrainers
-	.4byte IsTVShowInSearchOfTrainersAiring
-	.4byte GabbyAndTyGetLastQuote
-	.4byte GabbyAndTyGetLastBattleTrivia
-	.4byte GabbyAndTySetScriptVarsToEventObjectLocalIds
-	.4byte GetBattleOutcome
-	.4byte GetDaycareMonNicknames
-	.4byte GetDaycareState
-	.4byte RejectEggFromDayCare
-	.4byte GiveEggFromDaycare
-	.4byte SetDaycareCompatibilityString
-	.4byte GetSelectedMonNickAndSpecies
-	.4byte StoreSelectedPokemonInDaycare
-	.4byte ChooseSendDaycareMon
-	.4byte ShowDaycareLevelMenu
-	.4byte GetNumLevelsGainedFromDaycare
-	.4byte GetDaycareCost
-	.4byte TakePokemonFromDaycare
-	.4byte ScriptHatchMon
-	.4byte EggHatch
-	.4byte sub_0807101C
-	.4byte ShowLinkBattleRecords
-	.4byte IsEnoughForCostInVar0x8005
-	.4byte SubtractMoneyFromVar0x8005
-	.4byte ExecuteWhiteOut
-	.4byte sp0C8_whiteout_maybe
-	.4byte RotatingGate_InitPuzzle
-	.4byte RotatingGate_InitPuzzleAndGraphics
-	.4byte SetSSTidalFlag
-	.4byte ResetSSTidalFlag
-	.4byte EnterSafariMode
-	.4byte ExitSafariMode
-	.4byte GetPokeblockFeederInFront
-	.4byte sub_08135958
-	.4byte IsMirageIslandPresent
-	.4byte UpdateShoalTideFlag
-	.4byte InitBirchState
-	.4byte ScriptGetPokedexInfo
-	.4byte ShowPokedexRatingMessage
-	.4byte DoLotteryCornerComputerEffect
-	.4byte DoPCTurnOffEffect
-	.4byte SetDepartmentStoreFloorVar
-	.4byte DoPCTurnOnEffect
-	.4byte EndLotteryCornerComputerEffect
-	.4byte sub_081B91BC
-	.4byte sub_081B932C
-	.4byte sub_081B9410
-	.4byte sub_081B93B8
-	.4byte sub_081B9370
-	.4byte TeachMoveRelearnerMove
-	.4byte GetRecordedCyclingRoadResults
-	.4byte Special_BeginCyclingRoadChallenge
-	.4byte GetPlayerAvatarBike
-	.4byte FinishCyclingRoadChallenge
-	.4byte UpdateCyclingRoadState
-	.4byte GetLeadMonFriendshipScore
-	.4byte CallFrontierUtilFunc
-	.4byte sub_08161E88
-	.4byte sub_0818E608
-	.4byte CallBattlePalaceFunction
-	.4byte CopyEReaderTrainerGreeting
-	.4byte DoSpecialTrainerBattle
-	.4byte CallBattleArenaFunction
-	.4byte CallBattleFactoryFunction
-	.4byte CallBattlePikeFunction
-	.4byte CallBattlePyramidFunction
-	.4byte StopMapMusic
-	.4byte sub_081B9654
-	.4byte sub_081B9820
-	.4byte sub_081B99A8
-	.4byte sub_080F9D20
-	.4byte ValidateEReaderTrainer
-	.4byte GetBestBattleTowerStreak
-	.4byte ReducePlayerPartyToSelectedMons
-	.4byte BedroomPC
-	.4byte PlayerPC
-	.4byte FieldShowRegionMap
-	.4byte GetInGameTradeSpeciesInfo
-	.4byte CreateInGameTradePokemon
-	.4byte DoInGameTradeScene
-	.4byte GetTradeSpecies
-	.4byte GetWeekCount
-	.4byte RetrieveLotteryNumber
-	.4byte PickLotteryCornerTicket
-	.4byte ShowBerryBlenderRecordWindow
-	.4byte SetTrickHouseEndRoomFlag
-	.4byte ResetTrickHouseEndRoomFlag
-	.4byte sub_080E1850
-	.4byte AccessHallOfFamePC
-	.4byte Special_ShowDiploma
-	.4byte CheckLeadMonCool
-	.4byte CheckLeadMonBeauty
-	.4byte CheckLeadMonCute
-	.4byte CheckLeadMonSmart
-	.4byte CheckLeadMonTough
-	.4byte sub_080FC014
-	.4byte DoSoftReset
-	.4byte GameClear
-	.4byte ShakeScreenInElevator
-	.4byte nullsub_55
-	.4byte SpawnCameraObject
-	.4byte RemoveCameraObject
-	.4byte GetPokeblockNameByMonNature
-	.4byte GetSecretBaseNearbyMapName
-	.4byte CheckRelicanthWailord
-	.4byte ShouldDoBrailleRegirockEffectOld
-	.4byte sub_080AFE30
-	.4byte sub_080AFE88
-	.4byte WaitWeather
-	.4byte BufferEReaderTrainerName
-	.4byte GetSlotMachineId
-	.4byte GetPlayerFacingDirection
-	.4byte FoundAbandonedShipRoom1Key
-	.4byte FoundAbandonedShipRoom2Key
-	.4byte FoundAbandonedShipRoom4Key
-	.4byte FoundAbandonedShipRoom6Key
-	.4byte LeadMonHasEffortRibbon
-	.4byte GiveLeadMonEffortRibbon
-	.4byte Special_AreLeadMonEVsMaxedOut
-	.4byte sub_08097EFC
-	.4byte sub_08097F24
-	.4byte InitRoamer
-	.4byte TryUpdateRusturfTunnelState
-	.4byte IsGrassTypeInParty
-	.4byte sub_080AF55C
-	.4byte PutZigzagoonInPlayerParty
-	.4byte IsStarterInParty
-	.4byte DeleteRegistry_Yes
-	.4byte ScriptCheckFreePokemonStorageSpace
-	.4byte DoSealedChamberShakingEffect1
-	.4byte sub_08139BD4
-	.4byte GetShieldToyTVDecorationInfo
-	.4byte IsPokerusInParty
-	.4byte SetSootopolisGymCrackedIceMetatiles
-	.4byte sub_081395D0
-	.4byte StartGroudonKyogreBattle
-	.4byte BattleSetup_StartLegendaryBattle
-	.4byte StartRegiBattle
-	.4byte SetUpTrainerMovement
-	.4byte DoSealedChamberShakingEffect2
-	.4byte FoundBlackGlasses
-	.4byte StartDroughtWeatherBlend
-	.4byte DoDiveWarp
-	.4byte DoFallWarp
-	.4byte ShowContestEntryMonPic
-	.4byte sub_080F9748
-	.4byte SetEReaderTrainerGfxId
-	.4byte BattleSetup_StartLatiBattle
-	.4byte SetRoute119Weather
-	.4byte SetRoute123Weather
-	.4byte ScriptGetMultiplayerId
-	.4byte ScriptGetPartyMonSpecies
-	.4byte sub_081B957C
-	.4byte nullsub_54
-	.4byte MoveOutOfSecretBaseFromOutside
-	.4byte LoadPlayerBag
-	.4byte sub_080AFEB0
-	.4byte SetPacifidlogTMReceivedDay
-	.4byte GetDaysUntilPacifidlogTMAvailable
-	.4byte HasAllHoennMons
-	.4byte MonOTNameMatchesPlayer
-	.4byte BufferLottoTicketNumber
-	.4byte sub_08165248
-	.4byte sub_080F9C00
-	.4byte ScriptRandom
-	.4byte sub_081AFAA8
-	.4byte sub_080EE808
-	.4byte sub_080EEDEC
-	.4byte sub_080EF244
-	.4byte sub_080EF2D8
-	.4byte nullsub_55
-	.4byte PutFanClubSpecialOnTheAir
-	.4byte sub_080EF814
-	.4byte sub_080EF838
-	.4byte sub_080EBD4C
-	.4byte SetSecretBaseSecretsTvFlags_SandOrnament
-	.4byte sub_080EBEA0
-	.4byte GetSecretBaseName
-	.4byte sub_080EBF08
-	.4byte CopyCurSecretBaseOwnerName_StrVar1
-	.4byte sub_080EBE30
-	.4byte sub_080EBE68
-	.4byte SetSecretBaseSecretsTvFlags_MiscFurnature
-	.4byte SetSecretBaseSecretsTvFlags_LargeDecorationSpot
-	.4byte SetSecretBaseSecretsTvFlags_SmallDecorationSpot
-	.4byte SetSecretBaseSecretsTvFlags_Poster
-	.4byte sub_0818D6EC
-	.4byte sub_0818D818
-	.4byte sub_0818D914
-	.4byte sub_0818D958
-	.4byte sub_0818D98C
-	.4byte sub_0818D9E4
-	.4byte sub_0818DA30
-	.4byte sub_0818DA60
-	.4byte sub_0818DA84
-	.4byte sub_0818DB50
-	.4byte sub_0818DB68
-	.4byte sub_0818DBAC
-	.4byte sub_0818DBE8
-	.4byte sub_0818DD44
-	.4byte sub_0818DD78
-	.4byte sub_0818DF34
-	.4byte sub_0811B0A8
-	.4byte sub_0818DF58
-	.4byte sub_0818DF64
-	.4byte sub_0818DFB4
-	.4byte sub_0818DFD8
-	.4byte sub_0818DEF4
-	.4byte sub_0818DFF8
-	.4byte sub_0818E018
-	.4byte sub_0818E03C
-	.4byte sub_0818E08C
-	.4byte sub_0818E0D8
-	.4byte sub_0818E0EC
-	.4byte sub_081398CC
-	.4byte sub_0818E100
-	.4byte sub_0818E16C
-	.4byte sub_0818E194
-	.4byte sub_0818DED0
-	.4byte sub_0818E048
-	.4byte sub_0818E53C
-	.4byte sub_0818E510
-	.4byte sub_0818E570
-	.4byte sub_0818E588
-	.4byte sub_0818E59C
-	.4byte sub_0818E5BC
-	.4byte sub_0818E5EC
-	.4byte PutLilycoveContestLadyShowOnTheAir
-	.4byte sub_0813B8B8
-	.4byte CallApprenticeFunction
-	.4byte ShouldTryGetTrainerScript
-	.4byte ShowMapNamePopup
-	.4byte ShowMapNamePopup
-	.4byte DoMirageTowerCeilingCrumble
-	.4byte SetMirageTowerVisibility
-	.4byte StartPlayerDescendMirageTower
-	.4byte sub_08139938
-	.4byte IsWirelessAdapterConnected
-	.4byte BerryBlenderLinkBecomeLeader
-	.4byte BerryBlenderLinkJoinGroup
-	.4byte UnionRoomSpecial
-	.4byte sub_08019EE4
-	.4byte sub_08016448
-	.4byte sp182_move_string
-	.4byte sub_0801DA30
-	.4byte sub_081B85F8
-	.4byte sub_08017B4C
-	.4byte sub_08139980
-	.4byte ValidateReceivedWonderCard
-	.4byte HasAtLeastOneBerry
-	.4byte sub_0802C614
-	.4byte sub_0802E0BC
-	.4byte sub_0802781C
-	.4byte sub_0802786C
-	.4byte sub_081399F4
-	.4byte sub_08139A68
-	.4byte sub_08139DD4
-	.4byte sub_080F98EC
-	.4byte sub_0800AFEC
-	.4byte sub_080F996C
-	.4byte sub_080F999C
-	.4byte sub_080F99F0
-	.4byte ShowRankingHallRecordsWindow
-	.4byte ScrollRankingHallRecordsWindow
-	.4byte sub_08139F5C
-	.4byte sub_080F99C4
-	.4byte sub_080F99E4
-	.4byte sub_080B27D4
-	.4byte sub_0813A164
-	.4byte sub_0813A638
-	.4byte sub_0813A0BC
-	.4byte sub_081C62AC
-	.4byte sub_081C472C
-	.4byte sub_081B9280
-	.4byte sub_081B92C0
-	.4byte sub_0813A774
-	.4byte sub_0813A7C0
-	.4byte sub_0813A904
-	.4byte sub_0813A98C
-	.4byte sub_0813A9D4
-	.4byte sub_0813AA1C
-	.4byte sub_0813A9F0
-	.4byte sub_0813AA50
-	.4byte sub_0813AA64
-	.4byte sub_0813AA90
-	.4byte DisplayBerryPowderVendorMenu
-	.4byte RemoveBerryPowderVendorMenu
-	.4byte HasEnoughBerryPowder
-	.4byte TakeBerryPowder
-	.4byte PrintPlayerBerryPowderAmount
-	.4byte sub_0813A828
-	.4byte sub_0813A85C
-	.4byte sub_0813B810
-	.4byte sub_081C6A64
-	.4byte convert_pixel_width_to_tile_width
-	.4byte CountPlayerTrainerStars
-	.4byte sub_0813ACC8
-	.4byte sub_0813ADF0
-	.4byte sub_0813AE0C
-	.4byte sub_081B85CC
-	.4byte sub_0813AEEC
-	.4byte sub_0813AF80
-	.4byte DoDeoxysRockInteraction
-	.4byte sub_0813B208
-	.4byte CreateObedientEnemyMon
-	.4byte StartMirageTowerDisintegration
-	.4byte StartMirageTowerFossilFallAndSink
-	.4byte StartMirageTowerShake
-	.4byte ChangeBoxPokemonNickname
-	.4byte get_unknown_box_id
-	.4byte sub_0813B254
-	.4byte SetMatchCallRegisteredFlag
-	.4byte sub_08175184
-	.4byte CreateUnusualWeatherEvent
-	.4byte GetUnusualWeatherMapNameAndType
-	.4byte sub_0813B4C8
-	.4byte sub_080A0194
-	.4byte Unused_SetWeatherSunny
-	.4byte sub_081AFA78
-	.4byte sub_0813B518
-	.4byte ShouldDoBrailleRegicePuzzle
-	.4byte EnableNationalPokedex
-	.4byte display_text_and_get_width_internal
-	.4byte sub_080E1D6C
-	.4byte TurnOnTVScreen
-	.4byte sub_081D4110
-	.4byte sub_0813B54C
-	.4byte sub_0813B5A0
-	.4byte sub_0813B56C
-	.4byte CallTrainerHillFunction
-	.4byte sub_0813B810
-	.4byte sub_0813B844
-	.4byte sub_081D426C
-	.4byte sub_08022230
-	.4byte TryBufferWaldaPhrase
-	.4byte DoWaldaNamingScreen
-	.4byte TryGetWallpaperWithWaldaPhrase
-	.4byte sub_08139F0C
-	.4byte sub_0813B9A0
-	.4byte sub_080F9424
-	.4byte ShowTrainerHillRecords
-	.4byte sub_080B3F60
-	.4byte sub_0813B9D8
-	.4byte sub_081B95B8
-	.4byte sub_08071CF0
-	.4byte TryPrepareSecondApproachingTrainer
-	.4byte RemoveRecordsWindow
-	.4byte sub_08139C4C
-	.4byte sub_080B331C
-	.globl gStdScripts
+	script_special_var 0, gSpecialVar_0x8000
+	script_special_var 1, gSpecialVar_0x8001
+	script_special_var 2, gSpecialVar_0x8002
+	script_special_var 3, gSpecialVar_0x8003
+	script_special_var 4, gSpecialVar_0x8004
+	script_special_var 5, gSpecialVar_0x8005
+	script_special_var 6, gSpecialVar_0x8006
+	script_special_var 7, gSpecialVar_0x8007
+	script_special_var 8, gSpecialVar_0x8008
+	script_special_var 9, gSpecialVar_0x8009
+	script_special_var 10, gSpecialVar_0x800A
+	script_special_var 11, gSpecialVar_0x800B
+	script_special_var 12, gSpecialVar_Facing
+	script_special_var 13, gSpecialVar_Result
+	script_special_var 14, gSpecialVar_ItemId
+	script_special_var 15, gSpecialVar_LastTalked
+	script_special_var 16, gSpecialVar_ContestRank
+	script_special_var 17, gSpecialVar_ContestCategory
+	script_special_var 18, gSpecialVar_MonBoxId
+	script_special_var 19, gSpecialVar_MonBoxPos
+	script_special_var 20, gSpecialVar_Unused_0x8014
+	script_special_var 21, gTrainerBattleOpponent_A
+	.if (. - gSpecialVars) != 0x58
+	.error "gSpecialVars size changed"
+	.endif
+	.globl gSpecials
+gSpecials: @ 0x081DAF8C
+	script_special_handler 0x000, HealPlayerParty
+	script_special_handler 0x001, SetCableClubWarp
+	script_special_handler 0x002, sub_080AF244
+	script_special_handler 0x003, sub_080AF2F4
+	script_special_handler 0x004, CleanupLinkRoomState
+	script_special_handler 0x005, ExitLinkRoom
+	script_special_handler 0x006, SetPlayerSecretBase
+	script_special_handler 0x007, CheckPlayerHasSecretBase
+	script_special_handler 0x008, EnterSecretBase
+	script_special_handler 0x009, ClearAndLeaveSecretBase
+	script_special_handler 0x00A, MoveOutOfSecretBase
+	script_special_handler 0x00B, IsCurSecretBaseOwnedByAnotherPlayer
+	script_special_handler 0x00C, GetCurSecretBaseRegistrationValidity
+	script_special_handler 0x00D, ToggleCurSecretBaseRegistry
+	script_special_handler 0x00E, ShowSecretBaseDecorationMenu
+	script_special_handler 0x00F, ShowSecretBaseRegistryMenu
+	script_special_handler 0x010, PrepSecretBaseBattleFlags
+	script_special_handler 0x011, GetSecretBaseOwnerInteractionState
+	script_special_handler 0x012, InitSecretBaseDecorationSprites
+	script_special_handler 0x013, sub_08127DEC
+	script_special_handler 0x014, sub_08129798
+	script_special_handler 0x015, GetSecretBaseTypeInFrontOfPlayer
+	script_special_handler 0x016, SetSecretBaseOwnerGfxId
+	script_special_handler 0x017, sub_081296F0
+	script_special_handler 0x018, EnterNewlyCreatedSecretBase
+	script_special_handler 0x019, sub_080EAF54
+	script_special_handler 0x01A, DoSecretBasePCTurnOffEffect
+	script_special_handler 0x01B, RecordMixingPlayerSpotTriggered
+	script_special_handler 0x01C, sub_080B2680
+	script_special_handler 0x01D, sub_080B2728
+	script_special_handler 0x01E, sub_080B2750
+	script_special_handler 0x01F, CloseLink
+	script_special_handler 0x020, ColosseumPlayerSpotTriggered
+	script_special_handler 0x021, PlayerEnteredTradeSeat
+	script_special_handler 0x022, nullsub_37
+	script_special_handler 0x023, sub_080B2A00
+	script_special_handler 0x024, sub_080B2784
+	script_special_handler 0x025, GetLinkPartnerNames
+	script_special_handler 0x026, SpawnLinkPartnerEventObject
+	script_special_handler 0x027, SavePlayerParty
+	script_special_handler 0x028, LoadPlayerParty
+	script_special_handler 0x029, ChooseHalfPartyForBattle
+	script_special_handler 0x02A, sp02A_crash_sound
+	script_special_handler 0x02B, EventObjectInteractionGetBerryTreeData
+	script_special_handler 0x02C, Bag_ChooseBerry
+	script_special_handler 0x02D, EventObjectInteractionPlantBerryTree
+	script_special_handler 0x02E, EventObjectInteractionPickBerryTree
+	script_special_handler 0x02F, EventObjectInteractionRemoveBerryTree
+	script_special_handler 0x030, EventObjectInteractionWaterBerryTree
+	script_special_handler 0x031, PlayerHasBerries
+	script_special_handler 0x032, IsEnigmaBerryValid
+	script_special_handler 0x033, GetTrainerBattleMode
+	script_special_handler 0x034, ShowTrainerIntroSpeech
+	script_special_handler 0x035, ShowTrainerCantBattleSpeech
+	script_special_handler 0x036, GetTrainerFlag
+	script_special_handler 0x037, EndTrainerApproach
+	script_special_handler 0x038, SetUpTrainerEncounterMusic
+	script_special_handler 0x039, ShouldTryRematchBattle
+	script_special_handler 0x03A, IsTrainerReadyForRematch
+	script_special_handler 0x03B, BattleSetup_StartRematchBattle
+	script_special_handler 0x03C, ShowPokemonStorageSystemPC
+	script_special_handler 0x03D, HasEnoughMonsForDoubleBattle
+	script_special_handler 0x03E, TurnOffTVScreen
+	script_special_handler 0x03F, DoTVShow
+	script_special_handler 0x040, DoPokeNews
+	script_special_handler 0x041, special_0x44
+	script_special_handler 0x042, special_0x45
+	script_special_handler 0x043, InterviewBefore
+	script_special_handler 0x044, InterviewAfter
+	script_special_handler 0x045, sub_080F03E4
+	script_special_handler 0x046, SetContestCategoryStringVarForInterview
+	script_special_handler 0x047, special_0x4a
+	script_special_handler 0x048, TV_IsScriptShowKindAlreadyInQueue
+	script_special_handler 0x049, CheckForBigMovieOrEmergencyNewsOnTV
+	script_special_handler 0x04A, GetMomOrDadStringForTVMessage
+	script_special_handler 0x04B, ResetTVShowState
+	script_special_handler 0x04C, sub_080F8BA4
+	script_special_handler 0x04D, sub_080F8D34
+	script_special_handler 0x04E, sub_080F90A4
+	script_special_handler 0x04F, sub_080F8BD4
+	script_special_handler 0x050, sub_080F8C14
+	script_special_handler 0x051, sub_080F90E0
+	script_special_handler 0x052, sub_080F8B3C
+	script_special_handler 0x053, SetContestTrainerGfxIds
+	script_special_handler 0x054, sub_080F87C0
+	script_special_handler 0x055, sub_080F9200
+	script_special_handler 0x056, sub_080F938C
+	script_special_handler 0x057, sub_080F8B84
+	script_special_handler 0x058, sub_080F880C
+	script_special_handler 0x059, sub_080F888C
+	script_special_handler 0x05A, sub_080F95B4
+	script_special_handler 0x05B, GiveMonArtistRibbon
+	script_special_handler 0x05C, sub_080B27AC
+	script_special_handler 0x05D, SaveGame
+	script_special_handler 0x05E, DoWateringBerryTreeAnim
+	script_special_handler 0x05F, ShowEasyChatScreen
+	script_special_handler 0x060, sub_0811F3AC
+	script_special_handler 0x061, ScrSpecial_GetCurrentMauvilleMan
+	script_special_handler 0x062, ScrSpecial_HasBardSongBeenChanged
+	script_special_handler 0x063, ScrSpecial_SaveBardSongLyrics
+	script_special_handler 0x064, ScrSpecial_GetHipsterSpokenFlag
+	script_special_handler 0x065, ScrSpecial_SetHipsterSpokenFlag
+	script_special_handler 0x066, ScrSpecial_HipsterTeachWord
+	script_special_handler 0x067, ScrSpecial_PlayBardSong
+	script_special_handler 0x068, ScrSpecial_SetMauvilleOldManEventObjGfx
+	script_special_handler 0x069, ScrSpecial_GenerateGiddyLine
+	script_special_handler 0x06A, ScrSpecial_GiddyShouldTellAnotherTale
+	script_special_handler 0x06B, ScrSpecial_StorytellerInitializeRandomStat
+	script_special_handler 0x06C, sub_0812148C
+	script_special_handler 0x06D, ScrSpecial_StorytellerStoryListMenu
+	script_special_handler 0x06E, ScrSpecial_StorytellerUpdateStat
+	script_special_handler 0x06F, SanitizeReceivedEmeraldOldMan
+	script_special_handler 0x070, ScrSpecial_HasStorytellerAlreadyRecorded
+	script_special_handler 0x071, ScrSpecial_TraderMenuGetDecoration
+	script_special_handler 0x072, ScrSpecial_GetTraderTradedFlag
+	script_special_handler 0x073, ScrSpecial_DoesPlayerHaveNoDecorations
+	script_special_handler 0x074, sub_08133CD4
+	script_special_handler 0x075, CreateAvailableDecorationsMenu
+	script_special_handler 0x076, ScrSpecial_TraderDoDecorationTrade
+	script_special_handler 0x077, sub_080FA300
+	script_special_handler 0x078, sub_080FA31C
+	script_special_handler 0x079, sub_080FA358
+	script_special_handler 0x07A, sub_080FA374
+	script_special_handler 0x07B, TV_PutNameRaterShowOnTheAirIfNicknameChanged
+	script_special_handler 0x07C, TV_CopyNicknameToStringVar1AndEnsureTerminated
+	script_special_handler 0x07D, TV_CheckMonOTIDEqualsPlayerID
+	script_special_handler 0x07E, BufferTrendyPhraseString
+	script_special_handler 0x07F, TrendyPhraseIsOld
+	script_special_handler 0x080, sub_0811F44C
+	script_special_handler 0x081, GetDewfordHallPaintingNameIndex
+	script_special_handler 0x082, SwapRegisteredBike
+	script_special_handler 0x083, CalculatePlayerPartyCount
+	script_special_handler 0x084, CountPartyNonEggMons
+	script_special_handler 0x085, CountPartyAliveNonEggMons_IgnoreVar0x8004Slot
+	script_special_handler 0x086, sub_080F9178
+	script_special_handler 0x087, sub_080F916C
+	script_special_handler 0x088, sub_080F90F4
+	script_special_handler 0x089, CountPlayerContestPaintings
+	script_special_handler 0x08A, ShowContestWinner
+	script_special_handler 0x08B, MauvilleGymSpecial2
+	script_special_handler 0x08C, MauvilleGymSpecial1
+	script_special_handler 0x08D, ShowFieldMessageStringVar4
+	script_special_handler 0x08E, DrawWholeMapView
+	script_special_handler 0x08F, StorePlayerCoordsInVars
+	script_special_handler 0x090, MauvilleGymSpecial3
+	script_special_handler 0x091, PetalburgGymSpecial1
+	script_special_handler 0x092, PetalburgGymSpecial2
+	script_special_handler 0x093, GetPlayerTrainerIdOnesDigit
+	script_special_handler 0x094, GetPlayerBigGuyGirlString
+	script_special_handler 0x095, GetRivalSonDaughterString
+	script_special_handler 0x096, SetFlagInVar
+	script_special_handler 0x097, CableCarWarp
+	script_special_handler 0x098, CableCar
+	script_special_handler 0x099, Overworld_PlaySpecialMapMusic
+	script_special_handler 0x09A, StartWallClock
+	script_special_handler 0x09B, Special_ViewWallClock
+	script_special_handler 0x09C, ChooseStarter
+	script_special_handler 0x09D, StartWallyTutorialBattle
+	script_special_handler 0x09E, ChangePokemonNickname
+	script_special_handler 0x09F, sub_081B9150
+	script_special_handler 0x0A0, sub_08136F64
+	script_special_handler 0x0A1, DoBerryBlending
+	script_special_handler 0x0A2, PlayRoulette
+	script_special_handler 0x0A3, ShouldMoveLilycoveFanClubMember
+	script_special_handler 0x0A4, GetNumMovedLilycoveFanClubMembers
+	script_special_handler 0x0A5, BufferStreakTrainerText
+	script_special_handler 0x0A6, sub_0813BA68
+	script_special_handler 0x0A7, UpdateMovedLilycoveFanClubMembers
+	script_special_handler 0x0A8, sub_0813BF84
+	script_special_handler 0x0A9, sub_0813BA98
+	script_special_handler 0x0AA, sub_0813BFA0
+	script_special_handler 0x0AB, RockSmashWildEncounter
+	script_special_handler 0x0AC, GabbyAndTyGetBattleNum
+	script_special_handler 0x0AD, GabbyAndTyAfterInterview
+	script_special_handler 0x0AE, GabbyAndTyBeforeInterview
+	script_special_handler 0x0AF, DoTVShowInSearchOfTrainers
+	script_special_handler 0x0B0, IsTVShowInSearchOfTrainersAiring
+	script_special_handler 0x0B1, GabbyAndTyGetLastQuote
+	script_special_handler 0x0B2, GabbyAndTyGetLastBattleTrivia
+	script_special_handler 0x0B3, GabbyAndTySetScriptVarsToEventObjectLocalIds
+	script_special_handler 0x0B4, GetBattleOutcome
+	script_special_handler 0x0B5, GetDaycareMonNicknames
+	script_special_handler 0x0B6, GetDaycareState
+	script_special_handler 0x0B7, RejectEggFromDayCare
+	script_special_handler 0x0B8, GiveEggFromDaycare
+	script_special_handler 0x0B9, SetDaycareCompatibilityString
+	script_special_handler 0x0BA, GetSelectedMonNickAndSpecies
+	script_special_handler 0x0BB, StoreSelectedPokemonInDaycare
+	script_special_handler 0x0BC, ChooseSendDaycareMon
+	script_special_handler 0x0BD, ShowDaycareLevelMenu
+	script_special_handler 0x0BE, GetNumLevelsGainedFromDaycare
+	script_special_handler 0x0BF, GetDaycareCost
+	script_special_handler 0x0C0, TakePokemonFromDaycare
+	script_special_handler 0x0C1, ScriptHatchMon
+	script_special_handler 0x0C2, EggHatch
+	script_special_handler 0x0C3, sub_0807101C
+	script_special_handler 0x0C4, ShowLinkBattleRecords
+	script_special_handler 0x0C5, IsEnoughForCostInVar0x8005
+	script_special_handler 0x0C6, SubtractMoneyFromVar0x8005
+	script_special_handler 0x0C7, ExecuteWhiteOut
+	script_special_handler 0x0C8, sp0C8_whiteout_maybe
+	script_special_handler 0x0C9, RotatingGate_InitPuzzle
+	script_special_handler 0x0CA, RotatingGate_InitPuzzleAndGraphics
+	script_special_handler 0x0CB, SetSSTidalFlag
+	script_special_handler 0x0CC, ResetSSTidalFlag
+	script_special_handler 0x0CD, EnterSafariMode
+	script_special_handler 0x0CE, ExitSafariMode
+	script_special_handler 0x0CF, GetPokeblockFeederInFront
+	script_special_handler 0x0D0, sub_08135958
+	script_special_handler 0x0D1, IsMirageIslandPresent
+	script_special_handler 0x0D2, UpdateShoalTideFlag
+	script_special_handler 0x0D3, InitBirchState
+	script_special_handler 0x0D4, ScriptGetPokedexInfo
+	script_special_handler 0x0D5, ShowPokedexRatingMessage
+	script_special_handler 0x0D6, DoLotteryCornerComputerEffect
+	script_special_handler 0x0D7, DoPCTurnOffEffect
+	script_special_handler 0x0D8, SetDepartmentStoreFloorVar
+	script_special_handler 0x0D9, DoPCTurnOnEffect
+	script_special_handler 0x0DA, EndLotteryCornerComputerEffect
+	script_special_handler 0x0DB, sub_081B91BC
+	script_special_handler 0x0DC, sub_081B932C
+	script_special_handler 0x0DD, sub_081B9410
+	script_special_handler 0x0DE, sub_081B93B8
+	script_special_handler 0x0DF, sub_081B9370
+	script_special_handler 0x0E0, TeachMoveRelearnerMove
+	script_special_handler 0x0E1, GetRecordedCyclingRoadResults
+	script_special_handler 0x0E2, Special_BeginCyclingRoadChallenge
+	script_special_handler 0x0E3, GetPlayerAvatarBike
+	script_special_handler 0x0E4, FinishCyclingRoadChallenge
+	script_special_handler 0x0E5, UpdateCyclingRoadState
+	script_special_handler 0x0E6, GetLeadMonFriendshipScore
+	script_special_handler 0x0E7, CallFrontierUtilFunc
+	script_special_handler 0x0E8, sub_08161E88
+	script_special_handler 0x0E9, sub_0818E608
+	script_special_handler 0x0EA, CallBattlePalaceFunction
+	script_special_handler 0x0EB, CopyEReaderTrainerGreeting
+	script_special_handler 0x0EC, DoSpecialTrainerBattle
+	script_special_handler 0x0ED, CallBattleArenaFunction
+	script_special_handler 0x0EE, CallBattleFactoryFunction
+	script_special_handler 0x0EF, CallBattlePikeFunction
+	script_special_handler 0x0F0, CallBattlePyramidFunction
+	script_special_handler 0x0F1, StopMapMusic
+	script_special_handler 0x0F2, sub_081B9654
+	script_special_handler 0x0F3, sub_081B9820
+	script_special_handler 0x0F4, sub_081B99A8
+	script_special_handler 0x0F5, sub_080F9D20
+	script_special_handler 0x0F6, ValidateEReaderTrainer
+	script_special_handler 0x0F7, GetBestBattleTowerStreak
+	script_special_handler 0x0F8, ReducePlayerPartyToSelectedMons
+	script_special_handler 0x0F9, BedroomPC
+	script_special_handler 0x0FA, PlayerPC
+	script_special_handler 0x0FB, FieldShowRegionMap
+	script_special_handler 0x0FC, GetInGameTradeSpeciesInfo
+	script_special_handler 0x0FD, CreateInGameTradePokemon
+	script_special_handler 0x0FE, DoInGameTradeScene
+	script_special_handler 0x0FF, GetTradeSpecies
+	script_special_handler 0x100, GetWeekCount
+	script_special_handler 0x101, RetrieveLotteryNumber
+	script_special_handler 0x102, PickLotteryCornerTicket
+	script_special_handler 0x103, ShowBerryBlenderRecordWindow
+	script_special_handler 0x104, SetTrickHouseEndRoomFlag
+	script_special_handler 0x105, ResetTrickHouseEndRoomFlag
+	script_special_handler 0x106, sub_080E1850
+	script_special_handler 0x107, AccessHallOfFamePC
+	script_special_handler 0x108, Special_ShowDiploma
+	script_special_handler 0x109, CheckLeadMonCool
+	script_special_handler 0x10A, CheckLeadMonBeauty
+	script_special_handler 0x10B, CheckLeadMonCute
+	script_special_handler 0x10C, CheckLeadMonSmart
+	script_special_handler 0x10D, CheckLeadMonTough
+	script_special_handler 0x10E, sub_080FC014
+	script_special_handler 0x10F, DoSoftReset
+	script_special_handler 0x110, GameClear
+	script_special_handler 0x111, ShakeScreenInElevator
+	script_special_handler 0x112, nullsub_55
+	script_special_handler 0x113, SpawnCameraObject
+	script_special_handler 0x114, RemoveCameraObject
+	script_special_handler 0x115, GetPokeblockNameByMonNature
+	script_special_handler 0x116, GetSecretBaseNearbyMapName
+	script_special_handler 0x117, CheckRelicanthWailord
+	script_special_handler 0x118, ShouldDoBrailleRegirockEffectOld
+	script_special_handler 0x119, sub_080AFE30
+	script_special_handler 0x11A, sub_080AFE88
+	script_special_handler 0x11B, WaitWeather
+	script_special_handler 0x11C, BufferEReaderTrainerName
+	script_special_handler 0x11D, GetSlotMachineId
+	script_special_handler 0x11E, GetPlayerFacingDirection
+	script_special_handler 0x11F, FoundAbandonedShipRoom1Key
+	script_special_handler 0x120, FoundAbandonedShipRoom2Key
+	script_special_handler 0x121, FoundAbandonedShipRoom4Key
+	script_special_handler 0x122, FoundAbandonedShipRoom6Key
+	script_special_handler 0x123, LeadMonHasEffortRibbon
+	script_special_handler 0x124, GiveLeadMonEffortRibbon
+	script_special_handler 0x125, Special_AreLeadMonEVsMaxedOut
+	script_special_handler 0x126, sub_08097EFC
+	script_special_handler 0x127, sub_08097F24
+	script_special_handler 0x128, InitRoamer
+	script_special_handler 0x129, TryUpdateRusturfTunnelState
+	script_special_handler 0x12A, IsGrassTypeInParty
+	script_special_handler 0x12B, sub_080AF55C
+	script_special_handler 0x12C, PutZigzagoonInPlayerParty
+	script_special_handler 0x12D, IsStarterInParty
+	script_special_handler 0x12E, DeleteRegistry_Yes
+	script_special_handler 0x12F, ScriptCheckFreePokemonStorageSpace
+	script_special_handler 0x130, DoSealedChamberShakingEffect1
+	script_special_handler 0x131, sub_08139BD4
+	script_special_handler 0x132, GetShieldToyTVDecorationInfo
+	script_special_handler 0x133, IsPokerusInParty
+	script_special_handler 0x134, SetSootopolisGymCrackedIceMetatiles
+	script_special_handler 0x135, sub_081395D0
+	script_special_handler 0x136, StartGroudonKyogreBattle
+	script_special_handler 0x137, BattleSetup_StartLegendaryBattle
+	script_special_handler 0x138, StartRegiBattle
+	script_special_handler 0x139, SetUpTrainerMovement
+	script_special_handler 0x13A, DoSealedChamberShakingEffect2
+	script_special_handler 0x13B, FoundBlackGlasses
+	script_special_handler 0x13C, StartDroughtWeatherBlend
+	script_special_handler 0x13D, DoDiveWarp
+	script_special_handler 0x13E, DoFallWarp
+	script_special_handler 0x13F, ShowContestEntryMonPic
+	script_special_handler 0x140, sub_080F9748
+	script_special_handler 0x141, SetEReaderTrainerGfxId
+	script_special_handler 0x142, BattleSetup_StartLatiBattle
+	script_special_handler 0x143, SetRoute119Weather
+	script_special_handler 0x144, SetRoute123Weather
+	script_special_handler 0x145, ScriptGetMultiplayerId
+	script_special_handler 0x146, ScriptGetPartyMonSpecies
+	script_special_handler 0x147, sub_081B957C
+	script_special_handler 0x148, nullsub_54
+	script_special_handler 0x149, MoveOutOfSecretBaseFromOutside
+	script_special_handler 0x14A, LoadPlayerBag
+	script_special_handler 0x14B, sub_080AFEB0
+	script_special_handler 0x14C, SetPacifidlogTMReceivedDay
+	script_special_handler 0x14D, GetDaysUntilPacifidlogTMAvailable
+	script_special_handler 0x14E, HasAllHoennMons
+	script_special_handler 0x14F, MonOTNameMatchesPlayer
+	script_special_handler 0x150, BufferLottoTicketNumber
+	script_special_handler 0x151, sub_08165248
+	script_special_handler 0x152, sub_080F9C00
+	script_special_handler 0x153, ScriptRandom
+	script_special_handler 0x154, sub_081AFAA8
+	script_special_handler 0x155, sub_080EE808
+	script_special_handler 0x156, sub_080EEDEC
+	script_special_handler 0x157, sub_080EF244
+	script_special_handler 0x158, sub_080EF2D8
+	script_special_handler 0x159, nullsub_55
+	script_special_handler 0x15A, PutFanClubSpecialOnTheAir
+	script_special_handler 0x15B, sub_080EF814
+	script_special_handler 0x15C, sub_080EF838
+	script_special_handler 0x15D, sub_080EBD4C
+	script_special_handler 0x15E, SetSecretBaseSecretsTvFlags_SandOrnament
+	script_special_handler 0x15F, sub_080EBEA0
+	script_special_handler 0x160, GetSecretBaseName
+	script_special_handler 0x161, sub_080EBF08
+	script_special_handler 0x162, CopyCurSecretBaseOwnerName_StrVar1
+	script_special_handler 0x163, sub_080EBE30
+	script_special_handler 0x164, sub_080EBE68
+	script_special_handler 0x165, SetSecretBaseSecretsTvFlags_MiscFurnature
+	script_special_handler 0x166, SetSecretBaseSecretsTvFlags_LargeDecorationSpot
+	script_special_handler 0x167, SetSecretBaseSecretsTvFlags_SmallDecorationSpot
+	script_special_handler 0x168, SetSecretBaseSecretsTvFlags_Poster
+	script_special_handler 0x169, sub_0818D6EC
+	script_special_handler 0x16A, sub_0818D818
+	script_special_handler 0x16B, sub_0818D914
+	script_special_handler 0x16C, sub_0818D958
+	script_special_handler 0x16D, sub_0818D98C
+	script_special_handler 0x16E, sub_0818D9E4
+	script_special_handler 0x16F, sub_0818DA30
+	script_special_handler 0x170, sub_0818DA60
+	script_special_handler 0x171, sub_0818DA84
+	script_special_handler 0x172, sub_0818DB50
+	script_special_handler 0x173, sub_0818DB68
+	script_special_handler 0x174, sub_0818DBAC
+	script_special_handler 0x175, sub_0818DBE8
+	script_special_handler 0x176, sub_0818DD44
+	script_special_handler 0x177, sub_0818DD78
+	script_special_handler 0x178, sub_0818DF34
+	script_special_handler 0x179, sub_0811B0A8
+	script_special_handler 0x17A, sub_0818DF58
+	script_special_handler 0x17B, sub_0818DF64
+	script_special_handler 0x17C, sub_0818DFB4
+	script_special_handler 0x17D, sub_0818DFD8
+	script_special_handler 0x17E, sub_0818DEF4
+	script_special_handler 0x17F, sub_0818DFF8
+	script_special_handler 0x180, sub_0818E018
+	script_special_handler 0x181, sub_0818E03C
+	script_special_handler 0x182, sub_0818E08C
+	script_special_handler 0x183, sub_0818E0D8
+	script_special_handler 0x184, sub_0818E0EC
+	script_special_handler 0x185, sub_081398CC
+	script_special_handler 0x186, sub_0818E100
+	script_special_handler 0x187, sub_0818E16C
+	script_special_handler 0x188, sub_0818E194
+	script_special_handler 0x189, sub_0818DED0
+	script_special_handler 0x18A, sub_0818E048
+	script_special_handler 0x18B, sub_0818E53C
+	script_special_handler 0x18C, sub_0818E510
+	script_special_handler 0x18D, sub_0818E570
+	script_special_handler 0x18E, sub_0818E588
+	script_special_handler 0x18F, sub_0818E59C
+	script_special_handler 0x190, sub_0818E5BC
+	script_special_handler 0x191, sub_0818E5EC
+	script_special_handler 0x192, PutLilycoveContestLadyShowOnTheAir
+	script_special_handler 0x193, sub_0813B8B8
+	script_special_handler 0x194, CallApprenticeFunction
+	script_special_handler 0x195, ShouldTryGetTrainerScript
+	script_special_handler 0x196, ShowMapNamePopup
+	script_special_handler 0x197, ShowMapNamePopup
+	script_special_handler 0x198, DoMirageTowerCeilingCrumble
+	script_special_handler 0x199, SetMirageTowerVisibility
+	script_special_handler 0x19A, StartPlayerDescendMirageTower
+	script_special_handler 0x19B, sub_08139938
+	script_special_handler 0x19C, IsWirelessAdapterConnected
+	script_special_handler 0x19D, BerryBlenderLinkBecomeLeader
+	script_special_handler 0x19E, BerryBlenderLinkJoinGroup
+	script_special_handler 0x19F, UnionRoomSpecial
+	script_special_handler 0x1A0, sub_08019EE4
+	script_special_handler 0x1A1, sub_08016448
+	script_special_handler 0x1A2, sp182_move_string
+	script_special_handler 0x1A3, sub_0801DA30
+	script_special_handler 0x1A4, sub_081B85F8
+	script_special_handler 0x1A5, sub_08017B4C
+	script_special_handler 0x1A6, sub_08139980
+	script_special_handler 0x1A7, ValidateReceivedWonderCard
+	script_special_handler 0x1A8, HasAtLeastOneBerry
+	script_special_handler 0x1A9, sub_0802C614
+	script_special_handler 0x1AA, sub_0802E0BC
+	script_special_handler 0x1AB, sub_0802781C
+	script_special_handler 0x1AC, sub_0802786C
+	script_special_handler 0x1AD, sub_081399F4
+	script_special_handler 0x1AE, sub_08139A68
+	script_special_handler 0x1AF, sub_08139DD4
+	script_special_handler 0x1B0, sub_080F98EC
+	script_special_handler 0x1B1, sub_0800AFEC
+	script_special_handler 0x1B2, sub_080F996C
+	script_special_handler 0x1B3, sub_080F999C
+	script_special_handler 0x1B4, sub_080F99F0
+	script_special_handler 0x1B5, ShowRankingHallRecordsWindow
+	script_special_handler 0x1B6, ScrollRankingHallRecordsWindow
+	script_special_handler 0x1B7, sub_08139F5C
+	script_special_handler 0x1B8, sub_080F99C4
+	script_special_handler 0x1B9, sub_080F99E4
+	script_special_handler 0x1BA, sub_080B27D4
+	script_special_handler 0x1BB, sub_0813A164
+	script_special_handler 0x1BC, sub_0813A638
+	script_special_handler 0x1BD, sub_0813A0BC
+	script_special_handler 0x1BE, sub_081C62AC
+	script_special_handler 0x1BF, sub_081C472C
+	script_special_handler 0x1C0, sub_081B9280
+	script_special_handler 0x1C1, sub_081B92C0
+	script_special_handler 0x1C2, sub_0813A774
+	script_special_handler 0x1C3, sub_0813A7C0
+	script_special_handler 0x1C4, sub_0813A904
+	script_special_handler 0x1C5, sub_0813A98C
+	script_special_handler 0x1C6, sub_0813A9D4
+	script_special_handler 0x1C7, sub_0813AA1C
+	script_special_handler 0x1C8, sub_0813A9F0
+	script_special_handler 0x1C9, sub_0813AA50
+	script_special_handler 0x1CA, sub_0813AA64
+	script_special_handler 0x1CB, sub_0813AA90
+	script_special_handler 0x1CC, DisplayBerryPowderVendorMenu
+	script_special_handler 0x1CD, RemoveBerryPowderVendorMenu
+	script_special_handler 0x1CE, HasEnoughBerryPowder
+	script_special_handler 0x1CF, TakeBerryPowder
+	script_special_handler 0x1D0, PrintPlayerBerryPowderAmount
+	script_special_handler 0x1D1, sub_0813A828
+	script_special_handler 0x1D2, sub_0813A85C
+	script_special_handler 0x1D3, sub_0813B810
+	script_special_handler 0x1D4, sub_081C6A64
+	script_special_handler 0x1D5, convert_pixel_width_to_tile_width
+	script_special_handler 0x1D6, CountPlayerTrainerStars
+	script_special_handler 0x1D7, sub_0813ACC8
+	script_special_handler 0x1D8, sub_0813ADF0
+	script_special_handler 0x1D9, sub_0813AE0C
+	script_special_handler 0x1DA, sub_081B85CC
+	script_special_handler 0x1DB, sub_0813AEEC
+	script_special_handler 0x1DC, sub_0813AF80
+	script_special_handler 0x1DD, DoDeoxysRockInteraction
+	script_special_handler 0x1DE, sub_0813B208
+	script_special_handler 0x1DF, CreateObedientEnemyMon
+	script_special_handler 0x1E0, StartMirageTowerDisintegration
+	script_special_handler 0x1E1, StartMirageTowerFossilFallAndSink
+	script_special_handler 0x1E2, StartMirageTowerShake
+	script_special_handler 0x1E3, ChangeBoxPokemonNickname
+	script_special_handler 0x1E4, get_unknown_box_id
+	script_special_handler 0x1E5, sub_0813B254
+	script_special_handler 0x1E6, SetMatchCallRegisteredFlag
+	script_special_handler 0x1E7, sub_08175184
+	script_special_handler 0x1E8, CreateUnusualWeatherEvent
+	script_special_handler 0x1E9, GetUnusualWeatherMapNameAndType
+	script_special_handler 0x1EA, sub_0813B4C8
+	script_special_handler 0x1EB, sub_080A0194
+	script_special_handler 0x1EC, Unused_SetWeatherSunny
+	script_special_handler 0x1ED, sub_081AFA78
+	script_special_handler 0x1EE, sub_0813B518
+	script_special_handler 0x1EF, ShouldDoBrailleRegicePuzzle
+	script_special_handler 0x1F0, EnableNationalPokedex
+	script_special_handler 0x1F1, display_text_and_get_width_internal
+	script_special_handler 0x1F2, sub_080E1D6C
+	script_special_handler 0x1F3, TurnOnTVScreen
+	script_special_handler 0x1F4, sub_081D4110
+	script_special_handler 0x1F5, sub_0813B54C
+	script_special_handler 0x1F6, sub_0813B5A0
+	script_special_handler 0x1F7, sub_0813B56C
+	script_special_handler 0x1F8, CallTrainerHillFunction
+	script_special_handler 0x1F9, sub_0813B810
+	script_special_handler 0x1FA, sub_0813B844
+	script_special_handler 0x1FB, sub_081D426C
+	script_special_handler 0x1FC, sub_08022230
+	script_special_handler 0x1FD, TryBufferWaldaPhrase
+	script_special_handler 0x1FE, DoWaldaNamingScreen
+	script_special_handler 0x1FF, TryGetWallpaperWithWaldaPhrase
+	script_special_handler 0x200, sub_08139F0C
+	script_special_handler 0x201, sub_0813B9A0
+	script_special_handler 0x202, sub_080F9424
+	script_special_handler 0x203, ShowTrainerHillRecords
+	script_special_handler 0x204, sub_080B3F60
+	script_special_handler 0x205, sub_0813B9D8
+	script_special_handler 0x206, sub_081B95B8
+	script_special_handler 0x207, sub_08071CF0
+	script_special_handler 0x208, TryPrepareSecondApproachingTrainer
+	script_special_handler 0x209, RemoveRecordsWindow
+	script_special_handler 0x20A, sub_08139C4C
+	script_special_handler 0x20B, sub_080B331C
+	.if (. - gSpecials) != 0x830
+	.error "gSpecials size changed"
+	.endif
 gStdScripts: @ 0x081DB7BC
 	.4byte Std_ObtainItem
 	.4byte Std_FindItem

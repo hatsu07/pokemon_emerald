@@ -10,9 +10,7 @@ gText_Rom_5CBE20: @ 0x085CBE20
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085CBE50: save_failed_screen.s: CB2_WipeSave
 	.globl gSaveFailedScreenData_085CBE50
-gSaveFailedScreenData_085CBE50:
-	.globl gUnknown_85CBE50
-gUnknown_85CBE50: @ 0x085CBE50
+gSaveFailedScreenData_085CBE50: @ 0x085CBE50
 	@ analyzed canonical ROM range 0x085CBE50-0x085CBE8F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x40
@@ -22,9 +20,7 @@ gUnknown_85CBE50: @ 0x085CBE50
 	.byte 0x0E, 0x2E, 0xFE, 0x60, 0x52, 0x64, 0x79, 0x16, 0x00, 0x23, 0x45, 0x28, 0x1F, 0x0D, 0xB2, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085CBE90: save_failed_screen.s: CB2_WipeSave
 	.globl gSaveFailedScreenData_085CBE90
-gSaveFailedScreenData_085CBE90:
-	.globl gUnknown_85CBE90
-gUnknown_85CBE90: @ 0x085CBE90
+gSaveFailedScreenData_085CBE90: @ 0x085CBE90
 	@ analyzed canonical ROM range 0x085CBE90-0x085CBEB9
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2A

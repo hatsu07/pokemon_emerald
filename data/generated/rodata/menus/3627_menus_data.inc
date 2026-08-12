@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085AC0C6: battle_message.s: BufferStringBattle
 	.globl gBattleMessageData_085AC0C6
-gBattleMessageData_085AC0C6:
-	.globl gUnknown_85AC0C6
-gUnknown_85AC0C6: @ 0x085AC0C6
+gBattleMessageData_085AC0C6: @ 0x085AC0C6
 	@ analyzed canonical ROM range 0x085AC0C6-0x085AC0DC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x17
@@ -10,4 +8,3 @@ gUnknown_85AC0C6: @ 0x085AC0C6
 	.byte 0x1B, 0x07, 0x2C, 0x09, 0x10, 0xAB, 0xFF
 	.globl gUnknown_85AC0DD
 gUnknown_85AC0DD: @ 0x085AC0DD
-

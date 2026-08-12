@@ -1,26 +1,20 @@
 	@ pret/pokeemerald-jp direct xref for 0x085609D0: contest.s: sub_080DBA20, sub_080DBBB0
 	.globl gContestData_085609D0
-gContestData_085609D0:
-	.globl gUnknown_85609D0
-gUnknown_85609D0: @ 0x085609D0
+gContestData_085609D0: @ 0x085609D0
 	@ analyzed canonical ROM range 0x085609D0-0x085609D3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x24, 0x4C, 0x74, 0x9C
 	@ pret/pokeemerald-jp direct xref for 0x085609D4: contest.s: sub_080DBC54, sub_080DD76C
 	.globl gContestData_085609D4
-gContestData_085609D4:
-	.globl gUnknown_85609D4
-gUnknown_85609D4: @ 0x085609D4
+gContestData_085609D4: @ 0x085609D4
 	@ analyzed canonical ROM range 0x085609D4-0x085609D7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x24, 0x4C, 0x74, 0x9C
 	@ pret/pokeemerald-jp direct xref for 0x085609D8: contest.s: sub_080DBA20
 	.globl gContestData_085609D8
-gContestData_085609D8:
-	.globl gUnknown_85609D8
-gUnknown_85609D8: @ 0x085609D8
+gContestData_085609D8: @ 0x085609D8
 	@ analyzed canonical ROM range 0x085609D8-0x08560A33
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x5C
@@ -32,17 +26,13 @@ gUnknown_85609D8: @ 0x085609D8
 	.2byte 0x09E8, 0x0856, 0x09F8, 0x0856, 0x0A10, 0x0856
 	@ pret/pokeemerald-jp direct xref for 0x08560A34: contest.s: sub_080DBA20
 	.globl gContestData_08560A34
-gContestData_08560A34:
-	.globl gUnknown_8560A34
-gUnknown_8560A34: @ 0x08560A34
+gContestData_08560A34: @ 0x08560A34
 	@ analyzed canonical ROM range 0x08560A34-0x08560A4B
 sSpriteTemplate_08560A34: @ 0x08560A34
 	rodata_sprite_template 0x4E20, 0xABE0, 0x085609E0, gDummySpriteAnimTable, 0, 0x08560A28, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08560A4C: contest.s: sub_080DBC54
 	.globl gContestData_08560A4C
-gContestData_08560A4C:
-	.globl gUnknown_8560A4C
-gUnknown_8560A4C: @ 0x08560A4C
+gContestData_08560A4C: @ 0x08560A4C
 	@ analyzed canonical ROM range 0x08560A4C-0x08560A6B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -50,18 +40,14 @@ gUnknown_8560A4C: @ 0x08560A4C
 	.byte 0x20, 0xE9, 0xD8, 0x08, 0xA0, 0x00, 0x24, 0x4E, 0x20, 0xE9, 0xD8, 0x08, 0xA0, 0x00, 0x25, 0x4E
 	@ pret/pokeemerald-jp direct xref for 0x08560A6C: contest.s: sub_080DBC54
 	.globl gContestData_08560A6C
-gContestData_08560A6C:
-	.globl gUnknown_8560A6C
-gUnknown_8560A6C: @ 0x08560A6C
+gContestData_08560A6C: @ 0x08560A6C
 	@ analyzed canonical ROM range 0x08560A6C-0x08560A7B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.byte 0x58, 0xEC, 0xD8, 0x08, 0x22, 0x4E, 0x00, 0x00, 0x00, 0x40, 0x00, 0x40, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08560A7C: contest.s: sub_080DBC54
 	.globl gContestData_08560A7C
-gContestData_08560A7C:
-	.globl gUnknown_8560A7C
-gUnknown_8560A7C: @ 0x08560A7C
+gContestData_08560A7C: @ 0x08560A7C
 	@ analyzed canonical ROM range 0x08560A7C-0x08560AE3
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x8
@@ -101,9 +87,7 @@ gUnknown_8560A7C: @ 0x08560A7C
 	.4byte 0x0040FC0C @ +0x64
 	@ pret/pokeemerald-jp direct xref for 0x08560AE4: contest.s: sub_080DBC54
 	.globl gContestData_08560AE4
-gContestData_08560AE4:
-	.globl gUnknown_8560AE4
-gUnknown_8560AE4: @ 0x08560AE4
+gContestData_08560AE4: @ 0x08560AE4
 	@ analyzed canonical ROM range 0x08560AE4-0x08560B13
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x8
@@ -123,27 +107,21 @@ gUnknown_8560AE4: @ 0x08560AE4
 	.4byte SpriteCallbackDummy @ +0x2C
 	@ pret/pokeemerald-jp direct xref for 0x08560B14: contest.s: CreateApplauseMeterSprite
 	.globl gContestData_08560B14
-gContestData_08560B14:
-	.globl gUnknown_8560B14
-gUnknown_8560B14: @ 0x08560B14
+gContestData_08560B14: @ 0x08560B14
 	@ analyzed canonical ROM range 0x08560B14-0x08560B1B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xAC, 0xEA, 0xD8, 0x08, 0x00, 0x04, 0xE2, 0xAB
 	@ pret/pokeemerald-jp direct xref for 0x08560B1C: contest.s: CreateApplauseMeterSprite
 	.globl gContestData_08560B1C
-gContestData_08560B1C:
-	.globl gUnknown_8560B1C
-gUnknown_8560B1C: @ 0x08560B1C
+gContestData_08560B1C: @ 0x08560B1C
 	@ analyzed canonical ROM range 0x08560B1C-0x08560B2B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.byte 0x58, 0xEC, 0xD8, 0x08, 0xE2, 0xAB, 0x00, 0x00, 0x00, 0x40, 0x00, 0xC0, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08560B2C: contest.s: CreateApplauseMeterSprite
 	.globl gContestData_08560B2C
-gContestData_08560B2C:
-	.globl gUnknown_8560B2C
-gUnknown_8560B2C: @ 0x08560B2C
+gContestData_08560B2C: @ 0x08560B2C
 	@ analyzed canonical ROM range 0x08560B2C-0x08560B4B
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x8
@@ -159,52 +137,40 @@ gUnknown_8560B2C: @ 0x08560B2C
 	.4byte 0x00002C00 @ +0x1C
 	@ pret/pokeemerald-jp direct xref for 0x08560B4C: contest.s: sub_080DA828
 	.globl gContestData_08560B4C
-gContestData_08560B4C:
-	.globl gUnknown_8560B4C
-gUnknown_8560B4C: @ 0x08560B4C
+gContestData_08560B4C: @ 0x08560B4C
 	@ analyzed canonical ROM range 0x08560B4C-0x08560B63
 sSpriteTemplate_08560B4C: @ 0x08560B4C
 	rodata_sprite_template 0x4E21, 0x4E21, 0x08560B44, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08560B64: contest.s: sub_080DA828
 	.globl gContestData_08560B64
-gContestData_08560B64:
-	.globl gUnknown_8560B64
-gUnknown_8560B64: @ 0x08560B64
+gContestData_08560B64: @ 0x08560B64
 	@ analyzed canonical ROM range 0x08560B64-0x08560B6B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x2C, 0xC4, 0xC1, 0x08, 0x00, 0x08, 0x21, 0x4E
 	@ pret/pokeemerald-jp direct xref for 0x08560B6C: contest.s: sub_080DA884
 	.globl gContestData_08560B6C
-gContestData_08560B6C:
-	.globl gUnknown_8560B6C
-gUnknown_8560B6C: @ 0x08560B6C
+gContestData_08560B6C: @ 0x08560B6C
 	@ analyzed canonical ROM range 0x08560B6C-0x08560B73
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xC8, 0x93, 0xC1, 0x08, 0x80, 0x03, 0xE0, 0xAB
 	@ pret/pokeemerald-jp direct xref for 0x08560B74: contest.s: sub_080DA884
 	.globl gContestData_08560B74
-gContestData_08560B74:
-	.globl gUnknown_8560B74
-gUnknown_8560B74: @ 0x08560B74
+gContestData_08560B74: @ 0x08560B74
 	@ analyzed canonical ROM range 0x08560B74-0x08560B7B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x6C, 0x95, 0xC1, 0x08, 0xE0, 0xAB, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08560B7C: contest.s: sub_080DA884
 	.globl gContestData_08560B7C
-gContestData_08560B7C:
-	.globl gUnknown_8560B7C
-gUnknown_8560B7C: @ 0x08560B7C
+gContestData_08560B7C: @ 0x08560B7C
 	@ analyzed canonical ROM range 0x08560B7C-0x08560B93
 sSpriteTemplate_08560B7C: @ 0x08560B7C
 	rodata_sprite_template 0xABE0, 0xABE0, 0x084FD018, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08560B94: contest.s: sub_080D7058
 	.globl gContestData_08560B94
-gContestData_08560B94:
-	.globl gUnknown_8560B94
-gUnknown_8560B94: @ 0x08560B94
+gContestData_08560B94: @ 0x08560B94
 	@ analyzed canonical ROM range 0x08560B94-0x08560BB3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -296,9 +262,7 @@ gUnknown_8560CAC: @ 0x08560CAC
 	.4byte gText_Rom_24B45C
 	@ pret/pokeemerald-jp direct xref for 0x08560CF4: contest.s: sub_080D9BBC
 	.globl gContestData_08560CF4
-gContestData_08560CF4:
-	.globl gUnknown_8560CF4
-gUnknown_8560CF4: @ 0x08560CF4
+gContestData_08560CF4: @ 0x08560CF4
 	@ confirmed contiguous ROM pointer table: 32 entries from this address
 sPointerTable_08560CF4:
 	@ analyzed canonical ROM range 0x08560CF4-0x08560D73
@@ -416,18 +380,14 @@ gUnknown_8560E80: @ 0x08560E80
 	.4byte gText_Rom_24C138
 	@ pret/pokeemerald-jp direct xref for 0x08560E98: contest.s: InitContestInfoBgs
 	.globl gContestData_08560E98
-gContestData_08560E98:
-	.globl gUnknown_8560E98
-gUnknown_8560E98: @ 0x08560E98
+gContestData_08560E98: @ 0x08560E98
 	@ analyzed canonical ROM range 0x08560E98-0x08560EA7
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0x0580, 0x0000, 0x15E9, 0x0000, 0x05C2, 0x0000, 0x31A3, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08560EA8: contest.s: InitContestWindows
 	.globl gContestData_08560EA8
-gContestData_08560EA8:
-	.globl gUnknown_8560EA8
-gUnknown_8560EA8: @ 0x08560EA8
+gContestData_08560EA8: @ 0x08560EA8
 	@ analyzed canonical ROM range 0x08560EA8-0x08560F27
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x80
@@ -441,9 +401,7 @@ gUnknown_8560EA8: @ 0x08560EA8
 	.2byte 0x0B00, 0x1223, 0x0F04, 0x0326, 0x00FF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08560F28: contest.s: ClearContestWinnerPicsInContestHall
 	.globl gContestData_08560F28
-gContestData_08560F28:
-	.globl gUnknown_8560F28
-gUnknown_8560F28: @ 0x08560F28
+gContestData_08560F28: @ 0x08560F28
 	@ analyzed canonical ROM range 0x08560F28-0x08560F9D
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x76

@@ -6,9 +6,7 @@ sBirchSpeechBgPals = gMainMenuData_082D2588
 sBirchSpeechShadowGfx = gMainMenuData_082D25C8
 
 	.globl gMainMenuData_082D2588
-gMainMenuData_082D2588:
-	.globl gUnknown_82D2588
-gUnknown_82D2588: @ 0x082D2588
+gMainMenuData_082D2588: @ 0x082D2588
 	@ analyzed canonical ROM range 0x082D2588-0x082D25C7
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x40
@@ -198,9 +196,7 @@ gUnknown_82D29A8: @ 0x082D29A8
 	.4byte NULL
 	@ pret/pokeemerald-jp direct xref for 0x082D29B8: main_menu.s: NewGameBirchSpeech_SetDefaultPlayerName
 	.globl gMainMenuData_082D29B8
-gMainMenuData_082D29B8:
-	.globl gUnknown_82D29B8
-gUnknown_82D29B8: @ 0x082D29B8
+gMainMenuData_082D29B8: @ 0x082D29B8
 	@ confirmed contiguous ROM pointer table: 40 entries from this address
 sPointerTable_082D29B8:
 	@ analyzed canonical ROM range 0x082D29B8-0x082D2A07
@@ -227,9 +223,7 @@ sPointerTable_082D29B8:
 	.4byte gText_Rom_5C8F0C @ +0x4C
 	@ pret/pokeemerald-jp direct xref for 0x082D2A08: main_menu.s: NewGameBirchSpeech_SetDefaultPlayerName
 	.globl gMainMenuData_082D2A08
-gMainMenuData_082D2A08:
-	.globl gUnknown_82D2A08
-gUnknown_82D2A08: @ 0x082D2A08
+gMainMenuData_082D2A08: @ 0x082D2A08
 	@ analyzed canonical ROM range 0x082D2A08-0x082D2A57
 	@ pointer/nullable table
 	.4byte gText_Rom_5C8F12 @ +0x0

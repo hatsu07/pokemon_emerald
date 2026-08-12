@@ -42,9 +42,7 @@ sMoveRelearnerMenuBackgroundTemplates:
 	bg_template 1, 0, 30, 0, 0, 1, 0 @ raw=0x000011E1
 	@ pret/pokeemerald-jp direct xref for 0x085ADB74: roamer.s: CreateInitialRoamerMon, RoamerMove, RoamerMoveToOtherLocationSet
 	.globl gRoamerData_085ADB74
-gRoamerData_085ADB74:
-	.globl gUnknown_85ADB74
-gUnknown_85ADB74: @ 0x085ADB74
+gRoamerData_085ADB74: @ 0x085ADB74
 	@ analyzed canonical ROM range 0x085ADB74-0x085ADBF3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x80

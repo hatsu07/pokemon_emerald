@@ -10,9 +10,7 @@ gText_Rom_5CCE36: @ 0x085CCE36
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085CCE52: pokemon_jump.s: sub_0802D574
 	.globl gPokemonJumpData_085CCE52
-gPokemonJumpData_085CCE52:
-	.globl gUnknown_85CCE52
-gUnknown_85CCE52: @ 0x085CCE52
+gPokemonJumpData_085CCE52: @ 0x085CCE52
 	@ analyzed canonical ROM range 0x085CCE52-0x085CCE64
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x13
@@ -20,9 +18,7 @@ gUnknown_85CCE52: @ 0x085CCE52
 	.byte 0x10, 0xAB, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085CCE65: pokemon_jump.s: sub_0802D5EC
 	.globl gPokemonJumpData_085CCE65
-gPokemonJumpData_085CCE65:
-	.globl gUnknown_85CCE65
-gUnknown_85CCE65: @ 0x085CCE65
+gPokemonJumpData_085CCE65: @ 0x085CCE65
 	@ analyzed canonical ROM range 0x085CCE65-0x085CCE70
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xC

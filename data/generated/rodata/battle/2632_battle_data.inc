@@ -6,9 +6,7 @@ gUnknown_857AAA0: @ 0x0857AAA0
 	.4byte 0
 	@ pret/pokeemerald-jp direct xref for 0x0857AAA8: mon_markings.s: sub_081201A0
 	.globl gMonMarkingsData_0857AAA8
-gMonMarkingsData_0857AAA8:
-	.globl gUnknown_857AAA8
-gUnknown_857AAA8: @ 0x0857AAA8
+gMonMarkingsData_0857AAA8: @ 0x0857AAA8
 	@ analyzed canonical ROM range 0x0857AAA8-0x0857AAFF
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x58
@@ -20,9 +18,7 @@ gUnknown_857AAA8: @ 0x0857AAA8
 	.2byte 0x0009, 0x0005, 0xFFFF, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0857AB00: mon_markings.s: sub_081201A0
 	.globl gMonMarkingsData_0857AB00
-gMonMarkingsData_0857AB00:
-	.globl gUnknown_857AB00
-gUnknown_857AB00: @ 0x0857AB00
+gMonMarkingsData_0857AB00: @ 0x0857AB00
 	@ confirmed contiguous ROM pointer table: 10 entries from this address
 sPointerTable_0857AB00:
 	@ analyzed canonical ROM range 0x0857AB00-0x0857AB37
@@ -43,9 +39,7 @@ sPointerTable_0857AB00:
 	.4byte 0x0000FFFF @ +0x34
 	@ pret/pokeemerald-jp direct xref for 0x0857AB38: mon_markings.s: sub_081201A0
 	.globl gMonMarkingsData_0857AB38
-gMonMarkingsData_0857AB38:
-	.globl gUnknown_857AB38
-gUnknown_857AB38: @ 0x0857AB38
+gMonMarkingsData_0857AB38: @ 0x0857AB38
 	@ analyzed canonical ROM range 0x0857AB38-0x0857AB3F
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x8
@@ -53,9 +47,7 @@ gUnknown_857AB38: @ 0x0857AB38
 	.4byte 0x0857AB30 @ +0x4
 	@ pret/pokeemerald-jp direct xref for 0x0857AB40: mon_markings.s: sub_081204F4
 	.globl gMonMarkingsData_0857AB40
-gMonMarkingsData_0857AB40:
-	.globl gUnknown_857AB40
-gUnknown_857AB40: @ 0x0857AB40
+gMonMarkingsData_0857AB40: @ 0x0857AB40
 	@ analyzed canonical ROM range 0x0857AB40-0x0857ABC7
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x88
@@ -70,9 +62,7 @@ gUnknown_857AB40: @ 0x0857AB40
 	.2byte 0x003C, 0x0005, 0xFFFF, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0857ABC8: mon_markings.s: sub_081204F4
 	.globl gMonMarkingsData_0857ABC8
-gMonMarkingsData_0857ABC8:
-	.globl gUnknown_857ABC8
-gUnknown_857ABC8: @ 0x0857ABC8
+gMonMarkingsData_0857ABC8: @ 0x0857ABC8
 	@ confirmed contiguous ROM pointer table: 16 entries from this address
 sPointerTable_0857ABC8:
 	@ analyzed canonical ROM range 0x0857ABC8-0x0857AC07
@@ -95,9 +85,7 @@ sPointerTable_0857ABC8:
 	.4byte 0x0857ABC0 @ +0x3C
 	@ pret/pokeemerald-jp direct xref for 0x0857AC08: mauville_old_man.s: SetupBard
 	.globl gMauvilleOldManData_0857AC08
-gMauvilleOldManData_0857AC08:
-	.globl gUnknown_857AC08
-gUnknown_857AC08: @ 0x0857AC08
+gMauvilleOldManData_0857AC08: @ 0x0857AC08
 	@ analyzed canonical ROM range 0x0857AC08-0x0857AC13
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xC
@@ -134,9 +122,7 @@ gUnknown_857AC54: @ 0x0857AC54
 	.4byte MAP_NUM_ROUTE106
 	@ pret/pokeemerald-jp direct xref for 0x0857AC6C: mauville_old_man.s: GetStoryByStat, StorytellerInitializeRandomStat
 	.globl gMauvilleOldManData_0857AC6C
-gMauvilleOldManData_0857AC6C:
-	.globl gUnknown_857AC6C
-gUnknown_857AC6C: @ 0x0857AC6C
+gMauvilleOldManData_0857AC6C: @ 0x0857AC6C
 	@ analyzed canonical ROM range 0x0857AC6C-0x0857AE9B
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x230
@@ -282,9 +268,7 @@ gUnknown_857AC6C: @ 0x0857AC6C
 	.4byte 0x082561C2 @ +0x22C
 	@ pret/pokeemerald-jp direct xref for 0x0857AE9C: mauville_old_man.s: GetStoryByStat
 	.globl gMauvilleOldManData_0857AE9C
-gMauvilleOldManData_0857AE9C:
-	.globl gUnknown_857AE9C
-gUnknown_857AE9C: @ 0x0857AE9C
+gMauvilleOldManData_0857AE9C: @ 0x0857AE9C
 	@ analyzed canonical ROM range 0x0857AE9C-0x0857AEAB
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x10
@@ -299,18 +283,14 @@ gUnknown_857AEAC: @ 0x0857AEAC
 	.4byte TYPE_STEEL
 	@ pret/pokeemerald-jp direct xref for 0x0857AEB4: mail.s: MailReadBuildGraphics
 	.globl gMailData_0857AEB4
-gMailData_0857AEB4:
-	.globl gUnknown_857AEB4
-gUnknown_857AEB4: @ 0x0857AEB4
+gMailData_0857AEB4: @ 0x0857AEB4
 	@ analyzed canonical ROM range 0x0857AEB4-0x0857AEBF
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.2byte 0x01F8, 0x0000, 0x11E1, 0x0000, 0x21D2, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0857AEC0: mail.s: MailReadBuildGraphics
 	.globl gMailData_0857AEC0
-gMailData_0857AEC0:
-	.globl gUnknown_857AEC0
-gUnknown_857AEC0: @ 0x0857AEC0
+gMailData_0857AEC0: @ 0x0857AEC0
 	@ analyzed canonical ROM range 0x0857AEC0-0x0857AED7
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x18
@@ -318,27 +298,21 @@ gUnknown_857AEC0: @ 0x0857AEC0
 	.2byte 0x00FF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0857AED8: mail.s: sub_08121B64
 	.globl gMailData_0857AED8
-gMailData_0857AED8:
-	.globl gUnknown_857AED8
-gUnknown_857AED8: @ 0x0857AED8
+gMailData_0857AED8: @ 0x0857AED8
 	@ analyzed canonical ROM range 0x0857AED8-0x0857AEDB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x00, 0x0A, 0x0B, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857AEDC: mail.s: MailReadBuildGraphics
 	.globl gMailData_0857AEDC
-gMailData_0857AEDC:
-	.globl gUnknown_857AEDC
-gUnknown_857AEDC: @ 0x0857AEDC
+gMailData_0857AEDC: @ 0x0857AEDC
 	@ analyzed canonical ROM range 0x0857AEDC-0x0857AEE3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xCD, 0x6A, 0xA5, 0x51, 0xFC, 0x45, 0xD4, 0x38
 	@ pret/pokeemerald-jp direct xref for 0x0857AEE4: mail.s: MailReadBuildGraphics
 	.globl gMailData_0857AEE4
-gMailData_0857AEE4:
-	.globl gUnknown_857AEE4
-gUnknown_857AEE4: @ 0x0857AEE4
+gMailData_0857AEE4: @ 0x0857AEE4
 	@ analyzed canonical ROM range 0x0857AEE4-0x0857AFDF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xFC
@@ -360,9 +334,7 @@ gUnknown_857AEE4: @ 0x0857AEE4
 	.byte 0x03, 0x10, 0x00, 0x00, 0x03, 0x10, 0x00, 0x00, 0x03, 0x10, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857AFE0: mail.s: ReadMail
 	.globl gMailData_0857AFE0
-gMailData_0857AFE0:
-	.globl gUnknown_857AFE0
-gUnknown_857AFE0: @ 0x0857AFE0
+gMailData_0857AFE0: @ 0x0857AFE0
 	@ analyzed canonical ROM range 0x0857AFE0-0x0857B053
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x74
@@ -376,9 +348,7 @@ gUnknown_857AFE0: @ 0x0857AFE0
 	.byte 0x01, 0x10, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857B054: mail.s: ReadMail
 	.globl gMailData_0857B054
-gMailData_0857B054:
-	.globl gUnknown_857B054
-gUnknown_857B054: @ 0x0857B054
+gMailData_0857B054: @ 0x0857B054
 	@ analyzed canonical ROM range 0x0857B054-0x0857B0B3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x60
@@ -390,9 +360,7 @@ gUnknown_857B054: @ 0x0857B054
 	.byte 0x05, 0x08, 0x02, 0x00, 0x40, 0xB0, 0x57, 0x08, 0x05, 0x00, 0x02, 0x00, 0x40, 0xB0, 0x57, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0857B0B4: mail.s: sub_08121A8C
 	.globl gMailData_0857B0B4
-gMailData_0857B0B4:
-	.globl gUnknown_857B0B4
-gUnknown_857B0B4: @ 0x0857B0B4
+gMailData_0857B0B4: @ 0x0857B0B4
 	@ analyzed canonical ROM range 0x0857B0B4-0x0857B0E3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x30
@@ -401,27 +369,21 @@ gUnknown_857B0B4: @ 0x0857B0B4
 	.byte 0xFF, 0xFF, 0x00, 0x00, 0xC0, 0xB0, 0x57, 0x08, 0xC8, 0xB0, 0x57, 0x08, 0xD0, 0xB0, 0x57, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0857B0E4: menu_helpers.s: LoadListMenuArrowsGfx
 	.globl gMenuHelpersData_0857B0E4
-gMenuHelpersData_0857B0E4:
-	.globl gUnknown_857B0E4
-gUnknown_857B0E4: @ 0x0857B0E4
+gMenuHelpersData_0857B0E4: @ 0x0857B0E4
 	@ analyzed canonical ROM range 0x0857B0E4-0x0857B0EB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x64, 0xB1, 0xD9, 0x08, 0x00, 0x01, 0x6D, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857B0EC: menu_helpers.s: LoadListMenuArrowsGfx
 	.globl gMenuHelpersData_0857B0EC
-gMenuHelpersData_0857B0EC:
-	.globl gUnknown_857B0EC
-gUnknown_857B0EC: @ 0x0857B0EC
+gMenuHelpersData_0857B0EC: @ 0x0857B0EC
 	@ analyzed canonical ROM range 0x0857B0EC-0x0857B0F3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xA4, 0xB1, 0xD9, 0x08, 0x6D, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857B0F4: menu_helpers.s: sub_08122350
 	.globl gMenuHelpersData_0857B0F4
-gMenuHelpersData_0857B0F4:
-	.globl gUnknown_857B0F4
-gUnknown_857B0F4: @ 0x0857B0F4
+gMenuHelpersData_0857B0F4: @ 0x0857B0F4
 	@ analyzed canonical ROM range 0x0857B0F4-0x0857B103
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x10
@@ -435,9 +397,7 @@ gUnknown_857B104: @ 0x0857B104
 	.4byte SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x0857B10C: heal_location.s: GetHealLocationIndexByMap
 	.globl gHealLocationData_0857B10C
-gHealLocationData_0857B10C:
-	.globl gUnknown_857B10C
-gUnknown_857B10C: @ 0x0857B10C
+gHealLocationData_0857B10C: @ 0x0857B10C
 	@ analyzed canonical ROM range 0x0857B10C-0x0857B1DB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xD0
@@ -480,9 +440,7 @@ sLz77Block_0857B220:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857B30C: region_map.s: sub_08122DBC
 	.globl gRegionMapData_0857B30C
-gRegionMapData_0857B30C:
-	.globl gUnknown_857B30C
-gUnknown_857B30C: @ 0x0857B30C
+gRegionMapData_0857B30C: @ 0x0857B30C
 	@ analyzed canonical ROM range 0x0857B30C-0x0857B34B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x40
@@ -516,9 +474,7 @@ sLz77Block_0857C0B0:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857C3FC: region_map.s: CreateRegionMapPlayerIcon
 	.globl gRegionMapData_0857C3FC
-gRegionMapData_0857C3FC:
-	.globl gUnknown_857C3FC
-gUnknown_857C3FC: @ 0x0857C3FC
+gRegionMapData_0857C3FC: @ 0x0857C3FC
 	@ analyzed canonical ROM range 0x0857C3FC-0x0857C41B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -526,9 +482,7 @@ gUnknown_857C3FC: @ 0x0857C3FC
 	.byte 0x82, 0x1C, 0x9B, 0x77, 0x2E, 0x3B, 0x49, 0x2A, 0x9F, 0x2D, 0x18, 0x21, 0xFF, 0x7F, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857C41C: region_map.s: CreateRegionMapPlayerIcon
 	.globl gRegionMapData_0857C41C
-gRegionMapData_0857C41C:
-	.globl gUnknown_857C41C
-gUnknown_857C41C: @ 0x0857C41C
+gRegionMapData_0857C41C: @ 0x0857C41C
 	@ analyzed canonical ROM range 0x0857C41C-0x0857C49B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x80
@@ -542,9 +496,7 @@ gUnknown_857C41C: @ 0x0857C41C
 	.byte 0x32, 0x33, 0x04, 0x00, 0x33, 0xF4, 0x0F, 0x00, 0xFF, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857C49C: region_map.s: CreateRegionMapPlayerIcon
 	.globl gRegionMapData_0857C49C
-gRegionMapData_0857C49C:
-	.globl gUnknown_857C49C
-gUnknown_857C49C: @ 0x0857C49C
+gRegionMapData_0857C49C: @ 0x0857C49C
 	@ analyzed canonical ROM range 0x0857C49C-0x0857C4BB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -552,9 +504,7 @@ gUnknown_857C49C: @ 0x0857C49C
 	.byte 0xC9, 0x1C, 0x39, 0x6F, 0x4D, 0x23, 0xA8, 0x12, 0x9F, 0x2D, 0x18, 0x21, 0xFF, 0x7F, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857C4BC: region_map.s: CreateRegionMapPlayerIcon
 	.globl gRegionMapData_0857C4BC
-gRegionMapData_0857C4BC:
-	.globl gUnknown_857C4BC
-gUnknown_857C4BC: @ 0x0857C4BC
+gRegionMapData_0857C4BC: @ 0x0857C4BC
 	@ analyzed canonical ROM range 0x0857C4BC-0x0857C53B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x80
@@ -568,9 +518,7 @@ gUnknown_857C4BC: @ 0x0857C4BC
 	.byte 0x32, 0x43, 0x0F, 0x0F, 0x33, 0xF4, 0x00, 0x00, 0xFF, 0x0F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0857C53C: region_map.s: GetRegionMapSectionIdAt_Internal
 	.globl gRegionMapData_0857C53C
-gRegionMapData_0857C53C:
-	.globl gUnknown_857C53C
-gUnknown_857C53C: @ 0x0857C53C
+gRegionMapData_0857C53C: @ 0x0857C53C
 	@ analyzed canonical ROM range 0x0857C53C-0x0857C6DF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x1A4

@@ -1,17 +1,13 @@
 	@ pret/pokeemerald-jp direct xref for 0x085FA9C4: menu_specialized.s: DrawLevelUpWindowPg1
 	.globl gMenuSpecializedData_085FA9C4
-gMenuSpecializedData_085FA9C4:
-	.globl gUnknown_85FA9C4
-gUnknown_85FA9C4: @ 0x085FA9C4
+gMenuSpecializedData_085FA9C4: @ 0x085FA9C4
 	@ analyzed canonical ROM range 0x085FA9C4-0x085FA9C6
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0xF9, 0x04, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085FA9C7: menu_specialized.s: DrawLevelUpWindowPg1
 	.globl gMenuSpecializedData_085FA9C7
-gMenuSpecializedData_085FA9C7:
-	.globl gUnknown_85FA9C7
-gUnknown_85FA9C7: @ 0x085FA9C7
+gMenuSpecializedData_085FA9C7: @ 0x085FA9C7
 	@ analyzed canonical ROM range 0x085FA9C7-0x085FA9CB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x5
@@ -26,9 +22,7 @@ gUnknown_85FA9CC: @ 0x085FA9CC
 	.4byte gText_Rom_5FA9B5
 	@ pret/pokeemerald-jp direct xref for 0x085FA9E4: ereader_helpers.s: TryWriteTrainerHill_r
 	.globl gEreaderHelpersData_085FA9E4
-gEreaderHelpersData_085FA9E4:
-	.globl gUnknown_85FA9E4
-gUnknown_85FA9E4: @ 0x085FA9E4
+gEreaderHelpersData_085FA9E4: @ 0x085FA9E4
 	@ analyzed canonical ROM range 0x085FA9E4-0x085FAAC3
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xE0

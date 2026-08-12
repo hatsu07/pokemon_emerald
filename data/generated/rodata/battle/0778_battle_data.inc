@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085467C1: trainer_card.s: PrintBattleFacilityStringOnCard, PrintBerryCrushStringOnCard, PrintContestStringOnCard, PrintIdOnCard, PrintPokeblockStringOnCard (+3 more)
 	.globl gTrainerCardData_085467C1
-gTrainerCardData_085467C1:
-	.globl gUnknown_85467C1
-gUnknown_85467C1: @ 0x085467C1
+gTrainerCardData_085467C1: @ 0x085467C1
 	@ analyzed canonical ROM range 0x085467C1-0x085467C3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
@@ -14,45 +12,35 @@ gUnknown_85467C4: @ 0x085467C4
 	.4byte gText_Rom_5CC367
 	@ pret/pokeemerald-jp direct xref for 0x085467D0: trainer_card.s: TrainerCard_PrintPokemonIconsOnCard
 	.globl gTrainerCardData_085467D0
-gTrainerCardData_085467D0:
-	.globl gUnknown_85467D0
-gUnknown_85467D0: @ 0x085467D0
+gTrainerCardData_085467D0: @ 0x085467D0
 	@ analyzed canonical ROM range 0x085467D0-0x085467D5
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A
 	@ pret/pokeemerald-jp direct xref for 0x085467D6: trainer_card.s: TrainerCard_PrintPokemonIconsOnCard
 	.globl gTrainerCardData_085467D6
-gTrainerCardData_085467D6:
-	.globl gUnknown_85467D6
-gUnknown_85467D6: @ 0x085467D6
+gTrainerCardData_085467D6: @ 0x085467D6
 	@ analyzed canonical ROM range 0x085467D6-0x085467DB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0x00, 0x04, 0x08, 0x0C, 0x10, 0x14
 	@ pret/pokeemerald-jp direct xref for 0x085467DC: trainer_card.s: PrintNameOnCard2
 	.globl gTrainerCardData_085467DC
-gTrainerCardData_085467DC:
-	.globl gUnknown_85467DC
-gUnknown_85467DC: @ 0x085467DC
+gTrainerCardData_085467DC: @ 0x085467DC
 	@ analyzed canonical ROM range 0x085467DC-0x085467DF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x0B, 0x0C, 0x0D, 0x0E
 	@ pret/pokeemerald-jp direct xref for 0x085467E0: trainer_card.s: TrainerCard_PrintStarsAndBadgesOnCard
 	.globl gTrainerCardData_085467E0
-gTrainerCardData_085467E0:
-	.globl gUnknown_85467E0
-gUnknown_85467E0: @ 0x085467E0
+gTrainerCardData_085467E0: @ 0x085467E0
 	@ analyzed canonical ROM range 0x085467E0-0x085467E3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x07, 0x07, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085467E4: frontier_pass.s: InitFrontierMap, InitFrontierPass
 	.globl gFrontierPassData_085467E4
-gFrontierPassData_085467E4:
-	.globl gUnknown_85467E4
-gUnknown_85467E4: @ 0x085467E4
+gFrontierPassData_085467E4: @ 0x085467E4
 	@ analyzed canonical ROM range 0x085467E4-0x085469A3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x1C0
@@ -86,9 +74,7 @@ gUnknown_85467E4: @ 0x085467E4
 	.byte 0xC9, 0x1C, 0x39, 0x6F, 0x4D, 0x23, 0xA8, 0x12, 0x9F, 0x2D, 0x18, 0x21, 0xFF, 0x7F, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085469A4: frontier_pass.s: InitFrontierPass
 	.globl gFrontierPassData_085469A4
-gFrontierPassData_085469A4:
-	.globl gUnknown_85469A4
-gUnknown_85469A4: @ 0x085469A4
+gFrontierPassData_085469A4: @ 0x085469A4
 	@ analyzed canonical ROM range 0x085469A4-0x08546F6A
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x5C7

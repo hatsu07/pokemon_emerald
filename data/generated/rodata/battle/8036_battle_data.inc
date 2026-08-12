@@ -1,8 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085FB6A0: trainer_hill.s: GetTrainerEncounterMusicIdInTrainerHill
 	.globl gTrainerHillData_085FB6A0
-gTrainerHillData_085FB6A0:
-	.globl gUnknown_85FB6A0
-gUnknown_85FB6A0: @ 0x085FB6A0
+gTrainerHillData_085FB6A0: @ 0x085FB6A0
 	@ analyzed canonical ROM range 0x085FB6A0-0x085FB8B7
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x218
@@ -42,9 +40,7 @@ gUnknown_85FB6A0: @ 0x085FB6A0
 	.2byte 0xB850, 0x085F, 0xB85C, 0x085F
 	@ pret/pokeemerald-jp direct xref for 0x085FB8B8: trainer_hill.s: sub_081D5F98
 	.globl gTrainerHillData_085FB8B8
-gTrainerHillData_085FB8B8:
-	.globl gUnknown_85FB8B8
-gUnknown_85FB8B8: @ 0x085FB8B8
+gTrainerHillData_085FB8B8: @ 0x085FB8B8
 	@ analyzed canonical ROM range 0x085FB8B8-0x085FB8BF
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x8
@@ -55,13 +51,10 @@ gUnknown_85FB8C0: @ 0x085FB8C0
 	.space 0x20, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085FB8E0: trainer_hill.s: PrintOnTrainerHillRecordsWindow
 	.globl gTrainerHillData_085FB8E0
-gTrainerHillData_085FB8E0:
-	.globl gUnknown_85FB8E0
-gUnknown_85FB8E0: @ 0x085FB8E0
+gTrainerHillData_085FB8E0: @ 0x085FB8E0
 	@ analyzed canonical ROM range 0x085FB8E0-0x085FB8E2
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x00, 0x02, 0x03
 	.globl gUnknown_85FB8E3
 gUnknown_85FB8E3: @ 0x085FB8E3
-

@@ -12,9 +12,7 @@ sLz77Block_08D9B2C0:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9B2E8: shop.s: BuyMenuDecompressBgGraphics
 	.globl gShopData_08D9B2E8
-gShopData_08D9B2E8:
-	.globl gUnknown_8D9B2E8
-gUnknown_8D9B2E8: @ 0x08D9B2E8
+gShopData_08D9B2E8: @ 0x08D9B2E8
 	@ confirmed GBA LZ77 stream: compressed=0x13E, decompressed=0x800
 sLz77Block_08D9B2E8:
 	@ analyzed canonical ROM range 0x08D9B2E8-0x08D9B4B3
@@ -63,9 +61,7 @@ sLz77Block_08D9B4B4:
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9B6BC: pokeblock.spokeblock.s: sub_08135C88
 	.globl gPokeblockSpokeblockData_08D9B6BC
-gPokeblockSpokeblockData_08D9B6BC:
-	.globl gUnknown_8D9B6BC
-gUnknown_8D9B6BC: @ 0x08D9B6BC
+gPokeblockSpokeblockData_08D9B6BC: @ 0x08D9B6BC
 	@ confirmed GBA LZ77 stream: compressed=0x6E, decompressed=0xC0
 sLz77Block_08D9B6BC:
 	@ analyzed canonical ROM range 0x08D9B6BC-0x08D9BA13

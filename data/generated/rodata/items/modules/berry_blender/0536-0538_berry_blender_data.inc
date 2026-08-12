@@ -16,9 +16,7 @@ gText_Rom_30F6AE: @ 0x0830F6AE
 	.string "タクマシ$"
 	@ pret/pokeemerald-jp direct xref for 0x0830F6FB: berry_blender.s: Blender_PrintMadePokeblockString
 	.globl gBerryBlenderData_0830F6FB
-gBerryBlenderData_0830F6FB:
-	.globl gUnknown_830F6FB
-gUnknown_830F6FB: @ 0x0830F6FB
+gBerryBlenderData_0830F6FB: @ 0x0830F6FB
 	@ analyzed canonical ROM range 0x0830F6FB-0x0830F6FC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2

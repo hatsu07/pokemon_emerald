@@ -77,9 +77,7 @@ gText_Rom_5D3DA7: @ 0x085D3DA7
 	.endif
 	.align 2, 0
 	.globl gContestLadyMonNamePointers
-	.globl gUnknown_85D3DB0
-gContestLadyMonNamePointers:
-gUnknown_85D3DB0: @ 0x085D3DB0
+gContestLadyMonNamePointers: @ 0x085D3DB0
 	.4byte gText_ContestLadyMonName_Cool
 	.4byte gText_ContestLadyMonName_Beauty
 	.4byte gText_ContestLadyMonName_Cute

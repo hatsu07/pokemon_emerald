@@ -920,9 +920,7 @@ gUnknown_85BBE70: @ 0x085BBE70
 	.2byte 0x1420, 0x2F20
 	@ pret/pokeemerald-jp direct xref for 0x085BBE84: battle_tower.s: EmeraldBattleTowerRecordToRuby, RubyBattleTowerRecordToEmerald
 	.globl gBattleTowerData_085BBE84
-gBattleTowerData_085BBE84:
-	.globl gUnknown_85BBE84
-gUnknown_85BBE84: @ 0x085BBE84
+gBattleTowerData_085BBE84: @ 0x085BBE84
 	@ analyzed canonical ROM range 0x085BBE84-0x085BC443
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x5C0
@@ -1296,9 +1294,7 @@ gUnknown_85BBE84: @ 0x085BBE84
 	.4byte 0x082263E6 @ +0x5BC
 	@ pret/pokeemerald-jp direct xref for 0x085BC444: battle_tower.s: sub_08164718
 	.globl gBattleTowerData_085BC444
-gBattleTowerData_085BC444:
-	.globl gUnknown_85BC444
-gUnknown_85BC444: @ 0x085BC444
+gBattleTowerData_085BC444: @ 0x085BC444
 	@ analyzed canonical ROM range 0x085BC444-0x085BC5D3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x190
@@ -1329,9 +1325,7 @@ gUnknown_85BC444: @ 0x085BC444
 	.byte 0x33, 0x00, 0x00, 0x00, 0x1C, 0xC4, 0x5B, 0x08, 0x07, 0x00, 0x00, 0x00, 0x30, 0xC4, 0x5B, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x085BC5D4: battle_tower.s: sub_08164718
 	.globl gBattleTowerData_085BC5D4
-gBattleTowerData_085BC5D4:
-	.globl gUnknown_85BC5D4
-gUnknown_85BC5D4: @ 0x085BC5D4
+gBattleTowerData_085BC5D4: @ 0x085BC5D4
 	@ analyzed canonical ROM range 0x085BC5D4-0x085BC613
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x40
@@ -1353,27 +1347,21 @@ gUnknown_85BC5D4: @ 0x085BC5D4
 	.4byte 0x085BC048 @ +0x3C
 	@ pret/pokeemerald-jp direct xref for 0x085BC614: battle_tower.s: FillPartnerParty
 	.globl gBattleTowerData_085BC614
-gBattleTowerData_085BC614:
-	.globl gUnknown_85BC614
-gUnknown_85BC614: @ 0x085BC614
+gBattleTowerData_085BC614: @ 0x085BC614
 	@ analyzed canonical ROM range 0x085BC614-0x085BC618
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x5
 	.byte 0x8F, 0x01, 0x1F, 0x2A, 0x02
 	@ pret/pokeemerald-jp direct xref for 0x085BC619: battle_tower.s: FillPartnerParty
 	.globl gBattleTowerData_085BC619
-gBattleTowerData_085BC619:
-	.globl gUnknown_85BC619
-gUnknown_85BC619: @ 0x085BC619
+gBattleTowerData_085BC619: @ 0x085BC619
 	@ analyzed canonical ROM range 0x085BC619-0x085BC61F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x7
 	.byte 0x00, 0xFC, 0xFC, 0x00, 0x06, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085BC620: battle_tower.s: FillPartnerParty
 	.globl gBattleTowerData_085BC620
-gBattleTowerData_085BC620:
-	.globl gUnknown_85BC620
-gUnknown_85BC620: @ 0x085BC620
+gBattleTowerData_085BC620: @ 0x085BC620
 	@ analyzed canonical ROM range 0x085BC620-0x085BC957
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x338
