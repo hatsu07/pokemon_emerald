@@ -244,6 +244,7 @@ EventScript_JP_08208611: @ 0x08208611
 	call EventScript_JP_08208601
 	call EventScript_JP_08208609
 	end
+.globl EventScript_JP_08208630
 EventScript_JP_08208630: @ 0x08208630
 	lock
 	faceplayer
@@ -286,6 +287,7 @@ EventScript_JP_0820869D: @ 0x0820869D
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_082086A7
 EventScript_JP_082086A7: @ 0x082086A7
 	lock
 	faceplayer
@@ -328,6 +330,7 @@ EventScript_JP_08208714: @ 0x08208714
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0820871E
 EventScript_JP_0820871E: @ 0x0820871E
 	lock
 	faceplayer
@@ -370,6 +373,7 @@ EventScript_JP_0820878B: @ 0x0820878B
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08208795
 EventScript_JP_08208795: @ 0x08208795
 	lock
 	faceplayer
@@ -412,6 +416,7 @@ EventScript_JP_08208802: @ 0x08208802
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0820880C
 EventScript_JP_0820880C: @ 0x0820880C
 	lock
 	faceplayer
@@ -447,6 +452,7 @@ EventScript_JP_08208864: @ 0x08208864
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0820886E
 EventScript_JP_0820886E: @ 0x0820886E
 	lock
 	faceplayer
@@ -482,6 +488,7 @@ EventScript_JP_082088C6: @ 0x082088C6
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_082088D0
 EventScript_JP_082088D0: @ 0x082088D0
 	lock
 	faceplayer
@@ -517,6 +524,7 @@ EventScript_JP_08208928: @ 0x08208928
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08208932
 EventScript_JP_08208932: @ 0x08208932
 	lock
 	faceplayer
@@ -552,6 +560,7 @@ EventScript_JP_0820898A: @ 0x0820898A
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08208994
 EventScript_JP_08208994: @ 0x08208994
 	lock
 	faceplayer

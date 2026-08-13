@@ -62,6 +62,7 @@ EventScript_JP_081F0B73: @ 0x081F0B73
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x08245DBB
 	end
+.globl EventScript_JP_081F0B80
 EventScript_JP_081F0B80: @ 0x081F0B80
 	lockall
 	compare_var_to_value 0x408D, 0x0002
@@ -334,6 +335,7 @@ Movement_JP_081F0D07: @ 0x081F0D07
 	delay_16
 	walk_in_place_fastest_right
 	step_end
+.globl EventScript_JP_081F0D0D
 EventScript_JP_081F0D0D: @ 0x081F0D0D
 	lockall
 	checkflag 0x0124
@@ -390,6 +392,7 @@ EventScript_JP_081F0D96: @ 0x081F0D96
 	loadword 0x00, gText_Rom_1F11E3
 	callstd 0x04
 	return
+.globl EventScript_JP_081F0D9F
 EventScript_JP_081F0D9F: @ 0x081F0D9F
 	lockall
 	checkplayergender

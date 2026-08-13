@@ -55,6 +55,7 @@ EventScript_JP_0820CDDE: @ 0x0820CDDE
 EventScript_JP_0820CDEA: @ 0x0820CDEA
 	setmetatile 0x0002, 0x0005, 0x03E4, 0x0001
 	return
+.globl EventScript_JP_0820CDF4
 EventScript_JP_0820CDF4: @ 0x0820CDF4
 	lock
 	faceplayer
@@ -111,6 +112,7 @@ EventScript_JP_0820CE76: @ 0x0820CE76
 	loadword 0x00, gText_Rom_20D126
 	callstd 0x04
 	return
+.globl EventScript_JP_0820CE7F
 EventScript_JP_0820CE7F: @ 0x0820CE7F
 	lock
 	faceplayer
@@ -132,6 +134,7 @@ EventScript_JP_0820CE96: @ 0x0820CE96
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_0820CEAA
 EventScript_JP_0820CEAA: @ 0x0820CEAA
 	lock
 	faceplayer
@@ -190,6 +193,7 @@ EventScript_JP_0820CF35: @ 0x0820CF35
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_0820CF49
 EventScript_JP_0820CF49: @ 0x0820CF49
 	lock
 	faceplayer
@@ -211,6 +215,7 @@ EventScript_JP_0820CF7A: @ 0x0820CF7A
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0820CF84
 EventScript_JP_0820CF84: @ 0x0820CF84
 	lock
 	faceplayer
@@ -248,6 +253,7 @@ EventScript_JP_0820CFC0: @ 0x0820CFC0
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_0820CFD5
 EventScript_JP_0820CFD5: @ 0x0820CFD5
 	lock
 	faceplayer
@@ -262,12 +268,14 @@ EventScript_JP_0820CFD5: @ 0x0820CFD5
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_0820CFEB
 EventScript_JP_0820CFEB: @ 0x0820CFEB
 	lockall
 	loadword 0x00, gText_Rom_20D5FC
 	callstd 0x04
 	releaseall
 	end
+.globl EventScript_JP_0820CFF6
 EventScript_JP_0820CFF6: @ 0x0820CFF6
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -279,6 +287,7 @@ EventScript_JP_0820CFF6: @ 0x0820CFF6
 	loadword 0x00, gText_Rom_20D4A1
 	callstd 0x06
 	end
+.globl EventScript_JP_0820D00D
 EventScript_JP_0820D00D: @ 0x0820D00D
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -290,6 +299,7 @@ EventScript_JP_0820D00D: @ 0x0820D00D
 	loadword 0x00, gText_Rom_20D503
 	callstd 0x06
 	end
+.globl EventScript_JP_0820D024
 EventScript_JP_0820D024: @ 0x0820D024
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -301,6 +311,7 @@ EventScript_JP_0820D024: @ 0x0820D024
 	loadword 0x00, gText_Rom_20D574
 	callstd 0x06
 	end
+.globl EventScript_JP_0820D03B
 EventScript_JP_0820D03B: @ 0x0820D03B
 	lock
 	faceplayer

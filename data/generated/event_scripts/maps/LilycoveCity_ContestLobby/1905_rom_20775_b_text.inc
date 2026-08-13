@@ -12,22 +12,27 @@ gText_Rom_20775B: @ 0x0820775B
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_082077B9: @ 0x082077B9
 	.byte 0x00
+.globl EventScript_JP_082077BA
 EventScript_JP_082077BA: @ 0x082077BA
 	loadword 0x00, gText_Rom_207A83
 	callstd 0x02
 	end
+.globl EventScript_JP_082077C3
 EventScript_JP_082077C3: @ 0x082077C3
 	loadword 0x00, gText_Rom_207AD4
 	callstd 0x02
 	end
+.globl EventScript_JP_082077CC
 EventScript_JP_082077CC: @ 0x082077CC
 	loadword 0x00, gText_Rom_207B41
 	callstd 0x02
 	end
+.globl EventScript_JP_082077D5
 EventScript_JP_082077D5: @ 0x082077D5
 	loadword 0x00, gText_Rom_207B8A
 	callstd 0x02
 	end
+.globl EventScript_JP_082077DE
 EventScript_JP_082077DE: @ 0x082077DE
 	lock
 	faceplayer
@@ -43,6 +48,7 @@ EventScript_JP_082077DE: @ 0x082077DE
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_082077F5
 EventScript_JP_082077F5: @ 0x082077F5
 	lock
 	faceplayer
@@ -58,6 +64,7 @@ EventScript_JP_082077F5: @ 0x082077F5
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_0820780C
 EventScript_JP_0820780C: @ 0x0820780C
 	lock
 	faceplayer
@@ -73,6 +80,7 @@ EventScript_JP_0820780C: @ 0x0820780C
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_08207823
 EventScript_JP_08207823: @ 0x08207823
 	lock
 	faceplayer
@@ -88,6 +96,7 @@ EventScript_JP_08207823: @ 0x08207823
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_0820783A
 EventScript_JP_0820783A: @ 0x0820783A
 	lock
 	faceplayer
@@ -103,6 +112,7 @@ EventScript_JP_0820783A: @ 0x0820783A
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_08207851
 EventScript_JP_08207851: @ 0x08207851
 	lock
 	faceplayer
@@ -118,10 +128,12 @@ EventScript_JP_08207851: @ 0x08207851
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_08207868
 EventScript_JP_08207868: @ 0x08207868
 	loadword 0x00, gText_Rom_207D59
 	callstd 0x03
 	end
+.globl EventScript_JP_08207871
 EventScript_JP_08207871: @ 0x08207871
 	lock
 	faceplayer
@@ -137,6 +149,7 @@ EventScript_JP_08207871: @ 0x08207871
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_08207888
 EventScript_JP_08207888: @ 0x08207888
 	lock
 	faceplayer
@@ -152,6 +165,7 @@ EventScript_JP_08207888: @ 0x08207888
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_0820789F
 EventScript_JP_0820789F: @ 0x0820789F
 	lock
 	faceplayer
@@ -167,6 +181,7 @@ EventScript_JP_0820789F: @ 0x0820789F
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_082078B6
 EventScript_JP_082078B6: @ 0x082078B6
 	lock
 	faceplayer
@@ -182,6 +197,7 @@ EventScript_JP_082078B6: @ 0x082078B6
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_082078CD
 EventScript_JP_082078CD: @ 0x082078CD
 	lock
 	faceplayer
@@ -197,6 +213,7 @@ EventScript_JP_082078CD: @ 0x082078CD
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_082078E4
 EventScript_JP_082078E4: @ 0x082078E4
 	lock
 	faceplayer
@@ -212,6 +229,7 @@ EventScript_JP_082078E4: @ 0x082078E4
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_082078FB
 EventScript_JP_082078FB: @ 0x082078FB
 	lock
 	faceplayer
@@ -227,6 +245,7 @@ EventScript_JP_082078FB: @ 0x082078FB
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_08207912
 EventScript_JP_08207912: @ 0x08207912
 	lock
 	faceplayer
@@ -242,6 +261,7 @@ EventScript_JP_08207912: @ 0x08207912
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_08207929
 EventScript_JP_08207929: @ 0x08207929
 	lock
 	faceplayer
@@ -257,6 +277,7 @@ EventScript_JP_08207929: @ 0x08207929
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_08207940
 EventScript_JP_08207940: @ 0x08207940
 	lock
 	faceplayer
@@ -272,6 +293,7 @@ EventScript_JP_08207940: @ 0x08207940
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_08207957
 EventScript_JP_08207957: @ 0x08207957
 	lock
 	faceplayer
@@ -287,6 +309,7 @@ EventScript_JP_08207957: @ 0x08207957
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_0820796E
 EventScript_JP_0820796E: @ 0x0820796E
 	lock
 	faceplayer
@@ -302,6 +325,7 @@ EventScript_JP_0820796E: @ 0x0820796E
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_08207985
 EventScript_JP_08207985: @ 0x08207985
 	lock
 	faceplayer
@@ -317,6 +341,7 @@ EventScript_JP_08207985: @ 0x08207985
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_0820799C
 EventScript_JP_0820799C: @ 0x0820799C
 	lock
 	faceplayer
@@ -332,6 +357,7 @@ EventScript_JP_0820799C: @ 0x0820799C
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_082079B3
 EventScript_JP_082079B3: @ 0x082079B3
 	lock
 	faceplayer
@@ -347,6 +373,7 @@ EventScript_JP_082079B3: @ 0x082079B3
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_082079CA
 EventScript_JP_082079CA: @ 0x082079CA
 	lock
 	faceplayer
@@ -362,6 +389,7 @@ EventScript_JP_082079CA: @ 0x082079CA
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_082079E1
 EventScript_JP_082079E1: @ 0x082079E1
 	lock
 	faceplayer
@@ -377,6 +405,7 @@ EventScript_JP_082079E1: @ 0x082079E1
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_082079F8
 EventScript_JP_082079F8: @ 0x082079F8
 	lock
 	faceplayer
@@ -392,6 +421,7 @@ EventScript_JP_082079F8: @ 0x082079F8
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_08207A0F
 EventScript_JP_08207A0F: @ 0x08207A0F
 	lockall
 	@ event command: applymovement
@@ -416,6 +446,7 @@ EventScript_JP_08207A0F: @ 0x08207A0F
 	callstd 0x04
 	releaseall
 	end
+.globl EventScript_JP_08207A3A
 EventScript_JP_08207A3A: @ 0x08207A3A
 	lock
 	faceplayer
@@ -431,6 +462,7 @@ EventScript_JP_08207A3A: @ 0x08207A3A
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_08207A51
 EventScript_JP_08207A51: @ 0x08207A51
 	lock
 	faceplayer
@@ -446,14 +478,17 @@ EventScript_JP_08207A51: @ 0x08207A51
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_08207A68
 EventScript_JP_08207A68: @ 0x08207A68
 	loadword 0x00, gText_Rom_2081E5
 	callstd 0x03
 	end
+.globl EventScript_JP_08207A71
 EventScript_JP_08207A71: @ 0x08207A71
 	loadword 0x00, gText_Rom_208209
 	callstd 0x03
 	end
+.globl EventScript_JP_08207A7A
 EventScript_JP_08207A7A: @ 0x08207A7A
 	loadword 0x00, gText_Rom_20822A
 	callstd 0x03

@@ -11,6 +11,7 @@ gText_Rom_203BB9: @ 0x08203BB9
 	@ analyzed canonical ROM range 0x08203BC8-0x08203C71
 	@ semantic recovery: script_data; byte-verified against linked ROM
 	.byte 0x00
+.globl EventScript_JP_08203BC9
 EventScript_JP_08203BC9: @ 0x08203BC9
 	lock
 	faceplayer
@@ -66,6 +67,7 @@ EventScript_JP_08203C5F: @ 0x08203C5F
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08203C69
 EventScript_JP_08203C69: @ 0x08203C69
 	loadword 0x00, gText_Rom_203D38
 	callstd 0x02

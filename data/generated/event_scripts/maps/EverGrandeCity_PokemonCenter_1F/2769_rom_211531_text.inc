@@ -36,6 +36,7 @@ EventScript_JP_08211612: @ 0x08211612
 	setobjectxyperm 0x0002, 0x0009, 0x0006
 	setobjectmovementtype 0x0002, 0x33
 	return
+.globl EventScript_JP_08211629
 EventScript_JP_08211629: @ 0x08211629
 	lock
 	faceplayer
@@ -113,6 +114,7 @@ EventScript_JP_082116E9: @ 0x082116E9
 	.2byte 0x000D
 	.2byte 0x0033
 	.byte 0x27, 0x6B, 0x02
+.globl EventScript_JP_0821171F
 EventScript_JP_0821171F: @ 0x0821171F
 	lock
 	faceplayer

@@ -23,6 +23,7 @@ EventScript_JP_081E156B: @ 0x081E156B
 	checkflag 0x088A
 	call_if 0x01, 0x08243106
 	end
+.globl EventScript_JP_081E1581
 EventScript_JP_081E1581: @ 0x081E1581
 	lock
 	faceplayer
@@ -37,6 +38,7 @@ EventScript_JP_081E1596: @ 0x081E1596
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081E15A0
 EventScript_JP_081E15A0: @ 0x081E15A0
 	lock
 	faceplayer
@@ -51,42 +53,52 @@ EventScript_JP_081E15B5: @ 0x081E15B5
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081E15BF
 EventScript_JP_081E15BF: @ 0x081E15BF
 	loadword 0x00, gText_Rom_1E1865
 	callstd 0x02
 	end
+.globl EventScript_JP_081E15C8
 EventScript_JP_081E15C8: @ 0x081E15C8
 	loadword 0x00, gText_Rom_1E1A2A
 	callstd 0x02
 	end
+.globl EventScript_JP_081E15D1
 EventScript_JP_081E15D1: @ 0x081E15D1
 	loadword 0x00, gText_Rom_1E19FB
 	callstd 0x02
 	end
+.globl EventScript_JP_081E15DA
 EventScript_JP_081E15DA: @ 0x081E15DA
 	loadword 0x00, gText_Rom_1E1AEE
 	callstd 0x02
 	end
+.globl EventScript_JP_081E15E3
 EventScript_JP_081E15E3: @ 0x081E15E3
 	loadword 0x00, gText_Rom_1E1B7D
 	callstd 0x03
 	end
+.globl EventScript_JP_081E15EC
 EventScript_JP_081E15EC: @ 0x081E15EC
 	loadword 0x00, gText_Rom_1E1B87
 	callstd 0x03
 	end
+.globl EventScript_JP_081E15F5
 EventScript_JP_081E15F5: @ 0x081E15F5
 	loadword 0x00, gText_Rom_1E1BB2
 	callstd 0x03
 	end
+.globl EventScript_JP_081E15FE
 EventScript_JP_081E15FE: @ 0x081E15FE
 	loadword 0x00, gText_Rom_1E1BD5
 	callstd 0x03
 	end
+.globl EventScript_JP_081E1607
 EventScript_JP_081E1607: @ 0x081E1607
 	setflag 0x087C
 	setvar 0x4001, 0x0001
 	end
+.globl EventScript_JP_081E1610
 EventScript_JP_081E1610: @ 0x081E1610
 	lockall
 	@ event command: applymovement
@@ -271,6 +283,7 @@ Movement_JP_081E16CF: @ 0x081E16CF
 	walk_right
 	walk_right
 	step_end
+.globl EventScript_JP_081E16DF
 EventScript_JP_081E16DF: @ 0x081E16DF
 	lock
 	faceplayer
@@ -285,6 +298,7 @@ EventScript_JP_081E16DF: @ 0x081E16DF
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_081E16F5
 EventScript_JP_081E16F5: @ 0x081E16F5
 	lock
 	faceplayer
@@ -314,10 +328,12 @@ EventScript_JP_081E1741: @ 0x081E1741
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081E174B
 EventScript_JP_081E174B: @ 0x081E174B
 	loadword 0x00, gText_Rom_1E1C8D
 	callstd 0x02
 	end
+.globl EventScript_JP_081E1754
 EventScript_JP_081E1754: @ 0x081E1754
 	lock
 	faceplayer

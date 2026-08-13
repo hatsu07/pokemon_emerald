@@ -330,6 +330,7 @@ Movement_JP_081F1517: @ 0x081F1517
 	walk_up
 	walk_up
 	step_end
+.globl EventScript_JP_081F151F
 EventScript_JP_081F151F: @ 0x081F151F
 	lock
 	faceplayer
@@ -352,6 +353,7 @@ EventScript_JP_081F154C: @ 0x081F154C
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F1556
 EventScript_JP_081F1556: @ 0x081F1556
 	release
 	compare_var_to_value 0x40D3, 0x0006
@@ -370,6 +372,7 @@ EventScript_JP_081F1556: @ 0x081F1556
 	goto_if 0x01, EventScript_JP_081F15FC
 	goto EventScript_JP_081F1607
 	.byte 0x02
+.globl EventScript_JP_081F158A
 EventScript_JP_081F158A: @ 0x081F158A
 	release
 	compare_var_to_value 0x40D3, 0x0006
@@ -388,6 +391,7 @@ EventScript_JP_081F158A: @ 0x081F158A
 	goto_if 0x01, EventScript_JP_081F15FC
 	goto EventScript_JP_081F16A8
 	.byte 0x02
+.globl EventScript_JP_081F15BE
 EventScript_JP_081F15BE: @ 0x081F15BE
 	release
 	compare_var_to_value 0x40D3, 0x0006
@@ -564,6 +568,7 @@ EventScript_JP_081F17EA: @ 0x081F17EA
 	waitmessage
 	waitfanfare
 	return
+.globl EventScript_JP_081F17F5
 EventScript_JP_081F17F5: @ 0x081F17F5
 	lock
 	faceplayer
@@ -701,10 +706,12 @@ Movement_JP_081F197B: @ 0x081F197B
 	walk_down
 	walk_in_place_fastest_left
 	step_end
+.globl EventScript_JP_081F197E
 EventScript_JP_081F197E: @ 0x081F197E
 	loadword 0x00, gText_BirchLab_LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine
 	callstd 0x03
 	end
+.globl EventScript_JP_081F1987
 EventScript_JP_081F1987: @ 0x081F1987
 	lock
 	faceplayer
@@ -777,14 +784,17 @@ EventScript_JP_081F1A4D: @ 0x081F1A4D
 	loadword 0x00, gText_BirchLab_LittlerootTown_ProfessorBirchsLab_Text_BrendanTakeBreakFromFieldwork
 	callstd 0x04
 	return
+.globl EventScript_JP_081F1A56
 EventScript_JP_081F1A56: @ 0x081F1A56
 	loadword 0x00, gText_BirchLab_LittlerootTown_ProfessorBirchsLab_Text_PCUsedForResearch
 	callstd 0x03
 	end
+.globl EventScript_JP_081F1A5F
 EventScript_JP_081F1A5F: @ 0x081F1A5F
 	loadword 0x00, gText_BirchLab_LittlerootTown_ProfessorBirchsLab_Text_CrammedWithBooksOnPokemon
 	callstd 0x03
 	end
+.globl EventScript_JP_081F1A68
 EventScript_JP_081F1A68: @ 0x081F1A68
 	loadword 0x00, gText_BirchLab_LittlerootTown_ProfessorBirchsLab_Text_BookTooHardToRead
 	callstd 0x03
@@ -794,6 +804,7 @@ EventScript_JP_081F1A68: @ 0x081F1A68
 	@ ANALYSIS: SOURCE_RANGE offset=0x1F28D3, size=0xFB3D
 	@ semantic recovery: script_data; byte-verified against linked ROM
 	.byte 0x00
+.globl EventScript_JP_081F28D4
 EventScript_JP_081F28D4: @ 0x081F28D4
 	loadword 0x00, EventText_JP_081F28DD
 	callstd 0x02
@@ -801,10 +812,12 @@ EventScript_JP_081F28D4: @ 0x081F28D4
 EventText_JP_081F28DD: @ 0x081F28DD
 	.string "ポケモンしょうぶの　とき\nポケモンの　リストの　ひだりに　いる\lポケモンが　とびだして　たたかうの\pだから　つれあるく　ポケモンが　ふえてきたら\nポケモンの　じゅんばんを　かえると\lしょうぶが　ゆうりに　なるかも!$"
 	.byte 0x00
+.globl EventScript_JP_081F294A
 EventScript_JP_081F294A: @ 0x081F294A
 	loadword 0x00, EventText_JP_081F295C
 	callstd 0x02
 	end
+.globl EventScript_JP_081F2953
 EventScript_JP_081F2953: @ 0x081F2953
 	loadword 0x00, EventText_JP_081F297B
 	callstd 0x02
@@ -824,6 +837,7 @@ EventScript_JP_081F29AD: @ 0x081F29AD
 	setrespawn 0x000E
 	call 0x08242978
 	end
+.globl EventScript_JP_081F29B6
 EventScript_JP_081F29B6: @ 0x081F29B6
 	setvar 0x800B, 0x0001
 	call 0x082429B8
@@ -831,14 +845,17 @@ EventScript_JP_081F29B6: @ 0x081F29B6
 	waitbuttonpress
 	release
 	end
+.globl EventScript_JP_081F29C4
 EventScript_JP_081F29C4: @ 0x081F29C4
 	loadword 0x00, EventText_JP_081F29F5
 	callstd 0x02
 	end
+.globl EventScript_JP_081F29CD
 EventScript_JP_081F29CD: @ 0x081F29CD
 	loadword 0x00, EventText_JP_081F2A31
 	callstd 0x02
 	end
+.globl EventScript_JP_081F29D6
 EventScript_JP_081F29D6: @ 0x081F29D6
 	lock
 	faceplayer
@@ -864,6 +881,7 @@ EventText_JP_081F2AA9: @ 0x081F2AA9
 	.byte 0x02, 0x39, 0x69, 0x24, 0x08, 0x04, 0x6A, 0x68, 0x24, 0x08, 0x01, 0xBC, 0x68, 0x24, 0x08, 0x03
 	.byte 0xCD, 0x67, 0x24, 0x08, 0x00, 0x04, 0xB2, 0x6B, 0x24, 0x08, 0x02, 0x04, 0xAD, 0x6D, 0x24, 0x08
 	.byte 0x02, 0x04, 0xD6, 0x6E, 0x24, 0x08, 0x02, 0x00
+.globl EventScript_JP_081F2B0C
 EventScript_JP_081F2B0C: @ 0x081F2B0C
 	lock
 	faceplayer
@@ -884,6 +902,7 @@ EventScript_JP_081F2B38: @ 0x081F2B38
 	release
 	end
 	.byte 0x00, 0x04, 0x00, 0x0D, 0x00, 0x0E, 0x00, 0x12, 0x00, 0x11, 0x00, 0x00, 0x00, 0x6C, 0x02
+.globl EventScript_JP_081F2B56
 EventScript_JP_081F2B56: @ 0x081F2B56
 	lock
 	faceplayer
@@ -898,6 +917,7 @@ EventScript_JP_081F2B6B: @ 0x081F2B6B
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F2B75
 EventScript_JP_081F2B75: @ 0x081F2B75
 	loadword 0x00, EventText_JP_081F2BC5
 	callstd 0x02
@@ -909,14 +929,17 @@ EventText_JP_081F2B9E: @ 0x081F2B9E
 EventText_JP_081F2BC5: @ 0x081F2BC5
 	.string "ポケモンは　たいりょくが　なくなると\nたたかう　げんきも　なくなる\pそんな　ときは　キズぐすりを　つかって\nたいりょくを　かいふく　してあげるんだ!$"
 	.byte 0x00
+.globl EventScript_JP_081F2C11
 EventScript_JP_081F2C11: @ 0x081F2C11
 	loadword 0x00, EventText_JP_081F2C36
 	callstd 0x02
 	end
+.globl EventScript_JP_081F2C1A
 EventScript_JP_081F2C1A: @ 0x081F2C1A
 	loadword 0x00, EventText_JP_081F2C67
 	callstd 0x02
 	end
+.globl EventScript_JP_081F2C23
 EventScript_JP_081F2C23: @ 0x081F2C23
 	lock
 	faceplayer
@@ -944,6 +967,7 @@ EventScript_JP_081F2CDA: @ 0x081F2CDA
 	setrespawn 0x000F
 	call 0x08242978
 	end
+.globl EventScript_JP_081F2CE3
 EventScript_JP_081F2CE3: @ 0x081F2CE3
 	setvar 0x800B, 0x0001
 	call 0x082429B8
@@ -951,10 +975,12 @@ EventScript_JP_081F2CE3: @ 0x081F2CE3
 	waitbuttonpress
 	release
 	end
+.globl EventScript_JP_081F2CF1
 EventScript_JP_081F2CF1: @ 0x081F2CF1
 	loadword 0x00, EventText_JP_081F2D03
 	callstd 0x02
 	end
+.globl EventScript_JP_081F2CFA
 EventScript_JP_081F2CFA: @ 0x081F2CFA
 	loadword 0x00, EventText_JP_081F2D2B
 	callstd 0x02
@@ -1098,6 +1124,7 @@ EventScript_JP_081F2EFE: @ 0x081F2EFE
 	addvar 0x8000, 0x0001
 EventScript_JP_081F2F0C: @ 0x081F2F0C
 	return
+.globl EventScript_JP_081F2F0D
 EventScript_JP_081F2F0D: @ 0x081F2F0D
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -1177,6 +1204,7 @@ EventScript_JP_081F2FE7: @ 0x081F2FE7
 	loadword 0x00, EventText_JP_081F36B9
 	callstd 0x06
 	end
+.globl EventScript_JP_081F3002
 EventScript_JP_081F3002: @ 0x081F3002
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -1193,6 +1221,7 @@ EventScript_JP_081F301D: @ 0x081F301D
 	call EventScript_JP_081F2E0D
 	release
 	end
+.globl EventScript_JP_081F3024
 EventScript_JP_081F3024: @ 0x081F3024
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -1209,6 +1238,7 @@ EventScript_JP_081F303F: @ 0x081F303F
 	call EventScript_JP_081F2E0D
 	release
 	end
+.globl EventScript_JP_081F3046
 EventScript_JP_081F3046: @ 0x081F3046
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -1225,6 +1255,7 @@ EventScript_JP_081F3061: @ 0x081F3061
 	call EventScript_JP_081F2E0D
 	release
 	end
+.globl EventScript_JP_081F3068
 EventScript_JP_081F3068: @ 0x081F3068
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -1241,6 +1272,7 @@ EventScript_JP_081F3083: @ 0x081F3083
 	call EventScript_JP_081F2E0D
 	release
 	end
+.globl EventScript_JP_081F308A
 EventScript_JP_081F308A: @ 0x081F308A
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -1257,6 +1289,7 @@ EventScript_JP_081F30A5: @ 0x081F30A5
 	call EventScript_JP_081F2E0D
 	release
 	end
+.globl EventScript_JP_081F30AC
 EventScript_JP_081F30AC: @ 0x081F30AC
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -1273,6 +1306,7 @@ EventScript_JP_081F30C7: @ 0x081F30C7
 	call EventScript_JP_081F2E0D
 	release
 	end
+.globl EventScript_JP_081F30CE
 EventScript_JP_081F30CE: @ 0x081F30CE
 	lock
 	faceplayer
@@ -1287,12 +1321,14 @@ EventScript_JP_081F30E3: @ 0x081F30E3
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F30ED
 EventScript_JP_081F30ED: @ 0x081F30ED
 	lockall
 	checkflag 0x0868
 	goto_if 0x01, EventScript_JP_081F310D
 	goto EventScript_JP_081F3117
 	.byte 0x02
+.globl EventScript_JP_081F30FD
 EventScript_JP_081F30FD: @ 0x081F30FD
 	lockall
 	checkflag 0x0868
@@ -1376,6 +1412,7 @@ EventText_JP_081F36B9: @ 0x081F36B9
 EventText_JP_081F36F5: @ 0x081F36F5
 	.string "トウキ“なみというのは　いちど　ひいても\nいつか　かならず　はまべに　もどってくる\pキミほどの　ビッグウェーブだ\nきっと　また　くると　おもっていたよ!\p……あれ?　たたかえる　ポケモンを\n1ひきしか　もっていないんだね\pすまないけど　2ひき　いじょうの\nポケモンを　もって　また　きてくれよ$"
 	.byte 0x00
+.globl EventScript_JP_081F3789
 EventScript_JP_081F3789: @ 0x081F3789
 	lock
 	faceplayer
@@ -1394,6 +1431,7 @@ EventScript_JP_081F37A8: @ 0x081F37A8
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F37B2
 EventScript_JP_081F37B2: @ 0x081F37B2
 	lock
 	faceplayer
@@ -1402,6 +1440,7 @@ EventScript_JP_081F37B2: @ 0x081F37B2
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F37C3
 EventScript_JP_081F37C3: @ 0x081F37C3
 	lock
 	faceplayer
@@ -1426,6 +1465,7 @@ EventScript_JP_081F37F6: @ 0x081F37F6
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F3800
 EventScript_JP_081F3800: @ 0x081F3800
 	lock
 	faceplayer
@@ -1442,6 +1482,7 @@ EventScript_JP_081F3800: @ 0x081F3800
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_081F381C
 EventScript_JP_081F381C: @ 0x081F381C
 	lock
 	faceplayer
@@ -1458,6 +1499,7 @@ EventScript_JP_081F381C: @ 0x081F381C
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_081F3838
 EventScript_JP_081F3838: @ 0x081F3838
 	lock
 	faceplayer
@@ -1466,6 +1508,7 @@ EventScript_JP_081F3838: @ 0x081F3838
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F3849
 EventScript_JP_081F3849: @ 0x081F3849
 	lockall
 	call 0x08242F17
@@ -1473,6 +1516,7 @@ EventScript_JP_081F3849: @ 0x081F3849
 	callstd 0x04
 	releaseall
 	end
+.globl EventScript_JP_081F3859
 EventScript_JP_081F3859: @ 0x081F3859
 	lockall
 	call 0x08242F17
@@ -1517,11 +1561,13 @@ EventScript_JP_081F38DE: @ 0x081F38DE
 	callstd 0x04
 	releaseall
 	end
+.globl EventScript_JP_081F38E8
 EventScript_JP_081F38E8: @ 0x081F38E8
 	lockall
 	setvar 0x8008, 0x0000
 	goto EventScript_JP_081F3900
 	.byte 0x02
+.globl EventScript_JP_081F38F4
 EventScript_JP_081F38F4: @ 0x081F38F4
 	lockall
 	setvar 0x8008, 0x0001
@@ -1679,6 +1725,7 @@ Movement_JP_081F3A91: @ 0x081F3A91
 	@ object movement sequence
 	walk_in_place_right
 	step_end
+.globl EventScript_JP_081F3A93
 EventScript_JP_081F3A93: @ 0x081F3A93
 	lock
 	faceplayer
@@ -1753,6 +1800,7 @@ EventText_JP_081F3F87: @ 0x081F3F87
 EventText_JP_081F3FDC: @ 0x081F3FDC
 	.string "‘ヘドロばくだん’も　いいけど\n‘{STR_VAR_1}’って\lわざを　つかえる\lポケモンも　いいよね!$"
 	.byte 0x00
+.globl EventScript_JP_081F4009
 EventScript_JP_081F4009: @ 0x081F4009
 	lock
 	faceplayer
@@ -1778,6 +1826,7 @@ EventScript_JP_081F4042: @ 0x081F4042
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F404C
 EventScript_JP_081F404C: @ 0x081F404C
 	loadword 0x00, EventText_JP_081F4128
 	callstd 0x02
@@ -1791,6 +1840,7 @@ EventText_JP_081F40E1: @ 0x081F40E1
 EventText_JP_081F4128: @ 0x081F4128
 	.string "へえ!　きみ　うみを　こえて\nわざわざ　ムロまで　きたの!\pもしかして　トウキさんの　うわさを　きいて\nあいに　きたんじゃない?\pトウキさん　かっこよくて\nみんなが　あこがれるもんな!$"
 	.byte 0x00
+.globl EventScript_JP_081F4186
 EventScript_JP_081F4186: @ 0x081F4186
 	lock
 	faceplayer
@@ -1802,10 +1852,12 @@ EventScript_JP_081F4186: @ 0x081F4186
 	release
 	end
 	.byte 0x00, 0x00, 0x00, 0x1E, 0x00, 0x1F, 0x00, 0x20, 0x00, 0x21, 0x00, 0x00, 0x00, 0x6C, 0x02
+.globl EventScript_JP_081F41AC
 EventScript_JP_081F41AC: @ 0x081F41AC
 	loadword 0x00, EventText_JP_081F428D
 	callstd 0x02
 	end
+.globl EventScript_JP_081F41B5
 EventScript_JP_081F41B5: @ 0x081F41B5
 	lock
 	faceplayer
@@ -1884,6 +1936,7 @@ EventScript_JP_081F4351: @ 0x081F4351
 	setobjectmovementtype 0x0005, 0x3F
 EventScript_JP_081F435E: @ 0x081F435E
 	return
+.globl EventScript_JP_081F435F
 EventScript_JP_081F435F: @ 0x081F435F
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -1963,6 +2016,7 @@ EventScript_JP_081F4437: @ 0x081F4437
 	loadword 0x00, EventText_JP_081F4CAF
 	callstd 0x06
 	end
+.globl EventScript_JP_081F4452
 EventScript_JP_081F4452: @ 0x081F4452
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -1984,6 +2038,7 @@ EventScript_JP_081F446D: @ 0x081F446D
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x08244D20
 	end
+.globl EventScript_JP_081F4482
 EventScript_JP_081F4482: @ 0x081F4482
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -1996,6 +2051,7 @@ EventScript_JP_081F4482: @ 0x081F4482
 	loadword 0x00, EventText_JP_081F46BA
 	callstd 0x06
 	end
+.globl EventScript_JP_081F449D
 EventScript_JP_081F449D: @ 0x081F449D
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -2008,6 +2064,7 @@ EventScript_JP_081F449D: @ 0x081F449D
 	loadword 0x00, EventText_JP_081F4745
 	callstd 0x06
 	end
+.globl EventScript_JP_081F44B8
 EventScript_JP_081F44B8: @ 0x081F44B8
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -2020,6 +2077,7 @@ EventScript_JP_081F44B8: @ 0x081F44B8
 	loadword 0x00, EventText_JP_081F4819
 	callstd 0x06
 	end
+.globl EventScript_JP_081F44D3
 EventScript_JP_081F44D3: @ 0x081F44D3
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -2032,6 +2090,7 @@ EventScript_JP_081F44D3: @ 0x081F44D3
 	loadword 0x00, EventText_JP_081F47AF
 	callstd 0x06
 	end
+.globl EventScript_JP_081F44EE
 EventScript_JP_081F44EE: @ 0x081F44EE
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -2044,6 +2103,7 @@ EventScript_JP_081F44EE: @ 0x081F44EE
 	loadword 0x00, EventText_JP_081F4877
 	callstd 0x06
 	end
+.globl EventScript_JP_081F4509
 EventScript_JP_081F4509: @ 0x081F4509
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -2056,6 +2116,7 @@ EventScript_JP_081F4509: @ 0x081F4509
 	loadword 0x00, EventText_JP_081F48CF
 	callstd 0x06
 	end
+.globl EventScript_JP_081F4524
 EventScript_JP_081F4524: @ 0x081F4524
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -2068,6 +2129,7 @@ EventScript_JP_081F4524: @ 0x081F4524
 	loadword 0x00, EventText_JP_081F4939
 	callstd 0x06
 	end
+.globl EventScript_JP_081F453F
 EventScript_JP_081F453F: @ 0x081F453F
 	lock
 	faceplayer
@@ -2082,12 +2144,14 @@ EventScript_JP_081F4554: @ 0x081F4554
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F455E
 EventScript_JP_081F455E: @ 0x081F455E
 	lockall
 	checkflag 0x086A
 	goto_if 0x01, EventScript_JP_081F457E
 	goto EventScript_JP_081F4588
 	.byte 0x02
+.globl EventScript_JP_081F456E
 EventScript_JP_081F456E: @ 0x081F456E
 	lockall
 	checkflag 0x086A
@@ -2232,10 +2296,12 @@ EventScript_JP_081F4E3F: @ 0x081F4E3F
 EventScript_JP_081F4E4C: @ 0x081F4E4C
 	return
 	.byte 0x00
+.globl EventScript_JP_081F4E4E
 EventScript_JP_081F4E4E: @ 0x081F4E4E
 	loadword 0x00, EventText_JP_081F4E6A
 	callstd 0x02
 	end
+.globl EventScript_JP_081F4E57
 EventScript_JP_081F4E57: @ 0x081F4E57
 	lock
 	faceplayer
@@ -2251,6 +2317,7 @@ EventText_JP_081F4E6A: @ 0x081F4E6A
 EventText_JP_081F4EC0: @ 0x081F4EC0
 	.string "ジグザグマ“ぷしゅー!$"
 	.byte 0x00
+.globl EventScript_JP_081F4ECD
 EventScript_JP_081F4ECD: @ 0x081F4ECD
 	lock
 	faceplayer
@@ -2263,10 +2330,12 @@ EventScript_JP_081F4ECD: @ 0x081F4ECD
 	end
 	.byte 0x03, 0x00, 0x16, 0x00, 0x0E, 0x00, 0x12, 0x00, 0x11, 0x00, 0x0F, 0x00, 0x18, 0x00, 0x53, 0x00
 	.byte 0x4D, 0x00, 0x00, 0x00, 0x6C, 0x02
+.globl EventScript_JP_081F4EFA
 EventScript_JP_081F4EFA: @ 0x081F4EFA
 	loadword 0x00, EventText_JP_081F4F0C
 	callstd 0x02
 	end
+.globl EventScript_JP_081F4F03
 EventScript_JP_081F4F03: @ 0x081F4F03
 	loadword 0x00, EventText_JP_081F4F50
 	callstd 0x02
@@ -2286,6 +2355,7 @@ EventScript_JP_081F4F90: @ 0x081F4F90
 	setrespawn 0x0010
 	call 0x08242978
 	end
+.globl EventScript_JP_081F4F99
 EventScript_JP_081F4F99: @ 0x081F4F99
 	setvar 0x800B, 0x0001
 	call 0x082429B8
@@ -2293,14 +2363,17 @@ EventScript_JP_081F4F99: @ 0x081F4F99
 	waitbuttonpress
 	release
 	end
+.globl EventScript_JP_081F4FA7
 EventScript_JP_081F4FA7: @ 0x081F4FA7
 	loadword 0x00, EventText_JP_081F4FF9
 	callstd 0x02
 	end
+.globl EventScript_JP_081F4FB0
 EventScript_JP_081F4FB0: @ 0x081F4FB0
 	loadword 0x00, EventText_JP_081F4FC2
 	callstd 0x02
 	end
+.globl EventScript_JP_081F4FB9
 EventScript_JP_081F4FB9: @ 0x081F4FB9
 	loadword 0x00, EventText_JP_081F502B
 	callstd 0x02
@@ -2314,6 +2387,7 @@ EventText_JP_081F502B: @ 0x081F502B
 	.byte 0x02, 0x39, 0x69, 0x24, 0x08, 0x04, 0x6A, 0x68, 0x24, 0x08, 0x01, 0xBC, 0x68, 0x24, 0x08, 0x03
 	.byte 0xCD, 0x67, 0x24, 0x08, 0x00, 0x04, 0xB2, 0x6B, 0x24, 0x08, 0x02, 0x04, 0xAD, 0x6D, 0x24, 0x08
 	.byte 0x02, 0x04, 0xD6, 0x6E, 0x24, 0x08, 0x02, 0x00
+.globl EventScript_JP_081F5099
 EventScript_JP_081F5099: @ 0x081F5099
 	lock
 	faceplayer
@@ -2326,14 +2400,17 @@ EventScript_JP_081F5099: @ 0x081F5099
 	end
 	.byte 0x03, 0x00, 0x16, 0x00, 0x0E, 0x00, 0x12, 0x00, 0x55, 0x00, 0x53, 0x00, 0x4F, 0x00, 0x4D, 0x00
 	.byte 0x4B, 0x00, 0x4C, 0x00, 0x4A, 0x00, 0x49, 0x00, 0x00, 0x00, 0x6C, 0x02
+.globl EventScript_JP_081F50CC
 EventScript_JP_081F50CC: @ 0x081F50CC
 	loadword 0x00, EventText_JP_081F50F1
 	callstd 0x02
 	end
+.globl EventScript_JP_081F50D5
 EventScript_JP_081F50D5: @ 0x081F50D5
 	loadword 0x00, EventText_JP_081F5152
 	callstd 0x02
 	end
+.globl EventScript_JP_081F50DE
 EventScript_JP_081F50DE: @ 0x081F50DE
 	lock
 	faceplayer
@@ -2510,6 +2587,7 @@ EventScript_JP_081F52EC: @ 0x081F52EC
 	.2byte 0x00E7
 	setvar 0x4000, 0x00FF
 	goto EventScript_JP_081F545B
+.globl EventScript_JP_081F5320
 EventScript_JP_081F5320: @ 0x081F5320
 	lock
 	faceplayer
@@ -2713,18 +2791,22 @@ Movement_JP_081F5528: @ 0x081F5528
 	walk_up
 	set_invisible
 	step_end
+.globl EventScript_JP_081F552C
 EventScript_JP_081F552C: @ 0x081F552C
 	loadword 0x00, EventText_JP_081F56C2
 	callstd 0x02
 	end
+.globl EventScript_JP_081F5535
 EventScript_JP_081F5535: @ 0x081F5535
 	loadword 0x00, EventText_JP_081F5623
 	callstd 0x02
 	end
+.globl EventScript_JP_081F553E
 EventScript_JP_081F553E: @ 0x081F553E
 	loadword 0x00, EventText_JP_081F5657
 	callstd 0x02
 	end
+.globl EventScript_JP_081F5547
 EventScript_JP_081F5547: @ 0x081F5547
 	lock
 	faceplayer
@@ -2741,6 +2823,7 @@ EventScript_JP_081F5564: @ 0x081F5564
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F556E
 EventScript_JP_081F556E: @ 0x081F556E
 	lockall
 	loadword 0x00, gText_Rom_22FD87
@@ -3268,6 +3351,7 @@ EventScript_JP_081F5C59: @ 0x081F5C59
 	setrespawn 0x0011
 	call 0x08242978
 	end
+.globl EventScript_JP_081F5C62
 EventScript_JP_081F5C62: @ 0x081F5C62
 	setvar 0x800B, 0x0001
 	call 0x082429B8
@@ -3275,14 +3359,17 @@ EventScript_JP_081F5C62: @ 0x081F5C62
 	waitbuttonpress
 	release
 	end
+.globl EventScript_JP_081F5C70
 EventScript_JP_081F5C70: @ 0x081F5C70
 	loadword 0x00, EventText_JP_081F5DD8
 	callstd 0x02
 	end
+.globl EventScript_JP_081F5C79
 EventScript_JP_081F5C79: @ 0x081F5C79
 	loadword 0x00, EventText_JP_081F5E18
 	callstd 0x02
 	end
+.globl EventScript_JP_081F5C82
 EventScript_JP_081F5C82: @ 0x081F5C82
 	lock
 	faceplayer
@@ -3360,6 +3447,7 @@ EventText_JP_081F5E18: @ 0x081F5E18
 	.byte 0x02, 0x39, 0x69, 0x24, 0x08, 0x04, 0x6A, 0x68, 0x24, 0x08, 0x01, 0xBC, 0x68, 0x24, 0x08, 0x03
 	.byte 0xCD, 0x67, 0x24, 0x08, 0x00, 0x04, 0xB2, 0x6B, 0x24, 0x08, 0x02, 0x04, 0xAD, 0x6D, 0x24, 0x08
 	.byte 0x02, 0x04, 0xD6, 0x6E, 0x24, 0x08, 0x02, 0x00
+.globl EventScript_JP_081F5E79
 EventScript_JP_081F5E79: @ 0x081F5E79
 	lock
 	faceplayer
@@ -3414,6 +3502,7 @@ EventScript_JP_081F5F18: @ 0x081F5F18
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F5F22
 EventScript_JP_081F5F22: @ 0x081F5F22
 	lock
 	faceplayer
@@ -3454,6 +3543,7 @@ EventText_JP_081F611C: @ 0x081F611C
 EventText_JP_081F6138: @ 0x081F6138
 	.string "ソライシはかせ　ったら\nあんなに　よろこんで　かわいい!$"
 	.byte 0x00
+.globl EventScript_JP_081F6156
 EventScript_JP_081F6156: @ 0x081F6156
 	lockall
 	@ event command: applymovement
@@ -3706,6 +3796,7 @@ EventScript_JP_081F64CC: @ 0x081F64CC
 	.2byte 0x00E7
 	setvar 0x4000, 0x00FF
 	goto EventScript_JP_081F6643
+.globl EventScript_JP_081F6508
 EventScript_JP_081F6508: @ 0x081F6508
 	lock
 	faceplayer
@@ -3903,6 +3994,7 @@ Movement_JP_081F670C: @ 0x081F670C
 	walk_up
 	set_invisible
 	step_end
+.globl EventScript_JP_081F6710
 EventScript_JP_081F6710: @ 0x081F6710
 	lock
 	faceplayer
@@ -3925,16 +4017,19 @@ EventScript_JP_081F6747: @ 0x081F6747
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F6751
 EventScript_JP_081F6751: @ 0x081F6751
 	loadword 0x00, EventText_JP_081F6A08
 	callstd 0x02
 	end
+.globl EventScript_JP_081F675A
 EventScript_JP_081F675A: @ 0x081F675A
 	lock
 	loadword 0x00, EventText_JP_081F6869
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F6765
 EventScript_JP_081F6765: @ 0x081F6765
 	lock
 	faceplayer
@@ -3951,12 +4046,14 @@ EventScript_JP_081F6782: @ 0x081F6782
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F678C
 EventScript_JP_081F678C: @ 0x081F678C
 	lock
 	loadword 0x00, EventText_JP_081F6909
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F6797
 EventScript_JP_081F6797: @ 0x081F6797
 	lockall
 	loadword 0x00, gText_Rom_275C42
@@ -4398,6 +4495,7 @@ Movement_JP_081F6F22: @ 0x081F6F22
 	walk_up
 	step_end
 	.byte 0x00
+.globl EventScript_JP_081F6F28
 EventScript_JP_081F6F28: @ 0x081F6F28
 	lock
 	faceplayer
@@ -4410,14 +4508,17 @@ EventScript_JP_081F6F28: @ 0x081F6F28
 	end
 	.byte 0x00, 0x03, 0x00, 0x08, 0x00, 0x16, 0x00, 0x0E, 0x00, 0x12, 0x00, 0x11, 0x00, 0x0F, 0x00, 0x10
 	.byte 0x00, 0x56, 0x00, 0x4F, 0x00, 0x51, 0x00, 0x00, 0x00, 0x6C, 0x02
+.globl EventScript_JP_081F6F5A
 EventScript_JP_081F6F5A: @ 0x081F6F5A
 	loadword 0x00, EventText_JP_081F6F75
 	callstd 0x02
 	end
+.globl EventScript_JP_081F6F63
 EventScript_JP_081F6F63: @ 0x081F6F63
 	loadword 0x00, EventText_JP_081F6FB5
 	callstd 0x02
 	end
+.globl EventScript_JP_081F6F6C
 EventScript_JP_081F6F6C: @ 0x081F6F6C
 	loadword 0x00, EventText_JP_081F6FF7
 	callstd 0x02
@@ -4439,6 +4540,7 @@ EventScript_JP_081F702C: @ 0x081F702C
 	setrespawn 0x0012
 	call 0x08242978
 	end
+.globl EventScript_JP_081F7035
 EventScript_JP_081F7035: @ 0x081F7035
 	setvar 0x800B, 0x0001
 	call 0x082429B8
@@ -4446,10 +4548,12 @@ EventScript_JP_081F7035: @ 0x081F7035
 	waitbuttonpress
 	release
 	end
+.globl EventScript_JP_081F7043
 EventScript_JP_081F7043: @ 0x081F7043
 	loadword 0x00, EventText_JP_081F7055
 	callstd 0x02
 	end
+.globl EventScript_JP_081F704C
 EventScript_JP_081F704C: @ 0x081F704C
 	loadword 0x00, EventText_JP_081F70A5
 	callstd 0x02
@@ -4461,6 +4565,7 @@ EventText_JP_081F70A5: @ 0x081F70A5
 	.byte 0x02, 0x39, 0x69, 0x24, 0x08, 0x04, 0x6A, 0x68, 0x24, 0x08, 0x01, 0xBC, 0x68, 0x24, 0x08, 0x03
 	.byte 0xCD, 0x67, 0x24, 0x08, 0x00, 0x04, 0xB2, 0x6B, 0x24, 0x08, 0x02, 0x04, 0xAD, 0x6D, 0x24, 0x08
 	.byte 0x02, 0x04, 0xD6, 0x6E, 0x24, 0x08, 0x02, 0x00
+.globl EventScript_JP_081F7106
 EventScript_JP_081F7106: @ 0x081F7106
 	lock
 	faceplayer
@@ -4476,6 +4581,7 @@ EventScript_JP_081F711E: @ 0x081F711E
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F7128
 EventScript_JP_081F7128: @ 0x081F7128
 	lock
 	faceplayer
@@ -4497,10 +4603,12 @@ EventScript_JP_081F7150: @ 0x081F7150
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F715A
 EventScript_JP_081F715A: @ 0x081F715A
 	loadword 0x00, EventText_JP_081F742C
 	callstd 0x02
 	end
+.globl EventScript_JP_081F7163
 EventScript_JP_081F7163: @ 0x081F7163
 	lock
 	faceplayer
@@ -4522,6 +4630,7 @@ EventScript_JP_081F718B: @ 0x081F718B
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F7195
 EventScript_JP_081F7195: @ 0x081F7195
 	lock
 	faceplayer
@@ -4575,6 +4684,7 @@ EventText_JP_081F74ED: @ 0x081F74ED
 EventText_JP_081F7524: @ 0x081F7524
 	.string "ミツルくんが　サイユウに　いたって!?\pそりゃ　トウカの　ごりょうしんも\nびっくり　するだろうねぇ$"
 	.byte 0x00
+.globl EventScript_JP_081F7557
 EventScript_JP_081F7557: @ 0x081F7557
 	lock
 	faceplayer
@@ -4633,6 +4743,7 @@ EventScript_JP_081F75F6: @ 0x081F75F6
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F7600
 EventScript_JP_081F7600: @ 0x081F7600
 	lock
 	faceplayer
@@ -4662,10 +4773,12 @@ EventText_JP_081F773C: @ 0x081F773C
 EventText_JP_081F7772: @ 0x081F7772
 	.string "ピカチュウ“ピカピカッ!$"
 	.byte 0x00
+.globl EventScript_JP_081F7780
 EventScript_JP_081F7780: @ 0x081F7780
 	loadword 0x00, EventText_JP_081F7792
 	callstd 0x02
 	end
+.globl EventScript_JP_081F7789
 EventScript_JP_081F7789: @ 0x081F7789
 	loadword 0x00, EventText_JP_081F77D7
 	callstd 0x02
@@ -4684,6 +4797,7 @@ MapScripts_JP_081F782A: @ 0x081F782A
 EventScript_JP_081F7835: @ 0x081F7835
 	setrespawn 0x0013
 	end
+.globl EventScript_JP_081F7839
 EventScript_JP_081F7839: @ 0x081F7839
 	setvar 0x800B, 0x0001
 	call 0x082429B8
@@ -4691,14 +4805,17 @@ EventScript_JP_081F7839: @ 0x081F7839
 	waitbuttonpress
 	release
 	end
+.globl EventScript_JP_081F7847
 EventScript_JP_081F7847: @ 0x081F7847
 	loadword 0x00, EventText_JP_081F7862
 	callstd 0x02
 	end
+.globl EventScript_JP_081F7850
 EventScript_JP_081F7850: @ 0x081F7850
 	loadword 0x00, EventText_JP_081F7887
 	callstd 0x02
 	end
+.globl EventScript_JP_081F7859
 EventScript_JP_081F7859: @ 0x081F7859
 	loadword 0x00, EventText_JP_081F78C3
 	callstd 0x02
@@ -4712,10 +4829,12 @@ EventText_JP_081F78C3: @ 0x081F78C3
 	.byte 0x02, 0x39, 0x69, 0x24, 0x08, 0x04, 0x6A, 0x68, 0x24, 0x08, 0x01, 0xBC, 0x68, 0x24, 0x08, 0x03
 	.byte 0xCD, 0x67, 0x24, 0x08, 0x00, 0x04, 0xB2, 0x6B, 0x24, 0x08, 0x02, 0x04, 0xAD, 0x6D, 0x24, 0x08
 	.byte 0x02, 0x04, 0xD6, 0x6E, 0x24, 0x08, 0x02, 0x00
+.globl EventScript_JP_081F793F
 EventScript_JP_081F793F: @ 0x081F793F
 	loadword 0x00, EventText_JP_081F7951
 	callstd 0x02
 	end
+.globl EventScript_JP_081F7948
 EventScript_JP_081F7948: @ 0x081F7948
 	loadword 0x00, EventText_JP_081F79BE
 	callstd 0x02
@@ -4725,6 +4844,7 @@ EventText_JP_081F7951: @ 0x081F7951
 EventText_JP_081F79BE: @ 0x081F79BE
 	.string "‘むっつの　てんが\n　みっつの　とびらを　あける’\pおじいちゃんが　よく　いっていたけど\nいまだに　なんのことだか　わからないわ$"
 	.byte 0x00
+.globl EventScript_JP_081F7A00
 EventScript_JP_081F7A00: @ 0x081F7A00
 	lock
 	faceplayer
@@ -4809,6 +4929,7 @@ EventScript_JP_081F7AEC: @ 0x081F7AEC
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F7AFF
 EventScript_JP_081F7AFF: @ 0x081F7AFF
 	lock
 	faceplayer
@@ -4821,6 +4942,7 @@ EventScript_JP_081F7AFF: @ 0x081F7AFF
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F7B1A
 EventScript_JP_081F7B1A: @ 0x081F7B1A
 	lock
 	faceplayer
@@ -4856,6 +4978,7 @@ EventText_JP_081F7CFC: @ 0x081F7CFC
 EventText_JP_081F7D07: @ 0x081F7D07
 	.string "あんまり　なついて　いないようだ……$"
 	.byte 0x00
+.globl EventScript_JP_081F7D1B
 EventScript_JP_081F7D1B: @ 0x081F7D1B
 	lock
 	faceplayer
@@ -4912,6 +5035,7 @@ EventScript_JP_081F7DB5: @ 0x081F7DB5
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F7DBF
 EventScript_JP_081F7DBF: @ 0x081F7DBF
 	loadword 0x00, EventText_JP_081F7EFD
 	callstd 0x02
@@ -4929,14 +5053,17 @@ EventText_JP_081F7EBB: @ 0x081F7EBB
 EventText_JP_081F7EFD: @ 0x081F7EFD
 	.string "それって　ポケモンずかん?\pそれって　あなた　たくさんの\nポケモンと　であった　ってこと?\pそれって　すっごい　うらやましい!$"
 	.byte 0x00
+.globl EventScript_JP_081F7F3E
 EventScript_JP_081F7F3E: @ 0x081F7F3E
 	loadword 0x00, EventText_JP_081F7FD3
 	callstd 0x02
 	end
+.globl EventScript_JP_081F7F47
 EventScript_JP_081F7F47: @ 0x081F7F47
 	loadword 0x00, EventText_JP_081F7F85
 	callstd 0x02
 	end
+.globl EventScript_JP_081F7F50
 EventScript_JP_081F7F50: @ 0x081F7F50
 	lock
 	faceplayer
@@ -4968,6 +5095,7 @@ EventText_JP_081F7FF6: @ 0x081F7FF6
 EventText_JP_081F8015: @ 0x081F8015
 	.string "いいえ　って　そんな……\nどこからも　きてない　はずが　ないでしょ\pま　まさか　きみ……\nうみの　そこで　うまれた　とか……?$"
 	.byte 0x00
+.globl EventScript_JP_081F8056
 EventScript_JP_081F8056: @ 0x081F8056
 	lock
 	faceplayer
@@ -4983,6 +5111,7 @@ EventScript_JP_081F8072: @ 0x081F8072
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F807C
 EventScript_JP_081F807C: @ 0x081F807C
 	loadword 0x00, EventText_JP_081F80B5
 	callstd 0x02
@@ -5027,6 +5156,7 @@ EventScript_JP_081F8133: @ 0x081F8133
 	setvar 0x4057, 0x0005
 	releaseall
 	end
+.globl EventScript_JP_081F815A
 EventScript_JP_081F815A: @ 0x081F815A
 	lock
 	faceplayer
@@ -5056,6 +5186,7 @@ EventScript_JP_081F8198: @ 0x081F8198
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F81A2
 EventScript_JP_081F81A2: @ 0x081F81A2
 	lock
 	faceplayer
@@ -5214,6 +5345,7 @@ Movement_JP_081F8683: @ 0x081F8683
 	walk_down
 	delay_16
 	step_end
+.globl EventScript_JP_081F8688
 EventScript_JP_081F8688: @ 0x081F8688
 	lock
 	faceplayer
@@ -6126,6 +6258,7 @@ EventScript_JP_081F8DC4: @ 0x081F8DC4
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F8DCE
 EventScript_JP_081F8DCE: @ 0x081F8DCE
 	lockall
 	compare_var_to_value 0x4085, 0x0006
@@ -6158,6 +6291,7 @@ EventScript_JP_081F8E14: @ 0x081F8E14
 	callstd 0x04
 	releaseall
 	end
+.globl EventScript_JP_081F8E1E
 EventScript_JP_081F8E1E: @ 0x081F8E1E
 	lockall
 	compare_var_to_value 0x4085, 0x0006
@@ -6171,6 +6305,7 @@ EventScript_JP_081F8E1E: @ 0x081F8E1E
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F8E12
 	end
+.globl EventScript_JP_081F8E53
 EventScript_JP_081F8E53: @ 0x081F8E53
 	lockall
 	checktrainerflag 0x0047
@@ -6184,6 +6319,7 @@ EventScript_JP_081F8E53: @ 0x081F8E53
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F8E12
 	end
+.globl EventScript_JP_081F8E86
 EventScript_JP_081F8E86: @ 0x081F8E86
 	lockall
 	checktrainerflag 0x0047
@@ -6197,6 +6333,7 @@ EventScript_JP_081F8E86: @ 0x081F8E86
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F8E12
 	end
+.globl EventScript_JP_081F8EB9
 EventScript_JP_081F8EB9: @ 0x081F8EB9
 	lockall
 	checktrainerflag 0x0059
@@ -6210,6 +6347,7 @@ EventScript_JP_081F8EB9: @ 0x081F8EB9
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F8E12
 	end
+.globl EventScript_JP_081F8EEC
 EventScript_JP_081F8EEC: @ 0x081F8EEC
 	lockall
 	checktrainerflag 0x0059
@@ -6223,6 +6361,7 @@ EventScript_JP_081F8EEC: @ 0x081F8EEC
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F8E12
 	end
+.globl EventScript_JP_081F8F1F
 EventScript_JP_081F8F1F: @ 0x081F8F1F
 	lockall
 	checktrainerflag 0x0048
@@ -6236,6 +6375,7 @@ EventScript_JP_081F8F1F: @ 0x081F8F1F
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F8E12
 	end
+.globl EventScript_JP_081F8F52
 EventScript_JP_081F8F52: @ 0x081F8F52
 	lockall
 	checktrainerflag 0x005A
@@ -6249,6 +6389,7 @@ EventScript_JP_081F8F52: @ 0x081F8F52
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F8E12
 	end
+.globl EventScript_JP_081F8F85
 EventScript_JP_081F8F85: @ 0x081F8F85
 	lockall
 	checktrainerflag 0x005A
@@ -6262,6 +6403,7 @@ EventScript_JP_081F8F85: @ 0x081F8F85
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F8E12
 	end
+.globl EventScript_JP_081F8FB8
 EventScript_JP_081F8FB8: @ 0x081F8FB8
 	lockall
 	checktrainerflag 0x0049
@@ -6275,6 +6417,7 @@ EventScript_JP_081F8FB8: @ 0x081F8FB8
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F8E12
 	end
+.globl EventScript_JP_081F8FEB
 EventScript_JP_081F8FEB: @ 0x081F8FEB
 	lockall
 	checktrainerflag 0x005B
@@ -6288,6 +6431,7 @@ EventScript_JP_081F8FEB: @ 0x081F8FEB
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F8E12
 	end
+.globl EventScript_JP_081F901E
 EventScript_JP_081F901E: @ 0x081F901E
 	lockall
 	checktrainerflag 0x004A
@@ -6301,6 +6445,7 @@ EventScript_JP_081F901E: @ 0x081F901E
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F8E12
 	end
+.globl EventScript_JP_081F9051
 EventScript_JP_081F9051: @ 0x081F9051
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -6327,6 +6472,7 @@ EventScript_JP_081F9084: @ 0x081F9084
 	loadword 0x00, EventText_JP_081F9DE9
 	callstd 0x02
 	end
+.globl EventScript_JP_081F908D
 EventScript_JP_081F908D: @ 0x081F908D
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -6353,6 +6499,7 @@ EventScript_JP_081F90C0: @ 0x081F90C0
 	loadword 0x00, EventText_JP_081F9E8A
 	callstd 0x02
 	end
+.globl EventScript_JP_081F90C9
 EventScript_JP_081F90C9: @ 0x081F90C9
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -6379,6 +6526,7 @@ EventScript_JP_081F90FC: @ 0x081F90FC
 	loadword 0x00, EventText_JP_081F9F8B
 	callstd 0x02
 	end
+.globl EventScript_JP_081F9105
 EventScript_JP_081F9105: @ 0x081F9105
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -6405,6 +6553,7 @@ EventScript_JP_081F9138: @ 0x081F9138
 	loadword 0x00, EventText_JP_081FA072
 	callstd 0x02
 	end
+.globl EventScript_JP_081F9141
 EventScript_JP_081F9141: @ 0x081F9141
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -6431,6 +6580,7 @@ EventScript_JP_081F9174: @ 0x081F9174
 	loadword 0x00, EventText_JP_081FA13B
 	callstd 0x02
 	end
+.globl EventScript_JP_081F917D
 EventScript_JP_081F917D: @ 0x081F917D
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -6457,6 +6607,7 @@ EventScript_JP_081F91B0: @ 0x081F91B0
 	loadword 0x00, EventText_JP_081FA20C
 	callstd 0x02
 	end
+.globl EventScript_JP_081F91B9
 EventScript_JP_081F91B9: @ 0x081F91B9
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -6598,6 +6749,7 @@ EventScript_JP_081F93E2: @ 0x081F93E2
 	.byte 0x25
 	.2byte 0x0092
 	return
+.globl EventScript_JP_081F93E6
 EventScript_JP_081F93E6: @ 0x081F93E6
 	lock
 	faceplayer
@@ -6612,12 +6764,14 @@ EventScript_JP_081F93FB: @ 0x081F93FB
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F9405
 EventScript_JP_081F9405: @ 0x081F9405
 	lockall
 	checkflag 0x086B
 	goto_if 0x01, EventScript_JP_081F9425
 	goto EventScript_JP_081F942F
 	.byte 0x02
+.globl EventScript_JP_081F9415
 EventScript_JP_081F9415: @ 0x081F9415
 	lockall
 	checkflag 0x086B
@@ -6779,10 +6933,12 @@ EventText_JP_081FA550: @ 0x081FA550
 EventText_JP_081FA586: @ 0x081FA586
 	.string "パパ“{PLAYER}……\nやはり　あらわれたな……\pおまえに　しょうぶを　いどまれて\nこの　わたしが　ことわる　はずがない\pわかっているな?\pジムの　なかでは　おたがいに\nおやこで　あることなど　かんけいない……\p……うん?　なんだ　{PLAYER}\nおまえは　たたかえる　ポケモンを\l1ひきしか　もっていないのか\pわるいけれど　2ひき　いじょうの\nポケモンを　もって　また　きておくれ$"
 	.byte 0x00
+.globl EventScript_JP_081FA63E
 EventScript_JP_081FA63E: @ 0x081FA63E
 	loadword 0x00, EventText_JP_081FA650
 	callstd 0x02
 	end
+.globl EventScript_JP_081FA647
 EventScript_JP_081FA647: @ 0x081FA647
 	loadword 0x00, EventText_JP_081FA67F
 	callstd 0x02
@@ -6792,10 +6948,12 @@ EventText_JP_081FA650: @ 0x081FA650
 EventText_JP_081FA67F: @ 0x081FA67F
 	.string "あぁ……\pわたしも　ポケモンと　いっしょに\nぼうけんの　たびに　でかけて　みたい……\pしめった　くさむらに　もぐったり\nごつごつの　いわやまを　のぼったり\lうみの　あらなみを　わたったり\lまっくらな　どうくつを　さまよったり……\pそれでいて　ときには　じぶんの　おうちが\nこいしく　なったりして……\pたびって　いいよね!$"
 	.byte 0x00
+.globl EventScript_JP_081FA721
 EventScript_JP_081FA721: @ 0x081FA721
 	loadword 0x00, EventText_JP_081FA733
 	callstd 0x02
 	end
+.globl EventScript_JP_081FA72A
 EventScript_JP_081FA72A: @ 0x081FA72A
 	loadword 0x00, EventText_JP_081FA775
 	callstd 0x02
@@ -6815,6 +6973,7 @@ EventScript_JP_081FA7D8: @ 0x081FA7D8
 	setrespawn 0x0003
 	call 0x08242978
 	end
+.globl EventScript_JP_081FA7E1
 EventScript_JP_081FA7E1: @ 0x081FA7E1
 	setvar 0x800B, 0x0001
 	call 0x082429B8
@@ -6822,14 +6981,17 @@ EventScript_JP_081FA7E1: @ 0x081FA7E1
 	waitbuttonpress
 	release
 	end
+.globl EventScript_JP_081FA7EF
 EventScript_JP_081FA7EF: @ 0x081FA7EF
 	loadword 0x00, EventText_JP_081FA85B
 	callstd 0x02
 	end
+.globl EventScript_JP_081FA7F8
 EventScript_JP_081FA7F8: @ 0x081FA7F8
 	loadword 0x00, EventText_JP_081FA894
 	callstd 0x02
 	end
+.globl EventScript_JP_081FA801
 EventScript_JP_081FA801: @ 0x081FA801
 	lock
 	faceplayer
@@ -6876,6 +7038,7 @@ EventText_JP_081FA984: @ 0x081FA984
 	.byte 0x02, 0x39, 0x69, 0x24, 0x08, 0x04, 0x6A, 0x68, 0x24, 0x08, 0x01, 0xBC, 0x68, 0x24, 0x08, 0x03
 	.byte 0xCD, 0x67, 0x24, 0x08, 0x00, 0x04, 0xB2, 0x6B, 0x24, 0x08, 0x02, 0x04, 0xAD, 0x6D, 0x24, 0x08
 	.byte 0x02, 0x04, 0xD6, 0x6E, 0x24, 0x08, 0x02, 0x00
+.globl EventScript_JP_081FA9EA
 EventScript_JP_081FA9EA: @ 0x081FA9EA
 	lock
 	faceplayer
@@ -6899,14 +7062,17 @@ EventScript_JP_081FAA26: @ 0x081FAA26
 	.byte 0x00, 0x00, 0x00, 0x04, 0x00, 0x03, 0x00, 0x0D, 0x00, 0x16, 0x00, 0x0E, 0x00, 0x12, 0x00, 0x11
 	.byte 0x00, 0x55, 0x00, 0x56, 0x00, 0x4D, 0x00, 0x4B, 0x00, 0x4C, 0x00, 0x79, 0x00, 0x00, 0x00, 0x6C
 	.byte 0x02
+.globl EventScript_JP_081FAA56
 EventScript_JP_081FAA56: @ 0x081FAA56
 	loadword 0x00, EventText_JP_081FAA71
 	callstd 0x02
 	end
+.globl EventScript_JP_081FAA5F
 EventScript_JP_081FAA5F: @ 0x081FAA5F
 	loadword 0x00, EventText_JP_081FAAAB
 	callstd 0x02
 	end
+.globl EventScript_JP_081FAA68
 EventScript_JP_081FAA68: @ 0x081FAA68
 	loadword 0x00, EventText_JP_081FAADF
 	callstd 0x02
@@ -6918,6 +7084,7 @@ EventText_JP_081FAAAB: @ 0x081FAAAB
 EventText_JP_081FAADF: @ 0x081FAADF
 	.string "きみ　どくけし　もってるかい?\pポケモン　どくを　くらったまま\nあるいていると　たいりょく　なくなって\lたおれちゃうから　もっておくと　いいよ!$"
 	.byte 0x00
+.globl EventScript_JP_081FAB29
 EventScript_JP_081FAB29: @ 0x081FAB29
 	lockall
 	checkflag 0x0864
@@ -7007,14 +7174,17 @@ EventScript_JP_081FABC2: @ 0x081FABC2
 	callstd 0x04
 	releaseall
 	end
+.globl EventScript_JP_081FABD6
 EventScript_JP_081FABD6: @ 0x081FABD6
 	loadword 0x00, EventText_JP_081FAF20
 	callstd 0x02
 	end
+.globl EventScript_JP_081FABDF
 EventScript_JP_081FABDF: @ 0x081FABDF
 	loadword 0x00, EventText_JP_081FAF7A
 	callstd 0x02
 	end
+.globl EventScript_JP_081FABE8
 EventScript_JP_081FABE8: @ 0x081FABE8
 	loadword 0x00, EventText_JP_081FAE4A
 	callstd 0x02
@@ -7038,10 +7208,12 @@ EventText_JP_081FAF20: @ 0x081FAF20
 EventText_JP_081FAF7A: @ 0x081FAF7A
 	.string "ぼくは　すぐに　ふなよい　するのよね\nだから　ここで　おてつだい　してるのよね$"
 	.byte 0x00
+.globl EventScript_JP_081FAFA3
 EventScript_JP_081FAFA3: @ 0x081FAFA3
 	loadword 0x00, EventText_JP_081FAFB5
 	callstd 0x02
 	end
+.globl EventScript_JP_081FAFAC
 EventScript_JP_081FAFAC: @ 0x081FAFAC
 	loadword 0x00, EventText_JP_081FAFED
 	callstd 0x02
@@ -7195,6 +7367,7 @@ EventScript_JP_081FB174: @ 0x081FB174
 	setvar 0x4000, 0x00FF
 	setvar 0x8006, 0x0002
 	goto EventScript_JP_081FB2AF
+.globl EventScript_JP_081FB1AD
 EventScript_JP_081FB1AD: @ 0x081FB1AD
 	lock
 	faceplayer
@@ -7356,6 +7529,7 @@ EventScript_JP_081FB331: @ 0x081FB331
 	release
 	end
 	.byte 0x09, 0x09, 0x09, 0x54, 0xFE
+.globl EventScript_JP_081FB340
 EventScript_JP_081FB340: @ 0x081FB340
 	lock
 	faceplayer
@@ -7378,18 +7552,22 @@ EventScript_JP_081FB377: @ 0x081FB377
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081FB381
 EventScript_JP_081FB381: @ 0x081FB381
 	loadword 0x00, EventText_JP_081FB516
 	callstd 0x02
 	end
+.globl EventScript_JP_081FB38A
 EventScript_JP_081FB38A: @ 0x081FB38A
 	loadword 0x00, EventText_JP_081FB54A
 	callstd 0x02
 	end
+.globl EventScript_JP_081FB393
 EventScript_JP_081FB393: @ 0x081FB393
 	loadword 0x00, EventText_JP_081FB570
 	callstd 0x02
 	end
+.globl EventScript_JP_081FB39C
 EventScript_JP_081FB39C: @ 0x081FB39C
 	lockall
 	loadword 0x00, gText_Rom_231A91
@@ -7897,6 +8075,7 @@ Movement_JP_081FBD97: @ 0x081FBD97
 	walk_in_place_fastest_left
 	step_end
 	.byte 0x00
+.globl EventScript_JP_081FBD9E
 EventScript_JP_081FBD9E: @ 0x081FBD9E
 	lock
 	faceplayer
@@ -7997,6 +8176,7 @@ EventText_JP_081FBFCF: @ 0x081FBFCF
 EventText_JP_081FC011: @ 0x081FC011
 	.string "おいおい……\nそれは　タマゴ　じゃないか!$"
 	.byte 0x00
+.globl EventScript_JP_081FC028
 EventScript_JP_081FC028: @ 0x081FC028
 	lock
 	faceplayer
@@ -8218,6 +8398,7 @@ EventScript_JP_081FC304: @ 0x081FC304
 	callstd 0x04
 	setflag 0x0156
 	return
+.globl EventScript_JP_081FC310
 EventScript_JP_081FC310: @ 0x081FC310
 	lock
 	faceplayer
@@ -8261,14 +8442,17 @@ EventScript_JP_081FC370: @ 0x081FC370
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081FC37A
 EventScript_JP_081FC37A: @ 0x081FC37A
 	loadword 0x00, EventText_JP_081FC989
 	callstd 0x02
 	end
+.globl EventScript_JP_081FC383
 EventScript_JP_081FC383: @ 0x081FC383
 	loadword 0x00, EventText_JP_081FC9DB
 	callstd 0x02
 	end
+.globl EventScript_JP_081FC38C
 EventScript_JP_081FC38C: @ 0x081FC38C
 	lock
 	faceplayer
@@ -8279,6 +8463,7 @@ EventScript_JP_081FC38C: @ 0x081FC38C
 	waitmoncry
 	release
 	end
+.globl EventScript_JP_081FC39F
 EventScript_JP_081FC39F: @ 0x081FC39F
 	lock
 	faceplayer
@@ -8289,6 +8474,7 @@ EventScript_JP_081FC39F: @ 0x081FC39F
 	waitmoncry
 	release
 	end
+.globl EventScript_JP_081FC3B2
 EventScript_JP_081FC3B2: @ 0x081FC3B2
 	lock
 	faceplayer
@@ -8344,10 +8530,12 @@ EventText_JP_081FCA24: @ 0x081FCA24
 EventText_JP_081FCA31: @ 0x081FCA31
 	.string "マリルリ“マリ　マリ!?$"
 	.byte 0x00
+.globl EventScript_JP_081FCA3F
 EventScript_JP_081FCA3F: @ 0x081FCA3F
 	loadword 0x00, EventText_JP_081FCCC1
 	callstd 0x02
 	end
+.globl EventScript_JP_081FCA48
 EventScript_JP_081FCA48: @ 0x081FCA48
 	lockall
 	@ event command: applymovement
@@ -8359,6 +8547,7 @@ EventScript_JP_081FCA48: @ 0x081FCA48
 	.2byte 0x0000
 	goto EventScript_JP_081FCA6A
 	.byte 0x02
+.globl EventScript_JP_081FCA59
 EventScript_JP_081FCA59: @ 0x081FCA59
 	lockall
 	@ event command: applymovement
@@ -8436,82 +8625,102 @@ Movement_JP_081FCAF4: @ 0x081FCAF4
 	@ object movement sequence
 	walk_down
 	step_end
+.globl EventScript_JP_081FCAF6
 EventScript_JP_081FCAF6: @ 0x081FCAF6
 	loadword 0x00, EventText_JP_081FCD12
 	callstd 0x02
 	end
+.globl EventScript_JP_081FCAFF
 EventScript_JP_081FCAFF: @ 0x081FCAFF
 	loadword 0x00, EventText_JP_081FCD2D
 	callstd 0x02
 	end
+.globl EventScript_JP_081FCB08
 EventScript_JP_081FCB08: @ 0x081FCB08
 	loadword 0x00, EventText_JP_081FCD60
 	callstd 0x02
 	end
+.globl EventScript_JP_081FCB11
 EventScript_JP_081FCB11: @ 0x081FCB11
 	loadword 0x00, EventText_JP_081FCD7C
 	callstd 0x03
 	end
+.globl EventScript_JP_081FCB1A
 EventScript_JP_081FCB1A: @ 0x081FCB1A
 	loadword 0x00, EventText_JP_081FCD97
 	callstd 0x02
 	end
+.globl EventScript_JP_081FCB23
 EventScript_JP_081FCB23: @ 0x081FCB23
 	loadword 0x00, EventText_JP_081FCDBB
 	callstd 0x02
 	end
+.globl EventScript_JP_081FCB2C
 EventScript_JP_081FCB2C: @ 0x081FCB2C
 	loadword 0x00, EventText_JP_081FCF51
 	callstd 0x03
 	end
+.globl EventScript_JP_081FCB35
 EventScript_JP_081FCB35: @ 0x081FCB35
 	loadword 0x00, EventText_JP_081FCF9B
 	callstd 0x03
 	end
+.globl EventScript_JP_081FCB3E
 EventScript_JP_081FCB3E: @ 0x081FCB3E
 	loadword 0x00, EventText_JP_081FCFEB
 	callstd 0x03
 	end
+.globl EventScript_JP_081FCB47
 EventScript_JP_081FCB47: @ 0x081FCB47
 	loadword 0x00, EventText_JP_081FD062
 	callstd 0x03
 	end
+.globl EventScript_JP_081FCB50
 EventScript_JP_081FCB50: @ 0x081FCB50
 	loadword 0x00, EventText_JP_081FD0D7
 	callstd 0x03
 	end
+.globl EventScript_JP_081FCB59
 EventScript_JP_081FCB59: @ 0x081FCB59
 	loadword 0x00, EventText_JP_081FD16B
 	callstd 0x03
 	end
+.globl EventScript_JP_081FCB62
 EventScript_JP_081FCB62: @ 0x081FCB62
 	loadword 0x00, EventText_JP_081FD1EA
 	callstd 0x03
 	end
+.globl EventScript_JP_081FCB6B
 EventScript_JP_081FCB6B: @ 0x081FCB6B
 	loadword 0x00, EventText_JP_081FD258
 	callstd 0x03
 	end
+.globl EventScript_JP_081FCB74
 EventScript_JP_081FCB74: @ 0x081FCB74
 	loadword 0x00, EventText_JP_081FD2CF
 	callstd 0x03
 	end
+.globl EventScript_JP_081FCB7D
 EventScript_JP_081FCB7D: @ 0x081FCB7D
 	loadword 0x00, EventText_JP_081FCDDF
 	callstd 0x02
 	end
+.globl EventScript_JP_081FCB86
 EventScript_JP_081FCB86: @ 0x081FCB86
 	loadword 0x00, EventText_JP_081FCE00
 	callstd 0x02
 	end
+.globl EventScript_JP_081FCB8F
 EventScript_JP_081FCB8F: @ 0x081FCB8F
 	loadword 0x00, EventText_JP_081FCE4A
 	callstd 0x02
 	end
+.globl EventScript_JP_081FCB98
 EventScript_JP_081FCB98: @ 0x081FCB98
 	loadword 0x00, EventText_JP_081FCE86
 	callstd 0x02
 	end
+.globl EventScript_JP_081FCBA1
 EventScript_JP_081FCBA1: @ 0x081FCBA1
 	lock
 	faceplayer
@@ -8685,6 +8894,7 @@ EventText_JP_081FD258: @ 0x081FD258
 EventText_JP_081FD2CF: @ 0x081FD2CF
 	.string "まるい　ドームの　なかで　なんだか\nよく　わからない　きかいが　まわってる!\pなにかの　ふかさを　しらべるのかな?$"
 	.byte 0x00
+.globl EventScript_JP_081FD30A
 EventScript_JP_081FD30A: @ 0x081FD30A
 	lock
 	faceplayer
@@ -8999,54 +9209,67 @@ Movement_JP_081FD508: @ 0x081FD508
 	walk_fast_down
 	walk_in_place_fastest_up
 	step_end
+.globl EventScript_JP_081FD514
 EventScript_JP_081FD514: @ 0x081FD514
 	loadword 0x00, EventText_JP_081FD9B0
 	callstd 0x03
 	end
+.globl EventScript_JP_081FD51D
 EventScript_JP_081FD51D: @ 0x081FD51D
 	loadword 0x00, EventText_JP_081FD9F8
 	callstd 0x03
 	end
+.globl EventScript_JP_081FD526
 EventScript_JP_081FD526: @ 0x081FD526
 	loadword 0x00, EventText_JP_081FDA3F
 	callstd 0x03
 	end
+.globl EventScript_JP_081FD52F
 EventScript_JP_081FD52F: @ 0x081FD52F
 	loadword 0x00, EventText_JP_081FDAC0
 	callstd 0x03
 	end
+.globl EventScript_JP_081FD538
 EventScript_JP_081FD538: @ 0x081FD538
 	loadword 0x00, EventText_JP_081FDAF8
 	callstd 0x03
 	end
+.globl EventScript_JP_081FD541
 EventScript_JP_081FD541: @ 0x081FD541
 	loadword 0x00, EventText_JP_081FDB4B
 	callstd 0x03
 	end
+.globl EventScript_JP_081FD54A
 EventScript_JP_081FD54A: @ 0x081FD54A
 	loadword 0x00, EventText_JP_081FDB95
 	callstd 0x03
 	end
+.globl EventScript_JP_081FD553
 EventScript_JP_081FD553: @ 0x081FD553
 	loadword 0x00, EventText_JP_081FDBD1
 	callstd 0x03
 	end
+.globl EventScript_JP_081FD55C
 EventScript_JP_081FD55C: @ 0x081FD55C
 	loadword 0x00, EventText_JP_081FDC0D
 	callstd 0x03
 	end
+.globl EventScript_JP_081FD565
 EventScript_JP_081FD565: @ 0x081FD565
 	loadword 0x00, EventText_JP_081FDC3E
 	callstd 0x03
 	end
+.globl EventScript_JP_081FD56E
 EventScript_JP_081FD56E: @ 0x081FD56E
 	loadword 0x00, EventText_JP_081FD94A
 	callstd 0x02
 	end
+.globl EventScript_JP_081FD577
 EventScript_JP_081FD577: @ 0x081FD577
 	loadword 0x00, EventText_JP_081FD977
 	callstd 0x02
 	end
+.globl EventScript_JP_081FD580
 EventScript_JP_081FD580: @ 0x081FD580
 	lock
 	faceplayer
@@ -9130,21 +9353,25 @@ EventScript_JP_081FDC74: @ 0x081FDC74
 	.byte 0x16, 0x01, 0x40, 0x00, 0x00, 0x21, 0xA0, 0x40, 0x01, 0x00, 0x07, 0x01, 0x9A, 0xDC, 0x1F, 0x08
 	.byte 0x2B, 0x64, 0x08, 0x07, 0x01, 0x96, 0xDC, 0x1F, 0x08, 0x02, 0x2A, 0x5C, 0x03, 0x03, 0x34, 0xA3
 	.byte 0x01, 0x63, 0x04, 0x00, 0x0C, 0x00, 0x0D, 0x00, 0x65, 0x04, 0x00, 0x09, 0x29, 0x89, 0x03, 0x03
+.globl EventScript_JP_081FDCAC
 EventScript_JP_081FDCAC: @ 0x081FDCAC
 	lockall
 	setvar 0x8008, 0x0000
 	goto EventScript_JP_081FDCE6
 	.byte 0x02
+.globl EventScript_JP_081FDCB8
 EventScript_JP_081FDCB8: @ 0x081FDCB8
 	lockall
 	setvar 0x8008, 0x0001
 	goto EventScript_JP_081FDCE6
 	.byte 0x02
+.globl EventScript_JP_081FDCC4
 EventScript_JP_081FDCC4: @ 0x081FDCC4
 	lockall
 	setvar 0x8008, 0x0002
 	goto EventScript_JP_081FDCE6
 	.byte 0x02
+.globl EventScript_JP_081FDCD0
 EventScript_JP_081FDCD0: @ 0x081FDCD0
 	lockall
 	setvar 0x8008, 0x0003
@@ -9320,6 +9547,7 @@ Movement_JP_081FDDE0: @ 0x081FDDE0
 	@ object movement sequence
 	walk_up
 	step_end
+.globl EventScript_JP_081FDDE2
 EventScript_JP_081FDDE2: @ 0x081FDDE2
 	lock
 	faceplayer
@@ -9457,6 +9685,7 @@ Movement_JP_081FDF41: @ 0x081FDF41
 	@ object movement sequence
 	walk_up
 	step_end
+.globl EventScript_JP_081FDF43
 EventScript_JP_081FDF43: @ 0x081FDF43
 	lock
 	faceplayer
@@ -9481,10 +9710,12 @@ EventScript_JP_081FDF7A: @ 0x081FDF7A
 EventScript_JP_081FDF84: @ 0x081FDF84
 	addvar 0x8004, 0x0001
 	return
+.globl EventScript_JP_081FDF8A
 EventScript_JP_081FDF8A: @ 0x081FDF8A
 	loadword 0x00, EventText_JP_081FE2D6
 	callstd 0x02
 	end
+.globl EventScript_JP_081FDF93
 EventScript_JP_081FDF93: @ 0x081FDF93
 	lock
 	faceplayer
@@ -9659,10 +9890,12 @@ EventText_JP_081FE735: @ 0x081FE735
 EventText_JP_081FE750: @ 0x081FE750
 	.string "クスノキ“{PLAYER}{KUN}　ありがとう!\nこれで　けんきゅうが　はかどるよ$"
 	.byte 0x00
+.globl EventScript_JP_081FE773
 EventScript_JP_081FE773: @ 0x081FE773
 	loadword 0x00, EventText_JP_081FE785
 	callstd 0x02
 	end
+.globl EventScript_JP_081FE77C
 EventScript_JP_081FE77C: @ 0x081FE77C
 	loadword 0x00, EventText_JP_081FE7D4
 	callstd 0x02
@@ -9682,6 +9915,7 @@ EventScript_JP_081FE814: @ 0x081FE814
 	setrespawn 0x0004
 	call 0x08242978
 	end
+.globl EventScript_JP_081FE81D
 EventScript_JP_081FE81D: @ 0x081FE81D
 	setvar 0x800B, 0x0001
 	call 0x082429B8
@@ -9689,10 +9923,12 @@ EventScript_JP_081FE81D: @ 0x081FE81D
 	waitbuttonpress
 	release
 	end
+.globl EventScript_JP_081FE82B
 EventScript_JP_081FE82B: @ 0x081FE82B
 	loadword 0x00, EventText_JP_081FE83D
 	callstd 0x02
 	end
+.globl EventScript_JP_081FE834
 EventScript_JP_081FE834: @ 0x081FE834
 	loadword 0x00, EventText_JP_081FE89A
 	callstd 0x02
@@ -9704,6 +9940,7 @@ EventText_JP_081FE89A: @ 0x081FE89A
 	.byte 0x02, 0x39, 0x69, 0x24, 0x08, 0x04, 0x6A, 0x68, 0x24, 0x08, 0x01, 0xBC, 0x68, 0x24, 0x08, 0x03
 	.byte 0xCD, 0x67, 0x24, 0x08, 0x00, 0x04, 0xB2, 0x6B, 0x24, 0x08, 0x02, 0x04, 0xAD, 0x6D, 0x24, 0x08
 	.byte 0x02, 0x04, 0xD6, 0x6E, 0x24, 0x08, 0x02, 0x00
+.globl EventScript_JP_081FE8FA
 EventScript_JP_081FE8FA: @ 0x081FE8FA
 	lock
 	faceplayer
@@ -9716,10 +9953,12 @@ EventScript_JP_081FE8FA: @ 0x081FE8FA
 	end
 	.byte 0x00, 0x00, 0x00, 0x04, 0x00, 0x03, 0x00, 0x0D, 0x00, 0x16, 0x00, 0x0E, 0x00, 0x12, 0x00, 0x55
 	.byte 0x00, 0x56, 0x00, 0x7A, 0x00, 0x00, 0x00, 0x6C, 0x02
+.globl EventScript_JP_081FE92A
 EventScript_JP_081FE92A: @ 0x081FE92A
 	loadword 0x00, EventText_JP_081FE93C
 	callstd 0x02
 	end
+.globl EventScript_JP_081FE933
 EventScript_JP_081FE933: @ 0x081FE933
 	loadword 0x00, EventText_JP_081FE97B
 	callstd 0x02
@@ -9813,6 +10052,7 @@ EventScript_JP_081FEB2D: @ 0x081FEB2D
 	.byte 0x25
 	.2byte 0x0090
 	end
+.globl EventScript_JP_081FEB31
 EventScript_JP_081FEB31: @ 0x081FEB31
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -9905,6 +10145,7 @@ EventScript_JP_081FEC24: @ 0x081FEC24
 	loadword 0x00, EventText_JP_081FF320
 	callstd 0x06
 	end
+.globl EventScript_JP_081FEC3F
 EventScript_JP_081FEC3F: @ 0x081FEC3F
 	lockall
 	checkflag 0x04F2
@@ -9915,6 +10156,7 @@ EventScript_JP_081FEC3F: @ 0x081FEC3F
 	setvar 0x8004, 0x0000
 	goto EventScript_JP_081FECD3
 	.byte 0x02
+.globl EventScript_JP_081FEC64
 EventScript_JP_081FEC64: @ 0x081FEC64
 	lockall
 	checkflag 0x04F2
@@ -9925,6 +10167,7 @@ EventScript_JP_081FEC64: @ 0x081FEC64
 	setvar 0x8004, 0x0001
 	goto EventScript_JP_081FECD3
 	.byte 0x02
+.globl EventScript_JP_081FEC89
 EventScript_JP_081FEC89: @ 0x081FEC89
 	lockall
 	checkflag 0x04F2
@@ -9935,6 +10178,7 @@ EventScript_JP_081FEC89: @ 0x081FEC89
 	setvar 0x8004, 0x0002
 	goto EventScript_JP_081FECD3
 	.byte 0x02
+.globl EventScript_JP_081FECAE
 EventScript_JP_081FECAE: @ 0x081FECAE
 	lockall
 	checkflag 0x04F2
@@ -9973,6 +10217,7 @@ EventScript_JP_081FECFA: @ 0x081FECFA
 	clearflag 0x0063
 	releaseall
 	end
+.globl EventScript_JP_081FECFF
 EventScript_JP_081FECFF: @ 0x081FECFF
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -9984,6 +10229,7 @@ EventScript_JP_081FECFF: @ 0x081FECFF
 	loadword 0x00, EventText_JP_081FEEBC
 	callstd 0x06
 	end
+.globl EventScript_JP_081FED16
 EventScript_JP_081FED16: @ 0x081FED16
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -9995,6 +10241,7 @@ EventScript_JP_081FED16: @ 0x081FED16
 	loadword 0x00, EventText_JP_081FEF0D
 	callstd 0x06
 	end
+.globl EventScript_JP_081FED2D
 EventScript_JP_081FED2D: @ 0x081FED2D
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -10006,6 +10253,7 @@ EventScript_JP_081FED2D: @ 0x081FED2D
 	loadword 0x00, EventText_JP_081FEF70
 	callstd 0x06
 	end
+.globl EventScript_JP_081FED44
 EventScript_JP_081FED44: @ 0x081FED44
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -10017,6 +10265,7 @@ EventScript_JP_081FED44: @ 0x081FED44
 	loadword 0x00, EventText_JP_081FEFC9
 	callstd 0x06
 	end
+.globl EventScript_JP_081FED5B
 EventScript_JP_081FED5B: @ 0x081FED5B
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -10028,6 +10277,7 @@ EventScript_JP_081FED5B: @ 0x081FED5B
 	loadword 0x00, EventText_JP_081FF03D
 	callstd 0x06
 	end
+.globl EventScript_JP_081FED72
 EventScript_JP_081FED72: @ 0x081FED72
 	lock
 	faceplayer
@@ -10042,12 +10292,14 @@ EventScript_JP_081FED87: @ 0x081FED87
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081FED91
 EventScript_JP_081FED91: @ 0x081FED91
 	lockall
 	checkflag 0x0869
 	goto_if 0x01, EventScript_JP_081FEDB1
 	goto EventScript_JP_081FEDBB
 	.byte 0x02
+.globl EventScript_JP_081FEDA1
 EventScript_JP_081FEDA1: @ 0x081FEDA1
 	lockall
 	checkflag 0x0869
@@ -10127,6 +10379,7 @@ EventText_JP_081FF320: @ 0x081FF320
 EventText_JP_081FF36A: @ 0x081FF36A
 	.string "テッセン“おーっと　あらわれたな!\nわかっとる!　わしと　ポケモンの\lしょうぶを　したいんじゃろう!?\pわっはははは!\p……ありゃ?　たたかえる　ポケモンを\n1ひきしか　もっておらん　ようだな\pすまんが　2ひき　いじょうの\nポケモンを　もって　きておくれ!$"
 	.byte 0x00
+.globl EventScript_JP_081FF3EC
 EventScript_JP_081FF3EC: @ 0x081FF3EC
 	lock
 	faceplayer
@@ -10241,10 +10494,12 @@ EventScript_JP_081FF540: @ 0x081FF540
 	callstd 0x00
 	goto EventScript_JP_081FF4B7
 	.byte 0x02
+.globl EventScript_JP_081FF561
 EventScript_JP_081FF561: @ 0x081FF561
 	loadword 0x00, EventText_JP_081FF9AB
 	callstd 0x02
 	end
+.globl EventScript_JP_081FF56A
 EventScript_JP_081FF56A: @ 0x081FF56A
 	message EventText_JP_081FFA13
 	waitmessage
@@ -10282,6 +10537,7 @@ EventScript_JP_081FF5D0: @ 0x081FF5D0
 EventScript_JP_081FF5DC: @ 0x081FF5DC
 	release
 	end
+.globl EventScript_JP_081FF5DE
 EventScript_JP_081FF5DE: @ 0x081FF5DE
 	message EventText_JP_081FFBE1
 	waitmessage
@@ -10364,6 +10620,7 @@ EventText_JP_081FFC8A: @ 0x081FFC8A
 EventText_JP_081FFCFB: @ 0x081FFCFB
 	.string "ダートじてんしゃに　のっているとき\nじゅうじボタンと　Bボタンを\lどうじに　おすと　ジャンプします!\pよこへ　おせば　よこに　ジャンプ!\pうしろへ　おせば　ジャンプしながら\nほうこうを　かえることが　できます!\p……べつの　ページを　よみますか?$"
 	.byte 0x00
+.globl EventScript_JP_081FFD78
 EventScript_JP_081FFD78: @ 0x081FFD78
 	lock
 	faceplayer
@@ -10392,6 +10649,7 @@ EventText_JP_081FFE53: @ 0x081FFE53
 EventText_JP_081FFEB7: @ 0x081FFEB7
 	.string "そうそう\nいわを　くだくと　かくれていた\lポケモンが　とびでることも　あるからね!\pほっほう!$"
 	.byte 0x00
+.globl EventScript_JP_081FFEE8
 EventScript_JP_081FFEE8: @ 0x081FFEE8
 	lock
 	faceplayer
@@ -10490,6 +10748,7 @@ EventScript_JP_08200010: @ 0x08200010
 	hidecoinsbox 0x00, 0x05
 	release
 	end
+.globl EventScript_JP_08200020
 EventScript_JP_08200020: @ 0x08200020
 	lock
 	faceplayer
@@ -10611,6 +10870,7 @@ EventScript_JP_082001C1: @ 0x082001C1
 	hidecoinsbox 0x00, 0x00
 	release
 	end
+.globl EventScript_JP_082001CE
 EventScript_JP_082001CE: @ 0x082001CE
 	lock
 	faceplayer
@@ -10783,14 +11043,17 @@ EventScript_JP_08200447: @ 0x08200447
 	hidecoinsbox 0x00, 0x00
 	release
 	end
+.globl EventScript_JP_08200454
 EventScript_JP_08200454: @ 0x08200454
 	loadword 0x00, EventText_JP_08200AAF
 	callstd 0x02
 	end
+.globl EventScript_JP_0820045D
 EventScript_JP_0820045D: @ 0x0820045D
 	loadword 0x00, EventText_JP_08200ACC
 	callstd 0x02
 	end
+.globl EventScript_JP_08200466
 EventScript_JP_08200466: @ 0x08200466
 	lock
 	faceplayer
@@ -10860,6 +11123,7 @@ EventScript_JP_08200542: @ 0x08200542
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0820054C
 EventScript_JP_0820054C: @ 0x0820054C
 	lock
 	faceplayer
@@ -10888,6 +11152,7 @@ EventScript_JP_0820059A: @ 0x0820059A
 	callstd 0x04
 	goto EventScript_JP_082005D8
 	.byte 0x02
+.globl EventScript_JP_082005A8
 EventScript_JP_082005A8: @ 0x082005A8
 	lock
 	faceplayer
@@ -10895,6 +11160,7 @@ EventScript_JP_082005A8: @ 0x082005A8
 	callstd 0x04
 	goto EventScript_JP_082005D8
 	.byte 0x02
+.globl EventScript_JP_082005B8
 EventScript_JP_082005B8: @ 0x082005B8
 	lock
 	faceplayer
@@ -10902,6 +11168,7 @@ EventScript_JP_082005B8: @ 0x082005B8
 	callstd 0x04
 	goto EventScript_JP_082005D8
 	.byte 0x02
+.globl EventScript_JP_082005C8
 EventScript_JP_082005C8: @ 0x082005C8
 	lock
 	faceplayer
@@ -10920,6 +11187,7 @@ EventScript_JP_082005D8: @ 0x082005D8
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_082005E5
 EventScript_JP_082005E5: @ 0x082005E5
 	lock
 	faceplayer
@@ -10927,6 +11195,7 @@ EventScript_JP_082005E5: @ 0x082005E5
 	callstd 0x04
 	goto EventScript_JP_082005D8
 	.byte 0x02
+.globl EventScript_JP_082005F5
 EventScript_JP_082005F5: @ 0x082005F5
 	lock
 	faceplayer
@@ -10934,6 +11203,7 @@ EventScript_JP_082005F5: @ 0x082005F5
 	callstd 0x04
 	goto EventScript_JP_082005D8
 	.byte 0x02
+.globl EventScript_JP_08200605
 EventScript_JP_08200605: @ 0x08200605
 	lockall
 	checkitem 0x0104, 0x0001
@@ -10944,6 +11214,7 @@ EventScript_JP_08200605: @ 0x08200605
 	playslotmachine 0x800D
 	releaseall
 	end
+.globl EventScript_JP_08200625
 EventScript_JP_08200625: @ 0x08200625
 	lockall
 	checkitem 0x0104, 0x0001
@@ -10954,6 +11225,7 @@ EventScript_JP_08200625: @ 0x08200625
 	playslotmachine 0x800D
 	releaseall
 	end
+.globl EventScript_JP_08200645
 EventScript_JP_08200645: @ 0x08200645
 	lockall
 	checkitem 0x0104, 0x0001
@@ -10964,6 +11236,7 @@ EventScript_JP_08200645: @ 0x08200645
 	playslotmachine 0x800D
 	releaseall
 	end
+.globl EventScript_JP_08200665
 EventScript_JP_08200665: @ 0x08200665
 	lockall
 	checkitem 0x0104, 0x0001
@@ -10974,6 +11247,7 @@ EventScript_JP_08200665: @ 0x08200665
 	playslotmachine 0x800D
 	releaseall
 	end
+.globl EventScript_JP_08200685
 EventScript_JP_08200685: @ 0x08200685
 	lockall
 	checkitem 0x0104, 0x0001
@@ -10984,6 +11258,7 @@ EventScript_JP_08200685: @ 0x08200685
 	playslotmachine 0x800D
 	releaseall
 	end
+.globl EventScript_JP_082006A5
 EventScript_JP_082006A5: @ 0x082006A5
 	lockall
 	checkitem 0x0104, 0x0001
@@ -10994,6 +11269,7 @@ EventScript_JP_082006A5: @ 0x082006A5
 	playslotmachine 0x800D
 	releaseall
 	end
+.globl EventScript_JP_082006C5
 EventScript_JP_082006C5: @ 0x082006C5
 	lockall
 	checkitem 0x0104, 0x0001
@@ -11004,6 +11280,7 @@ EventScript_JP_082006C5: @ 0x082006C5
 	playslotmachine 0x800D
 	releaseall
 	end
+.globl EventScript_JP_082006E5
 EventScript_JP_082006E5: @ 0x082006E5
 	lockall
 	checkitem 0x0104, 0x0001
@@ -11014,6 +11291,7 @@ EventScript_JP_082006E5: @ 0x082006E5
 	playslotmachine 0x800D
 	releaseall
 	end
+.globl EventScript_JP_08200705
 EventScript_JP_08200705: @ 0x08200705
 	lockall
 	checkitem 0x0104, 0x0001
@@ -11024,6 +11302,7 @@ EventScript_JP_08200705: @ 0x08200705
 	playslotmachine 0x800D
 	releaseall
 	end
+.globl EventScript_JP_08200725
 EventScript_JP_08200725: @ 0x08200725
 	lockall
 	checkitem 0x0104, 0x0001
@@ -11034,6 +11313,7 @@ EventScript_JP_08200725: @ 0x08200725
 	playslotmachine 0x800D
 	releaseall
 	end
+.globl EventScript_JP_08200745
 EventScript_JP_08200745: @ 0x08200745
 	lockall
 	checkitem 0x0104, 0x0001
@@ -11044,6 +11324,7 @@ EventScript_JP_08200745: @ 0x08200745
 	playslotmachine 0x800D
 	releaseall
 	end
+.globl EventScript_JP_08200765
 EventScript_JP_08200765: @ 0x08200765
 	lockall
 	checkitem 0x0104, 0x0001
@@ -11126,6 +11407,7 @@ EventText_JP_08200BA3: @ 0x08200BA3
 EventText_JP_08200C41: @ 0x08200C41
 	.string "コインケースを\nもっていないので　あそべません!$"
 	.byte 0x00
+.globl EventScript_JP_08200C5B
 EventScript_JP_08200C5B: @ 0x08200C5B
 	lock
 	faceplayer
@@ -11208,6 +11490,7 @@ EventScript_JP_08200DED: @ 0x08200DED
 	.byte 0x25
 	.2byte 0x0068
 	end
+.globl EventScript_JP_08200DF1
 EventScript_JP_08200DF1: @ 0x08200DF1
 	setvar 0x800B, 0x0001
 	call 0x082429B8
@@ -11215,14 +11498,17 @@ EventScript_JP_08200DF1: @ 0x08200DF1
 	waitbuttonpress
 	release
 	end
+.globl EventScript_JP_08200DFF
 EventScript_JP_08200DFF: @ 0x08200DFF
 	loadword 0x00, EventText_JP_08200E1A
 	callstd 0x02
 	end
+.globl EventScript_JP_08200E08
 EventScript_JP_08200E08: @ 0x08200E08
 	loadword 0x00, EventText_JP_08200E54
 	callstd 0x02
 	end
+.globl EventScript_JP_08200E11
 EventScript_JP_08200E11: @ 0x08200E11
 	loadword 0x00, EventText_JP_08200E8A
 	callstd 0x02
@@ -11236,6 +11522,7 @@ EventText_JP_08200E8A: @ 0x08200E8A
 	.byte 0x02, 0x39, 0x69, 0x24, 0x08, 0x04, 0x6A, 0x68, 0x24, 0x08, 0x01, 0xBC, 0x68, 0x24, 0x08, 0x03
 	.byte 0xCD, 0x67, 0x24, 0x08, 0x00, 0x04, 0xB2, 0x6B, 0x24, 0x08, 0x02, 0x04, 0xAD, 0x6D, 0x24, 0x08
 	.byte 0x02, 0x04, 0xD6, 0x6E, 0x24, 0x08, 0x02
+.globl EventScript_JP_08200EF6
 EventScript_JP_08200EF6: @ 0x08200EF6
 	loadword 0x00, EventText_JP_08200EFF
 	callstd 0x02
@@ -11243,6 +11530,7 @@ EventScript_JP_08200EF6: @ 0x08200EF6
 EventText_JP_08200EFF: @ 0x08200EFF
 	.string "ここの　コロシアムで\nつうしんたいせん　できるの　しってる?\pじぶんの　せいせき　って\nかべを　みると　わかるから\lまけてばかりだと　はずかしくなっちゃう……$"
 	.byte 0x00
+.globl EventScript_JP_08200F50
 EventScript_JP_08200F50: @ 0x08200F50
 	lock
 	faceplayer
@@ -11255,10 +11543,12 @@ EventScript_JP_08200F50: @ 0x08200F50
 	end
 	.byte 0x00, 0x04, 0x00, 0x03, 0x00, 0x16, 0x00, 0x0E, 0x00, 0x12, 0x00, 0x11, 0x00, 0x4D, 0x00, 0x4B
 	.byte 0x00, 0x4C, 0x00, 0x49, 0x00, 0x4A, 0x00, 0x4E, 0x00, 0x00, 0x00, 0x6C, 0x02
+.globl EventScript_JP_08200F84
 EventScript_JP_08200F84: @ 0x08200F84
 	loadword 0x00, EventText_JP_08200F96
 	callstd 0x02
 	end
+.globl EventScript_JP_08200F8D
 EventScript_JP_08200F8D: @ 0x08200F8D
 	loadword 0x00, EventText_JP_08200FF2
 	callstd 0x02
@@ -11280,6 +11570,7 @@ EventScript_JP_08201040: @ 0x08201040
 	setobjectxyperm 0x0002, 0x000E, 0x0002
 	setobjectmovementtype 0x0002, 0x08
 	return
+.globl EventScript_JP_0820104C
 EventScript_JP_0820104C: @ 0x0820104C
 	lock
 	faceplayer
@@ -11301,6 +11592,7 @@ EventScript_JP_08201074: @ 0x08201074
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0820107E
 EventScript_JP_0820107E: @ 0x0820107E
 	lock
 	faceplayer
@@ -11324,6 +11616,7 @@ EventScript_JP_082010AF: @ 0x082010AF
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_082010B9
 EventScript_JP_082010B9: @ 0x082010B9
 	lock
 	faceplayer
@@ -11347,10 +11640,12 @@ EventScript_JP_082010EA: @ 0x082010EA
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_082010F4
 EventScript_JP_082010F4: @ 0x082010F4
 	loadword 0x00, EventText_JP_08201284
 	callstd 0x03
 	end
+.globl EventScript_JP_082010FD
 EventScript_JP_082010FD: @ 0x082010FD
 	loadword 0x00, EventText_JP_08201357
 	callstd 0x03
@@ -11387,6 +11682,7 @@ EventScript_JP_0820142F: @ 0x0820142F
 EventScript_JP_0820143B: @ 0x0820143B
 	setvar 0x40C4, 0x0002
 	return
+.globl EventScript_JP_08201441
 EventScript_JP_08201441: @ 0x08201441
 	lock
 	faceplayer
@@ -11396,6 +11692,7 @@ EventScript_JP_08201441: @ 0x08201441
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08201458
 EventScript_JP_08201458: @ 0x08201458
 	lock
 	faceplayer
@@ -11412,6 +11709,7 @@ EventScript_JP_08201478: @ 0x08201478
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08201482
 EventScript_JP_08201482: @ 0x08201482
 	lock
 	faceplayer
@@ -11428,6 +11726,7 @@ EventScript_JP_082014A2: @ 0x082014A2
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_082014AC
 EventScript_JP_082014AC: @ 0x082014AC
 	lock
 	faceplayer
@@ -11437,6 +11736,7 @@ EventScript_JP_082014AC: @ 0x082014AC
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_082014C3
 EventScript_JP_082014C3: @ 0x082014C3
 	lock
 	faceplayer
@@ -11665,6 +11965,7 @@ EventScript_JP_08201799: @ 0x08201799
 EventScript_JP_0820179F: @ 0x0820179F
 	release
 	end
+.globl EventScript_JP_082017A1
 EventScript_JP_082017A1: @ 0x082017A1
 	lock
 	faceplayer
@@ -11894,6 +12195,7 @@ Movement_JP_08201D62: @ 0x08201D62
 	walk_down
 	walk_in_place_fastest_right
 	step_end
+.globl EventScript_JP_08201D68
 EventScript_JP_08201D68: @ 0x08201D68
 	lock
 	faceplayer
@@ -11947,6 +12249,7 @@ EventScript_JP_08201DC8: @ 0x08201DC8
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_08201DDD
 EventScript_JP_08201DDD: @ 0x08201DDD
 	lock
 	faceplayer
@@ -11961,6 +12264,7 @@ EventScript_JP_08201DF2: @ 0x08201DF2
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08201DFC
 EventScript_JP_08201DFC: @ 0x08201DFC
 	loadword 0x00, EventText_JP_082022A7
 	callstd 0x03
@@ -11996,6 +12300,7 @@ EventText_JP_08202277: @ 0x08202277
 EventText_JP_082022A7: @ 0x082022A7
 	.string "しゃちょうの　あつめた\nめずらしい　いしが　かざってある!$"
 	.byte 0x00
+.globl EventScript_JP_082022C6
 EventScript_JP_082022C6: @ 0x082022C6
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -12053,6 +12358,7 @@ EventScript_JP_0820235D: @ 0x0820235D
 	loadword 0x00, gText_Rom_202B41
 	callstd 0x06
 	end
+.globl EventScript_JP_08202378
 EventScript_JP_08202378: @ 0x08202378
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -12064,6 +12370,7 @@ EventScript_JP_08202378: @ 0x08202378
 	loadword 0x00, gText_Rom_202647
 	callstd 0x06
 	end
+.globl EventScript_JP_0820238F
 EventScript_JP_0820238F: @ 0x0820238F
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -12075,6 +12382,7 @@ EventScript_JP_0820238F: @ 0x0820238F
 	loadword 0x00, gText_Rom_20269A
 	callstd 0x06
 	end
+.globl EventScript_JP_082023A6
 EventScript_JP_082023A6: @ 0x082023A6
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -12086,6 +12394,7 @@ EventScript_JP_082023A6: @ 0x082023A6
 	loadword 0x00, gText_Rom_2026F4
 	callstd 0x06
 	end
+.globl EventScript_JP_082023BD
 EventScript_JP_082023BD: @ 0x082023BD
 	lock
 	faceplayer
@@ -12100,12 +12409,14 @@ EventScript_JP_082023D2: @ 0x082023D2
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_082023DC
 EventScript_JP_082023DC: @ 0x082023DC
 	lockall
 	checkflag 0x0867
 	goto_if 0x01, EventScript_JP_082023FC
 	goto EventScript_JP_08202406
 	.byte 0x02
+.globl EventScript_JP_082023EC
 EventScript_JP_082023EC: @ 0x082023EC
 	lockall
 	checkflag 0x0867

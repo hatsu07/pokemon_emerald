@@ -92,6 +92,7 @@ EventScript_JP_082110EF: @ 0x082110EF
 	setobjectxyperm 0x0003, 0x0009, 0x0002
 	setobjectxyperm 0x0004, 0x000A, 0x0002
 	return
+.globl EventScript_JP_082110FE
 EventScript_JP_082110FE: @ 0x082110FE
 	setvar 0x800B, 0x0001
 	call 0x082429B8
@@ -99,6 +100,7 @@ EventScript_JP_082110FE: @ 0x082110FE
 	waitbuttonpress
 	release
 	end
+.globl EventScript_JP_0821110C
 EventScript_JP_0821110C: @ 0x0821110C
 	lock
 	faceplayer
@@ -111,6 +113,7 @@ EventScript_JP_0821110C: @ 0x0821110C
 	end
 	.byte 0x00, 0x02, 0x00, 0x15, 0x00, 0x14, 0x00, 0x13, 0x00, 0x17, 0x00, 0x18, 0x00, 0x54, 0x00, 0x00
 	.byte 0x00, 0x6C, 0x02
+.globl EventScript_JP_08211136
 EventScript_JP_08211136: @ 0x08211136
 	lockall
 	checkflag 0x0107

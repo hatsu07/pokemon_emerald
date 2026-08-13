@@ -12,14 +12,17 @@ gText_Rom_2053E4: @ 0x082053E4
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_082053F0: @ 0x082053F0
 	.byte 0x00
+.globl EventScript_JP_082053F1
 EventScript_JP_082053F1: @ 0x082053F1
 	loadword 0x00, gText_Rom_20545C
 	callstd 0x02
 	end
+.globl EventScript_JP_082053FA
 EventScript_JP_082053FA: @ 0x082053FA
 	loadword 0x00, gText_Rom_20549C
 	callstd 0x02
 	end
+.globl EventScript_JP_08205403
 EventScript_JP_08205403: @ 0x08205403
 	lock
 	faceplayer
@@ -32,6 +35,7 @@ EventScript_JP_08205403: @ 0x08205403
 	end
 	.byte 0x00, 0x00, 0x01, 0x00, 0x02, 0x00, 0x03, 0x00, 0x04, 0x00, 0x05, 0x00, 0x07, 0x00, 0x08, 0x00
 	.byte 0x09, 0x00, 0x00, 0x00, 0x6C, 0x02
+.globl EventScript_JP_08205430
 EventScript_JP_08205430: @ 0x08205430
 	lock
 	faceplayer

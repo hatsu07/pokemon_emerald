@@ -14,6 +14,7 @@ gText_Rom_25764E: @ 0x0825764E
 EventScript_082576A6: @ 0x082576A6
 EventText_JP_082576A6: @ 0x082576A6
 	.string "ややっ!\nその　ことばを　しっている　とは……\pという　ことは　きみも\nふしぎな　できごと　クラブの　なかま　だね!$"
+.globl EventScript_JP_082576E1
 EventScript_JP_082576E1: @ 0x082576E1
 	lock
 	faceplayer
@@ -108,6 +109,7 @@ EventScript_JP_082577B1: @ 0x082577B1
 	call EventScript_JP_08257780
 	release
 	end
+.globl EventScript_JP_082577DA
 EventScript_JP_082577DA: @ 0x082577DA
 	lock
 	faceplayer

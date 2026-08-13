@@ -157,6 +157,7 @@ Movement_JP_081F049F: @ 0x081F049F
 	walk_left
 	walk_left
 	step_end
+.globl EventScript_JP_081F04A6
 EventScript_JP_081F04A6: @ 0x081F04A6
 	lock
 	faceplayer
@@ -188,6 +189,7 @@ EventScript_JP_081F04E6: @ 0x081F04E6
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F04F0
 EventScript_JP_081F04F0: @ 0x081F04F0
 	lock
 	faceplayer
@@ -198,6 +200,7 @@ EventScript_JP_081F04F0: @ 0x081F04F0
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081F04FF
 EventScript_JP_081F04FF: @ 0x081F04FF
 	lockall
 	setvar 0x8004, 0x0001
@@ -211,16 +214,19 @@ EventScript_JP_081F04FF: @ 0x081F04FF
 	.2byte 0x0000
 	goto EventScript_JP_08257F4F
 	.byte 0x02
+.globl EventScript_JP_081F051A
 EventScript_JP_081F051A: @ 0x081F051A
 	lockall
 	setvar 0x8008, 0x0000
 	goto EventScript_JP_081F053E
 	.byte 0x02
+.globl EventScript_JP_081F0526
 EventScript_JP_081F0526: @ 0x081F0526
 	lockall
 	setvar 0x8008, 0x0001
 	goto EventScript_JP_081F053E
 	.byte 0x02
+.globl EventScript_JP_081F0532
 EventScript_JP_081F0532: @ 0x081F0532
 	lockall
 	setvar 0x8008, 0x0002

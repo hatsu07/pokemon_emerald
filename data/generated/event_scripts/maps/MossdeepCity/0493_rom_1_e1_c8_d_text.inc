@@ -924,6 +924,7 @@ Movement_JP_081E2502: @ 0x081E2502
 	step_end
 	.byte 0x08, 0x08, 0x08, 0x08, 0xFE, 0x91, 0x91, 0x91, 0x91, 0x91, 0x91, 0x91, 0x91, 0x0B, 0x0B, 0x0B
 	.byte 0x0B, 0xFE, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x92, 0x92, 0xFE
+.globl EventScript_JP_081E2527
 EventScript_JP_081E2527: @ 0x081E2527
 	lock
 	faceplayer
@@ -952,6 +953,7 @@ EventScript_JP_081E2568: @ 0x081E2568
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081E2572
 EventScript_JP_081E2572: @ 0x081E2572
 	lock
 	faceplayer
@@ -1039,6 +1041,7 @@ EventScript_JP_081E2672: @ 0x081E2672
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081E267C
 EventScript_JP_081E267C: @ 0x081E267C
 	lockall
 	@ event command: applymovement
@@ -1067,6 +1070,7 @@ EventScript_JP_081E26A7: @ 0x081E26A7
 	callstd 0x04
 	releaseall
 	end
+.globl EventScript_JP_081E26B1
 EventScript_JP_081E26B1: @ 0x081E26B1
 	lock
 	faceplayer
@@ -1081,6 +1085,7 @@ EventScript_JP_081E26C8: @ 0x081E26C8
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081E26D2
 EventScript_JP_081E26D2: @ 0x081E26D2
 	lock
 	faceplayer
@@ -1117,6 +1122,7 @@ EventScript_JP_081E271E: @ 0x081E271E
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081E2728
 EventScript_JP_081E2728: @ 0x081E2728
 	lockall
 	@ event command: applymovement
@@ -1154,6 +1160,7 @@ EventScript_JP_081E2773: @ 0x081E2773
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081E277D
 EventScript_JP_081E277D: @ 0x081E277D
 	lockall
 	@ event command: applymovement
@@ -1198,10 +1205,12 @@ EventScript_JP_081E27DB: @ 0x081E27DB
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081E27E5
 EventScript_JP_081E27E5: @ 0x081E27E5
 	loadword 0x00, gText_Rom_1E2C09
 	callstd 0x03
 	end
+.globl EventScript_JP_081E27EE
 EventScript_JP_081E27EE: @ 0x081E27EE
 	loadword 0x00, gText_Rom_1E2C31
 	callstd 0x03
@@ -1210,6 +1219,7 @@ EventScript_JP_081E27F7: @ 0x081E27F7
 	loadword 0x00, gText_Rom_1E2C4D
 	callstd 0x03
 	end
+.globl EventScript_JP_081E2800
 EventScript_JP_081E2800: @ 0x081E2800
 	lockall
 	@ event command: applymovement
@@ -1598,6 +1608,7 @@ Movement_JP_081E29F4: @ 0x081E29F4
 	walk_up
 	walk_up
 	step_end
+.globl EventScript_JP_081E29F7
 EventScript_JP_081E29F7: @ 0x081E29F7
 	lockall
 	@ event command: applymovement
@@ -1627,6 +1638,7 @@ EventScript_JP_081E2A22: @ 0x081E2A22
 	closemessage
 	releaseall
 	end
+.globl EventScript_JP_081E2A2D
 EventScript_JP_081E2A2D: @ 0x081E2A2D
 	lockall
 	compare_var_to_value 0x405E, 0x0005
@@ -1665,6 +1677,7 @@ EventScript_JP_081E2A61: @ 0x081E2A61
 	callstd 0x04
 	releaseall
 	end
+.globl EventScript_JP_081E2A75
 EventScript_JP_081E2A75: @ 0x081E2A75
 	lockall
 	@ event command: applymovement
@@ -1694,6 +1707,7 @@ EventScript_JP_081E2AA0: @ 0x081E2AA0
 	closemessage
 	releaseall
 	end
+.globl EventScript_JP_081E2AAB
 EventScript_JP_081E2AAB: @ 0x081E2AAB
 	lockall
 	@ event command: applymovement
@@ -1722,6 +1736,7 @@ EventScript_JP_081E2AD6: @ 0x081E2AD6
 	callstd 0x04
 	releaseall
 	end
+.globl EventScript_JP_081E2AE0
 EventScript_JP_081E2AE0: @ 0x081E2AE0
 	lock
 	faceplayer
@@ -1795,6 +1810,7 @@ Movement_JP_081E2B89: @ 0x081E2B89
 	walk_left
 	walk_in_place_fastest_down
 	step_end
+.globl EventScript_JP_081E2B8C
 EventScript_JP_081E2B8C: @ 0x081E2B8C
 	lockall
 	compare_var_to_value 0x405E, 0x0005
@@ -1812,6 +1828,7 @@ EventScript_JP_081E2BA3: @ 0x081E2BA3
 	goto_if 0x01, EventScript_JP_081E2BE6
 	releaseall
 	end
+.globl EventScript_JP_081E2BB9
 EventScript_JP_081E2BB9: @ 0x081E2BB9
 	lockall
 	compare_var_to_value 0x405E, 0x0005

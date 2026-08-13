@@ -12,10 +12,12 @@ gText_Rom_20516E: @ 0x0820516E
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_082051A2: @ 0x082051A2
 	.byte 0x00
+.globl EventScript_JP_082051A3
 EventScript_JP_082051A3: @ 0x082051A3
 	loadword 0x00, gText_Rom_205255
 	callstd 0x02
 	end
+.globl EventScript_JP_082051AC
 EventScript_JP_082051AC: @ 0x082051AC
 	lockall
 	checkflag 0x00DF
@@ -91,6 +93,7 @@ Movement_JP_0820523C: @ 0x0820523C
 	walk_in_place_fastest_down
 	delay_8
 	step_end
+.globl EventScript_JP_08205242
 EventScript_JP_08205242: @ 0x08205242
 	lock
 	faceplayer

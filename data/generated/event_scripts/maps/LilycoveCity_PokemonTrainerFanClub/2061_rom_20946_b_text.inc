@@ -24,6 +24,7 @@ EventScript_JP_082094DA: @ 0x082094DA
 	.2byte 0x000C
 	.2byte 0x0021
 	.byte 0x02
+.globl EventScript_JP_082094E3
 EventScript_JP_082094E3: @ 0x082094E3
 	lock
 	faceplayer
@@ -587,6 +588,7 @@ Movement_JP_08209B07: @ 0x08209B07
 	walk_up
 	step_end
 	.byte 0x09, 0xFE
+.globl EventScript_JP_08209B0B
 EventScript_JP_08209B0B: @ 0x08209B0B
 	lock
 	faceplayer

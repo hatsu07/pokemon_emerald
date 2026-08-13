@@ -129,6 +129,7 @@ Movement_JP_0820630F: @ 0x0820630F
 	face_up
 	delay_16
 	step_end
+.globl EventScript_JP_08206312
 EventScript_JP_08206312: @ 0x08206312
 	lockall
 	checkflag 0x00EC
@@ -197,6 +198,7 @@ EventScript_JP_082063CD: @ 0x082063CD
 	callstd 0x02
 	releaseall
 	end
+.globl EventScript_JP_082063D7
 EventScript_JP_082063D7: @ 0x082063D7
 	lockall
 	checkflag 0x00A2
@@ -204,6 +206,7 @@ EventScript_JP_082063D7: @ 0x082063D7
 	loadword 0x00, gText_Rom_206788
 	callstd 0x03
 	end
+.globl EventScript_JP_082063EA
 EventScript_JP_082063EA: @ 0x082063EA
 	lockall
 	checkflag 0x00A4
@@ -211,6 +214,7 @@ EventScript_JP_082063EA: @ 0x082063EA
 	loadword 0x00, gText_Rom_20679E
 	callstd 0x03
 	end
+.globl EventScript_JP_082063FD
 EventScript_JP_082063FD: @ 0x082063FD
 	lockall
 	checkflag 0x00A0
@@ -218,6 +222,7 @@ EventScript_JP_082063FD: @ 0x082063FD
 	loadword 0x00, gText_Rom_2067C7
 	callstd 0x03
 	end
+.globl EventScript_JP_08206410
 EventScript_JP_08206410: @ 0x08206410
 	lockall
 	checkflag 0x00A1
@@ -225,6 +230,7 @@ EventScript_JP_08206410: @ 0x08206410
 	loadword 0x00, gText_Rom_2067B3
 	callstd 0x03
 	end
+.globl EventScript_JP_08206423
 EventScript_JP_08206423: @ 0x08206423
 	lockall
 	checkflag 0x00A3
@@ -232,14 +238,17 @@ EventScript_JP_08206423: @ 0x08206423
 	loadword 0x00, gText_Rom_2067DB
 	callstd 0x03
 	end
+.globl EventScript_JP_08206436
 EventScript_JP_08206436: @ 0x08206436
 	loadword 0x00, gText_Rom_206803
 	callstd 0x02
 	end
+.globl EventScript_JP_0820643F
 EventScript_JP_0820643F: @ 0x0820643F
 	loadword 0x00, gText_Rom_20684E
 	callstd 0x02
 	end
+.globl EventScript_JP_08206448
 EventScript_JP_08206448: @ 0x08206448
 	loadword 0x00, gText_Rom_206898
 	callstd 0x02

@@ -12,10 +12,12 @@ gText_Rom_209F4A: @ 0x08209F4A
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08209F66: @ 0x08209F66
 	.byte 0x00
+.globl EventScript_JP_08209F67
 EventScript_JP_08209F67: @ 0x08209F67
 	loadword 0x00, gText_Rom_209F83
 	callstd 0x02
 	end
+.globl EventScript_JP_08209F70
 EventScript_JP_08209F70: @ 0x08209F70
 	lock
 	faceplayer

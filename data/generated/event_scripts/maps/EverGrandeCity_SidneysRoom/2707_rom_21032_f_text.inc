@@ -51,6 +51,7 @@ EventScript_JP_082103BC: @ 0x082103BC
 EventScript_JP_082103C2: @ 0x082103C2
 	call 0x082435E2
 	return
+.globl EventScript_JP_082103C8
 EventScript_JP_082103C8: @ 0x082103C8
 	lock
 	faceplayer

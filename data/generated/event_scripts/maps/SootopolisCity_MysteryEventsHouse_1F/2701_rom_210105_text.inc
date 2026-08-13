@@ -162,6 +162,7 @@ EventScript_JP_0821023C: @ 0x0821023C
 	setvar 0x409C, 0x0001
 	releaseall
 	end
+.globl EventScript_JP_08210249
 EventScript_JP_08210249: @ 0x08210249
 	lock
 	faceplayer

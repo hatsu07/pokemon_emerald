@@ -30,38 +30,47 @@ EventScript_JP_081DD9E2: @ 0x081DD9E2
 	setflag 0x0390
 	setflag 0x005B
 	return
+.globl EventScript_JP_081DD9EC
 EventScript_JP_081DD9EC: @ 0x081DD9EC
 	loadword 0x00, gText_Rom_1DE4C1
 	callstd 0x02
 	end
+.globl EventScript_JP_081DD9F5
 EventScript_JP_081DD9F5: @ 0x081DD9F5
 	loadword 0x00, gText_Rom_1DE509
 	callstd 0x02
 	end
+.globl EventScript_JP_081DD9FE
 EventScript_JP_081DD9FE: @ 0x081DD9FE
 	loadword 0x00, gText_Rom_1DE53B
 	callstd 0x02
 	end
+.globl EventScript_JP_081DDA07
 EventScript_JP_081DDA07: @ 0x081DDA07
 	loadword 0x00, gText_Rom_1DE578
 	callstd 0x02
 	end
+.globl EventScript_JP_081DDA10
 EventScript_JP_081DDA10: @ 0x081DDA10
 	loadword 0x00, gText_Rom_1DE59B
 	callstd 0x03
 	end
+.globl EventScript_JP_081DDA19
 EventScript_JP_081DDA19: @ 0x081DDA19
 	loadword 0x00, gText_Rom_1DE5BA
 	callstd 0x03
 	end
+.globl EventScript_JP_081DDA22
 EventScript_JP_081DDA22: @ 0x081DDA22
 	loadword 0x00, gText_Rom_1DE5E4
 	callstd 0x03
 	end
+.globl EventScript_JP_081DDA2B
 EventScript_JP_081DDA2B: @ 0x081DDA2B
 	loadword 0x00, gText_Rom_1DE608
 	callstd 0x03
 	end
+.globl EventScript_JP_081DDA34
 EventScript_JP_081DDA34: @ 0x081DDA34
 	lock
 	faceplayer
@@ -77,6 +86,7 @@ EventScript_JP_081DDA4C: @ 0x081DDA4C
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081DDA56
 EventScript_JP_081DDA56: @ 0x081DDA56
 	lock
 	faceplayer
@@ -107,6 +117,7 @@ EventScript_JP_081DDA76: @ 0x081DDA76
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_081DDA8B
 EventScript_JP_081DDA8B: @ 0x081DDA8B
 	lockall
 	checkflag 0x011C
@@ -598,6 +609,7 @@ Movement_JP_081DDD68: @ 0x081DDD68
 	walk_left
 	walk_left
 	step_end
+.globl EventScript_JP_081DDD73
 EventScript_JP_081DDD73: @ 0x081DDD73
 	lock
 	faceplayer

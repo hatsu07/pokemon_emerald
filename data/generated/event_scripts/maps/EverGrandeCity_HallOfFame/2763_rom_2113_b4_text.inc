@@ -27,6 +27,7 @@ EventScript_JP_08211414: @ 0x08211414
 	goto_if 0x00, 0x08244178
 	clearflag 0x0319
 	return
+.globl EventScript_JP_08211421
 EventScript_JP_08211421: @ 0x08211421
 	setvar 0x800B, 0x0001
 	call 0x082429B8
@@ -34,14 +35,17 @@ EventScript_JP_08211421: @ 0x08211421
 	waitbuttonpress
 	release
 	end
+.globl EventScript_JP_0821142F
 EventScript_JP_0821142F: @ 0x0821142F
 	loadword 0x00, gText_Rom_2114A2
 	callstd 0x02
 	end
+.globl EventScript_JP_08211438
 EventScript_JP_08211438: @ 0x08211438
 	loadword 0x00, gText_Rom_2114D6
 	callstd 0x02
 	end
+.globl EventScript_JP_08211441
 EventScript_JP_08211441: @ 0x08211441
 	lock
 	faceplayer

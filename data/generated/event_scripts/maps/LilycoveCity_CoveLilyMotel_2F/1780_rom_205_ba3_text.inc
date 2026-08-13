@@ -12,10 +12,12 @@ gText_Rom_205BA3: @ 0x08205BA3
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08205BE2: @ 0x08205BE2
 	.byte 0x00
+.globl EventScript_JP_08205BE3
 EventScript_JP_08205BE3: @ 0x08205BE3
 	loadword 0x00, gText_Rom_205D75
 	callstd 0x03
 	end
+.globl EventScript_JP_08205BEC
 EventScript_JP_08205BEC: @ 0x08205BEC
 	lockall
 	@ event command: applymovement
@@ -138,66 +140,82 @@ Movement_JP_08205CCB: @ 0x08205CCB
 	walk_up
 	walk_up
 	step_end
+.globl EventScript_JP_08205CCE
 EventScript_JP_08205CCE: @ 0x08205CCE
 	loadword 0x00, gText_Rom_205EBA
 	callstd 0x03
 	end
+.globl EventScript_JP_08205CD7
 EventScript_JP_08205CD7: @ 0x08205CD7
 	loadword 0x00, gText_Rom_205EDD
 	callstd 0x03
 	end
+.globl EventScript_JP_08205CE0
 EventScript_JP_08205CE0: @ 0x08205CE0
 	loadword 0x00, gText_Rom_205EFB
 	callstd 0x03
 	end
+.globl EventScript_JP_08205CE9
 EventScript_JP_08205CE9: @ 0x08205CE9
 	loadword 0x00, gText_Rom_205F22
 	callstd 0x03
 	end
+.globl EventScript_JP_08205CF2
 EventScript_JP_08205CF2: @ 0x08205CF2
 	loadword 0x00, gText_Rom_205F45
 	callstd 0x03
 	end
+.globl EventScript_JP_08205CFB
 EventScript_JP_08205CFB: @ 0x08205CFB
 	loadword 0x00, gText_Rom_205F6E
 	callstd 0x03
 	end
+.globl EventScript_JP_08205D04
 EventScript_JP_08205D04: @ 0x08205D04
 	loadword 0x00, gText_Rom_205F90
 	callstd 0x03
 	end
+.globl EventScript_JP_08205D0D
 EventScript_JP_08205D0D: @ 0x08205D0D
 	loadword 0x00, gText_Rom_205FB5
 	callstd 0x03
 	end
+.globl EventScript_JP_08205D16
 EventScript_JP_08205D16: @ 0x08205D16
 	loadword 0x00, gText_Rom_205FE8
 	callstd 0x03
 	end
+.globl EventScript_JP_08205D1F
 EventScript_JP_08205D1F: @ 0x08205D1F
 	loadword 0x00, gText_Rom_206021
 	callstd 0x02
 	end
+.globl EventScript_JP_08205D28
 EventScript_JP_08205D28: @ 0x08205D28
 	loadword 0x00, gText_Rom_20604F
 	callstd 0x02
 	end
+.globl EventScript_JP_08205D31
 EventScript_JP_08205D31: @ 0x08205D31
 	loadword 0x00, gText_Rom_20609D
 	callstd 0x03
 	end
+.globl EventScript_JP_08205D3A
 EventScript_JP_08205D3A: @ 0x08205D3A
 	loadword 0x00, gText_Rom_2060B6
 	callstd 0x03
 	end
+.globl EventScript_JP_08205D43
 EventScript_JP_08205D43: @ 0x08205D43
 	loadword 0x00, gText_Rom_2060D2
 	callstd 0x02
 	end
+.globl EventScript_JP_08205D4C
 EventScript_JP_08205D4C: @ 0x08205D4C
 	loadword 0x00, gText_Rom_206113
 	callstd 0x02
 	end
+.globl EventScript_JP_08205D55
 EventScript_JP_08205D55: @ 0x08205D55
 	lock
 	faceplayer
@@ -213,6 +231,7 @@ EventScript_JP_08205D55: @ 0x08205D55
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_08205D6C
 EventScript_JP_08205D6C: @ 0x08205D6C
 	loadword 0x00, gText_Rom_206184
 	callstd 0x02

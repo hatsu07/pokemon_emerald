@@ -50,6 +50,7 @@ EventScript_JP_0822D70E: @ 0x0822D70E
 gUnknown_822D718: @ 0x0822D718
 	@ analyzed canonical ROM range 0x0822D718-0x0822D732
 	@ semantic recovery: script_data; byte-verified against linked ROM
+.globl EventScript_JP_0822D718
 EventScript_JP_0822D718: @ 0x0822D718
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -71,6 +72,7 @@ EventScript_JP_0822D718: @ 0x0822D718
 gUnknown_822D733: @ 0x0822D733
 	@ analyzed canonical ROM range 0x0822D733-0x0822D750
 	@ semantic recovery: script_data; byte-verified against linked ROM
+.globl EventScript_JP_0822D733
 EventScript_JP_0822D733: @ 0x0822D733
 	setvar 0x8004, 0x0007
 	@ event command: special

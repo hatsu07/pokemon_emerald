@@ -176,6 +176,7 @@ EventScript_JP_08229EE0: @ 0x08229EE0
 	.2byte 0x00E7
 	setvar 0x4000, 0x00FF
 	goto EventScript_JP_0822A0CB
+.globl EventScript_JP_08229F1C
 EventScript_JP_08229F1C: @ 0x08229F1C
 	lock
 	faceplayer
@@ -183,6 +184,7 @@ EventScript_JP_08229F1C: @ 0x08229F1C
 	setvar 0x40CE, 0x0000
 	goto EventScript_JP_08229F40
 	.byte 0x02
+.globl EventScript_JP_08229F2E
 EventScript_JP_08229F2E: @ 0x08229F2E
 	lock
 	faceplayer
@@ -449,6 +451,7 @@ Movement_JP_0822A224: @ 0x0822A224
 	walk_up
 	set_invisible
 	step_end
+.globl EventScript_JP_0822A228
 EventScript_JP_0822A228: @ 0x0822A228
 	lockall
 	setvar 0x8004, 0x0007
@@ -463,6 +466,7 @@ EventScript_JP_0822A228: @ 0x0822A228
 	.2byte 0x0209
 	releaseall
 	end
+.globl EventScript_JP_0822A241
 EventScript_JP_0822A241: @ 0x0822A241
 	lockall
 	setvar 0x8004, 0x0007
@@ -477,22 +481,27 @@ EventScript_JP_0822A241: @ 0x0822A241
 	.2byte 0x0209
 	releaseall
 	end
+.globl EventScript_JP_0822A25A
 EventScript_JP_0822A25A: @ 0x0822A25A
 	loadword 0x00, gText_Rom_22A80A
 	callstd 0x02
 	end
+.globl EventScript_JP_0822A263
 EventScript_JP_0822A263: @ 0x0822A263
 	loadword 0x00, gText_Rom_22A8D9
 	callstd 0x02
 	end
+.globl EventScript_JP_0822A26C
 EventScript_JP_0822A26C: @ 0x0822A26C
 	loadword 0x00, gText_Rom_22A977
 	callstd 0x02
 	end
+.globl EventScript_JP_0822A275
 EventScript_JP_0822A275: @ 0x0822A275
 	loadword 0x00, gText_Rom_22A9D6
 	callstd 0x02
 	end
+.globl EventScript_JP_0822A27E
 EventScript_JP_0822A27E: @ 0x0822A27E
 	lockall
 	loadword 0x00, gText_Rom_22AC3F

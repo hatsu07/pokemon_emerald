@@ -11,6 +11,7 @@ gText_Rom_209D18: @ 0x08209D18
 	@ analyzed canonical ROM range 0x08209D70-0x08209E62
 	@ semantic recovery: script_data; byte-verified against linked ROM
 	.byte 0x00
+.globl EventScript_JP_08209D71
 EventScript_JP_08209D71: @ 0x08209D71
 	lockall
 	@ event command: applymovement

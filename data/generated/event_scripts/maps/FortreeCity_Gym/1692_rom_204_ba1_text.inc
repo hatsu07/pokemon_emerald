@@ -20,6 +20,7 @@ MapScripts_JP_08204C5D: @ 0x08204C5D
 EventScript_JP_08204C68: @ 0x08204C68
 	setrespawn 0x0007
 	end
+.globl EventScript_JP_08204C6C
 EventScript_JP_08204C6C: @ 0x08204C6C
 	setvar 0x800B, 0x0001
 	call 0x082429B8
@@ -27,14 +28,17 @@ EventScript_JP_08204C6C: @ 0x08204C6C
 	waitbuttonpress
 	release
 	end
+.globl EventScript_JP_08204C7A
 EventScript_JP_08204C7A: @ 0x08204C7A
 	loadword 0x00, gText_Rom_204C95
 	callstd 0x02
 	end
+.globl EventScript_JP_08204C83
 EventScript_JP_08204C83: @ 0x08204C83
 	loadword 0x00, gText_Rom_204CCE
 	callstd 0x02
 	end
+.globl EventScript_JP_08204C8C
 EventScript_JP_08204C8C: @ 0x08204C8C
 	loadword 0x00, gText_Rom_204D21
 	callstd 0x02

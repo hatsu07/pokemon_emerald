@@ -11,9 +11,9 @@ gText_Rom_256733: @ 0x08256733
 	.endif
 	@ analyzed canonical ROM range 0x08256754-0x08256796
 	@ semantic recovery: script_data; byte-verified against linked ROM
-EventScript_08256754: @ 0x08256754
-EventScript_JP_08256754: @ 0x08256754
-	lockall
+.globl EventScript_StrengthBoulder
+EventScript_StrengthBoulder: @ 0x08256754
+lockall
 	checkflag 0x086A
 	goto_if 0x00, EventScript_JP_082567AF
 	checkflag 0x0889

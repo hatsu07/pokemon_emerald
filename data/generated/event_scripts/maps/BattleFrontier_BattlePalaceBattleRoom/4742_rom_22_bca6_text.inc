@@ -175,6 +175,7 @@ EventScript_JP_0822BE19: @ 0x0822BE19
 	end
 EventScript_JP_0822BE73: @ 0x0822BE73
 	goto EventScript_JP_0822BFE8
+.globl EventScript_JP_0822BE78
 EventScript_JP_0822BE78: @ 0x0822BE78
 	lock
 	faceplayer
@@ -353,6 +354,7 @@ EventScript_JP_0822C08B: @ 0x0822C08B
 EventScript_JP_0822C093: @ 0x0822C093
 	release
 	end
+.globl EventScript_JP_0822C095
 EventScript_JP_0822C095: @ 0x0822C095
 	lockall
 	@ event command: applymovement
@@ -552,6 +554,7 @@ EventScript_JP_0822C300: @ 0x0822C300
 	loadword 0x00, gText_Rom_22D187
 	callstd 0x04
 	return
+.globl EventScript_JP_0822C309
 EventScript_JP_0822C309: @ 0x0822C309
 	lockall
 	setvar 0x8004, 0x0007
@@ -707,14 +710,17 @@ EventScript_JP_0822C436: @ 0x0822C436
 	waitmessage
 	goto EventScript_JP_0822C3D0
 	.byte 0x02
+.globl EventScript_JP_0822C44A
 EventScript_JP_0822C44A: @ 0x0822C44A
 	loadword 0x00, gText_Rom_22D202
 	callstd 0x02
 	end
+.globl EventScript_JP_0822C453
 EventScript_JP_0822C453: @ 0x0822C453
 	loadword 0x00, gText_Rom_22D276
 	callstd 0x02
 	end
+.globl EventScript_JP_0822C45C
 EventScript_JP_0822C45C: @ 0x0822C45C
 	lockall
 	loadword 0x00, gText_Rom_22D31A

@@ -135,6 +135,7 @@ EventScript_JP_08253C91: @ 0x08253C91
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08253C9B
 EventScript_JP_08253C9B: @ 0x08253C9B
 	lock
 	faceplayer
@@ -193,6 +194,7 @@ EventScript_JP_08253D51: @ 0x08253D51
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08253D5B
 EventScript_JP_08253D5B: @ 0x08253D5B
 	lock
 	faceplayer
@@ -274,6 +276,7 @@ EventScript_JP_08253E67: @ 0x08253E67
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08253E71
 EventScript_JP_08253E71: @ 0x08253E71
 	lock
 	faceplayer
@@ -366,6 +369,7 @@ EventScript_JP_08253FA9: @ 0x08253FA9
 	return
 EventScript_JP_08253FAD: @ 0x08253FAD
 	return
+.globl EventScript_JP_08253FAE
 EventScript_JP_08253FAE: @ 0x08253FAE
 	lock
 	faceplayer
@@ -461,6 +465,7 @@ EventScript_JP_08254092: @ 0x08254092
 	.byte 0x03, 0x03, 0x29, 0x85, 0x03, 0x03, 0x2A, 0x85, 0x03, 0x03, 0x29, 0x86, 0x03, 0x03, 0x2A, 0x86
 	.byte 0x03, 0x03, 0x29, 0x87, 0x03, 0x03, 0x2A, 0x87, 0x03, 0x03, 0x29, 0x88, 0x03, 0x03, 0x2A, 0x88
 	.byte 0x03, 0x03
+.globl EventScript_JP_082541EE
 EventScript_JP_082541EE: @ 0x082541EE
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -475,6 +480,7 @@ EventScript_JP_082541EE: @ 0x082541EE
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0825420E
 EventScript_JP_0825420E: @ 0x0825420E
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -489,6 +495,7 @@ EventScript_JP_0825420E: @ 0x0825420E
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0825422E
 EventScript_JP_0825422E: @ 0x0825422E
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -503,6 +510,7 @@ EventScript_JP_0825422E: @ 0x0825422E
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0825424E
 EventScript_JP_0825424E: @ 0x0825424E
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -517,6 +525,7 @@ EventScript_JP_0825424E: @ 0x0825424E
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0825426E
 EventScript_JP_0825426E: @ 0x0825426E
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -531,6 +540,7 @@ EventScript_JP_0825426E: @ 0x0825426E
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0825428E
 EventScript_JP_0825428E: @ 0x0825428E
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -545,6 +555,7 @@ EventScript_JP_0825428E: @ 0x0825428E
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_082542AE
 EventScript_JP_082542AE: @ 0x082542AE
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -559,6 +570,7 @@ EventScript_JP_082542AE: @ 0x082542AE
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_082542CE
 EventScript_JP_082542CE: @ 0x082542CE
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -573,6 +585,7 @@ EventScript_JP_082542CE: @ 0x082542CE
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_082542EE
 EventScript_JP_082542EE: @ 0x082542EE
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -587,6 +600,7 @@ EventScript_JP_082542EE: @ 0x082542EE
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0825430E
 EventScript_JP_0825430E: @ 0x0825430E
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -601,6 +615,7 @@ EventScript_JP_0825430E: @ 0x0825430E
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0825432E
 EventScript_JP_0825432E: @ 0x0825432E
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -615,6 +630,7 @@ EventScript_JP_0825432E: @ 0x0825432E
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0825434E
 EventScript_JP_0825434E: @ 0x0825434E
 	@ event command: trainerbattle
 	.byte 0x5C

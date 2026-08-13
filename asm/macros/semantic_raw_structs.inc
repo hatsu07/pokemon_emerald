@@ -81,4 +81,66 @@
     .4byte \tiles, \palettes, \metatiles, \metatile_attributes, \callback
 .endm
 
+
+@ struct SpriteSheet { const void *data; u16 size; u16 tag; }
+.macro semantic_sprite_sheet data:req, size:req, tag:req
+    .4byte \data
+    .2byte \size
+    .2byte \tag
+.endm
+
+@ Battle animation data helpers.
+.macro semantic_animcmd_frame frame:req, duration:req
+    .2byte \frame
+    .2byte \duration
+.endm
+
+.macro semantic_animcmd_jump target:req
+    .2byte 0xFFFE
+    .2byte \target
+.endm
+
+.macro semantic_animcmd_end
+    .2byte 0xFFFF
+    .2byte 0
+.endm
+
+.macro semantic_anim_table_entry anim:req
+    .4byte \anim
+.endm
+
+.macro semantic_affine_animcmd_frame x_scale:req, y_scale:req, rotation:req, duration:req
+    .2byte \x_scale
+    .2byte \y_scale
+    .byte \rotation
+    .byte \duration
+    .2byte 0
+.endm
+
+.macro semantic_affine_animcmd_jump target:req
+    .2byte 0x7FFE
+    .2byte \target
+    .4byte 0
+.endm
+
+.macro semantic_affine_anim_table_entry anim:req
+    .4byte \anim
+.endm
+
+.macro semantic_sprite_template tile_tag:req, palette_tag:req, oam:req, anims:req, images:req, affine_anims:req, callback:req
+    .2byte \tile_tag
+    .2byte \palette_tag
+    .4byte \oam
+    .4byte \anims
+    .4byte \images
+    .4byte \affine_anims
+    .4byte \callback
+.endm
+
+.macro semantic_subsprite x:req, y:req, shape:req, size:req, tile_offset:req, priority:req
+    .byte \x
+    .byte \y
+    .2byte ((\shape) & 3) | (((\size) & 3) << 2) | (((\tile_offset) & 0x3FF) << 4) | (((\priority) & 3) << 14)
+.endm
+
 .endif @ SEMANTIC_RAW_STRUCTS_INCLUDED

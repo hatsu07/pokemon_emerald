@@ -2,8 +2,7 @@
 	@ Priority A: battle status-effect structs and title-screen assets.
 	@ Priority A external targets identified from battle_anim_status_effects consumers.
 	@ Local aliases emit no bytes and avoid depending on C static symbol visibility.
-	.set gPriorityABattleAnimFrozenIceCubeSubsprites, 0x0851768C
-	.set gPriorityABattleAnimFrozenIceCubeOam, 0x084FD148 @ gOamData_AffineOff_ObjBlend_64x64
+.set gPriorityABattleAnimFrozenIceCubeOam, 0x084FD148 @ gOamData_AffineOff_ObjBlend_64x64
 	.set gPriorityABattleAnimFlashingCircleImpactOam, 0x084FD010 @ gOamData_AffineOff_ObjNormal_8x8
 	.set gPriorityABattleAnimDummySpriteAnimTable, 0x082BF304 @ gDummySpriteAnimTable
 	.set gPriorityABattleAnimDummySpriteAffineAnimTable, 0x082BF310 @ gDummySpriteAffineAnimTable
@@ -11,7 +10,7 @@
 	.set gPriorityABattleAnimFlashingCircleImpactCallback, 0x080A970D @ AnimFlashingCircleImpact (Thumb)
 	.globl gBattleAnimFrozenIceCubeSubspriteTable
 gBattleAnimFrozenIceCubeSubspriteTable: @ 0x0851769C
-	rodata_subsprite_table 4, gPriorityABattleAnimFrozenIceCubeSubsprites
+	rodata_subsprite_table 4, sFrozenIceCubeSubsprites
 	.globl gBattleAnimFrozenIceCubeSpriteTemplate
 gBattleAnimFrozenIceCubeSpriteTemplate: @ 0x085176A4
 	rodata_sprite_template 0x271A, 0x271A, gPriorityABattleAnimFrozenIceCubeOam, gPriorityABattleAnimDummySpriteAnimTable, 0, gPriorityABattleAnimDummySpriteAffineAnimTable, gPriorityABattleAnimSpriteCallbackDummy

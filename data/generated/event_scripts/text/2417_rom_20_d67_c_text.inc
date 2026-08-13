@@ -160,6 +160,7 @@ Movement_JP_0820D7B3: @ 0x0820D7B3
 	walk_right
 	unlock_facing_direction
 	step_end
+.globl EventScript_JP_0820D7B7
 EventScript_JP_0820D7B7: @ 0x0820D7B7
 	lock
 	faceplayer
@@ -181,6 +182,7 @@ EventScript_JP_0820D7E8: @ 0x0820D7E8
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0820D7F2
 EventScript_JP_0820D7F2: @ 0x0820D7F2
 	lock
 	faceplayer
@@ -202,6 +204,7 @@ EventScript_JP_0820D823: @ 0x0820D823
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0820D82D
 EventScript_JP_0820D82D: @ 0x0820D82D
 	lock
 	faceplayer
@@ -223,18 +226,22 @@ EventScript_JP_0820D85E: @ 0x0820D85E
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0820D868
 EventScript_JP_0820D868: @ 0x0820D868
 	loadword 0x00, gText_Rom_20DCB7
 	callstd 0x02
 	end
+.globl EventScript_JP_0820D871
 EventScript_JP_0820D871: @ 0x0820D871
 	loadword 0x00, gText_Rom_20DCC6
 	callstd 0x02
 	end
+.globl EventScript_JP_0820D87A
 EventScript_JP_0820D87A: @ 0x0820D87A
 	loadword 0x00, gText_Rom_20DCE5
 	callstd 0x02
 	end
+.globl EventScript_JP_0820D883
 EventScript_JP_0820D883: @ 0x0820D883
 	lock
 	faceplayer
@@ -249,12 +256,14 @@ EventScript_JP_0820D883: @ 0x0820D883
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_0820D899
 EventScript_JP_0820D899: @ 0x0820D899
 	lockall
 	loadword 0x00, gText_Rom_20DD52
 	callstd 0x04
 	releaseall
 	end
+.globl EventScript_JP_0820D8A4
 EventScript_JP_0820D8A4: @ 0x0820D8A4
 	lockall
 	checkflag 0x00CD

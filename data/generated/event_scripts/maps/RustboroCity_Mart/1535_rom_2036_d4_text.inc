@@ -12,10 +12,12 @@ gText_Rom_2036D4: @ 0x082036D4
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08203714: @ 0x08203714
 	.byte 0x00
+.globl EventScript_JP_08203715
 EventScript_JP_08203715: @ 0x08203715
 	loadword 0x00, gText_Rom_203727
 	callstd 0x02
 	end
+.globl EventScript_JP_0820371E
 EventScript_JP_0820371E: @ 0x0820371E
 	loadword 0x00, gText_Rom_203755
 	callstd 0x02

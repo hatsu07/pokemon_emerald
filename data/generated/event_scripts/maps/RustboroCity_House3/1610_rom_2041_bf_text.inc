@@ -11,6 +11,7 @@ gText_Rom_2041BF: @ 0x082041BF
 	@ analyzed canonical ROM range 0x082041CA-0x0820428A
 	@ semantic recovery: script_data; byte-verified against linked ROM
 	.byte 0x00
+.globl EventScript_JP_082041CB
 EventScript_JP_082041CB: @ 0x082041CB
 	lock
 	faceplayer
@@ -67,10 +68,12 @@ EventScript_JP_08204265: @ 0x08204265
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0820426F
 EventScript_JP_0820426F: @ 0x0820426F
 	loadword 0x00, gText_Rom_20435F
 	callstd 0x02
 	end
+.globl EventScript_JP_08204278
 EventScript_JP_08204278: @ 0x08204278
 	lock
 	faceplayer

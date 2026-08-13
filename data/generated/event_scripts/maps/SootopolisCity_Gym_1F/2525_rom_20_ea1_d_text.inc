@@ -11,6 +11,7 @@ gText_Rom_20EA1D: @ 0x0820EA1D
 	@ analyzed canonical ROM range 0x0820EAC6-0x0820EBAC
 	@ semantic recovery: script_data; byte-verified against linked ROM
 	.byte 0x00
+.globl EventScript_JP_0820EAC7
 EventScript_JP_0820EAC7: @ 0x0820EAC7
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -22,6 +23,7 @@ EventScript_JP_0820EAC7: @ 0x0820EAC7
 	loadword 0x00, gText_Rom_20EBE4
 	callstd 0x06
 	end
+.globl EventScript_JP_0820EADE
 EventScript_JP_0820EADE: @ 0x0820EADE
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -33,6 +35,7 @@ EventScript_JP_0820EADE: @ 0x0820EADE
 	loadword 0x00, gText_Rom_20EC47
 	callstd 0x06
 	end
+.globl EventScript_JP_0820EAF5
 EventScript_JP_0820EAF5: @ 0x0820EAF5
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -44,6 +47,7 @@ EventScript_JP_0820EAF5: @ 0x0820EAF5
 	loadword 0x00, gText_Rom_20EFB2
 	callstd 0x06
 	end
+.globl EventScript_JP_0820EB0C
 EventScript_JP_0820EB0C: @ 0x0820EB0C
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -55,6 +59,7 @@ EventScript_JP_0820EB0C: @ 0x0820EB0C
 	loadword 0x00, gText_Rom_20ED25
 	callstd 0x06
 	end
+.globl EventScript_JP_0820EB23
 EventScript_JP_0820EB23: @ 0x0820EB23
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -66,6 +71,7 @@ EventScript_JP_0820EB23: @ 0x0820EB23
 	loadword 0x00, gText_Rom_20ED9C
 	callstd 0x06
 	end
+.globl EventScript_JP_0820EB3A
 EventScript_JP_0820EB3A: @ 0x0820EB3A
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -77,6 +83,7 @@ EventScript_JP_0820EB3A: @ 0x0820EB3A
 	loadword 0x00, gText_Rom_20EE1C
 	callstd 0x06
 	end
+.globl EventScript_JP_0820EB51
 EventScript_JP_0820EB51: @ 0x0820EB51
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -88,6 +95,7 @@ EventScript_JP_0820EB51: @ 0x0820EB51
 	loadword 0x00, gText_Rom_20EE7C
 	callstd 0x06
 	end
+.globl EventScript_JP_0820EB68
 EventScript_JP_0820EB68: @ 0x0820EB68
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -99,6 +107,7 @@ EventScript_JP_0820EB68: @ 0x0820EB68
 	loadword 0x00, gText_Rom_20EECD
 	callstd 0x06
 	end
+.globl EventScript_JP_0820EB7F
 EventScript_JP_0820EB7F: @ 0x0820EB7F
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -110,6 +119,7 @@ EventScript_JP_0820EB7F: @ 0x0820EB7F
 	loadword 0x00, gText_Rom_20EF29
 	callstd 0x06
 	end
+.globl EventScript_JP_0820EB96
 EventScript_JP_0820EB96: @ 0x0820EB96
 	@ event command: trainerbattle
 	.byte 0x5C

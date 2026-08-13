@@ -80,11 +80,13 @@ EventScript_JP_08257F4F: @ 0x08257F4F
 	.2byte 0x0000
 	releaseall
 	end
+.globl EventScript_JP_08257F6B
 EventScript_JP_08257F6B: @ 0x08257F6B
 	lockall
 	setvar 0x8004, 0x0000
 	goto EventScript_JP_08257F83
 	.byte 0x02
+.globl EventScript_JP_08257F77
 EventScript_JP_08257F77: @ 0x08257F77
 	lockall
 	setvar 0x8004, 0x0001
@@ -398,6 +400,7 @@ Movement_JP_082581AB: @ 0x082581AB
 	walk_down
 	walk_in_place_fastest_left
 	step_end
+.globl EventScript_JP_082581AF
 EventScript_JP_082581AF: @ 0x082581AF
 	lock
 	faceplayer
@@ -480,6 +483,7 @@ EventScript_JP_0825829A: @ 0x0825829A
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_082582A4
 EventScript_JP_082582A4: @ 0x082582A4
 	lock
 	faceplayer
@@ -490,6 +494,7 @@ EventScript_JP_082582A4: @ 0x082582A4
 	waitmoncry
 	release
 	end
+.globl EventScript_JP_082582B7
 EventScript_JP_082582B7: @ 0x082582B7
 	lock
 	faceplayer

@@ -195,6 +195,7 @@ Movement_JP_081DE896: @ 0x081DE896
 	@ object movement sequence
 	walk_up
 	step_end
+.globl EventScript_JP_081DE898
 EventScript_JP_081DE898: @ 0x081DE898
 	lock
 	faceplayer
@@ -209,6 +210,7 @@ EventScript_JP_081DE8AD: @ 0x081DE8AD
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081DE8B7
 EventScript_JP_081DE8B7: @ 0x081DE8B7
 	lock
 	faceplayer
@@ -216,10 +218,12 @@ EventScript_JP_081DE8B7: @ 0x081DE8B7
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081DE8C3
 EventScript_JP_081DE8C3: @ 0x081DE8C3
 	loadword 0x00, gText_Rom_1DF3AA
 	callstd 0x02
 	end
+.globl EventScript_JP_081DE8CC
 EventScript_JP_081DE8CC: @ 0x081DE8CC
 	lock
 	faceplayer
@@ -234,6 +238,7 @@ EventScript_JP_081DE8E1: @ 0x081DE8E1
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081DE8EB
 EventScript_JP_081DE8EB: @ 0x081DE8EB
 	lock
 	faceplayer
@@ -248,39 +253,48 @@ EventScript_JP_081DE900: @ 0x081DE900
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081DE90A
 EventScript_JP_081DE90A: @ 0x081DE90A
 	loadword 0x00, gText_Rom_1DF498
 	callstd 0x02
 	end
+.globl EventScript_JP_081DE913
 EventScript_JP_081DE913: @ 0x081DE913
 	loadword 0x00, gText_Rom_1DF4C9
 	callstd 0x03
 	end
+.globl EventScript_JP_081DE91C
 EventScript_JP_081DE91C: @ 0x081DE91C
 	loadword 0x00, gText_Rom_1DFADC
 	callstd 0x03
 	end
+.globl EventScript_JP_081DE925
 EventScript_JP_081DE925: @ 0x081DE925
 	loadword 0x00, gText_Rom_1DFB27
 	callstd 0x03
 	end
+.globl EventScript_JP_081DE92E
 EventScript_JP_081DE92E: @ 0x081DE92E
 	loadword 0x00, gText_Rom_1DFB54
 	callstd 0x03
 	end
 	.byte 0x0F, 0x00, 0x7E, 0xFB, 0x1D, 0x08, 0x09, 0x03, 0x02
+.globl EventScript_JP_081DE940
 EventScript_JP_081DE940: @ 0x081DE940
 	loadword 0x00, gText_Rom_1DFBB4
 	callstd 0x03
 	end
+.globl EventScript_JP_081DE949
 EventScript_JP_081DE949: @ 0x081DE949
 	loadword 0x00, gText_Rom_1DFBDC
 	callstd 0x03
 	end
+.globl EventScript_JP_081DE952
 EventScript_JP_081DE952: @ 0x081DE952
 	loadword 0x00, gText_Rom_1DFC05
 	callstd 0x03
 	end
+.globl EventScript_JP_081DE95B
 EventScript_JP_081DE95B: @ 0x081DE95B
 	lock
 	faceplayer
@@ -295,6 +309,7 @@ EventScript_JP_081DE95B: @ 0x081DE95B
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_081DE971
 EventScript_JP_081DE971: @ 0x081DE971
 	lock
 	faceplayer
@@ -309,6 +324,7 @@ EventScript_JP_081DE971: @ 0x081DE971
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_081DE987
 EventScript_JP_081DE987: @ 0x081DE987
 	lock
 	faceplayer
@@ -316,6 +332,7 @@ EventScript_JP_081DE987: @ 0x081DE987
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081DE993
 EventScript_JP_081DE993: @ 0x081DE993
 	lockall
 	setobjectxyperm 0x0009, 0x000E, 0x0015
@@ -323,6 +340,7 @@ EventScript_JP_081DE993: @ 0x081DE993
 	setvar 0x8004, 0x0000
 	goto EventScript_JP_081DEA06
 	.byte 0x02
+.globl EventScript_JP_081DE9AA
 EventScript_JP_081DE9AA: @ 0x081DE9AA
 	lockall
 	setobjectxyperm 0x0009, 0x000E, 0x0015
@@ -330,6 +348,7 @@ EventScript_JP_081DE9AA: @ 0x081DE9AA
 	setvar 0x8004, 0x0001
 	goto EventScript_JP_081DEA06
 	.byte 0x02
+.globl EventScript_JP_081DE9C1
 EventScript_JP_081DE9C1: @ 0x081DE9C1
 	lockall
 	setobjectxyperm 0x0009, 0x000E, 0x0015
@@ -337,6 +356,7 @@ EventScript_JP_081DE9C1: @ 0x081DE9C1
 	setvar 0x8004, 0x0002
 	goto EventScript_JP_081DEA06
 	.byte 0x02
+.globl EventScript_JP_081DE9D8
 EventScript_JP_081DE9D8: @ 0x081DE9D8
 	lockall
 	setobjectxyperm 0x0009, 0x000E, 0x0015
@@ -344,6 +364,7 @@ EventScript_JP_081DE9D8: @ 0x081DE9D8
 	setvar 0x8004, 0x0003
 	goto EventScript_JP_081DEA06
 	.byte 0x02
+.globl EventScript_JP_081DE9EF
 EventScript_JP_081DE9EF: @ 0x081DE9EF
 	lockall
 	setobjectxyperm 0x0009, 0x000E, 0x0015
@@ -454,6 +475,7 @@ Movement_JP_081DEAF2: @ 0x081DEAF2
 	step_end
 	.byte 0x08, 0x0B, 0x0B, 0xFE, 0x08, 0x08, 0x0B, 0x0B, 0xFE, 0x08, 0x08, 0x0B, 0x0B, 0xFE, 0x08, 0x08
 	.byte 0x08, 0x0B, 0x0B, 0xFE, 0x08, 0x08, 0x08, 0x0B, 0x0B, 0x0B, 0x25, 0xFE
+.globl EventScript_JP_081DEB16
 EventScript_JP_081DEB16: @ 0x081DEB16
 	lock
 	faceplayer
@@ -468,21 +490,25 @@ EventScript_JP_081DEB2B: @ 0x081DEB2B
 	setvar 0x4001, 0x0004
 	goto EventScript_JP_081DEC94
 	.byte 0x02
+.globl EventScript_JP_081DEB37
 EventScript_JP_081DEB37: @ 0x081DEB37
 	lockall
 	setvar 0x4001, 0x0000
 	goto EventScript_JP_081DEB67
 	.byte 0x02
+.globl EventScript_JP_081DEB43
 EventScript_JP_081DEB43: @ 0x081DEB43
 	lockall
 	setvar 0x4001, 0x0001
 	goto EventScript_JP_081DEB67
 	.byte 0x02
+.globl EventScript_JP_081DEB4F
 EventScript_JP_081DEB4F: @ 0x081DEB4F
 	lockall
 	setvar 0x4001, 0x0002
 	goto EventScript_JP_081DEB67
 	.byte 0x02
+.globl EventScript_JP_081DEB5B
 EventScript_JP_081DEB5B: @ 0x081DEB5B
 	lockall
 	setvar 0x4001, 0x0003
@@ -639,21 +665,25 @@ Movement_JP_081DEC62: @ 0x081DEC62
 	@ object movement sequence
 	walk_down
 	step_end
+.globl EventScript_JP_081DEC64
 EventScript_JP_081DEC64: @ 0x081DEC64
 	lockall
 	setvar 0x4001, 0x0000
 	goto EventScript_JP_081DEC94
 	.byte 0x02
+.globl EventScript_JP_081DEC70
 EventScript_JP_081DEC70: @ 0x081DEC70
 	lockall
 	setvar 0x4001, 0x0001
 	goto EventScript_JP_081DEC94
 	.byte 0x02
+.globl EventScript_JP_081DEC7C
 EventScript_JP_081DEC7C: @ 0x081DEC7C
 	lockall
 	setvar 0x4001, 0x0002
 	goto EventScript_JP_081DEC94
 	.byte 0x02
+.globl EventScript_JP_081DEC88
 EventScript_JP_081DEC88: @ 0x081DEC88
 	lockall
 	setvar 0x4001, 0x0003
@@ -851,6 +881,7 @@ EventScript_JP_081DEDCF: @ 0x081DEDCF
 	.byte 0x51
 	.2byte 0x0000
 	return
+.globl EventScript_JP_081DEDF1
 EventScript_JP_081DEDF1: @ 0x081DEDF1
 	lockall
 	checkflag 0x0120
@@ -876,6 +907,7 @@ EventScript_JP_081DEE22: @ 0x081DEE22
 EventScript_JP_081DEE27: @ 0x081DEE27
 	playbgm 0x01A5, 0x01
 	return
+.globl EventScript_JP_081DEE2C
 EventScript_JP_081DEE2C: @ 0x081DEE2C
 	lockall
 	call EventScript_JP_081DEE0A
@@ -916,6 +948,7 @@ EventScript_JP_081DEE2C: @ 0x081DEE2C
 	.byte 0x51
 	.2byte 0x0000
 	goto EventScript_JP_081DF02C
+.globl EventScript_JP_081DEE6C
 EventScript_JP_081DEE6C: @ 0x081DEE6C
 	lockall
 	call EventScript_JP_081DEE0A
@@ -956,6 +989,7 @@ EventScript_JP_081DEE6C: @ 0x081DEE6C
 	.byte 0x51
 	.2byte 0x0000
 	goto EventScript_JP_081DF02C
+.globl EventScript_JP_081DEEAC
 EventScript_JP_081DEEAC: @ 0x081DEEAC
 	lockall
 	call EventScript_JP_081DEE0A
@@ -996,6 +1030,7 @@ EventScript_JP_081DEEAC: @ 0x081DEEAC
 	.byte 0x51
 	.2byte 0x0000
 	goto EventScript_JP_081DF02C
+.globl EventScript_JP_081DEEEC
 EventScript_JP_081DEEEC: @ 0x081DEEEC
 	lockall
 	call EventScript_JP_081DEE0A
@@ -1036,6 +1071,7 @@ EventScript_JP_081DEEEC: @ 0x081DEEEC
 	.byte 0x51
 	.2byte 0x0000
 	goto EventScript_JP_081DF02C
+.globl EventScript_JP_081DEF2C
 EventScript_JP_081DEF2C: @ 0x081DEF2C
 	lockall
 	call EventScript_JP_081DEE0A
@@ -1076,6 +1112,7 @@ EventScript_JP_081DEF2C: @ 0x081DEF2C
 	.byte 0x51
 	.2byte 0x0000
 	goto EventScript_JP_081DF02C
+.globl EventScript_JP_081DEF6C
 EventScript_JP_081DEF6C: @ 0x081DEF6C
 	lockall
 	call EventScript_JP_081DEE0A
@@ -1116,6 +1153,7 @@ EventScript_JP_081DEF6C: @ 0x081DEF6C
 	.byte 0x51
 	.2byte 0x0000
 	goto EventScript_JP_081DF02C
+.globl EventScript_JP_081DEFAC
 EventScript_JP_081DEFAC: @ 0x081DEFAC
 	lockall
 	call EventScript_JP_081DEE0A
@@ -1156,6 +1194,7 @@ EventScript_JP_081DEFAC: @ 0x081DEFAC
 	.byte 0x51
 	.2byte 0x0000
 	goto EventScript_JP_081DF02C
+.globl EventScript_JP_081DEFEC
 EventScript_JP_081DEFEC: @ 0x081DEFEC
 	lockall
 	call EventScript_JP_081DEE0A
@@ -1435,6 +1474,7 @@ Movement_JP_081DF269: @ 0x081DF269
 	walk_right
 	walk_down
 	step_end
+.globl EventScript_JP_081DF26F
 EventScript_JP_081DF26F: @ 0x081DF26F
 	loadword 0x00, gText_Rom_1DFD5D
 	callstd 0x02

@@ -20,6 +20,7 @@ MapScripts_JP_0820EFD5: @ 0x0820EFD5
 EventScript_JP_0820EFE0: @ 0x0820EFE0
 	setrespawn 0x000A
 	end
+.globl EventScript_JP_0820EFE4
 EventScript_JP_0820EFE4: @ 0x0820EFE4
 	setvar 0x800B, 0x0001
 	call 0x082429B8
@@ -27,6 +28,7 @@ EventScript_JP_0820EFE4: @ 0x0820EFE4
 	waitbuttonpress
 	release
 	end
+.globl EventScript_JP_0820EFF2
 EventScript_JP_0820EFF2: @ 0x0820EFF2
 	lock
 	faceplayer
@@ -43,6 +45,7 @@ EventScript_JP_0820F012: @ 0x0820F012
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0820F01C
 EventScript_JP_0820F01C: @ 0x0820F01C
 	lock
 	faceplayer

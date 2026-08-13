@@ -21,6 +21,7 @@ EventScript_JP_082034BE: @ 0x082034BE
 	setrespawn 0x0006
 	call 0x08242978
 	end
+.globl EventScript_JP_082034C7
 EventScript_JP_082034C7: @ 0x082034C7
 	setvar 0x800B, 0x0001
 	call 0x082429B8
@@ -28,14 +29,17 @@ EventScript_JP_082034C7: @ 0x082034C7
 	waitbuttonpress
 	release
 	end
+.globl EventScript_JP_082034D5
 EventScript_JP_082034D5: @ 0x082034D5
 	loadword 0x00, gText_Rom_2034F0
 	callstd 0x02
 	end
+.globl EventScript_JP_082034DE
 EventScript_JP_082034DE: @ 0x082034DE
 	loadword 0x00, gText_Rom_20353E
 	callstd 0x02
 	end
+.globl EventScript_JP_082034E7
 EventScript_JP_082034E7: @ 0x082034E7
 	loadword 0x00, gText_Rom_203580
 	callstd 0x02

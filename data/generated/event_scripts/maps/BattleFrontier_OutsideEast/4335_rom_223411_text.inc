@@ -117,6 +117,7 @@ Movement_JP_0822355A: @ 0x0822355A
 	walk_left
 	walk_in_place_fastest_down
 	step_end
+.globl EventScript_JP_0822355D
 EventScript_JP_0822355D: @ 0x0822355D
 	lock
 	faceplayer
@@ -190,6 +191,7 @@ Movement_JP_08223609: @ 0x08223609
 	walk_up
 	set_invisible
 	step_end
+.globl EventScript_JP_0822360C
 EventScript_JP_0822360C: @ 0x0822360C
 	lock
 	faceplayer
@@ -298,42 +300,49 @@ Movement_JP_082236D5: @ 0x082236D5
 	walk_fast_up
 	walk_fast_up
 	step_end
+.globl EventScript_JP_082236DE
 EventScript_JP_082236DE: @ 0x082236DE
 	lock
 	faceplayer
 	setvar 0x4002, 0x0001
 	goto EventScript_JP_08223619
 	.byte 0x02
+.globl EventScript_JP_082236EB
 EventScript_JP_082236EB: @ 0x082236EB
 	lock
 	faceplayer
 	setvar 0x4002, 0x0002
 	goto EventScript_JP_08223619
 	.byte 0x02
+.globl EventScript_JP_082236F8
 EventScript_JP_082236F8: @ 0x082236F8
 	lock
 	faceplayer
 	setvar 0x4002, 0x0003
 	goto EventScript_JP_08223619
 	.byte 0x02
+.globl EventScript_JP_08223705
 EventScript_JP_08223705: @ 0x08223705
 	lock
 	faceplayer
 	setvar 0x4002, 0x0004
 	goto EventScript_JP_08223619
 	.byte 0x02
+.globl EventScript_JP_08223712
 EventScript_JP_08223712: @ 0x08223712
 	lock
 	faceplayer
 	setvar 0x4002, 0x0005
 	goto EventScript_JP_08223619
 	.byte 0x02
+.globl EventScript_JP_0822371F
 EventScript_JP_0822371F: @ 0x0822371F
 	lock
 	faceplayer
 	setvar 0x4002, 0x0006
 	goto EventScript_JP_08223619
 	.byte 0x02
+.globl EventScript_JP_0822372C
 EventScript_JP_0822372C: @ 0x0822372C
 	lock
 	faceplayer

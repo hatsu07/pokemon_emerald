@@ -18,6 +18,7 @@ MapScripts_JP_08211DED: @ 0x08211DED
 EventScript_JP_08211DF3: @ 0x08211DF3
 	setflag 0x08A1
 	end
+.globl EventScript_JP_08211DF7
 EventScript_JP_08211DF7: @ 0x08211DF7
 	lock
 	faceplayer

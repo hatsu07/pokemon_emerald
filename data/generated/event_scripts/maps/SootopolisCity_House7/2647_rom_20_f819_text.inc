@@ -11,6 +11,7 @@ gText_Rom_20F819: @ 0x0820F819
 	@ analyzed canonical ROM range 0x0820F861-0x0820F99F
 	@ semantic recovery: script_data; byte-verified against linked ROM
 	.byte 0x00
+.globl EventScript_JP_0820F862
 EventScript_JP_0820F862: @ 0x0820F862
 	@ event command: special
 	.byte 0x25
@@ -68,6 +69,7 @@ EventScript_JP_0820F8E9: @ 0x0820F8E9
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0820F8F3
 EventScript_JP_0820F8F3: @ 0x0820F8F3
 	@ event command: special
 	.byte 0x25
@@ -125,6 +127,7 @@ EventScript_JP_0820F97A: @ 0x0820F97A
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0820F984
 EventScript_JP_0820F984: @ 0x0820F984
 	@ event command: special
 	.byte 0x25
@@ -134,6 +137,7 @@ EventScript_JP_0820F984: @ 0x0820F984
 	callstd 0x04
 	releaseall
 	end
+.globl EventScript_JP_0820F992
 EventScript_JP_0820F992: @ 0x0820F992
 	@ event command: special
 	.byte 0x25

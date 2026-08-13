@@ -11,6 +11,7 @@ gText_Rom_258D2D: @ 0x08258D2D
 	.endif
 	@ analyzed canonical ROM range 0x08258D6E-0x082593C4
 	@ semantic recovery: script_data; byte-verified against linked ROM
+.globl EventScript_JP_08258D6E
 EventScript_JP_08258D6E: @ 0x08258D6E
 	lockall
 	checkflag 0x0340
@@ -106,6 +107,7 @@ EventScript_JP_08258E73: @ 0x08258E73
 	callstd 0x04
 	releaseall
 	end
+.globl EventScript_JP_08258E7D
 EventScript_JP_08258E7D: @ 0x08258E7D
 	lockall
 	setvar 0x8009, 0x0002
@@ -178,6 +180,7 @@ EventScript_JP_08258F44: @ 0x08258F44
 	callstd 0x04
 	releaseall
 	end
+.globl EventScript_JP_08258F4E
 EventScript_JP_08258F4E: @ 0x08258F4E
 	lockall
 	setvar 0x8008, 0x000F
@@ -307,18 +310,22 @@ EventScript_JP_082590C8: @ 0x082590C8
 	callstd 0x04
 	releaseall
 	end
+.globl EventScript_JP_082590D2
 EventScript_JP_082590D2: @ 0x082590D2
 	loadword 0x00, gText_Rom_258B24
 	callstd 0x02
 	end
+.globl EventScript_JP_082590DB
 EventScript_JP_082590DB: @ 0x082590DB
 	loadword 0x00, gText_Rom_258B45
 	callstd 0x02
 	end
+.globl EventScript_JP_082590E4
 EventScript_JP_082590E4: @ 0x082590E4
 	loadword 0x00, gText_Rom_258B67
 	callstd 0x02
 	end
+.globl EventScript_JP_082590ED
 EventScript_JP_082590ED: @ 0x082590ED
 	setvar 0x8008, 0x000F
 	goto EventScript_JP_082590F8
@@ -371,6 +378,7 @@ Movement_JP_08259183: @ 0x08259183
 	@ object movement sequence
 	walk_in_place_fastest_right
 	step_end
+.globl EventScript_JP_08259185
 EventScript_JP_08259185: @ 0x08259185
 	lockall
 	specialvar_ 0x800D, 0x0031

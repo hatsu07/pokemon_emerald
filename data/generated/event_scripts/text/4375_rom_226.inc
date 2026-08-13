@@ -229,6 +229,7 @@ EventScript_JP_08226FA3: @ 0x08226FA3
 	.2byte 0x00E7
 	setvar 0x4000, 0x00FF
 	goto EventScript_JP_0822716C
+.globl EventScript_JP_08226FDF
 EventScript_JP_08226FDF: @ 0x08226FDF
 	lock
 	faceplayer
@@ -236,6 +237,7 @@ EventScript_JP_08226FDF: @ 0x08226FDF
 	setvar 0x40CE, 0x0000
 	goto EventScript_JP_08227003
 	.byte 0x02
+.globl EventScript_JP_08226FF1
 EventScript_JP_08226FF1: @ 0x08226FF1
 	lock
 	faceplayer
@@ -522,6 +524,7 @@ Movement_JP_082272F8: @ 0x082272F8
 	walk_up
 	set_invisible
 	step_end
+.globl EventScript_JP_082272FC
 EventScript_JP_082272FC: @ 0x082272FC
 	lockall
 	setvar 0x8004, 0x0007
@@ -536,6 +539,7 @@ EventScript_JP_082272FC: @ 0x082272FC
 	.2byte 0x0209
 	releaseall
 	end
+.globl EventScript_JP_08227315
 EventScript_JP_08227315: @ 0x08227315
 	lockall
 	setvar 0x8004, 0x0007
@@ -550,6 +554,7 @@ EventScript_JP_08227315: @ 0x08227315
 	.2byte 0x0209
 	releaseall
 	end
+.globl EventScript_JP_0822732E
 EventScript_JP_0822732E: @ 0x0822732E
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0009
@@ -587,6 +592,7 @@ EventScript_JP_0822738E: @ 0x0822738E
 	loadword 0x00, gText_Rom_227B29
 	callstd 0x03
 	return
+.globl EventScript_JP_08227397
 EventScript_JP_08227397: @ 0x08227397
 	setvar 0x8004, 0x0014
 	@ event command: special
@@ -595,24 +601,29 @@ EventScript_JP_08227397: @ 0x08227397
 	loadword 0x00, gText_Rom_227B52
 	callstd 0x02
 	end
+.globl EventScript_JP_082273A8
 EventScript_JP_082273A8: @ 0x082273A8
 	loadword 0x00, gText_Rom_227BF7
 	callstd 0x02
 	end
+.globl EventScript_JP_082273B1
 EventScript_JP_082273B1: @ 0x082273B1
 	loadword 0x00, gText_Rom_227C4A
 	callstd 0x02
 	end
+.globl EventScript_JP_082273BA
 EventScript_JP_082273BA: @ 0x082273BA
 	loadword 0x00, gText_Rom_227C79
 	callstd 0x02
 	end
+.globl EventScript_JP_082273C3
 EventScript_JP_082273C3: @ 0x082273C3
 	loadword 0x00, gText_Rom_227BA7
 	callstd 0x02
 	end
 	.byte 0x0F, 0x00, 0xC1, 0x7B, 0x22, 0x08, 0x09, 0x02, 0x02, 0x0F, 0x00, 0xDE, 0x7B, 0x22, 0x08, 0x09
 	.byte 0x02, 0x02
+.globl EventScript_JP_082273DE
 EventScript_JP_082273DE: @ 0x082273DE
 	lockall
 	loadword 0x00, gText_Rom_227D5C

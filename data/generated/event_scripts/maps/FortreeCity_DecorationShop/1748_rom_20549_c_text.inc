@@ -11,6 +11,7 @@ gText_Rom_20549C: @ 0x0820549C
 	@ analyzed canonical ROM range 0x082054FC-0x082055D7
 	@ semantic recovery: script_data; byte-verified against linked ROM
 	.byte 0x00
+.globl EventScript_JP_082054FD
 EventScript_JP_082054FD: @ 0x082054FD
 	lockall
 	checkflag 0x0864
@@ -82,6 +83,7 @@ EventScript_JP_0820555E: @ 0x0820555E
 	.2byte 0x0000
 	releaseall
 	end
+.globl EventScript_JP_08205585
 EventScript_JP_08205585: @ 0x08205585
 	lockall
 	playse 0x0015

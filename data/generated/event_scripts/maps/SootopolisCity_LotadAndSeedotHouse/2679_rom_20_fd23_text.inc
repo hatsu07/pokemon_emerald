@@ -103,6 +103,7 @@ Movement_JP_0820FE2E: @ 0x0820FE2E
 	walk_right
 	walk_in_place_fastest_down
 	step_end
+.globl EventScript_JP_0820FE31
 EventScript_JP_0820FE31: @ 0x0820FE31
 	lock
 	faceplayer

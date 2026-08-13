@@ -23,10 +23,12 @@ EventScript_JP_081DFDF9: @ 0x081DFDF9
 EventScript_JP_081DFDFD: @ 0x081DFDFD
 	setstepcallback 0x02
 	end
+.globl EventScript_JP_081DFE00
 EventScript_JP_081DFE00: @ 0x081DFE00
 	loadword 0x00, gText_Rom_1DFEC0
 	callstd 0x02
 	end
+.globl EventScript_JP_081DFE09
 EventScript_JP_081DFE09: @ 0x081DFE09
 	lock
 	faceplayer
@@ -41,30 +43,37 @@ EventScript_JP_081DFE1E: @ 0x081DFE1E
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_081DFE28
 EventScript_JP_081DFE28: @ 0x081DFE28
 	loadword 0x00, gText_Rom_1DFFA2
 	callstd 0x02
 	end
+.globl EventScript_JP_081DFE31
 EventScript_JP_081DFE31: @ 0x081DFE31
 	loadword 0x00, gText_Rom_1DFFEA
 	callstd 0x02
 	end
+.globl EventScript_JP_081DFE3A
 EventScript_JP_081DFE3A: @ 0x081DFE3A
 	loadword 0x00, gText_Rom_1E0049
 	callstd 0x02
 	end
+.globl EventScript_JP_081DFE43
 EventScript_JP_081DFE43: @ 0x081DFE43
 	loadword 0x00, gText_Rom_1E008B
 	callstd 0x02
 	end
+.globl EventScript_JP_081DFE4C
 EventScript_JP_081DFE4C: @ 0x081DFE4C
 	loadword 0x00, gText_Rom_1E0126
 	callstd 0x03
 	end
+.globl EventScript_JP_081DFE55
 EventScript_JP_081DFE55: @ 0x081DFE55
 	loadword 0x00, gText_Rom_1E0148
 	callstd 0x03
 	end
+.globl EventScript_JP_081DFE5E
 EventScript_JP_081DFE5E: @ 0x081DFE5E
 	lock
 	faceplayer

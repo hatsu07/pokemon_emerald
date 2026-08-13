@@ -36,6 +36,7 @@ EventScript_JP_08208278: @ 0x08208278
 EventScript_JP_0820827C: @ 0x0820827C
 	clearflag 0x03E1
 	end
+.globl EventScript_JP_08208280
 EventScript_JP_08208280: @ 0x08208280
 	setvar 0x800B, 0x0001
 	call 0x082429B8
@@ -43,10 +44,12 @@ EventScript_JP_08208280: @ 0x08208280
 	waitbuttonpress
 	release
 	end
+.globl EventScript_JP_0820828E
 EventScript_JP_0820828E: @ 0x0820828E
 	loadword 0x00, gText_Rom_2082B6
 	callstd 0x02
 	end
+.globl EventScript_JP_08208297
 EventScript_JP_08208297: @ 0x08208297
 	lock
 	faceplayer

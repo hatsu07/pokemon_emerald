@@ -11,6 +11,7 @@ gText_Rom_20B180: @ 0x0820B180
 	@ analyzed canonical ROM range 0x0820B18C-0x0820B83D
 	@ semantic recovery: script_data; byte-verified against linked ROM
 	.byte 0x00
+.globl EventScript_JP_0820B18D
 EventScript_JP_0820B18D: @ 0x0820B18D
 	lock
 	faceplayer
@@ -185,6 +186,7 @@ EventScript_JP_0820B3EE: @ 0x0820B3EE
 	setmetatile 0x0001, 0x0017, 0x020D, 0x0000
 	setmetatile 0x0005, 0x0018, 0x0239, 0x0001
 	end
+.globl EventScript_JP_0820B401
 EventScript_JP_0820B401: @ 0x0820B401
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -298,6 +300,7 @@ EventText_JP_0820B635: @ 0x0820B635
 	.string "れヌ　ぽ$"
 	.byte 0x00, 0x99, 0xB7, 0x20, 0x08, 0x51, 0x00, 0x00, 0xA2, 0x01, 0x00, 0x17, 0x00, 0x04, 0x02, 0x00
 	.byte 0x00, 0xA2, 0x05, 0x00, 0x18, 0x00, 0x38, 0x02, 0x01, 0x00, 0x05, 0x31, 0xB5, 0x20, 0x08, 0x02
+.globl EventScript_JP_0820B65A
 EventScript_JP_0820B65A: @ 0x0820B65A
 	lockall
 	@ event command: warp7
@@ -308,6 +311,7 @@ EventScript_JP_0820B65A: @ 0x0820B65A
 	.2byte 0x0007
 	.2byte 0x001E
 	.byte 0x27, 0x6B, 0x02
+.globl EventScript_JP_0820B666
 EventScript_JP_0820B666: @ 0x0820B666
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -319,6 +323,7 @@ EventScript_JP_0820B666: @ 0x0820B666
 	loadword 0x00, gText_Rom_20B941
 	callstd 0x06
 	end
+.globl EventScript_JP_0820B67D
 EventScript_JP_0820B67D: @ 0x0820B67D
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -330,6 +335,7 @@ EventScript_JP_0820B67D: @ 0x0820B67D
 	loadword 0x00, gText_Rom_20B984
 	callstd 0x06
 	end
+.globl EventScript_JP_0820B694
 EventScript_JP_0820B694: @ 0x0820B694
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -341,6 +347,7 @@ EventScript_JP_0820B694: @ 0x0820B694
 	loadword 0x00, gText_Rom_20BA3C
 	callstd 0x06
 	end
+.globl EventScript_JP_0820B6AB
 EventScript_JP_0820B6AB: @ 0x0820B6AB
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -352,6 +359,7 @@ EventScript_JP_0820B6AB: @ 0x0820B6AB
 	loadword 0x00, gText_Rom_20BAEB
 	callstd 0x06
 	end
+.globl EventScript_JP_0820B6C2
 EventScript_JP_0820B6C2: @ 0x0820B6C2
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -363,6 +371,7 @@ EventScript_JP_0820B6C2: @ 0x0820B6C2
 	loadword 0x00, gText_Rom_20BB68
 	callstd 0x06
 	end
+.globl EventScript_JP_0820B6D9
 EventScript_JP_0820B6D9: @ 0x0820B6D9
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -374,6 +383,7 @@ EventScript_JP_0820B6D9: @ 0x0820B6D9
 	loadword 0x00, gText_Rom_20BBF6
 	callstd 0x06
 	end
+.globl EventScript_JP_0820B6F0
 EventScript_JP_0820B6F0: @ 0x0820B6F0
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -385,6 +395,7 @@ EventScript_JP_0820B6F0: @ 0x0820B6F0
 	loadword 0x00, gText_Rom_20BC71
 	callstd 0x06
 	end
+.globl EventScript_JP_0820B707
 EventScript_JP_0820B707: @ 0x0820B707
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -396,6 +407,7 @@ EventScript_JP_0820B707: @ 0x0820B707
 	loadword 0x00, gText_Rom_20BCD5
 	callstd 0x06
 	end
+.globl EventScript_JP_0820B71E
 EventScript_JP_0820B71E: @ 0x0820B71E
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -407,6 +419,7 @@ EventScript_JP_0820B71E: @ 0x0820B71E
 	loadword 0x00, gText_Rom_20BDB5
 	callstd 0x06
 	end
+.globl EventScript_JP_0820B735
 EventScript_JP_0820B735: @ 0x0820B735
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -418,6 +431,7 @@ EventScript_JP_0820B735: @ 0x0820B735
 	loadword 0x00, gText_Rom_20BD63
 	callstd 0x06
 	end
+.globl EventScript_JP_0820B74C
 EventScript_JP_0820B74C: @ 0x0820B74C
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -429,6 +443,7 @@ EventScript_JP_0820B74C: @ 0x0820B74C
 	loadword 0x00, gText_Rom_20BE1B
 	callstd 0x06
 	end
+.globl EventScript_JP_0820B763
 EventScript_JP_0820B763: @ 0x0820B763
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -440,6 +455,7 @@ EventScript_JP_0820B763: @ 0x0820B763
 	loadword 0x00, gText_Rom_20BD13
 	callstd 0x06
 	end
+.globl EventScript_JP_0820B77A
 EventScript_JP_0820B77A: @ 0x0820B77A
 	lock
 	faceplayer
@@ -455,12 +471,14 @@ EventScript_JP_0820B78F: @ 0x0820B78F
 	release
 	end
 	.byte 0x14, 0x14, 0xFE
+.globl EventScript_JP_0820B79C
 EventScript_JP_0820B79C: @ 0x0820B79C
 	lockall
 	checkflag 0x086D
 	goto_if 0x01, EventScript_JP_0820B7BC
 	goto EventScript_JP_0820B7C6
 	.byte 0x02
+.globl EventScript_JP_0820B7AC
 EventScript_JP_0820B7AC: @ 0x0820B7AC
 	lockall
 	checkflag 0x086D
@@ -477,6 +495,7 @@ EventScript_JP_0820B7C6: @ 0x0820B7C6
 	callstd 0x04
 	releaseall
 	end
+.globl EventScript_JP_0820B7D0
 EventScript_JP_0820B7D0: @ 0x0820B7D0
 	playse 0x0023
 	waitse
@@ -492,6 +511,7 @@ EventScript_JP_0820B7D0: @ 0x0820B7D0
 	.2byte 0x0000
 	mossdeepgym4
 	end
+.globl EventScript_JP_0820B7E6
 EventScript_JP_0820B7E6: @ 0x0820B7E6
 	playse 0x0023
 	waitse
@@ -507,6 +527,7 @@ EventScript_JP_0820B7E6: @ 0x0820B7E6
 	.2byte 0x0000
 	mossdeepgym4
 	end
+.globl EventScript_JP_0820B7FC
 EventScript_JP_0820B7FC: @ 0x0820B7FC
 	playse 0x0023
 	waitse
@@ -522,6 +543,7 @@ EventScript_JP_0820B7FC: @ 0x0820B7FC
 	.2byte 0x0000
 	mossdeepgym4
 	end
+.globl EventScript_JP_0820B812
 EventScript_JP_0820B812: @ 0x0820B812
 	playse 0x0023
 	waitse
@@ -537,6 +559,7 @@ EventScript_JP_0820B812: @ 0x0820B812
 	.2byte 0x0000
 	mossdeepgym4
 	end
+.globl EventScript_JP_0820B828
 EventScript_JP_0820B828: @ 0x0820B828
 	playse 0x0023
 	waitse

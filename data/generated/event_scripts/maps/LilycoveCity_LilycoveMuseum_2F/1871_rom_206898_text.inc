@@ -426,6 +426,7 @@ Movement_JP_08206C0B: @ 0x08206C0B
 	walk_fast_up
 	walk_in_place_fastest_left
 	step_end
+.globl EventScript_JP_08206C14
 EventScript_JP_08206C14: @ 0x08206C14
 	@ event command: special
 	.byte 0x25
@@ -637,74 +638,89 @@ Movement_JP_08206DC6: @ 0x08206DC6
 	@ object movement sequence
 	walk_in_place_fastest_right
 	step_end
+.globl EventScript_JP_08206DC8
 EventScript_JP_08206DC8: @ 0x08206DC8
 	loadword 0x00, gText_Rom_207640
 	callstd 0x02
 	end
+.globl EventScript_JP_08206DD1
 EventScript_JP_08206DD1: @ 0x08206DD1
 	loadword 0x00, gText_Rom_207692
 	callstd 0x02
 	end
+.globl EventScript_JP_08206DDA
 EventScript_JP_08206DDA: @ 0x08206DDA
 	loadword 0x00, gText_Rom_2076BA
 	callstd 0x02
 	end
+.globl EventScript_JP_08206DE3
 EventScript_JP_08206DE3: @ 0x08206DE3
 	loadword 0x00, gText_Rom_2076E6
 	callstd 0x02
 	end
+.globl EventScript_JP_08206DEC
 EventScript_JP_08206DEC: @ 0x08206DEC
 	loadword 0x00, gText_Rom_20771C
 	callstd 0x02
 	end
+.globl EventScript_JP_08206DF5
 EventScript_JP_08206DF5: @ 0x08206DF5
 	loadword 0x00, gText_Rom_20775B
 	callstd 0x02
 	end
+.globl EventScript_JP_08206DFE
 EventScript_JP_08206DFE: @ 0x08206DFE
 	lockall
 	fadescreen 0x01
 	drawcontestwinner 0x01
 	releaseall
 	end
+.globl EventScript_JP_08206E05
 EventScript_JP_08206E05: @ 0x08206E05
 	lockall
 	fadescreen 0x01
 	drawcontestwinner 0x02
 	releaseall
 	end
+.globl EventScript_JP_08206E0C
 EventScript_JP_08206E0C: @ 0x08206E0C
 	lockall
 	fadescreen 0x01
 	drawcontestwinner 0x03
 	releaseall
 	end
+.globl EventScript_JP_08206E13
 EventScript_JP_08206E13: @ 0x08206E13
 	lockall
 	fadescreen 0x01
 	drawcontestwinner 0x04
 	releaseall
 	end
+.globl EventScript_JP_08206E1A
 EventScript_JP_08206E1A: @ 0x08206E1A
 	lockall
 	fadescreen 0x01
 	drawcontestwinner 0x05
 	releaseall
 	end
+.globl EventScript_JP_08206E21
 EventScript_JP_08206E21: @ 0x08206E21
 	lockall
 	fadescreen 0x01
 	drawcontestwinner 0x06
 	releaseall
 	end
+.globl EventScript_JP_08206E28
 EventScript_JP_08206E28: @ 0x08206E28
 	loadword 0x00, gText_Rom_2587AE
 	callstd 0x02
 	end
+.globl EventScript_JP_08206E31
 EventScript_JP_08206E31: @ 0x08206E31
 	loadword 0x00, gText_Rom_2587BA
 	callstd 0x02
 	end
+.globl EventScript_JP_08206E3A
 EventScript_JP_08206E3A: @ 0x08206E3A
 	lockall
 	@ event command: special
@@ -716,6 +732,7 @@ EventScript_JP_08206E3A: @ 0x08206E3A
 	.2byte 0x0209
 	releaseall
 	end
+.globl EventScript_JP_08206E44
 EventScript_JP_08206E44: @ 0x08206E44
 	lockall
 	setvar 0x8004, 0x0007
@@ -729,6 +746,7 @@ EventScript_JP_08206E44: @ 0x08206E44
 	.2byte 0x0209
 	releaseall
 	end
+.globl EventScript_JP_08206E58
 EventScript_JP_08206E58: @ 0x08206E58
 	lock
 	faceplayer
@@ -736,24 +754,28 @@ EventScript_JP_08206E58: @ 0x08206E58
 	callstd 0x04
 	goto EventScript_JP_08206EB9
 	.byte 0x02
+.globl EventScript_JP_08206E68
 EventScript_JP_08206E68: @ 0x08206E68
 	lock
 	loadword 0x00, gText_Rom_27495B
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08206E73
 EventScript_JP_08206E73: @ 0x08206E73
 	lock
 	loadword 0x00, gText_Rom_274961
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08206E7E
 EventScript_JP_08206E7E: @ 0x08206E7E
 	lock
 	loadword 0x00, gText_Rom_274966
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08206E89
 EventScript_JP_08206E89: @ 0x08206E89
 	lock
 	faceplayer
@@ -761,6 +783,7 @@ EventScript_JP_08206E89: @ 0x08206E89
 	callstd 0x04
 	goto EventScript_JP_08206EB9
 	.byte 0x02
+.globl EventScript_JP_08206E99
 EventScript_JP_08206E99: @ 0x08206E99
 	lock
 	faceplayer
@@ -768,6 +791,7 @@ EventScript_JP_08206E99: @ 0x08206E99
 	callstd 0x04
 	goto EventScript_JP_08206EB9
 	.byte 0x02
+.globl EventScript_JP_08206EA9
 EventScript_JP_08206EA9: @ 0x08206EA9
 	lock
 	faceplayer
@@ -786,6 +810,7 @@ EventScript_JP_08206EB9: @ 0x08206EB9
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_08206EC6
 EventScript_JP_08206EC6: @ 0x08206EC6
 	@ event command: special
 	.byte 0x25
@@ -1221,6 +1246,7 @@ Movement_JP_082073AF: @ 0x082073AF
 	@ object movement sequence
 	walk_in_place_fastest_left
 	step_end
+.globl EventScript_JP_082073B1
 EventScript_JP_082073B1: @ 0x082073B1
 	lock
 	faceplayer

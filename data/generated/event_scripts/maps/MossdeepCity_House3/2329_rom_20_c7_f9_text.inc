@@ -111,6 +111,7 @@ Movement_JP_0820C8CD: @ 0x0820C8CD
 	walk_right
 	walk_in_place_fastest_up
 	step_end
+.globl EventScript_JP_0820C8D3
 EventScript_JP_0820C8D3: @ 0x0820C8D3
 	lockall
 	loadword 0x00, gText_Rom_20CAF7
@@ -172,14 +173,17 @@ EventScript_JP_0820C993: @ 0x0820C993
 	setflag 0x012A
 	releaseall
 	end
+.globl EventScript_JP_0820C99B
 EventScript_JP_0820C99B: @ 0x0820C99B
 	loadword 0x00, gText_Rom_20CC3F
 	callstd 0x03
 	end
+.globl EventScript_JP_0820C9A4
 EventScript_JP_0820C9A4: @ 0x0820C9A4
 	loadword 0x00, gText_Rom_20CAAF
 	callstd 0x02
 	end
+.globl EventScript_JP_0820C9AD
 EventScript_JP_0820C9AD: @ 0x0820C9AD
 	lockall
 	loadword 0x00, gText_Rom_20CB77

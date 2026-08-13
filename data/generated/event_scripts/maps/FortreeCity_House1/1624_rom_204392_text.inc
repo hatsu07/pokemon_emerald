@@ -32,6 +32,7 @@ EventScript_JP_082043B7: @ 0x082043B7
 	.byte 0x25
 	.2byte 0x00CA
 	end
+.globl EventScript_JP_082043BB
 EventScript_JP_082043BB: @ 0x082043BB
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -107,6 +108,7 @@ EventScript_JP_08204480: @ 0x08204480
 	loadword 0x00, gText_Rom_204B57
 	callstd 0x06
 	end
+.globl EventScript_JP_0820449B
 EventScript_JP_0820449B: @ 0x0820449B
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -118,6 +120,7 @@ EventScript_JP_0820449B: @ 0x0820449B
 	loadword 0x00, gText_Rom_204646
 	callstd 0x06
 	end
+.globl EventScript_JP_082044B2
 EventScript_JP_082044B2: @ 0x082044B2
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -129,6 +132,7 @@ EventScript_JP_082044B2: @ 0x082044B2
 	loadword 0x00, gText_Rom_2046EA
 	callstd 0x06
 	end
+.globl EventScript_JP_082044C9
 EventScript_JP_082044C9: @ 0x082044C9
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -140,6 +144,7 @@ EventScript_JP_082044C9: @ 0x082044C9
 	loadword 0x00, gText_Rom_20476A
 	callstd 0x06
 	end
+.globl EventScript_JP_082044E0
 EventScript_JP_082044E0: @ 0x082044E0
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -151,6 +156,7 @@ EventScript_JP_082044E0: @ 0x082044E0
 	loadword 0x00, gText_Rom_2047C5
 	callstd 0x06
 	end
+.globl EventScript_JP_082044F7
 EventScript_JP_082044F7: @ 0x082044F7
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -162,6 +168,7 @@ EventScript_JP_082044F7: @ 0x082044F7
 	loadword 0x00, gText_Rom_20482F
 	callstd 0x06
 	end
+.globl EventScript_JP_0820450E
 EventScript_JP_0820450E: @ 0x0820450E
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -173,6 +180,7 @@ EventScript_JP_0820450E: @ 0x0820450E
 	loadword 0x00, gText_Rom_20488D
 	callstd 0x06
 	end
+.globl EventScript_JP_08204525
 EventScript_JP_08204525: @ 0x08204525
 	lock
 	faceplayer
@@ -187,12 +195,14 @@ EventScript_JP_0820453A: @ 0x0820453A
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08204544
 EventScript_JP_08204544: @ 0x08204544
 	lockall
 	checkflag 0x086C
 	goto_if 0x01, EventScript_JP_08204564
 	goto EventScript_JP_0820456E
 	.byte 0x02
+.globl EventScript_JP_08204554
 EventScript_JP_08204554: @ 0x08204554
 	lockall
 	checkflag 0x086C

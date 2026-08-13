@@ -5455,7 +5455,7 @@ _080A7D26:
 	movs r2, #1
 	b _080A7DD2
 	.align 2, 0
-_080A7D3C: .4byte gBattleAnimMonsData_084FE6CC
+_080A7D3C: .4byte sSpriteSheets_MoveEffectMons
 _080A7D40: .4byte gBattleAnimMonsData_084FE69C
 _080A7D44: .4byte 0x02024178
 _080A7D48: .4byte 0x02024174

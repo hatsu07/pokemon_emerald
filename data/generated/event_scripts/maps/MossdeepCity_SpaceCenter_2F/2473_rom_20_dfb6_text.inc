@@ -29,16 +29,19 @@ MapScriptTable_JP_0820E038: @ 0x0820E038
 	.2byte 0x4087, 0x0008
 	.4byte 0x0824699B
 	.2byte 0
+.globl EventScript_JP_0820E042
 EventScript_JP_0820E042: @ 0x0820E042
 	lock
 	faceplayer
 	goto 0x08247913
 	.byte 0x6C, 0x02
+.globl EventScript_JP_0820E04B
 EventScript_JP_0820E04B: @ 0x0820E04B
 	lock
 	faceplayer
 	goto 0x08247970
 	.byte 0x6C, 0x02
+.globl EventScript_JP_0820E054
 EventScript_JP_0820E054: @ 0x0820E054
 	loadword 0x00, gText_Rom_20E0BA
 	callstd 0x03

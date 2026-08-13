@@ -28,14 +28,17 @@ EventText_JP_082743BE: @ 0x082743BE
 	.string "にえぞあ　サ$"
 	.byte 0x00, 0x02, 0x02, 0x16, 0x04, 0x40, 0x01, 0x00, 0x5B, 0xFF, 0x00, 0x02, 0x59, 0x01, 0x00, 0x1A
 	.byte 0x25, 0x02
+.globl EventScript_JP_082743D7
 EventScript_JP_082743D7: @ 0x082743D7
 	setvar 0x8007, 0x0000
 	goto EventScript_JP_082743F8
 	.byte 0x02
+.globl EventScript_JP_082743E2
 EventScript_JP_082743E2: @ 0x082743E2
 	setvar 0x8007, 0x0001
 	goto EventScript_JP_082743F8
 	.byte 0x02
+.globl EventScript_JP_082743ED
 EventScript_JP_082743ED: @ 0x082743ED
 	setvar 0x8007, 0x0002
 	goto EventScript_JP_082743F8
@@ -127,10 +130,12 @@ EventScript_JP_082744D2: @ 0x082744D2
 	.2byte 0x0004
 	.2byte 0x0013
 	.byte 0x27, 0x02
+.globl EventScript_JP_082744EB
 EventScript_JP_082744EB: @ 0x082744EB
 	setvar 0x4003, 0x0001
 	setvar 0x4002, 0x0001
 	end
+.globl EventScript_JP_082744F6
 EventScript_JP_082744F6: @ 0x082744F6
 	setvar 0x4003, 0x0000
 	setvar 0x4002, 0x0000
@@ -139,10 +144,12 @@ EventScript_JP_082744F6: @ 0x082744F6
 	callstd 0x04
 	closemessage
 	end
+.globl EventScript_JP_0827450B
 EventScript_JP_0827450B: @ 0x0827450B
 	setvar 0x4003, 0x0001
 	setvar 0x4002, 0x0001
 	end
+.globl EventScript_JP_08274516
 EventScript_JP_08274516: @ 0x08274516
 	setvar 0x4003, 0x0000
 	setvar 0x4002, 0x0000
@@ -151,6 +158,7 @@ EventScript_JP_08274516: @ 0x08274516
 	callstd 0x04
 	closemessage
 	end
+.globl EventScript_JP_0827452B
 EventScript_JP_0827452B: @ 0x0827452B
 	setvar 0x8004, 0x0019
 	@ event command: special
@@ -242,6 +250,7 @@ EventScript_JP_082745E5: @ 0x082745E5
 	.2byte 0x0006
 	.2byte 0x000A
 	.byte 0x03
+.globl EventScript_JP_082745FD
 EventScript_JP_082745FD: @ 0x082745FD
 	setvar 0x8004, 0x0007
 	@ event command: special
@@ -289,10 +298,12 @@ EventScript_JP_082745FD: @ 0x082745FD
 	call_if 0x01, EventScript_JP_082745E5
 	waitstate
 	end
+.globl EventScript_JP_0827468B
 EventScript_JP_0827468B: @ 0x0827468B
 	setvar 0x4003, 0x0001
 	setvar 0x4002, 0x0001
 	end
+.globl EventScript_JP_08274696
 EventScript_JP_08274696: @ 0x08274696
 	setvar 0x4003, 0x0000
 	setvar 0x4002, 0x0000

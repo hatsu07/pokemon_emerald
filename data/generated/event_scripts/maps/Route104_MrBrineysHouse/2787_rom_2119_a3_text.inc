@@ -26,6 +26,7 @@ EventScript_JP_082119BA: @ 0x082119BA
 EventScript_JP_082119D3: @ 0x082119D3
 	setobjectxyperm 0x0001, 0x0004, 0x0006
 	end
+.globl EventScript_JP_082119DB
 EventScript_JP_082119DB: @ 0x082119DB
 	lock
 	faceplayer
@@ -71,6 +72,7 @@ EventScript_JP_08211A4C: @ 0x08211A4C
 	end
 	.byte 0x00, 0x00, 0x00, 0x13, 0x00, 0x14, 0x00, 0x15, 0x00, 0x16, 0x00, 0x17, 0x00, 0x18, 0x00, 0x00
 	.byte 0x00, 0x6C, 0x02
+.globl EventScript_JP_08211A74
 EventScript_JP_08211A74: @ 0x08211A74
 	lock
 	faceplayer
@@ -91,6 +93,7 @@ EventScript_JP_08211A89: @ 0x08211A89
 	setflag 0x005E
 	release
 	end
+.globl EventScript_JP_08211AAA
 EventScript_JP_08211AAA: @ 0x08211AAA
 	lock
 	faceplayer
@@ -117,6 +120,7 @@ EventScript_JP_08211AEA: @ 0x08211AEA
 	release
 	end
 	.byte 0x00
+.globl EventScript_JP_08211AF5
 EventScript_JP_08211AF5: @ 0x08211AF5
 	lock
 	faceplayer
@@ -125,6 +129,7 @@ EventScript_JP_08211AF5: @ 0x08211AF5
 	callstd 0x04
 	goto EventScript_JP_08211B94
 	.byte 0x02
+.globl EventScript_JP_08211B0A
 EventScript_JP_08211B0A: @ 0x08211B0A
 	lock
 	faceplayer
@@ -146,6 +151,7 @@ EventScript_JP_08211B42: @ 0x08211B42
 	callstd 0x04
 	goto EventScript_JP_08211B94
 	.byte 0x02
+.globl EventScript_JP_08211B50
 EventScript_JP_08211B50: @ 0x08211B50
 	lock
 	faceplayer
@@ -154,6 +160,7 @@ EventScript_JP_08211B50: @ 0x08211B50
 	callstd 0x04
 	goto EventScript_JP_08211B94
 	.byte 0x02
+.globl EventScript_JP_08211B65
 EventScript_JP_08211B65: @ 0x08211B65
 	lock
 	faceplayer

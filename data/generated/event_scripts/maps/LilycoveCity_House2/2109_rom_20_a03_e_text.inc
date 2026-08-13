@@ -19,6 +19,7 @@ EventScript_JP_0820A06B: @ 0x0820A06B
 	random 0x0004
 	copyvar 0x4001, 0x800D
 	end
+.globl EventScript_JP_0820A074
 EventScript_JP_0820A074: @ 0x0820A074
 	lock
 	faceplayer
@@ -51,6 +52,7 @@ EventScript_JP_0820A09E: @ 0x0820A09E
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_0820A0B3
 EventScript_JP_0820A0B3: @ 0x0820A0B3
 	lock
 	faceplayer
@@ -66,6 +68,7 @@ EventScript_JP_0820A0B3: @ 0x0820A0B3
 	.2byte 0x0000
 	release
 	end
+.globl EventScript_JP_0820A0CA
 EventScript_JP_0820A0CA: @ 0x0820A0CA
 	lock
 	faceplayer
@@ -79,6 +82,7 @@ EventScript_JP_0820A0CA: @ 0x0820A0CA
 	compare_var_to_value 0x8000, 0x0003
 	goto_if 0x01, EventScript_JP_0820A1B8
 	end
+.globl EventScript_JP_0820A0FE
 EventScript_JP_0820A0FE: @ 0x0820A0FE
 	lock
 	faceplayer
@@ -92,6 +96,7 @@ EventScript_JP_0820A0FE: @ 0x0820A0FE
 	compare_var_to_value 0x8000, 0x0003
 	goto_if 0x01, EventScript_JP_0820A1B8
 	end
+.globl EventScript_JP_0820A132
 EventScript_JP_0820A132: @ 0x0820A132
 	lock
 	faceplayer
@@ -105,6 +110,7 @@ EventScript_JP_0820A132: @ 0x0820A132
 	compare_var_to_value 0x8000, 0x0003
 	goto_if 0x01, EventScript_JP_0820A1B8
 	end
+.globl EventScript_JP_0820A166
 EventScript_JP_0820A166: @ 0x0820A166
 	lock
 	faceplayer

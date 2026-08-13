@@ -19,6 +19,7 @@ MapScripts_JP_08222765: @ 0x08222765
 EventScript_JP_0822276B: @ 0x0822276B
 	setflag 0x08A9
 	end
+.globl EventScript_JP_0822276F
 EventScript_JP_0822276F: @ 0x0822276F
 	lock
 	faceplayer
@@ -84,6 +85,7 @@ Movement_JP_082227D6: @ 0x082227D6
 	walk_left
 	walk_in_place_fastest_down
 	step_end
+.globl EventScript_JP_082227D9
 EventScript_JP_082227D9: @ 0x082227D9
 	loadword 0x00, gText_Rom_2635AF
 	callstd 0x03
@@ -135,6 +137,7 @@ EventScript_JP_08222855: @ 0x08222855
 EventScript_JP_0822285B: @ 0x0822285B
 	setvar 0x4010, 0x0069
 	return
+.globl EventScript_JP_08222861
 EventScript_JP_08222861: @ 0x08222861
 	lockall
 	setvar 0x8008, 0x000C
@@ -271,14 +274,17 @@ Movement_JP_08222977: @ 0x08222977
 	walk_down
 	step_end
 	.byte 0x00
+.globl EventScript_JP_08222984
 EventScript_JP_08222984: @ 0x08222984
 	loadword 0x00, gText_Rom_262A20
 	callstd 0x02
 	end
+.globl EventScript_JP_0822298D
 EventScript_JP_0822298D: @ 0x0822298D
 	loadword 0x00, gText_Rom_262A67
 	callstd 0x02
 	end
+.globl EventScript_JP_08222996
 EventScript_JP_08222996: @ 0x08222996
 	loadword 0x00, gText_Rom_262AAF
 	callstd 0x02
@@ -312,48 +318,59 @@ EventScript_JP_082229CA: @ 0x082229CA
 EventScript_JP_082229DC: @ 0x082229DC
 	clearflag 0x034A
 	return
+.globl EventScript_JP_082229E0
 EventScript_JP_082229E0: @ 0x082229E0
 	loadword 0x00, gText_Rom_222BAD
 	callstd 0x03
 	end
+.globl EventScript_JP_082229E9
 EventScript_JP_082229E9: @ 0x082229E9
 	loadword 0x00, gText_Rom_222BCC
 	callstd 0x03
 	end
+.globl EventScript_JP_082229F2
 EventScript_JP_082229F2: @ 0x082229F2
 	loadword 0x00, gText_Rom_222BE7
 	callstd 0x03
 	end
+.globl EventScript_JP_082229FB
 EventScript_JP_082229FB: @ 0x082229FB
 	loadword 0x00, gText_Rom_222C04
 	callstd 0x03
 	end
+.globl EventScript_JP_08222A04
 EventScript_JP_08222A04: @ 0x08222A04
 	loadword 0x00, gText_Rom_222C70
 	callstd 0x02
 	end
+.globl EventScript_JP_08222A0D
 EventScript_JP_08222A0D: @ 0x08222A0D
 	loadword 0x00, gText_Rom_222C98
 	callstd 0x02
 	end
+.globl EventScript_JP_08222A16
 EventScript_JP_08222A16: @ 0x08222A16
 	loadword 0x00, gText_Rom_222D08
 	callstd 0x02
 	end
+.globl EventScript_JP_08222A1F
 EventScript_JP_08222A1F: @ 0x08222A1F
 	loadword 0x00, gText_Rom_222D54
 	callstd 0x02
 	end
+.globl EventScript_JP_08222A28
 EventScript_JP_08222A28: @ 0x08222A28
 	loadword 0x00, gText_Rom_222DB2
 	callstd 0x02
 	end
+.globl EventScript_JP_08222A31
 EventScript_JP_08222A31: @ 0x08222A31
 	lock
 	loadword 0x00, gText_Rom_222E60
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08222A3C
 EventScript_JP_08222A3C: @ 0x08222A3C
 	lock
 	faceplayer
@@ -364,32 +381,39 @@ EventScript_JP_08222A3C: @ 0x08222A3C
 	waitmoncry
 	release
 	end
+.globl EventScript_JP_08222A4F
 EventScript_JP_08222A4F: @ 0x08222A4F
 	loadword 0x00, gText_Rom_222EAA
 	callstd 0x02
 	end
+.globl EventScript_JP_08222A58
 EventScript_JP_08222A58: @ 0x08222A58
 	loadword 0x00, gText_Rom_222F21
 	callstd 0x02
 	end
+.globl EventScript_JP_08222A61
 EventScript_JP_08222A61: @ 0x08222A61
 	loadword 0x00, gText_Rom_222F59
 	callstd 0x02
 	end
+.globl EventScript_JP_08222A6A
 EventScript_JP_08222A6A: @ 0x08222A6A
 	loadword 0x00, gText_Rom_222F8E
 	callstd 0x02
 	end
+.globl EventScript_JP_08222A73
 EventScript_JP_08222A73: @ 0x08222A73
 	lock
 	loadword 0x00, gText_Rom_222FAB
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_08222A7E
 EventScript_JP_08222A7E: @ 0x08222A7E
 	loadword 0x00, gText_Rom_222DF5
 	callstd 0x02
 	end
+.globl EventScript_JP_08222A87
 EventScript_JP_08222A87: @ 0x08222A87
 	lock
 	faceplayer

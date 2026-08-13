@@ -12,6 +12,7 @@ gText_Rom_202B8B: @ 0x08202B8B
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08202C1A: @ 0x08202C1A
 	.byte 0x00
+.globl EventScript_JP_08202C1B
 EventScript_JP_08202C1B: @ 0x08202C1B
 	lockall
 	loadword 0x00, gText_Rom_202E24
@@ -73,30 +74,37 @@ EventScript_08202CCF: @ 0x08202CCF
 EventScript_JP_08202CCF: @ 0x08202CCF
 	releaseall
 	end
+.globl EventScript_JP_08202CD1
 EventScript_JP_08202CD1: @ 0x08202CD1
 	loadword 0x00, gText_Rom_2030B2
 	callstd 0x02
 	end
+.globl EventScript_JP_08202CDA
 EventScript_JP_08202CDA: @ 0x08202CDA
 	loadword 0x00, gText_Rom_2030CD
 	callstd 0x02
 	end
+.globl EventScript_JP_08202CE3
 EventScript_JP_08202CE3: @ 0x08202CE3
 	loadword 0x00, gText_Rom_2030EA
 	callstd 0x02
 	end
+.globl EventScript_JP_08202CEC
 EventScript_JP_08202CEC: @ 0x08202CEC
 	loadword 0x00, gText_Rom_203128
 	callstd 0x02
 	end
+.globl EventScript_JP_08202CF5
 EventScript_JP_08202CF5: @ 0x08202CF5
 	loadword 0x00, gText_Rom_20318A
 	callstd 0x02
 	end
+.globl EventScript_JP_08202CFE
 EventScript_JP_08202CFE: @ 0x08202CFE
 	loadword 0x00, gText_Rom_2031E4
 	callstd 0x03
 	end
+.globl EventScript_JP_08202D07
 EventScript_JP_08202D07: @ 0x08202D07
 	lock
 	faceplayer
@@ -207,6 +215,7 @@ Movement_JP_08202D99: @ 0x08202D99
 	walk_left
 	walk_left
 	step_end
+.globl EventScript_JP_08202DB2
 EventScript_JP_08202DB2: @ 0x08202DB2
 	lock
 	faceplayer

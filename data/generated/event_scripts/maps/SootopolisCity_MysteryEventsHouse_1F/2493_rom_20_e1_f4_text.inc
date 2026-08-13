@@ -111,6 +111,7 @@ Movement_JP_0820E31A: @ 0x0820E31A
 	@ object movement sequence
 	set_invisible
 	step_end
+.globl EventScript_JP_0820E31C
 EventScript_JP_0820E31C: @ 0x0820E31C
 	@ event command: trainerbattle
 	.byte 0x5C
@@ -196,6 +197,7 @@ EventScript_JP_0820E3FD: @ 0x0820E3FD
 	loadword 0x00, gText_Rom_20E99E
 	callstd 0x06
 	end
+.globl EventScript_JP_0820E418
 EventScript_JP_0820E418: @ 0x0820E418
 	lock
 	faceplayer
@@ -210,12 +212,14 @@ EventScript_JP_0820E42D: @ 0x0820E42D
 	callstd 0x04
 	release
 	end
+.globl EventScript_JP_0820E437
 EventScript_JP_0820E437: @ 0x0820E437
 	lockall
 	checkflag 0x086E
 	goto_if 0x01, EventScript_JP_0820E457
 	goto EventScript_JP_0820E461
 	.byte 0x02
+.globl EventScript_JP_0820E447
 EventScript_JP_0820E447: @ 0x0820E447
 	lockall
 	checkflag 0x086E
