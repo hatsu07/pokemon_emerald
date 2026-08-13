@@ -1540,7 +1540,7 @@ _081D1E66:
 	b _081D1EAA
 	.align 2, 0
 _081D1E90: .4byte gMenuSpecializedData_085F7C18
-_081D1E94: .4byte gUnknown_85D7B04
+_081D1E94: .4byte gCreditsU8Table_Rom_5D7B04
 _081D1E98:
 	movs r0, #1
 	bl PutWindowTilemap
@@ -1943,9 +1943,9 @@ _081D21E4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D21F8: .4byte gUnknown_85E7FFC
+_081D21F8: .4byte gMenuPointerTable_Rom_5E7FFC
 _081D21FC: .4byte 0x08560CAC
-_081D2200: .4byte gUnknown_8565FCC
+_081D2200: .4byte gCreditsU16Table_Rom_565FCC
 _081D2204: .4byte 0x08560BB4
 	thumb_func_end MoveRelearnerMenuLoadContestMoveDescription
 
@@ -2396,7 +2396,7 @@ _081D252C:
 	ldr r1, _081D2558
 	b _081D256A
 	.align 2, 0
-_081D2558: .4byte gUnknown_85CB7C6
+_081D2558: .4byte gContestU8Table_Rom_5CB7C6
 _081D255C:
 	adds r4, r5, #5
 	lsls r0, r7, #0x18

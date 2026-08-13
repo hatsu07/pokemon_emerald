@@ -6,8 +6,8 @@ gText_Rom_5CCA27: @ 0x085CCA27
 	.if (. - gText_Rom_5CCA27) != 0x9
 	.error "gText_Rom_5CCA27 must retain its original byte length"
 	.endif
-	.globl gUnknown_85CCA28
-	.set gUnknown_85CCA28, gText_Rom_5CCA27 + 0x1
+	.globl gItemDataBlock_Rom_5CCA28
+	.set gItemDataBlock_Rom_5CCA28, gText_Rom_5CCA27 + 0x1
 
 	@ src/strings.c:779 gText_PressesRankings
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -28,8 +28,8 @@ gText_Rom_5CCA3F: @ 0x085CCA3F
 	.if (. - gText_Rom_5CCA3F) != 0xa
 	.error "gText_Rom_5CCA3F must retain its original byte length"
 	.endif
-	.globl gUnknown_85CCA40
-	.set gUnknown_85CCA40, gText_Rom_5CCA3F + 0x1
+	.globl gItemDataBlock_Rom_5CCA40
+	.set gItemDataBlock_Rom_5CCA40, gText_Rom_5CCA3F + 0x1
 
 	@ src/strings.c:781 gText_NeatnessRankings
 	@ Preserve exact byte length: semantic suffix text pointer.

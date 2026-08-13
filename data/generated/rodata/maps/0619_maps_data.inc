@@ -422,8 +422,8 @@ gDoorAnimGraphicsTable:
 	.2byte 0
 	.byte 0, 0
 	.4byte 0, 0
-	.globl gUnknown_846F81C
-gUnknown_846F81C: @ 0x0846F81C
+	.globl gMapU32Table_Rom_46F81C
+gMapU32Table_Rom_46F81C: @ 0x0846F81C
 	.4byte MetatileBehavior_IsTrickHouseSlipperyFloor
 	.4byte MetatileBehavior_IsIce
 	.4byte MetatileBehavior_IsWalkSouth
@@ -442,8 +442,8 @@ gUnknown_846F81C: @ 0x0846F81C
 	.4byte MetatileBehavior_IsSecretBaseJumpMat
 	.4byte MetatileBehavior_IsSecretBaseSpinMat
 	.4byte MetatileBehavior_IsMuddySlope
-	.globl gUnknown_846F864
-gUnknown_846F864: @ 0x0846F864
+	.globl gMapU32Table_Rom_46F864
+gMapU32Table_Rom_46F864: @ 0x0846F864
 	.4byte ForcedMovement_None
 	.4byte ForcedMovement_Slip
 	.4byte ForcedMovement_Slip
@@ -463,13 +463,13 @@ gUnknown_846F864: @ 0x0846F864
 	.4byte ForcedMovement_0xBB
 	.4byte ForcedMovement_0xBC
 	.4byte ForcedMovement_MuddySlope
-	.globl gUnknown_846F8B0
-gUnknown_846F8B0: @ 0x0846F8B0
+	.globl gMapU32Table_Rom_46F8B0
+gMapU32Table_Rom_46F8B0: @ 0x0846F8B0
 	.4byte PlayerNotOnBikeNotMoving
 	.4byte PlayerNotOnBikeTurningInPlace
 	.4byte PlayerNotOnBikeMoving
-	.globl gUnknown_846F8BC
-gUnknown_846F8BC: @ 0x0846F8BC
+	.globl gMapU32Table_Rom_46F8BC
+gMapU32Table_Rom_46F8BC: @ 0x0846F8BC
 	.4byte MetatileBehavior_IsBumpySlope
 	.4byte MetatileBehavior_IsIsolatedVerticalRail
 	.4byte MetatileBehavior_IsIsolatedHorizontalRail
@@ -479,15 +479,15 @@ gUnknown_846F8BC: @ 0x0846F8BC
 	.globl gFieldPlayerAvatarData_0846F8D0
 gFieldPlayerAvatarData_0846F8D0: @ 0x0846F8D0
 gAcroBikeMetatileCollisionTypeIds: @ 0x0846F8D0
-	@ Indexed with the predicate table at gUnknown_846F8BC by check_acro_bike_metatile.
+	@ Indexed with the predicate table at gMapU32Table_Rom_46F8BC by check_acro_bike_metatile.
 	.byte 0x09 @ bumpy slope
 	.byte 0x0A @ isolated vertical rail
 	.byte 0x0B @ isolated horizontal rail
 	.byte 0x0C @ vertical rail
 	.byte 0x0D @ horizontal rail
 	.byte 0x00, 0x00, 0x00 @ padding
-	.globl gUnknown_846F8D8
-gUnknown_846F8D8: @ 0x0846F8D8
+	.globl gMapU32Table_Rom_46F8D8
+gMapU32Table_Rom_46F8D8: @ 0x0846F8D8
 	.4byte PlayerAvatarTransition_Normal
 	.4byte PlayerAvatarTransition_MachBike
 	.4byte PlayerAvatarTransition_AcroBike
@@ -496,8 +496,8 @@ gUnknown_846F8D8: @ 0x0846F8D8
 	.4byte PlayerAvatarTransition_ReturnToField
 	.4byte PlayerAvatarTransition_Dummy
 	.4byte PlayerAvatarTransition_Dummy
-	.globl gUnknown_846F8F8
-gUnknown_846F8F8: @ 0x0846F8F8
+	.globl gMapU32Table_Rom_46F8F8
+gMapU32Table_Rom_46F8F8: @ 0x0846F8F8
 	.4byte MetatileBehavior_IsSouthArrowWarp
 	.4byte MetatileBehavior_IsNorthArrowWarp
 	.4byte MetatileBehavior_IsWestArrowWarp
@@ -568,22 +568,22 @@ gPlayerAvatarGraphicsIdToStateFlagTable: @ 0x0846F92C
 	.byte 0x5B, 0x04 @ acro bike
 	.byte 0x5C, 0x08 @ surfing
 	.byte 0x70, 0x10 @ underwater
-	.globl gUnknown_846F940
-gUnknown_846F940: @ 0x0846F940
+	.globl gMapU32Table_Rom_46F940
+gMapU32Table_Rom_46F940: @ 0x0846F940
 	.4byte MetatileBehavior_IsSouthArrowWarp
 	.4byte MetatileBehavior_IsNorthArrowWarp
 	.4byte MetatileBehavior_IsWestArrowWarp
 	.4byte MetatileBehavior_IsEastArrowWarp
-	.globl gUnknown_846F950
-gUnknown_846F950: @ 0x0846F950
+	.globl gMapPointerTable_Rom_46F950
+gMapPointerTable_Rom_46F950: @ 0x0846F950
 	.4byte sub_0808BD08
 	.4byte do_boulder_dust
 	.4byte sub_0808BDE8
-	.globl gUnknown_846F95C
-gUnknown_846F95C: @ 0x0846F95C
+	.globl gMapU32Table_Rom_46F95C
+gMapU32Table_Rom_46F95C: @ 0x0846F95C
 	.4byte PlayerAvatar_DoSecretBaseMatJump
-	.globl gUnknown_846F960
-gUnknown_846F960: @ 0x0846F960
+	.globl gMapU32Table_Rom_46F960
+gMapU32Table_Rom_46F960: @ 0x0846F960
 	.4byte PlayerAvatar_SecretBaseMatSpinStep0
 	.4byte PlayerAvatar_SecretBaseMatSpinStep1
 	.4byte PlayerAvatar_SecretBaseMatSpinStep2
@@ -600,8 +600,8 @@ gFieldPlayerAvatarData_0846F974: @ 0x0846F974
 gSecretBaseSpinMatMovementActions: @ 0x0846F974
 	.byte 0x10, 0x10, 0x11, 0x12, 0x13
 	.byte 0x00, 0x00, 0x00 @ padding
-	.globl gUnknown_846F97C
-gUnknown_846F97C: @ 0x0846F97C
+	.globl gMapU32Table_Rom_46F97C
+gMapU32Table_Rom_46F97C: @ 0x0846F97C
 	.4byte Fishing1
 	.4byte Fishing2
 	.4byte Fishing3

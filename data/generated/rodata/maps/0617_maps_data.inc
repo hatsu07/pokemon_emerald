@@ -716,6 +716,6 @@ MapConnections_JP_0845F310: @ 0x0845F310
 	@ struct MapConnections
 	semantic_map_connections 1, MapConnection_JP_0845F304
 
-	.globl gUnknown_845F318
-gUnknown_845F318: @ 0x0845F318
+	.globl gMapDataBlock_Rom_45F318
+gMapDataBlock_Rom_45F318: @ 0x0845F318
 	.space 0x4, 0x00

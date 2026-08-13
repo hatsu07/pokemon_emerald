@@ -788,6 +788,6 @@ sLz77Block_085D7608:
 	.if (. - sLz77Block_085D7608) != 0x3E4
 	.error "sLz77Block_085D7608 compressed size mismatch"
 	.endif
-	.globl gUnknown_85D79EC
-gUnknown_85D79EC: @ 0x085D79EC
+	.globl gBattleDataBlock_Rom_5D79EC
+gBattleDataBlock_Rom_5D79EC: @ 0x085D79EC
 	.space 0x2, 0xB0

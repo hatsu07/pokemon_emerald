@@ -72,12 +72,12 @@ gText_Rom_566DB7: @ 0x08566DB7
 	.if (. - gText_Rom_566DB7) < 0x4
 	.space 0x4 - (. - gText_Rom_566DB7)
 	.endif
-	.globl gUnknown_8566DBB
-gUnknown_8566DBB: @ 0x08566DBB
+	.globl gText_Rom_566DBB
+gText_Rom_566DBB: @ 0x08566DBB
 	@ Decoded text from ROM range: offset=0x566DBB, size=0xA
 	.string "RELEASE……$"
-	.globl gUnknown_8566DC5
-gUnknown_8566DC5: @ 0x08566DC5
+	.globl gText_Rom_566DC5
+gText_Rom_566DC5: @ 0x08566DC5
 	@ Decoded text from ROM range: offset=0x566DC5, size=0xA
 	.string "PROGRESS…$"
 	@ pret/pokeemerald-jp direct xref for 0x08566DCF: record_mixing.s: sub_080E8AA0
@@ -96,12 +96,12 @@ gText_Rom_566DD5: @ 0x08566DD5
 	.if (. - gText_Rom_566DD5) < 0x4
 	.space 0x4 - (. - gText_Rom_566DD5)
 	.endif
-	.globl gUnknown_8566DD9
-gUnknown_8566DD9: @ 0x08566DD9
+	.globl gText_Rom_566DD9
+gText_Rom_566DD9: @ 0x08566DD9
 	@ Decoded text from ROM range: offset=0x566DD9, size=0xA
 	.string "PRIORITY…$"
-	.globl gUnknown_8566DE3
-gUnknown_8566DE3: @ 0x08566DE3
+	.globl gText_Rom_566DE3
+gText_Rom_566DE3: @ 0x08566DE3
 	@ Decoded text from ROM range: offset=0x566DE3, size=0x9
 	.string "さいせいちゆう…$"
 	@ pret/pokeemerald-jp direct xref for 0x08566DEC: record_mixing.s: sub_080E8AA0

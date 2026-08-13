@@ -285,7 +285,7 @@ gIntroCreditsBrendanGfx: @ 0x08D8754C
 	.globl gIntroCreditsMayGfx
 gIntroCreditsMayGfx: @ 0x08D87C88
 	.incbin "build/graphics/intro_credits/intro_may.4bpp.lz"
-	.if (. - gUnknown_8D85E60) != 0x2618
+	.if (. - gIntroData_08D85E60) != 0x2618
 	.error "Intro credits rider and Flygon graphics must retain their original size"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D88478: intro.s: Task_IntroLoadGroudonScene

@@ -1,5 +1,5 @@
-	.globl gUnknown_8581A0C
-gUnknown_8581A0C: @ 0x08581A0C
+	.globl gPokemonPointerTable_Rom_581A0C
+gPokemonPointerTable_Rom_581A0C: @ 0x08581A0C
 	.4byte gText_Rom_5CA719
 	.4byte gText_Rom_5CA71D
 	.4byte gText_Rom_5CA720
@@ -8,8 +8,8 @@ gUnknown_8581A0C: @ 0x08581A0C
 	.4byte gText_Rom_5CA72E
 	.4byte gText_Rom_5CA733
 	.4byte gText_Rom_5CA739
-	.globl gUnknown_8581A2C
-gUnknown_8581A2C: @ 0x08581A2C
+	.globl gPokemonPointerTable_Rom_581A2C
+gPokemonPointerTable_Rom_581A2C: @ 0x08581A2C
 	.4byte gText_Rom_5CA6AC
 	.4byte DecorationMenuAction_Decorate
 	.4byte gText_Rom_5CA6B4
@@ -18,14 +18,14 @@ gUnknown_8581A2C: @ 0x08581A2C
 	.4byte DecorationMenuAction_Toss
 	.4byte gText_Rom_5C93C4
 	.4byte DecorationMenuAction_Cancel
-	.globl gUnknown_8581A4C
-gUnknown_8581A4C: @ 0x08581A4C
+	.globl gPokemonPointerTable_Rom_581A4C
+gPokemonPointerTable_Rom_581A4C: @ 0x08581A4C
 	.4byte gText_Rom_5CA6CD
 	.4byte gText_Rom_5CA6E1
 	.4byte gText_Rom_5CA6F8
 	.4byte gText_Rom_5C9423
-	.globl gUnknown_8581A5C
-gUnknown_8581A5C: @ 0x08581A5C
+	.globl gPokemonPointerTable_Rom_581A5C
+gPokemonPointerTable_Rom_581A5C: @ 0x08581A5C
 	.4byte sub_08127F3C
 	.4byte sub_08127A3C
 	.4byte sub_0812A3E0
@@ -234,16 +234,16 @@ gDecorationData_085821A0: @ 0x085821A0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xE0, 0xA6, 0x03, 0x02, 0xE5, 0x0B, 0x00, 0x00
-	.globl gUnknown_85821A8
-gUnknown_85821A8: @ 0x085821A8
+	.globl gPokemonPointerTable_Rom_5821A8
+gPokemonPointerTable_Rom_5821A8: @ 0x085821A8
 	.4byte sub_081289CC
 	.4byte sub_08128FB8
-	.globl gUnknown_85821B0
-gUnknown_85821B0: @ 0x085821B0
+	.globl gPokemonPointerTable_Rom_5821B0
+gPokemonPointerTable_Rom_5821B0: @ 0x085821B0
 	.4byte sub_08128B80
 	.4byte sub_08128FB8
-	.globl gUnknown_85821B8
-gUnknown_85821B8: @ 0x085821B8
+	.globl gPokemonPointerTable_Rom_5821B8
+gPokemonPointerTable_Rom_5821B8: @ 0x085821B8
 	.4byte sub_08128394
 	.4byte sub_081283EC
 	.4byte sub_08129BBC
@@ -274,8 +274,8 @@ gDecorationData_085821D8: @ 0x085821D8
 	.2byte 0x7FFF, 0x0000, 0x530E, 0x677F, 0x4A9B, 0x3A19, 0x296F, 0x398C
 	.2byte 0x20E5, 0x29B4, 0x1CC9, 0x6F39, 0x2F1F, 0x2E77, 0x2D9F, 0x2118
 	.2byte 0x7FFF, 0x0000
-	.globl gUnknown_858222C
-gUnknown_858222C: @ 0x0858222C
+	.globl gPokemonPointerTable_Rom_58222C
+gPokemonPointerTable_Rom_58222C: @ 0x0858222C
 	.4byte sub_0812A1CC
 	.4byte sub_08129B24
 	@ pret/pokeemerald-jp direct xref for 0x08582234: decoration.s: sub_0812A1FC

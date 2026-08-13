@@ -1,5 +1,5 @@
-	.globl gUnknown_823CFFB
-gUnknown_823CFFB: @ 0x0823CFFB
+	.globl EventScriptData_JP_0823CFFB
+EventScriptData_JP_0823CFFB: @ 0x0823CFFB
 	@ Embedded ROM bytes: file offset 0x23CFFB, size 0x24A
 	@ semanticized-mass: resolved embedded ROM pointers
 	@ ANALYSIS: RAW_BLOCK size=0x95

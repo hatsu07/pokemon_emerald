@@ -1,7 +1,7 @@
 	.globl gText_Rom_5CC335
 	.set gText_Rom_5CC335, gText_Rom_5CC331 + 0x4
-	.globl gUnknown_85CC339
-gUnknown_85CC339: @ 0x085CC339
+	.globl gText_Rom_5CC339
+gText_Rom_5CC339: @ 0x085CC339
 	@ Decoded text from ROM range: offset=0x5CC339, size=0x3
 	.string "ひき$"
 	@ pret/pokeemerald-jp direct xref for 0x085CC33C: trainer_card.s: PrintMoneyOnCard

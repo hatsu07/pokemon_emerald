@@ -253,7 +253,7 @@ InitDiplomaWindow: @ 0x08177A84
 	bx r0
 	.align 2, 0
 _08177AAC: .4byte gOptionMenuData_085C8C10
-_08177AB0: .4byte gUnknown_85D7B04
+_08177AB0: .4byte gCreditsU8Table_Rom_5D7B04
 	thumb_func_end InitDiplomaWindow
 
 	thumb_func_start PrintDiplomaText

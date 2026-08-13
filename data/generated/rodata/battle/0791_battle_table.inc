@@ -93,7 +93,7 @@ gContestData_08560AE4: @ 0x08560AE4
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x00000002 @ +0x0
 	.4byte 0x08560ADC @ +0x4
-	.4byte gUnknown_C192AC @ +0x8
+	.4byte gMoveLz77Data_Rom_C192AC @ +0x8
 	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0xABE10180 @ +0xC
 	.4byte 0x40000000 @ +0x10
@@ -176,8 +176,8 @@ gContestData_08560B94: @ 0x08560B94
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0x00, 0x00, 0x29, 0x25, 0x1F, 0x00, 0xE0, 0x03, 0x00, 0x7C, 0xFF, 0x03, 0xE0, 0x7F, 0x1F, 0x7C
 	.byte 0x5A, 0x67, 0x00, 0x00, 0x00, 0x00, 0x9C, 0x77, 0xFF, 0x7F, 0x33, 0x7F, 0xEF, 0x72, 0xFF, 0x7F
-	.globl gUnknown_8560BB4
-gUnknown_8560BB4: @ 0x08560BB4
+	.globl gBattlePointerTable_Rom_560BB4
+gBattlePointerTable_Rom_560BB4: @ 0x08560BB4
 	.4byte gText_Rom_24ACC9
 	.4byte gText_Rom_24ACD7
 	.4byte gText_Rom_24ACF4
@@ -240,8 +240,8 @@ gUnknown_8560BB4: @ 0x08560BB4
 	.4byte gText_Rom_24B2EB
 	.4byte gText_Rom_24B2EF
 	.4byte gText_Rom_24B2F5
-	.globl gUnknown_8560CAC
-gUnknown_8560CAC: @ 0x08560CAC
+	.globl gBattlePointerTable_Rom_560CAC
+gBattlePointerTable_Rom_560CAC: @ 0x08560CAC
 	.4byte gText_Rom_24B2FB
 	.4byte gText_Rom_24B301
 	.4byte gText_Rom_24B307
@@ -299,8 +299,8 @@ sPointerTable_08560CF4:
 	.4byte 0x0824B4F7 @ +0x74
 	.4byte 0x0824B6D9 @ +0x78
 	.4byte 0x0824B6F3 @ +0x7C
-	.globl gUnknown_8560D74
-gUnknown_8560D74: @ 0x08560D74
+	.globl gBattlePointerTable_Rom_560D74
+gBattlePointerTable_Rom_560D74: @ 0x08560D74
 	.4byte gText_Rom_24B70C
 	.4byte gText_Rom_24B733
 	.4byte gText_Rom_24B757
@@ -363,15 +363,15 @@ gUnknown_8560D74: @ 0x08560D74
 	.4byte gText_Rom_24BF7C
 	.4byte gText_Rom_24BFA5
 	.4byte gText_Rom_24C071
-	.globl gUnknown_8560E6C
-gUnknown_8560E6C: @ 0x08560E6C
+	.globl gBattlePointerTable_Rom_560E6C
+gBattlePointerTable_Rom_560E6C: @ 0x08560E6C
 	.4byte gText_Rom_24C0EB
 	.4byte gText_Rom_24C0F1
 	.4byte gText_Rom_24C0F7
 	.4byte gText_Rom_24C0FC
 	.4byte gText_Rom_24C101
-	.globl gUnknown_8560E80
-gUnknown_8560E80: @ 0x08560E80
+	.globl gBattlePointerTable_Rom_560E80
+gBattlePointerTable_Rom_560E80: @ 0x08560E80
 	.4byte gText_Rom_24C10D
 	.4byte gText_Rom_24C116
 	.4byte gText_Rom_24C11F

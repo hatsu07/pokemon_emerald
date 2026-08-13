@@ -76,8 +76,8 @@
 
     .align 2
 
-    .globl gUnknown_85E08C4
-gUnknown_85E08C4: @ 0x085E08C4
+    .globl gPokemonU16Table_Rom_5E08C4
+gPokemonU16Table_Rom_5E08C4: @ 0x085E08C4
     .2byte MOVE_MEGA_PUNCH
     .2byte MOVE_SWORDS_DANCE
     .2byte MOVE_MEGA_KICK
@@ -111,8 +111,8 @@ gUnknown_85E08C4: @ 0x085E08C4
 
     .align 2
 
-    .globl gUnknown_85E0900
-gUnknown_85E0900: @ 0x085E0900
+    .globl gPokemonU32Table_Rom_5E0900
+gPokemonU32Table_Rom_5E0900: @ 0x085E0900
 
 @ 0: SPECIES_NONE
 @ Original: 0x00000000

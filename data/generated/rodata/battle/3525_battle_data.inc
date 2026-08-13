@@ -1,6 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085ABB72: battle_controller_player.s: PlayerHandleChooseAction; battle_controller_wally.s: WallyHandleChooseAction
-	.globl gUnknown_85ABB72
-gUnknown_85ABB72: @ 0x085ABB72
+	.globl gBattleU8Table_Rom_5ABB72
+gBattleU8Table_Rom_5ABB72: @ 0x085ABB72
 	@ analyzed canonical ROM range 0x085ABB72-0x085ABB85
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x14

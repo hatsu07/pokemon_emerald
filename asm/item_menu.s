@@ -1092,7 +1092,7 @@ _081AB1AE:
 	.align 2, 0
 _081AB1B4: .4byte 0x02021C40
 _081AB1B8: .4byte 0x02021C54
-_081AB1BC: .4byte gUnknown_85C976F
+_081AB1BC: .4byte gItemU8Table_Rom_5C976F
 	thumb_func_end GetItemName
 
 	thumb_func_start BagMenu_MoveCursorCallback
@@ -6419,7 +6419,7 @@ _081ADD60:
 	bx r0
 	.align 2, 0
 _081ADD8C: .4byte 0x085DFA2C
-_081ADD90: .4byte gUnknown_85D7B04
+_081ADD90: .4byte gCreditsU8Table_Rom_5D7B04
 	thumb_func_end SetupBagMenu_Textboxes
 
 	thumb_func_start BagMenu_Print

@@ -66,8 +66,7 @@ gText_Rom_5A9CFB: @ 0x085A9CFB
 	@ pret/pokeemerald-jp direct xref for 0x085A9D15: pokemon.s: sub_0806CA3C
 	.globl gPokemonData_085A9D15
 gPokemonData_085A9D15:
-	.globl gUnknown_85A9D15
-gUnknown_85A9D15: @ 0x085A9D15
+	.globl gPokemonData_085A9D15
 	@ analyzed canonical ROM range 0x085A9D15-0x085A9D25
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x11
@@ -84,8 +83,7 @@ gText_Rom_5A9D26: @ 0x085A9D26
 	@ pret/pokeemerald-jp direct xref for 0x085A9D39: pokemon.s: sub_0806CA3C
 	.globl gPokemonData_085A9D39
 gPokemonData_085A9D39:
-	.globl gUnknown_85A9D39
-gUnknown_85A9D39: @ 0x085A9D39
+	.globl gPokemonData_085A9D39
 	@ analyzed canonical ROM range 0x085A9D39-0x085A9D45
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xD

@@ -2073,7 +2073,7 @@ _0819B1F8: .4byte 0x03005AF0
 _0819B1FC: .4byte 0x00000CA9
 _0819B200: .4byte 0x00000DE2
 _0819B204: .4byte 0x0203B958
-_0819B208: .4byte gUnknown_85B8700
+_0819B208: .4byte gBattleU16Table_Rom_5B8700
 _0819B20C: .4byte 0x03001278
 _0819B210:
 	ldr r0, [sp, #0x18]
@@ -2173,7 +2173,7 @@ _0819B2C0:
 	.align 2, 0
 _0819B2D0: .4byte 0x03001278
 _0819B2D4: .4byte 0x0203B958
-_0819B2D8: .4byte gUnknown_85ADBF4
+_0819B2D8: .4byte gMoveU8Table_Rom_5ADBF4
 	thumb_func_end CreateFrontierFactorySelectableMons
 
 	thumb_func_start CreateTentFactorySelectableMons
@@ -2315,10 +2315,10 @@ _0819B374:
 	bx r0
 	.align 2, 0
 _0819B3F0: .4byte 0x0203B958
-_0819B3F4: .4byte gUnknown_85BCF70
+_0819B3F4: .4byte gBattleU16Table_Rom_5BCF70
 _0819B3F8: .4byte 0x03005AF0
 _0819B3FC: .4byte 0x03001278
-_0819B400: .4byte gUnknown_85ADBF4
+_0819B400: .4byte gMoveU8Table_Rom_5ADBF4
 	thumb_func_end CreateTentFactorySelectableMons
 
 	thumb_func_start Select_CopyMonsToPlayerParty

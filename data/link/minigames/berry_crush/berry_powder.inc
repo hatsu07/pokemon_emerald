@@ -1,5 +1,5 @@
-	.globl gUnknown_82C7CD8
-gUnknown_82C7CD8: @ 0x082C7CD8
+	.globl gBerryCrushU16Table_Rom_2C7CD8
+gBerryCrushU16Table_Rom_2C7CD8: @ 0x082C7CD8
 	@ analyzed canonical ROM range 0x082C7CD8-0x082C7D27
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x50

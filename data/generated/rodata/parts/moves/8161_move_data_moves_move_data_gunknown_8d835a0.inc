@@ -140,8 +140,8 @@ sLz77Block_08D855E4:
 	.error "sLz77Block_08D855E4 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D85604: battle_message.s: SetPpNumbersPaletteInMoveSelection; pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
-	.globl gUnknown_8D85604
-gUnknown_8D85604: @ 0x08D85604
+	.globl gMoveU8Table_Rom_D85604
+gMoveU8Table_Rom_D85604: @ 0x08D85604
 	@ analyzed canonical ROM range 0x08D85604-0x08D85605
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2
@@ -288,8 +288,7 @@ gIntroData_08D85E56: @ 0x08D85E56
 	@ pret/pokeemerald-jp direct xref for 0x08D85E60: intro.s: Task_IntroRayquazaGlowScene_1
 	.globl gIntroData_08D85E60
 gIntroData_08D85E60:
-	.globl gUnknown_8D85E60
-gUnknown_8D85E60: @ 0x08D85E60
+	.globl gIntroData_08D85E60
 	@ analyzed canonical ROM range 0x08D85E60-0x08D85F13
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xB4

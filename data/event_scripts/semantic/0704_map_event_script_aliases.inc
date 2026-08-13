@@ -2737,111 +2737,111 @@
 
 @ 0x0821B834
 .globl IslandCave_EventScript_CaveEntranceMiddle
-.set IslandCave_EventScript_CaveEntranceMiddle, gUnknown_821B7F4 + 0x40
+.set IslandCave_EventScript_CaveEntranceMiddle, EventScriptData_JP_0821B7F4 + 0x40
 
 @ 0x0821B862
 .globl IslandCave_EventScript_CaveEntranceSide
-.set IslandCave_EventScript_CaveEntranceSide, gUnknown_821B7F4 + 0x6E
+.set IslandCave_EventScript_CaveEntranceSide, EventScriptData_JP_0821B7F4 + 0x6E
 
 @ 0x0821B89D
 .globl IslandCave_EventScript_Regice
-.set IslandCave_EventScript_Regice, gUnknown_821B7F4 + 0xA9
+.set IslandCave_EventScript_Regice, EventScriptData_JP_0821B7F4 + 0xA9
 
 @ 0x0821B978
 .globl AncientTomb_EventScript_CaveEntranceMiddle
-.set AncientTomb_EventScript_CaveEntranceMiddle, gUnknown_821B7F4 + 0x184
+.set AncientTomb_EventScript_CaveEntranceMiddle, EventScriptData_JP_0821B7F4 + 0x184
 
 @ 0x0821B995
 .globl AncientTomb_EventScript_CaveEntranceSide
-.set AncientTomb_EventScript_CaveEntranceSide, gUnknown_821B7F4 + 0x1A1
+.set AncientTomb_EventScript_CaveEntranceSide, EventScriptData_JP_0821B7F4 + 0x1A1
 
 @ 0x0821B99F
 .globl AncientTomb_EventScript_Registeel
-.set AncientTomb_EventScript_Registeel, gUnknown_821B7F4 + 0x1AB
+.set AncientTomb_EventScript_Registeel, EventScriptData_JP_0821B7F4 + 0x1AB
 
 @ 0x0821BA41
 .globl Underwater_SealedChamber_EventScript_Braille
-.set Underwater_SealedChamber_EventScript_Braille, gUnknown_821B7F4 + 0x24D
+.set Underwater_SealedChamber_EventScript_Braille, EventScriptData_JP_0821B7F4 + 0x24D
 
 @ 0x0821BAB1
 .globl SealedChamber_OuterRoom_EventScript_BrailleABC
-.set SealedChamber_OuterRoom_EventScript_BrailleABC, gUnknown_821B7F4 + 0x2BD
+.set SealedChamber_OuterRoom_EventScript_BrailleABC, EventScriptData_JP_0821B7F4 + 0x2BD
 
 @ 0x0821BABB
 .globl SealedChamber_OuterRoom_EventScript_BrailleGHI
-.set SealedChamber_OuterRoom_EventScript_BrailleGHI, gUnknown_821B7F4 + 0x2C7
+.set SealedChamber_OuterRoom_EventScript_BrailleGHI, EventScriptData_JP_0821B7F4 + 0x2C7
 
 @ 0x0821BAC5
 .globl SealedChamber_OuterRoom_EventScript_BrailleMNO
-.set SealedChamber_OuterRoom_EventScript_BrailleMNO, gUnknown_821B7F4 + 0x2D1
+.set SealedChamber_OuterRoom_EventScript_BrailleMNO, EventScriptData_JP_0821B7F4 + 0x2D1
 
 @ 0x0821BACF
 .globl SealedChamber_OuterRoom_EventScript_BrailleTUV
-.set SealedChamber_OuterRoom_EventScript_BrailleTUV, gUnknown_821B7F4 + 0x2DB
+.set SealedChamber_OuterRoom_EventScript_BrailleTUV, EventScriptData_JP_0821B7F4 + 0x2DB
 
 @ 0x0821BAD9
 .globl SealedChamber_OuterRoom_EventScript_BrailleDEF
-.set SealedChamber_OuterRoom_EventScript_BrailleDEF, gUnknown_821B7F4 + 0x2E5
+.set SealedChamber_OuterRoom_EventScript_BrailleDEF, EventScriptData_JP_0821B7F4 + 0x2E5
 
 @ 0x0821BAE3
 .globl SealedChamber_OuterRoom_EventScript_BrailleJKL
-.set SealedChamber_OuterRoom_EventScript_BrailleJKL, gUnknown_821B7F4 + 0x2EF
+.set SealedChamber_OuterRoom_EventScript_BrailleJKL, EventScriptData_JP_0821B7F4 + 0x2EF
 
 @ 0x0821BAED
 .globl SealedChamber_OuterRoom_EventScript_BraillePQRS
-.set SealedChamber_OuterRoom_EventScript_BraillePQRS, gUnknown_821B7F4 + 0x2F9
+.set SealedChamber_OuterRoom_EventScript_BraillePQRS, EventScriptData_JP_0821B7F4 + 0x2F9
 
 @ 0x0821BAF7
 .globl SealedChamber_OuterRoom_EventScript_BraillePeriod
-.set SealedChamber_OuterRoom_EventScript_BraillePeriod, gUnknown_821B7F4 + 0x303
+.set SealedChamber_OuterRoom_EventScript_BraillePeriod, EventScriptData_JP_0821B7F4 + 0x303
 
 @ 0x0821BB01
 .globl SealedChamber_OuterRoom_EventScript_BrailleWXYZ
-.set SealedChamber_OuterRoom_EventScript_BrailleWXYZ, gUnknown_821B7F4 + 0x30D
+.set SealedChamber_OuterRoom_EventScript_BrailleWXYZ, EventScriptData_JP_0821B7F4 + 0x30D
 
 @ 0x0821BB0B
 .globl SealedChamber_OuterRoom_EventScript_BrailleComma
-.set SealedChamber_OuterRoom_EventScript_BrailleComma, gUnknown_821B7F4 + 0x317
+.set SealedChamber_OuterRoom_EventScript_BrailleComma, EventScriptData_JP_0821B7F4 + 0x317
 
 @ 0x0821BB15
 .globl SealedChamber_OuterRoom_EventScript_InnerRoomEntranceWall
-.set SealedChamber_OuterRoom_EventScript_InnerRoomEntranceWall, gUnknown_821B7F4 + 0x321
+.set SealedChamber_OuterRoom_EventScript_InnerRoomEntranceWall, EventScriptData_JP_0821B7F4 + 0x321
 
 @ 0x0821BB32
 .globl SealedChamber_OuterRoom_EventScript_BrailleDigHere
-.set SealedChamber_OuterRoom_EventScript_BrailleDigHere, gUnknown_821B7F4 + 0x33E
+.set SealedChamber_OuterRoom_EventScript_BrailleDigHere, EventScriptData_JP_0821B7F4 + 0x33E
 
 @ 0x0821BB3D
 .globl SealedChamber_InnerRoom_EventScript_BrailleBackWall
-.set SealedChamber_InnerRoom_EventScript_BrailleBackWall, gUnknown_821B7F4 + 0x349
+.set SealedChamber_InnerRoom_EventScript_BrailleBackWall, EventScriptData_JP_0821B7F4 + 0x349
 
 @ 0x0821BB9A
 .globl SealedChamber_InnerRoom_EventScript_BrailleStoryPart1
-.set SealedChamber_InnerRoom_EventScript_BrailleStoryPart1, gUnknown_821B7F4 + 0x3A6
+.set SealedChamber_InnerRoom_EventScript_BrailleStoryPart1, EventScriptData_JP_0821B7F4 + 0x3A6
 
 @ 0x0821BBA4
 .globl SealedChamber_InnerRoom_EventScript_BrailleStoryPart2
-.set SealedChamber_InnerRoom_EventScript_BrailleStoryPart2, gUnknown_821B7F4 + 0x3B0
+.set SealedChamber_InnerRoom_EventScript_BrailleStoryPart2, EventScriptData_JP_0821B7F4 + 0x3B0
 
 @ 0x0821BBAE
 .globl SealedChamber_InnerRoom_EventScript_BrailleStoryPart3
-.set SealedChamber_InnerRoom_EventScript_BrailleStoryPart3, gUnknown_821B7F4 + 0x3BA
+.set SealedChamber_InnerRoom_EventScript_BrailleStoryPart3, EventScriptData_JP_0821B7F4 + 0x3BA
 
 @ 0x0821BBB8
 .globl SealedChamber_InnerRoom_EventScript_BrailleStoryPart4
-.set SealedChamber_InnerRoom_EventScript_BrailleStoryPart4, gUnknown_821B7F4 + 0x3C4
+.set SealedChamber_InnerRoom_EventScript_BrailleStoryPart4, EventScriptData_JP_0821B7F4 + 0x3C4
 
 @ 0x0821BBC2
 .globl SealedChamber_InnerRoom_EventScript_BrailleStoryPart5
-.set SealedChamber_InnerRoom_EventScript_BrailleStoryPart5, gUnknown_821B7F4 + 0x3CE
+.set SealedChamber_InnerRoom_EventScript_BrailleStoryPart5, EventScriptData_JP_0821B7F4 + 0x3CE
 
 @ 0x0821BBCC
 .globl SealedChamber_InnerRoom_EventScript_BrailleStoryPart6
-.set SealedChamber_InnerRoom_EventScript_BrailleStoryPart6, gUnknown_821B7F4 + 0x3D8
+.set SealedChamber_InnerRoom_EventScript_BrailleStoryPart6, EventScriptData_JP_0821B7F4 + 0x3D8
 
 @ 0x0821BD3D
 .globl SkyPillar_Outside_EventScript_Wallace
-.set SkyPillar_Outside_EventScript_Wallace, gUnknown_821B7F4 + 0x549
+.set SkyPillar_Outside_EventScript_Wallace, EventScriptData_JP_0821B7F4 + 0x549
 
 @ 0x0821BF92
 .globl SkyPillar_Top_EventScript_Rayquaza
@@ -2957,39 +2957,39 @@
 
 @ 0x0821DF50
 .globl SSTidalCorridor_EventScript_Briney
-.set SSTidalCorridor_EventScript_Briney, gUnknown_821DEC7 + 0x89
+.set SSTidalCorridor_EventScript_Briney, EventScriptData_JP_0821DEC7 + 0x89
 
 @ 0x0821DF59
 .globl SSTidalCorridor_EventScript_Peeko
-.set SSTidalCorridor_EventScript_Peeko, gUnknown_821DEC7 + 0x92
+.set SSTidalCorridor_EventScript_Peeko, EventScriptData_JP_0821DEC7 + 0x92
 
 @ 0x0821DF6C
 .globl SSTidalCorridor_EventScript_Cabin1Sign
-.set SSTidalCorridor_EventScript_Cabin1Sign, gUnknown_821DEC7 + 0xA5
+.set SSTidalCorridor_EventScript_Cabin1Sign, EventScriptData_JP_0821DEC7 + 0xA5
 
 @ 0x0821DF75
 .globl SSTidalCorridor_EventScript_Cabin2Sign
-.set SSTidalCorridor_EventScript_Cabin2Sign, gUnknown_821DEC7 + 0xAE
+.set SSTidalCorridor_EventScript_Cabin2Sign, EventScriptData_JP_0821DEC7 + 0xAE
 
 @ 0x0821DF7E
 .globl SSTidalCorridor_EventScript_Cabin3Sign
-.set SSTidalCorridor_EventScript_Cabin3Sign, gUnknown_821DEC7 + 0xB7
+.set SSTidalCorridor_EventScript_Cabin3Sign, EventScriptData_JP_0821DEC7 + 0xB7
 
 @ 0x0821DF87
 .globl SSTidalCorridor_EventScript_Cabin4Sign
-.set SSTidalCorridor_EventScript_Cabin4Sign, gUnknown_821DEC7 + 0xC0
+.set SSTidalCorridor_EventScript_Cabin4Sign, EventScriptData_JP_0821DEC7 + 0xC0
 
 @ 0x0821DF90
 .globl SSTidalCorridor_EventScript_ExitSailor
-.set SSTidalCorridor_EventScript_ExitSailor, gUnknown_821DEC7 + 0xC9
+.set SSTidalCorridor_EventScript_ExitSailor, EventScriptData_JP_0821DEC7 + 0xC9
 
 @ 0x0821DFF4
 .globl SSTidalCorridor_EventScript_Porthole
-.set SSTidalCorridor_EventScript_Porthole, gUnknown_821DEC7 + 0x12D
+.set SSTidalCorridor_EventScript_Porthole, EventScriptData_JP_0821DEC7 + 0x12D
 
 @ 0x0821E01A
 .globl SSTidalCorridor_EventScript_Sailor
-.set SSTidalCorridor_EventScript_Sailor, gUnknown_821DEC7 + 0x153
+.set SSTidalCorridor_EventScript_Sailor, EventScriptData_JP_0821DEC7 + 0x153
 
 @ 0x0821E3E2
 .globl SSTidalLowerDeck_EventScript_Phillip
@@ -3769,7 +3769,7 @@
 
 @ 0x0823D1C9
 .globl Route110_TrickHouseEntrance_EventScript_TrickMasterHiding
-.set Route110_TrickHouseEntrance_EventScript_TrickMasterHiding, gUnknown_823CFFB + 0x1CE
+.set Route110_TrickHouseEntrance_EventScript_TrickMasterHiding, EventScriptData_JP_0823CFFB + 0x1CE
 
 @ 0x0823D728
 .globl Route110_TrickHouseEnd_EventScript_TrickMaster
@@ -4149,51 +4149,51 @@
 
 @ 0x08242EF6
 .globl Common_EventScript_ShowPokemartSign
-.set Common_EventScript_ShowPokemartSign, gUnknown_8242E1E + 0xD8
+.set Common_EventScript_ShowPokemartSign, EventScriptData_JP_08242E1E + 0xD8
 
 @ 0x08242EFF
 .globl Common_EventScript_ShowPokemonCenterSign
-.set Common_EventScript_ShowPokemonCenterSign, gUnknown_8242E1E + 0xE1
+.set Common_EventScript_ShowPokemonCenterSign, EventScriptData_JP_08242E1E + 0xE1
 
 @ 0x082431CD
 .globl ProfBirch_EventScript_RatePokedexOrRegister
-.set ProfBirch_EventScript_RatePokedexOrRegister, gUnknown_824311B + 0xB2
+.set ProfBirch_EventScript_RatePokedexOrRegister, EventScriptData_JP_0824311B + 0xB2
 
 @ 0x0824335E
 .globl Route120_EventScript_Kecleon1
-.set Route120_EventScript_Kecleon1, gUnknown_824311B + 0x243
+.set Route120_EventScript_Kecleon1, EventScriptData_JP_0824311B + 0x243
 
 @ 0x0824336B
 .globl Route120_EventScript_Kecleon2
-.set Route120_EventScript_Kecleon2, gUnknown_824311B + 0x250
+.set Route120_EventScript_Kecleon2, EventScriptData_JP_0824311B + 0x250
 
 @ 0x08243378
 .globl Route120_EventScript_Kecleon3
-.set Route120_EventScript_Kecleon3, gUnknown_824311B + 0x25D
+.set Route120_EventScript_Kecleon3, EventScriptData_JP_0824311B + 0x25D
 
 @ 0x08243385
 .globl Route120_EventScript_Kecleon4
-.set Route120_EventScript_Kecleon4, gUnknown_824311B + 0x26A
+.set Route120_EventScript_Kecleon4, EventScriptData_JP_0824311B + 0x26A
 
 @ 0x08243392
 .globl Route120_EventScript_Kecleon5
-.set Route120_EventScript_Kecleon5, gUnknown_824311B + 0x277
+.set Route120_EventScript_Kecleon5, EventScriptData_JP_0824311B + 0x277
 
 @ 0x08244185
 .globl Common_EventScript_UnionRoomAttendant
-.set Common_EventScript_UnionRoomAttendant, gUnknown_82440E6 + 0x9F
+.set Common_EventScript_UnionRoomAttendant, EventScriptData_JP_082440E6 + 0x9F
 
 @ 0x0824418B
 .globl Common_EventScript_WirelessClubAttendant
-.set Common_EventScript_WirelessClubAttendant, gUnknown_82440E6 + 0xA5
+.set Common_EventScript_WirelessClubAttendant, EventScriptData_JP_082440E6 + 0xA5
 
 @ 0x08244191
 .globl Common_EventScript_DirectCornerAttendant
-.set Common_EventScript_DirectCornerAttendant, gUnknown_82440E6 + 0xAB
+.set Common_EventScript_DirectCornerAttendant, EventScriptData_JP_082440E6 + 0xAB
 
 @ 0x08245E13
 .globl SecretBase_EventScript_RecordMixTrainer
-.set SecretBase_EventScript_RecordMixTrainer, gUnknown_8245DDD + 0x36
+.set SecretBase_EventScript_RecordMixTrainer, EventScriptData_JP_08245DDD + 0x36
 
 @ 0x08246512
 .globl Route111_EventScript_SecretPowerMan
@@ -4205,71 +4205,59 @@
 
 @ 0x08247053
 .globl EventScript_BattleColosseum_2P_PlayerSpot0
-.set EventScript_BattleColosseum_2P_PlayerSpot0, gUnknown_8247053
 
 @ 0x0824705D
 .globl EventScript_BattleColosseum_2P_PlayerSpot1
-.set EventScript_BattleColosseum_2P_PlayerSpot1, gUnknown_824705D
 
 @ 0x08247067
 .globl EventScript_BattleColosseum_4P_PlayerSpot0
-.set EventScript_BattleColosseum_4P_PlayerSpot0, gUnknown_8247067
 
 @ 0x08247082
 .globl EventScript_BattleColosseum_4P_PlayerSpot1
-.set EventScript_BattleColosseum_4P_PlayerSpot1, gUnknown_8247082
 
 @ 0x0824709D
 .globl EventScript_BattleColosseum_4P_PlayerSpot2
-.set EventScript_BattleColosseum_4P_PlayerSpot2, gUnknown_824709D
 
 @ 0x082470B8
 .globl EventScript_BattleColosseum_4P_PlayerSpot3
-.set EventScript_BattleColosseum_4P_PlayerSpot3, gUnknown_82470B8
 
 @ 0x082470D4
 .globl EventScript_TradeCenter_Chair0
-.set EventScript_TradeCenter_Chair0, gUnknown_82470D4
 
 @ 0x082470DE
 .globl EventScript_TradeCenter_Chair1
-.set EventScript_TradeCenter_Chair1, gUnknown_82470DE
 
 @ 0x082470FC
 .globl EventScript_RecordCenter_Spot0
-.set EventScript_RecordCenter_Spot0, gUnknown_82470FC
 
 @ 0x08247111
 .globl EventScript_RecordCenter_Spot1
-.set EventScript_RecordCenter_Spot1, gUnknown_8247111
 
 @ 0x08247126
 .globl EventScript_RecordCenter_Spot2
-.set EventScript_RecordCenter_Spot2, gUnknown_8247126
 
 @ 0x0824713B
 .globl EventScript_RecordCenter_Spot3
-.set EventScript_RecordCenter_Spot3, gUnknown_824713B
 
 @ 0x08247185
 .globl BattleColosseum_2P_EventScript_Attendant
-.set BattleColosseum_2P_EventScript_Attendant, gUnknown_824717B + 0xA
+.set BattleColosseum_2P_EventScript_Attendant, EventScriptData_JP_0824717B + 0xA
 
 @ 0x08247195
 .globl TradeCenter_EventScript_Attendant
-.set TradeCenter_EventScript_Attendant, gUnknown_824717B + 0x1A
+.set TradeCenter_EventScript_Attendant, EventScriptData_JP_0824717B + 0x1A
 
 @ 0x082471A5
 .globl RecordCorner_EventScript_Attendant
-.set RecordCorner_EventScript_Attendant, gUnknown_824717B + 0x2A
+.set RecordCorner_EventScript_Attendant, EventScriptData_JP_0824717B + 0x2A
 
 @ 0x08247B72
 .globl MossdeepCity_GameCorner_1F_EventScript_PokemonJumpRecords
-.set MossdeepCity_GameCorner_1F_EventScript_PokemonJumpRecords, gUnknown_8247869 + 0x309
+.set MossdeepCity_GameCorner_1F_EventScript_PokemonJumpRecords, EventScriptData_JP_08247869 + 0x309
 
 @ 0x08247B79
 .globl MossdeepCity_GameCorner_1F_EventScript_DodrioBerryPickingRecords
-.set MossdeepCity_GameCorner_1F_EventScript_DodrioBerryPickingRecords, gUnknown_8247869 + 0x310
+.set MossdeepCity_GameCorner_1F_EventScript_DodrioBerryPickingRecords, EventScriptData_JP_08247869 + 0x310
 
 @ 0x08254D6B
 .globl MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan
@@ -4289,11 +4277,11 @@
 
 @ 0x08264373
 .globl LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady
-.set LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady, gUnknown_8264358 + 0x1B
+.set LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady, EventScriptData_JP_08264358 + 0x1B
 
 @ 0x082649CF
 .globl LilycoveCity_PokemonCenter_1F_EventScript_ContestLadyMon
-.set LilycoveCity_PokemonCenter_1F_EventScript_ContestLadyMon, gUnknown_8264358 + 0x677
+.set LilycoveCity_PokemonCenter_1F_EventScript_ContestLadyMon, EventScriptData_JP_08264358 + 0x677
 
 @ 0x0826C765
 .globl BattleFrontier_BattleTowerLobby_EventScript_Apprentice
@@ -4387,11 +4375,11 @@
 
 @ 0x0824339F
 .globl Route119_EventScript_Kecleon1
-.set Route119_EventScript_Kecleon1, gUnknown_824311B + 0x284
+.set Route119_EventScript_Kecleon1, EventScriptData_JP_0824311B + 0x284
 
 @ 0x082433AC
 .globl Route119_EventScript_Kecleon2
-.set Route119_EventScript_Kecleon2, gUnknown_824311B + 0x291
+.set Route119_EventScript_Kecleon2, EventScriptData_JP_0824311B + 0x291
 
 @ 0x081ED0BA
 .globl Route119_EventScript_Kent

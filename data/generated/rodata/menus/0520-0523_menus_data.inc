@@ -1,5 +1,5 @@
-	.globl gUnknown_8300BDC
-gUnknown_8300BDC: @ 0x08300BDC
+	.globl gMenuPointerTable_Rom_300BDC
+gMenuPointerTable_Rom_300BDC: @ 0x08300BDC
 	.4byte gText_Rom_300B38
 	.4byte gText_Rom_300B59
 	.4byte gText_Rom_300B75
@@ -1089,8 +1089,8 @@ gTradeData_08302D64: @ 0x08302D64
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08304D04: egg_hatch.s: CB2_EggHatch_0; trade.s: sub_0807B064
-	.globl gUnknown_8304D04
-gUnknown_8304D04: @ 0x08304D04
+	.globl gMenuU16Table_Rom_304D04
+gMenuU16Table_Rom_304D04: @ 0x08304D04
 	@ analyzed canonical ROM range 0x08304D04-0x08305D23
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x1020
@@ -1353,8 +1353,8 @@ gUnknown_8304D04: @ 0x08304D04
 	.2byte 0x0000, 0x7FFF, 0x779B, 0x7337, 0x6ED3, 0x4610, 0x3D8C, 0x3528
 	.2byte 0x2CC5, 0x739C, 0x6739, 0x5AD6, 0x4E73, 0x36DA, 0x2A79, 0x37E6
 	@ pret/pokeemerald-jp direct xref for 0x08305D24: egg_hatch.s: CB2_EggHatch_0; trade.s: sub_0807B064
-	.globl gUnknown_8305D24
-gUnknown_8305D24: @ 0x08305D24
+	.globl gMenuU8Table_Rom_305D24
+gMenuU8Table_Rom_305D24: @ 0x08305D24
 	@ analyzed canonical ROM range 0x08305D24-0x08305D83
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x60
@@ -1365,8 +1365,8 @@ gUnknown_8305D24: @ 0x08305D24
 	.byte 0x00, 0x00, 0xFF, 0x7F, 0x9B, 0x77, 0x37, 0x73, 0xD3, 0x6E, 0x40, 0x54, 0x84, 0x34, 0x42, 0x2C
 	.byte 0x00, 0x24, 0xFF, 0x5F, 0x9C, 0x53, 0x39, 0x4B, 0xD7, 0x3A, 0x31, 0x2E, 0x29, 0x1D, 0x81, 0x10
 	@ pret/pokeemerald-jp direct xref for 0x08305D84: egg_hatch.s: CB2_EggHatch_0; trade.s: sub_0807B064
-	.globl gUnknown_8305D84
-gUnknown_8305D84: @ 0x08305D84
+	.globl gMenuU8Table_Rom_305D84
+gMenuU8Table_Rom_305D84: @ 0x08305D84
 	@ analyzed canonical ROM range 0x08305D84-0x083071A3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x1420

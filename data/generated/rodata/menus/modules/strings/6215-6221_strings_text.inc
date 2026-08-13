@@ -32,8 +32,8 @@ gText_Rom_5CC654: @ 0x085CC654
 	.if (. - gText_Rom_5CC654) < 0xf
 	.space 0xf - (. - gText_Rom_5CC654)
 	.endif
-	.globl gUnknown_85CC663
-gUnknown_85CC663: @ 0x085CC663
+	.globl gText_Rom_5CC663
+gText_Rom_5CC663: @ 0x085CC663
 	@ Decoded text from ROM range: offset=0x5CC663, size=0xF
 	.string "{SE_M_HYPER_BEAM2}さんが　さんかしました！$"
 

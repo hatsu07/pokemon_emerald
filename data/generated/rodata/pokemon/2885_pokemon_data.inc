@@ -1,6 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x0857CD6C: pokedex_area_screen.s: CreateAreaMarkerSprites; region_map.s: GetMapName, RegionMap_InitializeStateBasedOnPlayerLocation, RegionMap_InitializeStateBasedOnSSTidalLocation, sub_0812463C
-	.globl gUnknown_857CD6C
-gUnknown_857CD6C: @ 0x0857CD6C
+	.globl gPokemonU8Table_Rom_57CD6C
+gPokemonU8Table_Rom_57CD6C: @ 0x0857CD6C
 	@ analyzed canonical ROM range 0x0857CD6C-0x0857D413
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x6A8

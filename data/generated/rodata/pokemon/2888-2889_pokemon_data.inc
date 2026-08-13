@@ -26,8 +26,8 @@ gSlotMachineData_085843D0: @ 0x085843D0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x03, 0x01, 0x02, 0x00
-	.globl gUnknown_85843D4
-gUnknown_85843D4: @ 0x085843D4
+	.globl gPokemonU32Table_Rom_5843D4
+gPokemonU32Table_Rom_5843D4: @ 0x085843D4
 	.4byte SlotAction_UnfadeScreen
 	.4byte SlotAction_WaitForUnfade
 	.4byte SlotAction_SetSlotMachineVars
@@ -57,25 +57,25 @@ gUnknown_85843D4: @ 0x085843D4
 	.4byte SlotAction_ExitMessage_NoMoreCoins
 	.4byte SlotAction_EndGame
 	.4byte SlotAction_FreeDataStructures
-	.globl gUnknown_8584448
-gUnknown_8584448: @ 0x08584448
+	.globl gPokemonU32Table_Rom_584448
+gPokemonU32Table_Rom_584448: @ 0x08584448
 	.4byte AwardPayoutAction0
 	.4byte AwardPayoutAction_GivePayoutToPlayer
 	.4byte AwardPayoutAction_FreeTask
-	.globl gUnknown_8584454
-gUnknown_8584454: @ 0x08584454
+	.globl gPokemonU32Table_Rom_584454
+gPokemonU32Table_Rom_584454: @ 0x08584454
 	.4byte SlotReelAction_StayStill
 	.4byte SlotReelAction_Spin
 	.4byte SlotReelAction_DecideWhereToStop
 	.4byte SlotReelAction_MoveToStop
 	.4byte SlotReelAction_OscillatingStop
-	.globl gUnknown_8584468
-gUnknown_8584468: @ 0x08584468
+	.globl gPokemonU32Table_Rom_584468
+gPokemonU32Table_Rom_584468: @ 0x08584468
 	.4byte DecideReelTurns_BiasTag_Reel1
 	.4byte DecideReelTurns_BiasTag_Reel2
 	.4byte DecideReelTurns_BiasTag_Reel3
-	.globl gUnknown_8584474
-gUnknown_8584474: @ 0x08584474
+	.globl gPokemonU32Table_Rom_584474
+gPokemonU32Table_Rom_584474: @ 0x08584474
 	.4byte DecideReelTurns_NoBiasTag_Reel1
 	.4byte DecideReelTurns_NoBiasTag_Reel2
 	.4byte DecideReelTurns_NoBiasTag_Reel3
@@ -86,33 +86,33 @@ gSlotMachineData_08584480: @ 0x08584480
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.2byte 0x0002, 0x0004, 0x0004, 0x0004, 0x0008, 0x0000
-	.globl gUnknown_858448C
-gUnknown_858448C: @ 0x0858448C
+	.globl gPokemonU32Table_Rom_58448C
+gPokemonU32Table_Rom_58448C: @ 0x0858448C
 	.4byte DecideReelTurns_BiasTag_Reel1_Bet1
 	.4byte DecideReelTurns_BiasTag_Reel1_Bet2or3
 	.4byte DecideReelTurns_BiasTag_Reel1_Bet2or3
-	.globl gUnknown_8584498
-gUnknown_8584498: @ 0x08584498
+	.globl gPokemonU32Table_Rom_584498
+gPokemonU32Table_Rom_584498: @ 0x08584498
 	.4byte DecideReelTurns_BiasTag_Reel2_Bet1or2
 	.4byte DecideReelTurns_BiasTag_Reel2_Bet1or2
 	.4byte DecideReelTurns_BiasTag_Reel2_Bet3
-	.globl gUnknown_85844A4
-gUnknown_85844A4: @ 0x085844A4
+	.globl gPokemonU32Table_Rom_5844A4
+gPokemonU32Table_Rom_5844A4: @ 0x085844A4
 	.4byte DecideReelTurns_BiasTag_Reel3_Bet1or2
 	.4byte DecideReelTurns_BiasTag_Reel3_Bet1or2
 	.4byte DecideReelTurns_BiasTag_Reel3_Bet3
-	.globl gUnknown_85844B0
-gUnknown_85844B0: @ 0x085844B0
+	.globl gPokemonU32Table_Rom_5844B0
+gPokemonU32Table_Rom_5844B0: @ 0x085844B0
 	.4byte DecideReelTurns_NoBiasTag_Reel2_Bet1
 	.4byte DecideReelTurns_NoBiasTag_Reel2_Bet2
 	.4byte DecideReelTurns_NoBiasTag_Reel2_Bet3
-	.globl gUnknown_85844BC
-gUnknown_85844BC: @ 0x085844BC
+	.globl gPokemonU32Table_Rom_5844BC
+gPokemonU32Table_Rom_5844BC: @ 0x085844BC
 	.4byte DecideReelTurns_NoBiasTag_Reel3_Bet1
 	.4byte DecideReelTurns_NoBiasTag_Reel3_Bet2
 	.4byte DecideReelTurns_NoBiasTag_Reel3_Bet3
-	.globl gUnknown_85844C8
-gUnknown_85844C8: @ 0x085844C8
+	.globl gPokemonPointerTable_Rom_5844C8
+gPokemonPointerTable_Rom_5844C8: @ 0x085844C8
 	.4byte sub_0812CDB4
 	.4byte sub_0812CDE8
 	.4byte sub_0812CE04
@@ -123,8 +123,8 @@ gSlotMachineData_085844D4: @ 0x085844D4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0005, 0x000A, 0x000F, 0x0000
-	.globl gUnknown_85844DC
-gUnknown_85844DC: @ 0x085844DC
+	.globl gPokemonPointerTable_Rom_5844DC
+gPokemonPointerTable_Rom_5844DC: @ 0x085844DC
 	.4byte sub_0812D270
 	.4byte sub_0812D274
 	.4byte sub_0812D29C
@@ -143,8 +143,8 @@ gSlotMachineData_085844EE: @ 0x085844EE
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xA
 	.2byte 0x006E, 0x009F, 0x006F, 0x00AF, 0x007F
-	.globl gUnknown_85844F8
-gUnknown_85844F8: @ 0x085844F8
+	.globl gPokemonU32Table_Rom_5844F8
+gPokemonU32Table_Rom_5844F8: @ 0x085844F8
 	.4byte ReeltimeAction0
 	.4byte ReeltimeAction1
 	.4byte ReeltimeAction2
@@ -185,8 +185,8 @@ gSlotMachineData_08584550: @ 0x08584550
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x000A, 0x0008, 0x0006, 0x0004
-	.globl gUnknown_8584558
-gUnknown_8584558: @ 0x08584558
+	.globl gPokemonU32Table_Rom_584558
+gPokemonU32Table_Rom_584558: @ 0x08584558
 	.4byte InfoBox_FadeIn
 	.4byte InfoBox_WaitForFade
 	.4byte InfoBox_8104B80
@@ -202,8 +202,8 @@ gUnknown_8584558: @ 0x08584558
 	.4byte InfoBox_8104BFC
 	.4byte InfoBox_WaitForFade
 	.4byte InfoBox_FreeTask
-	.globl gUnknown_8584594
-gUnknown_8584594: @ 0x08584594
+	.globl gPokemonPointerTable_Rom_584594
+gPokemonPointerTable_Rom_584594: @ 0x08584594
 	.4byte sub_0812E0F0
 	@ pret/pokeemerald-jp direct xref for 0x08584598: slot_machine.s: sub_0812EB58
 	.globl gSlotMachineData_08584598
@@ -1298,7 +1298,7 @@ gSlotMachineData_08588154: @ 0x08588154
 	.2byte 0x0010, 0x0010, 0x0010, 0x0010, 0x0010, 0x00B3, 0x00B4, 0x00B5
 	.2byte 0x00B6, 0x00B7, 0x00B8, 0x00E7, 0x00E8, 0x00E5, 0x00BD, 0x0010
 	.2byte 0x0010, 0x0010, 0x0010, 0x0010, 0x0010, 0x0010, 0x0010, 0x0047
-	.globl gUnknown_8588604
-gUnknown_8588604: @ 0x08588604
+	.globl gPokemonDataBlock_Rom_588604
+gPokemonDataBlock_Rom_588604: @ 0x08588604
 	.space 0x2, 0x00
 	.globl gText_Rom_588606

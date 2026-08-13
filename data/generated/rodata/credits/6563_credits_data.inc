@@ -1,5 +1,5 @@
-	.globl gUnknown_85CD123
-gUnknown_85CD123: @ 0x085CD123
+	.globl gText_Rom_5CD123
+gText_Rom_5CD123: @ 0x085CD123
 	@ Decoded text from ROM range: offset=0x5CD123, size=0x10
 	.string "できごとを　よみこみちゅう！！$"
 	@ pret/pokeemerald-jp direct xref for 0x085CD133: berry_tag_screen.s: CB2_MysteryEventMenu

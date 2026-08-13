@@ -52,8 +52,8 @@ gText_Rom_5DD458: @ 0x085DD458
 	.if (. - gText_Rom_5DD458) < 0x9
 	.space 0x9 - (. - gText_Rom_5DD458)
 	.endif
-	.globl gUnknown_85DD461
-gUnknown_85DD461: @ 0x085DD461
+	.globl gText_Rom_5DD461
+gText_Rom_5DD461: @ 0x085DD461
 	@ Decoded text from ROM range: offset=0x5DD461, size=0x9
 	.string "{B_COPY_VAR_1}かい　クリア$"
 
@@ -97,8 +97,8 @@ gFrontierUtilData_085DD47F: @ 0x085DD47F
 	@ ANALYSIS: RAW_BLOCK size=0xF
 	.byte 0x46, 0x01, 0x47, 0x00, 0x49, 0x00, 0x48, 0x01, 0x4A, 0x00, 0x4B, 0x01, 0xEA, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085DD48E: frontier_util.s: AppendIfValid, sub_081A3CF0; party_menu.s: GetBattleEntryEligibility
-	.globl gUnknown_85DD48E
-gUnknown_85DD48E: @ 0x085DD48E
+	.globl gBattleU16Table_Rom_5DD48E
+gBattleU16Table_Rom_5DD48E: @ 0x085DD48E
 	@ analyzed canonical ROM range 0x085DD48E-0x085DD4A3
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x16

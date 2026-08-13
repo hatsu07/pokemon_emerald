@@ -1,5 +1,5 @@
-	.globl gUnknown_8563134
-gUnknown_8563134: @ 0x08563134
+	.globl gText_Rom_563134
+gText_Rom_563134: @ 0x08563134
 	@ Decoded text from ROM range: offset=0x563134, size=0x1C
 	.string "いの　きのみ。$"
 	.string "ほしの　ちからを　もっている　らしい。$"
@@ -1192,8 +1192,8 @@ gScriptMenuData_08564618: @ 0x08564618
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x4A, 0x4B, 0x4C, 0x4D, 0x4E, 0x4F, 0x00, 0x00
-	.globl gUnknown_8564620
-gUnknown_8564620: @ 0x08564620
+	.globl gCreditsPointerTable_Rom_564620
+gCreditsPointerTable_Rom_564620: @ 0x08564620
 	.4byte gText_Rom_5CB194
 	.4byte gText_Rom_5CAC23
 	.4byte gText_Rom_5CADF1
@@ -1201,33 +1201,33 @@ gUnknown_8564620: @ 0x08564620
 	.4byte gText_Rom_5CADF9
 	.4byte gText_Rom_5CAE02
 	.4byte gText_Exit
-	.globl gUnknown_856463C
-gUnknown_856463C: @ 0x0856463C
+	.globl gCreditsPointerTable_Rom_56463C
+gCreditsPointerTable_Rom_56463C: @ 0x0856463C
 	.4byte gText_Rom_247BB3
 	.4byte gText_Rom_247BD5
 	.4byte gText_Rom_247BF7
 	.4byte gText_Rom_24809D
-	.globl gUnknown_856464C
-gUnknown_856464C: @ 0x0856464C
+	.globl gCreditsPointerTable_Rom_56464C
+gCreditsPointerTable_Rom_56464C: @ 0x0856464C
 	.4byte gText_Rom_248014
 	.4byte gText_Rom_24802D
 	.4byte gText_Rom_248066
 	.4byte gText_Rom_24809D
-	.globl gUnknown_856465C
-gUnknown_856465C: @ 0x0856465C
+	.globl gCreditsPointerTable_Rom_56465C
+gCreditsPointerTable_Rom_56465C: @ 0x0856465C
 	.4byte gText_Rom_248014
 	.4byte gText_Rom_24802D
 	.4byte gText_Rom_248046
 	.4byte gText_Rom_24809D
-	.globl gUnknown_856466C
-gUnknown_856466C: @ 0x0856466C
+	.globl gCreditsPointerTable_Rom_56466C
+gCreditsPointerTable_Rom_56466C: @ 0x0856466C
 	.4byte gText_Rom_248014
 	.4byte gText_Rom_24802D
 	.4byte gText_Rom_248066
 	.4byte gText_Rom_248046
 	.4byte gText_Rom_24809D
-	.globl gUnknown_8564680
-gUnknown_8564680: @ 0x08564680
+	.globl gCreditsPointerTable_Rom_564680
+gCreditsPointerTable_Rom_564680: @ 0x08564680
 	.4byte gText_Rom_247BB3
 	.4byte gText_Rom_247BD5
 	.4byte gText_Rom_24809D
@@ -1435,8 +1435,7 @@ gNamingScreenData_08565218: @ 0x08565218
 	@ pret/pokeemerald-jp direct xref for 0x08565258: naming_screen.s: choose_name_or_words_screen_apply_bg_pals
 	.globl gNamingScreenData_08565258
 gNamingScreenData_08565258:
-	.globl gUnknown_8565258
-gUnknown_8565258: @ 0x08565258
+	.globl gNamingScreenData_08565258
 	@ analyzed canonical ROM range 0x08565258-0x08565317
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xC0
@@ -1549,8 +1548,8 @@ sLz77Block_085656C8:
 	.byte 0xF0, 0x3F, 0xF0, 0x3F, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x3F, 0xFF, 0xF0, 0x3F, 0xF0, 0x01, 0xF0
 	.byte 0x3F, 0xF0, 0x3F, 0xF0, 0x2B, 0xF0, 0x01, 0xF0, 0x3F, 0x60, 0x01, 0x19, 0x19, 0x30, 0x1A, 0xF0
 	.byte 0x01, 0xF0, 0x01, 0x30, 0x1B, 0xF0, 0x3F, 0xF0, 0xF0, 0x01, 0xF0, 0x01, 0xF0, 0x01, 0x80, 0x01
-	.globl gUnknown_8565858
-gUnknown_8565858: @ 0x08565858
+	.globl gCreditsPointerTable_Rom_565858
+gCreditsPointerTable_Rom_565858: @ 0x08565858
 	.4byte gText_Rom_243E08
 	.4byte gText_Rom_243E2A
 	.4byte gText_Rom_243E4C

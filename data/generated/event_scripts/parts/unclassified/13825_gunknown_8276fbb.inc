@@ -1,5 +1,5 @@
-	.globl gUnknown_8276FBB
-gUnknown_8276FBB: @ 0x08276FBB
+	.globl EventScriptData_JP_08276FBB
+EventScriptData_JP_08276FBB: @ 0x08276FBB
 	@ analyzed canonical ROM range 0x08276FBB-0x08276FD2
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x18

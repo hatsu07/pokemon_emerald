@@ -128,8 +128,8 @@ gText_Rom_5BCC36: @ 0x085BCC36
 	.2byte 0x1223, 0x0C01, 0xFFFF, 0x0A0B, 0x1034, 0x0E0C, 0x1228, 0x0C01
 	.2byte 0xFFFF, 0xC940, 0x085B
 	@ pret/pokeemerald-jp direct xref for 0x085BCF70: battle_factory.s: RestorePlayerPartyHeldItems, SetPlayerAndOpponentParties, SetRentalsToOpponentParty; battle_factory_screen.s: CreateTentFactorySelectableMons; battle_tent.s: sub_081B9B60, sub_081B9CE0; battle_tower.s: SetTentPtrsGetLevel
-	.globl gUnknown_85BCF70
-gUnknown_85BCF70: @ 0x085BCF70
+	.globl gBattleU16Table_Rom_5BCF70
+gBattleU16Table_Rom_5BCF70: @ 0x085BCF70
 	@ analyzed canonical ROM range 0x085BCF70-0x085BD553
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x5E4

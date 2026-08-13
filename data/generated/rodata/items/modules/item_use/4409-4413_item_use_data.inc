@@ -19,8 +19,8 @@ gText_Rom_5C9699: @ 0x085C9699
 	.if (. - gText_Rom_5C9699) < 0x24
 	.space 0x24 - (. - gText_Rom_5C9699)
 	.endif
-	.globl gUnknown_85C96BD
-gUnknown_85C96BD: @ 0x085C96BD
+	.globl gText_Rom_5C96BD
+gText_Rom_5C96BD: @ 0x085C96BD
 	@ Decoded text from ROM range: offset=0x5C96BD, size=0x11
 	.string "ボックスが　いっぱい　です！{PAUSE_UNTIL_PRESS}$"
 

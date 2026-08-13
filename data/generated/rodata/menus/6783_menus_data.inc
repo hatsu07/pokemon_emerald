@@ -334,8 +334,8 @@ gMirageTowerData_085E7FF0: @ 0x085E7FF0
 	.4byte 0x085E7FE8 @ +0x4
 	.4byte 0x085E7FE4 @ +0x8
 	@ pret/pokeemerald-jp direct xref for 0x085E7FFC: menu_specialized.s: MoveRelearnerMenuLoadContestMoveDescription; pokemon_summary_screen.s: PrintMoveDetails
-	.globl gUnknown_85E7FFC
-gUnknown_85E7FFC: @ 0x085E7FFC
+	.globl gMenuPointerTable_Rom_5E7FFC
+gMenuPointerTable_Rom_5E7FFC: @ 0x085E7FFC
 	@ analyzed canonical ROM range 0x085E7FFC-0x085E801B
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x4

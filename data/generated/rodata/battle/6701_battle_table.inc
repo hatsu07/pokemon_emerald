@@ -1,5 +1,5 @@
-	.globl gUnknown_85DC51C
-gUnknown_85DC51C: @ 0x085DC51C
+	.globl gBattlePointerTable_Rom_5DC51C
+gBattlePointerTable_Rom_5DC51C: @ 0x085DC51C
 	.4byte gText_Rom_26CF80
 	.4byte gText_Rom_26D03B
 	.4byte gText_Rom_26D064
@@ -64,8 +64,8 @@ gUnknown_85DC51C: @ 0x085DC51C
 	.4byte gText_Rom_26E96B
 	.4byte gText_Rom_26E9A3
 	.4byte gText_Rom_26EA29
-	.globl gUnknown_85DC61C
-gUnknown_85DC61C: @ 0x085DC61C
+	.globl gBattlePointerTable_Rom_5DC61C
+gBattlePointerTable_Rom_5DC61C: @ 0x085DC61C
 	.4byte gText_Rom_270DAB
 	.4byte gText_Rom_270E34
 	.4byte gText_Rom_270E81
@@ -98,8 +98,8 @@ gUnknown_85DC61C: @ 0x085DC61C
 	.4byte gText_Rom_271925
 	.4byte gText_Rom_271971
 	.4byte gText_Rom_2719F1
-	.globl gUnknown_85DC69C
-gUnknown_85DC69C: @ 0x085DC69C
+	.globl gBattlePointerTable_Rom_5DC69C
+gBattlePointerTable_Rom_5DC69C: @ 0x085DC69C
 	.4byte gText_Rom_26EA7B
 	.4byte gText_Rom_26EAF4
 	.4byte gText_Rom_26EB11
@@ -180,8 +180,8 @@ gUnknown_85DC69C: @ 0x085DC69C
 	.4byte gText_Rom_270050
 	.4byte gText_Rom_270077
 	.4byte gText_Rom_2700C9
-	.globl gUnknown_85DC7DC
-gUnknown_85DC7DC: @ 0x085DC7DC
+	.globl gBattlePointerTable_Rom_5DC7DC
+gBattlePointerTable_Rom_5DC7DC: @ 0x085DC7DC
 	.4byte gText_Rom_271A44
 	.4byte gText_Rom_271AC2
 	.4byte gText_Rom_271B21
@@ -214,8 +214,8 @@ gUnknown_85DC7DC: @ 0x085DC7DC
 	.4byte gText_Rom_27258E
 	.4byte gText_Rom_2725D7
 	.4byte gText_Rom_272674
-	.globl gUnknown_85DC85C
-gUnknown_85DC85C: @ 0x085DC85C
+	.globl gBattlePointerTable_Rom_5DC85C
+gBattlePointerTable_Rom_5DC85C: @ 0x085DC85C
 	.4byte gText_Rom_270127
 	.4byte gText_Rom_2701A6
 	.4byte gText_Rom_2701EC
@@ -248,8 +248,8 @@ gUnknown_85DC85C: @ 0x085DC85C
 	.4byte gText_Rom_270C83
 	.4byte gText_Rom_270CCE
 	.4byte gText_Rom_270D5D
-	.globl gUnknown_85DC8DC
-gUnknown_85DC8DC: @ 0x085DC8DC
+	.globl gBattlePointerTable_Rom_5DC8DC
+gBattlePointerTable_Rom_5DC8DC: @ 0x085DC8DC
 	.4byte gText_Rom_2726CF
 	.4byte gText_Rom_272793
 	.4byte gText_Rom_272825
@@ -282,8 +282,8 @@ gUnknown_85DC8DC: @ 0x085DC8DC
 	.4byte gText_Rom_2737A0
 	.4byte gText_Rom_2737F9
 	.4byte gText_Rom_27389D
-	.globl gUnknown_85DC95C
-gUnknown_85DC95C: @ 0x085DC95C
+	.globl gBattlePointerTable_Rom_5DC95C
+gBattlePointerTable_Rom_5DC95C: @ 0x085DC95C
 	.4byte gText_Rom_26CD7D
 	.4byte gText_Rom_26CD9F
 	.4byte gText_Rom_26CDBC
@@ -336,8 +336,8 @@ gApprenticeData_085DCAFF: @ 0x085DCAFF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xD
 	.byte 0x01, 0x01, 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 0x03, 0x00, 0x00, 0x00, 0x00
-	.globl gUnknown_85DCB0C
-gUnknown_85DCB0C: @ 0x085DCB0C
+	.globl gBattlePointerTable_Rom_5DCB0C
+gBattlePointerTable_Rom_5DCB0C: @ 0x085DCB0C
 	.4byte Script_IsPlayersApprenticeActive
 	.4byte Script_CreateApprenticeMenu
 	.4byte sub_081A0840
@@ -511,8 +511,8 @@ gFrontierUtilData_085DD228: @ 0x085DD228
 	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.2byte 0x0001, 0x0002, 0x0004, 0x0008, 0x0010, 0x0020, 0x0040, 0x0080
 	.2byte 0x0100, 0x0200, 0x0400, 0x0800, 0x1000, 0x2000
-	.globl gUnknown_85DD244
-gUnknown_85DD244: @ 0x085DD244
+	.globl gBattlePointerTable_Rom_5DD244
+gBattlePointerTable_Rom_5DD244: @ 0x085DD244
 	.4byte sub_081A1648
 	.4byte sub_081A16D8
 	.4byte sub_081A1810

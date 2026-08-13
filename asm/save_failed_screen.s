@@ -326,7 +326,7 @@ _081790F8: .4byte gSaveFailedClockWindowTemplate
 _081790FC: .4byte 0x0858F810
 _08179100: .4byte gSaveFailedClockPalette
 _08179104: .4byte gSaveFailedScreenData_084E8360
-_08179108: .4byte gUnknown_85D7B04
+_08179108: .4byte gCreditsU8Table_Rom_5D7B04
 _0817910C: .4byte gSaveFailedScreenData_085CBD6B
 _08179110: .4byte 0x08178E81
 _08179114:

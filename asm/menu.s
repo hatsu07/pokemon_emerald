@@ -1102,7 +1102,7 @@ sub_08197680: @ 0x08197680
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08197690: .4byte gUnknown_85D7B04
+_08197690: .4byte gCreditsU8Table_Rom_5D7B04
 	thumb_func_end sub_08197680
 
 	thumb_func_start Menu_LoadStdPalAt
@@ -1117,7 +1117,7 @@ Menu_LoadStdPalAt: @ 0x08197694
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081976A8: .4byte gUnknown_85D7B04
+_081976A8: .4byte gCreditsU8Table_Rom_5D7B04
 	thumb_func_end Menu_LoadStdPalAt
 
 	thumb_func_start sub_081976AC
@@ -1125,7 +1125,7 @@ sub_081976AC: @ 0x081976AC
 	ldr r0, _081976B0
 	bx lr
 	.align 2, 0
-_081976B0: .4byte gUnknown_85D7B04
+_081976B0: .4byte gCreditsU8Table_Rom_5D7B04
 	thumb_func_end sub_081976AC
 
 	thumb_func_start sub_081976B4
@@ -1144,7 +1144,7 @@ _081976C0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081976CC: .4byte gUnknown_85D7B04
+_081976CC: .4byte gCreditsU8Table_Rom_5D7B04
 	thumb_func_end sub_081976B4
 
 	thumb_func_start DisplayItemMessageOnField

@@ -480,8 +480,8 @@ gText_Rom_2C0B6F: @ 0x082C0B6F
 	.endif
 	.space 0x2, 0x00
 
-	.globl gUnknown_82C0B80
-gUnknown_82C0B80: @ 0x082C0B80
+	.globl gText_Rom_2C0B80
+gText_Rom_2C0B80: @ 0x082C0B80
 	@ Continuation of sText_AwaitingPlayersResponseAboutTrade,
 	@ which starts in the preceding generated file.
 	.string "{STR_VAR_1}からの　こうかんの\nへんじを　まっています…$"

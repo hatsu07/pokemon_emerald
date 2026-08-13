@@ -656,7 +656,7 @@ PyramidBag_CopyItemName: @ 0x081C4C14
 	.align 2, 0
 _081C4C4C: .4byte 0x02021C40
 _081C4C50: .4byte 0x02021C54
-_081C4C54: .4byte gUnknown_85C976F
+_081C4C54: .4byte gItemU8Table_Rom_5C976F
 _081C4C58:
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -3605,7 +3605,7 @@ _081C641C:
 	bx r0
 	.align 2, 0
 _081C644C: .4byte gBattlePyramidBagData_085EF778
-_081C6450: .4byte gUnknown_85D7B04
+_081C6450: .4byte gCreditsU8Table_Rom_5D7B04
 	thumb_func_end sub_081C63F0
 
 	thumb_func_start PrintOnWindow_Font1

@@ -3706,8 +3706,8 @@ _081A144E:
 	.align 2, 0
 _081A1460: .4byte 0x085DC21C
 _081A1464: .4byte 0x03005AF0
-_081A1468: .4byte gUnknown_85BBE20
-_081A146C: .4byte gUnknown_85BBE52
+_081A1468: .4byte gBattleU16Table_Rom_5BBE20
+_081A146C: .4byte gBattleU16Table_Rom_5BBE52
 _081A1470: .4byte 0x00004010
 _081A1474:
 	movs r1, #0
@@ -3737,8 +3737,8 @@ _081A14A0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081A14A4: .4byte gUnknown_85BBE3E
-_081A14A8: .4byte gUnknown_85BBE70
+_081A14A4: .4byte gBattleU16Table_Rom_5BBE3E
+_081A14A8: .4byte gBattleU16Table_Rom_5BBE70
 _081A14AC: .4byte 0x00004010
 	thumb_func_end sub_081A1418
 
@@ -3782,8 +3782,8 @@ _081A14E2:
 	.align 2, 0
 _081A14F4: .4byte 0x085DC21C
 _081A14F8: .4byte 0x03005AF0
-_081A14FC: .4byte gUnknown_85BBE20
-_081A1500: .4byte gUnknown_85BBE52
+_081A14FC: .4byte gBattleU16Table_Rom_5BBE20
+_081A1500: .4byte gBattleU16Table_Rom_5BBE52
 _081A1504: .4byte 0x00004010
 _081A1508:
 	movs r1, #0
@@ -3813,8 +3813,8 @@ _081A1534:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081A1538: .4byte gUnknown_85BBE3E
-_081A153C: .4byte gUnknown_85BBE70
+_081A1538: .4byte gBattleU16Table_Rom_5BBE3E
+_081A153C: .4byte gBattleU16Table_Rom_5BBE70
 _081A1540: .4byte 0x00004010
 	thumb_func_end Script_SetPlayerApprenticeTrainerGfxId
 

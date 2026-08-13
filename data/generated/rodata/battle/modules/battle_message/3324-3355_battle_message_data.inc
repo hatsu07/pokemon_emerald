@@ -171,8 +171,7 @@ gText_Rom_5AACDC: @ 0x085AACDC
 	@ pret/pokeemerald-jp direct xref for 0x085AAD22: battle_message.s: BufferStringBattle
 	.globl gBattleMessageData_085AAD22
 gBattleMessageData_085AAD22:
-	.globl gUnknown_85AAD22
-gUnknown_85AAD22: @ 0x085AAD22
+	.globl gBattleMessageData_085AAD22
 	@ analyzed canonical ROM range 0x085AAD22-0x085AAD37
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x16

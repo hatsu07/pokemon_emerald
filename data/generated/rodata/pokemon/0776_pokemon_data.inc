@@ -1,5 +1,5 @@
-	.globl gUnknown_85443B8
-	.set gUnknown_85443B8, gText_Rom_5443B3 + 0x5
+	.globl gPokemonDataBlock_Rom_5443B8
+	.set gPokemonDataBlock_Rom_5443B8, gText_Rom_5443B3 + 0x5
 	@ ANALYSIS: RAW_RANGE offset=0x5443B9, size=0x13
 	.byte 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x10
 	.byte 0x11, 0x00, 0x00
@@ -475,8 +475,7 @@ gTrainerCardData_08546758: @ 0x08546758
 	@ pret/pokeemerald-jp direct xref for 0x0854676C: trainer_card.s: PrintBattleFacilityStringOnCard, PrintBerryCrushStringOnCard, PrintContestStringOnCard, PrintIdOnCard, PrintMoneyOnCard (+10 more)
 	.globl gTrainerCardData_0854676C
 gTrainerCardData_0854676C:
-	.globl gUnknown_854676C
-gUnknown_854676C: @ 0x0854676C
+	.globl gTrainerCardData_0854676C
 	@ analyzed canonical ROM range 0x0854676C-0x0854676E
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
@@ -509,8 +508,8 @@ gTrainerCardData_08546780: @ 0x08546780
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x4E, 0x4F, 0x50, 0x51, 0x3C, 0x3F, 0x00, 0x00
-	.globl gUnknown_8546788
-gUnknown_8546788: @ 0x08546788
+	.globl gPokemonPointerTable_Rom_546788
+gPokemonPointerTable_Rom_546788: @ 0x08546788
 	.4byte sub_080C42CC
 	.4byte sub_080C430C
 	.4byte sub_080C443C
@@ -536,7 +535,7 @@ gTrainerCardData_085467A2: @ 0x085467A2
 gTrainerCardData_085467A4: @ 0x085467A4
 	@ analyzed canonical ROM range 0x085467A4-0x085467AB
 	@ pointer/nullable table
-	.4byte gUnknown_854676C @ +0x0
+	.4byte gTrainerCardData_0854676C @ +0x0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x08546772 @ +0x4
 	@ pret/pokeemerald-jp direct xref for 0x085467AC: trainer_card.s: PrintMoneyOnCard

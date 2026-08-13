@@ -4,8 +4,8 @@
 gSpindaSpotGraphics: @ 0x082EEC78
 	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 16, 7 @ spot 0: x, y
-	.globl gUnknown_82EEC7A
-gUnknown_82EEC7A:
+	.globl gPokemonBinaryAsset_Rom_2EEC7A
+gPokemonBinaryAsset_Rom_2EEC7A:
 	.incbin "build/graphics/pokemon/spinda/spots/spot_0.1bpp"
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.2byte 0x0000

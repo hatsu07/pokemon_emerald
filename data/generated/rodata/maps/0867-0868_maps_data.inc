@@ -1911,8 +1911,8 @@ gBattleIntroData_08573002: @ 0x08573002
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0x08, 0x0A, 0x0C, 0x0E, 0x00, 0x00
-	.globl gUnknown_8573008
-gUnknown_8573008: @ 0x08573008
+	.globl gMapU32Table_Rom_573008
+gMapU32Table_Rom_573008: @ 0x08573008
 	.4byte BattleIntroSlide1
 	.4byte BattleIntroSlide1
 	.4byte BattleIntroSlide2
@@ -1923,19 +1923,19 @@ gUnknown_8573008: @ 0x08573008
 	.4byte BattleIntroSlide1
 	.4byte BattleIntroSlide3
 	.4byte BattleIntroSlide3
-	.globl gUnknown_8573030
-gUnknown_8573030: @ 0x08573030
+	.globl gMapU32Table_Rom_573030
+gMapU32Table_Rom_573030: @ 0x08573030
 	.4byte MachBikeTransition_FaceDirection
 	.4byte MachBikeTransition_TurnDirection
 	.4byte MachBikeTransition_TrySpeedUp
 	.4byte MachBikeTransition_TrySlowDown
-	.globl gUnknown_8573040
-gUnknown_8573040: @ 0x08573040
+	.globl gMapU32Table_Rom_573040
+gMapU32Table_Rom_573040: @ 0x08573040
 	.4byte PlayerGoSpeed1
 	.4byte PlayerGoSpeed2
 	.4byte PlayerGoSpeed4
-	.globl gUnknown_857304C
-gUnknown_857304C: @ 0x0857304C
+	.globl gMapPointerTable_Rom_57304C
+gMapPointerTable_Rom_57304C: @ 0x0857304C
 	.4byte AcroBikeTransition_TurnJump
 	.4byte AcroBikeTransition_TurnDirection
 	.4byte AcroBikeTransition_Moving
@@ -1949,8 +1949,8 @@ gUnknown_857304C: @ 0x0857304C
 	.4byte AcroBikeTransition_WheelieMoving
 	.4byte AcroBikeTransition_WheelieRisingMoving
 	.4byte AcroBikeTransition_WheelieLoweringMoving
-	.globl gUnknown_8573080
-gUnknown_8573080: @ 0x08573080
+	.globl gMapU32Table_Rom_573080
+gMapU32Table_Rom_573080: @ 0x08573080
 	.4byte AcroBikeHandleInputNormal
 	.4byte AcroBikeHandleInputTurning
 	.4byte AcroBikeHandleInputWheelieStanding
@@ -1978,8 +1978,8 @@ gBikeData_085730A4: @ 0x085730A4
 	.2byte 0x000F, 0x0000, 0x000F, 0x0000, 0x30A2, 0x0857, 0x30A2, 0x0857
 	.2byte 0x0003, 0x0000, 0x0004, 0x0000, 0x0002, 0x0000, 0x000F, 0x0000
 	.2byte 0x000F, 0x0000, 0x30A2, 0x0857, 0x30A2, 0x0857, 0x0004, 0x0000
-	.globl gUnknown_8573114
-gUnknown_8573114: @ 0x08573114
+	.globl gMapU32Table_Rom_573114
+gMapU32Table_Rom_573114: @ 0x08573114
 	@ Resolved pointer table; original ROM range 0x573114..0x573133.
 	.4byte ABILITY_LEVITATE
 	.4byte DoQuizAnswerEasyChatScreen

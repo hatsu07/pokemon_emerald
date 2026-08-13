@@ -9,8 +9,8 @@ sPointerTable_085FB90C:
 	.4byte gText_Rom_5FB902 @ +0x4
 	.4byte gText_Rom_5FB905 @ +0x8
 	.4byte 0x085FB908 @ +0xC
-	.globl gUnknown_85FB91C
-gUnknown_85FB91C: @ 0x085FB91C
+	.globl gMenuPointerTable_Rom_5FB91C
+gMenuPointerTable_Rom_5FB91C: @ 0x085FB91C
 	.4byte TrainerHillStartChallenge
 	.4byte sub_081D4F2C
 	.4byte sub_081D4F78
@@ -28,6 +28,6 @@ gUnknown_85FB91C: @ 0x085FB91C
 	.4byte sub_081D5E9C
 	.4byte nullsub_2
 	.4byte sub_081D5F08
-	.globl gUnknown_85FB960
-gUnknown_85FB960: @ 0x085FB960
+	.globl gMenuDataBlock_Rom_5FB960
+gMenuDataBlock_Rom_5FB960: @ 0x085FB960
 	.space 0x1, 0xAE

@@ -4870,8 +4870,8 @@ gEventObjectMovementData_084E5B40:
 	@ analyzed canonical ROM range 0x084E5B40-0x084E5B47
 sMovementDelayDurations_FaceDirectionPairs: @ 0x084E5B40
 	.2byte 0x0020, 0x0030, 0x0040, 0x0050
-	.globl gUnknown_84E5B48
-gUnknown_84E5B48: @ 0x084E5B48
+	.globl gMapU32Table_Rom_4E5B48
+gMapU32Table_Rom_4E5B48: @ 0x084E5B48
 	.4byte MovementType_WanderAround_Step0
 	.4byte MovementType_WanderAround_Step1
 	.4byte MovementType_WanderAround_Step2
@@ -4885,8 +4885,8 @@ gEventObjectMovementData_084E5B64:
 	@ analyzed canonical ROM range 0x084E5B64-0x084E5B67
 sMovementDirections_DownUpLeftRight: @ 0x084E5B64
 	.byte 0x01, 0x02, 0x03, 0x04
-	.globl gUnknown_84E5B68
-gUnknown_84E5B68: @ 0x084E5B68
+	.globl gMapU32Table_Rom_4E5B68
+gMapU32Table_Rom_4E5B68: @ 0x084E5B68
 	.4byte GetVectorDirection
 	.4byte GetLimitedVectorDirection_SouthNorth
 	.4byte GetLimitedVectorDirection_WestEast
@@ -4898,15 +4898,15 @@ gUnknown_84E5B68: @ 0x084E5B68
 	.4byte GetLimitedVectorDirection_SouthNorthEast
 	.4byte GetLimitedVectorDirection_NorthWestEast
 	.4byte GetLimitedVectorDirection_SouthWestEast
-	.globl gUnknown_84E5B94
-gUnknown_84E5B94: @ 0x084E5B94
+	.globl gMapU32Table_Rom_4E5B94
+gMapU32Table_Rom_4E5B94: @ 0x084E5B94
 	.4byte MovementType_LookAround_Step0
 	.4byte MovementType_LookAround_Step1
 	.4byte MovementType_LookAround_Step2
 	.4byte MovementType_LookAround_Step3
 	.4byte MovementType_LookAround_Step4
-	.globl gUnknown_84E5BA8
-gUnknown_84E5BA8: @ 0x084E5BA8
+	.globl gMapU32Table_Rom_4E5BA8
+gMapU32Table_Rom_4E5BA8: @ 0x084E5BA8
 	.4byte MovementType_WanderUpAndDown_Step0
 	.4byte MovementType_WanderUpAndDown_Step1
 	.4byte MovementType_WanderUpAndDown_Step2
@@ -4920,8 +4920,8 @@ gEventObjectMovementData_084E5BC4:
 	@ analyzed canonical ROM range 0x084E5BC4-0x084E5BC7
 sMovementDirections_DownUp: @ 0x084E5BC4
 	.byte 0x01, 0x02, 0x00, 0x00
-	.globl gUnknown_84E5BC8
-gUnknown_84E5BC8: @ 0x084E5BC8
+	.globl gMapU32Table_Rom_4E5BC8
+gMapU32Table_Rom_4E5BC8: @ 0x084E5BC8
 	.4byte MovementType_WanderLeftAndRight_Step0
 	.4byte MovementType_WanderLeftAndRight_Step1
 	.4byte MovementType_WanderLeftAndRight_Step2
@@ -4935,34 +4935,34 @@ gEventObjectMovementData_084E5BE4:
 	@ analyzed canonical ROM range 0x084E5BE4-0x084E5BE7
 sMovementDirections_LeftRight: @ 0x084E5BE4
 	.byte 0x03, 0x04, 0x00, 0x00
-	.globl gUnknown_84E5BE8
-gUnknown_84E5BE8: @ 0x084E5BE8
+	.globl gMapU32Table_Rom_4E5BE8
+gMapU32Table_Rom_4E5BE8: @ 0x084E5BE8
 	.4byte MovementType_FaceDirection_Step0
 	.4byte MovementType_FaceDirection_Step1
 	.4byte MovementType_Invisible_Step2
-	.globl gUnknown_84E5BF4
-gUnknown_84E5BF4: @ 0x084E5BF4
+	.globl gMapU32Table_Rom_4E5BF4
+gMapU32Table_Rom_4E5BF4: @ 0x084E5BF4
 	.4byte MovementType_BerryTreeGrowth_Step0
 	.4byte MovementType_BerryTreeGrowth_Step1
 	.4byte MovementType_BerryTreeGrowth_Step2
 	.4byte MovementType_BerryTreeGrowth_Step3
 	.4byte MovementType_BerryTreeGrowth_Step4
-	.globl gUnknown_84E5C08
-gUnknown_84E5C08: @ 0x084E5C08
+	.globl gMapU32Table_Rom_4E5C08
+gMapU32Table_Rom_4E5C08: @ 0x084E5C08
 	.4byte MovementType_FaceDownAndUp_Step0
 	.4byte MovementType_FaceDownAndUp_Step1
 	.4byte MovementType_FaceDownAndUp_Step2
 	.4byte MovementType_FaceDownAndUp_Step3
 	.4byte MovementType_FaceDownAndUp_Step4
-	.globl gUnknown_84E5C1C
-gUnknown_84E5C1C: @ 0x084E5C1C
+	.globl gMapU32Table_Rom_4E5C1C
+gMapU32Table_Rom_4E5C1C: @ 0x084E5C1C
 	.4byte MovementType_FaceLeftAndRight_Step0
 	.4byte MovementType_FaceLeftAndRight_Step1
 	.4byte MovementType_FaceLeftAndRight_Step2
 	.4byte MovementType_FaceLeftAndRight_Step3
 	.4byte MovementType_FaceLeftAndRight_Step4
-	.globl gUnknown_84E5C30
-gUnknown_84E5C30: @ 0x084E5C30
+	.globl gMapU32Table_Rom_4E5C30
+gMapU32Table_Rom_4E5C30: @ 0x084E5C30
 	.4byte MovementType_FaceUpAndLeft_Step0
 	.4byte MovementType_FaceUpAndLeft_Step1
 	.4byte MovementType_FaceUpAndLeft_Step2
@@ -4974,8 +4974,8 @@ gEventObjectMovementData_084E5C44:
 	@ analyzed canonical ROM range 0x084E5C44-0x084E5C47
 sMovementDirections_UpLeft: @ 0x084E5C44
 	.byte 0x02, 0x03, 0x00, 0x00
-	.globl gUnknown_84E5C48
-gUnknown_84E5C48: @ 0x084E5C48
+	.globl gMapU32Table_Rom_4E5C48
+gMapU32Table_Rom_4E5C48: @ 0x084E5C48
 	.4byte MovementType_FaceUpAndRight_Step0
 	.4byte MovementType_FaceUpAndRight_Step1
 	.4byte MovementType_FaceUpAndRight_Step2
@@ -4987,8 +4987,8 @@ gEventObjectMovementData_084E5C5C:
 	@ analyzed canonical ROM range 0x084E5C5C-0x084E5C5F
 sMovementDirections_UpRight: @ 0x084E5C5C
 	.byte 0x02, 0x04, 0x00, 0x00
-	.globl gUnknown_84E5C60
-gUnknown_84E5C60: @ 0x084E5C60
+	.globl gMapU32Table_Rom_4E5C60
+gMapU32Table_Rom_4E5C60: @ 0x084E5C60
 	.4byte MovementType_FaceDownAndLeft_Step0
 	.4byte MovementType_FaceDownAndLeft_Step1
 	.4byte MovementType_FaceDownAndLeft_Step2
@@ -5000,8 +5000,8 @@ gEventObjectMovementData_084E5C74:
 	@ analyzed canonical ROM range 0x084E5C74-0x084E5C77
 sMovementDirections_DownLeft: @ 0x084E5C74
 	.byte 0x01, 0x03, 0x00, 0x00
-	.globl gUnknown_84E5C78
-gUnknown_84E5C78: @ 0x084E5C78
+	.globl gMapU32Table_Rom_4E5C78
+gMapU32Table_Rom_4E5C78: @ 0x084E5C78
 	.4byte MovementType_FaceDownAndRight_Step0
 	.4byte MovementType_FaceDownAndRight_Step1
 	.4byte MovementType_FaceDownAndRight_Step2
@@ -5013,8 +5013,8 @@ gEventObjectMovementData_084E5C8C:
 	@ analyzed canonical ROM range 0x084E5C8C-0x084E5C8F
 sMovementDirections_DownRight: @ 0x084E5C8C
 	.byte 0x01, 0x04, 0x00, 0x00
-	.globl gUnknown_84E5C90
-gUnknown_84E5C90: @ 0x084E5C90
+	.globl gMapU32Table_Rom_4E5C90
+gMapU32Table_Rom_4E5C90: @ 0x084E5C90
 	.4byte MovementType_FaceDownUpAndLeft_Step0
 	.4byte MovementType_FaceDownUpAndLeft_Step1
 	.4byte MovementType_FaceDownUpAndLeft_Step2
@@ -5026,8 +5026,8 @@ gEventObjectMovementData_084E5CA4:
 	@ analyzed canonical ROM range 0x084E5CA4-0x084E5CA7
 sMovementDirections_DownUpLeft: @ 0x084E5CA4
 	.byte 0x02, 0x01, 0x03, 0x01
-	.globl gUnknown_84E5CA8
-gUnknown_84E5CA8: @ 0x084E5CA8
+	.globl gMapU32Table_Rom_4E5CA8
+gMapU32Table_Rom_4E5CA8: @ 0x084E5CA8
 	.4byte MovementType_FaceDownUpAndRight_Step0
 	.4byte MovementType_FaceDownUpAndRight_Step1
 	.4byte MovementType_FaceDownUpAndRight_Step2
@@ -5039,8 +5039,8 @@ gEventObjectMovementData_084E5CBC:
 	@ analyzed canonical ROM range 0x084E5CBC-0x084E5CBF
 sMovementDirections_DownUpRight: @ 0x084E5CBC
 	.byte 0x01, 0x02, 0x04, 0x01
-	.globl gUnknown_84E5CC0
-gUnknown_84E5CC0: @ 0x084E5CC0
+	.globl gMapU32Table_Rom_4E5CC0
+gMapU32Table_Rom_4E5CC0: @ 0x084E5CC0
 	.4byte MovementType_FaceUpLeftAndRight_Step0
 	.4byte MovementType_FaceUpLeftAndRight_Step1
 	.4byte MovementType_FaceUpLeftAndRight_Step2
@@ -5052,8 +5052,8 @@ gEventObjectMovementData_084E5CD4:
 	@ analyzed canonical ROM range 0x084E5CD4-0x084E5CD7
 sMovementDirections_UpLeftRight: @ 0x084E5CD4
 	.byte 0x02, 0x03, 0x04, 0x02
-	.globl gUnknown_84E5CD8
-gUnknown_84E5CD8: @ 0x084E5CD8
+	.globl gMapU32Table_Rom_4E5CD8
+gMapU32Table_Rom_4E5CD8: @ 0x084E5CD8
 	.4byte MovementType_FaceDownLeftAndRight_Step0
 	.4byte MovementType_FaceDownLeftAndRight_Step1
 	.4byte MovementType_FaceDownLeftAndRight_Step2
@@ -5065,8 +5065,8 @@ gEventObjectMovementData_084E5CEC:
 	@ analyzed canonical ROM range 0x084E5CEC-0x084E5CEF
 sMovementDirections_DownLeftRight: @ 0x084E5CEC
 	.byte 0x03, 0x04, 0x01, 0x01
-	.globl gUnknown_84E5CF0
-gUnknown_84E5CF0: @ 0x084E5CF0
+	.globl gMapU32Table_Rom_4E5CF0
+gMapU32Table_Rom_4E5CF0: @ 0x084E5CF0
 	.4byte MovementType_RotateCounterclockwise_Step0
 	.4byte MovementType_RotateCounterclockwise_Step1
 	.4byte MovementType_RotateCounterclockwise_Step2
@@ -5077,8 +5077,8 @@ gEventObjectMovementData_084E5D00:
 	@ analyzed canonical ROM range 0x084E5D00-0x084E5D07
 sMovementDirections_RotateCounterclockwise: @ 0x084E5D00
 	.byte 0x01, 0x04, 0x03, 0x01, 0x02, 0x00, 0x00, 0x00
-	.globl gUnknown_84E5D08
-gUnknown_84E5D08: @ 0x084E5D08
+	.globl gMapU32Table_Rom_4E5D08
+gMapU32Table_Rom_4E5D08: @ 0x084E5D08
 	.4byte MovementType_RotateClockwise_Step0
 	.4byte MovementType_RotateClockwise_Step1
 	.4byte MovementType_RotateClockwise_Step2
@@ -5089,14 +5089,14 @@ gEventObjectMovementData_084E5D18:
 	@ analyzed canonical ROM range 0x084E5D18-0x084E5D1F
 sMovementDirections_RotateClockwise: @ 0x084E5D18
 	.byte 0x01, 0x03, 0x04, 0x02, 0x01, 0x00, 0x00, 0x00
-	.globl gUnknown_84E5D20
-gUnknown_84E5D20: @ 0x084E5D20
+	.globl gMapU32Table_Rom_4E5D20
+gMapU32Table_Rom_4E5D20: @ 0x084E5D20
 	.4byte MovementType_WalkBackAndForth_Step0
 	.4byte MovementType_WalkBackAndForth_Step1
 	.4byte MovementType_WalkBackAndForth_Step2
 	.4byte MovementType_WalkBackAndForth_Step3
-	.globl gUnknown_84E5D30
-gUnknown_84E5D30: @ 0x084E5D30
+	.globl gMapU32Table_Rom_4E5D30
+gMapU32Table_Rom_4E5D30: @ 0x084E5D30
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceUpRightLeftDown_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5106,8 +5106,8 @@ gEventObjectMovementData_084E5D3C:
 	@ analyzed canonical ROM range 0x084E5D3C-0x084E5D3F
 sMovementDirections_WalkSequenceUpRightLeftDown: @ 0x084E5D3C
 	.byte 0x02, 0x04, 0x03, 0x01
-	.globl gUnknown_84E5D40
-gUnknown_84E5D40: @ 0x084E5D40
+	.globl gMapU32Table_Rom_4E5D40
+gMapU32Table_Rom_4E5D40: @ 0x084E5D40
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceRightLeftDownUp_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5117,8 +5117,8 @@ gEventObjectMovementData_084E5D4C:
 	@ analyzed canonical ROM range 0x084E5D4C-0x084E5D4F
 sMovementDirections_WalkSequenceRightLeftDownUp: @ 0x084E5D4C
 	.byte 0x04, 0x03, 0x01, 0x02
-	.globl gUnknown_84E5D50
-gUnknown_84E5D50: @ 0x084E5D50
+	.globl gMapU32Table_Rom_4E5D50
+gMapU32Table_Rom_4E5D50: @ 0x084E5D50
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceDownUpRightLeft_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5128,8 +5128,8 @@ gEventObjectMovementData_084E5D5C:
 	@ analyzed canonical ROM range 0x084E5D5C-0x084E5D5F
 sMovementDirections_WalkSequenceDownUpRightLeft: @ 0x084E5D5C
 	.byte 0x01, 0x02, 0x04, 0x03
-	.globl gUnknown_84E5D60
-gUnknown_84E5D60: @ 0x084E5D60
+	.globl gMapU32Table_Rom_4E5D60
+gMapU32Table_Rom_4E5D60: @ 0x084E5D60
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceLeftDownUpRight_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5139,8 +5139,8 @@ gEventObjectMovementData_084E5D6C:
 	@ analyzed canonical ROM range 0x084E5D6C-0x084E5D6F
 sMovementDirections_WalkSequenceLeftDownUpRight: @ 0x084E5D6C
 	.byte 0x03, 0x01, 0x02, 0x04
-	.globl gUnknown_84E5D70
-gUnknown_84E5D70: @ 0x084E5D70
+	.globl gMapU32Table_Rom_4E5D70
+gMapU32Table_Rom_4E5D70: @ 0x084E5D70
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceUpLeftRightDown_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5150,8 +5150,8 @@ gEventObjectMovementData_084E5D7C:
 	@ analyzed canonical ROM range 0x084E5D7C-0x084E5D7F
 sMovementDirections_WalkSequenceUpLeftRightDown: @ 0x084E5D7C
 	.byte 0x02, 0x03, 0x04, 0x01
-	.globl gUnknown_84E5D80
-gUnknown_84E5D80: @ 0x084E5D80
+	.globl gMapU32Table_Rom_4E5D80
+gMapU32Table_Rom_4E5D80: @ 0x084E5D80
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceLeftRightDownUp_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5161,13 +5161,13 @@ gEventObjectMovementData_084E5D8C:
 	@ analyzed canonical ROM range 0x084E5D8C-0x084E5D8F
 sMovementDirections_WalkSequenceLeftRightDownUp: @ 0x084E5D8C
 	.byte 0x03, 0x04, 0x01, 0x02
-	.globl gUnknown_84E5D90
-gUnknown_84E5D90: @ 0x084E5D90
+	.globl gMapU32Table_Rom_4E5D90
+gMapU32Table_Rom_4E5D90: @ 0x084E5D90
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceDownUpLeftRight_Step1
 	.4byte MovementType_WalkSequence_Step2
-	.globl gUnknown_84E5D9C
-gUnknown_84E5D9C: @ 0x084E5D9C
+	.globl gMapU32Table_Rom_4E5D9C
+gMapU32Table_Rom_4E5D9C: @ 0x084E5D9C
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceRightDownUpLeft_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5177,8 +5177,8 @@ gEventObjectMovementData_084E5DA8:
 	@ analyzed canonical ROM range 0x084E5DA8-0x084E5DAB
 sMovementDirections_WalkSequenceRightDownUpLeft: @ 0x084E5DA8
 	.byte 0x04, 0x01, 0x02, 0x03
-	.globl gUnknown_84E5DAC
-gUnknown_84E5DAC: @ 0x084E5DAC
+	.globl gMapU32Table_Rom_4E5DAC
+gMapU32Table_Rom_4E5DAC: @ 0x084E5DAC
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceLeftUpDownRight_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5188,8 +5188,8 @@ gEventObjectMovementData_084E5DB8:
 	@ analyzed canonical ROM range 0x084E5DB8-0x084E5DBB
 sMovementDirections_WalkSequenceLeftUpDownRight: @ 0x084E5DB8
 	.byte 0x03, 0x02, 0x01, 0x04
-	.globl gUnknown_84E5DBC
-gUnknown_84E5DBC: @ 0x084E5DBC
+	.globl gMapU32Table_Rom_4E5DBC
+gMapU32Table_Rom_4E5DBC: @ 0x084E5DBC
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceUpDownRightLeft_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5199,8 +5199,8 @@ gEventObjectMovementData_084E5DC8:
 	@ analyzed canonical ROM range 0x084E5DC8-0x084E5DCB
 sMovementDirections_WalkSequenceUpDownRightLeft: @ 0x084E5DC8
 	.byte 0x02, 0x01, 0x04, 0x03
-	.globl gUnknown_84E5DCC
-gUnknown_84E5DCC: @ 0x084E5DCC
+	.globl gMapU32Table_Rom_4E5DCC
+gMapU32Table_Rom_4E5DCC: @ 0x084E5DCC
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceRightLeftUpDown_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5210,8 +5210,8 @@ gEventObjectMovementData_084E5DD8:
 	@ analyzed canonical ROM range 0x084E5DD8-0x084E5DDB
 sMovementDirections_WalkSequenceRightLeftUpDown: @ 0x084E5DD8
 	.byte 0x04, 0x03, 0x02, 0x01
-	.globl gUnknown_84E5DDC
-gUnknown_84E5DDC: @ 0x084E5DDC
+	.globl gMapU32Table_Rom_4E5DDC
+gMapU32Table_Rom_4E5DDC: @ 0x084E5DDC
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceDownRightLeftUp_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5221,8 +5221,8 @@ gEventObjectMovementData_084E5DE8:
 	@ analyzed canonical ROM range 0x084E5DE8-0x084E5DEB
 sMovementDirections_WalkSequenceDownRightLeftUp: @ 0x084E5DE8
 	.byte 0x01, 0x04, 0x03, 0x02
-	.globl gUnknown_84E5DEC
-gUnknown_84E5DEC: @ 0x084E5DEC
+	.globl gMapU32Table_Rom_4E5DEC
+gMapU32Table_Rom_4E5DEC: @ 0x084E5DEC
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceRightUpDownLeft_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5232,8 +5232,8 @@ gEventObjectMovementData_084E5DF8:
 	@ analyzed canonical ROM range 0x084E5DF8-0x084E5DFB
 sMovementDirections_WalkSequenceRightUpDownLeft: @ 0x084E5DF8
 	.byte 0x04, 0x02, 0x01, 0x03
-	.globl gUnknown_84E5DFC
-gUnknown_84E5DFC: @ 0x084E5DFC
+	.globl gMapU32Table_Rom_4E5DFC
+gMapU32Table_Rom_4E5DFC: @ 0x084E5DFC
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceUpDownLeftRight_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5243,8 +5243,8 @@ gEventObjectMovementData_084E5E08:
 	@ analyzed canonical ROM range 0x084E5E08-0x084E5E0B
 sMovementDirections_WalkSequenceUpDownLeftRight: @ 0x084E5E08
 	.byte 0x02, 0x01, 0x03, 0x04
-	.globl gUnknown_84E5E0C
-gUnknown_84E5E0C: @ 0x084E5E0C
+	.globl gMapU32Table_Rom_4E5E0C
+gMapU32Table_Rom_4E5E0C: @ 0x084E5E0C
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceLeftRightUpDown_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5254,8 +5254,8 @@ gEventObjectMovementData_084E5E18:
 	@ analyzed canonical ROM range 0x084E5E18-0x084E5E1B
 sMovementDirections_WalkSequenceLeftRightUpDown: @ 0x084E5E18
 	.byte 0x03, 0x04, 0x02, 0x01
-	.globl gUnknown_84E5E1C
-gUnknown_84E5E1C: @ 0x084E5E1C
+	.globl gMapU32Table_Rom_4E5E1C
+gMapU32Table_Rom_4E5E1C: @ 0x084E5E1C
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceDownLeftRightUp_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5265,8 +5265,8 @@ gEventObjectMovementData_084E5E28:
 	@ analyzed canonical ROM range 0x084E5E28-0x084E5E2B
 sMovementDirections_WalkSequenceDownLeftRightUp: @ 0x084E5E28
 	.byte 0x01, 0x03, 0x04, 0x02
-	.globl gUnknown_84E5E2C
-gUnknown_84E5E2C: @ 0x084E5E2C
+	.globl gMapU32Table_Rom_4E5E2C
+gMapU32Table_Rom_4E5E2C: @ 0x084E5E2C
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceUpLeftDownRight_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5276,8 +5276,8 @@ gEventObjectMovementData_084E5E38:
 	@ analyzed canonical ROM range 0x084E5E38-0x084E5E3B
 sMovementDirections_WalkSequenceUpLeftDownRight: @ 0x084E5E38
 	.byte 0x02, 0x03, 0x01, 0x04
-	.globl gUnknown_84E5E3C
-gUnknown_84E5E3C: @ 0x084E5E3C
+	.globl gMapU32Table_Rom_4E5E3C
+gMapU32Table_Rom_4E5E3C: @ 0x084E5E3C
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceDownRightUpLeft_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5287,8 +5287,8 @@ gEventObjectMovementData_084E5E48:
 	@ analyzed canonical ROM range 0x084E5E48-0x084E5E4B
 sMovementDirections_WalkSequenceDownRightUpLeft: @ 0x084E5E48
 	.byte 0x01, 0x04, 0x02, 0x03
-	.globl gUnknown_84E5E4C
-gUnknown_84E5E4C: @ 0x084E5E4C
+	.globl gMapU32Table_Rom_4E5E4C
+gMapU32Table_Rom_4E5E4C: @ 0x084E5E4C
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceLeftDownRightUp_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5298,8 +5298,8 @@ gEventObjectMovementData_084E5E58:
 	@ analyzed canonical ROM range 0x084E5E58-0x084E5E5B
 sMovementDirections_WalkSequenceLeftDownRightUp: @ 0x084E5E58
 	.byte 0x03, 0x01, 0x04, 0x02
-	.globl gUnknown_84E5E5C
-gUnknown_84E5E5C: @ 0x084E5E5C
+	.globl gMapU32Table_Rom_4E5E5C
+gMapU32Table_Rom_4E5E5C: @ 0x084E5E5C
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceRightUpLeftDown_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5309,8 +5309,8 @@ gEventObjectMovementData_084E5E68:
 	@ analyzed canonical ROM range 0x084E5E68-0x084E5E6B
 sMovementDirections_WalkSequenceRightUpLeftDown: @ 0x084E5E68
 	.byte 0x04, 0x02, 0x03, 0x01
-	.globl gUnknown_84E5E6C
-gUnknown_84E5E6C: @ 0x084E5E6C
+	.globl gMapU32Table_Rom_4E5E6C
+gMapU32Table_Rom_4E5E6C: @ 0x084E5E6C
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceUpRightDownLeft_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5320,8 +5320,8 @@ gEventObjectMovementData_084E5E78:
 	@ analyzed canonical ROM range 0x084E5E78-0x084E5E7B
 sMovementDirections_WalkSequenceUpRightDownLeft: @ 0x084E5E78
 	.byte 0x02, 0x04, 0x01, 0x03
-	.globl gUnknown_84E5E7C
-gUnknown_84E5E7C: @ 0x084E5E7C
+	.globl gMapU32Table_Rom_4E5E7C
+gMapU32Table_Rom_4E5E7C: @ 0x084E5E7C
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceDownLeftUpRight_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5331,8 +5331,8 @@ gEventObjectMovementData_084E5E88:
 	@ analyzed canonical ROM range 0x084E5E88-0x084E5E8B
 sMovementDirections_WalkSequenceDownLeftUpRight: @ 0x084E5E88
 	.byte 0x01, 0x03, 0x02, 0x04
-	.globl gUnknown_84E5E8C
-gUnknown_84E5E8C: @ 0x084E5E8C
+	.globl gMapU32Table_Rom_4E5E8C
+gMapU32Table_Rom_4E5E8C: @ 0x084E5E8C
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceLeftUpRightDown_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5342,8 +5342,8 @@ gEventObjectMovementData_084E5E98:
 	@ analyzed canonical ROM range 0x084E5E98-0x084E5E9B
 sMovementDirections_WalkSequenceLeftUpRightDown: @ 0x084E5E98
 	.byte 0x03, 0x02, 0x04, 0x01
-	.globl gUnknown_84E5E9C
-gUnknown_84E5E9C: @ 0x084E5E9C
+	.globl gMapU32Table_Rom_4E5E9C
+gMapU32Table_Rom_4E5E9C: @ 0x084E5E9C
 	.4byte MovementType_WalkSequence_Step0
 	.4byte MovementType_WalkSequenceRightDownLeftUp_Step1
 	.4byte MovementType_WalkSequence_Step2
@@ -5353,13 +5353,13 @@ gEventObjectMovementData_084E5EA8:
 	@ analyzed canonical ROM range 0x084E5EA8-0x084E5EAB
 sMovementDirections_WalkSequenceRightDownLeftUp: @ 0x084E5EA8
 	.byte 0x04, 0x01, 0x03, 0x02
-	.globl gUnknown_84E5EAC
-gUnknown_84E5EAC: @ 0x084E5EAC
+	.globl gMapU32Table_Rom_4E5EAC
+gMapU32Table_Rom_4E5EAC: @ 0x084E5EAC
 	.4byte MovementType_CopyPlayer_Step0
 	.4byte MovementType_CopyPlayer_Step1
 	.4byte MovementType_CopyPlayer_Step2
-	.globl gUnknown_84E5EB8
-gUnknown_84E5EB8: @ 0x084E5EB8
+	.globl gMapU32Table_Rom_4E5EB8
+gMapU32Table_Rom_4E5EB8: @ 0x084E5EB8
 	.4byte CopyablePlayerMovement_None
 	.4byte CopyablePlayerMovement_FaceDirection
 	.4byte CopyablePlayerMovement_GoSpeed0
@@ -5371,32 +5371,32 @@ gUnknown_84E5EB8: @ 0x084E5EB8
 	.4byte CopyablePlayerMovement_Jump
 	.4byte CopyablePlayerMovement_None
 	.4byte CopyablePlayerMovement_None
-	.globl gUnknown_84E5EE4
-gUnknown_84E5EE4: @ 0x084E5EE4
+	.globl gMapU32Table_Rom_4E5EE4
+gMapU32Table_Rom_4E5EE4: @ 0x084E5EE4
 	.4byte MovementType_CopyPlayer_Step0
 	.4byte MovementType_CopyPlayerInGrass_Step1
 	.4byte MovementType_CopyPlayer_Step2
-	.globl gUnknown_84E5EF0
-gUnknown_84E5EF0: @ 0x084E5EF0
+	.globl gMapU32Table_Rom_4E5EF0
+gMapU32Table_Rom_4E5EF0: @ 0x084E5EF0
 	.4byte MovementType_Hidden_Step0
-	.globl gUnknown_84E5EF4
-gUnknown_84E5EF4: @ 0x084E5EF4
+	.globl gMapU32Table_Rom_4E5EF4
+gMapU32Table_Rom_4E5EF4: @ 0x084E5EF4
 	.4byte MovementType_WalkInPlace_Step0
 	.4byte MovementType_MoveInPlace_Step1
-	.globl gUnknown_84E5EFC
-gUnknown_84E5EFC: @ 0x084E5EFC
+	.globl gMapU32Table_Rom_4E5EFC
+gMapU32Table_Rom_4E5EFC: @ 0x084E5EFC
 	.4byte MovementType_WalkSlowlyInPlace_Step0
 	.4byte MovementType_MoveInPlace_Step1
-	.globl gUnknown_84E5F04
-gUnknown_84E5F04: @ 0x084E5F04
+	.globl gMapU32Table_Rom_4E5F04
+gMapU32Table_Rom_4E5F04: @ 0x084E5F04
 	.4byte MovementType_JogInPlace_Step0
 	.4byte MovementType_MoveInPlace_Step1
-	.globl gUnknown_84E5F0C
-gUnknown_84E5F0C: @ 0x084E5F0C
+	.globl gMapU32Table_Rom_4E5F0C
+gMapU32Table_Rom_4E5F0C: @ 0x084E5F0C
 	.4byte MovementType_RunInPlace_Step0
 	.4byte MovementType_MoveInPlace_Step1
-	.globl gUnknown_84E5F14
-gUnknown_84E5F14: @ 0x084E5F14
+	.globl gMapU32Table_Rom_4E5F14
+gMapU32Table_Rom_4E5F14: @ 0x084E5F14
 	.4byte MovementType_Invisible_Step0
 	.4byte MovementType_Invisible_Step1
 	.4byte MovementType_FaceDirection_Step2
@@ -5496,14 +5496,14 @@ gEventObjectMovementData_084E5FA7:
 gDeepSandTracksSpriteAnimByDirection: @ 0x084E5FA7
 	@ Indexed by direction id 0-8.
 	.byte 0x08, 0x08, 0x07, 0x09, 0x0A, 0x08, 0x08, 0x07, 0x07
-	.globl gUnknown_84E5FB0
-gUnknown_84E5FB0: @ 0x084E5FB0
+	.globl gMapU32Table_Rom_4E5FB0
+gMapU32Table_Rom_4E5FB0: @ 0x084E5FB0
 	.4byte MetatileBehavior_IsSouthBlocked
 	.4byte MetatileBehavior_IsNorthBlocked
 	.4byte MetatileBehavior_IsWestBlocked
 	.4byte MetatileBehavior_IsEastBlocked
-	.globl gUnknown_84E5FC0
-gUnknown_84E5FC0: @ 0x084E5FC0
+	.globl gMapU32Table_Rom_4E5FC0
+gMapU32Table_Rom_4E5FC0: @ 0x084E5FC0
 	.4byte MetatileBehavior_IsNorthBlocked
 	.4byte MetatileBehavior_IsSouthBlocked
 	.4byte MetatileBehavior_IsEastBlocked
@@ -6510,8 +6510,8 @@ gJumpLandingGroundEffectFlags: @ 0x084E6A50
 	.4byte 0x00008000 @ surfable water / underwater
 	.4byte 0x00004000 @ shallow flowing water
 	.4byte 0x00010000 @ A tile
-	.globl gUnknown_84E6A68
-gUnknown_84E6A68: @ 0x084E6A68
+	.globl gMapU32Table_Rom_4E6A68
+gMapU32Table_Rom_4E6A68: @ 0x084E6A68
 	.4byte MetatileBehavior_IsJumpSouth
 	.4byte MetatileBehavior_IsJumpNorth
 	.4byte MetatileBehavior_IsJumpWest
@@ -6534,8 +6534,8 @@ gEventObjectMovementData_084E6A98:
 gObjectPrioritiesByZCoord: @ 0x084E6A98
 	.byte 1, 1, 1, 1, 2, 1, 2, 1
 	.byte 2, 1, 2, 1, 2, 0, 0, 1
-	.globl gUnknown_84E6AA8
-gUnknown_84E6AA8: @ 0x084E6AA8
+	.globl gMapU32Table_Rom_4E6AA8
+gMapU32Table_Rom_4E6AA8: @ 0x084E6AA8
 	.4byte DoTracksGroundEffect_None
 	.4byte DoTracksGroundEffect_Footprints
 	.4byte DoTracksGroundEffect_BikeTireTracks
@@ -6552,8 +6552,8 @@ gBikeTireTrackDirections: @ 0x084E6AB8
 	.byte 0x01, 0x02, 0x06, 0x05
 	.byte 0x05, 0x08, 0x03, 0x04
 	.byte 0x06, 0x07, 0x03, 0x04
-	.globl gUnknown_84E6AC8
-gUnknown_84E6AC8: @ 0x084E6AC8
+	.globl gMapPointerTable_Rom_4E6AC8
+gMapPointerTable_Rom_4E6AC8: @ 0x084E6AC8
 	.4byte GroundEffect_SpawnOnTallGrass
 	.4byte GroundEffect_StepOnTallGrass
 	.4byte GroundEffect_SpawnOnLongGrass

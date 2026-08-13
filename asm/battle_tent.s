@@ -812,10 +812,10 @@ _081B9C32:
 	b _081B9C74
 	.align 2, 0
 _081B9C58: .4byte 0x0203B954
-_081B9C5C: .4byte gUnknown_85BC958
+_081B9C5C: .4byte gBattleU16Table_Rom_5BC958
 _081B9C60: .4byte 0x0203B958
-_081B9C64: .4byte gUnknown_85BCF70
-_081B9C68: .4byte gUnknown_85ADBF4
+_081B9C64: .4byte gBattleU16Table_Rom_5BCF70
+_081B9C68: .4byte gMoveU8Table_Rom_5ADBF4
 _081B9C6C:
 	adds r4, #2
 	adds r2, #1
@@ -875,7 +875,7 @@ _081B9CC4:
 	.align 2, 0
 _081B9CD4: .4byte 0x03005AF0
 _081B9CD8: .4byte 0x0203B958
-_081B9CDC: .4byte gUnknown_85ADBF4
+_081B9CDC: .4byte gMoveU8Table_Rom_5ADBF4
 	thumb_func_end sub_081B9B60
 
 	thumb_func_start sub_081B9CE0
@@ -971,9 +971,9 @@ _081B9D7E:
 	b _081B9D02
 	.align 2, 0
 _081B9D8C: .4byte 0x0203B954
-_081B9D90: .4byte gUnknown_85BC958
+_081B9D90: .4byte gBattleU16Table_Rom_5BC958
 _081B9D94: .4byte 0x0203B958
-_081B9D98: .4byte gUnknown_85BCF70
+_081B9D98: .4byte gBattleU16Table_Rom_5BCF70
 _081B9D9C: .4byte 0x03005AF0
 _081B9DA0: .4byte 0x0000FFFF
 _081B9DA4: .4byte 0x00000CB2
@@ -1140,7 +1140,7 @@ _081B9ED8: .4byte 0x00000CB2
 _081B9EDC: .4byte 0x00000CB4
 _081B9EE0: .4byte 0x03001294
 _081B9EE4: .4byte 0x0203B958
-_081B9EE8: .4byte gUnknown_85ADBF4
+_081B9EE8: .4byte gMoveU8Table_Rom_5ADBF4
 _081B9EEC: .4byte 0x03005FD8
 	thumb_func_end sub_081B9CE0
 

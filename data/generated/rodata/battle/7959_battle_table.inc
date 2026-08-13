@@ -25,50 +25,50 @@ gPokenavMatchCallDataData_085F79B4: @ 0x085F79B4
 	.4byte 0x085F7958 @ +0x48
 	.4byte 0x085F797C @ +0x4C
 	.4byte 0x085F79A0 @ +0x50
-	.globl gUnknown_85F7A08
-gUnknown_85F7A08: @ 0x085F7A08
+	.globl gBattleU32Table_Rom_5F7A08
+gBattleU32Table_Rom_5F7A08: @ 0x085F7A08
 	.4byte MatchCallGetFlag_Type0
 	.4byte MatchCallGetFlag_Type1
 	.4byte MatchCallGetFlag_Type2
 	.4byte MatchCallGetFlag_Type4
 	.4byte MatchCallGetFlag_Type3
-	.globl gUnknown_85F7A1C
-gUnknown_85F7A1C: @ 0x085F7A1C
+	.globl gBattleU32Table_Rom_5F7A1C
+gBattleU32Table_Rom_5F7A1C: @ 0x085F7A1C
 	.4byte MatchCallGetMapSec_Type0
 	.4byte MatchCallGetMapSec_Type1
 	.4byte MatchCallGetMapSec_Type2
 	.4byte MatchCallGetMapSec_Type4
 	.4byte MatchCallGetMapSec_Type3
-	.globl gUnknown_85F7A30
-gUnknown_85F7A30: @ 0x085F7A30
+	.globl gBattlePointerTable_Rom_5F7A30
+gBattlePointerTable_Rom_5F7A30: @ 0x085F7A30
 	.4byte MatchCall_IsRematchable_Type3
 	.4byte MatchCall_IsRematchable_Type1
 	.4byte MatchCall_IsRematchable_Type2
 	.4byte MatchCall_IsRematchable_Type4
 	.4byte sub_081D0F00
-	.globl gUnknown_85F7A44
-gUnknown_85F7A44: @ 0x085F7A44
+	.globl gBattlePointerTable_Rom_5F7A44
+gBattlePointerTable_Rom_5F7A44: @ 0x085F7A44
 	.4byte sub_081D0F5C
 	.4byte sub_081D0F60
 	.4byte sub_081D0F64
 	.4byte sub_081D0F68
 	.4byte MatchCall_IsRematchable_Type0
-	.globl gUnknown_85F7A58
-gUnknown_85F7A58: @ 0x085F7A58
+	.globl gBattleU32Table_Rom_5F7A58
+gBattleU32Table_Rom_5F7A58: @ 0x085F7A58
 	.4byte MatchCall_GetRematchTableIdx_Type3
 	.4byte MatchCall_GetRematchTableIdx_Type1
 	.4byte MatchCall_GetRematchTableIdx_Type2
 	.4byte MatchCall_GetRematchTableIdx_Type4
 	.4byte MatchCall_GetRematchTableIdx_Type0
-	.globl gUnknown_85F7A6C
-gUnknown_85F7A6C: @ 0x085F7A6C
+	.globl gBattleU32Table_Rom_5F7A6C
+gBattleU32Table_Rom_5F7A6C: @ 0x085F7A6C
 	.4byte MatchCall_GetMessage_Type0
 	.4byte MatchCall_GetMessage_Type1
 	.4byte MatchCall_GetMessage_Type2
 	.4byte MatchCall_GetMessage_Type4
 	.4byte MatchCall_GetMessage_Type3
-	.globl gUnknown_85F7A80
-gUnknown_85F7A80: @ 0x085F7A80
+	.globl gBattleU32Table_Rom_5F7A80
+gBattleU32Table_Rom_5F7A80: @ 0x085F7A80
 	.4byte MatchCall_GetNameAndDesc_Type3
 	.4byte MatchCall_GetNameAndDesc_Type1
 	.4byte MatchCall_GetNameAndDesc_Type2

@@ -1316,8 +1316,8 @@ gPokemonStorageSystemData_08555BDC: @ 0x08555BDC
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0xFFFF, 0x008F, 0xFFFF, 0x0008
 	.2byte 0x8888, 0x0000, 0x0008, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000
-	.globl gUnknown_8556494
-gUnknown_8556494: @ 0x08556494
+	.globl gBattleU32Table_Rom_556494
+gBattleU32Table_Rom_556494: @ 0x08556494
 	.4byte MonPlaceChange_Move
 	.4byte MonPlaceChange_Place
 	.4byte MonPlaceChange_Shift
@@ -1329,8 +1329,8 @@ gPokemonStorageSystemData_085564A0: @ 0x085564A0
 	@ ANALYSIS: RAW_BLOCK size=0x18
 	.2byte 0x0022, 0x0039, 0x0022, 0x0123, 0x0A10, 0x0046, 0x0A10, 0x00F9
 	.2byte 0x0E10, 0x0046, 0x0E10, 0x00F9
-	.globl gUnknown_85564B8
-gUnknown_85564B8: @ 0x085564B8
+	.globl gBattleU32Table_Rom_5564B8
+gBattleU32Table_Rom_5564B8: @ 0x085564B8
 	@ Resolved pointer table; original ROM range 0x5564B8..0x5564DF.
 	.4byte HandleInput_InBox
 	@ ANALYSIS: RAW_BLOCK size=0x4

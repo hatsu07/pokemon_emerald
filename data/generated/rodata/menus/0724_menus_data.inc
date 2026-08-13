@@ -36,8 +36,8 @@ gFieldEffectData_08535AFC: @ 0x08535AFC
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
-	.globl gUnknown_8535CFC
-gUnknown_8535CFC: @ 0x08535CFC
+	.globl gMenuU32Table_Rom_535CFC
+gMenuU32Table_Rom_535CFC: @ 0x08535CFC
 	@ Resolved pointer table; original ROM range 0x535CFC..0x535D1B.
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0
@@ -365,8 +365,8 @@ gFieldEffectData_085362DC: @ 0x085362DC
 	.byte 0x10, 0x11, 0x21, 0x13, 0x00, 0x10, 0x11, 0x11, 0x00, 0x00, 0x10, 0x01, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x10, 0x13, 0x00
 	.byte 0x00, 0x31, 0x12, 0x00, 0x00, 0x11, 0x22, 0x01, 0x00, 0x00, 0x11, 0x01, 0x00, 0x00, 0x00, 0x00
-	.globl gUnknown_8536E9C
-gUnknown_8536E9C: @ 0x08536E9C
+	.globl gMenuU32Table_Rom_536E9C
+gMenuU32Table_Rom_536E9C: @ 0x08536E9C
 	.4byte FieldEffectCmd_loadtiles
 	.4byte FieldEffectCmd_loadfadedpal
 	.4byte FieldEffectCmd_loadpal
@@ -446,20 +446,20 @@ gFieldEffectData_08536FF8: @ 0x08536FF8
 	@ analyzed canonical ROM range 0x08536FF8-0x0853700F
 sSpriteTemplate_08536FF8: @ 0x08536FF8
 	rodata_sprite_template 0xFFFF, 0x1010, 0x08536F18, 0x08536FAC, 0x08536F40, gDummySpriteAffineAnimTable, SpriteCB_HallOfFameMonitor
-	.globl gUnknown_8537010
-gUnknown_8537010: @ 0x08537010
+	.globl gMenuU32Table_Rom_537010
+gMenuU32Table_Rom_537010: @ 0x08537010
 	.4byte PokecenterHealEffect_0
 	.4byte PokecenterHealEffect_1
 	.4byte PokecenterHealEffect_2
 	.4byte PokecenterHealEffect_3
-	.globl gUnknown_8537020
-gUnknown_8537020: @ 0x08537020
+	.globl gMenuU32Table_Rom_537020
+gMenuU32Table_Rom_537020: @ 0x08537020
 	.4byte HallOfFameRecordEffect_0
 	.4byte HallOfFameRecordEffect_1
 	.4byte HallOfFameRecordEffect_2
 	.4byte HallOfFameRecordEffect_3
-	.globl gUnknown_8537030
-gUnknown_8537030: @ 0x08537030
+	.globl gMenuU32Table_Rom_537030
+gMenuU32Table_Rom_537030: @ 0x08537030
 	.4byte PokeballGlowEffect_0
 	.4byte PokeballGlowEffect_1
 	.4byte PokeballGlowEffect_2
@@ -490,11 +490,11 @@ gFieldEffectData_0853706C: @ 0x0853706C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x10, 0x0C, 0x08, 0x00
-	.globl gUnknown_8537070
-gUnknown_8537070: @ 0x08537070
+	.globl gMenuRecord_Rom_537070
+gMenuRecord_Rom_537070: @ 0x08537070
 	.space 0x4, 0x00
-	.globl gUnknown_8537074
-gUnknown_8537074: @ 0x08537074
+	.globl gMenuPointerTable_Rom_537074
+gMenuPointerTable_Rom_537074: @ 0x08537074
 	.4byte sub_080B6324
 	.4byte sub_080B63CC
 	.4byte sub_080B63E8
@@ -502,16 +502,16 @@ gUnknown_8537074: @ 0x08537074
 	.4byte sub_080B6514
 	.4byte sub_080B6530
 	.4byte sub_080B6570
-	.globl gUnknown_8537090
-gUnknown_8537090: @ 0x08537090
+	.globl gMenuPointerTable_Rom_537090
+gMenuPointerTable_Rom_537090: @ 0x08537090
 	.4byte sub_080B6618
 	.4byte sub_080B6638
 	.4byte sub_080B66A8
 	.4byte sub_080B66CC
 	.4byte sub_080B66DC
 	.4byte sub_080B6700
-	.globl gUnknown_85370A8
-gUnknown_85370A8: @ 0x085370A8
+	.globl gMenuPointerTable_Rom_5370A8
+gMenuPointerTable_Rom_5370A8: @ 0x085370A8
 	.4byte sub_080B686C
 	.4byte sub_080B68E8
 	.4byte sub_080B6928
@@ -519,41 +519,41 @@ gUnknown_85370A8: @ 0x085370A8
 	.4byte sub_080B69C8
 	.4byte sub_080B6A28
 	.4byte sub_080B6A4C
-	.globl gUnknown_85370C4
-gUnknown_85370C4: @ 0x085370C4
+	.globl gMenuPointerTable_Rom_5370C4
+gMenuPointerTable_Rom_5370C4: @ 0x085370C4
 	.4byte sub_080B6B28
 	.4byte waterfall_1_do_anim_probably
 	.4byte waterfall_2_wait_anim_finish_probably
 	.4byte sub_080B6BA8
 	.4byte sub_080B6BD0
-	.globl gUnknown_85370D8
-gUnknown_85370D8: @ 0x085370D8
+	.globl gMenuU32Table_Rom_5370D8
+gMenuU32Table_Rom_5370D8: @ 0x085370D8
 	.4byte dive_1_lock
 	.4byte dive_2_unknown
 	.4byte dive_3_unknown
-	.globl gUnknown_85370E4
-gUnknown_85370E4: @ 0x085370E4
+	.globl gMenuPointerTable_Rom_5370E4
+gMenuPointerTable_Rom_5370E4: @ 0x085370E4
 	.4byte sub_080B6DA4
 	.4byte sub_080B6DDC
 	.4byte sub_080B6E10
 	.4byte sub_080B6E5C
 	.4byte sub_080B6F50
 	.4byte sub_080B6F6C
-	.globl gUnknown_85370FC
-gUnknown_85370FC: @ 0x085370FC
+	.globl gMenuPointerTable_Rom_5370FC
+gMenuPointerTable_Rom_5370FC: @ 0x085370FC
 	.4byte sub_080B7044
 	.4byte sub_080B7074
 	.4byte sub_080B70C0
 	.4byte sub_080B7114
-	.globl gUnknown_853710C
-gUnknown_853710C: @ 0x0853710C
+	.globl gMenuPointerTable_Rom_53710C
+gMenuPointerTable_Rom_53710C: @ 0x0853710C
 	.4byte sub_080B7240
 	.4byte sub_080B7270
 	.4byte sub_080B72EC
 	.4byte sub_080B7324
 	.4byte sub_080B734C
-	.globl gUnknown_8537120
-gUnknown_8537120: @ 0x08537120
+	.globl gMenuU32Table_Rom_537120
+gMenuU32Table_Rom_537120: @ 0x08537120
 	.4byte EscapeRopeFieldEffect_Step0
 	.4byte EscapeRopeFieldEffect_Step1
 	@ pret/pokeemerald-jp direct xref for 0x08537128: field_effect.s: EscapeRopeFieldEffect_Step1, TeleportFieldEffectTask2, TeleportFieldEffectTask3, sub_080B7640, sub_080B7A64 (+1 more)
@@ -563,23 +563,23 @@ gFieldEffectData_08537128: @ 0x08537128
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0301, 0x0204, 0x0001, 0x0000
-	.globl gUnknown_8537130
-gUnknown_8537130: @ 0x08537130
+	.globl gMenuPointerTable_Rom_537130
+gMenuPointerTable_Rom_537130: @ 0x08537130
 	.4byte sub_080B761C
 	.4byte sub_080B7640
-	.globl gUnknown_8537138
-gUnknown_8537138: @ 0x08537138
+	.globl gMenuU32Table_Rom_537138
+gMenuU32Table_Rom_537138: @ 0x08537138
 	.4byte TeleportFieldEffectTask1
 	.4byte TeleportFieldEffectTask2
 	.4byte TeleportFieldEffectTask3
 	.4byte TeleportFieldEffectTask4
-	.globl gUnknown_8537148
-gUnknown_8537148: @ 0x08537148
+	.globl gMenuPointerTable_Rom_537148
+gMenuPointerTable_Rom_537148: @ 0x08537148
 	.4byte sub_080B79D8
 	.4byte sub_080B7A64
 	.4byte sub_080B7B68
-	.globl gUnknown_8537154
-gUnknown_8537154: @ 0x08537154
+	.globl gMenuPointerTable_Rom_537154
+gMenuPointerTable_Rom_537154: @ 0x08537154
 	.4byte sub_080B7CDC
 	.4byte sub_080B7D50
 	.4byte sub_080B7DB8
@@ -587,8 +587,8 @@ gUnknown_8537154: @ 0x08537154
 	.4byte sub_080B7E74
 	.4byte sub_080B7EC8
 	.4byte overworld_bg_setup_2
-	.globl gUnknown_8537170
-gUnknown_8537170: @ 0x08537170
+	.globl gMenuPointerTable_Rom_537170
+gMenuPointerTable_Rom_537170: @ 0x08537170
 	.4byte sub_080B803C
 	.4byte sub_080B8078
 	.4byte sub_080B80E4
@@ -596,8 +596,8 @@ gUnknown_8537170: @ 0x08537170
 	.4byte sub_080B8164
 	.4byte sub_080B819C
 	.4byte sub_080B81BC
-	.globl gUnknown_853718C
-gUnknown_853718C: @ 0x0853718C
+	.globl gMenuPointerTable_Rom_53718C
+gMenuPointerTable_Rom_53718C: @ 0x0853718C
 	.4byte sub_080B850C
 	.4byte sub_080B856C
 	.4byte sub_080B85B8
@@ -632,8 +632,8 @@ gFieldEffectData_085371F4: @ 0x085371F4
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x085371C4 @ +0x0
 	.4byte 0x085371DC @ +0x4
-	.globl gUnknown_85371FC
-gUnknown_85371FC: @ 0x085371FC
+	.globl gMenuPointerTable_Rom_5371FC
+gMenuPointerTable_Rom_5371FC: @ 0x085371FC
 	.4byte sub_080B8F5C
 	.4byte sub_080B9010
 	.4byte sub_080B907C

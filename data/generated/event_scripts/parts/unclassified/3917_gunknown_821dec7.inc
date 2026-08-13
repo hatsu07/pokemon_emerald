@@ -1,5 +1,5 @@
-	.globl gUnknown_821DEC7
-gUnknown_821DEC7: @ 0x0821DEC7
+	.globl EventScriptData_JP_0821DEC7
+EventScriptData_JP_0821DEC7: @ 0x0821DEC7
 	@ Embedded ROM bytes: file offset 0x21DEC7, size 0x23F
 	@ semanticized-mass: resolved embedded ROM pointers
 	@ ANALYSIS: RAW_BLOCK size=0x3B

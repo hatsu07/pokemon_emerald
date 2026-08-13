@@ -154,8 +154,8 @@ gBattlePyramidBagData_085EF710: @ 0x085EF710
 	@ ANALYSIS: RAW_BLOCK size=0x18
 	.2byte 0x0000, 0x0000, 0x4C69, 0x081C, 0x4D21, 0x081C, 0x0000, 0x0000
 	.2byte 0x0000, 0x0008, 0x3022, 0x0100
-	.globl gUnknown_85EF728
-gUnknown_85EF728: @ 0x085EF728
+	.globl gPokemonPointerTable_Rom_5EF728
+gPokemonPointerTable_Rom_5EF728: @ 0x085EF728
 	.4byte gText_Rom_5C93A3
 	.4byte BagAction_UseOnField
 	.4byte gText_Rom_5C93A7
@@ -166,7 +166,7 @@ gUnknown_85EF728: @ 0x085EF728
 	.4byte BagAction_Cancel
 	.4byte gText_Rom_5C93A3
 	.4byte BagAction_UseInBattle
-	.4byte gUnknown_85C93D0
+	.4byte gBattleSetupData_085C93D0
 	.4byte NULL
 	@ pret/pokeemerald-jp direct xref for 0x085EF758: battle_pyramid_bag.s: sub_081C551C
 	.globl gBattlePyramidBagData_085EF758
@@ -196,8 +196,8 @@ gBattlePyramidBagData_085EF760: @ 0x085EF760
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x03, 0x00, 0x00, 0x00
-	.globl gUnknown_85EF764
-gUnknown_85EF764: @ 0x085EF764
+	.globl gPokemonU32Table_Rom_5EF764
+gPokemonU32Table_Rom_5EF764: @ 0x085EF764
 	.4byte TossItem
 	.4byte DontTossItem
 	@ pret/pokeemerald-jp direct xref for 0x085EF76C: battle_pyramid_bag.s: PrintOnWindow_Font1
@@ -249,8 +249,8 @@ gBattlePyramidBagData_085EF824: @ 0x085EF824
 	@ analyzed canonical ROM range 0x085EF824-0x085EF83B
 sSpriteTemplate_085EF824: @ 0x085EF824
 	rodata_sprite_template 0x1024, 0x1024, 0x085EF7C8, 0x085EF7D8, 0, 0x085EF814, SpriteCallbackDummy
-	.globl gUnknown_85EF83C
-gUnknown_85EF83C: @ 0x085EF83C
+	.globl gPokemonPointerTable_Rom_5EF83C
+gPokemonPointerTable_Rom_5EF83C: @ 0x085EF83C
 	.4byte sub_081C8A44
 	.4byte sub_081C8BC8
 	.4byte sub_081C90D0
@@ -896,8 +896,8 @@ gPokenavMatchCallUiData_085F15A8: @ 0x085F15A8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x00, 0x02, 0x05, 0x00
-	.globl gUnknown_85F15AC
-gUnknown_85F15AC: @ 0x085F15AC
+	.globl gPokemonPointerTable_Rom_5F15AC
+gPokemonPointerTable_Rom_5F15AC: @ 0x085F15AC
 	.4byte gText_Rom_5CB6EC
 	.4byte gText_Rom_5CB6F1
 	.4byte gText_Rom_5CB6FB
@@ -967,8 +967,8 @@ gPokenavUnk1Data_085F161D: @ 0x085F161D
 	@ ANALYSIS: RAW_BLOCK size=0x1F
 	.byte 0x00, 0x01, 0x04, 0x04, 0x04, 0x04, 0x00, 0x01, 0x02, 0x04, 0x04, 0x04, 0x00, 0x01, 0x02, 0x03
 	.byte 0x04, 0x04, 0x05, 0x06, 0x07, 0x04, 0x04, 0x04, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x00
-	.globl gUnknown_85F163C
-gUnknown_85F163C: @ 0x085F163C
+	.globl gPokemonRecord_Rom_5F163C
+gPokemonRecord_Rom_5F163C: @ 0x085F163C
 	.space 0x2, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085F163E: pokenav_unk_2.s: sub_081C9FC4
 	.globl gPokenavUnk2Data_085F163E
@@ -1265,8 +1265,8 @@ gPokenavUnk2Data_085F26FC: @ 0x085F26FC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.2byte 0x10F5, 0x0000, 0x217A, 0x0000, 0x31FF, 0x0000
-	.globl gUnknown_85F2708
-gUnknown_85F2708: @ 0x085F2708
+	.globl gPokemonPointerTable_Rom_5F2708
+gPokemonPointerTable_Rom_5F2708: @ 0x085F2708
 	.4byte NULL
 	.4byte sub_081C9418
 	.4byte sub_081C9454
@@ -1350,8 +1350,8 @@ gPokenavUnk2Data_085F2834: @ 0x085F2834
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0401, 0x1611, 0x0102, 0x0008
-	.globl gUnknown_85F283C
-gUnknown_85F283C: @ 0x085F283C
+	.globl gPokemonPointerTable_Rom_5F283C
+gPokemonPointerTable_Rom_5F283C: @ 0x085F283C
 	.4byte gText_Rom_5CB589
 	.4byte gText_Rom_5CB59B
 	.4byte gText_Rom_5CB5AC

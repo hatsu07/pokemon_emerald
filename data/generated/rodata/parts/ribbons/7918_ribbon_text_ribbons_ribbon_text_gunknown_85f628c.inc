@@ -376,8 +376,8 @@ gPokenavUnk10Data_085F7214: @ 0x085F7214
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x107D, 0x0000, 0x2066, 0x0000
-	.globl gUnknown_85F721C
-gUnknown_85F721C: @ 0x085F721C
+	.globl gRibbonPointerTable_Rom_5F721C
+gRibbonPointerTable_Rom_5F721C: @ 0x085F721C
 	.4byte NULL
 	.4byte sub_081D0334
 	.4byte sub_081D03DC

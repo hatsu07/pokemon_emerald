@@ -76,20 +76,20 @@ gContestData_08562970: @ 0x08562970
 	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.2byte 0x0001, 0xFFFF, 0x0000, 0x0001, 0xFFFF, 0x00FF, 0x0001, 0xFFFF
 	.2byte 0x00FF, 0x0001, 0xFF00, 0x00FF, 0x0001, 0x0000
-	.globl gUnknown_856298C
-gUnknown_856298C: @ 0x0856298C
+	.globl gBattleU32Table_Rom_56298C
+gBattleU32Table_Rom_56298C: @ 0x0856298C
 	.4byte BuyMenuTryMakePurchase
 	.4byte BuyMenuReturnToItemList
-	.globl gUnknown_8562994
-gUnknown_8562994: @ 0x08562994
+	.globl gBattlePointerTable_Rom_562994
+gBattlePointerTable_Rom_562994: @ 0x08562994
 	.4byte gText_Rom_5C98BE
 	.4byte Task_HandleShopMenuBuy
 	.4byte gText_Rom_5C98C5
 	.4byte Task_HandleShopMenuSell
 	.4byte gText_Rom_5C98CC
 	.4byte Task_HandleShopMenuQuit
-	.globl gUnknown_85629AC
-gUnknown_85629AC: @ 0x085629AC
+	.globl gBattlePointerTable_Rom_5629AC
+gBattlePointerTable_Rom_5629AC: @ 0x085629AC
 	.4byte gText_Rom_5C98BE
 	.4byte Task_HandleShopMenuBuy
 	.4byte gText_Rom_5C98CC

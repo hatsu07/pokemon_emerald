@@ -1890,7 +1890,7 @@ _08123B3E:
 	beq _08123BA0
 	b _08123BD2
 	.align 2, 0
-_08123B50: .4byte gUnknown_857CD6C
+_08123B50: .4byte gPokemonU8Table_Rom_57CD6C
 _08123B54: .4byte 0x02039E10
 _08123B58:
 	cmp r7, #0x33
@@ -2161,7 +2161,7 @@ _08123D1C:
 	bx r0
 	.align 2, 0
 _08123D5C: .4byte 0x02039E10
-_08123D60: .4byte gUnknown_857CD6C
+_08123D60: .4byte gPokemonU8Table_Rom_57CD6C
 	thumb_func_end RegionMap_InitializeStateBasedOnSSTidalLocation
 
 	thumb_func_start get_flagnr_blue_points
@@ -3321,7 +3321,7 @@ _08124590:
 	adds r1, r0, #0
 	b _081245BE
 	.align 2, 0
-_081245A8: .4byte gUnknown_857CD6C
+_081245A8: .4byte gPokemonU8Table_Rom_57CD6C
 _081245AC:
 	cmp r4, #0
 	bne _081245B2
@@ -3428,7 +3428,7 @@ sub_0812463C: @ 0x0812463C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08124660: .4byte gUnknown_857CD6C
+_08124660: .4byte gPokemonU8Table_Rom_57CD6C
 	thumb_func_end sub_0812463C
 
 	thumb_func_start sub_08124664

@@ -1146,8 +1146,8 @@ gTilesetAnimsData_084FCF88: @ 0x084FCF88
 	.4byte 0x08D85644 @ +0x4
 	.4byte 0x08D85664 @ +0x8
 	.4byte 0x08D85684 @ +0xC
-	.globl gUnknown_84FCF98
-gUnknown_84FCF98: @ 0x084FCF98
+	.globl gMenuU32Table_Rom_4FCF98
+gMenuU32Table_Rom_4FCF98: @ 0x084FCF98
 	@ Resolved pointer table; original ROM range 0x4FCF98..0x4FCFA7.
 	.4byte TAG_NONE
 	@ ANALYSIS: RAW_BLOCK size=0x4
@@ -1597,13 +1597,13 @@ sPointerTable_084FE460:
 	.4byte 0x08C2BE88 @ +0x84
 	.4byte 0x08C2C824 @ +0x88
 	.4byte 0x08C2C84C @ +0x8C
-	.4byte gUnknown_C2B100 @ +0x90
+	.4byte gMoveLz77Data_Rom_C2B100 @ +0x90
 	.4byte 0x08C2BE68 @ +0x94
 	.4byte 0x08C2A8AC @ +0x98
-	.4byte gUnknown_C2B100 @ +0x9C
+	.4byte gMoveLz77Data_Rom_C2B100 @ +0x9C
 	.4byte 0x08C2BE68 @ +0xA0
 	.4byte 0x08C2AB74 @ +0xA4
-	.4byte gUnknown_C2B100 @ +0xA8
+	.4byte gMoveLz77Data_Rom_C2B100 @ +0xA8
 	.4byte 0x08C2BE68 @ +0xAC
 	.4byte 0x08C2AE70 @ +0xB0
 	.4byte 0x08D8DC98 @ +0xB4
@@ -1642,8 +1642,8 @@ sPointerTable_084FE460:
 	.4byte 0x08C25C90 @ +0x138
 	.4byte 0x08D91028 @ +0x13C
 	.4byte 0x08C273C8 @ +0x140
-	.globl gUnknown_84FE5A4
-gUnknown_84FE5A4: @ 0x084FE5A4
+	.globl gMenuPointerTable_Rom_4FE5A4
+gMenuPointerTable_Rom_4FE5A4: @ 0x084FE5A4
 	.4byte ScriptCmd_loadspritegfx
 	.4byte ScriptCmd_unloadspritegfx
 	.4byte ScriptCmd_createsprite
@@ -1701,8 +1701,8 @@ gBattleAnimMonsData_084FE664: @ 0x084FE664
 	.byte 0x48, 0x50, 0x00, 0x00, 0xB0, 0x28, 0x00, 0x00, 0x30, 0x28, 0x00, 0x00, 0x70, 0x50, 0x00, 0x00
 	.byte 0x20, 0x50, 0x00, 0x00, 0xC8, 0x28, 0x00, 0x00, 0x5A, 0x58, 0x00, 0x00, 0x98, 0x20, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084FE684: battle_anim_mons.s: GetBattlerSpriteCoordAttr, GetBattlerYDelta; battle_main.s: SpriteCB_FaintOpponentMon
-	.globl gUnknown_84FE684
-gUnknown_84FE684: @ 0x084FE684
+	.globl gMenuU16Table_Rom_4FE684
+gMenuU16Table_Rom_4FE684: @ 0x084FE684
 	@ analyzed canonical ROM range 0x084FE684-0x084FE693
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x10
@@ -1714,8 +1714,8 @@ gBattleAnimMonsData_084FE694: @ 0x084FE694
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x0D, 0x0E, 0x0D, 0x0D
-	.globl gUnknown_84FE698
-gUnknown_84FE698: @ 0x084FE698
+	.globl gMenuRecord_Rom_4FE698
+gMenuRecord_Rom_4FE698: @ 0x084FE698
 	.space 0x4, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084FE69C: battle_anim_mons.s: sub_080A7C5C
 	.globl gBattleAnimMonsData_084FE69C

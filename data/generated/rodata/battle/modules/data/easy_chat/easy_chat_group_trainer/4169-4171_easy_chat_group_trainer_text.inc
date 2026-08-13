@@ -8,8 +8,8 @@ gText_Rom_5C8FA7: @ 0x085C8FA7
 	.if (. - gText_Rom_5C8FA7) < 0x5
 	.space 0x5 - (. - gText_Rom_5C8FA7)
 	.endif
-	.globl gUnknown_85C8FAC
-gUnknown_85C8FAC: @ 0x085C8FAC
+	.globl gText_Rom_5C8FAC
+gText_Rom_5C8FAC: @ 0x085C8FAC
 	@ Decoded text from ROM range: offset=0x5C8FAC, size=0x7
 	.string "？？？,？m$"
 	@ pret/pokeemerald-jp direct xref for 0x085C8FB3: pokedex.s: sub_080BE1C8
@@ -19,8 +19,8 @@ gPokedexData_085C8FB3: @ 0x085C8FB3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xAC, 0xAC, 0xAC, 0xB8, 0xAC, 0xDF, 0xDB, 0xFF
-	.globl gUnknown_85C8FBB
-gUnknown_85C8FBB: @ 0x085C8FBB
+	.globl gEasyChatRecord_Rom_5C8FBB
+gEasyChatRecord_Rom_5C8FBB: @ 0x085C8FBB
 	.space 0x5, 0x00
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:88 easy_chat_group_trainer_line_88 (+7 aliases)

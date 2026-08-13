@@ -46,8 +46,8 @@ gTrainerHillData_085FB8B8: @ 0x085FB8B8
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x085FB868 @ +0x0
 	.4byte 0x085FB890 @ +0x4
-	.globl gUnknown_85FB8C0
-gUnknown_85FB8C0: @ 0x085FB8C0
+	.globl gBattleDataBlock_Rom_5FB8C0
+gBattleDataBlock_Rom_5FB8C0: @ 0x085FB8C0
 	.space 0x20, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085FB8E0: trainer_hill.s: PrintOnTrainerHillRecordsWindow
 	.globl gTrainerHillData_085FB8E0

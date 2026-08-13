@@ -1,5 +1,5 @@
-	.globl gUnknown_857AAA0
-gUnknown_857AAA0: @ 0x0857AAA0
+	.globl gBattleU32Table_Rom_57AAA0
+gBattleU32Table_Rom_57AAA0: @ 0x0857AAA0
 	@ Resolved pointer table; original ROM range 0x57AAA0..0x57AAA7.
 	.4byte OAM_SIZE_3
 	@ ANALYSIS: RAW_BLOCK size=0x4
@@ -90,8 +90,8 @@ gMauvilleOldManData_0857AC08: @ 0x0857AC08
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.2byte 0x201E, 0x1A1A, 0x0A0F, 0x201A, 0x2696, 0x26A5
-	.globl gUnknown_857AC14
-gUnknown_857AC14: @ 0x0857AC14
+	.globl gBattlePointerTable_Rom_57AC14
+gBattlePointerTable_Rom_57AC14: @ 0x0857AC14
 	.4byte gText_Rom_2593C5
 	.4byte gText_Rom_2593CF
 	.4byte gText_Rom_2593D9
@@ -100,8 +100,8 @@ gUnknown_857AC14: @ 0x0857AC14
 	.4byte gText_Rom_2593FB
 	.4byte gText_Rom_259407
 	.4byte gText_Rom_259412
-	.globl gUnknown_857AC34
-gUnknown_857AC34: @ 0x0857AC34
+	.globl gBattlePointerTable_Rom_57AC34
+gBattlePointerTable_Rom_57AC34: @ 0x0857AC34
 	.4byte gText_Rom_25942A
 	.4byte gText_Rom_259445
 	.4byte gText_Rom_259461
@@ -110,8 +110,8 @@ gUnknown_857AC34: @ 0x0857AC34
 	.4byte gText_Rom_2594C5
 	.4byte gText_Rom_2594DF
 	.4byte gText_Rom_2594F8
-	.globl gUnknown_857AC54
-gUnknown_857AC54: @ 0x0857AC54
+	.globl gBattleU32Table_Rom_57AC54
+gBattleU32Table_Rom_57AC54: @ 0x0857AC54
 	@ Resolved pointer table; original ROM range 0x57AC54..0x57AC6B.
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0
@@ -276,8 +276,8 @@ gMauvilleOldManData_0857AE9C: @ 0x0857AE9C
 	.4byte 0x08256211 @ +0x4
 	.4byte 0x08256224 @ +0x8
 	.4byte 0x0825622F @ +0xC
-	.globl gUnknown_857AEAC
-gUnknown_857AEAC: @ 0x0857AEAC
+	.globl gBattleU32Table_Rom_57AEAC
+gBattleU32Table_Rom_57AEAC: @ 0x0857AEAC
 	@ Resolved pointer table; original ROM range 0x57AEAC..0x57AEB3.
 	.4byte ABILITY_TRACE
 	.4byte TYPE_STEEL
@@ -391,8 +391,8 @@ gMenuHelpersData_0857B0F4: @ 0x0857B0F4
 	.4byte 0x0857B0B8 @ +0x4
 	.4byte 0x0857B0D8 @ +0x8
 	.4byte 0 @ +0xC
-	.globl gUnknown_857B104
-gUnknown_857B104: @ 0x0857B104
+	.globl gBattlePointerTable_Rom_57B104
+gBattlePointerTable_Rom_57B104: @ 0x0857B104
 	.4byte gDummySpriteAffineAnimTable
 	.4byte SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x0857B10C: heal_location.s: GetHealLocationIndexByMap

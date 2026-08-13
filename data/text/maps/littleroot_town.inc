@@ -1,5 +1,5 @@
 @ Phase 2: ミシロタウン NPCセリフ
-@ ROM オフセット: gUnknown_81E27F7 ブロック内
+@ ROM オフセット: EventScript_JP_081E27F7 ブロック内
 @ Expansion (PokeEm-expansion-CanuseJP) の scripts.inc を参照して復元。
 @ {JPN} フォント切替は日本版オリジナルでは使われていないため省略。
 

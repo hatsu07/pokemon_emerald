@@ -887,8 +887,8 @@ gTextWindowData_084E8860: @ 0x084E8860
 	.4byte gTextWindowFramePalette_18
 	.4byte gTextWindowFrameTiles_19
 	.4byte gTextWindowFramePalette_19
-	.globl gUnknown_84E8900
-gUnknown_84E8900: @ 0x084E8900
+	.globl gMapRecord_Rom_4E8900
+gMapRecord_Rom_4E8900: @ 0x084E8900
 	.space 0x4, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084E8904: scrcmd.s: ScrCmd_call_if, ScrCmd_callstd_if, ScrCmd_goto_if, ScrCmd_gotostd_if, ScrCmd_vcall_if (+1 more)
 	.globl gScrcmdData_084E8904
@@ -909,8 +909,8 @@ gScriptStringVarPointers: @ 0x084E8918
 	.4byte 0x02021C40 @ gStringVar1
 	.4byte 0x02021C54 @ gStringVar2
 	.4byte 0x02021C68 @ gStringVar3
-	.globl gUnknown_84E8924
-gUnknown_84E8924: @ 0x084E8924
+	.globl gMapU32Table_Rom_4E8924
+gMapU32Table_Rom_4E8924: @ 0x084E8924
 	@ Resolved pointer table; original ROM range 0x4E8924..0x4E898B.
 	.4byte TYPE_FIGHT
 	.4byte CoordEventWeather_Clouds
@@ -938,8 +938,8 @@ gUnknown_84E8924: @ 0x084E8924
 	.4byte CoordEventWeather_Route119Cycle
 	.4byte MAP_NUM_ROUTE106
 	.4byte CoordEventWeather_Route123Cycle
-	.globl gUnknown_84E898C
-gUnknown_84E898C: @ 0x084E898C
+	.globl gMapU32Table_Rom_4E898C
+gMapU32Table_Rom_4E898C: @ 0x084E898C
 	.4byte DummyPerStepCallback
 	.4byte AshGrassPerStepCallback
 	.4byte FortreeBridgePerStepCallback

@@ -169,8 +169,8 @@ gPartyMenuData_085E13A9: @ 0x085E13A9
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x11, 0x1B, 0x1C
-	.globl gUnknown_85E13AC
-gUnknown_85E13AC: @ 0x085E13AC
+	.globl gMenuPointerTable_Rom_5E13AC
+gMenuPointerTable_Rom_5E13AC: @ 0x085E13AC
 	.4byte gText_Rom_5CA036
 	.4byte gText_Rom_5CA159
 	.4byte gText_Rom_5CA169
@@ -191,7 +191,7 @@ gUnknown_85E13AC: @ 0x085E13AC
 	.4byte gText_Rom_5CA111
 	.4byte gText_Rom_5CA11F
 	.4byte gText_Rom_5CA12E
-	.4byte gUnknown_85C93D0
+	.4byte gBattleSetupData_085C93D0
 	.4byte gText_Rom_5CA083
 	.4byte gText_Rom_5CA0C1
 	.4byte gText_Rom_5CA0CD
@@ -334,8 +334,8 @@ gPartyMenuData_085E1636: @ 0x085E1636
 	@ ANALYSIS: RAW_BLOCK size=0x1E
 	.2byte 0x000F, 0x0094, 0x00F9, 0x0046, 0x0039, 0x0013, 0x0123, 0x007F
 	.2byte 0x0064, 0x005B, 0x0122, 0x00D0, 0x0087, 0x00E6, 0x000E
-	.globl gUnknown_85E1654
-gUnknown_85E1654: @ 0x085E1654
+	.globl gMenuPointerTable_Rom_5E1654
+gMenuPointerTable_Rom_5E1654: @ 0x085E1654
 	@ Resolved pointer table; original ROM range 0x5E1654..0x5E16C3.
 	.4byte SetUpFieldMove_Cut
 	.4byte TYPE_GHOST
@@ -475,12 +475,12 @@ gPartyMenuData_085E18C0: @ 0x085E18C0
 	@ analyzed canonical ROM range 0x085E18C0-0x085E18D7
 sSpriteTemplate_085E18C0: @ 0x085E18C0
 	rodata_sprite_template 0x04B2, 0x04B2, 0x085E1848, 0x085E1890, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	.globl gUnknown_85E18D8
-gUnknown_85E18D8: @ 0x085E18D8
+	.globl gMenuPointerTable_Rom_5E18D8
+gMenuPointerTable_Rom_5E18D8: @ 0x085E18D8
 	@ Resolved pointer table; original ROM range 0x5E18D8..0x5E18F7.
 	.4byte DMA_SRC_FIXED
 	.4byte SECRET_BASE_METATILE_POWDER_SNOW_MAT_1
-	.4byte gUnknown_85CA388
+	.4byte gPokemonSummaryScreenData_085CA388
 	.4byte gText_Rom_5CA36F
 	.4byte gText_Rom_5CA374
 	.4byte gText_Rom_5CA379
@@ -500,8 +500,8 @@ gPartyMenuData_085E18F8: @ 0x085E18F8
 	.2byte 0x0103, 0x0107, 0x0122, 0x009C, 0x00D5, 0x00A8, 0x00D3, 0x011D
 	.2byte 0x0121, 0x013B, 0x000F, 0x0013, 0x0039, 0x0046, 0x0094, 0x00F9
 	.2byte 0x007F, 0x0123
-	.globl gUnknown_85E196C
-gUnknown_85E196C: @ 0x085E196C
+	.globl gMenuPointerTable_Rom_5E196C
+gMenuPointerTable_Rom_5E196C: @ 0x085E196C
 	.4byte sub_081B9674
 	.4byte sub_081B96C8
 	.4byte sub_081B96E4
@@ -517,8 +517,8 @@ gBattleTentData_085E198C: @ 0x085E198C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x08, 0x00, 0x00, 0x00
-	.globl gUnknown_85E1990
-gUnknown_85E1990: @ 0x085E1990
+	.globl gMenuPointerTable_Rom_5E1990
+gMenuPointerTable_Rom_5E1990: @ 0x085E1990
 	.4byte sub_081B9840
 	.4byte sub_081B9894
 	.4byte sub_081B98B0
@@ -533,8 +533,8 @@ gBattleTentData_085E19AC: @ 0x085E19AC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x15, 0x00, 0x00, 0x00
-	.globl gUnknown_85E19B0
-gUnknown_85E19B0: @ 0x085E19B0
+	.globl gMenuPointerTable_Rom_5E19B0
+gMenuPointerTable_Rom_5E19B0: @ 0x085E19B0
 	.4byte sub_081B99C8
 	.4byte sub_081B9A1C
 	.4byte sub_081B9A38

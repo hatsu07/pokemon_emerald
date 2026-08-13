@@ -45,11 +45,10 @@ sLz77Block_082D277C:
 
 	.globl gMainMenuData_082D28A8
 	.set gMainMenuData_082D28A8, sBirchSpeechBgGradientPal + 2
-	.globl gUnknown_82D28A8
-	.set gUnknown_82D28A8, sBirchSpeechBgGradientPal + 2
+	.globl gMainMenuData_082D28A8
 
-	.globl gUnknown_82D28B6
-	.set gUnknown_82D28B6, sBirchSpeechBgGradientPal + 0x10
+	.globl gMenuDataBlock_Rom_2D28B6
+	.set gMenuDataBlock_Rom_2D28B6, sBirchSpeechBgGradientPal + 0x10
 
 	.globl sBirchSpeechBgGradientPal
 sBirchSpeechBgGradientPal: @ 0x082D28A6
@@ -78,10 +77,8 @@ gMainMenuData_082D28C8 = sWindowTemplates_MainMenu
 gMainMenuData_082D28D8 = sWindowTemplates_MainMenu + 0x10
 	.globl gMainMenuData_082D2900
 gMainMenuData_082D2900 = sWindowTemplates_MainMenu + 0x38
-	.globl gUnknown_82D28D8
-gUnknown_82D28D8 = sWindowTemplates_MainMenu + 0x10
-	.globl gUnknown_82D2900
-gUnknown_82D2900 = sWindowTemplates_MainMenu + 0x38
+	.globl gMainMenuData_082D28D8
+	.globl gMainMenuData_082D2900
 
 	.globl sNewGameBirchSpeechTextWindows
 sNewGameBirchSpeechTextWindows: @ 0x082D2910
@@ -94,8 +91,7 @@ sNewGameBirchSpeechTextWindows: @ 0x082D2910
 gMainMenuData_082D2910 = sNewGameBirchSpeechTextWindows
 	.globl gMainMenuData_082D2918
 gMainMenuData_082D2918 = sNewGameBirchSpeechTextWindows + 8
-	.globl gUnknown_82D2918
-gUnknown_82D2918 = sNewGameBirchSpeechTextWindows + 8
+	.globl gMainMenuData_082D2918
 	.globl sMainMenuBgPal
 sMainMenuBgPal: @ 0x082D2930
 	.incbin "build/graphics/raw_cleanup/main_menu/main_menu_bg.gbapal"
@@ -163,8 +159,8 @@ gMainMenuData_082D2980 = sBirchBgTemplate
 gMainMenuData_082D2984 = sScrollArrowsTemplate_MainMenu
 	.globl gMainMenuData_082D29A4
 gMainMenuData_082D29A4 = sSpriteAffineAnimTable_PlayerShrink
-	.globl gUnknown_82D29A8
-gUnknown_82D29A8: @ 0x082D29A8
+	.globl gMenuPointerTable_Rom_2D29A8
+gMenuPointerTable_Rom_2D29A8: @ 0x082D29A8
 	.4byte gText_Rom_5C8E92
 	.4byte NULL
 	.4byte gText_Rom_5C8E96

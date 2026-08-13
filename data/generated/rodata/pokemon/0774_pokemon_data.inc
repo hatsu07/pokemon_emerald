@@ -1,5 +1,5 @@
-	.globl gUnknown_85430F0
-gUnknown_85430F0: @ 0x085430F0
+	.globl gPokemonDataBlock_Rom_5430F0
+gPokemonDataBlock_Rom_5430F0: @ 0x085430F0
 	.space 0x20, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08543110: pokedex.s: sub_080BE0C0
 	.globl gPokedexData_08543110
@@ -602,16 +602,16 @@ gPokedexData_085441F4: @ 0x085441F4
 	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.2byte 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF
 	.2byte 0xFFFF, 0x06FF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFF04
-	.globl gUnknown_8544210
-gUnknown_8544210: @ 0x08544210
+	.globl gPokemonPointerTable_Rom_544210
+gPokemonPointerTable_Rom_544210: @ 0x08544210
 	.4byte gText_Rom_5C91A7
 	.4byte gText_Rom_5C9103
 	.4byte gText_Rom_5C91BA
 	.4byte gText_Rom_5C910C
 	.4byte NULL
 	.4byte NULL
-	.globl gUnknown_8544228
-gUnknown_8544228: @ 0x08544228
+	.globl gPokemonPointerTable_Rom_544228
+gPokemonPointerTable_Rom_544228: @ 0x08544228
 	.4byte gText_Rom_5C91CA
 	.4byte gText_Rom_5C9115
 	.4byte gText_Rom_5C91E2
@@ -738,6 +738,6 @@ gPokedexData_085443B0: @ 0x085443B0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0x00, 0x01
-	.globl gUnknown_85443B2
-gUnknown_85443B2: @ 0x085443B2
+	.globl gPokemonDataBlock_Rom_5443B2
+gPokemonDataBlock_Rom_5443B2: @ 0x085443B2
 	.space 0x1, 0x00

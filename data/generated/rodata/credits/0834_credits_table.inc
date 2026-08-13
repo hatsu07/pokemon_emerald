@@ -35,8 +35,8 @@ gNamingScreenData_08565A48: @ 0x08565A48
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0100, 0x0202, 0x0001, 0x0000
-	.globl gUnknown_8565A50
-gUnknown_8565A50: @ 0x08565A50
+	.globl gCreditsU32Table_Rom_565A50
+gCreditsU32Table_Rom_565A50: @ 0x08565A50
 	.4byte PageSwapAnimState_Init
 	.4byte PageSwapAnimState_1
 	.4byte PageSwapAnimState_2
@@ -62,8 +62,8 @@ gNamingScreenData_08565A70: @ 0x08565A70
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x01, 0x02, 0x03, 0x00
-	.globl gUnknown_8565A74
-gUnknown_8565A74: @ 0x08565A74
+	.globl gCreditsPointerTable_Rom_565A74
+gCreditsPointerTable_Rom_565A74: @ 0x08565A74
 	.4byte sub_080E356C
 	.4byte sub_080E35C0
 	.4byte sub_080E35C4
@@ -82,21 +82,21 @@ gNamingScreenData_08565A8A: @ 0x08565A8A
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x6
 	.byte 0x04, 0x00, 0x06, 0x00, 0x05, 0x00
-	.globl gUnknown_8565A90
-gUnknown_8565A90: @ 0x08565A90
+	.globl gCreditsU32Table_Rom_565A90
+gCreditsU32Table_Rom_565A90: @ 0x08565A90
 	.4byte TaskDummy2
 	.4byte NamingScreen_CreatePlayerIcon
 	.4byte NamingScreen_CreatePCIcon
 	.4byte NamingScreen_CreateMonIcon
 	.4byte NamingScreen_CreateWandaDadIcon
-	.globl gUnknown_8565AA4
-gUnknown_8565AA4: @ 0x08565AA4
+	.globl gCreditsU32Table_Rom_565AA4
+gCreditsU32Table_Rom_565AA4: @ 0x08565AA4
 	.4byte KeyboardKeyHandler_Character
 	.4byte KeyboardKeyHandler_Page
 	.4byte KeyboardKeyHandler_Backspace
 	.4byte KeyboardKeyHandler_OK
-	.globl gUnknown_8565AB4
-gUnknown_8565AB4: @ 0x08565AB4
+	.globl gCreditsPointerTable_Rom_565AB4
+gCreditsPointerTable_Rom_565AB4: @ 0x08565AB4
 	.4byte InputState_2
 	.4byte InputState_Enabled
 	.4byte sub_080E3BD0
@@ -121,21 +121,21 @@ gNamingScreenData_08565AD4: @ 0x08565AD4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0000, 0x0001, 0x0001, 0x0002
-	.globl gUnknown_8565ADC
-gUnknown_8565ADC: @ 0x08565ADC
+	.globl gCreditsU32Table_Rom_565ADC
+gCreditsU32Table_Rom_565ADC: @ 0x08565ADC
 	@ Resolved pointer table; original ROM range 0x565ADC..0x565AE3.
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0
 	.4byte TYPE_POISON
-	.globl gUnknown_8565AE4
-gUnknown_8565AE4: @ 0x08565AE4
+	.globl gCreditsPointerTable_Rom_565AE4
+gCreditsPointerTable_Rom_565AE4: @ 0x08565AE4
 	.4byte sub_080E3D50
 	.4byte sub_080E3D50
 	.4byte sub_080E3DA4
 	.4byte sub_080E3DA4
 	.4byte sub_080E3D50
-	.globl gUnknown_8565AF8
-gUnknown_8565AF8: @ 0x08565AF8
+	.globl gCreditsPointerTable_Rom_565AF8
+gCreditsPointerTable_Rom_565AF8: @ 0x08565AF8
 	.4byte sub_080E3E78
 	.4byte sub_080E3E7C
 	@ pret/pokeemerald-jp direct xref for 0x08565B00: naming_screen.s: sub_080E3E7C

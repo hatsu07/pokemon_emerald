@@ -1,5 +1,5 @@
-	.globl gUnknown_85ECE24
-gUnknown_85ECE24: @ 0x085ECE24
+	.globl gPokemonPointerTable_Rom_5ECE24
+gPokemonPointerTable_Rom_5ECE24: @ 0x085ECE24
 	.4byte gText_Rom_5ECDA4
 	.4byte gText_Rom_5ECDAA
 	.4byte gText_Rom_5ECDB0
@@ -174,14 +174,14 @@ gPokemonSummaryScreenData_085ED223: @ 0x085ED223
 	.byte 0xEF, 0xDD, 0x0D, 0x00, 0xEE, 0xDD, 0x00, 0x00, 0xDE, 0xDD, 0x00, 0x00, 0xDD, 0x0D, 0x00, 0x00
 	.byte 0x0D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00
-	.globl gUnknown_85ED2A4
-gUnknown_85ED2A4: @ 0x085ED2A4
+	.globl gPokemonU32Table_Rom_5ED2A4
+gPokemonU32Table_Rom_5ED2A4: @ 0x085ED2A4
 	.4byte PrintInfoPageText
 	.4byte PrintSkillsPageText
 	.4byte PrintBattleMoves
 	.4byte PrintContestMoves
-	.globl gUnknown_85ED2B4
-gUnknown_85ED2B4: @ 0x085ED2B4
+	.globl gPokemonPointerTable_Rom_5ED2B4
+gPokemonPointerTable_Rom_5ED2B4: @ 0x085ED2B4
 	.4byte Task_PrintInfoPage
 	.4byte Task_PrintSkillsPage
 	.4byte Task_PrintBattleMoves

@@ -1,5 +1,5 @@
-	.globl gUnknown_828D2B4
-gUnknown_828D2B4: @ 0x0828D2B4
+	.globl EventScriptData_JP_0828D2B4
+EventScriptData_JP_0828D2B4: @ 0x0828D2B4
 	.4byte MEScrCmd_nop
 	.4byte MEScrCmd_checkcompat
 	.4byte MEScrCmd_end

@@ -1,12 +1,12 @@
 	@ pret/pokeemerald-jp direct xref for 0x08526DE8: cable_car.s: CableCarMainCallback_Setup, CleanupCableCar, sub_081503C0, sub_08150640; field_weather_effect.s: Ash_Finish, Ash_InitAll, Ash_InitVars, Ash_Main, Bubbles_InitAll (+69 more)
-	.globl gUnknown_8526DE8
-gUnknown_8526DE8: @ 0x08526DE8
+	.globl gMenuU8Table_Rom_526DE8
+gMenuU8Table_Rom_526DE8: @ 0x08526DE8
 	@ analyzed canonical ROM range 0x08526DE8-0x08526DEB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0xF4, 0x80, 0x03, 0x02
-	.globl gUnknown_8526DEC
-gUnknown_8526DEC: @ 0x08526DEC
+	.globl gMenuU32Table_Rom_526DEC
+gMenuU32Table_Rom_526DEC: @ 0x08526DEC
 	.4byte None_Init
 	.4byte SetWeatherScreenFadeOut
 	.4byte None_Init
@@ -67,8 +67,8 @@ gUnknown_8526DEC: @ 0x08526DEC
 	.4byte Bubbles_Main
 	.4byte Bubbles_InitAll
 	.4byte Bubbles_Finish
-	.globl gUnknown_8526EDC
-gUnknown_8526EDC: @ 0x08526EDC
+	.globl gMenuU32Table_Rom_526EDC
+gMenuU32Table_Rom_526EDC: @ 0x08526EDC
 	.4byte UpdateWeatherGammaShift
 	.4byte FadeInScreenWithWeather
 	.4byte DoNothing
@@ -82,8 +82,8 @@ gFieldWeatherData_08526EEC: @ 0x08526EEC
 	.2byte 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0000
 	.2byte 0x0102, 0x0202, 0x0202, 0x0101, 0x0101, 0x0102, 0x0101, 0x0101
 	@ pret/pokeemerald-jp direct xref for 0x08526F0C: field_weather.s: StartWeather; ice.s: AnimTask_Haze1, AnimTask_LoadMistTiles
-	.globl gUnknown_8526F0C
-gUnknown_8526F0C: @ 0x08526F0C
+	.globl gMenuU8Table_Rom_526F0C
+gMenuU8Table_Rom_526F0C: @ 0x08526F0C
 	@ analyzed canonical ROM range 0x08526F0C-0x08526F2B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -1342,8 +1342,8 @@ gBattleSetupData_0852ACF8: @ 0x0852ACF8
 	.byte 0x88, 0x88, 0x03, 0x02, 0x05, 0x00, 0x00, 0x00, 0x94, 0x88, 0x03, 0x02, 0x02, 0x00, 0x00, 0x00
 	.byte 0x8C, 0x88, 0x03, 0x02, 0x06, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0852AD40: battle_setup.s: CountBattledRematchTeams, DoesSomeoneWantRematchIn, GetLastBeatenRematchTrainerId, GetRematchTrainerId, GetTrainerMatchCallFlag (+6 more); gym_leader_rematch.s: GetRematchIndex; match_call.s: GetActiveMatchCallTrainerId, ...
-	.globl gUnknown_852AD40
-gUnknown_852AD40: @ 0x0852AD40
+	.globl gMenuU16Table_Rom_52AD40
+gMenuU16Table_Rom_52AD40: @ 0x0852AD40
 	@ analyzed canonical ROM range 0x0852AD40-0x0852B21F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x4E0

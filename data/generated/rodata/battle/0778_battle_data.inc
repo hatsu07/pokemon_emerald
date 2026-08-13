@@ -5,8 +5,8 @@ gTrainerCardData_085467C1: @ 0x085467C1
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x0A, 0x10, 0x00
-	.globl gUnknown_85467C4
-gUnknown_85467C4: @ 0x085467C4
+	.globl gBattlePointerTable_Rom_5467C4
+gBattlePointerTable_Rom_5467C4: @ 0x085467C4
 	.4byte gText_Rom_5CC367
 	.4byte gText_Rom_5CC370
 	.4byte gText_Rom_5CC367

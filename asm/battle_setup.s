@@ -3139,7 +3139,7 @@ _080B17A0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B17A8: .4byte gUnknown_852AD40
+_080B17A8: .4byte gMenuU16Table_Rom_52AD40
 	thumb_func_end UpdateRematchIfDefeated
 
 	thumb_func_start DoesSomeoneWantRematchIn_
@@ -3424,7 +3424,7 @@ _080B1984:
 	adds r0, r1, r4
 	b _080B199E
 	.align 2, 0
-_080B1990: .4byte gUnknown_852AD40
+_080B1990: .4byte gMenuU16Table_Rom_52AD40
 _080B1994:
 	adds r2, #0x10
 	adds r1, #1
@@ -3608,7 +3608,7 @@ _080B1ACC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B1AD4: .4byte gUnknown_852AD40
+_080B1AD4: .4byte gMenuU16Table_Rom_52AD40
 _080B1AD8: .4byte 0x03005AEC
 _080B1ADC: .4byte 0x000009C8
 	thumb_func_end TryUpdateRandomTrainerRematches
@@ -3628,7 +3628,7 @@ DoesSomeoneWantRematchIn: @ 0x080B1AE0
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B1AFC: .4byte gUnknown_852AD40
+_080B1AFC: .4byte gMenuU16Table_Rom_52AD40
 	thumb_func_end DoesSomeoneWantRematchIn
 
 	thumb_func_start IsRematchTrainerIn
@@ -3646,7 +3646,7 @@ IsRematchTrainerIn: @ 0x080B1B00
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B1B1C: .4byte gUnknown_852AD40
+_080B1B1C: .4byte gMenuU16Table_Rom_52AD40
 	thumb_func_end IsRematchTrainerIn
 
 	thumb_func_start GetRematchTrainerId
@@ -3662,7 +3662,7 @@ GetRematchTrainerId: @ 0x080B1B20
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B1B38: .4byte gUnknown_852AD40
+_080B1B38: .4byte gMenuU16Table_Rom_52AD40
 	thumb_func_end GetRematchTrainerId
 
 	thumb_func_start GetLastBeatenRematchTrainerId
@@ -3678,7 +3678,7 @@ GetLastBeatenRematchTrainerId: @ 0x080B1B3C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B1B54: .4byte gUnknown_852AD40
+_080B1B54: .4byte gMenuU16Table_Rom_52AD40
 	thumb_func_end GetLastBeatenRematchTrainerId
 
 	thumb_func_start ShouldTryRematchBattle
@@ -3699,7 +3699,7 @@ ShouldTryRematchBattle: @ 0x080B1B58
 	lsrs r0, r0, #0x18
 	b _080B1B86
 	.align 2, 0
-_080B1B7C: .4byte gUnknown_852AD40
+_080B1B7C: .4byte gMenuU16Table_Rom_52AD40
 _080B1B80: .4byte 0x0203886A
 _080B1B84:
 	movs r0, #1
@@ -3721,7 +3721,7 @@ IsTrainerReadyForRematch: @ 0x080B1B8C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B1BA0: .4byte gUnknown_852AD40
+_080B1BA0: .4byte gMenuU16Table_Rom_52AD40
 _080B1BA4: .4byte 0x0203886A
 	thumb_func_end IsTrainerReadyForRematch
 
@@ -3736,7 +3736,7 @@ HandleRematchVarsOnBattleEnd: @ 0x080B1BA8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080B1BBC: .4byte gUnknown_852AD40
+_080B1BBC: .4byte gMenuU16Table_Rom_52AD40
 _080B1BC0: .4byte 0x0203886A
 	thumb_func_end HandleRematchVarsOnBattleEnd
 
@@ -3790,7 +3790,7 @@ CountBattledRematchTeams: @ 0x080B1C04
 	movs r0, #0
 	b _080B1C50
 	.align 2, 0
-_080B1C20: .4byte gUnknown_852AD40
+_080B1C20: .4byte gMenuU16Table_Rom_52AD40
 _080B1C24:
 	movs r5, #1
 	adds r0, r4, #2

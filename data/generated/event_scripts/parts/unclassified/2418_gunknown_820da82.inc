@@ -7,8 +7,8 @@ EventScript_JP_0820DA82: @ 0x0820DA82
 	nop
 	checkmoney 0x920820DE, 0xDE
 	.byte 0x20, 0x08, 0x02, 0x5C
-	.globl gUnknown_820DA91
-gUnknown_820DA91: @ 0x0820DA91
+	.globl EventScriptData_JP_0820DA91
+EventScriptData_JP_0820DA91: @ 0x0820DA91
 	@ analyzed canonical ROM range 0x0820DA91-0x0820DA9E
 	@ semantic recovery: script_data; byte-verified against linked ROM
 	@ ANALYSIS: RAW_BLOCK size=0x5

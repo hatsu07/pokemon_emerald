@@ -8,8 +8,8 @@ gText_Rom_5CCD86: @ 0x085CCD86
 	.if (. - gText_Rom_5CCD86) < 0x19
 	.space 0x19 - (. - gText_Rom_5CCD86)
 	.endif
-	.globl gUnknown_85CCD9F
-gUnknown_85CCD9F: @ 0x085CCD9F
+	.globl gText_Rom_5CCD9F
+gText_Rom_5CCD9F: @ 0x085CCD9F
 	@ Decoded text from ROM range: offset=0x5CCD9F, size=0xC
 	.string "{SE_M_HYPER_BEAM2}は　いっぱいです…$"
 	@ pret/pokeemerald-jp direct xref for 0x085CCDAB: dodrio_berry_picking.s: sub_080295A4

@@ -8,8 +8,8 @@ gText_Rom_5C9771: @ 0x085C9771
 	.if (. - gText_Rom_5C9771) < 0x5
 	.space 0x5 - (. - gText_Rom_5C9771)
 	.endif
-	.globl gUnknown_85C9776
-gUnknown_85C9776: @ 0x085C9776
+	.globl gPokedexRecord_Rom_5C9776
+gPokedexRecord_Rom_5C9776: @ 0x085C9776
 	.space 0x2, 0x00
 
 	@ src/pokedex_plus_hgss.c:146 sText_Stats_EvStr1Str2

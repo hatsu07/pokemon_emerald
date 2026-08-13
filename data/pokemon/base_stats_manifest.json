@@ -13,17 +13,17 @@
       "size": 12
     },
     {
-      "label": "gUnknown_82F0D60",
+      "label": "gPokemonDataBlock_Rom_2F0D60",
       "offset": "0x2f0d60",
       "size": 2
     },
     {
-      "label": "gUnknown_82F0D62",
+      "label": "gPokemonDataBlock_Rom_2F0D62",
       "offset": "0x2f0d62",
       "size": 3
     },
     {
-      "label": "gUnknown_82F0D65",
+      "label": "gPokemonDataBlock_Rom_2F0D65",
       "offset": "0x2f0d65",
       "size": 20287
     }

@@ -49,8 +49,8 @@ gBattleTowerData_085BE5E0: @ 0x085BE5E0
 	.2byte 0x0128, 0x010B, 0x0037, 0x00F0, 0x0094, 0x2519, 0x0012, 0x0000
 	.2byte 0x012B, 0x010B, 0x0103, 0x00CF, 0x009C, 0x0A04, 0x0003, 0x0000
 	.2byte 0x0158, 0x00C9, 0x012E, 0x012A, 0x0049, 0x2D20, 0x0003, 0x0000
-	.globl gUnknown_85BE8B0
-gUnknown_85BE8B0: @ 0x085BE8B0
+	.globl gBattlePointerTable_Rom_5BE8B0
+gBattlePointerTable_Rom_5BE8B0: @ 0x085BE8B0
 	.4byte sub_08161EA8
 	.4byte sub_08161F68
 	.4byte sub_08162008
@@ -579,8 +579,8 @@ sLz77Block_085C0488:
 	.byte 0x96, 0x99, 0x99, 0x69, 0x96, 0x99, 0x99, 0x69, 0x96, 0x79, 0x97, 0x69, 0x76, 0x77, 0x77, 0x67
 	.byte 0x86, 0x78, 0x87, 0x68, 0x86, 0x88, 0x88, 0x68, 0x86, 0x88, 0x88, 0x68, 0x66, 0x66, 0x66, 0x66
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.globl gUnknown_85C0994
-gUnknown_85C0994: @ 0x085C0994
+	.globl gBattleU32Table_Rom_5C0994
+gBattleU32Table_Rom_5C0994: @ 0x085C0994
 	@ Resolved pointer table; original ROM range 0x5C0994..0x5C09A7.
 	.4byte MAP_NUM_ROUTE107
 	.4byte MAP_NUM_ROUTE132
@@ -623,8 +623,8 @@ gUsePokeblockData_085C09E0: @ 0x085C09E0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x1800, 0x050B, 0x0F04, 0x007D
-	.globl gUnknown_85C09E8
-gUnknown_85C09E8: @ 0x085C09E8
+	.globl gBattlePointerTable_Rom_5C09E8
+gBattlePointerTable_Rom_5C09E8: @ 0x085C09E8
 	.4byte gText_Rom_5CBD21
 	.4byte gText_Rom_5CBD37
 	.4byte gText_Rom_5CBD32
@@ -678,8 +678,8 @@ gUsePokeblockData_085C0A9C: @ 0x085C0A9C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x34, 0xED, 0x5B, 0x08, 0x01, 0x00, 0x00, 0x00
-	.globl gUnknown_85C0AA4
-gUnknown_85C0AA4: @ 0x085C0AA4
+	.globl gBattlePointerTable_Rom_5C0AA4
+gBattlePointerTable_Rom_5C0AA4: @ 0x085C0AA4
 	.4byte WallyHandleGetMonData
 	.4byte sub_081691C8
 	.4byte WallyHandleSetMonData
@@ -737,14 +737,14 @@ gUnknown_85C0AA4: @ 0x085C0AA4
 	.4byte WallyHandleResetActionMoveSelection
 	.4byte WallyHandleCmd55
 	.4byte SpriteCB_Null7
-	.globl gUnknown_85C0B88
-gUnknown_85C0B88: @ 0x085C0B88
+	.globl gBattlePointerTable_Rom_5C0B88
+gBattlePointerTable_Rom_5C0B88: @ 0x085C0B88
 	.4byte gText_Rom_5CA8EC
 	.4byte gText_Rom_5CA8DA
 	.4byte gText_Rom_5CA900
 	.4byte gText_Rom_5C9423
-	.globl gUnknown_85C0B98
-gUnknown_85C0B98: @ 0x085C0B98
+	.globl gBattlePointerTable_Rom_5C0B98
+gBattlePointerTable_Rom_5C0B98: @ 0x085C0B98
 	.4byte gText_Rom_5CA8AC
 	.4byte PlayerPC_ItemStorage
 	.4byte gText_Rom_5CA8B5
@@ -767,8 +767,8 @@ gPlayerPcData_085C0BBC: @ 0x085C0BBC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x00, 0x01, 0x03, 0x00
-	.globl gUnknown_85C0BC0
-gUnknown_85C0BC0: @ 0x085C0BC0
+	.globl gBattlePointerTable_Rom_5C0BC0
+gBattlePointerTable_Rom_5C0BC0: @ 0x085C0BC0
 	.4byte gText_Rom_5CA8C7
 	.4byte ItemStorage_Withdraw
 	.4byte gText_Rom_5CA8BD
@@ -784,8 +784,8 @@ gPlayerPcData_085C0BE0: @ 0x085C0BE0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x000D, 0x0001, 0x0000, 0x0000
-	.globl gUnknown_85C0BE8
-gUnknown_85C0BE8: @ 0x085C0BE8
+	.globl gBattlePointerTable_Rom_5C0BE8
+gBattlePointerTable_Rom_5C0BE8: @ 0x085C0BE8
 	.4byte gText_Rom_5CA959
 	.4byte Mailbox_DoMailRead
 	.4byte gText_Rom_5CA962
@@ -815,8 +815,8 @@ gPlayerPcData_085C0C18: @ 0x085C0C18
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0100, 0x0A01, 0x0F08, 0x0001
-	.globl gUnknown_85C0C20
-gUnknown_85C0C20: @ 0x085C0C20
+	.globl gBattleU32Table_Rom_5C0C20
+gBattleU32Table_Rom_5C0C20: @ 0x085C0C20
 	.4byte ItemStorage_ResumeInputFromYesToss
 	.4byte ItemStorage_ResumeInputFromNoToss
 	@ pret/pokeemerald-jp direct xref for 0x085C0C28: player_pc.s: ItemStorage_RefreshListMenu
@@ -855,8 +855,8 @@ gPlayerPcData_085C0C70: @ 0x085C0C70
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x01, 0x03, 0x02, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085C0C74: credits.s: sub_08176B24; intro.s: LoadCopyrightGraphics
-	.globl gUnknown_85C0C74
-gUnknown_85C0C74: @ 0x085C0C74
+	.globl gBattleU8Table_Rom_5C0C74
+gBattleU8Table_Rom_5C0C74: @ 0x085C0C74
 	@ analyzed canonical ROM range 0x085C0C74-0x085C0C93
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20

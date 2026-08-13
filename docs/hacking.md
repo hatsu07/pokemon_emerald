@@ -269,15 +269,15 @@ Phase 3 で C・JSON・Porymap 連携を目指します。
 
 | 項目 | 内容 |
 |---|---|
-| 元データ | `event_scripts.s` の `gUnknown_81E27F7` incbin ブロック（`0x1e27f7`, `0xaab6`バイト） |
+| 元データ | `event_scripts.s` の `EventScript_JP_081E27F7` incbin ブロック（`0x1e27f7`, `0xaab6`バイト） |
 | 新ファイル | `data/text/littleroot_town.inc` |
 | シンボル | `gText_LittlerootTown_FatMan_*`, `gText_LittlerootTown_Boy_*`, `gText_LittlerootTown_Twin_*` |
 | テキスト参照元 | `PokeEm-expansion-CanuseJP/data/maps/LittlerootTown/scripts.inc` |
 
-`gUnknown_81E27F7` ブロックは以下のように分割済み：
+`EventScript_JP_081E27F7` ブロックは以下のように分割済み：
 
 ```
-gUnknown_81E27F7:  .incbin baserom.gba, 0x1e27f7, 0x1d35  ← 手前
+.incbin baserom.gba, 0x1e27f7, 0x1d35  ← 手前
                    .include "data/text/littleroot_town.inc"    ← テキスト3件
 gText_Rom_1E45F1:  .incbin baserom.gba, 0x1e45f1, 0x8cbc  ← 残り
 ```
@@ -305,8 +305,8 @@ gSpecials: 0x1daf8c, 0x830
 gStdScripts: 0x1db7bc, 0x2c
 0x1db7e8, 0x260b
 EventScript_JP_081DDDF3: 0x1dddf3, 0x4a04
-gUnknown_81E27F7: 0x1e27f7, 0xaab6  ← ミシロタウンNPCを含む
-gUnknown_81ED2AD: 0x1ed2ad, 0x2f0f
+0x1e27f7, 0xaab6  ← ミシロタウンNPCを含む
+gDataBlock_Rom_1ED2AD: 0x1ed2ad, 0x2f0f
 EventScript_JP_081F01BC: 0x1f01bc, 0x32
 EventScript_JP_081F01EE: 0x1f01ee, 0xbb1
 ...
@@ -356,11 +356,9 @@ preproc のバイト出力と ROM のバイト列を比較して一致を確認�
 
 ```
 # 変更前
-gUnknown_81E27F7:
     .incbin "baserom.gba", 0x1e27f7, 0xaab6
 
 # 変更後
-gUnknown_81E27F7:
     .incbin "baserom.gba", 0x1e27f7, 0x1d35   ← テキスト直前まで
     .include "data/text/littleroot_town.inc"       ← テキスト本体
 gText_Rom_1E45F1:
@@ -392,7 +390,7 @@ cat rom_jp.sha1
 | `gText_LittlerootTown_Boy_BirchSpendsDaysInLab` | `0x1e4560` | `0x81E4560` | 92 |
 | `gText_LittlerootTown_Twin_IfYouGoInGrassPokemonWillJumpOut` | `0x1e45bc` | `0x81E45BC` | 53 |
 
-これらは `gUnknown_81E27F7` ブロック（`0x1e27f7`, `0xaab6`バイト）内に連続して配置されている。
+これらは `EventScript_JP_081E27F7` ブロック（`0x1e27f7`, `0xaab6`バイト）内に連続して配置されている。
 
 `data/text/littleroot_town.inc` と `data/event_scripts.s` への分割は **実装済み**。
 

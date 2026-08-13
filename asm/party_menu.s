@@ -4665,7 +4665,7 @@ _081B20B8:
 	bx r0
 	.align 2, 0
 _081B20F0: .4byte 0x085E1188
-_081B20F4: .4byte gUnknown_85D7B04
+_081B20F4: .4byte gCreditsU8Table_Rom_5D7B04
 	thumb_func_end sub_081B206C
 
 	thumb_func_start sub_081B20F8
@@ -5538,7 +5538,7 @@ DisplayPartyPokemonLevel: @ 0x081B27DC
 	.align 2, 0
 _081B281C: .4byte 0x02021C54
 _081B2820: .4byte 0x02021C40
-_081B2824: .4byte gUnknown_85C940E
+_081B2824: .4byte gContestU8Table_Rom_5C940E
 	thumb_func_end DisplayPartyPokemonLevel
 
 	thumb_func_start DisplayPartyPokemonGenderNidoranCheck
@@ -16817,7 +16817,7 @@ _081B82EC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081B82F4: .4byte gUnknown_85DD48E
+_081B82F4: .4byte gBattleU16Table_Rom_5DD48E
 _081B82F8: .4byte 0x0000FFFF
 	thumb_func_end GetBattleEntryEligibility
 

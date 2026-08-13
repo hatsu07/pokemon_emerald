@@ -8,8 +8,8 @@ gText_Rom_5CC350: @ 0x085CC350
 	.endif
 	.globl gText_Rom_5CC356
 	.set gText_Rom_5CC356, gText_Rom_5CC350 + 0x6
-	.globl gUnknown_85CC35A
-gUnknown_85CC35A: @ 0x085CC35A
+	.globl gText_Rom_5CC35A
+gText_Rom_5CC35A: @ 0x085CC35A
 	@ Decoded text from ROM range: offset=0x5CC35A, size=0xD
 	.string "はじめてのでんどういり　$"
 

@@ -45,8 +45,8 @@ gPokemonIconData_0855714C: @ 0x0855714C
 	@ ANALYSIS: RAW_BLOCK size=0x18
 	.2byte 0x0020, 0x0080, 0x0200, 0x0800, 0x0040, 0x0080, 0x0100, 0x0400
 	.2byte 0x0040, 0x0080, 0x0100, 0x0400
-	.globl gUnknown_8557164
-gUnknown_8557164: @ 0x08557164
+	.globl gPokemonRecord_Rom_557164
+gPokemonRecord_Rom_557164: @ 0x08557164
 	.space 0x2, 0xFE
 	@ pret/pokeemerald-jp direct xref for 0x08557166: fldeff_cut.s: SetUpFieldMove_Cut
 	.globl gFldeffCutData_08557166

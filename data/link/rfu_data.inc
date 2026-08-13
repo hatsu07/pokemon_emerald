@@ -9,8 +9,8 @@ gText_Rom_2BFEB4: @ 0x082BFEB4
 	.space 0x4 - (. - gText_Rom_2BFEB4)
 	.endif
 
-	.globl gUnknown_82BFEB8
-gUnknown_82BFEB8: @ 0x082BFEB8
+	.globl gRfuDataBlock_Rom_2BFEB8
+gRfuDataBlock_Rom_2BFEB8: @ 0x082BFEB8
 	@ Unidentified 0x40-byte zero-filled link/RFU data; retained verbatim.
 	.space 0x40, 0x00
 

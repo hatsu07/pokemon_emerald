@@ -350,8 +350,8 @@ gBattleTransitionPhase31_32_33TileIds: @ 0x085A83D8
 	@ tile IDs used by the Phase2_31/32/33 animation routines
 	.2byte 0x0002, 0x0003, 0x0004, 0x0005, 0x0006, 0x0007, 0x0008, 0x0009
 	.2byte 0x000A, 0x000B, 0x000C, 0x000D, 0x000E, 0x000F, 0x0010, 0x0011
-	.globl gUnknown_85A83F8
-gUnknown_85A83F8: @ 0x085A83F8
+	.globl gMapU32Table_Rom_5A83F8
+gMapU32Table_Rom_5A83F8: @ 0x085A83F8
 	.4byte Phase1Task_TransitionAll
 	.4byte Phase1Task_TransitionAll
 	.4byte Phase1Task_TransitionAll
@@ -394,8 +394,8 @@ gUnknown_85A83F8: @ 0x085A83F8
 	.4byte Phase1Task_TransitionAll
 	.4byte Phase1Task_TransitionAll
 	.4byte Phase1Task_TransitionAll
-	.globl gUnknown_85A84A0
-gUnknown_85A84A0: @ 0x085A84A0
+	.globl gMapPointerTable_Rom_5A84A0
+gMapPointerTable_Rom_5A84A0: @ 0x085A84A0
 	.4byte Phase2Task_30
 	.4byte Phase2Task_31
 	.4byte Phase2Task_32
@@ -438,27 +438,27 @@ gUnknown_85A84A0: @ 0x085A84A0
 	.4byte Phase2Task_39
 	.4byte Phase2Task_40
 	.4byte Phase2Task_41
-	.globl gUnknown_85A8548
-gUnknown_85A8548: @ 0x085A8548
+	.globl gMapU32Table_Rom_5A8548
+gMapU32Table_Rom_5A8548: @ 0x085A8548
 	.4byte Transition_Phase1
 	.4byte Transition_WaitForPhase1
 	.4byte Transition_Phase2
 	.4byte Transition_WaitForPhase2
-	.globl gUnknown_85A8558
-gUnknown_85A8558: @ 0x085A8558
+	.globl gMapU32Table_Rom_5A8558
+gMapU32Table_Rom_5A8558: @ 0x085A8558
 	.4byte Phase2_Blur_Func1
 	.4byte Phase2_Blur_Func2
 	.4byte Phase2_Blur_Func3
-	.globl gUnknown_85A8564
-gUnknown_85A8564: @ 0x085A8564
+	.globl gMapU32Table_Rom_5A8564
+gMapU32Table_Rom_5A8564: @ 0x085A8564
 	.4byte Phase2_Swirl_Func1
 	.4byte Phase2_Swirl_Func2
-	.globl gUnknown_85A856C
-gUnknown_85A856C: @ 0x085A856C
+	.globl gMapU32Table_Rom_5A856C
+gMapU32Table_Rom_5A856C: @ 0x085A856C
 	.4byte Phase2_Shuffle_Func1
 	.4byte Phase2_Shuffle_Func2
-	.globl gUnknown_85A8574
-gUnknown_85A8574: @ 0x085A8574
+	.globl gMapU32Table_Rom_5A8574
+gMapU32Table_Rom_5A8574: @ 0x085A8574
 	.4byte Phase2_Aqua_Func1
 	.4byte Phase2_Aqua_Func2
 	.4byte Phase2_BigPokeball_Func3
@@ -466,8 +466,8 @@ gUnknown_85A8574: @ 0x085A8574
 	.4byte Phase2_BigPokeball_Func5
 	.4byte Phase2_FramesCountdown
 	.4byte Phase2_BigPokeball_Func6
-	.globl gUnknown_85A8590
-gUnknown_85A8590: @ 0x085A8590
+	.globl gMapU32Table_Rom_5A8590
+gMapU32Table_Rom_5A8590: @ 0x085A8590
 	.4byte Phase2_Magma_Func1
 	.4byte Phase2_Magma_Func2
 	.4byte Phase2_BigPokeball_Func3
@@ -475,40 +475,40 @@ gUnknown_85A8590: @ 0x085A8590
 	.4byte Phase2_BigPokeball_Func5
 	.4byte Phase2_FramesCountdown
 	.4byte Phase2_BigPokeball_Func6
-	.globl gUnknown_85A85AC
-gUnknown_85A85AC: @ 0x085A85AC
+	.globl gMapU32Table_Rom_5A85AC
+gMapU32Table_Rom_5A85AC: @ 0x085A85AC
 	.4byte Phase2_BigPokeball_Func1
 	.4byte Phase2_BigPokeball_Func2
 	.4byte Phase2_BigPokeball_Func3
 	.4byte Phase2_BigPokeball_Func4
 	.4byte Phase2_BigPokeball_Func5
 	.4byte Phase2_BigPokeball_Func6
-	.globl gUnknown_85A85C4
-gUnknown_85A85C4: @ 0x085A85C4
+	.globl gMapU32Table_Rom_5A85C4
+gMapU32Table_Rom_5A85C4: @ 0x085A85C4
 	.4byte Phase2_Regi_Func1
 	.4byte Phase2_Regice_Func2
 	.4byte Phase2_BigPokeball_Func3
 	.4byte Phase2_BigPokeball_Func4
 	.4byte Phase2_BigPokeball_Func5
 	.4byte Phase2_BigPokeball_Func6
-	.globl gUnknown_85A85DC
-gUnknown_85A85DC: @ 0x085A85DC
+	.globl gMapU32Table_Rom_5A85DC
+gMapU32Table_Rom_5A85DC: @ 0x085A85DC
 	.4byte Phase2_Regi_Func1
 	.4byte Phase2_Registeel_Func2
 	.4byte Phase2_BigPokeball_Func3
 	.4byte Phase2_BigPokeball_Func4
 	.4byte Phase2_BigPokeball_Func5
 	.4byte Phase2_BigPokeball_Func6
-	.globl gUnknown_85A85F4
-gUnknown_85A85F4: @ 0x085A85F4
+	.globl gMapU32Table_Rom_5A85F4
+gMapU32Table_Rom_5A85F4: @ 0x085A85F4
 	.4byte Phase2_Regi_Func1
 	.4byte Phase2_Regirock_Func2
 	.4byte Phase2_BigPokeball_Func3
 	.4byte Phase2_BigPokeball_Func4
 	.4byte Phase2_BigPokeball_Func5
 	.4byte Phase2_BigPokeball_Func6
-	.globl gUnknown_85A860C
-gUnknown_85A860C: @ 0x085A860C
+	.globl gMapU32Table_Rom_5A860C
+gMapU32Table_Rom_5A860C: @ 0x085A860C
 	.4byte Phase2_WeatherTrio_Func1
 	.4byte Phase2_WaitPaletteFade
 	.4byte Phase2_Kyogre_Func3
@@ -517,8 +517,8 @@ gUnknown_85A860C: @ 0x085A860C
 	.4byte Phase2_FramesCountdown
 	.4byte Phase2_WeatherDuo_Func6
 	.4byte Phase2_WeatherDuo_Func7
-	.globl gUnknown_85A862C
-gUnknown_85A862C: @ 0x085A862C
+	.globl gMapU32Table_Rom_5A862C
+gMapU32Table_Rom_5A862C: @ 0x085A862C
 	.4byte Phase2_PokeballsTrail_Func1
 	.4byte Phase2_PokeballsTrail_Func2
 	.4byte Phase2_PokeballsTrail_Func3
@@ -543,8 +543,8 @@ gBattleTransitionData_085A8646: @ 0x085A8646
 gBattleTransitionPokeballFieldEffectDeltas: @ 0x085A8646
 	@ signed movement deltas used by sub_081471FC
 	.byte 0x08, 0x00, 0xF8, 0xFF, 0x00, 0x00
-	.globl gUnknown_85A864C
-gUnknown_85A864C: @ 0x085A864C
+	.globl gMapU32Table_Rom_5A864C
+gMapU32Table_Rom_5A864C: @ 0x085A864C
 	.4byte Phase2_Clockwise_BlackFade_Func1
 	.4byte Phase2_Clockwise_BlackFade_Func2
 	.4byte Phase2_Clockwise_BlackFade_Func3
@@ -552,17 +552,17 @@ gUnknown_85A864C: @ 0x085A864C
 	.4byte Phase2_Clockwise_BlackFade_Func5
 	.4byte Phase2_Clockwise_BlackFade_Func6
 	.4byte Phase2_Clockwise_BlackFade_Func7
-	.globl gUnknown_85A8668
-gUnknown_85A8668: @ 0x085A8668
+	.globl gMapU32Table_Rom_5A8668
+gMapU32Table_Rom_5A8668: @ 0x085A8668
 	.4byte Phase2_Ripple_Func1
 	.4byte Phase2_Ripple_Func2
-	.globl gUnknown_85A8670
-gUnknown_85A8670: @ 0x085A8670
+	.globl gMapU32Table_Rom_5A8670
+gMapU32Table_Rom_5A8670: @ 0x085A8670
 	.4byte Phase2_Wave_Func1
 	.4byte Phase2_Wave_Func2
 	.4byte Phase2_Wave_Func3
-	.globl gUnknown_85A867C
-gUnknown_85A867C: @ 0x085A867C
+	.globl gMapU32Table_Rom_5A867C
+gMapU32Table_Rom_5A867C: @ 0x085A867C
 	.4byte Phase2_Mugshot_Func1
 	.4byte Phase2_Mugshot_Func2
 	.4byte Phase2_Mugshot_Func3
@@ -596,8 +596,8 @@ gBattleTransitionMugshotSpriteOffsetValues: @ 0x085A86BE
 	@ sprite position offsets used while creating the mugshot opponent/player sprites
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0xFFFC, 0x0004, 0x0000, 0x0005
 	.2byte 0xFFF8, 0x0007, 0x0000
-	.globl gUnknown_85A86D4
-gUnknown_85A86D4: @ 0x085A86D4
+	.globl gMapPointerTable_Rom_5A86D4
+gMapPointerTable_Rom_5A86D4: @ 0x085A86D4
 	.4byte sub_08148468
 	.4byte sub_0814846C
 	.4byte sub_081484B8
@@ -605,8 +605,8 @@ gUnknown_85A86D4: @ 0x085A86D4
 	.4byte sub_08148468
 	.4byte sub_08148518
 	.4byte sub_08148468
-	.globl gUnknown_85A86F0
-gUnknown_85A86F0: @ 0x085A86F0
+	.globl gText_Rom_5A86F0
+gText_Rom_5A86F0: @ 0x085A86F0
 	@ Decoded text from ROM range: offset=0x5A86F0, size=0x4
 	.string "し　ä$"
 	@ pret/pokeemerald-jp direct xref for 0x085A86F4: battle_transition.s: sub_0814846C
@@ -616,13 +616,13 @@ gBattleTransitionData_085A86F4: @ 0x085A86F4
 gBattleTransitionMugshotSpriteVelocityPairs: @ 0x085A86F4
 	@ signed velocity pair table used by sub_0814846C
 	.byte 0xFF, 0xFF, 0x01, 0x00
-	.globl gUnknown_85A86F8
-gUnknown_85A86F8: @ 0x085A86F8
+	.globl gMapU32Table_Rom_5A86F8
+gMapU32Table_Rom_5A86F8: @ 0x085A86F8
 	.4byte Phase2_Slice_Func1
 	.4byte Phase2_Slice_Func2
 	.4byte Phase2_Slice_Func3
-	.globl gUnknown_85A8704
-gUnknown_85A8704: @ 0x085A8704
+	.globl gMapU32Table_Rom_5A8704
+gMapU32Table_Rom_5A8704: @ 0x085A8704
 	.4byte Phase2_ShredSplit_Func1
 	.4byte Phase2_ShredSplit_Func2
 	.4byte Phase2_ShredSplit_Func3
@@ -641,13 +641,13 @@ gBattleTransitionData_085A8716: @ 0x085A8716
 gBattleTransitionShredSplitScanlineDeltas: @ 0x085A8716
 	@ signed scanline deltas used by Phase2_ShredSplit_Func2
 	.byte 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.globl gUnknown_85A871C
-gUnknown_85A871C: @ 0x085A871C
+	.globl gMapU32Table_Rom_5A871C
+gMapU32Table_Rom_5A871C: @ 0x085A871C
 	.4byte Phase2_Blackhole_Func1
 	.4byte Phase2_Blackhole1_Func2
 	.4byte Phase2_Blackhole1_Func3
-	.globl gUnknown_85A8728
-gUnknown_85A8728: @ 0x085A8728
+	.globl gMapU32Table_Rom_5A8728
+gMapU32Table_Rom_5A8728: @ 0x085A8728
 	.4byte Phase2_Blackhole_Func1
 	.4byte Phase2_Blackhole2_Func2
 	@ pret/pokeemerald-jp direct xref for 0x085A8730: battle_transition.s: Phase2_Blackhole1_Func2
@@ -687,8 +687,8 @@ gBattleTransitionRectangularSpiralDataLists: @ 0x085A87E8
 	@ pointer/nullable table
 	.4byte 0x085A87A8 @ +0x0
 	.4byte 0x085A87C8 @ +0x4
-	.globl gUnknown_85A87F0
-gUnknown_85A87F0: @ 0x085A87F0
+	.globl gMapU32Table_Rom_5A87F0
+gMapU32Table_Rom_5A87F0: @ 0x085A87F0
 	.4byte Phase2_WeatherTrio_Func1
 	.4byte Phase2_WaitPaletteFade
 	.4byte Phase2_Groudon_Func3
@@ -697,8 +697,8 @@ gUnknown_85A87F0: @ 0x085A87F0
 	.4byte Phase2_FramesCountdown
 	.4byte Phase2_WeatherDuo_Func6
 	.4byte Phase2_WeatherDuo_Func7
-	.globl gUnknown_85A8810
-gUnknown_85A8810: @ 0x085A8810
+	.globl gMapU32Table_Rom_5A8810
+gMapU32Table_Rom_5A8810: @ 0x085A8810
 	.4byte Phase2_WeatherTrio_Func1
 	.4byte Phase2_WaitPaletteFade
 	.4byte Phase2_Rayquaza_Func3
@@ -710,8 +710,8 @@ gUnknown_85A8810: @ 0x085A8810
 	.4byte Phase2_Rayquaza_Func9
 	.4byte Phase2_Blackhole1_Func2
 	.4byte Phase2_Blackhole1_Func3
-	.globl gUnknown_85A883C
-gUnknown_85A883C: @ 0x085A883C
+	.globl gMapU32Table_Rom_5A883C
+gMapU32Table_Rom_5A883C: @ 0x085A883C
 	.4byte Phase2_WhiteFade_Func1
 	.4byte Phase2_WhiteFade_Func2
 	.4byte Phase2_WhiteFade_Func3
@@ -724,13 +724,13 @@ gBattleTransitionData_085A8850: @ 0x085A8850
 gBattleTransitionWhiteFadeBlendSteps: @ 0x085A8850
 	@ blend step table used by Phase2_WhiteFade_Func2
 	.2byte 0x0000, 0x0014, 0x000F, 0x0028, 0x000A, 0x0019, 0x0023, 0x0005
-	.globl gUnknown_85A8860
-gUnknown_85A8860: @ 0x085A8860
+	.globl gMapU32Table_Rom_5A8860
+gMapU32Table_Rom_5A8860: @ 0x085A8860
 	.4byte Phase2_GridSquares_Func1
 	.4byte Phase2_GridSquares_Func2
 	.4byte Phase2_GridSquares_Func3
-	.globl gUnknown_85A886C
-gUnknown_85A886C: @ 0x085A886C
+	.globl gMapU32Table_Rom_5A886C
+gMapU32Table_Rom_5A886C: @ 0x085A886C
 	.4byte Phase2_Shards_Func1
 	.4byte Phase2_Shards_Func2
 	.4byte Phase2_Shards_Func3
@@ -1013,35 +1013,35 @@ gBattleTransitionMugshotTilemap: @ 0x085A8F80
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0800, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
-	.globl gUnknown_85A9480
-gUnknown_85A9480: @ 0x085A9480
+	.globl gMapU32Table_Rom_5A9480
+gMapU32Table_Rom_5A9480: @ 0x085A9480
 	.4byte Phase2_29_Func1
 	.4byte Phase2_29_Func2
 	.4byte Phase2_BigPokeball_Func3
 	.4byte Phase2_BigPokeball_Func4
 	.4byte Phase2_BigPokeball_Func5
 	.4byte Phase2_BigPokeball_Func6
-	.globl gUnknown_85A9498
-gUnknown_85A9498: @ 0x085A9498
+	.globl gMapU32Table_Rom_5A9498
+gMapU32Table_Rom_5A9498: @ 0x085A9498
 	.4byte Phase2_30_Func1
 	.4byte Phase2_30_Func2
 	.4byte Phase2_30_Func3
 	.4byte Phase2_30_Func4
-	.globl gUnknown_85A94A8
-gUnknown_85A94A8: @ 0x085A94A8
+	.globl gMapU32Table_Rom_5A94A8
+gMapU32Table_Rom_5A94A8: @ 0x085A94A8
 	.4byte Phase2_31_Func1
 	.4byte Phase2_31_Func2
 	.4byte Phase2_31_Func3
 	.4byte Phase2_31_33_Func5
-	.globl gUnknown_85A94B8
-gUnknown_85A94B8: @ 0x085A94B8
+	.globl gMapU32Table_Rom_5A94B8
+gMapU32Table_Rom_5A94B8: @ 0x085A94B8
 	.4byte Phase2_33_Func1
 	.4byte Phase2_33_Func2
 	.4byte Phase2_33_Func3
 	.4byte Phase2_33_Func4
 	.4byte Phase2_31_33_Func5
-	.globl gUnknown_85A94CC
-gUnknown_85A94CC: @ 0x085A94CC
+	.globl gMapU32Table_Rom_5A94CC
+gMapU32Table_Rom_5A94CC: @ 0x085A94CC
 	.4byte Phase2_32_Func1
 	.4byte Phase2_32_Func2
 	.4byte Phase2_32_Func3

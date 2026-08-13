@@ -1,5 +1,5 @@
-	.globl gUnknown_85D79F4
-gUnknown_85D79F4: @ 0x085D79F4
+	.globl gCreditsPointerTable_Rom_5D79F4
+gCreditsPointerTable_Rom_5D79F4: @ 0x085D79F4
 	.4byte LoadMatchCallWindowGfx
 	.4byte MoveMatchCallWindowToVram
 	.4byte PrintMatchCallIntroEllipsis
@@ -48,8 +48,8 @@ gMatchCallData_085D7A54: @ 0x085D7A54
 	.byte 0x82, 0x02, 0x00, 0x00, 0x40, 0x7A, 0x5D, 0x08, 0xE1, 0x01, 0x00, 0x00, 0x43, 0x7A, 0x5D, 0x08
 	.byte 0xA9, 0x02, 0x00, 0x00, 0x46, 0x7A, 0x5D, 0x08, 0xAF, 0x02, 0x00, 0x00, 0x49, 0x7A, 0x5D, 0x08
 	.byte 0x33, 0x00, 0x00, 0x00, 0x4C, 0x7A, 0x5D, 0x08, 0x1F, 0x01, 0x00, 0x00, 0x4F, 0x7A, 0x5D, 0x08
-	.globl gUnknown_85D7A84
-gUnknown_85D7A84: @ 0x085D7A84
+	.globl gCreditsPointerTable_Rom_5D7A84
+gCreditsPointerTable_Rom_5D7A84: @ 0x085D7A84
 	.4byte gText_Rom_5CC423
 	.4byte gText_Rom_5CC42A
 	.4byte gText_Rom_5CC431
@@ -68,8 +68,8 @@ sPointerTable_085D7AA0:
 	.4byte 0x086A0869 @ +0x4
 	.4byte 0x086C086B @ +0x8
 	.4byte 0x086E086D @ +0xC
-	.globl gUnknown_85D7AB0
-gUnknown_85D7AB0: @ 0x085D7AB0
+	.globl gCreditsPointerTable_Rom_5D7AB0
+gCreditsPointerTable_Rom_5D7AB0: @ 0x085D7AB0
 	.4byte gText_Rom_262E5F
 	.4byte gText_Rom_262E81
 	.4byte gText_Rom_262EA6
@@ -92,8 +92,8 @@ gUnknown_85D7AB0: @ 0x085D7AB0
 	.4byte gText_Rom_26312D
 	.4byte gText_Rom_26314F
 	@ pret/pokeemerald-jp direct xref for 0x085D7B04: battle_pyramid_bag.s: sub_081C63F0; diploma.s: InitClearSaveDataScreenWindows; item_menu.s: SetupBagMenu_Textboxes; link.s: CB2_LinkError; menu.s: Menu_LoadStdPalAt, sub_08197680, sub_081976AC, sub_081976B4; menu_specialized.s: InitMoveR...
-	.globl gUnknown_85D7B04
-gUnknown_85D7B04: @ 0x085D7B04
+	.globl gCreditsU8Table_Rom_5D7B04
+gCreditsU8Table_Rom_5D7B04: @ 0x085D7B04
 	@ analyzed canonical ROM range 0x085D7B04-0x085D7B23
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20

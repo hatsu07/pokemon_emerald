@@ -29,8 +29,8 @@ gBerryCrushData_082C5EA8: @ 0x082C5EA8
 	@ ANALYSIS: RAW_BLOCK size=0x14
 	.2byte 0x0203, 0x0001, 0x0303, 0x0001, 0x0303, 0x0002, 0x0403, 0x0002
 	.2byte 0x0503, 0x0003
-	.globl gUnknown_82C5EBC
-gUnknown_82C5EBC: @ 0x082C5EBC
+	.globl gBerryCrushPointerTable_Rom_2C5EBC
+gBerryCrushPointerTable_Rom_2C5EBC: @ 0x082C5EBC
 	.4byte gText_Rom_5CC8A0
 	.4byte gText_Rom_5CC8C4
 	.4byte gText_Rom_5CC8E4
@@ -541,8 +541,8 @@ gBerryCrushData_082C7A1C: @ 0x082C7A1C
 	.byte 0xE4, 0xFF, 0xFC, 0xFF, 0xE8, 0xFF, 0x10, 0x00, 0x02, 0x00, 0x06, 0x00, 0xF0, 0xFF, 0x14, 0x00
 	.byte 0xF8, 0xFF, 0x10, 0x00, 0x03, 0x14, 0x03, 0x00, 0x1C, 0x00, 0xFC, 0xFF, 0x20, 0x00, 0xF8, 0xFF
 	.byte 0x04, 0x14, 0x06, 0x00, 0x10, 0x00, 0x14, 0x00, 0x10, 0x00, 0xF8, 0xFF
-	.globl gUnknown_82C7A58
-gUnknown_82C7A58: @ 0x082C7A58
+	.globl gBerryCrushRecord_Rom_2C7A58
+gBerryCrushRecord_Rom_2C7A58: @ 0x082C7A58
 	.space 0x1, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x082C7A59: berry_crush.s: sub_08021410
 	.globl gBerryCrushData_082C7A59
@@ -551,8 +551,8 @@ gBerryCrushData_082C7A59: @ 0x082C7A59
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x5
 	.byte 0x00, 0xFF, 0x00, 0x01, 0x01
-	.globl gUnknown_82C7A5E
-gUnknown_82C7A5E: @ 0x082C7A5E
+	.globl gBerryCrushRecord_Rom_2C7A5E
+gBerryCrushRecord_Rom_2C7A5E: @ 0x082C7A5E
 	.space 0x1, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x082C7A5F: berry_crush.s: sub_08021410
 	.globl gBerryCrushData_082C7A5F
@@ -651,8 +651,8 @@ gBerryCrushData_082C7C40: @ 0x082C7C40
 	@ analyzed canonical ROM range 0x082C7C40-0x082C7C57
 sSpriteTemplate_082C7C40: @ 0x082C7C40
 	rodata_sprite_template 0xC9DC, 0x085C, 0x085CC9E0, 0x085CC9E8, 0x085CCA4C, gText_Rom_5CCA58, gText_Rom_5CCA64
-	.globl gUnknown_82C7C58
-gUnknown_82C7C58: @ 0x082C7C58
+	.globl gBerryCrushPointerTable_Rom_2C7C58
+gBerryCrushPointerTable_Rom_2C7C58: @ 0x082C7C58
 	.4byte NULL
 	.4byte sub_080229BC
 	.4byte sub_08022A14

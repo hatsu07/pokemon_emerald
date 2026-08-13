@@ -47,16 +47,15 @@ gText_Rom_5AB3AD: @ 0x085AB3AD
 	@ pret/pokeemerald-jp direct xref for 0x085AB3BD: battle_main.s: BattleTurnPassed, TryDoEventsBeforeFirstTurn
 	.globl gBattleMainData_085AB3BD
 gBattleMainData_085AB3BD:
-	.globl gUnknown_85AB3BD
-gUnknown_85AB3BD: @ 0x085AB3BD
+	.globl gBattleMainData_085AB3BD
 	@ analyzed canonical ROM range 0x085AB3BD-0x085AB3DB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x1F
 	.byte 0x00, 0xFF, 0x0A, 0x0A, 0x44, 0x00, 0x9A, 0xAE, 0x79, 0x2D, 0x00, 0x15, 0x3A, 0x29, 0x2E, 0x41
 	.byte 0x18, 0xFE, 0x4A, 0x08, 0xB0, 0xB0, 0x00, 0x24, 0x50, 0x13, 0x20, 0x29, 0x26, 0xAB, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085AB3DC: battle_message.s: BufferStringBattle, ExpandBattleTextBuffPlaceholders; evolution_scene.s: Task_EvolutionScene, Task_TradeEvolutionScene
-	.globl gUnknown_85AB3DC
-gUnknown_85AB3DC: @ 0x085AB3DC
+	.globl gBattlePointerTable_Rom_5AB3DC
+gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	@ analyzed canonical ROM range 0x085AB3DC-0x085AB99F
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x10
@@ -160,9 +159,9 @@ gUnknown_85AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5A9CD5 @ +0x148
 	.4byte gText_Rom_5A9CE9 @ +0x14C
 	.4byte gText_Rom_5A9CFB @ +0x150
-	.4byte gUnknown_85A9D15 @ +0x154
+	.4byte gPokemonData_085A9D15 @ +0x154
 	.4byte gText_Rom_5A9D26 @ +0x158
-	.4byte gUnknown_85A9D39 @ +0x15C
+	.4byte gPokemonData_085A9D39 @ +0x15C
 	.4byte gText_Rom_5A9D46 @ +0x160
 	.4byte gText_Rom_5A9D5B @ +0x164
 	.4byte gText_Rom_5A9D70 @ +0x168
@@ -304,7 +303,7 @@ gUnknown_85AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5AA883 @ +0x320
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x085AA889 @ +0x324
-	.4byte gUnknown_85AA894 @ +0x328
+	.4byte gPokemonData_085AA894 @ +0x328
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x085AA8AE @ +0x32C
 	.4byte 0x085AA8B9 @ +0x330
@@ -406,7 +405,7 @@ gUnknown_85AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5AB382 @ +0x484
 	.4byte gText_Rom_5AB393 @ +0x488
 	.4byte gText_Rom_5AB3AD @ +0x48C
-	.4byte gUnknown_85AB3BD @ +0x490
+	.4byte gBattleMainData_085AB3BD @ +0x490
 	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.4byte 0x085AA6ED @ +0x494
 	.4byte 0x085AA6FD @ +0x498
@@ -426,7 +425,7 @@ gUnknown_85AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5AA933 @ +0x4CC
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x085AA46C @ +0x4D0
-	.4byte gUnknown_85AAD22 @ +0x4D4
+	.4byte gBattleMessageData_085AAD22 @ +0x4D4
 	.4byte gText_Rom_5AA47C @ +0x4D8
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.4byte 0x085AA48E @ +0x4DC
@@ -479,7 +478,7 @@ gUnknown_85AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5AA50B @ +0x574
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x085AA85D @ +0x578
-	.4byte gUnknown_85ABE2F @ +0x57C
+	.4byte gBattleMessageData_085ABE2F @ +0x57C
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0x085ABE4D @ +0x580
 	.4byte gText_Rom_5ABE50 @ +0x584

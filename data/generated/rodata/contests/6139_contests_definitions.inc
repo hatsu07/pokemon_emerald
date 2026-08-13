@@ -1,2 +1,1 @@
-	.globl gUnknown_85CC49D
-	.set gUnknown_85CC49D, gText_Rom_5CC497 + 0x6
+	.globl gText_Rom_5CC49D

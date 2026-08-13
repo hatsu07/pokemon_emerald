@@ -5259,7 +5259,7 @@ _08039160:
 	bl BattleCreateYesNoCursorAt
 	b _0803939E
 	.align 2, 0
-_08039184: .4byte gUnknown_85ABBC9
+_08039184: .4byte gBattleU8Table_Rom_5ABBC9
 _08039188: .4byte 0x02023FD6
 _0803918C:
 	ldr r0, _080391B0
@@ -5865,7 +5865,7 @@ _08039628:
 	b _08039664
 	.align 2, 0
 _08039640: .4byte 0x00000181
-_08039644: .4byte gUnknown_84FE684
+_08039644: .4byte gMenuU16Table_Rom_4FE684
 _08039648: .4byte 0x02024188
 _0803964C:
 	movs r0, #0xce

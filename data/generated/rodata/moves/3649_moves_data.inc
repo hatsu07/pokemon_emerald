@@ -49,8 +49,8 @@ gRoamerData_085ADB74: @ 0x085ADB74
 	.byte 0x2E, 0x2D, 0x2F, 0xFF, 0xFF, 0xFF, 0x2F, 0x2E, 0x30, 0xFF, 0xFF, 0xFF, 0x30, 0x2F, 0x31, 0xFF
 	.byte 0xFF, 0xFF, 0x31, 0x30, 0x19, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085ADBF4: battle_dome.s: CreateDomeOpponentMon; battle_factory.s: FillFactoryBrainParty, GenerateInitialRentalMons, GenerateOpponentMons, RestorePlayerPartyHeldItems, SetPlayerAndOpponentParties (+1 more); battle_factory_screen.s: CreateFrontierFa...
-	.globl gUnknown_85ADBF4
-gUnknown_85ADBF4: @ 0x085ADBF4
+	.globl gMoveU8Table_Rom_5ADBF4
+gMoveU8Table_Rom_5ADBF4: @ 0x085ADBF4
 	@ analyzed canonical ROM range 0x085ADBF4-0x085B0BE8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2FF5

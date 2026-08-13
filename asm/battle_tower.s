@@ -954,8 +954,8 @@ _081625E0:
 _081625F8: .4byte 0x085DC21C
 _081625FC: .4byte 0x03005AF0
 _08162600: .4byte 0xFFFFFE70
-_08162604: .4byte gUnknown_85BBE20
-_08162608: .4byte gUnknown_85BBE52
+_08162604: .4byte gBattleU16Table_Rom_5BBE20
+_08162608: .4byte gBattleU16Table_Rom_5BBE52
 _0816260C:
 	movs r1, #0
 	ldr r3, _08162644
@@ -987,8 +987,8 @@ _0816263A:
 	bl VarSet
 	b _08162694
 	.align 2, 0
-_08162644: .4byte gUnknown_85BBE3E
-_08162648: .4byte gUnknown_85BBE70
+_08162644: .4byte gBattleU16Table_Rom_5BBE3E
+_08162648: .4byte gBattleU16Table_Rom_5BBE70
 _0816264C: .4byte 0x00004010
 _08162650:
 	ldr r0, _08162658
@@ -1138,8 +1138,8 @@ _08162754:
 _0816275C: .4byte 0x085DC21C
 _08162760: .4byte 0x03005AF0
 _08162764: .4byte 0xFFFFFE70
-_08162768: .4byte gUnknown_85BBE20
-_0816276C: .4byte gUnknown_85BBE52
+_08162768: .4byte gBattleU16Table_Rom_5BBE20
+_0816276C: .4byte gBattleU16Table_Rom_5BBE52
 _08162770:
 	movs r1, #0
 	ldr r3, _08162790
@@ -1160,7 +1160,7 @@ _08162788:
 	movs r0, #7
 	b _0816279A
 	.align 2, 0
-_08162790: .4byte gUnknown_85BBE3E
+_08162790: .4byte gBattleU16Table_Rom_5BBE3E
 _08162794:
 	ldr r0, _081627A0
 _08162796:
@@ -1171,7 +1171,7 @@ _0816279A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081627A0: .4byte gUnknown_85BBE70
+_081627A0: .4byte gBattleU16Table_Rom_5BBE70
 	thumb_func_end GetBattleFacilityTrainerGfxId
 
 	thumb_func_start PutNewBattleTowerRecord
@@ -2157,7 +2157,7 @@ _08162F48:
 _08162F50: .4byte 0x085DC21C
 _08162F54: .4byte 0x03005AF0
 _08162F58: .4byte 0xFFFFFE70
-_08162F5C: .4byte gUnknown_85BBE3E
+_08162F5C: .4byte gBattleU16Table_Rom_5BBE3E
 _08162F60:
 	movs r0, #1
 _08162F62:
@@ -2674,7 +2674,7 @@ _08163346:
 	.align 2, 0
 _08163358: .4byte 0x020243E8
 _0816335C: .4byte 0x0203B958
-_08163360: .4byte gUnknown_85ADBF4
+_08163360: .4byte gMoveU8Table_Rom_5ADBF4
 	thumb_func_end FillTrainerParty
 
 	thumb_func_start Unused_CreateApprenticeMons
@@ -3103,7 +3103,7 @@ _081636A8: .4byte 0x03005AF0
 _081636AC: .4byte 0x03005FD8
 _081636B0: .4byte 0x020243E8
 _081636B4: .4byte 0x0203B958
-_081636B8: .4byte gUnknown_85ADBF4
+_081636B8: .4byte gMoveU8Table_Rom_5ADBF4
 	thumb_func_end FillFactoryFrontierTrainerParty
 
 	thumb_func_start FillFactoryTentTrainerParty
@@ -3237,7 +3237,7 @@ _081637B8: .4byte 0x03005AF0
 _081637BC: .4byte 0x03005FD8
 _081637C0: .4byte 0x020243E8
 _081637C4: .4byte 0x0203B958
-_081637C8: .4byte gUnknown_85ADBF4
+_081637C8: .4byte gMoveU8Table_Rom_5ADBF4
 	thumb_func_end FillFactoryTentTrainerParty
 
 	thumb_func_start FrontierSpeechToString
@@ -4005,7 +4005,7 @@ _08163E54: .4byte 0x03005AF0
 _08163E58: .4byte 0x0000064C
 _08163E5C: .4byte 0x00000CA9
 _08163E60: .4byte 0x000040CE
-_08163E64: .4byte gUnknown_85BBE3E
+_08163E64: .4byte gBattleU16Table_Rom_5BBE3E
 _08163E68:
 	ldr r4, _08163F44
 	ldrb r0, [r2, #0xa]
@@ -4115,7 +4115,7 @@ _08163F1C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08163F44: .4byte gUnknown_85BBE20
+_08163F44: .4byte gBattleU16Table_Rom_5BBE20
 _08163F48: .4byte 0x03005AF0
 _08163F4C: .4byte 0x03005AEC
 _08163F50: .4byte 0x00002BBC
@@ -6201,7 +6201,7 @@ FillEReaderTrainerWithPlayerData: @ 0x08164FD8
 	.align 2, 0
 _08165004: .4byte 0x03005AF0
 _08165008: .4byte 0x00000BEC
-_0816500C: .4byte gUnknown_85BBE3E
+_0816500C: .4byte gBattleU16Table_Rom_5BBE3E
 _08165010:
 	ldr r4, _081650B0
 	ldrb r0, [r2, #0xa]
@@ -6281,7 +6281,7 @@ _08165082:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081650B0: .4byte gUnknown_85BBE20
+_081650B0: .4byte gBattleU16Table_Rom_5BBE20
 _081650B4: .4byte 0x03005AEC
 _081650B8: .4byte 0x00002BBC
 _081650BC: .4byte 0x02024190
@@ -6881,7 +6881,7 @@ _0816554C: .4byte 0x03005AF0
 _08165550: .4byte 0x00000CB4
 _08165554: .4byte 0x020242BC
 _08165558: .4byte 0x0203B958
-_0816555C: .4byte gUnknown_85ADBF4
+_0816555C: .4byte gMoveU8Table_Rom_5ADBF4
 _08165560: .4byte 0x0203B954
 _08165564:
 	ldr r0, _08165624
@@ -7567,9 +7567,9 @@ SetFacilityPtrsGetLevel: @ 0x08165A4C
 _08165A78: .4byte 0x03005AF0
 _08165A7C: .4byte 0x00000CA9
 _08165A80: .4byte 0x0203B954
-_08165A84: .4byte gUnknown_85B4A10
+_08165A84: .4byte gMoveU8Table_Rom_5B4A10
 _08165A88: .4byte 0x0203B958
-_08165A8C: .4byte gUnknown_85B8700
+_08165A8C: .4byte gBattleU16Table_Rom_5B8700
 _08165A90:
 	bl SetTentPtrsGetLevel
 _08165A94:
@@ -7730,9 +7730,9 @@ SetTentPtrsGetLevel: @ 0x08165B84
 	.align 2, 0
 _08165BA0: .4byte 0x000040CF
 _08165BA4: .4byte 0x0203B954
-_08165BA8: .4byte gUnknown_85BC958
+_08165BA8: .4byte gBattleU16Table_Rom_5BC958
 _08165BAC: .4byte 0x0203B958
-_08165BB0: .4byte gUnknown_85BCF70
+_08165BB0: .4byte gBattleU16Table_Rom_5BCF70
 _08165BB4:
 	cmp r0, #2
 	bne _08165BD4
@@ -7780,9 +7780,9 @@ _08165C0E:
 	bx r1
 	.align 2, 0
 _08165C14: .4byte 0x0203B954
-_08165C18: .4byte gUnknown_85B4A10
+_08165C18: .4byte gMoveU8Table_Rom_5B4A10
 _08165C1C: .4byte 0x0203B958
-_08165C20: .4byte gUnknown_85B8700
+_08165C20: .4byte gBattleU16Table_Rom_5B8700
 	thumb_func_end SetTentPtrsGetLevel
 
 	thumb_func_start sub_08165C24
@@ -8122,7 +8122,7 @@ _08165EA6:
 	.align 2, 0
 _08165EB8: .4byte 0x020243E8
 _08165EBC: .4byte 0x0203B958
-_08165EC0: .4byte gUnknown_85ADBF4
+_08165EC0: .4byte gMoveU8Table_Rom_5ADBF4
 	thumb_func_end FillTentTrainerParty_
 
 	thumb_func_start FacilityClassToGraphicsId
@@ -8151,8 +8151,8 @@ _08165EE6:
 	ldr r0, _08165EF4
 	b _08165F22
 	.align 2, 0
-_08165EF0: .4byte gUnknown_85BBE20
-_08165EF4: .4byte gUnknown_85BBE52
+_08165EF0: .4byte gBattleU16Table_Rom_5BBE20
+_08165EF4: .4byte gBattleU16Table_Rom_5BBE52
 _08165EF8:
 	movs r1, #0
 	ldr r3, _08165F1C
@@ -8175,7 +8175,7 @@ _08165F14:
 	movs r0, #7
 	b _08165F26
 	.align 2, 0
-_08165F1C: .4byte gUnknown_85BBE3E
+_08165F1C: .4byte gBattleU16Table_Rom_5BBE3E
 _08165F20:
 	ldr r0, _08165F2C
 _08165F22:
@@ -8185,7 +8185,7 @@ _08165F26:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08165F2C: .4byte gUnknown_85BBE70
+_08165F2C: .4byte gBattleU16Table_Rom_5BBE70
 	thumb_func_end FacilityClassToGraphicsId
 
 	thumb_func_start ValidateBattleTowerRecord

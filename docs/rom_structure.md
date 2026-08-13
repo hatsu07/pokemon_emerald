@@ -49,10 +49,10 @@
 | `gStdScripts` | `0x1db7bc` | `0x2c` | `0x81DB7BC` | 不明 | 小ブロック |
 | `PetalburgCity_MapScripts` | `0x1db7e8` | `0x260b` | `0x81DB7E8` | 不明 | 中ブロック |
 | `EventScript_JP_081DDDF3` | `0x1dddf3` | `0x4a04` | `0x81DDDF3` | 不明 | 大ブロック |
-| `gUnknown_81E27F7` | `0x1e27f7` | `0x1d35` | `0x81E27F7` | 一部 | **テキスト化済み**（ミシロタウンNPC3件） |
+| `EventScript_JP_081E27F7` | `0x1e27f7` | `0x1d35` | `0x81E27F7` | 一部 | **テキスト化済み**（ミシロタウンNPC3件） |
 | テキストインクルード | — | — | — | はい | `data/text/littleroot_town.inc` |
 | `gText_Rom_1E45F1` | `0x1e45f1` | `0x8cbc` | `0x81E45F1` | 不明 | 大ブロック |
-| `gUnknown_81ED2AD` | `0x1ed2ad` | `0x2f0f` | `0x81ED2AD` | 不明 | 中ブロック |
+| `gDataBlock_Rom_1ED2AD` | `0x1ed2ad` | `0x2f0f` | `0x81ED2AD` | 不明 | 中ブロック |
 | `EventScript_JP_081F01BC` | `0x1f01bc` | `0x32` | `0x81F01BC` | 不明 | 小ブロック |
 | `EventScript_JP_081F01EE` | `0x1f01ee` | `0xbb1` | `0x81F01EE` | 不明 | 中ブロック |
 | `EventScript_JP_081F0D9F` | `0x1f0d9f` | `0x3c` | `0x81F0D9F` | 不明 | 小ブロック |
@@ -62,17 +62,17 @@
 | `gText_BirchLab_LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational` | `0x1f217c` | `0x20894` | `0x81F217C` | 不明 | ⭐最大ブロック（133.3KB） |
 | `EventScript_JP_08202410` | `0x202410` | `0xb672` | `0x8202410` | 不明 | 大ブロック（46.7KB） |
 | `EventScript_JP_0820DA82` | `0x20da82` | `0xf` | `0x820DA82` | 不明 | 小ブロック |
-| `gUnknown_820DA91` | `0x20da91` | `0xe` | `0x820DA91` | 不明 | 小ブロック |
+| `EventScriptData_JP_0820DA91` | `0x20da91` | `0xe` | `0x820DA91` | 不明 | 小ブロック |
 | `EventScript_JP_0820DA9F` | `0x20da9f` | `0xdd55` | `0x820DA9F` | 不明 | 大ブロック（56.6KB） |
-| `gUnknown_821B7F4` | `0x21b7f4` | `0x54a` | `0x821B7F4` | 不明 | 中ブロック |
-| `gUnknown_821BD3E` | `0x21bd3e` | `0x166c` | `0x821BD3E` | 不明 | 中ブロック |
-| `gUnknown_821D3AA` | `0x21d3aa` | `0x2d` | `0x821D3AA` | 不明 | 小ブロック |
-| `gUnknown_821D3D7` | `0x21d3d7` | `0xa1` | `0x821D3D7` | 不明 | 小ブロック |
-| `gUnknown_821D478` | `0x21d478` | `0x60` | `0x821D478` | 不明 | 小ブロック |
-| `gUnknown_821D4D8` | `0x21d4d8` | `0x9b` | `0x821D4D8` | 不明 | 小ブロック |
-| `gUnknown_821D573` | `0x21d573` | `0x8` | `0x821D573` | 不明 | 小ブロック |
-| `gUnknown_821D57B` | `0x21d57b` | `0x94c` | `0x821D57B` | 不明 | 中ブロック |
-| `gUnknown_821DEC7` | `0x21dec7` | `0x45b7` | `0x821DEC7` | 不明 | 大ブロック（17.8KB） |
+| `EventScriptData_JP_0821B7F4` | `0x21b7f4` | `0x54a` | `0x821B7F4` | 不明 | 中ブロック |
+| `EventScriptData_JP_0821BD3E` | `0x21bd3e` | `0x166c` | `0x821BD3E` | 不明 | 中ブロック |
+| `EventScriptData_JP_0821D3AA` | `0x21d3aa` | `0x2d` | `0x821D3AA` | 不明 | 小ブロック |
+| `EventScriptData_JP_0821D3D7` | `0x21d3d7` | `0xa1` | `0x821D3D7` | 不明 | 小ブロック |
+| `EventScriptData_JP_0821D478` | `0x21d478` | `0x60` | `0x821D478` | 不明 | 小ブロック |
+| `EventScriptData_JP_0821D4D8` | `0x21d4d8` | `0x9b` | `0x821D4D8` | 不明 | 小ブロック |
+| `EventScriptData_JP_0821D573` | `0x21d573` | `0x8` | `0x821D573` | 不明 | 小ブロック |
+| `EventScriptData_JP_0821D57B` | `0x21d57b` | `0x94c` | `0x821D57B` | 不明 | 中ブロック |
+| `EventScriptData_JP_0821DEC7` | `0x21dec7` | `0x45b7` | `0x821DEC7` | 不明 | 大ブロック（17.8KB） |
 | `gText_Rom_22247E` | `0x22247e` | `0x61b` | `0x822247E` | 不明 | 中ブロック |
 | `EventScript_JP_08222A99` | `0x222a99` | `0x42ba` | `0x8222A99` | 不明 | 大ブロック（17.1KB） |
 | `gText_Rom_226D53` | `0x226d53` | `0xe` | `0x8226D53` | 不明 | 小ブロック |
@@ -83,22 +83,22 @@
 | `EventScript_JP_0822D751` | `0x22d751` | `0x11` | `0x822D751` | 不明 | 小ブロック |
 | `gText_Rom_22D762` | `0x22d762` | `0x2d` | `0x822D762` | 不明 | 小ブロック |
 | `gText_Rom_22D78F` | `0x22d78f` | `0xde1a` | `0x822D78F` | 不明 | 大ブロック（56.9KB） |
-| `gUnknown_823B5A9` | `0x23b5a9` | `0x1a52` | `0x823B5A9` | 不明 | 中ブロック |
-| `gUnknown_823CFFB` | `0x23cffb` | `0x53f3` | `0x823CFFB` | 不明 | 大ブロック（21.5KB） |
-| `gUnknown_82423EE` ~ | `0x2423ee` | 多数の小ブロック | — | 不明 | 小ブロック群（会話選択肢等） |
-| `gUnknown_824C47B` | `0x24c47b` | `0xa197` | `0x824C47B` | 不明 | 大ブロック（41.4KB） |
+| `EventScriptData_JP_0823B5A9` | `0x23b5a9` | `0x1a52` | `0x823B5A9` | 不明 | 中ブロック |
+| `EventScriptData_JP_0823CFFB` | `0x23cffb` | `0x53f3` | `0x823CFFB` | 不明 | 大ブロック（21.5KB） |
+| `EventScriptData_JP_082423EE` ~ | `0x2423ee` | 多数の小ブロック | — | 不明 | 小ブロック群（会話選択肢等） |
+| `EventScriptData_JP_0824C47B` | `0x24c47b` | `0xa197` | `0x824C47B` | 不明 | 大ブロック（41.4KB） |
 | `EventScript_JP_08256612` ~ | `0x256612` | 中ブロック群 | — | 不明 | 中ブロック群 |
 | `gText_Rom_25941F` | `0x25941f` | `0x8f74` | `0x825941F` | 不明 | 大ブロック（36.7KB） |
 | `EventScript_JP_0826240A` | `0x26240a` | `0x8e9` | `0x826240A` | 不明 | 中ブロック |
 | `gText_Rom_26316A` | `0x26316a` | `0x11d5` | `0x826316A` | 不明 | 中ブロック |
-| `gUnknown_8264358` | `0x264358` | `0x12957` | `0x8264358` | 不明 | 大ブロック（76.3KB） |
+| `EventScriptData_JP_08264358` | `0x264358` | `0x12957` | `0x8264358` | 不明 | 大ブロック（76.3KB） |
 | `EventScript_JP_08276CAF` ~ | `0x276caf` | オダマキOP周辺 | — | 一部 | オダマキ博士のオープニング |
 | テキストインクルード | — | — | — | はい | `data/text/birch_speech.inc`（8件） |
 | `gMovesWithQuietBGM` ~ | `0x2772f0` | 継続 | — | 不明 | 中ブロック群 |
-| `gUnknown_8277908` | `0x277908` | `0xf328` | `0x8277908` | 不明 | 大ブロック（62.2KB） |
+| `gBattleAnims_Special` | `0x277908` | `0xf328` | `0x8277908` | 不明 | 大ブロック（62.2KB） |
 | `gBattleScriptsForMoveEffects` ~ | `0x286c30` | 多数の小ブロック | — | 不明 | 小ブロック群 |
 | `gContestAI_ScriptsTable` | `0x28c8d8` | `0x9dc` | `0x828C8D8` | 不明 | 中ブロック |
-| `gUnknown_828D2B4` | `0x28d2b4` | `0x44` | `0x828D2B4` | 不明 | 最終ブロック（終端） |
+| `EventScriptData_JP_0828D2B4` | `0x28d2b4` | `0x44` | `0x828D2B4` | 不明 | 最終ブロック（終端） |
 
 ---
 
@@ -108,9 +108,9 @@
 
 | 項目 | 値 |
 |---|---|
-| 元のブロック | `gUnknown_81E27F7`（0x1e27f7, 0xaab6） |
+| 元のブロック | `EventScript_JP_081E27F7`（0x1e27f7, 0xaab6） |
 | ROMオフセット範囲 | `0x1e452c` ~ `0x1e45f1` |
-| 分割後の前半 | `gUnknown_81E27F7`: `0x1e27f7` 〜 `0x1e452c`（`0x1d35`バイト） |
+| 分割後の前半 | `EventScript_JP_081E27F7`: `0x1e27f7` 〜 `0x1e452c`（`0x1d35`バイト） |
 | テキスト | `data/text/littleroot_town.inc`（3件、`0x34+0x5c+0x35`バイト） |
 | 分割後の後半 | `gText_Rom_1E45F1`: `0x1e45f1` 〜 `0x1ed2ad`（`0x8cbc`バイト） |
 
@@ -145,9 +145,9 @@
 | `EventScript_JP_08202410`（0x202410, `0xb672`） | 46.7KB | テキスト含む可能性大 |
 | `EventScript_JP_0820DA9F`（0x20da9f, `0xdd55`） | 56.6KB | テキスト含む可能性大 |
 | `gText_Rom_22D78F`（0x22d78f, `0xde1a`） | 56.9KB | テキスト含む可能性大 |
-| `gUnknown_824C47B`（0x24c47b, `0xa197`） | 41.4KB | テキスト含む可能性大 |
-| `gUnknown_8264358`（0x264358, `0x12957`） | 76.3KB | テキスト含む可能性大 |
-| `gUnknown_8277908`（0x277908, `0xf328`） | 62.2KB | テキスト含む可能性大 |
+| `EventScriptData_JP_0824C47B`（0x24c47b, `0xa197`） | 41.4KB | テキスト含む可能性大 |
+| `EventScriptData_JP_08264358`（0x264358, `0x12957`） | 76.3KB | テキスト含む可能性大 |
+| `gBattleAnims_Special`（0x277908, `0xf328`） | 62.2KB | テキスト含む可能性大 |
 
 テキストの場所特定には、以下の手順が推奨されます：
 

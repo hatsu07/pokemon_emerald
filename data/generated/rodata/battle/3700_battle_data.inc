@@ -57,8 +57,8 @@ gBattleAnimSpecialData_085C6270: @ 0x085C6270
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.2byte 0x0000, 0x0500, 0x0201, 0x0302, 0x0505, 0x0404
-	.globl gUnknown_85C627C
-gUnknown_85C627C: @ 0x085C627C
+	.globl gBattleU32Table_Rom_5C627C
+gBattleU32Table_Rom_5C627C: @ 0x085C627C
 	.4byte PokeBallOpenParticleAnimation
 	.4byte GreatBallOpenParticleAnimation
 	.4byte SafariBallOpenParticleAnimation
@@ -247,8 +247,7 @@ gHallOfFameData_085C64A0: @ 0x085C64A0
 	@ pret/pokeemerald-jp direct xref for 0x085C64B8: hall_of_fame.s: sub_08175268
 	.globl gHallOfFameData_085C64B8
 gHallOfFameData_085C64B8:
-	.globl gUnknown_85C64B8
-gUnknown_85C64B8: @ 0x085C64B8
+	.globl gHallOfFameData_085C64B8
 	@ analyzed canonical ROM range 0x085C64B8-0x085C658B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xD4
@@ -271,7 +270,7 @@ gUnknown_85C64B8: @ 0x085C64B8
 gHallOfFameData_085C658C: @ 0x085C658C
 	@ analyzed canonical ROM range 0x085C658C-0x085C65A3
 sSpriteTemplate_085C658C: @ 0x085C658C
-	rodata_sprite_template 0x03E9, 0x03E9, gUnknown_85C64B8, 0x085C6548, 0, gDummySpriteAffineAnimTable, sub_081750A8
+	rodata_sprite_template 0x03E9, 0x03E9, gHallOfFameData_085C64B8, 0x085C6548, 0, gDummySpriteAffineAnimTable, sub_081750A8
 	@ pret/pokeemerald-jp direct xref for 0x085C65A4: hall_of_fame.s: ClearVramOamPltt_LoadHofPal
 	.globl gHallOfFameData_085C65A4
 gHallOfFameData_085C65A4: @ 0x085C65A4

@@ -191,7 +191,7 @@ gNamingScreenData_08565EE0: @ 0x08565EE0
 gNamingScreenData_08565F48: @ 0x08565F48
 	@ analyzed canonical ROM range 0x08565F48-0x08565FA3
 	@ pointer/nullable table
-	.4byte gUnknown_8565258 @ +0x0
+	.4byte gNamingScreenData_08565258 @ +0x0
 	@ ANALYSIS: RAW_BLOCK size=0x58
 	.4byte 0 @ +0x4
 	.4byte 0x08565278 @ +0x8
@@ -236,8 +236,8 @@ gMoneyData_08565FC4: @ 0x08565FC4
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xC0, 0xB2, 0xD9, 0x08, 0x22, 0x27, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08565FCC: contest.s: Contest_GetMoveExcitement, sub_080D7CBC, sub_080D8334, sub_080DAA50, sub_080DAAD4 (+2 more); contest_ai.s: ContestAICmd_check_most_appealing_move, ContestAICmd_get_move_effect, ContestAICmd_get_move_effect_type, ContestAICmd_g...
-	.globl gUnknown_8565FCC
-gUnknown_8565FCC: @ 0x08565FCC
+	.globl gCreditsU16Table_Rom_565FCC
+gCreditsU16Table_Rom_565FCC: @ 0x08565FCC
 	@ analyzed canonical ROM range 0x08565FCC-0x08566AE3
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xB18
@@ -420,8 +420,8 @@ gUnknown_8565FCC: @ 0x08565FCC
 	.2byte 0x012B, 0x0100, 0x0000, 0x0000, 0x002F, 0x0000, 0x0000, 0x0000
 	.2byte 0x0301, 0x3E00, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08566AE4: contest.s: sub_080DAA50, sub_080DAAD4, sub_080DC7E4; contest_ai.s: ContestAICmd_check_most_appealing_move, ContestAICmd_get_move_effect_type, ContestAICmd_unk_2F, ContestAICmd_unk_31, ContestAICmd_unk_36 (+1 more); contest_effect.s: Cont...
-	.globl gUnknown_8566AE4
-gUnknown_8566AE4: @ 0x08566AE4
+	.globl gCreditsU16Table_Rom_566AE4
+gCreditsU16Table_Rom_566AE4: @ 0x08566AE4
 	@ analyzed canonical ROM range 0x08566AE4-0x08566BA3
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xC0
@@ -447,8 +447,8 @@ gContestEffectData_08566BA4: @ 0x08566BA4
 	.2byte 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101
 	.2byte 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101
 	.2byte 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0001
-	.globl gUnknown_8566BE4
-gUnknown_8566BE4: @ 0x08566BE4
+	.globl gCreditsU32Table_Rom_566BE4
+gCreditsU32Table_Rom_566BE4: @ 0x08566BE4
 	.4byte ContestEffect_MakeScramblingTurnOrderEasier
 	.4byte ContestEffect_UserMoreEasilyStartled
 	.4byte ContestEffect_GreatAppealButNoMoreMoves

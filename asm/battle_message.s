@@ -781,7 +781,7 @@ _0814E78E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0814E79C: .4byte gUnknown_85AB3DC
+_0814E79C: .4byte gBattlePointerTable_Rom_5AB3DC
 	thumb_func_end BufferStringBattle
 
 	thumb_func_start TryGetStatusString
@@ -2603,7 +2603,7 @@ _0814F6C8:
 	ldr r1, [r1]
 	b _0814F8D6
 	.align 2, 0
-_0814F6E0: .4byte gUnknown_85AB3DC
+_0814F6E0: .4byte gBattlePointerTable_Rom_5AB3DC
 _0814F6E4:
 	ldrb r0, [r4, #1]
 	cmp r0, #2
@@ -3259,7 +3259,7 @@ _0814FBE0: .4byte 0x02023D08
 _0814FBE4: .4byte 0x02022D0C
 _0814FBE8: .4byte 0x02024154
 _0814FBEC: .4byte 0x020373B4
-_0814FBF0: .4byte gUnknown_8D85604
+_0814FBF0: .4byte gMoveU8Table_Rom_D85604
 _0814FBF4: .4byte gBattleMessageData_08D85606
 _0814FBF8: .4byte 0x0203786C
 	thumb_func_end SetPpNumbersPaletteInMoveSelection

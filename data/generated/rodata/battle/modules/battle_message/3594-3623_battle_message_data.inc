@@ -8,8 +8,8 @@ gText_Rom_5ABDA3: @ 0x085ABDA3
 	.if (. - gText_Rom_5ABDA3) < 0x4
 	.space 0x4 - (. - gText_Rom_5ABDA3)
 	.endif
-	.globl gUnknown_85ABDA7
-gUnknown_85ABDA7: @ 0x085ABDA7
+	.globl gText_Rom_5ABDA7
+gText_Rom_5ABDA7: @ 0x085ABDA7
 	@ Decoded text from ROM range: offset=0x5ABDA7, size=0x3
 	.string "わざ$"
 
@@ -75,8 +75,7 @@ gText_Rom_5ABE26: @ 0x085ABE26
 	@ pret/pokeemerald-jp direct xref for 0x085ABE2F: battle_message.s: BufferStringBattle
 	.globl gBattleMessageData_085ABE2F
 gBattleMessageData_085ABE2F:
-	.globl gUnknown_85ABE2F
-gUnknown_85ABE2F: @ 0x085ABE2F
+	.globl gBattleMessageData_085ABE2F
 	@ analyzed canonical ROM range 0x085ABE2F-0x085ABE4F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x21

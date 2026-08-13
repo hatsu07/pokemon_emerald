@@ -1824,7 +1824,7 @@ _080D7DAA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080D7E20: .4byte gUnknown_8565FCC
+_080D7E20: .4byte gCreditsU16Table_Rom_565FCC
 _080D7E24: .4byte 0x085CC493
 _080D7E28: .4byte 0x082EACC4
 _080D7E2C: .4byte 0x02039BD4
@@ -4326,7 +4326,7 @@ _080D92FE:
 	.align 2, 0
 _080D930C: .4byte 0x02021C68
 _080D9310: .4byte 0x08560E6C
-_080D9314: .4byte gUnknown_8565FCC
+_080D9314: .4byte gCreditsU16Table_Rom_565FCC
 _080D9318: .4byte 0x02039BD4
 _080D931C: .4byte 0x02021C40
 _080D9320: .4byte 0x02039AA2
@@ -7333,8 +7333,8 @@ sub_080DAA50: @ 0x080DAA50
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_080DAA78: .4byte gUnknown_8566AE4
-_080DAA7C: .4byte gUnknown_8565FCC
+_080DAA78: .4byte gCreditsU16Table_Rom_566AE4
+_080DAA7C: .4byte gCreditsU16Table_Rom_565FCC
 _080DAA80: .4byte 0x080DAA84
 _080DAA84: @ jump table
 	.4byte _080DAAA8 @ case 0
@@ -7440,9 +7440,9 @@ _080DAB08:
 	movs r6, #0
 	b _080DAB6C
 	.align 2, 0
-_080DAB54: .4byte gUnknown_8565FCC
+_080DAB54: .4byte gCreditsU16Table_Rom_565FCC
 _080DAB58: .4byte 0x00004040
-_080DAB5C: .4byte gUnknown_8566AE4
+_080DAB5C: .4byte gCreditsU16Table_Rom_566AE4
 _080DAB60:
 	ldrb r0, [r2, #1]
 	movs r1, #0xa
@@ -7487,8 +7487,8 @@ _080DAB72:
 	.align 2, 0
 _080DABB4: .4byte 0x00005035
 _080DABB8: .4byte 0x00005012
-_080DABBC: .4byte gUnknown_8566AE4
-_080DABC0: .4byte gUnknown_8565FCC
+_080DABBC: .4byte gCreditsU16Table_Rom_566AE4
+_080DABC0: .4byte gCreditsU16Table_Rom_565FCC
 _080DABC4:
 	ldrb r0, [r1, #2]
 	movs r1, #0xa
@@ -7544,7 +7544,7 @@ _080DABD6:
 _080DAC30: .4byte 0x00005036
 _080DAC34: .4byte 0x00005014
 _080DAC38: .4byte 0x08560BB4
-_080DAC3C: .4byte gUnknown_8565FCC
+_080DAC3C: .4byte gCreditsU16Table_Rom_565FCC
 _080DAC40: .4byte 0x085C93FF
 	thumb_func_end sub_080DAAD4
 
@@ -11321,7 +11321,7 @@ _080DC818:
 	b _080DC890
 	.align 2, 0
 _080DC86C: .4byte 0x02039BD4
-_080DC870: .4byte gUnknown_8565FCC
+_080DC870: .4byte gCreditsU16Table_Rom_565FCC
 _080DC874:
 	ldr r4, _080DC944
 	ldr r0, [r4]
@@ -11429,7 +11429,7 @@ _080DC918:
 	b _080DC96A
 	.align 2, 0
 _080DC944: .4byte 0x02039BD4
-_080DC948: .4byte gUnknown_8566AE4
+_080DC948: .4byte gCreditsU16Table_Rom_566AE4
 _080DC94C: .4byte 0x08566BE4
 _080DC950:
 	ldrb r1, [r2, #0x11]
@@ -11549,7 +11549,7 @@ _080DCA2C:
 	strb r0, [r1, #0x15]
 	b _080DCA46
 	.align 2, 0
-_080DCA34: .4byte gUnknown_8565FCC
+_080DCA34: .4byte gCreditsU16Table_Rom_565FCC
 _080DCA38: .4byte 0x02039BD4
 _080DCA3C:
 	ldrb r1, [r3, #0x15]
@@ -11818,7 +11818,7 @@ _080DCC24: .4byte 0x02039AA2
 _080DCC28: .4byte 0x02021C54
 _080DCC2C: .4byte 0x02039BD4
 _080DCC30: .4byte 0x082EACC4
-_080DCC34: .4byte gUnknown_8565FCC
+_080DCC34: .4byte gCreditsU16Table_Rom_565FCC
 _080DCC38: .4byte 0x02021C68
 _080DCC3C: .4byte 0x0824C0D2
 _080DCC40:
@@ -12475,7 +12475,7 @@ Contest_GetMoveExcitement: @ 0x080DD154
 	bx lr
 	.align 2, 0
 _080DD178: .4byte gContestData_08562970
-_080DD17C: .4byte gUnknown_8565FCC
+_080DD17C: .4byte gCreditsU16Table_Rom_565FCC
 _080DD180: .4byte 0x02039BCC
 	thumb_func_end Contest_GetMoveExcitement
 

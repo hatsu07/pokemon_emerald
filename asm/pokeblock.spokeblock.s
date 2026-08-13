@@ -570,7 +570,7 @@ _08135D1C:
 	bl LoadCompressedSpriteSheet
 	b _08135D2E
 	.align 2, 0
-_08135D24: .4byte gUnknown_8592140
+_08135D24: .4byte gPokemonU8Table_Rom_592140
 _08135D28:
 	ldr r0, _08135D40
 	bl LoadCompressedSpritePalette
@@ -585,7 +585,7 @@ _08135D32:
 	strh r0, [r1]
 	b _08135D68
 	.align 2, 0
-_08135D40: .4byte gUnknown_8592148
+_08135D40: .4byte gPokemonU8Table_Rom_592148
 _08135D44: .4byte 0x0203A81C
 _08135D48: .4byte 0x00000D36
 _08135D4C:
@@ -648,7 +648,7 @@ _08135DA0:
 	bx r0
 	.align 2, 0
 _08135DC4: .4byte gPokeblockSpokeblockData_08592194
-_08135DC8: .4byte gUnknown_85D7B04
+_08135DC8: .4byte gCreditsU8Table_Rom_5D7B04
 	thumb_func_end sub_08135D74
 
 	thumb_func_start sub_08135DCC
@@ -3049,7 +3049,7 @@ _0813709A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081370B0: .4byte gUnknown_8591FEC
+_081370B0: .4byte gPokemonU16Table_Rom_591FEC
 	thumb_func_end sub_08137054
 
 	thumb_func_start sub_081370B4

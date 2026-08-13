@@ -461,7 +461,7 @@ sub_081A19D0: @ 0x081A19D0
 	bx lr
 	.align 2, 0
 _081A19D8: .4byte 0x0203B954
-_081A19DC: .4byte gUnknown_85B4A10
+_081A19DC: .4byte gMoveU8Table_Rom_5B4A10
 	thumb_func_end sub_081A19D0
 
 	thumb_func_start sub_081A19E0
@@ -4768,7 +4768,7 @@ _081A3CDA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081A3CE8: .4byte gUnknown_85DD48E
+_081A3CE8: .4byte gBattleU16Table_Rom_5DD48E
 _081A3CEC: .4byte 0x0000FFFF
 	thumb_func_end AppendIfValid
 
@@ -4945,7 +4945,7 @@ _081A3E22:
 _081A3E44: .4byte 0x02037290
 _081A3E48: .4byte 0x02021C40
 _081A3E4C: .4byte 0x02037280
-_081A3E50: .4byte gUnknown_85DD48E
+_081A3E50: .4byte gBattleU16Table_Rom_5DD48E
 _081A3E54: .4byte 0x0000FFFF
 _081A3E58: .4byte gFrontierUtilData_085ABC72
 _081A3E5C:

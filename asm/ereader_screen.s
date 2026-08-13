@@ -648,7 +648,7 @@ _081D48E8:
 	.align 2, 0
 _081D4900: .4byte 0x085CCFAD
 _081D4904: .4byte 0x03006110
-_081D4908: .4byte gUnknown_8912454
+_081D4908: .4byte gBattleU8Table_Rom_912454
 _081D490C: .4byte gEreaderScreenData_0890F374
 _081D4910:
 	ldr r0, _081D4928

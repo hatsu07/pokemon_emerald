@@ -922,8 +922,8 @@ gDodrioBerryPickingData_082CB330: @ 0x082CB330
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.2byte 0x100F, 0x1211, 0x1313, 0x1112, 0x0F10, 0x1514, 0x1716, 0x1918
 	.2byte 0x1B1A, 0x1D1C, 0x1F1E, 0x2120, 0x2222, 0x2021, 0x1E1F, 0x0000
-	.globl gUnknown_82CB350
-gUnknown_82CB350: @ 0x082CB350
+	.globl gDodrioBerryPickingPointerTable_Rom_2CB350
+gDodrioBerryPickingPointerTable_Rom_2CB350: @ 0x082CB350
 	.4byte sub_08024B84
 	.4byte sub_08024BC8
 	.4byte sub_08024C00
@@ -936,8 +936,8 @@ gUnknown_82CB350: @ 0x082CB350
 	.4byte sub_08025474
 	.4byte sub_08025520
 	.4byte sub_08024E9C
-	.globl gUnknown_82CB380
-gUnknown_82CB380: @ 0x082CB380
+	.globl gDodrioBerryPickingPointerTable_Rom_2CB380
+gDodrioBerryPickingPointerTable_Rom_2CB380: @ 0x082CB380
 	.4byte sub_08024B84
 	.4byte sub_08024BC8
 	.4byte sub_08024C00
@@ -964,8 +964,8 @@ gDodrioBerryPickingData_082CB3B8: @ 0x082CB3B8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0500, 0x1401, 0x0F0B, 0x0001
-	.globl gUnknown_82CB3C0
-gUnknown_82CB3C0: @ 0x082CB3C0
+	.globl gDodrioBerryPickingPointerTable_Rom_2CB3C0
+gDodrioBerryPickingPointerTable_Rom_2CB3C0: @ 0x082CB3C0
 	.4byte gText_Rom_5CCD06
 	.4byte gText_Rom_5CCD13
 	.4byte gText_Rom_5CCD1D
@@ -1030,8 +1030,8 @@ gText_Rom_2CB414: @ 0x082CB414
 	.if (. - gText_Rom_2CB414) < 0x8
 	.space 0x8 - (. - gText_Rom_2CB414)
 	.endif
-	.globl gUnknown_82CB41C
-gUnknown_82CB41C: @ 0x082CB41C
+	.globl gDodrioBerryPickingPointerTable_Rom_2CB41C
+gDodrioBerryPickingPointerTable_Rom_2CB41C: @ 0x082CB41C
 	.4byte gText_Rom_2CB404
 	.4byte gText_Rom_2CB404
 	.4byte gText_Rom_2CB404
@@ -1398,8 +1398,8 @@ sPointerTable_082CEC54:
 	.4byte 0x082CEC24 @ +0x8
 	.4byte 0x082CEC30 @ +0xC
 	.4byte 0x082CEC40 @ +0x10
-	.globl gUnknown_82CEC68
-gUnknown_82CEC68: @ 0x082CEC68
+	.globl gDodrioBerryPickingPointerTable_Rom_2CEC68
+gDodrioBerryPickingPointerTable_Rom_2CEC68: @ 0x082CEC68
 	.4byte gText_Rom_5CCD77
 	.4byte gText_Rom_5CCD7A
 	.4byte gText_Rom_5CCD7D
@@ -1426,8 +1426,8 @@ gDodrioBerryPickingData_082CEC8E: @ 0x082CEC8E
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xA
 	.2byte 0x000C, 0x001C, 0x002C, 0x003C, 0x004C
-	.globl gUnknown_82CEC98
-gUnknown_82CEC98: @ 0x082CEC98
+	.globl gDodrioBerryPickingPointerTable_Rom_2CEC98
+gDodrioBerryPickingPointerTable_Rom_2CEC98: @ 0x082CEC98
 	@ Resolved pointer table; original ROM range 0x2CEC98..0x2CECE7.
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0

@@ -388,7 +388,7 @@ _080A5820:
 	b _080A585C
 	.align 2, 0
 _080A5838: .4byte 0x00000181
-_080A583C: .4byte gUnknown_84FE684
+_080A583C: .4byte gMenuU16Table_Rom_4FE684
 _080A5840: .4byte 0x02024188
 _080A5844:
 	movs r0, #0xce
@@ -5936,7 +5936,7 @@ _080A80FC:
 	.align 2, 0
 _080A810C: .4byte 0x00000181
 _080A8110: .4byte 0x02024188
-_080A8114: .4byte gUnknown_84FE684
+_080A8114: .4byte gMenuU16Table_Rom_4FE684
 _080A8118:
 	movs r0, #0xce
 	lsls r0, r0, #1

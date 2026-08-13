@@ -113,11 +113,11 @@ gLibgccData_0890F058: @ 0x0890F058
 	.2byte 0x0808, 0x0808, 0x0808, 0x0808, 0x0808, 0x0808, 0x0808, 0x0808
 	.2byte 0x0808, 0x0808, 0x0808, 0x0808, 0x0808, 0x0808, 0x0808, 0x0808
 	.2byte 0x0043, 0x0000
-	.globl gUnknown_890F15C
-gUnknown_890F15C: @ 0x0890F15C
+	.globl gBattleDataBlock_Rom_90F15C
+gBattleDataBlock_Rom_90F15C: @ 0x0890F15C
 	.space 0x10, 0x20
-	.globl gUnknown_890F16C
-gUnknown_890F16C: @ 0x0890F16C
+	.globl gBattleDataBlock_Rom_90F16C
+gBattleDataBlock_Rom_90F16C: @ 0x0890F16C
 	.space 0x10, 0x30
 	@ pret/pokeemerald-jp direct xref for 0x0890F17C: libc.s: _vfprintf_r
 	.globl gLibcData_0890F17C
@@ -207,19 +207,19 @@ sPointerTable_0890F1EC:
 	@ analyzed canonical ROM range 0x0890F1EC-0x0890F21B
 	@ pointer/nullable table
 	.4byte 0x0890F220 @ +0x0
-	.4byte gUnknown_890F21C @ +0x4
-	.4byte gUnknown_890F21C @ +0x8
-	.4byte gUnknown_890F21C @ +0xC
-	.4byte gUnknown_890F21C @ +0x10
-	.4byte gUnknown_890F21C @ +0x14
-	.4byte gUnknown_890F21C @ +0x18
-	.4byte gUnknown_890F21C @ +0x1C
-	.4byte gUnknown_890F21C @ +0x20
-	.4byte gUnknown_890F21C @ +0x24
+	.4byte gBattleU32Table_Rom_90F21C @ +0x4
+	.4byte gBattleU32Table_Rom_90F21C @ +0x8
+	.4byte gBattleU32Table_Rom_90F21C @ +0xC
+	.4byte gBattleU32Table_Rom_90F21C @ +0x10
+	.4byte gBattleU32Table_Rom_90F21C @ +0x14
+	.4byte gBattleU32Table_Rom_90F21C @ +0x18
+	.4byte gBattleU32Table_Rom_90F21C @ +0x1C
+	.4byte gBattleU32Table_Rom_90F21C @ +0x20
+	.4byte gBattleU32Table_Rom_90F21C @ +0x24
 	.4byte 0xFFFFFFFF @ +0x28
 	.4byte 0xFFFFFFFF @ +0x2C
-	.globl gUnknown_890F21C
-gUnknown_890F21C: @ 0x0890F21C
+	.globl gBattleU32Table_Rom_90F21C
+gBattleU32Table_Rom_90F21C: @ 0x0890F21C
 	@ Resolved pointer table; original ROM range 0x90F21C..0x90F223.
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0
@@ -231,8 +231,8 @@ gLibcData_0890F224: @ 0x0890F224
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x43, 0x00, 0x00, 0x00
-	.globl gUnknown_890F228
-gUnknown_890F228: @ 0x0890F228
+	.globl gBattleU32Table_Rom_90F228
+gBattleU32Table_Rom_90F228: @ 0x0890F228
 	@ Resolved pointer table; original ROM range 0x90F228..0x90F233.
 	.4byte TYPE_ROCK
 	.4byte MAP_NUM_ROUTE110
@@ -1072,8 +1072,8 @@ gEreaderScreenData_0890F374: @ 0x0890F374
 	.byte 0x7F, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08912454: berry_fix_program.s: berry_fix_main; ereader_screen.s: sub_081D4704
-	.globl gUnknown_8912454
-gUnknown_8912454: @ 0x08912454
+	.globl gBattleU8Table_Rom_912454
+gBattleU8Table_Rom_912454: @ 0x08912454
 	@ analyzed canonical ROM range 0x08912454-0x089158DF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x348C
@@ -1918,6 +1918,6 @@ gUnknown_8912454: @ 0x08912454
 	.byte 0x0B, 0x58, 0xF0, 0x9B, 0xF0, 0x9B, 0x80, 0x6B, 0xF4, 0xF0, 0x6B, 0x90, 0x20, 0x6B, 0x62, 0x13
 	.byte 0x08, 0x22, 0x49, 0x49, 0x52, 0x54, 0x00, 0x43, 0x5F, 0x56, 0x30, 0x30, 0x31, 0x00, 0x3A, 0xE0
 	.byte 0x01, 0x6F, 0xF0, 0x03, 0xF0, 0x03, 0xC6, 0x00, 0x00, 0x08, 0x00, 0x00
-	.globl gUnknown_89158E0
-gUnknown_89158E0: @ 0x089158E0
+	.globl gBattleDataBlock_Rom_9158E0
+gBattleDataBlock_Rom_9158E0: @ 0x089158E0
 	.space 0x1EA720, 0xFF

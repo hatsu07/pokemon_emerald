@@ -1,8 +1,7 @@
 	@ pret/pokeemerald-jp direct xref for 0x085C93D0: battle_setup.s: ReturnEmptyStringIfNull
 	.globl gBattleSetupData_085C93D0
 gBattleSetupData_085C93D0:
-	.globl gUnknown_85C93D0
-gUnknown_85C93D0: @ 0x085C93D0
+	.globl gBattleSetupData_085C93D0
 	@ analyzed canonical ROM range 0x085C93D0-0x085C93D6
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x7

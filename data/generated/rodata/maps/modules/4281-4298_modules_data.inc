@@ -101,8 +101,8 @@ gText_Rom_5C9359: @ 0x085C9359
 	.if (. - gText_Rom_5C9359) < 0x4
 	.space 0x4 - (. - gText_Rom_5C9359)
 	.endif
-	.globl gUnknown_85C935D
-gUnknown_85C935D: @ 0x085C935D
+	.globl gText_Rom_5C935D
+gText_Rom_5C935D: @ 0x085C935D
 	@ Decoded text from ROM range: offset=0x5C935D, size=0x6
 	.string "IDNo,$"
 

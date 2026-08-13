@@ -1593,12 +1593,12 @@ sub_081D06A0: @ 0x081D06A0
 _081D070C: .4byte 0x02021C68
 _081D0710: .4byte 0x02021C40
 _081D0714: .4byte 0x02021C54
-_081D0718: .4byte gUnknown_85CB7FE
+_081D0718: .4byte gBattleU8Table_Rom_5CB7FE
 _081D071C:
 	ldr r1, _081D0720
 	b _081D0726
 	.align 2, 0
-_081D0720: .4byte gUnknown_85CB7D6
+_081D0720: .4byte gBattleU8Table_Rom_5CB7D6
 _081D0724:
 	ldr r1, _081D0764
 _081D0726:
@@ -1629,7 +1629,7 @@ _081D0726:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D0764: .4byte gUnknown_85CB7EA
+_081D0764: .4byte gBattleU8Table_Rom_5CB7EA
 _081D0768: .4byte 0x02021C7C
 	thumb_func_end sub_081D06A0
 

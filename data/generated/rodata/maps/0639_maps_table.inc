@@ -1,5 +1,5 @@
-	.globl gUnknown_84DD88C
-gUnknown_84DD88C: @ 0x084DD88C
+	.globl gMapU32Table_Rom_4DD88C
+gMapU32Table_Rom_4DD88C: @ 0x084DD88C
 	.4byte MovementType_None
 	.4byte MovementType_LookAround
 	.4byte MovementType_WanderAround

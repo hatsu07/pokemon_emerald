@@ -789,7 +789,7 @@ _081BF920:
 	b _081BF9AE
 	.align 2, 0
 _081BF940: .4byte gPokemonSummaryScreenData_08D9879C
-_081BF944: .4byte gUnknown_8D85604
+_081BF944: .4byte gMoveU8Table_Rom_D85604
 _081BF948: .4byte 0x0203CBE8
 _081BF94C: .4byte 0x000040F0
 _081BF950:
@@ -5275,8 +5275,8 @@ _081C1D88:
 	.align 2, 0
 _081C1DA4: .4byte 0x0203CBE8
 _081C1DA8: .4byte 0x000038BC
-_081C1DAC: .4byte gUnknown_8566AE4
-_081C1DB0: .4byte gUnknown_8565FCC
+_081C1DAC: .4byte gCreditsU16Table_Rom_566AE4
+_081C1DB0: .4byte gCreditsU16Table_Rom_565FCC
 _081C1DB4: .4byte 0x0000103A
 _081C1DB8:
 	lsrs r0, r2, #2
@@ -5624,7 +5624,7 @@ _081C2022:
 	b _081C2094
 	.align 2, 0
 _081C2078: .4byte 0x02021C40
-_081C207C: .4byte gUnknown_85C940E
+_081C207C: .4byte gContestU8Table_Rom_5C940E
 _081C2080: .4byte 0x02021C54
 _081C2084:
 	str r4, [sp]
@@ -8337,7 +8337,7 @@ _081C36BC:
 _081C36C4: .4byte 0x0203CBE8
 _081C36C8: .4byte gPokemonSummaryScreenData_085ED15C
 _081C36CC: .4byte 0x08560BB4
-_081C36D0: .4byte gUnknown_8565FCC
+_081C36D0: .4byte gCreditsU16Table_Rom_565FCC
 	thumb_func_end PrintContestMoveDescription
 
 	thumb_func_start PrintMoveDetails
@@ -8383,7 +8383,7 @@ PrintMoveDetails: @ 0x081C36D4
 _081C3728: .4byte gPokemonSummaryScreenData_085ED15C
 _081C372C: .4byte 0x0203CBE8
 _081C3730: .4byte 0x000040C0
-_081C3734: .4byte gUnknown_85E7FFC
+_081C3734: .4byte gMenuPointerTable_Rom_5E7FFC
 _081C3738:
 	ldr r2, _081C3760
 	ldr r1, _081C3764
@@ -8406,7 +8406,7 @@ _081C3758:
 	b _081C376E
 	.align 2, 0
 _081C3760: .4byte 0x08560BB4
-_081C3764: .4byte gUnknown_8565FCC
+_081C3764: .4byte gCreditsU16Table_Rom_565FCC
 _081C3768:
 	adds r0, r5, #0
 	bl ClearWindowTilemap
@@ -9118,7 +9118,7 @@ _081C3CB4:
 	b _081C3D04
 	.align 2, 0
 _081C3CF0: .4byte 0x0203CBE8
-_081C3CF4: .4byte gUnknown_8565FCC
+_081C3CF4: .4byte gCreditsU16Table_Rom_565FCC
 _081C3CF8:
 	adds r0, r4, #3
 	lsls r0, r0, #0x18
@@ -9194,7 +9194,7 @@ _081C3D84:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C3D88: .4byte gUnknown_8565FCC
+_081C3D88: .4byte gCreditsU16Table_Rom_565FCC
 	thumb_func_end SetNewMoveTypeIcon
 
 	thumb_func_start sub_081C3D8C

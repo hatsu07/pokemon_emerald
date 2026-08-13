@@ -1,5 +1,5 @@
-	.globl gUnknown_85C96F8
-gUnknown_85C96F8: @ 0x085C96F8
+	.globl gItemPointerTable_Rom_5C96F8
+gItemPointerTable_Rom_5C96F8: @ 0x085C96F8
 	.4byte gText_Rom_5C96DB
 	.4byte gText_Rom_5C96E1
 	.4byte gText_Rom_5C96E6
@@ -12,8 +12,8 @@ gUnknown_85C96F8: @ 0x085C96F8
 	.4byte gText_Rom_5C96DB
 	.4byte gText_Rom_5C96E1
 	.4byte gText_Rom_5C96F3
-	.globl gUnknown_85C9728
-gUnknown_85C9728: @ 0x085C9728
+	.globl gItemPointerTable_Rom_5C9728
+gItemPointerTable_Rom_5C9728: @ 0x085C9728
 	.4byte gText_Rom_5C96DB
 	.4byte gText_Rom_5C96E1
 	.4byte gText_Rom_5C96E6

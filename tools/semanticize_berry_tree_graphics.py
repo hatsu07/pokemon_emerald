@@ -142,8 +142,8 @@ def rewrite_between(text: str, start_marker: str, end_marker: str, replacement: 
 
 def build_pic_table_block() -> str:
     header = [
-        "\t.globl gUnknown_84E4C04",
-        "gUnknown_84E4C04: @ 0x084E4C04",
+        "\t.globl gBerryTreePicTablePointers",
+        "gBerryTreePicTablePointers: @ 0x084E4C04",
         "\t.globl gBerryTreePicTablePointers",
         "gBerryTreePicTablePointers:",
         "\t@ berry tree SpriteFrameImage table pointers indexed by berry type",
@@ -154,8 +154,8 @@ def build_pic_table_block() -> str:
 
 def build_palette_slot_table_block() -> str:
     header = [
-        "\t.globl gUnknown_84E4CB0",
-        "gUnknown_84E4CB0: @ 0x084E4CB0",
+        "\t.globl gBerryTreePaletteSlotTablePointers",
+        "gBerryTreePaletteSlotTablePointers: @ 0x084E4CB0",
         "\t.globl gBerryTreePaletteSlotTablePointers",
         "gBerryTreePaletteSlotTablePointers:",
         "\t@ berry tree palette-slot table pointers indexed by berry type",
@@ -167,8 +167,8 @@ def build_palette_slot_table_block() -> str:
 def build_object_graphics_id_table_block() -> str:
     rom = ROM.read_bytes()
     header = [
-        "\t.globl gUnknown_84E4D5C",
-        "gUnknown_84E4D5C: @ 0x084E4D5C",
+        "\t.globl gBerryTreeObjectEventGraphicsIdTablePointers",
+        "gBerryTreeObjectEventGraphicsIdTablePointers: @ 0x084E4D5C",
         "\t.globl gBerryTreeObjectEventGraphicsIdTablePointers",
         "gBerryTreeObjectEventGraphicsIdTablePointers:",
         "\t@ berry tree ObjectEvent graphics-id table pointers indexed by berry type",
@@ -200,18 +200,18 @@ def rewrite(text: str) -> str:
     text = rewrite_between(
         text,
         "\t@ pret/pokeemerald-jp direct xref for 0x084E428C: event_object_movement.s: GetObjectPaletteTag, InitEventObjectPalettes\n",
-        "\t.globl gUnknown_84E4C04\n",
+        "\t.globl gBerryTreePicTablePointers\n",
         build_graphics_block(rom),
     )
     text = rewrite_between(
         text,
-        "\t.globl gUnknown_84E4C04\n",
-        "\t.globl gUnknown_84E4D5C\n",
+        "\t.globl gBerryTreePicTablePointers\n",
+        "\t.globl gBerryTreeObjectEventGraphicsIdTablePointers\n",
         build_pic_table_block() + build_palette_slot_table_block(),
     )
     text = rewrite_between(
         text,
-        "\t.globl gUnknown_84E4D5C\n",
+        "\t.globl gBerryTreeObjectEventGraphicsIdTablePointers\n",
         "\t@ pret/pokeemerald-jp direct xref for 0x084E4E1C: faraway_island.s: sub_081D4110\n",
         build_object_graphics_id_table_block(),
     )

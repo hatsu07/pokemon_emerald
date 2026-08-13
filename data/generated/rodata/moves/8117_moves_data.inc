@@ -1,5 +1,5 @@
 
-gUnknown_C11BA4:
+BattleInterface_BallStatusBarPal:
   @ ANALYSIS: RAW_RANGE offset=0xC11BA4, size=0xF00
   .byte 0x00, 0x00, 0x08, 0x21, 0xFF, 0x6F, 0x5B, 0x5B, 0xF8, 0x3A, 0x4F, 0x42, 0xAA, 0x31, 0xE4, 0x00
   .byte 0x47, 0x21, 0x9F, 0x03, 0x7F, 0x4A, 0x28, 0x7F, 0x00, 0x7C, 0xE0, 0x03, 0x1F, 0x00, 0x4D, 0x7E
@@ -242,7 +242,7 @@ gUnknown_C11BA4:
   .byte 0x22, 0x73, 0x06, 0x00, 0x23, 0x73, 0x06, 0x00, 0x38, 0x73, 0x06, 0x00, 0x82, 0x73, 0x06, 0x00
   .byte 0x82, 0x73, 0x06, 0x00, 0x38, 0x74, 0x06, 0x00, 0x23, 0x88, 0x05, 0x00, 0x42, 0x67, 0x00, 0x00
 
-gUnknown_C12AA4:
+gMoveLz77Data_Rom_C12AA4:
 	@ ANALYSIS: SOURCE_RANGE offset=0xC12AA4, size=0x33E4
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0000.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0001.lz"
@@ -288,7 +288,7 @@ gUnknown_C12AA4:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0041.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0042.lz"
 	@ 0xC12AA4 - 0xC15E87
-gUnknown_C15E88:
+gMoveLz77Data_Rom_C15E88:
 	@ ANALYSIS: SOURCE_RANGE offset=0xC15E88, size=0x3424
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0043.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0044.lz"
@@ -300,7 +300,7 @@ gUnknown_C15E88:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0050.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0051.lz"
 	@ 0xC15E88 - 0xC192AB
-gUnknown_C192AC:
+gMoveLz77Data_Rom_C192AC:
 	@ ANALYSIS: SOURCE_RANGE offset=0xC192AC, size=0x304C
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0052.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0053.lz"
@@ -373,7 +373,7 @@ gUnknown_C192AC:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0117.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0118.lz"
 	@ 0xC192AC - 0xC1C2F7
-gUnknown_C1C2F8:
+gMoveLz77Data_Rom_C1C2F8:
 	@ ANALYSIS: SOURCE_RANGE offset=0xC1C2F8, size=0x2EF4
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0119.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0120.lz"
@@ -426,7 +426,7 @@ gUnknown_C1C2F8:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0167.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0168.lz"
 	@ 0xC1C2F8 - 0xC1F1EB
-gUnknown_C1F1EC:
+gMoveLz77Data_Rom_C1F1EC:
 	@ ANALYSIS: SOURCE_RANGE offset=0xC1F1EC, size=0x2F38
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0169.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0170.lz"
@@ -470,7 +470,7 @@ gUnknown_C1F1EC:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0208.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0209.lz"
 	@ 0xC1F1EC - 0xC22123
-gUnknown_C22124:
+gMoveLz77Data_Rom_C22124:
 	@ ANALYSIS: SOURCE_RANGE offset=0xC22124, size=0x312C
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0210.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0211.lz"
@@ -517,7 +517,7 @@ gUnknown_C22124:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0252.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0253.lz"
 	@ 0xC22124 - 0xC2524F
-gUnknown_C25250:
+gMoveLz77Data_Rom_C25250:
 	@ ANALYSIS: SOURCE_RANGE offset=0xC25250, size=0x31C0
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0254.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0255.lz"
@@ -545,7 +545,7 @@ gUnknown_C25250:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0277.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0278.lz"
 	@ 0xC25250 - 0xC2840F
-gUnknown_C28410:
+gMoveLz77Data_Rom_C28410:
 	@ ANALYSIS: SOURCE_RANGE offset=0xC28410, size=0x2CF0
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0279.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0280.lz"
@@ -579,7 +579,7 @@ gUnknown_C28410:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0308.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0309.lz"
 	@ 0xC28410 - 0xC2B0FF
-gUnknown_C2B100:
+gMoveLz77Data_Rom_C2B100:
 	@ ANALYSIS: SOURCE_RANGE offset=0xC2B100, size=0x2B0C
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0310.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0311.lz"
@@ -607,7 +607,7 @@ gUnknown_C2B100:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0333.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0334.lz"
 	@ 0xC2B100 - 0xC2DC0B
-gUnknown_C2DC0C:
+gMoveLz77Data_Rom_C2DC0C:
 	@ ANALYSIS: SOURCE_RANGE offset=0xC2DC0C, size=0x2138
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0335.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0336.lz"

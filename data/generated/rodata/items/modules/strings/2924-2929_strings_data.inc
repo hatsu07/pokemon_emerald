@@ -255,12 +255,12 @@ gText_Rom_595FB4: @ 0x08595FB4
 	.space 0x5 - (. - gText_Rom_595FB4)
 	.endif
 	.space 0x3, 0x00
-	.globl gUnknown_8595FBC
-gUnknown_8595FBC: @ 0x08595FBC
+	.globl gItemPointerTable_Rom_595FBC
+gItemPointerTable_Rom_595FBC: @ 0x08595FBC
 	.4byte sub_081429E0
 	.4byte sub_08142A44
-	.globl gUnknown_8595FC4
-gUnknown_8595FC4: @ 0x08595FC4
+	.globl gItemPointerTable_Rom_595FC4
+gItemPointerTable_Rom_595FC4: @ 0x08595FC4
 	.4byte sub_08140A30
 	.4byte sub_08140A5C
 	@ pret/pokeemerald-jp direct xref for 0x08595FCC: roulette.s: sub_08140538

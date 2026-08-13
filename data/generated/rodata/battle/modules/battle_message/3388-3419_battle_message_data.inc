@@ -189,8 +189,8 @@ gText_Rom_5AB03C: @ 0x085AB03C
 	.endif
 	.globl gText_Rom_5AB03F
 	.set gText_Rom_5AB03F, gText_Rom_5AB03C + 0x3
-	.globl gUnknown_85AB044
-gUnknown_85AB044: @ 0x085AB044
+	.globl gText_Rom_5AB044
+gText_Rom_5AB044: @ 0x085AB044
 	@ Decoded text from ROM range: offset=0x5AB044, size=0x4
 	.string "した！$"
 

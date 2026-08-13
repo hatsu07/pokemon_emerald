@@ -1,6 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085B4A10: battle_dome.s: InitDomeFacilityTrainersAndMons; battle_factory.s: GenerateInitialRentalMons, GenerateOpponentMons; battle_pike.s: PrepareOneTrainer, PrepareTwoTrainers; battle_pyramid.s: InitPyramidFacilityTrainers; battle_tower.s: SetFa...
-	.globl gUnknown_85B4A10
-gUnknown_85B4A10: @ 0x085B4A10
+	.globl gMoveU8Table_Rom_5B4A10
+gMoveU8Table_Rom_5B4A10: @ 0x085B4A10
 	@ analyzed canonical ROM range 0x085B4A10-0x085B4A3A
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2B
