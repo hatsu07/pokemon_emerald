@@ -52,10 +52,58 @@ gMonIcon_OldUnownZ: @ 0x08D77574 [276]
 	.incbin "build/graphics/pokemon/old_unown_b/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D77974-0x08D77993
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	.globl gMonFootprint_OldUnownB
+gMonFootprint_OldUnownB:
+	.globl gMonFootprint_OldUnownC
+gMonFootprint_OldUnownC:
+	.globl gMonFootprint_OldUnownD
+gMonFootprint_OldUnownD:
+	.globl gMonFootprint_OldUnownE
+gMonFootprint_OldUnownE:
+	.globl gMonFootprint_OldUnownF
+gMonFootprint_OldUnownF:
+	.globl gMonFootprint_OldUnownG
+gMonFootprint_OldUnownG:
+	.globl gMonFootprint_OldUnownH
+gMonFootprint_OldUnownH:
+	.globl gMonFootprint_OldUnownI
+gMonFootprint_OldUnownI:
+	.globl gMonFootprint_OldUnownJ
+gMonFootprint_OldUnownJ:
+	.globl gMonFootprint_OldUnownK
+gMonFootprint_OldUnownK:
+	.globl gMonFootprint_OldUnownL
+gMonFootprint_OldUnownL:
+	.globl gMonFootprint_OldUnownM
+gMonFootprint_OldUnownM:
+	.globl gMonFootprint_OldUnownN
+gMonFootprint_OldUnownN:
+	.globl gMonFootprint_OldUnownO
+gMonFootprint_OldUnownO:
+	.globl gMonFootprint_OldUnownP
+gMonFootprint_OldUnownP:
+	.globl gMonFootprint_OldUnownQ
+gMonFootprint_OldUnownQ:
+	.globl gMonFootprint_OldUnownR
+gMonFootprint_OldUnownR:
+	.globl gMonFootprint_OldUnownS
+gMonFootprint_OldUnownS:
+	.globl gMonFootprint_OldUnownT
+gMonFootprint_OldUnownT:
+	.globl gMonFootprint_OldUnownU
+gMonFootprint_OldUnownU:
+	.globl gMonFootprint_OldUnownV
+gMonFootprint_OldUnownV:
+	.globl gMonFootprint_OldUnownW
+gMonFootprint_OldUnownW:
+	.globl gMonFootprint_OldUnownX
+gMonFootprint_OldUnownX:
+	.globl gMonFootprint_OldUnownY
+gMonFootprint_OldUnownY:
+	.globl gMonFootprint_OldUnownZ
+gMonFootprint_OldUnownZ:
 	.byte 0x00, 0x80, 0xCC, 0xDE, 0x9E, 0x0C, 0xE0, 0xF8, 0x00, 0x01, 0x33, 0x7B, 0x79, 0x30, 0x07, 0x1F
 	.byte 0x38, 0x9C, 0xFC, 0x7C, 0xF8, 0x78, 0xE0, 0x00, 0x1C, 0x39, 0x3C, 0x3E, 0x1F, 0x1E, 0x07, 0x00
-
-	@ pret/pokeemerald-jp direct xref for 0x08D77994: battle_bg.s: DrawBattleEntryBackground
 	.globl gBattleBgData_08D77994
 gBattleBgData_08D77994:
 	.globl sLz77Block_08D77994
