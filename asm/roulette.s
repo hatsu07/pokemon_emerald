@@ -507,7 +507,7 @@ _0814072A:
 	.align 2, 0
 _08140758: .4byte gRouletteData_085957A8
 _0814075C: .4byte gRouletteData_08DBC590
-_08140760: .4byte 0x08DBCCBC
+_08140760: .4byte gRouletteWheel_Gfx
 _08140764:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18

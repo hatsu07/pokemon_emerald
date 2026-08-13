@@ -651,6 +651,119 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # END DECORATION ICON ALL EXACT PIPELINE
 
 
+    # BEGIN ROULETTE EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/roulette/wheel[.]8bpp[.]lz$")
+        set(ROULETTE_EXACT_KEY "wheel")
+        set(ROULETTE_EXACT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/roulette/wheel.png")
+        set(ROULETTE_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/roulette/roulette_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_lz77_exact_assets.py"
+                --manifest "${ROULETTE_EXACT_MANIFEST}"
+                --key "${ROULETTE_EXACT_KEY}"
+                --bpp 8
+                "${ROULETTE_EXACT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${ROULETTE_EXACT_PNG}"
+                "${ROULETTE_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_lz77_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/roulette/(center|headers|credit|numbers|multiplier)[.]4bpp[.]lz$")
+        set(ROULETTE_EXACT_KEY "${CMAKE_MATCH_1}")
+        set(ROULETTE_EXACT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/roulette/${ROULETTE_EXACT_KEY}.png")
+        set(ROULETTE_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/roulette/roulette_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_lz77_exact_assets.py"
+                --manifest "${ROULETTE_EXACT_MANIFEST}"
+                --key "${ROULETTE_EXACT_KEY}"
+                --bpp 4
+                "${ROULETTE_EXACT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${ROULETTE_EXACT_PNG}"
+                "${ROULETTE_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_lz77_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END ROULETTE EXACT PIPELINE
+
+    # BEGIN MAIL EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/mail/(orange|harbor|glitter|mech|wood|wave|bead|shadow|tropic|dream|fab|retro)/tiles[.]4bpp[.]lz$")
+        set(MAIL_EXACT_TYPE "${CMAKE_MATCH_1}")
+        set(MAIL_EXACT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/mail/${MAIL_EXACT_TYPE}/tiles.png")
+        set(MAIL_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/mail/mail_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/mail_exact_assets.py"
+                tiles
+                --manifest "${MAIL_EXACT_MANIFEST}"
+                --key "${MAIL_EXACT_TYPE}_tiles"
+                "${MAIL_EXACT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${MAIL_EXACT_PNG}"
+                "${MAIL_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/mail_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/mail/(orange|harbor|glitter|mech|wood|wave|bead|shadow|tropic|dream|fab|retro)/palette[.]gbapal$")
+        set(MAIL_EXACT_TYPE "${CMAKE_MATCH_1}")
+        set(MAIL_EXACT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/mail/${MAIL_EXACT_TYPE}/tiles.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/mail_exact_assets.py"
+                pal
+                "${MAIL_EXACT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${MAIL_EXACT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/mail_exact_assets.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/mail/(orange|harbor|glitter|mech|wood|wave|bead|shadow|tropic|dream|fab|retro)/map[.]bin[.]lz$")
+        set(MAIL_EXACT_TYPE "${CMAKE_MATCH_1}")
+        set(MAIL_EXACT_MAP
+            "${CMAKE_SOURCE_DIR}/graphics/mail/${MAIL_EXACT_TYPE}/map.tilemap.inc")
+        set(MAIL_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/mail/mail_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/mail_exact_assets.py"
+                tilemap
+                --manifest "${MAIL_EXACT_MANIFEST}"
+                --key "${MAIL_EXACT_TYPE}_map"
+                "${MAIL_EXACT_MAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${MAIL_EXACT_MAP}"
+                "${MAIL_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/mail_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END MAIL EXACT PIPELINE
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/priority_b/(.+)[.]4bpp[.]lz$")
         set(PRIORITY_B_STEM "${CMAKE_MATCH_1}")

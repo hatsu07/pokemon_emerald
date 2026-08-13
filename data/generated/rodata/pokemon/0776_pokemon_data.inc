@@ -1,8 +1,13 @@
 	.globl gPokemonDataBlock_Rom_5443B8
 	.set gPokemonDataBlock_Rom_5443B8, gText_Rom_5443B3 + 0x5
-	@ ANALYSIS: RAW_RANGE offset=0x5443B9, size=0x13
-	.byte 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x10
-	.byte 0x11, 0x00, 0x00
+	@ Pokédex type-search IDs. TYPE_NONE (0xFF) is the shared byte at
+	@ gPokemonDataBlock_Rom_5443B8, supplied by the preceding text terminator.
+	.globl gPokedexSearchTypeIds
+	.set gPokedexSearchTypeIds, gPokemonDataBlock_Rom_5443B8
+	.byte TYPE_NORMAL, TYPE_FIGHT, TYPE_FLYING, TYPE_POISON, TYPE_GROUND, TYPE_ROCK
+	.byte TYPE_BUG, TYPE_GHOST, TYPE_STEEL, TYPE_FIRE, TYPE_WATER, TYPE_GRASS
+	.byte TYPE_ELECTRIC, TYPE_PSYCHIC, TYPE_ICE, TYPE_DRAGON, TYPE_DARK
+	.balign 4, 0
 	@ pret/pokeemerald-jp direct xref for 0x085443CC: pokedex.s: sub_080C1104, sub_080C117C, sub_080C1918, sub_080C19BC, sub_080C1AF0 (+1 more)
 	.globl gPokedexData_085443CC
 gPokedexData_085443CC: @ 0x085443CC

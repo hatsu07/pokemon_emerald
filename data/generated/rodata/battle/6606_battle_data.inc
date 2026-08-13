@@ -52,6 +52,7 @@ gBattleDomeStyleThresholds: @ 0x085D542C
 
 	.globl gBattleDomeUnusedArray
 gBattleDomeUnusedArray: @ 0x085D561C
+	@ RAW_BYTE_CLASS: SEMANTIC_U8_TABLE; upstream sUnusedArray, intentionally stored as u8 values.
 	.byte 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 	.byte 3, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 3, 0, 0, 0
 	.byte 0, 0, 3, 0, 0, 0, 0, 0, 3, 2, 0, 0, 0, 0, 0, 2

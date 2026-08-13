@@ -8,9 +8,8 @@ gText_Rom_5CADA1: @ 0x085CADA1
 	.if (. - gText_Rom_5CADA1) < 0x4
 	.space 0x4 - (. - gText_Rom_5CADA1)
 	.endif
-	@ analyzed canonical ROM range 0x085CADA5-0x085CADA9
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	.byte 0x89, 0x7B, 0xAE, 0x96, 0x79
+	@ Unterminated prefix sharing the following gText_Rom_5CADAA = "モード$" suffix.
+	.string "グローバル"
 	.globl gText_Rom_5CADAA
 gText_Rom_5CADAA: @ 0x085CADAA
 	.string "モード$"
