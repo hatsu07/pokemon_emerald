@@ -664,8 +664,6 @@ gUnknown_85DFCC2: @ 0x085DFCC2
 	.globl gUnknown_85DFCC6
 gUnknown_85DFCC6: @ 0x085DFCC6
 	.space 0x2, 0xFF
-	.globl gUnknown_85DFCC8
-gUnknown_85DFCC8: @ 0x085DFCC8
 	@ confirmed contiguous ROM pointer table: 756 entries from this address
 sPointerTable_085DFCC8:
 	.globl gItemIconTable

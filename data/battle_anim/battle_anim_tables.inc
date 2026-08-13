@@ -368,8 +368,6 @@ gBattleAnims_Moves::
 	.4byte Move_PSYCHO_BOOST
 	.4byte Move_COUNT
 
-	.globl gUnknown_8277888
-gUnknown_8277888:
 EventScript_08277888:
 gBattleAnims_StatusConditions::
 	.4byte Status_Poison

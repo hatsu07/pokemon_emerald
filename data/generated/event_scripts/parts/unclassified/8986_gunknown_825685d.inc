@@ -1,8 +1,7 @@
-	.globl gUnknown_825685D
-gUnknown_825685D: @ 0x0825685D
 	@ analyzed canonical ROM range 0x0825685D-0x08256896
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_0825685D: @ 0x0825685D
+.globl EventScript_JP_0825685D
 EventScript_JP_0825685D: @ 0x0825685D
 	lockall
 	checkpartymove 0x007F
@@ -18,11 +17,10 @@ EventScript_JP_0825685D: @ 0x0825685D
 	callstd 0x04
 	dofieldeffect 0x002B
 	goto EventScript_JP_082568A0
-	.globl gUnknown_8256897
-gUnknown_8256897: @ 0x08256897
 	@ analyzed canonical ROM range 0x08256897-0x082568A1
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08256897: @ 0x08256897
+.globl EventScript_JP_08256897
 EventScript_JP_08256897: @ 0x08256897
 	lockall
 EventScript_JP_08256898: @ 0x08256898

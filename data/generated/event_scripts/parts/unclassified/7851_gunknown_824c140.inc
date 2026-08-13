@@ -1,8 +1,7 @@
-	.globl gUnknown_824C140
-gUnknown_824C140: @ 0x0824C140
 	@ analyzed canonical ROM range 0x0824C140-0x0824C1F4
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_0824C140: @ 0x0824C140
+.globl EventScript_JP_0824C140
 EventScript_JP_0824C140: @ 0x0824C140
 	loadbytefromaddr 0x03, 0x10002E0C
 	end

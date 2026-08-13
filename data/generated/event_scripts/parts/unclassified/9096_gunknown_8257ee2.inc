@@ -1,8 +1,7 @@
-	.globl gUnknown_8257EE2
-gUnknown_8257EE2: @ 0x08257EE2
 	@ analyzed canonical ROM range 0x08257EE2-0x082585CE
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08257EE2: @ 0x08257EE2
+.globl EventScript_JP_08257EE2
 EventScript_JP_08257EE2: @ 0x08257EE2
 	animateflash 0x01
 	setflashradius 0x0001
@@ -937,11 +936,10 @@ Movement_JP_082585C8: @ 0x082585C8
 	walk_right
 	walk_in_place_fastest_up
 	step_end
-	.globl gUnknown_82585CF
-gUnknown_82585CF: @ 0x082585CF
 	@ analyzed canonical ROM range 0x082585CF-0x082585D7
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_082585CF: @ 0x082585CF
+.globl EventScript_JP_082585CF
 EventScript_JP_082585CF: @ 0x082585CF
 	loadword 0x00, gText_Rom_1EFD5A
 	callstd 0x03

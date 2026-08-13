@@ -27,11 +27,10 @@ EventScript_JP_082623BB: @ 0x082623BB
 	.2byte 0x0002
 	.2byte 0x0005
 	.byte 0x27, 0x02
-	.globl gUnknown_82623CD
-gUnknown_82623CD: @ 0x082623CD
 	@ analyzed canonical ROM range 0x082623CD-0x082623E7
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_082623CD: @ 0x082623CD
+.globl EventScript_JP_082623CD
 EventScript_JP_082623CD: @ 0x082623CD
 	lockall
 	loadword 0x00, gText_Rom_262452
@@ -43,11 +42,10 @@ EventScript_JP_082623CD: @ 0x082623CD
 EventScript_082623E3: @ 0x082623E3
 EventScript_JP_082623E3: @ 0x082623E3
 	goto EventScript_JP_082623BB
-	.globl gUnknown_82623E8
-gUnknown_82623E8: @ 0x082623E8
 	@ analyzed canonical ROM range 0x082623E8-0x082623F8
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_082623E8: @ 0x082623E8
+.globl EventScript_JP_082623E8
 EventScript_JP_082623E8: @ 0x082623E8
 	lockall
 	playse 0x0049
@@ -56,11 +54,10 @@ EventScript_JP_082623E8: @ 0x082623E8
 	waitbuttonpress
 	releaseall
 	goto EventScript_JP_082623BB
-	.globl gUnknown_82623F9
-gUnknown_82623F9: @ 0x082623F9
 	@ analyzed canonical ROM range 0x082623F9-0x08262409
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_082623F9: @ 0x082623F9
+.globl EventScript_JP_082623F9
 EventScript_JP_082623F9: @ 0x082623F9
 	lockall
 	playse 0x0049

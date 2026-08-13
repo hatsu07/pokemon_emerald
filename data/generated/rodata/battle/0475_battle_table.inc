@@ -55,8 +55,6 @@ sSoundMovesTable:
 	.2byte MOVE_HYPER_VOICE @ raw=0x0130
 	.2byte 0xFFFF @ terminator
 	.2byte 0x0000 @ alignment padding
-	.globl gUnknown_82EC694
-gUnknown_82EC694: @ 0x082EC694
 	.4byte atk00_attackcanceler
 	.4byte atk01_accuracycheck
 	.4byte atk02_attackstring
@@ -306,8 +304,6 @@ gUnknown_82EC694: @ 0x082EC694
 	.4byte atkF6_finishaction
 	.4byte atkF7_finishturn
 	.4byte atkF8_trainerslideout
-	.globl gUnknown_82ECA78
-gUnknown_82ECA78: @ 0x082ECA78
 	@ analyzed canonical ROM range 0x082ECA78-0x082ECAAB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x34
@@ -315,14 +311,10 @@ gUnknown_82ECA78: @ 0x082ECA78
 	.byte 0x3C, 0x64, 0x00, 0x00, 0x4B, 0x64, 0x00, 0x00, 0x01, 0x01, 0x00, 0x00, 0x85, 0x64, 0x00, 0x00
 	.byte 0xA6, 0x64, 0x00, 0x00, 0x02, 0x01, 0x00, 0x00, 0xE9, 0x64, 0x00, 0x00, 0x85, 0x32, 0x00, 0x00
 	.byte 0x03, 0x01, 0x00, 0x00
-	.globl gUnknown_82ECAAC
-gUnknown_82ECAAC: @ 0x082ECAAC
 	@ analyzed canonical ROM range 0x082ECAAC-0x082ECAB7
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.2byte 0x0010, 0x0008, 0x0004, 0x0003, 0x0002, 0x0000
-	.globl gUnknown_82ECAB8
-gUnknown_82ECAB8: @ 0x082ECAB8
 	@ analyzed canonical ROM range 0x082ECAB8-0x082ECBA7
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xF0
@@ -387,8 +379,6 @@ sPointerTable_082ECBA8:
 	.4byte 0x0828997C @ +0x98
 	.4byte 0x07030100 @ +0x9C
 	.4byte 0x003F1F0F @ +0xA0
-	.globl gUnknown_82ECC4C
-gUnknown_82ECC4C: @ 0x082ECC4C
 	@ analyzed canonical ROM range 0x082ECC4C-0x082ECC6B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -418,75 +408,53 @@ sLz77Block_082ECC6C:
 	@ analyzed canonical ROM range 0x082ECD44-0x082ECD5B
 sSpriteTemplate_082ECD44: @ 0x082ECD44
 	rodata_sprite_template 0xD75A, 0xD75A, sOamData_MonIconOnLvlUpBanner, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCB_MonIconOnLvlUpBox
-	.globl gUnknown_82ECD5C
-gUnknown_82ECD5C: @ 0x082ECD5C
 	@ analyzed canonical ROM range 0x082ECD5C-0x082ECD63
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0xFFFF, 0x7FFF, 0x3FFF, 0x1FFF
-	.globl gUnknown_82ECD64
-gUnknown_82ECD64: @ 0x082ECD64
 	@ analyzed canonical ROM range 0x082ECD64-0x082ECD8B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x28
 	.2byte 0x0076, 0x00A5, 0x00A6, 0x0066, 0xFFFE, 0x0044, 0x00F3, 0x00B6
 	.2byte 0x00C5, 0x00CB, 0x00C2, 0x00D6, 0x00A8, 0x010A, 0x0121, 0x010E
 	.2byte 0x0157, 0x010F, 0x0108, 0xFFFF
-	.globl gUnknown_82ECD8C
-gUnknown_82ECD8C: @ 0x082ECD8C
 	@ analyzed canonical ROM range 0x082ECD8C-0x082ECD97
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.byte 0x01, 0xC8, 0x04, 0x96, 0x09, 0x64, 0x10, 0x50, 0x20, 0x28, 0x30, 0x14
-	.globl gUnknown_82ECD98
-gUnknown_82ECD98: @ 0x082ECD98
 	@ analyzed canonical ROM range 0x082ECD98-0x082ECDAB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x14
 	.2byte 0x004E, 0x004B, 0x0059, 0x0038, 0x0039, 0x003D, 0x009D, 0x00F7
 	.2byte 0x0081, 0x0081
-	.globl gUnknown_82ECDAC
-gUnknown_82ECDAC: @ 0x082ECDAC
 	@ analyzed canonical ROM range 0x082ECDAC-0x082ECDC3
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x18
 	.2byte 0x0064, 0x0014, 0x00FA, 0x0028, 0x01F4, 0x003C, 0x03E8, 0x0050
 	.2byte 0x07D0, 0x0064, 0xFFFF, 0xFFFF
-	.globl gUnknown_82ECDC4
-gUnknown_82ECDC4: @ 0x082ECDC4
 	@ analyzed canonical ROM range 0x082ECDC4-0x082ECDE7
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x24
 	.2byte 0x000D, 0x000E, 0x0016, 0x0003, 0x0056, 0x0055, 0x004B, 0x0017
 	.2byte 0x0002, 0x0015, 0x0044, 0x0040, 0x0018, 0x003F, 0x0013, 0x0019
 	.2byte 0x0045, 0x0025
-	.globl gUnknown_82ECDE8
-gUnknown_82ECDE8: @ 0x082ECDE8
 	@ analyzed canonical ROM range 0x082ECDE8-0x082ECDFD
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x16
 	.2byte 0x0015, 0x006E, 0x00BB, 0x0013, 0x0022, 0x00B4, 0x014C, 0x0024
 	.2byte 0x0121, 0x00C8, 0x013A
-	.globl gUnknown_82ECDFE
-gUnknown_82ECDFE: @ 0x082ECDFE
 	@ analyzed canonical ROM range 0x082ECDFE-0x082ECE06
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x9
 	.byte 0x1E, 0x28, 0x32, 0x3C, 0x46, 0x50, 0x5A, 0x5E, 0x62
-	.globl gUnknown_82ECE07
-gUnknown_82ECE07: @ 0x082ECE07
 	@ analyzed canonical ROM range 0x082ECE07-0x082ECE10
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xA
 	.2byte 0x0C0C, 0x0B04, 0x0B0B, 0x0505, 0x0000
-	.globl gUnknown_82ECE11
-gUnknown_82ECE11: @ 0x082ECE11
 	@ analyzed canonical ROM range 0x082ECE11-0x082ECE17
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x7
 	.byte 0x14, 0x0F, 0x0A, 0x0F, 0x00, 0x00, 0x00
-	.globl gUnknown_82ECE18
-gUnknown_82ECE18: @ 0x082ECE18
 	@ analyzed canonical ROM range 0x082ECE18-0x082ECE7B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x64
@@ -497,8 +465,6 @@ gUnknown_82ECE18: @ 0x082ECE18
 	.byte 0x2C, 0x5E, 0x22, 0x28, 0x38, 0x4E, 0x38, 0x4E, 0x1E, 0x58, 0x1E, 0x58, 0x1E, 0x2B, 0x1B, 0x21
 	.byte 0x28, 0x5A, 0x19, 0x57, 0x12, 0x58, 0x5A, 0x5F, 0x58, 0x5E, 0x16, 0x2A, 0x2A, 0x5C, 0x2A, 0x2F
 	.byte 0x38, 0x4E, 0x38, 0x4E
-	.globl gUnknown_82ECE7C
-gUnknown_82ECE7C: @ 0x082ECE7C
 	@ analyzed canonical ROM range 0x082ECE7C-0x082ECE9B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x20
@@ -562,27 +528,19 @@ gUnknown_82ECE7C: @ 0x082ECE7C
 	.4byte PlayerHandleResetActionMoveSelection
 	.4byte PlayerHandleCmd55
 	.4byte PlayerCmdEnd
-	.globl gUnknown_82ECF80
-gUnknown_82ECF80: @ 0x082ECF80
 	@ analyzed canonical ROM range 0x082ECF80-0x082ECF8B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.byte 0x00, 0x02, 0x03, 0x01, 0x48, 0x48, 0x20, 0x5A, 0x50, 0x50, 0x50, 0x58
-	.globl gUnknown_82ECF8C
-gUnknown_82ECF8C: @ 0x082ECF8C
 	@ analyzed canonical ROM range 0x082ECF8C-0x082ECFA7
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.2byte 0x0000, 0x0001, 0x0101, 0x0002, 0x0000, 0x0101, 0x0001, 0x0102
 	.2byte 0x0100, 0x0001, 0x0000, 0x0101, 0x0000, 0x0000
-	.globl gUnknown_82ECFA8
-gUnknown_82ECFA8: @ 0x082ECFA8
 	@ analyzed canonical ROM range 0x082ECFA8-0x082ECFAF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x4C, 0x16, 0xC0, 0x08, 0x80, 0x01, 0xEB, 0xD6
-	.globl gUnknown_82ECFB0
-gUnknown_82ECFB0: @ 0x082ECFB0
 	@ analyzed canonical ROM range 0x082ECFB0-0x082ED00F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x60
@@ -596,8 +554,6 @@ gUnknown_82ECFB0: @ 0x082ECFB0
 	@ analyzed canonical ROM range 0x082ED010-0x082ED027
 sSpriteTemplate_082ED010: @ 0x082ED010
 	rodata_sprite_template 0xD6EB, 0xD6EB, sOamData_SmokescreenImpact, sAnims_SmokescreenImpact, 0, gDummySpriteAffineAnimTable, sub_08074DBC
-	.globl gUnknown_82ED028
-gUnknown_82ED028: @ 0x082ED028
 	@ analyzed canonical ROM range 0x082ED028-0x082ED037
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x10
@@ -606,8 +562,6 @@ gUnknown_82ED028: @ 0x082ED028
 	@ analyzed canonical ROM range 0x082ED038-0x082ED04F
 sSpriteTemplate_082ED038: @ 0x082ED038
 	rodata_sprite_template 0xD759, 0xD6FF, sOamData_EnemyShadow, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCB_SetInvisible
-	.globl gUnknown_82ED050
-gUnknown_82ED050: @ 0x082ED050
 	@ analyzed canonical ROM range 0x082ED050-0x082ED13B
 	@ pointer/nullable table
 	.4byte OpponentHandleGetMonData @ +0x0

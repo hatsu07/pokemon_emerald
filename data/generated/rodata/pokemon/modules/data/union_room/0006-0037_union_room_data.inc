@@ -593,6 +593,4 @@ sText_OfferToTradeMon:
 	.byte 0xC6, 0xD0 @ "LV"
 	.string "{DYNAMIC 2}の　{DYNAMIC 3}　の\nこうかん　もうしこみが　きています\pこうかん　しますか？$"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C0EA8
-gUnknown_82C0EA8: @ 0x082C0EA8
 	@ Boundary of the next generated union-room data region.

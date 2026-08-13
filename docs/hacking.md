@@ -279,7 +279,7 @@ Phase 3 で C・JSON・Porymap 連携を目指します。
 ```
 gUnknown_81E27F7:  .incbin baserom.gba, 0x1e27f7, 0x1d35  ← 手前
                    .include "data/text/littleroot_town.inc"    ← テキスト3件
-gUnknown_81E45F1:  .incbin baserom.gba, 0x1e45f1, 0x8cbc  ← 残り
+gText_Rom_1E45F1:  .incbin baserom.gba, 0x1e45f1, 0x8cbc  ← 残り
 ```
 
 ### 調査で判明した技術情報
@@ -298,17 +298,17 @@ gUnknown_81E45F1:  .incbin baserom.gba, 0x1e45f1, 0x8cbc  ← 残り
 `event_scripts.s` の incbin ブロックは以下の通り：
 
 ```
-gUnknown_81DABAC: 0x1dabac, 0x384
-gUnknown_81DAF30: 0x1daf30, 0x4
-gUnknown_81DAF34: .incbin "baserom.gba", 0x1daf34, 0x58
-gUnknown_81DAF8C: 0x1daf8c, 0x830
-gUnknown_81DB7BC: 0x1db7bc, 0x2c
+gScriptCmdTable: 0x1dabac, 0x384
+gScriptCmdTableEnd: 0x1daf30, 0x4
+gSpecialVars: .incbin "baserom.gba", 0x1daf34, 0x58
+gSpecials: 0x1daf8c, 0x830
+gStdScripts: 0x1db7bc, 0x2c
 0x1db7e8, 0x260b
-gUnknown_81DDDF3: 0x1dddf3, 0x4a04
+EventScript_JP_081DDDF3: 0x1dddf3, 0x4a04
 gUnknown_81E27F7: 0x1e27f7, 0xaab6  ← ミシロタウンNPCを含む
 gUnknown_81ED2AD: 0x1ed2ad, 0x2f0f
-gUnknown_81F01BC: 0x1f01bc, 0x32
-gUnknown_81F01EE: 0x1f01ee, 0xbb1
+EventScript_JP_081F01BC: 0x1f01bc, 0x32
+EventScript_JP_081F01EE: 0x1f01ee, 0xbb1
 ...
 ```
 
@@ -363,7 +363,7 @@ gUnknown_81E27F7:
 gUnknown_81E27F7:
     .incbin "baserom.gba", 0x1e27f7, 0x1d35   ← テキスト直前まで
     .include "data/text/littleroot_town.inc"       ← テキスト本体
-gUnknown_81E45F1:
+gText_Rom_1E45F1:
     .incbin "baserom.gba", 0x1e45f1, 0x8cbc   ← テキスト直後から
 ```
 

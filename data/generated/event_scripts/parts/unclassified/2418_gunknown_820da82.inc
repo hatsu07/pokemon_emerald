@@ -15,11 +15,10 @@ gUnknown_820DA91: @ 0x0820DA91
 	.byte 0x0B, 0x02, 0x02, 0x00, 0x00
 	setdooropen 0x20DE, 0xAF08
 	buffertrainername 0x20, 0x0208
-	.globl gUnknown_820DA9F
-gUnknown_820DA9F: @ 0x0820DA9F
 	@ analyzed canonical ROM range 0x0820DA9F-0x0820DACA
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_0820DA9F: @ 0x0820DA9F
+.globl EventScript_JP_0820DA9F
 EventScript_JP_0820DA9F: @ 0x0820DA9F
 	lockall
 	checkplayergender

@@ -235,8 +235,8 @@ def build_replacement(rom: bytes, labels: dict[int, list[str]]) -> str:
     lines = [
         "\t.globl gEventObjectMovementData_084E401C",
         "gEventObjectMovementData_084E401C:",
-        "\t.globl gUnknown_84E401C",
-        "gUnknown_84E401C: @ 0x084E401C",
+        "\t.globl sObjectEventSpritePalettes",
+        "sObjectEventSpritePalettes: @ 0x084E401C",
         "\t@ ObjectEvent SpritePalette table used by PatchObjectPalette.",
         "sAnalyzedData_084E401C:",
         "sObjectEventSpritePalettes: @ 0x084E401C",
@@ -266,8 +266,8 @@ def build_replacement(rom: bytes, labels: dict[int, list[str]]) -> str:
             "\t@ pret/pokeemerald-jp direct xref for 0x084E4154: event_object_movement.s: LoadPlayerObjectReflectionPalette",
             "\t.globl gEventObjectMovementData_084E4154",
             "gEventObjectMovementData_084E4154:",
-            "\t.globl gUnknown_84E4154",
-            "gUnknown_84E4154: @ 0x084E4154",
+            "\t.globl sPlayerObjectReflectionPaletteOverrides",
+            "sPlayerObjectReflectionPaletteOverrides: @ 0x084E4154",
             "\t@ ObjectEvent reflection palette override table.",
             "sAnalyzedData_084E4154:",
         ]
@@ -284,8 +284,8 @@ def build_replacement(rom: bytes, labels: dict[int, list[str]]) -> str:
             "\t@ pret/pokeemerald-jp direct xref for 0x084E41CC: event_object_movement.s: GetObjectPaletteTag, LoadSpecialObjectReflectionPalette",
             "\t.globl gEventObjectMovementData_084E41CC",
             "gEventObjectMovementData_084E41CC:",
-            "\t.globl gUnknown_84E41CC",
-            "gUnknown_84E41CC: @ 0x084E41CC",
+            "\t.globl sSpecialObjectReflectionPaletteOverrides",
+            "sSpecialObjectReflectionPaletteOverrides: @ 0x084E41CC",
             "\t@ ObjectEvent special reflection palette override table.",
             "sAnalyzedData_084E41CC:",
         ]

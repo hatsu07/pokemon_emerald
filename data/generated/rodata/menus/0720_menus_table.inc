@@ -18,12 +18,11 @@ gUnknown_852B3E8: @ 0x0852B3E8
 	.4byte PopOutOfAshHiddenTrainer
 	.4byte JumpInPlaceHiddenTrainer
 	.4byte WaitRevealHiddenTrainer
-	.globl gUnknown_852B418
-gUnknown_852B418: @ 0x0852B418
 	@ confirmed contiguous ROM pointer table: 4 entries from this address
 sPointerTable_0852B418:
 	@ ANALYSIS: SOURCE_RANGE offset=0x52B418, size=0x48
 	@ semantic recovery: rodata; byte-verified against linked ROM
+.globl FunctionPointerTable_JP_0852B418
 FunctionPointerTable_JP_0852B418: @ 0x0852B418
 	@ proven function-pointer table
 	.4byte RevealHiddenTrainer

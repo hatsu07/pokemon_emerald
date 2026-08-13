@@ -1,8 +1,7 @@
-	.globl gUnknown_82566C6
-gUnknown_82566C6: @ 0x082566C6
 	@ analyzed canonical ROM range 0x082566C6-0x0825670F
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_082566C6: @ 0x082566C6
+.globl EventScript_JP_082566C6
 EventScript_JP_082566C6: @ 0x082566C6
 	lockall
 	dofieldeffect 0x0025

@@ -8,7 +8,7 @@
   "gunknown_82f0d65_remaining": 8768,
   "incbin_blocks": [
     {
-      "label": "gUnknown_82F0D54",
+      "label": "gSpeciesInfo",
       "offset": "0x2f0d54",
       "size": 12
     },

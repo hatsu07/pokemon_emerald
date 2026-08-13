@@ -1,8 +1,7 @@
-	.globl gUnknown_82568EA
-gUnknown_82568EA: @ 0x082568EA
 	@ analyzed canonical ROM range 0x082568EA-0x08256934
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_082568EA: @ 0x082568EA
+.globl EventScript_JP_082568EA
 EventScript_JP_082568EA: @ 0x082568EA
 	lockall
 	checkpartymove 0x0123
@@ -30,11 +29,10 @@ EventScript_08256933: @ 0x08256933
 EventScript_JP_08256933: @ 0x08256933
 	releaseall
 	end
-	.globl gUnknown_8256935
-gUnknown_8256935: @ 0x08256935
 	@ analyzed canonical ROM range 0x08256935-0x08256984
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08256935: @ 0x08256935
+.globl EventScript_JP_08256935
 EventScript_JP_08256935: @ 0x08256935
 	lockall
 	checkpartymove 0x0123

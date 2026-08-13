@@ -1,8 +1,7 @@
-	.globl gUnknown_81DDDF3
-gUnknown_81DDDF3: @ 0x081DDDF3
 	@ analyzed canonical ROM range 0x081DDDF3-0x081DDE14
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_081DDDF3: @ 0x081DDDF3
+.globl EventScript_JP_081DDDF3
 EventScript_JP_081DDDF3: @ 0x081DDDF3
 	lockall
 	pokenavcall gText_Rom_1DE1A8

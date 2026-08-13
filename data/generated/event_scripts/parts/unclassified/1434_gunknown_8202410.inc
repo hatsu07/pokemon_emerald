@@ -1,8 +1,7 @@
-	.globl gUnknown_8202410
-gUnknown_8202410: @ 0x08202410
 	@ analyzed canonical ROM range 0x08202410-0x08202431
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08202410: @ 0x08202410
+.globl EventScript_JP_08202410
 EventScript_JP_08202410: @ 0x08202410
 	lockall
 	pokenavcall gText_Rom_2029DC

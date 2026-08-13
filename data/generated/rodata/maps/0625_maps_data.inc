@@ -13,9 +13,8 @@ sObjectReflectionPaletteSlots: @ 0x0846FA18
 	.globl sCameraObjectSpriteTemplate
 sCameraObjectSpriteTemplate:
 	rodata_sprite_template 0x0000, 0xFFFF, 0x082BF2F8, 0x082BF304, 0, 0x082BF310, 0x0808E6E9
-	.globl gUnknown_846FA40
-gUnknown_846FA40: @ 0x0846FA40
 sFieldObjectData_846FA40:
+.globl sFieldObjectCallbackTable_846FA40
 sFieldObjectCallbackTable_846FA40:
 	.4byte CameraObject_0 @ +0x0
 	.4byte CameraObject_1 @ +0x4

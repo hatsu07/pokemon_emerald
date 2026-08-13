@@ -42,8 +42,6 @@ sLz77Block_082D277C:
 	@ sBirchSpeechBgGradientPal. These emit no bytes.
 	.globl gMainMenuData_082D28A6
 	.set gMainMenuData_082D28A6, sBirchSpeechBgGradientPal
-	.globl gUnknown_82D28A6
-	.set gUnknown_82D28A6, sBirchSpeechBgGradientPal
 
 	.globl gMainMenuData_082D28A8
 	.set gMainMenuData_082D28A8, sBirchSpeechBgGradientPal + 2
@@ -62,8 +60,6 @@ sBirchSpeechBgGradientPal: @ 0x082D28A6
 	.2byte 0 @ alignment
 	.globl gMainMenuData_082D28A6
 gMainMenuData_082D28A6 = sBirchSpeechBgGradientPal
-	.globl gUnknown_82D28A6
-gUnknown_82D28A6 = sBirchSpeechBgGradientPal
 	.globl sWindowTemplates_MainMenu
 sWindowTemplates_MainMenu: @ 0x082D28C8
 	window_template 0, 2, 1, 26, 2, 15, 0x001
@@ -82,8 +78,6 @@ gMainMenuData_082D28C8 = sWindowTemplates_MainMenu
 gMainMenuData_082D28D8 = sWindowTemplates_MainMenu + 0x10
 	.globl gMainMenuData_082D2900
 gMainMenuData_082D2900 = sWindowTemplates_MainMenu + 0x38
-	.globl gUnknown_82D28C8
-gUnknown_82D28C8 = sWindowTemplates_MainMenu
 	.globl gUnknown_82D28D8
 gUnknown_82D28D8 = sWindowTemplates_MainMenu + 0x10
 	.globl gUnknown_82D2900
@@ -100,8 +94,6 @@ sNewGameBirchSpeechTextWindows: @ 0x082D2910
 gMainMenuData_082D2910 = sNewGameBirchSpeechTextWindows
 	.globl gMainMenuData_082D2918
 gMainMenuData_082D2918 = sNewGameBirchSpeechTextWindows + 8
-	.globl gUnknown_82D2910
-gUnknown_82D2910 = sNewGameBirchSpeechTextWindows
 	.globl gUnknown_82D2918
 gUnknown_82D2918 = sNewGameBirchSpeechTextWindows + 8
 	.globl sMainMenuBgPal
@@ -171,22 +163,6 @@ gMainMenuData_082D2980 = sBirchBgTemplate
 gMainMenuData_082D2984 = sScrollArrowsTemplate_MainMenu
 	.globl gMainMenuData_082D29A4
 gMainMenuData_082D29A4 = sSpriteAffineAnimTable_PlayerShrink
-	.globl gUnknown_82D2930
-gUnknown_82D2930 = sMainMenuBgPal
-	.globl gUnknown_82D2950
-gUnknown_82D2950 = sMainMenuTextPal
-	.globl gUnknown_82D2970
-gUnknown_82D2970 = sTextColor_Headers
-	.globl gUnknown_82D2973
-gUnknown_82D2973 = sTextColor_MenuInfo
-	.globl gUnknown_82D2978
-gUnknown_82D2978 = sMainMenuBgTemplates
-	.globl gUnknown_82D2980
-gUnknown_82D2980 = sBirchBgTemplate
-	.globl gUnknown_82D2984
-gUnknown_82D2984 = sScrollArrowsTemplate_MainMenu
-	.globl gUnknown_82D29A4
-gUnknown_82D29A4 = sSpriteAffineAnimTable_PlayerShrink
 	.globl gUnknown_82D29A8
 gUnknown_82D29A8: @ 0x082D29A8
 	.4byte gText_Rom_5C8E92

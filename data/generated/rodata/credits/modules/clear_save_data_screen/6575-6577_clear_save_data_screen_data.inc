@@ -10,8 +10,6 @@ gText_ClearAllSaveDataPrompt:
 	.if (. - gText_Rom_5CDB60) < 0x1a
 	.space 0x1a - (. - gText_Rom_5CDB60)
 	.endif
-	.globl gUnknown_85CDB7A
-gUnknown_85CDB7A: @ 0x085CDB7A
 
 	@ asm/clear_save_data_screen.s:97 Task_ClearSaveDataScreenYesNoChoice
 	.globl gText_Rom_5CDB7A
