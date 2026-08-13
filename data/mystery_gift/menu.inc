@@ -19,18 +19,8 @@ sTextboxBorder_Pal:
 	.2byte 0x0000 @ RGB5(0, 0, 0)
 sTextboxBorder_Gfx:
 	@ GBA LZ77 stream, decompressed size 0x100 bytes.
-	.4byte 0x00010010
-	.4byte 0xF0000033
-	.4byte 0x22019001
-	.4byte 0x9001F022
-	.4byte 0x11113301
-	.4byte 0x019001F0
-	.4byte 0x01F04444
-	.4byte 0xF0FE0190
-	.4byte 0xF001F071
-	.4byte 0xF001F001
-	.4byte 0xF001F001
-	.4byte 0x00000001
+	@ Mystery Gift textbox border tiles; exact LZ77 rebuilt from editable PNG.
+	.incbin "build/graphics/mystery_gift/textbox_border.4bpp.lz"
 sBGTemplates:
 	.4byte 0x000000F8 @ BG0: charBase=2, mapBase=15, priority=0
 	.4byte 0x000010E1 @ BG1: charBase=0, mapBase=14, priority=1

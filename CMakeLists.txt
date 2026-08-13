@@ -127,7 +127,7 @@ set(GRAPHICS_RELATIVE_OUTPUTS)
 foreach(SCAN_FILE IN LISTS GRAPHICS_SCAN_FILES)
     file(READ "${SCAN_FILE}" SCAN_CONTENT)
     string(REGEX MATCHALL
-        "build/graphics/[A-Za-z0-9_./-]+\\.(1bpp|4bpp(\\.lz)?|8bpp(\\.lz)?|gbapal(\\.lz)?|hwjpnfont|latfont|bin\\.lz)"
+        "build/graphics/[A-Za-z0-9_./-]+\\.(1bpp|4bpp\\.(lz|rl)|4bpp|8bpp\\.lz|8bpp|gbapal\\.lz|gbapal|hwjpnfont|latfont|bin\\.(lz|rl))"
         FOUND_GRAPHICS
         "${SCAN_CONTENT}")
     list(APPEND GRAPHICS_RELATIVE_OUTPUTS ${FOUND_GRAPHICS})
@@ -1325,6 +1325,87 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             DEPENDS
                 "${INPUT_PNG}"
                 "${GBAGFX}"
+            VERBATIM)
+
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/door_anims/(.+)\\.4bpp$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/door_anims/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/picture_frame/(.+)\\.4bpp\\.rl$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/picture_frame/${STEM}.png")
+        set(RLE_PLAN_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/picture_frame/rle_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rle_exact.py"
+                repack-png
+                --manifest "${RLE_PLAN_MANIFEST}"
+                --stem "${STEM}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${RLE_PLAN_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/rle_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/picture_frame/(.+)\\.bin\\.rl$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_INC "${CMAKE_SOURCE_DIR}/graphics/picture_frame/${STEM}.tilemap.inc")
+        set(RLE_PLAN_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/picture_frame/rle_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rle_exact.py"
+                repack-inc
+                --manifest "${RLE_PLAN_MANIFEST}"
+                --stem "${STEM}"
+                "${INPUT_INC}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_INC}"
+                "${RLE_PLAN_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/rle_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/mystery_gift/(.+)\\.4bpp\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/mystery_gift/${STEM}.png")
+        set(LZ77_PLAN_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/mystery_gift/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${LZ77_PLAN_MANIFEST}"
+                --stem "${STEM}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${LZ77_PLAN_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
 
     elseif("${RELATIVE_OUTPUT}" MATCHES
