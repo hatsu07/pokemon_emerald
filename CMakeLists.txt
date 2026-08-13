@@ -856,6 +856,30 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END BERRY EXACT PIPELINE
 
+    # BEGIN GENERIC RAW LZ77 EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/assets/lz77_raw/([0-9A-Fa-f]{8})[.]bin[.]lz$")
+        set(LZ77_RAW_KEY "${CMAKE_MATCH_1}")
+        set(LZ77_RAW_MANIFEST
+            "${CMAKE_SOURCE_DIR}/assets/lz77_raw/lz77_exact_plan.json")
+        set(LZ77_RAW_INPUT
+            "${CMAKE_SOURCE_DIR}/assets/lz77_raw/${LZ77_RAW_KEY}.bin")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_raw_exact_assets.py"
+                --manifest "${LZ77_RAW_MANIFEST}"
+                --key "${LZ77_RAW_KEY}"
+                "${LZ77_RAW_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LZ77_RAW_INPUT}"
+                "${LZ77_RAW_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_raw_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END GENERIC RAW LZ77 EXACT PIPELINE
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/priority_b/(.+)[.]4bpp[.]lz$")
         set(PRIORITY_B_STEM "${CMAKE_MATCH_1}")
