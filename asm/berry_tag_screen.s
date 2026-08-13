@@ -365,7 +365,7 @@ _08177E04:
 	adds r1, r1, r0
 	b _08177EBE
 	.align 2, 0
-_08177E1C: .4byte gBerryTagScreenData_08D9C3E4
+_08177E1C: .4byte gBerryTag_Tilemap
 _08177E20: .4byte 0x00001808
 _08177E24:
 	ldr r0, _08177E50

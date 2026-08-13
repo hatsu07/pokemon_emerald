@@ -764,6 +764,98 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END MAIL EXACT PIPELINE
 
+    # BEGIN BERRY EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/bag/berry_tag_tilemap.bin.lz")
+        set(BERRY_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/berries/berry_lz77_plan.json")
+        set(BERRY_TAG_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/bag/berry_tag.tilemap.inc")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                tilemap
+                --manifest "${BERRY_EXACT_MANIFEST}"
+                --key berry_tag_tilemap
+                "${BERRY_TAG_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BERRY_TAG_TILEMAP}"
+                "${BERRY_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/bag/check_berry_circle.4bpp.lz")
+        set(BERRY_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/berries/berry_lz77_plan.json")
+        set(BERRY_CHECK_CIRCLE
+            "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_circle.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                pic
+                --manifest "${BERRY_EXACT_MANIFEST}"
+                --key berry_check_circle
+                "${BERRY_CHECK_CIRCLE}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BERRY_CHECK_CIRCLE}"
+                "${BERRY_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/berries/([^/]+)[.]4bpp[.]lz$")
+        set(BERRY_EXACT_NAME "${CMAKE_MATCH_1}")
+        set(BERRY_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/berries/berry_lz77_plan.json")
+        set(BERRY_EXACT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/berries/${BERRY_EXACT_NAME}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                pic
+                --manifest "${BERRY_EXACT_MANIFEST}"
+                --key "${BERRY_EXACT_NAME}_pic"
+                "${BERRY_EXACT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BERRY_EXACT_PNG}"
+                "${BERRY_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/berries/([^/]+)[.]gbapal[.]lz$")
+        set(BERRY_EXACT_NAME "${CMAKE_MATCH_1}")
+        set(BERRY_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/berries/berry_lz77_plan.json")
+        set(BERRY_EXACT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/berries/${BERRY_EXACT_NAME}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                pal
+                --manifest "${BERRY_EXACT_MANIFEST}"
+                --key "${BERRY_EXACT_NAME}_pal"
+                "${BERRY_EXACT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BERRY_EXACT_PNG}"
+                "${BERRY_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END BERRY EXACT PIPELINE
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/priority_b/(.+)[.]4bpp[.]lz$")
         set(PRIORITY_B_STEM "${CMAKE_MATCH_1}")
