@@ -167,7 +167,7 @@ gUnknown_85920B4: @ 0x085920B4
 	.4byte sub_08136AC0
 	.4byte gText_Rom_5C93A7
 	.4byte sub_08136B24
-	.4byte gText_Rom_5C93C8
+	.4byte gText_Exit
 	.4byte sub_08136E58
 	.4byte gText_Rom_5C93A3
 	.4byte sub_08136CFC
@@ -546,7 +546,7 @@ gFieldSpecialsData_08592738: @ 0x08592738
 gFieldSpecialsData_0859274C: @ 0x0859274C
 	@ analyzed canonical ROM range 0x0859274C-0x08592A8B
 	@ pointer/nullable table
-	.4byte gText_Rom_5C93C8 @ +0x0
+	.4byte gText_Exit @ +0x0
 	@ ANALYSIS: RAW_BLOCK size=0x3C
 	.4byte 0 @ +0x4
 	.4byte 0 @ +0x8
@@ -570,7 +570,7 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Rom_5CB060 @ +0x50
 	.4byte gText_Rom_5CB068 @ +0x54
 	.4byte gText_Rom_5CB06F @ +0x58
-	.4byte gText_Rom_5C93C8 @ +0x5C
+	.4byte gText_Exit @ +0x5C
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.4byte 0 @ +0x60
 	.4byte 0 @ +0x64
@@ -607,7 +607,7 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Rom_5CC09E @ +0xDC
 	.4byte gText_Rom_5CC0AD @ +0xE0
 	.4byte gText_Rom_5CC0BC @ +0xE4
-	.4byte gText_Rom_5C93C8 @ +0xE8
+	.4byte gText_Exit @ +0xE8
 	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0 @ +0xEC
 	.4byte 0 @ +0xF0
@@ -619,7 +619,7 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Rom_5CC0E9 @ +0x108
 	.4byte gText_Rom_5CC0F8 @ +0x10C
 	.4byte gText_Rom_5CC107 @ +0x110
-	.4byte gText_Rom_5C93C8 @ +0x114
+	.4byte gText_Exit @ +0x114
 	@ ANALYSIS: RAW_BLOCK size=0x28
 	.4byte 0 @ +0x118
 	.4byte 0 @ +0x11C
@@ -637,7 +637,7 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Rom_5CC143 @ +0x14C
 	.4byte gText_Rom_5CC152 @ +0x150
 	.4byte gText_Rom_5CC161 @ +0x154
-	.4byte gText_Rom_5C93C8 @ +0x158
+	.4byte gText_Exit @ +0x158
 	@ ANALYSIS: RAW_BLOCK size=0x24
 	.4byte 0 @ +0x15C
 	.4byte 0 @ +0x160
@@ -657,7 +657,7 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Rom_5CC1CA @ +0x198
 	.4byte gText_Rom_5CC1D9 @ +0x19C
 	.4byte gText_Rom_5CC1E8 @ +0x1A0
-	.4byte gText_Rom_5C93C8 @ +0x1A4
+	.4byte gText_Exit @ +0x1A4
 	@ ANALYSIS: RAW_BLOCK size=0x18
 	.4byte 0 @ +0x1A8
 	.4byte 0 @ +0x1AC
@@ -676,7 +676,7 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Rom_5CB14B @ +0x1E0
 	.4byte gText_Rom_5CB15B @ +0x1E4
 	.4byte gText_Rom_5CB16B @ +0x1E8
-	.4byte gText_Rom_5C93C8 @ +0x1EC
+	.4byte gText_Exit @ +0x1EC
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0 @ +0x1F0
 	.4byte 0 @ +0x1F4
@@ -691,7 +691,7 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Rom_5CC452 @ +0x218
 	.4byte gText_Rom_5CB17B @ +0x21C
 	.4byte gText_Rom_5CB184 @ +0x220
-	.4byte gText_Rom_5C93C8 @ +0x224
+	.4byte gText_Exit @ +0x224
 	@ ANALYSIS: RAW_BLOCK size=0x18
 	.4byte 0 @ +0x228
 	.4byte 0 @ +0x22C
@@ -709,7 +709,7 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Rom_5CC259 @ +0x25C
 	.4byte gText_Rom_5CC267 @ +0x260
 	.4byte gText_Rom_5CC275 @ +0x264
-	.4byte gText_Rom_5C93C8 @ +0x268
+	.4byte gText_Exit @ +0x268
 	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0 @ +0x26C
 	.4byte 0 @ +0x270
@@ -726,7 +726,7 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Rom_5CC2E5 @ +0x29C
 	.4byte gText_Rom_5CC2F3 @ +0x2A0
 	.4byte gText_Rom_5CC301 @ +0x2A4
-	.4byte gText_Rom_5C93C8 @ +0x2A8
+	.4byte gText_Exit @ +0x2A8
 	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0 @ +0x2AC
 	.4byte 0 @ +0x2B0
@@ -739,7 +739,7 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Rom_5CAE0B @ +0x2CC
 	.4byte gText_Rom_5CADF9 @ +0x2D0
 	.4byte gText_Rom_5CAE02 @ +0x2D4
-	.4byte gText_Rom_5C93C8 @ +0x2D8
+	.4byte gText_Exit @ +0x2D8
 	@ ANALYSIS: RAW_BLOCK size=0x24
 	.4byte 0 @ +0x2DC
 	.4byte 0 @ +0x2E0
@@ -757,7 +757,7 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Rom_5CAF7F @ +0x30C
 	.4byte gText_Rom_5CAF87 @ +0x310
 	.4byte gText_Rom_5CAF93 @ +0x314
-	.4byte gText_Rom_5C93C8 @ +0x318
+	.4byte gText_Exit @ +0x318
 	@ ANALYSIS: RAW_BLOCK size=0x24
 	.4byte 0 @ +0x31C
 	.4byte 0 @ +0x320
@@ -899,7 +899,7 @@ gUnknown_8592BCC: @ 0x08592BCC
 	.4byte gText_Rom_2367D7
 	.4byte gText_Rom_2367F7
 	.4byte gText_Rom_236817
-	.4byte gText_Rom_5C93C8
+	.4byte gText_Exit
 	.globl gUnknown_8592BF8
 gUnknown_8592BF8: @ 0x08592BF8
 	.4byte gText_Rom_236836
@@ -907,7 +907,7 @@ gUnknown_8592BF8: @ 0x08592BF8
 	.4byte gText_Rom_236836
 	.4byte gText_Rom_236836
 	.4byte gText_Rom_236836
-	.4byte gText_Rom_5C93C8
+	.4byte gText_Exit
 	.globl gUnknown_8592C10
 gUnknown_8592C10: @ 0x08592C10
 	.4byte gText_Rom_236854
@@ -916,7 +916,7 @@ gUnknown_8592C10: @ 0x08592C10
 	.4byte gText_Rom_23688A
 	.4byte gText_Rom_23689C
 	.4byte gText_Rom_2368AE
-	.4byte gText_Rom_5C93C8
+	.4byte gText_Exit
 	.globl gUnknown_8592C2C
 gUnknown_8592C2C: @ 0x08592C2C
 	.4byte gText_Rom_2368C1
@@ -928,7 +928,7 @@ gUnknown_8592C2C: @ 0x08592C2C
 	.4byte gText_Rom_236987
 	.4byte gText_Rom_2369AA
 	.4byte gText_Rom_2369CA
-	.4byte gText_Rom_5C93C8
+	.4byte gText_Exit
 	@ pret/pokeemerald-jp direct xref for 0x08592C54: field_specials.s: sub_0813ACC8, sub_0813AEEC
 	.globl gFieldSpecialsData_08592C54
 gFieldSpecialsData_08592C54: @ 0x08592C54
@@ -964,7 +964,7 @@ gUnknown_8592C84: @ 0x08592C84
 	.4byte gText_Rom_23A0D9
 	.4byte gText_Rom_23A0F2
 	.4byte gText_Rom_23A10D
-	.4byte gText_Rom_5C93C8
+	.4byte gText_Exit
 	.globl gUnknown_8592CB0
 gUnknown_8592CB0: @ 0x08592CB0
 	.4byte gText_Rom_23A127
@@ -977,7 +977,7 @@ gUnknown_8592CB0: @ 0x08592CB0
 	.4byte gText_Rom_23A1DA
 	.4byte gText_Rom_23A1F5
 	.4byte gText_Rom_23A210
-	.4byte gText_Rom_5C93C8
+	.4byte gText_Exit
 	@ pret/pokeemerald-jp direct xref for 0x08592CDC: field_specials.s: ChangeDeoxysRockLevel, sub_0813B208
 	.globl gFieldSpecialsData_08592CDC
 gFieldSpecialsData_08592CDC: @ 0x08592CDC

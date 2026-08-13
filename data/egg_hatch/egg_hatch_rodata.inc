@@ -1,9 +1,13 @@
 @ Egg hatch graphics and sprite metadata.
 
-	.globl gUnknown_82FC0FE
-gUnknown_82FC0FE: @ 0x082FC0FE
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.byte 0xF9, 0x05, 0xFF, 0x00
+	.globl gText_Lv
+gText_Lv: @ 0x082FC0FE
+	@ JP charmap LV_2 (F9 05), EOS (FF), then alignment.
+	.byte 0xF9, 0x05, 0xFF
+	.byte 0x00 @ alignment
+	.if (. - gText_Lv) != 4
+	.error "gText_Lv size changed"
+	.endif
 
 sEggPalette: @ 0x082FC102
 	.incbin "build/graphics/pokemon/egg/normal.gbapal"

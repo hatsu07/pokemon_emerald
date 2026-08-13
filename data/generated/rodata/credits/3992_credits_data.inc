@@ -19,9 +19,9 @@ gOptionMenuData_085C8C20: @ 0x085C8C20
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x00, 0x02, 0x03, 0x00
-	.globl gUnknown_85C8C24
-gUnknown_85C8C24: @ 0x085C8C24
-	.space 0x1, 0xFF
+	.globl gText_ExpandedPlaceholder_Empty
+gText_ExpandedPlaceholder_Empty: @ 0x085C8C24
+	.byte 0xFF @ EOS-only empty expanded-placeholder text
 	.globl gUnknown_85C8C25
 gUnknown_85C8C25: @ 0x085C8C25
 	@ Decoded text from ROM range: offset=0x5C8C25, size=0x3

@@ -421,7 +421,7 @@ sPointerTable_085DF7EC:
 	.4byte ItemMenu_Register @ ROM pointer 0x081ACFE5
 	.4byte gText_Rom_5C93B0 @ ROM pointer 0x085C93B0
 	.4byte ItemMenu_Give @ ROM pointer 0x081AD071
-	.4byte gUnknown_85C93C8 @ ROM pointer 0x085C93C8
+	.4byte gText_Exit @ ROM pointer 0x085C93C8
 	.4byte ItemMenu_Cancel @ ROM pointer 0x081AD191
 	.4byte gText_Rom_5C93A3 @ ROM pointer 0x085C93A3
 	.4byte ItemMenu_UseInBattle @ ROM pointer 0x081AD1D5

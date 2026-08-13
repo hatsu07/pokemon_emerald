@@ -116,14 +116,14 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CA9FF @ +0x10
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x14
-	.4byte gText_Rom_5C93C8 @ +0x18
+	.4byte gText_Exit @ +0x18
 	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0 @ +0x1C
 	.4byte 0x085CAA0E @ +0x20
 	.4byte 0 @ +0x24
 	.4byte 0x085CAA15 @ +0x28
 	.4byte 0 @ +0x2C
-	.4byte gText_Rom_5C93C8 @ +0x30
+	.4byte gText_Exit @ +0x30
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.4byte 0 @ +0x34
 	.4byte 0x085CAA1D @ +0x38
@@ -133,7 +133,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0x44
 	.4byte 0x085CAA36 @ +0x48
 	.4byte 0 @ +0x4C
-	.4byte gText_Rom_5C93C8 @ +0x50
+	.4byte gText_Exit @ +0x50
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x54
 	.4byte gText_Rom_5CAA4A @ +0x58
@@ -151,7 +151,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAA74 @ +0x78
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x7C
-	.4byte gText_Rom_5C93C8 @ +0x80
+	.4byte gText_Exit @ +0x80
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x84
 	.4byte gText_Rom_5CAA7F @ +0x88
@@ -161,7 +161,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0x94
 	.4byte 0x085CAA8F @ +0x98
 	.4byte 0 @ +0x9C
-	.4byte gText_Rom_5C93C8 @ +0xA0
+	.4byte gText_Exit @ +0xA0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0xA4
 	.4byte gText_Rom_5CAA7F @ +0xA8
@@ -169,7 +169,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0xAC
 	.4byte 0x085CAA85 @ +0xB0
 	.4byte 0 @ +0xB4
-	.4byte gText_Rom_5C93C8 @ +0xB8
+	.4byte gText_Exit @ +0xB8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0xBC
 	.4byte gText_Rom_5C93AB @ +0xC0
@@ -179,7 +179,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0xCC
 	.4byte 0x085CAA98 @ +0xD0
 	.4byte 0 @ +0xD4
-	.4byte gText_Rom_5C93C8 @ +0xD8
+	.4byte gText_Exit @ +0xD8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0xDC
 	.4byte gText_Rom_5CAAA2 @ +0xE0
@@ -201,13 +201,13 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAAB8 @ +0x110
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x114
-	.4byte gText_Rom_5C93C8 @ +0x118
+	.4byte gText_Exit @ +0x118
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x11C
 	.4byte gText_Rom_5CAA0B @ +0x120
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x124
-	.4byte gText_Rom_5C93C8 @ +0x128
+	.4byte gText_Exit @ +0x128
 	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0 @ +0x12C
 	.4byte 0x085CAACE @ +0x130
@@ -226,7 +226,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0x15C
 	.4byte 0x085CAB05 @ +0x160
 	.4byte 0 @ +0x164
-	.4byte gText_Rom_5C93C8 @ +0x168
+	.4byte gText_Exit @ +0x168
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x16C
 	.4byte gText_Rom_5CAB0D @ +0x170
@@ -235,7 +235,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAB13 @ +0x178
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x17C
-	.4byte gText_Rom_5C93C8 @ +0x180
+	.4byte gText_Exit @ +0x180
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x184
 	.4byte gText_Rom_24C395 @ +0x188
@@ -360,7 +360,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0x2FC
 	.4byte 0x085CAB33 @ +0x300
 	.4byte 0 @ +0x304
-	.4byte gText_Rom_5C93C8 @ +0x308
+	.4byte gText_Exit @ +0x308
 	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0 @ +0x30C
 	.4byte 0x085CAB3F @ +0x310
@@ -370,7 +370,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAB4B @ +0x320
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x324
-	.4byte gText_Rom_5C93C8 @ +0x328
+	.4byte gText_Exit @ +0x328
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x32C
 	.4byte gText_Rom_5CAB51 @ +0x330
@@ -382,7 +382,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAB5B @ +0x340
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x344
-	.4byte gText_Rom_5C93C8 @ +0x348
+	.4byte gText_Exit @ +0x348
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x34C
 	.4byte gText_Rom_5CAB60 @ +0x350
@@ -397,7 +397,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAB71 @ +0x368
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x36C
-	.4byte gText_Rom_5C93C8 @ +0x370
+	.4byte gText_Exit @ +0x370
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x374
 	.4byte gText_Rom_5CAB7A @ +0x378
@@ -420,7 +420,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CABA9 @ +0x3A8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x3AC
-	.4byte gText_Rom_5C93C8 @ +0x3B0
+	.4byte gText_Exit @ +0x3B0
 	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.4byte 0 @ +0x3B4
 	.4byte 0x085CABB1 @ +0x3B8
@@ -429,7 +429,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0x3C4
 	.4byte 0x085CABD1 @ +0x3C8
 	.4byte 0 @ +0x3CC
-	.4byte gText_Rom_5C93C8 @ +0x3D0
+	.4byte gText_Exit @ +0x3D0
 	@ ANALYSIS: RAW_BLOCK size=0x2C
 	.4byte 0 @ +0x3D4
 	.4byte 0x085CAC34 @ +0x3D8
@@ -442,14 +442,14 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0x3F4
 	.4byte 0x085CAC74 @ +0x3F8
 	.4byte 0 @ +0x3FC
-	.4byte gText_Rom_5C93C8 @ +0x400
+	.4byte gText_Exit @ +0x400
 	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0 @ +0x404
 	.4byte 0x085CABE1 @ +0x408
 	.4byte 0 @ +0x40C
 	.4byte 0x085CABEE @ +0x410
 	.4byte 0 @ +0x414
-	.4byte gText_Rom_5C93C8 @ +0x418
+	.4byte gText_Exit @ +0x418
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.4byte 0 @ +0x41C
 	.4byte 0x085CABFB @ +0x420
@@ -463,7 +463,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAC23 @ +0x438
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x43C
-	.4byte gText_Rom_5C93C8 @ +0x440
+	.4byte gText_Exit @ +0x440
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x444
 	.4byte gText_Rom_5CB194 @ +0x448
@@ -472,7 +472,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CB18D @ +0x450
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x454
-	.4byte gText_Rom_5C93C8 @ +0x458
+	.4byte gText_Exit @ +0x458
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.4byte 0 @ +0x45C
 	.4byte 0x085CAC2D @ +0x460
@@ -483,7 +483,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CB18D @ +0x470
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x474
-	.4byte gText_Rom_5C93C8 @ +0x478
+	.4byte gText_Exit @ +0x478
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x47C
 	.4byte gText_Rom_5CB087 @ +0x480
@@ -501,19 +501,19 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CB077 @ +0x4A0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x4A4
-	.4byte gText_Rom_5C93C8 @ +0x4A8
+	.4byte gText_Exit @ +0x4A8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x4AC
 	.4byte gText_Rom_5CAC05 @ +0x4B0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x4B4
-	.4byte gText_Rom_5C93C8 @ +0x4B8
+	.4byte gText_Exit @ +0x4B8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x4BC
 	.4byte gText_Rom_5CAC0C @ +0x4C0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x4C4
-	.4byte gText_Rom_5C93C8 @ +0x4C8
+	.4byte gText_Exit @ +0x4C8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x4CC
 	.4byte gText_Rom_5CAC05 @ +0x4D0
@@ -522,13 +522,13 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAC0C @ +0x4D8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x4DC
-	.4byte gText_Rom_5C93C8 @ +0x4E0
+	.4byte gText_Exit @ +0x4E0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x4E4
 	.4byte gText_Rom_5CAC14 @ +0x4E8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x4EC
-	.4byte gText_Rom_5C93C8 @ +0x4F0
+	.4byte gText_Exit @ +0x4F0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x4F4
 	.4byte gText_Rom_5CAC05 @ +0x4F8
@@ -537,7 +537,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAC14 @ +0x500
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x504
-	.4byte gText_Rom_5C93C8 @ +0x508
+	.4byte gText_Exit @ +0x508
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x50C
 	.4byte gText_Rom_5CAC0C @ +0x510
@@ -546,7 +546,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAC14 @ +0x518
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x51C
-	.4byte gText_Rom_5C93C8 @ +0x520
+	.4byte gText_Exit @ +0x520
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x524
 	.4byte gText_Rom_5CAC05 @ +0x528
@@ -558,13 +558,13 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAC14 @ +0x538
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x53C
-	.4byte gText_Rom_5C93C8 @ +0x540
+	.4byte gText_Exit @ +0x540
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x544
 	.4byte gText_Rom_5CAC1B @ +0x548
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x54C
-	.4byte gText_Rom_5C93C8 @ +0x550
+	.4byte gText_Exit @ +0x550
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x554
 	.4byte gText_Rom_5CAC05 @ +0x558
@@ -573,7 +573,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAC1B @ +0x560
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x564
-	.4byte gText_Rom_5C93C8 @ +0x568
+	.4byte gText_Exit @ +0x568
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x56C
 	.4byte gText_Rom_5CAC0C @ +0x570
@@ -582,7 +582,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAC1B @ +0x578
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x57C
-	.4byte gText_Rom_5C93C8 @ +0x580
+	.4byte gText_Exit @ +0x580
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x584
 	.4byte gText_Rom_5CAC05 @ +0x588
@@ -594,7 +594,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAC1B @ +0x598
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x59C
-	.4byte gText_Rom_5C93C8 @ +0x5A0
+	.4byte gText_Exit @ +0x5A0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x5A4
 	.4byte gText_Rom_5CAC14 @ +0x5A8
@@ -603,7 +603,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAC1B @ +0x5B0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x5B4
-	.4byte gText_Rom_5C93C8 @ +0x5B8
+	.4byte gText_Exit @ +0x5B8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x5BC
 	.4byte gText_Rom_5CAC05 @ +0x5C0
@@ -615,7 +615,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAC1B @ +0x5D0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x5D4
-	.4byte gText_Rom_5C93C8 @ +0x5D8
+	.4byte gText_Exit @ +0x5D8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x5DC
 	.4byte gText_Rom_5CAC0C @ +0x5E0
@@ -627,7 +627,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAC1B @ +0x5F0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x5F4
-	.4byte gText_Rom_5C93C8 @ +0x5F8
+	.4byte gText_Exit @ +0x5F8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x5FC
 	.4byte gText_Rom_5CAC05 @ +0x600
@@ -642,7 +642,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAC1B @ +0x618
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x61C
-	.4byte gText_Rom_5C93C8 @ +0x620
+	.4byte gText_Exit @ +0x620
 	@ ANALYSIS: RAW_BLOCK size=0x24
 	.4byte 0 @ +0x624
 	.4byte 0x085CAD15 @ +0x628
@@ -684,7 +684,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0x69C
 	.4byte 0x085CAE59 @ +0x6A0
 	.4byte 0 @ +0x6A4
-	.4byte gText_Rom_5C93C8 @ +0x6A8
+	.4byte gText_Exit @ +0x6A8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x6AC
 	.4byte gText_Rom_5CAAD8 @ +0x6B0
@@ -706,7 +706,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0x6DC
 	.4byte 0x085CAA15 @ +0x6E0
 	.4byte 0 @ +0x6E4
-	.4byte gText_Rom_5C93C8 @ +0x6E8
+	.4byte gText_Exit @ +0x6E8
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.4byte 0 @ +0x6EC
 	.4byte 0x085CAE4A @ +0x6F0
@@ -717,7 +717,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAE62 @ +0x700
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x704
-	.4byte gText_Rom_5C93C8 @ +0x708
+	.4byte gText_Exit @ +0x708
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.4byte 0 @ +0x70C
 	.4byte 0x085CAE4A @ +0x710
@@ -730,7 +730,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAE62 @ +0x728
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x72C
-	.4byte gText_Rom_5C93C8 @ +0x730
+	.4byte gText_Exit @ +0x730
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.4byte 0 @ +0x734
 	.4byte 0x085CAE4A @ +0x738
@@ -738,14 +738,14 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAE53 @ +0x740
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x744
-	.4byte gText_Rom_5C93C8 @ +0x748
+	.4byte gText_Exit @ +0x748
 	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0 @ +0x74C
 	.4byte 0x085CAE74 @ +0x750
 	.4byte 0 @ +0x754
 	.4byte 0x085CAE80 @ +0x758
 	.4byte 0 @ +0x75C
-	.4byte gText_Rom_5C93C8 @ +0x760
+	.4byte gText_Exit @ +0x760
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x764
 	.4byte gText_Rom_5CAE94 @ +0x768
@@ -754,7 +754,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAE8C @ +0x770
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x774
-	.4byte gText_Rom_5C93C8 @ +0x778
+	.4byte gText_Exit @ +0x778
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x77C
 	.4byte gText_Rom_5CAD33 @ +0x780
@@ -769,7 +769,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAD4B @ +0x798
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x79C
-	.4byte gText_Rom_5C93C8 @ +0x7A0
+	.4byte gText_Exit @ +0x7A0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x7A4
 	.4byte gText_Rom_5CAD69 @ +0x7A8
@@ -777,7 +777,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0x7AC
 	.4byte 0x085CAD70 @ +0x7B0
 	.4byte 0 @ +0x7B4
-	.4byte gText_Rom_5C93C8 @ +0x7B8
+	.4byte gText_Exit @ +0x7B8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x7BC
 	.4byte gText_Rom_5CAD78 @ +0x7C0
@@ -787,14 +787,14 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0x7CC
 	.4byte 0x085CAD8F @ +0x7D0
 	.4byte 0 @ +0x7D4
-	.4byte gText_Rom_5C93C8 @ +0x7D8
+	.4byte gText_Exit @ +0x7D8
 	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0 @ +0x7DC
 	.4byte 0x085CAD9C @ +0x7E0
 	.4byte 0 @ +0x7E4
 	.4byte 0x085CADA5 @ +0x7E8
 	.4byte 0 @ +0x7EC
-	.4byte gText_Rom_5C93C8 @ +0x7F0
+	.4byte gText_Exit @ +0x7F0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x7F4
 	.4byte gText_Rom_5CADAE @ +0x7F8
@@ -828,7 +828,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CADDE @ +0x848
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x84C
-	.4byte gText_Rom_5C93C8 @ +0x850
+	.4byte gText_Exit @ +0x850
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x854
 	.4byte gText_Rom_5CADF1 @ +0x858
@@ -837,7 +837,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CADF9 @ +0x860
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x864
-	.4byte gText_Rom_5C93C8 @ +0x868
+	.4byte gText_Exit @ +0x868
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x86C
 	.4byte gText_Rom_5CADF1 @ +0x870
@@ -846,7 +846,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAE02 @ +0x878
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x87C
-	.4byte gText_Rom_5C93C8 @ +0x880
+	.4byte gText_Exit @ +0x880
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x884
 	.4byte gText_Rom_5CADF9 @ +0x888
@@ -855,7 +855,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAE02 @ +0x890
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x894
-	.4byte gText_Rom_5C93C8 @ +0x898
+	.4byte gText_Exit @ +0x898
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x89C
 	.4byte gText_Rom_5CADF1 @ +0x8A0
@@ -867,7 +867,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAE02 @ +0x8B0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x8B4
-	.4byte gText_Rom_5C93C8 @ +0x8B8
+	.4byte gText_Exit @ +0x8B8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x8BC
 	.4byte gText_Rom_5CAE11 @ +0x8C0
@@ -876,7 +876,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAE18 @ +0x8C8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x8CC
-	.4byte gText_Rom_5C93C8 @ +0x8D0
+	.4byte gText_Exit @ +0x8D0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x8D4
 	.4byte gText_Rom_5CAAD8 @ +0x8D8
@@ -897,7 +897,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0x904
 	.4byte 0x085CAEBF @ +0x908
 	.4byte 0 @ +0x90C
-	.4byte gText_Rom_5C93C8 @ +0x910
+	.4byte gText_Exit @ +0x910
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x914
 	.4byte gText_Rom_5CAEC7 @ +0x918
@@ -908,7 +908,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAED5 @ +0x928
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x92C
-	.4byte gText_Rom_5C93C8 @ +0x930
+	.4byte gText_Exit @ +0x930
 	@ ANALYSIS: RAW_BLOCK size=0x24
 	.4byte 0 @ +0x934
 	.4byte 0x085CAEFE @ +0x938
@@ -919,7 +919,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0x94C
 	.4byte 0x085CAF1C @ +0x950
 	.4byte 0 @ +0x954
-	.4byte gText_Rom_5C93C8 @ +0x958
+	.4byte gText_Exit @ +0x958
 	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0 @ +0x95C
 	.4byte 0x085CAEDD @ +0x960
@@ -931,7 +931,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0x974
 	.4byte 0x085CAEF6 @ +0x978
 	.4byte 0 @ +0x97C
-	.4byte gText_Rom_5C93C8 @ +0x980
+	.4byte gText_Exit @ +0x980
 	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.4byte 0 @ +0x984
 	.4byte 0x085CAF26 @ +0x988
@@ -940,7 +940,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0x994
 	.4byte 0x085CAF36 @ +0x998
 	.4byte 0 @ +0x99C
-	.4byte gText_Rom_5C93C8 @ +0x9A0
+	.4byte gText_Exit @ +0x9A0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x9A4
 	.4byte gText_Rom_5CAF40 @ +0x9A8
@@ -955,7 +955,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAF64 @ +0x9C8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x9CC
-	.4byte gText_Rom_5C93C8 @ +0x9D0
+	.4byte gText_Exit @ +0x9D0
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.4byte 0 @ +0x9D4
 	.4byte 0x085CAF6C @ +0x9D8
@@ -972,7 +972,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAF93 @ +0x9F8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x9FC
-	.4byte gText_Rom_5C93C8 @ +0xA00
+	.4byte gText_Exit @ +0xA00
 	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.4byte 0 @ +0xA04
 	.4byte 0x085CAF9C @ +0xA08
@@ -984,7 +984,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAFC0 @ +0xA20
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0xA24
-	.4byte gText_Rom_5C93C8 @ +0xA28
+	.4byte gText_Exit @ +0xA28
 	@ ANALYSIS: RAW_BLOCK size=0x1C
 	.4byte 0 @ +0xA2C
 	.4byte 0x085CAFC7 @ +0xA30
@@ -993,7 +993,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0xA3C
 	.4byte 0x085CAFDA @ +0xA40
 	.4byte 0 @ +0xA44
-	.4byte gText_Rom_5C93C8 @ +0xA48
+	.4byte gText_Exit @ +0xA48
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0xA4C
 	.4byte gText_Rom_5CAFFA @ +0xA50
@@ -1066,7 +1066,7 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte gText_Rom_5CAFE6 @ +0xB20
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0xB24
-	.4byte gText_Rom_5C93C8 @ +0xB28
+	.4byte gText_Exit @ +0xB28
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0xB2C
 	.4byte gText_Rom_5CAFEF @ +0xB30
@@ -1080,10 +1080,10 @@ gBerryData_085636B0: @ 0x085636B0
 	.4byte 0 @ +0xB4C
 	.4byte 0x085CAF1C @ +0xB50
 	.4byte 0 @ +0xB54
-	.4byte gText_Rom_5C93C8 @ +0xB58
+	.4byte gText_Exit @ +0xB58
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0xB5C
-	.4byte gText_Rom_5C93C8 @ +0xB60
+	.4byte gText_Exit @ +0xB60
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0xB64
 	@ pret/pokeemerald-jp direct xref for 0x08564218: script_menu.s: DrawMultichoiceMenu, sp106_CreateStartMenu
@@ -1201,7 +1201,7 @@ gUnknown_8564620: @ 0x08564620
 	.4byte gText_Rom_5CAE0B
 	.4byte gText_Rom_5CADF9
 	.4byte gText_Rom_5CAE02
-	.4byte gText_Rom_5C93C8
+	.4byte gText_Exit
 	.globl gUnknown_856463C
 gUnknown_856463C: @ 0x0856463C
 	.4byte gText_Rom_247BB3

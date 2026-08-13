@@ -2927,7 +2927,7 @@ _08070A6E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08070ABC: .4byte 0x082FC0FE
+_08070ABC: .4byte gText_Lv
 _08070AC0: .4byte gDaycareData_082FC0F8
 	thumb_func_end GetDaycareLevelMenuLevelText
 
@@ -3069,7 +3069,7 @@ DaycarePrintMonLvl: @ 0x08070B74
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08070BD4: .4byte 0x082FC0FE
+_08070BD4: .4byte gText_Lv
 	thumb_func_end DaycarePrintMonLvl
 
 	thumb_func_start DaycarePrintMonInfo

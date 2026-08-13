@@ -166,7 +166,7 @@ gUnknown_85EF728: @ 0x085EF728
 	.4byte BagAction_Toss
 	.4byte gText_Rom_5C93B0
 	.4byte BagAction_Give
-	.4byte gText_Rom_5C93C8
+	.4byte gText_Exit
 	.4byte BagAction_Cancel
 	.4byte gText_Rom_5C93A3
 	.4byte BagAction_UseInBattle

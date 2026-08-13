@@ -1,3 +1,9 @@
+@ Semantic addresses for battle-interface assets not yet exported across objects.
+.set BattleInterface_BallStatusBarGfx, 0x08D8FBA4 @ gBattleInterface_BallStatusBarGfx
+.set BattleInterface_BallStatusBarPal, 0x08C11BA4 @ gBattleInterface_BallStatusBarPal
+.set BattleInterface_BallDisplayPal, 0x08C11BC4 @ gBattleInterface_BallDisplayPal
+.set BattleInterface_StatusSummaryBallGfx, 0x08C12424 @ gHealthboxElementsGfxTable[HEALTHBOX_GFX_STATUS_BALL]
+
 @ Battle interface sprite templates, subsprites, status summary graphics and colors.
 
 sOamData_64x32: @ 0x082FCB30
@@ -90,16 +96,16 @@ sUnusedStatusSummary: @ 0x082FCCCC
 	.incbin "build/graphics/battle_interface/unused_status_summary.4bpp"
 
 sStatusSummaryBarSpriteSheet: @ 0x082FCD2C
-	rodata_compressed_sprite_sheet 0x08D8FBA4, 0x0200, TAG_STATUS_SUMMARY_BAR_TILE @ gBattleInterface_BallStatusBarGfx
+	rodata_compressed_sprite_sheet BattleInterface_BallStatusBarGfx, 0x0200, TAG_STATUS_SUMMARY_BAR_TILE @ gBattleInterface_BallStatusBarGfx
 
 sStatusSummaryBarSpritePal: @ 0x082FCD34
-	rodata_sprite_palette 0x08C11BA4, TAG_STATUS_SUMMARY_BAR_PAL @ gBattleInterface_BallStatusBarPal
+	rodata_sprite_palette BattleInterface_BallStatusBarPal, TAG_STATUS_SUMMARY_BAR_PAL @ gBattleInterface_BallStatusBarPal
 
 sStatusSummaryBallsSpritePal: @ 0x082FCD3C
-	rodata_sprite_palette 0x08C11BC4, TAG_STATUS_SUMMARY_BALLS_PAL @ gBattleInterface_BallDisplayPal
+	rodata_sprite_palette BattleInterface_BallDisplayPal, TAG_STATUS_SUMMARY_BALLS_PAL @ gBattleInterface_BallDisplayPal
 
 sStatusSummaryBallsSpriteSheet: @ 0x082FCD44
-	rodata_sprite_sheet 0x08C12424, 0x0080, TAG_STATUS_SUMMARY_BALLS_TILE @ gHealthboxElementsGfxTable[HEALTHBOX_GFX_STATUS_BALL]
+	rodata_sprite_sheet BattleInterface_StatusSummaryBallGfx, 0x0080, TAG_STATUS_SUMMARY_BALLS_TILE @ gHealthboxElementsGfxTable[HEALTHBOX_GFX_STATUS_BALL]
 
 sOamData_Unused64x32: @ 0x082FCD4C
 	@ 64x32 horizontal, priority 1.

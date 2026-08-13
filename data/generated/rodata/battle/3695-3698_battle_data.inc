@@ -794,7 +794,7 @@ gUnknown_85C0BE8: @ 0x085C0BE8
 	.4byte Mailbox_MoveToBag
 	.4byte gText_Rom_5CA96B
 	.4byte Mailbox_Give
-	.4byte gText_Rom_5C93C8
+	.4byte gText_Exit
 	.4byte Mailbox_Cancel
 	@ pret/pokeemerald-jp direct xref for 0x085C0C08: player_pc.s: InitPlayerPCMenu
 	.globl gPlayerPcData_085C0C08

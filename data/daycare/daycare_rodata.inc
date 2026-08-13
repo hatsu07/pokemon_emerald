@@ -3,14 +3,16 @@
 	@ 0x082FC04A-0x082FC04B alignment after egg_moves.inc
 	.2byte 0
 
+@ Daycare menu text address aliases.
+@ Used only when no unique exported definition is available in the JP source split.
 sDaycareLevelMenuWindowTemplate: @ 0x082FC04C
 	@ JP layout differs from upstream: left=12, width=17.
 	window_template 0, 12, 1, 17, 6, 15, 8
 
 sLevelMenuItems: @ 0x082FC054
-	rodata_list_menu_item 0x085C8C24, 0 @ gText_ExpandedPlaceholder_Empty
-	rodata_list_menu_item 0x085C8C24, 1 @ gText_ExpandedPlaceholder_Empty
-	rodata_list_menu_item 0x085C93C8, 5 @ gText_Exit / DAYCARE_LEVEL_MENU_EXIT
+	rodata_list_menu_item gText_ExpandedPlaceholder_Empty, 0 @ gText_ExpandedPlaceholder_Empty
+	rodata_list_menu_item gText_ExpandedPlaceholder_Empty, 1 @ gText_ExpandedPlaceholder_Empty
+	rodata_list_menu_item gText_Exit, 5 @ gText_Exit / DAYCARE_LEVEL_MENU_EXIT
 
 sDaycareListMenuLevelTemplate: @ 0x082FC06C
 	@ items, cursor callback, item printer, counts, coordinates and packed style fields.

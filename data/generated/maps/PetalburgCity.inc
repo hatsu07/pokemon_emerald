@@ -51,6 +51,7 @@
 	.set PetalburgCity_Ext_Route102_WatchMeCatchPokemon, 0x081E693C
 	.set PetalburgCity_Ext_Route102_WallyIDidIt, 0x081E6992
 	.set PetalburgCity_Ext_Route102_LetsGoBack, 0x081E69B0
+	.set PetalburgCity_Ext_QuestionMark, 0x08243619
 	.set PetalburgCity_Ext_WallyFaceLeft, 0x08243627
 	.set PetalburgCity_Ext_FacePlayer, 0x08243621
 	.set PetalburgCity_Ext_FaceOriginalDirection, 0x08243625
@@ -60,6 +61,7 @@
 	.set PetalburgCity_Ext_WalkInPlaceFasterUp, 0x08243629
 	.set PetalburgCity_Ext_WalkInPlaceFasterRight, 0x0824362B
 	.set PetalburgCity_Ext_WalkInPlaceFasterDown, 0x0824362D
+	.set PetalburgCity_Ext_FaceUp, 0x08243635
 
 	.macro petalburg_special id:req
 	.byte 0x25

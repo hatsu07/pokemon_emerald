@@ -227,7 +227,7 @@ sPointerTable_085E14C0:
 	.4byte CursorCb_Give @ +0x4
 	.4byte gText_Rom_5C9AAF @ +0x8
 	.4byte CursorCb_Switch @ +0xC
-	.4byte gText_Rom_5C93C8 @ +0x10
+	.4byte gText_Exit @ +0x10
 	.4byte CursorCb_Cancel1 @ +0x14
 	.4byte gText_Rom_5C93D7 @ +0x18
 	.4byte CursorCb_Item @ +0x1C
@@ -241,7 +241,7 @@ sPointerTable_085E14C0:
 	.4byte CursorCb_TakeMail @ +0x3C
 	.4byte gText_Rom_5C9AD8 @ +0x40
 	.4byte CursorCb_Read @ +0x44
-	.4byte gText_Rom_5C93C8 @ +0x48
+	.4byte gText_Exit @ +0x48
 	.4byte CursorCb_Cancel2 @ +0x4C
 	.4byte gText_Rom_5C9AA1 @ +0x50
 	.4byte CursorCb_SendMon @ +0x54
