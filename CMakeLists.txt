@@ -1408,6 +1408,48 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
 
+    # BEGIN POKEMON SEMANTIC PNG PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/pokemon/(.+)/footprint[.]1bpp$")
+        set(POKEMON_SEMANTIC_DIR "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon/${POKEMON_SEMANTIC_DIR}/footprint.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format spinda-1bpp
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/pokemon/(.+)/still_front[.]4bpp[.]lz$")
+        set(POKEMON_SEMANTIC_DIR "${CMAKE_MATCH_1}")
+        set(POKEMON_SEMANTIC_KEY "${POKEMON_SEMANTIC_DIR}/still_front")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon/${POKEMON_SEMANTIC_DIR}/still_front.png")
+        set(POKEMON_STILL_FRONT_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon/still_front_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${POKEMON_STILL_FRONT_PLAN}"
+                --stem "${POKEMON_SEMANTIC_KEY}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${POKEMON_STILL_FRONT_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END POKEMON SEMANTIC PNG PIPELINE
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/pokemon/(.+)\\.4bpp\\.lz$")
         set(STEM "${CMAKE_MATCH_1}")
