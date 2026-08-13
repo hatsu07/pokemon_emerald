@@ -186,5 +186,4 @@ gUnknown_85ED2B4: @ 0x085ED2B4
 	.4byte Task_PrintSkillsPage
 	.4byte Task_PrintBattleMoves
 	.4byte Task_PrintContestMoves
-	.globl gUnknown_85ED2C4
-gUnknown_85ED2C4: @ 0x085ED2C4
+	.globl gText_Rom_5ED2C4

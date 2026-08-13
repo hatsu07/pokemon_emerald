@@ -2989,7 +2989,7 @@ _0808E35C:
 	.align 2, 0
 _0808E380: .4byte gEventObjectMovementData_084E4154
 _0808E384: .4byte 0x000011FF
-_0808E388: .4byte gUnknown_846FA18
+_0808E388: .4byte sObjectReflectionPaletteSlots
 _0808E38C: .4byte 0x02037254
 _0808E390:
 	adds r0, r3, #1
@@ -3049,7 +3049,7 @@ _0808E3D0:
 _0808E3F4: .4byte 0x02037256
 _0808E3F8: .4byte gEventObjectMovementData_084E41CC
 _0808E3FC: .4byte 0x000011FF
-_0808E400: .4byte gUnknown_846FA18
+_0808E400: .4byte sObjectReflectionPaletteSlots
 _0808E404: .4byte 0x02037254
 _0808E408:
 	adds r0, r3, #1

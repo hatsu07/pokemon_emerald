@@ -492,12 +492,11 @@ sLz77Block_08DBA860:
 	@ pret/pokeemerald-jp direct xref for 0x08DBC590: roulette.s: sub_08140694
 	.globl gRouletteData_08DBC590
 gRouletteData_08DBC590:
-	.globl gUnknown_8DBC590
-gUnknown_8DBC590: @ 0x08DBC590
+	.globl sLz77Block_08DBC590
 	@ confirmed GBA LZ77 stream: compressed=0x72C, decompressed=0x2000
 sLz77Block_08DBC590:
 	@ analyzed canonical ROM range 0x08DBC590-0x08DBCCBB
 	.incbin "build/graphics/analyzed/gunknown_8dbc590_08dbc590.4bpp.lz"
 	.if (. - sLz77Block_08DBC590) != 0x72C
-	.error "gUnknown_8DBC590 compressed size mismatch"
+	.error "sLz77Block_08DBC590 compressed size mismatch"
 	.endif

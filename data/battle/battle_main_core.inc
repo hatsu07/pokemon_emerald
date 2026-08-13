@@ -1,8 +1,7 @@
 @ Battle main / battle_util tables decoded from 0475_battle_table.inc.
 @ ROM range: 0x082EC600-0x082EC693.
 
-	.globl gUnknown_82EC600
-gUnknown_82EC600: @ 0x082EC600
+	.globl sTurnActionsFuncsTable
 sTurnActionsFuncsTable:
 	.4byte HandleAction_UseMove
 	.4byte HandleAction_UseItem
@@ -19,8 +18,7 @@ sTurnActionsFuncsTable:
 	.4byte HandleAction_ActionFinished
 	.4byte HandleAction_NothingIsFainted
 
-	.globl gUnknown_82EC638
-gUnknown_82EC638: @ 0x082EC638
+	.globl sEndTurnFuncsTable
 sEndTurnFuncsTable:
 	.4byte HandleEndTurn_ContinueBattle
 	.4byte HandleEndTurn_BattleWon
@@ -34,8 +32,7 @@ sEndTurnFuncsTable:
 	.4byte HandleEndTurn_FinishBattle
 	.4byte HandleEndTurn_FinishBattle
 
-	.globl gUnknown_82EC664
-gUnknown_82EC664: @ 0x082EC664
+	.globl sPkblToEscapeFactor
 sPkblToEscapeFactor:
 	.byte 0, 0, 0 @ reaction row 0
 	.byte 3, 5, 0 @ reaction row 1
@@ -43,19 +40,16 @@ sPkblToEscapeFactor:
 	.byte 1, 2, 0 @ reaction row 3
 	.byte 1, 1, 0 @ reaction row 4
 
-	.globl gUnknown_82EC673
-gUnknown_82EC673: @ 0x082EC673
+	.globl sGoNearCounterToCatchFactor
 sGoNearCounterToCatchFactor:
 	.byte 4, 3, 2, 1
 
-	.globl gUnknown_82EC677
-gUnknown_82EC677: @ 0x082EC677
+	.globl sGoNearCounterToEscapeFactor
 sGoNearCounterToEscapeFactor:
 	.byte 4, 4, 4, 4
 	.byte 0 @ alignment
 
-	.globl gUnknown_82EC67C
-gUnknown_82EC67C: @ 0x082EC67C
+	.globl sSoundMovesTable
 sSoundMovesTable:
 	.2byte MOVE_GROWL @ 45
 	.2byte MOVE_ROAR @ 46

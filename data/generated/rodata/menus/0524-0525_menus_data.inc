@@ -525,14 +525,13 @@ gTradeData_0830ABE4: @ 0x0830ABE4
 	@ pret/pokeemerald-jp direct xref for 0x0830BBE4: trade.s: sub_0807B064
 	.globl gTradeData_0830BBE4
 gTradeData_0830BBE4:
-	.globl gUnknown_830BBE4
-gUnknown_830BBE4: @ 0x0830BBE4
+	.globl sLz77Block_0830BBE4
 	@ confirmed GBA LZ77 stream: compressed=0xFD, decompressed=0x800
 sLz77Block_0830BBE4:
 	@ analyzed canonical ROM range 0x0830BBE4-0x0830BCE3
 	.incbin "build/graphics/analyzed/gunknown_830bbe4_0830bbe4.4bpp.lz"
 	.if (. - sLz77Block_0830BBE4) != 0x100
-	.error "gUnknown_830BBE4 compressed size mismatch"
+	.error "sLz77Block_0830BBE4 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0830BCE4: trade.s: c3_08054588
 	.globl gTradeData_0830BCE4
@@ -616,14 +615,13 @@ gUnknown_830C0E4: @ 0x0830C0E4
 	@ pret/pokeemerald-jp direct xref for 0x0830C104: trade.s: sub_0807B064
 	.globl gTradeData_0830C104
 gTradeData_0830C104:
-	.globl gUnknown_830C104
-gUnknown_830C104: @ 0x0830C104
+	.globl sLz77Block_0830C104
 	@ confirmed GBA LZ77 stream: compressed=0x68E, decompressed=0x1800
 sLz77Block_0830C104:
 	@ analyzed canonical ROM range 0x0830C104-0x0830C793
 	.incbin "build/graphics/analyzed/gunknown_830c104_0830c104.4bpp.lz"
 	.if (. - sLz77Block_0830C104) != 0x690
-	.error "gUnknown_830C104 compressed size mismatch"
+	.error "sLz77Block_0830C104 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0830C794: trade.s: sub_0807B064
 	.globl gTradeData_0830C794
@@ -916,5 +914,4 @@ gTradeData_0830D204: @ 0x0830D204
 	.2byte 0x081A, 0x0000, 0x018B, 0x1619, 0x1042, 0x2A74, 0x0E29, 0x180F
 	.2byte 0x140C, 0x1621, 0x1032, 0x0000, 0x013B, 0x0800, 0x0C01, 0x2A34
 	.2byte 0x1034, 0x262D, 0x1421, 0x0418, 0x103E, 0x0000
-	.globl gUnknown_830D240
-gUnknown_830D240: @ 0x0830D240
+	.globl gText_Rom_30D240

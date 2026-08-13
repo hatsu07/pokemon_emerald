@@ -66,5 +66,4 @@ gUnknown_85DC1F4: @ 0x085DC1F4
 	.4byte Swap_ActionPkmnForSwap
 	.4byte TYPE_POISON
 	.4byte Swap_ActionCancel
-	.globl gUnknown_85DC21C
-gUnknown_85DC21C: @ 0x085DC21C
+	.globl gText_Rom_5DC21C

@@ -1,3 +1,2 @@
-	.globl gUnknown_85CA36F
-gUnknown_85CA36F: @ 0x085CA36F
+	.globl gText_Rom_5CA36F
 

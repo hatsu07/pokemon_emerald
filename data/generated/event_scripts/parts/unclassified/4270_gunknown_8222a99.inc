@@ -1,6 +1,5 @@
 
-	.globl gUnknown_8222A99
-gUnknown_8222A99: @ 0x08222A99
+	.globl EventScript_JP_08222A99
 	@ ANALYSIS: SOURCE_RANGE offset=0x222A99, size=0x2B
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_08222A99: @ 0x08222A99

@@ -444,7 +444,7 @@ _081C4A80:
 	bl decompress_and_copy_tile_data_to_vram
 	b _081C4AE0
 	.align 2, 0
-_081C4A98: .4byte gUnknown_8D9A7CC
+_081C4A98: .4byte sLz77Block_08D9A7CC
 _081C4A9C:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18

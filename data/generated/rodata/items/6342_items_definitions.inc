@@ -1,3 +1,2 @@
-	.globl gUnknown_85CCA18
-gUnknown_85CCA18: @ 0x085CCA18
+	.globl gText_Rom_5CCA18
 

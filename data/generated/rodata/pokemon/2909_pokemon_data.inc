@@ -330,26 +330,24 @@ gFldeffFlashData_085922EC: @ 0x085922EC
 	@ pret/pokeemerald-jp direct xref for 0x085922FC: fldeff_flash.s: sub_08137490, sub_08137648
 	.globl gFldeffFlashData_085922FC
 gFldeffFlashData_085922FC:
-	.globl gUnknown_85922FC
-gUnknown_85922FC: @ 0x085922FC
+	.globl sLz77Block_085922FC
 	@ confirmed GBA LZ77 stream: compressed=0x1E0, decompressed=0x800
 sLz77Block_085922FC:
 	@ analyzed canonical ROM range 0x085922FC-0x085924DB
 	.incbin "build/graphics/analyzed/gunknown_85922fc_085922fc.4bpp.lz"
 	.if (. - sLz77Block_085922FC) != 0x1E0
-	.error "gUnknown_85922FC compressed size mismatch"
+	.error "sLz77Block_085922FC compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085924DC: fldeff_flash.s: sub_08137490, sub_08137648
 	.globl gFldeffFlashData_085924DC
 gFldeffFlashData_085924DC:
-	.globl gUnknown_85924DC
-gUnknown_85924DC: @ 0x085924DC
+	.globl sLz77Block_085924DC
 	@ confirmed GBA LZ77 stream: compressed=0xB1, decompressed=0x400
 sLz77Block_085924DC:
 	@ analyzed canonical ROM range 0x085924DC-0x0859258F
 	.incbin "build/graphics/analyzed/gunknown_85924dc_085924dc.4bpp.lz"
 	.if (. - sLz77Block_085924DC) != 0xB4
-	.error "gUnknown_85924DC compressed size mismatch"
+	.error "sLz77Block_085924DC compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08592590: time_events.s: UpdateShoalTideFlag
 	.globl gTimeEventsData_08592590
@@ -1255,5 +1253,4 @@ gBattleRecordsData_085937D8: @ 0x085937D8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0200, 0x1A01, 0x0F11, 0x0001
-	.globl gUnknown_85937E0
-gUnknown_85937E0: @ 0x085937E0
+	.globl gText_Rom_5937E0

@@ -4140,7 +4140,7 @@ ScrCmd_bufferstdstring: @ 0x0809AAE0
 	bx r1
 	.align 2, 0
 _0809AB18: .4byte gScrcmdData_084E8918
-_0809AB1C: .4byte gUnknown_85645A0
+_0809AB1C: .4byte sPointerTable_085645A0
 	thumb_func_end ScrCmd_bufferstdstring
 
 	thumb_func_start ScrCmd_bufferstring

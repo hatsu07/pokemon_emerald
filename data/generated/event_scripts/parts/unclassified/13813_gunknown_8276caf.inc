@@ -1,5 +1,4 @@
-	.globl gUnknown_8276CAF
-gUnknown_8276CAF: @ 0x08276CAF
+	.globl EventScript_JP_08276CAF
 	@ analyzed canonical ROM range 0x08276CAF-0x08276D0B
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_08276CAF: @ 0x08276CAF
@@ -20,8 +19,7 @@ EventText_JP_08276CDB: @ 0x08276CDB
 EventText_JP_08276CE5: @ 0x08276CE5
 	.string "にえィし　ゆ{0xF8}あにえィお　ゆ{0xF8}あにあぞあ　いにあぞ　　ぐはざ$"
 	.byte 0x09, 0x00, 0x06, 0x00, 0x27, 0x02, 0x54, 0xFE
-	.globl gUnknown_8276D0C
-gUnknown_8276D0C: @ 0x08276D0C
+	.globl EventScript_JP_08276D0C
 	@ analyzed canonical ROM range 0x08276D0C-0x08276D25
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_08276D0C: @ 0x08276D0C

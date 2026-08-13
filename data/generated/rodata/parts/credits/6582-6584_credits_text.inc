@@ -158,5 +158,4 @@ gFavorLadyAcceptedItemListPointers: @ 0x085D3D6C
 gFavorLadyPrizes: @ 0x085D3D84
 	.2byte ITEM_LUXURY_BALL, ITEM_NUGGET, ITEM_PROTEIN
 	.2byte ITEM_HEART_SCALE, ITEM_RARE_CANDY, ITEM_PP_MAX
-	.globl gUnknown_85D3D90
-gUnknown_85D3D90: @ 0x085D3D90
+	.globl gText_Rom_5D3D90

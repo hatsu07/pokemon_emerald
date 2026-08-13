@@ -264,5 +264,4 @@ gText_Rom_5AAF6C: @ 0x085AAF6C
 	.if (. - gText_Rom_5AAF6C) < 0xa
 	.space 0xa - (. - gText_Rom_5AAF6C)
 	.endif
-	.globl gUnknown_85AAF76
-gUnknown_85AAF76: @ 0x085AAF76
+	.globl gText_Rom_5AAF76

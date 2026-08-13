@@ -279007,7 +279007,7 @@
         ]
       ],
       "tail": "00 00 00",
-      "label": "gUnknown_854385C",
+      "label": "sPokedexUi854385C",
       "rom_address": "0x0854385C",
       "source": "data/generated/rodata/pokemon/0774_pokemon_data.inc",
       "source_line": 940
@@ -279295,7 +279295,7 @@
         ]
       ],
       "tail": "00",
-      "label": "gUnknown_8543DE8",
+      "label": "sPokedexUi8543De8",
       "rom_address": "0x08543DE8",
       "source": "data/generated/rodata/pokemon/0774_pokemon_data.inc",
       "source_line": 947

@@ -126,14 +126,13 @@ sLz77Block_085AC484:
 	@ pret/pokeemerald-jp direct xref for 0x085AC5DC: cable_car.s: CableCarMainCallback_Setup
 	.globl gCableCarData_085AC5DC
 gCableCarData_085AC5DC:
-	.globl gUnknown_85AC5DC
-gUnknown_85AC5DC: @ 0x085AC5DC
+	.globl sLz77Block_085AC5DC
 	@ confirmed GBA LZ77 stream: compressed=0x182, decompressed=0x3C0
 sLz77Block_085AC5DC:
 	@ analyzed canonical ROM range 0x085AC5DC-0x085AC75F
 	.incbin "build/graphics/analyzed/gunknown_85ac5dc_085ac5dc.4bpp.lz"
 	.if (. - sLz77Block_085AC5DC) != 0x184
-	.error "gUnknown_85AC5DC compressed size mismatch"
+	.error "sLz77Block_085AC5DC compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085AC760: cable_car.s: CableCarMainCallback_Setup
 	.globl gCableCarData_085AC760
@@ -617,8 +616,7 @@ gBattleAnimSpecialData_085AD190:
 sSpriteTemplate_085AD190: @ 0x085AD190
 	rodata_sprite_template 0x27F9, 0x27F9, 0x084FD018, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_0815B3D8
 	@ pret/pokeemerald-jp direct xref for 0x085AD1A8: battle_anim_effects_3.s: AnimMeteorMashStarStep, sub_0815B410; battle_anim_special.s: sub_08172DD0
-	.globl gUnknown_85AD1A8
-gUnknown_85AD1A8: @ 0x085AD1A8
+	.globl sSpriteTemplate_085AD1A8
 	@ analyzed canonical ROM range 0x085AD1A8-0x085AD1BF
 sSpriteTemplate_085AD1A8: @ 0x085AD1A8
 	rodata_sprite_template 0x27F9, 0x27F9, 0x084FD010, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, AnimMiniTwinklingStar
@@ -956,5 +954,4 @@ gBattleAnimEffects3Data_085AD7D0: @ 0x085AD7D0
 	.2byte 0x00DC, 0x0C00, 0x00C0, 0x0DC0, 0x0C00, 0x00DC, 0xC000, 0x000D
 	.2byte 0x0000, 0x0000, 0x0CC0, 0x00CC, 0xCCCC, 0x0CCC, 0xCCCC, 0x0CCC
 	.2byte 0xCCCC, 0x0CCC, 0xCCC0, 0x0DCC, 0xCC00, 0x00DC, 0xC000, 0x000D
-	.globl gUnknown_85AD9A0
-gUnknown_85AD9A0: @ 0x085AD9A0
+	.globl gText_Rom_5AD9A0

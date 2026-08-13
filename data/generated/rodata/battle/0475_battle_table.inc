@@ -1,5 +1,4 @@
-	.globl gUnknown_82EC600
-gUnknown_82EC600: @ 0x082EC600
+	.globl sTurnActionsFuncsTable
 sTurnActionsFuncsTable:
 	.4byte HandleAction_UseMove @ [B_ACTION_USE_MOVE]
 	.4byte HandleAction_UseItem @ [B_ACTION_USE_ITEM]
@@ -15,8 +14,7 @@ sTurnActionsFuncsTable:
 	.4byte sub_0803EEE4 @ [B_ACTION_TRY_FINISH]
 	.4byte HandleAction_ActionFinished @ [B_ACTION_FINISHED]
 	.4byte HandleAction_NothingIsFainted @ [B_ACTION_NOTHING_FAINTED]
-	.globl gUnknown_82EC638
-gUnknown_82EC638: @ 0x082EC638
+	.globl sEndTurnFuncsTable
 sEndTurnFuncsTable:
 	.4byte HandleEndTurn_ContinueBattle @ [0]
 	.4byte HandleEndTurn_BattleWon @ [B_OUTCOME_WON]
@@ -29,25 +27,21 @@ sEndTurnFuncsTable:
 	.4byte HandleEndTurn_FinishBattle @ [B_OUTCOME_NO_SAFARI_BALLS]
 	.4byte HandleEndTurn_FinishBattle @ [B_OUTCOME_FORFEITED]
 	.4byte HandleEndTurn_FinishBattle @ [B_OUTCOME_MON_TELEPORTED]
-	.globl gUnknown_82EC664
-gUnknown_82EC664: @ 0x082EC664
+	.globl sPkblToEscapeFactor
 sPkblToEscapeFactor:
 	.byte 0, 0, 0 @ [0] curious, enthralled, ignored
 	.byte 3, 5, 0 @ [1] curious, enthralled, ignored
 	.byte 2, 3, 0 @ [2] curious, enthralled, ignored
 	.byte 1, 2, 0 @ [3] curious, enthralled, ignored
 	.byte 1, 1, 0 @ [4] curious, enthralled, ignored
-	.globl gUnknown_82EC673
-gUnknown_82EC673: @ 0x082EC673
+	.globl sGoNearCounterToCatchFactor
 sGoNearCounterToCatchFactor:
 	.byte 4, 3, 2, 1
-	.globl gUnknown_82EC677
-gUnknown_82EC677: @ 0x082EC677
+	.globl sGoNearCounterToEscapeFactor
 sGoNearCounterToEscapeFactor:
 	.byte 4, 4, 4, 4
 	.byte 0x00 @ alignment padding
-	.globl gUnknown_82EC67C
-gUnknown_82EC67C: @ 0x082EC67C
+	.globl sSoundMovesTable
 sSoundMovesTable:
 	.2byte MOVE_GROWL @ raw=0x002D
 	.2byte MOVE_ROAR @ raw=0x002E
@@ -347,8 +341,7 @@ gUnknown_82ECAB8: @ 0x082ECAB8
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0C00, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
-	.globl gUnknown_82ECBA8
-gUnknown_82ECBA8: @ 0x082ECBA8
+	.globl sPointerTable_082ECBA8
 	@ confirmed contiguous ROM pointer table: 39 entries from this address
 sPointerTable_082ECBA8:
 	@ analyzed canonical ROM range 0x082ECBA8-0x082ECC4B
@@ -401,8 +394,7 @@ gUnknown_82ECC4C: @ 0x082ECC4C
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0xFF, 0x7F, 0xFF, 0x7F, 0x6D, 0x39, 0x00, 0x00, 0x9A, 0x7F, 0x37, 0x77, 0xBD, 0x7F, 0xAD, 0x62
 	.byte 0x2B, 0x5A, 0x0F, 0x67, 0x00, 0x00, 0x00, 0x00, 0x0F, 0x7F, 0x00, 0x44, 0x1F, 0x42, 0x14, 0x00
-	.globl gUnknown_82ECC6C
-gUnknown_82ECC6C: @ 0x082ECC6C
+	.globl sLz77Block_082ECC6C
 	@ confirmed GBA LZ77 stream: compressed=0xC7, decompressed=0x480
 sLz77Block_082ECC6C:
 	@ analyzed canonical ROM range 0x082ECC6C-0x082ECD43
@@ -422,8 +414,7 @@ sLz77Block_082ECC6C:
 	.byte 0xF0, 0x1F, 0xFE, 0xF0, 0x01, 0xF0, 0x1F, 0xF0, 0x1F, 0xF0, 0x1F, 0xF0, 0x1F, 0xD1, 0x6F, 0x30
 	.byte 0x03, 0x54, 0x40, 0x35, 0x40, 0x1E, 0x03, 0x00, 0x3A, 0x3E, 0x3B, 0x3F, 0x3C, 0x3D, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x80, 0x00, 0x00, 0x00, 0x00
-	.globl gUnknown_82ECD44
-gUnknown_82ECD44: @ 0x082ECD44
+	.globl sSpriteTemplate_082ECD44
 	@ analyzed canonical ROM range 0x082ECD44-0x082ECD5B
 sSpriteTemplate_082ECD44: @ 0x082ECD44
 	rodata_sprite_template 0xD75A, 0xD75A, sOamData_MonIconOnLvlUpBanner, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCB_MonIconOnLvlUpBox
@@ -513,8 +504,7 @@ gUnknown_82ECE7C: @ 0x082ECE7C
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.2byte 0x0003, 0x0001, 0x0100, 0x0003, 0x0201, 0x0002, 0x0103, 0x0103
 	.2byte 0x0302, 0x0203, 0x0001, 0x0202, 0x6003, 0x7EAE, 0x00FF, 0x0000
-	.globl gUnknown_82ECE9C
-gUnknown_82ECE9C: @ 0x082ECE9C
+	.globl sPlayerBufferCommands
 	.4byte PlayerHandleGetMonData
 	.4byte PlayerHandleGetRawMonData
 	.4byte PlayerHandleSetMonData
@@ -602,8 +592,7 @@ gUnknown_82ECFB0: @ 0x082ECFB0
 	.2byte 0x0000, 0x0084, 0x0004, 0x0084, 0x0008, 0x0084, 0xFFFF, 0x0000
 	.2byte 0x0000, 0x00C4, 0x0004, 0x00C4, 0x0008, 0x00C4, 0xFFFF, 0x0000
 	.2byte 0xCFC0, 0x082E, 0xCFD0, 0x082E, 0xCFE0, 0x082E, 0xCFF0, 0x082E
-	.globl gUnknown_82ED010
-gUnknown_82ED010: @ 0x082ED010
+	.globl sSpriteTemplate_082ED010
 	@ analyzed canonical ROM range 0x082ED010-0x082ED027
 sSpriteTemplate_082ED010: @ 0x082ED010
 	rodata_sprite_template 0xD6EB, 0xD6EB, sOamData_SmokescreenImpact, sAnims_SmokescreenImpact, 0, gDummySpriteAffineAnimTable, sub_08074DBC
@@ -613,8 +602,7 @@ gUnknown_82ED028: @ 0x082ED028
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.byte 0x74, 0xFB, 0xD8, 0x08, 0x80, 0x00, 0x59, 0xD7, 0x00, 0x40, 0x00, 0x40, 0x00, 0x0C, 0x00, 0x00
-	.globl gUnknown_82ED038
-gUnknown_82ED038: @ 0x082ED038
+	.globl sSpriteTemplate_082ED038
 	@ analyzed canonical ROM range 0x082ED038-0x082ED04F
 sSpriteTemplate_082ED038: @ 0x082ED038
 	rodata_sprite_template 0xD759, 0xD6FF, sOamData_EnemyShadow, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCB_SetInvisible
@@ -682,8 +670,7 @@ gUnknown_82ED050: @ 0x082ED050
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x98C8B0B0 @ +0xE4
 	.4byte 0x20282828 @ +0xE8
-	.globl gUnknown_82ED13C
-gUnknown_82ED13C: @ 0x082ED13C
+	.globl sLinkOpponentBufferCommands
 	.4byte sub_08064CC4
 	.4byte LinkOpponentHandleGetRawMonData
 	.4byte LinkOpponentHandleSetMonData

@@ -1,3 +1,2 @@
-	.globl gUnknown_85CAD0D
-gUnknown_85CAD0D: @ 0x085CAD0D
+	.globl gText_Rom_5CAD0D
 

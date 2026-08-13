@@ -11,5 +11,4 @@ gTrainerCardData_085CC33C: @ 0x085CC33C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x5
 	.byte 0xF0, 0xFF, 0x13, 0x2E, 0xFF
-	.globl gUnknown_85CC341
-gUnknown_85CC341: @ 0x085CC341
+	.globl gText_Rom_5CC341

@@ -345,14 +345,13 @@ gPokenavUnk4Data_085F3EB0: @ 0x085F3EB0
 	@ pret/pokeemerald-jp direct xref for 0x085F3ED0: pokenav_unk_4.s: sub_081CAAC8
 	.globl gPokenavUnk4Data_085F3ED0
 gPokenavUnk4Data_085F3ED0:
-	.globl gUnknown_85F3ED0
-gUnknown_85F3ED0: @ 0x085F3ED0
+	.globl sLz77Block_085F3ED0
 	@ confirmed GBA LZ77 stream: compressed=0xA4, decompressed=0x1A0
 sLz77Block_085F3ED0:
 	@ analyzed canonical ROM range 0x085F3ED0-0x085F3F73
 	.incbin "build/graphics/analyzed/gunknown_85f3ed0_085f3ed0.4bpp.lz"
 	.if (. - sLz77Block_085F3ED0) != 0xA4
-	.error "gUnknown_85F3ED0 compressed size mismatch"
+	.error "sLz77Block_085F3ED0 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085F3F74: pokenav_unk_4.s: sub_081CAAC8
 	.globl gPokenavUnk4Data_085F3F74
@@ -408,14 +407,13 @@ gPokenavUnk4Data_085F40C0: @ 0x085F40C0
 	@ pret/pokeemerald-jp direct xref for 0x085F4100: pokenav_unk_4.s: sub_081CAAC8
 	.globl gPokenavUnk4Data_085F4100
 gPokenavUnk4Data_085F4100:
-	.globl gUnknown_85F4100
-gUnknown_85F4100: @ 0x085F4100
+	.globl sLz77Block_085F4100
 	@ confirmed GBA LZ77 stream: compressed=0x2A, decompressed=0x40
 sLz77Block_085F4100:
 	@ analyzed canonical ROM range 0x085F4100-0x085F412B
 	.incbin "build/graphics/analyzed/gunknown_85f4100_085f4100.4bpp.lz"
 	.if (. - sLz77Block_085F4100) != 0x2C
-	.error "gUnknown_85F4100 compressed size mismatch"
+	.error "sLz77Block_085F4100 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085F412C: pokenav_unk_4.s: sub_081CAAC8
 	.globl gPokenavUnk4Data_085F412C
@@ -468,5 +466,4 @@ gUnknown_85F4188: @ 0x085F4188
 	.4byte gText_Rom_5CB80C
 	.4byte gText_Rom_5CB811
 	.4byte gText_Rom_5CB817
-	.globl gUnknown_85F4194
-gUnknown_85F4194: @ 0x085F4194
+	.globl gText_Rom_5F4194

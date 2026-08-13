@@ -117,26 +117,24 @@ gRouletteData_085957A8: @ 0x085957A8
 	@ pret/pokeemerald-jp direct xref for 0x085959A8: roulette.s: sub_08140450
 	.globl gRouletteData_085959A8
 gRouletteData_085959A8:
-	.globl gUnknown_85959A8
-gUnknown_85959A8: @ 0x085959A8
+	.globl sLz77Block_085959A8
 	@ confirmed GBA LZ77 stream: compressed=0x1A3, decompressed=0x300
 sLz77Block_085959A8:
 	@ analyzed canonical ROM range 0x085959A8-0x08595B4B
 	.incbin "build/graphics/analyzed/gunknown_85959a8_085959a8.4bpp.lz"
 	.if (. - sLz77Block_085959A8) != 0x1A4
-	.error "gUnknown_85959A8 compressed size mismatch"
+	.error "sLz77Block_085959A8 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08595B4C: roulette.s: sub_08140694
 	.globl gRouletteData_08595B4C
 gRouletteData_08595B4C:
-	.globl gUnknown_8595B4C
-gUnknown_8595B4C: @ 0x08595B4C
+	.globl sLz77Block_08595B4C
 	@ confirmed GBA LZ77 stream: compressed=0x19F, decompressed=0x400
 sLz77Block_08595B4C:
 	@ analyzed canonical ROM range 0x08595B4C-0x08595CEB
 	.incbin "build/graphics/analyzed/gunknown_8595b4c_08595b4c.4bpp.lz"
 	.if (. - sLz77Block_08595B4C) != 0x1A0
-	.error "gUnknown_8595B4C compressed size mismatch"
+	.error "sLz77Block_08595B4C compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08595CEC: roulette.s: sub_08140450
 	.globl gRouletteData_08595CEC
@@ -1166,14 +1164,13 @@ gPokedexCryScreenData_08597FCC: @ 0x08597FCC
 	@ pret/pokeemerald-jp direct xref for 0x08597FEC: pokedex_cry_screen.s: sub_0814591C
 	.globl gPokedexCryScreenData_08597FEC
 gPokedexCryScreenData_08597FEC:
-	.globl gUnknown_8597FEC
-gUnknown_8597FEC: @ 0x08597FEC
+	.globl sLz77Block_08597FEC
 	@ confirmed GBA LZ77 stream: compressed=0x335, decompressed=0xA00
 sLz77Block_08597FEC:
 	@ analyzed canonical ROM range 0x08597FEC-0x08598323
 	.incbin "build/graphics/analyzed/gunknown_8597fec_08597fec.4bpp.lz"
 	.if (. - sLz77Block_08597FEC) != 0x338
-	.error "gUnknown_8597FEC compressed size mismatch"
+	.error "sLz77Block_08597FEC compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08598324: pokedex_cry_screen.s: sub_08145774
 	.globl gPokedexCryScreenData_08598324

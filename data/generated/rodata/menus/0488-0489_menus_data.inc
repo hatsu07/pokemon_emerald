@@ -10,8 +10,7 @@ sUnusedStructSizes: @ 0x082FD0B4
 	.error "sUnusedStructSizes size mismatch"
 .endif
 	.include "data/trade/trade_early_assets.inc"
-	.globl gUnknown_82FE3CC
-gUnknown_82FE3CC: @ 0x082FE3CC
+	.globl sTradeEarlyTilemap
 sTradeEarlyTilemap:
 	@ JP trade early/background tilemap
 	rodata_tilemap_entry 0, 0, 0, 0 @ [0000] raw=0x0000
@@ -1038,8 +1037,7 @@ sTradeEarlyTilemap:
 	rodata_tilemap_entry 0, 0, 0, 0 @ [1021] raw=0x0000
 	rodata_tilemap_entry 0, 0, 0, 0 @ [1022] raw=0x0000
 	rodata_tilemap_entry 0, 0, 0, 0 @ [1023] raw=0x0000
-	.globl gUnknown_82FEBCC
-gUnknown_82FEBCC: @ 0x082FEBCC
+	.globl sTradeMovesBoxTilemap
 sTradeMovesBoxTilemap:
 	@ graphics/trade/moves_box_map.bin
 	rodata_tilemap_entry 0, 0, 0, 0 @ [0000] raw=0x0000
@@ -1297,8 +1295,7 @@ sTradeMovesBoxTilemap:
 	rodata_tilemap_entry 5, 0, 0, 0 @ [0252] raw=0x0005
 	rodata_tilemap_entry 5, 0, 0, 0 @ [0253] raw=0x0005
 	rodata_tilemap_entry 4, 0, 1, 0 @ [0254] raw=0x0404
-	.globl gUnknown_82FEDCA
-gUnknown_82FEDCA: @ 0x082FEDCA
+	.globl sTradePartyBoxTilemap
 sTradePartyBoxTilemap:
 	@ graphics/trade/party_box_map.bin
 	rodata_tilemap_entry 0, 0, 0, 0 @ [0000] raw=0x0000
@@ -1556,8 +1553,7 @@ sTradePartyBoxTilemap:
 	rodata_tilemap_entry 5, 0, 0, 0 @ [0252] raw=0x0005
 	rodata_tilemap_entry 5, 0, 0, 0 @ [0253] raw=0x0005
 	rodata_tilemap_entry 4, 0, 1, 0 @ [0254] raw=0x0404
-	.globl gUnknown_82FEFC8
-gUnknown_82FEFC8: @ 0x082FEFC8
+	.globl sTradeStripesBG2Tilemap
 sTradeStripesBG2Tilemap:
 	@ graphics/trade/stripes_bg2_map.bin
 	rodata_tilemap_entry 64, 1, 0, 0 @ [0000] raw=0x1040
@@ -2584,8 +2580,7 @@ sTradeStripesBG2Tilemap:
 	rodata_tilemap_entry 66, 1, 0, 0 @ [1021] raw=0x1042
 	rodata_tilemap_entry 65, 1, 0, 0 @ [1022] raw=0x1041
 	rodata_tilemap_entry 64, 1, 0, 0 @ [1023] raw=0x1040
-	.globl gUnknown_82FF7C8
-gUnknown_82FF7C8: @ 0x082FF7C8
+	.globl sTradeStripesBG3Tilemap
 sTradeStripesBG3Tilemap:
 	@ graphics/trade/stripes_bg3_map.bin
 	rodata_tilemap_entry 80, 2, 0, 0 @ [0000] raw=0x2050
@@ -3881,5 +3876,4 @@ gTradeData_08300A9E: @ 0x08300A9E
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0xFE, 0xFF
-	.globl gUnknown_8300AA0
-gUnknown_8300AA0: @ 0x08300AA0
+	.globl gText_Rom_300AA0

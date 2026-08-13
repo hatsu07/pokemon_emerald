@@ -9,8 +9,7 @@
 .set TYPE_FORESIGHT,           0xFE
 .set TYPE_ENDTABLE,            0xFF
 
-	.globl gUnknown_82EBAC8
-gUnknown_82EBAC8: @ 0x082EBAC8
+	.globl sIntroScanlineParams16Bit
 sIntroScanlineParams16Bit:
 	.4byte 0x0400001C @ &REG_BG3HOFS
 	.4byte 0xA2600001 @ SCANLINE_EFFECT_DMACNT_16BIT
@@ -53,8 +52,7 @@ sAffineAnim_Unused: @ 0x082EBB14
 sAffineAnims_Unused: @ 0x082EBB2C
 	.4byte sAffineAnim_Unused
 
-	.globl gUnknown_82EBB30
-gUnknown_82EBB30: @ 0x082EBB30
+	.globl sCenterToCornerVecXs
 sCenterToCornerVecXs:
 	.byte -32, -16, -16, -32, -32, 0, 0, 0
 

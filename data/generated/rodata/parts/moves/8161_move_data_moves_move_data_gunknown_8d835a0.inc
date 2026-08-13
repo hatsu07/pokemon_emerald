@@ -1,86 +1,79 @@
 	@ pret/pokeemerald-jp direct xref for 0x08D835A0: battle_dome.s: Task_ShowTourneyTree
 	.globl gBattleDomeData_08D835A0
 gBattleDomeData_08D835A0:
-	.globl gUnknown_8D835A0
-gUnknown_8D835A0: @ 0x08D835A0
+	.globl sLz77Block_08D835A0
 	@ confirmed GBA LZ77 stream: compressed=0x404, decompressed=0x2000
 sLz77Block_08D835A0:
 	@ analyzed canonical ROM range 0x08D835A0-0x08D839A3
 	.incbin "build/graphics/analyzed/gunknown_8d835a0_08d835a0.4bpp.lz"
 	.if (. - sLz77Block_08D835A0) != 0x404
-	.error "gUnknown_8D835A0 compressed size mismatch"
+	.error "sLz77Block_08D835A0 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D839A4: battle_dome.s: Task_ShowTourneyTree
 	.globl gBattleDomeData_08D839A4
 gBattleDomeData_08D839A4:
-	.globl gUnknown_8D839A4
-gUnknown_8D839A4: @ 0x08D839A4
+	.globl sLz77Block_08D839A4
 	@ confirmed GBA LZ77 stream: compressed=0x22A, decompressed=0x800
 sLz77Block_08D839A4:
 	@ analyzed canonical ROM range 0x08D839A4-0x08D83BCF
 	.incbin "build/graphics/analyzed/gunknown_8d839a4_08d839a4.4bpp.lz"
 	.if (. - sLz77Block_08D839A4) != 0x22C
-	.error "gUnknown_8D839A4 compressed size mismatch"
+	.error "sLz77Block_08D839A4 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D83BD0: battle_dome.s: Task_ShowTourneyTree
 	.globl gBattleDomeData_08D83BD0
 gBattleDomeData_08D83BD0:
-	.globl gUnknown_8D83BD0
-gUnknown_8D83BD0: @ 0x08D83BD0
+	.globl sLz77Block_08D83BD0
 	@ confirmed GBA LZ77 stream: compressed=0x110, decompressed=0x800
 sLz77Block_08D83BD0:
 	@ analyzed canonical ROM range 0x08D83BD0-0x08D83CDF
 	.incbin "build/graphics/analyzed/gunknown_8d83bd0_08d83bd0.4bpp.lz"
 	.if (. - sLz77Block_08D83BD0) != 0x110
-	.error "gUnknown_8D83BD0 compressed size mismatch"
+	.error "sLz77Block_08D83BD0 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D83CE0: battle_dome.s: Task_ShowTourneyTree
 	.globl gBattleDomeData_08D83CE0
 gBattleDomeData_08D83CE0:
-	.globl gUnknown_8D83CE0
-gUnknown_8D83CE0: @ 0x08D83CE0
+	.globl sLz77Block_08D83CE0
 	@ confirmed GBA LZ77 stream: compressed=0x111, decompressed=0x800
 sLz77Block_08D83CE0:
 	@ analyzed canonical ROM range 0x08D83CE0-0x08D83DF3
 	.incbin "build/graphics/analyzed/gunknown_8d83ce0_08d83ce0.4bpp.lz"
 	.if (. - sLz77Block_08D83CE0) != 0x114
-	.error "gUnknown_8D83CE0 compressed size mismatch"
+	.error "sLz77Block_08D83CE0 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D83DF4: battle_dome.s: Task_ShowOpponentInfo
 	.globl gBattleDomeData_08D83DF4
 gBattleDomeData_08D83DF4:
-	.globl gUnknown_8D83DF4
-gUnknown_8D83DF4: @ 0x08D83DF4
+	.globl sLz77Block_08D83DF4
 	@ confirmed GBA LZ77 stream: compressed=0xC14, decompressed=0x4000
 sLz77Block_08D83DF4:
 	@ analyzed canonical ROM range 0x08D83DF4-0x08D84A07
 	.incbin "build/graphics/analyzed/gunknown_8d83df4_08d83df4.4bpp.lz"
 	.if (. - sLz77Block_08D83DF4) != 0xC14
-	.error "gUnknown_8D83DF4 compressed size mismatch"
+	.error "sLz77Block_08D83DF4 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D84A08: battle_dome.s: Task_ShowOpponentInfo
 	.globl gBattleDomeData_08D84A08
 gBattleDomeData_08D84A08:
-	.globl gUnknown_8D84A08
-gUnknown_8D84A08: @ 0x08D84A08
+	.globl sLz77Block_08D84A08
 	@ confirmed GBA LZ77 stream: compressed=0x58E, decompressed=0x2000
 sLz77Block_08D84A08:
 	@ analyzed canonical ROM range 0x08D84A08-0x08D84F97
 	.incbin "build/graphics/analyzed/gunknown_8d84a08_08d84a08.4bpp.lz"
 	.if (. - sLz77Block_08D84A08) != 0x590
-	.error "gUnknown_8D84A08 compressed size mismatch"
+	.error "sLz77Block_08D84A08 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D84F98: battle_dome.s: Task_ShowOpponentInfo
 	.globl gBattleDomeData_08D84F98
 gBattleDomeData_08D84F98:
-	.globl gUnknown_8D84F98
-gUnknown_8D84F98: @ 0x08D84F98
+	.globl sLz77Block_08D84F98
 	@ confirmed GBA LZ77 stream: compressed=0x158, decompressed=0x800
 sLz77Block_08D84F98:
 	@ analyzed canonical ROM range 0x08D84F98-0x08D850EF
 	.incbin "build/graphics/analyzed/gunknown_8d84f98_08d84f98.4bpp.lz"
 	.if (. - sLz77Block_08D84F98) != 0x158
-	.error "gUnknown_8D84F98 compressed size mismatch"
+	.error "sLz77Block_08D84F98 compressed size mismatch"
 	.endif
 	.globl gBattleDomeTourneyTreeButtons_Gfx
 gBattleDomeTourneyTreeButtons_Gfx: @ 0x08D850F0
@@ -88,14 +81,13 @@ gBattleDomeTourneyTreeButtons_Gfx: @ 0x08D850F0
 	@ pret/pokeemerald-jp direct xref for 0x08D8533C: battle_dome.s: Task_ShowOpponentInfo, Task_ShowTourneyTree
 	.globl gBattleDomeData_08D8533C
 gBattleDomeData_08D8533C:
-	.globl gUnknown_8D8533C
-gUnknown_8D8533C: @ 0x08D8533C
+	.globl sLz77Block_08D8533C
 	@ confirmed GBA LZ77 stream: compressed=0xEA, decompressed=0x200
 sLz77Block_08D8533C:
 	@ analyzed canonical ROM range 0x08D8533C-0x08D85427
 	.incbin "build/graphics/analyzed/gunknown_8d8533c_08d8533c.4bpp.lz"
 	.if (. - sLz77Block_08D8533C) != 0xEC
-	.error "gUnknown_8D8533C compressed size mismatch"
+	.error "sLz77Block_08D8533C compressed size mismatch"
 	.endif
 	.globl gBattleDomeTourneyTreeButtons_Pal
 gBattleDomeTourneyTreeButtons_Pal: @ 0x08D85428
@@ -130,24 +122,22 @@ sLz77Block_08D854AC:
 	@ pret/pokeemerald-jp direct xref for 0x08D855CC: battle_arena.s: BattleArena_ShowJudgmentWindow
 	.globl gBattleArenaData_08D855CC
 gBattleArenaData_08D855CC:
-	.globl gUnknown_8D855CC
-gUnknown_8D855CC: @ 0x08D855CC
+	.globl sLz77Block_08D855CC
 	@ confirmed GBA LZ77 stream: compressed=0x17, decompressed=0x20
 sLz77Block_08D855CC:
 	@ analyzed canonical ROM range 0x08D855CC-0x08D855E3
 	.incbin "build/graphics/analyzed/gunknown_8d855cc_08d855cc.4bpp.lz"
 	.if (. - sLz77Block_08D855CC) != 0x18
-	.error "gUnknown_8D855CC compressed size mismatch"
+	.error "sLz77Block_08D855CC compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D855E4: battle_bg.s: LoadBattleMenuWindowGfx; battle_dome.s: Task_ShowOpponentInfo, Task_ShowTourneyTree
-	.globl gUnknown_8D855E4
-gUnknown_8D855E4: @ 0x08D855E4
+	.globl sLz77Block_08D855E4
 	@ confirmed GBA LZ77 stream: compressed=0x1F, decompressed=0x20
 sLz77Block_08D855E4:
 	@ analyzed canonical ROM range 0x08D855E4-0x08D85603
 	.incbin "build/graphics/analyzed/gunknown_8d855e4_08d855e4.4bpp.lz"
 	.if (. - sLz77Block_08D855E4) != 0x20
-	.error "gUnknown_8D855E4 compressed size mismatch"
+	.error "sLz77Block_08D855E4 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D85604: battle_message.s: SetPpNumbersPaletteInMoveSelection; pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
 	.globl gUnknown_8D85604
@@ -196,26 +186,24 @@ gBattlePyramidData_08D856AC: @ 0x08D856AC
 	@ pret/pokeemerald-jp direct xref for 0x08D8578C: battle_bg.s: DrawBattleEntryBackground
 	.globl gBattleBgData_08D8578C
 gBattleBgData_08D8578C:
-	.globl gUnknown_8D8578C
-gUnknown_8D8578C: @ 0x08D8578C
+	.globl sLz77Block_08D8578C
 	@ confirmed GBA LZ77 stream: compressed=0x273, decompressed=0x1000
 sLz77Block_08D8578C:
 	@ analyzed canonical ROM range 0x08D8578C-0x08D859FF
 	.incbin "build/graphics/analyzed/gunknown_8d8578c_08d8578c.4bpp.lz"
 	.if (. - sLz77Block_08D8578C) != 0x274
-	.error "gUnknown_8D8578C compressed size mismatch"
+	.error "sLz77Block_08D8578C compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D85A00: battle_bg.s: DrawBattleEntryBackground
 	.globl gBattleBgData_08D85A00
 gBattleBgData_08D85A00:
-	.globl gUnknown_8D85A00
-gUnknown_8D85A00: @ 0x08D85A00
+	.globl sLz77Block_08D85A00
 	@ confirmed GBA LZ77 stream: compressed=0x231, decompressed=0x1000
 sLz77Block_08D85A00:
 	@ analyzed canonical ROM range 0x08D85A00-0x08D85C33
 	.incbin "build/graphics/analyzed/gunknown_8d85a00_08d85a00.4bpp.lz"
 	.if (. - sLz77Block_08D85A00) != 0x234
-	.error "gUnknown_8D85A00 compressed size mismatch"
+	.error "sLz77Block_08D85A00 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D85C34: intro.s: sub_0816F91C
 	.globl gIntroData_08D85C34

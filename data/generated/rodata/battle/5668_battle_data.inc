@@ -21,6 +21,5 @@ gUnknown_85CB7FE: @ 0x085CB7FE
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0xA
 	.byte 0xF7, 0x00, 0x00, 0x00, 0xBA, 0xF9, 0x05, 0xF7, 0x01, 0xFF
-	.globl gUnknown_85CB808
-gUnknown_85CB808: @ 0x085CB808
+	.globl gText_Rom_5CB808
 

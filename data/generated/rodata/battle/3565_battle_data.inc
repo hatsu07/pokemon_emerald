@@ -26,5 +26,4 @@ gFrontierUtilData_085ABC75: @ 0x085ABC75
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x1A, 0xFA, 0xFF
-	.globl gUnknown_85ABC78
-gUnknown_85ABC78: @ 0x085ABC78
+	.globl gText_Rom_5ABC78

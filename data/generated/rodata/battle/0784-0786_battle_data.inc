@@ -173,14 +173,13 @@ gPokemonStorageSystemData_0854BA7C: @ 0x0854BA7C
 	@ pret/pokeemerald-jp direct xref for 0x0854BBFC: pokemon_storage_system.s: SetScrollingBackground
 	.globl gPokemonStorageSystemData_0854BBFC
 gPokemonStorageSystemData_0854BBFC:
-	.globl gUnknown_854BBFC
-gUnknown_854BBFC: @ 0x0854BBFC
+	.globl sLz77Block_0854BBFC
 	@ confirmed GBA LZ77 stream: compressed=0x95, decompressed=0x100
 sLz77Block_0854BBFC:
 	@ analyzed canonical ROM range 0x0854BBFC-0x0854BC93
 	.incbin "build/graphics/analyzed/gunknown_854bbfc_0854bbfc.4bpp.lz"
 	.if (. - sLz77Block_0854BBFC) != 0x98
-	.error "gUnknown_854BBFC compressed size mismatch"
+	.error "sLz77Block_0854BBFC compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0854BC94: pokemon_storage_system.s: SetScrollingBackground
 	.globl gPokemonStorageSystemData_0854BC94
@@ -212,14 +211,13 @@ sLz77Block_0854BC94:
 	@ pret/pokeemerald-jp direct xref for 0x0854BDC0: pokemon_storage_system.s: LoadPSSMenuGfx
 	.globl gPokemonStorageSystemData_0854BDC0
 gPokemonStorageSystemData_0854BDC0:
-	.globl gUnknown_854BDC0
-gUnknown_854BDC0: @ 0x0854BDC0
+	.globl sLz77Block_0854BDC0
 	@ confirmed GBA LZ77 stream: compressed=0xFB, decompressed=0x500
 sLz77Block_0854BDC0:
 	@ analyzed canonical ROM range 0x0854BDC0-0x0854BEBB
 	.incbin "build/graphics/analyzed/gunknown_854bdc0_0854bdc0.4bpp.lz"
 	.if (. - sLz77Block_0854BDC0) != 0xFC
-	.error "gUnknown_854BDC0 compressed size mismatch"
+	.error "sLz77Block_0854BDC0 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0854BEBC: pokemon_storage_system.s: sub_080C7734
 	.globl gPokemonStorageSystemData_0854BEBC
@@ -274,14 +272,13 @@ gPokemonStorageSystemData_0854BF7C: @ 0x0854BF7C
 	@ pret/pokeemerald-jp direct xref for 0x0854BF9C: pokemon_storage_system.s: LoadPSSMenuGfx
 	.globl gPokemonStorageSystemData_0854BF9C
 gPokemonStorageSystemData_0854BF9C:
-	.globl gUnknown_854BF9C
-gUnknown_854BF9C: @ 0x0854BF9C
+	.globl sLz77Block_0854BF9C
 	@ confirmed GBA LZ77 stream: compressed=0x6C0, decompressed=0x1200
 sLz77Block_0854BF9C:
 	@ analyzed canonical ROM range 0x0854BF9C-0x0854C65B
 	.incbin "build/graphics/analyzed/gunknown_854bf9c_0854bf9c.4bpp.lz"
 	.if (. - sLz77Block_0854BF9C) != 0x6C0
-	.error "gUnknown_854BF9C compressed size mismatch"
+	.error "sLz77Block_0854BF9C compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0854C65C: pokemon_storage_system.s: sub_080C9F68
 	.globl gPokemonStorageSystemData_0854C65C

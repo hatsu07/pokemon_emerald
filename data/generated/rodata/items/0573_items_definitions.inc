@@ -1,3 +1,2 @@
-	.globl gUnknown_830F834
-gUnknown_830F834: @ 0x0830F834
+	.globl gText_Rom_30F834
 

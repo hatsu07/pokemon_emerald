@@ -791,5 +791,4 @@ gText_MysteryEventBerryObtained: @ 0x085FCB2C
 	.if (. - gText_MysteryEventBerryObtained) != 0x11
 	.error "gText_MysteryEventBerryObtained must retain its original 0x11-byte slot"
 	.endif
-	.globl gUnknown_85FCB3D
-gUnknown_85FCB3D: @ 0x085FCB3D
+	.globl gText_Rom_5FCB3D

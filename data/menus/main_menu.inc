@@ -17,14 +17,13 @@ gMainMenuData_082D2588: @ 0x082D2588
 	@ pret/pokeemerald-jp direct xref for 0x082D25C8: main_menu.s: CB2_NewGameBirchSpeech_ReturnFromNamingScreen, sub_0803058C
 	.globl gMainMenuData_082D25C8
 gMainMenuData_082D25C8:
-	.globl gUnknown_82D25C8
-gUnknown_82D25C8: @ 0x082D25C8
+	.globl sLz77Block_082D25C8
 	@ confirmed GBA LZ77 stream: compressed=0x1B2, decompressed=0x600
 sLz77Block_082D25C8:
 	@ analyzed canonical ROM range 0x082D25C8-0x082D277B
 	.incbin "build/graphics/analyzed/gunknown_82d25c8_082d25c8.4bpp.lz"
 	.if (. - sLz77Block_082D25C8) != 0x1B4
-	.error "gUnknown_82D25C8 compressed size mismatch"
+	.error "sLz77Block_082D25C8 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082D277C: main_menu.s: CB2_NewGameBirchSpeech_ReturnFromNamingScreen, sub_0803058C
 	.globl gMainMenuData_082D277C

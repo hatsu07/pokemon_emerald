@@ -12,5 +12,4 @@ gPokemonSummaryScreenData_085C9411: @ 0x085C9411
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x9
 	.byte 0xF9, 0x08, 0xFF, 0xF9, 0x04, 0xFF, 0xF9, 0x03, 0xFF
-	.globl gUnknown_85C941A
-gUnknown_85C941A: @ 0x085C941A
+	.globl gText_Rom_5C941A

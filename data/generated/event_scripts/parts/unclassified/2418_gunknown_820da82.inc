@@ -1,5 +1,4 @@
-	.globl gUnknown_820DA82
-gUnknown_820DA82: @ 0x0820DA82
+	.globl EventScript_JP_0820DA82
 	@ analyzed canonical ROM range 0x0820DA82-0x0820DA90
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_0820DA82: @ 0x0820DA82

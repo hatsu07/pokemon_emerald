@@ -5,5 +5,4 @@ gTrainerCardData_085CC379: @ 0x085CC379
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xA
 	.2byte 0x1106, 0x0000, 0x0000, 0x1F00, 0xFF09
-	.globl gUnknown_85CC383
-gUnknown_85CC383: @ 0x085CC383
+	.globl gText_Rom_5CC383

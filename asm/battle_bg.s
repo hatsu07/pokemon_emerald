@@ -123,7 +123,7 @@ _080355B2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080355B8: .4byte gUnknown_8D855E4
+_080355B8: .4byte sLz77Block_08D855E4
 _080355BC: .4byte 0x02022C90
 _080355C0: .4byte 0x020373B4
 _080355C4: .4byte 0x020378A0
@@ -149,11 +149,11 @@ DrawMainBattleBackground: @ 0x080355C8
 	.align 2, 0
 _080355EC: .4byte 0x02022C90
 _080355F0: .4byte 0x023F0902
-_080355F4: .4byte gUnknown_8D7C4E4
+_080355F4: .4byte sLz77Block_08D7C4E4
 _080355F8: .4byte 0x06008000
 _080355FC: .4byte gBattleBgData_08D7CACC
 _08035600: .4byte 0x0600D000
-_08035604: .4byte gUnknown_8D7CA90
+_08035604: .4byte sLz77Block_08D7CA90
 _08035608:
 	movs r0, #0x80
 	lsls r0, r0, #0x15
@@ -238,7 +238,7 @@ _080356A4:
 	.align 2, 0
 _080356D0: .4byte 0x082E383C
 _080356D4: .4byte 0x0203886A
-_080356D8: .4byte gUnknown_8D7C4E4
+_080356D8: .4byte sLz77Block_08D7C4E4
 _080356DC: .4byte 0x06008000
 _080356E0: .4byte gBattleBgData_08D7CACC
 _080356E4: .4byte 0x0600D000
@@ -326,7 +326,7 @@ _080357A4:
 	ldr r0, _080357C8
 	b _080358A6
 	.align 2, 0
-_080357B8: .4byte gUnknown_8D7C4E4
+_080357B8: .4byte sLz77Block_08D7C4E4
 _080357BC: .4byte 0x06008000
 _080357C0: .4byte gBattleBgData_08D7CACC
 _080357C4: .4byte 0x0600D000
@@ -441,11 +441,11 @@ _080358DE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080358E4: .4byte gUnknown_8D7C4E4
+_080358E4: .4byte sLz77Block_08D7C4E4
 _080358E8: .4byte 0x06008000
 _080358EC: .4byte gBattleBgData_08D7CACC
 _080358F0: .4byte 0x0600D000
-_080358F4: .4byte gUnknown_8D7CA90
+_080358F4: .4byte sLz77Block_08D7CA90
 	thumb_func_end DrawMainBattleBackground
 
 	thumb_func_start LoadBattleTextboxAndBackground
@@ -1717,7 +1717,7 @@ _08036376:
 	bl LZDecompressWram
 	b _080365AC
 	.align 2, 0
-_08036380: .4byte gUnknown_8D7C4E4
+_08036380: .4byte sLz77Block_08D7C4E4
 _08036384: .4byte 0x06008000
 _08036388:
 	ldr r0, _080363AC
@@ -1982,7 +1982,7 @@ _08036596:
 	bl LoadCompressedPalette
 	b _080365AC
 	.align 2, 0
-_080365A0: .4byte gUnknown_8D7CA90
+_080365A0: .4byte sLz77Block_08D7CA90
 _080365A4:
 	bl LoadBattleMenuWindowGfx
 	b _080365AC

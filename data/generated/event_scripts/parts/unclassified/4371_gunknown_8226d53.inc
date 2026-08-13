@@ -1,3 +1,2 @@
-	.globl gUnknown_8226D53
-gUnknown_8226D53: @ 0x08226D53
+	.globl gText_Rom_226D53
 

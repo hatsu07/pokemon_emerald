@@ -1,5 +1,4 @@
-	.globl gUnknown_8257A89
-gUnknown_8257A89: @ 0x08257A89
+	.globl EventScript_JP_08257A89
 	@ analyzed canonical ROM range 0x08257A89-0x08257A97
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_08257A89: @ 0x08257A89

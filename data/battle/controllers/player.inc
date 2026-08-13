@@ -1,7 +1,6 @@
 @ Player controller table. ROM 0x082ECE9C-0x082ECF8B.
 
-	.globl gUnknown_82ECE9C
-gUnknown_82ECE9C: @ 0x082ECE9C
+	.globl sPlayerBufferCommands
 sPlayerBufferCommands:
 	.4byte PlayerHandleGetMonData
 	.4byte PlayerHandleGetRawMonData

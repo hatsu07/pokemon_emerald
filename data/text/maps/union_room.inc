@@ -9,8 +9,7 @@ gText_Rom_2C0644: @ 0x082C0644
 	.space 0x2 - (. - gText_Rom_2C0644)
 	.endif
 	.space 0x2, 0x00
-	.globl gUnknown_82C0648
-gUnknown_82C0648: @ 0x082C0648
+	.globl sText_ID
 sText_ID:
 	@ {ID} is encoded as F9 07.
 	.string "{ID}$"
@@ -27,8 +26,7 @@ gText_Rom_2C064C: @ 0x082C064C
 	.space 0x1f - (. - gText_Rom_2C064C)
 	.endif
 	.space 0x1, 0x00
-	.globl gUnknown_82C066C
-gUnknown_82C066C: @ 0x082C066C
+	.globl sText_WirelessSearchCanceled
 sText_WirelessSearchCanceled:
 	.string "ジョイスポットの　けんさくを\nちゅうししました$"
 sText_AwaitingCommunication2:
@@ -248,8 +246,7 @@ sText_4PlayerMode: @ 0x082C0830
 	.string "4にん\nプレイ$"
 sText_5PlayerMode: @ 0x082C0838
 	.string "5にん\nプレイ$"
-	.globl gUnknown_82C0840
-gUnknown_82C0840: @ 0x082C0840
+	.globl sPlayersNeededOrModeTexts
 
 sPlayersNeededOrModeTexts: @ 0x082C0840, const u8 *[5][5]
 	@ 2 players required
@@ -279,14 +276,12 @@ sText_BButtonCancel:
 sJPText_SearchingForParticipants: @ 0x082C08AC, unused
 	.string "ため\nさんかしゃ ぼしゅうちゅう です！$"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C08C4
-gUnknown_82C08C4: @ 0x082C08C4
+	.globl sText_PlayerContactedYouForXAccept
 
 sText_PlayerContactedYouForXAccept: @ 0x082C08C4
 	.string "{STR_VAR_2}から れんらくあり！\n{STR_VAR_1}を しますか？$"
 	.space 1, 0 @ alignment
-	.globl gUnknown_82C08DC
-gUnknown_82C08DC: @ 0x082C08DC
+	.globl sText_PlayerContactedYouShareX
 
 sText_PlayerContactedYouShareX: @ 0x082C08DC
 	.string "{STR_VAR_2}から れんらくあり！\n{STR_VAR_1}を くばりますか？$"
@@ -304,14 +299,12 @@ sText_PlayerContactedYouAddToMembers:
 	.space 0x19 - (. - gText_Rom_2C08F8)
 	.endif
 	.space 0x3, 0x00
-	.globl gUnknown_82C0914
-gUnknown_82C0914: @ 0x082C0914
+	.globl sText_AreTheseMembersOK
 
 sText_AreTheseMembersOK: @ 0x082C0914
 	.string "{STR_VAR_1}！\nこの メンバーで よろしいですか？$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C092C
-gUnknown_82C092C: @ 0x082C092C
+	.globl sText_CancelModeWithTheseMembers
 
 sText_CancelModeWithTheseMembers: @ 0x082C092C
 	.string "この メンバーで {STR_VAR_1}を\nするのは やめますか？$"
@@ -338,14 +331,12 @@ sText_CantTransmitTrainerTooFar: @ 0x082C0970
 	.space 2, 0 @ align sText_TrainersNotReadyYet
 sText_TrainersNotReadyYet: @ 0x082C098C
 	.string "あいての じゅんびが\nできていません\p$"
-	.globl gUnknown_82C09A0
-gUnknown_82C09A0: @ 0x082C09A0
+	.globl sCantTransmitToTrainerTexts
 
 sCantTransmitToTrainerTexts: @ 0x082C09A0
 	.4byte sText_CantTransmitTrainerTooFar
 	.4byte sText_TrainersNotReadyYet
-	.globl gUnknown_82C09A8
-gUnknown_82C09A8: @ 0x082C09A8
+	.globl sText_ModeWithTheseMembersWillBeCanceled
 
 sText_ModeWithTheseMembersWillBeCanceled: @ 0x082C09A8
 	.string "この メンバーで {STR_VAR_1}を\nするのは やめます{PAUSE 60}$"
@@ -353,8 +344,7 @@ sText_ModeWithTheseMembersWillBeCanceled: @ 0x082C09A8
 sText_MemberNoLongerAvailable: @ 0x082C09C4
 	.string "つごうが わるくなってしまった\nメンバーが います\p$"
 	.space 1, 0 @ alignment
-	.globl gUnknown_82C09E0
-gUnknown_82C09E0: @ 0x082C09E0
+	.globl sPlayerUnavailableTexts
 
 sPlayerUnavailableTexts: @ 0x082C09E0
 	.4byte sText_OtherTrainerUnavailableNow
@@ -404,8 +394,7 @@ sText_AwaitingOtherMembers:
 	.space 0x16 - (. - gText_Rom_2C0A4C)
 	.endif
 	.space 0x2, 0x00
-	.globl gUnknown_82C0A64
-gUnknown_82C0A64: @ 0x082C0A64
+	.globl sText_QuitBeingMember
 
 sText_QuitBeingMember: @ 0x082C0A64
 	.string "メンバーから ぬけますか？$"
@@ -413,8 +402,7 @@ sText_QuitBeingMember: @ 0x082C0A64
 sText_StoppedBeingMember: @ 0x082C0A74
 	.string "メンバーから ぬけました\p$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C0A84
-gUnknown_82C0A84: @ 0x082C0A84
+	.globl sPlayerDisconnectedTexts
 
 sPlayerDisconnectedTexts: @ 0x082C0A84
 	.4byte 0 @ RFU_STATUS_OK
@@ -441,12 +429,10 @@ sText_WirelessLinkEstablished:
 	.endif
 	.space 0x1, 0x00
 
-	.globl gUnknown_82C0AC8
-gUnknown_82C0AC8: @ 0x082C0AC8
+	.globl sText_WirelessLinkDropped
 sText_WirelessLinkDropped:
 	.string "ジョイスポットから　せつぞくを\nせつだん　されました…$"
-	.globl gUnknown_82C0AE4
-gUnknown_82C0AE4: @ 0x082C0AE4
+	.globl sText_LinkWithFriendDropped
 sText_LinkWithFriendDropped:
 	.string "おともだちとの　つうしんが\nせつだん　されました…$"
 	.space 2, 0 @ align sText_PlayerRepliedNo2
@@ -454,8 +440,7 @@ sText_LinkWithFriendDropped:
 sText_PlayerRepliedNo2:
 	.string "{STR_VAR_1}から　NGとの\nへんじが　きてしまいました…$"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C0B1C
-gUnknown_82C0B1C: @ 0x082C0B1C
+	.globl sLinkDroppedTexts
 sLinkDroppedTexts:
 	.4byte 0 @ RFU_STATUS_OK
 	.4byte sText_LinkWithFriendDropped @ RFU_STATUS_FATAL_ERROR
@@ -513,8 +498,7 @@ sText_CommunicatingWithPlayer:
 sText_PleaseWaitAWhile:
 	.string "しょうしょうおまちください{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・\n{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・$"
 	.byte 0 @ alignment
-	.globl gUnknown_82C0CD8
-gUnknown_82C0CD8: @ 0x082C0CD8
+	.globl sCommunicatingWaitTexts
 sCommunicatingWaitTexts:
 	.4byte sText_Communicating
 	.4byte sText_CommunicatingWithPlayer
@@ -535,8 +519,7 @@ sText_HiDoSomethingAgainMale:
 sText_HiDoSomethingAgainFemale:
 	.string "{STR_VAR_1}「あ！　{PLAYER}\nこんにちは！　また　なにかする？$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C0D3C
-gUnknown_82C0D3C: @ 0x082C0D3C
+	.globl sHiDoSomethingTexts
 sHiDoSomethingTexts:
 	.4byte sText_HiDoSomethingMale
 	.4byte sText_HiDoSomethingFemale
@@ -572,8 +555,7 @@ sText_SomebodyHasContactedYou:
 sText_PlayerHasContactedYou:
 	.string "{STR_VAR_1}が\nはなしかけて　きました{PAUSE 60}$"
 	.byte 0 @ alignment
-	.globl gUnknown_82C0DB8
-gUnknown_82C0DB8: @ 0x082C0DB8
+	.globl sPlayerContactedYouTexts
 sPlayerContactedYouTexts:
 	.4byte sText_SomebodyHasContactedYou
 	.4byte sText_PlayerHasContactedYou
@@ -584,28 +566,23 @@ sText_AwaitingResponseFromTrainer:
 
 sText_AwaitingResponseFromPlayer:
 	.string "{STR_VAR_1}の　へんじを\nまっています$"
-	.globl gUnknown_82C0DE4
-gUnknown_82C0DE4: @ 0x082C0DE4
+	.globl sAwaitingResponseTexts
 sAwaitingResponseTexts:
 	.4byte sText_AwaitingResponseFromTrainer
 	.4byte sText_AwaitingResponseFromPlayer
-	.globl gUnknown_82C0DEC
-gUnknown_82C0DEC: @ 0x082C0DEC
+	.globl sText_ShowTrainerCard
 sText_ShowTrainerCard:
 	.string "あいてが　トレーナーカードを\nみせて　きました\pこちらも　トレーナーカードを\nみせますか？$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C0E1C
-gUnknown_82C0E1C: @ 0x082C0E1C
+	.globl sText_BattleChallenge
 sText_BattleChallenge:
 	.string "あいてが　たいせんを\nもうしこんで　きました\pたいせん　しますか？$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C0E40
-gUnknown_82C0E40: @ 0x082C0E40
+	.globl sText_ChatInvitation
 sText_ChatInvitation:
 	.string "あいてが　チャット　に\nさそって　きました\pいっしょに　チャット\nしますか？$"
 	.byte 0 @ alignment
-	.globl gUnknown_82C0E68
-gUnknown_82C0E68: @ 0x082C0E68
+	.globl sText_OfferToTradeMon
 sText_OfferToTradeMon:
 	@ Do not write "LV" as one string token here.
 	@ The charmap defines LV = 0x34, but the original ROM stores
@@ -733,8 +710,7 @@ sText_PlayerJoinChatFemale:
 	.space 0x29 - (. - gText_Rom_2C0FA4)
 	.endif
 	.space 0x3, 0x00
-	.globl gUnknown_82C0FD0
-gUnknown_82C0FD0: @ 0x082C0FD0
+	.globl sJoinChatTexts
 sJoinChatTexts:
 	.4byte sText_JoinChatMale
 	.4byte sText_JoinChatFemale
@@ -769,8 +745,7 @@ sText_WaitForChatFemale:
 sText_ShowTrainerCardFemale:
 	.string "じゃあ　あいさつの　かわりに\nトレーナーカードを　みせてあげるね$"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C10A4
-gUnknown_82C10A4: @ 0x082C10A4
+	.globl sText_WaitOrShowCardTexts
 sText_WaitOrShowCardTexts:
 	.4byte sText_WaitForBattleMale
 	.4byte sText_WaitForChatMale
@@ -801,8 +776,7 @@ sText_BattleWillBeStarted:
 sText_EnteringChat:
 	.string "チャットを\nかいし　します！{PAUSE 60}$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C1188
-gUnknown_82C1188: @ 0x082C1188
+	.globl sStartActivityTexts
 sStartActivityTexts:
 	.4byte sText_BattleWillBeStarted
 	.4byte sText_EnteringChat
@@ -821,8 +795,7 @@ sText_BattleDeclinedMale:
 	.space 2, 0 @ alignment
 sText_BattleDeclinedFemale:
 	.string "ごめんなさい！\nちょっと　ポケモンの　ちょうしが\lわるい　みたいなの……\pまた　こんど\nたいせん　しようね！\p$"
-	.globl gUnknown_82C1224
-gUnknown_82C1224: @ 0x082C1224
+	.globl sBattleDeclinedTexts
 sBattleDeclinedTexts:
 	.4byte sText_BattleDeclinedMale
 	.4byte sText_BattleDeclinedFemale
@@ -832,8 +805,7 @@ sText_ShowTrainerCardDeclinedMale:
 sText_ShowTrainerCardDeclinedFemale:
 	.string "あれ！？　トレーナーカード\nどこ　いったかな？……\lごめん！　またこんどね\p$"
 	.space 1, 0 @ alignment
-	.globl gUnknown_82C127C
-gUnknown_82C127C: @ 0x082C127C
+	.globl sShowTrainerCardDeclinedTexts
 sShowTrainerCardDeclinedTexts:
 	.4byte sText_ShowTrainerCardDeclinedMale
 	.4byte sText_ShowTrainerCardDeclinedFemale
@@ -843,8 +815,7 @@ sText_IfYouWantToDoSomethingMale:
 sText_IfYouWantToDoSomethingFemale:
 	.string "なにか　したくなったら\nまた　こえを　かけてね！\p$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C12BC
-gUnknown_82C12BC: @ 0x082C12BC
+	.globl sIfYouWantToDoSomethingTexts
 sIfYouWantToDoSomethingTexts:
 	.4byte sText_IfYouWantToDoSomethingMale
 	.4byte sText_IfYouWantToDoSomethingFemale
@@ -861,8 +832,7 @@ sText_TrainerBattleBusy:
 	.space 0x1d - (. - gText_Rom_2C12C4)
 	.endif
 	.space 0x3, 0x00
-	.globl gUnknown_82C12E4
-gUnknown_82C12E4: @ 0x082C12E4
+	.globl sText_NeedTwoMonsOfLevel30OrLower1
 sText_NeedTwoMonsOfLevel30OrLower1:
 	.string "たいせんを　するためには\nレベル30より　ひくい　ポケモンが\l2ひき　ひつよう　だよ\p$"
 
@@ -884,8 +854,7 @@ sText_DeclineChatMale:
 stext_DeclineChatFemale:
 	.string "そう……\nまた　いつでも　きてね！\p$"
 	.space 1, 0 @ alignment
-	.globl gUnknown_82C1364
-gUnknown_82C1364: @ 0x082C1364
+	.globl sDeclineChatTexts
 sDeclineChatTexts:
 	.4byte sText_DeclineChatMale
 	.4byte stext_DeclineChatFemale
@@ -894,8 +863,7 @@ sText_ChatDeclinedMale:
 sText_ChatDeclinedFemale:
 	.string "ごめん！\nやっぱり　いま　つごうが　わるいの\lまた　こんど　チャット　しようね\p$"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C13C4
-gUnknown_82C13C4: @ 0x082C13C4
+	.globl sChatDeclinedTexts
 sChatDeclinedTexts:
 	.4byte sText_ChatDeclinedMale
 	.4byte sText_ChatDeclinedFemale
@@ -920,8 +888,7 @@ sText_BattleSurpriseFemale:
 sText_SwitchedMonsFemale:
 	.string "ポケモン　いれかえの　タイミングが\nぜつみょうね！\p$"
 	.space 1, 0 @ alignment
-	.globl gUnknown_82C1498
-gUnknown_82C1498: @ 0x082C1498
+	.globl sBattleReactionTexts
 sBattleReactionTexts:
 	.4byte sText_YoureToughMale
 	.4byte sText_UsedGoodMoveMale
@@ -953,8 +920,7 @@ sText_RandomChatFemale1:
 sText_RandomChatFemale2:
 	.string "つまりね……\nうん！　それそれ！\p$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C1564
-gUnknown_82C1564: @ 0x082C1564
+	.globl sChatReactionTexts
 sChatReactionTexts:
 	.4byte sText_LearnedSomethingMale
 	.4byte sText_ThatsFunnyMale
@@ -976,8 +942,7 @@ sText_ShowedTrainerCardFemale1:
 sText_ShowedTrainerCardFemale2:
 	.string "これからも\nよろしくね！\p$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C15E8
-gUnknown_82C15E8: @ 0x082C15E8
+	.globl sTrainerCardReactionTexts
 sTrainerCardReactionTexts:
 	.4byte sText_ShowedTrainerCardMale1
 	.4byte sText_ShowedTrainerCardMale2
@@ -995,8 +960,7 @@ sText_FemaleTraded1:
 sText_FemaleTraded2:
 	.string "ほしい　ポケモンが\nやっと　こうかんして　もらえたわ！\p$"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C1668
-gUnknown_82C1668: @ 0x082C1668
+	.globl sTradeReactionTexts
 sTradeReactionTexts:
 	.4byte sText_MaleTraded1
 	.4byte sText_MaleTraded2
@@ -1006,17 +970,14 @@ sTradeReactionTexts:
 	.4byte sText_FemaleTraded2
 	.4byte 0
 	.4byte 0
-	.globl gUnknown_82C1688
-gUnknown_82C1688: @ 0x082C1688
+	.globl sText_XCheckedTradingBoard
 sText_XCheckedTradingBoard:
 	.string "{STR_VAR_1}は\nこうかんけいじばんを　みた！\p$"
-	.globl gUnknown_82C169C
-gUnknown_82C169C: @ 0x082C169C
+	.globl sText_RegisterMonAtTradingBoard
 sText_RegisterMonAtTradingBoard:
 	.string "いらっしゃいませ\nここでは　こうかんけいじばん　に\pごじぶんの　ポケモンを　とうろく\nすることが　できます\pとうろく　しますか？$"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C16E0
-gUnknown_82C16E0: @ 0x082C16E0
+	.globl sText_TradingBoardInfo
 sText_TradingBoardInfo:
 	.string "この　こうかんけいじばん　に\nポケモンを　とうろく　しておくと\pけいじばんを　みた　トレーナーが\nその　とうろくされた　ポケモンと\pてもちの　ポケモンを\nこうかん　することが　できます\pぜひポケモンを　とうろくして\nいろいろな　トレーナー　との\lこうかんを　たのしんで　ください\pとうろく　しますか？$"
 	.space 1, 0 @ alignment
@@ -1026,27 +987,22 @@ sText_ThankYouForRegistering:
 sText_NobodyHasRegistered:
 	.string "けいじばんに　だれも　ポケモンを\nとうろく　していません\p\n$"
 	.space 1, 0 @ alignment
-	.globl gUnknown_82C17CC
-gUnknown_82C17CC: @ 0x082C17CC
+	.globl sText_ChooseRequestedMonType
 sText_ChooseRequestedMonType:
 	.string "ほしい　ポケモンの　タイプを\nえらんで　ください\n$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C17E8
-gUnknown_82C17E8: @ 0x082C17E8
+	.globl sText_WhichMonWillYouOffer
 sText_WhichMonWillYouOffer:
 	.string "こうかんに　だす　ポケモンを\nてもちから　えらんで　ください\p$"
-	.globl gUnknown_82C1808
-gUnknown_82C1808: @ 0x082C1808
+	.globl sText_RegistrationCanceled
 sText_RegistrationCanceled:
 	.string "とうろくを　ちゅうし　しました\p$"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C181C
-gUnknown_82C181C: @ 0x082C181C
+	.globl sText_RegistrationCompleted
 sText_RegistrationCompleted:
 	.string "とうろくが　かんりょう　しました！\p$"
 	.space 1, 0 @ alignment
-	.globl gUnknown_82C1830
-gUnknown_82C1830: @ 0x082C1830
+	.globl sText_TradeCanceled
 sText_TradeCanceled:
 	.string "こうかんを　キャンセルしました\p$"
 	.space 3, 0 @ alignment
@@ -1075,8 +1031,7 @@ sText_CancelRegistrationOfEgg:
 	.space 0x1b - (. - gText_Rom_2C1864)
 	.endif
 	.space 0x1, 0x00
-	.globl gUnknown_82C1880
-gUnknown_82C1880: @ 0x082C1880
+	.globl sText_RegistrationCanceled2
 sText_RegistrationCanceled2:
 	.string "とうろくを　かいじょ　しました\p$"
 	.space 3, 0 @ align sText_TradeTrainersWillBeListed
@@ -1099,8 +1054,7 @@ gText_Rom_2C18A9: @ 0x082C18A9
 sText_ChooseTrainerToTradeWith2:
 	.string "こうかん　したい　トレーナーを\nえらんで　ください$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C18CC
-gUnknown_82C18CC: @ 0x082C18CC
+	.globl sText_AskTrainerToMakeTrade
 sText_AskTrainerToMakeTrade:
 	.string "{STR_VAR_1}に　こうかんを\nもうしこみ　ますか？$"
 	.space 3, 0 @ align sText_AwaitingResponseFromTrainer2
@@ -1108,12 +1062,10 @@ sText_AwaitingResponseFromTrainer2:
 	.string "……\nあいての　へんじを　まっています$"
 sText_NotRegisteredAMonForTrade:
 	.string "あなたが　こうかんにだす\nポケモンが　とうろくされていません\p$"
-	.globl gUnknown_82C1918
-gUnknown_82C1918: @ 0x082C1918
+	.globl sText_DontHaveTypeTrainerWants
 sText_DontHaveTypeTrainerWants:
 	.string "てもちに\n{STR_VAR_1}の　ほしがっている\l{STR_VAR_2}ポケモンが　ありません\p$"
-	.globl gUnknown_82C1938
-gUnknown_82C1938: @ 0x082C1938
+	.globl sText_DontHaveEggTrainerWants
 sText_DontHaveEggTrainerWants:
 	.string "{STR_VAR_1}の　ほしがっている\nタマゴを　もっていません\p$"
 	.space 2, 0 @ align sText_PlayerCantTradeForYourMon
@@ -1126,13 +1078,11 @@ sText_CantTradeForPartnersMon:
 sCantTradeMonTexts:
 	.4byte sText_PlayerCantTradeForYourMon @ player cannot trade for your mon
 	.4byte sText_CantTradeForPartnersMon @ you cannot trade for partner's mon
-	.globl gUnknown_82C1998
-gUnknown_82C1998: @ 0x082C1998
+	.globl sText_TradeOfferRejected
 sText_TradeOfferRejected:
 	.string "こうかんを\nことわられ　ました\p$"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C19AC
-gUnknown_82C19AC: @ 0x082C19AC
+	.globl sText_EggTrade
 sText_EggTrade:
 	.string "タマゴの"
 
@@ -1148,8 +1098,7 @@ gText_Rom_2C19B0: @ 0x082C19B0
 	.space 0x5 - (. - gText_Rom_2C19B0)
 	.endif
 	.space 0x3, 0x00
-	.globl gUnknown_82C19B8
-gUnknown_82C19B8: @ 0x082C19B8
+	.globl sText_ChooseJoinCancel
 sText_ChooseJoinCancel:
 	.string "{DPAD_UPDOWN}えらぶ:{A_BUTTON}さんかする:"
 
@@ -1228,8 +1177,7 @@ sText_ChooseLeaderBattleTowerLv50:
 sText_ChooseLeaderBattleTowerOpenLv:
 	.string "バトルタワー　オープンレベル！\nリーダーを　えらんでください$"
 	.byte 0 @ alignment
-	.globl gUnknown_82C1BE4
-gUnknown_82C1BE4: @ 0x082C1BE4
+	.globl sChooseTrainerTexts
 sChooseTrainerTexts:
 	.4byte sText_ChooseTrainerSingleBattle @ LINK_GROUP_SINGLE_BATTLE
 	.4byte sText_ChooseTrainerDoubleBattle @ LINK_GROUP_DOUBLE_BATTLE
@@ -1326,8 +1274,7 @@ sText_NoCardsSharedRightNow:
 	.byte 0 @ align sText_NoNewsSharedRightNow
 sText_NoNewsSharedRightNow:
 	.string "ただいま　ニュースの　はいふは\nおこなわれて　いないようです…$"
-	.globl gUnknown_82C1D30
-gUnknown_82C1D30: @ 0x082C1D30
+	.globl sNoWonderSharedTexts
 sNoWonderSharedTexts:
 	.4byte sText_NoCardsSharedRightNow @ wonder cards
 	.4byte sText_NoNewsSharedRightNow @ wonder news
@@ -1394,8 +1341,7 @@ sText_Exit2:
 	@ Decoded text from ROM range: offset=0x2C1D58, size=0x8
 sText_Info:
 	.string "せつめいをきく$"
-	.globl gUnknown_82C1D60
-gUnknown_82C1D60: @ 0x082C1D60
+	.globl sText_NameWantedOfferLv
 sText_NameWantedOfferLv:
 	@ Trading-board column headings:
 	@   なまえ / ほしいタイプ / あげるポケモン / レベル
@@ -1668,8 +1614,7 @@ sText_BattleTowerOpenLv:
 	.globl gText_Rom_2C1E53
 	.set gText_Rom_2C1E53, gText_Rom_2C1E48 + 0xb
 	.space 0x1, 0x00
-	.globl gUnknown_82C1E58
-gUnknown_82C1E58: @ 0x082C1E58
+	.globl sLinkGroupActivityNameTexts
 sLinkGroupActivityNameTexts:
 	.4byte 0x082C0640 @ ACTIVITY_NONE
 	.4byte sText_SingleBattle @ ACTIVITY_BATTLE_SINGLE
@@ -1765,21 +1710,18 @@ sText_ItsGoldCard:
 	.space 0xa - (. - gText_Rom_2C1EFC)
 	.endif
 	.space 0x2, 0x00
-	.globl gUnknown_82C1F08
-gUnknown_82C1F08: @ 0x082C1F08
+	.globl sCardColorTexts
 sCardColorTexts:
 	.4byte sText_ItsNormalCard
 	.4byte sText_ItsBronzeCard
 	.4byte sText_ItsCopperCard
 	.4byte sText_ItsSilverCard
 	.4byte sText_ItsGoldCard
-	.globl gUnknown_82C1F1C
-gUnknown_82C1F1C: @ 0x082C1F1C
+	.globl sText_TrainerCardInfoPage1
 sText_TrainerCardInfoPage1:
 	.string "{DYNAMIC 0}の　{DYNAMIC 1}の\nトレーナーカードを　みせてもらった\l{DYNAMIC 2}\pポケモンずかん　{DYNAMIC 3}\nプレイ　じかん　{DYNAMIC 4}:{DYNAMIC 5}\p$"
 	.byte 0 @ alignment
-	.globl gUnknown_82C1F54
-gUnknown_82C1F54: @ 0x082C1F54
+	.globl sText_TrainerCardInfoPage2
 sText_TrainerCardInfoPage2:
 	.string "たいせん　かち{DYNAMIC 0}　まけ{DYNAMIC 2}\nこうかん　{DYNAMIC 3}かい\p「{DYNAMIC 4}　{DYNAMIC 5}\n　{DYNAMIC 6}　{DYNAMIC 7}\p$"
 
@@ -1790,17 +1732,14 @@ sText_GladToMeetYouMale:
 sText_GladToMeetYouFemale:
 	.string "{DYNAMIC 1}「これからも　よろしくね！{PAUSE 60}$"
 	.byte 0 @ alignment
-	.globl gUnknown_82C1FA4
-gUnknown_82C1FA4: @ 0x082C1FA4
+	.globl sGladToMeetYouTexts
 sGladToMeetYouTexts:
 	.4byte sText_GladToMeetYouMale
 	.4byte sText_GladToMeetYouFemale
-	.globl gUnknown_82C1FAC
-gUnknown_82C1FAC: @ 0x082C1FAC
+	.globl sText_FinishedCheckingPlayersTrainerCard
 sText_FinishedCheckingPlayersTrainerCard:
 	.string "{DYNAMIC 1}の　トレーナーカードを\nみおわった！{PAUSE 60}$"
-	.globl gUnknown_82C1FC4
-gUnknown_82C1FC4: @ 0x082C1FC4
+	.globl sWindowTemplate_BButtonCancel
 sWindowTemplate_BButtonCancel:
 	.byte 0 @ bg
 	.byte 0 @ tilemapLeft
@@ -1809,8 +1748,7 @@ sWindowTemplate_BButtonCancel:
 	.byte 2 @ height
 	.byte 15 @ paletteNum
 	.2byte 0x0008 @ baseBlock
-	.globl gUnknown_82C1FCC
-gUnknown_82C1FCC: @ 0x082C1FCC
+	.globl sLinkGroupToActivityAndCapacity
 sLinkGroupToActivityAndCapacity:
 	.4byte 0x00000201 @ LINK_GROUP_SINGLE_BATTLE
 	.4byte 0x00000202 @ LINK_GROUP_DOUBLE_BATTLE
@@ -1834,8 +1772,7 @@ sLinkGroupToActivityAndCapacity:
 	.4byte 0x0000241B @ LINK_GROUP_TOUGH_CONTEST
 	.4byte 0x0000021C @ LINK_GROUP_BATTLE_TOWER
 	.4byte 0x0000020E @ LINK_GROUP_BATTLE_TOWER_OPEN
-	.globl gUnknown_82C2024
-gUnknown_82C2024: @ 0x082C2024
+	.globl sWindowTemplate_PlayerList
 sWindowTemplate_PlayerList:
 	.byte 0 @ bg
 	.byte 1 @ tilemapLeft
@@ -1844,8 +1781,7 @@ sWindowTemplate_PlayerList:
 	.byte 8 @ height
 	.byte 15 @ paletteNum
 	.2byte 0x0044 @ baseBlock
-	.globl gUnknown_82C202C
-gUnknown_82C202C: @ 0x082C202C
+	.globl sWindowTemplate_5PlayerList
 sWindowTemplate_5PlayerList:
 	.byte 0 @ bg
 	.byte 1 @ tilemapLeft
@@ -1854,8 +1790,7 @@ sWindowTemplate_5PlayerList:
 	.byte 10 @ height
 	.byte 15 @ paletteNum
 	.2byte 0x0044 @ baseBlock
-	.globl gUnknown_82C2034
-gUnknown_82C2034: @ 0x082C2034
+	.globl sWindowTemplate_NumPlayerMode
 sWindowTemplate_NumPlayerMode:
 	.byte 0 @ bg
 	.byte 16 @ tilemapLeft
@@ -1876,8 +1811,7 @@ sPossibleGroupMembersListMenuItems: @ 0x082C203C
 	.4byte 3
 	.4byte 0x082C0640 @ sText_EmptyString
 	.4byte 4
-	.globl gUnknown_82C2064
-gUnknown_82C2064: @ 0x082C2064
+	.globl sListMenuTemplate_PossibleGroupMembers
 sListMenuTemplate_PossibleGroupMembers:
 	.4byte sPossibleGroupMembersListMenuItems @ items
 	.4byte 0 @ moveCursorFunc
@@ -1885,8 +1819,7 @@ sListMenuTemplate_PossibleGroupMembers:
 	.2byte 5 @ totalItems
 	.2byte 5 @ maxShowed
 	.byte 0x00, 0x00, 0x01, 0x00, 0x20, 0x31, 0x00, 0x41 @ packed window/cursor/font fields
-	.globl gUnknown_82C207C
-gUnknown_82C207C: @ 0x082C207C
+	.globl sWindowTemplate_GroupList
 sWindowTemplate_GroupList:
 	.byte 0 @ bg
 	.byte 1 @ tilemapLeft
@@ -1895,8 +1828,7 @@ sWindowTemplate_GroupList:
 	.byte 10 @ height
 	.byte 15 @ paletteNum
 	.2byte 0x0044 @ baseBlock
-	.globl gUnknown_82C2084
-gUnknown_82C2084: @ 0x082C2084
+	.globl sWindowTemplate_PlayerNameAndId
 sWindowTemplate_PlayerNameAndId:
 	.byte 0 @ bg
 	.byte 20 @ tilemapLeft
@@ -1939,8 +1871,7 @@ sUnionRoomGroupsMenuItems: @ 0x082C208C
 	.4byte 14
 	.4byte 0x082C0640 @ sText_EmptyString
 	.4byte 15
-	.globl gUnknown_82C210C
-gUnknown_82C210C: @ 0x082C210C
+	.globl sListMenuTemplate_UnionRoomGroups
 sListMenuTemplate_UnionRoomGroups:
 	.4byte sUnionRoomGroupsMenuItems @ items
 	.4byte ListMenuDefaultCursorMoveFunc @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
@@ -1948,8 +1879,7 @@ sListMenuTemplate_UnionRoomGroups:
 	.2byte 16 @ totalItems
 	.2byte 5 @ maxShowed
 	.byte 0x00, 0x00, 0x08, 0x01, 0x21, 0x31, 0x40, 0x01 @ packed window/cursor/font fields
-	.globl gUnknown_82C2124
-gUnknown_82C2124: @ 0x082C2124
+	.globl sWindowTemplate_InviteToActivity
 sWindowTemplate_InviteToActivity:
 	.byte 0 @ bg
 	.byte 20 @ tilemapLeft
@@ -1968,8 +1898,7 @@ sInviteToActivityMenuItems: @ 0x082C212C
 	.4byte 0x00000245
 	.4byte gText_Rom_2C1D50 @ sText_Exit
 	.4byte 0x00000040
-	.globl gUnknown_82C214C
-gUnknown_82C214C: @ 0x082C214C
+	.globl sListMenuTemplate_InviteToActivity
 sListMenuTemplate_InviteToActivity:
 	.4byte sInviteToActivityMenuItems @ items
 	.4byte ListMenuDefaultCursorMoveFunc @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
@@ -1977,8 +1906,7 @@ sListMenuTemplate_InviteToActivity:
 	.2byte 4 @ totalItems
 	.2byte 4 @ maxShowed
 	.byte 0x00, 0x00, 0x0C, 0x01, 0x21, 0x31, 0x01, 0x01 @ packed window/cursor/font fields
-	.globl gUnknown_82C2164
-gUnknown_82C2164: @ 0x082C2164
+	.globl sWindowTemplate_RegisterForTrade
 sWindowTemplate_RegisterForTrade:
 	.byte 0 @ bg
 	.byte 18 @ tilemapLeft
@@ -1995,8 +1923,7 @@ sRegisterForTradeListMenuItems: @ 0x082C216C
 	.4byte 2
 	.4byte gText_Rom_2C1D50 @ sText_Exit
 	.4byte 3
-	.globl gUnknown_82C2184
-gUnknown_82C2184: @ 0x082C2184
+	.globl sListMenuTemplate_RegisterForTrade
 sListMenuTemplate_RegisterForTrade:
 	.4byte sRegisterForTradeListMenuItems @ items
 	.4byte ListMenuDefaultCursorMoveFunc @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
@@ -2004,8 +1931,7 @@ sListMenuTemplate_RegisterForTrade:
 	.2byte 3 @ totalItems
 	.2byte 3 @ maxShowed
 	.byte 0x00, 0x00, 0x0C, 0x01, 0x21, 0x31, 0x01, 0x01 @ packed window/cursor/font fields
-	.globl gUnknown_82C219C
-gUnknown_82C219C: @ 0x082C219C
+	.globl sWindowTemplate_TradingBoardRequestType
 sWindowTemplate_TradingBoardRequestType:
 	.byte 0 @ bg
 	.byte 20 @ tilemapLeft
@@ -2052,8 +1978,7 @@ sTradingBoardTypes: @ 0x082C21A4
 	.4byte 17
 	.4byte gText_Rom_2C1D50 @ sText_Exit
 	.4byte 18
-	.globl gUnknown_82C2234
-gUnknown_82C2234: @ 0x082C2234
+	.globl sMenuTemplate_TradingBoardRequestType
 sMenuTemplate_TradingBoardRequestType:
 	.4byte sTradingBoardTypes @ items
 	.4byte ListMenuDefaultCursorMoveFunc @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
@@ -2061,8 +1986,7 @@ sMenuTemplate_TradingBoardRequestType:
 	.2byte 18 @ totalItems
 	.2byte 6 @ maxShowed
 	.byte 0x00, 0x00, 0x0C, 0x01, 0x21, 0x31, 0x01, 0x01 @ packed window/cursor/font fields
-	.globl gUnknown_82C224C
-gUnknown_82C224C: @ 0x082C224C
+	.globl sWindowTemplate_TradingBoardHeader
 sWindowTemplate_TradingBoardHeader:
 	.byte 0 @ bg
 	.byte 1 @ tilemapLeft
@@ -2071,8 +1995,7 @@ sWindowTemplate_TradingBoardHeader:
 	.byte 2 @ height
 	.byte 13 @ paletteNum
 	.2byte 0x0001 @ baseBlock
-	.globl gUnknown_82C2254
-gUnknown_82C2254: @ 0x082C2254
+	.globl sWindowTemplate_TradingBoardMain
 sWindowTemplate_TradingBoardMain:
 	.byte 0 @ bg
 	.byte 1 @ tilemapLeft
@@ -2103,8 +2026,7 @@ sTradeBoardListMenuItems: @ 0x082C225C
 	.4byte 7
 	.4byte gText_Rom_2C1D54 @ sText_Exit2
 	.4byte 8
-	.globl gUnknown_82C22AC
-gUnknown_82C22AC: @ 0x082C22AC
+	.globl sTradeBoardListMenuTemplate
 sTradeBoardListMenuTemplate:
 	.4byte sTradeBoardListMenuItems @ items
 	.4byte ListMenuDefaultCursorMoveFunc @ ListMenuDefaultCursorMoveFunc + 1 @ moveCursorFunc
@@ -2163,8 +2085,7 @@ sEmptyListMenuTemplate:
 	.2byte 16 @ totalItems
 	.2byte 4 @ maxShowed
 	.byte 0x00, 0x00, 0x08, 0x01, 0x20, 0x31, 0x41, 0x01 @ packed window/cursor/font fields
-	.globl gUnknown_82C2364
-gUnknown_82C2364: @ 0x082C2364
+	.globl sUnionRoomPlayer_DummyRfu
 sUnionRoomPlayer_DummyRfu:
 	.space 0x18, 0
 
@@ -2293,8 +2214,7 @@ sAcceptedActivityIds_BattleTowerOpen: @ 0x082C23DC
 	.string "せ"
 	.byte EOS
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C23E0
-gUnknown_82C23E0: @ 0x082C23E0
+	.globl sAcceptedActivityIds
 sAcceptedActivityIds:
 	.4byte sAcceptedActivityIds_SingleBattle
 	.4byte sAcceptedActivityIds_DoubleBattle
@@ -2318,8 +2238,7 @@ sAcceptedActivityIds:
 	.4byte sAcceptedActivityIds_ToughContest
 	.4byte sAcceptedActivityIds_BattleTower
 	.4byte sAcceptedActivityIds_BattleTowerOpen
-	.globl gUnknown_82C2438
-gUnknown_82C2438: @ 0x082C2438
+	.globl sLinkGroupToURoomActivity
 sLinkGroupToURoomActivity:
 	.byte 0x01 @ LINK_GROUP_SINGLE_BATTLE -> ACTIVITY_BATTLE_SINGLE
 	.byte 0x02 @ LINK_GROUP_DOUBLE_BATTLE -> ACTIVITY_BATTLE_DOUBLE

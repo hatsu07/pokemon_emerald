@@ -12,6 +12,5 @@ gWallClock_Gfx: @ 0x0859130C
 	.if (. - gWallClock_Gfx) != 0x8F8
 	.error "gWallClock_Gfx exact asset size mismatch"
 	.endif
-	.globl gUnknown_8591C04
-gUnknown_8591C04: @ 0x08591C04
+	.globl gText_Rom_591C04
 

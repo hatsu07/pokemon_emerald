@@ -45,7 +45,7 @@ gNamingScreenData_08565C90: @ 0x08565C90
 gNamingScreenData_08565C9C: @ 0x08565C9C
 	@ analyzed canonical ROM range 0x08565C9C-0x08565CB3
 sSpriteTemplate_08565C9C: @ 0x08565C9C
-	rodata_sprite_template 0x5600, 0x0856, 0x08565790, gUnknown_85656C8, gUnknown_8565600, gUnknown_85656C8, 0x08565790
+	rodata_sprite_template 0x5600, 0x0856, 0x08565790, sLz77Block_085656C8, sLz77Block_08565600, sLz77Block_085656C8, 0x08565790
 	@ pret/pokeemerald-jp direct xref for 0x08565CB4: naming_screen.s: sub_080E46E4
 	.globl gNamingScreenData_08565CB4
 gNamingScreenData_08565CB4: @ 0x08565CB4
@@ -497,5 +497,4 @@ gUnknown_8566BE4: @ 0x08566BE4
 	.4byte ContestEffect_BadlyStartleMonsWithGoodAppeals
 	.4byte ContestEffect_BetterWhenAudienceExcited
 	.4byte ContestEffect_DontExciteAudience
-	.globl gUnknown_8566CA4
-gUnknown_8566CA4: @ 0x08566CA4
+	.globl gText_Rom_566CA4

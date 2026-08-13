@@ -1171,98 +1171,90 @@ sLz77Block_082CB73C:
 	@ pret/pokeemerald-jp direct xref for 0x082CB910: dodrio_berry_picking.s: sub_0802A5DC
 	.globl gDodrioBerryPickingData_082CB910
 gDodrioBerryPickingData_082CB910:
-	.globl gUnknown_82CB910
-gUnknown_82CB910: @ 0x082CB910
+	.globl sLz77Block_082CB910
 	@ confirmed GBA LZ77 stream: compressed=0x88D, decompressed=0x1000
 sLz77Block_082CB910:
 	@ analyzed canonical ROM range 0x082CB910-0x082CC19F
 	.incbin "build/graphics/analyzed/gunknown_82cb910_082cb910.4bpp.lz"
 	.if (. - sLz77Block_082CB910) != 0x890
-	.error "gUnknown_82CB910 compressed size mismatch"
+	.error "sLz77Block_082CB910 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082CC1A0: dodrio_berry_picking.s: sub_0802A5DC
 	.globl gDodrioBerryPickingData_082CC1A0
 gDodrioBerryPickingData_082CC1A0:
-	.globl gUnknown_82CC1A0
-gUnknown_82CC1A0: @ 0x082CC1A0
+	.globl sLz77Block_082CC1A0
 	@ confirmed GBA LZ77 stream: compressed=0xDC9, decompressed=0x1A00
 sLz77Block_082CC1A0:
 	@ analyzed canonical ROM range 0x082CC1A0-0x082CCF6B
 	.incbin "build/graphics/analyzed/gunknown_82cc1a0_082cc1a0.4bpp.lz"
 	.if (. - sLz77Block_082CC1A0) != 0xDCC
-	.error "gUnknown_82CC1A0 compressed size mismatch"
+	.error "sLz77Block_082CC1A0 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082CCF6C: dodrio_berry_picking.s: sub_08028460
 	.globl gDodrioBerryPickingData_082CCF6C
 gDodrioBerryPickingData_082CCF6C:
-	.globl gUnknown_82CCF6C
-gUnknown_82CCF6C: @ 0x082CCF6C
+	.globl sLz77Block_082CCF6C
 	@ confirmed GBA LZ77 stream: compressed=0x93, decompressed=0x180
 sLz77Block_082CCF6C:
 	@ analyzed canonical ROM range 0x082CCF6C-0x082CCFFF
 	.incbin "build/graphics/analyzed/gunknown_82ccf6c_082ccf6c.4bpp.lz"
 	.if (. - sLz77Block_082CCF6C) != 0x94
-	.error "gUnknown_82CCF6C compressed size mismatch"
+	.error "sLz77Block_082CCF6C compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082CD000: dodrio_berry_picking.s: sub_08028A70
 	.globl gDodrioBerryPickingData_082CD000
 gDodrioBerryPickingData_082CD000:
-	.globl gUnknown_82CD000
-gUnknown_82CD000: @ 0x082CD000
+	.globl sLz77Block_082CD000
 	@ confirmed GBA LZ77 stream: compressed=0x148, decompressed=0x400
 sLz77Block_082CD000:
 	@ analyzed canonical ROM range 0x082CD000-0x082CD147
 	.incbin "build/graphics/analyzed/gunknown_82cd000_082cd000.4bpp.lz"
 	.if (. - sLz77Block_082CD000) != 0x148
-	.error "gUnknown_82CD000 compressed size mismatch"
+	.error "sLz77Block_082CD000 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082CD148: dodrio_berry_picking.s: sub_080280D4
 	.globl gDodrioBerryPickingData_082CD148
 gDodrioBerryPickingData_082CD148:
-	.globl gUnknown_82CD148
-gUnknown_82CD148: @ 0x082CD148
+	.globl sLz77Block_082CD148
 	@ confirmed GBA LZ77 stream: compressed=0x121C, decompressed=0x3000
 sLz77Block_082CD148:
 	@ analyzed canonical ROM range 0x082CD148-0x082CE363
 	.incbin "build/graphics/analyzed/gunknown_82cd148_082cd148.4bpp.lz"
 	.if (. - sLz77Block_082CD148) != 0x121C
-	.error "gUnknown_82CD148 compressed size mismatch"
+	.error "sLz77Block_082CD148 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082CE364: dodrio_berry_picking.s: sub_08029064
 	.globl gDodrioBerryPickingData_082CE364
 gDodrioBerryPickingData_082CE364:
-	.globl gUnknown_82CE364
-gUnknown_82CE364: @ 0x082CE364
+	.globl sLz77Block_082CE364
 	@ confirmed GBA LZ77 stream: compressed=0x269, decompressed=0x500
 sLz77Block_082CE364:
 	@ analyzed canonical ROM range 0x082CE364-0x082CE5CF
 	.incbin "build/graphics/analyzed/gunknown_82ce364_082ce364.4bpp.lz"
 	.if (. - sLz77Block_082CE364) != 0x26C
-	.error "gUnknown_82CE364 compressed size mismatch"
+	.error "sLz77Block_082CE364 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082CE5D0: dodrio_berry_picking.s: sub_08029064
 	.globl gDodrioBerryPickingData_082CE5D0
 gDodrioBerryPickingData_082CE5D0:
-	.globl gUnknown_82CE5D0
-gUnknown_82CE5D0: @ 0x082CE5D0
+	.globl sLz77Block_082CE5D0
 	@ confirmed GBA LZ77 stream: compressed=0x24D, decompressed=0x500
 sLz77Block_082CE5D0:
 	@ analyzed canonical ROM range 0x082CE5D0-0x082CE81F
 	.incbin "build/graphics/analyzed/gunknown_82ce5d0_082ce5d0.4bpp.lz"
 	.if (. - sLz77Block_082CE5D0) != 0x250
-	.error "gUnknown_82CE5D0 compressed size mismatch"
+	.error "sLz77Block_082CE5D0 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082CE820: dodrio_berry_picking.s: sub_08029064
 	.globl gDodrioBerryPickingData_082CE820
 gDodrioBerryPickingData_082CE820:
-	.globl gUnknown_82CE820
-gUnknown_82CE820: @ 0x082CE820
+	.globl sLz77Block_082CE820
 	@ confirmed GBA LZ77 stream: compressed=0x249, decompressed=0x500
 sLz77Block_082CE820:
 	@ analyzed canonical ROM range 0x082CE820-0x082CEA6B
 	.incbin "build/graphics/analyzed/gunknown_82ce820_082ce820.4bpp.lz"
 	.if (. - sLz77Block_082CE820) != 0x24C
-	.error "gUnknown_82CE820 compressed size mismatch"
+	.error "sLz77Block_082CE820 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082CEA6C: dodrio_berry_picking.s: sub_08028134
 	.globl gDodrioBerryPickingData_082CEA6C

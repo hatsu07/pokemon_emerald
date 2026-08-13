@@ -4,8 +4,7 @@
 @ 0x082D2A58-0x082D2A67 belongs to digit_obj_util.c.
 @ 0x082D2A68 onward corresponds to the opening portion of src/data.c.
 
-	.globl gUnknown_82D2A58
-gUnknown_82D2A58: @ 0x082D2A58
+	.globl sTilesPerImage
 sTilesPerImage:
 	.byte 0x01, 0x04, 0x10, 0x40 @ ST_OAM_SQUARE
 	.byte 0x02, 0x04, 0x08, 0x20 @ ST_OAM_H_RECTANGLE
@@ -163,8 +162,7 @@ sAffineAnim_Battler_TipRight: @ 0x082D2E90
 	.2byte 0x0000, 0x0000, 0x0503, 0x0000 @ x=0, y=0, rot=1283, duration=0
 	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
-	.globl gUnknown_82D2EA8
-gUnknown_82D2EA8: @ 0x082D2EA8
+	.globl gAffineAnims_BattleSpritePlayerSide
 	.globl gAffineAnims_BattleSpritePlayerSide
 gAffineAnims_BattleSpritePlayerSide:
 	.4byte sAffineAnim_Battler_Normal
@@ -196,8 +194,7 @@ sAffineAnim_Battler_Spin: @ 0x082D2F14
 	.2byte 0x0000, 0x0000, 0x6E09, 0x0000 @ x=0, y=0, rot=28169, duration=0
 	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
-	.globl gUnknown_82D2F24
-gUnknown_82D2F24: @ 0x082D2F24
+	.globl gAffineAnims_BattleSpriteOpponentSide
 	.globl gAffineAnims_BattleSpriteOpponentSide
 gAffineAnims_BattleSpriteOpponentSide:
 	.4byte sAffineAnim_Battler_Normal

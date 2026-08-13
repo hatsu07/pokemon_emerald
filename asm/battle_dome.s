@@ -3542,7 +3542,7 @@ _08190270: .4byte gBattleDomeData_08D84F98
 _08190274: .4byte gBattleDomeTourneyTreeButtonSheets
 _08190278: .4byte gBattleDomeData_08D8533C
 _0819027C: .4byte gBattleDomeTourneyTreeButtons_Pal
-_08190280: .4byte gUnknown_8D855E4
+_08190280: .4byte sLz77Block_08D855E4
 _08190284: .4byte gBattleDomeData_08D854AC
 _08190288: .4byte 0x020377B4
 _0819028C: .4byte 0x05000100
@@ -11247,7 +11247,7 @@ _0819403C: .4byte gBattleDomeData_08D83BD0
 _08194040: .4byte gBattleDomeData_08D83CE0
 _08194044: .4byte gBattleDomeData_08D8533C
 _08194048: .4byte gBattleDomeTourneyTreeButtons_Pal
-_0819404C: .4byte gUnknown_8D855E4
+_0819404C: .4byte sLz77Block_08D855E4
 _08194050: .4byte 0x020377B4
 _08194054: .4byte 0x05000100
 _08194058: .4byte 0x03005B60

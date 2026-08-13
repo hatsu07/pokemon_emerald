@@ -94,7 +94,7 @@ _08153EB6:
 	.align 2, 0
 _08153EC0: .4byte 0x020205AC
 _08153EC4: .4byte 0x08153FE5
-_08153EC8: .4byte gUnknown_846FA18
+_08153EC8: .4byte sObjectReflectionPaletteSlots
 _08153ECC: .4byte gDummySpriteAnimTable
 _08153ED0: .4byte gDummySpriteAffineAnimTable
 	thumb_func_end SetUpReflection
@@ -433,7 +433,7 @@ _08154150:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0815415C: .4byte gUnknown_846FA18
+_0815415C: .4byte sObjectReflectionPaletteSlots
 _08154160: .4byte 0xFFFFFC00
 	thumb_func_end UpdateObjectReflectionSprite
 

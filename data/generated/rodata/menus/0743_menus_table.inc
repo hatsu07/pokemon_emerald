@@ -7,6 +7,5 @@ gUnknown_8537350: @ 0x08537350
 	.4byte gText_Rom_537345
 	.4byte gText_Rom_53733B
 	.4byte gText_Rom_537341
-	.globl gUnknown_853736C
-gUnknown_853736C: @ 0x0853736C
+	.globl gText_Rom_53736C
 

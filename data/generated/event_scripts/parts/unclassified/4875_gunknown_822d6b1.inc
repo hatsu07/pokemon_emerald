@@ -1,5 +1,4 @@
-	.globl gUnknown_822D6B1
-gUnknown_822D6B1: @ 0x0822D6B1
+	.globl EventScript_JP_0822D6B1
 	@ analyzed canonical ROM range 0x0822D6B1-0x0822D717
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_0822D6B1: @ 0x0822D6B1
@@ -46,8 +45,7 @@ EventScript_JP_0822D70E: @ 0x0822D70E
 	.2byte 0x0011
 	.2byte 0x0011
 	.byte 0x27, 0x02
-	.globl gUnknown_822D718
-gUnknown_822D718: @ 0x0822D718
+	.globl EventScript_JP_0822D718
 	@ analyzed canonical ROM range 0x0822D718-0x0822D732
 	@ semantic recovery: script_data; byte-verified against linked ROM
 .globl EventScript_JP_0822D718
@@ -68,8 +66,7 @@ EventScript_JP_0822D718: @ 0x0822D718
 	closemessage
 	releaseall
 	end
-	.globl gUnknown_822D733
-gUnknown_822D733: @ 0x0822D733
+	.globl EventScript_JP_0822D733
 	@ analyzed canonical ROM range 0x0822D733-0x0822D750
 	@ semantic recovery: script_data; byte-verified against linked ROM
 .globl EventScript_JP_0822D733
@@ -87,8 +84,7 @@ EventScript_JP_0822D733: @ 0x0822D733
 	.2byte 0x00F0
 EventScript_JP_0822D750: @ 0x0822D750
 	end
-	.globl gUnknown_822D751
-gUnknown_822D751: @ 0x0822D751
+	.globl EventScript_JP_0822D751
 	@ analyzed canonical ROM range 0x0822D751-0x0822D755
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_0822D751: @ 0x0822D751

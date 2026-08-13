@@ -4,5 +4,4 @@ gTrainerCardData_085CC32F: @ 0x085CC32F
 	@ analyzed canonical ROM range 0x085CC32F-0x085CC330
 gText_TrainerCardProfilePhraseSuffix: @ 0x085CC32F
 	.byte 0xB7, 0xFF
-	.globl gUnknown_85CC331
-gUnknown_85CC331: @ 0x085CC331
+	.globl gText_Rom_5CC331

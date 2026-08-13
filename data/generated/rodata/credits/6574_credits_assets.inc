@@ -445,6 +445,5 @@ gThrownPokeblockSpriteTemplate: @ 0x085CDB48
 	.if (. - gPokeblockFeedInitialFlipAffineAnim) != 0x120
 	.error "Pokeblock feed affine and sprite data must retain its original size"
 	.endif
-	.globl gUnknown_85CDB60
-gUnknown_85CDB60: @ 0x085CDB60
+	.globl gText_Rom_5CDB60
 

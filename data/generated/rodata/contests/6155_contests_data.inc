@@ -12,5 +12,4 @@ gBattleInterfaceData_085CC4EA: @ 0x085CC4EA
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0xFC, 0x02, 0x02, 0xFF
-	.globl gUnknown_85CC4EE
-gUnknown_85CC4EE: @ 0x085CC4EE
+	.globl gText_Rom_5CC4EE

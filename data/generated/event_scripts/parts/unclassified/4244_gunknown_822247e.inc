@@ -1,3 +1,2 @@
-	.globl gUnknown_822247E
-gUnknown_822247E: @ 0x0822247E
+	.globl gText_Rom_22247E
 

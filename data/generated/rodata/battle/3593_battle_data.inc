@@ -19,5 +19,4 @@ gBattleArenaData_085ABDA0: @ 0x085ABDA0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0xFD, 0x06, 0xFF
-	.globl gUnknown_85ABDA3
-gUnknown_85ABDA3: @ 0x085ABDA3
+	.globl gText_Rom_5ABDA3

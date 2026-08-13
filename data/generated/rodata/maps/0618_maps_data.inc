@@ -1,6 +1,5 @@
-	.globl gUnknown_845F31C
 	.globl gMetatileBehaviorAttributes
-gUnknown_845F31C: @ 0x0845F31C
+	.globl gMetatileBehaviorAttributes
 gMetatileBehaviorAttributes:
 	@ One flag byte per metatile behavior (0xF0 entries).
 	@ bit0=encounters, bit1=surfable, bit2=traversable/unused.

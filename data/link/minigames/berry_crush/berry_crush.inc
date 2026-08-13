@@ -480,38 +480,35 @@ sLz77Block_082C6104:
 	@ pret/pokeemerald-jp direct xref for 0x082C74D4: berry_crush.s: sub_08020D74
 	.globl gBerryCrushData_082C74D4
 gBerryCrushData_082C74D4:
-	.globl gUnknown_82C74D4
-gUnknown_82C74D4: @ 0x082C74D4
+	.globl sLz77Block_082C74D4
 	@ confirmed GBA LZ77 stream: compressed=0x12D, decompressed=0x280
 sLz77Block_082C74D4:
 	@ analyzed canonical ROM range 0x082C74D4-0x082C7603
 	.incbin "build/graphics/analyzed/gunknown_82c74d4_082c74d4.4bpp.lz"
 	.if (. - sLz77Block_082C74D4) != 0x130
-	.error "gUnknown_82C74D4 compressed size mismatch"
+	.error "sLz77Block_082C74D4 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082C7604: berry_crush.s: sub_08020D74
 	.globl gBerryCrushData_082C7604
 gBerryCrushData_082C7604:
-	.globl gUnknown_82C7604
-gUnknown_82C7604: @ 0x082C7604
+	.globl sLz77Block_082C7604
 	@ confirmed GBA LZ77 stream: compressed=0x197, decompressed=0x500
 sLz77Block_082C7604:
 	@ analyzed canonical ROM range 0x082C7604-0x082C779B
 	.incbin "build/graphics/analyzed/gunknown_82c7604_082c7604.4bpp.lz"
 	.if (. - sLz77Block_082C7604) != 0x198
-	.error "gUnknown_82C7604 compressed size mismatch"
+	.error "sLz77Block_082C7604 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082C779C: berry_crush.s: sub_08020D74
 	.globl gBerryCrushData_082C779C
 gBerryCrushData_082C779C:
-	.globl gUnknown_82C779C
-gUnknown_82C779C: @ 0x082C779C
+	.globl sLz77Block_082C779C
 	@ confirmed GBA LZ77 stream: compressed=0x228, decompressed=0x800
 sLz77Block_082C779C:
 	@ analyzed canonical ROM range 0x082C779C-0x082C79C3
 	.incbin "build/graphics/analyzed/gunknown_82c779c_082c779c.4bpp.lz"
 	.if (. - sLz77Block_082C779C) != 0x228
-	.error "gUnknown_82C779C compressed size mismatch"
+	.error "sLz77Block_082C779C compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082C79C4: berry_crush.s: sub_08022434
 	.globl gBerryCrushData_082C79C4

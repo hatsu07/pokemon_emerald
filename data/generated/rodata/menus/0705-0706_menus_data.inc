@@ -103,16 +103,13 @@ sVersionBannerLeftAnimTable: @ 0x0851ACAC
 	.4byte sVersionBannerLeftAnimSequence
 sVersionBannerRightAnimTable: @ 0x0851ACB0
 	.4byte sVersionBannerRightAnimSequence
-	.globl gUnknown_851ACB4
-gUnknown_851ACB4: @ 0x0851ACB4
+	.globl sVersionBannerLeftSpriteTemplate
 sVersionBannerLeftSpriteTemplate:
 	rodata_sprite_template 0x03E8, 0x03E8, sVersionBannerLeftOamData, sVersionBannerLeftAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCB_VersionBannerLeft
-	.globl gUnknown_851ACCC
-gUnknown_851ACCC: @ 0x0851ACCC
+	.globl sVersionBannerRightSpriteTemplate
 sVersionBannerRightSpriteTemplate:
 	rodata_sprite_template 0x03E8, 0x03E8, sVersionBannerRightOamData, sVersionBannerRightAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCB_VersionBannerRight
-	.globl gUnknown_851ACE4
-gUnknown_851ACE4: @ 0x0851ACE4
+	.globl sSpriteSheet_EmeraldVersion
 sSpriteSheet_EmeraldVersion:
 	.4byte 0x0851938C
 	.2byte 0x1000, 0x03E8
@@ -142,18 +139,15 @@ sAnim_Copyright_4: @ 0x0851AD44
 sStartCopyrightBannerAnimTable: @ 0x0851AD4C
 	.4byte sAnim_PressStart_0, sAnim_PressStart_1, sAnim_PressStart_2, sAnim_PressStart_3, sAnim_PressStart_4
 	.4byte sAnim_Copyright_0, sAnim_Copyright_1, sAnim_Copyright_2, sAnim_Copyright_3, sAnim_Copyright_4
-	.globl gUnknown_851AD74
-gUnknown_851AD74: @ 0x0851AD74
+	.globl sStartCopyrightBannerSpriteTemplate
 sStartCopyrightBannerSpriteTemplate:
 	rodata_sprite_template 0x03E9, 0x03E9, sOamData_CopyrightBanner, sStartCopyrightBannerAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCB_PressStartCopyrightBanner
-	.globl gUnknown_851AD8C
-gUnknown_851AD8C: @ 0x0851AD8C
+	.globl sSpriteSheet_PressStart
 sSpriteSheet_PressStart:
 	.4byte 0x085176F4
 	.2byte 0x0520, 0x03E9
 	.fill 8, 1, 0
-	.globl gUnknown_851AD9C
-gUnknown_851AD9C: @ 0x0851AD9C
+	.globl sSpritePalette_PressStart
 sSpritePalette_PressStart:
 	.4byte 0x085176D4
 	.2byte 0x03E9, 0
@@ -164,12 +158,10 @@ sPokemonLogoShineAnimSequence: @ 0x0851ADB4
 	.2byte 0x0000, 0x0004, 0xFFFF, 0x0000
 sPokemonLogoShineAnimTable: @ 0x0851ADBC
 	.4byte sPokemonLogoShineAnimSequence
-	.globl gUnknown_851ADC0
-gUnknown_851ADC0: @ 0x0851ADC0
+	.globl sPokemonLogoShineSpriteTemplate
 sPokemonLogoShineSpriteTemplate:
 	rodata_sprite_template 0x03EA, 0x03E9, sPokemonLogoShineOamData, sPokemonLogoShineAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCB_PokemonLogoShine
-	.globl gUnknown_851ADD8
-gUnknown_851ADD8: @ 0x0851ADD8
+	.globl sPokemonLogoShineSpriteSheet
 sPokemonLogoShineSpriteSheet:
 	.4byte 0x0851A598
 	.2byte 0x0800, 0x03EA

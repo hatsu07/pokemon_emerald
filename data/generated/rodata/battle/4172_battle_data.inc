@@ -19,5 +19,4 @@ gPokedexData_085C8FD4: @ 0x085C8FD4
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0x19, 0xFF
-	.globl gUnknown_85C8FD6
-gUnknown_85C8FD6: @ 0x085C8FD6
+	.globl gText_Rom_5C8FD6

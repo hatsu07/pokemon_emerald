@@ -9,8 +9,7 @@ gText_Rom_2C0644: @ 0x082C0644
 	.space 0x2 - (. - gText_Rom_2C0644)
 	.endif
 	.space 0x2, 0x00
-	.globl gUnknown_82C0648
-gUnknown_82C0648: @ 0x082C0648
+	.globl sText_ID
 sText_ID:
 	@ {ID} is encoded as F9 07.
 	.string "{ID}$"
@@ -27,8 +26,7 @@ gText_Rom_2C064C: @ 0x082C064C
 	.space 0x1f - (. - gText_Rom_2C064C)
 	.endif
 	.space 0x1, 0x00
-	.globl gUnknown_82C066C
-gUnknown_82C066C: @ 0x082C066C
+	.globl sText_WirelessSearchCanceled
 sText_WirelessSearchCanceled:
 	.string "ジョイスポットの　けんさくを\nちゅうししました$"
 sText_AwaitingCommunication2:
@@ -248,8 +246,7 @@ sText_4PlayerMode: @ 0x082C0830
 	.string "4にん\nプレイ$"
 sText_5PlayerMode: @ 0x082C0838
 	.string "5にん\nプレイ$"
-	.globl gUnknown_82C0840
-gUnknown_82C0840: @ 0x082C0840
+	.globl sPlayersNeededOrModeTexts
 
 sPlayersNeededOrModeTexts: @ 0x082C0840, const u8 *[5][5]
 	@ 2 players required
@@ -279,14 +276,12 @@ sText_BButtonCancel:
 sJPText_SearchingForParticipants: @ 0x082C08AC, unused
 	.string "ため\nさんかしゃ ぼしゅうちゅう です！$"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C08C4
-gUnknown_82C08C4: @ 0x082C08C4
+	.globl sText_PlayerContactedYouForXAccept
 
 sText_PlayerContactedYouForXAccept: @ 0x082C08C4
 	.string "{STR_VAR_2}から れんらくあり！\n{STR_VAR_1}を しますか？$"
 	.space 1, 0 @ alignment
-	.globl gUnknown_82C08DC
-gUnknown_82C08DC: @ 0x082C08DC
+	.globl sText_PlayerContactedYouShareX
 
 sText_PlayerContactedYouShareX: @ 0x082C08DC
 	.string "{STR_VAR_2}から れんらくあり！\n{STR_VAR_1}を くばりますか？$"
@@ -304,14 +299,12 @@ sText_PlayerContactedYouAddToMembers:
 	.space 0x19 - (. - gText_Rom_2C08F8)
 	.endif
 	.space 0x3, 0x00
-	.globl gUnknown_82C0914
-gUnknown_82C0914: @ 0x082C0914
+	.globl sText_AreTheseMembersOK
 
 sText_AreTheseMembersOK: @ 0x082C0914
 	.string "{STR_VAR_1}！\nこの メンバーで よろしいですか？$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C092C
-gUnknown_82C092C: @ 0x082C092C
+	.globl sText_CancelModeWithTheseMembers
 
 sText_CancelModeWithTheseMembers: @ 0x082C092C
 	.string "この メンバーで {STR_VAR_1}を\nするのは やめますか？$"
@@ -338,14 +331,12 @@ sText_CantTransmitTrainerTooFar: @ 0x082C0970
 	.space 2, 0 @ align sText_TrainersNotReadyYet
 sText_TrainersNotReadyYet: @ 0x082C098C
 	.string "あいての じゅんびが\nできていません\p$"
-	.globl gUnknown_82C09A0
-gUnknown_82C09A0: @ 0x082C09A0
+	.globl sCantTransmitToTrainerTexts
 
 sCantTransmitToTrainerTexts: @ 0x082C09A0
 	.4byte sText_CantTransmitTrainerTooFar
 	.4byte sText_TrainersNotReadyYet
-	.globl gUnknown_82C09A8
-gUnknown_82C09A8: @ 0x082C09A8
+	.globl sText_ModeWithTheseMembersWillBeCanceled
 
 sText_ModeWithTheseMembersWillBeCanceled: @ 0x082C09A8
 	.string "この メンバーで {STR_VAR_1}を\nするのは やめます{PAUSE 60}$"
@@ -353,8 +344,7 @@ sText_ModeWithTheseMembersWillBeCanceled: @ 0x082C09A8
 sText_MemberNoLongerAvailable: @ 0x082C09C4
 	.string "つごうが わるくなってしまった\nメンバーが います\p$"
 	.space 1, 0 @ alignment
-	.globl gUnknown_82C09E0
-gUnknown_82C09E0: @ 0x082C09E0
+	.globl sPlayerUnavailableTexts
 
 sPlayerUnavailableTexts: @ 0x082C09E0
 	.4byte sText_OtherTrainerUnavailableNow
@@ -404,8 +394,7 @@ sText_AwaitingOtherMembers:
 	.space 0x16 - (. - gText_Rom_2C0A4C)
 	.endif
 	.space 0x2, 0x00
-	.globl gUnknown_82C0A64
-gUnknown_82C0A64: @ 0x082C0A64
+	.globl sText_QuitBeingMember
 
 sText_QuitBeingMember: @ 0x082C0A64
 	.string "メンバーから ぬけますか？$"
@@ -413,8 +402,7 @@ sText_QuitBeingMember: @ 0x082C0A64
 sText_StoppedBeingMember: @ 0x082C0A74
 	.string "メンバーから ぬけました\p$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C0A84
-gUnknown_82C0A84: @ 0x082C0A84
+	.globl sPlayerDisconnectedTexts
 
 sPlayerDisconnectedTexts: @ 0x082C0A84
 	.4byte 0 @ RFU_STATUS_OK
@@ -441,12 +429,10 @@ sText_WirelessLinkEstablished:
 	.endif
 	.space 0x1, 0x00
 
-	.globl gUnknown_82C0AC8
-gUnknown_82C0AC8: @ 0x082C0AC8
+	.globl sText_WirelessLinkDropped
 sText_WirelessLinkDropped:
 	.string "ジョイスポットから　せつぞくを\nせつだん　されました…$"
-	.globl gUnknown_82C0AE4
-gUnknown_82C0AE4: @ 0x082C0AE4
+	.globl sText_LinkWithFriendDropped
 sText_LinkWithFriendDropped:
 	.string "おともだちとの　つうしんが\nせつだん　されました…$"
 	.space 2, 0 @ align sText_PlayerRepliedNo2
@@ -454,8 +440,7 @@ sText_LinkWithFriendDropped:
 sText_PlayerRepliedNo2:
 	.string "{STR_VAR_1}から　NGとの\nへんじが　きてしまいました…$"
 	.space 3, 0 @ alignment
-	.globl gUnknown_82C0B1C
-gUnknown_82C0B1C: @ 0x082C0B1C
+	.globl sLinkDroppedTexts
 sLinkDroppedTexts:
 	.4byte 0 @ RFU_STATUS_OK
 	.4byte sText_LinkWithFriendDropped @ RFU_STATUS_FATAL_ERROR
@@ -513,8 +498,7 @@ sText_CommunicatingWithPlayer:
 sText_PleaseWaitAWhile:
 	.string "しょうしょうおまちください{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・\n{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・$"
 	.byte 0 @ alignment
-	.globl gUnknown_82C0CD8
-gUnknown_82C0CD8: @ 0x082C0CD8
+	.globl sCommunicatingWaitTexts
 sCommunicatingWaitTexts:
 	.4byte sText_Communicating
 	.4byte sText_CommunicatingWithPlayer
@@ -535,8 +519,7 @@ sText_HiDoSomethingAgainMale:
 sText_HiDoSomethingAgainFemale:
 	.string "{STR_VAR_1}「あ！　{PLAYER}\nこんにちは！　また　なにかする？$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C0D3C
-gUnknown_82C0D3C: @ 0x082C0D3C
+	.globl sHiDoSomethingTexts
 sHiDoSomethingTexts:
 	.4byte sText_HiDoSomethingMale
 	.4byte sText_HiDoSomethingFemale
@@ -572,8 +555,7 @@ sText_SomebodyHasContactedYou:
 sText_PlayerHasContactedYou:
 	.string "{STR_VAR_1}が\nはなしかけて　きました{PAUSE 60}$"
 	.byte 0 @ alignment
-	.globl gUnknown_82C0DB8
-gUnknown_82C0DB8: @ 0x082C0DB8
+	.globl sPlayerContactedYouTexts
 sPlayerContactedYouTexts:
 	.4byte sText_SomebodyHasContactedYou
 	.4byte sText_PlayerHasContactedYou
@@ -584,28 +566,23 @@ sText_AwaitingResponseFromTrainer:
 
 sText_AwaitingResponseFromPlayer:
 	.string "{STR_VAR_1}の　へんじを\nまっています$"
-	.globl gUnknown_82C0DE4
-gUnknown_82C0DE4: @ 0x082C0DE4
+	.globl sAwaitingResponseTexts
 sAwaitingResponseTexts:
 	.4byte sText_AwaitingResponseFromTrainer
 	.4byte sText_AwaitingResponseFromPlayer
-	.globl gUnknown_82C0DEC
-gUnknown_82C0DEC: @ 0x082C0DEC
+	.globl sText_ShowTrainerCard
 sText_ShowTrainerCard:
 	.string "あいてが　トレーナーカードを\nみせて　きました\pこちらも　トレーナーカードを\nみせますか？$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C0E1C
-gUnknown_82C0E1C: @ 0x082C0E1C
+	.globl sText_BattleChallenge
 sText_BattleChallenge:
 	.string "あいてが　たいせんを\nもうしこんで　きました\pたいせん　しますか？$"
 	.space 2, 0 @ alignment
-	.globl gUnknown_82C0E40
-gUnknown_82C0E40: @ 0x082C0E40
+	.globl sText_ChatInvitation
 sText_ChatInvitation:
 	.string "あいてが　チャット　に\nさそって　きました\pいっしょに　チャット\nしますか？$"
 	.byte 0 @ alignment
-	.globl gUnknown_82C0E68
-gUnknown_82C0E68: @ 0x082C0E68
+	.globl sText_OfferToTradeMon
 sText_OfferToTradeMon:
 	@ Do not write "LV" as one string token here.
 	@ The charmap defines LV = 0x34, but the original ROM stores

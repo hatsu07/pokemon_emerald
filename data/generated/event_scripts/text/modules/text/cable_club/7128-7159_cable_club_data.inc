@@ -96,8 +96,7 @@ gText_Rom_247C5B: @ 0x08247C5B
 	.if (. - gText_Rom_247C5B) < 0x1e
 	.space 0x1e - (. - gText_Rom_247C5B)
 	.endif
-	.globl gUnknown_8247C79
-gUnknown_8247C79: @ 0x08247C79
+	.globl gText_Rom_247C79
 
 	@ data/text/cable_club.inc:29 gText_PleaseWaitForLink
 	.globl gText_Rom_247C79

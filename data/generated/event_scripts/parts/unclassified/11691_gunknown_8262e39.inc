@@ -1,3 +1,2 @@
-	.globl gUnknown_8262E39
-gUnknown_8262E39: @ 0x08262E39
+	.globl gText_Rom_262E39
 

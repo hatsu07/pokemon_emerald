@@ -7,8 +7,7 @@
 	.2byte ((\r) & 31) | (((\g) & 31) << 5) | (((\b) & 31) << 10)
 .endm
 
-	.globl gUnknown_82FD0CC
-gUnknown_82FD0CC: @ 0x082FD0CC
+	.globl sTradeEarlyPalette0
 sTradeEarlyPalette0: @ palette bank 0, 16 colors
 	trade_rgb5  0,  0,  0 @ [00] #000000 (0x0000)
 	trade_rgb5  7,  7, 21 @ [01] #3939AD (0x54E7)
@@ -81,15 +80,14 @@ sTradeEarlyPalette3: @ palette bank 3, 16 colors
 	trade_rgb5 25, 25, 27 @ [14] #CECEDE (0x6F39)
 	trade_rgb5 31, 12,  4 @ [15] #FF6321 (0x119F)
 
-.if (. - gUnknown_82FD0CC) != 0x80
+.if (. - sTradeEarlyPalette0) != 0x80
 	.error "trade early palette block must be 0x80 bytes"
 .endif
 
-	.globl gUnknown_82FD14C
-gUnknown_82FD14C: @ 0x082FD14C
+	.globl sTradeEarlyTiles
 sTradeEarlyTiles:
 	@ 148 GBA 8x8 4bpp tiles, arranged in the source PNG as 4 tiles per row.
 	.incbin "build/graphics/trade/early_tiles.4bpp"
-.if (. - gUnknown_82FD14C) != 0x1280
+.if (. - sTradeEarlyTiles) != 0x1280
 	.error "trade early tile block must be 0x1280 bytes"
 .endif

@@ -1436,5 +1436,4 @@ sPointerTable_0852B220:
 	.4byte 0x086A0869 @ +0x4
 	.4byte 0x086C086B @ +0x8
 	.4byte 0x086E086D @ +0xC
-	.globl gUnknown_852B230
-gUnknown_852B230: @ 0x0852B230
+	.globl gText_Rom_52B230

@@ -173,5 +173,4 @@ gText_Rom_263095: @ 0x08263095
 	.if (. - gText_Rom_263095) < 0x32
 	.space 0x32 - (. - gText_Rom_263095)
 	.endif
-	.globl gUnknown_82630C7
-gUnknown_82630C7: @ 0x082630C7
+	.globl gText_Rom_2630C7

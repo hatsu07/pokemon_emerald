@@ -1,3 +1,2 @@
-	.globl gUnknown_85C9440
-gUnknown_85C9440: @ 0x085C9440
+	.globl gText_Rom_5C9440
 

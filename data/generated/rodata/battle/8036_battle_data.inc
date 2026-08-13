@@ -56,5 +56,4 @@ gTrainerHillData_085FB8E0: @ 0x085FB8E0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x00, 0x02, 0x03
-	.globl gUnknown_85FB8E3
-gUnknown_85FB8E3: @ 0x085FB8E3
+	.globl gText_Rom_5FB8E3

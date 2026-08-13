@@ -107,9 +107,8 @@
 	.globl PetalburgCity_EventScript_ScottExit3
 	.globl PetalburgCity_EventScript_GymBoy
 
-	.globl gUnknown_81DB7E8
 	.globl PetalburgCity_MapScripts
-gUnknown_81DB7E8: @ 0x081DB7E8
+	.globl PetalburgCity_MapScripts
 PetalburgCity_MapScripts:
 	map_script PETALBURG_MAP_SCRIPT_ON_TRANSITION, PetalburgCity_OnTransition
 	map_script PETALBURG_MAP_SCRIPT_ON_FRAME_TABLE, PetalburgCity_OnFrame

@@ -5,14 +5,12 @@ gFieldPlayerAvatarData_0846FA13: @ 0x0846FA13
 sPlayerAvatarTransitionDirections: @ 0x0846FA13
 	.byte 0x01, 0x03, 0x04, 0x02, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x0846FA18: event_object_movement.s: LoadPlayerObjectReflectionPalette, LoadSpecialObjectReflectionPalette; field_effect_helpers.s: SetUpReflection, UpdateObjectReflectionSprite
-	.globl gUnknown_846FA18
-gUnknown_846FA18: @ 0x0846FA18
+	.globl sObjectReflectionPaletteSlots
 	@ analyzed canonical ROM range 0x0846FA18-0x0846FA27
 sObjectReflectionPaletteSlots: @ 0x0846FA18
 	.byte 0x01, 0x01, 0x06, 0x07, 0x08, 0x09, 0x06, 0x07
 	.byte 0x08, 0x09, 0x0B, 0x0B, 0x00, 0x00, 0x00, 0x00
-	.globl gUnknown_846FA28
-gUnknown_846FA28: @ 0x0846FA28
+	.globl sCameraObjectSpriteTemplate
 sCameraObjectSpriteTemplate:
 	rodata_sprite_template 0x0000, 0xFFFF, 0x082BF2F8, 0x082BF304, 0, 0x082BF310, 0x0808E6E9
 	.globl gUnknown_846FA40

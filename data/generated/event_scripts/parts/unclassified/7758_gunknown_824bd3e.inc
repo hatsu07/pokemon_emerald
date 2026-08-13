@@ -1,3 +1,2 @@
-	.globl gUnknown_824BD3E
-gUnknown_824BD3E: @ 0x0824BD3E
+	.globl gText_Rom_24BD3E
 

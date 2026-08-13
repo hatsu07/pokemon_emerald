@@ -954,50 +954,46 @@ gBattleTransitionAquaMagmaPalette: @ 0x0859A960
 	@ pret/pokeemerald-jp direct xref for 0x0859A980: battle_transition.s: Phase2_Aqua_Func1
 	.globl gBattleTransitionData_0859A980
 gBattleTransitionData_0859A980:
-	.globl gUnknown_859A980
-gUnknown_859A980: @ 0x0859A980
+	.globl sLz77Block_0859A980
 	@ confirmed GBA LZ77 stream: compressed=0x375, decompressed=0xC00
 sLz77Block_0859A980:
 	@ analyzed canonical ROM range 0x0859A980-0x0859ACF7
 	.incbin "build/graphics/analyzed/gunknown_859a980_0859a980.4bpp.lz"
 	.if (. - sLz77Block_0859A980) != 0x378
-	.error "gUnknown_859A980 compressed size mismatch"
+	.error "sLz77Block_0859A980 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0859ACF8: battle_transition.s: Phase2_Aqua_Func2
 	.globl gBattleTransitionData_0859ACF8
 gBattleTransitionData_0859ACF8:
-	.globl gUnknown_859ACF8
-gUnknown_859ACF8: @ 0x0859ACF8
+	.globl sLz77Block_0859ACF8
 	@ confirmed GBA LZ77 stream: compressed=0x25C, decompressed=0x800
 sLz77Block_0859ACF8:
 	@ analyzed canonical ROM range 0x0859ACF8-0x0859AF53
 	.incbin "build/graphics/analyzed/gunknown_859acf8_0859acf8.4bpp.lz"
 	.if (. - sLz77Block_0859ACF8) != 0x25C
-	.error "gUnknown_859ACF8 compressed size mismatch"
+	.error "sLz77Block_0859ACF8 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0859AF54: battle_transition.s: Phase2_Magma_Func1
 	.globl gBattleTransitionData_0859AF54
 gBattleTransitionData_0859AF54:
-	.globl gUnknown_859AF54
-gUnknown_859AF54: @ 0x0859AF54
+	.globl sLz77Block_0859AF54
 	@ confirmed GBA LZ77 stream: compressed=0x489, decompressed=0x1000
 sLz77Block_0859AF54:
 	@ analyzed canonical ROM range 0x0859AF54-0x0859B3DF
 	.incbin "build/graphics/analyzed/gunknown_859af54_0859af54.4bpp.lz"
 	.if (. - sLz77Block_0859AF54) != 0x48C
-	.error "gUnknown_859AF54 compressed size mismatch"
+	.error "sLz77Block_0859AF54 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0859B3E0: battle_transition.s: Phase2_Magma_Func2
 	.globl gBattleTransitionData_0859B3E0
 gBattleTransitionData_0859B3E0:
-	.globl gUnknown_859B3E0
-gUnknown_859B3E0: @ 0x0859B3E0
+	.globl sLz77Block_0859B3E0
 	@ confirmed GBA LZ77 stream: compressed=0x2E1, decompressed=0x800
 sLz77Block_0859B3E0:
 	@ analyzed canonical ROM range 0x0859B3E0-0x0859B6C3
 	.incbin "build/graphics/analyzed/gunknown_859b3e0_0859b3e0.4bpp.lz"
 	.if (. - sLz77Block_0859B3E0) != 0x2E4
-	.error "gUnknown_859B3E0 compressed size mismatch"
+	.error "sLz77Block_0859B3E0 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0859B6C4: battle_transition.s: Phase2_Regi_Func1
 	.globl gBattleTransitionData_0859B6C4

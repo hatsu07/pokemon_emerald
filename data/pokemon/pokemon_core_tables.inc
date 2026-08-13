@@ -912,20 +912,20 @@ sHoldEffectToType: @ 0x082FA702
 
 	.globl gBattlerSpriteTemplates
 gBattlerSpriteTemplates: @ 0x082FA724
-	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gBattlerPicTable_PlayerLeft, gUnknown_82D2EA8, sub_080397F8 @ entry 0
-	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpriteOpponentSide, NULL, gBattlerPicTable_OpponentLeft, gUnknown_82D2F24, SpriteCb_WildMon @ entry 1
-	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gBattlerPicTable_PlayerRight, gUnknown_82D2EA8, sub_080397F8 @ entry 2
-	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpriteOpponentSide, NULL, gBattlerPicTable_OpponentRight, gUnknown_82D2F24, SpriteCb_WildMon @ entry 3
+	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gBattlerPicTable_PlayerLeft, gAffineAnims_BattleSpritePlayerSide, sub_080397F8 @ entry 0
+	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpriteOpponentSide, NULL, gBattlerPicTable_OpponentLeft, gAffineAnims_BattleSpriteOpponentSide, SpriteCb_WildMon @ entry 1
+	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gBattlerPicTable_PlayerRight, gAffineAnims_BattleSpritePlayerSide, sub_080397F8 @ entry 2
+	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpriteOpponentSide, NULL, gBattlerPicTable_OpponentRight, gAffineAnims_BattleSpriteOpponentSide, SpriteCb_WildMon @ entry 3
 
 sTrainerBackSpriteTemplates: @ 0x082FA784
-	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_Brendan, gUnknown_82D2EA8, sub_080397F8 @ entry 0
-	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_May, gUnknown_82D2EA8, sub_080397F8 @ entry 1
-	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_Red, gUnknown_82D2EA8, sub_080397F8 @ entry 2
-	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_Leaf, gUnknown_82D2EA8, sub_080397F8 @ entry 3
-	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_RubySapphireBrendan, gUnknown_82D2EA8, sub_080397F8 @ entry 4
-	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_RubySapphireMay, gUnknown_82D2EA8, sub_080397F8 @ entry 5
-	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_Wally, gUnknown_82D2EA8, sub_080397F8 @ entry 6
-	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_Steven, gUnknown_82D2EA8, sub_080397F8 @ entry 7
+	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_Brendan, gAffineAnims_BattleSpritePlayerSide, sub_080397F8 @ entry 0
+	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_May, gAffineAnims_BattleSpritePlayerSide, sub_080397F8 @ entry 1
+	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_Red, gAffineAnims_BattleSpritePlayerSide, sub_080397F8 @ entry 2
+	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_Leaf, gAffineAnims_BattleSpritePlayerSide, sub_080397F8 @ entry 3
+	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_RubySapphireBrendan, gAffineAnims_BattleSpritePlayerSide, sub_080397F8 @ entry 4
+	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_RubySapphireMay, gAffineAnims_BattleSpritePlayerSide, sub_080397F8 @ entry 5
+	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_Wally, gAffineAnims_BattleSpritePlayerSide, sub_080397F8 @ entry 6
+	rodata_sprite_template TAG_NONE, 0, gOamData_BattleSpritePlayerSide, NULL, gTrainerBackPicTable_Steven, gAffineAnims_BattleSpritePlayerSide, sub_080397F8 @ entry 7
 
 sSecretBaseFacilityClasses: @ 0x082FA844
 	@ Male classes

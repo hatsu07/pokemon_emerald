@@ -144,26 +144,24 @@ gPokenavUnk10Data_085F648C: @ 0x085F648C
 	@ pret/pokeemerald-jp direct xref for 0x085F64AC: pokenav_unk_10.s: sub_081D011C
 	.globl gPokenavUnk10Data_085F64AC
 gPokenavUnk10Data_085F64AC:
-	.globl gUnknown_85F64AC
-gUnknown_85F64AC: @ 0x085F64AC
+	.globl sLz77Block_085F64AC
 	@ confirmed GBA LZ77 stream: compressed=0xFA, decompressed=0x260
 sLz77Block_085F64AC:
 	@ analyzed canonical ROM range 0x085F64AC-0x085F65A7
 	.incbin "build/graphics/analyzed/gunknown_85f64ac_085f64ac.4bpp.lz"
 	.if (. - sLz77Block_085F64AC) != 0xFC
-	.error "gUnknown_85F64AC compressed size mismatch"
+	.error "sLz77Block_085F64AC compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085F65A8: pokenav_unk_10.s: sub_081D011C
 	.globl gPokenavUnk10Data_085F65A8
 gPokenavUnk10Data_085F65A8:
-	.globl gUnknown_85F65A8
-gUnknown_85F65A8: @ 0x085F65A8
+	.globl sLz77Block_085F65A8
 	@ confirmed GBA LZ77 stream: compressed=0xCB, decompressed=0x500
 sLz77Block_085F65A8:
 	@ analyzed canonical ROM range 0x085F65A8-0x085F6673
 	.incbin "build/graphics/analyzed/gunknown_85f65a8_085f65a8.4bpp.lz"
 	.if (. - sLz77Block_085F65A8) != 0xCC
-	.error "gUnknown_85F65A8 compressed size mismatch"
+	.error "sLz77Block_085F65A8 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085F6674: pokenav_unk_10.s: sub_081D011C
 	.globl gPokenavUnk10Data_085F6674

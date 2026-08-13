@@ -780,14 +780,13 @@ gMatchCallData_085D75E8: @ 0x085D75E8
 	@ pret/pokeemerald-jp direct xref for 0x085D7608: match_call.s: LoadMatchCallWindowGfx
 	.globl gMatchCallData_085D7608
 gMatchCallData_085D7608:
-	.globl gUnknown_85D7608
-gUnknown_85D7608: @ 0x085D7608
+	.globl sLz77Block_085D7608
 	@ confirmed GBA LZ77 stream: compressed=0x3E2, decompressed=0x1000
 sLz77Block_085D7608:
 	@ analyzed canonical ROM range 0x085D7608-0x085D79EB
 	.incbin "build/graphics/analyzed/gunknown_85d7608_085d7608.4bpp.lz"
 	.if (. - sLz77Block_085D7608) != 0x3E4
-	.error "gUnknown_85D7608 compressed size mismatch"
+	.error "sLz77Block_085D7608 compressed size mismatch"
 	.endif
 	.globl gUnknown_85D79EC
 gUnknown_85D79EC: @ 0x085D79EC

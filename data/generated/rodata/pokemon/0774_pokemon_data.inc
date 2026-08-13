@@ -452,8 +452,7 @@ gMonFootprintTable: @ 0x08543168
 	.4byte 0x08C30444 @ [SPECIES_EGG]
 sPokedexUiPalettes: @ 0x085437DC, 4 banks x 16 RGB555 colors
 	rodata_rgb5 15, 16,  0 @ [00] raw=0x020F
-	.globl gUnknown_85437DE
-gUnknown_85437DE: @ 0x085437DE
+	.globl sPokedexUiPalettes_Continuation
 sPokedexUiPalettes_Continuation:
 	@ Continuation of sPokedexUiPalettes; entry 0 is at 0x085437DC.
 	rodata_rgb5  0,  0,  0 @ [01] raw=0x0000
@@ -519,31 +518,28 @@ sPokedexUiPalettes_Continuation:
 	rodata_rgb5  3, 16,  4 @ [61] raw=0x1203
 	rodata_rgb5  0,  0,  0 @ [62] raw=0x0000
 	rodata_rgb5  0,  0,  0 @ [63] raw=0x0000
-	.globl gUnknown_854385C
-gUnknown_854385C: @ 0x0854385C
+	.globl sPokedexUi854385C
 sPokedexUi854385C:
 	.incbin "build/graphics/analyzed/pokedex_ui_854385c.4bpp.lz"
-	.if (. - gUnknown_854385C) != 0x58C
-	.error "gUnknown_854385C compressed size mismatch"
+	.if (. - sPokedexUi854385C) != 0x58C
+	.error "sPokedexUi854385C compressed size mismatch"
 	.endif
-	.globl gUnknown_8543DE8
-gUnknown_8543DE8: @ 0x08543DE8
+	.globl sPokedexUi8543De8
 sPokedexUi8543De8:
 	.incbin "build/graphics/analyzed/pokedex_ui_8543de8.4bpp.lz"
-	.if (. - gUnknown_8543DE8) != 0x19C
-	.error "gUnknown_8543DE8 compressed size mismatch"
+	.if (. - sPokedexUi8543De8) != 0x19C
+	.error "sPokedexUi8543De8 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08543F84: pokedex.s: sub_080C0850
 	.globl gPokedexData_08543F84
 gPokedexData_08543F84:
-	.globl gUnknown_8543F84
-gUnknown_8543F84: @ 0x08543F84
+	.globl sLz77Block_08543F84
 	@ confirmed GBA LZ77 stream: compressed=0x188, decompressed=0x500
 sLz77Block_08543F84:
 	@ analyzed canonical ROM range 0x08543F84-0x0854410B
 	.incbin "build/graphics/analyzed/gunknown_8543f84_08543f84.4bpp.lz"
 	.if (. - sLz77Block_08543F84) != 0x188
-	.error "gUnknown_8543F84 compressed size mismatch"
+	.error "sLz77Block_08543F84 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0854410C: pokedex.s: sub_080C0488
 	.globl gPokedexData_0854410C

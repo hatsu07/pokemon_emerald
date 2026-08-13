@@ -1,17 +1,13 @@
-	.globl gUnknown_85ADAF4
-gUnknown_85ADAF4: @ 0x085ADAF4
+	.globl sMoveRelearnerSpriteSheet
 sMoveRelearnerSpriteSheet:
 	rodata_sprite_sheet 0x085AD820, 0x180, 0x1595 @ GFXTAG_UI
-	.globl gUnknown_85ADAFC
-gUnknown_85ADAFC: @ 0x085ADAFC
+	.globl sMoveRelearnerPalette
 sMoveRelearnerPalette:
 	rodata_sprite_palette 0x085AD800, 0x1596 @ PALTAG_UI
-	.globl gUnknown_85ADB04
-gUnknown_85ADB04: @ 0x085ADB04
+	.globl sDisplayModeArrowsTemplate
 sDisplayModeArrowsTemplate:
 	rodata_scroll_arrows_template 0, 48, 16, 1, 112, 16, -1, -1, 0x14CD, 0x14CD, 0
-	.globl gUnknown_85ADB14
-gUnknown_85ADB14: @ 0x085ADB14
+	.globl sMoveListScrollArrowsTemplate
 sMoveListScrollArrowsTemplate:
 	rodata_scroll_arrows_template 2, 200, 8, 3, 200, 104, 0, 0, 0x1531, 0x1531, 0
 sHeartSprite_AppealEmptyFrame:
@@ -31,12 +27,10 @@ sHeartSpriteAnimationCommands:
 	.4byte sHeartSprite_AppealFullFrame
 	.4byte sHeartSprite_JamEmptyFrame
 	.4byte sHeartSprite_JamFullFrame
-	.globl gUnknown_85ADB54
-gUnknown_85ADB54: @ 0x085ADB54
+	.globl sContestMoveHeartSprite
 sContestMoveHeartSprite:
 	rodata_sprite_template 0x1595, 0x1596, 0x085ADADC, sHeartSpriteAnimationCommands, 0, 0x082BF310, 0x08007141
-	.globl gUnknown_85ADB6C
-gUnknown_85ADB6C: @ 0x085ADB6C
+	.globl sMoveRelearnerMenuBackgroundTemplates
 sMoveRelearnerMenuBackgroundTemplates:
 	bg_template 0, 0, 31, 0, 0, 0, 0 @ raw=0x000001F0
 	bg_template 1, 0, 30, 0, 0, 1, 0 @ raw=0x000011E1

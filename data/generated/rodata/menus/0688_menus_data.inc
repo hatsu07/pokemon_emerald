@@ -76,5 +76,4 @@ gStartMenuData_084E8CA8: @ 0x084E8CA8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0100, 0x0E01, 0x0F09, 0x0008
-	.globl gUnknown_84E8CB0
-gUnknown_84E8CB0: @ 0x084E8CB0
+	.globl gText_Rom_4E8CB0

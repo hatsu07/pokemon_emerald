@@ -271,26 +271,24 @@ gBattleTransitionPhase29_30Palette: @ 0x085A7690
 	@ pret/pokeemerald-jp direct xref for 0x085A76B0: battle_transition.s: Phase2_29_Func1, Phase2_30_Func1
 	.globl gBattleTransitionData_085A76B0
 gBattleTransitionData_085A76B0:
-	.globl gUnknown_85A76B0
-gUnknown_85A76B0: @ 0x085A76B0
+	.globl sLz77Block_085A76B0
 	@ confirmed GBA LZ77 stream: compressed=0x68A, decompressed=0x19A0
 sLz77Block_085A76B0:
 	@ analyzed canonical ROM range 0x085A76B0-0x085A7D3B
 	.incbin "build/graphics/analyzed/gunknown_85a76b0_085a76b0.4bpp.lz"
 	.if (. - sLz77Block_085A76B0) != 0x68C
-	.error "gUnknown_85A76B0 compressed size mismatch"
+	.error "sLz77Block_085A76B0 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085A7D3C: battle_transition.s: Phase2_29_Func2, Phase2_30_Func2
 	.globl gBattleTransitionData_085A7D3C
 gBattleTransitionData_085A7D3C:
-	.globl gUnknown_85A7D3C
-gUnknown_85A7D3C: @ 0x085A7D3C
+	.globl sLz77Block_085A7D3C
 	@ confirmed GBA LZ77 stream: compressed=0x2EC, decompressed=0x800
 sLz77Block_085A7D3C:
 	@ analyzed canonical ROM range 0x085A7D3C-0x085A8027
 	.incbin "build/graphics/analyzed/gunknown_85a7d3c_085a7d3c.4bpp.lz"
 	.if (. - sLz77Block_085A7D3C) != 0x2EC
-	.error "gUnknown_85A7D3C compressed size mismatch"
+	.error "sLz77Block_085A7D3C compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085A8028: battle_transition.s: Phase2_31_Func1, Phase2_32_Func1, Phase2_33_Func1
 	.globl gBattleTransitionData_085A8028
@@ -303,50 +301,46 @@ gBattleTransitionPhase31_32_33Palette: @ 0x085A8028
 	@ pret/pokeemerald-jp direct xref for 0x085A8048: battle_transition.s: Phase2_31_Func1, Phase2_32_Func1, Phase2_33_Func1
 	.globl gBattleTransitionData_085A8048
 gBattleTransitionData_085A8048:
-	.globl gUnknown_85A8048
-gUnknown_85A8048: @ 0x085A8048
+	.globl sLz77Block_085A8048
 	@ confirmed GBA LZ77 stream: compressed=0x15B, decompressed=0x240
 sLz77Block_085A8048:
 	@ analyzed canonical ROM range 0x085A8048-0x085A81A3
 	.incbin "build/graphics/analyzed/gunknown_85a8048_085a8048.4bpp.lz"
 	.if (. - sLz77Block_085A8048) != 0x15C
-	.error "gUnknown_85A8048 compressed size mismatch"
+	.error "sLz77Block_085A8048 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085A81A4: battle_transition.s: Phase2_31_Func3
 	.globl gBattleTransitionData_085A81A4
 gBattleTransitionData_085A81A4:
-	.globl gUnknown_85A81A4
-gUnknown_85A81A4: @ 0x085A81A4
+	.globl sLz77Block_085A81A4
 	@ confirmed GBA LZ77 stream: compressed=0xFD, decompressed=0x240
 sLz77Block_085A81A4:
 	@ analyzed canonical ROM range 0x085A81A4-0x085A82A3
 	.incbin "build/graphics/analyzed/gunknown_85a81a4_085a81a4.4bpp.lz"
 	.if (. - sLz77Block_085A81A4) != 0x100
-	.error "gUnknown_85A81A4 compressed size mismatch"
+	.error "sLz77Block_085A81A4 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085A82A4: battle_transition.s: Phase2_31_Func3
 	.globl gBattleTransitionData_085A82A4
 gBattleTransitionData_085A82A4:
-	.globl gUnknown_85A82A4
-gUnknown_85A82A4: @ 0x085A82A4
+	.globl sLz77Block_085A82A4
 	@ confirmed GBA LZ77 stream: compressed=0xB0, decompressed=0x240
 sLz77Block_085A82A4:
 	@ analyzed canonical ROM range 0x085A82A4-0x085A8353
 	.incbin "build/graphics/analyzed/gunknown_85a82a4_085a82a4.4bpp.lz"
 	.if (. - sLz77Block_085A82A4) != 0xB0
-	.error "gUnknown_85A82A4 compressed size mismatch"
+	.error "sLz77Block_085A82A4 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085A8354: battle_transition.s: Phase2_31_Func3
 	.globl gBattleTransitionData_085A8354
 gBattleTransitionData_085A8354:
-	.globl gUnknown_85A8354
-gUnknown_85A8354: @ 0x085A8354
+	.globl sLz77Block_085A8354
 	@ confirmed GBA LZ77 stream: compressed=0x82, decompressed=0x240
 sLz77Block_085A8354:
 	@ analyzed canonical ROM range 0x085A8354-0x085A83D7
 	.incbin "build/graphics/analyzed/gunknown_85a8354_085a8354.4bpp.lz"
 	.if (. - sLz77Block_085A8354) != 0x84
-	.error "gUnknown_85A8354 compressed size mismatch"
+	.error "sLz77Block_085A8354 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085A83D8: battle_transition.s: Phase2_31_Func2, Phase2_32_Func2, Phase2_33_Func2, Phase2_33_Func4
 	.globl gBattleTransitionData_085A83D8

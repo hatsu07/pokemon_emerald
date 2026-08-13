@@ -1,6 +1,5 @@
 	
-	.globl gUnknown_8C004EC
-gUnknown_8C004EC: @ 0x08C004EC
+	.globl sLz77Block_08C004EC
 	@ confirmed GBA LZ77 stream: compressed=0x43, decompressed=0x40
 sLz77Block_08C004EC:
 	@ ANALYSIS: RAW_RANGE offset=0xC004EC, size=0x44
@@ -10,8 +9,7 @@ sLz77Block_08C004EC:
 	.byte 0x18, 0x10, 0x1F, 0x00, 0x5B, 0x6F, 0x4B, 0x29, 0xF6, 0x5A, 0x71, 0x6A, 0x08, 0x2B, 0x41, 0x00
 	.byte 0x00, 0x30, 0x01, 0x00
 
-	.globl gUnknown_8C00530
-gUnknown_8C00530: @ 0x08C00530
+	.globl sLz77Block_08C00530
 	@ confirmed GBA LZ77 stream: compressed=0x227, decompressed=0x1000
 sLz77Block_08C00530:
 	@ ANALYSIS: RAW_RANGE offset=0xC00530, size=0x470

@@ -1150,8 +1150,7 @@ gScriptMenuData_08564218: @ 0x08564218
 	.2byte 0x4190, 0x0856, 0x0004, 0x0000, 0x41B0, 0x0856, 0x0006, 0x0000
 	.2byte 0x41E0, 0x0856, 0x0006, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085645A0: scrcmd.s: ScrCmd_bufferstdstring; tv.s: CopyContestCategoryToStringVar, CopyContestRankToStringVar
-	.globl gUnknown_85645A0
-gUnknown_85645A0: @ 0x085645A0
+	.globl sPointerTable_085645A0
 	@ confirmed contiguous ROM pointer table: 30 entries from this address
 sPointerTable_085645A0:
 	@ analyzed canonical ROM range 0x085645A0-0x08564617
@@ -1497,32 +1496,29 @@ sLz77Block_08565318:
 	@ pret/pokeemerald-jp direct xref for 0x08565524: naming_screen.s: MainState_BeginFadeIn
 	.globl gNamingScreenData_08565524
 gNamingScreenData_08565524:
-	.globl gUnknown_8565524
-gUnknown_8565524: @ 0x08565524
+	.globl sLz77Block_08565524
 	@ confirmed GBA LZ77 stream: compressed=0xD9, decompressed=0x500
 sLz77Block_08565524:
 	@ analyzed canonical ROM range 0x08565524-0x085655FF
 	.incbin "build/graphics/analyzed/gunknown_8565524_08565524.4bpp.lz"
 	.if (. - sLz77Block_08565524) != 0xDC
-	.error "gUnknown_8565524 compressed size mismatch"
+	.error "sLz77Block_08565524 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08565600: naming_screen.s: MainState_BeginFadeIn
 	.globl gNamingScreenData_08565600
 gNamingScreenData_08565600:
-	.globl gUnknown_8565600
-gUnknown_8565600: @ 0x08565600
+	.globl sLz77Block_08565600
 	@ confirmed GBA LZ77 stream: compressed=0xC8, decompressed=0x500
 sLz77Block_08565600:
 	@ analyzed canonical ROM range 0x08565600-0x085656C7
 	.incbin "build/graphics/analyzed/gunknown_8565600_08565600.4bpp.lz"
 	.if (. - sLz77Block_08565600) != 0xC8
-	.error "gUnknown_8565600 compressed size mismatch"
+	.error "sLz77Block_08565600 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085656C8: naming_screen.s: MainState_BeginFadeIn
 	.globl gNamingScreenData_085656C8
 gNamingScreenData_085656C8:
-	.globl gUnknown_85656C8
-gUnknown_85656C8: @ 0x085656C8
+	.globl sLz77Block_085656C8
 	@ confirmed GBA LZ77 stream: compressed=0xC8, decompressed=0x500
 sLz77Block_085656C8:
 	@ analyzed canonical ROM range 0x085656C8-0x08565857

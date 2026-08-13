@@ -173,5 +173,4 @@ gText_Rom_5CA867: @ 0x085CA867
 	.if (. - gText_Rom_5CA867) < 0x13
 	.space 0x13 - (. - gText_Rom_5CA867)
 	.endif
-	.globl gUnknown_85CA87A
-gUnknown_85CA87A: @ 0x085CA87A
+	.globl gText_Rom_5CA87A

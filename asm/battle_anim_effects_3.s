@@ -2709,7 +2709,7 @@ _0815B4A2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0815B4A8: .4byte gUnknown_85AD1A8
+_0815B4A8: .4byte sSpriteTemplate_085AD1A8
 	thumb_func_end sub_0815B410
 
 	thumb_func_start AnimMiniTwinklingStar
@@ -10452,7 +10452,7 @@ _0815F0B4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0815F0C0: .4byte gUnknown_85AD1A8
+_0815F0C0: .4byte sSpriteTemplate_085AD1A8
 	thumb_func_end AnimMeteorMashStarStep
 
 	thumb_func_start AnimMeteorMashStar

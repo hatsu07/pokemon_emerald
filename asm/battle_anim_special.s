@@ -5592,7 +5592,7 @@ _08172E58:
 	adds r1, #4
 	b _08172EAC
 	.align 2, 0
-_08172E84: .4byte gUnknown_85AD1A8
+_08172E84: .4byte sSpriteTemplate_085AD1A8
 _08172E88: .4byte 0x020205AC
 _08172E8C:
 	ldr r0, _08172EE4
@@ -5640,7 +5640,7 @@ _08172EBA:
 	adds r4, r2, #0
 	b _08172F44
 	.align 2, 0
-_08172EE4: .4byte gUnknown_85AD1A8
+_08172EE4: .4byte sSpriteTemplate_085AD1A8
 _08172EE8: .4byte 0x020205AC
 _08172EEC: .4byte 0x000003FF
 _08172EF0: .4byte 0xFFFFFC00

@@ -96,26 +96,24 @@ gUnionRoomChatData_082C5220: @ 0x082C5220
 	@ pret/pokeemerald-jp direct xref for 0x082C5240: union_room_chat.s: sub_080202D0
 	.globl gUnionRoomChatData_082C5240
 gUnionRoomChatData_082C5240:
-	.globl gUnknown_82C5240
-gUnknown_82C5240: @ 0x082C5240
+	.globl sLz77Block_082C5240
 	@ confirmed GBA LZ77 stream: compressed=0x5A, decompressed=0x120
 sLz77Block_082C5240:
 	@ analyzed canonical ROM range 0x082C5240-0x082C529B
 	.incbin "build/graphics/analyzed/gunknown_82c5240_082c5240.4bpp.lz"
 	.if (. - sLz77Block_082C5240) != 0x5C
-	.error "gUnknown_82C5240 compressed size mismatch"
+	.error "sLz77Block_082C5240 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082C529C: union_room_chat.s: sub_080202D0
 	.globl gUnionRoomChatData_082C529C
 gUnionRoomChatData_082C529C:
-	.globl gUnknown_82C529C
-gUnknown_82C529C: @ 0x082C529C
+	.globl sLz77Block_082C529C
 	@ confirmed GBA LZ77 stream: compressed=0xAC, decompressed=0x500
 sLz77Block_082C529C:
 	@ analyzed canonical ROM range 0x082C529C-0x082C5347
 	.incbin "build/graphics/analyzed/gunknown_82c529c_082c529c.4bpp.lz"
 	.if (. - sLz77Block_082C529C) != 0xAC
-	.error "gUnknown_82C529C compressed size mismatch"
+	.error "sLz77Block_082C529C compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082C5348: union_room_chat.s: sub_080202D0
 	.globl gUnionRoomChatData_082C5348
@@ -136,26 +134,24 @@ gUnionRoomChatData_082C5368: @ 0x082C5368
 	@ pret/pokeemerald-jp direct xref for 0x082C5388: union_room_chat.s: sub_08020320
 	.globl gUnionRoomChatData_082C5388
 gUnionRoomChatData_082C5388:
-	.globl gUnknown_82C5388
-gUnknown_82C5388: @ 0x082C5388
+	.globl sLz77Block_082C5388
 	@ confirmed GBA LZ77 stream: compressed=0x234, decompressed=0x4C0
 sLz77Block_082C5388:
 	@ analyzed canonical ROM range 0x082C5388-0x082C55BB
 	.incbin "build/graphics/analyzed/gunknown_82c5388_082c5388.4bpp.lz"
 	.if (. - sLz77Block_082C5388) != 0x234
-	.error "gUnknown_82C5388 compressed size mismatch"
+	.error "sLz77Block_082C5388 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082C55BC: union_room_chat.s: sub_08020320
 	.globl gUnionRoomChatData_082C55BC
 gUnionRoomChatData_082C55BC:
-	.globl gUnknown_82C55BC
-gUnknown_82C55BC: @ 0x082C55BC
+	.globl sLz77Block_082C55BC
 	@ confirmed GBA LZ77 stream: compressed=0xF8, decompressed=0x500
 sLz77Block_082C55BC:
 	@ analyzed canonical ROM range 0x082C55BC-0x082C56B3
 	.incbin "build/graphics/analyzed/gunknown_82c55bc_082c55bc.4bpp.lz"
 	.if (. - sLz77Block_082C55BC) != 0xF8
-	.error "gUnknown_82C55BC compressed size mismatch"
+	.error "sLz77Block_082C55BC compressed size mismatch"
 	.endif
 	.globl gUnknown_82C56B4
 gUnknown_82C56B4: @ 0x082C56B4

@@ -203,9 +203,8 @@ gDoorAnimPalettes_TrainerHillLobbyElevator: @ 0x0846F584
 gDoorAnimPalettes_TrainerHillRoofElevator: @ 0x0846F58C
 	.byte 9, 9, 7, 7, 7, 7, 7, 7
 
-	.globl gUnknown_846F594
 	.globl gDoorAnimGraphicsTable
-gUnknown_846F594: @ 0x0846F594
+	.globl gDoorAnimGraphicsTable
 gDoorAnimGraphicsTable:
 	@ entry 0
 	.2byte 0x0021
@@ -641,8 +640,7 @@ gFishingEllipsisDotText: @ 0x0846F9C8
 	.if (. - gFishingEllipsisDotText) != 0x2
 	.error "gFishingEllipsisDotText must retain its original byte length"
 	.endif
-	.globl gUnknown_846F9CA
-gUnknown_846F9CA: @ 0x0846F9CA
+	.globl gFishingMonOnHookText
 gFishingMonOnHookText:
 	.string "ひいてる　ひいてる！！$"
 	.if (. - gFishingMonOnHookText) != 0xC
@@ -665,5 +663,4 @@ gFishingBiteChanceByRodAndAttempt: @ 0x0846F9DC
 	.2byte 40, 10
 	@ super rod
 	.2byte 70, 30
-	.globl gUnknown_846F9E8
-gUnknown_846F9E8: @ 0x0846F9E8
+	.globl gText_Rom_46F9E8

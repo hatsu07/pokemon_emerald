@@ -1,5 +1,4 @@
-	.globl gUnknown_8DBCCBC
-gUnknown_8DBCCBC: @ 0x08DBCCBC
+	.globl CompressedResource_JP_08DBCCBC
 	@ validated concatenated LZ77 resource archive; stream boundaries are explicit
 CompressedResource_JP_08DBCCBC: @ 0x08DBCCBC (LZ77 -> 0x4000 bytes)
 	@ ANALYSIS: RAW_BLOCK size=0x10A8

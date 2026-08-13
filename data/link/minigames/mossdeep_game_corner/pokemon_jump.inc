@@ -314,26 +314,24 @@ gPokemonJumpData_082CF8D0: @ 0x082CF8D0
 	@ pret/pokeemerald-jp direct xref for 0x082CF8F0: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082CF8F0
 gPokemonJumpData_082CF8F0:
-	.globl gUnknown_82CF8F0
-gUnknown_82CF8F0: @ 0x082CF8F0
+	.globl sLz77Block_082CF8F0
 	@ confirmed GBA LZ77 stream: compressed=0x22A, decompressed=0x7E0
 sLz77Block_082CF8F0:
 	@ analyzed canonical ROM range 0x082CF8F0-0x082CFB1B
 	.incbin "build/graphics/analyzed/gunknown_82cf8f0_082cf8f0.4bpp.lz"
 	.if (. - sLz77Block_082CF8F0) != 0x22C
-	.error "gUnknown_82CF8F0 compressed size mismatch"
+	.error "sLz77Block_082CF8F0 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082CFB1C: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082CFB1C
 gPokemonJumpData_082CFB1C:
-	.globl gUnknown_82CFB1C
-gUnknown_82CFB1C: @ 0x082CFB1C
+	.globl sLz77Block_082CFB1C
 	@ confirmed GBA LZ77 stream: compressed=0x1AD, decompressed=0x500
 sLz77Block_082CFB1C:
 	@ analyzed canonical ROM range 0x082CFB1C-0x082CFCCB
 	.incbin "build/graphics/analyzed/gunknown_82cfb1c_082cfb1c.4bpp.lz"
 	.if (. - sLz77Block_082CFB1C) != 0x1B0
-	.error "gUnknown_82CFB1C compressed size mismatch"
+	.error "sLz77Block_082CFB1C compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082CFCCC: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082CFCCC
@@ -346,26 +344,24 @@ gPokemonJumpData_082CFCCC: @ 0x082CFCCC
 	@ pret/pokeemerald-jp direct xref for 0x082CFCEC: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082CFCEC
 gPokemonJumpData_082CFCEC:
-	.globl gUnknown_82CFCEC
-gUnknown_82CFCEC: @ 0x082CFCEC
+	.globl sLz77Block_082CFCEC
 	@ confirmed GBA LZ77 stream: compressed=0x94E, decompressed=0x1000
 sLz77Block_082CFCEC:
 	@ analyzed canonical ROM range 0x082CFCEC-0x082D063B
 	.incbin "build/graphics/analyzed/gunknown_82cfcec_082cfcec.4bpp.lz"
 	.if (. - sLz77Block_082CFCEC) != 0x950
-	.error "gUnknown_82CFCEC compressed size mismatch"
+	.error "sLz77Block_082CFCEC compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082D063C: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082D063C
 gPokemonJumpData_082D063C:
-	.globl gUnknown_82D063C
-gUnknown_82D063C: @ 0x082D063C
+	.globl sLz77Block_082D063C
 	@ confirmed GBA LZ77 stream: compressed=0x3B6, decompressed=0x1000
 sLz77Block_082D063C:
 	@ analyzed canonical ROM range 0x082D063C-0x082D09F3
 	.incbin "build/graphics/analyzed/gunknown_82d063c_082d063c.4bpp.lz"
 	.if (. - sLz77Block_082D063C) != 0x3B8
-	.error "gUnknown_82D063C compressed size mismatch"
+	.error "sLz77Block_082D063C compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082D09F4: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082D09F4
@@ -378,26 +374,24 @@ gPokemonJumpData_082D09F4: @ 0x082D09F4
 	@ pret/pokeemerald-jp direct xref for 0x082D0A14: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082D0A14
 gPokemonJumpData_082D0A14:
-	.globl gUnknown_82D0A14
-gUnknown_82D0A14: @ 0x082D0A14
+	.globl sLz77Block_082D0A14
 	@ confirmed GBA LZ77 stream: compressed=0xAAF, decompressed=0x1540
 sLz77Block_082D0A14:
 	@ analyzed canonical ROM range 0x082D0A14-0x082D14C3
 	.incbin "build/graphics/analyzed/gunknown_82d0a14_082d0a14.4bpp.lz"
 	.if (. - sLz77Block_082D0A14) != 0xAB0
-	.error "gUnknown_82D0A14 compressed size mismatch"
+	.error "sLz77Block_082D0A14 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082D14C4: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082D14C4
 gPokemonJumpData_082D14C4:
-	.globl gUnknown_82D14C4
-gUnknown_82D14C4: @ 0x082D14C4
+	.globl sLz77Block_082D14C4
 	@ confirmed GBA LZ77 stream: compressed=0x52A, decompressed=0x2000
 sLz77Block_082D14C4:
 	@ analyzed canonical ROM range 0x082D14C4-0x082D19EF
 	.incbin "build/graphics/analyzed/gunknown_82d14c4_082d14c4.4bpp.lz"
 	.if (. - sLz77Block_082D14C4) != 0x52C
-	.error "gUnknown_82D14C4 compressed size mismatch"
+	.error "sLz77Block_082D14C4 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082D19F0: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082D19F0

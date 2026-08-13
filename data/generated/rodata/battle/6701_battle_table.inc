@@ -599,5 +599,4 @@ gFrontierUtilData_085DD2E0: @ 0x085DD2E0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0200, 0x1A01, 0x0F11, 0x0001
-	.globl gUnknown_85DD2E8
-gUnknown_85DD2E8: @ 0x085DD2E8
+	.globl gText_Rom_5DD2E8

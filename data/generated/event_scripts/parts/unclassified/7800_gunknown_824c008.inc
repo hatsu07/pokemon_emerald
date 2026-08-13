@@ -1,3 +1,2 @@
-	.globl gUnknown_824C008
-gUnknown_824C008: @ 0x0824C008
+	.globl gText_Rom_24C008
 

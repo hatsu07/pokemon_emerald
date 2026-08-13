@@ -3,9 +3,8 @@
 @ 各エントリの占有サイズはオリジナルROMと同じにし、後続データのアドレスを維持する。
 @ .string は元の物理スロットを超えられない。短縮時は 0x00 で埋める。
 
-	.globl gUnknown_8277095
 	.globl gText_Birch_Welcome
-gUnknown_8277095: @ 0x8277095
+	.globl gText_Birch_Welcome
 gText_Birch_Welcome::
 	@ 最初のセリフ（変更箇所）。オリジナル: いやー　おまたせ　おまたせ！
 	.string "いやー　おまたせ　おまたせ！\pポケットモンスターの　せかいへ\nようこそ！\pわたしの　なまえは　オダマキ！\pでも　みんな　からは\n「ポケモンはかせ」と　よばれて　いるよ！\p$"
@@ -26,9 +25,8 @@ gText_Birch_Pokemon::
 	.space 0x17 - (. - gText_Birch_Pokemon)
 	.endif
 
-	.globl gUnknown_8277102
 	.globl gText_Birch_MainSpeech
-gUnknown_8277102: @ 0x8277102
+	.globl gText_Birch_MainSpeech
 gText_Birch_MainSpeech::
 	.string "この　せかいには\nポケモンと　よばれる　いきもの　たちが\lいたるところに　すんでいる！\pわれわれ　にんげんは\nポケモンと　なかよく　あそんだり\lたすけあって　しごとを　したり\pときには　ちからを　あわせて\nたたかったり　しながら\pいっしょに　くらして　いるんだ！\p……しかし　われわれは　ポケモンの\nすべてを　しっている　わけでは　ない\pポケモンの　ひみつは\nまだまだ　いっぱい　ある！\pその　ひみつを　ときあかす　ため\nわたしは　けんきゅうを　つづけている\lという　わけなんだ！\p$"
 	.if (. - gText_Birch_MainSpeech) > 0xf2
@@ -38,9 +36,8 @@ gText_Birch_MainSpeech::
 	.space 0xf2 - (. - gText_Birch_MainSpeech)
 	.endif
 
-	.globl gUnknown_82771F4
 	.globl gText_Birch_AndYouAre
-gUnknown_82771F4: @ 0x82771F4
+	.globl gText_Birch_AndYouAre
 gText_Birch_AndYouAre::
 	.string "ところで　きみは……？$"
 	.if (. - gText_Birch_AndYouAre) > 0xc
@@ -50,9 +47,8 @@ gText_Birch_AndYouAre::
 	.space 0xc - (. - gText_Birch_AndYouAre)
 	.endif
 
-	.globl gUnknown_8277200
 	.globl gText_Birch_BoyOrGirl
-gUnknown_8277200: @ 0x8277200
+	.globl gText_Birch_BoyOrGirl
 gText_Birch_BoyOrGirl::
 	.string "おとこのこ？\nそれとも　おんなのこ？$"
 	.if (. - gText_Birch_BoyOrGirl) > 0x13
@@ -62,9 +58,8 @@ gText_Birch_BoyOrGirl::
 	.space 0x13 - (. - gText_Birch_BoyOrGirl)
 	.endif
 
-	.globl gUnknown_8277213
 	.globl gText_Birch_WhatsYourName
-gUnknown_8277213: @ 0x8277213
+	.globl gText_Birch_WhatsYourName
 gText_Birch_WhatsYourName::
 	.string "なまえも　おしえて　くれるかい！$"
 	.if (. - gText_Birch_WhatsYourName) > 0x11
@@ -74,9 +69,8 @@ gText_Birch_WhatsYourName::
 	.space 0x11 - (. - gText_Birch_WhatsYourName)
 	.endif
 
-	.globl gUnknown_8277224
 	.globl gText_Birch_SoItsPlayer
-gUnknown_8277224: @ 0x8277224
+	.globl gText_Birch_SoItsPlayer
 gText_Birch_SoItsPlayer::
 	.string "{PLAYER}{KUN}　だね？$"
 	.if (. - gText_Birch_SoItsPlayer) > 0x9
@@ -86,9 +80,8 @@ gText_Birch_SoItsPlayer::
 	.space 0x9 - (. - gText_Birch_SoItsPlayer)
 	.endif
 
-	.globl gUnknown_827722D
 	.globl gText_Birch_YourePlayer
-gUnknown_827722D: @ 0x827722D
+	.globl gText_Birch_YourePlayer
 gText_Birch_YourePlayer::
 	.string "……そうか！\pきみが　こんど　わたしの　すむ　まち\nミシロタウンに　ひっこして　くる\l{PLAYER}{KUN}　だったのか！\p$"
 	.if (. - gText_Birch_YourePlayer) > 0x38
@@ -98,9 +91,8 @@ gText_Birch_YourePlayer::
 	.space 0x38 - (. - gText_Birch_YourePlayer)
 	.endif
 
-	.globl gUnknown_8277265
 	.globl gText_Birch_AreYouReady
-gUnknown_8277265: @ 0x8277265
+	.globl gText_Birch_AreYouReady
 gText_Birch_AreYouReady::
 	.string "よーし　じゅんびは　いいかい？\pこれから　きみ　だけの　ものがたりが\nはじまろうと　している！\pゆめと　ぼうけんと　であいに　みちた\nポケットモンスターの　せかいへ\lゆうきを　もって　とびこんで　みてくれ！\pでは　また　あとで　あおう！\nけんきゅうじょで　まって　いるぞ！\p$"
 	.if (. - gText_Birch_AreYouReady) > 0x8b

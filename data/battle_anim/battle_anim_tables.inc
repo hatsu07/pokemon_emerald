@@ -5,13 +5,11 @@
 
 	.include "constants/moves.inc"
 
-	.globl gUnknown_82772F0
-gUnknown_82772F0:
+	.globl gMovesWithQuietBGM
 gMovesWithQuietBGM::
 	.2byte MOVE_SING, MOVE_PERISH_SONG, MOVE_GRASS_WHISTLE, 0xFFFF
 
-	.globl gUnknown_82772F8
-gUnknown_82772F8:
+	.globl gBattleAnims_Moves
 gBattleAnims_Moves::
 	.4byte Move_NONE
 	.4byte Move_POUND
@@ -384,8 +382,7 @@ gBattleAnims_StatusConditions::
 	.4byte Status_Curse
 	.4byte Status_Nightmare
 
-	.globl gUnknown_82778AC
-gUnknown_82778AC:
+	.globl gBattleAnims_General
 gBattleAnims_General::
 	.4byte General_CastformChange
 	.4byte General_StatsChange

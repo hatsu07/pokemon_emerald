@@ -173,5 +173,4 @@ gText_Rom_5CC31B: @ 0x085CC31B
 	.if (. - gText_Rom_5CC31B) < 0x4
 	.space 0x4 - (. - gText_Rom_5CC31B)
 	.endif
-	.globl gUnknown_85CC31F
-gUnknown_85CC31F: @ 0x085CC31F
+	.globl gText_Rom_5CC31F

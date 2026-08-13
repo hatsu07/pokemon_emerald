@@ -1,5 +1,4 @@
-	.globl gUnknown_82623AA
-gUnknown_82623AA: @ 0x082623AA
+	.globl EventScript_JP_082623AA
 	@ analyzed canonical ROM range 0x082623AA-0x082623CC
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_082623AA: @ 0x082623AA
@@ -70,8 +69,7 @@ EventScript_JP_082623F9: @ 0x082623F9
 	waitbuttonpress
 	releaseall
 	goto EventScript_JP_082623BB
-	.globl gUnknown_826240A
-gUnknown_826240A: @ 0x0826240A
+	.globl EventScript_JP_0826240A
 	@ analyzed canonical ROM range 0x0826240A-0x08262451
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_0826240A: @ 0x0826240A

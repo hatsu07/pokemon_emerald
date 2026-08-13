@@ -1,3 +1,2 @@
-	.globl gUnknown_8277048
-gUnknown_8277048: @ 0x08277048
+	.globl gText_Rom_277048
 

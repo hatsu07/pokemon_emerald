@@ -417,26 +417,24 @@ gHealLocationData_0857B10C: @ 0x0857B10C
 	@ pret/pokeemerald-jp direct xref for 0x0857B1DC: region_map.s: sub_08122DBC
 	.globl gRegionMapData_0857B1DC
 gRegionMapData_0857B1DC:
-	.globl gUnknown_857B1DC
-gUnknown_857B1DC: @ 0x0857B1DC
+	.globl sLz77Block_0857B1DC
 	@ confirmed GBA LZ77 stream: compressed=0x42, decompressed=0x100
 sLz77Block_0857B1DC:
 	@ analyzed canonical ROM range 0x0857B1DC-0x0857B21F
 	.incbin "build/graphics/analyzed/gunknown_857b1dc_0857b1dc.4bpp.lz"
 	.if (. - sLz77Block_0857B1DC) != 0x44
-	.error "gUnknown_857B1DC compressed size mismatch"
+	.error "sLz77Block_0857B1DC compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857B220: region_map.s: sub_08122DBC
 	.globl gRegionMapData_0857B220
 gRegionMapData_0857B220:
-	.globl gUnknown_857B220
-gUnknown_857B220: @ 0x0857B220
+	.globl sLz77Block_0857B220
 	@ confirmed GBA LZ77 stream: compressed=0xEB, decompressed=0x600
 sLz77Block_0857B220:
 	@ analyzed canonical ROM range 0x0857B220-0x0857B30B
 	.incbin "build/graphics/analyzed/gunknown_857b220_0857b220.4bpp.lz"
 	.if (. - sLz77Block_0857B220) != 0xEC
-	.error "gUnknown_857B220 compressed size mismatch"
+	.error "sLz77Block_0857B220 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857B30C: region_map.s: sub_08122DBC
 	.globl gRegionMapData_0857B30C
@@ -451,26 +449,24 @@ gRegionMapData_0857B30C: @ 0x0857B30C
 	@ pret/pokeemerald-jp direct xref for 0x0857B34C: region_map.s: sub_08122DBC
 	.globl gRegionMapData_0857B34C
 gRegionMapData_0857B34C:
-	.globl gUnknown_857B34C
-gUnknown_857B34C: @ 0x0857B34C
+	.globl sLz77Block_0857B34C
 	@ confirmed GBA LZ77 stream: compressed=0xD62, decompressed=0x3A40
 sLz77Block_0857B34C:
 	@ analyzed canonical ROM range 0x0857B34C-0x0857C0AF
 	.incbin "build/graphics/analyzed/gunknown_857b34c_0857b34c.4bpp.lz"
 	.if (. - sLz77Block_0857B34C) != 0xD64
-	.error "gUnknown_857B34C compressed size mismatch"
+	.error "sLz77Block_0857B34C compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857C0B0: region_map.s: sub_08122DBC
 	.globl gRegionMapData_0857C0B0
 gRegionMapData_0857C0B0:
-	.globl gUnknown_857C0B0
-gUnknown_857C0B0: @ 0x0857C0B0
+	.globl sLz77Block_0857C0B0
 	@ confirmed GBA LZ77 stream: compressed=0x34B, decompressed=0x1000
 sLz77Block_0857C0B0:
 	@ analyzed canonical ROM range 0x0857C0B0-0x0857C3FB
 	.incbin "build/graphics/analyzed/gunknown_857c0b0_0857c0b0.4bpp.lz"
 	.if (. - sLz77Block_0857C0B0) != 0x34C
-	.error "gUnknown_857C0B0 compressed size mismatch"
+	.error "sLz77Block_0857C0B0 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857C3FC: region_map.s: CreateRegionMapPlayerIcon
 	.globl gRegionMapData_0857C3FC

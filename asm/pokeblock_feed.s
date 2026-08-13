@@ -443,7 +443,7 @@ _08179DD8:
 	ldr r1, [r0]
 	b _08179E16
 	.align 2, 0
-_08179DF4: .4byte gUnknown_8D7C4E4
+_08179DF4: .4byte sLz77Block_08D7C4E4
 _08179DF8: .4byte 0x0203B9E4
 _08179DFC:
 	bl free_temp_tile_data_buffers_if_possible
@@ -482,7 +482,7 @@ _08179E30:
 	movs r0, #1
 	b _08179E5A
 	.align 2, 0
-_08179E4C: .4byte gUnknown_8D7CA90
+_08179E4C: .4byte sLz77Block_08D7CA90
 _08179E50: .4byte 0x0203B9E4
 _08179E54: .4byte 0x0000107E
 _08179E58:

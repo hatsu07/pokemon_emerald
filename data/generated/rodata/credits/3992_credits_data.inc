@@ -26,5 +26,4 @@ gText_ExpandedPlaceholder_Empty: @ 0x085C8C24
 gUnknown_85C8C25: @ 0x085C8C25
 	@ Decoded text from ROM range: offset=0x5C8C25, size=0x3
 	.string "くん$"
-	.globl gUnknown_85C8C28
-gUnknown_85C8C28: @ 0x085C8C28
+	.globl gText_Rom_5C8C28

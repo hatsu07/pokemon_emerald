@@ -202,14 +202,13 @@ gRegionMapData_0857D528: @ 0x0857D528
 	@ pret/pokeemerald-jp direct xref for 0x0857D548: region_map.s: MCB2_FlyMap
 	.globl gRegionMapData_0857D548
 gRegionMapData_0857D548:
-	.globl gUnknown_857D548
-gUnknown_857D548: @ 0x0857D548
+	.globl sLz77Block_0857D548
 	@ confirmed GBA LZ77 stream: compressed=0x38, decompressed=0xC0
 sLz77Block_0857D548:
 	@ analyzed canonical ROM range 0x0857D548-0x0857D57F
 	.incbin "build/graphics/analyzed/gunknown_857d548_0857d548.4bpp.lz"
 	.if (. - sLz77Block_0857D548) != 0x38
-	.error "gUnknown_857D548 compressed size mismatch"
+	.error "sLz77Block_0857D548 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857D580: region_map.s: MCB2_FlyMap
 	.globl gRegionMapData_0857D580
@@ -236,14 +235,13 @@ sLz77Block_0857D580:
 	@ pret/pokeemerald-jp direct xref for 0x0857D658: region_map.s: sub_08124A58
 	.globl gRegionMapData_0857D658
 gRegionMapData_0857D658:
-	.globl gUnknown_857D658
-gUnknown_857D658: @ 0x0857D658
+	.globl sLz77Block_0857D658
 	@ confirmed GBA LZ77 stream: compressed=0xD2, decompressed=0x1C0
 sLz77Block_0857D658:
 	@ analyzed canonical ROM range 0x0857D658-0x0857D72B
 	.incbin "build/graphics/analyzed/gunknown_857d658_0857d658.4bpp.lz"
 	.if (. - sLz77Block_0857D658) != 0xD4
-	.error "gUnknown_857D658 compressed size mismatch"
+	.error "sLz77Block_0857D658 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857D72C: contest_painting_effects.s: sub_08124DF4
 	.globl gContestPaintingEffectsData_0857D72C
