@@ -1408,7 +1408,9 @@ gItemUseYesNoCallbacks: @ 0x0856DCCC
 	.4byte BagMenu_InitListsMenu
 	.set gBattleAnimOam_AffineOff_ObjNormal_8x8, 0x084FD010
 	.set gBattleAnimOam_AffineOff_ObjNormal_16x16, 0x084FD018
+	.set gBattleAnimOam_AffineOff_ObjNormal_32x16, 0x084FD040
 	.set gBattleAnimOam_AffineOff_ObjNormal_8x16, 0x084FD050
+	.set gBattleAnimOam_AffineOff_ObjNormal_64x64, 0x084FD080
 	.set gBattleAnimOam_AffineDouble_ObjNormal_8x8, 0x084FD0D0
 	.set gBattleAnimOam_AffineOn_ObjBlend_8x8, 0x084FD198
 	.globl gMovePowderParticleAnim
@@ -1614,15 +1616,33 @@ gMoveTwisterParticleSpriteTemplate: @ 0x0856DF8C
 	rodata_sprite_template 0x274F, 0x274F, gBattleAnimOam_AffineOff_ObjNormal_16x16, gRazorLeafParticleAnims, 0, gDummySpriteAffineAnimTable, AnimMoveTwisterParticle
 	.globl gBattleAnimEffects1Data_0856DFA4
 gBattleAnimEffects1Data_0856DFA4: @ 0x0856DFA4
-	@ analyzed canonical ROM range 0x0856DFA4-0x0856E2E3
+	rodata_anim_frame 0, 3
+	rodata_anim_frame 0, 3, 1
+	rodata_anim_frame 0, 3, 1, 1
+	rodata_anim_frame 0, 3, 0, 1
+	rodata_anim_jump 0
+	.globl gTranslateLinearSingleSineWaveAnims_Tag27B0
+gTranslateLinearSingleSineWaveAnims_Tag27B0: @ 0x0856DFB8
+	semantic_anim_table_entry gBattleAnimEffects1Data_0856DFA4
+	.globl gTranslateLinearSingleSineWaveSpriteTemplate_Tag27B0
+gTranslateLinearSingleSineWaveSpriteTemplate_Tag27B0: @ 0x0856DFBC
+	rodata_sprite_template 0x27B0, 0x27B0, gBattleAnimOam_AffineOff_ObjNormal_32x16, gTranslateLinearSingleSineWaveAnims_Tag27B0, 0, gDummySpriteAffineAnimTable, AnimTranslateLinearSingleSineWave
+	.globl gTranslateLinearSingleSineWaveAffineAnim
+gTranslateLinearSingleSineWaveAffineAnim: @ 0x0856DFD4
+	semantic_affine_animcmd_frame 0, 0, 0, 1
+	semantic_affine_animcmd_jump 0
+	.globl gTranslateLinearSingleSineWaveAffineAnims
+gTranslateLinearSingleSineWaveAffineAnims: @ 0x0856DFE4
+	semantic_affine_anim_table_entry gTranslateLinearSingleSineWaveAffineAnim
+	.globl gTranslateLinearSingleSineWaveSpriteTemplate_Tag27BE
+gTranslateLinearSingleSineWaveSpriteTemplate_Tag27BE: @ 0x0856DFE8
+	rodata_sprite_template 0x27BE, 0x27BE, gBattleAnimOam_AffineOff_ObjNormal_64x64, gDummySpriteAnimTable, 0, gTranslateLinearSingleSineWaveAffineAnims, AnimTranslateLinearSingleSineWave
+	.globl gBattleAnimEffects1Data_0856E000
+gBattleAnimEffects1Data_0856E000: @ 0x0856E000
+	@ analyzed canonical ROM range 0x0856E000-0x0856E2E3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x340
-	.2byte 0x0000, 0x0003, 0x0000, 0x0043, 0x0000, 0x00C3, 0x0000, 0x0083
-	.2byte 0xFFFE, 0x0000, 0xDFA4, 0x0856, 0x27B0, 0x27B0, 0xD040, 0x084F
-	.2byte 0xDFB8, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B, 0xF945, 0x080F
-	.2byte 0x0000, 0x0000, 0x0100, 0x0000, 0x7FFE, 0x0000, 0x0000, 0x0000
-	.2byte 0xDFD4, 0x0856, 0x27BE, 0x27BE, 0xD080, 0x084F, 0xF304, 0x082B
-	.2byte 0x0000, 0x0000, 0xDFE4, 0x0856, 0xF945, 0x080F, 0x0000, 0x0004
+	@ ANALYSIS: RAW_BLOCK size=0x2E4
+	.2byte 0x0000, 0x0004
 	.2byte 0x0020, 0x0004, 0x0040, 0x0004, 0x0060, 0x0004, 0xFFFF, 0x0000
 	.2byte 0x0000, 0x0044, 0x0020, 0x0044, 0x0040, 0x0044, 0x0060, 0x0044
 	.2byte 0xFFFF, 0x0000, 0xE000, 0x0856, 0xE014, 0x0856, 0x0100, 0x0100
