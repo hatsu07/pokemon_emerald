@@ -1411,6 +1411,7 @@ gItemUseYesNoCallbacks: @ 0x0856DCCC
 	.set gBattleAnimOam_AffineOff_ObjNormal_32x16, 0x084FD040
 	.set gBattleAnimOam_AffineOff_ObjNormal_8x16, 0x084FD050
 	.set gBattleAnimOam_AffineOff_ObjNormal_64x64, 0x084FD080
+	.set gBattleAnimOam_084FD0A8, 0x084FD0A8
 	.set gBattleAnimOam_AffineDouble_ObjNormal_8x8, 0x084FD0D0
 	.set gBattleAnimOam_AffineOn_ObjBlend_8x8, 0x084FD198
 	.globl gMovePowderParticleAnim
@@ -1637,21 +1638,49 @@ gTranslateLinearSingleSineWaveAffineAnims: @ 0x0856DFE4
 	.globl gTranslateLinearSingleSineWaveSpriteTemplate_Tag27BE
 gTranslateLinearSingleSineWaveSpriteTemplate_Tag27BE: @ 0x0856DFE8
 	rodata_sprite_template 0x27BE, 0x27BE, gBattleAnimOam_AffineOff_ObjNormal_64x64, gDummySpriteAnimTable, 0, gTranslateLinearSingleSineWaveAffineAnims, AnimTranslateLinearSingleSineWave
-	.globl gBattleAnimEffects1Data_0856E000
-gBattleAnimEffects1Data_0856E000: @ 0x0856E000
-	@ analyzed canonical ROM range 0x0856E000-0x0856E2E3
+	.globl gConstrictBindingAnim_Normal
+gConstrictBindingAnim_Normal: @ 0x0856E000
+	rodata_anim_frame 0, 4
+	rodata_anim_frame 32, 4
+	rodata_anim_frame 64, 4
+	rodata_anim_frame 96, 4
+	rodata_anim_end
+	.globl gConstrictBindingAnim_Flipped
+gConstrictBindingAnim_Flipped: @ 0x0856E014
+	rodata_anim_frame 0, 4, 1
+	rodata_anim_frame 32, 4, 1
+	rodata_anim_frame 64, 4, 1
+	rodata_anim_frame 96, 4, 1
+	rodata_anim_end
+	.globl gConstrictBindingAnims
+gConstrictBindingAnims: @ 0x0856E028
+	semantic_anim_table_entry gConstrictBindingAnim_Normal
+	semantic_anim_table_entry gConstrictBindingAnim_Flipped
+	.globl gConstrictBindingAffineAnim_Normal
+gConstrictBindingAffineAnim_Normal: @ 0x0856E030
+	semantic_affine_animcmd_frame 0x100, 0x100, 0, 0
+	semantic_affine_animcmd_frame -11, 0, 0, 6
+	semantic_affine_animcmd_frame 11, 0, 0, 6
+	rodata_affine_anim_end
+	.globl gConstrictBindingAffineAnim_Flipped
+gConstrictBindingAffineAnim_Flipped: @ 0x0856E050
+	semantic_affine_animcmd_frame -0x100, 0x100, 0, 0
+	semantic_affine_animcmd_frame 11, 0, 0, 6
+	semantic_affine_animcmd_frame -11, 0, 0, 6
+	rodata_affine_anim_end
+	.globl gConstrictBindingAffineAnims
+gConstrictBindingAffineAnims: @ 0x0856E070
+	semantic_affine_anim_table_entry gConstrictBindingAffineAnim_Normal
+	semantic_affine_anim_table_entry gConstrictBindingAffineAnim_Flipped
+	.globl gConstrictBindingSpriteTemplate
+gConstrictBindingSpriteTemplate: @ 0x0856E078
+	rodata_sprite_template 0x27CA, 0x27CA, gBattleAnimOam_084FD0A8, gConstrictBindingAnims, 0, gConstrictBindingAffineAnims, AnimConstrictBinding
+	.globl gBattleAnimEffects1Data_0856E090
+gBattleAnimEffects1Data_0856E090: @ 0x0856E090
+	@ analyzed canonical ROM range 0x0856E090-0x0856E2E3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x2E4
-	.2byte 0x0000, 0x0004
-	.2byte 0x0020, 0x0004, 0x0040, 0x0004, 0x0060, 0x0004, 0xFFFF, 0x0000
-	.2byte 0x0000, 0x0044, 0x0020, 0x0044, 0x0040, 0x0044, 0x0060, 0x0044
-	.2byte 0xFFFF, 0x0000, 0xE000, 0x0856, 0xE014, 0x0856, 0x0100, 0x0100
-	.2byte 0x0000, 0x0000, 0xFFF5, 0x0000, 0x0600, 0x0000, 0x000B, 0x0000
-	.2byte 0x0600, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000, 0xFF00, 0x0100
-	.2byte 0x0000, 0x0000, 0x000B, 0x0000, 0x0600, 0x0000, 0xFFF5, 0x0000
-	.2byte 0x0600, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000, 0xE030, 0x0856
-	.2byte 0xE050, 0x0856, 0x27CA, 0x27CA, 0xD0A8, 0x084F, 0xE028, 0x0856
-	.2byte 0x0000, 0x0000, 0xE070, 0x0856, 0xFBC5, 0x080F, 0x0000, 0x0000
+	@ ANALYSIS: RAW_BLOCK size=0x254
+	.2byte 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0030, 0x0030, 0x0E00, 0x0000, 0x7FFF, 0x0000
 	.2byte 0x0000, 0x0000, 0xFFF0, 0xFFF0, 0x0100, 0x0000, 0x7FFE, 0x0000
 	.2byte 0x0000, 0x0000, 0xE090, 0x0856, 0xE0A8, 0x0856, 0x27A3, 0x27A3
