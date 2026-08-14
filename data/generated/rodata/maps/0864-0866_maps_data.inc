@@ -2318,20 +2318,29 @@ gConversion2SpriteTemplate: @ 0x0856EA88
 gBattleAnimEffects1Data_0856EAA0:
 	.globl gBattleAnimSpriteTemplate_MoonlightMoon
 gBattleAnimSpriteTemplate_MoonlightMoon: @ 0x0856EAA0
-	@ analyzed canonical ROM range 0x0856EAA0-0x0856EACF
-	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x27D2, 0x27D2, 0xD148, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000
-	.2byte 0xF310, 0x082B, 0x2D31, 0x0810, 0x0000, 0x0008, 0x0004, 0x0008
-	.2byte 0x0008, 0x0008, 0x000C, 0x0008, 0xFFFE, 0x0000, 0xEAB8, 0x0856
+	rodata_sprite_template 0x27D2, 0x27D2, gBattleAnimOam_084FD148, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08102D30
+	.globl gMoonlightSparkleAnim
+gMoonlightSparkleAnim: @ 0x0856EAB8
+	rodata_anim_frame 0, 8
+	rodata_anim_frame 4, 8
+	rodata_anim_frame 8, 8
+	rodata_anim_frame 12, 8
+	rodata_anim_jump 0
+	.globl gMoonlightSparkleAnims
+gMoonlightSparkleAnims: @ 0x0856EACC
+	semantic_anim_table_entry gMoonlightSparkleAnim
 	@ pret/pokeemerald-jp direct xref for 0x0856EAD0: battle_anim_effects_1.s: sub_08102EF8
 	.globl gBattleAnimEffects1Data_0856EAD0
 gBattleAnimEffects1Data_0856EAD0:
 	.globl gBattleAnimSpriteTemplate_MoonlightSparkle
 gBattleAnimSpriteTemplate_MoonlightSparkle: @ 0x0856EAD0
-	@ analyzed canonical ROM range 0x0856EAD0-0x0856EC03
+	rodata_sprite_template 0x27D3, 0x27D3, gBattleAnimOam_AffineOff_ObjNormal_16x16, gMoonlightSparkleAnims, 0, gDummySpriteAffineAnimTable, sub_08102D90
+	.globl gBattleAnimEffects1Data_0856EAE8
+gBattleAnimEffects1Data_0856EAE8: @ 0x0856EAE8
+	@ analyzed canonical ROM range 0x0856EAE8-0x0856EC03
 	@ structured u16 table (semantic role inferred only to scalar width)
-	.2byte 0x27D3, 0x27D3, 0xD018, 0x084F, 0xEACC, 0x0856, 0x0000, 0x0000
-	.2byte 0xF310, 0x082B, 0x2D91, 0x0810, 0x0000, 0x0002, 0x0010, 0x0002
+	@ ANALYSIS: RAW_BLOCK size=0x11C
+	.2byte 0x0000, 0x0002, 0x0010, 0x0002
 	.2byte 0x0020, 0x0002, 0x0030, 0x0003, 0x0040, 0x0005, 0x0050, 0x0003
 	.2byte 0x0060, 0x0002, 0x0000, 0x0002, 0xFFFF, 0x0000, 0xEAE8, 0x0856
 	.2byte 0x272F, 0x272F, 0xD020, 0x084F, 0xEB0C, 0x0856, 0x0000, 0x0000
