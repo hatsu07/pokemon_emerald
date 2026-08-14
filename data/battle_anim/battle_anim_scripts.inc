@@ -2874,7 +2874,7 @@ Move_MILK_DRINK:
 	ba_loadspritegfx 0x27DB
 	ba_loadspritegfx 0x272F
 	ba_monbg ANIM_TARGET
-	ba_createsprite 0x0856E720, ANIM_ATTACKER, 2
+	ba_createsprite gMilkDrinkDropletSpriteTemplate, ANIM_ATTACKER, 2
 	ba_delay 40
 	ba_playsewithpan 0x008E, SOUND_PAN_ATTACKER
 	ba_delay 12

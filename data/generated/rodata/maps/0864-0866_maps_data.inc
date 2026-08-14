@@ -1416,6 +1416,7 @@ gItemUseYesNoCallbacks: @ 0x0856DCCC
 	.set gBattleAnimOam_084FD0A8, 0x084FD0A8
 	.set gBattleAnimOam_084FD140, 0x084FD140
 	.set gBattleAnimOam_084FD148, 0x084FD148
+	.set gBattleAnimOam_084FD1A0, 0x084FD1A0
 	.set gBattleAnimOam_AffineDouble_ObjNormal_8x8, 0x084FD0D0
 	.set gBattleAnimOam_AffineDouble_ObjNormal_16x16, 0x084FD0D8
 	.set gBattleAnimOam_AffineOn_ObjBlend_8x8, 0x084FD198
@@ -2084,18 +2085,31 @@ gMusicNoteSpriteTemplate: @ 0x0856E6A8
 	.globl gProtectShieldSpriteTemplate
 gProtectShieldSpriteTemplate: @ 0x0856E6C0
 	rodata_sprite_template 0x2828, 0x2828, gBattleAnimOam_084FD148, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08101740
-	.globl gBattleAnimEffects1Data_0856E6D8
-gBattleAnimEffects1Data_0856E6D8: @ 0x0856E6D8
-	@ analyzed canonical ROM range 0x0856E6D8-0x0856E8B3
+	.globl gMilkDrinkDropletAffineAnim_Normal
+gMilkDrinkDropletAffineAnim_Normal: @ 0x0856E6D8
+	semantic_affine_animcmd_frame 0x0100, 0x0100, 0, 0
+	rodata_affine_anim_end
+	.globl gMilkDrinkDropletAffineAnim_Wobble
+gMilkDrinkDropletAffineAnim_Wobble: @ 0x0856E6E8
+	semantic_affine_animcmd_frame 0, 0, 2, 12
+	semantic_affine_animcmd_frame 0, 0, 0, 6
+	semantic_affine_animcmd_frame 0, 0, 0xFE, 24
+	semantic_affine_animcmd_frame 0, 0, 0, 6
+	semantic_affine_animcmd_frame 0, 0, 2, 12
+	semantic_affine_animcmd_jump 0
+	.globl gMilkDrinkDropletAffineAnims
+gMilkDrinkDropletAffineAnims: @ 0x0856E718
+	semantic_affine_anim_table_entry gMilkDrinkDropletAffineAnim_Normal
+	semantic_affine_anim_table_entry gMilkDrinkDropletAffineAnim_Wobble
+	.globl gMilkDrinkDropletSpriteTemplate
+gMilkDrinkDropletSpriteTemplate: @ 0x0856E720
+	rodata_sprite_template 0x2773, 0x2773, gBattleAnimOam_084FD1A0, gDummySpriteAnimTable, 0, gMilkDrinkDropletAffineAnims, sub_0810191C
+	.globl gBattleAnimEffects1Data_0856E738
+gBattleAnimEffects1Data_0856E738: @ 0x0856E738
+	@ analyzed canonical ROM range 0x0856E738-0x0856E8B3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x1DC
-	.2byte 0x0100, 0x0100
-	.2byte 0x0000, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
-	.2byte 0x0C02, 0x0000, 0x0000, 0x0000, 0x0600, 0x0000, 0x0000, 0x0000
-	.2byte 0x18FE, 0x0000, 0x0000, 0x0000, 0x0600, 0x0000, 0x0000, 0x0000
-	.2byte 0x0C02, 0x0000, 0x7FFE, 0x0000, 0x0000, 0x0000, 0xE6D8, 0x0856
-	.2byte 0xE6E8, 0x0856, 0x2773, 0x2773, 0xD1A0, 0x084F, 0xF304, 0x082B
-	.2byte 0x0000, 0x0000, 0xE718, 0x0856, 0x191D, 0x0810, 0x0000, 0x0007
+	@ ANALYSIS: RAW_BLOCK size=0x17C
+	.2byte 0x0000, 0x0007
 	.2byte 0x0010, 0x0007, 0x0020, 0x0007, 0x0030, 0x0007, 0x0040, 0x0007
 	.2byte 0x0050, 0x0007, 0x0060, 0x0007, 0x0070, 0x0007, 0xFFFE, 0x0000
 	.2byte 0xE738, 0x0856, 0x2741, 0x2741, 0xD020, 0x084F, 0xE75C, 0x0856
