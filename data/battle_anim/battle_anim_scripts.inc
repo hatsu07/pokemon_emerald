@@ -3164,7 +3164,7 @@ Move_TAUNT:
 	ba_createsprite gBattleAnimSpriteTemplate_FingerWag, ANIM_ATTACKER, 11, 0, 45
 	ba_playsewithpan 0x00BA, SOUND_PAN_ATTACKER
 	ba_delay 6
-	ba_createsprite 0x0856EE30, ANIM_ATTACKER, 12, 0
+	ba_createsprite gTauntHandSpriteTemplate, ANIM_ATTACKER, 12, 0
 	ba_delay 4
 	ba_loopsewithpan 0x00A7, SOUND_PAN_ATTACKER, 16, 2
 	ba_waitforvisualfinish
