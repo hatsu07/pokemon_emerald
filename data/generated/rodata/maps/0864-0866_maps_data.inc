@@ -1408,6 +1408,7 @@ gItemUseYesNoCallbacks: @ 0x0856DCCC
 	.4byte BagMenu_InitListsMenu
 	.set gBattleAnimOam_AffineOff_ObjNormal_8x8, 0x084FD010
 	.set gBattleAnimOam_AffineOff_ObjNormal_16x16, 0x084FD018
+	.set gBattleAnimOam_AffineOff_ObjNormal_32x32, 0x084FD020
 	.set gBattleAnimOam_AffineOff_ObjNormal_32x16, 0x084FD040
 	.set gBattleAnimOam_AffineOff_ObjNormal_8x16, 0x084FD050
 	.set gBattleAnimOam_AffineOff_ObjNormal_64x64, 0x084FD080
@@ -1696,18 +1697,50 @@ gMimicOrbSpriteTemplate: @ 0x0856E0C0
 	rodata_sprite_template 0x27A3, 0x27A3, gBattleAnimOam_AffineDouble_ObjNormal_16x16, gPowerAbsorptionOrbAnims, 0, gMimicOrbAffineAnims, AnimMimicOrb
 	.globl gBattleAnimEffects1Data_0856E0D8
 gBattleAnimEffects1Data_0856E0D8: @ 0x0856E0D8
-	@ analyzed canonical ROM range 0x0856E0D8-0x0856E2E3
+	.globl gIngrainRootAnim_Normal
+gIngrainRootAnim_Normal: @ 0x0856E0D8
+	rodata_anim_frame 0, 7
+	rodata_anim_frame 16, 7
+	rodata_anim_frame 32, 7
+	rodata_anim_frame 48, 7
+	rodata_anim_end
+	.globl gIngrainRootAnim_Flipped
+gIngrainRootAnim_Flipped: @ 0x0856E0EC
+	rodata_anim_frame 0, 7, 1
+	rodata_anim_frame 16, 7, 1
+	rodata_anim_frame 32, 7, 1
+	rodata_anim_frame 48, 7, 1
+	rodata_anim_end
+	.globl gIngrainRootAnim_Short
+gIngrainRootAnim_Short: @ 0x0856E100
+	rodata_anim_frame 0, 7
+	rodata_anim_frame 16, 7
+	rodata_anim_frame 32, 7
+	rodata_anim_end
+	.globl gIngrainRootAnim_ShortFlipped
+gIngrainRootAnim_ShortFlipped: @ 0x0856E110
+	rodata_anim_frame 0, 7, 1
+	rodata_anim_frame 16, 7, 1
+	rodata_anim_frame 32, 7, 1
+	rodata_anim_end
+	.globl gIngrainRootAnims
+gIngrainRootAnims: @ 0x0856E120
+	semantic_anim_table_entry gIngrainRootAnim_Normal
+	semantic_anim_table_entry gIngrainRootAnim_Flipped
+	semantic_anim_table_entry gIngrainRootAnim_Short
+	semantic_anim_table_entry gIngrainRootAnim_ShortFlipped
+	.globl gIngrainRootSpriteTemplate
+gIngrainRootSpriteTemplate: @ 0x0856E130
+	rodata_sprite_template 0x27EF, 0x27EF, gBattleAnimOam_AffineOff_ObjNormal_32x32, gIngrainRootAnims, 0, gDummySpriteAffineAnimTable, AnimIngrainRoot
+	.globl gFrenzyPlantRootSpriteTemplate
+gFrenzyPlantRootSpriteTemplate: @ 0x0856E148
+	rodata_sprite_template 0x27EF, 0x27EF, gBattleAnimOam_AffineOff_ObjNormal_32x32, gIngrainRootAnims, 0, gDummySpriteAffineAnimTable, AnimFrenzyPlantRoot
+	.globl gBattleAnimEffects1Data_0856E160
+gBattleAnimEffects1Data_0856E160: @ 0x0856E160
+	@ analyzed canonical ROM range 0x0856E160-0x0856E2E3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x20C
-	.2byte 0x0000, 0x0007, 0x0010, 0x0007, 0x0020, 0x0007
-	.2byte 0x0030, 0x0007, 0xFFFF, 0x0000, 0x0000, 0x0047, 0x0010, 0x0047
-	.2byte 0x0020, 0x0047, 0x0030, 0x0047, 0xFFFF, 0x0000, 0x0000, 0x0007
-	.2byte 0x0010, 0x0007, 0x0020, 0x0007, 0xFFFF, 0x0000, 0x0000, 0x0047
-	.2byte 0x0010, 0x0047, 0x0020, 0x0047, 0xFFFF, 0x0000, 0xE0D8, 0x0856
-	.2byte 0xE0EC, 0x0856, 0xE100, 0x0856, 0xE110, 0x0856, 0x27EF, 0x27EF
-	.2byte 0xD020, 0x084F, 0xE120, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B
-	.2byte 0xFFB9, 0x080F, 0x27EF, 0x27EF, 0xD020, 0x084F, 0xE120, 0x0856
-	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x003D, 0x0810, 0x0003, 0x0003
+	@ ANALYSIS: RAW_BLOCK size=0x184
+	.2byte 0x0003, 0x0003
 	.2byte 0x0000, 0x0005, 0xFFFE, 0x0000, 0xE160, 0x0856, 0x27A3, 0x27A3
 	.2byte 0xD010, 0x084F, 0xE16C, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B
 	.2byte 0x0185, 0x0810, 0x0000, 0x001E, 0xFFFF, 0x0000, 0xE188, 0x0856
