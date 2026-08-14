@@ -2097,7 +2097,7 @@ sub_080FE874: @ 0x080FE874
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080FE888: .4byte gItemUseData_0856DCCC
+_080FE888: .4byte gItemUseYesNoCallbacks
 	thumb_func_end sub_080FE874
 
 	thumb_func_start sub_080FE88C
