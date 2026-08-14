@@ -2599,7 +2599,7 @@ Move_ACID_ARMOR:
 	ba_end
 Move_SHARPEN:
 	ba_loadspritegfx 0x27C9
-	ba_createsprite 0x0856E9C8, ANIM_ATTACKER, 2
+	ba_createsprite gSharpenSpriteTemplate, ANIM_ATTACKER, 2
 	ba_waitforvisualfinish
 	ba_end
 Move_SUPER_FANG:

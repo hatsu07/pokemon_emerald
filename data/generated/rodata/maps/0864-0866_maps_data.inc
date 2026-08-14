@@ -2239,17 +2239,35 @@ gEndureFocusEnergyAnims: @ 0x0856E96C
 	.globl gEndureFocusEnergySpriteTemplate
 gEndureFocusEnergySpriteTemplate: @ 0x0856E970
 	rodata_sprite_template 0x27C8, 0x27C8, gBattleAnimOam_084FD060, gEndureFocusEnergyAnims, 0, gDummySpriteAffineAnimTable, sub_08102928
-	.globl gBattleAnimEffects1Data_0856E988
-gBattleAnimEffects1Data_0856E988: @ 0x0856E988
-	@ analyzed canonical ROM range 0x0856E988-0x0856EA9F
+	.globl gSharpenAnim
+gSharpenAnim: @ 0x0856E988
+	rodata_anim_frame 0, 18
+	rodata_anim_frame 0, 6
+	rodata_anim_frame 16, 18
+	rodata_anim_frame 0, 6
+	rodata_anim_frame 16, 6
+	rodata_anim_frame 32, 18
+	rodata_anim_frame 16, 6
+	rodata_anim_frame 32, 6
+	rodata_anim_frame 48, 18
+	rodata_anim_frame 32, 6
+	rodata_anim_frame 48, 6
+	rodata_anim_frame 64, 18
+	rodata_anim_frame 48, 6
+	rodata_anim_frame 64, 54
+	rodata_anim_end
+	.globl gSharpenAnims
+gSharpenAnims: @ 0x0856E9C4
+	semantic_anim_table_entry gSharpenAnim
+	.globl gSharpenSpriteTemplate
+gSharpenSpriteTemplate: @ 0x0856E9C8
+	rodata_sprite_template 0x27C9, 0x27C9, gBattleAnimOam_AffineOff_ObjNormal_32x32, gSharpenAnims, 0, gDummySpriteAffineAnimTable, sub_081029CC
+	.globl gBattleAnimEffects1Data_0856E9E0
+gBattleAnimEffects1Data_0856E9E0: @ 0x0856E9E0
+	@ analyzed canonical ROM range 0x0856E9E0-0x0856EA9F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x118
-	.2byte 0x0000, 0x0012, 0x0000, 0x0006, 0x0010, 0x0012
-	.2byte 0x0000, 0x0006, 0x0010, 0x0006, 0x0020, 0x0012, 0x0010, 0x0006
-	.2byte 0x0020, 0x0006, 0x0030, 0x0012, 0x0020, 0x0006, 0x0030, 0x0006
-	.2byte 0x0040, 0x0012, 0x0030, 0x0006, 0x0040, 0x0036, 0xFFFF, 0x0000
-	.2byte 0xE988, 0x0856, 0x27C9, 0x27C9, 0xD020, 0x084F, 0xE9C4, 0x0856
-	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x29CD, 0x0810, 0x2721, 0x2721
+	@ ANALYSIS: RAW_BLOCK size=0xC0
+	.2byte 0x2721, 0x2721
 	.2byte 0xD010, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000, 0xF310, 0x082B
 	.2byte 0x70E9, 0x080A, 0x0000, 0x0003, 0x0010, 0x0003, 0x0020, 0x0003
 	.2byte 0x0030, 0x0003, 0x0040, 0x0003, 0xFFFF, 0x0000, 0xE9F8, 0x0856
