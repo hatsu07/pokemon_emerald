@@ -2025,21 +2025,67 @@ gCuttingSliceSpriteTemplate: @ 0x0856E600
 	.globl gAirCutterSliceSpriteTemplate
 gAirCutterSliceSpriteTemplate: @ 0x0856E618
 	rodata_sprite_template 0x279A, 0x279A, gBattleAnimOam_084FD140, gCuttingSliceAnims, 0, gDummySpriteAffineAnimTable, sub_081013D8
-	.globl gBattleAnimEffects1Data_0856E630
-gBattleAnimEffects1Data_0856E630: @ 0x0856E630
-	@ analyzed canonical ROM range 0x0856E630-0x0856E8B3
+	.globl gMusicNoteAnim_Frame0
+gMusicNoteAnim_Frame0: @ 0x0856E630
+	rodata_anim_frame 0, 1
+	rodata_anim_end
+	.globl gMusicNoteAnim_Frame4
+gMusicNoteAnim_Frame4: @ 0x0856E638
+	rodata_anim_frame 4, 1
+	rodata_anim_end
+	.globl gMusicNoteAnim_Frame8
+gMusicNoteAnim_Frame8: @ 0x0856E640
+	rodata_anim_frame 8, 1
+	rodata_anim_end
+	.globl gMusicNoteAnim_Frame12
+gMusicNoteAnim_Frame12: @ 0x0856E648
+	rodata_anim_frame 12, 1
+	rodata_anim_end
+	.globl gMusicNoteAnim_Frame16
+gMusicNoteAnim_Frame16: @ 0x0856E650
+	rodata_anim_frame 16, 1
+	rodata_anim_end
+	.globl gMusicNoteAnim_Frame20
+gMusicNoteAnim_Frame20: @ 0x0856E658
+	rodata_anim_frame 20, 1
+	rodata_anim_end
+	.globl gMusicNoteAnim_Frame0Flipped
+gMusicNoteAnim_Frame0Flipped: @ 0x0856E660
+	rodata_anim_frame 0, 1, 0, 1
+	rodata_anim_end
+	.globl gMusicNoteAnim_Frame4Flipped
+gMusicNoteAnim_Frame4Flipped: @ 0x0856E668
+	rodata_anim_frame 4, 1, 0, 1
+	rodata_anim_end
+	.globl gMusicNoteAnim_Frame8Flipped
+gMusicNoteAnim_Frame8Flipped: @ 0x0856E670
+	rodata_anim_frame 8, 1, 0, 1
+	rodata_anim_end
+	.globl gMusicNoteAnim_Frame12Flipped
+gMusicNoteAnim_Frame12Flipped: @ 0x0856E678
+	rodata_anim_frame 12, 1, 0, 1
+	rodata_anim_end
+	.globl gMusicNoteAnims
+gMusicNoteAnims: @ 0x0856E680
+	semantic_anim_table_entry gMusicNoteAnim_Frame0
+	semantic_anim_table_entry gMusicNoteAnim_Frame4
+	semantic_anim_table_entry gMusicNoteAnim_Frame8
+	semantic_anim_table_entry gMusicNoteAnim_Frame12
+	semantic_anim_table_entry gMusicNoteAnim_Frame16
+	semantic_anim_table_entry gMusicNoteAnim_Frame20
+	semantic_anim_table_entry gMusicNoteAnim_Frame0Flipped
+	semantic_anim_table_entry gMusicNoteAnim_Frame4Flipped
+	semantic_anim_table_entry gMusicNoteAnim_Frame8Flipped
+	semantic_anim_table_entry gMusicNoteAnim_Frame12Flipped
+	.globl gMusicNoteSpriteTemplate
+gMusicNoteSpriteTemplate: @ 0x0856E6A8
+	rodata_sprite_template 0x2758, 0x2758, gBattleAnimOam_AffineOff_ObjNormal_16x16, gMusicNoteAnims, 0, gDummySpriteAffineAnimTable, sub_0810166C
+	.globl gBattleAnimEffects1Data_0856E6C0
+gBattleAnimEffects1Data_0856E6C0: @ 0x0856E6C0
+	@ analyzed canonical ROM range 0x0856E6C0-0x0856E8B3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x284
-	.2byte 0x0000, 0x0001, 0xFFFF, 0x0000, 0x0004, 0x0001
-	.2byte 0xFFFF, 0x0000, 0x0008, 0x0001, 0xFFFF, 0x0000, 0x000C, 0x0001
-	.2byte 0xFFFF, 0x0000, 0x0010, 0x0001, 0xFFFF, 0x0000, 0x0014, 0x0001
-	.2byte 0xFFFF, 0x0000, 0x0000, 0x0081, 0xFFFF, 0x0000, 0x0004, 0x0081
-	.2byte 0xFFFF, 0x0000, 0x0008, 0x0081, 0xFFFF, 0x0000, 0x000C, 0x0081
-	.2byte 0xFFFF, 0x0000, 0xE630, 0x0856, 0xE638, 0x0856, 0xE640, 0x0856
-	.2byte 0xE648, 0x0856, 0xE650, 0x0856, 0xE658, 0x0856, 0xE660, 0x0856
-	.2byte 0xE668, 0x0856, 0xE670, 0x0856, 0xE678, 0x0856, 0x2758, 0x2758
-	.2byte 0xD018, 0x084F, 0xE680, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B
-	.2byte 0x166D, 0x0810, 0x2828, 0x2828, 0xD148, 0x084F, 0xF304, 0x082B
+	@ ANALYSIS: RAW_BLOCK size=0x1F4
+	.2byte 0x2828, 0x2828, 0xD148, 0x084F, 0xF304, 0x082B
 	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x1741, 0x0810, 0x0100, 0x0100
 	.2byte 0x0000, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0C02, 0x0000, 0x0000, 0x0000, 0x0600, 0x0000, 0x0000, 0x0000
