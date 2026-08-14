@@ -2782,11 +2782,12 @@ gGuillotinePincerSpriteTemplate: @ 0x0856F1B4
 	@ pret/pokeemerald-jp direct xref for 0x0856F1CC: battle_anim_effects_2.s: AnimTask_Splash, AnimTask_SplashStep
 	.globl gBattleAnimEffects2Data_0856F1CC
 gBattleAnimEffects2Data_0856F1CC: @ 0x0856F1CC
-	@ analyzed canonical ROM range 0x0856F1CC-0x0856F1EB
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	.2byte 0xFFFA, 0x0004, 0x0800, 0x0000, 0x000A, 0xFFF6, 0x0800, 0x0000
-	.2byte 0xFFFC, 0x0006, 0x0800, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
+	.globl gSplashAffineAnim
+gSplashAffineAnim: @ 0x0856F1CC
+	rodata_affine_anim_frame -6, 4, 0x0800, 0
+	rodata_affine_anim_frame 10, -10, 0x0800, 0
+	rodata_affine_anim_frame -4, 6, 0x0800, 0
+	rodata_affine_anim_end
 	@ pret/pokeemerald-jp direct xref for 0x0856F1EC: battle_anim_effects_2.s: sub_08105304
 	.globl gBattleAnimEffects2Data_0856F1EC
 gBattleAnimEffects2Data_0856F1EC: @ 0x0856F1EC
