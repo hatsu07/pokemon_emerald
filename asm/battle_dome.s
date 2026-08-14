@@ -2207,7 +2207,7 @@ _0818F824: .4byte 0x020243E8
 _0818F828: .4byte 0x03005AF0
 _0818F82C: .4byte 0x00000D64
 _0818F830: .4byte 0x0203B958
-_0818F834: .4byte gMoveU8Table_Rom_5ADBF4
+_0818F834: .4byte gBattleFrontierHeldItems
 	thumb_func_end CreateDomeOpponentMon
 
 	thumb_func_start CreateDomeOpponentMons
@@ -12342,7 +12342,7 @@ InitDomeFacilityTrainersAndMons: @ 0x08194948
 _08194958: .4byte 0x0203B958
 _0819495C: .4byte gBattleFrontierMons
 _08194960: .4byte 0x0203B954
-_08194964: .4byte gMoveU8Table_Rom_5B4A10
+_08194964: .4byte gBattleFrontierTrainers
 	thumb_func_end InitDomeFacilityTrainersAndMons
 
 	thumb_func_start RestoreDomePlayerParty

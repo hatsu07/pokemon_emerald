@@ -2674,7 +2674,7 @@ _08163346:
 	.align 2, 0
 _08163358: .4byte 0x020243E8
 _0816335C: .4byte 0x0203B958
-_08163360: .4byte gMoveU8Table_Rom_5ADBF4
+_08163360: .4byte gBattleFrontierHeldItems
 	thumb_func_end FillTrainerParty
 
 	thumb_func_start Unused_CreateApprenticeMons
@@ -3103,7 +3103,7 @@ _081636A8: .4byte 0x03005AF0
 _081636AC: .4byte 0x03005FD8
 _081636B0: .4byte 0x020243E8
 _081636B4: .4byte 0x0203B958
-_081636B8: .4byte gMoveU8Table_Rom_5ADBF4
+_081636B8: .4byte gBattleFrontierHeldItems
 	thumb_func_end FillFactoryFrontierTrainerParty
 
 	thumb_func_start FillFactoryTentTrainerParty
@@ -3237,7 +3237,7 @@ _081637B8: .4byte 0x03005AF0
 _081637BC: .4byte 0x03005FD8
 _081637C0: .4byte 0x020243E8
 _081637C4: .4byte 0x0203B958
-_081637C8: .4byte gMoveU8Table_Rom_5ADBF4
+_081637C8: .4byte gBattleFrontierHeldItems
 	thumb_func_end FillFactoryTentTrainerParty
 
 	thumb_func_start FrontierSpeechToString
@@ -6881,7 +6881,7 @@ _0816554C: .4byte 0x03005AF0
 _08165550: .4byte 0x00000CB4
 _08165554: .4byte 0x020242BC
 _08165558: .4byte 0x0203B958
-_0816555C: .4byte gMoveU8Table_Rom_5ADBF4
+_0816555C: .4byte gBattleFrontierHeldItems
 _08165560: .4byte 0x0203B954
 _08165564:
 	ldr r0, _08165624
@@ -7567,7 +7567,7 @@ SetFacilityPtrsGetLevel: @ 0x08165A4C
 _08165A78: .4byte 0x03005AF0
 _08165A7C: .4byte 0x00000CA9
 _08165A80: .4byte 0x0203B954
-_08165A84: .4byte gMoveU8Table_Rom_5B4A10
+_08165A84: .4byte gBattleFrontierTrainers
 _08165A88: .4byte 0x0203B958
 _08165A8C: .4byte gBattleFrontierMons
 _08165A90:
@@ -7780,7 +7780,7 @@ _08165C0E:
 	bx r1
 	.align 2, 0
 _08165C14: .4byte 0x0203B954
-_08165C18: .4byte gMoveU8Table_Rom_5B4A10
+_08165C18: .4byte gBattleFrontierTrainers
 _08165C1C: .4byte 0x0203B958
 _08165C20: .4byte gBattleFrontierMons
 	thumb_func_end SetTentPtrsGetLevel
@@ -8122,7 +8122,7 @@ _08165EA6:
 	.align 2, 0
 _08165EB8: .4byte 0x020243E8
 _08165EBC: .4byte 0x0203B958
-_08165EC0: .4byte gMoveU8Table_Rom_5ADBF4
+_08165EC0: .4byte gBattleFrontierHeldItems
 	thumb_func_end FillTentTrainerParty_
 
 	thumb_func_start FacilityClassToGraphicsId

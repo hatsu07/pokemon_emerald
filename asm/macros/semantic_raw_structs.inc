@@ -185,4 +185,16 @@
     .byte 0, 0, 0
 .endm
 
+
+@ struct BattleFrontierTrainer as emitted by the JP build (0x34-byte stride).
+@ u8 facilityClass; u8 filler[3]; u8 trainerName[8];
+@ u16 speechBefore[6], speechWin[6], speechLose[6]; const u16 *monSet;
+.macro semantic_battle_frontier_trainer facility:req, name_lo:req, name_hi:req, before0:req, before1:req, before2:req, before3:req, before4:req, before5:req, win0:req, win1:req, win2:req, win3:req, win4:req, win5:req, lose0:req, lose1:req, lose2:req, lose3:req, lose4:req, lose5:req, mon_set:req
+    .byte \facility, 0, 0, 0
+    .4byte \name_lo, \name_hi
+    .2byte \before0, \before1, \before2, \before3, \before4, \before5
+    .2byte \win0, \win1, \win2, \win3, \win4, \win5
+    .2byte \lose0, \lose1, \lose2, \lose3, \lose4, \lose5
+    .4byte \mon_set
+.endm
 .endif @ SEMANTIC_RAW_STRUCTS_INCLUDED

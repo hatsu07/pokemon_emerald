@@ -678,13 +678,13 @@ _081A6120: .4byte 0x00000CA9
 _081A6124: .4byte 0x000040CE
 _081A6128: .4byte 0x00000DE2
 _081A612C: .4byte 0x0203B954
-_081A6130: .4byte gMoveU8Table_Rom_5B4A10
+_081A6130: .4byte gBattleFrontierTrainers
 _081A6134: .4byte 0x00000CB2
 _081A6138: .4byte 0x00000CB4
 _081A613C: .4byte 0x0203886A
 _081A6140: .4byte 0x0203B958
 _081A6144: .4byte 0x00000351
-_081A6148: .4byte gMoveU8Table_Rom_5ADBF4
+_081A6148: .4byte gBattleFrontierHeldItems
 _081A614C: .4byte 0x03005FD8
 	thumb_func_end GenerateOpponentMons
 
@@ -813,7 +813,7 @@ _081A6248: .4byte 0x020243E8
 _081A624C: .4byte 0x00000E78
 _081A6250: .4byte 0x00000E74
 _081A6254: .4byte 0x00000E79
-_081A6258: .4byte gMoveU8Table_Rom_5ADBF4
+_081A6258: .4byte gBattleFrontierHeldItems
 	thumb_func_end SetRentalsToOpponentParty
 
 	thumb_func_start SetPlayerAndOpponentParties
@@ -1206,7 +1206,7 @@ _081A6564: .4byte 0x03005AF0
 _081A6568: .4byte 0x00000E78
 _081A656C: .4byte 0x02024190
 _081A6570: .4byte 0x00000E74
-_081A6574: .4byte gMoveU8Table_Rom_5ADBF4
+_081A6574: .4byte gBattleFrontierHeldItems
 _081A6578: .4byte 0x00000E79
 _081A657C: .4byte 0x020243E8
 _081A6580: .4byte 0x00000E9D
@@ -1299,7 +1299,7 @@ _081A6610:
 	b _081A6650
 	.align 2, 0
 _081A662C: .4byte 0x0203B954
-_081A6630: .4byte gMoveU8Table_Rom_5B4A10
+_081A6630: .4byte gBattleFrontierTrainers
 _081A6634: .4byte 0x03005AF0
 _081A6638: .4byte 0x00000CA9
 _081A663C: .4byte 0x000040CE
@@ -1422,7 +1422,7 @@ _081A66FC:
 	b _081A6734
 	.align 2, 0
 _081A6724: .4byte 0x0203B958
-_081A6728: .4byte gMoveU8Table_Rom_5ADBF4
+_081A6728: .4byte gBattleFrontierHeldItems
 _081A672C:
 	adds r5, #2
 	adds r3, #1
@@ -1481,7 +1481,7 @@ _081A6782:
 	.align 2, 0
 _081A6794: .4byte 0x03005AF0
 _081A6798: .4byte 0x0203B958
-_081A679C: .4byte gMoveU8Table_Rom_5ADBF4
+_081A679C: .4byte gBattleFrontierHeldItems
 	thumb_func_end GenerateInitialRentalMons
 
 	thumb_func_start GetOpponentMostCommonMonType
@@ -1839,7 +1839,7 @@ _081A6A2C: .4byte 0x0203B958
 _081A6A30: .4byte gBattleU16Table_Rom_5BCF70
 _081A6A34: .4byte 0x02024190
 _081A6A38: .4byte 0x03005AF0
-_081A6A3C: .4byte gMoveU8Table_Rom_5ADBF4
+_081A6A3C: .4byte gBattleFrontierHeldItems
 	thumb_func_end RestorePlayerPartyHeldItems
 
 	thumb_func_start GetFactoryMonFixedIV
@@ -2137,7 +2137,7 @@ _081A6C70: .4byte 0x000040CE
 _081A6C74: .4byte 0x00000DE2
 _081A6C78: .4byte 0x0203B958
 _081A6C7C: .4byte 0x00000351
-_081A6C80: .4byte gMoveU8Table_Rom_5ADBF4
+_081A6C80: .4byte gBattleFrontierHeldItems
 _081A6C84: .4byte 0x020243E8
 	thumb_func_end FillFactoryBrainParty
 

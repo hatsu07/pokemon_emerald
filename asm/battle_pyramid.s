@@ -719,7 +719,7 @@ InitPyramidFacilityTrainers: @ 0x081A918C
 	bx lr
 	.align 2, 0
 _081A9194: .4byte 0x0203B954
-_081A9198: .4byte gMoveU8Table_Rom_5B4A10
+_081A9198: .4byte gBattleFrontierTrainers
 	thumb_func_end InitPyramidFacilityTrainers
 
 	thumb_func_start ShowPostBattleHintText

@@ -461,7 +461,7 @@ sub_081A19D0: @ 0x081A19D0
 	bx lr
 	.align 2, 0
 _081A19D8: .4byte 0x0203B954
-_081A19DC: .4byte gMoveU8Table_Rom_5B4A10
+_081A19DC: .4byte gBattleFrontierTrainers
 	thumb_func_end sub_081A19D0
 
 	thumb_func_start sub_081A19E0
