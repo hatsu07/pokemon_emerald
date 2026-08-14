@@ -2940,53 +2940,67 @@ gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105D38: @ 0x0856F47C
 	@ pret/pokeemerald-jp direct xref for 0x0856F494: battle_anim_effects_2.s: sub_08105FCC
 	.globl gBattleAnimEffects2Data_0856F494
 gBattleAnimEffects2Data_0856F494: @ 0x0856F494
-	@ analyzed canonical ROM range 0x0856F494-0x0856F4BF
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x2C
-	.2byte 0x0060, 0xFFF3, 0x0800, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
-	.2byte 0x0000, 0x0003, 0x0004, 0x0003, 0x0008, 0x0003, 0x0004, 0x0003
-	.2byte 0x0000, 0x0003, 0xFFFF, 0x0000, 0xF4A4, 0x0856
+	.globl gExtremeSpeedTaskAffineAnim
+gExtremeSpeedTaskAffineAnim: @ 0x0856F494
+	rodata_affine_anim_frame 0x60, -13, 0x0800, 0
+	rodata_affine_anim_end
+	.globl gExtremeSpeedAfterimageAnim
+gExtremeSpeedAfterimageAnim: @ 0x0856F4A4
+	rodata_anim_frame 0, 3
+	rodata_anim_frame 4, 3
+	rodata_anim_frame 8, 3
+	rodata_anim_frame 4, 3
+	rodata_anim_frame 0, 3
+	rodata_anim_end
+	.globl gExtremeSpeedAfterimageAnims
+gExtremeSpeedAfterimageAnims: @ 0x0856F4BC
+	semantic_anim_table_entry gExtremeSpeedAfterimageAnim
 	@ pret/pokeemerald-jp direct xref for 0x0856F4C0: battle_anim_effects_2.s: sub_08106358
 	.globl gBattleAnimEffects2Data_0856F4C0
 gBattleAnimEffects2Data_0856F4C0: @ 0x0856F4C0
-	@ analyzed canonical ROM range 0x0856F4C0-0x0856F4D7
-sSpriteTemplate_0856F4C0: @ 0x0856F4C0
-	rodata_sprite_template 0x27DF, 0x27DF, 0x084FD018, 0x0856F4BC, 0, gDummySpriteAffineAnimTable, sub_08106498
+	.globl gExtremeSpeedAfterimageSpriteTemplate
+gExtremeSpeedAfterimageSpriteTemplate: @ 0x0856F4C0
+	rodata_sprite_template 0x27DF, 0x27DF, gBattleAnimOam_AffineOff_ObjNormal_16x16, gExtremeSpeedAfterimageAnims, 0, gDummySpriteAffineAnimTable, sub_08106498
 	@ pret/pokeemerald-jp direct xref for 0x0856F4D8: battle_anim_effects_2.s: sub_08106358
 	.globl gBattleAnimEffects2Data_0856F4D8
 gBattleAnimEffects2Data_0856F4D8: @ 0x0856F4D8
-	@ analyzed canonical ROM range 0x0856F4D8-0x0856F533
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x5C
-	.2byte 0x1C1E, 0x18EC, 0x1A10, 0x1CF6, 0x0000, 0x0006, 0x0010, 0x0006
-	.2byte 0x0020, 0x000F, 0x0010, 0x0006, 0x0000, 0x0006, 0x0010, 0x0046
-	.2byte 0x0020, 0x004F, 0x0010, 0x0046, 0x0000, 0x0006, 0x0010, 0x0006
-	.2byte 0x0020, 0x000F, 0x0010, 0x0006, 0x0000, 0x0006, 0xFFFF, 0x0000
-	.2byte 0xF4E0, 0x0856, 0x27DD, 0x27DD, 0xD020, 0x084F, 0xF518, 0x0856
-	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x7091, 0x080A
+	.globl gExtremeSpeedAfterimageOffsets
+gExtremeSpeedAfterimageOffsets: @ 0x0856F4D8
+	.byte 30, 28, -20, 24, 16, 26, -10, 28
+	.globl gHealBellRingAnim
+gHealBellRingAnim: @ 0x0856F4E0
+	rodata_anim_frame 0, 6
+	rodata_anim_frame 16, 6
+	rodata_anim_frame 32, 15
+	rodata_anim_frame 16, 6
+	rodata_anim_frame 0, 6
+	rodata_anim_frame 16, 6, 1
+	rodata_anim_frame 32, 15, 1
+	rodata_anim_frame 16, 6, 1
+	rodata_anim_frame 0, 6
+	rodata_anim_frame 16, 6
+	rodata_anim_frame 32, 15
+	rodata_anim_frame 16, 6
+	rodata_anim_frame 0, 6
+	rodata_anim_end
+	.globl gHealBellRingAnims
+gHealBellRingAnims: @ 0x0856F518
+	semantic_anim_table_entry gHealBellRingAnim
+	.globl gHealBellRingSpriteTemplate
+gHealBellRingSpriteTemplate: @ 0x0856F51C
+	rodata_sprite_template 0x27DD, 0x27DD, gBattleAnimOam_AffineOff_ObjNormal_32x32, gHealBellRingAnims, 0, gDummySpriteAffineAnimTable, sub_080A7090
 	@ pret/pokeemerald-jp direct xref for 0x0856F534: battle_anim_effects_2.s: sub_081065B0, sub_081065D8
 	.globl gBattleAnimEffects2Data_0856F534
 gBattleAnimEffects2Data_0856F534: @ 0x0856F534
-	@ analyzed canonical ROM range 0x0856F534-0x0856F56B
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x270F27DE @ +0x0
-	.4byte 0x0000270E @ +0x4
-	.4byte 0x27DE27DE @ +0x8
-	.4byte 0x084FD018 @ +0xC
-	.4byte gDummySpriteAnimTable @ +0x10
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x14
-	.4byte gDummySpriteAffineAnimTable @ +0x18
-	.4byte sub_08106638 @ +0x1C
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x27E227E2 @ +0x20
-	.4byte 0x084FD018 @ +0x24
-	.4byte gDummySpriteAnimTable @ +0x28
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x2C
-	.4byte gDummySpriteAffineAnimTable @ +0x30
-	.4byte sub_081066B0 @ +0x34
+	.globl gHealBellPaletteTags
+gHealBellPaletteTags: @ 0x0856F534
+	.2byte 0x27DE, 0x270F, 0x270E, 0
+	.globl gHealBellParticleSpriteTemplate
+gHealBellParticleSpriteTemplate: @ 0x0856F53C
+	rodata_sprite_template 0x27DE, 0x27DE, gBattleAnimOam_AffineOff_ObjNormal_16x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08106638
+	.globl gCharmHeartSpriteTemplate
+gCharmHeartSpriteTemplate: @ 0x0856F554
+	rodata_sprite_template 0x27E2, 0x27E2, gBattleAnimOam_AffineOff_ObjNormal_16x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_081066B0
 	@ pret/pokeemerald-jp direct xref for 0x0856F56C: battle_anim_effects_2.s: sub_08106870, sub_08106900
 	.globl gBattleAnimEffects2Data_0856F56C
 gBattleAnimEffects2Data_0856F56C: @ 0x0856F56C

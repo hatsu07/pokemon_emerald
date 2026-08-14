@@ -2800,13 +2800,13 @@ BattleAnimScript_0827BC53: @ 0x0827BC53
 Move_CHARM:
 	ba_loadspritegfx 0x27E2
 	ba_createvisualtask AnimTask_RockMonBackAndForth, 5, 0, 2, 0
-	ba_createsprite 0x0856F554, ANIM_ATTACKER, 3, 0, 20
+	ba_createsprite gCharmHeartSpriteTemplate, ANIM_ATTACKER, 3, 0, 20
 	ba_playsewithpan 0x00D4, SOUND_PAN_ATTACKER
 	ba_delay 15
-	ba_createsprite 0x0856F554, ANIM_ATTACKER, 3, -20, 20
+	ba_createsprite gCharmHeartSpriteTemplate, ANIM_ATTACKER, 3, -20, 20
 	ba_playsewithpan 0x00D4, SOUND_PAN_ATTACKER
 	ba_delay 15
-	ba_createsprite 0x0856F554, ANIM_ATTACKER, 3, 20, 20
+	ba_createsprite gCharmHeartSpriteTemplate, ANIM_ATTACKER, 3, 20, 20
 	ba_playsewithpan 0x00D4, SOUND_PAN_ATTACKER
 	ba_waitforvisualfinish
 	ba_end
@@ -3921,13 +3921,13 @@ Move_COVET:
 	ba_loadspritegfx 0x27E2
 	ba_loadspritegfx 0x27F0
 	ba_createvisualtask AnimTask_RockMonBackAndForth, 5, 0, 2, 0
-	ba_createsprite 0x0856F554, ANIM_ATTACKER, 3, 0, 20
+	ba_createsprite gCharmHeartSpriteTemplate, ANIM_ATTACKER, 3, 0, 20
 	ba_playsewithpan 0x00D4, SOUND_PAN_ATTACKER
 	ba_delay 15
-	ba_createsprite 0x0856F554, ANIM_ATTACKER, 3, -20, 20
+	ba_createsprite gCharmHeartSpriteTemplate, ANIM_ATTACKER, 3, -20, 20
 	ba_playsewithpan 0x00D4, SOUND_PAN_ATTACKER
 	ba_delay 15
-	ba_createsprite 0x0856F554, ANIM_ATTACKER, 3, 20, 20
+	ba_createsprite gCharmHeartSpriteTemplate, ANIM_ATTACKER, 3, 20, 20
 	ba_playsewithpan 0x00D4, SOUND_PAN_ATTACKER
 	ba_waitforvisualfinish
 	ba_createvisualtask AnimTask_ShakeMon2, 2, 1, 2, 0, 8, 1
@@ -7081,24 +7081,24 @@ Move_HEAL_BELL:
 	ba_createvisualtask sub_08116E70, 10, 10, 0, 0, 10, 0x7FFF
 	ba_waitforvisualfinish
 	ba_createvisualtask sub_08106504, 5
-	ba_createsprite 0x0856F51C, ANIM_ATTACKER, 2, 0, -24, 0, 1
+	ba_createsprite gHealBellRingSpriteTemplate, ANIM_ATTACKER, 2, 0, -24, 0, 1
 	ba_delay 12
-	ba_createsprite 0x0856F53C, ANIM_ATTACKER, 40, 0, -24, 48, -18, 35, 0, 0
-	ba_createsprite 0x0856F53C, ANIM_ATTACKER, 40, 0, -24, -48, 20, 30, 1, 1
-	ba_createsprite 0x0856F53C, ANIM_ATTACKER, 40, 0, -24, -38, -29, 30, 2, 2
-	ba_createsprite 0x0856F53C, ANIM_ATTACKER, 40, 0, -24, 36, 18, 30, 3, 3
+	ba_createsprite gHealBellParticleSpriteTemplate, ANIM_ATTACKER, 40, 0, -24, 48, -18, 35, 0, 0
+	ba_createsprite gHealBellParticleSpriteTemplate, ANIM_ATTACKER, 40, 0, -24, -48, 20, 30, 1, 1
+	ba_createsprite gHealBellParticleSpriteTemplate, ANIM_ATTACKER, 40, 0, -24, -38, -29, 30, 2, 2
+	ba_createsprite gHealBellParticleSpriteTemplate, ANIM_ATTACKER, 40, 0, -24, 36, 18, 30, 3, 3
 	ba_call BattleAnimScript_0828247F
 	ba_delay 33
-	ba_createsprite 0x0856F53C, ANIM_ATTACKER, 40, 0, -24, 19, 26, 35, 4, 4
-	ba_createsprite 0x0856F53C, ANIM_ATTACKER, 40, 0, -24, -34, -12, 30, 5, 5
-	ba_createsprite 0x0856F53C, ANIM_ATTACKER, 40, 0, -24, 41, -20, 34, 6, 2
-	ba_createsprite 0x0856F53C, ANIM_ATTACKER, 40, 0, -24, -15, 26, 32, 7, 0
+	ba_createsprite gHealBellParticleSpriteTemplate, ANIM_ATTACKER, 40, 0, -24, 19, 26, 35, 4, 4
+	ba_createsprite gHealBellParticleSpriteTemplate, ANIM_ATTACKER, 40, 0, -24, -34, -12, 30, 5, 5
+	ba_createsprite gHealBellParticleSpriteTemplate, ANIM_ATTACKER, 40, 0, -24, 41, -20, 34, 6, 2
+	ba_createsprite gHealBellParticleSpriteTemplate, ANIM_ATTACKER, 40, 0, -24, -15, 26, 32, 7, 0
 	ba_call BattleAnimScript_0828247F
 	ba_delay 33
-	ba_createsprite 0x0856F53C, ANIM_ATTACKER, 40, 0, -24, -48, 18, 31, 0, 2
-	ba_createsprite 0x0856F53C, ANIM_ATTACKER, 40, 0, -24, 48, -20, 30, 2, 5
-	ba_createsprite 0x0856F53C, ANIM_ATTACKER, 40, 0, -24, 38, 29, 33, 4, 3
-	ba_createsprite 0x0856F53C, ANIM_ATTACKER, 40, 0, -24, -36, -18, 30, 6, 1
+	ba_createsprite gHealBellParticleSpriteTemplate, ANIM_ATTACKER, 40, 0, -24, -48, 18, 31, 0, 2
+	ba_createsprite gHealBellParticleSpriteTemplate, ANIM_ATTACKER, 40, 0, -24, 48, -20, 30, 2, 5
+	ba_createsprite gHealBellParticleSpriteTemplate, ANIM_ATTACKER, 40, 0, -24, 38, 29, 33, 4, 3
+	ba_createsprite gHealBellParticleSpriteTemplate, ANIM_ATTACKER, 40, 0, -24, -36, -18, 30, 6, 1
 	ba_call BattleAnimScript_0828247F
 	ba_waitforvisualfinish
 	ba_createvisualtask sub_081065B0, 5
@@ -9527,13 +9527,13 @@ BattleAnimScript_0828632D: @ 0x0828632D
 Status_Infatuation:
 	ba_loadspritegfx 0x27E2
 	ba_playsewithpan 0x00D4, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F554, ANIM_ATTACKER, 3, 0, 20
+	ba_createsprite gCharmHeartSpriteTemplate, ANIM_ATTACKER, 3, 0, 20
 	ba_delay 15
 	ba_playsewithpan 0x00D4, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F554, ANIM_ATTACKER, 3, -20, 20
+	ba_createsprite gCharmHeartSpriteTemplate, ANIM_ATTACKER, 3, -20, 20
 	ba_delay 15
 	ba_playsewithpan 0x00D4, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F554, ANIM_ATTACKER, 3, 20, 20
+	ba_createsprite gCharmHeartSpriteTemplate, ANIM_ATTACKER, 3, 20, 20
 	ba_end
 Status_Sleep:
 	ba_loadspritegfx 0x27F4
