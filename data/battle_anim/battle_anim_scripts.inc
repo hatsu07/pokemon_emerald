@@ -1487,8 +1487,8 @@ Move_VICE_GRIP:
 	ba_monbg ANIM_DEF_PARTNER
 	ba_setalpha 12, 8
 	ba_playsewithpan 0x009C, SOUND_PAN_TARGET
-	ba_createsprite 0x0856F174, ANIM_ATTACKER, 2, 0
-	ba_createsprite 0x0856F174, ANIM_ATTACKER, 2, 1
+	ba_createsprite gViceGripPincerSpriteTemplate, ANIM_ATTACKER, 2, 0
+	ba_createsprite gViceGripPincerSpriteTemplate, ANIM_ATTACKER, 2, 1
 	ba_delay 9
 	ba_createsprite gBattleAnimSpriteTemplate_BasicHit, ANIM_ATTACKER, 1, 0, 0, 1, 2
 	ba_createvisualtask AnimTask_ShakeMon2, 5, 1, 2, 0, 5, 1
@@ -1504,8 +1504,8 @@ Move_GUILLOTINE:
 	ba_fadetobgfromset 12, 13, 14
 	ba_waitbgfadein
 	ba_playsewithpan 0x009C, SOUND_PAN_TARGET
-	ba_createsprite 0x0856F1B4, ANIM_ATTACKER, 2, 0
-	ba_createsprite 0x0856F1B4, ANIM_ATTACKER, 2, 1
+	ba_createsprite gGuillotinePincerSpriteTemplate, ANIM_ATTACKER, 2, 0
+	ba_createsprite gGuillotinePincerSpriteTemplate, ANIM_ATTACKER, 2, 1
 	ba_createvisualtask sub_08116E70, 10, 4, 2, 0, 16, 0
 	ba_delay 9
 	ba_createvisualtask AnimTask_ShakeMon2, 5, 1, 2, 0, 23, 1
@@ -7938,26 +7938,26 @@ Move_MUDDY_WATER:
 	ba_end
 Move_BULLET_SEED:
 	ba_loadspritegfx 0x2716
-	ba_createsprite 0x0856F100, ANIM_TARGET, 2, 20, 0
+	ba_createsprite gBulletSeedSpriteTemplate, ANIM_TARGET, 2, 20, 0
 	ba_delay 5
-	ba_createsprite 0x0856F100, ANIM_TARGET, 2, 20, 0
+	ba_createsprite gBulletSeedSpriteTemplate, ANIM_TARGET, 2, 20, 0
 	ba_delay 5
-	ba_createsprite 0x0856F100, ANIM_TARGET, 2, 20, 0
+	ba_createsprite gBulletSeedSpriteTemplate, ANIM_TARGET, 2, 20, 0
 	ba_delay 5
 	ba_createvisualtask AnimTask_ShakeMon2, 2, 1, 2, 0, 30, 1
-	ba_createsprite 0x0856F100, ANIM_TARGET, 2, 20, 0
+	ba_createsprite gBulletSeedSpriteTemplate, ANIM_TARGET, 2, 20, 0
 	ba_delay 5
-	ba_createsprite 0x0856F100, ANIM_TARGET, 2, 20, 0
+	ba_createsprite gBulletSeedSpriteTemplate, ANIM_TARGET, 2, 20, 0
 	ba_delay 5
-	ba_createsprite 0x0856F100, ANIM_TARGET, 2, 20, 0
+	ba_createsprite gBulletSeedSpriteTemplate, ANIM_TARGET, 2, 20, 0
 	ba_delay 5
-	ba_createsprite 0x0856F100, ANIM_TARGET, 2, 20, 0
+	ba_createsprite gBulletSeedSpriteTemplate, ANIM_TARGET, 2, 20, 0
 	ba_delay 5
-	ba_createsprite 0x0856F100, ANIM_TARGET, 2, 20, 0
+	ba_createsprite gBulletSeedSpriteTemplate, ANIM_TARGET, 2, 20, 0
 	ba_delay 5
-	ba_createsprite 0x0856F100, ANIM_TARGET, 2, 20, 0
+	ba_createsprite gBulletSeedSpriteTemplate, ANIM_TARGET, 2, 20, 0
 	ba_delay 5
-	ba_createsprite 0x0856F100, ANIM_TARGET, 2, 20, 0
+	ba_createsprite gBulletSeedSpriteTemplate, ANIM_TARGET, 2, 20, 0
 	ba_waitforvisualfinish
 	ba_end
 Move_DRAGON_CLAW:
