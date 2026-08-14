@@ -868,7 +868,7 @@ Move_CUT:
 	ba_monbg ANIM_TARGET
 	ba_setalpha 12, 8
 	ba_playsewithpan 0x0080, SOUND_PAN_TARGET
-	ba_createsprite 0x0856E600, ANIM_ATTACKER, 2, 40, -32, 0
+	ba_createsprite gCuttingSliceSpriteTemplate, ANIM_ATTACKER, 2, 40, -32, 0
 	ba_delay 5
 	ba_createvisualtask AnimTask_ShakeMon, 2, 1, 0, 3, 10, 1
 	ba_waitforvisualfinish
@@ -1095,10 +1095,10 @@ BattleAnimScript_0827931A: @ 0x0827931A
 	ba_waitforvisualfinish
 	ba_end
 BattleAnimScript_08279333: @ 0x08279333
-	ba_createsprite 0x0856E600, ANIM_ATTACKER, 2, 40, -32, 0
+	ba_createsprite gCuttingSliceSpriteTemplate, ANIM_ATTACKER, 2, 40, -32, 0
 	ba_goto BattleAnimScript_082792F6
 BattleAnimScript_08279345: @ 0x08279345
-	ba_createsprite 0x0856E600, ANIM_ATTACKER, 2, 40, -32, 1
+	ba_createsprite gCuttingSliceSpriteTemplate, ANIM_ATTACKER, 2, 40, -32, 1
 	ba_goto BattleAnimScript_082792F6
 BattleAnimScript_08279357: @ 0x08279357
 	ba_createsprite 0x08572E70, ANIM_ATTACKER, 2, 31, 3, 1, 0x2909, 4, 0, 0
@@ -3739,7 +3739,7 @@ Move_AIR_CUTTER:
 	ba_createvisualtask sub_08104540, 2, 32, -24, 1536, 2, 128
 	ba_waitforvisualfinish
 	ba_playsewithpan 0x0080, SOUND_PAN_TARGET
-	ba_createsprite 0x0856E618, ANIM_ATTACKER, 2, 40, -32, 0, 2
+	ba_createsprite gAirCutterSliceSpriteTemplate, ANIM_ATTACKER, 2, 40, -32, 0, 2
 	ba_delay 5
 	ba_createvisualtask AnimTask_ShakeMon2, 2, 1, 2, 0, 8, 1
 	ba_createvisualtask AnimTask_ShakeMon2, 2, 3, 2, 0, 8, 1
@@ -3878,7 +3878,7 @@ Move_AERIAL_ACE:
 	ba_setalpha 12, 8
 	ba_createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, 0, 24, 6, 1, 5
 	ba_createvisualtask sub_08117210, 2, 0, 4, 7, 3
-	ba_createsprite 0x0856E600, ANIM_ATTACKER, 2, 40, -32, 0
+	ba_createsprite gCuttingSliceSpriteTemplate, ANIM_ATTACKER, 2, 40, -32, 0
 	ba_playsewithpan 0x00A0, SOUND_PAN_ATTACKER
 	ba_delay 5
 	ba_createvisualtask AnimTask_ShakeMon, 2, 1, 0, 3, 10, 1
