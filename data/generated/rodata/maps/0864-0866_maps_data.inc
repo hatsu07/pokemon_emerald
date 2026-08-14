@@ -1408,6 +1408,7 @@ gItemUseYesNoCallbacks: @ 0x0856DCCC
 	.4byte BagMenu_InitListsMenu
 	.set gBattleAnimOam_AffineOff_ObjNormal_8x8, 0x084FD010
 	.set gBattleAnimOam_AffineOff_ObjNormal_8x16, 0x084FD050
+	.set gBattleAnimOam_AffineDouble_ObjNormal_8x8, 0x084FD0D0
 	.set gBattleAnimOam_AffineOn_ObjBlend_8x8, 0x084FD198
 	.globl gMovePowderParticleAnim
 gMovePowderParticleAnim: @ 0x0856DCD4
@@ -1478,6 +1479,8 @@ gSolarbeamBigOrbAnims: @ 0x0856DD8C
 	semantic_anim_table_entry gSolarbeamBigOrbAnim_Frame4
 	semantic_anim_table_entry gSolarbeamBigOrbAnim_Frame5
 	semantic_anim_table_entry gSolarbeamBigOrbAnim_Frame6
+	.globl gSolarbeamSmallOrbAnims
+gSolarbeamSmallOrbAnims: @ 0x0856DDA8
 	semantic_anim_table_entry gSolarbeamBigOrbAnim_Frame7
 	.globl gPowerAbsorptionOrbAnims
 gPowerAbsorptionOrbAnims: @ 0x0856DDAC
@@ -1496,17 +1499,33 @@ gPowerAbsorptionOrbSpriteTemplate: @ 0x0856DDC4
 gSolarbeamBigOrbSpriteTemplate: @ 0x0856DDDC
 	rodata_sprite_template 0x27A3, 0x27A3, gBattleAnimOam_AffineOff_ObjNormal_8x8, gSolarbeamBigOrbAnims, 0, gDummySpriteAffineAnimTable, AnimSolarbeamBigOrb
 	@ pret/pokeemerald-jp direct xref for 0x0856DDF4: battle_anim_effects_1.s: AnimTask_CreateSmallSolarbeamOrbs
-	.globl gBattleAnimEffects1Data_0856DDF4
-gBattleAnimEffects1Data_0856DDF4: @ 0x0856DDF4
-	@ analyzed canonical ROM range 0x0856DDF4-0x0856E2E3
+	.globl gSolarbeamSmallOrbSpriteTemplate
+gSolarbeamSmallOrbSpriteTemplate: @ 0x0856DDF4
+	@ analyzed canonical ROM range 0x0856DDF4-0x0856DE0B
+	rodata_sprite_template 0x27A3, 0x27A3, gBattleAnimOam_AffineOff_ObjNormal_8x8, gSolarbeamSmallOrbAnims, 0, gDummySpriteAffineAnimTable, AnimSolarbeamSmallOrb
+	.globl gSolarbeamSmallOrbAffineAnim
+gSolarbeamSmallOrbAffineAnim: @ 0x0856DE0C
+	semantic_affine_animcmd_frame 0x0140, 0x0140, 0x00, 0x00
+	semantic_affine_animcmd_frame -14, -14, 0x00, 0x01
+	semantic_affine_animcmd_jump 1
+	.globl gSolarbeamSmallOrbAffineAnims
+gSolarbeamSmallOrbAffineAnims: @ 0x0856DE24
+	semantic_affine_anim_table_entry gSolarbeamSmallOrbAffineAnim
+	.globl gAbsorptionOrbSpriteTemplate
+gAbsorptionOrbSpriteTemplate: @ 0x0856DE28
+	rodata_sprite_template 0x27FB, 0x27FB, gBattleAnimOam_AffineDouble_ObjNormal_8x8, gDummySpriteAnimTable, 0, gSolarbeamSmallOrbAffineAnims, AnimPowerAbsorptionOrb
+	.globl gPowerAbsorptionOrbAffineAnim_Loop
+gPowerAbsorptionOrbAffineAnim_Loop: @ 0x0856DE40
+	semantic_affine_animcmd_frame -5, -5, 0x00, 0x01
+	semantic_affine_animcmd_jump 0
+	.globl gPowerAbsorptionOrbAffineAnims_Loop
+gPowerAbsorptionOrbAffineAnims_Loop: @ 0x0856DE50
+	semantic_affine_anim_table_entry gPowerAbsorptionOrbAffineAnim_Loop
+	.globl gBattleAnimEffects1Data_0856DE54
+gBattleAnimEffects1Data_0856DE54: @ 0x0856DE54
+	@ analyzed canonical ROM range 0x0856DE54-0x0856E2E3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x4F0
-	.2byte 0x27A3, 0x27A3, 0xD010, 0x084F, 0xDDA8, 0x0856, 0x0000, 0x0000
-	.2byte 0xF310, 0x082B, 0xF1D9, 0x080F, 0x0140, 0x0140, 0x0000, 0x0000
-	.2byte 0xFFF2, 0xFFF2, 0x0100, 0x0000, 0x7FFE, 0x0001, 0x0000, 0x0000
-	.2byte 0xDE0C, 0x0856, 0x27FB, 0x27FB, 0xD0D0, 0x084F, 0xF304, 0x082B
-	.2byte 0x0000, 0x0000, 0xDE24, 0x0856, 0xF131, 0x080F, 0xFFFB, 0xFFFB
-	.2byte 0x0100, 0x0000, 0x7FFE, 0x0000, 0x0000, 0x0000, 0xDE40, 0x0856
+	@ ANALYSIS: RAW_BLOCK size=0x490
 	.2byte 0x27A3, 0x27A3, 0xD198, 0x084F, 0xDDAC, 0x0856, 0x0000, 0x0000
 	.2byte 0xDE50, 0x0856, 0xF329, 0x080F, 0x27A3, 0x27A3, 0xD010, 0x084F
 	.2byte 0xDD8C, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B, 0xF395, 0x080F

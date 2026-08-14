@@ -327,7 +327,7 @@ _080FF310:
 	.align 2, 0
 _080FF318: .4byte 0x03005B60
 _080FF31C: .4byte 0x020380BE
-_080FF320: .4byte gBattleAnimEffects1Data_0856DDF4
+_080FF320: .4byte gSolarbeamSmallOrbSpriteTemplate
 _080FF324: .4byte 0x020380D7
 	thumb_func_end AnimTask_CreateSmallSolarbeamOrbs
 
