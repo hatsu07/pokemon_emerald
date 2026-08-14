@@ -1359,7 +1359,7 @@ sSpritePalettes_StampShadow:
 sSpriteTemplate_StampShadow:
 	.2byte 0x8000 @ tileTag
 	.2byte 0x8000 @ paletteTag
-	.4byte 0x084FD040 @ gOamData_AffineOff_ObjNormal_32x16
+	.4byte gOamData_AffineOff_ObjNormal_32x16 @ gOamData_AffineOff_ObjNormal_32x16
 	.4byte gDummySpriteAnimTable @ gDummySpriteAnimTable
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ gDummySpriteAffineAnimTable

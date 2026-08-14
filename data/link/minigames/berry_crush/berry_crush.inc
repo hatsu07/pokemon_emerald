@@ -308,31 +308,31 @@ gBerryCrushData_082C7AA8: @ 0x082C7AA8
 gBerryCrushData_082C7B98: @ 0x082C7B98
 	@ analyzed canonical ROM range 0x082C7B98-0x082C7BAF
 sSpriteTemplate_082C7B98: @ 0x082C7B98
-	rodata_sprite_template 0x0001, 0x0001, 0x084FD028, 0x082C7B74, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	rodata_sprite_template 0x0001, 0x0001, gOamData_AffineOff_ObjNormal_64x64, 0x082C7B74, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x082C7BB0: berry_crush.s: sub_08022494
 	.globl gBerryCrushData_082C7BB0
 gBerryCrushData_082C7BB0: @ 0x082C7BB0
 	@ analyzed canonical ROM range 0x082C7BB0-0x082C7BC7
 sSpriteTemplate_082C7BB0: @ 0x082C7BB0
-	rodata_sprite_template 0x0002, 0x0002, 0x084FD020, 0x082C7B78, 0, gDummySpriteAffineAnimTable, sub_08022784
+	rodata_sprite_template 0x0002, 0x0002, gOamData_AffineOff_ObjNormal_32x32, 0x082C7B78, 0, gDummySpriteAffineAnimTable, sub_08022784
 	@ pret/pokeemerald-jp direct xref for 0x082C7BC8: berry_crush.s: sub_08022494
 	.globl gBerryCrushData_082C7BC8
 gBerryCrushData_082C7BC8: @ 0x082C7BC8
 	@ analyzed canonical ROM range 0x082C7BC8-0x082C7BDF
 sSpriteTemplate_082C7BC8: @ 0x082C7BC8
-	rodata_sprite_template 0x0003, 0x0002, 0x084FD018, 0x082C7B80, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	rodata_sprite_template 0x0003, 0x0002, gOamData_AffineOff_ObjNormal_16x16, 0x082C7B80, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x082C7BE0: berry_crush.s: sub_08022494
 	.globl gBerryCrushData_082C7BE0
 gBerryCrushData_082C7BE0: @ 0x082C7BE0
 	@ analyzed canonical ROM range 0x082C7BE0-0x082C7BF7
 sSpriteTemplate_082C7BE0: @ 0x082C7BE0
-	rodata_sprite_template 0x0004, 0x0004, 0x084FD050, 0x082C7B88, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	rodata_sprite_template 0x0004, 0x0004, gOamData_AffineOff_ObjNormal_8x16, 0x082C7B88, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x082C7BF8: berry_crush.s: sub_080211D4
 	.globl gBerryCrushData_082C7BF8
 gBerryCrushData_082C7BF8: @ 0x082C7BF8
 	@ analyzed canonical ROM range 0x082C7BF8-0x082C7C0F
 sSpriteTemplate_082C7BF8: @ 0x082C7BF8
-	rodata_sprite_template 0x0005, 0x0005, 0x084FD0E0, 0x082C7B8C, 0, 0x082C7B90, SpriteCallbackDummy
+	rodata_sprite_template 0x0005, 0x0005, gOamData_AffineDouble_ObjNormal_32x32, 0x082C7B8C, 0, 0x082C7B90, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x082C7C10: berry_crush.s: sub_08022494
 	.globl gBerryCrushData_082C7C10
 gBerryCrushData_082C7C10: @ 0x082C7C10

@@ -442,7 +442,7 @@ gPokemonJumpData_082D1F64: @ 0x082D1F64
 gPokemonJumpData_082D1FBC: @ 0x082D1FBC
 	@ analyzed canonical ROM range 0x082D1FBC-0x082D1FD3
 sSpriteTemplate_082D1FBC: @ 0x082D1FBC
-	rodata_sprite_template 0x2000, 0x2000, 0x084FD020, 0x082D1FA4, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	rodata_sprite_template 0x2000, 0x2000, gOamData_AffineOff_ObjNormal_32x32, 0x082D1FA4, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x082D1FD4: pokemon_jump.s: sub_0802E2A0, sub_0802E334
 	.globl gPokemonJumpData_082D1FD4
 gPokemonJumpData_082D1FD4: @ 0x082D1FD4

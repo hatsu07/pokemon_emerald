@@ -78,28 +78,28 @@ gBattleAnimSpecialData_085C62AC: @ 0x085C62AC
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6ECD6EC @ +0x0
-	.4byte 0x084FD010 @ +0x4
+	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x4
 	.4byte 0x085C6258 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6EDD6ED @ +0x18
-	.4byte 0x084FD010 @ +0x1C
+	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x1C
 	.4byte 0x085C6258 @ +0x20
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte SpriteCallbackDummy @ +0x2C
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6EED6EE @ +0x30
-	.4byte 0x084FD010 @ +0x34
+	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x34
 	.4byte 0x085C6258 @ +0x38
 	.4byte 0 @ +0x3C
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte SpriteCallbackDummy @ +0x44
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6EFD6EF @ +0x48
-	.4byte 0x084FD010 @ +0x4C
+	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x4C
 	.4byte 0x085C6258 @ +0x50
 	.4byte 0 @ +0x54
 	.4byte gDummySpriteAffineAnimTable @ +0x58
@@ -111,56 +111,56 @@ gBattleAnimSpecialData_085C630C: @ 0x085C630C
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6F0D6F0 @ +0x0
-	.4byte 0x084FD010 @ +0x4
+	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x4
 	.4byte 0x085C6258 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6F1D6F1 @ +0x18
-	.4byte 0x084FD010 @ +0x1C
+	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x1C
 	.4byte 0x085C6258 @ +0x20
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte SpriteCallbackDummy @ +0x2C
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6F2D6F2 @ +0x30
-	.4byte 0x084FD010 @ +0x34
+	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x34
 	.4byte 0x085C6258 @ +0x38
 	.4byte 0 @ +0x3C
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte SpriteCallbackDummy @ +0x44
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6F3D6F3 @ +0x48
-	.4byte 0x084FD010 @ +0x4C
+	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x4C
 	.4byte 0x085C6258 @ +0x50
 	.4byte 0 @ +0x54
 	.4byte gDummySpriteAffineAnimTable @ +0x58
 	.4byte SpriteCallbackDummy @ +0x5C
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6F4D6F4 @ +0x60
-	.4byte 0x084FD010 @ +0x64
+	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x64
 	.4byte 0x085C6258 @ +0x68
 	.4byte 0 @ +0x6C
 	.4byte gDummySpriteAffineAnimTable @ +0x70
 	.4byte SpriteCallbackDummy @ +0x74
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6F5D6F5 @ +0x78
-	.4byte 0x084FD010 @ +0x7C
+	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x7C
 	.4byte 0x085C6258 @ +0x80
 	.4byte 0 @ +0x84
 	.4byte gDummySpriteAffineAnimTable @ +0x88
 	.4byte SpriteCallbackDummy @ +0x8C
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6F6D6F6 @ +0x90
-	.4byte 0x084FD010 @ +0x94
+	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x94
 	.4byte 0x085C6258 @ +0x98
 	.4byte 0 @ +0x9C
 	.4byte gDummySpriteAffineAnimTable @ +0xA0
 	.4byte SpriteCallbackDummy @ +0xA4
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6F7D6F7 @ +0xA8
-	.4byte 0x084FD010 @ +0xAC
+	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0xAC
 	.4byte 0x085C6258 @ +0xB0
 	.4byte 0 @ +0xB4
 	.4byte gDummySpriteAffineAnimTable @ +0xB8

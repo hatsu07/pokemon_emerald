@@ -2,8 +2,8 @@
 	@ Priority A: battle status-effect structs and title-screen assets.
 	@ Priority A external targets identified from battle_anim_status_effects consumers.
 	@ Local aliases emit no bytes and avoid depending on C static symbol visibility.
-.set gPriorityABattleAnimFrozenIceCubeOam, 0x084FD148 @ gOamData_AffineOff_ObjBlend_64x64
-	.set gPriorityABattleAnimFlashingCircleImpactOam, 0x084FD010 @ gOamData_AffineOff_ObjNormal_8x8
+.set gPriorityABattleAnimFrozenIceCubeOam, gOamData_AffineOff_ObjBlend_64x64 @ gOamData_AffineOff_ObjBlend_64x64
+	.set gPriorityABattleAnimFlashingCircleImpactOam, gOamData_AffineOff_ObjNormal_8x8 @ gOamData_AffineOff_ObjNormal_8x8
 	.set gPriorityABattleAnimDummySpriteAnimTable, 0x082BF304 @ gDummySpriteAnimTable
 	.set gPriorityABattleAnimDummySpriteAffineAnimTable, 0x082BF310 @ gDummySpriteAffineAnimTable
 	.set gPriorityABattleAnimSpriteCallbackDummy, 0x08007141 @ SpriteCallbackDummy (Thumb)

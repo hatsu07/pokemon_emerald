@@ -566,12 +566,12 @@ gBattleAnimSpecialData_085AD190:
 	@ analyzed canonical ROM range 0x085AD190-0x085AD1A7
 	.globl sSpriteTemplate_085AD190
 sSpriteTemplate_085AD190: @ 0x085AD190
-	rodata_sprite_template 0x27F9, 0x27F9, 0x084FD018, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_0815B3D8
+	rodata_sprite_template 0x27F9, 0x27F9, gOamData_AffineOff_ObjNormal_16x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_0815B3D8
 	@ pret/pokeemerald-jp direct xref for 0x085AD1A8: battle_anim_effects_3.s: AnimMeteorMashStarStep, sub_0815B410; battle_anim_special.s: sub_08172DD0
 	.globl sSpriteTemplate_085AD1A8
 	@ analyzed canonical ROM range 0x085AD1A8-0x085AD1BF
 sSpriteTemplate_085AD1A8: @ 0x085AD1A8
-	rodata_sprite_template 0x27F9, 0x27F9, 0x084FD010, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, AnimMiniTwinklingStar
+	rodata_sprite_template 0x27F9, 0x27F9, gOamData_AffineOff_ObjNormal_8x8, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, AnimMiniTwinklingStar
 	@ pret/pokeemerald-jp direct xref for 0x085AD1C0: battle_anim_effects_3.s: sub_0815B598
 	.globl gBattleAnimEffects3Data_085AD1C0
 gBattleAnimEffects3Data_085AD1C0: @ 0x085AD1C0
@@ -616,7 +616,7 @@ gBattleAnimEffects3Data_085AD294:
 	@ analyzed canonical ROM range 0x085AD294-0x085AD2AB
 	.globl sSpriteTemplate_085AD294
 sSpriteTemplate_085AD294: @ 0x085AD294
-	rodata_sprite_template 0x2801, 0x2801, 0x084FD018, 0x085AD288, 0, gDummySpriteAffineAnimTable, sub_0815BD40
+	rodata_sprite_template 0x2801, 0x2801, gOamData_AffineOff_ObjNormal_16x16, 0x085AD288, 0, gDummySpriteAffineAnimTable, sub_0815BD40
 	@ pret/pokeemerald-jp direct xref for 0x085AD2AC: battle_anim_effects_3.s: sub_0815BFE0
 	.globl gBattleAnimEffects3Data_085AD2AC
 gBattleAnimEffects3Data_085AD2AC: @ 0x085AD2AC
@@ -697,7 +697,7 @@ gBattleAnimEffects3Data_085AD554: @ 0x085AD554
 gBattleAnimEffects3Data_085AD574: @ 0x085AD574
 	@ analyzed canonical ROM range 0x085AD574-0x085AD58B
 sSpriteTemplate_085AD574: @ 0x085AD574
-	rodata_sprite_template 0x2803, 0x2803, 0x084FD010, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_0815DDF8
+	rodata_sprite_template 0x2803, 0x2803, gOamData_AffineOff_ObjNormal_8x8, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_0815DDF8
 	@ pret/pokeemerald-jp direct xref for 0x085AD58C: battle_anim_effects_3.s: AnimTask_FacadeColorBlendStep
 	.globl gBattleAnimEffects3Data_085AD58C
 gBattleAnimEffects3Data_085AD58C: @ 0x085AD58C
@@ -718,7 +718,7 @@ gBattleAnimEffects3Data_085AD5F4: @ 0x085AD5F4
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x28082808 @ +0x0
-	.4byte 0x084FD010 @ +0x4
+	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0xC
@@ -726,7 +726,7 @@ gBattleAnimEffects3Data_085AD5F4: @ 0x085AD5F4
 	.4byte AnimGlareEyeDot @ +0x14
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x280C280C @ +0x18
-	.4byte 0x084FD020 @ +0x1C
+	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x24
@@ -752,7 +752,7 @@ gBattleAnimEffects3Data_085AD654: @ 0x085AD654
 	@ pointer/nullable table
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x280E280E @ +0x0
-	.4byte 0x084FD080 @ +0x4
+	.4byte gOamData_AffineNormal_ObjNormal_32x32 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0xC
@@ -760,7 +760,7 @@ gBattleAnimEffects3Data_085AD654: @ 0x085AD654
 	.4byte SpriteCallbackDummy @ +0x14
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x28072807 @ +0x18
-	.4byte 0x084FD020 @ +0x1C
+	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x24
@@ -779,7 +779,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte 0x00007FFF @ +0x10
 	.4byte 0 @ +0x14
 	.4byte 0x280F280F @ +0x18
-	.4byte 0x084FD020 @ +0x1C
+	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x24
@@ -787,7 +787,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte AnimSmellingSaltExclamation @ +0x2C
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x28072807 @ +0x30
-	.4byte 0x084FD020 @ +0x34
+	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x34
 	.4byte gDummySpriteAnimTable @ +0x38
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x3C
@@ -795,7 +795,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte AnimHelpingHandClap @ +0x44
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x28122812 @ +0x48
-	.4byte 0x084FD140 @ +0x4C
+	.4byte gOamData_AffineOff_ObjBlend_32x32 @ +0x4C
 	.4byte gDummySpriteAnimTable @ +0x50
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x54
@@ -803,7 +803,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte AnimForesightMagnifyingGlass @ +0x5C
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27F927F9 @ +0x60
-	.4byte 0x084FD018 @ +0x64
+	.4byte gOamData_AffineOff_ObjNormal_16x16 @ +0x64
 	.4byte gDummySpriteAnimTable @ +0x68
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x6C
@@ -811,7 +811,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte AnimMeteorMashStar @ +0x74
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27F927F9 @ +0x78
-	.4byte 0x084FD018 @ +0x7C
+	.4byte gOamData_AffineOff_ObjNormal_16x16 @ +0x7C
 	.4byte gDummySpriteAnimTable @ +0x80
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x84
@@ -819,7 +819,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte sub_08106A14 @ +0x8C
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x280A280A @ +0x90
-	.4byte 0x084FD028 @ +0x94
+	.4byte gOamData_AffineOff_ObjNormal_64x64 @ +0x94
 	.4byte gDummySpriteAnimTable @ +0x98
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0x9C
@@ -827,7 +827,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte AnimBlockX @ +0xA4
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27F027F0 @ +0xA8
-	.4byte 0x084FD020 @ +0xAC
+	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0xAC
 	.4byte gDummySpriteAnimTable @ +0xB0
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.4byte 0 @ +0xB4
@@ -853,7 +853,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte 0x085AD754 @ +0x100
 	.4byte 0x085AD76C @ +0x104
 	.4byte 0x28252825 @ +0x108
-	.4byte 0x084FD088 @ +0x10C
+	.4byte gOamData_AffineNormal_ObjNormal_64x64 @ +0x10C
 	.4byte 0x085AD750 @ +0x110
 	.4byte 0 @ +0x114
 	.4byte 0x085AD784 @ +0x118
@@ -865,7 +865,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte 0 @ +0x12C
 	.4byte 0x085AD7A4 @ +0x130
 	.4byte 0x28262826 @ +0x134
-	.4byte 0x084FD1A8 @ +0x138
+	.4byte gOamData_AffineNormal_ObjBlend_64x64 @ +0x138
 	.4byte gDummySpriteAnimTable @ +0x13C
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0 @ +0x140

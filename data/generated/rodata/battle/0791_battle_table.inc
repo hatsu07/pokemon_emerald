@@ -167,7 +167,7 @@ gContestData_08560B74: @ 0x08560B74
 gContestData_08560B7C: @ 0x08560B7C
 	@ analyzed canonical ROM range 0x08560B7C-0x08560B93
 sSpriteTemplate_08560B7C: @ 0x08560B7C
-	rodata_sprite_template 0xABE0, 0xABE0, 0x084FD018, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	rodata_sprite_template 0xABE0, 0xABE0, gOamData_AffineOff_ObjNormal_16x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08560B94: contest.s: sub_080D7058
 	.globl gContestData_08560B94
 gContestData_08560B94: @ 0x08560B94

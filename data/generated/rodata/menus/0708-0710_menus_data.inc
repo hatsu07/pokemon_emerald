@@ -322,7 +322,7 @@ gFieldWeatherEffectData_0852AA9C: @ 0x0852AA9C
 gFieldWeatherEffectData_0852AAE0: @ 0x0852AAE0
 	@ analyzed canonical ROM range 0x0852AAE0-0x0852AAF7
 sSpriteTemplate_0852AAE0: @ 0x0852AAE0
-	rodata_sprite_template 0x1205, 0x1200, 0x084FD010, 0x0852AADC, 0, gDummySpriteAffineAnimTable, UpdateBubbleSprite
+	rodata_sprite_template 0x1205, 0x1200, gOamData_AffineOff_ObjNormal_8x8, 0x0852AADC, 0, gDummySpriteAffineAnimTable, UpdateBubbleSprite
 	@ pret/pokeemerald-jp direct xref for 0x0852AAF8: field_weather_effect.s: TranslateWeatherNum
 	.globl gFieldWeatherEffectData_0852AAF8
 gFieldWeatherEffectData_0852AAF8: @ 0x0852AAF8

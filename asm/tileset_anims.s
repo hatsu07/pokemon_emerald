@@ -1951,7 +1951,7 @@ QueueAnimTiles_Sootopolis_StormyWater: @ 0x080A1060
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A1080: .4byte gSootopolisStormyWaterTilesetAnimFrameTable
+_080A1080: .4byte gTilesetAnims_Sootopolis_StormyWater
 _080A1084: .4byte 0x06005E00
 	thumb_func_end QueueAnimTiles_Sootopolis_StormyWater
 
@@ -1974,7 +1974,7 @@ QueueAnimTiles_BattlePyramid_Torch: @ 0x080A1088
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A10AC: .4byte gTilesetAnimsData_084FCF70
+_080A10AC: .4byte gTilesetAnims_BattlePyramid_Torch
 _080A10B0: .4byte 0x060052E0
 	thumb_func_end QueueAnimTiles_BattlePyramid_Torch
 
@@ -1997,7 +1997,7 @@ QueueAnimTiles_BattlePyramid_StatueShadow: @ 0x080A10B4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A10D8: .4byte gTilesetAnimsData_084FCF7C
+_080A10D8: .4byte gTilesetAnims_BattlePyramid_StatueShadow
 _080A10DC: .4byte 0x060050E0
 	thumb_func_end QueueAnimTiles_BattlePyramid_StatueShadow
 
@@ -2041,7 +2041,7 @@ _080A112A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A1130: .4byte gTilesetAnimsData_084FCF88
+_080A1130: .4byte gTilesetAnims_BattleDomeFloorLightPals
 _080A1134: .4byte 0x020374B4
 _080A1138: .4byte 0x02037C74
 _080A113C: .4byte 0x08149EBD
@@ -2094,7 +2094,7 @@ _080A119E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A11A4: .4byte gTilesetAnimsData_084FCF88
+_080A11A4: .4byte gTilesetAnims_BattleDomeFloorLightPals
 _080A11A8: .4byte 0x020374B4
 _080A11AC: .4byte 0x08149EBD
 _080A11B0: .4byte 0x02037C74

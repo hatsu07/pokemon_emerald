@@ -348,7 +348,7 @@ PlayFanfareByFanfareNum: @ 0x080A2928
 	bx r0
 	.align 2, 0
 _080A2950: .4byte 0x030074D0
-_080A2954: .4byte gSoundData_084FCFC8
+_080A2954: .4byte sFanfares
 _080A2958: .4byte 0x03000F4E
 	thumb_func_end PlayFanfareByFanfareNum
 
@@ -397,7 +397,7 @@ StopFanfareByFanfareNum: @ 0x080A2994
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A29A8: .4byte gSoundData_084FCFC8
+_080A29A8: .4byte sFanfares
 	thumb_func_end StopFanfareByFanfareNum
 
 	thumb_func_start PlayFanfare
@@ -417,7 +417,7 @@ _080A29B6:
 	bl CreateFanfareTask
 	b _080A29E2
 	.align 2, 0
-_080A29CC: .4byte gSoundData_084FCFC8
+_080A29CC: .4byte sFanfares
 _080A29D0:
 	adds r2, #4
 	adds r1, #1
@@ -1521,4 +1521,3 @@ _080A31F6:
 	bx r1
 	.align 2, 0
 	thumb_func_end IsSpecialSEPlaying
-

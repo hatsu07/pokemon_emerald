@@ -10,8 +10,8 @@
 	.set gPriorityAFrontierPassMedalsGoldPal, 0x08546944 @ gFrontierPassMedalsGold_Pal
 	.set gPriorityAFrontierPassMaleHeadPal, 0x08546964 @ sMaleHead_Pal
 	.set gPriorityAFrontierPassFemaleHeadPal, 0x08546984 @ sFemaleHead_Pal
-	.set gPriorityAFrontierPassOam16x16, 0x084FD018 @ gOamData_AffineOff_ObjNormal_16x16
-	.set gPriorityAFrontierPassOam32x16, 0x084FD040 @ gOamData_AffineOff_ObjNormal_32x16
+	.set gPriorityAFrontierPassOam16x16, gOamData_AffineOff_ObjNormal_16x16 @ gOamData_AffineOff_ObjNormal_16x16
+	.set gPriorityAFrontierPassOam32x16, gOamData_AffineOff_ObjNormal_32x16 @ gOamData_AffineOff_ObjNormal_32x16
 	.set gPriorityAFrontierPassDummyAffineAnimTable, 0x082BF310 @ gDummySpriteAffineAnimTable
 	.set gPriorityAFrontierPassSpriteCallbackDummy, 0x08007141 @ SpriteCallbackDummy (Thumb)
 	.set gPriorityAFrontierPassSpriteCbDummy, 0x080C5D3D @ JP SpriteCb_Dummy (Thumb)
