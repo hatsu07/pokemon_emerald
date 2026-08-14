@@ -1410,6 +1410,7 @@ gItemUseYesNoCallbacks: @ 0x0856DCCC
 	.set gBattleAnimOam_AffineOff_ObjNormal_16x16, 0x084FD018
 	.set gBattleAnimOam_AffineOff_ObjNormal_32x32, 0x084FD020
 	.set gBattleAnimOam_AffineOff_ObjNormal_32x16, 0x084FD040
+	.set gBattleAnimOam_084FD078, 0x084FD078
 	.set gBattleAnimOam_AffineOff_ObjNormal_8x16, 0x084FD050
 	.set gBattleAnimOam_AffineOff_ObjNormal_64x64, 0x084FD080
 	.set gBattleAnimOam_084FD0A8, 0x084FD0A8
@@ -1864,84 +1865,56 @@ gTrickBagItemAnims: @ 0x0856E340
 	semantic_anim_table_entry gTrickBagItemAnim_Frame16
 	semantic_anim_table_entry gTrickBagItemAnim_Frame16Flipped
 	semantic_anim_table_entry gTrickBagItemAnim_Frame28_2
-	@ pret/pokeemerald-jp direct xref for 0x0856E35C: battle_anim_effects_1.s: sub_08100810, sub_08100D74
-	.globl gBattleAnimEffects1Data_0856E35C
-gBattleAnimEffects1Data_0856E35C: @ 0x0856E35C
-	@ analyzed canonical ROM range 0x0856E35C-0x0856E45B
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x274F274F @ +0x0
-	.4byte 0x084FD018 @ +0x4
-	.4byte 0x0856E340 @ +0x8
-	.4byte 0 @ +0xC
-	.4byte gDummySpriteAffineAnimTable @ +0x10
-	.4byte SpriteCallbackDummy @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x2C
-	.4byte 0x01000100 @ +0x18
-	.4byte 0 @ +0x1C
-	.4byte 0 @ +0x20
-	.4byte 0x00000104 @ +0x24
-	.4byte 0x00017FFE @ +0x28
-	.4byte 0 @ +0x2C
-	.4byte 0x0856E374 @ +0x30
-	.4byte 0x27AF27AF @ +0x34
-	.4byte 0x084FD010 @ +0x38
-	.4byte 0x0856DEFC @ +0x3C
-	.4byte 0 @ +0x40
-	.4byte gDummySpriteAffineAnimTable @ +0x44
-	.4byte sub_08100E90 @ +0x48
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0x27AF27AF @ +0x4C
-	.4byte 0x084FD078 @ +0x50
-	.4byte 0x0856DEF8 @ +0x54
-	.4byte 0 @ +0x58
-	.4byte 0x0856E38C @ +0x5C
-	.4byte sub_08100E90 @ +0x60
-	@ ANALYSIS: RAW_BLOCK size=0x5C
-	.4byte 0x01000100 @ +0x64
-	.4byte 0 @ +0x68
-	.4byte 0 @ +0x6C
-	.4byte 0x000001F6 @ +0x70
-	.4byte 0x00017FFE @ +0x74
-	.4byte 0 @ +0x78
-	.4byte 0x00C000C0 @ +0x7C
-	.4byte 0 @ +0x80
-	.4byte 0 @ +0x84
-	.4byte 0x000001F4 @ +0x88
-	.4byte 0x00017FFE @ +0x8C
-	.4byte 0 @ +0x90
-	.4byte 0x008F008F @ +0x94
-	.4byte 0 @ +0x98
-	.4byte 0 @ +0x9C
-	.4byte 0x000001F1 @ +0xA0
-	.4byte 0x00017FFE @ +0xA4
-	.4byte 0 @ +0xA8
-	.4byte 0x0856E3C0 @ +0xAC
-	.4byte 0x0856E3D8 @ +0xB0
-	.4byte 0x0856E3F0 @ +0xB4
-	.4byte 0x281F281F @ +0xB8
-	.4byte 0x084FD078 @ +0xBC
-	.4byte gDummySpriteAnimTable @ +0xC0
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0xC4
-	.4byte 0x0856E408 @ +0xC8
-	.4byte sub_08100E90 @ +0xCC
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x281F281F @ +0xD0
-	.4byte 0x084FD078 @ +0xD4
-	.4byte gDummySpriteAnimTable @ +0xD8
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0xDC
-	.4byte 0x0856E40C @ +0xE0
-	.4byte sub_08100E90 @ +0xE4
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x281F281F @ +0xE8
-	.4byte 0x084FD078 @ +0xEC
-	.4byte gDummySpriteAnimTable @ +0xF0
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0xF4
-	.4byte 0x0856E410 @ +0xF8
-	.4byte sub_08100E90 @ +0xFC
+	.globl gTrickBagItemSpriteTemplate
+gTrickBagItemSpriteTemplate: @ 0x0856E35C
+	rodata_sprite_template 0x274F, 0x274F, gBattleAnimOam_AffineOff_ObjNormal_16x16, gTrickBagItemAnims, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	.globl gAromatherapyFlowerAffineAnim
+gAromatherapyFlowerAffineAnim: @ 0x0856E374
+	semantic_affine_animcmd_frame 0x100, 0x100, 0, 0
+	semantic_affine_animcmd_frame 0, 0, 4, 1
+	semantic_affine_animcmd_jump 1
+	.globl gAromatherapyFlowerAffineAnims
+gAromatherapyFlowerAffineAnims: @ 0x0856E38C
+	semantic_affine_anim_table_entry gAromatherapyFlowerAffineAnim
+	.globl gAromatherapySmallFlowerSpriteTemplate
+gAromatherapySmallFlowerSpriteTemplate: @ 0x0856E390
+	rodata_sprite_template 0x27AF, 0x27AF, gBattleAnimOam_AffineOff_ObjNormal_8x8, gPetalDanceSmallFlowerAnims, 0, gDummySpriteAffineAnimTable, sub_08100E90
+	.globl gAromatherapyBigFlowerSpriteTemplate
+gAromatherapyBigFlowerSpriteTemplate: @ 0x0856E3A8
+	rodata_sprite_template 0x27AF, 0x27AF, gBattleAnimOam_084FD078, gPetalDanceBigFlowerAnims, 0, gAromatherapyFlowerAffineAnims, sub_08100E90
+	.globl gSilverWindParticleAffineAnim_Small
+gSilverWindParticleAffineAnim_Small: @ 0x0856E3C0
+	semantic_affine_animcmd_frame 0x100, 0x100, 0, 0
+	semantic_affine_animcmd_frame 0, 0, 0xF6, 1
+	semantic_affine_animcmd_jump 1
+	.globl gSilverWindParticleAffineAnim_Medium
+gSilverWindParticleAffineAnim_Medium: @ 0x0856E3D8
+	semantic_affine_animcmd_frame 0xC0, 0xC0, 0, 0
+	semantic_affine_animcmd_frame 0, 0, 0xF4, 1
+	semantic_affine_animcmd_jump 1
+	.globl gSilverWindParticleAffineAnim_Large
+gSilverWindParticleAffineAnim_Large: @ 0x0856E3F0
+	semantic_affine_animcmd_frame 0x8F, 0x8F, 0, 0
+	semantic_affine_animcmd_frame 0, 0, 0xF1, 1
+	semantic_affine_animcmd_jump 1
+	.globl gSilverWindParticleAffineAnims_Small
+gSilverWindParticleAffineAnims_Small: @ 0x0856E408
+	semantic_affine_anim_table_entry gSilverWindParticleAffineAnim_Small
+	.globl gSilverWindParticleAffineAnims_Medium
+gSilverWindParticleAffineAnims_Medium: @ 0x0856E40C
+	semantic_affine_anim_table_entry gSilverWindParticleAffineAnim_Medium
+	.globl gSilverWindParticleAffineAnims_Large
+gSilverWindParticleAffineAnims_Large: @ 0x0856E410
+	semantic_affine_anim_table_entry gSilverWindParticleAffineAnim_Large
+	.globl gSilverWindParticleSpriteTemplate_Small
+gSilverWindParticleSpriteTemplate_Small: @ 0x0856E414
+	rodata_sprite_template 0x281F, 0x281F, gBattleAnimOam_084FD078, gDummySpriteAnimTable, 0, gSilverWindParticleAffineAnims_Small, sub_08100E90
+	.globl gSilverWindParticleSpriteTemplate_Medium
+gSilverWindParticleSpriteTemplate_Medium: @ 0x0856E42C
+	rodata_sprite_template 0x281F, 0x281F, gBattleAnimOam_084FD078, gDummySpriteAnimTable, 0, gSilverWindParticleAffineAnims_Medium, sub_08100E90
+	.globl gSilverWindParticleSpriteTemplate_Large
+gSilverWindParticleSpriteTemplate_Large: @ 0x0856E444
+	rodata_sprite_template 0x281F, 0x281F, gBattleAnimOam_084FD078, gDummySpriteAnimTable, 0, gSilverWindParticleAffineAnims_Large, sub_08100E90
 	@ pret/pokeemerald-jp direct xref for 0x0856E45C: battle_anim_effects_1.s: sub_08101014
 	.globl gBattleAnimEffects1Data_0856E45C
 gBattleAnimEffects1Data_0856E45C: @ 0x0856E45C

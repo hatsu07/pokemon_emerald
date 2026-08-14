@@ -3233,7 +3233,7 @@ _081008B0:
 	.align 2, 0
 _08100964: .4byte 0x03005B60
 _08100968: .4byte 0x020380D7
-_0810096C: .4byte gBattleAnimEffects1Data_0856E35C
+_0810096C: .4byte gTrickBagItemSpriteTemplate
 _08100970: .4byte 0x020205AC
 _08100974: .4byte 0x08100979
 	thumb_func_end sub_08100810
@@ -3838,7 +3838,7 @@ _08100E0A:
 	bx r0
 	.align 2, 0
 _08100E14: .4byte 0x020205AC
-_08100E18: .4byte gBattleAnimEffects1Data_0856E35C
+_08100E18: .4byte gTrickBagItemSpriteTemplate
 _08100E1C: .4byte 0x03005B60
 _08100E20: .4byte 0x08100E25
 	thumb_func_end sub_08100D74
