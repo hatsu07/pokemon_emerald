@@ -694,7 +694,7 @@ RotatingGate_CanRotate: @ 0x080FC54C
 	mov sl, r0
 	b _080FC578
 	.align 2, 0
-_080FC568: .4byte gRotatingGateData_0856DC3C
+_080FC568: .4byte gFortreeGymRotatingGateCollisionOffsets
 _080FC56C:
 	cmp r1, #2
 	beq _080FC574
@@ -789,9 +789,9 @@ _080FC608:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080FC618: .4byte gRotatingGateData_0856DC1C
+_080FC618: .4byte gTrickHousePuzzle6RotatingGateCollisionOffsets
 _080FC61C: .4byte 0x02039D10
-_080FC620: .4byte gRotatingGateData_0856DC5C
+_080FC620: .4byte gRotatingGateArmLayoutTable
 	thumb_func_end RotatingGate_CanRotate
 
 	thumb_func_start RotatingGate_HasArm
@@ -836,7 +836,7 @@ _080FC64A:
 	bx r1
 	.align 2, 0
 _080FC670: .4byte 0x02039D10
-_080FC674: .4byte gRotatingGateData_0856DC5C
+_080FC674: .4byte gRotatingGateArmLayoutTable
 	thumb_func_end RotatingGate_HasArm
 
 	thumb_func_start RotatingGate_TriggerRotationAnimation

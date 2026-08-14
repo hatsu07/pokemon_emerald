@@ -81,6 +81,11 @@
     .2byte 0
 .endm
 
+.macro rotating_gate_collision_offset x:req, y:req
+    .byte (\x) & 0xFF, (\y) & 0xFF
+    .2byte 0
+.endm
+
 .macro semantic_tileset is_compressed, is_secondary, tiles, palettes, metatiles, metatile_attributes, callback
     .byte \is_compressed, \is_secondary
     .2byte 0

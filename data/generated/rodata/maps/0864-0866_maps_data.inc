@@ -1353,33 +1353,45 @@ gRotatingGateRotationInfo_GateType4: @ 0x0856DC0C
 	@ analyzed canonical ROM range 0x0856DC0C-0x0856DC1B
 	.byte 0xFF, 0xFF, 0x21, 0xFF, 0xFF, 0xFF, 0x20, 0xFF, 0xFF, 0xFF, 0x14, 0xFF, 0xFF, 0xFF, 0x15, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x0856DC1C: rotating_gate.s: RotatingGate_CanRotate
-	.globl gRotatingGateData_0856DC1C
-gRotatingGateData_0856DC1C: @ 0x0856DC1C
+	.globl gTrickHousePuzzle6RotatingGateCollisionOffsets
+gTrickHousePuzzle6RotatingGateCollisionOffsets: @ 0x0856DC1C
 	@ analyzed canonical ROM range 0x0856DC1C-0x0856DC3B
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	.2byte 0xFF00, 0x0000, 0xFE01, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000
-	.2byte 0x00FF, 0x0000, 0x01FF, 0x0000, 0xFFFF, 0x0000, 0xFFFE, 0x0000
+	rotating_gate_collision_offset 0, -1
+	rotating_gate_collision_offset 1, -2
+	rotating_gate_collision_offset 0, 0
+	rotating_gate_collision_offset 1, 0
+	rotating_gate_collision_offset -1, 0
+	rotating_gate_collision_offset -1, 1
+	rotating_gate_collision_offset -1, -1
+	rotating_gate_collision_offset -2, -1
 	@ pret/pokeemerald-jp direct xref for 0x0856DC3C: rotating_gate.s: RotatingGate_CanRotate
-	.globl gRotatingGateData_0856DC3C
-gRotatingGateData_0856DC3C: @ 0x0856DC3C
+	.globl gFortreeGymRotatingGateCollisionOffsets
+gFortreeGymRotatingGateCollisionOffsets: @ 0x0856DC3C
 	@ analyzed canonical ROM range 0x0856DC3C-0x0856DC5B
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	.2byte 0xFFFF, 0x0000, 0xFEFF, 0x0000, 0xFF00, 0x0000, 0xFF01, 0x0000
-	.2byte 0x0000, 0x0000, 0x0100, 0x0000, 0x00FF, 0x0000, 0x00FE, 0x0000
+	rotating_gate_collision_offset -1, -1
+	rotating_gate_collision_offset -1, -2
+	rotating_gate_collision_offset 0, -1
+	rotating_gate_collision_offset 1, -1
+	rotating_gate_collision_offset 0, 0
+	rotating_gate_collision_offset 0, 1
+	rotating_gate_collision_offset -1, 0
+	rotating_gate_collision_offset -2, 0
 	@ pret/pokeemerald-jp direct xref for 0x0856DC5C: rotating_gate.s: RotatingGate_CanRotate, RotatingGate_HasArm
-	.globl gRotatingGateData_0856DC5C
-gRotatingGateData_0856DC5C: @ 0x0856DC5C
+	.globl gRotatingGateArmLayoutTable
+gRotatingGateArmLayoutTable: @ 0x0856DC5C
 	@ analyzed canonical ROM range 0x0856DC5C-0x0856DCBB
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x60
-	.2byte 0x0001, 0x0001, 0x0000, 0x0000, 0x0101, 0x0001, 0x0000, 0x0000
-	.2byte 0x0001, 0x0101, 0x0000, 0x0000, 0x0101, 0x0101, 0x0000, 0x0000
-	.2byte 0x0001, 0x0001, 0x0001, 0x0000, 0x0101, 0x0001, 0x0001, 0x0000
-	.2byte 0x0001, 0x0101, 0x0001, 0x0000, 0x0001, 0x0001, 0x0101, 0x0000
-	.2byte 0x0101, 0x0101, 0x0001, 0x0000, 0x0101, 0x0001, 0x0101, 0x0000
-	.2byte 0x0001, 0x0101, 0x0101, 0x0000, 0x0101, 0x0101, 0x0101, 0x0000
+	.byte 1, 0, 1, 0, 0, 0, 0, 0
+	.byte 1, 1, 1, 0, 0, 0, 0, 0
+	.byte 1, 0, 1, 1, 0, 0, 0, 0
+	.byte 1, 1, 1, 1, 0, 0, 0, 0
+	.byte 1, 0, 1, 0, 1, 0, 0, 0
+	.byte 1, 1, 1, 0, 1, 0, 0, 0
+	.byte 1, 0, 1, 1, 1, 0, 0, 0
+	.byte 1, 0, 1, 0, 1, 1, 0, 0
+	.byte 1, 1, 1, 1, 1, 0, 0, 0
+	.byte 1, 1, 1, 0, 1, 1, 0, 0
+	.byte 1, 0, 1, 1, 1, 1, 0, 0
+	.byte 1, 1, 1, 1, 1, 1, 0, 0
 	.globl gMapPointerTable_Rom_56DCBC
 gMapPointerTable_Rom_56DCBC: @ 0x0856DCBC
 	.4byte sub_081B5E1C
