@@ -1750,24 +1750,60 @@ gIngrainOrbSpriteTemplate: @ 0x0856E170
 	rodata_sprite_template 0x27A3, 0x27A3, gBattleAnimOam_AffineOff_ObjNormal_8x8, gIngrainOrbAnims, 0, gDummySpriteAffineAnimTable, AnimIngrainOrb
 	.globl gBattleAnimEffects1Data_0856E188
 gBattleAnimEffects1Data_0856E188: @ 0x0856E188
-	@ analyzed canonical ROM range 0x0856E188-0x0856E2E3
+	.globl gPresentAnim
+gPresentAnim: @ 0x0856E188
+	rodata_anim_frame 0, 30
+	rodata_anim_end
+	.globl gPresentAnims
+gPresentAnims: @ 0x0856E190
+	semantic_anim_table_entry gPresentAnim
+	.globl gPresentAffineAnim_Spin
+gPresentAffineAnim_Spin: @ 0x0856E194
+	semantic_affine_animcmd_frame 0, 0, 0xFC, 10
+	semantic_affine_animcmd_frame 0, 0, 4, 20
+	semantic_affine_animcmd_frame 0, 0, 0xFC, 10
+	rodata_affine_anim_end
+	.globl gPresentAffineAnim_Shake
+gPresentAffineAnim_Shake: @ 0x0856E1B4
+	semantic_affine_animcmd_frame 0, 0, 0xFF, 2
+	semantic_affine_animcmd_frame 0, 0, 1, 4
+	semantic_affine_animcmd_frame 0, 0, 0xFF, 4
+	semantic_affine_animcmd_frame 0, 0, 1, 4
+	semantic_affine_animcmd_frame 0, 0, 0xFF, 4
+	semantic_affine_animcmd_frame 0, 0, 1, 2
+	rodata_affine_anim_end
+	.globl gPresentAffineAnims
+gPresentAffineAnims: @ 0x0856E1EC
+	semantic_affine_anim_table_entry gPresentAffineAnim_Spin
+	semantic_affine_anim_table_entry gPresentAffineAnim_Shake
+	.globl gPresentSpriteTemplate
+gPresentSpriteTemplate: @ 0x0856E1F4
+	rodata_sprite_template 0x27F0, 0x27F0, gBattleAnimOam_AffineOff_ObjNormal_64x64, gPresentAnims, 0, gPresentAffineAnims, AnimPresent
+	.globl gKnockOffItemSpriteTemplate
+gKnockOffItemSpriteTemplate: @ 0x0856E20C
+	rodata_sprite_template 0x27F0, 0x27F0, gBattleAnimOam_AffineOff_ObjNormal_64x64, gPresentAnims, 0, gPresentAffineAnims, AnimKnockOffItem
+	.globl gPresentHealParticleAnim
+gPresentHealParticleAnim: @ 0x0856E224
+	rodata_anim_frame 0, 4
+	rodata_anim_frame 4, 4
+	rodata_anim_frame 8, 4
+	rodata_anim_frame 12, 4
+	rodata_anim_end
+	.globl gPresentHealParticleAnims
+gPresentHealParticleAnims: @ 0x0856E238
+	semantic_anim_table_entry gPresentHealParticleAnim
+	.globl gPresentHealParticleSpriteTemplate
+gPresentHealParticleSpriteTemplate: @ 0x0856E23C
+	rodata_sprite_template 0x27D3, 0x27D3, gBattleAnimOam_AffineOff_ObjNormal_16x16, gPresentHealParticleAnims, 0, gDummySpriteAffineAnimTable, AnimPresentHealParticle
+	.globl gItemStealSpriteTemplate
+gItemStealSpriteTemplate: @ 0x0856E254
+	rodata_sprite_template 0x27F0, 0x27F0, gBattleAnimOam_AffineOff_ObjNormal_64x64, gPresentAnims, 0, gPresentAffineAnims, AnimItemSteal
+	.globl gBattleAnimEffects1Data_0856E26C
+gBattleAnimEffects1Data_0856E26C: @ 0x0856E26C
+	@ analyzed canonical ROM range 0x0856E26C-0x0856E2E3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x15C
-	.2byte 0x0000, 0x001E, 0xFFFF, 0x0000, 0xE188, 0x0856
-	.2byte 0x0000, 0x0000, 0x0AFC, 0x0000, 0x0000, 0x0000, 0x1404, 0x0000
-	.2byte 0x0000, 0x0000, 0x0AFC, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
-	.2byte 0x0000, 0x0000, 0x02FF, 0x0000, 0x0000, 0x0000, 0x0401, 0x0000
-	.2byte 0x0000, 0x0000, 0x04FF, 0x0000, 0x0000, 0x0000, 0x0401, 0x0000
-	.2byte 0x0000, 0x0000, 0x04FF, 0x0000, 0x0000, 0x0000, 0x0201, 0x0000
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000, 0xE194, 0x0856, 0xE1B4, 0x0856
-	.2byte 0x27F0, 0x27F0, 0xD080, 0x084F, 0xE190, 0x0856, 0x0000, 0x0000
-	.2byte 0xE1EC, 0x0856, 0x0369, 0x0810, 0x27F0, 0x27F0, 0xD080, 0x084F
-	.2byte 0xE190, 0x0856, 0x0000, 0x0000, 0xE1EC, 0x0856, 0x0445, 0x0810
-	.2byte 0x0000, 0x0004, 0x0004, 0x0004, 0x0008, 0x0004, 0x000C, 0x0004
-	.2byte 0xFFFF, 0x0000, 0xE224, 0x0856, 0x27D3, 0x27D3, 0xD018, 0x084F
-	.2byte 0xE238, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B, 0x04C1, 0x0810
-	.2byte 0x27F0, 0x27F0, 0xD080, 0x084F, 0xE190, 0x0856, 0x0000, 0x0000
-	.2byte 0xE1EC, 0x0856, 0x0505, 0x0810, 0x0000, 0x0000, 0x0300, 0x0000
+	@ ANALYSIS: RAW_BLOCK size=0x78
+	.2byte 0x0000, 0x0000, 0x0300, 0x0000
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000, 0x0000, 0xFFF6, 0x0300, 0x0000
 	.2byte 0x0000, 0xFFFA, 0x0300, 0x0000, 0x0000, 0xFFFE, 0x0300, 0x0000
 	.2byte 0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 0x0002, 0x0300, 0x0000
