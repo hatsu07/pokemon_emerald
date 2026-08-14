@@ -1922,18 +1922,36 @@ gMagicalLeafBlendColors: @ 0x0856E45C
 	.globl gNeedleArmSpikeSpriteTemplate
 gNeedleArmSpikeSpriteTemplate: @ 0x0856E46C
 	rodata_sprite_template 0x281A, 0x281A, gBattleAnimOam_084FD078, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_081010E8
-	.globl gBattleAnimEffects1Data_0856E484
-gBattleAnimEffects1Data_0856E484: @ 0x0856E484
-	@ analyzed canonical ROM range 0x0856E484-0x0856E8B3
+	.globl gSlamVineWhipAnim_Normal
+gSlamVineWhipAnim_Normal: @ 0x0856E484
+	rodata_anim_frame 64, 3
+	rodata_anim_frame 80, 3
+	rodata_anim_frame 96, 3
+	rodata_anim_frame 112, 6
+	rodata_anim_end
+	.globl gSlamVineWhipAnim_Flipped
+gSlamVineWhipAnim_Flipped: @ 0x0856E498
+	rodata_anim_frame 64, 3, 1
+	rodata_anim_frame 80, 3, 1
+	rodata_anim_frame 96, 3, 1
+	rodata_anim_frame 112, 6, 1
+	rodata_anim_end
+	.globl gSlamVineWhipAnims
+gSlamVineWhipAnims: @ 0x0856E4AC
+	semantic_anim_table_entry gSlamVineWhipAnim_Normal
+	semantic_anim_table_entry gSlamVineWhipAnim_Flipped
+	.globl gSlamImpactSpriteTemplate
+gSlamImpactSpriteTemplate: @ 0x0856E4B4
+	rodata_sprite_template 0x2748, 0x2748, gBattleAnimOam_AffineOff_ObjNormal_32x32, gSlamVineWhipAnims, 0, gDummySpriteAffineAnimTable, sub_081012A0
+	.globl gVineWhipImpactSpriteTemplate
+gVineWhipImpactSpriteTemplate: @ 0x0856E4CC
+	rodata_sprite_template 0x282F, 0x282F, gBattleAnimOam_AffineOff_ObjNormal_32x32, gSlamVineWhipAnims, 0, gDummySpriteAffineAnimTable, sub_081012A0
+	.globl gBattleAnimEffects1Data_0856E4E4
+gBattleAnimEffects1Data_0856E4E4: @ 0x0856E4E4
+	@ analyzed canonical ROM range 0x0856E4E4-0x0856E8B3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x430
-	.2byte 0x0040, 0x0003, 0x0050, 0x0003
-	.2byte 0x0060, 0x0003, 0x0070, 0x0006, 0xFFFF, 0x0000, 0x0040, 0x0043
-	.2byte 0x0050, 0x0043, 0x0060, 0x0043, 0x0070, 0x0046, 0xFFFF, 0x0000
-	.2byte 0xE484, 0x0856, 0xE498, 0x0856, 0x2748, 0x2748, 0xD020, 0x084F
-	.2byte 0xE4AC, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B, 0x12A1, 0x0810
-	.2byte 0x282F, 0x282F, 0xD020, 0x084F, 0xE4AC, 0x0856, 0x0000, 0x0000
-	.2byte 0xF310, 0x082B, 0x12A1, 0x0810, 0x0000, 0x0004, 0x0010, 0x0004
+	@ ANALYSIS: RAW_BLOCK size=0x3D0
+	.2byte 0x0000, 0x0004, 0x0010, 0x0004
 	.2byte 0x0020, 0x0004, 0x0030, 0x0004, 0x0040, 0x0005, 0xFFFF, 0x0000
 	.2byte 0xE4E4, 0x0856, 0x2725, 0x2725, 0xD020, 0x084F, 0xE4FC, 0x0856
 	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x1249, 0x0810, 0x2726, 0x2726
