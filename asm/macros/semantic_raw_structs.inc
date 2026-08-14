@@ -75,6 +75,12 @@
     .4byte \count, \connections
 .endm
 
+.macro rotating_gate_puzzle_gate x:req, y:req, gate_type:req, initial_orientation:req
+    .2byte \x, \y
+    .byte \gate_type, \initial_orientation
+    .2byte 0
+.endm
+
 .macro semantic_tileset is_compressed, is_secondary, tiles, palettes, metatiles, metatile_attributes, callback
     .byte \is_compressed, \is_secondary
     .2byte 0

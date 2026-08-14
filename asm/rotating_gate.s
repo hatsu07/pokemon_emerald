@@ -158,7 +158,7 @@ _080FC150:
 	b _080FC172
 	.align 2, 0
 _080FC15C: .4byte 0x02039D10
-_080FC160: .4byte gRotatingGateData_0856A494
+_080FC160: .4byte gFortreeGymRotatingGatePuzzleGates
 _080FC164: .4byte 0x02039D14
 _080FC168:
 	ldr r1, _080FC188
@@ -182,7 +182,7 @@ _080FC184:
 	bx r0
 	.align 2, 0
 _080FC188: .4byte 0x02039D10
-_080FC18C: .4byte gRotatingGateData_0856A4D4
+_080FC18C: .4byte gTrickHousePuzzle6RotatingGatePuzzleGates
 _080FC190: .4byte 0x02039D14
 _080FC194: .4byte 0x02039D04
 	thumb_func_end RotatingGate_LoadPuzzleConfig

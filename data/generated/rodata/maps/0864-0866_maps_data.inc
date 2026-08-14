@@ -1,3 +1,5 @@
+	.include "asm/macros/semantic_raw_structs.inc"
+
 	@ pret/pokeemerald-jp direct xref for 0x08569552: field_poison.s: sub_080FA3A0
 	.globl gFieldPoisonData_08569552
 gFieldPoisonData_08569552: @ 0x08569552
@@ -303,27 +305,38 @@ gFieldSpecialSceneData_0856A491: @ 0x0856A491
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	.byte 0x17, 0xFE, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0856A494: rotating_gate.s: RotatingGate_LoadPuzzleConfig
-	.globl gRotatingGateData_0856A494
-gRotatingGateData_0856A494: @ 0x0856A494
+	.globl gFortreeGymRotatingGatePuzzleGates
+gFortreeGymRotatingGatePuzzleGates: @ 0x0856A494
 	@ analyzed canonical ROM range 0x0856A494-0x0856A4D3
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x40
-	.2byte 0x0006, 0x0007, 0x0105, 0x0000, 0x0009, 0x000F, 0x0205, 0x0000
-	.2byte 0x0003, 0x0013, 0x0105, 0x0000, 0x0002, 0x0006, 0x0104, 0x0000
-	.2byte 0x0009, 0x000C, 0x0004, 0x0000, 0x0006, 0x0017, 0x0004, 0x0000
-	.2byte 0x000C, 0x0016, 0x0004, 0x0000, 0x0006, 0x0003, 0x0203, 0x0000
+	rotating_gate_puzzle_gate 6, 7, 5, 1
+	rotating_gate_puzzle_gate 9, 15, 5, 2
+	rotating_gate_puzzle_gate 3, 19, 5, 1
+	rotating_gate_puzzle_gate 2, 6, 4, 1
+	rotating_gate_puzzle_gate 9, 12, 4, 0
+	rotating_gate_puzzle_gate 6, 23, 4, 0
+	rotating_gate_puzzle_gate 12, 22, 4, 0
+	rotating_gate_puzzle_gate 6, 3, 3, 2
 	@ pret/pokeemerald-jp direct xref for 0x0856A4D4: rotating_gate.s: RotatingGate_LoadPuzzleConfig
-	.globl gRotatingGateData_0856A4D4
-gRotatingGateData_0856A4D4: @ 0x0856A4D4
-	@ analyzed canonical ROM range 0x0856A4D4-0x0856D93B
+	.globl gTrickHousePuzzle6RotatingGatePuzzleGates
+gTrickHousePuzzle6RotatingGatePuzzleGates: @ 0x0856A4D4
+	@ analyzed canonical ROM range 0x0856A4D4-0x0856A52B
+	rotating_gate_puzzle_gate 14, 5, 4, 1
+	rotating_gate_puzzle_gate 10, 6, 1, 2
+	rotating_gate_puzzle_gate 6, 6, 3, 1
+	rotating_gate_puzzle_gate 14, 8, 4, 1
+	rotating_gate_puzzle_gate 3, 10, 2, 3
+	rotating_gate_puzzle_gate 9, 14, 0, 1
+	rotating_gate_puzzle_gate 3, 15, 6, 0
+	rotating_gate_puzzle_gate 2, 17, 1, 2
+	rotating_gate_puzzle_gate 12, 18, 6, 3
+	rotating_gate_puzzle_gate 5, 18, 3, 1
+	rotating_gate_puzzle_gate 10, 19, 2, 2
+	.globl gRotatingGateData_0856A52C
+gRotatingGateData_0856A52C: @ 0x0856A52C
+	@ analyzed canonical ROM range 0x0856A52C-0x0856D93B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x3468
-	.2byte 0x000E, 0x0005, 0x0104, 0x0000, 0x000A, 0x0006, 0x0201, 0x0000
-	.2byte 0x0006, 0x0006, 0x0103, 0x0000, 0x000E, 0x0008, 0x0104, 0x0000
-	.2byte 0x0003, 0x000A, 0x0302, 0x0000, 0x0009, 0x000E, 0x0100, 0x0000
-	.2byte 0x0003, 0x000F, 0x0006, 0x0000, 0x0002, 0x0011, 0x0201, 0x0000
-	.2byte 0x000C, 0x0012, 0x0306, 0x0000, 0x0005, 0x0012, 0x0103, 0x0000
-	.2byte 0x000A, 0x0013, 0x0202, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	@ ANALYSIS: RAW_BLOCK size=0x3410
+	.2byte 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xD000
 	.2byte 0x0000, 0xDD00, 0x0000, 0xCD00, 0x0000, 0xCD00, 0x0000, 0xCD00
