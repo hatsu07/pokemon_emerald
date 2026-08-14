@@ -1418,6 +1418,7 @@ gItemUseYesNoCallbacks: @ 0x0856DCCC
 	.set gBattleAnimOam_084FD140, 0x084FD140
 	.set gBattleAnimOam_084FD148, 0x084FD148
 	.set gBattleAnimOam_084FD1A0, 0x084FD1A0
+	.set gBattleAnimOam_084FD1F0, 0x084FD1F0
 	.set gBattleAnimOam_AffineDouble_ObjNormal_8x8, 0x084FD0D0
 	.set gBattleAnimOam_AffineDouble_ObjNormal_16x16, 0x084FD0D8
 	.set gBattleAnimOam_AffineOn_ObjBlend_8x8, 0x084FD198
@@ -2279,19 +2280,39 @@ gOctazookaInkAnims: @ 0x0856EA10
 	.globl gOctazookaInkSpriteTemplate
 gOctazookaInkSpriteTemplate: @ 0x0856EA14
 	rodata_sprite_template 0x272E, 0x272E, gBattleAnimOam_AffineOff_ObjNormal_32x32, gOctazookaInkAnims, 0, gDummySpriteAffineAnimTable, sub_080A7090
-	.globl gBattleAnimEffects1Data_0856EA2C
-gBattleAnimEffects1Data_0856EA2C: @ 0x0856EA2C
-	@ analyzed canonical ROM range 0x0856EA2C-0x0856EA9F
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x74
-	.2byte 0x0003, 0x0005, 0x0002, 0x0005
-	.2byte 0x0001, 0x0005, 0x0000, 0x0005, 0xFFFF, 0x0000, 0xEA2C, 0x0856
-	.2byte 0x0200, 0x0200, 0x0000, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
-	.2byte 0xEA44, 0x0856, 0x2722, 0x2722, 0xD1F0, 0x084F, 0xEA40, 0x0856
-	.2byte 0x0000, 0x0000, 0xEA54, 0x0856, 0x2AB9, 0x0810, 0x0000, 0x0005
-	.2byte 0x0001, 0x0005, 0x0002, 0x0005, 0x0003, 0x0005, 0xFFFF, 0x0000
-	.2byte 0xEA70, 0x0856, 0x2722, 0x2722, 0xD1F0, 0x084F, 0xEA84, 0x0856
-	.2byte 0x0000, 0x0000, 0xEA54, 0x0856, 0x2B9D, 0x0810
+	.globl gConversionAnim
+gConversionAnim: @ 0x0856EA2C
+	rodata_anim_frame 3, 5
+	rodata_anim_frame 2, 5
+	rodata_anim_frame 1, 5
+	rodata_anim_frame 0, 5
+	rodata_anim_end
+	.globl gConversionAnims
+gConversionAnims: @ 0x0856EA40
+	semantic_anim_table_entry gConversionAnim
+	.globl gConversionAffineAnim
+gConversionAffineAnim: @ 0x0856EA44
+	rodata_affine_anim_frame 0x0200, 0x0200, 0, 0
+	rodata_affine_anim_end
+	.globl gConversionAffineAnims
+gConversionAffineAnims: @ 0x0856EA54
+	semantic_affine_anim_table_entry gConversionAffineAnim
+	.globl gConversionSpriteTemplate
+gConversionSpriteTemplate: @ 0x0856EA58
+	rodata_sprite_template 0x2722, 0x2722, gBattleAnimOam_084FD1F0, gConversionAnims, 0, gConversionAffineAnims, sub_08102AB8
+	.globl gConversion2Anim
+gConversion2Anim: @ 0x0856EA70
+	rodata_anim_frame 0, 5
+	rodata_anim_frame 1, 5
+	rodata_anim_frame 2, 5
+	rodata_anim_frame 3, 5
+	rodata_anim_end
+	.globl gConversion2Anims
+gConversion2Anims: @ 0x0856EA84
+	semantic_anim_table_entry gConversion2Anim
+	.globl gConversion2SpriteTemplate
+gConversion2SpriteTemplate: @ 0x0856EA88
+	rodata_sprite_template 0x2722, 0x2722, gBattleAnimOam_084FD1F0, gConversion2Anims, 0, gConversionAffineAnims, sub_08102B9C
 	@ pret/pokeemerald-jp direct xref for 0x0856EAA0: battle_anim_effects_1.s: sub_08102EF8
 	.globl gBattleAnimEffects1Data_0856EAA0
 gBattleAnimEffects1Data_0856EAA0:

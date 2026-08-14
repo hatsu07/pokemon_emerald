@@ -1919,40 +1919,40 @@ Move_CONVERSION:
 	ba_setalpha 16, 0
 	ba_delay 0
 	ba_playsewithpan 0x00CE, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, -24, -24
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -24, -24
 	ba_delay 3
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, -8, -24
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -8, -24
 	ba_delay 3
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, 8, -24
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 8, -24
 	ba_delay 3
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, 24, -24
-	ba_delay 3
-	ba_playsewithpan 0x00CE, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, -24, -8
-	ba_delay 3
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, -8, -8
-	ba_delay 3
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, 8, -8
-	ba_delay 3
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, 24, -8
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 24, -24
 	ba_delay 3
 	ba_playsewithpan 0x00CE, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, -24, 8
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -24, -8
 	ba_delay 3
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, -8, 8
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -8, -8
 	ba_delay 3
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, 8, 8
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 8, -8
 	ba_delay 3
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, 24, 8
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 24, -8
 	ba_delay 3
 	ba_playsewithpan 0x00CE, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, -24, 24
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -24, 8
 	ba_delay 3
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, -8, 24
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -8, 8
 	ba_delay 3
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, 8, 24
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 8, 8
 	ba_delay 3
-	ba_createsprite 0x0856EA58, ANIM_ATTACKER, 2, 24, 24
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 24, 8
+	ba_delay 3
+	ba_playsewithpan 0x00CE, SOUND_PAN_ATTACKER
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -24, 24
+	ba_delay 3
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -8, 24
+	ba_delay 3
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 8, 24
+	ba_delay 3
+	ba_createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 24, 24
 	ba_delay 20
 	ba_playsewithpan 0x00D0, SOUND_PAN_ATTACKER
 	ba_createvisualtask sub_081165E4, 2, 0x2722, 1, 1, 0x37FF, 12, 0, 0
@@ -1970,22 +1970,22 @@ Move_CONVERSION_2:
 	ba_setalpha 0, 16
 	ba_delay 0
 	ba_playsewithpan 0x00D0, SOUND_PAN_TARGET
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, -24, -24, 60
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, -8, -24, 65
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, 8, -24, 70
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, 24, -24, 75
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, -24, -8, 80
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, -8, -8, 85
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, 8, -8, 90
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, 24, -8, 95
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, -24, 8, 100
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, -8, 8, 105
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, 8, 8, 110
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, 24, 8, 115
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, -24, 24, 120
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, -8, 24, 125
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, 8, 24, 130
-	ba_createsprite 0x0856EA88, ANIM_ATTACKER, 2, 24, 24, 135
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, -24, -24, 60
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, -8, -24, 65
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, 8, -24, 70
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, 24, -24, 75
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, -24, -8, 80
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, -8, -8, 85
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, 8, -8, 90
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, 24, -8, 95
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, -24, 8, 100
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, -8, 8, 105
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, 8, 8, 110
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, 24, 8, 115
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, -24, 24, 120
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, -8, 24, 125
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, 8, 24, 130
+	ba_createsprite gConversion2SpriteTemplate, ANIM_ATTACKER, 2, 24, 24, 135
 	ba_createvisualtask sub_08102C30, 5
 	ba_delay 60
 	ba_playsewithpan 0x00CE, SOUND_PAN_TARGET
