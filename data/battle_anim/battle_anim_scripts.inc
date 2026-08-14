@@ -2418,7 +2418,7 @@ Move_METRONOME:
 	ba_createsprite gBattleAnimSpriteTemplate_FingerWag, ANIM_ATTACKER, 11, 0, 100
 	ba_playsewithpan 0x00BA, SOUND_PAN_ATTACKER
 	ba_delay 6
-	ba_createsprite 0x0856EDA0, ANIM_ATTACKER, 12, 0
+	ba_createsprite gMetronomeHandSpriteTemplate, ANIM_ATTACKER, 12, 0
 	ba_delay 24
 	ba_loopsewithpan 0x00A7, SOUND_PAN_ATTACKER, 22, 3
 	ba_waitforvisualfinish
@@ -3116,7 +3116,7 @@ Move_SMELLING_SALT:
 	ba_end
 Move_FOLLOW_ME:
 	ba_loadspritegfx 0x2750
-	ba_createsprite 0x0856EDB8, ANIM_ATTACKER, 2, 0
+	ba_createsprite gFollowMeHandSpriteTemplate, ANIM_ATTACKER, 2, 0
 	ba_playsewithpan 0x00A7, SOUND_PAN_ATTACKER
 	ba_delay 18
 	ba_playsewithpan 0x00E2, SOUND_PAN_ATTACKER
