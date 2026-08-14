@@ -1,11 +1,15 @@
 	@ pret/pokeemerald-jp direct xref for 0x0852E728: wild_encounter.s: CheckFeebas, GetRoute119WaterTileNum
-	.globl gWildEncounterData_0852E728
-gWildEncounterData_0852E728: @ 0x0852E728
-	@ analyzed canonical ROM range 0x0852E728-0x08535AFB
+	.globl gRoute119FeebasWaterTileSections
+gRoute119FeebasWaterTileSections: @ 0x0852E728
+	route119_feebas_water_tile_section 0, 45, 0
+	route119_feebas_water_tile_section 46, 91, 131
+	route119_feebas_water_tile_section 92, 139, 298
+	.globl gWildEncounterData_0852E73A
+gWildEncounterData_0852E73A: @ 0x0852E73A
+	@ analyzed canonical ROM range 0x0852E73A-0x08535AFB
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x73D4
-	.2byte 0x0000, 0x002D, 0x0000, 0x002E, 0x005B, 0x0083, 0x005C, 0x008B
-	.2byte 0x012A, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	@ ANALYSIS: RAW_BLOCK size=0x73C2
+	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000

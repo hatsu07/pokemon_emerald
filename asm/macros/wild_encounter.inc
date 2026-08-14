@@ -4,6 +4,13 @@
     .2byte \species
 .endm
 
+@ Route 119 Feebas water tile scan section.
+.macro route119_feebas_water_tile_section startY:req, endY:req, initialTileCount:req
+    .2byte \startY
+    .2byte \endY
+    .2byte \initialTileCount
+.endm
+
 .macro wildmoninfo encounterRate:req, mons:req
     .byte \encounterRate
     .byte 0

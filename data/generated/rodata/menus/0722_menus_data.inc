@@ -13,9 +13,7 @@ gWildEncounterData_0852E6C0: @ 0x0852E6C0
 	.2byte 0xFFFF, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0852E724: wild_encounter.s: FishingWildEncounter
-	.globl gWildEncounterData_0852E724
-gWildEncounterData_0852E724: @ 0x0852E724
+	.globl gRoute119FeebasFishingMon
+gRoute119FeebasFishingMon: @ 0x0852E724
 	@ analyzed canonical ROM range 0x0852E724-0x0852E727
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.byte 0x14, 0x19, 0x48, 0x01
+	wildmon 20, 25, SPECIES_FEEBAS
