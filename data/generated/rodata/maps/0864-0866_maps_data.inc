@@ -2183,15 +2183,12 @@ gSleepZAffineAnims: @ 0x0856E864
 	.globl gSleepZSpriteTemplate
 gSleepZSpriteTemplate: @ 0x0856E86C
 	rodata_sprite_template 0x27F4, 0x27F4, gBattleAnimOam_AffineOff_ObjNormal_64x64, gSleepZAnims, 0, gSleepZAffineAnims, sub_08101D44
-	.globl gBattleAnimEffects1Data_0856E884
-gBattleAnimEffects1Data_0856E884: @ 0x0856E884
-	@ analyzed canonical ROM range 0x0856E884-0x0856E8B3
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x30
-	.2byte 0x271E, 0x271E, 0xD020, 0x084F
-	.2byte 0xF304, 0x082B, 0x0000, 0x0000, 0xF310, 0x082B, 0x1DFD, 0x0810
-	.2byte 0x271E, 0x271E, 0xD018, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000
-	.2byte 0xF310, 0x082B, 0x20E9, 0x0810
+	.globl gLockOnTargetSpriteTemplate
+gLockOnTargetSpriteTemplate: @ 0x0856E884
+	rodata_sprite_template 0x271E, 0x271E, gBattleAnimOam_AffineOff_ObjNormal_32x32, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08101DFC
+	.globl gLockOnRingSpriteTemplate
+gLockOnRingSpriteTemplate: @ 0x0856E89C
+	rodata_sprite_template 0x271E, 0x271E, gBattleAnimOam_AffineOff_ObjNormal_16x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_081020E8
 	@ pret/pokeemerald-jp direct xref for 0x0856E8B4: battle_anim_effects_1.s: sub_08101E24
 	.globl gBattleAnimEffects1Data_0856E8B4
 gBattleAnimEffects1Data_0856E8B4: @ 0x0856E8B4

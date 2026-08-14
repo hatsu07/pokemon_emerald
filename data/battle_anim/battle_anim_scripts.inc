@@ -1704,11 +1704,11 @@ Move_CONFUSE_RAY:
 	ba_end
 Move_LOCK_ON:
 	ba_loadspritegfx 0x271E
-	ba_createsprite 0x0856E884, ANIM_ATTACKER, 40
-	ba_createsprite 0x0856E89C, ANIM_ATTACKER, 40, 1
-	ba_createsprite 0x0856E89C, ANIM_ATTACKER, 40, 2
-	ba_createsprite 0x0856E89C, ANIM_ATTACKER, 40, 3
-	ba_createsprite 0x0856E89C, ANIM_ATTACKER, 40, 4
+	ba_createsprite gLockOnTargetSpriteTemplate, ANIM_ATTACKER, 40
+	ba_createsprite gLockOnRingSpriteTemplate, ANIM_ATTACKER, 40, 1
+	ba_createsprite gLockOnRingSpriteTemplate, ANIM_ATTACKER, 40, 2
+	ba_createsprite gLockOnRingSpriteTemplate, ANIM_ATTACKER, 40, 3
+	ba_createsprite gLockOnRingSpriteTemplate, ANIM_ATTACKER, 40, 4
 	ba_delay 120
 	ba_setarg 0x07, 0xFFFF
 	ba_waitforvisualfinish
