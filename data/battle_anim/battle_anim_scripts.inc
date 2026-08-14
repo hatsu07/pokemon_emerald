@@ -6319,16 +6319,16 @@ Move_OCTAZOOKA:
 	ba_loadspritegfx 0x272E
 	ba_loadspritegfx 0x2721
 	ba_playsewithpan 0x008D, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856E9E0, ANIM_TARGET, 2, 20, 0, 0, 0, 20, 0
+	ba_createsprite gOctazookaSmokeSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, 20, 0
 	ba_waitforvisualfinish
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
-	ba_createsprite 0x0856EA14, ANIM_TARGET, 2, 8, 8, 1, 0
+	ba_createsprite gOctazookaInkSpriteTemplate, ANIM_TARGET, 2, 8, 8, 1, 0
 	ba_delay 2
-	ba_createsprite 0x0856EA14, ANIM_TARGET, 2, -8, -8, 1, 0
+	ba_createsprite gOctazookaInkSpriteTemplate, ANIM_TARGET, 2, -8, -8, 1, 0
 	ba_delay 2
-	ba_createsprite 0x0856EA14, ANIM_TARGET, 2, 8, -8, 1, 0
+	ba_createsprite gOctazookaInkSpriteTemplate, ANIM_TARGET, 2, 8, -8, 1, 0
 	ba_delay 2
-	ba_createsprite 0x0856EA14, ANIM_TARGET, 2, -8, 8, 1, 0
+	ba_createsprite gOctazookaInkSpriteTemplate, ANIM_TARGET, 2, -8, 8, 1, 0
 	ba_waitforvisualfinish
 	ba_end
 Move_MIST:

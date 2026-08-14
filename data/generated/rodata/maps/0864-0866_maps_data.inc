@@ -2262,17 +2262,29 @@ gSharpenAnims: @ 0x0856E9C4
 	.globl gSharpenSpriteTemplate
 gSharpenSpriteTemplate: @ 0x0856E9C8
 	rodata_sprite_template 0x27C9, 0x27C9, gBattleAnimOam_AffineOff_ObjNormal_32x32, gSharpenAnims, 0, gDummySpriteAffineAnimTable, sub_081029CC
-	.globl gBattleAnimEffects1Data_0856E9E0
-gBattleAnimEffects1Data_0856E9E0: @ 0x0856E9E0
-	@ analyzed canonical ROM range 0x0856E9E0-0x0856EA9F
+	.globl gOctazookaSmokeSpriteTemplate
+gOctazookaSmokeSpriteTemplate: @ 0x0856E9E0
+	rodata_sprite_template 0x2721, 0x2721, gBattleAnimOam_AffineOff_ObjNormal_8x8, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, TranslateAnimSpriteToTargetMonLocation
+	.globl gOctazookaInkAnim
+gOctazookaInkAnim: @ 0x0856E9F8
+	rodata_anim_frame 0, 3
+	rodata_anim_frame 16, 3
+	rodata_anim_frame 32, 3
+	rodata_anim_frame 48, 3
+	rodata_anim_frame 64, 3
+	rodata_anim_end
+	.globl gOctazookaInkAnims
+gOctazookaInkAnims: @ 0x0856EA10
+	semantic_anim_table_entry gOctazookaInkAnim
+	.globl gOctazookaInkSpriteTemplate
+gOctazookaInkSpriteTemplate: @ 0x0856EA14
+	rodata_sprite_template 0x272E, 0x272E, gBattleAnimOam_AffineOff_ObjNormal_32x32, gOctazookaInkAnims, 0, gDummySpriteAffineAnimTable, sub_080A7090
+	.globl gBattleAnimEffects1Data_0856EA2C
+gBattleAnimEffects1Data_0856EA2C: @ 0x0856EA2C
+	@ analyzed canonical ROM range 0x0856EA2C-0x0856EA9F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC0
-	.2byte 0x2721, 0x2721
-	.2byte 0xD010, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000, 0xF310, 0x082B
-	.2byte 0x70E9, 0x080A, 0x0000, 0x0003, 0x0010, 0x0003, 0x0020, 0x0003
-	.2byte 0x0030, 0x0003, 0x0040, 0x0003, 0xFFFF, 0x0000, 0xE9F8, 0x0856
-	.2byte 0x272E, 0x272E, 0xD020, 0x084F, 0xEA10, 0x0856, 0x0000, 0x0000
-	.2byte 0xF310, 0x082B, 0x7091, 0x080A, 0x0003, 0x0005, 0x0002, 0x0005
+	@ ANALYSIS: RAW_BLOCK size=0x74
+	.2byte 0x0003, 0x0005, 0x0002, 0x0005
 	.2byte 0x0001, 0x0005, 0x0000, 0x0005, 0xFFFF, 0x0000, 0xEA2C, 0x0856
 	.2byte 0x0200, 0x0200, 0x0000, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
 	.2byte 0xEA44, 0x0856, 0x2722, 0x2722, 0xD1F0, 0x084F, 0xEA40, 0x0856
