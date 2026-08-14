@@ -1511,8 +1511,8 @@ gSolarbeamSmallOrbAffineAnim: @ 0x0856DE0C
 	.globl gSolarbeamSmallOrbAffineAnims
 gSolarbeamSmallOrbAffineAnims: @ 0x0856DE24
 	semantic_affine_anim_table_entry gSolarbeamSmallOrbAffineAnim
-	.globl gAbsorptionOrbSpriteTemplate
-gAbsorptionOrbSpriteTemplate: @ 0x0856DE28
+	.globl gPowerAbsorptionOrbSpriteTemplate_Tag27FB
+gPowerAbsorptionOrbSpriteTemplate_Tag27FB: @ 0x0856DE28
 	rodata_sprite_template 0x27FB, 0x27FB, gBattleAnimOam_AffineDouble_ObjNormal_8x8, gDummySpriteAnimTable, 0, gSolarbeamSmallOrbAffineAnims, AnimPowerAbsorptionOrb
 	.globl gPowerAbsorptionOrbAffineAnim_Loop
 gPowerAbsorptionOrbAffineAnim_Loop: @ 0x0856DE40
@@ -1521,14 +1521,19 @@ gPowerAbsorptionOrbAffineAnim_Loop: @ 0x0856DE40
 	.globl gPowerAbsorptionOrbAffineAnims_Loop
 gPowerAbsorptionOrbAffineAnims_Loop: @ 0x0856DE50
 	semantic_affine_anim_table_entry gPowerAbsorptionOrbAffineAnim_Loop
-	.globl gBattleAnimEffects1Data_0856DE54
-gBattleAnimEffects1Data_0856DE54: @ 0x0856DE54
-	@ analyzed canonical ROM range 0x0856DE54-0x0856E2E3
+	.globl gAbsorptionOrbSpriteTemplate
+gAbsorptionOrbSpriteTemplate: @ 0x0856DE54
+	@ analyzed canonical ROM range 0x0856DE54-0x0856DE6B
+	rodata_sprite_template 0x27A3, 0x27A3, gBattleAnimOam_AffineOn_ObjBlend_8x8, gPowerAbsorptionOrbAnims, 0, gPowerAbsorptionOrbAffineAnims_Loop, AnimAbsorptionOrb
+	.globl gHyperBeamOrbSpriteTemplate
+gHyperBeamOrbSpriteTemplate: @ 0x0856DE6C
+	@ analyzed canonical ROM range 0x0856DE6C-0x0856DE83
+	rodata_sprite_template 0x27A3, 0x27A3, gBattleAnimOam_AffineOff_ObjNormal_8x8, gSolarbeamBigOrbAnims, 0, gDummySpriteAffineAnimTable, AnimHyperBeamOrb
+	.globl gBattleAnimEffects1Data_0856DE84
+gBattleAnimEffects1Data_0856DE84: @ 0x0856DE84
+	@ analyzed canonical ROM range 0x0856DE84-0x0856E2E3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x490
-	.2byte 0x27A3, 0x27A3, 0xD198, 0x084F, 0xDDAC, 0x0856, 0x0000, 0x0000
-	.2byte 0xDE50, 0x0856, 0xF329, 0x080F, 0x27A3, 0x27A3, 0xD010, 0x084F
-	.2byte 0xDD8C, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B, 0xF395, 0x080F
+	@ ANALYSIS: RAW_BLOCK size=0x460
 	.2byte 0x0000, 0x0001, 0xFFFF, 0x0000, 0x0004, 0x0007, 0x0008, 0x0007
 	.2byte 0xFFFE, 0x0000, 0xDE84, 0x0856, 0xDE8C, 0x0856, 0x2716, 0x2716
 	.2byte 0xD018, 0x084F, 0xDE98, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B
