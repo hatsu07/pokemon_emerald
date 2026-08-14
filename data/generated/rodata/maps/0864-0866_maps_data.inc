@@ -1407,6 +1407,7 @@ gItemUseYesNoCallbacks: @ 0x0856DCCC
 	.4byte sub_080FE88C
 	.4byte BagMenu_InitListsMenu
 	.set gBattleAnimOam_AffineOff_ObjNormal_8x8, 0x084FD010
+	.set gBattleAnimOam_AffineOff_ObjNormal_16x16, 0x084FD018
 	.set gBattleAnimOam_AffineOff_ObjNormal_8x16, 0x084FD050
 	.set gBattleAnimOam_AffineDouble_ObjNormal_8x8, 0x084FD0D0
 	.set gBattleAnimOam_AffineOn_ObjBlend_8x8, 0x084FD198
@@ -1529,21 +1530,59 @@ gAbsorptionOrbSpriteTemplate: @ 0x0856DE54
 gHyperBeamOrbSpriteTemplate: @ 0x0856DE6C
 	@ analyzed canonical ROM range 0x0856DE6C-0x0856DE83
 	rodata_sprite_template 0x27A3, 0x27A3, gBattleAnimOam_AffineOff_ObjNormal_8x8, gSolarbeamBigOrbAnims, 0, gDummySpriteAffineAnimTable, AnimHyperBeamOrb
-	.globl gBattleAnimEffects1Data_0856DE84
-gBattleAnimEffects1Data_0856DE84: @ 0x0856DE84
-	@ analyzed canonical ROM range 0x0856DE84-0x0856E2E3
+	.globl gLeechSeedAnim_Idle
+gLeechSeedAnim_Idle: @ 0x0856DE84
+	@ analyzed canonical ROM range 0x0856DE84-0x0856DF17
+	rodata_anim_frame 0, 1
+	rodata_anim_end
+	.globl gLeechSeedAnim_Sprouting
+gLeechSeedAnim_Sprouting: @ 0x0856DE8C
+	rodata_anim_frame 4, 7
+	rodata_anim_frame 8, 7
+	rodata_anim_jump 0
+	.globl gLeechSeedAnims
+gLeechSeedAnims: @ 0x0856DE98
+	semantic_anim_table_entry gLeechSeedAnim_Idle
+	semantic_anim_table_entry gLeechSeedAnim_Sprouting
+	.globl gLeechSeedSpriteTemplate
+gLeechSeedSpriteTemplate: @ 0x0856DEA0
+	rodata_sprite_template 0x2716, 0x2716, gBattleAnimOam_AffineOff_ObjNormal_16x16, gLeechSeedAnims, 0, gDummySpriteAffineAnimTable, AnimLeechSeed
+	.globl gSporeParticleAnim_Idle
+gSporeParticleAnim_Idle: @ 0x0856DEB8
+	rodata_anim_frame 0, 1
+	rodata_anim_end
+	.globl gSporeParticleAnim_Sprout
+gSporeParticleAnim_Sprout: @ 0x0856DEC0
+	rodata_anim_frame 4, 7
+	rodata_anim_end
+	.globl gSporeParticleAnims
+gSporeParticleAnims: @ 0x0856DEC8
+	semantic_anim_table_entry gSporeParticleAnim_Idle
+	semantic_anim_table_entry gSporeParticleAnim_Sprout
+	.globl gSporeParticleSpriteTemplate
+gSporeParticleSpriteTemplate: @ 0x0856DED0
+	rodata_sprite_template 0x27AE, 0x27AE, gBattleAnimOam_AffineOff_ObjNormal_16x16, gSporeParticleAnims, 0, gDummySpriteAffineAnimTable, AnimSporeParticle
+	.globl gPetalDanceBigFlowerAnim_Idle
+gPetalDanceBigFlowerAnim_Idle: @ 0x0856DEE8
+	rodata_anim_frame 0, 1
+	rodata_anim_end
+	.globl gPetalDanceBigFlowerAnim_Bloom
+gPetalDanceBigFlowerAnim_Bloom: @ 0x0856DEF0
+	rodata_anim_frame 4, 1
+	rodata_anim_end
+	.globl gPetalDanceBigFlowerAnims
+gPetalDanceBigFlowerAnims: @ 0x0856DEF8
+	semantic_anim_table_entry gPetalDanceBigFlowerAnim_Idle
+	semantic_anim_table_entry gPetalDanceBigFlowerAnim_Bloom
+	.globl gPetalDanceBigFlowerSpriteTemplate
+gPetalDanceBigFlowerSpriteTemplate: @ 0x0856DF00
+	rodata_sprite_template 0x27AF, 0x27AF, gBattleAnimOam_AffineOff_ObjNormal_16x16, gPetalDanceBigFlowerAnims, 0, gDummySpriteAffineAnimTable, AnimPetalDanceBigFlower
+	.globl gBattleAnimEffects1Data_0856DF18
+gBattleAnimEffects1Data_0856DF18: @ 0x0856DF18
+	@ analyzed canonical ROM range 0x0856DF18-0x0856E2E3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x460
-	.2byte 0x0000, 0x0001, 0xFFFF, 0x0000, 0x0004, 0x0007, 0x0008, 0x0007
-	.2byte 0xFFFE, 0x0000, 0xDE84, 0x0856, 0xDE8C, 0x0856, 0x2716, 0x2716
-	.2byte 0xD018, 0x084F, 0xDE98, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B
-	.2byte 0xF499, 0x080F, 0x0000, 0x0001, 0xFFFF, 0x0000, 0x0004, 0x0007
-	.2byte 0xFFFF, 0x0000, 0xDEB8, 0x0856, 0xDEC0, 0x0856, 0x27AE, 0x27AE
-	.2byte 0xD018, 0x084F, 0xDEC8, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B
-	.2byte 0xF579, 0x080F, 0x0000, 0x0001, 0xFFFF, 0x0000, 0x0004, 0x0001
-	.2byte 0xFFFF, 0x0000, 0xDEE8, 0x0856, 0xDEF0, 0x0856, 0x27AF, 0x27AF
-	.2byte 0xD018, 0x084F, 0xDEF8, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B
-	.2byte 0xF6C9, 0x080F, 0x27AF, 0x27AF, 0xD010, 0x084F, 0xDEFC, 0x0856
+	@ ANALYSIS: RAW_BLOCK size=0x3CC
+	.2byte 0x27AF, 0x27AF, 0xD010, 0x084F, 0xDEFC, 0x0856
 	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0xF795, 0x080F, 0x0000, 0x0005
 	.2byte 0x0004, 0x0005, 0x0008, 0x0005, 0x000C, 0x0005, 0x0010, 0x0005
 	.2byte 0x0014, 0x0005, 0x0010, 0x0005, 0x000C, 0x0005, 0x0008, 0x0005
