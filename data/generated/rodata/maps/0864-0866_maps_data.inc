@@ -1420,7 +1420,9 @@ gItemUseYesNoCallbacks: @ 0x0856DCCC
 	.set gBattleAnimOam_084FD148, 0x084FD148
 	.set gBattleAnimOam_084FD1A0, 0x084FD1A0
 	.set gBattleAnimOam_084FD1A8, 0x084FD1A8
+	.set gBattleAnimOam_084FD1E8, 0x084FD1E8
 	.set gBattleAnimOam_084FD1F0, 0x084FD1F0
+	.set gBattleAnimOam_084FD220, 0x084FD220
 	.set gBattleAnimOam_AffineDouble_ObjNormal_8x8, 0x084FD0D0
 	.set gBattleAnimOam_AffineDouble_ObjNormal_16x16, 0x084FD0D8
 	.set gBattleAnimOam_AffineOn_ObjBlend_8x8, 0x084FD198
@@ -2614,19 +2616,38 @@ gBattleAnimEffects3SpriteTemplate_Tag2717: @ 0x0856EEE8
 	rodata_sprite_template 0x2717, 0x2717, gBattleAnimOam_AffineOff_ObjNormal_64x64, gBattleAnimEffects3Anims_0856EEC8, 0, gBattleAnimEffects3AffineAnims_0856EEE4, sub_080A7090
 	.globl gBattleAnimEffects3Data_0856EF00
 gBattleAnimEffects3Data_0856EF00: @ 0x0856EF00
-	@ analyzed canonical ROM range 0x0856EF00-0x0856EF93
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x94
-	.2byte 0x0000, 0x0043, 0x0008, 0x0043
-	.2byte 0x0010, 0x0043, 0x0018, 0x0043, 0x0020, 0x0043, 0x0028, 0x0043
-	.2byte 0x0030, 0x0043, 0xFFFD, 0x0001, 0xFFFF, 0x0000, 0xEF00, 0x0856
-	.2byte 0x275B, 0x275B, 0xD040, 0x084F, 0xEF24, 0x0856, 0x0000, 0x0000
-	.2byte 0xF310, 0x082B, 0x4029, 0x0810, 0x0010, 0x0100, 0x0000, 0x0000
-	.2byte 0x0014, 0x0000, 0x0C00, 0x0000, 0x0000, 0x0000, 0x2000, 0x0000
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000, 0xEF40, 0x0856, 0x2715, 0x2715
-	.2byte 0xD1E8, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000, 0xEF60, 0x0856
-	.2byte 0x40CD, 0x0810, 0x2713, 0x2713, 0xD220, 0x084F, 0xF304, 0x082B
-	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x4119, 0x0810
+	.globl gKinesisZapEnergyAnim
+gKinesisZapEnergyAnim: @ 0x0856EF00
+	rodata_anim_frame 0, 3, 1
+	rodata_anim_frame 8, 3, 1
+	rodata_anim_frame 16, 3, 1
+	rodata_anim_frame 24, 3, 1
+	rodata_anim_frame 32, 3, 1
+	rodata_anim_frame 40, 3, 1
+	rodata_anim_frame 48, 3, 1
+	.2byte 0xFFFD, 1
+	rodata_anim_end
+	.globl gKinesisZapEnergyAnims
+gKinesisZapEnergyAnims: @ 0x0856EF24
+	semantic_anim_table_entry gKinesisZapEnergyAnim
+	.globl gKinesisZapEnergySpriteTemplate
+gKinesisZapEnergySpriteTemplate: @ 0x0856EF28
+	rodata_sprite_template 0x275B, 0x275B, gBattleAnimOam_AffineOff_ObjNormal_32x16, gKinesisZapEnergyAnims, 0, gDummySpriteAffineAnimTable, Anim_KinesisZapEnergy
+	.globl gSwordsDanceBladeAffineAnim
+gSwordsDanceBladeAffineAnim: @ 0x0856EF40
+	semantic_affine_animcmd_frame 0x10, 0x100, 0, 0
+	semantic_affine_animcmd_frame 0x14, 0, 0, 0x0C
+	semantic_affine_animcmd_frame 0, 0, 0, 0x20
+	rodata_affine_anim_end
+	.globl gSwordsDanceBladeAffineAnims
+gSwordsDanceBladeAffineAnims: @ 0x0856EF60
+	semantic_affine_anim_table_entry gSwordsDanceBladeAffineAnim
+	.globl gSwordsDanceBladeSpriteTemplate
+gSwordsDanceBladeSpriteTemplate: @ 0x0856EF64
+	rodata_sprite_template 0x2715, 0x2715, gBattleAnimOam_084FD1E8, gDummySpriteAnimTable, 0, gSwordsDanceBladeAffineAnims, Anim_SwordsDanceBlade
+	.globl gSonicBoomProjectileSpriteTemplate
+gSonicBoomProjectileSpriteTemplate: @ 0x0856EF7C
+	rodata_sprite_template 0x2713, 0x2713, gBattleAnimOam_084FD220, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, AnimSonicBoomProjectile
 	@ pret/pokeemerald-jp direct xref for 0x0856EF94: battle_anim_effects_2.s: sub_0810445C
 	.globl gBattleAnimEffects2Data_0856EF94
 gBattleAnimEffects2Data_0856EF94: @ 0x0856EF94

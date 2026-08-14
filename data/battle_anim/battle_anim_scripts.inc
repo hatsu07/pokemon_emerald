@@ -715,7 +715,7 @@ Move_SONIC_BOOM:
 	ba_end
 BattleAnimScript_082788FE: @ 0x082788FE
 	ba_playsewithpan 0x00A0, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856EF7C, ANIM_TARGET, 2, 16, 0, 0, 0, 15
+	ba_createsprite gSonicBoomProjectileSpriteTemplate, ANIM_TARGET, 2, 16, 0, 0, 0, 15
 	ba_delay 4
 	ba_return
 BattleAnimScript_08278916: @ 0x08278916
@@ -987,7 +987,7 @@ Move_SWORDS_DANCE:
 	ba_setalpha 12, 8
 	ba_playsewithpan 0x00BF, SOUND_PAN_ATTACKER
 	ba_createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, 0, 16, 6, 1, 4
-	ba_createsprite 0x0856EF64, ANIM_ATTACKER, 2, 0, 0
+	ba_createsprite gSwordsDanceBladeSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
 	ba_delay 22
 	ba_createvisualtask sub_081165E4, 2, 0x2715, 2, 2, 0x7FF2, 16, 0, 0
 	ba_waitforvisualfinish
@@ -2472,8 +2472,8 @@ Move_KINESIS:
 	ba_playsewithpan 0x00BD, SOUND_PAN_ATTACKER
 	ba_call BattleAnimScript_08286258
 	ba_createsprite 0x085722C0, ANIM_ATTACKER, 20
-	ba_createsprite 0x0856EF28, ANIM_ATTACKER, 19, 32, -8, 0
-	ba_createsprite 0x0856EF28, ANIM_ATTACKER, 19, 32, 16, 1
+	ba_createsprite gKinesisZapEnergySpriteTemplate, ANIM_ATTACKER, 19, 32, -8, 0
+	ba_createsprite gKinesisZapEnergySpriteTemplate, ANIM_ATTACKER, 19, 32, 16, 1
 	ba_loopsewithpan 0x00C4, SOUND_PAN_ATTACKER, 21, 2
 	ba_delay 60
 	ba_playsewithpan 0x00B0, SOUND_PAN_ATTACKER
