@@ -1396,11 +1396,9 @@ gMapPointerTable_Rom_56DCBC: @ 0x0856DCBC
 	.4byte CB2_ReturnToField
 	.4byte NULL
 	@ pret/pokeemerald-jp direct xref for 0x0856DCC8: item_use.s: sub_080FDD58, sub_080FE330
-	.globl gItemUseData_0856DCC8
-gItemUseData_0856DCC8: @ 0x0856DCC8
+	.globl gItemUseFacingDirectionOrder
+gItemUseFacingDirectionOrder: @ 0x0856DCC8
 	@ analyzed canonical ROM range 0x0856DCC8-0x0856DCCB
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x02, 0x04, 0x01, 0x03
 	@ pret/pokeemerald-jp direct xref for 0x0856DCCC: item_use.s: sub_080FE874
 	.globl gItemUseData_0856DCCC
