@@ -1050,6 +1050,46 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END BATTLE TRANSITION RAW 4BPP PIPELINE
 
+
+    # BEGIN ROTATING GATE RAW 4BPP PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rotating_gates/(.+)[.]4bpp$")
+        set(ROTATING_GATE_RAW_4BPP_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/rotating_gates/${ROTATING_GATE_RAW_4BPP_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+    # END ROTATING GATE RAW 4BPP PIPELINE
+
+
+    # BEGIN WEATHER RAW 4BPP PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/weather/(.+)[.]4bpp$")
+        set(WEATHER_RAW_4BPP_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/weather/${WEATHER_RAW_4BPP_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+    # END WEATHER RAW 4BPP PIPELINE
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/analyzed/(.+)\\.4bpp$")
         set(STEM "${CMAKE_MATCH_1}")

@@ -263,7 +263,7 @@ _080ABEAE:
 _080ABF08: .4byte gMenuU8Table_Rom_526DE8
 _080ABF0C: .4byte 0x000006DE
 _080ABF10: .4byte gFieldWeatherEffectData_0852A7F8
-_080ABF14: .4byte gFieldWeatherEffectData_08526F2C
+_080ABF14: .4byte gCloudsWeatherPalette
 _080ABF18: .4byte gFieldWeatherEffectData_0852A814
 _080ABF1C: .4byte 0x020205AC
 _080ABF20: .4byte gFieldWeatherEffectData_0852A7EC
@@ -4612,7 +4612,7 @@ _080AE054:
 _080AE0A4: .4byte gMenuU8Table_Rom_526DE8
 _080AE0A8: .4byte 0x00000716
 _080AE0AC: .4byte gFieldWeatherEffectData_0852AA78
-_080AE0B0: .4byte gFieldWeatherEffectData_08526F4C
+_080AE0B0: .4byte gSandstormWeatherPalette
 _080AE0B4: .4byte gFieldWeatherEffectData_0852AA60
 _080AE0B8: .4byte 0x020205AC
 _080AE0BC:

@@ -1354,9 +1354,9 @@ _0810C932:
 _0810C994: .4byte 0x00003F42
 _0810C998: .4byte 0x02022ACC
 _0810C99C: .4byte 0x02022ACE
-_0810C9A0: .4byte gMistTiles
+_0810C9A0: .4byte gWeatherFogHorizontalTiles
 _0810C9A4: .4byte gIceData_08D93294
-_0810C9A8: .4byte gMenuU8Table_Rom_526F0C
+_0810C9A8: .4byte gFogPalette
 _0810C9AC: .4byte 0x03005B60
 _0810C9B0: .4byte 0x0810C9B5
 	thumb_func_end AnimTask_Haze1
@@ -1655,9 +1655,9 @@ _0810CBB6:
 _0810CC1C: .4byte 0x00003F42
 _0810CC20: .4byte 0x02022ACC
 _0810CC24: .4byte 0x02022ACE
-_0810CC28: .4byte gMistTiles
+_0810CC28: .4byte gWeatherFogHorizontalTiles
 _0810CC2C: .4byte gIceData_08D93294
-_0810CC30: .4byte gMenuU8Table_Rom_526F0C
+_0810CC30: .4byte gFogPalette
 _0810CC34: .4byte 0x03005B60
 _0810CC38: .4byte 0x0000FFFF
 _0810CC3C: .4byte 0x0810CC41
