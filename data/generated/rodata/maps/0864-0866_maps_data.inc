@@ -2201,19 +2201,36 @@ gPhysicalStrikeMovementSpriteTemplate: @ 0x0856E8BC
 	.globl gBattleAnimEffects1SpriteTemplate_0856E8D4
 gBattleAnimEffects1SpriteTemplate_0856E8D4: @ 0x0856E8D4
 	rodata_sprite_template 0, 0, gDummyOamData, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_081023E0
-	.globl gBattleAnimEffects1Data_0856E8EC
-gBattleAnimEffects1Data_0856E8EC: @ 0x0856E8EC
-	@ analyzed canonical ROM range 0x0856E8EC-0x0856EA9F
+	.globl gSlashAnim_Sweep
+gSlashAnim_Sweep: @ 0x0856E8EC
+	rodata_anim_frame 0, 4
+	rodata_anim_frame 16, 4
+	rodata_anim_frame 32, 4
+	rodata_anim_frame 48, 4
+	rodata_anim_end
+	.globl gSlashAnim_LastFrame
+gSlashAnim_LastFrame: @ 0x0856E900
+	rodata_anim_frame 48, 4
+	rodata_anim_end
+	.globl gSlashAnims
+gSlashAnims: @ 0x0856E908
+	semantic_anim_table_entry gSlashAnim_Sweep
+	semantic_anim_table_entry gSlashAnim_LastFrame
+	.globl gSlashSpriteTemplate
+gSlashSpriteTemplate: @ 0x0856E910
+	rodata_sprite_template 0x27C7, 0x27C7, gBattleAnimOam_AffineOff_ObjNormal_32x32, gSlashAnims, 0, gDummySpriteAffineAnimTable, sub_08102790
+	.globl gFalseSwipeSlashSpriteTemplate
+gFalseSwipeSlashSpriteTemplate: @ 0x0856E928
+	rodata_sprite_template 0x282E, 0x282E, gBattleAnimOam_AffineOff_ObjNormal_32x32, gSlashAnims, 0, gDummySpriteAffineAnimTable, sub_081027F8
+	.globl gFalseSwipeSliceSpriteTemplate
+gFalseSwipeSliceSpriteTemplate: @ 0x0856E940
+	rodata_sprite_template 0x282E, 0x282E, gBattleAnimOam_AffineOff_ObjNormal_32x32, gSlashAnims, 0, gDummySpriteAffineAnimTable, sub_08102840
+	.globl gBattleAnimEffects1Data_0856E958
+gBattleAnimEffects1Data_0856E958: @ 0x0856E958
+	@ analyzed canonical ROM range 0x0856E958-0x0856EA9F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x1B4
-	.2byte 0x0000, 0x0004, 0x0010, 0x0004
-	.2byte 0x0020, 0x0004, 0x0030, 0x0004, 0xFFFF, 0x0000, 0x0030, 0x0004
-	.2byte 0xFFFF, 0x0000, 0xE8EC, 0x0856, 0xE900, 0x0856, 0x27C7, 0x27C7
-	.2byte 0xD020, 0x084F, 0xE908, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B
-	.2byte 0x2791, 0x0810, 0x282E, 0x282E, 0xD020, 0x084F, 0xE908, 0x0856
-	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x27F9, 0x0810, 0x282E, 0x282E
-	.2byte 0xD020, 0x084F, 0xE908, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B
-	.2byte 0x2841, 0x0810, 0x0000, 0x0004, 0x0008, 0x000C, 0x0010, 0x0004
+	@ ANALYSIS: RAW_BLOCK size=0x148
+	.2byte 0x0000, 0x0004, 0x0008, 0x000C, 0x0010, 0x0004
 	.2byte 0x0018, 0x0004, 0xFFFF, 0x0000, 0xE958, 0x0856, 0x27C8, 0x27C8
 	.2byte 0xD060, 0x084F, 0xE96C, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B
 	.2byte 0x2929, 0x0810, 0x0000, 0x0012, 0x0000, 0x0006, 0x0010, 0x0012

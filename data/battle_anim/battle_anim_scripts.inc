@@ -2623,10 +2623,10 @@ Move_SUPER_FANG:
 	ba_end
 Move_SLASH:
 	ba_loadspritegfx 0x27C7
-	ba_createsprite 0x0856E910, ANIM_TARGET, 2, 1, -8, 0
+	ba_createsprite gSlashSpriteTemplate, ANIM_TARGET, 2, 1, -8, 0
 	ba_playsewithpan 0x0088, SOUND_PAN_TARGET
 	ba_delay 4
-	ba_createsprite 0x0856E910, ANIM_TARGET, 2, 1, 8, 0
+	ba_createsprite gSlashSpriteTemplate, ANIM_TARGET, 2, 1, 8, 0
 	ba_createvisualtask AnimTask_ShakeMon2, 2, 1, 4, 0, 18, 1
 	ba_playsewithpan 0x0088, SOUND_PAN_TARGET
 	ba_waitforvisualfinish
@@ -2829,23 +2829,23 @@ Move_ROLLOUT:
 Move_FALSE_SWIPE:
 	ba_loadspritegfx 0x282E
 	ba_loadspritegfx 0x2797
-	ba_createsprite 0x0856E928, ANIM_TARGET, 2
+	ba_createsprite gFalseSwipeSlashSpriteTemplate, ANIM_TARGET, 2
 	ba_playsewithpan 0x007A, SOUND_PAN_TARGET
 	ba_delay 16
-	ba_createsprite 0x0856E940, ANIM_TARGET, 2, 0
+	ba_createsprite gFalseSwipeSliceSpriteTemplate, ANIM_TARGET, 2, 0
 	ba_playsewithpan 0x0087, SOUND_PAN_TARGET
 	ba_delay 2
-	ba_createsprite 0x0856E940, ANIM_TARGET, 2, 16
+	ba_createsprite gFalseSwipeSliceSpriteTemplate, ANIM_TARGET, 2, 16
 	ba_delay 2
-	ba_createsprite 0x0856E940, ANIM_TARGET, 2, 32
+	ba_createsprite gFalseSwipeSliceSpriteTemplate, ANIM_TARGET, 2, 32
 	ba_playsewithpan 0x0087, SOUND_PAN_TARGET
 	ba_delay 2
-	ba_createsprite 0x0856E940, ANIM_TARGET, 2, 48
+	ba_createsprite gFalseSwipeSliceSpriteTemplate, ANIM_TARGET, 2, 48
 	ba_delay 2
-	ba_createsprite 0x0856E940, ANIM_TARGET, 2, 64
+	ba_createsprite gFalseSwipeSliceSpriteTemplate, ANIM_TARGET, 2, 64
 	ba_playsewithpan 0x0087, SOUND_PAN_TARGET
 	ba_delay 2
-	ba_createsprite 0x0856E940, ANIM_TARGET, 2, 80
+	ba_createsprite gFalseSwipeSliceSpriteTemplate, ANIM_TARGET, 2, 80
 	ba_delay 2
 	ba_waitforvisualfinish
 	ba_createvisualtask AnimTask_ShakeMon, 2, 1, 5, 0, 6, 1
