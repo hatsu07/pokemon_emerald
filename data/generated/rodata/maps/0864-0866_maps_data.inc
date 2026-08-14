@@ -1333,32 +1333,24 @@ gRotatingGateData_0856DBC4: @ 0x0856DBC4
 sSpriteTemplate_0856DBC4: @ 0x0856DBC4
 	rodata_sprite_template 0x1300, 0xFFFF, gRotatingGateOam_32x32, gRotatingGateSpriteAnimTable_Affine, 0, gRotatingGateAffineAnimTable, SpriteCallback_RotatingGate
 	@ pret/pokeemerald-jp direct xref for 0x0856DBDC: rotating_gate.s: RotatingGate_GetRotationInfo
-	.globl gRotatingGateData_0856DBDC
-gRotatingGateData_0856DBDC: @ 0x0856DBDC
+	.globl gRotatingGateRotationInfo_GateType2
+gRotatingGateRotationInfo_GateType2: @ 0x0856DBDC
 	@ analyzed canonical ROM range 0x0856DBDC-0x0856DBEB
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.2byte 0xFFFF, 0xFFFF, 0x2627, 0x1312, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF
+	.byte 0xFF, 0xFF, 0xFF, 0xFF, 0x27, 0x26, 0x12, 0x13, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x0856DBEC: rotating_gate.s: RotatingGate_GetRotationInfo
-	.globl gRotatingGateData_0856DBEC
-gRotatingGateData_0856DBEC: @ 0x0856DBEC
+	.globl gRotatingGateRotationInfo_GateType1
+gRotatingGateRotationInfo_GateType1: @ 0x0856DBEC
 	@ analyzed canonical ROM range 0x0856DBEC-0x0856DBFB
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.2byte 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0x1617, 0x2322, 0xFFFF, 0xFFFF
+	.byte 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x17, 0x16, 0x22, 0x23, 0xFF, 0xFF, 0xFF, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x0856DBFC: rotating_gate.s: RotatingGate_GetRotationInfo
-	.globl gRotatingGateData_0856DBFC
-gRotatingGateData_0856DBFC: @ 0x0856DBFC
+	.globl gRotatingGateRotationInfo_GateType3
+gRotatingGateRotationInfo_GateType3: @ 0x0856DBFC
 	@ analyzed canonical ROM range 0x0856DBFC-0x0856DC0B
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.2byte 0x11FF, 0xFFFF, 0x10FF, 0xFFFF, 0x24FF, 0xFFFF, 0x25FF, 0xFFFF
+	.byte 0xFF, 0x11, 0xFF, 0xFF, 0xFF, 0x10, 0xFF, 0xFF, 0xFF, 0x24, 0xFF, 0xFF, 0xFF, 0x25, 0xFF, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x0856DC0C: rotating_gate.s: RotatingGate_GetRotationInfo
-	.globl gRotatingGateData_0856DC0C
-gRotatingGateData_0856DC0C: @ 0x0856DC0C
+	.globl gRotatingGateRotationInfo_GateType4
+gRotatingGateRotationInfo_GateType4: @ 0x0856DC0C
 	@ analyzed canonical ROM range 0x0856DC0C-0x0856DC1B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x10
 	.byte 0xFF, 0xFF, 0x21, 0xFF, 0xFF, 0xFF, 0x20, 0xFF, 0xFF, 0xFF, 0x14, 0xFF, 0xFF, 0xFF, 0x15, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x0856DC1C: rotating_gate.s: RotatingGate_CanRotate
 	.globl gRotatingGateData_0856DC1C
