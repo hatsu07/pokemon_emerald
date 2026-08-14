@@ -331,10 +331,10 @@ gTrickHousePuzzle6RotatingGatePuzzleGates: @ 0x0856A4D4
 	rotating_gate_puzzle_gate 12, 18, 6, 3
 	rotating_gate_puzzle_gate 5, 18, 3, 1
 	rotating_gate_puzzle_gate 10, 19, 2, 2
-	.globl gRotatingGateData_0856A52C
-gRotatingGateData_0856A52C: @ 0x0856A52C
+	.globl gRotatingGateTiles
+gRotatingGateTiles: @ 0x0856A52C
 	@ analyzed canonical ROM range 0x0856A52C-0x0856D92B
-	@ structured u16 table (semantic role inferred only to scalar width)
+	@ rotating gate tile graphics loaded by gRotatingGateSpriteSheets
 	@ ANALYSIS: RAW_BLOCK size=0x3400
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
@@ -1179,14 +1179,14 @@ gRotatingGateOam_32x32: @ 0x0856D934
 	.globl gRotatingGateSpriteSheets
 gRotatingGateSpriteSheets: @ 0x0856D93C
 	@ analyzed canonical ROM range 0x0856D93C-0x0856D983
-	rodata_sprite_sheet 0x0856A52C, 0x0200, 0x1300
-	rodata_sprite_sheet 0x0856A72C, 0x0800, 0x1301
-	rodata_sprite_sheet 0x0856AF2C, 0x0800, 0x1302
-	rodata_sprite_sheet 0x0856B72C, 0x0800, 0x1303
-	rodata_sprite_sheet 0x0856BF2C, 0x0200, 0x1304
-	rodata_sprite_sheet 0x0856C12C, 0x0800, 0x1305
-	rodata_sprite_sheet 0x0856C92C, 0x0800, 0x1306
-	rodata_sprite_sheet 0x0856D12C, 0x0800, 0x1307
+	rodata_sprite_sheet gRotatingGateTiles, 0x0200, 0x1300
+	rodata_sprite_sheet gRotatingGateTiles + 0x0200, 0x0800, 0x1301
+	rodata_sprite_sheet gRotatingGateTiles + 0x0A00, 0x0800, 0x1302
+	rodata_sprite_sheet gRotatingGateTiles + 0x1200, 0x0800, 0x1303
+	rodata_sprite_sheet gRotatingGateTiles + 0x1A00, 0x0200, 0x1304
+	rodata_sprite_sheet gRotatingGateTiles + 0x1C00, 0x0800, 0x1305
+	rodata_sprite_sheet gRotatingGateTiles + 0x2400, 0x0800, 0x1306
+	rodata_sprite_sheet gRotatingGateTiles + 0x2C00, 0x0800, 0x1307
 	rodata_sprite_sheet 0, 0, 0
 	.globl gRotatingGateSpriteAnim_Normal
 gRotatingGateSpriteAnim_Normal: @ 0x0856D984
