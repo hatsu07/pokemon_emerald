@@ -291,6 +291,22 @@ def cmd_repack_png(args: argparse.Namespace) -> None:
         entry = entries[args.stem]
 
     raw = indexed_png_to_4bpp(input_path)
+    if getattr(args, "raw_size", None) is not None:
+        raw_size = int(args.raw_size)
+        if raw_size <= 0:
+            raise ValueError("--raw-size must be positive")
+        if len(raw) < raw_size:
+            raise ValueError(
+                f"PNG raw data is too short for --raw-size: "
+                f"need 0x{raw_size:X}, got 0x{len(raw):X}"
+            )
+        unused = raw[raw_size:]
+        if any(unused):
+            raise ValueError(
+                "PNG tiles beyond --raw-size are not all zero; "
+                "refusing to silently discard editable data"
+            )
+        raw = raw[:raw_size]
 
     if isinstance(entry, dict) and "pic" in entry and "palette" in entry:
         encoded = bytearray(repack_raw_with_plan(raw, entry["pic"]))
@@ -304,15 +320,66 @@ def cmd_repack_png(args: argparse.Namespace) -> None:
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_bytes(encoded)
 
+def u16_text_to_raw(path: Path) -> bytes:
+    import re
+
+    values: list[int] = []
+    for lineno, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+        line = line.split("#", 1)[0]
+        for token in re.findall(r"0x[0-9A-Fa-f]{1,4}", line):
+            value = int(token, 16)
+            if not (0 <= value <= 0xFFFF):
+                raise ValueError(f"{path}:{lineno}: u16 out of range: {token}")
+            values.append(value)
+
+    if not values:
+        raise ValueError(f"{path}: no 0xNNNN u16 entries found")
+
+    out = bytearray()
+    for value in values:
+        out.extend((value & 0xFF, value >> 8))
+    return bytes(out)
+
+
+def cmd_repack_u16(args: argparse.Namespace) -> None:
+    manifest = load_manifest(Path(args.manifest))
+    entries = manifest["entries"]
+    if args.stem not in entries:
+        raise SystemExit(f"LZ77 plan not found for {args.stem!r}")
+
+    raw = u16_text_to_raw(Path(args.input))
+    encoded = repack_raw_with_plan(raw, entries[args.stem])
+    out = Path(args.output)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_bytes(encoded)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="command", required=True)
     rp = sub.add_parser("repack-png")
     rp.add_argument("--manifest", required=True)
     rp.add_argument("--stem", required=True)
+    rp.add_argument(
+        "--raw-size",
+        type=lambda value: int(value, 0),
+        default=None,
+        help=(
+            "Use only this many bytes of PNG-derived 4bpp data. "
+            "Any discarded tail must be all zero."
+        ),
+    )
     rp.add_argument("input")
     rp.add_argument("output")
     rp.set_defaults(func=cmd_repack_png)
+
+    ru = sub.add_parser("repack-u16")
+    ru.add_argument("--manifest", required=True)
+    ru.add_argument("--stem", required=True)
+    ru.add_argument("input")
+    ru.add_argument("output")
+    ru.set_defaults(func=cmd_repack_u16)
+
     args = ap.parse_args()
     args.func(args)
 

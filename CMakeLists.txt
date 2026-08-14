@@ -1154,6 +1154,102 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${POKEBLOCK_USE_CONDITION_PNG}"
                 "${GBAGFX}"
             VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/mon_frame.4bpp")
+        set(POKEBLOCK_MON_FRAME_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/mon_frame.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${POKEBLOCK_MON_FRAME_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${POKEBLOCK_MON_FRAME_PNG}" "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/mon_frame.bin.lz")
+        set(POKEBLOCK_MON_FRAME_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/mon_frame.tilemap.txt")
+        set(POKEBLOCK_USE_LZ77_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/use_screen_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${POKEBLOCK_USE_LZ77_PLAN}"
+                --stem mon_frame_tilemap
+                "${POKEBLOCK_MON_FRAME_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_MON_FRAME_TILEMAP}"
+                "${POKEBLOCK_USE_LZ77_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/graph.4bpp.lz")
+        set(POKEBLOCK_GRAPH_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/graph.png")
+        set(POKEBLOCK_USE_LZ77_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/use_screen_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${POKEBLOCK_USE_LZ77_PLAN}"
+                --stem graph
+                --raw-size 0xFA0
+                "${POKEBLOCK_GRAPH_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_GRAPH_PNG}"
+                "${POKEBLOCK_USE_LZ77_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/graph.bin.lz")
+        set(POKEBLOCK_GRAPH_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/graph.tilemap.txt")
+        set(POKEBLOCK_USE_LZ77_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/use_screen_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${POKEBLOCK_USE_LZ77_PLAN}"
+                --stem graph_tilemap
+                "${POKEBLOCK_GRAPH_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_GRAPH_TILEMAP}"
+                "${POKEBLOCK_USE_LZ77_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/graph_data.bin.lz")
+        set(POKEBLOCK_GRAPH_DATA_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/graph_data.tilemap.txt")
+        set(POKEBLOCK_USE_LZ77_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/use_screen_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${POKEBLOCK_USE_LZ77_PLAN}"
+                --stem graph_data_tilemap
+                "${POKEBLOCK_GRAPH_DATA_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_GRAPH_DATA_TILEMAP}"
+                "${POKEBLOCK_USE_LZ77_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
     # END POKEBLOCK USE SCREEN EXACT PIPELINE
 
 

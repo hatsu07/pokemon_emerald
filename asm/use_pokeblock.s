@@ -2941,7 +2941,7 @@ _0816783C:
 	ldr r1, _08167848
 	b _081678A4
 	.align 2, 0
-_08167844: .4byte gUsePokeblockData_085BF9A0
+_08167844: .4byte sMonFrame_Tilemap
 _08167848: .4byte 0x0203B974
 _0816784C:
 	ldr r1, _0816785C
@@ -2951,7 +2951,7 @@ _0816784C:
 	bl LoadBgTiles
 	b _08167982
 	.align 2, 0
-_0816785C: .4byte gUsePokeblockData_085BF8C0
+_0816785C: .4byte sMonFrame_Gfx
 _08167860:
 	ldr r0, _08167874
 	ldr r1, [r0]
@@ -2976,7 +2976,7 @@ _08167878:
 	strh r1, [r0]
 	b _08167982
 	.align 2, 0
-_08167890: .4byte gUsePokeblockData_085BF880
+_08167890: .4byte sMonFrame_Pal
 _08167894: .4byte 0x0203B978
 _08167898: .4byte 0x00007B0E
 _0816789C: .4byte 0x0000FFB0
@@ -2988,7 +2988,7 @@ _081678A4:
 	bl LZ77UnCompVram
 	b _08167982
 	.align 2, 0
-_081678AC: .4byte gUsePokeblockData_085BFAAC
+_081678AC: .4byte gUsePokeblockGraph_Gfx
 _081678B0: .4byte 0x0203B970
 _081678B4:
 	ldr r0, _081678CC
@@ -3001,9 +3001,9 @@ _081678B4:
 	bl LoadPalette
 	b _08167982
 	.align 2, 0
-_081678CC: .4byte gUsePokeblockData_085C0230
+_081678CC: .4byte gUsePokeblockGraph_Tilemap
 _081678D0: .4byte 0x0203B96C
-_081678D4: .4byte gUsePokeblockData_085BFA4C
+_081678D4: .4byte gUsePokeblockGraph_Pal
 _081678D8:
 	ldr r0, _081678EC
 	ldr r1, [r0]
@@ -3035,7 +3035,7 @@ _081678F0:
 	b _08167982
 	.align 2, 0
 _08167918: .4byte 0x0203B96C
-_0816791C: .4byte gUsePokeblockData_085C0410
+_0816791C: .4byte sNatureWindowTilemap
 _08167920:
 	ldr r0, _08167930
 	ldr r1, _08167934
@@ -3045,7 +3045,7 @@ _08167920:
 	bl LZ77UnCompVram
 	b _08167982
 	.align 2, 0
-_08167930: .4byte gUsePokeblockData_085C0488
+_08167930: .4byte sGraphData_Tilemap
 _08167934: .4byte 0x0203B978
 _08167938: .4byte 0x00007304
 _0816793C:
