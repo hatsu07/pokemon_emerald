@@ -1446,11 +1446,11 @@ Move_SAFEGUARD:
 	ba_monbg ANIM_ATK_PARTNER
 	ba_setalpha 8, 8
 	ba_playsewithpan 0x00E1, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F848, ANIM_ATTACKER, 2
+	ba_createsprite gSafeguardSpriteTemplate, ANIM_ATTACKER, 2
 	ba_delay 4
-	ba_createsprite 0x0856F848, ANIM_ATTACKER, 2
+	ba_createsprite gSafeguardSpriteTemplate, ANIM_ATTACKER, 2
 	ba_delay 4
-	ba_createsprite 0x0856F848, ANIM_ATTACKER, 2
+	ba_createsprite gSafeguardSpriteTemplate, ANIM_ATTACKER, 2
 	ba_waitforvisualfinish
 	ba_playsewithpan 0x0066, SOUND_PAN_ATTACKER
 	ba_createvisualtask sub_08116254, 2, 10, 0, 2, 0, 10, 0x7FFF
@@ -3008,20 +3008,20 @@ Move_UPROAR:
 	ba_createvisualtask sub_081075E0, 2, 0
 	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105D38, ANIM_ATTACKER, 3, 0, 0, 0, 0, 31, 8
 	ba_playsewithpan 0x00F1, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F79C, ANIM_ATTACKER, 2, 0, 29, -12, 0
-	ba_createsprite 0x0856F79C, ANIM_ATTACKER, 2, 0, -12, -29, 1
+	ba_createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 2, 0, 29, -12, 0
+	ba_createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 2, 0, -12, -29, 1
 	ba_delay 16
 	ba_createvisualtask sub_081075E0, 2, 0
 	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105D38, ANIM_ATTACKER, 3, 0, 0, 0, 0, 31, 8
 	ba_playsewithpan 0x00F1, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F79C, ANIM_ATTACKER, 2, 0, 12, -29, 1
-	ba_createsprite 0x0856F79C, ANIM_ATTACKER, 2, 0, -29, -12, 0
+	ba_createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 2, 0, 12, -29, 1
+	ba_createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 2, 0, -29, -12, 0
 	ba_delay 16
 	ba_createvisualtask sub_081075E0, 2, 0
 	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105D38, ANIM_ATTACKER, 3, 0, 0, 0, 0, 31, 8
 	ba_playsewithpan 0x00F1, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F79C, ANIM_ATTACKER, 2, 0, 24, -24, 1
-	ba_createsprite 0x0856F79C, ANIM_ATTACKER, 2, 0, -24, -24, 0
+	ba_createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 2, 0, 24, -24, 1
+	ba_createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 2, 0, -24, -24, 0
 	ba_waitforvisualfinish
 	ba_clearmonbg ANIM_DEF_PARTNER
 	ba_end
@@ -7290,23 +7290,23 @@ Move_BATON_PASS:
 	ba_end
 Move_PERISH_SONG:
 	ba_loadspritegfx 0x27DE
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 0, 0, 0
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 1, 1, 16
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 2, 1, 32
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 3, 2, 48
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 4, 2, 64
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 5, 0, 80
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 6, 0, 96
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 7, 1, 112
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 8, 2, 128
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 9, 0, 144
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 10, 2, 160
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 11, 0, 176
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 12, 1, 192
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 13, 3, 208
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 14, 3, 224
-	ba_createsprite 0x0856F7F0, ANIM_ATTACKER, 4, 15, 0, 240
-	ba_createsprite 0x0856F808, ANIM_ATTACKER, 4, 15, 0, 0
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, 0
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 1, 1, 16
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 2, 1, 32
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 3, 2, 48
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 4, 2, 64
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 5, 0, 80
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 6, 0, 96
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 7, 1, 112
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 8, 2, 128
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 9, 0, 144
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 10, 2, 160
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 11, 0, 176
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 12, 1, 192
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 13, 3, 208
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 14, 3, 224
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 15, 0, 240
+	ba_createsprite gPerishSongMusicNoteSpriteTemplate_2, ANIM_ATTACKER, 4, 15, 0, 0
 	ba_delay 20
 	ba_panse_1B 0x00AD, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 2, 0
 	ba_delay 80
