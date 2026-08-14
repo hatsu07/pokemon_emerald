@@ -954,8 +954,8 @@ _081625E0:
 _081625F8: .4byte 0x085DC21C
 _081625FC: .4byte 0x03005AF0
 _08162600: .4byte 0xFFFFFE70
-_08162604: .4byte gBattleU16Table_Rom_5BBE20
-_08162608: .4byte gBattleU16Table_Rom_5BBE52
+_08162604: .4byte gTowerMaleFacilityClasses
+_08162608: .4byte gTowerMaleTrainerGfxIds
 _0816260C:
 	movs r1, #0
 	ldr r3, _08162644
@@ -987,8 +987,8 @@ _0816263A:
 	bl VarSet
 	b _08162694
 	.align 2, 0
-_08162644: .4byte gBattleU16Table_Rom_5BBE3E
-_08162648: .4byte gBattleU16Table_Rom_5BBE70
+_08162644: .4byte gTowerFemaleFacilityClasses
+_08162648: .4byte gTowerFemaleTrainerGfxIds
 _0816264C: .4byte 0x00004010
 _08162650:
 	ldr r0, _08162658
@@ -1138,8 +1138,8 @@ _08162754:
 _0816275C: .4byte 0x085DC21C
 _08162760: .4byte 0x03005AF0
 _08162764: .4byte 0xFFFFFE70
-_08162768: .4byte gBattleU16Table_Rom_5BBE20
-_0816276C: .4byte gBattleU16Table_Rom_5BBE52
+_08162768: .4byte gTowerMaleFacilityClasses
+_0816276C: .4byte gTowerMaleTrainerGfxIds
 _08162770:
 	movs r1, #0
 	ldr r3, _08162790
@@ -1160,7 +1160,7 @@ _08162788:
 	movs r0, #7
 	b _0816279A
 	.align 2, 0
-_08162790: .4byte gBattleU16Table_Rom_5BBE3E
+_08162790: .4byte gTowerFemaleFacilityClasses
 _08162794:
 	ldr r0, _081627A0
 _08162796:
@@ -1171,7 +1171,7 @@ _0816279A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081627A0: .4byte gBattleU16Table_Rom_5BBE70
+_081627A0: .4byte gTowerFemaleTrainerGfxIds
 	thumb_func_end GetBattleFacilityTrainerGfxId
 
 	thumb_func_start PutNewBattleTowerRecord
@@ -2157,7 +2157,7 @@ _08162F48:
 _08162F50: .4byte 0x085DC21C
 _08162F54: .4byte 0x03005AF0
 _08162F58: .4byte 0xFFFFFE70
-_08162F5C: .4byte gBattleU16Table_Rom_5BBE3E
+_08162F5C: .4byte gTowerFemaleFacilityClasses
 _08162F60:
 	movs r0, #1
 _08162F62:
@@ -4005,7 +4005,7 @@ _08163E54: .4byte 0x03005AF0
 _08163E58: .4byte 0x0000064C
 _08163E5C: .4byte 0x00000CA9
 _08163E60: .4byte 0x000040CE
-_08163E64: .4byte gBattleU16Table_Rom_5BBE3E
+_08163E64: .4byte gTowerFemaleFacilityClasses
 _08163E68:
 	ldr r4, _08163F44
 	ldrb r0, [r2, #0xa]
@@ -4115,7 +4115,7 @@ _08163F1C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08163F44: .4byte gBattleU16Table_Rom_5BBE20
+_08163F44: .4byte gTowerMaleFacilityClasses
 _08163F48: .4byte 0x03005AF0
 _08163F4C: .4byte 0x03005AEC
 _08163F50: .4byte 0x00002BBC
@@ -5126,7 +5126,7 @@ sub_08164718: @ 0x08164718
 _0816475C: .4byte 0x02037292
 _08164760: .4byte 0x03005AF0
 _08164764: .4byte 0x00000CB4
-_08164768: .4byte gBattleTowerData_085BC444
+_08164768: .4byte sPartnerTrainerTextTables
 _0816476C:
 	adds r4, #8
 	ldr r0, [sp]
@@ -5421,7 +5421,7 @@ _081649C4: .4byte 0x00000CDA
 _081649C8: .4byte 0x0203886E
 _081649CC: .4byte 0x00000CB4
 _081649D0: .4byte 0x00000CD6
-_081649D4: .4byte gBattleTowerData_085BC444
+_081649D4: .4byte sPartnerTrainerTextTables
 _081649D8:
 	ldr r0, _081649FC
 	cmp r7, r0
@@ -5442,7 +5442,7 @@ _081649E4:
 	b _08164A34
 	.align 2, 0
 _081649FC: .4byte 0x0000018F
-_08164A00: .4byte gBattleTowerData_085BC444
+_08164A00: .4byte sPartnerTrainerTextTables
 _08164A04: .4byte 0x02037282
 _08164A08:
 	ldr r0, _08164A44
@@ -5478,7 +5478,7 @@ _08164A34:
 	.align 2, 0
 _08164A44: .4byte 0x03005AF0
 _08164A48: .4byte 0xFFFFFE70
-_08164A4C: .4byte gBattleTowerData_085BC5D4
+_08164A4C: .4byte sPartnerApprenticeTextTables
 _08164A50: .4byte 0x02037282
 	thumb_func_end sub_08164718
 
@@ -6201,7 +6201,7 @@ FillEReaderTrainerWithPlayerData: @ 0x08164FD8
 	.align 2, 0
 _08165004: .4byte 0x03005AF0
 _08165008: .4byte 0x00000BEC
-_0816500C: .4byte gBattleU16Table_Rom_5BBE3E
+_0816500C: .4byte gTowerFemaleFacilityClasses
 _08165010:
 	ldr r4, _081650B0
 	ldrb r0, [r2, #0xa]
@@ -6281,7 +6281,7 @@ _08165082:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081650B0: .4byte gBattleU16Table_Rom_5BBE20
+_081650B0: .4byte gTowerMaleFacilityClasses
 _081650B4: .4byte 0x03005AEC
 _081650B8: .4byte 0x00002BBC
 _081650BC: .4byte 0x02024190
@@ -6681,11 +6681,11 @@ _081653AA:
 	b _081656A6
 	.align 2, 0
 _081653AC: .4byte 0x00000C03
-_081653B0: .4byte gBattleTowerData_085BC614
+_081653B0: .4byte sStevenMons
 _081653B4: .4byte 0x0000EF2A
 _081653B8: .4byte 0x020242BC
-_081653BC: .4byte gBattleTowerData_085BC619
-_081653C0: .4byte gBattleTowerData_085BC620
+_081653BC: .4byte sStevenMons + 5
+_081653C0: .4byte sStevenMons + 12
 _081653C4: .4byte 0x082E9CC0
 _081653C8:
 	movs r0, #0xfa
@@ -7131,7 +7131,7 @@ _08165746:
 	ldrb r0, [r0]
 	b _0816575E
 	.align 2, 0
-_08165758: .4byte gBattleTowerData_085BBE84
+_08165758: .4byte sRubyFacilityClassToEmerald
 _0816575C:
 	movs r0, #0x2b
 _0816575E:
@@ -7307,7 +7307,7 @@ _08165892:
 	ldrb r0, [r0]
 	b _081658A6
 	.align 2, 0
-_081658A0: .4byte gBattleTowerData_085BBE84
+_081658A0: .4byte sRubyFacilityClassToEmerald
 _081658A4:
 	movs r0, #0x24
 _081658A6:
@@ -8151,8 +8151,8 @@ _08165EE6:
 	ldr r0, _08165EF4
 	b _08165F22
 	.align 2, 0
-_08165EF0: .4byte gBattleU16Table_Rom_5BBE20
-_08165EF4: .4byte gBattleU16Table_Rom_5BBE52
+_08165EF0: .4byte gTowerMaleFacilityClasses
+_08165EF4: .4byte gTowerMaleTrainerGfxIds
 _08165EF8:
 	movs r1, #0
 	ldr r3, _08165F1C
@@ -8175,7 +8175,7 @@ _08165F14:
 	movs r0, #7
 	b _08165F26
 	.align 2, 0
-_08165F1C: .4byte gBattleU16Table_Rom_5BBE3E
+_08165F1C: .4byte gTowerFemaleFacilityClasses
 _08165F20:
 	ldr r0, _08165F2C
 _08165F22:
@@ -8185,7 +8185,7 @@ _08165F26:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08165F2C: .4byte gBattleU16Table_Rom_5BBE70
+_08165F2C: .4byte gTowerFemaleTrainerGfxIds
 	thumb_func_end FacilityClassToGraphicsId
 
 	thumb_func_start ValidateBattleTowerRecord

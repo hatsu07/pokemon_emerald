@@ -1,0 +1,1012 @@
+	.include "constants/battle_tower.inc"
+
+	@ Battle Tower trainer facility-class pools.
+	.globl gTowerMaleFacilityClasses
+gTowerMaleFacilityClasses: @ 0x085BBE20
+	.byte FACILITY_CLASS_RUIN_MANIAC, FACILITY_CLASS_TUBER_M, FACILITY_CLASS_COOLTRAINER_M, FACILITY_CLASS_RICH_BOY, FACILITY_CLASS_POKEMANIAC, FACILITY_CLASS_SWIMMER_M, FACILITY_CLASS_BLACK_BELT, FACILITY_CLASS_GUITARIST, FACILITY_CLASS_KINDLER, FACILITY_CLASS_CAMPER
+	.byte FACILITY_CLASS_BUG_MANIAC, FACILITY_CLASS_PSYCHIC_M, FACILITY_CLASS_GENTLEMAN, FACILITY_CLASS_SCHOOL_KID_M, FACILITY_CLASS_POKEFAN_M, FACILITY_CLASS_EXPERT_M, FACILITY_CLASS_YOUNGSTER, FACILITY_CLASS_FISHERMAN, FACILITY_CLASS_CYCLING_TRIATHLETE_M, FACILITY_CLASS_RUNNING_TRIATHLETE_M
+	.byte FACILITY_CLASS_SWIMMING_TRIATHLETE_M, FACILITY_CLASS_DRAGON_TAMER, FACILITY_CLASS_BIRD_KEEPER, FACILITY_CLASS_NINJA_BOY, FACILITY_CLASS_SAILOR, FACILITY_CLASS_COLLECTOR, FACILITY_CLASS_PKMN_BREEDER_M, FACILITY_CLASS_PKMN_RANGER_M, FACILITY_CLASS_BUG_CATCHER, FACILITY_CLASS_HIKER
+
+	.globl gTowerFemaleFacilityClasses
+gTowerFemaleFacilityClasses: @ 0x085BBE3E
+	.byte FACILITY_CLASS_AROMA_LADY, FACILITY_CLASS_TUBER_F, FACILITY_CLASS_COOLTRAINER_F, FACILITY_CLASS_HEX_MANIAC, FACILITY_CLASS_LADY, FACILITY_CLASS_BEAUTY, FACILITY_CLASS_PSYCHIC_F, FACILITY_CLASS_SCHOOL_KID_F, FACILITY_CLASS_POKEFAN_F, FACILITY_CLASS_EXPERT_F
+	.byte FACILITY_CLASS_CYCLING_TRIATHLETE_F, FACILITY_CLASS_RUNNING_TRIATHLETE_F, FACILITY_CLASS_SWIMMING_TRIATHLETE_F, FACILITY_CLASS_BATTLE_GIRL, FACILITY_CLASS_PARASOL_LADY, FACILITY_CLASS_SWIMMER_F, FACILITY_CLASS_PICNICKER, FACILITY_CLASS_PKMN_BREEDER_F, FACILITY_CLASS_PKMN_RANGER_F, FACILITY_CLASS_LASS
+
+	@ Battle Tower overworld graphics pools corresponding to the class pools above.
+	.globl gTowerMaleTrainerGfxIds
+gTowerMaleTrainerGfxIds: @ 0x085BBE52
+	.byte BT_OBJ_EVENT_GFX_HIKER, BT_OBJ_EVENT_GFX_TUBER_M, BT_OBJ_EVENT_GFX_MAN_3, BT_OBJ_EVENT_GFX_RICH_BOY, BT_OBJ_EVENT_GFX_MANIAC, BT_OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M, BT_OBJ_EVENT_GFX_BLACK_BELT, BT_OBJ_EVENT_GFX_MAN_5, BT_OBJ_EVENT_GFX_MAN_5, BT_OBJ_EVENT_GFX_CAMPER
+	.byte BT_OBJ_EVENT_GFX_MANIAC, BT_OBJ_EVENT_GFX_PSYCHIC_M, BT_OBJ_EVENT_GFX_GENTLEMAN, BT_OBJ_EVENT_GFX_SCHOOL_KID_M, BT_OBJ_EVENT_GFX_POKEFAN_M, BT_OBJ_EVENT_GFX_EXPERT_M, BT_OBJ_EVENT_GFX_YOUNGSTER, BT_OBJ_EVENT_GFX_FISHERMAN, BT_OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M, BT_OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M
+	.byte BT_OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M, BT_OBJ_EVENT_GFX_MAN_3, BT_OBJ_EVENT_GFX_MAN_5, BT_OBJ_EVENT_GFX_NINJA_BOY, BT_OBJ_EVENT_GFX_SAILOR, BT_OBJ_EVENT_GFX_MANIAC, BT_OBJ_EVENT_GFX_MAN_4, BT_OBJ_EVENT_GFX_CAMPER, BT_OBJ_EVENT_GFX_BUG_CATCHER, BT_OBJ_EVENT_GFX_HIKER
+
+	.globl gTowerFemaleTrainerGfxIds
+gTowerFemaleTrainerGfxIds: @ 0x085BBE70
+	.byte BT_OBJ_EVENT_GFX_WOMAN_2, BT_OBJ_EVENT_GFX_TUBER_F, BT_OBJ_EVENT_GFX_WOMAN_5, BT_OBJ_EVENT_GFX_HEX_MANIAC, BT_OBJ_EVENT_GFX_WOMAN_2, BT_OBJ_EVENT_GFX_BEAUTY, BT_OBJ_EVENT_GFX_LASS, BT_OBJ_EVENT_GFX_GIRL_3, BT_OBJ_EVENT_GFX_POKEFAN_F, BT_OBJ_EVENT_GFX_EXPERT_F
+	.byte BT_OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F, BT_OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F, BT_OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F, BT_OBJ_EVENT_GFX_GIRL_3, BT_OBJ_EVENT_GFX_WOMAN_5, BT_OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F, BT_OBJ_EVENT_GFX_PICNICKER, BT_OBJ_EVENT_GFX_WOMAN_2, BT_OBJ_EVENT_GFX_PICNICKER, BT_OBJ_EVENT_GFX_LASS
+
+	@ Ruby/Sapphire -> Emerald facility-class conversion table.
+	.globl sRubyFacilityClassToEmerald
+sRubyFacilityClassToEmerald: @ 0x085BBE84
+	.byte BT_RS_FACILITY_CLASS_AQUA_LEADER_ARCHIE, FACILITY_CLASS_AQUA_LEADER_ARCHIE
+	.byte BT_RS_FACILITY_CLASS_AQUA_GRUNT_M, FACILITY_CLASS_AQUA_GRUNT_M
+	.byte BT_RS_FACILITY_CLASS_AQUA_GRUNT_F, FACILITY_CLASS_AQUA_GRUNT_F
+	.byte BT_RS_FACILITY_CLASS_AROMA_LADY, FACILITY_CLASS_AROMA_LADY
+	.byte BT_RS_FACILITY_CLASS_RUIN_MANIAC, FACILITY_CLASS_RUIN_MANIAC
+	.byte BT_RS_FACILITY_CLASS_INTERVIEWER, FACILITY_CLASS_INTERVIEWER
+	.byte BT_RS_FACILITY_CLASS_TUBER_F, FACILITY_CLASS_TUBER_F
+	.byte BT_RS_FACILITY_CLASS_TUBER_M, FACILITY_CLASS_TUBER_M
+	.byte BT_RS_FACILITY_CLASS_COOLTRAINER_M, FACILITY_CLASS_COOLTRAINER_M
+	.byte BT_RS_FACILITY_CLASS_COOLTRAINER_F, FACILITY_CLASS_COOLTRAINER_F
+	.byte BT_RS_FACILITY_CLASS_HEX_MANIAC, FACILITY_CLASS_HEX_MANIAC
+	.byte BT_RS_FACILITY_CLASS_LADY, FACILITY_CLASS_LADY
+	.byte BT_RS_FACILITY_CLASS_BEAUTY, FACILITY_CLASS_BEAUTY
+	.byte BT_RS_FACILITY_CLASS_RICH_BOY, FACILITY_CLASS_RICH_BOY
+	.byte BT_RS_FACILITY_CLASS_POKEMANIAC, FACILITY_CLASS_POKEMANIAC
+	.byte BT_RS_FACILITY_CLASS_SWIMMER_M, FACILITY_CLASS_SWIMMER_M
+	.byte BT_RS_FACILITY_CLASS_BLACK_BELT, FACILITY_CLASS_BLACK_BELT
+	.byte BT_RS_FACILITY_CLASS_GUITARIST, FACILITY_CLASS_GUITARIST
+	.byte BT_RS_FACILITY_CLASS_KINDLER, FACILITY_CLASS_KINDLER
+	.byte BT_RS_FACILITY_CLASS_CAMPER, FACILITY_CLASS_CAMPER
+	.byte BT_RS_FACILITY_CLASS_BUG_MANIAC, FACILITY_CLASS_BUG_MANIAC
+	.byte BT_RS_FACILITY_CLASS_PSYCHIC_M, FACILITY_CLASS_PSYCHIC_M
+	.byte BT_RS_FACILITY_CLASS_PSYCHIC_F, FACILITY_CLASS_PSYCHIC_F
+	.byte BT_RS_FACILITY_CLASS_GENTLEMAN, FACILITY_CLASS_GENTLEMAN
+	.byte BT_RS_FACILITY_CLASS_ELITE_FOUR_M, FACILITY_CLASS_ELITE_FOUR_SIDNEY
+	.byte BT_RS_FACILITY_CLASS_ELITE_FOUR_F, FACILITY_CLASS_ELITE_FOUR_PHOEBE
+	.byte BT_RS_FACILITY_CLASS_LEADER_F, FACILITY_CLASS_LEADER_ROXANNE
+	.byte BT_RS_FACILITY_CLASS_LEADER_M, FACILITY_CLASS_LEADER_BRAWLY
+	.byte BT_RS_FACILITY_CLASS_LEADER_MF, FACILITY_CLASS_LEADER_TATE_AND_LIZA
+	.byte BT_RS_FACILITY_CLASS_SCHOOL_KID_M, FACILITY_CLASS_SCHOOL_KID_M
+	.byte BT_RS_FACILITY_CLASS_SCHOOL_KID_F, FACILITY_CLASS_SCHOOL_KID_F
+	.byte BT_RS_FACILITY_CLASS_SR_AND_JR, FACILITY_CLASS_SR_AND_JR
+	.byte BT_RS_FACILITY_CLASS_POKEFAN_M, FACILITY_CLASS_POKEFAN_M
+	.byte BT_RS_FACILITY_CLASS_POKEFAN_F, FACILITY_CLASS_POKEFAN_F
+	.byte BT_RS_FACILITY_CLASS_EXPERT_M, FACILITY_CLASS_EXPERT_M
+	.byte BT_RS_FACILITY_CLASS_EXPERT_F, FACILITY_CLASS_EXPERT_F
+	.byte BT_RS_FACILITY_CLASS_YOUNGSTER, FACILITY_CLASS_YOUNGSTER
+	.byte BT_RS_FACILITY_CLASS_CHAMPION, FACILITY_CLASS_CHAMPION_WALLACE
+	.byte BT_RS_FACILITY_CLASS_FISHERMAN, FACILITY_CLASS_FISHERMAN
+	.byte BT_RS_FACILITY_CLASS_CYCLING_TRIATHLETE_M, FACILITY_CLASS_CYCLING_TRIATHLETE_M
+	.byte BT_RS_FACILITY_CLASS_CYCLING_TRIATHLETE_F, FACILITY_CLASS_CYCLING_TRIATHLETE_F
+	.byte BT_RS_FACILITY_CLASS_RUNNING_TRIATHLETE_M, FACILITY_CLASS_RUNNING_TRIATHLETE_M
+	.byte BT_RS_FACILITY_CLASS_RUNNING_TRIATHLETE_F, FACILITY_CLASS_RUNNING_TRIATHLETE_F
+	.byte BT_RS_FACILITY_CLASS_SWIMMING_TRIATHLETE_M, FACILITY_CLASS_SWIMMING_TRIATHLETE_M
+	.byte BT_RS_FACILITY_CLASS_SWIMMING_TRIATHLETE_F, FACILITY_CLASS_SWIMMING_TRIATHLETE_F
+	.byte BT_RS_FACILITY_CLASS_DRAGON_TAMER, FACILITY_CLASS_DRAGON_TAMER
+	.byte BT_RS_FACILITY_CLASS_BIRD_KEEPER, FACILITY_CLASS_BIRD_KEEPER
+	.byte BT_RS_FACILITY_CLASS_NINJA_BOY, FACILITY_CLASS_NINJA_BOY
+	.byte BT_RS_FACILITY_CLASS_BATTLE_GIRL, FACILITY_CLASS_BATTLE_GIRL
+	.byte BT_RS_FACILITY_CLASS_PARASOL_LADY, FACILITY_CLASS_PARASOL_LADY
+	.byte BT_RS_FACILITY_CLASS_SWIMMER_F, FACILITY_CLASS_SWIMMER_F
+	.byte BT_RS_FACILITY_CLASS_PICNICKER, FACILITY_CLASS_PICNICKER
+	.byte BT_RS_FACILITY_CLASS_TWINS, FACILITY_CLASS_TWINS
+	.byte BT_RS_FACILITY_CLASS_SAILOR, FACILITY_CLASS_SAILOR
+	.byte BT_RS_FACILITY_CLASS_COLLECTOR, FACILITY_CLASS_COLLECTOR
+	.byte BT_RS_FACILITY_CLASS_WALLY, FACILITY_CLASS_WALLY
+	.byte BT_RS_FACILITY_CLASS_BRENDAN_1, FACILITY_CLASS_BRENDAN
+	.byte BT_RS_FACILITY_CLASS_BRENDAN_2, FACILITY_CLASS_BRENDAN_2
+	.byte BT_RS_FACILITY_CLASS_BRENDAN_3, FACILITY_CLASS_BRENDAN_3
+	.byte BT_RS_FACILITY_CLASS_MAY_1, FACILITY_CLASS_MAY
+	.byte BT_RS_FACILITY_CLASS_MAY_2, FACILITY_CLASS_MAY_2
+	.byte BT_RS_FACILITY_CLASS_MAY_3, FACILITY_CLASS_MAY_3
+	.byte BT_RS_FACILITY_CLASS_PKMN_BREEDER_M, FACILITY_CLASS_PKMN_BREEDER_M
+	.byte BT_RS_FACILITY_CLASS_PKMN_BREEDER_F, FACILITY_CLASS_PKMN_BREEDER_F
+	.byte BT_RS_FACILITY_CLASS_PKMN_RANGER_M, FACILITY_CLASS_PKMN_RANGER_M
+	.byte BT_RS_FACILITY_CLASS_PKMN_RANGER_F, FACILITY_CLASS_PKMN_RANGER_F
+	.byte BT_RS_FACILITY_CLASS_MAGMA_LEADER, FACILITY_CLASS_MAGMA_LEADER_MAXIE
+	.byte BT_RS_FACILITY_CLASS_MAGMA_GRUNT_M, FACILITY_CLASS_MAGMA_GRUNT_M
+	.byte BT_RS_FACILITY_CLASS_MAGMA_GRUNT_F, FACILITY_CLASS_MAGMA_GRUNT_F
+	.byte BT_RS_FACILITY_CLASS_LASS, FACILITY_CLASS_LASS
+	.byte BT_RS_FACILITY_CLASS_BUG_CATCHER, FACILITY_CLASS_BUG_CATCHER
+	.byte BT_RS_FACILITY_CLASS_HIKER, FACILITY_CLASS_HIKER
+	.byte BT_RS_FACILITY_CLASS_YOUNG_COUPLE, FACILITY_CLASS_YOUNG_COUPLE
+	.byte BT_RS_FACILITY_CLASS_OLD_COUPLE, FACILITY_CLASS_OLD_COUPLE
+	.byte BT_RS_FACILITY_CLASS_SIS_AND_BRO, FACILITY_CLASS_SIS_AND_BRO
+	.balign 4, 0 @ original 2-byte padding at 0x085BBF1A
+
+	@ Canonical partner-room text aliases.
+	@ Addresses are JP-localized text locations; current EventText_JP_* names
+	@ are recorded as comments where an ELF symbol currently exists.
+	@ current=EventText_JP_08223931
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Intro, 0x08223931
+	@ current=EventText_JP_0822396D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Mon1, 0x0822396D
+	@ current=EventText_JP_0822398A
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Mon2Ask, 0x0822398A
+	@ current=EventText_JP_082239B9
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Accept, 0x082239B9
+	@ current=EventText_JP_08223A13
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Reject, 0x08223A13
+	@ current=EventText_JP_08223A26
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice2Intro, 0x08223A26
+	@ current=EventText_JP_08223A47
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice2Mon1, 0x08223A47
+	@ current=EventText_JP_08223A63
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice2Mon2Ask, 0x08223A63
+	@ current=EventText_JP_08223A94
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice2Accept, 0x08223A94
+	@ current=EventText_JP_08223AB8
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice2Reject, 0x08223AB8
+	@ current=EventText_JP_08223AD1
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice3Intro, 0x08223AD1
+	@ current=EventText_JP_08223AF3
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice3Mon1, 0x08223AF3
+	@ current=EventText_JP_08223B14
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice3Mon2Ask, 0x08223B14
+	@ current=EventText_JP_08223B43
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice3Accept, 0x08223B43
+	@ current=EventText_JP_08223B64
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice3Reject, 0x08223B64
+	@ current=EventText_JP_08223B7D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Intro, 0x08223B7D
+	@ current=EventText_JP_08223BB7
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Mon1, 0x08223BB7
+	@ current=EventText_JP_08223BE3
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Mon2Ask, 0x08223BE3
+	@ current=EventText_JP_08223C2A
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Accept, 0x08223C2A
+	@ current=EventText_JP_08223C81
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Reject, 0x08223C81
+	@ current=EventText_JP_08223C99
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice5Intro, 0x08223C99
+	@ current=EventText_JP_08223CB2
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice5Mon1, 0x08223CB2
+	@ current=EventText_JP_08223CCF
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice5Mon2Ask, 0x08223CCF
+	@ current=EventText_JP_08223D05
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice5Accept, 0x08223D05
+	@ current=EventText_JP_08223D39
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice5Reject, 0x08223D39
+	@ current=EventText_JP_08223D54
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice6Intro, 0x08223D54
+	@ current=EventText_JP_08223D99
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice6Mon1, 0x08223D99
+	@ current=EventText_JP_08223DAE
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice6Mon2Ask, 0x08223DAE
+	@ current=EventText_JP_08223DE4
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice6Accept, 0x08223DE4
+	@ current=EventText_JP_08223E0B
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice6Reject, 0x08223E0B
+	@ current=EventText_JP_08223E27
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Intro, 0x08223E27
+	@ current=EventText_JP_08223E55
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Mon1, 0x08223E55
+	@ current=EventText_JP_08223E80
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Mon2Ask, 0x08223E80
+	@ current=EventText_JP_08223EBB
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Accept, 0x08223EBB
+	@ current=EventText_JP_08223EE1
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Reject, 0x08223EE1
+	@ current=EventText_JP_08223EF7
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice8Intro, 0x08223EF7
+	@ current=EventText_JP_08223F1F
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice8Mon1, 0x08223F1F
+	@ current=EventText_JP_08223F3A
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice8Mon2Ask, 0x08223F3A
+	@ current=EventText_JP_08223F73
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice8Accept, 0x08223F73
+	@ current=EventText_JP_08223FB5
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice8Reject, 0x08223FB5
+	@ current=EventText_JP_08223FCE
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice9Intro, 0x08223FCE
+	@ current=EventText_JP_08224010
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice9Mon1, 0x08224010
+	@ current=EventText_JP_0822402D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice9Mon2Ask, 0x0822402D
+	@ current=EventText_JP_08224064
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice9Accept, 0x08224064
+	@ current=EventText_JP_08224099
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice9Reject, 0x08224099
+	@ current=EventText_JP_082240B8
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Intro, 0x082240B8
+	@ current=EventText_JP_082240E1
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Mon1, 0x082240E1
+	@ current=EventText_JP_082240FD
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Mon2Ask, 0x082240FD
+	@ current=EventText_JP_08224138
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Accept, 0x08224138
+	@ current=EventText_JP_0822415B
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Reject, 0x0822415B
+	@ current=EventText_JP_08224172
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Intro, 0x08224172
+	@ current=EventText_JP_082241DB
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Mon1, 0x082241DB
+	@ current=EventText_JP_082241F7
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Mon2Ask, 0x082241F7
+	@ current=EventText_JP_0822424A
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Accept, 0x0822424A
+	@ current=EventText_JP_08224287
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Reject, 0x08224287
+	@ current=EventText_JP_082242B3
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Intro, 0x082242B3
+	@ current=EventText_JP_082242F0
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Mon1, 0x082242F0
+	@ current=EventText_JP_0822430C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Mon2Ask, 0x0822430C
+	@ current=EventText_JP_0822434C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Accept, 0x0822434C
+	@ current=EventText_JP_0822437C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Reject, 0x0822437C
+	@ current=EventText_JP_08224395
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice13Intro, 0x08224395
+	@ current=EventText_JP_082243D3
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice13Mon1, 0x082243D3
+	@ current=EventText_JP_082243EC
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice13Mon2Ask, 0x082243EC
+	@ current=EventText_JP_08224441
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice13Accept, 0x08224441
+	@ current=EventText_JP_08224476
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice13Reject, 0x08224476
+	@ current=EventText_JP_08224494
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Intro, 0x08224494
+	@ current=EventText_JP_082244E5
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Mon1, 0x082244E5
+	@ current=EventText_JP_08224500
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Mon2Ask, 0x08224500
+	@ current=EventText_JP_08224558
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Accept, 0x08224558
+	@ current=EventText_JP_08224586
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Reject, 0x08224586
+	@ current=EventText_JP_082245A0
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice15Intro, 0x082245A0
+	@ current=EventText_JP_082245D1
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice15Mon1, 0x082245D1
+	@ current=EventText_JP_082245EE
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice15Mon2Ask, 0x082245EE
+	@ current=EventText_JP_08224631
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice15Accept, 0x08224631
+	@ current=EventText_JP_0822465F
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice15Reject, 0x0822465F
+	@ current=EventText_JP_0822467F
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Intro, 0x0822467F
+	@ current=EventText_JP_082246A0
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Mon1, 0x082246A0
+	@ current=-
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Mon2Ask, 0x082246CC
+	@ current=EventText_JP_0822470E
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Accept, 0x0822470E
+	@ current=EventText_JP_0822475A
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Reject, 0x0822475A
+	@ current=EventText_JP_0822477D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassIntro, 0x0822477D
+	@ current=EventText_JP_0822478C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassMon1, 0x0822478C
+	@ current=EventText_JP_082247A3
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassMon2Ask, 0x082247A3
+	@ current=EventText_JP_082247D0
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassAccept, 0x082247D0
+	@ current=EventText_JP_082247E9
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassReject, 0x082247E9
+	@ current=EventText_JP_0822480C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterIntro, 0x0822480C
+	@ current=EventText_JP_08224821
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterMon1, 0x08224821
+	@ current=EventText_JP_08224836
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterMon2Ask, 0x08224836
+	@ current=EventText_JP_08224860
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterAccept, 0x08224860
+	@ current=EventText_JP_08224879
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterReject, 0x08224879
+	@ current=EventText_JP_08224898
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerIntro, 0x08224898
+	@ current=EventText_JP_082248AB
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerMon1, 0x082248AB
+	@ current=EventText_JP_082248BB
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerMon2Ask, 0x082248BB
+	@ current=EventText_JP_082248EE
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerAccept, 0x082248EE
+	@ current=EventText_JP_0822490E
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerReject, 0x0822490E
+	@ current=EventText_JP_08224925
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyIntro, 0x08224925
+	@ current=EventText_JP_0822493F
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyMon1, 0x0822493F
+	@ current=EventText_JP_08224951
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyMon2Ask, 0x08224951
+	@ current=EventText_JP_0822497E
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyAccept, 0x0822497E
+	@ current=EventText_JP_08224995
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyReject, 0x08224995
+	@ current=EventText_JP_082249B8
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanIntro, 0x082249B8
+	@ current=EventText_JP_082249C8
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanMon1, 0x082249C8
+	@ current=EventText_JP_082249DA
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanMon2Ask, 0x082249DA
+	@ current=EventText_JP_08224A01
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanAccept, 0x08224A01
+	@ current=EventText_JP_08224A20
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanReject, 0x08224A20
+	@ current=EventText_JP_08224A3D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_LadyIntro, 0x08224A3D
+	@ current=EventText_JP_08224A54
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_LadyMon1, 0x08224A54
+	@ current=EventText_JP_08224A67
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_LadyMon2Ask, 0x08224A67
+	@ current=-
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_LadyAccept, 0x08224AA1
+	@ current=EventScript_08224AC6,EventText_JP_08224AC6
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_LadyReject, 0x08224AC6
+	@ current=EventText_JP_08224AE8
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFIntro, 0x08224AE8
+	@ current=EventText_JP_08224AF9
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFMon1, 0x08224AF9
+	@ current=EventText_JP_08224B0E
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFMon2Ask, 0x08224B0E
+	@ current=EventText_JP_08224B38
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFAccept, 0x08224B38
+	@ current=EventText_JP_08224B51
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFReject, 0x08224B51
+	@ current=EventText_JP_08224B6C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherIntro, 0x08224B6C
+	@ current=EventText_JP_08224B81
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherMon1, 0x08224B81
+	@ current=EventText_JP_08224B93
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherMon2Ask, 0x08224B93
+	@ current=EventText_JP_08224BC1
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherAccept, 0x08224BC1
+	@ current=EventText_JP_08224BE4
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherReject, 0x08224BE4
+	@ current=EventText_JP_08224C02
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidMIntro, 0x08224C02
+	@ current=EventText_JP_08224C1A
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidMMon1, 0x08224C1A
+	@ current=EventText_JP_08224C2C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidMMon2Ask, 0x08224C2C
+	@ current=EventText_JP_08224C5E
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidMAccept, 0x08224C5E
+	@ current=EventText_JP_08224C83
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidMReject, 0x08224C83
+	@ current=EventText_JP_08224CAF
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RichBoyIntro, 0x08224CAF
+	@ current=EventText_JP_08224CC1
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RichBoyMon1, 0x08224CC1
+	@ current=EventText_JP_08224CD1
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RichBoyMon2Ask, 0x08224CD1
+	@ current=EventText_JP_08224CFD
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RichBoyAccept, 0x08224CFD
+	@ current=EventText_JP_08224D1F
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RichBoyReject, 0x08224D1F
+	@ current=-
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BlackBeltIntro, 0x08224D3F
+	@ current=EventText_JP_08224D55
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BlackBeltMon1, 0x08224D55
+	@ current=EventText_JP_08224D6A
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BlackBeltMon2Ask, 0x08224D6A
+	@ current=EventText_JP_08224D9E
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BlackBeltAccept, 0x08224D9E
+	@ current=EventText_JP_08224DBC
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BlackBeltReject, 0x08224DBC
+	@ current=EventText_JP_08224DDD
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFIntro, 0x08224DDD
+	@ current=EventText_JP_08224DF3
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFMon1, 0x08224DF3
+	@ current=EventText_JP_08224E04
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFMon2Ask, 0x08224E04
+	@ current=EventText_JP_08224E2D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFAccept, 0x08224E2D
+	@ current=EventText_JP_08224E53
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFReject, 0x08224E53
+	@ current=EventText_JP_08224E71
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacIntro, 0x08224E71
+	@ current=EventText_JP_08224E8D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacMon1, 0x08224E8D
+	@ current=EventText_JP_08224EA1
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacMon2Ask, 0x08224EA1
+	@ current=EventText_JP_08224ED2
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacAccept, 0x08224ED2
+	@ current=EventText_JP_08224EF3
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacReject, 0x08224EF3
+	@ current=EventText_JP_08224F08
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMIntro, 0x08224F08
+	@ current=EventText_JP_08224F1D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMMon1, 0x08224F1D
+	@ current=EventText_JP_08224F32
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMMon2Ask, 0x08224F32
+	@ current=EventText_JP_08224F62
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMAccept, 0x08224F62
+	@ current=EventText_JP_08224F87
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMReject, 0x08224F87
+	@ current=EventText_JP_08224FA0
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteFIntro, 0x08224FA0
+	@ current=EventText_JP_08224FB9
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteFMon1, 0x08224FB9
+	@ current=EventText_JP_08224FCB
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteFMon2Ask, 0x08224FCB
+	@ current=EventText_JP_08224FF9
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteFAccept, 0x08224FF9
+	@ current=EventText_JP_0822501D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteFReject, 0x0822501D
+	@ current=EventText_JP_0822503C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMIntro, 0x0822503C
+	@ current=EventText_JP_08225050
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMMon1, 0x08225050
+	@ current=EventText_JP_08225060
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMMon2Ask, 0x08225060
+	@ current=EventText_JP_08225092
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMAccept, 0x08225092
+	@ current=EventText_JP_082250B1
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMReject, 0x082250B1
+	@ current=EventText_JP_082250D0
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlIntro, 0x082250D0
+	@ current=EventText_JP_082250DF
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlMon1, 0x082250DF
+	@ current=EventText_JP_082250EF
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlMon2Ask, 0x082250EF
+	@ current=EventText_JP_08225117
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlAccept, 0x08225117
+	@ current=EventText_JP_0822513B
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlReject, 0x0822513B
+	@ current=EventText_JP_0822515C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteMIntro, 0x0822515C
+	@ current=EventText_JP_0822516C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteMMon1, 0x0822516C
+	@ current=EventText_JP_0822517C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteMMon2Ask, 0x0822517C
+	@ current=EventText_JP_082251B1
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteMAccept, 0x082251B1
+	@ current=EventText_JP_082251D2
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteMReject, 0x082251D2
+	@ current=EventText_JP_082251F2
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMIntro, 0x082251F2
+	@ current=EventText_JP_08225204
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMMon1, 0x08225204
+	@ current=EventText_JP_08225215
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMMon2Ask, 0x08225215
+	@ current=EventText_JP_08225243
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMAccept, 0x08225243
+	@ current=EventText_JP_08225266
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMReject, 0x08225266
+	@ current=EventText_JP_0822528D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristIntro, 0x0822528D
+	@ current=EventText_JP_082252A1
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristMon1, 0x082252A1
+	@ current=EventText_JP_082252B3
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristMon2Ask, 0x082252B3
+	@ current=EventText_JP_082252E5
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristAccept, 0x082252E5
+	@ current=EventText_JP_08225303
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristReject, 0x08225303
+	@ current=-
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanIntro, 0x0822532C
+	@ current=EventText_JP_08225344
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanMon1, 0x08225344
+	@ current=EventText_JP_08225357
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanMon2Ask, 0x08225357
+	@ current=EventText_JP_0822538B
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanAccept, 0x0822538B
+	@ current=EventText_JP_082253AF
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanReject, 0x082253AF
+	@ current=-
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMIntro, 0x082253CF
+	@ current=EventScript_082253E7,EventText_JP_082253E7
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMMon1, 0x082253E7
+	@ current=EventText_JP_082253FD
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMMon2Ask, 0x082253FD
+	@ current=EventText_JP_0822542E
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMAccept, 0x0822542E
+	@ current=EventText_JP_08225450
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMReject, 0x08225450
+	@ current=EventText_JP_0822546C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMIntro, 0x0822546C
+	@ current=EventText_JP_0822547D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMMon1, 0x0822547D
+	@ current=EventText_JP_0822549C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMMon2Ask, 0x0822549C
+	@ current=EventText_JP_082254BE
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMAccept, 0x082254BE
+	@ current=EventText_JP_082254E3
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMReject, 0x082254E3
+	@ current=EventText_JP_08225500
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFIntro, 0x08225500
+	@ current=EventText_JP_08225515
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFMon1, 0x08225515
+	@ current=EventText_JP_08225535
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFMon2Ask, 0x08225535
+	@ current=EventText_JP_0822555E
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFAccept, 0x0822555E
+	@ current=EventText_JP_08225579
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFReject, 0x08225579
+	@ current=EventText_JP_08225596
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_DragonTamerIntro, 0x08225596
+	@ current=EventText_JP_082255A6
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_DragonTamerMon1, 0x082255A6
+	@ current=EventText_JP_082255C4
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_DragonTamerMon2Ask, 0x082255C4
+	@ current=EventText_JP_082255E8
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_DragonTamerAccept, 0x082255E8
+	@ current=EventText_JP_0822560D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_DragonTamerReject, 0x0822560D
+	@ current=EventText_JP_08225628
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperIntro, 0x08225628
+	@ current=EventText_JP_08225636
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperMon1, 0x08225636
+	@ current=EventText_JP_0822564E
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperMon2Ask, 0x0822564E
+	@ current=EventText_JP_08225673
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperAccept, 0x08225673
+	@ current=EventText_JP_0822568C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperReject, 0x0822568C
+	@ current=EventText_JP_082256A8
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyIntro, 0x082256A8
+	@ current=EventText_JP_082256B7
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyMon1, 0x082256B7
+	@ current=EventText_JP_082256D5
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyMon2Ask, 0x082256D5
+	@ current=EventText_JP_082256F5
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyAccept, 0x082256F5
+	@ current=EventText_JP_0822570C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyReject, 0x0822570C
+	@ current=EventText_JP_08225729
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyIntro, 0x08225729
+	@ current=EventText_JP_08225742
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyMon1, 0x08225742
+	@ current=EventText_JP_08225758
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyMon2Ask, 0x08225758
+	@ current=EventText_JP_08225786
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyAccept, 0x08225786
+	@ current=EventText_JP_082257AD
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyReject, 0x082257AD
+	@ current=EventText_JP_082257CA
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacIntro, 0x082257CA
+	@ current=EventText_JP_082257DC
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacMon1, 0x082257DC
+	@ current=EventText_JP_082257F9
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacMon2Ask, 0x082257F9
+	@ current=EventText_JP_08225821
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacAccept, 0x08225821
+	@ current=EventText_JP_08225842
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacReject, 0x08225842
+	@ current=EventText_JP_0822585F
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorIntro, 0x0822585F
+	@ current=EventText_JP_08225871
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorMon1, 0x08225871
+	@ current=EventText_JP_0822588D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorMon2Ask, 0x0822588D
+	@ current=EventText_JP_082258B4
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorAccept, 0x082258B4
+	@ current=EventText_JP_082258CF
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorReject, 0x082258CF
+	@ current=EventText_JP_082258EB
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorIntro, 0x082258EB
+	@ current=EventText_JP_08225900
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorMon1, 0x08225900
+	@ current=EventText_JP_0822591D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorMon2Ask, 0x0822591D
+	@ current=EventText_JP_08225941
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorAccept, 0x08225941
+	@ current=EventText_JP_08225961
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorReject, 0x08225961
+	@ current=EventText_JP_08225985
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMIntro, 0x08225985
+	@ current=EventText_JP_08225997
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMMon1, 0x08225997
+	@ current=EventText_JP_082259B5
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMMon2Ask, 0x082259B5
+	@ current=EventText_JP_082259D9
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMAccept, 0x082259D9
+	@ current=EventText_JP_082259F3
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMReject, 0x082259F3
+	@ current=EventText_JP_08225A10
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFIntro, 0x08225A10
+	@ current=EventText_JP_08225A24
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFMon1, 0x08225A24
+	@ current=EventText_JP_08225A43
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFMon2Ask, 0x08225A43
+	@ current=EventText_JP_08225A66
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFAccept, 0x08225A66
+	@ current=EventText_JP_08225A84
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFReject, 0x08225A84
+	@ current=-
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyIntro, 0x08225A9C
+	@ current=EventText_JP_08225AB5
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyMon1, 0x08225AB5
+	@ current=EventText_JP_08225AD5
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyMon2Ask, 0x08225AD5
+	@ current=EventText_JP_08225AFF
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyAccept, 0x08225AFF
+	@ current=EventText_JP_08225B1C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyReject, 0x08225B1C
+	@ current=EventText_JP_08225B3C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacIntro, 0x08225B3C
+	@ current=EventText_JP_08225B4C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacMon1, 0x08225B4C
+	@ current=EventText_JP_08225B6A
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacMon2Ask, 0x08225B6A
+	@ current=EventText_JP_08225B90
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacAccept, 0x08225B90
+	@ current=EventText_JP_08225BAC
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacReject, 0x08225BAC
+	@ current=EventText_JP_08225BC7
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMIntro, 0x08225BC7
+	@ current=EventText_JP_08225BD8
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMMon1, 0x08225BD8
+	@ current=EventText_JP_08225BF6
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMMon2Ask, 0x08225BF6
+	@ current=EventText_JP_08225C18
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMAccept, 0x08225C18
+	@ current=EventText_JP_08225C32
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMReject, 0x08225C32
+	@ current=EventText_JP_08225C54
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFIntro, 0x08225C54
+	@ current=EventText_JP_08225C67
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFMon1, 0x08225C67
+	@ current=EventText_JP_08225C85
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFMon2Ask, 0x08225C85
+	@ current=EventText_JP_08225CA9
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFAccept, 0x08225CA9
+	@ current=EventText_JP_08225CC4
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFReject, 0x08225CC4
+	@ current=EventText_JP_08225CE5
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacIntro, 0x08225CE5
+	@ current=EventText_JP_08225CF7
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacMon1, 0x08225CF7
+	@ current=EventText_JP_08225D15
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacMon2Ask, 0x08225D15
+	@ current=EventText_JP_08225D39
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacAccept, 0x08225D39
+	@ current=EventText_JP_08225D54
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacReject, 0x08225D54
+	@ current=EventText_JP_08225D73
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerIntro, 0x08225D73
+	@ current=EventText_JP_08225D84
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerMon1, 0x08225D84
+	@ current=EventText_JP_08225DA3
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerMon2Ask, 0x08225DA3
+	@ current=EventText_JP_08225DC9
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerAccept, 0x08225DC9
+	@ current=EventText_JP_08225DE6
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerReject, 0x08225DE6
+	@ current=EventText_JP_08225E00
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperIntro, 0x08225E00
+	@ current=EventText_JP_08225E10
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperMon1, 0x08225E10
+	@ current=EventText_JP_08225E2D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperMon2Ask, 0x08225E2D
+	@ current=EventText_JP_08225E50
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperAccept, 0x08225E50
+	@ current=EventText_JP_08225E6B
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperReject, 0x08225E6B
+	@ current=EventText_JP_08225E83
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerIntro, 0x08225E83
+	@ current=EventText_JP_08225E97
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerMon1, 0x08225E97
+	@ current=EventText_JP_08225EB6
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerMon2Ask, 0x08225EB6
+	@ current=EventText_JP_08225EDD
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerAccept, 0x08225EDD
+	@ current=EventText_JP_08225EFE
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerReject, 0x08225EFE
+	@ current=EventText_JP_08225F18
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMIntro, 0x08225F18
+	@ current=EventText_JP_08225F27
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMMon1, 0x08225F27
+	@ current=EventText_JP_08225F44
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMMon2Ask, 0x08225F44
+	@ current=EventText_JP_08225F67
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMAccept, 0x08225F67
+	@ current=EventText_JP_08225F82
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMReject, 0x08225F82
+	@ current=EventText_JP_08225F9B
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFIntro, 0x08225F9B
+	@ current=EventText_JP_08225FAA
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFMon1, 0x08225FAA
+	@ current=EventText_JP_08225FC9
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFMon2Ask, 0x08225FC9
+	@ current=EventText_JP_08225FEA
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFAccept, 0x08225FEA
+	@ current=EventText_JP_08226006
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFReject, 0x08226006
+	@ current=EventText_JP_0822601F
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFIntro, 0x0822601F
+	@ current=EventText_JP_08226030
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFMon1, 0x08226030
+	@ current=EventText_JP_0822604F
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFMon2Ask, 0x0822604F
+	@ current=EventText_JP_08226079
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFAccept, 0x08226079
+	@ current=EventText_JP_0822609A
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFReject, 0x0822609A
+	@ current=EventText_JP_082260B6
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFIntro, 0x082260B6
+	@ current=EventText_JP_082260C8
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFMon1, 0x082260C8
+	@ current=EventText_JP_082260E6
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFMon2Ask, 0x082260E6
+	@ current=EventText_JP_0822610A
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFAccept, 0x0822610A
+	@ current=EventText_JP_08226125
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFReject, 0x08226125
+	@ current=EventText_JP_08226143
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFIntro, 0x08226143
+	@ current=EventText_JP_0822615C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFMon1, 0x0822615C
+	@ current=EventText_JP_0822617D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFMon2Ask, 0x0822617D
+	@ current=-
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFAccept, 0x082261A6
+	@ current=EventScript_082261CE,EventText_JP_082261CE
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFReject, 0x082261CE
+	@ current=EventText_JP_082261ED
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerFIntro, 0x082261ED
+	@ current=EventText_JP_082261FF
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerFMon1, 0x082261FF
+	@ current=EventText_JP_0822621D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerFMon2Ask, 0x0822621D
+	@ current=EventText_JP_08226240
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerFAccept, 0x08226240
+	@ current=EventText_JP_0822625D
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerFReject, 0x0822625D
+	@ current=EventText_JP_08226276
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMIntro, 0x08226276
+	@ current=EventText_JP_08226286
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon1, 0x08226286
+	@ current=EventText_JP_082262A3
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon2Ask, 0x082262A3
+	@ current=EventText_JP_082262C6
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMAccept, 0x082262C6
+	@ current=EventText_JP_082262E1
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMReject, 0x082262E1
+	@ current=EventText_JP_082262FB
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteFIntro, 0x082262FB
+	@ current=EventText_JP_0822630C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteFMon1, 0x0822630C
+	@ current=EventText_JP_0822632A
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteFMon2Ask, 0x0822632A
+	@ current=EventText_JP_0822634C
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteFAccept, 0x0822634C
+	@ current=EventText_JP_08226367
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteFReject, 0x08226367
+	@ current=EventText_JP_0822637F
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerMIntro, 0x0822637F
+	@ current=EventText_JP_0822638E
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerMMon1, 0x0822638E
+	@ current=EventText_JP_082263AA
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerMMon2Ask, 0x082263AA
+	@ current=EventText_JP_082263CB
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerMAccept, 0x082263CB
+	@ current=EventText_JP_082263E6
+	.set BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerMReject, 0x082263E6
+
+	@ Five partner-room strings per apprentice/trainer class.
+sPartnerApprenticeTexts1:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Reject
+sPartnerApprenticeTexts2:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice2Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice2Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice2Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice2Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice2Reject
+sPartnerApprenticeTexts3:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice3Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice3Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice3Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice3Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice3Reject
+sPartnerApprenticeTexts4:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Reject
+sPartnerApprenticeTexts5:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice5Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice5Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice5Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice5Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice5Reject
+sPartnerApprenticeTexts6:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice6Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice6Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice6Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice6Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice6Reject
+sPartnerApprenticeTexts7:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Reject
+sPartnerApprenticeTexts8:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice8Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice8Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice8Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice8Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice8Reject
+sPartnerApprenticeTexts9:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice9Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice9Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice9Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice9Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice9Reject
+sPartnerApprenticeTexts10:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Reject
+sPartnerApprenticeTexts11:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Reject
+sPartnerApprenticeTexts12:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Reject
+sPartnerApprenticeTexts13:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice13Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice13Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice13Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice13Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice13Reject
+sPartnerApprenticeTexts14:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Reject
+sPartnerApprenticeTexts15:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice15Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice15Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice15Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice15Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice15Reject
+sPartnerApprenticeTexts16:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Intro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Mon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Mon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Accept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Reject
+sPartnerTextsLass:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassReject
+sPartnerTextsYoungster:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterReject
+sPartnerTextsHiker:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerReject
+sPartnerTextsBeauty:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyReject
+sPartnerTextsFisherman:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanReject
+sPartnerTextsLady:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_LadyIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_LadyMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_LadyMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_LadyAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_LadyReject
+sPartnerTextsCyclingTriathleteF:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFReject
+sPartnerTextsBugCatcher:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherReject
+sPartnerTextsSchoolKidM:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidMIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidMMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidMMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidMAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidMReject
+sPartnerTextsRichBoy:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_RichBoyIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RichBoyMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RichBoyMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RichBoyAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RichBoyReject
+sPartnerTextsBlackBelt:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_BlackBeltIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BlackBeltMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BlackBeltMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BlackBeltAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BlackBeltReject
+sPartnerTextsTuberF:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFReject
+sPartnerTextsHexManiac:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacReject
+sPartnerTextsPkmnBreederM:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMReject
+sPartnerTextsRunningTriathleteF:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteFIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteFMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteFMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteFAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteFReject
+sPartnerTextsRunningTriathleteM:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMReject
+sPartnerTextsBattleGirl:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlReject
+sPartnerTextsCyclingTriathleteM:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteMIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteMMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteMMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteMAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteMReject
+sPartnerTextsTuberM:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMReject
+sPartnerTextsGuitarist:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristReject
+sPartnerTextsGentleman:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanReject
+sPartnerTextsPokefanM:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMReject
+sPartnerTextsExpertM:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMReject
+sPartnerTextsExpertF:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFReject
+sPartnerTextsDragonTamer:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_DragonTamerIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_DragonTamerMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_DragonTamerMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_DragonTamerAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_DragonTamerReject
+sPartnerTextsBirdKeeper:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperReject
+sPartnerTextsNinjaBoy:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyReject
+sPartnerTextsParasolLady:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyReject
+sPartnerTextsBugManiac:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacReject
+sPartnerTextsSailor:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorReject
+sPartnerTextsCollector:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorReject
+sPartnerTextsPkmnRangerM:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMReject
+sPartnerTextsPkmnRangerF:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFReject
+sPartnerTextsAromaLady:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyReject
+sPartnerTextsRuinManiac:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacReject
+sPartnerTextsCoolTrainerM:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMReject
+sPartnerTextsCoolTrainerF:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFReject
+sPartnerTextsPokemaniac:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacReject
+sPartnerTextsKindler:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerReject
+sPartnerTextsCamper:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperReject
+sPartnerTextsPicnicker:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerReject
+sPartnerTextsPsychicM:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMReject
+sPartnerTextsPsychicF:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFReject
+sPartnerTextsSchoolKidF:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFReject
+sPartnerTextsPkmnBreederF:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFReject
+sPartnerTextsPokefanF:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFReject
+sPartnerTextsSwimmerF:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerFIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerFMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerFMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerFAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerFReject
+sPartnerTextsSwimmingTriathleteM:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMReject
+sPartnerTextsSwimmingTriathleteF:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteFIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteFMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteFMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteFAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteFReject
+sPartnerTextsSwimmerM:
+	.4byte BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerMIntro, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerMMon1, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerMMon2Ask, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerMAccept, BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerMReject
+
+	@ Maps a facility class to its five-string partner-room table.
+	.globl sPartnerTrainerTextTables
+sPartnerTrainerTextTables: @ 0x085BC444
+	.4byte FACILITY_CLASS_LASS, sPartnerTextsLass
+	.4byte FACILITY_CLASS_YOUNGSTER, sPartnerTextsYoungster
+	.4byte FACILITY_CLASS_HIKER, sPartnerTextsHiker
+	.4byte FACILITY_CLASS_BEAUTY, sPartnerTextsBeauty
+	.4byte FACILITY_CLASS_FISHERMAN, sPartnerTextsFisherman
+	.4byte FACILITY_CLASS_LADY, sPartnerTextsLady
+	.4byte FACILITY_CLASS_CYCLING_TRIATHLETE_F, sPartnerTextsCyclingTriathleteF
+	.4byte FACILITY_CLASS_BUG_CATCHER, sPartnerTextsBugCatcher
+	.4byte FACILITY_CLASS_SCHOOL_KID_M, sPartnerTextsSchoolKidM
+	.4byte FACILITY_CLASS_RICH_BOY, sPartnerTextsRichBoy
+	.4byte FACILITY_CLASS_BLACK_BELT, sPartnerTextsBlackBelt
+	.4byte FACILITY_CLASS_TUBER_F, sPartnerTextsTuberF
+	.4byte FACILITY_CLASS_HEX_MANIAC, sPartnerTextsHexManiac
+	.4byte FACILITY_CLASS_PKMN_BREEDER_M, sPartnerTextsPkmnBreederM
+	.4byte FACILITY_CLASS_RUNNING_TRIATHLETE_F, sPartnerTextsRunningTriathleteF
+	.4byte FACILITY_CLASS_RUNNING_TRIATHLETE_M, sPartnerTextsRunningTriathleteM
+	.4byte FACILITY_CLASS_BATTLE_GIRL, sPartnerTextsBattleGirl
+	.4byte FACILITY_CLASS_CYCLING_TRIATHLETE_M, sPartnerTextsCyclingTriathleteM
+	.4byte FACILITY_CLASS_TUBER_M, sPartnerTextsTuberM
+	.4byte FACILITY_CLASS_GUITARIST, sPartnerTextsGuitarist
+	.4byte FACILITY_CLASS_GENTLEMAN, sPartnerTextsGentleman
+	.4byte FACILITY_CLASS_POKEFAN_M, sPartnerTextsPokefanM
+	.4byte FACILITY_CLASS_EXPERT_M, sPartnerTextsExpertM
+	.4byte FACILITY_CLASS_EXPERT_F, sPartnerTextsExpertF
+	.4byte FACILITY_CLASS_DRAGON_TAMER, sPartnerTextsDragonTamer
+	.4byte FACILITY_CLASS_BIRD_KEEPER, sPartnerTextsBirdKeeper
+	.4byte FACILITY_CLASS_NINJA_BOY, sPartnerTextsNinjaBoy
+	.4byte FACILITY_CLASS_PARASOL_LADY, sPartnerTextsParasolLady
+	.4byte FACILITY_CLASS_BUG_MANIAC, sPartnerTextsBugManiac
+	.4byte FACILITY_CLASS_SAILOR, sPartnerTextsSailor
+	.4byte FACILITY_CLASS_COLLECTOR, sPartnerTextsCollector
+	.4byte FACILITY_CLASS_PKMN_RANGER_M, sPartnerTextsPkmnRangerM
+	.4byte FACILITY_CLASS_PKMN_RANGER_F, sPartnerTextsPkmnRangerF
+	.4byte FACILITY_CLASS_AROMA_LADY, sPartnerTextsAromaLady
+	.4byte FACILITY_CLASS_RUIN_MANIAC, sPartnerTextsRuinManiac
+	.4byte FACILITY_CLASS_COOLTRAINER_M, sPartnerTextsCoolTrainerM
+	.4byte FACILITY_CLASS_COOLTRAINER_F, sPartnerTextsCoolTrainerF
+	.4byte FACILITY_CLASS_POKEMANIAC, sPartnerTextsPokemaniac
+	.4byte FACILITY_CLASS_KINDLER, sPartnerTextsKindler
+	.4byte FACILITY_CLASS_CAMPER, sPartnerTextsCamper
+	.4byte FACILITY_CLASS_PICNICKER, sPartnerTextsPicnicker
+	.4byte FACILITY_CLASS_PSYCHIC_M, sPartnerTextsPsychicM
+	.4byte FACILITY_CLASS_PSYCHIC_F, sPartnerTextsPsychicF
+	.4byte FACILITY_CLASS_SCHOOL_KID_F, sPartnerTextsSchoolKidF
+	.4byte FACILITY_CLASS_PKMN_BREEDER_F, sPartnerTextsPkmnBreederF
+	.4byte FACILITY_CLASS_POKEFAN_F, sPartnerTextsPokefanF
+	.4byte FACILITY_CLASS_SWIMMER_F, sPartnerTextsSwimmerF
+	.4byte FACILITY_CLASS_SWIMMING_TRIATHLETE_M, sPartnerTextsSwimmingTriathleteM
+	.4byte FACILITY_CLASS_SWIMMING_TRIATHLETE_F, sPartnerTextsSwimmingTriathleteF
+	.4byte FACILITY_CLASS_SWIMMER_M, sPartnerTextsSwimmerM
+
+	@ Apprentice partner-room string-table pointers.
+	.globl sPartnerApprenticeTextTables
+sPartnerApprenticeTextTables: @ 0x085BC5D4
+	.4byte sPartnerApprenticeTexts1, sPartnerApprenticeTexts2, sPartnerApprenticeTexts3, sPartnerApprenticeTexts4, sPartnerApprenticeTexts5, sPartnerApprenticeTexts6, sPartnerApprenticeTexts7, sPartnerApprenticeTexts8
+	.4byte sPartnerApprenticeTexts9, sPartnerApprenticeTexts10, sPartnerApprenticeTexts11, sPartnerApprenticeTexts12, sPartnerApprenticeTexts13, sPartnerApprenticeTexts14, sPartnerApprenticeTexts15, sPartnerApprenticeTexts16
+
+	@ Steven's fixed multi-battle partner party.
+	.globl sStevenMons
+sStevenMons: @ 0x085BC614
+	@ [0] level 42
+	.2byte SPECIES_METANG
+	.byte 31, 42, NATURE_BRAVE
+	.byte 0, 252, 252, 0, 6, 0
+	.byte 0 @ ABI padding before u16 moves
+	.2byte MOVE_LIGHT_SCREEN, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_METAL_CLAW
+	@ [1] level 43
+	.2byte SPECIES_SKARMORY
+	.byte 31, 43, NATURE_IMPISH
+	.byte 252, 0, 0, 0, 6, 252
+	.byte 0 @ ABI padding before u16 moves
+	.2byte MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_PROTECT, MOVE_STEEL_WING
+	@ [2] level 44
+	.2byte SPECIES_AGGRON
+	.byte 31, 44, NATURE_ADAMANT
+	.byte 0, 252, 0, 0, 252, 6
+	.byte 0 @ ABI padding before u16 moves
+	.2byte MOVE_THUNDER, MOVE_PROTECT, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW
+
+	@ Size is intentionally not asserted with GAS .if here.
+	@ The complete 0x830-byte region is reconstructed byte-for-byte
+	@ against baserom.gba during preflight, and full ROM compare is
+	@ authoritative after assembly.
+
+	@ Compatibility aliases for previous auto-generated labels.
+	.globl gBattleU16Table_Rom_5BBE20
+	.set gBattleU16Table_Rom_5BBE20, gTowerMaleFacilityClasses
+	.globl gBattleU16Table_Rom_5BBE3E
+	.set gBattleU16Table_Rom_5BBE3E, gTowerFemaleFacilityClasses
+	.globl gBattleU16Table_Rom_5BBE52
+	.set gBattleU16Table_Rom_5BBE52, gTowerMaleTrainerGfxIds
+	.globl gBattleU16Table_Rom_5BBE70
+	.set gBattleU16Table_Rom_5BBE70, gTowerFemaleTrainerGfxIds
+	.globl gBattleTowerData_085BBE84
+	.set gBattleTowerData_085BBE84, sRubyFacilityClassToEmerald
+	.globl gBattleTowerData_085BC444
+	.set gBattleTowerData_085BC444, sPartnerTrainerTextTables
+	.globl gBattleTowerData_085BC5D4
+	.set gBattleTowerData_085BC5D4, sPartnerApprenticeTextTables
+	.globl gBattleTowerData_085BC614
+	.set gBattleTowerData_085BC614, sStevenMons
+	.globl gBattleTowerData_085BC619
+	.set gBattleTowerData_085BC619, sStevenMons + 5
+	.globl gBattleTowerData_085BC620
+	.set gBattleTowerData_085BC620, sStevenMons + 12
