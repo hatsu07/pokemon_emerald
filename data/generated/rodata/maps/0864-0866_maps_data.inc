@@ -2569,13 +2569,25 @@ gTauntHandSpriteTemplate: @ 0x0856EE30
 	rodata_sprite_template 0x27E6, 0x27E6, gBattleAnimOam_AffineOff_ObjNormal_32x32, gTauntHandAnims, 0, gDummySpriteAffineAnimTable, sub_08103BE0
 	.globl gBattleAnimEffects3Data_0856EE48
 gBattleAnimEffects3Data_0856EE48: @ 0x0856EE48
-	@ analyzed canonical ROM range 0x0856EE48-0x0856EF93
+	.globl gFollowMeHandSpriteTemplate_Static
+gFollowMeHandSpriteTemplate_Static: @ 0x0856EE48
+	rodata_sprite_template 0x2750, 0x2750, gBattleAnimOam_AffineOff_ObjNormal_32x32, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08103C98
+	.globl gBattleAnimEffects3Anim_0856EE60
+gBattleAnimEffects3Anim_0856EE60: @ 0x0856EE60
+	rodata_anim_frame 4, 1
+	rodata_anim_end
+	.globl gBattleAnimEffects3Anims_0856EE68
+gBattleAnimEffects3Anims_0856EE68: @ 0x0856EE68
+	semantic_anim_table_entry gBattleAnimEffects3Anim_0856EE60
+	.globl gBattleAnimEffects3SpriteTemplate_2758
+gBattleAnimEffects3SpriteTemplate_2758: @ 0x0856EE6C
+	rodata_sprite_template 0x2758, 0x2758, gBattleAnimOam_AffineOff_ObjNormal_16x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08103CE8
+	.globl gBattleAnimEffects3Data_0856EE84
+gBattleAnimEffects3Data_0856EE84: @ 0x0856EE84
+	@ analyzed canonical ROM range 0x0856EE84-0x0856EF93
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x14C
-	.2byte 0x2750, 0x2750, 0xD020, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000
-	.2byte 0xF310, 0x082B, 0x3C99, 0x0810, 0x0004, 0x0001, 0xFFFF, 0x0000
-	.2byte 0xEE60, 0x0856, 0x2758, 0x2758, 0xD018, 0x084F, 0xF304, 0x082B
-	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x3CE9, 0x0810, 0x0000, 0x0000
+	@ ANALYSIS: RAW_BLOCK size=0x110
+	.2byte 0x0000, 0x0000
 	.2byte 0xF2F8, 0x082B, 0xF304, 0x082B, 0x0000, 0x0000, 0xF310, 0x082B
 	.2byte 0x3DDD, 0x0810, 0x27A1, 0x27A1, 0xD1A8, 0x084F, 0xF304, 0x082B
 	.2byte 0x0000, 0x0000, 0x2C44, 0x0857, 0x3E71, 0x0810, 0x0000, 0x0009
