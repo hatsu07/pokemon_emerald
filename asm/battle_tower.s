@@ -14,15 +14,11 @@ sub_08161E88: @ 0x08161E88
 	ldr r0, [r0]
 	bl _call_via_r0
 	pop {r0}
-	thumb_func_end sub_08161E88
-
-	thumb_func_start nullsub_61
-nullsub_61: @ 0x08161E9C
 	bx r0
 	.align 2, 0
-_08161EA0: .4byte 0x085BE8B0
+_08161EA0: .4byte sBattleTowerFuncs
 _08161EA4: .4byte 0x02037280
-	thumb_func_end nullsub_61
+	thumb_func_end sub_08161E88
 
 	thumb_func_start sub_08161EA8
 sub_08161EA8: @ 0x08161EA8
@@ -108,7 +104,7 @@ _08161F4C: .4byte 0x00000CA9
 _08161F50: .4byte 0x000040CE
 _08161F54: .4byte 0x00000CA8
 _08161F58: .4byte 0x00000CDC
-_08161F5C: .4byte gBattleTowerData_085BE8F0
+_08161F5C: .4byte sWinStreakFlags
 _08161F60: .4byte 0x03005AEC
 _08161F64: .4byte 0x0203886A
 	thumb_func_end sub_08161EA8
@@ -174,7 +170,7 @@ _08161FBC:
 	.align 2, 0
 _08161FE0: .4byte 0x02037290
 _08161FE4: .4byte 0x00000CDC
-_08161FE8: .4byte gBattleTowerData_085BE8F0
+_08161FE8: .4byte sWinStreakFlags
 _08161FEC:
 	ldr r1, [r5]
 	adds r0, r1, r4
@@ -258,7 +254,7 @@ _08162064:
 	.align 2, 0
 _08162088: .4byte 0x02037284
 _0816208C: .4byte 0x00000CDC
-_08162090: .4byte gBattleTowerData_085BE8F0
+_08162090: .4byte sWinStreakFlags
 _08162094:
 	ldr r2, [r6]
 	ldr r1, _081620B0
@@ -275,7 +271,7 @@ _08162094:
 	b _081620C8
 	.align 2, 0
 _081620B0: .4byte 0x00000CDC
-_081620B4: .4byte gBattleTowerData_085BE910
+_081620B4: .4byte sWinStreakMasks
 _081620B8:
 	ldr r1, [r6]
 	adds r0, r1, r7
@@ -543,9 +539,9 @@ _081622B8: .4byte 0x00000CA9
 _081622BC: .4byte 0x000040CE
 _081622C0: .4byte 0x000040CF
 _081622C4: .4byte 0x0000076C
-_081622C8: .4byte gBattleTowerData_085BE93A
+_081622C8: .4byte sBattleTowerPartySizes2
 _081622CC: .4byte 0x0000073A
-_081622D0: .4byte gBattleTowerData_085BE930
+_081622D0: .4byte sApprenticeChallengeThreshold
 _081622D4:
 	ldr r4, _08162300
 	bl Random
@@ -752,7 +748,7 @@ sub_0816245C: @ 0x0816245C
 	ldrh r4, [r1]
 	b _0816249E
 	.align 2, 0
-_08162480: .4byte gBattleTowerData_085BE95E
+_08162480: .4byte sFrontierTrainerIdRangesHard
 _08162484:
 	ldr r2, _08162494
 	lsls r1, r3, #2
@@ -763,7 +759,7 @@ _08162484:
 	ldrh r4, [r1]
 	b _0816249E
 	.align 2, 0
-_08162494: .4byte gBattleTowerData_085BE93E
+_08162494: .4byte sFrontierTrainerIdRanges
 _08162498:
 	ldr r1, _081624C4
 	ldrh r0, [r1, #0x1e]
@@ -786,7 +782,7 @@ _0816249E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081624C4: .4byte gBattleTowerData_085BE93E
+_081624C4: .4byte sFrontierTrainerIdRanges
 	thumb_func_end sub_0816245C
 
 	thumb_func_start sub_081624C8
@@ -806,7 +802,7 @@ sub_081624C8: @ 0x081624C8
 	lsls r2, r0, #2
 	b _081624EC
 	.align 2, 0
-_081624E4: .4byte gBattleTowerData_085BE95E
+_081624E4: .4byte sFrontierTrainerIdRangesHard
 _081624E8:
 	ldr r1, _08162504
 	lsls r2, r2, #2
@@ -823,7 +819,7 @@ _081624EC:
 	ldrh r0, [r2]
 	b _08162518
 	.align 2, 0
-_08162504: .4byte gBattleTowerData_085BE93E
+_08162504: .4byte sFrontierTrainerIdRanges
 _08162508:
 	ldr r0, _08162524
 	ldrh r1, [r0, #0x1e]
@@ -840,7 +836,7 @@ _08162518:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08162524: .4byte gBattleTowerData_085BE93E
+_08162524: .4byte sFrontierTrainerIdRanges
 	thumb_func_end sub_081624C8
 
 	thumb_func_start SetBattleFacilityTrainerGfxId
@@ -4197,17 +4193,17 @@ _08163FF8: .4byte 0x00000CB2
 _08163FFC: .4byte 0x00000CA8
 	thumb_func_end SaveBattleTowerProgress
 
-	thumb_func_start SpriteCB_Null6
-SpriteCB_Null6: @ 0x08164000
+	thumb_func_start BattleTowerNop1
+BattleTowerNop1: @ 0x08164000
 	bx lr
 	.align 2, 0
-	thumb_func_end SpriteCB_Null6
+	thumb_func_end BattleTowerNop1
 
-	thumb_func_start GetEreaderTrainerFrontSpriteId
-GetEreaderTrainerFrontSpriteId: @ 0x08164004
+	thumb_func_start BattleTowerNop2
+BattleTowerNop2: @ 0x08164004
 	bx lr
 	.align 2, 0
-	thumb_func_end GetEreaderTrainerFrontSpriteId
+	thumb_func_end BattleTowerNop2
 
 	thumb_func_start sub_08164008
 sub_08164008: @ 0x08164008
@@ -4875,7 +4871,7 @@ _08164544: .4byte 0x00000CB4
 _08164548: .4byte 0x0203B954
 _0816454C: .4byte 0x0203B958
 _08164550: .4byte 0x00000CC4
-_08164554: .4byte gBattleTowerData_085BE930
+_08164554: .4byte sApprenticeChallengeThreshold
 _08164558: .4byte 0x0000073A
 _0816455C: .4byte 0x0000076C
 _08164560:
@@ -6287,8 +6283,8 @@ _081650B8: .4byte 0x00002BBC
 _081650BC: .4byte 0x02024190
 	thumb_func_end FillEReaderTrainerWithPlayerData
 
-	thumb_func_start GetMonCountForBattleMode
-GetMonCountForBattleMode: @ 0x081650C0
+	thumb_func_start GetEreaderTrainerFrontSpriteId
+GetEreaderTrainerFrontSpriteId: @ 0x081650C0
 	ldr r1, _081650D4
 	ldr r0, _081650D8
 	ldr r0, [r0]
@@ -6302,7 +6298,7 @@ GetMonCountForBattleMode: @ 0x081650C0
 _081650D4: .4byte gFacilityClassToPicIndex
 _081650D8: .4byte 0x03005AF0
 _081650DC: .4byte 0x00000BED
-	thumb_func_end GetMonCountForBattleMode
+	thumb_func_end GetEreaderTrainerFrontSpriteId
 
 	thumb_func_start GetEreaderTrainerClassId
 GetEreaderTrainerClassId: @ 0x081650E0
@@ -7231,8 +7227,8 @@ _08165802:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08165814: .4byte gBattleTowerData_085BE986
-_08165818: .4byte gBattleTowerData_085BE992
+_08165814: .4byte sRecordTrainerSpeechWon
+_08165818: .4byte sRecordTrainerSpeechLost
 _0816581C: .4byte 0x0500000B
 	thumb_func_end RubyBattleTowerRecordToEmerald
 

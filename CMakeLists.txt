@@ -1091,6 +1091,72 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # END WEATHER RAW 4BPP PIPELINE
 
 
+    # BEGIN POKEBLOCK USE SCREEN EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/updown.4bpp")
+        set(POKEBLOCK_USE_UPDOWN_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/updown.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}"
+                "${POKEBLOCK_USE_UPDOWN_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_USE_UPDOWN_PNG}"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/updown.gbapal")
+        set(POKEBLOCK_USE_UPDOWN_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/updown.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}"
+                "${POKEBLOCK_USE_UPDOWN_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_USE_UPDOWN_PNG}"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/condition.4bpp.lz")
+        set(POKEBLOCK_USE_CONDITION_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/condition.png")
+        set(POKEBLOCK_USE_LZ77_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/use_screen_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${POKEBLOCK_USE_LZ77_PLAN}"
+                --stem condition
+                "${POKEBLOCK_USE_CONDITION_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_USE_CONDITION_PNG}"
+                "${POKEBLOCK_USE_LZ77_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/condition.gbapal")
+        set(POKEBLOCK_USE_CONDITION_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/condition.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}"
+                "${POKEBLOCK_USE_CONDITION_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_USE_CONDITION_PNG}"
+                "${GBAGFX}"
+            VERBATIM)
+    # END POKEBLOCK USE SCREEN EXACT PIPELINE
+
+
     # BEGIN TILESET RAW 4BPP FALLBACK PIPELINE
     # Handles editable tileset graphics other than the dedicated tiles.4bpp
     # rule above, including animation frames.

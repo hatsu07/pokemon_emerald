@@ -4561,7 +4561,7 @@ _08061338:
 	ands r0, r2
 	cmp r0, #0
 	beq _0806134C
-	bl GetMonCountForBattleMode
+	bl GetEreaderTrainerFrontSpriteId
 _08061346:
 	lsls r0, r0, #0x18
 	lsrs r4, r0, #0x18
@@ -4832,7 +4832,7 @@ _0806157C:
 	ands r0, r2
 	cmp r0, #0
 	beq _08061590
-	bl GetMonCountForBattleMode
+	bl GetEreaderTrainerFrontSpriteId
 _0806158A:
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
