@@ -333,9 +333,9 @@ gTrickHousePuzzle6RotatingGatePuzzleGates: @ 0x0856A4D4
 	rotating_gate_puzzle_gate 10, 19, 2, 2
 	.globl gRotatingGateData_0856A52C
 gRotatingGateData_0856A52C: @ 0x0856A52C
-	@ analyzed canonical ROM range 0x0856A52C-0x0856D93B
+	@ analyzed canonical ROM range 0x0856A52C-0x0856D92B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x3410
+	@ ANALYSIS: RAW_BLOCK size=0x3400
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xD000
@@ -1168,11 +1168,16 @@ gRotatingGateData_0856A52C: @ 0x0856A52C
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
-	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0xC000, 0x2800, 0x0000
-	.2byte 0x0100, 0x8000, 0x2800, 0x0000
+	.2byte 0x0000, 0x0000, 0x0000, 0x0000
+	.globl gRotatingGateOam_64x64
+gRotatingGateOam_64x64: @ 0x0856D92C
+	rodata_sprite_oam_data 0, 1, 0, 0, 0, 0, 0, 0, 3, 0, 2, 2, 0
+	.globl gRotatingGateOam_32x32
+gRotatingGateOam_32x32: @ 0x0856D934
+	rodata_sprite_oam_data 0, 1, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 0
 	@ pret/pokeemerald-jp direct xref for 0x0856D93C: rotating_gate.s: LoadRotatingGatePics
-	.globl gRotatingGateData_0856D93C
-gRotatingGateData_0856D93C: @ 0x0856D93C
+	.globl gRotatingGateSpriteSheets
+gRotatingGateSpriteSheets: @ 0x0856D93C
 	@ analyzed canonical ROM range 0x0856D93C-0x0856DBAB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x270
@@ -1220,13 +1225,13 @@ gRotatingGateData_0856D93C: @ 0x0856D93C
 gRotatingGateData_0856DBAC: @ 0x0856DBAC
 	@ analyzed canonical ROM range 0x0856DBAC-0x0856DBC3
 sSpriteTemplate_0856DBAC: @ 0x0856DBAC
-	rodata_sprite_template 0x1300, 0xFFFF, 0x0856D92C, 0x0856D994, 0, 0x0856DB5C, SpriteCallback_RotatingGate
+	rodata_sprite_template 0x1300, 0xFFFF, gRotatingGateOam_64x64, 0x0856D994, 0, 0x0856DB5C, SpriteCallback_RotatingGate
 	@ pret/pokeemerald-jp direct xref for 0x0856DBC4: rotating_gate.s: RotatingGate_CreateGate
 	.globl gRotatingGateData_0856DBC4
 gRotatingGateData_0856DBC4: @ 0x0856DBC4
 	@ analyzed canonical ROM range 0x0856DBC4-0x0856DBDB
 sSpriteTemplate_0856DBC4: @ 0x0856DBC4
-	rodata_sprite_template 0x1300, 0xFFFF, 0x0856D934, 0x0856D998, 0, 0x0856DB5C, SpriteCallback_RotatingGate
+	rodata_sprite_template 0x1300, 0xFFFF, gRotatingGateOam_32x32, 0x0856D998, 0, 0x0856DB5C, SpriteCallback_RotatingGate
 	@ pret/pokeemerald-jp direct xref for 0x0856DBDC: rotating_gate.s: RotatingGate_GetRotationInfo
 	.globl gRotatingGateData_0856DBDC
 gRotatingGateData_0856DBDC: @ 0x0856DBDC

@@ -570,7 +570,7 @@ LoadRotatingGatePics: @ 0x080FC470
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080FC47C: .4byte gRotatingGateData_0856D93C
+_080FC47C: .4byte gRotatingGateSpriteSheets
 	thumb_func_end LoadRotatingGatePics
 
 	thumb_func_start RotatingGate_DestroyGatesOutsideViewport
