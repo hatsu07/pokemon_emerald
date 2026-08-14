@@ -323,7 +323,7 @@ _080FC294:
 	b _080FC2A8
 	.align 2, 0
 _080FC29C: .4byte 0x02039D10
-_080FC2A0: .4byte gRotatingGateData_0856DBC4
+_080FC2A0: .4byte gRotatingGateSpriteTemplate_32x32
 _080FC2A4:
 	mov r1, sp
 	ldr r0, _080FC33C
@@ -398,7 +398,7 @@ _080FC2A8:
 	adds r0, r5, #0
 	b _080FC346
 	.align 2, 0
-_080FC33C: .4byte gRotatingGateData_0856DBAC
+_080FC33C: .4byte gRotatingGateSpriteTemplate_64x64
 _080FC340: .4byte 0x020205AC
 _080FC344:
 	movs r0, #0x40

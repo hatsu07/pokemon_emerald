@@ -1321,16 +1321,14 @@ gRotatingGateAffineAnimTable: @ 0x0856DB5C
 	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DACC
 	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DAE4
 	@ pret/pokeemerald-jp direct xref for 0x0856DBAC: rotating_gate.s: RotatingGate_CreateGate
-	.globl gRotatingGateData_0856DBAC
-gRotatingGateData_0856DBAC: @ 0x0856DBAC
+	.globl gRotatingGateSpriteTemplate_64x64
+gRotatingGateSpriteTemplate_64x64: @ 0x0856DBAC
 	@ analyzed canonical ROM range 0x0856DBAC-0x0856DBC3
-sSpriteTemplate_0856DBAC: @ 0x0856DBAC
 	rodata_sprite_template 0x1300, 0xFFFF, gRotatingGateOam_64x64, gRotatingGateSpriteAnimTable, 0, gRotatingGateAffineAnimTable, SpriteCallback_RotatingGate
 	@ pret/pokeemerald-jp direct xref for 0x0856DBC4: rotating_gate.s: RotatingGate_CreateGate
-	.globl gRotatingGateData_0856DBC4
-gRotatingGateData_0856DBC4: @ 0x0856DBC4
+	.globl gRotatingGateSpriteTemplate_32x32
+gRotatingGateSpriteTemplate_32x32: @ 0x0856DBC4
 	@ analyzed canonical ROM range 0x0856DBC4-0x0856DBDB
-sSpriteTemplate_0856DBC4: @ 0x0856DBC4
 	rodata_sprite_template 0x1300, 0xFFFF, gRotatingGateOam_32x32, gRotatingGateSpriteAnimTable_Affine, 0, gRotatingGateAffineAnimTable, SpriteCallback_RotatingGate
 	@ pret/pokeemerald-jp direct xref for 0x0856DBDC: rotating_gate.s: RotatingGate_GetRotationInfo
 	.globl gRotatingGateRotationInfo_GateType2
