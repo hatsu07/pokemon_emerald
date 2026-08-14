@@ -1617,8 +1617,8 @@ gRazorLeafParticleSpriteTemplate: @ 0x0856DF74
 	.globl gMoveTwisterParticleSpriteTemplate
 gMoveTwisterParticleSpriteTemplate: @ 0x0856DF8C
 	rodata_sprite_template 0x274F, 0x274F, gBattleAnimOam_AffineOff_ObjNormal_16x16, gRazorLeafParticleAnims, 0, gDummySpriteAffineAnimTable, AnimMoveTwisterParticle
-	.globl gBattleAnimEffects1Data_0856DFA4
-gBattleAnimEffects1Data_0856DFA4: @ 0x0856DFA4
+	.globl gTranslateLinearSingleSineWaveAnim_Tag27B0
+gTranslateLinearSingleSineWaveAnim_Tag27B0: @ 0x0856DFA4
 	rodata_anim_frame 0, 3
 	rodata_anim_frame 0, 3, 1
 	rodata_anim_frame 0, 3, 1, 1
@@ -1626,7 +1626,7 @@ gBattleAnimEffects1Data_0856DFA4: @ 0x0856DFA4
 	rodata_anim_jump 0
 	.globl gTranslateLinearSingleSineWaveAnims_Tag27B0
 gTranslateLinearSingleSineWaveAnims_Tag27B0: @ 0x0856DFB8
-	semantic_anim_table_entry gBattleAnimEffects1Data_0856DFA4
+	semantic_anim_table_entry gTranslateLinearSingleSineWaveAnim_Tag27B0
 	.globl gTranslateLinearSingleSineWaveSpriteTemplate_Tag27B0
 gTranslateLinearSingleSineWaveSpriteTemplate_Tag27B0: @ 0x0856DFBC
 	rodata_sprite_template 0x27B0, 0x27B0, gBattleAnimOam_AffineOff_ObjNormal_32x16, gTranslateLinearSingleSineWaveAnims_Tag27B0, 0, gDummySpriteAffineAnimTable, AnimTranslateLinearSingleSineWave
@@ -1677,8 +1677,6 @@ gConstrictBindingAffineAnims: @ 0x0856E070
 	.globl gConstrictBindingSpriteTemplate
 gConstrictBindingSpriteTemplate: @ 0x0856E078
 	rodata_sprite_template 0x27CA, 0x27CA, gBattleAnimOam_084FD0A8, gConstrictBindingAnims, 0, gConstrictBindingAffineAnims, AnimConstrictBinding
-	.globl gBattleAnimEffects1Data_0856E090
-gBattleAnimEffects1Data_0856E090: @ 0x0856E090
 	.globl gMimicOrbAffineAnim_Grow
 gMimicOrbAffineAnim_Grow: @ 0x0856E090
 	semantic_affine_animcmd_frame 0, 0, 0, 0
@@ -1695,8 +1693,6 @@ gMimicOrbAffineAnims: @ 0x0856E0B8
 	.globl gMimicOrbSpriteTemplate
 gMimicOrbSpriteTemplate: @ 0x0856E0C0
 	rodata_sprite_template 0x27A3, 0x27A3, gBattleAnimOam_AffineDouble_ObjNormal_16x16, gPowerAbsorptionOrbAnims, 0, gMimicOrbAffineAnims, AnimMimicOrb
-	.globl gBattleAnimEffects1Data_0856E0D8
-gBattleAnimEffects1Data_0856E0D8: @ 0x0856E0D8
 	.globl gIngrainRootAnim_Normal
 gIngrainRootAnim_Normal: @ 0x0856E0D8
 	rodata_anim_frame 0, 7
@@ -1735,8 +1731,6 @@ gIngrainRootSpriteTemplate: @ 0x0856E130
 	.globl gFrenzyPlantRootSpriteTemplate
 gFrenzyPlantRootSpriteTemplate: @ 0x0856E148
 	rodata_sprite_template 0x27EF, 0x27EF, gBattleAnimOam_AffineOff_ObjNormal_32x32, gIngrainRootAnims, 0, gDummySpriteAffineAnimTable, AnimFrenzyPlantRoot
-	.globl gBattleAnimEffects1Data_0856E160
-gBattleAnimEffects1Data_0856E160: @ 0x0856E160
 	.globl gIngrainOrbAnim
 gIngrainOrbAnim: @ 0x0856E160
 	rodata_anim_frame 3, 3
@@ -1748,8 +1742,6 @@ gIngrainOrbAnims: @ 0x0856E16C
 	.globl gIngrainOrbSpriteTemplate
 gIngrainOrbSpriteTemplate: @ 0x0856E170
 	rodata_sprite_template 0x27A3, 0x27A3, gBattleAnimOam_AffineOff_ObjNormal_8x8, gIngrainOrbAnims, 0, gDummySpriteAffineAnimTable, AnimIngrainOrb
-	.globl gBattleAnimEffects1Data_0856E188
-gBattleAnimEffects1Data_0856E188: @ 0x0856E188
 	.globl gPresentAnim
 gPresentAnim: @ 0x0856E188
 	rodata_anim_frame 0, 30
