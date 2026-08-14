@@ -357,7 +357,7 @@ QueueAnimTiles_General_Flower: @ 0x080A0494
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A04B4: .4byte gTilesetAnimsData_084E8E70
+_080A04B4: .4byte gTilesetAnims_General_Flower
 _080A04B8: .4byte 0x06003F80
 	thumb_func_end QueueAnimTiles_General_Flower
 
@@ -379,7 +379,7 @@ QueueAnimTiles_General_Water: @ 0x080A04BC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A04DC: .4byte gTilesetAnimsData_084EAC80
+_080A04DC: .4byte gTilesetAnims_General_Water
 _080A04E0: .4byte 0x06003600
 	thumb_func_end QueueAnimTiles_General_Water
 
@@ -401,7 +401,7 @@ QueueAnimTiles_General_SandWaterEdge: @ 0x080A04E4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0504: .4byte gTilesetAnimsData_084EB560
+_080A0504: .4byte gTilesetAnims_General_SandWaterEdge
 _080A0508: .4byte 0x06003A00
 	thumb_func_end QueueAnimTiles_General_SandWaterEdge
 
@@ -422,7 +422,7 @@ QueueAnimTiles_General_Waterfall: @ 0x080A050C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A052C: .4byte gTilesetAnimsData_084EB880
+_080A052C: .4byte gTilesetAnims_General_Waterfall
 _080A0530: .4byte 0x06003E00
 	thumb_func_end QueueAnimTiles_General_Waterfall
 
@@ -1279,7 +1279,7 @@ QueueAnimTiles_General_LandWaterEdge: @ 0x080A0B74
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0B94: .4byte gTilesetAnimsData_084EBD90
+_080A0B94: .4byte gTilesetAnims_General_LandWaterEdge
 _080A0B98: .4byte 0x06003C00
 	thumb_func_end QueueAnimTiles_General_LandWaterEdge
 
@@ -1313,7 +1313,7 @@ QueueAnimTiles_Lavaridge_Steam: @ 0x080A0B9C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0BD8: .4byte gTilesetAnimsData_084EBFA0
+_080A0BD8: .4byte gTilesetAnims_Lavaridge_Steam
 _080A0BDC: .4byte 0x06006400
 _080A0BE0: .4byte 0x06006480
 	thumb_func_end QueueAnimTiles_Lavaridge_Steam
@@ -1336,7 +1336,7 @@ QueueAnimTiles_Pacifidlog_LogBridges: @ 0x080A0BE4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0C04: .4byte gTilesetAnimsData_084ECAF0
+_080A0C04: .4byte gTilesetAnims_Pacifidlog_LogBridges
 _080A0C08: .4byte 0x06007A00
 	thumb_func_end QueueAnimTiles_Pacifidlog_LogBridges
 
@@ -1357,7 +1357,7 @@ QueueAnimTiles_Underwater_Seaweed: @ 0x080A0C0C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0C2C: .4byte gTilesetAnimsData_084ECD00
+_080A0C2C: .4byte gTilesetAnims_Underwater_Seaweed
 _080A0C30: .4byte 0x06007E00
 	thumb_func_end QueueAnimTiles_Underwater_Seaweed
 
@@ -1379,7 +1379,7 @@ QueueAnimTiles_Pacifidlog_WaterCurrents: @ 0x080A0C34
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0C54: .4byte gTilesetAnimsData_084ED510
+_080A0C54: .4byte gTilesetAnims_Pacifidlog_WaterCurrents
 _080A0C58: .4byte 0x06007E00
 	thumb_func_end QueueAnimTiles_Pacifidlog_WaterCurrents
 
@@ -1420,10 +1420,10 @@ QueueAnimTiles_Mauville_Flowers: @ 0x080A0C5C
 	bl AppendTilesetAnimToBuffer
 	b _080A0CE4
 	.align 2, 0
-_080A0CA8: .4byte gTilesetAnimsData_084EDA90
-_080A0CAC: .4byte gTilesetAnimsData_084EDA50
-_080A0CB0: .4byte gTilesetAnimsData_084EDAC0
-_080A0CB4: .4byte gTilesetAnimsData_084EDA70
+_080A0CA8: .4byte gTilesetAnims_Mauville_Flower1
+_080A0CAC: .4byte gTilesetAnims_Mauville_Flower1_VDests
+_080A0CB0: .4byte gTilesetAnims_Mauville_Flower2
+_080A0CB4: .4byte gTilesetAnims_Mauville_Flower2_VDests
 _080A0CB8:
 	movs r0, #3
 	ands r5, r0
@@ -1450,10 +1450,10 @@ _080A0CE4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0CEC: .4byte gTilesetAnimsData_084EDAF0
-_080A0CF0: .4byte gTilesetAnimsData_084EDA50
-_080A0CF4: .4byte gTilesetAnimsData_084EDB00
-_080A0CF8: .4byte gTilesetAnimsData_084EDA70
+_080A0CEC: .4byte gTilesetAnims_Mauville_Flower1_B
+_080A0CF0: .4byte gTilesetAnims_Mauville_Flower1_VDests
+_080A0CF4: .4byte gTilesetAnims_Mauville_Flower2_B
+_080A0CF8: .4byte gTilesetAnims_Mauville_Flower2_VDests
 	thumb_func_end QueueAnimTiles_Mauville_Flowers
 
 	thumb_func_start QueueAnimTiles_Rustboro_WindyWater
@@ -2101,4 +2101,3 @@ _080A11B0: .4byte 0x02037C74
 _080A11B4: .4byte 0x03000F3C
 _080A11B8: .4byte 0x03000F44
 	thumb_func_end BlendAnimPalette_BattleDome_FloorLightsNoBlend
-
