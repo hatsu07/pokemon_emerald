@@ -45,7 +45,7 @@ _080FD8DE:
 	b _080FD920
 	.align 2, 0
 _080FD904: .4byte 0x0203CB20
-_080FD908: .4byte 0x0856DCBC
+_080FD908: .4byte gItemUsePocketCallbacks
 _080FD90C:
 	ldr r0, _080FD928
 	ldr r2, [r0]
@@ -62,7 +62,7 @@ _080FD920:
 	bx r0
 	.align 2, 0
 _080FD928: .4byte 0x0203CBF8
-_080FD92C: .4byte 0x0856DCBC
+_080FD92C: .4byte gItemUsePocketCallbacks
 	thumb_func_end SetUpItemUseCallback
 
 	thumb_func_start SetUpItemUseOnFieldCallback

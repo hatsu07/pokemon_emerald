@@ -1390,8 +1390,8 @@ gRotatingGateArmLayoutTable: @ 0x0856DC5C
 	.byte 1, 1, 1, 0, 1, 1, 0, 0
 	.byte 1, 0, 1, 1, 1, 1, 0, 0
 	.byte 1, 1, 1, 1, 1, 1, 0, 0
-	.globl gMapPointerTable_Rom_56DCBC
-gMapPointerTable_Rom_56DCBC: @ 0x0856DCBC
+	.globl gItemUsePocketCallbacks
+gItemUsePocketCallbacks: @ 0x0856DCBC
 	.4byte sub_081B5E1C
 	.4byte CB2_ReturnToField
 	.4byte NULL
