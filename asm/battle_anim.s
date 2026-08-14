@@ -500,7 +500,7 @@ _080A35D4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A35DC: .4byte 0x084FE5A4
+_080A35DC: .4byte gBattleAnimScriptCmdTable
 _080A35E0: .4byte 0x02038090
 _080A35E4: .4byte 0x0203809C
 _080A35E8: .4byte 0x0203809D
@@ -586,7 +586,7 @@ ScriptCmd_unloadspritegfx: @ 0x080A3654
 	bx r0
 	.align 2, 0
 _080A3694: .4byte 0x02038090
-_080A3698: .4byte gBattleAnimData_084FD250
+_080A3698: .4byte gBattleAnimPicTable
 _080A369C: .4byte 0xFFFFD8F0
 	thumb_func_end ScriptCmd_unloadspritegfx
 
@@ -971,7 +971,7 @@ _080A3974: .4byte 0x03007510
 _080A3978: .4byte 0x03007550
 _080A397C: .4byte 0x020380CE
 _080A3980: .4byte 0x0000FFFF
-_080A3984: .4byte gBattleAnimData_084FD250
+_080A3984: .4byte gBattleAnimPicTable
 _080A3988: .4byte 0x020380AA
 _080A398C: .4byte 0x030074D0
 _080A3990: .4byte 0x0203809D
@@ -2955,7 +2955,7 @@ LoadMoveBg: @ 0x080A4890
 	bl LoadCompressedPalette
 	b _080A4946
 	.align 2, 0
-_080A4900: .4byte gBattleAnimData_084FE460
+_080A4900: .4byte gBattleAnimBackgroundTable
 _080A4904: .4byte 0x0201C000
 _080A4908: .4byte 0x0600D000
 _080A490C: .4byte 0x040000D4
@@ -2987,7 +2987,7 @@ _080A4946:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A494C: .4byte gBattleAnimData_084FE460
+_080A494C: .4byte gBattleAnimBackgroundTable
 _080A4950: .4byte 0x0600D000
 _080A4954: .4byte 0x06008000
 	thumb_func_end LoadMoveBg
@@ -4543,4 +4543,3 @@ _080A5528: .4byte 0x03007510
 _080A552C: .4byte 0x03007550
 _080A5530: .4byte 0x02038090
 	thumb_func_end sub_080A550C
-

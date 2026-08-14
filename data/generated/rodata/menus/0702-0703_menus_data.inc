@@ -222,488 +222,1849 @@ sFanfares: @ 0x084FCFC8
 	jp_common_oam_preset gOamData_AffineDouble_ObjBlend_32x64, 0x8700, 0xC000 @ 0x084FD248
 	.purgem jp_common_oam_preset
 
+	@ ------------------------------------------------------------------
+	@ Battle animation compressed asset symbols
+	@ Pinned semantic names from pret/pokeemerald; absolute aliases only.
+	@ The underlying compressed assets remain in their existing ROM region.
+	@ ------------------------------------------------------------------
+	.globl gBattleAnimSpriteGfx_Bubble
+	.set gBattleAnimSpriteGfx_Bubble, 0x08C02480
+	.globl gBattleAnimSpriteGfx_Bone
+	.set gBattleAnimSpriteGfx_Bone, 0x08C02540
+	.globl gBattleAnimSpriteGfx_AirWave
+	.set gBattleAnimSpriteGfx_AirWave, 0x08C025F0
+	.globl gBattleAnimSpriteGfx_Orb
+	.set gBattleAnimSpriteGfx_Orb, 0x08C02664
+	.globl gBattleAnimSpriteGfx_Sword
+	.set gBattleAnimSpriteGfx_Sword, 0x08C02714
+	.globl gBattleAnimSpriteGfx_Seed
+	.set gBattleAnimSpriteGfx_Seed, 0x08C027E8
+	.globl gBattleAnimSpritePal_RainDrops
+	.set gBattleAnimSpritePal_RainDrops, 0x08C028B4
+	.globl gBattleAnimSpritePal_Bone
+	.set gBattleAnimSpritePal_Bone, 0x08C028D4
+	.globl gBattleAnimSpritePal_AirWave
+	.set gBattleAnimSpritePal_AirWave, 0x08C028F8
+	.globl gBattleAnimSpritePal_Orb
+	.set gBattleAnimSpritePal_Orb, 0x08C02920
+	.globl gBattleAnimSpritePal_Sword
+	.set gBattleAnimSpritePal_Sword, 0x08C02934
+	.globl gBattleAnimSpritePal_Seed
+	.set gBattleAnimSpritePal_Seed, 0x08C0295C
+	.globl gBattleAnimSpriteGfx_Needle
+	.set gBattleAnimSpriteGfx_Needle, 0x08C02984
+	.globl gBattleAnimSpritePal_Needle
+	.set gBattleAnimSpritePal_Needle, 0x08C029AC
+	.globl gBattleAnimSpriteGfx_Explosion6
+	.set gBattleAnimSpriteGfx_Explosion6, 0x08C029D4
+	.globl gBattleAnimSpritePal_Explosion6
+	.set gBattleAnimSpritePal_Explosion6, 0x08C02B50
+	.globl gBattleAnimSpriteGfx_PinkOrb
+	.set gBattleAnimSpriteGfx_PinkOrb, 0x08C02B70
+	.globl gBattleAnimSpritePal_PinkOrb
+	.set gBattleAnimSpritePal_PinkOrb, 0x08C02B90
+	.globl gBattleAnimSpritePal_IceCube
+	.set gBattleAnimSpritePal_IceCube, 0x08C02BAC
+	.globl gBattleAnimSpriteGfx_IceCube
+	.set gBattleAnimSpriteGfx_IceCube, 0x08C02BCC
+	.globl gBattleAnimSpriteGfx_Gust
+	.set gBattleAnimSpriteGfx_Gust, 0x08C02FAC
+	.globl gBattleAnimSpritePal_Gust
+	.set gBattleAnimSpritePal_Gust, 0x08C03294
+	.globl gBattleAnimSpriteGfx_Spark2
+	.set gBattleAnimSpriteGfx_Spark2, 0x08C032B4
+	.globl gBattleAnimSpritePal_Spark2
+	.set gBattleAnimSpritePal_Spark2, 0x08C0332C
+	.globl gBattleAnimSpriteGfx_Orange
+	.set gBattleAnimSpriteGfx_Orange, 0x08C03354
+	.globl gBattleAnimSpritePal_Orange
+	.set gBattleAnimSpritePal_Orange, 0x08C033BC
+	.globl gBattleAnimSpriteGfx_Spikes
+	.set gBattleAnimSpriteGfx_Spikes, 0x08C033D4
+	.globl gBattleAnimSpritePal_Spikes
+	.set gBattleAnimSpritePal_Spikes, 0x08C0341C
+	.globl gBattleAnimSpriteGfx_YellowBall
+	.set gBattleAnimSpriteGfx_YellowBall, 0x08C03440
+	.globl gBattleAnimSpritePal_YellowBall
+	.set gBattleAnimSpritePal_YellowBall, 0x08C03474
+	.globl gBattleAnimSpriteGfx_TiedBag
+	.set gBattleAnimSpriteGfx_TiedBag, 0x08C0348C
+	.globl gBattleAnimSpritePal_TiedBag
+	.set gBattleAnimSpritePal_TiedBag, 0x08C034F8
+	.globl gBattleAnimSpriteGfx_BlackSmoke
+	.set gBattleAnimSpriteGfx_BlackSmoke, 0x08C03520
+	.globl gBattleAnimSpritePal_BlackSmoke
+	.set gBattleAnimSpritePal_BlackSmoke, 0x08C03590
+	.globl gBattleAnimSpriteGfx_BlackBall
+	.set gBattleAnimSpriteGfx_BlackBall, 0x08C035A0
+	.globl gBattleAnimSpritePal_Glass
+	.set gBattleAnimSpritePal_Glass, 0x08C035E4
+	.globl gBattleAnimSpriteGfx_Glass
+	.set gBattleAnimSpriteGfx_Glass, 0x08C03600
+	.globl gBattleAnimSpriteGfx_HornHit
+	.set gBattleAnimSpriteGfx_HornHit, 0x08C036C0
+	.globl gBattleAnimSpritePal_HornHit
+	.set gBattleAnimSpritePal_HornHit, 0x08C0378C
+	.globl gBattleAnimSpritePal_BlueShards
+	.set gBattleAnimSpritePal_BlueShards, 0x08C037B4
+	.globl gBattleAnimSpriteGfx_BlueShards
+	.set gBattleAnimSpriteGfx_BlueShards, 0x08C037DC
+	.globl gBattleAnimSpritePal_Hit
+	.set gBattleAnimSpritePal_Hit, 0x08C03A08
+	.globl gBattleAnimSpriteGfx_Hit
+	.set gBattleAnimSpriteGfx_Hit, 0x08C03A30
+	.globl gBattleAnimSpritePal_Hit2
+	.set gBattleAnimSpritePal_Hit2, 0x08C03D68
+	.globl gBattleAnimSpritePal_WavingHand
+	.set gBattleAnimSpritePal_WavingHand, 0x08C03D90
+	.globl gBattleAnimSpriteGfx_WavingHand
+	.set gBattleAnimSpriteGfx_WavingHand, 0x08C03DB8
+	.globl gBattleAnimSpriteGfx_ClosingEye
+	.set gBattleAnimSpriteGfx_ClosingEye, 0x08C03EA8
+	.globl gBattleAnimSpritePal_ClosingEye
+	.set gBattleAnimSpritePal_ClosingEye, 0x08C03F74
+	.globl gBattleAnimSpriteGfx_BlueStar
+	.set gBattleAnimSpriteGfx_BlueStar, 0x08C03F88
+	.globl gBattleAnimSpritePal_BlueStar
+	.set gBattleAnimSpritePal_BlueStar, 0x08C04368
+	.globl gBattleAnimSpritePal_BubbleBurst
+	.set gBattleAnimSpritePal_BubbleBurst, 0x08C04388
+	.globl gBattleAnimSpriteGfx_BubbleBurst
+	.set gBattleAnimSpriteGfx_BubbleBurst, 0x08C043B0
+	.globl gBattleAnimSpriteGfx_HitDuplicate
+	.set gBattleAnimSpriteGfx_HitDuplicate, 0x08C0449C
+	.globl gBattleAnimSpritePal_HitDuplicate
+	.set gBattleAnimSpritePal_HitDuplicate, 0x08C047D4
+	.globl gBattleAnimSpritePal_Leer
+	.set gBattleAnimSpritePal_Leer, 0x08C047FC
+	.globl gBattleAnimSpriteGfx_Leer
+	.set gBattleAnimSpriteGfx_Leer, 0x08C04824
+	.globl gBattleAnimSpritePal_BlueBurst
+	.set gBattleAnimSpritePal_BlueBurst, 0x08C04B20
+	.globl gBattleAnimSpriteGfx_BlueBurst
+	.set gBattleAnimSpriteGfx_BlueBurst, 0x08C04B48
+	.globl gBattleAnimSpriteGfx_SmallEmber
+	.set gBattleAnimSpriteGfx_SmallEmber, 0x08C04E98
+	.globl gBattleAnimSpritePal_SmallEmber
+	.set gBattleAnimSpritePal_SmallEmber, 0x08C05150
+	.globl gBattleAnimSpriteGfx_GraySmoke
+	.set gBattleAnimSpriteGfx_GraySmoke, 0x08C05178
+	.globl gBattleAnimSpritePal_GraySmoke
+	.set gBattleAnimSpritePal_GraySmoke, 0x08C05538
+	.globl gBattleAnimSpritePal_Fire
+	.set gBattleAnimSpritePal_Fire, 0x08C0555C
+	.globl gBattleAnimSpriteGfx_Fire
+	.set gBattleAnimSpriteGfx_Fire, 0x08C05584
+	.globl gBattleAnimSpriteGfx_SpinningFire
+	.set gBattleAnimSpriteGfx_SpinningFire, 0x08C05EF4
+	.globl gBattleAnimSpriteGfx_FirePlume
+	.set gBattleAnimSpriteGfx_FirePlume, 0x08C062C0
+	.globl gBattleAnimSpritePal_Lightning2
+	.set gBattleAnimSpritePal_Lightning2, 0x08C06658
+	.globl gBattleAnimSpriteGfx_Lightning2
+	.set gBattleAnimSpriteGfx_Lightning2, 0x08C06680
+	.globl gBattleAnimSpriteGfx_Lightning
+	.set gBattleAnimSpriteGfx_Lightning, 0x08C06A54
+	.globl gBattleAnimSpritePal_ClawSlash2
+	.set gBattleAnimSpritePal_ClawSlash2, 0x08C0791C
+	.globl gBattleAnimSpritePal_ClawSlash
+	.set gBattleAnimSpritePal_ClawSlash, 0x08C07944
+	.globl gBattleAnimSpriteGfx_ClawSlash2
+	.set gBattleAnimSpriteGfx_ClawSlash2, 0x08C0796C
+	.globl gBattleAnimSpriteGfx_ClawSlash
+	.set gBattleAnimSpriteGfx_ClawSlash, 0x08C07B90
+	.globl gBattleAnimSpriteGfx_Scratch3
+	.set gBattleAnimSpriteGfx_Scratch3, 0x08C07E8C
+	.globl gBattleAnimSpriteGfx_Scratch2
+	.set gBattleAnimSpriteGfx_Scratch2, 0x08C08098
+	.globl gBattleAnimSpriteGfx_BubbleBurst2
+	.set gBattleAnimSpriteGfx_BubbleBurst2, 0x08C082CC
+	.globl gBattleAnimSpritePal_BubbleBurst2
+	.set gBattleAnimSpritePal_BubbleBurst2, 0x08C0859C
+	.globl gBattleAnimSpriteGfx_IceChunk
+	.set gBattleAnimSpriteGfx_IceChunk, 0x08C085C4
+	.globl gBattleAnimSpritePal_IceChunk
+	.set gBattleAnimSpritePal_IceChunk, 0x08C089C4
+	.globl gBattleAnimSpritePal_Glass2
+	.set gBattleAnimSpritePal_Glass2, 0x08C089EC
+	.globl gBattleAnimSpriteGfx_Glass2
+	.set gBattleAnimSpriteGfx_Glass2, 0x08C08A14
+	.globl gBattleAnimSpritePal_PinkHeart2
+	.set gBattleAnimSpritePal_PinkHeart2, 0x08C08C80
+	.globl gBattleAnimSpriteGfx_PinkHeart2
+	.set gBattleAnimSpriteGfx_PinkHeart2, 0x08C08CA8
+	.globl gBattleAnimSpriteGfx_SapDrip
+	.set gBattleAnimSpriteGfx_SapDrip, 0x08C0960C
+	.globl gBattleAnimSpritePal_SapDrip
+	.set gBattleAnimSpritePal_SapDrip, 0x08C099EC
+	.globl gBattleAnimSpritePal_SapDrip2
+	.set gBattleAnimSpritePal_SapDrip2, 0x08C09A0C
+	.globl gBattleAnimSpriteGfx_Sparkle1
+	.set gBattleAnimSpriteGfx_Sparkle1, 0x08C09CF8
+	.globl gBattleAnimSpritePal_Sparkle1
+	.set gBattleAnimSpritePal_Sparkle1, 0x08C09F90
+	.globl gBattleAnimSpritePal_Sparkle2
+	.set gBattleAnimSpritePal_Sparkle2, 0x08C09FB8
+	.globl gBattleAnimSpritePal_HumanoidFoot
+	.set gBattleAnimSpritePal_HumanoidFoot, 0x08C09FE0
+	.globl gBattleAnimSpriteGfx_HumanoidFoot
+	.set gBattleAnimSpriteGfx_HumanoidFoot, 0x08C0A004
+	.globl gBattleAnimSpriteGfx_MonsterFoot
+	.set gBattleAnimSpriteGfx_MonsterFoot, 0x08C0A0A4
+	.globl gBattleAnimSpriteGfx_HumanoidHand
+	.set gBattleAnimSpriteGfx_HumanoidHand, 0x08C0A150
+	.globl gBattleAnimSpriteGfx_YellowUnk
+	.set gBattleAnimSpriteGfx_YellowUnk, 0x08C0A3B0
+	.globl gBattleAnimSpritePal_YellowUnk
+	.set gBattleAnimSpritePal_YellowUnk, 0x08C0A3DC
+	.globl gBattleAnimSpriteGfx_SlamHit
+	.set gBattleAnimSpriteGfx_SlamHit, 0x08C0A3F4
+	.globl gBattleAnimSpritePal_SlamHit
+	.set gBattleAnimSpritePal_SlamHit, 0x08C0A89C
+	.globl gBattleAnimSpriteGfx_RedFist
+	.set gBattleAnimSpriteGfx_RedFist, 0x08C0A8C4
+	.globl gBattleAnimSpriteGfx_Ring
+	.set gBattleAnimSpriteGfx_Ring, 0x08C0A988
+	.globl gBattleAnimSpritePal_Ring
+	.set gBattleAnimSpritePal_Ring, 0x08C0AA10
+	.globl gBattleAnimSpriteGfx_Rocks
+	.set gBattleAnimSpriteGfx_Rocks, 0x08C0AA34
+	.globl gBattleAnimSpritePal_Rocks
+	.set gBattleAnimSpritePal_Rocks, 0x08C0AE9C
+	.globl gBattleAnimSpriteGfx_Z
+	.set gBattleAnimSpriteGfx_Z, 0x08C0AEC4
+	.globl gBattleAnimSpritePal_Z
+	.set gBattleAnimSpritePal_Z, 0x08C0AF24
+	.globl gBattleAnimSpriteGfx_YellowUnk2
+	.set gBattleAnimSpriteGfx_YellowUnk2, 0x08C0AF40
+	.globl gBattleAnimSpritePal_YellowUnk2
+	.set gBattleAnimSpritePal_YellowUnk2, 0x08C0AF68
+	.globl gBattleAnimSpriteGfx_AirSlash
+	.set gBattleAnimSpriteGfx_AirSlash, 0x08C0AF84
+	.globl gBattleAnimSpritePal_AirSlash
+	.set gBattleAnimSpritePal_AirSlash, 0x08C0B034
+	.globl gBattleAnimSpriteGfx_SpinningGreenOrbs
+	.set gBattleAnimSpriteGfx_SpinningGreenOrbs, 0x08C0B054
+	.globl gBattleAnimSpritePal_SpinningGreenOrbs
+	.set gBattleAnimSpritePal_SpinningGreenOrbs, 0x08C0B424
+	.globl gBattleAnimSpriteGfx_Leaf
+	.set gBattleAnimSpriteGfx_Leaf, 0x08C0B44C
+	.globl gBattleAnimSpritePal_Leaf
+	.set gBattleAnimSpritePal_Leaf, 0x08C0B608
+	.globl gBattleAnimSpritePal_Clapping
+	.set gBattleAnimSpritePal_Clapping, 0x08C0B6A0
+	.globl gBattleAnimSpriteGfx_PoisonPowder
+	.set gBattleAnimSpriteGfx_PoisonPowder, 0x08C0B6C4
+	.globl gBattleAnimSpritePal_PoisonPowder
+	.set gBattleAnimSpritePal_PoisonPowder, 0x08C0B7D8
+	.globl gBattleAnimSpriteGfx_BrownTriangle
+	.set gBattleAnimSpriteGfx_BrownTriangle, 0x08C0B7F8
+	.globl gBattleAnimSpritePal_BrownTriangle
+	.set gBattleAnimSpritePal_BrownTriangle, 0x08C0B844
+	.globl gBattleAnimSpriteGfx_Sparkle3
+	.set gBattleAnimSpriteGfx_Sparkle3, 0x08C0B86C
+	.globl gBattleAnimSpritePal_Sparkle3
+	.set gBattleAnimSpritePal_Sparkle3, 0x08C0B8EC
+	.globl gBattleAnimSpriteGfx_Sparkle4
+	.set gBattleAnimSpriteGfx_Sparkle4, 0x08C0B914
+	.globl gBattleAnimSpriteGfx_MusicNotes
+	.set gBattleAnimSpriteGfx_MusicNotes, 0x08C0BB40
+	.globl gBattleAnimSpritePal_MusicNotes
+	.set gBattleAnimSpritePal_MusicNotes, 0x08C0BC10
+	.globl gBattleAnimSpriteGfx_Duck
+	.set gBattleAnimSpriteGfx_Duck, 0x08C0BC28
+	.globl gBattleAnimSpritePal_Duck
+	.set gBattleAnimSpritePal_Duck, 0x08C0BD44
+	.globl gBattleAnimSpriteGfx_Alert
+	.set gBattleAnimSpriteGfx_Alert, 0x08C0BD64
+	.globl gBattleAnimSpritePal_Alert
+	.set gBattleAnimSpritePal_Alert, 0x08C0BFE0
+	.globl gBattleAnimSpriteGfx_Shock4
+	.set gBattleAnimSpriteGfx_Shock4, 0x08C0C004
+	.globl gBattleAnimSpritePal_Shock4
+	.set gBattleAnimSpritePal_Shock4, 0x08C0C19C
+	.globl gBattleAnimSpriteGfx_Shock
+	.set gBattleAnimSpriteGfx_Shock, 0x08C0C1C4
+	.globl gBattleAnimSpriteGfx_Bell2
+	.set gBattleAnimSpriteGfx_Bell2, 0x08C0C5F4
+	.globl gBattleAnimSpritePal_Bell2
+	.set gBattleAnimSpritePal_Bell2, 0x08C0C958
+	.globl gBattleAnimSpriteGfx_PinkGlove
+	.set gBattleAnimSpriteGfx_PinkGlove, 0x08C0C97C
+	.globl gBattleAnimSpritePal_PinkGlove
+	.set gBattleAnimSpritePal_PinkGlove, 0x08C0CA00
+	.globl gBattleAnimSpriteGfx_BlueLines
+	.set gBattleAnimSpriteGfx_BlueLines, 0x08C0CB98
+	.globl gBattleAnimSpritePal_BlueLines
+	.set gBattleAnimSpritePal_BlueLines, 0x08C0CBBC
+	.globl gBattleAnimSpritePal_Impact3
+	.set gBattleAnimSpritePal_Impact3, 0x08C0CBD0
+	.globl gBattleAnimSpritePal_Impact2
+	.set gBattleAnimSpritePal_Impact2, 0x08C0CBF8
+	.globl gBattleAnimSpritePal_Reticle
+	.set gBattleAnimSpritePal_Reticle, 0x08C0CC20
+	.globl gBattleAnimSpritePal_Breath
+	.set gBattleAnimSpritePal_Breath, 0x08C0CC38
+	.globl gBattleAnimSpritePal_Snowball
+	.set gBattleAnimSpritePal_Snowball, 0x08C0CC60
+	.globl gBattleAnimSpritePal_Vine
+	.set gBattleAnimSpritePal_Vine, 0x08C0CC7C
+	.globl gBattleAnimSpritePal_Sword2
+	.set gBattleAnimSpritePal_Sword2, 0x08C0CCA4
+	.globl gBattleAnimSpritePal_RedTube
+	.set gBattleAnimSpritePal_RedTube, 0x08C0CCC8
+	.globl gBattleAnimSpritePal_Amnesia
+	.set gBattleAnimSpritePal_Amnesia, 0x08C0CCE4
+	.globl gBattleAnimSpritePal_String2
+	.set gBattleAnimSpritePal_String2, 0x08C0CD0C
+	.globl gBattleAnimSpritePal_Pencil2
+	.set gBattleAnimSpritePal_Pencil2, 0x08C0CD4C
+	.globl gBattleAnimSpritePal_Petal
+	.set gBattleAnimSpritePal_Petal, 0x08C0CD74
+	.globl gBattleAnimSpritePal_BentSpoon
+	.set gBattleAnimSpritePal_BentSpoon, 0x08C0CD90
+	.globl gBattleAnimSpritePal_Coin
+	.set gBattleAnimSpritePal_Coin, 0x08C0CDB8
+	.globl gBattleAnimSpritePal_CrackedEgg
+	.set gBattleAnimSpritePal_CrackedEgg, 0x08C0CDD4
+	.globl gBattleAnimSpritePal_FreshEgg
+	.set gBattleAnimSpritePal_FreshEgg, 0x08C0CDFC
+	.globl gBattleAnimSpriteGfx_Impact3
+	.set gBattleAnimSpriteGfx_Impact3, 0x08C0CE20
+	.globl gBattleAnimSpriteGfx_Impact2
+	.set gBattleAnimSpriteGfx_Impact2, 0x08C0D2C4
+	.globl gBattleAnimSpriteGfx_Reticle
+	.set gBattleAnimSpriteGfx_Reticle, 0x08C0D688
+	.globl gBattleAnimSpriteGfx_Breath
+	.set gBattleAnimSpriteGfx_Breath, 0x08C0D740
+	.globl gBattleAnimSpriteGfx_Snowball
+	.set gBattleAnimSpriteGfx_Snowball, 0x08C0D8B0
+	.globl gBattleAnimSpriteGfx_Vine
+	.set gBattleAnimSpriteGfx_Vine, 0x08C0D900
+	.globl gBattleAnimSpriteGfx_Sword2
+	.set gBattleAnimSpriteGfx_Sword2, 0x08C0DB74
+	.globl gBattleAnimSpriteGfx_Clapping
+	.set gBattleAnimSpriteGfx_Clapping, 0x08C0DC04
+	.globl gBattleAnimSpriteGfx_RedTube
+	.set gBattleAnimSpriteGfx_RedTube, 0x08C0DD38
+	.globl gBattleAnimSpriteGfx_Amnesia
+	.set gBattleAnimSpriteGfx_Amnesia, 0x08C0DDB4
+	.globl gBattleAnimSpriteGfx_String2
+	.set gBattleAnimSpriteGfx_String2, 0x08C0E484
+	.globl gBattleAnimSpriteGfx_Pencil2
+	.set gBattleAnimSpriteGfx_Pencil2, 0x08C0E628
+	.globl gBattleAnimSpriteGfx_Petal
+	.set gBattleAnimSpriteGfx_Petal, 0x08C0E6D8
+	.globl gBattleAnimSpriteGfx_BentSpoon
+	.set gBattleAnimSpriteGfx_BentSpoon, 0x08C0E848
+	.globl gBattleAnimSpriteGfx_Web
+	.set gBattleAnimSpriteGfx_Web, 0x08C0EA28
+	.globl gBattleAnimSpriteGfx_Coin
+	.set gBattleAnimSpriteGfx_Coin, 0x08C0EB60
+	.globl gBattleAnimSpriteGfx_CrackedEgg
+	.set gBattleAnimSpriteGfx_CrackedEgg, 0x08C0EC60
+	.globl gBattleAnimSpriteGfx_HatchedEgg
+	.set gBattleAnimSpriteGfx_HatchedEgg, 0x08C0ED90
+	.globl gBattleAnimSpriteGfx_FreshEgg
+	.set gBattleAnimSpriteGfx_FreshEgg, 0x08C0EF28
+	.globl gBattleAnimSpriteGfx_Fangs
+	.set gBattleAnimSpriteGfx_Fangs, 0x08C0EF94
+	.globl gBattleAnimSpritePal_Fangs
+	.set gBattleAnimSpritePal_Fangs, 0x08C0F154
+	.globl gBattleAnimSpriteGfx_Explosion2
+	.set gBattleAnimSpriteGfx_Explosion2, 0x08C0F17C
+	.globl gBattleAnimSpritePal_Explosion2
+	.set gBattleAnimSpritePal_Explosion2, 0x08C0F700
+	.globl gBattleAnimSpriteGfx_Explosion3
+	.set gBattleAnimSpriteGfx_Explosion3, 0x08C0F728
+	.globl gBattleAnimSpriteGfx_WaterDroplet
+	.set gBattleAnimSpriteGfx_WaterDroplet, 0x08C0F818
+	.globl gBattleAnimSpritePal_WaterDroplet
+	.set gBattleAnimSpritePal_WaterDroplet, 0x08C0FBC4
+	.globl gBattleAnimSpriteGfx_WaterDroplet2
+	.set gBattleAnimSpriteGfx_WaterDroplet2, 0x08C0FBEC
+	.globl gBattleAnimSpriteGfx_Seed2
+	.set gBattleAnimSpriteGfx_Seed2, 0x08C0FF70
+	.globl gBattleAnimSpritePal_Seed2
+	.set gBattleAnimSpritePal_Seed2, 0x08C0FF98
+	.globl gBattleAnimSpriteGfx_Sprout
+	.set gBattleAnimSpriteGfx_Sprout, 0x08C0FFC0
+	.globl gBattleAnimSpriteGfx_RedWand
+	.set gBattleAnimSpriteGfx_RedWand, 0x08C103A4
+	.globl gBattleAnimSpritePal_RedWand
+	.set gBattleAnimSpritePal_RedWand, 0x08C103E8
+	.globl gBattleAnimSpriteGfx_PurpleGreenUnk
+	.set gBattleAnimSpriteGfx_PurpleGreenUnk, 0x08C1040C
+	.globl gBattleAnimSpritePal_PurpleGreenUnk
+	.set gBattleAnimSpritePal_PurpleGreenUnk, 0x08C10734
+	.globl gBattleAnimSpriteGfx_WaterColumn
+	.set gBattleAnimSpriteGfx_WaterColumn, 0x08C1075C
+	.globl gBattleAnimSpritePal_WaterColumn
+	.set gBattleAnimSpritePal_WaterColumn, 0x08C109C8
+	.globl gBattleAnimSpriteGfx_MudUnk
+	.set gBattleAnimSpriteGfx_MudUnk, 0x08C109F0
+	.globl gBattleAnimSpritePal_MudUnk
+	.set gBattleAnimSpritePal_MudUnk, 0x08C10AE4
+	.globl gBattleAnimSpriteGfx_RainDrops
+	.set gBattleAnimSpriteGfx_RainDrops, 0x08C115EC
+	.globl gBattleAnimSpriteGfx_FurySwipes
+	.set gBattleAnimSpriteGfx_FurySwipes, 0x08C12E90
+	.globl gBattleAnimSpritePal_FurySwipes
+	.set gBattleAnimSpritePal_FurySwipes, 0x08C1313C
+	.globl gBattleAnimSpriteGfx_Vine2
+	.set gBattleAnimSpriteGfx_Vine2, 0x08C13164
+	.globl gBattleAnimSpritePal_Vine2
+	.set gBattleAnimSpritePal_Vine2, 0x08C133A0
+	.globl gBattleAnimSpriteGfx_Teeth
+	.set gBattleAnimSpriteGfx_Teeth, 0x08C133BC
+	.globl gBattleAnimSpritePal_Teeth
+	.set gBattleAnimSpritePal_Teeth, 0x08C13554
+	.globl gBattleAnimSpriteGfx_Bone2
+	.set gBattleAnimSpriteGfx_Bone2, 0x08C13570
+	.globl gBattleAnimSpritePal_Bone2
+	.set gBattleAnimSpritePal_Bone2, 0x08C13800
+	.globl gBattleAnimSpriteGfx_WhiteBag
+	.set gBattleAnimSpriteGfx_WhiteBag, 0x08C13828
+	.globl gBattleAnimSpritePal_WhiteBag
+	.set gBattleAnimSpritePal_WhiteBag, 0x08C1391C
+	.globl gBattleAnimSpriteGfx_Unknown
+	.set gBattleAnimSpriteGfx_Unknown, 0x08C13944
+	.globl gBattleAnimSpritePal_Unknown
+	.set gBattleAnimSpritePal_Unknown, 0x08C13970
+	.globl gBattleAnimSpriteGfx_PurpleCoral
+	.set gBattleAnimSpriteGfx_PurpleCoral, 0x08C13994
+	.globl gBattleAnimSpritePal_PurpleCoral
+	.set gBattleAnimSpritePal_PurpleCoral, 0x08C13A90
+	.globl gBattleAnimSpriteGfx_PurpleDroplet
+	.set gBattleAnimSpriteGfx_PurpleDroplet, 0x08C13AAC
+	.globl gBattleAnimSpriteGfx_Shock2
+	.set gBattleAnimSpriteGfx_Shock2, 0x08C13BE8
+	.globl gBattleAnimSpritePal_Shock2
+	.set gBattleAnimSpritePal_Shock2, 0x08C13E80
+	.globl gBattleAnimSpriteGfx_ClosingEye2
+	.set gBattleAnimSpriteGfx_ClosingEye2, 0x08C13EA8
+	.globl gBattleAnimSpritePal_ClosingEye2
+	.set gBattleAnimSpritePal_ClosingEye2, 0x08C13F94
+	.globl gBattleAnimSpriteGfx_MetalBall
+	.set gBattleAnimSpriteGfx_MetalBall, 0x08C13FBC
+	.globl gBattleAnimSpritePal_MetalBall
+	.set gBattleAnimSpritePal_MetalBall, 0x08C14024
+	.globl gBattleAnimSpriteGfx_MonsterDoll
+	.set gBattleAnimSpriteGfx_MonsterDoll, 0x08C14044
+	.globl gBattleAnimSpritePal_MonsterDoll
+	.set gBattleAnimSpritePal_MonsterDoll, 0x08C141E4
+	.globl gBattleAnimSpriteGfx_Whirlwind
+	.set gBattleAnimSpriteGfx_Whirlwind, 0x08C14208
+	.globl gBattleAnimSpritePal_Whirlwind
+	.set gBattleAnimSpritePal_Whirlwind, 0x08C14474
+	.globl gBattleAnimSpriteGfx_Whirlwind2
+	.set gBattleAnimSpriteGfx_Whirlwind2, 0x08C14494
+	.globl gBattleAnimSpriteGfx_Explosion4
+	.set gBattleAnimSpriteGfx_Explosion4, 0x08C144F8
+	.globl gBattleAnimSpritePal_Explosion4
+	.set gBattleAnimSpritePal_Explosion4, 0x08C148C8
+	.globl gBattleAnimSpriteGfx_Explosion5
+	.set gBattleAnimSpriteGfx_Explosion5, 0x08C148F0
+	.globl gBattleAnimSpriteGfx_Tongue
+	.set gBattleAnimSpriteGfx_Tongue, 0x08C14A60
+	.globl gBattleAnimSpritePal_Tongue
+	.set gBattleAnimSpritePal_Tongue, 0x08C14B60
+	.globl gBattleAnimSpriteGfx_Smoke
+	.set gBattleAnimSpriteGfx_Smoke, 0x08C14B80
+	.globl gBattleAnimSpritePal_Smoke
+	.set gBattleAnimSpritePal_Smoke, 0x08C14BFC
+	.globl gBattleAnimSpriteGfx_Smoke2
+	.set gBattleAnimSpriteGfx_Smoke2, 0x08C14C24
+	.globl gBattleAnimSpriteGfx_BlueFlames
+	.set gBattleAnimSpriteGfx_BlueFlames, 0x08C14CF4
+	.globl gBattleAnimSpritePal_BlueFlames
+	.set gBattleAnimSpritePal_BlueFlames, 0x08C14F30
+	.globl gBattleAnimSpriteGfx_BlueFlames2
+	.set gBattleAnimSpriteGfx_BlueFlames2, 0x08C14F58
+	.globl gBattleAnimSpriteGfx_Impact
+	.set gBattleAnimSpriteGfx_Impact, 0x08C1A3E8
+	.globl gBattleAnimSpritePal_Impact
+	.set gBattleAnimSpritePal_Impact, 0x08C1A4C0
+	.globl gBattleAnimSpriteGfx_CircleImpact
+	.set gBattleAnimSpriteGfx_CircleImpact, 0x08C1A588
+	.globl gBattleAnimSpritePal_CircleImpact
+	.set gBattleAnimSpritePal_CircleImpact, 0x08C1A5AC
+	.globl gBattleAnimSpriteGfx_Scratch
+	.set gBattleAnimSpriteGfx_Scratch, 0x08C1A5D4
+	.globl gBattleAnimSpriteGfx_SharpTeeth
+	.set gBattleAnimSpriteGfx_SharpTeeth, 0x08C1A7D8
+	.globl gBattleAnimSpritePal_SharpTeeth
+	.set gBattleAnimSpritePal_SharpTeeth, 0x08C1A9C8
+	.globl gBattleAnimSpriteGfx_Clamp
+	.set gBattleAnimSpriteGfx_Clamp, 0x08C1A9E8
+	.globl gBattleAnimSpriteGfx_Cut
+	.set gBattleAnimSpriteGfx_Cut, 0x08C1AB88
+	.globl gBattleAnimSpriteGfx_RainbowRings
+	.set gBattleAnimSpriteGfx_RainbowRings, 0x08C1ACD4
+	.globl gBattleAnimSpritePal_RainbowRings
+	.set gBattleAnimSpritePal_RainbowRings, 0x08C1AD54
+	.globl gBattleAnimSpriteGfx_IceCrystals
+	.set gBattleAnimSpriteGfx_IceCrystals, 0x08C1AD74
+	.globl gBattleAnimSpritePal_IceCrystals
+	.set gBattleAnimSpritePal_IceCrystals, 0x08C1AE7C
+	.globl gBattleAnimSpriteGfx_IceSpikes
+	.set gBattleAnimSpriteGfx_IceSpikes, 0x08C1AE9C
+	.globl gBattleAnimSpriteGfx_Orbs
+	.set gBattleAnimSpriteGfx_Orbs, 0x08C1AFB4
+	.globl gBattleAnimSpritePal_Orbs
+	.set gBattleAnimSpritePal_Orbs, 0x08C1B0C8
+	.globl gBattleAnimSpriteGfx_WaterOrb
+	.set gBattleAnimSpriteGfx_WaterOrb, 0x08C1B0F0
+	.globl gBattleAnimSpriteGfx_WaterImpact
+	.set gBattleAnimSpriteGfx_WaterImpact, 0x08C1B1C0
+	.globl gBattleAnimSpritePal_WaterImpact
+	.set gBattleAnimSpritePal_WaterImpact, 0x08C1B2A4
+	.globl gBattleAnimSpritePal_BrownOrb
+	.set gBattleAnimSpritePal_BrownOrb, 0x08C1B2C4
+	.globl gBattleAnimSpriteGfx_MudSand
+	.set gBattleAnimSpriteGfx_MudSand, 0x08C1B2E4
+	.globl gBattleAnimSpritePal_MudSand
+	.set gBattleAnimSpritePal_MudSand, 0x08C1B34C
+	.globl gBattleAnimSpriteGfx_PoisonBubble
+	.set gBattleAnimSpriteGfx_PoisonBubble, 0x08C1B370
+	.globl gBattleAnimSpritePal_PoisonBubble
+	.set gBattleAnimSpritePal_PoisonBubble, 0x08C1B444
+	.globl gBattleAnimSpriteGfx_ToxicBubble
+	.set gBattleAnimSpriteGfx_ToxicBubble, 0x08C1B460
+	.globl gBattleAnimSpriteGfx_HornHit2
+	.set gBattleAnimSpriteGfx_HornHit2, 0x08C1B558
+	.globl gBattleAnimSpritePal_HornHit2
+	.set gBattleAnimSpritePal_HornHit2, 0x08C1B5C4
+	.globl gBattleAnimSpriteGfx_AirWave2
+	.set gBattleAnimSpriteGfx_AirWave2, 0x08C1B5DC
+	.globl gBattleAnimSpritePal_AirWave2
+	.set gBattleAnimSpritePal_AirWave2, 0x08C1B688
+	.globl gBattleAnimSpriteGfx_SmallBubbles
+	.set gBattleAnimSpriteGfx_SmallBubbles, 0x08C1B6A8
+	.globl gBattleAnimSpritePal_SmallBubbles
+	.set gBattleAnimSpritePal_SmallBubbles, 0x08C1B770
+	.globl gBattleAnimSpriteGfx_RoundShadow
+	.set gBattleAnimSpriteGfx_RoundShadow, 0x08C1B790
+	.globl gBattleAnimSpritePal_RoundShadow
+	.set gBattleAnimSpritePal_RoundShadow, 0x08C1B9A8
+	.globl gBattleAnimSpriteGfx_Sunlight
+	.set gBattleAnimSpriteGfx_Sunlight, 0x08C1B9D0
+	.globl gBattleAnimSpritePal_Sunlight
+	.set gBattleAnimSpritePal_Sunlight, 0x08C1BA34
+	.globl gBattleAnimSpriteGfx_Spore
+	.set gBattleAnimSpriteGfx_Spore, 0x08C1BA4C
+	.globl gBattleAnimSpritePal_Spore
+	.set gBattleAnimSpritePal_Spore, 0x08C1BB14
+	.globl gBattleAnimSpriteGfx_Flower
+	.set gBattleAnimSpriteGfx_Flower, 0x08C1BB38
+	.globl gBattleAnimSpritePal_Flower
+	.set gBattleAnimSpritePal_Flower, 0x08C1BBB4
+	.globl gBattleAnimSpriteGfx_RazorLeaf
+	.set gBattleAnimSpriteGfx_RazorLeaf, 0x08C1BBDC
+	.globl gBattleAnimSpritePal_RazorLeaf
+	.set gBattleAnimSpritePal_RazorLeaf, 0x08C1BC84
+	.globl gBattleAnimSpriteGfx_MistCloud
+	.set gBattleAnimSpriteGfx_MistCloud, 0x08C1BCAC
+	.globl gBattleAnimSpritePal_MistCloud
+	.set gBattleAnimSpritePal_MistCloud, 0x08C1BD24
+	.globl gBattleAnimSpriteGfx_WhirlwindLines
+	.set gBattleAnimSpriteGfx_WhirlwindLines, 0x08C1BE88
+	.globl gBattleAnimSpritePal_WhirlwindLines
+	.set gBattleAnimSpritePal_WhirlwindLines, 0x08C1BF0C
+	.globl gBattleAnimSpriteGfx_GoldRing
+	.set gBattleAnimSpriteGfx_GoldRing, 0x08C1BF2C
+	.globl gBattleAnimSpritePal_GoldRing
+	.set gBattleAnimSpritePal_GoldRing, 0x08C1BF8C
+	.globl gBattleAnimSpritePal_BlueRing2
+	.set gBattleAnimSpritePal_BlueRing2, 0x08C1BFA4
+	.globl gBattleAnimSpritePal_PurpleRing
+	.set gBattleAnimSpritePal_PurpleRing, 0x08C1BFBC
+	.globl gBattleAnimSpritePal_BlueRing
+	.set gBattleAnimSpritePal_BlueRing, 0x08C1BFD4
+	.globl gBattleAnimSpriteGfx_GreenLightWall
+	.set gBattleAnimSpriteGfx_GreenLightWall, 0x08C1BFEC
+	.globl gBattleAnimSpritePal_GreenLightWall
+	.set gBattleAnimSpritePal_GreenLightWall, 0x08C1C2F8
+	.globl gBattleAnimSpritePal_BlueLightWall
+	.set gBattleAnimSpritePal_BlueLightWall, 0x08C1C318
+	.globl gBattleAnimSpritePal_RedLightWall
+	.set gBattleAnimSpritePal_RedLightWall, 0x08C1C338
+	.globl gBattleAnimSpritePal_GrayLightWall
+	.set gBattleAnimSpritePal_GrayLightWall, 0x08C1C358
+	.globl gBattleAnimSpritePal_OrangeLightWall
+	.set gBattleAnimSpritePal_OrangeLightWall, 0x08C1C378
+	.globl gBattleAnimSpriteGfx_BlackBall2
+	.set gBattleAnimSpriteGfx_BlackBall2, 0x08C1C398
+	.globl gBattleAnimSpritePal_BlackBall2
+	.set gBattleAnimSpritePal_BlackBall2, 0x08C1C3E4
+	.globl gBattleAnimSpritePal_PurpleGasCloud
+	.set gBattleAnimSpritePal_PurpleGasCloud, 0x08C1C40C
+	.globl gBattleAnimSpriteGfx_Spark
+	.set gBattleAnimSpriteGfx_Spark, 0x08C1C728
+	.globl gBattleAnimSpritePal_Spark
+	.set gBattleAnimSpritePal_Spark, 0x08C1C7DC
+	.globl gBattleAnimSpriteGfx_SparkH
+	.set gBattleAnimSpriteGfx_SparkH, 0x08C1C804
+	.globl gBattleAnimSpriteGfx_YellowStar
+	.set gBattleAnimSpriteGfx_YellowStar, 0x08C1D644
+	.globl gBattleAnimSpritePal_YellowStar
+	.set gBattleAnimSpritePal_YellowStar, 0x08C1D6E4
+	.globl gBattleAnimSpriteGfx_LargeFreshEgg
+	.set gBattleAnimSpriteGfx_LargeFreshEgg, 0x08C1D70C
+	.globl gBattleAnimSpritePal_LargeFreshEgg
+	.set gBattleAnimSpritePal_LargeFreshEgg, 0x08C1D770
+	.globl gBattleAnimSpriteGfx_ShadowBall
+	.set gBattleAnimSpriteGfx_ShadowBall, 0x08C1D798
+	.globl gBattleAnimSpritePal_ShadowBall
+	.set gBattleAnimSpritePal_ShadowBall, 0x08C1D8F0
+	.globl gBattleAnimSpriteGfx_Lick
+	.set gBattleAnimSpriteGfx_Lick, 0x08C1D918
+	.globl gBattleAnimSpritePal_Lick
+	.set gBattleAnimSpritePal_Lick, 0x08C1D9DC
+	.globl gBattleAnimSpriteGfx_VoidLines
+	.set gBattleAnimSpriteGfx_VoidLines, 0x08C1D9F4
+	.globl gBattleAnimSpritePal_VoidLines
+	.set gBattleAnimSpritePal_VoidLines, 0x08C1DB5C
+	.globl gBattleAnimSpritePal_String
+	.set gBattleAnimSpritePal_String, 0x08C1DB84
+	.globl gBattleAnimSpriteGfx_String
+	.set gBattleAnimSpriteGfx_String, 0x08C1DBAC
+	.globl gBattleAnimSpriteGfx_WebThread
+	.set gBattleAnimSpriteGfx_WebThread, 0x08C1DC88
+	.globl gBattleAnimSpriteGfx_SpiderWeb
+	.set gBattleAnimSpriteGfx_SpiderWeb, 0x08C1DCA0
+	.globl gBattleAnimSpriteGfx_Lightbulb
+	.set gBattleAnimSpriteGfx_Lightbulb, 0x08C1E030
+	.globl gBattleAnimSpritePal_Lightbulb
+	.set gBattleAnimSpritePal_Lightbulb, 0x08C1E0D4
+	.globl gBattleAnimSpriteGfx_Slash
+	.set gBattleAnimSpriteGfx_Slash, 0x08C1E0FC
+	.globl gBattleAnimSpritePal_Slash
+	.set gBattleAnimSpritePal_Slash, 0x08C1E374
+	.globl gBattleAnimSpriteGfx_FocusEnergy
+	.set gBattleAnimSpriteGfx_FocusEnergy, 0x08C1E39C
+	.globl gBattleAnimSpritePal_FocusEnergy
+	.set gBattleAnimSpritePal_FocusEnergy, 0x08C1E4F0
+	.globl gBattleAnimSpriteGfx_SphereToCube
+	.set gBattleAnimSpriteGfx_SphereToCube, 0x08C1E518
+	.globl gBattleAnimSpritePal_SphereToCube
+	.set gBattleAnimSpritePal_SphereToCube, 0x08C1E92C
+	.globl gBattleAnimSpriteGfx_Eye
+	.set gBattleAnimSpriteGfx_Eye, 0x08C1EC10
+	.globl gBattleAnimSpritePal_Eye
+	.set gBattleAnimSpritePal_Eye, 0x08C1EE00
+	.globl gBattleAnimSpriteGfx_Tendrils
+	.set gBattleAnimSpriteGfx_Tendrils, 0x08C1EE20
+	.globl gBattleAnimSpritePal_Tendrils
+	.set gBattleAnimSpritePal_Tendrils, 0x08C1F1EC
+	.globl gBattleAnimSpriteGfx_LockOn
+	.set gBattleAnimSpriteGfx_LockOn, 0x08C1FC78
+	.globl gBattleAnimSpritePal_LockOn
+	.set gBattleAnimSpritePal_LockOn, 0x08C1FD0C
+	.globl gBattleAnimSpriteGfx_OpeningEye
+	.set gBattleAnimSpriteGfx_OpeningEye, 0x08C1FD28
+	.globl gBattleAnimSpritePal_OpeningEye
+	.set gBattleAnimSpritePal_OpeningEye, 0x08C1FF84
+	.globl gBattleAnimSpriteGfx_RoundWhiteHalo
+	.set gBattleAnimSpriteGfx_RoundWhiteHalo, 0x08C1FFA8
+	.globl gBattleAnimSpritePal_RoundWhiteHalo
+	.set gBattleAnimSpritePal_RoundWhiteHalo, 0x08C20214
+	.globl gBattleAnimSpriteGfx_TealAlert
+	.set gBattleAnimSpriteGfx_TealAlert, 0x08C2023C
+	.globl gBattleAnimSpritePal_TealAlert
+	.set gBattleAnimSpritePal_TealAlert, 0x08C202C0
+	.globl gBattleAnimSpriteGfx_FangAttack
+	.set gBattleAnimSpriteGfx_FangAttack, 0x08C202E0
+	.globl gBattleAnimSpritePal_FangAttack
+	.set gBattleAnimSpritePal_FangAttack, 0x08C20560
+	.globl gBattleAnimSpriteGfx_PurpleHandOutline
+	.set gBattleAnimSpriteGfx_PurpleHandOutline, 0x08C20588
+	.globl gBattleAnimSpritePal_PurpleHandOutline
+	.set gBattleAnimSpritePal_PurpleHandOutline, 0x08C206E4
+	.globl gBattleAnimSpriteGfx_Pencil
+	.set gBattleAnimSpriteGfx_Pencil, 0x08C20828
+	.globl gBattleAnimSpritePal_Pencil
+	.set gBattleAnimSpritePal_Pencil, 0x08C2090C
+	.globl gBattleAnimSpriteGfx_Spiral
+	.set gBattleAnimSpriteGfx_Spiral, 0x08C20934
+	.globl gBattleAnimSpritePal_Spiral
+	.set gBattleAnimSpritePal_Spiral, 0x08C20CD8
+	.globl gBattleAnimSpriteGfx_Moon
+	.set gBattleAnimSpriteGfx_Moon, 0x08C20CF0
+	.globl gBattleAnimSpritePal_Moon
+	.set gBattleAnimSpritePal_Moon, 0x08C21028
+	.globl gBattleAnimSpriteGfx_GreenSparkle
+	.set gBattleAnimSpriteGfx_GreenSparkle, 0x08C21050
+	.globl gBattleAnimSpritePal_GreenSparkle
+	.set gBattleAnimSpritePal_GreenSparkle, 0x08C21108
+	.globl gBattleAnimSpriteGfx_SnoreZ
+	.set gBattleAnimSpriteGfx_SnoreZ, 0x08C21128
+	.globl gBattleAnimSpritePal_SnoreZ
+	.set gBattleAnimSpritePal_SnoreZ, 0x08C21298
+	.globl gBattleAnimSpriteGfx_Explosion
+	.set gBattleAnimSpriteGfx_Explosion, 0x08C212C0
+	.globl gBattleAnimSpritePal_Explosion
+	.set gBattleAnimSpritePal_Explosion, 0x08C216B0
+	.globl gBattleAnimSpriteGfx_Nail
+	.set gBattleAnimSpriteGfx_Nail, 0x08C216D8
+	.globl gBattleAnimSpritePal_Nail
+	.set gBattleAnimSpritePal_Nail, 0x08C217A0
+	.globl gBattleAnimSpriteGfx_GhostlySpirit
+	.set gBattleAnimSpriteGfx_GhostlySpirit, 0x08C217BC
+	.globl gBattleAnimSpritePal_GhostlySpirit
+	.set gBattleAnimSpritePal_GhostlySpirit, 0x08C218FC
+	.globl gBattleAnimSpriteGfx_WarmRock
+	.set gBattleAnimSpriteGfx_WarmRock, 0x08C21918
+	.globl gBattleAnimSpritePal_WarmRock
+	.set gBattleAnimSpritePal_WarmRock, 0x08C21F88
+	.globl gBattleAnimSpriteGfx_PunchImpact
+	.set gBattleAnimSpriteGfx_PunchImpact, 0x08C21FB0
+	.globl gBattleAnimSpritePal_PunchImpact
+	.set gBattleAnimSpritePal_PunchImpact, 0x08C22124
+	.globl gBattleAnimSpriteGfx_BreakingEgg
+	.set gBattleAnimSpriteGfx_BreakingEgg, 0x08C2214C
+	.globl gBattleAnimSpritePal_BreakingEgg
+	.set gBattleAnimSpritePal_BreakingEgg, 0x08C222B4
+	.globl gBattleAnimSpriteGfx_ThinRing
+	.set gBattleAnimSpriteGfx_ThinRing, 0x08C222D8
+	.globl gBattleAnimSpritePal_ThinRing
+	.set gBattleAnimSpritePal_ThinRing, 0x08C22484
+	.globl gBattleAnimSpriteGfx_MusicNotes2
+	.set gBattleAnimSpriteGfx_MusicNotes2, 0x08C224A8
+	.globl gBattleAnimSpritePal_MusicNotes2
+	.set gBattleAnimSpritePal_MusicNotes2, 0x08C226B4
+	.globl gBattleAnimSpriteGfx_Bell
+	.set gBattleAnimSpriteGfx_Bell, 0x08C22748
+	.globl gBattleAnimSpritePal_Bell
+	.set gBattleAnimSpritePal_Bell, 0x08C2297C
+	.globl gBattleAnimSpriteGfx_SpeedDust
+	.set gBattleAnimSpriteGfx_SpeedDust, 0x08C229A0
+	.globl gBattleAnimSpritePal_SpeedDust
+	.set gBattleAnimSpritePal_SpeedDust, 0x08C22A6C
+	.globl gBattleAnimSpriteGfx_TornMetal
+	.set gBattleAnimSpriteGfx_TornMetal, 0x08C22A90
+	.globl gBattleAnimSpriteGfx_ThoughtBubble
+	.set gBattleAnimSpriteGfx_ThoughtBubble, 0x08C22E80
+	.globl gBattleAnimSpritePal_ThoughtBubble
+	.set gBattleAnimSpritePal_ThoughtBubble, 0x08C23188
+	.globl gBattleAnimSpriteGfx_Finger
+	.set gBattleAnimSpriteGfx_Finger, 0x08C231A8
+	.globl gBattleAnimSpritePal_Finger
+	.set gBattleAnimSpritePal_Finger, 0x08C23298
+	.globl gBattleAnimSpriteGfx_MagentaHeart
+	.set gBattleAnimSpriteGfx_MagentaHeart, 0x08C232BC
+	.globl gBattleAnimSpritePal_PinkHeart
+	.set gBattleAnimSpritePal_PinkHeart, 0x08C23324
+	.globl gBattleAnimSpritePal_MagentaHeart
+	.set gBattleAnimSpritePal_MagentaHeart, 0x08C23344
+	.globl gBattleAnimSpritePal_RedHeart
+	.set gBattleAnimSpritePal_RedHeart, 0x08C23364
+	.globl gBattleAnimSpriteGfx_RedOrb
+	.set gBattleAnimSpriteGfx_RedOrb, 0x08C24098
+	.globl gBattleAnimSpritePal_RedOrb
+	.set gBattleAnimSpritePal_RedOrb, 0x08C24100
+	.globl gBattleAnimSpriteGfx_CircleOfLight
+	.set gBattleAnimSpriteGfx_CircleOfLight, 0x08C24120
+	.globl gBattleAnimSpriteGfx_ElectricOrbs
+	.set gBattleAnimSpriteGfx_ElectricOrbs, 0x08C24354
+	.globl gBattleAnimSpriteGfx_Electricity
+	.set gBattleAnimSpriteGfx_Electricity, 0x08C243A4
+	.globl gBattleAnimSpritePal_ElectricOrbs
+	.set gBattleAnimSpritePal_ElectricOrbs, 0x08C24610
+	.globl gBattleAnimSpriteGfx_Finger2
+	.set gBattleAnimSpriteGfx_Finger2, 0x08C24634
+	.globl gBattleAnimSpriteGfx_MovementWaves
+	.set gBattleAnimSpriteGfx_MovementWaves, 0x08C248C4
+	.globl gBattleAnimSpritePal_MovementWaves
+	.set gBattleAnimSpritePal_MovementWaves, 0x08C24A50
+	.globl gBattleAnimSpritePal_EyeSparkle
+	.set gBattleAnimSpritePal_EyeSparkle, 0x08C24CCC
+	.globl gBattleAnimSpriteGfx_EyeSparkle
+	.set gBattleAnimSpriteGfx_EyeSparkle, 0x08C24CF4
+	.globl gBattleAnimSpriteGfx_Anger
+	.set gBattleAnimSpriteGfx_Anger, 0x08C24DA0
+	.globl gBattleAnimSpritePal_Anger
+	.set gBattleAnimSpritePal_Anger, 0x08C24DF8
+	.globl gBattleAnimSpriteGfx_Conversion
+	.set gBattleAnimSpriteGfx_Conversion, 0x08C24E20
+	.globl gBattleAnimSpritePal_Conversion
+	.set gBattleAnimSpritePal_Conversion, 0x08C24E5C
+	.globl gBattleAnimSpritePal_Angel
+	.set gBattleAnimSpritePal_Angel, 0x08C24E78
+	.globl gBattleAnimSpriteGfx_Angel
+	.set gBattleAnimSpriteGfx_Angel, 0x08C24EA0
+	.globl gBattleAnimSpritePal_Devil
+	.set gBattleAnimSpritePal_Devil, 0x08C24FCC
+	.globl gBattleAnimSpriteGfx_Devil
+	.set gBattleAnimSpriteGfx_Devil, 0x08C24FEC
+	.globl gBattleAnimSpriteGfx_Swipe
+	.set gBattleAnimSpriteGfx_Swipe, 0x08C25250
+	.globl gBattleAnimSpritePal_Swipe
+	.set gBattleAnimSpritePal_Swipe, 0x08C2553C
+	.globl gBattleAnimSpritePal_Roots
+	.set gBattleAnimSpritePal_Roots, 0x08C25564
+	.globl gBattleAnimSpriteGfx_Roots
+	.set gBattleAnimSpriteGfx_Roots, 0x08C25584
+	.globl gBattleAnimSpritePal_ItemBag
+	.set gBattleAnimSpritePal_ItemBag, 0x08C25818
+	.globl gBattleAnimSpriteGfx_ItemBag
+	.set gBattleAnimSpriteGfx_ItemBag, 0x08C25838
+	.globl gBattleAnimSpritePal_TriAttackTriangle
+	.set gBattleAnimSpritePal_TriAttackTriangle, 0x08C25934
+	.globl gBattleAnimSpriteGfx_TriAttackTriangle
+	.set gBattleAnimSpriteGfx_TriAttackTriangle, 0x08C2595C
+	.globl gBattleAnimSpritePal_LetterZ
+	.set gBattleAnimSpritePal_LetterZ, 0x08C25BA0
+	.globl gBattleAnimSpriteGfx_LetterZ
+	.set gBattleAnimSpriteGfx_LetterZ, 0x08C25BC0
+	.globl gBattleAnimSpriteGfx_JaggedMusicNote
+	.set gBattleAnimSpriteGfx_JaggedMusicNote, 0x08C27808
+	.globl gBattleAnimSpritePal_JaggedMusicNote
+	.set gBattleAnimSpritePal_JaggedMusicNote, 0x08C2798C
+	.globl gBattleAnimSpriteGfx_Spotlight
+	.set gBattleAnimSpriteGfx_Spotlight, 0x08C279B4
+	.globl gBattleAnimSpriteGfx_Pokeball
+	.set gBattleAnimSpriteGfx_Pokeball, 0x08C27AFC
+	.globl gBattleAnimSpritePal_Pokeball
+	.set gBattleAnimSpritePal_Pokeball, 0x08C27B88
+	.globl gBattleAnimSpriteGfx_RapidSpin
+	.set gBattleAnimSpriteGfx_RapidSpin, 0x08C27BAC
+	.globl gBattleAnimSpritePal_RapidSpin
+	.set gBattleAnimSpritePal_RapidSpin, 0x08C27D68
+	.globl gBattleAnimSpriteGfx_MilkBottle
+	.set gBattleAnimSpriteGfx_MilkBottle, 0x08C27D90
+	.globl gBattleAnimSpritePal_MilkBottle
+	.set gBattleAnimSpritePal_MilkBottle, 0x08C27EB0
+	.globl gBattleAnimSpriteGfx_WispFire
+	.set gBattleAnimSpriteGfx_WispFire, 0x08C27ED8
+	.globl gBattleAnimSpritePal_WispOrb
+	.set gBattleAnimSpritePal_WispOrb, 0x08C28410
+	.globl gBattleAnimSpriteGfx_WispOrb
+	.set gBattleAnimSpriteGfx_WispOrb, 0x08C28438
+	.globl gBattleAnimSpriteGfx_GoldStars
+	.set gBattleAnimSpriteGfx_GoldStars, 0x08C28608
+	.globl gBattleAnimSpritePal_GoldStars
+	.set gBattleAnimSpritePal_GoldStars, 0x08C2868C
+	.globl gBattleAnimSpriteGfx_EclipsingOrb
+	.set gBattleAnimSpriteGfx_EclipsingOrb, 0x08C286B4
+	.globl gBattleAnimSpritePal_EclipsingOrb
+	.set gBattleAnimSpritePal_EclipsingOrb, 0x08C28874
+	.globl gBattleAnimSpriteGfx_PinkPetal
+	.set gBattleAnimSpriteGfx_PinkPetal, 0x08C28898
+	.globl gBattleAnimSpritePal_PinkPetal
+	.set gBattleAnimSpritePal_PinkPetal, 0x08C28900
+	.globl gBattleAnimSpriteGfx_GrayOrb
+	.set gBattleAnimSpriteGfx_GrayOrb, 0x08C28924
+	.globl gBattleAnimSpritePal_GrayOrb
+	.set gBattleAnimSpritePal_GrayOrb, 0x08C28974
+	.globl gBattleAnimSpritePal_BlueOrb
+	.set gBattleAnimSpritePal_BlueOrb, 0x08C28990
+	.globl gBattleAnimSpritePal_RedOrb2
+	.set gBattleAnimSpritePal_RedOrb2, 0x08C289AC
+	.globl gBattleAnimSpriteGfx_PainSplit
+	.set gBattleAnimSpriteGfx_PainSplit, 0x08C2CB44
+	.globl gBattleAnimSpritePal_PainSplit
+	.set gBattleAnimSpritePal_PainSplit, 0x08C2CC28
+	.globl gBattleAnimSpriteGfx_HandsAndFeet
+	.set gBattleAnimSpriteGfx_HandsAndFeet, 0x08C2CC50
+	.globl gBattleAnimSpritePal_HandsAndFeet
+	.set gBattleAnimSpritePal_HandsAndFeet, 0x08C2CE80
+	.globl gBattleAnimSpriteGfx_Confetti
+	.set gBattleAnimSpriteGfx_Confetti, 0x08C2CE98
+	.globl gBattleAnimSpritePal_Confetti
+	.set gBattleAnimSpritePal_Confetti, 0x08C2CF38
+	.globl gBattleAnimSpriteGfx_GreenStar
+	.set gBattleAnimSpriteGfx_GreenStar, 0x08C2D3EC
+	.globl gBattleAnimSpritePal_GreenStar
+	.set gBattleAnimSpritePal_GreenStar, 0x08C2D4B0
+	.globl gBattleAnimSpriteGfx_PinkCloud
+	.set gBattleAnimSpriteGfx_PinkCloud, 0x08C2D614
+	.globl gBattleAnimSpritePal_PinkCloud
+	.set gBattleAnimSpritePal_PinkCloud, 0x08C2D750
+	.globl gBattleAnimSpriteGfx_SweatDrop
+	.set gBattleAnimSpriteGfx_SweatDrop, 0x08C2D774
+	.globl gBattleAnimSpritePal_SweatDrop
+	.set gBattleAnimSpritePal_SweatDrop, 0x08C2D79C
+	.globl gBattleAnimSpritePal_PurpleScratch
+	.set gBattleAnimSpritePal_PurpleScratch, 0x08C2DF84
+	.globl gBattleAnimSpriteGfx_PurpleScratch
+	.set gBattleAnimSpriteGfx_PurpleScratch, 0x08C2DFAC
+	.globl gBattleAnimSpriteGfx_PurpleSwipe
+	.set gBattleAnimSpriteGfx_PurpleSwipe, 0x08C2E150
+	.globl gBattleAnimSpriteGfx_GuardRing
+	.set gBattleAnimSpriteGfx_GuardRing, 0x08C2E5F8
+	.globl gBattleAnimSpritePal_GuardRing
+	.set gBattleAnimSpritePal_GuardRing, 0x08C2E6D4
+	.globl gBattleAnimSpriteGfx_TagHand
+	.set gBattleAnimSpriteGfx_TagHand, 0x08C2E6F0
+	.globl gBattleAnimSpriteGfx_NoiseLine
+	.set gBattleAnimSpriteGfx_NoiseLine, 0x08C2E8D4
+	.globl gBattleAnimSpriteGfx_SmallRedEye
+	.set gBattleAnimSpriteGfx_SmallRedEye, 0x08C2EC48
+	.globl gBattleAnimSpritePal_SmallRedEye
+	.set gBattleAnimSpritePal_SmallRedEye, 0x08C2EC60
+	.globl gBattleAnimSpriteGfx_HollowOrb
+	.set gBattleAnimSpriteGfx_HollowOrb, 0x08C2EC78
+	.globl gBattleAnimSpritePal_HollowOrb
+	.set gBattleAnimSpritePal_HollowOrb, 0x08C2ECC8
+	.globl gBattleAnimSpriteGfx_XSign
+	.set gBattleAnimSpriteGfx_XSign, 0x08C2ECE8
+	.globl gBattleAnimSpriteGfx_BluegreenOrb
+	.set gBattleAnimSpriteGfx_BluegreenOrb, 0x08C2EEDC
+	.globl gBattleAnimSpritePal_BluegreenOrb
+	.set gBattleAnimSpritePal_BluegreenOrb, 0x08C2EF40
+	.globl gBattleAnimSpriteGfx_PawPrint
+	.set gBattleAnimSpriteGfx_PawPrint, 0x08C2EF58
+	.globl gBattleAnimSpritePal_PawPrint
+	.set gBattleAnimSpritePal_PawPrint, 0x08C2F070
+	.globl gBattleAnimSpriteGfx_PurpleFlame
+	.set gBattleAnimSpriteGfx_PurpleFlame, 0x08C2F094
+	.globl gBattleAnimSpritePal_PurpleFlame
+	.set gBattleAnimSpritePal_PurpleFlame, 0x08C2F270
+	.globl gBattleAnimSpriteGfx_RedBall
+	.set gBattleAnimSpriteGfx_RedBall, 0x08C2F298
+	.globl gBattleAnimSpritePal_RedBall
+	.set gBattleAnimSpritePal_RedBall, 0x08C2F3D0
+	.globl gBattleAnimSpriteGfx_SmellingsaltEffect
+	.set gBattleAnimSpriteGfx_SmellingsaltEffect, 0x08C2F3F8
+	.globl gBattleAnimSpritePal_SmellingsaltEffect
+	.set gBattleAnimSpritePal_SmellingsaltEffect, 0x08C2F470
+	.globl gBattleAnimSpriteGfx_MagnifyingGlass
+	.set gBattleAnimSpriteGfx_MagnifyingGlass, 0x08C2F484
+	.globl gBattleAnimSpritePal_MagnifyingGlass
+	.set gBattleAnimSpritePal_MagnifyingGlass, 0x08C2F56C
+	.globl gBattleAnimSpriteGfx_Meteor
+	.set gBattleAnimSpriteGfx_Meteor, 0x08C2F594
+	.globl gBattleAnimSpritePal_Meteor
+	.set gBattleAnimSpritePal_Meteor, 0x08C2F920
+	.globl gBattleAnimSpriteGfx_FlatRock
+	.set gBattleAnimSpriteGfx_FlatRock, 0x08C2F948
+	.globl gBattleAnimSpritePal_FlatRock
+	.set gBattleAnimSpritePal_FlatRock, 0x08C2FA64
+	.globl gBattleAnimSpriteGfx_FlyingDirt
+	.set gBattleAnimSpriteGfx_FlyingDirt, 0x08D8D288
+	.globl gBattleAnimSpritePal_FlyingDirt
+	.set gBattleAnimSpritePal_FlyingDirt, 0x08D8DA9C
+	.globl gBattleAnimSpriteGfx_MetalSoundWaves
+	.set gBattleAnimSpriteGfx_MetalSoundWaves, 0x08D8DAC4
+	.globl gBattleAnimSpritePal_MetalSoundWaves
+	.set gBattleAnimSpritePal_MetalSoundWaves, 0x08D8DC80
+	.globl gBattleAnimSpriteGfx_IcicleSpear
+	.set gBattleAnimSpriteGfx_IcicleSpear, 0x08D8E824
+	.globl gBattleAnimSpritePal_IcicleSpear
+	.set gBattleAnimSpritePal_IcicleSpear, 0x08D8E8F8
+	.globl gBattleAnimSpriteGfx_GlowyRedOrb
+	.set gBattleAnimSpriteGfx_GlowyRedOrb, 0x08D8EA1C
+	.globl gBattleAnimSpritePal_GlowyRedOrb
+	.set gBattleAnimSpritePal_GlowyRedOrb, 0x08D8EA3C
+	.globl gBattleAnimSpritePal_GlowyGreenOrb
+	.set gBattleAnimSpritePal_GlowyGreenOrb, 0x08D8EA54
+	.globl gBattleAnimSpritePal_SleepPowder
+	.set gBattleAnimSpritePal_SleepPowder, 0x08D8EA6C
+	.globl gBattleAnimSpritePal_StunSpore
+	.set gBattleAnimSpritePal_StunSpore, 0x08D8EA8C
+	.globl gBattleAnimSpriteGfx_Splash
+	.set gBattleAnimSpriteGfx_Splash, 0x08D8EC78
+	.globl gBattleAnimSpritePal_Splash
+	.set gBattleAnimSpritePal_Splash, 0x08D8EE94
+	.globl gBattleAnimSpriteGfx_SweatBead
+	.set gBattleAnimSpriteGfx_SweatBead, 0x08D8EEB8
+	.globl gBattleAnimSpriteGfx_Pokeblock
+	.set gBattleAnimSpriteGfx_Pokeblock, 0x08D8EEE0
+	.globl gBattleAnimSpritePal_Pokeblock
+	.set gBattleAnimSpritePal_Pokeblock, 0x08D8EF34
+	.globl gBattleAnimSpriteGfx_Gem1
+	.set gBattleAnimSpriteGfx_Gem1, 0x08D8EF4C
+	.globl gBattleAnimSpriteGfx_Gem2
+	.set gBattleAnimSpriteGfx_Gem2, 0x08D8F0CC
+	.globl gBattleAnimSpriteGfx_Gem3
+	.set gBattleAnimSpriteGfx_Gem3, 0x08D8F238
+	.globl gBattleAnimSpritePal_Gem1
+	.set gBattleAnimSpritePal_Gem1, 0x08D8F3A0
+	.globl gBattleAnimSpriteGfx_Protect
+	.set gBattleAnimSpriteGfx_Protect, 0x08D8F734
+	.globl gBattleAnimSpritePal_Protect
+	.set gBattleAnimSpritePal_Protect, 0x08D8FB30
+	.globl gBattleAnimSpritePal_WhipHit
+	.set gBattleAnimSpritePal_WhipHit, 0x08D91000
+	.globl gBattleAnimSpritePal_SlamHit2
+	.set gBattleAnimSpritePal_SlamHit2, 0x08D92E78
+	.globl gBattleAnimSpriteGfx_SlamHit2
+	.set gBattleAnimSpriteGfx_SlamHit2, 0x08D92EA0
+	.globl gBattleAnimSpritePal_WeatherBall
+	.set gBattleAnimSpritePal_WeatherBall, 0x08D9340C
+	.globl gBattleAnimSpriteGfx_WeatherBall
+	.set gBattleAnimSpriteGfx_WeatherBall, 0x08D93428
+	.globl gBattleAnimSpriteGfx_Hail
+	.set gBattleAnimSpriteGfx_Hail, 0x08D93AF8
+	.globl gBattleAnimSpritePal_Hail
+	.set gBattleAnimSpritePal_Hail, 0x08D93B38
+	.globl gBattleAnimSpriteGfx_GreenSpike
+	.set gBattleAnimSpriteGfx_GreenSpike, 0x08D93B50
+	.globl gBattleAnimSpritePal_GreenSpike
+	.set gBattleAnimSpritePal_GreenSpike, 0x08D93B90
+	.globl gBattleAnimSpritePal_WhiteCircleOfLight
+	.set gBattleAnimSpritePal_WhiteCircleOfLight, 0x08D93BA8
+	.globl gBattleAnimSpritePal_GlowyBlueOrb
+	.set gBattleAnimSpritePal_GlowyBlueOrb, 0x08D93BC0
+	.globl gBattleAnimSpriteGfx_Recycle
+	.set gBattleAnimSpriteGfx_Recycle, 0x08D93BD8
+	.globl gBattleAnimSpritePal_Recycle
+	.set gBattleAnimSpritePal_Recycle, 0x08D93DE4
+	.globl gBattleAnimSpriteGfx_RedParticles
+	.set gBattleAnimSpriteGfx_RedParticles, 0x08D93E00
+	.globl gBattleAnimSpritePal_RedParticles
+	.set gBattleAnimSpritePal_RedParticles, 0x08D93E4C
+	.globl gBattleAnimSpriteGfx_DirtMound
+	.set gBattleAnimSpriteGfx_DirtMound, 0x08D93E68
+	.globl gBattleAnimSpritePal_DirtMound
+	.set gBattleAnimSpritePal_DirtMound, 0x08D93FF0
+	.globl gBattleAnimSpriteGfx_Bird
+	.set gBattleAnimSpriteGfx_Bird, 0x08D9460C
+	.globl gBattleAnimSpritePal_Bird
+	.set gBattleAnimSpritePal_Bird, 0x08D94988
+	.globl gBattleAnimSpriteGfx_CrossImpact
+	.set gBattleAnimSpriteGfx_CrossImpact, 0x08D949A4
+	.globl gBattleAnimSpritePal_CrossImpact
+	.set gBattleAnimSpritePal_CrossImpact, 0x08D94A44
+	.globl gBattleAnimSpritePal_Slash2
+	.set gBattleAnimSpritePal_Slash2, 0x08D9664C
+	.globl gBattleAnimSpriteGfx_WhiteShadow
+	.set gBattleAnimSpriteGfx_WhiteShadow, 0x08D96674
+	.globl gBattleAnimSpritePal_WhiteShadow
+	.set gBattleAnimSpritePal_WhiteShadow, 0x08D96788
+	.globl gBattleAnimSpritePal_Shock3
+	.set gBattleAnimSpritePal_Shock3, 0x08DBA3F4
+	.globl gBattleAnimSpriteGfx_Shock3
+	.set gBattleAnimSpriteGfx_Shock3, 0x08DBA41C
+	.globl gBattleAnimSpritePal_WhiteFeather
+	.set gBattleAnimSpritePal_WhiteFeather, 0x08DBA604
+	.globl gBattleAnimSpriteGfx_WhiteFeather
+	.set gBattleAnimSpriteGfx_WhiteFeather, 0x08DBA620
+	.globl gBattleAnimSpritePal_Sparkle6
+	.set gBattleAnimSpritePal_Sparkle6, 0x08DBA748
+	.globl gBattleAnimSpriteGfx_Sparkle6
+	.set gBattleAnimSpriteGfx_Sparkle6, 0x08DBA760
+
+	@ struct CompressedSpriteSheet { const void *data; u16 size; u16 tag; }
+	.macro battle_anim_pic_entry data:req, size:req, tag:req
+	.4byte \data
+	.2byte \size, \tag
+	.endm
+
+	.globl gBattleAnimPicTable
+gBattleAnimPicTable: @ 0x084FD250
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Bone, 0x0200, 0x2710 @ [000] ANIM_TAG_BONE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Spark, 0x0300, 0x2711 @ [001] ANIM_TAG_SPARK
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Pencil, 0x0200, 0x2712 @ [002] ANIM_TAG_PENCIL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_AirWave, 0x0100, 0x2713 @ [003] ANIM_TAG_AIR_WAVE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Orb, 0x0200, 0x2714 @ [004] ANIM_TAG_ORB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Sword, 0x0400, 0x2715 @ [005] ANIM_TAG_SWORD
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Seed, 0x0180, 0x2716 @ [006] ANIM_TAG_SEED
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Explosion6, 0x0800, 0x2717 @ [007] ANIM_TAG_EXPLOSION_6
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PinkOrb, 0x0020, 0x2718 @ [008] ANIM_TAG_PINK_ORB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Gust, 0x0400, 0x2719 @ [009] ANIM_TAG_GUST
+	battle_anim_pic_entry gBattleAnimSpriteGfx_IceCube, 0x1200, 0x271A @ [010] ANIM_TAG_ICE_CUBE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Spark2, 0x0180, 0x271B @ [011] ANIM_TAG_SPARK_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Orange, 0x0080, 0x271C @ [012] ANIM_TAG_ORANGE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_YellowBall, 0x0080, 0x271D @ [013] ANIM_TAG_YELLOW_BALL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_LockOn, 0x0280, 0x271E @ [014] ANIM_TAG_LOCK_ON
+	battle_anim_pic_entry gBattleAnimSpriteGfx_TiedBag, 0x0080, 0x271F @ [015] ANIM_TAG_TIED_BAG
+	battle_anim_pic_entry gBattleAnimSpriteGfx_BlackSmoke, 0x0100, 0x2720 @ [016] ANIM_TAG_BLACK_SMOKE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_BlackBall, 0x0020, 0x2721 @ [017] ANIM_TAG_BLACK_BALL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Conversion, 0x0080, 0x2722 @ [018] ANIM_TAG_CONVERSION
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Glass, 0x0400, 0x2723 @ [019] ANIM_TAG_GLASS
+	battle_anim_pic_entry gBattleAnimSpriteGfx_HornHit, 0x0200, 0x2724 @ [020] ANIM_TAG_HORN_HIT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Hit, 0x0A00, 0x2725 @ [021] ANIM_TAG_HIT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Hit, 0x0A00, 0x2726 @ [022] ANIM_TAG_HIT_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_BlueShards, 0x0380, 0x2727 @ [023] ANIM_TAG_BLUE_SHARDS
+	battle_anim_pic_entry gBattleAnimSpriteGfx_ClosingEye, 0x0300, 0x2728 @ [024] ANIM_TAG_CLOSING_EYE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WavingHand, 0x0A00, 0x2729 @ [025] ANIM_TAG_WAVING_HAND
+	battle_anim_pic_entry gBattleAnimSpriteGfx_HitDuplicate, 0x0A00, 0x272A @ [026] ANIM_TAG_HIT_DUPLICATE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Leer, 0x0A00, 0x272B @ [027] ANIM_TAG_LEER
+	battle_anim_pic_entry gBattleAnimSpriteGfx_BlueBurst, 0x0A00, 0x272C @ [028] ANIM_TAG_BLUE_BURST
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SmallEmber, 0x0A00, 0x272D @ [029] ANIM_TAG_SMALL_EMBER
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GraySmoke, 0x0A00, 0x272E @ [030] ANIM_TAG_GRAY_SMOKE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_BlueStar, 0x0E00, 0x272F @ [031] ANIM_TAG_BLUE_STAR
+	battle_anim_pic_entry gBattleAnimSpriteGfx_BubbleBurst, 0x0380, 0x2730 @ [032] ANIM_TAG_BUBBLE_BURST
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Fire, 0x1000, 0x2731 @ [033] ANIM_TAG_FIRE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SpinningFire, 0x0800, 0x2732 @ [034] ANIM_TAG_SPINNING_FIRE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_FirePlume, 0x0A00, 0x2733 @ [035] ANIM_TAG_FIRE_PLUME
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Lightning2, 0x0800, 0x2734 @ [036] ANIM_TAG_LIGHTNING_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Lightning, 0x0A00, 0x2735 @ [037] ANIM_TAG_LIGHTNING
+	battle_anim_pic_entry gBattleAnimSpriteGfx_ClawSlash2, 0x0A00, 0x2736 @ [038] ANIM_TAG_CLAW_SLASH_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_ClawSlash, 0x0A00, 0x2737 @ [039] ANIM_TAG_CLAW_SLASH
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Scratch3, 0x0A00, 0x2738 @ [040] ANIM_TAG_SCRATCH_3
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Scratch2, 0x0A00, 0x2739 @ [041] ANIM_TAG_SCRATCH_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_BubbleBurst2, 0x0A00, 0x273A @ [042] ANIM_TAG_BUBBLE_BURST_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_IceChunk, 0x0A00, 0x273B @ [043] ANIM_TAG_ICE_CHUNK
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Glass2, 0x0A00, 0x273C @ [044] ANIM_TAG_GLASS_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PinkHeart2, 0x0A00, 0x273D @ [045] ANIM_TAG_PINK_HEART_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SapDrip, 0x1000, 0x273E @ [046] ANIM_TAG_SAP_DRIP
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SapDrip, 0x1000, 0x273F @ [047] ANIM_TAG_SAP_DRIP_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Sparkle1, 0x1000, 0x2740 @ [048] ANIM_TAG_SPARKLE_1
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Sparkle1, 0x1000, 0x2741 @ [049] ANIM_TAG_SPARKLE_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_HumanoidFoot, 0x0200, 0x2742 @ [050] ANIM_TAG_HUMANOID_FOOT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MonsterFoot, 0x0200, 0x2743 @ [051] ANIM_TAG_MONSTER_FOOT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_HumanoidHand, 0x0200, 0x2744 @ [052] ANIM_TAG_HUMANOID_HAND
+	battle_anim_pic_entry gBattleAnimSpriteGfx_NoiseLine, 0x0800, 0x2745 @ [053] ANIM_TAG_NOISE_LINE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_YellowUnk, 0x0080, 0x2746 @ [054] ANIM_TAG_YELLOW_UNK
+	battle_anim_pic_entry gBattleAnimSpriteGfx_RedFist, 0x0200, 0x2747 @ [055] ANIM_TAG_RED_FIST
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SlamHit, 0x1000, 0x2748 @ [056] ANIM_TAG_SLAM_HIT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Ring, 0x0180, 0x2749 @ [057] ANIM_TAG_RING
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Rocks, 0x0C00, 0x274A @ [058] ANIM_TAG_ROCKS
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Z, 0x0100, 0x274B @ [059] ANIM_TAG_Z
+	battle_anim_pic_entry gBattleAnimSpriteGfx_YellowUnk2, 0x0040, 0x274C @ [060] ANIM_TAG_YELLOW_UNK_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_AirSlash, 0x0180, 0x274D @ [061] ANIM_TAG_AIR_SLASH
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SpinningGreenOrbs, 0x0800, 0x274E @ [062] ANIM_TAG_SPINNING_GREEN_ORBS
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Leaf, 0x0480, 0x274F @ [063] ANIM_TAG_LEAF
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Finger, 0x0200, 0x2750 @ [064] ANIM_TAG_FINGER
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PoisonPowder, 0x0200, 0x2751 @ [065] ANIM_TAG_POISON_POWDER
+	battle_anim_pic_entry gBattleAnimSpriteGfx_BrownTriangle, 0x0100, 0x2752 @ [066] ANIM_TAG_BROWN_TRIANGLE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PoisonPowder, 0x0200, 0x2753 @ [067] ANIM_TAG_SLEEP_POWDER
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PoisonPowder, 0x0200, 0x2754 @ [068] ANIM_TAG_STUN_SPORE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PoisonPowder, 0x0200, 0x2755 @ [069] ANIM_TAG_POWDER
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Sparkle3, 0x0200, 0x2756 @ [070] ANIM_TAG_SPARKLE_3
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Sparkle4, 0x0A00, 0x2757 @ [071] ANIM_TAG_SPARKLE_4
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MusicNotes, 0x0300, 0x2758 @ [072] ANIM_TAG_MUSIC_NOTES
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Duck, 0x0180, 0x2759 @ [073] ANIM_TAG_DUCK
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MudSand, 0x00A0, 0x275A @ [074] ANIM_TAG_MUD_SAND
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Alert, 0x0700, 0x275B @ [075] ANIM_TAG_ALERT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_BlueFlames, 0x0400, 0x275C @ [076] ANIM_TAG_BLUE_FLAMES
+	battle_anim_pic_entry gBattleAnimSpriteGfx_BlueFlames2, 0x0200, 0x275D @ [077] ANIM_TAG_BLUE_FLAMES_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Shock4, 0x0300, 0x275E @ [078] ANIM_TAG_SHOCK_4
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Shock, 0x0C00, 0x275F @ [079] ANIM_TAG_SHOCK
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Bell2, 0x0A00, 0x2760 @ [080] ANIM_TAG_BELL_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PinkGlove, 0x0080, 0x2761 @ [081] ANIM_TAG_PINK_GLOVE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_BlueLines, 0x0040, 0x2762 @ [082] ANIM_TAG_BLUE_LINES
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Impact3, 0x0E00, 0x2763 @ [083] ANIM_TAG_IMPACT_3
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Impact2, 0x0E00, 0x2764 @ [084] ANIM_TAG_IMPACT_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Reticle, 0x0280, 0x2765 @ [085] ANIM_TAG_RETICLE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Breath, 0x0200, 0x2766 @ [086] ANIM_TAG_BREATH
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Anger, 0x0080, 0x2767 @ [087] ANIM_TAG_ANGER
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Snowball, 0x00C0, 0x2768 @ [088] ANIM_TAG_SNOWBALL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Vine, 0x0A00, 0x2769 @ [089] ANIM_TAG_VINE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Sword2, 0x0200, 0x276A @ [090] ANIM_TAG_SWORD_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Clapping, 0x0180, 0x276B @ [091] ANIM_TAG_CLAPPING
+	battle_anim_pic_entry gBattleAnimSpriteGfx_RedTube, 0x0080, 0x276C @ [092] ANIM_TAG_RED_TUBE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Amnesia, 0x1000, 0x276D @ [093] ANIM_TAG_AMNESIA
+	battle_anim_pic_entry gBattleAnimSpriteGfx_String2, 0x0A00, 0x276E @ [094] ANIM_TAG_STRING_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Pencil2, 0x0180, 0x276F @ [095] ANIM_TAG_PENCIL_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Petal, 0x0380, 0x2770 @ [096] ANIM_TAG_PETAL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_BentSpoon, 0x0C00, 0x2771 @ [097] ANIM_TAG_BENT_SPOON
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Web, 0x0200, 0x2772 @ [098] ANIM_TAG_WEB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MilkBottle, 0x0200, 0x2773 @ [099] ANIM_TAG_MILK_BOTTLE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Coin, 0x0200, 0x2774 @ [100] ANIM_TAG_COIN
+	battle_anim_pic_entry gBattleAnimSpriteGfx_CrackedEgg, 0x0200, 0x2775 @ [101] ANIM_TAG_CRACKED_EGG
+	battle_anim_pic_entry gBattleAnimSpriteGfx_HatchedEgg, 0x0400, 0x2776 @ [102] ANIM_TAG_HATCHED_EGG
+	battle_anim_pic_entry gBattleAnimSpriteGfx_FreshEgg, 0x0080, 0x2777 @ [103] ANIM_TAG_FRESH_EGG
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Fangs, 0x0400, 0x2778 @ [104] ANIM_TAG_FANGS
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Explosion2, 0x0C00, 0x2779 @ [105] ANIM_TAG_EXPLOSION_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Explosion3, 0x0200, 0x277A @ [106] ANIM_TAG_EXPLOSION_3
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WaterDroplet, 0x1000, 0x277B @ [107] ANIM_TAG_WATER_DROPLET
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WaterDroplet2, 0x0A00, 0x277C @ [108] ANIM_TAG_WATER_DROPLET_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Seed2, 0x0020, 0x277D @ [109] ANIM_TAG_SEED_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Sprout, 0x0E00, 0x277E @ [110] ANIM_TAG_SPROUT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_RedWand, 0x0080, 0x277F @ [111] ANIM_TAG_RED_WAND
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PurpleGreenUnk, 0x0A00, 0x2780 @ [112] ANIM_TAG_PURPLE_GREEN_UNK
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WaterColumn, 0x0400, 0x2781 @ [113] ANIM_TAG_WATER_COLUMN
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MudUnk, 0x0200, 0x2782 @ [114] ANIM_TAG_MUD_UNK
+	battle_anim_pic_entry gBattleAnimSpriteGfx_RainDrops, 0x0700, 0x2783 @ [115] ANIM_TAG_RAIN_DROPS
+	battle_anim_pic_entry gBattleAnimSpriteGfx_FurySwipes, 0x0800, 0x2784 @ [116] ANIM_TAG_FURY_SWIPES
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Vine2, 0x0A00, 0x2785 @ [117] ANIM_TAG_VINE_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Teeth, 0x0600, 0x2786 @ [118] ANIM_TAG_TEETH
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Bone2, 0x0800, 0x2787 @ [119] ANIM_TAG_BONE_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WhiteBag, 0x0200, 0x2788 @ [120] ANIM_TAG_WHITE_BAG
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Unknown, 0x0040, 0x2789 @ [121] ANIM_TAG_UNKNOWN
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PurpleCoral, 0x0180, 0x278A @ [122] ANIM_TAG_PURPLE_CORAL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PurpleDroplet, 0x0600, 0x278B @ [123] ANIM_TAG_PURPLE_DROPLET
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Shock2, 0x0600, 0x278C @ [124] ANIM_TAG_SHOCK_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_ClosingEye2, 0x0200, 0x278D @ [125] ANIM_TAG_CLOSING_EYE_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MetalBall, 0x0080, 0x278E @ [126] ANIM_TAG_METAL_BALL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MonsterDoll, 0x0200, 0x278F @ [127] ANIM_TAG_MONSTER_DOLL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Whirlwind, 0x0800, 0x2790 @ [128] ANIM_TAG_WHIRLWIND
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Whirlwind2, 0x0080, 0x2791 @ [129] ANIM_TAG_WHIRLWIND_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Explosion4, 0x0A00, 0x2792 @ [130] ANIM_TAG_EXPLOSION_4
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Explosion5, 0x0280, 0x2793 @ [131] ANIM_TAG_EXPLOSION_5
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Tongue, 0x0280, 0x2794 @ [132] ANIM_TAG_TONGUE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Smoke, 0x0100, 0x2795 @ [133] ANIM_TAG_SMOKE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Smoke2, 0x0200, 0x2796 @ [134] ANIM_TAG_SMOKE_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Impact, 0x0200, 0x2797 @ [135] ANIM_TAG_IMPACT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_CircleImpact, 0x0020, 0x2798 @ [136] ANIM_TAG_CIRCLE_IMPACT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Scratch, 0x0A00, 0x2799 @ [137] ANIM_TAG_SCRATCH
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Cut, 0x0800, 0x279A @ [138] ANIM_TAG_CUT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SharpTeeth, 0x0800, 0x279B @ [139] ANIM_TAG_SHARP_TEETH
+	battle_anim_pic_entry gBattleAnimSpriteGfx_RainbowRings, 0x00C0, 0x279C @ [140] ANIM_TAG_RAINBOW_RINGS
+	battle_anim_pic_entry gBattleAnimSpriteGfx_IceCrystals, 0x01C0, 0x279D @ [141] ANIM_TAG_ICE_CRYSTALS
+	battle_anim_pic_entry gBattleAnimSpriteGfx_IceSpikes, 0x0100, 0x279E @ [142] ANIM_TAG_ICE_SPIKES
+	battle_anim_pic_entry gBattleAnimSpriteGfx_HandsAndFeet, 0x0800, 0x279F @ [143] ANIM_TAG_HANDS_AND_FEET
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MistCloud, 0x0200, 0x27A0 @ [144] ANIM_TAG_MIST_CLOUD
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Clamp, 0x0800, 0x27A1 @ [145] ANIM_TAG_CLAMP
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Bubble, 0x0180, 0x27A2 @ [146] ANIM_TAG_BUBBLE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Orbs, 0x0180, 0x27A3 @ [147] ANIM_TAG_ORBS
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WaterImpact, 0x0200, 0x27A4 @ [148] ANIM_TAG_WATER_IMPACT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WaterOrb, 0x0200, 0x27A5 @ [149] ANIM_TAG_WATER_ORB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PoisonBubble, 0x0180, 0x27A6 @ [150] ANIM_TAG_POISON_BUBBLE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_ToxicBubble, 0x0400, 0x27A7 @ [151] ANIM_TAG_TOXIC_BUBBLE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Spikes, 0x0080, 0x27A8 @ [152] ANIM_TAG_SPIKES
+	battle_anim_pic_entry gBattleAnimSpriteGfx_HornHit2, 0x0100, 0x27A9 @ [153] ANIM_TAG_HORN_HIT_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_AirWave2, 0x0100, 0x27AA @ [154] ANIM_TAG_AIR_WAVE_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SmallBubbles, 0x0140, 0x27AB @ [155] ANIM_TAG_SMALL_BUBBLES
+	battle_anim_pic_entry gBattleAnimSpriteGfx_RoundShadow, 0x0800, 0x27AC @ [156] ANIM_TAG_ROUND_SHADOW
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Sunlight, 0x0200, 0x27AD @ [157] ANIM_TAG_SUNLIGHT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Spore, 0x0100, 0x27AE @ [158] ANIM_TAG_SPORE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Flower, 0x00A0, 0x27AF @ [159] ANIM_TAG_FLOWER
+	battle_anim_pic_entry gBattleAnimSpriteGfx_RazorLeaf, 0x0100, 0x27B0 @ [160] ANIM_TAG_RAZOR_LEAF
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Needle, 0x0080, 0x27B1 @ [161] ANIM_TAG_NEEDLE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WhirlwindLines, 0x0300, 0x27B2 @ [162] ANIM_TAG_WHIRLWIND_LINES
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GoldRing, 0x0100, 0x27B3 @ [163] ANIM_TAG_GOLD_RING
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GoldRing, 0x0100, 0x27B4 @ [164] ANIM_TAG_PURPLE_RING
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GoldRing, 0x0100, 0x27B5 @ [165] ANIM_TAG_BLUE_RING
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GreenLightWall, 0x0800, 0x27B6 @ [166] ANIM_TAG_GREEN_LIGHT_WALL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GreenLightWall, 0x0800, 0x27B7 @ [167] ANIM_TAG_BLUE_LIGHT_WALL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GreenLightWall, 0x0800, 0x27B8 @ [168] ANIM_TAG_RED_LIGHT_WALL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GreenLightWall, 0x0800, 0x27B9 @ [169] ANIM_TAG_GRAY_LIGHT_WALL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GreenLightWall, 0x0800, 0x27BA @ [170] ANIM_TAG_ORANGE_LIGHT_WALL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_BlackBall2, 0x0080, 0x27BB @ [171] ANIM_TAG_BLACK_BALL_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MistCloud, 0x0200, 0x27BC @ [172] ANIM_TAG_PURPLE_GAS_CLOUD
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SparkH, 0x0200, 0x27BD @ [173] ANIM_TAG_SPARK_H
+	battle_anim_pic_entry gBattleAnimSpriteGfx_YellowStar, 0x0200, 0x27BE @ [174] ANIM_TAG_YELLOW_STAR
+	battle_anim_pic_entry gBattleAnimSpriteGfx_LargeFreshEgg, 0x0080, 0x27BF @ [175] ANIM_TAG_LARGE_FRESH_EGG
+	battle_anim_pic_entry gBattleAnimSpriteGfx_ShadowBall, 0x0200, 0x27C0 @ [176] ANIM_TAG_SHADOW_BALL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Lick, 0x0500, 0x27C1 @ [177] ANIM_TAG_LICK
+	battle_anim_pic_entry gBattleAnimSpriteGfx_VoidLines, 0x0800, 0x27C2 @ [178] ANIM_TAG_VOID_LINES
+	battle_anim_pic_entry gBattleAnimSpriteGfx_String, 0x0400, 0x27C3 @ [179] ANIM_TAG_STRING
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WebThread, 0x0020, 0x27C4 @ [180] ANIM_TAG_WEB_THREAD
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SpiderWeb, 0x0800, 0x27C5 @ [181] ANIM_TAG_SPIDER_WEB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Lightbulb, 0x0100, 0x27C6 @ [182] ANIM_TAG_LIGHTBULB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Slash, 0x0800, 0x27C7 @ [183] ANIM_TAG_SLASH
+	battle_anim_pic_entry gBattleAnimSpriteGfx_FocusEnergy, 0x0400, 0x27C8 @ [184] ANIM_TAG_FOCUS_ENERGY
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SphereToCube, 0x0A00, 0x27C9 @ [185] ANIM_TAG_SPHERE_TO_CUBE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Tendrils, 0x1000, 0x27CA @ [186] ANIM_TAG_TENDRILS
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Eye, 0x0800, 0x27CB @ [187] ANIM_TAG_EYE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WhiteShadow, 0x0400, 0x27CC @ [188] ANIM_TAG_WHITE_SHADOW
+	battle_anim_pic_entry gBattleAnimSpriteGfx_TealAlert, 0x0200, 0x27CD @ [189] ANIM_TAG_TEAL_ALERT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_OpeningEye, 0x0800, 0x27CE @ [190] ANIM_TAG_OPENING_EYE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_RoundWhiteHalo, 0x0800, 0x27CF @ [191] ANIM_TAG_ROUND_WHITE_HALO
+	battle_anim_pic_entry gBattleAnimSpriteGfx_FangAttack, 0x0800, 0x27D0 @ [192] ANIM_TAG_FANG_ATTACK
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PurpleHandOutline, 0x0200, 0x27D1 @ [193] ANIM_TAG_PURPLE_HAND_OUTLINE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Moon, 0x0800, 0x27D2 @ [194] ANIM_TAG_MOON
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GreenSparkle, 0x0200, 0x27D3 @ [195] ANIM_TAG_GREEN_SPARKLE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Spiral, 0x0800, 0x27D4 @ [196] ANIM_TAG_SPIRAL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SnoreZ, 0x0200, 0x27D5 @ [197] ANIM_TAG_SNORE_Z
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Explosion, 0x0800, 0x27D6 @ [198] ANIM_TAG_EXPLOSION
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Nail, 0x0400, 0x27D7 @ [199] ANIM_TAG_NAIL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GhostlySpirit, 0x0200, 0x27D8 @ [200] ANIM_TAG_GHOSTLY_SPIRIT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WarmRock, 0x0A80, 0x27D9 @ [201] ANIM_TAG_WARM_ROCK
+	battle_anim_pic_entry gBattleAnimSpriteGfx_BreakingEgg, 0x0600, 0x27DA @ [202] ANIM_TAG_BREAKING_EGG
+	battle_anim_pic_entry gBattleAnimSpriteGfx_ThinRing, 0x0800, 0x27DB @ [203] ANIM_TAG_THIN_RING
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PunchImpact, 0x0200, 0x27DC @ [204] ANIM_TAG_PUNCH_IMPACT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Bell, 0x0600, 0x27DD @ [205] ANIM_TAG_BELL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MusicNotes2, 0x0800, 0x27DE @ [206] ANIM_TAG_MUSIC_NOTES_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SpeedDust, 0x0180, 0x27DF @ [207] ANIM_TAG_SPEED_DUST
+	battle_anim_pic_entry gBattleAnimSpriteGfx_TornMetal, 0x0800, 0x27E0 @ [208] ANIM_TAG_TORN_METAL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_ThoughtBubble, 0x0800, 0x27E1 @ [209] ANIM_TAG_THOUGHT_BUBBLE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MagentaHeart, 0x0080, 0x27E2 @ [210] ANIM_TAG_MAGENTA_HEART
+	battle_anim_pic_entry gBattleAnimSpriteGfx_ElectricOrbs, 0x0080, 0x27E3 @ [211] ANIM_TAG_ELECTRIC_ORBS
+	battle_anim_pic_entry gBattleAnimSpriteGfx_CircleOfLight, 0x0800, 0x27E4 @ [212] ANIM_TAG_CIRCLE_OF_LIGHT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Electricity, 0x0800, 0x27E5 @ [213] ANIM_TAG_ELECTRICITY
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Finger2, 0x0600, 0x27E6 @ [214] ANIM_TAG_FINGER_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MovementWaves, 0x0600, 0x27E7 @ [215] ANIM_TAG_MOVEMENT_WAVES
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MagentaHeart, 0x0080, 0x27E8 @ [216] ANIM_TAG_RED_HEART
+	battle_anim_pic_entry gBattleAnimSpriteGfx_RedOrb, 0x0080, 0x27E9 @ [217] ANIM_TAG_RED_ORB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_EyeSparkle, 0x0180, 0x27EA @ [218] ANIM_TAG_EYE_SPARKLE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MagentaHeart, 0x0080, 0x27EB @ [219] ANIM_TAG_PINK_HEART
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Angel, 0x0200, 0x27EC @ [220] ANIM_TAG_ANGEL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Devil, 0x0400, 0x27ED @ [221] ANIM_TAG_DEVIL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Swipe, 0x0A00, 0x27EE @ [222] ANIM_TAG_SWIPE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Roots, 0x0800, 0x27EF @ [223] ANIM_TAG_ROOTS
+	battle_anim_pic_entry gBattleAnimSpriteGfx_ItemBag, 0x0200, 0x27F0 @ [224] ANIM_TAG_ITEM_BAG
+	battle_anim_pic_entry gBattleAnimSpriteGfx_JaggedMusicNote, 0x0400, 0x27F1 @ [225] ANIM_TAG_JAGGED_MUSIC_NOTE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Pokeball, 0x0080, 0x27F2 @ [226] ANIM_TAG_POKEBALL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Spotlight, 0x0800, 0x27F3 @ [227] ANIM_TAG_SPOTLIGHT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_LetterZ, 0x0200, 0x27F4 @ [228] ANIM_TAG_LETTER_Z
+	battle_anim_pic_entry gBattleAnimSpriteGfx_RapidSpin, 0x0300, 0x27F5 @ [229] ANIM_TAG_RAPID_SPIN
+	battle_anim_pic_entry gBattleAnimSpriteGfx_TriAttackTriangle, 0x0800, 0x27F6 @ [230] ANIM_TAG_TRI_ATTACK_TRIANGLE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WispOrb, 0x0380, 0x27F7 @ [231] ANIM_TAG_WISP_ORB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WispFire, 0x0800, 0x27F8 @ [232] ANIM_TAG_WISP_FIRE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GoldStars, 0x00C0, 0x27F9 @ [233] ANIM_TAG_GOLD_STARS
+	battle_anim_pic_entry gBattleAnimSpriteGfx_EclipsingOrb, 0x0800, 0x27FA @ [234] ANIM_TAG_ECLIPSING_ORB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GrayOrb, 0x0060, 0x27FB @ [235] ANIM_TAG_GRAY_ORB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GrayOrb, 0x0060, 0x27FC @ [236] ANIM_TAG_BLUE_ORB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GrayOrb, 0x0060, 0x27FD @ [237] ANIM_TAG_RED_ORB_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PinkPetal, 0x0080, 0x27FE @ [238] ANIM_TAG_PINK_PETAL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PainSplit, 0x0180, 0x27FF @ [239] ANIM_TAG_PAIN_SPLIT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Confetti, 0x0180, 0x2800 @ [240] ANIM_TAG_CONFETTI
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GreenStar, 0x0200, 0x2801 @ [241] ANIM_TAG_GREEN_STAR
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PinkCloud, 0x0200, 0x2802 @ [242] ANIM_TAG_PINK_CLOUD
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SweatDrop, 0x0020, 0x2803 @ [243] ANIM_TAG_SWEAT_DROP
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GuardRing, 0x0400, 0x2804 @ [244] ANIM_TAG_GUARD_RING
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PurpleScratch, 0x0600, 0x2805 @ [245] ANIM_TAG_PURPLE_SCRATCH
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PurpleSwipe, 0x1000, 0x2806 @ [246] ANIM_TAG_PURPLE_SWIPE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_TagHand, 0x0400, 0x2807 @ [247] ANIM_TAG_TAG_HAND
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SmallRedEye, 0x0020, 0x2808 @ [248] ANIM_TAG_SMALL_RED_EYE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_HollowOrb, 0x0080, 0x2809 @ [249] ANIM_TAG_HOLLOW_ORB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_XSign, 0x0800, 0x280A @ [250] ANIM_TAG_X_SIGN
+	battle_anim_pic_entry gBattleAnimSpriteGfx_BluegreenOrb, 0x0080, 0x280B @ [251] ANIM_TAG_BLUEGREEN_ORB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PawPrint, 0x0200, 0x280C @ [252] ANIM_TAG_PAW_PRINT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_PurpleFlame, 0x0400, 0x280D @ [253] ANIM_TAG_PURPLE_FLAME
+	battle_anim_pic_entry gBattleAnimSpriteGfx_RedBall, 0x0200, 0x280E @ [254] ANIM_TAG_RED_BALL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SmellingsaltEffect, 0x0200, 0x280F @ [255] ANIM_TAG_SMELLINGSALT_EFFECT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Meteor, 0x0800, 0x2810 @ [256] ANIM_TAG_METEOR
+	battle_anim_pic_entry gBattleAnimSpriteGfx_FlatRock, 0x0280, 0x2811 @ [257] ANIM_TAG_FLAT_ROCK
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MagnifyingGlass, 0x0200, 0x2812 @ [258] ANIM_TAG_MAGNIFYING_GLASS
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WaterOrb, 0x0200, 0x2813 @ [259] ANIM_TAG_BROWN_ORB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_MetalSoundWaves, 0x0400, 0x2814 @ [260] ANIM_TAG_METAL_SOUND_WAVES
+	battle_anim_pic_entry gBattleAnimSpriteGfx_FlyingDirt, 0x0200, 0x2815 @ [261] ANIM_TAG_FLYING_DIRT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_IcicleSpear, 0x0200, 0x2816 @ [262] ANIM_TAG_ICICLE_SPEAR
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Hail, 0x0080, 0x2817 @ [263] ANIM_TAG_HAIL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GlowyRedOrb, 0x0020, 0x2818 @ [264] ANIM_TAG_GLOWY_RED_ORB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GlowyRedOrb, 0x0020, 0x2819 @ [265] ANIM_TAG_GLOWY_GREEN_ORB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GreenSpike, 0x0080, 0x281A @ [266] ANIM_TAG_GREEN_SPIKE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_CircleOfLight, 0x0800, 0x281B @ [267] ANIM_TAG_WHITE_CIRCLE_OF_LIGHT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GlowyRedOrb, 0x0020, 0x281C @ [268] ANIM_TAG_GLOWY_BLUE_ORB
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Pokeblock, 0x0080, 0x281D @ [269] ANIM_TAG_POKEBLOCK
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WhiteFeather, 0x0400, 0x281E @ [270] ANIM_TAG_WHITE_FEATHER
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Sparkle6, 0x0080, 0x281F @ [271] ANIM_TAG_SPARKLE_6
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Splash, 0x0800, 0x2820 @ [272] ANIM_TAG_SPLASH
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SweatBead, 0x0020, 0x2821 @ [273] ANIM_TAG_SWEAT_BEAD
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Gem1, 0x0800, 0x2822 @ [274] ANIM_TAG_GEM_1
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Gem2, 0x0800, 0x2823 @ [275] ANIM_TAG_GEM_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Gem3, 0x0800, 0x2824 @ [276] ANIM_TAG_GEM_3
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SlamHit2, 0x1000, 0x2825 @ [277] ANIM_TAG_SLAM_HIT_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Recycle, 0x0800, 0x2826 @ [278] ANIM_TAG_RECYCLE
+	battle_anim_pic_entry gBattleAnimSpriteGfx_RedParticles, 0x00A0, 0x2827 @ [279] ANIM_TAG_RED_PARTICLES
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Protect, 0x0800, 0x2828 @ [280] ANIM_TAG_PROTECT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_DirtMound, 0x0200, 0x2829 @ [281] ANIM_TAG_DIRT_MOUND
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Shock3, 0x0600, 0x282A @ [282] ANIM_TAG_SHOCK_3
+	battle_anim_pic_entry gBattleAnimSpriteGfx_WeatherBall, 0x0200, 0x282B @ [283] ANIM_TAG_WEATHER_BALL
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Bird, 0x0800, 0x282C @ [284] ANIM_TAG_BIRD
+	battle_anim_pic_entry gBattleAnimSpriteGfx_CrossImpact, 0x0200, 0x282D @ [285] ANIM_TAG_CROSS_IMPACT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_Slash, 0x0800, 0x282E @ [286] ANIM_TAG_SLASH_2
+	battle_anim_pic_entry gBattleAnimSpriteGfx_SlamHit, 0x1000, 0x282F @ [287] ANIM_TAG_WHIP_HIT
+	battle_anim_pic_entry gBattleAnimSpriteGfx_GoldRing, 0x0100, 0x2830 @ [288] ANIM_TAG_BLUE_RING_2
+	.purgem battle_anim_pic_entry
+
+	@ Compatibility aliases into gBattleAnimPicTable.
 	.globl gBattleAnimData_084FD250
-gBattleAnimData_084FD250: @ 0x084FD250
-	@ analyzed canonical ROM range 0x084FD250-0x084FD41F
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x1D0
-	.2byte 0x2540, 0x08C0, 0x0200, 0x2710, 0xC728, 0x08C1, 0x0300, 0x2711
-	.2byte 0x0828, 0x08C2, 0x0200, 0x2712, 0x25F0, 0x08C0, 0x0100, 0x2713
-	.2byte 0x2664, 0x08C0, 0x0200, 0x2714, 0x2714, 0x08C0, 0x0400, 0x2715
-	.2byte 0x27E8, 0x08C0, 0x0180, 0x2716, 0x29D4, 0x08C0, 0x0800, 0x2717
-	.2byte 0x2B70, 0x08C0, 0x0020, 0x2718, 0x2FAC, 0x08C0, 0x0400, 0x2719
-	.2byte 0x2BCC, 0x08C0, 0x1200, 0x271A, 0x32B4, 0x08C0, 0x0180, 0x271B
-	.2byte 0x3354, 0x08C0, 0x0080, 0x271C, 0x3440, 0x08C0, 0x0080, 0x271D
-	.2byte 0xFC78, 0x08C1, 0x0280, 0x271E, 0x348C, 0x08C0, 0x0080, 0x271F
-	.2byte 0x3520, 0x08C0, 0x0100, 0x2720, 0x35A0, 0x08C0, 0x0020, 0x2721
-	.2byte 0x4E20, 0x08C2, 0x0080, 0x2722, 0x3600, 0x08C0, 0x0400, 0x2723
-	.2byte 0x36C0, 0x08C0, 0x0200, 0x2724, 0x3A30, 0x08C0, 0x0A00, 0x2725
-	.2byte 0x3A30, 0x08C0, 0x0A00, 0x2726, 0x37DC, 0x08C0, 0x0380, 0x2727
-	.2byte 0x3EA8, 0x08C0, 0x0300, 0x2728, 0x3DB8, 0x08C0, 0x0A00, 0x2729
-	.2byte 0x449C, 0x08C0, 0x0A00, 0x272A, 0x4824, 0x08C0, 0x0A00, 0x272B
-	.2byte 0x4B48, 0x08C0, 0x0A00, 0x272C, 0x4E98, 0x08C0, 0x0A00, 0x272D
-	.2byte 0x5178, 0x08C0, 0x0A00, 0x272E, 0x3F88, 0x08C0, 0x0E00, 0x272F
-	.2byte 0x43B0, 0x08C0, 0x0380, 0x2730, 0x5584, 0x08C0, 0x1000, 0x2731
-	.2byte 0x5EF4, 0x08C0, 0x0800, 0x2732, 0x62C0, 0x08C0, 0x0A00, 0x2733
-	.2byte 0x6680, 0x08C0, 0x0800, 0x2734, 0x6A54, 0x08C0, 0x0A00, 0x2735
-	.2byte 0x796C, 0x08C0, 0x0A00, 0x2736, 0x7B90, 0x08C0, 0x0A00, 0x2737
-	.2byte 0x7E8C, 0x08C0, 0x0A00, 0x2738, 0x8098, 0x08C0, 0x0A00, 0x2739
-	.2byte 0x82CC, 0x08C0, 0x0A00, 0x273A, 0x85C4, 0x08C0, 0x0A00, 0x273B
-	.2byte 0x8A14, 0x08C0, 0x0A00, 0x273C, 0x8CA8, 0x08C0, 0x0A00, 0x273D
-	.2byte 0x960C, 0x08C0, 0x1000, 0x273E, 0x960C, 0x08C0, 0x1000, 0x273F
-	.2byte 0x9CF8, 0x08C0, 0x1000, 0x2740, 0x9CF8, 0x08C0, 0x1000, 0x2741
-	.2byte 0xA004, 0x08C0, 0x0200, 0x2742, 0xA0A4, 0x08C0, 0x0200, 0x2743
-	.2byte 0xA150, 0x08C0, 0x0200, 0x2744, 0xE8D4, 0x08C2, 0x0800, 0x2745
-	.2byte 0xA3B0, 0x08C0, 0x0080, 0x2746, 0xA8C4, 0x08C0, 0x0200, 0x2747
-	.2byte 0xA3F4, 0x08C0, 0x1000, 0x2748, 0xA988, 0x08C0, 0x0180, 0x2749
-	@ pret/pokeemerald-jp direct xref for 0x084FD420: intro.s: Task_IntroLoadGroudonScene
+	.set gBattleAnimData_084FD250, gBattleAnimPicTable + 0x0
 	.globl gIntroData_084FD420
-gIntroData_084FD420: @ 0x084FD420
-	@ analyzed canonical ROM range 0x084FD420-0x084FD68F
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x270
-	.2byte 0xAA34, 0x08C0, 0x0C00, 0x274A, 0xAEC4, 0x08C0, 0x0100, 0x274B
-	.2byte 0xAF40, 0x08C0, 0x0040, 0x274C, 0xAF84, 0x08C0, 0x0180, 0x274D
-	.2byte 0xB054, 0x08C0, 0x0800, 0x274E, 0xB44C, 0x08C0, 0x0480, 0x274F
-	.2byte 0x31A8, 0x08C2, 0x0200, 0x2750, 0xB6C4, 0x08C0, 0x0200, 0x2751
-	.2byte 0xB7F8, 0x08C0, 0x0100, 0x2752, 0xB6C4, 0x08C0, 0x0200, 0x2753
-	.2byte 0xB6C4, 0x08C0, 0x0200, 0x2754, 0xB6C4, 0x08C0, 0x0200, 0x2755
-	.2byte 0xB86C, 0x08C0, 0x0200, 0x2756, 0xB914, 0x08C0, 0x0A00, 0x2757
-	.2byte 0xBB40, 0x08C0, 0x0300, 0x2758, 0xBC28, 0x08C0, 0x0180, 0x2759
-	.2byte 0xB2E4, 0x08C1, 0x00A0, 0x275A, 0xBD64, 0x08C0, 0x0700, 0x275B
-	.2byte 0x4CF4, 0x08C1, 0x0400, 0x275C, 0x4F58, 0x08C1, 0x0200, 0x275D
-	.2byte 0xC004, 0x08C0, 0x0300, 0x275E, 0xC1C4, 0x08C0, 0x0C00, 0x275F
-	.2byte 0xC5F4, 0x08C0, 0x0A00, 0x2760, 0xC97C, 0x08C0, 0x0080, 0x2761
-	.2byte 0xCB98, 0x08C0, 0x0040, 0x2762, 0xCE20, 0x08C0, 0x0E00, 0x2763
-	.2byte 0xD2C4, 0x08C0, 0x0E00, 0x2764, 0xD688, 0x08C0, 0x0280, 0x2765
-	.2byte 0xD740, 0x08C0, 0x0200, 0x2766, 0x4DA0, 0x08C2, 0x0080, 0x2767
-	.2byte 0xD8B0, 0x08C0, 0x00C0, 0x2768, 0xD900, 0x08C0, 0x0A00, 0x2769
-	.2byte 0xDB74, 0x08C0, 0x0200, 0x276A, 0xDC04, 0x08C0, 0x0180, 0x276B
-	.2byte 0xDD38, 0x08C0, 0x0080, 0x276C, 0xDDB4, 0x08C0, 0x1000, 0x276D
-	.2byte 0xE484, 0x08C0, 0x0A00, 0x276E, 0xE628, 0x08C0, 0x0180, 0x276F
-	.2byte 0xE6D8, 0x08C0, 0x0380, 0x2770, 0xE848, 0x08C0, 0x0C00, 0x2771
-	.2byte 0xEA28, 0x08C0, 0x0200, 0x2772, 0x7D90, 0x08C2, 0x0200, 0x2773
-	.2byte 0xEB60, 0x08C0, 0x0200, 0x2774, 0xEC60, 0x08C0, 0x0200, 0x2775
-	.2byte 0xED90, 0x08C0, 0x0400, 0x2776, 0xEF28, 0x08C0, 0x0080, 0x2777
-	.2byte 0xEF94, 0x08C0, 0x0400, 0x2778, 0xF17C, 0x08C0, 0x0C00, 0x2779
-	.2byte 0xF728, 0x08C0, 0x0200, 0x277A, 0xF818, 0x08C0, 0x1000, 0x277B
-	.2byte 0xFBEC, 0x08C0, 0x0A00, 0x277C, 0xFF70, 0x08C0, 0x0020, 0x277D
-	.2byte 0xFFC0, 0x08C0, 0x0E00, 0x277E, 0x03A4, 0x08C1, 0x0080, 0x277F
-	.2byte 0x040C, 0x08C1, 0x0A00, 0x2780, 0x075C, 0x08C1, 0x0400, 0x2781
-	.2byte 0x09F0, 0x08C1, 0x0200, 0x2782, 0x15EC, 0x08C1, 0x0700, 0x2783
-	.2byte 0x2E90, 0x08C1, 0x0800, 0x2784, 0x3164, 0x08C1, 0x0A00, 0x2785
-	.2byte 0x33BC, 0x08C1, 0x0600, 0x2786, 0x3570, 0x08C1, 0x0800, 0x2787
-	.2byte 0x3828, 0x08C1, 0x0200, 0x2788, 0x3944, 0x08C1, 0x0040, 0x2789
-	.2byte 0x3994, 0x08C1, 0x0180, 0x278A, 0x3AAC, 0x08C1, 0x0600, 0x278B
-	.2byte 0x3BE8, 0x08C1, 0x0600, 0x278C, 0x3EA8, 0x08C1, 0x0200, 0x278D
-	.2byte 0x3FBC, 0x08C1, 0x0080, 0x278E, 0x4044, 0x08C1, 0x0200, 0x278F
-	.2byte 0x4208, 0x08C1, 0x0800, 0x2790, 0x4494, 0x08C1, 0x0080, 0x2791
-	.2byte 0x44F8, 0x08C1, 0x0A00, 0x2792, 0x48F0, 0x08C1, 0x0280, 0x2793
-	.2byte 0x4A60, 0x08C1, 0x0280, 0x2794, 0x4B80, 0x08C1, 0x0100, 0x2795
-	.2byte 0x4C24, 0x08C1, 0x0200, 0x2796, 0xA3E8, 0x08C1, 0x0200, 0x2797
-	@ pret/pokeemerald-jp direct xref for 0x084FD690: battle_anim_status_effects.s: sub_080A9538
+	.set gIntroData_084FD420, gBattleAnimPicTable + 0x1D0
 	.globl gBattleAnimStatusEffectsData_084FD690
-gBattleAnimStatusEffectsData_084FD690: @ 0x084FD690
-	@ analyzed canonical ROM range 0x084FD690-0x084FD997
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x308
-	.2byte 0xA588, 0x08C1, 0x0020, 0x2798, 0xA5D4, 0x08C1, 0x0A00, 0x2799
-	.2byte 0xAB88, 0x08C1, 0x0800, 0x279A, 0xA7D8, 0x08C1, 0x0800, 0x279B
-	.2byte 0xACD4, 0x08C1, 0x00C0, 0x279C, 0xAD74, 0x08C1, 0x01C0, 0x279D
-	.2byte 0xAE9C, 0x08C1, 0x0100, 0x279E, 0xCC50, 0x08C2, 0x0800, 0x279F
-	.2byte 0xBCAC, 0x08C1, 0x0200, 0x27A0, 0xA9E8, 0x08C1, 0x0800, 0x27A1
-	.2byte 0x2480, 0x08C0, 0x0180, 0x27A2, 0xAFB4, 0x08C1, 0x0180, 0x27A3
-	.2byte 0xB1C0, 0x08C1, 0x0200, 0x27A4, 0xB0F0, 0x08C1, 0x0200, 0x27A5
-	.2byte 0xB370, 0x08C1, 0x0180, 0x27A6, 0xB460, 0x08C1, 0x0400, 0x27A7
-	.2byte 0x33D4, 0x08C0, 0x0080, 0x27A8, 0xB558, 0x08C1, 0x0100, 0x27A9
-	.2byte 0xB5DC, 0x08C1, 0x0100, 0x27AA, 0xB6A8, 0x08C1, 0x0140, 0x27AB
-	.2byte 0xB790, 0x08C1, 0x0800, 0x27AC, 0xB9D0, 0x08C1, 0x0200, 0x27AD
-	.2byte 0xBA4C, 0x08C1, 0x0100, 0x27AE, 0xBB38, 0x08C1, 0x00A0, 0x27AF
-	.2byte 0xBBDC, 0x08C1, 0x0100, 0x27B0, 0x2984, 0x08C0, 0x0080, 0x27B1
-	.2byte 0xBE88, 0x08C1, 0x0300, 0x27B2, 0xBF2C, 0x08C1, 0x0100, 0x27B3
-	.2byte 0xBF2C, 0x08C1, 0x0100, 0x27B4, 0xBF2C, 0x08C1, 0x0100, 0x27B5
-	.2byte 0xBFEC, 0x08C1, 0x0800, 0x27B6, 0xBFEC, 0x08C1, 0x0800, 0x27B7
-	.2byte 0xBFEC, 0x08C1, 0x0800, 0x27B8, 0xBFEC, 0x08C1, 0x0800, 0x27B9
-	.2byte 0xBFEC, 0x08C1, 0x0800, 0x27BA, 0xC398, 0x08C1, 0x0080, 0x27BB
-	.2byte 0xBCAC, 0x08C1, 0x0200, 0x27BC, 0xC804, 0x08C1, 0x0200, 0x27BD
-	.2byte 0xD644, 0x08C1, 0x0200, 0x27BE, 0xD70C, 0x08C1, 0x0080, 0x27BF
-	.2byte 0xD798, 0x08C1, 0x0200, 0x27C0, 0xD918, 0x08C1, 0x0500, 0x27C1
-	.2byte 0xD9F4, 0x08C1, 0x0800, 0x27C2, 0xDBAC, 0x08C1, 0x0400, 0x27C3
-	.2byte 0xDC88, 0x08C1, 0x0020, 0x27C4, 0xDCA0, 0x08C1, 0x0800, 0x27C5
-	.2byte 0xE030, 0x08C1, 0x0100, 0x27C6, 0xE0FC, 0x08C1, 0x0800, 0x27C7
-	.2byte 0xE39C, 0x08C1, 0x0400, 0x27C8, 0xE518, 0x08C1, 0x0A00, 0x27C9
-	.2byte 0xEE20, 0x08C1, 0x1000, 0x27CA, 0xEC10, 0x08C1, 0x0800, 0x27CB
-	.2byte 0x6674, 0x08D9, 0x0400, 0x27CC, 0x023C, 0x08C2, 0x0200, 0x27CD
-	.2byte 0xFD28, 0x08C1, 0x0800, 0x27CE, 0xFFA8, 0x08C1, 0x0800, 0x27CF
-	.2byte 0x02E0, 0x08C2, 0x0800, 0x27D0, 0x0588, 0x08C2, 0x0200, 0x27D1
-	.2byte 0x0CF0, 0x08C2, 0x0800, 0x27D2, 0x1050, 0x08C2, 0x0200, 0x27D3
-	.2byte 0x0934, 0x08C2, 0x0800, 0x27D4, 0x1128, 0x08C2, 0x0200, 0x27D5
-	.2byte 0x12C0, 0x08C2, 0x0800, 0x27D6, 0x16D8, 0x08C2, 0x0400, 0x27D7
-	.2byte 0x17BC, 0x08C2, 0x0200, 0x27D8, 0x1918, 0x08C2, 0x0A80, 0x27D9
-	.2byte 0x214C, 0x08C2, 0x0600, 0x27DA, 0x22D8, 0x08C2, 0x0800, 0x27DB
-	.2byte 0x1FB0, 0x08C2, 0x0200, 0x27DC, 0x2748, 0x08C2, 0x0600, 0x27DD
-	.2byte 0x24A8, 0x08C2, 0x0800, 0x27DE, 0x29A0, 0x08C2, 0x0180, 0x27DF
-	.2byte 0x2A90, 0x08C2, 0x0800, 0x27E0, 0x2E80, 0x08C2, 0x0800, 0x27E1
-	.2byte 0x32BC, 0x08C2, 0x0080, 0x27E2, 0x4354, 0x08C2, 0x0080, 0x27E3
-	.2byte 0x4120, 0x08C2, 0x0800, 0x27E4, 0x43A4, 0x08C2, 0x0800, 0x27E5
-	.2byte 0x4634, 0x08C2, 0x0600, 0x27E6, 0x48C4, 0x08C2, 0x0600, 0x27E7
-	.2byte 0x32BC, 0x08C2, 0x0080, 0x27E8, 0x4098, 0x08C2, 0x0080, 0x27E9
-	.2byte 0x4CF4, 0x08C2, 0x0180, 0x27EA, 0x32BC, 0x08C2, 0x0080, 0x27EB
-	.2byte 0x4EA0, 0x08C2, 0x0200, 0x27EC, 0x4FEC, 0x08C2, 0x0400, 0x27ED
-	.2byte 0x5250, 0x08C2, 0x0A00, 0x27EE, 0x5584, 0x08C2, 0x0800, 0x27EF
-	.2byte 0x5838, 0x08C2, 0x0200, 0x27F0, 0x7808, 0x08C2, 0x0400, 0x27F1
-	.2byte 0x7AFC, 0x08C2, 0x0080, 0x27F2, 0x79B4, 0x08C2, 0x0800, 0x27F3
-	.2byte 0x5BC0, 0x08C2, 0x0200, 0x27F4, 0x7BAC, 0x08C2, 0x0300, 0x27F5
-	.2byte 0x595C, 0x08C2, 0x0800, 0x27F6, 0x8438, 0x08C2, 0x0380, 0x27F7
-	.2byte 0x7ED8, 0x08C2, 0x0800, 0x27F8
-	@ pret/pokeemerald-jp direct xref for 0x084FD998: battle_anim_special.s: sub_08172CD4
+	.set gBattleAnimStatusEffectsData_084FD690, gBattleAnimPicTable + 0x440
 	.globl gBattleAnimSpecialData_084FD998
-gBattleAnimSpecialData_084FD998: @ 0x084FD998
-	@ analyzed canonical ROM range 0x084FD998-0x084FDAB7
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x120
-	.byte 0x08, 0x86, 0xC2, 0x08, 0xC0, 0x00, 0xF9, 0x27, 0xB4, 0x86, 0xC2, 0x08, 0x00, 0x08, 0xFA, 0x27
-	.byte 0x24, 0x89, 0xC2, 0x08, 0x60, 0x00, 0xFB, 0x27, 0x24, 0x89, 0xC2, 0x08, 0x60, 0x00, 0xFC, 0x27
-	.byte 0x24, 0x89, 0xC2, 0x08, 0x60, 0x00, 0xFD, 0x27, 0x98, 0x88, 0xC2, 0x08, 0x80, 0x00, 0xFE, 0x27
-	.byte 0x44, 0xCB, 0xC2, 0x08, 0x80, 0x01, 0xFF, 0x27, 0x98, 0xCE, 0xC2, 0x08, 0x80, 0x01, 0x00, 0x28
-	.byte 0xEC, 0xD3, 0xC2, 0x08, 0x00, 0x02, 0x01, 0x28, 0x14, 0xD6, 0xC2, 0x08, 0x00, 0x02, 0x02, 0x28
-	.byte 0x74, 0xD7, 0xC2, 0x08, 0x20, 0x00, 0x03, 0x28, 0xF8, 0xE5, 0xC2, 0x08, 0x00, 0x04, 0x04, 0x28
-	.byte 0xAC, 0xDF, 0xC2, 0x08, 0x00, 0x06, 0x05, 0x28, 0x50, 0xE1, 0xC2, 0x08, 0x00, 0x10, 0x06, 0x28
-	.byte 0xF0, 0xE6, 0xC2, 0x08, 0x00, 0x04, 0x07, 0x28, 0x48, 0xEC, 0xC2, 0x08, 0x20, 0x00, 0x08, 0x28
-	.byte 0x78, 0xEC, 0xC2, 0x08, 0x80, 0x00, 0x09, 0x28, 0xE8, 0xEC, 0xC2, 0x08, 0x00, 0x08, 0x0A, 0x28
-	.byte 0xDC, 0xEE, 0xC2, 0x08, 0x80, 0x00, 0x0B, 0x28, 0x58, 0xEF, 0xC2, 0x08, 0x00, 0x02, 0x0C, 0x28
-	.byte 0x94, 0xF0, 0xC2, 0x08, 0x00, 0x04, 0x0D, 0x28, 0x98, 0xF2, 0xC2, 0x08, 0x00, 0x02, 0x0E, 0x28
-	.byte 0xF8, 0xF3, 0xC2, 0x08, 0x00, 0x02, 0x0F, 0x28, 0x94, 0xF5, 0xC2, 0x08, 0x00, 0x08, 0x10, 0x28
-	.byte 0x48, 0xF9, 0xC2, 0x08, 0x80, 0x02, 0x11, 0x28, 0x84, 0xF4, 0xC2, 0x08, 0x00, 0x02, 0x12, 0x28
-	.byte 0xF0, 0xB0, 0xC1, 0x08, 0x00, 0x02, 0x13, 0x28, 0xC4, 0xDA, 0xD8, 0x08, 0x00, 0x04, 0x14, 0x28
-	.byte 0x88, 0xD2, 0xD8, 0x08, 0x00, 0x02, 0x15, 0x28, 0x24, 0xE8, 0xD8, 0x08, 0x00, 0x02, 0x16, 0x28
-	.byte 0xF8, 0x3A, 0xD9, 0x08, 0x80, 0x00, 0x17, 0x28, 0x1C, 0xEA, 0xD8, 0x08, 0x20, 0x00, 0x18, 0x28
-	.byte 0x1C, 0xEA, 0xD8, 0x08, 0x20, 0x00, 0x19, 0x28, 0x50, 0x3B, 0xD9, 0x08, 0x80, 0x00, 0x1A, 0x28
-	.byte 0x20, 0x41, 0xC2, 0x08, 0x00, 0x08, 0x1B, 0x28, 0x1C, 0xEA, 0xD8, 0x08, 0x20, 0x00, 0x1C, 0x28
-	@ pret/pokeemerald-jp direct xref for 0x084FDAB8: battle_anim_special.s: AnimTask_LoadPokeblockGfx
+	.set gBattleAnimSpecialData_084FD998, gBattleAnimPicTable + 0x748
 	.globl gBattleAnimSpecialData_084FDAB8
-gBattleAnimSpecialData_084FDAB8: @ 0x084FDAB8
-	@ analyzed canonical ROM range 0x084FDAB8-0x084FDD27
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x270
-	.2byte 0xEEE0, 0x08D8, 0x0080, 0x281D, 0xA620, 0x08DB, 0x0400, 0x281E
-	.2byte 0xA760, 0x08DB, 0x0080, 0x281F, 0xEC78, 0x08D8, 0x0800, 0x2820
-	.2byte 0xEEB8, 0x08D8, 0x0020, 0x2821, 0xEF4C, 0x08D8, 0x0800, 0x2822
-	.2byte 0xF0CC, 0x08D8, 0x0800, 0x2823, 0xF238, 0x08D8, 0x0800, 0x2824
-	.2byte 0x2EA0, 0x08D9, 0x1000, 0x2825, 0x3BD8, 0x08D9, 0x0800, 0x2826
-	.2byte 0x3E00, 0x08D9, 0x00A0, 0x2827, 0xF734, 0x08D8, 0x0800, 0x2828
-	.2byte 0x3E68, 0x08D9, 0x0200, 0x2829, 0xA41C, 0x08DB, 0x0600, 0x282A
-	.2byte 0x3428, 0x08D9, 0x0200, 0x282B, 0x460C, 0x08D9, 0x0800, 0x282C
-	.2byte 0x49A4, 0x08D9, 0x0200, 0x282D, 0xE0FC, 0x08C1, 0x0800, 0x282E
-	.2byte 0xA3F4, 0x08C0, 0x1000, 0x282F, 0xBF2C, 0x08C1, 0x0100, 0x2830
-	.2byte 0x28D4, 0x08C0, 0x2710, 0x0000, 0xC7DC, 0x08C1, 0x2711, 0x0000
-	.2byte 0x090C, 0x08C2, 0x2712, 0x0000, 0x28F8, 0x08C0, 0x2713, 0x0000
-	.2byte 0x2920, 0x08C0, 0x2714, 0x0000, 0x2934, 0x08C0, 0x2715, 0x0000
-	.2byte 0x295C, 0x08C0, 0x2716, 0x0000, 0x2B50, 0x08C0, 0x2717, 0x0000
-	.2byte 0x2B90, 0x08C0, 0x2718, 0x0000, 0x3294, 0x08C0, 0x2719, 0x0000
-	.2byte 0x2BAC, 0x08C0, 0x271A, 0x0000, 0x332C, 0x08C0, 0x271B, 0x0000
-	.2byte 0x33BC, 0x08C0, 0x271C, 0x0000, 0x3474, 0x08C0, 0x271D, 0x0000
-	.2byte 0xFD0C, 0x08C1, 0x271E, 0x0000, 0x34F8, 0x08C0, 0x271F, 0x0000
-	.2byte 0x3590, 0x08C0, 0x2720, 0x0000, 0x3590, 0x08C0, 0x2721, 0x0000
-	.2byte 0x4E5C, 0x08C2, 0x2722, 0x0000, 0x35E4, 0x08C0, 0x2723, 0x0000
-	.2byte 0x378C, 0x08C0, 0x2724, 0x0000, 0x3A08, 0x08C0, 0x2725, 0x0000
-	.2byte 0x3D68, 0x08C0, 0x2726, 0x0000, 0x37B4, 0x08C0, 0x2727, 0x0000
-	.2byte 0x3F74, 0x08C0, 0x2728, 0x0000, 0x3D90, 0x08C0, 0x2729, 0x0000
-	.2byte 0x47D4, 0x08C0, 0x272A, 0x0000, 0x47FC, 0x08C0, 0x272B, 0x0000
-	.2byte 0x4B20, 0x08C0, 0x272C, 0x0000, 0x5150, 0x08C0, 0x272D, 0x0000
-	.2byte 0x5538, 0x08C0, 0x272E, 0x0000, 0x4368, 0x08C0, 0x272F, 0x0000
-	.2byte 0x4388, 0x08C0, 0x2730, 0x0000, 0x555C, 0x08C0, 0x2731, 0x0000
-	.2byte 0x555C, 0x08C0, 0x2732, 0x0000, 0x555C, 0x08C0, 0x2733, 0x0000
-	.2byte 0x6658, 0x08C0, 0x2734, 0x0000, 0x6658, 0x08C0, 0x2735, 0x0000
-	.2byte 0x791C, 0x08C0, 0x2736, 0x0000, 0x7944, 0x08C0, 0x2737, 0x0000
-	.2byte 0x791C, 0x08C0, 0x2738, 0x0000, 0x791C, 0x08C0, 0x2739, 0x0000
-	.2byte 0x859C, 0x08C0, 0x273A, 0x0000, 0x89C4, 0x08C0, 0x273B, 0x0000
-	.2byte 0x89EC, 0x08C0, 0x273C, 0x0000, 0x8C80, 0x08C0, 0x273D, 0x0000
-	.2byte 0x99EC, 0x08C0, 0x273E, 0x0000, 0x9A0C, 0x08C0, 0x273E, 0x0000
-	.2byte 0x9F90, 0x08C0, 0x2740, 0x0000, 0x9FB8, 0x08C0, 0x2741, 0x0000
-	.2byte 0x9FE0, 0x08C0, 0x2742, 0x0000, 0x9FE0, 0x08C0, 0x2743, 0x0000
-	.2byte 0x9FE0, 0x08C0, 0x2744, 0x0000, 0x47D4, 0x08C0, 0x2745, 0x0000
-	.2byte 0xA3DC, 0x08C0, 0x2746, 0x0000, 0x9FE0, 0x08C0, 0x2747, 0x0000
-	.2byte 0xA89C, 0x08C0, 0x2748, 0x0000, 0xAA10, 0x08C0, 0x2749, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x084FDD28: intro.s: Task_IntroLoadGroudonScene
+	.set gBattleAnimSpecialData_084FDAB8, gBattleAnimPicTable + 0x868
+
+	@ struct CompressedSpritePalette { const void *data; u16 tag; u16 pad; }
+	.macro battle_anim_palette_entry data:req, tag:req
+	.4byte \data
+	.2byte \tag, 0
+	.endm
+
+	.globl gBattleAnimPaletteTable
+gBattleAnimPaletteTable: @ 0x084FDB58
+	battle_anim_palette_entry gBattleAnimSpritePal_Bone, 0x2710 @ [000] ANIM_TAG_BONE
+	battle_anim_palette_entry gBattleAnimSpritePal_Spark, 0x2711 @ [001] ANIM_TAG_SPARK
+	battle_anim_palette_entry gBattleAnimSpritePal_Pencil, 0x2712 @ [002] ANIM_TAG_PENCIL
+	battle_anim_palette_entry gBattleAnimSpritePal_AirWave, 0x2713 @ [003] ANIM_TAG_AIR_WAVE
+	battle_anim_palette_entry gBattleAnimSpritePal_Orb, 0x2714 @ [004] ANIM_TAG_ORB
+	battle_anim_palette_entry gBattleAnimSpritePal_Sword, 0x2715 @ [005] ANIM_TAG_SWORD
+	battle_anim_palette_entry gBattleAnimSpritePal_Seed, 0x2716 @ [006] ANIM_TAG_SEED
+	battle_anim_palette_entry gBattleAnimSpritePal_Explosion6, 0x2717 @ [007] ANIM_TAG_EXPLOSION_6
+	battle_anim_palette_entry gBattleAnimSpritePal_PinkOrb, 0x2718 @ [008] ANIM_TAG_PINK_ORB
+	battle_anim_palette_entry gBattleAnimSpritePal_Gust, 0x2719 @ [009] ANIM_TAG_GUST
+	battle_anim_palette_entry gBattleAnimSpritePal_IceCube, 0x271A @ [010] ANIM_TAG_ICE_CUBE
+	battle_anim_palette_entry gBattleAnimSpritePal_Spark2, 0x271B @ [011] ANIM_TAG_SPARK_2
+	battle_anim_palette_entry gBattleAnimSpritePal_Orange, 0x271C @ [012] ANIM_TAG_ORANGE
+	battle_anim_palette_entry gBattleAnimSpritePal_YellowBall, 0x271D @ [013] ANIM_TAG_YELLOW_BALL
+	battle_anim_palette_entry gBattleAnimSpritePal_LockOn, 0x271E @ [014] ANIM_TAG_LOCK_ON
+	battle_anim_palette_entry gBattleAnimSpritePal_TiedBag, 0x271F @ [015] ANIM_TAG_TIED_BAG
+	battle_anim_palette_entry gBattleAnimSpritePal_BlackSmoke, 0x2720 @ [016] ANIM_TAG_BLACK_SMOKE
+	battle_anim_palette_entry gBattleAnimSpritePal_BlackSmoke, 0x2721 @ [017] ANIM_TAG_BLACK_BALL
+	battle_anim_palette_entry gBattleAnimSpritePal_Conversion, 0x2722 @ [018] ANIM_TAG_CONVERSION
+	battle_anim_palette_entry gBattleAnimSpritePal_Glass, 0x2723 @ [019] ANIM_TAG_GLASS
+	battle_anim_palette_entry gBattleAnimSpritePal_HornHit, 0x2724 @ [020] ANIM_TAG_HORN_HIT
+	battle_anim_palette_entry gBattleAnimSpritePal_Hit, 0x2725 @ [021] ANIM_TAG_HIT
+	battle_anim_palette_entry gBattleAnimSpritePal_Hit2, 0x2726 @ [022] ANIM_TAG_HIT_2
+	battle_anim_palette_entry gBattleAnimSpritePal_BlueShards, 0x2727 @ [023] ANIM_TAG_BLUE_SHARDS
+	battle_anim_palette_entry gBattleAnimSpritePal_ClosingEye, 0x2728 @ [024] ANIM_TAG_CLOSING_EYE
+	battle_anim_palette_entry gBattleAnimSpritePal_WavingHand, 0x2729 @ [025] ANIM_TAG_WAVING_HAND
+	battle_anim_palette_entry gBattleAnimSpritePal_HitDuplicate, 0x272A @ [026] ANIM_TAG_HIT_DUPLICATE
+	battle_anim_palette_entry gBattleAnimSpritePal_Leer, 0x272B @ [027] ANIM_TAG_LEER
+	battle_anim_palette_entry gBattleAnimSpritePal_BlueBurst, 0x272C @ [028] ANIM_TAG_BLUE_BURST
+	battle_anim_palette_entry gBattleAnimSpritePal_SmallEmber, 0x272D @ [029] ANIM_TAG_SMALL_EMBER
+	battle_anim_palette_entry gBattleAnimSpritePal_GraySmoke, 0x272E @ [030] ANIM_TAG_GRAY_SMOKE
+	battle_anim_palette_entry gBattleAnimSpritePal_BlueStar, 0x272F @ [031] ANIM_TAG_BLUE_STAR
+	battle_anim_palette_entry gBattleAnimSpritePal_BubbleBurst, 0x2730 @ [032] ANIM_TAG_BUBBLE_BURST
+	battle_anim_palette_entry gBattleAnimSpritePal_Fire, 0x2731 @ [033] ANIM_TAG_FIRE
+	battle_anim_palette_entry gBattleAnimSpritePal_Fire, 0x2732 @ [034] ANIM_TAG_SPINNING_FIRE
+	battle_anim_palette_entry gBattleAnimSpritePal_Fire, 0x2733 @ [035] ANIM_TAG_FIRE_PLUME
+	battle_anim_palette_entry gBattleAnimSpritePal_Lightning2, 0x2734 @ [036] ANIM_TAG_LIGHTNING_2
+	battle_anim_palette_entry gBattleAnimSpritePal_Lightning2, 0x2735 @ [037] ANIM_TAG_LIGHTNING
+	battle_anim_palette_entry gBattleAnimSpritePal_ClawSlash2, 0x2736 @ [038] ANIM_TAG_CLAW_SLASH_2
+	battle_anim_palette_entry gBattleAnimSpritePal_ClawSlash, 0x2737 @ [039] ANIM_TAG_CLAW_SLASH
+	battle_anim_palette_entry gBattleAnimSpritePal_ClawSlash2, 0x2738 @ [040] ANIM_TAG_SCRATCH_3
+	battle_anim_palette_entry gBattleAnimSpritePal_ClawSlash2, 0x2739 @ [041] ANIM_TAG_SCRATCH_2
+	battle_anim_palette_entry gBattleAnimSpritePal_BubbleBurst2, 0x273A @ [042] ANIM_TAG_BUBBLE_BURST_2
+	battle_anim_palette_entry gBattleAnimSpritePal_IceChunk, 0x273B @ [043] ANIM_TAG_ICE_CHUNK
+	battle_anim_palette_entry gBattleAnimSpritePal_Glass2, 0x273C @ [044] ANIM_TAG_GLASS_2
+	battle_anim_palette_entry gBattleAnimSpritePal_PinkHeart2, 0x273D @ [045] ANIM_TAG_PINK_HEART_2
+	battle_anim_palette_entry gBattleAnimSpritePal_SapDrip, 0x273E @ [046] ANIM_TAG_SAP_DRIP
+	battle_anim_palette_entry gBattleAnimSpritePal_SapDrip2, 0x273E @ [047] ANIM_TAG_SAP_DRIP (intentional upstream duplicate of ANIM_TAG_SAP_DRIP)
+	battle_anim_palette_entry gBattleAnimSpritePal_Sparkle1, 0x2740 @ [048] ANIM_TAG_SPARKLE_1
+	battle_anim_palette_entry gBattleAnimSpritePal_Sparkle2, 0x2741 @ [049] ANIM_TAG_SPARKLE_2
+	battle_anim_palette_entry gBattleAnimSpritePal_HumanoidFoot, 0x2742 @ [050] ANIM_TAG_HUMANOID_FOOT
+	battle_anim_palette_entry gBattleAnimSpritePal_HumanoidFoot, 0x2743 @ [051] ANIM_TAG_MONSTER_FOOT
+	battle_anim_palette_entry gBattleAnimSpritePal_HumanoidFoot, 0x2744 @ [052] ANIM_TAG_HUMANOID_HAND
+	battle_anim_palette_entry gBattleAnimSpritePal_HitDuplicate, 0x2745 @ [053] ANIM_TAG_NOISE_LINE
+	battle_anim_palette_entry gBattleAnimSpritePal_YellowUnk, 0x2746 @ [054] ANIM_TAG_YELLOW_UNK
+	battle_anim_palette_entry gBattleAnimSpritePal_HumanoidFoot, 0x2747 @ [055] ANIM_TAG_RED_FIST
+	battle_anim_palette_entry gBattleAnimSpritePal_SlamHit, 0x2748 @ [056] ANIM_TAG_SLAM_HIT
+	battle_anim_palette_entry gBattleAnimSpritePal_Ring, 0x2749 @ [057] ANIM_TAG_RING
+	battle_anim_palette_entry gBattleAnimSpritePal_Rocks, 0x274A @ [058] ANIM_TAG_ROCKS
+	battle_anim_palette_entry gBattleAnimSpritePal_Z, 0x274B @ [059] ANIM_TAG_Z
+	battle_anim_palette_entry gBattleAnimSpritePal_YellowUnk2, 0x274C @ [060] ANIM_TAG_YELLOW_UNK_2
+	battle_anim_palette_entry gBattleAnimSpritePal_AirSlash, 0x274D @ [061] ANIM_TAG_AIR_SLASH
+	battle_anim_palette_entry gBattleAnimSpritePal_SpinningGreenOrbs, 0x274E @ [062] ANIM_TAG_SPINNING_GREEN_ORBS
+	battle_anim_palette_entry gBattleAnimSpritePal_Leaf, 0x274F @ [063] ANIM_TAG_LEAF
+	battle_anim_palette_entry gBattleAnimSpritePal_Finger, 0x2750 @ [064] ANIM_TAG_FINGER
+	battle_anim_palette_entry gBattleAnimSpritePal_PoisonPowder, 0x2751 @ [065] ANIM_TAG_POISON_POWDER
+	battle_anim_palette_entry gBattleAnimSpritePal_BrownTriangle, 0x2752 @ [066] ANIM_TAG_BROWN_TRIANGLE
+	battle_anim_palette_entry gBattleAnimSpritePal_SleepPowder, 0x2753 @ [067] ANIM_TAG_SLEEP_POWDER
+	battle_anim_palette_entry gBattleAnimSpritePal_StunSpore, 0x2754 @ [068] ANIM_TAG_STUN_SPORE
+	battle_anim_palette_entry gBattleAnimSpritePal_PoisonPowder, 0x2755 @ [069] ANIM_TAG_POWDER
+	battle_anim_palette_entry gBattleAnimSpritePal_Sparkle3, 0x2756 @ [070] ANIM_TAG_SPARKLE_3
+	battle_anim_palette_entry gBattleAnimSpritePal_Sparkle3, 0x2757 @ [071] ANIM_TAG_SPARKLE_4
+	battle_anim_palette_entry gBattleAnimSpritePal_MusicNotes, 0x2758 @ [072] ANIM_TAG_MUSIC_NOTES
+	battle_anim_palette_entry gBattleAnimSpritePal_Duck, 0x2759 @ [073] ANIM_TAG_DUCK
+	battle_anim_palette_entry gBattleAnimSpritePal_MudSand, 0x275A @ [074] ANIM_TAG_MUD_SAND
+	battle_anim_palette_entry gBattleAnimSpritePal_Alert, 0x275B @ [075] ANIM_TAG_ALERT
+	battle_anim_palette_entry gBattleAnimSpritePal_BlueFlames, 0x275C @ [076] ANIM_TAG_BLUE_FLAMES
+	battle_anim_palette_entry gBattleAnimSpritePal_BlueFlames, 0x275D @ [077] ANIM_TAG_BLUE_FLAMES_2
+	battle_anim_palette_entry gBattleAnimSpritePal_Shock4, 0x275E @ [078] ANIM_TAG_SHOCK_4
+	battle_anim_palette_entry gBattleAnimSpritePal_Shock4, 0x275F @ [079] ANIM_TAG_SHOCK
+	battle_anim_palette_entry gBattleAnimSpritePal_Bell2, 0x2760 @ [080] ANIM_TAG_BELL_2
+	battle_anim_palette_entry gBattleAnimSpritePal_PinkGlove, 0x2761 @ [081] ANIM_TAG_PINK_GLOVE
+	battle_anim_palette_entry gBattleAnimSpritePal_BlueLines, 0x2762 @ [082] ANIM_TAG_BLUE_LINES
+	battle_anim_palette_entry gBattleAnimSpritePal_Impact3, 0x2763 @ [083] ANIM_TAG_IMPACT_3
+	battle_anim_palette_entry gBattleAnimSpritePal_Impact2, 0x2764 @ [084] ANIM_TAG_IMPACT_2
+	battle_anim_palette_entry gBattleAnimSpritePal_Reticle, 0x2765 @ [085] ANIM_TAG_RETICLE
+	battle_anim_palette_entry gBattleAnimSpritePal_Breath, 0x2766 @ [086] ANIM_TAG_BREATH
+	battle_anim_palette_entry gBattleAnimSpritePal_Anger, 0x2767 @ [087] ANIM_TAG_ANGER
+	battle_anim_palette_entry gBattleAnimSpritePal_Snowball, 0x2768 @ [088] ANIM_TAG_SNOWBALL
+	battle_anim_palette_entry gBattleAnimSpritePal_Vine, 0x2769 @ [089] ANIM_TAG_VINE
+	battle_anim_palette_entry gBattleAnimSpritePal_Sword2, 0x276A @ [090] ANIM_TAG_SWORD_2
+	battle_anim_palette_entry gBattleAnimSpritePal_Clapping, 0x276B @ [091] ANIM_TAG_CLAPPING
+	battle_anim_palette_entry gBattleAnimSpritePal_RedTube, 0x276C @ [092] ANIM_TAG_RED_TUBE
+	battle_anim_palette_entry gBattleAnimSpritePal_Amnesia, 0x276D @ [093] ANIM_TAG_AMNESIA
+	battle_anim_palette_entry gBattleAnimSpritePal_String2, 0x276E @ [094] ANIM_TAG_STRING_2
+	battle_anim_palette_entry gBattleAnimSpritePal_Pencil2, 0x276F @ [095] ANIM_TAG_PENCIL_2
+	battle_anim_palette_entry gBattleAnimSpritePal_Petal, 0x2770 @ [096] ANIM_TAG_PETAL
+	battle_anim_palette_entry gBattleAnimSpritePal_BentSpoon, 0x2771 @ [097] ANIM_TAG_BENT_SPOON
+	battle_anim_palette_entry gBattleAnimSpritePal_String2, 0x2772 @ [098] ANIM_TAG_WEB
+	battle_anim_palette_entry gBattleAnimSpritePal_MilkBottle, 0x2773 @ [099] ANIM_TAG_MILK_BOTTLE
+	battle_anim_palette_entry gBattleAnimSpritePal_Coin, 0x2774 @ [100] ANIM_TAG_COIN
+	battle_anim_palette_entry gBattleAnimSpritePal_CrackedEgg, 0x2775 @ [101] ANIM_TAG_CRACKED_EGG
+	battle_anim_palette_entry gBattleAnimSpritePal_CrackedEgg, 0x2776 @ [102] ANIM_TAG_HATCHED_EGG
+	battle_anim_palette_entry gBattleAnimSpritePal_FreshEgg, 0x2777 @ [103] ANIM_TAG_FRESH_EGG
+	battle_anim_palette_entry gBattleAnimSpritePal_Fangs, 0x2778 @ [104] ANIM_TAG_FANGS
+	battle_anim_palette_entry gBattleAnimSpritePal_Explosion2, 0x2779 @ [105] ANIM_TAG_EXPLOSION_2
+	battle_anim_palette_entry gBattleAnimSpritePal_Explosion2, 0x277A @ [106] ANIM_TAG_EXPLOSION_3
+	battle_anim_palette_entry gBattleAnimSpritePal_WaterDroplet, 0x277B @ [107] ANIM_TAG_WATER_DROPLET
+	battle_anim_palette_entry gBattleAnimSpritePal_WaterDroplet, 0x277C @ [108] ANIM_TAG_WATER_DROPLET_2
+	battle_anim_palette_entry gBattleAnimSpritePal_Seed2, 0x277D @ [109] ANIM_TAG_SEED_2
+	battle_anim_palette_entry gBattleAnimSpritePal_Seed2, 0x277E @ [110] ANIM_TAG_SPROUT
+	battle_anim_palette_entry gBattleAnimSpritePal_RedWand, 0x277F @ [111] ANIM_TAG_RED_WAND
+	battle_anim_palette_entry gBattleAnimSpritePal_PurpleGreenUnk, 0x2780 @ [112] ANIM_TAG_PURPLE_GREEN_UNK
+	battle_anim_palette_entry gBattleAnimSpritePal_WaterColumn, 0x2781 @ [113] ANIM_TAG_WATER_COLUMN
+	battle_anim_palette_entry gBattleAnimSpritePal_MudUnk, 0x2782 @ [114] ANIM_TAG_MUD_UNK
+	battle_anim_palette_entry gBattleAnimSpritePal_RainDrops, 0x2783 @ [115] ANIM_TAG_RAIN_DROPS
+	battle_anim_palette_entry gBattleAnimSpritePal_FurySwipes, 0x2784 @ [116] ANIM_TAG_FURY_SWIPES
+	battle_anim_palette_entry gBattleAnimSpritePal_Vine2, 0x2785 @ [117] ANIM_TAG_VINE_2
+	battle_anim_palette_entry gBattleAnimSpritePal_Teeth, 0x2786 @ [118] ANIM_TAG_TEETH
+	battle_anim_palette_entry gBattleAnimSpritePal_Bone2, 0x2787 @ [119] ANIM_TAG_BONE_2
+	battle_anim_palette_entry gBattleAnimSpritePal_WhiteBag, 0x2788 @ [120] ANIM_TAG_WHITE_BAG
+	battle_anim_palette_entry gBattleAnimSpritePal_Unknown, 0x2789 @ [121] ANIM_TAG_UNKNOWN
+	battle_anim_palette_entry gBattleAnimSpritePal_PurpleCoral, 0x278A @ [122] ANIM_TAG_PURPLE_CORAL
+	battle_anim_palette_entry gBattleAnimSpritePal_PurpleCoral, 0x278B @ [123] ANIM_TAG_PURPLE_DROPLET
+	battle_anim_palette_entry gBattleAnimSpritePal_Shock2, 0x278C @ [124] ANIM_TAG_SHOCK_2
+	battle_anim_palette_entry gBattleAnimSpritePal_ClosingEye2, 0x278D @ [125] ANIM_TAG_CLOSING_EYE_2
+	battle_anim_palette_entry gBattleAnimSpritePal_MetalBall, 0x278E @ [126] ANIM_TAG_METAL_BALL
+	battle_anim_palette_entry gBattleAnimSpritePal_MonsterDoll, 0x278F @ [127] ANIM_TAG_MONSTER_DOLL
+	battle_anim_palette_entry gBattleAnimSpritePal_Whirlwind, 0x2790 @ [128] ANIM_TAG_WHIRLWIND
+	battle_anim_palette_entry gBattleAnimSpritePal_Whirlwind, 0x2791 @ [129] ANIM_TAG_WHIRLWIND_2
+	battle_anim_palette_entry gBattleAnimSpritePal_Explosion4, 0x2792 @ [130] ANIM_TAG_EXPLOSION_4
+	battle_anim_palette_entry gBattleAnimSpritePal_Explosion4, 0x2793 @ [131] ANIM_TAG_EXPLOSION_5
+	battle_anim_palette_entry gBattleAnimSpritePal_Tongue, 0x2794 @ [132] ANIM_TAG_TONGUE
+	battle_anim_palette_entry gBattleAnimSpritePal_Smoke, 0x2795 @ [133] ANIM_TAG_SMOKE
+	battle_anim_palette_entry gBattleAnimSpritePal_Smoke, 0x2796 @ [134] ANIM_TAG_SMOKE_2
+	battle_anim_palette_entry gBattleAnimSpritePal_Impact, 0x2797 @ [135] ANIM_TAG_IMPACT
+	battle_anim_palette_entry gBattleAnimSpritePal_CircleImpact, 0x2798 @ [136] ANIM_TAG_CIRCLE_IMPACT
+	battle_anim_palette_entry gBattleAnimSpritePal_Impact, 0x2799 @ [137] ANIM_TAG_SCRATCH
+	battle_anim_palette_entry gBattleAnimSpritePal_Impact, 0x279A @ [138] ANIM_TAG_CUT
+	battle_anim_palette_entry gBattleAnimSpritePal_SharpTeeth, 0x279B @ [139] ANIM_TAG_SHARP_TEETH
+	battle_anim_palette_entry gBattleAnimSpritePal_RainbowRings, 0x279C @ [140] ANIM_TAG_RAINBOW_RINGS
+	battle_anim_palette_entry gBattleAnimSpritePal_IceCrystals, 0x279D @ [141] ANIM_TAG_ICE_CRYSTALS
+	battle_anim_palette_entry gBattleAnimSpritePal_IceCrystals, 0x279E @ [142] ANIM_TAG_ICE_SPIKES
+	battle_anim_palette_entry gBattleAnimSpritePal_HandsAndFeet, 0x279F @ [143] ANIM_TAG_HANDS_AND_FEET
+	battle_anim_palette_entry gBattleAnimSpritePal_MistCloud, 0x27A0 @ [144] ANIM_TAG_MIST_CLOUD
+	battle_anim_palette_entry gBattleAnimSpritePal_SharpTeeth, 0x27A1 @ [145] ANIM_TAG_CLAMP
+	battle_anim_palette_entry gBattleAnimSpritePal_RainDrops, 0x27A2 @ [146] ANIM_TAG_BUBBLE
+	battle_anim_palette_entry gBattleAnimSpritePal_Orbs, 0x27A3 @ [147] ANIM_TAG_ORBS
+	battle_anim_palette_entry gBattleAnimSpritePal_WaterImpact, 0x27A4 @ [148] ANIM_TAG_WATER_IMPACT
+	battle_anim_palette_entry gBattleAnimSpritePal_WaterImpact, 0x27A5 @ [149] ANIM_TAG_WATER_ORB
+	battle_anim_palette_entry gBattleAnimSpritePal_PoisonBubble, 0x27A6 @ [150] ANIM_TAG_POISON_BUBBLE
+	battle_anim_palette_entry gBattleAnimSpritePal_PoisonBubble, 0x27A7 @ [151] ANIM_TAG_TOXIC_BUBBLE
+	battle_anim_palette_entry gBattleAnimSpritePal_Spikes, 0x27A8 @ [152] ANIM_TAG_SPIKES
+	battle_anim_palette_entry gBattleAnimSpritePal_HornHit2, 0x27A9 @ [153] ANIM_TAG_HORN_HIT_2
+	battle_anim_palette_entry gBattleAnimSpritePal_AirWave2, 0x27AA @ [154] ANIM_TAG_AIR_WAVE_2
+	battle_anim_palette_entry gBattleAnimSpritePal_SmallBubbles, 0x27AB @ [155] ANIM_TAG_SMALL_BUBBLES
+	battle_anim_palette_entry gBattleAnimSpritePal_RoundShadow, 0x27AC @ [156] ANIM_TAG_ROUND_SHADOW
+	battle_anim_palette_entry gBattleAnimSpritePal_Sunlight, 0x27AD @ [157] ANIM_TAG_SUNLIGHT
+	battle_anim_palette_entry gBattleAnimSpritePal_Spore, 0x27AE @ [158] ANIM_TAG_SPORE
+	battle_anim_palette_entry gBattleAnimSpritePal_Flower, 0x27AF @ [159] ANIM_TAG_FLOWER
+	battle_anim_palette_entry gBattleAnimSpritePal_RazorLeaf, 0x27B0 @ [160] ANIM_TAG_RAZOR_LEAF
+	battle_anim_palette_entry gBattleAnimSpritePal_Needle, 0x27B1 @ [161] ANIM_TAG_NEEDLE
+	battle_anim_palette_entry gBattleAnimSpritePal_WhirlwindLines, 0x27B2 @ [162] ANIM_TAG_WHIRLWIND_LINES
+	battle_anim_palette_entry gBattleAnimSpritePal_GoldRing, 0x27B3 @ [163] ANIM_TAG_GOLD_RING
+	battle_anim_palette_entry gBattleAnimSpritePal_PurpleRing, 0x27B4 @ [164] ANIM_TAG_PURPLE_RING
+	battle_anim_palette_entry gBattleAnimSpritePal_BlueRing, 0x27B5 @ [165] ANIM_TAG_BLUE_RING
+	battle_anim_palette_entry gBattleAnimSpritePal_GreenLightWall, 0x27B6 @ [166] ANIM_TAG_GREEN_LIGHT_WALL
+	battle_anim_palette_entry gBattleAnimSpritePal_BlueLightWall, 0x27B7 @ [167] ANIM_TAG_BLUE_LIGHT_WALL
+	battle_anim_palette_entry gBattleAnimSpritePal_RedLightWall, 0x27B8 @ [168] ANIM_TAG_RED_LIGHT_WALL
+	battle_anim_palette_entry gBattleAnimSpritePal_GrayLightWall, 0x27B9 @ [169] ANIM_TAG_GRAY_LIGHT_WALL
+	battle_anim_palette_entry gBattleAnimSpritePal_OrangeLightWall, 0x27BA @ [170] ANIM_TAG_ORANGE_LIGHT_WALL
+	battle_anim_palette_entry gBattleAnimSpritePal_BlackBall2, 0x27BB @ [171] ANIM_TAG_BLACK_BALL_2
+	battle_anim_palette_entry gBattleAnimSpritePal_PurpleGasCloud, 0x27BC @ [172] ANIM_TAG_PURPLE_GAS_CLOUD
+	battle_anim_palette_entry gBattleAnimSpritePal_Spark, 0x27BD @ [173] ANIM_TAG_SPARK_H
+	battle_anim_palette_entry gBattleAnimSpritePal_YellowStar, 0x27BE @ [174] ANIM_TAG_YELLOW_STAR
+	battle_anim_palette_entry gBattleAnimSpritePal_LargeFreshEgg, 0x27BF @ [175] ANIM_TAG_LARGE_FRESH_EGG
+	battle_anim_palette_entry gBattleAnimSpritePal_ShadowBall, 0x27C0 @ [176] ANIM_TAG_SHADOW_BALL
+	battle_anim_palette_entry gBattleAnimSpritePal_Lick, 0x27C1 @ [177] ANIM_TAG_LICK
+	battle_anim_palette_entry gBattleAnimSpritePal_VoidLines, 0x27C2 @ [178] ANIM_TAG_VOID_LINES
+	battle_anim_palette_entry gBattleAnimSpritePal_String, 0x27C3 @ [179] ANIM_TAG_STRING
+	battle_anim_palette_entry gBattleAnimSpritePal_String, 0x27C4 @ [180] ANIM_TAG_WEB_THREAD
+	battle_anim_palette_entry gBattleAnimSpritePal_String, 0x27C5 @ [181] ANIM_TAG_SPIDER_WEB
+	battle_anim_palette_entry gBattleAnimSpritePal_Lightbulb, 0x27C6 @ [182] ANIM_TAG_LIGHTBULB
+	battle_anim_palette_entry gBattleAnimSpritePal_Slash, 0x27C7 @ [183] ANIM_TAG_SLASH
+	battle_anim_palette_entry gBattleAnimSpritePal_FocusEnergy, 0x27C8 @ [184] ANIM_TAG_FOCUS_ENERGY
+	battle_anim_palette_entry gBattleAnimSpritePal_SphereToCube, 0x27C9 @ [185] ANIM_TAG_SPHERE_TO_CUBE
+	battle_anim_palette_entry gBattleAnimSpritePal_Tendrils, 0x27CA @ [186] ANIM_TAG_TENDRILS
+	battle_anim_palette_entry gBattleAnimSpritePal_Eye, 0x27CB @ [187] ANIM_TAG_EYE
+	battle_anim_palette_entry gBattleAnimSpritePal_WhiteShadow, 0x27CC @ [188] ANIM_TAG_WHITE_SHADOW
+	battle_anim_palette_entry gBattleAnimSpritePal_TealAlert, 0x27CD @ [189] ANIM_TAG_TEAL_ALERT
+	battle_anim_palette_entry gBattleAnimSpritePal_OpeningEye, 0x27CE @ [190] ANIM_TAG_OPENING_EYE
+	battle_anim_palette_entry gBattleAnimSpritePal_RoundWhiteHalo, 0x27CF @ [191] ANIM_TAG_ROUND_WHITE_HALO
+	battle_anim_palette_entry gBattleAnimSpritePal_FangAttack, 0x27D0 @ [192] ANIM_TAG_FANG_ATTACK
+	battle_anim_palette_entry gBattleAnimSpritePal_PurpleHandOutline, 0x27D1 @ [193] ANIM_TAG_PURPLE_HAND_OUTLINE
+	battle_anim_palette_entry gBattleAnimSpritePal_Moon, 0x27D2 @ [194] ANIM_TAG_MOON
+	battle_anim_palette_entry gBattleAnimSpritePal_GreenSparkle, 0x27D3 @ [195] ANIM_TAG_GREEN_SPARKLE
+	battle_anim_palette_entry gBattleAnimSpritePal_Spiral, 0x27D4 @ [196] ANIM_TAG_SPIRAL
+	battle_anim_palette_entry gBattleAnimSpritePal_SnoreZ, 0x27D5 @ [197] ANIM_TAG_SNORE_Z
+	battle_anim_palette_entry gBattleAnimSpritePal_Explosion, 0x27D6 @ [198] ANIM_TAG_EXPLOSION
+	battle_anim_palette_entry gBattleAnimSpritePal_Nail, 0x27D7 @ [199] ANIM_TAG_NAIL
+	battle_anim_palette_entry gBattleAnimSpritePal_GhostlySpirit, 0x27D8 @ [200] ANIM_TAG_GHOSTLY_SPIRIT
+	battle_anim_palette_entry gBattleAnimSpritePal_WarmRock, 0x27D9 @ [201] ANIM_TAG_WARM_ROCK
+	battle_anim_palette_entry gBattleAnimSpritePal_BreakingEgg, 0x27DA @ [202] ANIM_TAG_BREAKING_EGG
+	battle_anim_palette_entry gBattleAnimSpritePal_ThinRing, 0x27DB @ [203] ANIM_TAG_THIN_RING
+	battle_anim_palette_entry gBattleAnimSpritePal_PunchImpact, 0x27DC @ [204] ANIM_TAG_PUNCH_IMPACT
+	battle_anim_palette_entry gBattleAnimSpritePal_Bell, 0x27DD @ [205] ANIM_TAG_BELL
+	battle_anim_palette_entry gBattleAnimSpritePal_MusicNotes2, 0x27DE @ [206] ANIM_TAG_MUSIC_NOTES_2
+	battle_anim_palette_entry gBattleAnimSpritePal_SpeedDust, 0x27DF @ [207] ANIM_TAG_SPEED_DUST
+	battle_anim_palette_entry gBattleAnimSpritePal_BlueLightWall, 0x27E0 @ [208] ANIM_TAG_TORN_METAL
+	battle_anim_palette_entry gBattleAnimSpritePal_ThoughtBubble, 0x27E1 @ [209] ANIM_TAG_THOUGHT_BUBBLE
+	battle_anim_palette_entry gBattleAnimSpritePal_MagentaHeart, 0x27E2 @ [210] ANIM_TAG_MAGENTA_HEART
+	battle_anim_palette_entry gBattleAnimSpritePal_ElectricOrbs, 0x27E3 @ [211] ANIM_TAG_ELECTRIC_ORBS
+	battle_anim_palette_entry gBattleAnimSpritePal_ElectricOrbs, 0x27E4 @ [212] ANIM_TAG_CIRCLE_OF_LIGHT
+	battle_anim_palette_entry gBattleAnimSpritePal_ElectricOrbs, 0x27E5 @ [213] ANIM_TAG_ELECTRICITY
+	battle_anim_palette_entry gBattleAnimSpritePal_Finger, 0x27E6 @ [214] ANIM_TAG_FINGER_2
+	battle_anim_palette_entry gBattleAnimSpritePal_MovementWaves, 0x27E7 @ [215] ANIM_TAG_MOVEMENT_WAVES
+	battle_anim_palette_entry gBattleAnimSpritePal_RedHeart, 0x27E8 @ [216] ANIM_TAG_RED_HEART
+	battle_anim_palette_entry gBattleAnimSpritePal_RedOrb, 0x27E9 @ [217] ANIM_TAG_RED_ORB
+	battle_anim_palette_entry gBattleAnimSpritePal_EyeSparkle, 0x27EA @ [218] ANIM_TAG_EYE_SPARKLE
+	battle_anim_palette_entry gBattleAnimSpritePal_PinkHeart, 0x27EB @ [219] ANIM_TAG_PINK_HEART
+	battle_anim_palette_entry gBattleAnimSpritePal_Angel, 0x27EC @ [220] ANIM_TAG_ANGEL
+	battle_anim_palette_entry gBattleAnimSpritePal_Devil, 0x27ED @ [221] ANIM_TAG_DEVIL
+	battle_anim_palette_entry gBattleAnimSpritePal_Swipe, 0x27EE @ [222] ANIM_TAG_SWIPE
+	battle_anim_palette_entry gBattleAnimSpritePal_Roots, 0x27EF @ [223] ANIM_TAG_ROOTS
+	battle_anim_palette_entry gBattleAnimSpritePal_ItemBag, 0x27F0 @ [224] ANIM_TAG_ITEM_BAG
+	battle_anim_palette_entry gBattleAnimSpritePal_JaggedMusicNote, 0x27F1 @ [225] ANIM_TAG_JAGGED_MUSIC_NOTE
+	battle_anim_palette_entry gBattleAnimSpritePal_Pokeball, 0x27F2 @ [226] ANIM_TAG_POKEBALL
+	battle_anim_palette_entry gBattleAnimSpritePal_Pokeball, 0x27F3 @ [227] ANIM_TAG_SPOTLIGHT
+	battle_anim_palette_entry gBattleAnimSpritePal_LetterZ, 0x27F4 @ [228] ANIM_TAG_LETTER_Z
+	battle_anim_palette_entry gBattleAnimSpritePal_RapidSpin, 0x27F5 @ [229] ANIM_TAG_RAPID_SPIN
+	battle_anim_palette_entry gBattleAnimSpritePal_TriAttackTriangle, 0x27F6 @ [230] ANIM_TAG_TRI_ATTACK_TRIANGLE
+	battle_anim_palette_entry gBattleAnimSpritePal_WispOrb, 0x27F7 @ [231] ANIM_TAG_WISP_ORB
+	battle_anim_palette_entry gBattleAnimSpritePal_WispOrb, 0x27F8 @ [232] ANIM_TAG_WISP_FIRE
+	battle_anim_palette_entry gBattleAnimSpritePal_GoldStars, 0x27F9 @ [233] ANIM_TAG_GOLD_STARS
+	battle_anim_palette_entry gBattleAnimSpritePal_EclipsingOrb, 0x27FA @ [234] ANIM_TAG_ECLIPSING_ORB
+	battle_anim_palette_entry gBattleAnimSpritePal_GrayOrb, 0x27FB @ [235] ANIM_TAG_GRAY_ORB
+	battle_anim_palette_entry gBattleAnimSpritePal_BlueOrb, 0x27FC @ [236] ANIM_TAG_BLUE_ORB
+	battle_anim_palette_entry gBattleAnimSpritePal_RedOrb2, 0x27FD @ [237] ANIM_TAG_RED_ORB_2
+	battle_anim_palette_entry gBattleAnimSpritePal_PinkPetal, 0x27FE @ [238] ANIM_TAG_PINK_PETAL
+	battle_anim_palette_entry gBattleAnimSpritePal_PainSplit, 0x27FF @ [239] ANIM_TAG_PAIN_SPLIT
+	battle_anim_palette_entry gBattleAnimSpritePal_Confetti, 0x2800 @ [240] ANIM_TAG_CONFETTI
+	battle_anim_palette_entry gBattleAnimSpritePal_GreenStar, 0x2801 @ [241] ANIM_TAG_GREEN_STAR
+	battle_anim_palette_entry gBattleAnimSpritePal_PinkCloud, 0x2802 @ [242] ANIM_TAG_PINK_CLOUD
+	battle_anim_palette_entry gBattleAnimSpritePal_SweatDrop, 0x2803 @ [243] ANIM_TAG_SWEAT_DROP
+	battle_anim_palette_entry gBattleAnimSpritePal_GuardRing, 0x2804 @ [244] ANIM_TAG_GUARD_RING
+	battle_anim_palette_entry gBattleAnimSpritePal_PurpleScratch, 0x2805 @ [245] ANIM_TAG_PURPLE_SCRATCH
+	battle_anim_palette_entry gBattleAnimSpritePal_PurpleScratch, 0x2806 @ [246] ANIM_TAG_PURPLE_SWIPE
+	battle_anim_palette_entry gBattleAnimSpritePal_Finger, 0x2807 @ [247] ANIM_TAG_TAG_HAND
+	battle_anim_palette_entry gBattleAnimSpritePal_SmallRedEye, 0x2808 @ [248] ANIM_TAG_SMALL_RED_EYE
+	battle_anim_palette_entry gBattleAnimSpritePal_HollowOrb, 0x2809 @ [249] ANIM_TAG_HOLLOW_ORB
+	battle_anim_palette_entry gBattleAnimSpritePal_HollowOrb, 0x280A @ [250] ANIM_TAG_X_SIGN
+	battle_anim_palette_entry gBattleAnimSpritePal_BluegreenOrb, 0x280B @ [251] ANIM_TAG_BLUEGREEN_ORB
+	battle_anim_palette_entry gBattleAnimSpritePal_PawPrint, 0x280C @ [252] ANIM_TAG_PAW_PRINT
+	battle_anim_palette_entry gBattleAnimSpritePal_PurpleFlame, 0x280D @ [253] ANIM_TAG_PURPLE_FLAME
+	battle_anim_palette_entry gBattleAnimSpritePal_RedBall, 0x280E @ [254] ANIM_TAG_RED_BALL
+	battle_anim_palette_entry gBattleAnimSpritePal_SmellingsaltEffect, 0x280F @ [255] ANIM_TAG_SMELLINGSALT_EFFECT
+	battle_anim_palette_entry gBattleAnimSpritePal_Meteor, 0x2810 @ [256] ANIM_TAG_METEOR
+	battle_anim_palette_entry gBattleAnimSpritePal_FlatRock, 0x2811 @ [257] ANIM_TAG_FLAT_ROCK
+	battle_anim_palette_entry gBattleAnimSpritePal_MagnifyingGlass, 0x2812 @ [258] ANIM_TAG_MAGNIFYING_GLASS
+	battle_anim_palette_entry gBattleAnimSpritePal_BrownOrb, 0x2813 @ [259] ANIM_TAG_BROWN_ORB
+	battle_anim_palette_entry gBattleAnimSpritePal_MetalSoundWaves, 0x2814 @ [260] ANIM_TAG_METAL_SOUND_WAVES
+	battle_anim_palette_entry gBattleAnimSpritePal_FlyingDirt, 0x2815 @ [261] ANIM_TAG_FLYING_DIRT
+	battle_anim_palette_entry gBattleAnimSpritePal_IcicleSpear, 0x2816 @ [262] ANIM_TAG_ICICLE_SPEAR
+	battle_anim_palette_entry gBattleAnimSpritePal_Hail, 0x2817 @ [263] ANIM_TAG_HAIL
+	battle_anim_palette_entry gBattleAnimSpritePal_GlowyRedOrb, 0x2818 @ [264] ANIM_TAG_GLOWY_RED_ORB
+	battle_anim_palette_entry gBattleAnimSpritePal_GlowyGreenOrb, 0x2819 @ [265] ANIM_TAG_GLOWY_GREEN_ORB
+	battle_anim_palette_entry gBattleAnimSpritePal_GreenSpike, 0x281A @ [266] ANIM_TAG_GREEN_SPIKE
+	battle_anim_palette_entry gBattleAnimSpritePal_WhiteCircleOfLight, 0x281B @ [267] ANIM_TAG_WHITE_CIRCLE_OF_LIGHT
+	battle_anim_palette_entry gBattleAnimSpritePal_GlowyBlueOrb, 0x281C @ [268] ANIM_TAG_GLOWY_BLUE_ORB
+	battle_anim_palette_entry gBattleAnimSpritePal_Pokeblock, 0x281D @ [269] ANIM_TAG_POKEBLOCK
+	battle_anim_palette_entry gBattleAnimSpritePal_WhiteFeather, 0x281E @ [270] ANIM_TAG_WHITE_FEATHER
+	battle_anim_palette_entry gBattleAnimSpritePal_Sparkle6, 0x281F @ [271] ANIM_TAG_SPARKLE_6
+	battle_anim_palette_entry gBattleAnimSpritePal_Splash, 0x2820 @ [272] ANIM_TAG_SPLASH
+	battle_anim_palette_entry gBattleAnimSpritePal_Splash, 0x2821 @ [273] ANIM_TAG_SWEAT_BEAD
+	battle_anim_palette_entry gBattleAnimSpritePal_Gem1, 0x2822 @ [274] ANIM_TAG_GEM_1
+	battle_anim_palette_entry gBattleAnimSpritePal_Gem1, 0x2823 @ [275] ANIM_TAG_GEM_2
+	battle_anim_palette_entry gBattleAnimSpritePal_Gem1, 0x2824 @ [276] ANIM_TAG_GEM_3
+	battle_anim_palette_entry gBattleAnimSpritePal_SlamHit2, 0x2825 @ [277] ANIM_TAG_SLAM_HIT_2
+	battle_anim_palette_entry gBattleAnimSpritePal_Recycle, 0x2826 @ [278] ANIM_TAG_RECYCLE
+	battle_anim_palette_entry gBattleAnimSpritePal_RedParticles, 0x2827 @ [279] ANIM_TAG_RED_PARTICLES
+	battle_anim_palette_entry gBattleAnimSpritePal_Protect, 0x2828 @ [280] ANIM_TAG_PROTECT
+	battle_anim_palette_entry gBattleAnimSpritePal_DirtMound, 0x2829 @ [281] ANIM_TAG_DIRT_MOUND
+	battle_anim_palette_entry gBattleAnimSpritePal_Shock3, 0x282A @ [282] ANIM_TAG_SHOCK_3
+	battle_anim_palette_entry gBattleAnimSpritePal_WeatherBall, 0x282B @ [283] ANIM_TAG_WEATHER_BALL
+	battle_anim_palette_entry gBattleAnimSpritePal_Bird, 0x282C @ [284] ANIM_TAG_BIRD
+	battle_anim_palette_entry gBattleAnimSpritePal_CrossImpact, 0x282D @ [285] ANIM_TAG_CROSS_IMPACT
+	battle_anim_palette_entry gBattleAnimSpritePal_Slash2, 0x282E @ [286] ANIM_TAG_SLASH_2
+	battle_anim_palette_entry gBattleAnimSpritePal_WhipHit, 0x282F @ [287] ANIM_TAG_WHIP_HIT
+	battle_anim_palette_entry gBattleAnimSpritePal_BlueRing2, 0x2830 @ [288] ANIM_TAG_BLUE_RING_2
+	.purgem battle_anim_palette_entry
+
+	@ Compatibility aliases into gBattleAnimPaletteTable.
 	.globl gIntroData_084FDD28
-gIntroData_084FDD28: @ 0x084FDD28
-	@ analyzed canonical ROM range 0x084FDD28-0x084FDF97
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x270
-	.2byte 0xAE9C, 0x08C0, 0x274A, 0x0000, 0xAF24, 0x08C0, 0x274B, 0x0000
-	.2byte 0xAF68, 0x08C0, 0x274C, 0x0000, 0xB034, 0x08C0, 0x274D, 0x0000
-	.2byte 0xB424, 0x08C0, 0x274E, 0x0000, 0xB608, 0x08C0, 0x274F, 0x0000
-	.2byte 0x3298, 0x08C2, 0x2750, 0x0000, 0xB7D8, 0x08C0, 0x2751, 0x0000
-	.2byte 0xB844, 0x08C0, 0x2752, 0x0000, 0xEA6C, 0x08D8, 0x2753, 0x0000
-	.2byte 0xEA8C, 0x08D8, 0x2754, 0x0000, 0xB7D8, 0x08C0, 0x2755, 0x0000
-	.2byte 0xB8EC, 0x08C0, 0x2756, 0x0000, 0xB8EC, 0x08C0, 0x2757, 0x0000
-	.2byte 0xBC10, 0x08C0, 0x2758, 0x0000, 0xBD44, 0x08C0, 0x2759, 0x0000
-	.2byte 0xB34C, 0x08C1, 0x275A, 0x0000, 0xBFE0, 0x08C0, 0x275B, 0x0000
-	.2byte 0x4F30, 0x08C1, 0x275C, 0x0000, 0x4F30, 0x08C1, 0x275D, 0x0000
-	.2byte 0xC19C, 0x08C0, 0x275E, 0x0000, 0xC19C, 0x08C0, 0x275F, 0x0000
-	.2byte 0xC958, 0x08C0, 0x2760, 0x0000, 0xCA00, 0x08C0, 0x2761, 0x0000
-	.2byte 0xCBBC, 0x08C0, 0x2762, 0x0000, 0xCBD0, 0x08C0, 0x2763, 0x0000
-	.2byte 0xCBF8, 0x08C0, 0x2764, 0x0000, 0xCC20, 0x08C0, 0x2765, 0x0000
-	.2byte 0xCC38, 0x08C0, 0x2766, 0x0000, 0x4DF8, 0x08C2, 0x2767, 0x0000
-	.2byte 0xCC60, 0x08C0, 0x2768, 0x0000, 0xCC7C, 0x08C0, 0x2769, 0x0000
-	.2byte 0xCCA4, 0x08C0, 0x276A, 0x0000, 0xB6A0, 0x08C0, 0x276B, 0x0000
-	.2byte 0xCCC8, 0x08C0, 0x276C, 0x0000, 0xCCE4, 0x08C0, 0x276D, 0x0000
-	.2byte 0xCD0C, 0x08C0, 0x276E, 0x0000, 0xCD4C, 0x08C0, 0x276F, 0x0000
-	.2byte 0xCD74, 0x08C0, 0x2770, 0x0000, 0xCD90, 0x08C0, 0x2771, 0x0000
-	.2byte 0xCD0C, 0x08C0, 0x2772, 0x0000, 0x7EB0, 0x08C2, 0x2773, 0x0000
-	.2byte 0xCDB8, 0x08C0, 0x2774, 0x0000, 0xCDD4, 0x08C0, 0x2775, 0x0000
-	.2byte 0xCDD4, 0x08C0, 0x2776, 0x0000, 0xCDFC, 0x08C0, 0x2777, 0x0000
-	.2byte 0xF154, 0x08C0, 0x2778, 0x0000, 0xF700, 0x08C0, 0x2779, 0x0000
-	.2byte 0xF700, 0x08C0, 0x277A, 0x0000, 0xFBC4, 0x08C0, 0x277B, 0x0000
-	.2byte 0xFBC4, 0x08C0, 0x277C, 0x0000, 0xFF98, 0x08C0, 0x277D, 0x0000
-	.2byte 0xFF98, 0x08C0, 0x277E, 0x0000, 0x03E8, 0x08C1, 0x277F, 0x0000
-	.2byte 0x0734, 0x08C1, 0x2780, 0x0000, 0x09C8, 0x08C1, 0x2781, 0x0000
-	.2byte 0x0AE4, 0x08C1, 0x2782, 0x0000, 0x28B4, 0x08C0, 0x2783, 0x0000
-	.2byte 0x313C, 0x08C1, 0x2784, 0x0000, 0x33A0, 0x08C1, 0x2785, 0x0000
-	.2byte 0x3554, 0x08C1, 0x2786, 0x0000, 0x3800, 0x08C1, 0x2787, 0x0000
-	.2byte 0x391C, 0x08C1, 0x2788, 0x0000, 0x3970, 0x08C1, 0x2789, 0x0000
-	.2byte 0x3A90, 0x08C1, 0x278A, 0x0000, 0x3A90, 0x08C1, 0x278B, 0x0000
-	.2byte 0x3E80, 0x08C1, 0x278C, 0x0000, 0x3F94, 0x08C1, 0x278D, 0x0000
-	.2byte 0x4024, 0x08C1, 0x278E, 0x0000, 0x41E4, 0x08C1, 0x278F, 0x0000
-	.2byte 0x4474, 0x08C1, 0x2790, 0x0000, 0x4474, 0x08C1, 0x2791, 0x0000
-	.2byte 0x48C8, 0x08C1, 0x2792, 0x0000, 0x48C8, 0x08C1, 0x2793, 0x0000
-	.2byte 0x4B60, 0x08C1, 0x2794, 0x0000, 0x4BFC, 0x08C1, 0x2795, 0x0000
-	.2byte 0x4BFC, 0x08C1, 0x2796, 0x0000, 0xA4C0, 0x08C1, 0x2797, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x084FDF98: battle_anim_status_effects.s: sub_080A9538
+	.set gIntroData_084FDD28, gBattleAnimPaletteTable + 0x1D0
 	.globl gBattleAnimStatusEffectsData_084FDF98
-gBattleAnimStatusEffectsData_084FDF98: @ 0x084FDF98
-	@ analyzed canonical ROM range 0x084FDF98-0x084FE29F
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x308
-	.2byte 0xA5AC, 0x08C1, 0x2798, 0x0000, 0xA4C0, 0x08C1, 0x2799, 0x0000
-	.2byte 0xA4C0, 0x08C1, 0x279A, 0x0000, 0xA9C8, 0x08C1, 0x279B, 0x0000
-	.2byte 0xAD54, 0x08C1, 0x279C, 0x0000, 0xAE7C, 0x08C1, 0x279D, 0x0000
-	.2byte 0xAE7C, 0x08C1, 0x279E, 0x0000, 0xCE80, 0x08C2, 0x279F, 0x0000
-	.2byte 0xBD24, 0x08C1, 0x27A0, 0x0000, 0xA9C8, 0x08C1, 0x27A1, 0x0000
-	.2byte 0x28B4, 0x08C0, 0x27A2, 0x0000, 0xB0C8, 0x08C1, 0x27A3, 0x0000
-	.2byte 0xB2A4, 0x08C1, 0x27A4, 0x0000, 0xB2A4, 0x08C1, 0x27A5, 0x0000
-	.2byte 0xB444, 0x08C1, 0x27A6, 0x0000, 0xB444, 0x08C1, 0x27A7, 0x0000
-	.2byte 0x341C, 0x08C0, 0x27A8, 0x0000, 0xB5C4, 0x08C1, 0x27A9, 0x0000
-	.2byte 0xB688, 0x08C1, 0x27AA, 0x0000, 0xB770, 0x08C1, 0x27AB, 0x0000
-	.2byte 0xB9A8, 0x08C1, 0x27AC, 0x0000, 0xBA34, 0x08C1, 0x27AD, 0x0000
-	.2byte 0xBB14, 0x08C1, 0x27AE, 0x0000, 0xBBB4, 0x08C1, 0x27AF, 0x0000
-	.2byte 0xBC84, 0x08C1, 0x27B0, 0x0000, 0x29AC, 0x08C0, 0x27B1, 0x0000
-	.2byte 0xBF0C, 0x08C1, 0x27B2, 0x0000, 0xBF8C, 0x08C1, 0x27B3, 0x0000
-	.2byte 0xBFBC, 0x08C1, 0x27B4, 0x0000, 0xBFD4, 0x08C1, 0x27B5, 0x0000
-	.2byte 0xC2F8, 0x08C1, 0x27B6, 0x0000, 0xC318, 0x08C1, 0x27B7, 0x0000
-	.2byte 0xC338, 0x08C1, 0x27B8, 0x0000, 0xC358, 0x08C1, 0x27B9, 0x0000
-	.2byte 0xC378, 0x08C1, 0x27BA, 0x0000, 0xC3E4, 0x08C1, 0x27BB, 0x0000
-	.2byte 0xC40C, 0x08C1, 0x27BC, 0x0000, 0xC7DC, 0x08C1, 0x27BD, 0x0000
-	.2byte 0xD6E4, 0x08C1, 0x27BE, 0x0000, 0xD770, 0x08C1, 0x27BF, 0x0000
-	.2byte 0xD8F0, 0x08C1, 0x27C0, 0x0000, 0xD9DC, 0x08C1, 0x27C1, 0x0000
-	.2byte 0xDB5C, 0x08C1, 0x27C2, 0x0000, 0xDB84, 0x08C1, 0x27C3, 0x0000
-	.2byte 0xDB84, 0x08C1, 0x27C4, 0x0000, 0xDB84, 0x08C1, 0x27C5, 0x0000
-	.2byte 0xE0D4, 0x08C1, 0x27C6, 0x0000, 0xE374, 0x08C1, 0x27C7, 0x0000
-	.2byte 0xE4F0, 0x08C1, 0x27C8, 0x0000, 0xE92C, 0x08C1, 0x27C9, 0x0000
-	.2byte 0xF1EC, 0x08C1, 0x27CA, 0x0000, 0xEE00, 0x08C1, 0x27CB, 0x0000
-	.2byte 0x6788, 0x08D9, 0x27CC, 0x0000, 0x02C0, 0x08C2, 0x27CD, 0x0000
-	.2byte 0xFF84, 0x08C1, 0x27CE, 0x0000, 0x0214, 0x08C2, 0x27CF, 0x0000
-	.2byte 0x0560, 0x08C2, 0x27D0, 0x0000, 0x06E4, 0x08C2, 0x27D1, 0x0000
-	.2byte 0x1028, 0x08C2, 0x27D2, 0x0000, 0x1108, 0x08C2, 0x27D3, 0x0000
-	.2byte 0x0CD8, 0x08C2, 0x27D4, 0x0000, 0x1298, 0x08C2, 0x27D5, 0x0000
-	.2byte 0x16B0, 0x08C2, 0x27D6, 0x0000, 0x17A0, 0x08C2, 0x27D7, 0x0000
-	.2byte 0x18FC, 0x08C2, 0x27D8, 0x0000, 0x1F88, 0x08C2, 0x27D9, 0x0000
-	.2byte 0x22B4, 0x08C2, 0x27DA, 0x0000, 0x2484, 0x08C2, 0x27DB, 0x0000
-	.2byte 0x2124, 0x08C2, 0x27DC, 0x0000, 0x297C, 0x08C2, 0x27DD, 0x0000
-	.2byte 0x26B4, 0x08C2, 0x27DE, 0x0000, 0x2A6C, 0x08C2, 0x27DF, 0x0000
-	.2byte 0xC318, 0x08C1, 0x27E0, 0x0000, 0x3188, 0x08C2, 0x27E1, 0x0000
-	.2byte 0x3344, 0x08C2, 0x27E2, 0x0000, 0x4610, 0x08C2, 0x27E3, 0x0000
-	.2byte 0x4610, 0x08C2, 0x27E4, 0x0000, 0x4610, 0x08C2, 0x27E5, 0x0000
-	.2byte 0x3298, 0x08C2, 0x27E6, 0x0000, 0x4A50, 0x08C2, 0x27E7, 0x0000
-	.2byte 0x3364, 0x08C2, 0x27E8, 0x0000, 0x4100, 0x08C2, 0x27E9, 0x0000
-	.2byte 0x4CCC, 0x08C2, 0x27EA, 0x0000, 0x3324, 0x08C2, 0x27EB, 0x0000
-	.2byte 0x4E78, 0x08C2, 0x27EC, 0x0000, 0x4FCC, 0x08C2, 0x27ED, 0x0000
-	.2byte 0x553C, 0x08C2, 0x27EE, 0x0000, 0x5564, 0x08C2, 0x27EF, 0x0000
-	.2byte 0x5818, 0x08C2, 0x27F0, 0x0000, 0x798C, 0x08C2, 0x27F1, 0x0000
-	.2byte 0x7B88, 0x08C2, 0x27F2, 0x0000, 0x7B88, 0x08C2, 0x27F3, 0x0000
-	.2byte 0x5BA0, 0x08C2, 0x27F4, 0x0000, 0x7D68, 0x08C2, 0x27F5, 0x0000
-	.2byte 0x5934, 0x08C2, 0x27F6, 0x0000, 0x8410, 0x08C2, 0x27F7, 0x0000
-	.2byte 0x8410, 0x08C2, 0x27F8, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x084FE2A0: battle_anim_special.s: sub_08172CD4
+	.set gBattleAnimStatusEffectsData_084FDF98, gBattleAnimPaletteTable + 0x440
 	.globl gBattleAnimSpecialData_084FE2A0
-gBattleAnimSpecialData_084FE2A0: @ 0x084FE2A0
-	@ analyzed canonical ROM range 0x084FE2A0-0x084FE3BF
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x120
-	.byte 0x8C, 0x86, 0xC2, 0x08, 0xF9, 0x27, 0x00, 0x00, 0x74, 0x88, 0xC2, 0x08, 0xFA, 0x27, 0x00, 0x00
-	.byte 0x74, 0x89, 0xC2, 0x08, 0xFB, 0x27, 0x00, 0x00, 0x90, 0x89, 0xC2, 0x08, 0xFC, 0x27, 0x00, 0x00
-	.byte 0xAC, 0x89, 0xC2, 0x08, 0xFD, 0x27, 0x00, 0x00, 0x00, 0x89, 0xC2, 0x08, 0xFE, 0x27, 0x00, 0x00
-	.byte 0x28, 0xCC, 0xC2, 0x08, 0xFF, 0x27, 0x00, 0x00, 0x38, 0xCF, 0xC2, 0x08, 0x00, 0x28, 0x00, 0x00
-	.byte 0xB0, 0xD4, 0xC2, 0x08, 0x01, 0x28, 0x00, 0x00, 0x50, 0xD7, 0xC2, 0x08, 0x02, 0x28, 0x00, 0x00
-	.byte 0x9C, 0xD7, 0xC2, 0x08, 0x03, 0x28, 0x00, 0x00, 0xD4, 0xE6, 0xC2, 0x08, 0x04, 0x28, 0x00, 0x00
-	.byte 0x84, 0xDF, 0xC2, 0x08, 0x05, 0x28, 0x00, 0x00, 0x84, 0xDF, 0xC2, 0x08, 0x06, 0x28, 0x00, 0x00
-	.byte 0x98, 0x32, 0xC2, 0x08, 0x07, 0x28, 0x00, 0x00, 0x60, 0xEC, 0xC2, 0x08, 0x08, 0x28, 0x00, 0x00
-	.byte 0xC8, 0xEC, 0xC2, 0x08, 0x09, 0x28, 0x00, 0x00, 0xC8, 0xEC, 0xC2, 0x08, 0x0A, 0x28, 0x00, 0x00
-	.byte 0x40, 0xEF, 0xC2, 0x08, 0x0B, 0x28, 0x00, 0x00, 0x70, 0xF0, 0xC2, 0x08, 0x0C, 0x28, 0x00, 0x00
-	.byte 0x70, 0xF2, 0xC2, 0x08, 0x0D, 0x28, 0x00, 0x00, 0xD0, 0xF3, 0xC2, 0x08, 0x0E, 0x28, 0x00, 0x00
-	.byte 0x70, 0xF4, 0xC2, 0x08, 0x0F, 0x28, 0x00, 0x00, 0x20, 0xF9, 0xC2, 0x08, 0x10, 0x28, 0x00, 0x00
-	.byte 0x64, 0xFA, 0xC2, 0x08, 0x11, 0x28, 0x00, 0x00, 0x6C, 0xF5, 0xC2, 0x08, 0x12, 0x28, 0x00, 0x00
-	.byte 0xC4, 0xB2, 0xC1, 0x08, 0x13, 0x28, 0x00, 0x00, 0x80, 0xDC, 0xD8, 0x08, 0x14, 0x28, 0x00, 0x00
-	.byte 0x9C, 0xDA, 0xD8, 0x08, 0x15, 0x28, 0x00, 0x00, 0xF8, 0xE8, 0xD8, 0x08, 0x16, 0x28, 0x00, 0x00
-	.byte 0x38, 0x3B, 0xD9, 0x08, 0x17, 0x28, 0x00, 0x00, 0x3C, 0xEA, 0xD8, 0x08, 0x18, 0x28, 0x00, 0x00
-	.byte 0x54, 0xEA, 0xD8, 0x08, 0x19, 0x28, 0x00, 0x00, 0x90, 0x3B, 0xD9, 0x08, 0x1A, 0x28, 0x00, 0x00
-	.byte 0xA8, 0x3B, 0xD9, 0x08, 0x1B, 0x28, 0x00, 0x00, 0xC0, 0x3B, 0xD9, 0x08, 0x1C, 0x28, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x084FE3C0: battle_anim_special.s: AnimTask_LoadPokeblockGfx
+	.set gBattleAnimSpecialData_084FE2A0, gBattleAnimPaletteTable + 0x748
 	.globl gBattleAnimSpecialData_084FE3C0
-gBattleAnimSpecialData_084FE3C0: @ 0x084FE3C0
-	@ analyzed canonical ROM range 0x084FE3C0-0x084FE45F
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xA0
-	.2byte 0xEF34, 0x08D8, 0x281D, 0x0000, 0xA604, 0x08DB, 0x281E, 0x0000
-	.2byte 0xA748, 0x08DB, 0x281F, 0x0000, 0xEE94, 0x08D8, 0x2820, 0x0000
-	.2byte 0xEE94, 0x08D8, 0x2821, 0x0000, 0xF3A0, 0x08D8, 0x2822, 0x0000
-	.2byte 0xF3A0, 0x08D8, 0x2823, 0x0000, 0xF3A0, 0x08D8, 0x2824, 0x0000
-	.2byte 0x2E78, 0x08D9, 0x2825, 0x0000, 0x3DE4, 0x08D9, 0x2826, 0x0000
-	.2byte 0x3E4C, 0x08D9, 0x2827, 0x0000, 0xFB30, 0x08D8, 0x2828, 0x0000
-	.2byte 0x3FF0, 0x08D9, 0x2829, 0x0000, 0xA3F4, 0x08DB, 0x282A, 0x0000
-	.2byte 0x340C, 0x08D9, 0x282B, 0x0000, 0x4988, 0x08D9, 0x282C, 0x0000
-	.2byte 0x4A44, 0x08D9, 0x282D, 0x0000, 0x664C, 0x08D9, 0x282E, 0x0000
-	.2byte 0x1000, 0x08D9, 0x282F, 0x0000, 0xBFA4, 0x08C1, 0x2830, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x084FE460: battle_anim.s: LoadMoveBg
+	.set gBattleAnimSpecialData_084FE3C0, gBattleAnimPaletteTable + 0x868
+
+	@ Battle animation background assets (semantic absolute aliases).
+	.globl gBattleAnimBgImage_Dark
+	.set gBattleAnimBgImage_Dark, 0x08C1C88C
+	.globl gBattleAnimBgPalette_Dark
+	.set gBattleAnimBgPalette_Dark, 0x08C1CE84
+	.globl gBattleAnimBgTilemap_Dark
+	.set gBattleAnimBgTilemap_Dark, 0x08C1CEA4
+	.globl gBattleAnimBgImage_Psychic
+	.set gBattleAnimBgImage_Psychic, 0x08C1E954
+	.globl gBattleAnimBgPalette_Psychic
+	.set gBattleAnimBgPalette_Psychic, 0x08C1EB24
+	.globl gBattleAnimBgTilemap_Psychic
+	.set gBattleAnimBgTilemap_Psychic, 0x08C1EB48
+	.globl gBattleAnimBgPalette_Impact
+	.set gBattleAnimBgPalette_Impact, 0x08C25C68
+	.globl gBattleAnimBgImage_Impact
+	.set gBattleAnimBgImage_Impact, 0x08C25C90
+	.globl gBattleAnimBgTilemap_ImpactOpponent
+	.set gBattleAnimBgTilemap_ImpactOpponent, 0x08C269FC
+	.globl gBattleAnimBgTilemap_ImpactPlayer
+	.set gBattleAnimBgTilemap_ImpactPlayer, 0x08C26EF8
+	.globl gBattleAnimBgTilemap_ImpactContests
+	.set gBattleAnimBgTilemap_ImpactContests, 0x08C273C8
+	.globl gBattleAnimBgImage_Drill
+	.set gBattleAnimBgImage_Drill, 0x08C289C8
+	.globl gBattleAnimBgPalette_Drill
+	.set gBattleAnimBgPalette_Drill, 0x08C28B70
+	.globl gBattleAnimBgPalette_Sky
+	.set gBattleAnimBgPalette_Sky, 0x08C28B98
+	.globl gBattleAnimBgTilemap_Drill
+	.set gBattleAnimBgTilemap_Drill, 0x08C28BC0
+	.globl gBattleAnimBgTilemap_DrillContests
+	.set gBattleAnimBgTilemap_DrillContests, 0x08C28D50
+	.globl gBattleAnimBgImage_Aurora
+	.set gBattleAnimBgImage_Aurora, 0x08C28EDC
+	.globl gBattleAnimBgPalette_Aurora
+	.set gBattleAnimBgPalette_Aurora, 0x08C29904
+	.globl gBattleAnimBgTilemap_Aurora
+	.set gBattleAnimBgTilemap_Aurora, 0x08C29924
+	.globl gBattleAnimBgTilemap_HighspeedOpponent
+	.set gBattleAnimBgTilemap_HighspeedOpponent, 0x08C29B28
+	.globl gBattleAnimBgPalette_Highspeed
+	.set gBattleAnimBgPalette_Highspeed, 0x08C29E20
+	.globl gBattleAnimBgPalette_Bug
+	.set gBattleAnimBgPalette_Bug, 0x08C29E40
+	.globl gBattleAnimBgImage_Highspeed
+	.set gBattleAnimBgImage_Highspeed, 0x08C29E60
+	.globl gBattleAnimBgTilemap_HighspeedPlayer
+	.set gBattleAnimBgTilemap_HighspeedPlayer, 0x08C2A3E0
+	.globl gBattleAnimBgTilemap_GuillotineOpponent
+	.set gBattleAnimBgTilemap_GuillotineOpponent, 0x08C2A8AC
+	.globl gBattleAnimBgTilemap_GuillotinePlayer
+	.set gBattleAnimBgTilemap_GuillotinePlayer, 0x08C2AB74
+	.globl gBattleAnimBgTilemap_GuillotineContests
+	.set gBattleAnimBgTilemap_GuillotineContests, 0x08C2AE70
+	.globl gBattleAnimBgImage_Guillotine
+	.set gBattleAnimBgImage_Guillotine, 0x08C2B100
+	.globl gBattleAnimBgPalette_Guillotine
+	.set gBattleAnimBgPalette_Guillotine, 0x08C2BE68
+	.globl gBattleAnimBgImage_Thunder
+	.set gBattleAnimBgImage_Thunder, 0x08C2BE88
+	.globl gBattleAnimBgPalette_Thunder
+	.set gBattleAnimBgPalette_Thunder, 0x08C2C824
+	.globl gBattleAnimBgTilemap_Thunder
+	.set gBattleAnimBgTilemap_Thunder, 0x08C2C84C
+	.globl gBattleAnimBgImage_Ice
+	.set gBattleAnimBgImage_Ice, 0x08D8DC98
+	.globl gBattleAnimBgPalette_Ice
+	.set gBattleAnimBgPalette_Ice, 0x08D8E608
+	.globl gBattleAnimBgTilemap_Ice
+	.set gBattleAnimBgTilemap_Ice, 0x08D8E62C
+	.globl gBattleAnimBgImage_InAir
+	.set gBattleAnimBgImage_InAir, 0x08D8F3C8
+	.globl gBattleAnimBgPalette_InAir
+	.set gBattleAnimBgPalette_InAir, 0x08D8F524
+	.globl gBattleAnimBgTilemap_InAir
+	.set gBattleAnimBgTilemap_InAir, 0x08D8F54C
+	.globl gBattleAnimBgImage_Ghost
+	.set gBattleAnimBgImage_Ghost, 0x08D90028
+	.globl gBattleAnimBgPalette_Ghost
+	.set gBattleAnimBgPalette_Ghost, 0x08D90CF0
+	.globl gBattleAnimBgTilemap_Ghost
+	.set gBattleAnimBgTilemap_Ghost, 0x08D90D0C
+	.globl gBattleAnimBgPalette_SolarBeam
+	.set gBattleAnimBgPalette_SolarBeam, 0x08D91028
+	.globl gBattleAnimBgPalette_Cosmic
+	.set gBattleAnimBgPalette_Cosmic, 0x08D92AB4
+	.globl gBattleAnimBgImage_Cosmic
+	.set gBattleAnimBgImage_Cosmic, 0x08D92ADC
+	.globl gBattleAnimBgTilemap_Cosmic
+	.set gBattleAnimBgTilemap_Cosmic, 0x08D92D3C
+	.globl gBattleAnimBgImage_Fissure
+	.set gBattleAnimBgImage_Fissure, 0x08D94010
+	.globl gBattleAnimBgPalette_Fissure
+	.set gBattleAnimBgPalette_Fissure, 0x08D94304
+	.globl gBattleAnimBgTilemap_Fissure
+	.set gBattleAnimBgTilemap_Fissure, 0x08D94320
+
+	@ struct BattleAnimBackground { image, palette, tilemap }
+	.macro battle_anim_bg_entry image:req, palette:req, tilemap:req
+	.4byte \image, \palette, \tilemap
+	.endm
+
+	.globl gBattleAnimBackgroundTable
+gBattleAnimBackgroundTable: @ 0x084FE460
+	battle_anim_bg_entry gBattleAnimBgImage_Dark, gBattleAnimBgPalette_Dark, gBattleAnimBgTilemap_Dark @ [00] BG_NONE
+	battle_anim_bg_entry gBattleAnimBgImage_Dark, gBattleAnimBgPalette_Dark, gBattleAnimBgTilemap_Dark @ [01] BG_DARK
+	battle_anim_bg_entry gBattleAnimBgImage_Ghost, gBattleAnimBgPalette_Ghost, gBattleAnimBgTilemap_Ghost @ [02] BG_GHOST
+	battle_anim_bg_entry gBattleAnimBgImage_Psychic, gBattleAnimBgPalette_Psychic, gBattleAnimBgTilemap_Psychic @ [03] BG_PSYCHIC
+	battle_anim_bg_entry gBattleAnimBgImage_Impact, gBattleAnimBgPalette_Impact, gBattleAnimBgTilemap_ImpactOpponent @ [04] BG_IMPACT_OPPONENT
+	battle_anim_bg_entry gBattleAnimBgImage_Impact, gBattleAnimBgPalette_Impact, gBattleAnimBgTilemap_ImpactPlayer @ [05] BG_IMPACT_PLAYER
+	battle_anim_bg_entry gBattleAnimBgImage_Impact, gBattleAnimBgPalette_Impact, gBattleAnimBgTilemap_ImpactContests @ [06] BG_IMPACT_CONTESTS
+	battle_anim_bg_entry gBattleAnimBgImage_Drill, gBattleAnimBgPalette_Drill, gBattleAnimBgTilemap_Drill @ [07] BG_DRILL
+	battle_anim_bg_entry gBattleAnimBgImage_Drill, gBattleAnimBgPalette_Drill, gBattleAnimBgTilemap_DrillContests @ [08] BG_DRILL_CONTESTS
+	battle_anim_bg_entry gBattleAnimBgImage_Highspeed, gBattleAnimBgPalette_Highspeed, gBattleAnimBgTilemap_HighspeedOpponent @ [09] BG_HIGHSPEED_OPPONENT
+	battle_anim_bg_entry gBattleAnimBgImage_Highspeed, gBattleAnimBgPalette_Highspeed, gBattleAnimBgTilemap_HighspeedPlayer @ [10] BG_HIGHSPEED_PLAYER
+	battle_anim_bg_entry gBattleAnimBgImage_Thunder, gBattleAnimBgPalette_Thunder, gBattleAnimBgTilemap_Thunder @ [11] BG_THUNDER
+	battle_anim_bg_entry gBattleAnimBgImage_Guillotine, gBattleAnimBgPalette_Guillotine, gBattleAnimBgTilemap_GuillotineOpponent @ [12] BG_GUILLOTINE_OPPONENT
+	battle_anim_bg_entry gBattleAnimBgImage_Guillotine, gBattleAnimBgPalette_Guillotine, gBattleAnimBgTilemap_GuillotinePlayer @ [13] BG_GUILLOTINE_PLAYER
+	battle_anim_bg_entry gBattleAnimBgImage_Guillotine, gBattleAnimBgPalette_Guillotine, gBattleAnimBgTilemap_GuillotineContests @ [14] BG_GUILLOTINE_CONTESTS
+	battle_anim_bg_entry gBattleAnimBgImage_Ice, gBattleAnimBgPalette_Ice, gBattleAnimBgTilemap_Ice @ [15] BG_ICE
+	battle_anim_bg_entry gBattleAnimBgImage_Cosmic, gBattleAnimBgPalette_Cosmic, gBattleAnimBgTilemap_Cosmic @ [16] BG_COSMIC
+	battle_anim_bg_entry gBattleAnimBgImage_InAir, gBattleAnimBgPalette_InAir, gBattleAnimBgTilemap_InAir @ [17] BG_IN_AIR
+	battle_anim_bg_entry gBattleAnimBgImage_Drill, gBattleAnimBgPalette_Sky, gBattleAnimBgTilemap_Drill @ [18] BG_SKY
+	battle_anim_bg_entry gBattleAnimBgImage_Drill, gBattleAnimBgPalette_Sky, gBattleAnimBgTilemap_DrillContests @ [19] BG_SKY_CONTESTS
+	battle_anim_bg_entry gBattleAnimBgImage_Aurora, gBattleAnimBgPalette_Aurora, gBattleAnimBgTilemap_Aurora @ [20] BG_AURORA
+	battle_anim_bg_entry gBattleAnimBgImage_Fissure, gBattleAnimBgPalette_Fissure, gBattleAnimBgTilemap_Fissure @ [21] BG_FISSURE
+	battle_anim_bg_entry gBattleAnimBgImage_Highspeed, gBattleAnimBgPalette_Bug, gBattleAnimBgTilemap_HighspeedOpponent @ [22] BG_BUG_OPPONENT
+	battle_anim_bg_entry gBattleAnimBgImage_Highspeed, gBattleAnimBgPalette_Bug, gBattleAnimBgTilemap_HighspeedPlayer @ [23] BG_BUG_PLAYER
+	battle_anim_bg_entry gBattleAnimBgImage_Impact, gBattleAnimBgPalette_SolarBeam, gBattleAnimBgTilemap_ImpactOpponent @ [24] BG_SOLAR_BEAM_OPPONENT
+	battle_anim_bg_entry gBattleAnimBgImage_Impact, gBattleAnimBgPalette_SolarBeam, gBattleAnimBgTilemap_ImpactPlayer @ [25] BG_SOLAR_BEAM_PLAYER
+	battle_anim_bg_entry gBattleAnimBgImage_Impact, gBattleAnimBgPalette_SolarBeam, gBattleAnimBgTilemap_ImpactContests @ [26] BG_SOLAR_BEAM_CONTESTS
+	.purgem battle_anim_bg_entry
+
+	@ Compatibility aliases.
 	.globl gBattleAnimData_084FE460
-gBattleAnimData_084FE460: @ 0x084FE460
-	@ confirmed contiguous ROM pointer table: 81 entries from this address
-sPointerTable_084FE460:
-	@ analyzed canonical ROM range 0x084FE460-0x084FE5A3
-	@ pointer/nullable table
-	.4byte 0x08C1C88C @ +0x0
-	.4byte 0x08C1CE84 @ +0x4
-	.4byte 0x08C1CEA4 @ +0x8
-	.4byte 0x08C1C88C @ +0xC
-	.4byte 0x08C1CE84 @ +0x10
-	.4byte 0x08C1CEA4 @ +0x14
-	.4byte 0x08D90028 @ +0x18
-	.4byte 0x08D90CF0 @ +0x1C
-	.4byte 0x08D90D0C @ +0x20
-	.4byte 0x08C1E954 @ +0x24
-	.4byte 0x08C1EB24 @ +0x28
-	.4byte 0x08C1EB48 @ +0x2C
-	.4byte 0x08C25C90 @ +0x30
-	.4byte 0x08C25C68 @ +0x34
-	.4byte 0x08C269FC @ +0x38
-	.4byte 0x08C25C90 @ +0x3C
-	.4byte 0x08C25C68 @ +0x40
-	.4byte 0x08C26EF8 @ +0x44
-	.4byte 0x08C25C90 @ +0x48
-	.4byte 0x08C25C68 @ +0x4C
-	.4byte 0x08C273C8 @ +0x50
-	.4byte 0x08C289C8 @ +0x54
-	.4byte 0x08C28B70 @ +0x58
-	.4byte 0x08C28BC0 @ +0x5C
-	.4byte 0x08C289C8 @ +0x60
-	.4byte 0x08C28B70 @ +0x64
-	.4byte 0x08C28D50 @ +0x68
-	.4byte 0x08C29E60 @ +0x6C
-	.4byte 0x08C29E20 @ +0x70
-	.4byte 0x08C29B28 @ +0x74
-	.4byte 0x08C29E60 @ +0x78
-	.4byte 0x08C29E20 @ +0x7C
-	.4byte 0x08C2A3E0 @ +0x80
-	.4byte 0x08C2BE88 @ +0x84
-	.4byte 0x08C2C824 @ +0x88
-	.4byte 0x08C2C84C @ +0x8C
-	.4byte gMoveLz77Data_Rom_C2B100 @ +0x90
-	.4byte 0x08C2BE68 @ +0x94
-	.4byte 0x08C2A8AC @ +0x98
-	.4byte gMoveLz77Data_Rom_C2B100 @ +0x9C
-	.4byte 0x08C2BE68 @ +0xA0
-	.4byte 0x08C2AB74 @ +0xA4
-	.4byte gMoveLz77Data_Rom_C2B100 @ +0xA8
-	.4byte 0x08C2BE68 @ +0xAC
-	.4byte 0x08C2AE70 @ +0xB0
-	.4byte 0x08D8DC98 @ +0xB4
-	.4byte 0x08D8E608 @ +0xB8
-	.4byte 0x08D8E62C @ +0xBC
-	.4byte 0x08D92ADC @ +0xC0
-	.4byte 0x08D92AB4 @ +0xC4
-	.4byte 0x08D92D3C @ +0xC8
-	.4byte 0x08D8F3C8 @ +0xCC
-	.4byte 0x08D8F524 @ +0xD0
-	.4byte 0x08D8F54C @ +0xD4
-	.4byte 0x08C289C8 @ +0xD8
-	.4byte 0x08C28B98 @ +0xDC
-	.4byte 0x08C28BC0 @ +0xE0
-	.4byte 0x08C289C8 @ +0xE4
-	.4byte 0x08C28B98 @ +0xE8
-	.4byte 0x08C28D50 @ +0xEC
-	.4byte 0x08C28EDC @ +0xF0
-	.4byte 0x08C29904 @ +0xF4
-	.4byte 0x08C29924 @ +0xF8
-	.4byte 0x08D94010 @ +0xFC
-	.4byte 0x08D94304 @ +0x100
-	.4byte 0x08D94320 @ +0x104
-	.4byte 0x08C29E60 @ +0x108
-	.4byte 0x08C29E40 @ +0x10C
-	.4byte 0x08C29B28 @ +0x110
-	.4byte 0x08C29E60 @ +0x114
-	.4byte 0x08C29E40 @ +0x118
-	.4byte 0x08C2A3E0 @ +0x11C
-	.4byte 0x08C25C90 @ +0x120
-	.4byte 0x08D91028 @ +0x124
-	.4byte 0x08C269FC @ +0x128
-	.4byte 0x08C25C90 @ +0x12C
-	.4byte 0x08D91028 @ +0x130
-	.4byte 0x08C26EF8 @ +0x134
-	.4byte 0x08C25C90 @ +0x138
-	.4byte 0x08D91028 @ +0x13C
-	.4byte 0x08C273C8 @ +0x140
+	.set gBattleAnimData_084FE460, gBattleAnimBackgroundTable
+	.set sPointerTable_084FE460, gBattleAnimBackgroundTable
+
+	@ Battle animation script opcode dispatch table.
+	@ JP function labels are retained; pinned upstream Cmd_* semantics are
+	@ recorded per opcode to avoid unsafe function-label renames.
+	.globl gBattleAnimScriptCmdTable
+gBattleAnimScriptCmdTable: @ 0x084FE5A4
+	.4byte ScriptCmd_loadspritegfx @ opcode 0x00; Cmd_loadspritegfx
+	.4byte ScriptCmd_unloadspritegfx @ opcode 0x01; Cmd_unloadspritegfx
+	.4byte ScriptCmd_createsprite @ opcode 0x02; Cmd_createsprite
+	.4byte ScriptCmd_createvisualtask @ opcode 0x03; Cmd_createvisualtask
+	.4byte ScriptCmd_delay @ opcode 0x04; Cmd_delay
+	.4byte ScriptCmd_waitbgfadein @ opcode 0x05; Cmd_waitforvisualfinish
+	.4byte ScriptCmd_hang2 @ opcode 0x06; Cmd_nop
+	.4byte ScriptCmd_stopsound @ opcode 0x07; Cmd_nop2
+	.4byte ScriptCmd_end @ opcode 0x08; Cmd_end
+	.4byte ScriptCmd_playse @ opcode 0x09; Cmd_playse
+	.4byte ScriptCmd_monbg @ opcode 0x0A; Cmd_monbg
+	.4byte ScriptCmd_clearmonbg @ opcode 0x0B; Cmd_clearmonbg
+	.4byte ScriptCmd_setalpha @ opcode 0x0C; Cmd_setalpha
+	.4byte ScriptCmd_blendoff @ opcode 0x0D; Cmd_blendoff
+	.4byte ScriptCmd_call @ opcode 0x0E; Cmd_call
+	.4byte ScriptCmd_return @ opcode 0x0F; Cmd_return
+	.4byte ScriptCmd_setarg @ opcode 0x10; Cmd_setarg
+	.4byte ScriptCmd_choosetwoturnanim @ opcode 0x11; Cmd_choosetwoturnanim
+	.4byte ScriptCmd_jumpifmoveturn @ opcode 0x12; Cmd_jumpifmoveturn
+	.4byte ScriptCmd_goto @ opcode 0x13; Cmd_goto
+	.4byte ScriptCmd_fadetobg @ opcode 0x14; Cmd_fadetobg
+	.4byte ScriptCmd_restorebg @ opcode 0x15; Cmd_restorebg
+	.4byte ScriptCmd_waitbgfadeout @ opcode 0x16; Cmd_waitbgfadeout
+	.4byte ScriptCmd_waitforvisualfinish @ opcode 0x17; Cmd_waitbgfadein
+	.4byte ScriptCmd_changebg @ opcode 0x18; Cmd_changebg
+	.4byte ScriptCmd_playsewithpan @ opcode 0x19; Cmd_playsewithpan
+	.4byte ScriptCmd_setpan @ opcode 0x1A; Cmd_setpan
+	.4byte ScriptCmd_panse_1B @ opcode 0x1B; Cmd_panse
+	.4byte ScriptCmd_loopsewithpan @ opcode 0x1C; Cmd_loopsewithpan
+	.4byte ScriptCmd_waitplaysewithpan @ opcode 0x1D; Cmd_waitplaysewithpan
+	.4byte ScriptCmd_setbldcnt @ opcode 0x1E; Cmd_setbldcnt
+	.4byte ScriptCmd_createsoundtask @ opcode 0x1F; Cmd_createsoundtask
+	.4byte ScriptCmd_waitsound @ opcode 0x20; Cmd_waitsound
+	.4byte ScriptCmd_jumpargeq @ opcode 0x21; Cmd_jumpargeq
+	.4byte ScriptCmd_monbg_22 @ opcode 0x22; Cmd_monbg_static
+	.4byte ScriptCmd_clearmonbg_23 @ opcode 0x23; Cmd_clearmonbg_static
+	.4byte ScriptCmd_jumpifcontest @ opcode 0x24; Cmd_jumpifcontest
+	.4byte ScriptCmd_fadetobgfromset @ opcode 0x25; Cmd_fadetobgfromset
+	.4byte ScriptCmd_panse_26 @ opcode 0x26; Cmd_panse_adjustnone
+	.4byte ScriptCmd_panse_27 @ opcode 0x27; Cmd_panse_adjustall
+	.4byte ScriptCmd_monbgprio_28 @ opcode 0x28; Cmd_splitbgprio
+	.4byte ScriptCmd_monbgprio_29 @ opcode 0x29; Cmd_splitbgprio_all
+	.4byte ScriptCmd_monbgprio_2A @ opcode 0x2A; Cmd_splitbgprio_foes
+	.4byte ScriptCmd_invisible @ opcode 0x2B; Cmd_invisible
+	.4byte ScriptCmd_visible @ opcode 0x2C; Cmd_visible
+	.4byte ScriptCmd_doublebattle_2D @ opcode 0x2D; Cmd_teamattack_moveback
+	.4byte ScriptCmd_doublebattle_2E @ opcode 0x2E; Cmd_teamattack_movefwd
+	.4byte sub_080A550C @ opcode 0x2F; Cmd_stopsound
+
+	@ Compatibility / upstream table aliases.
 	.globl gMenuPointerTable_Rom_4FE5A4
-gMenuPointerTable_Rom_4FE5A4: @ 0x084FE5A4
-	.4byte ScriptCmd_loadspritegfx
-	.4byte ScriptCmd_unloadspritegfx
-	.4byte ScriptCmd_createsprite
-	.4byte ScriptCmd_createvisualtask
-	.4byte ScriptCmd_delay
-	.4byte ScriptCmd_waitbgfadein
-	.4byte ScriptCmd_hang2
-	.4byte ScriptCmd_stopsound
-	.4byte ScriptCmd_end
-	.4byte ScriptCmd_playse
-	.4byte ScriptCmd_monbg
-	.4byte ScriptCmd_clearmonbg
-	.4byte ScriptCmd_setalpha
-	.4byte ScriptCmd_blendoff
-	.4byte ScriptCmd_call
-	.4byte ScriptCmd_return
-	.4byte ScriptCmd_setarg
-	.4byte ScriptCmd_choosetwoturnanim
-	.4byte ScriptCmd_jumpifmoveturn
-	.4byte ScriptCmd_goto
-	.4byte ScriptCmd_fadetobg
-	.4byte ScriptCmd_restorebg
-	.4byte ScriptCmd_waitbgfadeout
-	.4byte ScriptCmd_waitforvisualfinish
-	.4byte ScriptCmd_changebg
-	.4byte ScriptCmd_playsewithpan
-	.4byte ScriptCmd_setpan
-	.4byte ScriptCmd_panse_1B
-	.4byte ScriptCmd_loopsewithpan
-	.4byte ScriptCmd_waitplaysewithpan
-	.4byte ScriptCmd_setbldcnt
-	.4byte ScriptCmd_createsoundtask
-	.4byte ScriptCmd_waitsound
-	.4byte ScriptCmd_jumpargeq
-	.4byte ScriptCmd_monbg_22
-	.4byte ScriptCmd_clearmonbg_23
-	.4byte ScriptCmd_jumpifcontest
-	.4byte ScriptCmd_fadetobgfromset
-	.4byte ScriptCmd_panse_26
-	.4byte ScriptCmd_panse_27
-	.4byte ScriptCmd_monbgprio_28
-	.4byte ScriptCmd_monbgprio_29
-	.4byte ScriptCmd_monbgprio_2A
-	.4byte ScriptCmd_invisible
-	.4byte ScriptCmd_visible
-	.4byte ScriptCmd_doublebattle_2D
-	.4byte ScriptCmd_doublebattle_2E
-	.4byte sub_080A550C
-	@ pret/pokeemerald-jp direct xref for 0x084FE664: battle_anim_mons.s: GetBattlerSpriteCoord, GetBattlerSpriteFinal_Y
+	.set gMenuPointerTable_Rom_4FE5A4, gBattleAnimScriptCmdTable
+	.globl sScriptCmdTable
+	.set sScriptCmdTable, gBattleAnimScriptCmdTable
+
 	.globl gBattleAnimMonsData_084FE664
 gBattleAnimMonsData_084FE664: @ 0x084FE664
 	@ analyzed canonical ROM range 0x084FE664-0x084FE683
