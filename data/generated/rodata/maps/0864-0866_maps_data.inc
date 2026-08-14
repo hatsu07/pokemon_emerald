@@ -2374,19 +2374,59 @@ gSuperFangSpriteTemplate: @ 0x0856EB58
 	rodata_sprite_template 0x27D0, 0x27D0, gBattleAnimOam_AffineOff_ObjNormal_32x32, gSuperFangAnims, 0, gDummySpriteAffineAnimTable, sub_0810341C
 	.globl gBattleAnimEffects1Data_0856EB70
 gBattleAnimEffects1Data_0856EB70: @ 0x0856EB70
-	@ analyzed canonical ROM range 0x0856EB70-0x0856EC03
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x94
-	.2byte 0x0000, 0x000A, 0xFFFF, 0x0000, 0x0004, 0x000A, 0xFFFF, 0x0000
-	.2byte 0x0008, 0x0029, 0xFFFF, 0x0000, 0x000C, 0x000A, 0xFFFF, 0x0000
-	.2byte 0x0010, 0x000A, 0xFFFF, 0x0000, 0x0014, 0x000A, 0xFFFF, 0x0000
-	.2byte 0x0000, 0x008A, 0xFFFF, 0x0000, 0x0004, 0x008A, 0xFFFF, 0x0000
-	.2byte 0xEB70, 0x0856, 0xEB78, 0x0856, 0xEB80, 0x0856, 0xEB88, 0x0856
-	.2byte 0xEB90, 0x0856, 0xEB98, 0x0856, 0xEBA0, 0x0856, 0xEBA8, 0x0856
-	.2byte 0x000C, 0x000C, 0x1000, 0x0000, 0xFFF4, 0xFFF4, 0x1000, 0x0000
-	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000, 0xEBD0, 0x0856, 0x2758, 0x2758
-	.2byte 0xD0D8, 0x084F, 0xEBB0, 0x0856, 0x0000, 0x0000, 0xEBE8, 0x0856
-	.2byte 0x3525, 0x0810
+	.globl gSingMusicNoteAnim_0
+gSingMusicNoteAnim_0: @ 0x0856EB70
+	rodata_anim_frame 0, 10
+	rodata_anim_end
+	.globl gSingMusicNoteAnim_1
+gSingMusicNoteAnim_1: @ 0x0856EB78
+	rodata_anim_frame 4, 10
+	rodata_anim_end
+	.globl gSingMusicNoteAnim_2
+gSingMusicNoteAnim_2: @ 0x0856EB80
+	rodata_anim_frame 8, 41
+	rodata_anim_end
+	.globl gSingMusicNoteAnim_3
+gSingMusicNoteAnim_3: @ 0x0856EB88
+	rodata_anim_frame 12, 10
+	rodata_anim_end
+	.globl gSingMusicNoteAnim_4
+gSingMusicNoteAnim_4: @ 0x0856EB90
+	rodata_anim_frame 16, 10
+	rodata_anim_end
+	.globl gSingMusicNoteAnim_5
+gSingMusicNoteAnim_5: @ 0x0856EB98
+	rodata_anim_frame 20, 10
+	rodata_anim_end
+	.globl gSingMusicNoteAnim_6
+gSingMusicNoteAnim_6: @ 0x0856EBA0
+	rodata_anim_frame 0, 10, 0, 1
+	rodata_anim_end
+	.globl gSingMusicNoteAnim_7
+gSingMusicNoteAnim_7: @ 0x0856EBA8
+	rodata_anim_frame 4, 10, 0, 1
+	rodata_anim_end
+	.globl gSingMusicNoteAnims
+gSingMusicNoteAnims: @ 0x0856EBB0
+	semantic_anim_table_entry gSingMusicNoteAnim_0
+	semantic_anim_table_entry gSingMusicNoteAnim_1
+	semantic_anim_table_entry gSingMusicNoteAnim_2
+	semantic_anim_table_entry gSingMusicNoteAnim_3
+	semantic_anim_table_entry gSingMusicNoteAnim_4
+	semantic_anim_table_entry gSingMusicNoteAnim_5
+	semantic_anim_table_entry gSingMusicNoteAnim_6
+	semantic_anim_table_entry gSingMusicNoteAnim_7
+	.globl gSingMusicNoteAffineAnim
+gSingMusicNoteAffineAnim: @ 0x0856EBD0
+	semantic_affine_animcmd_frame 12, 12, 0, 16
+	semantic_affine_animcmd_frame -12, -12, 0, 16
+	semantic_affine_animcmd_jump 0
+	.globl gSingMusicNoteAffineAnims
+gSingMusicNoteAffineAnims: @ 0x0856EBE8
+	semantic_affine_anim_table_entry gSingMusicNoteAffineAnim
+	.globl gSingMusicNoteSpriteTemplate
+gSingMusicNoteSpriteTemplate: @ 0x0856EBEC
+	rodata_sprite_template 0x2758, 0x2758, gBattleAnimOam_AffineDouble_ObjNormal_16x16, gSingMusicNoteAnims, 0, gSingMusicNoteAffineAnims, sub_08103524
 	@ pret/pokeemerald-jp direct xref for 0x0856EC04: battle_anim_effects_1.s: sub_08103438, sub_081034F0, sub_08103524, sub_08103634, sub_08103878
 	.globl gBattleAnimEffects1Data_0856EC04
 gBattleAnimEffects1Data_0856EC04: @ 0x0856EC04

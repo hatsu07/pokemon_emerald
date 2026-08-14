@@ -2169,29 +2169,29 @@ Move_SING:
 	ba_createvisualtask sub_08103438, 2
 	ba_waitforvisualfinish
 	ba_panse_1B 0x00AC, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 2, 0
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 7, 0, 12
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 7, 0, 12
 	ba_delay 5
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 6, 1, 12
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 6, 1, 12
 	ba_delay 5
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 1, 2, 12
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 1, 2, 12
 	ba_delay 5
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 2, 3, 12
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 2, 3, 12
 	ba_delay 5
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 3, 0, 12
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 3, 0, 12
 	ba_delay 4
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 2, 1, 12
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 2, 1, 12
 	ba_delay 4
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 5, 2, 12
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 5, 2, 12
 	ba_delay 4
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 6, 3, 12
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 6, 3, 12
 	ba_delay 4
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 2, 0, 12
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 2, 0, 12
 	ba_delay 4
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 2, 1, 12
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 2, 1, 12
 	ba_delay 4
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 1, 2, 12
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 1, 2, 12
 	ba_delay 4
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 5, 3, 12
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 5, 3, 12
 	ba_delay 4
 	ba_waitforvisualfinish
 	ba_clearmonbg ANIM_DEF_PARTNER
@@ -3770,29 +3770,29 @@ Move_GRASS_WHISTLE:
 	ba_createvisualtask sub_08103438, 2
 	ba_waitforvisualfinish
 	ba_panse_1B 0x00E7, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 2, 0
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 7, 1, 0
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 7, 1, 0
 	ba_delay 5
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 6, 1, 0
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 6, 1, 0
 	ba_delay 5
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 1, 1, 0
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 1, 1, 0
 	ba_delay 5
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 2, 1, 0
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 2, 1, 0
 	ba_delay 5
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 3, 1, 0
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 3, 1, 0
 	ba_delay 4
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 2, 1, 0
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 2, 1, 0
 	ba_delay 4
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 5, 1, 0
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 5, 1, 0
 	ba_delay 4
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 6, 1, 0
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 6, 1, 0
 	ba_delay 4
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 2, 1, 0
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 2, 1, 0
 	ba_delay 4
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 2, 1, 0
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 2, 1, 0
 	ba_delay 4
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 1, 1, 0
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 1, 1, 0
 	ba_delay 4
-	ba_createsprite 0x0856EBEC, ANIM_TARGET, 2, 5, 1, 0
+	ba_createsprite gSingMusicNoteSpriteTemplate, ANIM_TARGET, 2, 5, 1, 0
 	ba_delay 4
 	ba_waitforvisualfinish
 	ba_createvisualtask sub_081034F0, 2
