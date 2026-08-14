@@ -1,11 +1,13 @@
 	@ pret/pokeemerald-jp direct xref for 0x084F89D0: tileset_anims.s: QueueAnimTiles_Sootopolis_StormyWater
-	.globl gTilesetAnimsData_084F89D0
-gTilesetAnimsData_084F89D0: @ 0x084F89D0
+	.globl gSootopolisStormyWaterTilesetAnimFrameTable
+gSootopolisStormyWaterTilesetAnimFrameTable: @ 0x084F89D0
 	@ analyzed canonical ROM range 0x084F89D0-0x084FCF6F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x45A0
-	.2byte 0x09B0, 0x084F, 0x15B0, 0x084F, 0x21B0, 0x084F, 0x2DB0, 0x084F
-	.2byte 0x39B0, 0x084F, 0x45B0, 0x084F, 0x51B0, 0x084F, 0x5DB0, 0x084F
+	.4byte gSootopolisStormyWaterTilesetAnimFrame0, gSootopolisStormyWaterTilesetAnimFrame1
+	.4byte gSootopolisStormyWaterTilesetAnimFrame2, gSootopolisStormyWaterTilesetAnimFrame3
+	.4byte gSootopolisStormyWaterTilesetAnimFrame4, gSootopolisStormyWaterTilesetAnimFrame5
+	.4byte gSootopolisStormyWaterTilesetAnimFrame6, gSootopolisStormyWaterTilesetAnimFrame7
 	.2byte 0x8887, 0x8888, 0x7778, 0x7777, 0x7778, 0x7777, 0x7778, 0x7777
 	.2byte 0x7778, 0x7777, 0x7778, 0x7777, 0x7778, 0x7E77, 0x7778, 0xE777
 	.2byte 0x8888, 0x7888, 0x7777, 0x6777, 0x7777, 0x6777, 0x7777, 0x6777

@@ -1,10 +1,27 @@
 	@ pret/pokeemerald-jp direct xref for 0x084F09A8: tileset_anims.s: QueueAnimTiles_BikeShop_BlinkingLights
-	.globl gTilesetAnimsData_084F09A8
-gTilesetAnimsData_084F09A8: @ 0x084F09A8
-	@ analyzed canonical ROM range 0x084F09A8-0x084F89CF
+	.globl gBikeShopBlinkingLightsTilesetAnimFrameTable
+gBikeShopBlinkingLightsTilesetAnimFrameTable: @ 0x084F09A8
+	.4byte gBikeShopBlinkingLightsTilesetAnimFrame0, gBikeShopBlinkingLightsTilesetAnimFrame1
+	.globl gSootopolisStormyWaterTilesetAnimFrame0
+gSootopolisStormyWaterTilesetAnimFrame0: @ 0x084F09B0
+	.globl gSootopolisStormyWaterTilesetAnimFrame1
+	.set gSootopolisStormyWaterTilesetAnimFrame1, gSootopolisStormyWaterTilesetAnimFrame0 + 0xC00
+	.globl gSootopolisStormyWaterTilesetAnimFrame2
+	.set gSootopolisStormyWaterTilesetAnimFrame2, gSootopolisStormyWaterTilesetAnimFrame0 + 0x1800
+	.globl gSootopolisStormyWaterTilesetAnimFrame3
+	.set gSootopolisStormyWaterTilesetAnimFrame3, gSootopolisStormyWaterTilesetAnimFrame0 + 0x2400
+	.globl gSootopolisStormyWaterTilesetAnimFrame4
+	.set gSootopolisStormyWaterTilesetAnimFrame4, gSootopolisStormyWaterTilesetAnimFrame0 + 0x3000
+	.globl gSootopolisStormyWaterTilesetAnimFrame5
+	.set gSootopolisStormyWaterTilesetAnimFrame5, gSootopolisStormyWaterTilesetAnimFrame0 + 0x3C00
+	.globl gSootopolisStormyWaterTilesetAnimFrame6
+	.set gSootopolisStormyWaterTilesetAnimFrame6, gSootopolisStormyWaterTilesetAnimFrame0 + 0x4800
+	.globl gSootopolisStormyWaterTilesetAnimFrame7
+	.set gSootopolisStormyWaterTilesetAnimFrame7, gSootopolisStormyWaterTilesetAnimFrame0 + 0x5400
+	@ analyzed canonical ROM range 0x084F09B0-0x084F89CF
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8028
-	.byte 0x48, 0x07, 0x4F, 0x08, 0x68, 0x08, 0x4F, 0x08, 0xDD, 0xDD, 0xED, 0xEE, 0xDD, 0xDD, 0xED, 0xEE
+	@ ANALYSIS: RAW_BLOCK size=0x8020
+	.byte 0xDD, 0xDD, 0xED, 0xEE, 0xDD, 0xDD, 0xED, 0xEE
 	.byte 0xEE, 0xDD, 0xDD, 0xDD, 0xEE, 0xEE, 0xDE, 0xDD, 0xEE, 0xEE, 0xDE, 0xDD, 0xEE, 0xEE, 0xDE, 0xDD
 	.byte 0xDD, 0xEE, 0xEE, 0xDD, 0xDC, 0xED, 0xEE, 0xDD, 0xCD, 0xED, 0xEE, 0xDE, 0xCD, 0xDD, 0xEE, 0xEE
 	.byte 0xDD, 0xDC, 0xEE, 0xEE, 0xEE, 0xEC, 0xED, 0xEE, 0xEE, 0xCE, 0xDD, 0xEE, 0xEE, 0xEE, 0xCC, 0xDD

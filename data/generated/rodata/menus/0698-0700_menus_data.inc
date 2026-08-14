@@ -2082,6 +2082,10 @@ gTilesetAnimsData_084F0308: @ 0x084F0308
 	@ pret/pokeemerald-jp direct xref for 0x084F0318: tileset_anims.s: QueueAnimTiles_EliteFour_GroundLights
 	.globl gTilesetAnimsData_084F0318
 gTilesetAnimsData_084F0318: @ 0x084F0318
+	.globl gMauvilleGymElectricGatesTilesetAnimFrame0
+	.set gMauvilleGymElectricGatesTilesetAnimFrame0, gTilesetAnimsData_084F0318 + 8
+	.globl gMauvilleGymElectricGatesTilesetAnimFrame1
+	.set gMauvilleGymElectricGatesTilesetAnimFrame1, gMauvilleGymElectricGatesTilesetAnimFrame0 + 0x200
 	@ analyzed canonical ROM range 0x084F0318-0x084F073F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x428
@@ -2153,12 +2157,18 @@ gTilesetAnimsData_084F0318: @ 0x084F0318
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x084F0740: tileset_anims.s: QueueAnimTiles_MauvilleGym_ElectricGates
-	.globl gTilesetAnimsData_084F0740
-gTilesetAnimsData_084F0740: @ 0x084F0740
+	.globl gMauvilleGymElectricGatesTilesetAnimFrameTable
+gMauvilleGymElectricGatesTilesetAnimFrameTable: @ 0x084F0740
 	@ analyzed canonical ROM range 0x084F0740-0x084F09A7
-	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ first 8 bytes are a pointer table for Mauville Gym electric gates;
+	@ the following 0x240 bytes are Bike Shop blinking light frames.
 	@ ANALYSIS: RAW_BLOCK size=0x268
-	.byte 0x20, 0x03, 0x4F, 0x08, 0x20, 0x05, 0x4F, 0x08, 0xB5, 0xBB, 0xBB, 0x5C, 0xB5, 0xBB, 0xBB, 0x5C
+	.4byte gMauvilleGymElectricGatesTilesetAnimFrame0, gMauvilleGymElectricGatesTilesetAnimFrame1
+	.globl gBikeShopBlinkingLightsTilesetAnimFrame0
+	.set gBikeShopBlinkingLightsTilesetAnimFrame0, gMauvilleGymElectricGatesTilesetAnimFrameTable + 8
+	.globl gBikeShopBlinkingLightsTilesetAnimFrame1
+	.set gBikeShopBlinkingLightsTilesetAnimFrame1, gBikeShopBlinkingLightsTilesetAnimFrame0 + 0x120
+	.byte 0xB5, 0xBB, 0xBB, 0x5C, 0xB5, 0xBB, 0xBB, 0x5C
 	.byte 0xB5, 0xBB, 0xBB, 0xCC, 0xC5, 0xBB, 0xBB, 0xCB, 0xC5, 0xBB, 0xBB, 0xCB, 0xC5, 0xBB, 0xBB, 0xBB
 	.byte 0xC5, 0xBC, 0xBB, 0xBB, 0xC5, 0xBC, 0xBB, 0xBB, 0xC3, 0xAC, 0xAA, 0xC1, 0xFC, 0xCC, 0x1A, 0xAC
 	.byte 0xC5, 0xCF, 0xBD, 0xAA, 0xC5, 0xCC, 0xC5, 0xAC, 0x5C, 0xCC, 0xC5, 0xCC, 0xCC, 0xC5, 0xC5, 0xCC

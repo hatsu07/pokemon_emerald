@@ -1907,7 +1907,7 @@ QueueAnimTiles_MauvilleGym_ElectricGates: @ 0x080A1010
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A1030: .4byte gTilesetAnimsData_084F0740
+_080A1030: .4byte gMauvilleGymElectricGatesTilesetAnimFrameTable
 _080A1034: .4byte 0x06005200
 	thumb_func_end QueueAnimTiles_MauvilleGym_ElectricGates
 
@@ -1929,7 +1929,7 @@ QueueAnimTiles_BikeShop_BlinkingLights: @ 0x080A1038
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A1058: .4byte gTilesetAnimsData_084F09A8
+_080A1058: .4byte gBikeShopBlinkingLightsTilesetAnimFrameTable
 _080A105C: .4byte 0x06007E00
 	thumb_func_end QueueAnimTiles_BikeShop_BlinkingLights
 
@@ -1951,7 +1951,7 @@ QueueAnimTiles_Sootopolis_StormyWater: @ 0x080A1060
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A1080: .4byte gTilesetAnimsData_084F89D0
+_080A1080: .4byte gSootopolisStormyWaterTilesetAnimFrameTable
 _080A1084: .4byte 0x06005E00
 	thumb_func_end QueueAnimTiles_Sootopolis_StormyWater
 
