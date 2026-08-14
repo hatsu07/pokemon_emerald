@@ -1798,19 +1798,29 @@ gPresentHealParticleSpriteTemplate: @ 0x0856E23C
 	.globl gItemStealSpriteTemplate
 gItemStealSpriteTemplate: @ 0x0856E254
 	rodata_sprite_template 0x27F0, 0x27F0, gBattleAnimOam_AffineOff_ObjNormal_64x64, gPresentAnims, 0, gPresentAffineAnims, AnimItemSteal
-	.globl gBattleAnimEffects1Data_0856E26C
-gBattleAnimEffects1Data_0856E26C: @ 0x0856E26C
-	@ analyzed canonical ROM range 0x0856E26C-0x0856E2E3
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x78
-	.2byte 0x0000, 0x0000, 0x0300, 0x0000
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000, 0x0000, 0xFFF6, 0x0300, 0x0000
-	.2byte 0x0000, 0xFFFA, 0x0300, 0x0000, 0x0000, 0xFFFE, 0x0300, 0x0000
-	.2byte 0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 0x0002, 0x0300, 0x0000
-	.2byte 0x0000, 0x0006, 0x0300, 0x0000, 0x0000, 0x000A, 0x0300, 0x0000
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000, 0xE26C, 0x0856, 0xE27C, 0x0856
-	.2byte 0xE194, 0x0856, 0xE1B4, 0x0856, 0x27F0, 0x27F0, 0xD080, 0x084F
-	.2byte 0xE190, 0x0856, 0x0000, 0x0000, 0xE2BC, 0x0856, 0x060D, 0x0810
+	.globl gTrickBagAffineAnim_Idle
+gTrickBagAffineAnim_Idle: @ 0x0856E26C
+	semantic_affine_animcmd_frame 0, 0, 0, 3
+	rodata_affine_anim_end
+	.globl gTrickBagAffineAnim_Wobble
+gTrickBagAffineAnim_Wobble: @ 0x0856E27C
+	semantic_affine_animcmd_frame 0, -10, 0, 3
+	semantic_affine_animcmd_frame 0, -6, 0, 3
+	semantic_affine_animcmd_frame 0, -2, 0, 3
+	semantic_affine_animcmd_frame 0, 0, 0, 3
+	semantic_affine_animcmd_frame 0, 2, 0, 3
+	semantic_affine_animcmd_frame 0, 6, 0, 3
+	semantic_affine_animcmd_frame 0, 10, 0, 3
+	rodata_affine_anim_end
+	.globl gTrickBagAffineAnims
+gTrickBagAffineAnims: @ 0x0856E2BC
+	semantic_affine_anim_table_entry gTrickBagAffineAnim_Idle
+	semantic_affine_anim_table_entry gTrickBagAffineAnim_Wobble
+	semantic_affine_anim_table_entry gPresentAffineAnim_Spin
+	semantic_affine_anim_table_entry gPresentAffineAnim_Shake
+	.globl gTrickBagSpriteTemplate
+gTrickBagSpriteTemplate: @ 0x0856E2CC
+	rodata_sprite_template 0x27F0, 0x27F0, gBattleAnimOam_AffineOff_ObjNormal_64x64, gPresentAnims, 0, gTrickBagAffineAnims, AnimTrickBag
 	@ pret/pokeemerald-jp direct xref for 0x0856E2E4: battle_anim_effects_1.s: AnimTrickBagStep2
 	.globl gBattleAnimEffects1Data_0856E2E4
 gBattleAnimEffects1Data_0856E2E4: @ 0x0856E2E4
