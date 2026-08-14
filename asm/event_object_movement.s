@@ -18815,18 +18815,18 @@ MovementAction_ClearAffineAnim_Step0: @ 0x08095064
 	.align 2, 0
 	thumb_func_end MovementAction_ClearAffineAnim_Step0
 
-	thumb_func_start MovementAction_Unknown1_Step0
-MovementAction_Unknown1_Step0: @ 0x08095094
+	thumb_func_start MovementAction_HideReflection_Step0
+MovementAction_HideReflection_Step0: @ 0x08095094
 	ldrb r1, [r0, #3]
 	movs r2, #8
 	orrs r1, r2
 	strb r1, [r0, #3]
 	movs r0, #1
 	bx lr
-	thumb_func_end MovementAction_Unknown1_Step0
+	thumb_func_end MovementAction_HideReflection_Step0
 
-	thumb_func_start MovementAction_Unknown2_Step0
-MovementAction_Unknown2_Step0: @ 0x080950A0
+	thumb_func_start MovementAction_ShowReflection_Step0
+MovementAction_ShowReflection_Step0: @ 0x080950A0
 	ldrb r2, [r0, #3]
 	movs r1, #9
 	rsbs r1, r1, #0
@@ -18835,7 +18835,7 @@ MovementAction_Unknown2_Step0: @ 0x080950A0
 	movs r0, #1
 	bx lr
 	.align 2, 0
-	thumb_func_end MovementAction_Unknown2_Step0
+	thumb_func_end MovementAction_ShowReflection_Step0
 
 	thumb_func_start MovementAction_WalkDownStartAffine_Step0
 MovementAction_WalkDownStartAffine_Step0: @ 0x080950B0
@@ -24871,4 +24871,3 @@ MovementAction_Finish: @ 0x08097AAC
 	movs r0, #1
 	bx lr
 	thumb_func_end MovementAction_Finish
-

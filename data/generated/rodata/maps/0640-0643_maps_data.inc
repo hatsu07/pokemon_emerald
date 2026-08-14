@@ -5806,8 +5806,8 @@ gMovementActionFuncTablePointers: @ 0x084E60A4
 	.4byte sMovementActionFuncs_ClearFixedPriority @ movement action 93
 	.4byte sMovementActionFuncs_InitAffineAnim @ movement action 94
 	.4byte sMovementActionFuncs_ClearAffineAnim @ movement action 95
-	.4byte sMovementActionFuncs_Unknown1 @ movement action 96
-	.4byte sMovementActionFuncs_Unknown2 @ movement action 97
+	.4byte sMovementActionFuncs_HideReflection @ movement action 96
+	.4byte sMovementActionFuncs_ShowReflection @ movement action 97
 	.4byte sMovementActionFuncs_WalkDownStartAffine @ movement action 98
 	.4byte sMovementActionFuncs_WalkDownAffine @ movement action 99
 	.4byte sMovementActionFuncs_AcroWheelieFaceDown @ movement action 100
@@ -6285,11 +6285,11 @@ sMovementActionFuncs_InitAffineAnim: @ 0x084E67BC
 sMovementActionFuncs_ClearAffineAnim: @ 0x084E67C4
 	.4byte MovementAction_ClearAffineAnim_Step0
 	.4byte sub_08095E28
-sMovementActionFuncs_Unknown1: @ 0x084E67CC
-	.4byte MovementAction_Unknown1_Step0
+sMovementActionFuncs_HideReflection: @ 0x084E67CC
+	.4byte MovementAction_HideReflection_Step0
 	.4byte sub_08095E28
-sMovementActionFuncs_Unknown2: @ 0x084E67D4
-	.4byte MovementAction_Unknown2_Step0
+sMovementActionFuncs_ShowReflection: @ 0x084E67D4
+	.4byte MovementAction_ShowReflection_Step0
 	.4byte sub_08095E28
 sMovementActionFuncs_WalkDownStartAffine: @ 0x084E67DC
 	.4byte MovementAction_WalkDownStartAffine_Step0
