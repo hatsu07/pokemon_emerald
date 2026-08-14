@@ -1,17 +1,13 @@
 
 	@ pret/pokeemerald-jp direct xref for 0x0852E6C0: wild_encounter.s: StandardWildEncounter, SweetScentWildEncounter
-	.globl gWildEncounterData_0852E6C0
-gWildEncounterData_0852E6C0: @ 0x0852E6C0
+	.globl gBattlePikeWildMonHeaders
+gBattlePikeWildMonHeaders: @ 0x0852E6C0
 	@ analyzed canonical ROM range 0x0852E6C0-0x0852E723
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x64
-	.2byte 0x0100, 0x0000, 0xE610, 0x0852, 0x0000, 0x0000, 0x0000, 0x0000
-	.2byte 0x0000, 0x0000, 0x0200, 0x0000, 0xE648, 0x0852, 0x0000, 0x0000
-	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0300, 0x0000, 0xE680, 0x0852
-	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0400, 0x0000
-	.2byte 0xE6B8, 0x0852, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
-	.2byte 0xFFFF, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
-	.2byte 0x0000, 0x0000
+	wildmonheader 0, 1, gBattlePikeWildMonsInfo_Group1, 0, 0, 0
+	wildmonheader 0, 2, gBattlePikeWildMonsInfo_Group2, 0, 0, 0
+	wildmonheader 0, 3, gBattlePikeWildMonsInfo_Group3, 0, 0, 0
+	wildmonheader 0, 4, gBattlePikeWildMonsInfo_Group4, 0, 0, 0
+	wildmonheader 0xFF, 0xFF, 0, 0, 0, 0
 	@ pret/pokeemerald-jp direct xref for 0x0852E724: wild_encounter.s: FishingWildEncounter
 	.globl gRoute119FeebasFishingMon
 gRoute119FeebasFishingMon: @ 0x0852E724

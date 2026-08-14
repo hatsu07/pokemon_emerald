@@ -1418,7 +1418,7 @@ _080B4A70:
 _080B4A78: .4byte 0x020388A0
 _080B4A7C: .4byte 0x0000FFFF
 _080B4A80: .4byte 0x02036FB8
-_080B4A84: .4byte gWildEncounterData_0852E6C0
+_080B4A84: .4byte gBattlePikeWildMonHeaders
 _080B4A88:
 	ldr r0, _080B4AE4
 	cmp r1, r0
@@ -1750,7 +1750,7 @@ _080B4D22:
 	.align 2, 0
 _080B4D30: .4byte 0x0000FFFF
 _080B4D34: .4byte 0x02036FB8
-_080B4D38: .4byte gWildEncounterData_0852E6C0
+_080B4D38: .4byte gBattlePikeWildMonHeaders
 _080B4D3C:
 	ldr r0, _080B4D74
 	cmp r1, r0
@@ -2434,4 +2434,3 @@ _080B5264:
 	.align 2, 0
 _080B526C: .4byte 0x02024190
 	thumb_func_end ApplyCleanseTagEncounterRateMod
-
