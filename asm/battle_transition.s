@@ -1243,7 +1243,7 @@ Phase2_Regi_Func1: @ 0x08146874
 	bx r1
 	.align 2, 0
 _081468B8: .4byte 0x01000400
-_081468BC: .4byte gBattleTransitionData_0859B6C4
+_081468BC: .4byte gBattleTransitionRegisTiles
 	thumb_func_end Phase2_Regi_Func1
 
 	thumb_func_start Phase2_BigPokeball_Func1
@@ -1281,7 +1281,7 @@ Phase2_BigPokeball_Func1: @ 0x081468C0
 	bx r1
 	.align 2, 0
 _08146908: .4byte 0x01000400
-_0814690C: .4byte gBattleTransitionData_08598DE0
+_0814690C: .4byte gBattleTransitionBigPokeballTiles
 _08146910: .4byte gBattleTransitionData_085A8984
 	thumb_func_end Phase2_BigPokeball_Func1
 
@@ -1468,7 +1468,7 @@ Phase2_Regice_Func2: @ 0x08146A34
 	bx r1
 	.align 2, 0
 _08146A80: .4byte gBattleTransitionData_0859BD64
-_08146A84: .4byte gBattleTransitionData_0859BDC4
+_08146A84: .4byte gBattleTransitionRegiceTilemap
 _08146A88: .4byte 0x020388C8
 	thumb_func_end Phase2_Regice_Func2
 
@@ -1510,7 +1510,7 @@ Phase2_Registeel_Func2: @ 0x08146A8C
 	bx r1
 	.align 2, 0
 _08146AD8: .4byte gBattleTransitionData_0859BD84
-_08146ADC: .4byte gBattleTransitionData_0859C5C4
+_08146ADC: .4byte gBattleTransitionRegisteelTilemap
 _08146AE0: .4byte 0x020388C8
 	thumb_func_end Phase2_Registeel_Func2
 
@@ -1552,7 +1552,7 @@ Phase2_Regirock_Func2: @ 0x08146AE4
 	bx r1
 	.align 2, 0
 _08146B30: .4byte gBattleTransitionData_0859BDA4
-_08146B34: .4byte gBattleTransitionData_0859CDC4
+_08146B34: .4byte gBattleTransitionRegirockTilemap
 _08146B38: .4byte 0x020388C8
 	thumb_func_end Phase2_Regirock_Func2
 
@@ -2282,7 +2282,7 @@ Phase2_PokeballsTrail_Func1: @ 0x0814708C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081470CC: .4byte gBattleTransitionData_08599360
+_081470CC: .4byte gBattleTransitionPokeballTrailTiles
 _081470D0: .4byte 0x05000200
 _081470D4: .4byte gBattleTransitionData_085A8984
 	thumb_func_end Phase2_PokeballsTrail_Func1
