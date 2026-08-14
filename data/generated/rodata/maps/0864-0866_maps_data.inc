@@ -1813,20 +1813,57 @@ gTrickBagAffineAnims: @ 0x0856E2BC
 	.globl gTrickBagSpriteTemplate
 gTrickBagSpriteTemplate: @ 0x0856E2CC
 	rodata_sprite_template 0x27F0, 0x27F0, gBattleAnimOam_AffineOff_ObjNormal_64x64, gPresentAnims, 0, gTrickBagAffineAnims, AnimTrickBag
-	@ pret/pokeemerald-jp direct xref for 0x0856E2E4: battle_anim_effects_1.s: AnimTrickBagStep2
-	.globl gBattleAnimEffects1Data_0856E2E4
-gBattleAnimEffects1Data_0856E2E4: @ 0x0856E2E4
-	@ analyzed canonical ROM range 0x0856E2E4-0x0856E35B
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x78
-	.2byte 0x1805, 0x0001, 0x0004, 0x1008, 0x00FF, 0x0002, 0x1008, 0x0001
-	.2byte 0x0002, 0x1008, 0x0001, 0x0002, 0x1008, 0x0001, 0x0010, 0x0000
-	.2byte 0x007F, 0x0000, 0x001C, 0x0001, 0xFFFF, 0x0000, 0x0020, 0x0001
-	.2byte 0xFFFF, 0x0000, 0x0014, 0x0001, 0xFFFF, 0x0000, 0x001C, 0x0041
-	.2byte 0xFFFF, 0x0000, 0x0010, 0x0001, 0xFFFF, 0x0000, 0x0010, 0x0041
-	.2byte 0xFFFF, 0x0000, 0x001C, 0x0001, 0xFFFF, 0x0000, 0xE308, 0x0856
-	.2byte 0xE310, 0x0856, 0xE318, 0x0856, 0xE320, 0x0856, 0xE328, 0x0856
-	.2byte 0xE330, 0x0856, 0xE338, 0x0856
+	.globl gTrickBagSwingSteps
+gTrickBagSwingSteps: @ 0x0856E2E4
+	.byte 5, 24, 1
+	.byte 0, 4, 0
+	.byte 8, 16, -1
+	.byte 0, 2, 0
+	.byte 8, 16, 1
+	.byte 0, 2, 0
+	.byte 8, 16, 1
+	.byte 0, 2, 0
+	.byte 8, 16, 1
+	.byte 0, 16, 0
+	.byte 0, 0, 0x7F
+	.byte 0, 0, 0
+	.globl gTrickBagItemAnim_Frame28
+gTrickBagItemAnim_Frame28: @ 0x0856E308
+	rodata_anim_frame 28, 1
+	rodata_anim_end
+	.globl gTrickBagItemAnim_Frame32
+gTrickBagItemAnim_Frame32: @ 0x0856E310
+	rodata_anim_frame 32, 1
+	rodata_anim_end
+	.globl gTrickBagItemAnim_Frame20
+gTrickBagItemAnim_Frame20: @ 0x0856E318
+	rodata_anim_frame 20, 1
+	rodata_anim_end
+	.globl gTrickBagItemAnim_Frame28Flipped
+gTrickBagItemAnim_Frame28Flipped: @ 0x0856E320
+	rodata_anim_frame 28, 1, 1
+	rodata_anim_end
+	.globl gTrickBagItemAnim_Frame16
+gTrickBagItemAnim_Frame16: @ 0x0856E328
+	rodata_anim_frame 16, 1
+	rodata_anim_end
+	.globl gTrickBagItemAnim_Frame16Flipped
+gTrickBagItemAnim_Frame16Flipped: @ 0x0856E330
+	rodata_anim_frame 16, 1, 1
+	rodata_anim_end
+	.globl gTrickBagItemAnim_Frame28_2
+gTrickBagItemAnim_Frame28_2: @ 0x0856E338
+	rodata_anim_frame 28, 1
+	rodata_anim_end
+	.globl gTrickBagItemAnims
+gTrickBagItemAnims: @ 0x0856E340
+	semantic_anim_table_entry gTrickBagItemAnim_Frame28
+	semantic_anim_table_entry gTrickBagItemAnim_Frame32
+	semantic_anim_table_entry gTrickBagItemAnim_Frame20
+	semantic_anim_table_entry gTrickBagItemAnim_Frame28Flipped
+	semantic_anim_table_entry gTrickBagItemAnim_Frame16
+	semantic_anim_table_entry gTrickBagItemAnim_Frame16Flipped
+	semantic_anim_table_entry gTrickBagItemAnim_Frame28_2
 	@ pret/pokeemerald-jp direct xref for 0x0856E35C: battle_anim_effects_1.s: sub_08100810, sub_08100D74
 	.globl gBattleAnimEffects1Data_0856E35C
 gBattleAnimEffects1Data_0856E35C: @ 0x0856E35C

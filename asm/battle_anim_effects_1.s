@@ -2969,7 +2969,7 @@ _0810074C:
 	strh r0, [r4, #0x2e]
 	b _081007C6
 	.align 2, 0
-_08100758: .4byte gBattleAnimEffects1Data_0856E2E4
+_08100758: .4byte gTrickBagSwingSteps
 _0810075C: .4byte 0x081007CD
 _08100760:
 	adds r0, r2, #1
