@@ -483,17 +483,14 @@ gLilycoveLadyGfxIds: @ 0x085D3ADE
 	.2byte 10 @ Contest Lady
 	.globl gQuizLadyQuestions
 	.globl gQuizLadyQuestion0
-	.globl gUnknownEasyChatWordList_5D3AE4
-gQuizLadyQuestions:
-gQuizLadyQuestion0:
-gUnknownEasyChatWordList_5D3AE4: @ 0x085D3AE4
+gQuizLadyQuestions: @ 0x085D3AE4
+gQuizLadyQuestion0: @ 0x085D3AE4
 	quiz_lady_question 0, 0x0602, 0x1413, 0x020E, 0x0E1D, 0x1E1F, 0x0C03, 0x2A70, 0x2ADA, 0x013A
 	.globl gQuizLadyQuestion1
 gQuizLadyQuestion1: @ 0x085D3AF6
 	quiz_lady_question 1, 0x0170, 0x0E1D, 0x1E21, 0x020E, 0x0E08, 0x0204, 0x1628, 0x0C03, 0xFFFF
 	.globl gQuizLadyQuestion2
-gQuizLadyQuestion2:
-gUnknownEasyChatWordList_5D3B08: @ 0x085D3B08
+gQuizLadyQuestion2: @ 0x085D3B08
 	quiz_lady_question 2, 0x0209, 0x0204, 0x1628, 0x020E, 0x1E1F, 0x0C03, 0x017F, 0x2A43, 0x016D
 	.globl gQuizLadyQuestion3
 gQuizLadyQuestion3: @ 0x085D3B1A
