@@ -4204,7 +4204,7 @@ _081010DA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081010E0: .4byte gBattleAnimEffects1Data_0856E45C
+_081010E0: .4byte gMagicalLeafBlendColors
 _081010E4: .4byte 0x020380BE
 	thumb_func_end sub_08101014
 

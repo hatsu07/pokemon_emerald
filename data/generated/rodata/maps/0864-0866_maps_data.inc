@@ -1915,13 +1915,15 @@ gSilverWindParticleSpriteTemplate_Medium: @ 0x0856E42C
 	.globl gSilverWindParticleSpriteTemplate_Large
 gSilverWindParticleSpriteTemplate_Large: @ 0x0856E444
 	rodata_sprite_template 0x281F, 0x281F, gBattleAnimOam_084FD078, gDummySpriteAnimTable, 0, gSilverWindParticleAffineAnims_Large, sub_08100E90
-	@ pret/pokeemerald-jp direct xref for 0x0856E45C: battle_anim_effects_1.s: sub_08101014
-	.globl gBattleAnimEffects1Data_0856E45C
-gBattleAnimEffects1Data_0856E45C: @ 0x0856E45C
-	@ analyzed canonical ROM range 0x0856E45C-0x0856E8B3
+	.globl gMagicalLeafBlendColors
+gMagicalLeafBlendColors: @ 0x0856E45C
+	.2byte 0x001F, 0x027F, 0x03FF, 0x03E0, 0x7DC5, 0x7D56, 0x7EB6
+	.2byte 0
+	.globl gBattleAnimEffects1Data_0856E46C
+gBattleAnimEffects1Data_0856E46C: @ 0x0856E46C
+	@ analyzed canonical ROM range 0x0856E46C-0x0856E8B3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x458
-	.2byte 0x001F, 0x027F, 0x03FF, 0x03E0, 0x7DC5, 0x7D56, 0x7EB6, 0x0000
+	@ ANALYSIS: RAW_BLOCK size=0x448
 	.2byte 0x281A, 0x281A, 0xD078, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000
 	.2byte 0xF310, 0x082B, 0x10E9, 0x0810, 0x0040, 0x0003, 0x0050, 0x0003
 	.2byte 0x0060, 0x0003, 0x0070, 0x0006, 0xFFFF, 0x0000, 0x0040, 0x0043
