@@ -10,25 +10,26 @@ gWaterData_08570C04: @ 0x08570C04
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_08107A6C @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x44
-	.4byte 0xFFFBFFFB @ +0x18
-	.4byte 0x00000A00 @ +0x1C
-	.4byte 0x00050005 @ +0x20
-	.4byte 0x00000A00 @ +0x24
-	.4byte 0x00007FFE @ +0x28
-	.4byte 0 @ +0x2C
-	.4byte 0x08570C1C @ +0x30
-	.4byte 0x00010000 @ +0x34
-	.4byte 0x00050004 @ +0x38
-	.4byte 0x00050008 @ +0x3C
-	.4byte 0x0000FFFF @ +0x40
-	.4byte 0x08570C38 @ +0x44
-	.4byte 0x27A227A2 @ +0x48
-	.4byte 0x084FD198 @ +0x4C
-	.4byte 0x08570C48 @ +0x50
-	.4byte 0 @ +0x54
-	.4byte 0x08570C34 @ +0x58
-	.4byte sub_08107AB0 @ +0x5C
+	.globl gBubbleAffineAnim
+gBubbleAffineAnim: @ 0x08570C1C
+	rodata_affine_anim_frame -5, -5, 0x0A00, 0
+	rodata_affine_anim_frame 5, 5, 0x0A00, 0
+	semantic_affine_animcmd_jump 0
+	.globl gBubbleAffineAnims
+gBubbleAffineAnims: @ 0x08570C34
+	semantic_affine_anim_table_entry gBubbleAffineAnim
+	.globl gBubbleAnim
+gBubbleAnim: @ 0x08570C38
+	rodata_anim_frame 0, 1
+	rodata_anim_frame 4, 5
+	rodata_anim_frame 8, 5
+	rodata_anim_end
+	.globl gBubbleAnims
+gBubbleAnims: @ 0x08570C48
+	semantic_anim_table_entry gBubbleAnim
+	.globl gBubbleSpriteTemplate
+gBubbleSpriteTemplate: @ 0x08570C4C
+	rodata_sprite_template 0x27A2, 0x27A2, gBattleAnimOam_AffineOn_ObjBlend_8x8, gBubbleAnims, 0, gBubbleAffineAnims, sub_08107AB0
 	@ ANALYSIS: RAW_BLOCK size=0x48
 	.4byte 0x00010000 @ +0x60
 	.4byte 0x0000FFFF @ +0x64

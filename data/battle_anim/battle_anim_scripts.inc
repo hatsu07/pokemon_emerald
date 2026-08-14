@@ -1835,22 +1835,22 @@ BattleAnimScript_0827A6FF: @ 0x0827A6FF
 	ba_blendoff
 	ba_end
 BattleAnimScript_0827A739: @ 0x0827A739
-	ba_createsprite 0x08570C4C, ANIM_ATTACKER, 2, 18, 0, 35, 70, 0, 256, 50
+	ba_createsprite gBubbleSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 35, 70, 0, 256, 50
 	ba_playsewithpan 0x007C, SOUND_PAN_ATTACKER
 	ba_delay 3
-	ba_createsprite 0x08570C4C, ANIM_ATTACKER, 2, 18, 0, 20, 40, -10, 256, 50
+	ba_createsprite gBubbleSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 20, 40, -10, 256, 50
 	ba_playsewithpan 0x007C, SOUND_PAN_ATTACKER
 	ba_delay 3
-	ba_createsprite 0x08570C4C, ANIM_ATTACKER, 2, 18, 0, 10, -60, 0, 256, 50
+	ba_createsprite gBubbleSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 10, -60, 0, 256, 50
 	ba_playsewithpan 0x007C, SOUND_PAN_ATTACKER
 	ba_delay 3
-	ba_createsprite 0x08570C4C, ANIM_ATTACKER, 2, 18, 0, 15, -15, 10, 256, 50
+	ba_createsprite gBubbleSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 15, -15, 10, 256, 50
 	ba_playsewithpan 0x007C, SOUND_PAN_ATTACKER
 	ba_delay 3
-	ba_createsprite 0x08570C4C, ANIM_ATTACKER, 2, 18, 0, 30, 10, -10, 256, 50
+	ba_createsprite gBubbleSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 30, 10, -10, 256, 50
 	ba_playsewithpan 0x007C, SOUND_PAN_ATTACKER
 	ba_delay 3
-	ba_createsprite 0x08570C4C, ANIM_ATTACKER, 2, 18, 0, 25, -30, 10, 256, 50
+	ba_createsprite gBubbleSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 25, -30, 10, 256, 50
 	ba_playsewithpan 0x007C, SOUND_PAN_ATTACKER
 	ba_delay 3
 	ba_return
@@ -4584,27 +4584,27 @@ Move_BUBBLE:
 	ba_monbg ANIM_TARGET
 	ba_setalpha 12, 8
 	ba_delay 1
-	ba_createsprite 0x08570C4C, ANIM_ATTACKER, 2, 18, 0, 15, -15, 10, 128, 100
+	ba_createsprite gBubbleSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 15, -15, 10, 128, 100
 	ba_playsewithpan 0x007C, SOUND_PAN_ATTACKER
 	ba_waitplaysewithpan 0x007D, SOUND_PAN_TARGET, 100
 	ba_delay 6
-	ba_createsprite 0x08570C4C, ANIM_ATTACKER, 2, 18, 0, 35, 37, 40, 128, 100
+	ba_createsprite gBubbleSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 35, 37, 40, 128, 100
 	ba_playsewithpan 0x007C, SOUND_PAN_ATTACKER
 	ba_waitplaysewithpan 0x007D, SOUND_PAN_TARGET, 100
 	ba_delay 6
-	ba_createsprite 0x08570C4C, ANIM_ATTACKER, 2, 18, 0, 10, -37, 30, 128, 100
+	ba_createsprite gBubbleSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 10, -37, 30, 128, 100
 	ba_playsewithpan 0x007C, SOUND_PAN_ATTACKER
 	ba_waitplaysewithpan 0x007D, SOUND_PAN_TARGET, 100
 	ba_delay 6
-	ba_createsprite 0x08570C4C, ANIM_ATTACKER, 2, 18, 0, 30, 10, 15, 128, 100
+	ba_createsprite gBubbleSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 30, 10, 15, 128, 100
 	ba_playsewithpan 0x007C, SOUND_PAN_ATTACKER
 	ba_waitplaysewithpan 0x007D, SOUND_PAN_TARGET, 100
 	ba_delay 6
-	ba_createsprite 0x08570C4C, ANIM_ATTACKER, 2, 18, 0, 20, 33, 20, 128, 100
+	ba_createsprite gBubbleSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 20, 33, 20, 128, 100
 	ba_playsewithpan 0x007C, SOUND_PAN_ATTACKER
 	ba_waitplaysewithpan 0x007D, SOUND_PAN_TARGET, 100
 	ba_delay 6
-	ba_createsprite 0x08570C4C, ANIM_ATTACKER, 2, 18, 0, 25, -30, 10, 128, 100
+	ba_createsprite gBubbleSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 25, -30, 10, 128, 100
 	ba_playsewithpan 0x007C, SOUND_PAN_ATTACKER
 	ba_waitplaysewithpan 0x007D, SOUND_PAN_TARGET, 100
 	ba_waitforvisualfinish
