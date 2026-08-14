@@ -134,6 +134,12 @@
     .4byte 0
 .endm
 
+.macro semantic_affine_animcmd_loop count:req
+    .2byte 0x7FFD
+    .2byte \count
+    .4byte 0
+.endm
+
 .macro semantic_affine_anim_table_entry anim:req
     .4byte \anim
 .endm

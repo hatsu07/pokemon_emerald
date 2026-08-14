@@ -4211,11 +4211,11 @@ Move_ICE_PUNCH:
 Move_REST:
 	ba_playsewithpan 0x00C5, SOUND_PAN_ATTACKER
 	ba_loadspritegfx 0x27F4
-	ba_createsprite 0x0856E86C, ANIM_ATTACKER, 2, 4, -10, 16, 0, 0
+	ba_createsprite gSleepZSpriteTemplate, ANIM_ATTACKER, 2, 4, -10, 16, 0, 0
 	ba_delay 20
-	ba_createsprite 0x0856E86C, ANIM_ATTACKER, 2, 4, -10, 16, 0, 0
+	ba_createsprite gSleepZSpriteTemplate, ANIM_ATTACKER, 2, 4, -10, 16, 0, 0
 	ba_delay 20
-	ba_createsprite 0x0856E86C, ANIM_ATTACKER, 2, 4, -10, 16, 0, 0
+	ba_createsprite gSleepZSpriteTemplate, ANIM_ATTACKER, 2, 4, -10, 16, 0, 0
 	ba_waitforvisualfinish
 	ba_end
 Move_CONFUSION:
@@ -9538,9 +9538,9 @@ Status_Infatuation:
 Status_Sleep:
 	ba_loadspritegfx 0x27F4
 	ba_playsewithpan 0x00C5, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856E86C, ANIM_ATTACKER, 2, 4, -10, 16, 0, 0
+	ba_createsprite gSleepZSpriteTemplate, ANIM_ATTACKER, 2, 4, -10, 16, 0, 0
 	ba_delay 30
-	ba_createsprite 0x0856E86C, ANIM_ATTACKER, 2, 4, -10, 16, 0, 0
+	ba_createsprite gSleepZSpriteTemplate, ANIM_ATTACKER, 2, 4, -10, 16, 0, 0
 	ba_end
 Status_Paralysis:
 	ba_loadspritegfx 0x271B

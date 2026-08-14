@@ -2153,21 +2153,42 @@ gBattleAnimEffects1Anims_0856E7D8: @ 0x0856E7D8
 	.globl gBattleAnimEffects1SpriteTemplate_2730
 gBattleAnimEffects1SpriteTemplate_2730: @ 0x0856E7E0
 	rodata_sprite_template 0x2730, 0x2730, gBattleAnimOam_AffineOff_ObjNormal_16x16, gBattleAnimEffects1Anims_0856E7D8, 0, gDummySpriteAffineAnimTable, sub_08101C90
-	.globl gBattleAnimEffects1Data_0856E7F8
-gBattleAnimEffects1Data_0856E7F8: @ 0x0856E7F8
-	@ analyzed canonical ROM range 0x0856E7F8-0x0856E8B3
+	.globl gSleepZAnim
+gSleepZAnim: @ 0x0856E7F8
+	rodata_anim_frame 0, 40
+	rodata_anim_end
+	.globl gSleepZAnims
+gSleepZAnims: @ 0x0856E800
+	semantic_anim_table_entry gSleepZAnim
+	.globl gSleepZAffineAnim_Right
+gSleepZAffineAnim_Right: @ 0x0856E804
+	semantic_affine_animcmd_frame 20, 20, 0xE2, 0
+	semantic_affine_animcmd_frame 8, 8, 1, 24
+	rodata_affine_anim_end
+	semantic_affine_animcmd_loop 0
+	semantic_affine_animcmd_frame 0, 0, 1, 24
+	semantic_affine_animcmd_loop 10
+	.globl gSleepZAffineAnim_Left
+gSleepZAffineAnim_Left: @ 0x0856E834
+	semantic_affine_animcmd_frame 20, 20, 0x1E, 0
+	semantic_affine_animcmd_frame 8, 8, 0xFF, 24
+	rodata_affine_anim_end
+	semantic_affine_animcmd_loop 0
+	semantic_affine_animcmd_frame 0, 0, 0xFF, 24
+	semantic_affine_animcmd_loop 10
+	.globl gSleepZAffineAnims
+gSleepZAffineAnims: @ 0x0856E864
+	semantic_affine_anim_table_entry gSleepZAffineAnim_Right
+	semantic_affine_anim_table_entry gSleepZAffineAnim_Left
+	.globl gSleepZSpriteTemplate
+gSleepZSpriteTemplate: @ 0x0856E86C
+	rodata_sprite_template 0x27F4, 0x27F4, gBattleAnimOam_AffineOff_ObjNormal_64x64, gSleepZAnims, 0, gSleepZAffineAnims, sub_08101D44
+	.globl gBattleAnimEffects1Data_0856E884
+gBattleAnimEffects1Data_0856E884: @ 0x0856E884
+	@ analyzed canonical ROM range 0x0856E884-0x0856E8B3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xBC
-	.2byte 0x0000, 0x0028
-	.2byte 0xFFFF, 0x0000, 0xE7F8, 0x0856, 0x0014, 0x0014, 0x00E2, 0x0000
-	.2byte 0x0008, 0x0008, 0x1801, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
-	.2byte 0x7FFD, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x1801, 0x0000
-	.2byte 0x7FFD, 0x000A, 0x0000, 0x0000, 0x0014, 0x0014, 0x001E, 0x0000
-	.2byte 0x0008, 0x0008, 0x18FF, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
-	.2byte 0x7FFD, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x18FF, 0x0000
-	.2byte 0x7FFD, 0x000A, 0x0000, 0x0000, 0xE804, 0x0856, 0xE834, 0x0856
-	.2byte 0x27F4, 0x27F4, 0xD080, 0x084F, 0xE800, 0x0856, 0x0000, 0x0000
-	.2byte 0xE864, 0x0856, 0x1D45, 0x0810, 0x271E, 0x271E, 0xD020, 0x084F
+	@ ANALYSIS: RAW_BLOCK size=0x30
+	.2byte 0x271E, 0x271E, 0xD020, 0x084F
 	.2byte 0xF304, 0x082B, 0x0000, 0x0000, 0xF310, 0x082B, 0x1DFD, 0x0810
 	.2byte 0x271E, 0x271E, 0xD018, 0x084F, 0xF304, 0x082B, 0x0000, 0x0000
 	.2byte 0xF310, 0x082B, 0x20E9, 0x0810
