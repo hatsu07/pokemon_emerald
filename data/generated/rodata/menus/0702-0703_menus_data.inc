@@ -1,3 +1,5 @@
+	.include "asm/macros/semantic_raw_structs.inc"
+
 	@ pret/pokeemerald-jp direct xref for 0x084F89D0: tileset_anims.s: QueueAnimTiles_Sootopolis_StormyWater
 	.globl gTilesetAnims_Sootopolis_StormyWater
 gTilesetAnims_Sootopolis_StormyWater: @ 0x084F89D0
@@ -2065,48 +2067,67 @@ gBattleAnimScriptCmdTable: @ 0x084FE5A4
 	.globl sScriptCmdTable
 	.set sScriptCmdTable, gBattleAnimScriptCmdTable
 
+	@ Battle animation battler coordinates.
+	.globl sBattlerCoords
+sBattlerCoords: @ 0x084FE664
+	@ Single battle.
+	semantic_ucoords8 72, 80
+	semantic_ucoords8 176, 40
+	semantic_ucoords8 48, 40
+	semantic_ucoords8 112, 80
+	@ Double battle.
+	semantic_ucoords8 32, 80
+	semantic_ucoords8 200, 40
+	semantic_ucoords8 90, 88
+	semantic_ucoords8 152, 32
+	.if (. - sBattlerCoords) != 0x20
+	.error "sBattlerCoords size mismatch"
+	.endif
 	.globl gBattleAnimMonsData_084FE664
-gBattleAnimMonsData_084FE664: @ 0x084FE664
-	@ analyzed canonical ROM range 0x084FE664-0x084FE683
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	.byte 0x48, 0x50, 0x00, 0x00, 0xB0, 0x28, 0x00, 0x00, 0x30, 0x28, 0x00, 0x00, 0x70, 0x50, 0x00, 0x00
-	.byte 0x20, 0x50, 0x00, 0x00, 0xC8, 0x28, 0x00, 0x00, 0x5A, 0x58, 0x00, 0x00, 0x98, 0x20, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x084FE684: battle_anim_mons.s: GetBattlerSpriteCoordAttr, GetBattlerYDelta; battle_main.s: SpriteCB_FaintOpponentMon
+	.set gBattleAnimMonsData_084FE664, sBattlerCoords
+
+	@ Castform front-sprite dimensions and Y offsets for Normal/Fire/Water/Ice.
+	.globl gCastformFrontSpriteCoords
+gCastformFrontSpriteCoords: @ 0x084FE684
+	semantic_mon_coords 32, 32, 17
+	semantic_mon_coords 48, 48, 9
+	semantic_mon_coords 32, 48, 9
+	semantic_mon_coords 64, 48, 8
+	.if (. - gCastformFrontSpriteCoords) != 0x10
+	.error "gCastformFrontSpriteCoords size mismatch"
+	.endif
 	.globl gMenuU16Table_Rom_4FE684
-gMenuU16Table_Rom_4FE684: @ 0x084FE684
-	@ analyzed canonical ROM range 0x084FE684-0x084FE693
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.2byte 0x1144, 0x0000, 0x0966, 0x0000, 0x0946, 0x0000, 0x0886, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x084FE694: battle_anim_mons.s: GetBattlerElevation, GetBattlerYDeltaFromSpriteId
+	.set gMenuU16Table_Rom_4FE684, gCastformFrontSpriteCoords
+
+	@ Castform opponent-side sprite elevation for Normal/Fire/Water/Ice.
+	.globl sCastformElevations
+sCastformElevations: @ 0x084FE694
+	.byte 13, 14, 13, 13
+	.if (. - sCastformElevations) != 0x4
+	.error "sCastformElevations size mismatch"
+	.endif
 	.globl gBattleAnimMonsData_084FE694
-gBattleAnimMonsData_084FE694: @ 0x084FE694
-	@ analyzed canonical ROM range 0x084FE694-0x084FE697
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.byte 0x0D, 0x0E, 0x0D, 0x0D
+	.set gBattleAnimMonsData_084FE694, sCastformElevations
+
+	@ Castform back-sprite Y offsets for Normal/Fire/Water/Ice.
+	.globl sCastformBackSpriteYCoords
+sCastformBackSpriteYCoords: @ 0x084FE698
+	.byte 0, 0, 0, 0
+	.if (. - sCastformBackSpriteYCoords) != 0x4
+	.error "sCastformBackSpriteYCoords size mismatch"
+	.endif
 	.globl gMenuRecord_Rom_4FE698
-gMenuRecord_Rom_4FE698: @ 0x084FE698
-	.space 0x4, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x084FE69C: battle_anim_mons.s: sub_080A7C5C
+	.set gMenuRecord_Rom_4FE698, sCastformBackSpriteYCoords
+
+	@ Placeholders for Pokemon sprites created by move effects such as Role Play / Snatch.
+	.set TAG_MOVE_EFFECT_MON_1, 55125
+	.set TAG_MOVE_EFFECT_MON_2, 55126
+	.globl sSpriteTemplates_MoveEffectMons
+sSpriteTemplates_MoveEffectMons: @ 0x084FE69C
+	semantic_sprite_template TAG_MOVE_EFFECT_MON_1, TAG_MOVE_EFFECT_MON_1, gOamData_AffineNormal_ObjNormal_64x64, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	semantic_sprite_template TAG_MOVE_EFFECT_MON_2, TAG_MOVE_EFFECT_MON_2, gOamData_AffineNormal_ObjNormal_64x64, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	.if (. - sSpriteTemplates_MoveEffectMons) != 0x30
+	.error "sSpriteTemplates_MoveEffectMons size mismatch"
+	.endif
 	.globl gBattleAnimMonsData_084FE69C
-gBattleAnimMonsData_084FE69C: @ 0x084FE69C
-	@ analyzed canonical ROM range 0x084FE69C-0x084FE6CB
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0xD755D755 @ +0x0
-	.4byte gOamData_AffineNormal_ObjNormal_64x64 @ +0x4
-	.4byte gDummySpriteAnimTable @ +0x8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xC
-	.4byte gDummySpriteAffineAnimTable @ +0x10
-	.4byte SpriteCallbackDummy @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0xD756D756 @ +0x18
-	.4byte gOamData_AffineNormal_ObjNormal_64x64 @ +0x1C
-	.4byte gDummySpriteAnimTable @ +0x20
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x24
-	.4byte gDummySpriteAffineAnimTable @ +0x28
-	.4byte SpriteCallbackDummy @ +0x2C
+	.set gBattleAnimMonsData_084FE69C, sSpriteTemplates_MoveEffectMons

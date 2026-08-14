@@ -7569,7 +7569,7 @@ _08165A7C: .4byte 0x00000CA9
 _08165A80: .4byte 0x0203B954
 _08165A84: .4byte gMoveU8Table_Rom_5B4A10
 _08165A88: .4byte 0x0203B958
-_08165A8C: .4byte gBattleU16Table_Rom_5B8700
+_08165A8C: .4byte gBattleFrontierMons
 _08165A90:
 	bl SetTentPtrsGetLevel
 _08165A94:
@@ -7782,7 +7782,7 @@ _08165C0E:
 _08165C14: .4byte 0x0203B954
 _08165C18: .4byte gMoveU8Table_Rom_5B4A10
 _08165C1C: .4byte 0x0203B958
-_08165C20: .4byte gBattleU16Table_Rom_5B8700
+_08165C20: .4byte gBattleFrontierMons
 	thumb_func_end SetTentPtrsGetLevel
 
 	thumb_func_start sub_08165C24

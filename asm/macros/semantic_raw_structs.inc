@@ -160,4 +160,29 @@
     .2byte ((\shape) & 3) | (((\size) & 3) << 2) | (((\tile_offset) & 0x3FF) << 4) | (((\priority) & 3) << 14)
 .endm
 
+
+@ struct UCoords8 as emitted by the JP build (u8 x, u8 y, 2-byte ABI padding).
+.macro semantic_ucoords8 x:req, y:req
+    .byte \x, \y
+    .2byte 0
+.endm
+
+@ struct MonCoords as emitted by the JP build.
+@ size packs width/8 in the high nibble and height/8 in the low nibble.
+.macro semantic_mon_coords width:req, height:req, y_offset:req
+    .byte (((\width) / 8) << 4) | ((\height) / 8)
+    .byte \y_offset
+    .2byte 0
+.endm
+
+@ struct FacilityMon as emitted by the JP build.
+@ u16 species; u16 moves[4]; u8 itemTableId; u8 evSpread; u8 nature;
+@ The original ABI contributes 3 trailing padding bytes (16-byte stride).
+.macro semantic_facility_mon species:req, move1:req, move2:req, move3:req, move4:req, item_table_id:req, ev_spread:req, nature:req
+    .2byte \species
+    .2byte \move1, \move2, \move3, \move4
+    .byte \item_table_id, \ev_spread, \nature
+    .byte 0, 0, 0
+.endm
+
 .endif @ SEMANTIC_RAW_STRUCTS_INCLUDED

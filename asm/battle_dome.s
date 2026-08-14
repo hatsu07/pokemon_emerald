@@ -12340,7 +12340,7 @@ InitDomeFacilityTrainersAndMons: @ 0x08194948
 	bx lr
 	.align 2, 0
 _08194958: .4byte 0x0203B958
-_0819495C: .4byte gBattleU16Table_Rom_5B8700
+_0819495C: .4byte gBattleFrontierMons
 _08194960: .4byte 0x0203B954
 _08194964: .4byte gMoveU8Table_Rom_5B4A10
 	thumb_func_end InitDomeFacilityTrainersAndMons

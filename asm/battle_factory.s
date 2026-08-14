@@ -722,7 +722,7 @@ SetRentalsToOpponentParty: @ 0x081A6164
 _081A6184: .4byte 0x03005AF0
 _081A6188: .4byte 0x00000CA9
 _081A618C: .4byte 0x0203B958
-_081A6190: .4byte gBattleU16Table_Rom_5B8700
+_081A6190: .4byte gBattleFrontierMons
 _081A6194:
 	ldr r1, _081A6238
 	ldr r0, _081A623C
@@ -1200,7 +1200,7 @@ _081A6546:
 	bx r0
 	.align 2, 0
 _081A6558: .4byte 0x0203B958
-_081A655C: .4byte gBattleU16Table_Rom_5B8700
+_081A655C: .4byte gBattleFrontierMons
 _081A6560: .4byte 0x02037282
 _081A6564: .4byte 0x03005AF0
 _081A6568: .4byte 0x00000E78
@@ -1305,7 +1305,7 @@ _081A6638: .4byte 0x00000CA9
 _081A663C: .4byte 0x000040CE
 _081A6640: .4byte 0x00000DE2
 _081A6644: .4byte 0x0203B958
-_081A6648: .4byte gBattleU16Table_Rom_5B8700
+_081A6648: .4byte gBattleFrontierMons
 _081A664C:
 	movs r5, #0
 	str r5, [sp, #0x28]
@@ -1564,7 +1564,7 @@ _081A681C:
 	b _081A684A
 	.align 2, 0
 _081A6830: .4byte 0x0203B958
-_081A6834: .4byte gBattleU16Table_Rom_5B8700
+_081A6834: .4byte gBattleFrontierMons
 _081A6838: .4byte 0x02037290
 _081A683C: .4byte 0x03005FD8
 _081A6840: .4byte 0x082F0D54
@@ -1697,7 +1697,7 @@ _081A691E:
 	bx r0
 	.align 2, 0
 _081A6928: .4byte 0x0203B958
-_081A692C: .4byte gBattleU16Table_Rom_5B8700
+_081A692C: .4byte gBattleFrontierMons
 _081A6930: .4byte 0x03005FD8
 _081A6934: .4byte 0x02037290
 _081A6938: .4byte 0x085DD7F8
@@ -1794,7 +1794,7 @@ RestorePlayerPartyHeldItems: @ 0x081A69B4
 _081A69D0: .4byte 0x03005AF0
 _081A69D4: .4byte 0x00000CA9
 _081A69D8: .4byte 0x0203B958
-_081A69DC: .4byte gBattleU16Table_Rom_5B8700
+_081A69DC: .4byte gBattleFrontierMons
 _081A69E0:
 	ldr r1, _081A6A2C
 	ldr r0, _081A6A30

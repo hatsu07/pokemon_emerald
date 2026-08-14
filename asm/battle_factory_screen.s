@@ -2073,7 +2073,7 @@ _0819B1F8: .4byte 0x03005AF0
 _0819B1FC: .4byte 0x00000CA9
 _0819B200: .4byte 0x00000DE2
 _0819B204: .4byte 0x0203B958
-_0819B208: .4byte gBattleU16Table_Rom_5B8700
+_0819B208: .4byte gBattleFrontierMons
 _0819B20C: .4byte 0x03001278
 _0819B210:
 	ldr r0, [sp, #0x18]

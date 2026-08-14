@@ -5865,7 +5865,7 @@ _08039628:
 	b _08039664
 	.align 2, 0
 _08039640: .4byte 0x00000181
-_08039644: .4byte gMenuU16Table_Rom_4FE684
+_08039644: .4byte gCastformFrontSpriteCoords
 _08039648: .4byte 0x02024188
 _0803964C:
 	movs r0, #0xce
