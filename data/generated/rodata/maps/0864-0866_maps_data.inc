@@ -1946,17 +1946,29 @@ gSlamImpactSpriteTemplate: @ 0x0856E4B4
 	.globl gVineWhipImpactSpriteTemplate
 gVineWhipImpactSpriteTemplate: @ 0x0856E4CC
 	rodata_sprite_template 0x282F, 0x282F, gBattleAnimOam_AffineOff_ObjNormal_32x32, gSlamVineWhipAnims, 0, gDummySpriteAffineAnimTable, sub_081012A0
-	.globl gBattleAnimEffects1Data_0856E4E4
-gBattleAnimEffects1Data_0856E4E4: @ 0x0856E4E4
-	@ analyzed canonical ROM range 0x0856E4E4-0x0856E8B3
+	.globl gBattleAnimEffects1Anim_0856E4E4
+gBattleAnimEffects1Anim_0856E4E4: @ 0x0856E4E4
+	rodata_anim_frame 0, 4
+	rodata_anim_frame 16, 4
+	rodata_anim_frame 32, 4
+	rodata_anim_frame 48, 4
+	rodata_anim_frame 64, 5
+	rodata_anim_end
+	.globl gBattleAnimEffects1Anims_0856E4FC
+gBattleAnimEffects1Anims_0856E4FC: @ 0x0856E4FC
+	semantic_anim_table_entry gBattleAnimEffects1Anim_0856E4E4
+	.globl gBattleAnimEffects1SpriteTemplate_2725
+gBattleAnimEffects1SpriteTemplate_2725: @ 0x0856E500
+	rodata_sprite_template 0x2725, 0x2725, gBattleAnimOam_AffineOff_ObjNormal_32x32, gBattleAnimEffects1Anims_0856E4FC, 0, gDummySpriteAffineAnimTable, sub_08101248
+	.globl gBattleAnimEffects1SpriteTemplate_2726
+gBattleAnimEffects1SpriteTemplate_2726: @ 0x0856E518
+	rodata_sprite_template 0x2726, 0x2726, gBattleAnimOam_AffineOff_ObjNormal_32x32, gBattleAnimEffects1Anims_0856E4FC, 0, gDummySpriteAffineAnimTable, sub_08101248
+	.globl gBattleAnimEffects1Data_0856E530
+gBattleAnimEffects1Data_0856E530: @ 0x0856E530
+	@ analyzed canonical ROM range 0x0856E530-0x0856E8B3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x3D0
-	.2byte 0x0000, 0x0004, 0x0010, 0x0004
-	.2byte 0x0020, 0x0004, 0x0030, 0x0004, 0x0040, 0x0005, 0xFFFF, 0x0000
-	.2byte 0xE4E4, 0x0856, 0x2725, 0x2725, 0xD020, 0x084F, 0xE4FC, 0x0856
-	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x1249, 0x0810, 0x2726, 0x2726
-	.2byte 0xD020, 0x084F, 0xE4FC, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B
-	.2byte 0x1249, 0x0810, 0x0100, 0x0100, 0x0000, 0x0000, 0x7FFF, 0x0000
+	@ ANALYSIS: RAW_BLOCK size=0x384
+	.2byte 0x0100, 0x0100, 0x0000, 0x0000, 0x7FFF, 0x0000
 	.2byte 0x0000, 0x0000, 0x0100, 0x0100, 0x0020, 0x0000, 0x7FFF, 0x0000
 	.2byte 0x0000, 0x0000, 0x0100, 0x0100, 0x0040, 0x0000, 0x7FFF, 0x0000
 	.2byte 0x0000, 0x0000, 0x0100, 0x0100, 0x0060, 0x0000, 0x7FFF, 0x0000
