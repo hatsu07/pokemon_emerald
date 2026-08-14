@@ -1963,23 +1963,57 @@ gBattleAnimEffects1SpriteTemplate_2725: @ 0x0856E500
 	.globl gBattleAnimEffects1SpriteTemplate_2726
 gBattleAnimEffects1SpriteTemplate_2726: @ 0x0856E518
 	rodata_sprite_template 0x2726, 0x2726, gBattleAnimOam_AffineOff_ObjNormal_32x32, gBattleAnimEffects1Anims_0856E4FC, 0, gDummySpriteAffineAnimTable, sub_08101248
-	.globl gBattleAnimEffects1Data_0856E530
-gBattleAnimEffects1Data_0856E530: @ 0x0856E530
-	@ analyzed canonical ROM range 0x0856E530-0x0856E8B3
+	.globl gBattleAnimEffects1AffineAnim_Rot00
+gBattleAnimEffects1AffineAnim_Rot00: @ 0x0856E530
+	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x00, 0x00
+	rodata_affine_anim_end
+	.globl gBattleAnimEffects1AffineAnim_Rot20
+gBattleAnimEffects1AffineAnim_Rot20: @ 0x0856E540
+	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x20, 0x00
+	rodata_affine_anim_end
+	.globl gBattleAnimEffects1AffineAnim_Rot40
+gBattleAnimEffects1AffineAnim_Rot40: @ 0x0856E550
+	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x40, 0x00
+	rodata_affine_anim_end
+	.globl gBattleAnimEffects1AffineAnim_Rot60
+gBattleAnimEffects1AffineAnim_Rot60: @ 0x0856E560
+	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x60, 0x00
+	rodata_affine_anim_end
+	.globl gBattleAnimEffects1AffineAnim_Rot80
+gBattleAnimEffects1AffineAnim_Rot80: @ 0x0856E570
+	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x80, 0x00
+	rodata_affine_anim_end
+	.globl gBattleAnimEffects1AffineAnim_RotA0
+gBattleAnimEffects1AffineAnim_RotA0: @ 0x0856E580
+	semantic_affine_animcmd_frame 0x0100, 0x0100, 0xA0, 0x00
+	rodata_affine_anim_end
+	.globl gBattleAnimEffects1AffineAnim_RotC0
+gBattleAnimEffects1AffineAnim_RotC0: @ 0x0856E590
+	semantic_affine_animcmd_frame 0x0100, 0x0100, 0xC0, 0x00
+	rodata_affine_anim_end
+	.globl gBattleAnimEffects1AffineAnim_RotE0
+gBattleAnimEffects1AffineAnim_RotE0: @ 0x0856E5A0
+	semantic_affine_animcmd_frame 0x0100, 0x0100, 0xE0, 0x00
+	rodata_affine_anim_end
+	.globl gBattleAnimEffects1AffineAnims_RotationSet
+gBattleAnimEffects1AffineAnims_RotationSet: @ 0x0856E5B0
+	semantic_affine_anim_table_entry gBattleAnimEffects1AffineAnim_Rot00
+	semantic_affine_anim_table_entry gBattleAnimEffects1AffineAnim_Rot20
+	semantic_affine_anim_table_entry gBattleAnimEffects1AffineAnim_Rot40
+	semantic_affine_anim_table_entry gBattleAnimEffects1AffineAnim_Rot60
+	semantic_affine_anim_table_entry gBattleAnimEffects1AffineAnim_Rot80
+	semantic_affine_anim_table_entry gBattleAnimEffects1AffineAnim_RotA0
+	semantic_affine_anim_table_entry gBattleAnimEffects1AffineAnim_RotC0
+	semantic_affine_anim_table_entry gBattleAnimEffects1AffineAnim_RotE0
+	.globl gBattleAnimEffects1SpriteTemplate_279F
+gBattleAnimEffects1SpriteTemplate_279F: @ 0x0856E5D0
+	rodata_sprite_template 0x279F, 0x279F, gBattleAnimOam_AffineOff_ObjNormal_64x64, gDummySpriteAnimTable, 0, gBattleAnimEffects1AffineAnims_RotationSet, sub_081012E4
+	.globl gBattleAnimEffects1Data_0856E5E8
+gBattleAnimEffects1Data_0856E5E8: @ 0x0856E5E8
+	@ analyzed canonical ROM range 0x0856E5E8-0x0856E8B3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x384
-	.2byte 0x0100, 0x0100, 0x0000, 0x0000, 0x7FFF, 0x0000
-	.2byte 0x0000, 0x0000, 0x0100, 0x0100, 0x0020, 0x0000, 0x7FFF, 0x0000
-	.2byte 0x0000, 0x0000, 0x0100, 0x0100, 0x0040, 0x0000, 0x7FFF, 0x0000
-	.2byte 0x0000, 0x0000, 0x0100, 0x0100, 0x0060, 0x0000, 0x7FFF, 0x0000
-	.2byte 0x0000, 0x0000, 0x0100, 0x0100, 0x0080, 0x0000, 0x7FFF, 0x0000
-	.2byte 0x0000, 0x0000, 0x0100, 0x0100, 0x00A0, 0x0000, 0x7FFF, 0x0000
-	.2byte 0x0000, 0x0000, 0x0100, 0x0100, 0x00C0, 0x0000, 0x7FFF, 0x0000
-	.2byte 0x0000, 0x0000, 0x0100, 0x0100, 0x00E0, 0x0000, 0x7FFF, 0x0000
-	.2byte 0x0000, 0x0000, 0xE530, 0x0856, 0xE540, 0x0856, 0xE550, 0x0856
-	.2byte 0xE560, 0x0856, 0xE570, 0x0856, 0xE580, 0x0856, 0xE590, 0x0856
-	.2byte 0xE5A0, 0x0856, 0x279F, 0x279F, 0xD080, 0x084F, 0xF304, 0x082B
-	.2byte 0x0000, 0x0000, 0xE5B0, 0x0856, 0x12E5, 0x0810, 0x0000, 0x0005
+	@ ANALYSIS: RAW_BLOCK size=0x2CC
+	.2byte 0x0000, 0x0005
 	.2byte 0x0010, 0x0005, 0x0020, 0x0005, 0x0030, 0x0005, 0xFFFF, 0x0000
 	.2byte 0xE5E8, 0x0856, 0x279A, 0x279A, 0xD140, 0x084F, 0xE5FC, 0x0856
 	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x1331, 0x0810, 0x279A, 0x279A
