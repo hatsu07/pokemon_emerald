@@ -2051,7 +2051,7 @@ Move_HORN_ATTACK:
 	ba_waitforvisualfinish
 	ba_delay 2
 	ba_createsprite gPhysicalStrikeMovementSpriteTemplate, ANIM_ATTACKER, 2, 1
-	ba_createsprite 0x0856EB28, ANIM_TARGET, 4, 0, 0, 10
+	ba_createsprite gHornHitSpriteTemplate, ANIM_TARGET, 4, 0, 0, 10
 	ba_waitforvisualfinish
 	ba_createvisualtask AnimTask_ShakeMonInPlace, 2, 0, 2, 0, 4, 1
 	ba_createvisualtask AnimTask_ShakeMon, 2, 1, 5, 0, 6, 1
@@ -2070,13 +2070,13 @@ BattleAnimScript_0827AD31: @ 0x0827AD31
 	ba_waitforvisualfinish
 	ba_end
 BattleAnimScript_0827AD44: @ 0x0827AD44
-	ba_createsprite 0x0856EB28, ANIM_TARGET, 4, 8, 8, 10
+	ba_createsprite gHornHitSpriteTemplate, ANIM_TARGET, 4, 8, 8, 10
 	ba_waitforvisualfinish
 	ba_createsprite gBattleAnimSpriteTemplate_PiercingHit, ANIM_TARGET, 3, 0, 0, 1, 1
 	ba_playsewithpan 0x00A6, SOUND_PAN_TARGET
 	ba_goto BattleAnimScript_0827AD31
 BattleAnimScript_0827AD6A: @ 0x0827AD6A
-	ba_createsprite 0x0856EB28, ANIM_TARGET, 4, -8, -8, 10
+	ba_createsprite gHornHitSpriteTemplate, ANIM_TARGET, 4, -8, -8, 10
 	ba_waitforvisualfinish
 	ba_createsprite gBattleAnimSpriteTemplate_PiercingHit, ANIM_TARGET, 3, 0, 0, 1, 1
 	ba_playsewithpan 0x00A6, SOUND_PAN_TARGET
@@ -2096,7 +2096,7 @@ BattleAnimScript_0827ADAD: @ 0x0827ADAD
 	ba_waitforvisualfinish
 	ba_delay 2
 	ba_createsprite gPhysicalStrikeMovementSpriteTemplate, ANIM_ATTACKER, 2, 1
-	ba_createsprite 0x0856EB28, ANIM_TARGET, 4, 0, 0, 12
+	ba_createsprite gHornHitSpriteTemplate, ANIM_TARGET, 4, 0, 0, 12
 	ba_waitforvisualfinish
 	ba_playse 0x0014
 	ba_createvisualtask AnimTask_ShakeMonInPlace, 2, 0, 2, 0, 40, 1
@@ -9340,24 +9340,24 @@ BattleAnimScript_08285F3B: @ 0x08285F3B
 	ba_return
 BattleAnimScript_08285F66: @ 0x08285F66
 	ba_playsewithpan 0x00B3, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856EB10, ANIM_ATTACKER, 2, 0, -5, 0, 0
+	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_ATTACKER, 2, 0, -5, 0, 0
 	ba_delay 7
-	ba_createsprite 0x0856EB10, ANIM_ATTACKER, 2, -15, 10, 0, 0
+	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_ATTACKER, 2, -15, 10, 0, 0
 	ba_delay 7
-	ba_createsprite 0x0856EB10, ANIM_ATTACKER, 2, -15, -15, 0, 0
+	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_ATTACKER, 2, -15, -15, 0, 0
 	ba_delay 7
-	ba_createsprite 0x0856EB10, ANIM_ATTACKER, 2, 10, -5, 0, 0
+	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_ATTACKER, 2, 10, -5, 0, 0
 	ba_delay 7
 	ba_return
 BattleAnimScript_08285FAF: @ 0x08285FAF
 	ba_playsewithpan 0x00B3, SOUND_PAN_TARGET
-	ba_createsprite 0x0856EB10, ANIM_TARGET, 2, 0, -5, 1, 0
+	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_TARGET, 2, 0, -5, 1, 0
 	ba_delay 7
-	ba_createsprite 0x0856EB10, ANIM_TARGET, 2, -15, 10, 1, 0
+	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_TARGET, 2, -15, 10, 1, 0
 	ba_delay 7
-	ba_createsprite 0x0856EB10, ANIM_TARGET, 2, -15, -15, 1, 0
+	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_TARGET, 2, -15, -15, 1, 0
 	ba_delay 7
-	ba_createsprite 0x0856EB10, ANIM_TARGET, 2, 10, -5, 1, 0
+	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_TARGET, 2, 10, -5, 1, 0
 	ba_delay 7
 	ba_return
 BattleAnimScript_08285FF8: @ 0x08285FF8

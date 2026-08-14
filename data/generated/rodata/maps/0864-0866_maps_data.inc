@@ -2337,15 +2337,31 @@ gBattleAnimSpriteTemplate_MoonlightSparkle: @ 0x0856EAD0
 	rodata_sprite_template 0x27D3, 0x27D3, gBattleAnimOam_AffineOff_ObjNormal_16x16, gMoonlightSparkleAnims, 0, gDummySpriteAffineAnimTable, sub_08102D90
 	.globl gBattleAnimEffects1Data_0856EAE8
 gBattleAnimEffects1Data_0856EAE8: @ 0x0856EAE8
-	@ analyzed canonical ROM range 0x0856EAE8-0x0856EC03
+	.globl gHealingSparkleAnim_Tag272F
+gHealingSparkleAnim_Tag272F: @ 0x0856EAE8
+	rodata_anim_frame 0, 2
+	rodata_anim_frame 16, 2
+	rodata_anim_frame 32, 2
+	rodata_anim_frame 48, 3
+	rodata_anim_frame 64, 5
+	rodata_anim_frame 80, 3
+	rodata_anim_frame 96, 2
+	rodata_anim_frame 0, 2
+	rodata_anim_end
+	.globl gHealingSparkleAnims_Tag272F
+gHealingSparkleAnims_Tag272F: @ 0x0856EB0C
+	semantic_anim_table_entry gHealingSparkleAnim_Tag272F
+	.globl gHealingSparkleSpriteTemplate_Tag272F
+gHealingSparkleSpriteTemplate_Tag272F: @ 0x0856EB10
+	rodata_sprite_template 0x272F, 0x272F, gBattleAnimOam_AffineOff_ObjNormal_32x32, gHealingSparkleAnims_Tag272F, 0, gDummySpriteAffineAnimTable, sub_080A7090
+	.globl gHornHitSpriteTemplate
+gHornHitSpriteTemplate: @ 0x0856EB28
+	rodata_sprite_template 0x2724, 0x2724, gBattleAnimOam_AffineOff_ObjNormal_32x32, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08103094
+	.globl gBattleAnimEffects1Data_0856EB40
+gBattleAnimEffects1Data_0856EB40: @ 0x0856EB40
+	@ analyzed canonical ROM range 0x0856EB40-0x0856EC03
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x11C
-	.2byte 0x0000, 0x0002, 0x0010, 0x0002
-	.2byte 0x0020, 0x0002, 0x0030, 0x0003, 0x0040, 0x0005, 0x0050, 0x0003
-	.2byte 0x0060, 0x0002, 0x0000, 0x0002, 0xFFFF, 0x0000, 0xEAE8, 0x0856
-	.2byte 0x272F, 0x272F, 0xD020, 0x084F, 0xEB0C, 0x0856, 0x0000, 0x0000
-	.2byte 0xF310, 0x082B, 0x7091, 0x080A, 0x2724, 0x2724, 0xD020, 0x084F
-	.2byte 0xF304, 0x082B, 0x0000, 0x0000, 0xF310, 0x082B, 0x3095, 0x0810
+	@ ANALYSIS: RAW_BLOCK size=0xC4
 	.2byte 0x0000, 0x0002, 0x0010, 0x0002, 0x0020, 0x0002, 0x0030, 0x0002
 	.2byte 0xFFFF, 0x0000, 0xEB40, 0x0856, 0x27D0, 0x27D0, 0xD020, 0x084F
 	.2byte 0xEB54, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B, 0x341D, 0x0810
