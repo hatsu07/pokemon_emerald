@@ -806,7 +806,7 @@ _081A61A0:
 	bx r0
 	.align 2, 0
 _081A6238: .4byte 0x0203B958
-_081A623C: .4byte gBattleU16Table_Rom_5BCF70
+_081A623C: .4byte gSlateportBattleTentMons
 _081A6240: .4byte 0x03005AF0
 _081A6244: .4byte 0x03005FD8
 _081A6248: .4byte 0x020243E8
@@ -844,7 +844,7 @@ SetPlayerAndOpponentParties: @ 0x081A625C
 _081A6288: .4byte 0x03005AF0
 _081A628C: .4byte 0x00000CA9
 _081A6290: .4byte 0x0203B958
-_081A6294: .4byte gBattleU16Table_Rom_5BCF70
+_081A6294: .4byte gSlateportBattleTentMons
 _081A6298:
 	ldr r1, _081A6558
 	ldr r0, _081A655C
@@ -1836,7 +1836,7 @@ _081A69E8:
 	bx r0
 	.align 2, 0
 _081A6A2C: .4byte 0x0203B958
-_081A6A30: .4byte gBattleU16Table_Rom_5BCF70
+_081A6A30: .4byte gSlateportBattleTentMons
 _081A6A34: .4byte 0x02024190
 _081A6A38: .4byte 0x03005AF0
 _081A6A3C: .4byte gBattleFrontierHeldItems

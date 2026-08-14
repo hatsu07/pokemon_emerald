@@ -812,9 +812,9 @@ _081B9C32:
 	b _081B9C74
 	.align 2, 0
 _081B9C58: .4byte 0x0203B954
-_081B9C5C: .4byte gBattleU16Table_Rom_5BC958
+_081B9C5C: .4byte gSlateportBattleTentTrainers
 _081B9C60: .4byte 0x0203B958
-_081B9C64: .4byte gBattleU16Table_Rom_5BCF70
+_081B9C64: .4byte gSlateportBattleTentMons
 _081B9C68: .4byte gBattleFrontierHeldItems
 _081B9C6C:
 	adds r4, #2
@@ -971,9 +971,9 @@ _081B9D7E:
 	b _081B9D02
 	.align 2, 0
 _081B9D8C: .4byte 0x0203B954
-_081B9D90: .4byte gBattleU16Table_Rom_5BC958
+_081B9D90: .4byte gSlateportBattleTentTrainers
 _081B9D94: .4byte 0x0203B958
-_081B9D98: .4byte gBattleU16Table_Rom_5BCF70
+_081B9D98: .4byte gSlateportBattleTentMons
 _081B9D9C: .4byte 0x03005AF0
 _081B9DA0: .4byte 0x0000FFFF
 _081B9DA4: .4byte 0x00000CB2

@@ -2315,7 +2315,7 @@ _0819B374:
 	bx r0
 	.align 2, 0
 _0819B3F0: .4byte 0x0203B958
-_0819B3F4: .4byte gBattleU16Table_Rom_5BCF70
+_0819B3F4: .4byte gSlateportBattleTentMons
 _0819B3F8: .4byte 0x03005AF0
 _0819B3FC: .4byte 0x03001278
 _0819B400: .4byte gBattleFrontierHeldItems

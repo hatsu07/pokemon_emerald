@@ -7730,9 +7730,9 @@ SetTentPtrsGetLevel: @ 0x08165B84
 	.align 2, 0
 _08165BA0: .4byte 0x000040CF
 _08165BA4: .4byte 0x0203B954
-_08165BA8: .4byte gBattleU16Table_Rom_5BC958
+_08165BA8: .4byte gSlateportBattleTentTrainers
 _08165BAC: .4byte 0x0203B958
-_08165BB0: .4byte gBattleU16Table_Rom_5BCF70
+_08165BB0: .4byte gSlateportBattleTentMons
 _08165BB4:
 	cmp r0, #2
 	bne _08165BD4
@@ -7744,9 +7744,9 @@ _08165BB4:
 	b _08165BFE
 	.align 2, 0
 _08165BC4: .4byte 0x0203B954
-_08165BC8: .4byte gBattleTowerData_085BD554
+_08165BC8: .4byte gVerdanturfBattleTentTrainers
 _08165BCC: .4byte 0x0203B958
-_08165BD0: .4byte gBattleTowerData_085BDB6C
+_08165BD0: .4byte gVerdanturfBattleTentMons
 _08165BD4:
 	cmp r0, #3
 	bne _08165BF4
@@ -7758,9 +7758,9 @@ _08165BD4:
 	b _08165BFE
 	.align 2, 0
 _08165BE4: .4byte 0x0203B954
-_08165BE8: .4byte gBattleTowerData_085BDFC8
+_08165BE8: .4byte gFallarborBattleTentTrainers
 _08165BEC: .4byte 0x0203B958
-_08165BF0: .4byte gBattleTowerData_085BE5E0
+_08165BF0: .4byte gFallarborBattleTentMons
 _08165BF4:
 	ldr r1, _08165C14
 	ldr r0, _08165C18
