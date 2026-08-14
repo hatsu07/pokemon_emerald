@@ -1319,7 +1319,7 @@ Move_PROTECT:
 	ba_monbg ANIM_ATK_PARTNER
 	ba_monbgprio_28 ANIM_ATTACKER
 	ba_waitplaysewithpan 0x00CF, SOUND_PAN_ATTACKER, 16
-	ba_createsprite 0x0856E6C0, ANIM_ATTACKER, 2, 24, 0, 90
+	ba_createsprite gProtectShieldSpriteTemplate, ANIM_ATTACKER, 2, 24, 0, 90
 	ba_waitforvisualfinish
 	ba_clearmonbg ANIM_ATK_PARTNER
 	ba_end

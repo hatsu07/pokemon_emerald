@@ -1415,6 +1415,7 @@ gItemUseYesNoCallbacks: @ 0x0856DCCC
 	.set gBattleAnimOam_AffineOff_ObjNormal_64x64, 0x084FD080
 	.set gBattleAnimOam_084FD0A8, 0x084FD0A8
 	.set gBattleAnimOam_084FD140, 0x084FD140
+	.set gBattleAnimOam_084FD148, 0x084FD148
 	.set gBattleAnimOam_AffineDouble_ObjNormal_8x8, 0x084FD0D0
 	.set gBattleAnimOam_AffineDouble_ObjNormal_16x16, 0x084FD0D8
 	.set gBattleAnimOam_AffineOn_ObjBlend_8x8, 0x084FD198
@@ -2080,13 +2081,15 @@ gMusicNoteAnims: @ 0x0856E680
 	.globl gMusicNoteSpriteTemplate
 gMusicNoteSpriteTemplate: @ 0x0856E6A8
 	rodata_sprite_template 0x2758, 0x2758, gBattleAnimOam_AffineOff_ObjNormal_16x16, gMusicNoteAnims, 0, gDummySpriteAffineAnimTable, sub_0810166C
-	.globl gBattleAnimEffects1Data_0856E6C0
-gBattleAnimEffects1Data_0856E6C0: @ 0x0856E6C0
-	@ analyzed canonical ROM range 0x0856E6C0-0x0856E8B3
+	.globl gProtectShieldSpriteTemplate
+gProtectShieldSpriteTemplate: @ 0x0856E6C0
+	rodata_sprite_template 0x2828, 0x2828, gBattleAnimOam_084FD148, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08101740
+	.globl gBattleAnimEffects1Data_0856E6D8
+gBattleAnimEffects1Data_0856E6D8: @ 0x0856E6D8
+	@ analyzed canonical ROM range 0x0856E6D8-0x0856E8B3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x1F4
-	.2byte 0x2828, 0x2828, 0xD148, 0x084F, 0xF304, 0x082B
-	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x1741, 0x0810, 0x0100, 0x0100
+	@ ANALYSIS: RAW_BLOCK size=0x1DC
+	.2byte 0x0100, 0x0100
 	.2byte 0x0000, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0C02, 0x0000, 0x0000, 0x0000, 0x0600, 0x0000, 0x0000, 0x0000
 	.2byte 0x18FE, 0x0000, 0x0000, 0x0000, 0x0600, 0x0000, 0x0000, 0x0000
