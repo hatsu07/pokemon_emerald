@@ -1419,6 +1419,7 @@ gItemUseYesNoCallbacks: @ 0x0856DCCC
 	.set gBattleAnimOam_084FD140, 0x084FD140
 	.set gBattleAnimOam_084FD148, 0x084FD148
 	.set gBattleAnimOam_084FD1A0, 0x084FD1A0
+	.set gBattleAnimOam_084FD1A8, 0x084FD1A8
 	.set gBattleAnimOam_084FD1F0, 0x084FD1F0
 	.set gBattleAnimOam_AffineDouble_ObjNormal_8x8, 0x084FD0D0
 	.set gBattleAnimOam_AffineDouble_ObjNormal_16x16, 0x084FD0D8
@@ -2584,18 +2585,39 @@ gBattleAnimEffects3SpriteTemplate_2758: @ 0x0856EE6C
 	rodata_sprite_template 0x2758, 0x2758, gBattleAnimOam_AffineOff_ObjNormal_16x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08103CE8
 	.globl gBattleAnimEffects3Data_0856EE84
 gBattleAnimEffects3Data_0856EE84: @ 0x0856EE84
-	@ analyzed canonical ROM range 0x0856EE84-0x0856EF93
+	.globl gBattleAnimEffects3SpriteTemplate_DummyOamCallback
+gBattleAnimEffects3SpriteTemplate_DummyOamCallback: @ 0x0856EE84
+	rodata_sprite_template 0, 0, gDummyOamData, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08103DDC
+	.globl gBattleAnimEffects3SpriteTemplate_Tag27A1
+gBattleAnimEffects3SpriteTemplate_Tag27A1: @ 0x0856EE9C
+	rodata_sprite_template 0x27A1, 0x27A1, gBattleAnimOam_084FD1A8, gDummySpriteAnimTable, 0, 0x08572C44, sub_08103E70
+	.globl gBattleAnimEffects3Anim_0856EEB4
+gBattleAnimEffects3Anim_0856EEB4: @ 0x0856EEB4
+	rodata_anim_frame 0, 9
+	rodata_anim_frame 16, 3
+	rodata_anim_frame 32, 3
+	rodata_anim_frame 48, 3
+	rodata_anim_end
+	.globl gBattleAnimEffects3Anims_0856EEC8
+gBattleAnimEffects3Anims_0856EEC8: @ 0x0856EEC8
+	semantic_anim_table_entry gBattleAnimEffects3Anim_0856EEB4
+	.globl gBattleAnimEffects3AffineAnim_0856EECC
+gBattleAnimEffects3AffineAnim_0856EECC: @ 0x0856EECC
+	semantic_affine_animcmd_frame 0x50, 0x50, 0, 0
+	semantic_affine_animcmd_frame 9, 9, 0, 0x12
+	rodata_affine_anim_end
+	.globl gBattleAnimEffects3AffineAnims_0856EEE4
+gBattleAnimEffects3AffineAnims_0856EEE4: @ 0x0856EEE4
+	semantic_affine_anim_table_entry gBattleAnimEffects3AffineAnim_0856EECC
+	.globl gBattleAnimEffects3SpriteTemplate_Tag2717
+gBattleAnimEffects3SpriteTemplate_Tag2717: @ 0x0856EEE8
+	rodata_sprite_template 0x2717, 0x2717, gBattleAnimOam_AffineOff_ObjNormal_64x64, gBattleAnimEffects3Anims_0856EEC8, 0, gBattleAnimEffects3AffineAnims_0856EEE4, sub_080A7090
+	.globl gBattleAnimEffects3Data_0856EF00
+gBattleAnimEffects3Data_0856EF00: @ 0x0856EF00
+	@ analyzed canonical ROM range 0x0856EF00-0x0856EF93
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x110
-	.2byte 0x0000, 0x0000
-	.2byte 0xF2F8, 0x082B, 0xF304, 0x082B, 0x0000, 0x0000, 0xF310, 0x082B
-	.2byte 0x3DDD, 0x0810, 0x27A1, 0x27A1, 0xD1A8, 0x084F, 0xF304, 0x082B
-	.2byte 0x0000, 0x0000, 0x2C44, 0x0857, 0x3E71, 0x0810, 0x0000, 0x0009
-	.2byte 0x0010, 0x0003, 0x0020, 0x0003, 0x0030, 0x0003, 0xFFFF, 0x0000
-	.2byte 0xEEB4, 0x0856, 0x0050, 0x0050, 0x0000, 0x0000, 0x0009, 0x0009
-	.2byte 0x1200, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000, 0xEECC, 0x0856
-	.2byte 0x2717, 0x2717, 0xD080, 0x084F, 0xEEC8, 0x0856, 0x0000, 0x0000
-	.2byte 0xEEE4, 0x0856, 0x7091, 0x080A, 0x0000, 0x0043, 0x0008, 0x0043
+	@ ANALYSIS: RAW_BLOCK size=0x94
+	.2byte 0x0000, 0x0043, 0x0008, 0x0043
 	.2byte 0x0010, 0x0043, 0x0018, 0x0043, 0x0020, 0x0043, 0x0028, 0x0043
 	.2byte 0x0030, 0x0043, 0xFFFD, 0x0001, 0xFFFF, 0x0000, 0xEF00, 0x0856
 	.2byte 0x275B, 0x275B, 0xD040, 0x084F, 0xEF24, 0x0856, 0x0000, 0x0000
