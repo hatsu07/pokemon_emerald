@@ -1485,8 +1485,8 @@ _080A0D2C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0D30: .4byte gTilesetAnimsData_084EDF30
-_080A0D34: .4byte gTilesetAnimsData_084EDF10
+_080A0D30: .4byte gTilesetAnims_Rustboro_WindyWater
+_080A0D34: .4byte gTilesetAnims_Rustboro_WindyWater_VDests
 	thumb_func_end QueueAnimTiles_Rustboro_WindyWater
 
 	thumb_func_start QueueAnimTiles_Rustboro_Fountain
@@ -1506,7 +1506,7 @@ QueueAnimTiles_Rustboro_Fountain: @ 0x080A0D38
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0D58: .4byte gTilesetAnimsData_084EE070
+_080A0D58: .4byte gTilesetAnims_Rustboro_Fountain
 _080A0D5C: .4byte 0x06007800
 	thumb_func_end QueueAnimTiles_Rustboro_Fountain
 
