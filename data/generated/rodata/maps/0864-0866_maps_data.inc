@@ -1573,24 +1573,50 @@ gPetalDanceBigFlowerAnim_Bloom: @ 0x0856DEF0
 	.globl gPetalDanceBigFlowerAnims
 gPetalDanceBigFlowerAnims: @ 0x0856DEF8
 	semantic_anim_table_entry gPetalDanceBigFlowerAnim_Idle
+	.globl gPetalDanceSmallFlowerAnims
+gPetalDanceSmallFlowerAnims: @ 0x0856DEFC
 	semantic_anim_table_entry gPetalDanceBigFlowerAnim_Bloom
 	.globl gPetalDanceBigFlowerSpriteTemplate
 gPetalDanceBigFlowerSpriteTemplate: @ 0x0856DF00
 	rodata_sprite_template 0x27AF, 0x27AF, gBattleAnimOam_AffineOff_ObjNormal_16x16, gPetalDanceBigFlowerAnims, 0, gDummySpriteAffineAnimTable, AnimPetalDanceBigFlower
-	.globl gBattleAnimEffects1Data_0856DF18
-gBattleAnimEffects1Data_0856DF18: @ 0x0856DF18
-	@ analyzed canonical ROM range 0x0856DF18-0x0856E2E3
+	.globl gPetalDanceSmallFlowerSpriteTemplate
+gPetalDanceSmallFlowerSpriteTemplate: @ 0x0856DF18
+	@ analyzed canonical ROM range 0x0856DF18-0x0856DF2F
+	rodata_sprite_template 0x27AF, 0x27AF, gBattleAnimOam_AffineOff_ObjNormal_8x8, gPetalDanceSmallFlowerAnims, 0, gDummySpriteAffineAnimTable, AnimPetalDanceSmallFlower
+	.globl gRazorLeafParticleAnim_Spin
+gRazorLeafParticleAnim_Spin: @ 0x0856DF30
+	rodata_anim_frame 0, 5
+	rodata_anim_frame 4, 5
+	rodata_anim_frame 8, 5
+	rodata_anim_frame 12, 5
+	rodata_anim_frame 16, 5
+	rodata_anim_frame 20, 5
+	rodata_anim_frame 16, 5
+	rodata_anim_frame 12, 5
+	rodata_anim_frame 8, 5
+	rodata_anim_frame 4, 5
+	rodata_anim_jump 0
+	.globl gRazorLeafParticleAnim_End
+gRazorLeafParticleAnim_End: @ 0x0856DF5C
+	rodata_anim_frame 24, 5
+	rodata_anim_frame 28, 5
+	rodata_anim_frame 32, 5
+	rodata_anim_end
+	.globl gRazorLeafParticleAnims
+gRazorLeafParticleAnims: @ 0x0856DF6C
+	semantic_anim_table_entry gRazorLeafParticleAnim_Spin
+	semantic_anim_table_entry gRazorLeafParticleAnim_End
+	.globl gRazorLeafParticleSpriteTemplate
+gRazorLeafParticleSpriteTemplate: @ 0x0856DF74
+	rodata_sprite_template 0x274F, 0x274F, gBattleAnimOam_AffineOff_ObjNormal_16x16, gRazorLeafParticleAnims, 0, gDummySpriteAffineAnimTable, AnimRazorLeafParticle
+	.globl gMoveTwisterParticleSpriteTemplate
+gMoveTwisterParticleSpriteTemplate: @ 0x0856DF8C
+	rodata_sprite_template 0x274F, 0x274F, gBattleAnimOam_AffineOff_ObjNormal_16x16, gRazorLeafParticleAnims, 0, gDummySpriteAffineAnimTable, AnimMoveTwisterParticle
+	.globl gBattleAnimEffects1Data_0856DFA4
+gBattleAnimEffects1Data_0856DFA4: @ 0x0856DFA4
+	@ analyzed canonical ROM range 0x0856DFA4-0x0856E2E3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x3CC
-	.2byte 0x27AF, 0x27AF, 0xD010, 0x084F, 0xDEFC, 0x0856
-	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0xF795, 0x080F, 0x0000, 0x0005
-	.2byte 0x0004, 0x0005, 0x0008, 0x0005, 0x000C, 0x0005, 0x0010, 0x0005
-	.2byte 0x0014, 0x0005, 0x0010, 0x0005, 0x000C, 0x0005, 0x0008, 0x0005
-	.2byte 0x0004, 0x0005, 0xFFFE, 0x0000, 0x0018, 0x0005, 0x001C, 0x0005
-	.2byte 0x0020, 0x0005, 0xFFFF, 0x0000, 0xDF30, 0x0856, 0xDF5C, 0x0856
-	.2byte 0x274F, 0x274F, 0xD018, 0x084F, 0xDF6C, 0x0856, 0x0000, 0x0000
-	.2byte 0xF310, 0x082B, 0xF84D, 0x080F, 0x274F, 0x274F, 0xD018, 0x084F
-	.2byte 0xDF6C, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B, 0xFAB9, 0x080F
+	@ ANALYSIS: RAW_BLOCK size=0x340
 	.2byte 0x0000, 0x0003, 0x0000, 0x0043, 0x0000, 0x00C3, 0x0000, 0x0083
 	.2byte 0xFFFE, 0x0000, 0xDFA4, 0x0856, 0x27B0, 0x27B0, 0xD040, 0x084F
 	.2byte 0xDFB8, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B, 0xF945, 0x080F
