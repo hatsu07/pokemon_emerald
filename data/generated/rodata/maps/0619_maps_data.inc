@@ -542,15 +542,13 @@ gPlayerAvatarGraphicsIdsByStateAndSaveGender: @ 0x0846F918
 	.byte 0x89, 0x8A
 	@ state 7: unused/dummy
 	.byte 0xBF, 0xC0
-	@ pret/pokeemerald-jp direct xref for 0x0846F928: field_player_avatar.s: sub_0808B6D0
-	.globl gFieldPlayerAvatarData_0846F928
-gFieldPlayerAvatarData_0846F928: @ 0x0846F928
-gUnknownPlayerAvatarGraphicsIdsByGender: @ 0x0846F928
+	@ pret/pokeemerald-jp direct xref for 0x0846F928: field_player_avatar.s: GetFRLGAvatarGraphicsIdByGender
+	.globl gFRLGPlayerAvatarGraphicsIdsByGender
+gFRLGPlayerAvatarGraphicsIdsByGender: @ 0x0846F928
 	.byte 0xE6, 0xE7
-	@ pret/pokeemerald-jp direct xref for 0x0846F92A: field_player_avatar.s: GetFRLGAvatarGraphicsIdByGender
-	.globl gFieldPlayerAvatarData_0846F92A
-gFieldPlayerAvatarData_0846F92A: @ 0x0846F92A
-gFRLGPlayerAvatarGraphicsIdsByGender: @ 0x0846F92A
+	@ pret/pokeemerald-jp direct xref for 0x0846F92A: field_player_avatar.s: GetRSAvatarGraphicsIdByGender
+	.globl gRSPlayerAvatarGraphicsIdsByGender
+gRSPlayerAvatarGraphicsIdsByGender: @ 0x0846F92A
 	.byte 0xEB, 0xEC
 	@ pret/pokeemerald-jp direct xref for 0x0846F92C: field_player_avatar.s: GetPlayerAvatarGraphicsIdByCurrentState, GetPlayerAvatarStateTransitionByGraphicsId
 	.globl gFieldPlayerAvatarData_0846F92C

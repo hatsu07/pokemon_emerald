@@ -2704,8 +2704,8 @@ sub_0808B6B8: @ 0x0808B6B8
 _0808B6CC: .4byte gFieldPlayerAvatarData_0846F918
 	thumb_func_end sub_0808B6B8
 
-	thumb_func_start sub_0808B6D0
-sub_0808B6D0: @ 0x0808B6D0
+	thumb_func_start GetFRLGAvatarGraphicsIdByGender
+GetFRLGAvatarGraphicsIdByGender: @ 0x0808B6D0
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	ldr r1, _0808B6DC
@@ -2713,11 +2713,11 @@ sub_0808B6D0: @ 0x0808B6D0
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_0808B6DC: .4byte gFieldPlayerAvatarData_0846F928
-	thumb_func_end sub_0808B6D0
+_0808B6DC: .4byte gFRLGPlayerAvatarGraphicsIdsByGender
+	thumb_func_end GetFRLGAvatarGraphicsIdByGender
 
-	thumb_func_start GetFRLGAvatarGraphicsIdByGender
-GetFRLGAvatarGraphicsIdByGender: @ 0x0808B6E0
+	thumb_func_start GetRSAvatarGraphicsIdByGender
+GetRSAvatarGraphicsIdByGender: @ 0x0808B6E0
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	ldr r1, _0808B6EC
@@ -2725,8 +2725,8 @@ GetFRLGAvatarGraphicsIdByGender: @ 0x0808B6E0
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_0808B6EC: .4byte gFieldPlayerAvatarData_0846F92A
-	thumb_func_end GetFRLGAvatarGraphicsIdByGender
+_0808B6EC: .4byte gRSPlayerAvatarGraphicsIdsByGender
+	thumb_func_end GetRSAvatarGraphicsIdByGender
 
 	thumb_func_start GetPlayerAvatarGraphicsIdByStateId
 GetPlayerAvatarGraphicsIdByStateId: @ 0x0808B6F0

@@ -7113,13 +7113,13 @@ _08087584:
 	ldrb r0, [r4]
 	lsls r0, r0, #0x1e
 	lsrs r0, r0, #0x1f
-	bl sub_0808B6D0
+	bl GetFRLGAvatarGraphicsIdByGender
 	b _080875A8
 _08087590:
 	ldrb r0, [r4]
 	lsls r0, r0, #0x1e
 	lsrs r0, r0, #0x1f
-	bl GetFRLGAvatarGraphicsIdByGender
+	bl GetRSAvatarGraphicsIdByGender
 	b _080875A8
 _0808759C:
 	ldrb r1, [r4]
