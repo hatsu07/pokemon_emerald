@@ -3536,19 +3536,19 @@ Move_TEETER_DANCE:
 	ba_loadspritegfx 0x2758
 	ba_loadspritegfx 0x2759
 	ba_createvisualtask AnimTask_TeeterDanceMovement, 5
-	ba_createsprite 0x0856EC34, ANIM_ATTACKER, 2, 0, 16, -2
+	ba_createsprite gTeeterDanceMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, 16, -2
 	ba_playsewithpan 0x00F4, SOUND_PAN_ATTACKER
 	ba_delay 24
-	ba_createsprite 0x0856EC34, ANIM_ATTACKER, 2, 0, 0, -2
+	ba_createsprite gTeeterDanceMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, -2
 	ba_playsewithpan 0x00F4, SOUND_PAN_ATTACKER
 	ba_delay 24
-	ba_createsprite 0x0856EC34, ANIM_ATTACKER, 2, 0, -16, -2
+	ba_createsprite gTeeterDanceMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, -16, -2
 	ba_playsewithpan 0x00F4, SOUND_PAN_ATTACKER
 	ba_delay 24
-	ba_createsprite 0x0856EC34, ANIM_ATTACKER, 2, 1, -8, -2
+	ba_createsprite gTeeterDanceMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 1, -8, -2
 	ba_playsewithpan 0x00F4, SOUND_PAN_ATTACKER
 	ba_delay 24
-	ba_createsprite 0x0856EC34, ANIM_ATTACKER, 2, 2, 8, -2
+	ba_createsprite gTeeterDanceMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 2, 8, -2
 	ba_playsewithpan 0x00F4, SOUND_PAN_ATTACKER
 	ba_end
 Move_MUD_SPORT:
@@ -4100,38 +4100,38 @@ Move_BELLY_DRUM:
 	ba_createvisualtask sub_08103438, 2
 	ba_waitforvisualfinish
 	ba_call BattleAnimScript_0827DB32
-	ba_createsprite 0x0856EC80, ANIM_ATTACKER, 2, 0, 0, 0, 0
+	ba_createsprite gBellyDrumMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, 0
 	ba_playsewithpan 0x00B9, SOUND_PAN_ATTACKER
 	ba_delay 15
 	ba_call BattleAnimScript_0827DB17
-	ba_createsprite 0x0856EC80, ANIM_ATTACKER, 2, 1, 1, 1, 0
+	ba_createsprite gBellyDrumMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 1, 1, 1, 0
 	ba_playsewithpan 0x00B9, SOUND_PAN_ATTACKER
 	ba_delay 15
 	ba_call BattleAnimScript_0827DB32
-	ba_createsprite 0x0856EC80, ANIM_ATTACKER, 2, 0, 3, 3, 128
+	ba_createsprite gBellyDrumMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, 3, 3, 128
 	ba_playsewithpan 0x00B9, SOUND_PAN_ATTACKER
 	ba_delay 7
 	ba_call BattleAnimScript_0827DB17
-	ba_createsprite 0x0856EC80, ANIM_ATTACKER, 2, 1, 2, 0, 128
+	ba_createsprite gBellyDrumMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 1, 2, 0, 128
 	ba_playsewithpan 0x00B9, SOUND_PAN_ATTACKER
 	ba_delay 7
 	ba_call BattleAnimScript_0827DB32
-	ba_createsprite 0x0856EC80, ANIM_ATTACKER, 2, 0, 1, 1, 0
+	ba_createsprite gBellyDrumMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, 1, 1, 0
 	ba_playsewithpan 0x00B9, SOUND_PAN_ATTACKER
 	ba_delay 7
 	ba_call BattleAnimScript_0827DB17
-	ba_createsprite 0x0856EC80, ANIM_ATTACKER, 2, 1, 0, 3, 0
+	ba_createsprite gBellyDrumMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 1, 0, 3, 0
 	ba_playsewithpan 0x00B9, SOUND_PAN_ATTACKER
 	ba_waitforvisualfinish
 	ba_createvisualtask sub_081034F0, 2
 	ba_waitforvisualfinish
 	ba_end
 BattleAnimScript_0827DB17: @ 0x0827DB17
-	ba_createsprite 0x0856EC4C, ANIM_ATTACKER, 3, 0
+	ba_createsprite gBellyDrumImpactSpriteTemplate, ANIM_ATTACKER, 3, 0
 	ba_createvisualtask AnimTask_ShakeMon, 2, 0, 0, 8, 2, 1
 	ba_return
 BattleAnimScript_0827DB32: @ 0x0827DB32
-	ba_createsprite 0x0856EC4C, ANIM_ATTACKER, 3, 1
+	ba_createsprite gBellyDrumImpactSpriteTemplate, ANIM_ATTACKER, 3, 1
 	ba_createvisualtask AnimTask_ShakeMon, 2, 0, 0, 8, 2, 1
 	ba_return
 Move_MIND_READER:
