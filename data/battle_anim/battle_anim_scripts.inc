@@ -1176,17 +1176,17 @@ Move_VINE_WHIP:
 Move_DRILL_PECK:
 	ba_loadspritegfx 0x2797
 	ba_loadspritegfx 0x27B2
-	ba_createsprite 0x0856E8BC, ANIM_ATTACKER, 2, 0
+	ba_createsprite gPhysicalStrikeMovementSpriteTemplate, ANIM_ATTACKER, 2, 0
 	ba_playsewithpan 0x00A2, SOUND_PAN_ATTACKER
 	ba_waitforvisualfinish
 	ba_delay 2
-	ba_createsprite 0x0856E8BC, ANIM_ATTACKER, 2, 1
+	ba_createsprite gPhysicalStrikeMovementSpriteTemplate, ANIM_ATTACKER, 2, 1
 	ba_delay 2
 	ba_loopsewithpan 0x00A6, SOUND_PAN_TARGET, 4, 8
 	ba_createvisualtask sub_0810F3D8, 5
 	ba_createvisualtask AnimTask_ShakeMon2, 2, 1, 4, 0, 18, 1
 	ba_waitforvisualfinish
-	ba_createsprite 0x0856E8BC, ANIM_ATTACKER, 2, 2
+	ba_createsprite gPhysicalStrikeMovementSpriteTemplate, ANIM_ATTACKER, 2, 2
 	ba_waitforvisualfinish
 	ba_createsprite 0x0855A988, ANIM_ATTACKER, 2, 0, 0, 6
 	ba_waitforvisualfinish
@@ -2030,15 +2030,15 @@ Move_ROLLING_KICK:
 	ba_end
 Move_HEADBUTT:
 	ba_loadspritegfx 0x2797
-	ba_createsprite 0x0856E8BC, ANIM_ATTACKER, 2, 0
+	ba_createsprite gPhysicalStrikeMovementSpriteTemplate, ANIM_ATTACKER, 2, 0
 	ba_playsewithpan 0x00A2, SOUND_PAN_ATTACKER
 	ba_waitforvisualfinish
 	ba_delay 2
-	ba_createsprite 0x0856E8BC, ANIM_ATTACKER, 2, 1
+	ba_createsprite gPhysicalStrikeMovementSpriteTemplate, ANIM_ATTACKER, 2, 1
 	ba_waitforvisualfinish
 	ba_createvisualtask AnimTask_ShakeMonInPlace, 2, 0, 2, 0, 4, 1
 	ba_createvisualtask AnimTask_ShakeMon, 2, 1, 5, 0, 6, 1
-	ba_createsprite 0x0856E8BC, ANIM_ATTACKER, 2, 2
+	ba_createsprite gPhysicalStrikeMovementSpriteTemplate, ANIM_ATTACKER, 2, 2
 	ba_createsprite gBattleAnimSpriteTemplate_PiercingHit, ANIM_TARGET, 3, 0, 0, 1, 1
 	ba_playsewithpan 0x007B, SOUND_PAN_TARGET
 	ba_waitforvisualfinish
@@ -2046,16 +2046,16 @@ Move_HEADBUTT:
 Move_HORN_ATTACK:
 	ba_loadspritegfx 0x2797
 	ba_loadspritegfx 0x2724
-	ba_createsprite 0x0856E8BC, ANIM_ATTACKER, 2, 0
+	ba_createsprite gPhysicalStrikeMovementSpriteTemplate, ANIM_ATTACKER, 2, 0
 	ba_playsewithpan 0x00A2, SOUND_PAN_ATTACKER
 	ba_waitforvisualfinish
 	ba_delay 2
-	ba_createsprite 0x0856E8BC, ANIM_ATTACKER, 2, 1
+	ba_createsprite gPhysicalStrikeMovementSpriteTemplate, ANIM_ATTACKER, 2, 1
 	ba_createsprite 0x0856EB28, ANIM_TARGET, 4, 0, 0, 10
 	ba_waitforvisualfinish
 	ba_createvisualtask AnimTask_ShakeMonInPlace, 2, 0, 2, 0, 4, 1
 	ba_createvisualtask AnimTask_ShakeMon, 2, 1, 5, 0, 6, 1
-	ba_createsprite 0x0856E8BC, ANIM_ATTACKER, 2, 2
+	ba_createsprite gPhysicalStrikeMovementSpriteTemplate, ANIM_ATTACKER, 2, 2
 	ba_createsprite gBattleAnimSpriteTemplate_PiercingHit, ANIM_TARGET, 3, 0, 0, 1, 1
 	ba_playsewithpan 0x00A6, SOUND_PAN_TARGET
 	ba_waitforvisualfinish
@@ -2091,11 +2091,11 @@ Move_HORN_DRILL:
 BattleAnimScript_0827ADAD: @ 0x0827ADAD
 	ba_waitbgfadein
 	ba_setalpha 12, 8
-	ba_createsprite 0x0856E8BC, ANIM_ATTACKER, 2, 0
+	ba_createsprite gPhysicalStrikeMovementSpriteTemplate, ANIM_ATTACKER, 2, 0
 	ba_playsewithpan 0x00A2, SOUND_PAN_ATTACKER
 	ba_waitforvisualfinish
 	ba_delay 2
-	ba_createsprite 0x0856E8BC, ANIM_ATTACKER, 2, 1
+	ba_createsprite gPhysicalStrikeMovementSpriteTemplate, ANIM_ATTACKER, 2, 1
 	ba_createsprite 0x0856EB28, ANIM_TARGET, 4, 0, 0, 12
 	ba_waitforvisualfinish
 	ba_playse 0x0014
@@ -2134,7 +2134,7 @@ BattleAnimScript_0827ADAD: @ 0x0827ADAD
 	ba_createsprite gBattleAnimSpriteTemplate_PiercingHit, ANIM_TARGET, 3, 32, 0, 1, 2
 	ba_playsewithpan 0x00A6, SOUND_PAN_TARGET
 	ba_delay 4
-	ba_createsprite 0x0856E8BC, ANIM_ATTACKER, 2, 2
+	ba_createsprite gPhysicalStrikeMovementSpriteTemplate, ANIM_ATTACKER, 2, 2
 	ba_waitforvisualfinish
 	ba_restorebg
 	ba_waitbgfadeout

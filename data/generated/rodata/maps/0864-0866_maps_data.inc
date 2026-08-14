@@ -2195,15 +2195,18 @@ gLockOnRingOffsets: @ 0x0856E8B4
 	.byte 0, -64
 	.byte -64, 64
 	.byte 32, -32
-	.globl gBattleAnimEffects1Data_0856E8BC
-gBattleAnimEffects1Data_0856E8BC: @ 0x0856E8BC
-	@ analyzed canonical ROM range 0x0856E8BC-0x0856EA9F
+	.globl gPhysicalStrikeMovementSpriteTemplate
+gPhysicalStrikeMovementSpriteTemplate: @ 0x0856E8BC
+	rodata_sprite_template 0, 0, gDummyOamData, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08102190
+	.globl gBattleAnimEffects1SpriteTemplate_0856E8D4
+gBattleAnimEffects1SpriteTemplate_0856E8D4: @ 0x0856E8D4
+	rodata_sprite_template 0, 0, gDummyOamData, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_081023E0
+	.globl gBattleAnimEffects1Data_0856E8EC
+gBattleAnimEffects1Data_0856E8EC: @ 0x0856E8EC
+	@ analyzed canonical ROM range 0x0856E8EC-0x0856EA9F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x1E4
-	.2byte 0x0000, 0x0000, 0xF2F8, 0x082B
-	.2byte 0xF304, 0x082B, 0x0000, 0x0000, 0xF310, 0x082B, 0x2191, 0x0810
-	.2byte 0x0000, 0x0000, 0xF2F8, 0x082B, 0xF304, 0x082B, 0x0000, 0x0000
-	.2byte 0xF310, 0x082B, 0x23E1, 0x0810, 0x0000, 0x0004, 0x0010, 0x0004
+	@ ANALYSIS: RAW_BLOCK size=0x1B4
+	.2byte 0x0000, 0x0004, 0x0010, 0x0004
 	.2byte 0x0020, 0x0004, 0x0030, 0x0004, 0xFFFF, 0x0000, 0x0030, 0x0004
 	.2byte 0xFFFF, 0x0000, 0xE8EC, 0x0856, 0xE900, 0x0856, 0x27C7, 0x27C7
 	.2byte 0xD020, 0x084F, 0xE908, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B
