@@ -886,24 +886,24 @@ Move_HIDDEN_POWER:
 	ba_delay 4
 	ba_createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, 0, 0
 	ba_playsewithpan 0x00D9, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F5E8, ANIM_ATTACKER, 2, 26, 0
-	ba_createsprite 0x0856F5E8, ANIM_ATTACKER, 2, 26, 42
-	ba_createsprite 0x0856F5E8, ANIM_ATTACKER, 2, 26, 84
-	ba_createsprite 0x0856F5E8, ANIM_ATTACKER, 2, 26, 126
-	ba_createsprite 0x0856F5E8, ANIM_ATTACKER, 2, 26, 168
-	ba_createsprite 0x0856F5E8, ANIM_ATTACKER, 2, 26, 210
+	ba_createsprite gHiddenPowerOrbAttackerSpriteTemplate, ANIM_ATTACKER, 2, 26, 0
+	ba_createsprite gHiddenPowerOrbAttackerSpriteTemplate, ANIM_ATTACKER, 2, 26, 42
+	ba_createsprite gHiddenPowerOrbAttackerSpriteTemplate, ANIM_ATTACKER, 2, 26, 84
+	ba_createsprite gHiddenPowerOrbAttackerSpriteTemplate, ANIM_ATTACKER, 2, 26, 126
+	ba_createsprite gHiddenPowerOrbAttackerSpriteTemplate, ANIM_ATTACKER, 2, 26, 168
+	ba_createsprite gHiddenPowerOrbAttackerSpriteTemplate, ANIM_ATTACKER, 2, 26, 210
 	ba_delay 52
 	ba_setarg 0x07, 0xFFFF
 	ba_playsewithpan 0x00CF, SOUND_PAN_ATTACKER
 	ba_createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, 0, 0
-	ba_createsprite 0x0856F600, ANIM_TARGET, 2, 0
-	ba_createsprite 0x0856F600, ANIM_TARGET, 2, 32
-	ba_createsprite 0x0856F600, ANIM_TARGET, 2, 64
-	ba_createsprite 0x0856F600, ANIM_TARGET, 2, 96
-	ba_createsprite 0x0856F600, ANIM_TARGET, 2, 128
-	ba_createsprite 0x0856F600, ANIM_TARGET, 2, 160
-	ba_createsprite 0x0856F600, ANIM_TARGET, 2, 192
-	ba_createsprite 0x0856F600, ANIM_TARGET, 2, 224
+	ba_createsprite gHiddenPowerOrbTargetSpriteTemplate, ANIM_TARGET, 2, 0
+	ba_createsprite gHiddenPowerOrbTargetSpriteTemplate, ANIM_TARGET, 2, 32
+	ba_createsprite gHiddenPowerOrbTargetSpriteTemplate, ANIM_TARGET, 2, 64
+	ba_createsprite gHiddenPowerOrbTargetSpriteTemplate, ANIM_TARGET, 2, 96
+	ba_createsprite gHiddenPowerOrbTargetSpriteTemplate, ANIM_TARGET, 2, 128
+	ba_createsprite gHiddenPowerOrbTargetSpriteTemplate, ANIM_TARGET, 2, 160
+	ba_createsprite gHiddenPowerOrbTargetSpriteTemplate, ANIM_TARGET, 2, 192
+	ba_createsprite gHiddenPowerOrbTargetSpriteTemplate, ANIM_TARGET, 2, 224
 	ba_end
 Move_REVERSAL:
 	ba_loadspritegfx 0x27FC
@@ -1631,26 +1631,26 @@ Move_ATTRACT:
 	ba_loopsewithpan 0x00D4, SOUND_PAN_ATTACKER, 12, 3
 	ba_createvisualtask AnimTask_SwayMon, 5, 0, 12, 0x1000, 4, 0
 	ba_delay 15
-	ba_createsprite 0x0856F584, ANIM_TARGET, 3, 20, -8
+	ba_createsprite gAttractHeartSpriteTemplate, ANIM_TARGET, 3, 20, -8
 	ba_waitforvisualfinish
 	ba_playsewithpan 0x00E2, SOUND_PAN_TARGET
-	ba_createsprite 0x0856F59C, ANIM_TARGET, 3, 160, -32
-	ba_createsprite 0x0856F59C, ANIM_TARGET, 3, -256, -40
-	ba_createsprite 0x0856F59C, ANIM_TARGET, 3, 128, -16
-	ba_createsprite 0x0856F59C, ANIM_TARGET, 3, 416, -38
-	ba_createsprite 0x0856F59C, ANIM_TARGET, 3, -128, -22
-	ba_createsprite 0x0856F59C, ANIM_TARGET, 3, -384, -31
+	ba_createsprite gFloatingHeartSpriteTemplate, ANIM_TARGET, 3, 160, -32
+	ba_createsprite gFloatingHeartSpriteTemplate, ANIM_TARGET, 3, -256, -40
+	ba_createsprite gFloatingHeartSpriteTemplate, ANIM_TARGET, 3, 128, -16
+	ba_createsprite gFloatingHeartSpriteTemplate, ANIM_TARGET, 3, 416, -38
+	ba_createsprite gFloatingHeartSpriteTemplate, ANIM_TARGET, 3, -128, -22
+	ba_createsprite gFloatingHeartSpriteTemplate, ANIM_TARGET, 3, -384, -31
 	ba_waitforvisualfinish
 	ba_waitplaysewithpan 0x00E3, 0x00, 15
 	ba_createvisualtask AnimTask_HeartsBackground, 5
-	ba_createsprite 0x0856F5B4, ANIM_ATTACKER, 40, 16, 256, 0
-	ba_createsprite 0x0856F5B4, ANIM_ATTACKER, 40, 224, 240, 15
-	ba_createsprite 0x0856F5B4, ANIM_ATTACKER, 40, 126, 272, 30
-	ba_createsprite 0x0856F5B4, ANIM_ATTACKER, 40, 80, 224, 45
-	ba_createsprite 0x0856F5B4, ANIM_ATTACKER, 40, 170, 272, 60
-	ba_createsprite 0x0856F5B4, ANIM_ATTACKER, 40, 40, 256, 75
-	ba_createsprite 0x0856F5B4, ANIM_ATTACKER, 40, 112, 256, 90
-	ba_createsprite 0x0856F5B4, ANIM_ATTACKER, 40, 200, 272, 90
+	ba_createsprite gAttractBackgroundHeartSpriteTemplate, ANIM_ATTACKER, 40, 16, 256, 0
+	ba_createsprite gAttractBackgroundHeartSpriteTemplate, ANIM_ATTACKER, 40, 224, 240, 15
+	ba_createsprite gAttractBackgroundHeartSpriteTemplate, ANIM_ATTACKER, 40, 126, 272, 30
+	ba_createsprite gAttractBackgroundHeartSpriteTemplate, ANIM_ATTACKER, 40, 80, 224, 45
+	ba_createsprite gAttractBackgroundHeartSpriteTemplate, ANIM_ATTACKER, 40, 170, 272, 60
+	ba_createsprite gAttractBackgroundHeartSpriteTemplate, ANIM_ATTACKER, 40, 40, 256, 75
+	ba_createsprite gAttractBackgroundHeartSpriteTemplate, ANIM_ATTACKER, 40, 112, 256, 90
+	ba_createsprite gAttractBackgroundHeartSpriteTemplate, ANIM_ATTACKER, 40, 200, 272, 90
 	ba_delay 75
 	ba_createvisualtask sub_08116254, 2, 4, 4, 4, 0, 10, 0x6F3F
 	ba_end
@@ -2492,8 +2492,8 @@ Move_GLARE:
 	ba_waitforvisualfinish
 	ba_createvisualtask sub_08116E70, 5, 1, 0, 0, 16, 0
 	ba_waitforvisualfinish
-	ba_createsprite 0x0856F668, ANIM_ATTACKER, 0, -16, -8
-	ba_createsprite 0x0856F668, ANIM_ATTACKER, 0, 16, -8
+	ba_createsprite gGlareEyeSpriteTemplate, ANIM_ATTACKER, 0, -16, -8
+	ba_createsprite gGlareEyeSpriteTemplate, ANIM_ATTACKER, 0, 16, -8
 	ba_createvisualtask sub_08106D48, 5
 	ba_playsewithpan 0x00C0, SOUND_PAN_ATTACKER
 	ba_delay 2
@@ -2637,8 +2637,8 @@ Move_STRUGGLE:
 	ba_monbg ANIM_TARGET
 	ba_setalpha 12, 8
 	ba_createvisualtask AnimTask_ShakeMonInPlace, 2, 0, 3, 0, 12, 4
-	ba_createsprite 0x0856F764, ANIM_ATTACKER, 2, 0, 0, 2
-	ba_createsprite 0x0856F764, ANIM_ATTACKER, 2, 0, 1, 2
+	ba_createsprite gStruggleSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 2
+	ba_createsprite gStruggleSpriteTemplate, ANIM_ATTACKER, 2, 0, 1, 2
 	ba_loopsewithpan 0x00A2, SOUND_PAN_ATTACKER, 12, 4
 	ba_waitforvisualfinish
 	ba_createsprite gBattleAnimSpriteTemplate_BasicHit, ANIM_ATTACKER, 3, 0, 0, 1, 2
@@ -3803,8 +3803,8 @@ Move_TICKLE:
 	ba_loadspritegfx 0x27EA
 	ba_createsprite 0x08572E58, ANIM_ATTACKER, 2, 2, 0, 0, 16, 0
 	ba_waitforvisualfinish
-	ba_createsprite 0x0856F668, ANIM_ATTACKER, 0, -16, -8
-	ba_createsprite 0x0856F668, ANIM_ATTACKER, 0, 16, -8
+	ba_createsprite gGlareEyeSpriteTemplate, ANIM_ATTACKER, 0, -16, -8
+	ba_createsprite gGlareEyeSpriteTemplate, ANIM_ATTACKER, 0, 16, -8
 	ba_playsewithpan 0x00D1, SOUND_PAN_ATTACKER
 	ba_waitforvisualfinish
 	ba_createsprite 0x08572E58, ANIM_ATTACKER, 2, 2, 0, 16, 0, 0
@@ -7144,8 +7144,8 @@ Move_SCARY_FACE:
 	ba_playsewithpan 0x00C0, SOUND_PAN_ATTACKER
 	ba_createvisualtask sub_08106D48, 5
 	ba_delay 13
-	ba_createsprite 0x0856F668, ANIM_ATTACKER, 0, -16, -8
-	ba_createsprite 0x0856F668, ANIM_ATTACKER, 0, 16, -8
+	ba_createsprite gGlareEyeSpriteTemplate, ANIM_ATTACKER, 0, -16, -8
+	ba_createsprite gGlareEyeSpriteTemplate, ANIM_ATTACKER, 0, 16, -8
 	ba_waitforvisualfinish
 	ba_createvisualtask sub_0810A8E4, 3, 20, 1, 0
 	ba_playsewithpan 0x0082, SOUND_PAN_TARGET
@@ -7155,45 +7155,45 @@ Move_SCARY_FACE:
 Move_SWEET_KISS:
 	ba_loadspritegfx 0x27E8
 	ba_loadspritegfx 0x27EC
-	ba_createsprite 0x0856F68C, ANIM_TARGET, 2, 16, -48
+	ba_createsprite gSweetKissSpriteTemplate, ANIM_TARGET, 2, 16, -48
 	ba_playsewithpan 0x00C3, SOUND_PAN_TARGET
 	ba_delay 23
 	ba_playsewithpan 0x00C3, SOUND_PAN_TARGET
 	ba_delay 23
 	ba_playsewithpan 0x00C3, SOUND_PAN_TARGET
 	ba_waitforvisualfinish
-	ba_createsprite 0x0856F59C, ANIM_TARGET, 3, 160, -30
+	ba_createsprite gFloatingHeartSpriteTemplate, ANIM_TARGET, 3, 160, -30
 	ba_playsewithpan 0x00E2, SOUND_PAN_TARGET
-	ba_createsprite 0x0856F59C, ANIM_TARGET, 3, -256, -42
-	ba_createsprite 0x0856F59C, ANIM_TARGET, 3, 128, -14
-	ba_createsprite 0x0856F59C, ANIM_TARGET, 3, 416, -38
-	ba_createsprite 0x0856F59C, ANIM_TARGET, 3, -128, -22
-	ba_createsprite 0x0856F59C, ANIM_TARGET, 3, -384, -31
+	ba_createsprite gFloatingHeartSpriteTemplate, ANIM_TARGET, 3, -256, -42
+	ba_createsprite gFloatingHeartSpriteTemplate, ANIM_TARGET, 3, 128, -14
+	ba_createsprite gFloatingHeartSpriteTemplate, ANIM_TARGET, 3, 416, -38
+	ba_createsprite gFloatingHeartSpriteTemplate, ANIM_TARGET, 3, -128, -22
+	ba_createsprite gFloatingHeartSpriteTemplate, ANIM_TARGET, 3, -384, -31
 	ba_end
 Move_LOVELY_KISS:
 	ba_loadspritegfx 0x27EB
 	ba_loadspritegfx 0x27ED
-	ba_createsprite 0x0856F6D4, ANIM_TARGET, 2, 0, -24
+	ba_createsprite gLovelyKissSpriteTemplate, ANIM_TARGET, 2, 0, -24
 	ba_playsewithpan 0x00C8, SOUND_PAN_TARGET
 	ba_waitforvisualfinish
 	ba_playsewithpan 0x00E2, SOUND_PAN_TARGET
-	ba_createsprite 0x0856F6A4, ANIM_TARGET, 3, -256, -42
-	ba_createsprite 0x0856F6A4, ANIM_TARGET, 3, 128, -14
-	ba_createsprite 0x0856F6A4, ANIM_TARGET, 3, 416, -38
-	ba_createsprite 0x0856F6A4, ANIM_TARGET, 3, -128, -22
+	ba_createsprite gLovelyKissHeartSpriteTemplate, ANIM_TARGET, 3, -256, -42
+	ba_createsprite gLovelyKissHeartSpriteTemplate, ANIM_TARGET, 3, 128, -14
+	ba_createsprite gLovelyKissHeartSpriteTemplate, ANIM_TARGET, 3, 416, -38
+	ba_createsprite gLovelyKissHeartSpriteTemplate, ANIM_TARGET, 3, -128, -22
 	ba_end
 Move_FURY_SWIPES:
 	ba_loadspritegfx 0x27EE
 	ba_createsprite 0x0855A958, ANIM_ATTACKER, 2, 5, 5
 	ba_delay 4
 	ba_playsewithpan 0x009B, SOUND_PAN_TARGET
-	ba_createsprite 0x0856F71C, ANIM_TARGET, 2, 16, 0, 1
+	ba_createsprite gFurySwipesSpriteTemplate, ANIM_TARGET, 2, 16, 0, 1
 	ba_createvisualtask AnimTask_ShakeMon2, 2, 1, 3, 0, 5, 1
 	ba_delay 10
 	ba_createsprite 0x0855A958, ANIM_TARGET, 2, 5, 5
 	ba_delay 4
 	ba_playsewithpan 0x009B, SOUND_PAN_TARGET
-	ba_createsprite 0x0856F71C, ANIM_TARGET, 2, -16, 0, 0
+	ba_createsprite gFurySwipesSpriteTemplate, ANIM_TARGET, 2, -16, 0, 0
 	ba_createvisualtask AnimTask_ShakeMon2, 2, 1, 4, 0, 7, 1
 	ba_end
 Move_INGRAIN:
@@ -7555,14 +7555,14 @@ Move_SPIT_UP:
 	ba_delay 45
 	ba_playsewithpan 0x00E8, SOUND_PAN_ATTACKER
 	ba_delay 3
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 0, 12
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 32, 12
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 64, 12
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 96, 12
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 128, 12
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 160, 12
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 192, 12
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 224, 12
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 12
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 32, 12
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 64, 12
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 96, 12
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 128, 12
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 160, 12
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 192, 12
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 224, 12
 	ba_delay 5
 	ba_jumpifmoveturn 2, BattleAnimScript_0828303F
 	ba_jumpifmoveturn 3, BattleAnimScript_08283068
@@ -7577,20 +7577,20 @@ BattleAnimScript_08283002: @ 0x08283002
 	ba_waitforvisualfinish
 	ba_end
 BattleAnimScript_0828303F: @ 0x0828303F
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 16
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 80
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 144
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 208
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 16
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 80
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 144
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 208
 	ba_goto BattleAnimScript_08283002
 BattleAnimScript_08283068: @ 0x08283068
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 16
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 48
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 80
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 112
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 144
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 176
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 208
-	ba_createsprite 0x0856F634, ANIM_ATTACKER, 2, 240
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 16
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 48
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 80
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 112
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 144
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 176
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 208
+	ba_createsprite gSpitUpParticleSpriteTemplate, ANIM_ATTACKER, 2, 240
 	ba_goto BattleAnimScript_08283002
 Move_SWALLOW:
 	ba_loadspritegfx 0x27FC
