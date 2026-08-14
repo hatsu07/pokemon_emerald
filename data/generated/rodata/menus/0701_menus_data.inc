@@ -1,7 +1,12 @@
-	@ pret/pokeemerald-jp direct xref for 0x084F09A8: tileset_anims.s: QueueAnimTiles_BikeShop_BlinkingLights
+	@ Bike Shop blinking lights animation pointer table.
+	.globl gTilesetAnims_BikeShop_BlinkingLights
+gTilesetAnims_BikeShop_BlinkingLights: @ 0x084F09A8
+	.4byte gTilesetAnims_BikeShop_BlinkingLights_Frame0
+	.4byte gTilesetAnims_BikeShop_BlinkingLights_Frame1
+
+	@ Compatibility alias retained for existing references.
 	.globl gBikeShopBlinkingLightsTilesetAnimFrameTable
-gBikeShopBlinkingLightsTilesetAnimFrameTable: @ 0x084F09A8
-	.4byte gBikeShopBlinkingLightsTilesetAnimFrame0, gBikeShopBlinkingLightsTilesetAnimFrame1
+	.set gBikeShopBlinkingLightsTilesetAnimFrameTable, gTilesetAnims_BikeShop_BlinkingLights
 	.globl gSootopolisStormyWaterTilesetAnimFrame0
 gSootopolisStormyWaterTilesetAnimFrame0: @ 0x084F09B0
 	.incbin "build/graphics/tilesets/secondary/sootopolis/anim/stormy_water/0_kyogre.4bpp"

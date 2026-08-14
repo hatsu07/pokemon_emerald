@@ -1527,7 +1527,7 @@ QueueAnimTiles_Lavaridge_Lava: @ 0x080A0D60
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0D80: .4byte gTilesetAnimsData_084EE498
+_080A0D80: .4byte gTilesetAnims_Lavaridge_Cave_Lava
 _080A0D84: .4byte 0x06005400
 	thumb_func_end QueueAnimTiles_Lavaridge_Lava
 
@@ -1556,8 +1556,8 @@ QueueAnimTiles_EverGrande_Flowers: @ 0x080A0D88
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0DB8: .4byte gTilesetAnimsData_084EE8E8
-_080A0DBC: .4byte gTilesetAnimsData_084EE8C8
+_080A0DB8: .4byte gTilesetAnims_EverGrande_Flowers
+_080A0DBC: .4byte gTilesetAnims_EverGrande_VDests
 	thumb_func_end QueueAnimTiles_EverGrande_Flowers
 
 	thumb_func_start QueueAnimTiles_Cave_Lava
@@ -1577,7 +1577,7 @@ QueueAnimTiles_Cave_Lava: @ 0x080A0DC0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0DE0: .4byte gTilesetAnimsData_084EE498
+_080A0DE0: .4byte gTilesetAnims_Lavaridge_Cave_Lava
 _080A0DE4: .4byte 0x06007400
 	thumb_func_end QueueAnimTiles_Cave_Lava
 
@@ -1598,7 +1598,7 @@ QueueAnimTiles_Dewford_Flag: @ 0x080A0DE8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0E08: .4byte gTilesetAnimsData_084EEC08
+_080A0E08: .4byte gTilesetAnims_Dewford_Flag
 _080A0E0C: .4byte 0x06005540
 	thumb_func_end QueueAnimTiles_Dewford_Flag
 
@@ -1619,7 +1619,7 @@ QueueAnimTiles_BattleFrontierOutsideWest_Flag: @ 0x080A0E10
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0E30: .4byte gTilesetAnimsData_084EEF18
+_080A0E30: .4byte gTilesetAnims_BattleFrontierOutsideWest_Flag
 _080A0E34: .4byte 0x06005B40
 	thumb_func_end QueueAnimTiles_BattleFrontierOutsideWest_Flag
 
@@ -1640,7 +1640,7 @@ QueueAnimTiles_BattleFrontierOutsideEast_Flag: @ 0x080A0E38
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0E58: .4byte gTilesetAnimsData_084EF228
+_080A0E58: .4byte gTilesetAnims_BattleFrontierOutsideEast_Flag
 _080A0E5C: .4byte 0x06005B40
 	thumb_func_end QueueAnimTiles_BattleFrontierOutsideEast_Flag
 
@@ -1661,7 +1661,7 @@ QueueAnimTiles_Slateport_Balloons: @ 0x080A0E60
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0E80: .4byte gTilesetAnimsData_084EF438
+_080A0E80: .4byte gTilesetAnims_Slateport_Balloons
 _080A0E84: .4byte 0x06005C00
 	thumb_func_end QueueAnimTiles_Slateport_Balloons
 
@@ -1809,7 +1809,7 @@ QueueAnimTiles_Building_TVTurnedOn: @ 0x080A0F50
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0F70: .4byte gTilesetAnimsData_084EF548
+_080A0F70: .4byte gTilesetAnims_Building_TvTurnedOn
 _080A0F74: .4byte 0x06003E00
 	thumb_func_end QueueAnimTiles_Building_TVTurnedOn
 
@@ -1841,9 +1841,9 @@ QueueAnimTiles_SootopolisGym_Waterfalls: @ 0x080A0F78
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0FB0: .4byte gTilesetAnimsData_084F0150
+_080A0FB0: .4byte gTilesetAnims_SootopolisGym_SideWaterfall
 _080A0FB4: .4byte 0x06007E00
-_080A0FB8: .4byte gTilesetAnimsData_084F015C
+_080A0FB8: .4byte gTilesetAnims_SootopolisGym_FrontWaterfall
 _080A0FBC: .4byte 0x06007A00
 	thumb_func_end QueueAnimTiles_SootopolisGym_Waterfalls
 
@@ -1864,7 +1864,7 @@ QueueAnimTiles_EliteFour_WallLights: @ 0x080A0FC0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A0FE0: .4byte gTilesetAnimsData_084F0308
+_080A0FE0: .4byte gTilesetAnims_EliteFour_WallLights
 _080A0FE4: .4byte 0x06007F00
 	thumb_func_end QueueAnimTiles_EliteFour_WallLights
 
@@ -1885,7 +1885,7 @@ QueueAnimTiles_EliteFour_GroundLights: @ 0x080A0FE8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A1008: .4byte gTilesetAnimsData_084F0318
+_080A1008: .4byte gTilesetAnims_EliteFour_FloorLight
 _080A100C: .4byte 0x06007C00
 	thumb_func_end QueueAnimTiles_EliteFour_GroundLights
 
@@ -1907,7 +1907,7 @@ QueueAnimTiles_MauvilleGym_ElectricGates: @ 0x080A1010
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A1030: .4byte gMauvilleGymElectricGatesTilesetAnimFrameTable
+_080A1030: .4byte gTilesetAnims_MauvilleGym_ElectricGates
 _080A1034: .4byte 0x06005200
 	thumb_func_end QueueAnimTiles_MauvilleGym_ElectricGates
 
@@ -1929,7 +1929,7 @@ QueueAnimTiles_BikeShop_BlinkingLights: @ 0x080A1038
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A1058: .4byte gBikeShopBlinkingLightsTilesetAnimFrameTable
+_080A1058: .4byte gTilesetAnims_BikeShop_BlinkingLights
 _080A105C: .4byte 0x06007E00
 	thumb_func_end QueueAnimTiles_BikeShop_BlinkingLights
 
