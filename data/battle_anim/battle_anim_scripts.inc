@@ -328,7 +328,7 @@ Move_SUPERSONIC:
 	ba_end
 BattleAnimScript_08277F8B: @ 0x08277F8B
 	ba_playsewithpan 0x00B8, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F00C, ANIM_TARGET, 2, 16, 0, 0, 0, 30, 0
+	ba_createsprite gSupersonicWaveSpriteTemplate, ANIM_TARGET, 2, 16, 0, 0, 0, 30, 0
 	ba_delay 2
 	ba_return
 Move_SCREECH:
@@ -342,7 +342,7 @@ Move_SCREECH:
 	ba_end
 BattleAnimScript_08277FD8: @ 0x08277FD8
 	ba_playsewithpan 0x00B5, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F024, ANIM_TARGET, 2, 16, 0, 0, 0, 30, 0
+	ba_createsprite gScreechWaveSpriteTemplate, ANIM_TARGET, 2, 16, 0, 0, 0, 30, 0
 	ba_delay 2
 	ba_return
 Move_FLAME_WHEEL:
@@ -6721,7 +6721,7 @@ Move_EGG_BOMB:
 	ba_loadspritegfx 0x27D6
 	ba_loadspritegfx 0x27BF
 	ba_playsewithpan 0x00A7, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F06C, ANIM_TARGET, 2, 10, 0, 0, 0, 25, -32
+	ba_createsprite gEggBombProjectileSpriteTemplate, ANIM_TARGET, 2, 10, 0, 0, 0, 25, -32
 	ba_waitforvisualfinish
 	ba_createvisualtask AnimTask_ShakeMon2, 2, 1, 4, 0, 16, 1
 	ba_createsprite 0x0856F300, ANIM_TARGET, 4, 6, 5, 1, 0
@@ -8194,7 +8194,7 @@ Move_METAL_SOUND:
 	ba_end
 BattleAnimScript_08283F71: @ 0x08283F71
 	ba_panse_1B 0x00B5, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 2, 0
-	ba_createsprite 0x0856F03C, ANIM_TARGET, 2, 16, 0, 0, 0, 30, 0
+	ba_createsprite gMetalSoundWaveSpriteTemplate, ANIM_TARGET, 2, 16, 0, 0, 0, 30, 0
 	ba_delay 2
 	ba_return
 Move_FOCUS_PUNCH:
@@ -8824,13 +8824,13 @@ Move_WATER_PULSE:
 	ba_playsewithpan 0x007E, SOUND_PAN_TARGET
 	ba_waitforvisualfinish
 	ba_playsewithpan 0x00C7, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F054, ANIM_TARGET, 2, 0, 0, 40, 15
+	ba_createsprite gWaterPulseRingSpriteTemplate, ANIM_TARGET, 2, 0, 0, 40, 15
 	ba_delay 5
 	ba_playsewithpan 0x00C7, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F054, ANIM_TARGET, 2, 0, 0, 40, 15
+	ba_createsprite gWaterPulseRingSpriteTemplate, ANIM_TARGET, 2, 0, 0, 40, 15
 	ba_delay 5
 	ba_playsewithpan 0x00C7, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F054, ANIM_TARGET, 2, 0, 0, 40, 15
+	ba_createsprite gWaterPulseRingSpriteTemplate, ANIM_TARGET, 2, 0, 0, 40, 15
 	ba_delay 13
 	ba_createvisualtask AnimTask_ShakeMon, 2, 1, 0, 8, 18, 1
 	ba_waitforvisualfinish
