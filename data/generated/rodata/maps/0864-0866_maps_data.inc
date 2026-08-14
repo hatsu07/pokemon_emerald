@@ -1413,6 +1413,7 @@ gItemUseYesNoCallbacks: @ 0x0856DCCC
 	.set gBattleAnimOam_AffineOff_ObjNormal_64x64, 0x084FD080
 	.set gBattleAnimOam_084FD0A8, 0x084FD0A8
 	.set gBattleAnimOam_AffineDouble_ObjNormal_8x8, 0x084FD0D0
+	.set gBattleAnimOam_AffineDouble_ObjNormal_16x16, 0x084FD0D8
 	.set gBattleAnimOam_AffineOn_ObjBlend_8x8, 0x084FD198
 	.globl gMovePowderParticleAnim
 gMovePowderParticleAnim: @ 0x0856DCD4
@@ -1677,15 +1678,28 @@ gConstrictBindingSpriteTemplate: @ 0x0856E078
 	rodata_sprite_template 0x27CA, 0x27CA, gBattleAnimOam_084FD0A8, gConstrictBindingAnims, 0, gConstrictBindingAffineAnims, AnimConstrictBinding
 	.globl gBattleAnimEffects1Data_0856E090
 gBattleAnimEffects1Data_0856E090: @ 0x0856E090
-	@ analyzed canonical ROM range 0x0856E090-0x0856E2E3
+	.globl gMimicOrbAffineAnim_Grow
+gMimicOrbAffineAnim_Grow: @ 0x0856E090
+	semantic_affine_animcmd_frame 0, 0, 0, 0
+	semantic_affine_animcmd_frame 0x30, 0x30, 0, 14
+	rodata_affine_anim_end
+	.globl gMimicOrbAffineAnim_Loop
+gMimicOrbAffineAnim_Loop: @ 0x0856E0A8
+	semantic_affine_animcmd_frame -16, -16, 0, 1
+	semantic_affine_animcmd_jump 0
+	.globl gMimicOrbAffineAnims
+gMimicOrbAffineAnims: @ 0x0856E0B8
+	semantic_affine_anim_table_entry gMimicOrbAffineAnim_Grow
+	semantic_affine_anim_table_entry gMimicOrbAffineAnim_Loop
+	.globl gMimicOrbSpriteTemplate
+gMimicOrbSpriteTemplate: @ 0x0856E0C0
+	rodata_sprite_template 0x27A3, 0x27A3, gBattleAnimOam_AffineDouble_ObjNormal_16x16, gPowerAbsorptionOrbAnims, 0, gMimicOrbAffineAnims, AnimMimicOrb
+	.globl gBattleAnimEffects1Data_0856E0D8
+gBattleAnimEffects1Data_0856E0D8: @ 0x0856E0D8
+	@ analyzed canonical ROM range 0x0856E0D8-0x0856E2E3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x254
-	.2byte 0x0000, 0x0000
-	.2byte 0x0000, 0x0000, 0x0030, 0x0030, 0x0E00, 0x0000, 0x7FFF, 0x0000
-	.2byte 0x0000, 0x0000, 0xFFF0, 0xFFF0, 0x0100, 0x0000, 0x7FFE, 0x0000
-	.2byte 0x0000, 0x0000, 0xE090, 0x0856, 0xE0A8, 0x0856, 0x27A3, 0x27A3
-	.2byte 0xD0D8, 0x084F, 0xDDAC, 0x0856, 0x0000, 0x0000, 0xE0B8, 0x0856
-	.2byte 0xFEE9, 0x080F, 0x0000, 0x0007, 0x0010, 0x0007, 0x0020, 0x0007
+	@ ANALYSIS: RAW_BLOCK size=0x20C
+	.2byte 0x0000, 0x0007, 0x0010, 0x0007, 0x0020, 0x0007
 	.2byte 0x0030, 0x0007, 0xFFFF, 0x0000, 0x0000, 0x0047, 0x0010, 0x0047
 	.2byte 0x0020, 0x0047, 0x0030, 0x0047, 0xFFFF, 0x0000, 0x0000, 0x0007
 	.2byte 0x0010, 0x0007, 0x0020, 0x0007, 0xFFFF, 0x0000, 0x0000, 0x0047
