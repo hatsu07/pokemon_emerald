@@ -1359,10 +1359,10 @@ BattleAnimScript_082799F0: @ 0x082799F0
 	ba_waitforvisualfinish
 	ba_delay 20
 	ba_playsewithpan 0x00C2, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F270, ANIM_ATTACKER, 2, 0, 20, -28
+	ba_createsprite gAngerMarkSpriteTemplate, ANIM_ATTACKER, 2, 0, 20, -28
 	ba_waitforvisualfinish
 	ba_playsewithpan 0x00C2, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F270, ANIM_ATTACKER, 2, 0, 20, -28
+	ba_createsprite gAngerMarkSpriteTemplate, ANIM_ATTACKER, 2, 0, 20, -28
 	ba_waitforvisualfinish
 	ba_delay 10
 	ba_createvisualtask AnimTask_SwayMon, 5, 0, 16, 0x1800, 8, 0
@@ -1395,7 +1395,7 @@ BattleAnimScript_08279AF6: @ 0x08279AF6
 	ba_waitforvisualfinish
 	ba_delay 20
 	ba_playsewithpan 0x00C2, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F270, ANIM_ATTACKER, 2, 0, 20, -28
+	ba_createsprite gAngerMarkSpriteTemplate, ANIM_ATTACKER, 2, 0, 20, -28
 	ba_waitforvisualfinish
 	ba_delay 5
 	ba_createvisualtask sub_0815C2E4, 5
@@ -1416,7 +1416,7 @@ BattleAnimScript_08279AF6: @ 0x08279AF6
 	ba_goto BattleAnimScript_082799EB
 BattleAnimScript_08279BC3: @ 0x08279BC3
 	ba_playsewithpan 0x00C2, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856F270, ANIM_ATTACKER, 2, 0, 20, -28
+	ba_createsprite gAngerMarkSpriteTemplate, ANIM_ATTACKER, 2, 0, 20, -28
 	ba_waitforvisualfinish
 	ba_delay 5
 	ba_createsprite 0x0855A958, ANIM_ATTACKER, 2, 4, 4
@@ -2357,10 +2357,10 @@ Move_RAGE:
 	ba_monbg ANIM_TARGET
 	ba_setalpha 12, 8
 	ba_createvisualtask AnimTask_BlendMonInAndOut, 3, 0, 31, 10, 0, 2
-	ba_createsprite 0x0856F270, ANIM_ATTACKER, 2, 0, -20, -28
+	ba_createsprite gAngerMarkSpriteTemplate, ANIM_ATTACKER, 2, 0, -20, -28
 	ba_playsewithpan 0x00C2, SOUND_PAN_ATTACKER
 	ba_delay 20
-	ba_createsprite 0x0856F270, ANIM_ATTACKER, 2, 0, 20, -28
+	ba_createsprite gAngerMarkSpriteTemplate, ANIM_ATTACKER, 2, 0, 20, -28
 	ba_playsewithpan 0x00C2, SOUND_PAN_ATTACKER
 	ba_waitforvisualfinish
 	ba_createsprite 0x0855A958, ANIM_ATTACKER, 2, 4, 6
@@ -2858,14 +2858,14 @@ Move_SWAGGER:
 	ba_createvisualtask sub_08105304, 2
 	ba_playsewithpan 0x00C1, SOUND_PAN_ATTACKER
 	ba_waitforvisualfinish
-	ba_createsprite 0x0856F23C, ANIM_ATTACKER, 2
+	ba_createsprite gBreathPuffSpriteTemplate, ANIM_ATTACKER, 2
 	ba_loopsewithpan 0x00C1, SOUND_PAN_ATTACKER, 4, 2
 	ba_waitforvisualfinish
 	ba_delay 24
-	ba_createsprite 0x0856F270, ANIM_TARGET, 2, 1, -20, -28
+	ba_createsprite gAngerMarkSpriteTemplate, ANIM_TARGET, 2, 1, -20, -28
 	ba_playsewithpan 0x00C2, SOUND_PAN_TARGET
 	ba_delay 12
-	ba_createsprite 0x0856F270, ANIM_TARGET, 2, 1, 20, -28
+	ba_createsprite gAngerMarkSpriteTemplate, ANIM_TARGET, 2, 1, 20, -28
 	ba_playsewithpan 0x00C2, SOUND_PAN_TARGET
 	ba_waitforvisualfinish
 	ba_end
@@ -3065,10 +3065,10 @@ Move_TORMENT:
 	ba_createvisualtask sub_0815AF2C, 2
 	ba_waitforvisualfinish
 	ba_createvisualtask AnimTask_BlendMonInAndOut, 2, 1, 31, 10, 1, 1
-	ba_createsprite 0x0856F270, ANIM_TARGET, 2, 1, -20, -28
+	ba_createsprite gAngerMarkSpriteTemplate, ANIM_TARGET, 2, 1, -20, -28
 	ba_playsewithpan 0x00C2, SOUND_PAN_TARGET
 	ba_delay 20
-	ba_createsprite 0x0856F270, ANIM_TARGET, 2, 1, 20, -28
+	ba_createsprite gAngerMarkSpriteTemplate, ANIM_TARGET, 2, 1, 20, -28
 	ba_playsewithpan 0x00C2, SOUND_PAN_TARGET
 	ba_end
 Move_MEMENTO:
@@ -3169,11 +3169,11 @@ Move_TAUNT:
 	ba_loopsewithpan 0x00A7, SOUND_PAN_ATTACKER, 16, 2
 	ba_waitforvisualfinish
 	ba_delay 8
-	ba_createsprite 0x0856F270, ANIM_TARGET, 2, 1, -20, -28
+	ba_createsprite gAngerMarkSpriteTemplate, ANIM_TARGET, 2, 1, -20, -28
 	ba_playsewithpan 0x00C2, SOUND_PAN_TARGET
 	ba_waitforvisualfinish
 	ba_delay 12
-	ba_createsprite 0x0856F270, ANIM_TARGET, 2, 1, 20, -28
+	ba_createsprite gAngerMarkSpriteTemplate, ANIM_TARGET, 2, 1, 20, -28
 	ba_playsewithpan 0x00C2, SOUND_PAN_TARGET
 	ba_end
 Move_HELPING_HAND:
@@ -3913,7 +3913,7 @@ Move_BULK_UP:
 	ba_createvisualtask sub_08105304, 2
 	ba_playsewithpan 0x00C1, SOUND_PAN_ATTACKER
 	ba_waitforvisualfinish
-	ba_createsprite 0x0856F23C, ANIM_ATTACKER, 2
+	ba_createsprite gBreathPuffSpriteTemplate, ANIM_ATTACKER, 2
 	ba_loopsewithpan 0x00C1, SOUND_PAN_ATTACKER, 4, 2
 	ba_waitforvisualfinish
 	ba_end

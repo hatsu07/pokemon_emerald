@@ -2791,19 +2791,44 @@ gSplashAffineAnim: @ 0x0856F1CC
 	@ pret/pokeemerald-jp direct xref for 0x0856F1EC: battle_anim_effects_2.s: sub_08105304
 	.globl gBattleAnimEffects2Data_0856F1EC
 gBattleAnimEffects2Data_0856F1EC: @ 0x0856F1EC
-	@ analyzed canonical ROM range 0x0856F1EC-0x0856F287
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x9C
-	.2byte 0xFFFC, 0xFFFB, 0x0C00, 0x0000, 0x0000, 0x0000, 0x1800, 0x0000
-	.2byte 0x0004, 0x0005, 0x0C00, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
-	.2byte 0x0000, 0x0044, 0x0004, 0x0068, 0x0008, 0x0044, 0x000C, 0x0044
-	.2byte 0xFFFF, 0x0000, 0x0000, 0x0004, 0x0004, 0x0028, 0x0008, 0x0004
-	.2byte 0x000C, 0x0004, 0xFFFF, 0x0000, 0xF20C, 0x0856, 0xF220, 0x0856
-	.2byte 0x2766, 0x2766, 0xD018, 0x084F, 0xF234, 0x0856, 0x0000, 0x0000
-	.2byte 0xF310, 0x082B, 0x536D, 0x0810, 0x000B, 0x000B, 0x0800, 0x0000
-	.2byte 0xFFF5, 0xFFF5, 0x0800, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
-	.2byte 0xF254, 0x0856, 0x2767, 0x2767, 0xD078, 0x084F, 0xF304, 0x082B
-	.2byte 0x0000, 0x0000, 0xF26C, 0x0856, 0x53FD, 0x0810
+	.globl gSwaggerBulkUpAffineAnim
+gSwaggerBulkUpAffineAnim: @ 0x0856F1EC
+	rodata_affine_anim_frame -4, -5, 0x0C00, 0
+	rodata_affine_anim_frame 0, 0, 0x1800, 0
+	rodata_affine_anim_frame 4, 5, 0x0C00, 0
+	rodata_affine_anim_end
+	.globl gBreathPuffAnim_Left
+gBreathPuffAnim_Left: @ 0x0856F20C
+	rodata_anim_frame 0, 4, 1
+	rodata_anim_frame 4, 40, 1
+	rodata_anim_frame 8, 4, 1
+	rodata_anim_frame 12, 4, 1
+	rodata_anim_end
+	.globl gBreathPuffAnim_Right
+gBreathPuffAnim_Right: @ 0x0856F220
+	rodata_anim_frame 0, 4
+	rodata_anim_frame 4, 40
+	rodata_anim_frame 8, 4
+	rodata_anim_frame 12, 4
+	rodata_anim_end
+	.globl gBreathPuffAnims
+gBreathPuffAnims: @ 0x0856F234
+	semantic_anim_table_entry gBreathPuffAnim_Left
+	semantic_anim_table_entry gBreathPuffAnim_Right
+	.globl gBreathPuffSpriteTemplate
+gBreathPuffSpriteTemplate: @ 0x0856F23C
+	rodata_sprite_template 0x2766, 0x2766, gBattleAnimOam_AffineOff_ObjNormal_16x16, gBreathPuffAnims, 0, gDummySpriteAffineAnimTable, Anim_BreathPuff
+	.globl gAngerMarkAffineAnim
+gAngerMarkAffineAnim: @ 0x0856F254
+	rodata_affine_anim_frame 11, 11, 0x0800, 0
+	rodata_affine_anim_frame -11, -11, 0x0800, 0
+	rodata_affine_anim_end
+	.globl gAngerMarkAffineAnims
+gAngerMarkAffineAnims: @ 0x0856F26C
+	semantic_affine_anim_table_entry gAngerMarkAffineAnim
+	.globl gAngerMarkSpriteTemplate
+gAngerMarkSpriteTemplate: @ 0x0856F270
+	rodata_sprite_template 0x2767, 0x2767, gBattleAnimOam_084FD078, gDummySpriteAnimTable, 0, gAngerMarkAffineAnims, Anim_AngerMark
 	@ pret/pokeemerald-jp direct xref for 0x0856F288: battle_anim_effects_2.s: sub_08105488
 	.globl gBattleAnimEffects2Data_0856F288
 gBattleAnimEffects2Data_0856F288: @ 0x0856F288
