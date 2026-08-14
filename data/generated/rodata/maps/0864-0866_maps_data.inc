@@ -1737,13 +1737,23 @@ gFrenzyPlantRootSpriteTemplate: @ 0x0856E148
 	rodata_sprite_template 0x27EF, 0x27EF, gBattleAnimOam_AffineOff_ObjNormal_32x32, gIngrainRootAnims, 0, gDummySpriteAffineAnimTable, AnimFrenzyPlantRoot
 	.globl gBattleAnimEffects1Data_0856E160
 gBattleAnimEffects1Data_0856E160: @ 0x0856E160
-	@ analyzed canonical ROM range 0x0856E160-0x0856E2E3
+	.globl gIngrainOrbAnim
+gIngrainOrbAnim: @ 0x0856E160
+	rodata_anim_frame 3, 3
+	rodata_anim_frame 0, 5
+	rodata_anim_jump 0
+	.globl gIngrainOrbAnims
+gIngrainOrbAnims: @ 0x0856E16C
+	semantic_anim_table_entry gIngrainOrbAnim
+	.globl gIngrainOrbSpriteTemplate
+gIngrainOrbSpriteTemplate: @ 0x0856E170
+	rodata_sprite_template 0x27A3, 0x27A3, gBattleAnimOam_AffineOff_ObjNormal_8x8, gIngrainOrbAnims, 0, gDummySpriteAffineAnimTable, AnimIngrainOrb
+	.globl gBattleAnimEffects1Data_0856E188
+gBattleAnimEffects1Data_0856E188: @ 0x0856E188
+	@ analyzed canonical ROM range 0x0856E188-0x0856E2E3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x184
-	.2byte 0x0003, 0x0003
-	.2byte 0x0000, 0x0005, 0xFFFE, 0x0000, 0xE160, 0x0856, 0x27A3, 0x27A3
-	.2byte 0xD010, 0x084F, 0xE16C, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B
-	.2byte 0x0185, 0x0810, 0x0000, 0x001E, 0xFFFF, 0x0000, 0xE188, 0x0856
+	@ ANALYSIS: RAW_BLOCK size=0x15C
+	.2byte 0x0000, 0x001E, 0xFFFF, 0x0000, 0xE188, 0x0856
 	.2byte 0x0000, 0x0000, 0x0AFC, 0x0000, 0x0000, 0x0000, 0x1404, 0x0000
 	.2byte 0x0000, 0x0000, 0x0AFC, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x02FF, 0x0000, 0x0000, 0x0000, 0x0401, 0x0000
