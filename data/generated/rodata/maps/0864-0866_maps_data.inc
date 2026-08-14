@@ -2359,12 +2359,24 @@ gHornHitSpriteTemplate: @ 0x0856EB28
 	rodata_sprite_template 0x2724, 0x2724, gBattleAnimOam_AffineOff_ObjNormal_32x32, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08103094
 	.globl gBattleAnimEffects1Data_0856EB40
 gBattleAnimEffects1Data_0856EB40: @ 0x0856EB40
-	@ analyzed canonical ROM range 0x0856EB40-0x0856EC03
+	.globl gSuperFangAnim
+gSuperFangAnim: @ 0x0856EB40
+	rodata_anim_frame 0, 2
+	rodata_anim_frame 16, 2
+	rodata_anim_frame 32, 2
+	rodata_anim_frame 48, 2
+	rodata_anim_end
+	.globl gSuperFangAnims
+gSuperFangAnims: @ 0x0856EB54
+	semantic_anim_table_entry gSuperFangAnim
+	.globl gSuperFangSpriteTemplate
+gSuperFangSpriteTemplate: @ 0x0856EB58
+	rodata_sprite_template 0x27D0, 0x27D0, gBattleAnimOam_AffineOff_ObjNormal_32x32, gSuperFangAnims, 0, gDummySpriteAffineAnimTable, sub_0810341C
+	.globl gBattleAnimEffects1Data_0856EB70
+gBattleAnimEffects1Data_0856EB70: @ 0x0856EB70
+	@ analyzed canonical ROM range 0x0856EB70-0x0856EC03
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC4
-	.2byte 0x0000, 0x0002, 0x0010, 0x0002, 0x0020, 0x0002, 0x0030, 0x0002
-	.2byte 0xFFFF, 0x0000, 0xEB40, 0x0856, 0x27D0, 0x27D0, 0xD020, 0x084F
-	.2byte 0xEB54, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B, 0x341D, 0x0810
+	@ ANALYSIS: RAW_BLOCK size=0x94
 	.2byte 0x0000, 0x000A, 0xFFFF, 0x0000, 0x0004, 0x000A, 0xFFFF, 0x0000
 	.2byte 0x0008, 0x0029, 0xFFFF, 0x0000, 0x000C, 0x000A, 0xFFFF, 0x0000
 	.2byte 0x0010, 0x000A, 0xFFFF, 0x0000, 0x0014, 0x000A, 0xFFFF, 0x0000

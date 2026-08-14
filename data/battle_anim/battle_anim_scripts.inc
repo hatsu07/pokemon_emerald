@@ -2613,7 +2613,7 @@ Move_SUPER_FANG:
 	ba_delay 20
 	ba_createsprite 0x0855A958, ANIM_ATTACKER, 2, 4, 4
 	ba_delay 4
-	ba_createsprite 0x0856EB58, ANIM_TARGET, 2
+	ba_createsprite gSuperFangSpriteTemplate, ANIM_TARGET, 2
 	ba_playsewithpan 0x00A1, SOUND_PAN_TARGET
 	ba_delay 8
 	ba_createsprite 0x08572E70, ANIM_ATTACKER, 2, 1, 3, 1, 0x085F, 14, 0x7FFF, 14
