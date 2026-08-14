@@ -3697,9 +3697,9 @@ Move_AROMATHERAPY:
 	ba_createvisualtask sub_0815DF08, 2, 1
 	ba_waitforvisualfinish
 	ba_playsewithpan 0x00E4, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856E778, ANIM_ATTACKER, 16, -15, 0, 0, 0, 32, 60, 1
+	ba_createsprite gAromatherapySparkleSpriteTemplate, ANIM_ATTACKER, 16, -15, 0, 0, 0, 32, 60, 1
 	ba_delay 8
-	ba_createsprite 0x0856E778, ANIM_ATTACKER, 16, 12, -5, 0, 0, 32, 60, 1
+	ba_createsprite gAromatherapySparkleSpriteTemplate, ANIM_ATTACKER, 16, 12, -5, 0, 0, 32, 60, 1
 	ba_waitforvisualfinish
 	ba_playsewithpan 0x0066, SOUND_PAN_ATTACKER
 	ba_createsprite 0x08572E58, ANIM_ATTACKER, 0, 43, 3, 10, 0, 0x33ED
@@ -7108,9 +7108,9 @@ Move_HEAL_BELL:
 	ba_unloadspritegfx 0x27DB
 	ba_loadspritegfx 0x2741
 	ba_playsewithpan 0x00E4, SOUND_PAN_ATTACKER
-	ba_createsprite 0x0856E778, ANIM_ATTACKER, 16, -15, 0, 0, 0, 32, 60, 1
+	ba_createsprite gAromatherapySparkleSpriteTemplate, ANIM_ATTACKER, 16, -15, 0, 0, 0, 32, 60, 1
 	ba_delay 8
-	ba_createsprite 0x0856E778, ANIM_ATTACKER, 16, 12, -5, 0, 0, 32, 60, 1
+	ba_createsprite gAromatherapySparkleSpriteTemplate, ANIM_ATTACKER, 16, 12, -5, 0, 0, 32, 60, 1
 	ba_waitforvisualfinish
 	ba_unloadspritegfx 0x2741
 	ba_loadspritegfx 0x27DB
@@ -8392,9 +8392,9 @@ Move_COSMIC_POWER:
 	ba_waitbgfadein
 	ba_delay 70
 	ba_createvisualtask sub_0815914C, 5, 228, -64
-	ba_createsprite 0x0856E760, ANIM_ATTACKER, 2, -15, 0, 0, 0, 32, 60
+	ba_createsprite gHealingSparkleSpriteTemplate, ANIM_ATTACKER, 2, -15, 0, 0, 0, 32, 60
 	ba_delay 8
-	ba_createsprite 0x0856E760, ANIM_ATTACKER, 2, 12, -5, 0, 0, 32, 60
+	ba_createsprite gHealingSparkleSpriteTemplate, ANIM_ATTACKER, 2, 12, -5, 0, 0, 32, 60
 	ba_delay 40
 	ba_createvisualtask sub_08117E60, 2, 0, 15, 0, 0
 	ba_waitforvisualfinish
@@ -9333,9 +9333,9 @@ BattleAnimScript_08285E7F: @ 0x08285E7F
 	ba_createsprite 0x085717E8, ANIM_TARGET, 2, -48, 24, 1
 	ba_return
 BattleAnimScript_08285F3B: @ 0x08285F3B
-	ba_createsprite 0x0856E760, ANIM_ATTACKER, 2, -15, 0, 0, 0, 32, 60
+	ba_createsprite gHealingSparkleSpriteTemplate, ANIM_ATTACKER, 2, -15, 0, 0, 0, 32, 60
 	ba_delay 8
-	ba_createsprite 0x0856E760, ANIM_ATTACKER, 2, 12, -5, 0, 0, 32, 60
+	ba_createsprite gHealingSparkleSpriteTemplate, ANIM_ATTACKER, 2, 12, -5, 0, 0, 32, 60
 	ba_delay 8
 	ba_return
 BattleAnimScript_08285F66: @ 0x08285F66

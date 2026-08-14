@@ -2104,18 +2104,32 @@ gMilkDrinkDropletAffineAnims: @ 0x0856E718
 	.globl gMilkDrinkDropletSpriteTemplate
 gMilkDrinkDropletSpriteTemplate: @ 0x0856E720
 	rodata_sprite_template 0x2773, 0x2773, gBattleAnimOam_084FD1A0, gDummySpriteAnimTable, 0, gMilkDrinkDropletAffineAnims, sub_0810191C
-	.globl gBattleAnimEffects1Data_0856E738
-gBattleAnimEffects1Data_0856E738: @ 0x0856E738
-	@ analyzed canonical ROM range 0x0856E738-0x0856E8B3
+	.globl gHealingSparkleAnim
+gHealingSparkleAnim: @ 0x0856E738
+	rodata_anim_frame 0, 7
+	rodata_anim_frame 16, 7
+	rodata_anim_frame 32, 7
+	rodata_anim_frame 48, 7
+	rodata_anim_frame 64, 7
+	rodata_anim_frame 80, 7
+	rodata_anim_frame 96, 7
+	rodata_anim_frame 112, 7
+	rodata_anim_jump 0
+	.globl gHealingSparkleAnims
+gHealingSparkleAnims: @ 0x0856E75C
+	semantic_anim_table_entry gHealingSparkleAnim
+	.globl gHealingSparkleSpriteTemplate
+gHealingSparkleSpriteTemplate: @ 0x0856E760
+	rodata_sprite_template 0x2741, 0x2741, gBattleAnimOam_AffineOff_ObjNormal_32x32, gHealingSparkleAnims, 0, gDummySpriteAffineAnimTable, sub_08101B5C
+	.globl gAromatherapySparkleSpriteTemplate
+gAromatherapySparkleSpriteTemplate: @ 0x0856E778
+	rodata_sprite_template 0x2741, 0x2741, gBattleAnimOam_AffineOff_ObjNormal_32x32, gHealingSparkleAnims, 0, gDummySpriteAffineAnimTable, sub_08101BAC
+	.globl gBattleAnimEffects1Data_0856E790
+gBattleAnimEffects1Data_0856E790: @ 0x0856E790
+	@ analyzed canonical ROM range 0x0856E790-0x0856E8B3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x17C
-	.2byte 0x0000, 0x0007
-	.2byte 0x0010, 0x0007, 0x0020, 0x0007, 0x0030, 0x0007, 0x0040, 0x0007
-	.2byte 0x0050, 0x0007, 0x0060, 0x0007, 0x0070, 0x0007, 0xFFFE, 0x0000
-	.2byte 0xE738, 0x0856, 0x2741, 0x2741, 0xD020, 0x084F, 0xE75C, 0x0856
-	.2byte 0x0000, 0x0000, 0xF310, 0x082B, 0x1B5D, 0x0810, 0x2741, 0x2741
-	.2byte 0xD020, 0x084F, 0xE75C, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B
-	.2byte 0x1BAD, 0x0810, 0x0000, 0x000A, 0x0004, 0x000A, 0x0008, 0x000A
+	@ ANALYSIS: RAW_BLOCK size=0x124
+	.2byte 0x0000, 0x000A, 0x0004, 0x000A, 0x0008, 0x000A
 	.2byte 0x000C, 0x000A, 0x0010, 0x001A, 0x0010, 0x0005, 0x0014, 0x0005
 	.2byte 0x0018, 0x000F, 0xFFFF, 0x0000, 0x0000, 0x004A, 0x0004, 0x004A
 	.2byte 0x0008, 0x004A, 0x000C, 0x004A, 0x0010, 0x005A, 0x0010, 0x0045
