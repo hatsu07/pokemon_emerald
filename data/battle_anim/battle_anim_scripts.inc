@@ -2787,15 +2787,15 @@ Move_ENDURE:
 	ba_waitforvisualfinish
 	ba_end
 BattleAnimScript_0827BC53: @ 0x0827BC53
-	ba_createsprite 0x0856E970, ANIM_ATTACKER, 2, 0, -24, 26, 2
+	ba_createsprite gEndureFocusEnergySpriteTemplate, ANIM_ATTACKER, 2, 0, -24, 26, 2
 	ba_delay 4
-	ba_createsprite 0x0856E970, ANIM_ATTACKER, 2, 0, 14, 28, 1
+	ba_createsprite gEndureFocusEnergySpriteTemplate, ANIM_ATTACKER, 2, 0, 14, 28, 1
 	ba_delay 4
-	ba_createsprite 0x0856E970, ANIM_ATTACKER, 2, 0, -5, 10, 2
+	ba_createsprite gEndureFocusEnergySpriteTemplate, ANIM_ATTACKER, 2, 0, -5, 10, 2
 	ba_delay 4
-	ba_createsprite 0x0856E970, ANIM_ATTACKER, 2, 0, 28, 26, 3
+	ba_createsprite gEndureFocusEnergySpriteTemplate, ANIM_ATTACKER, 2, 0, 28, 26, 3
 	ba_delay 4
-	ba_createsprite 0x0856E970, ANIM_ATTACKER, 2, 0, -12, 0, 1
+	ba_createsprite gEndureFocusEnergySpriteTemplate, ANIM_ATTACKER, 2, 0, -12, 0, 1
 	ba_return
 Move_CHARM:
 	ba_loadspritegfx 0x27E2

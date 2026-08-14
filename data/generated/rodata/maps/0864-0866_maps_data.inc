@@ -1410,6 +1410,7 @@ gItemUseYesNoCallbacks: @ 0x0856DCCC
 	.set gBattleAnimOam_AffineOff_ObjNormal_16x16, 0x084FD018
 	.set gBattleAnimOam_AffineOff_ObjNormal_32x32, 0x084FD020
 	.set gBattleAnimOam_AffineOff_ObjNormal_32x16, 0x084FD040
+	.set gBattleAnimOam_084FD060, 0x084FD060
 	.set gBattleAnimOam_084FD078, 0x084FD078
 	.set gBattleAnimOam_AffineOff_ObjNormal_8x16, 0x084FD050
 	.set gBattleAnimOam_AffineOff_ObjNormal_64x64, 0x084FD080
@@ -2225,15 +2226,25 @@ gFalseSwipeSlashSpriteTemplate: @ 0x0856E928
 	.globl gFalseSwipeSliceSpriteTemplate
 gFalseSwipeSliceSpriteTemplate: @ 0x0856E940
 	rodata_sprite_template 0x282E, 0x282E, gBattleAnimOam_AffineOff_ObjNormal_32x32, gSlashAnims, 0, gDummySpriteAffineAnimTable, sub_08102840
-	.globl gBattleAnimEffects1Data_0856E958
-gBattleAnimEffects1Data_0856E958: @ 0x0856E958
-	@ analyzed canonical ROM range 0x0856E958-0x0856EA9F
+	.globl gEndureFocusEnergyAnim
+gEndureFocusEnergyAnim: @ 0x0856E958
+	rodata_anim_frame 0, 4
+	rodata_anim_frame 8, 12
+	rodata_anim_frame 16, 4
+	rodata_anim_frame 24, 4
+	rodata_anim_end
+	.globl gEndureFocusEnergyAnims
+gEndureFocusEnergyAnims: @ 0x0856E96C
+	semantic_anim_table_entry gEndureFocusEnergyAnim
+	.globl gEndureFocusEnergySpriteTemplate
+gEndureFocusEnergySpriteTemplate: @ 0x0856E970
+	rodata_sprite_template 0x27C8, 0x27C8, gBattleAnimOam_084FD060, gEndureFocusEnergyAnims, 0, gDummySpriteAffineAnimTable, sub_08102928
+	.globl gBattleAnimEffects1Data_0856E988
+gBattleAnimEffects1Data_0856E988: @ 0x0856E988
+	@ analyzed canonical ROM range 0x0856E988-0x0856EA9F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x148
-	.2byte 0x0000, 0x0004, 0x0008, 0x000C, 0x0010, 0x0004
-	.2byte 0x0018, 0x0004, 0xFFFF, 0x0000, 0xE958, 0x0856, 0x27C8, 0x27C8
-	.2byte 0xD060, 0x084F, 0xE96C, 0x0856, 0x0000, 0x0000, 0xF310, 0x082B
-	.2byte 0x2929, 0x0810, 0x0000, 0x0012, 0x0000, 0x0006, 0x0010, 0x0012
+	@ ANALYSIS: RAW_BLOCK size=0x118
+	.2byte 0x0000, 0x0012, 0x0000, 0x0006, 0x0010, 0x0012
 	.2byte 0x0000, 0x0006, 0x0010, 0x0006, 0x0020, 0x0012, 0x0010, 0x0006
 	.2byte 0x0020, 0x0006, 0x0030, 0x0012, 0x0020, 0x0006, 0x0030, 0x0006
 	.2byte 0x0040, 0x0012, 0x0030, 0x0006, 0x0040, 0x0036, 0xFFFF, 0x0000
