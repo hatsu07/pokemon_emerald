@@ -2189,13 +2189,18 @@ gLockOnTargetSpriteTemplate: @ 0x0856E884
 	.globl gLockOnRingSpriteTemplate
 gLockOnRingSpriteTemplate: @ 0x0856E89C
 	rodata_sprite_template 0x271E, 0x271E, gBattleAnimOam_AffineOff_ObjNormal_16x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_081020E8
-	@ pret/pokeemerald-jp direct xref for 0x0856E8B4: battle_anim_effects_1.s: sub_08101E24
-	.globl gBattleAnimEffects1Data_0856E8B4
-gBattleAnimEffects1Data_0856E8B4: @ 0x0856E8B4
-	@ analyzed canonical ROM range 0x0856E8B4-0x0856EA9F
+	.globl gLockOnRingOffsets
+gLockOnRingOffsets: @ 0x0856E8B4
+	.byte 64, 64
+	.byte 0, -64
+	.byte -64, 64
+	.byte 32, -32
+	.globl gBattleAnimEffects1Data_0856E8BC
+gBattleAnimEffects1Data_0856E8BC: @ 0x0856E8BC
+	@ analyzed canonical ROM range 0x0856E8BC-0x0856EA9F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x1EC
-	.2byte 0x4040, 0xC000, 0x40C0, 0xE020, 0x0000, 0x0000, 0xF2F8, 0x082B
+	@ ANALYSIS: RAW_BLOCK size=0x1E4
+	.2byte 0x0000, 0x0000, 0xF2F8, 0x082B
 	.2byte 0xF304, 0x082B, 0x0000, 0x0000, 0xF310, 0x082B, 0x2191, 0x0810
 	.2byte 0x0000, 0x0000, 0xF2F8, 0x082B, 0xF304, 0x082B, 0x0000, 0x0000
 	.2byte 0xF310, 0x082B, 0x23E1, 0x0810, 0x0000, 0x0004, 0x0010, 0x0004

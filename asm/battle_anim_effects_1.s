@@ -6023,7 +6023,7 @@ _08101EBA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08101EC8: .4byte gBattleAnimEffects1Data_0856E8B4
+_08101EC8: .4byte gLockOnRingOffsets
 _08101ECC: .4byte 0x080A67B5
 _08101ED0: .4byte 0x08101ED5
 	thumb_func_end sub_08101E24
