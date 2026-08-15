@@ -101,9 +101,9 @@ LoadCopyrightGraphics: @ 0x0816CA80
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816CABC: .4byte gIntroData_085C0C94
-_0816CAC0: .4byte gIntroData_085C0EF8
-_0816CAC4: .4byte gBattleU8Table_Rom_5C0C74
+_0816CABC: .4byte gIntroCopyright_Gfx
+_0816CAC0: .4byte gIntroCopyright_Tilemap
+_0816CAC4: .4byte gIntroCopyright_Pal
 	thumb_func_end LoadCopyrightGraphics
 
 	thumb_func_start SerialCB_CopyrightScreen

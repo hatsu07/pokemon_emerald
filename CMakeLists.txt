@@ -1253,6 +1253,63 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # END POKEBLOCK USE SCREEN EXACT PIPELINE
 
 
+    # BEGIN INTRO COPYRIGHT EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/intro/copyright.4bpp.lz")
+        set(INTRO_COPYRIGHT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/intro/copyright.png")
+        set(INTRO_COPYRIGHT_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/copyright_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${INTRO_COPYRIGHT_PLAN}"
+                --stem copyright_gfx
+                --raw-size 0x4E0
+                "${INTRO_COPYRIGHT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO_COPYRIGHT_PNG}"
+                "${INTRO_COPYRIGHT_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/intro/copyright.bin.lz")
+        set(INTRO_COPYRIGHT_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/intro/copyright.tilemap.txt")
+        set(INTRO_COPYRIGHT_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/copyright_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${INTRO_COPYRIGHT_PLAN}"
+                --stem copyright_tilemap
+                "${INTRO_COPYRIGHT_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO_COPYRIGHT_TILEMAP}"
+                "${INTRO_COPYRIGHT_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/intro/copyright.gbapal")
+        set(INTRO_COPYRIGHT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/intro/copyright.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INTRO_COPYRIGHT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INTRO_COPYRIGHT_PNG}" "${GBAGFX}"
+            VERBATIM)
+    # END INTRO COPYRIGHT EXACT PIPELINE
+
+
     # BEGIN LEGACY POKENAV HOENN MAP EXACT PIPELINE
     elseif("${RELATIVE_OUTPUT}" STREQUAL
             "build/graphics/pokenav/legacy/hoenn_map.4bpp.lz")
