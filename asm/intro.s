@@ -1178,7 +1178,7 @@ _0816D37C:
 	.align 2, 0
 _0816D410: .4byte 0x020205AC
 _0816D414: .4byte 0x0816F7B9
-_0816D418: .4byte gIntroData_085C5E78
+_0816D418: .4byte sAnims_PlayerBicycle
 _0816D41C: .4byte 0x03005B60
 _0816D420: .4byte sSpriteTemplate_Volbeat
 _0816D424: .4byte 0x0816F895
@@ -6328,7 +6328,7 @@ _0816FBCA:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0816FCBC: .4byte gIntroData_085C5F48
+_0816FCBC: .4byte sGameFreakLetterData
 _0816FCC0: .4byte 0xFFFC0000
 _0816FCC4: .4byte gIntroData_085C6010
 _0816FCC8: .4byte 0x020205AC

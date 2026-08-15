@@ -348,3 +348,179 @@ sAnim_PlayerBicycle_LookForward: @ 0x085C5E68
 .if (. - sGroudonRockData) != 0x160
 .error "Intro Groudon/Bubbles/WaterDrop data 0x085C5D18-0x085C5E77 size mismatch"
 .endif
+
+@ ----------------------------------------------------------------------
+@ Player bicycle animation table and GAME FREAK / PRESENTS logo metadata.
+@ ROM 0x085C5E78-0x085C5FFB.
+
+.set INTRO_GAMEFREAK_G, 0
+.set INTRO_GAMEFREAK_A, 1
+.set INTRO_GAMEFREAK_M, 2
+.set INTRO_GAMEFREAK_E, 3
+.set INTRO_GAMEFREAK_F, 4
+.set INTRO_GAMEFREAK_R, 5
+.set INTRO_GAMEFREAK_K, 6
+
+.set INTRO_PRESENTS_P, 0
+.set INTRO_PRESENTS_R, 1
+.set INTRO_PRESENTS_E, 2
+.set INTRO_PRESENTS_S, 3
+.set INTRO_PRESENTS_N, 4
+.set INTRO_PRESENTS_T, 5
+
+.globl sAnims_PlayerBicycle
+sAnims_PlayerBicycle: @ 0x085C5E78
+	.4byte sAnim_PlayerBicycle_Fast
+	.4byte sAnim_PlayerBicycle_Slow
+	.4byte sAnim_PlayerBicycle_LookBack
+	.4byte sAnim_PlayerBicycle_LookForward
+
+sOamData_GameFreakLetter: @ 0x085C5E88
+	@ DISPLAY_HEIGHT, affine double, normal, 4bpp, square 16x16.
+	rodata_sprite_oam_data 160, 3, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0
+
+sOamData_PresentsLetter: @ 0x085C5E90
+	@ DISPLAY_HEIGHT, affine off, normal, 4bpp, square 8x8.
+	rodata_sprite_oam_data 160, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+sOamData_GameFreakLogo: @ 0x085C5E98
+	@ DISPLAY_HEIGHT, affine double, blend, 4bpp, vertical 32x64.
+	rodata_sprite_oam_data 160, 3, 1, 0, 0, 2, 0, 0, 3, 0, 0, 0, 0
+
+sAnim_GameFreakLetter_G: @ 0x085C5EA0
+	rodata_anim_frame 80, 8
+	rodata_anim_end
+
+sAnim_GameFreakLetter_A: @ 0x085C5EA8
+	rodata_anim_frame 84, 8
+	rodata_anim_end
+
+sAnim_GameFreakLetter_M: @ 0x085C5EB0
+	rodata_anim_frame 88, 8
+	rodata_anim_end
+
+sAnim_GameFreakLetter_E: @ 0x085C5EB8
+	rodata_anim_frame 92, 8
+	rodata_anim_end
+
+sAnim_GameFreakLetter_F: @ 0x085C5EC0
+	rodata_anim_frame 96, 8
+	rodata_anim_end
+
+sAnim_GameFreakLetter_R: @ 0x085C5EC8
+	rodata_anim_frame 100, 8
+	rodata_anim_end
+
+sAnim_GameFreakLetter_K: @ 0x085C5ED0
+	rodata_anim_frame 104, 8
+	rodata_anim_end
+
+sAnim_PresentsLetter_P: @ 0x085C5ED8
+	rodata_anim_frame 112, 8
+	rodata_anim_end
+
+sAnim_PresentsLetter_R: @ 0x085C5EE0
+	rodata_anim_frame 113, 8
+	rodata_anim_end
+
+sAnim_PresentsLetter_E: @ 0x085C5EE8
+	rodata_anim_frame 114, 8
+	rodata_anim_end
+
+sAnim_PresentsLetter_S: @ 0x085C5EF0
+	rodata_anim_frame 115, 8
+	rodata_anim_end
+
+sAnim_PresentsLetter_N: @ 0x085C5EF8
+	rodata_anim_frame 116, 8
+	rodata_anim_end
+
+sAnim_PresentsLetter_T: @ 0x085C5F00
+	rodata_anim_frame 117, 8
+	rodata_anim_end
+
+sAnim_GameFreakLogo: @ 0x085C5F08
+	rodata_anim_frame 128, 8
+	rodata_anim_end
+
+sAnims_GameFreakLetter: @ 0x085C5F10
+	.4byte sAnim_GameFreakLetter_G
+	.4byte sAnim_GameFreakLetter_A
+	.4byte sAnim_GameFreakLetter_M
+	.4byte sAnim_GameFreakLetter_E
+	.4byte sAnim_GameFreakLetter_F
+	.4byte sAnim_GameFreakLetter_R
+	.4byte sAnim_GameFreakLetter_K
+
+sAnims_PresentsLetter: @ 0x085C5F2C
+	.4byte sAnim_PresentsLetter_P
+	.4byte sAnim_PresentsLetter_R
+	.4byte sAnim_PresentsLetter_E
+	.4byte sAnim_PresentsLetter_S
+	.4byte sAnim_PresentsLetter_N
+	.4byte sAnim_PresentsLetter_T
+
+sAnims_GameFreakLogo: @ 0x085C5F44
+	.4byte sAnim_GameFreakLogo
+
+.globl sGameFreakLetterData
+sGameFreakLetterData: @ 0x085C5F48
+	@ Letter animation index, x offset.
+	.2byte INTRO_GAMEFREAK_G, -72
+	.2byte INTRO_GAMEFREAK_A, -56
+	.2byte INTRO_GAMEFREAK_M, -40
+	.2byte INTRO_GAMEFREAK_E, -24
+	.2byte INTRO_GAMEFREAK_F, 8
+	.2byte INTRO_GAMEFREAK_R, 24
+	.2byte INTRO_GAMEFREAK_E, 40
+	.2byte INTRO_GAMEFREAK_A, 56
+	.2byte INTRO_GAMEFREAK_K, 72
+
+sPresentsLetterData: @ 0x085C5F6C
+	@ Letter animation index, x offset.
+	.2byte INTRO_PRESENTS_P, -28
+	.2byte INTRO_PRESENTS_R, -20
+	.2byte INTRO_PRESENTS_E, -12
+	.2byte INTRO_PRESENTS_S, -4
+	.2byte INTRO_PRESENTS_E, 4
+	.2byte INTRO_PRESENTS_N, 12
+	.2byte INTRO_PRESENTS_T, 20
+	.2byte INTRO_PRESENTS_S, 28
+
+sAffineAnim_GameFreak_Small: @ 0x085C5F8C
+	@ AFFINEANIMCMD_FRAME(128, 128, 0, 0)
+	rodata_affine_anim_frame 128, 128, 0, 0
+	rodata_affine_anim_end
+
+sAffineAnim_GameFreak_GrowAndShrink: @ 0x085C5F9C
+	@ AFFINEANIMCMD_FRAME(128, 128, 0, 0)
+	rodata_affine_anim_frame 128, 128, 0, 0
+	@ AFFINEANIMCMD_FRAME(16, 16, 0, 16): duration occupies the packed high byte.
+	rodata_affine_anim_frame 16, 16, 0x1000, 0
+	@ AFFINEANIMCMD_FRAME(-16, -16, 0, 8)
+	rodata_affine_anim_frame -16, -16, 0x0800, 0
+	rodata_affine_anim_end
+
+sAffineAnim_GameFreak_GrowBig: @ 0x085C5FBC
+	@ AFFINEANIMCMD_FRAME(256, 256, 0, 0)
+	rodata_affine_anim_frame 256, 256, 0, 0
+	@ AFFINEANIMCMD_FRAME(8, 8, 0, 48)
+	rodata_affine_anim_frame 8, 8, 0x3000, 0
+	rodata_affine_anim_end
+
+sAffineAnim_GameFreak_GrowMedium: @ 0x085C5FD4
+	@ AFFINEANIMCMD_FRAME(256, 256, 0, 0)
+	rodata_affine_anim_frame 256, 256, 0, 0
+	@ AFFINEANIMCMD_FRAME(2, 2, 0, 48)
+	rodata_affine_anim_frame 2, 2, 0x3000, 0
+	rodata_affine_anim_end
+
+sAffineAnims_GameFreak: @ 0x085C5FEC
+	.4byte sAffineAnim_GameFreak_Small
+	.4byte sAffineAnim_GameFreak_GrowAndShrink
+	.4byte sAffineAnim_GameFreak_GrowBig
+	.4byte sAffineAnim_GameFreak_GrowMedium
+
+.if (. - sAnims_PlayerBicycle) != 0x184
+.error "Intro logo metadata 0x085C5E78-0x085C5FFB size mismatch"
+.endif
