@@ -143,19 +143,14 @@ sLz77Block_085AC938:
 	.2byte 0x300F, 0x301E, 0xF01F, 0xFC03, 0x0300, 0x1BF0, 0x1BF0, 0x03F0
 	.2byte 0x1BF0, 0x0390
 	@ pret/pokeemerald-jp direct xref for 0x085AC95C: cable_car.s: CableCarMainCallback_Setup
-	.globl gCableCarData_085AC95C
-gCableCarData_085AC95C: @ 0x085AC95C
+	@ Cable Car compressed sprite sheets
+	.globl sCableCarSpriteSheets
+sCableCarSpriteSheets: @ 0x085AC95C
 	@ analyzed canonical ROM range 0x085AC95C-0x085AC97B
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	.4byte 0x08DBC238 @ +0x0
-	.4byte 0x00010800 @ +0x4
-	.4byte 0x08DBC538 @ +0x8
-	.4byte 0x00020040 @ +0xC
-	.4byte 0x08DBC568 @ +0x10
-	.4byte 0x00030080 @ +0x14
-	.4byte 0 @ +0x18
-	.4byte 0 @ +0x1C
+	compressed_sprite_sheet gLz77Asset_08DBC238, 0x800, 1
+	compressed_sprite_sheet gLz77Asset_08DBC538, 0x40, 2
+	compressed_sprite_sheet gLz77Asset_08DBC568, 0x80, 3
+	null_compressed_sprite_sheet
 	@ pret/pokeemerald-jp direct xref for 0x085AC97C: cable_car.s: CableCarMainCallback_Setup
 	.globl gCableCarData_085AC97C
 gCableCarData_085AC97C: @ 0x085AC97C

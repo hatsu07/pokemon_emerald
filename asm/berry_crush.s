@@ -3664,7 +3664,7 @@ _0802268C:
 _08022694: .4byte 0x0000FF98
 _08022698: .4byte 0x02021B38
 _0802269C: .4byte 0x02021B3A
-_080226A0: .4byte gBerryCrushData_082C7A80
+_080226A0: .4byte sBerryCrushSpriteSheets
 _080226A4: .4byte gBerryCrushData_082C7AA8
 _080226A8: .4byte gBerryCrushData_082C7B98
 _080226AC: .4byte 0x020205AC

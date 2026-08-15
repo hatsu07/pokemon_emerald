@@ -306,7 +306,7 @@ _0814FE72:
 	adds r0, #1
 	b _08150200
 	.align 2, 0
-_0814FEF4: .4byte gCableCarData_085AC95C
+_0814FEF4: .4byte sCableCarSpriteSheets
 _0814FEF8: .4byte gCableCarData_085AC97C
 _0814FEFC: .4byte gCableCarData_085AC484
 _0814FF00: .4byte 0x0203A878

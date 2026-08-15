@@ -267,21 +267,15 @@ gBerryCrushData_082C7A74: @ 0x082C7A74
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.2byte 0x0005, 0x0006, 0x0007, 0x0008, 0x0009, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x082C7A80: berry_crush.s: sub_08022494
-	.globl gBerryCrushData_082C7A80
-gBerryCrushData_082C7A80: @ 0x082C7A80
+	@ Berry Crush compressed sprite sheets
+	.globl sBerryCrushSpriteSheets
+sBerryCrushSpriteSheets: @ 0x082C7A80
 	@ analyzed canonical ROM range 0x082C7A80-0x082C7AA7
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x28
-	.4byte 0x082C6C14 @ +0x0
-	.4byte 0x00010800 @ +0x4
-	.4byte 0x082C6F40 @ +0x8
-	.4byte 0x00020E00 @ +0xC
-	.4byte 0x082C72BC @ +0x10
-	.4byte 0x00030700 @ +0x14
-	.4byte 0x082C7408 @ +0x18
-	.4byte 0x000402C0 @ +0x1C
-	.4byte 0 @ +0x20
-	.4byte 0 @ +0x24
+	compressed_sprite_sheet gLz77Asset_082C6C14, 0x800, 1
+	compressed_sprite_sheet gLz77Asset_082C6F40, 0xE00, 2
+	compressed_sprite_sheet gLz77Asset_082C72BC, 0x700, 3
+	compressed_sprite_sheet gLz77Asset_082C7408, 0x2C0, 4
+	null_compressed_sprite_sheet
 	@ pret/pokeemerald-jp direct xref for 0x082C7AA8: berry_crush.s: sub_08022494
 	.globl gBerryCrushData_082C7AA8
 gBerryCrushData_082C7AA8: @ 0x082C7AA8

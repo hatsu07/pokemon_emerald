@@ -4,6 +4,19 @@
 	.4byte \size
 	.endm
 
+
+@ struct CompressedSpriteSheet (8 bytes).
+@ The tag is packed after the u16 uncompressed size.
+	.macro compressed_sprite_sheet data, size, tag
+	.4byte \data
+	.2byte \size
+	.2byte \tag
+	.endm
+
+	.macro null_compressed_sprite_sheet
+	compressed_sprite_sheet 0, 0, 0
+	.endm
+
 @ struct WindowTemplate (8 bytes).
 	.macro rodata_window_template bg, left, top, width, height, palette, base_block
 	.byte \bg, \left, \top, \width, \height, \palette
