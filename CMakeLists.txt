@@ -1253,6 +1253,73 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # END POKEBLOCK USE SCREEN EXACT PIPELINE
 
 
+    # BEGIN LEGACY POKENAV HOENN MAP EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/hoenn_map.4bpp.lz")
+        set(LEGACY_POKENAV_HOENN_MAP_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/hoenn_map.png")
+        set(LEGACY_POKENAV_HOENN_MAP_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/hoenn_map_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${LEGACY_POKENAV_HOENN_MAP_PLAN}"
+                --stem hoenn_map_gfx
+                --raw-size 0xFE0
+                "${LEGACY_POKENAV_HOENN_MAP_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LEGACY_POKENAV_HOENN_MAP_PNG}"
+                "${LEGACY_POKENAV_HOENN_MAP_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/hoenn_map.gbapal")
+        set(LEGACY_POKENAV_HOENN_MAP_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/hoenn_map.png")
+        set(LEGACY_POKENAV_HOENN_MAP_PAL_META
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/hoenn_map_palette_meta.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/pokenav_legacy_map_assets.py"
+                palette
+                --metadata "${LEGACY_POKENAV_HOENN_MAP_PAL_META}"
+                "${LEGACY_POKENAV_HOENN_MAP_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LEGACY_POKENAV_HOENN_MAP_PNG}"
+                "${LEGACY_POKENAV_HOENN_MAP_PAL_META}"
+                "${CMAKE_SOURCE_DIR}/tools/pokenav_legacy_map_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/hoenn_map.bin.lz")
+        set(LEGACY_POKENAV_HOENN_MAP_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/hoenn_map.tilemap.txt")
+        set(LEGACY_POKENAV_HOENN_MAP_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/hoenn_map_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${LEGACY_POKENAV_HOENN_MAP_PLAN}"
+                --stem hoenn_map_tilemap
+                "${LEGACY_POKENAV_HOENN_MAP_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LEGACY_POKENAV_HOENN_MAP_TILEMAP}"
+                "${LEGACY_POKENAV_HOENN_MAP_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END LEGACY POKENAV HOENN MAP EXACT PIPELINE
+
+
     # BEGIN LEGACY POKENAV EXACT PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/pokenav/legacy/(screen_a|screen_b)[.](4bpp|gbapal)$")

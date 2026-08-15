@@ -1,6 +1,5 @@
 @ Pokémon Emerald JP - use Pokéblock screen assets
-@ Exact ROM layout: 0x085BE9A0-0x085BED73.
-@ 0x085BED54-0x085BED73 remains intentionally generic until its consumer is proven.
+@ Exact ROM layout: 0x085BE9A0-0x085BED53.
 
 	.globl gUsePokeblockUpDown_Pal
 gUsePokeblockUpDown_Pal: @ 0x085BE9A0
@@ -30,15 +29,4 @@ gUsePokeblockCondition_Pal: @ 0x085BED34
 	.incbin "build/graphics/pokeblock/use_screen/condition.gbapal"
 	.if (. - gUsePokeblockCondition_Pal) != 0x20
 	.error "gUsePokeblockCondition_Pal size mismatch"
-	.endif
-
-	.globl gUsePokeblockData_085BED54
-gUsePokeblockData_085BED54: @ 0x085BED54
-	@ Unresolved 0x20-byte block; kept exact rather than guessing a semantic name.
-	.byte 0x80, 0x01, 0xFD, 0x77, 0x82, 0x57, 0xE1, 0x7B
-	.byte 0x57, 0x02, 0x18, 0x67, 0xE9, 0x67, 0x44, 0x37
-	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x52, 0xCA
-	.if (. - gUsePokeblockData_085BED54) != 0x20
-	.error "gUsePokeblockData_085BED54 size mismatch"
 	.endif
