@@ -326,7 +326,7 @@ _080E1500:
 	.align 2, 0
 _080E152C: .4byte 0x02039C30
 _080E1530: .4byte 0x080E1569
-_080E1534: .4byte gScriptMenuData_08564618
+_080E1534: .4byte sLinkServicesMultichoiceIds
 _080E1538: .4byte 0x03005B60
 _080E153C:
 	movs r0, #0

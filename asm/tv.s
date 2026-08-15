@@ -6375,7 +6375,7 @@ _080EFCE4:
 	b _080EFD48
 	.align 2, 0
 _080EFCF8: .4byte 0x08568BF0
-_080EFCFC: .4byte sPointerTable_085645A0
+_080EFCFC: .4byte gStdStrings
 _080EFD00:
 	ldr r1, _080EFD14
 	lsls r0, r0, #2
@@ -6387,7 +6387,7 @@ _080EFD00:
 	b _080EFD48
 	.align 2, 0
 _080EFD14: .4byte 0x08568BF0
-_080EFD18: .4byte sPointerTable_085645A0
+_080EFD18: .4byte gStdStrings
 _080EFD1C:
 	ldr r1, _080EFD30
 	lsls r0, r0, #2
@@ -6399,7 +6399,7 @@ _080EFD1C:
 	b _080EFD48
 	.align 2, 0
 _080EFD30: .4byte 0x08568BF0
-_080EFD34: .4byte sPointerTable_085645A0
+_080EFD34: .4byte gStdStrings
 _080EFD38:
 	ldr r1, _080EFD4C
 	lsls r0, r0, #2
@@ -6413,7 +6413,7 @@ _080EFD48:
 	bx r0
 	.align 2, 0
 _080EFD4C: .4byte 0x08568BF0
-_080EFD50: .4byte sPointerTable_085645A0
+_080EFD50: .4byte gStdStrings
 	thumb_func_end CopyContestRankToStringVar
 
 	thumb_func_start CopyContestCategoryToStringVar
@@ -6449,7 +6449,7 @@ _080EFD84:
 	b _080EFE04
 	.align 2, 0
 _080EFD98: .4byte 0x08568BF0
-_080EFD9C: .4byte sPointerTable_085645A0
+_080EFD9C: .4byte gStdStrings
 _080EFDA0:
 	ldr r1, _080EFDB4
 	lsls r0, r2, #2
@@ -6461,7 +6461,7 @@ _080EFDA0:
 	b _080EFE04
 	.align 2, 0
 _080EFDB4: .4byte 0x08568BF0
-_080EFDB8: .4byte sPointerTable_085645A0
+_080EFDB8: .4byte gStdStrings
 _080EFDBC:
 	ldr r1, _080EFDD0
 	lsls r0, r2, #2
@@ -6473,7 +6473,7 @@ _080EFDBC:
 	b _080EFE04
 	.align 2, 0
 _080EFDD0: .4byte 0x08568BF0
-_080EFDD4: .4byte sPointerTable_085645A0
+_080EFDD4: .4byte gStdStrings
 _080EFDD8:
 	ldr r1, _080EFDEC
 	lsls r0, r2, #2
@@ -6485,7 +6485,7 @@ _080EFDD8:
 	b _080EFE04
 	.align 2, 0
 _080EFDEC: .4byte 0x08568BF0
-_080EFDF0: .4byte sPointerTable_085645A0
+_080EFDF0: .4byte gStdStrings
 _080EFDF4:
 	ldr r1, _080EFE08
 	lsls r0, r2, #2
@@ -6499,7 +6499,7 @@ _080EFE04:
 	bx r0
 	.align 2, 0
 _080EFE08: .4byte 0x08568BF0
-_080EFE0C: .4byte sPointerTable_085645A0
+_080EFE0C: .4byte gStdStrings
 	thumb_func_end CopyContestCategoryToStringVar
 
 	thumb_func_start SetContestCategoryStringVarForInterview

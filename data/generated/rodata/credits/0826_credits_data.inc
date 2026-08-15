@@ -802,88 +802,100 @@ sMultichoiceLists: @ 0x08564218
 	.if (. - sMultichoiceLists) != 0x388
 	.error "sMultichoiceLists size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x085645A0: scrcmd.s: ScrCmd_bufferstdstring; tv.s: CopyContestCategoryToStringVar, CopyContestRankToStringVar
-	.globl sPointerTable_085645A0
-	@ confirmed contiguous ROM pointer table: 30 entries from this address
-sPointerTable_085645A0:
-	@ analyzed canonical ROM range 0x085645A0-0x08564617
-	@ pointer/nullable table
-	.4byte gText_Rom_5CAC84 @ +0x0
-	.4byte gText_Rom_5CAC8A @ +0x4
-	.4byte gText_Rom_5CAC90 @ +0x8
-	.4byte gText_Rom_5CAC95 @ +0xC
-	.4byte gText_Rom_5CAC9A @ +0x10
-	.4byte gText_Rom_5CACA0 @ +0x14
-	.4byte gText_Rom_5CACA5 @ +0x18
-	.4byte gText_Rom_5CACAA @ +0x1C
-	.4byte gText_Rom_5CACAF @ +0x20
-	.4byte gText_Rom_5CACB4 @ +0x24
-	.4byte gText_Rom_5CACBA @ +0x28
-	.4byte gText_Rom_5CACC0 @ +0x2C
-	.4byte 0x085CACC5 @ +0x30
-	.4byte gText_Rom_5CACCC @ +0x34
-	.4byte gText_Rom_5CACD2 @ +0x38
-	.4byte gText_Rom_5CACD6 @ +0x3C
-	.4byte gText_Rom_5CACDE @ +0x40
-	.4byte gText_Rom_5CACE2 @ +0x44
-	.4byte gText_Rom_5CACE8 @ +0x48
-	.4byte gText_Rom_5CAD53 @ +0x4C
-	.4byte gText_Rom_5CAD58 @ +0x50
-	.4byte gText_Rom_5CAD5C @ +0x54
-	.4byte gText_Rom_5CAD60 @ +0x58
-	.4byte gText_Rom_5CC423 @ +0x5C
-	.4byte gText_Rom_5CC42A @ +0x60
-	.4byte gText_Rom_5CC438 @ +0x64
-	.4byte gText_Rom_5CC431 @ +0x68
-	.4byte gText_Rom_5CC442 @ +0x6C
-	.4byte gText_Rom_5CC44A @ +0x70
-	.4byte gText_Rom_5CC452 @ +0x74
-	@ pret/pokeemerald-jp direct xref for 0x08564618: script_menu.s: sub_080E14CC
-	.globl gScriptMenuData_08564618
-gScriptMenuData_08564618: @ 0x08564618
-	@ analyzed canonical ROM range 0x08564618-0x0856461F
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0x4A, 0x4B, 0x4C, 0x4D, 0x4E, 0x4F, 0x00, 0x00
-	.globl gCreditsPointerTable_Rom_564620
-gCreditsPointerTable_Rom_564620: @ 0x08564620
-	.4byte gText_Rom_5CB194
-	.4byte gText_Rom_5CAC23
-	.4byte gText_Rom_5CADF1
-	.4byte gText_Rom_5CAE0B
-	.4byte gText_Rom_5CADF9
-	.4byte gText_Rom_5CAE02
+	@ Standard strings used by bufferstdstring and TV helpers.
+	.globl gStdStrings
+gStdStrings: @ 0x085645A0
+	.4byte gText_Rom_5CAC84 @ [0]  STDSTRING_COOL
+	.4byte gText_Rom_5CAC8A @ [1]  STDSTRING_BEAUTY
+	.4byte gText_Rom_5CAC90 @ [2]  STDSTRING_CUTE
+	.4byte gText_Rom_5CAC95 @ [3]  STDSTRING_SMART
+	.4byte gText_Rom_5CAC9A @ [4]  STDSTRING_TOUGH
+	.4byte gText_Rom_5CACA0 @ [5]  STDSTRING_NORMAL
+	.4byte gText_Rom_5CACA5 @ [6]  STDSTRING_SUPER
+	.4byte gText_Rom_5CACAA @ [7]  STDSTRING_HYPER
+	.4byte gText_Rom_5CACAF @ [8]  STDSTRING_MASTER
+	.4byte gText_Rom_5CACB4 @ [9]  STDSTRING_COOL2
+	.4byte gText_Rom_5CACBA @ [10] STDSTRING_BEAUTY2
+	.4byte gText_Rom_5CACC0 @ [11] STDSTRING_CUTE2
+	.4byte gText_Rom_5CACC0 + 0x5 @ [12] STDSTRING_SMART2
+	.4byte gText_Rom_5CACCC @ [13] STDSTRING_TOUGH2
+	.4byte gText_Rom_5CACD2 @ [14] STDSTRING_ITEMS
+	.4byte gText_Rom_5CACD6 @ [15] STDSTRING_KEYITEMS
+	.4byte gText_Rom_5CACDE @ [16] STDSTRING_POKEBALLS
+	.4byte gText_Rom_5CACE2 @ [17] STDSTRING_TMHMS
+	.4byte gText_Rom_5CACE8 @ [18] STDSTRING_BERRIES
+	.4byte gText_Rom_5CAD53 @ [19] STDSTRING_SINGLE
+	.4byte gText_Rom_5CAD58 @ [20] STDSTRING_DOUBLE
+	.4byte gText_Rom_5CAD5C @ [21] STDSTRING_MULTI
+	.4byte gText_Rom_5CAD60 @ [22] STDSTRING_MULTI_LINK
+	.4byte gText_Rom_5CC423 @ [23] STDSTRING_BATTLE_TOWER
+	.4byte gText_Rom_5CC42A @ [24] STDSTRING_BATTLE_DOME
+	.4byte gText_Rom_5CC438 @ [25] STDSTRING_BATTLE_FACTORY
+	.4byte gText_Rom_5CC431 @ [26] STDSTRING_BATTLE_PALACE
+	.4byte gText_Rom_5CC442 @ [27] STDSTRING_BATTLE_ARENA
+	.4byte gText_Rom_5CC44A @ [28] STDSTRING_BATTLE_PIKE
+	.4byte gText_Rom_5CC452 @ [29] STDSTRING_BATTLE_PYRAMID
+
+	.if (. - gStdStrings) != 0x78
+	.error "gStdStrings must contain 30 pointers"
+	.endif
+
+	@ MULTI_* ids whose menus use the link-service option tables below.
+	.globl sLinkServicesMultichoiceIds
+sLinkServicesMultichoiceIds: @ 0x08564618
+	.byte 0x4A @ MULTI_CABLE_CLUB_NO_RECORD_MIX
+	.byte 0x4B @ MULTI_WIRELESS_NO_RECORD_BERRY
+	.byte 0x4C @ MULTI_CABLE_CLUB_WITH_RECORD_MIX
+	.byte 0x4D @ MULTI_WIRELESS_NO_BERRY
+	.byte 0x4E @ MULTI_WIRELESS_NO_RECORD
+	.byte 0x4F @ MULTI_WIRELESS_ALL_SERVICES
+	.byte 0, 0 @ alignment padding
+
+	.globl sLilycoveSSTidalDestinations
+sLilycoveSSTidalDestinations: @ 0x08564620
+	.4byte gText_Rom_5CB194 @ Slateport City
+	.4byte gText_Rom_5CAC23 @ Battle Frontier
+	.4byte gText_Rom_5CADF1 @ Southern Island
+	.4byte gText_Rom_5CAE0B @ Navel Rock
+	.4byte gText_Rom_5CADF9 @ Birth Island
+	.4byte gText_Rom_5CAE02 @ Faraway Island
 	.4byte gText_Exit
-	.globl gCreditsPointerTable_Rom_56463C
-gCreditsPointerTable_Rom_56463C: @ 0x0856463C
-	.4byte gText_Rom_247BB3
-	.4byte gText_Rom_247BD5
-	.4byte gText_Rom_247BF7
-	.4byte gText_Rom_24809D
-	.globl gCreditsPointerTable_Rom_56464C
-gCreditsPointerTable_Rom_56464C: @ 0x0856464C
-	.4byte gText_Rom_248014
-	.4byte gText_Rom_24802D
-	.4byte gText_Rom_248066
-	.4byte gText_Rom_24809D
-	.globl gCreditsPointerTable_Rom_56465C
-gCreditsPointerTable_Rom_56465C: @ 0x0856465C
-	.4byte gText_Rom_248014
-	.4byte gText_Rom_24802D
-	.4byte gText_Rom_248046
-	.4byte gText_Rom_24809D
-	.globl gCreditsPointerTable_Rom_56466C
-gCreditsPointerTable_Rom_56466C: @ 0x0856466C
-	.4byte gText_Rom_248014
-	.4byte gText_Rom_24802D
-	.4byte gText_Rom_248066
-	.4byte gText_Rom_248046
-	.4byte gText_Rom_24809D
-	.globl gCreditsPointerTable_Rom_564680
-gCreditsPointerTable_Rom_564680: @ 0x08564680
-	.4byte gText_Rom_247BB3
-	.4byte gText_Rom_247BD5
-	.4byte gText_Rom_24809D
+
+	.globl sCableClubOptions_WithRecordMix
+sCableClubOptions_WithRecordMix: @ 0x0856463C
+	.4byte gText_Rom_247BB3 @ Trade using Link Cable
+	.4byte gText_Rom_247BD5 @ Battle using Link Cable
+	.4byte gText_Rom_247BF7 @ Record Corner using Link Cable
+	.4byte gText_Rom_24809D @ Cancel
+
+	.globl sWirelessOptionsNoBerryCrush
+sWirelessOptionsNoBerryCrush: @ 0x0856464C
+	.4byte gText_Rom_248014 @ Trade
+	.4byte gText_Rom_24802D @ Battle
+	.4byte gText_Rom_248066 @ Mix Records
+	.4byte gText_Rom_24809D @ Cancel
+
+	.globl sWirelessOptions_NoRecordMix
+sWirelessOptions_NoRecordMix: @ 0x0856465C
+	.4byte gText_Rom_248014 @ Trade
+	.4byte gText_Rom_24802D @ Battle
+	.4byte gText_Rom_248046 @ Berry Crush / Berry Powder
+	.4byte gText_Rom_24809D @ Cancel
+
+	.globl sWirelessOptions_AllServices
+sWirelessOptions_AllServices: @ 0x0856466C
+	.4byte gText_Rom_248014 @ Trade
+	.4byte gText_Rom_24802D @ Battle
+	.4byte gText_Rom_248066 @ Mix Records
+	.4byte gText_Rom_248046 @ Berry Crush / Berry Powder
+	.4byte gText_Rom_24809D @ Cancel
+
+	.globl sCableClubOptions_NoRecordMix
+sCableClubOptions_NoRecordMix: @ 0x08564680
+	.4byte gText_Rom_247BB3 @ Trade using Link Cable
+	.4byte gText_Rom_247BD5 @ Battle using Link Cable
+	.4byte gText_Rom_24809D @ Cancel
+
 	@ pret/pokeemerald-jp direct xref for 0x0856468C: script_menu.s: sub_080E1F88
 	.globl gScriptMenuData_0856468C
 gScriptMenuData_0856468C: @ 0x0856468C
