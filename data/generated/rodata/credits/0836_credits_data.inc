@@ -255,33 +255,53 @@ sNamingScreenSpritePalettes: @ 0x08565F48
 	.error "naming-screen SpritePalette table size mismatch"
 	.endif
 
-	@ 0x08565F90..0x08565FA3 belongs to the following money UI data.
-	.4byte 0x80004000
-	.4byte 0
-	.4byte 0
-	.4byte 0x0000FFFF
-	.4byte 0x08565F98
+	@ Money-label sprite data used by AddMoneyLabelObject.
+	@ ROM structure and semantics match pret/pokeemerald src/money.c.
+	.set MONEY_LABEL_TAG, 0x2722
 
-	@ pret/pokeemerald-jp direct xref for 0x08565FA4: money.s: AddMoneyLabelObject
-	.globl gMoneyData_08565FA4
-gMoneyData_08565FA4: @ 0x08565FA4
-	@ analyzed canonical ROM range 0x08565FA4-0x08565FBB
-sSpriteTemplate_08565FA4: @ 0x08565FA4
-	rodata_sprite_template 0x2722, 0x2722, 0x08565F90, 0x08565FA0, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x08565FBC: money.s: AddMoneyLabelObject
-	.globl gMoneyData_08565FBC
-gMoneyData_08565FBC: @ 0x08565FBC
-	@ analyzed canonical ROM range 0x08565FBC-0x08565FC3
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0x28, 0xB4, 0xD9, 0x08, 0x00, 0x01, 0x22, 0x27
-	@ pret/pokeemerald-jp direct xref for 0x08565FC4: money.s: AddMoneyLabelObject
-	.globl gMoneyData_08565FC4
-gMoneyData_08565FC4: @ 0x08565FC4
-	@ analyzed canonical ROM range 0x08565FC4-0x08565FCB
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0xC0, 0xB2, 0xD9, 0x08, 0x22, 0x27, 0x00, 0x00
+sOamData_MoneyLabel: @ 0x08565F90
+	@ 32x16 horizontal, affine off, normal object mode, 4bpp.
+	.2byte 0x4000 @ attr0: y=0, shape=horizontal
+	.2byte 0x8000 @ attr1: x=0, size=32x16
+	.2byte 0x0000 @ attr2: tile=0, priority=0, palette=0
+	.2byte 0x0000 @ affineParam=0
+	.if (. - sOamData_MoneyLabel) != 0x8
+	.error "money-label OamData size mismatch"
+	.endif
+
+sSpriteAnim_MoneyLabel: @ 0x08565F98
+	.2byte 0x0000, 0x0000 @ ANIMCMD_FRAME(0, 0)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.if (. - sSpriteAnim_MoneyLabel) != 0x8
+	.error "money-label AnimCmd size mismatch"
+	.endif
+
+sSpriteAnimTable_MoneyLabel: @ 0x08565FA0
+	.4byte sSpriteAnim_MoneyLabel
+	.if (. - sSpriteAnimTable_MoneyLabel) != 0x4
+	.error "money-label anim table size mismatch"
+	.endif
+
+	.globl sSpriteTemplate_MoneyLabel
+sSpriteTemplate_MoneyLabel: @ 0x08565FA4
+	rodata_sprite_template MONEY_LABEL_TAG, MONEY_LABEL_TAG, sOamData_MoneyLabel, sSpriteAnimTable_MoneyLabel, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	.if (. - sSpriteTemplate_MoneyLabel) != 0x18
+	.error "money-label SpriteTemplate size mismatch"
+	.endif
+
+	.globl sSpriteSheet_MoneyLabel
+sSpriteSheet_MoneyLabel: @ 0x08565FBC
+	rodata_sprite_sheet gShopMenuMoney_Gfx, 0x100, MONEY_LABEL_TAG
+	.if (. - sSpriteSheet_MoneyLabel) != 0x8
+	.error "money-label CompressedSpriteSheet size mismatch"
+	.endif
+
+	.globl sSpritePalette_MoneyLabel
+sSpritePalette_MoneyLabel: @ 0x08565FC4
+	rodata_sprite_palette gShopMenu_Pal, MONEY_LABEL_TAG
+	.if (. - sSpritePalette_MoneyLabel) != 0x8
+	.error "money-label CompressedSpritePalette size mismatch"
+	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08565FCC: contest.s: Contest_GetMoveExcitement, sub_080D7CBC, sub_080D8334, sub_080DAA50, sub_080DAAD4 (+2 more); contest_ai.s: ContestAICmd_check_most_appealing_move, ContestAICmd_get_move_effect, ContestAICmd_get_move_effect_type, ContestAICmd_g...
 	.globl gCreditsU16Table_Rom_565FCC
 gCreditsU16Table_Rom_565FCC: @ 0x08565FCC

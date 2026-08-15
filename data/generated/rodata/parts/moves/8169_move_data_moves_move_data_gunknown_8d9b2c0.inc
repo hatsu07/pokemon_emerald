@@ -1,4 +1,7 @@
 	@ pret/pokeemerald-jp direct xref for 0x08D9B2C0: shop.s: BuyMenuDecompressBgGraphics
+	.globl gShopMenu_Pal
+gShopMenu_Pal: @ 0x08D9B2C0
+	@ Compatibility alias retained for the existing shop.s consumer.
 	.globl gShopData_08D9B2C0
 gShopData_08D9B2C0:
 	.globl sLz77Block_08D9B2C0
@@ -19,8 +22,11 @@ sLz77Block_08D9B2E8:
 	@ ANALYSIS: 2 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
 	.incbin "build/assets/lz77_raw/08D9B2E8.bin.lz"
 	.byte 0x00, 0x00
+	.globl gShopMenuMoney_Gfx
+gShopMenuMoney_Gfx: @ 0x08D9B428
+	@ Compatibility alias retained for the existing generic asset symbol.
 	.globl gLz77Asset_08D9B428
-gLz77Asset_08D9B428: @ 0x08D9B428
+gLz77Asset_08D9B428:
 	.incbin "build/assets/lz77_raw/08D9B428.bin.lz"
 	@ pret/pokeemerald-jp direct xref for 0x08D9B4B4: pokeblock.spokeblock.s: sub_08135C88
 	.globl gPokeblockSpokeblockData_08D9B4B4
