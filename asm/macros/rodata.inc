@@ -17,6 +17,14 @@
 	compressed_sprite_sheet 0, 0, 0
 	.endm
 
+
+@ struct Story used by the Mauville Old Man Storyteller (16 bytes).
+	.macro storyteller_story stat, min_value, title, action, full_text
+	.byte \stat, \min_value
+	.2byte 0
+	.4byte \title, \action, \full_text
+	.endm
+
 @ struct WindowTemplate (8 bytes).
 	.macro rodata_window_template bg, left, top, width, height, palette, base_block
 	.byte \bg, \left, \top, \width, \height, \palette

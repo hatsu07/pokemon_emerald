@@ -121,152 +121,45 @@ gBattleU32Table_Rom_57AC54: @ 0x0857AC54
 	.4byte PSR_SVC_MODE
 	.4byte MAP_NUM_ROUTE106
 	@ pret/pokeemerald-jp direct xref for 0x0857AC6C: mauville_old_man.s: GetStoryByStat, StorytellerInitializeRandomStat
-	.globl gMauvilleOldManData_0857AC6C
-gMauvilleOldManData_0857AC6C: @ 0x0857AC6C
+	@ Mauville Old Man Storyteller story definitions
+	.globl sStorytellerStories
+sStorytellerStories: @ 0x0857AC6C
 	@ analyzed canonical ROM range 0x0857AC6C-0x0857AE9B
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x230
-	.4byte 0x00000132 @ +0x0
-	.4byte 0x08255316 @ +0x4
-	.4byte 0x08255329 @ +0x8
-	.4byte 0x08255333 @ +0xC
-	.4byte 0x00000102 @ +0x10
-	.4byte 0x0825537C @ +0x14
-	.4byte 0x0825538D @ +0x18
-	.4byte 0x08255399 @ +0x1C
-	.4byte 0x00000103 @ +0x20
-	.4byte 0x082553E9 @ +0x24
-	.4byte 0x082553FB @ +0x28
-	.4byte 0x08255404 @ +0x2C
-	.4byte 0x00000104 @ +0x30
-	.4byte 0x08255443 @ +0x34
-	.4byte 0x08255454 @ +0x38
-	.4byte 0x08255462 @ +0x3C
-	.4byte 0x00000106 @ +0x40
-	.4byte 0x082554B3 @ +0x44
-	.4byte 0x082554C9 @ +0x48
-	.4byte 0x082554D6 @ +0x4C
-	.4byte 0x00000109 @ +0x50
-	.4byte 0x08255524 @ +0x54
-	.4byte 0x08255534 @ +0x58
-	.4byte 0x0825553C @ +0x5C
-	.4byte 0x0000010B @ +0x60
-	.4byte 0x08255594 @ +0x64
-	.4byte 0x082555A3 @ +0x68
-	.4byte 0x082555AF @ +0x6C
-	.4byte 0x0000010C @ +0x70
-	.4byte 0x082555FF @ +0x74
-	.4byte 0x0825560C @ +0x78
-	.4byte 0x08255616 @ +0x7C
-	.4byte 0x0000010D @ +0x80
-	.4byte 0x0825565D @ +0x84
-	.4byte 0x08255672 @ +0x88
-	.4byte 0x0825567C @ +0x8C
-	.4byte 0x0000010E @ +0x90
-	.4byte 0x082556C4 @ +0x94
-	.4byte 0x082556D5 @ +0x98
-	.4byte 0x082556E3 @ +0x9C
-	.4byte 0x0000010F @ +0xA0
-	.4byte 0x08255731 @ +0xA4
-	.4byte 0x08255745 @ +0xA8
-	.4byte 0x08255756 @ +0xAC
-	.4byte 0x00000110 @ +0xB0
-	.4byte 0x082557AE @ +0xB4
-	.4byte 0x082557BF @ +0xB8
-	.4byte 0x082557CF @ +0xBC
-	.4byte 0x00000111 @ +0xC0
-	.4byte 0x08255822 @ +0xC4
-	.4byte 0x08255838 @ +0xC8
-	.4byte 0x08255846 @ +0xCC
-	.4byte 0x00000112 @ +0xD0
-	.4byte 0x0825589B @ +0xD4
-	.4byte 0x082558AE @ +0xD8
-	.4byte 0x082558B7 @ +0xDC
-	.4byte 0x00000113 @ +0xE0
-	.4byte 0x08255909 @ +0xE4
-	.4byte 0x0825591E @ +0xE8
-	.4byte 0x08255927 @ +0xEC
-	.4byte 0x00000114 @ +0xF0
-	.4byte 0x0825597A @ +0xF4
-	.4byte 0x0825598A @ +0xF8
-	.4byte 0x08255992 @ +0xFC
-	.4byte 0x0000011A @ +0x100
-	.4byte 0x082559E3 @ +0x104
-	.4byte 0x082559EF @ +0x108
-	.4byte 0x082559F9 @ +0x10C
-	.4byte 0x0000011B @ +0x110
-	.4byte 0x08255A47 @ +0x114
-	.4byte 0x08255A54 @ +0x118
-	.4byte 0x08255A5D @ +0x11C
-	.4byte 0x0000011C @ +0x120
-	.4byte 0x08255AB2 @ +0x124
-	.4byte 0x08255ABD @ +0x128
-	.4byte 0x08255ACC @ +0x12C
-	.4byte 0x0000021D @ +0x130
-	.4byte 0x08255B1F @ +0x134
-	.4byte 0x08255B2B @ +0x138
-	.4byte 0x08255B3C @ +0x13C
-	.4byte 0x0000011E @ +0x140
-	.4byte 0x08255B95 @ +0x144
-	.4byte 0x08255BA5 @ +0x148
-	.4byte 0x08255BB6 @ +0x14C
-	.4byte 0x00000121 @ +0x150
-	.4byte 0x08255C08 @ +0x154
-	.4byte 0x08255C18 @ +0x158
-	.4byte 0x08255C23 @ +0x15C
-	.4byte 0x00000124 @ +0x160
-	.4byte 0x08255C73 @ +0x164
-	.4byte 0x08255C84 @ +0x168
-	.4byte 0x08255C92 @ +0x16C
-	.4byte 0x00000125 @ +0x170
-	.4byte 0x08255CE6 @ +0x174
-	.4byte 0x08255CF2 @ +0x178
-	.4byte 0x08255D02 @ +0x17C
-	.4byte 0x00000126 @ +0x180
-	.4byte 0x08255D53 @ +0x184
-	.4byte 0x08255D63 @ +0x188
-	.4byte 0x08255D6C @ +0x18C
-	.4byte 0x00000127 @ +0x190
-	.4byte 0x08255DC3 @ +0x194
-	.4byte 0x08255DD4 @ +0x198
-	.4byte 0x08255DE3 @ +0x19C
-	.4byte 0x00000128 @ +0x1A0
-	.4byte 0x08255E31 @ +0x1A4
-	.4byte 0x08255E40 @ +0x1A8
-	.4byte 0x08255E49 @ +0x1AC
-	.4byte 0x00000129 @ +0x1B0
-	.4byte 0x08255E9E @ +0x1B4
-	.4byte 0x08255EB1 @ +0x1B8
-	.4byte 0x08255EB9 @ +0x1BC
-	.4byte 0x0000012A @ +0x1C0
-	.4byte 0x08255F0B @ +0x1C4
-	.4byte 0x08255F20 @ +0x1C8
-	.4byte 0x08255F2A @ +0x1CC
-	.4byte 0x0000012B @ +0x1D0
-	.4byte 0x08255F7C @ +0x1D4
-	.4byte 0x08255F90 @ +0x1D8
-	.4byte 0x08255F9B @ +0x1DC
-	.4byte 0x0000012C @ +0x1E0
-	.4byte 0x08255FED @ +0x1E4
-	.4byte 0x08255FFE @ +0x1E8
-	.4byte 0x08256006 @ +0x1EC
-	.4byte 0x0000012D @ +0x1F0
-	.4byte 0x08256049 @ +0x1F4
-	.4byte 0x0825605A @ +0x1F8
-	.4byte 0x08256062 @ +0x1FC
-	.4byte 0x0000012E @ +0x200
-	.4byte 0x082560AF @ +0x204
-	.4byte 0x082560C5 @ +0x208
-	.4byte 0x082560D2 @ +0x20C
-	.4byte 0x0000012F @ +0x210
-	.4byte 0x0825612C @ +0x214
-	.4byte 0x0825613F @ +0x218
-	.4byte 0x08256150 @ +0x21C
-	.4byte 0x00000130 @ +0x220
-	.4byte 0x082561A4 @ +0x224
-	.4byte 0x082561B6 @ +0x228
-	.4byte 0x082561C2 @ +0x22C
-	@ pret/pokeemerald-jp direct xref for 0x0857AE9C: mauville_old_man.s: GetStoryByStat
+	storyteller_story 50, 1, MauvilleCity_PokemonCenter_1F_Text_SavedGameTitle, MauvilleCity_PokemonCenter_1F_Text_SavedGameAction, MauvilleCity_PokemonCenter_1F_Text_SavedGameStory
+	storyteller_story 0x02, 1, MauvilleCity_PokemonCenter_1F_Text_TrendsStartedTitle, MauvilleCity_PokemonCenter_1F_Text_TrendsStartedAction, MauvilleCity_PokemonCenter_1F_Text_TrendsStartedStory @ GAME_STAT_STARTED_TRENDS
+	storyteller_story 0x03, 1, MauvilleCity_PokemonCenter_1F_Text_BerriesPlantedTitle, MauvilleCity_PokemonCenter_1F_Text_BerriesPlantedAction, MauvilleCity_PokemonCenter_1F_Text_BerriesPlantedStory @ GAME_STAT_PLANTED_BERRIES
+	storyteller_story 0x04, 1, MauvilleCity_PokemonCenter_1F_Text_BikeTradesTitle, MauvilleCity_PokemonCenter_1F_Text_BikeTradesAction, MauvilleCity_PokemonCenter_1F_Text_BikeTradesStory @ GAME_STAT_TRADED_BIKES
+	storyteller_story 0x06, 1, MauvilleCity_PokemonCenter_1F_Text_InterviewsTitle, MauvilleCity_PokemonCenter_1F_Text_InterviewsAction, MauvilleCity_PokemonCenter_1F_Text_InterviewsStory @ GAME_STAT_GOT_INTERVIEWED
+	storyteller_story 0x09, 1, MauvilleCity_PokemonCenter_1F_Text_TrainerBattlesTitle, MauvilleCity_PokemonCenter_1F_Text_TrainerBattlesAction, MauvilleCity_PokemonCenter_1F_Text_TrainerBattlesStory @ GAME_STAT_TRAINER_BATTLES
+	storyteller_story 0x0B, 1, MauvilleCity_PokemonCenter_1F_Text_PokemonCaughtTitle, MauvilleCity_PokemonCenter_1F_Text_PokemonCaughtAction, MauvilleCity_PokemonCenter_1F_Text_PokemonCaughtStory @ GAME_STAT_POKEMON_CAPTURES
+	storyteller_story 0x0C, 1, MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtTitle, MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtAction, MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtStory @ GAME_STAT_FISHING_ENCOUNTERS
+	storyteller_story 0x0D, 1, MauvilleCity_PokemonCenter_1F_Text_EggsHatchedTitle, MauvilleCity_PokemonCenter_1F_Text_EggsHatchedAction, MauvilleCity_PokemonCenter_1F_Text_EggsHatchedStory @ GAME_STAT_HATCHED_EGGS
+	storyteller_story 0x0E, 1, MauvilleCity_PokemonCenter_1F_Text_PokemonEvolvedTitle, MauvilleCity_PokemonCenter_1F_Text_PokemonEvolvedAction, MauvilleCity_PokemonCenter_1F_Text_PokemonEvolvedStory @ GAME_STAT_EVOLVED_POKEMON
+	storyteller_story 0x0F, 1, MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterTitle, MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterAction, MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterStory @ GAME_STAT_USED_POKECENTER
+	storyteller_story 0x10, 1, MauvilleCity_PokemonCenter_1F_Text_RestedAtHomeTitle, MauvilleCity_PokemonCenter_1F_Text_RestedAtHomeAction, MauvilleCity_PokemonCenter_1F_Text_RestedAtHomeStory @ GAME_STAT_RESTED_AT_HOME
+	storyteller_story 0x11, 1, MauvilleCity_PokemonCenter_1F_Text_SafariGamesTitle, MauvilleCity_PokemonCenter_1F_Text_SafariGamesAction, MauvilleCity_PokemonCenter_1F_Text_SafariGamesStory @ GAME_STAT_ENTERED_SAFARI_ZONE
+	storyteller_story 0x12, 1, MauvilleCity_PokemonCenter_1F_Text_UsedCutTitle, MauvilleCity_PokemonCenter_1F_Text_UsedCutAction, MauvilleCity_PokemonCenter_1F_Text_UsedCutStory @ GAME_STAT_USED_CUT
+	storyteller_story 0x13, 1, MauvilleCity_PokemonCenter_1F_Text_UsedRockSmashTitle, MauvilleCity_PokemonCenter_1F_Text_UsedRockSmashAction, MauvilleCity_PokemonCenter_1F_Text_UsedRockSmashStory @ GAME_STAT_USED_ROCK_SMASH
+	storyteller_story 0x14, 1, MauvilleCity_PokemonCenter_1F_Text_MovedBasesTitle, MauvilleCity_PokemonCenter_1F_Text_MovedBasesAction, MauvilleCity_PokemonCenter_1F_Text_MovedBasesStory @ GAME_STAT_MOVED_SECRET_BASE
+	storyteller_story 0x1A, 1, MauvilleCity_PokemonCenter_1F_Text_UsedSplashTitle, MauvilleCity_PokemonCenter_1F_Text_UsedSplashAction, MauvilleCity_PokemonCenter_1F_Text_UsedSplashStory @ GAME_STAT_USED_SPLASH
+	storyteller_story 0x1B, 1, MauvilleCity_PokemonCenter_1F_Text_UsedStruggleTitle, MauvilleCity_PokemonCenter_1F_Text_UsedStruggleAction, MauvilleCity_PokemonCenter_1F_Text_UsedStruggleStory @ GAME_STAT_USED_STRUGGLE
+	storyteller_story 0x1C, 1, MauvilleCity_PokemonCenter_1F_Text_SlotJackpotsTitle, MauvilleCity_PokemonCenter_1F_Text_SlotJackpotsAction, MauvilleCity_PokemonCenter_1F_Text_SlotJackpotsStory @ GAME_STAT_SLOT_JACKPOTS
+	storyteller_story 0x1D, 2, MauvilleCity_PokemonCenter_1F_Text_RouletteWinsTitle, MauvilleCity_PokemonCenter_1F_Text_RouletteWinsAction, MauvilleCity_PokemonCenter_1F_Text_RouletteWinsStory @ GAME_STAT_CONSECUTIVE_ROULETTE_WINS
+	storyteller_story 0x1E, 1, MauvilleCity_PokemonCenter_1F_Text_BattleTowerChallengesTitle, MauvilleCity_PokemonCenter_1F_Text_BattleTowerChallengesAction, MauvilleCity_PokemonCenter_1F_Text_BattleTowerChallengesStory @ GAME_STAT_ENTERED_BATTLE_TOWER
+	storyteller_story 0x21, 1, MauvilleCity_PokemonCenter_1F_Text_MadePokeblocksTitle, MauvilleCity_PokemonCenter_1F_Text_MadePokeblocksAction, MauvilleCity_PokemonCenter_1F_Text_MadePokeblocksStory @ GAME_STAT_POKEBLOCKS
+	storyteller_story 0x24, 1, MauvilleCity_PokemonCenter_1F_Text_EnteredContestsTitle, MauvilleCity_PokemonCenter_1F_Text_EnteredContestsAction, MauvilleCity_PokemonCenter_1F_Text_EnteredContestsStory @ GAME_STAT_ENTERED_CONTEST
+	storyteller_story 0x25, 1, MauvilleCity_PokemonCenter_1F_Text_WonContestsTitle, MauvilleCity_PokemonCenter_1F_Text_WonContestsAction, MauvilleCity_PokemonCenter_1F_Text_WonContestsStory @ GAME_STAT_WON_CONTEST
+	storyteller_story 0x26, 1, MauvilleCity_PokemonCenter_1F_Text_TimesShoppedTitle, MauvilleCity_PokemonCenter_1F_Text_TimesShoppedAction, MauvilleCity_PokemonCenter_1F_Text_TimesShoppedStory @ GAME_STAT_SHOPPED
+	storyteller_story 0x27, 1, MauvilleCity_PokemonCenter_1F_Text_UsedItemFinderTitle, MauvilleCity_PokemonCenter_1F_Text_UsedItemFinderAction, MauvilleCity_PokemonCenter_1F_Text_UsedItemFinderStory @ GAME_STAT_USED_ITEMFINDER
+	storyteller_story 0x28, 1, MauvilleCity_PokemonCenter_1F_Text_TimesRainedTitle, MauvilleCity_PokemonCenter_1F_Text_TimesRainedAction, MauvilleCity_PokemonCenter_1F_Text_TimesRainedStory @ GAME_STAT_GOT_RAINED_ON
+	storyteller_story 0x29, 1, MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexTitle, MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexAction, MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexStory @ GAME_STAT_CHECKED_POKEDEX
+	storyteller_story 0x2A, 1, MauvilleCity_PokemonCenter_1F_Text_ReceivedRibbonsTitle, MauvilleCity_PokemonCenter_1F_Text_ReceivedRibbonsAction, MauvilleCity_PokemonCenter_1F_Text_ReceivedRibbonsStory @ GAME_STAT_RECEIVED_RIBBONS
+	storyteller_story 0x2B, 1, MauvilleCity_PokemonCenter_1F_Text_LedgesJumpedTitle, MauvilleCity_PokemonCenter_1F_Text_LedgesJumpedAction, MauvilleCity_PokemonCenter_1F_Text_LedgesJumpedStory @ GAME_STAT_JUMPED_DOWN_LEDGES
+	storyteller_story 0x2C, 1, MauvilleCity_PokemonCenter_1F_Text_TVWatchedTitle, MauvilleCity_PokemonCenter_1F_Text_TVWatchedAction, MauvilleCity_PokemonCenter_1F_Text_TVWatchedStory @ GAME_STAT_WATCHED_TV
+	storyteller_story 0x2D, 1, MauvilleCity_PokemonCenter_1F_Text_CheckedClockTitle, MauvilleCity_PokemonCenter_1F_Text_CheckedClockAction, MauvilleCity_PokemonCenter_1F_Text_CheckedClockStory @ GAME_STAT_CHECKED_CLOCK
+	storyteller_story 0x2E, 1, MauvilleCity_PokemonCenter_1F_Text_WonLotteryTitle, MauvilleCity_PokemonCenter_1F_Text_WonLotteryAction, MauvilleCity_PokemonCenter_1F_Text_WonLotteryStory @ GAME_STAT_WON_POKEMON_LOTTERY
+	storyteller_story 0x2F, 1, MauvilleCity_PokemonCenter_1F_Text_UsedDaycareTitle, MauvilleCity_PokemonCenter_1F_Text_UsedDaycareAction, MauvilleCity_PokemonCenter_1F_Text_UsedDaycareStory @ GAME_STAT_USED_DAYCARE
+	storyteller_story 0x30, 1, MauvilleCity_PokemonCenter_1F_Text_RodeCableCarTitle, MauvilleCity_PokemonCenter_1F_Text_RodeCableCarAction, MauvilleCity_PokemonCenter_1F_Text_RodeCableCarStory @ GAME_STAT_RODE_CABLE_CAR
 	.globl gMauvilleOldManData_0857AE9C
 gMauvilleOldManData_0857AE9C: @ 0x0857AE9C
 	@ analyzed canonical ROM range 0x0857AE9C-0x0857AEAB
