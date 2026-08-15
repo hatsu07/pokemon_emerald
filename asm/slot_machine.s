@@ -10055,10 +10055,10 @@ _0812F066:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0812F078: .4byte gSlotMachineData_085851E8
+_0812F078: .4byte sSpriteTemplates_DigitalDisplay
 _0812F07C: .4byte 0x03001188
 _0812F080: .4byte 0x020205AC
-_0812F084: .4byte gSlotMachineData_08585250
+_0812F084: .4byte sSubspriteTables_DigitalDisplay
 	thumb_func_end sub_0812EFEC
 
 	thumb_func_start sub_0812F088
