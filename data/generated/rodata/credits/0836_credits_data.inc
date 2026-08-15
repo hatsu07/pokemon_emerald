@@ -1,9 +1,7 @@
-	@ pret/pokeemerald-jp direct xref for 0x08565BC1: naming_screen.s: sub_080E40A8
-	.globl gNamingScreenData_08565BC1
-gNamingScreenData_08565BC1: @ 0x08565BC1
-	@ analyzed canonical ROM range 0x08565BC1-0x08565C7A
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0xBA
+	@ JP character conversion destination table, indexed in parallel with
+	@ sNamingScreenCharConversionFrom.
+	.globl sNamingScreenCharConversionTo
+sNamingScreenCharConversionTo: @ 0x08565BC1
 	.byte 0x2F, 0x30, 0x31, 0x32, 0x33, 0x37, 0x38, 0x39, 0x3A, 0x3B, 0x3C, 0x3D, 0x3E, 0x3F, 0x40, 0x41
 	.byte 0x42, 0x43, 0x44, 0x45, 0x46, 0x47, 0x48, 0x49, 0x4A, 0x34, 0x35, 0x36, 0x24, 0x25, 0x26, 0x01
 	.byte 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x10, 0x11
@@ -16,34 +14,33 @@ gNamingScreenData_08565BC1: @ 0x08565BC1
 	.byte 0xE9, 0xEA, 0xEB, 0xEC, 0xED, 0xEE, 0xBB, 0xBC, 0xBD, 0xBE, 0xBF, 0xC0, 0xC1, 0xC2, 0xC3, 0xC4
 	.byte 0xC5, 0xC6, 0xC7, 0xC8, 0xC9, 0xCA, 0xCB, 0xCC, 0xCD, 0xCE, 0xCF, 0xD0, 0xD1, 0xD2, 0xD3, 0xD4
 	.byte 0xA2, 0xA3, 0xA4, 0xA5, 0xA6, 0xA7, 0xA8, 0xA9, 0xAA, 0xA1
-	@ pret/pokeemerald-jp direct xref for 0x08565C7B: naming_screen.s: sub_080E44A4
-	.globl gNamingScreenData_08565C7B
-gNamingScreenData_08565C7B: @ 0x08565C7B
-	@ analyzed canonical ROM range 0x08565C7B-0x08565C8B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x11
-	.byte 0x02, 0x01, 0x03, 0x00, 0x00, 0x0D, 0x01, 0x02, 0x00, 0x0E, 0x01, 0x02, 0x00, 0x0F, 0x01, 0x02
-	.byte 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08565C8C: naming_screen.s: sub_080E45D0
-	.globl gNamingScreenData_08565C8C
-gNamingScreenData_08565C8C: @ 0x08565C8C
-	@ analyzed canonical ROM range 0x08565C8C-0x08565C8F
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.byte 0xEE, 0xDD, 0xFF, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08565C90: naming_screen.s: sub_080E45D0
-	.globl gNamingScreenData_08565C90
-gNamingScreenData_08565C90: @ 0x08565C90
-	@ analyzed canonical ROM range 0x08565C90-0x08565C9B
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0x08565C84 @ +0x0
-	.4byte 0x08565C80 @ +0x4
-	.4byte 0x08565C88 @ +0x8
-	@ 2x3 naming-screen keyboard tilemap pointer matrix used by sub_080E4648.
-	@ Row selection depends on the active BG; the column is the current page.
-	.globl gNamingScreenData_08565C9C
-gNamingScreenData_08565C9C: @ 0x08565C9C
+
+	@ Palette bank used when filling each keyboard page background.
+	@ Page 2 takes the early-exit path in sub_080E44A4; retain its third slot.
+	.globl sNamingScreenKeyboardPageBgPalettes
+sNamingScreenKeyboardPageBgPalettes: @ 0x08565C7B
+	.byte 2, 1, 3
+	.byte 0, 0 @ alignment
+
+	.globl sNamingScreenTextColors
+sNamingScreenTextColors: @ 0x08565C80
+	.byte 0x0D, 0x01, 0x02, 0
+	.byte 0x0E, 0x01, 0x02, 0
+	.byte 0x0F, 0x01, 0x02, 0
+
+	.globl sNamingScreenFillValues
+sNamingScreenFillValues: @ 0x08565C8C
+	.byte 0xEE, 0xDD, 0xFF
+	.byte 0 @ alignment
+
+	.globl sNamingScreenKeyboardTextColors
+sNamingScreenKeyboardTextColors: @ 0x08565C90
+	.4byte sNamingScreenTextColors + 4
+	.4byte sNamingScreenTextColors + 0
+	.4byte sNamingScreenTextColors + 8
+
+	.globl sNamingScreenNextKeyboardPageTilemaps
+sNamingScreenNextKeyboardPageTilemaps: @ 0x08565C9C
 	.4byte gNamingScreenKeyboardUpper_Tilemap
 	.4byte gNamingScreenKeyboardSymbols_Tilemap
 	.4byte gNamingScreenKeyboardLower_Tilemap
@@ -51,146 +48,175 @@ gNamingScreenData_08565C9C: @ 0x08565C9C
 	.4byte gNamingScreenKeyboardLower_Tilemap
 	.4byte gNamingScreenKeyboardSymbols_Tilemap
 
-	.if (. - gNamingScreenData_08565C9C) != 0x18
-	.error "naming-screen keyboard tilemap pointer matrix size mismatch"
-	.endif
+	.globl sNamingScreenControlsTextColor
+sNamingScreenControlsTextColor: @ 0x08565CB4
+	.byte 0x0F, 0x01, 0x02, 0
 
-	@ pret/pokeemerald-jp direct xref for 0x08565CB4: naming_screen.s: sub_080E46E4
-	.globl gNamingScreenData_08565CB4
-gNamingScreenData_08565CB4: @ 0x08565CB4
-	@ analyzed canonical ROM range 0x08565CB4-0x08565CE7
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x34
-	.2byte 0x010F, 0x0002, 0x0500, 0x0001, 0x2301, 0x0000, 0x5868, 0x0856
-	.2byte 0x0800, 0x0002, 0x1300, 0x0000, 0x5874, 0x0856, 0x0500, 0x0103
-	.2byte 0x2300, 0x0000, 0x5881, 0x0856, 0x0C01, 0x0004, 0x0B01, 0x0000
-	.2byte 0x588F, 0x0856
-	@ pret/pokeemerald-jp direct xref for 0x08565CE8: naming_screen.s: NamingScreen_Init
-	.globl gNamingScreenData_08565CE8
-gNamingScreenData_08565CE8: @ 0x08565CE8
-	@ analyzed canonical ROM range 0x08565CE8-0x08565D67
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x80
-	.byte 0xB8, 0x5C, 0x56, 0x08, 0xC4, 0x5C, 0x56, 0x08, 0xD0, 0x5C, 0x56, 0x08, 0xD0, 0x5C, 0x56, 0x08
-	.byte 0xDC, 0x5C, 0x56, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x40
-	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x40, 0x00, 0x80, 0x00, 0x00, 0x00, 0x00, 0xEC, 0xF0, 0x05, 0x40
-	.byte 0x0C, 0xF0, 0x40, 0x40, 0xEC, 0xF8, 0x55, 0x40, 0x0C, 0xF8, 0x90, 0x40, 0xEC, 0x00, 0xA5, 0x40
-	.byte 0x0C, 0x00, 0xE0, 0x40, 0xEC, 0x08, 0xF5, 0x40, 0x0C, 0x08, 0x30, 0x41, 0xF4, 0xFC, 0x00, 0x40
-	.byte 0x04, 0xFC, 0x10, 0x40, 0xF4, 0xFC, 0x01, 0x40, 0x04, 0xFC, 0x20, 0x40, 0xEC, 0xF4, 0x05, 0x40
-	.byte 0x0C, 0xF4, 0x40, 0x40, 0xEC, 0xFC, 0x55, 0x40, 0x0C, 0xFC, 0x90, 0x40, 0xEC, 0x04, 0xA5, 0x40
-	.byte 0x0C, 0x04, 0xE0, 0x40, 0xF8, 0xF4, 0x01, 0xC0, 0xF8, 0xFC, 0x21, 0xC0, 0xF8, 0x04, 0x41, 0xC0
-	@ pret/pokeemerald-jp direct xref for 0x08565D68: naming_screen.s: CreatePageSwitcherSprites
-	.globl gNamingScreenData_08565D68
-gNamingScreenData_08565D68: @ 0x08565D68
-	@ analyzed canonical ROM range 0x08565D68-0x08565D6F
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0x08, 0x00, 0x00, 0x00, 0x14, 0x5D, 0x56, 0x08
-	@ pret/pokeemerald-jp direct xref for 0x08565D70: naming_screen.s: CreatePageSwitcherSprites
-	.globl gNamingScreenData_08565D70
-gNamingScreenData_08565D70: @ 0x08565D70
-	@ analyzed canonical ROM range 0x08565D70-0x08565D87
-sSpriteTemplate_08565D70: @ 0x08565D70
-	rodata_sprite_template 0x0002, 0x0000, 0x08565D34, 0x00000002, 0x08565D3C, 0x00000002, 0x08565D34
-	@ pret/pokeemerald-jp direct xref for 0x08565D88: naming_screen.s: CreateBackOkSprites
-	.globl gNamingScreenData_08565D88
-gNamingScreenData_08565D88: @ 0x08565D88
-	@ analyzed canonical ROM range 0x08565D88-0x08565D8F
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0x06, 0x00, 0x00, 0x00, 0x44, 0x5D, 0x56, 0x08
-	@ pret/pokeemerald-jp direct xref for 0x08565D90: naming_screen.s: NamingScreen_CreatePCIcon
-	.globl gNamingScreenData_08565D90
-gNamingScreenData_08565D90: @ 0x08565D90
-	@ SubspriteTable header retained pending semantic conversion of its target.
-	.2byte 0x0003, 0x0000
-	.4byte 0x08565D5C
+	.globl sPlayerNamingScreenTemplate
+sPlayerNamingScreenTemplate: @ 0x08565CB8
+	rodata_naming_screen_template 0, 5, 1, 0, 1, 35, sText_NamingScreenYourName
+
+	.globl sPCBoxNamingTemplate
+sPCBoxNamingTemplate: @ 0x08565CC4
+	rodata_naming_screen_template 0, 8, 2, 0, 0, 19, sText_NamingScreenBoxName
+
+	.globl sMonNamingScreenTemplate
+sMonNamingScreenTemplate: @ 0x08565CD0
+	rodata_naming_screen_template 0, 5, 3, 1, 0, 35, sText_NamingScreenPokemonNickname
+
+	.globl sWaldaWordsScreenTemplate
+sWaldaWordsScreenTemplate: @ 0x08565CDC
+	rodata_naming_screen_template 1, 12, 4, 0, 1, 11, sText_NamingScreenTellHimTheWords
+
+	.globl sNamingScreenTemplates
+sNamingScreenTemplates: @ 0x08565CE8
+	.4byte sPlayerNamingScreenTemplate
+	.4byte sPCBoxNamingTemplate
+	.4byte sMonNamingScreenTemplate
+	.4byte sMonNamingScreenTemplate
+	.4byte sWaldaWordsScreenTemplate
+
+sNamingScreenOam_8x8: @ 0x08565CFC
+	rodata_sprite_oam_data 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+sNamingScreenOam_16x16: @ 0x08565D04
+	rodata_sprite_oam_data 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0
+
+sNamingScreenOam_32x16: @ 0x08565D0C
+	rodata_sprite_oam_data 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 0, 0
+
+sNamingScreenSubsprites_PageSwapFrame: @ 0x08565D14
+	rodata_subsprite -20, -16, 1, 1,  0, 1
+	rodata_subsprite  12, -16, 0, 0,  4, 1
+	rodata_subsprite -20,  -8, 1, 1,  5, 1
+	rodata_subsprite  12,  -8, 0, 0,  9, 1
+	rodata_subsprite -20,   0, 1, 1, 10, 1
+	rodata_subsprite  12,   0, 0, 0, 14, 1
+	rodata_subsprite -20,   8, 1, 1, 15, 1
+	rodata_subsprite  12,   8, 0, 0, 19, 1
+
+sNamingScreenSubsprites_PageSwapText_A: @ 0x08565D34
+	rodata_subsprite -12, -4, 0, 0, 0, 1
+	rodata_subsprite   4, -4, 0, 0, 1, 1
+
+sNamingScreenSubsprites_PageSwapText_B: @ 0x08565D3C
+	rodata_subsprite -12, -4, 1, 0, 0, 1
+	rodata_subsprite   4, -4, 0, 0, 2, 1
+
+sNamingScreenSubsprites_Button: @ 0x08565D44
+	rodata_subsprite -20, -12, 1, 1,  0, 1
+	rodata_subsprite  12, -12, 0, 0,  4, 1
+	rodata_subsprite -20,  -4, 1, 1,  5, 1
+	rodata_subsprite  12,  -4, 0, 0,  9, 1
+	rodata_subsprite -20,   4, 1, 1, 10, 1
+	rodata_subsprite  12,   4, 0, 0, 14, 1
+
+sNamingScreenSubsprites_PCIcon: @ 0x08565D5C
+	rodata_subsprite -8, -12, 1, 0, 0, 3
+	rodata_subsprite -8,  -4, 1, 0, 2, 3
+	rodata_subsprite -8,   4, 1, 0, 4, 3
+
+	.globl sSubspriteTable_PageSwapFrame
+sSubspriteTable_PageSwapFrame: @ 0x08565D68
+	rodata_subsprite_table 8, sNamingScreenSubsprites_PageSwapFrame
+
+	.globl sSubspriteTable_PageSwapText
+sSubspriteTable_PageSwapText: @ 0x08565D70
+	rodata_subsprite_table 2, sNamingScreenSubsprites_PageSwapText_A
+	rodata_subsprite_table 2, sNamingScreenSubsprites_PageSwapText_B
+	rodata_subsprite_table 2, sNamingScreenSubsprites_PageSwapText_A
+
+	.globl sSubspriteTable_Button
+sSubspriteTable_Button: @ 0x08565D88
+	rodata_subsprite_table 6, sNamingScreenSubsprites_Button
+
+	.globl sSubspriteTable_PCIcon
+sSubspriteTable_PCIcon: @ 0x08565D90
+	rodata_subsprite_table 3, sNamingScreenSubsprites_PCIcon
 
 sImageTable_PCIcon: @ 0x08565D98
 	rodata_sprite_frame_image sPCIconOff_Gfx, 0xC0
 	rodata_sprite_frame_image sPCIconOn_Gfx, 0xC0
 
-	@ Remaining animation/subsprite metadata in the original 0x48-byte block.
-	.2byte 0x0000, 0x0001, 0xFFFE, 0x0000
-	.2byte 0x0004, 0x0008, 0x0008, 0x0008, 0xFFFF, 0x0000, 0x0000, 0x0002
-	.2byte 0x0001, 0x0002, 0xFFFE, 0x0000, 0x5DA8, 0x0856, 0x5DA8, 0x0856
-	.2byte 0x5DB0, 0x0856, 0x5DBC, 0x0856
+sNamingScreenAnim_Loop: @ 0x08565DA8
+	rodata_anim_frame 0, 1
+	rodata_anim_jump 0
 
-	.if (. - gNamingScreenData_08565D90) != 0x48
-	.error "PC icon metadata block size mismatch"
-	.endif
+sNamingScreenAnim_CursorSquish: @ 0x08565DB0
+	rodata_anim_frame 4, 8
+	rodata_anim_frame 8, 8
+	rodata_anim_end
 
-	@ pret/pokeemerald-jp direct xref for 0x08565DD8: naming_screen.s: CreatePageSwitcherSprites
-	.globl gNamingScreenData_08565DD8
-gNamingScreenData_08565DD8: @ 0x08565DD8
-	@ analyzed canonical ROM range 0x08565DD8-0x08565DEF
-sSpriteTemplate_08565DD8: @ 0x08565DD8
-	rodata_sprite_template 0x0002, 0x0004, 0x08565CFC, 0x08565DC8, 0, gDummySpriteAffineAnimTable, sub_080E3544
-	@ pret/pokeemerald-jp direct xref for 0x08565DF0: naming_screen.s: CreatePageSwitcherSprites
-	.globl gNamingScreenData_08565DF0
-gNamingScreenData_08565DF0: @ 0x08565DF0
-	@ analyzed canonical ROM range 0x08565DF0-0x08565E07
-sSpriteTemplate_08565DF0: @ 0x08565DF0
-	rodata_sprite_template 0x0003, 0x0001, 0x08565D0C, 0x08565DC8, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x08565E08: naming_screen.s: CreatePageSwitcherSprites
-	.globl gNamingScreenData_08565E08
-gNamingScreenData_08565E08: @ 0x08565E08
-	@ analyzed canonical ROM range 0x08565E08-0x08565E1F
-sSpriteTemplate_08565E08: @ 0x08565E08
-	rodata_sprite_template 0x0004, 0x0004, 0x08565CFC, 0x08565DC8, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x08565E20: naming_screen.s: CreateBackOkSprites
-	.globl gNamingScreenData_08565E20
-gNamingScreenData_08565E20: @ 0x08565E20
-	@ analyzed canonical ROM range 0x08565E20-0x08565E37
-sSpriteTemplate_08565E20: @ 0x08565E20
-	rodata_sprite_template 0x0000, 0x0006, 0x08565CFC, 0x08565DC8, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x08565E38: naming_screen.s: CreateBackOkSprites
-	.globl gNamingScreenData_08565E38
-gNamingScreenData_08565E38: @ 0x08565E38
-	@ analyzed canonical ROM range 0x08565E38-0x08565E4F
-sSpriteTemplate_08565E38: @ 0x08565E38
-	rodata_sprite_template 0x0001, 0x0007, 0x08565CFC, 0x08565DC8, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x08565E50: naming_screen.s: CursorInit
-	.globl gNamingScreenData_08565E50
-gNamingScreenData_08565E50: @ 0x08565E50
-	@ analyzed canonical ROM range 0x08565E50-0x08565E67
-sSpriteTemplate_08565E50: @ 0x08565E50
-	rodata_sprite_template 0x0007, 0x0005, 0x08565D04, 0x08565DCC, 0, gDummySpriteAffineAnimTable, sub_080E3060
-	@ pret/pokeemerald-jp direct xref for 0x08565E68: naming_screen.s: CreateUnderscoreSprites
-	.globl gNamingScreenData_08565E68
-gNamingScreenData_08565E68: @ 0x08565E68
-	@ analyzed canonical ROM range 0x08565E68-0x08565E7F
-sSpriteTemplate_08565E68: @ 0x08565E68
-	rodata_sprite_template 0x000A, 0x0003, 0x08565CFC, 0x08565DC8, 0, gDummySpriteAffineAnimTable, sub_080E3144
-	@ pret/pokeemerald-jp direct xref for 0x08565E80: naming_screen.s: CreateUnderscoreSprites
-	.globl gNamingScreenData_08565E80
-gNamingScreenData_08565E80: @ 0x08565E80
-	@ analyzed canonical ROM range 0x08565E80-0x08565E97
-sSpriteTemplate_08565E80: @ 0x08565E80
-	rodata_sprite_template 0x000B, 0x0003, 0x08565CFC, 0x08565DC8, 0, gDummySpriteAffineAnimTable, sub_080E3190
-	@ PC icon SpriteTemplate.
+sNamingScreenAnim_PCIcon: @ 0x08565DBC
+	rodata_anim_frame 0, 2
+	rodata_anim_frame 1, 2
+	rodata_anim_jump 0
+
+sNamingScreenAnims_Loop: @ 0x08565DC8
+	.4byte sNamingScreenAnim_Loop
+
+sNamingScreenAnims_Cursor: @ 0x08565DCC
+	.4byte sNamingScreenAnim_Loop
+	.4byte sNamingScreenAnim_CursorSquish
+
+sNamingScreenAnims_PCIcon: @ 0x08565DD4
+	.4byte sNamingScreenAnim_PCIcon
+
+	.globl sSpriteTemplate_PageSwapFrame
+sSpriteTemplate_PageSwapFrame: @ 0x08565DD8
+	rodata_sprite_template 0x0002, 0x0004, sNamingScreenOam_8x8, sNamingScreenAnims_Loop, 0, gDummySpriteAffineAnimTable, sub_080E3544
+
+	.globl sSpriteTemplate_PageSwapButton
+sSpriteTemplate_PageSwapButton: @ 0x08565DF0
+	rodata_sprite_template 0x0003, 0x0001, sNamingScreenOam_32x16, sNamingScreenAnims_Loop, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+
+	.globl sSpriteTemplate_PageSwapText
+sSpriteTemplate_PageSwapText: @ 0x08565E08
+	rodata_sprite_template 0x0004, 0x0004, sNamingScreenOam_8x8, sNamingScreenAnims_Loop, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+
+	.globl sSpriteTemplate_BackButton
+sSpriteTemplate_BackButton: @ 0x08565E20
+	rodata_sprite_template 0x0000, 0x0006, sNamingScreenOam_8x8, sNamingScreenAnims_Loop, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+
+	.globl sSpriteTemplate_OkButton
+sSpriteTemplate_OkButton: @ 0x08565E38
+	rodata_sprite_template 0x0001, 0x0007, sNamingScreenOam_8x8, sNamingScreenAnims_Loop, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+
+	.globl sSpriteTemplate_Cursor
+sSpriteTemplate_Cursor: @ 0x08565E50
+	rodata_sprite_template 0x0007, 0x0005, sNamingScreenOam_16x16, sNamingScreenAnims_Cursor, 0, gDummySpriteAffineAnimTable, sub_080E3060
+
+	.globl sSpriteTemplate_InputArrow
+sSpriteTemplate_InputArrow: @ 0x08565E68
+	rodata_sprite_template 0x000A, 0x0003, sNamingScreenOam_8x8, sNamingScreenAnims_Loop, 0, gDummySpriteAffineAnimTable, sub_080E3144
+
+	.globl sSpriteTemplate_Underscore
+sSpriteTemplate_Underscore: @ 0x08565E80
+	rodata_sprite_template 0x000B, 0x0003, sNamingScreenOam_8x8, sNamingScreenAnims_Loop, 0, gDummySpriteAffineAnimTable, sub_080E3190
+
 	.globl sSpriteTemplate_PCIcon
 sSpriteTemplate_PCIcon: @ 0x08565E98
-	rodata_sprite_template 0xFFFF, 0x0000, 0x08565CFC, 0x08565DD4, sImageTable_PCIcon, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	rodata_sprite_template 0xFFFF, 0x0000, sNamingScreenOam_8x8, sNamingScreenAnims_PCIcon, sImageTable_PCIcon, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 
-	@ pret/pokeemerald-jp direct xref for 0x08565EB0: naming_screen.s: GetCharAtKeyboardPos, sub_080E45D0
-	.globl gNamingScreenData_08565EB0
-gNamingScreenData_08565EB0: @ 0x08565EB0
-	@ analyzed canonical ROM range 0x08565EB0-0x08565EDF
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x30
-	.4byte 0x085658F7 @ +0x0
-	.4byte 0x0856590B @ +0x4
-	.4byte 0x0856591F @ +0x8
-	.4byte 0x08565933 @ +0xC
-	.4byte 0x08565947 @ +0x10
-	.4byte 0x0856595B @ +0x14
-	.4byte 0x0856596F @ +0x18
-	.4byte 0x08565983 @ +0x1C
-	.4byte 0x08565997 @ +0x20
-	.4byte 0x085659AB @ +0x24
-	.4byte 0x085659BF @ +0x28
-	.4byte 0x085659D3 @ +0x2C
+	.globl sNamingScreenKeyboardText
+sNamingScreenKeyboardText: @ 0x08565EB0
+	.4byte sNamingScreenKeyboardText_Page0Row0
+	.4byte sNamingScreenKeyboardText_Page0Row1
+	.4byte sNamingScreenKeyboardText_Page0Row2
+	.4byte sNamingScreenKeyboardText_Page0Row3
+	.4byte sNamingScreenKeyboardText_Page1Row0
+	.4byte sNamingScreenKeyboardText_Page1Row1
+	.4byte sNamingScreenKeyboardText_Page1Row2
+	.4byte sNamingScreenKeyboardText_Page1Row3
+	.4byte sNamingScreenKeyboardText_Page2Row0
+	.4byte sNamingScreenKeyboardText_Page2Row1
+	.4byte sNamingScreenKeyboardText_Page2Row2
+	.4byte sNamingScreenKeyboardText_Page2Row3
+
+	.if (. - sNamingScreenCharConversionTo) != 0x31F
+	.error "naming-screen semantic static prefix size mismatch"
+	.endif
+
 	@ Naming-screen sprite sheets loaded by choose_name_or_words_screen_load_bg_tile_patterns.
 	.globl sNamingScreenSpriteSheets
 sNamingScreenSpriteSheets: @ 0x08565EE0

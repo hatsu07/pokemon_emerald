@@ -4,6 +4,19 @@
 	.4byte \size
 	.endm
 
+@ struct WindowTemplate (8 bytes).
+	.macro rodata_window_template bg, left, top, width, height, palette, base_block
+	.byte \bg, \left, \top, \width, \height, \palette
+	.2byte \base_block
+	.endm
+
+@ JP struct NamingScreenTemplate (12 bytes).
+	.macro rodata_naming_screen_template copy_existing, max_chars, icon_function, add_gender_icon, initial_page, unused, title
+	.byte \copy_existing, \max_chars, \icon_function, \add_gender_icon
+	.byte \initial_page, \unused, 0, 0
+	.4byte \title
+	.endm
+
 @ struct MenuAction (8 bytes) used by script-menu multichoice lists.
 	.macro script_menu_action text
 	.4byte \text

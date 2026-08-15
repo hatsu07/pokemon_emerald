@@ -1015,8 +1015,9 @@ gNamingScreenKeyboardSymbols_Tilemap: @ 0x08565790
 	.error "naming-screen tilemap ROM slot range size mismatch"
 	.endif
 
-	.globl gCreditsPointerTable_Rom_565858
-gCreditsPointerTable_Rom_565858: @ 0x08565858
+	@ Messages selected by DisplaySentToPCMessage.
+	.globl sTransferredToPCMessages
+sTransferredToPCMessages: @ 0x08565858
 	.4byte gText_Rom_243E08
 	.4byte gText_Rom_243E2A
 	.4byte gText_Rom_243E4C

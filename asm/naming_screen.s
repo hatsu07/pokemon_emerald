@@ -250,7 +250,7 @@ _080E2440: .4byte 0x00001E1C
 _080E2444: .4byte 0x00001E1E
 _080E2448: .4byte 0x00001E21
 _080E244C: .4byte 0x00001E28
-_080E2450: .4byte gNamingScreenData_08565CE8
+_080E2450: .4byte sNamingScreenTemplates
 _080E2454: .4byte 0x00001E2C
 _080E2458: .4byte 0x00001E22
 _080E245C: .4byte 0x00001E16
@@ -480,8 +480,8 @@ _080E25A0:
 	.align 2, 0
 _080E2640: .4byte 0x040000D4
 _080E2644: .4byte 0x81000800
-_080E2648: .4byte gNamingScreenData_085659FC
-_080E264C: .4byte gNamingScreenData_08565A0C
+_080E2648: .4byte sNamingScreenBgTemplates
+_080E264C: .4byte sNamingScreenWindowTemplates
 _080E2650: .4byte 0x02039C34
 _080E2654: .4byte 0x00001E11
 _080E2658: .4byte 0x0000080C
@@ -593,8 +593,8 @@ _080E272E:
 	.align 2, 0
 	thumb_func_end sub_080E270C
 
-	thumb_func_start GetCurrentPageColumnCount
-GetCurrentPageColumnCount: @ 0x080E2734
+	thumb_func_start NamingScreen_PageToNextGfxId
+NamingScreen_PageToNextGfxId: @ 0x080E2734
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	lsls r4, r4, #0x18
@@ -610,11 +610,11 @@ GetCurrentPageColumnCount: @ 0x080E2734
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080E2754: .4byte gNamingScreenData_08565A3C
-	thumb_func_end GetCurrentPageColumnCount
+_080E2754: .4byte sNamingScreenPageToNextGfxId
+	thumb_func_end NamingScreen_PageToNextGfxId
 
-	thumb_func_start sub_080E2758
-sub_080E2758: @ 0x080E2758
+	thumb_func_start NamingScreen_CurrentPageToNextKeyboardId
+NamingScreen_CurrentPageToNextKeyboardId: @ 0x080E2758
 	push {r4, lr}
 	ldr r4, _080E277C
 	bl sub_080E270C
@@ -632,13 +632,13 @@ sub_080E2758: @ 0x080E2758
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080E277C: .4byte gNamingScreenData_08565A42
+_080E277C: .4byte sNamingScreenPageToNextKeyboardId
 _080E2780: .4byte 0x02039C34
 _080E2784: .4byte 0x00001E22
-	thumb_func_end sub_080E2758
+	thumb_func_end NamingScreen_CurrentPageToNextKeyboardId
 
-	thumb_func_start sub_080E2788
-sub_080E2788: @ 0x080E2788
+	thumb_func_start NamingScreen_CurrentPageToKeyboardId
+NamingScreen_CurrentPageToKeyboardId: @ 0x080E2788
 	push {r4, lr}
 	ldr r4, _080E27AC
 	bl sub_080E270C
@@ -656,10 +656,10 @@ sub_080E2788: @ 0x080E2788
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080E27AC: .4byte gNamingScreenData_08565A48
+_080E27AC: .4byte sNamingScreenPageToKeyboardId
 _080E27B0: .4byte 0x02039C34
 _080E27B4: .4byte 0x00001E22
-	thumb_func_end sub_080E2788
+	thumb_func_end NamingScreen_CurrentPageToKeyboardId
 
 	thumb_func_start MainState_BeginFadeIn
 MainState_BeginFadeIn: @ 0x080E27B8
@@ -1095,7 +1095,7 @@ _080E2B80: .4byte 0x00001E30
 _080E2B84: .4byte 0x02021C68
 _080E2B88: .4byte 0x000008AB
 _080E2B8C: .4byte 0x02021C7C
-_080E2B90: .4byte 0x08565858
+_080E2B90: .4byte sTransferredToPCMessages
 _080E2B94: .4byte 0x030030B4
 	thumb_func_end DisplaySentToPCMessage
 
@@ -1243,7 +1243,7 @@ _080E2C9E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E2CBC: .4byte 0x08565A50
+_080E2CBC: .4byte sNamingScreenPageSwapAnimStateFuncs
 _080E2CC0: .4byte 0x03005B60
 	thumb_func_end Task_HandlePageSwapAnim
 
@@ -1895,7 +1895,7 @@ _080E3176:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E318C: .4byte gNamingScreenData_08565A60
+_080E318C: .4byte sNamingScreenInputArrowXOffsets
 	thumb_func_end sub_080E3144
 
 	thumb_func_start sub_080E3190
@@ -1918,7 +1918,7 @@ sub_080E3190: @ 0x080E3190
 	strh r0, [r4, #0x30]
 	b _080E31E2
 	.align 2, 0
-_080E31B8: .4byte gNamingScreenData_08565A68
+_080E31B8: .4byte sNamingScreenUnderscoreYOffsets
 _080E31BC:
 	movs r1, #0x30
 	ldrsh r0, [r4, r1]
@@ -2026,7 +2026,7 @@ CursorInit: @ 0x080E3208
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E328C: .4byte gNamingScreenData_08565E50
+_080E328C: .4byte sSpriteTemplate_Cursor
 _080E3290: .4byte 0x02039C34
 _080E3294: .4byte 0x00001E23
 _080E3298: .4byte 0x020205AC
@@ -2251,7 +2251,7 @@ GetKeyRoleAtCursorPos: @ 0x080E3414
 	ldrb r0, [r1]
 	b _080E3442
 	.align 2, 0
-_080E343C: .4byte gNamingScreenData_08565A70
+_080E343C: .4byte sNamingScreenButtonKeyRoles
 _080E3440:
 	movs r0, #0
 _080E3442:
@@ -2341,14 +2341,14 @@ CreatePageSwitcherSprites: @ 0x080E344C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E34F0: .4byte gNamingScreenData_08565DD8
+_080E34F0: .4byte sSpriteTemplate_PageSwapFrame
 _080E34F4: .4byte 0x02039C34
 _080E34F8: .4byte 0x00001E24
 _080E34FC: .4byte 0x020205AC
-_080E3500: .4byte gNamingScreenData_08565D68
-_080E3504: .4byte gNamingScreenData_08565E08
-_080E3508: .4byte gNamingScreenData_08565D70
-_080E350C: .4byte gNamingScreenData_08565DF0
+_080E3500: .4byte sSubspriteTable_PageSwapFrame
+_080E3504: .4byte sSpriteTemplate_PageSwapText
+_080E3508: .4byte sSubspriteTable_PageSwapText
+_080E350C: .4byte sSpriteTemplate_PageSwapButton
 	thumb_func_end CreatePageSwitcherSprites
 
 	thumb_func_start sub_080E3510
@@ -2397,7 +2397,7 @@ _080E354A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E3568: .4byte 0x08565A74
+_080E3568: .4byte sNamingScreenPageSwapSpriteFuncs
 	thumb_func_end sub_080E3544
 
 	thumb_func_start sub_080E356C
@@ -2422,7 +2422,7 @@ sub_080E356C: @ 0x080E356C
 	ldr r1, _080E35BC
 	adds r0, r0, r1
 	ldrb r0, [r0]
-	bl GetCurrentPageColumnCount
+	bl NamingScreen_PageToNextGfxId
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	adds r1, r5, #0
@@ -2490,7 +2490,7 @@ sub_080E35C4: @ 0x080E35C4
 	bl __modsi3
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
-	bl GetCurrentPageColumnCount
+	bl NamingScreen_PageToNextGfxId
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	adds r1, r4, #0
@@ -2588,8 +2588,8 @@ sub_080E3678: @ 0x080E3678
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E36D0: .4byte gNamingScreenData_08565A84
-_080E36D4: .4byte gNamingScreenData_08565A8A
+_080E36D0: .4byte sNamingScreenPageSwapPalTags
+_080E36D4: .4byte sNamingScreenPageSwapGfxTags
 	thumb_func_end sub_080E3678
 
 	thumb_func_start CreateBackOkSprites
@@ -2643,10 +2643,10 @@ CreateBackOkSprites: @ 0x080E36D8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E3740: .4byte gNamingScreenData_08565E20
+_080E3740: .4byte sSpriteTemplate_BackButton
 _080E3744: .4byte 0x020205AC
-_080E3748: .4byte gNamingScreenData_08565D88
-_080E374C: .4byte gNamingScreenData_08565E38
+_080E3748: .4byte sSubspriteTable_Button
+_080E374C: .4byte sSpriteTemplate_OkButton
 	thumb_func_end CreateBackOkSprites
 
 	thumb_func_start CreateUnderscoreSprites
@@ -2745,10 +2745,10 @@ _080E3800:
 	.align 2, 0
 _080E3808: .4byte 0x02039C34
 _080E380C: .4byte 0x00001E16
-_080E3810: .4byte gNamingScreenData_08565E68
+_080E3810: .4byte sSpriteTemplate_InputArrow
 _080E3814: .4byte 0x020205AC
 _080E3818: .4byte 0x00001E28
-_080E381C: .4byte gNamingScreenData_08565E80
+_080E381C: .4byte sSpriteTemplate_Underscore
 	thumb_func_end CreateUnderscoreSprites
 
 	thumb_func_start CreateInputTargetIcon
@@ -2772,7 +2772,7 @@ CreateInputTargetIcon: @ 0x080E3820
 TaskDummy3: @ 0x080E383C
 	bx r0
 	.align 2, 0
-_080E3840: .4byte 0x08565A90
+_080E3840: .4byte sNamingScreenIconFunctions
 _080E3844: .4byte 0x02039C34
 _080E3848: .4byte 0x00001E28
 	thumb_func_end TaskDummy3
@@ -2854,7 +2854,7 @@ NamingScreen_CreatePCIcon: @ 0x080E38AC
 	.align 2, 0
 _080E38E0: .4byte sSpriteTemplate_PCIcon
 _080E38E4: .4byte 0x020205AC
-_080E38E8: .4byte gNamingScreenData_08565D90
+_080E38E8: .4byte sSubspriteTable_PCIcon
 	thumb_func_end NamingScreen_CreatePCIcon
 
 	thumb_func_start NamingScreen_CreateMonIcon
@@ -2972,7 +2972,7 @@ _080E39CC:
 	lsrs r0, r0, #0x18
 	b _080E39DE
 	.align 2, 0
-_080E39D4: .4byte 0x08565AA4
+_080E39D4: .4byte sNamingScreenKeyboardKeyHandlers
 _080E39D8:
 	bl sub_080E3310
 _080E39DC:
@@ -3190,7 +3190,7 @@ sub_080E3B34: @ 0x080E3B34
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E3B5C: .4byte 0x08565AB4
+_080E3B5C: .4byte sNamingScreenInputFuncs
 _080E3B60: .4byte 0x03005B60
 	thumb_func_end sub_080E3B34
 
@@ -3383,10 +3383,10 @@ _080E3C9C:
 	add r0, r8
 	b _080E3CE4
 	.align 2, 0
-_080E3CB8: .4byte gNamingScreenData_08565AC0
-_080E3CBC: .4byte gNamingScreenData_08565ACA
-_080E3CC0: .4byte gNamingScreenData_08565AD4
-_080E3CC4: .4byte 0x08565ADC
+_080E3CB8: .4byte sNamingScreenDpadDeltaX
+_080E3CBC: .4byte sNamingScreenDpadDeltaY
+_080E3CC0: .4byte sNamingScreenKeyRowToButtonRow
+_080E3CC4: .4byte sNamingScreenButtonRowToKeyRow
 _080E3CC8: .4byte 0x03002360
 _080E3CCC:
 	cmp r3, #0x13
@@ -3584,7 +3584,7 @@ nullsub_10: @ 0x080E3E3C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E3E40: .4byte 0x08565AE4
+_080E3E40: .4byte sNamingScreenDrawTextEntryBoxFuncs
 _080E3E44: .4byte 0x02039C34
 _080E3E48: .4byte 0x00001E2C
 	thumb_func_end nullsub_10
@@ -3610,7 +3610,7 @@ sub_080E3E4C: @ 0x080E3E4C
 InputState_Disabled: @ 0x080E3E68
 	bx r0
 	.align 2, 0
-_080E3E6C: .4byte 0x08565AF8
+_080E3E6C: .4byte sNamingScreenDrawGenderIconFuncs
 _080E3E70: .4byte 0x02039C34
 _080E3E74: .4byte 0x00001E28
 	thumb_func_end InputState_Disabled
@@ -3671,7 +3671,7 @@ _080E3ED8: .4byte 0x02039C34
 _080E3EDC: .4byte 0x00001E36
 _080E3EE0: .4byte 0x085C940C
 _080E3EE4: .4byte 0x00001E13
-_080E3EE8: .4byte gNamingScreenData_08565B00
+_080E3EE8: .4byte sNamingScreenGenderColors
 	thumb_func_end sub_080E3E7C
 
 	thumb_func_start GetCharAtKeyboardPos
@@ -3683,7 +3683,7 @@ GetCharAtKeyboardPos: @ 0x080E3EEC
 	lsrs r5, r5, #0x10
 	lsls r4, r4, #0x10
 	lsrs r4, r4, #0x10
-	bl sub_080E2788
+	bl NamingScreen_CurrentPageToKeyboardId
 	ldr r1, _080E3F1C
 	lsls r4, r4, #0x10
 	asrs r4, r4, #0xe
@@ -3700,7 +3700,7 @@ GetCharAtKeyboardPos: @ 0x080E3EEC
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080E3F1C: .4byte gNamingScreenData_08565EB0
+_080E3F1C: .4byte sNamingScreenKeyboardText
 	thumb_func_end GetCharAtKeyboardPos
 
 	thumb_func_start GetTextCaretPosition
@@ -3940,8 +3940,8 @@ _080E40CC:
 	b _080E40F6
 	.align 2, 0
 _080E40E0: .4byte 0x02039C34
-_080E40E4: .4byte gNamingScreenData_08565B06
-_080E40E8: .4byte gNamingScreenData_08565BC1
+_080E40E4: .4byte sNamingScreenCharConversionFrom
+_080E40E8: .4byte sNamingScreenCharConversionTo
 _080E40EC:
 	adds r2, #1
 	adds r4, #1
@@ -4518,7 +4518,7 @@ _080E4504:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E450C: .4byte gNamingScreenData_08565C7B
+_080E450C: .4byte sNamingScreenKeyboardPageBgPalettes
 	thumb_func_end sub_080E44A4
 
 	thumb_func_start sub_080E4510
@@ -4670,9 +4670,9 @@ _080E45FA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E463C: .4byte gNamingScreenData_08565C8C
-_080E4640: .4byte gNamingScreenData_08565C90
-_080E4644: .4byte gNamingScreenData_08565EB0
+_080E463C: .4byte sNamingScreenFillValues
+_080E4640: .4byte sNamingScreenKeyboardTextColors
+_080E4644: .4byte sNamingScreenKeyboardText
 	thumb_func_end sub_080E45D0
 
 	thumb_func_start sub_080E4648
@@ -4721,13 +4721,13 @@ _080E4682:
 	ldr r1, [r1]
 	adds r0, r6, #0
 	bl sub_080E4490
-	bl sub_080E2758
+	bl NamingScreen_CurrentPageToNextKeyboardId
 	adds r1, r0, #0
 	lsls r1, r1, #0x18
 	lsrs r1, r1, #0x18
 	adds r0, r5, #0
 	bl sub_080E45D0
-	bl sub_080E2758
+	bl NamingScreen_CurrentPageToNextKeyboardId
 	adds r1, r0, #0
 	lsls r1, r1, #0x18
 	lsrs r1, r1, #0x18
@@ -4741,7 +4741,7 @@ _080E4682:
 	.align 2, 0
 _080E46D4: .4byte 0x02039C34
 _080E46D8: .4byte 0x00001E12
-_080E46DC: .4byte gNamingScreenData_08565C9C
+_080E46DC: .4byte sNamingScreenNextKeyboardPageTilemaps
 _080E46E0: .4byte 0x00001E22
 	thumb_func_end sub_080E4648
 
@@ -4787,10 +4787,10 @@ sub_080E46E4: @ 0x080E46E4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E473C: .4byte gNamingScreenData_08565CB4
+_080E473C: .4byte sNamingScreenControlsTextColor
 _080E4740: .4byte 0x02039C34
 _080E4744: .4byte 0x00001E15
-_080E4748: .4byte gNamingScreenData_085658A0
+_080E4748: .4byte sText_NamingScreenControls
 	thumb_func_end sub_080E46E4
 
 	thumb_func_start sub_080E474C
@@ -4930,7 +4930,7 @@ _080E485A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080E4864: .4byte 0x085658C1
+_080E4864: .4byte sText_AlphabetUpperLower
 	thumb_func_end sub_080E4830
 
 	thumb_func_start sub_080E4868
