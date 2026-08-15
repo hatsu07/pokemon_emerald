@@ -1253,6 +1253,117 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # END POKEBLOCK USE SCREEN EXACT PIPELINE
 
 
+    # BEGIN LEGACY POKENAV EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/pokenav/legacy/(screen_a|screen_b)[.](4bpp|gbapal)$")
+        set(LEGACY_POKENAV_SCREEN "${CMAKE_MATCH_1}")
+        set(LEGACY_POKENAV_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/${LEGACY_POKENAV_SCREEN}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${LEGACY_POKENAV_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${LEGACY_POKENAV_PNG}" "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/screen_a.bin.lz")
+        set(LEGACY_POKENAV_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/screen_a.tilemap.txt")
+        set(LEGACY_POKENAV_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${LEGACY_POKENAV_PLAN}"
+                --stem screen_a_tilemap
+                "${LEGACY_POKENAV_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LEGACY_POKENAV_TILEMAP}"
+                "${LEGACY_POKENAV_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/screen_b.bin.lz")
+        set(LEGACY_POKENAV_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/screen_b.tilemap.txt")
+        set(LEGACY_POKENAV_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${LEGACY_POKENAV_PLAN}"
+                --stem screen_b_tilemap
+                "${LEGACY_POKENAV_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LEGACY_POKENAV_TILEMAP}"
+                "${LEGACY_POKENAV_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/outline.gbapal")
+        set(LEGACY_POKENAV_OUTLINE_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/outline.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${LEGACY_POKENAV_OUTLINE_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${LEGACY_POKENAV_OUTLINE_PNG}" "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/outline.4bpp.lz")
+        set(LEGACY_POKENAV_OUTLINE_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/outline.png")
+        set(LEGACY_POKENAV_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${LEGACY_POKENAV_PLAN}"
+                --stem outline
+                --raw-size 0x560
+                "${LEGACY_POKENAV_OUTLINE_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LEGACY_POKENAV_OUTLINE_PNG}"
+                "${LEGACY_POKENAV_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/outline.bin.lz")
+        set(LEGACY_POKENAV_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/outline.tilemap.txt")
+        set(LEGACY_POKENAV_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${LEGACY_POKENAV_PLAN}"
+                --stem outline_tilemap
+                "${LEGACY_POKENAV_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LEGACY_POKENAV_TILEMAP}"
+                "${LEGACY_POKENAV_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END LEGACY POKENAV EXACT PIPELINE
+
+
     # BEGIN TILESET RAW 4BPP FALLBACK PIPELINE
     # Handles editable tileset graphics other than the dedicated tiles.4bpp
     # rule above, including animation frames.

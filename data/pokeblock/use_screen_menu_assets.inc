@@ -1,4 +1,4 @@
-@ JP Use Pokeblock menu graphics/data, 0x085BF880-0x085C054B.
+@ JP Use Pokeblock menu graphics/data, 0x085BF880-0x085C052B.
 @ Only consumer-proven objects are named; intervening residual bytes stay literal.
 
 	.globl sMonFrame_Pal
@@ -68,11 +68,9 @@ sNatureWindowTilemap: @ 0x085C0410
 sGraphData_Tilemap: @ 0x085C0488
 	.incbin "build/graphics/pokeblock/use_screen/graph_data.bin.lz"
 
-	@ 0x085C052A-0x085C054B: unresolved residual before next unrelated LZ object
-	.byte 0x00, 0x00, 0xFF, 0x7F, 0x39, 0x6B, 0xB5, 0x5E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ 0x085C052A-0x085C052B: alignment/residual before legacy PokéNav outline
 	.byte 0x00, 0x00
 
-	.if (. - sMonFrame_Pal) != 0xCCC
+	.if (. - sMonFrame_Pal) != 0xCAC
 	.error "Use Pokeblock semantic asset block size mismatch"
 	.endif
