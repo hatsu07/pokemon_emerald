@@ -11268,7 +11268,7 @@ _080CC260: .4byte 0x000002D2
 _080CC264: .4byte 0x02037434
 _080CC268: .4byte 0x020399A8
 _080CC26C: .4byte 0x00000A68
-_080CC270: .4byte gPokemonStorageSystemData_08555B00
+_080CC270: .4byte sWaldaWallpaperIcons
 	thumb_func_end LoadWallpaperGfx
 
 	thumb_func_start WaitForWallpaperGfxLoad
