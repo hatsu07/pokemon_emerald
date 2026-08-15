@@ -665,8 +665,8 @@ _0812AA54: .4byte 0x000020BF
 	thumb_func_start SlotMachineSetup_5_0
 SlotMachineSetup_5_0: @ 0x0812AA58
 	push {lr}
-	bl sub_0812F918
-	bl sub_0812F968
+	bl LoadMenuGfx
+	bl LoadMenuAndReelOverlayTilemaps
 	bl sub_0812F7F4
 	movs r1, #0x80
 	lsls r1, r1, #2
@@ -5454,7 +5454,7 @@ sub_0812CDB4: @ 0x0812CDB4
 	movs r1, #0x62
 	movs r2, #0x63
 	movs r3, #0x72
-	bl sub_0812FA9C
+	bl SetReelButtonTilemap
 	ldrh r0, [r4, #8]
 	adds r0, #1
 	strh r0, [r4, #8]
@@ -5503,7 +5503,7 @@ sub_0812CE04: @ 0x0812CE04
 	movs r1, #0x42
 	movs r2, #0x43
 	movs r3, #0x52
-	bl sub_0812FA9C
+	bl SetReelButtonTilemap
 	adds r0, r4, #0
 	bl DestroyTask
 	add sp, #4
@@ -6519,7 +6519,7 @@ ReeltimeAction0: @ 0x0812D52C
 	bl SetGpuReg
 	movs r0, #0x1e
 	movs r1, #0
-	bl sub_0812DC18
+	bl LoadReelTimeWindowTilemap
 	bl sub_0812E484
 	bl sub_0812E34C
 	bl sub_0812E660
@@ -6576,7 +6576,7 @@ ReeltimeAction1: @ 0x0812D5A4
 	movs r0, #0xe
 	ldrsh r1, [r4, r0]
 	adds r0, r2, #0
-	bl sub_0812DC18
+	bl LoadReelTimeWindowTilemap
 _0812D5F2:
 	movs r1, #0xa
 	ldrsh r0, [r4, r1]
@@ -7056,7 +7056,7 @@ ReeltimeAction10: @ 0x0812D960
 	cmp r0, #0x19
 	bgt _0812D9A8
 	adds r0, r5, #0
-	bl sub_0812DC60
+	bl ClearReelTimeWindowTilemap
 	b _0812D9AE
 	.align 2, 0
 _0812D9A0: .4byte 0x02021B38
@@ -7366,8 +7366,8 @@ _0812DC10: .4byte 0x0203A800
 _0812DC14: .4byte 0x0812D4FD
 	thumb_func_end ReeltimeAction17
 
-	thumb_func_start sub_0812DC18
-sub_0812DC18: @ 0x0812DC18
+	thumb_func_start LoadReelTimeWindowTilemap
+LoadReelTimeWindowTilemap: @ 0x0812DC18
 	push {r4, r5, r6, lr}
 	movs r2, #4
 	lsls r1, r1, #0x10
@@ -7402,11 +7402,11 @@ _0812DC24:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812DC5C: .4byte gSlotMachineData_08587F9C
-	thumb_func_end sub_0812DC18
+_0812DC5C: .4byte sReelTimeWindow_Tilemap
+	thumb_func_end LoadReelTimeWindowTilemap
 
-	thumb_func_start sub_0812DC60
-sub_0812DC60: @ 0x0812DC60
+	thumb_func_start ClearReelTimeWindowTilemap
+ClearReelTimeWindowTilemap: @ 0x0812DC60
 	push {r4, r5, lr}
 	movs r4, #4
 	lsls r0, r0, #0x10
@@ -7429,8 +7429,8 @@ _0812DC68:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812DC8C: .4byte 0x08588604
-	thumb_func_end sub_0812DC60
+_0812DC8C: .4byte sEmptyTilemap
+	thumb_func_end ClearReelTimeWindowTilemap
 
 	thumb_func_start OpenInfoBox
 OpenInfoBox: @ 0x0812DC90
@@ -7551,7 +7551,7 @@ InfoBox_8104B80: @ 0x0812DD58
 	push {r4, lr}
 	adds r4, r0, #0
 	bl sub_0812DFEC
-	bl sub_0812FB18
+	bl LoadInfoBoxTilemap
 	ldr r0, _0812DD84
 	bl AddWindow
 	movs r0, #1
@@ -7651,7 +7651,7 @@ _0812DE20: .4byte 0x03002360
 InfoBox_812DE14: @ 0x0812DE24
 	push {r4, lr}
 	adds r4, r0, #0
-	bl sub_0812F978
+	bl LoadSlotMachineMenuTilemap
 	movs r0, #3
 	bl ShowBg
 	ldrh r0, [r4, #8]
@@ -11245,8 +11245,8 @@ _0812F910: .4byte 0x0203A7AC
 _0812F914: .4byte sReelBackground_Tilemap
 	thumb_func_end sub_0812F8B0
 
-	thumb_func_start sub_0812F918
-sub_0812F918: @ 0x0812F918
+	thumb_func_start LoadMenuGfx
+LoadMenuGfx: @ 0x0812F918
 	push {r4, lr}
 	ldr r4, _0812F958
 	movs r0, #0x80
@@ -11278,20 +11278,20 @@ _0812F958: .4byte 0x0203A794
 _0812F95C: .4byte gSlotMachineMenu_Gfx
 _0812F960: .4byte gSlotMachineMenu_Pal
 _0812F964: .4byte sUnkPalette
-	thumb_func_end sub_0812F918
+	thumb_func_end LoadMenuGfx
 
-	thumb_func_start sub_0812F968
-sub_0812F968: @ 0x0812F968
+	thumb_func_start LoadMenuAndReelOverlayTilemaps
+LoadMenuAndReelOverlayTilemaps: @ 0x0812F968
 	push {lr}
-	bl sub_0812F978
+	bl LoadSlotMachineMenuTilemap
 	bl LoadSlotMachineWheelOverlay
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end sub_0812F968
+	thumb_func_end LoadMenuAndReelOverlayTilemaps
 
-	thumb_func_start sub_0812F978
-sub_0812F978: @ 0x0812F978
+	thumb_func_start LoadSlotMachineMenuTilemap
+LoadSlotMachineMenuTilemap: @ 0x0812F978
 	push {r4, lr}
 	movs r4, #0
 _0812F97C:
@@ -11313,8 +11313,8 @@ _0812F97C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812F9A0: .4byte gSlotMachineData_08587AEC
-	thumb_func_end sub_0812F978
+_0812F9A0: .4byte gSlotMachineMenu_Tilemap
+	thumb_func_end LoadSlotMachineMenuTilemap
 
 	thumb_func_start LoadSlotMachineWheelOverlay
 LoadSlotMachineWheelOverlay: @ 0x0812F9A4
@@ -11440,8 +11440,8 @@ _0812FA56:
 _0812FA98: .4byte 0x0203A79C
 	thumb_func_end LoadSlotMachineWheelOverlay
 
-	thumb_func_start sub_0812FA9C
-sub_0812FA9C: @ 0x0812FA9C
+	thumb_func_start SetReelButtonTilemap
+SetReelButtonTilemap: @ 0x0812FA9C
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldr r5, [sp, #0x10]
@@ -11498,10 +11498,10 @@ sub_0812FA9C: @ 0x0812FA9C
 _0812FB0C: .4byte 0x0203A7A8
 _0812FB10: .4byte 0x000001E1
 _0812FB14: .4byte 0x00000201
-	thumb_func_end sub_0812FA9C
+	thumb_func_end SetReelButtonTilemap
 
-	thumb_func_start sub_0812FB18
-sub_0812FB18: @ 0x0812FB18
+	thumb_func_start LoadInfoBoxTilemap
+LoadInfoBoxTilemap: @ 0x0812FB18
 	push {r4, lr}
 	movs r4, #0
 _0812FB1C:
@@ -11525,8 +11525,8 @@ _0812FB1C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812FB48: .4byte gSlotMachineData_08588154
-	thumb_func_end sub_0812FB18
+_0812FB48: .4byte gSlotMachineInfoBox_Tilemap
+	thumb_func_end LoadInfoBoxTilemap
 
 	thumb_func_start SlotMachineSetup_9_0
 SlotMachineSetup_9_0: @ 0x0812FB4C
