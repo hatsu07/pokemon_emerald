@@ -704,11 +704,11 @@ MainState_BeginFadeIn: @ 0x080E27B8
 	bl sub_080E44A4
 	b _080E287A
 	.align 2, 0
-_080E2818: .4byte gNamingScreenData_08565524
+_080E2818: .4byte gNamingScreenBackground_Tilemap
 _080E281C: .4byte 0x02039C34
 _080E2820: .4byte 0x00001E22
-_080E2824: .4byte gNamingScreenData_085656C8
-_080E2828: .4byte gNamingScreenData_08565600
+_080E2824: .4byte gNamingScreenKeyboardLower_Tilemap
+_080E2828: .4byte gNamingScreenKeyboardUpper_Tilemap
 _080E282C: .4byte 0x00001E12
 _080E2830: .4byte 0x00001E11
 _080E2834:
@@ -780,8 +780,8 @@ _080E287A:
 	.align 2, 0
 _080E28D4: .4byte 0x02039C34
 _080E28D8: .4byte 0x00001E22
-_080E28DC: .4byte gNamingScreenData_085656C8
-_080E28E0: .4byte gNamingScreenData_08565600
+_080E28DC: .4byte gNamingScreenKeyboardLower_Tilemap
+_080E28E0: .4byte gNamingScreenKeyboardUpper_Tilemap
 _080E28E4: .4byte 0x00001E11
 _080E28E8: .4byte 0x00001E12
 _080E28EC: .4byte 0x00001E10

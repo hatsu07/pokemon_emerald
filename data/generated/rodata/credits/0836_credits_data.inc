@@ -40,12 +40,21 @@ gNamingScreenData_08565C90: @ 0x08565C90
 	.4byte 0x08565C84 @ +0x0
 	.4byte 0x08565C80 @ +0x4
 	.4byte 0x08565C88 @ +0x8
-	@ pret/pokeemerald-jp direct xref for 0x08565C9C: naming_screen.s: sub_080E4648
+	@ 2x3 naming-screen keyboard tilemap pointer matrix used by sub_080E4648.
+	@ Row selection depends on the active BG; the column is the current page.
 	.globl gNamingScreenData_08565C9C
 gNamingScreenData_08565C9C: @ 0x08565C9C
-	@ analyzed canonical ROM range 0x08565C9C-0x08565CB3
-sSpriteTemplate_08565C9C: @ 0x08565C9C
-	rodata_sprite_template 0x5600, 0x0856, 0x08565790, sLz77Block_085656C8, sLz77Block_08565600, sLz77Block_085656C8, 0x08565790
+	.4byte gNamingScreenKeyboardUpper_Tilemap
+	.4byte gNamingScreenKeyboardSymbols_Tilemap
+	.4byte gNamingScreenKeyboardLower_Tilemap
+	.4byte gNamingScreenKeyboardUpper_Tilemap
+	.4byte gNamingScreenKeyboardLower_Tilemap
+	.4byte gNamingScreenKeyboardSymbols_Tilemap
+
+	.if (. - gNamingScreenData_08565C9C) != 0x18
+	.error "naming-screen keyboard tilemap pointer matrix size mismatch"
+	.endif
+
 	@ pret/pokeemerald-jp direct xref for 0x08565CB4: naming_screen.s: sub_080E46E4
 	.globl gNamingScreenData_08565CB4
 gNamingScreenData_08565CB4: @ 0x08565CB4

@@ -1012,6 +1012,30 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
 
+    # BEGIN NAMING SCREEN TILEMAP EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/naming_screen/(background|keyboard_upper|keyboard_lower|keyboard_symbols)[.]bin[.]lz$")
+        set(NAMING_SCREEN_TILEMAP_STEM "${CMAKE_MATCH_1}")
+        set(NAMING_SCREEN_TILEMAP_SOURCE
+            "${CMAKE_SOURCE_DIR}/graphics/naming_screen/${NAMING_SCREEN_TILEMAP_STEM}.tilemap.u16")
+        set(NAMING_SCREEN_LZ77_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/naming_screen/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${NAMING_SCREEN_LZ77_PLAN}"
+                --stem "${NAMING_SCREEN_TILEMAP_STEM}_tilemap"
+                "${NAMING_SCREEN_TILEMAP_SOURCE}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${NAMING_SCREEN_TILEMAP_SOURCE}"
+                "${NAMING_SCREEN_LZ77_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END NAMING SCREEN TILEMAP EXACT PIPELINE
+
     # BEGIN NAMING SCREEN PALETTE AND MENU GFX EXACT PIPELINE
     elseif("${RELATIVE_OUTPUT}" STREQUAL
             "build/graphics/naming_screen/menu.4bpp.lz")

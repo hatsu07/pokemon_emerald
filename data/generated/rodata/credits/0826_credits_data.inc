@@ -991,41 +991,30 @@ gNamingScreenMenu_Gfx: @ 0x08565318
 	.error "naming-screen palette/menu gfx range size mismatch"
 	.endif
 
-	@ pret/pokeemerald-jp direct xref for 0x08565524: naming_screen.s: MainState_BeginFadeIn
-	.globl gNamingScreenData_08565524
-gNamingScreenData_08565524:
-	.globl sLz77Block_08565524
-	@ confirmed GBA LZ77 stream: compressed=0xD9, decompressed=0x500
-sLz77Block_08565524:
-	@ analyzed canonical ROM range 0x08565524-0x085655FF
-	.incbin "build/graphics/analyzed/gunknown_8565524_08565524.4bpp.lz"
-	.if (. - sLz77Block_08565524) != 0xDC
-	.error "sLz77Block_08565524 compressed size mismatch"
+	@ Naming-screen 32x20 background tilemap.
+	.globl gNamingScreenBackground_Tilemap
+gNamingScreenBackground_Tilemap: @ 0x08565524
+	.incbin "build/graphics/naming_screen/background.bin.lz"
+
+	@ Naming-screen 32x20 uppercase keyboard tilemap.
+	.globl gNamingScreenKeyboardUpper_Tilemap
+gNamingScreenKeyboardUpper_Tilemap: @ 0x08565600
+	.incbin "build/graphics/naming_screen/keyboard_upper.bin.lz"
+
+	@ Naming-screen 32x20 lowercase keyboard tilemap.
+	.globl gNamingScreenKeyboardLower_Tilemap
+gNamingScreenKeyboardLower_Tilemap: @ 0x085656C8
+	.incbin "build/graphics/naming_screen/keyboard_lower.bin.lz"
+
+	@ Naming-screen 32x20 symbols keyboard tilemap.
+	.globl gNamingScreenKeyboardSymbols_Tilemap
+gNamingScreenKeyboardSymbols_Tilemap: @ 0x08565790
+	.incbin "build/graphics/naming_screen/keyboard_symbols.bin.lz"
+
+	.if (. - gNamingScreenBackground_Tilemap) != 0x334
+	.error "naming-screen tilemap ROM slot range size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08565600: naming_screen.s: MainState_BeginFadeIn
-	.globl gNamingScreenData_08565600
-gNamingScreenData_08565600:
-	.globl sLz77Block_08565600
-	@ confirmed GBA LZ77 stream: compressed=0xC8, decompressed=0x500
-sLz77Block_08565600:
-	@ analyzed canonical ROM range 0x08565600-0x085656C7
-	.incbin "build/graphics/analyzed/gunknown_8565600_08565600.4bpp.lz"
-	.if (. - sLz77Block_08565600) != 0xC8
-	.error "sLz77Block_08565600 compressed size mismatch"
-	.endif
-	@ pret/pokeemerald-jp direct xref for 0x085656C8: naming_screen.s: MainState_BeginFadeIn
-	.globl gNamingScreenData_085656C8
-gNamingScreenData_085656C8:
-	.globl sLz77Block_085656C8
-	@ confirmed GBA LZ77 stream: compressed=0xC8, decompressed=0x500
-sLz77Block_085656C8:
-	@ analyzed canonical ROM range 0x085656C8-0x08565857
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: 2 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/085656C8.bin.lz"
-	.globl gLz77Asset_08565790
-gLz77Asset_08565790: @ 0x08565790
-	.incbin "build/assets/lz77_raw/08565790.bin.lz"
+
 	.globl gCreditsPointerTable_Rom_565858
 gCreditsPointerTable_Rom_565858: @ 0x08565858
 	.4byte gText_Rom_243E08
