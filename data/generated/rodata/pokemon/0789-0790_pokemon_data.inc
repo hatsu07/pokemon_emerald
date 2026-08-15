@@ -1036,97 +1036,54 @@ gItemMenuIconsData_0855A7AC: @ 0x0855A7AC
 sSpriteTemplate_0855A7AC: @ 0x0855A7AC
 	rodata_sprite_template 0xFFFF, 0x7544, 0x0855A700, 0x0855A710, 0x0855A714, 0x0855A7A4, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x0855A7C4: item_menu_icons.s: LoadBerryGfx
-	.globl gItemMenuIconsData_0855A7C4
-gItemMenuIconsData_0855A7C4: @ 0x0855A7C4
+	@ item_menu_icons.s: LoadBerryGfx indexes this table with an 8-byte stride
+	@ 43 entries: compressed berry tiles pointer, compressed palette pointer
+	.globl gBerryPicTable
+gBerryPicTable: @ 0x0855A7C4
 	@ analyzed canonical ROM range 0x0855A7C4-0x0855A91B
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x158
-	.4byte 0x08D9C650 @ +0x0
-	.4byte 0x08DA1A68 @ +0x4
-	.4byte 0x08D9CF3C @ +0x8
-	.4byte 0x08DA1B58 @ +0xC
-	.4byte 0x08D9C918 @ +0x10
-	.4byte 0x08DA1AB8 @ +0x14
-	.4byte 0x08D9CA8C @ +0x18
-	.4byte 0x08DA1AE0 @ +0x1C
-	.4byte 0x08D9CC24 @ +0x20
-	.4byte 0x08DA1B08 @ +0x24
-	.4byte 0x08D9CDCC @ +0x28
-	.4byte 0x08DA1B30 @ +0x2C
-	.4byte 0x08D9C7A4 @ +0x30
-	.4byte 0x08DA1A90 @ +0x34
-	.4byte 0x08D9D120 @ +0x38
-	.4byte 0x08DA1B80 @ +0x3C
-	.4byte 0x08D9D270 @ +0x40
-	.4byte 0x08DA1BA8 @ +0x44
-	.4byte 0x08D9D38C @ +0x48
-	.4byte 0x08DA1BD0 @ +0x4C
-	.4byte 0x08D9D530 @ +0x50
-	.4byte 0x08DA1BF8 @ +0x54
-	.4byte 0x08D9D6DC @ +0x58
-	.4byte 0x08DA1C20 @ +0x5C
-	.4byte 0x08D9D8D0 @ +0x60
-	.4byte 0x08DA1C48 @ +0x64
-	.4byte 0x08D9DA84 @ +0x68
-	.4byte 0x08DA1C70 @ +0x6C
-	.4byte 0x08D9DBF8 @ +0x70
-	.4byte 0x08DA1C98 @ +0x74
-	.4byte 0x08D9DEB0 @ +0x78
-	.4byte 0x08DA1CC0 @ +0x7C
-	.4byte 0x08D9E0E0 @ +0x80
-	.4byte 0x08DA1CE8 @ +0x84
-	.4byte 0x08D9E2C8 @ +0x88
-	.4byte 0x08DA1D10 @ +0x8C
-	.4byte 0x08D9E43C @ +0x90
-	.4byte 0x08DA1D38 @ +0x94
-	.4byte 0x08D9E604 @ +0x98
-	.4byte 0x08DA1D60 @ +0x9C
-	.4byte 0x08D9E818 @ +0xA0
-	.4byte 0x08DA1D88 @ +0xA4
-	.4byte 0x08D9E9C0 @ +0xA8
-	.4byte 0x08DA1DB0 @ +0xAC
-	.4byte 0x08D9EB68 @ +0xB0
-	.4byte 0x08DA1DD8 @ +0xB4
-	.4byte 0x08D9ED34 @ +0xB8
-	.4byte 0x08DA1E00 @ +0xBC
-	.4byte 0x08D9EF8C @ +0xC0
-	.4byte 0x08DA1E28 @ +0xC4
-	.4byte 0x08D9F11C @ +0xC8
-	.4byte 0x08DA1E50 @ +0xCC
-	.4byte 0x08D9F3E0 @ +0xD0
-	.4byte 0x08DA1E78 @ +0xD4
-	.4byte 0x08D9F5E4 @ +0xD8
-	.4byte 0x08DA1EA0 @ +0xDC
-	.4byte 0x08D9F788 @ +0xE0
-	.4byte 0x08DA1EC8 @ +0xE4
-	.4byte 0x08D9FA7C @ +0xE8
-	.4byte 0x08DA1EF0 @ +0xEC
-	.4byte 0x08D9FC58 @ +0xF0
-	.4byte 0x08DA1F18 @ +0xF4
-	.4byte 0x08D9FE48 @ +0xF8
-	.4byte 0x08DA1F40 @ +0xFC
-	.4byte 0x08DA0098 @ +0x100
-	.4byte 0x08DA1F68 @ +0x104
-	.4byte 0x08DA037C @ +0x108
-	.4byte 0x08DA1F90 @ +0x10C
-	.4byte 0x08DA0748 @ +0x110
-	.4byte 0x08DA1FB8 @ +0x114
-	.4byte 0x08DA0A20 @ +0x118
-	.4byte 0x08DA1FE0 @ +0x11C
-	.4byte 0x08DA0C78 @ +0x120
-	.4byte 0x08DA2008 @ +0x124
-	.4byte 0x08DA0E10 @ +0x128
-	.4byte 0x08DA2030 @ +0x12C
-	.4byte 0x08DA1054 @ +0x130
-	.4byte 0x08DA2058 @ +0x134
-	.4byte 0x08DA12FC @ +0x138
-	.4byte 0x08DA2080 @ +0x13C
-	.4byte 0x08DA148C @ +0x140
-	.4byte 0x08DA20A8 @ +0x144
-	.4byte 0x08DA1680 @ +0x148
-	.4byte 0x08DA20D0 @ +0x14C
-	.4byte 0x08DA1850 @ +0x150
-	.4byte 0x08DA20F8 @ +0x154
+	.4byte gBerryPic_Cheri, gBerryPalette_Cheri @ Cheri
+	.4byte gBerryPic_Chesto, gBerryPalette_Chesto @ Chesto
+	.4byte gBerryPic_Pecha, gBerryPalette_Pecha @ Pecha
+	.4byte gBerryPic_Rawst, gBerryPalette_Rawst @ Rawst
+	.4byte gBerryPic_Aspear, gBerryPalette_Aspear @ Aspear
+	.4byte gBerryPic_Leppa, gBerryPalette_Leppa @ Leppa
+	.4byte gBerryPic_Oran, gBerryPalette_Oran @ Oran
+	.4byte gBerryPic_Persim, gBerryPalette_Persim @ Persim
+	.4byte gBerryPic_Lum, gBerryPalette_Lum @ Lum
+	.4byte gBerryPic_Sitrus, gBerryPalette_Sitrus @ Sitrus
+	.4byte gBerryPic_Figy, gBerryPalette_Figy @ Figy
+	.4byte gBerryPic_Wiki, gBerryPalette_Wiki @ Wiki
+	.4byte gBerryPic_Mago, gBerryPalette_Mago @ Mago
+	.4byte gBerryPic_Aguav, gBerryPalette_Aguav @ Aguav
+	.4byte gBerryPic_Iapapa, gBerryPalette_Iapapa @ Iapapa
+	.4byte gBerryPic_Razz, gBerryPalette_Razz @ Razz
+	.4byte gBerryPic_Bluk, gBerryPalette_Bluk @ Bluk
+	.4byte gBerryPic_Nanab, gBerryPalette_Nanab @ Nanab
+	.4byte gBerryPic_Wepear, gBerryPalette_Wepear @ Wepear
+	.4byte gBerryPic_Pinap, gBerryPalette_Pinap @ Pinap
+	.4byte gBerryPic_Pomeg, gBerryPalette_Pomeg @ Pomeg
+	.4byte gBerryPic_Kelpsy, gBerryPalette_Kelpsy @ Kelpsy
+	.4byte gBerryPic_Qualot, gBerryPalette_Qualot @ Qualot
+	.4byte gBerryPic_Hondew, gBerryPalette_Hondew @ Hondew
+	.4byte gBerryPic_Grepa, gBerryPalette_Grepa @ Grepa
+	.4byte gBerryPic_Tamato, gBerryPalette_Tamato @ Tamato
+	.4byte gBerryPic_Cornn, gBerryPalette_Cornn @ Cornn
+	.4byte gBerryPic_Magost, gBerryPalette_Magost @ Magost
+	.4byte gBerryPic_Rabuta, gBerryPalette_Rabuta @ Rabuta
+	.4byte gBerryPic_Nomel, gBerryPalette_Nomel @ Nomel
+	.4byte gBerryPic_Spelon, gBerryPalette_Spelon @ Spelon
+	.4byte gBerryPic_Pamtre, gBerryPalette_Pamtre @ Pamtre
+	.4byte gBerryPic_Watmel, gBerryPalette_Watmel @ Watmel
+	.4byte gBerryPic_Durin, gBerryPalette_Durin @ Durin
+	.4byte gBerryPic_Belue, gBerryPalette_Belue @ Belue
+	.4byte gBerryPic_Liechi, gBerryPalette_Liechi @ Liechi
+	.4byte gBerryPic_Ganlon, gBerryPalette_Ganlon @ Ganlon
+	.4byte gBerryPic_Salac, gBerryPalette_Salac @ Salac
+	.4byte gBerryPic_Petaya, gBerryPalette_Petaya @ Petaya
+	.4byte gBerryPic_Apicot, gBerryPalette_Apicot @ Apicot
+	.4byte gBerryPic_Lansat, gBerryPalette_Lansat @ Lansat
+	.4byte gBerryPic_Starf, gBerryPalette_Starf @ Starf
+	.4byte gBerryPic_Enigma, gBerryPalette_Enigma @ Enigma
 	@ pret/pokeemerald-jp direct xref for 0x0855A91C: berry_tag_screen.s: LoadBerryTagGfx
 	.globl gBerryTagScreenData_0855A91C
 gBerryTagScreenData_0855A91C: @ 0x0855A91C

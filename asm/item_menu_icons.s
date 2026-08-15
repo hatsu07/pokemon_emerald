@@ -547,7 +547,7 @@ _080D4906:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080D4944: .4byte gItemMenuIconsData_0855A7C4
+_080D4944: .4byte gBerryPicTable
 _080D4948: .4byte 0xFFFF0000
 _080D494C: .4byte 0x00007544
 _080D4950: .4byte 0x0201D000
