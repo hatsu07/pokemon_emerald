@@ -561,8 +561,8 @@ _0816CEEC: .4byte 0x00009201
 _0816CEF0: .4byte gIntroData_085C6090
 _0816CEF4: .4byte gIntroData_085C60A0
 _0816CEF8: .4byte gIntroData_085C60B0
-_0816CEFC: .4byte gIntroData_085C5B28
-_0816CF00: .4byte gIntroData_085C5B38
+_0816CEFC: .4byte sSpriteSheet_Sparkle
+_0816CF00: .4byte sSpritePalette_Sparkle
 _0816CF04: .4byte 0x020375B4
 _0816CF08: .4byte 0x03005B60
 _0816CF0C: .4byte 0x0816CF11
@@ -806,8 +806,8 @@ _0816D0BC:
 	strh r0, [r4, #8]
 	b _0816D108
 	.align 2, 0
-_0816D0F0: .4byte gIntroData_085C5B6C
-_0816D0F4: .4byte gIntroData_085C5B84
+_0816D0F0: .4byte sSpriteTemplate_Sparkle
+_0816D0F4: .4byte sSparkleCoords
 _0816D0F8:
 	ldrh r0, [r4, #2]
 	subs r0, #1
@@ -1097,11 +1097,11 @@ _0816D300:
 _0816D350: .4byte gIntroCreditsMaySpriteSheet
 _0816D354: .4byte gIntroCreditsBicycleSpriteSheet
 _0816D358: .4byte gIntroCreditsFlygonSpriteSheet_1
-_0816D35C: .4byte gIntroData_085C5B9C
+_0816D35C: .4byte sSpriteSheet_RunningPokemon
 _0816D360: .4byte gIntroCreditsSpritePalettes
-_0816D364: .4byte gIntroData_085C5BBC
-_0816D368: .4byte gIntroData_085C5C90
-_0816D36C: .4byte gIntroData_085C5C58
+_0816D364: .4byte sSpritePalettes_RunningPokemon
+_0816D368: .4byte sSpriteTemplate_Manectric
+_0816D36C: .4byte sSpriteTemplate_Torchic
 _0816D370: .4byte 0x0203B994
 _0816D374:
 	adds r0, r5, #0
@@ -1180,7 +1180,7 @@ _0816D410: .4byte 0x020205AC
 _0816D414: .4byte 0x0816F7B9
 _0816D418: .4byte gIntroData_085C5E78
 _0816D41C: .4byte 0x03005B60
-_0816D420: .4byte gIntroData_085C5BF4
+_0816D420: .4byte sSpriteTemplate_Volbeat
 _0816D424: .4byte 0x0816F895
 _0816D428: .4byte 0x0000FFFF
 _0816D42C: .4byte 0x0816C9F9
@@ -3800,8 +3800,8 @@ _0816E910: .4byte 0x06004000
 _0816E914: .4byte gIntroData_08D8C81C
 _0816E918: .4byte 0x03005B60
 _0816E91C: .4byte 0x0816E929
-_0816E920: .4byte gIntroData_085C5CA8
-_0816E924: .4byte gIntroData_085C5CB8
+_0816E920: .4byte sSpriteSheet_Lightning
+_0816E924: .4byte sSpritePalette_Lightning
 	thumb_func_end Task_IntroLoadRayquazaLightningScene
 
 	thumb_func_start Task_IntroRayquazaLightningScene
@@ -3876,7 +3876,7 @@ _0816E956:
 	strh r0, [r6, #0xc]
 	b _0816EA46
 	.align 2, 0
-_0816E9BC: .4byte gIntroData_085C5D00
+_0816E9BC: .4byte sSpriteTemplate_Lightning
 _0816E9C0: .4byte 0x020205AC
 _0816E9C4:
 	ldrh r0, [r6, #0xc]
@@ -3925,7 +3925,7 @@ _0816E9C4:
 	strh r0, [r6, #0xc]
 	b _0816EA46
 	.align 2, 0
-_0816EA28: .4byte gIntroData_085C5D00
+_0816EA28: .4byte sSpriteTemplate_Lightning
 _0816EA2C: .4byte 0x020205AC
 _0816EA30:
 	ldrh r0, [r6, #0xc]
