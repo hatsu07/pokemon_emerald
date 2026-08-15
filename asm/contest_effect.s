@@ -49,7 +49,7 @@ _080E4C3A:
 	b _080E4C4E
 	.align 2, 0
 _080E4C44: .4byte gContestMoves
-_080E4C48: .4byte gContestEffectData_08566BA4
+_080E4C48: .4byte gComboStarterLookupTable
 _080E4C4C:
 	movs r0, #0
 _080E4C4E:
@@ -1062,7 +1062,7 @@ _080E5362:
 	.align 2, 0
 _080E53A0: .4byte 0x02039BD4
 _080E53A4: .4byte gContestMoves
-_080E53A8: .4byte gContestEffectData_08566BA4
+_080E53A8: .4byte gComboStarterLookupTable
 _080E53AC:
 	movs r0, #0
 _080E53AE:

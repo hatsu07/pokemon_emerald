@@ -721,16 +721,78 @@ gContestEffects: @ 0x08566AE4
 	.if (. - gContestEffects) != (48 * 4)
 	.error "contest effects table size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08566BA4: contest_effect.s: AreMovesContestCombo, ContestEffect_MakeFollowingMonsNervous
-	.globl gContestEffectData_08566BA4
-gContestEffectData_08566BA4: @ 0x08566BA4
-	@ analyzed canonical ROM range 0x08566BA4-0x08566BE3
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x40
-	.2byte 0x0100, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101
-	.2byte 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101
-	.2byte 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101
-	.2byte 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0001
+	@ Contest combo-starter validity lookup, indexed by COMBO_STARTER_*.
+	@ Index 0 and unused index 0x3F are FALSE; defined starters 0x01..0x3E are TRUE.
+	.globl gComboStarterLookupTable
+gComboStarterLookupTable: @ 0x08566BA4
+	.byte 0 @ no combo starter
+	.byte 1 @ COMBO_STARTER_RAIN_DANCE
+	.byte 1 @ COMBO_STARTER_RAGE
+	.byte 1 @ COMBO_STARTER_FOCUS_ENERGY
+	.byte 1 @ COMBO_STARTER_HYPNOSIS
+	.byte 1 @ COMBO_STARTER_ENDURE
+	.byte 1 @ COMBO_STARTER_HORN_ATTACK
+	.byte 1 @ COMBO_STARTER_SWORDS_DANCE
+	.byte 1 @ COMBO_STARTER_STOCKPILE
+	.byte 1 @ COMBO_STARTER_SUNNY_DAY
+	.byte 1 @ COMBO_STARTER_REST
+	.byte 1 @ COMBO_STARTER_VICE_GRIP
+	.byte 1 @ COMBO_STARTER_DEFENSE_CURL
+	.byte 1 @ COMBO_STARTER_CHARGE
+	.byte 1 @ COMBO_STARTER_ROCK_THROW
+	.byte 1 @ COMBO_STARTER_YAWN
+	.byte 1 @ COMBO_STARTER_SCARY_FACE
+	.byte 1 @ COMBO_STARTER_POWDER_SNOW
+	.byte 1 @ COMBO_STARTER_LOCK_ON
+	.byte 1 @ COMBO_STARTER_SOFT_BOILED
+	.byte 1 @ COMBO_STARTER_MEAN_LOOK
+	.byte 1 @ COMBO_STARTER_SCRATCH
+	.byte 1 @ COMBO_STARTER_GROWTH
+	.byte 1 @ COMBO_STARTER_HAIL
+	.byte 1 @ COMBO_STARTER_SANDSTORM
+	.byte 1 @ COMBO_STARTER_BELLY_DRUM
+	.byte 1 @ COMBO_STARTER_MIND_READER
+	.byte 1 @ COMBO_STARTER_DRAGON_BREATH
+	.byte 1 @ COMBO_STARTER_DRAGON_RAGE
+	.byte 1 @ COMBO_STARTER_DRAGON_DANCE
+	.byte 1 @ COMBO_STARTER_SURF
+	.byte 1 @ COMBO_STARTER_DIVE
+	.byte 1 @ COMBO_STARTER_STRING_SHOT
+	.byte 1 @ COMBO_STARTER_LEER
+	.byte 1 @ COMBO_STARTER_TAUNT
+	.byte 1 @ COMBO_STARTER_CHARM
+	.byte 1 @ COMBO_STARTER_HARDEN
+	.byte 1 @ COMBO_STARTER_SING
+	.byte 1 @ COMBO_STARTER_EARTHQUAKE
+	.byte 1 @ COMBO_STARTER_DOUBLE_TEAM
+	.byte 1 @ COMBO_STARTER_CURSE
+	.byte 1 @ COMBO_STARTER_SWEET_SCENT
+	.byte 1 @ COMBO_STARTER_SLUDGE
+	.byte 1 @ COMBO_STARTER_SLUDGE_BOMB
+	.byte 1 @ COMBO_STARTER_THUNDER_PUNCH
+	.byte 1 @ COMBO_STARTER_FIRE_PUNCH
+	.byte 1 @ COMBO_STARTER_ICE_PUNCH
+	.byte 1 @ COMBO_STARTER_PECK
+	.byte 1 @ COMBO_STARTER_METAL_SOUND
+	.byte 1 @ COMBO_STARTER_MUD_SPORT
+	.byte 1 @ COMBO_STARTER_WATER_SPORT
+	.byte 1 @ COMBO_STARTER_BONE_CLUB
+	.byte 1 @ COMBO_STARTER_BONEMERANG
+	.byte 1 @ COMBO_STARTER_BONE_RUSH
+	.byte 1 @ COMBO_STARTER_SAND_ATTACK
+	.byte 1 @ COMBO_STARTER_MUD_SLAP
+	.byte 1 @ COMBO_STARTER_FAKE_OUT
+	.byte 1 @ COMBO_STARTER_PSYCHIC
+	.byte 1 @ COMBO_STARTER_KINESIS
+	.byte 1 @ COMBO_STARTER_CONFUSION
+	.byte 1 @ COMBO_STARTER_POUND
+	.byte 1 @ COMBO_STARTER_SMOG
+	.byte 1 @ COMBO_STARTER_CALM_MIND
+	.byte 0 @ unused index 0x3F
+
+	.if (. - gComboStarterLookupTable) != 64
+	.error "combo starter lookup table size mismatch"
+	.endif
 	.globl gCreditsU32Table_Rom_566BE4
 gCreditsU32Table_Rom_566BE4: @ 0x08566BE4
 	.4byte ContestEffect_MakeScramblingTurnOrderEasier
