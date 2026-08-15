@@ -539,22 +539,22 @@ Task_IntroLoadPart1Graphics: @ 0x0816CCFC
 	bx r0
 	.align 2, 0
 _0816CEA0: .4byte 0x0203B994
-_0816CEA4: .4byte gIntroData_085C2468
-_0816CEA8: .4byte gIntroData_085C1878
+_0816CEA4: .4byte gIntro1Bg_Gfx
+_0816CEA8: .4byte gIntro1Bg0_Tilemap
 _0816CEAC: .4byte 0x06008000
 _0816CEB0: .4byte 0x06008800
 _0816CEB4: .4byte 0x040000D4
 _0816CEB8: .4byte 0x81000400
-_0816CEBC: .4byte gIntroData_085C1C2C
+_0816CEBC: .4byte gIntro1Bg1_Tilemap
 _0816CEC0: .4byte 0x06009000
 _0816CEC4: .4byte 0x06009800
-_0816CEC8: .4byte gIntroData_085C1F60
+_0816CEC8: .4byte gIntro1Bg2_Tilemap
 _0816CECC: .4byte 0x0600A000
 _0816CED0: .4byte 0x0600A800
-_0816CED4: .4byte gIntroData_085C2250
+_0816CED4: .4byte gIntro1Bg3_Tilemap
 _0816CED8: .4byte 0x0600B000
 _0816CEDC: .4byte 0x0600B800
-_0816CEE0: .4byte gIntroData_085C1678
+_0816CEE0: .4byte gIntro1Bg_Pal
 _0816CEE4: .4byte 0x00009603
 _0816CEE8: .4byte 0x00009402
 _0816CEEC: .4byte 0x00009201
@@ -1954,10 +1954,10 @@ Task_IntroLoadPart3Graphics: @ 0x0816D990
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816DA20: .4byte gIntroData_085C4908
-_0816DA24: .4byte gIntroData_085C47D8
+_0816DA20: .4byte gIntroPokeball_Gfx
+_0816DA24: .4byte gIntroPokeball_Tilemap
 _0816DA28: .4byte 0x06004000
-_0816DA2C: .4byte gIntroData_085C45D8
+_0816DA2C: .4byte gIntroPokeball_Pal
 _0816DA30: .4byte 0x03005B60
 _0816DA34: .4byte 0x0000FFFF
 _0816DA38: .4byte 0x00004883

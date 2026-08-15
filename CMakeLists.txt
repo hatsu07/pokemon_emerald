@@ -1309,6 +1309,101 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END INTRO COPYRIGHT EXACT PIPELINE
 
+    # BEGIN INTRO SCENE ASSET EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/(scene_1|scene_3)/(drops|logo|bg|flygon_silhouette|pokeball|streaks|rayquaza_orb|misc)[.]gbapal$")
+        set(INTRO_SCENE_DIR "${CMAKE_MATCH_1}")
+        set(INTRO_SCENE_STEM "${CMAKE_MATCH_2}")
+        set(INTRO_SCENE_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/intro/${INTRO_SCENE_DIR}/${INTRO_SCENE_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INTRO_SCENE_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INTRO_SCENE_PNG}" "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/(scene_1|scene_3)/(drops_logo|bg|streaks|misc|lati)[.]4bpp[.]lz$")
+        set(INTRO_SCENE_DIR "${CMAKE_MATCH_1}")
+        set(INTRO_SCENE_STEM "${CMAKE_MATCH_2}")
+        set(INTRO_SCENE_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/intro_scene_lz77_exact_plans.json")
+        set(INTRO_SCENE_PNG_STEM "${INTRO_SCENE_STEM}")
+        set(INTRO_SCENE_PLAN_KEY "${INTRO_SCENE_STEM}_gfx")
+        if("${INTRO_SCENE_STEM}" STREQUAL "bg")
+            set(INTRO_SCENE_PNG_STEM "bg_tiles")
+            set(INTRO_SCENE_PLAN_KEY "bg_gfx")
+        elseif("${INTRO_SCENE_STEM}" STREQUAL "drops_logo")
+            set(INTRO_SCENE_PLAN_KEY "drops_logo_gfx")
+        endif()
+        set(INTRO_SCENE_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/intro/${INTRO_SCENE_DIR}/${INTRO_SCENE_PNG_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${INTRO_SCENE_PLAN}"
+                --stem "${INTRO_SCENE_PLAN_KEY}"
+                "${INTRO_SCENE_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO_SCENE_PNG}"
+                "${INTRO_SCENE_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/(scene_1|scene_3)/(bg0|bg1|bg2|bg3|pokeball|streaks)[.]bin[.]lz$")
+        set(INTRO_SCENE_DIR "${CMAKE_MATCH_1}")
+        set(INTRO_SCENE_STEM "${CMAKE_MATCH_2}")
+        set(INTRO_SCENE_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/intro_scene_lz77_exact_plans.json")
+        set(INTRO_SCENE_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/intro/${INTRO_SCENE_DIR}/${INTRO_SCENE_STEM}.tilemap.txt")
+        set(INTRO_SCENE_PLAN_KEY "${INTRO_SCENE_STEM}_tilemap")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${INTRO_SCENE_PLAN}"
+                --stem "${INTRO_SCENE_PLAN_KEY}"
+                "${INTRO_SCENE_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO_SCENE_TILEMAP}"
+                "${INTRO_SCENE_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/intro/scene_3/pokeball.8bpp.lz")
+        set(INTRO_POKEBALL_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/pokeball.png")
+        set(INTRO_POKEBALL_RAW "${OUTPUT_ABS}.raw.8bpp")
+        set(INTRO_RAW_PLAN
+            "${CMAKE_SOURCE_DIR}/assets/lz77_raw/lz77_exact_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INTRO_POKEBALL_PNG}" "${INTRO_POKEBALL_RAW}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_raw_exact_assets.py"
+                --manifest "${INTRO_RAW_PLAN}"
+                --key 085C4908
+                "${INTRO_POKEBALL_RAW}" "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E rm -f "${INTRO_POKEBALL_RAW}"
+            DEPENDS
+                "${INTRO_POKEBALL_PNG}"
+                "${INTRO_RAW_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_raw_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${GBAGFX}"
+            VERBATIM)
+    # END INTRO SCENE ASSET EXACT PIPELINE
+
 
     # BEGIN LEGACY POKENAV HOENN MAP EXACT PIPELINE
     elseif("${RELATIVE_OUTPUT}" STREQUAL
