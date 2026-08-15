@@ -1,3 +1,13 @@
+@ struct BerryCrushBerryData (4 bytes).
+@ u8 difficulty, one ABI padding byte, u16 Berry Powder yield.
+	.macro berry_crush_berry_data item, difficulty, powder
+	.if ((\item) - ITEM_CHERI_BERRY) != ((. - gBerryCrush_BerryData) / 4)
+	.error "Berry Crush berry data is out of item order"
+	.endif
+	.byte \difficulty, 0
+	.2byte \powder
+	.endm
+
 @ struct Berry (0x1C bytes).
 @ Keep JP name bytes literal; description pointers use semantic labels.
 	.macro berry_entry name0, name1, name2, name3, name4, name5, name6, firmness, size, max_yield, min_yield, desc1, desc2, stage_duration, spicy, dry, sweet, bitter, sour, smoothness

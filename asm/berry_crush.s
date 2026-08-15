@@ -4600,7 +4600,7 @@ _08022D8A:
 	.align 2, 0
 _08022DA4: .4byte gBerryCrushData_082C7CD4
 _08022DA8: .4byte 0x0202207C
-_08022DAC: .4byte gBerryCrushData_08563604
+_08022DAC: .4byte gBerryCrush_BerryData
 _08022DB0:
 	movs r0, #0
 	movs r1, #1

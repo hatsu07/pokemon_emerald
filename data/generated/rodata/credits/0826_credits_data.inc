@@ -51,23 +51,56 @@ gBerries: @ 0x08563150
 	.if (. - gBerries) != 0x4B4
 	.error "gBerries must contain 43 entries of size 0x1C"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08563604: berry_crush.s: sub_08022C80
-	.globl gBerryCrushData_08563604
-gBerryCrushData_08563604: @ 0x08563604
-	@ analyzed canonical ROM range 0x08563604-0x085636AF
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xAC
-	.2byte 0x0032, 0x0014, 0x0032, 0x0014, 0x0032, 0x0014, 0x0032, 0x0014
-	.2byte 0x0032, 0x0014, 0x0032, 0x001E, 0x0032, 0x001E, 0x0032, 0x001E
-	.2byte 0x0032, 0x001E, 0x0032, 0x001E, 0x003C, 0x0032, 0x003C, 0x0032
-	.2byte 0x003C, 0x0032, 0x003C, 0x0032, 0x003C, 0x0032, 0x0050, 0x0046
-	.2byte 0x0050, 0x0046, 0x0050, 0x0046, 0x0050, 0x0046, 0x0050, 0x0046
-	.2byte 0x0064, 0x0064, 0x0064, 0x0064, 0x0064, 0x0064, 0x0064, 0x0064
-	.2byte 0x0064, 0x0064, 0x0082, 0x0096, 0x0082, 0x0096, 0x0082, 0x0096
-	.2byte 0x0082, 0x0096, 0x0082, 0x0096, 0x00A0, 0x00FA, 0x00A0, 0x00FA
-	.2byte 0x00A0, 0x00FA, 0x00A0, 0x00FA, 0x00A0, 0x00FA, 0x00B4, 0x01F4
-	.2byte 0x00B4, 0x01F4, 0x00B4, 0x01F4, 0x00B4, 0x01F4, 0x00B4, 0x01F4
-	.2byte 0x00C8, 0x02EE, 0x00C8, 0x02EE, 0x0096, 0x00C8
+	@ Berry Crush difficulty / Berry Powder yield by Berry item.
+	.globl gBerryCrush_BerryData
+gBerryCrush_BerryData: @ 0x08563604
+	berry_crush_berry_data ITEM_CHERI_BERRY, 50, 20 @ クラボのみ
+	berry_crush_berry_data ITEM_CHESTO_BERRY, 50, 20 @ カゴのみ
+	berry_crush_berry_data ITEM_PECHA_BERRY, 50, 20 @ モモンのみ
+	berry_crush_berry_data ITEM_RAWST_BERRY, 50, 20 @ チーゴのみ
+	berry_crush_berry_data ITEM_ASPEAR_BERRY, 50, 20 @ ナナシのみ
+	berry_crush_berry_data ITEM_LEPPA_BERRY, 50, 30 @ ヒメリのみ
+	berry_crush_berry_data ITEM_ORAN_BERRY, 50, 30 @ オレンのみ
+	berry_crush_berry_data ITEM_PERSIM_BERRY, 50, 30 @ キーのみ
+	berry_crush_berry_data ITEM_LUM_BERRY, 50, 30 @ ラムのみ
+	berry_crush_berry_data ITEM_SITRUS_BERRY, 50, 30 @ オボンのみ
+	berry_crush_berry_data ITEM_FIGY_BERRY, 60, 50 @ フィラのみ
+	berry_crush_berry_data ITEM_WIKI_BERRY, 60, 50 @ ウイのみ
+	berry_crush_berry_data ITEM_MAGO_BERRY, 60, 50 @ マゴのみ
+	berry_crush_berry_data ITEM_AGUAV_BERRY, 60, 50 @ バンジのみ
+	berry_crush_berry_data ITEM_IAPAPA_BERRY, 60, 50 @ イアのみ
+	berry_crush_berry_data ITEM_RAZZ_BERRY, 80, 70 @ ズリのみ
+	berry_crush_berry_data ITEM_BLUK_BERRY, 80, 70 @ ブリーのみ
+	berry_crush_berry_data ITEM_NANAB_BERRY, 80, 70 @ ナナのみ
+	berry_crush_berry_data ITEM_WEPEAR_BERRY, 80, 70 @ セシナのみ
+	berry_crush_berry_data ITEM_PINAP_BERRY, 80, 70 @ パイルのみ
+	berry_crush_berry_data ITEM_POMEG_BERRY, 100, 100 @ ザロクのみ
+	berry_crush_berry_data ITEM_KELPSY_BERRY, 100, 100 @ ネコブのみ
+	berry_crush_berry_data ITEM_QUALOT_BERRY, 100, 100 @ タポルのみ
+	berry_crush_berry_data ITEM_HONDEW_BERRY, 100, 100 @ ロメのみ
+	berry_crush_berry_data ITEM_GREPA_BERRY, 100, 100 @ ウブのみ
+	berry_crush_berry_data ITEM_TAMATO_BERRY, 130, 150 @ マトマのみ
+	berry_crush_berry_data ITEM_CORNN_BERRY, 130, 150 @ モコシのみ
+	berry_crush_berry_data ITEM_MAGOST_BERRY, 130, 150 @ ゴスのみ
+	berry_crush_berry_data ITEM_RABUTA_BERRY, 130, 150 @ ラブタのみ
+	berry_crush_berry_data ITEM_NOMEL_BERRY, 130, 150 @ ノメルのみ
+	berry_crush_berry_data ITEM_SPELON_BERRY, 160, 250 @ ノワキのみ
+	berry_crush_berry_data ITEM_PAMTRE_BERRY, 160, 250 @ シーヤのみ
+	berry_crush_berry_data ITEM_WATMEL_BERRY, 160, 250 @ カイスのみ
+	berry_crush_berry_data ITEM_DURIN_BERRY, 160, 250 @ ドリのみ
+	berry_crush_berry_data ITEM_BELUE_BERRY, 160, 250 @ ベリブのみ
+	berry_crush_berry_data ITEM_LIECHI_BERRY, 180, 500 @ チイラのみ
+	berry_crush_berry_data ITEM_GANLON_BERRY, 180, 500 @ リュガのみ
+	berry_crush_berry_data ITEM_SALAC_BERRY, 180, 500 @ カムラのみ
+	berry_crush_berry_data ITEM_PETAYA_BERRY, 180, 500 @ ヤタピのみ
+	berry_crush_berry_data ITEM_APICOT_BERRY, 180, 500 @ ズアのみ
+	berry_crush_berry_data ITEM_LANSAT_BERRY, 200, 750 @ サンのみ
+	berry_crush_berry_data ITEM_STARF_BERRY, 200, 750 @ スターのみ
+	berry_crush_berry_data ITEM_ENIGMA_BERRY, 150, 200 @ ナゾのみ
+
+	.if (. - gBerryCrush_BerryData) != 0xAC
+	.error "gBerryCrush_BerryData must contain 43 entries of size 4"
+	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085636B0: berry.s: BerryTreeGrow, BerryTreeTimeUpdate, ClearBerryTrees, PlantBerryTree, RemoveBerryTree
 	.globl gBerryData_085636B0
 gBerryData_085636B0: @ 0x085636B0
