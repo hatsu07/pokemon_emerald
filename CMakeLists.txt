@@ -1012,6 +1012,45 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
 
+    # BEGIN NAMING SCREEN PALETTE AND MENU GFX EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/naming_screen/menu.4bpp.lz")
+        set(NAMING_SCREEN_MENU_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/naming_screen/menu.png")
+        set(NAMING_SCREEN_LZ77_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/naming_screen/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${NAMING_SCREEN_LZ77_PLAN}"
+                --stem menu_gfx
+                "${NAMING_SCREEN_MENU_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${NAMING_SCREEN_MENU_PNG}"
+                "${NAMING_SCREEN_LZ77_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/naming_screen/(keyboard_palette|rival_palette|menu_palettes)[.]gbapal$")
+        set(NAMING_SCREEN_PAL_STEM "${CMAKE_MATCH_1}")
+        set(NAMING_SCREEN_PAL_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/naming_screen/${NAMING_SCREEN_PAL_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${NAMING_SCREEN_PAL_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${NAMING_SCREEN_PAL_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+    # END NAMING SCREEN PALETTE AND MENU GFX EXACT PIPELINE
+
     # BEGIN NAMING SCREEN RAW 4BPP PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/naming_screen/(.+)[.]4bpp$")

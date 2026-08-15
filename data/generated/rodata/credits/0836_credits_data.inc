@@ -203,35 +203,30 @@ sNamingScreenSpriteSheets: @ 0x08565EE0
 	.error "naming-screen SpriteSheet table size mismatch"
 	.endif
 
-	@ pret/pokeemerald-jp direct xref for 0x08565F48: naming_screen.s: choose_name_or_words_screen_load_bg_tile_patterns
-	.globl gNamingScreenData_08565F48
-gNamingScreenData_08565F48: @ 0x08565F48
-	@ analyzed canonical ROM range 0x08565F48-0x08565FA3
-	@ pointer/nullable table
-	.4byte gNamingScreenData_08565258 @ +0x0
-	@ ANALYSIS: RAW_BLOCK size=0x58
-	.4byte 0 @ +0x4
-	.4byte 0x08565278 @ +0x8
-	.4byte 0x00000001 @ +0xC
-	.4byte 0x08565298 @ +0x10
-	.4byte 0x00000002 @ +0x14
-	.4byte 0x085652B8 @ +0x18
-	.4byte 0x00000003 @ +0x1C
-	.4byte 0x085652D8 @ +0x20
-	.4byte 0x00000004 @ +0x24
-	.4byte 0x085652F8 @ +0x28
-	.4byte 0x00000005 @ +0x2C
-	.4byte 0x085652D8 @ +0x30
-	.4byte 0x00000006 @ +0x34
-	.4byte 0x085652D8 @ +0x38
-	.4byte 0x00000007 @ +0x3C
-	.4byte 0 @ +0x40
-	.4byte 0 @ +0x44
-	.4byte 0x80004000 @ +0x48
-	.4byte 0 @ +0x4C
-	.4byte 0 @ +0x50
-	.4byte 0x0000FFFF @ +0x54
-	.4byte 0x08565F98 @ +0x58
+	@ Naming-screen sprite palettes. Tags match the naming-screen palette tag enum.
+	.globl sNamingScreenSpritePalettes
+sNamingScreenSpritePalettes: @ 0x08565F48
+	rodata_sprite_palette gNamingScreenMenu_Pal + 0x00, 0 @ menu / PC icon
+	rodata_sprite_palette gNamingScreenMenu_Pal + 0x20, 1 @ page swap upper
+	rodata_sprite_palette gNamingScreenMenu_Pal + 0x40, 2 @ page swap lower
+	rodata_sprite_palette gNamingScreenMenu_Pal + 0x60, 3 @ page swap others / input arrow / underscore
+	rodata_sprite_palette gNamingScreenMenu_Pal + 0x80, 4 @ page swap frame
+	rodata_sprite_palette gNamingScreenMenu_Pal + 0xA0, 5 @ cursor
+	rodata_sprite_palette gNamingScreenMenu_Pal + 0x80, 6 @ back button
+	rodata_sprite_palette gNamingScreenMenu_Pal + 0x80, 7 @ OK button
+	.4byte 0, 0
+
+	.if (. - sNamingScreenSpritePalettes) != 0x48
+	.error "naming-screen SpritePalette table size mismatch"
+	.endif
+
+	@ 0x08565F90..0x08565FA3 belongs to the following money UI data.
+	.4byte 0x80004000
+	.4byte 0
+	.4byte 0
+	.4byte 0x0000FFFF
+	.4byte 0x08565F98
+
 	@ pret/pokeemerald-jp direct xref for 0x08565FA4: money.s: AddMoneyLabelObject
 	.globl gMoneyData_08565FA4
 gMoneyData_08565FA4: @ 0x08565FA4

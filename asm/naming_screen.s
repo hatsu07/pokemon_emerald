@@ -4413,11 +4413,11 @@ choose_name_or_words_screen_load_bg_tile_patterns: @ 0x080E43EC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E443C: .4byte gNamingScreenData_08565318
+_080E443C: .4byte gNamingScreenMenu_Gfx
 _080E4440: .4byte 0x02039C34
 _080E4444: .4byte 0x00001810
 _080E4448: .4byte sNamingScreenSpriteSheets
-_080E444C: .4byte gNamingScreenData_08565F48
+_080E444C: .4byte sNamingScreenSpritePalettes
 	thumb_func_end choose_name_or_words_screen_load_bg_tile_patterns
 
 	thumb_func_start sub_080E4450
@@ -4449,8 +4449,8 @@ choose_name_or_words_screen_apply_bg_pals: @ 0x080E4460
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E4488: .4byte gNamingScreenData_08565258
-_080E448C: .4byte gNamingScreenData_08565218
+_080E4488: .4byte gNamingScreenMenu_Pal
+_080E448C: .4byte sKeyboard_Pal
 	thumb_func_end choose_name_or_words_screen_apply_bg_pals
 
 	thumb_func_start sub_080E4490
