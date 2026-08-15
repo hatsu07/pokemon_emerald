@@ -101,1053 +101,707 @@ gBerryCrush_BerryData: @ 0x08563604
 	.if (. - gBerryCrush_BerryData) != 0xAC
 	.error "gBerryCrush_BerryData must contain 43 entries of size 4"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x085636B0: berry.s: BerryTreeGrow, BerryTreeTimeUpdate, ClearBerryTrees, PlantBerryTree, RemoveBerryTree
-	.globl gBerryData_085636B0
-gBerryData_085636B0: @ 0x085636B0
-	@ analyzed canonical ROM range 0x085636B0-0x08564217
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0x0
-	.4byte 0 @ +0x4
-	.4byte gText_Rom_5CA9FB @ +0x8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xC
-	.4byte gText_Rom_5CA9FF @ +0x10
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x14
-	.4byte gText_Exit @ +0x18
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0 @ +0x1C
-	.4byte 0x085CAA0E @ +0x20
-	.4byte 0 @ +0x24
-	.4byte 0x085CAA15 @ +0x28
-	.4byte 0 @ +0x2C
-	.4byte gText_Exit @ +0x30
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x34
-	.4byte 0x085CAA1D @ +0x38
-	.4byte 0 @ +0x3C
-	.4byte gText_Rom_5CAA2A @ +0x40
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x44
-	.4byte 0x085CAA36 @ +0x48
-	.4byte 0 @ +0x4C
-	.4byte gText_Exit @ +0x50
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x54
-	.4byte gText_Rom_5CAA4A @ +0x58
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x5C
-	.4byte gText_Rom_5CAA55 @ +0x60
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x64
-	.4byte gText_Rom_5CAA60 @ +0x68
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x6C
-	.4byte gText_Rom_5CAA6A @ +0x70
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x74
-	.4byte gText_Rom_5CAA74 @ +0x78
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x7C
-	.4byte gText_Exit @ +0x80
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x84
-	.4byte gText_Rom_5CAA7F @ +0x88
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0 @ +0x8C
-	.4byte 0x085CAA85 @ +0x90
-	.4byte 0 @ +0x94
-	.4byte 0x085CAA8F @ +0x98
-	.4byte 0 @ +0x9C
-	.4byte gText_Exit @ +0xA0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xA4
-	.4byte gText_Rom_5CAA7F @ +0xA8
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0xAC
-	.4byte 0x085CAA85 @ +0xB0
-	.4byte 0 @ +0xB4
-	.4byte gText_Exit @ +0xB8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xBC
-	.4byte gText_Rom_5C93AB @ +0xC0
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0 @ +0xC4
-	.4byte 0x085CAA8F @ +0xC8
-	.4byte 0 @ +0xCC
-	.4byte 0x085CAA98 @ +0xD0
-	.4byte 0 @ +0xD4
-	.4byte gText_Exit @ +0xD8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xDC
-	.4byte gText_Rom_5CAAA2 @ +0xE0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xE4
-	.4byte gText_Rom_5CAAA6 @ +0xE8
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0 @ +0xEC
-	.4byte 0x085CAAAA @ +0xF0
-	.4byte 0 @ +0xF4
-	.4byte 0x085CAAAD @ +0xF8
-	.4byte 0 @ +0xFC
-	.4byte gText_Rom_5CAAB0 @ +0x100
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x104
-	.4byte gText_Rom_5CAAB4 @ +0x108
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x10C
-	.4byte gText_Rom_5CAAB8 @ +0x110
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x114
-	.4byte gText_Exit @ +0x118
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x11C
-	.4byte gText_Rom_5CAA0B @ +0x120
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x124
-	.4byte gText_Exit @ +0x128
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0 @ +0x12C
-	.4byte 0x085CAACE @ +0x130
-	.4byte 0 @ +0x134
-	.4byte 0x085CAAD3 @ +0x138
-	.4byte 0 @ +0x13C
-	.4byte gText_Rom_5CAAD8 @ +0x140
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x144
-	.4byte gText_Rom_5CAADB @ +0x148
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	.4byte 0 @ +0x14C
-	.4byte 0x085CAA15 @ +0x150
-	.4byte 0 @ +0x154
-	.4byte 0x085CAAFD @ +0x158
-	.4byte 0 @ +0x15C
-	.4byte 0x085CAB05 @ +0x160
-	.4byte 0 @ +0x164
-	.4byte gText_Exit @ +0x168
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x16C
-	.4byte gText_Rom_5CAB0D @ +0x170
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x174
-	.4byte gText_Rom_5CAB13 @ +0x178
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x17C
-	.4byte gText_Exit @ +0x180
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x184
-	.4byte gText_Rom_24C395 @ +0x188
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x18C
-	.4byte gText_Rom_24C39B @ +0x190
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x194
-	.4byte gText_Rom_24C3A0 @ +0x198
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x19C
-	.4byte gText_Rom_24C3A4 @ +0x1A0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1A4
-	.4byte gText_Rom_24C3A8 @ +0x1A8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1AC
-	.4byte gText_Rom_24C3AD @ +0x1B0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1B4
-	.4byte gText_Rom_24C3B2 @ +0x1B8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1BC
-	.4byte gText_Rom_24C3B8 @ +0x1C0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1C4
-	.4byte gText_Rom_24C3BD @ +0x1C8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1CC
-	.4byte gText_Rom_24C3C2 @ +0x1D0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1D4
-	.4byte gText_Rom_24C3C7 @ +0x1D8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1DC
-	.4byte gText_Rom_24C3CD @ +0x1E0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1E4
-	.4byte gText_Rom_24C3D2 @ +0x1E8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1EC
-	.4byte gText_Rom_24C3D7 @ +0x1F0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1F4
-	.4byte gText_Rom_24C3DC @ +0x1F8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1FC
-	.4byte gText_Rom_24C3E2 @ +0x200
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x204
-	.4byte gText_Rom_24C3E7 @ +0x208
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x20C
-	.4byte gText_Rom_24C3EC @ +0x210
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x214
-	.4byte gText_Rom_24C3F1 @ +0x218
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x21C
-	.4byte gText_Rom_24C3F8 @ +0x220
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x224
-	.4byte gText_Rom_24C400 @ +0x228
-	@ ANALYSIS: RAW_BLOCK size=0x2C
-	.4byte 0 @ +0x22C
-	.4byte 0x0824C407 @ +0x230
-	.4byte 0 @ +0x234
-	.4byte 0x0824C40C @ +0x238
-	.4byte 0 @ +0x23C
-	.4byte 0x0824C411 @ +0x240
-	.4byte 0 @ +0x244
-	.4byte 0x0824C417 @ +0x248
-	.4byte 0 @ +0x24C
-	.4byte 0x0824C41D @ +0x250
-	.4byte 0 @ +0x254
-	.4byte gText_Rom_24C423 @ +0x258
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	.4byte 0 @ +0x25C
-	.4byte 0x0824C42A @ +0x260
-	.4byte 0 @ +0x264
-	.4byte 0x0824C42F @ +0x268
-	.4byte 0 @ +0x26C
-	.4byte 0x0824C434 @ +0x270
-	.4byte 0 @ +0x274
-	.4byte gText_Rom_24C43C @ +0x278
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x27C
-	.4byte gText_Rom_24C442 @ +0x280
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x284
-	.4byte gText_Rom_24C448 @ +0x288
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x28C
-	.4byte gText_Rom_24C44E @ +0x290
-	@ ANALYSIS: RAW_BLOCK size=0x74
-	.4byte 0 @ +0x294
-	.4byte 0x0824C452 @ +0x298
-	.4byte 0 @ +0x29C
-	.4byte 0x0824C456 @ +0x2A0
-	.4byte 0 @ +0x2A4
-	.4byte 0x0824C45A @ +0x2A8
-	.4byte 0 @ +0x2AC
-	.4byte 0x0824C45E @ +0x2B0
-	.4byte 0 @ +0x2B4
-	.4byte 0x0824C462 @ +0x2B8
-	.4byte 0 @ +0x2BC
-	.4byte 0x0824C466 @ +0x2C0
-	.4byte 0 @ +0x2C4
-	.4byte 0x0824C469 @ +0x2C8
-	.4byte 0 @ +0x2CC
-	.4byte 0x0824C46C @ +0x2D0
-	.4byte 0 @ +0x2D4
-	.4byte 0x0824C46F @ +0x2D8
-	.4byte 0 @ +0x2DC
-	.4byte 0x0824C473 @ +0x2E0
-	.4byte 0 @ +0x2E4
-	.4byte 0x0824C477 @ +0x2E8
-	.4byte 0 @ +0x2EC
-	.4byte 0x085CAB1B @ +0x2F0
-	.4byte 0 @ +0x2F4
-	.4byte 0x085CAB27 @ +0x2F8
-	.4byte 0 @ +0x2FC
-	.4byte 0x085CAB33 @ +0x300
-	.4byte 0 @ +0x304
-	.4byte gText_Exit @ +0x308
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0 @ +0x30C
-	.4byte 0x085CAB3F @ +0x310
-	.4byte 0 @ +0x314
-	.4byte 0x085CAB45 @ +0x318
-	.4byte 0 @ +0x31C
-	.4byte gText_Rom_5CAB4B @ +0x320
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x324
-	.4byte gText_Exit @ +0x328
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x32C
-	.4byte gText_Rom_5CAB51 @ +0x330
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x334
-	.4byte gText_Rom_5CAB56 @ +0x338
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x33C
-	.4byte gText_Rom_5CAB5B @ +0x340
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x344
-	.4byte gText_Exit @ +0x348
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x34C
-	.4byte gText_Rom_5CAB60 @ +0x350
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x354
-	.4byte gText_Rom_5CAB65 @ +0x358
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x35C
-	.4byte gText_Rom_5CAB69 @ +0x360
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x364
-	.4byte gText_Rom_5CAB71 @ +0x368
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x36C
-	.4byte gText_Exit @ +0x370
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x374
-	.4byte gText_Rom_5CAB7A @ +0x378
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x37C
-	.4byte gText_Rom_5CAB82 @ +0x380
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x384
-	.4byte gText_Rom_5CAB8A @ +0x388
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x38C
-	.4byte gText_Rom_5CAB92 @ +0x390
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x394
-	.4byte gText_Rom_5CAB9A @ +0x398
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x39C
-	.4byte 0x085CABA2 @ +0x3A0
-	.4byte 0 @ +0x3A4
-	.4byte gText_Rom_5CABA9 @ +0x3A8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x3AC
-	.4byte gText_Exit @ +0x3B0
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	.4byte 0 @ +0x3B4
-	.4byte 0x085CABB1 @ +0x3B8
-	.4byte 0 @ +0x3BC
-	.4byte 0x085CABC1 @ +0x3C0
-	.4byte 0 @ +0x3C4
-	.4byte 0x085CABD1 @ +0x3C8
-	.4byte 0 @ +0x3CC
-	.4byte gText_Exit @ +0x3D0
-	@ ANALYSIS: RAW_BLOCK size=0x2C
-	.4byte 0 @ +0x3D4
-	.4byte 0x085CAC34 @ +0x3D8
-	.4byte 0 @ +0x3DC
-	.4byte 0x085CAC44 @ +0x3E0
-	.4byte 0 @ +0x3E4
-	.4byte 0x085CAC54 @ +0x3E8
-	.4byte 0 @ +0x3EC
-	.4byte 0x085CAC64 @ +0x3F0
-	.4byte 0 @ +0x3F4
-	.4byte 0x085CAC74 @ +0x3F8
-	.4byte 0 @ +0x3FC
-	.4byte gText_Exit @ +0x400
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0 @ +0x404
-	.4byte 0x085CABE1 @ +0x408
-	.4byte 0 @ +0x40C
-	.4byte 0x085CABEE @ +0x410
-	.4byte 0 @ +0x414
-	.4byte gText_Exit @ +0x418
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x41C
-	.4byte 0x085CABFB @ +0x420
-	.4byte 0 @ +0x424
-	.4byte gText_Rom_5CAC00 @ +0x428
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x42C
-	.4byte gText_Rom_5CB18D @ +0x430
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x434
-	.4byte gText_Rom_5CAC23 @ +0x438
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x43C
-	.4byte gText_Exit @ +0x440
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x444
-	.4byte gText_Rom_5CB194 @ +0x448
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x44C
-	.4byte gText_Rom_5CB18D @ +0x450
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x454
-	.4byte gText_Exit @ +0x458
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x45C
-	.4byte 0x085CAC2D @ +0x460
-	.4byte 0 @ +0x464
-	.4byte gText_Rom_5CAC30 @ +0x468
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x46C
-	.4byte gText_Rom_5CB18D @ +0x470
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x474
-	.4byte gText_Exit @ +0x478
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x47C
-	.4byte gText_Rom_5CB087 @ +0x480
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x484
-	.4byte gText_Rom_5CB083 @ +0x488
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x48C
-	.4byte gText_Rom_5CB07F @ +0x490
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x494
-	.4byte gText_Rom_5CB07B @ +0x498
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x49C
-	.4byte gText_Rom_5CB077 @ +0x4A0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x4A4
-	.4byte gText_Exit @ +0x4A8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x4AC
-	.4byte gText_Rom_5CAC05 @ +0x4B0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x4B4
-	.4byte gText_Exit @ +0x4B8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x4BC
-	.4byte gText_Rom_5CAC0C @ +0x4C0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x4C4
-	.4byte gText_Exit @ +0x4C8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x4CC
-	.4byte gText_Rom_5CAC05 @ +0x4D0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x4D4
-	.4byte gText_Rom_5CAC0C @ +0x4D8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x4DC
-	.4byte gText_Exit @ +0x4E0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x4E4
-	.4byte gText_Rom_5CAC14 @ +0x4E8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x4EC
-	.4byte gText_Exit @ +0x4F0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x4F4
-	.4byte gText_Rom_5CAC05 @ +0x4F8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x4FC
-	.4byte gText_Rom_5CAC14 @ +0x500
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x504
-	.4byte gText_Exit @ +0x508
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x50C
-	.4byte gText_Rom_5CAC0C @ +0x510
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x514
-	.4byte gText_Rom_5CAC14 @ +0x518
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x51C
-	.4byte gText_Exit @ +0x520
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x524
-	.4byte gText_Rom_5CAC05 @ +0x528
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x52C
-	.4byte gText_Rom_5CAC0C @ +0x530
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x534
-	.4byte gText_Rom_5CAC14 @ +0x538
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x53C
-	.4byte gText_Exit @ +0x540
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x544
-	.4byte gText_Rom_5CAC1B @ +0x548
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x54C
-	.4byte gText_Exit @ +0x550
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x554
-	.4byte gText_Rom_5CAC05 @ +0x558
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x55C
-	.4byte gText_Rom_5CAC1B @ +0x560
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x564
-	.4byte gText_Exit @ +0x568
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x56C
-	.4byte gText_Rom_5CAC0C @ +0x570
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x574
-	.4byte gText_Rom_5CAC1B @ +0x578
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x57C
-	.4byte gText_Exit @ +0x580
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x584
-	.4byte gText_Rom_5CAC05 @ +0x588
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x58C
-	.4byte gText_Rom_5CAC0C @ +0x590
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x594
-	.4byte gText_Rom_5CAC1B @ +0x598
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x59C
-	.4byte gText_Exit @ +0x5A0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x5A4
-	.4byte gText_Rom_5CAC14 @ +0x5A8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x5AC
-	.4byte gText_Rom_5CAC1B @ +0x5B0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x5B4
-	.4byte gText_Exit @ +0x5B8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x5BC
-	.4byte gText_Rom_5CAC05 @ +0x5C0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x5C4
-	.4byte gText_Rom_5CAC14 @ +0x5C8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x5CC
-	.4byte gText_Rom_5CAC1B @ +0x5D0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x5D4
-	.4byte gText_Exit @ +0x5D8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x5DC
-	.4byte gText_Rom_5CAC0C @ +0x5E0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x5E4
-	.4byte gText_Rom_5CAC14 @ +0x5E8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x5EC
-	.4byte gText_Rom_5CAC1B @ +0x5F0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x5F4
-	.4byte gText_Exit @ +0x5F8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x5FC
-	.4byte gText_Rom_5CAC05 @ +0x600
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x604
-	.4byte gText_Rom_5CAC0C @ +0x608
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x60C
-	.4byte gText_Rom_5CAC14 @ +0x610
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x614
-	.4byte gText_Rom_5CAC1B @ +0x618
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x61C
-	.4byte gText_Exit @ +0x620
-	@ ANALYSIS: RAW_BLOCK size=0x24
-	.4byte 0 @ +0x624
-	.4byte 0x085CAD15 @ +0x628
-	.4byte 0 @ +0x62C
-	.4byte 0x085CAD1E @ +0x630
-	.4byte 0 @ +0x634
-	.4byte 0x085CAD28 @ +0x638
-	.4byte 0 @ +0x63C
-	.4byte 0x085CAFFF @ +0x640
-	.4byte 0 @ +0x644
-	.4byte gText_Rom_5CB005 @ +0x648
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x64C
-	.4byte gText_Rom_5CB009 @ +0x650
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	.4byte 0 @ +0x654
-	.4byte 0x085CAD15 @ +0x658
-	.4byte 0 @ +0x65C
-	.4byte 0x085CAD1E @ +0x660
-	.4byte 0 @ +0x664
-	.4byte 0x085CAD28 @ +0x668
-	.4byte 0 @ +0x66C
-	.4byte gText_Rom_5CB005 @ +0x670
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x674
-	.4byte gText_Rom_5CB009 @ +0x678
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x67C
-	.4byte gText_Rom_5CADE3 @ +0x680
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x684
-	.4byte gText_Rom_5CADEA @ +0x688
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x68C
-	.4byte 0x085CAE4A @ +0x690
-	.4byte 0 @ +0x694
-	.4byte gText_Rom_5CAE53 @ +0x698
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x69C
-	.4byte 0x085CAE59 @ +0x6A0
-	.4byte 0 @ +0x6A4
-	.4byte gText_Exit @ +0x6A8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x6AC
-	.4byte gText_Rom_5CAAD8 @ +0x6B0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x6B4
-	.4byte gText_Rom_5CAADB @ +0x6B8
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x6BC
-	.4byte 0x085CAA15 @ +0x6C0
-	.4byte 0 @ +0x6C4
-	.4byte gText_Rom_5CAAE4 @ +0x6C8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x6CC
-	.4byte gText_Rom_5CAAEC @ +0x6D0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x6D4
-	.4byte gText_Rom_5CAAF3 @ +0x6D8
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x6DC
-	.4byte 0x085CAA15 @ +0x6E0
-	.4byte 0 @ +0x6E4
-	.4byte gText_Exit @ +0x6E8
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x6EC
-	.4byte 0x085CAE4A @ +0x6F0
-	.4byte 0 @ +0x6F4
-	.4byte gText_Rom_5CAE53 @ +0x6F8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x6FC
-	.4byte gText_Rom_5CAE62 @ +0x700
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x704
-	.4byte gText_Exit @ +0x708
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x70C
-	.4byte 0x085CAE4A @ +0x710
-	.4byte 0 @ +0x714
-	.4byte gText_Rom_5CAE53 @ +0x718
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x71C
-	.4byte 0x085CAE59 @ +0x720
-	.4byte 0 @ +0x724
-	.4byte gText_Rom_5CAE62 @ +0x728
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x72C
-	.4byte gText_Exit @ +0x730
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x734
-	.4byte 0x085CAE4A @ +0x738
-	.4byte 0 @ +0x73C
-	.4byte gText_Rom_5CAE53 @ +0x740
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x744
-	.4byte gText_Exit @ +0x748
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0 @ +0x74C
-	.4byte 0x085CAE74 @ +0x750
-	.4byte 0 @ +0x754
-	.4byte 0x085CAE80 @ +0x758
-	.4byte 0 @ +0x75C
-	.4byte gText_Exit @ +0x760
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x764
-	.4byte gText_Rom_5CAE94 @ +0x768
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x76C
-	.4byte gText_Rom_5CAE8C @ +0x770
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x774
-	.4byte gText_Exit @ +0x778
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x77C
-	.4byte gText_Rom_5CAD33 @ +0x780
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x784
-	.4byte gText_Rom_5CAD3B @ +0x788
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x78C
-	.4byte gText_Rom_5CAD43 @ +0x790
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x794
-	.4byte gText_Rom_5CAD4B @ +0x798
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x79C
-	.4byte gText_Exit @ +0x7A0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x7A4
-	.4byte gText_Rom_5CAD69 @ +0x7A8
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x7AC
-	.4byte 0x085CAD70 @ +0x7B0
-	.4byte 0 @ +0x7B4
-	.4byte gText_Exit @ +0x7B8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x7BC
-	.4byte gText_Rom_5CAD78 @ +0x7C0
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0 @ +0x7C4
-	.4byte 0x085CAD82 @ +0x7C8
-	.4byte 0 @ +0x7CC
-	.4byte 0x085CAD8F @ +0x7D0
-	.4byte 0 @ +0x7D4
-	.4byte gText_Exit @ +0x7D8
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0 @ +0x7DC
-	.4byte 0x085CAD9C @ +0x7E0
-	.4byte 0 @ +0x7E4
-	.4byte 0x085CADA5 @ +0x7E8
-	.4byte 0 @ +0x7EC
-	.4byte gText_Exit @ +0x7F0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x7F4
-	.4byte gText_Rom_5CADAE @ +0x7F8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x7FC
-	.4byte gText_Rom_5CADB2 @ +0x800
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x804
-	.4byte gText_Rom_5CADB7 @ +0x808
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x80C
-	.4byte gText_Rom_5CADBB @ +0x810
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x814
-	.4byte 0x085CADC0 @ +0x818
-	.4byte 0 @ +0x81C
-	.4byte gText_Rom_5CADC6 @ +0x820
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x824
-	.4byte gText_Rom_5CADCB @ +0x828
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x82C
-	.4byte gText_Rom_5CADD0 @ +0x830
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x834
-	.4byte 0x085CADD4 @ +0x838
-	.4byte 0 @ +0x83C
-	.4byte gText_Rom_5CADD9 @ +0x840
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x844
-	.4byte gText_Rom_5CADDE @ +0x848
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x84C
-	.4byte gText_Exit @ +0x850
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x854
-	.4byte gText_Rom_5CADF1 @ +0x858
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x85C
-	.4byte gText_Rom_5CADF9 @ +0x860
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x864
-	.4byte gText_Exit @ +0x868
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x86C
-	.4byte gText_Rom_5CADF1 @ +0x870
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x874
-	.4byte gText_Rom_5CAE02 @ +0x878
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x87C
-	.4byte gText_Exit @ +0x880
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x884
-	.4byte gText_Rom_5CADF9 @ +0x888
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x88C
-	.4byte gText_Rom_5CAE02 @ +0x890
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x894
-	.4byte gText_Exit @ +0x898
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x89C
-	.4byte gText_Rom_5CADF1 @ +0x8A0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x8A4
-	.4byte gText_Rom_5CADF9 @ +0x8A8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x8AC
-	.4byte gText_Rom_5CAE02 @ +0x8B0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x8B4
-	.4byte gText_Exit @ +0x8B8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x8BC
-	.4byte gText_Rom_5CAE11 @ +0x8C0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x8C4
-	.4byte gText_Rom_5CAE18 @ +0x8C8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x8CC
-	.4byte gText_Exit @ +0x8D0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x8D4
-	.4byte gText_Rom_5CAAD8 @ +0x8D8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x8DC
-	.4byte gText_Rom_5CAE20 @ +0x8E0
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x8E4
-	.4byte 0x085CAE9D @ +0x8E8
-	.4byte 0 @ +0x8EC
-	.4byte gText_Rom_5CAEA4 @ +0x8F0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x8F4
-	.4byte gText_Rom_5CAEAA @ +0x8F8
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0 @ +0x8FC
-	.4byte 0x085CAEB2 @ +0x900
-	.4byte 0 @ +0x904
-	.4byte 0x085CAEBF @ +0x908
-	.4byte 0 @ +0x90C
-	.4byte gText_Exit @ +0x910
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x914
-	.4byte gText_Rom_5CAEC7 @ +0x918
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x91C
-	.4byte 0x085CAECC @ +0x920
-	.4byte 0 @ +0x924
-	.4byte gText_Rom_5CAED5 @ +0x928
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x92C
-	.4byte gText_Exit @ +0x930
-	@ ANALYSIS: RAW_BLOCK size=0x24
-	.4byte 0 @ +0x934
-	.4byte 0x085CAEFE @ +0x938
-	.4byte 0 @ +0x93C
-	.4byte 0x085CAF09 @ +0x940
-	.4byte 0 @ +0x944
-	.4byte 0x085CAF13 @ +0x948
-	.4byte 0 @ +0x94C
-	.4byte 0x085CAF1C @ +0x950
-	.4byte 0 @ +0x954
-	.4byte gText_Exit @ +0x958
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0 @ +0x95C
-	.4byte 0x085CAEDD @ +0x960
-	.4byte 0 @ +0x964
-	.4byte 0x085CAEE5 @ +0x968
-	.4byte 0 @ +0x96C
-	.4byte gText_Rom_5CAEEF @ +0x970
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x974
-	.4byte 0x085CAEF6 @ +0x978
-	.4byte 0 @ +0x97C
-	.4byte gText_Exit @ +0x980
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	.4byte 0 @ +0x984
-	.4byte 0x085CAF26 @ +0x988
-	.4byte 0 @ +0x98C
-	.4byte 0x085CAF2C @ +0x990
-	.4byte 0 @ +0x994
-	.4byte 0x085CAF36 @ +0x998
-	.4byte 0 @ +0x99C
-	.4byte gText_Exit @ +0x9A0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x9A4
-	.4byte gText_Rom_5CAF40 @ +0x9A8
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	.4byte 0 @ +0x9AC
-	.4byte 0x085CAF47 @ +0x9B0
-	.4byte 0 @ +0x9B4
-	.4byte 0x085CAF50 @ +0x9B8
-	.4byte 0 @ +0x9BC
-	.4byte 0x085CAF5A @ +0x9C0
-	.4byte 0 @ +0x9C4
-	.4byte gText_Rom_5CAF64 @ +0x9C8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x9CC
-	.4byte gText_Exit @ +0x9D0
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0x9D4
-	.4byte 0x085CAF6C @ +0x9D8
-	.4byte 0 @ +0x9DC
-	.4byte gText_Rom_5CAF75 @ +0x9E0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x9E4
-	.4byte gText_Rom_5CAF7F @ +0x9E8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x9EC
-	.4byte gText_Rom_5CAF87 @ +0x9F0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x9F4
-	.4byte gText_Rom_5CAF93 @ +0x9F8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x9FC
-	.4byte gText_Exit @ +0xA00
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	.4byte 0 @ +0xA04
-	.4byte 0x085CAF9C @ +0xA08
-	.4byte 0 @ +0xA0C
-	.4byte 0x085CAFA8 @ +0xA10
-	.4byte 0 @ +0xA14
-	.4byte 0x085CAFB5 @ +0xA18
-	.4byte 0 @ +0xA1C
-	.4byte gText_Rom_5CAFC0 @ +0xA20
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xA24
-	.4byte gText_Exit @ +0xA28
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	.4byte 0 @ +0xA2C
-	.4byte 0x085CAFC7 @ +0xA30
-	.4byte 0 @ +0xA34
-	.4byte 0x085CAFD1 @ +0xA38
-	.4byte 0 @ +0xA3C
-	.4byte 0x085CAFDA @ +0xA40
-	.4byte 0 @ +0xA44
-	.4byte gText_Exit @ +0xA48
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xA4C
-	.4byte gText_Rom_5CAFFA @ +0xA50
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0xA54
-	.4byte 0x085CAFFF @ +0xA58
-	.4byte 0 @ +0xA5C
-	.4byte gText_Rom_5CB005 @ +0xA60
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xA64
-	.4byte gText_Rom_5CB009 @ +0xA68
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xA6C
-	.4byte gText_Rom_5CAFFA @ +0xA70
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xA74
-	.4byte gText_Rom_5CB005 @ +0xA78
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xA7C
-	.4byte gText_Rom_5CB009 @ +0xA80
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xA84
-	.4byte gText_Rom_5CAFFA @ +0xA88
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.4byte 0 @ +0xA8C
-	.4byte 0x085CAFFF @ +0xA90
-	.4byte 0 @ +0xA94
-	.4byte gText_Rom_5CB009 @ +0xA98
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xA9C
-	.4byte gText_Rom_5CAFFA @ +0xAA0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xAA4
-	.4byte gText_Rom_5CB009 @ +0xAA8
-	@ ANALYSIS: RAW_BLOCK size=0x34
-	.4byte 0 @ +0xAAC
-	.4byte 0x085CD061 @ +0xAB0
-	.4byte 0 @ +0xAB4
-	.4byte 0x085CD064 @ +0xAB8
-	.4byte 0 @ +0xABC
-	.4byte 0x085CAE25 @ +0xAC0
-	.4byte 0 @ +0xAC4
-	.4byte 0x085CAE30 @ +0xAC8
-	.4byte 0 @ +0xACC
-	.4byte 0x085CAE3A @ +0xAD0
-	.4byte 0 @ +0xAD4
-	.4byte 0x085CAE44 @ +0xAD8
-	.4byte 0 @ +0xADC
-	.4byte gText_Rom_5CB19B @ +0xAE0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xAE4
-	.4byte gText_Rom_5CB1A3 @ +0xAE8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xAEC
-	.4byte gText_Rom_5CB1AA @ +0xAF0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xAF4
-	.4byte gText_Rom_5CB1B1 @ +0xAF8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xAFC
-	.4byte gText_Rom_5CAF40 @ +0xB00
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	.4byte 0 @ +0xB04
-	.4byte 0x085CAF47 @ +0xB08
-	.4byte 0 @ +0xB0C
-	.4byte 0x085CAF50 @ +0xB10
-	.4byte 0 @ +0xB14
-	.4byte 0x085CAF5A @ +0xB18
-	.4byte 0 @ +0xB1C
-	.4byte gText_Rom_5CAFE6 @ +0xB20
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xB24
-	.4byte gText_Exit @ +0xB28
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xB2C
-	.4byte gText_Rom_5CAFEF @ +0xB30
-	@ ANALYSIS: RAW_BLOCK size=0x24
-	.4byte 0 @ +0xB34
-	.4byte 0x085CAEFE @ +0xB38
-	.4byte 0 @ +0xB3C
-	.4byte 0x085CAF09 @ +0xB40
-	.4byte 0 @ +0xB44
-	.4byte 0x085CAF13 @ +0xB48
-	.4byte 0 @ +0xB4C
-	.4byte 0x085CAF1C @ +0xB50
-	.4byte 0 @ +0xB54
-	.4byte gText_Exit @ +0xB58
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xB5C
-	.4byte gText_Exit @ +0xB60
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xB64
-	@ pret/pokeemerald-jp direct xref for 0x08564218: script_menu.s: DrawMultichoiceMenu, sp106_CreateStartMenu
-	.globl gScriptMenuData_08564218
-gScriptMenuData_08564218: @ 0x08564218
-	@ analyzed canonical ROM range 0x08564218-0x0856459F
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x388
-	.2byte 0x36B8, 0x0856, 0x0003, 0x0000, 0x4210, 0x0856, 0x0001, 0x0000
-	.2byte 0x36D0, 0x0856, 0x0003, 0x0000, 0x36E8, 0x0856, 0x0004, 0x0000
-	.2byte 0x3708, 0x0856, 0x0006, 0x0000, 0x3758, 0x0856, 0x0003, 0x0000
-	.2byte 0x3738, 0x0856, 0x0004, 0x0000, 0x3770, 0x0856, 0x0004, 0x0000
-	.2byte 0x4210, 0x0856, 0x0001, 0x0000, 0x4210, 0x0856, 0x0001, 0x0000
-	.2byte 0x4210, 0x0856, 0x0001, 0x0000, 0x3FC8, 0x0856, 0x0004, 0x0000
-	.2byte 0x3790, 0x0856, 0x0002, 0x0000, 0x37A0, 0x0856, 0x0006, 0x0000
-	.2byte 0x37D0, 0x0856, 0x0002, 0x0000, 0x4210, 0x0856, 0x0001, 0x0000
-	.2byte 0x37E0, 0x0856, 0x0002, 0x0000, 0x3D60, 0x0856, 0x0003, 0x0000
-	.2byte 0x3D78, 0x0856, 0x0005, 0x0000, 0x4210, 0x0856, 0x0001, 0x0000
-	.2byte 0x37F0, 0x0856, 0x0003, 0x0000, 0x4210, 0x0856, 0x0001, 0x0000
-	.2byte 0x4210, 0x0856, 0x0001, 0x0000, 0x3808, 0x0856, 0x0003, 0x0000
-	.2byte 0x3820, 0x0856, 0x0003, 0x0000, 0x3838, 0x0856, 0x0003, 0x0000
-	.2byte 0x3850, 0x0856, 0x0003, 0x0000, 0x3868, 0x0856, 0x0003, 0x0000
-	.2byte 0x3880, 0x0856, 0x0003, 0x0000, 0x3898, 0x0856, 0x0003, 0x0000
-	.2byte 0x38B0, 0x0856, 0x0003, 0x0000, 0x38C8, 0x0856, 0x0003, 0x0000
-	.2byte 0x38E0, 0x0856, 0x0003, 0x0000, 0x38F8, 0x0856, 0x0003, 0x0000
-	.2byte 0x3910, 0x0856, 0x0003, 0x0000, 0x3928, 0x0856, 0x0003, 0x0000
-	.2byte 0x3940, 0x0856, 0x0003, 0x0000, 0x3958, 0x0856, 0x0003, 0x0000
-	.2byte 0x3970, 0x0856, 0x0003, 0x0000, 0x3988, 0x0856, 0x0003, 0x0000
-	.2byte 0x4210, 0x0856, 0x0001, 0x0000, 0x4210, 0x0856, 0x0001, 0x0000
-	.2byte 0x39A0, 0x0856, 0x0004, 0x0000, 0x39C0, 0x0856, 0x0004, 0x0000
-	.2byte 0x39E0, 0x0856, 0x0004, 0x0000, 0x3A00, 0x0856, 0x0002, 0x0000
-	.2byte 0x3A10, 0x0856, 0x0003, 0x0000, 0x3A28, 0x0856, 0x0008, 0x0000
-	.2byte 0x3A68, 0x0856, 0x0004, 0x0000, 0x3AB8, 0x0856, 0x0003, 0x0000
-	.2byte 0x3AD0, 0x0856, 0x0002, 0x0000, 0x4210, 0x0856, 0x0001, 0x0000
-	.2byte 0x3AE0, 0x0856, 0x0003, 0x0000, 0x3AF8, 0x0856, 0x0003, 0x0000
-	.2byte 0x3B10, 0x0856, 0x0002, 0x0000, 0x3A88, 0x0856, 0x0006, 0x0000
-	.2byte 0x3B20, 0x0856, 0x0002, 0x0000, 0x3B30, 0x0856, 0x0006, 0x0000
-	.2byte 0x3B60, 0x0856, 0x0002, 0x0000, 0x3B70, 0x0856, 0x0002, 0x0000
-	.2byte 0x3B80, 0x0856, 0x0003, 0x0000, 0x3B98, 0x0856, 0x0002, 0x0000
-	.2byte 0x3BA8, 0x0856, 0x0003, 0x0000, 0x3BC0, 0x0856, 0x0003, 0x0000
-	.2byte 0x3BD8, 0x0856, 0x0004, 0x0000, 0x3BF8, 0x0856, 0x0002, 0x0000
-	.2byte 0x3C08, 0x0856, 0x0003, 0x0000, 0x3C20, 0x0856, 0x0003, 0x0000
-	.2byte 0x3C38, 0x0856, 0x0004, 0x0000, 0x3C58, 0x0856, 0x0003, 0x0000
-	.2byte 0x3C70, 0x0856, 0x0004, 0x0000, 0x3C90, 0x0856, 0x0004, 0x0000
-	.2byte 0x3CB0, 0x0856, 0x0005, 0x0000, 0x3CD8, 0x0856, 0x0006, 0x0000
-	.2byte 0x3DE8, 0x0856, 0x0003, 0x0000, 0x3DE8, 0x0856, 0x0003, 0x0000
-	.2byte 0x3D40, 0x0856, 0x0004, 0x0000, 0x3D40, 0x0856, 0x0004, 0x0000
-	.2byte 0x3DA0, 0x0856, 0x0004, 0x0000, 0x3DC0, 0x0856, 0x0005, 0x0000
-	.2byte 0x3E00, 0x0856, 0x0003, 0x0000, 0x3E18, 0x0856, 0x0003, 0x0000
-	.2byte 0x3E30, 0x0856, 0x0005, 0x0000, 0x3E58, 0x0856, 0x0003, 0x0000
-	.2byte 0x3E70, 0x0856, 0x0004, 0x0000, 0x3E90, 0x0856, 0x0003, 0x0000
-	.2byte 0x3EA8, 0x0856, 0x0008, 0x0000, 0x3EE8, 0x0856, 0x0004, 0x0000
-	.2byte 0x3D30, 0x0856, 0x0002, 0x0000, 0x3F08, 0x0856, 0x0003, 0x0000
-	.2byte 0x3F20, 0x0856, 0x0003, 0x0000, 0x3F38, 0x0856, 0x0003, 0x0000
-	.2byte 0x3F50, 0x0856, 0x0004, 0x0000, 0x3F70, 0x0856, 0x0003, 0x0000
-	.2byte 0x3F88, 0x0856, 0x0002, 0x0000, 0x3F98, 0x0856, 0x0006, 0x0000
-	.2byte 0x3FE8, 0x0856, 0x0005, 0x0000, 0x4010, 0x0856, 0x0005, 0x0000
-	.2byte 0x4038, 0x0856, 0x0004, 0x0000, 0x4058, 0x0856, 0x0006, 0x0000
-	.2byte 0x4088, 0x0856, 0x0006, 0x0000, 0x40B8, 0x0856, 0x0005, 0x0000
-	.2byte 0x40E0, 0x0856, 0x0004, 0x0000, 0x4100, 0x0856, 0x0004, 0x0000
-	.2byte 0x4120, 0x0856, 0x0003, 0x0000, 0x4138, 0x0856, 0x0003, 0x0000
-	.2byte 0x4150, 0x0856, 0x0002, 0x0000, 0x3D08, 0x0856, 0x0005, 0x0000
-	.2byte 0x4160, 0x0856, 0x0002, 0x0000, 0x4170, 0x0856, 0x0004, 0x0000
-	.2byte 0x4190, 0x0856, 0x0004, 0x0000, 0x41B0, 0x0856, 0x0006, 0x0000
-	.2byte 0x41E0, 0x0856, 0x0006, 0x0000
+	@ Empty BerryTree template used when clearing/initializing tree slots.
+	.globl gBlankBerryTree
+gBlankBerryTree: @ 0x085636B0
+	.4byte 0, 0
+	.if (. - gBlankBerryTree) != 0x8
+	.error "gBlankBerryTree size mismatch"
+	.endif
+
+	.include "data/script_menu/multichoice_text_aliases.inc"
+
+	@ Script-menu multichoice MenuAction arrays.
+MultichoiceList_BrineyOnDewford: @ 0x085636B8
+	script_menu_action sScriptMenuText_Petalburg
+	script_menu_action sScriptMenuText_Slateport
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_EnterInfo: @ 0x085636D0
+	script_menu_action sScriptMenuText_Enter2
+	script_menu_action sScriptMenuText_Info2
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ContestInfo: @ 0x085636E8
+	script_menu_action sScriptMenuText_WhatsAContest
+	script_menu_action sScriptMenuText_TypesOfContests
+	script_menu_action sScriptMenuText_Ranks
+	script_menu_action sScriptMenuText_Cancel2
+
+MultichoiceList_ContestType: @ 0x08563708
+	script_menu_action sScriptMenuText_CoolnessContest
+	script_menu_action sScriptMenuText_BeautyContest
+	script_menu_action sScriptMenuText_CutenessContest
+	script_menu_action sScriptMenuText_SmartnessContest
+	script_menu_action sScriptMenuText_ToughnessContest
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_BasePCWithRegistry: @ 0x08563738
+	script_menu_action sScriptMenuText_Decoration2
+	script_menu_action sScriptMenuText_PackUp
+	script_menu_action sScriptMenuText_Registry
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_BasePCNoRegistry: @ 0x08563758
+	script_menu_action sScriptMenuText_Decoration2
+	script_menu_action sScriptMenuText_PackUp
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_RegisterMenu: @ 0x08563770
+	script_menu_action sScriptMenuText_Menu_Register
+	script_menu_action sScriptMenuText_Registry
+	script_menu_action sScriptMenuText_Information
+	script_menu_action sScriptMenuText_Cancel2
+
+MultichoiceList_Bike: @ 0x08563790
+	script_menu_action sScriptMenuText_Mach
+	script_menu_action sScriptMenuText_Acro
+
+MultichoiceList_StatusInfo: @ 0x085637A0
+	script_menu_action sScriptMenuText_Psn
+	script_menu_action sScriptMenuText_Par
+	script_menu_action sScriptMenuText_Slp
+	script_menu_action sScriptMenuText_Brn
+	script_menu_action sScriptMenuText_Frz
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_BrineyOffDewford: @ 0x085637D0
+	script_menu_action sScriptMenuText_Dewford
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ViewedPaintings: @ 0x085637E0
+	script_menu_action sScriptMenuText_SawIt
+	script_menu_action sScriptMenuText_NotYet
+
+MultichoiceList_YesNoInfo2: @ 0x085637F0
+	script_menu_action sScriptMenuText_Yes
+	script_menu_action sScriptMenuText_No
+	script_menu_action sScriptMenuText_Info2
+
+MultichoiceList_ChallengeInfo: @ 0x08563808
+	script_menu_action sScriptMenuText_Challenge
+	script_menu_action sScriptMenuText_Info3
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_LevelMode: @ 0x08563820
+	script_menu_action sScriptMenuText_Lv50
+	script_menu_action sScriptMenuText_OpenLevel
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_Mechadoll1_Q1: @ 0x08563838
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Oddish
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Poochyena
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Taillow
+
+MultichoiceList_Mechadoll1_Q2: @ 0x08563850
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Azurill
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Lotad
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Wingull
+
+MultichoiceList_Mechadoll1_Q3: @ 0x08563868
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Dustox
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Zubat
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Nincada
+
+MultichoiceList_Mechadoll2_Q1: @ 0x08563880
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Ralts
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Zigzagoon
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Slakoth
+
+MultichoiceList_Mechadoll2_Q2: @ 0x08563898
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Poochyena2
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Shroomish
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Zigzagoon2
+
+MultichoiceList_Mechadoll2_Q3: @ 0x085638B0
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Poochyena3
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Zubat2
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Carvanha
+
+MultichoiceList_Mechadoll3_Q1: @ 0x085638C8
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_BurnHeal
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_HarborMail
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_SamePrice
+
+MultichoiceList_Mechadoll3_Q2: @ 0x085638E0
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_60Yen
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_55Yen
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Nothing
+
+MultichoiceList_Mechadoll3_Q3: @ 0x085638F8
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_CostMore
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_CostLess
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_SamePrice2
+
+MultichoiceList_Mechadoll4_Q1: @ 0x08563910
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Male
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Female
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Neither
+
+MultichoiceList_Mechadoll4_Q2: @ 0x08563928
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_ElderlyMen
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_ElderlyLadies
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_SameNumber
+
+MultichoiceList_Mechadoll4_Q3: @ 0x08563940
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_None
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_One
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Two
+
+MultichoiceList_Mechadoll5_Q1: @ 0x08563958
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Two2
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Three
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Four
+
+MultichoiceList_Mechadoll5_Q2: @ 0x08563970
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Six
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Seven
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Eight
+
+MultichoiceList_Mechadoll5_Q3: @ 0x08563988
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Six2
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Seven2
+	script_menu_action sScriptMenuText_TrickHouse_Mechadoll_Eight2
+
+MultichoiceList_VendingMachine: @ 0x085639A0
+	script_menu_action sScriptMenuText_FreshWaterAndPrice
+	script_menu_action sScriptMenuText_SodaPopAndPrice
+	script_menu_action sScriptMenuText_LemonadeAndPrice
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_MachBikeInfo: @ 0x085639C0
+	script_menu_action sScriptMenuText_HowToRide
+	script_menu_action sScriptMenuText_HowToTurn
+	script_menu_action sScriptMenuText_SandySlopes
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_AcroBikeInfo: @ 0x085639E0
+	script_menu_action sScriptMenuText_Wheelies
+	script_menu_action sScriptMenuText_BunnyHops
+	script_menu_action sScriptMenuText_Jump
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_Satisfaction: @ 0x08563A00
+	script_menu_action sScriptMenuText_Satisfied
+	script_menu_action sScriptMenuText_Dissatisfied
+
+MultichoiceList_SternDeepSea: @ 0x08563A10
+	script_menu_action sScriptMenuText_DeepSeaTooth
+	script_menu_action sScriptMenuText_DeepSeaScale
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_UnusedAshVendor: @ 0x08563A28
+	script_menu_action sScriptMenuText_BlueFlute2
+	script_menu_action sScriptMenuText_YellowFlute2
+	script_menu_action sScriptMenuText_RedFlute2
+	script_menu_action sScriptMenuText_WhiteFlute2
+	script_menu_action sScriptMenuText_BlackFlute2
+	script_menu_action sScriptMenuText_GlassChair
+	script_menu_action sScriptMenuText_GlassDesk
+	script_menu_action sScriptMenuText_Cancel2
+
+MultichoiceList_GameCornerDolls: @ 0x08563A68
+	script_menu_action sScriptMenuText_TreeckoDollAndPrice
+	script_menu_action sScriptMenuText_TorchicDollAndPrice
+	script_menu_action sScriptMenuText_MudkipDollAndPrice
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_GameCornerTMs: @ 0x08563A88
+	script_menu_action sScriptMenuText_TM32AndPrice
+	script_menu_action sScriptMenuText_TM29AndPrice
+	script_menu_action sScriptMenuText_TM35AndPrice
+	script_menu_action sScriptMenuText_TM24AndPrice
+	script_menu_action sScriptMenuText_TM13AndPrice
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_GameCornerCoins: @ 0x08563AB8
+	script_menu_action sScriptMenuText_50CoinsAndPrice
+	script_menu_action sScriptMenuText_500CoinsAndPrice
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_HowsFishing: @ 0x08563AD0
+	script_menu_action sScriptMenuText_Excellent2
+	script_menu_action sScriptMenuText_NotSoGood
+
+MultichoiceList_SSTidalSlateportWithBF: @ 0x08563AE0
+	script_menu_action sScriptMenuText_LilycoveCity
+	script_menu_action sScriptMenuText_BattleFrontier
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_SSTidalBattleFrontier: @ 0x08563AF8
+	script_menu_action sScriptMenuText_SlateportCity
+	script_menu_action sScriptMenuText_LilycoveCity
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_RightLeft: @ 0x08563B10
+	script_menu_action sScriptMenuText_Right
+	script_menu_action sScriptMenuText_Left
+
+MultichoiceList_SSTidalSlateportNoBF: @ 0x08563B20
+	script_menu_action sScriptMenuText_LilycoveCity
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_Floors: @ 0x08563B30
+	script_menu_action sScriptMenuText_5F
+	script_menu_action sScriptMenuText_4F
+	script_menu_action sScriptMenuText_3F
+	script_menu_action sScriptMenuText_2F
+	script_menu_action sScriptMenuText_1F
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ShardsR: @ 0x08563B60
+	script_menu_action sScriptMenuText_RedShard
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ShardsY: @ 0x08563B70
+	script_menu_action sScriptMenuText_YellowShard
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ShardsRY: @ 0x08563B80
+	script_menu_action sScriptMenuText_RedShard
+	script_menu_action sScriptMenuText_YellowShard
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ShardsB: @ 0x08563B98
+	script_menu_action sScriptMenuText_BlueShard
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ShardsRB: @ 0x08563BA8
+	script_menu_action sScriptMenuText_RedShard
+	script_menu_action sScriptMenuText_BlueShard
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ShardsYB: @ 0x08563BC0
+	script_menu_action sScriptMenuText_YellowShard
+	script_menu_action sScriptMenuText_BlueShard
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ShardsRYB: @ 0x08563BD8
+	script_menu_action sScriptMenuText_RedShard
+	script_menu_action sScriptMenuText_YellowShard
+	script_menu_action sScriptMenuText_BlueShard
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ShardsG: @ 0x08563BF8
+	script_menu_action sScriptMenuText_GreenShard
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ShardsRG: @ 0x08563C08
+	script_menu_action sScriptMenuText_RedShard
+	script_menu_action sScriptMenuText_GreenShard
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ShardsYG: @ 0x08563C20
+	script_menu_action sScriptMenuText_YellowShard
+	script_menu_action sScriptMenuText_GreenShard
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ShardsRYG: @ 0x08563C38
+	script_menu_action sScriptMenuText_RedShard
+	script_menu_action sScriptMenuText_YellowShard
+	script_menu_action sScriptMenuText_GreenShard
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ShardsBG: @ 0x08563C58
+	script_menu_action sScriptMenuText_BlueShard
+	script_menu_action sScriptMenuText_GreenShard
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ShardsRBG: @ 0x08563C70
+	script_menu_action sScriptMenuText_RedShard
+	script_menu_action sScriptMenuText_BlueShard
+	script_menu_action sScriptMenuText_GreenShard
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ShardsYBG: @ 0x08563C90
+	script_menu_action sScriptMenuText_YellowShard
+	script_menu_action sScriptMenuText_BlueShard
+	script_menu_action sScriptMenuText_GreenShard
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ShardsRYBG: @ 0x08563CB0
+	script_menu_action sScriptMenuText_RedShard
+	script_menu_action sScriptMenuText_YellowShard
+	script_menu_action sScriptMenuText_BlueShard
+	script_menu_action sScriptMenuText_GreenShard
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_TourneyWithRecord: @ 0x08563CD8
+	script_menu_action sScriptMenuText_Opponent
+	script_menu_action sScriptMenuText_Tourney_Tree
+	script_menu_action sScriptMenuText_ReadyToStart
+	script_menu_action sScriptMenuText_Record2
+	script_menu_action sScriptMenuText_Rest
+	script_menu_action sScriptMenuText_Retire
+
+MultichoiceList_TourneyNoRecord: @ 0x08563D08
+	script_menu_action sScriptMenuText_Opponent
+	script_menu_action sScriptMenuText_Tourney_Tree
+	script_menu_action sScriptMenuText_ReadyToStart
+	script_menu_action sScriptMenuText_Rest
+	script_menu_action sScriptMenuText_Retire
+
+MultichoiceList_Tent: @ 0x08563D30
+	script_menu_action sScriptMenuText_RedTent
+	script_menu_action sScriptMenuText_BlueTent
+
+MultichoiceList_LinkServicesNoBerry: @ 0x08563D40
+	script_menu_action sScriptMenuText_TradeCenter
+	script_menu_action sScriptMenuText_Colosseum
+	script_menu_action sScriptMenuText_RecordCorner
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_YesNoInfo: @ 0x08563D60
+	script_menu_action sScriptMenuText_Yes
+	script_menu_action sScriptMenuText_No
+	script_menu_action sScriptMenuText_Info2
+
+MultichoiceList_BattleMode: @ 0x08563D78
+	script_menu_action sScriptMenuText_SingleBattle
+	script_menu_action sScriptMenuText_DoubleBattle
+	script_menu_action sScriptMenuText_MultiBattle
+	script_menu_action sScriptMenuText_Info2
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_LinkServicesNoRecord: @ 0x08563DA0
+	script_menu_action sScriptMenuText_TradeCenter
+	script_menu_action sScriptMenuText_Colosseum
+	script_menu_action sScriptMenuText_BerryCrush3
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_LinkServicesAll: @ 0x08563DC0
+	script_menu_action sScriptMenuText_TradeCenter
+	script_menu_action sScriptMenuText_Colosseum
+	script_menu_action sScriptMenuText_RecordCorner
+	script_menu_action sScriptMenuText_BerryCrush3
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_LinkServicesNoRecordBerry: @ 0x08563DE8
+	script_menu_action sScriptMenuText_TradeCenter
+	script_menu_action sScriptMenuText_Colosseum
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_WirelessMinigame: @ 0x08563E00
+	script_menu_action sScriptMenuText_PokemonJump
+	script_menu_action sScriptMenuText_DodrioBerryPicking
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_LinkLeader: @ 0x08563E18
+	script_menu_action sScriptMenuText_JoinGroup
+	script_menu_action sScriptMenuText_BecomeLeader
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ContestRank: @ 0x08563E30
+	script_menu_action sScriptMenuText_NormalRank
+	script_menu_action sScriptMenuText_SuperRank
+	script_menu_action sScriptMenuText_HyperRank
+	script_menu_action sScriptMenuText_MasterRank
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_FrontierItemChoose: @ 0x08563E58
+	script_menu_action sScriptMenuText_BattleBag
+	script_menu_action sScriptMenuText_HeldItem
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_LinkContestInfo: @ 0x08563E70
+	script_menu_action sScriptMenuText_LinkContest
+	script_menu_action sScriptMenuText_AboutE_Mode
+	script_menu_action sScriptMenuText_AboutG_Mode
+	script_menu_action sScriptMenuText_Cancel2
+
+MultichoiceList_LinkContestMode: @ 0x08563E90
+	script_menu_action sScriptMenuText_E_Mode
+	script_menu_action sScriptMenuText_G_Mode
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_ForcedStartMenu: @ 0x08563EA8
+	script_menu_action sScriptMenuText_MenuOptionPokedex
+	script_menu_action sScriptMenuText_MenuOptionPokemon
+	script_menu_action sScriptMenuText_MenuOptionBag
+	script_menu_action sScriptMenuText_MenuOptionPokenav
+	script_menu_action sScriptMenuText_Blank
+	script_menu_action sScriptMenuText_MenuOptionSave
+	script_menu_action sScriptMenuText_MenuOptionOption
+	script_menu_action sScriptMenuText_MenuOptionExit
+
+MultichoiceList_FrontierGamblerBet: @ 0x08563EE8
+	script_menu_action sScriptMenuText_5BP
+	script_menu_action sScriptMenuText_10BP
+	script_menu_action sScriptMenuText_15BP
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_UnusedSSTidal1: @ 0x08563F08
+	script_menu_action sScriptMenuText_SouthernIsland
+	script_menu_action sScriptMenuText_BirthIsland
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_UnusedSSTidal2: @ 0x08563F20
+	script_menu_action sScriptMenuText_SouthernIsland
+	script_menu_action sScriptMenuText_FarawayIsland
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_UnusedSSTidal3: @ 0x08563F38
+	script_menu_action sScriptMenuText_BirthIsland
+	script_menu_action sScriptMenuText_FarawayIsland
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_UnusedSSTidal4: @ 0x08563F50
+	script_menu_action sScriptMenuText_SouthernIsland
+	script_menu_action sScriptMenuText_BirthIsland
+	script_menu_action sScriptMenuText_FarawayIsland
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_Fossil: @ 0x08563F70
+	script_menu_action sScriptMenuText_ClawFossil
+	script_menu_action sScriptMenuText_RootFossil
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_YesNo: @ 0x08563F88
+	script_menu_action sScriptMenuText_Yes
+	script_menu_action sScriptMenuText_No4
+
+MultichoiceList_FrontierRules: @ 0x08563F98
+	script_menu_action sScriptMenuText_TwoStyles
+	script_menu_action sScriptMenuText_Lv50_3
+	script_menu_action sScriptMenuText_OpenLevel2
+	script_menu_action sScriptMenuText_MonTypeAndNo
+	script_menu_action sScriptMenuText_HoldItems
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_FrontierPassInfo: @ 0x08563FC8
+	script_menu_action sScriptMenuText_Symbols2
+	script_menu_action sScriptMenuText_Record3
+	script_menu_action sScriptMenuText_BattlePts
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_BattleArenaRules: @ 0x08563FE8
+	script_menu_action sScriptMenuText_BattleRules
+	script_menu_action sScriptMenuText_JudgeMind
+	script_menu_action sScriptMenuText_JudgeSkill
+	script_menu_action sScriptMenuText_JudgeBody
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_BattleTowerRules: @ 0x08564010
+	script_menu_action sScriptMenuText_TowerInfo
+	script_menu_action sScriptMenuText_BattleMon
+	script_menu_action sScriptMenuText_BattleSalon
+	script_menu_action sScriptMenuText_MultiLink2
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_BattleDomeRules: @ 0x08564038
+	script_menu_action sScriptMenuText_Matchup
+	script_menu_action sScriptMenuText_TourneyTree
+	script_menu_action sScriptMenuText_DoubleKO
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_BattleFactoryRules: @ 0x08564058
+	script_menu_action sScriptMenuText_BasicRules
+	script_menu_action sScriptMenuText_SwapPartners
+	script_menu_action sScriptMenuText_SwapNumber
+	script_menu_action sScriptMenuText_SwapNotes
+	script_menu_action sScriptMenuText_OpenLevel3
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_BattlePalaceRules: @ 0x08564088
+	script_menu_action sScriptMenuText_BattleBasics
+	script_menu_action sScriptMenuText_PokemonNature
+	script_menu_action sScriptMenuText_PokemonMoves
+	script_menu_action sScriptMenuText_Underpowered
+	script_menu_action sScriptMenuText_WhenInDanger
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_BattlePyramidRules: @ 0x085640B8
+	script_menu_action sScriptMenuText_PyramidPokemon
+	script_menu_action sScriptMenuText_PyramidTrainers
+	script_menu_action sScriptMenuText_PyramidMaze
+	script_menu_action sScriptMenuText_BattleBag2
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_BattlePikeRules: @ 0x085640E0
+	script_menu_action sScriptMenuText_PokenavAndBag
+	script_menu_action sScriptMenuText_HeldItems
+	script_menu_action sScriptMenuText_PokemonOrder
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_GoOnRecordRestRetire: @ 0x08564100
+	script_menu_action sScriptMenuText_GoOn
+	script_menu_action sScriptMenuText_Record2
+	script_menu_action sScriptMenuText_Rest
+	script_menu_action sScriptMenuText_Retire
+
+MultichoiceList_GoOnRestRetire: @ 0x08564120
+	script_menu_action sScriptMenuText_GoOn
+	script_menu_action sScriptMenuText_Rest
+	script_menu_action sScriptMenuText_Retire
+
+MultichoiceList_GoOnRecordRetire: @ 0x08564138
+	script_menu_action sScriptMenuText_GoOn
+	script_menu_action sScriptMenuText_Record2
+	script_menu_action sScriptMenuText_Retire
+
+MultichoiceList_GoOnRetire: @ 0x08564150
+	script_menu_action sScriptMenuText_GoOn
+	script_menu_action sScriptMenuText_Retire
+
+MultichoiceList_TVLati: @ 0x08564160
+	script_menu_action sScriptMenuText_Red
+	script_menu_action sScriptMenuText_Blue
+
+MultichoiceList_BattleTowerFeelings: @ 0x08564170
+	script_menu_action sScriptMenuText_IllBattleNow
+	script_menu_action sScriptMenuText_IWon
+	script_menu_action sScriptMenuText_ILost
+	script_menu_action sScriptMenuText_IWontTell
+
+MultichoiceList_WheresRayquaza: @ 0x08564190
+	script_menu_action sScriptMenuText_CaveOfOrigin
+	script_menu_action sScriptMenuText_MtPyre
+	script_menu_action sScriptMenuText_SkyPillar
+	script_menu_action sScriptMenuText_DontRemember
+
+MultichoiceList_SlateportTentRules: @ 0x085641B0
+	script_menu_action sScriptMenuText_BasicRules
+	script_menu_action sScriptMenuText_SwapPartners
+	script_menu_action sScriptMenuText_SwapNumber
+	script_menu_action sScriptMenuText_SwapNotes
+	script_menu_action sScriptMenuText_BattlePokemon
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_FallarborTentRules: @ 0x085641E0
+	script_menu_action sScriptMenuText_BattleTrainers
+	script_menu_action sScriptMenuText_BattleRules
+	script_menu_action sScriptMenuText_JudgeMind
+	script_menu_action sScriptMenuText_JudgeSkill
+	script_menu_action sScriptMenuText_JudgeBody
+	script_menu_action sScriptMenuText_Exit
+
+MultichoiceList_Exit: @ 0x08564210
+	script_menu_action sScriptMenuText_Exit
+
+	.if (. - MultichoiceList_BrineyOnDewford) != 0xB60
+	.error "script-menu MenuAction pool size mismatch"
+	.endif
+
+	@ Indexed by MULTI_* id 0..112.
+	.globl sMultichoiceLists
+sMultichoiceLists: @ 0x08564218
+	multichoice_list_entry MultichoiceList_BrineyOnDewford, 3 @ [0] MULTI_BRINEY_ON_DEWFORD
+	multichoice_list_entry MultichoiceList_Exit, 1 @ [1] MULTI_PC
+	multichoice_list_entry MultichoiceList_EnterInfo, 3 @ [2] MULTI_ENTERINFO
+	multichoice_list_entry MultichoiceList_ContestInfo, 4 @ [3] MULTI_CONTEST_INFO
+	multichoice_list_entry MultichoiceList_ContestType, 6 @ [4] MULTI_CONTEST_TYPE
+	multichoice_list_entry MultichoiceList_BasePCNoRegistry, 3 @ [5] MULTI_BASE_PC_NO_REGISTRY
+	multichoice_list_entry MultichoiceList_BasePCWithRegistry, 4 @ [6] MULTI_BASE_PC_WITH_REGISTRY
+	multichoice_list_entry MultichoiceList_RegisterMenu, 4 @ [7] MULTI_REGISTER_MENU
+	multichoice_list_entry MultichoiceList_Exit, 1 @ [8] MULTI_SSTIDAL_LILYCOVE
+	multichoice_list_entry MultichoiceList_Exit, 1 @ [9] MULTI_UNUSED_9
+	multichoice_list_entry MultichoiceList_Exit, 1 @ [10] MULTI_UNUSED_10
+	multichoice_list_entry MultichoiceList_FrontierPassInfo, 4 @ [11] MULTI_FRONTIER_PASS_INFO
+	multichoice_list_entry MultichoiceList_Bike, 2 @ [12] MULTI_BIKE
+	multichoice_list_entry MultichoiceList_StatusInfo, 6 @ [13] MULTI_STATUS_INFO
+	multichoice_list_entry MultichoiceList_BrineyOffDewford, 2 @ [14] MULTI_BRINEY_OFF_DEWFORD
+	multichoice_list_entry MultichoiceList_Exit, 1 @ [15] MULTI_UNUSED_15
+	multichoice_list_entry MultichoiceList_ViewedPaintings, 2 @ [16] MULTI_VIEWED_PAINTINGS
+	multichoice_list_entry MultichoiceList_YesNoInfo, 3 @ [17] MULTI_YESNOINFO
+	multichoice_list_entry MultichoiceList_BattleMode, 5 @ [18] MULTI_BATTLE_MODE
+	multichoice_list_entry MultichoiceList_Exit, 1 @ [19] MULTI_UNUSED_19
+	multichoice_list_entry MultichoiceList_YesNoInfo2, 3 @ [20] MULTI_YESNOINFO_2
+	multichoice_list_entry MultichoiceList_Exit, 1 @ [21] MULTI_UNUSED_21
+	multichoice_list_entry MultichoiceList_Exit, 1 @ [22] MULTI_UNUSED_22
+	multichoice_list_entry MultichoiceList_ChallengeInfo, 3 @ [23] MULTI_CHALLENGEINFO
+	multichoice_list_entry MultichoiceList_LevelMode, 3 @ [24] MULTI_LEVEL_MODE
+	multichoice_list_entry MultichoiceList_Mechadoll1_Q1, 3 @ [25] MULTI_MECHADOLL1_Q1
+	multichoice_list_entry MultichoiceList_Mechadoll1_Q2, 3 @ [26] MULTI_MECHADOLL1_Q2
+	multichoice_list_entry MultichoiceList_Mechadoll1_Q3, 3 @ [27] MULTI_MECHADOLL1_Q3
+	multichoice_list_entry MultichoiceList_Mechadoll2_Q1, 3 @ [28] MULTI_MECHADOLL2_Q1
+	multichoice_list_entry MultichoiceList_Mechadoll2_Q2, 3 @ [29] MULTI_MECHADOLL2_Q2
+	multichoice_list_entry MultichoiceList_Mechadoll2_Q3, 3 @ [30] MULTI_MECHADOLL2_Q3
+	multichoice_list_entry MultichoiceList_Mechadoll3_Q1, 3 @ [31] MULTI_MECHADOLL3_Q1
+	multichoice_list_entry MultichoiceList_Mechadoll3_Q2, 3 @ [32] MULTI_MECHADOLL3_Q2
+	multichoice_list_entry MultichoiceList_Mechadoll3_Q3, 3 @ [33] MULTI_MECHADOLL3_Q3
+	multichoice_list_entry MultichoiceList_Mechadoll4_Q1, 3 @ [34] MULTI_MECHADOLL4_Q1
+	multichoice_list_entry MultichoiceList_Mechadoll4_Q2, 3 @ [35] MULTI_MECHADOLL4_Q2
+	multichoice_list_entry MultichoiceList_Mechadoll4_Q3, 3 @ [36] MULTI_MECHADOLL4_Q3
+	multichoice_list_entry MultichoiceList_Mechadoll5_Q1, 3 @ [37] MULTI_MECHADOLL5_Q1
+	multichoice_list_entry MultichoiceList_Mechadoll5_Q2, 3 @ [38] MULTI_MECHADOLL5_Q2
+	multichoice_list_entry MultichoiceList_Mechadoll5_Q3, 3 @ [39] MULTI_MECHADOLL5_Q3
+	multichoice_list_entry MultichoiceList_Exit, 1 @ [40] MULTI_UNUSED_40
+	multichoice_list_entry MultichoiceList_Exit, 1 @ [41] MULTI_UNUSED_41
+	multichoice_list_entry MultichoiceList_VendingMachine, 4 @ [42] MULTI_VENDING_MACHINE
+	multichoice_list_entry MultichoiceList_MachBikeInfo, 4 @ [43] MULTI_MACH_BIKE_INFO
+	multichoice_list_entry MultichoiceList_AcroBikeInfo, 4 @ [44] MULTI_ACRO_BIKE_INFO
+	multichoice_list_entry MultichoiceList_Satisfaction, 2 @ [45] MULTI_SATISFACTION
+	multichoice_list_entry MultichoiceList_SternDeepSea, 3 @ [46] MULTI_STERN_DEEPSEA
+	multichoice_list_entry MultichoiceList_UnusedAshVendor, 8 @ [47] MULTI_UNUSED_ASH_VENDOR
+	multichoice_list_entry MultichoiceList_GameCornerDolls, 4 @ [48] MULTI_GAME_CORNER_DOLLS
+	multichoice_list_entry MultichoiceList_GameCornerCoins, 3 @ [49] MULTI_GAME_CORNER_COINS
+	multichoice_list_entry MultichoiceList_HowsFishing, 2 @ [50] MULTI_HOWS_FISHING
+	multichoice_list_entry MultichoiceList_Exit, 1 @ [51] MULTI_UNUSED_51
+	multichoice_list_entry MultichoiceList_SSTidalSlateportWithBF, 3 @ [52] MULTI_SSTIDAL_SLATEPORT_WITH_BF
+	multichoice_list_entry MultichoiceList_SSTidalBattleFrontier, 3 @ [53] MULTI_SSTIDAL_BATTLE_FRONTIER
+	multichoice_list_entry MultichoiceList_RightLeft, 2 @ [54] MULTI_RIGHTLEFT
+	multichoice_list_entry MultichoiceList_GameCornerTMs, 6 @ [55] MULTI_GAME_CORNER_TMS
+	multichoice_list_entry MultichoiceList_SSTidalSlateportNoBF, 2 @ [56] MULTI_SSTIDAL_SLATEPORT_NO_BF
+	multichoice_list_entry MultichoiceList_Floors, 6 @ [57] MULTI_FLOORS
+	multichoice_list_entry MultichoiceList_ShardsR, 2 @ [58] MULTI_SHARDS_R
+	multichoice_list_entry MultichoiceList_ShardsY, 2 @ [59] MULTI_SHARDS_Y
+	multichoice_list_entry MultichoiceList_ShardsRY, 3 @ [60] MULTI_SHARDS_RY
+	multichoice_list_entry MultichoiceList_ShardsB, 2 @ [61] MULTI_SHARDS_B
+	multichoice_list_entry MultichoiceList_ShardsRB, 3 @ [62] MULTI_SHARDS_RB
+	multichoice_list_entry MultichoiceList_ShardsYB, 3 @ [63] MULTI_SHARDS_YB
+	multichoice_list_entry MultichoiceList_ShardsRYB, 4 @ [64] MULTI_SHARDS_RYB
+	multichoice_list_entry MultichoiceList_ShardsG, 2 @ [65] MULTI_SHARDS_G
+	multichoice_list_entry MultichoiceList_ShardsRG, 3 @ [66] MULTI_SHARDS_RG
+	multichoice_list_entry MultichoiceList_ShardsYG, 3 @ [67] MULTI_SHARDS_YG
+	multichoice_list_entry MultichoiceList_ShardsRYG, 4 @ [68] MULTI_SHARDS_RYG
+	multichoice_list_entry MultichoiceList_ShardsBG, 3 @ [69] MULTI_SHARDS_BG
+	multichoice_list_entry MultichoiceList_ShardsRBG, 4 @ [70] MULTI_SHARDS_RBG
+	multichoice_list_entry MultichoiceList_ShardsYBG, 4 @ [71] MULTI_SHARDS_YBG
+	multichoice_list_entry MultichoiceList_ShardsRYBG, 5 @ [72] MULTI_SHARDS_RYBG
+	multichoice_list_entry MultichoiceList_TourneyWithRecord, 6 @ [73] MULTI_TOURNEY_WITH_RECORD
+	multichoice_list_entry MultichoiceList_LinkServicesNoRecordBerry, 3 @ [74] MULTI_CABLE_CLUB_NO_RECORD_MIX
+	multichoice_list_entry MultichoiceList_LinkServicesNoRecordBerry, 3 @ [75] MULTI_WIRELESS_NO_RECORD_BERRY
+	multichoice_list_entry MultichoiceList_LinkServicesNoBerry, 4 @ [76] MULTI_CABLE_CLUB_WITH_RECORD_MIX
+	multichoice_list_entry MultichoiceList_LinkServicesNoBerry, 4 @ [77] MULTI_WIRELESS_NO_BERRY
+	multichoice_list_entry MultichoiceList_LinkServicesNoRecord, 4 @ [78] MULTI_WIRELESS_NO_RECORD
+	multichoice_list_entry MultichoiceList_LinkServicesAll, 5 @ [79] MULTI_WIRELESS_ALL_SERVICES
+	multichoice_list_entry MultichoiceList_WirelessMinigame, 3 @ [80] MULTI_WIRELESS_MINIGAME
+	multichoice_list_entry MultichoiceList_LinkLeader, 3 @ [81] MULTI_LINK_LEADER
+	multichoice_list_entry MultichoiceList_ContestRank, 5 @ [82] MULTI_CONTEST_RANK
+	multichoice_list_entry MultichoiceList_FrontierItemChoose, 3 @ [83] MULTI_FRONTIER_ITEM_CHOOSE
+	multichoice_list_entry MultichoiceList_LinkContestInfo, 4 @ [84] MULTI_LINK_CONTEST_INFO
+	multichoice_list_entry MultichoiceList_LinkContestMode, 3 @ [85] MULTI_LINK_CONTEST_MODE
+	multichoice_list_entry MultichoiceList_ForcedStartMenu, 8 @ [86] MULTI_FORCED_START_MENU
+	multichoice_list_entry MultichoiceList_FrontierGamblerBet, 4 @ [87] MULTI_FRONTIER_GAMBLER_BET
+	multichoice_list_entry MultichoiceList_Tent, 2 @ [88] MULTI_TENT
+	multichoice_list_entry MultichoiceList_UnusedSSTidal1, 3 @ [89] MULTI_UNUSED_SSTIDAL_1
+	multichoice_list_entry MultichoiceList_UnusedSSTidal2, 3 @ [90] MULTI_UNUSED_SSTIDAL_2
+	multichoice_list_entry MultichoiceList_UnusedSSTidal3, 3 @ [91] MULTI_UNUSED_SSTIDAL_3
+	multichoice_list_entry MultichoiceList_UnusedSSTidal4, 4 @ [92] MULTI_UNUSED_SSTIDAL_4
+	multichoice_list_entry MultichoiceList_Fossil, 3 @ [93] MULTI_FOSSIL
+	multichoice_list_entry MultichoiceList_YesNo, 2 @ [94] MULTI_YESNO
+	multichoice_list_entry MultichoiceList_FrontierRules, 6 @ [95] MULTI_FRONTIER_RULES
+	multichoice_list_entry MultichoiceList_BattleArenaRules, 5 @ [96] MULTI_BATTLE_ARENA_RULES
+	multichoice_list_entry MultichoiceList_BattleTowerRules, 5 @ [97] MULTI_BATTLE_TOWER_RULES
+	multichoice_list_entry MultichoiceList_BattleDomeRules, 4 @ [98] MULTI_BATTLE_DOME_RULES
+	multichoice_list_entry MultichoiceList_BattleFactoryRules, 6 @ [99] MULTI_BATTLE_FACTORY_RULES
+	multichoice_list_entry MultichoiceList_BattlePalaceRules, 6 @ [100] MULTI_BATTLE_PALACE_RULES
+	multichoice_list_entry MultichoiceList_BattlePyramidRules, 5 @ [101] MULTI_BATTLE_PYRAMID_RULES
+	multichoice_list_entry MultichoiceList_BattlePikeRules, 4 @ [102] MULTI_BATTLE_PIKE_RULES
+	multichoice_list_entry MultichoiceList_GoOnRecordRestRetire, 4 @ [103] MULTI_GO_ON_RECORD_REST_RETIRE
+	multichoice_list_entry MultichoiceList_GoOnRestRetire, 3 @ [104] MULTI_GO_ON_REST_RETIRE
+	multichoice_list_entry MultichoiceList_GoOnRecordRetire, 3 @ [105] MULTI_GO_ON_RECORD_RETIRE
+	multichoice_list_entry MultichoiceList_GoOnRetire, 2 @ [106] MULTI_GO_ON_RETIRE
+	multichoice_list_entry MultichoiceList_TourneyNoRecord, 5 @ [107] MULTI_TOURNEY_NO_RECORD
+	multichoice_list_entry MultichoiceList_TVLati, 2 @ [108] MULTI_TV_LATI
+	multichoice_list_entry MultichoiceList_BattleTowerFeelings, 4 @ [109] MULTI_BATTLE_TOWER_FEELINGS
+	multichoice_list_entry MultichoiceList_WheresRayquaza, 4 @ [110] MULTI_WHERES_RAYQUAZA
+	multichoice_list_entry MultichoiceList_SlateportTentRules, 6 @ [111] MULTI_SLATEPORT_TENT_RULES
+	multichoice_list_entry MultichoiceList_FallarborTentRules, 6 @ [112] MULTI_FALLARBOR_TENT_RULES
+
+	.if (. - sMultichoiceLists) != 0x388
+	.error "sMultichoiceLists size mismatch"
+	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085645A0: scrcmd.s: ScrCmd_bufferstdstring; tv.s: CopyContestCategoryToStringVar, CopyContestRankToStringVar
 	.globl sPointerTable_085645A0
 	@ confirmed contiguous ROM pointer table: 30 entries from this address

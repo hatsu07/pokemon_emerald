@@ -296,7 +296,7 @@ _080E0CEE:
 	.align 2, 0
 _080E0D08: .4byte 0x03005AEC
 _080E0D0C: .4byte 0x0000169C
-_080E0D10: .4byte gBerryData_085636B0
+_080E0D10: .4byte gBlankBerryTree
 	thumb_func_end ClearBerryTrees
 
 	thumb_func_start BerryTreeGrow
@@ -385,7 +385,7 @@ _080E0DB2:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080E0DB8: .4byte gBerryData_085636B0
+_080E0DB8: .4byte gBlankBerryTree
 	thumb_func_end BerryTreeGrow
 
 	thumb_func_start BerryTreeTimeUpdate
@@ -432,7 +432,7 @@ _080E0DC2:
 	.align 2, 0
 _080E0E0C: .4byte 0x03005AEC
 _080E0E10: .4byte 0x0000169C
-_080E0E14: .4byte gBerryData_085636B0
+_080E0E14: .4byte gBlankBerryTree
 _080E0E18:
 	adds r5, r6, #0
 	cmp r5, #0
@@ -530,7 +530,7 @@ _080E0EC6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E0ECC: .4byte gBerryData_085636B0
+_080E0ECC: .4byte gBlankBerryTree
 	thumb_func_end PlantBerryTree
 
 	thumb_func_start RemoveBerryTree
@@ -551,7 +551,7 @@ RemoveBerryTree: @ 0x080E0ED0
 	.align 2, 0
 _080E0EEC: .4byte 0x03005AEC
 _080E0EF0: .4byte 0x0000169C
-_080E0EF4: .4byte gBerryData_085636B0
+_080E0EF4: .4byte gBlankBerryTree
 	thumb_func_end RemoveBerryTree
 
 	thumb_func_start GetBerryTypeByBerryTreeId

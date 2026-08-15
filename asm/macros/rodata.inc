@@ -1,3 +1,15 @@
+@ struct MenuAction (8 bytes) used by script-menu multichoice lists.
+	.macro script_menu_action text
+	.4byte \text
+	.4byte 0 @ callback
+	.endm
+
+@ struct MultichoiceListStruct (8 bytes).
+	.macro multichoice_list_entry list, count
+	.4byte \list
+	.byte \count, 0, 0, 0
+	.endm
+
 @ struct BerryCrushBerryData (4 bytes).
 @ u8 difficulty, one ABI padding byte, u16 Berry Powder yield.
 	.macro berry_crush_berry_data item, difficulty, powder

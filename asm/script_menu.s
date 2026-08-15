@@ -269,7 +269,7 @@ DrawMultichoiceMenu: @ 0x080E13FC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E14C8: .4byte gScriptMenuData_08564218
+_080E14C8: .4byte sMultichoiceLists
 	thumb_func_end DrawMultichoiceMenu
 
 	thumb_func_start sub_080E14CC
@@ -663,7 +663,7 @@ sp106_CreateStartMenu: @ 0x080E16E0
 	.align 2, 0
 _080E17C8: .4byte 0x080E17ED
 _080E17CC: .4byte 0x02037290
-_080E17D0: .4byte gScriptMenuData_08564218
+_080E17D0: .4byte sMultichoiceLists
 _080E17D4: .4byte 0x03005B60
 _080E17D8:
 	movs r0, #0
