@@ -1,3 +1,9 @@
+@ struct SpriteFrameImage (8 bytes).
+	.macro rodata_sprite_frame_image gfx, size
+	.4byte \gfx
+	.4byte \size
+	.endm
+
 @ struct MenuAction (8 bytes) used by script-menu multichoice lists.
 	.macro script_menu_action text
 	.4byte \text

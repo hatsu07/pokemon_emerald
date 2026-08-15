@@ -1717,7 +1717,7 @@ _080E2006:
 	bl AddTextPrinterParameterized2
 	b _080E2064
 	.align 2, 0
-_080E2030: .4byte gScriptMenuData_0856468C
+_080E2030: .4byte sWirelessOptions_NoRecordMixBerryCrush
 _080E2034:
 	movs r0, #0
 	movs r1, #0x11

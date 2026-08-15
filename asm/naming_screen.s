@@ -2852,7 +2852,7 @@ NamingScreen_CreatePCIcon: @ 0x080E38AC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E38E0: .4byte gNamingScreenData_08565E98
+_080E38E0: .4byte sSpriteTemplate_PCIcon
 _080E38E4: .4byte 0x020205AC
 _080E38E8: .4byte gNamingScreenData_08565D90
 	thumb_func_end NamingScreen_CreatePCIcon
@@ -4416,7 +4416,7 @@ choose_name_or_words_screen_load_bg_tile_patterns: @ 0x080E43EC
 _080E443C: .4byte gNamingScreenData_08565318
 _080E4440: .4byte 0x02039C34
 _080E4444: .4byte 0x00001810
-_080E4448: .4byte gNamingScreenData_08565EE0
+_080E4448: .4byte sNamingScreenSpriteSheets
 _080E444C: .4byte gNamingScreenData_08565F48
 	thumb_func_end choose_name_or_words_screen_load_bg_tile_patterns
 
