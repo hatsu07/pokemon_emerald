@@ -48,7 +48,7 @@ _080E4C3A:
 	ldrb r0, [r0]
 	b _080E4C4E
 	.align 2, 0
-_080E4C44: .4byte gCreditsU16Table_Rom_565FCC
+_080E4C44: .4byte gContestMoves
 _080E4C48: .4byte gContestEffectData_08566BA4
 _080E4C4C:
 	movs r0, #0
@@ -775,7 +775,7 @@ ContestEffect_StartleMonsSameTypeAppeal: @ 0x080E514C
 	bx r0
 	.align 2, 0
 _080E5184: .4byte 0x02039BD4
-_080E5188: .4byte gCreditsU16Table_Rom_565FCC
+_080E5188: .4byte gContestMoves
 	thumb_func_end ContestEffect_StartleMonsSameTypeAppeal
 
 	thumb_func_start ContestEffect_StartleMonsCoolAppeal
@@ -1061,7 +1061,7 @@ _080E5362:
 	b _080E53AE
 	.align 2, 0
 _080E53A0: .4byte 0x02039BD4
-_080E53A4: .4byte gCreditsU16Table_Rom_565FCC
+_080E53A4: .4byte gContestMoves
 _080E53A8: .4byte gContestEffectData_08566BA4
 _080E53AC:
 	movs r0, #0
@@ -1396,7 +1396,7 @@ _080E5622:
 _080E5628: .4byte 0x02039BC6
 _080E562C: .4byte 0x02039BD4
 _080E5630: .4byte gCreditsU16Table_Rom_566AE4
-_080E5634: .4byte gCreditsU16Table_Rom_565FCC
+_080E5634: .4byte gContestMoves
 	thumb_func_end ContestEffect_BetterIfFirst
 
 	thumb_func_start ContestEffect_BetterIfLast
@@ -1441,7 +1441,7 @@ _080E567A:
 _080E5680: .4byte 0x02039BC6
 _080E5684: .4byte 0x02039BD4
 _080E5688: .4byte gCreditsU16Table_Rom_566AE4
-_080E568C: .4byte gCreditsU16Table_Rom_565FCC
+_080E568C: .4byte gContestMoves
 	thumb_func_end ContestEffect_BetterIfLast
 
 	thumb_func_start ContestEffect_AppealAsGoodAsPrevOnes
@@ -1889,7 +1889,7 @@ _080E59D4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E59E0: .4byte gCreditsU16Table_Rom_565FCC
+_080E59E0: .4byte gContestMoves
 _080E59E4: .4byte gCreditsU16Table_Rom_566AE4
 	thumb_func_end ContestEffect_BetterIfSameType
 
@@ -1966,7 +1966,7 @@ _080E5A18:
 	b _080E5A88
 	.align 2, 0
 _080E5A74: .4byte 0x02039BD4
-_080E5A78: .4byte gCreditsU16Table_Rom_565FCC
+_080E5A78: .4byte gContestMoves
 _080E5A7C: .4byte gCreditsU16Table_Rom_566AE4
 _080E5A80:
 	adds r7, #0x1c
@@ -2669,7 +2669,7 @@ _080E5F86:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E5F8C: .4byte gCreditsU16Table_Rom_565FCC
+_080E5F8C: .4byte gContestMoves
 _080E5F90: .4byte 0x02039BD4
 _080E5F94: .4byte 0x02039BCC
 	thumb_func_end ContestEffect_ExciteAudienceInAnyContest
@@ -2913,7 +2913,7 @@ _080E612A:
 	b _080E615E
 	.align 2, 0
 _080E6154: .4byte 0x02039BD4
-_080E6158: .4byte gCreditsU16Table_Rom_565FCC
+_080E6158: .4byte gContestMoves
 _080E615C:
 	movs r0, #0xa
 _080E615E:

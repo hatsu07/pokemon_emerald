@@ -1,7 +1,10 @@
 	.section .rodata
 
+	.include "asm/macros/asm.inc"
 	.include "constants/gba_constants.inc"
 	.include "constants/global.inc"
+	.include "constants/contest_constants.inc"
+	.include "constants/contest_move_effects.inc"
 	.include "constants/battle_controller.inc"
 	.include "constants/battle_dome.inc"
 	.include "constants/battle_palace.inc"

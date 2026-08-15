@@ -523,3 +523,13 @@
 	.macro m4a_programmable_wave b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15
 	.byte \b0, \b1, \b2, \b3, \b4, \b5, \b6, \b7, \b8, \b9, \b10, \b11, \b12, \b13, \b14, \b15
 	.endm
+
+@ struct ContestMove (8 bytes).
+@ move ID is implicit in gContestMoves table index.
+	.macro contest_move effect, category, combo_starter, combo1, combo2, combo3, combo4
+	.byte \effect
+	.byte \category
+	.byte \combo_starter
+	.byte \combo1, \combo2, \combo3, \combo4
+	.byte 0 @ padding
+	.endm

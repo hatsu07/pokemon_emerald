@@ -1746,7 +1746,7 @@ ContestAICmd_get_move_effect: @ 0x08156E40
 	.align 2, 0
 _08156E70: .4byte 0x02039AA0
 _08156E74: .4byte 0x02039BD4
-_08156E78: .4byte gCreditsU16Table_Rom_565FCC
+_08156E78: .4byte gContestMoves
 _08156E7C: .4byte 0x0203A804
 	thumb_func_end ContestAICmd_get_move_effect
 
@@ -1858,7 +1858,7 @@ ContestAICmd_get_move_effect_type: @ 0x08156F08
 _08156F40: .4byte 0x02039AA0
 _08156F44: .4byte 0x02039BD4
 _08156F48: .4byte gCreditsU16Table_Rom_566AE4
-_08156F4C: .4byte gCreditsU16Table_Rom_565FCC
+_08156F4C: .4byte gContestMoves
 _08156F50: .4byte 0x0203A804
 	thumb_func_end ContestAICmd_get_move_effect_type
 
@@ -1992,7 +1992,7 @@ _0815702E:
 _0815703C: .4byte 0x02039AA0
 _08157040: .4byte 0x02039BD4
 _08157044: .4byte gCreditsU16Table_Rom_566AE4
-_08157048: .4byte gCreditsU16Table_Rom_565FCC
+_08157048: .4byte gContestMoves
 _0815704C: .4byte 0x0203A804
 _08157050:
 	ldr r0, [r5]
@@ -2106,7 +2106,7 @@ _08157102:
 _08157110: .4byte 0x02039AA0
 _08157114: .4byte 0x02039BD4
 _08157118: .4byte gCreditsU16Table_Rom_566AE4
-_0815711C: .4byte gCreditsU16Table_Rom_565FCC
+_0815711C: .4byte gContestMoves
 _08157120: .4byte 0x0203A804
 _08157124:
 	ldr r0, [r5]
@@ -2205,7 +2205,7 @@ ContestAICmd_unk_31: @ 0x08157184
 _081571CC: .4byte 0x02039AA0
 _081571D0: .4byte 0x02039BD4
 _081571D4: .4byte gCreditsU16Table_Rom_566AE4
-_081571D8: .4byte gCreditsU16Table_Rom_565FCC
+_081571D8: .4byte gContestMoves
 _081571DC: .4byte 0x0203A804
 	thumb_func_end ContestAICmd_unk_31
 
@@ -2398,7 +2398,7 @@ ContestAICmd_unk_36: @ 0x081572F0
 _08157338: .4byte 0x02039AA0
 _0815733C: .4byte 0x02039BD4
 _08157340: .4byte gCreditsU16Table_Rom_566AE4
-_08157344: .4byte gCreditsU16Table_Rom_565FCC
+_08157344: .4byte gContestMoves
 _08157348: .4byte 0x0203A804
 	thumb_func_end ContestAICmd_unk_36
 
@@ -3392,7 +3392,7 @@ _08157A54:
 	bx r0
 	.align 2, 0
 _08157A68: .4byte 0x0203A804
-_08157A6C: .4byte gCreditsU16Table_Rom_565FCC
+_08157A6C: .4byte gContestMoves
 _08157A70: .4byte 0x02039BD4
 	thumb_func_end ContestAICmd_get_used_combo_starter
 
@@ -4202,7 +4202,7 @@ ContestAICmd_unk_63: @ 0x08157FFC
 	.align 2, 0
 _08158038: .4byte 0x0203A804
 _0815803C: .4byte 0x02039BD4
-_08158040: .4byte gCreditsU16Table_Rom_565FCC
+_08158040: .4byte gContestMoves
 	thumb_func_end ContestAICmd_unk_63
 
 	thumb_func_start ContestAICmd_unk_64
@@ -4571,7 +4571,7 @@ ContestAICmd_unk_6D: @ 0x081582A0
 _081582E4: .4byte 0x0203A804
 _081582E8: .4byte 0x02039BD4
 _081582EC: .4byte gCreditsU16Table_Rom_566AE4
-_081582F0: .4byte gCreditsU16Table_Rom_565FCC
+_081582F0: .4byte gContestMoves
 	thumb_func_end ContestAICmd_unk_6D
 
 	thumb_func_start ContestAICmd_unk_6E

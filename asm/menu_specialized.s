@@ -1945,7 +1945,7 @@ _081D21E4:
 	.align 2, 0
 _081D21F8: .4byte gMenuPointerTable_Rom_5E7FFC
 _081D21FC: .4byte 0x08560CAC
-_081D2200: .4byte gCreditsU16Table_Rom_565FCC
+_081D2200: .4byte gContestMoves
 _081D2204: .4byte 0x08560BB4
 	thumb_func_end MoveRelearnerMenuLoadContestMoveDescription
 
