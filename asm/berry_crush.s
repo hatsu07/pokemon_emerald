@@ -2145,7 +2145,7 @@ _08021A0A:
 	bl StringCopy
 	b _08021A44
 	.align 2, 0
-_08021A20: .4byte gBerryCrushData_08563150
+_08021A20: .4byte gBerries
 _08021A24: .4byte 0x02021C40
 _08021A28: .4byte gBerryCrushData_082C7C40
 _08021A2C: .4byte 0x02021C7C

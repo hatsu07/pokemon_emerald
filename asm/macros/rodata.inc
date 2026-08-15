@@ -1,3 +1,15 @@
+@ struct Berry (0x1C bytes).
+@ Keep JP name bytes literal; description pointers use semantic labels.
+	.macro berry_entry name0, name1, name2, name3, name4, name5, name6, firmness, size, max_yield, min_yield, desc1, desc2, stage_duration, spicy, dry, sweet, bitter, sour, smoothness
+	.byte \name0, \name1, \name2, \name3, \name4, \name5, \name6
+	.byte \firmness
+	.2byte \size
+	.byte \max_yield, \min_yield
+	.4byte \desc1, \desc2
+	.byte \stage_duration, \spicy, \dry, \sweet, \bitter, \sour, \smoothness
+	.byte 0 @ alignment
+	.endm
+
 	.macro bg_template bg, char_base, map_base, screen_size, palette_mode, priority, base_tile
 	.4byte ((\bg) & 3) | (((\char_base) & 3) << 2) | (((\map_base) & 0x1F) << 4) | (((\screen_size) & 3) << 9) | (((\palette_mode) & 1) << 11) | (((\priority) & 3) << 12) | (((\base_tile) & 0x3FF) << 14)
 	.endm

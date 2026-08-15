@@ -14,6 +14,7 @@
 	.include "constants/base_stats.inc"
 	.include "constants/moves.inc"
 	.include "constants/item.inc"
+	.include "constants/berry.inc"
 	.include "constants/item_effects.inc"
 	.include "constants/trainer.inc"
 	.include "constants/map.inc"
