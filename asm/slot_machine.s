@@ -5532,8 +5532,8 @@ LoadLitTile: @ 0x0812CE3C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812CE5C: .4byte gSlotMachineData_0858550C
-_0812CE60: .4byte gSlotMachineData_08585534
+_0812CE5C: .4byte sLitMatchLinePalTable
+_0812CE60: .4byte sMatchLinePalOffsets
 	thumb_func_end LoadLitTile
 
 	thumb_func_start sub_0812CE64
@@ -5554,8 +5554,8 @@ sub_0812CE64: @ 0x0812CE64
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812CE84: .4byte gSlotMachineData_08585520
-_0812CE88: .4byte gSlotMachineData_08585534
+_0812CE84: .4byte sDarkMatchLinePalTable
+_0812CE88: .4byte sMatchLinePalOffsets
 	thumb_func_end sub_0812CE64
 
 	thumb_func_start LoadBetTiles
@@ -5587,8 +5587,8 @@ _0812CEB8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812CEC0: .4byte gSlotMachineData_0858553F
-_0812CEC4: .4byte gSlotMachineData_08585539
+_0812CEC0: .4byte sMatchLinesPerBet
+_0812CEC4: .4byte sBetToMatchLineIds
 	thumb_func_end LoadBetTiles
 
 	thumb_func_start sub_0812CEC8
@@ -5620,8 +5620,8 @@ _0812CEF4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812CEFC: .4byte gSlotMachineData_0858553F
-_0812CF00: .4byte gSlotMachineData_08585539
+_0812CEFC: .4byte sMatchLinesPerBet
+_0812CF00: .4byte sBetToMatchLineIds
 	thumb_func_end sub_0812CEC8
 
 	thumb_func_start sub_0812CF04
@@ -5873,7 +5873,7 @@ _0812D0B6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812D0BC: .4byte gSlotMachineData_08585534
+_0812D0BC: .4byte sMatchLinePalOffsets
 	thumb_func_end sub_0812D034
 
 	thumb_func_start sub_0812D0C0
@@ -5935,7 +5935,7 @@ _0812D130:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0812D134: .4byte gSlotMachineData_085855B0
+_0812D134: .4byte sSlotMachineMenu_Pal
 	thumb_func_end sub_0812D0F0
 
 	thumb_func_start sub_0812D138
@@ -5986,7 +5986,7 @@ _0812D176:
 	bx r0
 	.align 2, 0
 _0812D190: .4byte 0x03005B60
-_0812D194: .4byte gSlotMachineData_085855A4
+_0812D194: .4byte sFlashingLightsPalTable
 	thumb_func_end sub_0812D138
 
 	thumb_func_start GameplayTask_PikaPower
@@ -10668,7 +10668,7 @@ sub_0812F480: @ 0x0812F480
 	strh r0, [r5, #0x32]
 	b _0812F50C
 	.align 2, 0
-_0812F4CC: .4byte gSlotMachineData_08585614
+_0812F4CC: .4byte sPokeballShiningPalTable
 _0812F4D0:
 	ldr r1, _0812F520
 	movs r2, #0x30
@@ -10708,7 +10708,7 @@ _0812F50C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812F520: .4byte gSlotMachineData_08585614
+_0812F520: .4byte sPokeballShiningPalTable
 	thumb_func_end sub_0812F480
 
 	thumb_func_start sub_0812F524
@@ -11083,7 +11083,7 @@ sub_0812F7A4: @ 0x0812F7A4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812F7CC: .4byte gSlotMachineData_08585624
+_0812F7CC: .4byte sDigitalDisplay_Pal
 	thumb_func_end sub_0812F7A4
 
 	thumb_func_start sub_0812F7D0
@@ -11190,7 +11190,7 @@ _0812F89C: .4byte 0x0203A7A4
 _0812F8A0: .4byte gSlotMachineData_08585DF8
 _0812F8A4: .4byte 0x0203A7FC
 _0812F8A8: .4byte sSlotMachineSpriteSheets
-_0812F8AC: .4byte gSlotMachineData_08585648
+_0812F8AC: .4byte sSlotMachineSpritePalettes
 	thumb_func_end sub_0812F7F4
 
 	thumb_func_start sub_0812F8B0
@@ -11242,7 +11242,7 @@ _0812F8D6:
 	.align 2, 0
 _0812F90C: .4byte 0x0203A7F8
 _0812F910: .4byte 0x0203A7AC
-_0812F914: .4byte gSlotMachineData_08585368
+_0812F914: .4byte sReelBackground_Tilemap
 	thumb_func_end sub_0812F8B0
 
 	thumb_func_start sub_0812F918
@@ -11276,8 +11276,8 @@ sub_0812F918: @ 0x0812F918
 	.align 2, 0
 _0812F958: .4byte 0x0203A794
 _0812F95C: .4byte gSlotMachineData_08586F4C
-_0812F960: .4byte gSlotMachineData_0858544C
-_0812F964: .4byte gSlotMachineData_08585628
+_0812F960: .4byte gSlotMachineMenu_Pal
+_0812F964: .4byte sUnkPalette
 	thumb_func_end sub_0812F918
 
 	thumb_func_start sub_0812F968
