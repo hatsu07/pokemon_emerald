@@ -32,6 +32,21 @@
 	.byte \size, 0, 0, 0
 	.endm
 
+
+@ Credits display entry (8 bytes).
+	.macro credits_entry name, unk, is_title, text
+	.globl \name
+\name:
+	.byte \unk, \is_title
+	.2byte 0
+	.4byte \text
+	.endm
+
+@ One credits page: five CreditsEntry pointers (20 bytes).
+	.macro credits_page entry0, entry1, entry2, entry3, entry4
+	.4byte \entry0, \entry1, \entry2, \entry3, \entry4
+	.endm
+
 @ struct WindowTemplate (8 bytes).
 	.macro rodata_window_template bg, left, top, width, height, palette, base_block
 	.byte \bg, \left, \top, \width, \height, \palette

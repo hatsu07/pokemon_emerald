@@ -1,234 +1,53 @@
 	@ pret/pokeemerald-jp direct xref for 0x085C7590: credits.s: sub_08175CAC
-	.globl gCreditsData_085C7590
-gCreditsData_085C7590: @ 0x085C7590
+	@ Credits pages: 45 pages x 5 CreditsEntry pointers
+	.globl sCreditsPages
+sCreditsPages: @ 0x085C7590
 	@ analyzed canonical ROM range 0x085C7590-0x085C7913
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x384
-	.4byte 0x085C7180 @ +0x0
-	.4byte 0x085C7188 @ +0x4
-	.4byte 0x085C7190 @ +0x8
-	.4byte 0x085C7180 @ +0xC
-	.4byte 0x085C7180 @ +0x10
-	.4byte 0x085C7180 @ +0x14
-	.4byte 0x085C71A0 @ +0x18
-	.4byte 0x085C72D0 @ +0x1C
-	.4byte 0x085C7180 @ +0x20
-	.4byte 0x085C7180 @ +0x24
-	.4byte 0x085C7180 @ +0x28
-	.4byte 0x085C71A8 @ +0x2C
-	.4byte 0x085C72C8 @ +0x30
-	.4byte 0x085C7180 @ +0x34
-	.4byte 0x085C7180 @ +0x38
-	.4byte 0x085C7180 @ +0x3C
-	.4byte 0x085C7288 @ +0x40
-	.4byte 0x085C72C0 @ +0x44
-	.4byte 0x085C7180 @ +0x48
-	.4byte 0x085C7180 @ +0x4C
-	.4byte 0x085C72A8 @ +0x50
-	.4byte 0x085C72E0 @ +0x54
-	.4byte 0x085C72B0 @ +0x58
-	.4byte 0x085C7340 @ +0x5C
-	.4byte 0x085C7180 @ +0x60
-	.4byte 0x085C71D0 @ +0x64
-	.4byte 0x085C72E0 @ +0x68
-	.4byte 0x085C7320 @ +0x6C
-	.4byte 0x085C7448 @ +0x70
-	.4byte 0x085C7180 @ +0x74
-	.4byte 0x085C71D0 @ +0x78
-	.4byte 0x085C72F0 @ +0x7C
-	.4byte 0x085C7308 @ +0x80
-	.4byte 0x085C7310 @ +0x84
-	.4byte 0x085C7180 @ +0x88
-	.4byte 0x085C71D0 @ +0x8C
-	.4byte 0x085C7318 @ +0x90
-	.4byte 0x085C7328 @ +0x94
-	.4byte 0x085C7300 @ +0x98
-	.4byte 0x085C72F8 @ +0x9C
-	.4byte 0x085C71D0 @ +0xA0
-	.4byte 0x085C72D8 @ +0xA4
-	.4byte 0x085C72E8 @ +0xA8
-	.4byte 0x085C7330 @ +0xAC
-	.4byte 0x085C7180 @ +0xB0
-	.4byte 0x085C7180 @ +0xB4
-	.4byte 0x085C71E0 @ +0xB8
-	.4byte 0x085C7340 @ +0xBC
-	.4byte 0x085C7348 @ +0xC0
-	.4byte 0x085C7180 @ +0xC4
-	.4byte 0x085C71E0 @ +0xC8
-	.4byte 0x085C7450 @ +0xCC
-	.4byte 0x085C7350 @ +0xD0
-	.4byte 0x085C7360 @ +0xD4
-	.4byte 0x085C7180 @ +0xD8
-	.4byte 0x085C71E0 @ +0xDC
-	.4byte 0x085C72C8 @ +0xE0
-	.4byte 0x085C7338 @ +0xE4
-	.4byte 0x085C7358 @ +0xE8
-	.4byte 0x085C7368 @ +0xEC
-	.4byte 0x085C71F0 @ +0xF0
-	.4byte 0x085C7390 @ +0xF4
-	.4byte 0x085C72C0 @ +0xF8
-	.4byte 0x085C7398 @ +0xFC
-	.4byte 0x085C73B8 @ +0x100
-	.4byte 0x085C7180 @ +0x104
-	.4byte 0x085C71F8 @ +0x108
-	.4byte 0x085C7390 @ +0x10C
-	.4byte 0x085C7398 @ +0x110
-	.4byte 0x085C7180 @ +0x114
-	.4byte 0x085C7200 @ +0x118
-	.4byte 0x085C72D0 @ +0x11C
-	.4byte 0x085C73C8 @ +0x120
-	.4byte 0x085C73C0 @ +0x124
-	.4byte 0x085C73E8 @ +0x128
-	.4byte 0x085C7200 @ +0x12C
-	.4byte 0x085C7458 @ +0x130
-	.4byte 0x085C73B0 @ +0x134
-	.4byte 0x085C73B8 @ +0x138
-	.4byte 0x085C73A8 @ +0x13C
-	.4byte 0x085C7200 @ +0x140
-	.4byte 0x085C72C0 @ +0x144
-	.4byte 0x085C73A0 @ +0x148
-	.4byte 0x085C73D0 @ +0x14C
-	.4byte 0x085C73D8 @ +0x150
-	.4byte 0x085C7208 @ +0x154
-	.4byte 0x085C73E8 @ +0x158
-	.4byte 0x085C72C0 @ +0x15C
-	.4byte 0x085C73A0 @ +0x160
-	.4byte 0x085C7180 @ +0x164
-	.4byte 0x085C7210 @ +0x168
-	.4byte 0x085C73E8 @ +0x16C
-	.4byte 0x085C73B8 @ +0x170
-	.4byte 0x085C73E0 @ +0x174
-	.4byte 0x085C7180 @ +0x178
-	.4byte 0x085C7218 @ +0x17C
-	.4byte 0x085C7320 @ +0x180
-	.4byte 0x085C7318 @ +0x184
-	.4byte 0x085C7180 @ +0x188
-	.4byte 0x085C7180 @ +0x18C
-	.4byte 0x085C7220 @ +0x190
-	.4byte 0x085C7458 @ +0x194
-	.4byte 0x085C73C8 @ +0x198
-	.4byte 0x085C73D0 @ +0x19C
-	.4byte 0x085C73B0 @ +0x1A0
-	.4byte 0x085C7180 @ +0x1A4
-	.4byte 0x085C7290 @ +0x1A8
-	.4byte 0x085C73B0 @ +0x1AC
-	.4byte 0x085C7180 @ +0x1B0
-	.4byte 0x085C7180 @ +0x1B4
-	.4byte 0x085C7230 @ +0x1B8
-	.4byte 0x085C73C8 @ +0x1BC
-	.4byte 0x085C72D0 @ +0x1C0
-	.4byte 0x085C73B0 @ +0x1C4
-	.4byte 0x085C73A0 @ +0x1C8
-	.4byte 0x085C7180 @ +0x1CC
-	.4byte 0x085C7238 @ +0x1D0
-	.4byte 0x085C73A8 @ +0x1D4
-	.4byte 0x085C7180 @ +0x1D8
-	.4byte 0x085C7180 @ +0x1DC
-	.4byte 0x085C7240 @ +0x1E0
-	.4byte 0x085C72E0 @ +0x1E4
-	.4byte 0x085C72E8 @ +0x1E8
-	.4byte 0x085C7308 @ +0x1EC
-	.4byte 0x085C72F0 @ +0x1F0
-	.4byte 0x085C71E8 @ +0x1F4
-	.4byte 0x085C72C8 @ +0x1F8
-	.4byte 0x085C7340 @ +0x1FC
-	.4byte 0x085C72D0 @ +0x200
-	.4byte 0x085C7180 @ +0x204
-	.4byte 0x085C71E8 @ +0x208
-	.4byte 0x085C7338 @ +0x20C
-	.4byte 0x085C7348 @ +0x210
-	.4byte 0x085C7350 @ +0x214
-	.4byte 0x085C7180 @ +0x218
-	.4byte 0x085C71E8 @ +0x21C
-	.4byte 0x085C7360 @ +0x220
-	.4byte 0x085C7368 @ +0x224
-	.4byte 0x085C7358 @ +0x228
-	.4byte 0x085C7180 @ +0x22C
-	.4byte 0x085C71E8 @ +0x230
-	.4byte 0x085C7378 @ +0x234
-	.4byte 0x085C7380 @ +0x238
-	.4byte 0x085C7388 @ +0x23C
-	.4byte 0x085C7370 @ +0x240
-	.4byte 0x085C7180 @ +0x244
-	.4byte 0x085C7298 @ +0x248
-	.4byte 0x085C7520 @ +0x24C
-	.4byte 0x085C7540 @ +0x250
-	.4byte 0x085C7180 @ +0x254
-	.4byte 0x085C7180 @ +0x258
-	.4byte 0x085C7248 @ +0x25C
-	.4byte 0x085C7470 @ +0x260
-	.4byte 0x085C7180 @ +0x264
-	.4byte 0x085C7180 @ +0x268
-	.4byte 0x085C7180 @ +0x26C
-	.4byte 0x085C7250 @ +0x270
-	.4byte 0x085C7410 @ +0x274
-	.4byte 0x085C73F0 @ +0x278
-	.4byte 0x085C7180 @ +0x27C
-	.4byte 0x085C7250 @ +0x280
-	.4byte 0x085C7490 @ +0x284
-	.4byte 0x085C7498 @ +0x288
-	.4byte 0x085C74A0 @ +0x28C
-	.4byte 0x085C7180 @ +0x290
-	.4byte 0x085C7250 @ +0x294
-	.4byte 0x085C7518 @ +0x298
-	.4byte 0x085C7548 @ +0x29C
-	.4byte 0x085C74B0 @ +0x2A0
-	.4byte 0x085C74B8 @ +0x2A4
-	.4byte 0x085C7250 @ +0x2A8
-	.4byte 0x085C7538 @ +0x2AC
-	.4byte 0x085C74C0 @ +0x2B0
-	.4byte 0x085C7550 @ +0x2B4
-	.4byte 0x085C7180 @ +0x2B8
-	.4byte 0x085C7250 @ +0x2BC
-	.4byte 0x085C7480 @ +0x2C0
-	.4byte 0x085C7488 @ +0x2C4
-	.4byte 0x085C7558 @ +0x2C8
-	.4byte 0x085C7180 @ +0x2CC
-	.4byte 0x085C7180 @ +0x2D0
-	.4byte 0x085C7280 @ +0x2D4
-	.4byte 0x085C7528 @ +0x2D8
-	.4byte 0x085C7180 @ +0x2DC
-	.4byte 0x085C7180 @ +0x2E0
-	.4byte 0x085C7270 @ +0x2E4
-	.4byte 0x085C73F8 @ +0x2E8
-	.4byte 0x085C7400 @ +0x2EC
-	.4byte 0x085C7460 @ +0x2F0
-	.4byte 0x085C7468 @ +0x2F4
-	.4byte 0x085C7180 @ +0x2F8
-	.4byte 0x085C72A0 @ +0x2FC
-	.4byte 0x085C7560 @ +0x300
-	.4byte 0x085C7568 @ +0x304
-	.4byte 0x085C7180 @ +0x308
-	.4byte 0x085C7258 @ +0x30C
-	.4byte 0x085C7570 @ +0x310
-	.4byte 0x085C74A8 @ +0x314
-	.4byte 0x085C7578 @ +0x318
-	.4byte 0x085C7180 @ +0x31C
-	.4byte 0x085C7180 @ +0x320
-	.4byte 0x085C7278 @ +0x324
-	.4byte 0x085C7580 @ +0x328
-	.4byte 0x085C7588 @ +0x32C
-	.4byte 0x085C7180 @ +0x330
-	.4byte 0x085C7260 @ +0x334
-	.4byte 0x085C74F8 @ +0x338
-	.4byte 0x085C74E0 @ +0x33C
-	.4byte 0x085C74D0 @ +0x340
-	.4byte 0x085C7500 @ +0x344
-	.4byte 0x085C7180 @ +0x348
-	.4byte 0x085C7198 @ +0x34C
-	.4byte 0x085C72B8 @ +0x350
-	.4byte 0x085C7180 @ +0x354
-	.4byte 0x085C7180 @ +0x358
-	.4byte 0x085C7180 @ +0x35C
-	.4byte 0x085C7268 @ +0x360
-	.4byte 0x085C7510 @ +0x364
-	.4byte 0x085C7180 @ +0x368
-	.4byte 0x085C7180 @ +0x36C
-	.4byte 0x085C7180 @ +0x370
-	.4byte 0x085C7268 @ +0x374
-	.4byte 0x085C7508 @ +0x378
-	.4byte 0x085C7180 @ +0x37C
-	.4byte 0x085C7180 @ +0x380
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_PkmnEmeraldVersion, sCreditsEntry_Credits, sCreditsEntry_EmptyString, sCreditsEntry_EmptyString @ page 00
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_Director, sCreditsEntry_ShigekiMorimoto, sCreditsEntry_EmptyString, sCreditsEntry_EmptyString @ page 01
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_ArtDirector, sCreditsEntry_KenSugimori, sCreditsEntry_EmptyString, sCreditsEntry_EmptyString @ page 02
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_WorldDirector, sCreditsEntry_JunichiMasuda, sCreditsEntry_EmptyString, sCreditsEntry_EmptyString @ page 03
+	credits_page sCreditsEntry_LeadProgrammer, sCreditsEntry_HisashiSogabe, sCreditsEntry_LeadGraphicArtist, sCreditsEntry_MotofumiFujiwara, sCreditsEntry_EmptyString @ page 04
+	credits_page sCreditsEntry_Programmers, sCreditsEntry_HisashiSogabe, sCreditsEntry_TomomichiOhta, sCreditsEntry_NozomuSaito, sCreditsEntry_EmptyString @ page 05
+	credits_page sCreditsEntry_Programmers, sCreditsEntry_AkitoMori, sCreditsEntry_HiroyukiNakamura, sCreditsEntry_MasaoTaya, sCreditsEntry_EmptyString @ page 06
+	credits_page sCreditsEntry_Programmers, sCreditsEntry_SatoshiNohara, sCreditsEntry_MiyukiIwasawa, sCreditsEntry_YoshinoriMatsuda, sCreditsEntry_KeitaKagaya @ page 07
+	credits_page sCreditsEntry_Programmers, sCreditsEntry_TetsuyaWatanabe, sCreditsEntry_SosukeTamada, sCreditsEntry_TakenoriOhta, sCreditsEntry_EmptyString @ page 08
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_GraphicDesigners, sCreditsEntry_MotofumiFujiwara, sCreditsEntry_SatoshiOhta, sCreditsEntry_EmptyString @ page 09
+	credits_page sCreditsEntry_GraphicDesigners, sCreditsEntry_KenkichiToyama, sCreditsEntry_AsukaIwashita, sCreditsEntry_TakaoUnno, sCreditsEntry_EmptyString @ page 10
+	credits_page sCreditsEntry_GraphicDesigners, sCreditsEntry_KenSugimori, sCreditsEntry_HironobuYoshida, sCreditsEntry_AimiTomita, sCreditsEntry_KanakoEo @ page 11
+	credits_page sCreditsEntry_MusicComposition, sCreditsEntry_GoIchinose, sCreditsEntry_JunichiMasuda, sCreditsEntry_MorikazuAoki, sCreditsEntry_HitomiSato @ page 12
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_SoundEffectsAndPkmnVoices, sCreditsEntry_GoIchinose, sCreditsEntry_MorikazuAoki, sCreditsEntry_EmptyString @ page 13
+	credits_page sCreditsEntry_GameDesigners, sCreditsEntry_ShigekiMorimoto, sCreditsEntry_TeruyukiShimoyamada, sCreditsEntry_TakeshiKawachimaru, sCreditsEntry_AkihitoTomisawa @ page 14
+	credits_page sCreditsEntry_GameDesigners, sCreditsEntry_SuguruNakatsui, sCreditsEntry_TetsujiOhta, sCreditsEntry_HitomiSato, sCreditsEntry_KenjiMatsushima @ page 15
+	credits_page sCreditsEntry_GameDesigners, sCreditsEntry_JunichiMasuda, sCreditsEntry_KojiNishino, sCreditsEntry_ShigeruOhmori, sCreditsEntry_TadashiTakahashi @ page 16
+	credits_page sCreditsEntry_ScenarioPlot, sCreditsEntry_AkihitoTomisawa, sCreditsEntry_JunichiMasuda, sCreditsEntry_KojiNishino, sCreditsEntry_EmptyString @ page 17
+	credits_page sCreditsEntry_Scenario, sCreditsEntry_AkihitoTomisawa, sCreditsEntry_HitomiSato, sCreditsEntry_ToshinobuMatsumiya, sCreditsEntry_EmptyString @ page 18
+	credits_page sCreditsEntry_ScriptDesigners, sCreditsEntry_TomomichiOhta, sCreditsEntry_SatoshiNohara, sCreditsEntry_EmptyString, sCreditsEntry_EmptyString @ page 19
+	credits_page sCreditsEntry_MapDesigners, sCreditsEntry_SuguruNakatsui, sCreditsEntry_TeruyukiShimoyamada, sCreditsEntry_ShigeruOhmori, sCreditsEntry_TetsujiOhta @ page 20
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_BattleFrontierData, sCreditsEntry_TetsujiOhta, sCreditsEntry_EmptyString, sCreditsEntry_EmptyString @ page 21
+	credits_page sCreditsEntry_ParametricDesigners, sCreditsEntry_TeruyukiShimoyamada, sCreditsEntry_ShigekiMorimoto, sCreditsEntry_TetsujiOhta, sCreditsEntry_KojiNishino @ page 22
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_PokedexText, sCreditsEntry_KenjiMatsushima, sCreditsEntry_EmptyString, sCreditsEntry_EmptyString @ page 23
+	credits_page sCreditsEntry_EnvAndToolPgrms, sCreditsEntry_HisashiSogabe, sCreditsEntry_SosukeTamada, sCreditsEntry_HiroyukiNakamura, sCreditsEntry_AkitoMori @ page 24
+	credits_page sCreditsEntry_PkmnDesigners, sCreditsEntry_KenSugimori, sCreditsEntry_MotofumiFujiwara, sCreditsEntry_ShigekiMorimoto, sCreditsEntry_EmptyString @ page 25
+	credits_page sCreditsEntry_PkmnDesigners, sCreditsEntry_HironobuYoshida, sCreditsEntry_SatoshiOhta, sCreditsEntry_AsukaIwashita, sCreditsEntry_EmptyString @ page 26
+	credits_page sCreditsEntry_PkmnDesigners, sCreditsEntry_TakaoUnno, sCreditsEntry_KanakoEo, sCreditsEntry_AimiTomita, sCreditsEntry_EmptyString @ page 27
+	credits_page sCreditsEntry_PkmnDesigners, sCreditsEntry_AtsukoNishida, sCreditsEntry_MuneoSaito, sCreditsEntry_RenaYoshikawa, sCreditsEntry_JunOkutani @ page 28
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_SupportProgrammers, sCreditsEntry_SatoshiMitsuhara, sCreditsEntry_DaisukeHoshino, sCreditsEntry_EmptyString @ page 29
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_NCLProductTesting, sCreditsEntry_NCLSuperMarioClub, sCreditsEntry_EmptyString, sCreditsEntry_EmptyString @ page 30
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_SpecialThanks, sCreditsEntry_KenjiTominaga, sCreditsEntry_HirokiEnomoto, sCreditsEntry_EmptyString @ page 31
+	credits_page sCreditsEntry_SpecialThanks, sCreditsEntry_HiroNakamura, sCreditsEntry_HiroyukiUesugi, sCreditsEntry_TerukiMurakawa, sCreditsEntry_EmptyString @ page 32
+	credits_page sCreditsEntry_SpecialThanks, sCreditsEntry_KazuyaSuyama, sCreditsEntry_KenjiroIto, sCreditsEntry_MichikoTakizawa, sCreditsEntry_MakikoTakada @ page 33
+	credits_page sCreditsEntry_SpecialThanks, sCreditsEntry_MikikoOhhashi, sCreditsEntry_TakanaoKondo, sCreditsEntry_RuiKawaguchi, sCreditsEntry_EmptyString @ page 34
+	credits_page sCreditsEntry_SpecialThanks, sCreditsEntry_TakahiroOhnishi, sCreditsEntry_NorihideOkamura, sCreditsEntry_ShunsukeKohori, sCreditsEntry_EmptyString @ page 35
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_BrailleCodeCheck, sCreditsEntry_JapanBrailleLibrary, sCreditsEntry_EmptyString, sCreditsEntry_EmptyString @ page 36
+	credits_page sCreditsEntry_InfoSupervisors, sCreditsEntry_KazuyukiTerada, sCreditsEntry_YuriSakurai, sCreditsEntry_YumiFunasaka, sCreditsEntry_NaokoYanase @ page 37
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_Artwork, sCreditsEntry_SachikoNakamichi, sCreditsEntry_FujikoNomura, sCreditsEntry_EmptyString @ page 38
+	credits_page sCreditsEntry_Coordinators, sCreditsEntry_KazukiYoshihara, sCreditsEntry_AkiraKinashi, sCreditsEntry_RetsujiNomoto, sCreditsEntry_EmptyString @ page 39
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_TaskManagers, sCreditsEntry_AzusaTajima, sCreditsEntry_ShusakuEgami, sCreditsEntry_EmptyString @ page 40
+	credits_page sCreditsEntry_Producers, sCreditsEntry_HiroyukiJinnai, sCreditsEntry_HitoshiYamagami, sCreditsEntry_GakujiNomoto, sCreditsEntry_HiroakiTsuru @ page 41
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_ExecutiveDirector, sCreditsEntry_SatoshiTajiri, sCreditsEntry_EmptyString, sCreditsEntry_EmptyString @ page 42
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_ExecProducers, sCreditsEntry_SatoruIwata, sCreditsEntry_EmptyString, sCreditsEntry_EmptyString @ page 43
+	credits_page sCreditsEntry_EmptyString, sCreditsEntry_ExecProducers, sCreditsEntry_TsunekazIshihara, sCreditsEntry_EmptyString, sCreditsEntry_EmptyString @ page 44
 	@ pret/pokeemerald-jp direct xref for 0x085C7914: credits.s: sub_0817544C
 	.globl gCreditsData_085C7914
 gCreditsData_085C7914: @ 0x085C7914
