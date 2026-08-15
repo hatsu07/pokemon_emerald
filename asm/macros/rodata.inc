@@ -25,6 +25,13 @@
 	.4byte \title, \action, \full_text
 	.endm
 
+
+@ Decoration tilemap descriptor (16 bytes).
+	.macro decor_tilemap tiles, y, x, size
+	.4byte \tiles, \y, \x
+	.byte \size, 0, 0, 0
+	.endm
+
 @ struct WindowTemplate (8 bytes).
 	.macro rodata_window_template bg, left, top, width, height, palette, base_block
 	.byte \bg, \left, \top, \width, \height, \palette

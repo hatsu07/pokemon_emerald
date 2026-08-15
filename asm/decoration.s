@@ -5283,7 +5283,7 @@ _0812922C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08129238: .4byte gDecorationData_08582094
+_08129238: .4byte sDecorTilemaps
 	thumb_func_end sub_081291C8
 
 	thumb_func_start SetDecorSelectionBoxOamAttributes
@@ -5590,7 +5590,7 @@ _08129490:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081294A0: .4byte gDecorationData_08581ACC
+_081294A0: .4byte gDecorIconTable
 	thumb_func_end GetDecorationIconPicOrPalette
 
 	thumb_func_start AddDecorationIconObjectFromEventObject
@@ -5805,7 +5805,7 @@ _0812961C:
 	strh r0, [r5, #0x26]
 	b _081296A4
 	.align 2, 0
-_08129660: .4byte gDecorationData_08581ACC
+_08129660: .4byte gDecorIconTable
 _08129664: .4byte 0x020205AC
 _08129668:
 	strh r7, [r5, #0x26]
