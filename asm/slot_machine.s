@@ -11185,9 +11185,9 @@ _0812F832:
 	bx r0
 	.align 2, 0
 _0812F894: .4byte 0x0203A7A0
-_0812F898: .4byte gSlotMachineData_08585690
+_0812F898: .4byte gSlotMachineDigitalDisplay_Gfx
 _0812F89C: .4byte 0x0203A7A4
-_0812F8A0: .4byte gSlotMachineData_08585DF8
+_0812F8A0: .4byte sReelTimeGfx
 _0812F8A4: .4byte 0x0203A7FC
 _0812F8A8: .4byte sSlotMachineSpriteSheets
 _0812F8AC: .4byte sSlotMachineSpritePalettes
@@ -11275,7 +11275,7 @@ sub_0812F918: @ 0x0812F918
 	bx r0
 	.align 2, 0
 _0812F958: .4byte 0x0203A794
-_0812F95C: .4byte gSlotMachineData_08586F4C
+_0812F95C: .4byte gSlotMachineMenu_Gfx
 _0812F960: .4byte gSlotMachineMenu_Pal
 _0812F964: .4byte sUnkPalette
 	thumb_func_end sub_0812F918

@@ -1686,6 +1686,25 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END TILESET RAW 4BPP FALLBACK PIPELINE
 
+    # BEGIN SLOT MACHINE 4BPP LZ PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/slot_machine/(digital_display|reel_time_gfx|menu)[.]4bpp[.]lz$")
+        set(SLOT_MACHINE_GFX_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/slot_machine/${SLOT_MACHINE_GFX_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}" "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+                "${GBAGFX}"
+            VERBATIM)
+    # END SLOT MACHINE 4BPP LZ PIPELINE
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/analyzed/(.+)\\.4bpp$")
         set(STEM "${CMAKE_MATCH_1}")

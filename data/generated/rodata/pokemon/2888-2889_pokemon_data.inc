@@ -1184,38 +1184,26 @@ sSlotMachineSpritePalettes: @ 0x08585648
 	slot_machine_sprite_palette gSlotMachineMisc_Pal, 0x0007 @ PALTAG_PIKA_AURA
 	slot_machine_sprite_palette 0, 0x0000 @ terminator
 	.purgem slot_machine_sprite_palette
-	@ pret/pokeemerald-jp direct xref for 0x08585690: slot_machine.s: sub_0812F7F4
-	.globl gSlotMachineData_08585690
-gSlotMachineData_08585690:
-	.globl sLz77Block_08585690
-	@ confirmed GBA LZ77 stream: compressed=0x766, decompressed=0x3200
-sLz77Block_08585690:
-	@ analyzed canonical ROM range 0x08585690-0x08585DF7
-	.incbin "build/graphics/analyzed/gunknown_8585690_08585690.4bpp.lz"
-	.if (. - sLz77Block_08585690) != 0x768
-	.error "sLz77Block_08585690 compressed size mismatch"
+	@ Digital Display graphics; LZ77 -> 0x3200 bytes
+	.globl gSlotMachineDigitalDisplay_Gfx
+gSlotMachineDigitalDisplay_Gfx: @ 0x08585690
+	.incbin "build/graphics/slot_machine/digital_display.4bpp.lz"
+	.if (. - gSlotMachineDigitalDisplay_Gfx) != 0x768
+	.error "gSlotMachineDigitalDisplay_Gfx compressed block size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08585DF8: slot_machine.s: sub_0812F7F4
-	.globl gSlotMachineData_08585DF8
-gSlotMachineData_08585DF8:
-	.globl sLz77Block_08585DF8
-	@ confirmed GBA LZ77 stream: compressed=0x1154, decompressed=0x3600
-sLz77Block_08585DF8:
-	@ analyzed canonical ROM range 0x08585DF8-0x08586F4B
-	.incbin "build/graphics/analyzed/gunknown_8585df8_08585df8.4bpp.lz"
-	.if (. - sLz77Block_08585DF8) != 0x1154
-	.error "sLz77Block_08585DF8 compressed size mismatch"
+	@ combined ReelTime graphics; LZ77 -> 0x3600 bytes
+	.globl sReelTimeGfx
+sReelTimeGfx: @ 0x08585DF8
+	.incbin "build/graphics/slot_machine/reel_time_gfx.4bpp.lz"
+	.if (. - sReelTimeGfx) != 0x1154
+	.error "sReelTimeGfx compressed block size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08586F4C: slot_machine.s: sub_0812F918
-	.globl gSlotMachineData_08586F4C
-gSlotMachineData_08586F4C:
-	.globl sLz77Block_08586F4C
-	@ confirmed GBA LZ77 stream: compressed=0xB9D, decompressed=0x1E00
-sLz77Block_08586F4C:
-	@ analyzed canonical ROM range 0x08586F4C-0x08587AEB
-	.incbin "build/graphics/analyzed/gunknown_8586f4c_08586f4c.4bpp.lz"
-	.if (. - sLz77Block_08586F4C) != 0xBA0
-	.error "sLz77Block_08586F4C compressed size mismatch"
+	@ JP slot machine menu graphics; LZ77 -> 0x1E00 bytes
+	.globl gSlotMachineMenu_Gfx
+gSlotMachineMenu_Gfx: @ 0x08586F4C
+	.incbin "build/graphics/slot_machine/menu.4bpp.lz"
+	.if (. - gSlotMachineMenu_Gfx) != 0xBA0
+	.error "gSlotMachineMenu_Gfx compressed block size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08587AEC: slot_machine.s: sub_0812F978
 	.globl gSlotMachineData_08587AEC
