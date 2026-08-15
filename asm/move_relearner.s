@@ -1630,7 +1630,7 @@ _081612F8:
 	bl StartSpriteAnim
 	b _0816133A
 	.align 2, 0
-_08161314: .4byte gCreditsU16Table_Rom_566AE4
+_08161314: .4byte gContestEffects
 _08161318: .4byte gContestMoves
 _0816131C: .4byte 0x0203B900
 _08161320: .4byte 0x020205AC
@@ -1703,7 +1703,7 @@ _08161388:
 	bl StartSpriteAnim
 	b _081613D8
 	.align 2, 0
-_081613AC: .4byte gCreditsU16Table_Rom_566AE4
+_081613AC: .4byte gContestEffects
 _081613B0: .4byte gContestMoves
 _081613B4: .4byte 0x0203B900
 _081613B8: .4byte 0x020205AC

@@ -1395,7 +1395,7 @@ _080E5622:
 	.align 2, 0
 _080E5628: .4byte 0x02039BC6
 _080E562C: .4byte 0x02039BD4
-_080E5630: .4byte gCreditsU16Table_Rom_566AE4
+_080E5630: .4byte gContestEffects
 _080E5634: .4byte gContestMoves
 	thumb_func_end ContestEffect_BetterIfFirst
 
@@ -1440,7 +1440,7 @@ _080E567A:
 	.align 2, 0
 _080E5680: .4byte 0x02039BC6
 _080E5684: .4byte 0x02039BD4
-_080E5688: .4byte gCreditsU16Table_Rom_566AE4
+_080E5688: .4byte gContestEffects
 _080E568C: .4byte gContestMoves
 	thumb_func_end ContestEffect_BetterIfLast
 
@@ -1890,7 +1890,7 @@ _080E59D4:
 	bx r0
 	.align 2, 0
 _080E59E0: .4byte gContestMoves
-_080E59E4: .4byte gCreditsU16Table_Rom_566AE4
+_080E59E4: .4byte gContestEffects
 	thumb_func_end ContestEffect_BetterIfSameType
 
 	thumb_func_start ContestEffect_BetterIfDiffType
@@ -1967,7 +1967,7 @@ _080E5A18:
 	.align 2, 0
 _080E5A74: .4byte 0x02039BD4
 _080E5A78: .4byte gContestMoves
-_080E5A7C: .4byte gCreditsU16Table_Rom_566AE4
+_080E5A7C: .4byte gContestEffects
 _080E5A80:
 	adds r7, #0x1c
 	adds r6, #1

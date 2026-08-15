@@ -533,3 +533,10 @@
 	.byte \combo1, \combo2, \combo3, \combo4
 	.byte 0 @ padding
 	.endm
+
+@ struct ContestEffect (4 bytes in ROM):
+@ u8 effectType, u8 appeal, u8 jam, one padding byte.
+	.macro contest_effect effect_type, appeal, jam
+	.byte \effect_type, \appeal, \jam
+	.byte 0 @ padding
+	.endm

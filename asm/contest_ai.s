@@ -1857,7 +1857,7 @@ ContestAICmd_get_move_effect_type: @ 0x08156F08
 	.align 2, 0
 _08156F40: .4byte 0x02039AA0
 _08156F44: .4byte 0x02039BD4
-_08156F48: .4byte gCreditsU16Table_Rom_566AE4
+_08156F48: .4byte gContestEffects
 _08156F4C: .4byte gContestMoves
 _08156F50: .4byte 0x0203A804
 	thumb_func_end ContestAICmd_get_move_effect_type
@@ -1991,7 +1991,7 @@ _0815702E:
 	.align 2, 0
 _0815703C: .4byte 0x02039AA0
 _08157040: .4byte 0x02039BD4
-_08157044: .4byte gCreditsU16Table_Rom_566AE4
+_08157044: .4byte gContestEffects
 _08157048: .4byte gContestMoves
 _0815704C: .4byte 0x0203A804
 _08157050:
@@ -2105,7 +2105,7 @@ _08157102:
 	.align 2, 0
 _08157110: .4byte 0x02039AA0
 _08157114: .4byte 0x02039BD4
-_08157118: .4byte gCreditsU16Table_Rom_566AE4
+_08157118: .4byte gContestEffects
 _0815711C: .4byte gContestMoves
 _08157120: .4byte 0x0203A804
 _08157124:
@@ -2204,7 +2204,7 @@ ContestAICmd_unk_31: @ 0x08157184
 	.align 2, 0
 _081571CC: .4byte 0x02039AA0
 _081571D0: .4byte 0x02039BD4
-_081571D4: .4byte gCreditsU16Table_Rom_566AE4
+_081571D4: .4byte gContestEffects
 _081571D8: .4byte gContestMoves
 _081571DC: .4byte 0x0203A804
 	thumb_func_end ContestAICmd_unk_31
@@ -2397,7 +2397,7 @@ ContestAICmd_unk_36: @ 0x081572F0
 	.align 2, 0
 _08157338: .4byte 0x02039AA0
 _0815733C: .4byte 0x02039BD4
-_08157340: .4byte gCreditsU16Table_Rom_566AE4
+_08157340: .4byte gContestEffects
 _08157344: .4byte gContestMoves
 _08157348: .4byte 0x0203A804
 	thumb_func_end ContestAICmd_unk_36
@@ -4570,7 +4570,7 @@ ContestAICmd_unk_6D: @ 0x081582A0
 	.align 2, 0
 _081582E4: .4byte 0x0203A804
 _081582E8: .4byte 0x02039BD4
-_081582EC: .4byte gCreditsU16Table_Rom_566AE4
+_081582EC: .4byte gContestEffects
 _081582F0: .4byte gContestMoves
 	thumb_func_end ContestAICmd_unk_6D
 

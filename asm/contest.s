@@ -7333,7 +7333,7 @@ sub_080DAA50: @ 0x080DAA50
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_080DAA78: .4byte gCreditsU16Table_Rom_566AE4
+_080DAA78: .4byte gContestEffects
 _080DAA7C: .4byte gContestMoves
 _080DAA80: .4byte 0x080DAA84
 _080DAA84: @ jump table
@@ -7442,7 +7442,7 @@ _080DAB08:
 	.align 2, 0
 _080DAB54: .4byte gContestMoves
 _080DAB58: .4byte 0x00004040
-_080DAB5C: .4byte gCreditsU16Table_Rom_566AE4
+_080DAB5C: .4byte gContestEffects
 _080DAB60:
 	ldrb r0, [r2, #1]
 	movs r1, #0xa
@@ -7487,7 +7487,7 @@ _080DAB72:
 	.align 2, 0
 _080DABB4: .4byte 0x00005035
 _080DABB8: .4byte 0x00005012
-_080DABBC: .4byte gCreditsU16Table_Rom_566AE4
+_080DABBC: .4byte gContestEffects
 _080DABC0: .4byte gContestMoves
 _080DABC4:
 	ldrb r0, [r1, #2]
@@ -11429,7 +11429,7 @@ _080DC918:
 	b _080DC96A
 	.align 2, 0
 _080DC944: .4byte 0x02039BD4
-_080DC948: .4byte gCreditsU16Table_Rom_566AE4
+_080DC948: .4byte gContestEffects
 _080DC94C: .4byte 0x08566BE4
 _080DC950:
 	ldrb r1, [r2, #0x11]

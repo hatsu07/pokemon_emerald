@@ -5275,7 +5275,7 @@ _081C1D88:
 	.align 2, 0
 _081C1DA4: .4byte 0x0203CBE8
 _081C1DA8: .4byte 0x000038BC
-_081C1DAC: .4byte gCreditsU16Table_Rom_566AE4
+_081C1DAC: .4byte gContestEffects
 _081C1DB0: .4byte gContestMoves
 _081C1DB4: .4byte 0x0000103A
 _081C1DB8:
