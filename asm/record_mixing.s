@@ -1475,7 +1475,7 @@ _080E702E:
 	bls _080E702E
 	b _080E7090
 	.align 2, 0
-_080E703C: .4byte gRecordMixingData_08566CC7
+_080E703C: .4byte sPlayerIdxOrders_2Player
 _080E7040:
 	movs r0, #0
 	bl GetLinkPlayerTrainerId
@@ -1497,7 +1497,7 @@ _080E7058:
 	bls _080E7058
 	b _080E7090
 	.align 2, 0
-_080E7068: .4byte gRecordMixingData_08566CC9
+_080E7068: .4byte sPlayerIdxOrders_3Player
 _080E706C:
 	movs r0, #0
 	bl GetLinkPlayerTrainerId
@@ -1521,7 +1521,7 @@ _080E7090:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E7098: .4byte gRecordMixingData_08566CCF
+_080E7098: .4byte sPlayerIdxOrders_4Player
 	thumb_func_end ShufflePlayerIndices
 
 	thumb_func_start ReceiveOldManData
@@ -2349,7 +2349,7 @@ _080E76AE:
 	bl sub_080E7274
 	b _080E7704
 	.align 2, 0
-_080E76CC: .4byte gRecordMixingData_08566CF3
+_080E76CC: .4byte sDaycareMailSwapIds_3Player
 _080E76D0:
 	add r6, sp, #0x24
 	ldr r4, _080E7744
@@ -2405,7 +2405,7 @@ _080E7704:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E7744: .4byte gRecordMixingData_08566CF9
+_080E7744: .4byte sDaycareMailSwapIds_4Player
 _080E7748: .4byte 0x03005AEC
 _080E774C: .4byte 0x0000310C
 	thumb_func_end ReceiveDaycareMailData

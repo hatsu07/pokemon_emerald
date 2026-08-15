@@ -1,41 +1,46 @@
 	@ pret/pokeemerald-jp direct xref for 0x08566CC7: record_mixing.s: ShufflePlayerIndices
-	.globl gRecordMixingData_08566CC7
-gRecordMixingData_08566CC7: @ 0x08566CC7
-	@ analyzed canonical ROM range 0x08566CC7-0x08566CC8
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	.byte 0x01, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08566CC9: record_mixing.s: ShufflePlayerIndices
-	.globl gRecordMixingData_08566CC9
-gRecordMixingData_08566CC9: @ 0x08566CC9
-	@ analyzed canonical ROM range 0x08566CC9-0x08566CCE
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x6
-	.byte 0x01, 0x02, 0x00, 0x02, 0x00, 0x01
-	@ pret/pokeemerald-jp direct xref for 0x08566CCF: record_mixing.s: ShufflePlayerIndices
-	.globl gRecordMixingData_08566CCF
-gRecordMixingData_08566CCF: @ 0x08566CCF
-	@ analyzed canonical ROM range 0x08566CCF-0x08566CF2
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x24
-	.2byte 0x0001, 0x0203, 0x0003, 0x0201, 0x0002, 0x0103, 0x0301, 0x0200
-	.2byte 0x0302, 0x0100, 0x0203, 0x0100, 0x0201, 0x0003, 0x0302, 0x0001
-	.2byte 0x0203, 0x0001
-	@ pret/pokeemerald-jp direct xref for 0x08566CF3: record_mixing.s: ReceiveDaycareMailData
-	.globl gRecordMixingData_08566CF3
-gRecordMixingData_08566CF3: @ 0x08566CF3
-	@ analyzed canonical ROM range 0x08566CF3-0x08566CF8
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x6
-	.byte 0x00, 0x01, 0x01, 0x02, 0x02, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08566CF9: record_mixing.s: ReceiveDaycareMailData
-	.globl gRecordMixingData_08566CF9
-gRecordMixingData_08566CF9: @ 0x08566CF9
-	@ analyzed canonical ROM range 0x08566CF9-0x08566D07
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0xF
-	.byte 0x00, 0x01, 0x02, 0x03, 0x00, 0x02, 0x01, 0x03, 0x00, 0x03, 0x02, 0x01, 0x00, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08566D08: record_mixing.s: sub_080E8320, sub_080E89EC, sub_080E9410
+	@ Player index shuffle orders used by ShufflePlayerIndices.
+	.globl sPlayerIdxOrders_2Player
+sPlayerIdxOrders_2Player: @ 0x08566CC7
+	.byte 1, 0
+
+	.globl sPlayerIdxOrders_3Player
+sPlayerIdxOrders_3Player: @ 0x08566CC9
+	.byte 1, 2, 0
+	.byte 2, 0, 1
+
+	.globl sPlayerIdxOrders_4Player
+sPlayerIdxOrders_4Player: @ 0x08566CCF
+	.byte 1, 0, 3, 2
+	.byte 3, 0, 1, 2
+	.byte 2, 0, 3, 1
+	.byte 1, 3, 0, 2
+	.byte 2, 3, 0, 1
+	.byte 3, 2, 0, 1
+	.byte 1, 2, 3, 0
+	.byte 2, 3, 1, 0
+	.byte 3, 2, 1, 0
+
+	@ Daycare mail swap pairings selected during record mixing.
+	.globl sDaycareMailSwapIds_3Player
+sDaycareMailSwapIds_3Player: @ 0x08566CF3
+	.byte 0, 1
+	.byte 1, 2
+	.byte 2, 0
+
+	.globl sDaycareMailSwapIds_4Player
+sDaycareMailSwapIds_4Player: @ 0x08566CF9
+	.byte 0, 1, 2, 3 @ 0 swaps with 1; 2 swaps with 3
+	.byte 0, 2, 1, 3
+	.byte 0, 3, 2, 1
+
+	.if (. - sDaycareMailSwapIds_4Player) != 12
+	.error "4-player daycare mail swap table size mismatch"
+	.endif
+
+	@ Align the following 32-bit record-mixing data to its original address 0x08566D08.
+	.balign 4, 0
+
 	.globl gRecordMixingData_08566D08
 gRecordMixingData_08566D08: @ 0x08566D08
 	@ analyzed canonical ROM range 0x08566D08-0x08566D0B
