@@ -979,22 +979,38 @@ sSubspriteTables_DigitalDisplay: @ 0x08585250
 	.4byte sSubspriteTable_DigitalDisplay_RegG @ DIG_SPRITE_REG_G
 	.4byte 0 @ DIG_SPRITE_EMPTY
 	@ pret/pokeemerald-jp direct xref for 0x085852B8: slot_machine.s: sub_0812F7F4
-	.globl gSlotMachineData_085852B8
-gSlotMachineData_085852B8: @ 0x085852B8
-	@ analyzed canonical ROM range 0x085852B8-0x08585367
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xB0
-	.2byte 0x2308, 0x0858, 0x0200, 0x0000, 0x2508, 0x0858, 0x0200, 0x0001
-	.2byte 0x2708, 0x0858, 0x0200, 0x0002, 0x2908, 0x0858, 0x0200, 0x0003
-	.2byte 0x2B08, 0x0858, 0x0200, 0x0004, 0x2D08, 0x0858, 0x0200, 0x0005
-	.2byte 0x2F08, 0x0858, 0x0200, 0x0006, 0x3108, 0x0858, 0x0040, 0x0007
-	.2byte 0x3148, 0x0858, 0x0040, 0x0008, 0x3188, 0x0858, 0x0040, 0x0009
-	.2byte 0x31C8, 0x0858, 0x0040, 0x000A, 0x3208, 0x0858, 0x0040, 0x000B
-	.2byte 0x3248, 0x0858, 0x0040, 0x000C, 0x3288, 0x0858, 0x0040, 0x000D
-	.2byte 0x32C8, 0x0858, 0x0040, 0x000E, 0x3308, 0x0858, 0x0040, 0x000F
-	.2byte 0x3348, 0x0858, 0x0040, 0x0010, 0x0000, 0x0000, 0x0200, 0x0012
-	.2byte 0x0000, 0x0000, 0x0200, 0x0013, 0x0000, 0x0000, 0x0300, 0x0014
-	.2byte 0x0000, 0x0000, 0x0300, 0x0015, 0x0000, 0x0000, 0x0000, 0x0000
+	.macro slot_machine_sprite_sheet data:req, size:req, tag:req
+	.4byte \data
+	.2byte \size, \tag
+	.endm
+
+	.globl sSlotMachineSpriteSheets
+sSlotMachineSpriteSheets: @ 0x085852B8
+	@ struct SpriteSheet { const void *data; u16 size; u16 tag; }
+	@ 17 static graphics, 4 runtime-populated sheets, 1 zero terminator
+	slot_machine_sprite_sheet gSlotMachineReelSymbol1Tiles, 0x0200, 0x0000 @ GFXTAG_7_RED
+	slot_machine_sprite_sheet gSlotMachineReelSymbol2Tiles, 0x0200, 0x0001 @ GFXTAG_7_BLUE
+	slot_machine_sprite_sheet gSlotMachineReelSymbol3Tiles, 0x0200, 0x0002 @ GFXTAG_AZURILL
+	slot_machine_sprite_sheet gSlotMachineReelSymbol4Tiles, 0x0200, 0x0003 @ GFXTAG_LOTAD
+	slot_machine_sprite_sheet gSlotMachineReelSymbol5Tiles, 0x0200, 0x0004 @ GFXTAG_CHERRY
+	slot_machine_sprite_sheet gSlotMachineReelSymbol6Tiles, 0x0200, 0x0005 @ GFXTAG_POWER
+	slot_machine_sprite_sheet gSlotMachineReelSymbol7Tiles, 0x0200, 0x0006 @ GFXTAG_REPLAY
+	slot_machine_sprite_sheet gSlotMachineNumber0Tiles, 0x0040, 0x0007 @ GFXTAG_NUM_0
+	slot_machine_sprite_sheet gSlotMachineNumber1Tiles, 0x0040, 0x0008 @ GFXTAG_NUM_1
+	slot_machine_sprite_sheet gSlotMachineNumber2Tiles, 0x0040, 0x0009 @ GFXTAG_NUM_2
+	slot_machine_sprite_sheet gSlotMachineNumber3Tiles, 0x0040, 0x000A @ GFXTAG_NUM_3
+	slot_machine_sprite_sheet gSlotMachineNumber4Tiles, 0x0040, 0x000B @ GFXTAG_NUM_4
+	slot_machine_sprite_sheet gSlotMachineNumber5Tiles, 0x0040, 0x000C @ GFXTAG_NUM_5
+	slot_machine_sprite_sheet gSlotMachineNumber6Tiles, 0x0040, 0x000D @ GFXTAG_NUM_6
+	slot_machine_sprite_sheet gSlotMachineNumber7Tiles, 0x0040, 0x000E @ GFXTAG_NUM_7
+	slot_machine_sprite_sheet gSlotMachineNumber8Tiles, 0x0040, 0x000F @ GFXTAG_NUM_8
+	slot_machine_sprite_sheet gSlotMachineNumber9Tiles, 0x0040, 0x0010 @ GFXTAG_NUM_9
+	slot_machine_sprite_sheet 0, 0x0200, 0x0012 @ GFXTAG_STOP
+	slot_machine_sprite_sheet 0, 0x0200, 0x0013 @ GFXTAG_BONUS
+	slot_machine_sprite_sheet 0, 0x0300, 0x0014 @ GFXTAG_BIG
+	slot_machine_sprite_sheet 0, 0x0300, 0x0015 @ GFXTAG_REG
+	slot_machine_sprite_sheet 0, 0x0000, 0x0000 @ terminator
+	.purgem slot_machine_sprite_sheet
 	@ pret/pokeemerald-jp direct xref for 0x08585368: slot_machine.s: sub_0812F8B0
 	.globl gSlotMachineData_08585368
 gSlotMachineData_08585368: @ 0x08585368

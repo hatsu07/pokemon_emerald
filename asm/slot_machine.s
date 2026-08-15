@@ -11189,7 +11189,7 @@ _0812F898: .4byte gSlotMachineData_08585690
 _0812F89C: .4byte 0x0203A7A4
 _0812F8A0: .4byte gSlotMachineData_08585DF8
 _0812F8A4: .4byte 0x0203A7FC
-_0812F8A8: .4byte gSlotMachineData_085852B8
+_0812F8A8: .4byte sSlotMachineSpriteSheets
 _0812F8AC: .4byte gSlotMachineData_08585648
 	thumb_func_end sub_0812F7F4
 
