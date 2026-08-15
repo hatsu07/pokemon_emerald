@@ -524,3 +524,110 @@ sAffineAnims_GameFreak: @ 0x085C5FEC
 .if (. - sAnims_PlayerBicycle) != 0x184
 .error "Intro logo metadata 0x085C5E78-0x085C5FFB size mismatch"
 .endif
+
+@ ----------------------------------------------------------------------
+@ Remaining Part 1 intro metadata: GAME FREAK / PRESENTS templates,
+@ Flygon silhouette, and Rayquaza glow scene support data.
+@ ROM 0x085C5FFC-0x085C611B.
+
+.set INTRO_TAG_PART1_SPRITES,        2000
+.set INTRO_TAG_PART1_PALETTE,        2001
+.set INTRO_TAG_FLYGON_SILHOUETTE,    2002
+.set INTRO_TAG_RAYQUAZA_ORB,        2003
+
+.globl gIntroFlygonSilhouette_Gfx
+.set gIntroFlygonSilhouette_Gfx, gLz77Asset_08D8D114
+
+.globl sGameFreakLettersMoveSpeed
+sGameFreakLettersMoveSpeed: @ 0x085C5FFC
+	@ Fixed-point move speed for G A M E F R E A K.
+	.2byte 0x0100, 0x00C0, 0x0080, 0x0040, 0x0000
+	.2byte 0x0040, 0x0080, 0x00C0, 0x0100
+	.2byte 0x0000 @ alignment
+
+.globl sSpriteTemplate_GameFreakLetter
+sSpriteTemplate_GameFreakLetter: @ 0x085C6010
+	@ GAME FREAK letter sprites
+	rodata_sprite_template INTRO_TAG_PART1_SPRITES, INTRO_TAG_PART1_PALETTE, sOamData_GameFreakLetter, sAnims_GameFreakLetter, 0, sAffineAnims_GameFreak, sub_0816F91C
+
+.globl sSpriteTemplate_PresentsLetter
+sSpriteTemplate_PresentsLetter: @ 0x085C6028
+	@ PRESENTS letter sprites
+	rodata_sprite_template INTRO_TAG_PART1_SPRITES, INTRO_TAG_PART1_PALETTE, sOamData_PresentsLetter, sAnims_PresentsLetter, 0, gDummySpriteAffineAnimTable, sub_0816F91C
+
+.globl sSpriteTemplate_GameFreakLogo
+sSpriteTemplate_GameFreakLogo: @ 0x085C6040
+	rodata_sprite_template INTRO_TAG_PART1_SPRITES, INTRO_TAG_PART1_PALETTE, sOamData_GameFreakLogo, sAnims_GameFreakLogo, 0, sAffineAnims_GameFreak, sub_0816FB3C
+
+.globl sGameFreakLetterStartDelays
+sGameFreakLetterStartDelays: @ 0x085C6058
+	@ 9 letters in "GAME FREAK".
+	.byte 0x00, 0x17, 0x17, 0x31, 0x3E, 0x24, 0x24, 0x0A, 0x0A
+	.byte 0x00, 0x00, 0x00 @ alignment
+
+sOamData_FlygonSilhouette: @ 0x085C6064
+	@ DISPLAY_HEIGHT, affine off, normal, 4bpp, horizontal 64x32.
+	rodata_sprite_oam_data 160, 0, 0, 0, 0, 1, 0, 0, 3, 0, 0, 0, 0
+
+sAnim_FlygonSilhouette: @ 0x085C606C
+	rodata_anim_frame 0, 10
+	rodata_anim_jump 0
+
+sAnims_FlygonSilhouette: @ 0x085C6074
+	.4byte sAnim_FlygonSilhouette
+
+.globl sSpriteTemplate_FlygonSilhouette
+sSpriteTemplate_FlygonSilhouette: @ 0x085C6078
+	rodata_sprite_template INTRO_TAG_FLYGON_SILHOUETTE, INTRO_TAG_FLYGON_SILHOUETTE, sOamData_FlygonSilhouette, sAnims_FlygonSilhouette, 0, gDummySpriteAffineAnimTable, sub_0816FCD4
+
+.globl sSpriteSheet_WaterDropsAndLogo
+sSpriteSheet_WaterDropsAndLogo: @ 0x085C6090
+	rodata_compressed_sprite_sheet gIntroDropsLogo_Gfx, 0x1400, INTRO_TAG_PART1_SPRITES
+	rodata_compressed_sprite_sheet 0, 0, 0
+
+.globl sSpriteSheet_FlygonSilhouette
+sSpriteSheet_FlygonSilhouette: @ 0x085C60A0
+	rodata_compressed_sprite_sheet gIntroFlygonSilhouette_Gfx, 0x0400, INTRO_TAG_FLYGON_SILHOUETTE
+	rodata_compressed_sprite_sheet 0, 0, 0
+
+.globl sSpritePalettes_Intro1
+sSpritePalettes_Intro1: @ 0x085C60B0
+	.4byte gIntroDrops_Pal
+	.2byte INTRO_TAG_PART1_SPRITES, 0
+	.4byte gIntroLogo_Pal
+	.2byte INTRO_TAG_PART1_PALETTE, 0
+	.4byte gIntroFlygonSilhouette_Pal
+	.2byte INTRO_TAG_FLYGON_SILHOUETTE, 0
+	.4byte 0
+	.2byte 0, 0
+
+sOamData_RayquazaOrb: @ 0x085C60D0
+	@ DISPLAY_HEIGHT, affine off, normal, 4bpp, square 64x64.
+	rodata_sprite_oam_data 160, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0
+
+sAnim_RayquazaOrb: @ 0x085C60D8
+	rodata_anim_frame 16, 8
+	rodata_anim_end
+
+sAnims_RayquazaOrb: @ 0x085C60E0
+	.4byte sAnim_RayquazaOrb
+
+.globl sSpriteTemplate_RayquazaOrb
+sSpriteTemplate_RayquazaOrb: @ 0x085C60E4
+	rodata_sprite_template INTRO_TAG_RAYQUAZA_ORB, INTRO_TAG_RAYQUAZA_ORB, sOamData_RayquazaOrb, sAnims_RayquazaOrb, 0, gDummySpriteAffineAnimTable, SpriteCB_IntroRayquazaHyperbeam
+
+.globl sSpriteSheet_RayquazaOrb
+sSpriteSheet_RayquazaOrb: @ 0x085C60FC
+	rodata_compressed_sprite_sheet gIntroMisc_Gfx, 0x0A00, INTRO_TAG_RAYQUAZA_ORB
+	rodata_compressed_sprite_sheet 0, 0, 0
+
+.globl sSpritePalette_RayquazaOrb
+sSpritePalette_RayquazaOrb: @ 0x085C610C
+	.4byte gIntroRayquazaOrb_Pal
+	.2byte INTRO_TAG_RAYQUAZA_ORB, 0
+	.4byte 0
+	.2byte 0, 0
+
+.if (. - sGameFreakLettersMoveSpeed) != 0x120
+.error "Intro part1 remaining metadata 0x085C5FFC-0x085C611B size mismatch"
+.endif

@@ -558,9 +558,9 @@ _0816CEE0: .4byte gIntro1Bg_Pal
 _0816CEE4: .4byte 0x00009603
 _0816CEE8: .4byte 0x00009402
 _0816CEEC: .4byte 0x00009201
-_0816CEF0: .4byte gIntroData_085C6090
-_0816CEF4: .4byte gIntroData_085C60A0
-_0816CEF8: .4byte gIntroData_085C60B0
+_0816CEF0: .4byte sSpriteSheet_WaterDropsAndLogo
+_0816CEF4: .4byte sSpriteSheet_FlygonSilhouette
+_0816CEF8: .4byte sSpritePalettes_Intro1
 _0816CEFC: .4byte sSpriteSheet_Sparkle
 _0816CF00: .4byte sSpritePalette_Sparkle
 _0816CF04: .4byte 0x020375B4
@@ -934,7 +934,7 @@ _0816D1E4: .4byte 0x03005B60
 _0816D1E8: .4byte 0xFFFFA000
 _0816D1EC: .4byte 0xFFFF8000
 _0816D1F0: .4byte 0xFFFF4000
-_0816D1F4: .4byte gIntroData_085C6078
+_0816D1F4: .4byte sSpriteTemplate_FlygonSilhouette
 _0816D1F8: .4byte 0x020205AC
 _0816D1FC:
 	ldr r0, _0816D22C
@@ -4096,8 +4096,8 @@ Task_IntroLoadRayquazaGlowScene: @ 0x0816EB04
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816EB74: .4byte gIntroData_085C60FC
-_0816EB78: .4byte gIntroData_085C610C
+_0816EB74: .4byte sSpriteSheet_RayquazaOrb
+_0816EB78: .4byte sSpritePalette_RayquazaOrb
 _0816EB7C: .4byte 0x03005B60
 _0816EB80: .4byte 0x0816EB99
 _0816EB84: .4byte 0x0000FFDE
@@ -4409,7 +4409,7 @@ _0816ED9A:
 	.align 2, 0
 _0816EDD8: .4byte gIntroData_08D85E36
 _0816EDDC: .4byte 0x0203786C
-_0816EDE0: .4byte gIntroData_085C60E4
+_0816EDE0: .4byte sSpriteTemplate_RayquazaOrb
 _0816EDE4: .4byte 0x020205AC
 _0816EDE8:
 	subs r0, r1, #1
@@ -6127,7 +6127,7 @@ _0816FB30:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816FB38: .4byte gIntroData_085C5FFC
+_0816FB38: .4byte sGameFreakLettersMoveSpeed
 	thumb_func_end sub_0816F91C
 
 	thumb_func_start sub_0816FB3C
@@ -6330,10 +6330,10 @@ _0816FBCA:
 	.align 2, 0
 _0816FCBC: .4byte sGameFreakLetterData
 _0816FCC0: .4byte 0xFFFC0000
-_0816FCC4: .4byte gIntroData_085C6010
+_0816FCC4: .4byte sSpriteTemplate_GameFreakLetter
 _0816FCC8: .4byte 0x020205AC
-_0816FCCC: .4byte gIntroData_085C6058
-_0816FCD0: .4byte gIntroData_085C6040
+_0816FCCC: .4byte sGameFreakLetterStartDelays
+_0816FCD0: .4byte sSpriteTemplate_GameFreakLogo
 	thumb_func_end CreatePart1Animations
 
 	thumb_func_start sub_0816FCD4
