@@ -41,21 +41,27 @@ sDaycareMailSwapIds_4Player: @ 0x08566CF9
 	@ Align the following 32-bit record-mixing data to its original address 0x08566D08.
 	.balign 4, 0
 
-	.globl gRecordMixingData_08566D08
-gRecordMixingData_08566D08: @ 0x08566D08
-	@ analyzed canonical ROM range 0x08566D08-0x08566D0B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.byte 0xF0, 0x01, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08566D0C: record_mixing.s: sub_080E8320, sub_080E9410
-	.globl gRecordMixingData_08566D0C
-gRecordMixingData_08566D0C: @ 0x08566D0C
-	@ analyzed canonical ROM range 0x08566D0C-0x08566D2B
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	.2byte 0x0100, 0x1C01, 0x0F04, 0x0014, 0x0100, 0x1C08, 0x0F04, 0x0084
-	.2byte 0x0100, 0x1C0F, 0x0F04, 0x00F4, 0x00FF, 0x0000, 0x0000, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x08566D2C: record_mixing.s: SanitizeDayCareMailForRuby
+	@ JP sound-driver-test background template.
+	.globl sSoundDriverTestBgTemplate
+sSoundDriverTestBgTemplate: @ 0x08566D08
+	bg_template 0, 0, 31, 0, 0, 0, 0
+
+	.if (. - sSoundDriverTestBgTemplate) != 4
+	.error "sound driver test BgTemplate size mismatch"
+	.endif
+
+	@ Three stacked sound-driver-test menu windows plus the dummy terminator.
+	.globl sSoundDriverTestWindowTemplates
+sSoundDriverTestWindowTemplates: @ 0x08566D0C
+	rodata_window_template 0, 1, 1, 28, 4, 15, 0x0014
+	rodata_window_template 0, 1, 8, 28, 4, 15, 0x0084
+	rodata_window_template 0, 1, 15, 28, 4, 15, 0x00F4
+	rodata_window_template 0xFF, 0, 0, 0, 0, 0, 0
+
+	.if (. - sSoundDriverTestWindowTemplates) != (4 * 8)
+	.error "sound driver test WindowTemplate table size mismatch"
+	.endif
+
 	.globl gRecordMixingData_08566D2C
 gRecordMixingData_08566D2C: @ 0x08566D2C
 	@ analyzed canonical ROM range 0x08566D2C-0x08566D3D

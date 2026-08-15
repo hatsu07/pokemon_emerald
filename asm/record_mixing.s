@@ -4005,7 +4005,7 @@ _080E8386:
 	adds r1, r1, r0
 	b _080E8400
 	.align 2, 0
-_080E83A4: .4byte gRecordMixingData_08566D08
+_080E83A4: .4byte sSoundDriverTestBgTemplate
 _080E83A8: .4byte 0x03002360
 _080E83AC:
 	movs r0, #0x87
@@ -4032,7 +4032,7 @@ _080E83C8:
 	adds r1, r1, r0
 	b _080E8400
 	.align 2, 0
-_080E83E0: .4byte gRecordMixingData_08566D0C
+_080E83E0: .4byte sSoundDriverTestWindowTemplates
 _080E83E4: .4byte 0x03002360
 _080E83E8:
 	movs r0, #1
@@ -4835,7 +4835,7 @@ _080E8A1C:
 	bl InitBgsFromTemplates
 	b _080E8A62
 	.align 2, 0
-_080E8A44: .4byte gRecordMixingData_08566D08
+_080E8A44: .4byte sSoundDriverTestBgTemplate
 _080E8A48:
 	bl IsDma3ManagerBusyWithBgCopy
 	lsls r0, r0, #0x18
@@ -4853,7 +4853,7 @@ _080E8A62:
 	strh r0, [r5, #0x26]
 	b _080E8A94
 	.align 2, 0
-_080E8A6C: .4byte gRecordMixingData_08566D64
+_080E8A6C: .4byte sSoundDriverTestLargeWindowTemplates
 _080E8A70:
 	movs r0, #0
 	bl ShowBg
@@ -6062,7 +6062,7 @@ _080E943E:
 	bl InitBgsFromTemplates
 	b _080E9472
 	.align 2, 0
-_080E945C: .4byte gRecordMixingData_08566D08
+_080E945C: .4byte sSoundDriverTestBgTemplate
 _080E9460:
 	bl IsDma3ManagerBusyWithBgCopy
 	lsls r0, r0, #0x18
@@ -6077,7 +6077,7 @@ _080E9472:
 	strh r0, [r4, #0x26]
 	b _080E94A2
 	.align 2, 0
-_080E947C: .4byte gRecordMixingData_08566D0C
+_080E947C: .4byte sSoundDriverTestWindowTemplates
 _080E9480:
 	movs r0, #0
 	bl ShowBg

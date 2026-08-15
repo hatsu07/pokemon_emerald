@@ -18,13 +18,16 @@ gText_Rom_566D56: @ 0x08566D56
 	@ Decoded text from ROM range: offset=0x566D56, size=0xE
 	.string "R…DRIVERーTEST$"
 	@ pret/pokeemerald-jp direct xref for 0x08566D64: record_mixing.s: sub_080E89EC
-	.globl gRecordMixingData_08566D64
-gRecordMixingData_08566D64: @ 0x08566D64
-	@ analyzed canonical ROM range 0x08566D64-0x08566D73
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.2byte 0x0100, 0x1C01, 0x0F12, 0x0014, 0x00FF, 0x0000, 0x0000, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x08566D74: record_mixing.s: sub_080E8AA0
+	@ Large sound-driver-test window plus the dummy terminator.
+	.globl sSoundDriverTestLargeWindowTemplates
+sSoundDriverTestLargeWindowTemplates: @ 0x08566D64
+	rodata_window_template 0, 1, 1, 28, 18, 15, 0x0014
+	rodata_window_template 0xFF, 0, 0, 0, 0, 0, 0
+
+	.if (. - sSoundDriverTestLargeWindowTemplates) != (2 * 8)
+	.error "sound driver test large WindowTemplate table size mismatch"
+	.endif
+
 	.globl gRecordMixingData_08566D74
 gRecordMixingData_08566D74: @ 0x08566D74
 	@ analyzed canonical ROM range 0x08566D74-0x08566D79
