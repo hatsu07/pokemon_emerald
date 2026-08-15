@@ -2648,7 +2648,7 @@ _0816DF80:
 	bx r0
 	.align 2, 0
 _0816DFCC: .4byte 0x020205AC
-_0816DFD0: .4byte gIntroData_085C5D18
+_0816DFD0: .4byte sGroudonRockData
 _0816DFD4: .4byte gIntroData_085727F4
 _0816DFD8: .4byte 0x0816DFDD
 	thumb_func_end CreateGroudonRockSprites
@@ -2718,7 +2718,7 @@ _0816E006:
 	strh r0, [r3, #0x2e]
 	b _0816E080
 	.align 2, 0
-_0816E054: .4byte gIntroData_085C5D18
+_0816E054: .4byte sGroudonRockData
 _0816E058: .4byte 0x03005B60
 _0816E05C:
 	ldrh r1, [r3, #0x20]
@@ -2819,8 +2819,8 @@ _0816E118: .4byte gIntroData_08D89AA0
 _0816E11C: .4byte 0x0600C000
 _0816E120: .4byte gIntroData_08D8A918
 _0816E124: .4byte 0x0600E000
-_0816E128: .4byte gIntroData_085C5D3C
-_0816E12C: .4byte gIntroData_085C5D4C
+_0816E128: .4byte sSpriteSheet_Bubbles
+_0816E12C: .4byte sSpritePalette_Bubbles
 _0816E130: .4byte 0x0000FFFF
 _0816E134: .4byte 0x03005B60
 _0816E138: .4byte 0x0816E13D
@@ -3319,9 +3319,9 @@ _0816E4D2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816E524: .4byte gIntroData_085C5D5C
+_0816E524: .4byte sKyogreBubbleData
 _0816E528: .4byte 0x020205AC
-_0816E52C: .4byte gIntroData_085C5DC8
+_0816E52C: .4byte sSpriteTemplate_Bubbles
 	thumb_func_end CreateKyogreBubbleSprites_0
 
 	thumb_func_start CreateKyogreBubbleSprites_1
@@ -3373,9 +3373,9 @@ _0816E542:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816E58C: .4byte gIntroData_085C5D5C
+_0816E58C: .4byte sKyogreBubbleData
 _0816E590: .4byte 0x020205AC
-_0816E594: .4byte gIntroData_085C5DC8
+_0816E594: .4byte sSpriteTemplate_Bubbles
 	thumb_func_end CreateKyogreBubbleSprites_1
 
 	thumb_func_start SpriteCB_IntroKyogreBubbles
@@ -5522,7 +5522,7 @@ CreateWaterDrop: @ 0x0816F5B4
 	ldr r1, _0816F678
 	b _0816F684
 	.align 2, 0
-_0816F670: .4byte gIntroData_085C5E18
+_0816F670: .4byte sSpriteTemplate_WaterDrop
 _0816F674: .4byte 0x020205AC
 _0816F678: .4byte 0x0816F239
 _0816F67C:
@@ -5669,7 +5669,7 @@ _0816F684:
 	bx r1
 	.align 2, 0
 _0816F7A4: .4byte 0x0816F535
-_0816F7A8: .4byte gIntroData_085C5E18
+_0816F7A8: .4byte sSpriteTemplate_WaterDrop
 _0816F7AC: .4byte 0x020205AC
 _0816F7B0: .4byte 0x020205C8
 _0816F7B4: .4byte 0x0816F189

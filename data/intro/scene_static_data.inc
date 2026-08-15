@@ -6,6 +6,7 @@
 .set INTRO_TAG_TORCHIC,   1501
 .set INTRO_TAG_MANECTRIC, 1502
 .set INTRO_TAG_LIGHTNING, 1503
+.set INTRO_TAG_BUBBLES,   1504
 .set INTRO_TAG_SPARKLE,   1505
 
 @ Semantic aliases for already-owned graphics/palette storage.
@@ -215,4 +216,135 @@ sSpriteTemplate_Lightning: @ 0x085C5D00
 
 .if (. - sUnusedData) != 0x22C
 .error "Intro scene static data 0x085C5AEC-0x085C5D17 size mismatch"
+.endif
+
+
+@ ----------------------------------------------------------------------
+@ Groudon rocks, Kyogre bubbles, water-drop sprite data and bike anims.
+@ ROM 0x085C5D18-0x085C5E77.
+
+.globl gIntroBubbles_Gfx
+.set gIntroBubbles_Gfx, gLz77Asset_08D8CF28
+
+.globl gIntroBubbles_Pal
+.set gIntroBubbles_Pal, gLz77Asset_08D8D114 - 0x20
+
+.globl sGroudonRockData
+sGroudonRockData: @ 0x085C5D18
+	@ x, animation index, speed
+	.2byte 104, 0, 0x0C0
+	.2byte 142, 3, 0x280
+	.2byte 83, 1, 0x180
+	.2byte 155, 0, 0x080
+	.2byte 56, 2, 0x200
+	.2byte 174, 1, 0x100
+
+.globl sSpriteSheet_Bubbles
+sSpriteSheet_Bubbles: @ 0x085C5D3C
+	rodata_compressed_sprite_sheet gIntroBubbles_Gfx, 0x0600, INTRO_TAG_BUBBLES
+	rodata_compressed_sprite_sheet 0, 0, 0
+
+.globl sSpritePalette_Bubbles
+sSpritePalette_Bubbles: @ 0x085C5D4C
+	.4byte gIntroBubbles_Pal
+	.2byte INTRO_TAG_BUBBLES, 0
+	.4byte 0
+	.2byte 0, 0
+
+.globl sKyogreBubbleData
+sKyogreBubbleData: @ 0x085C5D5C
+	@ Set 1: Kyogre body. x, y, delay.
+	.2byte 66, 64, 1
+	.2byte 96, 96, 8
+	.2byte 128, 64, 1
+	.2byte 144, 48, 8
+	.2byte 160, 72, 1
+	.2byte 176, 96, 8
+	@ Set 2: Kyogre fins.
+	.2byte 96, 96, 4
+	.2byte 112, 104, 8
+	.2byte 128, 96, 4
+	.2byte 88, 32, 4
+	.2byte 104, 24, 8
+	.2byte 120, 32, 4
+
+sOamData_Bubbles: @ 0x085C5DA4
+	@ DISPLAY_HEIGHT, affine off, normal, 4bpp, vertical 16x32, priority 0.
+	rodata_sprite_oam_data 160, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0
+
+sAnim_Bubbles: @ 0x085C5DAC
+	rodata_anim_frame 0, 4
+	rodata_anim_frame 8, 4
+	rodata_anim_frame 16, 4
+	rodata_anim_frame 24, 4
+	rodata_anim_frame 32, 4
+	rodata_anim_end
+
+sAnims_Bubbles: @ 0x085C5DC4
+	.4byte sAnim_Bubbles
+
+.globl sSpriteTemplate_Bubbles
+sSpriteTemplate_Bubbles: @ 0x085C5DC8
+	rodata_sprite_template INTRO_TAG_BUBBLES, INTRO_TAG_BUBBLES, sOamData_Bubbles, sAnims_Bubbles, 0, gDummySpriteAffineAnimTable, SpriteCB_IntroKyogreBubbles
+
+sOamData_WaterDrop: @ 0x085C5DE0
+	@ DISPLAY_HEIGHT, affine off, normal, 4bpp, square 32x32, priority 0.
+	rodata_sprite_oam_data 160, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0
+
+sAnim_WaterDrop_UpperHalf: @ 0x085C5DE8
+	rodata_anim_frame 16, 8
+	rodata_anim_end
+
+sAnim_WaterDrop_LowerHalf: @ 0x085C5DF0
+	rodata_anim_frame 24, 8
+	rodata_anim_end
+
+sAnim_WaterDrop_Reflection: @ 0x085C5DF8
+	rodata_anim_frame 0, 8
+	rodata_anim_end
+
+sAnim_WaterDrop_Ripple: @ 0x085C5E00
+	rodata_anim_frame 48, 8
+	rodata_anim_end
+
+sAnims_WaterDrop: @ 0x085C5E08
+	.4byte sAnim_WaterDrop_UpperHalf
+	.4byte sAnim_WaterDrop_LowerHalf
+	.4byte sAnim_WaterDrop_Reflection
+	.4byte sAnim_WaterDrop_Ripple
+
+.globl sSpriteTemplate_WaterDrop
+sSpriteTemplate_WaterDrop: @ 0x085C5E18
+	@ Tags 2000 are the already-proven drops/logo graphics and drops palette.
+	@ callback is upstream SpriteCB_WaterDrop.
+	rodata_sprite_template 2000, 2000, sOamData_WaterDrop, sAnims_WaterDrop, 0, gDummySpriteAffineAnimTable, sub_0816F238
+
+sAnim_PlayerBicycle_Fast: @ 0x085C5E30
+	rodata_anim_frame 0, 4
+	rodata_anim_frame 64, 4
+	rodata_anim_frame 128, 4
+	rodata_anim_frame 192, 4
+	rodata_anim_jump 0
+
+sAnim_PlayerBicycle_Slow: @ 0x085C5E44
+	rodata_anim_frame 0, 8
+	rodata_anim_frame 64, 8
+	rodata_anim_frame 128, 8
+	rodata_anim_frame 192, 8
+	rodata_anim_jump 0
+
+sAnim_PlayerBicycle_LookBack: @ 0x085C5E58
+	rodata_anim_frame 256, 4
+	rodata_anim_frame 320, 4
+	rodata_anim_frame 384, 4
+	rodata_anim_end
+
+sAnim_PlayerBicycle_LookForward: @ 0x085C5E68
+	rodata_anim_frame 384, 16
+	rodata_anim_frame 320, 16
+	rodata_anim_frame 256, 16
+	rodata_anim_end
+
+.if (. - sGroudonRockData) != 0x160
+.error "Intro Groudon/Bubbles/WaterDrop data 0x085C5D18-0x085C5E77 size mismatch"
 .endif
