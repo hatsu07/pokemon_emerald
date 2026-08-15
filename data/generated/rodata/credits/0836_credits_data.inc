@@ -793,54 +793,59 @@ gComboStarterLookupTable: @ 0x08566BA4
 	.if (. - gComboStarterLookupTable) != 64
 	.error "combo starter lookup table size mismatch"
 	.endif
-	.globl gCreditsU32Table_Rom_566BE4
-gCreditsU32Table_Rom_566BE4: @ 0x08566BE4
-	.4byte ContestEffect_MakeScramblingTurnOrderEasier
-	.4byte ContestEffect_UserMoreEasilyStartled
-	.4byte ContestEffect_GreatAppealButNoMoreMoves
-	.4byte ContestEffect_RepetitionNotBoring
-	.4byte ContestEffect_AvoidStartleOnce
-	.4byte ContestEffect_AvoidStartle
-	.4byte ContestEffect_AvoidStartleSlightly
-	.4byte ContestEffect_UserLessEasilyStartled
-	.4byte ContestEffect_StartleFrontMon
-	.4byte ContestEffect_StartlePrevMons
-	.4byte ContestEffect_StartleFrontMon
-	.4byte ContestEffect_StartlePrevMons
-	.4byte ContestEffect_StartleFrontMon
-	.4byte ContestEffect_StartlePrevMons
-	.4byte ContestEffect_StartlePrevMon2
-	.4byte ContestEffect_StartlePrevMons2
-	.4byte ContestEffect_ShiftJudgeAttention
-	.4byte ContestEffect_StartleMonWithJudgesAttention
-	.4byte ContestEffect_JamsOthersButMissOneTurn
-	.4byte ContestEffect_StartleMonsSameTypeAppeal
-	.4byte ContestEffect_StartleMonsCoolAppeal
-	.4byte ContestEffect_StartleMonsBeautyAppeal
-	.4byte ContestEffect_StartleMonsCuteAppeal
-	.4byte ContestEffect_StartleMonsSmartAppeal
-	.4byte ContestEffect_StartleMonsToughAppeal
-	.4byte ContestEffect_MakeFollowingMonNervous
-	.4byte ContestEffect_MakeFollowingMonsNervous
-	.4byte ContestEffect_WorsenConditionOfPrevMons
-	.4byte ContestEffect_BadlyStartlesMonsInGoodCondition
-	.4byte ContestEffect_BetterIfFirst
-	.4byte ContestEffect_BetterIfLast
-	.4byte ContestEffect_AppealAsGoodAsPrevOnes
-	.4byte ContestEffect_AppealAsGoodAsPrevOne
-	.4byte ContestEffect_BetterWhenLater
-	.4byte ContestEffect_QualityDependsOnTiming
-	.4byte ContestEffect_BetterIfSameType
-	.4byte ContestEffect_BetterIfDiffType
-	.4byte ContestEffect_AffectedByPrevAppeal
-	.4byte ContestEffect_ImproveConditionPreventNervousness
-	.4byte ContestEffect_BetterWithGoodCondition
-	.4byte ContestEffect_NextAppealEarlier
-	.4byte ContestEffect_NextAppealLater
-	.4byte ContestEffect_HighlyAppealing
-	.4byte ContestEffect_ScrambleNextTurnOrder
-	.4byte ContestEffect_ExciteAudienceInAnyContest
-	.4byte ContestEffect_BadlyStartleMonsWithGoodAppeals
-	.4byte ContestEffect_BetterWhenAudienceExcited
-	.4byte ContestEffect_DontExciteAudience
+	@ Contest effect dispatch table, indexed by CONTEST_EFFECT_*.
+	.globl gContestEffectFuncs
+gContestEffectFuncs: @ 0x08566BE4
+	.4byte ContestEffect_HighlyAppealing @ CONTEST_EFFECT_HIGHLY_APPEALING
+	.4byte ContestEffect_UserMoreEasilyStartled @ CONTEST_EFFECT_USER_MORE_EASILY_STARTLED
+	.4byte ContestEffect_GreatAppealButNoMoreMoves @ CONTEST_EFFECT_GREAT_APPEAL_BUT_NO_MORE_MOVES
+	.4byte ContestEffect_RepetitionNotBoring @ CONTEST_EFFECT_REPETITION_NOT_BORING
+	.4byte ContestEffect_AvoidStartleOnce @ CONTEST_EFFECT_AVOID_STARTLE_ONCE
+	.4byte ContestEffect_AvoidStartle @ CONTEST_EFFECT_AVOID_STARTLE
+	.4byte ContestEffect_AvoidStartleSlightly @ CONTEST_EFFECT_AVOID_STARTLE_SLIGHTLY
+	.4byte ContestEffect_UserLessEasilyStartled @ CONTEST_EFFECT_USER_LESS_EASILY_STARTLED
+	.4byte ContestEffect_StartleFrontMon @ CONTEST_EFFECT_STARTLE_FRONT_MON
+	.4byte ContestEffect_StartlePrevMons @ CONTEST_EFFECT_SLIGHTLY_STARTLE_PREV_MONS
+	.4byte ContestEffect_StartleFrontMon @ CONTEST_EFFECT_STARTLE_PREV_MON
+	.4byte ContestEffect_StartlePrevMons @ CONTEST_EFFECT_STARTLE_PREV_MONS
+	.4byte ContestEffect_StartleFrontMon @ CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON
+	.4byte ContestEffect_StartlePrevMons @ CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS
+	.4byte ContestEffect_StartlePrevMon2 @ CONTEST_EFFECT_STARTLE_PREV_MON_2
+	.4byte ContestEffect_StartlePrevMons2 @ CONTEST_EFFECT_STARTLE_PREV_MONS_2
+	.4byte ContestEffect_ShiftJudgeAttention @ CONTEST_EFFECT_SHIFT_JUDGE_ATTENTION
+	.4byte ContestEffect_StartleMonWithJudgesAttention @ CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION
+	.4byte ContestEffect_JamsOthersButMissOneTurn @ CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN
+	.4byte ContestEffect_StartleMonsSameTypeAppeal @ CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL
+	.4byte ContestEffect_StartleMonsCoolAppeal @ CONTEST_EFFECT_STARTLE_MONS_COOL_APPEAL
+	.4byte ContestEffect_StartleMonsBeautyAppeal @ CONTEST_EFFECT_STARTLE_MONS_BEAUTY_APPEAL
+	.4byte ContestEffect_StartleMonsCuteAppeal @ CONTEST_EFFECT_STARTLE_MONS_CUTE_APPEAL
+	.4byte ContestEffect_StartleMonsSmartAppeal @ CONTEST_EFFECT_STARTLE_MONS_SMART_APPEAL
+	.4byte ContestEffect_StartleMonsToughAppeal @ CONTEST_EFFECT_STARTLE_MONS_TOUGH_APPEAL
+	.4byte ContestEffect_MakeFollowingMonNervous @ CONTEST_EFFECT_MAKE_FOLLOWING_MON_NERVOUS
+	.4byte ContestEffect_MakeFollowingMonsNervous @ CONTEST_EFFECT_MAKE_FOLLOWING_MONS_NERVOUS
+	.4byte ContestEffect_WorsenConditionOfPrevMons @ CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS
+	.4byte ContestEffect_BadlyStartlesMonsInGoodCondition @ CONTEST_EFFECT_BADLY_STARTLES_MONS_IN_GOOD_CONDITION
+	.4byte ContestEffect_BetterIfFirst @ CONTEST_EFFECT_BETTER_IF_FIRST
+	.4byte ContestEffect_BetterIfLast @ CONTEST_EFFECT_BETTER_IF_LAST
+	.4byte ContestEffect_AppealAsGoodAsPrevOnes @ CONTEST_EFFECT_APPEAL_AS_GOOD_AS_PREV_ONES
+	.4byte ContestEffect_AppealAsGoodAsPrevOne @ CONTEST_EFFECT_APPEAL_AS_GOOD_AS_PREV_ONE
+	.4byte ContestEffect_BetterWhenLater @ CONTEST_EFFECT_BETTER_WHEN_LATER
+	.4byte ContestEffect_QualityDependsOnTiming @ CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING
+	.4byte ContestEffect_BetterIfSameType @ CONTEST_EFFECT_BETTER_IF_SAME_TYPE
+	.4byte ContestEffect_BetterIfDiffType @ CONTEST_EFFECT_BETTER_IF_DIFF_TYPE
+	.4byte ContestEffect_AffectedByPrevAppeal @ CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL
+	.4byte ContestEffect_ImproveConditionPreventNervousness @ CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS
+	.4byte ContestEffect_BetterWithGoodCondition @ CONTEST_EFFECT_BETTER_WITH_GOOD_CONDITION
+	.4byte ContestEffect_NextAppealEarlier @ CONTEST_EFFECT_NEXT_APPEAL_EARLIER
+	.4byte ContestEffect_NextAppealLater @ CONTEST_EFFECT_NEXT_APPEAL_LATER
+	.4byte ContestEffect_MakeScramblingTurnOrderEasier @ CONTEST_EFFECT_MAKE_SCRAMBLING_TURN_ORDER_EASIER
+	.4byte ContestEffect_ScrambleNextTurnOrder @ CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER
+	.4byte ContestEffect_ExciteAudienceInAnyContest @ CONTEST_EFFECT_EXCITE_AUDIENCE_IN_ANY_CONTEST
+	.4byte ContestEffect_BadlyStartleMonsWithGoodAppeals @ CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS
+	.4byte ContestEffect_BetterWhenAudienceExcited @ CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED
+	.4byte ContestEffect_DontExciteAudience @ CONTEST_EFFECT_DONT_EXCITE_AUDIENCE
+
+	.if (. - gContestEffectFuncs) != (48 * 4)
+	.error "contest effect function table size mismatch"
+	.endif
 	.globl gText_Rom_566CA4

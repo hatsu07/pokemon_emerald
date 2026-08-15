@@ -11430,7 +11430,7 @@ _080DC918:
 	.align 2, 0
 _080DC944: .4byte 0x02039BD4
 _080DC948: .4byte gContestEffects
-_080DC94C: .4byte 0x08566BE4
+_080DC94C: .4byte gContestEffectFuncs
 _080DC950:
 	ldrb r1, [r2, #0x11]
 	movs r0, #0x20

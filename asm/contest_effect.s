@@ -60,11 +60,11 @@ _080E4C4E:
 	.align 2, 0
 	thumb_func_end AreMovesContestCombo
 
-	thumb_func_start ContestEffect_MakeScramblingTurnOrderEasier
-ContestEffect_MakeScramblingTurnOrderEasier: @ 0x080E4C58
+	thumb_func_start ContestEffect_HighlyAppealing
+ContestEffect_HighlyAppealing: @ 0x080E4C58
 	bx lr
 	.align 2, 0
-	thumb_func_end ContestEffect_MakeScramblingTurnOrderEasier
+	thumb_func_end ContestEffect_HighlyAppealing
 
 	thumb_func_start ContestEffect_UserMoreEasilyStartled
 ContestEffect_UserMoreEasilyStartled: @ 0x080E4C5C
@@ -2488,11 +2488,11 @@ _080E5E34:
 	bx r0
 	thumb_func_end ContestEffect_NextAppealLater
 
-	thumb_func_start ContestEffect_HighlyAppealing
-ContestEffect_HighlyAppealing: @ 0x080E5E40
+	thumb_func_start ContestEffect_MakeScramblingTurnOrderEasier
+ContestEffect_MakeScramblingTurnOrderEasier: @ 0x080E5E40
 	bx lr
 	.align 2, 0
-	thumb_func_end ContestEffect_HighlyAppealing
+	thumb_func_end ContestEffect_MakeScramblingTurnOrderEasier
 
 	thumb_func_start ContestEffect_ScrambleNextTurnOrder
 ContestEffect_ScrambleNextTurnOrder: @ 0x080E5E44
