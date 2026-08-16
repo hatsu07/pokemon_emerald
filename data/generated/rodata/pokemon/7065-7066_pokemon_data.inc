@@ -95,49 +95,33 @@ gUnkPokedexAreaScreenHelperData_085ED590: @ 0x085ED590
 	.byte 0x5E, 0x2B, 0x24, 0x61, 0xA8, 0x65, 0x00, 0x00, 0x9F, 0x43, 0x7F, 0x02, 0x16, 0x00, 0xFF, 0x7F
 	.byte 0x00, 0x00, 0xB9, 0x7F, 0x58, 0x7F, 0x8C, 0x31, 0x39, 0x67, 0xF7, 0x01, 0x00, 0x00, 0xCF, 0x6A
 	.byte 0xC0, 0x55, 0xE0, 0x44, 0xBF, 0x0A, 0xFF, 0x08, 0x12, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x085ED5F0: unk_pokedex_area_screen_helper.s: sub_081C4578
-	.globl gUnkPokedexAreaScreenHelperData_085ED5F0
-gUnkPokedexAreaScreenHelperData_085ED5F0:
-	.globl sLz77Block_085ED5F0
-	@ confirmed GBA LZ77 stream: compressed=0xD51, decompressed=0x3A00
-sLz77Block_085ED5F0:
-	@ analyzed canonical ROM range 0x085ED5F0-0x085EE343
-	.incbin "build/graphics/analyzed/gunknown_85ed5f0_085ed5f0.4bpp.lz"
-	.if (. - sLz77Block_085ED5F0) != 0xD54
-	.error "sLz77Block_085ED5F0 compressed size mismatch"
+	@ semantic exact asset for 0x085ED5F0: sPokedexAreaMap_Gfx
+	.globl sPokedexAreaMap_Gfx
+sPokedexAreaMap_Gfx:
+	.incbin "build/graphics/pokedex/region_map.8bpp.lz"
+	.if (. - sPokedexAreaMap_Gfx) != 0xD54
+	.error "sPokedexAreaMap_Gfx compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x085EE344: unk_pokedex_area_screen_helper.s: sub_081C4578
-	.globl gUnkPokedexAreaScreenHelperData_085EE344
-gUnkPokedexAreaScreenHelperData_085EE344:
-	.globl sLz77Block_085EE344
-	@ confirmed GBA LZ77 stream: compressed=0x312, decompressed=0x800
-sLz77Block_085EE344:
-	@ analyzed canonical ROM range 0x085EE344-0x085EE657
-	.incbin "build/graphics/analyzed/gunknown_85ee344_085ee344.4bpp.lz"
-	.if (. - sLz77Block_085EE344) != 0x314
-	.error "sLz77Block_085EE344 compressed size mismatch"
+	@ semantic exact asset for 0x085EE344: sPokedexAreaMap_Tilemap
+	.globl sPokedexAreaMap_Tilemap
+sPokedexAreaMap_Tilemap:
+	.incbin "build/graphics/pokedex/region_map.bin.lz"
+	.if (. - sPokedexAreaMap_Tilemap) != 0x314
+	.error "sPokedexAreaMap_Tilemap compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x085EE658: unk_pokedex_area_screen_helper.s: sub_081C4578
-	.globl gUnkPokedexAreaScreenHelperData_085EE658
-gUnkPokedexAreaScreenHelperData_085EE658:
-	.globl sLz77Block_085EE658
-	@ confirmed GBA LZ77 stream: compressed=0xD5C, decompressed=0x3A40
-sLz77Block_085EE658:
-	@ analyzed canonical ROM range 0x085EE658-0x085EF3B3
-	.incbin "build/graphics/analyzed/gunknown_85ee658_085ee658.4bpp.lz"
-	.if (. - sLz77Block_085EE658) != 0xD5C
-	.error "sLz77Block_085EE658 compressed size mismatch"
+	@ semantic exact asset for 0x085EE658: sPokedexAreaMapAffine_Gfx
+	.globl sPokedexAreaMapAffine_Gfx
+sPokedexAreaMapAffine_Gfx:
+	.incbin "build/graphics/pokedex/region_map_affine.8bpp.lz"
+	.if (. - sPokedexAreaMapAffine_Gfx) != 0xD5C
+	.error "sPokedexAreaMapAffine_Gfx compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x085EF3B4: unk_pokedex_area_screen_helper.s: sub_081C4578
-	.globl gUnkPokedexAreaScreenHelperData_085EF3B4
-gUnkPokedexAreaScreenHelperData_085EF3B4:
-	.globl sLz77Block_085EF3B4
-	@ confirmed GBA LZ77 stream: compressed=0x350, decompressed=0x1000
-sLz77Block_085EF3B4:
-	@ analyzed canonical ROM range 0x085EF3B4-0x085EF703
-	.incbin "build/graphics/analyzed/gunknown_85ef3b4_085ef3b4.4bpp.lz"
-	.if (. - sLz77Block_085EF3B4) != 0x350
-	.error "sLz77Block_085EF3B4 compressed size mismatch"
+	@ semantic exact asset for 0x085EF3B4: sPokedexAreaMapAffine_Tilemap
+	.globl sPokedexAreaMapAffine_Tilemap
+sPokedexAreaMapAffine_Tilemap:
+	.incbin "build/graphics/pokedex/region_map_affine.bin.lz"
+	.if (. - sPokedexAreaMapAffine_Tilemap) != 0x350
+	.error "sPokedexAreaMapAffine_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085EF704: battle_pyramid_bag.s: sub_081C49E4
 	.globl gBattlePyramidBagData_085EF704
@@ -364,16 +348,12 @@ gPokenavMainMenuData_085EF9E0: @ 0x085EF9E0
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x18, 0x67, 0x64, 0x4B, 0xAD, 0x5B, 0xF6, 0x6B, 0x1A, 0x7F
 	.byte 0x9D, 0x7F, 0xFF, 0x5A, 0x7F, 0x6B, 0x57, 0x02, 0xBD, 0x73, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x085EFA00: pokenav_main_menu.s: LoopedTask_InitPokenavMenu
-	.globl gPokenavMainMenuData_085EFA00
-gPokenavMainMenuData_085EFA00:
-	.globl sLz77Block_085EFA00
-	@ confirmed GBA LZ77 stream: compressed=0x22C, decompressed=0x6A0
-sLz77Block_085EFA00:
-	@ analyzed canonical ROM range 0x085EFA00-0x085EFC2B
-	.incbin "build/graphics/analyzed/gunknown_85efa00_085efa00.4bpp.lz"
-	.if (. - sLz77Block_085EFA00) != 0x22C
-	.error "sLz77Block_085EFA00 compressed size mismatch"
+	@ semantic exact asset for 0x085EFA00: gPokenavHeader_Gfx
+	.globl gPokenavHeader_Gfx
+gPokenavHeader_Gfx:
+	.incbin "build/graphics/pokenav/header.4bpp.lz"
+	.if (. - gPokenavHeader_Gfx) != 0x22C
+	.error "gPokenavHeader_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085EFC2C: pokenav_main_menu.s: LoopedTask_InitPokenavMenu
 	.globl gPokenavMainMenuData_085EFC2C
@@ -675,27 +655,19 @@ gPokenavUnk2Data_085F164A: @ 0x085F164A
 	@ ANALYSIS: RAW_BLOCK size=0x12
 	.byte 0x9D, 0x7F, 0x1A, 0x7F, 0x7F, 0x6B, 0xFF, 0x5A, 0x57, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x085F165C: pokenav_unk_2.s: sub_081C91BC
-	.globl gPokenavUnk2Data_085F165C
-gPokenavUnk2Data_085F165C:
-	.globl sLz77Block_085F165C
-	@ confirmed GBA LZ77 stream: compressed=0x14, decompressed=0x40
-sLz77Block_085F165C:
-	@ analyzed canonical ROM range 0x085F165C-0x085F166F
-	.incbin "build/graphics/analyzed/gunknown_85f165c_085f165c.4bpp.lz"
-	.if (. - sLz77Block_085F165C) != 0x14
-	.error "sLz77Block_085F165C compressed size mismatch"
+	@ semantic exact asset for 0x085F165C: sPokenavBgDotsTiles
+	.globl sPokenavBgDotsTiles
+sPokenavBgDotsTiles:
+	.incbin "build/graphics/pokenav/bg_dots.4bpp.lz"
+	.if (. - sPokenavBgDotsTiles) != 0x14
+	.error "sPokenavBgDotsTiles compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x085F1670: pokenav_unk_2.s: sub_081C91BC
-	.globl gPokenavUnk2Data_085F1670
-gPokenavUnk2Data_085F1670:
-	.globl sLz77Block_085F1670
-	@ confirmed GBA LZ77 stream: compressed=0x9E, decompressed=0x500
-sLz77Block_085F1670:
-	@ analyzed canonical ROM range 0x085F1670-0x085F170F
-	.incbin "build/graphics/analyzed/gunknown_85f1670_085f1670.4bpp.lz"
-	.if (. - sLz77Block_085F1670) != 0xA0
-	.error "sLz77Block_085F1670 compressed size mismatch"
+	@ semantic exact asset for 0x085F1670: sPokenavBgDotsTilemap
+	.globl sPokenavBgDotsTilemap
+sPokenavBgDotsTilemap:
+	.incbin "build/graphics/pokenav/bg_dots.bin.lz"
+	.if (. - sPokenavBgDotsTilemap) != 0xA0
+	.error "sPokenavBgDotsTilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085F1710: pokenav_unk_2.s: sub_081C91BC
 	.globl gPokenavUnk2Data_085F1710
@@ -705,27 +677,19 @@ gPokenavUnk2Data_085F1710: @ 0x085F1710
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0x00, 0x00, 0x6A, 0x31, 0x07, 0x25, 0xAA, 0x35, 0xEC, 0x41, 0x5A, 0x57, 0xDF, 0x6B, 0x38, 0x67
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x085F1730: pokenav_unk_2.s: sub_081C91BC
-	.globl gPokenavUnk2Data_085F1730
-gPokenavUnk2Data_085F1730:
-	.globl sLz77Block_085F1730
-	@ confirmed GBA LZ77 stream: compressed=0x4F, decompressed=0xE0
-sLz77Block_085F1730:
-	@ analyzed canonical ROM range 0x085F1730-0x085F177F
-	.incbin "build/graphics/analyzed/gunknown_85f1730_085f1730.4bpp.lz"
-	.if (. - sLz77Block_085F1730) != 0x50
-	.error "sLz77Block_085F1730 compressed size mismatch"
+	@ semantic exact asset for 0x085F1730: gPokenavMessageBox_Gfx
+	.globl gPokenavMessageBox_Gfx
+gPokenavMessageBox_Gfx:
+	.incbin "build/graphics/pokenav/message.4bpp.lz"
+	.if (. - gPokenavMessageBox_Gfx) != 0x50
+	.error "gPokenavMessageBox_Gfx compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x085F1780: pokenav_unk_2.s: sub_081C91BC
-	.globl gPokenavUnk2Data_085F1780
-gPokenavUnk2Data_085F1780:
-	.globl sLz77Block_085F1780
-	@ confirmed GBA LZ77 stream: compressed=0xB6, decompressed=0x500
-sLz77Block_085F1780:
-	@ analyzed canonical ROM range 0x085F1780-0x085F1837
-	.incbin "build/graphics/analyzed/gunknown_85f1780_085f1780.4bpp.lz"
-	.if (. - sLz77Block_085F1780) != 0xB8
-	.error "sLz77Block_085F1780 compressed size mismatch"
+	@ semantic exact asset for 0x085F1780: gPokenavMessageBox_Tilemap
+	.globl gPokenavMessageBox_Tilemap
+gPokenavMessageBox_Tilemap:
+	.incbin "build/graphics/pokenav/message.bin.lz"
+	.if (. - gPokenavMessageBox_Tilemap) != 0xB8
+	.error "gPokenavMessageBox_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085F1838: pokenav_unk_2.s: sub_081C91BC
 	.globl gPokenavUnk2Data_085F1838
@@ -735,16 +699,12 @@ gPokenavUnk2Data_085F1838: @ 0x085F1838
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0xFF, 0x7F, 0x95, 0x15, 0x55, 0x4A, 0xB6, 0x56, 0x1F, 0x3B, 0xFE, 0x31, 0x94, 0x66, 0x8C, 0x79
 	.byte 0xFF, 0x7F, 0xC1, 0x7E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x39, 0x6B, 0xB5, 0x5E
-	@ pret/pokeemerald-jp direct xref for 0x085F1858: pokenav_unk_2.s: sub_081C91BC
-	.globl gPokenavUnk2Data_085F1858
-gPokenavUnk2Data_085F1858:
-	.globl sLz77Block_085F1858
-	@ confirmed GBA LZ77 stream: compressed=0x285, decompressed=0x6A0
-sLz77Block_085F1858:
-	@ analyzed canonical ROM range 0x085F1858-0x085F1ADF
-	.incbin "build/graphics/analyzed/gunknown_85f1858_085f1858.4bpp.lz"
-	.if (. - sLz77Block_085F1858) != 0x288
-	.error "sLz77Block_085F1858 compressed size mismatch"
+	@ semantic exact asset for 0x085F1858: sPokenavDeviceBgTiles
+	.globl sPokenavDeviceBgTiles
+sPokenavDeviceBgTiles:
+	.incbin "build/graphics/pokenav/device_outline.4bpp.lz"
+	.if (. - sPokenavDeviceBgTiles) != 0x288
+	.error "sPokenavDeviceBgTiles compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085F1AE0: pokenav_unk_2.s: sub_081C91BC
 	.globl gPokenavUnk2Data_085F1AE0

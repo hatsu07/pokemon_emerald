@@ -151,7 +151,7 @@ _081C6F70:
 	movs r0, #0
 	b _081C6FEC
 	.align 2, 0
-_081C6FB0: .4byte gPokenavMainMenuData_085EFA00
+_081C6FB0: .4byte gPokenavHeader_Gfx
 _081C6FB4: .4byte gPokenavMainMenuData_085EFC2C
 _081C6FB8: .4byte gPokenavMainMenuData_085EF9E0
 _081C6FBC:

@@ -1316,6 +1316,158 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                     "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
 
+    # BEGIN POKEDEX AREA / POKENAV EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/region_map.8bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                8bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                --key "sPokedexAreaMap_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/region_map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                --key "sPokedexAreaMap_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/region_map_affine.8bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                8bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                --key "sPokedexAreaMapAffine_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_affine.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_affine.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/region_map_affine.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u8 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                --key "sPokedexAreaMapAffine_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_affine.tilemap.u8" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_affine.tilemap.u8"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/header.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "gPokenavHeader_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/header.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/header.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/bg_dots.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "sPokenavBgDotsTiles"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/bg_dots.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/bg_dots.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/bg_dots.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "sPokenavBgDotsTilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/bg_dots.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/bg_dots.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/message.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "gPokenavMessageBox_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/message.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/message.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/message.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "gPokenavMessageBox_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/message.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/message.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/device_outline.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "sPokenavDeviceBgTiles"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/device_outline.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/device_outline.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END POKEDEX AREA / POKENAV EXACT ASSET PIPELINE
+
     # BEGIN POKEDEX EXACT ASSET PIPELINE
 
     elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/start_menu_main.bin.lz")

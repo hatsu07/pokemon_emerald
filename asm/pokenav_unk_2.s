@@ -265,8 +265,8 @@ _081C9282:
 	b _081C940E
 	.align 2, 0
 _081C9288: .4byte gPokenavUnk2Data_085F26FC
-_081C928C: .4byte gPokenavUnk2Data_085F1730
-_081C9290: .4byte gPokenavUnk2Data_085F1780
+_081C928C: .4byte gPokenavMessageBox_Gfx
+_081C9290: .4byte gPokenavMessageBox_Tilemap
 _081C9294: .4byte gPokenavUnk2Data_085F1710
 _081C9298:
 	bl free_temp_tile_data_buffers_if_possible
@@ -295,7 +295,7 @@ _081C92A6:
 	bl CopyPaletteIntoBufferUnfaded
 	b _081C9282
 	.align 2, 0
-_081C92D0: .4byte gPokenavUnk2Data_085F1858
+_081C92D0: .4byte sPokenavDeviceBgTiles
 _081C92D4: .4byte gPokenavUnk2Data_085F1AE0
 _081C92D8: .4byte gPokenavUnk2Data_085F1838
 _081C92DC:
@@ -333,8 +333,8 @@ _081C9322:
 	bl sub_081C9FFC
 	b _081C9282
 	.align 2, 0
-_081C9328: .4byte gPokenavUnk2Data_085F165C
-_081C932C: .4byte gPokenavUnk2Data_085F1670
+_081C9328: .4byte sPokenavBgDotsTiles
+_081C932C: .4byte sPokenavBgDotsTilemap
 _081C9330: .4byte 0x085F163C
 _081C9334:
 	bl free_temp_tile_data_buffers_if_possible
