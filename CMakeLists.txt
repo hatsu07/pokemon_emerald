@@ -1785,6 +1785,98 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
 
     # END POKEDEX SEARCH / TRAINER CARD / STORAGE EXACT ASSET PIPELINE
+    # BEGIN REGION MAP EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/region_map/cursor_small.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                --key "sRegionMapCursorSmallGfxLZ"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/cursor_small.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/cursor_small.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/region_map/cursor_large.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                --key "sRegionMapCursorLargeGfxLZ"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/cursor_large.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/cursor_large.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/region_map/map.8bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                8bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                --key "sRegionMapBg_GfxLZ" --raw-size 0x3A40
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/map.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/map.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/region_map/map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                u8 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                --key "sRegionMapBg_TilemapLZ"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/map.tilemap.u8" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/map.tilemap.u8"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/region_map/frame.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                --key "sRegionMapFrameGfxLZ"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/frame.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/frame.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/region_map/fly_target_icons.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                --key "sFlyTargetIcons_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/fly_target_icons.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/fly_target_icons.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END REGION MAP EXACT ASSET PIPELINE
     # END POKEDEX AREA / POKENAV EXACT ASSET PIPELINE
 
     # BEGIN POKEDEX EXACT ASSET PIPELINE

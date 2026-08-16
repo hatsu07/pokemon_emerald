@@ -199,16 +199,12 @@ gRegionMapData_0857D528: @ 0x0857D528
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0x00, 0x00, 0xB9, 0x7F, 0x58, 0x7F, 0x8C, 0x31, 0x39, 0x67, 0xF7, 0x01, 0x00, 0x00, 0xCF, 0x6A
 	.byte 0xC0, 0x55, 0x24, 0x45, 0xBF, 0x0A, 0xFF, 0x08, 0x75, 0x15, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F
-	@ pret/pokeemerald-jp direct xref for 0x0857D548: region_map.s: MCB2_FlyMap
-	.globl gRegionMapData_0857D548
-gRegionMapData_0857D548:
-	.globl sLz77Block_0857D548
-	@ confirmed GBA LZ77 stream: compressed=0x38, decompressed=0xC0
-sLz77Block_0857D548:
-	@ analyzed canonical ROM range 0x0857D548-0x0857D57F
-	.incbin "build/graphics/analyzed/gunknown_857d548_0857d548.4bpp.lz"
-	.if (. - sLz77Block_0857D548) != 0x38
-	.error "sLz77Block_0857D548 compressed size mismatch"
+	@ semantic exact asset for 0x0857D548: sRegionMapFrameGfxLZ
+	.globl sRegionMapFrameGfxLZ
+sRegionMapFrameGfxLZ:
+	.incbin "build/graphics/pokenav/region_map/frame.4bpp.lz"
+	.if (. - sRegionMapFrameGfxLZ) != 0x38
+	.error "sRegionMapFrameGfxLZ compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857D580: region_map.s: MCB2_FlyMap
 	.globl gRegionMapData_0857D580
@@ -222,16 +218,12 @@ sLz77Block_0857D580:
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x1F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x39, 0x67, 0x00, 0x00, 0x00
 	.byte 0x00, 0x5F, 0x6F, 0x9F, 0x62, 0x98, 0x39, 0x10, 0x3E, 0x6C, 0x2D, 0xC6, 0x20, 0x00, 0x00, 0x00
 	.byte 0x00, 0xFF, 0x7F
-	@ pret/pokeemerald-jp direct xref for 0x0857D658: region_map.s: sub_08124A58
-	.globl gRegionMapData_0857D658
-gRegionMapData_0857D658:
-	.globl sLz77Block_0857D658
-	@ confirmed GBA LZ77 stream: compressed=0xD2, decompressed=0x1C0
-sLz77Block_0857D658:
-	@ analyzed canonical ROM range 0x0857D658-0x0857D72B
-	.incbin "build/graphics/analyzed/gunknown_857d658_0857d658.4bpp.lz"
-	.if (. - sLz77Block_0857D658) != 0xD4
-	.error "sLz77Block_0857D658 compressed size mismatch"
+	@ semantic exact asset for 0x0857D658: sFlyTargetIcons_Gfx
+	.globl sFlyTargetIcons_Gfx
+sFlyTargetIcons_Gfx:
+	.incbin "build/graphics/pokenav/region_map/fly_target_icons.4bpp.lz"
+	.if (. - sFlyTargetIcons_Gfx) != 0xD4
+	.error "sFlyTargetIcons_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857D72C: contest_painting_effects.s: sub_08124DF4
 	.globl gContestPaintingEffectsData_0857D72C

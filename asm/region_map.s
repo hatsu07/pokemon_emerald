@@ -166,14 +166,14 @@ _08122E00:
 	b _08122E5E
 	.align 2, 0
 _08122E1C: .4byte 0x02039E10
-_08122E20: .4byte gRegionMapData_0857B34C
+_08122E20: .4byte sRegionMapBg_GfxLZ
 _08122E24:
 	ldr r0, _08122E30
 	ldr r1, _08122E34
 	bl LZ77UnCompVram
 	b _08123020
 	.align 2, 0
-_08122E30: .4byte gRegionMapData_0857B34C
+_08122E30: .4byte sRegionMapBg_GfxLZ
 _08122E34: .4byte 0x06008000
 _08122E38:
 	ldr r4, _08122E68
@@ -201,14 +201,14 @@ _08122E5E:
 	b _08123020
 	.align 2, 0
 _08122E68: .4byte 0x02039E10
-_08122E6C: .4byte gRegionMapData_0857C0B0
+_08122E6C: .4byte sRegionMapBg_TilemapLZ
 _08122E70:
 	ldr r0, _08122E7C
 	ldr r1, _08122E80
 	bl LZ77UnCompVram
 	b _08123020
 	.align 2, 0
-_08122E7C: .4byte gRegionMapData_0857C0B0
+_08122E7C: .4byte sRegionMapBg_TilemapLZ
 _08122E80: .4byte 0x0600E000
 _08122E84:
 	bl free_temp_tile_data_buffers_if_possible
@@ -234,7 +234,7 @@ _08122EA0:
 	bl LZ77UnCompWram
 	b _08123020
 	.align 2, 0
-_08122EB4: .4byte gRegionMapData_0857B1DC
+_08122EB4: .4byte sRegionMapCursorSmallGfxLZ
 _08122EB8: .4byte 0x02039E10
 _08122EBC:
 	ldr r0, _08122ED0
@@ -246,7 +246,7 @@ _08122EBC:
 	bl LZ77UnCompWram
 	b _08123020
 	.align 2, 0
-_08122ED0: .4byte gRegionMapData_0857B220
+_08122ED0: .4byte sRegionMapCursorLargeGfxLZ
 _08122ED4: .4byte 0x02039E10
 _08122ED8:
 	bl RegionMap_InitializeStateBasedOnPlayerLocation
@@ -3609,7 +3609,7 @@ _081247F0:
 	bl LZ77UnCompVram
 	b _081248A8
 	.align 2, 0
-_081247FC: .4byte gRegionMapData_0857D548
+_081247FC: .4byte sRegionMapFrameGfxLZ
 _08124800: .4byte 0x0600C000
 _08124804:
 	ldr r0, _08124810
@@ -3929,7 +3929,7 @@ sub_08124A58: @ 0x08124A58
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08124AA4: .4byte gRegionMapData_0857D658
+_08124AA4: .4byte sFlyTargetIcons_Gfx
 _08124AA8: .4byte 0x02039E14
 _08124AAC: .4byte 0x0000088C
 _08124AB0: .4byte 0xFFFF0000

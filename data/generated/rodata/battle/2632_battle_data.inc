@@ -307,27 +307,19 @@ gHealLocationData_0857B10C: @ 0x0857B10C
 	.2byte 0x091A, 0x000F, 0x0014, 0x0000, 0x0E1A, 0x0003, 0x0034, 0x0000
 	.2byte 0x026C, 0x7FFF, 0x7FFF, 0x7B9C, 0x7339, 0x6ED6, 0x6673, 0x6210
 	.2byte 0x598C, 0x5129, 0x4CC6, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x0857B1DC: region_map.s: sub_08122DBC
-	.globl gRegionMapData_0857B1DC
-gRegionMapData_0857B1DC:
-	.globl sLz77Block_0857B1DC
-	@ confirmed GBA LZ77 stream: compressed=0x42, decompressed=0x100
-sLz77Block_0857B1DC:
-	@ analyzed canonical ROM range 0x0857B1DC-0x0857B21F
-	.incbin "build/graphics/analyzed/gunknown_857b1dc_0857b1dc.4bpp.lz"
-	.if (. - sLz77Block_0857B1DC) != 0x44
-	.error "sLz77Block_0857B1DC compressed size mismatch"
+	@ semantic exact asset for 0x0857B1DC: sRegionMapCursorSmallGfxLZ
+	.globl sRegionMapCursorSmallGfxLZ
+sRegionMapCursorSmallGfxLZ:
+	.incbin "build/graphics/pokenav/region_map/cursor_small.4bpp.lz"
+	.if (. - sRegionMapCursorSmallGfxLZ) != 0x44
+	.error "sRegionMapCursorSmallGfxLZ compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x0857B220: region_map.s: sub_08122DBC
-	.globl gRegionMapData_0857B220
-gRegionMapData_0857B220:
-	.globl sLz77Block_0857B220
-	@ confirmed GBA LZ77 stream: compressed=0xEB, decompressed=0x600
-sLz77Block_0857B220:
-	@ analyzed canonical ROM range 0x0857B220-0x0857B30B
-	.incbin "build/graphics/analyzed/gunknown_857b220_0857b220.4bpp.lz"
-	.if (. - sLz77Block_0857B220) != 0xEC
-	.error "sLz77Block_0857B220 compressed size mismatch"
+	@ semantic exact asset for 0x0857B220: sRegionMapCursorLargeGfxLZ
+	.globl sRegionMapCursorLargeGfxLZ
+sRegionMapCursorLargeGfxLZ:
+	.incbin "build/graphics/pokenav/region_map/cursor_large.4bpp.lz"
+	.if (. - sRegionMapCursorLargeGfxLZ) != 0xEC
+	.error "sRegionMapCursorLargeGfxLZ compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857B30C: region_map.s: sub_08122DBC
 	.globl gRegionMapData_0857B30C
@@ -339,27 +331,19 @@ gRegionMapData_0857B30C: @ 0x0857B30C
 	.byte 0x24, 0x61, 0xE0, 0x44, 0xFA, 0x3F, 0xB5, 0x1B, 0x4C, 0x03, 0xA7, 0x06, 0xC0, 0x01, 0x39, 0x4B
 	.byte 0x00, 0x00, 0xFF, 0x7F, 0x9D, 0x57, 0x9D, 0x3B, 0xFD, 0x1E, 0x5E, 0x2B, 0x9C, 0x02, 0xBF, 0x0A
 	.byte 0xFF, 0x08, 0x1E, 0x00, 0x12, 0x00, 0x39, 0x67, 0x8C, 0x31, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x0857B34C: region_map.s: sub_08122DBC
-	.globl gRegionMapData_0857B34C
-gRegionMapData_0857B34C:
-	.globl sLz77Block_0857B34C
-	@ confirmed GBA LZ77 stream: compressed=0xD62, decompressed=0x3A40
-sLz77Block_0857B34C:
-	@ analyzed canonical ROM range 0x0857B34C-0x0857C0AF
-	.incbin "build/graphics/analyzed/gunknown_857b34c_0857b34c.4bpp.lz"
-	.if (. - sLz77Block_0857B34C) != 0xD64
-	.error "sLz77Block_0857B34C compressed size mismatch"
+	@ semantic exact asset for 0x0857B34C: sRegionMapBg_GfxLZ
+	.globl sRegionMapBg_GfxLZ
+sRegionMapBg_GfxLZ:
+	.incbin "build/graphics/pokenav/region_map/map.8bpp.lz"
+	.if (. - sRegionMapBg_GfxLZ) != 0xD64
+	.error "sRegionMapBg_GfxLZ compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x0857C0B0: region_map.s: sub_08122DBC
-	.globl gRegionMapData_0857C0B0
-gRegionMapData_0857C0B0:
-	.globl sLz77Block_0857C0B0
-	@ confirmed GBA LZ77 stream: compressed=0x34B, decompressed=0x1000
-sLz77Block_0857C0B0:
-	@ analyzed canonical ROM range 0x0857C0B0-0x0857C3FB
-	.incbin "build/graphics/analyzed/gunknown_857c0b0_0857c0b0.4bpp.lz"
-	.if (. - sLz77Block_0857C0B0) != 0x34C
-	.error "sLz77Block_0857C0B0 compressed size mismatch"
+	@ semantic exact asset for 0x0857C0B0: sRegionMapBg_TilemapLZ
+	.globl sRegionMapBg_TilemapLZ
+sRegionMapBg_TilemapLZ:
+	.incbin "build/graphics/pokenav/region_map/map.bin.lz"
+	.if (. - sRegionMapBg_TilemapLZ) != 0x34C
+	.error "sRegionMapBg_TilemapLZ compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857C3FC: region_map.s: CreateRegionMapPlayerIcon
 	.globl gRegionMapData_0857C3FC
