@@ -991,6 +991,61 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
             VERBATIM)
 
+    # BEGIN DODRIO BERRY PICKING EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/dodrio_berry_picking/(bg|tree_border|status|cloud|dodrio)[.]4bpp[.]lz$")
+        set(DODRIO_BERRY_ASSET "${CMAKE_MATCH_1}")
+        set(DODRIO_BERRY_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/dodrio_berry_picking/${DODRIO_BERRY_ASSET}.png")
+        set(DODRIO_BERRY_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/dodrio_berry_picking/lz77_exact_plans.json")
+
+        if(DODRIO_BERRY_ASSET STREQUAL "tree_border")
+            set(DODRIO_BERRY_KEY "tree_border_gfx")
+        else()
+            set(DODRIO_BERRY_KEY "${DODRIO_BERRY_ASSET}_gfx")
+        endif()
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${DODRIO_BERRY_PLAN}"
+                --stem "${DODRIO_BERRY_KEY}"
+                "${DODRIO_BERRY_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${DODRIO_BERRY_INPUT}"
+                "${DODRIO_BERRY_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/dodrio_berry_picking/(bg|tree_border_right|tree_border_left)[.]bin[.]lz$")
+        set(DODRIO_BERRY_TILEMAP "${CMAKE_MATCH_1}")
+        set(DODRIO_BERRY_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/dodrio_berry_picking/${DODRIO_BERRY_TILEMAP}.tilemap.u16")
+        set(DODRIO_BERRY_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/dodrio_berry_picking/lz77_exact_plans.json")
+        set(DODRIO_BERRY_KEY "${DODRIO_BERRY_TILEMAP}_tilemap")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${DODRIO_BERRY_PLAN}"
+                --stem "${DODRIO_BERRY_KEY}"
+                "${DODRIO_BERRY_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${DODRIO_BERRY_INPUT}"
+                "${DODRIO_BERRY_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END DODRIO BERRY PICKING EXACT ASSET PIPELINE
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/analyzed/(.+)[.]4bpp[.]lz$")
         set(STEM "${CMAKE_MATCH_1}")
