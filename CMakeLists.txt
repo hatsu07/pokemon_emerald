@@ -1081,6 +1081,83 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END POKEMON JUMP EXACT ASSET PIPELINE
 
+    # BEGIN INTRO SCENE 3 EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/scene_3/(groudon|kyogre)[.]8bpp[.]lz$")
+        set(INTRO3_ASSET "${CMAKE_MATCH_1}")
+        set(INTRO3_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/${INTRO3_ASSET}.png")
+        set(INTRO3_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/lz77_exact_plans.json")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                repack-png
+                --manifest "${INTRO3_PLAN}"
+                --stem "${INTRO3_ASSET}_gfx"
+                --gbagfx "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+                "${INTRO3_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO3_INPUT}"
+                "${INTRO3_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/scene_3/legend_bg[.]4bpp[.]lz$")
+        set(INTRO3_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/legend_bg.png")
+        set(INTRO3_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/lz77_exact_plans.json")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                repack-png
+                --manifest "${INTRO3_PLAN}"
+                --stem "legend_bg_gfx"
+                --gbagfx "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+                "${INTRO3_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO3_INPUT}"
+                "${INTRO3_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/scene_3/(groudon|kyogre|groudon_bg)[.]bin[.]lz$")
+        set(INTRO3_TILEMAP "${CMAKE_MATCH_1}")
+        set(INTRO3_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/${INTRO3_TILEMAP}.tilemap.u16")
+        set(INTRO3_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/lz77_exact_plans.json")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                repack-u16
+                --manifest "${INTRO3_PLAN}"
+                --stem "${INTRO3_TILEMAP}_tilemap"
+                "${INTRO3_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO3_INPUT}"
+                "${INTRO3_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END INTRO SCENE 3 EXACT ASSET PIPELINE
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/analyzed/(.+)[.]4bpp[.]lz$")
         set(STEM "${CMAKE_MATCH_1}")
