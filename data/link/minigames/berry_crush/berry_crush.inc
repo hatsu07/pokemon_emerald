@@ -177,38 +177,26 @@ gLz77Asset_082C72BC: @ 0x082C72BC
 gLz77Asset_082C7408: @ 0x082C7408
 	.incbin "build/assets/lz77_raw/082C7408.bin.lz"
 	.byte 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x082C74D4: berry_crush.s: sub_08020D74
-	.globl gBerryCrushData_082C74D4
-gBerryCrushData_082C74D4:
-	.globl sLz77Block_082C74D4
-	@ confirmed GBA LZ77 stream: compressed=0x12D, decompressed=0x280
-sLz77Block_082C74D4:
-	@ analyzed canonical ROM range 0x082C74D4-0x082C7603
-	.incbin "build/graphics/analyzed/gunknown_82c74d4_082c74d4.4bpp.lz"
-	.if (. - sLz77Block_082C74D4) != 0x130
-	.error "sLz77Block_082C74D4 compressed size mismatch"
+	@ semantic exact asset for 0x082C74D4: sCrusherTop_Tilemap
+	.globl sCrusherTop_Tilemap
+sCrusherTop_Tilemap:
+	.incbin "build/graphics/berry_crush/crusher_top.bin.lz"
+	.if (. - sCrusherTop_Tilemap) != 0x130
+	.error "sCrusherTop_Tilemap compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x082C7604: berry_crush.s: sub_08020D74
-	.globl gBerryCrushData_082C7604
-gBerryCrushData_082C7604:
-	.globl sLz77Block_082C7604
-	@ confirmed GBA LZ77 stream: compressed=0x197, decompressed=0x500
-sLz77Block_082C7604:
-	@ analyzed canonical ROM range 0x082C7604-0x082C779B
-	.incbin "build/graphics/analyzed/gunknown_82c7604_082c7604.4bpp.lz"
-	.if (. - sLz77Block_082C7604) != 0x198
-	.error "sLz77Block_082C7604 compressed size mismatch"
+	@ semantic exact asset for 0x082C7604: sContainerCap_Tilemap
+	.globl sContainerCap_Tilemap
+sContainerCap_Tilemap:
+	.incbin "build/graphics/berry_crush/container_cap.bin.lz"
+	.if (. - sContainerCap_Tilemap) != 0x198
+	.error "sContainerCap_Tilemap compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x082C779C: berry_crush.s: sub_08020D74
-	.globl gBerryCrushData_082C779C
-gBerryCrushData_082C779C:
-	.globl sLz77Block_082C779C
-	@ confirmed GBA LZ77 stream: compressed=0x228, decompressed=0x800
-sLz77Block_082C779C:
-	@ analyzed canonical ROM range 0x082C779C-0x082C79C3
-	.incbin "build/graphics/analyzed/gunknown_82c779c_082c779c.4bpp.lz"
-	.if (. - sLz77Block_082C779C) != 0x228
-	.error "sLz77Block_082C779C compressed size mismatch"
+	@ semantic exact asset for 0x082C779C: sBg_Tilemap
+	.globl sBg_Tilemap
+sBg_Tilemap:
+	.incbin "build/graphics/berry_crush/bg.bin.lz"
+	.if (. - sBg_Tilemap) != 0x228
+	.error "sBg_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082C79C4: berry_crush.s: sub_08022434
 	.globl gBerryCrushData_082C79C4

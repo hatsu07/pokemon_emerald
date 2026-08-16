@@ -805,9 +805,9 @@ _08020F48:
 	b _08021028
 	.align 2, 0
 _08020F94: .4byte gBerryCrushData_082C5F84
-_08020F98: .4byte gBerryCrushData_082C74D4
-_08020F9C: .4byte gBerryCrushData_082C7604
-_08020FA0: .4byte gBerryCrushData_082C779C
+_08020F98: .4byte sCrusherTop_Tilemap
+_08020F9C: .4byte sContainerCap_Tilemap
+_08020FA0: .4byte sBg_Tilemap
 _08020FA4:
 	bl LoadWirelessStatusIndicatorSpriteGfx
 	movs r0, #0

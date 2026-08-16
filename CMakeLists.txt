@@ -2001,6 +2001,53 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
 
     # END UNION ROOM CHAT EXACT ASSET PIPELINE
+    # BEGIN BERRY CRUSH EXACT TILEMAP PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/berry_crush/crusher_top.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u8 --manifest "${CMAKE_SOURCE_DIR}/graphics/berry_crush/lz77_exact_plans.json"
+                --key "sCrusherTop_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/crusher_top.tilemap.u8" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/crusher_top.tilemap.u8"
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/berry_crush/container_cap.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u8 --manifest "${CMAKE_SOURCE_DIR}/graphics/berry_crush/lz77_exact_plans.json"
+                --key "sContainerCap_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/container_cap.tilemap.u8" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/container_cap.tilemap.u8"
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/berry_crush/bg.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u8 --manifest "${CMAKE_SOURCE_DIR}/graphics/berry_crush/lz77_exact_plans.json"
+                --key "sBg_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/bg.tilemap.u8" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/bg.tilemap.u8"
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END BERRY CRUSH EXACT TILEMAP PIPELINE
     # END POKEDEX AREA / POKENAV EXACT ASSET PIPELINE
 
     # BEGIN POKEDEX EXACT ASSET PIPELINE
