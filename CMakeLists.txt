@@ -160,6 +160,8 @@ set(REMAINING_B16_EXACT_OUTPUTS
     "build/graphics/battle_anims/unused/water_splash.bin.lz"
     "build/graphics/battle_anims/unused/water_splash_palette.gbapal.lz"
     "build/graphics/unused/basic_frame.bin.lz"
+    "build/graphics/unused/old_charmap.bin.lz"
+    "build/graphics/unused/old_charmap_palette.gbapal.lz"
 )
 set(REMAINING_B16_EXACT_SOURCES
     "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/spinning_ball_2_palette.png"
@@ -178,6 +180,8 @@ set(REMAINING_B16_EXACT_SOURCES
     "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/water_splash.tilemap.u16"
     "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/water_splash_palette.png"
     "${CMAKE_SOURCE_DIR}/graphics/unused/basic_frame.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/old_charmap.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/old_charmap_palette.png"
 )
 # END REMAINING B16 EXACT OUTPUT LIST
 

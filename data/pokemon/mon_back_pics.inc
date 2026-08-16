@@ -20,10 +20,14 @@ gFontTiles:
   .incbin "build/graphics/fonts/font_tiles.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/00_C013F0.4bpp.lz"
+  .globl gUnusedTimemap_OldCharmap
+gUnusedTimemap_OldCharmap:
+  .incbin "build/graphics/unused/old_charmap.bin.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/00_C01624.gbapal.lz"
+  .globl gUnusedPal_OldCharmap
+gUnusedPal_OldCharmap:
+  .incbin "build/graphics/unused/old_charmap_palette.gbapal.lz"
   .balign 4, 0
 
   .globl gSmokescreenImpactTiles
