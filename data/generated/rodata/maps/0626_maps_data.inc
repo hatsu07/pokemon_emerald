@@ -49,283 +49,283 @@ gObjectEventPal_JP_0847208C: @ 0x0847208C
 	.globl gObjectEventFrame_JP_084720AC
 gObjectEventFrame_JP_084720AC: @ 0x084720AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 3, 104; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084720ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/field_move.4bpp", 0x0, 0x200 @ gObjectEventPic_BrendanFieldMove frame slice
 	.globl gObjectEventFrame_JP_084722AC
 gObjectEventFrame_JP_084722AC: @ 0x084722AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 3, 104; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084722ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/field_move.4bpp", 0x200, 0x200 @ gObjectEventPic_BrendanFieldMove frame slice
 	.globl gObjectEventFrame_JP_084724AC
 gObjectEventFrame_JP_084724AC: @ 0x084724AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 3, 104; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084724ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/field_move.4bpp", 0x400, 0x200 @ gObjectEventPic_BrendanFieldMove frame slice
 	.globl gObjectEventFrame_JP_084726AC
 gObjectEventFrame_JP_084726AC: @ 0x084726AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 3, 104; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084726ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/field_move.4bpp", 0x600, 0x200 @ gObjectEventPic_BrendanFieldMove frame slice
 	.globl gObjectEventFrame_JP_084728AC
 gObjectEventFrame_JP_084728AC: @ 0x084728AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 3, 104; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084728ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/field_move.4bpp", 0x800, 0x200 @ gObjectEventPic_BrendanFieldMove frame slice
 	.globl gObjectEventFrame_JP_08472AAC
 gObjectEventFrame_JP_08472AAC: @ 0x08472AAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 2, 103; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08472aac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/surfing.4bpp", 0x0, 0x200 @ gObjectEventPic_BrendanSurfing frame slice
 	.globl gObjectEventFrame_JP_08472CAC
 gObjectEventFrame_JP_08472CAC: @ 0x08472CAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 2, 103; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08472cac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/surfing.4bpp", 0x200, 0x200 @ gObjectEventPic_BrendanSurfing frame slice
 	.globl gObjectEventFrame_JP_08472EAC
 gObjectEventFrame_JP_08472EAC: @ 0x08472EAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 2, 103; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08472eac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/surfing.4bpp", 0x400, 0x200 @ gObjectEventPic_BrendanSurfing frame slice
 	.globl gObjectEventFrame_JP_084730AC
 gObjectEventFrame_JP_084730AC: @ 0x084730AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 2, 103; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084730ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/surfing.4bpp", 0x600, 0x200 @ gObjectEventPic_BrendanSurfing frame slice
 	.globl gObjectEventFrame_JP_084732AC
 gObjectEventFrame_JP_084732AC: @ 0x084732AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 2, 103; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084732ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/surfing.4bpp", 0x800, 0x200 @ gObjectEventPic_BrendanSurfing frame slice
 	.globl gObjectEventFrame_JP_084734AC
 gObjectEventFrame_JP_084734AC: @ 0x084734AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 2, 103; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084734ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/surfing.4bpp", 0xA00, 0x200 @ gObjectEventPic_BrendanSurfing frame slice
 	.globl gObjectEventFrame_JP_084736AC
 gObjectEventFrame_JP_084736AC: @ 0x084736AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 1, 101; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084736ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/mach_bike.4bpp", 0x0, 0x200 @ gObjectEventPic_BrendanMachBike frame slice
 	.globl gObjectEventFrame_JP_084738AC
 gObjectEventFrame_JP_084738AC: @ 0x084738AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 1, 101; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084738ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/mach_bike.4bpp", 0x200, 0x200 @ gObjectEventPic_BrendanMachBike frame slice
 	.globl gObjectEventFrame_JP_08473AAC
 gObjectEventFrame_JP_08473AAC: @ 0x08473AAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 1, 101; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08473aac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/mach_bike.4bpp", 0x400, 0x200 @ gObjectEventPic_BrendanMachBike frame slice
 	.globl gObjectEventFrame_JP_08473CAC
 gObjectEventFrame_JP_08473CAC: @ 0x08473CAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 1, 101; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08473cac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/mach_bike.4bpp", 0x600, 0x200 @ gObjectEventPic_BrendanMachBike frame slice
 	.globl gObjectEventFrame_JP_08473EAC
 gObjectEventFrame_JP_08473EAC: @ 0x08473EAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 1, 101; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08473eac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/mach_bike.4bpp", 0x800, 0x200 @ gObjectEventPic_BrendanMachBike frame slice
 	.globl gObjectEventFrame_JP_084740AC
 gObjectEventFrame_JP_084740AC: @ 0x084740AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 1, 101; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084740ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/mach_bike.4bpp", 0xA00, 0x200 @ gObjectEventPic_BrendanMachBike frame slice
 	.globl gObjectEventFrame_JP_084742AC
 gObjectEventFrame_JP_084742AC: @ 0x084742AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 1, 101; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084742ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/mach_bike.4bpp", 0xC00, 0x200 @ gObjectEventPic_BrendanMachBike frame slice
 	.globl gObjectEventFrame_JP_084744AC
 gObjectEventFrame_JP_084744AC: @ 0x084744AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 1, 101; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084744ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/mach_bike.4bpp", 0xE00, 0x200 @ gObjectEventPic_BrendanMachBike frame slice
 	.globl gObjectEventFrame_JP_084746AC
 gObjectEventFrame_JP_084746AC: @ 0x084746AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 1, 101; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084746ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/mach_bike.4bpp", 0x1000, 0x200 @ gObjectEventPic_BrendanMachBike frame slice
 	.globl gObjectEventFrame_JP_084748AC
 gObjectEventFrame_JP_084748AC: @ 0x084748AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084748ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x0, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_08474AAC
 gObjectEventFrame_JP_08474AAC: @ 0x08474AAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08474aac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x200, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_08474CAC
 gObjectEventFrame_JP_08474CAC: @ 0x08474CAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08474cac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x400, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_08474EAC
 gObjectEventFrame_JP_08474EAC: @ 0x08474EAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08474eac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x600, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_084750AC
 gObjectEventFrame_JP_084750AC: @ 0x084750AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084750ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x800, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_084752AC
 gObjectEventFrame_JP_084752AC: @ 0x084752AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084752ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0xA00, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_084754AC
 gObjectEventFrame_JP_084754AC: @ 0x084754AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084754ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0xC00, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_084756AC
 gObjectEventFrame_JP_084756AC: @ 0x084756AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084756ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0xE00, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_084758AC
 gObjectEventFrame_JP_084758AC: @ 0x084758AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084758ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x1000, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_08475AAC
 gObjectEventFrame_JP_08475AAC: @ 0x08475AAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08475aac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x1200, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_08475CAC
 gObjectEventFrame_JP_08475CAC: @ 0x08475CAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08475cac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x1400, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_08475EAC
 gObjectEventFrame_JP_08475EAC: @ 0x08475EAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08475eac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x1600, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_084760AC
 gObjectEventFrame_JP_084760AC: @ 0x084760AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084760ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x1800, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_084762AC
 gObjectEventFrame_JP_084762AC: @ 0x084762AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084762ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x1A00, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_084764AC
 gObjectEventFrame_JP_084764AC: @ 0x084764AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084764ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x1C00, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_084766AC
 gObjectEventFrame_JP_084766AC: @ 0x084766AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084766ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x1E00, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_084768AC
 gObjectEventFrame_JP_084768AC: @ 0x084768AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084768ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x2000, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_08476AAC
 gObjectEventFrame_JP_08476AAC: @ 0x08476AAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08476aac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x2200, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_08476CAC
 gObjectEventFrame_JP_08476CAC: @ 0x08476CAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08476cac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x2400, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_08476EAC
 gObjectEventFrame_JP_08476EAC: @ 0x08476EAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08476eac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x2600, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_084770AC
 gObjectEventFrame_JP_084770AC: @ 0x084770AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084770ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x2800, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_084772AC
 gObjectEventFrame_JP_084772AC: @ 0x084772AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084772ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x2A00, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_084774AC
 gObjectEventFrame_JP_084774AC: @ 0x084774AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084774ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x2C00, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_084776AC
 gObjectEventFrame_JP_084776AC: @ 0x084776AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084776ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x2E00, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_084778AC
 gObjectEventFrame_JP_084778AC: @ 0x084778AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084778ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x3000, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_08477AAC
 gObjectEventFrame_JP_08477AAC: @ 0x08477AAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08477aac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x3200, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_08477CAC
 gObjectEventFrame_JP_08477CAC: @ 0x08477CAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 63, 102; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08477cac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/acro_bike.4bpp", 0x3400, 0x200 @ gObjectEventPic_BrendanAcroBike frame slice
 	.globl gObjectEventFrame_JP_08477EAC
 gObjectEventFrame_JP_08477EAC: @ 0x08477EAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 137; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08477eac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/fishing.4bpp", 0x0, 0x200 @ gObjectEventPic_BrendanFishing frame slice
 	.globl gObjectEventFrame_JP_084780AC
 gObjectEventFrame_JP_084780AC: @ 0x084780AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 137; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084780ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/fishing.4bpp", 0x200, 0x200 @ gObjectEventPic_BrendanFishing frame slice
 	.globl gObjectEventFrame_JP_084782AC
 gObjectEventFrame_JP_084782AC: @ 0x084782AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 137; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084782ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/fishing.4bpp", 0x400, 0x200 @ gObjectEventPic_BrendanFishing frame slice
 	.globl gObjectEventFrame_JP_084784AC
 gObjectEventFrame_JP_084784AC: @ 0x084784AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 137; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084784ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/fishing.4bpp", 0x600, 0x200 @ gObjectEventPic_BrendanFishing frame slice
 	.globl gObjectEventFrame_JP_084786AC
 gObjectEventFrame_JP_084786AC: @ 0x084786AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 137; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084786ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/fishing.4bpp", 0x800, 0x200 @ gObjectEventPic_BrendanFishing frame slice
 	.globl gObjectEventFrame_JP_084788AC
 gObjectEventFrame_JP_084788AC: @ 0x084788AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 137; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084788ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/fishing.4bpp", 0xA00, 0x200 @ gObjectEventPic_BrendanFishing frame slice
 	.globl gObjectEventFrame_JP_08478AAC
 gObjectEventFrame_JP_08478AAC: @ 0x08478AAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 137; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08478aac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/fishing.4bpp", 0xC00, 0x200 @ gObjectEventPic_BrendanFishing frame slice
 	.globl gObjectEventFrame_JP_08478CAC
 gObjectEventFrame_JP_08478CAC: @ 0x08478CAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 137; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08478cac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/fishing.4bpp", 0xE00, 0x200 @ gObjectEventPic_BrendanFishing frame slice
 	.globl gObjectEventFrame_JP_08478EAC
 gObjectEventFrame_JP_08478EAC: @ 0x08478EAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 137; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08478eac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/fishing.4bpp", 0x1000, 0x200 @ gObjectEventPic_BrendanFishing frame slice
 	.globl gObjectEventFrame_JP_084790AC
 gObjectEventFrame_JP_084790AC: @ 0x084790AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 137; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084790ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/fishing.4bpp", 0x1200, 0x200 @ gObjectEventPic_BrendanFishing frame slice
 	.globl gObjectEventFrame_JP_084792AC
 gObjectEventFrame_JP_084792AC: @ 0x084792AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 137; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084792ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/fishing.4bpp", 0x1400, 0x200 @ gObjectEventPic_BrendanFishing frame slice
 	.globl gObjectEventFrame_JP_084794AC
 gObjectEventFrame_JP_084794AC: @ 0x084794AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 137; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084794ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/fishing.4bpp", 0x1600, 0x200 @ gObjectEventPic_BrendanFishing frame slice
 	.globl gObjectEventFrame_JP_084796AC
 gObjectEventFrame_JP_084796AC: @ 0x084796AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 191; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084796ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/watering.4bpp", 0x0, 0x200 @ gObjectEventPic_BrendanWatering frame slice
 	.globl gObjectEventFrame_JP_084798AC
 gObjectEventFrame_JP_084798AC: @ 0x084798AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 191; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_084798ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/watering.4bpp", 0x200, 0x200 @ gObjectEventPic_BrendanWatering frame slice
 	.globl gObjectEventFrame_JP_08479AAC
 gObjectEventFrame_JP_08479AAC: @ 0x08479AAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 191; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08479aac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/watering.4bpp", 0x400, 0x200 @ gObjectEventPic_BrendanWatering frame slice
 	.globl gObjectEventFrame_JP_08479CAC
 gObjectEventFrame_JP_08479CAC: @ 0x08479CAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 191; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08479cac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/watering.4bpp", 0x600, 0x200 @ gObjectEventPic_BrendanWatering frame slice
 	.globl gObjectEventFrame_JP_08479EAC
 gObjectEventFrame_JP_08479EAC: @ 0x08479EAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 191; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_08479eac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/watering.4bpp", 0x800, 0x200 @ gObjectEventPic_BrendanWatering frame slice
 	.globl gObjectEventFrame_JP_0847A0AC
 gObjectEventFrame_JP_0847A0AC: @ 0x0847A0AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 191; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847a0ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/watering.4bpp", 0xA00, 0x200 @ gObjectEventPic_BrendanWatering frame slice
 	.globl gObjectEventFrame_JP_0847A2AC
 gObjectEventFrame_JP_0847A2AC: @ 0x0847A2AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 193; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847a2ac.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/decorating.4bpp", 0x0, 0x100 @ gObjectEventPic_BrendanDecorating frame slice
 	.globl gObjectEventFrame_JP_0847A3AC
 gObjectEventFrame_JP_0847A3AC: @ 0x0847A3AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 194; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847a3ac.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/decorating.4bpp", 0x0, 0x100 @ gObjectEventPic_MayDecorating frame slice
 	.globl gObjectEventFrame_JP_0847A4AC
 gObjectEventFrame_JP_0847A4AC: @ 0x0847A4AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 111; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847a4ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/underwater.4bpp", 0x0, 0x200 @ gObjectEventPic_BrendanUnderwater frame slice
 	.globl gObjectEventFrame_JP_0847A6AC
 gObjectEventFrame_JP_0847A6AC: @ 0x0847A6AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 111; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847a6ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/underwater.4bpp", 0x200, 0x200 @ gObjectEventPic_BrendanUnderwater frame slice
 	.globl gObjectEventFrame_JP_0847A8AC
 gObjectEventFrame_JP_0847A8AC: @ 0x0847A8AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 111; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847a8ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/brendan/underwater.4bpp", 0x400, 0x200 @ gObjectEventPic_BrendanUnderwater frame slice
 	.globl gObjectEventGfxUnreferenced_JP_0847AAAC
 gObjectEventGfxUnreferenced_JP_0847AAAC: @ 0x0847AAAC
 	@ object-event graphics/palette payload not reached by current graphics-info table
@@ -364,15 +364,15 @@ gObjectEventGfxUnreferenced_JP_0847AAAC: @ 0x0847AAAC
 	.globl gObjectEventFrame_JP_0847ACAC
 gObjectEventFrame_JP_0847ACAC: @ 0x0847ACAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 112; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847acac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/may/underwater.4bpp", 0x0, 0x200 @ gObjectEventPic_MayUnderwater frame slice
 	.globl gObjectEventFrame_JP_0847AEAC
 gObjectEventFrame_JP_0847AEAC: @ 0x0847AEAC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 112; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847aeac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/may/underwater.4bpp", 0x200, 0x200 @ gObjectEventPic_MayUnderwater frame slice
 	.globl gObjectEventFrame_JP_0847B0AC
 gObjectEventFrame_JP_0847B0AC: @ 0x0847B0AC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 112; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847b0ac.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/may/underwater.4bpp", 0x400, 0x200 @ gObjectEventPic_MayUnderwater frame slice
 	.globl gObjectEventGfxUnreferenced_JP_0847B2AC
 gObjectEventGfxUnreferenced_JP_0847B2AC: @ 0x0847B2AC
 	@ object-event graphics/palette payload not reached by current graphics-info table
@@ -416,72 +416,72 @@ gObjectEventPal_JP_0847B4AC: @ 0x0847B4AC
 	.globl gObjectEventFrame_JP_0847B4CC
 gObjectEventFrame_JP_0847B4CC: @ 0x0847B4CC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847b4cc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/walking.4bpp", 0x0, 0x100 @ gObjectEventPic_MayNormal frame slice
 	.globl gObjectEventFrame_JP_0847B5CC
 gObjectEventFrame_JP_0847B5CC: @ 0x0847B5CC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847b5cc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/walking.4bpp", 0x100, 0x100 @ gObjectEventPic_MayNormal frame slice
 	.globl gObjectEventFrame_JP_0847B6CC
 gObjectEventFrame_JP_0847B6CC: @ 0x0847B6CC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847b6cc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/walking.4bpp", 0x200, 0x100 @ gObjectEventPic_MayNormal frame slice
 	.globl gObjectEventFrame_JP_0847B7CC
 gObjectEventFrame_JP_0847B7CC: @ 0x0847B7CC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847b7cc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/walking.4bpp", 0x300, 0x100 @ gObjectEventPic_MayNormal frame slice
 	.globl gObjectEventFrame_JP_0847B8CC
 gObjectEventFrame_JP_0847B8CC: @ 0x0847B8CC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847b8cc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/walking.4bpp", 0x400, 0x100 @ gObjectEventPic_MayNormal frame slice
 	.globl gObjectEventFrame_JP_0847B9CC
 gObjectEventFrame_JP_0847B9CC: @ 0x0847B9CC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847b9cc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/walking.4bpp", 0x500, 0x100 @ gObjectEventPic_MayNormal frame slice
 	.globl gObjectEventFrame_JP_0847BACC
 gObjectEventFrame_JP_0847BACC: @ 0x0847BACC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847bacc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/walking.4bpp", 0x600, 0x100 @ gObjectEventPic_MayNormal frame slice
 	.globl gObjectEventFrame_JP_0847BBCC
 gObjectEventFrame_JP_0847BBCC: @ 0x0847BBCC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847bbcc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/walking.4bpp", 0x700, 0x100 @ gObjectEventPic_MayNormal frame slice
 	.globl gObjectEventFrame_JP_0847BCCC
 gObjectEventFrame_JP_0847BCCC: @ 0x0847BCCC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847bccc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/walking.4bpp", 0x800, 0x100 @ gObjectEventPic_MayNormal frame slice
 	.globl gObjectEventFrame_JP_0847BDCC
 gObjectEventFrame_JP_0847BDCC: @ 0x0847BDCC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847bdcc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/running.4bpp", 0x0, 0x100 @ gObjectEventPic_MayRunning frame slice
 	.globl gObjectEventFrame_JP_0847BECC
 gObjectEventFrame_JP_0847BECC: @ 0x0847BECC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847becc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/running.4bpp", 0x100, 0x100 @ gObjectEventPic_MayRunning frame slice
 	.globl gObjectEventFrame_JP_0847BFCC
 gObjectEventFrame_JP_0847BFCC: @ 0x0847BFCC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847bfcc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/running.4bpp", 0x200, 0x100 @ gObjectEventPic_MayRunning frame slice
 	.globl gObjectEventFrame_JP_0847C0CC
 gObjectEventFrame_JP_0847C0CC: @ 0x0847C0CC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847c0cc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/running.4bpp", 0x300, 0x100 @ gObjectEventPic_MayRunning frame slice
 	.globl gObjectEventFrame_JP_0847C1CC
 gObjectEventFrame_JP_0847C1CC: @ 0x0847C1CC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847c1cc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/running.4bpp", 0x400, 0x100 @ gObjectEventPic_MayRunning frame slice
 	.globl gObjectEventFrame_JP_0847C2CC
 gObjectEventFrame_JP_0847C2CC: @ 0x0847C2CC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847c2cc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/running.4bpp", 0x500, 0x100 @ gObjectEventPic_MayRunning frame slice
 	.globl gObjectEventFrame_JP_0847C3CC
 gObjectEventFrame_JP_0847C3CC: @ 0x0847C3CC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847c3cc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/running.4bpp", 0x600, 0x100 @ gObjectEventPic_MayRunning frame slice
 	.globl gObjectEventFrame_JP_0847C4CC
 gObjectEventFrame_JP_0847C4CC: @ 0x0847C4CC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847c4cc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/running.4bpp", 0x700, 0x100 @ gObjectEventPic_MayRunning frame slice
 	.globl gObjectEventFrame_JP_0847C5CC
 gObjectEventFrame_JP_0847C5CC: @ 0x0847C5CC
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 89, 105, 217; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847c5cc.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/may/running.4bpp", 0x800, 0x100 @ gObjectEventPic_MayRunning frame slice

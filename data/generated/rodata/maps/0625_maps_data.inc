@@ -104,39 +104,39 @@ gObjectEventPal_RubySapphireBrendan: @ 0x08470C4C
 	.globl gObjectEventFrame_JP_08470C6C
 gObjectEventFrame_JP_08470C6C: @ 0x08470C6C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 235; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_08470c6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_brendan/walking.4bpp", 0x0, 0x100 @ gObjectEventPic_RubySapphireBrendanNormal frame slice
 	.globl gObjectEventFrame_JP_08470D6C
 gObjectEventFrame_JP_08470D6C: @ 0x08470D6C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 235; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_08470d6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_brendan/walking.4bpp", 0x100, 0x100 @ gObjectEventPic_RubySapphireBrendanNormal frame slice
 	.globl gObjectEventFrame_JP_08470E6C
 gObjectEventFrame_JP_08470E6C: @ 0x08470E6C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 235; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_08470e6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_brendan/walking.4bpp", 0x200, 0x100 @ gObjectEventPic_RubySapphireBrendanNormal frame slice
 	.globl gObjectEventFrame_JP_08470F6C
 gObjectEventFrame_JP_08470F6C: @ 0x08470F6C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 235; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_08470f6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_brendan/walking.4bpp", 0x300, 0x100 @ gObjectEventPic_RubySapphireBrendanNormal frame slice
 	.globl gObjectEventFrame_JP_0847106C
 gObjectEventFrame_JP_0847106C: @ 0x0847106C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 235; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847106c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_brendan/walking.4bpp", 0x400, 0x100 @ gObjectEventPic_RubySapphireBrendanNormal frame slice
 	.globl gObjectEventFrame_JP_0847116C
 gObjectEventFrame_JP_0847116C: @ 0x0847116C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 235; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847116c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_brendan/walking.4bpp", 0x500, 0x100 @ gObjectEventPic_RubySapphireBrendanNormal frame slice
 	.globl gObjectEventFrame_JP_0847126C
 gObjectEventFrame_JP_0847126C: @ 0x0847126C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 235; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847126c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_brendan/walking.4bpp", 0x600, 0x100 @ gObjectEventPic_RubySapphireBrendanNormal frame slice
 	.globl gObjectEventFrame_JP_0847136C
 gObjectEventFrame_JP_0847136C: @ 0x0847136C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 235; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847136c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_brendan/walking.4bpp", 0x700, 0x100 @ gObjectEventPic_RubySapphireBrendanNormal frame slice
 	.globl gObjectEventFrame_JP_0847146C
 gObjectEventFrame_JP_0847146C: @ 0x0847146C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 235; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847146c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_brendan/walking.4bpp", 0x800, 0x100 @ gObjectEventPic_RubySapphireBrendanNormal frame slice
 	.globl gObjectEventGfxUnreferenced_JP_0847156C
 gObjectEventGfxUnreferenced_JP_0847156C: @ 0x0847156C
 	@ object-event graphics/palette payload not reached by current graphics-info table

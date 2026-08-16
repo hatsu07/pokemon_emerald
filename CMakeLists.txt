@@ -1722,6 +1722,31 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             DEPENDS "${INPUT_PNG}" "${GBAGFX}"
             VERBATIM)
 
+    # BEGIN OBJECT EVENT CANONICAL PNG PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/object_events/pics/(.+)[.]4bpp$")
+        set(OBJECT_EVENT_PIC_REL "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/object_events/pics/${OBJECT_EVENT_PIC_REL}.png")
+        set(OBJECT_EVENT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/object_events/object_event_pic_flags.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_object_event_4bpp.py"
+                --gbagfx "${GBAGFX}"
+                --manifest "${OBJECT_EVENT_MANIFEST}"
+                --asset-key "${OBJECT_EVENT_PIC_REL}.png"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${OBJECT_EVENT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_object_event_4bpp.py"
+                "${GBAGFX}"
+            VERBATIM)
+    # END OBJECT EVENT CANONICAL PNG PIPELINE
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/field_effects/pics/(.+)[.]4bpp$")
         set(FIELD_EFFECT_GFX_STEM "${CMAKE_MATCH_1}")

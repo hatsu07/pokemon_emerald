@@ -14,39 +14,39 @@ gObjectEventGfxUnreferenced_JP_0847C6EC: @ 0x0847C6EC
 	.globl gObjectEventFrame_JP_0847C70C
 gObjectEventFrame_JP_0847C70C: @ 0x0847C70C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 236; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847c70c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_may/walking.4bpp", 0x0, 0x100 @ gObjectEventPic_RubySapphireMayNormal frame slice
 	.globl gObjectEventFrame_JP_0847C80C
 gObjectEventFrame_JP_0847C80C: @ 0x0847C80C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 236; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847c80c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_may/walking.4bpp", 0x100, 0x100 @ gObjectEventPic_RubySapphireMayNormal frame slice
 	.globl gObjectEventFrame_JP_0847C90C
 gObjectEventFrame_JP_0847C90C: @ 0x0847C90C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 236; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847c90c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_may/walking.4bpp", 0x200, 0x100 @ gObjectEventPic_RubySapphireMayNormal frame slice
 	.globl gObjectEventFrame_JP_0847CA0C
 gObjectEventFrame_JP_0847CA0C: @ 0x0847CA0C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 236; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847ca0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_may/walking.4bpp", 0x300, 0x100 @ gObjectEventPic_RubySapphireMayNormal frame slice
 	.globl gObjectEventFrame_JP_0847CB0C
 gObjectEventFrame_JP_0847CB0C: @ 0x0847CB0C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 236; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847cb0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_may/walking.4bpp", 0x400, 0x100 @ gObjectEventPic_RubySapphireMayNormal frame slice
 	.globl gObjectEventFrame_JP_0847CC0C
 gObjectEventFrame_JP_0847CC0C: @ 0x0847CC0C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 236; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847cc0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_may/walking.4bpp", 0x500, 0x100 @ gObjectEventPic_RubySapphireMayNormal frame slice
 	.globl gObjectEventFrame_JP_0847CD0C
 gObjectEventFrame_JP_0847CD0C: @ 0x0847CD0C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 236; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847cd0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_may/walking.4bpp", 0x600, 0x100 @ gObjectEventPic_RubySapphireMayNormal frame slice
 	.globl gObjectEventFrame_JP_0847CE0C
 gObjectEventFrame_JP_0847CE0C: @ 0x0847CE0C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 236; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847ce0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_may/walking.4bpp", 0x700, 0x100 @ gObjectEventPic_RubySapphireMayNormal frame slice
 	.globl gObjectEventFrame_JP_0847CF0C
 gObjectEventFrame_JP_0847CF0C: @ 0x0847CF0C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 236; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0847cf0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/ruby_sapphire_may/walking.4bpp", 0x800, 0x100 @ gObjectEventPic_RubySapphireMayNormal frame slice
 	.globl gObjectEventGfxUnreferenced_JP_0847D00C
 gObjectEventGfxUnreferenced_JP_0847D00C: @ 0x0847D00C
 	@ object-event graphics/palette payload not reached by current graphics-info table

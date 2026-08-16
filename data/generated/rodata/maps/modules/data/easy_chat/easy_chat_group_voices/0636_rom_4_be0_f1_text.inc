@@ -25,23 +25,23 @@ gObjectEventPal_JP_084BE12C: @ 0x084BE12C
 	.globl gObjectEventFrameGfx_JP_084BE14C
 gObjectEventFrameGfx_JP_084BE14C: @ 0x084BE14C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084be14c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/vigoroth.4bpp", 0x0, 0x200 @ gObjectEventPic_Vigoroth frame slice
 	.globl gObjectEventFrameGfx_JP_084BE34C
 gObjectEventFrameGfx_JP_084BE34C: @ 0x084BE34C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084be34c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/vigoroth.4bpp", 0x200, 0x200 @ gObjectEventPic_Vigoroth frame slice
 	.globl gObjectEventFrameGfx_JP_084BE54C
 gObjectEventFrameGfx_JP_084BE54C: @ 0x084BE54C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084be54c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/vigoroth.4bpp", 0x400, 0x200 @ gObjectEventPic_Vigoroth frame slice
 	.globl gObjectEventFrameGfx_JP_084BE74C
 gObjectEventFrameGfx_JP_084BE74C: @ 0x084BE74C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084be74c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/vigoroth.4bpp", 0x600, 0x200 @ gObjectEventPic_Vigoroth frame slice
 	.globl gObjectEventFrameGfx_JP_084BE94C
 gObjectEventFrameGfx_JP_084BE94C: @ 0x084BE94C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084be94c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/vigoroth.4bpp", 0x800, 0x200 @ gObjectEventPic_Vigoroth frame slice
 	.globl gObjectEventPal_JP_084BEB4C
 gObjectEventPal_JP_084BEB4C: @ 0x084BEB4C
 	@ 16-color object-event palette
@@ -51,43 +51,43 @@ gObjectEventPal_JP_084BEB4C: @ 0x084BEB4C
 	.globl gObjectEventFrameGfx_JP_084BEB6C
 gObjectEventFrameGfx_JP_084BEB6C: @ 0x084BEB6C
 	@ 4bpp frame payload; byte size = 0x80 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084beb6c.4bpp" @ size=0x80
+	.incbin "build/graphics/object_events/pics/misc/birchs_bag.4bpp", 0x0, 0x80 @ gObjectEventPic_BirchsBag frame slice
 	.globl gObjectEventFrameGfx_JP_084BEBEC
 gObjectEventFrameGfx_JP_084BEBEC: @ 0x084BEBEC
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084bebec.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/enemy_zigzagoon.4bpp", 0x0, 0x200 @ gObjectEventPic_EnemyZigzagoon frame slice
 	.globl gObjectEventFrameGfx_JP_084BEDEC
 gObjectEventFrameGfx_JP_084BEDEC: @ 0x084BEDEC
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084bedec.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/enemy_zigzagoon.4bpp", 0x200, 0x200 @ gObjectEventPic_EnemyZigzagoon frame slice
 	.globl gObjectEventFrameGfx_JP_084BEFEC
 gObjectEventFrameGfx_JP_084BEFEC: @ 0x084BEFEC
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084befec.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/enemy_zigzagoon.4bpp", 0x400, 0x200 @ gObjectEventPic_EnemyZigzagoon frame slice
 	.globl gObjectEventFrameGfx_JP_084BF1EC
 gObjectEventFrameGfx_JP_084BF1EC: @ 0x084BF1EC
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084bf1ec.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/enemy_zigzagoon.4bpp", 0x600, 0x200 @ gObjectEventPic_EnemyZigzagoon frame slice
 	.globl gObjectEventFrameGfx_JP_084BF3EC
 gObjectEventFrameGfx_JP_084BF3EC: @ 0x084BF3EC
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084bf3ec.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/enemy_zigzagoon.4bpp", 0x800, 0x200 @ gObjectEventPic_EnemyZigzagoon frame slice
 	.globl gObjectEventFrameGfx_JP_084BF5EC
 gObjectEventFrameGfx_JP_084BF5EC: @ 0x084BF5EC
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084bf5ec.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/enemy_zigzagoon.4bpp", 0xA00, 0x200 @ gObjectEventPic_EnemyZigzagoon frame slice
 	.globl gObjectEventFrameGfx_JP_084BF7EC
 gObjectEventFrameGfx_JP_084BF7EC: @ 0x084BF7EC
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084bf7ec.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/enemy_zigzagoon.4bpp", 0xC00, 0x200 @ gObjectEventPic_EnemyZigzagoon frame slice
 	.globl gObjectEventFrameGfx_JP_084BF9EC
 gObjectEventFrameGfx_JP_084BF9EC: @ 0x084BF9EC
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084bf9ec.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/enemy_zigzagoon.4bpp", 0xE00, 0x200 @ gObjectEventPic_EnemyZigzagoon frame slice
 	.globl gObjectEventFrameGfx_JP_084BFBEC
 gObjectEventFrameGfx_JP_084BFBEC: @ 0x084BFBEC
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084bfbec.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/enemy_zigzagoon.4bpp", 0x1000, 0x200 @ gObjectEventPic_EnemyZigzagoon frame slice
 	.globl gObjectEventPal_JP_084BFDEC
 gObjectEventPal_JP_084BFDEC: @ 0x084BFDEC
 	@ 16-color object-event palette
@@ -97,39 +97,39 @@ gObjectEventPal_JP_084BFDEC: @ 0x084BFDEC
 	.globl gObjectEventFrameGfx_JP_084BFE0C
 gObjectEventFrameGfx_JP_084BFE0C: @ 0x084BFE0C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084bfe0c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/poochyena.4bpp", 0x0, 0x200 @ gObjectEventPic_Poochyena frame slice
 	.globl gObjectEventFrameGfx_JP_084C000C
 gObjectEventFrameGfx_JP_084C000C: @ 0x084C000C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c000c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/poochyena.4bpp", 0x200, 0x200 @ gObjectEventPic_Poochyena frame slice
 	.globl gObjectEventFrameGfx_JP_084C020C
 gObjectEventFrameGfx_JP_084C020C: @ 0x084C020C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c020c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/poochyena.4bpp", 0x400, 0x200 @ gObjectEventPic_Poochyena frame slice
 	.globl gObjectEventFrameGfx_JP_084C040C
 gObjectEventFrameGfx_JP_084C040C: @ 0x084C040C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c040c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/poochyena.4bpp", 0x600, 0x200 @ gObjectEventPic_Poochyena frame slice
 	.globl gObjectEventFrameGfx_JP_084C060C
 gObjectEventFrameGfx_JP_084C060C: @ 0x084C060C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c060c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/poochyena.4bpp", 0x800, 0x200 @ gObjectEventPic_Poochyena frame slice
 	.globl gObjectEventFrameGfx_JP_084C080C
 gObjectEventFrameGfx_JP_084C080C: @ 0x084C080C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c080c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/poochyena.4bpp", 0xA00, 0x200 @ gObjectEventPic_Poochyena frame slice
 	.globl gObjectEventFrameGfx_JP_084C0A0C
 gObjectEventFrameGfx_JP_084C0A0C: @ 0x084C0A0C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c0a0c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/poochyena.4bpp", 0xC00, 0x200 @ gObjectEventPic_Poochyena frame slice
 	.globl gObjectEventFrameGfx_JP_084C0C0C
 gObjectEventFrameGfx_JP_084C0C0C: @ 0x084C0C0C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c0c0c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/poochyena.4bpp", 0xE00, 0x200 @ gObjectEventPic_Poochyena frame slice
 	.globl gObjectEventFrameGfx_JP_084C0E0C
 gObjectEventFrameGfx_JP_084C0E0C: @ 0x084C0E0C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c0e0c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/poochyena.4bpp", 0x1000, 0x200 @ gObjectEventPic_Poochyena frame slice
 	.globl gObjectEventPal_JP_084C100C
 gObjectEventPal_JP_084C100C: @ 0x084C100C
 	@ 16-color object-event palette
@@ -139,7 +139,7 @@ gObjectEventPal_JP_084C100C: @ 0x084C100C
 	.globl gObjectEventFrameGfx_JP_084C102C
 gObjectEventFrameGfx_JP_084C102C: @ 0x084C102C
 	@ 4bpp frame payload; byte size = 0x800 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c102c.4bpp" @ size=0x800
+	.incbin "build/graphics/object_events/pics/misc/cable_car.4bpp", 0x0, 0x800 @ gObjectEventPic_CableCar frame slice
 	.globl gObjectEventPal_JP_084C182C
 gObjectEventPal_JP_084C182C: @ 0x084C182C
 	@ 16-color object-event palette
@@ -149,7 +149,7 @@ gObjectEventPal_JP_084C182C: @ 0x084C182C
 	.globl gObjectEventFrameGfx_JP_084C184C
 gObjectEventFrameGfx_JP_084C184C: @ 0x084C184C
 	@ 4bpp frame payload; byte size = 0x780 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c184c.4bpp" @ size=0x780
+	.incbin "build/graphics/object_events/pics/misc/ss_tidal.4bpp", 0x0, 0x780 @ gObjectEventPic_SSTidal frame slice
 	.globl gObjectEventPal_JP_084C1FCC
 gObjectEventPal_JP_084C1FCC: @ 0x084C1FCC
 	@ 16-color object-event palette
@@ -207,735 +207,735 @@ gObjectEventPal_JP_084C1FCC: @ 0x084C1FCC
 	.globl gObjectEventFrameGfx_JP_084C22EC
 gObjectEventFrameGfx_JP_084C22EC: @ 0x084C22EC
 	@ 4bpp frame payload; byte size = 0x80 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c22ec.4bpp" @ size=0x80
+	.incbin "build/graphics/object_events/pics/berry_trees/dirt_pile.4bpp", 0x0, 0x80 @ gObjectEventPic_BerryTreeDirtPile frame slice
 	.globl gObjectEventFrameGfx_JP_084C236C
 gObjectEventFrameGfx_JP_084C236C: @ 0x084C236C
 	@ 4bpp frame payload; byte size = 0x80 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c236c.4bpp" @ size=0x80
+	.incbin "build/graphics/object_events/pics/berry_trees/sprout.4bpp", 0x0, 0x80 @ gObjectEventPic_BerryTreeSprout frame slice
 	.globl gObjectEventFrameGfx_JP_084C23EC
 gObjectEventFrameGfx_JP_084C23EC: @ 0x084C23EC
 	@ 4bpp frame payload; byte size = 0x80 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c23ec.4bpp" @ size=0x80
+	.incbin "build/graphics/object_events/pics/berry_trees/sprout.4bpp", 0x80, 0x80 @ gObjectEventPic_BerryTreeSprout frame slice
 	.globl gObjectEventFrameGfx_JP_084C246C
 gObjectEventFrameGfx_JP_084C246C: @ 0x084C246C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c246c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pecha.4bpp", 0x0, 0x100 @ gObjectEventPic_PechaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C256C
 gObjectEventFrameGfx_JP_084C256C: @ 0x084C256C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c256c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pecha.4bpp", 0x100, 0x100 @ gObjectEventPic_PechaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C266C
 gObjectEventFrameGfx_JP_084C266C: @ 0x084C266C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c266c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pecha.4bpp", 0x200, 0x100 @ gObjectEventPic_PechaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C276C
 gObjectEventFrameGfx_JP_084C276C: @ 0x084C276C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c276c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pecha.4bpp", 0x300, 0x100 @ gObjectEventPic_PechaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C286C
 gObjectEventFrameGfx_JP_084C286C: @ 0x084C286C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c286c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pecha.4bpp", 0x400, 0x100 @ gObjectEventPic_PechaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C296C
 gObjectEventFrameGfx_JP_084C296C: @ 0x084C296C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c296c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pecha.4bpp", 0x500, 0x100 @ gObjectEventPic_PechaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C2A6C
 gObjectEventFrameGfx_JP_084C2A6C: @ 0x084C2A6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c2a6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/kelpsy.4bpp", 0x0, 0x100 @ gObjectEventPic_KelpsyBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C2B6C
 gObjectEventFrameGfx_JP_084C2B6C: @ 0x084C2B6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c2b6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/kelpsy.4bpp", 0x100, 0x100 @ gObjectEventPic_KelpsyBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C2C6C
 gObjectEventFrameGfx_JP_084C2C6C: @ 0x084C2C6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c2c6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/kelpsy.4bpp", 0x200, 0x100 @ gObjectEventPic_KelpsyBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C2D6C
 gObjectEventFrameGfx_JP_084C2D6C: @ 0x084C2D6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c2d6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/kelpsy.4bpp", 0x300, 0x100 @ gObjectEventPic_KelpsyBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C2E6C
 gObjectEventFrameGfx_JP_084C2E6C: @ 0x084C2E6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c2e6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/kelpsy.4bpp", 0x400, 0x100 @ gObjectEventPic_KelpsyBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C2F6C
 gObjectEventFrameGfx_JP_084C2F6C: @ 0x084C2F6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c2f6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/kelpsy.4bpp", 0x500, 0x100 @ gObjectEventPic_KelpsyBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C306C
 gObjectEventFrameGfx_JP_084C306C: @ 0x084C306C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c306c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/wepear.4bpp", 0x0, 0x100 @ gObjectEventPic_WepearBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C316C
 gObjectEventFrameGfx_JP_084C316C: @ 0x084C316C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c316c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/wepear.4bpp", 0x100, 0x100 @ gObjectEventPic_WepearBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C326C
 gObjectEventFrameGfx_JP_084C326C: @ 0x084C326C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c326c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/wepear.4bpp", 0x200, 0x100 @ gObjectEventPic_WepearBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C336C
 gObjectEventFrameGfx_JP_084C336C: @ 0x084C336C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c336c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/wepear.4bpp", 0x300, 0x100 @ gObjectEventPic_WepearBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C346C
 gObjectEventFrameGfx_JP_084C346C: @ 0x084C346C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c346c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/wepear.4bpp", 0x400, 0x100 @ gObjectEventPic_WepearBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C356C
 gObjectEventFrameGfx_JP_084C356C: @ 0x084C356C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c356c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/wepear.4bpp", 0x500, 0x100 @ gObjectEventPic_WepearBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C366C
 gObjectEventFrameGfx_JP_084C366C: @ 0x084C366C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c366c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/iapapa.4bpp", 0x0, 0x100 @ gObjectEventPic_IapapaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C376C
 gObjectEventFrameGfx_JP_084C376C: @ 0x084C376C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c376c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/iapapa.4bpp", 0x100, 0x100 @ gObjectEventPic_IapapaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C386C
 gObjectEventFrameGfx_JP_084C386C: @ 0x084C386C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c386c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/iapapa.4bpp", 0x200, 0x100 @ gObjectEventPic_IapapaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C396C
 gObjectEventFrameGfx_JP_084C396C: @ 0x084C396C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c396c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/iapapa.4bpp", 0x300, 0x100 @ gObjectEventPic_IapapaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C3A6C
 gObjectEventFrameGfx_JP_084C3A6C: @ 0x084C3A6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c3a6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/iapapa.4bpp", 0x400, 0x100 @ gObjectEventPic_IapapaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C3B6C
 gObjectEventFrameGfx_JP_084C3B6C: @ 0x084C3B6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c3b6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/iapapa.4bpp", 0x500, 0x100 @ gObjectEventPic_IapapaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C3C6C
 gObjectEventFrameGfx_JP_084C3C6C: @ 0x084C3C6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c3c6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/cheri.4bpp", 0x0, 0x100 @ gObjectEventPic_CheriBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C3D6C
 gObjectEventFrameGfx_JP_084C3D6C: @ 0x084C3D6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c3d6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/cheri.4bpp", 0x100, 0x100 @ gObjectEventPic_CheriBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C3E6C
 gObjectEventFrameGfx_JP_084C3E6C: @ 0x084C3E6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c3e6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/cheri.4bpp", 0x200, 0x100 @ gObjectEventPic_CheriBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C3F6C
 gObjectEventFrameGfx_JP_084C3F6C: @ 0x084C3F6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c3f6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/cheri.4bpp", 0x300, 0x100 @ gObjectEventPic_CheriBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C406C
 gObjectEventFrameGfx_JP_084C406C: @ 0x084C406C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c406c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/cheri.4bpp", 0x400, 0x100 @ gObjectEventPic_CheriBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C416C
 gObjectEventFrameGfx_JP_084C416C: @ 0x084C416C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c416c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/cheri.4bpp", 0x500, 0x100 @ gObjectEventPic_CheriBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C426C
 gObjectEventFrameGfx_JP_084C426C: @ 0x084C426C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c426c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/figy.4bpp", 0x0, 0x100 @ gObjectEventPic_FigyBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C436C
 gObjectEventFrameGfx_JP_084C436C: @ 0x084C436C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c436c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/figy.4bpp", 0x100, 0x100 @ gObjectEventPic_FigyBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C446C
 gObjectEventFrameGfx_JP_084C446C: @ 0x084C446C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c446c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/figy.4bpp", 0x200, 0x100 @ gObjectEventPic_FigyBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C456C
 gObjectEventFrameGfx_JP_084C456C: @ 0x084C456C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c456c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/figy.4bpp", 0x300, 0x100 @ gObjectEventPic_FigyBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C466C
 gObjectEventFrameGfx_JP_084C466C: @ 0x084C466C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c466c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/figy.4bpp", 0x400, 0x100 @ gObjectEventPic_FigyBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C476C
 gObjectEventFrameGfx_JP_084C476C: @ 0x084C476C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c476c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/figy.4bpp", 0x500, 0x100 @ gObjectEventPic_FigyBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C486C
 gObjectEventFrameGfx_JP_084C486C: @ 0x084C486C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c486c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/mago.4bpp", 0x0, 0x100 @ gObjectEventPic_MagoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C496C
 gObjectEventFrameGfx_JP_084C496C: @ 0x084C496C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c496c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/mago.4bpp", 0x100, 0x100 @ gObjectEventPic_MagoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C4A6C
 gObjectEventFrameGfx_JP_084C4A6C: @ 0x084C4A6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c4a6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/mago.4bpp", 0x200, 0x100 @ gObjectEventPic_MagoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C4B6C
 gObjectEventFrameGfx_JP_084C4B6C: @ 0x084C4B6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c4b6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/mago.4bpp", 0x300, 0x100 @ gObjectEventPic_MagoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C4C6C
 gObjectEventFrameGfx_JP_084C4C6C: @ 0x084C4C6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c4c6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/mago.4bpp", 0x400, 0x100 @ gObjectEventPic_MagoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C4D6C
 gObjectEventFrameGfx_JP_084C4D6C: @ 0x084C4D6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c4d6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/mago.4bpp", 0x500, 0x100 @ gObjectEventPic_MagoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C4E6C
 gObjectEventFrameGfx_JP_084C4E6C: @ 0x084C4E6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c4e6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/lum.4bpp", 0x0, 0x100 @ gObjectEventPic_LumBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C4F6C
 gObjectEventFrameGfx_JP_084C4F6C: @ 0x084C4F6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c4f6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/lum.4bpp", 0x100, 0x100 @ gObjectEventPic_LumBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C506C
 gObjectEventFrameGfx_JP_084C506C: @ 0x084C506C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c506c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/lum.4bpp", 0x200, 0x100 @ gObjectEventPic_LumBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C516C
 gObjectEventFrameGfx_JP_084C516C: @ 0x084C516C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c516c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/lum.4bpp", 0x300, 0x100 @ gObjectEventPic_LumBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C526C
 gObjectEventFrameGfx_JP_084C526C: @ 0x084C526C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c526c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/lum.4bpp", 0x400, 0x100 @ gObjectEventPic_LumBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C536C
 gObjectEventFrameGfx_JP_084C536C: @ 0x084C536C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c536c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/lum.4bpp", 0x500, 0x100 @ gObjectEventPic_LumBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C546C
 gObjectEventFrameGfx_JP_084C546C: @ 0x084C546C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c546c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/razz.4bpp", 0x0, 0x100 @ gObjectEventPic_RazzBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C556C
 gObjectEventFrameGfx_JP_084C556C: @ 0x084C556C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c556c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/razz.4bpp", 0x100, 0x100 @ gObjectEventPic_RazzBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C566C
 gObjectEventFrameGfx_JP_084C566C: @ 0x084C566C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c566c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/razz.4bpp", 0x200, 0x100 @ gObjectEventPic_RazzBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C576C
 gObjectEventFrameGfx_JP_084C576C: @ 0x084C576C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c576c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/razz.4bpp", 0x300, 0x100 @ gObjectEventPic_RazzBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C586C
 gObjectEventFrameGfx_JP_084C586C: @ 0x084C586C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c586c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/razz.4bpp", 0x400, 0x100 @ gObjectEventPic_RazzBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C596C
 gObjectEventFrameGfx_JP_084C596C: @ 0x084C596C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c596c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/razz.4bpp", 0x500, 0x100 @ gObjectEventPic_RazzBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C5A6C
 gObjectEventFrameGfx_JP_084C5A6C: @ 0x084C5A6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c5a6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/grepa.4bpp", 0x0, 0x100 @ gObjectEventPic_GrepaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C5B6C
 gObjectEventFrameGfx_JP_084C5B6C: @ 0x084C5B6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c5b6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/grepa.4bpp", 0x100, 0x100 @ gObjectEventPic_GrepaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C5C6C
 gObjectEventFrameGfx_JP_084C5C6C: @ 0x084C5C6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c5c6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/grepa.4bpp", 0x200, 0x100 @ gObjectEventPic_GrepaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C5D6C
 gObjectEventFrameGfx_JP_084C5D6C: @ 0x084C5D6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c5d6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/grepa.4bpp", 0x300, 0x100 @ gObjectEventPic_GrepaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C5E6C
 gObjectEventFrameGfx_JP_084C5E6C: @ 0x084C5E6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c5e6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/grepa.4bpp", 0x400, 0x100 @ gObjectEventPic_GrepaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C5F6C
 gObjectEventFrameGfx_JP_084C5F6C: @ 0x084C5F6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c5f6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/grepa.4bpp", 0x500, 0x100 @ gObjectEventPic_GrepaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C606C
 gObjectEventFrameGfx_JP_084C606C: @ 0x084C606C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c606c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/rabuta.4bpp", 0x0, 0x100 @ gObjectEventPic_RabutaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C616C
 gObjectEventFrameGfx_JP_084C616C: @ 0x084C616C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c616c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/rabuta.4bpp", 0x100, 0x100 @ gObjectEventPic_RabutaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C626C
 gObjectEventFrameGfx_JP_084C626C: @ 0x084C626C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c626c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/rabuta.4bpp", 0x200, 0x100 @ gObjectEventPic_RabutaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C636C
 gObjectEventFrameGfx_JP_084C636C: @ 0x084C636C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c636c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/rabuta.4bpp", 0x300, 0x100 @ gObjectEventPic_RabutaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C646C
 gObjectEventFrameGfx_JP_084C646C: @ 0x084C646C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c646c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/rabuta.4bpp", 0x400, 0x100 @ gObjectEventPic_RabutaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C656C
 gObjectEventFrameGfx_JP_084C656C: @ 0x084C656C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c656c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/rabuta.4bpp", 0x500, 0x100 @ gObjectEventPic_RabutaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C666C
 gObjectEventFrameGfx_JP_084C666C: @ 0x084C666C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c666c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/nomel.4bpp", 0x0, 0x100 @ gObjectEventPic_NomelBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C676C
 gObjectEventFrameGfx_JP_084C676C: @ 0x084C676C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c676c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/nomel.4bpp", 0x100, 0x100 @ gObjectEventPic_NomelBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C686C
 gObjectEventFrameGfx_JP_084C686C: @ 0x084C686C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c686c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/nomel.4bpp", 0x200, 0x100 @ gObjectEventPic_NomelBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C696C
 gObjectEventFrameGfx_JP_084C696C: @ 0x084C696C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c696c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/nomel.4bpp", 0x300, 0x100 @ gObjectEventPic_NomelBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C6A6C
 gObjectEventFrameGfx_JP_084C6A6C: @ 0x084C6A6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c6a6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/nomel.4bpp", 0x400, 0x100 @ gObjectEventPic_NomelBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C6B6C
 gObjectEventFrameGfx_JP_084C6B6C: @ 0x084C6B6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c6b6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/nomel.4bpp", 0x500, 0x100 @ gObjectEventPic_NomelBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C6C6C
 gObjectEventFrameGfx_JP_084C6C6C: @ 0x084C6C6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c6c6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/leppa.4bpp", 0x0, 0x100 @ gObjectEventPic_LeppaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C6D6C
 gObjectEventFrameGfx_JP_084C6D6C: @ 0x084C6D6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c6d6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/leppa.4bpp", 0x100, 0x100 @ gObjectEventPic_LeppaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C6E6C
 gObjectEventFrameGfx_JP_084C6E6C: @ 0x084C6E6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c6e6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/leppa.4bpp", 0x200, 0x100 @ gObjectEventPic_LeppaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C6F6C
 gObjectEventFrameGfx_JP_084C6F6C: @ 0x084C6F6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c6f6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/leppa.4bpp", 0x300, 0x100 @ gObjectEventPic_LeppaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C706C
 gObjectEventFrameGfx_JP_084C706C: @ 0x084C706C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c706c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/leppa.4bpp", 0x400, 0x100 @ gObjectEventPic_LeppaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C716C
 gObjectEventFrameGfx_JP_084C716C: @ 0x084C716C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c716c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/leppa.4bpp", 0x500, 0x100 @ gObjectEventPic_LeppaBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C726C
 gObjectEventFrameGfx_JP_084C726C: @ 0x084C726C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c726c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/liechi.4bpp", 0x0, 0x100 @ gObjectEventPic_LiechiBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C736C
 gObjectEventFrameGfx_JP_084C736C: @ 0x084C736C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c736c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/liechi.4bpp", 0x100, 0x100 @ gObjectEventPic_LiechiBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C746C
 gObjectEventFrameGfx_JP_084C746C: @ 0x084C746C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c746c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/liechi.4bpp", 0x200, 0x100 @ gObjectEventPic_LiechiBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C756C
 gObjectEventFrameGfx_JP_084C756C: @ 0x084C756C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c756c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/liechi.4bpp", 0x300, 0x100 @ gObjectEventPic_LiechiBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C766C
 gObjectEventFrameGfx_JP_084C766C: @ 0x084C766C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c766c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/liechi.4bpp", 0x400, 0x100 @ gObjectEventPic_LiechiBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C776C
 gObjectEventFrameGfx_JP_084C776C: @ 0x084C776C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c776c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/liechi.4bpp", 0x500, 0x100 @ gObjectEventPic_LiechiBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C786C
 gObjectEventFrameGfx_JP_084C786C: @ 0x084C786C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c786c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/hondew.4bpp", 0x0, 0x100 @ gObjectEventPic_HondewBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C796C
 gObjectEventFrameGfx_JP_084C796C: @ 0x084C796C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c796c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/hondew.4bpp", 0x100, 0x100 @ gObjectEventPic_HondewBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C7A6C
 gObjectEventFrameGfx_JP_084C7A6C: @ 0x084C7A6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c7a6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/hondew.4bpp", 0x200, 0x100 @ gObjectEventPic_HondewBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C7B6C
 gObjectEventFrameGfx_JP_084C7B6C: @ 0x084C7B6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c7b6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/hondew.4bpp", 0x300, 0x100 @ gObjectEventPic_HondewBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C7C6C
 gObjectEventFrameGfx_JP_084C7C6C: @ 0x084C7C6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c7c6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/hondew.4bpp", 0x400, 0x100 @ gObjectEventPic_HondewBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C7D6C
 gObjectEventFrameGfx_JP_084C7D6C: @ 0x084C7D6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c7d6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/hondew.4bpp", 0x500, 0x100 @ gObjectEventPic_HondewBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C7E6C
 gObjectEventFrameGfx_JP_084C7E6C: @ 0x084C7E6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c7e6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/aguav.4bpp", 0x0, 0x100 @ gObjectEventPic_AguavBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C7F6C
 gObjectEventFrameGfx_JP_084C7F6C: @ 0x084C7F6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c7f6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/aguav.4bpp", 0x100, 0x100 @ gObjectEventPic_AguavBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C806C
 gObjectEventFrameGfx_JP_084C806C: @ 0x084C806C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c806c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/aguav.4bpp", 0x200, 0x100 @ gObjectEventPic_AguavBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C816C
 gObjectEventFrameGfx_JP_084C816C: @ 0x084C816C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c816c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/aguav.4bpp", 0x300, 0x100 @ gObjectEventPic_AguavBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C826C
 gObjectEventFrameGfx_JP_084C826C: @ 0x084C826C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c826c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/aguav.4bpp", 0x400, 0x100 @ gObjectEventPic_AguavBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C836C
 gObjectEventFrameGfx_JP_084C836C: @ 0x084C836C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c836c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/aguav.4bpp", 0x500, 0x100 @ gObjectEventPic_AguavBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C846C
 gObjectEventFrameGfx_JP_084C846C: @ 0x084C846C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c846c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/wiki.4bpp", 0x0, 0x100 @ gObjectEventPic_WikiBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C856C
 gObjectEventFrameGfx_JP_084C856C: @ 0x084C856C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c856c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/wiki.4bpp", 0x100, 0x100 @ gObjectEventPic_WikiBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C866C
 gObjectEventFrameGfx_JP_084C866C: @ 0x084C866C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c866c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/wiki.4bpp", 0x200, 0x100 @ gObjectEventPic_WikiBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C876C
 gObjectEventFrameGfx_JP_084C876C: @ 0x084C876C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c876c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/wiki.4bpp", 0x300, 0x100 @ gObjectEventPic_WikiBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C886C
 gObjectEventFrameGfx_JP_084C886C: @ 0x084C886C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c886c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/wiki.4bpp", 0x400, 0x100 @ gObjectEventPic_WikiBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C896C
 gObjectEventFrameGfx_JP_084C896C: @ 0x084C896C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c896c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/wiki.4bpp", 0x500, 0x100 @ gObjectEventPic_WikiBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C8A6C
 gObjectEventFrameGfx_JP_084C8A6C: @ 0x084C8A6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c8a6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pomeg.4bpp", 0x0, 0x100 @ gObjectEventPic_PomegBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C8B6C
 gObjectEventFrameGfx_JP_084C8B6C: @ 0x084C8B6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c8b6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pomeg.4bpp", 0x100, 0x100 @ gObjectEventPic_PomegBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C8C6C
 gObjectEventFrameGfx_JP_084C8C6C: @ 0x084C8C6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c8c6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pomeg.4bpp", 0x200, 0x100 @ gObjectEventPic_PomegBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C8D6C
 gObjectEventFrameGfx_JP_084C8D6C: @ 0x084C8D6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c8d6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pomeg.4bpp", 0x300, 0x100 @ gObjectEventPic_PomegBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C8E6C
 gObjectEventFrameGfx_JP_084C8E6C: @ 0x084C8E6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c8e6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pomeg.4bpp", 0x400, 0x100 @ gObjectEventPic_PomegBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C8F6C
 gObjectEventFrameGfx_JP_084C8F6C: @ 0x084C8F6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c8f6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pomeg.4bpp", 0x500, 0x100 @ gObjectEventPic_PomegBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C906C
 gObjectEventFrameGfx_JP_084C906C: @ 0x084C906C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c906c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/rawst.4bpp", 0x0, 0x100 @ gObjectEventPic_RawstBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C916C
 gObjectEventFrameGfx_JP_084C916C: @ 0x084C916C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c916c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/rawst.4bpp", 0x100, 0x100 @ gObjectEventPic_RawstBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C926C
 gObjectEventFrameGfx_JP_084C926C: @ 0x084C926C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c926c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/rawst.4bpp", 0x200, 0x100 @ gObjectEventPic_RawstBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C936C
 gObjectEventFrameGfx_JP_084C936C: @ 0x084C936C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c936c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/rawst.4bpp", 0x300, 0x100 @ gObjectEventPic_RawstBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C946C
 gObjectEventFrameGfx_JP_084C946C: @ 0x084C946C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c946c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/rawst.4bpp", 0x400, 0x100 @ gObjectEventPic_RawstBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C956C
 gObjectEventFrameGfx_JP_084C956C: @ 0x084C956C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c956c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/rawst.4bpp", 0x500, 0x100 @ gObjectEventPic_RawstBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C966C
 gObjectEventFrameGfx_JP_084C966C: @ 0x084C966C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c966c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/spelon.4bpp", 0x0, 0x100 @ gObjectEventPic_SpelonBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C976C
 gObjectEventFrameGfx_JP_084C976C: @ 0x084C976C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c976c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/spelon.4bpp", 0x100, 0x100 @ gObjectEventPic_SpelonBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C986C
 gObjectEventFrameGfx_JP_084C986C: @ 0x084C986C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c986c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/spelon.4bpp", 0x200, 0x100 @ gObjectEventPic_SpelonBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C996C
 gObjectEventFrameGfx_JP_084C996C: @ 0x084C996C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c996c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/spelon.4bpp", 0x300, 0x100 @ gObjectEventPic_SpelonBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C9A6C
 gObjectEventFrameGfx_JP_084C9A6C: @ 0x084C9A6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c9a6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/spelon.4bpp", 0x400, 0x100 @ gObjectEventPic_SpelonBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C9B6C
 gObjectEventFrameGfx_JP_084C9B6C: @ 0x084C9B6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c9b6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/spelon.4bpp", 0x500, 0x100 @ gObjectEventPic_SpelonBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C9C6C
 gObjectEventFrameGfx_JP_084C9C6C: @ 0x084C9C6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c9c6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/chesto.4bpp", 0x0, 0x100 @ gObjectEventPic_ChestoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C9D6C
 gObjectEventFrameGfx_JP_084C9D6C: @ 0x084C9D6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c9d6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/chesto.4bpp", 0x100, 0x100 @ gObjectEventPic_ChestoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C9E6C
 gObjectEventFrameGfx_JP_084C9E6C: @ 0x084C9E6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c9e6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/chesto.4bpp", 0x200, 0x100 @ gObjectEventPic_ChestoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084C9F6C
 gObjectEventFrameGfx_JP_084C9F6C: @ 0x084C9F6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084c9f6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/chesto.4bpp", 0x300, 0x100 @ gObjectEventPic_ChestoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CA06C
 gObjectEventFrameGfx_JP_084CA06C: @ 0x084CA06C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ca06c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/chesto.4bpp", 0x400, 0x100 @ gObjectEventPic_ChestoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CA16C
 gObjectEventFrameGfx_JP_084CA16C: @ 0x084CA16C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ca16c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/chesto.4bpp", 0x500, 0x100 @ gObjectEventPic_ChestoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CA26C
 gObjectEventFrameGfx_JP_084CA26C: @ 0x084CA26C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ca26c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/oran.4bpp", 0x0, 0x100 @ gObjectEventPic_OranBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CA36C
 gObjectEventFrameGfx_JP_084CA36C: @ 0x084CA36C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ca36c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/oran.4bpp", 0x100, 0x100 @ gObjectEventPic_OranBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CA46C
 gObjectEventFrameGfx_JP_084CA46C: @ 0x084CA46C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ca46c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/oran.4bpp", 0x200, 0x100 @ gObjectEventPic_OranBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CA56C
 gObjectEventFrameGfx_JP_084CA56C: @ 0x084CA56C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ca56c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/oran.4bpp", 0x300, 0x100 @ gObjectEventPic_OranBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CA66C
 gObjectEventFrameGfx_JP_084CA66C: @ 0x084CA66C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ca66c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/oran.4bpp", 0x400, 0x100 @ gObjectEventPic_OranBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CA76C
 gObjectEventFrameGfx_JP_084CA76C: @ 0x084CA76C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ca76c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/oran.4bpp", 0x500, 0x100 @ gObjectEventPic_OranBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CA86C
 gObjectEventFrameGfx_JP_084CA86C: @ 0x084CA86C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ca86c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/persim.4bpp", 0x0, 0x100 @ gObjectEventPic_PersimBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CA96C
 gObjectEventFrameGfx_JP_084CA96C: @ 0x084CA96C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ca96c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/persim.4bpp", 0x100, 0x100 @ gObjectEventPic_PersimBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CAA6C
 gObjectEventFrameGfx_JP_084CAA6C: @ 0x084CAA6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084caa6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/persim.4bpp", 0x200, 0x100 @ gObjectEventPic_PersimBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CAB6C
 gObjectEventFrameGfx_JP_084CAB6C: @ 0x084CAB6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cab6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/persim.4bpp", 0x300, 0x100 @ gObjectEventPic_PersimBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CAC6C
 gObjectEventFrameGfx_JP_084CAC6C: @ 0x084CAC6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cac6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/persim.4bpp", 0x400, 0x100 @ gObjectEventPic_PersimBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CAD6C
 gObjectEventFrameGfx_JP_084CAD6C: @ 0x084CAD6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cad6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/persim.4bpp", 0x500, 0x100 @ gObjectEventPic_PersimBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CAE6C
 gObjectEventFrameGfx_JP_084CAE6C: @ 0x084CAE6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cae6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/sitrus.4bpp", 0x0, 0x100 @ gObjectEventPic_SitrusBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CAF6C
 gObjectEventFrameGfx_JP_084CAF6C: @ 0x084CAF6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084caf6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/sitrus.4bpp", 0x100, 0x100 @ gObjectEventPic_SitrusBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CB06C
 gObjectEventFrameGfx_JP_084CB06C: @ 0x084CB06C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cb06c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/sitrus.4bpp", 0x200, 0x100 @ gObjectEventPic_SitrusBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CB16C
 gObjectEventFrameGfx_JP_084CB16C: @ 0x084CB16C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cb16c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/sitrus.4bpp", 0x300, 0x100 @ gObjectEventPic_SitrusBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CB26C
 gObjectEventFrameGfx_JP_084CB26C: @ 0x084CB26C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cb26c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/sitrus.4bpp", 0x400, 0x100 @ gObjectEventPic_SitrusBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CB36C
 gObjectEventFrameGfx_JP_084CB36C: @ 0x084CB36C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cb36c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/sitrus.4bpp", 0x500, 0x100 @ gObjectEventPic_SitrusBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CB46C
 gObjectEventFrameGfx_JP_084CB46C: @ 0x084CB46C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cb46c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/aspear.4bpp", 0x0, 0x100 @ gObjectEventPic_AspearBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CB56C
 gObjectEventFrameGfx_JP_084CB56C: @ 0x084CB56C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cb56c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/aspear.4bpp", 0x100, 0x100 @ gObjectEventPic_AspearBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CB66C
 gObjectEventFrameGfx_JP_084CB66C: @ 0x084CB66C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cb66c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/aspear.4bpp", 0x200, 0x100 @ gObjectEventPic_AspearBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CB76C
 gObjectEventFrameGfx_JP_084CB76C: @ 0x084CB76C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cb76c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/aspear.4bpp", 0x300, 0x100 @ gObjectEventPic_AspearBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CB86C
 gObjectEventFrameGfx_JP_084CB86C: @ 0x084CB86C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cb86c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/aspear.4bpp", 0x400, 0x100 @ gObjectEventPic_AspearBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CB96C
 gObjectEventFrameGfx_JP_084CB96C: @ 0x084CB96C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cb96c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/aspear.4bpp", 0x500, 0x100 @ gObjectEventPic_AspearBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CBA6C
 gObjectEventFrameGfx_JP_084CBA6C: @ 0x084CBA6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cba6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pamtre.4bpp", 0x0, 0x100 @ gObjectEventPic_PamtreBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CBB6C
 gObjectEventFrameGfx_JP_084CBB6C: @ 0x084CBB6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cbb6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pamtre.4bpp", 0x100, 0x100 @ gObjectEventPic_PamtreBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CBC6C
 gObjectEventFrameGfx_JP_084CBC6C: @ 0x084CBC6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cbc6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pamtre.4bpp", 0x200, 0x100 @ gObjectEventPic_PamtreBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CBD6C
 gObjectEventFrameGfx_JP_084CBD6C: @ 0x084CBD6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cbd6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pamtre.4bpp", 0x300, 0x100 @ gObjectEventPic_PamtreBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CBE6C
 gObjectEventFrameGfx_JP_084CBE6C: @ 0x084CBE6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cbe6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pamtre.4bpp", 0x400, 0x100 @ gObjectEventPic_PamtreBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CBF6C
 gObjectEventFrameGfx_JP_084CBF6C: @ 0x084CBF6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cbf6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/pamtre.4bpp", 0x500, 0x100 @ gObjectEventPic_PamtreBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CC06C
 gObjectEventFrameGfx_JP_084CC06C: @ 0x084CC06C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cc06c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/cornn.4bpp", 0x0, 0x100 @ gObjectEventPic_CornnBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CC16C
 gObjectEventFrameGfx_JP_084CC16C: @ 0x084CC16C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cc16c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/cornn.4bpp", 0x100, 0x100 @ gObjectEventPic_CornnBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CC26C
 gObjectEventFrameGfx_JP_084CC26C: @ 0x084CC26C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cc26c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/cornn.4bpp", 0x200, 0x100 @ gObjectEventPic_CornnBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CC36C
 gObjectEventFrameGfx_JP_084CC36C: @ 0x084CC36C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cc36c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/cornn.4bpp", 0x300, 0x100 @ gObjectEventPic_CornnBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CC46C
 gObjectEventFrameGfx_JP_084CC46C: @ 0x084CC46C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cc46c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/cornn.4bpp", 0x400, 0x100 @ gObjectEventPic_CornnBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CC56C
 gObjectEventFrameGfx_JP_084CC56C: @ 0x084CC56C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cc56c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/cornn.4bpp", 0x500, 0x100 @ gObjectEventPic_CornnBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CC66C
 gObjectEventFrameGfx_JP_084CC66C: @ 0x084CC66C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cc66c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/lansat.4bpp", 0x0, 0x100 @ gObjectEventPic_LansatBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CC76C
 gObjectEventFrameGfx_JP_084CC76C: @ 0x084CC76C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cc76c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/lansat.4bpp", 0x100, 0x100 @ gObjectEventPic_LansatBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CC86C
 gObjectEventFrameGfx_JP_084CC86C: @ 0x084CC86C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cc86c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/lansat.4bpp", 0x200, 0x100 @ gObjectEventPic_LansatBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CC96C
 gObjectEventFrameGfx_JP_084CC96C: @ 0x084CC96C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cc96c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/lansat.4bpp", 0x300, 0x100 @ gObjectEventPic_LansatBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CCA6C
 gObjectEventFrameGfx_JP_084CCA6C: @ 0x084CCA6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cca6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/lansat.4bpp", 0x400, 0x100 @ gObjectEventPic_LansatBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CCB6C
 gObjectEventFrameGfx_JP_084CCB6C: @ 0x084CCB6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ccb6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/lansat.4bpp", 0x500, 0x100 @ gObjectEventPic_LansatBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CCC6C
 gObjectEventFrameGfx_JP_084CCC6C: @ 0x084CCC6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ccc6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/durin.4bpp", 0x0, 0x100 @ gObjectEventPic_DurinBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CCD6C
 gObjectEventFrameGfx_JP_084CCD6C: @ 0x084CCD6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ccd6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/durin.4bpp", 0x100, 0x100 @ gObjectEventPic_DurinBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CCE6C
 gObjectEventFrameGfx_JP_084CCE6C: @ 0x084CCE6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cce6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/durin.4bpp", 0x200, 0x100 @ gObjectEventPic_DurinBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CCF6C
 gObjectEventFrameGfx_JP_084CCF6C: @ 0x084CCF6C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ccf6c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/durin.4bpp", 0x300, 0x100 @ gObjectEventPic_DurinBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CD06C
 gObjectEventFrameGfx_JP_084CD06C: @ 0x084CD06C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cd06c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/durin.4bpp", 0x400, 0x100 @ gObjectEventPic_DurinBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CD16C
 gObjectEventFrameGfx_JP_084CD16C: @ 0x084CD16C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cd16c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/durin.4bpp", 0x500, 0x100 @ gObjectEventPic_DurinBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CD26C
 gObjectEventFrameGfx_JP_084CD26C: @ 0x084CD26C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cd26c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/tamato.4bpp", 0x0, 0x100 @ gObjectEventPic_TamatoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CD36C
 gObjectEventFrameGfx_JP_084CD36C: @ 0x084CD36C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cd36c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/tamato.4bpp", 0x100, 0x100 @ gObjectEventPic_TamatoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CD46C
 gObjectEventFrameGfx_JP_084CD46C: @ 0x084CD46C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cd46c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/tamato.4bpp", 0x200, 0x100 @ gObjectEventPic_TamatoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CD56C
 gObjectEventFrameGfx_JP_084CD56C: @ 0x084CD56C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cd56c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/tamato.4bpp", 0x300, 0x100 @ gObjectEventPic_TamatoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CD66C
 gObjectEventFrameGfx_JP_084CD66C: @ 0x084CD66C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cd66c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/tamato.4bpp", 0x400, 0x100 @ gObjectEventPic_TamatoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CD76C
 gObjectEventFrameGfx_JP_084CD76C: @ 0x084CD76C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cd76c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/berry_trees/tamato.4bpp", 0x500, 0x100 @ gObjectEventPic_TamatoBerryTree frame slice
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -1035,31 +1035,31 @@ gObjectEventFrameGfx_JP_084CD76C: @ 0x084CD76C
 	.globl gObjectEventFrameGfx_JP_084CDE6C
 gObjectEventFrameGfx_JP_084CDE6C: @ 0x084CDE6C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cde6c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/quinty_plump.4bpp", 0x0, 0x200 @ gObjectEventPic_QuintyPlump frame slice
 	.globl gObjectEventFrameGfx_JP_084CE06C
 gObjectEventFrameGfx_JP_084CE06C: @ 0x084CE06C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ce06c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/quinty_plump.4bpp", 0x200, 0x200 @ gObjectEventPic_QuintyPlump frame slice
 	.globl gObjectEventFrameGfx_JP_084CE26C
 gObjectEventFrameGfx_JP_084CE26C: @ 0x084CE26C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ce26c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/quinty_plump.4bpp", 0x400, 0x200 @ gObjectEventPic_QuintyPlump frame slice
 	.globl gObjectEventFrameGfx_JP_084CE46C
 gObjectEventFrameGfx_JP_084CE46C: @ 0x084CE46C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ce46c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/quinty_plump.4bpp", 0x600, 0x200 @ gObjectEventPic_QuintyPlump frame slice
 	.globl gObjectEventFrameGfx_JP_084CE66C
 gObjectEventFrameGfx_JP_084CE66C: @ 0x084CE66C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ce66c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/quinty_plump.4bpp", 0x800, 0x200 @ gObjectEventPic_QuintyPlump frame slice
 	.globl gObjectEventFrameGfx_JP_084CE86C
 gObjectEventFrameGfx_JP_084CE86C: @ 0x084CE86C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084ce86c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/quinty_plump.4bpp", 0xA00, 0x200 @ gObjectEventPic_QuintyPlump frame slice
 	.globl gObjectEventFrameGfx_JP_084CEA6C
 gObjectEventFrameGfx_JP_084CEA6C: @ 0x084CEA6C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084cea6c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/quinty_plump.4bpp", 0xC00, 0x200 @ gObjectEventPic_QuintyPlump frame slice
 	.globl gObjectEventPal_JP_084CEC6C
 gObjectEventPal_JP_084CEC6C: @ 0x084CEC6C
 	@ 16-color object-event palette

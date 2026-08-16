@@ -144,179 +144,179 @@ gFieldEffectObjectPic_Bird: @ 0x084D3F4C
 	.incbin "build/graphics/field_effects/pics/bird.4bpp"
 gObjectEventFrameGfx_JP_084D414C: @ 0x084D414C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d414c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/gym_leaders/juan.4bpp", 0x0, 0x100 @ gObjectEventPic_Juan frame slice
 	.globl gObjectEventFrameGfx_JP_084D424C
 gObjectEventFrameGfx_JP_084D424C: @ 0x084D424C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d424c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/gym_leaders/juan.4bpp", 0x100, 0x100 @ gObjectEventPic_Juan frame slice
 	.globl gObjectEventFrameGfx_JP_084D434C
 gObjectEventFrameGfx_JP_084D434C: @ 0x084D434C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d434c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/gym_leaders/juan.4bpp", 0x200, 0x100 @ gObjectEventPic_Juan frame slice
 	.globl gObjectEventFrameGfx_JP_084D444C
 gObjectEventFrameGfx_JP_084D444C: @ 0x084D444C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d444c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/gym_leaders/juan.4bpp", 0x300, 0x100 @ gObjectEventPic_Juan frame slice
 	.globl gObjectEventFrameGfx_JP_084D454C
 gObjectEventFrameGfx_JP_084D454C: @ 0x084D454C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d454c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/gym_leaders/juan.4bpp", 0x400, 0x100 @ gObjectEventPic_Juan frame slice
 	.globl gObjectEventFrameGfx_JP_084D464C
 gObjectEventFrameGfx_JP_084D464C: @ 0x084D464C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d464c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/gym_leaders/juan.4bpp", 0x500, 0x100 @ gObjectEventPic_Juan frame slice
 	.globl gObjectEventFrameGfx_JP_084D474C
 gObjectEventFrameGfx_JP_084D474C: @ 0x084D474C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d474c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/gym_leaders/juan.4bpp", 0x600, 0x100 @ gObjectEventPic_Juan frame slice
 	.globl gObjectEventFrameGfx_JP_084D484C
 gObjectEventFrameGfx_JP_084D484C: @ 0x084D484C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d484c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/gym_leaders/juan.4bpp", 0x700, 0x100 @ gObjectEventPic_Juan frame slice
 	.globl gObjectEventFrameGfx_JP_084D494C
 gObjectEventFrameGfx_JP_084D494C: @ 0x084D494C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d494c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/gym_leaders/juan.4bpp", 0x800, 0x100 @ gObjectEventPic_Juan frame slice
 	.globl gObjectEventFrameGfx_JP_084D4A4C
 gObjectEventFrameGfx_JP_084D4A4C: @ 0x084D4A4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d4a4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/scott.4bpp", 0x0, 0x100 @ gObjectEventPic_Scott frame slice
 	.globl gObjectEventFrameGfx_JP_084D4B4C
 gObjectEventFrameGfx_JP_084D4B4C: @ 0x084D4B4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d4b4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/scott.4bpp", 0x100, 0x100 @ gObjectEventPic_Scott frame slice
 	.globl gObjectEventFrameGfx_JP_084D4C4C
 gObjectEventFrameGfx_JP_084D4C4C: @ 0x084D4C4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d4c4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/scott.4bpp", 0x200, 0x100 @ gObjectEventPic_Scott frame slice
 	.globl gObjectEventFrameGfx_JP_084D4D4C
 gObjectEventFrameGfx_JP_084D4D4C: @ 0x084D4D4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d4d4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/scott.4bpp", 0x300, 0x100 @ gObjectEventPic_Scott frame slice
 	.globl gObjectEventFrameGfx_JP_084D4E4C
 gObjectEventFrameGfx_JP_084D4E4C: @ 0x084D4E4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d4e4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/scott.4bpp", 0x400, 0x100 @ gObjectEventPic_Scott frame slice
 	.globl gObjectEventFrameGfx_JP_084D4F4C
 gObjectEventFrameGfx_JP_084D4F4C: @ 0x084D4F4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d4f4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/scott.4bpp", 0x500, 0x100 @ gObjectEventPic_Scott frame slice
 	.globl gObjectEventFrameGfx_JP_084D504C
 gObjectEventFrameGfx_JP_084D504C: @ 0x084D504C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d504c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/scott.4bpp", 0x600, 0x100 @ gObjectEventPic_Scott frame slice
 	.globl gObjectEventFrameGfx_JP_084D514C
 gObjectEventFrameGfx_JP_084D514C: @ 0x084D514C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d514c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/scott.4bpp", 0x700, 0x100 @ gObjectEventPic_Scott frame slice
 	.globl gObjectEventFrameGfx_JP_084D524C
 gObjectEventFrameGfx_JP_084D524C: @ 0x084D524C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d524c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/scott.4bpp", 0x800, 0x100 @ gObjectEventPic_Scott frame slice
 	.globl gObjectEventFrameGfx_JP_084D534C
 gObjectEventFrameGfx_JP_084D534C: @ 0x084D534C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d534c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/misc/statue.4bpp", 0x0, 0x100 @ gObjectEventPic_Statue frame slice
 	.globl gObjectEventFrameGfx_JP_084D544C
 gObjectEventFrameGfx_JP_084D544C: @ 0x084D544C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d544c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/kirlia.4bpp", 0x0, 0x100 @ gObjectEventPic_Kirlia frame slice
 	.globl gObjectEventFrameGfx_JP_084D554C
 gObjectEventFrameGfx_JP_084D554C: @ 0x084D554C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d554c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/kirlia.4bpp", 0x100, 0x100 @ gObjectEventPic_Kirlia frame slice
 	.globl gObjectEventFrameGfx_JP_084D564C
 gObjectEventFrameGfx_JP_084D564C: @ 0x084D564C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d564c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/kirlia.4bpp", 0x200, 0x100 @ gObjectEventPic_Kirlia frame slice
 	.globl gObjectEventFrameGfx_JP_084D574C
 gObjectEventFrameGfx_JP_084D574C: @ 0x084D574C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d574c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/kirlia.4bpp", 0x300, 0x100 @ gObjectEventPic_Kirlia frame slice
 	.globl gObjectEventFrameGfx_JP_084D584C
 gObjectEventFrameGfx_JP_084D584C: @ 0x084D584C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d584c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/kirlia.4bpp", 0x400, 0x100 @ gObjectEventPic_Kirlia frame slice
 	.globl gObjectEventFrameGfx_JP_084D594C
 gObjectEventFrameGfx_JP_084D594C: @ 0x084D594C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d594c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/kirlia.4bpp", 0x500, 0x100 @ gObjectEventPic_Kirlia frame slice
 	.globl gObjectEventFrameGfx_JP_084D5A4C
 gObjectEventFrameGfx_JP_084D5A4C: @ 0x084D5A4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d5a4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/kirlia.4bpp", 0x600, 0x100 @ gObjectEventPic_Kirlia frame slice
 	.globl gObjectEventFrameGfx_JP_084D5B4C
 gObjectEventFrameGfx_JP_084D5B4C: @ 0x084D5B4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d5b4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/kirlia.4bpp", 0x700, 0x100 @ gObjectEventPic_Kirlia frame slice
 	.globl gObjectEventFrameGfx_JP_084D5C4C
 gObjectEventFrameGfx_JP_084D5C4C: @ 0x084D5C4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d5c4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/kirlia.4bpp", 0x800, 0x100 @ gObjectEventPic_Kirlia frame slice
 	.globl gObjectEventFrameGfx_JP_084D5D4C
 gObjectEventFrameGfx_JP_084D5D4C: @ 0x084D5D4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d5d4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/dusclops.4bpp", 0x0, 0x100 @ gObjectEventPic_Dusclops frame slice
 	.globl gObjectEventFrameGfx_JP_084D5E4C
 gObjectEventFrameGfx_JP_084D5E4C: @ 0x084D5E4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d5e4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/dusclops.4bpp", 0x100, 0x100 @ gObjectEventPic_Dusclops frame slice
 	.globl gObjectEventFrameGfx_JP_084D5F4C
 gObjectEventFrameGfx_JP_084D5F4C: @ 0x084D5F4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d5f4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/dusclops.4bpp", 0x200, 0x100 @ gObjectEventPic_Dusclops frame slice
 	.globl gObjectEventFrameGfx_JP_084D604C
 gObjectEventFrameGfx_JP_084D604C: @ 0x084D604C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d604c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/dusclops.4bpp", 0x300, 0x100 @ gObjectEventPic_Dusclops frame slice
 	.globl gObjectEventFrameGfx_JP_084D614C
 gObjectEventFrameGfx_JP_084D614C: @ 0x084D614C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d614c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/dusclops.4bpp", 0x400, 0x100 @ gObjectEventPic_Dusclops frame slice
 	.globl gObjectEventFrameGfx_JP_084D624C
 gObjectEventFrameGfx_JP_084D624C: @ 0x084D624C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d624c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/dusclops.4bpp", 0x500, 0x100 @ gObjectEventPic_Dusclops frame slice
 	.globl gObjectEventFrameGfx_JP_084D634C
 gObjectEventFrameGfx_JP_084D634C: @ 0x084D634C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d634c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/dusclops.4bpp", 0x600, 0x100 @ gObjectEventPic_Dusclops frame slice
 	.globl gObjectEventFrameGfx_JP_084D644C
 gObjectEventFrameGfx_JP_084D644C: @ 0x084D644C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d644c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/dusclops.4bpp", 0x700, 0x100 @ gObjectEventPic_Dusclops frame slice
 	.globl gObjectEventFrameGfx_JP_084D654C
 gObjectEventFrameGfx_JP_084D654C: @ 0x084D654C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d654c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/dusclops.4bpp", 0x800, 0x100 @ gObjectEventPic_Dusclops frame slice
 	.globl gObjectEventFrameGfx_JP_084D664C
 gObjectEventFrameGfx_JP_084D664C: @ 0x084D664C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d664c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/mystery_event_deliveryman.4bpp", 0x0, 0x100 @ gObjectEventPic_MysteryEventDeliveryman frame slice
 	.globl gObjectEventFrameGfx_JP_084D674C
 gObjectEventFrameGfx_JP_084D674C: @ 0x084D674C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d674c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/mystery_event_deliveryman.4bpp", 0x100, 0x100 @ gObjectEventPic_MysteryEventDeliveryman frame slice
 	.globl gObjectEventFrameGfx_JP_084D684C
 gObjectEventFrameGfx_JP_084D684C: @ 0x084D684C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d684c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/mystery_event_deliveryman.4bpp", 0x200, 0x100 @ gObjectEventPic_MysteryEventDeliveryman frame slice
 	.globl gObjectEventFrameGfx_JP_084D694C
 gObjectEventFrameGfx_JP_084D694C: @ 0x084D694C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d694c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/union_room_attendant.4bpp", 0x0, 0x100 @ gObjectEventPic_UnionRoomAttendant frame slice
 	.globl gObjectEventFrameGfx_JP_084D6A4C
 gObjectEventFrameGfx_JP_084D6A4C: @ 0x084D6A4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d6a4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/union_room_attendant.4bpp", 0x100, 0x100 @ gObjectEventPic_UnionRoomAttendant frame slice
 	.globl gObjectEventFrameGfx_JP_084D6B4C
 gObjectEventFrameGfx_JP_084D6B4C: @ 0x084D6B4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d6b4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/union_room_attendant.4bpp", 0x200, 0x100 @ gObjectEventPic_UnionRoomAttendant frame slice
 	.globl gObjectEventFrameGfx_JP_084D6C4C
 gObjectEventFrameGfx_JP_084D6C4C: @ 0x084D6C4C
 	@ 4bpp frame payload; byte size = 0x80 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d6c4c.4bpp" @ size=0x80
+	.incbin "build/graphics/object_events/pics/misc/moving_box.4bpp", 0x0, 0x80 @ gObjectEventPic_MovingBox frame slice
 	.globl gObjectEventPal_JP_084D6CCC
 gObjectEventPal_JP_084D6CCC: @ 0x084D6CCC
 	@ 16-color object-event palette
@@ -326,51 +326,51 @@ gObjectEventPal_JP_084D6CCC: @ 0x084D6CCC
 	.globl gObjectEventFrameGfx_JP_084D6CEC
 gObjectEventFrameGfx_JP_084D6CEC: @ 0x084D6CEC
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d6cec.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/sudowoodo.4bpp", 0x0, 0x100 @ gObjectEventPic_Sudowoodo frame slice
 	.globl gObjectEventFrameGfx_JP_084D6DEC
 gObjectEventFrameGfx_JP_084D6DEC: @ 0x084D6DEC
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d6dec.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/sudowoodo.4bpp", 0x100, 0x100 @ gObjectEventPic_Sudowoodo frame slice
 	.globl gObjectEventFrameGfx_JP_084D6EEC
 gObjectEventFrameGfx_JP_084D6EEC: @ 0x084D6EEC
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d6eec.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/sudowoodo.4bpp", 0x200, 0x100 @ gObjectEventPic_Sudowoodo frame slice
 	.globl gObjectEventFrameGfx_JP_084D6FEC
 gObjectEventFrameGfx_JP_084D6FEC: @ 0x084D6FEC
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d6fec.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/mew.4bpp", 0x0, 0x100 @ gObjectEventPic_Mew frame slice
 	.globl gObjectEventFrameGfx_JP_084D70EC
 gObjectEventFrameGfx_JP_084D70EC: @ 0x084D70EC
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d70ec.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/mew.4bpp", 0x100, 0x100 @ gObjectEventPic_Mew frame slice
 	.globl gObjectEventFrameGfx_JP_084D71EC
 gObjectEventFrameGfx_JP_084D71EC: @ 0x084D71EC
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d71ec.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/mew.4bpp", 0x200, 0x100 @ gObjectEventPic_Mew frame slice
 	.globl gObjectEventFrameGfx_JP_084D72EC
 gObjectEventFrameGfx_JP_084D72EC: @ 0x084D72EC
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d72ec.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/mew.4bpp", 0x300, 0x100 @ gObjectEventPic_Mew frame slice
 	.globl gObjectEventFrameGfx_JP_084D73EC
 gObjectEventFrameGfx_JP_084D73EC: @ 0x084D73EC
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d73ec.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/mew.4bpp", 0x400, 0x100 @ gObjectEventPic_Mew frame slice
 	.globl gObjectEventFrameGfx_JP_084D74EC
 gObjectEventFrameGfx_JP_084D74EC: @ 0x084D74EC
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d74ec.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/mew.4bpp", 0x500, 0x100 @ gObjectEventPic_Mew frame slice
 	.globl gObjectEventFrameGfx_JP_084D75EC
 gObjectEventFrameGfx_JP_084D75EC: @ 0x084D75EC
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d75ec.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/mew.4bpp", 0x600, 0x100 @ gObjectEventPic_Mew frame slice
 	.globl gObjectEventFrameGfx_JP_084D76EC
 gObjectEventFrameGfx_JP_084D76EC: @ 0x084D76EC
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d76ec.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/mew.4bpp", 0x700, 0x100 @ gObjectEventPic_Mew frame slice
 	.globl gObjectEventFrameGfx_JP_084D77EC
 gObjectEventFrameGfx_JP_084D77EC: @ 0x084D77EC
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d77ec.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/pokemon/mew.4bpp", 0x800, 0x100 @ gObjectEventPic_Mew frame slice
 	.globl gObjectEventPal_JP_084D78EC
 gObjectEventPal_JP_084D78EC: @ 0x084D78EC
 	@ 16-color object-event palette
@@ -380,75 +380,75 @@ gObjectEventPal_JP_084D78EC: @ 0x084D78EC
 	.globl gObjectEventFrameGfx_JP_084D790C
 gObjectEventFrameGfx_JP_084D790C: @ 0x084D790C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d790c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/red.4bpp", 0x0, 0x100 @ gObjectEventPic_Red frame slice
 	.globl gObjectEventFrameGfx_JP_084D7A0C
 gObjectEventFrameGfx_JP_084D7A0C: @ 0x084D7A0C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d7a0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/red.4bpp", 0x100, 0x100 @ gObjectEventPic_Red frame slice
 	.globl gObjectEventFrameGfx_JP_084D7B0C
 gObjectEventFrameGfx_JP_084D7B0C: @ 0x084D7B0C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d7b0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/red.4bpp", 0x200, 0x100 @ gObjectEventPic_Red frame slice
 	.globl gObjectEventFrameGfx_JP_084D7C0C
 gObjectEventFrameGfx_JP_084D7C0C: @ 0x084D7C0C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d7c0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/red.4bpp", 0x300, 0x100 @ gObjectEventPic_Red frame slice
 	.globl gObjectEventFrameGfx_JP_084D7D0C
 gObjectEventFrameGfx_JP_084D7D0C: @ 0x084D7D0C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d7d0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/red.4bpp", 0x400, 0x100 @ gObjectEventPic_Red frame slice
 	.globl gObjectEventFrameGfx_JP_084D7E0C
 gObjectEventFrameGfx_JP_084D7E0C: @ 0x084D7E0C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d7e0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/red.4bpp", 0x500, 0x100 @ gObjectEventPic_Red frame slice
 	.globl gObjectEventFrameGfx_JP_084D7F0C
 gObjectEventFrameGfx_JP_084D7F0C: @ 0x084D7F0C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d7f0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/red.4bpp", 0x600, 0x100 @ gObjectEventPic_Red frame slice
 	.globl gObjectEventFrameGfx_JP_084D800C
 gObjectEventFrameGfx_JP_084D800C: @ 0x084D800C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d800c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/red.4bpp", 0x700, 0x100 @ gObjectEventPic_Red frame slice
 	.globl gObjectEventFrameGfx_JP_084D810C
 gObjectEventFrameGfx_JP_084D810C: @ 0x084D810C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d810c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/red.4bpp", 0x800, 0x100 @ gObjectEventPic_Red frame slice
 	.globl gObjectEventFrameGfx_JP_084D820C
 gObjectEventFrameGfx_JP_084D820C: @ 0x084D820C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d820c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/leaf.4bpp", 0x0, 0x100 @ gObjectEventPic_Leaf frame slice
 	.globl gObjectEventFrameGfx_JP_084D830C
 gObjectEventFrameGfx_JP_084D830C: @ 0x084D830C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d830c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/leaf.4bpp", 0x100, 0x100 @ gObjectEventPic_Leaf frame slice
 	.globl gObjectEventFrameGfx_JP_084D840C
 gObjectEventFrameGfx_JP_084D840C: @ 0x084D840C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d840c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/leaf.4bpp", 0x200, 0x100 @ gObjectEventPic_Leaf frame slice
 	.globl gObjectEventFrameGfx_JP_084D850C
 gObjectEventFrameGfx_JP_084D850C: @ 0x084D850C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d850c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/leaf.4bpp", 0x300, 0x100 @ gObjectEventPic_Leaf frame slice
 	.globl gObjectEventFrameGfx_JP_084D860C
 gObjectEventFrameGfx_JP_084D860C: @ 0x084D860C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d860c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/leaf.4bpp", 0x400, 0x100 @ gObjectEventPic_Leaf frame slice
 	.globl gObjectEventFrameGfx_JP_084D870C
 gObjectEventFrameGfx_JP_084D870C: @ 0x084D870C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d870c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/leaf.4bpp", 0x500, 0x100 @ gObjectEventPic_Leaf frame slice
 	.globl gObjectEventFrameGfx_JP_084D880C
 gObjectEventFrameGfx_JP_084D880C: @ 0x084D880C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d880c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/leaf.4bpp", 0x600, 0x100 @ gObjectEventPic_Leaf frame slice
 	.globl gObjectEventFrameGfx_JP_084D890C
 gObjectEventFrameGfx_JP_084D890C: @ 0x084D890C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d890c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/leaf.4bpp", 0x700, 0x100 @ gObjectEventPic_Leaf frame slice
 	.globl gObjectEventFrameGfx_JP_084D8A0C
 gObjectEventFrameGfx_JP_084D8A0C: @ 0x084D8A0C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d8a0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/leaf.4bpp", 0x800, 0x100 @ gObjectEventPic_Leaf frame slice
 	.globl gObjectEventPal_JP_084D8B0C
 gObjectEventPal_JP_084D8B0C: @ 0x084D8B0C
 	@ 16-color object-event palette
@@ -458,7 +458,7 @@ gObjectEventPal_JP_084D8B0C: @ 0x084D8B0C
 	.globl gObjectEventFrameGfx_JP_084D8B2C
 gObjectEventFrameGfx_JP_084D8B2C: @ 0x084D8B2C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d8b2c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/misc/birth_island_stone.4bpp", 0x0, 0x200 @ gObjectEventPic_BirthIslandStone frame slice
 	.globl gObjectEventPal_JP_084D8D2C
 gObjectEventPal_JP_084D8D2C: @ 0x084D8D2C
 	@ 16-color object-event palette
@@ -468,271 +468,271 @@ gObjectEventPal_JP_084D8D2C: @ 0x084D8D2C
 	.globl gObjectEventFrameGfx_JP_084D8D4C
 gObjectEventFrameGfx_JP_084D8D4C: @ 0x084D8D4C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d8d4c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/deoxys.4bpp", 0x0, 0x200 @ gObjectEventPic_Deoxys frame slice
 	.globl gObjectEventFrameGfx_JP_084D8F4C
 gObjectEventFrameGfx_JP_084D8F4C: @ 0x084D8F4C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d8f4c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/deoxys.4bpp", 0x200, 0x200 @ gObjectEventPic_Deoxys frame slice
 	.globl gObjectEventFrameGfx_JP_084D914C
 gObjectEventFrameGfx_JP_084D914C: @ 0x084D914C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d914c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/anabel.4bpp", 0x0, 0x100 @ gObjectEventPic_Anabel frame slice
 	.globl gObjectEventFrameGfx_JP_084D924C
 gObjectEventFrameGfx_JP_084D924C: @ 0x084D924C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d924c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/anabel.4bpp", 0x100, 0x100 @ gObjectEventPic_Anabel frame slice
 	.globl gObjectEventFrameGfx_JP_084D934C
 gObjectEventFrameGfx_JP_084D934C: @ 0x084D934C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d934c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/anabel.4bpp", 0x200, 0x100 @ gObjectEventPic_Anabel frame slice
 	.globl gObjectEventFrameGfx_JP_084D944C
 gObjectEventFrameGfx_JP_084D944C: @ 0x084D944C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d944c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/anabel.4bpp", 0x300, 0x100 @ gObjectEventPic_Anabel frame slice
 	.globl gObjectEventFrameGfx_JP_084D954C
 gObjectEventFrameGfx_JP_084D954C: @ 0x084D954C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d954c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/anabel.4bpp", 0x400, 0x100 @ gObjectEventPic_Anabel frame slice
 	.globl gObjectEventFrameGfx_JP_084D964C
 gObjectEventFrameGfx_JP_084D964C: @ 0x084D964C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d964c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/anabel.4bpp", 0x500, 0x100 @ gObjectEventPic_Anabel frame slice
 	.globl gObjectEventFrameGfx_JP_084D974C
 gObjectEventFrameGfx_JP_084D974C: @ 0x084D974C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d974c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/anabel.4bpp", 0x600, 0x100 @ gObjectEventPic_Anabel frame slice
 	.globl gObjectEventFrameGfx_JP_084D984C
 gObjectEventFrameGfx_JP_084D984C: @ 0x084D984C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d984c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/anabel.4bpp", 0x700, 0x100 @ gObjectEventPic_Anabel frame slice
 	.globl gObjectEventFrameGfx_JP_084D994C
 gObjectEventFrameGfx_JP_084D994C: @ 0x084D994C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d994c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/anabel.4bpp", 0x800, 0x100 @ gObjectEventPic_Anabel frame slice
 	.globl gObjectEventFrameGfx_JP_084D9A4C
 gObjectEventFrameGfx_JP_084D9A4C: @ 0x084D9A4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d9a4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/tucker.4bpp", 0x0, 0x100 @ gObjectEventPic_Tucker frame slice
 	.globl gObjectEventFrameGfx_JP_084D9B4C
 gObjectEventFrameGfx_JP_084D9B4C: @ 0x084D9B4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d9b4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/tucker.4bpp", 0x100, 0x100 @ gObjectEventPic_Tucker frame slice
 	.globl gObjectEventFrameGfx_JP_084D9C4C
 gObjectEventFrameGfx_JP_084D9C4C: @ 0x084D9C4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d9c4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/tucker.4bpp", 0x200, 0x100 @ gObjectEventPic_Tucker frame slice
 	.globl gObjectEventFrameGfx_JP_084D9D4C
 gObjectEventFrameGfx_JP_084D9D4C: @ 0x084D9D4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d9d4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/tucker.4bpp", 0x300, 0x100 @ gObjectEventPic_Tucker frame slice
 	.globl gObjectEventFrameGfx_JP_084D9E4C
 gObjectEventFrameGfx_JP_084D9E4C: @ 0x084D9E4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d9e4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/tucker.4bpp", 0x400, 0x100 @ gObjectEventPic_Tucker frame slice
 	.globl gObjectEventFrameGfx_JP_084D9F4C
 gObjectEventFrameGfx_JP_084D9F4C: @ 0x084D9F4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084d9f4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/tucker.4bpp", 0x500, 0x100 @ gObjectEventPic_Tucker frame slice
 	.globl gObjectEventFrameGfx_JP_084DA04C
 gObjectEventFrameGfx_JP_084DA04C: @ 0x084DA04C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084da04c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/tucker.4bpp", 0x600, 0x100 @ gObjectEventPic_Tucker frame slice
 	.globl gObjectEventFrameGfx_JP_084DA14C
 gObjectEventFrameGfx_JP_084DA14C: @ 0x084DA14C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084da14c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/tucker.4bpp", 0x700, 0x100 @ gObjectEventPic_Tucker frame slice
 	.globl gObjectEventFrameGfx_JP_084DA24C
 gObjectEventFrameGfx_JP_084DA24C: @ 0x084DA24C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084da24c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/tucker.4bpp", 0x800, 0x100 @ gObjectEventPic_Tucker frame slice
 	.globl gObjectEventFrameGfx_JP_084DA34C
 gObjectEventFrameGfx_JP_084DA34C: @ 0x084DA34C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084da34c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/spenser.4bpp", 0x0, 0x100 @ gObjectEventPic_Spenser frame slice
 	.globl gObjectEventFrameGfx_JP_084DA44C
 gObjectEventFrameGfx_JP_084DA44C: @ 0x084DA44C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084da44c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/spenser.4bpp", 0x100, 0x100 @ gObjectEventPic_Spenser frame slice
 	.globl gObjectEventFrameGfx_JP_084DA54C
 gObjectEventFrameGfx_JP_084DA54C: @ 0x084DA54C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084da54c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/spenser.4bpp", 0x200, 0x100 @ gObjectEventPic_Spenser frame slice
 	.globl gObjectEventFrameGfx_JP_084DA64C
 gObjectEventFrameGfx_JP_084DA64C: @ 0x084DA64C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084da64c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/spenser.4bpp", 0x300, 0x100 @ gObjectEventPic_Spenser frame slice
 	.globl gObjectEventFrameGfx_JP_084DA74C
 gObjectEventFrameGfx_JP_084DA74C: @ 0x084DA74C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084da74c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/spenser.4bpp", 0x400, 0x100 @ gObjectEventPic_Spenser frame slice
 	.globl gObjectEventFrameGfx_JP_084DA84C
 gObjectEventFrameGfx_JP_084DA84C: @ 0x084DA84C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084da84c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/spenser.4bpp", 0x500, 0x100 @ gObjectEventPic_Spenser frame slice
 	.globl gObjectEventFrameGfx_JP_084DA94C
 gObjectEventFrameGfx_JP_084DA94C: @ 0x084DA94C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084da94c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/spenser.4bpp", 0x600, 0x100 @ gObjectEventPic_Spenser frame slice
 	.globl gObjectEventFrameGfx_JP_084DAA4C
 gObjectEventFrameGfx_JP_084DAA4C: @ 0x084DAA4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084daa4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/spenser.4bpp", 0x700, 0x100 @ gObjectEventPic_Spenser frame slice
 	.globl gObjectEventFrameGfx_JP_084DAB4C
 gObjectEventFrameGfx_JP_084DAB4C: @ 0x084DAB4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dab4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/spenser.4bpp", 0x800, 0x100 @ gObjectEventPic_Spenser frame slice
 	.globl gObjectEventFrameGfx_JP_084DAC4C
 gObjectEventFrameGfx_JP_084DAC4C: @ 0x084DAC4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dac4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/greta.4bpp", 0x0, 0x100 @ gObjectEventPic_Greta frame slice
 	.globl gObjectEventFrameGfx_JP_084DAD4C
 gObjectEventFrameGfx_JP_084DAD4C: @ 0x084DAD4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dad4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/greta.4bpp", 0x100, 0x100 @ gObjectEventPic_Greta frame slice
 	.globl gObjectEventFrameGfx_JP_084DAE4C
 gObjectEventFrameGfx_JP_084DAE4C: @ 0x084DAE4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dae4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/greta.4bpp", 0x200, 0x100 @ gObjectEventPic_Greta frame slice
 	.globl gObjectEventFrameGfx_JP_084DAF4C
 gObjectEventFrameGfx_JP_084DAF4C: @ 0x084DAF4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084daf4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/greta.4bpp", 0x300, 0x100 @ gObjectEventPic_Greta frame slice
 	.globl gObjectEventFrameGfx_JP_084DB04C
 gObjectEventFrameGfx_JP_084DB04C: @ 0x084DB04C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084db04c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/greta.4bpp", 0x400, 0x100 @ gObjectEventPic_Greta frame slice
 	.globl gObjectEventFrameGfx_JP_084DB14C
 gObjectEventFrameGfx_JP_084DB14C: @ 0x084DB14C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084db14c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/greta.4bpp", 0x500, 0x100 @ gObjectEventPic_Greta frame slice
 	.globl gObjectEventFrameGfx_JP_084DB24C
 gObjectEventFrameGfx_JP_084DB24C: @ 0x084DB24C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084db24c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/greta.4bpp", 0x600, 0x100 @ gObjectEventPic_Greta frame slice
 	.globl gObjectEventFrameGfx_JP_084DB34C
 gObjectEventFrameGfx_JP_084DB34C: @ 0x084DB34C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084db34c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/greta.4bpp", 0x700, 0x100 @ gObjectEventPic_Greta frame slice
 	.globl gObjectEventFrameGfx_JP_084DB44C
 gObjectEventFrameGfx_JP_084DB44C: @ 0x084DB44C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084db44c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/greta.4bpp", 0x800, 0x100 @ gObjectEventPic_Greta frame slice
 	.globl gObjectEventFrameGfx_JP_084DB54C
 gObjectEventFrameGfx_JP_084DB54C: @ 0x084DB54C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084db54c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/noland.4bpp", 0x0, 0x100 @ gObjectEventPic_Noland frame slice
 	.globl gObjectEventFrameGfx_JP_084DB64C
 gObjectEventFrameGfx_JP_084DB64C: @ 0x084DB64C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084db64c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/noland.4bpp", 0x100, 0x100 @ gObjectEventPic_Noland frame slice
 	.globl gObjectEventFrameGfx_JP_084DB74C
 gObjectEventFrameGfx_JP_084DB74C: @ 0x084DB74C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084db74c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/noland.4bpp", 0x200, 0x100 @ gObjectEventPic_Noland frame slice
 	.globl gObjectEventFrameGfx_JP_084DB84C
 gObjectEventFrameGfx_JP_084DB84C: @ 0x084DB84C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084db84c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/noland.4bpp", 0x300, 0x100 @ gObjectEventPic_Noland frame slice
 	.globl gObjectEventFrameGfx_JP_084DB94C
 gObjectEventFrameGfx_JP_084DB94C: @ 0x084DB94C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084db94c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/noland.4bpp", 0x400, 0x100 @ gObjectEventPic_Noland frame slice
 	.globl gObjectEventFrameGfx_JP_084DBA4C
 gObjectEventFrameGfx_JP_084DBA4C: @ 0x084DBA4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dba4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/noland.4bpp", 0x500, 0x100 @ gObjectEventPic_Noland frame slice
 	.globl gObjectEventFrameGfx_JP_084DBB4C
 gObjectEventFrameGfx_JP_084DBB4C: @ 0x084DBB4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dbb4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/noland.4bpp", 0x600, 0x100 @ gObjectEventPic_Noland frame slice
 	.globl gObjectEventFrameGfx_JP_084DBC4C
 gObjectEventFrameGfx_JP_084DBC4C: @ 0x084DBC4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dbc4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/noland.4bpp", 0x700, 0x100 @ gObjectEventPic_Noland frame slice
 	.globl gObjectEventFrameGfx_JP_084DBD4C
 gObjectEventFrameGfx_JP_084DBD4C: @ 0x084DBD4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dbd4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/noland.4bpp", 0x800, 0x100 @ gObjectEventPic_Noland frame slice
 	.globl gObjectEventFrameGfx_JP_084DBE4C
 gObjectEventFrameGfx_JP_084DBE4C: @ 0x084DBE4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dbe4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/lucy.4bpp", 0x0, 0x100 @ gObjectEventPic_Lucy frame slice
 	.globl gObjectEventFrameGfx_JP_084DBF4C
 gObjectEventFrameGfx_JP_084DBF4C: @ 0x084DBF4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dbf4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/lucy.4bpp", 0x100, 0x100 @ gObjectEventPic_Lucy frame slice
 	.globl gObjectEventFrameGfx_JP_084DC04C
 gObjectEventFrameGfx_JP_084DC04C: @ 0x084DC04C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dc04c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/lucy.4bpp", 0x200, 0x100 @ gObjectEventPic_Lucy frame slice
 	.globl gObjectEventFrameGfx_JP_084DC14C
 gObjectEventFrameGfx_JP_084DC14C: @ 0x084DC14C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dc14c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/lucy.4bpp", 0x300, 0x100 @ gObjectEventPic_Lucy frame slice
 	.globl gObjectEventFrameGfx_JP_084DC24C
 gObjectEventFrameGfx_JP_084DC24C: @ 0x084DC24C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dc24c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/lucy.4bpp", 0x400, 0x100 @ gObjectEventPic_Lucy frame slice
 	.globl gObjectEventFrameGfx_JP_084DC34C
 gObjectEventFrameGfx_JP_084DC34C: @ 0x084DC34C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dc34c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/lucy.4bpp", 0x500, 0x100 @ gObjectEventPic_Lucy frame slice
 	.globl gObjectEventFrameGfx_JP_084DC44C
 gObjectEventFrameGfx_JP_084DC44C: @ 0x084DC44C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dc44c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/lucy.4bpp", 0x600, 0x100 @ gObjectEventPic_Lucy frame slice
 	.globl gObjectEventFrameGfx_JP_084DC54C
 gObjectEventFrameGfx_JP_084DC54C: @ 0x084DC54C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dc54c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/lucy.4bpp", 0x700, 0x100 @ gObjectEventPic_Lucy frame slice
 	.globl gObjectEventFrameGfx_JP_084DC64C
 gObjectEventFrameGfx_JP_084DC64C: @ 0x084DC64C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dc64c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/lucy.4bpp", 0x800, 0x100 @ gObjectEventPic_Lucy frame slice
 	.globl gObjectEventFrameGfx_JP_084DC74C
 gObjectEventFrameGfx_JP_084DC74C: @ 0x084DC74C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dc74c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/brandon.4bpp", 0x0, 0x100 @ gObjectEventPic_Brandon frame slice
 	.globl gObjectEventFrameGfx_JP_084DC84C
 gObjectEventFrameGfx_JP_084DC84C: @ 0x084DC84C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dc84c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/brandon.4bpp", 0x100, 0x100 @ gObjectEventPic_Brandon frame slice
 	.globl gObjectEventFrameGfx_JP_084DC94C
 gObjectEventFrameGfx_JP_084DC94C: @ 0x084DC94C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dc94c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/brandon.4bpp", 0x200, 0x100 @ gObjectEventPic_Brandon frame slice
 	.globl gObjectEventFrameGfx_JP_084DCA4C
 gObjectEventFrameGfx_JP_084DCA4C: @ 0x084DCA4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dca4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/brandon.4bpp", 0x300, 0x100 @ gObjectEventPic_Brandon frame slice
 	.globl gObjectEventFrameGfx_JP_084DCB4C
 gObjectEventFrameGfx_JP_084DCB4C: @ 0x084DCB4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dcb4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/brandon.4bpp", 0x400, 0x100 @ gObjectEventPic_Brandon frame slice
 	.globl gObjectEventFrameGfx_JP_084DCC4C
 gObjectEventFrameGfx_JP_084DCC4C: @ 0x084DCC4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dcc4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/brandon.4bpp", 0x500, 0x100 @ gObjectEventPic_Brandon frame slice
 	.globl gObjectEventFrameGfx_JP_084DCD4C
 gObjectEventFrameGfx_JP_084DCD4C: @ 0x084DCD4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dcd4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/brandon.4bpp", 0x600, 0x100 @ gObjectEventPic_Brandon frame slice
 	.globl gObjectEventFrameGfx_JP_084DCE4C
 gObjectEventFrameGfx_JP_084DCE4C: @ 0x084DCE4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dce4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/brandon.4bpp", 0x700, 0x100 @ gObjectEventPic_Brandon frame slice
 	.globl gObjectEventFrameGfx_JP_084DCF4C
 gObjectEventFrameGfx_JP_084DCF4C: @ 0x084DCF4C
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dcf4c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/frontier_brains/brandon.4bpp", 0x800, 0x100 @ gObjectEventPic_Brandon frame slice
 	.globl gObjectEventFrameGfx_JP_084DD04C
 gObjectEventFrameGfx_JP_084DD04C: @ 0x084DD04C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dd04c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/lugia.4bpp", 0x0, 0x200 @ gObjectEventPic_Lugia frame slice
 	.globl gObjectEventFrameGfx_JP_084DD24C
 gObjectEventFrameGfx_JP_084DD24C: @ 0x084DD24C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dd24c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/lugia.4bpp", 0x200, 0x200 @ gObjectEventPic_Lugia frame slice
 	.globl gObjectEventPal_JP_084DD44C
 gObjectEventPal_JP_084DD44C: @ 0x084DD44C
 	@ 16-color object-event palette
@@ -742,11 +742,11 @@ gObjectEventPal_JP_084DD44C: @ 0x084DD44C
 	.globl gObjectEventFrameGfx_JP_084DD46C
 gObjectEventFrameGfx_JP_084DD46C: @ 0x084DD46C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dd46c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/ho_oh.4bpp", 0x0, 0x200 @ gObjectEventPic_HoOh frame slice
 	.globl gObjectEventFrameGfx_JP_084DD66C
 gObjectEventFrameGfx_JP_084DD66C: @ 0x084DD66C
 	@ 4bpp frame payload; byte size = 0x200 from SpriteFrameImage
-	.incbin "build/graphics/analyzed/object_event_frame_084dd66c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/pokemon/ho_oh.4bpp", 0x200, 0x200 @ gObjectEventPic_HoOh frame slice
 	.globl gObjectEventPal_JP_084DD86C
 gObjectEventPal_JP_084DD86C: @ 0x084DD86C
 	@ 16-color object-event palette
