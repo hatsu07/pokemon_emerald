@@ -1722,6 +1722,48 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             DEPENDS "${INPUT_PNG}" "${GBAGFX}"
             VERBATIM)
 
+    # BEGIN TRAINER GRAPHICS PNG PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/trainers/front_pics/(.+)[.]4bpp[.]lz$")
+        set(TRAINER_FRONT_REL "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trainers/front_pics/${TRAINER_FRONT_REL}.png")
+        set(TMP_RAW
+            "${OUTPUT_DIR}/${TRAINER_FRONT_REL}.4bpp")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INPUT_PNG}" "${TMP_RAW}"
+            COMMAND "${GBAGFX}" "${TMP_RAW}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${GBAGFX}"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/trainers/front_pics/(.+)[.]gbapal[.]lz$")
+        set(TRAINER_FRONT_PAL_REL "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trainers/front_pics/${TRAINER_FRONT_PAL_REL}.png")
+        set(TMP_RAW
+            "${OUTPUT_DIR}/${TRAINER_FRONT_PAL_REL}.gbapal")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INPUT_PNG}" "${TMP_RAW}"
+            COMMAND "${GBAGFX}" "${TMP_RAW}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${GBAGFX}"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/trainers/back_pics/(.+)[.]4bpp$")
+        set(TRAINER_BACK_REL "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trainers/back_pics/${TRAINER_BACK_REL}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${GBAGFX}"
+            VERBATIM)
+    # END TRAINER GRAPHICS PNG PIPELINE
+
     # BEGIN OBJECT EVENT CANONICAL PNG PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/object_events/pics/(.+)[.]4bpp$")
