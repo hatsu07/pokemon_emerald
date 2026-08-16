@@ -2591,6 +2591,49 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # END SEMANTIC JP UI EXACT ASSET PIPELINE
 
     # BEGIN BATTLE ANIM BACKGROUND EXACT ASSET PIPELINE
+    # Sandstorm background
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/battle_anims/backgrounds/sandstorm_brew.4bpp.lz")
+        set(BATTLE_ANIM_SANDSTORM_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/sandstorm_brew.png")
+        set(BATTLE_ANIM_SANDSTORM_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${BATTLE_ANIM_SANDSTORM_PLAN}"
+                --stem "sandstorm_gfx"
+                "${BATTLE_ANIM_SANDSTORM_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_ANIM_SANDSTORM_INPUT}"
+                "${BATTLE_ANIM_SANDSTORM_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/battle_anims/backgrounds/sandstorm_brew.bin.lz")
+        set(BATTLE_ANIM_SANDSTORM_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/sandstorm_brew.tilemap.u16")
+        set(BATTLE_ANIM_SANDSTORM_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${BATTLE_ANIM_SANDSTORM_PLAN}"
+                --stem "sandstorm_tilemap"
+                "${BATTLE_ANIM_SANDSTORM_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_ANIM_SANDSTORM_INPUT}"
+                "${BATTLE_ANIM_SANDSTORM_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/battle_anims/backgrounds/(water)[.]4bpp[.]lz$")
         set(BATTLE_ANIM_BG_INPUT
@@ -2759,6 +2802,55 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # END POKEMON JUMP EXACT ASSET PIPELINE
 
     # BEGIN INTRO SCENE 3 EXACT ASSET PIPELINE
+    # late-ROM semantic additions: clouds / Rayquaza
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/scene_3/(clouds|rayquaza|rayquaza_clouds)[.]4bpp[.]lz$")
+        set(INTRO3_LATE_ASSET "${CMAKE_MATCH_1}")
+        set(INTRO3_LATE_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/${INTRO3_LATE_ASSET}.png")
+        set(INTRO3_LATE_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                repack-png
+                --manifest "${INTRO3_LATE_PLAN}"
+                --stem "${INTRO3_LATE_ASSET}_gfx"
+                --gbagfx "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+                "${INTRO3_LATE_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO3_LATE_INPUT}"
+                "${INTRO3_LATE_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/scene_3/(kyogre_bg|clouds_left|clouds_right)[.]bin[.]lz$")
+        set(INTRO3_LATE_TILEMAP "${CMAKE_MATCH_1}")
+        set(INTRO3_LATE_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/${INTRO3_LATE_TILEMAP}.tilemap.u16")
+        set(INTRO3_LATE_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                repack-u16
+                --manifest "${INTRO3_LATE_PLAN}"
+                --stem "${INTRO3_LATE_TILEMAP}_tilemap"
+                "${INTRO3_LATE_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO3_LATE_INPUT}"
+                "${INTRO3_LATE_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/intro/scene_3/(groudon|kyogre)[.]8bpp[.]lz$")
         set(INTRO3_ASSET "${CMAKE_MATCH_1}")

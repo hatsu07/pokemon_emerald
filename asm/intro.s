@@ -2817,7 +2817,7 @@ Task_IntroLoadKyogreScene: @ 0x0816E084
 _0816E114: .4byte gIntroData_08D89208
 _0816E118: .4byte gIntroData_08D89AA0
 _0816E11C: .4byte 0x0600C000
-_0816E120: .4byte gIntroData_08D8A918
+_0816E120: .4byte gIntroKyogreBg_Tilemap
 _0816E124: .4byte 0x0600E000
 _0816E128: .4byte sSpriteSheet_Bubbles
 _0816E12C: .4byte sSpritePalette_Bubbles
@@ -3566,7 +3566,7 @@ _0816E710: .4byte 0x00001F1F
 _0816E714: .4byte 0x00005A04
 _0816E718: .4byte 0x00001C06
 _0816E71C: .4byte 0x0000FFB0
-_0816E720: .4byte gIntroData_08D8AA38
+_0816E720: .4byte gIntroClouds_Gfx
 _0816E724: .4byte 0x06004000
 _0816E728: .4byte gIntroData_08D8B6CC
 _0816E72C: .4byte 0x0600E000
@@ -3597,9 +3597,9 @@ Task_IntroLoadClouds2: @ 0x0816E738
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816E764: .4byte gIntroData_08D8B164
+_0816E764: .4byte gIntroCloudsLeft_Tilemap
 _0816E768: .4byte 0x0600C000
-_0816E76C: .4byte gIntroData_08D8B424
+_0816E76C: .4byte gIntroCloudsRight_Tilemap
 _0816E770: .4byte 0x0600D000
 _0816E774: .4byte 0x03005B60
 _0816E778: .4byte 0x0816E77D
@@ -3795,9 +3795,9 @@ _0816E8FC: .4byte gIntroData_08D8C150
 _0816E900: .4byte 0x0600E000
 _0816E904: .4byte gIntroData_08D8CCAC
 _0816E908: .4byte 0x0600C000
-_0816E90C: .4byte gIntroData_08D8BA58
+_0816E90C: .4byte gIntroRayquaza_Gfx
 _0816E910: .4byte 0x06004000
-_0816E914: .4byte gIntroData_08D8C81C
+_0816E914: .4byte gIntroRayquazaClouds_Gfx
 _0816E918: .4byte 0x03005B60
 _0816E91C: .4byte 0x0816E929
 _0816E920: .4byte sSpriteSheet_Lightning

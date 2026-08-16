@@ -1,46 +1,46 @@
 	@ pret/pokeemerald-jp direct xref for 0x08D8A918: intro.s: Task_IntroLoadKyogreScene
 	.globl gIntroData_08D8A918
 gIntroData_08D8A918:
-	.globl sLz77Block_08D8A918
-	@ confirmed GBA LZ77 stream: compressed=0x11E, decompressed=0x800
-sLz77Block_08D8A918:
-	@ analyzed canonical ROM range 0x08D8A918-0x08D8AA37
-	.incbin "build/graphics/analyzed/gunknown_8d8a918_08d8a918.4bpp.lz"
-	.if (. - sLz77Block_08D8A918) != 0x120
-	.error "sLz77Block_08D8A918 compressed size mismatch"
+	.globl gIntroKyogreBg_Tilemap
+	@ exact GBA LZ77 from editable graphics/intro/scene_3/kyogre_bg.tilemap.u16: compressed=0x11E, decompressed=0x800
+gIntroKyogreBg_Tilemap:
+	@ canonical ROM range 0x08D8A918-0x08D8AA37
+	.incbin "build/graphics/intro/scene_3/kyogre_bg.bin.lz"
+	.if (. - gIntroKyogreBg_Tilemap) != 0x120
+	.error "gIntroKyogreBg_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8AA38: intro.s: Task_IntroLoadClouds1
 	.globl gIntroData_08D8AA38
 gIntroData_08D8AA38:
-	.globl sLz77Block_08D8AA38
-	@ confirmed GBA LZ77 stream: compressed=0x729, decompressed=0x2000
-sLz77Block_08D8AA38:
-	@ analyzed canonical ROM range 0x08D8AA38-0x08D8B163
-	.incbin "build/graphics/analyzed/gunknown_8d8aa38_08d8aa38.4bpp.lz"
-	.if (. - sLz77Block_08D8AA38) != 0x72C
-	.error "sLz77Block_08D8AA38 compressed size mismatch"
+	.globl gIntroClouds_Gfx
+	@ exact GBA LZ77 from editable graphics/intro/scene_3/clouds.png: compressed=0x729, decompressed=0x2000
+gIntroClouds_Gfx:
+	@ canonical ROM range 0x08D8AA38-0x08D8B163
+	.incbin "build/graphics/intro/scene_3/clouds.4bpp.lz"
+	.if (. - gIntroClouds_Gfx) != 0x72C
+	.error "gIntroClouds_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8B164: intro.s: Task_IntroLoadClouds2
 	.globl gIntroData_08D8B164
 gIntroData_08D8B164:
-	.globl sLz77Block_08D8B164
-	@ confirmed GBA LZ77 stream: compressed=0x2BE, decompressed=0x1000
-sLz77Block_08D8B164:
-	@ analyzed canonical ROM range 0x08D8B164-0x08D8B423
-	.incbin "build/graphics/analyzed/gunknown_8d8b164_08d8b164.4bpp.lz"
-	.if (. - sLz77Block_08D8B164) != 0x2C0
-	.error "sLz77Block_08D8B164 compressed size mismatch"
+	.globl gIntroCloudsLeft_Tilemap
+	@ exact GBA LZ77 from editable graphics/intro/scene_3/clouds_left.tilemap.u16: compressed=0x2BE, decompressed=0x1000
+gIntroCloudsLeft_Tilemap:
+	@ canonical ROM range 0x08D8B164-0x08D8B423
+	.incbin "build/graphics/intro/scene_3/clouds_left.bin.lz"
+	.if (. - gIntroCloudsLeft_Tilemap) != 0x2C0
+	.error "gIntroCloudsLeft_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8B424: intro.s: Task_IntroLoadClouds2
 	.globl gIntroData_08D8B424
 gIntroData_08D8B424:
-	.globl sLz77Block_08D8B424
-	@ confirmed GBA LZ77 stream: compressed=0x2A6, decompressed=0x1000
-sLz77Block_08D8B424:
-	@ analyzed canonical ROM range 0x08D8B424-0x08D8B6CB
-	.incbin "build/graphics/analyzed/gunknown_8d8b424_08d8b424.4bpp.lz"
-	.if (. - sLz77Block_08D8B424) != 0x2A8
-	.error "sLz77Block_08D8B424 compressed size mismatch"
+	.globl gIntroCloudsRight_Tilemap
+	@ exact GBA LZ77 from editable graphics/intro/scene_3/clouds_right.tilemap.u16: compressed=0x2A6, decompressed=0x1000
+gIntroCloudsRight_Tilemap:
+	@ canonical ROM range 0x08D8B424-0x08D8B6CB
+	.incbin "build/graphics/intro/scene_3/clouds_right.bin.lz"
+	.if (. - gIntroCloudsRight_Tilemap) != 0x2A8
+	.error "gIntroCloudsRight_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8B6CC: intro.s: Task_IntroLoadClouds1
 	.globl gIntroData_08D8B6CC
@@ -60,13 +60,13 @@ gLz77Asset_08D8B7F0: @ 0x08D8B7F0
 	@ pret/pokeemerald-jp direct xref for 0x08D8BA58: intro.s: Task_IntroLoadRayquazaLightningScene
 	.globl gIntroData_08D8BA58
 gIntroData_08D8BA58:
-	.globl sLz77Block_08D8BA58
-	@ confirmed GBA LZ77 stream: compressed=0x6F6, decompressed=0x2000
-sLz77Block_08D8BA58:
-	@ analyzed canonical ROM range 0x08D8BA58-0x08D8C14F
-	.incbin "build/graphics/analyzed/gunknown_8d8ba58_08d8ba58.4bpp.lz"
-	.if (. - sLz77Block_08D8BA58) != 0x6F8
-	.error "sLz77Block_08D8BA58 compressed size mismatch"
+	.globl gIntroRayquaza_Gfx
+	@ exact GBA LZ77 from editable graphics/intro/scene_3/rayquaza.png: compressed=0x6F6, decompressed=0x2000
+gIntroRayquaza_Gfx:
+	@ canonical ROM range 0x08D8BA58-0x08D8C14F
+	.incbin "build/graphics/intro/scene_3/rayquaza.4bpp.lz"
+	.if (. - gIntroRayquaza_Gfx) != 0x6F8
+	.error "gIntroRayquaza_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8C150: intro.s: Task_IntroLoadRayquazaLightningScene
 	.globl gIntroData_08D8C150
@@ -87,13 +87,13 @@ gLz77Asset_08D8C5A8: @ 0x08D8C5A8
 	@ pret/pokeemerald-jp direct xref for 0x08D8C81C: intro.s: Task_IntroLoadRayquazaLightningScene
 	.globl gIntroData_08D8C81C
 gIntroData_08D8C81C:
-	.globl sLz77Block_08D8C81C
-	@ confirmed GBA LZ77 stream: compressed=0x48F, decompressed=0x2000
-sLz77Block_08D8C81C:
-	@ analyzed canonical ROM range 0x08D8C81C-0x08D8CCAB
-	.incbin "build/graphics/analyzed/gunknown_8d8c81c_08d8c81c.4bpp.lz"
-	.if (. - sLz77Block_08D8C81C) != 0x490
-	.error "sLz77Block_08D8C81C compressed size mismatch"
+	.globl gIntroRayquazaClouds_Gfx
+	@ exact GBA LZ77 from editable graphics/intro/scene_3/rayquaza_clouds.png: compressed=0x48F, decompressed=0x2000
+gIntroRayquazaClouds_Gfx:
+	@ canonical ROM range 0x08D8C81C-0x08D8CCAB
+	.incbin "build/graphics/intro/scene_3/rayquaza_clouds.4bpp.lz"
+	.if (. - gIntroRayquazaClouds_Gfx) != 0x490
+	.error "gIntroRayquazaClouds_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8CCAC: intro.s: Task_IntroLoadRayquazaLightningScene
 	.globl gIntroData_08D8CCAC
@@ -126,22 +126,22 @@ gLz77Asset_08D8D288: @ 0x08D8D288
 	@ pret/pokeemerald-jp direct xref for 0x08D8D3F4: rock.s: AnimTask_LoadSandstormBackground
 	.globl gRockData_08D8D3F4
 gRockData_08D8D3F4:
-	.globl sLz77Block_08D8D3F4
-	@ confirmed GBA LZ77 stream: compressed=0x17C, decompressed=0x800
-sLz77Block_08D8D3F4:
-	@ analyzed canonical ROM range 0x08D8D3F4-0x08D8D56F
-	.incbin "build/graphics/analyzed/gunknown_8d8d3f4_08d8d3f4.4bpp.lz"
-	.if (. - sLz77Block_08D8D3F4) != 0x17C
-	.error "sLz77Block_08D8D3F4 compressed size mismatch"
+	.globl gBattleAnimBgTilemap_Sandstorm
+	@ exact GBA LZ77 from editable graphics/battle_anims/backgrounds/sandstorm_brew.tilemap.u16: compressed=0x17C, decompressed=0x800
+gBattleAnimBgTilemap_Sandstorm:
+	@ canonical ROM range 0x08D8D3F4-0x08D8D56F
+	.incbin "build/graphics/battle_anims/backgrounds/sandstorm_brew.bin.lz"
+	.if (. - gBattleAnimBgTilemap_Sandstorm) != 0x17C
+	.error "gBattleAnimBgTilemap_Sandstorm compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8D570: rock.s: AnimTask_LoadSandstormBackground
 	.globl gRockData_08D8D570
 gRockData_08D8D570:
-	.globl sLz77Block_08D8D570
-	@ confirmed GBA LZ77 stream: compressed=0x52C, decompressed=0x800
-sLz77Block_08D8D570:
-	@ analyzed canonical ROM range 0x08D8D570-0x08D8DA9B
-	.incbin "build/graphics/analyzed/gunknown_8d8d570_08d8d570.4bpp.lz"
-	.if (. - sLz77Block_08D8D570) != 0x52C
-	.error "sLz77Block_08D8D570 compressed size mismatch"
+	.globl gBattleAnimBgImage_Sandstorm
+	@ exact GBA LZ77 from editable graphics/battle_anims/backgrounds/sandstorm_brew.png: compressed=0x52C, decompressed=0x800
+gBattleAnimBgImage_Sandstorm:
+	@ canonical ROM range 0x08D8D570-0x08D8DA9B
+	.incbin "build/graphics/battle_anims/backgrounds/sandstorm_brew.4bpp.lz"
+	.if (. - gBattleAnimBgImage_Sandstorm) != 0x52C
+	.error "gBattleAnimBgImage_Sandstorm compressed size mismatch"
 	.endif

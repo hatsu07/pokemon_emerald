@@ -326,8 +326,8 @@ _081114BE:
 _081114D8: .4byte 0x00003F42
 _081114DC: .4byte 0x02022ACC
 _081114E0: .4byte 0x02022ACE
-_081114E4: .4byte gRockData_08D8D570
-_081114E8: .4byte gRockData_08D8D3F4
+_081114E4: .4byte gBattleAnimBgImage_Sandstorm
+_081114E8: .4byte gBattleAnimBgTilemap_Sandstorm
 _081114EC: .4byte gRockData_08D8DA9C
 _081114F0: .4byte 0x020380BE
 _081114F4: .4byte 0x020380D6
