@@ -4320,9 +4320,9 @@ _081400F4:
 	b _081401A6
 	.align 2, 0
 _08140174: .4byte gEvolutionSceneData_08594D50
-_08140178: .4byte gEvolutionSceneData_08593CA0
-_0814017C: .4byte gEvolutionSceneData_08594398
-_08140180: .4byte gEvolutionSceneData_0859487C
+_08140178: .4byte sBgAnim_Gfx
+_0814017C: .4byte sBgAnim_Inner_Tilemap
+_08140180: .4byte sBgAnim_Outer_Tilemap
 _08140184: .4byte 0x00000442
 _08140188: .4byte 0x00000808
 _0814018C:

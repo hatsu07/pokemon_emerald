@@ -74,7 +74,7 @@ _0813CA96:
 	bl LoadBgTilemap
 	b _0813CB00
 	.align 2, 0
-_0813CAC0: .4byte gPokedexAreaScreenData_0859383C
+_0813CAC0: .4byte sAreaGlow_Gfx
 _0813CAC4: .4byte 0x0203A848
 _0813CAC8:
 	bl free_temp_tile_data_buffers_if_possible

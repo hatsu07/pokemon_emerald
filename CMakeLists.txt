@@ -1877,6 +1877,68 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
 
     # END REGION MAP EXACT ASSET PIPELINE
+    # BEGIN POKEDEX AREA GLOW / EVOLUTION SCENE EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/area_glow.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --key "sAreaGlow_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/area_glow.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/area_glow.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/evolution_scene/bg.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/lz77_exact_plans.json"
+                --key "sBgAnim_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/bg.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/bg.png"
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/evolution_scene/bg_inner.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/lz77_exact_plans.json"
+                --key "sBgAnim_Inner_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/bg_inner.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/bg_inner.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/evolution_scene/bg_outer.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/lz77_exact_plans.json"
+                --key "sBgAnim_Outer_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/bg_outer.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/bg_outer.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END POKEDEX AREA GLOW / EVOLUTION SCENE EXACT ASSET PIPELINE
     # END POKEDEX AREA / POKENAV EXACT ASSET PIPELINE
 
     # BEGIN POKEDEX EXACT ASSET PIPELINE
