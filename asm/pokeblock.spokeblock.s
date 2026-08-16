@@ -541,7 +541,7 @@ _08135CCC:
 	bl decompress_and_copy_tile_data_to_vram
 	b _08135D2E
 	.align 2, 0
-_08135CE4: .4byte gPokeblockSpokeblockData_08D9B4B4
+_08135CE4: .4byte gMenuPokeblock_Gfx
 _08135CE8:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -555,7 +555,7 @@ _08135CE8:
 	ldr r1, [r4]
 	b _08135D32
 	.align 2, 0
-_08135D04: .4byte gPokeblockSpokeblockData_08D9BA14
+_08135D04: .4byte gMenuPokeblock_Tilemap
 _08135D08: .4byte 0x0203A81C
 _08135D0C:
 	ldr r0, _08135D18

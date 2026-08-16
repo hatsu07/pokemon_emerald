@@ -465,7 +465,7 @@ _08179E16:
 	strh r0, [r1]
 	b _08179E58
 	.align 2, 0
-_08179E24: .4byte gPokeblockFeedData_08D9BC90
+_08179E24: .4byte gPokeblockFeedBg_Tilemap
 _08179E28: .4byte 0x0203B9E4
 _08179E2C: .4byte 0x0000107E
 _08179E30:

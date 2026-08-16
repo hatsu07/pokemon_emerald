@@ -29,15 +29,12 @@ gShopMenuMoney_Gfx: @ 0x08D9B428
 gLz77Asset_08D9B428:
 	.incbin "build/assets/lz77_raw/08D9B428.bin.lz"
 	@ pret/pokeemerald-jp direct xref for 0x08D9B4B4: pokeblock.spokeblock.s: sub_08135C88
-	.globl gPokeblockSpokeblockData_08D9B4B4
-gPokeblockSpokeblockData_08D9B4B4:
-	.globl sLz77Block_08D9B4B4
-	@ confirmed GBA LZ77 stream: compressed=0x207, decompressed=0x500
-sLz77Block_08D9B4B4:
-	@ analyzed canonical ROM range 0x08D9B4B4-0x08D9B6BB
-	.incbin "build/graphics/analyzed/gunknown_8d9b4b4_08d9b4b4.4bpp.lz"
-	.if (. - sLz77Block_08D9B4B4) != 0x208
-	.error "sLz77Block_08D9B4B4 compressed size mismatch"
+	.globl gMenuPokeblock_Gfx
+gMenuPokeblock_Gfx: @ 0x08D9B4B4
+	@ Semantic exact-LZ Pokeblock asset.
+	.incbin "build/graphics/pokeblock_jp_remaining/menu.4bpp.lz"
+	.if (. - gMenuPokeblock_Gfx) != 0x208
+	.error "gMenuPokeblock_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9B6BC: pokeblock.spokeblock.s: sub_08135C88
 	.globl gPokeblockSpokeblockData_08D9B6BC
@@ -57,15 +54,12 @@ gLz77Asset_08D9B72C: @ 0x08D9B72C
 gLz77Asset_08D9B9EC: @ 0x08D9B9EC
 	.incbin "build/assets/lz77_raw/08D9B9EC.bin.lz"
 	@ pret/pokeemerald-jp direct xref for 0x08D9BA14: pokeblock.spokeblock.s: sub_08135C88
-	.globl gPokeblockSpokeblockData_08D9BA14
-gPokeblockSpokeblockData_08D9BA14:
-	.globl sLz77Block_08D9BA14
-	@ confirmed GBA LZ77 stream: compressed=0x148, decompressed=0x800
-sLz77Block_08D9BA14:
-	@ analyzed canonical ROM range 0x08D9BA14-0x08D9BB5B
-	.incbin "build/graphics/analyzed/gunknown_8d9ba14_08d9ba14.4bpp.lz"
-	.if (. - sLz77Block_08D9BA14) != 0x148
-	.error "sLz77Block_08D9BA14 compressed size mismatch"
+	.globl gMenuPokeblock_Tilemap
+gMenuPokeblock_Tilemap: @ 0x08D9BA14
+	@ Semantic exact-LZ Pokeblock asset.
+	.incbin "build/graphics/pokeblock_jp_remaining/menu.bin.lz"
+	.if (. - gMenuPokeblock_Tilemap) != 0x148
+	.error "gMenuPokeblock_Tilemap compressed size mismatch"
 	.endif
 
 	.globl gThrownPokeblock_Gfx
@@ -119,15 +113,12 @@ gPokeblockPalette_Gold: @ 0x08D9BC7C
 	.endif
 
 	@ pret/pokeemerald-jp direct xref for 0x08D9BC90: pokeblock_feed.s: LoadMonAndSceneGfx
-	.globl gPokeblockFeedData_08D9BC90
-gPokeblockFeedData_08D9BC90:
-	.globl sLz77Block_08D9BC90
-	@ confirmed GBA LZ77 stream: compressed=0x100, decompressed=0x800
-sLz77Block_08D9BC90:
-	@ analyzed canonical ROM range 0x08D9BC90-0x08D9BD8F
-	.incbin "build/graphics/analyzed/gunknown_8d9bc90_08d9bc90.4bpp.lz"
-	.if (. - sLz77Block_08D9BC90) != 0x100
-	.error "sLz77Block_08D9BC90 compressed size mismatch"
+	.globl gPokeblockFeedBg_Tilemap
+gPokeblockFeedBg_Tilemap: @ 0x08D9BC90
+	@ Semantic exact-LZ Pokeblock asset.
+	.incbin "build/graphics/pokeblock_jp_remaining/feeding_bg.bin.lz"
+	.if (. - gPokeblockFeedBg_Tilemap) != 0x100
+	.error "gPokeblockFeedBg_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9BD90: berry_tag_screen.s: LoadBerryTagGfx
 	.globl gBerryCheck_Gfx

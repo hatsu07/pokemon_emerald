@@ -475,6 +475,53 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END TRADE WIRELESS EXACT PIPELINE
 
+    # BEGIN POKEBLOCK REMAINING EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock_jp_remaining/menu.4bpp.lz")
+        set(POKEBLOCK_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/pokeblock/menu.png")
+        set(POKEBLOCK_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/pokeblock/jp_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokeblock_remaining_exact.py"
+                gfx --manifest "${POKEBLOCK_REMAINING_PLAN}" --key "menu_gfx"
+                "${POKEBLOCK_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${POKEBLOCK_REMAINING_INPUT}" "${POKEBLOCK_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/pokeblock_remaining_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock_jp_remaining/menu.bin.lz")
+        set(POKEBLOCK_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/pokeblock/menu.tilemap.u16")
+        set(POKEBLOCK_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/pokeblock/jp_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokeblock_remaining_exact.py"
+                u16 --manifest "${POKEBLOCK_REMAINING_PLAN}" --key "menu_tilemap"
+                "${POKEBLOCK_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${POKEBLOCK_REMAINING_INPUT}" "${POKEBLOCK_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/pokeblock_remaining_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock_jp_remaining/feeding_bg.bin.lz")
+        set(POKEBLOCK_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/pokeblock/feeding_bg.tilemap.u16")
+        set(POKEBLOCK_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/pokeblock/jp_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokeblock_remaining_exact.py"
+                u16 --manifest "${POKEBLOCK_REMAINING_PLAN}" --key "feeding_bg_tilemap"
+                "${POKEBLOCK_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${POKEBLOCK_REMAINING_INPUT}" "${POKEBLOCK_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/pokeblock_remaining_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END POKEBLOCK REMAINING EXACT PIPELINE
+
     # BEGIN MAP TILESET PNG PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/tilesets/(.+)/tiles[.]4bpp[.]lz$")
