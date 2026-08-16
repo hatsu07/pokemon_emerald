@@ -543,87 +543,73 @@ FunctionPointerTable_JP_085849A4: @ 0x085849A4
 	.byte 0x00, 0x00, 0x00, 0x00, 0x0C, 0x02, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0x4C, 0x58, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x08584C64: slot_machine.s: sub_0812E0F4
-	.globl gSlotMachineData_08584C64
-gSlotMachineData_08584C64: @ 0x08584C64
 	@ analyzed canonical ROM range 0x08584C64-0x08584C7B
+	.globl sSpriteTemplate_08584C64
 sSpriteTemplate_08584C64: @ 0x08584C64
 	rodata_sprite_template 0x0000, 0x0000, 0x085849E0, 0x08584B7C, 0, gDummySpriteAffineAnimTable, sub_0812E164
 	@ pret/pokeemerald-jp direct xref for 0x08584C7C: slot_machine.s: sub_0812E240
-	.globl gSlotMachineData_08584C7C
-gSlotMachineData_08584C7C: @ 0x08584C7C
 	@ analyzed canonical ROM range 0x08584C7C-0x08584C93
+	.globl sSpriteTemplate_08584C7C
 sSpriteTemplate_08584C7C: @ 0x08584C7C
 	rodata_sprite_template 0x0007, 0x0004, 0x085849C8, 0x08584B7C, 0, gDummySpriteAffineAnimTable, sub_0812E2B8
 	@ pret/pokeemerald-jp direct xref for 0x08584C94: slot_machine.s: sub_0812E310
-	.globl gSlotMachineData_08584C94
-gSlotMachineData_08584C94: @ 0x08584C94
 	@ analyzed canonical ROM range 0x08584C94-0x08584CAB
+	.globl sSpriteTemplate_08584C94
 sSpriteTemplate_08584C94: @ 0x08584C94
 	rodata_sprite_template 0x0011, 0x0000, 0x085849F8, 0x08584B7C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08584CAC: slot_machine.s: sub_0812E34C
-	.globl gSlotMachineData_08584CAC
-gSlotMachineData_08584CAC: @ 0x08584CAC
 	@ analyzed canonical ROM range 0x08584CAC-0x08584CC3
+	.globl sSpriteTemplate_08584CAC
 sSpriteTemplate_08584CAC: @ 0x08584CAC
 	rodata_sprite_template 0xFFFF, 0x0001, 0x085849F8, 0x08584B84, 0, gDummySpriteAffineAnimTable, sub_0812E434
 	@ pret/pokeemerald-jp direct xref for 0x08584CC4: slot_machine.s: sub_0812E484
-	.globl gSlotMachineData_08584CC4
-gSlotMachineData_08584CC4: @ 0x08584CC4
 	@ analyzed canonical ROM range 0x08584CC4-0x08584CDB
+	.globl sSpriteTemplate_08584CC4
 sSpriteTemplate_08584CC4: @ 0x08584CC4
 	rodata_sprite_template 0xFFFF, 0x0002, 0x085849C8, 0x08584B7C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08584CDC: slot_machine.s: sub_0812E484
-	.globl gSlotMachineData_08584CDC
-gSlotMachineData_08584CDC: @ 0x08584CDC
 	@ analyzed canonical ROM range 0x08584CDC-0x08584CF3
+	.globl sSpriteTemplate_08584CDC
 sSpriteTemplate_08584CDC: @ 0x08584CDC
 	rodata_sprite_template 0xFFFF, 0x0003, 0x085849C8, 0x08584B7C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08584CF4: slot_machine.s: sub_0812E5B8
-	.globl gSlotMachineData_08584CF4
-gSlotMachineData_08584CF4: @ 0x08584CF4
 	@ analyzed canonical ROM range 0x08584CF4-0x08584D0B
+	.globl sSpriteTemplate_08584CF4
 sSpriteTemplate_08584CF4: @ 0x08584CF4
 	rodata_sprite_template 0xFFFF, 0x0003, 0x085849C8, 0x08584B7C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08584D0C: slot_machine.s: sub_0812E660
-	.globl gSlotMachineData_08584D0C
-gSlotMachineData_08584D0C: @ 0x08584D0C
 	@ analyzed canonical ROM range 0x08584D0C-0x08584D23
+	.globl sSpriteTemplate_08584D0C
 sSpriteTemplate_08584D0C: @ 0x08584D0C
 	rodata_sprite_template 0xFFFF, 0x0004, 0x085849D0, 0x08584B9C, 0x08584A00, gDummySpriteAffineAnimTable, sub_0812E6D4
 	@ pret/pokeemerald-jp direct xref for 0x08584D24: slot_machine.s: sub_0812E71C
-	.globl gSlotMachineData_08584D24
-gSlotMachineData_08584D24: @ 0x08584D24
 	@ analyzed canonical ROM range 0x08584D24-0x08584D3B
+	.globl sSpriteTemplate_08584D24
 sSpriteTemplate_08584D24: @ 0x08584D24
 	rodata_sprite_template 0xFFFF, 0x0004, 0x085849D0, 0x08584B7C, 0x08584A30, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08584D3C: slot_machine.s: sub_0812E7DC
-	.globl gSlotMachineData_08584D3C
-gSlotMachineData_08584D3C: @ 0x08584D3C
 	@ analyzed canonical ROM range 0x08584D3C-0x08584D53
+	.globl sSpriteTemplate_08584D3C
 sSpriteTemplate_08584D3C: @ 0x08584D3C
 	rodata_sprite_template 0xFFFF, 0x0004, 0x085849D0, 0x08584B7C, 0x08584A38, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08584D54: slot_machine.s: CreateReelTimeSprites1
-	.globl gSlotMachineData_08584D54
-gSlotMachineData_08584D54: @ 0x08584D54
 	@ analyzed canonical ROM range 0x08584D54-0x08584D6B
+	.globl sSpriteTemplate_08584D54
 sSpriteTemplate_08584D54: @ 0x08584D54
 	rodata_sprite_template 0xFFFF, 0x0004, 0x085849D8, 0x08584BB4, 0x08584A40, gDummySpriteAffineAnimTable, sub_0812E9F8
 	@ pret/pokeemerald-jp direct xref for 0x08584D6C: slot_machine.s: CreateReelTimeSprite2
-	.globl gSlotMachineData_08584D6C
-gSlotMachineData_08584D6C: @ 0x08584D6C
 	@ analyzed canonical ROM range 0x08584D6C-0x08584D83
+	.globl sSpriteTemplate_08584D6C
 sSpriteTemplate_08584D6C: @ 0x08584D6C
 	rodata_sprite_template 0xFFFF, 0x0007, 0x085849E8, 0x08584B7C, 0x08584A50, gDummySpriteAffineAnimTable, sub_0812EB58
 	@ pret/pokeemerald-jp direct xref for 0x08584D84: slot_machine.s: sub_0812EC30
-	.globl gSlotMachineData_08584D84
-gSlotMachineData_08584D84: @ 0x08584D84
 	@ analyzed canonical ROM range 0x08584D84-0x08584D9B
+	.globl sSpriteTemplate_08584D84
 sSpriteTemplate_08584D84: @ 0x08584D84
 	rodata_sprite_template 0xFFFF, 0x0005, 0x085849E0, 0x08584BB8, 0x08584A58, gDummySpriteAffineAnimTable, sub_0812EC74
 	@ pret/pokeemerald-jp direct xref for 0x08584D9C: slot_machine.s: sub_0812ECA4
-	.globl gSlotMachineData_08584D9C
-gSlotMachineData_08584D9C: @ 0x08584D9C
 	@ analyzed canonical ROM range 0x08584D9C-0x08584DB3
+	.globl sSpriteTemplate_08584D9C
 sSpriteTemplate_08584D9C: @ 0x08584D9C
 	rodata_sprite_template 0xFFFF, 0x0004, 0x085849C0, 0x08584B80, 0x08584A68, gDummySpriteAffineAnimTable, sub_0812ED30
 	@ pret/pokeemerald-jp direct xref for 0x08584DB4: slot_machine.s: sub_0812EDD0
