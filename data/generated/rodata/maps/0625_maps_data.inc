@@ -23,75 +23,75 @@ sFieldObjectTiles_846FA4C:
 	.globl gObjectEventFrame_JP_0846FA4C
 gObjectEventFrame_JP_0846FA4C: @ 0x0846FA4C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 0; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0x0, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/walking.4bpp", 0x0, 0x100 @ gObjectEventFrame_JP_0846FA4 canonical Brendan frame
 	.globl gObjectEventFrame_JP_0846FB4C
 gObjectEventFrame_JP_0846FB4C: @ 0x0846FB4C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 1; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0x100, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/walking.4bpp", 0x100, 0x100 @ gObjectEventFrame_JP_0846FB4 canonical Brendan frame
 	.globl gObjectEventFrame_JP_0846FC4C
 gObjectEventFrame_JP_0846FC4C: @ 0x0846FC4C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 2; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0x200, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/walking.4bpp", 0x200, 0x100 @ gObjectEventFrame_JP_0846FC4 canonical Brendan frame
 	.globl gObjectEventFrame_JP_0846FD4C
 gObjectEventFrame_JP_0846FD4C: @ 0x0846FD4C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 3; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0x300, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/walking.4bpp", 0x300, 0x100 @ gObjectEventFrame_JP_0846FD4 canonical Brendan frame
 	.globl gObjectEventFrame_JP_0846FE4C
 gObjectEventFrame_JP_0846FE4C: @ 0x0846FE4C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 4; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0x400, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/walking.4bpp", 0x400, 0x100 @ gObjectEventFrame_JP_0846FE4 canonical Brendan frame
 	.globl gObjectEventFrame_JP_0846FF4C
 gObjectEventFrame_JP_0846FF4C: @ 0x0846FF4C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 5; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0x500, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/walking.4bpp", 0x500, 0x100 @ gObjectEventFrame_JP_0846FF4 canonical Brendan frame
 	.globl gObjectEventFrame_JP_0847004C
 gObjectEventFrame_JP_0847004C: @ 0x0847004C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 6; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0x600, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/walking.4bpp", 0x600, 0x100 @ gObjectEventFrame_JP_0847004 canonical Brendan frame
 	.globl gObjectEventFrame_JP_0847014C
 gObjectEventFrame_JP_0847014C: @ 0x0847014C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 7; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0x700, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/walking.4bpp", 0x700, 0x100 @ gObjectEventFrame_JP_0847014 canonical Brendan frame
 	.globl gObjectEventFrame_JP_0847024C
 gObjectEventFrame_JP_0847024C: @ 0x0847024C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 8; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0x800, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/walking.4bpp", 0x800, 0x100 @ gObjectEventFrame_JP_0847024 canonical Brendan frame
 	.globl gObjectEventFrame_JP_0847034C
 gObjectEventFrame_JP_0847034C: @ 0x0847034C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 9; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0x900, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/running.4bpp", 0x0, 0x100 @ gObjectEventFrame_JP_0847034 canonical Brendan frame
 	.globl gObjectEventFrame_JP_0847044C
 gObjectEventFrame_JP_0847044C: @ 0x0847044C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 10; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0xA00, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/running.4bpp", 0x100, 0x100 @ gObjectEventFrame_JP_0847044 canonical Brendan frame
 	.globl gObjectEventFrame_JP_0847054C
 gObjectEventFrame_JP_0847054C: @ 0x0847054C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 11; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0xB00, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/running.4bpp", 0x200, 0x100 @ gObjectEventFrame_JP_0847054 canonical Brendan frame
 	.globl gObjectEventFrame_JP_0847064C
 gObjectEventFrame_JP_0847064C: @ 0x0847064C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 12; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0xC00, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/running.4bpp", 0x300, 0x100 @ gObjectEventFrame_JP_0847064 canonical Brendan frame
 	.globl gObjectEventFrame_JP_0847074C
 gObjectEventFrame_JP_0847074C: @ 0x0847074C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 13; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0xD00, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/running.4bpp", 0x400, 0x100 @ gObjectEventFrame_JP_0847074 canonical Brendan frame
 	.globl gObjectEventFrame_JP_0847084C
 gObjectEventFrame_JP_0847084C: @ 0x0847084C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 14; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0xE00, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/running.4bpp", 0x500, 0x100 @ gObjectEventFrame_JP_0847084 canonical Brendan frame
 	.globl gObjectEventFrame_JP_0847094C
 gObjectEventFrame_JP_0847094C: @ 0x0847094C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 15; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0xF00, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/running.4bpp", 0x600, 0x100 @ gObjectEventFrame_JP_0847094 canonical Brendan frame
 	.globl gObjectEventFrame_JP_08470A4C
 gObjectEventFrame_JP_08470A4C: @ 0x08470A4C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 16; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0x1000, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/running.4bpp", 0x700, 0x100 @ gObjectEventFrame_JP_08470A4 canonical Brendan frame
 	.globl gObjectEventFrame_JP_08470B4C
 gObjectEventFrame_JP_08470B4C: @ 0x08470B4C
 	@ SpriteFrameImage 4bpp data; field object tiles frame 17; size=0x100
-	.incbin "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp", 0x1100, 0x100
+	.incbin "build/graphics/object_events/pics/people/brendan/running.4bpp", 0x800, 0x100 @ gObjectEventFrame_JP_08470B4 canonical Brendan frame
 sFieldObjectTiles_846FA4C_End:
 	.if (. - sFieldObjectTiles_846FA4C) != 0x1200
 	.error "field object tiles must be 0x1200 bytes"

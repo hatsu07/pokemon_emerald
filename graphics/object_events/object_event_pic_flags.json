@@ -326,6 +326,12 @@
     "-mheight",
     "4"
   ],
+  "people/brendan/running.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
   "people/brendan/surfing.png": [
     "-mwidth",
     "4",
@@ -335,6 +341,12 @@
   "people/brendan/underwater.png": [
     "-mwidth",
     "4",
+    "-mheight",
+    "4"
+  ],
+  "people/brendan/walking.png": [
+    "-mwidth",
+    "2",
     "-mheight",
     "4"
   ],
