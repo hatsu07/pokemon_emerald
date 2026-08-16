@@ -26,8 +26,8 @@ gSlotMachineData_085843D0: @ 0x085843D0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x03, 0x01, 0x02, 0x00
-	.globl gPokemonU32Table_Rom_5843D4
-gPokemonU32Table_Rom_5843D4: @ 0x085843D4
+	.globl sSlotActions
+sSlotActions: @ 0x085843D4
 	.4byte SlotAction_UnfadeScreen
 	.4byte SlotAction_WaitForUnfade
 	.4byte SlotAction_SetSlotMachineVars
@@ -57,13 +57,13 @@ gPokemonU32Table_Rom_5843D4: @ 0x085843D4
 	.4byte SlotAction_ExitMessage_NoMoreCoins
 	.4byte SlotAction_EndGame
 	.4byte SlotAction_FreeDataStructures
-	.globl gPokemonU32Table_Rom_584448
-gPokemonU32Table_Rom_584448: @ 0x08584448
+	.globl sAwardPayoutActions
+sAwardPayoutActions: @ 0x08584448
 	.4byte AwardPayoutAction0
 	.4byte AwardPayoutAction_GivePayoutToPlayer
 	.4byte AwardPayoutAction_FreeTask
-	.globl gPokemonU32Table_Rom_584454
-gPokemonU32Table_Rom_584454: @ 0x08584454
+	.globl sSlotReelActions
+sSlotReelActions: @ 0x08584454
 	.4byte SlotReelAction_StayStill
 	.4byte SlotReelAction_Spin
 	.4byte SlotReelAction_DecideWhereToStop
@@ -123,8 +123,8 @@ gSlotMachineData_085844D4: @ 0x085844D4
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0005, 0x000A, 0x000F, 0x0000
-	.globl gPokemonPointerTable_Rom_5844DC
-gPokemonPointerTable_Rom_5844DC: @ 0x085844DC
+	.globl sInfoBoxActions
+sInfoBoxActions: @ 0x085844DC
 	.4byte sub_0812D270
 	.4byte sub_0812D274
 	.4byte sub_0812D29C
@@ -143,8 +143,8 @@ gSlotMachineData_085844EE: @ 0x085844EE
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xA
 	.2byte 0x006E, 0x009F, 0x006F, 0x00AF, 0x007F
-	.globl gPokemonU32Table_Rom_5844F8
-gPokemonU32Table_Rom_5844F8: @ 0x085844F8
+	.globl sReeltimeActions
+sReeltimeActions: @ 0x085844F8
 	.4byte ReeltimeAction0
 	.4byte ReeltimeAction1
 	.4byte ReeltimeAction2

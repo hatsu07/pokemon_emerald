@@ -751,7 +751,7 @@ _0812AAE8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812AB08: .4byte 0x085843D4
+_0812AB08: .4byte sSlotActions
 _0812AB0C: .4byte 0x03005B60
 _0812AB10: .4byte 0x0203A800
 	thumb_func_end RunSlotActions
@@ -2880,7 +2880,7 @@ _0812BB1E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812BB3C: .4byte 0x08584448
+_0812BB3C: .4byte sAwardPayoutActions
 _0812BB40: .4byte 0x03005B60
 	thumb_func_end RunAwardPayoutActions
 
@@ -3452,7 +3452,7 @@ _0812BF4E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812BF6C: .4byte 0x08584454
+_0812BF6C: .4byte sSlotReelActions
 _0812BF70: .4byte 0x03005B60
 	thumb_func_end RunSlotReelActions
 
@@ -6101,7 +6101,7 @@ RunInfoBoxActions: @ 0x0812D240
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812D268: .4byte 0x085844DC
+_0812D268: .4byte sInfoBoxActions
 _0812D26C: .4byte 0x03005B60
 	thumb_func_end RunInfoBoxActions
 
@@ -6484,7 +6484,7 @@ RunReeltimeActions: @ 0x0812D4FC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812D524: .4byte 0x085844F8
+_0812D524: .4byte sReeltimeActions
 _0812D528: .4byte 0x03005B60
 	thumb_func_end RunReeltimeActions
 
