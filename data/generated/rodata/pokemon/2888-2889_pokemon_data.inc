@@ -544,86 +544,78 @@ FunctionPointerTable_JP_085849A4: @ 0x085849A4
 	.byte 0x10, 0x4C, 0x58, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x08584C64: slot_machine.s: sub_0812E0F4
 	@ analyzed canonical ROM range 0x08584C64-0x08584C7B
-	.globl sSpriteTemplate_08584C64
-sSpriteTemplate_08584C64: @ 0x08584C64
+	.globl sSpriteTemplate_ReelSymbol
+sSpriteTemplate_ReelSymbol: @ 0x08584C64
 	rodata_sprite_template 0x0000, 0x0000, 0x085849E0, 0x08584B7C, 0, gDummySpriteAffineAnimTable, sub_0812E164
 	@ pret/pokeemerald-jp direct xref for 0x08584C7C: slot_machine.s: sub_0812E240
 	@ analyzed canonical ROM range 0x08584C7C-0x08584C93
-	.globl sSpriteTemplate_08584C7C
-sSpriteTemplate_08584C7C: @ 0x08584C7C
+	.globl sSpriteTemplate_CoinNumber
+sSpriteTemplate_CoinNumber: @ 0x08584C7C
 	rodata_sprite_template 0x0007, 0x0004, 0x085849C8, 0x08584B7C, 0, gDummySpriteAffineAnimTable, sub_0812E2B8
 	@ pret/pokeemerald-jp direct xref for 0x08584C94: slot_machine.s: sub_0812E310
 	@ analyzed canonical ROM range 0x08584C94-0x08584CAB
-	.globl sSpriteTemplate_08584C94
-sSpriteTemplate_08584C94: @ 0x08584C94
+	.globl sSpriteTemplate_ReelBackground
+sSpriteTemplate_ReelBackground: @ 0x08584C94
 	rodata_sprite_template 0x0011, 0x0000, 0x085849F8, 0x08584B7C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08584CAC: slot_machine.s: sub_0812E34C
 	@ analyzed canonical ROM range 0x08584CAC-0x08584CC3
-	.globl sSpriteTemplate_08584CAC
-sSpriteTemplate_08584CAC: @ 0x08584CAC
+	.globl sSpriteTemplate_ReelTimePikachu
+sSpriteTemplate_ReelTimePikachu: @ 0x08584CAC
 	rodata_sprite_template 0xFFFF, 0x0001, 0x085849F8, 0x08584B84, 0, gDummySpriteAffineAnimTable, sub_0812E434
 	@ pret/pokeemerald-jp direct xref for 0x08584CC4: slot_machine.s: sub_0812E484
 	@ analyzed canonical ROM range 0x08584CC4-0x08584CDB
-	.globl sSpriteTemplate_08584CC4
-sSpriteTemplate_08584CC4: @ 0x08584CC4
+	.globl sSpriteTemplate_ReelTimeMachineAntennae
+sSpriteTemplate_ReelTimeMachineAntennae: @ 0x08584CC4
 	rodata_sprite_template 0xFFFF, 0x0002, 0x085849C8, 0x08584B7C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08584CDC: slot_machine.s: sub_0812E484
 	@ analyzed canonical ROM range 0x08584CDC-0x08584CF3
-	.globl sSpriteTemplate_08584CDC
-sSpriteTemplate_08584CDC: @ 0x08584CDC
+	.globl sSpriteTemplate_ReelTimeMachine
+sSpriteTemplate_ReelTimeMachine: @ 0x08584CDC
 	rodata_sprite_template 0xFFFF, 0x0003, 0x085849C8, 0x08584B7C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08584CF4: slot_machine.s: sub_0812E5B8
 	@ analyzed canonical ROM range 0x08584CF4-0x08584D0B
-	.globl sSpriteTemplate_08584CF4
-sSpriteTemplate_08584CF4: @ 0x08584CF4
+	.globl sSpriteTemplate_BrokenReelTimeMachine
+sSpriteTemplate_BrokenReelTimeMachine: @ 0x08584CF4
 	rodata_sprite_template 0xFFFF, 0x0003, 0x085849C8, 0x08584B7C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08584D0C: slot_machine.s: sub_0812E660
 	@ analyzed canonical ROM range 0x08584D0C-0x08584D23
-	.globl sSpriteTemplate_08584D0C
-sSpriteTemplate_08584D0C: @ 0x08584D0C
+	.globl sSpriteTemplate_ReelTimeNumbers
+sSpriteTemplate_ReelTimeNumbers: @ 0x08584D0C
 	rodata_sprite_template 0xFFFF, 0x0004, 0x085849D0, 0x08584B9C, 0x08584A00, gDummySpriteAffineAnimTable, sub_0812E6D4
 	@ pret/pokeemerald-jp direct xref for 0x08584D24: slot_machine.s: sub_0812E71C
 	@ analyzed canonical ROM range 0x08584D24-0x08584D3B
-	.globl sSpriteTemplate_08584D24
-sSpriteTemplate_08584D24: @ 0x08584D24
+	.globl sSpriteTemplate_ReelTimeShadow
+sSpriteTemplate_ReelTimeShadow: @ 0x08584D24
 	rodata_sprite_template 0xFFFF, 0x0004, 0x085849D0, 0x08584B7C, 0x08584A30, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08584D3C: slot_machine.s: sub_0812E7DC
 	@ analyzed canonical ROM range 0x08584D3C-0x08584D53
-	.globl sSpriteTemplate_08584D3C
-sSpriteTemplate_08584D3C: @ 0x08584D3C
+	.globl sSpriteTemplate_ReelTimeNumberGap
+sSpriteTemplate_ReelTimeNumberGap: @ 0x08584D3C
 	rodata_sprite_template 0xFFFF, 0x0004, 0x085849D0, 0x08584B7C, 0x08584A38, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08584D54: slot_machine.s: CreateReelTimeSprites1
 	@ analyzed canonical ROM range 0x08584D54-0x08584D6B
-	.globl sSpriteTemplate_08584D54
-sSpriteTemplate_08584D54: @ 0x08584D54
+	.globl sSpriteTemplate_ReelTimeBolt
+sSpriteTemplate_ReelTimeBolt: @ 0x08584D54
 	rodata_sprite_template 0xFFFF, 0x0004, 0x085849D8, 0x08584BB4, 0x08584A40, gDummySpriteAffineAnimTable, sub_0812E9F8
 	@ pret/pokeemerald-jp direct xref for 0x08584D6C: slot_machine.s: CreateReelTimeSprite2
 	@ analyzed canonical ROM range 0x08584D6C-0x08584D83
-	.globl sSpriteTemplate_08584D6C
-sSpriteTemplate_08584D6C: @ 0x08584D6C
+	.globl sSpriteTemplate_ReelTimePikachuAura
+sSpriteTemplate_ReelTimePikachuAura: @ 0x08584D6C
 	rodata_sprite_template 0xFFFF, 0x0007, 0x085849E8, 0x08584B7C, 0x08584A50, gDummySpriteAffineAnimTable, sub_0812EB58
 	@ pret/pokeemerald-jp direct xref for 0x08584D84: slot_machine.s: sub_0812EC30
 	@ analyzed canonical ROM range 0x08584D84-0x08584D9B
-	.globl sSpriteTemplate_08584D84
-sSpriteTemplate_08584D84: @ 0x08584D84
+	.globl sSpriteTemplate_ReelTimeExplosion
+sSpriteTemplate_ReelTimeExplosion: @ 0x08584D84
 	rodata_sprite_template 0xFFFF, 0x0005, 0x085849E0, 0x08584BB8, 0x08584A58, gDummySpriteAffineAnimTable, sub_0812EC74
 	@ pret/pokeemerald-jp direct xref for 0x08584D9C: slot_machine.s: sub_0812ECA4
 	@ analyzed canonical ROM range 0x08584D9C-0x08584DB3
-	.globl sSpriteTemplate_08584D9C
-sSpriteTemplate_08584D9C: @ 0x08584D9C
+	.globl sSpriteTemplate_ReelTimeDuck
+sSpriteTemplate_ReelTimeDuck: @ 0x08584D9C
 	rodata_sprite_template 0xFFFF, 0x0004, 0x085849C0, 0x08584B80, 0x08584A68, gDummySpriteAffineAnimTable, sub_0812ED30
 	@ pret/pokeemerald-jp direct xref for 0x08584DB4: slot_machine.s: sub_0812EDD0
-	.globl gSlotMachineData_08584DB4
-gSlotMachineData_08584DB4: @ 0x08584DB4
-	@ analyzed canonical ROM range 0x08584DB4-0x08584F1B
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0x0004FFFF @ +0x0
-	.4byte 0x085849D0 @ +0x4
-	.4byte 0x08584B7C @ +0x8
-	.4byte 0x08584A70 @ +0xC
-	.4byte 0x08584C0C @ +0x10
-	.4byte sub_0812EE24 @ +0x14
+	.globl sSpriteTemplate_ReelTimeSmoke
+sSpriteTemplate_ReelTimeSmoke: @ 0x08584DB4
+	rodata_sprite_template 0xFFFF, 0x0004, 0x085849D0, 0x08584B7C, 0x08584A70, 0x08584C0C, sub_0812EE24
 	@ ANALYSIS: RAW_BLOCK size=0x10
 sSpriteTemplate_DigitalDisplay_Reel: @ 0x08584DCC
 	.4byte 0x0006FFFF @ +0x18
@@ -737,61 +729,48 @@ sSpriteTemplate_DigitalDisplay_DPad: @ 0x08584F04
 	.4byte gDummySpriteAffineAnimTable @ +0x160
 	.4byte SpriteCallbackDummy @ +0x164
 	@ pret/pokeemerald-jp direct xref for 0x08584F1C: slot_machine.s: sub_0812EF10
-	.globl gSlotMachineData_08584F1C
-gSlotMachineData_08584F1C: @ 0x08584F1C
-	@ analyzed canonical ROM range 0x08584F1C-0x08584F43
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x28
-	.byte 0xFF, 0xFF, 0x04, 0x00, 0xC0, 0x49, 0x58, 0x08, 0x7C, 0x4B, 0x58, 0x08, 0x78, 0x4A, 0x58, 0x08
-	.byte 0x60, 0x4C, 0x58, 0x08, 0x65, 0xEF, 0x12, 0x08, 0xC0, 0xC0, 0x0C, 0xC0, 0x00, 0xC0, 0x0C, 0xC0
+	.globl sSpriteTemplate_PikaPowerBolt
+sSpriteTemplate_PikaPowerBolt: @ 0x08584F1C
+	rodata_sprite_template 0xFFFF, 0x0004, 0x085849C0, 0x08584B7C, 0x08584A78, 0x08584C60, sub_0812EF64
+sSubsprites_ReelBackground: @ 0x08584F34
+	.byte 0xC0, 0xC0, 0x0C, 0xC0, 0x00, 0xC0, 0x0C, 0xC0
 	.byte 0xC0, 0x00, 0x0C, 0xC0, 0x00, 0x00, 0x0C, 0xC0
-	@ pret/pokeemerald-jp direct xref for 0x08584F44: slot_machine.s: sub_0812E310
-	.globl gSlotMachineData_08584F44
-gSlotMachineData_08584F44: @ 0x08584F44
-	@ analyzed canonical ROM range 0x08584F44-0x08584F63
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	.byte 0x04, 0x00, 0x00, 0x00, 0x34, 0x4F, 0x58, 0x08, 0xE0, 0xF4, 0x05, 0x40, 0x00, 0xF4, 0x45, 0x40
-	.byte 0xE0, 0xFC, 0x85, 0x40, 0x00, 0xFC, 0xC5, 0x40, 0xE0, 0x04, 0x05, 0x41, 0x00, 0x04, 0x45, 0x41
-	@ pret/pokeemerald-jp direct xref for 0x08584F64: slot_machine.s: sub_0812E484
-	.globl gSlotMachineData_08584F64
-gSlotMachineData_08584F64: @ 0x08584F64
-	@ analyzed canonical ROM range 0x08584F64-0x08584F77
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.byte 0x06, 0x00, 0x00, 0x00, 0x4C, 0x4F, 0x58, 0x08, 0xE0, 0xEC, 0x0D, 0x40, 0xE0, 0x0C, 0x05, 0x42
-	.byte 0x00, 0x0C, 0x45, 0x42
-	@ pret/pokeemerald-jp direct xref for 0x08584F78: slot_machine.s: sub_0812E484
-	.globl gSlotMachineData_08584F78
-gSlotMachineData_08584F78: @ 0x08584F78
-	@ analyzed canonical ROM range 0x08584F78-0x08584F93
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	.byte 0x03, 0x00, 0x00, 0x00, 0x6C, 0x4F, 0x58, 0x08, 0xE0, 0xE8, 0x0D, 0x40, 0xE0, 0x08, 0x05, 0x42
-	.byte 0x00, 0x08, 0x45, 0x42, 0xE0, 0x10, 0x85, 0x42, 0x00, 0x10, 0xC5, 0x42
-	@ pret/pokeemerald-jp direct xref for 0x08584F94: slot_machine.s: sub_0812E5B8
-	.globl gSlotMachineData_08584F94
-gSlotMachineData_08584F94: @ 0x08584F94
-	@ analyzed canonical ROM range 0x08584F94-0x08584FAB
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x18
-	.byte 0x05, 0x00, 0x00, 0x00, 0x80, 0x4F, 0x58, 0x08, 0xE0, 0xF8, 0x05, 0x40, 0x00, 0xF8, 0x45, 0x40
-	.byte 0xE0, 0x00, 0x85, 0x40, 0x00, 0x00, 0xC5, 0x40
-	@ pret/pokeemerald-jp direct xref for 0x08584FAC: slot_machine.s: sub_0812E71C
-	.globl gSlotMachineData_08584FAC
-gSlotMachineData_08584FAC: @ 0x08584FAC
-	@ analyzed canonical ROM range 0x08584FAC-0x08584FBF
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.byte 0x04, 0x00, 0x00, 0x00, 0x9C, 0x4F, 0x58, 0x08, 0xF8, 0xF4, 0x01, 0x40, 0xF8, 0xFC, 0x01, 0x40
-	.byte 0xF8, 0x04, 0x01, 0x40
-	@ pret/pokeemerald-jp direct xref for 0x08584FC0: slot_machine.s: sub_0812E7DC
-	.globl gSlotMachineData_08584FC0
-gSlotMachineData_08584FC0: @ 0x08584FC0
-	@ analyzed canonical ROM range 0x08584FC0-0x085851E7
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x228
-	.byte 0x03, 0x00, 0x00, 0x00, 0xB4, 0x4F, 0x58, 0x08
+	.globl sSubspriteTable_ReelBackground
+sSubspriteTable_ReelBackground: @ 0x08584F44
+	.byte 0x04, 0x00, 0x00, 0x00
+	.4byte sSubsprites_ReelBackground
+sSubsprites_ReelTimeMachineAntennae: @ 0x08584F4C
+	.byte 0xE0, 0xF4, 0x05, 0x40, 0x00, 0xF4, 0x45, 0x40, 0xE0, 0xFC, 0x85, 0x40, 0x00, 0xFC, 0xC5, 0x40
+	.byte 0xE0, 0x04, 0x05, 0x41, 0x00, 0x04, 0x45, 0x41
+	.globl sSubspriteTable_ReelTimeMachineAntennae
+sSubspriteTable_ReelTimeMachineAntennae: @ 0x08584F64
+	.byte 0x06, 0x00, 0x00, 0x00
+	.4byte sSubsprites_ReelTimeMachineAntennae
+sSubsprites_ReelTimeMachine: @ 0x08584F6C
+	.byte 0xE0, 0xEC, 0x0D, 0x40, 0xE0, 0x0C, 0x05, 0x42, 0x00, 0x0C, 0x45, 0x42
+	.globl sSubspriteTable_ReelTimeMachine
+sSubspriteTable_ReelTimeMachine: @ 0x08584F78
+	.byte 0x03, 0x00, 0x00, 0x00
+	.4byte sSubsprites_ReelTimeMachine
+sSubsprites_BrokenReelTimeMachine: @ 0x08584F80
+	.byte 0xE0, 0xE8, 0x0D, 0x40, 0xE0, 0x08, 0x05, 0x42, 0x00, 0x08, 0x45, 0x42, 0xE0, 0x10, 0x85, 0x42
+	.byte 0x00, 0x10, 0xC5, 0x42
+	.globl sSubspriteTable_BrokenReelTimeMachine
+sSubspriteTable_BrokenReelTimeMachine: @ 0x08584F94
+	.byte 0x05, 0x00, 0x00, 0x00
+	.4byte sSubsprites_BrokenReelTimeMachine
+sSubsprites_ReelTimeShadow: @ 0x08584F9C
+	.byte 0xE0, 0xF8, 0x05, 0x40, 0x00, 0xF8, 0x45, 0x40, 0xE0, 0x00, 0x85, 0x40, 0x00, 0x00, 0xC5, 0x40
+	.globl sSubspriteTable_ReelTimeShadow
+sSubspriteTable_ReelTimeShadow: @ 0x08584FAC
+	.byte 0x04, 0x00, 0x00, 0x00
+	.4byte sSubsprites_ReelTimeShadow
+sSubsprites_ReelTimeNumberGap: @ 0x08584FB4
+	.byte 0xF8, 0xF4, 0x01, 0x40, 0xF8, 0xFC, 0x01, 0x40, 0xF8, 0x04, 0x01, 0x40
+	.globl sSubspriteTable_ReelTimeNumberGap
+sSubspriteTable_ReelTimeNumberGap: @ 0x08584FC0
+	.byte 0x03, 0x00, 0x00, 0x00
+	.4byte sSubsprites_ReelTimeNumberGap
 sSubsprites_DigitalDisplay_Reel: @ 0x08584FC8
 	.byte 0xE0, 0xE8, 0x0D, 0xC0, 0xE0, 0x08, 0x05, 0xC2
 	.byte 0x00, 0x08, 0x45, 0xC2, 0xE0, 0x10, 0x85, 0xC2, 0x00, 0x10, 0xC5, 0xC2

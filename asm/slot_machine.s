@@ -8086,7 +8086,7 @@ _0812E100:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812E158: .4byte sSpriteTemplate_08584C64
+_0812E158: .4byte sSpriteTemplate_ReelSymbol
 _0812E15C: .4byte 0x020205AC
 _0812E160: .4byte 0x0000FFFF
 	thumb_func_end sub_0812E0F4
@@ -8259,7 +8259,7 @@ sub_0812E240: @ 0x0812E240
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812E2AC: .4byte sSpriteTemplate_08584C7C
+_0812E2AC: .4byte sSpriteTemplate_CoinNumber
 _0812E2B0: .4byte 0x020205AC
 _0812E2B4: .4byte 0x0000FFFF
 	thumb_func_end sub_0812E240
@@ -8335,9 +8335,9 @@ sub_0812E310: @ 0x0812E310
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812E340: .4byte sSpriteTemplate_08584C94
+_0812E340: .4byte sSpriteTemplate_ReelBackground
 _0812E344: .4byte 0x020205AC
-_0812E348: .4byte gSlotMachineData_08584F44
+_0812E348: .4byte sSubspriteTable_ReelBackground
 	thumb_func_end sub_0812E310
 
 	thumb_func_start sub_0812E34C
@@ -8420,7 +8420,7 @@ _0812E360:
 	.align 2, 0
 _0812E3E4: .4byte 0x0203A7B0
 _0812E3E8: .4byte 0x0203A7A4
-_0812E3EC: .4byte sSpriteTemplate_08584CAC
+_0812E3EC: .4byte sSpriteTemplate_ReelTimePikachu
 _0812E3F0: .4byte 0x020205AC
 _0812E3F4: .4byte 0x0203A800
 	thumb_func_end sub_0812E34C
@@ -8637,13 +8637,13 @@ _0812E520:
 	.align 2, 0
 _0812E594: .4byte 0x0203A7B4
 _0812E598: .4byte 0x0203A7A4
-_0812E59C: .4byte sSpriteTemplate_08584CC4
+_0812E59C: .4byte sSpriteTemplate_ReelTimeMachineAntennae
 _0812E5A0: .4byte 0x020205AC
-_0812E5A4: .4byte gSlotMachineData_08584F64
+_0812E5A4: .4byte sSubspriteTable_ReelTimeMachineAntennae
 _0812E5A8: .4byte 0x0203A800
 _0812E5AC: .4byte 0x0203A7B8
-_0812E5B0: .4byte sSpriteTemplate_08584CDC
-_0812E5B4: .4byte gSlotMachineData_08584F78
+_0812E5B0: .4byte sSpriteTemplate_ReelTimeMachine
+_0812E5B4: .4byte sSubspriteTable_ReelTimeMachine
 	thumb_func_end sub_0812E484
 
 	thumb_func_start sub_0812E5B8
@@ -8719,10 +8719,10 @@ _0812E5CC:
 	.align 2, 0
 _0812E644: .4byte 0x0203A7BC
 _0812E648: .4byte 0x0203A7A4
-_0812E64C: .4byte sSpriteTemplate_08584CF4
+_0812E64C: .4byte sSpriteTemplate_BrokenReelTimeMachine
 _0812E650: .4byte 0x02021B38
 _0812E654: .4byte 0x020205AC
-_0812E658: .4byte gSlotMachineData_08584F94
+_0812E658: .4byte sSubspriteTable_BrokenReelTimeMachine
 _0812E65C: .4byte 0x0203A800
 	thumb_func_end sub_0812E5B8
 
@@ -8781,7 +8781,7 @@ _0812E666:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812E6C8: .4byte sSpriteTemplate_08584D0C
+_0812E6C8: .4byte sSpriteTemplate_ReelTimeNumbers
 _0812E6CC: .4byte 0x020205AC
 _0812E6D0: .4byte 0x0203A800
 	thumb_func_end sub_0812E660
@@ -8907,9 +8907,9 @@ sub_0812E71C: @ 0x0812E71C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812E7CC: .4byte sSpriteTemplate_08584D24
+_0812E7CC: .4byte sSpriteTemplate_ReelTimeShadow
 _0812E7D0: .4byte 0x020205AC
-_0812E7D4: .4byte gSlotMachineData_08584FAC
+_0812E7D4: .4byte sSubspriteTable_ReelTimeShadow
 _0812E7D8: .4byte 0x0203A800
 	thumb_func_end sub_0812E71C
 
@@ -8953,9 +8953,9 @@ sub_0812E7DC: @ 0x0812E7DC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812E82C: .4byte sSpriteTemplate_08584D3C
+_0812E82C: .4byte sSpriteTemplate_ReelTimeNumberGap
 _0812E830: .4byte 0x020205AC
-_0812E834: .4byte gSlotMachineData_08584FC0
+_0812E834: .4byte sSubspriteTable_ReelTimeNumberGap
 _0812E838: .4byte 0x0203A800
 	thumb_func_end sub_0812E7DC
 
@@ -9176,7 +9176,7 @@ CreateReelTimeSprites1: @ 0x0812E944
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812E9E8: .4byte sSpriteTemplate_08584D54
+_0812E9E8: .4byte sSpriteTemplate_ReelTimeBolt
 _0812E9EC: .4byte 0x020205AC
 _0812E9F0: .4byte 0x0203A800
 _0812E9F4: .4byte 0x0000FFFF
@@ -9364,7 +9364,7 @@ CreateReelTimeSprite2: @ 0x0812EAC0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812EB4C: .4byte sSpriteTemplate_08584D6C
+_0812EB4C: .4byte sSpriteTemplate_ReelTimePikachuAura
 _0812EB50: .4byte 0x020205AC
 _0812EB54: .4byte 0x0203A800
 	thumb_func_end CreateReelTimeSprite2
@@ -9507,7 +9507,7 @@ sub_0812EC30: @ 0x0812EC30
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812EC68: .4byte sSpriteTemplate_08584D84
+_0812EC68: .4byte sSpriteTemplate_ReelTimeExplosion
 _0812EC6C: .4byte 0x020205AC
 _0812EC70: .4byte 0x0203A800
 	thumb_func_end sub_0812EC30
@@ -9606,7 +9606,7 @@ _0812ECB4:
 	.align 2, 0
 _0812ED1C: .4byte gSlotMachineData_0858459A
 _0812ED20: .4byte 0x02021B38
-_0812ED24: .4byte sSpriteTemplate_08584D9C
+_0812ED24: .4byte sSpriteTemplate_ReelTimeDuck
 _0812ED28: .4byte 0x020205AC
 _0812ED2C: .4byte 0x0203A800
 	thumb_func_end sub_0812ECA4
@@ -9734,7 +9734,7 @@ sub_0812EDD0: @ 0x0812EDD0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812EE18: .4byte gSlotMachineData_08584DB4
+_0812EE18: .4byte sSpriteTemplate_ReelTimeSmoke
 _0812EE1C: .4byte 0x020205AC
 _0812EE20: .4byte 0x0203A800
 	thumb_func_end sub_0812EDD0
@@ -9904,7 +9904,7 @@ sub_0812EF10: @ 0x0812EF10
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0812EF5C: .4byte gSlotMachineData_08584F1C
+_0812EF5C: .4byte sSpriteTemplate_PikaPowerBolt
 _0812EF60: .4byte 0x020205AC
 	thumb_func_end sub_0812EF10
 
