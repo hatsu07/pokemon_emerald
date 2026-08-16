@@ -173,7 +173,7 @@ _081CAB0C:
 	b _081CABBC
 	.align 2, 0
 _081CAB64: .4byte gPokenavUnk4Data_085F412C
-_081CAB68: .4byte gPokenavUnk4Data_085F3ED0
+_081CAB68: .4byte sMatchCallUI_Gfx
 _081CAB6C: .4byte 0x00001024
 _081CAB70: .4byte gPokenavUnk4Data_085F3F74
 _081CAB74: .4byte gPokenavUnk4Data_085F3EB0
@@ -239,7 +239,7 @@ _081CABC8:
 	movs r0, #0
 	b _081CACAA
 	.align 2, 0
-_081CAC00: .4byte gPokenavUnk4Data_085F4100
+_081CAC00: .4byte sOptionsCursor_Gfx
 _081CAC04: .4byte gPokenavUnk4Data_085F40A0
 _081CAC08: .4byte gPokenavUnk4Data_085F40C0
 _081CAC0C:
@@ -5874,7 +5874,7 @@ _081CD6E0: .4byte gPokenavUnk4Data_085F5964
 _081CD6E4: .4byte 0x00007940
 _081CD6E8: .4byte 0x00000844
 _081CD6EC: .4byte 0x0000040B
-_081CD6F0: .4byte gPokenavUnk4Data_085F4E6C
+_081CD6F0: .4byte gPokenavCondition_Gfx
 _081CD6F4:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -5894,7 +5894,7 @@ _081CD710:
 	movs r0, #0
 	b _081CDA26
 	.align 2, 0
-_081CD714: .4byte gPokenavUnk4Data_085F57EC
+_081CD714: .4byte sConditionGraphData_Gfx
 _081CD718:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -5938,7 +5938,7 @@ _081CD752:
 	strh r0, [r1]
 	b _081CD710
 	.align 2, 0
-_081CD778: .4byte gPokenavUnk4Data_085F5600
+_081CD778: .4byte gPokenavCondition_Tilemap
 _081CD77C: .4byte gPokenavUnk4Data_085F58FC
 _081CD780: .4byte gPokenavUnk4Data_085F4E0C
 _081CD784: .4byte gPokemonU8Table_Rom_5F4E4C
@@ -5969,7 +5969,7 @@ _081CD79C:
 	bl sub_081D1824
 	b _081CD710
 	.align 2, 0
-_081CD7C8: .4byte gPokenavUnk4Data_085F5800
+_081CD7C8: .4byte sConditionGraphData_Tilemap
 _081CD7CC: .4byte 0x00001004
 _081CD7D0: .4byte gPokemonU16Table_Rom_5F4E2C
 _081CD7D4:
@@ -8522,8 +8522,8 @@ _081CEBCC:
 	b _081CECA4
 	.align 2, 0
 _081CEBD0: .4byte gPokenavUnk4Data_085F5B9C
-_081CEBD4: .4byte gPokenavUnk4Data_085F59F0
-_081CEBD8: .4byte gPokenavUnk4Data_085F5AB8
+_081CEBD4: .4byte sConditionSearchResultTiles
+_081CEBD8: .4byte sConditionSearchResultTilemap
 _081CEBDC: .4byte gPokenavUnk4Data_085F59D0
 _081CEBE0:
 	bl free_temp_tile_data_buffers_if_possible
@@ -9907,8 +9907,8 @@ _081CF606:
 	b _081CF6C8
 	.align 2, 0
 _081CF60C: .4byte gPokenavUnk4Data_085F5DA0
-_081CF610: .4byte gPokenavUnk4Data_085F5BF4
-_081CF614: .4byte gPokenavUnk4Data_085F5CBC
+_081CF610: .4byte sMonRibbonListFrameTiles
+_081CF614: .4byte sMonRibbonListFrameTilemap
 _081CF618: .4byte gPokenavUnk4Data_085F5BD4
 _081CF61C:
 	bl free_temp_tile_data_buffers_if_possible

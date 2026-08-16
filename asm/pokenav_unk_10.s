@@ -920,8 +920,8 @@ _081D0168:
 	b _081D026A
 	.align 2, 0
 _081D01A4: .4byte gPokenavUnk10Data_085F7214
-_081D01A8: .4byte gPokenavUnk10Data_085F64AC
-_081D01AC: .4byte gPokenavUnk10Data_085F65A8
+_081D01A8: .4byte gPokenavRibbonsSummaryBg_Gfx
+_081D01AC: .4byte gPokenavRibbonsSummaryBg_Tilemap
 _081D01B0: .4byte gPokenavUnk10Data_085F648C
 _081D01B4:
 	bl free_temp_tile_data_buffers_if_possible

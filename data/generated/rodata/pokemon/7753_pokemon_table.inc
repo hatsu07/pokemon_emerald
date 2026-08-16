@@ -342,16 +342,12 @@ gPokenavUnk4Data_085F3EB0: @ 0x085F3EB0
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.2byte 0x0300, 0x3F1E, 0x7FFF, 0x3DCD, 0x0000, 0x39B7, 0x2506, 0x53BF
 	.2byte 0x3EB8, 0x4ED7, 0x6318, 0x7FFF, 0x0000, 0x0000, 0x0000, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x085F3ED0: pokenav_unk_4.s: sub_081CAAC8
-	.globl gPokenavUnk4Data_085F3ED0
-gPokenavUnk4Data_085F3ED0:
-	.globl sLz77Block_085F3ED0
-	@ confirmed GBA LZ77 stream: compressed=0xA4, decompressed=0x1A0
-sLz77Block_085F3ED0:
-	@ analyzed canonical ROM range 0x085F3ED0-0x085F3F73
-	.incbin "build/graphics/analyzed/gunknown_85f3ed0_085f3ed0.4bpp.lz"
-	.if (. - sLz77Block_085F3ED0) != 0xA4
-	.error "sLz77Block_085F3ED0 compressed size mismatch"
+	@ semantic exact asset for 0x085F3ED0: sMatchCallUI_Gfx
+	.globl sMatchCallUI_Gfx
+sMatchCallUI_Gfx:
+	.incbin "build/graphics/pokenav/match_call/ui.4bpp.lz"
+	.if (. - sMatchCallUI_Gfx) != 0xA4
+	.error "sMatchCallUI_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085F3F74: pokenav_unk_4.s: sub_081CAAC8
 	.globl gPokenavUnk4Data_085F3F74
@@ -394,16 +390,12 @@ gPokenavUnk4Data_085F40C0: @ 0x085F40C0
 	.2byte 0x2A16, 0x3637, 0x6318, 0x7FFF, 0x0000, 0x0000, 0x0000, 0x093F
 	.2byte 0x0300, 0x3F1E, 0x7FFF, 0x3DCD, 0x0000, 0x21B7, 0x2506, 0x4F7F
 	.2byte 0x2A16, 0x3637, 0x6318, 0x6318, 0x0000, 0x0000, 0x0000, 0x21B7
-	@ pret/pokeemerald-jp direct xref for 0x085F4100: pokenav_unk_4.s: sub_081CAAC8
-	.globl gPokenavUnk4Data_085F4100
-gPokenavUnk4Data_085F4100:
-	.globl sLz77Block_085F4100
-	@ confirmed GBA LZ77 stream: compressed=0x2A, decompressed=0x40
-sLz77Block_085F4100:
-	@ analyzed canonical ROM range 0x085F4100-0x085F412B
-	.incbin "build/graphics/analyzed/gunknown_85f4100_085f4100.4bpp.lz"
-	.if (. - sLz77Block_085F4100) != 0x2C
-	.error "sLz77Block_085F4100 compressed size mismatch"
+	@ semantic exact asset for 0x085F4100: sOptionsCursor_Gfx
+	.globl sOptionsCursor_Gfx
+sOptionsCursor_Gfx:
+	.incbin "build/graphics/pokenav/match_call/options_cursor.4bpp.lz"
+	.if (. - sOptionsCursor_Gfx) != 0x2C
+	.error "sOptionsCursor_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085F412C: pokenav_unk_4.s: sub_081CAAC8
 	.globl gPokenavUnk4Data_085F412C

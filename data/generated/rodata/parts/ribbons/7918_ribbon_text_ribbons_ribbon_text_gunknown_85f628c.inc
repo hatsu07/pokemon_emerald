@@ -141,27 +141,19 @@ gPokenavUnk10Data_085F648C: @ 0x085F648C
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0x87, 0x6F, 0x3F, 0x6F, 0x00, 0x00, 0x39, 0x67, 0xDF, 0x6B, 0x8A, 0x14, 0xB0, 0x18, 0x58, 0x32
 	.byte 0xE7, 0x24, 0xAA, 0x35, 0x3A, 0x57, 0xDF, 0x6A, 0x3B, 0x67, 0x8C, 0x39, 0x9F, 0x73, 0x9F, 0x6F
-	@ pret/pokeemerald-jp direct xref for 0x085F64AC: pokenav_unk_10.s: sub_081D011C
-	.globl gPokenavUnk10Data_085F64AC
-gPokenavUnk10Data_085F64AC:
-	.globl sLz77Block_085F64AC
-	@ confirmed GBA LZ77 stream: compressed=0xFA, decompressed=0x260
-sLz77Block_085F64AC:
-	@ analyzed canonical ROM range 0x085F64AC-0x085F65A7
-	.incbin "build/graphics/analyzed/gunknown_85f64ac_085f64ac.4bpp.lz"
-	.if (. - sLz77Block_085F64AC) != 0xFC
-	.error "sLz77Block_085F64AC compressed size mismatch"
+	@ semantic exact asset for 0x085F64AC: gPokenavRibbonsSummaryBg_Gfx
+	.globl gPokenavRibbonsSummaryBg_Gfx
+gPokenavRibbonsSummaryBg_Gfx:
+	.incbin "build/graphics/pokenav/ribbons/summary_bg.4bpp.lz"
+	.if (. - gPokenavRibbonsSummaryBg_Gfx) != 0xFC
+	.error "gPokenavRibbonsSummaryBg_Gfx compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x085F65A8: pokenav_unk_10.s: sub_081D011C
-	.globl gPokenavUnk10Data_085F65A8
-gPokenavUnk10Data_085F65A8:
-	.globl sLz77Block_085F65A8
-	@ confirmed GBA LZ77 stream: compressed=0xCB, decompressed=0x500
-sLz77Block_085F65A8:
-	@ analyzed canonical ROM range 0x085F65A8-0x085F6673
-	.incbin "build/graphics/analyzed/gunknown_85f65a8_085f65a8.4bpp.lz"
-	.if (. - sLz77Block_085F65A8) != 0xCC
-	.error "sLz77Block_085F65A8 compressed size mismatch"
+	@ semantic exact asset for 0x085F65A8: gPokenavRibbonsSummaryBg_Tilemap
+	.globl gPokenavRibbonsSummaryBg_Tilemap
+gPokenavRibbonsSummaryBg_Tilemap:
+	.incbin "build/graphics/pokenav/ribbons/summary_bg.bin.lz"
+	.if (. - gPokenavRibbonsSummaryBg_Tilemap) != 0xCC
+	.error "gPokenavRibbonsSummaryBg_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085F6674: pokenav_unk_10.s: sub_081D011C
 	.globl gPokenavUnk10Data_085F6674
