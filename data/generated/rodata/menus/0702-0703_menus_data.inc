@@ -235,41 +235,23 @@ sFanfares: @ 0x084FCFC8
 	.globl gBattleAnimSpriteGfx_Orb
 	.globl gBattleAnimSpriteGfx_Sword
 	.globl gBattleAnimSpriteGfx_Seed
-	.globl gBattleAnimSpritePal_RainDrops
-	.set gBattleAnimSpritePal_RainDrops, 0x08C028B4
-	.globl gBattleAnimSpritePal_Bone
-	.set gBattleAnimSpritePal_Bone, 0x08C028D4
-	.globl gBattleAnimSpritePal_AirWave
-	.set gBattleAnimSpritePal_AirWave, 0x08C028F8
 	.globl gBattleAnimSpritePal_Orb
 	.globl gBattleAnimSpritePal_Sword
 	.globl gBattleAnimSpritePal_Seed
 	.globl gBattleAnimSpriteGfx_Needle
 	.globl gBattleAnimSpritePal_Needle
 	.globl gBattleAnimSpriteGfx_Explosion6
-	.globl gBattleAnimSpritePal_Explosion6
-	.set gBattleAnimSpritePal_Explosion6, 0x08C02B50
 	.globl gBattleAnimSpriteGfx_PinkOrb
 	.globl gBattleAnimSpritePal_PinkOrb
-	.globl gBattleAnimSpritePal_IceCube
-	.set gBattleAnimSpritePal_IceCube, 0x08C02BAC
 	.globl gBattleAnimSpriteGfx_IceCube
 	.globl gBattleAnimSpriteGfx_Gust
-	.globl gBattleAnimSpritePal_Gust
-	.set gBattleAnimSpritePal_Gust, 0x08C03294
 	.globl gBattleAnimSpriteGfx_Spark2
-	.globl gBattleAnimSpritePal_Spark2
-	.set gBattleAnimSpritePal_Spark2, 0x08C0332C
 	.globl gBattleAnimSpriteGfx_Orange
 	.globl gBattleAnimSpritePal_Orange
 	.globl gBattleAnimSpriteGfx_Spikes
-	.globl gBattleAnimSpritePal_Spikes
-	.set gBattleAnimSpritePal_Spikes, 0x08C0341C
 	.globl gBattleAnimSpriteGfx_YellowBall
 	.globl gBattleAnimSpritePal_YellowBall
 	.globl gBattleAnimSpriteGfx_TiedBag
-	.globl gBattleAnimSpritePal_TiedBag
-	.set gBattleAnimSpritePal_TiedBag, 0x08C034F8
 	.globl gBattleAnimSpriteGfx_BlackSmoke
 	.globl gBattleAnimSpritePal_BlackSmoke
 	.globl gBattleAnimSpriteGfx_BlackBall
@@ -277,15 +259,7 @@ sFanfares: @ 0x084FCFC8
 	.globl gBattleAnimSpriteGfx_Glass
 	.globl gBattleAnimSpriteGfx_HornHit
 	.globl gBattleAnimSpritePal_HornHit
-	.globl gBattleAnimSpritePal_BlueShards
-	.set gBattleAnimSpritePal_BlueShards, 0x08C037B4
 	.globl gBattleAnimSpriteGfx_BlueShards
-	.globl gBattleAnimSpritePal_Hit
-	.set gBattleAnimSpritePal_Hit, 0x08C03A08
-	.globl gBattleAnimSpriteGfx_Hit
-	.set gBattleAnimSpriteGfx_Hit, 0x08C03A30
-	.globl gBattleAnimSpritePal_Hit2
-	.set gBattleAnimSpritePal_Hit2, 0x08C03D68
 	.globl gBattleAnimSpritePal_WavingHand
 	.globl gBattleAnimSpriteGfx_WavingHand
 	.globl gBattleAnimSpriteGfx_ClosingEye
@@ -294,27 +268,15 @@ sFanfares: @ 0x084FCFC8
 	.globl gBattleAnimSpritePal_BlueStar
 	.globl gBattleAnimSpritePal_BubbleBurst
 	.globl gBattleAnimSpriteGfx_BubbleBurst
-	.globl gBattleAnimSpriteGfx_HitDuplicate
-	.set gBattleAnimSpriteGfx_HitDuplicate, 0x08C0449C
-	.globl gBattleAnimSpritePal_HitDuplicate
-	.set gBattleAnimSpritePal_HitDuplicate, 0x08C047D4
-	.globl gBattleAnimSpritePal_Leer
-	.set gBattleAnimSpritePal_Leer, 0x08C047FC
 	.globl gBattleAnimSpriteGfx_Leer
 	.globl gBattleAnimSpritePal_BlueBurst
 	.globl gBattleAnimSpriteGfx_BlueBurst
 	.globl gBattleAnimSpriteGfx_SmallEmber
-	.globl gBattleAnimSpritePal_SmallEmber
-	.set gBattleAnimSpritePal_SmallEmber, 0x08C05150
 	.globl gBattleAnimSpriteGfx_GraySmoke
-	.globl gBattleAnimSpritePal_GraySmoke
-	.set gBattleAnimSpritePal_GraySmoke, 0x08C05538
 	.globl gBattleAnimSpritePal_Fire
 	.globl gBattleAnimSpriteGfx_Fire
 	.globl gBattleAnimSpriteGfx_SpinningFire
 	.globl gBattleAnimSpriteGfx_FirePlume
-	.globl gBattleAnimSpritePal_Lightning2
-	.set gBattleAnimSpritePal_Lightning2, 0x08C06658
 	.globl gBattleAnimSpriteGfx_Lightning2
 	.globl gBattleAnimSpriteGfx_Lightning
 	.globl gBattleAnimSpritePal_ClawSlash2
@@ -326,10 +288,6 @@ sFanfares: @ 0x084FCFC8
 	.globl gBattleAnimSpriteGfx_BubbleBurst2
 	.globl gBattleAnimSpritePal_BubbleBurst2
 	.globl gBattleAnimSpriteGfx_IceChunk
-	.globl gBattleAnimSpritePal_IceChunk
-	.set gBattleAnimSpritePal_IceChunk, 0x08C089C4
-	.globl gBattleAnimSpritePal_Glass2
-	.set gBattleAnimSpritePal_Glass2, 0x08C089EC
 	.globl gBattleAnimSpriteGfx_Glass2
 	.globl gBattleAnimSpritePal_PinkHeart2
 	.globl gBattleAnimSpriteGfx_PinkHeart2
@@ -362,8 +320,6 @@ sFanfares: @ 0x084FCFC8
 	.globl gBattleAnimSpritePal_SpinningGreenOrbs
 	.globl gBattleAnimSpriteGfx_Leaf
 	.globl gBattleAnimSpritePal_Leaf
-	.globl gBattleAnimSpritePal_Clapping
-	.set gBattleAnimSpritePal_Clapping, 0x08C0B6A0
 	.globl gBattleAnimSpriteGfx_PoisonPowder
 	.globl gBattleAnimSpritePal_PoisonPowder
 	.globl gBattleAnimSpriteGfx_BrownTriangle
@@ -378,14 +334,10 @@ sFanfares: @ 0x084FCFC8
 	.globl gBattleAnimSpriteGfx_Alert
 	.globl gBattleAnimSpritePal_Alert
 	.globl gBattleAnimSpriteGfx_Shock4
-	.globl gBattleAnimSpritePal_Shock4
-	.set gBattleAnimSpritePal_Shock4, 0x08C0C19C
 	.globl gBattleAnimSpriteGfx_Shock
 	.globl gBattleAnimSpriteGfx_Bell2
 	.globl gBattleAnimSpritePal_Bell2
 	.globl gBattleAnimSpriteGfx_PinkGlove
-	.globl gBattleAnimSpritePal_PinkGlove
-	.set gBattleAnimSpritePal_PinkGlove, 0x08C0CA00
 	.globl gBattleAnimSpriteGfx_BlueLines
 	.globl gBattleAnimSpritePal_BlueLines
 	.globl gBattleAnimSpritePal_Impact3
@@ -424,15 +376,9 @@ sFanfares: @ 0x084FCFC8
 	.globl gBattleAnimSpriteGfx_HatchedEgg
 	.globl gBattleAnimSpriteGfx_FreshEgg
 	.globl gBattleAnimSpriteGfx_Fangs
-	.globl gBattleAnimSpritePal_Fangs
-	.set gBattleAnimSpritePal_Fangs, 0x08C0F154
 	.globl gBattleAnimSpriteGfx_Explosion2
-	.globl gBattleAnimSpritePal_Explosion2
-	.set gBattleAnimSpritePal_Explosion2, 0x08C0F700
 	.globl gBattleAnimSpriteGfx_Explosion3
 	.globl gBattleAnimSpriteGfx_WaterDroplet
-	.globl gBattleAnimSpritePal_WaterDroplet
-	.set gBattleAnimSpritePal_WaterDroplet, 0x08C0FBC4
 	.globl gBattleAnimSpriteGfx_WaterDroplet2
 	.globl gBattleAnimSpriteGfx_Seed2
 	.globl gBattleAnimSpritePal_Seed2
@@ -440,11 +386,7 @@ sFanfares: @ 0x084FCFC8
 	.globl gBattleAnimSpriteGfx_RedWand
 	.globl gBattleAnimSpritePal_RedWand
 	.globl gBattleAnimSpriteGfx_PurpleGreenUnk
-	.globl gBattleAnimSpritePal_PurpleGreenUnk
-	.set gBattleAnimSpritePal_PurpleGreenUnk, 0x08C10734
 	.globl gBattleAnimSpriteGfx_WaterColumn
-	.globl gBattleAnimSpritePal_WaterColumn
-	.set gBattleAnimSpritePal_WaterColumn, 0x08C109C8
 	.globl gBattleAnimSpriteGfx_MudUnk
 	.globl gBattleAnimSpritePal_MudUnk
 	.globl gBattleAnimSpriteGfx_RainDrops

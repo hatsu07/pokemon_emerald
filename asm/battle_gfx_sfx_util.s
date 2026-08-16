@@ -2105,7 +2105,7 @@ LoadBattleBarGfx: @ 0x0805DDD4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805DDEC: .4byte 0x08C093F8
+_0805DDEC: .4byte gBattleInterfaceGfx_BattleBar
 _0805DDF0: .4byte 0x02024178
 	thumb_func_end LoadBattleBarGfx
 

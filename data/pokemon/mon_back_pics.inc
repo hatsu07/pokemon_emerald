@@ -36,7 +36,9 @@ gSmokescreenImpactPalette:
   .incbin "build/graphics/battle_anims/sprites/smokescreen_impact_palette.gbapal.lz"
   .balign 4, 0
   .include "data/graphics/pokeballs.inc"
-  .incbin "build/graphics/unknown/1A_16x16.4bpp.lz"
+  .globl gOpenPokeballGfx
+gOpenPokeballGfx:
+  .incbin "build/graphics/balls/open.4bpp.lz"
   .balign 4, 0
 
   .globl gBlankGfxCompressed
@@ -74,11 +76,17 @@ gBattleAnimSpriteGfx_Seed:
   .incbin "build/graphics/battle_anims/sprites/seed.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/22_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_RainDrops
+gBattleAnimSpritePal_RainDrops:
+  .incbin "build/graphics/battle_anims/sprites/rain_drops_palette.gbapal.lz"
   .balign 4, 0
-  .incbin "build/graphics/unknown/23_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_Bone
+gBattleAnimSpritePal_Bone:
+  .incbin "build/graphics/battle_anims/sprites/bone_palette.gbapal.lz"
   .balign 4, 0
-  .incbin "build/graphics/unknown/24_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_AirWave
+gBattleAnimSpritePal_AirWave:
+  .incbin "build/graphics/battle_anims/sprites/air_wave_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpritePal_Orb
 gBattleAnimSpritePal_Orb:
@@ -106,7 +114,9 @@ gBattleAnimSpriteGfx_Explosion6:
   .incbin "build/graphics/battle_anims/sprites/explosion_6.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/2B_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_Explosion6
+gBattleAnimSpritePal_Explosion6:
+  .incbin "build/graphics/battle_anims/sprites/explosion_6_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_PinkOrb
 gBattleAnimSpriteGfx_PinkOrb:
@@ -116,7 +126,9 @@ gBattleAnimSpriteGfx_PinkOrb:
 gBattleAnimSpritePal_PinkOrb:
   .incbin "build/graphics/battle_anims/sprites/pink_orb_palette.gbapal.lz"
   .balign 4, 0
-  .incbin "build/graphics/unknown/2E_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_IceCube
+gBattleAnimSpritePal_IceCube:
+  .incbin "build/graphics/battle_anims/sprites/ice_cube_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_IceCube
 gBattleAnimSpriteGfx_IceCube:
@@ -128,14 +140,18 @@ gBattleAnimSpriteGfx_Gust:
   .incbin "build/graphics/battle_anims/sprites/gust.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/31_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_Gust
+gBattleAnimSpritePal_Gust:
+  .incbin "build/graphics/battle_anims/sprites/gust_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_Spark2
 gBattleAnimSpriteGfx_Spark2:
   .incbin "build/graphics/battle_anims/sprites/spark_2.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/33_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_Spark2
+gBattleAnimSpritePal_Spark2:
+  .incbin "build/graphics/battle_anims/sprites/spark_2_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_Orange
 gBattleAnimSpriteGfx_Orange:
@@ -151,7 +167,9 @@ gBattleAnimSpriteGfx_Spikes:
   .incbin "build/graphics/battle_anims/sprites/spikes.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/37_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_Spikes
+gBattleAnimSpritePal_Spikes:
+  .incbin "build/graphics/battle_anims/sprites/spikes_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_YellowBall
 gBattleAnimSpriteGfx_YellowBall:
@@ -167,7 +185,9 @@ gBattleAnimSpriteGfx_TiedBag:
   .incbin "build/graphics/battle_anims/sprites/tied_bag.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/3B_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_TiedBag
+gBattleAnimSpritePal_TiedBag:
+  .incbin "build/graphics/battle_anims/sprites/tied_bag_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_BlackSmoke
 gBattleAnimSpriteGfx_BlackSmoke:
@@ -182,7 +202,9 @@ gBattleAnimSpritePal_BlackSmoke:
 gBattleAnimSpriteGfx_BlackBall:
   .incbin "build/graphics/battle_anims/sprites/black_ball.4bpp.lz"
   .balign 4, 0
-  .incbin "build/graphics/unknown/3F_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_BlackBall
+gBattleAnimSpritePal_BlackBall:
+  .incbin "build/graphics/battle_anims/sprites/black_ball_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpritePal_Glass
 gBattleAnimSpritePal_Glass:
@@ -202,24 +224,36 @@ gBattleAnimSpriteGfx_HornHit:
 gBattleAnimSpritePal_HornHit:
   .incbin "build/graphics/battle_anims/sprites/horn_hit_palette.gbapal.lz"
   .balign 4, 0
-  .incbin "build/graphics/unknown/44_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_BlueShards
+gBattleAnimSpritePal_BlueShards:
+  .incbin "build/graphics/battle_anims/sprites/blue_shards_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_BlueShards
 gBattleAnimSpriteGfx_BlueShards:
   .incbin "build/graphics/battle_anims/sprites/blue_shards.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/46_palette.gbapal.lz"
+  .globl gBattleAnimUnusedPal_MusicNotes
+gBattleAnimUnusedPal_MusicNotes:
+  .incbin "build/graphics/battle_anims/unused/music_notes_palette.gbapal.lz"
   .balign 4, 0
-  .incbin "build/graphics/unknown/47_64x32.4bpp.lz"
+  .globl gBattleAnimUnusedGfx_MusicNotes
+gBattleAnimUnusedGfx_MusicNotes:
+  .incbin "build/graphics/battle_anims/unused/music_notes.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/48_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_Hit
+gBattleAnimSpritePal_Hit:
+  .incbin "build/graphics/battle_anims/sprites/hit_palette.gbapal.lz"
   .balign 4, 0
-  .incbin "build/graphics/unknown/49_80x64.4bpp.lz"
+  .globl gBattleAnimSpriteGfx_Hit
+gBattleAnimSpriteGfx_Hit:
+  .incbin "build/graphics/battle_anims/sprites/hit.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/4A_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_Hit2
+gBattleAnimSpritePal_Hit2:
+  .incbin "build/graphics/battle_anims/sprites/hit_2_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpritePal_WavingHand
 gBattleAnimSpritePal_WavingHand:
@@ -257,12 +291,18 @@ gBattleAnimSpriteGfx_BubbleBurst:
   .incbin "build/graphics/battle_anims/sprites/bubble_burst.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/53_80x64.4bpp.lz"
+  .globl gBattleAnimSpriteGfx_HitDuplicate
+gBattleAnimSpriteGfx_HitDuplicate:
+  .incbin "build/graphics/battle_anims/sprites/hit_duplicate.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/54_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_HitDuplicate
+gBattleAnimSpritePal_HitDuplicate:
+  .incbin "build/graphics/battle_anims/sprites/hit_duplicate_palette.gbapal.lz"
   .balign 4, 0
-  .incbin "build/graphics/unknown/55_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_Leer
+gBattleAnimSpritePal_Leer:
+  .incbin "build/graphics/battle_anims/sprites/leer_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_Leer
 gBattleAnimSpriteGfx_Leer:
@@ -283,14 +323,18 @@ gBattleAnimSpriteGfx_SmallEmber:
   .incbin "build/graphics/battle_anims/sprites/small_ember.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/5A_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_SmallEmber
+gBattleAnimSpritePal_SmallEmber:
+  .incbin "build/graphics/battle_anims/sprites/small_ember_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_GraySmoke
 gBattleAnimSpriteGfx_GraySmoke:
   .incbin "build/graphics/battle_anims/sprites/gray_smoke.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/5C_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_GraySmoke
+gBattleAnimSpritePal_GraySmoke:
+  .incbin "build/graphics/battle_anims/sprites/gray_smoke_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpritePal_Fire
 gBattleAnimSpritePal_Fire:
@@ -311,7 +355,9 @@ gBattleAnimSpriteGfx_FirePlume:
   .incbin "build/graphics/battle_anims/sprites/fire_plume.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/61_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_Lightning2
+gBattleAnimSpritePal_Lightning2:
+  .incbin "build/graphics/battle_anims/sprites/lightning_2_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_Lightning2
 gBattleAnimSpriteGfx_Lightning2:
@@ -323,26 +369,36 @@ gBattleAnimSpriteGfx_Lightning:
   .incbin "build/graphics/battle_anims/sprites/lightning.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/64_40x8.4bpp.lz"
+  .globl gBattleAnimSpriteGfx_SpinningBall
+gBattleAnimSpriteGfx_SpinningBall:
+  .incbin "build/graphics/battle_anims/unused/spinning_ball.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/65_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_SpinningBall
+gBattleAnimSpritePal_SpinningBall:
+  .incbin "build/graphics/battle_anims/unused/spinning_ball_palette.gbapal.lz"
   .balign 4, 0
   .incbin "build/graphics/unknown/66_16x8.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/67_64x64.4bpp.lz"
+  .globl gOldBattleInterfaceGfx
+gOldBattleInterfaceGfx:
+  .incbin "build/graphics/unused/obi1.4bpp.lz"
   .balign 4, 0
 
   .incbin "build/graphics/unknown/68_24x8.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/69_palette.gbapal.lz"
+  .globl gOldBattleInterfacePal4
+gOldBattleInterfacePal4:
+  .incbin "build/graphics/unused/old_pal4_palette.gbapal.lz"
   .balign 4, 0
   .incbin "build/graphics/unknown/6A_24x8.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/6B_128x80.4bpp.lz"
+  .globl gOldBattleInterfaceGfx2
+gOldBattleInterfaceGfx2:
+  .incbin "build/graphics/unused/obi2.4bpp.lz"
   .balign 4, 0
 
   .incbin "build/graphics/unknown/6C_64x64.4bpp.lz"
@@ -376,7 +432,9 @@ gBattleAnimSpriteGfx_Scratch2:
   .incbin "build/graphics/battle_anims/sprites/scratch_2.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/73_32x24.4bpp.lz"
+  .globl gUnusedHpBar_Gfx
+gUnusedHpBar_Gfx:
+  .incbin "build/graphics/battle_interface/hpbar_unused.4bpp.lz"
   .balign 4, 0
 
   .globl gBattleAnimSpriteGfx_BubbleBurst2
@@ -393,9 +451,13 @@ gBattleAnimSpriteGfx_IceChunk:
   .incbin "build/graphics/battle_anims/sprites/ice_chunk.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/77_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_IceChunk
+gBattleAnimSpritePal_IceChunk:
+  .incbin "build/graphics/battle_anims/sprites/ice_chunk_palette.gbapal.lz"
   .balign 4, 0
-  .incbin "build/graphics/unknown/78_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_Glass2
+gBattleAnimSpritePal_Glass2:
+  .incbin "build/graphics/battle_anims/sprites/glass_2_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_Glass2
 gBattleAnimSpriteGfx_Glass2:
@@ -411,12 +473,18 @@ gBattleAnimSpriteGfx_PinkHeart2:
   .incbin "build/graphics/battle_anims/sprites/pink_heart_2.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/7C_128x128.4bpp.lz"
+  .globl gBattleInterfaceGfx_UnusedWindow1
+gBattleInterfaceGfx_UnusedWindow1:
+  .incbin "build/graphics/battle_interface/unused_window.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/7D_palette.gbapal.lz"
+  .globl gBattleInterfacePal_UnusedWindow1
+gBattleInterfacePal_UnusedWindow1:
+  .incbin "build/graphics/battle_interface/unused_window_palette.gbapal.lz"
   .balign 4, 0
-  .incbin "build/graphics/unknown/7E_328x8.4bpp.lz"
+  .globl gBattleInterfaceGfx_BattleBar
+gBattleInterfaceGfx_BattleBar:
+  .incbin "build/graphics/battle_interface/battle_bar.4bpp.lz"
   .balign 4, 0
 
   .globl gBattleAnimSpriteGfx_SapDrip
@@ -432,10 +500,14 @@ gBattleAnimSpritePal_SapDrip:
 gBattleAnimSpritePal_SapDrip2:
   .incbin "build/graphics/battle_anims/sprites/sap_drip_2_palette.gbapal.lz"
   .balign 4, 0
-  .incbin "build/graphics/unknown/82_128x64.4bpp.lz"
+  .globl gBattleInterfaceGfx_UnusedWindow2
+gBattleInterfaceGfx_UnusedWindow2:
+  .incbin "build/graphics/battle_interface/unused_window2.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/83_40x8.4bpp.lz"
+  .globl gBattleInterfaceGfx_UnusedWindow2Bar
+gBattleInterfaceGfx_UnusedWindow2Bar:
+  .incbin "build/graphics/battle_interface/unused_window2bar.4bpp.lz"
   .balign 4, 0
 
   .globl gBattleAnimSpriteGfx_Sparkle1
@@ -470,10 +542,14 @@ gBattleAnimSpriteGfx_HumanoidHand:
   .incbin "build/graphics/battle_anims/sprites/humanoid_hand.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/8B_64x48.4bpp.lz"
+  .globl gBattleAnimSpriteGfx_LineSketch
+gBattleAnimSpriteGfx_LineSketch:
+  .incbin "build/graphics/battle_anims/unused/line_sketch.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/8C_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_LineSketch
+gBattleAnimSpritePal_LineSketch:
+  .incbin "build/graphics/battle_anims/unused/line_sketch_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_YellowUnk
 gBattleAnimSpriteGfx_YellowUnk:
@@ -561,10 +637,14 @@ gBattleAnimSpriteGfx_Leaf:
 gBattleAnimSpritePal_Leaf:
   .incbin "build/graphics/battle_anims/sprites/leaf_palette.gbapal.lz"
   .balign 4, 0
-  .incbin "build/graphics/unknown/A0_16x16.4bpp.lz"
+  .globl gBattleAnimSpriteGfx_MetronomeSmallHand
+gBattleAnimSpriteGfx_MetronomeSmallHand:
+  .incbin "build/graphics/battle_anims/unused/metronome_hand_small.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/A1_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_Clapping
+gBattleAnimSpritePal_Clapping:
+  .incbin "build/graphics/battle_anims/sprites/clapping_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_PoisonPowder
 gBattleAnimSpriteGfx_PoisonPowder:
@@ -630,7 +710,9 @@ gBattleAnimSpriteGfx_Shock4:
   .incbin "build/graphics/battle_anims/sprites/shock_4.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/B0_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_Shock4
+gBattleAnimSpritePal_Shock4:
+  .incbin "build/graphics/battle_anims/sprites/shock_4_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_Shock
 gBattleAnimSpriteGfx_Shock:
@@ -651,7 +733,9 @@ gBattleAnimSpriteGfx_PinkGlove:
   .incbin "build/graphics/battle_anims/sprites/pink_glove.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/B5_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_PinkGlove
+gBattleAnimSpritePal_PinkGlove:
+  .incbin "build/graphics/battle_anims/sprites/pink_glove_palette.gbapal.lz"
   .balign 4, 0
   .incbin "build/graphics/unknown/B6_palette.gbapal.lz"
   .balign 4, 0
@@ -662,7 +746,9 @@ gBattleAnimSpriteGfx_PinkGlove:
   .incbin "build/graphics/unknown/B9_48x24.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/BA_palette.gbapal.lz"
+  .globl gBattleAnimUnusedPal_LineSketch2
+gBattleAnimUnusedPal_LineSketch2:
+  .incbin "build/graphics/battle_anims/unused/line_sketch_2_palette.gbapal.lz"
   .balign 4, 0
   .incbin "build/graphics/unknown/BB_64x32.4bpp.lz"
   .balign 4, 0
@@ -842,14 +928,18 @@ gBattleAnimSpriteGfx_Fangs:
   .incbin "build/graphics/battle_anims/sprites/fangs.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/E3_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_Fangs
+gBattleAnimSpritePal_Fangs:
+  .incbin "build/graphics/battle_anims/sprites/fangs_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_Explosion2
 gBattleAnimSpriteGfx_Explosion2:
   .incbin "build/graphics/battle_anims/sprites/explosion_2.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/E5_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_Explosion2
+gBattleAnimSpritePal_Explosion2:
+  .incbin "build/graphics/battle_anims/sprites/explosion_2_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_Explosion3
 gBattleAnimSpriteGfx_Explosion3:
@@ -861,7 +951,9 @@ gBattleAnimSpriteGfx_WaterDroplet:
   .incbin "build/graphics/battle_anims/sprites/water_droplet.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/E8_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_WaterDroplet
+gBattleAnimSpritePal_WaterDroplet:
+  .incbin "build/graphics/battle_anims/sprites/water_droplet_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_WaterDroplet2
 gBattleAnimSpriteGfx_WaterDroplet2:
@@ -896,14 +988,18 @@ gBattleAnimSpriteGfx_PurpleGreenUnk:
   .incbin "build/graphics/battle_anims/sprites/purple_green_unk.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/F0_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_PurpleGreenUnk
+gBattleAnimSpritePal_PurpleGreenUnk:
+  .incbin "build/graphics/battle_anims/sprites/purple_green_unk_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_WaterColumn
 gBattleAnimSpriteGfx_WaterColumn:
   .incbin "build/graphics/battle_anims/sprites/water_column.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/F2_palette.gbapal.lz"
+  .globl gBattleAnimSpritePal_WaterColumn
+gBattleAnimSpritePal_WaterColumn:
+  .incbin "build/graphics/battle_anims/sprites/water_column_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_MudUnk
 gBattleAnimSpriteGfx_MudUnk:
@@ -920,10 +1016,14 @@ gBattleAnimSpritePal_MudUnk:
   .incbin "build/graphics/unknown/F6_128x128.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/F7_2824x8.4bpp.lz"
+  .globl gUnusedGfx_ColorFrames
+gUnusedGfx_ColorFrames:
+  .incbin "build/graphics/unused/color_frames.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/F8_palette.gbapal.lz"
+  .globl gUnusedPal_ColorFrames
+gUnusedPal_ColorFrames:
+  .incbin "build/graphics/unused/color_frames_palette.gbapal.lz"
   .balign 4, 0
   .globl gBattleAnimSpriteGfx_RainDrops
 gBattleAnimSpriteGfx_RainDrops:
@@ -939,10 +1039,14 @@ gBattleAnimSpriteGfx_RainDrops:
   .incbin "build/graphics/unknown/FC_32x32.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/FD_40x16.4bpp.lz"
+  .globl gUnusedGfx_BasicFrame
+gUnusedGfx_BasicFrame:
+  .incbin "build/graphics/unused/basic_frame.4bpp.lz"
   .balign 4, 0
 
-  .incbin "build/graphics/unknown/FE_palette.gbapal.lz"
+  .globl gUnusedPal_BasicFrame
+gUnusedPal_BasicFrame:
+  .incbin "build/graphics/unused/basic_frame_palette.gbapal.lz"
   .balign 4, 0
   .incbin "build/graphics/unknown/FF_64x64.4bpp.lz"
   .balign 4, 0

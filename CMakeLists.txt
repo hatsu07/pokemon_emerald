@@ -142,6 +142,117 @@ list(SORT GRAPHICS_RELATIVE_OUTPUTS)
 
 set(GRAPHICS_OUTPUTS)
 
+# BEGIN REMAINING A52 EXACT OUTPUT LIST
+set(REMAINING_A52_EXACT_OUTPUTS
+    "build/graphics/balls/open.4bpp.lz"
+    "build/graphics/battle_anims/sprites/rain_drops_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/bone_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/air_wave_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/explosion_6_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/ice_cube_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/gust_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/spark_2_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/spikes_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/tied_bag_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/black_ball_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/blue_shards_palette.gbapal.lz"
+    "build/graphics/battle_anims/unused/music_notes_palette.gbapal.lz"
+    "build/graphics/battle_anims/unused/music_notes.4bpp.lz"
+    "build/graphics/battle_anims/sprites/hit_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/hit.4bpp.lz"
+    "build/graphics/battle_anims/sprites/hit_2_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/hit_duplicate.4bpp.lz"
+    "build/graphics/battle_anims/sprites/hit_duplicate_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/leer_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/small_ember_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/gray_smoke_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/lightning_2_palette.gbapal.lz"
+    "build/graphics/battle_anims/unused/spinning_ball.4bpp.lz"
+    "build/graphics/battle_anims/unused/spinning_ball_palette.gbapal.lz"
+    "build/graphics/unused/obi1.4bpp.lz"
+    "build/graphics/unused/old_pal4_palette.gbapal.lz"
+    "build/graphics/unused/obi2.4bpp.lz"
+    "build/graphics/battle_interface/hpbar_unused.4bpp.lz"
+    "build/graphics/battle_anims/sprites/ice_chunk_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/glass_2_palette.gbapal.lz"
+    "build/graphics/battle_interface/unused_window.4bpp.lz"
+    "build/graphics/battle_interface/unused_window_palette.gbapal.lz"
+    "build/graphics/battle_interface/battle_bar.4bpp.lz"
+    "build/graphics/battle_interface/unused_window2.4bpp.lz"
+    "build/graphics/battle_interface/unused_window2bar.4bpp.lz"
+    "build/graphics/battle_anims/unused/line_sketch.4bpp.lz"
+    "build/graphics/battle_anims/unused/line_sketch_palette.gbapal.lz"
+    "build/graphics/battle_anims/unused/metronome_hand_small.4bpp.lz"
+    "build/graphics/battle_anims/sprites/clapping_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/shock_4_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/pink_glove_palette.gbapal.lz"
+    "build/graphics/battle_anims/unused/line_sketch_2_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/fangs_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/explosion_2_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/water_droplet_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/purple_green_unk_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/water_column_palette.gbapal.lz"
+    "build/graphics/unused/color_frames.4bpp.lz"
+    "build/graphics/unused/color_frames_palette.gbapal.lz"
+    "build/graphics/unused/basic_frame.4bpp.lz"
+    "build/graphics/unused/basic_frame_palette.gbapal.lz"
+)
+set(REMAINING_A52_EXACT_SOURCES
+    "${CMAKE_SOURCE_DIR}/graphics/balls/open.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/rain_drops_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/bone_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/air_wave_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/explosion_6_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/ice_cube_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/gust_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/spark_2_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/spikes_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/tied_bag_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/black_ball_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/blue_shards_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/music_notes_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/music_notes.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/hit_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/hit.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/hit_2_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/hit_duplicate.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/hit_duplicate_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/leer_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/small_ember_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/gray_smoke_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/lightning_2_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/spinning_ball.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/spinning_ball_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/obi1.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/old_pal4_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/obi2.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/hpbar_unused.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/ice_chunk_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/glass_2_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/unused_window.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/unused_window_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/battle_bar.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/unused_window2.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/unused_window2bar.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/line_sketch.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/line_sketch_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/metronome_hand_small.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/clapping_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/shock_4_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/pink_glove_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/line_sketch_2_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/fangs_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/explosion_2_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/water_droplet_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/purple_green_unk_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/water_column_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/color_frames.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/color_frames_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/basic_frame.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/basic_frame_palette.png"
+)
+# END REMAINING A52 EXACT OUTPUT LIST
+
 macro(add_graphics_rule RELATIVE_OUTPUT)
     set(OUTPUT_ABS "${CMAKE_SOURCE_DIR}/${RELATIVE_OUTPUT}")
     get_filename_component(OUTPUT_DIR "${OUTPUT_ABS}" DIRECTORY)
@@ -180,6 +291,29 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                     "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
     # END BATTLE TRANSITION EXACT PIPELINE
+
+    # BEGIN REMAINING A52 EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" IN_LIST REMAINING_A52_EXACT_OUTPUTS)
+        set(REMAINING_A52_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/remaining_a52_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/remaining_a52_exact_assets.py"
+                --manifest "${REMAINING_A52_MANIFEST}"
+                --key "${RELATIVE_OUTPUT}"
+                --repo-root "${CMAKE_SOURCE_DIR}"
+                --output "${OUTPUT_ABS}"
+            DEPENDS
+                ${REMAINING_A52_EXACT_SOURCES}
+                "${REMAINING_A52_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/remaining_a52_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+    # END REMAINING A52 EXACT PIPELINE
 
     # BEGIN SEMANTIC BATTLE ANIM / MISC EXACT ASSET PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
