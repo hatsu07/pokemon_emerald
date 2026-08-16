@@ -103,37 +103,28 @@ gMonFootprint_OldUnownY:
 	.globl gMonFootprint_OldUnownZ
 gMonFootprint_OldUnownZ:
 	.incbin "build/graphics/pokemon/old_unown_b/footprint.1bpp"
-	.globl gBattleBgData_08D77994
-gBattleBgData_08D77994:
-	.globl sLz77Block_08D77994
-	@ confirmed GBA LZ77 stream: compressed=0xE5, decompressed=0x200
-sLz77Block_08D77994:
-	@ analyzed canonical ROM range 0x08D77994-0x08D77A7B
-	.incbin "build/graphics/analyzed/gunknown_8d77994_08d77994.4bpp.lz"
-	.if (. - sLz77Block_08D77994) != 0xE8
-	.error "sLz77Block_08D77994 compressed size mismatch"
+	.globl gBattleVSFrame_Gfx
+gBattleVSFrame_Gfx: @ 0x08D77994
+	@ Semantic exact-LZ battle background/interface asset.
+	.incbin "build/graphics/battle_interface/link_vs_frame.4bpp.lz"
+	.if (. - gBattleVSFrame_Gfx) != 0xE8
+	.error "gBattleVSFrame_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D77A7C: battle_bg.s: DrawBattleEntryBackground
-	.globl gBattleBgData_08D77A7C
-gBattleBgData_08D77A7C:
-	.globl sLz77Block_08D77A7C
-	@ confirmed GBA LZ77 stream: compressed=0x10A, decompressed=0x800
-sLz77Block_08D77A7C:
-	@ analyzed canonical ROM range 0x08D77A7C-0x08D77B87
-	.incbin "build/graphics/analyzed/gunknown_8d77a7c_08d77a7c.4bpp.lz"
-	.if (. - sLz77Block_08D77A7C) != 0x10C
-	.error "sLz77Block_08D77A7C compressed size mismatch"
+	.globl gBattleVSFrame_Tilemap
+gBattleVSFrame_Tilemap: @ 0x08D77A7C
+	@ Semantic exact-LZ battle background/interface asset.
+	.incbin "build/graphics/battle_interface/link_vs_frame.bin.lz"
+	.if (. - gBattleVSFrame_Tilemap) != 0x10C
+	.error "gBattleVSFrame_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D77B88: battle_bg.s: DrawBattleEntryBackground
-	.globl gBattleBgData_08D77B88
-gBattleBgData_08D77B88:
-	.globl sLz77Block_08D77B88
-	@ confirmed GBA LZ77 stream: compressed=0x28, decompressed=0x20
-sLz77Block_08D77B88:
-	@ analyzed canonical ROM range 0x08D77B88-0x08D77BAF
-	.incbin "build/graphics/analyzed/gunknown_8d77b88_08d77b88.4bpp.lz"
-	.if (. - sLz77Block_08D77B88) != 0x28
-	.error "sLz77Block_08D77B88 compressed size mismatch"
+	.globl gBattleVSFrame_Pal
+gBattleVSFrame_Pal: @ 0x08D77B88
+	@ Semantic exact-LZ battle background/interface asset.
+	.incbin "build/graphics/battle_interface/link_vs_frame.gbapal.lz"
+	.if (. - gBattleVSFrame_Pal) != 0x28
+	.error "gBattleVSFrame_Pal compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D77BB0: battle_bg.s: DrawBattleEntryBackground
 	.globl gBattleBgData_08D77BB0

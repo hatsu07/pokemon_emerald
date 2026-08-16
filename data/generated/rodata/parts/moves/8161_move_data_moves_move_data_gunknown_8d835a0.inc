@@ -158,26 +158,20 @@ gBattlePyramidData_08D856AC: @ 0x08D856AC
 	.byte 0x07, 0x04, 0x4A, 0x35, 0xAA, 0x7B, 0x65, 0x7A, 0x20, 0x7D, 0xCD, 0x45, 0x53, 0x56, 0x19, 0x57
 	.byte 0x5C, 0x57, 0xDF, 0x67, 0xFF, 0x7B, 0x7F, 0x02, 0xF2, 0x21, 0x48, 0x39, 0x3F, 0x00, 0x9F, 0x03
 	@ pret/pokeemerald-jp direct xref for 0x08D8578C: battle_bg.s: DrawBattleEntryBackground
-	.globl gBattleBgData_08D8578C
-gBattleBgData_08D8578C:
-	.globl sLz77Block_08D8578C
-	@ confirmed GBA LZ77 stream: compressed=0x273, decompressed=0x1000
-sLz77Block_08D8578C:
-	@ analyzed canonical ROM range 0x08D8578C-0x08D859FF
-	.incbin "build/graphics/analyzed/gunknown_8d8578c_08d8578c.4bpp.lz"
-	.if (. - sLz77Block_08D8578C) != 0x274
-	.error "sLz77Block_08D8578C compressed size mismatch"
+	.globl gMultiBattleIntroBg_Opponent_Tilemap
+gMultiBattleIntroBg_Opponent_Tilemap: @ 0x08D8578C
+	@ Semantic exact-LZ battle background/interface asset.
+	.incbin "build/graphics/battle_interface/multi_battle_intro_opponent.bin.lz"
+	.if (. - gMultiBattleIntroBg_Opponent_Tilemap) != 0x274
+	.error "gMultiBattleIntroBg_Opponent_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D85A00: battle_bg.s: DrawBattleEntryBackground
-	.globl gBattleBgData_08D85A00
-gBattleBgData_08D85A00:
-	.globl sLz77Block_08D85A00
-	@ confirmed GBA LZ77 stream: compressed=0x231, decompressed=0x1000
-sLz77Block_08D85A00:
-	@ analyzed canonical ROM range 0x08D85A00-0x08D85C33
-	.incbin "build/graphics/analyzed/gunknown_8d85a00_08d85a00.4bpp.lz"
-	.if (. - sLz77Block_08D85A00) != 0x234
-	.error "sLz77Block_08D85A00 compressed size mismatch"
+	.globl gMultiBattleIntroBg_Player_Tilemap
+gMultiBattleIntroBg_Player_Tilemap: @ 0x08D85A00
+	@ Semantic exact-LZ battle background/interface asset.
+	.incbin "build/graphics/battle_interface/multi_battle_intro_player.bin.lz"
+	.if (. - gMultiBattleIntroBg_Player_Tilemap) != 0x234
+	.error "gMultiBattleIntroBg_Player_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D85C34: intro.s: sub_0816F91C
 	.globl gIntroData_08D85C34

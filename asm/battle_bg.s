@@ -1356,13 +1356,13 @@ DrawBattleEntryBackground: @ 0x08035FB8
 	b _0803620C
 	.align 2, 0
 _0803603C: .4byte 0x02022C90
-_08036040: .4byte gBattleBgData_08D77994
+_08036040: .4byte gBattleVSFrame_Gfx
 _08036044: .4byte 0x06004000
 _08036048: .4byte gBattleBgData_08D77BB0
 _0803604C: .4byte 0x06010000
-_08036050: .4byte gBattleBgData_08D77B88
+_08036050: .4byte gBattleVSFrame_Pal
 _08036054: .4byte 0x00005C04
-_08036058: .4byte gBattleBgData_08D77A7C
+_08036058: .4byte gBattleVSFrame_Tilemap
 _0803605C: .4byte 0x02022ACE
 _08036060: .4byte 0x0000FF5C
 _08036064: .4byte 0x02022AD2
@@ -1420,8 +1420,8 @@ _080360AC:
 	bl CopyBgTilemapBufferToVram
 	b _0803620C
 	.align 2, 0
-_080360E8: .4byte gBattleBgData_08D8578C
-_080360EC: .4byte gBattleBgData_08D85A00
+_080360E8: .4byte gMultiBattleIntroBg_Opponent_Tilemap
+_080360EC: .4byte gMultiBattleIntroBg_Player_Tilemap
 _080360F0:
 	movs r0, #0x80
 	lsls r0, r0, #0x15

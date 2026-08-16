@@ -180,6 +180,69 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END BATTLE TRANSITION EXACT PIPELINE
 
+    # BEGIN BATTLE BG EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/battle_interface/link_vs_frame.4bpp.lz")
+        set(BATTLE_BG_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/link_vs_frame.png")
+        set(BATTLE_BG_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/battle_bg_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_bg_exact.py"
+                gfx --manifest "${BATTLE_BG_PLAN}" --key "link_vs_frame_gfx"
+                "${BATTLE_BG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_BG_INPUT}"
+                "${BATTLE_BG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_bg_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/battle_interface/link_vs_frame.gbapal.lz")
+        set(BATTLE_BG_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/link_vs_frame_palette.png")
+        set(BATTLE_BG_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/battle_bg_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_bg_exact.py"
+                pal --manifest "${BATTLE_BG_PLAN}" --key "link_vs_frame_palette"
+                "${BATTLE_BG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_BG_INPUT}"
+                "${BATTLE_BG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_bg_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_interface/(link_vs_frame|multi_battle_intro_opponent|multi_battle_intro_player)[.]bin[.]lz$")
+        set(BATTLE_BG_STEM "${CMAKE_MATCH_1}")
+        set(BATTLE_BG_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/${BATTLE_BG_STEM}.tilemap.u16")
+        set(BATTLE_BG_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/battle_bg_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_bg_exact.py"
+                u16 --manifest "${BATTLE_BG_PLAN}" --key "${BATTLE_BG_STEM}_tilemap"
+                "${BATTLE_BG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_BG_INPUT}"
+                "${BATTLE_BG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_bg_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END BATTLE BG EXACT PIPELINE
+
     # BEGIN MAP TILESET PNG PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/tilesets/(.+)/tiles[.]4bpp[.]lz$")
