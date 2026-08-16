@@ -146,8 +146,42 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     set(OUTPUT_ABS "${CMAKE_SOURCE_DIR}/${RELATIVE_OUTPUT}")
     get_filename_component(OUTPUT_DIR "${OUTPUT_ABS}" DIRECTORY)
 
-    # BEGIN MAP TILESET PNG PIPELINE
+    # BEGIN BATTLE TRANSITION EXACT PIPELINE
     if("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_transitions/(team_aqua|team_magma|frontier_logo|frontier_square_filled|frontier_square_empty|frontier_square_shrink_1|frontier_square_shrink_2)[.]4bpp[.]lz$")
+        set(BTRANS_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/battle_transitions/${BTRANS_STEM}.png")
+        set(BTRANS_PLAN "${CMAKE_SOURCE_DIR}/graphics/battle_transitions/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/battle_transition_exact.py"
+                gfx --manifest "${BTRANS_PLAN}" --key "${BTRANS_STEM}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${BTRANS_PLAN}"
+                    "${CMAKE_SOURCE_DIR}/tools/battle_transition_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_transitions/(team_aqua|team_magma|frontier_logo)[.]bin[.]lz$")
+        set(BTRANS_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_TILEMAP "${CMAKE_SOURCE_DIR}/graphics/battle_transitions/${BTRANS_STEM}.tilemap.u16")
+        set(BTRANS_PLAN "${CMAKE_SOURCE_DIR}/graphics/battle_transitions/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/battle_transition_exact.py"
+                u16 --manifest "${BTRANS_PLAN}" --key "${BTRANS_STEM}_tilemap"
+                "${INPUT_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_TILEMAP}" "${BTRANS_PLAN}"
+                    "${CMAKE_SOURCE_DIR}/tools/battle_transition_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END BATTLE TRANSITION EXACT PIPELINE
+
+    # BEGIN MAP TILESET PNG PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/tilesets/(.+)/tiles[.]4bpp[.]lz$")
         set(TILESET_ASSET_DIR "${CMAKE_MATCH_1}")
         set(TILESET_SOURCE_DIR

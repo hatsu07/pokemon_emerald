@@ -1167,7 +1167,7 @@ Phase2_Aqua_Func1: @ 0x081467CC
 	bx r1
 	.align 2, 0
 _08146814: .4byte 0x01000400
-_08146818: .4byte gBattleTransitionData_0859A980
+_08146818: .4byte sTeamAqua_Tileset
 _0814681C: .4byte gBattleTransitionData_0859A960
 	thumb_func_end Phase2_Aqua_Func1
 
@@ -1206,7 +1206,7 @@ Phase2_Magma_Func1: @ 0x08146820
 	bx r1
 	.align 2, 0
 _08146868: .4byte 0x01000400
-_0814686C: .4byte gBattleTransitionData_0859AF54
+_0814686C: .4byte sTeamMagma_Tileset
 _08146870: .4byte gBattleTransitionData_0859A960
 	thumb_func_end Phase2_Magma_Func1
 
@@ -1391,7 +1391,7 @@ Phase2_Aqua_Func2: @ 0x081469A4
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081469E4: .4byte gBattleTransitionData_0859ACF8
+_081469E4: .4byte sTeamAqua_Tilemap
 _081469E8: .4byte 0x020388C8
 	thumb_func_end Phase2_Aqua_Func2
 
@@ -1426,7 +1426,7 @@ Phase2_Magma_Func2: @ 0x081469EC
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08146A2C: .4byte gBattleTransitionData_0859B3E0
+_08146A2C: .4byte sTeamMagma_Tilemap
 _08146A30: .4byte 0x020388C8
 	thumb_func_end Phase2_Magma_Func2
 
@@ -9018,7 +9018,7 @@ Phase2_29_Func1: @ 0x0814A3E4
 	bx r1
 	.align 2, 0
 _0814A428: .4byte 0x01000400
-_0814A42C: .4byte gBattleTransitionData_085A76B0
+_0814A42C: .4byte sFrontierLogo_Tileset
 _0814A430: .4byte gBattleTransitionData_085A7690
 	thumb_func_end Phase2_29_Func1
 
@@ -9053,7 +9053,7 @@ Phase2_29_Func2: @ 0x0814A434
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0814A474: .4byte gBattleTransitionData_085A7D3C
+_0814A474: .4byte sFrontierLogo_Tilemap
 _0814A478: .4byte 0x020388C8
 	thumb_func_end Phase2_29_Func2
 
@@ -9186,7 +9186,7 @@ _0814A57C: .4byte 0x00003F41
 _0814A580: .4byte 0x04000050
 _0814A584: .4byte 0x04000052
 _0814A588: .4byte 0x01000400
-_0814A58C: .4byte gBattleTransitionData_085A76B0
+_0814A58C: .4byte sFrontierLogo_Tileset
 _0814A590: .4byte gBattleTransitionData_085A7690
 	thumb_func_end Phase2_30_Func1
 
@@ -9210,7 +9210,7 @@ Phase2_30_Func2: @ 0x0814A594
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0814A5BC: .4byte gBattleTransitionData_085A7D3C
+_0814A5BC: .4byte sFrontierLogo_Tilemap
 	thumb_func_end Phase2_30_Func2
 
 	thumb_func_start Phase2_30_Func3
@@ -9618,7 +9618,7 @@ Phase2_31_Func1: @ 0x0814A858
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0814A8E0: .4byte gBattleTransitionData_085A8048
+_0814A8E0: .4byte sFrontierSquares_FilledBg_Tileset
 _0814A8E4: .4byte gBattleTransitionData_085A8028
 	thumb_func_end Phase2_31_Func1
 
@@ -9742,12 +9742,12 @@ _0814A9BC:
 	b _0814A9DE
 	.align 2, 0
 _0814A9CC: .4byte 0xFFFF7FFF
-_0814A9D0: .4byte gBattleTransitionData_085A81A4
+_0814A9D0: .4byte sFrontierSquares_EmptyBg_Tileset
 _0814A9D4:
 	ldr r0, _0814A9D8
 	b _0814A9DE
 	.align 2, 0
-_0814A9D8: .4byte gBattleTransitionData_085A82A4
+_0814A9D8: .4byte sFrontierSquares_Shrink1_Tileset
 _0814A9DC:
 	ldr r0, _0814A9E8
 _0814A9DE:
@@ -9755,7 +9755,7 @@ _0814A9DE:
 	bl LZ77UnCompVram
 	b _0814AA0C
 	.align 2, 0
-_0814A9E8: .4byte gBattleTransitionData_085A8354
+_0814A9E8: .4byte sFrontierSquares_Shrink2_Tileset
 _0814A9EC:
 	movs r0, #0x20
 	str r0, [sp]
@@ -9856,7 +9856,7 @@ Phase2_33_Func1: @ 0x0814AA20
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0814AABC: .4byte gBattleTransitionData_085A8048
+_0814AABC: .4byte sFrontierSquares_FilledBg_Tileset
 _0814AAC0: .4byte gBattleTransitionData_085A8028
 	thumb_func_end Phase2_33_Func1
 
@@ -10196,7 +10196,7 @@ Phase2_32_Func1: @ 0x0814ACF8
 	beq _0814AD8E
 	b _0814ADDC
 	.align 2, 0
-_0814AD74: .4byte gBattleTransitionData_085A8048
+_0814AD74: .4byte sFrontierSquares_FilledBg_Tileset
 _0814AD78: .4byte gBattleTransitionData_085A8028
 _0814AD7C: .4byte 0x02022AC8
 _0814AD80: .4byte 0x02022ACA

@@ -269,26 +269,20 @@ gBattleTransitionPhase29_30Palette: @ 0x085A7690
 	.byte 0x0C, 0x4B, 0xFF, 0x7F, 0x56, 0x7F, 0x25, 0x7E, 0xEE, 0x41, 0x1E, 0x48, 0x7A, 0x48, 0xD7, 0x48
 	.byte 0x54, 0x49, 0xB0, 0x49, 0x0D, 0x4A, 0x8A, 0x4A, 0xE6, 0x4A, 0x43, 0x4B, 0xC0, 0x4B, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085A76B0: battle_transition.s: Phase2_29_Func1, Phase2_30_Func1
-	.globl gBattleTransitionData_085A76B0
-gBattleTransitionData_085A76B0:
-	.globl sLz77Block_085A76B0
-	@ confirmed GBA LZ77 stream: compressed=0x68A, decompressed=0x19A0
-sLz77Block_085A76B0:
-	@ analyzed canonical ROM range 0x085A76B0-0x085A7D3B
-	.incbin "build/graphics/analyzed/gunknown_85a76b0_085a76b0.4bpp.lz"
-	.if (. - sLz77Block_085A76B0) != 0x68C
-	.error "sLz77Block_085A76B0 compressed size mismatch"
+	.globl sFrontierLogo_Tileset
+sFrontierLogo_Tileset: @ 0x085A76B0
+	@ Semantic exact-LZ battle transition asset.
+	.incbin "build/graphics/battle_transitions/frontier_logo.4bpp.lz"
+	.if (. - sFrontierLogo_Tileset) != 0x68C
+	.error "sFrontierLogo_Tileset compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085A7D3C: battle_transition.s: Phase2_29_Func2, Phase2_30_Func2
-	.globl gBattleTransitionData_085A7D3C
-gBattleTransitionData_085A7D3C:
-	.globl sLz77Block_085A7D3C
-	@ confirmed GBA LZ77 stream: compressed=0x2EC, decompressed=0x800
-sLz77Block_085A7D3C:
-	@ analyzed canonical ROM range 0x085A7D3C-0x085A8027
-	.incbin "build/graphics/analyzed/gunknown_85a7d3c_085a7d3c.4bpp.lz"
-	.if (. - sLz77Block_085A7D3C) != 0x2EC
-	.error "sLz77Block_085A7D3C compressed size mismatch"
+	.globl sFrontierLogo_Tilemap
+sFrontierLogo_Tilemap: @ 0x085A7D3C
+	@ Semantic exact-LZ battle transition asset.
+	.incbin "build/graphics/battle_transitions/frontier_logo.bin.lz"
+	.if (. - sFrontierLogo_Tilemap) != 0x2EC
+	.error "sFrontierLogo_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085A8028: battle_transition.s: Phase2_31_Func1, Phase2_32_Func1, Phase2_33_Func1
 	.globl gBattleTransitionData_085A8028
@@ -299,48 +293,36 @@ gBattleTransitionPhase31_32_33Palette: @ 0x085A8028
 	.byte 0x0C, 0x30, 0xFF, 0x7F, 0x56, 0x7F, 0x25, 0x7E, 0xEE, 0x41, 0xFF, 0x7F, 0x56, 0x7F, 0x25, 0x7E
 	.byte 0xFF, 0x7F, 0x1F, 0x00, 0xDB, 0x6F, 0x98, 0x67, 0x55, 0x63, 0x12, 0x5B, 0xCF, 0x56, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085A8048: battle_transition.s: Phase2_31_Func1, Phase2_32_Func1, Phase2_33_Func1
-	.globl gBattleTransitionData_085A8048
-gBattleTransitionData_085A8048:
-	.globl sLz77Block_085A8048
-	@ confirmed GBA LZ77 stream: compressed=0x15B, decompressed=0x240
-sLz77Block_085A8048:
-	@ analyzed canonical ROM range 0x085A8048-0x085A81A3
-	.incbin "build/graphics/analyzed/gunknown_85a8048_085a8048.4bpp.lz"
-	.if (. - sLz77Block_085A8048) != 0x15C
-	.error "sLz77Block_085A8048 compressed size mismatch"
+	.globl sFrontierSquares_FilledBg_Tileset
+sFrontierSquares_FilledBg_Tileset: @ 0x085A8048
+	@ Semantic exact-LZ battle transition asset.
+	.incbin "build/graphics/battle_transitions/frontier_square_filled.4bpp.lz"
+	.if (. - sFrontierSquares_FilledBg_Tileset) != 0x15C
+	.error "sFrontierSquares_FilledBg_Tileset compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085A81A4: battle_transition.s: Phase2_31_Func3
-	.globl gBattleTransitionData_085A81A4
-gBattleTransitionData_085A81A4:
-	.globl sLz77Block_085A81A4
-	@ confirmed GBA LZ77 stream: compressed=0xFD, decompressed=0x240
-sLz77Block_085A81A4:
-	@ analyzed canonical ROM range 0x085A81A4-0x085A82A3
-	.incbin "build/graphics/analyzed/gunknown_85a81a4_085a81a4.4bpp.lz"
-	.if (. - sLz77Block_085A81A4) != 0x100
-	.error "sLz77Block_085A81A4 compressed size mismatch"
+	.globl sFrontierSquares_EmptyBg_Tileset
+sFrontierSquares_EmptyBg_Tileset: @ 0x085A81A4
+	@ Semantic exact-LZ battle transition asset.
+	.incbin "build/graphics/battle_transitions/frontier_square_empty.4bpp.lz"
+	.if (. - sFrontierSquares_EmptyBg_Tileset) != 0x100
+	.error "sFrontierSquares_EmptyBg_Tileset compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085A82A4: battle_transition.s: Phase2_31_Func3
-	.globl gBattleTransitionData_085A82A4
-gBattleTransitionData_085A82A4:
-	.globl sLz77Block_085A82A4
-	@ confirmed GBA LZ77 stream: compressed=0xB0, decompressed=0x240
-sLz77Block_085A82A4:
-	@ analyzed canonical ROM range 0x085A82A4-0x085A8353
-	.incbin "build/graphics/analyzed/gunknown_85a82a4_085a82a4.4bpp.lz"
-	.if (. - sLz77Block_085A82A4) != 0xB0
-	.error "sLz77Block_085A82A4 compressed size mismatch"
+	.globl sFrontierSquares_Shrink1_Tileset
+sFrontierSquares_Shrink1_Tileset: @ 0x085A82A4
+	@ Semantic exact-LZ battle transition asset.
+	.incbin "build/graphics/battle_transitions/frontier_square_shrink_1.4bpp.lz"
+	.if (. - sFrontierSquares_Shrink1_Tileset) != 0xB0
+	.error "sFrontierSquares_Shrink1_Tileset compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085A8354: battle_transition.s: Phase2_31_Func3
-	.globl gBattleTransitionData_085A8354
-gBattleTransitionData_085A8354:
-	.globl sLz77Block_085A8354
-	@ confirmed GBA LZ77 stream: compressed=0x82, decompressed=0x240
-sLz77Block_085A8354:
-	@ analyzed canonical ROM range 0x085A8354-0x085A83D7
-	.incbin "build/graphics/analyzed/gunknown_85a8354_085a8354.4bpp.lz"
-	.if (. - sLz77Block_085A8354) != 0x84
-	.error "sLz77Block_085A8354 compressed size mismatch"
+	.globl sFrontierSquares_Shrink2_Tileset
+sFrontierSquares_Shrink2_Tileset: @ 0x085A8354
+	@ Semantic exact-LZ battle transition asset.
+	.incbin "build/graphics/battle_transitions/frontier_square_shrink_2.4bpp.lz"
+	.if (. - sFrontierSquares_Shrink2_Tileset) != 0x84
+	.error "sFrontierSquares_Shrink2_Tileset compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085A83D8: battle_transition.s: Phase2_31_Func2, Phase2_32_Func2, Phase2_33_Func2, Phase2_33_Func4
 	.globl gBattleTransitionData_085A83D8

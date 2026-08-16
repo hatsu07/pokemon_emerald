@@ -850,48 +850,36 @@ gBattleTransitionAquaMagmaPalette: @ 0x0859A960
 	.2byte 0x0000, 0x0000, 0x35AD, 0x5294, 0x6739, 0x2108, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x2493, 0x3D5C, 0x7FFF
 	@ pret/pokeemerald-jp direct xref for 0x0859A980: battle_transition.s: Phase2_Aqua_Func1
-	.globl gBattleTransitionData_0859A980
-gBattleTransitionData_0859A980:
-	.globl sLz77Block_0859A980
-	@ confirmed GBA LZ77 stream: compressed=0x375, decompressed=0xC00
-sLz77Block_0859A980:
-	@ analyzed canonical ROM range 0x0859A980-0x0859ACF7
-	.incbin "build/graphics/analyzed/gunknown_859a980_0859a980.4bpp.lz"
-	.if (. - sLz77Block_0859A980) != 0x378
-	.error "sLz77Block_0859A980 compressed size mismatch"
+	.globl sTeamAqua_Tileset
+sTeamAqua_Tileset: @ 0x0859A980
+	@ Semantic exact-LZ battle transition asset.
+	.incbin "build/graphics/battle_transitions/team_aqua.4bpp.lz"
+	.if (. - sTeamAqua_Tileset) != 0x378
+	.error "sTeamAqua_Tileset compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0859ACF8: battle_transition.s: Phase2_Aqua_Func2
-	.globl gBattleTransitionData_0859ACF8
-gBattleTransitionData_0859ACF8:
-	.globl sLz77Block_0859ACF8
-	@ confirmed GBA LZ77 stream: compressed=0x25C, decompressed=0x800
-sLz77Block_0859ACF8:
-	@ analyzed canonical ROM range 0x0859ACF8-0x0859AF53
-	.incbin "build/graphics/analyzed/gunknown_859acf8_0859acf8.4bpp.lz"
-	.if (. - sLz77Block_0859ACF8) != 0x25C
-	.error "sLz77Block_0859ACF8 compressed size mismatch"
+	.globl sTeamAqua_Tilemap
+sTeamAqua_Tilemap: @ 0x0859ACF8
+	@ Semantic exact-LZ battle transition asset.
+	.incbin "build/graphics/battle_transitions/team_aqua.bin.lz"
+	.if (. - sTeamAqua_Tilemap) != 0x25C
+	.error "sTeamAqua_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0859AF54: battle_transition.s: Phase2_Magma_Func1
-	.globl gBattleTransitionData_0859AF54
-gBattleTransitionData_0859AF54:
-	.globl sLz77Block_0859AF54
-	@ confirmed GBA LZ77 stream: compressed=0x489, decompressed=0x1000
-sLz77Block_0859AF54:
-	@ analyzed canonical ROM range 0x0859AF54-0x0859B3DF
-	.incbin "build/graphics/analyzed/gunknown_859af54_0859af54.4bpp.lz"
-	.if (. - sLz77Block_0859AF54) != 0x48C
-	.error "sLz77Block_0859AF54 compressed size mismatch"
+	.globl sTeamMagma_Tileset
+sTeamMagma_Tileset: @ 0x0859AF54
+	@ Semantic exact-LZ battle transition asset.
+	.incbin "build/graphics/battle_transitions/team_magma.4bpp.lz"
+	.if (. - sTeamMagma_Tileset) != 0x48C
+	.error "sTeamMagma_Tileset compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0859B3E0: battle_transition.s: Phase2_Magma_Func2
-	.globl gBattleTransitionData_0859B3E0
-gBattleTransitionData_0859B3E0:
-	.globl sLz77Block_0859B3E0
-	@ confirmed GBA LZ77 stream: compressed=0x2E1, decompressed=0x800
-sLz77Block_0859B3E0:
-	@ analyzed canonical ROM range 0x0859B3E0-0x0859B6C3
-	.incbin "build/graphics/analyzed/gunknown_859b3e0_0859b3e0.4bpp.lz"
-	.if (. - sLz77Block_0859B3E0) != 0x2E4
-	.error "sLz77Block_0859B3E0 compressed size mismatch"
+	.globl sTeamMagma_Tilemap
+sTeamMagma_Tilemap: @ 0x0859B3E0
+	@ Semantic exact-LZ battle transition asset.
+	.incbin "build/graphics/battle_transitions/team_magma.bin.lz"
+	.if (. - sTeamMagma_Tilemap) != 0x2E4
+	.error "sTeamMagma_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0859B6C4: battle_transition.s: Phase2_Regi_Func1
 	.globl gBattleTransitionData_0859B6C4
