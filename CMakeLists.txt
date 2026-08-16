@@ -1046,6 +1046,41 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END DODRIO BERRY PICKING EXACT ASSET PIPELINE
 
+    # BEGIN POKEMON JUMP EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/pokemon_jump/(bg|venusaur|bonuses)[.]4bpp[.]lz$")
+        set(POKEJUMP_ASSET "${CMAKE_MATCH_1}")
+        set(POKEJUMP_INPUT "${CMAKE_SOURCE_DIR}/graphics/pokemon_jump/${POKEJUMP_ASSET}.png")
+        set(POKEJUMP_PLAN "${CMAKE_SOURCE_DIR}/graphics/pokemon_jump/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_jump_exact.py"
+                repack-png --manifest "${POKEJUMP_PLAN}" --stem "${POKEJUMP_ASSET}_gfx"
+                --gbagfx "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+                "${POKEJUMP_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${POKEJUMP_INPUT}" "${POKEJUMP_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/pokemon_jump_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/pokemon_jump/(bg|venusaur|bonuses)[.]bin[.]lz$")
+        set(POKEJUMP_TILEMAP "${CMAKE_MATCH_1}")
+        set(POKEJUMP_INPUT "${CMAKE_SOURCE_DIR}/graphics/pokemon_jump/${POKEJUMP_TILEMAP}.tilemap.u16")
+        set(POKEJUMP_PLAN "${CMAKE_SOURCE_DIR}/graphics/pokemon_jump/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_jump_exact.py"
+                repack-u16 --manifest "${POKEJUMP_PLAN}" --stem "${POKEJUMP_TILEMAP}_tilemap"
+                "${POKEJUMP_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${POKEJUMP_INPUT}" "${POKEJUMP_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/pokemon_jump_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END POKEMON JUMP EXACT ASSET PIPELINE
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/analyzed/(.+)[.]4bpp[.]lz$")
         set(STEM "${CMAKE_MATCH_1}")

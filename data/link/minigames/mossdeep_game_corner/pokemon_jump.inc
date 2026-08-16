@@ -228,24 +228,24 @@ gPokemonJumpData_082CF8D0: @ 0x082CF8D0
 	@ pret/pokeemerald-jp direct xref for 0x082CF8F0: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082CF8F0
 gPokemonJumpData_082CF8F0:
-	.globl sLz77Block_082CF8F0
-	@ confirmed GBA LZ77 stream: compressed=0x22A, decompressed=0x7E0
-sLz77Block_082CF8F0:
-	@ analyzed canonical ROM range 0x082CF8F0-0x082CFB1B
-	.incbin "build/graphics/analyzed/gunknown_82cf8f0_082cf8f0.4bpp.lz"
-	.if (. - sLz77Block_082CF8F0) != 0x22C
-	.error "sLz77Block_082CF8F0 compressed size mismatch"
+	.globl gPokemonJumpBgGfx
+	@ exact GBA LZ77 from editable graphics/pokemon_jump/bg.png: compressed=0x22C, decompressed=0x7E0
+gPokemonJumpBgGfx:
+	@ canonical ROM range 0x082CF8F0-0x082CFB1B
+	.incbin "build/graphics/pokemon_jump/bg.4bpp.lz"
+	.if (. - gPokemonJumpBgGfx) != 0x22C
+	.error "gPokemonJumpBgGfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082CFB1C: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082CFB1C
 gPokemonJumpData_082CFB1C:
-	.globl sLz77Block_082CFB1C
-	@ confirmed GBA LZ77 stream: compressed=0x1AD, decompressed=0x500
-sLz77Block_082CFB1C:
-	@ analyzed canonical ROM range 0x082CFB1C-0x082CFCCB
-	.incbin "build/graphics/analyzed/gunknown_82cfb1c_082cfb1c.4bpp.lz"
-	.if (. - sLz77Block_082CFB1C) != 0x1B0
-	.error "sLz77Block_082CFB1C compressed size mismatch"
+	.globl gPokemonJumpBgTilemap
+	@ exact GBA LZ77 from editable graphics/pokemon_jump/bg.tilemap.u16: compressed=0x1B0, decompressed=0x500
+gPokemonJumpBgTilemap:
+	@ canonical ROM range 0x082CFB1C-0x082CFCCB
+	.incbin "build/graphics/pokemon_jump/bg.bin.lz"
+	.if (. - gPokemonJumpBgTilemap) != 0x1B0
+	.error "gPokemonJumpBgTilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082CFCCC: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082CFCCC
@@ -258,24 +258,24 @@ gPokemonJumpData_082CFCCC: @ 0x082CFCCC
 	@ pret/pokeemerald-jp direct xref for 0x082CFCEC: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082CFCEC
 gPokemonJumpData_082CFCEC:
-	.globl sLz77Block_082CFCEC
-	@ confirmed GBA LZ77 stream: compressed=0x94E, decompressed=0x1000
-sLz77Block_082CFCEC:
-	@ analyzed canonical ROM range 0x082CFCEC-0x082D063B
-	.incbin "build/graphics/analyzed/gunknown_82cfcec_082cfcec.4bpp.lz"
-	.if (. - sLz77Block_082CFCEC) != 0x950
-	.error "sLz77Block_082CFCEC compressed size mismatch"
+	.globl gPokemonJumpVenusaurGfx
+	@ exact GBA LZ77 from editable graphics/pokemon_jump/venusaur.png: compressed=0x950, decompressed=0x1000
+gPokemonJumpVenusaurGfx:
+	@ canonical ROM range 0x082CFCEC-0x082D063B
+	.incbin "build/graphics/pokemon_jump/venusaur.4bpp.lz"
+	.if (. - gPokemonJumpVenusaurGfx) != 0x950
+	.error "gPokemonJumpVenusaurGfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082D063C: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082D063C
 gPokemonJumpData_082D063C:
-	.globl sLz77Block_082D063C
-	@ confirmed GBA LZ77 stream: compressed=0x3B6, decompressed=0x1000
-sLz77Block_082D063C:
-	@ analyzed canonical ROM range 0x082D063C-0x082D09F3
-	.incbin "build/graphics/analyzed/gunknown_82d063c_082d063c.4bpp.lz"
-	.if (. - sLz77Block_082D063C) != 0x3B8
-	.error "sLz77Block_082D063C compressed size mismatch"
+	.globl gPokemonJumpVenusaurTilemap
+	@ exact GBA LZ77 from editable graphics/pokemon_jump/venusaur.tilemap.u16: compressed=0x3B8, decompressed=0x1000
+gPokemonJumpVenusaurTilemap:
+	@ canonical ROM range 0x082D063C-0x082D09F3
+	.incbin "build/graphics/pokemon_jump/venusaur.bin.lz"
+	.if (. - gPokemonJumpVenusaurTilemap) != 0x3B8
+	.error "gPokemonJumpVenusaurTilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082D09F4: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082D09F4
@@ -288,24 +288,24 @@ gPokemonJumpData_082D09F4: @ 0x082D09F4
 	@ pret/pokeemerald-jp direct xref for 0x082D0A14: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082D0A14
 gPokemonJumpData_082D0A14:
-	.globl sLz77Block_082D0A14
-	@ confirmed GBA LZ77 stream: compressed=0xAAF, decompressed=0x1540
-sLz77Block_082D0A14:
-	@ analyzed canonical ROM range 0x082D0A14-0x082D14C3
-	.incbin "build/graphics/analyzed/gunknown_82d0a14_082d0a14.4bpp.lz"
-	.if (. - sLz77Block_082D0A14) != 0xAB0
-	.error "sLz77Block_082D0A14 compressed size mismatch"
+	.globl gPokemonJumpBonusesGfx
+	@ exact GBA LZ77 from editable graphics/pokemon_jump/bonuses.png: compressed=0xAB0, decompressed=0x1540
+gPokemonJumpBonusesGfx:
+	@ canonical ROM range 0x082D0A14-0x082D14C3
+	.incbin "build/graphics/pokemon_jump/bonuses.4bpp.lz"
+	.if (. - gPokemonJumpBonusesGfx) != 0xAB0
+	.error "gPokemonJumpBonusesGfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082D14C4: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082D14C4
 gPokemonJumpData_082D14C4:
-	.globl sLz77Block_082D14C4
-	@ confirmed GBA LZ77 stream: compressed=0x52A, decompressed=0x2000
-sLz77Block_082D14C4:
-	@ analyzed canonical ROM range 0x082D14C4-0x082D19EF
-	.incbin "build/graphics/analyzed/gunknown_82d14c4_082d14c4.4bpp.lz"
-	.if (. - sLz77Block_082D14C4) != 0x52C
-	.error "sLz77Block_082D14C4 compressed size mismatch"
+	.globl gPokemonJumpBonusesTilemap
+	@ exact GBA LZ77 from editable graphics/pokemon_jump/bonuses.tilemap.u16: compressed=0x52C, decompressed=0x2000
+gPokemonJumpBonusesTilemap:
+	@ canonical ROM range 0x082D14C4-0x082D19EF
+	.incbin "build/graphics/pokemon_jump/bonuses.bin.lz"
+	.if (. - gPokemonJumpBonusesTilemap) != 0x52C
+	.error "gPokemonJumpBonusesTilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082D19F0: pokemon_jump.s: sub_0802CE44
 	.globl gPokemonJumpData_082D19F0
