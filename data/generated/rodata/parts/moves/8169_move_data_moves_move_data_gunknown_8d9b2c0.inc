@@ -130,35 +130,26 @@ sLz77Block_08D9BC90:
 	.error "sLz77Block_08D9BC90 compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9BD90: berry_tag_screen.s: LoadBerryTagGfx
-	.globl gBerryTagScreenData_08D9BD90
-gBerryTagScreenData_08D9BD90:
-	.globl sLz77Block_08D9BD90
-	@ confirmed GBA LZ77 stream: compressed=0x41C, decompressed=0xB40
-sLz77Block_08D9BD90:
-	@ analyzed canonical ROM range 0x08D9BD90-0x08D9C1AB
-	.incbin "build/graphics/analyzed/gunknown_8d9bd90_08d9bd90.4bpp.lz"
-	.if (. - sLz77Block_08D9BD90) != 0x41C
-	.error "sLz77Block_08D9BD90 compressed size mismatch"
+	.globl gBerryCheck_Gfx
+gBerryCheck_Gfx: @ 0x08D9BD90
+	@ Semantic exact-LZ Berry Tag screen asset.
+	.incbin "build/graphics/bag/check_berry.4bpp.lz"
+	.if (. - gBerryCheck_Gfx) != 0x41C
+	.error "gBerryCheck_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9C1AC: berry_tag_screen.s: LoadBerryTagGfx
-	.globl gBerryTagScreenData_08D9C1AC
-gBerryTagScreenData_08D9C1AC:
-	.globl sLz77Block_08D9C1AC
-	@ confirmed GBA LZ77 stream: compressed=0xA8, decompressed=0xC0
-sLz77Block_08D9C1AC:
-	@ analyzed canonical ROM range 0x08D9C1AC-0x08D9C253
-	.incbin "build/graphics/analyzed/gunknown_8d9c1ac_08d9c1ac.4bpp.lz"
-	.if (. - sLz77Block_08D9C1AC) != 0xA8
-	.error "sLz77Block_08D9C1AC compressed size mismatch"
+	.globl gBerryCheck_Pal
+gBerryCheck_Pal: @ 0x08D9C1AC
+	@ Semantic exact-LZ Berry Tag screen asset.
+	.incbin "build/graphics/bag/check_berry.gbapal.lz"
+	.if (. - gBerryCheck_Pal) != 0xA8
+	.error "gBerryCheck_Pal compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9C254: berry_tag_screen.s: LoadBerryTagGfx
-	.globl gBerryTagScreenData_08D9C254
-gBerryTagScreenData_08D9C254:
-	.globl sLz77Block_08D9C254
-	@ confirmed GBA LZ77 stream: compressed=0x18E, decompressed=0x800
-sLz77Block_08D9C254:
-	@ analyzed canonical ROM range 0x08D9C254-0x08D9C3E3
-	.incbin "build/graphics/analyzed/gunknown_8d9c254_08d9c254.4bpp.lz"
-	.if (. - sLz77Block_08D9C254) != 0x190
-	.error "sLz77Block_08D9C254 compressed size mismatch"
+	.globl gBerryTag_Gfx
+gBerryTag_Gfx: @ 0x08D9C254
+	@ Semantic exact-LZ Berry Tag screen asset.
+	.incbin "build/graphics/bag/berry_tag.bin.lz"
+	.if (. - gBerryTag_Gfx) != 0x190
+	.error "gBerryTag_Gfx compressed size mismatch"
 	.endif

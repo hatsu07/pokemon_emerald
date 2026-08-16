@@ -291,6 +291,69 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END EASY CHAT EXACT PIPELINE
 
+    # BEGIN BERRY TAG EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/bag/check_berry.4bpp.lz")
+        set(BERRY_TAG_INPUT "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry.png")
+        set(BERRY_TAG_PLAN "${CMAKE_SOURCE_DIR}/graphics/bag/berry_tag_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_tag_exact.py"
+                gfx --manifest "${BERRY_TAG_PLAN}" --key "check_berry_gfx"
+                "${BERRY_TAG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BERRY_TAG_INPUT}"
+                "${BERRY_TAG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_tag_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/bag/check_berry.gbapal.lz")
+        set(BERRY_TAG_PAL_PREFIX
+            "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_palette")
+        set(BERRY_TAG_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/bag/berry_tag_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_tag_exact.py"
+                pal6 --manifest "${BERRY_TAG_PLAN}" --key "check_berry_pal"
+                "${BERRY_TAG_PAL_PREFIX}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_palette_0.png"
+                "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_palette_1.png"
+                "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_palette_2.png"
+                "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_palette_3.png"
+                "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_palette_4.png"
+                "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_palette_5.png"
+                "${BERRY_TAG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_tag_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/bag/berry_tag.bin.lz")
+        set(BERRY_TAG_INPUT "${CMAKE_SOURCE_DIR}/graphics/bag/berry_tag.tilemap.u16")
+        set(BERRY_TAG_PLAN "${CMAKE_SOURCE_DIR}/graphics/bag/berry_tag_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_tag_exact.py"
+                u16 --manifest "${BERRY_TAG_PLAN}" --key "berry_tag_gfx"
+                "${BERRY_TAG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BERRY_TAG_INPUT}"
+                "${BERRY_TAG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_tag_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END BERRY TAG EXACT PIPELINE
+
     # BEGIN MAP TILESET PNG PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/tilesets/(.+)/tiles[.]4bpp[.]lz$")

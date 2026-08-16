@@ -333,7 +333,7 @@ _08177DB4:
 	adds r1, r1, r0
 	b _08177EBE
 	.align 2, 0
-_08177DD4: .4byte gBerryTagScreenData_08D9BD90
+_08177DD4: .4byte gBerryCheck_Gfx
 _08177DD8: .4byte 0x0203B9C0
 _08177DDC: .4byte 0x00001808
 _08177DE0:
@@ -351,7 +351,7 @@ _08177DEE:
 	ldr r1, [r4]
 	b _08177EBA
 	.align 2, 0
-_08177DFC: .4byte gBerryTagScreenData_08D9C254
+_08177DFC: .4byte gBerryTag_Gfx
 _08177E00: .4byte 0x0203B9C0
 _08177E04:
 	ldr r0, _08177E1C
@@ -432,7 +432,7 @@ _08177E90:
 	adds r1, r1, r0
 	b _08177EBE
 	.align 2, 0
-_08177EA4: .4byte gBerryTagScreenData_08D9C1AC
+_08177EA4: .4byte gBerryCheck_Pal
 _08177EA8: .4byte 0x0203B9C0
 _08177EAC: .4byte 0x00001808
 _08177EB0:
