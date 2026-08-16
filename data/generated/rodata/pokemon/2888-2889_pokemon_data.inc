@@ -12,7 +12,7 @@ gSlotMachineData_085843B8: @ 0x085843B8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0x0400, 0x160F, 0x0F04, 0x01A8, 0x00FF, 0x0000, 0x0000, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x085843C8: slot_machine.s: InfoBox_8104B80
+	@ pret/pokeemerald-jp direct xref for 0x085843C8: slot_machine.s: InfoBox_DrawWindow
 	.globl gSlotMachineData_085843C8
 gSlotMachineData_085843C8: @ 0x085843C8
 	@ analyzed canonical ROM range 0x085843C8-0x085843CF
@@ -69,142 +69,140 @@ sSlotReelActions: @ 0x08584454
 	.4byte SlotReelAction_DecideWhereToStop
 	.4byte SlotReelAction_MoveToStop
 	.4byte SlotReelAction_OscillatingStop
-	.globl gPokemonU32Table_Rom_584468
-gPokemonU32Table_Rom_584468: @ 0x08584468
-	.4byte DecideReelTurns_BiasTag_Reel1
-	.4byte DecideReelTurns_BiasTag_Reel2
-	.4byte DecideReelTurns_BiasTag_Reel3
-	.globl gPokemonU32Table_Rom_584474
-gPokemonU32Table_Rom_584474: @ 0x08584474
-	.4byte DecideReelTurns_NoBiasTag_Reel1
-	.4byte DecideReelTurns_NoBiasTag_Reel2
-	.4byte DecideReelTurns_NoBiasTag_Reel3
+	.globl sDecideStop_Bias
+sDecideStop_Bias: @ 0x08584468
+	.4byte DecideStop_Bias_Reel1
+	.4byte DecideStop_Bias_Reel2
+	.4byte DecideStop_Bias_Reel3
+	.globl sDecideStop_NoBias
+sDecideStop_NoBias: @ 0x08584474
+	.4byte DecideStop_NoBias_Reel1
+	.4byte DecideStop_NoBias_Reel2
+	.4byte DecideStop_NoBias_Reel3
 	@ pret/pokeemerald-jp direct xref for 0x08584480: slot_machine.s: SlotReelAction_MoveToStop
-	.globl gSlotMachineData_08584480
-gSlotMachineData_08584480: @ 0x08584480
+	.globl sReelStopShocks
+sReelStopShocks: @ 0x08584480
 	@ analyzed canonical ROM range 0x08584480-0x0858448B
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.2byte 0x0002, 0x0004, 0x0004, 0x0004, 0x0008, 0x0000
-	.globl gPokemonU32Table_Rom_58448C
-gPokemonU32Table_Rom_58448C: @ 0x0858448C
-	.4byte DecideReelTurns_BiasTag_Reel1_Bet1
-	.4byte DecideReelTurns_BiasTag_Reel1_Bet2or3
-	.4byte DecideReelTurns_BiasTag_Reel1_Bet2or3
-	.globl gPokemonU32Table_Rom_584498
-gPokemonU32Table_Rom_584498: @ 0x08584498
-	.4byte DecideReelTurns_BiasTag_Reel2_Bet1or2
-	.4byte DecideReelTurns_BiasTag_Reel2_Bet1or2
-	.4byte DecideReelTurns_BiasTag_Reel2_Bet3
-	.globl gPokemonU32Table_Rom_5844A4
-gPokemonU32Table_Rom_5844A4: @ 0x085844A4
-	.4byte DecideReelTurns_BiasTag_Reel3_Bet1or2
-	.4byte DecideReelTurns_BiasTag_Reel3_Bet1or2
-	.4byte DecideReelTurns_BiasTag_Reel3_Bet3
-	.globl gPokemonU32Table_Rom_5844B0
-gPokemonU32Table_Rom_5844B0: @ 0x085844B0
-	.4byte DecideReelTurns_NoBiasTag_Reel2_Bet1
-	.4byte DecideReelTurns_NoBiasTag_Reel2_Bet2
-	.4byte DecideReelTurns_NoBiasTag_Reel2_Bet3
-	.globl gPokemonU32Table_Rom_5844BC
-gPokemonU32Table_Rom_5844BC: @ 0x085844BC
-	.4byte DecideReelTurns_NoBiasTag_Reel3_Bet1
-	.4byte DecideReelTurns_NoBiasTag_Reel3_Bet2
-	.4byte DecideReelTurns_NoBiasTag_Reel3_Bet3
-	.globl gPokemonPointerTable_Rom_5844C8
-gPokemonPointerTable_Rom_5844C8: @ 0x085844C8
-	.4byte sub_0812CDB4
-	.4byte sub_0812CDE8
-	.4byte sub_0812CE04
-	@ pret/pokeemerald-jp direct xref for 0x085844D4: slot_machine.s: sub_0812CDB4, sub_0812CE04
-	.globl gSlotMachineData_085844D4
-gSlotMachineData_085844D4: @ 0x085844D4
+	.globl sDecideStop_Bias_Reel1_Bets
+sDecideStop_Bias_Reel1_Bets: @ 0x0858448C
+	.4byte DecideStop_Bias_Reel1_Bet1
+	.4byte DecideStop_Bias_Reel1_Bet2or3
+	.4byte DecideStop_Bias_Reel1_Bet2or3
+	.globl sDecideStop_Bias_Reel2_Bets
+sDecideStop_Bias_Reel2_Bets: @ 0x08584498
+	.4byte DecideStop_Bias_Reel2_Bet1or2
+	.4byte DecideStop_Bias_Reel2_Bet1or2
+	.4byte DecideStop_Bias_Reel2_Bet3
+	.globl sDecideStop_Bias_Reel3_Bets
+sDecideStop_Bias_Reel3_Bets: @ 0x085844A4
+	.4byte DecideStop_Bias_Reel3_Bet1or2
+	.4byte DecideStop_Bias_Reel3_Bet1or2
+	.4byte DecideStop_Bias_Reel3_Bet3
+	.globl sDecideStop_NoBias_Reel2_Bets
+sDecideStop_NoBias_Reel2_Bets: @ 0x085844B0
+	.4byte DecideStop_NoBias_Reel2_Bet1
+	.4byte DecideStop_NoBias_Reel2_Bet2
+	.4byte DecideStop_NoBias_Reel2_Bet3
+	.globl sDecideStop_NoBias_Reel3_Bets
+sDecideStop_NoBias_Reel3_Bets: @ 0x085844BC
+	.4byte DecideStop_NoBias_Reel3_Bet1
+	.4byte DecideStop_NoBias_Reel3_Bet2
+	.4byte DecideStop_NoBias_Reel3_Bet3
+	.globl sReelStopButtonTasks
+sReelStopButtonTasks: @ 0x085844C8
+	.4byte StopReelButton_Press
+	.4byte StopReelButton_Wait
+	.4byte StopReelButton_Unpress
+	@ pret/pokeemerald-jp direct xref for 0x085844D4: slot_machine.s: StopReelButton_Press, StopReelButton_Unpress
+	.globl sReelButtonOffsets
+sReelButtonOffsets: @ 0x085844D4
 	@ analyzed canonical ROM range 0x085844D4-0x085844DB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0005, 0x000A, 0x000F, 0x0000
-	.globl sInfoBoxActions
-sInfoBoxActions: @ 0x085844DC
-	.4byte sub_0812D270
-	.4byte sub_0812D274
-	.4byte sub_0812D29C
-	.4byte sub_0812D31C
-	@ pret/pokeemerald-jp direct xref for 0x085844EC: slot_machine.s: sub_0812D29C, sub_0812D31C, sub_0812D3C4
-	.globl gSlotMachineData_085844EC
-gSlotMachineData_085844EC: @ 0x085844EC
+	.globl sPikaPowerBoltTasks
+sPikaPowerBoltTasks: @ 0x085844DC
+	.4byte PikaPowerBolt_Idle
+	.4byte PikaPowerBolt_AddBolt
+	.4byte PikaPowerBolt_WaitAnim
+	.4byte PikaPowerBolt_ClearAll
+	@ pret/pokeemerald-jp direct xref for 0x085844EC: slot_machine.s: PikaPowerBolt_WaitAnim, PikaPowerBolt_ClearAll, sub_0812D3C4
+	.globl sPikaPowerTileTable
+sPikaPowerTileTable: @ 0x085844EC
 	@ analyzed canonical ROM range 0x085844EC-0x085844ED
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x2
 	.byte 0x9E, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085844EE: slot_machine.s: sub_0812D3C4
-	.globl gSlotMachineData_085844EE
-gSlotMachineData_085844EE: @ 0x085844EE
 	@ analyzed canonical ROM range 0x085844EE-0x085844F7
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0xA
 	.2byte 0x006E, 0x009F, 0x006F, 0x00AF, 0x007F
-	.globl sReeltimeActions
-sReeltimeActions: @ 0x085844F8
-	.4byte ReeltimeAction0
-	.4byte ReeltimeAction1
-	.4byte ReeltimeAction2
-	.4byte ReeltimeAction3
-	.4byte ReeltimeAction4
-	.4byte ReeltimeAction5
-	.4byte ReeltimeAction6
-	.4byte ReelTimeAction_LandOnOutcome
-	.4byte ReeltimeAction8
-	.4byte ReeltimeAction9
-	.4byte ReeltimeAction10
-	.4byte ReeltimeAction11
-	.4byte ReeltimeAction12
-	.4byte ReeltimeAction13
-	.4byte ReeltimeAction14
-	.4byte ReeltimeAction15
-	.4byte ReeltimeAction16
-	.4byte ReeltimeAction10
-	.4byte ReeltimeAction17
-	@ pret/pokeemerald-jp direct xref for 0x08584544: slot_machine.s: ReeltimeAction3
-	.globl gSlotMachineData_08584544
-gSlotMachineData_08584544: @ 0x08584544
+	.globl sReelTimeTasks
+sReelTimeTasks: @ 0x085844F8
+	.4byte ReelTime_Init
+	.4byte ReelTime_WindowEnter
+	.4byte ReelTime_WaitStartPikachu
+	.4byte ReelTime_PikachuSpeedUp1
+	.4byte ReelTime_PikachuSpeedUp2
+	.4byte ReelTime_WaitReel
+	.4byte ReelTime_CheckExplode
+	.4byte ReelTime_LandOnOutcome
+	.4byte ReelTime_PikachuReact
+	.4byte ReelTime_WaitClearPikaPower
+	.4byte ReelTime_CloseWindow
+	.4byte ReelTime_DestroySprites
+	.4byte ReelTime_SetReelSpeed
+	.4byte ReelTime_EndSuccess
+	.4byte ReelTime_ExplodeMachine
+	.4byte ReelTime_WaitExplode
+	.4byte ReelTime_WaitSmoke
+	.4byte ReelTime_CloseWindow
+	.4byte ReelTime_EndFailure
+	@ pret/pokeemerald-jp direct xref for 0x08584544: slot_machine.s: ReelTime_PikachuSpeedUp1
+	.globl sReelTimePikachuAnimIds
+sReelTimePikachuAnimIds: @ 0x08584544
 	@ analyzed canonical ROM range 0x08584544-0x08584547
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	.byte 0x01, 0x01, 0x02, 0x02
-	@ pret/pokeemerald-jp direct xref for 0x08584548: slot_machine.s: ReeltimeAction3
-	.globl gSlotMachineData_08584548
-gSlotMachineData_08584548: @ 0x08584548
+	@ pret/pokeemerald-jp direct xref for 0x08584548: slot_machine.s: ReelTime_PikachuSpeedUp1
+	.globl sReelTimeBoltDelays
+sReelTimeBoltDelays: @ 0x08584548
 	@ analyzed canonical ROM range 0x08584548-0x0858454F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x0040, 0x0030, 0x0018, 0x0008
-	@ pret/pokeemerald-jp direct xref for 0x08584550: slot_machine.s: ReeltimeAction3
-	.globl gSlotMachineData_08584550
-gSlotMachineData_08584550: @ 0x08584550
+	@ pret/pokeemerald-jp direct xref for 0x08584550: slot_machine.s: ReelTime_PikachuSpeedUp1
+	.globl sPikachuAuraFlashDelays
+sPikachuAuraFlashDelays: @ 0x08584550
 	@ analyzed canonical ROM range 0x08584550-0x08584557
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.2byte 0x000A, 0x0008, 0x0006, 0x0004
-	.globl gPokemonU32Table_Rom_584558
-gPokemonU32Table_Rom_584558: @ 0x08584558
+	.globl sInfoBoxTasks
+sInfoBoxTasks: @ 0x08584558
 	.4byte InfoBox_FadeIn
-	.4byte InfoBox_WaitForFade
-	.4byte InfoBox_8104B80
-	.4byte InfoBox_WaitForFade
+	.4byte InfoBox_WaitFade
+	.4byte InfoBox_DrawWindow
+	.4byte InfoBox_WaitFade
 	.4byte InfoBox_AddText
-	.4byte InfoBox_WaitForFade
-	.4byte InfoBox_AwaitPlayerInput
-	.4byte InfoBox_WaitForFade
-	.4byte InfoBox_812DE14
-	.4byte InfoBox_WaitForFade
-	.4byte InfoBox_812DE30
-	.4byte InfoBox_WaitForFade
-	.4byte InfoBox_8104BFC
-	.4byte InfoBox_WaitForFade
+	.4byte InfoBox_WaitFade
+	.4byte InfoBox_WaitInput
+	.4byte InfoBox_WaitFade
+	.4byte InfoBox_LoadSlotMachineTilemap
+	.4byte InfoBox_WaitFade
+	.4byte InfoBox_CreateDigitalDisplay
+	.4byte InfoBox_WaitFade
+	.4byte InfoBox_LoadPikaPowerMeter
+	.4byte InfoBox_WaitFade
 	.4byte InfoBox_FreeTask
-	.globl gPokemonPointerTable_Rom_584594
-gPokemonPointerTable_Rom_584594: @ 0x08584594
-	.4byte sub_0812E0F0
+	.globl sDigitalDisplayTasks
+sDigitalDisplayTasks: @ 0x08584594
+	.4byte DigitalDisplay_Idle
 	@ pret/pokeemerald-jp direct xref for 0x08584598: slot_machine.s: sub_0812EB58
 	.globl gSlotMachineData_08584598
 gSlotMachineData_08584598: @ 0x08584598

@@ -3551,8 +3551,8 @@ _0812C004:
 	bx r1
 	.align 2, 0
 _0812C020: .4byte 0x0203A800
-_0812C024: .4byte 0x08584468
-_0812C028: .4byte 0x08584474
+_0812C024: .4byte sDecideStop_Bias
+_0812C028: .4byte sDecideStop_NoBias
 	thumb_func_end SlotReelAction_DecideWhereToStop
 
 	thumb_func_start SlotReelAction_MoveToStop
@@ -3588,7 +3588,7 @@ SlotReelAction_MoveToStop: @ 0x0812C02C
 	bl AdvanceSlotReelToNextTag
 	b _0812C0B0
 	.align 2, 0
-_0812C070: .4byte gSlotMachineData_08584480
+_0812C070: .4byte sReelStopShocks
 _0812C074: .4byte 0x0203A800
 _0812C078:
 	adds r0, r5, #0
@@ -3703,8 +3703,8 @@ _0812C13A:
 _0812C144: .4byte 0x0203A800
 	thumb_func_end SlotReelAction_OscillatingStop
 
-	thumb_func_start DecideReelTurns_BiasTag_Reel1
-DecideReelTurns_BiasTag_Reel1: @ 0x0812C148
+	thumb_func_start DecideStop_Bias_Reel1
+DecideStop_Bias_Reel1: @ 0x0812C148
 	push {r4, r5, lr}
 	ldr r4, _0812C18C
 	ldr r0, [r4]
@@ -3732,7 +3732,7 @@ _0812C16A:
 	adds r0, r5, #0
 	adds r1, r3, #0
 	bl _call_via_r2
-	thumb_func_end DecideReelTurns_BiasTag_Reel1
+	thumb_func_end DecideStop_Bias_Reel1
 
 	thumb_func_start nullsub_68
 nullsub_68: @ 0x0812C180
@@ -3743,7 +3743,7 @@ nullsub_68: @ 0x0812C180
 	bx r1
 	.align 2, 0
 _0812C18C: .4byte 0x0203A800
-_0812C190: .4byte 0x0858448C
+_0812C190: .4byte sDecideStop_Bias_Reel1_Bets
 	thumb_func_end nullsub_68
 
 	thumb_func_start AreTagsAtPosition_Reel1
@@ -3851,8 +3851,8 @@ _0812C242:
 	.align 2, 0
 	thumb_func_end IsBiasTowardsCherryOr7s
 
-	thumb_func_start DecideReelTurns_BiasTag_Reel1_Bet1
-DecideReelTurns_BiasTag_Reel1_Bet1: @ 0x0812C248
+	thumb_func_start DecideStop_Bias_Reel1_Bet1
+DecideStop_Bias_Reel1_Bet1: @ 0x0812C248
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -3899,10 +3899,10 @@ _0812C296:
 	pop {r4, r5, r6, r7}
 	pop {r1}
 	bx r1
-	thumb_func_end DecideReelTurns_BiasTag_Reel1_Bet1
+	thumb_func_end DecideStop_Bias_Reel1_Bet1
 
-	thumb_func_start DecideReelTurns_BiasTag_Reel1_Bet2or3
-DecideReelTurns_BiasTag_Reel1_Bet2or3: @ 0x0812C2A0
+	thumb_func_start DecideStop_Bias_Reel1_Bet2or3
+DecideStop_Bias_Reel1_Bet2or3: @ 0x0812C2A0
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -4043,10 +4043,10 @@ _0812C3A0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-	thumb_func_end DecideReelTurns_BiasTag_Reel1_Bet2or3
+	thumb_func_end DecideStop_Bias_Reel1_Bet2or3
 
-	thumb_func_start DecideReelTurns_BiasTag_Reel2
-DecideReelTurns_BiasTag_Reel2: @ 0x0812C3B0
+	thumb_func_start DecideStop_Bias_Reel2
+DecideStop_Bias_Reel2: @ 0x0812C3B0
 	push {lr}
 	ldr r1, _0812C3D0
 	ldr r0, _0812C3D4
@@ -4058,7 +4058,7 @@ DecideReelTurns_BiasTag_Reel2: @ 0x0812C3B0
 	adds r0, r0, r1
 	ldr r0, [r0]
 	bl _call_via_r0
-	thumb_func_end DecideReelTurns_BiasTag_Reel2
+	thumb_func_end DecideStop_Bias_Reel2
 
 	thumb_func_start nullsub_69
 nullsub_69: @ 0x0812C3C8
@@ -4067,12 +4067,12 @@ nullsub_69: @ 0x0812C3C8
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0812C3D0: .4byte 0x08584498
+_0812C3D0: .4byte sDecideStop_Bias_Reel2_Bets
 _0812C3D4: .4byte 0x0203A800
 	thumb_func_end nullsub_69
 
-	thumb_func_start DecideReelTurns_BiasTag_Reel2_Bet1or2
-DecideReelTurns_BiasTag_Reel2_Bet1or2: @ 0x0812C3D8
+	thumb_func_start DecideStop_Bias_Reel2_Bet1or2
+DecideStop_Bias_Reel2_Bet1or2: @ 0x0812C3D8
 	push {r4, r5, r6, r7, lr}
 	ldr r0, _0812C40C
 	ldr r0, [r0]
@@ -4113,12 +4113,12 @@ _0812C41E:
 	pop {r4, r5, r6, r7}
 	pop {r1}
 	bx r1
-	thumb_func_end DecideReelTurns_BiasTag_Reel2_Bet1or2
+	thumb_func_end DecideStop_Bias_Reel2_Bet1or2
 
-	thumb_func_start DecideReelTurns_BiasTag_Reel2_Bet3
-DecideReelTurns_BiasTag_Reel2_Bet3: @ 0x0812C424
+	thumb_func_start DecideStop_Bias_Reel2_Bet3
+DecideStop_Bias_Reel2_Bet3: @ 0x0812C424
 	push {r4, r5, r6, lr}
-	bl DecideReelTurns_BiasTag_Reel2_Bet1or2
+	bl DecideStop_Bias_Reel2_Bet1or2
 	lsls r0, r0, #0x18
 	cmp r0, #0
 	beq _0812C486
@@ -4205,10 +4205,10 @@ _0812C4C2:
 	bx r1
 	.align 2, 0
 _0812C4C8: .4byte 0x0203A800
-	thumb_func_end DecideReelTurns_BiasTag_Reel2_Bet3
+	thumb_func_end DecideStop_Bias_Reel2_Bet3
 
-	thumb_func_start DecideReelTurns_BiasTag_Reel3
-DecideReelTurns_BiasTag_Reel3: @ 0x0812C4CC
+	thumb_func_start DecideStop_Bias_Reel3
+DecideStop_Bias_Reel3: @ 0x0812C4CC
 	push {r4, lr}
 	ldr r2, _0812C508
 	ldr r0, [r2]
@@ -4241,11 +4241,11 @@ _0812C4E8:
 	bx r1
 	.align 2, 0
 _0812C508: .4byte 0x0203A800
-_0812C50C: .4byte 0x085844A4
-	thumb_func_end DecideReelTurns_BiasTag_Reel3
+_0812C50C: .4byte sDecideStop_Bias_Reel3_Bets
+	thumb_func_end DecideStop_Bias_Reel3
 
-	thumb_func_start DecideReelTurns_BiasTag_Reel3_Bet1or2
-DecideReelTurns_BiasTag_Reel3_Bet1or2: @ 0x0812C510
+	thumb_func_start DecideStop_Bias_Reel3_Bet1or2
+DecideStop_Bias_Reel3_Bet1or2: @ 0x0812C510
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -4293,10 +4293,10 @@ _0812C562:
 	pop {r4, r5, r6, r7}
 	pop {r1}
 	bx r1
-	thumb_func_end DecideReelTurns_BiasTag_Reel3_Bet1or2
+	thumb_func_end DecideStop_Bias_Reel3_Bet1or2
 
-	thumb_func_start DecideReelTurns_BiasTag_Reel3_Bet3
-DecideReelTurns_BiasTag_Reel3_Bet3: @ 0x0812C56C
+	thumb_func_start DecideStop_Bias_Reel3_Bet3
+DecideStop_Bias_Reel3_Bet3: @ 0x0812C56C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -4311,7 +4311,7 @@ DecideReelTurns_BiasTag_Reel3_Bet3: @ 0x0812C56C
 	cmp r1, r0
 	bne _0812C5AC
 	adds r0, r6, #0
-	bl DecideReelTurns_BiasTag_Reel3_Bet1or2
+	bl DecideStop_Bias_Reel3_Bet1or2
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18
 	b _0812C5E2
@@ -4362,10 +4362,10 @@ _0812C5E2:
 	pop {r4, r5, r6, r7}
 	pop {r1}
 	bx r1
-	thumb_func_end DecideReelTurns_BiasTag_Reel3_Bet3
+	thumb_func_end DecideStop_Bias_Reel3_Bet3
 
-	thumb_func_start DecideReelTurns_NoBiasTag_Reel1
-DecideReelTurns_NoBiasTag_Reel1: @ 0x0812C5EC
+	thumb_func_start DecideStop_NoBias_Reel1
+DecideStop_NoBias_Reel1: @ 0x0812C5EC
 	push {r4, r5, lr}
 	movs r5, #0
 	b _0812C5F8
@@ -4389,7 +4389,7 @@ _0812C5F8:
 	bx r0
 	.align 2, 0
 _0812C614: .4byte 0x0203A800
-	thumb_func_end DecideReelTurns_NoBiasTag_Reel1
+	thumb_func_end DecideStop_NoBias_Reel1
 
 	thumb_func_start IsBiasTag777_SwitchColor
 IsBiasTag777_SwitchColor: @ 0x0812C618
@@ -4415,8 +4415,8 @@ _0812C634:
 	bx r1
 	thumb_func_end IsBiasTag777_SwitchColor
 
-	thumb_func_start DecideReelTurns_NoBiasTag_Reel2
-DecideReelTurns_NoBiasTag_Reel2: @ 0x0812C638
+	thumb_func_start DecideStop_NoBias_Reel2
+DecideStop_NoBias_Reel2: @ 0x0812C638
 	push {lr}
 	ldr r1, _0812C654
 	ldr r0, _0812C658
@@ -4428,19 +4428,19 @@ DecideReelTurns_NoBiasTag_Reel2: @ 0x0812C638
 	adds r0, r0, r1
 	ldr r0, [r0]
 	bl _call_via_r0
-	thumb_func_end DecideReelTurns_NoBiasTag_Reel2
+	thumb_func_end DecideStop_NoBias_Reel2
 
 	thumb_func_start sub_0812C650
 sub_0812C650: @ 0x0812C650
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812C654: .4byte 0x085844B0
+_0812C654: .4byte sDecideStop_NoBias_Reel2_Bets
 _0812C658: .4byte 0x0203A800
 	thumb_func_end sub_0812C650
 
-	thumb_func_start DecideReelTurns_NoBiasTag_Reel2_Bet1
-DecideReelTurns_NoBiasTag_Reel2_Bet1: @ 0x0812C65C
+	thumb_func_start DecideStop_NoBias_Reel2_Bet1
+DecideStop_NoBias_Reel2_Bet1: @ 0x0812C65C
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	ldr r0, _0812C6C4
@@ -4504,10 +4504,10 @@ _0812C6D4:
 	pop {r4, r5, r6, r7}
 	pop {r0}
 	bx r0
-	thumb_func_end DecideReelTurns_NoBiasTag_Reel2_Bet1
+	thumb_func_end DecideStop_NoBias_Reel2_Bet1
 
-	thumb_func_start DecideReelTurns_NoBiasTag_Reel2_Bet2
-DecideReelTurns_NoBiasTag_Reel2_Bet2: @ 0x0812C6DC
+	thumb_func_start DecideStop_NoBias_Reel2_Bet2
+DecideStop_NoBias_Reel2_Bet2: @ 0x0812C6DC
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	ldr r4, _0812C744
@@ -4572,10 +4572,10 @@ _0812C754:
 	pop {r4, r5, r6, r7}
 	pop {r0}
 	bx r0
-	thumb_func_end DecideReelTurns_NoBiasTag_Reel2_Bet2
+	thumb_func_end DecideStop_NoBias_Reel2_Bet2
 
-	thumb_func_start DecideReelTurns_NoBiasTag_Reel2_Bet3
-DecideReelTurns_NoBiasTag_Reel2_Bet3: @ 0x0812C75C
+	thumb_func_start DecideStop_NoBias_Reel2_Bet3
+DecideStop_NoBias_Reel2_Bet3: @ 0x0812C75C
 	push {r4, r5, r6, r7, lr}
 	sub sp, #4
 	ldr r6, _0812C784
@@ -4592,7 +4592,7 @@ DecideReelTurns_NoBiasTag_Reel2_Bet3: @ 0x0812C75C
 	beq _0812C85A
 	cmp r3, #2
 	bne _0812C7A6
-	bl DecideReelTurns_NoBiasTag_Reel2_Bet2
+	bl DecideStop_NoBias_Reel2_Bet2
 	b _0812C85A
 	.align 2, 0
 _0812C784: .4byte 0x0203A800
@@ -4712,7 +4712,7 @@ _0812C85A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end DecideReelTurns_NoBiasTag_Reel2_Bet3
+	thumb_func_end DecideStop_NoBias_Reel2_Bet3
 
 	thumb_func_start AreTagsMixed77
 AreTagsMixed77: @ 0x0812C864
@@ -4825,8 +4825,8 @@ _0812C908:
 	bx r1
 	thumb_func_end TagsDontMatchOrHaveAny7s
 
-	thumb_func_start DecideReelTurns_NoBiasTag_Reel3
-DecideReelTurns_NoBiasTag_Reel3: @ 0x0812C90C
+	thumb_func_start DecideStop_NoBias_Reel3
+DecideStop_NoBias_Reel3: @ 0x0812C90C
 	push {lr}
 	ldr r1, _0812C928
 	ldr r0, _0812C92C
@@ -4838,19 +4838,19 @@ DecideReelTurns_NoBiasTag_Reel3: @ 0x0812C90C
 	adds r0, r0, r1
 	ldr r0, [r0]
 	bl _call_via_r0
-	thumb_func_end DecideReelTurns_NoBiasTag_Reel3
+	thumb_func_end DecideStop_NoBias_Reel3
 
 	thumb_func_start sub_0812C924
 sub_0812C924: @ 0x0812C924
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812C928: .4byte 0x085844BC
+_0812C928: .4byte sDecideStop_NoBias_Reel3_Bets
 _0812C92C: .4byte 0x0203A800
 	thumb_func_end sub_0812C924
 
-	thumb_func_start DecideReelTurns_NoBiasTag_Reel3_Bet1
-DecideReelTurns_NoBiasTag_Reel3_Bet1: @ 0x0812C930
+	thumb_func_start DecideStop_NoBias_Reel3_Bet1
+DecideStop_NoBias_Reel3_Bet1: @ 0x0812C930
 	push {r4, r5, r6, r7, lr}
 	movs r6, #0
 	ldr r7, _0812C96C
@@ -4968,10 +4968,10 @@ _0812CA06:
 	bx r0
 	.align 2, 0
 _0812CA14: .4byte 0x0203A800
-	thumb_func_end DecideReelTurns_NoBiasTag_Reel3_Bet1
+	thumb_func_end DecideStop_NoBias_Reel3_Bet1
 
-	thumb_func_start DecideReelTurns_NoBiasTag_Reel3_Bet2
-DecideReelTurns_NoBiasTag_Reel3_Bet2: @ 0x0812CA18
+	thumb_func_start DecideStop_NoBias_Reel3_Bet2
+DecideStop_NoBias_Reel3_Bet2: @ 0x0812CA18
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -5158,14 +5158,14 @@ _0812CB70:
 	bx r0
 	.align 2, 0
 _0812CB8C: .4byte 0x0203A800
-	thumb_func_end DecideReelTurns_NoBiasTag_Reel3_Bet2
+	thumb_func_end DecideStop_NoBias_Reel3_Bet2
 
-	thumb_func_start DecideReelTurns_NoBiasTag_Reel3_Bet3
-DecideReelTurns_NoBiasTag_Reel3_Bet3: @ 0x0812CB90
+	thumb_func_start DecideStop_NoBias_Reel3_Bet3
+DecideStop_NoBias_Reel3_Bet3: @ 0x0812CB90
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
-	bl DecideReelTurns_NoBiasTag_Reel3_Bet2
+	bl DecideStop_NoBias_Reel3_Bet2
 	ldr r4, _0812CC34
 	ldr r2, [r4]
 	movs r0, #0x36
@@ -5378,7 +5378,7 @@ _0812CD44:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end DecideReelTurns_NoBiasTag_Reel3_Bet3
+	thumb_func_end DecideStop_NoBias_Reel3_Bet3
 
 	thumb_func_start sub_0812CD50
 sub_0812CD50: @ 0x0812CD50
@@ -5433,12 +5433,12 @@ sub_0812CDA8: @ 0x0812CDA8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812CDAC: .4byte 0x085844C8
+_0812CDAC: .4byte sReelStopButtonTasks
 _0812CDB0: .4byte 0x03005B60
 	thumb_func_end sub_0812CDA8
 
-	thumb_func_start sub_0812CDB4
-sub_0812CDB4: @ 0x0812CDB4
+	thumb_func_start StopReelButton_Press
+StopReelButton_Press: @ 0x0812CDB4
 	push {r4, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -5463,11 +5463,11 @@ sub_0812CDB4: @ 0x0812CDB4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812CDE4: .4byte gSlotMachineData_085844D4
-	thumb_func_end sub_0812CDB4
+_0812CDE4: .4byte sReelButtonOffsets
+	thumb_func_end StopReelButton_Press
 
-	thumb_func_start sub_0812CDE8
-sub_0812CDE8: @ 0x0812CDE8
+	thumb_func_start StopReelButton_Wait
+StopReelButton_Wait: @ 0x0812CDE8
 	push {lr}
 	adds r1, r0, #0
 	ldrh r0, [r1, #0xa]
@@ -5483,10 +5483,10 @@ sub_0812CDE8: @ 0x0812CDE8
 _0812CE00:
 	pop {r0}
 	bx r0
-	thumb_func_end sub_0812CDE8
+	thumb_func_end StopReelButton_Wait
 
-	thumb_func_start sub_0812CE04
-sub_0812CE04: @ 0x0812CE04
+	thumb_func_start StopReelButton_Unpress
+StopReelButton_Unpress: @ 0x0812CE04
 	push {r4, lr}
 	sub sp, #4
 	lsls r4, r1, #0x18
@@ -5511,8 +5511,8 @@ sub_0812CE04: @ 0x0812CE04
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812CE38: .4byte gSlotMachineData_085844D4
-	thumb_func_end sub_0812CE04
+_0812CE38: .4byte sReelButtonOffsets
+	thumb_func_end StopReelButton_Unpress
 
 	thumb_func_start LoadLitTile
 LoadLitTile: @ 0x0812CE3C
@@ -6101,18 +6101,18 @@ RunInfoBoxActions: @ 0x0812D240
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812D268: .4byte sInfoBoxActions
+_0812D268: .4byte sPikaPowerBoltTasks
 _0812D26C: .4byte 0x03005B60
 	thumb_func_end RunInfoBoxActions
 
-	thumb_func_start sub_0812D270
-sub_0812D270: @ 0x0812D270
+	thumb_func_start PikaPowerBolt_Idle
+PikaPowerBolt_Idle: @ 0x0812D270
 	bx lr
 	.align 2, 0
-	thumb_func_end sub_0812D270
+	thumb_func_end PikaPowerBolt_Idle
 
-	thumb_func_start sub_0812D274
-sub_0812D274: @ 0x0812D274
+	thumb_func_start PikaPowerBolt_AddBolt
+PikaPowerBolt_AddBolt: @ 0x0812D274
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrh r0, [r4, #0xa]
@@ -6132,10 +6132,10 @@ sub_0812D274: @ 0x0812D274
 	pop {r4}
 	pop {r0}
 	bx r0
-	thumb_func_end sub_0812D274
+	thumb_func_end PikaPowerBolt_AddBolt
 
-	thumb_func_start sub_0812D29C
-sub_0812D29C: @ 0x0812D29C
+	thumb_func_start PikaPowerBolt_WaitAnim
+PikaPowerBolt_WaitAnim: @ 0x0812D29C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r2, _0812D2D0
@@ -6198,11 +6198,11 @@ _0812D30C:
 	bx r0
 	.align 2, 0
 _0812D314: .4byte 0x0203A798
-_0812D318: .4byte gSlotMachineData_085844EC
-	thumb_func_end sub_0812D29C
+_0812D318: .4byte sPikaPowerTileTable
+	thumb_func_end PikaPowerBolt_WaitAnim
 
-	thumb_func_start sub_0812D31C
-sub_0812D31C: @ 0x0812D31C
+	thumb_func_start PikaPowerBolt_ClearAll
+PikaPowerBolt_ClearAll: @ 0x0812D31C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldrh r1, [r4, #0xa]
@@ -6272,8 +6272,8 @@ _0812D394:
 	bx r0
 	.align 2, 0
 _0812D39C: .4byte 0x0203A798
-_0812D3A0: .4byte gSlotMachineData_085844EC
-	thumb_func_end sub_0812D31C
+_0812D3A0: .4byte sPikaPowerTileTable
+	thumb_func_end PikaPowerBolt_ClearAll
 
 	thumb_func_start ClearTaskDataFields_2orHigher
 ClearTaskDataFields_2orHigher: @ 0x0812D3A4
@@ -6317,7 +6317,7 @@ _0812D3D4:
 	movs r1, #1
 	b _0812D3F4
 	.align 2, 0
-_0812D3E8: .4byte gSlotMachineData_085844EC
+_0812D3E8: .4byte sPikaPowerTileTable
 _0812D3EC:
 	cmp r0, #0xf
 	bne _0812D3F4
@@ -6369,7 +6369,7 @@ _0812D438:
 	b _0812D458
 	.align 2, 0
 _0812D448: .4byte 0x0203A798
-_0812D44C: .4byte gSlotMachineData_085844EE
+_0812D44C: .4byte sPikaPowerTileTable + 2
 _0812D450:
 	cmp r0, #0xf
 	bne _0812D458
@@ -6484,12 +6484,12 @@ RunReeltimeActions: @ 0x0812D4FC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812D524: .4byte sReeltimeActions
+_0812D524: .4byte sReelTimeTasks
 _0812D528: .4byte 0x03005B60
 	thumb_func_end RunReeltimeActions
 
-	thumb_func_start ReeltimeAction0
-ReeltimeAction0: @ 0x0812D52C
+	thumb_func_start ReelTime_Init
+ReelTime_Init: @ 0x0812D52C
 	push {lr}
 	ldr r3, _0812D598
 	ldr r1, [r3]
@@ -6536,10 +6536,10 @@ ReeltimeAction0: @ 0x0812D52C
 _0812D598: .4byte 0x0203A800
 _0812D59C: .4byte 0x02021B38
 _0812D5A0: .4byte 0x02021B3A
-	thumb_func_end ReeltimeAction0
+	thumb_func_end ReelTime_Init
 
-	thumb_func_start ReeltimeAction1
-ReeltimeAction1: @ 0x0812D5A4
+	thumb_func_start ReelTime_WindowEnter
+ReelTime_WindowEnter: @ 0x0812D5A4
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r1, _0812D614
@@ -6598,10 +6598,10 @@ _0812D604:
 	.align 2, 0
 _0812D614: .4byte 0x02021B38
 _0812D618: .4byte 0x000001FF
-	thumb_func_end ReeltimeAction1
+	thumb_func_end ReelTime_WindowEnter
 
-	thumb_func_start ReeltimeAction2
-ReeltimeAction2: @ 0x0812D61C
+	thumb_func_start ReelTime_WaitStartPikachu
+ReelTime_WaitStartPikachu: @ 0x0812D61C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrh r0, [r4, #0x10]
@@ -6624,10 +6624,10 @@ _0812D646:
 	pop {r4}
 	pop {r0}
 	bx r0
-	thumb_func_end ReeltimeAction2
+	thumb_func_end ReelTime_WaitStartPikachu
 
-	thumb_func_start ReeltimeAction3
-ReeltimeAction3: @ 0x0812D64C
+	thumb_func_start ReelTime_PikachuSpeedUp1
+ReelTime_PikachuSpeedUp1: @ 0x0812D64C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -6701,15 +6701,15 @@ _0812D6DC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812D6E8: .4byte gSlotMachineData_08584544
-_0812D6EC: .4byte gSlotMachineData_08584548
-_0812D6F0: .4byte gSlotMachineData_08584550
+_0812D6E8: .4byte sReelTimePikachuAnimIds
+_0812D6EC: .4byte sReelTimeBoltDelays
+_0812D6F0: .4byte sPikachuAuraFlashDelays
 _0812D6F4: .4byte 0x0203A800
 _0812D6F8: .4byte 0x020205AC
-	thumb_func_end ReeltimeAction3
+	thumb_func_end ReelTime_PikachuSpeedUp1
 
-	thumb_func_start ReeltimeAction4
-ReeltimeAction4: @ 0x0812D6FC
+	thumb_func_start ReelTime_PikachuSpeedUp2
+ReelTime_PikachuSpeedUp2: @ 0x0812D6FC
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrh r0, [r4, #0x10]
@@ -6748,10 +6748,10 @@ _0812D740:
 	.align 2, 0
 _0812D748: .4byte 0x0203A800
 _0812D74C: .4byte 0x020205AC
-	thumb_func_end ReeltimeAction4
+	thumb_func_end ReelTime_PikachuSpeedUp2
 
-	thumb_func_start ReeltimeAction5
-ReeltimeAction5: @ 0x0812D750
+	thumb_func_start ReelTime_WaitReel
+ReelTime_WaitReel: @ 0x0812D750
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrh r0, [r4, #0x10]
@@ -6778,10 +6778,10 @@ _0812D77C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end ReeltimeAction5
+	thumb_func_end ReelTime_WaitReel
 
-	thumb_func_start ReeltimeAction6
-ReeltimeAction6: @ 0x0812D784
+	thumb_func_start ReelTime_CheckExplode
+ReelTime_CheckExplode: @ 0x0812D784
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrh r0, [r4, #0x10]
@@ -6841,10 +6841,10 @@ _0812D7EC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end ReeltimeAction6
+	thumb_func_end ReelTime_CheckExplode
 
-	thumb_func_start ReelTimeAction_LandOnOutcome
-ReelTimeAction_LandOnOutcome: @ 0x0812D7F4
+	thumb_func_start ReelTime_LandOnOutcome
+ReelTime_LandOnOutcome: @ 0x0812D7F4
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldr r6, _0812D81C
@@ -6912,10 +6912,10 @@ _0812D876:
 	bx r0
 	.align 2, 0
 _0812D87C: .4byte 0x0203A800
-	thumb_func_end ReelTimeAction_LandOnOutcome
+	thumb_func_end ReelTime_LandOnOutcome
 
-	thumb_func_start ReeltimeAction8
-ReeltimeAction8: @ 0x0812D880
+	thumb_func_start ReelTime_PikachuReact
+ReelTime_PikachuReact: @ 0x0812D880
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldrh r0, [r4, #0x10]
@@ -6995,10 +6995,10 @@ _0812D924:
 	bx r0
 	.align 2, 0
 _0812D92C: .4byte 0x020205AC
-	thumb_func_end ReeltimeAction8
+	thumb_func_end ReelTime_PikachuReact
 
-	thumb_func_start ReeltimeAction9
-ReeltimeAction9: @ 0x0812D930
+	thumb_func_start ReelTime_WaitClearPikaPower
+ReelTime_WaitClearPikaPower: @ 0x0812D930
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrh r1, [r4, #0x10]
@@ -7024,10 +7024,10 @@ _0812D958:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end ReeltimeAction9
+	thumb_func_end ReelTime_WaitClearPikaPower
 
-	thumb_func_start ReeltimeAction10
-ReeltimeAction10: @ 0x0812D960
+	thumb_func_start ReelTime_CloseWindow
+ReelTime_CloseWindow: @ 0x0812D960
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r1, _0812D9A0
@@ -7069,10 +7069,10 @@ _0812D9AE:
 	pop {r4, r5}
 	pop {r0}
 	bx r0
-	thumb_func_end ReeltimeAction10
+	thumb_func_end ReelTime_CloseWindow
 
-	thumb_func_start ReeltimeAction11
-ReeltimeAction11: @ 0x0812D9B4
+	thumb_func_start ReelTime_DestroySprites
+ReelTime_DestroySprites: @ 0x0812D9B4
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r4, _0812DA08
@@ -7125,10 +7125,10 @@ _0812DA2A:
 	pop {r4, r5, r6}
 	pop {r0}
 	bx r0
-	thumb_func_end ReeltimeAction11
+	thumb_func_end ReelTime_DestroySprites
 
-	thumb_func_start ReeltimeAction12
-ReeltimeAction12: @ 0x0812DA30
+	thumb_func_start ReelTime_SetReelSpeed
+ReelTime_SetReelSpeed: @ 0x0812DA30
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _0812DA4C
@@ -7168,10 +7168,10 @@ _0812DA76:
 	pop {r4, r5}
 	pop {r0}
 	bx r0
-	thumb_func_end ReeltimeAction12
+	thumb_func_end ReelTime_SetReelSpeed
 
-	thumb_func_start ReeltimeAction13
-ReeltimeAction13: @ 0x0812DA7C
+	thumb_func_start ReelTime_EndSuccess
+ReelTime_EndSuccess: @ 0x0812DA7C
 	push {lr}
 	bl sub_0812E064
 	lsls r0, r0, #0x18
@@ -7187,10 +7187,10 @@ _0812DA96:
 	bx r0
 	.align 2, 0
 _0812DA9C: .4byte 0x0812D4FD
-	thumb_func_end ReeltimeAction13
+	thumb_func_end ReelTime_EndSuccess
 
-	thumb_func_start ReeltimeAction14
-ReeltimeAction14: @ 0x0812DAA0
+	thumb_func_start ReelTime_ExplodeMachine
+ReelTime_ExplodeMachine: @ 0x0812DAA0
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	bl sub_0812E83C
@@ -7239,10 +7239,10 @@ ReeltimeAction14: @ 0x0812DAA0
 _0812DB08: .4byte 0x020205AC
 _0812DB0C: .4byte 0x0203A800
 _0812DB10: .4byte 0x00000187
-	thumb_func_end ReeltimeAction14
+	thumb_func_end ReelTime_ExplodeMachine
 
-	thumb_func_start ReeltimeAction15
-ReeltimeAction15: @ 0x0812DB14
+	thumb_func_start ReelTime_WaitExplode
+ReelTime_WaitExplode: @ 0x0812DB14
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r1, _0812DB90
@@ -7307,10 +7307,10 @@ _0812DB8A:
 _0812DB90: .4byte 0x02021B3A
 _0812DB94: .4byte 0x020205AC
 _0812DB98: .4byte 0x0203A800
-	thumb_func_end ReeltimeAction15
+	thumb_func_end ReelTime_WaitExplode
 
-	thumb_func_start ReeltimeAction16
-ReeltimeAction16: @ 0x0812DB9C
+	thumb_func_start ReelTime_WaitSmoke
+ReelTime_WaitSmoke: @ 0x0812DB9C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, _0812DBC8
@@ -7333,10 +7333,10 @@ _0812DBC2:
 	bx r0
 	.align 2, 0
 _0812DBC8: .4byte 0x02021B3A
-	thumb_func_end ReeltimeAction16
+	thumb_func_end ReelTime_WaitSmoke
 
-	thumb_func_start ReeltimeAction17
-ReeltimeAction17: @ 0x0812DBCC
+	thumb_func_start ReelTime_EndFailure
+ReelTime_EndFailure: @ 0x0812DBCC
 	push {lr}
 	ldr r1, _0812DC0C
 	movs r0, #0
@@ -7364,7 +7364,7 @@ ReeltimeAction17: @ 0x0812DBCC
 _0812DC0C: .4byte 0x02021B38
 _0812DC10: .4byte 0x0203A800
 _0812DC14: .4byte 0x0812D4FD
-	thumb_func_end ReeltimeAction17
+	thumb_func_end ReelTime_EndFailure
 
 	thumb_func_start LoadReelTimeWindowTilemap
 LoadReelTimeWindowTilemap: @ 0x0812DC18
@@ -7501,7 +7501,7 @@ sub_0812DCE4: @ 0x0812DCE4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812DD0C: .4byte 0x08584558
+_0812DD0C: .4byte sInfoBoxTasks
 _0812DD10: .4byte 0x03005B60
 	thumb_func_end sub_0812DCE4
 
@@ -7526,8 +7526,8 @@ InfoBox_FadeIn: @ 0x0812DD14
 	bx r0
 	thumb_func_end InfoBox_FadeIn
 
-	thumb_func_start InfoBox_WaitForFade
-InfoBox_WaitForFade: @ 0x0812DD38
+	thumb_func_start InfoBox_WaitFade
+InfoBox_WaitFade: @ 0x0812DD38
 	push {lr}
 	adds r2, r0, #0
 	ldr r0, _0812DD54
@@ -7544,10 +7544,10 @@ _0812DD4E:
 	bx r0
 	.align 2, 0
 _0812DD54: .4byte 0x02037C74
-	thumb_func_end InfoBox_WaitForFade
+	thumb_func_end InfoBox_WaitFade
 
-	thumb_func_start InfoBox_8104B80
-InfoBox_8104B80: @ 0x0812DD58
+	thumb_func_start InfoBox_DrawWindow
+InfoBox_DrawWindow: @ 0x0812DD58
 	push {r4, lr}
 	adds r4, r0, #0
 	bl sub_0812DFEC
@@ -7567,7 +7567,7 @@ InfoBox_8104B80: @ 0x0812DD58
 	bx r0
 	.align 2, 0
 _0812DD84: .4byte gSlotMachineData_085843C8
-	thumb_func_end InfoBox_8104B80
+	thumb_func_end InfoBox_DrawWindow
 
 	thumb_func_start InfoBox_AddText
 InfoBox_AddText: @ 0x0812DD88
@@ -7607,8 +7607,8 @@ _0812DDCC: .4byte gSlotMachineData_085843D0
 _0812DDD0: .4byte gSlotMachineData_08588651
 	thumb_func_end InfoBox_AddText
 
-	thumb_func_start InfoBox_AwaitPlayerInput
-InfoBox_AwaitPlayerInput: @ 0x0812DDD4
+	thumb_func_start InfoBox_WaitInput
+InfoBox_WaitInput: @ 0x0812DDD4
 	push {r4, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -7645,10 +7645,10 @@ _0812DE18:
 	bx r0
 	.align 2, 0
 _0812DE20: .4byte 0x03002360
-	thumb_func_end InfoBox_AwaitPlayerInput
+	thumb_func_end InfoBox_WaitInput
 
-	thumb_func_start InfoBox_812DE14
-InfoBox_812DE14: @ 0x0812DE24
+	thumb_func_start InfoBox_LoadSlotMachineTilemap
+InfoBox_LoadSlotMachineTilemap: @ 0x0812DE24
 	push {r4, lr}
 	adds r4, r0, #0
 	bl LoadSlotMachineMenuTilemap
@@ -7661,10 +7661,10 @@ InfoBox_812DE14: @ 0x0812DE24
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end InfoBox_812DE14
+	thumb_func_end InfoBox_LoadSlotMachineTilemap
 
-	thumb_func_start InfoBox_812DE30
-InfoBox_812DE30: @ 0x0812DE40
+	thumb_func_start InfoBox_CreateDigitalDisplay
+InfoBox_CreateDigitalDisplay: @ 0x0812DE40
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrb r0, [r4, #0xa]
@@ -7676,10 +7676,10 @@ InfoBox_812DE30: @ 0x0812DE40
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end InfoBox_812DE30
+	thumb_func_end InfoBox_CreateDigitalDisplay
 
-	thumb_func_start InfoBox_8104BFC
-InfoBox_8104BFC: @ 0x0812DE58
+	thumb_func_start InfoBox_LoadPikaPowerMeter
+InfoBox_LoadPikaPowerMeter: @ 0x0812DE58
 	push {r4, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -7703,7 +7703,7 @@ InfoBox_8104BFC: @ 0x0812DE58
 	bx r0
 	.align 2, 0
 _0812DE88: .4byte 0x0203A800
-	thumb_func_end InfoBox_8104BFC
+	thumb_func_end InfoBox_LoadPikaPowerMeter
 
 	thumb_func_start InfoBox_FreeTask
 InfoBox_FreeTask: @ 0x0812DE8C
@@ -8023,15 +8023,15 @@ sub_0812E0C0: @ 0x0812E0C0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812E0E8: .4byte 0x08584594
+_0812E0E8: .4byte sDigitalDisplayTasks
 _0812E0EC: .4byte 0x03005B60
 	thumb_func_end sub_0812E0C0
 
-	thumb_func_start sub_0812E0F0
-sub_0812E0F0: @ 0x0812E0F0
+	thumb_func_start DigitalDisplay_Idle
+DigitalDisplay_Idle: @ 0x0812E0F0
 	bx lr
 	.align 2, 0
-	thumb_func_end sub_0812E0F0
+	thumb_func_end DigitalDisplay_Idle
 
 	thumb_func_start sub_0812E0F4
 sub_0812E0F4: @ 0x0812E0F4
