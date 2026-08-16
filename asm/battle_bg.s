@@ -123,7 +123,7 @@ _080355B2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080355B8: .4byte sLz77Block_08D855E4
+_080355B8: .4byte gBattleWindowTextPalette
 _080355BC: .4byte 0x02022C90
 _080355C0: .4byte 0x020373B4
 _080355C4: .4byte 0x020378A0

@@ -3536,14 +3536,14 @@ _0819025E:
 	strh r0, [r6, #8]
 	b _081903CE
 	.align 2, 0
-_08190268: .4byte gBattleDomeData_08D83DF4
-_0819026C: .4byte gBattleDomeData_08D84A08
-_08190270: .4byte gBattleDomeData_08D84F98
+_08190268: .4byte gDomeTourneyInfoCard_Gfx
+_0819026C: .4byte gDomeTourneyInfoCard_Tilemap
+_08190270: .4byte gDomeTourneyInfoCardBg_Tilemap
 _08190274: .4byte gBattleDomeTourneyTreeButtonSheets
-_08190278: .4byte gBattleDomeData_08D8533C
-_0819027C: .4byte gBattleDomeTourneyTreeButtons_Pal
-_08190280: .4byte sLz77Block_08D855E4
-_08190284: .4byte gBattleDomeData_08D854AC
+_08190278: .4byte gDomeTourneyTree_Pal
+_0819027C: .4byte gDomeTourneyTreeButtons_Pal
+_08190280: .4byte gBattleWindowTextPalette
+_08190284: .4byte gDomeTourneyMatchCardBg_Pal
 _08190288: .4byte 0x020377B4
 _0819028C: .4byte 0x05000100
 _08190290:
@@ -11240,14 +11240,14 @@ _0819401C:
 	b _08194466
 	.align 2, 0
 _0819402C: .4byte 0x0203CA48
-_08194030: .4byte gBattleDomeData_08D839A4
+_08194030: .4byte gDomeTourneyTree_Tilemap
 _08194034: .4byte gDomeTourneyTree_Gfx
-_08194038: .4byte gBattleDomeData_08D835A0
-_0819403C: .4byte gBattleDomeData_08D83BD0
-_08194040: .4byte gBattleDomeData_08D83CE0
-_08194044: .4byte gBattleDomeData_08D8533C
-_08194048: .4byte gBattleDomeTourneyTreeButtons_Pal
-_0819404C: .4byte sLz77Block_08D855E4
+_08194038: .4byte gDomeTourneyLine_Gfx
+_0819403C: .4byte gDomeTourneyLineDown_Tilemap
+_08194040: .4byte gDomeTourneyLineUp_Tilemap
+_08194044: .4byte gDomeTourneyTree_Pal
+_08194048: .4byte gDomeTourneyTreeButtons_Pal
+_0819404C: .4byte gBattleWindowTextPalette
 _08194050: .4byte 0x020377B4
 _08194054: .4byte 0x05000100
 _08194058: .4byte 0x03005B60

@@ -144,12 +144,12 @@ gBattleDomeTourneyTreeScanlineEffectParams: @ 0x085D59F0
 
 	.globl gBattleDomeTourneyTreeButtonSheets
 gBattleDomeTourneyTreeButtonSheets: @ 0x085D59FC
-	rodata_compressed_sprite_sheet gBattleDomeTourneyTreeButtons_Gfx, 0x400, 0
+	rodata_compressed_sprite_sheet gDomeTourneyTreeButtons_Gfx, 0x400, 0
 	rodata_compressed_sprite_sheet NULL, 0, 0
 
 	.globl gBattleDomeTourneyTreeButtonPalettes
 gBattleDomeTourneyTreeButtonPalettes: @ 0x085D5A0C
-	rodata_sprite_palette gBattleDomeTourneyTreeButtons_Pal, 0
+	rodata_sprite_palette gDomeTourneyTreeButtons_Pal, 0
 	rodata_sprite_palette NULL, 0
 
 	.globl gBattleDomeTourneyTreePokeballOam

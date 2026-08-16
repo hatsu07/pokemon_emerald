@@ -1316,6 +1316,197 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                     "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
 
+    # BEGIN BATTLE FRONTIER DOME BLOCK EXACT PIPELINE
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_line.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyLine_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_line.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_line.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_tree.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyTree_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_line_down_map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyLineDown_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_line_down_map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_line_down_map.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_line_up_map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyLineUp_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_line_up_map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_line_up_map.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_info_card.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyInfoCard_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_info_card_tilemap.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyInfoCard_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card_tilemap.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card_tilemap.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_info_card_bg.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyInfoCardBg_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card_bg.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card_bg.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_buttons.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyTreeButtons_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_tree.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyTree_Pal" --banks 16
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_02.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_03.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_04.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_05.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_06.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_07.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_08.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_09.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_10.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_11.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_12.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_13.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_14.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_15.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_buttons.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyTreeButtons_Pal" --banks 16
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_02.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_03.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_04.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_05.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_06.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_07.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_08.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_09.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_10.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_11.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_12.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_13.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_14.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_15.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_match_card_bg.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyMatchCardBg_Pal" --banks 1
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_match_card_bg_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_match_card_bg_palette_banks/palette_00.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/arena_judgment_symbols.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gBattleArenaJudgmentSymbolsGfx"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/arena_judgment_symbols.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/arena_judgment_symbols.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/arena_judgment_symbols.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gBattleArenaJudgmentSymbolsPalette" --banks 1
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/arena_judgment_symbols_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/arena_judgment_symbols_palette_banks/palette_00.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_interface/text.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_interface/lz77_exact_plans.json"
+                --stem "gBattleWindowTextPalette" --banks 1
+                "${CMAKE_SOURCE_DIR}/graphics/battle_interface/text_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_interface/text_palette_banks/palette_00.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END BATTLE FRONTIER DOME BLOCK EXACT PIPELINE
+
     elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_tree.4bpp.lz")
         add_custom_command(
             OUTPUT "${OUTPUT_ABS}"
