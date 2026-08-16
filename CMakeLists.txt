@@ -1158,6 +1158,52 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END INTRO SCENE 3 EXACT ASSET PIPELINE
 
+    # BEGIN DIPLOMA EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/diploma/tiles[.]4bpp[.]lz$")
+        set(DIPLOMA_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/diploma/lz77_exact_plans.json")
+        set(DIPLOMA_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/diploma/tiles.png")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${DIPLOMA_PLAN}"
+                --stem "tiles"
+                "${DIPLOMA_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${DIPLOMA_INPUT}"
+                "${DIPLOMA_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/diploma/tilemap[.]bin[.]lz$")
+        set(DIPLOMA_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/diploma/lz77_exact_plans.json")
+        set(DIPLOMA_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/diploma/tilemap.tilemap.u16")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${DIPLOMA_PLAN}"
+                --stem "tilemap"
+                "${DIPLOMA_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${DIPLOMA_INPUT}"
+                "${DIPLOMA_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END DIPLOMA EXACT ASSET PIPELINE
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/analyzed/(.+)[.]4bpp[.]lz$")
         set(STEM "${CMAKE_MATCH_1}")

@@ -136,23 +136,23 @@ gLotteryCornerData_085C7A34: @ 0x085C7A34
 	@ pret/pokeemerald-jp direct xref for 0x085C7A74: lottery_corner.s: CB2_ShowDiploma
 	.globl gLotteryCornerData_085C7A74
 gLotteryCornerData_085C7A74:
-	.globl sLz77Block_085C7A74
-	@ confirmed GBA LZ77 stream: compressed=0x73B, decompressed=0x1000
-sLz77Block_085C7A74:
-	@ analyzed canonical ROM range 0x085C7A74-0x085C81AF
-	.incbin "build/graphics/analyzed/gunknown_85c7a74_085c7a74.4bpp.lz"
-	.if (. - sLz77Block_085C7A74) != 0x73C
-	.error "sLz77Block_085C7A74 compressed size mismatch"
+	.globl sDiplomaTilemap
+	@ exact GBA LZ77 for Pokedex Diploma from editable graphics/diploma/tilemap.tilemap.u16: compressed=0x73C, decompressed=0x1000
+sDiplomaTilemap:
+	@ canonical ROM range 0x085C7A74-0x085C81AF
+	.incbin "build/graphics/diploma/tilemap.bin.lz"
+	.if (. - sDiplomaTilemap) != 0x73C
+	.error "sDiplomaTilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085C81B0: lottery_corner.s: CB2_ShowDiploma
 	.globl gLotteryCornerData_085C81B0
 gLotteryCornerData_085C81B0:
-	.globl sLz77Block_085C81B0
-	@ confirmed GBA LZ77 stream: compressed=0x9F7, decompressed=0x1A00
-sLz77Block_085C81B0:
-	@ analyzed canonical ROM range 0x085C81B0-0x085C8BA7
-	.incbin "build/graphics/analyzed/gunknown_85c81b0_085c81b0.4bpp.lz"
-	.if (. - sLz77Block_085C81B0) != 0x9F8
-	.error "sLz77Block_085C81B0 compressed size mismatch"
+	.globl sDiplomaTiles
+	@ exact GBA LZ77 for Pokedex Diploma from editable graphics/diploma/tiles.png: compressed=0x9F8, decompressed=0x1A00
+sDiplomaTiles:
+	@ canonical ROM range 0x085C81B0-0x085C8BA7
+	.incbin "build/graphics/diploma/tiles.4bpp.lz"
+	.if (. - sDiplomaTiles) != 0x9F8
+	.error "sDiplomaTiles compressed size mismatch"
 	.endif
 	.globl gText_Rom_5C8BA8
