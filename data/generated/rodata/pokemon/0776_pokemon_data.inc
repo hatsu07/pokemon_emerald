@@ -31,38 +31,26 @@ gPokedexData_0854440C: @ 0x0854440C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.2byte 0x0002, 0x2000, 0x0014, 0x0001, 0x00FF, 0x0000, 0x0000, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x0854441C: trainer_card.s: LoadCardGfx
-	.globl gTrainerCardData_0854441C
-gTrainerCardData_0854441C:
-	.globl sLz77Block_0854441C
-	@ confirmed GBA LZ77 stream: compressed=0x73D, decompressed=0x1400
-sLz77Block_0854441C:
-	@ analyzed canonical ROM range 0x0854441C-0x08544B5B
-	.incbin "build/graphics/analyzed/gunknown_854441c_0854441c.4bpp.lz"
-	.if (. - sLz77Block_0854441C) != 0x740
-	.error "sLz77Block_0854441C compressed size mismatch"
+	@ semantic exact asset for 0x0854441C: gHoennTrainerCard_Gfx
+	.globl gHoennTrainerCard_Gfx
+gHoennTrainerCard_Gfx:
+	.incbin "build/graphics/trainer_card/tiles.4bpp.lz"
+	.if (. - gHoennTrainerCard_Gfx) != 0x740
+	.error "gHoennTrainerCard_Gfx compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08544B5C: trainer_card.s: LoadCardGfx
-	.globl gTrainerCardData_08544B5C
-gTrainerCardData_08544B5C:
-	.globl sLz77Block_08544B5C
-	@ confirmed GBA LZ77 stream: compressed=0x6BE, decompressed=0x1800
-sLz77Block_08544B5C:
-	@ analyzed canonical ROM range 0x08544B5C-0x0854521B
-	.incbin "build/graphics/analyzed/gunknown_8544b5c_08544b5c.4bpp.lz"
-	.if (. - sLz77Block_08544B5C) != 0x6C0
-	.error "sLz77Block_08544B5C compressed size mismatch"
+	@ semantic exact asset for 0x08544B5C: gKantoTrainerCard_Gfx
+	.globl gKantoTrainerCard_Gfx
+gKantoTrainerCard_Gfx:
+	.incbin "build/graphics/trainer_card/frlg/tiles.4bpp.lz"
+	.if (. - gKantoTrainerCard_Gfx) != 0x6C0
+	.error "gKantoTrainerCard_Gfx compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x0854521C: trainer_card.s: LoadCardGfx
-	.globl gTrainerCardData_0854521C
-gTrainerCardData_0854521C:
-	.globl sLz77Block_0854521C
-	@ confirmed GBA LZ77 stream: compressed=0x171, decompressed=0x200
-sLz77Block_0854521C:
-	@ analyzed canonical ROM range 0x0854521C-0x0854538F
-	.incbin "build/graphics/analyzed/gunknown_854521c_0854521c.4bpp.lz"
-	.if (. - sLz77Block_0854521C) != 0x174
-	.error "sLz77Block_0854521C compressed size mismatch"
+	@ semantic exact asset for 0x0854521C: sTrainerCardStickers_Gfx
+	.globl sTrainerCardStickers_Gfx
+sTrainerCardStickers_Gfx:
+	.incbin "build/graphics/trainer_card/frlg/stickers.4bpp.lz"
+	.if (. - sTrainerCardStickers_Gfx) != 0x174
+	.error "sTrainerCardStickers_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08545390: trainer_card.s: LoadCardGfx
 	.globl gTrainerCardData_08545390
@@ -278,27 +266,19 @@ gTrainerCardData_0854620C: @ 0x0854620C
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0xDF, 0x5F, 0xFF, 0x7F, 0x0D, 0x4A, 0xDD, 0x7B, 0x7B, 0x73, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x0854622C: trainer_card.s: LoadCardGfx
-	.globl gTrainerCardData_0854622C
-gTrainerCardData_0854622C:
-	.globl sLz77Block_0854622C
-	@ confirmed GBA LZ77 stream: compressed=0x248, decompressed=0x400
-sLz77Block_0854622C:
-	@ analyzed canonical ROM range 0x0854622C-0x08546473
-	.incbin "build/graphics/analyzed/gunknown_854622c_0854622c.4bpp.lz"
-	.if (. - sLz77Block_0854622C) != 0x248
-	.error "sLz77Block_0854622C compressed size mismatch"
+	@ semantic exact asset for 0x0854622C: sHoennTrainerCardBadges_Gfx
+	.globl sHoennTrainerCardBadges_Gfx
+sHoennTrainerCardBadges_Gfx:
+	.incbin "build/graphics/trainer_card/badges.4bpp.lz"
+	.if (. - sHoennTrainerCardBadges_Gfx) != 0x248
+	.error "sHoennTrainerCardBadges_Gfx compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08546474: trainer_card.s: LoadCardGfx
-	.globl gTrainerCardData_08546474
-gTrainerCardData_08546474:
-	.globl sLz77Block_08546474
-	@ confirmed GBA LZ77 stream: compressed=0x29D, decompressed=0x400
-sLz77Block_08546474:
-	@ analyzed canonical ROM range 0x08546474-0x08546713
-	.incbin "build/graphics/analyzed/gunknown_8546474_08546474.4bpp.lz"
-	.if (. - sLz77Block_08546474) != 0x2A0
-	.error "sLz77Block_08546474 compressed size mismatch"
+	@ semantic exact asset for 0x08546474: sKantoTrainerCardBadges_Gfx
+	.globl sKantoTrainerCardBadges_Gfx
+sKantoTrainerCardBadges_Gfx:
+	.incbin "build/graphics/trainer_card/frlg/badges.4bpp.lz"
+	.if (. - sKantoTrainerCardBadges_Gfx) != 0x2A0
+	.error "sKantoTrainerCardBadges_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08546714: trainer_card.s: InitBgsAndWindows
 	.globl gTrainerCardData_08546714

@@ -11727,7 +11727,7 @@ _080C0940: .4byte 0x0000064A
 _080C0944: .4byte gPokedexData_085443FC
 _080C0948: .4byte gPokedexData_0854440C
 _080C094C: .4byte 0x0854385C
-_080C0950: .4byte gPokedexData_08543F84
+_080C0950: .4byte gPokedexSearchMenuHoenn_Tilemap
 _080C0954:
 	ldr r1, _080C0978
 	movs r0, #3

@@ -170,16 +170,12 @@ gPokemonStorageSystemData_0854BA7C: @ 0x0854BA7C
 	.byte 0x44, 0x44, 0x54, 0x77, 0x44, 0x44, 0x54, 0x77, 0x44, 0x44, 0x54, 0x77, 0x44, 0x44, 0x54, 0x77
 	.byte 0x44, 0x44, 0x54, 0x77, 0x44, 0x44, 0x54, 0x77, 0x44, 0x44, 0x54, 0x77, 0x44, 0x44, 0x54, 0x77
 	.byte 0x44, 0x44, 0x55, 0x77, 0x55, 0x55, 0x75, 0x77, 0x77, 0x77, 0x77, 0x77, 0x77, 0x77, 0x77, 0x07
-	@ pret/pokeemerald-jp direct xref for 0x0854BBFC: pokemon_storage_system.s: SetScrollingBackground
-	.globl gPokemonStorageSystemData_0854BBFC
-gPokemonStorageSystemData_0854BBFC:
-	.globl sLz77Block_0854BBFC
-	@ confirmed GBA LZ77 stream: compressed=0x95, decompressed=0x100
-sLz77Block_0854BBFC:
-	@ analyzed canonical ROM range 0x0854BBFC-0x0854BC93
-	.incbin "build/graphics/analyzed/gunknown_854bbfc_0854bbfc.4bpp.lz"
-	.if (. - sLz77Block_0854BBFC) != 0x98
-	.error "sLz77Block_0854BBFC compressed size mismatch"
+	@ semantic exact asset for 0x0854BBFC: sScrollingBg_Gfx
+	.globl sScrollingBg_Gfx
+sScrollingBg_Gfx:
+	.incbin "build/graphics/pokemon_storage/scrolling_bg.4bpp.lz"
+	.if (. - sScrollingBg_Gfx) != 0x98
+	.error "sScrollingBg_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0854BC94: pokemon_storage_system.s: SetScrollingBackground
 	.globl gPokemonStorageSystemData_0854BC94
@@ -192,16 +188,12 @@ sLz77Block_0854BC94:
 	.incbin "build/assets/lz77_raw/0854BC94.bin.lz"
 	.byte 0x60, 0x1D, 0x52, 0x56, 0xFF, 0x7F, 0x00, 0x00, 0x7B, 0x7B, 0xEB, 0x76, 0x94, 0x5A, 0x8C, 0x39
 	.byte 0x00, 0x00, 0x4A, 0x2D, 0xB7, 0x33, 0x74, 0x27, 0x94, 0x27, 0x96, 0x3B, 0x32, 0x1F, 0x52, 0x56
-	@ pret/pokeemerald-jp direct xref for 0x0854BDC0: pokemon_storage_system.s: LoadPSSMenuGfx
-	.globl gPokemonStorageSystemData_0854BDC0
-gPokemonStorageSystemData_0854BDC0:
-	.globl sLz77Block_0854BDC0
-	@ confirmed GBA LZ77 stream: compressed=0xFB, decompressed=0x500
-sLz77Block_0854BDC0:
-	@ analyzed canonical ROM range 0x0854BDC0-0x0854BEBB
-	.incbin "build/graphics/analyzed/gunknown_854bdc0_0854bdc0.4bpp.lz"
-	.if (. - sLz77Block_0854BDC0) != 0xFC
-	.error "sLz77Block_0854BDC0 compressed size mismatch"
+	@ semantic exact asset for 0x0854BDC0: sDisplayMenu_Tilemap
+	.globl sDisplayMenu_Tilemap
+sDisplayMenu_Tilemap:
+	.incbin "build/graphics/pokemon_storage/display_menu.bin.lz"
+	.if (. - sDisplayMenu_Tilemap) != 0xFC
+	.error "sDisplayMenu_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0854BEBC: pokemon_storage_system.s: sub_080C7734
 	.globl gPokemonStorageSystemData_0854BEBC
@@ -253,16 +245,12 @@ gPokemonStorageSystemData_0854BF7C: @ 0x0854BF7C
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0x00, 0x00, 0x52, 0x56, 0xFF, 0x7F, 0x00, 0x00, 0xEF, 0x7E, 0xE0, 0x7D, 0x1F, 0x42, 0x75, 0x0C
 	.byte 0xDC, 0x7F, 0xBB, 0x7B, 0xBA, 0x7B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x0854BF9C: pokemon_storage_system.s: LoadPSSMenuGfx
-	.globl gPokemonStorageSystemData_0854BF9C
-gPokemonStorageSystemData_0854BF9C:
-	.globl sLz77Block_0854BF9C
-	@ confirmed GBA LZ77 stream: compressed=0x6C0, decompressed=0x1200
-sLz77Block_0854BF9C:
-	@ analyzed canonical ROM range 0x0854BF9C-0x0854C65B
-	.incbin "build/graphics/analyzed/gunknown_854bf9c_0854bf9c.4bpp.lz"
-	.if (. - sLz77Block_0854BF9C) != 0x6C0
-	.error "sLz77Block_0854BF9C compressed size mismatch"
+	@ semantic exact asset for 0x0854BF9C: gStorageSystemMenu_Gfx
+	.globl gStorageSystemMenu_Gfx
+gStorageSystemMenu_Gfx:
+	.incbin "build/graphics/pokemon_storage/menu.4bpp.lz"
+	.if (. - gStorageSystemMenu_Gfx) != 0x6C0
+	.error "gStorageSystemMenu_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0854C65C: pokemon_storage_system.s: sub_080C9F68
 	.globl gPokemonStorageSystemData_0854C65C

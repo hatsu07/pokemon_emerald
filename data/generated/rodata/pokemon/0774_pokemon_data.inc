@@ -530,16 +530,12 @@ sPokedexUi8543De8:
 	.if (. - sPokedexUi8543De8) != 0x19C
 	.error "sPokedexUi8543De8 compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08543F84: pokedex.s: sub_080C0850
-	.globl gPokedexData_08543F84
-gPokedexData_08543F84:
-	.globl sLz77Block_08543F84
-	@ confirmed GBA LZ77 stream: compressed=0x188, decompressed=0x500
-sLz77Block_08543F84:
-	@ analyzed canonical ROM range 0x08543F84-0x0854410B
-	.incbin "build/graphics/analyzed/gunknown_8543f84_08543f84.4bpp.lz"
-	.if (. - sLz77Block_08543F84) != 0x188
-	.error "sLz77Block_08543F84 compressed size mismatch"
+	@ semantic exact asset for 0x08543F84: gPokedexSearchMenuHoenn_Tilemap
+	.globl gPokedexSearchMenuHoenn_Tilemap
+gPokedexSearchMenuHoenn_Tilemap:
+	.incbin "build/graphics/pokedex/search_menu_hoenn.bin.lz"
+	.if (. - gPokedexSearchMenuHoenn_Tilemap) != 0x188
+	.error "gPokedexSearchMenuHoenn_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0854410C: pokedex.s: sub_080C0488
 	.globl gPokedexData_0854410C

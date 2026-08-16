@@ -646,14 +646,14 @@ _080C2204:
 	.align 2, 0
 _080C2218: .4byte 0x02039988
 _080C221C: .4byte 0x00000516
-_080C2220: .4byte gTrainerCardData_0854622C
+_080C2220: .4byte sHoennTrainerCardBadges_Gfx
 _080C2224: .4byte 0x00001394
 _080C2228:
 	ldr r0, _080C2230
 	ldr r2, _080C2234
 	b _080C227E
 	.align 2, 0
-_080C2230: .4byte gTrainerCardData_08546474
+_080C2230: .4byte sKantoTrainerCardBadges_Gfx
 _080C2234: .4byte 0x00001394
 _080C2238:
 	ldr r0, _080C224C
@@ -669,14 +669,14 @@ _080C2238:
 	.align 2, 0
 _080C224C: .4byte 0x02039988
 _080C2250: .4byte 0x00000516
-_080C2254: .4byte gTrainerCardData_0854441C
+_080C2254: .4byte gHoennTrainerCard_Gfx
 _080C2258: .4byte 0x00001994
 _080C225C:
 	ldr r0, _080C2264
 	ldr r2, _080C2268
 	b _080C227E
 	.align 2, 0
-_080C2264: .4byte gTrainerCardData_08544B5C
+_080C2264: .4byte gKantoTrainerCard_Gfx
 _080C2268: .4byte 0x00001994
 _080C226C:
 	ldr r0, _080C2288
@@ -695,7 +695,7 @@ _080C227E:
 	.align 2, 0
 _080C2288: .4byte 0x02039988
 _080C228C: .4byte 0x00000516
-_080C2290: .4byte gTrainerCardData_0854521C
+_080C2290: .4byte sTrainerCardStickers_Gfx
 _080C2294: .4byte 0x00001794
 _080C2298:
 	movs r0, #0

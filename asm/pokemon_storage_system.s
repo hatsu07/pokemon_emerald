@@ -5894,7 +5894,7 @@ SetScrollingBackground: @ 0x080C9860
 	bx r0
 	.align 2, 0
 _080C988C: .4byte 0x00001F0F
-_080C9890: .4byte gPokemonStorageSystemData_0854BBFC
+_080C9890: .4byte sScrollingBg_Gfx
 _080C9894: .4byte gPokemonStorageSystemData_0854BC94
 _080C9898: .4byte 0x0600F800
 	thumb_func_end SetScrollingBackground
@@ -5950,8 +5950,8 @@ LoadPSSMenuGfx: @ 0x080C98B8
 	bx r0
 	.align 2, 0
 _080C9904: .4byte gPokemonStorageSystemData_0854C9E4
-_080C9908: .4byte gPokemonStorageSystemData_0854BF9C
-_080C990C: .4byte gPokemonStorageSystemData_0854BDC0
+_080C9908: .4byte gStorageSystemMenu_Gfx
+_080C990C: .4byte sDisplayMenu_Tilemap
 _080C9910: .4byte 0x020399A8
 _080C9914: .4byte 0x00005AC4
 	thumb_func_end LoadPSSMenuGfx
