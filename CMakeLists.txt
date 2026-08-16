@@ -396,6 +396,53 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END CAVE TRANSITION EXACT PIPELINE
 
+    # BEGIN ROULETTE JP REMAINING EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/roulette_jp_remaining/window.4bpp.lz")
+        set(ROULETTE_JP_INPUT "${CMAKE_SOURCE_DIR}/graphics/roulette/window.png")
+        set(ROULETTE_JP_PLAN "${CMAKE_SOURCE_DIR}/graphics/roulette/jp_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/roulette_jp_remaining_exact.py"
+                gfx --manifest "${ROULETTE_JP_PLAN}" --key "menu_gfx"
+                "${ROULETTE_JP_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${ROULETTE_JP_INPUT}" "${ROULETTE_JP_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/roulette_jp_remaining_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/roulette_jp_remaining/grid.bin.lz")
+        set(ROULETTE_JP_INPUT "${CMAKE_SOURCE_DIR}/graphics/roulette/grid.tilemap.u16")
+        set(ROULETTE_JP_PLAN "${CMAKE_SOURCE_DIR}/graphics/roulette/jp_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/roulette_jp_remaining_exact.py"
+                u16 --manifest "${ROULETTE_JP_PLAN}" --key "grid_tilemap"
+                "${ROULETTE_JP_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${ROULETTE_JP_INPUT}" "${ROULETTE_JP_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/roulette_jp_remaining_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/roulette_jp_remaining/wheel.bin.lz")
+        set(ROULETTE_JP_INPUT "${CMAKE_SOURCE_DIR}/graphics/roulette/wheel.tilemap.u16")
+        set(ROULETTE_JP_PLAN "${CMAKE_SOURCE_DIR}/graphics/roulette/jp_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/roulette_jp_remaining_exact.py"
+                u16 --manifest "${ROULETTE_JP_PLAN}" --key "wheel_tilemap"
+                "${ROULETTE_JP_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${ROULETTE_JP_INPUT}" "${ROULETTE_JP_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/roulette_jp_remaining_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END ROULETTE JP REMAINING EXACT PIPELINE
+
     # BEGIN MAP TILESET PNG PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/tilesets/(.+)/tiles[.]4bpp[.]lz$")

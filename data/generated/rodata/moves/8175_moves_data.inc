@@ -35,13 +35,10 @@ gLz77Asset_08DBC538: @ 0x08DBC538
 gLz77Asset_08DBC568: @ 0x08DBC568
 	.incbin "build/assets/lz77_raw/08DBC568.bin.lz"
 	@ pret/pokeemerald-jp direct xref for 0x08DBC590: roulette.s: sub_08140694
-	.globl gRouletteData_08DBC590
-gRouletteData_08DBC590:
-	.globl sLz77Block_08DBC590
-	@ confirmed GBA LZ77 stream: compressed=0x72C, decompressed=0x2000
-sLz77Block_08DBC590:
-	@ analyzed canonical ROM range 0x08DBC590-0x08DBCCBB
-	.incbin "build/graphics/analyzed/gunknown_8dbc590_08dbc590.4bpp.lz"
-	.if (. - sLz77Block_08DBC590) != 0x72C
-	.error "sLz77Block_08DBC590 compressed size mismatch"
+	.globl gRouletteMenu_Gfx
+gRouletteMenu_Gfx: @ 0x08DBC590
+	@ Semantic exact-LZ Roulette asset.
+	.incbin "build/graphics/roulette_jp_remaining/window.4bpp.lz"
+	.if (. - gRouletteMenu_Gfx) != 0x72C
+	.error "gRouletteMenu_Gfx compressed size mismatch"
 	.endif

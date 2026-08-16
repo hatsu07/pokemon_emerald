@@ -115,26 +115,20 @@ gRouletteData_085957A8: @ 0x085957A8
 	.byte 0xFF, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F
 	.byte 0xFF, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F, 0xFF, 0x7F
 	@ pret/pokeemerald-jp direct xref for 0x085959A8: roulette.s: sub_08140450
-	.globl gRouletteData_085959A8
-gRouletteData_085959A8:
-	.globl sLz77Block_085959A8
-	@ confirmed GBA LZ77 stream: compressed=0x1A3, decompressed=0x300
-sLz77Block_085959A8:
-	@ analyzed canonical ROM range 0x085959A8-0x08595B4B
-	.incbin "build/graphics/analyzed/gunknown_85959a8_085959a8.4bpp.lz"
-	.if (. - sLz77Block_085959A8) != 0x1A4
-	.error "sLz77Block_085959A8 compressed size mismatch"
+	.globl sGrid_Tilemap
+sGrid_Tilemap: @ 0x085959A8
+	@ Semantic exact-LZ Roulette asset.
+	.incbin "build/graphics/roulette_jp_remaining/grid.bin.lz"
+	.if (. - sGrid_Tilemap) != 0x1A4
+	.error "sGrid_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08595B4C: roulette.s: sub_08140694
-	.globl gRouletteData_08595B4C
-gRouletteData_08595B4C:
-	.globl sLz77Block_08595B4C
-	@ confirmed GBA LZ77 stream: compressed=0x19F, decompressed=0x400
-sLz77Block_08595B4C:
-	@ analyzed canonical ROM range 0x08595B4C-0x08595CEB
-	.incbin "build/graphics/analyzed/gunknown_8595b4c_08595b4c.4bpp.lz"
-	.if (. - sLz77Block_08595B4C) != 0x1A0
-	.error "sLz77Block_08595B4C compressed size mismatch"
+	.globl sWheel_Tilemap
+sWheel_Tilemap: @ 0x08595B4C
+	@ Semantic exact-LZ Roulette asset.
+	.incbin "build/graphics/roulette_jp_remaining/wheel.bin.lz"
+	.if (. - sWheel_Tilemap) != 0x1A0
+	.error "sWheel_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08595CEC: roulette.s: sub_08140450
 	.globl gRouletteData_08595CEC

@@ -216,7 +216,7 @@ _081404C8: .4byte 0x0000117C
 _081404CC: .4byte 0x0000317C
 _081404D0: .4byte gRouletteData_08595CF8
 _081404D4: .4byte 0x0203A858
-_081404D8: .4byte gRouletteData_085959A8
+_081404D8: .4byte sGrid_Tilemap
 _081404DC: .4byte 0x0000397C
 	thumb_func_end sub_08140450
 
@@ -506,7 +506,7 @@ _0814072A:
 	b _081408C0
 	.align 2, 0
 _08140758: .4byte gRouletteData_085957A8
-_0814075C: .4byte gRouletteData_08DBC590
+_0814075C: .4byte gRouletteMenu_Gfx
 _08140760: .4byte gRouletteWheel_Gfx
 _08140764:
 	bl free_temp_tile_data_buffers_if_possible
@@ -523,7 +523,7 @@ _08140770:
 	bl CopyToBgTilemapBuffer
 	b _081408C0
 	.align 2, 0
-_08140784: .4byte gRouletteData_08595B4C
+_08140784: .4byte sWheel_Tilemap
 _08140788:
 	movs r0, #0
 	bl sub_08142CD8
