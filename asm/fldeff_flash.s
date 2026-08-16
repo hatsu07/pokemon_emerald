@@ -457,9 +457,9 @@ sub_08137490: @ 0x08137490
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0813750C: .4byte gFldeffFlashData_085924DC
+_0813750C: .4byte sCaveTransitionTiles
 _08137510: .4byte 0x0600C000
-_08137514: .4byte gFldeffFlashData_085922FC
+_08137514: .4byte sCaveTransitionTilemap
 _08137518: .4byte 0x0600F800
 _0813751C: .4byte gFldeffFlashData_0859229C
 _08137520: .4byte gFldeffFlashData_085922EC
@@ -674,9 +674,9 @@ sub_08137648: @ 0x08137648
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081376C4: .4byte gFldeffFlashData_085924DC
+_081376C4: .4byte sCaveTransitionTiles
 _081376C8: .4byte 0x0600C000
-_081376CC: .4byte gFldeffFlashData_085922FC
+_081376CC: .4byte sCaveTransitionTilemap
 _081376D0: .4byte 0x0600F800
 _081376D4: .4byte 0x00001F0C
 _081376D8: .4byte gFldeffFlashData_0859229C

@@ -354,6 +354,48 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END BERRY TAG EXACT PIPELINE
 
+    # BEGIN CAVE TRANSITION EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/cave_transition/tiles.4bpp.lz")
+        set(CAVE_TRANSITION_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/cave_transition/tiles.png")
+        set(CAVE_TRANSITION_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/cave_transition/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/cave_transition_exact.py"
+                gfx --manifest "${CAVE_TRANSITION_PLAN}" --key "tiles"
+                "${CAVE_TRANSITION_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CAVE_TRANSITION_INPUT}"
+                "${CAVE_TRANSITION_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/cave_transition_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/cave_transition/tilemap.bin.lz")
+        set(CAVE_TRANSITION_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/cave_transition/tilemap.tilemap.u16")
+        set(CAVE_TRANSITION_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/cave_transition/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/cave_transition_exact.py"
+                u16 --manifest "${CAVE_TRANSITION_PLAN}" --key "tilemap"
+                "${CAVE_TRANSITION_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CAVE_TRANSITION_INPUT}"
+                "${CAVE_TRANSITION_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/cave_transition_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END CAVE TRANSITION EXACT PIPELINE
+
     # BEGIN MAP TILESET PNG PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/tilesets/(.+)/tiles[.]4bpp[.]lz$")

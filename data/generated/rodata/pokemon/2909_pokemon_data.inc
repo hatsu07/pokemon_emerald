@@ -328,26 +328,20 @@ gFldeffFlashData_085922EC: @ 0x085922EC
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.byte 0x10, 0x42, 0x52, 0x4A, 0x94, 0x52, 0xD6, 0x5A, 0x18, 0x63, 0x5A, 0x6B, 0x9C, 0x73, 0xFF, 0x7F
 	@ pret/pokeemerald-jp direct xref for 0x085922FC: fldeff_flash.s: sub_08137490, sub_08137648
-	.globl gFldeffFlashData_085922FC
-gFldeffFlashData_085922FC:
-	.globl sLz77Block_085922FC
-	@ confirmed GBA LZ77 stream: compressed=0x1E0, decompressed=0x800
-sLz77Block_085922FC:
-	@ analyzed canonical ROM range 0x085922FC-0x085924DB
-	.incbin "build/graphics/analyzed/gunknown_85922fc_085922fc.4bpp.lz"
-	.if (. - sLz77Block_085922FC) != 0x1E0
-	.error "sLz77Block_085922FC compressed size mismatch"
+	.globl sCaveTransitionTilemap
+sCaveTransitionTilemap: @ 0x085922FC
+	@ Semantic exact-LZ cave transition asset.
+	.incbin "build/graphics/cave_transition/tilemap.bin.lz"
+	.if (. - sCaveTransitionTilemap) != 0x1E0
+	.error "sCaveTransitionTilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085924DC: fldeff_flash.s: sub_08137490, sub_08137648
-	.globl gFldeffFlashData_085924DC
-gFldeffFlashData_085924DC:
-	.globl sLz77Block_085924DC
-	@ confirmed GBA LZ77 stream: compressed=0xB1, decompressed=0x400
-sLz77Block_085924DC:
-	@ analyzed canonical ROM range 0x085924DC-0x0859258F
-	.incbin "build/graphics/analyzed/gunknown_85924dc_085924dc.4bpp.lz"
-	.if (. - sLz77Block_085924DC) != 0xB4
-	.error "sLz77Block_085924DC compressed size mismatch"
+	.globl sCaveTransitionTiles
+sCaveTransitionTiles: @ 0x085924DC
+	@ Semantic exact-LZ cave transition asset.
+	.incbin "build/graphics/cave_transition/tiles.4bpp.lz"
+	.if (. - sCaveTransitionTiles) != 0xB4
+	.error "sCaveTransitionTiles compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08592590: time_events.s: UpdateShoalTideFlag
 	.globl gTimeEventsData_08592590
