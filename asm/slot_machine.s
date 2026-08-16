@@ -7825,7 +7825,7 @@ _0812DF62:
 	.align 2, 0
 _0812DF6C: .4byte 0x0203A800
 _0812DF70: .4byte 0x03005B60
-_0812DF74: .4byte gSlotMachineData_08584988
+_0812DF74: .4byte sDigitalDisplayScenes
 	thumb_func_end sub_0812DEF4
 
 	thumb_func_start sub_0812DF78
@@ -7947,7 +7947,7 @@ _0812E03E:
 _0812E050: .4byte 0x0203A800
 _0812E054: .4byte 0x03005B60
 _0812E058: .4byte 0x0000FFFF
-_0812E05C: .4byte gSlotMachineData_085849A4
+_0812E05C: .4byte sDigitalDisplaySceneExitCallbacks
 _0812E060: .4byte 0x020205AC
 	thumb_func_end sub_0812DFEC
 
@@ -9980,7 +9980,7 @@ sub_0812EFA8: @ 0x0812EFA8
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0812EFE4: .4byte gSlotMachineData_0858484C
+_0812EFE4: .4byte sDigitalDisplay_SpriteCallbacks
 _0812EFE8: .4byte gSlotMachineData_085847BE
 	thumb_func_end sub_0812EFA8
 
