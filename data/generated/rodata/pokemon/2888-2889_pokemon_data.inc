@@ -1,30 +1,19 @@
 	@ pret/pokeemerald-jp direct xref for 0x085843A8: slot_machine.s: SlotMachineSetup_0_0
-	.globl gSlotMachineData_085843A8
-gSlotMachineData_085843A8: @ 0x085843A8
-	@ analyzed canonical ROM range 0x085843A8-0x085843B7
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	.globl sSlotMachineBgTemplates
+sSlotMachineBgTemplates: @ 0x085843A8
+	@ semantic: 4 SlotMachine BG templates
 	.2byte 0x01F8, 0x0000, 0x11C5, 0x0000, 0x21D6, 0x0000, 0x11E7, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x085843B8: slot_machine.s: SlotMachineSetup_0_0
-	.globl gSlotMachineData_085843B8
-gSlotMachineData_085843B8: @ 0x085843B8
-	@ analyzed canonical ROM range 0x085843B8-0x085843C7
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	.globl sSlotMachineWindowTemplates
+sSlotMachineWindowTemplates: @ 0x085843B8
+	@ semantic: SlotMachine message window templates
 	.2byte 0x0400, 0x160F, 0x0F04, 0x01A8, 0x00FF, 0x0000, 0x0000, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x085843C8: slot_machine.s: InfoBox_DrawWindow
-	.globl gSlotMachineData_085843C8
-gSlotMachineData_085843C8: @ 0x085843C8
-	@ analyzed canonical ROM range 0x085843C8-0x085843CF
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	.globl sSlotMachineInfoBoxWindowTemplate
+sSlotMachineInfoBoxWindowTemplate: @ 0x085843C8
+	@ semantic: SlotMachine InfoBox window template
 	.2byte 0x0200, 0x1204, 0x0D0C, 0x0001
-	@ pret/pokeemerald-jp direct xref for 0x085843D0: slot_machine.s: InfoBox_AddText
-	.globl gSlotMachineData_085843D0
-gSlotMachineData_085843D0: @ 0x085843D0
-	@ analyzed canonical ROM range 0x085843D0-0x085843D3
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	.globl sSlotMachineReelTimeHelpColors
+sSlotMachineReelTimeHelpColors: @ 0x085843D0
+	@ semantic: ReelTime help text colors
 	.byte 0x03, 0x01, 0x02, 0x00
 	.globl sSlotActions
 sSlotActions: @ 0x085843D4
@@ -204,115 +193,71 @@ sInfoBoxTasks: @ 0x08584558
 sDigitalDisplayTasks: @ 0x08584594
 	.4byte DigitalDisplay_Idle
 	@ pret/pokeemerald-jp direct xref for 0x08584598: slot_machine.s: sub_0812EB58
-	.globl gSlotMachineData_08584598
-gSlotMachineData_08584598: @ 0x08584598
-	@ analyzed canonical ROM range 0x08584598-0x08584599
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x2
+	.globl sSlotMachineReelTimePikachuAuraFlashColors
+sSlotMachineReelTimePikachuAuraFlashColors: @ 0x08584598
+	@ semantic: Pikachu aura palette flash strengths
 	.byte 0x10, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x0858459A: slot_machine.s: sub_0812ECA4
-	.globl gSlotMachineData_0858459A
-gSlotMachineData_0858459A: @ 0x0858459A
-	@ analyzed canonical ROM range 0x0858459A-0x085845A1
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	.globl sSlotMachineReelTimeDuckAngles
+sSlotMachineReelTimeDuckAngles: @ 0x0858459A
+	@ semantic: initial orbit angles for 4 ReelTime confusion ducks
 	.2byte 0x0000, 0x0040, 0x0080, 0x00C0
-	@ pret/pokeemerald-jp direct xref for 0x085845A2: slot_machine.s: sub_0812F090
-	.globl gSlotMachineData_085845A2
-gSlotMachineData_085845A2: @ 0x085845A2
-	@ analyzed canonical ROM range 0x085845A2-0x085845A9
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	.globl sSlotMachineDigitalDisplaySmokeTargetX
+sSlotMachineDigitalDisplaySmokeTargetX: @ 0x085845A2
+	@ semantic: Digital Display smoke target X offsets
 	.byte 0x04, 0x00, 0xFC, 0xFF, 0x04, 0x00, 0xFC, 0xFF
-	@ pret/pokeemerald-jp direct xref for 0x085845AA: slot_machine.s: sub_0812F090
-	.globl gSlotMachineData_085845AA
-gSlotMachineData_085845AA: @ 0x085845AA
-	@ analyzed canonical ROM range 0x085845AA-0x085845B1
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	.globl sSlotMachineDigitalDisplaySmokeTargetY
+sSlotMachineDigitalDisplaySmokeTargetY: @ 0x085845AA
+	@ semantic: Digital Display smoke target Y offsets
 	.byte 0x04, 0x00, 0x04, 0x00, 0xFC, 0xFF, 0xFC, 0xFF
-	@ pret/pokeemerald-jp direct xref for 0x085845B2: slot_machine.s: sub_0812F524
-	.globl gSlotMachineData_085845B2
-gSlotMachineData_085845B2: @ 0x085845B2
-	@ analyzed canonical ROM range 0x085845B2-0x085845C1
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	.globl sSlotMachineDigitalDisplayRegBonusLetterXOffsets
+sSlotMachineDigitalDisplayRegBonusLetterXOffsets: @ 0x085845B2
+	@ semantic: REG BONUS letter initial X offsets
 	.2byte 0x0000, 0xFFD8, 0x0000, 0x0000, 0x0030, 0x0000, 0x0018, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x085845C2: slot_machine.s: sub_0812F524
-	.globl gSlotMachineData_085845C2
-gSlotMachineData_085845C2: @ 0x085845C2
-	@ analyzed canonical ROM range 0x085845C2-0x085845D1
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	.globl sSlotMachineDigitalDisplayRegBonusLetterYOffsets
+sSlotMachineDigitalDisplayRegBonusLetterYOffsets: @ 0x085845C2
+	@ semantic: REG BONUS letter initial Y offsets
 	.byte 0xE0, 0xFF, 0x00, 0x00, 0xE0, 0xFF, 0xD0, 0xFF, 0x00, 0x00, 0xD0, 0xFF, 0x00, 0x00, 0xD0, 0xFF
-	@ pret/pokeemerald-jp direct xref for 0x085845D2: slot_machine.s: sub_0812F524
-	.globl gSlotMachineData_085845D2
-gSlotMachineData_085845D2: @ 0x085845D2
-	@ analyzed canonical ROM range 0x085845D2-0x085845E1
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	.globl sSlotMachineDigitalDisplayRegBonusLetterDelays
+sSlotMachineDigitalDisplayRegBonusLetterDelays: @ 0x085845D2
+	@ semantic: REG BONUS letter entry delays
 	.2byte 0x0010, 0x000C, 0x0010, 0x0000, 0x0000, 0x0004, 0x0008, 0x0008
-	@ pret/pokeemerald-jp direct xref for 0x085845E2: slot_machine.s: sub_0812F5F0
-	.globl gSlotMachineData_085845E2
-gSlotMachineData_085845E2: @ 0x085845E2
-	@ analyzed canonical ROM range 0x085845E2-0x085845F1
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	.globl sSlotMachineDigitalDisplayBigBonusAngles
+sSlotMachineDigitalDisplayBigBonusAngles: @ 0x085845E2
+	@ semantic: BIG BONUS per-letter trig angles
 	.2byte 0x00A0, 0x00C0, 0x00E0, 0x0068, 0x0050, 0x0040, 0x0030, 0x0018
-	@ pret/pokeemerald-jp direct xref for 0x085845F2: slot_machine.s: GetNearbyTag_Quantized
-	.globl gSlotMachineData_085845F2
-gSlotMachineData_085845F2: @ 0x085845F2
-	@ analyzed canonical ROM range 0x085845F2-0x08584630
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x3F
+	.globl sSlotMachineReelSymbols
+sSlotMachineReelSymbols: @ 0x085845F2
+	@ semantic: 3 reels x 21 symbols
 	.byte 0x00, 0x04, 0x02, 0x06, 0x05, 0x03, 0x01, 0x03, 0x04, 0x05, 0x06, 0x02, 0x00, 0x05, 0x03, 0x06
 	.byte 0x02, 0x01, 0x05, 0x03, 0x06, 0x00, 0x04, 0x06, 0x03, 0x02, 0x04, 0x06, 0x05, 0x05, 0x03, 0x01
 	.byte 0x03, 0x06, 0x04, 0x02, 0x03, 0x06, 0x04, 0x03, 0x06, 0x04, 0x00, 0x05, 0x01, 0x06, 0x03, 0x02
 	.byte 0x06, 0x03, 0x05, 0x02, 0x06, 0x03, 0x02, 0x05, 0x06, 0x03, 0x02, 0x05, 0x06, 0x03, 0x04
-	@ pret/pokeemerald-jp direct xref for 0x08584631: slot_machine.s: GetNearbyReelTimeTag
-	.globl gSlotMachineData_08584631
-gSlotMachineData_08584631: @ 0x08584631
-	@ analyzed canonical ROM range 0x08584631-0x08584637
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x7
+	.globl sSlotMachineReelTimeSymbols
+sSlotMachineReelTimeSymbols: @ 0x08584631
+	@ semantic: ReelTime reel symbol order
 	.byte 0x01, 0x00, 0x05, 0x04, 0x03, 0x02, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08584638: slot_machine.s: SlotMachineSetup_0_1
-	.globl gSlotMachineData_08584638
-gSlotMachineData_08584638: @ 0x08584638
-	@ analyzed canonical ROM range 0x08584638-0x08584643
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	.globl sSlotMachineInitialReelPositions
+sSlotMachineInitialReelPositions: @ 0x08584638
+	@ semantic: initial reel positions [3 reels][normal/lucky]
 	.2byte 0x0000, 0x0006, 0x0000, 0x000A, 0x0000, 0x0002
-	@ pret/pokeemerald-jp direct xref for 0x08584644: slot_machine.s: IsThisRoundLucky
-	.globl gSlotMachineData_08584644
-gSlotMachineData_08584644: @ 0x08584644
-	@ analyzed canonical ROM range 0x08584644-0x08584655
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x12
+	.globl sSlotMachineSpecialDrawOdds
+sSlotMachineSpecialDrawOdds: @ 0x08584644
+	@ semantic: special-bias draw odds [machine][bet]
 	.2byte 0x0101, 0x010C, 0x0E01, 0x0202, 0x020E, 0x0E02, 0x0302, 0x0310
 	.2byte 0x1003
-	@ pret/pokeemerald-jp direct xref for 0x08584656: slot_machine.s: AttemptsAtLuckyFlags_Top3
-	.globl gSlotMachineData_08584656
-gSlotMachineData_08584656: @ 0x08584656
-	@ analyzed canonical ROM range 0x08584656-0x08584667
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x12
+	.globl sSlotMachineBiasProbabilities_Special
+sSlotMachineBiasProbabilities_Special: @ 0x08584656
+	@ semantic: special bias probabilities [bias][machine]
 	.2byte 0x1919, 0x281E, 0x3228, 0x1919, 0x1E1E, 0x2323, 0x1919, 0x191E
 	.2byte 0x1E19
-	@ pret/pokeemerald-jp direct xref for 0x08584668: slot_machine.s: AttemptsAtLuckyFlags_NotTop3
-	.globl gSlotMachineData_08584668
-gSlotMachineData_08584668: @ 0x08584668
-	@ analyzed canonical ROM range 0x08584668-0x08584685
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x1E
+	.globl sSlotMachineBiasProbabilities_Regular
+sSlotMachineBiasProbabilities_Regular: @ 0x08584668
+	@ semantic: regular bias probabilities [bias][machine]
 	.2byte 0x1914, 0x1419, 0x1919, 0x0F0C, 0x120F, 0x1613, 0x1919, 0x1E19
 	.2byte 0x281E, 0x1919, 0x1414, 0x0F0F, 0x2828, 0x2323, 0x2828
-	@ pret/pokeemerald-jp direct xref for 0x08584686: slot_machine.s: GetReelTimeProbability
-	.globl gSlotMachineData_08584686
-gSlotMachineData_08584686: @ 0x08584686
-	@ analyzed canonical ROM range 0x08584686-0x085846EB
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x66
+	.globl sSlotMachineReelTimeProbabilities_NormalGame
+sSlotMachineReelTimeProbabilities_NormalGame: @ 0x08584686
+	@ semantic: ReelTime draw probabilities for normal games
 	.byte 0xF3, 0xF3, 0xF3, 0x50, 0x50, 0x50, 0x50, 0x28, 0x28, 0x28, 0x28, 0x28, 0x28, 0x05, 0x05, 0x05
 	.byte 0x05, 0x05, 0x05, 0x05, 0x96, 0x96, 0x96, 0x96, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x64, 0x64
 	.byte 0x64, 0x05, 0x04, 0x04, 0x04, 0x14, 0x14, 0x14, 0x14, 0x50, 0x50, 0x50, 0x50, 0x50, 0x50, 0x64
@@ -320,12 +265,9 @@ gSlotMachineData_08584686: @ 0x08584686
 	.byte 0x2D, 0x2D, 0x2D, 0x64, 0x01, 0x01, 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02
 	.byte 0x02, 0x05, 0x05, 0x05, 0x64, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
 	.byte 0x01, 0x01, 0x01, 0x01, 0x01, 0x06
-	@ pret/pokeemerald-jp direct xref for 0x085846EC: slot_machine.s: GetReelTimeProbability
-	.globl gSlotMachineData_085846EC
-gSlotMachineData_085846EC: @ 0x085846EC
-	@ analyzed canonical ROM range 0x085846EC-0x08584751
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x66
+	.globl sSlotMachineReelTimeProbabilities_LuckyGame
+sSlotMachineReelTimeProbabilities_LuckyGame: @ 0x085846EC
+	@ semantic: ReelTime draw probabilities for lucky games
 	.2byte 0xF3F3, 0xC8F3, 0xC8C8, 0xA0C8, 0xA0A0, 0xA0A0, 0x46A0, 0x4646
 	.2byte 0x0505, 0x0505, 0x1919, 0x1919, 0x0505, 0x0505, 0x0505, 0x0202
 	.2byte 0x0602, 0x0404, 0x1904, 0x1919, 0x1E19, 0x1E1E, 0x1E1E, 0x281E
@@ -333,78 +275,48 @@ gSlotMachineData_085846EC: @ 0x085846EC
 	.2byte 0x6464, 0x3264, 0x0101, 0x0201, 0x0202, 0x1E02, 0x1E1E, 0x1E1E
 	.2byte 0x281E, 0x2828, 0x0164, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101
 	.2byte 0x0101, 0x0404, 0x3C04
-	@ pret/pokeemerald-jp direct xref for 0x08584752: slot_machine.s: SkipToReeltimeAction14
-	.globl gSlotMachineData_08584752
-gSlotMachineData_08584752: @ 0x08584752
-	@ analyzed canonical ROM range 0x08584752-0x0858475B
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xA
+	.globl sSlotMachineReelTimeExplodeProbability
+sSlotMachineReelTimeExplodeProbability: @ 0x08584752
+	@ semantic: ReelTime explosion probability by check
 	.2byte 0x0080, 0x00AF, 0x00C8, 0x00E1, 0x0100
-	@ pret/pokeemerald-jp direct xref for 0x0858475C: slot_machine.s: SlowReelSpeed
-	.globl gSlotMachineData_0858475C
-gSlotMachineData_0858475C: @ 0x0858475C
-	@ analyzed canonical ROM range 0x0858475C-0x0858476F
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x14
+	.globl sSlotMachineReelTimeSpeedProbabilities
+sSlotMachineReelTimeSpeedProbabilities: @ 0x0858475C
+	@ semantic: half/quarter-speed probabilities
 	.2byte 0x000A, 0x0005, 0x000A, 0x000A, 0x000A, 0x000F, 0x000A, 0x0019
 	.2byte 0x000A, 0x0023
-	@ pret/pokeemerald-jp direct xref for 0x08584770: slot_machine.s: SlowReelSpeed
-	.globl gSlotMachineData_08584770
-gSlotMachineData_08584770: @ 0x08584770
-	@ analyzed canonical ROM range 0x08584770-0x08584779
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xA
+	.globl sSlotMachineQuarterSpeedProbabilityBoost
+sSlotMachineQuarterSpeedProbabilityBoost: @ 0x08584770
+	@ semantic: quarter-speed probability boost by ReelTime spins used
 	.2byte 0x0000, 0x0005, 0x000A, 0x000F, 0x0014
-	@ pret/pokeemerald-jp direct xref for 0x0858477A: slot_machine.s: GetBiasTag
-	.globl gSlotMachineData_0858477A
-gSlotMachineData_0858477A: @ 0x0858477A
-	@ analyzed canonical ROM range 0x0858477A-0x08584781
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	.globl sSlotMachineBiasSymbols
+sSlotMachineBiasSymbols: @ 0x0858477A
+	@ semantic: symbol corresponding to each bias bit
 	.2byte 0x0406, 0x0203, 0x0005, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x08584782: slot_machine.s: DrawLuckyFlags
-	.globl gSlotMachineData_08584782
-gSlotMachineData_08584782: @ 0x08584782
-	@ analyzed canonical ROM range 0x08584782-0x08584787
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x6
+	.globl sSlotMachineBiasesSpecial
+sSlotMachineBiasesSpecial: @ 0x08584782
+	@ semantic: special bias flags
 	.byte 0x80, 0x00, 0x20, 0x00, 0x40, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08584788: slot_machine.s: DrawLuckyFlags
-	.globl gSlotMachineData_08584788
-gSlotMachineData_08584788: @ 0x08584788
-	@ analyzed canonical ROM range 0x08584788-0x08584791
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xA
+	.globl sSlotMachineBiasesRegular
+sSlotMachineBiasesRegular: @ 0x08584788
+	@ semantic: regular bias flags
 	.2byte 0x0010, 0x0008, 0x0004, 0x0002, 0x0001
-	@ pret/pokeemerald-jp direct xref for 0x08584792: slot_machine.s: GetMatchFromSymbolsInRow
-	.globl gSlotMachineData_08584792
-gSlotMachineData_08584792: @ 0x08584792
-	@ analyzed canonical ROM range 0x08584792-0x08584799
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	.globl sSlotMachineSymbolToMatch
+sSlotMachineSymbolToMatch: @ 0x08584792
+	@ semantic: reel symbol to match-type lookup
 	.2byte 0x0807, 0x0304, 0x0500, 0x0002
-	@ pret/pokeemerald-jp direct xref for 0x0858479A: slot_machine.s: CheckMatch_CenterRow, CheckMatch_Diagonals, CheckMatch_TopAndBottom
-	.globl gSlotMachineData_0858479A
-gSlotMachineData_0858479A: @ 0x0858479A
-	@ analyzed canonical ROM range 0x0858479A-0x085847AB
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x12
+	.globl sSlotMachineMatchFlags
+sSlotMachineMatchFlags: @ 0x0858479A
+	@ semantic: match type to bit flag
 	.2byte 0x0001, 0x0002, 0x0004, 0x0008, 0x0010, 0x0020, 0x0040, 0x0080
 	.2byte 0x0100
-	@ pret/pokeemerald-jp direct xref for 0x085847AC: slot_machine.s: CheckMatch_CenterRow, CheckMatch_Diagonals, CheckMatch_TopAndBottom
-	.globl gSlotMachineData_085847AC
-gSlotMachineData_085847AC: @ 0x085847AC
-	@ analyzed canonical ROM range 0x085847AC-0x085847BD
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x12
+	.globl sSlotMachinePayouts
+sSlotMachinePayouts: @ 0x085847AC
+	@ semantic: match type to coin payout
 	.2byte 0x0002, 0x0004, 0x0000, 0x0006, 0x000C, 0x0003, 0x005A, 0x012C
 	.2byte 0x012C
-	@ pret/pokeemerald-jp direct xref for 0x085847BE: slot_machine.s: sub_0812EFA8
-	.globl gSlotMachineData_085847BE
-gSlotMachineData_085847BE: @ 0x085847BE
-	@ analyzed canonical ROM range 0x085847BE-0x0858484B
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8E
+	.globl sSlotMachineDigitalDisplaySpriteCoords
+sSlotMachineDigitalDisplaySpriteCoords: @ 0x085847BE
+	@ semantic: Digital Display sprite coordinates
 	.2byte 0x00D0, 0x0038, 0x00B8, 0x0000, 0x00C8, 0x0008, 0x00D8, 0x0010
 	.2byte 0x00E8, 0x0018, 0x00D0, 0x0048, 0x00D0, 0x0008, 0x00D0, 0x0040
 	.2byte 0x00D0, 0x0038, 0x00C0, 0x0058, 0x00E0, 0x0058, 0x00C0, 0x0078
@@ -414,7 +326,6 @@ gSlotMachineData_085847BE: @ 0x085847BE
 	.2byte 0x00DC, 0x0048, 0x00E8, 0x0048, 0x00BC, 0x0034, 0x00D0, 0x0034
 	.2byte 0x00E4, 0x0034, 0x00B8, 0x0048, 0x00C4, 0x0048, 0x00D0, 0x0048
 	.2byte 0x00DC, 0x0048, 0x00E8, 0x0048, 0x0000, 0x0000, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x0858484C: slot_machine.s: sub_0812EFA8
 	@ Digital Display callback / scene data
 	.globl sDigitalDisplay_SpriteCallbacks
 sDigitalDisplay_SpriteCallbacks: @ 0x0858484C

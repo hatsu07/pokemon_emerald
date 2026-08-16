@@ -334,8 +334,8 @@ SlotMachineSetup_0_0: @ 0x0812A760
 	bx r0
 	.align 2, 0
 _0812A7A0: .4byte 0x05006000
-_0812A7A4: .4byte gSlotMachineData_085843A8
-_0812A7A8: .4byte gSlotMachineData_085843B8
+_0812A7A4: .4byte sSlotMachineBgTemplates
+_0812A7A8: .4byte sSlotMachineWindowTemplates
 	thumb_func_end SlotMachineSetup_0_0
 
 	thumb_func_start SlotMachineSetup_6_0
@@ -589,7 +589,7 @@ _0812A944:
 	bx r0
 	.align 2, 0
 _0812A9B4: .4byte 0x0203A800
-_0812A9B8: .4byte gSlotMachineData_08584638
+_0812A9B8: .4byte sSlotMachineInitialReelPositions
 	thumb_func_end SlotMachineSetup_0_1
 
 	thumb_func_start SlotMachineSetup_3_0
@@ -2087,8 +2087,8 @@ _0812B55A:
 	bx r0
 	.align 2, 0
 _0812B560: .4byte 0x0203A800
-_0812B564: .4byte gSlotMachineData_08584782
-_0812B568: .4byte gSlotMachineData_08584788
+_0812B564: .4byte sSlotMachineBiasesSpecial
+_0812B568: .4byte sSlotMachineBiasesRegular
 	thumb_func_end DrawLuckyFlags
 
 	thumb_func_start SetLuckySpins
@@ -2128,7 +2128,7 @@ _0812B598:
 	ldrb r0, [r0]
 	b _0812B5BA
 	.align 2, 0
-_0812B5A8: .4byte gSlotMachineData_0858477A
+_0812B5A8: .4byte sSlotMachineBiasSymbols
 _0812B5AC:
 	lsrs r1, r1, #1
 	adds r0, r2, #1
@@ -2166,7 +2166,7 @@ IsThisRoundLucky: @ 0x0812B5C0
 	movs r0, #0
 	b _0812B5F6
 	.align 2, 0
-_0812B5EC: .4byte gSlotMachineData_08584644
+_0812B5EC: .4byte sSlotMachineSpecialDrawOdds
 _0812B5F0: .4byte 0x0203A800
 _0812B5F4:
 	movs r0, #1
@@ -2211,7 +2211,7 @@ _0812B630:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0812B63C: .4byte gSlotMachineData_08584656
+_0812B63C: .4byte sSlotMachineBiasProbabilities_Special
 _0812B640: .4byte 0x0203A800
 	thumb_func_end AttemptsAtLuckyFlags_Top3
 
@@ -2252,7 +2252,7 @@ _0812B654:
 	adds r3, r0, #0
 	b _0812B6AE
 	.align 2, 0
-_0812B688: .4byte gSlotMachineData_08584668
+_0812B688: .4byte sSlotMachineBiasProbabilities_Regular
 _0812B68C: .4byte 0x0203A800
 _0812B690:
 	asrs r0, r2, #0x10
@@ -2309,7 +2309,7 @@ GetReelTimeProbability: @ 0x0812B6DC
 	b _0812B6FA
 	.align 2, 0
 _0812B6F0: .4byte 0x0203A800
-_0812B6F4: .4byte gSlotMachineData_085846EC
+_0812B6F4: .4byte sSlotMachineReelTimeProbabilities_LuckyGame
 _0812B6F8:
 	ldr r0, _0812B70C
 _0812B6FA:
@@ -2322,7 +2322,7 @@ _0812B6FA:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0812B70C: .4byte gSlotMachineData_08584686
+_0812B70C: .4byte sSlotMachineReelTimeProbabilities_NormalGame
 	thumb_func_end GetReelTimeProbability
 
 	thumb_func_start GetReeltimeDraw
@@ -2394,7 +2394,7 @@ SkipToReeltimeAction14: @ 0x0812B770
 	movs r0, #0
 	b _0812B796
 	.align 2, 0
-_0812B790: .4byte gSlotMachineData_08584752
+_0812B790: .4byte sSlotMachineReelTimeExplodeProbability
 _0812B794:
 	movs r0, #1
 _0812B796:
@@ -2450,7 +2450,7 @@ _0812B7D2:
 	movs r0, #4
 	b _0812B832
 	.align 2, 0
-_0812B7F4: .4byte gSlotMachineData_0858475C
+_0812B7F4: .4byte sSlotMachineReelTimeSpeedProbabilities
 _0812B7F8:
 	bl Random
 	lsls r0, r0, #0x10
@@ -2475,7 +2475,7 @@ _0812B7F8:
 	movs r0, #8
 	b _0812B832
 	.align 2, 0
-_0812B828: .4byte gSlotMachineData_08584770
+_0812B828: .4byte sSlotMachineQuarterSpeedProbabilityBoost
 _0812B82C: .4byte 0x0203A800
 _0812B830:
 	movs r0, #2
@@ -2565,8 +2565,8 @@ _0812B8CC:
 	bx r0
 	.align 2, 0
 _0812B8D4: .4byte 0x0203A800
-_0812B8D8: .4byte gSlotMachineData_085847AC
-_0812B8DC: .4byte gSlotMachineData_0858479A
+_0812B8D8: .4byte sSlotMachinePayouts
+_0812B8DC: .4byte sSlotMachineMatchFlags
 	thumb_func_end CheckMatch_CenterRow
 
 	thumb_func_start CheckMatch_TopAndBottom
@@ -2665,8 +2665,8 @@ _0812B99E:
 	bx r0
 	.align 2, 0
 _0812B9A4: .4byte 0x0203A800
-_0812B9A8: .4byte gSlotMachineData_085847AC
-_0812B9AC: .4byte gSlotMachineData_0858479A
+_0812B9A8: .4byte sSlotMachinePayouts
+_0812B9AC: .4byte sSlotMachineMatchFlags
 	thumb_func_end CheckMatch_TopAndBottom
 
 	thumb_func_start CheckMatch_Diagonals
@@ -2763,8 +2763,8 @@ _0812BA6A:
 	bx r0
 	.align 2, 0
 _0812BA70: .4byte 0x0203A800
-_0812BA74: .4byte gSlotMachineData_085847AC
-_0812BA78: .4byte gSlotMachineData_0858479A
+_0812BA74: .4byte sSlotMachinePayouts
+_0812BA78: .4byte sSlotMachineMatchFlags
 	thumb_func_end CheckMatch_Diagonals
 
 	thumb_func_start GetMatchFromSymbolsInRow
@@ -2785,7 +2785,7 @@ GetMatchFromSymbolsInRow: @ 0x0812BA7C
 	ldrb r0, [r0]
 	b _0812BAC6
 	.align 2, 0
-_0812BA9C: .4byte gSlotMachineData_08584792
+_0812BA9C: .4byte sSlotMachineSymbolToMatch
 _0812BAA0:
 	cmp r3, #0
 	bne _0812BAAC
@@ -3072,7 +3072,7 @@ _0812BC86:
 	bx r1
 	.align 2, 0
 _0812BCA0: .4byte 0x0203A800
-_0812BCA4: .4byte gSlotMachineData_085845F2
+_0812BCA4: .4byte sSlotMachineReelSymbols
 	thumb_func_end GetNearbyTag_Quantized
 
 	thumb_func_start GetNearbyTag
@@ -3148,7 +3148,7 @@ _0812BD20:
 	bx r1
 	.align 2, 0
 _0812BD30: .4byte 0x0203A800
-_0812BD34: .4byte gSlotMachineData_08584631
+_0812BD34: .4byte sSlotMachineReelTimeSymbols
 	thumb_func_end GetNearbyReelTimeTag
 
 	thumb_func_start AdvanceSlotReel
@@ -7566,7 +7566,7 @@ InfoBox_DrawWindow: @ 0x0812DD58
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812DD84: .4byte gSlotMachineData_085843C8
+_0812DD84: .4byte sSlotMachineInfoBoxWindowTemplate
 	thumb_func_end InfoBox_DrawWindow
 
 	thumb_func_start InfoBox_AddText
@@ -7603,8 +7603,8 @@ InfoBox_AddText: @ 0x0812DD88
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812DDCC: .4byte gSlotMachineData_085843D0
-_0812DDD0: .4byte gSlotMachineData_08588651
+_0812DDCC: .4byte sSlotMachineReelTimeHelpColors
+_0812DDD0: .4byte gText_SlotMachineReelTimeHelp
 	thumb_func_end InfoBox_AddText
 
 	thumb_func_start InfoBox_WaitInput
@@ -9415,7 +9415,7 @@ _0812EBAA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812EBB4: .4byte gSlotMachineData_08584598
+_0812EBB4: .4byte sSlotMachineReelTimePikachuAuraFlashColors
 _0812EBB8: .4byte 0x01030000
 	thumb_func_end sub_0812EB58
 
@@ -9604,7 +9604,7 @@ _0812ECB4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812ED1C: .4byte gSlotMachineData_0858459A
+_0812ED1C: .4byte sSlotMachineReelTimeDuckAngles
 _0812ED20: .4byte 0x02021B38
 _0812ED24: .4byte sSpriteTemplate_ReelTimeDuck
 _0812ED28: .4byte 0x020205AC
@@ -9981,7 +9981,7 @@ sub_0812EFA8: @ 0x0812EFA8
 	bx r1
 	.align 2, 0
 _0812EFE4: .4byte sDigitalDisplay_SpriteCallbacks
-_0812EFE8: .4byte gSlotMachineData_085847BE
+_0812EFE8: .4byte sSlotMachineDigitalDisplaySpriteCoords
 	thumb_func_end sub_0812EFA8
 
 	thumb_func_start sub_0812EFEC
@@ -10133,8 +10133,8 @@ _0812F102:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812F10C: .4byte gSlotMachineData_085845A2
-_0812F110: .4byte gSlotMachineData_085845AA
+_0812F10C: .4byte sSlotMachineDigitalDisplaySmokeTargetX
+_0812F110: .4byte sSlotMachineDigitalDisplaySmokeTargetY
 	thumb_func_end sub_0812F090
 
 	thumb_func_start sub_0812F114
@@ -10740,9 +10740,9 @@ sub_0812F524: @ 0x0812F524
 	beq _0812F572
 	b _0812F5E8
 	.align 2, 0
-_0812F560: .4byte gSlotMachineData_085845B2
-_0812F564: .4byte gSlotMachineData_085845C2
-_0812F568: .4byte gSlotMachineData_085845D2
+_0812F560: .4byte sSlotMachineDigitalDisplayRegBonusLetterXOffsets
+_0812F564: .4byte sSlotMachineDigitalDisplayRegBonusLetterYOffsets
+_0812F568: .4byte sSlotMachineDigitalDisplayRegBonusLetterDelays
 _0812F56C:
 	cmp r0, #2
 	beq _0812F5B0
@@ -10875,7 +10875,7 @@ _0812F64C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812F654: .4byte gSlotMachineData_085845E2
+_0812F654: .4byte sSlotMachineDigitalDisplayBigBonusAngles
 	thumb_func_end sub_0812F5F0
 
 	thumb_func_start sub_0812F658
