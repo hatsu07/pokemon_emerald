@@ -2235,26 +2235,20 @@ gEasyChatData_08573E64: @ 0x08573E64
 	.byte 0x00, 0x00, 0xFF, 0x3A, 0x3F, 0x1E, 0xF9, 0x19, 0xBF, 0x5B, 0xFF, 0x6B, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xC5, 0x18, 0xCE, 0x39, 0xF6, 0x5A, 0x5B, 0x6F, 0xFF, 0x7F
 	@ pret/pokeemerald-jp direct xref for 0x08573E84: easy_chat.s: sub_0811C868
-	.globl gEasyChatData_08573E84
-gEasyChatData_08573E84:
-	.globl sLz77Block_08573E84
-	@ confirmed GBA LZ77 stream: compressed=0x25D, decompressed=0x560
-sLz77Block_08573E84:
-	@ analyzed canonical ROM range 0x08573E84-0x085740E3
-	.incbin "build/graphics/analyzed/gunknown_8573e84_08573e84.4bpp.lz"
-	.if (. - sLz77Block_08573E84) != 0x260
-	.error "sLz77Block_08573E84 compressed size mismatch"
+	.globl gEasyChatWindow_Gfx
+gEasyChatWindow_Gfx: @ 0x08573E84
+	@ Semantic exact-LZ Easy Chat asset.
+	.incbin "build/graphics/easy_chat/window.4bpp.lz"
+	.if (. - gEasyChatWindow_Gfx) != 0x260
+	.error "gEasyChatWindow_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085740E4: easy_chat.s: sub_0811C868
-	.globl gEasyChatData_085740E4
-gEasyChatData_085740E4:
-	.globl sLz77Block_085740E4
-	@ confirmed GBA LZ77 stream: compressed=0x156, decompressed=0x800
-sLz77Block_085740E4:
-	@ analyzed canonical ROM range 0x085740E4-0x0857423B
-	.incbin "build/graphics/analyzed/gunknown_85740e4_085740e4.4bpp.lz"
-	.if (. - sLz77Block_085740E4) != 0x158
-	.error "sLz77Block_085740E4 compressed size mismatch"
+	.globl gEasyChatWindow_Tilemap
+gEasyChatWindow_Tilemap: @ 0x085740E4
+	@ Semantic exact-LZ Easy Chat asset.
+	.incbin "build/graphics/easy_chat/window.bin.lz"
+	.if (. - gEasyChatWindow_Tilemap) != 0x158
+	.error "gEasyChatWindow_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857423C: easy_chat.s: sub_0811D814
 	.globl gEasyChatData_0857423C
@@ -2273,15 +2267,12 @@ gEasyChatData_0857425C: @ 0x0857425C
 	.byte 0x0E, 0x53, 0xF7, 0x47, 0x93, 0x37, 0xCF, 0x2E, 0x56, 0x7F, 0xD1, 0x72, 0x2E, 0x56, 0x00, 0x00
 	.byte 0x1F, 0x42, 0x5D, 0x29, 0xBF, 0x5B, 0xFF, 0x6B, 0xCE, 0x39, 0xF6, 0x5A, 0x5B, 0x6F, 0xFF, 0x7F
 	@ pret/pokeemerald-jp direct xref for 0x0857427C: easy_chat.s: sub_0811C868
-	.globl gEasyChatData_0857427C
-gEasyChatData_0857427C:
-	.globl sLz77Block_0857427C
-	@ confirmed GBA LZ77 stream: compressed=0xC7, decompressed=0x180
-sLz77Block_0857427C:
-	@ analyzed canonical ROM range 0x0857427C-0x08574343
-	.incbin "build/graphics/analyzed/gunknown_857427c_0857427c.4bpp.lz"
-	.if (. - sLz77Block_0857427C) != 0xC8
-	.error "sLz77Block_0857427C compressed size mismatch"
+	.globl sTextInputFrame_Gfx
+sTextInputFrame_Gfx: @ 0x0857427C
+	@ Semantic exact-LZ Easy Chat asset.
+	.incbin "build/graphics/easy_chat/text_input_frame.4bpp.lz"
+	.if (. - sTextInputFrame_Gfx) != 0xC8
+	.error "sTextInputFrame_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08574344: easy_chat.s: sub_0811D814
 	.globl gEasyChatData_08574344

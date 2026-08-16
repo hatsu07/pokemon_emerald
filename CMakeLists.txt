@@ -243,6 +243,54 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END BATTLE BG EXACT PIPELINE
 
+    # BEGIN EASY CHAT EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/easy_chat/(window|text_input_frame)[.]4bpp[.]lz$")
+        set(EASY_CHAT_STEM "${CMAKE_MATCH_1}")
+        set(EASY_CHAT_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/easy_chat/${EASY_CHAT_STEM}.png")
+        set(EASY_CHAT_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/easy_chat/lz77_exact_plans.json")
+        if("${EASY_CHAT_STEM}" STREQUAL "window")
+            set(EASY_CHAT_KEY "window_gfx")
+        else()
+            set(EASY_CHAT_KEY "text_input_frame_gfx")
+        endif()
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/easy_chat_exact.py"
+                gfx --manifest "${EASY_CHAT_PLAN}" --key "${EASY_CHAT_KEY}"
+                "${EASY_CHAT_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${EASY_CHAT_INPUT}"
+                "${EASY_CHAT_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/easy_chat_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/easy_chat/window.bin.lz")
+        set(EASY_CHAT_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/easy_chat/window.tilemap.u16")
+        set(EASY_CHAT_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/easy_chat/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/easy_chat_exact.py"
+                u16 --manifest "${EASY_CHAT_PLAN}" --key "window_tilemap"
+                "${EASY_CHAT_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${EASY_CHAT_INPUT}"
+                "${EASY_CHAT_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/easy_chat_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END EASY CHAT EXACT PIPELINE
+
     # BEGIN MAP TILESET PNG PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/tilesets/(.+)/tiles[.]4bpp[.]lz$")

@@ -4318,8 +4318,8 @@ _0811C908:
 	bl CopyBgTilemapBufferToVram
 	b _0811C9E4
 	.align 2, 0
-_0811C944: .4byte gEasyChatData_08573E84
-_0811C948: .4byte gEasyChatData_085740E4
+_0811C944: .4byte gEasyChatWindow_Gfx
+_0811C948: .4byte gEasyChatWindow_Tilemap
 _0811C94C: .4byte 0x02039DE8
 _0811C950:
 	ldr r1, _0811C968
@@ -4333,7 +4333,7 @@ _0811C950:
 	bl CopyBgTilemapBufferToVram
 	b _0811C9E4
 	.align 2, 0
-_0811C968: .4byte gEasyChatData_0857427C
+_0811C968: .4byte sTextInputFrame_Gfx
 _0811C96C:
 	bl sub_0811D87C
 	bl sub_0811D990
