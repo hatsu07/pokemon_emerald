@@ -1727,21 +1727,33 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
         set(FIELD_EFFECT_GFX_STEM "${CMAKE_MATCH_1}")
         set(INPUT_PNG
             "${CMAKE_SOURCE_DIR}/graphics/field_effects/pics/${FIELD_EFFECT_GFX_STEM}.png")
+        set(FIELD_EFFECT_GFX_ARGS)
+
+        # gbagfx metatile dimensions must match the canonical field-effect
+        # SpriteFrameImage layout. Assets not listed here use plain tile order.
+        if(FIELD_EFFECT_GFX_STEM MATCHES
+                "^(sparkle|ripple|ash|arrow|unused_grass_3|jump_long_grass|unused_grass_frames_1_to_8|unused_grass_2|long_grass|tall_grass|short_grass|sand_footprints|deep_sand_footprints|bike_tire_tracks|unused_sand|jump_big_splash|water_surfacing|ash_puff|ash_launch|small_sparkle)$")
+            set(FIELD_EFFECT_GFX_ARGS -mwidth 2 -mheight 2)
+        elseif(FIELD_EFFECT_GFX_STEM MATCHES
+                "^(ground_impact_dust|jump_tall_grass|sand_pile|jump_small_splash)$")
+            set(FIELD_EFFECT_GFX_ARGS -mwidth 2 -mheight 1)
+        elseif(FIELD_EFFECT_GFX_STEM MATCHES
+                "^(tree_disguise|mountain_disguise|sand_disguise_placeholder|bubbles)$")
+            set(FIELD_EFFECT_GFX_ARGS -mwidth 2 -mheight 4)
+        elseif(FIELD_EFFECT_GFX_STEM STREQUAL "surf_blob")
+            set(FIELD_EFFECT_GFX_ARGS -mwidth 4 -mheight 4)
+        endif()
+
         add_custom_command(
             OUTPUT "${OUTPUT_ABS}"
             COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
-            COMMAND "${Python3_EXECUTABLE}"
-                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
-                --gbagfx "${GBAGFX}"
-                "${INPUT_PNG}" "${OUTPUT_ABS}"
-            DEPENDS
-                "${INPUT_PNG}"
-                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
-                "${GBAGFX}"
+            COMMAND "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}" ${FIELD_EFFECT_GFX_ARGS}
+            DEPENDS "${INPUT_PNG}" "${GBAGFX}"
             VERBATIM)
 
     elseif("${RELATIVE_OUTPUT}" MATCHES
-            "^build/graphics/field_effects/palettes/(pokeball_glow|hof_monitor)[.]gbapal$")
+            "^build/graphics/field_effects/palettes/(.+)[.]gbapal$")
         set(FIELD_EFFECT_PAL_STEM "${CMAKE_MATCH_1}")
         set(INPUT_PNG
             "${CMAKE_SOURCE_DIR}/graphics/field_effects/palettes/${FIELD_EFFECT_PAL_STEM}.png")
