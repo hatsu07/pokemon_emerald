@@ -518,17 +518,19 @@ sPokedexUiPalettes_Continuation:
 	rodata_rgb5  3, 16,  4 @ [61] raw=0x1203
 	rodata_rgb5  0,  0,  0 @ [62] raw=0x0000
 	rodata_rgb5  0,  0,  0 @ [63] raw=0x0000
-	.globl sPokedexUi854385C
-sPokedexUi854385C:
-	.incbin "build/graphics/analyzed/pokedex_ui_854385c.4bpp.lz"
-	.if (. - sPokedexUi854385C) != 0x58C
-	.error "sPokedexUi854385C compressed size mismatch"
+	@ semantic exact asset for 0x0854385C: Pokedex search-menu graphics
+	.globl gPokedexSearchMenu_Gfx
+gPokedexSearchMenu_Gfx:
+	.incbin "build/graphics/pokedex/search_menu.4bpp.lz"
+	.if (. - gPokedexSearchMenu_Gfx) != 0x58C
+	.error "gPokedexSearchMenu_Gfx compressed size mismatch"
 	.endif
-	.globl sPokedexUi8543De8
-sPokedexUi8543De8:
-	.incbin "build/graphics/analyzed/pokedex_ui_8543de8.4bpp.lz"
-	.if (. - sPokedexUi8543De8) != 0x19C
-	.error "sPokedexUi8543De8 compressed size mismatch"
+	@ semantic exact asset for 0x08543DE8: National Pokedex search-menu tilemap
+	.globl gPokedexSearchMenuNational_Tilemap
+gPokedexSearchMenuNational_Tilemap:
+	.incbin "build/graphics/pokedex/search_menu_national.bin.lz"
+	.if (. - gPokedexSearchMenuNational_Tilemap) != 0x19C
+	.error "gPokedexSearchMenuNational_Tilemap compressed size mismatch"
 	.endif
 	@ semantic exact asset for 0x08543F84: gPokedexSearchMenuHoenn_Tilemap
 	.globl gPokedexSearchMenuHoenn_Tilemap

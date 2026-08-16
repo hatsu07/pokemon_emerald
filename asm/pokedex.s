@@ -11726,7 +11726,7 @@ _080C093C: .4byte 0x020397EC
 _080C0940: .4byte 0x0000064A
 _080C0944: .4byte gPokedexData_085443FC
 _080C0948: .4byte gPokedexData_0854440C
-_080C094C: .4byte 0x0854385C
+_080C094C: .4byte gPokedexSearchMenu_Gfx
 _080C0950: .4byte gPokedexSearchMenuHoenn_Tilemap
 _080C0954:
 	ldr r1, _080C0978
@@ -11747,7 +11747,7 @@ _080C0960:
 	strb r1, [r0]
 	b _080C0A86
 	.align 2, 0
-_080C0978: .4byte 0x08543DE8
+_080C0978: .4byte gPokedexSearchMenuNational_Tilemap
 _080C097C: .4byte 0x085437DE
 _080C0980: .4byte 0x03002360
 _080C0984:

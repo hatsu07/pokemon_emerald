@@ -1851,6 +1851,38 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                     "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
 
+    # BEGIN POKEDEX SEARCH MENU EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/search_menu.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --key "gPokedexSearchMenu_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/search_menu.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/search_menu.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/search_menu_national.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --key "gPokedexSearchMenuNational_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/search_menu_national.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/search_menu_national.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END POKEDEX SEARCH MENU EXACT ASSET PIPELINE
+
     # BEGIN POKEDEX AREA / POKENAV EXACT ASSET PIPELINE
     elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/region_map.8bpp.lz")
         add_custom_command(
