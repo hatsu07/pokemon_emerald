@@ -1686,6 +1686,77 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END TILESET RAW 4BPP FALLBACK PIPELINE
 
+    # BEGIN FIELD EFFECT BIRCH RAW ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/birch_speech/(birch|unused_beauty)[.]4bpp$")
+        set(BIRCH_SPEECH_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/birch_speech/${BIRCH_SPEECH_STEM}.png")
+        if(BIRCH_SPEECH_STEM STREQUAL "unused_beauty")
+            set(BIRCH_TILE_ARGS --num-tiles 822)
+        else()
+            set(BIRCH_TILE_ARGS)
+        endif()
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                ${BIRCH_TILE_ARGS}
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/birch_speech/birch.gbapal")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/birch_speech/birch.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/field_effects/pics/(.+)[.]4bpp$")
+        set(FIELD_EFFECT_GFX_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/field_effects/pics/${FIELD_EFFECT_GFX_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/field_effects/palettes/(pokeball_glow|hof_monitor)[.]gbapal$")
+        set(FIELD_EFFECT_PAL_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/field_effects/palettes/${FIELD_EFFECT_PAL_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+    # END FIELD EFFECT BIRCH RAW ASSET PIPELINE
+
     # BEGIN SLOT MACHINE 4BPP LZ PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/slot_machine/(digital_display|reel_time_gfx|menu)[.]4bpp[.]lz$")
