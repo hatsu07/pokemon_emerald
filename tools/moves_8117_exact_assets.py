@@ -16,6 +16,12 @@ def encode_png_raw(repo: Path, stream: dict) -> bytes:
     path = repo / stream["png_rel"]
     kind = stream["kind"]
 
+    if kind == "u16_raw":
+        raw = path.read_bytes()
+        if len(raw) % 2:
+            raise ValueError(f"{path}: expected even-sized little-endian u16 data")
+        return raw
+
     if kind == "palette16":
         with Image.open(path) as image:
             if image.mode != "P" or image.size != (16, 1):
