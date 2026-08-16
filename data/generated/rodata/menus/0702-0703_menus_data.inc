@@ -230,17 +230,11 @@ sFanfares: @ 0x084FCFC8
 	@ The underlying compressed assets remain in their existing ROM region.
 	@ ------------------------------------------------------------------
 	.globl gBattleAnimSpriteGfx_Bubble
-	.set gBattleAnimSpriteGfx_Bubble, 0x08C02480
 	.globl gBattleAnimSpriteGfx_Bone
-	.set gBattleAnimSpriteGfx_Bone, 0x08C02540
 	.globl gBattleAnimSpriteGfx_AirWave
-	.set gBattleAnimSpriteGfx_AirWave, 0x08C025F0
 	.globl gBattleAnimSpriteGfx_Orb
-	.set gBattleAnimSpriteGfx_Orb, 0x08C02664
 	.globl gBattleAnimSpriteGfx_Sword
-	.set gBattleAnimSpriteGfx_Sword, 0x08C02714
 	.globl gBattleAnimSpriteGfx_Seed
-	.set gBattleAnimSpriteGfx_Seed, 0x08C027E8
 	.globl gBattleAnimSpritePal_RainDrops
 	.set gBattleAnimSpritePal_RainDrops, 0x08C028B4
 	.globl gBattleAnimSpritePal_Bone
@@ -248,69 +242,44 @@ sFanfares: @ 0x084FCFC8
 	.globl gBattleAnimSpritePal_AirWave
 	.set gBattleAnimSpritePal_AirWave, 0x08C028F8
 	.globl gBattleAnimSpritePal_Orb
-	.set gBattleAnimSpritePal_Orb, 0x08C02920
 	.globl gBattleAnimSpritePal_Sword
-	.set gBattleAnimSpritePal_Sword, 0x08C02934
 	.globl gBattleAnimSpritePal_Seed
-	.set gBattleAnimSpritePal_Seed, 0x08C0295C
 	.globl gBattleAnimSpriteGfx_Needle
-	.set gBattleAnimSpriteGfx_Needle, 0x08C02984
 	.globl gBattleAnimSpritePal_Needle
-	.set gBattleAnimSpritePal_Needle, 0x08C029AC
 	.globl gBattleAnimSpriteGfx_Explosion6
-	.set gBattleAnimSpriteGfx_Explosion6, 0x08C029D4
 	.globl gBattleAnimSpritePal_Explosion6
 	.set gBattleAnimSpritePal_Explosion6, 0x08C02B50
 	.globl gBattleAnimSpriteGfx_PinkOrb
-	.set gBattleAnimSpriteGfx_PinkOrb, 0x08C02B70
 	.globl gBattleAnimSpritePal_PinkOrb
-	.set gBattleAnimSpritePal_PinkOrb, 0x08C02B90
 	.globl gBattleAnimSpritePal_IceCube
 	.set gBattleAnimSpritePal_IceCube, 0x08C02BAC
 	.globl gBattleAnimSpriteGfx_IceCube
-	.set gBattleAnimSpriteGfx_IceCube, 0x08C02BCC
 	.globl gBattleAnimSpriteGfx_Gust
-	.set gBattleAnimSpriteGfx_Gust, 0x08C02FAC
 	.globl gBattleAnimSpritePal_Gust
 	.set gBattleAnimSpritePal_Gust, 0x08C03294
 	.globl gBattleAnimSpriteGfx_Spark2
-	.set gBattleAnimSpriteGfx_Spark2, 0x08C032B4
 	.globl gBattleAnimSpritePal_Spark2
 	.set gBattleAnimSpritePal_Spark2, 0x08C0332C
 	.globl gBattleAnimSpriteGfx_Orange
-	.set gBattleAnimSpriteGfx_Orange, 0x08C03354
 	.globl gBattleAnimSpritePal_Orange
-	.set gBattleAnimSpritePal_Orange, 0x08C033BC
 	.globl gBattleAnimSpriteGfx_Spikes
-	.set gBattleAnimSpriteGfx_Spikes, 0x08C033D4
 	.globl gBattleAnimSpritePal_Spikes
 	.set gBattleAnimSpritePal_Spikes, 0x08C0341C
 	.globl gBattleAnimSpriteGfx_YellowBall
-	.set gBattleAnimSpriteGfx_YellowBall, 0x08C03440
 	.globl gBattleAnimSpritePal_YellowBall
-	.set gBattleAnimSpritePal_YellowBall, 0x08C03474
 	.globl gBattleAnimSpriteGfx_TiedBag
-	.set gBattleAnimSpriteGfx_TiedBag, 0x08C0348C
 	.globl gBattleAnimSpritePal_TiedBag
 	.set gBattleAnimSpritePal_TiedBag, 0x08C034F8
 	.globl gBattleAnimSpriteGfx_BlackSmoke
-	.set gBattleAnimSpriteGfx_BlackSmoke, 0x08C03520
 	.globl gBattleAnimSpritePal_BlackSmoke
-	.set gBattleAnimSpritePal_BlackSmoke, 0x08C03590
 	.globl gBattleAnimSpriteGfx_BlackBall
-	.set gBattleAnimSpriteGfx_BlackBall, 0x08C035A0
 	.globl gBattleAnimSpritePal_Glass
-	.set gBattleAnimSpritePal_Glass, 0x08C035E4
 	.globl gBattleAnimSpriteGfx_Glass
-	.set gBattleAnimSpriteGfx_Glass, 0x08C03600
 	.globl gBattleAnimSpriteGfx_HornHit
-	.set gBattleAnimSpriteGfx_HornHit, 0x08C036C0
 	.globl gBattleAnimSpritePal_HornHit
-	.set gBattleAnimSpritePal_HornHit, 0x08C0378C
 	.globl gBattleAnimSpritePal_BlueShards
 	.set gBattleAnimSpritePal_BlueShards, 0x08C037B4
 	.globl gBattleAnimSpriteGfx_BlueShards
-	.set gBattleAnimSpriteGfx_BlueShards, 0x08C037DC
 	.globl gBattleAnimSpritePal_Hit
 	.set gBattleAnimSpritePal_Hit, 0x08C03A08
 	.globl gBattleAnimSpriteGfx_Hit
@@ -318,21 +287,13 @@ sFanfares: @ 0x084FCFC8
 	.globl gBattleAnimSpritePal_Hit2
 	.set gBattleAnimSpritePal_Hit2, 0x08C03D68
 	.globl gBattleAnimSpritePal_WavingHand
-	.set gBattleAnimSpritePal_WavingHand, 0x08C03D90
 	.globl gBattleAnimSpriteGfx_WavingHand
-	.set gBattleAnimSpriteGfx_WavingHand, 0x08C03DB8
 	.globl gBattleAnimSpriteGfx_ClosingEye
-	.set gBattleAnimSpriteGfx_ClosingEye, 0x08C03EA8
 	.globl gBattleAnimSpritePal_ClosingEye
-	.set gBattleAnimSpritePal_ClosingEye, 0x08C03F74
 	.globl gBattleAnimSpriteGfx_BlueStar
-	.set gBattleAnimSpriteGfx_BlueStar, 0x08C03F88
 	.globl gBattleAnimSpritePal_BlueStar
-	.set gBattleAnimSpritePal_BlueStar, 0x08C04368
 	.globl gBattleAnimSpritePal_BubbleBurst
-	.set gBattleAnimSpritePal_BubbleBurst, 0x08C04388
 	.globl gBattleAnimSpriteGfx_BubbleBurst
-	.set gBattleAnimSpriteGfx_BubbleBurst, 0x08C043B0
 	.globl gBattleAnimSpriteGfx_HitDuplicate
 	.set gBattleAnimSpriteGfx_HitDuplicate, 0x08C0449C
 	.globl gBattleAnimSpritePal_HitDuplicate
@@ -340,275 +301,153 @@ sFanfares: @ 0x084FCFC8
 	.globl gBattleAnimSpritePal_Leer
 	.set gBattleAnimSpritePal_Leer, 0x08C047FC
 	.globl gBattleAnimSpriteGfx_Leer
-	.set gBattleAnimSpriteGfx_Leer, 0x08C04824
 	.globl gBattleAnimSpritePal_BlueBurst
-	.set gBattleAnimSpritePal_BlueBurst, 0x08C04B20
 	.globl gBattleAnimSpriteGfx_BlueBurst
-	.set gBattleAnimSpriteGfx_BlueBurst, 0x08C04B48
 	.globl gBattleAnimSpriteGfx_SmallEmber
-	.set gBattleAnimSpriteGfx_SmallEmber, 0x08C04E98
 	.globl gBattleAnimSpritePal_SmallEmber
 	.set gBattleAnimSpritePal_SmallEmber, 0x08C05150
 	.globl gBattleAnimSpriteGfx_GraySmoke
-	.set gBattleAnimSpriteGfx_GraySmoke, 0x08C05178
 	.globl gBattleAnimSpritePal_GraySmoke
 	.set gBattleAnimSpritePal_GraySmoke, 0x08C05538
 	.globl gBattleAnimSpritePal_Fire
-	.set gBattleAnimSpritePal_Fire, 0x08C0555C
 	.globl gBattleAnimSpriteGfx_Fire
-	.set gBattleAnimSpriteGfx_Fire, 0x08C05584
 	.globl gBattleAnimSpriteGfx_SpinningFire
-	.set gBattleAnimSpriteGfx_SpinningFire, 0x08C05EF4
 	.globl gBattleAnimSpriteGfx_FirePlume
-	.set gBattleAnimSpriteGfx_FirePlume, 0x08C062C0
 	.globl gBattleAnimSpritePal_Lightning2
 	.set gBattleAnimSpritePal_Lightning2, 0x08C06658
 	.globl gBattleAnimSpriteGfx_Lightning2
-	.set gBattleAnimSpriteGfx_Lightning2, 0x08C06680
 	.globl gBattleAnimSpriteGfx_Lightning
-	.set gBattleAnimSpriteGfx_Lightning, 0x08C06A54
 	.globl gBattleAnimSpritePal_ClawSlash2
-	.set gBattleAnimSpritePal_ClawSlash2, 0x08C0791C
 	.globl gBattleAnimSpritePal_ClawSlash
-	.set gBattleAnimSpritePal_ClawSlash, 0x08C07944
 	.globl gBattleAnimSpriteGfx_ClawSlash2
-	.set gBattleAnimSpriteGfx_ClawSlash2, 0x08C0796C
 	.globl gBattleAnimSpriteGfx_ClawSlash
-	.set gBattleAnimSpriteGfx_ClawSlash, 0x08C07B90
 	.globl gBattleAnimSpriteGfx_Scratch3
-	.set gBattleAnimSpriteGfx_Scratch3, 0x08C07E8C
 	.globl gBattleAnimSpriteGfx_Scratch2
-	.set gBattleAnimSpriteGfx_Scratch2, 0x08C08098
 	.globl gBattleAnimSpriteGfx_BubbleBurst2
-	.set gBattleAnimSpriteGfx_BubbleBurst2, 0x08C082CC
 	.globl gBattleAnimSpritePal_BubbleBurst2
-	.set gBattleAnimSpritePal_BubbleBurst2, 0x08C0859C
 	.globl gBattleAnimSpriteGfx_IceChunk
-	.set gBattleAnimSpriteGfx_IceChunk, 0x08C085C4
 	.globl gBattleAnimSpritePal_IceChunk
 	.set gBattleAnimSpritePal_IceChunk, 0x08C089C4
 	.globl gBattleAnimSpritePal_Glass2
 	.set gBattleAnimSpritePal_Glass2, 0x08C089EC
 	.globl gBattleAnimSpriteGfx_Glass2
-	.set gBattleAnimSpriteGfx_Glass2, 0x08C08A14
 	.globl gBattleAnimSpritePal_PinkHeart2
-	.set gBattleAnimSpritePal_PinkHeart2, 0x08C08C80
 	.globl gBattleAnimSpriteGfx_PinkHeart2
-	.set gBattleAnimSpriteGfx_PinkHeart2, 0x08C08CA8
 	.globl gBattleAnimSpriteGfx_SapDrip
-	.set gBattleAnimSpriteGfx_SapDrip, 0x08C0960C
 	.globl gBattleAnimSpritePal_SapDrip
-	.set gBattleAnimSpritePal_SapDrip, 0x08C099EC
 	.globl gBattleAnimSpritePal_SapDrip2
-	.set gBattleAnimSpritePal_SapDrip2, 0x08C09A0C
 	.globl gBattleAnimSpriteGfx_Sparkle1
-	.set gBattleAnimSpriteGfx_Sparkle1, 0x08C09CF8
 	.globl gBattleAnimSpritePal_Sparkle1
-	.set gBattleAnimSpritePal_Sparkle1, 0x08C09F90
 	.globl gBattleAnimSpritePal_Sparkle2
-	.set gBattleAnimSpritePal_Sparkle2, 0x08C09FB8
 	.globl gBattleAnimSpritePal_HumanoidFoot
-	.set gBattleAnimSpritePal_HumanoidFoot, 0x08C09FE0
 	.globl gBattleAnimSpriteGfx_HumanoidFoot
-	.set gBattleAnimSpriteGfx_HumanoidFoot, 0x08C0A004
 	.globl gBattleAnimSpriteGfx_MonsterFoot
-	.set gBattleAnimSpriteGfx_MonsterFoot, 0x08C0A0A4
 	.globl gBattleAnimSpriteGfx_HumanoidHand
-	.set gBattleAnimSpriteGfx_HumanoidHand, 0x08C0A150
 	.globl gBattleAnimSpriteGfx_YellowUnk
-	.set gBattleAnimSpriteGfx_YellowUnk, 0x08C0A3B0
 	.globl gBattleAnimSpritePal_YellowUnk
-	.set gBattleAnimSpritePal_YellowUnk, 0x08C0A3DC
 	.globl gBattleAnimSpriteGfx_SlamHit
-	.set gBattleAnimSpriteGfx_SlamHit, 0x08C0A3F4
 	.globl gBattleAnimSpritePal_SlamHit
-	.set gBattleAnimSpritePal_SlamHit, 0x08C0A89C
 	.globl gBattleAnimSpriteGfx_RedFist
-	.set gBattleAnimSpriteGfx_RedFist, 0x08C0A8C4
 	.globl gBattleAnimSpriteGfx_Ring
-	.set gBattleAnimSpriteGfx_Ring, 0x08C0A988
 	.globl gBattleAnimSpritePal_Ring
-	.set gBattleAnimSpritePal_Ring, 0x08C0AA10
 	.globl gBattleAnimSpriteGfx_Rocks
-	.set gBattleAnimSpriteGfx_Rocks, 0x08C0AA34
 	.globl gBattleAnimSpritePal_Rocks
-	.set gBattleAnimSpritePal_Rocks, 0x08C0AE9C
 	.globl gBattleAnimSpriteGfx_Z
-	.set gBattleAnimSpriteGfx_Z, 0x08C0AEC4
 	.globl gBattleAnimSpritePal_Z
-	.set gBattleAnimSpritePal_Z, 0x08C0AF24
 	.globl gBattleAnimSpriteGfx_YellowUnk2
-	.set gBattleAnimSpriteGfx_YellowUnk2, 0x08C0AF40
 	.globl gBattleAnimSpritePal_YellowUnk2
-	.set gBattleAnimSpritePal_YellowUnk2, 0x08C0AF68
 	.globl gBattleAnimSpriteGfx_AirSlash
-	.set gBattleAnimSpriteGfx_AirSlash, 0x08C0AF84
 	.globl gBattleAnimSpritePal_AirSlash
-	.set gBattleAnimSpritePal_AirSlash, 0x08C0B034
 	.globl gBattleAnimSpriteGfx_SpinningGreenOrbs
-	.set gBattleAnimSpriteGfx_SpinningGreenOrbs, 0x08C0B054
 	.globl gBattleAnimSpritePal_SpinningGreenOrbs
-	.set gBattleAnimSpritePal_SpinningGreenOrbs, 0x08C0B424
 	.globl gBattleAnimSpriteGfx_Leaf
-	.set gBattleAnimSpriteGfx_Leaf, 0x08C0B44C
 	.globl gBattleAnimSpritePal_Leaf
-	.set gBattleAnimSpritePal_Leaf, 0x08C0B608
 	.globl gBattleAnimSpritePal_Clapping
 	.set gBattleAnimSpritePal_Clapping, 0x08C0B6A0
 	.globl gBattleAnimSpriteGfx_PoisonPowder
-	.set gBattleAnimSpriteGfx_PoisonPowder, 0x08C0B6C4
 	.globl gBattleAnimSpritePal_PoisonPowder
-	.set gBattleAnimSpritePal_PoisonPowder, 0x08C0B7D8
 	.globl gBattleAnimSpriteGfx_BrownTriangle
-	.set gBattleAnimSpriteGfx_BrownTriangle, 0x08C0B7F8
 	.globl gBattleAnimSpritePal_BrownTriangle
-	.set gBattleAnimSpritePal_BrownTriangle, 0x08C0B844
 	.globl gBattleAnimSpriteGfx_Sparkle3
-	.set gBattleAnimSpriteGfx_Sparkle3, 0x08C0B86C
 	.globl gBattleAnimSpritePal_Sparkle3
-	.set gBattleAnimSpritePal_Sparkle3, 0x08C0B8EC
 	.globl gBattleAnimSpriteGfx_Sparkle4
-	.set gBattleAnimSpriteGfx_Sparkle4, 0x08C0B914
 	.globl gBattleAnimSpriteGfx_MusicNotes
-	.set gBattleAnimSpriteGfx_MusicNotes, 0x08C0BB40
 	.globl gBattleAnimSpritePal_MusicNotes
-	.set gBattleAnimSpritePal_MusicNotes, 0x08C0BC10
 	.globl gBattleAnimSpriteGfx_Duck
-	.set gBattleAnimSpriteGfx_Duck, 0x08C0BC28
 	.globl gBattleAnimSpritePal_Duck
-	.set gBattleAnimSpritePal_Duck, 0x08C0BD44
 	.globl gBattleAnimSpriteGfx_Alert
-	.set gBattleAnimSpriteGfx_Alert, 0x08C0BD64
 	.globl gBattleAnimSpritePal_Alert
-	.set gBattleAnimSpritePal_Alert, 0x08C0BFE0
 	.globl gBattleAnimSpriteGfx_Shock4
-	.set gBattleAnimSpriteGfx_Shock4, 0x08C0C004
 	.globl gBattleAnimSpritePal_Shock4
 	.set gBattleAnimSpritePal_Shock4, 0x08C0C19C
 	.globl gBattleAnimSpriteGfx_Shock
-	.set gBattleAnimSpriteGfx_Shock, 0x08C0C1C4
 	.globl gBattleAnimSpriteGfx_Bell2
-	.set gBattleAnimSpriteGfx_Bell2, 0x08C0C5F4
 	.globl gBattleAnimSpritePal_Bell2
-	.set gBattleAnimSpritePal_Bell2, 0x08C0C958
 	.globl gBattleAnimSpriteGfx_PinkGlove
-	.set gBattleAnimSpriteGfx_PinkGlove, 0x08C0C97C
 	.globl gBattleAnimSpritePal_PinkGlove
 	.set gBattleAnimSpritePal_PinkGlove, 0x08C0CA00
 	.globl gBattleAnimSpriteGfx_BlueLines
-	.set gBattleAnimSpriteGfx_BlueLines, 0x08C0CB98
 	.globl gBattleAnimSpritePal_BlueLines
-	.set gBattleAnimSpritePal_BlueLines, 0x08C0CBBC
 	.globl gBattleAnimSpritePal_Impact3
-	.set gBattleAnimSpritePal_Impact3, 0x08C0CBD0
 	.globl gBattleAnimSpritePal_Impact2
-	.set gBattleAnimSpritePal_Impact2, 0x08C0CBF8
 	.globl gBattleAnimSpritePal_Reticle
-	.set gBattleAnimSpritePal_Reticle, 0x08C0CC20
 	.globl gBattleAnimSpritePal_Breath
-	.set gBattleAnimSpritePal_Breath, 0x08C0CC38
 	.globl gBattleAnimSpritePal_Snowball
-	.set gBattleAnimSpritePal_Snowball, 0x08C0CC60
 	.globl gBattleAnimSpritePal_Vine
-	.set gBattleAnimSpritePal_Vine, 0x08C0CC7C
 	.globl gBattleAnimSpritePal_Sword2
-	.set gBattleAnimSpritePal_Sword2, 0x08C0CCA4
 	.globl gBattleAnimSpritePal_RedTube
-	.set gBattleAnimSpritePal_RedTube, 0x08C0CCC8
 	.globl gBattleAnimSpritePal_Amnesia
-	.set gBattleAnimSpritePal_Amnesia, 0x08C0CCE4
 	.globl gBattleAnimSpritePal_String2
-	.set gBattleAnimSpritePal_String2, 0x08C0CD0C
 	.globl gBattleAnimSpritePal_Pencil2
-	.set gBattleAnimSpritePal_Pencil2, 0x08C0CD4C
 	.globl gBattleAnimSpritePal_Petal
-	.set gBattleAnimSpritePal_Petal, 0x08C0CD74
 	.globl gBattleAnimSpritePal_BentSpoon
-	.set gBattleAnimSpritePal_BentSpoon, 0x08C0CD90
 	.globl gBattleAnimSpritePal_Coin
-	.set gBattleAnimSpritePal_Coin, 0x08C0CDB8
 	.globl gBattleAnimSpritePal_CrackedEgg
-	.set gBattleAnimSpritePal_CrackedEgg, 0x08C0CDD4
 	.globl gBattleAnimSpritePal_FreshEgg
-	.set gBattleAnimSpritePal_FreshEgg, 0x08C0CDFC
 	.globl gBattleAnimSpriteGfx_Impact3
-	.set gBattleAnimSpriteGfx_Impact3, 0x08C0CE20
 	.globl gBattleAnimSpriteGfx_Impact2
-	.set gBattleAnimSpriteGfx_Impact2, 0x08C0D2C4
 	.globl gBattleAnimSpriteGfx_Reticle
-	.set gBattleAnimSpriteGfx_Reticle, 0x08C0D688
 	.globl gBattleAnimSpriteGfx_Breath
-	.set gBattleAnimSpriteGfx_Breath, 0x08C0D740
 	.globl gBattleAnimSpriteGfx_Snowball
-	.set gBattleAnimSpriteGfx_Snowball, 0x08C0D8B0
 	.globl gBattleAnimSpriteGfx_Vine
-	.set gBattleAnimSpriteGfx_Vine, 0x08C0D900
 	.globl gBattleAnimSpriteGfx_Sword2
-	.set gBattleAnimSpriteGfx_Sword2, 0x08C0DB74
 	.globl gBattleAnimSpriteGfx_Clapping
-	.set gBattleAnimSpriteGfx_Clapping, 0x08C0DC04
 	.globl gBattleAnimSpriteGfx_RedTube
-	.set gBattleAnimSpriteGfx_RedTube, 0x08C0DD38
 	.globl gBattleAnimSpriteGfx_Amnesia
-	.set gBattleAnimSpriteGfx_Amnesia, 0x08C0DDB4
 	.globl gBattleAnimSpriteGfx_String2
-	.set gBattleAnimSpriteGfx_String2, 0x08C0E484
 	.globl gBattleAnimSpriteGfx_Pencil2
-	.set gBattleAnimSpriteGfx_Pencil2, 0x08C0E628
 	.globl gBattleAnimSpriteGfx_Petal
-	.set gBattleAnimSpriteGfx_Petal, 0x08C0E6D8
 	.globl gBattleAnimSpriteGfx_BentSpoon
-	.set gBattleAnimSpriteGfx_BentSpoon, 0x08C0E848
 	.globl gBattleAnimSpriteGfx_Web
-	.set gBattleAnimSpriteGfx_Web, 0x08C0EA28
 	.globl gBattleAnimSpriteGfx_Coin
-	.set gBattleAnimSpriteGfx_Coin, 0x08C0EB60
 	.globl gBattleAnimSpriteGfx_CrackedEgg
-	.set gBattleAnimSpriteGfx_CrackedEgg, 0x08C0EC60
 	.globl gBattleAnimSpriteGfx_HatchedEgg
-	.set gBattleAnimSpriteGfx_HatchedEgg, 0x08C0ED90
 	.globl gBattleAnimSpriteGfx_FreshEgg
-	.set gBattleAnimSpriteGfx_FreshEgg, 0x08C0EF28
 	.globl gBattleAnimSpriteGfx_Fangs
-	.set gBattleAnimSpriteGfx_Fangs, 0x08C0EF94
 	.globl gBattleAnimSpritePal_Fangs
 	.set gBattleAnimSpritePal_Fangs, 0x08C0F154
 	.globl gBattleAnimSpriteGfx_Explosion2
-	.set gBattleAnimSpriteGfx_Explosion2, 0x08C0F17C
 	.globl gBattleAnimSpritePal_Explosion2
 	.set gBattleAnimSpritePal_Explosion2, 0x08C0F700
 	.globl gBattleAnimSpriteGfx_Explosion3
-	.set gBattleAnimSpriteGfx_Explosion3, 0x08C0F728
 	.globl gBattleAnimSpriteGfx_WaterDroplet
-	.set gBattleAnimSpriteGfx_WaterDroplet, 0x08C0F818
 	.globl gBattleAnimSpritePal_WaterDroplet
 	.set gBattleAnimSpritePal_WaterDroplet, 0x08C0FBC4
 	.globl gBattleAnimSpriteGfx_WaterDroplet2
-	.set gBattleAnimSpriteGfx_WaterDroplet2, 0x08C0FBEC
 	.globl gBattleAnimSpriteGfx_Seed2
-	.set gBattleAnimSpriteGfx_Seed2, 0x08C0FF70
 	.globl gBattleAnimSpritePal_Seed2
-	.set gBattleAnimSpritePal_Seed2, 0x08C0FF98
 	.globl gBattleAnimSpriteGfx_Sprout
-	.set gBattleAnimSpriteGfx_Sprout, 0x08C0FFC0
 	.globl gBattleAnimSpriteGfx_RedWand
-	.set gBattleAnimSpriteGfx_RedWand, 0x08C103A4
 	.globl gBattleAnimSpritePal_RedWand
-	.set gBattleAnimSpritePal_RedWand, 0x08C103E8
 	.globl gBattleAnimSpriteGfx_PurpleGreenUnk
-	.set gBattleAnimSpriteGfx_PurpleGreenUnk, 0x08C1040C
 	.globl gBattleAnimSpritePal_PurpleGreenUnk
 	.set gBattleAnimSpritePal_PurpleGreenUnk, 0x08C10734
 	.globl gBattleAnimSpriteGfx_WaterColumn
-	.set gBattleAnimSpriteGfx_WaterColumn, 0x08C1075C
 	.globl gBattleAnimSpritePal_WaterColumn
 	.set gBattleAnimSpritePal_WaterColumn, 0x08C109C8
 	.globl gBattleAnimSpriteGfx_MudUnk
-	.set gBattleAnimSpriteGfx_MudUnk, 0x08C109F0
 	.globl gBattleAnimSpritePal_MudUnk
-	.set gBattleAnimSpritePal_MudUnk, 0x08C10AE4
 	.globl gBattleAnimSpriteGfx_RainDrops
-	.set gBattleAnimSpriteGfx_RainDrops, 0x08C115EC
 	.globl gBattleAnimSpriteGfx_FurySwipes
 	.set gBattleAnimSpriteGfx_FurySwipes, 0x08C12E90
 	.globl gBattleAnimSpritePal_FurySwipes

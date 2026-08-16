@@ -965,13 +965,13 @@ sWirelessStatusPalettes:
 	.2byte 0x1CE7, 0x01F5, 0x2D6B, 0x1CE7, 0x5294, 0x02DF, 0x35AD, 0x2529
 sWirelessStatusBgTiles_Gfx:
 	@ GBA LZ77: decompressed=0x800, stream=0x210, stored=0x210
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wireless_status_bg_tiles.4bpp.lz"
+	.incbin "build/graphics/mystery_gift/wireless_status_bg_tiles.4bpp.lz"
 	.if (. - sWirelessStatusBgTiles_Gfx) > 0x210
 	.error "sWirelessStatusBgTiles_Gfx exceeds its exact ROM slot"
 	.endif
 sWirelessStatusBgTiles_Tilemap:
 	@ GBA LZ77: decompressed=0x800, stream=0x193, stored=0x194
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wireless_status_bg_tiles.bin.lz"
+	.incbin "build/graphics/mystery_gift/wireless_status_bg_tiles.bin.lz"
 	.if (. - sWirelessStatusBgTiles_Tilemap) > 0x194
 	.error "sWirelessStatusBgTiles_Tilemap exceeds its exact ROM slot"
 	.endif
@@ -1221,70 +1221,70 @@ sWonderCardBgPal8: @ 0x082C3440
 
 sWonderCardBgGfx1: @ 0x082C3460
 	@ GBA LZ77: decompressed=0x380, stream=0xFC, stored=0xFC
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_card_bg_1.4bpp.lz"
+	.incbin "build/graphics/mystery_gift/wonder_card_bg_1.4bpp.lz"
 	.if (. - sWonderCardBgGfx1) > 0xFC
 	.error "sWonderCardBgGfx1 exceeds its exact ROM slot"
 	.endif
 
 sWonderCardBgTilemap1: @ 0x082C355C
 	@ GBA LZ77: decompressed=0x4B0, stream=0xF2, stored=0xF4
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_card_bg_1.bin.lz"
+	.incbin "build/graphics/mystery_gift/wonder_card_bg_1.bin.lz"
 	.if (. - sWonderCardBgTilemap1) > 0xF4
 	.error "sWonderCardBgTilemap1 exceeds its exact ROM slot"
 	.endif
 
 sWonderCardBgGfx2: @ 0x082C3650
 	@ GBA LZ77: decompressed=0x340, stream=0xF2, stored=0xF4
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_card_bg_2.4bpp.lz"
+	.incbin "build/graphics/mystery_gift/wonder_card_bg_2.4bpp.lz"
 	.if (. - sWonderCardBgGfx2) > 0xF4
 	.error "sWonderCardBgGfx2 exceeds its exact ROM slot"
 	.endif
 
 sWonderCardBgTilemap2: @ 0x082C3744
 	@ GBA LZ77: decompressed=0x4B0, stream=0xE6, stored=0xE8
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_card_bg_2.bin.lz"
+	.incbin "build/graphics/mystery_gift/wonder_card_bg_2.bin.lz"
 	.if (. - sWonderCardBgTilemap2) > 0xE8
 	.error "sWonderCardBgTilemap2 exceeds its exact ROM slot"
 	.endif
 
 sWonderCardBgGfx3: @ 0x082C382C
 	@ GBA LZ77: decompressed=0x2C0, stream=0xD3, stored=0xD4
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_card_bg_3.4bpp.lz"
+	.incbin "build/graphics/mystery_gift/wonder_card_bg_3.4bpp.lz"
 	.if (. - sWonderCardBgGfx3) > 0xD4
 	.error "sWonderCardBgGfx3 exceeds its exact ROM slot"
 	.endif
 
 sWonderCardBgTilemap3: @ 0x082C3900
 	@ GBA LZ77: decompressed=0x4B0, stream=0xD2, stored=0xD4
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_card_bg_3.bin.lz"
+	.incbin "build/graphics/mystery_gift/wonder_card_bg_3.bin.lz"
 	.if (. - sWonderCardBgTilemap3) > 0xD4
 	.error "sWonderCardBgTilemap3 exceeds its exact ROM slot"
 	.endif
 
 sWonderCardBgGfx7: @ 0x082C39D4
 	@ GBA LZ77: decompressed=0x780, stream=0x231, stored=0x234
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_card_bg_7.4bpp.lz"
+	.incbin "build/graphics/mystery_gift/wonder_card_bg_7.4bpp.lz"
 	.if (. - sWonderCardBgGfx7) > 0x234
 	.error "sWonderCardBgGfx7 exceeds its exact ROM slot"
 	.endif
 
 sWonderCardBgTilemap7: @ 0x082C3C08
 	@ GBA LZ77: decompressed=0x4B0, stream=0x145, stored=0x148
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_card_bg_7.bin.lz"
+	.incbin "build/graphics/mystery_gift/wonder_card_bg_7.bin.lz"
 	.if (. - sWonderCardBgTilemap7) > 0x148
 	.error "sWonderCardBgTilemap7 exceeds its exact ROM slot"
 	.endif
 
 sWonderCardBgGfx8: @ 0x082C3D50
 	@ GBA LZ77: decompressed=0x780, stream=0x22E, stored=0x230
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_card_bg_8.4bpp.lz"
+	.incbin "build/graphics/mystery_gift/wonder_card_bg_8.4bpp.lz"
 	.if (. - sWonderCardBgGfx8) > 0x230
 	.error "sWonderCardBgGfx8 exceeds its exact ROM slot"
 	.endif
 
 sWonderCardBgTilemap8: @ 0x082C3F80
 	@ GBA LZ77: decompressed=0x4B0, stream=0x145, stored=0x148
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_card_bg_8.bin.lz"
+	.incbin "build/graphics/mystery_gift/wonder_card_bg_8.bin.lz"
 	.if (. - sWonderCardBgTilemap8) > 0x148
 	.error "sWonderCardBgTilemap8 exceeds its exact ROM slot"
 	.endif
@@ -1323,7 +1323,7 @@ sStampShadowPal8: @ 0x082C41A8
 
 sStampShadowGfx: @ 0x082C41C8
 	@ GBA LZ77: decompressed=0x100, stream=0x64, stored=0x64
-	.incbin "build/graphics/raw_cleanup/mystery_gift/stamp_shadow.4bpp.lz"
+	.incbin "build/graphics/mystery_gift/stamp_shadow.4bpp.lz"
 	.if (. - sStampShadowGfx) > 0x64
 	.error "sStampShadowGfx exceeds its exact ROM slot"
 	.endif
@@ -1434,70 +1434,70 @@ sWonderNewsPal8: @ 0x082C4374
 
 sWonderNewsGfx1: @ 0x082C4394
 	@ GBA LZ77: decompressed=0x1E0, stream=0x7F, stored=0x80
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_news_1.4bpp.lz"
+	.incbin "build/graphics/mystery_gift/wonder_news_1.4bpp.lz"
 	.if (. - sWonderNewsGfx1) > 0x80
 	.error "sWonderNewsGfx1 exceeds its exact ROM slot"
 	.endif
 
 sWonderNewsTilemap1: @ 0x082C4414
 	@ GBA LZ77: decompressed=0x5A0, stream=0xDC, stored=0xDC
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_news_1.bin.lz"
+	.incbin "build/graphics/mystery_gift/wonder_news_1.bin.lz"
 	.if (. - sWonderNewsTilemap1) > 0xDC
 	.error "sWonderNewsTilemap1 exceeds its exact ROM slot"
 	.endif
 
 sWonderNewsGfx2: @ 0x082C44F0
 	@ GBA LZ77: decompressed=0xA0, stream=0x2E, stored=0x30
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_news_2.4bpp.lz"
+	.incbin "build/graphics/mystery_gift/wonder_news_2.4bpp.lz"
 	.if (. - sWonderNewsGfx2) > 0x30
 	.error "sWonderNewsGfx2 exceeds its exact ROM slot"
 	.endif
 
 sWonderNewsTilemap2: @ 0x082C4520
 	@ GBA LZ77: decompressed=0x5A0, stream=0xBF, stored=0xC0
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_news_2.bin.lz"
+	.incbin "build/graphics/mystery_gift/wonder_news_2.bin.lz"
 	.if (. - sWonderNewsTilemap2) > 0xC0
 	.error "sWonderNewsTilemap2 exceeds its exact ROM slot"
 	.endif
 
 sWonderNewsGfx3: @ 0x082C45E0
 	@ GBA LZ77: decompressed=0x160, stream=0x70, stored=0x70
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_news_3.4bpp.lz"
+	.incbin "build/graphics/mystery_gift/wonder_news_3.4bpp.lz"
 	.if (. - sWonderNewsGfx3) > 0x70
 	.error "sWonderNewsGfx3 exceeds its exact ROM slot"
 	.endif
 
 sWonderNewsTilemap3: @ 0x082C4650
 	@ GBA LZ77: decompressed=0x5A0, stream=0xC9, stored=0xCC
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_news_3.bin.lz"
+	.incbin "build/graphics/mystery_gift/wonder_news_3.bin.lz"
 	.if (. - sWonderNewsTilemap3) > 0xCC
 	.error "sWonderNewsTilemap3 exceeds its exact ROM slot"
 	.endif
 
 sWonderNewsGfx7: @ 0x082C471C
 	@ GBA LZ77: decompressed=0x1E0, stream=0x90, stored=0x90
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_news_7.4bpp.lz"
+	.incbin "build/graphics/mystery_gift/wonder_news_7.4bpp.lz"
 	.if (. - sWonderNewsGfx7) > 0x90
 	.error "sWonderNewsGfx7 exceeds its exact ROM slot"
 	.endif
 
 sWonderNewsTilemap7: @ 0x082C47AC
 	@ GBA LZ77: decompressed=0x5A0, stream=0xDC, stored=0xDC
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_news_7.bin.lz"
+	.incbin "build/graphics/mystery_gift/wonder_news_7.bin.lz"
 	.if (. - sWonderNewsTilemap7) > 0xDC
 	.error "sWonderNewsTilemap7 exceeds its exact ROM slot"
 	.endif
 
 sWonderNewsGfx8: @ 0x082C4888
 	@ GBA LZ77: decompressed=0x1E0, stream=0x90, stored=0x90
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_news_8.4bpp.lz"
+	.incbin "build/graphics/mystery_gift/wonder_news_8.4bpp.lz"
 	.if (. - sWonderNewsGfx8) > 0x90
 	.error "sWonderNewsGfx8 exceeds its exact ROM slot"
 	.endif
 
 sWonderNewsTilemap8: @ 0x082C4918
 	@ GBA LZ77: decompressed=0x5A0, stream=0xDC, stored=0xDC
-	.incbin "build/graphics/raw_cleanup/mystery_gift/wonder_news_8.bin.lz"
+	.incbin "build/graphics/mystery_gift/wonder_news_8.bin.lz"
 	.if (. - sWonderNewsTilemap8) > 0xDC
 	.error "sWonderNewsTilemap8 exceeds its exact ROM slot"
 	.endif

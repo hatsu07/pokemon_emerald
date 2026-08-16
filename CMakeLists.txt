@@ -163,6 +163,7 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                     "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
 
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/battle_transitions/(team_aqua|team_magma|frontier_logo)[.]bin[.]lz$")
         set(BTRANS_STEM "${CMAKE_MATCH_1}")
@@ -179,6 +180,150 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                     "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
     # END BATTLE TRANSITION EXACT PIPELINE
+
+    # BEGIN SEMANTIC BATTLE ANIM / MISC EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_anims/sprites/(.+)[.]4bpp[.]lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}"
+                --no-pad
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_anims/sprites/(.+)[.]gbapal[.]lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}" --lz
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/interface/blank_compressed.4bpp.lz")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/interface/blank_compressed.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}"
+                --no-pad
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/link/wireless_icon.4bpp.lz")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/link/wireless_icon.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                repack-png --key "link/wireless_icon.4bpp.lz"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/main_menu/birch_speech_bg.bin.lz")
+        set(INPUT_INC
+            "${CMAKE_SOURCE_DIR}/graphics/main_menu/birch_speech_bg.tilemap.inc")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                repack-inc --key "main_menu/birch_speech_bg.bin.lz"
+                "${INPUT_INC}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_INC}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/main_menu/(birch_speech_bg_gradient|main_menu_bg|main_menu_text)[.]gbapal$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/main_menu/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                encode-palette "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/mystery_gift/(wireless_status_bg_tiles|wonder_card_bg_[12378]|wonder_news_[12378]|stamp_shadow)[.]4bpp[.]lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/mystery_gift/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                repack-png --key "mystery_gift/${STEM}.4bpp.lz"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/mystery_gift/(wireless_status_bg_tiles|wonder_card_bg_[12378]|wonder_news_[12378])[.]bin[.]lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_INC
+            "${CMAKE_SOURCE_DIR}/graphics/mystery_gift/${STEM}.tilemap.inc")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                repack-inc --key "mystery_gift/${STEM}.bin.lz"
+                "${INPUT_INC}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_INC}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END SEMANTIC BATTLE ANIM / MISC EXACT ASSET PIPELINE
 
     # BEGIN BATTLE BG EXACT PIPELINE
     elseif("${RELATIVE_OUTPUT}" STREQUAL
@@ -4647,42 +4792,6 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
             COMMAND "${GBAGFX}" "${INPUT_BIN}" "${OUTPUT_ABS}"
             DEPENDS "${INPUT_BIN}" "${GBAGFX}"
-            VERBATIM)
-
-    elseif("${RELATIVE_OUTPUT}" MATCHES
-            "^build/graphics/raw_cleanup/(.+)\\.4bpp\\.lz$")
-        set(RAW_CLEAN_STEM "${CMAKE_MATCH_1}")
-        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/raw_cleanup/${RAW_CLEAN_STEM}.png")
-        add_custom_command(
-            OUTPUT "${OUTPUT_ABS}"
-            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
-            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/raw_cleanup_exact_assets.py"
-                repack-png --key "${RAW_CLEAN_STEM}.4bpp.lz" "${INPUT_PNG}" "${OUTPUT_ABS}"
-            DEPENDS "${INPUT_PNG}" "${CMAKE_SOURCE_DIR}/tools/raw_cleanup_exact_assets.py" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
-            VERBATIM)
-
-    elseif("${RELATIVE_OUTPUT}" MATCHES
-            "^build/graphics/raw_cleanup/(.+)\\.bin\\.lz$")
-        set(RAW_CLEAN_STEM "${CMAKE_MATCH_1}")
-        set(INPUT_INC "${CMAKE_SOURCE_DIR}/graphics/raw_cleanup/${RAW_CLEAN_STEM}.tilemap.inc")
-        add_custom_command(
-            OUTPUT "${OUTPUT_ABS}"
-            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
-            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/raw_cleanup_exact_assets.py"
-                repack-inc --key "${RAW_CLEAN_STEM}.bin.lz" "${INPUT_INC}" "${OUTPUT_ABS}"
-            DEPENDS "${INPUT_INC}" "${CMAKE_SOURCE_DIR}/tools/raw_cleanup_exact_assets.py" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
-            VERBATIM)
-
-    elseif("${RELATIVE_OUTPUT}" MATCHES
-            "^build/graphics/raw_cleanup/(.+)\\.gbapal$")
-        set(RAW_CLEAN_STEM "${CMAKE_MATCH_1}")
-        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/raw_cleanup/${RAW_CLEAN_STEM}.png")
-        add_custom_command(
-            OUTPUT "${OUTPUT_ABS}"
-            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
-            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/raw_cleanup_exact_assets.py"
-                encode-palette "${INPUT_PNG}" "${OUTPUT_ABS}"
-            DEPENDS "${INPUT_PNG}" "${CMAKE_SOURCE_DIR}/tools/raw_cleanup_exact_assets.py"
             VERBATIM)
 
     elseif("${RELATIVE_OUTPUT}" MATCHES

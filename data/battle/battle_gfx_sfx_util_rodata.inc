@@ -22,10 +22,10 @@ sSpriteSheet_SafariHealthbox: @ 0x082FCAF8
 	rodata_compressed_sprite_sheet 0x08C1F98C, 0x1000, TAG_HEALTHBOX_SAFARI_TILE @ gHealthboxSafariGfx
 
 sSpriteSheets_HealthBar: @ 0x082FCB00
-	rodata_compressed_sprite_sheet 0x08C02384, 0x0100, TAG_HEALTHBAR_PLAYER1_TILE @ gBlankGfxCompressed
-	rodata_compressed_sprite_sheet 0x08C02384, 0x0120, TAG_HEALTHBAR_OPPONENT1_TILE @ gBlankGfxCompressed
-	rodata_compressed_sprite_sheet 0x08C02384, 0x0100, TAG_HEALTHBAR_PLAYER2_TILE @ gBlankGfxCompressed
-	rodata_compressed_sprite_sheet 0x08C02384, 0x0120, TAG_HEALTHBAR_OPPONENT2_TILE @ gBlankGfxCompressed
+	rodata_compressed_sprite_sheet gBlankGfxCompressed, 0x0100, TAG_HEALTHBAR_PLAYER1_TILE @ gBlankGfxCompressed
+	rodata_compressed_sprite_sheet gBlankGfxCompressed, 0x0120, TAG_HEALTHBAR_OPPONENT1_TILE @ gBlankGfxCompressed
+	rodata_compressed_sprite_sheet gBlankGfxCompressed, 0x0100, TAG_HEALTHBAR_PLAYER2_TILE @ gBlankGfxCompressed
+	rodata_compressed_sprite_sheet gBlankGfxCompressed, 0x0120, TAG_HEALTHBAR_OPPONENT2_TILE @ gBlankGfxCompressed
 
 sSpritePalettes_HealthBoxHealthBar: @ 0x082FCB20
 	rodata_sprite_palette 0x08C11BA4, TAG_HEALTHBOX_PAL @ gBattleInterface_BallStatusBarPal

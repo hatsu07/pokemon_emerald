@@ -65,7 +65,7 @@ sLinkUnusedData:
 sWirelessLinkIconPalette: @ 0x082BFF7C
 	.2byte 0x7ED5, 0x5250, 0x7BDD, 0x5ED6, 0x3569, 0x001F, 0x42DF, 0x7FFF, 0x0000, 0x7BDD, 0x7BDD, 0x7BDD, 0x7BDD, 0x0000, 0x0000, 0x0000
 sWirelessLinkIconPic: @ 0x082BFF9C, LZ-compressed 4bpp graphics
-	.incbin "build/graphics/raw_cleanup/link/wireless_icon.4bpp.lz"
+	.incbin "build/graphics/link/wireless_icon.4bpp.lz"
 	.if (. - sWirelessLinkIconPic) > 0x124
 	.error "sWirelessLinkIconPic exceeds its exact ROM slot"
 	.endif

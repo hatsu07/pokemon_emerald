@@ -29,7 +29,7 @@ sBirchSpeechBgMap: @ 0x082D277C
 sLz77Block_082D277C:
 	@ analyzed canonical ROM range 0x082D277C-0x082D28A5
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	.incbin "build/graphics/raw_cleanup/main_menu/birch_speech_bg.bin.lz"
+	.incbin "build/graphics/main_menu/birch_speech_bg.bin.lz"
 	.if (. - sLz77Block_082D277C) > 0x12A
 	.error "sLz77Block_082D277C exceeds its exact ROM slot"
 	.endif
@@ -47,7 +47,7 @@ sLz77Block_082D277C:
 
 	.globl sBirchSpeechBgGradientPal
 sBirchSpeechBgGradientPal: @ 0x082D28A6
-	.incbin "build/graphics/raw_cleanup/main_menu/birch_speech_bg_gradient.gbapal"
+	.incbin "build/graphics/main_menu/birch_speech_bg_gradient.gbapal"
 	.if (. - sBirchSpeechBgGradientPal) != 0x20
 	.error "sBirchSpeechBgGradientPal size mismatch"
 	.endif
@@ -89,14 +89,14 @@ gMainMenuData_082D2918 = sNewGameBirchSpeechTextWindows + 8
 	.globl gMainMenuData_082D2918
 	.globl sMainMenuBgPal
 sMainMenuBgPal: @ 0x082D2930
-	.incbin "build/graphics/raw_cleanup/main_menu/main_menu_bg.gbapal"
+	.incbin "build/graphics/main_menu/main_menu_bg.gbapal"
 	.if (. - sMainMenuBgPal) != 0x20
 	.error "sMainMenuBgPal size mismatch"
 	.endif
 
 	.globl sMainMenuTextPal
 sMainMenuTextPal: @ 0x082D2950
-	.incbin "build/graphics/raw_cleanup/main_menu/main_menu_text.gbapal"
+	.incbin "build/graphics/main_menu/main_menu_text.gbapal"
 	.if (. - sMainMenuTextPal) != 0x20
 	.error "sMainMenuTextPal size mismatch"
 	.endif
