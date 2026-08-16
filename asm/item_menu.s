@@ -695,7 +695,7 @@ _081AAE6C:
 	bl decompress_and_copy_tile_data_to_vram
 	b _081AAF1E
 	.align 2, 0
-_081AAE84: .4byte sLz77Block_08D9A7CC
+_081AAE84: .4byte gBagScreen_Gfx
 _081AAE88:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -729,7 +729,7 @@ _081AAEAC:
 	b _081AAF1E
 	.align 2, 0
 _081AAECC: .4byte 0x03005AF0
-_081AAED0: .4byte gItemMenuData_08D9A780
+_081AAED0: .4byte gBagScreenFemale_Pal
 _081AAED4:
 	ldr r0, _081AAEE0
 	movs r1, #0
@@ -737,7 +737,7 @@ _081AAED4:
 	bl LoadCompressedPalette
 	b _081AAF1E
 	.align 2, 0
-_081AAEE0: .4byte gItemMenuData_08D9A734
+_081AAEE0: .4byte gBagScreenMale_Pal
 _081AAEE4:
 	bl IsWallysBag
 	lsls r0, r0, #0x18

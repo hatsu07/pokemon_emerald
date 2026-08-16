@@ -1192,7 +1192,7 @@ BuyMenuDecompressBgGraphics: @ 0x080DF968
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080DF998: .4byte gShopData_08D9B1B4
+_080DF998: .4byte gShopMenu_Gfx
 _080DF99C: .4byte 0x000003E3
 _080DF9A0: .4byte gShopData_08D9B2E8
 _080DF9A4: .4byte 0x02039C10

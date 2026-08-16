@@ -179,7 +179,7 @@ _0807F2E4:
 	ldr r1, [r5]
 	b _0807F39E
 	.align 2, 0
-_0807F2F8: .4byte gBerryBlenderData_08D91D6C
+_0807F2F8: .4byte gBerryBlenderOuter_Gfx
 _0807F2FC: .4byte 0x000011B8
 _0807F300:
 	ldr r0, [r5]
@@ -199,7 +199,7 @@ _0807F300:
 	b _0807F39E
 	.align 2, 0
 _0807F324: .4byte 0x000011B8
-_0807F328: .4byte gBerryBlenderData_08D91D6C
+_0807F328: .4byte gBerryBlenderOuter_Gfx
 _0807F32C:
 	ldr r0, _0807F340
 	ldr r1, [r5]

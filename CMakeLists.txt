@@ -991,6 +991,180 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
             VERBATIM)
 
+    # BEGIN SEMANTIC JP UI EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/berry_blender/outer.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/berry_blender/lz77_exact_plans.json"
+                --stem "berry_blender_outer_gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/berry_blender/outer.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/berry_blender/outer.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/berry_blender/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/party_menu/bg.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/party_menu/lz77_exact_plans.json"
+                --stem "party_menu_bg_gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/party_menu/bg.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/party_menu/lz77_exact_plans.json"
+                --stem "party_menu_bg_pal" --banks 11
+                "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_00.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_01.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_03.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_04.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_05.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_06.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_07.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_08.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_09.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_10.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/summary_screen/tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/summary_screen/lz77_exact_plans.json"
+                --stem "summary_screen_gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/summary_screen/tiles.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/summary_screen/lz77_exact_plans.json"
+                --stem "summary_screen_pal" --banks 8
+                "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_00.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_01.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_03.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_04.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_05.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_06.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_07.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/summary_screen/(page_info|page_skills|page_battle_moves|page_contest_moves)[.]bin[.]lz$")
+        set(SUMMARY_PAGE "${CMAKE_MATCH_1}")
+        if(SUMMARY_PAGE STREQUAL "page_info")
+            set(SUMMARY_PLAN_KEY "summary_page_info_tilemap")
+        elseif(SUMMARY_PAGE STREQUAL "page_skills")
+            set(SUMMARY_PLAN_KEY "summary_page_skills_tilemap")
+        elseif(SUMMARY_PAGE STREQUAL "page_battle_moves")
+            set(SUMMARY_PLAN_KEY "summary_page_battle_moves_tilemap")
+        else()
+            set(SUMMARY_PLAN_KEY "summary_page_contest_moves_tilemap")
+        endif()
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/summary_screen/lz77_exact_plans.json"
+                --stem "${SUMMARY_PLAN_KEY}"
+                "${CMAKE_SOURCE_DIR}/graphics/summary_screen/${SUMMARY_PAGE}.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/summary_screen/${SUMMARY_PAGE}.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/bag/menu.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/bag/lz77_exact_plans.json"
+                --stem "bag_screen_gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/bag/menu.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/bag/menu.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/bag/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/bag/(menu_male|menu_female|bag_pyramid)[.]gbapal[.]lz$")
+        set(BAG_PAL_NAME "${CMAKE_MATCH_1}")
+        if(BAG_PAL_NAME STREQUAL "menu_male")
+            set(BAG_PAL_SOURCE "menu_male_palette_banks")
+            set(BAG_PAL_KEY "bag_screen_male_pal")
+        elseif(BAG_PAL_NAME STREQUAL "menu_female")
+            set(BAG_PAL_SOURCE "menu_female_palette_banks")
+            set(BAG_PAL_KEY "bag_screen_female_pal")
+        else()
+            set(BAG_PAL_SOURCE "bag_pyramid_palette_banks")
+            set(BAG_PAL_KEY "battle_pyramid_bag_pal")
+        endif()
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/bag/lz77_exact_plans.json"
+                --stem "${BAG_PAL_KEY}" --banks 2
+                "${CMAKE_SOURCE_DIR}/graphics/bag/${BAG_PAL_SOURCE}" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/bag/${BAG_PAL_SOURCE}/palette_00.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/bag/${BAG_PAL_SOURCE}/palette_01.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/bag/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/bag/menu_pyramid.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/bag/lz77_exact_plans.json"
+                --stem "battle_pyramid_bag_tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/bag/menu_pyramid.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/bag/menu_pyramid.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/bag/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/shop/menu.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/shop/lz77_exact_plans.json"
+                --stem "shop_menu_gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/shop/menu.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/shop/menu.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/shop/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END SEMANTIC JP UI EXACT ASSET PIPELINE
+
     # BEGIN BATTLE ANIM BACKGROUND EXACT ASSET PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/battle_anims/backgrounds/(water)[.]4bpp[.]lz$")

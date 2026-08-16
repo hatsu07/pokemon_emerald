@@ -444,7 +444,7 @@ _081C4A80:
 	bl decompress_and_copy_tile_data_to_vram
 	b _081C4AE0
 	.align 2, 0
-_081C4A98: .4byte sLz77Block_08D9A7CC
+_081C4A98: .4byte gBagScreen_Gfx
 _081C4A9C:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -459,7 +459,7 @@ _081C4A9C:
 	ldr r1, [r4]
 	b _081C4AE4
 	.align 2, 0
-_081C4AB8: .4byte gBattlePyramidBagData_08D9AFFC
+_081C4AB8: .4byte gBattlePyramidBagTilemap
 _081C4ABC: .4byte 0x0203CBF8
 _081C4AC0:
 	ldr r0, _081C4ACC
@@ -3908,7 +3908,7 @@ sub_081C6658: @ 0x081C6658
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C66A0: .4byte gBattlePyramidBagData_08D9AFC8
+_081C66A0: .4byte gBattlePyramidBag_Pal
 _081C66A4: .4byte 0x03005AF0
 _081C66A8: .4byte 0x00000CA9
 _081C66AC: .4byte 0xFFFF0000

@@ -730,7 +730,7 @@ _081B02E8:
 	b _081B0372
 	.align 2, 0
 _081B0308: .4byte 0x0203CBAC
-_081B030C: .4byte gPartyMenuData_08D967A0
+_081B030C: .4byte gPartyMenuBg_Gfx
 _081B0310:
 	bl IsDma3ManagerBusyWithBgCopy
 	lsls r0, r0, #0x18
@@ -759,7 +759,7 @@ _081B0330:
 	ldr r1, [r4]
 	b _081B0376
 	.align 2, 0
-_081B0350: .4byte gPartyMenuData_08D96A68
+_081B0350: .4byte gPartyMenuBg_Pal
 _081B0354: .4byte 0x020373B4
 _081B0358: .4byte 0x0203CB90
 _081B035C:

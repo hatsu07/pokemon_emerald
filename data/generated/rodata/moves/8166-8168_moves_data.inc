@@ -1,13 +1,11 @@
-	@ pret/pokeemerald-jp direct xref for 0x08D91D6C: berry_blender.s: LoadBerryBlenderGfx
-	.globl gBerryBlenderData_08D91D6C
-gBerryBlenderData_08D91D6C:
-	.globl sLz77Block_08D91D6C
-	@ confirmed GBA LZ77 stream: compressed=0xA33, decompressed=0x2000
-sLz77Block_08D91D6C:
-	@ analyzed canonical ROM range 0x08D91D6C-0x08D9279F
-	.incbin "build/graphics/analyzed/gunknown_8d91d6c_08d91d6c.4bpp.lz"
-	.if (. - sLz77Block_08D91D6C) != 0xA34
-	.error "sLz77Block_08D91D6C compressed size mismatch"
+	@ semantic mapping proven by pret/pokeemerald-jp @ 6806c3e507da87a883b437f048969a45b38250c8
+	@ semantic name/source reference: pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6
+	.globl gBerryBlenderOuter_Gfx
+gBerryBlenderOuter_Gfx: @ 0x08D91D6C
+	@ exact GBA LZ77 slot: compressed=0xA34, decompressed=0x2000
+	.incbin "build/graphics/berry_blender/outer.4bpp.lz"
+	.if (. - gBerryBlenderOuter_Gfx) != 0xA34
+	.error "gBerryBlenderOuter_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D927A0: berry_blender.s: LoadBerryBlenderGfx
 	.globl gBerryBlenderData_08D927A0
@@ -207,27 +205,23 @@ gLz77Asset_08D96674: @ 0x08D96674
 gLz77Asset_08D96788: @ 0x08D96788
 	.incbin "build/assets/lz77_raw/08D96788.bin.lz"
 	.byte 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08D967A0: party_menu.s: AllocPartyMiscGfx
-	.globl gPartyMenuData_08D967A0
-gPartyMenuData_08D967A0:
-	.globl sLz77Block_08D967A0
-	@ confirmed GBA LZ77 stream: compressed=0x2C5, decompressed=0x7C0
-sLz77Block_08D967A0:
-	@ analyzed canonical ROM range 0x08D967A0-0x08D96A67
-	.incbin "build/graphics/analyzed/gunknown_8d967a0_08d967a0.4bpp.lz"
-	.if (. - sLz77Block_08D967A0) != 0x2C8
-	.error "sLz77Block_08D967A0 compressed size mismatch"
+	@ semantic mapping proven by pret/pokeemerald-jp @ 6806c3e507da87a883b437f048969a45b38250c8
+	@ semantic name/source reference: pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6
+	.globl gPartyMenuBg_Gfx
+gPartyMenuBg_Gfx: @ 0x08D967A0
+	@ exact GBA LZ77 slot: compressed=0x2C8, decompressed=0x7C0
+	.incbin "build/graphics/party_menu/bg.4bpp.lz"
+	.if (. - gPartyMenuBg_Gfx) != 0x2C8
+	.error "gPartyMenuBg_Gfx compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08D96A68: party_menu.s: AllocPartyMiscGfx
-	.globl gPartyMenuData_08D96A68
-gPartyMenuData_08D96A68:
-	.globl sLz77Block_08D96A68
-	@ confirmed GBA LZ77 stream: compressed=0xEC, decompressed=0x160
-sLz77Block_08D96A68:
-	@ analyzed canonical ROM range 0x08D96A68-0x08D96B53
-	.incbin "build/graphics/analyzed/gunknown_8d96a68_08d96a68.4bpp.lz"
-	.if (. - sLz77Block_08D96A68) != 0xEC
-	.error "sLz77Block_08D96A68 compressed size mismatch"
+	@ semantic mapping proven by pret/pokeemerald-jp @ 6806c3e507da87a883b437f048969a45b38250c8
+	@ semantic name/source reference: pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6
+	.globl gPartyMenuBg_Pal
+gPartyMenuBg_Pal: @ 0x08D96A68
+	@ exact GBA LZ77 slot: compressed=0xEC, decompressed=0x160
+	.incbin "build/graphics/party_menu/bg.gbapal.lz"
+	.if (. - gPartyMenuBg_Pal) != 0xEC
+	.error "gPartyMenuBg_Pal compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D96B54: party_menu.s: AllocPartyMiscGfx
 	.globl gPartyMenuData_08D96B54
@@ -276,71 +270,59 @@ gLz77Asset_08D97CBC: @ 0x08D97CBC
 	.globl gLz77Asset_08D97DB8
 gLz77Asset_08D97DB8: @ 0x08D97DB8
 	.incbin "build/assets/lz77_raw/08D97DB8.bin.lz"
-	@ pret/pokeemerald-jp direct xref for 0x08D97DD0: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
-	.globl gPokemonSummaryScreenData_08D97DD0
-gPokemonSummaryScreenData_08D97DD0:
-	.globl sLz77Block_08D97DD0
-	@ confirmed GBA LZ77 stream: compressed=0x9CA, decompressed=0x1B20
-sLz77Block_08D97DD0:
-	@ analyzed canonical ROM range 0x08D97DD0-0x08D9879B
-	.incbin "build/graphics/analyzed/gunknown_8d97dd0_08d97dd0.4bpp.lz"
-	.if (. - sLz77Block_08D97DD0) != 0x9CC
-	.error "sLz77Block_08D97DD0 compressed size mismatch"
+	@ semantic mapping proven by pret/pokeemerald-jp @ 6806c3e507da87a883b437f048969a45b38250c8
+	@ semantic name/source reference: pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6
+	.globl gSummaryScreen_Gfx
+gSummaryScreen_Gfx: @ 0x08D97DD0
+	@ exact GBA LZ77 slot: compressed=0x9CC, decompressed=0x1B20
+	.incbin "build/graphics/summary_screen/tiles.4bpp.lz"
+	.if (. - gSummaryScreen_Gfx) != 0x9CC
+	.error "gSummaryScreen_Gfx compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08D9879C: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
-	.globl gPokemonSummaryScreenData_08D9879C
-gPokemonSummaryScreenData_08D9879C:
-	.globl sLz77Block_08D9879C
-	@ confirmed GBA LZ77 stream: compressed=0xEF, decompressed=0x100
-sLz77Block_08D9879C:
-	@ analyzed canonical ROM range 0x08D9879C-0x08D9888B
-	.incbin "build/graphics/analyzed/gunknown_8d9879c_08d9879c.4bpp.lz"
-	.if (. - sLz77Block_08D9879C) != 0xF0
-	.error "sLz77Block_08D9879C compressed size mismatch"
+	@ semantic mapping proven by pret/pokeemerald-jp @ 6806c3e507da87a883b437f048969a45b38250c8
+	@ semantic name/source reference: pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6
+	.globl gSummaryScreen_Pal
+gSummaryScreen_Pal: @ 0x08D9879C
+	@ exact GBA LZ77 slot: compressed=0xF0, decompressed=0x100
+	.incbin "build/graphics/summary_screen/tiles.gbapal.lz"
+	.if (. - gSummaryScreen_Pal) != 0xF0
+	.error "gSummaryScreen_Pal compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08D9888C: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
-	.globl gPokemonSummaryScreenData_08D9888C
-gPokemonSummaryScreenData_08D9888C:
-	.globl sLz77Block_08D9888C
-	@ confirmed GBA LZ77 stream: compressed=0x1B8, decompressed=0x800
-sLz77Block_08D9888C:
-	@ analyzed canonical ROM range 0x08D9888C-0x08D98A43
-	.incbin "build/graphics/analyzed/gunknown_8d9888c_08d9888c.4bpp.lz"
-	.if (. - sLz77Block_08D9888C) != 0x1B8
-	.error "sLz77Block_08D9888C compressed size mismatch"
+	@ semantic mapping proven by pret/pokeemerald-jp @ 6806c3e507da87a883b437f048969a45b38250c8
+	@ semantic name/source reference: pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6
+	.globl gSummaryPage_Info_Tilemap
+gSummaryPage_Info_Tilemap: @ 0x08D9888C
+	@ exact GBA LZ77 slot: compressed=0x1B8, decompressed=0x800
+	.incbin "build/graphics/summary_screen/page_info.bin.lz"
+	.if (. - gSummaryPage_Info_Tilemap) != 0x1B8
+	.error "gSummaryPage_Info_Tilemap compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08D98A44: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
-	.globl gPokemonSummaryScreenData_08D98A44
-gPokemonSummaryScreenData_08D98A44:
-	.globl sLz77Block_08D98A44
-	@ confirmed GBA LZ77 stream: compressed=0x163, decompressed=0x800
-sLz77Block_08D98A44:
-	@ analyzed canonical ROM range 0x08D98A44-0x08D98BA7
-	.incbin "build/graphics/analyzed/gunknown_8d98a44_08d98a44.4bpp.lz"
-	.if (. - sLz77Block_08D98A44) != 0x164
-	.error "sLz77Block_08D98A44 compressed size mismatch"
+	@ semantic mapping proven by pret/pokeemerald-jp @ 6806c3e507da87a883b437f048969a45b38250c8
+	@ semantic name/source reference: pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6
+	.globl gSummaryPage_Skills_Tilemap
+gSummaryPage_Skills_Tilemap: @ 0x08D98A44
+	@ exact GBA LZ77 slot: compressed=0x164, decompressed=0x800
+	.incbin "build/graphics/summary_screen/page_skills.bin.lz"
+	.if (. - gSummaryPage_Skills_Tilemap) != 0x164
+	.error "gSummaryPage_Skills_Tilemap compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08D98BA8: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
-	.globl gPokemonSummaryScreenData_08D98BA8
-gPokemonSummaryScreenData_08D98BA8:
-	.globl sLz77Block_08D98BA8
-	@ confirmed GBA LZ77 stream: compressed=0x16B, decompressed=0x800
-sLz77Block_08D98BA8:
-	@ analyzed canonical ROM range 0x08D98BA8-0x08D98D13
-	.incbin "build/graphics/analyzed/gunknown_8d98ba8_08d98ba8.4bpp.lz"
-	.if (. - sLz77Block_08D98BA8) != 0x16C
-	.error "sLz77Block_08D98BA8 compressed size mismatch"
+	@ semantic mapping proven by pret/pokeemerald-jp @ 6806c3e507da87a883b437f048969a45b38250c8
+	@ semantic name/source reference: pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6
+	.globl gSummaryPage_BattleMoves_Tilemap
+gSummaryPage_BattleMoves_Tilemap: @ 0x08D98BA8
+	@ exact GBA LZ77 slot: compressed=0x16C, decompressed=0x800
+	.incbin "build/graphics/summary_screen/page_battle_moves.bin.lz"
+	.if (. - gSummaryPage_BattleMoves_Tilemap) != 0x16C
+	.error "gSummaryPage_BattleMoves_Tilemap compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08D98D14: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
-	.globl gPokemonSummaryScreenData_08D98D14
-gPokemonSummaryScreenData_08D98D14:
-	.globl sLz77Block_08D98D14
-	@ confirmed GBA LZ77 stream: compressed=0x175, decompressed=0x800
-sLz77Block_08D98D14:
-	@ analyzed canonical ROM range 0x08D98D14-0x08D98E8B
-	.incbin "build/graphics/analyzed/gunknown_8d98d14_08d98d14.4bpp.lz"
-	.if (. - sLz77Block_08D98D14) != 0x178
-	.error "sLz77Block_08D98D14 compressed size mismatch"
+	@ semantic mapping proven by pret/pokeemerald-jp @ 6806c3e507da87a883b437f048969a45b38250c8
+	@ semantic name/source reference: pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6
+	.globl gSummaryPage_ContestMoves_Tilemap
+gSummaryPage_ContestMoves_Tilemap: @ 0x08D98D14
+	@ exact GBA LZ77 slot: compressed=0x178, decompressed=0x800
+	.incbin "build/graphics/summary_screen/page_contest_moves.bin.lz"
+	.if (. - gSummaryPage_ContestMoves_Tilemap) != 0x178
+	.error "gSummaryPage_ContestMoves_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D98E8C: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
 	.globl gPokemonSummaryScreenData_08D98E8C
@@ -362,36 +344,32 @@ gLz77Asset_08D99BAC: @ 0x08D99BAC
 	.globl gLz77Asset_08D9A70C
 gLz77Asset_08D9A70C: @ 0x08D9A70C
 	.incbin "build/assets/lz77_raw/08D9A70C.bin.lz"
-	@ pret/pokeemerald-jp direct xref for 0x08D9A734: item_menu.s: LoadBagMenu_Graphics
-	.globl gItemMenuData_08D9A734
-gItemMenuData_08D9A734:
-	.globl sLz77Block_08D9A734
-	@ confirmed GBA LZ77 stream: compressed=0x4A, decompressed=0x40
-sLz77Block_08D9A734:
-	@ analyzed canonical ROM range 0x08D9A734-0x08D9A77F
-	.incbin "build/graphics/analyzed/gunknown_8d9a734_08d9a734.4bpp.lz"
-	.if (. - sLz77Block_08D9A734) != 0x4C
-	.error "sLz77Block_08D9A734 compressed size mismatch"
+	@ semantic mapping proven by pret/pokeemerald-jp @ 6806c3e507da87a883b437f048969a45b38250c8
+	@ semantic name/source reference: pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6
+	.globl gBagScreenMale_Pal
+gBagScreenMale_Pal: @ 0x08D9A734
+	@ exact GBA LZ77 slot: compressed=0x4C, decompressed=0x40
+	.incbin "build/graphics/bag/menu_male.gbapal.lz"
+	.if (. - gBagScreenMale_Pal) != 0x4C
+	.error "gBagScreenMale_Pal compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08D9A780: item_menu.s: LoadBagMenu_Graphics
-	.globl gItemMenuData_08D9A780
-gItemMenuData_08D9A780:
-	.globl sLz77Block_08D9A780
-	@ confirmed GBA LZ77 stream: compressed=0x4A, decompressed=0x40
-sLz77Block_08D9A780:
-	@ analyzed canonical ROM range 0x08D9A780-0x08D9A7CB
-	.incbin "build/graphics/analyzed/gunknown_8d9a780_08d9a780.4bpp.lz"
-	.if (. - sLz77Block_08D9A780) != 0x4C
-	.error "sLz77Block_08D9A780 compressed size mismatch"
+	@ semantic mapping proven by pret/pokeemerald-jp @ 6806c3e507da87a883b437f048969a45b38250c8
+	@ semantic name/source reference: pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6
+	.globl gBagScreenFemale_Pal
+gBagScreenFemale_Pal: @ 0x08D9A780
+	@ exact GBA LZ77 slot: compressed=0x4C, decompressed=0x40
+	.incbin "build/graphics/bag/menu_female.gbapal.lz"
+	.if (. - gBagScreenFemale_Pal) != 0x4C
+	.error "gBagScreenFemale_Pal compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08D9A7CC: battle_pyramid_bag.s: sub_081C4A40; item_menu.s: LoadBagMenu_Graphics
-	.globl sLz77Block_08D9A7CC
-	@ confirmed GBA LZ77 stream: compressed=0x2B7, decompressed=0x6A0
-sLz77Block_08D9A7CC:
-	@ analyzed canonical ROM range 0x08D9A7CC-0x08D9AA83
-	.incbin "build/graphics/analyzed/gunknown_8d9a7cc_08d9a7cc.4bpp.lz"
-	.if (. - sLz77Block_08D9A7CC) != 0x2B8
-	.error "sLz77Block_08D9A7CC compressed size mismatch"
+	@ semantic mapping proven by pret/pokeemerald-jp @ 6806c3e507da87a883b437f048969a45b38250c8
+	@ semantic name/source reference: pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6
+	.globl gBagScreen_Gfx
+gBagScreen_Gfx: @ 0x08D9A7CC
+	@ exact GBA LZ77 slot: compressed=0x2B8, decompressed=0x6A0
+	.incbin "build/graphics/bag/menu.4bpp.lz"
+	.if (. - gBagScreen_Gfx) != 0x2B8
+	.error "gBagScreen_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9AA84: item_menu.s: LoadBagMenu_Graphics
 	.globl gItemMenuData_08D9AA84
@@ -407,27 +385,23 @@ sLz77Block_08D9AA84:
 gLz77Asset_08D9ABE4: @ 0x08D9ABE4
 	.incbin "build/assets/lz77_raw/08D9ABE4.bin.lz"
 	.byte 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08D9AFC8: battle_pyramid_bag.s: sub_081C6658
-	.globl gBattlePyramidBagData_08D9AFC8
-gBattlePyramidBagData_08D9AFC8:
-	.globl sLz77Block_08D9AFC8
-	@ confirmed GBA LZ77 stream: compressed=0x33, decompressed=0x40
-sLz77Block_08D9AFC8:
-	@ analyzed canonical ROM range 0x08D9AFC8-0x08D9AFFB
-	.incbin "build/graphics/analyzed/gunknown_8d9afc8_08d9afc8.4bpp.lz"
-	.if (. - sLz77Block_08D9AFC8) != 0x34
-	.error "sLz77Block_08D9AFC8 compressed size mismatch"
+	@ semantic mapping proven by pret/pokeemerald-jp @ 6806c3e507da87a883b437f048969a45b38250c8
+	@ semantic name/source reference: pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6
+	.globl gBattlePyramidBag_Pal
+gBattlePyramidBag_Pal: @ 0x08D9AFC8
+	@ exact GBA LZ77 slot: compressed=0x34, decompressed=0x40
+	.incbin "build/graphics/bag/bag_pyramid.gbapal.lz"
+	.if (. - gBattlePyramidBag_Pal) != 0x34
+	.error "gBattlePyramidBag_Pal compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08D9AFFC: battle_pyramid_bag.s: sub_081C4A40
-	.globl gBattlePyramidBagData_08D9AFFC
-gBattlePyramidBagData_08D9AFFC:
-	.globl sLz77Block_08D9AFFC
-	@ confirmed GBA LZ77 stream: compressed=0x13E, decompressed=0x800
-sLz77Block_08D9AFFC:
-	@ analyzed canonical ROM range 0x08D9AFFC-0x08D9B13B
-	.incbin "build/graphics/analyzed/gunknown_8d9affc_08d9affc.4bpp.lz"
-	.if (. - sLz77Block_08D9AFFC) != 0x140
-	.error "sLz77Block_08D9AFFC compressed size mismatch"
+	@ semantic mapping proven by pret/pokeemerald-jp @ 6806c3e507da87a883b437f048969a45b38250c8
+	@ semantic name/source reference: pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6
+	.globl gBattlePyramidBagTilemap
+gBattlePyramidBagTilemap: @ 0x08D9AFFC
+	@ exact GBA LZ77 slot: compressed=0x140, decompressed=0x800
+	.incbin "build/graphics/bag/menu_pyramid.bin.lz"
+	.if (. - gBattlePyramidBagTilemap) != 0x140
+	.error "gBattlePyramidBagTilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9B13C: battle_pyramid_bag.s: sub_081C4A40
 	.globl gBattlePyramidBagData_08D9B13C
@@ -445,14 +419,12 @@ gLz77Asset_08D9B164: @ 0x08D9B164
 gLz77Asset_08D9B1A4: @ 0x08D9B1A4
 	.incbin "build/assets/lz77_raw/08D9B1A4.bin.lz"
 	.byte 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08D9B1B4: shop.s: BuyMenuDecompressBgGraphics
-	.globl gShopData_08D9B1B4
-gShopData_08D9B1B4:
-	.globl sLz77Block_08D9B1B4
-	@ confirmed GBA LZ77 stream: compressed=0x109, decompressed=0x3A0
-sLz77Block_08D9B1B4:
-	@ analyzed canonical ROM range 0x08D9B1B4-0x08D9B2BF
-	.incbin "build/graphics/analyzed/gunknown_8d9b1b4_08d9b1b4.4bpp.lz"
-	.if (. - sLz77Block_08D9B1B4) != 0x10C
-	.error "sLz77Block_08D9B1B4 compressed size mismatch"
+	@ semantic mapping proven by pret/pokeemerald-jp @ 6806c3e507da87a883b437f048969a45b38250c8
+	@ semantic name/source reference: pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6
+	.globl gShopMenu_Gfx
+gShopMenu_Gfx: @ 0x08D9B1B4
+	@ exact GBA LZ77 slot: compressed=0x10C, decompressed=0x3A0
+	.incbin "build/graphics/shop/menu.4bpp.lz"
+	.if (. - gShopMenu_Gfx) != 0x10C
+	.error "gShopMenu_Gfx compressed size mismatch"
 	.endif

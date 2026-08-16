@@ -706,7 +706,7 @@ _081BF874:
 	bl decompress_and_copy_tile_data_to_vram
 	b _081BF9A6
 	.align 2, 0
-_081BF88C: .4byte gPokemonSummaryScreenData_08D97DD0
+_081BF88C: .4byte gSummaryScreen_Gfx
 _081BF890:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -725,7 +725,7 @@ _081BF89E:
 	adds r1, r1, r2
 	b _081BF9AE
 	.align 2, 0
-_081BF8B4: .4byte gPokemonSummaryScreenData_08D9888C
+_081BF8B4: .4byte gSummaryPage_Info_Tilemap
 _081BF8B8: .4byte 0x0203CBE8
 _081BF8BC: .4byte 0x000040F0
 _081BF8C0:
@@ -748,7 +748,7 @@ _081BF8D8:
 	ldr r1, [r4]
 	b _081BF9AA
 	.align 2, 0
-_081BF8E8: .4byte gPokemonSummaryScreenData_08D98A44
+_081BF8E8: .4byte gSummaryPage_Skills_Tilemap
 _081BF8EC: .4byte 0x000018BC
 _081BF8F0:
 	ldr r0, _081BF900
@@ -759,7 +759,7 @@ _081BF8F0:
 	ldr r1, [r4]
 	b _081BF9AA
 	.align 2, 0
-_081BF900: .4byte gPokemonSummaryScreenData_08D98BA8
+_081BF900: .4byte gSummaryPage_BattleMoves_Tilemap
 _081BF904: .4byte 0x000028BC
 _081BF908:
 	ldr r0, _081BF918
@@ -770,7 +770,7 @@ _081BF908:
 	ldr r1, [r4]
 	b _081BF9AA
 	.align 2, 0
-_081BF918: .4byte gPokemonSummaryScreenData_08D98D14
+_081BF918: .4byte gSummaryPage_ContestMoves_Tilemap
 _081BF91C: .4byte 0x000038BC
 _081BF920:
 	ldr r0, _081BF940
@@ -788,7 +788,7 @@ _081BF920:
 	adds r1, r1, r2
 	b _081BF9AE
 	.align 2, 0
-_081BF940: .4byte gPokemonSummaryScreenData_08D9879C
+_081BF940: .4byte gSummaryScreen_Pal
 _081BF944: .4byte gMoveU8Table_Rom_D85604
 _081BF948: .4byte 0x0203CBE8
 _081BF94C: .4byte 0x000040F0
