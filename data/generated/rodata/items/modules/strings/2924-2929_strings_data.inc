@@ -969,15 +969,12 @@ gPokedexCryScreenData_08597FCC: @ 0x08597FCC
 	.byte 0x00, 0x00, 0x1B, 0x00, 0x42, 0x08, 0xC6, 0x18, 0xFE, 0x35, 0x4A, 0x29, 0x8C, 0x31, 0xCE, 0x39
 	.byte 0x10, 0x42, 0x52, 0x4A, 0x94, 0x52, 0xD6, 0x5A, 0x18, 0x63, 0x5A, 0x6B, 0x9C, 0x73, 0xFF, 0x7F
 	@ pret/pokeemerald-jp direct xref for 0x08597FEC: pokedex_cry_screen.s: sub_0814591C
-	.globl gPokedexCryScreenData_08597FEC
-gPokedexCryScreenData_08597FEC:
-	.globl sLz77Block_08597FEC
-	@ confirmed GBA LZ77 stream: compressed=0x335, decompressed=0xA00
-sLz77Block_08597FEC:
-	@ analyzed canonical ROM range 0x08597FEC-0x08598323
-	.incbin "build/graphics/analyzed/gunknown_8597fec_08597fec.4bpp.lz"
-	.if (. - sLz77Block_08597FEC) != 0x338
-	.error "sLz77Block_08597FEC compressed size mismatch"
+	.globl sCryMeter_Gfx
+sCryMeter_Gfx: @ 0x08597FEC
+	@ Semantic exact-LZ asset; source: graphics/pokedex/cry_meter.png.
+	.incbin "build/graphics/final_remaining/pokedex_cry_meter.4bpp.lz"
+	.if (. - sCryMeter_Gfx) != 0x338
+	.error "sCryMeter_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08598324: pokedex_cry_screen.s: sub_08145774
 	.globl gPokedexCryScreenData_08598324

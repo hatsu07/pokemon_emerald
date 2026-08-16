@@ -2,8 +2,6 @@
 	@ Semantic names recovered from main_menu.c declaration order and JP consumers.
 	.globl sBirchSpeechBgPals
 sBirchSpeechBgPals = gMainMenuData_082D2588
-	.globl sBirchSpeechShadowGfx
-sBirchSpeechShadowGfx = gMainMenuData_082D25C8
 
 	.globl gMainMenuData_082D2588
 gMainMenuData_082D2588: @ 0x082D2588
@@ -15,15 +13,12 @@ gMainMenuData_082D2588: @ 0x082D2588
 	.2byte 0x0000, 0x53FF, 0x37FF, 0x2F7B, 0x26F7, 0x1E73, 0x19EF, 0x116B
 	.2byte 0x08E7, 0x67F8, 0x43EF, 0x376E, 0x2EED, 0x226C, 0x19EB, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x082D25C8: main_menu.s: CB2_NewGameBirchSpeech_ReturnFromNamingScreen, sub_0803058C
-	.globl gMainMenuData_082D25C8
-gMainMenuData_082D25C8:
-	.globl sLz77Block_082D25C8
-	@ confirmed GBA LZ77 stream: compressed=0x1B2, decompressed=0x600
-sLz77Block_082D25C8:
-	@ analyzed canonical ROM range 0x082D25C8-0x082D277B
-	.incbin "build/graphics/analyzed/gunknown_82d25c8_082d25c8.4bpp.lz"
-	.if (. - sLz77Block_082D25C8) != 0x1B4
-	.error "sLz77Block_082D25C8 compressed size mismatch"
+	.globl sBirchSpeechShadowGfx
+sBirchSpeechShadowGfx: @ 0x082D25C8
+	@ Semantic exact-LZ asset; source: graphics/birch_speech/shadow.png.
+	.incbin "build/graphics/final_remaining/birch_speech_shadow.4bpp.lz"
+	.if (. - sBirchSpeechShadowGfx) != 0x1B4
+	.error "sBirchSpeechShadowGfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082D277C: main_menu.s: CB2_NewGameBirchSpeech_ReturnFromNamingScreen, sub_0803058C
 	.globl gMainMenuData_082D277C

@@ -103,15 +103,12 @@ sLz77Block_085AC484:
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
 	.incbin "build/assets/lz77_raw/085AC484.bin.lz"
 	@ pret/pokeemerald-jp direct xref for 0x085AC5DC: cable_car.s: CableCarMainCallback_Setup
-	.globl gCableCarData_085AC5DC
-gCableCarData_085AC5DC:
-	.globl sLz77Block_085AC5DC
-	@ confirmed GBA LZ77 stream: compressed=0x182, decompressed=0x3C0
-sLz77Block_085AC5DC:
-	@ analyzed canonical ROM range 0x085AC5DC-0x085AC75F
-	.incbin "build/graphics/analyzed/gunknown_85ac5dc_085ac5dc.4bpp.lz"
-	.if (. - sLz77Block_085AC5DC) != 0x184
-	.error "sLz77Block_085AC5DC compressed size mismatch"
+	.globl sTrees_Tilemap
+sTrees_Tilemap: @ 0x085AC5DC
+	@ Semantic exact-LZ asset; source: graphics/cable_car/trees.tilemap.u16.
+	.incbin "build/graphics/final_remaining/cable_car_trees.bin.lz"
+	.if (. - sTrees_Tilemap) != 0x184
+	.error "sTrees_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085AC760: cable_car.s: CableCarMainCallback_Setup
 	.globl gCableCarData_085AC760

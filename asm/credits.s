@@ -2983,7 +2983,7 @@ _08176BCC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08176BE8: .4byte gCreditsData_085C682C
+_08176BE8: .4byte sCreditsCopyrightEnd_Gfx
 _08176BEC: .4byte gIntroCopyright_Pal
 _08176BF0: .4byte 0x000003FF
 _08176BF4: .4byte 0x060001C8

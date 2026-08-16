@@ -280,15 +280,12 @@ gHallOfFameData_085C65A4: @ 0x085C65A4
 	.2byte 0x0000, 0x0000, 0x63B0, 0x109F, 0x5B6E, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x2108, 0x7FFF
 	@ pret/pokeemerald-jp direct xref for 0x085C65C4: hall_of_fame.s: sub_08174F28
-	.globl gHallOfFameData_085C65C4
-gHallOfFameData_085C65C4:
-	.globl sLz77Block_085C65C4
-	@ confirmed GBA LZ77 stream: compressed=0x1C9, decompressed=0x3A0
-sLz77Block_085C65C4:
-	@ analyzed canonical ROM range 0x085C65C4-0x085C678F
-	.incbin "build/graphics/analyzed/gunknown_85c65c4_085c65c4.4bpp.lz"
-	.if (. - sLz77Block_085C65C4) != 0x1CC
-	.error "sLz77Block_085C65C4 compressed size mismatch"
+	.globl sHallOfFame_Gfx
+sHallOfFame_Gfx: @ 0x085C65C4
+	@ Semantic exact-LZ asset; source: graphics/misc/japanese_hof.png.
+	.incbin "build/graphics/final_remaining/hall_of_fame.4bpp.lz"
+	.if (. - sHallOfFame_Gfx) != 0x1CC
+	.error "sHallOfFame_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085C6790: hall_of_fame.s: CB2_DoHallOfFamePC, Task_HofPC_HandlePaletteOnExit
 	.globl gHallOfFameData_085C6790
@@ -313,15 +310,12 @@ gCreditsData_085C67AC: @ 0x085C67AC
 	.2byte 0x2120, 0x2102, 0x1210, 0x2212, 0x2221, 0x0221, 0x1021, 0x0212
 	.2byte 0x2112, 0x2122, 0x2220, 0x2200, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085C682C: credits.s: sub_08176B24
-	.globl gCreditsData_085C682C
-gCreditsData_085C682C:
-	.globl sLz77Block_085C682C
-	@ confirmed GBA LZ77 stream: compressed=0x43C, decompressed=0xB40
-sLz77Block_085C682C:
-	@ analyzed canonical ROM range 0x085C682C-0x085C6C67
-	.incbin "build/graphics/analyzed/gunknown_85c682c_085c682c.4bpp.lz"
-	.if (. - sLz77Block_085C682C) != 0x43C
-	.error "sLz77Block_085C682C compressed size mismatch"
+	.globl sCreditsCopyrightEnd_Gfx
+sCreditsCopyrightEnd_Gfx: @ 0x085C682C
+	@ Semantic exact-LZ asset; source: graphics/credits/the_end_copyright.png.
+	.incbin "build/graphics/final_remaining/credits_end.4bpp.lz"
+	.if (. - sCreditsCopyrightEnd_Gfx) != 0x43C
+	.error "sCreditsCopyrightEnd_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085C6C68: credits.s: sub_08176CCC
 	.globl gCreditsData_085C6C68

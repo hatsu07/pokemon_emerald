@@ -779,15 +779,12 @@ gMatchCallData_085D75E8: @ 0x085D75E8
 	.byte 0xFF, 0x7F, 0x95, 0x15, 0x55, 0x4A, 0xB6, 0x56, 0x1F, 0x00, 0xFE, 0x31, 0x94, 0x66, 0x8C, 0x79
 	.byte 0xFF, 0x7F, 0xC1, 0x7E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1F, 0x3B, 0x39, 0x6B, 0xB5, 0x5E
 	@ pret/pokeemerald-jp direct xref for 0x085D7608: match_call.s: LoadMatchCallWindowGfx
-	.globl gMatchCallData_085D7608
-gMatchCallData_085D7608:
-	.globl sLz77Block_085D7608
-	@ confirmed GBA LZ77 stream: compressed=0x3E2, decompressed=0x1000
-sLz77Block_085D7608:
-	@ analyzed canonical ROM range 0x085D7608-0x085D79EB
-	.incbin "build/graphics/analyzed/gunknown_85d7608_085d7608.4bpp.lz"
-	.if (. - sLz77Block_085D7608) != 0x3E4
-	.error "sLz77Block_085D7608 compressed size mismatch"
+	.globl sPokenavIcon_Gfx
+sPokenavIcon_Gfx: @ 0x085D7608
+	@ Semantic exact-LZ asset; source: graphics/pokenav/match_call/nav_icon.png.
+	.incbin "build/graphics/final_remaining/pokenav_icon.4bpp.lz"
+	.if (. - sPokenavIcon_Gfx) != 0x3E4
+	.error "sPokenavIcon_Gfx compressed size mismatch"
 	.endif
 	.globl gBattleDataBlock_Rom_5D79EC
 gBattleDataBlock_Rom_5D79EC: @ 0x085D79EC

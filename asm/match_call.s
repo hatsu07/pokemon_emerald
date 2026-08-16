@@ -503,7 +503,7 @@ _08195D88:
 	movs r0, #1
 	b _08195DE6
 	.align 2, 0
-_08195DC4: .4byte gMatchCallData_085D7608
+_08195DC4: .4byte sPokenavIcon_Gfx
 _08195DC8: .4byte 0x00000279
 _08195DCC: .4byte gMatchCallData_085D74C8
 _08195DD0: .4byte gMatchCallData_085D75E8

@@ -695,7 +695,7 @@ _08145950:
 	b _081459C4
 	.align 2, 0
 _08145970: .4byte 0x0203A864
-_08145974: .4byte gPokedexCryScreenData_08597FEC
+_08145974: .4byte sCryMeter_Gfx
 _08145978: .4byte gPokedexCryScreenData_08597FCC
 _0814597C:
 	ldr r0, _081459D0

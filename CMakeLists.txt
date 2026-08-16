@@ -545,6 +545,142 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END SHOP MENU PALETTE EXACT PIPELINE
 
+    # BEGIN FINAL REMAINING GRAPHICS EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/final_remaining/birch_speech_shadow.4bpp.lz")
+        set(FINAL_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/birch_speech/shadow.png")
+        set(FINAL_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/final_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                gfx4 --manifest "${FINAL_REMAINING_PLAN}"
+                --key "birch_speech_shadow"
+                "${FINAL_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${FINAL_REMAINING_INPUT}"
+                "${FINAL_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/final_remaining/pokedex_cry_meter.4bpp.lz")
+        set(FINAL_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/pokedex/cry_meter.png")
+        set(FINAL_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/final_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                gfx4 --manifest "${FINAL_REMAINING_PLAN}"
+                --key "cry_meter"
+                "${FINAL_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${FINAL_REMAINING_INPUT}"
+                "${FINAL_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/final_remaining/cable_car_trees.bin.lz")
+        set(FINAL_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/cable_car/trees.tilemap.u16")
+        set(FINAL_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/final_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                u16 --manifest "${FINAL_REMAINING_PLAN}"
+                --key "cable_car_trees"
+                "${FINAL_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${FINAL_REMAINING_INPUT}"
+                "${FINAL_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/final_remaining/hall_of_fame.4bpp.lz")
+        set(FINAL_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/misc/japanese_hof.png")
+        set(FINAL_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/final_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                gfx4 --manifest "${FINAL_REMAINING_PLAN}"
+                --key "hall_of_fame"
+                "${FINAL_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${FINAL_REMAINING_INPUT}"
+                "${FINAL_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/final_remaining/credits_end.4bpp.lz")
+        set(FINAL_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/credits/the_end_copyright.png")
+        set(FINAL_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/final_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                gfx4 --manifest "${FINAL_REMAINING_PLAN}"
+                --key "credits_end"
+                "${FINAL_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${FINAL_REMAINING_INPUT}"
+                "${FINAL_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/final_remaining/pokenav_icon.4bpp.lz")
+        set(FINAL_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/pokenav/match_call/nav_icon.png")
+        set(FINAL_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/final_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                gfx4 --manifest "${FINAL_REMAINING_PLAN}"
+                --key "pokenav_icon"
+                "${FINAL_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${FINAL_REMAINING_INPUT}"
+                "${FINAL_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/final_remaining/berry_blender_center.bin.lz")
+        set(FINAL_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/berry_blender/center.png")
+        set(FINAL_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/final_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                gfx8 --manifest "${FINAL_REMAINING_PLAN}"
+                --key "berry_blender_center"
+                "${FINAL_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${FINAL_REMAINING_INPUT}"
+                "${FINAL_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END FINAL REMAINING GRAPHICS EXACT PIPELINE
+
     # BEGIN MAP TILESET PNG PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/tilesets/(.+)/tiles[.]4bpp[.]lz$")

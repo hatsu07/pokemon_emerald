@@ -3448,7 +3448,7 @@ _08174F5C:
 	bl decompress_and_copy_tile_data_to_vram
 	b _0817500C
 	.align 2, 0
-_08174F70: .4byte gHallOfFameData_085C65C4
+_08174F70: .4byte sHallOfFame_Gfx
 _08174F74:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
