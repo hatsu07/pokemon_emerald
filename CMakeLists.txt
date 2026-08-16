@@ -991,6 +991,84 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
             VERBATIM)
 
+    # BEGIN BATTLE ANIM BACKGROUND EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_anims/backgrounds/(water)[.]4bpp[.]lz$")
+        set(BATTLE_ANIM_BG_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/water.png")
+        set(BATTLE_ANIM_BG_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${BATTLE_ANIM_BG_PLAN}"
+                --stem "surf_gfx"
+                "${BATTLE_ANIM_BG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_ANIM_BG_INPUT}"
+                "${BATTLE_ANIM_BG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_anims/backgrounds/(water)[.]gbapal[.]lz$")
+        set(BATTLE_ANIM_BG_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/water.png")
+        set(BATTLE_ANIM_BG_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_anim_background_exact.py"
+                repack-pal
+                --manifest "${BATTLE_ANIM_BG_PLAN}"
+                --stem "surf_pal"
+                "${BATTLE_ANIM_BG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_ANIM_BG_INPUT}"
+                "${BATTLE_ANIM_BG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_anim_background_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_anims/backgrounds/(scary_face_player|scary_face_opponent|water_opponent|water_player)[.]bin[.]lz$")
+        set(BATTLE_ANIM_BG_TILEMAP "${CMAKE_MATCH_1}")
+        set(BATTLE_ANIM_BG_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/${BATTLE_ANIM_BG_TILEMAP}.tilemap.u16")
+        set(BATTLE_ANIM_BG_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/lz77_exact_plans.json")
+
+        if(BATTLE_ANIM_BG_TILEMAP STREQUAL "scary_face_player")
+            set(BATTLE_ANIM_BG_KEY "scary_face_player_tilemap")
+        elseif(BATTLE_ANIM_BG_TILEMAP STREQUAL "scary_face_opponent")
+            set(BATTLE_ANIM_BG_KEY "scary_face_opponent_tilemap")
+        elseif(BATTLE_ANIM_BG_TILEMAP STREQUAL "water_opponent")
+            set(BATTLE_ANIM_BG_KEY "water_opponent_tilemap")
+        else()
+            set(BATTLE_ANIM_BG_KEY "water_player_tilemap")
+        endif()
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${BATTLE_ANIM_BG_PLAN}"
+                --stem "${BATTLE_ANIM_BG_KEY}"
+                "${BATTLE_ANIM_BG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_ANIM_BG_INPUT}"
+                "${BATTLE_ANIM_BG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END BATTLE ANIM BACKGROUND EXACT ASSET PIPELINE
+
     # BEGIN DODRIO BERRY PICKING EXACT ASSET PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/dodrio_berry_picking/(bg|tree_border|status|cloud|dodrio)[.]4bpp[.]lz$")

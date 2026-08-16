@@ -53,27 +53,21 @@ gLz77Asset_08D9340C: @ 0x08D9340C
 	.globl gLz77Asset_08D93428
 gLz77Asset_08D93428: @ 0x08D93428
 	.incbin "build/assets/lz77_raw/08D93428.bin.lz"
-	@ pret/pokeemerald-jp direct xref for 0x08D9354C: battle_anim_effects_2.s: sub_08106D48
-	.globl gBattleAnimEffects2Data_08D9354C
-gBattleAnimEffects2Data_08D9354C:
-	.globl sLz77Block_08D9354C
-	@ confirmed GBA LZ77 stream: compressed=0x1E4, decompressed=0x800
-sLz77Block_08D9354C:
-	@ analyzed canonical ROM range 0x08D9354C-0x08D9372F
-	.incbin "build/graphics/analyzed/gunknown_8d9354c_08d9354c.4bpp.lz"
-	.if (. - sLz77Block_08D9354C) != 0x1E4
-	.error "sLz77Block_08D9354C compressed size mismatch"
+	@ canonical pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6: graphics/battle_anims/backgrounds/scary_face_player.bin
+	.globl gBattleAnimBgTilemap_ScaryFacePlayer
+gBattleAnimBgTilemap_ScaryFacePlayer: @ 0x08D9354C
+	@ exact GBA LZ77 slot: compressed=0x1E4, decompressed=0x800
+	.incbin "build/graphics/battle_anims/backgrounds/scary_face_player.bin.lz"
+	.if (. - gBattleAnimBgTilemap_ScaryFacePlayer) != 0x1E4
+	.error "gBattleAnimBgTilemap_ScaryFacePlayer compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08D93730: battle_anim_effects_2.s: sub_08106D48
-	.globl gBattleAnimEffects2Data_08D93730
-gBattleAnimEffects2Data_08D93730:
-	.globl sLz77Block_08D93730
-	@ confirmed GBA LZ77 stream: compressed=0x1E4, decompressed=0x800
-sLz77Block_08D93730:
-	@ analyzed canonical ROM range 0x08D93730-0x08D93913
-	.incbin "build/graphics/analyzed/gunknown_8d93730_08d93730.4bpp.lz"
-	.if (. - sLz77Block_08D93730) != 0x1E4
-	.error "sLz77Block_08D93730 compressed size mismatch"
+	@ canonical pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6: graphics/battle_anims/backgrounds/scary_face_opponent.bin
+	.globl gBattleAnimBgTilemap_ScaryFaceOpponent
+gBattleAnimBgTilemap_ScaryFaceOpponent: @ 0x08D93730
+	@ exact GBA LZ77 slot: compressed=0x1E4, decompressed=0x800
+	.incbin "build/graphics/battle_anims/backgrounds/scary_face_opponent.bin.lz"
+	.if (. - gBattleAnimBgTilemap_ScaryFaceOpponent) != 0x1E4
+	.error "gBattleAnimBgTilemap_ScaryFaceOpponent compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D93914: battle_anim_effects_2.s: sub_08106D48
 	.globl gBattleAnimEffects2Data_08D93914
@@ -160,49 +154,37 @@ gLz77Asset_08D949A4: @ 0x08D949A4
 gLz77Asset_08D94A44: @ 0x08D94A44
 	.incbin "build/assets/lz77_raw/08D94A44.bin.lz"
 	.byte 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08D94A6C: water.s: AnimTask_CreateSurfWave
-	.globl gWaterData_08D94A6C
-gWaterData_08D94A6C:
-	.globl sLz77Block_08D94A6C
-	@ confirmed GBA LZ77 stream: compressed=0x131D, decompressed=0x2000
-sLz77Block_08D94A6C:
-	@ analyzed canonical ROM range 0x08D94A6C-0x08D95D8B
-	.incbin "build/graphics/analyzed/gunknown_8d94a6c_08d94a6c.4bpp.lz"
-	.if (. - sLz77Block_08D94A6C) != 0x1320
-	.error "sLz77Block_08D94A6C compressed size mismatch"
+	@ canonical pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6: graphics/battle_anims/backgrounds/water.png
+	.globl gBattleAnimBgImage_Surf
+gBattleAnimBgImage_Surf: @ 0x08D94A6C
+	@ exact GBA LZ77 slot: compressed=0x1320, decompressed=0x2000
+	.incbin "build/graphics/battle_anims/backgrounds/water.4bpp.lz"
+	.if (. - gBattleAnimBgImage_Surf) != 0x1320
+	.error "gBattleAnimBgImage_Surf compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08D95D8C: water.s: AnimTask_CreateSurfWave
-	.globl gWaterData_08D95D8C
-gWaterData_08D95D8C:
-	.globl sLz77Block_08D95D8C
-	@ confirmed GBA LZ77 stream: compressed=0x25, decompressed=0x20
-sLz77Block_08D95D8C:
-	@ analyzed canonical ROM range 0x08D95D8C-0x08D95DB3
-	.incbin "build/graphics/analyzed/gunknown_8d95d8c_08d95d8c.4bpp.lz"
-	.if (. - sLz77Block_08D95D8C) != 0x28
-	.error "sLz77Block_08D95D8C compressed size mismatch"
+	@ canonical pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6: graphics/battle_anims/backgrounds/water.png
+	.globl gBattleAnimBgPalette_Surf
+gBattleAnimBgPalette_Surf: @ 0x08D95D8C
+	@ exact GBA LZ77 slot: compressed=0x28, decompressed=0x20
+	.incbin "build/graphics/battle_anims/backgrounds/water.gbapal.lz"
+	.if (. - gBattleAnimBgPalette_Surf) != 0x28
+	.error "gBattleAnimBgPalette_Surf compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08D95DB4: water.s: AnimTask_CreateSurfWave
-	.globl gWaterData_08D95DB4
-gWaterData_08D95DB4:
-	.globl sLz77Block_08D95DB4
-	@ confirmed GBA LZ77 stream: compressed=0x2D0, decompressed=0x1000
-sLz77Block_08D95DB4:
-	@ analyzed canonical ROM range 0x08D95DB4-0x08D96083
-	.incbin "build/graphics/analyzed/gunknown_8d95db4_08d95db4.4bpp.lz"
-	.if (. - sLz77Block_08D95DB4) != 0x2D0
-	.error "sLz77Block_08D95DB4 compressed size mismatch"
+	@ canonical pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6: graphics/battle_anims/backgrounds/water_opponent.bin
+	.globl gBattleAnimBgTilemap_SurfOpponent
+gBattleAnimBgTilemap_SurfOpponent: @ 0x08D95DB4
+	@ exact GBA LZ77 slot: compressed=0x2D0, decompressed=0x1000
+	.incbin "build/graphics/battle_anims/backgrounds/water_opponent.bin.lz"
+	.if (. - gBattleAnimBgTilemap_SurfOpponent) != 0x2D0
+	.error "gBattleAnimBgTilemap_SurfOpponent compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08D96084: water.s: AnimTask_CreateSurfWave
-	.globl gWaterData_08D96084
-gWaterData_08D96084:
-	.globl sLz77Block_08D96084
-	@ confirmed GBA LZ77 stream: compressed=0x2D3, decompressed=0x1000
-sLz77Block_08D96084:
-	@ analyzed canonical ROM range 0x08D96084-0x08D96357
-	.incbin "build/graphics/analyzed/gunknown_8d96084_08d96084.4bpp.lz"
-	.if (. - sLz77Block_08D96084) != 0x2D4
-	.error "sLz77Block_08D96084 compressed size mismatch"
+	@ canonical pret/pokeemerald @ 9a83a2bbe8e097e62c00f1dbd56849766775d7b6: graphics/battle_anims/backgrounds/water_player.bin
+	.globl gBattleAnimBgTilemap_SurfPlayer
+gBattleAnimBgTilemap_SurfPlayer: @ 0x08D96084
+	@ exact GBA LZ77 slot: compressed=0x2D4, decompressed=0x1000
+	.incbin "build/graphics/battle_anims/backgrounds/water_player.bin.lz"
+	.if (. - gBattleAnimBgTilemap_SurfPlayer) != 0x2D4
+	.error "gBattleAnimBgTilemap_SurfPlayer compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D96358: water.s: AnimTask_CreateSurfWave
 	.globl gWaterData_08D96358

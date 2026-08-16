@@ -1061,7 +1061,7 @@ AnimTask_CreateSurfWave: @ 0x081081A4
 	.align 2, 0
 _08108214: .4byte 0x00003F42
 _08108218: .4byte 0x020380D6
-_0810821C: .4byte gWaterData_08D95DB4
+_0810821C: .4byte gBattleAnimBgTilemap_SurfOpponent
 _08108220:
 	mov r0, sp
 	ldrb r0, [r0, #9]
@@ -1069,7 +1069,7 @@ _08108220:
 	bl AnimLoadCompressedBgTilemap
 	b _0810823A
 	.align 2, 0
-_0810822C: .4byte gWaterData_08D96084
+_0810822C: .4byte gBattleAnimBgTilemap_SurfPlayer
 _08108230:
 	ldr r1, _08108264
 	mov r0, sp
@@ -1096,9 +1096,9 @@ _0810823A:
 	b _08108282
 	.align 2, 0
 _08108264: .4byte gWaterData_08D96358
-_08108268: .4byte gWaterData_08D94A6C
+_08108268: .4byte gBattleAnimBgImage_Surf
 _0810826C: .4byte 0x020380BE
-_08108270: .4byte gWaterData_08D95D8C
+_08108270: .4byte gBattleAnimBgPalette_Surf
 _08108274:
 	ldr r0, _081082EC
 	mov r1, sp

@@ -6356,7 +6356,7 @@ _08106DDA:
 	b _08106DF6
 	.align 2, 0
 _08106DE4: .4byte 0x020380D7
-_08106DE8: .4byte gBattleAnimEffects2Data_08D9354C
+_08106DE8: .4byte gBattleAnimBgTilemap_ScaryFacePlayer
 _08106DEC:
 	ldr r1, _08106E28
 	mov r0, sp
@@ -6387,7 +6387,7 @@ _08106DF6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08106E28: .4byte gBattleAnimEffects2Data_08D93730
+_08106E28: .4byte gBattleAnimBgTilemap_ScaryFaceOpponent
 _08106E2C: .4byte 0x08C24A9C
 _08106E30: .4byte 0x08C24A74
 _08106E34: .4byte 0x03005B60
