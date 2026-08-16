@@ -386,6 +386,12 @@
     "-mheight",
     "4"
   ],
+  "people/devon_employee.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
   "people/elite_four/drake.png": [
     "-mwidth",
     "2",
@@ -609,6 +615,12 @@
     "2"
   ],
   "people/man_1.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/man_2.png": [
     "-mwidth",
     "2",
     "-mheight",

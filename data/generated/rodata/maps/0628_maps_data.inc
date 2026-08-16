@@ -75,39 +75,39 @@ gObjectEventFrame_JP_0847EB0C: @ 0x0847EB0C
 	.globl gObjectEventFrame_JP_0847ED0C
 gObjectEventFrame_JP_0847ED0C: @ 0x0847ED0C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 91, 107; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847ed0c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/may/acro_bike.4bpp", 0x0, 0x200 @ gObjectEventPic_MayAcroBike frame slice
 	.globl gObjectEventFrame_JP_0847EF0C
 gObjectEventFrame_JP_0847EF0C: @ 0x0847EF0C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 91, 107; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847ef0c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/may/acro_bike.4bpp", 0x200, 0x200 @ gObjectEventPic_MayAcroBike frame slice
 	.globl gObjectEventFrame_JP_0847F10C
 gObjectEventFrame_JP_0847F10C: @ 0x0847F10C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 91, 107; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847f10c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/may/acro_bike.4bpp", 0x400, 0x200 @ gObjectEventPic_MayAcroBike frame slice
 	.globl gObjectEventFrame_JP_0847F30C
 gObjectEventFrame_JP_0847F30C: @ 0x0847F30C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 91, 107; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847f30c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/may/acro_bike.4bpp", 0x600, 0x200 @ gObjectEventPic_MayAcroBike frame slice
 	.globl gObjectEventFrame_JP_0847F50C
 gObjectEventFrame_JP_0847F50C: @ 0x0847F50C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 91, 107; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847f50c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/may/acro_bike.4bpp", 0x800, 0x200 @ gObjectEventPic_MayAcroBike frame slice
 	.globl gObjectEventFrame_JP_0847F70C
 gObjectEventFrame_JP_0847F70C: @ 0x0847F70C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 91, 107; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847f70c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/may/acro_bike.4bpp", 0xA00, 0x200 @ gObjectEventPic_MayAcroBike frame slice
 	.globl gObjectEventFrame_JP_0847F90C
 gObjectEventFrame_JP_0847F90C: @ 0x0847F90C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 91, 107; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847f90c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/may/acro_bike.4bpp", 0xC00, 0x200 @ gObjectEventPic_MayAcroBike frame slice
 	.globl gObjectEventFrame_JP_0847FB0C
 gObjectEventFrame_JP_0847FB0C: @ 0x0847FB0C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 91, 107; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847fb0c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/may/acro_bike.4bpp", 0xE00, 0x200 @ gObjectEventPic_MayAcroBike frame slice
 	.globl gObjectEventFrame_JP_0847FD0C
 gObjectEventFrame_JP_0847FD0C: @ 0x0847FD0C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 91, 107; size=0x200
-	.incbin "build/graphics/analyzed/object_event_frame_0847fd0c.4bpp" @ size=0x200
+	.incbin "build/graphics/object_events/pics/people/may/acro_bike.4bpp", 0x1000, 0x200 @ gObjectEventPic_MayAcroBike frame slice
 	.globl gObjectEventFrame_JP_0847FF0C
 gObjectEventFrame_JP_0847FF0C: @ 0x0847FF0C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 91, 107; size=0x200
@@ -990,39 +990,39 @@ gObjectEventFrame_JP_0848F18C: @ 0x0848F18C
 	.globl gObjectEventFrame_JP_0848F28C
 gObjectEventFrame_JP_0848F28C: @ 0x0848F28C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 23; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0848f28c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/man_2.4bpp", 0x0, 0x100 @ gObjectEventPic_Man2 frame slice
 	.globl gObjectEventFrame_JP_0848F38C
 gObjectEventFrame_JP_0848F38C: @ 0x0848F38C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 23; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0848f38c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/man_2.4bpp", 0x100, 0x100 @ gObjectEventPic_Man2 frame slice
 	.globl gObjectEventFrame_JP_0848F48C
 gObjectEventFrame_JP_0848F48C: @ 0x0848F48C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 23; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0848f48c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/man_2.4bpp", 0x200, 0x100 @ gObjectEventPic_Man2 frame slice
 	.globl gObjectEventFrame_JP_0848F58C
 gObjectEventFrame_JP_0848F58C: @ 0x0848F58C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 23; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0848f58c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/man_2.4bpp", 0x300, 0x100 @ gObjectEventPic_Man2 frame slice
 	.globl gObjectEventFrame_JP_0848F68C
 gObjectEventFrame_JP_0848F68C: @ 0x0848F68C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 23; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0848f68c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/man_2.4bpp", 0x400, 0x100 @ gObjectEventPic_Man2 frame slice
 	.globl gObjectEventFrame_JP_0848F78C
 gObjectEventFrame_JP_0848F78C: @ 0x0848F78C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 23; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0848f78c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/man_2.4bpp", 0x500, 0x100 @ gObjectEventPic_Man2 frame slice
 	.globl gObjectEventFrame_JP_0848F88C
 gObjectEventFrame_JP_0848F88C: @ 0x0848F88C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 23; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0848f88c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/man_2.4bpp", 0x600, 0x100 @ gObjectEventPic_Man2 frame slice
 	.globl gObjectEventFrame_JP_0848F98C
 gObjectEventFrame_JP_0848F98C: @ 0x0848F98C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 23; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0848f98c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/man_2.4bpp", 0x700, 0x100 @ gObjectEventPic_Man2 frame slice
 	.globl gObjectEventFrame_JP_0848FA8C
 gObjectEventFrame_JP_0848FA8C: @ 0x0848FA8C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 23; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_0848fa8c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/man_2.4bpp", 0x800, 0x100 @ gObjectEventPic_Man2 frame slice
 	.globl gObjectEventFrame_JP_0848FB8C
 gObjectEventFrame_JP_0848FB8C: @ 0x0848FB8C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 24; size=0x100
@@ -2801,39 +2801,39 @@ gObjectEventFrame_JP_084AA30C: @ 0x084AA30C
 	.globl gObjectEventFrame_JP_084AA40C
 gObjectEventFrame_JP_084AA40C: @ 0x084AA40C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 116; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_084aa40c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/devon_employee.4bpp", 0x0, 0x100 @ gObjectEventPic_DevonEmployee frame slice
 	.globl gObjectEventFrame_JP_084AA50C
 gObjectEventFrame_JP_084AA50C: @ 0x084AA50C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 116; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_084aa50c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/devon_employee.4bpp", 0x100, 0x100 @ gObjectEventPic_DevonEmployee frame slice
 	.globl gObjectEventFrame_JP_084AA60C
 gObjectEventFrame_JP_084AA60C: @ 0x084AA60C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 116; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_084aa60c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/devon_employee.4bpp", 0x200, 0x100 @ gObjectEventPic_DevonEmployee frame slice
 	.globl gObjectEventFrame_JP_084AA70C
 gObjectEventFrame_JP_084AA70C: @ 0x084AA70C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 116; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_084aa70c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/devon_employee.4bpp", 0x300, 0x100 @ gObjectEventPic_DevonEmployee frame slice
 	.globl gObjectEventFrame_JP_084AA80C
 gObjectEventFrame_JP_084AA80C: @ 0x084AA80C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 116; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_084aa80c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/devon_employee.4bpp", 0x400, 0x100 @ gObjectEventPic_DevonEmployee frame slice
 	.globl gObjectEventFrame_JP_084AA90C
 gObjectEventFrame_JP_084AA90C: @ 0x084AA90C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 116; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_084aa90c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/devon_employee.4bpp", 0x500, 0x100 @ gObjectEventPic_DevonEmployee frame slice
 	.globl gObjectEventFrame_JP_084AAA0C
 gObjectEventFrame_JP_084AAA0C: @ 0x084AAA0C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 116; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_084aaa0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/devon_employee.4bpp", 0x600, 0x100 @ gObjectEventPic_DevonEmployee frame slice
 	.globl gObjectEventFrame_JP_084AAB0C
 gObjectEventFrame_JP_084AAB0C: @ 0x084AAB0C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 116; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_084aab0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/devon_employee.4bpp", 0x700, 0x100 @ gObjectEventPic_DevonEmployee frame slice
 	.globl gObjectEventFrame_JP_084AAC0C
 gObjectEventFrame_JP_084AAC0C: @ 0x084AAC0C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 116; size=0x100
-	.incbin "build/graphics/analyzed/object_event_frame_084aac0c.4bpp" @ size=0x100
+	.incbin "build/graphics/object_events/pics/people/devon_employee.4bpp", 0x800, 0x100 @ gObjectEventPic_DevonEmployee frame slice
 	.globl gObjectEventFrame_JP_084AAD0C
 gObjectEventFrame_JP_084AAD0C: @ 0x084AAD0C
 	@ SpriteFrameImage 4bpp data; object gfx id(s): 117; size=0x100
