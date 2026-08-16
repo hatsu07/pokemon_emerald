@@ -1,16 +1,10 @@
 	@ pret/pokeemerald-jp direct xref for 0x08D9B2C0: shop.s: BuyMenuDecompressBgGraphics
 	.globl gShopMenu_Pal
 gShopMenu_Pal: @ 0x08D9B2C0
-	@ Compatibility alias retained for the existing shop.s consumer.
-	.globl gShopData_08D9B2C0
-gShopData_08D9B2C0:
-	.globl sLz77Block_08D9B2C0
-	@ confirmed GBA LZ77 stream: compressed=0x28, decompressed=0x20
-sLz77Block_08D9B2C0:
-	@ analyzed canonical ROM range 0x08D9B2C0-0x08D9B2E7
-	.incbin "build/graphics/analyzed/gunknown_8d9b2c0_08d9b2c0.4bpp.lz"
-	.if (. - sLz77Block_08D9B2C0) != 0x28
-	.error "sLz77Block_08D9B2C0 compressed size mismatch"
+	@ Semantic exact-LZ Shop menu palette.
+	.incbin "build/graphics/shop_jp/menu.gbapal.lz"
+	.if (. - gShopMenu_Pal) != 0x28
+	.error "gShopMenu_Pal compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9B2E8: shop.s: BuyMenuDecompressBgGraphics
 	.globl gShopData_08D9B2E8

@@ -522,6 +522,29 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END POKEBLOCK REMAINING EXACT PIPELINE
 
+    # BEGIN SHOP MENU PALETTE EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/shop_jp/menu.gbapal.lz")
+        set(SHOP_MENU_PAL_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/shop/menu_palette.png")
+        set(SHOP_MENU_PAL_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/shop/jp_menu_palette_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/shop_menu_palette_exact.py"
+                --manifest "${SHOP_MENU_PAL_PLAN}"
+                --key "menu_palette"
+                "${SHOP_MENU_PAL_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${SHOP_MENU_PAL_INPUT}"
+                "${SHOP_MENU_PAL_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/shop_menu_palette_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END SHOP MENU PALETTE EXACT PIPELINE
+
     # BEGIN MAP TILESET PNG PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/tilesets/(.+)/tiles[.]4bpp[.]lz$")

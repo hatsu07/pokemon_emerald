@@ -1196,7 +1196,7 @@ _080DF998: .4byte gShopMenu_Gfx
 _080DF99C: .4byte 0x000003E3
 _080DF9A0: .4byte gShopData_08D9B2E8
 _080DF9A4: .4byte 0x02039C10
-_080DF9A8: .4byte gShopData_08D9B2C0
+_080DF9A8: .4byte gShopMenu_Pal
 	thumb_func_end BuyMenuDecompressBgGraphics
 
 	thumb_func_start BuyMenuInitWindows
