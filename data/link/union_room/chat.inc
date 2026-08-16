@@ -93,27 +93,19 @@ gUnionRoomChatData_082C5220: @ 0x082C5220
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0x13, 0x33, 0x05, 0x6E, 0x40, 0x55, 0xF8, 0x37, 0x95, 0x1B, 0xDE, 0x6B, 0xDF, 0x18, 0x5F, 0x4A
 	.byte 0x90, 0x6A, 0xBD, 0x2F, 0x08, 0x21, 0xCE, 0x39, 0xB5, 0x56, 0x9C, 0x7F, 0x00, 0x00, 0xFF, 0x7F
-	@ pret/pokeemerald-jp direct xref for 0x082C5240: union_room_chat.s: sub_080202D0
-	.globl gUnionRoomChatData_082C5240
-gUnionRoomChatData_082C5240:
-	.globl sLz77Block_082C5240
-	@ confirmed GBA LZ77 stream: compressed=0x5A, decompressed=0x120
-sLz77Block_082C5240:
-	@ analyzed canonical ROM range 0x082C5240-0x082C529B
-	.incbin "build/graphics/analyzed/gunknown_82c5240_082c5240.4bpp.lz"
-	.if (. - sLz77Block_082C5240) != 0x5C
-	.error "sLz77Block_082C5240 compressed size mismatch"
+	@ semantic exact asset for 0x082C5240: gUnionRoomChat_Keyboard_Gfx
+	.globl gUnionRoomChat_Keyboard_Gfx
+gUnionRoomChat_Keyboard_Gfx:
+	.incbin "build/graphics/union_room_chat/keyboard.4bpp.lz"
+	.if (. - gUnionRoomChat_Keyboard_Gfx) != 0x5C
+	.error "gUnionRoomChat_Keyboard_Gfx compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x082C529C: union_room_chat.s: sub_080202D0
-	.globl gUnionRoomChatData_082C529C
-gUnionRoomChatData_082C529C:
-	.globl sLz77Block_082C529C
-	@ confirmed GBA LZ77 stream: compressed=0xAC, decompressed=0x500
-sLz77Block_082C529C:
-	@ analyzed canonical ROM range 0x082C529C-0x082C5347
-	.incbin "build/graphics/analyzed/gunknown_82c529c_082c529c.4bpp.lz"
-	.if (. - sLz77Block_082C529C) != 0xAC
-	.error "sLz77Block_082C529C compressed size mismatch"
+	@ semantic exact asset for 0x082C529C: gUnionRoomChat_Keyboard_Tilemap
+	.globl gUnionRoomChat_Keyboard_Tilemap
+gUnionRoomChat_Keyboard_Tilemap:
+	.incbin "build/graphics/union_room_chat/keyboard.bin.lz"
+	.if (. - gUnionRoomChat_Keyboard_Tilemap) != 0xAC
+	.error "gUnionRoomChat_Keyboard_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082C5348: union_room_chat.s: sub_080202D0
 	.globl gUnionRoomChatData_082C5348
@@ -131,27 +123,19 @@ gUnionRoomChatData_082C5368: @ 0x082C5368
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0x13, 0x33, 0x05, 0x6E, 0x40, 0x55, 0xF8, 0x37, 0x95, 0x1B, 0xDE, 0x6B, 0x00, 0x00, 0xDF, 0x18
 	.byte 0x5F, 0x4A, 0x90, 0x6A, 0xBD, 0x2F, 0x9C, 0x7F, 0xB5, 0x56, 0xCE, 0x39, 0xFF, 0x7F, 0x08, 0x21
-	@ pret/pokeemerald-jp direct xref for 0x082C5388: union_room_chat.s: sub_08020320
-	.globl gUnionRoomChatData_082C5388
-gUnionRoomChatData_082C5388:
-	.globl sLz77Block_082C5388
-	@ confirmed GBA LZ77 stream: compressed=0x234, decompressed=0x4C0
-sLz77Block_082C5388:
-	@ analyzed canonical ROM range 0x082C5388-0x082C55BB
-	.incbin "build/graphics/analyzed/gunknown_82c5388_082c5388.4bpp.lz"
-	.if (. - sLz77Block_082C5388) != 0x234
-	.error "sLz77Block_082C5388 compressed size mismatch"
+	@ semantic exact asset for 0x082C5388: gUnionRoomChat_Background_Gfx
+	.globl gUnionRoomChat_Background_Gfx
+gUnionRoomChat_Background_Gfx:
+	.incbin "build/graphics/union_room_chat/background.4bpp.lz"
+	.if (. - gUnionRoomChat_Background_Gfx) != 0x234
+	.error "gUnionRoomChat_Background_Gfx compressed size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x082C55BC: union_room_chat.s: sub_08020320
-	.globl gUnionRoomChatData_082C55BC
-gUnionRoomChatData_082C55BC:
-	.globl sLz77Block_082C55BC
-	@ confirmed GBA LZ77 stream: compressed=0xF8, decompressed=0x500
-sLz77Block_082C55BC:
-	@ analyzed canonical ROM range 0x082C55BC-0x082C56B3
-	.incbin "build/graphics/analyzed/gunknown_82c55bc_082c55bc.4bpp.lz"
-	.if (. - sLz77Block_082C55BC) != 0xF8
-	.error "sLz77Block_082C55BC compressed size mismatch"
+	@ semantic exact asset for 0x082C55BC: gUnionRoomChat_Background_Tilemap
+	.globl gUnionRoomChat_Background_Tilemap
+gUnionRoomChat_Background_Tilemap:
+	.incbin "build/graphics/union_room_chat/background.bin.lz"
+	.if (. - gUnionRoomChat_Background_Tilemap) != 0xF8
+	.error "gUnionRoomChat_Background_Tilemap compressed size mismatch"
 	.endif
 	.globl gUnionRoomU32Table_Rom_2C56B4
 gUnionRoomU32Table_Rom_2C56B4: @ 0x082C56B4

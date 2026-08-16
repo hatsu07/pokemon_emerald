@@ -1939,6 +1939,68 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
 
     # END POKEDEX AREA GLOW / EVOLUTION SCENE EXACT ASSET PIPELINE
+    # BEGIN UNION ROOM CHAT EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/union_room_chat/keyboard.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                --key "gUnionRoomChat_Keyboard_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/keyboard.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/keyboard.png"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/union_room_chat/keyboard.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                --key "gUnionRoomChat_Keyboard_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/keyboard.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/keyboard.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/union_room_chat/background.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                --key "gUnionRoomChat_Background_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/background.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/background.png"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/union_room_chat/background.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                --key "gUnionRoomChat_Background_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/background.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/background.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END UNION ROOM CHAT EXACT ASSET PIPELINE
     # END POKEDEX AREA / POKENAV EXACT ASSET PIPELINE
 
     # BEGIN POKEDEX EXACT ASSET PIPELINE
