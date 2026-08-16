@@ -142,6 +142,45 @@ list(SORT GRAPHICS_RELATIVE_OUTPUTS)
 
 set(GRAPHICS_OUTPUTS)
 
+# BEGIN REMAINING B16 EXACT OUTPUT LIST
+set(REMAINING_B16_EXACT_OUTPUTS
+    "build/graphics/battle_anims/unused/spinning_ball_2_palette.gbapal.lz"
+    "build/graphics/unused/old_battle_interface_pal_1_2_3.gbapal.lz"
+    "build/graphics/unused/old_battle_interface_pal_5_6_7.gbapal.lz"
+    "build/graphics/unused/old_battle_interface.bin.lz"
+    "build/graphics/battle_anims/unused/unknown_1.bin.lz"
+    "build/graphics/battle_anims/unused/unknown_2.bin.lz"
+    "build/graphics/battle_anims/unused/unknown_3.bin.lz"
+    "build/graphics/battle_anims/unused/line_sketch_2.8bpp.lz"
+    "build/graphics/battle_anims/unused/line_sketch_2.bin.lz"
+    "build/graphics/battle_anims/unused/unknown_4.bin.lz"
+    "build/graphics/unused/blue_frame.bin.lz"
+    "build/graphics/unused/red_yellow_green_frame.bin.lz"
+    "build/graphics/battle_anims/unused/water_splash.8bpp.lz"
+    "build/graphics/battle_anims/unused/water_splash.bin.lz"
+    "build/graphics/battle_anims/unused/water_splash_palette.gbapal.lz"
+    "build/graphics/unused/basic_frame.bin.lz"
+)
+set(REMAINING_B16_EXACT_SOURCES
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/spinning_ball_2_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/old_battle_interface_pal_1_2_3.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/old_battle_interface_pal_5_6_7.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/old_battle_interface.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/unknown_1.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/unknown_2.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/unknown_3.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/line_sketch_2.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/line_sketch_2.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/unknown_4.bin"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/blue_frame.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/red_yellow_green_frame.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/water_splash.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/water_splash.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/water_splash_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/basic_frame.tilemap.u16"
+)
+# END REMAINING B16 EXACT OUTPUT LIST
+
 # BEGIN REMAINING A52 EXACT OUTPUT LIST
 set(REMAINING_A52_EXACT_OUTPUTS
     "build/graphics/balls/open.4bpp.lz"
@@ -291,6 +330,27 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                     "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
     # END BATTLE TRANSITION EXACT PIPELINE
+
+    # BEGIN REMAINING B16 EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" IN_LIST REMAINING_B16_EXACT_OUTPUTS)
+        set(REMAINING_B16_MANIFEST "${CMAKE_SOURCE_DIR}/graphics/remaining_b16_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/remaining_b16_exact_assets.py"
+                --manifest "${REMAINING_B16_MANIFEST}"
+                --key "${RELATIVE_OUTPUT}"
+                --repo-root "${CMAKE_SOURCE_DIR}"
+                --output "${OUTPUT_ABS}"
+            DEPENDS
+                ${REMAINING_B16_EXACT_SOURCES}
+                "${REMAINING_B16_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/remaining_b16_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+    # END REMAINING B16 EXACT PIPELINE
 
     # BEGIN REMAINING A52 EXACT PIPELINE
     elseif("${RELATIVE_OUTPUT}" IN_LIST REMAINING_A52_EXACT_OUTPUTS)
