@@ -44,3 +44,6 @@ pokeemerald/
 baserom.gba
 data/charmap/charmap_combined.txt
 AGENTS.md
+
+# Source multiboot payload kept as an exact ROM-matching asset.
+!data/mb_ereader_jp.gba
