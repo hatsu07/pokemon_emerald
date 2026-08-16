@@ -523,15 +523,12 @@ gTradeData_0830ABE4: @ 0x0830ABE4
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0830BBE4: trade.s: sub_0807B064
-	.globl gTradeData_0830BBE4
-gTradeData_0830BBE4:
-	.globl sLz77Block_0830BBE4
-	@ confirmed GBA LZ77 stream: compressed=0xFD, decompressed=0x800
-sLz77Block_0830BBE4:
-	@ analyzed canonical ROM range 0x0830BBE4-0x0830BCE3
-	.incbin "build/graphics/analyzed/gunknown_830bbe4_0830bbe4.4bpp.lz"
-	.if (. - sLz77Block_0830BBE4) != 0x100
-	.error "sLz77Block_0830BBE4 compressed size mismatch"
+	.globl sWirelessCloseup_Map
+sWirelessCloseup_Map: @ 0x0830BBE4
+	@ Semantic exact-LZ Trade wireless asset.
+	.incbin "build/graphics/trade_jp_wireless/crossing_highlight_wireless.bin.lz"
+	.if (. - sWirelessCloseup_Map) != 0x100
+	.error "sWirelessCloseup_Map compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0830BCE4: trade.s: c3_08054588
 	.globl gTradeData_0830BCE4
@@ -613,15 +610,12 @@ gTradeData_0830BEE4: @ 0x0830BEE4
 gMenuDataBlock_Rom_30C0E4: @ 0x0830C0E4
 	.space 0x20, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0830C104: trade.s: sub_0807B064
-	.globl gTradeData_0830C104
-gTradeData_0830C104:
-	.globl sLz77Block_0830C104
-	@ confirmed GBA LZ77 stream: compressed=0x68E, decompressed=0x1800
-sLz77Block_0830C104:
-	@ analyzed canonical ROM range 0x0830C104-0x0830C793
-	.incbin "build/graphics/analyzed/gunknown_830c104_0830c104.4bpp.lz"
-	.if (. - sLz77Block_0830C104) != 0x690
-	.error "sLz77Block_0830C104 compressed size mismatch"
+	.globl sWirelessSignal_Gfx
+sWirelessSignal_Gfx: @ 0x0830C104
+	@ Semantic exact-LZ Trade wireless asset.
+	.incbin "build/graphics/trade_jp_wireless/wireless_signal.4bpp.lz"
+	.if (. - sWirelessSignal_Gfx) != 0x690
+	.error "sWirelessSignal_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0830C794: trade.s: sub_0807B064
 	.globl gTradeData_0830C794

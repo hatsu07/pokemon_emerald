@@ -443,6 +443,38 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END ROULETTE JP REMAINING EXACT PIPELINE
 
+    # BEGIN TRADE WIRELESS EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/trade_jp_wireless/crossing_highlight_wireless.bin.lz")
+        set(TRADE_WIRELESS_INPUT "${CMAKE_SOURCE_DIR}/graphics/trade/crossing_highlight_wireless.tilemap.u16")
+        set(TRADE_WIRELESS_PLAN "${CMAKE_SOURCE_DIR}/graphics/trade/jp_wireless_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/trade_wireless_exact.py"
+                u16 --manifest "${TRADE_WIRELESS_PLAN}" --key "wireless_closeup_map"
+                "${TRADE_WIRELESS_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${TRADE_WIRELESS_INPUT}" "${TRADE_WIRELESS_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/trade_wireless_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/trade_jp_wireless/wireless_signal.4bpp.lz")
+        set(TRADE_WIRELESS_INPUT "${CMAKE_SOURCE_DIR}/graphics/trade/wireless_signal.png")
+        set(TRADE_WIRELESS_PLAN "${CMAKE_SOURCE_DIR}/graphics/trade/jp_wireless_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/trade_wireless_exact.py"
+                gfx --manifest "${TRADE_WIRELESS_PLAN}" --key "wireless_signal_gfx"
+                "${TRADE_WIRELESS_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${TRADE_WIRELESS_INPUT}" "${TRADE_WIRELESS_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/trade_wireless_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END TRADE WIRELESS EXACT PIPELINE
+
     # BEGIN MAP TILESET PNG PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/tilesets/(.+)/tiles[.]4bpp[.]lz$")

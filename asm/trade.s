@@ -8762,7 +8762,7 @@ _0807B1BC:
 	.align 2, 0
 _0807B1E8: .4byte 0x02031F40
 _0807B1EC: .4byte 0x00001241
-_0807B1F0: .4byte gTradeData_0830BBE4
+_0807B1F0: .4byte sWirelessCloseup_Map
 _0807B1F4: .4byte 0x06002800
 _0807B1F8:
 	ldr r1, _0807B21C
@@ -8812,7 +8812,7 @@ _0807B258:
 	b _0807B4A0
 	.align 2, 0
 _0807B260: .4byte 0x0830C0E4
-_0807B264: .4byte gTradeData_0830C104
+_0807B264: .4byte sWirelessSignal_Gfx
 _0807B268: .4byte 0x06004000
 _0807B26C: .4byte gTradeData_0830C794
 _0807B270: .4byte 0x06009000
