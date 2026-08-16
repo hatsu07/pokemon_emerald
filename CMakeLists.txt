@@ -1316,6 +1316,166 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                     "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
 
+    # BEGIN POKEDEX EXACT ASSET PIPELINE
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/start_menu_main.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexStartMenuMain_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/start_menu_main.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/start_menu_main.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/start_menu_search_results.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexStartMenuSearchResults_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/start_menu_search_results.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/start_menu_search_results.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/list.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexList_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/list.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/list.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/list_underlay.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexListUnderlay_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/list_underlay.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/list_underlay.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/info_screen.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexInfoScreen_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/info_screen.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/info_screen.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/cry_screen.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexCryScreen_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/cry_screen.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/cry_screen.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/size_screen.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexSizeScreen_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/size_screen.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/size_screen.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/screen_select_bar_main.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexScreenSelectBarMain_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/screen_select_bar_main.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/screen_select_bar_main.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/screen_select_bar_submenu.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexScreenSelectBarSubmenu_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/screen_select_bar_submenu.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/screen_select_bar_submenu.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/noball_unused.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gUnused_PokedexNoBall"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/noball_unused.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/noball_unused.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/menu.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexMenu_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/menu.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/menu.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/interface.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexInterface_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/interface.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/interface.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END POKEDEX EXACT ASSET PIPELINE
+
     # BEGIN BATTLE FRONTIER DOME BLOCK EXACT PIPELINE
 
     elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_line.4bpp.lz")

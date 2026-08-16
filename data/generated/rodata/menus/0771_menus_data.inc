@@ -87,120 +87,102 @@ gPokedexData_085375A2: @ 0x085375A2
 	.byte 0xFF, 0x7F, 0xDD, 0x1F, 0x17, 0x00, 0x49, 0x5A, 0x61, 0x41, 0x77, 0x2E, 0x00, 0x00, 0x0F, 0x02
 	.byte 0xFF, 0x7F, 0x98, 0x10, 0xF7, 0x5E, 0x94, 0x52, 0x8C, 0x39, 0xE5, 0x20, 0x94, 0x52, 0xE5, 0x20
 	.byte 0xFF, 0x7F, 0xDD, 0x1F, 0x1F, 0x5C, 0x36, 0x7B, 0x26, 0x7E, 0x77, 0x2E, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08537660: pokedex.s: sub_080BBC50
-	.globl gPokedexData_08537660
-gPokedexData_08537660:
-	.globl sLz77Block_08537660
-	@ confirmed GBA LZ77 stream: compressed=0xCF, decompressed=0x300
-sLz77Block_08537660:
-	@ analyzed canonical ROM range 0x08537660-0x0853772F
-	.incbin "build/graphics/analyzed/gunknown_8537660_08537660.4bpp.lz"
-	.if (. - sLz77Block_08537660) != 0xD0
-	.error "sLz77Block_08537660 compressed size mismatch"
+	@ semantic Pokédex asset; proven from JP consumer behavior and exact ROM slot
+	@ canonical ROM range 0x08537660-0x0853772F
+	.globl gPokedexStartMenuMain_Tilemap
+gPokedexStartMenuMain_Tilemap: @ 0x08537660
+	.incbin "build/graphics/pokedex/start_menu_main.bin.lz"
+	.if (. - gPokedexStartMenuMain_Tilemap) != 0xD0
+	.error "gPokedexStartMenuMain_Tilemap compressed slot size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08537730: pokedex.s: sub_080BBC50
-	.globl gPokedexData_08537730
-gPokedexData_08537730:
-	.globl sLz77Block_08537730
-	@ confirmed GBA LZ77 stream: compressed=0xD1, decompressed=0x300
-sLz77Block_08537730:
-	@ analyzed canonical ROM range 0x08537730-0x08537803
-	.incbin "build/graphics/analyzed/gunknown_8537730_08537730.4bpp.lz"
-	.if (. - sLz77Block_08537730) != 0xD4
-	.error "sLz77Block_08537730 compressed size mismatch"
+	@ semantic Pokédex asset; proven from JP consumer behavior and exact ROM slot
+	@ canonical ROM range 0x08537730-0x08537803
+	.globl gPokedexStartMenuSearchResults_Tilemap
+gPokedexStartMenuSearchResults_Tilemap: @ 0x08537730
+	.incbin "build/graphics/pokedex/start_menu_search_results.bin.lz"
+	.if (. - gPokedexStartMenuSearchResults_Tilemap) != 0xD4
+	.error "gPokedexStartMenuSearchResults_Tilemap compressed slot size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08537804: pokedex.s: sub_080BBC50
-	.globl gPokedexData_08537804
-gPokedexData_08537804:
-	.globl sLz77Block_08537804
-	@ confirmed GBA LZ77 stream: compressed=0x14F, decompressed=0x500
-sLz77Block_08537804:
-	@ analyzed canonical ROM range 0x08537804-0x08537953
-	.incbin "build/graphics/analyzed/gunknown_8537804_08537804.4bpp.lz"
-	.if (. - sLz77Block_08537804) != 0x150
-	.error "sLz77Block_08537804 compressed size mismatch"
+	@ semantic Pokédex asset; proven from JP consumer behavior and exact ROM slot
+	@ canonical ROM range 0x08537804-0x08537953
+	.globl gPokedexList_Tilemap
+gPokedexList_Tilemap: @ 0x08537804
+	.incbin "build/graphics/pokedex/list.bin.lz"
+	.if (. - gPokedexList_Tilemap) != 0x150
+	.error "gPokedexList_Tilemap compressed slot size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08537954: pokedex.s: sub_080BBC50
-	.globl gPokedexData_08537954
-gPokedexData_08537954:
-	.globl sLz77Block_08537954
-	@ confirmed GBA LZ77 stream: compressed=0xBC, decompressed=0x500
-sLz77Block_08537954:
-	@ analyzed canonical ROM range 0x08537954-0x08537A0F
-	.incbin "build/graphics/analyzed/gunknown_8537954_08537954.4bpp.lz"
-	.if (. - sLz77Block_08537954) != 0xBC
-	.error "sLz77Block_08537954 compressed size mismatch"
+	@ semantic Pokédex asset; proven from JP consumer behavior and exact ROM slot
+	@ canonical ROM range 0x08537954-0x08537A0F
+	.globl gPokedexListUnderlay_Tilemap
+gPokedexListUnderlay_Tilemap: @ 0x08537954
+	.incbin "build/graphics/pokedex/list_underlay.bin.lz"
+	.if (. - gPokedexListUnderlay_Tilemap) != 0xBC
+	.error "gPokedexListUnderlay_Tilemap compressed slot size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08537A10: pokedex.s: sub_080BE1C8, sub_080BF6F4
-	.globl gPokedexData_08537A10
-gPokedexData_08537A10:
-	.globl sLz77Block_08537A10
-	@ confirmed GBA LZ77 stream: compressed=0x131, decompressed=0x500
-sLz77Block_08537A10:
-	@ analyzed canonical ROM range 0x08537A10-0x08537B43
-	.incbin "build/graphics/analyzed/gunknown_8537a10_08537a10.4bpp.lz"
-	.if (. - sLz77Block_08537A10) != 0x134
-	.error "sLz77Block_08537A10 compressed size mismatch"
+	@ semantic Pokédex asset; proven from JP consumer behavior and exact ROM slot
+	@ canonical ROM range 0x08537A10-0x08537B43
+	.globl gPokedexInfoScreen_Tilemap
+gPokedexInfoScreen_Tilemap: @ 0x08537A10
+	.incbin "build/graphics/pokedex/info_screen.bin.lz"
+	.if (. - gPokedexInfoScreen_Tilemap) != 0x134
+	.error "gPokedexInfoScreen_Tilemap compressed slot size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08537B44: pokedex.s: sub_080BEAD4
-	.globl gPokedexData_08537B44
-gPokedexData_08537B44:
-	.globl sLz77Block_08537B44
-	@ confirmed GBA LZ77 stream: compressed=0xEC, decompressed=0x500
-sLz77Block_08537B44:
-	@ analyzed canonical ROM range 0x08537B44-0x08537C2F
-	.incbin "build/graphics/analyzed/gunknown_8537b44_08537b44.4bpp.lz"
-	.if (. - sLz77Block_08537B44) != 0xEC
-	.error "sLz77Block_08537B44 compressed size mismatch"
+	@ semantic Pokédex asset; proven from JP consumer behavior and exact ROM slot
+	@ canonical ROM range 0x08537B44-0x08537C2F
+	.globl gPokedexCryScreen_Tilemap
+gPokedexCryScreen_Tilemap: @ 0x08537B44
+	.incbin "build/graphics/pokedex/cry_screen.bin.lz"
+	.if (. - gPokedexCryScreen_Tilemap) != 0xEC
+	.error "gPokedexCryScreen_Tilemap compressed slot size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08537C30: pokedex.s: sub_080BF0C8
-	.globl gPokedexData_08537C30
-gPokedexData_08537C30:
-	.globl sLz77Block_08537C30
-	@ confirmed GBA LZ77 stream: compressed=0xF2, decompressed=0x500
-sLz77Block_08537C30:
-	@ analyzed canonical ROM range 0x08537C30-0x08537D23
-	.incbin "build/graphics/analyzed/gunknown_8537c30_08537c30.4bpp.lz"
-	.if (. - sLz77Block_08537C30) != 0xF4
-	.error "sLz77Block_08537C30 compressed size mismatch"
+	@ semantic Pokédex asset; proven from JP consumer behavior and exact ROM slot
+	@ canonical ROM range 0x08537C30-0x08537D23
+	.globl gPokedexSizeScreen_Tilemap
+gPokedexSizeScreen_Tilemap: @ 0x08537C30
+	.incbin "build/graphics/pokedex/size_screen.bin.lz"
+	.if (. - gPokedexSizeScreen_Tilemap) != 0xF4
+	.error "gPokedexSizeScreen_Tilemap compressed slot size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08537D24: pokedex.s: sub_080BF598
-	.globl gPokedexData_08537D24
-gPokedexData_08537D24:
-	.globl sLz77Block_08537D24
-	@ confirmed GBA LZ77 stream: compressed=0x8D, decompressed=0xC0
-sLz77Block_08537D24:
-	@ analyzed canonical ROM range 0x08537D24-0x08537DB3
-	.incbin "build/graphics/analyzed/gunknown_8537d24_08537d24.4bpp.lz"
-	.if (. - sLz77Block_08537D24) != 0x90
-	.error "sLz77Block_08537D24 compressed size mismatch"
+	@ semantic Pokédex asset; proven from JP consumer behavior and exact ROM slot
+	@ canonical ROM range 0x08537D24-0x08537DB3
+	.globl gPokedexScreenSelectBarMain_Tilemap
+gPokedexScreenSelectBarMain_Tilemap: @ 0x08537D24
+	.incbin "build/graphics/pokedex/screen_select_bar_main.bin.lz"
+	.if (. - gPokedexScreenSelectBarMain_Tilemap) != 0x90
+	.error "gPokedexScreenSelectBarMain_Tilemap compressed slot size mismatch"
 	.endif
-	@ pret/pokeemerald-jp direct xref for 0x08537DB4: pokedex.s: sub_080BF5B0
-	.globl gPokedexData_08537DB4
-gPokedexData_08537DB4: @ 0x08537DB4
-	@ confirmed GBA LZ77 stream: compressed=0x90, decompressed=0xC0
-sLz77Block_08537DB4:
-	@ analyzed canonical ROM range 0x08537DB4-0x08537E8B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: 2 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08537DB4.bin.lz"
-	.globl gLz77Asset_08537E44
-gLz77Asset_08537E44: @ 0x08537E44
-	.incbin "build/assets/lz77_raw/08537E44.bin.lz"
-	.byte 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08537E8C: pokedex.s: sub_080BBC50, sub_080BE1C8, sub_080BEAD4, sub_080BF0C8, sub_080BF6F4
-	.globl gPokedexData_08537E8C
-gPokedexData_08537E8C: @ 0x08537E8C
-	@ confirmed GBA LZ77 stream: compressed=0xA5E, decompressed=0x2000
-sLz77Block_08537E8C:
-	@ analyzed canonical ROM range 0x08537E8C-0x08538FF3
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: 2 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08537E8C.bin.lz"
-	.byte 0x00, 0x00
-	.globl gLz77Asset_085388EC
-gLz77Asset_085388EC: @ 0x085388EC
-	.incbin "build/assets/lz77_raw/085388EC.bin.lz"
+	@ semantic Pokédex asset; proven from JP consumer behavior and exact ROM slot
+	@ canonical ROM range 0x08537DB4-0x08537E43
+	.globl gPokedexScreenSelectBarSubmenu_Tilemap
+gPokedexScreenSelectBarSubmenu_Tilemap: @ 0x08537DB4
+	.incbin "build/graphics/pokedex/screen_select_bar_submenu.bin.lz"
+	.if (. - gPokedexScreenSelectBarSubmenu_Tilemap) != 0x90
+	.error "gPokedexScreenSelectBarSubmenu_Tilemap compressed slot size mismatch"
+	.endif
+	@ semantic Pokédex asset; proven from JP consumer behavior and exact ROM slot
+	@ canonical ROM range 0x08537E44-0x08537E8B
+	.globl gUnused_PokedexNoBall
+gUnused_PokedexNoBall: @ 0x08537E44
+	.incbin "build/graphics/pokedex/noball_unused.4bpp.lz"
+	.if (. - gUnused_PokedexNoBall) != 0x48
+	.error "gUnused_PokedexNoBall compressed slot size mismatch"
+	.endif
+	@ semantic Pokédex asset; proven from JP consumer behavior and exact ROM slot
+	@ canonical ROM range 0x08537E8C-0x085388EB
+	.globl gPokedexMenu_Gfx
+gPokedexMenu_Gfx: @ 0x08537E8C
+	.incbin "build/graphics/pokedex/menu.4bpp.lz"
+	.if (. - gPokedexMenu_Gfx) != 0xA60
+	.error "gPokedexMenu_Gfx compressed slot size mismatch"
+	.endif
+	@ semantic Pokédex asset; proven from JP consumer behavior and exact ROM slot
+	@ canonical ROM range 0x085388EC-0x08538FF3
+	.globl gPokedexInterface_Gfx
+gPokedexInterface_Gfx: @ 0x085388EC
+	.incbin "build/graphics/pokedex/interface.4bpp.lz"
+	.if (. - gPokedexInterface_Gfx) != 0x708
+	.error "gPokedexInterface_Gfx compressed slot size mismatch"
+	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08538FF4: pokedex.s: sub_080BC010
 	.globl gPokedexData_08538FF4
 gPokedexData_08538FF4: @ 0x08538FF4

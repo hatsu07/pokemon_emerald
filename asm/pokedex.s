@@ -2314,10 +2314,10 @@ _080BBD5C: .4byte 0x020397EC
 _080BBD60: .4byte 0x0000064A
 _080BBD64: .4byte 0x0000062D
 _080BBD68: .4byte gPokedexData_08539BE8
-_080BBD6C: .4byte gPokedexData_08537E8C
-_080BBD70: .4byte gPokedexData_08537804
-_080BBD74: .4byte gPokedexData_08537954
-_080BBD78: .4byte gPokedexData_08537660
+_080BBD6C: .4byte gPokedexMenu_Gfx
+_080BBD70: .4byte gPokedexList_Tilemap
+_080BBD74: .4byte gPokedexListUnderlay_Tilemap
+_080BBD78: .4byte gPokedexStartMenuMain_Tilemap
 _080BBD7C:
 	ldr r1, _080BBDA4
 	movs r3, #0xa0
@@ -2339,7 +2339,7 @@ _080BBD8A:
 	ands r0, r2
 	b _080BBDBE
 	.align 2, 0
-_080BBDA4: .4byte gPokedexData_08537730
+_080BBDA4: .4byte gPokedexStartMenuSearchResults_Tilemap
 _080BBDA8: .4byte 0x020397EC
 _080BBDAC: .4byte 0x0000064C
 _080BBDB0:
@@ -6960,8 +6960,8 @@ _080BE294:
 	adds r1, r1, r3
 	b _080BE5F4
 	.align 2, 0
-_080BE2E4: .4byte gPokedexData_08537E8C
-_080BE2E8: .4byte gPokedexData_08537A10
+_080BE2E4: .4byte gPokedexMenu_Gfx
+_080BE2E8: .4byte gPokedexInfoScreen_Tilemap
 _080BE2EC: .4byte 0x020397F4
 _080BE2F0: .4byte 0x03002360
 _080BE2F4:
@@ -8027,8 +8027,8 @@ _080BEB94:
 	adds r1, r1, r3
 	b _080BEE1E
 	.align 2, 0
-_080BEBD8: .4byte gPokedexData_08537E8C
-_080BEBDC: .4byte gPokedexData_08537B44
+_080BEBD8: .4byte gPokedexMenu_Gfx
+_080BEBDC: .4byte gPokedexCryScreen_Tilemap
 _080BEBE0: .4byte 0x03002360
 _080BEBE4:
 	movs r0, #0xd
@@ -8696,8 +8696,8 @@ _080BF174:
 	bl PutWindowTilemap
 	b _080BF40A
 	.align 2, 0
-_080BF1A4: .4byte gPokedexData_08537E8C
-_080BF1A8: .4byte gPokedexData_08537C30
+_080BF1A4: .4byte gPokedexMenu_Gfx
+_080BF1A8: .4byte gPokedexSizeScreen_Tilemap
 _080BF1AC:
 	movs r0, #0xd
 	bl sub_080BF5B0
@@ -9165,7 +9165,7 @@ sub_080BF598: @ 0x080BF598
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080BF5AC: .4byte gPokedexData_08537D24
+_080BF5AC: .4byte gPokedexScreenSelectBarMain_Tilemap
 	thumb_func_end sub_080BF598
 
 	thumb_func_start sub_080BF5B0
@@ -9179,7 +9179,7 @@ sub_080BF5B0: @ 0x080BF5B0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080BF5C4: .4byte gPokedexData_08537DB4
+_080BF5C4: .4byte gPokedexScreenSelectBarSubmenu_Tilemap
 	thumb_func_end sub_080BF5B0
 
 	thumb_func_start sub_080BF5C8
@@ -9471,8 +9471,8 @@ _080BF7C8:
 	strh r0, [r4, #8]
 	b _080BF9D0
 	.align 2, 0
-_080BF828: .4byte gPokedexData_08537E8C
-_080BF82C: .4byte gPokedexData_08537A10
+_080BF828: .4byte gPokedexMenu_Gfx
+_080BF82C: .4byte gPokedexInfoScreen_Tilemap
 _080BF830: .4byte 0x03005B60
 _080BF834:
 	lsls r0, r7, #2
