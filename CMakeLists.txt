@@ -991,6 +991,346 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
             VERBATIM)
 
+    # BEGIN BATTLE ENVIRONMENT EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/building/tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentTiles_Building"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/battle_frontier.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_Frontier" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/battle_frontier_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/battle_frontier_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/battle_frontier_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/battle_frontier_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/building/map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentTilemap_Building"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/map.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentTiles_Stadium"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentTilemap_Stadium"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/map.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/sky/tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentTiles_Rayquaza"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/sky/tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/sky/tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/water/kyogre.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_Kyogre" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/water/kyogre_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/water/kyogre_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/water/kyogre_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/water/kyogre_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/cave/groudon.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_Groudon" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/groudon_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/groudon_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/groudon_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/groudon_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/building/gym.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_BuildingGym" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/gym_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/gym_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/gym_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/gym_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/building/leader.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_BuildingLeader" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/leader_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/leader_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/leader_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/leader_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/aqua.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_StadiumAqua" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/aqua_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/aqua_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/aqua_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/aqua_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/magma.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_StadiumMagma" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/magma_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/magma_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/magma_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/magma_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/sidney.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_StadiumSidney" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/sidney_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/sidney_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/sidney_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/sidney_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/phoebe.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_StadiumPhoebe" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/phoebe_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/phoebe_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/phoebe_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/phoebe_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/glacia.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_StadiumGlacia" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/glacia_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/glacia_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/glacia_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/glacia_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/drake.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_StadiumDrake" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/drake_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/drake_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/drake_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/drake_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/wallace.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_StadiumWallace" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/wallace_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/wallace_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/wallace_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/wallace_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/underwater/anim_tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentAnimTiles_Underwater"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/underwater/anim_tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/underwater/anim_tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/cave/anim_tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentAnimTiles_Cave"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/anim_tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/anim_tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/cave/anim_map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentAnimTilemap_Cave"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/anim_map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/anim_map.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/building/anim_tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentAnimTiles_Building"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/anim_tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/anim_tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/building/anim_map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentAnimTilemap_Building"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/anim_map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/anim_map.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/sky/anim_tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentAnimTiles_Rayquaza"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/sky/anim_tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/sky/anim_tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/sky/anim_map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentAnimTilemap_Rayquaza"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/sky/anim_map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/sky/anim_map.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_tree.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyTree_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END BATTLE ENVIRONMENT EXACT ASSET PIPELINE
+
     # BEGIN SEMANTIC JP UI EXACT ASSET PIPELINE
     elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/berry_blender/outer.4bpp.lz")
         add_custom_command(

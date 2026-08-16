@@ -11241,7 +11241,7 @@ _0819401C:
 	.align 2, 0
 _0819402C: .4byte 0x0203CA48
 _08194030: .4byte gBattleDomeData_08D839A4
-_08194034: .4byte gBattleDomeData_08D82FB4
+_08194034: .4byte gDomeTourneyTree_Gfx
 _08194038: .4byte gBattleDomeData_08D835A0
 _0819403C: .4byte gBattleDomeData_08D83BD0
 _08194040: .4byte gBattleDomeData_08D83CE0

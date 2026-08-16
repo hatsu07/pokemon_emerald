@@ -138,7 +138,7 @@ sBattleEnvironmentTable:
 	@ BATTLE_ENVIRONMENT_UNDERWATER
 	.4byte 0x08D798FC @ gBattleEnvironmentTiles_Underwater
 	.4byte 0x08D79EFC @ gBattleEnvironmentTilemap_Underwater
-	.4byte sLz77Block_08D7FA9C @ gBattleEnvironmentAnimTiles_Underwater
+	.4byte gBattleEnvironmentAnimTiles_Underwater @ gBattleEnvironmentAnimTiles_Underwater
 	.4byte sLz77Block_08D7FF68 @ gBattleEnvironmentAnimTilemap_Underwater
 	.4byte 0x08D79EB4 @ gBattleEnvironmentPalette_Underwater
 	@ BATTLE_ENVIRONMENT_WATER
@@ -162,18 +162,18 @@ sBattleEnvironmentTable:
 	@ BATTLE_ENVIRONMENT_CAVE
 	.4byte sLz77Block_08D7BBB8 @ gBattleEnvironmentTiles_Cave
 	.4byte sLz77Block_08D7C1F8 @ gBattleEnvironmentTilemap_Cave
-	.4byte sLz77Block_08D816B4 @ gBattleEnvironmentAnimTiles_Cave
-	.4byte sLz77Block_08D81ED0 @ gBattleEnvironmentAnimTilemap_Cave
+	.4byte gBattleEnvironmentAnimTiles_Cave @ gBattleEnvironmentAnimTiles_Cave
+	.4byte gBattleEnvironmentAnimTilemap_Cave @ gBattleEnvironmentAnimTilemap_Cave
 	.4byte 0x08D7C1B0 @ gBattleEnvironmentPalette_Cave
 	@ BATTLE_ENVIRONMENT_BUILDING
-	.4byte sLz77Block_08D7C4E4 @ gBattleEnvironmentTiles_Building
-	.4byte sLz77Block_08D7CACC @ gBattleEnvironmentTilemap_Building
-	.4byte sLz77Block_08D82178 @ gBattleEnvironmentAnimTiles_Building
-	.4byte sLz77Block_08D82588 @ gBattleEnvironmentAnimTilemap_Building
+	.4byte gBattleEnvironmentTiles_Building @ gBattleEnvironmentTiles_Building
+	.4byte gBattleEnvironmentTilemap_Building @ gBattleEnvironmentTilemap_Building
+	.4byte gBattleEnvironmentAnimTiles_Building @ gBattleEnvironmentAnimTiles_Building
+	.4byte gBattleEnvironmentAnimTilemap_Building @ gBattleEnvironmentAnimTilemap_Building
 	.4byte 0x08D7DF58 @ gBattleEnvironmentPalette_Building
 	@ BATTLE_ENVIRONMENT_PLAIN
-	.4byte sLz77Block_08D7C4E4 @ gBattleEnvironmentTiles_Building
-	.4byte sLz77Block_08D7CACC @ gBattleEnvironmentTilemap_Building
-	.4byte sLz77Block_08D82178 @ gBattleEnvironmentAnimTiles_Building
-	.4byte sLz77Block_08D82588 @ gBattleEnvironmentAnimTilemap_Building
+	.4byte gBattleEnvironmentTiles_Building @ gBattleEnvironmentTiles_Building
+	.4byte gBattleEnvironmentTilemap_Building @ gBattleEnvironmentTilemap_Building
+	.4byte gBattleEnvironmentAnimTiles_Building @ gBattleEnvironmentAnimTiles_Building
+	.4byte gBattleEnvironmentAnimTilemap_Building @ gBattleEnvironmentAnimTilemap_Building
 	.4byte 0x08D7C4A8 @ gBattleEnvironmentPalette_Plain
