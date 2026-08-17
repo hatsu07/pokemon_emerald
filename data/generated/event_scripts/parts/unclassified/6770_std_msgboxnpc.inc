@@ -1353,8 +1353,9 @@ RusturfTunnel_EventScript_RemoveObstacles_08243299:
 	delay 0x001E
 	@ return @ 0x082432D0
 	return
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082432D1
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x082432D1 size=0x2 source=v50_trusted_applymovement_consumer
+	.globl RusturfTunnel_Movement_082432D1
+RusturfTunnel_Movement_082432D1: @ 0x082432D1
 	.byte 0x09, 0xFE
 	compare_var_to_value 0x800C, 0x0001
 	call_if 0x01, EventScript_JP_082227BE
