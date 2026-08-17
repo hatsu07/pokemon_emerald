@@ -391,11 +391,13 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x17
+	@ ANALYSIS: RAW_BLOCK size=0x15
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08245EDE
 	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x61, 0x51, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_245192 @ ROM pointer 0x08245192
+	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ Recovered proven split event command at 0x08245EF3
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245EF3 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_245192
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08245EF9 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08245EF9
@@ -406,10 +408,9 @@ EventScriptData_JP_08245E85:
 	goto_if 0x00, 0x08245F4C
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x08245F6B
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08245F13
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_2452EF @ ROM pointer 0x082452EF
+	@ Recovered proven split event command at 0x08245F13
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245F13 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_2452EF
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08245F19 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: RAW_BLOCK size=0x33
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08245F19
@@ -421,11 +422,13 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x17
+	@ ANALYSIS: RAW_BLOCK size=0x15
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08245F56
 	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x59, 0x53, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_245383 @ ROM pointer 0x08245383
+	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ Recovered proven split event command at 0x08245F6B
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245F6B raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_245383
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08245F71 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08245F71
@@ -436,10 +439,9 @@ EventScriptData_JP_08245E85:
 	goto_if 0x00, 0x08245FC4
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x08245FE3
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08245F8B
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_2454D6 @ ROM pointer 0x082454D6
+	@ Recovered proven split event command at 0x08245F8B
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245F8B raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_2454D6
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08245F91 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: RAW_BLOCK size=0x33
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08245F91
@@ -451,11 +453,13 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x17
+	@ ANALYSIS: RAW_BLOCK size=0x15
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08245FCE
 	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x37, 0x55, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_24556D @ ROM pointer 0x0824556D
+	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ Recovered proven split event command at 0x08245FE3
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245FE3 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_24556D
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08245FE9 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08245FE9
@@ -466,10 +470,9 @@ EventScriptData_JP_08245E85:
 	goto_if 0x00, 0x0824603C
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x0824605B
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08246003
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_2456BC @ ROM pointer 0x082456BC
+	@ Recovered proven split event command at 0x08246003
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08246003 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_2456BC
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08246009 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: RAW_BLOCK size=0x33
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08246009
@@ -481,11 +484,13 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x17
+	@ ANALYSIS: RAW_BLOCK size=0x15
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08246046
 	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x29, 0x57, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_245748 @ ROM pointer 0x08245748
+	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ Recovered proven split event command at 0x0824605B
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824605B raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_245748
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08246061 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08246061
@@ -496,10 +501,9 @@ EventScriptData_JP_08245E85:
 	goto_if 0x00, 0x082460B4
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x082460D3
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824607B
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_245885 @ ROM pointer 0x08245885
+	@ Recovered proven split event command at 0x0824607B
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824607B raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_245885
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08246081 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: RAW_BLOCK size=0x33
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08246081
@@ -511,11 +515,13 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x17
+	@ ANALYSIS: RAW_BLOCK size=0x15
 	@ ANALYSIS: UNPROVEN_RAW addr=0x082460BE
 	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0xE3, 0x58, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_24590B @ ROM pointer 0x0824590B
+	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ Recovered proven split event command at 0x082460D3
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082460D3 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_24590B
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x082460D9 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x082460D9
@@ -526,10 +532,9 @@ EventScriptData_JP_08245E85:
 	goto_if 0x00, 0x0824612C
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x0824614B
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082460F3
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_2451FC @ ROM pointer 0x082451FC
+	@ Recovered proven split event command at 0x082460F3
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082460F3 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_2451FC
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x082460F9 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: RAW_BLOCK size=0x33
 	@ ANALYSIS: UNPROVEN_RAW addr=0x082460F9
@@ -541,11 +546,13 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x17
+	@ ANALYSIS: RAW_BLOCK size=0x15
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08246136
 	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x5F, 0x52, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_245292 @ ROM pointer 0x08245292
+	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ Recovered proven split event command at 0x0824614B
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824614B raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_245292
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08246151 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08246151
@@ -556,10 +563,9 @@ EventScriptData_JP_08245E85:
 	goto_if 0x00, 0x082461A4
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x082461C3
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824616B
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_2453EB @ ROM pointer 0x082453EB
+	@ Recovered proven split event command at 0x0824616B
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824616B raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_2453EB
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08246171 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: RAW_BLOCK size=0x33
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08246171
@@ -571,11 +577,13 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x17
+	@ ANALYSIS: RAW_BLOCK size=0x15
 	@ ANALYSIS: UNPROVEN_RAW addr=0x082461AE
 	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x47, 0x54, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_245476 @ ROM pointer 0x08245476
+	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ Recovered proven split event command at 0x082461C3
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082461C3 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_245476
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x082461C9 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x082461C9
@@ -586,10 +594,9 @@ EventScriptData_JP_08245E85:
 	goto_if 0x00, 0x0824621C
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x0824623B
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082461E3
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_2455E1 @ ROM pointer 0x082455E1
+	@ Recovered proven split event command at 0x082461E3
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082461E3 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_2455E1
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x082461E9 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: RAW_BLOCK size=0x33
 	@ ANALYSIS: UNPROVEN_RAW addr=0x082461E9
@@ -601,11 +608,13 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x17
+	@ ANALYSIS: RAW_BLOCK size=0x15
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08246226
 	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x4C, 0x56, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_245665 @ ROM pointer 0x08245665
+	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ Recovered proven split event command at 0x0824623B
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824623B raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_245665
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08246241 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08246241
@@ -616,10 +625,9 @@ EventScriptData_JP_08245E85:
 	goto_if 0x00, 0x08246294
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x082462B3
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824625B
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_2457A0 @ ROM pointer 0x082457A0
+	@ Recovered proven split event command at 0x0824625B
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824625B raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_2457A0
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08246261 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: RAW_BLOCK size=0x33
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08246261
@@ -631,11 +639,13 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x17
+	@ ANALYSIS: RAW_BLOCK size=0x15
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0824629E
 	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x08, 0x58, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_24582B @ ROM pointer 0x0824582B
+	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ Recovered proven split event command at 0x082462B3
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082462B3 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_24582B
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x082462B9 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x082462B9
@@ -646,10 +656,9 @@ EventScriptData_JP_08245E85:
 	goto_if 0x00, 0x0824630C
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x0824632B
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082462D3
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_245973 @ ROM pointer 0x08245973
+	@ Recovered proven split event command at 0x082462D3
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082462D3 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_245973
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x082462D9 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: RAW_BLOCK size=0x33
 	@ ANALYSIS: UNPROVEN_RAW addr=0x082462D9
@@ -661,11 +670,13 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x17
+	@ ANALYSIS: RAW_BLOCK size=0x15
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08246316
 	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0xF0, 0x59, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_245A24 @ ROM pointer 0x08245A24
+	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ Recovered proven split event command at 0x0824632B
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824632B raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_245A24
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08246331 size=0x47 commands=23 hard_stops=5
 	@ Full bytecode/CFG identity proven; runtime reachability is not claimed.
 .LClosedEvent_08246331:

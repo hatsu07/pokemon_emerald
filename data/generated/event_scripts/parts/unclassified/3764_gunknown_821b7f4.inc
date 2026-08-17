@@ -126,10 +126,9 @@ EventScriptData_JP_0821B88A:
 	.byte 0x80, 0x2C, 0x00, 0x06, 0x05, 0x2F, 0xBA, 0x21, 0x08, 0x05, 0x38, 0xBA, 0x21, 0x08, 0x40, 0x00
 	.byte 0x31, 0xFF, 0x3C, 0x00, 0x1F, 0x00, 0x02, 0x40, 0x18, 0x47, 0xFF, 0x0A, 0x00, 0x13, 0x00, 0x02
 	lockall
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BA42
-	.byte 0x78
-	.4byte gText_Rom_2635D2 @ ROM pointer 0x082635D2
+	@ Recovered proven split event command at 0x0821BA42
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BA42 raw_tail=0x1 continuation=0x4; reachability not claimed
+	braillemessage gText_Rom_2635D2
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BA47 original_size=0x6C typed_bytes=0x1
 	@ ANALYSIS: RAW_BLOCK size=0x6A
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BA47
@@ -141,10 +140,9 @@ EventScriptData_JP_0821B88A:
 	.byte 0x00, 0x02, 0x00, 0x35, 0x02, 0x01, 0x00, 0xA2, 0x0A, 0x00, 0x02, 0x00, 0x35, 0x02, 0x01, 0x00
 	.byte 0xA2, 0x0B, 0x00, 0x02, 0x00, 0x35, 0x02, 0x01, 0x00, 0x03
 	lockall
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BAB2
-	.byte 0x78
-	.4byte gText_Rom_2635E2 @ ROM pointer 0x082635E2
+	@ Recovered proven split event command at 0x0821BAB2
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BAB2 raw_tail=0x1 continuation=0x4; reachability not claimed
+	braillemessage gText_Rom_2635E2
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BAB7 original_size=0x10 typed_bytes=0xB
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BAB7
@@ -156,10 +154,9 @@ EventScriptData_JP_0821B88A:
 	releaseall
 	end
 	lockall
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BAC6
-	.byte 0x78
-	.4byte gText_Rom_2635FA @ ROM pointer 0x082635FA
+	@ Recovered proven split event command at 0x0821BAC6
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BAC6 raw_tail=0x1 continuation=0x4; reachability not claimed
+	braillemessage gText_Rom_2635FA
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BACB original_size=0x10 typed_bytes=0xB
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BACB
@@ -171,10 +168,9 @@ EventScriptData_JP_0821B88A:
 	releaseall
 	end
 	lockall
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BADA
-	.byte 0x78
-	.4byte gText_Rom_263612 @ ROM pointer 0x08263612
+	@ Recovered proven split event command at 0x0821BADA
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BADA raw_tail=0x1 continuation=0x4; reachability not claimed
+	braillemessage gText_Rom_263612
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BADF original_size=0x10 typed_bytes=0xB
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BADF
@@ -186,10 +182,9 @@ EventScriptData_JP_0821B88A:
 	releaseall
 	end
 	lockall
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BAEE
-	.byte 0x78
-	.4byte gText_Rom_26362A @ ROM pointer 0x0826362A
+	@ Recovered proven split event command at 0x0821BAEE
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BAEE raw_tail=0x1 continuation=0x4; reachability not claimed
+	braillemessage gText_Rom_26362A
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BAF3 original_size=0x10 typed_bytes=0xB
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BAF3
@@ -201,10 +196,9 @@ EventScriptData_JP_0821B88A:
 	releaseall
 	end
 	lockall
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BB02
-	.byte 0x78
-	.4byte gText_Rom_263640 @ ROM pointer 0x08263640
+	@ Recovered proven split event command at 0x0821BB02
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BB02 raw_tail=0x1 continuation=0x4; reachability not claimed
+	braillemessage gText_Rom_263640
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BB07 original_size=0x38 typed_bytes=0x32
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BB07
@@ -237,10 +231,9 @@ EventScriptData_JP_0821B88A:
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BB3C
 	.byte 0x00
 	lockall
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BB3E
-	.byte 0x78
-	.4byte gText_Rom_263668 @ ROM pointer 0x08263668
+	@ Recovered proven split event command at 0x0821BB3E
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BB3E raw_tail=0x1 continuation=0x4; reachability not claimed
+	braillemessage gText_Rom_263668
 	@ semanticized-mass: resolved embedded ROM pointers
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BB43 original_size=0x59 typed_bytes=0x1
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0821BB43 size=0x57 commands=33 hard_stops=2
@@ -285,10 +278,9 @@ EventScriptData_JP_0821B88A:
 	releaseall
 	end
 	lockall
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BB9B
-	.byte 0x78
-	.4byte gText_Rom_263698 @ ROM pointer 0x08263698
+	@ Recovered proven split event command at 0x0821BB9B
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BB9B raw_tail=0x1 continuation=0x4; reachability not claimed
+	braillemessage gText_Rom_263698
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BBA0 original_size=0x10 typed_bytes=0xB
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BBA0
@@ -300,10 +292,9 @@ EventScriptData_JP_0821B88A:
 	releaseall
 	end
 	lockall
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BBAF
-	.byte 0x78
-	.4byte gText_Rom_2636DD @ ROM pointer 0x082636DD
+	@ Recovered proven split event command at 0x0821BBAF
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BBAF raw_tail=0x1 continuation=0x4; reachability not claimed
+	braillemessage gText_Rom_2636DD
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BBB4 original_size=0x10 typed_bytes=0xB
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BBB4
@@ -315,10 +306,9 @@ EventScriptData_JP_0821B88A:
 	releaseall
 	end
 	lockall
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BBC3
-	.byte 0x78
-	.4byte gText_Rom_26370F @ ROM pointer 0x0826370F
+	@ Recovered proven split event command at 0x0821BBC3
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BBC3 raw_tail=0x1 continuation=0x4; reachability not claimed
+	braillemessage gText_Rom_26370F
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BBC8 original_size=0x98 typed_bytes=0xA
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BBC8
@@ -341,19 +331,25 @@ EventScriptData_JP_0821B88A:
 	.byte 0x08, 0x00, 0x00, 0x69, 0x4F, 0x01, 0x00, 0x18, 0xBD, 0x21, 0x08, 0x51, 0x00, 0x00, 0x4F, 0xFF
 	.byte 0x00, 0x27, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x0F, 0x00
 	.4byte gText_Rom_21BD56 @ ROM pointer 0x0821BD56
-	@ ANALYSIS: RAW_BLOCK size=0x23
+	@ ANALYSIS: RAW_BLOCK size=0x21
+	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BC64
 	.byte 0x09, 0x04, 0x68, 0x28, 0x1E, 0x00, 0x16, 0x04, 0x80, 0x01, 0x00, 0x16, 0x05, 0x80, 0x01, 0x00
 	.byte 0x16, 0x06, 0x80, 0x08, 0x00, 0x16, 0x07, 0x80, 0x03, 0x00, 0x25, 0x35, 0x01, 0x27, 0x28, 0x28
-	.byte 0x00, 0x0F, 0x00
-	.4byte gText_Rom_21BDB5 @ ROM pointer 0x0821BDB5
-	@ ANALYSIS: RAW_BLOCK size=0x58
+	.byte 0x00
+	@ Recovered proven split event command at 0x0821BC85
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BC85 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_21BDB5
+	@ ANALYSIS: RAW_BLOCK size=0x56
+	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BC8B
 	.byte 0x09, 0x04, 0x68, 0x4F, 0xFF, 0x00, 0x30, 0xBD, 0x21, 0x08, 0x4F, 0x01, 0x00, 0x23, 0xBD, 0x21
 	.byte 0x08, 0x51, 0x00, 0x00, 0x16, 0x04, 0x80, 0x01, 0x00, 0x16, 0x05, 0x80, 0x03, 0x00, 0x16, 0x06
 	.byte 0x80, 0x14, 0x00, 0x16, 0x07, 0x80, 0x05, 0x00, 0x25, 0x35, 0x01, 0x27, 0x28, 0x14, 0x00, 0x4F
 	.byte 0x01, 0x00, 0x27, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x28, 0x0A, 0x00, 0x4F, 0x01, 0x00, 0x2B
 	.byte 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x28, 0x14, 0x00, 0x4F, 0x01, 0x00, 0x2D, 0x36, 0x24, 0x08
-	.byte 0x51, 0x00, 0x00, 0x28, 0x1E, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_21BDD5 @ ROM pointer 0x0821BDD5
+	.byte 0x51, 0x00, 0x00, 0x28, 0x1E, 0x00
+	@ Recovered proven split event command at 0x0821BCE1
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BCE1 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_21BDD5
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BCE7 original_size=0x57 typed_bytes=0x1
 	@ ANALYSIS: RAW_BLOCK size=0x56
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BCE7

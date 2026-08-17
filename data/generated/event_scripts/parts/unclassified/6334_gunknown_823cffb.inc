@@ -138,18 +138,20 @@ EventScriptData_JP_0823D179:
 	.globl EventScriptData_JP_0823D1AC
 EventScriptData_JP_0823D1AC:
 	loadword 0x00, gText_Rom_23D677
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0x09, 0x04, 0x6B, 0x02, 0x31, 0x72, 0x01, 0x67
-	.4byte gText_Rom_23D64A @ ROM pointer 0x0823D64A
+	@ ANALYSIS: RAW_BLOCK size=0x7
+	@ ANALYSIS: UNPROVEN_RAW addr=0x0823D1B2
+	.byte 0x09, 0x04, 0x6B, 0x02, 0x31, 0x72, 0x01
+	@ Recovered proven split event command at 0x0823D1B9
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0823D1B9 raw_tail=0x1 continuation=0x4; reachability not claimed
+	message gText_Rom_23D64A
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0823D1BE original_size=0xE typed_bytes=0x1
 	@ ANALYSIS: RAW_BLOCK size=0xB
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0823D1BE
 	.byte 0x32, 0x0F, 0x00, 0x5A, 0xD6, 0x23, 0x08, 0x09, 0x04, 0x6B, 0x02
 	lockall
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0823D1CA
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_23D245 @ ROM pointer 0x0823D245
+	@ Recovered proven split event command at 0x0823D1CA
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0823D1CA raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_23D245
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0823D1D0 size=0x75 commands=30 hard_stops=5
 	@ Full bytecode/CFG identity proven; runtime reachability is not claimed.
 .LClosedEvent_0823D1D0:

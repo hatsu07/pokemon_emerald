@@ -66,10 +66,9 @@ EventScriptData_JP_0821DEF4:
 	waitmoncry
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821DF6C
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_21E3C9 @ ROM pointer 0x0821E3C9
+	@ Recovered proven split event command at 0x0821DF6C
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821DF6C raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_21E3C9
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821DF72 original_size=0x38 typed_bytes=0x33
 	@ ANALYSIS: RAW_BLOCK size=0x3
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821DF72
@@ -89,10 +88,9 @@ EventScriptData_JP_0821DEF4:
 	goto_if 0x01, 0x0821DFB2
 	compare_var_to_value 0x40B4, 0x0008
 	goto_if 0x01, 0x0821DFD1
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821DFA8
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_21E28A @ ROM pointer 0x0821E28A
+	@ Recovered proven split event command at 0x0821DFA8
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821DFA8 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_21E28A
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821DFAE original_size=0x28 typed_bytes=0x22
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821DFAE
@@ -107,10 +105,9 @@ EventScriptData_JP_0821DEF4:
 	release
 	end
 	setrespawn 0x0004
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821DFD4
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_21E2E5 @ ROM pointer 0x0821E2E5
+	@ Recovered proven split event command at 0x0821DFD4
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821DFD4 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_21E2E5
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821DFDA original_size=0x5C typed_bytes=0x44
 	@ ANALYSIS: RAW_BLOCK size=0x16
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821DFDA
@@ -140,10 +137,9 @@ EventScriptData_JP_0821DEF4:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821E034
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_21E324 @ ROM pointer 0x0821E324
+	@ Recovered proven split event command at 0x0821E034
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821E034 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_Rom_21E324
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821E03A original_size=0xCC typed_bytes=0x51
 	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821E03A
