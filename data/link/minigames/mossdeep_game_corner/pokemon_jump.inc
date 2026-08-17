@@ -139,10 +139,31 @@ gLz77Asset_082CF528: @ 0x082CF528
 gPokemonJumpData_082CF694: @ 0x082CF694
 	@ analyzed canonical ROM range 0x082CF694-0x082CF6BB
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x28
-	.byte 0x08, 0xF0, 0x2C, 0x08, 0x00, 0x06, 0x05, 0x00, 0x28, 0xF1, 0x2C, 0x08, 0x00, 0x0C, 0x06, 0x00
-	.byte 0xFC, 0xF2, 0x2C, 0x08, 0x00, 0x06, 0x07, 0x00, 0x2C, 0xF4, 0x2C, 0x08, 0x00, 0x06, 0x08, 0x00
-	.byte 0x28, 0xF5, 0x2C, 0x08, 0x00, 0x02, 0x0A, 0x00
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082CF694 size=0x4 source=v54_multi_pointer
+	.4byte gLz77Asset_082CF008
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x082CF698 size=0x4
+	.byte 0x00, 0x06, 0x05, 0x00
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082CF69C size=0x4 source=v54_multi_pointer
+	.4byte gLz77Asset_082CF128
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x082CF6A0 size=0x4
+	.byte 0x00, 0x0C, 0x06, 0x00
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082CF6A4 size=0x4 source=v54_multi_pointer
+	.4byte gLz77Asset_082CF2FC
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x082CF6A8 size=0x4
+	.byte 0x00, 0x06, 0x07, 0x00
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082CF6AC size=0x4 source=v54_multi_pointer
+	.4byte gLz77Asset_082CF42C
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x082CF6B0 size=0x4
+	.byte 0x00, 0x06, 0x08, 0x00
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082CF6B4 size=0x4 source=v54_multi_pointer
+	.4byte gLz77Asset_082CF528
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x082CF6B8 size=0x4
+	.byte 0x00, 0x02, 0x0A, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x082CF6BC: pokemon_jump.s: sub_0802C668
 	.globl gPokemonJumpData_082CF6BC
 gPokemonJumpData_082CF6BC: @ 0x082CF6BC

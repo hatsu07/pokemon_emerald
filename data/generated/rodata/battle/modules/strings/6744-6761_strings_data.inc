@@ -109,12 +109,51 @@ gBattleU16Table_Rom_5DD48E: @ 0x085DD48E
 gFrontierUtilData_085DD4A4: @ 0x085DD4A4
 	@ analyzed canonical ROM range 0x085DD4A4-0x085DD4F4
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x51
-	.byte 0x23, 0xC4, 0x5C, 0x08, 0x5C, 0xC4, 0x5C, 0x08, 0x23, 0xC4, 0x5C, 0x08, 0x64, 0xC4, 0x5C, 0x08
-	.byte 0x23, 0xC4, 0x5C, 0x08, 0x6C, 0xC4, 0x5C, 0x08, 0x2A, 0xC4, 0x5C, 0x08, 0x5C, 0xC4, 0x5C, 0x08
-	.byte 0x31, 0xC4, 0x5C, 0x08, 0x5C, 0xC4, 0x5C, 0x08, 0x42, 0xC4, 0x5C, 0x08, 0x7C, 0xC4, 0x5C, 0x08
-	.byte 0x38, 0xC4, 0x5C, 0x08, 0x5C, 0xC4, 0x5C, 0x08, 0x4A, 0xC4, 0x5C, 0x08, 0x7C, 0xC4, 0x5C, 0x08
-	.byte 0x52, 0xC4, 0x5C, 0x08, 0x7C, 0xC4, 0x5C, 0x08, 0x23, 0xC4, 0x5C, 0x08, 0x74, 0xC4, 0x5C, 0x08
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4A4 size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC423
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4A8 size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC45C
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4AC size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC423
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4B0 size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC464
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4B4 size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC423
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4B8 size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC46C
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4BC size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC42A
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4C0 size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC45C
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4C4 size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC431
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4C8 size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC45C
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4CC size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC442
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x085DD4D0 size=0x4
+	.byte 0x7C, 0xC4, 0x5C, 0x08
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4D4 size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC438
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4D8 size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC45C
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4DC size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC44A
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x085DD4E0 size=0x4
+	.byte 0x7C, 0xC4, 0x5C, 0x08
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4E4 size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC452
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x085DD4E8 size=0x4
+	.byte 0x7C, 0xC4, 0x5C, 0x08
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4EC size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC423
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4F0 size=0x4 source=v54_multi_pointer
+	.4byte gText_Rom_5CC474
+	@ ANALYSIS: RAW_BLOCK size=0x1
+	@ ANALYSIS: SOURCE_RANGE addr=0x085DD4F4 size=0x1
 	.byte 0x00
 	.globl gText_Rom_5DD4F5
 gText_Rom_5DD4F5: @ 0x085DD4F5

@@ -20,8 +20,12 @@ gMatchCallData_085D7A14: @ 0x085D7A14
 gMatchCallData_085D7A1C: @ 0x085D7A1C
 	@ analyzed canonical ROM range 0x085D7A1C-0x085D7A27
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	.2byte 0x1C40, 0x0202, 0x1C54, 0x0202, 0x1C68, 0x0202
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085D7A1C size=0x4 source=v54_multi_pointer
+	.4byte gEwram_JP_02021C40
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085D7A20 size=0x4 source=v54_multi_pointer
+	.4byte gEwram_JP_02021C54
+	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085D7A24 size=0x4 source=v54_multi_pointer
+	.4byte gEwram_JP_02021C68
 	@ pret/pokeemerald-jp direct xref for 0x085D7A28: match_call.s: PopulateMatchCallStringVar
 	.globl gMatchCallData_085D7A28
 gMatchCallData_085D7A28: @ 0x085D7A28
