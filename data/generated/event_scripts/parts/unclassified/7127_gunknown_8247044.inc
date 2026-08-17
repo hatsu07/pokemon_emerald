@@ -294,8 +294,7 @@ EventScriptData_JP_0824723B:
 	waitmessage
 	@ goto EventScriptData_JP_0824723B @ 0x08247278
 	goto EventScriptData_JP_0824723B
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824727D
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x0824727D source=v47_hardstop_boundary
 	.byte 0x02
 	call 0x08247305
 	compare_var_to_value 0x800D, 0x0000
@@ -517,8 +516,7 @@ EventScriptData_JP_0824723B:
 	setvar 0x8004, 0x0000
 	@ goto 0x08247610 @ 0x08247572
 	goto 0x08247610
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08247577
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x08247577 source=v47_hardstop_boundary
 	.byte 0x02
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x08247578 size=0x18 source=v45_trusted_consumer
 	@ special 0x003D @ 0x08247578
@@ -532,8 +530,7 @@ EventScriptData_JP_0824723B:
 	setvar 0x8004, 0x0001
 	@ goto 0x08247610 @ 0x0824758B
 	goto 0x08247610
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08247590
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x08247590 source=v47_hardstop_boundary
 	.byte 0x02
 	@ Recovered proven split event command at 0x08247591
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08247591 raw_tail=0x2 continuation=0x4; reachability not claimed
@@ -544,16 +541,14 @@ EventScriptData_JP_0824723B:
 	callstd 0x04
 	@ goto 0x0824751A @ 0x08247599
 	goto 0x0824751A
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824759E
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x0824759E source=v47_hardstop_boundary
 	.byte 0x02
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x0824759F size=0xA source=v45_trusted_consumer
 	@ setvar 0x8004, 0x0002 @ 0x0824759F
 	setvar 0x8004, 0x0002
 	@ goto 0x08247610 @ 0x082475A4
 	goto 0x08247610
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082475A9
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x082475A9 source=v47_hardstop_boundary
 	.byte 0x02
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x082475AA size=0xD source=v45_trusted_consumer
 	@ loadword 0x00, gText_Rom_248531 @ 0x082475AA
@@ -562,8 +557,7 @@ EventScriptData_JP_0824723B:
 	callstd 0x04
 	@ goto 0x0824751A @ 0x082475B2
 	goto 0x0824751A
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082475B7
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x082475B7 source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_248511
 	callstd 0x05

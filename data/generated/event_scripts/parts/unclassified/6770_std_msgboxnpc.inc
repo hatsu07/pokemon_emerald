@@ -1486,8 +1486,7 @@ RusturfTunnel_EventScript_RemoveObstacles_08243299:
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08243444 size=0x5 source=v42_bulk
 	@ goto 0x08244197 @ 0x08243444
 	goto 0x08244197
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08243449
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x08243449 source=v47_hardstop_boundary
 	.byte 0x02
 	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x0824344A size=0x16 source_backed=YES
 Movement_0824344A:

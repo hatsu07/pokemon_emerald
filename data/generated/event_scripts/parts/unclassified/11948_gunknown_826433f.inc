@@ -114,8 +114,7 @@ EventScriptData_JP_0826439D:
 	callstd 0x04
 	@ goto 0x08264474 @ 0x0826446E
 	goto 0x08264474
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08264473
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x08264473 source=v47_hardstop_boundary
 	.byte 0x02
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x08264474 size=0x22 source=v43_v44
 	@ fadescreen 0x01 @ 0x08264474
@@ -218,8 +217,7 @@ EventScriptData_JP_0826439D:
 	callstd 0x04
 	@ goto 0x08264518 @ 0x08264512
 	goto 0x08264518
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08264517
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x08264517 source=v47_hardstop_boundary
 	.byte 0x02
 	setvar 0x8004, 0x0000
 	specialvar_ 0x8004, 0x0174
@@ -325,8 +323,7 @@ EventScriptData_JP_0826439D:
 	callstd 0x04
 	@ goto 0x082645F6 @ 0x082645E2
 	goto 0x082645F6
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082645E7
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x082645E7 source=v47_hardstop_boundary
 	.byte 0x02
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x082645E8 size=0xD source=v45_trusted_consumer
 	@ loadword 0x00, gText_Rom_264D11 @ 0x082645E8
@@ -335,8 +332,7 @@ EventScriptData_JP_0826439D:
 	callstd 0x04
 	@ goto 0x082645F6 @ 0x082645F0
 	goto 0x082645F6
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082645F5
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x082645F5 source=v47_hardstop_boundary
 	.byte 0x02
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x082645F6 size=0x24 source=v45_trusted_consumer
 	@ setvar 0x8004, 0x0000 @ 0x082645F6
@@ -395,8 +391,7 @@ EventScriptData_JP_0826439D:
 	waitstate
 	@ goto 0x0826463D @ 0x08264658
 	goto 0x0826463D
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0826465D
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x0826465D source=v47_hardstop_boundary
 	.byte 0x02
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x0826465E size=0x9 source=v45_trusted_consumer
 	@ special 0x017A @ 0x0826465E
@@ -406,8 +401,7 @@ EventScriptData_JP_0826439D:
 	waitstate
 	@ goto 0x0826463D @ 0x08264662
 	goto 0x0826463D
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08264667
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x08264667 source=v47_hardstop_boundary
 	.byte 0x02
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x08264668 size=0x66 source=v45_trusted_consumer
 	@ loadword 0x00, gText_Rom_264D88 @ 0x08264668
@@ -465,8 +459,7 @@ EventScriptData_JP_0826439D:
 	callstd 0x04
 	@ goto 0x082646F4 @ 0x082646C9
 	goto 0x082646F4
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082646CE
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x082646CE source=v47_hardstop_boundary
 	.byte 0x02
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x082646CF size=0xF source=v45_trusted_consumer
 	@ special 0x0188 @ 0x082646CF
@@ -495,8 +488,7 @@ EventScriptData_JP_0826439D:
 	callstd 0x04
 	@ goto 0x08264761 @ 0x082646EE
 	goto 0x08264761
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082646F3
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x082646F3 source=v47_hardstop_boundary
 	.byte 0x02
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x082646F4 size=0x29 source=v45_trusted_consumer
 	@ specialvar 0x800D, 0x017E @ 0x082646F4

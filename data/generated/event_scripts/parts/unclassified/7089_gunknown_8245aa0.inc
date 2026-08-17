@@ -405,8 +405,7 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08245ECE
 	goto 0x08246335
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08245ED3
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x08245ED3 source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_2451B4
 	callstd 0x04
@@ -471,8 +470,7 @@ EventScript_ShowMessage_08245EDE:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08245F46
 	goto 0x08246335
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08245F4B
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x08245F4B source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_2453A7
 	callstd 0x04
@@ -537,8 +535,7 @@ EventScript_ShowMessage_08245F56:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08245FBE
 	goto 0x08246335
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08245FC3
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x08245FC3 source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_2455A0
 	callstd 0x04
@@ -603,8 +600,7 @@ EventScript_ShowMessage_08245FCE:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08246036
 	goto 0x08246335
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824603B
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x0824603B source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_24576B
 	callstd 0x04
@@ -669,8 +665,7 @@ EventScript_ShowMessage_08246046:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x082460AE
 	goto 0x08246335
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082460B3
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x082460B3 source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_24592E
 	callstd 0x04
@@ -735,8 +730,7 @@ EventScript_ShowMessage_082460BE:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08246126
 	goto 0x08246335
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824612B
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x0824612B source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_2452B2
 	callstd 0x04
@@ -801,8 +795,7 @@ EventScript_ShowMessage_08246136:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x0824619E
 	goto 0x08246335
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082461A3
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x082461A3 source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_245499
 	callstd 0x04
@@ -867,8 +860,7 @@ EventScript_ShowMessage_082461AE:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08246216
 	goto 0x08246335
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824621B
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x0824621B source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_245685
 	callstd 0x04
@@ -933,8 +925,7 @@ EventScript_ShowMessage_08246226:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x0824628E
 	goto 0x08246335
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08246293
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x08246293 source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_245847
 	callstd 0x04
@@ -999,8 +990,7 @@ EventScript_ShowMessage_0824629E:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08246306
 	goto 0x08246335
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824630B
+	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x0824630B source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_245A44
 	callstd 0x04
