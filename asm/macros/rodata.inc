@@ -13,6 +13,13 @@
 	.2byte \tag
 	.endm
 
+
+@ struct CompressedSpritePalette (8 bytes).
+.macro compressed_sprite_palette data, tag
+	.4byte \data
+	.2byte \tag
+	.2byte 0
+.endm
 	.macro null_compressed_sprite_sheet
 	compressed_sprite_sheet 0, 0, 0
 	.endm

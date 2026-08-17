@@ -850,8 +850,10 @@ gPokemonPointerTable_Rom_5F2708: @ 0x085F2708
 gPokenavUnk2Data_085F272C: @ 0x085F272C
 	@ analyzed canonical ROM range 0x085F272C-0x085F273B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.2byte 0x1C90, 0x085F, 0x3400, 0x0003, 0x268C, 0x085F, 0x0100, 0x0001
+	@ struct CompressedSpriteSheet[2]; sub_081C9770 loads both entries.
+	@ ANALYSIS: SEMANTIC_COMPRESSED_SPRITE_SHEET_TABLE addr=0x085F272C size=0x10 count=2
+	compressed_sprite_sheet gLz77Asset_085F1C90, 0x3400, 0x0003
+	compressed_sprite_sheet gLz77Asset_085F268C, 0x100, 0x0001
 	@ pret/pokeemerald-jp direct xref for 0x085F273C: pokenav_unk_2.s: sub_081C9770
 	.globl gPokenavUnk2Data_085F273C
 gPokenavUnk2Data_085F273C: @ 0x085F273C

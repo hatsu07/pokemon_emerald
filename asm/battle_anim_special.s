@@ -3175,9 +3175,9 @@ _08171B6A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08171B70: .4byte gBattleAnimSpecialData_085C6150
+_08171B70: .4byte gBallOpenParticleSpriteSheets
 _08171B74: .4byte 0xFFFF0000
-_08171B78: .4byte gBattleAnimSpecialData_085C61B0
+_08171B78: .4byte gBallOpenParticleSpritePalettes
 	thumb_func_end sub_08171B44
 
 	thumb_func_start AnimateBallOpenParticles
@@ -4727,8 +4727,8 @@ _081727AE:
 	bl DestroySprite
 	b _081727C6
 	.align 2, 0
-_081727B8: .4byte gBattleAnimSpecialData_085C6150
-_081727BC: .4byte gBattleAnimSpecialData_085C61B0
+_081727B8: .4byte gBallOpenParticleSpriteSheets
+_081727BC: .4byte gBallOpenParticleSpritePalettes
 _081727C0:
 	adds r0, r7, #0
 	bl DestroySprite
