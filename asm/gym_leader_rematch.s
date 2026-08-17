@@ -196,7 +196,7 @@ _081D9F24:
 	adds r0, r4, #0
 	b _081D9F48
 	.align 2, 0
-_081D9F3C: .4byte gMenuU16Table_Rom_52AD40
+_081D9F3C: .4byte gRematchTable
 _081D9F40:
 	adds r4, #1
 	cmp r4, #4

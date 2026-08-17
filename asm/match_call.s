@@ -290,7 +290,7 @@ _08195C00:
 	ldrh r0, [r6]
 	b _08195C2C
 	.align 2, 0
-_08195C1C: .4byte gMenuU16Table_Rom_52AD40
+_08195C1C: .4byte gRematchTable
 _08195C20:
 	subs r5, #1
 _08195C22:
@@ -1202,7 +1202,7 @@ GetRematchTrainerLocation: @ 0x0819632C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08196344: .4byte gMenuU16Table_Rom_52AD40
+_08196344: .4byte gRematchTable
 	thumb_func_end GetRematchTrainerLocation
 
 	thumb_func_start GetNumRematchTrainersFought
@@ -1228,7 +1228,7 @@ _0819635E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08196370: .4byte gMenuU16Table_Rom_52AD40
+_08196370: .4byte gRematchTable
 	thumb_func_end GetNumRematchTrainersFought
 
 	thumb_func_start sub_08196374
@@ -1249,7 +1249,7 @@ _0819637E:
 	adds r0, r4, #0
 	b _081963A4
 	.align 2, 0
-_08196394: .4byte gMenuU16Table_Rom_52AD40
+_08196394: .4byte gRematchTable
 _08196398:
 	adds r6, #1
 _0819639A:
@@ -1909,7 +1909,7 @@ _08196822:
 	b _0819685E
 	.align 2, 0
 _0819684C: .4byte 0x0852D9F4
-_08196850: .4byte gMenuU16Table_Rom_52AD40
+_08196850: .4byte gRematchTable
 _08196854: .4byte 0x082EA31C
 _08196858:
 	movs r0, #0xff

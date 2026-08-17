@@ -863,7 +863,7 @@ sub_081CA86C: @ 0x081CA86C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081CA884: .4byte gMenuU16Table_Rom_52AD40
+_081CA884: .4byte gRematchTable
 	thumb_func_end sub_081CA86C
 
 	thumb_func_start sub_081CA888

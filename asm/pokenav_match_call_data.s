@@ -51,7 +51,7 @@ GetTrainerIdxByRematchIdx: @ 0x081D0CD8
 	ldrh r0, [r0]
 	bx lr
 	.align 2, 0
-_081D0CE4: .4byte gMenuU16Table_Rom_52AD40
+_081D0CE4: .4byte gRematchTable
 	thumb_func_end GetTrainerIdxByRematchIdx
 
 	thumb_func_start GetRematchIdxByTrainerIdx
@@ -67,7 +67,7 @@ _081D0CF0:
 	adds r0, r1, #0
 	b _081D0D0C
 	.align 2, 0
-_081D0CFC: .4byte gMenuU16Table_Rom_52AD40
+_081D0CFC: .4byte gRematchTable
 _081D0D00:
 	adds r2, #0x10
 	adds r1, #1
