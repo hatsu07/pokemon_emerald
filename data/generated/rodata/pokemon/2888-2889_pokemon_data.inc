@@ -1278,21 +1278,21 @@ gSlotMachineMenu_Gfx: @ 0x08586F4C
 	@ 30x20 slot machine menu BG tilemap
 	.globl gSlotMachineMenu_Tilemap
 gSlotMachineMenu_Tilemap: @ 0x08587AEC
-	.incbin "graphics/slot_machine/menu.bin"
+	.include "build/graphics/slot_machine/menu.tilemap.inc"
 	.if (. - gSlotMachineMenu_Tilemap) != 0x4B0
 	.error "gSlotMachineMenu_Tilemap size mismatch"
 	.endif
 	@ 20x11 Reel Time window BG tilemap
 	.globl sReelTimeWindow_Tilemap
 sReelTimeWindow_Tilemap: @ 0x08587F9C
-	.incbin "graphics/slot_machine/reel_time_window.bin"
+	.include "build/graphics/slot_machine/reel_time_window.tilemap.inc"
 	.if (. - sReelTimeWindow_Tilemap) != 0x1B8
 	.error "sReelTimeWindow_Tilemap size mismatch"
 	.endif
 	@ 30x20 slot machine info-box BG tilemap
 	.globl gSlotMachineInfoBox_Tilemap
 gSlotMachineInfoBox_Tilemap: @ 0x08588154
-	.incbin "graphics/slot_machine/info_box.bin"
+	.include "build/graphics/slot_machine/info_box.tilemap.inc"
 	.if (. - gSlotMachineInfoBox_Tilemap) != 0x4B0
 	.error "gSlotMachineInfoBox_Tilemap size mismatch"
 	.endif

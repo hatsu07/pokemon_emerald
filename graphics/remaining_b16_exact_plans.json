@@ -515,10 +515,10 @@
       "symbol": "gBattleAnimUnused_Unknown3"
     },
     "build/graphics/battle_anims/unused/unknown_4.bin.lz": {
-      "kind": "raw",
+      "kind": "palette",
       "legacy_output": "build/graphics/unknown/C8_palette.gbapal.lz",
       "legacy_source": "graphics/unknown/C8_palette.png",
-      "param": "32",
+      "param": "16",
       "plan": {
         "backrefs": [
           [
@@ -532,7 +532,7 @@
         "tail": ""
       },
       "slot_key": "C8",
-      "source": "graphics/battle_anims/unused/unknown_4.bin",
+      "source": "graphics/battle_anims/unused/unknown_4_palette.png",
       "symbol": "gBattleAnimUnused_Unknown4"
     },
     "build/graphics/battle_anims/unused/water_splash.8bpp.lz": {

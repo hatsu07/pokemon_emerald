@@ -135,7 +135,10 @@ endforeach()
 
 # Makefileでも明示的に依存していたフォント。
 list(APPEND GRAPHICS_RELATIVE_OUTPUTS
-    "build/graphics/fonts/font_tiles.4bpp.lz")
+    "build/graphics/fonts/font_tiles.4bpp.lz"
+    "build/graphics/slot_machine/menu.tilemap.inc"
+    "build/graphics/slot_machine/info_box.tilemap.inc"
+    "build/graphics/slot_machine/reel_time_window.tilemap.inc")
 
 list(REMOVE_DUPLICATES GRAPHICS_RELATIVE_OUTPUTS)
 list(SORT GRAPHICS_RELATIVE_OUTPUTS)
@@ -173,7 +176,7 @@ set(REMAINING_B16_EXACT_SOURCES
     "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/unknown_3.u16"
     "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/line_sketch_2.png"
     "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/line_sketch_2.tilemap.u16"
-    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/unknown_4.bin"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/unknown_4_palette.png"
     "${CMAKE_SOURCE_DIR}/graphics/unused/blue_frame.tilemap.u16"
     "${CMAKE_SOURCE_DIR}/graphics/unused/red_yellow_green_frame.tilemap.u16"
     "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/water_splash.png"
@@ -300,8 +303,32 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     set(OUTPUT_ABS "${CMAKE_SOURCE_DIR}/${RELATIVE_OUTPUT}")
     get_filename_component(OUTPUT_DIR "${OUTPUT_ABS}" DIRECTORY)
 
-    # BEGIN BATTLE TRANSITION EXACT PIPELINE
+    # BEGIN SLOT MACHINE SEMANTIC TILEMAP PIPELINE
     if("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/slot_machine/(menu|info_box|reel_time_window)[.]tilemap[.]inc$")
+        set(SLOT_TILEMAP_STEM "${CMAKE_MATCH_1}")
+        set(SLOT_TILEMAP_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/slot_machine/${SLOT_TILEMAP_STEM}.tilemap.csv")
+        if("${SLOT_TILEMAP_STEM}" STREQUAL "reel_time_window")
+            set(SLOT_TILEMAP_ENTRIES 220)
+        else()
+            set(SLOT_TILEMAP_ENTRIES 600)
+        endif()
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py"
+                "${SLOT_TILEMAP_INPUT}" "${OUTPUT_ABS}"
+                --expected-entries "${SLOT_TILEMAP_ENTRIES}"
+            DEPENDS
+                "${SLOT_TILEMAP_INPUT}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py"
+            VERBATIM)
+    # END SLOT MACHINE SEMANTIC TILEMAP PIPELINE
+
+    # BEGIN BATTLE TRANSITION EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/battle_transitions/(team_aqua|team_magma|frontier_logo|frontier_square_filled|frontier_square_empty|frontier_square_shrink_1|frontier_square_shrink_2)[.]4bpp[.]lz$")
         set(BTRANS_STEM "${CMAKE_MATCH_1}")
         set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/battle_transitions/${BTRANS_STEM}.png")
