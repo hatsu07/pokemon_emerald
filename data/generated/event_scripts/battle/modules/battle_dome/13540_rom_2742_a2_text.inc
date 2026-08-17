@@ -312,6 +312,7 @@ EventScript_JP_08274696: @ 0x08274696
 	callstd 0x04
 	closemessage
 	end
+	.globl EventScript_JP_082746AB
 EventScript_JP_082746AB: @ 0x082746AB
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000

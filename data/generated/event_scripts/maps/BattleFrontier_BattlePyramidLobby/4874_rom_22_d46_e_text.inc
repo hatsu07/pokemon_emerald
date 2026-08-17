@@ -100,6 +100,7 @@ EventScript_JP_0822D602: @ 0x0822D602
 	.byte 0x25
 	.2byte 0x00F0
 	end
+	.globl EventScript_JP_0822D60B
 EventScript_JP_0822D60B: @ 0x0822D60B
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000
