@@ -391,10 +391,20 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x15
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08245EDE
-	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x61, 0x51, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ ANALYSIS: PROVEN_EVENT_SCRIPT addr=0x08245EDE size=0x15 source=reachable_goto_if_pair
+	.globl EventScript_ShowMessage_08245EDE
+EventScript_ShowMessage_08245EDE:
+	@ special 0x015F: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x015F
+	setvar 0x800D, 0x0000
+	@ special 0x0019: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x0019
+	loadword 0x00, gText_Rom_245161
+	callstd 0x04
+	release
+	end
 	@ Recovered proven split event command at 0x08245EF3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245EF3 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_245192
@@ -422,10 +432,20 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x15
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08245F56
-	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x59, 0x53, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ ANALYSIS: PROVEN_EVENT_SCRIPT addr=0x08245F56 size=0x15 source=reachable_goto_if_pair
+	.globl EventScript_ShowMessage_08245F56
+EventScript_ShowMessage_08245F56:
+	@ special 0x015F: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x015F
+	setvar 0x800D, 0x0000
+	@ special 0x0019: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x0019
+	loadword 0x00, gText_Rom_245359
+	callstd 0x04
+	release
+	end
 	@ Recovered proven split event command at 0x08245F6B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245F6B raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_245383
@@ -453,10 +473,20 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x15
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08245FCE
-	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x37, 0x55, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ ANALYSIS: PROVEN_EVENT_SCRIPT addr=0x08245FCE size=0x15 source=reachable_goto_if_pair
+	.globl EventScript_ShowMessage_08245FCE
+EventScript_ShowMessage_08245FCE:
+	@ special 0x015F: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x015F
+	setvar 0x800D, 0x0000
+	@ special 0x0019: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x0019
+	loadword 0x00, gText_Rom_245537
+	callstd 0x04
+	release
+	end
 	@ Recovered proven split event command at 0x08245FE3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245FE3 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_24556D
@@ -484,10 +514,20 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x15
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08246046
-	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x29, 0x57, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ ANALYSIS: PROVEN_EVENT_SCRIPT addr=0x08246046 size=0x15 source=reachable_goto_if_pair
+	.globl EventScript_ShowMessage_08246046
+EventScript_ShowMessage_08246046:
+	@ special 0x015F: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x015F
+	setvar 0x800D, 0x0000
+	@ special 0x0019: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x0019
+	loadword 0x00, gText_Rom_245729
+	callstd 0x04
+	release
+	end
 	@ Recovered proven split event command at 0x0824605B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824605B raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_245748
@@ -515,10 +555,20 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x15
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082460BE
-	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0xE3, 0x58, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ ANALYSIS: PROVEN_EVENT_SCRIPT addr=0x082460BE size=0x15 source=reachable_goto_if_pair
+	.globl EventScript_ShowMessage_082460BE
+EventScript_ShowMessage_082460BE:
+	@ special 0x015F: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x015F
+	setvar 0x800D, 0x0000
+	@ special 0x0019: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x0019
+	loadword 0x00, gText_Rom_2458E3
+	callstd 0x04
+	release
+	end
 	@ Recovered proven split event command at 0x082460D3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082460D3 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_24590B
@@ -546,10 +596,20 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x15
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08246136
-	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x5F, 0x52, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ ANALYSIS: PROVEN_EVENT_SCRIPT addr=0x08246136 size=0x15 source=reachable_goto_if_pair
+	.globl EventScript_ShowMessage_08246136
+EventScript_ShowMessage_08246136:
+	@ special 0x015F: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x015F
+	setvar 0x800D, 0x0000
+	@ special 0x0019: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x0019
+	loadword 0x00, gText_Rom_24525F
+	callstd 0x04
+	release
+	end
 	@ Recovered proven split event command at 0x0824614B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824614B raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_245292
@@ -577,10 +637,20 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x15
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082461AE
-	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x47, 0x54, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ ANALYSIS: PROVEN_EVENT_SCRIPT addr=0x082461AE size=0x15 source=reachable_goto_if_pair
+	.globl EventScript_ShowMessage_082461AE
+EventScript_ShowMessage_082461AE:
+	@ special 0x015F: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x015F
+	setvar 0x800D, 0x0000
+	@ special 0x0019: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x0019
+	loadword 0x00, gText_Rom_245447
+	callstd 0x04
+	release
+	end
 	@ Recovered proven split event command at 0x082461C3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082461C3 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_245476
@@ -608,10 +678,20 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x15
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08246226
-	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x4C, 0x56, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ ANALYSIS: PROVEN_EVENT_SCRIPT addr=0x08246226 size=0x15 source=reachable_goto_if_pair
+	.globl EventScript_ShowMessage_08246226
+EventScript_ShowMessage_08246226:
+	@ special 0x015F: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x015F
+	setvar 0x800D, 0x0000
+	@ special 0x0019: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x0019
+	loadword 0x00, gText_Rom_24564C
+	callstd 0x04
+	release
+	end
 	@ Recovered proven split event command at 0x0824623B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824623B raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_245665
@@ -639,10 +719,20 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x15
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824629E
-	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0x08, 0x58, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ ANALYSIS: PROVEN_EVENT_SCRIPT addr=0x0824629E size=0x15 source=reachable_goto_if_pair
+	.globl EventScript_ShowMessage_0824629E
+EventScript_ShowMessage_0824629E:
+	@ special 0x015F: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x015F
+	setvar 0x800D, 0x0000
+	@ special 0x0019: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x0019
+	loadword 0x00, gText_Rom_245808
+	callstd 0x04
+	release
+	end
 	@ Recovered proven split event command at 0x082462B3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082462B3 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_24582B
@@ -670,10 +760,20 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	release
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x15
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08246316
-	.byte 0x25, 0x5F, 0x01, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x25, 0x19, 0x00, 0x0F, 0x00, 0xF0, 0x59, 0x24
-	.byte 0x08, 0x09, 0x04, 0x6C, 0x02
+	@ ANALYSIS: PROVEN_EVENT_SCRIPT addr=0x08246316 size=0x15 source=reachable_goto_if_pair
+	.globl EventScript_ShowMessage_08246316
+EventScript_ShowMessage_08246316:
+	@ special 0x015F: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x015F
+	setvar 0x800D, 0x0000
+	@ special 0x0019: local SPECIAL_* constant name not proven
+	.byte 0x25
+	.2byte 0x0019
+	loadword 0x00, gText_Rom_2459F0
+	callstd 0x04
+	release
+	end
 	@ Recovered proven split event command at 0x0824632B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824632B raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_245A24
