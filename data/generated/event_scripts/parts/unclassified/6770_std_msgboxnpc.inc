@@ -720,9 +720,14 @@ EventScriptData_JP_08242A21:
 	message gText_Rom_2438FE
 	@ return @ 0x08242B5E
 	return
-	@ ANALYSIS: RAW_BLOCK size=0xE
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08242B5F
-	.byte 0x16, 0x04, 0x80, 0x01, 0x00, 0x05, 0xF4, 0x29, 0x24, 0x08, 0x02, 0x4F, 0x12, 0xFE
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08242B5F size=0xA source=v42_bulk
+	@ setvar 0x8004, 0x0001 @ 0x08242B5F
+	setvar 0x8004, 0x0001
+	@ goto EventScriptData_JP_082429F4 @ 0x08242B64
+	goto EventScriptData_JP_082429F4
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: UNPROVEN_RAW addr=0x08242B69
+	.byte 0x02, 0x4F, 0x12, 0xFE
 	.globl Std_ObtainItem
 Std_ObtainItem: @ 0x08242B6D
 	@ Embedded ROM bytes: file offset 0x242B6D, size 0xE2
@@ -1473,9 +1478,12 @@ RusturfTunnel_EventScript_RemoveObstacles_08243299:
 	release
 	@ end @ 0x08243443
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x6
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08243444
-	.byte 0x05, 0x97, 0x41, 0x24, 0x08, 0x02
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08243444 size=0x5 source=v42_bulk
+	@ goto 0x08244197 @ 0x08243444
+	goto 0x08244197
+	@ ANALYSIS: RAW_BLOCK size=0x1
+	@ ANALYSIS: UNPROVEN_RAW addr=0x08243449
+	.byte 0x02
 	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x0824344A size=0x16 source_backed=YES
 Movement_0824344A:
 	.byte 0x55, 0x12, 0x54, 0x12, 0x55, 0x12, 0x54, 0x12, 0x55, 0x13, 0x54, 0x13, 0x55, 0x13, 0x54, 0x13

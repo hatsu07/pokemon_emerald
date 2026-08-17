@@ -145,9 +145,9 @@ EventScriptData_JP_0823D1AC:
 	releaseall
 	@ end @ 0x0823D1B5
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x3
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0823D1B6
-	.byte 0x31, 0x72, 0x01
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0823D1B6 size=0x3 source=v42_bulk
+	@ playfanfare 0x0172 @ 0x0823D1B6
+	playfanfare 0x0172
 	@ Recovered proven split event command at 0x0823D1B9
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0823D1B9 raw_tail=0x1 continuation=0x4; reachability not claimed
 	message gText_Rom_23D64A
