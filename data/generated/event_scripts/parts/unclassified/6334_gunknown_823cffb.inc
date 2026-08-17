@@ -134,9 +134,10 @@ EventScriptData_JP_0823D179:
 	callstd 0x04
 	releaseall
 	end
-	@ ANALYSIS: RESIDUAL_RAW addr=0x0823D1AC size=0x2
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_23D677 @ ROM pointer 0x0823D677
+	@ ANALYSIS: PROVEN_EVENT_ENTRY_CROSS_BOUNDARY addr=0x0823D1AC consumers=8
+	.globl EventScriptData_JP_0823D1AC
+EventScriptData_JP_0823D1AC:
+	loadword 0x00, gText_Rom_23D677
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0x09, 0x04, 0x6B, 0x02, 0x31, 0x72, 0x01, 0x67
 	.4byte gText_Rom_23D64A @ ROM pointer 0x0823D64A
