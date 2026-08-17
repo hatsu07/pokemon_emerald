@@ -954,7 +954,7 @@
       "width": 128,
       "height": 128,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0039_rom_00C1502C_w128h128.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0039_rom_00C1502C_w128h128.png",
+      "png_rel": "graphics/contest/japanese/composite_1.png",
       "roundtrip_ok": true
     },
     {
@@ -1034,7 +1034,7 @@
       "width": 128,
       "height": 256,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0043_rom_00C15E88_w128h256.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0043_rom_00C15E88_w128h256.png",
+      "png_rel": "graphics/contest/japanese/composite_2.png",
       "roundtrip_ok": true
     },
     {
@@ -1171,7 +1171,7 @@
       "width": 128,
       "height": 128,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0050_rom_00C17AB8_w128h128.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0050_rom_00C17AB8_w128h128.png",
+      "png_rel": "graphics/contest/interface.png",
       "roundtrip_ok": true
     },
     {
@@ -1276,7 +1276,7 @@
       "width": 48,
       "height": 48,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0055_rom_00C195B4_w48h48.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0055_rom_00C195B4_w48h48.png",
+      "png_rel": "graphics/contest/japanese/voltage.png",
       "roundtrip_ok": true
     },
     {
@@ -1318,7 +1318,7 @@
       "width": 128,
       "height": 128,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0057_rom_00C196CC_w128h128.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0057_rom_00C196CC_w128h128.png",
+      "png_rel": "graphics/contest/results_screen/tiles.png",
       "roundtrip_ok": true
     },
     {
@@ -3679,7 +3679,7 @@
       "width": 64,
       "height": 128,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0170_rom_00C1F210_w64h128.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0170_rom_00C1F210_w64h128.png",
+      "png_rel": "graphics/battle_interface/healthbox_singles_player.png",
       "roundtrip_ok": true
     },
     {
@@ -3700,7 +3700,7 @@
       "width": 64,
       "height": 64,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0171_rom_00C1F4D0_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0171_rom_00C1F4D0_w64h64.png",
+      "png_rel": "graphics/battle_interface/healthbox_singles_opponent.png",
       "roundtrip_ok": true
     },
     {
@@ -3721,7 +3721,7 @@
       "width": 64,
       "height": 64,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0172_rom_00C1F660_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0172_rom_00C1F660_w64h64.png",
+      "png_rel": "graphics/battle_interface/healthbox_doubles_player.png",
       "roundtrip_ok": true
     },
     {
@@ -3742,7 +3742,7 @@
       "width": 64,
       "height": 64,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0173_rom_00C1F7F8_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0173_rom_00C1F7F8_w64h64.png",
+      "png_rel": "graphics/battle_interface/healthbox_doubles_opponent.png",
       "roundtrip_ok": true
     },
     {
@@ -3763,7 +3763,7 @@
       "width": 64,
       "height": 128,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0174_rom_00C1F98C_w64h128.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0174_rom_00C1F98C_w64h128.png",
+      "png_rel": "graphics/battle_interface/healthbox_safari.png",
       "roundtrip_ok": true
     },
     {
@@ -7323,7 +7323,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0344_rom_00C2DE48_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0344_rom_00C2DE48_pal.png",
+      "png_rel": "graphics/battle_anims/masks/cure_bubbles_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -7510,7 +7510,7 @@
       "width": 16,
       "height": 56,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0353_rom_00C2EAF4_w16h56.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0353_rom_00C2EAF4_w16h56.png",
+      "png_rel": "graphics/battle_anims/masks/unused_level_up.png",
       "roundtrip_ok": true
     },
     {
@@ -8012,7 +8012,7 @@
       "width": 64,
       "height": 64,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0377_rom_00C2FAAC_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0377_rom_00C2FAAC_w64h64.png",
+      "png_rel": "graphics/pokemon/bulbasaur/front_still_jp.png",
       "roundtrip_ok": true
     }
   ]

@@ -228,7 +228,7 @@ _080F61BE:
 	adds r5, #2
 	b _080F61EE
 	.align 2, 0
-_080F61CC: .4byte 0x08C196CC
+_080F61CC: .4byte gContestResults_Gfx
 _080F61D0: .4byte gContestResults_Bg_Tilemap
 _080F61D4: .4byte gContestResults_Interface_Tilemap
 _080F61D8: .4byte gContestResults_WinnerBanner_Tilemap

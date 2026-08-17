@@ -3487,7 +3487,7 @@ gMonFrontPicCoords: @ 0x082D45C8
 	.globl gMonStillFrontPicTable
 gMonStillFrontPicTable: @ 0x082D4CA8
 	.4byte 0x08C00758; .2byte 0x0800, SPECIES_NONE @ species index 0, MON_PIC_SIZE
-	.4byte 0x08C2FAAC; .2byte 0x0800, SPECIES_BULBASAUR @ species index 1, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Bulbasaur; .2byte 0x0800, SPECIES_BULBASAUR @ species index 1, MON_PIC_SIZE
 	.4byte 0x08C30464; .2byte 0x0800, SPECIES_IVYSAUR @ species index 2, MON_PIC_SIZE
 	.4byte 0x08C30FD4; .2byte 0x0800, SPECIES_VENUSAUR @ species index 3, MON_PIC_SIZE
 	.4byte 0x08C31EA0; .2byte 0x0800, SPECIES_CHARMANDER @ species index 4, MON_PIC_SIZE

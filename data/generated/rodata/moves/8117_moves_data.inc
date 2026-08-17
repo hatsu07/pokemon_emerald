@@ -353,6 +353,8 @@ gBattleAnimSpritePal_BlueFlames:
 	.globl gBattleAnimSpriteGfx_BlueFlames2
 gBattleAnimSpriteGfx_BlueFlames2:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0038.lz"
+	.globl gJPContestGfx1
+gJPContestGfx1:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0039.lz"
 	.globl gJPContestPal
 gJPContestPal:
@@ -366,6 +368,8 @@ gJPContestWindowsTilemap:
 	@ 0xC12AA4 - 0xC15E87
 gMoveLz77Data_Rom_C15E88:
 	@ ANALYSIS: SOURCE_RANGE offset=0xC15E88, size=0x3424
+	.globl gJPContestGfx2
+gJPContestGfx2:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0043.lz"
 	.globl gContestInterfaceAudiencePalette
 gContestInterfaceAudiencePalette:
@@ -385,6 +389,8 @@ gJPContestAudienceTilemap:
 	.globl gContestCurtainTilemap
 gContestCurtainTilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0049.lz"
+	.globl gContestInterfaceGfx
+gContestInterfaceGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0050.lz"
 	.globl gContestAudienceGfx
 gContestAudienceGfx:
@@ -404,10 +410,14 @@ gContestJudgeSymbolsPal:
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0x00, 0x00, 0x00, 0x00, 0x30, 0x03, 0x30, 0x03, 0x13, 0x31, 0x13, 0x31, 0x13, 0x11, 0x11, 0x31
 	.byte 0x13, 0x11, 0x11, 0x31, 0x30, 0x11, 0x11, 0x03, 0x00, 0x13, 0x31, 0x00, 0x00, 0x30, 0x03, 0x00
+	.globl gJPContestVoltageGfx
+gJPContestVoltageGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0055.lz"
 	.globl gJPContestVoltagePal
 gJPContestVoltagePal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0056.lz"
+	.globl gContestResults_Gfx
+gContestResults_Gfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0057.lz"
 	.globl gContestResults_WinnerBanner_Tilemap
 gContestResults_WinnerBanner_Tilemap:
@@ -751,10 +761,20 @@ gMoveLz77Data_Rom_C1F1EC:
 	.globl gBattleAnimSpritePal_Tendrils
 gBattleAnimSpritePal_Tendrils:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0169.lz"
+	.globl gHealthboxSinglesPlayerGfx
+gHealthboxSinglesPlayerGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0170.lz"
+	.globl gHealthboxSinglesOpponentGfx
+gHealthboxSinglesOpponentGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0171.lz"
+	.globl gHealthboxDoublesPlayerGfx
+gHealthboxDoublesPlayerGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0172.lz"
+	.globl gHealthboxDoublesOpponentGfx
+gHealthboxDoublesOpponentGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0173.lz"
+	.globl gHealthboxSafariGfx
+gHealthboxSafariGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0174.lz"
 	.globl gUnusedGfx_Shadow
 gUnusedGfx_Shadow:
@@ -1278,6 +1298,8 @@ gStatAnim_SpDefense_Pal:
 	.globl gCureBubblesGfx
 gCureBubblesGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0343.lz"
+	.globl gCureBubblesPal
+gCureBubblesPal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0344.lz"
 	.globl gCureBubblesTilemap
 gCureBubblesTilemap:
@@ -1303,6 +1325,8 @@ gBattleAnimSpriteGfx_TagHand:
 	.globl gBattleAnimSpriteGfx_NoiseLine
 gBattleAnimSpriteGfx_NoiseLine:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0352.lz"
+	.globl UnusedLevelupAnimationGfx
+UnusedLevelupAnimationGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0353.lz"
 	.globl UnusedLevelupAnimationTilemap
 UnusedLevelupAnimationTilemap:
@@ -1371,4 +1395,6 @@ gBattleAnimSpriteGfx_FlatRock:
 gBattleAnimSpritePal_FlatRock:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0375.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0376.lz"
+	.globl gMonStillFrontPic_Bulbasaur
+gMonStillFrontPic_Bulbasaur:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0377.lz"

@@ -211,8 +211,8 @@ _0817041C: .4byte 0x03005AD0
 _08170420: .4byte 0x020205AC
 _08170424: .4byte 0x08007141
 _08170428: .4byte UnusedLevelupAnimationTilemap
-_0817042C: .4byte 0x08C2EAF4
-_08170430: .4byte 0x08C2DE48
+_0817042C: .4byte UnusedLevelupAnimationGfx
+_08170430: .4byte gCureBubblesPal
 _08170434: .4byte 0x02022ACC
 _08170438: .4byte 0x02022ACE
 _0817043C: .4byte 0x03005B60

@@ -132,7 +132,7 @@ _080D6F8A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080D6FAC: .4byte 0x08C17AB8
+_080D6FAC: .4byte gContestInterfaceGfx
 _080D6FB0: .4byte gContestAudienceGfx
 _080D6FB4: .4byte 0x06002000
 _080D6FB8: .4byte gContestAudienceTilemap
@@ -1001,7 +1001,7 @@ _080D76F4:
 	bl LZDecompressWram
 	b _080D78DA
 	.align 2, 0
-_080D7700: .4byte 0x08C17AB8
+_080D7700: .4byte gContestInterfaceGfx
 _080D7704:
 	ldr r0, _080D7740
 	ldr r4, _080D7744
