@@ -146,13 +146,13 @@ gBattlePyramidBagData_085EF704: @ 0x085EF704
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.2byte 0x11F0, 0x0000, 0x01E1, 0x0000, 0x21DE, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085EF710: battle_pyramid_bag.s: SetBagItemsListTemplate
-	.globl gBattlePyramidBagData_085EF710
-gBattlePyramidBagData_085EF710: @ 0x085EF710
-	@ analyzed canonical ROM range 0x085EF710-0x085EF727
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x18
-	.2byte 0x0000, 0x0000, 0x4C69, 0x081C, 0x4D21, 0x081C, 0x0000, 0x0000
-	.2byte 0x0000, 0x0008, 0x3022, 0x0100
+
+	.globl sPyramidBagListMenuTemplate
+sPyramidBagListMenuTemplate: @ 0x085EF710
+	@ JP struct ListMenuTemplate. SetBagItemsListTemplate copies all 24 bytes,
+	@ then fills items, totalItems and maxShowed at runtime.
+	@ Preserve JP packed fields exactly (not canonical EN initializer values).
+	rodata_list_menu_template 0, PyramidBagMoveCursorFunc, PrintItemQuantity, 0, 0, 0, 0, 8, 0, 2, 2, 0, 3, 0, 0, 0, 1, 0
 	.globl gPokemonPointerTable_Rom_5EF728
 gPokemonPointerTable_Rom_5EF728: @ 0x085EF728
 	.4byte gText_Rom_5C93A3

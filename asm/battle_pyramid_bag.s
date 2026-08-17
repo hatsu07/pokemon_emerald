@@ -624,7 +624,7 @@ _081C4BFC: .4byte 0x00000824
 _081C4C00: .4byte 0x00000828
 _081C4C04: .4byte 0x085C9448
 _081C4C08: .4byte 0x03006050
-_081C4C0C: .4byte gBattlePyramidBagData_085EF710
+_081C4C0C: .4byte sPyramidBagListMenuTemplate
 _081C4C10: .4byte 0x00000822
 	thumb_func_end SetBagItemsListTemplate
 

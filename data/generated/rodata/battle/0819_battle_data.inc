@@ -11,13 +11,14 @@ gContestData_08562828: @ 0x08562828
 	.2byte 0x0202, 0x0202, 0x0202, 0x0202, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0200, 0x0202, 0x0202, 0x0202, 0x0202
 	@ pret/pokeemerald-jp direct xref for 0x08562888: contest.s: sub_080DC150
-	.globl gContestData_08562888
-gContestData_08562888: @ 0x08562888
-	@ analyzed canonical ROM range 0x08562888-0x085628A7
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	.byte 0x84, 0x23, 0xC0, 0x08, 0x00, 0x10, 0xE8, 0x80, 0x84, 0x23, 0xC0, 0x08, 0x00, 0x10, 0xE9, 0x80
-	.byte 0x84, 0x23, 0xC0, 0x08, 0x00, 0x10, 0xEA, 0x80, 0x84, 0x23, 0xC0, 0x08, 0x00, 0x10, 0xEB, 0x80
+
+	.globl sSpriteSheets_ContestantsTurnBlinkEffect
+sSpriteSheets_ContestantsTurnBlinkEffect: @ 0x08562888
+	@ struct CompressedSpriteSheet[4]; indexed by contestant in sub_080DC150.
+	rodata_compressed_sprite_sheet gBlankGfxCompressed, 0x1000, 0x80E8
+	rodata_compressed_sprite_sheet gBlankGfxCompressed, 0x1000, 0x80E9
+	rodata_compressed_sprite_sheet gBlankGfxCompressed, 0x1000, 0x80EA
+	rodata_compressed_sprite_sheet gBlankGfxCompressed, 0x1000, 0x80EB
 	@ pret/pokeemerald-jp direct xref for 0x085628A8: contest.s: sub_080DC150
 	.globl gContestData_085628A8
 gContestData_085628A8: @ 0x085628A8

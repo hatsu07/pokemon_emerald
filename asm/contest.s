@@ -9806,7 +9806,7 @@ _080DBC6A:
 _080DBCD8: .4byte gContestData_08560A6C
 _080DBCDC: .4byte 0x02039BD4
 _080DBCE0: .4byte 0x020205AC
-_080DBCE4: .4byte gContestData_08560A4C
+_080DBCE4: .4byte sSpriteSheet_NextTurn
 _080DBCE8: .4byte gContestData_08560A7C
 _080DBCEC: .4byte gContestData_085609D4
 _080DBCF0: .4byte 0x02039BC6
@@ -10563,7 +10563,7 @@ sub_080DC150: @ 0x080DC150
 	bx r1
 	.align 2, 0
 _080DC2AC: .4byte 0x02039BC6
-_080DC2B0: .4byte gContestData_08562888
+_080DC2B0: .4byte sSpriteSheets_ContestantsTurnBlinkEffect
 _080DC2B4: .4byte gContestData_085628A8
 _080DC2B8: .4byte gContestData_08562910
 _080DC2BC: .4byte 0x020205AC

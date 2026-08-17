@@ -31,13 +31,15 @@ gContestData_08560A34: @ 0x08560A34
 sSpriteTemplate_08560A34: @ 0x08560A34
 	rodata_sprite_template 0x4E20, 0xABE0, 0x085609E0, gDummySpriteAnimTable, 0, 0x08560A28, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x08560A4C: contest.s: sub_080DBC54
-	.globl gContestData_08560A4C
-gContestData_08560A4C: @ 0x08560A4C
-	@ analyzed canonical ROM range 0x08560A4C-0x08560A6B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	.byte 0x20, 0xE9, 0xD8, 0x08, 0xA0, 0x00, 0x22, 0x4E, 0x20, 0xE9, 0xD8, 0x08, 0xA0, 0x00, 0x23, 0x4E
-	.byte 0x20, 0xE9, 0xD8, 0x08, 0xA0, 0x00, 0x24, 0x4E, 0x20, 0xE9, 0xD8, 0x08, 0xA0, 0x00, 0x25, 0x4E
+
+	.globl sSpriteSheet_NextTurn
+sSpriteSheet_NextTurn: @ 0x08560A4C
+	@ struct CompressedSpriteSheet[4]; loaded by sub_080DBC54 with an 8-byte stride.
+	@ JP graphics size is 0x00A0 per record; keep JP-local ROM bytes.
+	rodata_compressed_sprite_sheet gLz77Asset_08D8E920, 0x00A0, 0x4E22
+	rodata_compressed_sprite_sheet gLz77Asset_08D8E920, 0x00A0, 0x4E23
+	rodata_compressed_sprite_sheet gLz77Asset_08D8E920, 0x00A0, 0x4E24
+	rodata_compressed_sprite_sheet gLz77Asset_08D8E920, 0x00A0, 0x4E25
 	@ pret/pokeemerald-jp direct xref for 0x08560A6C: contest.s: sub_080DBC54
 	.globl gContestData_08560A6C
 gContestData_08560A6C: @ 0x08560A6C
