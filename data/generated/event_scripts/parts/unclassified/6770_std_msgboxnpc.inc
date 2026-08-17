@@ -725,9 +725,12 @@ EventScriptData_JP_08242A21:
 	setvar 0x8004, 0x0001
 	@ goto EventScriptData_JP_082429F4 @ 0x08242B64
 	goto EventScriptData_JP_082429F4
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08242B69
-	.byte 0x02, 0x4F, 0x12, 0xFE
+	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x08242B69 size=0x1 source=v43_v44
+	@ end @ 0x08242B69
+	end
+	@ ANALYSIS: RAW_BLOCK size=0x3
+	@ ANALYSIS: UNPROVEN_RAW addr=0x08242B6A
+	.byte 0x4F, 0x12, 0xFE
 	.globl Std_ObtainItem
 Std_ObtainItem: @ 0x08242B6D
 	@ Embedded ROM bytes: file offset 0x242B6D, size 0xE2

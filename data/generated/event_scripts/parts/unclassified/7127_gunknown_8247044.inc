@@ -359,9 +359,9 @@ EventScriptData_JP_0824723B:
 	callstd 0x04
 	@ goto 0x0824417F @ 0x08247341
 	goto 0x0824417F
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08247346
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x08247346 size=0x1 source=v43_v44
+	@ end @ 0x08247346
+	end
 	loadword 0x00, gText_Rom_248137
 	callstd 0x04
 	release
@@ -860,9 +860,9 @@ SharedMapScript_0824790F:
 	setvar 0x8004, 0x0004
 	@ goto 0x08247A60 @ 0x08247A0E
 	goto 0x08247A60
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08247A13
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x08247A13 size=0x1 source=v43_v44
+	@ end @ 0x08247A13
+	end
 	setvar 0x8005, 0x0001
 	.byte 0x25 @ special 0x01AB; no matching SPECIAL_* constant
 	.2byte 0x01AB
