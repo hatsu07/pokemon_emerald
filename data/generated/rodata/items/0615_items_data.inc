@@ -1317,7 +1317,7 @@ MapHeader_JP_0845CA88: @ 0x0845CA88
 
 MapHeader_JP_0845CAA4: @ 0x0845CAA4
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_0842B298, SealedChamber_OuterRoom_MapEvents, 0x0821BA4B, 0, 0x01B6, 0x011C, 0x4E, 0x00, 0x00, 0x04, 0x0F, 0x00
+	semantic_map_header MapLayout_JP_0842B298, SealedChamber_OuterRoom_MapEvents, SealedChamber_OuterRoom_MapScripts, 0, 0x01B6, 0x011C, 0x4E, 0x00, 0x00, 0x04, 0x0F, 0x00
 
 MapHeader_JP_0845CAC0: @ 0x0845CAC0
 	@ struct MapHeader
@@ -1325,27 +1325,27 @@ MapHeader_JP_0845CAC0: @ 0x0845CAC0
 
 MapHeader_JP_0845CADC: @ 0x0845CADC
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_084324C0, ScorchedSlab_MapEvents, 0x0821BBD6, 0, 0x016E, 0x0137, 0x50, 0x00, 0x00, 0x04, 0x0F, 0x00
+	semantic_map_header MapLayout_JP_084324C0, ScorchedSlab_MapEvents, ScorchedSlab_MapScripts, 0, 0x016E, 0x0137, 0x50, 0x00, 0x00, 0x04, 0x0F, 0x00
 
 MapHeader_JP_0845CAF8: @ 0x0845CAF8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08433370, AquaHideout_UnusedRubyMap1_MapEvents, 0x0821BBE0, 0, 0x01AE, 0x013C, 0xC5, 0x00, 0x00, 0x04, 0x0F, 0x02
+	semantic_map_header MapLayout_JP_08433370, AquaHideout_UnusedRubyMap1_MapEvents, AquaHideout_UnusedRubyMap1_MapScripts, 0, 0x01AE, 0x013C, 0xC5, 0x00, 0x00, 0x04, 0x0F, 0x02
 
 MapHeader_JP_0845CB14: @ 0x0845CB14
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08433F30, AquaHideout_UnusedRubyMap2_MapEvents, 0x0821BBE1, 0, 0x01AE, 0x013D, 0xC5, 0x00, 0x00, 0x04, 0x0F, 0x02
+	semantic_map_header MapLayout_JP_08433F30, AquaHideout_UnusedRubyMap2_MapEvents, AquaHideout_UnusedRubyMap2_MapScripts, 0, 0x01AE, 0x013D, 0xC5, 0x00, 0x00, 0x04, 0x0F, 0x02
 
 MapHeader_JP_0845CB30: @ 0x0845CB30
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_084345B0, AquaHideout_UnusedRubyMap3_MapEvents, 0x0821BBE2, 0, 0x01AE, 0x013E, 0xC5, 0x00, 0x00, 0x04, 0x0F, 0x02
+	semantic_map_header MapLayout_JP_084345B0, AquaHideout_UnusedRubyMap3_MapEvents, AquaHideout_UnusedRubyMap3_MapScripts, 0, 0x01AE, 0x013E, 0xC5, 0x00, 0x00, 0x04, 0x0F, 0x02
 
 MapHeader_JP_0845CB4C: @ 0x0845CB4C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08435B38, SkyPillar_Entrance_MapEvents, 0x0821BBE3, 0, 0x0196, 0x0140, 0x55, 0x00, 0x00, 0x04, 0x0F, 0x00
+	semantic_map_header MapLayout_JP_08435B38, SkyPillar_Entrance_MapEvents, SkyPillar_Entrance_MapScripts, 0, 0x0196, 0x0140, 0x55, 0x00, 0x00, 0x04, 0x0F, 0x00
 
 MapHeader_JP_0845CB68: @ 0x0845CB68
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08436060, SkyPillar_Outside_MapEvents, 0x0821BBED, 0, 0x0196, 0x0141, 0x55, 0x00, 0x00, 0x03, 0x0D, 0x00
+	semantic_map_header MapLayout_JP_08436060, SkyPillar_Outside_MapEvents, SkyPillar_Outside_MapScripts, 0, 0x0196, 0x0141, 0x55, 0x00, 0x00, 0x03, 0x0D, 0x00
 
 MapHeader_JP_0845CB84: @ 0x0845CB84
 	@ struct MapHeader

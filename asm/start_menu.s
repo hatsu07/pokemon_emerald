@@ -1851,7 +1851,7 @@ _0809FB56:
 	bl ShowSaveMessage
 	b _0809FB74
 	.align 2, 0
-_0809FB64: .4byte 0x08276FBB
+_0809FB64: .4byte Text_08276FBB
 _0809FB68: .4byte 0x0809FB89
 _0809FB6C:
 	ldr r0, _0809FB80
