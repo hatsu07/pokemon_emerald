@@ -15,7 +15,7 @@ MapScripts_JP_082034B3: @ 0x082034B3
 	.byte 0x03
 	.4byte EventScript_JP_082034BE
 	.byte 0x05
-	.4byte 0x0824790F
+	.4byte SharedMapScript_0824790F
 	.byte 0
 EventScript_JP_082034BE: @ 0x082034BE
 	setrespawn 0x0006

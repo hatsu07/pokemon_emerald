@@ -831,7 +831,7 @@ MapScripts_JP_081F29A2: @ 0x081F29A2
 	.byte 0x03
 	.4byte EventScript_JP_081F29AD
 	.byte 0x05
-	.4byte 0x0824790F
+	.4byte SharedMapScript_0824790F
 	.byte 0
 EventScript_JP_081F29AD: @ 0x081F29AD
 	setrespawn 0x000E
@@ -961,7 +961,7 @@ MapScripts_JP_081F2CCF: @ 0x081F2CCF
 	.byte 0x03
 	.4byte EventScript_JP_081F2CDA
 	.byte 0x05
-	.4byte 0x0824790F
+	.4byte SharedMapScript_0824790F
 	.byte 0
 EventScript_JP_081F2CDA: @ 0x081F2CDA
 	setrespawn 0x000F
@@ -2349,7 +2349,7 @@ MapScripts_JP_081F4F85: @ 0x081F4F85
 	.byte 0x03
 	.4byte EventScript_JP_081F4F90
 	.byte 0x05
-	.4byte 0x0824790F
+	.4byte SharedMapScript_0824790F
 	.byte 0
 EventScript_JP_081F4F90: @ 0x081F4F90
 	setrespawn 0x0010
@@ -3345,7 +3345,7 @@ MapScripts_JP_081F5C4E: @ 0x081F5C4E
 	.byte 0x03
 	.4byte EventScript_JP_081F5C59
 	.byte 0x05
-	.4byte 0x0824790F
+	.4byte SharedMapScript_0824790F
 	.byte 0
 EventScript_JP_081F5C59: @ 0x081F5C59
 	setrespawn 0x0011
@@ -4534,7 +4534,7 @@ MapScripts_JP_081F7021: @ 0x081F7021
 	.byte 0x03
 	.4byte EventScript_JP_081F702C
 	.byte 0x05
-	.4byte 0x0824790F
+	.4byte SharedMapScript_0824790F
 	.byte 0
 EventScript_JP_081F702C: @ 0x081F702C
 	setrespawn 0x0012
@@ -4792,7 +4792,7 @@ MapScripts_JP_081F782A: @ 0x081F782A
 	.byte 0x03
 	.4byte EventScript_JP_081F7835
 	.byte 0x05
-	.4byte 0x0824790F
+	.4byte SharedMapScript_0824790F
 	.byte 0
 EventScript_JP_081F7835: @ 0x081F7835
 	setrespawn 0x0013
@@ -6967,7 +6967,7 @@ MapScripts_JP_081FA7CD: @ 0x081FA7CD
 	.byte 0x03
 	.4byte EventScript_JP_081FA7D8
 	.byte 0x05
-	.4byte 0x0824790F
+	.4byte SharedMapScript_0824790F
 	.byte 0
 EventScript_JP_081FA7D8: @ 0x081FA7D8
 	setrespawn 0x0003
@@ -9909,7 +9909,7 @@ MapScripts_JP_081FE809: @ 0x081FE809
 	.byte 0x03
 	.4byte EventScript_JP_081FE814
 	.byte 0x05
-	.4byte 0x0824790F
+	.4byte SharedMapScript_0824790F
 	.byte 0
 EventScript_JP_081FE814: @ 0x081FE814
 	setrespawn 0x0004
@@ -11478,7 +11478,7 @@ MapScripts_JP_08200DD4: @ 0x08200DD4
 	.byte 0x03
 	.4byte EventScript_JP_08200DDF
 	.byte 0x05
-	.4byte 0x0824790F
+	.4byte SharedMapScript_0824790F
 	.byte 0
 EventScript_JP_08200DDF: @ 0x08200DDF
 	setrespawn 0x0005
