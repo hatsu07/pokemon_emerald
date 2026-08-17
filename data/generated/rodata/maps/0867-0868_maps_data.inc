@@ -425,22 +425,44 @@ gFireData_085711B2: @ 0x085711B2
 sSpriteTemplate_Fire_085711CC: @ 0x085711CC
 	@ ANALYSIS: SEMANTIC_SPRITE_TEMPLATE addr=0x085711CC size=0x18
 	rodata_sprite_template 0x27D9, 0x27D9, gOamData_AffineOff_ObjNormal_32x32, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_0810A260
-	@ Residual fire data between SpriteTemplate 1 and 2.
-	@ ANALYSIS: RAW_BLOCK addr=0x085711E4 size=0x3C
-	.2byte 0x0000, 0x0005, 0x0004, 0x0005, 0x0008, 0x0005, 0x000C, 0x0005
-	.2byte 0xFFFE, 0x0000, 0x0010, 0x0005, 0xFFFF, 0x0000, 0x0014, 0x0005
-	.2byte 0xFFFF, 0x0000, 0x0014, 0x0005, 0xFFFF, 0x0000, 0x11E4, 0x0857
-	.2byte 0x11F8, 0x0857, 0x1200, 0x0857, 0x1208, 0x0857
+	@ Fire AnimCmd sequences used by sSpriteTemplate_Fire_08571220.
+	@ ANALYSIS: SEMANTIC_ANIM_CMD_TABLE addr=0x085711E4 size=0x3C count=4
+sAnim_Fire_085711E4: @ 0x085711E4
+	rodata_anim_frame 0, 5
+	rodata_anim_frame 4, 5
+	rodata_anim_frame 8, 5
+	rodata_anim_frame 12, 5
+	rodata_anim_jump 0
+sAnim_Fire_085711F8: @ 0x085711F8
+	rodata_anim_frame 16, 5
+	rodata_anim_end
+sAnim_Fire_08571200: @ 0x08571200
+	rodata_anim_frame 20, 5
+	rodata_anim_end
+sAnim_Fire_08571208: @ 0x08571208
+	rodata_anim_frame 20, 5
+	rodata_anim_end
+sAnims_Fire_08571210: @ 0x08571210
+	.4byte sAnim_Fire_085711E4
+	.4byte sAnim_Fire_085711F8
+	.4byte sAnim_Fire_08571200
+	.4byte sAnim_Fire_08571208
 sSpriteTemplate_Fire_08571220: @ 0x08571220
 	@ ANALYSIS: SEMANTIC_SPRITE_TEMPLATE addr=0x08571220 size=0x18
-	rodata_sprite_template 0x27F7, 0x27F7, gOamData_AffineOff_ObjNormal_16x16, 0x08571210, 0, gDummySpriteAffineAnimTable, sub_0810A34C
-	@ Residual fire data between SpriteTemplate 2 and 3.
-	@ ANALYSIS: RAW_BLOCK addr=0x08571238 size=0x18
-	.2byte 0x0000, 0x0005, 0x0010, 0x0005, 0x0020, 0x0005, 0x0030, 0x0005
-	.2byte 0xFFFE, 0x0000, 0x1238, 0x0857
+	rodata_sprite_template 0x27F7, 0x27F7, gOamData_AffineOff_ObjNormal_16x16, sAnims_Fire_08571210, 0, gDummySpriteAffineAnimTable, sub_0810A34C
+	@ Fire AnimCmd sequence used by sSpriteTemplate_Fire_08571250.
+	@ ANALYSIS: SEMANTIC_ANIM_CMD_TABLE addr=0x08571238 size=0x18 count=1
+sAnim_Fire_08571238: @ 0x08571238
+	rodata_anim_frame 0, 5
+	rodata_anim_frame 16, 5
+	rodata_anim_frame 32, 5
+	rodata_anim_frame 48, 5
+	rodata_anim_jump 0
+sAnims_Fire_0857124C: @ 0x0857124C
+	.4byte sAnim_Fire_08571238
 sSpriteTemplate_Fire_08571250: @ 0x08571250
 	@ ANALYSIS: SEMANTIC_SPRITE_TEMPLATE addr=0x08571250 size=0x18
-	rodata_sprite_template 0x27F8, 0x27F8, gOamData_AffineOff_ObjNormal_32x32, 0x0857124C, 0, gDummySpriteAffineAnimTable, sub_0810A500
+	rodata_sprite_template 0x27F8, 0x27F8, gOamData_AffineOff_ObjNormal_32x32, sAnims_Fire_0857124C, 0, gDummySpriteAffineAnimTable, sub_0810A500
 	@ pret/pokeemerald-jp direct xref for 0x08571268: fire.s: sub_0810A8E4
 	.globl gFireData_08571268
 gFireData_08571268: @ 0x08571268

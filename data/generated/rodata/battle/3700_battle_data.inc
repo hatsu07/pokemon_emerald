@@ -58,14 +58,39 @@ gBallOpenParticleSpritePalettes: @ 0x085C61B0
 	compressed_sprite_palette gBattleAnimSpritePal_CircleImpact, 0xD6F5
 	compressed_sprite_palette gBattleAnimSpritePal_CircleImpact, 0xD6F6
 	compressed_sprite_palette gBattleAnimSpritePal_CircleImpact, 0xD6F7
-	@ Residual ball-open animation data; semantic extent beyond palette table remains unproven.
-	@ ANALYSIS: RAW_BLOCK addr=0x085C6210 size=0x60
-	.2byte 0x0000, 0x0001, 0x0001, 0x0001, 0x0002, 0x0001, 0x0000, 0x0041
-	.2byte 0x0002, 0x0001, 0x0001, 0x0001, 0xFFFE, 0x0000, 0x0003, 0x0001
-	.2byte 0xFFFF, 0x0000, 0x0004, 0x0001, 0xFFFF, 0x0000, 0x0005, 0x0001
-	.2byte 0xFFFF, 0x0000, 0x0006, 0x0004, 0x0007, 0x0004, 0xFFFE, 0x0000
-	.2byte 0x0007, 0x0004, 0xFFFF, 0x0000, 0x6210, 0x085C, 0x622C, 0x085C
-	.2byte 0x6234, 0x085C, 0x623C, 0x085C, 0x6244, 0x085C, 0x6250, 0x085C
+	@ Ball-open particle AnimCmd sequences and animation table.
+	@ ANALYSIS: SEMANTIC_ANIM_CMD_TABLE addr=0x085C6210 size=0x60 count=6
+sAnim_BallOpenParticles_085C6210: @ 0x085C6210
+	rodata_anim_frame 0, 1
+	rodata_anim_frame 1, 1
+	rodata_anim_frame 2, 1
+	rodata_anim_frame 0, 1, 1, 0
+	rodata_anim_frame 2, 1
+	rodata_anim_frame 1, 1
+	rodata_anim_jump 0
+sAnim_BallOpenParticles_085C622C: @ 0x085C622C
+	rodata_anim_frame 3, 1
+	rodata_anim_end
+sAnim_BallOpenParticles_085C6234: @ 0x085C6234
+	rodata_anim_frame 4, 1
+	rodata_anim_end
+sAnim_BallOpenParticles_085C623C: @ 0x085C623C
+	rodata_anim_frame 5, 1
+	rodata_anim_end
+sAnim_BallOpenParticles_085C6244: @ 0x085C6244
+	rodata_anim_frame 6, 4
+	rodata_anim_frame 7, 4
+	rodata_anim_jump 0
+sAnim_BallOpenParticles_085C6250: @ 0x085C6250
+	rodata_anim_frame 7, 4
+	rodata_anim_end
+sAnims_BallOpenParticles_085C6258: @ 0x085C6258
+	.4byte sAnim_BallOpenParticles_085C6210
+	.4byte sAnim_BallOpenParticles_085C622C
+	.4byte sAnim_BallOpenParticles_085C6234
+	.4byte sAnim_BallOpenParticles_085C623C
+	.4byte sAnim_BallOpenParticles_085C6244
+	.4byte sAnim_BallOpenParticles_085C6250
 	@ pret/pokeemerald-jp direct xref for 0x085C6270: battle_anim_special.s: DiveBallOpenParticleAnimation, GreatBallOpenParticleAnimation, MasterBallOpenParticleAnimation, PokeBallOpenParticleAnimation, PremierBallOpenParticleAnimation (+5 more)
 	.globl gBattleAnimSpecialData_085C6270
 gBattleAnimSpecialData_085C6270: @ 0x085C6270
@@ -95,28 +120,28 @@ gBattleAnimSpecialData_085C62AC: @ 0x085C62AC
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6ECD6EC @ +0x0
 	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x4
-	.4byte 0x085C6258 @ +0x8
+	.4byte sAnims_BallOpenParticles_085C6258 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6EDD6ED @ +0x18
 	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x1C
-	.4byte 0x085C6258 @ +0x20
+	.4byte sAnims_BallOpenParticles_085C6258 @ +0x20
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte SpriteCallbackDummy @ +0x2C
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6EED6EE @ +0x30
 	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x34
-	.4byte 0x085C6258 @ +0x38
+	.4byte sAnims_BallOpenParticles_085C6258 @ +0x38
 	.4byte 0 @ +0x3C
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte SpriteCallbackDummy @ +0x44
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6EFD6EF @ +0x48
 	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x4C
-	.4byte 0x085C6258 @ +0x50
+	.4byte sAnims_BallOpenParticles_085C6258 @ +0x50
 	.4byte 0 @ +0x54
 	.4byte gDummySpriteAffineAnimTable @ +0x58
 	.4byte SpriteCallbackDummy @ +0x5C
