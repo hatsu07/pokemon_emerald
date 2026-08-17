@@ -4807,6 +4807,51 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${INPUT_PNG}"
                 "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
             VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/trade/pokeball_symbol.8bpp")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trade/pokeball_symbol.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/trade/cable_end.4bpp")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trade/cable_end.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/trade/(unused1_palette|unused2_palette|wireless_signal_none_palette)[.]gbapal$")
+        set(TRADE_RESIDUAL_PAL_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trade/${TRADE_RESIDUAL_PAL_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+
     # END TRADE EDITABLE RAW ASSET PIPELINE
 
     elseif("${RELATIVE_OUTPUT}" MATCHES
