@@ -1325,11 +1325,37 @@ RusturfTunnel_EventScript_RemoveObstacles_08243299:
 	setvar 0x409A, 0x0006
 	setflag 0x00C7
 	return
-	@ ANALYSIS: RAW_BLOCK size=0x25
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082432AE
-	.byte 0x28, 0x1E, 0x00, 0x4F, 0xFF, 0x00, 0x29, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x58, 0xFF, 0x00
-	.byte 0x00, 0x00, 0x28, 0x1E, 0x00, 0x4F, 0xFF, 0x00, 0xD1, 0x32, 0x24, 0x08, 0x51, 0x00, 0x00, 0x28
-	.byte 0x1E, 0x00, 0x03, 0x09, 0xFE
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x082432AE size=0x23 source=v49_typed_owner_closed_cfg
+	@ delay 0x001E @ 0x082432AE
+	delay 0x001E
+	@ applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp @ 0x082432B1
+	.byte 0x4F
+	.2byte 0x00FF
+	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	@ waitmovement 0x0000 @ 0x082432B8
+	.byte 0x51
+	.2byte 0x0000
+	@ showobjectat 0x00FF, 0x00, 0x00 @ 0x082432BB
+	.byte 0x58
+	.2byte 0x00FF
+	.byte 0x00
+	.byte 0x00
+	@ delay 0x001E @ 0x082432C0
+	delay 0x001E
+	@ applymovement 0x00FF, 0x082432D1 @ 0x082432C3
+	.byte 0x4F
+	.2byte 0x00FF
+	.4byte 0x082432D1
+	@ waitmovement 0x0000 @ 0x082432CA
+	.byte 0x51
+	.2byte 0x0000
+	@ delay 0x001E @ 0x082432CD
+	delay 0x001E
+	@ return @ 0x082432D0
+	return
+	@ ANALYSIS: RAW_BLOCK size=0x2
+	@ ANALYSIS: UNPROVEN_RAW addr=0x082432D1
+	.byte 0x09, 0xFE
 	compare_var_to_value 0x800C, 0x0001
 	call_if 0x01, EventScript_JP_082227BE
 	compare_var_to_value 0x800C, 0x0003
@@ -1380,51 +1406,51 @@ RusturfTunnel_EventScript_RemoveObstacles_08243299:
 	faceplayer
 	setvar 0x8009, 0x0001
 	goto 0x082433B9
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824336A
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0824336A size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x0824336A
+	end
 	lock
 	faceplayer
 	setvar 0x8009, 0x0002
 	goto 0x082433B9
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08243377
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08243377 size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x08243377
+	end
 	lock
 	faceplayer
 	setvar 0x8009, 0x0003
 	goto 0x082433B9
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08243384
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08243384 size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x08243384
+	end
 	lock
 	faceplayer
 	setvar 0x8009, 0x0004
 	goto 0x082433B9
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08243391
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08243391 size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x08243391
+	end
 	lock
 	faceplayer
 	setvar 0x8009, 0x0005
 	goto 0x082433B9
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824339E
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0824339E size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x0824339E
+	end
 	lock
 	faceplayer
 	setvar 0x8009, 0x0006
 	goto 0x082433B9
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082433AB
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x082433AB size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x082433AB
+	end
 	lock
 	faceplayer
 	setvar 0x8009, 0x0007
 	goto 0x082433B9
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082433B8
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x082433B8 size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x082433B8
+	end
 	checkitem 0x0120, 0x0001
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x082433D3
@@ -1614,8 +1640,9 @@ Movement_08243644:
 	.globl Route110_TrickHouseEntrance_Movement_0824364C
 Route110_TrickHouseEntrance_Movement_0824364C:
 	.byte 0x09, 0xFE
-	@ ANALYSIS: RAW_BLOCK size=0x3
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824364E
+	@ ANALYSIS: PROVEN_MOVEMENT_SUBSEQUENCE addr=0x0824364E size=0x3 source=v49_owner_second_FE_sequence
+	.globl Movement_0824364E
+Movement_0824364E: @ 0x0824364E
 	.byte 0x09, 0x09, 0xFE
 
 	.globl EventScriptData_JP_08243651

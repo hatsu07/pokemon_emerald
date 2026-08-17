@@ -62,9 +62,11 @@ EventScriptData_JP_082440E6: @ 0x082440E6
 	waitstate
 	end
 	return
-	@ ANALYSIS: RAW_BLOCK size=0x6
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08244179
-	.byte 0x16, 0x0D, 0x80, 0x01, 0x00, 0x03
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08244179 size=0x6 source=v49_typed_owner_closed_cfg
+	@ setvar 0x800D, 0x0001 @ 0x08244179
+	setvar 0x800D, 0x0001
+	@ return @ 0x0824417E
+	return
 	setvar 0x800D, 0x0000
 	return
 	call EventScriptData_JP_082471FA

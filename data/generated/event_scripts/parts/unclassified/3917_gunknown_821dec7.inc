@@ -190,9 +190,9 @@ EventScriptData_JP_0821DEF4:
 	goto_if 0x00, 0x0821E08F
 	setflag 0x00F7
 	goto 0x0821E034
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821E08E
-	.byte 0x03
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0821E08E size=0x1 source=v49_typed_owner_closed_cfg
+	@ return @ 0x0821E08E
+	return
 	return
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x0821E090 size=0x54 source=v41_hidden_entry_bulk
 	@ lockall @ 0x0821E090

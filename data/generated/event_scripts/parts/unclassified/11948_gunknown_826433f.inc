@@ -86,15 +86,15 @@ EventScriptData_JP_0826439D:
 	loadword 0x00, gText_Rom_264AAE
 	callstd 0x04
 	goto 0x0826443D
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0826442E
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0826442E size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x0826442E
+	end
 	loadword 0x00, gText_Rom_264AED
 	callstd 0x04
 	goto 0x0826443D
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0826443C
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0826443C size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x0826443C
+	end
 	loadword 0x00, gText_Rom_264B1E
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
@@ -511,9 +511,9 @@ EventScriptData_JP_0826439D:
 	callstd 0x04
 	@ goto 0x0826472C @ 0x08264718
 	goto 0x0826472C
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0826471D
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0826471D size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x0826471D
+	end
 	@ Recovered proven split event command at 0x0826471E
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0826471E raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_264DC7
@@ -846,8 +846,9 @@ Movement_082649C0:
 	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x082649C3 size=0x3 source_backed=YES
 Movement_082649C3:
 	.byte 0x02, 0x13, 0xFE
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082649C6
+	@ ANALYSIS: PROVEN_MOVEMENT_SUBSEQUENCE addr=0x082649C6 size=0x2 source=v49_owner_second_FE_sequence
+	.globl Movement_082649C6
+Movement_082649C6: @ 0x082649C6
 	.byte 0x00, 0xFE
 	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x082649C8 size=0x2 source_backed=YES
 Movement_082649C8:

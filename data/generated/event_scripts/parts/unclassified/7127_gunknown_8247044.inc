@@ -346,9 +346,9 @@ EventScriptData_JP_0824723B:
 	loadword 0x00, gText_Rom_2480DF
 	callstd 0x04
 	goto 0x0824417F
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08247338
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08247338 size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x08247338
+	end
 	@ Recovered proven split event command at 0x08247339
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08247339 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_24810A
@@ -402,9 +402,9 @@ EventScriptData_JP_0824723B:
 	waitmessage
 	delay 0x001C
 	goto 0x082473C2
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082473C1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x082473C1 size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x082473C1
+	end
 	checkitem 0x0174, 0x0001
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x0824746A
@@ -473,9 +473,9 @@ EventScriptData_JP_0824723B:
 	goto_if 0x01, EventScript_JP_08246FD8
 	setvar 0x8004, 0x0003
 	goto 0x08247610
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08247519
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08247519 size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x08247519
+	end
 	@ Recovered split event command at 0x0824751A
 	message gText_Rom_248500
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x0824751F size=0x4E source=v41_hidden_entry_bulk
@@ -565,9 +565,9 @@ EventScriptData_JP_0824723B:
 	goto_if 0x01, EventScript_JP_08246FD8
 	setvar 0x8004, 0x000C
 	goto 0x08247610
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x082475D5
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x082475D5 size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x082475D5
+	end
 	loadword 0x00, gText_Rom_248521
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
@@ -578,15 +578,15 @@ EventScriptData_JP_0824723B:
 	goto_if 0x01, 0x08247602
 	setvar 0x8004, 0x0005
 	goto 0x08247610
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08247601
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08247601 size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x08247601
+	end
 	loadword 0x00, gText_Rom_2480C1
 	callstd 0x04
 	goto 0x082473C2
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824760F
-	.byte 0x02
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0824760F size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x0824760F
+	end
 	call 0x082423E9
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08246FD8
