@@ -238,8 +238,11 @@ sSpriteTemplate_0852A9B4: @ 0x0852A9B4
 gFieldWeatherEffectData_0852A9CC: @ 0x0852A9CC
 	@ analyzed canonical ROM range 0x0852A9CC-0x0852A9D3
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0x6C, 0x77, 0x52, 0x08, 0x00, 0x08, 0x01, 0x12
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x0852A9CC size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gWeatherFogHorizontalTiles
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x0852A9D0 size=0x4
+	.byte 0x00, 0x08, 0x01, 0x12
 	@ pret/pokeemerald-jp direct xref for 0x0852A9D4: field_weather_effect.s: LoadAshSpriteSheet
 	.globl gFieldWeatherEffectData_0852A9D4
 gFieldWeatherEffectData_0852A9D4: @ 0x0852A9D4
@@ -283,8 +286,11 @@ sSpriteTemplate_0852AA60: @ 0x0852AA60
 gFieldWeatherEffectData_0852AA78: @ 0x0852AA78
 	@ analyzed canonical ROM range 0x0852AA78-0x0852AA7F
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0xEC, 0x9D, 0x52, 0x08, 0x00, 0x0A, 0x04, 0x12
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x0852AA78 size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gWeatherSandstormTiles
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x0852AA7C size=0x4
+	.byte 0x00, 0x0A, 0x04, 0x12
 	@ pret/pokeemerald-jp direct xref for 0x0852AA80: field_weather_effect.s: CreateSwirlSandstormSprites
 	.globl gFieldWeatherEffectData_0852AA80
 gFieldWeatherEffectData_0852AA80: @ 0x0852AA80
@@ -304,8 +310,11 @@ gFieldWeatherEffectData_0852AA8C: @ 0x0852AA8C
 gFieldWeatherEffectData_0852AA94: @ 0x0852AA94
 	@ analyzed canonical ROM range 0x0852AA94-0x0852AA9B
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0xAC, 0x87, 0x52, 0x08, 0x40, 0x00, 0x05, 0x12
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x0852AA94 size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gWeatherBubbleTiles
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x0852AA98 size=0x4
+	.byte 0x40, 0x00, 0x05, 0x12
 	@ pret/pokeemerald-jp direct xref for 0x0852AA9C: field_weather_effect.s: CreateBubbleSprite
 	.globl gFieldWeatherEffectData_0852AA9C
 gFieldWeatherEffectData_0852AA9C: @ 0x0852AA9C

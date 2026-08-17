@@ -3,8 +3,11 @@
 gPokemonSummaryScreenData_085ED40C: @ 0x085ED40C
 	@ analyzed canonical ROM range 0x085ED40C-0x085ED413
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0xCC, 0x71, 0xD9, 0x08, 0x00, 0x17, 0x32, 0x75
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085ED40C size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gLz77Asset_08D971CC
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x085ED410 size=0x4
+	.byte 0x00, 0x17, 0x32, 0x75
 	@ pret/pokeemerald-jp direct xref for 0x085ED414: pokemon_summary_screen.s: CreateMoveTypeIcons
 	.globl gPokemonSummaryScreenData_085ED414
 gPokemonSummaryScreenData_085ED414: @ 0x085ED414
@@ -32,15 +35,21 @@ gPokemonSummaryScreenData_085ED42C: @ 0x085ED42C
 gPokemonSummaryScreenData_085ED4C4: @ 0x085ED4C4
 	@ analyzed canonical ROM range 0x085ED4C4-0x085ED4CB
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0xBC, 0x7C, 0xD9, 0x08, 0x00, 0x04, 0x30, 0x75
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085ED4C4 size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gLz77Asset_08D97CBC
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x085ED4C8 size=0x4
+	.byte 0x00, 0x04, 0x30, 0x75
 	@ pret/pokeemerald-jp direct xref for 0x085ED4CC: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
 	.globl gPokemonSummaryScreenData_085ED4CC
 gPokemonSummaryScreenData_085ED4CC: @ 0x085ED4CC
 	@ analyzed canonical ROM range 0x085ED4CC-0x085ED4D3
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0xB8, 0x7D, 0xD9, 0x08, 0x30, 0x75, 0x00, 0x00
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085ED4CC size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gLz77Asset_08D97DB8
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x085ED4D0 size=0x4
+	.byte 0x30, 0x75, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085ED4D4: pokemon_summary_screen.s: sub_081C4300
 	.globl gPokemonSummaryScreenData_085ED4D4
 gPokemonSummaryScreenData_085ED4D4: @ 0x085ED4D4
@@ -60,15 +69,21 @@ gPokemonSummaryScreenData_085ED4D4: @ 0x085ED4D4
 gPokemonSummaryScreenData_085ED548: @ 0x085ED548
 	@ analyzed canonical ROM range 0x085ED548-0x085ED54F
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0x44, 0x6F, 0xD9, 0x08, 0x80, 0x03, 0x31, 0x75
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085ED548 size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gLz77Asset_08D96F44
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x085ED54C size=0x4
+	.byte 0x80, 0x03, 0x31, 0x75
 	@ pret/pokeemerald-jp direct xref for 0x085ED550: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
 	.globl gPokemonSummaryScreenData_085ED550
 gPokemonSummaryScreenData_085ED550: @ 0x085ED550
 	@ analyzed canonical ROM range 0x085ED550-0x085ED557
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0xA4, 0x71, 0xD9, 0x08, 0x31, 0x75, 0x00, 0x00
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085ED550 size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gLz77Asset_08D971A4
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x085ED554 size=0x4
+	.byte 0x31, 0x75, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085ED558: pokemon_summary_screen.s: CreateSetStatusSprite
 	.globl gPokemonSummaryScreenData_085ED558
 gPokemonSummaryScreenData_085ED558: @ 0x085ED558
@@ -225,8 +240,11 @@ gBattlePyramidBagData_085EF7C0: @ 0x085EF7C0
 gBattlePyramidBagData_085EF81C: @ 0x085EF81C
 	@ analyzed canonical ROM range 0x085EF81C-0x085EF823
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0xE4, 0xAB, 0xD9, 0x08, 0x00, 0x08, 0x24, 0x10
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085EF81C size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gLz77Asset_08D9ABE4
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x085EF820 size=0x4
+	.byte 0x00, 0x08, 0x24, 0x10
 	@ pret/pokeemerald-jp direct xref for 0x085EF824: battle_pyramid_bag.s: sub_081C66B4
 	.globl gBattlePyramidBagData_085EF824
 gBattlePyramidBagData_085EF824: @ 0x085EF824
@@ -482,8 +500,11 @@ gPokenavMainMenuData_085F140C: @ 0x085F140C
 gPokenavMainMenuData_085F1410: @ 0x085F1410
 	@ analyzed canonical ROM range 0x085F1410-0x085F1417
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0xC8, 0xFD, 0x5E, 0x08, 0x00, 0x10, 0x00, 0x00
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085F1410 size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gLz77Asset_085EFDC8
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x085F1414 size=0x4
+	.byte 0x00, 0x10, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085F1418: pokenav_main_menu.s: InitPokenavMainMenuResources
 	.globl gPokenavMainMenuData_085F1418
 gPokenavMainMenuData_085F1418: @ 0x085F1418
@@ -496,8 +517,11 @@ gPokenavMainMenuData_085F1418: @ 0x085F1418
 gPokenavMainMenuData_085F1428: @ 0x085F1428
 	@ analyzed canonical ROM range 0x085F1428-0x085F142F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.2byte 0x08B0, 0x085F, 0x0C00, 0x0002
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085F1428 size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gLz77Asset_085F08B0
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x085F142C size=0x4
+	.byte 0x00, 0x0C, 0x02, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085F1430: pokenav_main_menu.s: LoadLeftHeaderGfxForMenu
 	.globl gPokenavMainMenuData_085F1430
 gPokenavMainMenuData_085F1430: @ 0x085F1430

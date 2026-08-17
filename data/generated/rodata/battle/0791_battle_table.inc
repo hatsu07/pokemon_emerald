@@ -110,8 +110,11 @@ gContestData_08560AE4: @ 0x08560AE4
 gContestData_08560B14: @ 0x08560B14
 	@ analyzed canonical ROM range 0x08560B14-0x08560B1B
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0xAC, 0xEA, 0xD8, 0x08, 0x00, 0x04, 0xE2, 0xAB
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x08560B14 size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gLz77Asset_08D8EAAC
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x08560B18 size=0x4
+	.byte 0x00, 0x04, 0xE2, 0xAB
 	@ pret/pokeemerald-jp direct xref for 0x08560B1C: contest.s: CreateApplauseMeterSprite
 	.globl gContestData_08560B1C
 gContestData_08560B1C: @ 0x08560B1C
@@ -146,22 +149,31 @@ sSpriteTemplate_08560B4C: @ 0x08560B4C
 gContestData_08560B64: @ 0x08560B64
 	@ analyzed canonical ROM range 0x08560B64-0x08560B6B
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0x2C, 0xC4, 0xC1, 0x08, 0x00, 0x08, 0x21, 0x4E
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x08560B64 size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gContestJudgeGfx
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x08560B68 size=0x4
+	.byte 0x00, 0x08, 0x21, 0x4E
 	@ pret/pokeemerald-jp direct xref for 0x08560B6C: contest.s: sub_080DA884
 	.globl gContestData_08560B6C
 gContestData_08560B6C: @ 0x08560B6C
 	@ analyzed canonical ROM range 0x08560B6C-0x08560B73
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0xC8, 0x93, 0xC1, 0x08, 0x80, 0x03, 0xE0, 0xAB
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x08560B6C size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gContestJudgeSymbolsGfx
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x08560B70 size=0x4
+	.byte 0x80, 0x03, 0xE0, 0xAB
 	@ pret/pokeemerald-jp direct xref for 0x08560B74: contest.s: sub_080DA884
 	.globl gContestData_08560B74
 gContestData_08560B74: @ 0x08560B74
 	@ analyzed canonical ROM range 0x08560B74-0x08560B7B
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0x6C, 0x95, 0xC1, 0x08, 0xE0, 0xAB, 0x00, 0x00
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x08560B74 size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gContestJudgeSymbolsPal
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x08560B78 size=0x4
+	.byte 0xE0, 0xAB, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08560B7C: contest.s: sub_080DA884
 	.globl gContestData_08560B7C
 gContestData_08560B7C: @ 0x08560B7C

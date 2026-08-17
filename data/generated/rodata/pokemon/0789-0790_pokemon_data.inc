@@ -949,22 +949,31 @@ gMapNamePopupData_0855A074: @ 0x0855A074
 gItemMenuData_0855A664: @ 0x0855A664
 	@ analyzed canonical ROM range 0x0855A664-0x0855A66B
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0x30, 0x90, 0xD9, 0x08, 0x00, 0x30, 0x64, 0x00
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x0855A664 size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gLz77Asset_08D99030
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x0855A668 size=0x4
+	.byte 0x00, 0x30, 0x64, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0855A66C: item_menu.s: LoadBagMenu_Graphics
 	.globl gItemMenuData_0855A66C
 gItemMenuData_0855A66C: @ 0x0855A66C
 	@ analyzed canonical ROM range 0x0855A66C-0x0855A673
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0xAC, 0x9B, 0xD9, 0x08, 0x00, 0x30, 0x64, 0x00
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x0855A66C size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gLz77Asset_08D99BAC
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x0855A670 size=0x4
+	.byte 0x00, 0x30, 0x64, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0855A674: item_menu.s: LoadBagMenu_Graphics
 	.globl gItemMenuData_0855A674
 gItemMenuData_0855A674: @ 0x0855A674
 	@ analyzed canonical ROM range 0x0855A674-0x0855A67B
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0x0C, 0xA7, 0xD9, 0x08, 0x64, 0x00, 0x00, 0x00
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x0855A674 size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gLz77Asset_08D9A70C
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x0855A678 size=0x4
+	.byte 0x64, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0855A67C: item_menu_icons.s: AddBagVisualSprite
 	.globl gItemMenuIconsData_0855A67C
 gItemMenuIconsData_0855A67C: @ 0x0855A67C
@@ -1089,8 +1098,11 @@ gBerryPicTable: @ 0x0855A7C4
 gBerryTagScreenData_0855A91C: @ 0x0855A91C
 	@ analyzed canonical ROM range 0x0855A91C-0x0855A923
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.byte 0xF4, 0xC4, 0xD9, 0x08, 0x00, 0x08, 0x10, 0x27
+	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x0855A91C size=0x4 source=v53_repeated_layout_exact_elf_symbol
+	.4byte gBerryCheckCircle_Gfx
+	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: SOURCE_RANGE addr=0x0855A920 size=0x4
+	.byte 0x00, 0x08, 0x10, 0x27
 	@ pret/pokeemerald-jp direct xref for 0x0855A924: berry_tag_screen.s: LoadBerryTagGfx
 	.globl gBerryTagScreenData_0855A924
 gBerryTagScreenData_0855A924: @ 0x0855A924
