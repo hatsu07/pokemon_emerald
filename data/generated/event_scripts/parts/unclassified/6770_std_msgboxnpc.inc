@@ -1445,8 +1445,9 @@ Movement_0824344A:
 	.byte 0x14, 0x14, 0x14, 0xFE
 	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243621 size=0x2 source_backed=YES
 	.byte 0x3E, 0xFE
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08243623
+	@ ANALYSIS: PROVEN_MOVEMENT addr=0x08243623 size=0x2 source=reachable_applymovement_0x0821ECE0
+	.globl BattleFrontier_OutsideWest_Movement_08243623
+BattleFrontier_OutsideWest_Movement_08243623:
 	.byte 0x3F, 0xFE
 	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243625 size=0x2 source_backed=YES
 	.byte 0x4E, 0xFE
@@ -1475,8 +1476,9 @@ Movement_08243637:
 	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243639 size=0x2 independent_evidence=YES
 Movement_08243639:
 	.byte 0x1F, 0xFE
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824363B
+	@ ANALYSIS: PROVEN_MOVEMENT addr=0x0824363B size=0x2 source=reachable_applymovement_0x081EE0FA
+	.globl Route121_Movement_0824363B
+Route121_Movement_0824363B:
 	.byte 0x20, 0xFE
 	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x0824363D size=0x7 origins=0x082434F8
 	.byte 0x09, 0x09, 0x09, 0x09, 0x09, 0x09, 0xFE
@@ -1485,9 +1487,13 @@ Movement_08243644:
 	.byte 0x09, 0x09, 0x09, 0x09, 0xFE
 	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243649 size=0x3 origins=0x0824347B
 	.byte 0x14, 0x14, 0xFE
-	@ ANALYSIS: RAW_BLOCK size=0x5
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824364C
-	.byte 0x09, 0xFE, 0x09, 0x09, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT addr=0x0824364C size=0x2 source=reachable_applymovement_0x0823CF06
+	.globl Route110_TrickHouseEntrance_Movement_0824364C
+Route110_TrickHouseEntrance_Movement_0824364C:
+	.byte 0x09, 0xFE
+	@ ANALYSIS: RAW_BLOCK size=0x3
+	@ ANALYSIS: UNPROVEN_RAW addr=0x0824364E
+	.byte 0x09, 0x09, 0xFE
 
 	.globl EventScriptData_JP_08243651
 EventScriptData_JP_08243651: @ 0x08243651
