@@ -295,9 +295,9 @@ _08076D94:
 _08076D9C: .4byte 0x02037C74
 _08076DA0: .4byte 0x08077AE5
 _08076DA4: .4byte gCreditsU8Table_Rom_5D7B04
-_08076DA8: .4byte gTradeData_08300C04
+_08076DA8: .4byte sTradeBgTemplates
 _08076DAC: .4byte 0x02031F3C
-_08076DB0: .4byte gTradeData_08300C14
+_08076DB0: .4byte sTradeWindowTemplates
 	thumb_func_end sub_08076CAC
 
 	thumb_func_start sub_08076DB4
@@ -3562,7 +3562,7 @@ _080788EA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080788F4: .4byte gTradeData_08300CAC
+_080788F4: .4byte sTradeYesNoWindowTemplate
 _080788F8: .4byte gTradeData_08300AFC
 _080788FC: .4byte 0x06010000
 	thumb_func_end sub_080787A0
@@ -4238,7 +4238,7 @@ _08078E0C:
 	bx r0
 	.align 2, 0
 _08078E14: .4byte 0x02031F3C
-_08078E18: .4byte gTradeData_08300CAC
+_08078E18: .4byte sTradeYesNoWindowTemplate
 	thumb_func_end Wait2SecondsAndCreateYesNoMenu
 
 	thumb_func_start sub_08078E1C
@@ -4972,7 +4972,7 @@ _08079404: .4byte 0x082FEBCC
 _08079408: .4byte 0x020205AC
 _0807940C: .4byte 0x02031F3C
 _08079410: .4byte gTradeData_08300A1C
-_08079414: .4byte gTradeData_08300C00
+_08079414: .4byte sTradeTextColors
 _08079418: .4byte 0x08300A9B
 _0807941C:
 	ldr r0, _08079464
@@ -5278,7 +5278,7 @@ sub_08079644: @ 0x08079644
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807968C: .4byte gTradeData_08300C00
+_0807968C: .4byte sTradeTextColors
 	thumb_func_end sub_08079644
 
 	thumb_func_start sub_08079690
