@@ -130,7 +130,7 @@ EventScriptData_JP_0821B7F4: @ 0x0821B7F4
 
 	.globl EventScriptData_JP_0821BD3E
 EventScriptData_JP_0821BD3E: @ 0x0821BD3E
-	@ Embedded ROM bytes: file offset 0x21BD3E, size 0x9
-	@ ANALYSIS: RAW_BLOCK size=0x9
-	.byte 0x0F, 0x00, 0x47, 0xBD, 0x21, 0x08, 0x09, 0x03, 0x02
-
+	@ Decoded event bytecode: exact ROM size 0x9
+	loadword 0x00, gText_Rom_21BD47
+	callstd 0x03
+	end
