@@ -158,7 +158,7 @@ EventScriptData_JP_08244297:
 	goto_if 0x00, EventScriptData_JP_08244329
 	checkflag 0x08AC
 	goto_if 0x01, EventScriptData_JP_08244329
-	applymovement 0x8008, 0x08243633
+	applymovement 0x8008, Movement_08243633
 	waitmovement 0x0000
 	playse 0x0015
 	applymovement 0x8008, PetalburgCity_Ext_ExclamationMark
@@ -178,7 +178,7 @@ EventScriptData_JP_082442DF:
 	goto_if 0x00, EventScriptData_JP_08244329
 	checkflag 0x08DB
 	goto_if 0x01, EventScriptData_JP_08244329
-	applymovement 0x8008, 0x08243633
+	applymovement 0x8008, Movement_08243633
 	waitmovement 0x0000
 	playse 0x0015
 	applymovement 0x8008, PetalburgCity_Ext_ExclamationMark
@@ -198,7 +198,7 @@ EventScriptData_JP_08244327:
 	end
 	.globl EventScriptData_JP_08244329
 EventScriptData_JP_08244329:
-	applymovement 0x8008, 0x08243633
+	applymovement 0x8008, Movement_08243633
 	waitmovement 0x0000
 	loadword 0x00, gText_Rom_243F13
 	callstd 0x04

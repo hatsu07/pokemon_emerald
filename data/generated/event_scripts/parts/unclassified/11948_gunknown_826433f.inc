@@ -345,10 +345,10 @@ EventScriptData_JP_0826439D:
 	goto .LStitchedEvent_08264912
 	end
 .LStitchedEvent_08264912:
-	applymovement 0x0004, 0x082649C0
+	applymovement 0x0004, Movement_082649C0
 	waitmovement 0x0000
 	delay 0x003C
-	applymovement 0x0005, 0x082649C3
+	applymovement 0x0005, Movement_082649C3
 	waitmovement 0x0000
 	delay 0x003C
 	waitse
@@ -360,11 +360,11 @@ EventScriptData_JP_0826439D:
 	goto .LStitchedEvent_08264954
 	end
 .LStitchedEvent_08264947:
-	applymovement 0x0005, 0x082649CA
+	applymovement 0x0005, Movement_082649CA
 	waitmovement 0x0000
 	delay 0x003C
 .LStitchedEvent_08264954:
-	applymovement 0x0004, 0x082649C8
+	applymovement 0x0004, Movement_082649C8
 	waitmovement 0x0000
 	delay 0x003C
 	compare_var_to_value 0x8004, 0x0000
@@ -399,10 +399,24 @@ EventScriptData_JP_0826439D:
 	end
 	loadword 0x00, gText_Rom_265035
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x082649BC original_size=0x60 typed_bytes=0x4B
-	@ ANALYSIS: RAW_BLOCK size=0x13
+	@ ANALYSIS: RAW_BLOCK size=0x4
 	@ ANALYSIS: UNPROVEN_RAW addr=0x082649BC
-	.byte 0x09, 0x04, 0x6C, 0x02, 0x03, 0x13, 0xFE, 0x02, 0x13, 0xFE, 0x00, 0xFE, 0x3E, 0xFE, 0x51, 0x48
-	.byte 0x51, 0x48, 0xFE
+	.byte 0x09, 0x04, 0x6C, 0x02
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x082649C0 size=0x3 source_backed=YES
+Movement_082649C0:
+	.byte 0x03, 0x13, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x082649C3 size=0x3 source_backed=YES
+Movement_082649C3:
+	.byte 0x02, 0x13, 0xFE
+	@ ANALYSIS: RAW_BLOCK size=0x2
+	@ ANALYSIS: UNPROVEN_RAW addr=0x082649C6
+	.byte 0x00, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x082649C8 size=0x2 source_backed=YES
+Movement_082649C8:
+	.byte 0x3E, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x082649CA size=0x5 source_backed=YES
+Movement_082649CA:
+	.byte 0x51, 0x48, 0x51, 0x48, 0xFE
 	specialvar_ 0x800D, 0x0191
 	.byte 0x25 @ special 0x018D; no matching SPECIAL_* constant
 	.2byte 0x018D
