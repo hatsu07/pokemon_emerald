@@ -138,16 +138,31 @@ EventScriptData_JP_0823D179:
 	.globl EventScriptData_JP_0823D1AC
 EventScriptData_JP_0823D1AC:
 	loadword 0x00, gText_Rom_23D677
-	@ ANALYSIS: RAW_BLOCK size=0x7
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0823D1B2
-	.byte 0x09, 0x04, 0x6B, 0x02, 0x31, 0x72, 0x01
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x0823D1B2 size=0x4 source=v41_hidden_entry_bulk
+	@ callstd 0x04 @ 0x0823D1B2
+	callstd 0x04
+	@ releaseall @ 0x0823D1B4
+	releaseall
+	@ end @ 0x0823D1B5
+	end
+	@ ANALYSIS: RAW_BLOCK size=0x3
+	@ ANALYSIS: UNPROVEN_RAW addr=0x0823D1B6
+	.byte 0x31, 0x72, 0x01
 	@ Recovered proven split event command at 0x0823D1B9
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0823D1B9 raw_tail=0x1 continuation=0x4; reachability not claimed
 	message gText_Rom_23D64A
 	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0823D1BE original_size=0xE typed_bytes=0x1
-	@ ANALYSIS: RAW_BLOCK size=0xB
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0823D1BE
-	.byte 0x32, 0x0F, 0x00, 0x5A, 0xD6, 0x23, 0x08, 0x09, 0x04, 0x6B, 0x02
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0823D1BE size=0xB source=v41_hidden_entry_bulk
+	@ waitfanfare @ 0x0823D1BE
+	waitfanfare
+	@ loadword 0x00, gText_Rom_23D65A @ 0x0823D1BF
+	loadword 0x00, gText_Rom_23D65A
+	@ callstd 0x04 @ 0x0823D1C5
+	callstd 0x04
+	@ releaseall @ 0x0823D1C7
+	releaseall
+	@ end @ 0x0823D1C8
+	end
 	lockall
 	@ Recovered proven split event command at 0x0823D1CA
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0823D1CA raw_tail=0x2 continuation=0x4; reachability not claimed
