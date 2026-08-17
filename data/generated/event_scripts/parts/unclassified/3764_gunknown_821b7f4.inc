@@ -25,8 +25,8 @@ EventScriptData_JP_0821B7F4: @ 0x0821B7F4
 	.byte 0x25 @ special 0x01EF; no matching SPECIAL_* constant
 	.2byte 0x01EF
 	goto EventScriptData_JP_0821B886
-	@ ANALYSIS: RESIDUAL_RAW addr=0x0821B857 size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x0821B857
+	end
 	.globl EventScriptData_JP_0821B858
 EventScriptData_JP_0821B858:
 	loadword 0x00, gText_Rom_243CDA
@@ -43,8 +43,8 @@ EventScriptData_JP_0821B858:
 	.byte 0x25 @ special 0x01EF; no matching SPECIAL_* constant
 	.2byte 0x01EF
 	goto EventScriptData_JP_0821B886
-	@ ANALYSIS: RESIDUAL_RAW addr=0x0821B885 size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x0821B885
+	end
 	.globl EventScriptData_JP_0821B886
 EventScriptData_JP_0821B886:
 	waitbuttonpress

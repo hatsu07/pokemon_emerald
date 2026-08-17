@@ -158,7 +158,8 @@ EventScriptData_JP_082424C9:
 	applymovement 0x800F, 0x082424D4
 	waitmovement 0x0000
 	return
-	@ ANALYSIS: RESIDUAL_RAW addr=0x082424D4 size=0x2
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x082424D4 size=0x2 refs=3
+.LMovement_082424D4:
 	.byte 0x59, 0xFE
 	.globl EventScriptData_JP_082424D6
 EventScriptData_JP_082424D6:
@@ -188,8 +189,9 @@ EventScriptData_JP_082424EE:
 	.globl EventScriptData_JP_0824252B
 EventScriptData_JP_0824252B:
 	gotobeatenscript
-	@ ANALYSIS: RESIDUAL_RAW addr=0x0824252C size=0x2
-	.byte 0x6B, 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x0824252C
+	releaseall
+	end
 	.globl Std_MsgboxAutoclose
 Std_MsgboxAutoclose: @ 0x0824252E
 	@ Embedded ROM bytes: file offset 0x24252E, size 0x14A
@@ -444,8 +446,8 @@ EventScriptData_JP_082428F1: @ 0x082428F1
 	@ ANALYSIS: MIXED_EVENT_SCRIPT script=0xA residual=0x1
 	call EventScriptData_JP_08242966
 	goto EventScriptData_JP_082428FC
-	@ ANALYSIS: RESIDUAL_RAW addr=0x082428FB size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x082428FB
+	end
 	.globl EventScriptData_JP_082428FC
 EventScriptData_JP_082428FC: @ 0x082428FC
 	@ Embedded ROM bytes: file offset 0x2428FC, size 0x271
@@ -555,15 +557,14 @@ EventScriptData_JP_082429F4:
 	checkflag 0x0111
 	goto_if 0x00, 0x08242ADD
 	goto 0x08242A4B
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08242A20 size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08242A20
+	end
 	.globl EventScriptData_JP_08242A21
 EventScriptData_JP_08242A21:
 	message gText_Rom_243786
 	return
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08242A27 size=0x1
-	.byte 0x67
-	.4byte gText_Rom_2438D8 @ ROM pointer 0x082438D8
+	@ ANALYSIS: PROVEN_CROSS_BOUNDARY_EVENT addr=0x08242A27
+	message gText_Rom_2438D8
 	@ ANALYSIS: RAW_BLOCK size=0x5C
 	.byte 0x03, 0x4F, 0x0B, 0x80, 0x27, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x9C, 0x19, 0x00, 0x9E, 0x19
 	.byte 0x00, 0x4F, 0x0B, 0x80, 0x2D, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x25, 0x00, 0x00, 0x03, 0x26
@@ -679,14 +680,14 @@ EventScriptData_JP_08242D9E:
 	bufferitemname 0x00, 0x8004
 	message gText_Rom_243DB3
 	goto EventScriptData_JP_08242DB8
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08242DAC size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08242DAC
+	end
 	.globl EventScriptData_JP_08242DAD
 EventScriptData_JP_08242DAD:
 	message gText_Rom_243969
 	goto EventScriptData_JP_08242DB8
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08242DB7 size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08242DB7
+	end
 	.globl EventScriptData_JP_08242DB8
 EventScriptData_JP_08242DB8:
 	waitmessage
@@ -1031,8 +1032,15 @@ EventScriptData_JP_0824311B: @ 0x0824311B
 	releaseall
 	end
 	@ ANALYSIS: RESIDUAL_CFG_RECOVERY addr=0x0824312C original_size=0xAE semantic_bytes=0x9F
-	@ ANALYSIS: RESIDUAL_RAW addr=0x0824312C size=0xD
-	.byte 0x29, 0x01, 0x40, 0x33, 0xAF, 0x01, 0x00, 0x03, 0x2A, 0x01, 0x40, 0x35, 0x03
+	@ ANALYSIS: PROVEN_SHORT_EVENT_SCRIPTS addr=0x0824312C size=0xD
+.LResidualEvent_0824312C:
+	setflag 0x4001
+	playbgm 0x01AF, 0x00
+	return
+.LResidualEvent_08243134:
+	clearflag 0x4001
+	fadedefaultbgm
+	return
 	.globl EventScriptData_JP_08243139
 EventScriptData_JP_08243139:
 	compare_var_to_value 0x4085, 0x0000
@@ -1081,9 +1089,8 @@ EventScriptData_JP_082431C0:
 	faceplayer
 	checkflag 0x0119
 	goto_if 0x00, EventScript_JP_081F186D
-	@ ANALYSIS: RESIDUAL_RAW addr=0x082431D8 size=0x2
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_262DF5 @ ROM pointer 0x08262DF5
+	@ ANALYSIS: PROVEN_CROSS_BOUNDARY_EVENT addr=0x082431D8
+	loadword 0x00, gText_Rom_262DF5
 	@ ANALYSIS: RAW_BLOCK size=0x4C
 	.byte 0x09, 0x05, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0xF2, 0x31, 0x24, 0x08, 0x04, 0x07, 0x32
 	.byte 0x24, 0x08, 0x6C, 0x02, 0x0F, 0x00, 0x1D, 0x2E, 0x26, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x19, 0x04

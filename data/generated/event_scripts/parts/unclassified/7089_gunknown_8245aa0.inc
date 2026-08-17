@@ -40,8 +40,8 @@ EventScriptData_JP_08245AFF:
 	dofieldeffect 0x000B
 	waitstate
 	goto EventScriptData_JP_08245B4A
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08245B34 size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08245B34
+	end
 	.globl EventScriptData_JP_08245B35
 EventScriptData_JP_08245B35: @ 0x08245B35
 	@ Embedded ROM bytes: file offset 0x245B35, size 0x59
@@ -50,8 +50,8 @@ EventScriptData_JP_08245B35: @ 0x08245B35
 	dofieldeffect 0x000B
 	waitstate
 	goto EventScriptData_JP_08245B4A
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08245B3F size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08245B3F
+	end
 	.globl EventScriptData_JP_08245B40
 EventScriptData_JP_08245B40:
 	loadword 0x00, gText_Rom_21D5CF
@@ -63,8 +63,8 @@ EventScriptData_JP_08245B4A:
 	loadword 0x00, gText_Rom_21D602
 	callstd 0x04
 	goto EventScriptData_JP_08245C0A
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08245B57 size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08245B57
+	end
 	.globl EventScriptData_JP_08245B58
 EventScriptData_JP_08245B58:
 	lockall
@@ -81,8 +81,8 @@ EventScriptData_JP_08245B58:
 	dofieldeffect 0x001A
 	waitstate
 	goto EventScriptData_JP_08245BA3
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08245B8D size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08245B8D
+	end
 	.globl EventScriptData_JP_08245B8E
 EventScriptData_JP_08245B8E: @ 0x08245B8E
 	@ Embedded ROM bytes: file offset 0x245B8E, size 0x59
@@ -91,8 +91,8 @@ EventScriptData_JP_08245B8E: @ 0x08245B8E
 	dofieldeffect 0x001A
 	waitstate
 	goto EventScriptData_JP_08245BA3
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08245B98 size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08245B98
+	end
 	.globl EventScriptData_JP_08245B99
 EventScriptData_JP_08245B99:
 	loadword 0x00, gText_Rom_24506B
@@ -104,8 +104,8 @@ EventScriptData_JP_08245BA3:
 	loadword 0x00, gText_Rom_2450A2
 	callstd 0x04
 	goto EventScriptData_JP_08245C0A
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08245BB0 size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08245BB0
+	end
 	.globl EventScriptData_JP_08245BB1
 EventScriptData_JP_08245BB1:
 	lockall
@@ -122,8 +122,8 @@ EventScriptData_JP_08245BB1:
 	dofieldeffect 0x001B
 	waitstate
 	goto EventScriptData_JP_08245BFC
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08245BE6 size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08245BE6
+	end
 	.globl EventScriptData_JP_08245BE7
 EventScriptData_JP_08245BE7: @ 0x08245BE7
 	@ Embedded ROM bytes: file offset 0x245BE7, size 0x7F
@@ -132,8 +132,8 @@ EventScriptData_JP_08245BE7: @ 0x08245BE7
 	dofieldeffect 0x001B
 	waitstate
 	goto EventScriptData_JP_08245BFC
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08245BF1 size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08245BF1
+	end
 	.globl EventScriptData_JP_08245BF2
 EventScriptData_JP_08245BF2:
 	loadword 0x00, gText_Rom_2450B0
@@ -145,8 +145,8 @@ EventScriptData_JP_08245BFC:
 	loadword 0x00, gText_Rom_2450F1
 	callstd 0x04
 	goto EventScriptData_JP_08245C0A
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08245C09 size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08245C09
+	end
 	.globl EventScriptData_JP_08245C0A
 EventScriptData_JP_08245C0A:
 	closemessage
@@ -307,8 +307,8 @@ EventScriptData_JP_08245DDD: @ 0x08245DDD
 	@ ANALYSIS: MIXED_EVENT_SCRIPT script=0x34 residual=0x8C
 	setvar 0x8004, 0x0000
 	goto EventScriptData_JP_08245DE8
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08245DE7 size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08245DE7
+	end
 	.globl EventScriptData_JP_08245DE8
 EventScriptData_JP_08245DE8:
 	.byte 0x25 @ special 0x0017; no matching SPECIAL_* constant
@@ -321,8 +321,8 @@ EventScriptData_JP_08245DE8:
 	removeobject 0x8006
 	setflag 0x8005
 	goto EventScriptData_JP_08245DE8
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08245E11 size=0x1
-	.byte 0x02
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08245E11
+	end
 	.globl EventScriptData_JP_08245E12
 EventScriptData_JP_08245E12:
 	end
@@ -358,9 +358,8 @@ EventScriptData_JP_08245E85:
 	goto_if 0x00, 0x08245ED4
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x08245EF3
-	@ ANALYSIS: RESIDUAL_RAW addr=0x08245E9B size=0x2
-	.byte 0x0F, 0x00
-	.4byte gText_Rom_245102 @ ROM pointer 0x08245102
+	@ ANALYSIS: PROVEN_CROSS_BOUNDARY_EVENT addr=0x08245E9B
+	loadword 0x00, gText_Rom_245102
 	@ ANALYSIS: RAW_BLOCK size=0x54
 	.byte 0x09, 0x05, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0xDE, 0x5E, 0x24, 0x08, 0x16, 0x0D, 0x80
 	.byte 0x01, 0x00, 0x25, 0x19, 0x00, 0x04, 0xE9, 0x23, 0x24, 0x08, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06
