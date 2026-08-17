@@ -390,11 +390,7 @@ sFanfares: @ 0x084FCFC8
 	.globl gBattleAnimSpriteGfx_MudUnk
 	.globl gBattleAnimSpritePal_MudUnk
 	.globl gBattleAnimSpriteGfx_RainDrops
-	.globl gBattleAnimSpriteGfx_Unknown
-	.set gBattleAnimSpriteGfx_Unknown, 0x08C13944
-	.globl gBattleAnimSpritePal_Unknown
-	.set gBattleAnimSpritePal_Unknown, 0x08C13970
-	.globl gBattleAnimSpriteGfx_FlyingDirt
+.globl gBattleAnimSpriteGfx_FlyingDirt
 	.set gBattleAnimSpriteGfx_FlyingDirt, 0x08D8D288
 	.globl gBattleAnimSpritePal_FlyingDirt
 	.set gBattleAnimSpritePal_FlyingDirt, 0x08D8DA9C

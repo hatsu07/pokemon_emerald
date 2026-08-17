@@ -135,7 +135,7 @@
       "width": 48,
       "height": 64,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0000_rom_00C12AA4_w48h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0000_rom_00C12AA4_w48h64.png",
+      "png_rel": "graphics/battle_interface/unused_window3_jp.png",
       "roundtrip_ok": true
     },
     {
@@ -156,7 +156,7 @@
       "width": 64,
       "height": 128,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0001_rom_00C12BE0_w64h128.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0001_rom_00C12BE0_w64h128.png",
+      "png_rel": "graphics/battle_interface/unused_window4_jp.png",
       "roundtrip_ok": true
     },
     {
@@ -387,7 +387,7 @@
       "width": 8,
       "height": 16,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0012_rom_00C13944_w8h16.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0012_rom_00C13944_w8h16.png",
+      "png_rel": "graphics/battle_anims/sprites/unknown.png",
       "roundtrip_ok": true
     },
     {
@@ -408,7 +408,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0013_rom_00C13970_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0013_rom_00C13970_pal.png",
+      "png_rel": "graphics/battle_anims/sprites/unknown_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -7991,7 +7991,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0376_rom_00C2FA84_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0376_rom_00C2FA84_pal.png",
+      "png_rel": "graphics/battle_anims/unused/unknown_2_palette.png",
       "roundtrip_ok": true
     },
     {

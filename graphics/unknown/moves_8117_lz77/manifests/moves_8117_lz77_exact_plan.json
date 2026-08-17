@@ -131,7 +131,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 48,
       "height": 64,
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0000_rom_00C12AA4_w48h64.png",
+      "png_rel": "graphics/battle_interface/unused_window3_jp.png",
       "roundtrip_ok": true,
       "key": "stream_0000",
       "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0000.lz",
@@ -558,7 +558,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 128,
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0001_rom_00C12BE0_w64h128.png",
+      "png_rel": "graphics/battle_interface/unused_window4_jp.png",
       "roundtrip_ok": true,
       "key": "stream_0001",
       "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0001.lz",
@@ -5141,7 +5141,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 8,
       "height": 16,
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0012_rom_00C13944_w8h16.png",
+      "png_rel": "graphics/battle_anims/sprites/unknown.png",
       "roundtrip_ok": true,
       "key": "stream_0012",
       "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0012.lz",
@@ -5209,10 +5209,8 @@
       "raw_size": 32,
       "raw_sha1": "261c4c58709268abff6fdd163f241003e6681c38",
       "compressed_sha1": "0798ffa90267ef0f915044d37050ffeb96e9bcf9",
-      "kind": "palette16",
-      "width": 16,
-      "height": 1,
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0013_rom_00C13970_pal.png",
+      "kind": "palette_bgr555",
+      "png_rel": "graphics/battle_anims/sprites/unknown_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0013",
       "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0013.lz",
@@ -5228,7 +5226,8 @@
           ]
         ],
         "tail": "00 00"
-      }
+      },
+      "palette_colors": 16
     },
     {
       "index": 14,
@@ -138568,10 +138567,8 @@
       "raw_size": 32,
       "raw_sha1": "9e777b0bc5ead9e156fe7c1c5cf971a96523c705",
       "compressed_sha1": "86f08e2066f52a94b41808f50a67397d461ffc53",
-      "kind": "palette16",
-      "width": 16,
-      "height": 1,
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0376_rom_00C2FA84_pal.png",
+      "kind": "palette_bgr555",
+      "png_rel": "graphics/battle_anims/unused/unknown_2_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0376",
       "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0376.lz",
@@ -138582,7 +138579,8 @@
         "flags": "0x00 0x00 0x00 0x00",
         "backrefs": [],
         "tail": ""
-      }
+      },
+      "palette_colors": 16
     },
     {
       "index": 377,

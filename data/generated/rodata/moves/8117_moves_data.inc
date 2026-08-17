@@ -244,7 +244,11 @@ BattleInterface_BallStatusBarPal:
 
 gMoveLz77Data_Rom_C12AA4:
 	@ ANALYSIS: SOURCE_RANGE offset=0xC12AA4, size=0x33E4
+	.globl gBattleInterfaceGfx_UnusedWindow3
+gBattleInterfaceGfx_UnusedWindow3:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0000.lz"
+	.globl gBattleInterfaceGfx_UnusedWindow4
+gBattleInterfaceGfx_UnusedWindow4:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0001.lz"
 	.globl gBattleAnimSpriteGfx_FurySwipes
 gBattleAnimSpriteGfx_FurySwipes:
@@ -276,7 +280,11 @@ gBattleAnimSpriteGfx_WhiteBag:
 	.globl gBattleAnimSpritePal_WhiteBag
 gBattleAnimSpritePal_WhiteBag:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0011.lz"
+	.globl gBattleAnimSpriteGfx_Unknown
+gBattleAnimSpriteGfx_Unknown:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0012.lz"
+	.globl gBattleAnimSpritePal_Unknown
+gBattleAnimSpritePal_Unknown:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0013.lz"
 	.globl gBattleAnimSpriteGfx_PurpleCoral
 gBattleAnimSpriteGfx_PurpleCoral:
@@ -1394,6 +1402,8 @@ gBattleAnimSpriteGfx_FlatRock:
 	.globl gBattleAnimSpritePal_FlatRock
 gBattleAnimSpritePal_FlatRock:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0375.lz"
+	.globl gBattleAnimUnusedPal_Unknown2
+gBattleAnimUnusedPal_Unknown2:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0376.lz"
 	.globl gMonStillFrontPic_Bulbasaur
 gMonStillFrontPic_Bulbasaur:
