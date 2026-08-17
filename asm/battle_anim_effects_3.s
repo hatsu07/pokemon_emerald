@@ -3558,7 +3558,7 @@ _0815BB3E:
 	b _0815BB98
 	.align 2, 0
 _0815BB60: .4byte 0x00003F42
-_0815BB64: .4byte 0x08C2A790
+_0815BB64: .4byte gBattleAnimMaskTilemap_LightBeam
 _0815BB68: .4byte 0x02022ACC
 _0815BB6C: .4byte 0x0000FFC8
 _0815BB70:
@@ -3616,8 +3616,8 @@ _0815BB9A:
 _0815BBDC: .4byte 0x02022ACC
 _0815BBE0: .4byte 0x0000FFF6
 _0815BBE4: .4byte 0x02022ACE
-_0815BBE8: .4byte 0x08C2A6D8
-_0815BBEC: .4byte 0x08C2A778
+_0815BBE8: .4byte gBattleAnimMaskImage_LightBeam
+_0815BBEC: .4byte gBattleAnimMaskPalette_LightBeam
 _0815BBF0: .4byte 0x03005B60
 _0815BBF4:
 	lsls r0, r4, #2
@@ -4195,7 +4195,7 @@ _0815C060:
 	.align 2, 0
 _0815C084: .4byte 0x00003F42
 _0815C088: .4byte 0x00000D03
-_0815C08C: .4byte 0x08C2A790
+_0815C08C: .4byte gBattleAnimMaskTilemap_LightBeam
 _0815C090: .4byte 0x02022ACC
 _0815C094: .4byte 0x0000FFC8
 _0815C098:
@@ -4289,8 +4289,8 @@ _0815C144: .4byte 0x02022ACC
 _0815C148: .4byte 0x0000FF79
 _0815C14C: .4byte 0x0000FFF6
 _0815C150: .4byte 0x02022ACE
-_0815C154: .4byte 0x08C2A6D8
-_0815C158: .4byte 0x08C2A778
+_0815C154: .4byte gBattleAnimMaskImage_LightBeam
+_0815C158: .4byte gBattleAnimMaskPalette_LightBeam
 _0815C15C: .4byte 0x03005B60
 _0815C160:
 	ldr r1, _0815C194
@@ -8156,8 +8156,8 @@ sub_0815DF08: @ 0x0815DF08
 	.align 2, 0
 _0815DF44: .4byte 0x020380D6
 _0815DF48: .4byte 0x020380BE
-_0815DF4C: .4byte 0x08C2DD0C
-_0815DF50: .4byte 0x08C2DE68
+_0815DF4C: .4byte gCureBubblesGfx
+_0815DF50: .4byte gCureBubblesTilemap
 	thumb_func_end sub_0815DF08
 
 	thumb_func_start AnimRoarNoiseLine

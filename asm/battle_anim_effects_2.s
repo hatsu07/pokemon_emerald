@@ -5335,7 +5335,7 @@ _08106550:
 _081065A0: .4byte 0x000027DE
 _081065A4: .4byte 0x00002710
 _081065A8: .4byte 0x02024178
-_081065AC: .4byte 0x08C226B4
+_081065AC: .4byte gBattleAnimSpritePal_MusicNotes2
 	thumb_func_end sub_08106504
 
 	thumb_func_start sub_081065B0
@@ -6115,9 +6115,9 @@ _08106B7A:
 _08106BD8: .4byte 0x00003F42
 _08106BDC: .4byte 0x02022ACC
 _08106BE0: .4byte 0x02022ACE
-_08106BE4: .4byte 0x08C23384
-_08106BE8: .4byte 0x08C23E1C
-_08106BEC: .4byte 0x08C23DF4
+_08106BE4: .4byte gBattleAnimBgImage_Attract
+_08106BE8: .4byte gBattleAnimBgTilemap_Attract
+_08106BEC: .4byte gBattleAnimBgPalette_Attract
 _08106BF0: .4byte 0x03005B60
 _08106BF4: .4byte 0x08106BF9
 	thumb_func_end AnimTask_HeartsBackground
@@ -6388,8 +6388,8 @@ _08106DF6:
 	bx r0
 	.align 2, 0
 _08106E28: .4byte gBattleAnimBgTilemap_ScaryFaceOpponent
-_08106E2C: .4byte 0x08C24A9C
-_08106E30: .4byte 0x08C24A74
+_08106E2C: .4byte gBattleAnimBgImage_ScaryFace
+_08106E30: .4byte gBattleAnimBgPalette_ScaryFace
 _08106E34: .4byte 0x03005B60
 _08106E38: .4byte 0x08106E3D
 	thumb_func_end sub_08106D48

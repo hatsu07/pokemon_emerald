@@ -133,10 +133,10 @@ _080D6F8A:
 	bx r0
 	.align 2, 0
 _080D6FAC: .4byte 0x08C17AB8
-_080D6FB0: .4byte 0x08C18650
+_080D6FB0: .4byte gContestAudienceGfx
 _080D6FB4: .4byte 0x06002000
-_080D6FB8: .4byte 0x08C16FB0
-_080D6FBC: .4byte 0x08C16E98
+_080D6FB8: .4byte gContestAudienceTilemap
+_080D6FBC: .4byte gContestInterfaceAudiencePalette
 _080D6FC0: .4byte 0x0201A004
 _080D6FC4: .4byte 0x02039BC6
 	thumb_func_end LoadContestBgAfterMoveAnim
@@ -1034,7 +1034,7 @@ _080D7720:
 	ldr r0, [r1, #8]
 	b _080D78DA
 	.align 2, 0
-_080D7740: .4byte 0x08C18650
+_080D7740: .4byte gContestAudienceGfx
 _080D7744: .4byte 0x06002000
 _080D7748: .4byte 0x02018000
 _080D774C: .4byte 0x040000D4
@@ -1049,7 +1049,7 @@ _080D7754:
 	bl CopyBgTilemapBufferToVram
 	b _080D78DA
 	.align 2, 0
-_080D7768: .4byte 0x08C16FB0
+_080D7768: .4byte gContestAudienceTilemap
 _080D776C:
 	ldr r1, _080D7794
 	movs r0, #2
@@ -1070,7 +1070,7 @@ _080D776C:
 	ldr r0, [r0, #8]
 	b _080D78DA
 	.align 2, 0
-_080D7794: .4byte 0x08C17178
+_080D7794: .4byte gContestInterfaceTilemap
 _080D7798: .4byte 0x02039BD4
 _080D779C: .4byte 0x0201AA04
 _080D77A0: .4byte 0x040000D4
@@ -1123,7 +1123,7 @@ _080D77A8:
 	bl sub_080D7058
 	b _080D78DA
 	.align 2, 0
-_080D7810: .4byte 0x08C16E98
+_080D7810: .4byte gContestInterfaceAudiencePalette
 _080D7814: .4byte 0x020374B4
 _080D7818: .4byte 0x04000008
 _080D781C: .4byte 0x02039BC5
@@ -7082,7 +7082,7 @@ sub_080DA828: @ 0x080DA828
 	bx r1
 	.align 2, 0
 _080DA870: .4byte gContestData_08560B64
-_080DA874: .4byte 0x08C1C700
+_080DA874: .4byte gContest2Pal
 _080DA878: .4byte gContestData_08560B4C
 _080DA87C: .4byte 0x020205AC
 _080DA880: .4byte 0x08007141
@@ -13675,7 +13675,7 @@ _080DDA9C: .4byte 0x02022ACC
 _080DDAA0: .4byte 0x02022ACE
 _080DDAA4: .4byte 0x02039BD4
 _080DDAA8: .4byte 0x05000400
-_080DDAAC: .4byte 0x08C17988
+_080DDAAC: .4byte gContestCurtainTilemap
 _080DDAB0: .4byte 0x020205AC
 	thumb_func_end sub_080DD988
 

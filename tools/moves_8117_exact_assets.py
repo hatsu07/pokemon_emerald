@@ -16,6 +16,81 @@ def encode_png_raw(repo: Path, stream: dict) -> bytes:
     path = repo / stream["png_rel"]
     kind = stream["kind"]
 
+    if kind == "tilemap_csv_u16":
+        import csv
+        out = bytearray()
+        with path.open(newline="") as f:
+            rows = csv.DictReader(f)
+            required = ["index", "tile", "hflip", "vflip", "palette"]
+            if rows.fieldnames != required:
+                raise ValueError(
+                    f"{path}: tilemap CSV header must be "
+                    "index,tile,hflip,vflip,palette"
+                )
+            for expected_index, row in enumerate(rows):
+                index = int(row["index"], 0)
+                tile = int(row["tile"], 0)
+                hflip = int(row["hflip"], 0)
+                vflip = int(row["vflip"], 0)
+                palette = int(row["palette"], 0)
+                if index != expected_index:
+                    raise ValueError(
+                        f"{path}: non-sequential index "
+                        f"{index} != {expected_index}"
+                    )
+                if not 0 <= tile <= 0x3FF:
+                    raise ValueError(f"{path}: tile out of range: {tile}")
+                if hflip not in (0, 1) or vflip not in (0, 1):
+                    raise ValueError(f"{path}: flip flag out of range")
+                if not 0 <= palette <= 0xF:
+                    raise ValueError(
+                        f"{path}: palette bank out of range: {palette}"
+                    )
+                value = (
+                    tile
+                    | (hflip << 10)
+                    | (vflip << 11)
+                    | (palette << 12)
+                )
+                out += bytes((value & 0xFF, (value >> 8) & 0xFF))
+        return bytes(out)
+
+    if kind == "raw_binary":
+        return path.read_bytes()
+
+    if kind == "palette_bgr555":
+        import PIL.Image as PILImage
+        with PILImage.open(path) as im:
+            if im.mode != "P":
+                raise ValueError(f"{path}: indexed PNG required")
+            pal = im.getpalette()
+        n = int(stream["palette_colors"])
+        if n <= 0 or n > 256 or pal is None or len(pal) < n * 3:
+            raise ValueError(f"{path}: invalid palette_bgr555 source")
+        out = bytearray()
+        for i in range(n):
+            r, g, b = pal[3*i:3*i+3]
+            v = (r >> 3) | ((g >> 3) << 5) | ((b >> 3) << 10)
+            out += bytes((v & 0xFF, (v >> 8) & 0xFF))
+        return bytes(out)
+
+    if kind == "8bpp_tiles_preview":
+        import PIL.Image as PILImage
+        with PILImage.open(path) as im:
+            if im.mode != "P":
+                raise ValueError(f"{path}: indexed PNG required")
+            w, h = im.size
+            pix = list(im.getdata())
+        if w != int(stream["width"]) or h != int(stream["height"]) or w % 8 or h % 8:
+            raise ValueError(f"{path}: invalid 8bpp tile geometry")
+        out = bytearray()
+        for ty in range(0, h, 8):
+            for tx in range(0, w, 8):
+                for y in range(8):
+                    row = (ty + y) * w + tx
+                    out.extend(int(x) & 0xFF for x in pix[row:row+8])
+        return bytes(out)
+
     if kind == "u16_raw":
         raw = path.read_bytes()
         if len(raw) % 2:

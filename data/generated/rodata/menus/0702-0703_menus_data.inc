@@ -394,12 +394,6 @@ sFanfares: @ 0x084FCFC8
 	.set gBattleAnimSpriteGfx_Unknown, 0x08C13944
 	.globl gBattleAnimSpritePal_Unknown
 	.set gBattleAnimSpritePal_Unknown, 0x08C13970
-	.globl gBattleAnimSpriteGfx_CircleImpact
-	.set gBattleAnimSpriteGfx_CircleImpact, 0x08C1A588
-	.globl gBattleAnimSpritePal_MusicNotes2
-	.set gBattleAnimSpritePal_MusicNotes2, 0x08C226B4
-	.globl gBattleAnimSpriteGfx_SmallRedEye
-	.set gBattleAnimSpriteGfx_SmallRedEye, 0x08C2EC48
 	.globl gBattleAnimSpriteGfx_FlyingDirt
 	.set gBattleAnimSpriteGfx_FlyingDirt, 0x08D8D288
 	.globl gBattleAnimSpritePal_FlyingDirt

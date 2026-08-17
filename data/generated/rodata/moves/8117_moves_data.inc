@@ -354,36 +354,72 @@ gBattleAnimSpritePal_BlueFlames:
 gBattleAnimSpriteGfx_BlueFlames2:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0038.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0039.lz"
+	.globl gJPContestPal
+gJPContestPal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0040.lz"
+	.globl gJPContestBgTilemap
+gJPContestBgTilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0041.lz"
+	.globl gJPContestWindowsTilemap
+gJPContestWindowsTilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0042.lz"
 	@ 0xC12AA4 - 0xC15E87
 gMoveLz77Data_Rom_C15E88:
 	@ ANALYSIS: SOURCE_RANGE offset=0xC15E88, size=0x3424
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0043.lz"
+	.globl gContestInterfaceAudiencePalette
+gContestInterfaceAudiencePalette:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0044.lz"
+	.globl gContestAudienceTilemap
+gContestAudienceTilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0045.lz"
+	.globl gContestInterfaceTilemap
+gContestInterfaceTilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0046.lz"
+	.globl gJPContestInterfaceTilemap
+gJPContestInterfaceTilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0047.lz"
+	.globl gJPContestAudienceTilemap
+gJPContestAudienceTilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0048.lz"
+	.globl gContestCurtainTilemap
+gContestCurtainTilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0049.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0050.lz"
+	.globl gContestAudienceGfx
+gContestAudienceGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0051.lz"
 	@ 0xC15E88 - 0xC192AB
 gMoveLz77Data_Rom_C192AC:
 	@ ANALYSIS: SOURCE_RANGE offset=0xC192AC, size=0x304C
+	.globl gContestFaces_Gfx
+gContestFaces_Gfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0052.lz"
+	.globl gContestJudgeSymbolsGfx
+gContestJudgeSymbolsGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0053.lz"
+	.globl gContestJudgeSymbolsPal
+gContestJudgeSymbolsPal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0054.lz"
 	@ ANALYSIS: RAW_BLOCK size=0x20
 	.byte 0x00, 0x00, 0x00, 0x00, 0x30, 0x03, 0x30, 0x03, 0x13, 0x31, 0x13, 0x31, 0x13, 0x11, 0x11, 0x31
 	.byte 0x13, 0x11, 0x11, 0x31, 0x30, 0x11, 0x11, 0x03, 0x00, 0x13, 0x31, 0x00, 0x00, 0x30, 0x03, 0x00
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0055.lz"
+	.globl gJPContestVoltagePal
+gJPContestVoltagePal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0056.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0057.lz"
+	.globl gContestResults_WinnerBanner_Tilemap
+gContestResults_WinnerBanner_Tilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0058.lz"
+	.globl gContestResults_Interface_Tilemap
+gContestResults_Interface_Tilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0059.lz"
+	.globl gContestResults_Bg_Tilemap
+gContestResults_Bg_Tilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0060.lz"
+	.globl gContestResults_Pal
+gContestResults_Pal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0061.lz"
 	.globl gBattleAnimSpriteGfx_Impact
 gBattleAnimSpriteGfx_Impact:
@@ -391,7 +427,11 @@ gBattleAnimSpriteGfx_Impact:
 	.globl gBattleAnimSpritePal_Impact
 gBattleAnimSpritePal_Impact:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0063.lz"
+	.globl gBattleAnimSpriteGfx_Particles
+gBattleAnimSpriteGfx_Particles:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0064.lz"
+	.globl gBattleAnimSpriteGfx_CircleImpact
+gBattleAnimSpriteGfx_CircleImpact:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0065.lz"
 	.globl gBattleAnimSpritePal_CircleImpact
 gBattleAnimSpritePal_CircleImpact:
@@ -426,7 +466,11 @@ gBattleAnimSpritePal_IceCrystals:
 	.globl gBattleAnimSpriteGfx_IceSpikes
 gBattleAnimSpriteGfx_IceSpikes:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0076.lz"
+	.globl gBattleAnimSpriteGfx_OldBeatUp
+gBattleAnimSpriteGfx_OldBeatUp:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0077.lz"
+	.globl gBattleAnimSpritePal_OldBeatUp
+gBattleAnimSpritePal_OldBeatUp:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0078.lz"
 	.globl gBattleAnimSpriteGfx_Orbs
 gBattleAnimSpriteGfx_Orbs:
@@ -515,8 +559,14 @@ gBattleAnimSpriteGfx_MistCloud:
 	.globl gBattleAnimSpritePal_MistCloud
 gBattleAnimSpritePal_MistCloud:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0107.lz"
+	.globl gBattleAnimUnusedGfx_Lights
+gBattleAnimUnusedGfx_Lights:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0108.lz"
+	.globl gBattleAnimUnusedPal_Lights
+gBattleAnimUnusedPal_Lights:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0109.lz"
+	.globl gBattleAnimUnusedTilemap_Lights
+gBattleAnimUnusedTilemap_Lights:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0110.lz"
 	.globl gBattleAnimSpriteGfx_WhirlwindLines
 gBattleAnimSpriteGfx_WhirlwindLines:
@@ -569,7 +619,11 @@ gBattleAnimSpritePal_BlackBall2:
 	.globl gBattleAnimSpritePal_PurpleGasCloud
 gBattleAnimSpritePal_PurpleGasCloud:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0126.lz"
+	.globl gContestJudgeGfx
+gContestJudgeGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0127.lz"
+	.globl gContest2Pal
+gContest2Pal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0128.lz"
 	.globl gBattleAnimSpriteGfx_Spark
 gBattleAnimSpriteGfx_Spark:
@@ -589,11 +643,23 @@ gBattleAnimBgPalette_Dark:
 	.globl gBattleAnimBgTilemap_Dark
 gBattleAnimBgTilemap_Dark:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0134.lz"
+	.globl gMetalShineGfx
+gMetalShineGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0135.lz"
+	.globl gMetalShinePalette
+gMetalShinePalette:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0136.lz"
+	.globl gMetalShineTilemap
+gMetalShineTilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0137.lz"
+	.globl gUnusedGfx_Goosuto
+gUnusedGfx_Goosuto:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0138.lz"
+	.globl gUnusedPal_Goosuto
+gUnusedPal_Goosuto:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0139.lz"
+	.globl gUnusedTilemap_Goosuto
+gUnusedTilemap_Goosuto:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0140.lz"
 	.globl gBattleAnimSpriteGfx_YellowStar
 gBattleAnimSpriteGfx_YellowStar:
@@ -690,7 +756,11 @@ gBattleAnimSpritePal_Tendrils:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0172.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0173.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0174.lz"
+	.globl gUnusedGfx_Shadow
+gUnusedGfx_Shadow:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0175.lz"
+	.globl gUnusedPal_Shadow
+gUnusedPal_Shadow:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0176.lz"
 	.globl gBattleAnimSpriteGfx_LockOn
 gBattleAnimSpriteGfx_LockOn:
@@ -728,7 +798,11 @@ gBattleAnimSpriteGfx_PurpleHandOutline:
 	.globl gBattleAnimSpritePal_PurpleHandOutline
 gBattleAnimSpritePal_PurpleHandOutline:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0188.lz"
+	.globl gBattleAnimMaskImage_Curse
+gBattleAnimMaskImage_Curse:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0189.lz"
+	.globl gBattleAnimMaskTilemap_Curse
+gBattleAnimMaskTilemap_Curse:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0190.lz"
 	.globl gBattleAnimSpriteGfx_Pencil
 gBattleAnimSpriteGfx_Pencil:
@@ -808,6 +882,8 @@ gBattleAnimSpritePal_ThinRing:
 	.globl gBattleAnimSpriteGfx_MusicNotes2
 gBattleAnimSpriteGfx_MusicNotes2:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0215.lz"
+	.globl gBattleAnimSpritePal_MusicNotes2
+gBattleAnimSpritePal_MusicNotes2:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0216.lz"
 	.globl gBattleAnimSpriteGfx_Bell
 gBattleAnimSpriteGfx_Bell:
@@ -848,8 +924,14 @@ gBattleAnimSpritePal_MagentaHeart:
 	.globl gBattleAnimSpritePal_RedHeart
 gBattleAnimSpritePal_RedHeart:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0229.lz"
+	.globl gBattleAnimBgImage_Attract
+gBattleAnimBgImage_Attract:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0230.lz"
+	.globl gBattleAnimBgPalette_Attract
+gBattleAnimBgPalette_Attract:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0231.lz"
+	.globl gBattleAnimBgTilemap_Attract
+gBattleAnimBgTilemap_Attract:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0232.lz"
 	.globl gBattleAnimSpriteGfx_RedOrb
 gBattleAnimSpriteGfx_RedOrb:
@@ -878,7 +960,11 @@ gBattleAnimSpriteGfx_MovementWaves:
 	.globl gBattleAnimSpritePal_MovementWaves
 gBattleAnimSpritePal_MovementWaves:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0241.lz"
+	.globl gBattleAnimBgPalette_ScaryFace
+gBattleAnimBgPalette_ScaryFace:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0242.lz"
+	.globl gBattleAnimBgImage_ScaryFace
+gBattleAnimBgImage_ScaryFace:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0243.lz"
 	.globl gBattleAnimSpritePal_EyeSparkle
 gBattleAnimSpritePal_EyeSparkle:
@@ -1066,8 +1152,14 @@ gBattleAnimBgImage_Highspeed:
 	.globl gBattleAnimBgTilemap_HighspeedPlayer
 gBattleAnimBgTilemap_HighspeedPlayer:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0303.lz"
+	.globl gBattleAnimMaskImage_LightBeam
+gBattleAnimMaskImage_LightBeam:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0304.lz"
+	.globl gBattleAnimMaskPalette_LightBeam
+gBattleAnimMaskPalette_LightBeam:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0305.lz"
+	.globl gBattleAnimMaskTilemap_LightBeam
+gBattleAnimMaskTilemap_LightBeam:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0306.lz"
 	.globl gBattleAnimBgTilemap_GuillotineOpponent
 gBattleAnimBgTilemap_GuillotineOpponent:
@@ -1114,8 +1206,14 @@ gBattleAnimSpriteGfx_Confetti:
 	.globl gBattleAnimSpritePal_Confetti
 gBattleAnimSpritePal_Confetti:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0320.lz"
+	.globl gSubstituteDollPal
+gSubstituteDollPal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0321.lz"
+	.globl gSubstituteDollFrontGfx
+gSubstituteDollFrontGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0322.lz"
+	.globl gSubstituteDollBackGfx
+gSubstituteDollBackGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0323.lz"
 	.globl gBattleAnimSpriteGfx_GreenStar
 gBattleAnimSpriteGfx_GreenStar:
@@ -1123,7 +1221,11 @@ gBattleAnimSpriteGfx_GreenStar:
 	.globl gBattleAnimSpritePal_GreenStar
 gBattleAnimSpritePal_GreenStar:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0325.lz"
+	.globl gConfetti_Gfx
+gConfetti_Gfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0326.lz"
+	.globl gConfetti_Pal
+gConfetti_Pal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0327.lz"
 	.globl gBattleAnimSpriteGfx_PinkCloud
 gBattleAnimSpriteGfx_PinkCloud:
@@ -1137,22 +1239,48 @@ gBattleAnimSpriteGfx_SweatDrop:
 	.globl gBattleAnimSpritePal_SweatDrop
 gBattleAnimSpritePal_SweatDrop:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0331.lz"
+	.globl gStatAnim_Gfx
+gStatAnim_Gfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0332.lz"
+	.globl gStatAnim_Increase_Tilemap
+gStatAnim_Increase_Tilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0333.lz"
+	.globl gStatAnim_Decrease_Tilemap
+gStatAnim_Decrease_Tilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0334.lz"
 	@ 0xC2B100 - 0xC2DC0B
 gMoveLz77Data_Rom_C2DC0C:
 	@ ANALYSIS: SOURCE_RANGE offset=0xC2DC0C, size=0x2138
+	.globl gStatAnim_Defense_Pal
+gStatAnim_Defense_Pal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0335.lz"
+	.globl gStatAnim_Attack_Pal
+gStatAnim_Attack_Pal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0336.lz"
+	.globl gStatAnim_Accuracy_Pal
+gStatAnim_Accuracy_Pal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0337.lz"
+	.globl gStatAnim_Speed_Pal
+gStatAnim_Speed_Pal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0338.lz"
+	.globl gStatAnim_Multiple_Pal
+gStatAnim_Multiple_Pal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0339.lz"
+	.globl gStatAnim_Evasion_Pal
+gStatAnim_Evasion_Pal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0340.lz"
+	.globl gStatAnim_SpAttack_Pal
+gStatAnim_SpAttack_Pal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0341.lz"
+	.globl gStatAnim_SpDefense_Pal
+gStatAnim_SpDefense_Pal:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0342.lz"
+	.globl gCureBubblesGfx
+gCureBubblesGfx:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0343.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0344.lz"
+	.globl gCureBubblesTilemap
+gCureBubblesTilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0345.lz"
 	.globl gBattleAnimSpritePal_PurpleScratch
 gBattleAnimSpritePal_PurpleScratch:
@@ -1176,7 +1304,11 @@ gBattleAnimSpriteGfx_TagHand:
 gBattleAnimSpriteGfx_NoiseLine:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0352.lz"
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0353.lz"
+	.globl UnusedLevelupAnimationTilemap
+UnusedLevelupAnimationTilemap:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0354.lz"
+	.globl gBattleAnimSpriteGfx_SmallRedEye
+gBattleAnimSpriteGfx_SmallRedEye:
 	.incbin "build/graphics/unknown/moves_8117_lz77/exact/stream_0355.lz"
 	.globl gBattleAnimSpritePal_SmallRedEye
 gBattleAnimSpritePal_SmallRedEye:

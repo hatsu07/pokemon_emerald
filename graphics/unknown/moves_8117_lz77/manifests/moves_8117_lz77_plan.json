@@ -975,7 +975,7 @@
       "width": 32,
       "height": 32,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0040_rom_00C15940_w32h32.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0040_rom_00C15940_w32h32.png",
+      "png_rel": "graphics/contest/japanese/palette_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -992,11 +992,9 @@
       "raw_size": 2048,
       "raw_sha1": "94ec5720066efeb5c471deab5917f005a8bb2c9f",
       "compressed_sha1": "821b4c37233a33743f0a450f66848d48b53168ed",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0041_rom_00C15A44_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0041_rom_00C15A44_w64h64.png",
+      "png_rel": "graphics/contest/japanese/bg.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -1013,11 +1011,9 @@
       "raw_size": 4096,
       "raw_sha1": "8ab16cbb6cb646001f36475bb75f84a2d794c557",
       "compressed_sha1": "90f3520e30a48c1ebaca4972068fef7d9253d534",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 128,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0042_rom_00C15BC8_w64h128.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0042_rom_00C15BC8_w64h128.png",
+      "png_rel": "graphics/contest/japanese/windows.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -1059,7 +1055,7 @@
       "width": 32,
       "height": 32,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0044_rom_00C16E98_w32h32.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0044_rom_00C16E98_w32h32.png",
+      "png_rel": "graphics/contest/interface_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -1076,11 +1072,9 @@
       "raw_size": 2048,
       "raw_sha1": "fba9d3afc6d2899f97a7951b5274a82995943f34",
       "compressed_sha1": "cf0bb24cf1eef3e824e36d67e49ff64ee22bc91a",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0045_rom_00C16FB0_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0045_rom_00C16FB0_w64h64.png",
+      "png_rel": "graphics/contest/audience.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -1097,11 +1091,9 @@
       "raw_size": 4096,
       "raw_sha1": "11fc73b7e819ca49b198f687c8d74af5aefd8f08",
       "compressed_sha1": "c5e59c3ae0f46991db33651e617a546f57b302e5",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 128,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0046_rom_00C17178_w64h128.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0046_rom_00C17178_w64h128.png",
+      "png_rel": "graphics/contest/interface.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -1118,11 +1110,9 @@
       "raw_size": 2048,
       "raw_sha1": "f1e38ca7b617388c9f9355c916cbf0e4ed3b026b",
       "compressed_sha1": "c4ebe7478873fa66f4f431cada536eac3bbd759b",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0047_rom_00C17418_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0047_rom_00C17418_w64h64.png",
+      "png_rel": "graphics/contest/japanese/interface.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -1139,11 +1129,9 @@
       "raw_size": 8192,
       "raw_sha1": "5bc14132c4d3a529c91f0ece6f56883afbe06171",
       "compressed_sha1": "91b1356ba890cabfb5276cc0d9028b278011f50e",
-      "kind": "4bpp_tiles_preview",
-      "width": 128,
-      "height": 128,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0048_rom_00C17524_w128h128.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0048_rom_00C17524_w128h128.png",
+      "png_rel": "graphics/contest/japanese/audience.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -1160,11 +1148,9 @@
       "raw_size": 2048,
       "raw_sha1": "9a6096f92c02db3a28bff548867dd184fa318931",
       "compressed_sha1": "0245f7c130dd8205cab0144534bf610b769a1d2d",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0049_rom_00C17988_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0049_rom_00C17988_w64h64.png",
+      "png_rel": "graphics/contest/curtain.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -1206,7 +1192,7 @@
       "width": 128,
       "height": 128,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0051_rom_00C18650_w128h128.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0051_rom_00C18650_w128h128.png",
+      "png_rel": "graphics/contest/audience.png",
       "roundtrip_ok": true
     },
     {
@@ -1227,7 +1213,7 @@
       "width": 24,
       "height": 32,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0052_rom_00C192AC_w24h32.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0052_rom_00C192AC_w24h32.png",
+      "png_rel": "graphics/contest/faces.png",
       "roundtrip_ok": true
     },
     {
@@ -1248,7 +1234,7 @@
       "width": 32,
       "height": 56,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0053_rom_00C193C8_w32h56.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0053_rom_00C193C8_w32h56.png",
+      "png_rel": "graphics/contest/judge_symbols.png",
       "roundtrip_ok": true
     },
     {
@@ -1269,7 +1255,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0054_rom_00C1956C_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0054_rom_00C1956C_pal.png",
+      "png_rel": "graphics/contest/judge_symbols_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -1311,7 +1297,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0056_rom_00C196A4_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0056_rom_00C196A4_pal.png",
+      "png_rel": "graphics/contest/japanese/voltage_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -1349,11 +1335,9 @@
       "raw_size": 2048,
       "raw_sha1": "5266c31292917acf397f8998b8236f6b8eea5f9b",
       "compressed_sha1": "9590baadbb9cc1e519f6ac4f794ee6c9ffa6d7a8",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0058_rom_00C19F34_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0058_rom_00C19F34_w64h64.png",
+      "png_rel": "graphics/contest/results_screen/winner_banner.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -1370,11 +1354,9 @@
       "raw_size": 2048,
       "raw_sha1": "259d3a6fffd03a129088b64fc419fa5be389fe4b",
       "compressed_sha1": "7fe284bc1bff5c3eaf1e71cfe60da1441ad45e5b",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0059_rom_00C1A048_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0059_rom_00C1A048_w64h64.png",
+      "png_rel": "graphics/contest/results_screen/interface.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -1391,11 +1373,9 @@
       "raw_size": 2048,
       "raw_sha1": "c66377dfa56ada0a325d1315917e359695baa4c9",
       "compressed_sha1": "981c1e00277420ff63fbe679ac6b2284b903bfc6",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0060_rom_00C1A174_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0060_rom_00C1A174_w64h64.png",
+      "png_rel": "graphics/contest/results_screen/bg.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -1416,7 +1396,7 @@
       "width": 32,
       "height": 32,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0061_rom_00C1A2FC_w32h32.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0061_rom_00C1A2FC_w32h32.png",
+      "png_rel": "graphics/contest/results_screen/tiles_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -1479,7 +1459,7 @@
       "width": 16,
       "height": 32,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0064_rom_00C1A4D8_w16h32.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0064_rom_00C1A4D8_w16h32.png",
+      "png_rel": "graphics/battle_anims/sprites/particles.png",
       "roundtrip_ok": true
     },
     {
@@ -1500,7 +1480,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0065_rom_00C1A588_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0065_rom_00C1A588_pal.png",
+      "png_rel": "graphics/battle_anims/sprites/circle_impact.png",
       "roundtrip_ok": true
     },
     {
@@ -1752,7 +1732,7 @@
       "width": 32,
       "height": 32,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0077_rom_00C1AEFC_w32h32.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0077_rom_00C1AEFC_w32h32.png",
+      "png_rel": "graphics/battle_anims/unused/old_beatup.png",
       "roundtrip_ok": true
     },
     {
@@ -1773,7 +1753,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0078_rom_00C1AF98_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0078_rom_00C1AF98_pal.png",
+      "png_rel": "graphics/battle_anims/unused/old_beatup_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -2403,7 +2383,7 @@
       "width": 8,
       "height": 24,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0108_rom_00C1BD44_w8h24.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0108_rom_00C1BD44_w8h24.png",
+      "png_rel": "graphics/battle_anims/unused/lights.png",
       "roundtrip_ok": true
     },
     {
@@ -2424,7 +2404,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0109_rom_00C1BD6C_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0109_rom_00C1BD6C_pal.png",
+      "png_rel": "graphics/battle_anims/unused/lights_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -2441,11 +2421,9 @@
       "raw_size": 2048,
       "raw_sha1": "e7052491ad2b22fe08a5f1c1751f44d22f517569",
       "compressed_sha1": "977df392c1b359bab72e35e9caa76e3d4e4e726e",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0110_rom_00C1BD84_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0110_rom_00C1BD84_w64h64.png",
+      "png_rel": "graphics/battle_anims/unused/lights.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -2802,7 +2780,7 @@
       "width": 64,
       "height": 64,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0127_rom_00C1C42C_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0127_rom_00C1C42C_w64h64.png",
+      "png_rel": "graphics/contest/judge.png",
       "roundtrip_ok": true
     },
     {
@@ -2823,7 +2801,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0128_rom_00C1C700_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0128_rom_00C1C700_pal.png",
+      "png_rel": "graphics/contest/judge_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -2970,7 +2948,7 @@
       "width": 64,
       "height": 64,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0135_rom_00C1D0F4_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0135_rom_00C1D0F4_w64h64.png",
+      "png_rel": "graphics/battle_anims/masks/metal_shine.png",
       "roundtrip_ok": true
     },
     {
@@ -2991,7 +2969,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0136_rom_00C1D230_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0136_rom_00C1D230_pal.png",
+      "png_rel": "graphics/battle_anims/masks/metal_shine_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -3008,11 +2986,9 @@
       "raw_size": 2048,
       "raw_sha1": "0baaecbeac6210d691e9997c51ebb0452fc67910",
       "compressed_sha1": "8b04cce55c477e32699a80a726e6cf04f6324371",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0137_rom_00C1D258_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0137_rom_00C1D258_w64h64.png",
+      "png_rel": "graphics/battle_anims/masks/metal_shine.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -3033,7 +3009,7 @@
       "width": 48,
       "height": 64,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0138_rom_00C1D3CC_w48h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0138_rom_00C1D3CC_w48h64.png",
+      "png_rel": "graphics/battle_anims/unused/goosuto.png",
       "roundtrip_ok": true
     },
     {
@@ -3054,7 +3030,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0139_rom_00C1D4DC_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0139_rom_00C1D4DC_pal.png",
+      "png_rel": "graphics/battle_anims/unused/goosuto_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -3071,11 +3047,9 @@
       "raw_size": 2048,
       "raw_sha1": "ebe74477b1b06ca60d4afeecdd25edd4dce86a82",
       "compressed_sha1": "84fd156976496b416a56a75614497364437a114b",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0140_rom_00C1D4F4_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0140_rom_00C1D4F4_w64h64.png",
+      "png_rel": "graphics/battle_anims/unused/goosuto.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -3810,7 +3784,7 @@
       "width": 16,
       "height": 32,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0175_rom_00C1FC04_w16h32.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0175_rom_00C1FC04_w16h32.png",
+      "png_rel": "graphics/unused/shadow.png",
       "roundtrip_ok": true
     },
     {
@@ -3831,7 +3805,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0176_rom_00C1FC64_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0176_rom_00C1FC64_pal.png",
+      "png_rel": "graphics/unused/shadow_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -4104,7 +4078,7 @@
       "width": 8,
       "height": 24,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0189_rom_00C2070C_w8h24.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0189_rom_00C2070C_w8h24.png",
+      "png_rel": "graphics/battle_anims/masks/curse.png",
       "roundtrip_ok": true
     },
     {
@@ -4121,11 +4095,9 @@
       "raw_size": 2048,
       "raw_sha1": "742814517e3fefa591db1d310afea646e81956d0",
       "compressed_sha1": "39f61c18aa0c946a1952ce4cd24296b32f74b6c9",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0190_rom_00C20728_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0190_rom_00C20728_w64h64.png",
+      "png_rel": "graphics/battle_anims/masks/curse.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -4671,7 +4643,7 @@
       "width": 8,
       "height": 40,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0216_rom_00C226B4_w8h40.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0216_rom_00C226B4_w8h40.png",
+      "png_rel": "graphics/battle_anims/sprites/music_notes_2_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -4965,7 +4937,7 @@
       "width": 128,
       "height": 128,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0230_rom_00C23384_w128h128.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0230_rom_00C23384_w128h128.png",
+      "png_rel": "graphics/battle_anims/backgrounds/attract.png",
       "roundtrip_ok": true
     },
     {
@@ -4986,7 +4958,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0231_rom_00C23DF4_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0231_rom_00C23DF4_pal.png",
+      "png_rel": "graphics/battle_anims/backgrounds/attract_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -5003,11 +4975,9 @@
       "raw_size": 2048,
       "raw_sha1": "d8673483f591885be7d8f6a74025ede1b16fa36c",
       "compressed_sha1": "2f7f116e623d49e7df236ffdde7f78ae28b67205",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0232_rom_00C23E1C_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0232_rom_00C23E1C_w64h64.png",
+      "png_rel": "graphics/battle_anims/backgrounds/attract.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -5217,7 +5187,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0242_rom_00C24A74_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0242_rom_00C24A74_pal.png",
+      "png_rel": "graphics/battle_anims/backgrounds/scary_face_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -5238,7 +5208,7 @@
       "width": 64,
       "height": 80,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0243_rom_00C24A9C_w64h80.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0243_rom_00C24A9C_w64h80.png",
+      "png_rel": "graphics/battle_anims/backgrounds/scary_face.png",
       "roundtrip_ok": true
     },
     {
@@ -6519,7 +6489,7 @@
       "width": 32,
       "height": 40,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0304_rom_00C2A6D8_w32h40.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0304_rom_00C2A6D8_w32h40.png",
+      "png_rel": "graphics/battle_anims/masks/light_beam.png",
       "roundtrip_ok": true
     },
     {
@@ -6540,7 +6510,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0305_rom_00C2A778_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0305_rom_00C2A778_pal.png",
+      "png_rel": "graphics/battle_anims/masks/light_beam_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -6557,11 +6527,9 @@
       "raw_size": 2048,
       "raw_sha1": "43d5d6199e104832c4f23ac888885ad626165715",
       "compressed_sha1": "29eebb549479c583c15beafe4f3277fbe8ea4326",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0306_rom_00C2A790_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0306_rom_00C2A790_w64h64.png",
+      "png_rel": "graphics/battle_anims/masks/light_beam.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -6876,7 +6844,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0321_rom_00C2CF60_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0321_rom_00C2CF60_pal.png",
+      "png_rel": "graphics/battle_anims/sprites/substitute_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -6897,7 +6865,7 @@
       "width": 64,
       "height": 64,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0322_rom_00C2CF84_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0322_rom_00C2CF84_w64h64.png",
+      "png_rel": "graphics/battle_anims/sprites/substitute.png",
       "roundtrip_ok": true
     },
     {
@@ -6918,7 +6886,7 @@
       "width": 64,
       "height": 64,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0323_rom_00C2D1C4_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0323_rom_00C2D1C4_w64h64.png",
+      "png_rel": "graphics/battle_anims/sprites/substitute_back.png",
       "roundtrip_ok": true
     },
     {
@@ -6981,7 +6949,7 @@
       "width": 8,
       "height": 136,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0326_rom_00C2D4CC_w8h136.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0326_rom_00C2D4CC_w8h136.png",
+      "png_rel": "graphics/misc/confetti.png",
       "roundtrip_ok": true
     },
     {
@@ -7002,7 +6970,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0327_rom_00C2D5EC_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0327_rom_00C2D5EC_pal.png",
+      "png_rel": "graphics/misc/confetti_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -7107,7 +7075,7 @@
       "width": 64,
       "height": 64,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0332_rom_00C2D7C4_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0332_rom_00C2D7C4_w64h64.png",
+      "png_rel": "graphics/battle_anims/stat_change/tiles.png",
       "roundtrip_ok": true
     },
     {
@@ -7124,11 +7092,9 @@
       "raw_size": 2048,
       "raw_sha1": "93525026ce77defb8c67dea2aabfe1f9d3a9cff0",
       "compressed_sha1": "8d1a6d8380c7e15c330683658a93f1719e4b432b",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0333_rom_00C2D9D4_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0333_rom_00C2D9D4_w64h64.png",
+      "png_rel": "graphics/battle_anims/stat_change/increase.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -7145,11 +7111,9 @@
       "raw_size": 2048,
       "raw_sha1": "a9d21975dd32e98f3b30d6893e710db073c5d3d8",
       "compressed_sha1": "2f5b3e2284f04a48a6278485b2fd9bf00b382b66",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0334_rom_00C2DAF0_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0334_rom_00C2DAF0_w64h64.png",
+      "png_rel": "graphics/battle_anims/stat_change/decrease.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -7170,7 +7134,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0335_rom_00C2DC0C_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0335_rom_00C2DC0C_pal.png",
+      "png_rel": "graphics/battle_anims/stat_change/defense_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -7191,7 +7155,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0336_rom_00C2DC2C_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0336_rom_00C2DC2C_pal.png",
+      "png_rel": "graphics/battle_anims/stat_change/attack_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -7212,7 +7176,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0337_rom_00C2DC4C_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0337_rom_00C2DC4C_pal.png",
+      "png_rel": "graphics/battle_anims/stat_change/accuracy_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -7233,7 +7197,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0338_rom_00C2DC6C_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0338_rom_00C2DC6C_pal.png",
+      "png_rel": "graphics/battle_anims/stat_change/speed_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -7254,7 +7218,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0339_rom_00C2DC8C_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0339_rom_00C2DC8C_pal.png",
+      "png_rel": "graphics/battle_anims/stat_change/multiple_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -7275,7 +7239,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0340_rom_00C2DCAC_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0340_rom_00C2DCAC_pal.png",
+      "png_rel": "graphics/battle_anims/stat_change/evasion_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -7296,7 +7260,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0341_rom_00C2DCCC_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0341_rom_00C2DCCC_pal.png",
+      "png_rel": "graphics/battle_anims/stat_change/sp_attack_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -7317,7 +7281,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0342_rom_00C2DCEC_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0342_rom_00C2DCEC_pal.png",
+      "png_rel": "graphics/battle_anims/stat_change/sp_defense_palette.png",
       "roundtrip_ok": true
     },
     {
@@ -7338,7 +7302,7 @@
       "width": 32,
       "height": 32,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0343_rom_00C2DD0C_w32h32.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0343_rom_00C2DD0C_w32h32.png",
+      "png_rel": "graphics/battle_anims/masks/cure_bubbles.png",
       "roundtrip_ok": true
     },
     {
@@ -7376,11 +7340,9 @@
       "raw_size": 2048,
       "raw_sha1": "a310e2a95f42bfa68758ef95bb8cacd800a0131d",
       "compressed_sha1": "97da2835dd167e5446606c70114bcabcc4473678",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0345_rom_00C2DE68_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0345_rom_00C2DE68_w64h64.png",
+      "png_rel": "graphics/battle_anims/masks/cure_bubbles.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -7565,11 +7527,9 @@
       "raw_size": 2048,
       "raw_sha1": "ccb90a7bf0939e99254d5260a932a1d582a3b7bc",
       "compressed_sha1": "5d45ddc662a443fd3296f4e27f255716c9bec9f9",
-      "kind": "4bpp_tiles_preview",
-      "width": 64,
-      "height": 64,
+      "kind": "tilemap_csv_u16",
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0354_rom_00C2EB40_w64h64.4bpp",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0354_rom_00C2EB40_w64h64.png",
+      "png_rel": "graphics/battle_anims/masks/unused_level_up.tilemap.csv",
       "roundtrip_ok": true
     },
     {
@@ -7590,7 +7550,7 @@
       "width": 16,
       "height": 1,
       "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0355_rom_00C2EC48_pal.gbapal",
-      "png_rel": "graphics/unknown/moves_8117_lz77/png/stream_0355_rom_00C2EC48_pal.png",
+      "png_rel": "graphics/battle_anims/sprites/small_red_eye.png",
       "roundtrip_ok": true
     },
     {

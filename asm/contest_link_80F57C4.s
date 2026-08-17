@@ -229,10 +229,10 @@ _080F61BE:
 	b _080F61EE
 	.align 2, 0
 _080F61CC: .4byte 0x08C196CC
-_080F61D0: .4byte 0x08C1A174
-_080F61D4: .4byte 0x08C1A048
-_080F61D8: .4byte 0x08C19F34
-_080F61DC: .4byte 0x08C1A2FC
+_080F61D0: .4byte gContestResults_Bg_Tilemap
+_080F61D4: .4byte gContestResults_Interface_Tilemap
+_080F61D8: .4byte gContestResults_WinnerBanner_Tilemap
+_080F61DC: .4byte gContestResults_Pal
 _080F61E0: .4byte 0x0856915C
 _080F61E4: .4byte 0x000060B2
 _080F61E8: .4byte 0x000060A4

@@ -5713,9 +5713,9 @@ set(MOVES_8117_EXACT_OUTPUT_DIR
 
 file(GLOB_RECURSE MOVES_8117_EXACT_EDITABLE_SOURCES
     CONFIGURE_DEPENDS
-    "${MOVES_8117_EXACT_ROOT}/png/*.png"
-    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/*.png"
-    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/*.u16")
+    "${CMAKE_SOURCE_DIR}/graphics/*.png"
+    "${CMAKE_SOURCE_DIR}/graphics/*.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/*.csv")
 
 set_property(
     DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
