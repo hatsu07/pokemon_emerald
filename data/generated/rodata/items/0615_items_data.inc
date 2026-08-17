@@ -1321,7 +1321,7 @@ MapHeader_JP_0845CAA4: @ 0x0845CAA4
 
 MapHeader_JP_0845CAC0: @ 0x0845CAC0
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08431948, SealedChamber_InnerRoom_MapEvents, 0x0821BB3C, 0, 0x01B6, 0x0130, 0x4E, 0x00, 0x00, 0x04, 0x0F, 0x00
+	semantic_map_header MapLayout_JP_08431948, SealedChamber_InnerRoom_MapEvents, SealedChamber_InnerRoom_MapScripts, 0, 0x01B6, 0x0130, 0x4E, 0x00, 0x00, 0x04, 0x0F, 0x00
 
 MapHeader_JP_0845CADC: @ 0x0845CADC
 	@ struct MapHeader

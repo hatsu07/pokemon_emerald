@@ -258,8 +258,9 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	hidebox2
 	releaseall
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x1
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BB3C
+	@ ANALYSIS: PROVEN_EMPTY_MAPSCRIPTS_TABLE addr=0x0821BB3C map=SealedChamber_InnerRoom
+	.globl SealedChamber_InnerRoom_MapScripts
+SealedChamber_InnerRoom_MapScripts:
 	.byte 0x00
 	lockall
 	@ Recovered proven split event command at 0x0821BB3E
