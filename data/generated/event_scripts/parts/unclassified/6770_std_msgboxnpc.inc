@@ -728,8 +728,10 @@ EventScriptData_JP_08242A21:
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x08242B69 size=0x1 source=v43_v44
 	@ end @ 0x08242B69
 	end
-	@ ANALYSIS: RAW_BLOCK size=0x3
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08242B6A
+	@ ANALYSIS: PROVEN_MOVEMENT_UNION_RANGE addr=0x08242B6A size=0x3 source=v45_trusted_consumer
+
+	.globl Movement_08242B6A
+Movement_08242B6A: @ 0x08242B6A
 	.byte 0x4F, 0x12, 0xFE
 	.globl Std_ObtainItem
 Std_ObtainItem: @ 0x08242B6D
