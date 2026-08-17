@@ -736,7 +736,7 @@ _080713AA:
 	.align 2, 0
 _080713BC: .4byte gMenuU8Table_Rom_305D24
 _080713C0: .4byte gMenuU8Table_Rom_305D84
-_080713C4: .4byte gMenuU16Table_Rom_304D04
+_080713C4: .4byte gTradePlatform_Tilemap
 _080713C8: .4byte 0x03002360
 _080713CC:
 	ldr r0, _080713F8

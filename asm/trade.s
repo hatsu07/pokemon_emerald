@@ -5013,7 +5013,7 @@ _08079454:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08079464: .4byte gTradeData_08300D40
+_08079464: .4byte sSelectedMonLevelGenderCoords_JP
 _08079468: .4byte 0x02031F3C
 	thumb_func_end sub_080790C8
 
@@ -8784,7 +8784,7 @@ _0807B212:
 	b _0807B4A0
 	.align 2, 0
 _0807B21C: .4byte 0x00001241
-_0807B220: .4byte gTradeData_08302D64
+_0807B220: .4byte sCableCloseup_Map
 _0807B224: .4byte 0x06002800
 _0807B228: .4byte 0x040000D4
 _0807B22C: .4byte 0x80000400
@@ -9081,7 +9081,7 @@ _0807B4B4: .4byte gMenuU8Table_Rom_305D84
 _0807B4B8: .4byte 0x06004000
 _0807B4BC: .4byte 0x040000D4
 _0807B4C0: .4byte 0x80000800
-_0807B4C4: .4byte gMenuU16Table_Rom_304D04
+_0807B4C4: .4byte gTradePlatform_Tilemap
 _0807B4C8: .4byte 0x06009000
 	thumb_func_end sub_0807B064
 
