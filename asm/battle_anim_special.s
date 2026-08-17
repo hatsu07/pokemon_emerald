@@ -2798,7 +2798,7 @@ _08171866:
 	bx r0
 	.align 2, 0
 _0817187C: .4byte 0x020205AC
-_08171880: .4byte gBattleAnimSpecialData_085C630C
+_08171880: .4byte sSpriteTemplate_BallOpenParticle_085C630C
 _08171884: .4byte gBattleAnimSpecialData_085C6144
 _08171888: .4byte 0x08171891
 _0817188C: .4byte gBattleAnimSpecialData_085C6270

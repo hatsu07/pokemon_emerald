@@ -145,18 +145,12 @@ gBattleAnimSpecialData_085C62AC: @ 0x085C62AC
 	.4byte 0 @ +0x54
 	.4byte gDummySpriteAffineAnimTable @ +0x58
 	.4byte SpriteCallbackDummy @ +0x5C
-	@ pret/pokeemerald-jp direct xref for 0x085C630C: battle_anim_special.s: sub_081717D0
-	.globl gBattleAnimSpecialData_085C630C
-gBattleAnimSpecialData_085C630C: @ 0x085C630C
-	@ analyzed canonical ROM range 0x085C630C-0x085C63CB
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0xD6F0D6F0 @ +0x0
-	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x4
-	.4byte 0x085C6258 @ +0x8
-	.4byte 0 @ +0xC
-	.4byte gDummySpriteAffineAnimTable @ +0x10
-	.4byte SpriteCallbackDummy @ +0x14
+	@ Ball-open particle SpriteTemplate passed directly to CreateSprite by sub_081717D0.
+	.globl sSpriteTemplate_BallOpenParticle_085C630C
+sSpriteTemplate_BallOpenParticle_085C630C: @ 0x085C630C
+	@ ANALYSIS: SEMANTIC_SPRITE_TEMPLATE addr=0x085C630C size=0x18
+	rodata_sprite_template 0xD6F0, 0xD6F0, gOamData_AffineOff_ObjNormal_8x8, sAnims_BallOpenParticles_085C6258, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ The following seven 24-byte template-shaped records remain raw until a direct consumer is proved.
 	@ ANALYSIS: RAW_BLOCK size=0x10
 	.4byte 0xD6F1D6F1 @ +0x18
 	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x1C

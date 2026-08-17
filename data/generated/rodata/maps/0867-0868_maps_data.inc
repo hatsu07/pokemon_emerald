@@ -473,12 +473,21 @@ gFireData_08571268: @ 0x08571268
 	@ pret/pokeemerald-jp direct xref for 0x08571278: fire.s: sub_0810A8E4
 	.globl gFireData_08571278
 gFireData_08571278: @ 0x08571278
-	@ analyzed canonical ROM range 0x08571278-0x085712A3
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x2C
-	.2byte 0x00FF, 0x0001, 0x01FF, 0xFF00, 0x0100, 0xFF00, 0x0100, 0x0100
-	.2byte 0x0000, 0x0005, 0x0010, 0x0005, 0x0020, 0x0008, 0x0030, 0x0005
-	.2byte 0x0040, 0x0005, 0xFFFF, 0x0000, 0x1288, 0x0857
+	@ sub_0810A8E4 indexes this prefix as signed bytes modulo 10; the final 6 bytes remain unproven.
+	@ ANALYSIS: RAW_BLOCK addr=0x08571278 size=0x10
+	.byte 0xFF, 0x00, 0x01, 0x00, 0xFF, 0x01, 0x00, 0xFF
+	.byte 0x00, 0x01, 0x00, 0xFF, 0x00, 0x01, 0x00, 0x01
+	@ ElectricSpark AnimCmd sequence and one-entry animation table.
+	@ ANALYSIS: SEMANTIC_ANIM_CMD_TABLE addr=0x08571288 size=0x1C count=1
+sAnim_ElectricSpark_08571288: @ 0x08571288
+	rodata_anim_frame 0, 5
+	rodata_anim_frame 16, 5
+	rodata_anim_frame 32, 8
+	rodata_anim_frame 48, 5
+	rodata_anim_frame 64, 5
+	rodata_anim_end
+sAnims_ElectricSpark_085712A0: @ 0x085712A0
+	.4byte sAnim_ElectricSpark_08571288
 	@ pret/pokeemerald-jp direct xref for 0x085712A4: electric.s: sub_0810BE64
 	.globl gElectricData_085712A4
 gElectricData_085712A4:
@@ -488,7 +497,7 @@ gBattleAnimSpriteTemplate_ElectricSpark: @ 0x085712A4
 	@ pointer/nullable table
 	.4byte 0x27352735 @ +0x0
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x4
-	.4byte 0x085712A0 @ +0x8
+	.4byte sAnims_ElectricSpark_085712A0 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_0810A9F8 @ +0x14
