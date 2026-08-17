@@ -406,22 +406,17 @@ gFireData_08571198: @ 0x08571198
 	@ analyzed canonical ROM range 0x08571198-0x085711AF
 sSpriteTemplate_08571198: @ 0x08571198
 	rodata_sprite_template 0x27D9, 0x27D9, gOamData_AffineOff_ObjNormal_16x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_0810A13C
-	@ pret/pokeemerald-jp direct xref for 0x085711B0: fire.s: sub_0810A004
-	.globl gFireData_085711B0
-gFireData_085711B0: @ 0x085711B0
-	@ analyzed canonical ROM range 0x085711B0-0x085711B1
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	.byte 0xFE, 0xFF
-	@ pret/pokeemerald-jp direct xref for 0x085711B2: fire.s: sub_0810A004
-	.globl gFireData_085711B2
-gFireData_085711B2: @ 0x085711B2
-	@ analyzed canonical ROM range 0x085711B2-0x08571267
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ Residual fire data before embedded SpriteTemplate 1.
-	@ ANALYSIS: RAW_BLOCK addr=0x085711B2 size=0x1A
-	.2byte 0xFFFB, 0xFFFF, 0xFFFF, 0x0003, 0xFFFA, 0x0004, 0xFFFE, 0x0002
-	.2byte 0xFFF8, 0xFFFB, 0xFFFB, 0x0004, 0xFFF9
+	@ Eruption launch-rock initial speeds. Canonical layout: static const s16 [7][2].
+	.globl sEruptionLaunchRockSpeeds
+sEruptionLaunchRockSpeeds: @ 0x085711B0
+	@ ANALYSIS: SEMANTIC_S16_PAIR_TABLE addr=0x085711B0 size=0x1C count=7
+	.2byte -2, -5
+	.2byte -1, -1
+	.2byte 3, -6
+	.2byte 4, -2
+	.2byte 2, -8
+	.2byte -5, -5
+	.2byte 4, -7
 sSpriteTemplate_Fire_085711CC: @ 0x085711CC
 	@ ANALYSIS: SEMANTIC_SPRITE_TEMPLATE addr=0x085711CC size=0x18
 	rodata_sprite_template 0x27D9, 0x27D9, gOamData_AffineOff_ObjNormal_32x32, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_0810A260
@@ -463,20 +458,16 @@ sAnims_Fire_0857124C: @ 0x0857124C
 sSpriteTemplate_Fire_08571250: @ 0x08571250
 	@ ANALYSIS: SEMANTIC_SPRITE_TEMPLATE addr=0x08571250 size=0x18
 	rodata_sprite_template 0x27F8, 0x27F8, gOamData_AffineOff_ObjNormal_32x32, sAnims_Fire_0857124C, 0, gDummySpriteAffineAnimTable, sub_0810A500
-	@ pret/pokeemerald-jp direct xref for 0x08571268: fire.s: sub_0810A8E4
-	.globl gFireData_08571268
-gFireData_08571268: @ 0x08571268
-	@ analyzed canonical ROM range 0x08571268-0x08571277
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.byte 0xFF, 0xFF, 0x00, 0x01, 0x01, 0x00, 0x00, 0xFF, 0xFF, 0x01, 0x01, 0x00, 0x00, 0xFF, 0x00, 0x01
-	@ pret/pokeemerald-jp direct xref for 0x08571278: fire.s: sub_0810A8E4
-	.globl gFireData_08571278
-gFireData_08571278: @ 0x08571278
-	@ sub_0810A8E4 indexes this prefix as signed bytes modulo 10; the final 6 bytes remain unproven.
-	@ ANALYSIS: RAW_BLOCK addr=0x08571278 size=0x10
-	.byte 0xFF, 0x00, 0x01, 0x00, 0xFF, 0x01, 0x00, 0xFF
-	.byte 0x00, 0x01, 0x00, 0xFF, 0x00, 0x01, 0x00, 0x01
+	@ Shake direction pattern 0; only indices 0..9 are accessed by sub_0810A8E4.
+	.globl sShakeDirsPattern0
+sShakeDirsPattern0: @ 0x08571268
+	@ ANALYSIS: SEMANTIC_S8_LOOKUP_TABLE addr=0x08571268 size=0x10 count=16
+	.byte -1, -1, 0, 1, 1, 0, 0, -1, -1, 1, 1, 0, 0, -1, 0, 1
+	@ Shake direction pattern 1; only indices 0..9 are accessed by sub_0810A8E4.
+	.globl sShakeDirsPattern1
+sShakeDirsPattern1: @ 0x08571278
+	@ ANALYSIS: SEMANTIC_S8_LOOKUP_TABLE addr=0x08571278 size=0x10 count=16
+	.byte -1, 0, 1, 0, -1, 1, 0, -1, 0, 1, 0, -1, 0, 1, 0, 1
 	@ ElectricSpark AnimCmd sequence and one-entry animation table.
 	@ ANALYSIS: SEMANTIC_ANIM_CMD_TABLE addr=0x08571288 size=0x1C count=1
 sAnim_ElectricSpark_08571288: @ 0x08571288
