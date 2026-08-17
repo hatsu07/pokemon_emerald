@@ -137,20 +137,39 @@ EventScriptData_JP_0821B88A:
 	.globl SealedChamber_OuterRoom_MapScripts
 SealedChamber_OuterRoom_MapScripts:
 	.byte 0x05 @ map script type; local named constant unavailable
-	.4byte 0x0821BA5B
+	.4byte SealedChamber_OuterRoom_MapScript_OnResume
 	.byte 0x03 @ map script type; local named constant unavailable
-	.4byte 0x0821BA6C
+	.4byte SealedChamber_OuterRoom_MapScript_OnTransition
 	.byte 0x01 @ map script type; local named constant unavailable
-	.4byte 0x0821BA70
+	.4byte SealedChamber_OuterRoom_MapScript_OnLoad
 	.byte 0x00 @ map scripts terminator
-	@ ANALYSIS: RAW_BLOCK size=0x56
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BA5B
-	.byte 0x40, 0x18, 0x46, 0xFF, 0x0C, 0x00, 0x2C, 0x00, 0xC4, 0x18, 0x46, 0xFF, 0x0C, 0x00, 0x2C, 0x00
-	.byte 0x02, 0x29, 0xBC, 0x08, 0x02, 0x2B, 0xAF, 0x08, 0x07, 0x00, 0x7A, 0xBA, 0x21, 0x08, 0x02, 0xA2
-	.byte 0x09, 0x00, 0x01, 0x00, 0x29, 0x02, 0x01, 0x00, 0xA2, 0x0A, 0x00, 0x01, 0x00, 0x29, 0x02, 0x01
-	.byte 0x00, 0xA2, 0x0B, 0x00, 0x01, 0x00, 0x29, 0x02, 0x01, 0x00, 0xA2, 0x09, 0x00, 0x02, 0x00, 0x35
-	.byte 0x02, 0x01, 0x00, 0xA2, 0x0A, 0x00, 0x02, 0x00, 0x35, 0x02, 0x01, 0x00, 0xA2, 0x0B, 0x00, 0x02
-	.byte 0x00, 0x35, 0x02, 0x01, 0x00, 0x03
+	@ ANALYSIS: PROVEN_MAP_SCRIPT_BODY addr=0x0821BA5B size=0x56 source=MapScripts_CFG
+	.globl SealedChamber_OuterRoom_MapScript_OnResume
+SealedChamber_OuterRoom_MapScript_OnResume:
+	@ setdivewarp: map_group=0x18 map_num=0x46 warp=0xFF x=0x000C y=0x002C
+	.byte 0x40, 0x18, 0x46, 0xFF
+	.2byte 0x000C, 0x002C
+	@ setescapewarp: map_group=0x18 map_num=0x46 warp=0xFF x=0x000C y=0x002C
+	.byte 0xC4, 0x18, 0x46, 0xFF
+	.2byte 0x000C, 0x002C
+	end
+	.globl SealedChamber_OuterRoom_MapScript_OnTransition
+SealedChamber_OuterRoom_MapScript_OnTransition:
+	setflag 0x08BC
+	end
+	.globl SealedChamber_OuterRoom_MapScript_OnLoad
+SealedChamber_OuterRoom_MapScript_OnLoad:
+	checkflag 0x08AF
+	call_if 0x00, SealedChamber_OuterRoom_MapScript_0821BA7A
+	end
+SealedChamber_OuterRoom_MapScript_0821BA7A:
+	setmetatile 0x0009, 0x0001, 0x0229, 0x0001
+	setmetatile 0x000A, 0x0001, 0x0229, 0x0001
+	setmetatile 0x000B, 0x0001, 0x0229, 0x0001
+	setmetatile 0x0009, 0x0002, 0x0235, 0x0001
+	setmetatile 0x000A, 0x0002, 0x0235, 0x0001
+	setmetatile 0x000B, 0x0002, 0x0235, 0x0001
+	return
 	lockall
 	@ Recovered proven split event command at 0x0821BAB2
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BAB2 raw_tail=0x1 continuation=0x4; reachability not claimed
@@ -335,11 +354,13 @@ SealedChamber_OuterRoom_MapScripts:
 	.globl ScorchedSlab_MapScripts
 ScorchedSlab_MapScripts:
 	.byte 0x03 @ map script type; local named constant unavailable
-	.4byte 0x0821BBDC
+	.4byte ScorchedSlab_MapScript_OnTransition
 	.byte 0x00 @ map scripts terminator
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BBDC
-	.byte 0x29, 0xB8, 0x08, 0x02
+	@ ANALYSIS: PROVEN_MAP_SCRIPT_BODY addr=0x0821BBDC size=0x4 source=MapScripts_CFG
+	.globl ScorchedSlab_MapScript_OnTransition
+ScorchedSlab_MapScript_OnTransition:
+	setflag 0x08B8
+	end
 	@ ANALYSIS: PROVEN_MAP_SCRIPTS_TABLE addr=0x0821BBE0 size=0x1 header_referenced=YES
 	.globl AquaHideout_UnusedRubyMap1_MapScripts
 AquaHideout_UnusedRubyMap1_MapScripts:
@@ -356,30 +377,63 @@ AquaHideout_UnusedRubyMap3_MapScripts:
 	.globl SkyPillar_Entrance_MapScripts
 SkyPillar_Entrance_MapScripts:
 	.byte 0x03 @ map script type; local named constant unavailable
-	.4byte 0x0821BBE9
+	.4byte SkyPillar_Entrance_MapScript_OnTransition
 	.byte 0x00 @ map scripts terminator
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BBE9
-	.byte 0x29, 0xBE, 0x08, 0x02
+	@ ANALYSIS: PROVEN_MAP_SCRIPT_BODY addr=0x0821BBE9 size=0x4 source=MapScripts_CFG
+	.globl SkyPillar_Entrance_MapScript_OnTransition
+SkyPillar_Entrance_MapScript_OnTransition:
+	setflag 0x08BE
+	end
 	@ ANALYSIS: PROVEN_MAP_SCRIPTS_TABLE addr=0x0821BBED size=0x10 header_referenced=YES
 	.globl SkyPillar_Outside_MapScripts
 SkyPillar_Outside_MapScripts:
 	.byte 0x03 @ map script type; local named constant unavailable
-	.4byte 0x0821BBFD
+	.4byte SkyPillar_Outside_MapScript_OnTransition
 	.byte 0x01 @ map script type; local named constant unavailable
-	.4byte 0x0821BC22
+	.4byte SkyPillar_Outside_MapScript_OnLoad
 	.byte 0x02 @ map script type; local named constant unavailable
-	.4byte 0x0821BC3F
+	.4byte SkyPillar_Outside_MapScript_OnFrameTable
 	.byte 0x00 @ map scripts terminator
-	@ ANALYSIS: RAW_BLOCK size=0x63
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BBFD
-	.byte 0x21, 0x5E, 0x40, 0x03, 0x00, 0x07, 0x01, 0x14, 0xBC, 0x21, 0x08, 0x21, 0x5E, 0x40, 0x04, 0x00
-	.byte 0x07, 0x04, 0x18, 0xBC, 0x21, 0x08, 0x02, 0x29, 0x00, 0x40, 0x03, 0x2B, 0x8A, 0x08, 0x07, 0x01
-	.byte 0x06, 0x31, 0x24, 0x08, 0x03, 0x2B, 0x37, 0x01, 0x07, 0x01, 0x2C, 0xBC, 0x21, 0x08, 0x02, 0xA2
-	.byte 0x0E, 0x00, 0x04, 0x00, 0xAA, 0x02, 0x00, 0x00, 0xA2, 0x0E, 0x00, 0x05, 0x00, 0xB2, 0x02, 0x00
-	.byte 0x00, 0x03, 0x5E, 0x40, 0x03, 0x00, 0x49, 0xBC, 0x21, 0x08, 0x00, 0x00, 0x69, 0x4F, 0x01, 0x00
-	.byte 0x18, 0xBD, 0x21, 0x08, 0x51, 0x00, 0x00, 0x4F, 0xFF, 0x00, 0x27, 0x36, 0x24, 0x08, 0x51, 0x00
-	.byte 0x00, 0x0F, 0x00
+	@ ANALYSIS: PROVEN_MAP_SCRIPT_BODY addr=0x0821BBFD size=0x42 source=MapScripts_CFG
+	.globl SkyPillar_Outside_MapScript_OnTransition
+SkyPillar_Outside_MapScript_OnTransition:
+	compare_var_to_value 0x405E, 0x0003
+	call_if 0x01, SkyPillar_Outside_MapScript_0821BC14
+	compare_var_to_value 0x405E, 0x0004
+	call_if 0x04, SkyPillar_Outside_MapScript_0821BC18
+	end
+SkyPillar_Outside_MapScript_0821BC14:
+	setflag 0x4000
+	return
+SkyPillar_Outside_MapScript_0821BC18:
+	checkflag 0x088A
+	call_if 0x01, 0x08243106
+	return
+	.globl SkyPillar_Outside_MapScript_OnLoad
+SkyPillar_Outside_MapScript_OnLoad:
+	checkflag 0x0137
+	call_if 0x01, SkyPillar_Outside_MapScript_0821BC2C
+	end
+SkyPillar_Outside_MapScript_0821BC2C:
+	setmetatile 0x000E, 0x0004, 0x02AA, 0x0000
+	setmetatile 0x000E, 0x0005, 0x02B2, 0x0000
+	return
+	@ ANALYSIS: PROVEN_MAP_SCRIPT_CONDITION_TABLE addr=0x0821BC3F size=0xA source=MapScripts_type_2
+	.globl SkyPillar_Outside_MapScript_OnFrameTable
+SkyPillar_Outside_MapScript_OnFrameTable:
+	.2byte 0x405E, 0x0003
+	.4byte SkyPillar_Outside_MapScript_0821BC49
+	.2byte 0x0000 @ condition table terminator
+	@ ANALYSIS: PROVEN_MAP_SCRIPT_BODY addr=0x0821BC49 size=0x15 source=MapScripts_CFG
+SkyPillar_Outside_MapScript_0821BC49:
+	lockall
+	applymovement 0x0001, 0x0821BD18
+	waitmovement 0x0000
+	applymovement 0x00FF, 0x08243627
+	waitmovement 0x0000
+	@ ANALYSIS: RAW_BLOCK size=0x2
+	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BC5E
+	.byte 0x0F, 0x00
 	.4byte gText_Rom_21BD56 @ ROM pointer 0x0821BD56
 	@ ANALYSIS: RAW_BLOCK size=0x21
 	@ ANALYSIS: UNPROVEN_RAW addr=0x0821BC64
