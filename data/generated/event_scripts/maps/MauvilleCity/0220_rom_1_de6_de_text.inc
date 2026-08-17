@@ -587,7 +587,7 @@ EventScript_JP_081DEBD4: @ 0x081DEBD4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x0824362F
+	.4byte Movement_0824362F
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -783,7 +783,7 @@ EventScript_JP_081DED41: @ 0x081DED41
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x08243631
+	.4byte Movement_08243631
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000

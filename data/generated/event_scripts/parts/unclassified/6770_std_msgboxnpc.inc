@@ -1437,8 +1437,7 @@ Movement_0824344A:
 	setmetatile 0x0006, 0x000D, 0x020E, 0x0001
 	setmetatile 0x0007, 0x000D, 0x020E, 0x0001
 	return
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08243619
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243619 size=0x2 independent_evidence=YES
 	.byte 0x57, 0xFE
 	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x0824361B size=0x2 source_backed=YES
 	.byte 0x56, 0xFE
@@ -1459,15 +1458,26 @@ Movement_0824344A:
 	.byte 0x28, 0xFE
 	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x0824362D size=0x2 origins=0x08242A3D
 	.byte 0x25, 0xFE
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: UNPROVEN_RAW addr=0x0824362F
-	.byte 0x03, 0xFE, 0x02, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x0824362F size=0x2 independent_evidence=YES
+Movement_0824362F:
+	.byte 0x03, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243631 size=0x2 independent_evidence=YES
+Movement_08243631:
+	.byte 0x02, 0xFE
 	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243633 size=0x2 source_backed=YES
 Movement_08243633:
 	.byte 0x00, 0xFE
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: UNPROVEN_RAW addr=0x08243635
-	.byte 0x01, 0xFE, 0x1D, 0xFE, 0x1F, 0xFE, 0x20, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243635 size=0x2 independent_evidence=YES
+	.byte 0x01, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243637 size=0x2 independent_evidence=YES
+Movement_08243637:
+	.byte 0x1D, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243639 size=0x2 independent_evidence=YES
+Movement_08243639:
+	.byte 0x1F, 0xFE
+	@ ANALYSIS: RAW_BLOCK size=0x2
+	@ ANALYSIS: UNPROVEN_RAW addr=0x0824363B
+	.byte 0x20, 0xFE
 	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x0824363D size=0x7 origins=0x082434F8
 	.byte 0x09, 0x09, 0x09, 0x09, 0x09, 0x09, 0xFE
 	@ ANALYSIS: RAW_BLOCK size=0x5
