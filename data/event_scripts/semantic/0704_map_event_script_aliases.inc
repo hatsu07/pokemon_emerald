@@ -4203,6 +4203,20 @@
 .globl CableClub_EventScript_MysteryGiftMan
 .set CableClub_EventScript_MysteryGiftMan, gText_Rom_2467B0 + 0x51
 
+@ Proven internal event-script entry points reached by control flow.
+.globl EventScript_JP_08246B0E
+.set EventScript_JP_08246B0E, gText_Rom_2467B0 + 0x35E
+.globl EventScript_JP_08246E94
+.set EventScript_JP_08246E94, gText_Rom_2467B0 + 0x6E4
+.globl EventScript_JP_08246FD8
+.set EventScript_JP_08246FD8, gText_Rom_2467B0 + 0x828
+.globl EventScript_JP_08247007
+.set EventScript_JP_08247007, gText_Rom_2467B0 + 0x857
+.globl EventScript_JP_08247014
+.set EventScript_JP_08247014, gText_Rom_2467B0 + 0x864
+.globl EventScript_JP_0824701E
+.set EventScript_JP_0824701E, gText_Rom_2467B0 + 0x86E
+
 @ 0x08247053
 .globl EventScript_BattleColosseum_2P_PlayerSpot0
 
