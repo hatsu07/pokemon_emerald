@@ -134,7 +134,7 @@
       "png_rel": "graphics/battle_interface/unused_window3_jp.png",
       "roundtrip_ok": true,
       "key": "stream_0000",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0000.lz",
+      "build_rel": "build/graphics/battle_interface/exact_lz/unused_window3_jp.gfx.lz",
       "slot_sha1": "b28b2638c1083d81609aecbec21eb9b8d987a1e6",
       "exact_plan": {
         "decompressed_size": 1536,
@@ -561,7 +561,7 @@
       "png_rel": "graphics/battle_interface/unused_window4_jp.png",
       "roundtrip_ok": true,
       "key": "stream_0001",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0001.lz",
+      "build_rel": "build/graphics/battle_interface/exact_lz/unused_window4_jp.gfx.lz",
       "slot_sha1": "aea6ba8e3e0500e159c408f8913adb0163e5592f",
       "exact_plan": {
         "decompressed_size": 4096,
@@ -1592,7 +1592,7 @@
       "png_rel": "graphics/battle_anims/sprites/fury_swipes.png",
       "roundtrip_ok": true,
       "key": "stream_0002",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0002.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/fury_swipes.gfx.lz",
       "slot_sha1": "049c25f80b3a2b3e869ae0f084700908aafbdee8",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -2431,7 +2431,7 @@
       "png_rel": "graphics/battle_anims/sprites/fury_swipes_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0003",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0003.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/fury_swipes_palette.pal.lz",
       "slot_sha1": "cb86e525a89529be44e5e86a4bcbc0e6f5bf0610",
       "exact_plan": {
         "decompressed_size": 32,
@@ -2466,7 +2466,7 @@
       "png_rel": "graphics/battle_anims/sprites/vine_2.png",
       "roundtrip_ok": true,
       "key": "stream_0004",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0004.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/vine_2.gfx.lz",
       "slot_sha1": "2f9927f7a0f9a4266c7acf9eafd7d674ce510e43",
       "exact_plan": {
         "decompressed_size": 2560,
@@ -3377,7 +3377,7 @@
       "png_rel": "graphics/battle_anims/sprites/vine_2_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0005",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0005.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/vine_2_palette.pal.lz",
       "slot_sha1": "250f5e9dbfcd01aff1eee98ebbda24ff0eb429d8",
       "exact_plan": {
         "decompressed_size": 32,
@@ -3412,7 +3412,7 @@
       "png_rel": "graphics/battle_anims/sprites/teeth.png",
       "roundtrip_ok": true,
       "key": "stream_0006",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0006.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/teeth.gfx.lz",
       "slot_sha1": "3ae9d019a42241332d0f65357d13a81c2326cee8",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -4079,7 +4079,7 @@
       "png_rel": "graphics/battle_anims/sprites/teeth_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0007",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0007.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/teeth_palette.pal.lz",
       "slot_sha1": "177c74adbf741ba31eeb431031d9e7287cd4b581",
       "exact_plan": {
         "decompressed_size": 32,
@@ -4114,7 +4114,7 @@
       "png_rel": "graphics/battle_anims/sprites/bone_2.png",
       "roundtrip_ok": true,
       "key": "stream_0008",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0008.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/bone_2.gfx.lz",
       "slot_sha1": "2feff49e428ae130435a5f196b19b0d41e41c18a",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -4897,7 +4897,7 @@
       "png_rel": "graphics/battle_anims/sprites/bone_2_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0009",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0009.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/bone_2_palette.pal.lz",
       "slot_sha1": "0ec6eef89bfd742d6bdb714f7440b190f600d04b",
       "exact_plan": {
         "decompressed_size": 32,
@@ -4927,7 +4927,7 @@
       "png_rel": "graphics/battle_anims/sprites/white_bag.png",
       "roundtrip_ok": true,
       "key": "stream_0010",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0010.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/white_bag.gfx.lz",
       "slot_sha1": "3e4dc0a87eb8e99bae021ab9bf8bc0fdc7440d37",
       "exact_plan": {
         "decompressed_size": 512,
@@ -5114,7 +5114,7 @@
       "png_rel": "graphics/battle_anims/sprites/white_bag_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0011",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0011.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/white_bag_palette.pal.lz",
       "slot_sha1": "8b516572b46ee2169c2cc861815d0f4ea880ec3b",
       "exact_plan": {
         "decompressed_size": 32,
@@ -5144,7 +5144,7 @@
       "png_rel": "graphics/battle_anims/sprites/unknown.png",
       "roundtrip_ok": true,
       "key": "stream_0012",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0012.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/unknown.gfx.lz",
       "slot_sha1": "a30ea68393a94207e33f5a91d141c0eecf023caf",
       "exact_plan": {
         "decompressed_size": 64,
@@ -5213,7 +5213,7 @@
       "png_rel": "graphics/battle_anims/sprites/unknown_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0013",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0013.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/unknown_palette.pal.lz",
       "slot_sha1": "e34fcecab328685a448c84de468a8f0a506ec639",
       "exact_plan": {
         "decompressed_size": 32,
@@ -5249,7 +5249,7 @@
       "png_rel": "graphics/battle_anims/sprites/purple_coral.png",
       "roundtrip_ok": true,
       "key": "stream_0014",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0014.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/purple_coral.gfx.lz",
       "slot_sha1": "424eda6ab182ad82010dbf7595129ee248a7de3d",
       "exact_plan": {
         "decompressed_size": 384,
@@ -5496,7 +5496,7 @@
       "png_rel": "graphics/battle_anims/sprites/purple_coral_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0015",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0015.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/purple_coral_palette.pal.lz",
       "slot_sha1": "889a614c2b76dc27e80358d67d7dfdb93640fbcb",
       "exact_plan": {
         "decompressed_size": 32,
@@ -5531,7 +5531,7 @@
       "png_rel": "graphics/battle_anims/sprites/purple_droplet.png",
       "roundtrip_ok": true,
       "key": "stream_0016",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0016.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/purple_droplet.gfx.lz",
       "slot_sha1": "0d8d4c771ee13f00841b9788f31e89cc07ded05d",
       "exact_plan": {
         "decompressed_size": 1536,
@@ -6034,7 +6034,7 @@
       "png_rel": "graphics/battle_anims/sprites/shock_2.png",
       "roundtrip_ok": true,
       "key": "stream_0017",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0017.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/shock_2.gfx.lz",
       "slot_sha1": "0a1b4dbe0c78b4302027f87ec0c9c6fb544214a8",
       "exact_plan": {
         "decompressed_size": 1536,
@@ -6849,7 +6849,7 @@
       "png_rel": "graphics/battle_anims/sprites/shock_2_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0018",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0018.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/shock_2_palette.pal.lz",
       "slot_sha1": "2713255c7cc09c42aa48d951d8df256e91cedde2",
       "exact_plan": {
         "decompressed_size": 32,
@@ -6879,7 +6879,7 @@
       "png_rel": "graphics/battle_anims/sprites/closing_eye_2.png",
       "roundtrip_ok": true,
       "key": "stream_0019",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0019.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/closing_eye_2.gfx.lz",
       "slot_sha1": "c48a0b15cc667647e9873a46f7ce4e9b1d2f0001",
       "exact_plan": {
         "decompressed_size": 512,
@@ -7066,7 +7066,7 @@
       "png_rel": "graphics/battle_anims/sprites/closing_eye_2_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0020",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0020.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/closing_eye_2_palette.pal.lz",
       "slot_sha1": "ba8715baa9065c28c4f5072d89fa2348bbb9a141",
       "exact_plan": {
         "decompressed_size": 32,
@@ -7101,7 +7101,7 @@
       "png_rel": "graphics/battle_anims/sprites/metal_ball.png",
       "roundtrip_ok": true,
       "key": "stream_0021",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0021.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/metal_ball.gfx.lz",
       "slot_sha1": "8eca01795ca7e48c663b7e67f577bf3edd507aeb",
       "exact_plan": {
         "decompressed_size": 128,
@@ -7192,7 +7192,7 @@
       "png_rel": "graphics/battle_anims/sprites/metal_ball_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0022",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0022.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/metal_ball_palette.pal.lz",
       "slot_sha1": "ef032b93960101e279e04ebf9a8d31486dcb0729",
       "exact_plan": {
         "decompressed_size": 32,
@@ -7227,7 +7227,7 @@
       "png_rel": "graphics/battle_anims/sprites/monster_doll.png",
       "roundtrip_ok": true,
       "key": "stream_0023",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0023.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/monster_doll.gfx.lz",
       "slot_sha1": "6c8a15548b7349bed30302a4a2a9e7ec22b0cb48",
       "exact_plan": {
         "decompressed_size": 512,
@@ -7482,7 +7482,7 @@
       "png_rel": "graphics/battle_anims/sprites/monster_doll_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0024",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0024.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/monster_doll_palette.pal.lz",
       "slot_sha1": "adc0804e7dc32337581c76bf610e41eb5616efb7",
       "exact_plan": {
         "decompressed_size": 32,
@@ -7517,7 +7517,7 @@
       "png_rel": "graphics/battle_anims/sprites/whirlwind.png",
       "roundtrip_ok": true,
       "key": "stream_0025",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0025.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/whirlwind.gfx.lz",
       "slot_sha1": "ad0dbcef981cf805941f737391b07177d0a7feef",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -8228,7 +8228,7 @@
       "png_rel": "graphics/battle_anims/sprites/whirlwind_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0026",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0026.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/whirlwind_palette.pal.lz",
       "slot_sha1": "e4de266c3143f2b33c43a32633087ab99d464f4b",
       "exact_plan": {
         "decompressed_size": 32,
@@ -8263,7 +8263,7 @@
       "png_rel": "graphics/battle_anims/sprites/whirlwind_2.png",
       "roundtrip_ok": true,
       "key": "stream_0027",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0027.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/whirlwind_2.gfx.lz",
       "slot_sha1": "c626cbeb6fb00ffe7e1796862149ada029b00ccb",
       "exact_plan": {
         "decompressed_size": 128,
@@ -8350,7 +8350,7 @@
       "png_rel": "graphics/battle_anims/sprites/explosion_4.png",
       "roundtrip_ok": true,
       "key": "stream_0028",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0028.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/explosion_4.gfx.lz",
       "slot_sha1": "efb9dbc958419a61d6846e3ce430a88843f1ec85",
       "exact_plan": {
         "decompressed_size": 2560,
@@ -9329,7 +9329,7 @@
       "png_rel": "graphics/battle_anims/sprites/explosion_4_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0029",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0029.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/explosion_4_palette.pal.lz",
       "slot_sha1": "cb86e525a89529be44e5e86a4bcbc0e6f5bf0610",
       "exact_plan": {
         "decompressed_size": 32,
@@ -9364,7 +9364,7 @@
       "png_rel": "graphics/battle_anims/sprites/explosion_5.png",
       "roundtrip_ok": true,
       "key": "stream_0030",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0030.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/explosion_5.gfx.lz",
       "slot_sha1": "13ef8034e60139ed4bfd79fe5bd09237e8a29a7f",
       "exact_plan": {
         "decompressed_size": 640,
@@ -9771,7 +9771,7 @@
       "png_rel": "graphics/battle_anims/sprites/tongue.png",
       "roundtrip_ok": true,
       "key": "stream_0031",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0031.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/tongue.gfx.lz",
       "slot_sha1": "62c66f1ba8af5679fe5304348ffe5f92e33392a8",
       "exact_plan": {
         "decompressed_size": 640,
@@ -10034,7 +10034,7 @@
       "png_rel": "graphics/battle_anims/sprites/tongue_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0032",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0032.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/tongue_palette.pal.lz",
       "slot_sha1": "8c067c0f4b96a40c9b7a5c2424428ef6734b1626",
       "exact_plan": {
         "decompressed_size": 32,
@@ -10069,7 +10069,7 @@
       "png_rel": "graphics/battle_anims/sprites/smoke.png",
       "roundtrip_ok": true,
       "key": "stream_0033",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0033.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/smoke.gfx.lz",
       "slot_sha1": "7b477a5b16a3f16bcad9fb54b14189e9c6dfdb7f",
       "exact_plan": {
         "decompressed_size": 256,
@@ -10184,7 +10184,7 @@
       "png_rel": "graphics/battle_anims/sprites/smoke_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0034",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0034.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/smoke_palette.pal.lz",
       "slot_sha1": "aac0f462940031c3fcafd0d71a639596bb1a99b3",
       "exact_plan": {
         "decompressed_size": 32,
@@ -10219,7 +10219,7 @@
       "png_rel": "graphics/battle_anims/sprites/smoke_2.png",
       "roundtrip_ok": true,
       "key": "stream_0035",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0035.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/smoke_2.gfx.lz",
       "slot_sha1": "efc2de8deff5d9f1b88bd6f367a9acc240e23fab",
       "exact_plan": {
         "decompressed_size": 512,
@@ -10446,7 +10446,7 @@
       "png_rel": "graphics/battle_anims/sprites/blue_flames.png",
       "roundtrip_ok": true,
       "key": "stream_0036",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0036.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/blue_flames.gfx.lz",
       "slot_sha1": "ba2cc68957ada0d90df38d8a6a9285a0f4e9a5a9",
       "exact_plan": {
         "decompressed_size": 1024,
@@ -10981,7 +10981,7 @@
       "png_rel": "graphics/battle_anims/sprites/blue_flames_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0037",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0037.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/blue_flames_palette.pal.lz",
       "slot_sha1": "17d9e8e620c6200f3917dea150d83e354711c2c0",
       "exact_plan": {
         "decompressed_size": 32,
@@ -11016,7 +11016,7 @@
       "png_rel": "graphics/battle_anims/sprites/blue_flames_2.png",
       "roundtrip_ok": true,
       "key": "stream_0038",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0038.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/blue_flames_2.gfx.lz",
       "slot_sha1": "41e8d384148cd53f87aadd3e9b56d50df4062e3d",
       "exact_plan": {
         "decompressed_size": 512,
@@ -11259,7 +11259,7 @@
       "png_rel": "graphics/contest/japanese/composite_1.png",
       "roundtrip_ok": true,
       "key": "stream_0039",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0039.lz",
+      "build_rel": "build/graphics/contest/japanese/exact_lz/composite_1.gfx.lz",
       "slot_sha1": "84963af0f0d24d32a8e680bb24585945cd6e6bdd",
       "exact_plan": {
         "decompressed_size": 8192,
@@ -14612,7 +14612,7 @@
       "png_rel": "graphics/contest/japanese/palette_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0040",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0040.lz",
+      "build_rel": "build/graphics/contest/japanese/exact_lz/palette_palette.pal.lz",
       "slot_sha1": "403284524a80cbaae613b170c09371bc3146ecdb",
       "exact_plan": {
         "decompressed_size": 512,
@@ -14758,7 +14758,7 @@
       "png_rel": "graphics/contest/japanese/bg.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0041",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0041.lz",
+      "build_rel": "build/graphics/contest/japanese/exact_lz/bg.tilemap.lz",
       "slot_sha1": "e8b029bcc44f477bc801d7cdd9b4767a9f1cddd6",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -15227,7 +15227,7 @@
       "png_rel": "graphics/contest/japanese/windows.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0042",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0042.lz",
+      "build_rel": "build/graphics/contest/japanese/exact_lz/windows.tilemap.lz",
       "slot_sha1": "90f3520e30a48c1ebaca4972068fef7d9253d534",
       "exact_plan": {
         "decompressed_size": 4096,
@@ -16246,7 +16246,7 @@
       "png_rel": "graphics/contest/japanese/composite_2.png",
       "roundtrip_ok": true,
       "key": "stream_0043",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0043.lz",
+      "build_rel": "build/graphics/contest/japanese/exact_lz/composite_2.gfx.lz",
       "slot_sha1": "e42227783da7e16ddcde0e9711bdb54987c9b8a5",
       "exact_plan": {
         "decompressed_size": 16384,
@@ -21459,7 +21459,7 @@
       "png_rel": "graphics/contest/interface_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0044",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0044.lz",
+      "build_rel": "build/graphics/contest/exact_lz/interface_palette.pal.lz",
       "slot_sha1": "19f37f7a8575129705bca92f4f834a394caef4e5",
       "exact_plan": {
         "decompressed_size": 512,
@@ -21585,7 +21585,7 @@
       "png_rel": "graphics/contest/audience.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0045",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0045.lz",
+      "build_rel": "build/graphics/contest/exact_lz/audience.tilemap.lz",
       "slot_sha1": "25b1a2ba8fcaf29382c687e03fb8df70d40cf6d5",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -22098,7 +22098,7 @@
       "png_rel": "graphics/contest/interface.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0046",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0046.lz",
+      "build_rel": "build/graphics/contest/exact_lz/interface.tilemap.lz",
       "slot_sha1": "09f020994418356b615d8d8cce774078d7ac5995",
       "exact_plan": {
         "decompressed_size": 4096,
@@ -23119,7 +23119,7 @@
       "png_rel": "graphics/contest/japanese/interface.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0047",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0047.lz",
+      "build_rel": "build/graphics/contest/japanese/exact_lz/interface.tilemap.lz",
       "slot_sha1": "349069955fba28565b1f75ec1a59074395f62fb7",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -23604,7 +23604,7 @@
       "png_rel": "graphics/contest/japanese/audience.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0048",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0048.lz",
+      "build_rel": "build/graphics/contest/japanese/exact_lz/audience.tilemap.lz",
       "slot_sha1": "981116123678257a01cbaa6101e164a30238fd6b",
       "exact_plan": {
         "decompressed_size": 8192,
@@ -25461,7 +25461,7 @@
       "png_rel": "graphics/contest/curtain.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0049",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0049.lz",
+      "build_rel": "build/graphics/contest/exact_lz/curtain.tilemap.lz",
       "slot_sha1": "c2b4eaab7714950e151ae2a3856426807d39100f",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -25952,7 +25952,7 @@
       "png_rel": "graphics/contest/interface.png",
       "roundtrip_ok": true,
       "key": "stream_0050",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0050.lz",
+      "build_rel": "build/graphics/contest/exact_lz/interface.gfx.lz",
       "slot_sha1": "01317a820b175d4179f489ec0cbaf158fad1f629",
       "exact_plan": {
         "decompressed_size": 8192,
@@ -29587,7 +29587,7 @@
       "png_rel": "graphics/contest/audience.png",
       "roundtrip_ok": true,
       "key": "stream_0051",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0051.lz",
+      "build_rel": "build/graphics/contest/exact_lz/audience.gfx.lz",
       "slot_sha1": "98916781468e2283f1e3c6b99d13f689bd6b279d",
       "exact_plan": {
         "decompressed_size": 8192,
@@ -32266,7 +32266,7 @@
       "png_rel": "graphics/contest/faces.png",
       "roundtrip_ok": true,
       "key": "stream_0052",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0052.lz",
+      "build_rel": "build/graphics/contest/exact_lz/faces.gfx.lz",
       "slot_sha1": "0a69eff03e1a5fd805aac360a66d4cdd7fd60c08",
       "exact_plan": {
         "decompressed_size": 384,
@@ -32489,7 +32489,7 @@
       "png_rel": "graphics/contest/judge_symbols.png",
       "roundtrip_ok": true,
       "key": "stream_0053",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0053.lz",
+      "build_rel": "build/graphics/contest/exact_lz/judge_symbols.gfx.lz",
       "slot_sha1": "6ecc13714cafe1b9449c639854e2efc5d5798637",
       "exact_plan": {
         "decompressed_size": 896,
@@ -32950,7 +32950,7 @@
       "png_rel": "graphics/contest/judge_symbols_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0054",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0054.lz",
+      "build_rel": "build/graphics/contest/exact_lz/judge_symbols_palette.pal.lz",
       "slot_sha1": "64db665737f93f75735b460e2cf3838dbd95f7bb",
       "exact_plan": {
         "decompressed_size": 32,
@@ -32981,7 +32981,7 @@
       "png_rel": "graphics/contest/japanese/voltage.png",
       "roundtrip_ok": true,
       "key": "stream_0055",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0055.lz",
+      "build_rel": "build/graphics/contest/japanese/exact_lz/voltage.gfx.lz",
       "slot_sha1": "0b805aef6bf943c44be38e5ae011810692db470e",
       "exact_plan": {
         "decompressed_size": 1152,
@@ -33354,7 +33354,7 @@
       "png_rel": "graphics/contest/japanese/voltage_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0056",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0056.lz",
+      "build_rel": "build/graphics/contest/japanese/exact_lz/voltage_palette.pal.lz",
       "slot_sha1": "d09b6745a407ab0892942e0b1038e7876d0f72bb",
       "exact_plan": {
         "decompressed_size": 32,
@@ -33385,7 +33385,7 @@
       "png_rel": "graphics/contest/results_screen/tiles.png",
       "roundtrip_ok": true,
       "key": "stream_0057",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0057.lz",
+      "build_rel": "build/graphics/contest/results_screen/exact_lz/tiles.gfx.lz",
       "slot_sha1": "627a2d9981a67d7d5e1734547e7384e99c22d31e",
       "exact_plan": {
         "decompressed_size": 8192,
@@ -36402,7 +36402,7 @@
       "png_rel": "graphics/contest/results_screen/winner_banner.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0058",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0058.lz",
+      "build_rel": "build/graphics/contest/results_screen/exact_lz/winner_banner.tilemap.lz",
       "slot_sha1": "b73cc88068e87d2d892a1bdac708cac46611c605",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -36903,7 +36903,7 @@
       "png_rel": "graphics/contest/results_screen/interface.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0059",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0059.lz",
+      "build_rel": "build/graphics/contest/results_screen/exact_lz/interface.tilemap.lz",
       "slot_sha1": "72f6d3edda7238c16d8000b12135580cee33f144",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -37420,7 +37420,7 @@
       "png_rel": "graphics/contest/results_screen/bg.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0060",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0060.lz",
+      "build_rel": "build/graphics/contest/results_screen/exact_lz/bg.tilemap.lz",
       "slot_sha1": "981c1e00277420ff63fbe679ac6b2284b903bfc6",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -37909,7 +37909,7 @@
       "png_rel": "graphics/contest/results_screen/tiles_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0061",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0061.lz",
+      "build_rel": "build/graphics/contest/results_screen/exact_lz/tiles_palette.pal.lz",
       "slot_sha1": "4a217de2a70b277356ff732f4fc56ca559f21a98",
       "exact_plan": {
         "decompressed_size": 512,
@@ -38053,7 +38053,7 @@
       "png_rel": "graphics/battle_anims/sprites/impact.png",
       "roundtrip_ok": true,
       "key": "stream_0062",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0062.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/impact.gfx.lz",
       "slot_sha1": "8d4a1d973caf15404860ca934781ca4f68ca0ac7",
       "exact_plan": {
         "decompressed_size": 512,
@@ -38368,7 +38368,7 @@
       "png_rel": "graphics/battle_anims/sprites/impact_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0063",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0063.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/impact_palette.pal.lz",
       "slot_sha1": "65bb2d457000f84a167ba08a2eb512a1c8979e15",
       "exact_plan": {
         "decompressed_size": 32,
@@ -38403,7 +38403,7 @@
       "png_rel": "graphics/battle_anims/sprites/particles.png",
       "roundtrip_ok": true,
       "key": "stream_0064",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0064.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/particles.gfx.lz",
       "slot_sha1": "73ef4524493089a0aef2e6de61874b64418bc6ec",
       "exact_plan": {
         "decompressed_size": 256,
@@ -38542,7 +38542,7 @@
       "png_rel": "graphics/battle_anims/sprites/circle_impact.png",
       "roundtrip_ok": true,
       "key": "stream_0065",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0065.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/circle_impact.gfx.lz",
       "slot_sha1": "395e674a3c6175662362dab70ab2cd8fc8872ad0",
       "exact_plan": {
         "decompressed_size": 32,
@@ -38585,7 +38585,7 @@
       "png_rel": "graphics/battle_anims/sprites/circle_impact_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0066",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0066.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/circle_impact_palette.pal.lz",
       "slot_sha1": "72c0a9d57c94a2ba041ea94998a7f54d4f119400",
       "exact_plan": {
         "decompressed_size": 32,
@@ -38615,7 +38615,7 @@
       "png_rel": "graphics/battle_anims/sprites/scratch.png",
       "roundtrip_ok": true,
       "key": "stream_0067",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0067.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/scratch.gfx.lz",
       "slot_sha1": "d81297e3a1727a45cf10dd95e098126936db75a6",
       "exact_plan": {
         "decompressed_size": 2560,
@@ -39502,7 +39502,7 @@
       "png_rel": "graphics/battle_anims/sprites/sharp_teeth.png",
       "roundtrip_ok": true,
       "key": "stream_0068",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0068.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/sharp_teeth.gfx.lz",
       "slot_sha1": "7785f052acc70ac4a4a34aed98fd9ee2d29d9b66",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -40161,7 +40161,7 @@
       "png_rel": "graphics/battle_anims/sprites/sharp_teeth_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0069",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0069.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/sharp_teeth_palette.pal.lz",
       "slot_sha1": "4ca2138ff3589f63089ee81f9ced64e95ab92cec",
       "exact_plan": {
         "decompressed_size": 32,
@@ -40196,7 +40196,7 @@
       "png_rel": "graphics/battle_anims/sprites/clamp.png",
       "roundtrip_ok": true,
       "key": "stream_0070",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0070.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/clamp.gfx.lz",
       "slot_sha1": "06daf72b557c1e4b81d836552be1ac081f2d9fc2",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -40803,7 +40803,7 @@
       "png_rel": "graphics/battle_anims/sprites/cut.png",
       "roundtrip_ok": true,
       "key": "stream_0071",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0071.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/cut.gfx.lz",
       "slot_sha1": "40fa2d82aaa9c52b0d0775e8356310070273fd71",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -41370,7 +41370,7 @@
       "png_rel": "graphics/battle_anims/sprites/rainbow_rings.png",
       "roundtrip_ok": true,
       "key": "stream_0072",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0072.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/rainbow_rings.gfx.lz",
       "slot_sha1": "02012f0ef48359957665c3f2a1f5461598ff2fb4",
       "exact_plan": {
         "decompressed_size": 192,
@@ -41469,7 +41469,7 @@
       "png_rel": "graphics/battle_anims/sprites/rainbow_rings_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0073",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0073.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/rainbow_rings_palette.pal.lz",
       "slot_sha1": "68482dc07fe2a6a584b08cdd1ad880b699ef2d69",
       "exact_plan": {
         "decompressed_size": 32,
@@ -41504,7 +41504,7 @@
       "png_rel": "graphics/battle_anims/sprites/ice_crystal.png",
       "roundtrip_ok": true,
       "key": "stream_0074",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0074.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/ice_crystal.gfx.lz",
       "slot_sha1": "211b7bdd6952221177332f0c8a9d4a66d3dee404",
       "exact_plan": {
         "decompressed_size": 448,
@@ -41743,7 +41743,7 @@
       "png_rel": "graphics/battle_anims/sprites/ice_crystals_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0075",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0075.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/ice_crystals_palette.pal.lz",
       "slot_sha1": "542fb5622b839a50f0c5c193a8f4c3a5de250fd2",
       "exact_plan": {
         "decompressed_size": 32,
@@ -41782,7 +41782,7 @@
       "png_rel": "graphics/battle_anims/sprites/ice_spikes.png",
       "roundtrip_ok": true,
       "key": "stream_0076",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0076.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/ice_spikes.gfx.lz",
       "slot_sha1": "57964918e602f77d6861c26d7c8c4a9446127208",
       "exact_plan": {
         "decompressed_size": 256,
@@ -41877,7 +41877,7 @@
       "png_rel": "graphics/battle_anims/unused/old_beatup.png",
       "roundtrip_ok": true,
       "key": "stream_0077",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0077.lz",
+      "build_rel": "build/graphics/battle_anims/unused/exact_lz/old_beatup.gfx.lz",
       "slot_sha1": "97120c23a60c8b3c1392533e52d702f6748f2945",
       "exact_plan": {
         "decompressed_size": 512,
@@ -42158,7 +42158,7 @@
       "png_rel": "graphics/battle_anims/unused/old_beatup_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0078",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0078.lz",
+      "build_rel": "build/graphics/battle_anims/unused/exact_lz/old_beatup_palette.pal.lz",
       "slot_sha1": "6a34485aa1864097406392dd5fc518656e3b66c1",
       "exact_plan": {
         "decompressed_size": 32,
@@ -42194,7 +42194,7 @@
       "png_rel": "graphics/battle_anims/sprites/orbs.png",
       "roundtrip_ok": true,
       "key": "stream_0079",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0079.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/orbs.gfx.lz",
       "slot_sha1": "02d7b66978ba057309876adc5fd0beb4b12d8ec7",
       "exact_plan": {
         "decompressed_size": 384,
@@ -42417,7 +42417,7 @@
       "png_rel": "graphics/battle_anims/sprites/orbs_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0080",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0080.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/orbs_palette.pal.lz",
       "slot_sha1": "dc260629ad486ca915b2fbf2aa77fa6a8c159d82",
       "exact_plan": {
         "decompressed_size": 32,
@@ -42447,7 +42447,7 @@
       "png_rel": "graphics/battle_anims/sprites/water_orb.png",
       "roundtrip_ok": true,
       "key": "stream_0081",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0081.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/water_orb.gfx.lz",
       "slot_sha1": "afe300699e63c77641f284edac61f5fdd3a70b1c",
       "exact_plan": {
         "decompressed_size": 512,
@@ -42750,7 +42750,7 @@
       "png_rel": "graphics/battle_anims/sprites/water_impact.png",
       "roundtrip_ok": true,
       "key": "stream_0082",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0082.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/water_impact.gfx.lz",
       "slot_sha1": "bd53ed87fd4462e6f2b887cb057dcb71226af232",
       "exact_plan": {
         "decompressed_size": 512,
@@ -43073,7 +43073,7 @@
       "png_rel": "graphics/battle_anims/sprites/water_impact_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0083",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0083.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/water_impact_palette.pal.lz",
       "slot_sha1": "542fb5622b839a50f0c5c193a8f4c3a5de250fd2",
       "exact_plan": {
         "decompressed_size": 32,
@@ -43112,7 +43112,7 @@
       "png_rel": "graphics/battle_anims/sprites/brown_orb_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0084",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0084.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/brown_orb_palette.pal.lz",
       "slot_sha1": "1cf0c14e83ae6e20273848484aded616f0ad66c4",
       "exact_plan": {
         "decompressed_size": 32,
@@ -43147,7 +43147,7 @@
       "png_rel": "graphics/battle_anims/sprites/mud_san.png",
       "roundtrip_ok": true,
       "key": "stream_0085",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0085.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/mud_san.gfx.lz",
       "slot_sha1": "b0ff18a36ef148b1e95ffa72b737ee8f0693f333",
       "exact_plan": {
         "decompressed_size": 160,
@@ -43298,7 +43298,7 @@
       "png_rel": "graphics/battle_anims/sprites/mud_sand_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0086",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0086.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/mud_sand_palette.pal.lz",
       "slot_sha1": "af3a306f8bc32d0c2379ce043390cbe20c468edb",
       "exact_plan": {
         "decompressed_size": 32,
@@ -43333,7 +43333,7 @@
       "png_rel": "graphics/battle_anims/sprites/poison_bubble.png",
       "roundtrip_ok": true,
       "key": "stream_0087",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0087.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/poison_bubble.gfx.lz",
       "slot_sha1": "20445bc6ad6d6543a2bce24806a06df69430a015",
       "exact_plan": {
         "decompressed_size": 384,
@@ -43632,7 +43632,7 @@
       "png_rel": "graphics/battle_anims/sprites/poison_bubble_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0088",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0088.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/poison_bubble_palette.pal.lz",
       "slot_sha1": "49ee978191362c23976c5bfc4ab23010a92e8b19",
       "exact_plan": {
         "decompressed_size": 32,
@@ -43667,7 +43667,7 @@
       "png_rel": "graphics/battle_anims/sprites/toxic_bubble.png",
       "roundtrip_ok": true,
       "key": "stream_0089",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0089.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/toxic_bubble.gfx.lz",
       "slot_sha1": "d373944d73f617a6b0359d91f55969eb4d106962",
       "exact_plan": {
         "decompressed_size": 1024,
@@ -44042,7 +44042,7 @@
       "png_rel": "graphics/battle_anims/sprites/horn_hit_2.png",
       "roundtrip_ok": true,
       "key": "stream_0090",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0090.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/horn_hit_2.gfx.lz",
       "slot_sha1": "9571e8ce4b5eca03480351ccccdee87c30dc462c",
       "exact_plan": {
         "decompressed_size": 256,
@@ -44209,7 +44209,7 @@
       "png_rel": "graphics/battle_anims/sprites/horn_hit_2_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0091",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0091.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/horn_hit_2_palette.pal.lz",
       "slot_sha1": "5de1c393bae7b4e84dcc083ba54ec3aa6d3a1274",
       "exact_plan": {
         "decompressed_size": 32,
@@ -44244,7 +44244,7 @@
       "png_rel": "graphics/battle_anims/sprites/air_wave_2.png",
       "roundtrip_ok": true,
       "key": "stream_0092",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0092.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/air_wave_2.gfx.lz",
       "slot_sha1": "94fae6a56aaa74f88ec7f16727e702cce89df53a",
       "exact_plan": {
         "decompressed_size": 256,
@@ -44407,7 +44407,7 @@
       "png_rel": "graphics/battle_anims/sprites/air_wave_2_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0093",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0093.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/air_wave_2_palette.pal.lz",
       "slot_sha1": "2df42453aa8b71f3590876007f4195965f638cc2",
       "exact_plan": {
         "decompressed_size": 32,
@@ -44442,7 +44442,7 @@
       "png_rel": "graphics/battle_anims/sprites/small_bubbles.png",
       "roundtrip_ok": true,
       "key": "stream_0094",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0094.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/small_bubbles.gfx.lz",
       "slot_sha1": "a3dc6e55ac55ce808d3381cf42e01c2bbcbcda3f",
       "exact_plan": {
         "decompressed_size": 320,
@@ -44669,7 +44669,7 @@
       "png_rel": "graphics/battle_anims/sprites/small_bubbles_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0095",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0095.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/small_bubbles_palette.pal.lz",
       "slot_sha1": "542fb5622b839a50f0c5c193a8f4c3a5de250fd2",
       "exact_plan": {
         "decompressed_size": 32,
@@ -44708,7 +44708,7 @@
       "png_rel": "graphics/battle_anims/sprites/round_shadow.png",
       "roundtrip_ok": true,
       "key": "stream_0096",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0096.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/round_shadow.gfx.lz",
       "slot_sha1": "c6b9dda289d5d9fdae8583c08ca9bf9ab6d7b98a",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -45455,7 +45455,7 @@
       "png_rel": "graphics/battle_anims/sprites/round_shadow_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0097",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0097.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/round_shadow_palette.pal.lz",
       "slot_sha1": "868c683bf89a4115bddef349513a5f5bea932acf",
       "exact_plan": {
         "decompressed_size": 32,
@@ -45485,7 +45485,7 @@
       "png_rel": "graphics/battle_anims/sprites/sunlight.png",
       "roundtrip_ok": true,
       "key": "stream_0098",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0098.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/sunlight.gfx.lz",
       "slot_sha1": "178946d42d949056450d0e1bc0495d9ecbb63ee4",
       "exact_plan": {
         "decompressed_size": 512,
@@ -45680,7 +45680,7 @@
       "png_rel": "graphics/battle_anims/sprites/sunlight_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0099",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0099.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/sunlight_palette.pal.lz",
       "slot_sha1": "5de1c393bae7b4e84dcc083ba54ec3aa6d3a1274",
       "exact_plan": {
         "decompressed_size": 32,
@@ -45715,7 +45715,7 @@
       "png_rel": "graphics/battle_anims/sprites/spore.png",
       "roundtrip_ok": true,
       "key": "stream_0100",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0100.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/spore.gfx.lz",
       "slot_sha1": "963579d057a23e109ac294211e39bf96b9701d36",
       "exact_plan": {
         "decompressed_size": 256,
@@ -45834,7 +45834,7 @@
       "png_rel": "graphics/battle_anims/sprites/spore_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0101",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0101.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/spore_palette.pal.lz",
       "slot_sha1": "0f815519070787b9b2c6a1e1039c6d39ba5d8ed3",
       "exact_plan": {
         "decompressed_size": 32,
@@ -45869,7 +45869,7 @@
       "png_rel": "graphics/battle_anims/sprites/flowe.png",
       "roundtrip_ok": true,
       "key": "stream_0102",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0102.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/flowe.gfx.lz",
       "slot_sha1": "02ba97275c12e7dd682ba9c773e494e0bbbe47c4",
       "exact_plan": {
         "decompressed_size": 160,
@@ -45996,7 +45996,7 @@
       "png_rel": "graphics/battle_anims/sprites/flower_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0103",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0103.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/flower_palette.pal.lz",
       "slot_sha1": "503e5b26b8eaffa7162a0ee6a4ee8ebbbcaa0522",
       "exact_plan": {
         "decompressed_size": 32,
@@ -46031,7 +46031,7 @@
       "png_rel": "graphics/battle_anims/sprites/razor_leaf.png",
       "roundtrip_ok": true,
       "key": "stream_0104",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0104.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/razor_leaf.gfx.lz",
       "slot_sha1": "d2cc627852996c5fa91f11a0bb8575d44f5125c5",
       "exact_plan": {
         "decompressed_size": 256,
@@ -46198,7 +46198,7 @@
       "png_rel": "graphics/battle_anims/sprites/razor_leaf_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0105",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0105.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/razor_leaf_palette.pal.lz",
       "slot_sha1": "c47ee8ea4582369ceb5463b4c235f20e4943d288",
       "exact_plan": {
         "decompressed_size": 32,
@@ -46228,7 +46228,7 @@
       "png_rel": "graphics/battle_anims/sprites/mist_cloud.png",
       "roundtrip_ok": true,
       "key": "stream_0106",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0106.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/mist_cloud.gfx.lz",
       "slot_sha1": "bccd64514d51a05aea2a5263d181d07de4253a19",
       "exact_plan": {
         "decompressed_size": 512,
@@ -46435,7 +46435,7 @@
       "png_rel": "graphics/battle_anims/sprites/mist_cloud_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0107",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0107.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/mist_cloud_palette.pal.lz",
       "slot_sha1": "542fb5622b839a50f0c5c193a8f4c3a5de250fd2",
       "exact_plan": {
         "decompressed_size": 32,
@@ -46474,7 +46474,7 @@
       "png_rel": "graphics/battle_anims/unused/lights.png",
       "roundtrip_ok": true,
       "key": "stream_0108",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0108.lz",
+      "build_rel": "build/graphics/battle_anims/unused/exact_lz/lights.gfx.lz",
       "slot_sha1": "3484fd318ebd0c05c0dcec4b429286b89032f50f",
       "exact_plan": {
         "decompressed_size": 96,
@@ -46551,7 +46551,7 @@
       "png_rel": "graphics/battle_anims/unused/lights_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0109",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0109.lz",
+      "build_rel": "build/graphics/battle_anims/unused/exact_lz/lights_palette.pal.lz",
       "slot_sha1": "a3fb03264fcf7af6c4e6a600b4cfd53f37c61fba",
       "exact_plan": {
         "decompressed_size": 32,
@@ -46585,7 +46585,7 @@
       "png_rel": "graphics/battle_anims/unused/lights.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0110",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0110.lz",
+      "build_rel": "build/graphics/battle_anims/unused/exact_lz/lights.tilemap.lz",
       "slot_sha1": "2de0d9cf7ef7f39ff7a483a3f676207d8a894ee4",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -47084,7 +47084,7 @@
       "png_rel": "graphics/battle_anims/sprites/whirlwind_lines.png",
       "roundtrip_ok": true,
       "key": "stream_0111",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0111.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/whirlwind_lines.gfx.lz",
       "slot_sha1": "d627fadb76c511d1e48cbf154835496c5d519b56",
       "exact_plan": {
         "decompressed_size": 768,
@@ -47331,7 +47331,7 @@
       "png_rel": "graphics/battle_anims/sprites/whirlwind_lines_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0112",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0112.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/whirlwind_lines_palette.pal.lz",
       "slot_sha1": "4ca2138ff3589f63089ee81f9ced64e95ab92cec",
       "exact_plan": {
         "decompressed_size": 32,
@@ -47366,7 +47366,7 @@
       "png_rel": "graphics/battle_anims/sprites/gold_ring.png",
       "roundtrip_ok": true,
       "key": "stream_0113",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0113.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/gold_ring.gfx.lz",
       "slot_sha1": "085c455c2ebc0da448083bcc0e24673bc0c88f9b",
       "exact_plan": {
         "decompressed_size": 256,
@@ -47525,7 +47525,7 @@
       "png_rel": "graphics/battle_anims/sprites/gold_ring_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0114",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0114.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/gold_ring_palette.pal.lz",
       "slot_sha1": "5de1c393bae7b4e84dcc083ba54ec3aa6d3a1274",
       "exact_plan": {
         "decompressed_size": 32,
@@ -47560,7 +47560,7 @@
       "png_rel": "graphics/battle_anims/sprites/blue_ring_2_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0115",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0115.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/blue_ring_2_palette.pal.lz",
       "slot_sha1": "3cc4e353d362c7e76595e56a2a28a49b2f52a09b",
       "exact_plan": {
         "decompressed_size": 32,
@@ -47595,7 +47595,7 @@
       "png_rel": "graphics/battle_anims/sprites/purple_ring_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0116",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0116.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/purple_ring_palette.pal.lz",
       "slot_sha1": "26ba1544c30628ce28d71001edbbee12baa31965",
       "exact_plan": {
         "decompressed_size": 32,
@@ -47630,7 +47630,7 @@
       "png_rel": "graphics/battle_anims/sprites/blue_ring_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0117",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0117.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/blue_ring_palette.pal.lz",
       "slot_sha1": "4db690a015e362ea2c93117bb225b0607afa2946",
       "exact_plan": {
         "decompressed_size": 32,
@@ -47665,7 +47665,7 @@
       "png_rel": "graphics/battle_anims/sprites/green_light_wall.png",
       "roundtrip_ok": true,
       "key": "stream_0118",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0118.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/green_light_wall.gfx.lz",
       "slot_sha1": "559f25e441dae4498a3ce4cd92ca26ea163e44d2",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -48676,7 +48676,7 @@
       "png_rel": "graphics/battle_anims/sprites/green_light_wall_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0119",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0119.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/green_light_wall_palette.pal.lz",
       "slot_sha1": "a062d0d59466d5c81609269ce4d14d75d4faa4a6",
       "exact_plan": {
         "decompressed_size": 32,
@@ -48715,7 +48715,7 @@
       "png_rel": "graphics/battle_anims/sprites/blue_light_wall_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0120",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0120.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/blue_light_wall_palette.pal.lz",
       "slot_sha1": "b37fce018ea01becde1403966b24496b501e4ce8",
       "exact_plan": {
         "decompressed_size": 32,
@@ -48754,7 +48754,7 @@
       "png_rel": "graphics/battle_anims/sprites/red_light_wall_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0121",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0121.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/red_light_wall_palette.pal.lz",
       "slot_sha1": "4698c941a7635282ff846b85ca5cc11db8945391",
       "exact_plan": {
         "decompressed_size": 32,
@@ -48793,7 +48793,7 @@
       "png_rel": "graphics/battle_anims/sprites/gray_light_wall_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0122",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0122.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/gray_light_wall_palette.pal.lz",
       "slot_sha1": "887b600b0746c92cbc114a44b8ca5479e25b7f04",
       "exact_plan": {
         "decompressed_size": 32,
@@ -48832,7 +48832,7 @@
       "png_rel": "graphics/battle_anims/sprites/orange_light_wall_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0123",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0123.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/orange_light_wall_palette.pal.lz",
       "slot_sha1": "758d63a6242e2cb614bf2dfe640f5dc049cc03a9",
       "exact_plan": {
         "decompressed_size": 32,
@@ -48871,7 +48871,7 @@
       "png_rel": "graphics/battle_anims/sprites/black_ball_2.png",
       "roundtrip_ok": true,
       "key": "stream_0124",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0124.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/black_ball_2.gfx.lz",
       "slot_sha1": "59505cf98909337c023e3c7dab7421bdce6be892",
       "exact_plan": {
         "decompressed_size": 128,
@@ -48978,7 +48978,7 @@
       "png_rel": "graphics/battle_anims/sprites/black_ball_2_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0125",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0125.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/black_ball_2_palette.pal.lz",
       "slot_sha1": "025d93fd61074be707e789d8fa503b8641f075b1",
       "exact_plan": {
         "decompressed_size": 32,
@@ -49008,7 +49008,7 @@
       "png_rel": "graphics/battle_anims/sprites/purple_gas_cloud_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0126",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0126.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/purple_gas_cloud_palette.pal.lz",
       "slot_sha1": "d3b2a2f3d099312580ce041975320d44659cd2b6",
       "exact_plan": {
         "decompressed_size": 32,
@@ -49047,7 +49047,7 @@
       "png_rel": "graphics/contest/judge.png",
       "roundtrip_ok": true,
       "key": "stream_0127",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0127.lz",
+      "build_rel": "build/graphics/contest/exact_lz/judge.gfx.lz",
       "slot_sha1": "c89a998e6bb072a9fc1db061950e75e79ea83eaa",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -49692,7 +49692,7 @@
       "png_rel": "graphics/contest/judge_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0128",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0128.lz",
+      "build_rel": "build/graphics/contest/exact_lz/judge_palette.pal.lz",
       "slot_sha1": "878e62928d6958e3d1e5d889c6a69f402f6a8e74",
       "exact_plan": {
         "decompressed_size": 32,
@@ -49723,7 +49723,7 @@
       "png_rel": "graphics/battle_anims/sprites/spar.png",
       "roundtrip_ok": true,
       "key": "stream_0129",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0129.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/spar.gfx.lz",
       "slot_sha1": "a9d953c712bef6204b344acdd51a6eefc5ee7f34",
       "exact_plan": {
         "decompressed_size": 768,
@@ -50046,7 +50046,7 @@
       "png_rel": "graphics/battle_anims/sprites/spark_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0130",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0130.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/spark_palette.pal.lz",
       "slot_sha1": "503e5b26b8eaffa7162a0ee6a4ee8ebbbcaa0522",
       "exact_plan": {
         "decompressed_size": 32,
@@ -50081,7 +50081,7 @@
       "png_rel": "graphics/battle_anims/sprites/spark_h.png",
       "roundtrip_ok": true,
       "key": "stream_0131",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0131.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/spark_h.gfx.lz",
       "slot_sha1": "b953f58c85ee903f6473e605632eb57a245e350c",
       "exact_plan": {
         "decompressed_size": 512,
@@ -50316,7 +50316,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/dark.png",
       "roundtrip_ok": true,
       "key": "stream_0132",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0132.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/dark.gfx.lz",
       "slot_sha1": "9284b0590d43d5c8c576fbc58cd25b1b12d71dec",
       "exact_plan": {
         "decompressed_size": 8192,
@@ -53011,7 +53011,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/dark_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0133",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0133.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/dark_palette.pal.lz",
       "slot_sha1": "51b636bf6d8f3baac0213db953d24a5b1905d14f",
       "exact_plan": {
         "decompressed_size": 32,
@@ -53044,7 +53044,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/dark.tilemap.u16",
       "roundtrip_ok": true,
       "key": "stream_0134",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0134.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/dark.tilemap.lz",
       "slot_sha1": "78e4c61262ba2634b639583a87825845e6757913",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -53555,7 +53555,7 @@
       "png_rel": "graphics/battle_anims/masks/metal_shine.png",
       "roundtrip_ok": true,
       "key": "stream_0135",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0135.lz",
+      "build_rel": "build/graphics/battle_anims/masks/exact_lz/metal_shine.gfx.lz",
       "slot_sha1": "aceac6f25f2e6c3cfd70c326fef6c8f922db9ca2",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -54144,7 +54144,7 @@
       "png_rel": "graphics/battle_anims/masks/metal_shine_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0136",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0136.lz",
+      "build_rel": "build/graphics/battle_anims/masks/exact_lz/metal_shine_palette.pal.lz",
       "slot_sha1": "b18120faa3b4c7d76b78c246ef3278f79b66f942",
       "exact_plan": {
         "decompressed_size": 32,
@@ -54173,7 +54173,7 @@
       "png_rel": "graphics/battle_anims/masks/metal_shine.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0137",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0137.lz",
+      "build_rel": "build/graphics/battle_anims/masks/exact_lz/metal_shine.tilemap.lz",
       "slot_sha1": "ddcb6e710166a518cc25d1f56fb3df5394ed41c1",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -54640,7 +54640,7 @@
       "png_rel": "graphics/battle_anims/unused/goosuto.png",
       "roundtrip_ok": true,
       "key": "stream_0138",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0138.lz",
+      "build_rel": "build/graphics/battle_anims/unused/exact_lz/goosuto.gfx.lz",
       "slot_sha1": "f1e9d19726511555af159d16ba62c6f4f47e3869",
       "exact_plan": {
         "decompressed_size": 1536,
@@ -55125,7 +55125,7 @@
       "png_rel": "graphics/battle_anims/unused/goosuto_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0139",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0139.lz",
+      "build_rel": "build/graphics/battle_anims/unused/exact_lz/goosuto_palette.pal.lz",
       "slot_sha1": "2e7235a326639c484c50452f5296097531ac87e6",
       "exact_plan": {
         "decompressed_size": 32,
@@ -55159,7 +55159,7 @@
       "png_rel": "graphics/battle_anims/unused/goosuto.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0140",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0140.lz",
+      "build_rel": "build/graphics/battle_anims/unused/exact_lz/goosuto.tilemap.lz",
       "slot_sha1": "ce98f1c86ee4afeb9bec251f46cc13cb657df144",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -55666,7 +55666,7 @@
       "png_rel": "graphics/battle_anims/sprites/yellow_star.png",
       "roundtrip_ok": true,
       "key": "stream_0141",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0141.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/yellow_star.gfx.lz",
       "slot_sha1": "56e0c8de5afe5157c4ab724830cd4a7ee820f376",
       "exact_plan": {
         "decompressed_size": 512,
@@ -55893,7 +55893,7 @@
       "png_rel": "graphics/battle_anims/sprites/yellow_star_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0142",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0142.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/yellow_star_palette.pal.lz",
       "slot_sha1": "503e5b26b8eaffa7162a0ee6a4ee8ebbbcaa0522",
       "exact_plan": {
         "decompressed_size": 32,
@@ -55928,7 +55928,7 @@
       "png_rel": "graphics/battle_anims/sprites/large_fresh_egg.png",
       "roundtrip_ok": true,
       "key": "stream_0143",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0143.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/large_fresh_egg.gfx.lz",
       "slot_sha1": "6d48ac892d6778947ce2b53d9c8afbc1b399e10d",
       "exact_plan": {
         "decompressed_size": 128,
@@ -56023,7 +56023,7 @@
       "png_rel": "graphics/battle_anims/sprites/large_fresh_egg_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0144",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0144.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/large_fresh_egg_palette.pal.lz",
       "slot_sha1": "025d93fd61074be707e789d8fa503b8641f075b1",
       "exact_plan": {
         "decompressed_size": 32,
@@ -56053,7 +56053,7 @@
       "png_rel": "graphics/battle_anims/sprites/shadow_ball.png",
       "roundtrip_ok": true,
       "key": "stream_0145",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0145.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/shadow_ball.gfx.lz",
       "slot_sha1": "d43a56415a04d0b370b7be9c4e336ffcaa6051da",
       "exact_plan": {
         "decompressed_size": 512,
@@ -56380,7 +56380,7 @@
       "png_rel": "graphics/battle_anims/sprites/shadow_ball_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0146",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0146.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/shadow_ball_palette.pal.lz",
       "slot_sha1": "868c683bf89a4115bddef349513a5f5bea932acf",
       "exact_plan": {
         "decompressed_size": 32,
@@ -56410,7 +56410,7 @@
       "png_rel": "graphics/battle_anims/sprites/lick.png",
       "roundtrip_ok": true,
       "key": "stream_0147",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0147.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/lick.gfx.lz",
       "slot_sha1": "81a0430801f2cf75d56213575c29b6f58016ee49",
       "exact_plan": {
         "decompressed_size": 1280,
@@ -56745,7 +56745,7 @@
       "png_rel": "graphics/battle_anims/sprites/lick_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0148",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0148.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/lick_palette.pal.lz",
       "slot_sha1": "5de1c393bae7b4e84dcc083ba54ec3aa6d3a1274",
       "exact_plan": {
         "decompressed_size": 32,
@@ -56780,7 +56780,7 @@
       "png_rel": "graphics/battle_anims/sprites/void_lines.png",
       "roundtrip_ok": true,
       "key": "stream_0149",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0149.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/void_lines.gfx.lz",
       "slot_sha1": "592bf64735bc9941bcaa88e3eb30405409cdcf99",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -57407,7 +57407,7 @@
       "png_rel": "graphics/battle_anims/sprites/void_lines_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0150",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0150.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/void_lines_palette.pal.lz",
       "slot_sha1": "7c4c70abf8751b9775825f7b17c9c8374bb50b8e",
       "exact_plan": {
         "decompressed_size": 32,
@@ -57437,7 +57437,7 @@
       "png_rel": "graphics/battle_anims/sprites/string_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0151",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0151.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/string_palette.pal.lz",
       "slot_sha1": "025d93fd61074be707e789d8fa503b8641f075b1",
       "exact_plan": {
         "decompressed_size": 32,
@@ -57467,7 +57467,7 @@
       "png_rel": "graphics/battle_anims/sprites/string.png",
       "roundtrip_ok": true,
       "key": "stream_0152",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0152.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/string.gfx.lz",
       "slot_sha1": "6b8b43cab7949ce495edf7ec300b856aa2294a54",
       "exact_plan": {
         "decompressed_size": 1024,
@@ -57802,7 +57802,7 @@
       "png_rel": "graphics/battle_anims/sprites/web_thread.png",
       "roundtrip_ok": true,
       "key": "stream_0153",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0153.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/web_thread.gfx.lz",
       "slot_sha1": "803723688be9c0191b9209699810cb5fde99702a",
       "exact_plan": {
         "decompressed_size": 32,
@@ -57849,7 +57849,7 @@
       "png_rel": "graphics/battle_anims/sprites/spider_web.png",
       "roundtrip_ok": true,
       "key": "stream_0154",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0154.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/spider_web.gfx.lz",
       "slot_sha1": "3422107e760471383de4092518abd8cb9a11ae62",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -59324,7 +59324,7 @@
       "png_rel": "graphics/battle_anims/sprites/lightbulb.png",
       "roundtrip_ok": true,
       "key": "stream_0155",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0155.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/lightbulb.gfx.lz",
       "slot_sha1": "b60ecef10840f02f930f86b5a56c29eb35f30ab6",
       "exact_plan": {
         "decompressed_size": 256,
@@ -59475,7 +59475,7 @@
       "png_rel": "graphics/battle_anims/sprites/lightbulb_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0156",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0156.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/lightbulb_palette.pal.lz",
       "slot_sha1": "025d93fd61074be707e789d8fa503b8641f075b1",
       "exact_plan": {
         "decompressed_size": 32,
@@ -59505,7 +59505,7 @@
       "png_rel": "graphics/battle_anims/sprites/slash.png",
       "roundtrip_ok": true,
       "key": "stream_0157",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0157.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/slash.gfx.lz",
       "slot_sha1": "cf3dabad74b8ef4e3e51266161507c603d1f4c8e",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -60212,7 +60212,7 @@
       "png_rel": "graphics/battle_anims/sprites/slash_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0158",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0158.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/slash_palette.pal.lz",
       "slot_sha1": "cb86e525a89529be44e5e86a4bcbc0e6f5bf0610",
       "exact_plan": {
         "decompressed_size": 32,
@@ -60247,7 +60247,7 @@
       "png_rel": "graphics/battle_anims/sprites/focus_energy.png",
       "roundtrip_ok": true,
       "key": "stream_0159",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0159.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/focus_energy.gfx.lz",
       "slot_sha1": "54bc7fe9772681280781c822637620d0184cc1c1",
       "exact_plan": {
         "decompressed_size": 1024,
@@ -60730,7 +60730,7 @@
       "png_rel": "graphics/battle_anims/sprites/focus_energy_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0160",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0160.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/focus_energy_palette.pal.lz",
       "slot_sha1": "cb86e525a89529be44e5e86a4bcbc0e6f5bf0610",
       "exact_plan": {
         "decompressed_size": 32,
@@ -60765,7 +60765,7 @@
       "png_rel": "graphics/battle_anims/sprites/sphere_to_cube.png",
       "roundtrip_ok": true,
       "key": "stream_0161",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0161.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/sphere_to_cube.gfx.lz",
       "slot_sha1": "a76b62c75f0967f83d80bd2d01b214269e5df855",
       "exact_plan": {
         "decompressed_size": 2560,
@@ -61948,7 +61948,7 @@
       "png_rel": "graphics/battle_anims/sprites/sphere_to_cube_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0162",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0162.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/sphere_to_cube_palette.pal.lz",
       "slot_sha1": "cf8c9955221a76877964a7b93bc7fae2b311c93e",
       "exact_plan": {
         "decompressed_size": 32,
@@ -61983,7 +61983,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/psychic.png",
       "roundtrip_ok": true,
       "key": "stream_0163",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0163.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/psychic.gfx.lz",
       "slot_sha1": "d6121fd795ec0f2f851102961594c8590877caff",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -62498,7 +62498,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/psychic_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0164",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0164.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/psychic_palette.pal.lz",
       "slot_sha1": "c281496db9d6f78a8bcd14ee7e309b9190c5c8c6",
       "exact_plan": {
         "decompressed_size": 32,
@@ -62535,7 +62535,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/psychic.tilemap.u16",
       "roundtrip_ok": true,
       "key": "stream_0165",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0165.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/psychic.tilemap.lz",
       "slot_sha1": "0faa83bed2723436016bdfb16bc3108698c885b4",
       "exact_plan": {
         "decompressed_size": 1280,
@@ -62854,7 +62854,7 @@
       "png_rel": "graphics/battle_anims/sprites/eye.png",
       "roundtrip_ok": true,
       "key": "stream_0166",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0166.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/eye.gfx.lz",
       "slot_sha1": "5dcd3102f212e6ead8d3ee83de8cb772ea4000d2",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -63597,7 +63597,7 @@
       "png_rel": "graphics/battle_anims/sprites/eye_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0167",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0167.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/eye_palette.pal.lz",
       "slot_sha1": "3b8d8d86758a29401149851cbbb14f9b2c1ec5de",
       "exact_plan": {
         "decompressed_size": 32,
@@ -63632,7 +63632,7 @@
       "png_rel": "graphics/battle_anims/sprites/tendrils.png",
       "roundtrip_ok": true,
       "key": "stream_0168",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0168.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/tendrils.gfx.lz",
       "slot_sha1": "a463dee8b448303ec8759c3f94516d6154e0c0f3",
       "exact_plan": {
         "decompressed_size": 4096,
@@ -64871,7 +64871,7 @@
       "png_rel": "graphics/battle_anims/sprites/tendrils_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0169",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0169.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/tendrils_palette.pal.lz",
       "slot_sha1": "dc7764dec41fd617fd31424d1eba3d8f633a8797",
       "exact_plan": {
         "decompressed_size": 32,
@@ -64906,7 +64906,7 @@
       "png_rel": "graphics/battle_interface/healthbox_singles_player.png",
       "roundtrip_ok": true,
       "key": "stream_0170",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0170.lz",
+      "build_rel": "build/graphics/battle_interface/exact_lz/healthbox_singles_player.gfx.lz",
       "slot_sha1": "349f1cea29e351b9b21efd25c3dec052dcd9ea7f",
       "exact_plan": {
         "decompressed_size": 4096,
@@ -65969,7 +65969,7 @@
       "png_rel": "graphics/battle_interface/healthbox_singles_opponent.png",
       "roundtrip_ok": true,
       "key": "stream_0171",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0171.lz",
+      "build_rel": "build/graphics/battle_interface/exact_lz/healthbox_singles_opponent.gfx.lz",
       "slot_sha1": "656cd50b34811fd51460304fe950255fb822ff0e",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -66532,7 +66532,7 @@
       "png_rel": "graphics/battle_interface/healthbox_doubles_player.png",
       "roundtrip_ok": true,
       "key": "stream_0172",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0172.lz",
+      "build_rel": "build/graphics/battle_interface/exact_lz/healthbox_doubles_player.gfx.lz",
       "slot_sha1": "0c4fdb6e2a5a5f71d21a4ad61d8ce8a94e3ddbf0",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -67111,7 +67111,7 @@
       "png_rel": "graphics/battle_interface/healthbox_doubles_opponent.png",
       "roundtrip_ok": true,
       "key": "stream_0173",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0173.lz",
+      "build_rel": "build/graphics/battle_interface/exact_lz/healthbox_doubles_opponent.gfx.lz",
       "slot_sha1": "164fee5b4698339406ff55cd01991d9642a1e5b3",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -67658,7 +67658,7 @@
       "png_rel": "graphics/battle_interface/healthbox_safari.png",
       "roundtrip_ok": true,
       "key": "stream_0174",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0174.lz",
+      "build_rel": "build/graphics/battle_interface/exact_lz/healthbox_safari.gfx.lz",
       "slot_sha1": "e1bfd991303f8e67e1dac9782152a4ab66fb76e8",
       "exact_plan": {
         "decompressed_size": 4096,
@@ -68677,7 +68677,7 @@
       "png_rel": "graphics/unused/shadow.png",
       "roundtrip_ok": true,
       "key": "stream_0175",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0175.lz",
+      "build_rel": "build/graphics/unused/exact_lz/shadow.gfx.lz",
       "slot_sha1": "8e89cdc8a0a1d4c6262dbbb58f9bdea71ca49340",
       "exact_plan": {
         "decompressed_size": 256,
@@ -68818,7 +68818,7 @@
       "png_rel": "graphics/unused/shadow_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0176",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0176.lz",
+      "build_rel": "build/graphics/unused/exact_lz/shadow_palette.pal.lz",
       "slot_sha1": "249e387710cbc21f0c3c219b6aca8b9f5c2857ca",
       "exact_plan": {
         "decompressed_size": 32,
@@ -68858,7 +68858,7 @@
       "png_rel": "graphics/battle_anims/sprites/lock_on.png",
       "roundtrip_ok": true,
       "key": "stream_0177",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0177.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/lock_on.gfx.lz",
       "slot_sha1": "f48f00fccc36a2df090ecc7c21200a56739f00a4",
       "exact_plan": {
         "decompressed_size": 640,
@@ -69109,7 +69109,7 @@
       "png_rel": "graphics/battle_anims/sprites/lock_on_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0178",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0178.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/lock_on_palette.pal.lz",
       "slot_sha1": "54f31790bc42afe2db42b51775105cb53a96a83f",
       "exact_plan": {
         "decompressed_size": 32,
@@ -69152,7 +69152,7 @@
       "png_rel": "graphics/battle_anims/sprites/opening_eye.png",
       "roundtrip_ok": true,
       "key": "stream_0179",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0179.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/opening_eye.gfx.lz",
       "slot_sha1": "478287ffb66ab6d0da6e1c61088d186ff3b57b50",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -69979,7 +69979,7 @@
       "png_rel": "graphics/battle_anims/sprites/opening_eye_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0180",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0180.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/opening_eye_palette.pal.lz",
       "slot_sha1": "692b2e9880acdf661659de1349b5b3cd64489e1a",
       "exact_plan": {
         "decompressed_size": 32,
@@ -70014,7 +70014,7 @@
       "png_rel": "graphics/battle_anims/sprites/round_white_halo.png",
       "roundtrip_ok": true,
       "key": "stream_0181",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0181.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/round_white_halo.gfx.lz",
       "slot_sha1": "245ec6a29bd33ebbf55b1b7e7453d54f7652d1eb",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -70901,7 +70901,7 @@
       "png_rel": "graphics/battle_anims/sprites/round_white_halo_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0182",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0182.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/round_white_halo_palette.pal.lz",
       "slot_sha1": "a7212172009660f25ba5910bb3ef75a8638b338d",
       "exact_plan": {
         "decompressed_size": 32,
@@ -70936,7 +70936,7 @@
       "png_rel": "graphics/battle_anims/sprites/teal_alert.png",
       "roundtrip_ok": true,
       "key": "stream_0183",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0183.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/teal_alert.gfx.lz",
       "slot_sha1": "ff19282ce0729cb662e490529f1fa54cc1706a2b",
       "exact_plan": {
         "decompressed_size": 512,
@@ -71119,7 +71119,7 @@
       "png_rel": "graphics/battle_anims/sprites/teal_alert_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0184",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0184.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/teal_alert_palette.pal.lz",
       "slot_sha1": "2781e6770348065d5b8bfd28d451c8ac2edd9bc5",
       "exact_plan": {
         "decompressed_size": 32,
@@ -71154,7 +71154,7 @@
       "png_rel": "graphics/battle_anims/sprites/fang_attack.png",
       "roundtrip_ok": true,
       "key": "stream_0185",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0185.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/fang_attack.gfx.lz",
       "slot_sha1": "7636c8506eb9023b168c05e14d074ff880731f94",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -71949,7 +71949,7 @@
       "png_rel": "graphics/battle_anims/sprites/fang_attack_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0186",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0186.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/fang_attack_palette.pal.lz",
       "slot_sha1": "3053c1f09c3282f1bae3467994bdfaf7cdb17737",
       "exact_plan": {
         "decompressed_size": 32,
@@ -71984,7 +71984,7 @@
       "png_rel": "graphics/battle_anims/sprites/purple_hand_outline.png",
       "roundtrip_ok": true,
       "key": "stream_0187",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0187.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/purple_hand_outline.gfx.lz",
       "slot_sha1": "345c732989e2a4b01da0bd330f5fc7b1962c45b5",
       "exact_plan": {
         "decompressed_size": 512,
@@ -72275,7 +72275,7 @@
       "png_rel": "graphics/battle_anims/sprites/purple_hand_outline_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0188",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0188.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/purple_hand_outline_palette.pal.lz",
       "slot_sha1": "fa1764b84f68f7f9db9798a51a7af85b02cad6b7",
       "exact_plan": {
         "decompressed_size": 32,
@@ -72305,7 +72305,7 @@
       "png_rel": "graphics/battle_anims/masks/curse.png",
       "roundtrip_ok": true,
       "key": "stream_0189",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0189.lz",
+      "build_rel": "build/graphics/battle_anims/masks/exact_lz/curse.gfx.lz",
       "slot_sha1": "a89458466f57b4828a0bdd0d96fb70744e3eedf4",
       "exact_plan": {
         "decompressed_size": 96,
@@ -72362,7 +72362,7 @@
       "png_rel": "graphics/battle_anims/masks/curse.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0190",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0190.lz",
+      "build_rel": "build/graphics/battle_anims/masks/exact_lz/curse.tilemap.lz",
       "slot_sha1": "0c15991b9fb5908974313e2df72229e212bae089",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -72853,7 +72853,7 @@
       "png_rel": "graphics/battle_anims/sprites/pencil.png",
       "roundtrip_ok": true,
       "key": "stream_0191",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0191.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/pencil.gfx.lz",
       "slot_sha1": "96130829542edf2d3612240e981b9530ce03242a",
       "exact_plan": {
         "decompressed_size": 512,
@@ -73076,7 +73076,7 @@
       "png_rel": "graphics/battle_anims/sprites/pencil_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0192",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0192.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/pencil_palette.pal.lz",
       "slot_sha1": "88500835bd3290c71fa19c7bff19c746b5c524cc",
       "exact_plan": {
         "decompressed_size": 32,
@@ -73106,7 +73106,7 @@
       "png_rel": "graphics/battle_anims/sprites/spiral.png",
       "roundtrip_ok": true,
       "key": "stream_0193",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0193.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/spiral.gfx.lz",
       "slot_sha1": "1b77005e7cf632242e3e78a6dcf48cc7df58eebf",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -74485,7 +74485,7 @@
       "png_rel": "graphics/battle_anims/sprites/spiral_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0194",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0194.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/spiral_palette.pal.lz",
       "slot_sha1": "2b0622ce5d8ee80eb3e6ae78dcdd37f38504d7f9",
       "exact_plan": {
         "decompressed_size": 32,
@@ -74520,7 +74520,7 @@
       "png_rel": "graphics/battle_anims/sprites/moon.png",
       "roundtrip_ok": true,
       "key": "stream_0195",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0195.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/moon.gfx.lz",
       "slot_sha1": "4572cde94d9757d65652466660da41ee92611227",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -75119,7 +75119,7 @@
       "png_rel": "graphics/battle_anims/sprites/moon_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0196",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0196.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/moon_palette.pal.lz",
       "slot_sha1": "ea45bef9dbd458ef60774236becc1dd95f68215b",
       "exact_plan": {
         "decompressed_size": 32,
@@ -75149,7 +75149,7 @@
       "png_rel": "graphics/battle_anims/sprites/green_sparkle.png",
       "roundtrip_ok": true,
       "key": "stream_0197",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0197.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/green_sparkle.gfx.lz",
       "slot_sha1": "f75bb691204848d719dca17d78c8b66491da3948",
       "exact_plan": {
         "decompressed_size": 512,
@@ -75452,7 +75452,7 @@
       "png_rel": "graphics/battle_anims/sprites/green_sparkle_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0198",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0198.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/green_sparkle_palette.pal.lz",
       "slot_sha1": "694604384dde4f817d5e465edc506fa9bc255a32",
       "exact_plan": {
         "decompressed_size": 32,
@@ -75487,7 +75487,7 @@
       "png_rel": "graphics/battle_anims/sprites/snore_z.png",
       "roundtrip_ok": true,
       "key": "stream_0199",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0199.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/snore_z.gfx.lz",
       "slot_sha1": "5d787f35c8776d7ee627216470d9389e0377ef9a",
       "exact_plan": {
         "decompressed_size": 512,
@@ -75874,7 +75874,7 @@
       "png_rel": "graphics/battle_anims/sprites/snore_z_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0200",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0200.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/snore_z_palette.pal.lz",
       "slot_sha1": "558fca8694df5c6f7f52ee600a60de9ae74d20c7",
       "exact_plan": {
         "decompressed_size": 32,
@@ -75909,7 +75909,7 @@
       "png_rel": "graphics/battle_anims/sprites/explosion.png",
       "roundtrip_ok": true,
       "key": "stream_0201",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0201.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/explosion.gfx.lz",
       "slot_sha1": "69534eb89382df76881117b87b3bbb9dfaad6c55",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -76760,7 +76760,7 @@
       "png_rel": "graphics/battle_anims/sprites/explosion_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0202",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0202.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/explosion_palette.pal.lz",
       "slot_sha1": "cb86e525a89529be44e5e86a4bcbc0e6f5bf0610",
       "exact_plan": {
         "decompressed_size": 32,
@@ -76795,7 +76795,7 @@
       "png_rel": "graphics/battle_anims/sprites/nail.png",
       "roundtrip_ok": true,
       "key": "stream_0203",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0203.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/nail.gfx.lz",
       "slot_sha1": "6a12e87ab50db01f7f8858fd832d01cbf12c2ccb",
       "exact_plan": {
         "decompressed_size": 1024,
@@ -77082,7 +77082,7 @@
       "png_rel": "graphics/battle_anims/sprites/nail_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0204",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0204.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/nail_palette.pal.lz",
       "slot_sha1": "d9b441563df83deb82bb13ec428d39e8deae05d5",
       "exact_plan": {
         "decompressed_size": 32,
@@ -77117,7 +77117,7 @@
       "png_rel": "graphics/battle_anims/sprites/ghostly_spirit.png",
       "roundtrip_ok": true,
       "key": "stream_0205",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0205.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/ghostly_spirit.gfx.lz",
       "slot_sha1": "c211167687a3213a527425e3bee4e7720b82e240",
       "exact_plan": {
         "decompressed_size": 512,
@@ -77408,7 +77408,7 @@
       "png_rel": "graphics/battle_anims/sprites/ghostly_spirit_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0206",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0206.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/ghostly_spirit_palette.pal.lz",
       "slot_sha1": "f20207558066abc3b09dffabf1a061b966d140fa",
       "exact_plan": {
         "decompressed_size": 32,
@@ -77443,7 +77443,7 @@
       "png_rel": "graphics/battle_anims/sprites/warm_rock.png",
       "roundtrip_ok": true,
       "key": "stream_0207",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0207.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/warm_rock.gfx.lz",
       "slot_sha1": "21c62e4ec3bf8969d0974f0804d9b48e5797510b",
       "exact_plan": {
         "decompressed_size": 2688,
@@ -78394,7 +78394,7 @@
       "png_rel": "graphics/battle_anims/sprites/warm_rock_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0208",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0208.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/warm_rock_palette.pal.lz",
       "slot_sha1": "eb879afd43a5828b17eb4369ccd748d791babd5a",
       "exact_plan": {
         "decompressed_size": 32,
@@ -78424,7 +78424,7 @@
       "png_rel": "graphics/battle_anims/sprites/punch_impact.png",
       "roundtrip_ok": true,
       "key": "stream_0209",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0209.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/punch_impact.gfx.lz",
       "slot_sha1": "cd76bc6210bacc26fc979f7e62b2124a2ca21ce2",
       "exact_plan": {
         "decompressed_size": 512,
@@ -78711,7 +78711,7 @@
       "png_rel": "graphics/battle_anims/sprites/punch_impact_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0210",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0210.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/punch_impact_palette.pal.lz",
       "slot_sha1": "cb86e525a89529be44e5e86a4bcbc0e6f5bf0610",
       "exact_plan": {
         "decompressed_size": 32,
@@ -78746,7 +78746,7 @@
       "png_rel": "graphics/battle_anims/sprites/breaking_egg.png",
       "roundtrip_ok": true,
       "key": "stream_0211",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0211.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/breaking_egg.gfx.lz",
       "slot_sha1": "73e47057afd0e23d022df76d692395229be9d07f",
       "exact_plan": {
         "decompressed_size": 1536,
@@ -79209,7 +79209,7 @@
       "png_rel": "graphics/battle_anims/sprites/breaking_egg_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0212",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0212.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/breaking_egg_palette.pal.lz",
       "slot_sha1": "934c0eb9b359eb060c66f2302a31cca82ca259a9",
       "exact_plan": {
         "decompressed_size": 32,
@@ -79244,7 +79244,7 @@
       "png_rel": "graphics/battle_anims/sprites/thin_ring.png",
       "roundtrip_ok": true,
       "key": "stream_0213",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0213.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/thin_ring.gfx.lz",
       "slot_sha1": "f848ad6bfee148533d101aa9493dc083ba767f2a",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -79943,7 +79943,7 @@
       "png_rel": "graphics/battle_anims/sprites/thin_ring_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0214",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0214.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/thin_ring_palette.pal.lz",
       "slot_sha1": "79cc3ae0ed7774cf84c3e1ca82181f67a0f1d26d",
       "exact_plan": {
         "decompressed_size": 32,
@@ -79978,7 +79978,7 @@
       "png_rel": "graphics/battle_anims/sprites/music_notes_2.png",
       "roundtrip_ok": true,
       "key": "stream_0215",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0215.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/music_notes_2.gfx.lz",
       "slot_sha1": "1a6f62a982cd53c6894e3419fdd69751c20099cd",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -80683,7 +80683,7 @@
       "png_rel": "graphics/battle_anims/sprites/music_notes_2_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0216",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0216.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/music_notes_2_palette.pal.lz",
       "slot_sha1": "1cca0c4caed7515a20a6fcb2bcfe51450435fb85",
       "exact_plan": {
         "decompressed_size": 160,
@@ -80755,7 +80755,7 @@
       "png_rel": "graphics/battle_anims/sprites/bell.png",
       "roundtrip_ok": true,
       "key": "stream_0217",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0217.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/bell.gfx.lz",
       "slot_sha1": "f466b97b0e1bdbf1f271f30b8dc8216240dac9e0",
       "exact_plan": {
         "decompressed_size": 1536,
@@ -81262,7 +81262,7 @@
       "png_rel": "graphics/battle_anims/sprites/bell_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0218",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0218.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/bell_palette.pal.lz",
       "slot_sha1": "5949a824fc004d443d85d1eeaa34420b7364a246",
       "exact_plan": {
         "decompressed_size": 32,
@@ -81297,7 +81297,7 @@
       "png_rel": "graphics/battle_anims/sprites/speed_dust.png",
       "roundtrip_ok": true,
       "key": "stream_0219",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0219.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/speed_dust.gfx.lz",
       "slot_sha1": "eeb1ab6e0fe84537bdbf88577ca735b02fc7b95f",
       "exact_plan": {
         "decompressed_size": 384,
@@ -81476,7 +81476,7 @@
       "png_rel": "graphics/battle_anims/sprites/speed_dust_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0220",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0220.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/speed_dust_palette.pal.lz",
       "slot_sha1": "8103a34216d0fbfd21a343dec286c775b046674e",
       "exact_plan": {
         "decompressed_size": 32,
@@ -81511,7 +81511,7 @@
       "png_rel": "graphics/battle_anims/sprites/torn_metal.png",
       "roundtrip_ok": true,
       "key": "stream_0221",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0221.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/torn_metal.gfx.lz",
       "slot_sha1": "a7ec500ccfe8d397cdca4d6948cf6d829147b234",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -82314,7 +82314,7 @@
       "png_rel": "graphics/battle_anims/sprites/thought_bubble.png",
       "roundtrip_ok": true,
       "key": "stream_0222",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0222.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/thought_bubble.gfx.lz",
       "slot_sha1": "a06bd1cabe7dc1c46dadb42a3b5aba16105ac0b5",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -83301,7 +83301,7 @@
       "png_rel": "graphics/battle_anims/sprites/thought_bubble_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0223",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0223.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/thought_bubble_palette.pal.lz",
       "slot_sha1": "c46f000e27b2c957c24d90c3337cbff2caacc006",
       "exact_plan": {
         "decompressed_size": 32,
@@ -83336,7 +83336,7 @@
       "png_rel": "graphics/battle_anims/sprites/finger.png",
       "roundtrip_ok": true,
       "key": "stream_0224",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0224.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/finger.gfx.lz",
       "slot_sha1": "23ac39c300df1c5e4df860e93d2d861bc885128e",
       "exact_plan": {
         "decompressed_size": 512,
@@ -83499,7 +83499,7 @@
       "png_rel": "graphics/battle_anims/sprites/finger_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0225",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0225.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/finger_palette.pal.lz",
       "slot_sha1": "186df06612c92c561ec1918666610550d360f7af",
       "exact_plan": {
         "decompressed_size": 32,
@@ -83534,7 +83534,7 @@
       "png_rel": "graphics/battle_anims/sprites/magenta_heart.png",
       "roundtrip_ok": true,
       "key": "stream_0226",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0226.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/magenta_heart.gfx.lz",
       "slot_sha1": "e80fee317b9da59e83140ffc7de5ee172018ece9",
       "exact_plan": {
         "decompressed_size": 128,
@@ -83637,7 +83637,7 @@
       "png_rel": "graphics/battle_anims/sprites/pink_heart_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0227",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0227.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/pink_heart_palette.pal.lz",
       "slot_sha1": "3b8d8d86758a29401149851cbbb14f9b2c1ec5de",
       "exact_plan": {
         "decompressed_size": 32,
@@ -83672,7 +83672,7 @@
       "png_rel": "graphics/battle_anims/sprites/magenta_heart_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0228",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0228.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/magenta_heart_palette.pal.lz",
       "slot_sha1": "b5dc26a9972221a26724ff00468499b3701ff5a4",
       "exact_plan": {
         "decompressed_size": 32,
@@ -83707,7 +83707,7 @@
       "png_rel": "graphics/battle_anims/sprites/red_heart_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0229",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0229.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/red_heart_palette.pal.lz",
       "slot_sha1": "bb537fb96ab435922312baa6a9eafbe96836b658",
       "exact_plan": {
         "decompressed_size": 32,
@@ -83742,7 +83742,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/attract.png",
       "roundtrip_ok": true,
       "key": "stream_0230",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0230.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/attract.gfx.lz",
       "slot_sha1": "aaa708db96d6710e904a3c4ed8a75bbe2c507cdd",
       "exact_plan": {
         "decompressed_size": 8192,
@@ -86811,7 +86811,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/attract_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0231",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0231.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/attract_palette.pal.lz",
       "slot_sha1": "c2991a2bb7489d5404b7684583209965d930b317",
       "exact_plan": {
         "decompressed_size": 32,
@@ -86840,7 +86840,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/attract.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0232",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0232.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/attract.tilemap.lz",
       "slot_sha1": "96d8a90ca1c093f8d362b710f63fb477a3581902",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -87475,7 +87475,7 @@
       "png_rel": "graphics/battle_anims/sprites/red_orb.png",
       "roundtrip_ok": true,
       "key": "stream_0233",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0233.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/red_orb.gfx.lz",
       "slot_sha1": "6f579e7747acf2bb74246890ad224d08830bf589",
       "exact_plan": {
         "decompressed_size": 128,
@@ -87562,7 +87562,7 @@
       "png_rel": "graphics/battle_anims/sprites/red_orb_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0234",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0234.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/red_orb_palette.pal.lz",
       "slot_sha1": "330ecd70668bf94ef85e3e4fbe2576b0be4699ae",
       "exact_plan": {
         "decompressed_size": 32,
@@ -87597,7 +87597,7 @@
       "png_rel": "graphics/battle_anims/sprites/circle_of_light.png",
       "roundtrip_ok": true,
       "key": "stream_0235",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0235.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/circle_of_light.gfx.lz",
       "slot_sha1": "a0bb4fa57d522878143a3e1874cbac1d6d37eced",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -88428,7 +88428,7 @@
       "png_rel": "graphics/battle_anims/sprites/electric_orbs.png",
       "roundtrip_ok": true,
       "key": "stream_0236",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0236.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/electric_orbs.gfx.lz",
       "slot_sha1": "b7c6a8d35e9d36c3f017ca39b7346d3a276c0d73",
       "exact_plan": {
         "decompressed_size": 128,
@@ -88519,7 +88519,7 @@
       "png_rel": "graphics/battle_anims/sprites/electricity.png",
       "roundtrip_ok": true,
       "key": "stream_0237",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0237.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/electricity.gfx.lz",
       "slot_sha1": "58e39b78f296585bde2d14d4f3e038dcd51fad70",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -89302,7 +89302,7 @@
       "png_rel": "graphics/battle_anims/sprites/electric_orbs_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0238",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0238.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/electric_orbs_palette.pal.lz",
       "slot_sha1": "5001d35db92f84cb588645efb284688f8c6ef9f9",
       "exact_plan": {
         "decompressed_size": 32,
@@ -89337,7 +89337,7 @@
       "png_rel": "graphics/battle_anims/sprites/finger_2.png",
       "roundtrip_ok": true,
       "key": "stream_0239",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0239.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/finger_2.gfx.lz",
       "slot_sha1": "ec19baf7318bb713e48e9952fb9d18657986547c",
       "exact_plan": {
         "decompressed_size": 1536,
@@ -89952,7 +89952,7 @@
       "png_rel": "graphics/battle_anims/sprites/movement_waves.png",
       "roundtrip_ok": true,
       "key": "stream_0240",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0240.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/movement_waves.gfx.lz",
       "slot_sha1": "0ad0057ac1c858a55610e19ecb97ab69940ba011",
       "exact_plan": {
         "decompressed_size": 1536,
@@ -90563,7 +90563,7 @@
       "png_rel": "graphics/battle_anims/sprites/movement_waves_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0241",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0241.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/movement_waves_palette.pal.lz",
       "slot_sha1": "430ecf89c80c87916033d90b291f54d3d5fa0751",
       "exact_plan": {
         "decompressed_size": 32,
@@ -90596,7 +90596,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/scary_face_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0242",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0242.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/scary_face_palette.pal.lz",
       "slot_sha1": "865dc64c575633f38822e7553ff4d83af77e6546",
       "exact_plan": {
         "decompressed_size": 32,
@@ -90627,7 +90627,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/scary_face.png",
       "roundtrip_ok": true,
       "key": "stream_0243",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0243.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/scary_face.gfx.lz",
       "slot_sha1": "265eb7d4012a2d442a3fde014bfbf5251a81b184",
       "exact_plan": {
         "decompressed_size": 2560,
@@ -91554,7 +91554,7 @@
       "png_rel": "graphics/battle_anims/sprites/eye_sparkle_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0244",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0244.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/eye_sparkle_palette.pal.lz",
       "slot_sha1": "cb86e525a89529be44e5e86a4bcbc0e6f5bf0610",
       "exact_plan": {
         "decompressed_size": 32,
@@ -91589,7 +91589,7 @@
       "png_rel": "graphics/battle_anims/sprites/eye_sparkle.png",
       "roundtrip_ok": true,
       "key": "stream_0245",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0245.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/eye_sparkle.gfx.lz",
       "slot_sha1": "54b03295d553f92f41f6bb186f13122b88d6b598",
       "exact_plan": {
         "decompressed_size": 512,
@@ -91872,7 +91872,7 @@
       "png_rel": "graphics/battle_anims/sprites/anger.png",
       "roundtrip_ok": true,
       "key": "stream_0246",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0246.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/anger.gfx.lz",
       "slot_sha1": "bd8bd4feff9da5a9f919bbd28a372d2799e5d2c5",
       "exact_plan": {
         "decompressed_size": 128,
@@ -91991,7 +91991,7 @@
       "png_rel": "graphics/battle_anims/sprites/anger_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0247",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0247.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/anger_palette.pal.lz",
       "slot_sha1": "cb86e525a89529be44e5e86a4bcbc0e6f5bf0610",
       "exact_plan": {
         "decompressed_size": 32,
@@ -92026,7 +92026,7 @@
       "png_rel": "graphics/battle_anims/sprites/conversion.png",
       "roundtrip_ok": true,
       "key": "stream_0248",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0248.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/conversion.gfx.lz",
       "slot_sha1": "3f7cd4dfda854201f992e48bf3d37ad86cbfb7c4",
       "exact_plan": {
         "decompressed_size": 128,
@@ -92101,7 +92101,7 @@
       "png_rel": "graphics/battle_anims/sprites/conversion_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0249",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0249.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/conversion_palette.pal.lz",
       "slot_sha1": "d41426ddaddeb268c658f14a05dc7da690a3be69",
       "exact_plan": {
         "decompressed_size": 32,
@@ -92136,7 +92136,7 @@
       "png_rel": "graphics/battle_anims/sprites/angel_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0250",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0250.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/angel_palette.pal.lz",
       "slot_sha1": "897e6adbbc6b601258130356d0843c2f725af475",
       "exact_plan": {
         "decompressed_size": 32,
@@ -92171,7 +92171,7 @@
       "png_rel": "graphics/battle_anims/sprites/angel.png",
       "roundtrip_ok": true,
       "key": "stream_0251",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0251.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/angel.gfx.lz",
       "slot_sha1": "b871bfa76c16b0e52ecb21cca0d411a84f1152c3",
       "exact_plan": {
         "decompressed_size": 512,
@@ -92414,7 +92414,7 @@
       "png_rel": "graphics/battle_anims/sprites/devil_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0252",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0252.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/devil_palette.pal.lz",
       "slot_sha1": "0922f9adb099eaa8049127961729d88c0a4bbb9f",
       "exact_plan": {
         "decompressed_size": 32,
@@ -92449,7 +92449,7 @@
       "png_rel": "graphics/battle_anims/sprites/devil.png",
       "roundtrip_ok": true,
       "key": "stream_0253",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0253.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/devil.gfx.lz",
       "slot_sha1": "e49df026ce2ae643b04c87bb216f2b18341256a8",
       "exact_plan": {
         "decompressed_size": 1024,
@@ -92948,7 +92948,7 @@
       "png_rel": "graphics/battle_anims/sprites/swipe.png",
       "roundtrip_ok": true,
       "key": "stream_0254",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0254.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/swipe.gfx.lz",
       "slot_sha1": "edb0e296e7e0471eac4542df8ced78a676c527bc",
       "exact_plan": {
         "decompressed_size": 2560,
@@ -93799,7 +93799,7 @@
       "png_rel": "graphics/battle_anims/sprites/swipe_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0255",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0255.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/swipe_palette.pal.lz",
       "slot_sha1": "cb86e525a89529be44e5e86a4bcbc0e6f5bf0610",
       "exact_plan": {
         "decompressed_size": 32,
@@ -93834,7 +93834,7 @@
       "png_rel": "graphics/battle_anims/sprites/roots_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0256",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0256.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/roots_palette.pal.lz",
       "slot_sha1": "729dc74c09f0af28fa73f774f3e3fd3ee72cb102",
       "exact_plan": {
         "decompressed_size": 32,
@@ -93869,7 +93869,7 @@
       "png_rel": "graphics/battle_anims/sprites/roots.png",
       "roundtrip_ok": true,
       "key": "stream_0257",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0257.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/roots.gfx.lz",
       "slot_sha1": "9fa558c853b15357888ccd3b39268189204bf0d6",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -94560,7 +94560,7 @@
       "png_rel": "graphics/battle_anims/sprites/item_bag_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0258",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0258.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/item_bag_palette.pal.lz",
       "slot_sha1": "c3dc2d121a9a46a78e390cf5ea62694d1611e17a",
       "exact_plan": {
         "decompressed_size": 32,
@@ -94595,7 +94595,7 @@
       "png_rel": "graphics/battle_anims/sprites/item_bag.png",
       "roundtrip_ok": true,
       "key": "stream_0259",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0259.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/item_bag.gfx.lz",
       "slot_sha1": "13d24bdaccf681703cad9ab1143cfe28676f2e04",
       "exact_plan": {
         "decompressed_size": 512,
@@ -94802,7 +94802,7 @@
       "png_rel": "graphics/battle_anims/sprites/tri_attack_triangle_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0260",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0260.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/tri_attack_triangle_palette.pal.lz",
       "slot_sha1": "07a614e52fb1c97dc2c91b762d544af7b1667344",
       "exact_plan": {
         "decompressed_size": 32,
@@ -94832,7 +94832,7 @@
       "png_rel": "graphics/battle_anims/sprites/tri_attack_triangle.png",
       "roundtrip_ok": true,
       "key": "stream_0261",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0261.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/tri_attack_triangle.gfx.lz",
       "slot_sha1": "c4d512d19f04f61831d762fea4d09c0542b2eb67",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -95467,7 +95467,7 @@
       "png_rel": "graphics/battle_anims/sprites/letter_z_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0262",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0262.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/letter_z_palette.pal.lz",
       "slot_sha1": "e685180a7a79e1f8f933a0a8c011c0466c1262f1",
       "exact_plan": {
         "decompressed_size": 32,
@@ -95502,7 +95502,7 @@
       "png_rel": "graphics/battle_anims/sprites/letter_z.png",
       "roundtrip_ok": true,
       "key": "stream_0263",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0263.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/letter_z.gfx.lz",
       "slot_sha1": "9314976e3db0ad22627e3c317bb08985286b0718",
       "exact_plan": {
         "decompressed_size": 512,
@@ -95729,7 +95729,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/impact_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0264",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0264.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/impact_palette.pal.lz",
       "slot_sha1": "d049631b477b3872b193f7f2a9f16f9812338f0e",
       "exact_plan": {
         "decompressed_size": 32,
@@ -95759,7 +95759,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/impact.png",
       "roundtrip_ok": true,
       "key": "stream_0265",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0265.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/impact.gfx.lz",
       "slot_sha1": "f6ffedd00cd9e2290bdd4daa23ef26d6911fe16a",
       "exact_plan": {
         "decompressed_size": 8192,
@@ -100284,7 +100284,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/impact_opponent.tilemap.u16",
       "roundtrip_ok": true,
       "key": "stream_0266",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0266.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/impact_opponent.tilemap.lz",
       "slot_sha1": "3eb07a42dfde8c6abe428fc27e89b009ececa3c9",
       "exact_plan": {
         "decompressed_size": 1280,
@@ -100517,7 +100517,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/impact_player.tilemap.u16",
       "roundtrip_ok": true,
       "key": "stream_0267",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0267.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/impact_player.tilemap.lz",
       "slot_sha1": "a1c9a6594edde516b2a929dee899c82381e193ee",
       "exact_plan": {
         "decompressed_size": 1280,
@@ -100774,7 +100774,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/impact_contests.tilemap.u16",
       "roundtrip_ok": true,
       "key": "stream_0268",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0268.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/impact_contests.tilemap.lz",
       "slot_sha1": "dac40895acea168234c2fbc49a7df785937c0027",
       "exact_plan": {
         "decompressed_size": 1280,
@@ -101037,7 +101037,7 @@
       "png_rel": "graphics/battle_anims/sprites/jagged_music_note.png",
       "roundtrip_ok": true,
       "key": "stream_0269",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0269.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/jagged_music_note.gfx.lz",
       "slot_sha1": "475adc158f7b60e97c89336b3b2c6dad35a0c904",
       "exact_plan": {
         "decompressed_size": 1024,
@@ -101392,7 +101392,7 @@
       "png_rel": "graphics/battle_anims/sprites/jagged_music_note_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0270",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0270.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/jagged_music_note_palette.pal.lz",
       "slot_sha1": "3757158ddf09a7f457aa24775bc73c72f5426592",
       "exact_plan": {
         "decompressed_size": 32,
@@ -101422,7 +101422,7 @@
       "png_rel": "graphics/battle_anims/sprites/spotlight.png",
       "roundtrip_ok": true,
       "key": "stream_0271",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0271.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/spotlight.gfx.lz",
       "slot_sha1": "7aa4e2b40f01254af5ccab7b32469ad2ba2e3194",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -102033,7 +102033,7 @@
       "png_rel": "graphics/battle_anims/sprites/pokeball.png",
       "roundtrip_ok": true,
       "key": "stream_0272",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0272.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/pokeball.gfx.lz",
       "slot_sha1": "53dddefee306e346f3e28b8d590bf68b33f2d726",
       "exact_plan": {
         "decompressed_size": 128,
@@ -102080,7 +102080,7 @@
       "png_rel": "graphics/battle_anims/sprites/pokeball_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0273",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0273.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/pokeball_palette.pal.lz",
       "slot_sha1": "e6eaf18508903ece539f47f63fe5c7b569db98b1",
       "exact_plan": {
         "decompressed_size": 32,
@@ -102119,7 +102119,7 @@
       "png_rel": "graphics/battle_anims/sprites/rapid_spin.png",
       "roundtrip_ok": true,
       "key": "stream_0274",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0274.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/rapid_spin.gfx.lz",
       "slot_sha1": "c1b83c1025b925464ba9f7802b0a8597b9ef06fe",
       "exact_plan": {
         "decompressed_size": 768,
@@ -102550,7 +102550,7 @@
       "png_rel": "graphics/battle_anims/sprites/rapid_spin_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0275",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0275.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/rapid_spin_palette.pal.lz",
       "slot_sha1": "a9dcbf34932bf239964f5e91d9b6aba758b7c9a5",
       "exact_plan": {
         "decompressed_size": 32,
@@ -102585,7 +102585,7 @@
       "png_rel": "graphics/battle_anims/sprites/milk_bottle.png",
       "roundtrip_ok": true,
       "key": "stream_0276",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0276.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/milk_bottle.gfx.lz",
       "slot_sha1": "7370731708e5d70aca8a162e5ffdb459c8ba6e57",
       "exact_plan": {
         "decompressed_size": 512,
@@ -102808,7 +102808,7 @@
       "png_rel": "graphics/battle_anims/sprites/milk_bottle_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0277",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0277.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/milk_bottle_palette.pal.lz",
       "slot_sha1": "21c90c3a7ce15d72c0c390253801ffd0d93a2f8e",
       "exact_plan": {
         "decompressed_size": 32,
@@ -102838,7 +102838,7 @@
       "png_rel": "graphics/battle_anims/sprites/wisp_fire.png",
       "roundtrip_ok": true,
       "key": "stream_0278",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0278.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/wisp_fire.gfx.lz",
       "slot_sha1": "0f81127bfed54cc486a45b98e4cde0e6f4a9a902",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -103817,7 +103817,7 @@
       "png_rel": "graphics/battle_anims/sprites/wisp_orb_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0279",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0279.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/wisp_orb_palette.pal.lz",
       "slot_sha1": "514f705984f5cf0a7038919be7b44e7342a5a0f6",
       "exact_plan": {
         "decompressed_size": 32,
@@ -103852,7 +103852,7 @@
       "png_rel": "graphics/battle_anims/sprites/wisp_orb.png",
       "roundtrip_ok": true,
       "key": "stream_0280",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0280.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/wisp_orb.gfx.lz",
       "slot_sha1": "747250dd4b52aff59205120b46e047c08ef4dd22",
       "exact_plan": {
         "decompressed_size": 896,
@@ -104451,7 +104451,7 @@
       "png_rel": "graphics/battle_anims/sprites/gold_stars.png",
       "roundtrip_ok": true,
       "key": "stream_0281",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0281.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/gold_stars.gfx.lz",
       "slot_sha1": "399195490a6eb3955709c0052f76c748dbcb80a3",
       "exact_plan": {
         "decompressed_size": 192,
@@ -104614,7 +104614,7 @@
       "png_rel": "graphics/battle_anims/sprites/gold_stars_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0282",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0282.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/gold_stars_palette.pal.lz",
       "slot_sha1": "16ef9141992c9e895fefe5fb056ea15bb2161fa6",
       "exact_plan": {
         "decompressed_size": 32,
@@ -104649,7 +104649,7 @@
       "png_rel": "graphics/battle_anims/sprites/eclipsing_orb.png",
       "roundtrip_ok": true,
       "key": "stream_0283",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0283.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/eclipsing_orb.gfx.lz",
       "slot_sha1": "ecc8b8d4cf79adc5c82bde34e9cea754ea2cc783",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -105368,7 +105368,7 @@
       "png_rel": "graphics/battle_anims/sprites/eclipsing_orb_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0284",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0284.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/eclipsing_orb_palette.pal.lz",
       "slot_sha1": "9357fb8aa9253d29924d2e060b7a2736fd231d06",
       "exact_plan": {
         "decompressed_size": 32,
@@ -105403,7 +105403,7 @@
       "png_rel": "graphics/battle_anims/sprites/pink_petal.png",
       "roundtrip_ok": true,
       "key": "stream_0285",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0285.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/pink_petal.gfx.lz",
       "slot_sha1": "8e3004b47ac6ff2c13ebb5809f852a26a00782c5",
       "exact_plan": {
         "decompressed_size": 128,
@@ -105502,7 +105502,7 @@
       "png_rel": "graphics/battle_anims/sprites/pink_petal_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0286",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0286.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/pink_petal_palette.pal.lz",
       "slot_sha1": "59f2fd73b47dd7e317a8648f9b429a273c28c30b",
       "exact_plan": {
         "decompressed_size": 32,
@@ -105537,7 +105537,7 @@
       "png_rel": "graphics/battle_anims/sprites/gray_orb.png",
       "roundtrip_ok": true,
       "key": "stream_0287",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0287.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/gray_orb.gfx.lz",
       "slot_sha1": "b3dc2a9f97ca7b9552cff5e62be6990831a43441",
       "exact_plan": {
         "decompressed_size": 96,
@@ -105596,7 +105596,7 @@
       "png_rel": "graphics/battle_anims/sprites/gray_orb_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0288",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0288.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/gray_orb_palette.pal.lz",
       "slot_sha1": "67b4b84571bd865ee1ead6ec4b9b62523439db03",
       "exact_plan": {
         "decompressed_size": 32,
@@ -105631,7 +105631,7 @@
       "png_rel": "graphics/battle_anims/sprites/blue_orb_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0289",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0289.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/blue_orb_palette.pal.lz",
       "slot_sha1": "cbf450a99331c14476aaf5b2e95eb8d27afe2df3",
       "exact_plan": {
         "decompressed_size": 32,
@@ -105666,7 +105666,7 @@
       "png_rel": "graphics/battle_anims/sprites/red_orb_2_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0290",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0290.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/red_orb_2_palette.pal.lz",
       "slot_sha1": "e6fcaf81ac8e7113ba11157931f6678ee6ae37e5",
       "exact_plan": {
         "decompressed_size": 32,
@@ -105701,7 +105701,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/drill.png",
       "roundtrip_ok": true,
       "key": "stream_0291",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0291.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/drill.gfx.lz",
       "slot_sha1": "41e3c8cfdc3a4f3a179fa0d20fd08e927efb605f",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -106256,7 +106256,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/drill_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0292",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0292.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/drill_palette.pal.lz",
       "slot_sha1": "204f055e72b3bc04a0535a6b1be1714cf51c424e",
       "exact_plan": {
         "decompressed_size": 32,
@@ -106291,7 +106291,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/sky_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0293",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0293.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/sky_palette.pal.lz",
       "slot_sha1": "1486b57615f089a8c882d49ccb7cd83870e71f44",
       "exact_plan": {
         "decompressed_size": 32,
@@ -106319,7 +106319,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/drill.tilemap.u16",
       "roundtrip_ok": true,
       "key": "stream_0294",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0294.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/drill.tilemap.lz",
       "slot_sha1": "7ca8007470d8d91990e4946b83eddbc97cbdad6b",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -106852,7 +106852,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/drill_contests.tilemap.u16",
       "roundtrip_ok": true,
       "key": "stream_0295",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0295.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/drill_contests.tilemap.lz",
       "slot_sha1": "348c4239f95ad65625152a15fa3fc196c6f1ec0c",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -107383,7 +107383,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/aurora.png",
       "roundtrip_ok": true,
       "key": "stream_0296",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0296.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/aurora.gfx.lz",
       "slot_sha1": "b9a9f358bced5c33d9ee42ea3f7f6d7dee42f398",
       "exact_plan": {
         "decompressed_size": 4096,
@@ -110014,7 +110014,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/aurora_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0297",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0297.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/aurora_palette.pal.lz",
       "slot_sha1": "4fc7fb5a62014b014500955f35e931ada1d5d67d",
       "exact_plan": {
         "decompressed_size": 32,
@@ -110047,7 +110047,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/aurora.tilemap.u16",
       "roundtrip_ok": true,
       "key": "stream_0298",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0298.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/aurora.tilemap.lz",
       "slot_sha1": "53d66070c16f371e2fe14a1bf5af4901972d69bc",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -110524,7 +110524,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/highspeed_opponent.tilemap.u16",
       "roundtrip_ok": true,
       "key": "stream_0299",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0299.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/highspeed_opponent.tilemap.lz",
       "slot_sha1": "bd989654984cf270834c88d8fde9ca823dca30e3",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -110915,7 +110915,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/highspeed_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0300",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0300.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/highspeed_palette.pal.lz",
       "slot_sha1": "4ea8911a85505bcbef5fe9a355d1f34fb51f5c19",
       "exact_plan": {
         "decompressed_size": 32,
@@ -110950,7 +110950,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/bug_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0301",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0301.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/bug_palette.pal.lz",
       "slot_sha1": "6943685a2d3fc133f5070a915527424753a93017",
       "exact_plan": {
         "decompressed_size": 32,
@@ -110985,7 +110985,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/highspeed.png",
       "roundtrip_ok": true,
       "key": "stream_0302",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0302.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/highspeed.gfx.lz",
       "slot_sha1": "486b3cb884b3ac0d19b74f657115d27430353abf",
       "exact_plan": {
         "decompressed_size": 4096,
@@ -113018,7 +113018,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/highspeed_player.tilemap.u16",
       "roundtrip_ok": true,
       "key": "stream_0303",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0303.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/highspeed_player.tilemap.lz",
       "slot_sha1": "73b186570b6cd0970963f1f0b787cc1b5dc0d497",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -113409,7 +113409,7 @@
       "png_rel": "graphics/battle_anims/masks/light_beam.png",
       "roundtrip_ok": true,
       "key": "stream_0304",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0304.lz",
+      "build_rel": "build/graphics/battle_anims/masks/exact_lz/light_beam.gfx.lz",
       "slot_sha1": "8b1112b5eefa183f66c3eb8414189aa83859d05c",
       "exact_plan": {
         "decompressed_size": 640,
@@ -113666,7 +113666,7 @@
       "png_rel": "graphics/battle_anims/masks/light_beam_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0305",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0305.lz",
+      "build_rel": "build/graphics/battle_anims/masks/exact_lz/light_beam_palette.pal.lz",
       "slot_sha1": "92de23e7dd95508d140a62b697fd6fee70e0420c",
       "exact_plan": {
         "decompressed_size": 32,
@@ -113700,7 +113700,7 @@
       "png_rel": "graphics/battle_anims/masks/light_beam.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0306",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0306.lz",
+      "build_rel": "build/graphics/battle_anims/masks/exact_lz/light_beam.tilemap.lz",
       "slot_sha1": "071ebc961d6c417f52fdd0e209f3f36628ba03a6",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -114189,7 +114189,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/guillotine_opponent.tilemap.u16",
       "roundtrip_ok": true,
       "key": "stream_0307",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0307.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/guillotine_opponent.tilemap.lz",
       "slot_sha1": "94e40a4c6e4647ee1fb1cdbcc7870c19fea812ec",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -114658,7 +114658,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/guillotine_player.tilemap.u16",
       "roundtrip_ok": true,
       "key": "stream_0308",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0308.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/guillotine_player.tilemap.lz",
       "slot_sha1": "671f33f086530550644c986d1784dae8ea2a880f",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -115067,7 +115067,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/guillotine_contests.tilemap.u16",
       "roundtrip_ok": true,
       "key": "stream_0309",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0309.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/guillotine_contests.tilemap.lz",
       "slot_sha1": "baaf3be7d27276acbdd367517a217042aa8163c6",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -115494,7 +115494,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/guillotine.png",
       "roundtrip_ok": true,
       "key": "stream_0310",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0310.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/guillotine.gfx.lz",
       "slot_sha1": "a29c9d3541ac3818d5492093e17119f96c5d5e97",
       "exact_plan": {
         "decompressed_size": 8192,
@@ -119701,7 +119701,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/guillotine_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0311",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0311.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/guillotine_palette.pal.lz",
       "slot_sha1": "272482777f2b7b6b83976d6cdbd6d7e416b31ae9",
       "exact_plan": {
         "decompressed_size": 32,
@@ -119736,7 +119736,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/thunder.png",
       "roundtrip_ok": true,
       "key": "stream_0312",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0312.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/thunder.gfx.lz",
       "slot_sha1": "bba173f9af890d58f3e14df92bc39e886ba553a7",
       "exact_plan": {
         "decompressed_size": 5120,
@@ -123055,7 +123055,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/thunder_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0313",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0313.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/thunder_palette.pal.lz",
       "slot_sha1": "bf9e7eddf0ad0218d4d186c612898282d313ae41",
       "exact_plan": {
         "decompressed_size": 32,
@@ -123088,7 +123088,7 @@
       "png_rel": "graphics/battle_anims/backgrounds/thunder.tilemap.u16",
       "roundtrip_ok": true,
       "key": "stream_0314",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0314.lz",
+      "build_rel": "build/graphics/battle_anims/backgrounds/exact_lz/thunder.tilemap.lz",
       "slot_sha1": "9c2715837d0785c87cbaa236b44999f236c9437a",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -123479,7 +123479,7 @@
       "png_rel": "graphics/battle_anims/sprites/pain_split.png",
       "roundtrip_ok": true,
       "key": "stream_0315",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0315.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/pain_split.gfx.lz",
       "slot_sha1": "2959a6d640a2a8cd7e73842cc4ee2bd4bd7bacf8",
       "exact_plan": {
         "decompressed_size": 384,
@@ -123702,7 +123702,7 @@
       "png_rel": "graphics/battle_anims/sprites/pain_split_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0316",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0316.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/pain_split_palette.pal.lz",
       "slot_sha1": "cb86e525a89529be44e5e86a4bcbc0e6f5bf0610",
       "exact_plan": {
         "decompressed_size": 32,
@@ -123737,7 +123737,7 @@
       "png_rel": "graphics/battle_anims/sprites/hands_and_feet.png",
       "roundtrip_ok": true,
       "key": "stream_0317",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0317.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/hands_and_feet.gfx.lz",
       "slot_sha1": "1a681a0f9e5667f4d3b136bb660d7aad2a3af332",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -124652,7 +124652,7 @@
       "png_rel": "graphics/battle_anims/sprites/hands_and_feet_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0318",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0318.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/hands_and_feet_palette.pal.lz",
       "slot_sha1": "77998b4d0bd8670d17eb1647e23fe1ac3f415c93",
       "exact_plan": {
         "decompressed_size": 32,
@@ -124687,7 +124687,7 @@
       "png_rel": "graphics/battle_anims/sprites/confetti.png",
       "roundtrip_ok": true,
       "key": "stream_0319",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0319.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/confetti.gfx.lz",
       "slot_sha1": "d920cc45e62e3c3ed3adf420fb5d8630a0d9511b",
       "exact_plan": {
         "decompressed_size": 384,
@@ -124906,7 +124906,7 @@
       "png_rel": "graphics/battle_anims/sprites/confetti_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0320",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0320.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/confetti_palette.pal.lz",
       "slot_sha1": "74390cfb663174265df16f3a4a4b56321f0ad0d2",
       "exact_plan": {
         "decompressed_size": 32,
@@ -124939,7 +124939,7 @@
       "png_rel": "graphics/battle_anims/sprites/substitute_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0321",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0321.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/substitute_palette.pal.lz",
       "slot_sha1": "adc0804e7dc32337581c76bf610e41eb5616efb7",
       "exact_plan": {
         "decompressed_size": 32,
@@ -124975,7 +124975,7 @@
       "png_rel": "graphics/battle_anims/sprites/substitute.png",
       "roundtrip_ok": true,
       "key": "stream_0322",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0322.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/substitute.gfx.lz",
       "slot_sha1": "944e89d790c5a497336e5e83a8a15db0bc7b546f",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -125542,7 +125542,7 @@
       "png_rel": "graphics/battle_anims/sprites/substitute_back.png",
       "roundtrip_ok": true,
       "key": "stream_0323",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0323.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/substitute_back.gfx.lz",
       "slot_sha1": "4ac1f835c99f0abb80b0775d47c15910f7701549",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -126157,7 +126157,7 @@
       "png_rel": "graphics/battle_anims/sprites/green_star.png",
       "roundtrip_ok": true,
       "key": "stream_0324",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0324.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/green_star.gfx.lz",
       "slot_sha1": "bf41db09f01182cbd47fed2f91a118555e19bc62",
       "exact_plan": {
         "decompressed_size": 512,
@@ -126444,7 +126444,7 @@
       "png_rel": "graphics/battle_anims/sprites/green_star_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0325",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0325.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/green_star_palette.pal.lz",
       "slot_sha1": "b926a1ed80801705859da851fabe9d645d633a55",
       "exact_plan": {
         "decompressed_size": 32,
@@ -126479,7 +126479,7 @@
       "png_rel": "graphics/misc/confetti.png",
       "roundtrip_ok": true,
       "key": "stream_0326",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0326.lz",
+      "build_rel": "build/graphics/misc/exact_lz/confetti.gfx.lz",
       "slot_sha1": "a93f6ebf92316898ab34215fdab2f35223af3a77",
       "exact_plan": {
         "decompressed_size": 544,
@@ -126828,7 +126828,7 @@
       "png_rel": "graphics/misc/confetti_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0327",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0327.lz",
+      "build_rel": "build/graphics/misc/exact_lz/confetti_palette.pal.lz",
       "slot_sha1": "f722991aeafe39dcfcb055a4acaf48623f4ebf90",
       "exact_plan": {
         "decompressed_size": 32,
@@ -126859,7 +126859,7 @@
       "png_rel": "graphics/battle_anims/sprites/pink_cloud.png",
       "roundtrip_ok": true,
       "key": "stream_0328",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0328.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/pink_cloud.gfx.lz",
       "slot_sha1": "a6d27e70a2750bf9e2e1af56dca169f805feda35",
       "exact_plan": {
         "decompressed_size": 512,
@@ -127066,7 +127066,7 @@
       "png_rel": "graphics/battle_anims/sprites/pink_cloud_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0329",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0329.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/pink_cloud_palette.pal.lz",
       "slot_sha1": "53839e79c90f8a291fe4ea586143b38fd7b5d785",
       "exact_plan": {
         "decompressed_size": 32,
@@ -127101,7 +127101,7 @@
       "png_rel": "graphics/battle_anims/sprites/sweat_drop.png",
       "roundtrip_ok": true,
       "key": "stream_0330",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0330.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/sweat_drop.gfx.lz",
       "slot_sha1": "6d54edd83455a129ee7ecb032f464ecb87cdbb81",
       "exact_plan": {
         "decompressed_size": 32,
@@ -127140,7 +127140,7 @@
       "png_rel": "graphics/battle_anims/sprites/sweat_drop_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0331",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0331.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/sweat_drop_palette.pal.lz",
       "slot_sha1": "12e630f8a846e327b773235593f04df40158c7cc",
       "exact_plan": {
         "decompressed_size": 32,
@@ -127175,7 +127175,7 @@
       "png_rel": "graphics/battle_anims/stat_change/tiles.png",
       "roundtrip_ok": true,
       "key": "stream_0332",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0332.lz",
+      "build_rel": "build/graphics/battle_anims/stat_change/exact_lz/tiles.gfx.lz",
       "slot_sha1": "7750de6456adfce529eba15685288c9edc4419b6",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -127928,7 +127928,7 @@
       "png_rel": "graphics/battle_anims/stat_change/increase.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0333",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0333.lz",
+      "build_rel": "build/graphics/battle_anims/stat_change/exact_lz/increase.tilemap.lz",
       "slot_sha1": "8d1a6d8380c7e15c330683658a93f1719e4b432b",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -128417,7 +128417,7 @@
       "png_rel": "graphics/battle_anims/stat_change/decrease.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0334",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0334.lz",
+      "build_rel": "build/graphics/battle_anims/stat_change/exact_lz/decrease.tilemap.lz",
       "slot_sha1": "2f5b3e2284f04a48a6278485b2fd9bf00b382b66",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -128906,7 +128906,7 @@
       "png_rel": "graphics/battle_anims/stat_change/defense_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0335",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0335.lz",
+      "build_rel": "build/graphics/battle_anims/stat_change/exact_lz/defense_palette.pal.lz",
       "slot_sha1": "af93de584d38ed35635e9ea1e62d9a7f431877fc",
       "exact_plan": {
         "decompressed_size": 32,
@@ -128940,7 +128940,7 @@
       "png_rel": "graphics/battle_anims/stat_change/attack_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0336",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0336.lz",
+      "build_rel": "build/graphics/battle_anims/stat_change/exact_lz/attack_palette.pal.lz",
       "slot_sha1": "298077ba978491c1607d27e8dff21148e833e906",
       "exact_plan": {
         "decompressed_size": 32,
@@ -128974,7 +128974,7 @@
       "png_rel": "graphics/battle_anims/stat_change/accuracy_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0337",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0337.lz",
+      "build_rel": "build/graphics/battle_anims/stat_change/exact_lz/accuracy_palette.pal.lz",
       "slot_sha1": "17eb5c437ed56d19100e74bc82b9628e974deef2",
       "exact_plan": {
         "decompressed_size": 32,
@@ -129008,7 +129008,7 @@
       "png_rel": "graphics/battle_anims/stat_change/speed_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0338",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0338.lz",
+      "build_rel": "build/graphics/battle_anims/stat_change/exact_lz/speed_palette.pal.lz",
       "slot_sha1": "6825859ce920f831efbf83e4447fe9ea23fbb239",
       "exact_plan": {
         "decompressed_size": 32,
@@ -129042,7 +129042,7 @@
       "png_rel": "graphics/battle_anims/stat_change/multiple_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0339",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0339.lz",
+      "build_rel": "build/graphics/battle_anims/stat_change/exact_lz/multiple_palette.pal.lz",
       "slot_sha1": "b39800479d465a604794e51afa82a470c3d5f88b",
       "exact_plan": {
         "decompressed_size": 32,
@@ -129076,7 +129076,7 @@
       "png_rel": "graphics/battle_anims/stat_change/evasion_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0340",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0340.lz",
+      "build_rel": "build/graphics/battle_anims/stat_change/exact_lz/evasion_palette.pal.lz",
       "slot_sha1": "444c2a1d3925e1f5b0c8ec83f75105a2aede6ea0",
       "exact_plan": {
         "decompressed_size": 32,
@@ -129110,7 +129110,7 @@
       "png_rel": "graphics/battle_anims/stat_change/sp_attack_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0341",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0341.lz",
+      "build_rel": "build/graphics/battle_anims/stat_change/exact_lz/sp_attack_palette.pal.lz",
       "slot_sha1": "892c1de97980b2d38da89888902fea2ef49d8260",
       "exact_plan": {
         "decompressed_size": 32,
@@ -129144,7 +129144,7 @@
       "png_rel": "graphics/battle_anims/stat_change/sp_defense_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0342",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0342.lz",
+      "build_rel": "build/graphics/battle_anims/stat_change/exact_lz/sp_defense_palette.pal.lz",
       "slot_sha1": "091d1d02c9f09215342398c6b210576b54cb2cac",
       "exact_plan": {
         "decompressed_size": 32,
@@ -129180,7 +129180,7 @@
       "png_rel": "graphics/battle_anims/masks/cure_bubbles.png",
       "roundtrip_ok": true,
       "key": "stream_0343",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0343.lz",
+      "build_rel": "build/graphics/battle_anims/masks/exact_lz/cure_bubbles.gfx.lz",
       "slot_sha1": "78c2af4c447357acf5abda5986d30622da7210a3",
       "exact_plan": {
         "decompressed_size": 512,
@@ -129505,7 +129505,7 @@
       "png_rel": "graphics/battle_anims/masks/cure_bubbles_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0344",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0344.lz",
+      "build_rel": "build/graphics/battle_anims/masks/exact_lz/cure_bubbles_palette.pal.lz",
       "slot_sha1": "6825859ce920f831efbf83e4447fe9ea23fbb239",
       "exact_plan": {
         "decompressed_size": 32,
@@ -129539,7 +129539,7 @@
       "png_rel": "graphics/battle_anims/masks/cure_bubbles.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0345",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0345.lz",
+      "build_rel": "build/graphics/battle_anims/masks/exact_lz/cure_bubbles.tilemap.lz",
       "slot_sha1": "97da2835dd167e5446606c70114bcabcc4473678",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -130030,7 +130030,7 @@
       "png_rel": "graphics/battle_anims/sprites/purple_scratch_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0346",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0346.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/purple_scratch_palette.pal.lz",
       "slot_sha1": "432c4ba0f2aa7bb00d67a3c6988d1a959b303ccb",
       "exact_plan": {
         "decompressed_size": 32,
@@ -130065,7 +130065,7 @@
       "png_rel": "graphics/battle_anims/sprites/purple_scratch.png",
       "roundtrip_ok": true,
       "key": "stream_0347",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0347.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/purple_scratch.gfx.lz",
       "slot_sha1": "92cec7e67144880b3803596d7347d0c3011aa992",
       "exact_plan": {
         "decompressed_size": 1536,
@@ -130616,7 +130616,7 @@
       "png_rel": "graphics/battle_anims/sprites/purple_swipe.png",
       "roundtrip_ok": true,
       "key": "stream_0348",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0348.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/purple_swipe.gfx.lz",
       "slot_sha1": "a42fb1f884b4141d6744247b01cda997e8455948",
       "exact_plan": {
         "decompressed_size": 4096,
@@ -132159,7 +132159,7 @@
       "png_rel": "graphics/battle_anims/sprites/guard_ring.png",
       "roundtrip_ok": true,
       "key": "stream_0349",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0349.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/guard_ring.gfx.lz",
       "slot_sha1": "ff6cf6c217408821ae233a1ac2b5a2b4a3de3c7b",
       "exact_plan": {
         "decompressed_size": 1024,
@@ -132462,7 +132462,7 @@
       "png_rel": "graphics/battle_anims/sprites/guard_ring_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0350",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0350.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/guard_ring_palette.pal.lz",
       "slot_sha1": "b775f73c9dcf1bf7035ab1f422bb309b5ce07055",
       "exact_plan": {
         "decompressed_size": 32,
@@ -132497,7 +132497,7 @@
       "png_rel": "graphics/battle_anims/sprites/tag_hand.png",
       "roundtrip_ok": true,
       "key": "stream_0351",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0351.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/tag_hand.gfx.lz",
       "slot_sha1": "78061d675c8ec66de49bd67c0929b8e4b2385ad5",
       "exact_plan": {
         "decompressed_size": 1024,
@@ -132980,7 +132980,7 @@
       "png_rel": "graphics/battle_anims/sprites/noise_line.png",
       "roundtrip_ok": true,
       "key": "stream_0352",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0352.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/noise_line.gfx.lz",
       "slot_sha1": "ca73abfacf07daa113f4abe193b5efe3cc57cf2c",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -133743,7 +133743,7 @@
       "png_rel": "graphics/battle_anims/masks/unused_level_up.png",
       "roundtrip_ok": true,
       "key": "stream_0353",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0353.lz",
+      "build_rel": "build/graphics/battle_anims/masks/exact_lz/unused_level_up.gfx.lz",
       "slot_sha1": "37d4202c55c9fd35e3d5bea6fab6359d60b0c6ed",
       "exact_plan": {
         "decompressed_size": 448,
@@ -133880,7 +133880,7 @@
       "png_rel": "graphics/battle_anims/masks/unused_level_up.tilemap.csv",
       "roundtrip_ok": true,
       "key": "stream_0354",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0354.lz",
+      "build_rel": "build/graphics/battle_anims/masks/exact_lz/unused_level_up.tilemap.lz",
       "slot_sha1": "b243ceeba1ab3a23aa486be9a6ac62676078c41b",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -134375,7 +134375,7 @@
       "png_rel": "graphics/battle_anims/sprites/small_red_eye.png",
       "roundtrip_ok": true,
       "key": "stream_0355",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0355.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/small_red_eye.gfx.lz",
       "slot_sha1": "8c283322758385283065a1be45dfbac456caf319",
       "exact_plan": {
         "decompressed_size": 32,
@@ -134418,7 +134418,7 @@
       "png_rel": "graphics/battle_anims/sprites/small_red_eye_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0356",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0356.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/small_red_eye_palette.pal.lz",
       "slot_sha1": "5cb4e30036ba36fc9a1135fe176b702cff15e9e3",
       "exact_plan": {
         "decompressed_size": 32,
@@ -134453,7 +134453,7 @@
       "png_rel": "graphics/battle_anims/sprites/hollow_orb.png",
       "roundtrip_ok": true,
       "key": "stream_0357",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0357.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/hollow_orb.gfx.lz",
       "slot_sha1": "58bb9025713d648919964fea25a0e7d73caf99c3",
       "exact_plan": {
         "decompressed_size": 128,
@@ -134576,7 +134576,7 @@
       "png_rel": "graphics/battle_anims/sprites/hollow_orb_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0358",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0358.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/hollow_orb_palette.pal.lz",
       "slot_sha1": "44485c91f606fd4b20c05077a576bb23a73b5ab3",
       "exact_plan": {
         "decompressed_size": 32,
@@ -134619,7 +134619,7 @@
       "png_rel": "graphics/battle_anims/sprites/x_sign.png",
       "roundtrip_ok": true,
       "key": "stream_0359",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0359.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/x_sign.gfx.lz",
       "slot_sha1": "f8824e169e004bd48fa46028e3cdf08c57ac8956",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -135366,7 +135366,7 @@
       "png_rel": "graphics/battle_anims/sprites/bluegreen_orb.png",
       "roundtrip_ok": true,
       "key": "stream_0360",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0360.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/bluegreen_orb.gfx.lz",
       "slot_sha1": "c851ee3cd416b16c2f26e83711a03a3f7b8f309d",
       "exact_plan": {
         "decompressed_size": 128,
@@ -135473,7 +135473,7 @@
       "png_rel": "graphics/battle_anims/sprites/bluegreen_orb_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0361",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0361.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/bluegreen_orb_palette.pal.lz",
       "slot_sha1": "f63d9e6e446217b5513605aee0ac37831b4911fa",
       "exact_plan": {
         "decompressed_size": 32,
@@ -135508,7 +135508,7 @@
       "png_rel": "graphics/battle_anims/sprites/paw_print.png",
       "roundtrip_ok": true,
       "key": "stream_0362",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0362.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/paw_print.gfx.lz",
       "slot_sha1": "2fdfdc7f9fb8df48c71bf0503ef6fd8973280cd8",
       "exact_plan": {
         "decompressed_size": 512,
@@ -135719,7 +135719,7 @@
       "png_rel": "graphics/battle_anims/sprites/paw_print_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0363",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0363.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/paw_print_palette.pal.lz",
       "slot_sha1": "d417b030c82103d49f7787b73c4fe0a77d43731c",
       "exact_plan": {
         "decompressed_size": 32,
@@ -135754,7 +135754,7 @@
       "png_rel": "graphics/battle_anims/sprites/purple_flame.png",
       "roundtrip_ok": true,
       "key": "stream_0364",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0364.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/purple_flame.gfx.lz",
       "slot_sha1": "dea3a17fae64fbf294c871fe0d35e2426448c5d0",
       "exact_plan": {
         "decompressed_size": 1024,
@@ -136325,7 +136325,7 @@
       "png_rel": "graphics/battle_anims/sprites/purple_flame_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0365",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0365.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/purple_flame_palette.pal.lz",
       "slot_sha1": "cb564c15cafac6c1ebc1d4b7481f8530344bce7a",
       "exact_plan": {
         "decompressed_size": 32,
@@ -136360,7 +136360,7 @@
       "png_rel": "graphics/battle_anims/sprites/red_ball.png",
       "roundtrip_ok": true,
       "key": "stream_0366",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0366.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/red_ball.gfx.lz",
       "slot_sha1": "be78070fd19578e1d27be63209136b443645bfc8",
       "exact_plan": {
         "decompressed_size": 512,
@@ -136587,7 +136587,7 @@
       "png_rel": "graphics/battle_anims/sprites/red_ball_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0367",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0367.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/red_ball_palette.pal.lz",
       "slot_sha1": "016cb6655b815785f5be2754f65b115ad9ed987e",
       "exact_plan": {
         "decompressed_size": 32,
@@ -136622,7 +136622,7 @@
       "png_rel": "graphics/battle_anims/sprites/smellingsalt_effect.png",
       "roundtrip_ok": true,
       "key": "stream_0368",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0368.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/smellingsalt_effect.gfx.lz",
       "slot_sha1": "7f6c8dc36936912668f9c2f0bb96f069dcbb398b",
       "exact_plan": {
         "decompressed_size": 512,
@@ -136849,7 +136849,7 @@
       "png_rel": "graphics/battle_anims/sprites/smellingsalt_effect_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0369",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0369.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/smellingsalt_effect_palette.pal.lz",
       "slot_sha1": "faf5231025ad1ce221bcd0e3a4cb2ff72eff6511",
       "exact_plan": {
         "decompressed_size": 32,
@@ -136888,7 +136888,7 @@
       "png_rel": "graphics/battle_anims/sprites/magnifying_glass.png",
       "roundtrip_ok": true,
       "key": "stream_0370",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0370.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/magnifying_glass.gfx.lz",
       "slot_sha1": "9fad60d167d37fea92e3b603eccdc5d76ae5f7a1",
       "exact_plan": {
         "decompressed_size": 512,
@@ -137159,7 +137159,7 @@
       "png_rel": "graphics/battle_anims/sprites/magnifying_glass_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0371",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0371.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/magnifying_glass_palette.pal.lz",
       "slot_sha1": "acde43a5fa59e4d1d0373ae7d64d8df4bd8dc17c",
       "exact_plan": {
         "decompressed_size": 32,
@@ -137189,7 +137189,7 @@
       "png_rel": "graphics/battle_anims/sprites/meteor.png",
       "roundtrip_ok": true,
       "key": "stream_0372",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0372.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/meteor.gfx.lz",
       "slot_sha1": "1419e030c07545bd07cf0d744d7f55c5036caacb",
       "exact_plan": {
         "decompressed_size": 2048,
@@ -138220,7 +138220,7 @@
       "png_rel": "graphics/battle_anims/sprites/meteor_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0373",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0373.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/meteor_palette.pal.lz",
       "slot_sha1": "cb86e525a89529be44e5e86a4bcbc0e6f5bf0610",
       "exact_plan": {
         "decompressed_size": 32,
@@ -138255,7 +138255,7 @@
       "png_rel": "graphics/battle_anims/sprites/flat_rock.png",
       "roundtrip_ok": true,
       "key": "stream_0374",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0374.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/flat_rock.gfx.lz",
       "slot_sha1": "fb35300bdc01254b7d077f16a3fb5d56e4d620c4",
       "exact_plan": {
         "decompressed_size": 640,
@@ -138538,7 +138538,7 @@
       "png_rel": "graphics/battle_anims/sprites/flat_rock_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0375",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0375.lz",
+      "build_rel": "build/graphics/battle_anims/sprites/exact_lz/flat_rock_palette.pal.lz",
       "slot_sha1": "d191896990bb48fe58810a3516724946582f51db",
       "exact_plan": {
         "decompressed_size": 32,
@@ -138571,7 +138571,7 @@
       "png_rel": "graphics/battle_anims/unused/unknown_2_palette.png",
       "roundtrip_ok": true,
       "key": "stream_0376",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0376.lz",
+      "build_rel": "build/graphics/battle_anims/unused/exact_lz/unknown_2_palette.pal.lz",
       "slot_sha1": "86f08e2066f52a94b41808f50a67397d461ffc53",
       "exact_plan": {
         "decompressed_size": 32,
@@ -138602,7 +138602,7 @@
       "png_rel": "graphics/pokemon/bulbasaur/front_still_jp.png",
       "roundtrip_ok": true,
       "key": "stream_0377",
-      "build_rel": "build/graphics/unknown/moves_8117_lz77/exact/stream_0377.lz",
+      "build_rel": "build/graphics/pokemon/bulbasaur/exact_lz/front_still_jp.gfx.lz",
       "slot_sha1": "23d4e04e324f79f404c72288f1c7e8d50ee435c7",
       "exact_plan": {
         "decompressed_size": 2048,

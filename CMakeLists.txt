@@ -5960,7 +5960,7 @@ set(MOVES_8117_EXACT_ROOT
 set(MOVES_8117_EXACT_MANIFEST
     "${MOVES_8117_EXACT_ROOT}/manifests/moves_8117_lz77_exact_plan.json")
 set(MOVES_8117_EXACT_OUTPUT_DIR
-    "${CMAKE_BINARY_DIR}/graphics/unknown/moves_8117_lz77/exact")
+    "${CMAKE_BINARY_DIR}/graphics/moves_8117/exact")
 
 file(GLOB_RECURSE MOVES_8117_EXACT_EDITABLE_SOURCES
     CONFIGURE_DEPENDS

@@ -82,13 +82,14 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", required=True)
     parser.add_argument("--repo-root", required=True)
-    parser.add_argument("--output-dir", required=True)
+    parser.add_argument("--output-dir", required=False,
+                        help="legacy stamp directory; outputs use manifest build_rel")
     parser.add_argument("--quiet", action="store_true")
     args = parser.parse_args()
 
     manifest_path = Path(args.manifest).resolve()
     repo = Path(args.repo_root).resolve()
-    output_dir = Path(args.output_dir).resolve()
+    output_dir = Path(args.output_dir).resolve() if args.output_dir else (repo / "build/graphics/moves_8117/exact")
 
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     if manifest.get("format") != EXPECTED_FORMAT:
@@ -106,24 +107,30 @@ def main() -> None:
         raise ValueError("stream keys are not exactly stream_0000..stream_0377")
 
     output_dir.mkdir(parents=True, exist_ok=True)
-    expected_names = {f"{key}.lz" for key in expected_keys}
 
-    for path in output_dir.glob("stream_*.lz"):
-        if path.name not in expected_names:
-            path.unlink()
+    build_rels = [str(x.get("build_rel", "")) for x in streams]
+    if any(not x.startswith("build/graphics/") for x in build_rels):
+        raise ValueError("every moves/8117 build_rel must be a semantic build/graphics path")
+    if any("/unknown/" in x or "/stream_" in x for x in build_rels):
+        raise ValueError("opaque moves/8117 generated path remains in manifest")
+    if len(set(build_rels)) != EXPECTED_STREAMS:
+        raise ValueError("moves/8117 semantic build_rel paths are not unique")
 
     total = 0
+    generated = []
     for index, stream in enumerate(streams):
         key = str(stream["key"])
         data = generate_one(repo, stream)
-        atomic_write(output_dir / f"{key}.lz", data)
+        out = repo / str(stream["build_rel"])
+        atomic_write(out, data)
+        generated.append(out)
         total += len(data)
         if not args.quiet and ((index + 1) % 50 == 0 or index + 1 == len(streams)):
             print(f"[moves8117] generated {index + 1}/{len(streams)}")
 
-    actual = sorted(p.name for p in output_dir.glob("stream_*.lz"))
-    if actual != sorted(expected_names):
-        raise ValueError("generated output set is incomplete or unexpected")
+    missing = [str(p) for p in generated if not p.is_file()]
+    if missing:
+        raise ValueError(f"generated output set incomplete: {missing[:5]}")
 
     stamp = output_dir / ".moves_8117_exact.stamp"
     stamp.write_text(
