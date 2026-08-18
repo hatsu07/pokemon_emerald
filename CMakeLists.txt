@@ -615,17 +615,13 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
 
     # BEGIN EASY CHAT EXACT PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
-            "^build/graphics/easy_chat/(window|text_input_frame)[.]4bpp[.]lz$")
+            "^build/graphics/easy_chat/(window|text_input_frame|rectangle_cursor|mode|button_window|interview_frame)[.]4bpp[.]lz$")
         set(EASY_CHAT_STEM "${CMAKE_MATCH_1}")
         set(EASY_CHAT_INPUT
             "${CMAKE_SOURCE_DIR}/graphics/easy_chat/${EASY_CHAT_STEM}.png")
         set(EASY_CHAT_PLAN
             "${CMAKE_SOURCE_DIR}/graphics/easy_chat/lz77_exact_plans.json")
-        if("${EASY_CHAT_STEM}" STREQUAL "window")
-            set(EASY_CHAT_KEY "window_gfx")
-        else()
-            set(EASY_CHAT_KEY "text_input_frame_gfx")
-        endif()
+        set(EASY_CHAT_KEY "${EASY_CHAT_STEM}_gfx")
         add_custom_command(
             OUTPUT "${OUTPUT_ABS}"
             COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
