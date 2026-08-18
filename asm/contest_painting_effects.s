@@ -108,7 +108,7 @@ _08124EA4:
 	bl SetWarpDestinationToHealLocation
 	b _08124EE2
 	.align 2, 0
-_08124EC0: .4byte gContestPaintingEffectsData_0857D72C
+_08124EC0: .4byte sMapHealLocations
 _08124EC4: .4byte 0x02039E14
 _08124EC8:
 	adds r0, r2, r3
@@ -1490,7 +1490,7 @@ _0812598E:
 	add r0, r8
 	b _081259BE
 	.align 2, 0
-_081259A8: .4byte gContestPaintingEffectsData_0857D884
+_081259A8: .4byte sPointillismPoints
 _081259AC:
 	mov r0, r8
 	lsls r2, r0, #2
@@ -1615,7 +1615,7 @@ _08125A60:
 	beq _08125A9E
 	b _08125AE0
 	.align 2, 0
-_08125A94: .4byte gContestPaintingEffectsData_0857D884
+_08125A94: .4byte sPointillismPoints
 _08125A98:
 	cmp r0, #2
 	beq _08125AC2
