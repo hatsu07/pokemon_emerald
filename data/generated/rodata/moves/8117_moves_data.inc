@@ -415,9 +415,10 @@ gContestJudgeSymbolsGfx:
 	.globl gContestJudgeSymbolsPal
 gContestJudgeSymbolsPal:
 	.incbin "build/graphics/contest/exact_lz/judge_symbols_palette.pal.lz"
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	.byte 0x00, 0x00, 0x00, 0x00, 0x30, 0x03, 0x30, 0x03, 0x13, 0x31, 0x13, 0x31, 0x13, 0x11, 0x11, 0x31
-	.byte 0x13, 0x11, 0x11, 0x31, 0x30, 0x11, 0x11, 0x03, 0x00, 0x13, 0x31, 0x00, 0x00, 0x30, 0x03, 0x00
+	.globl gContestSliderHeart_Gfx
+gContestSliderHeart_Gfx: @ 0x08C19594
+	@ Contest appeal slider heart: one uncompressed 8x8 4bpp tile.
+	.incbin "build/graphics/contest/slider_heart.4bpp"
 	.globl gJPContestVoltageGfx
 gJPContestVoltageGfx:
 	.incbin "build/graphics/contest/japanese/exact_lz/voltage.gfx.lz"

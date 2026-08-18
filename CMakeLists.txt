@@ -5201,6 +5201,25 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
             VERBATIM)
 
+    # BEGIN CONTEST SLIDER HEART RAW 4BPP
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/contest/slider_heart.4bpp")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/contest/slider_heart.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+    # END CONTEST SLIDER HEART RAW 4BPP
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/link/(.+)\\.4bpp$")
         set(STEM "${CMAKE_MATCH_1}")
