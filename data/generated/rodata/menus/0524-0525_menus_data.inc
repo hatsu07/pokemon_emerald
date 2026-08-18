@@ -304,16 +304,14 @@ sSpriteSheet_GbaScreen: @ 0x0830D0B0
 	.2byte 0x1000 @ size
 	.2byte 0x15B4 @ GFX tag
 
-	.globl gTradeData_0830D0B8
-gTradeData_0830D0B8: @ 0x0830D0B8
-	@ analyzed canonical ROM range 0x0830D0B8-0x0830D0CF
-sSpriteTemplate_0830D0B8: @ 0x0830D0B8
+	.globl sSpriteTemplate_GbaScreenFlash_Long
+sSpriteTemplate_GbaScreenFlash_Long: @ 0x0830D0B8
+	@ Canonical trade GBA-screen flash sprite template using sAnims_GbaScreen_Long.
 	rodata_sprite_template 0x15B4, 0x15B3, sOamData_GbaScreen, sAnims_GbaScreen_Long, 0, gDummySpriteAffineAnimTable, sub_0807A574
 	@ pret/pokeemerald-jp direct xref for 0x0830D0D0: trade.s: sub_0807CA00
-	.globl gTradeData_0830D0D0
-gTradeData_0830D0D0: @ 0x0830D0D0
-	@ analyzed canonical ROM range 0x0830D0D0-0x0830D0E7
-sSpriteTemplate_0830D0D0: @ 0x0830D0D0
+	.globl sSpriteTemplate_GbaScreenFlash_Short
+sSpriteTemplate_GbaScreenFlash_Short: @ 0x0830D0D0
+	@ Canonical trade GBA-screen flash sprite template using sAnims_GbaScreen_Short.
 	rodata_sprite_template 0x15B4, 0x15B3, sOamData_GbaScreen, sAnims_GbaScreen_Short, 0, gDummySpriteAffineAnimTable, sub_0807A574
 	@ pret/pokeemerald-jp direct xref for 0x0830D0E8: trade.s: sub_0807A4EC
 	.globl sLinkMonShadow_Pal

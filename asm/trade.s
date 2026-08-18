@@ -9877,7 +9877,7 @@ _0807BD60:
 	ldr r1, [r7]
 	bl _0807C984
 	.align 2, 0
-_0807BD7C: .4byte gTradeData_0830D0B8
+_0807BD7C: .4byte sSpriteTemplate_GbaScreenFlash_Long
 _0807BD80:
 	ldr r2, _0807BDC0
 	ldr r0, [r7]
@@ -10807,7 +10807,7 @@ _0807C500:
 	strh r1, [r0]
 	b _0807C9EC
 	.align 2, 0
-_0807C520: .4byte gTradeData_0830D0B8
+_0807C520: .4byte sSpriteTemplate_GbaScreenFlash_Long
 _0807C524: .4byte 0x02031F40
 _0807C528:
 	ldr r2, _0807C564
@@ -12044,7 +12044,7 @@ _0807D13C:
 	ldr r1, [r7]
 	bl _0807DDD0
 	.align 2, 0
-_0807D15C: .4byte gTradeData_0830D0D0
+_0807D15C: .4byte sSpriteTemplate_GbaScreenFlash_Short
 _0807D160:
 	ldr r2, _0807D1A8
 	ldr r0, [r7]
@@ -13024,7 +13024,7 @@ _0807D94E:
 	strh r1, [r0]
 	b _0807DE38
 	.align 2, 0
-_0807D96C: .4byte gTradeData_0830D0B8
+_0807D96C: .4byte sSpriteTemplate_GbaScreenFlash_Long
 _0807D970: .4byte 0x02031F40
 _0807D974:
 	ldr r2, _0807D9B0
