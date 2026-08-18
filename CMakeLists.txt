@@ -4895,6 +4895,111 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${GBAGFX}"
             VERBATIM)
 
+    # BEGIN POKEMON 0789-0790 EDITABLE PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/map_popup/(wood|marble|stone|brick|underwater|stone2)(_outline)?[.]4bpp$")
+        set(MAP_POPUP_STEM "${CMAKE_MATCH_1}${CMAKE_MATCH_2}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/map_popup/${MAP_POPUP_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/map_popup/(wood|marble|stone|brick|underwater|stone2)[.]gbapal$")
+        set(MAP_POPUP_PAL_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/map_popup/${MAP_POPUP_PAL_STEM}_palette.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/map_popup/underwater_extra.gbapal")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/map_popup/underwater_extra_palette.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/bag/rotating_ball.4bpp")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/bag/rotating_ball.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/bag/rotating_ball.gbapal")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/bag/rotating_ball_palette.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/unused/cherry.4bpp")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/unused/cherry.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/unused/cherry.gbapal")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/unused/cherry_palette.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+    # END POKEMON 0789-0790 EDITABLE PIPELINE
+
     # END TRADE EDITABLE RAW ASSET PIPELINE
 
     elseif("${RELATIVE_OUTPUT}" MATCHES

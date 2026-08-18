@@ -71,7 +71,7 @@ AddBagVisualSprite: @ 0x080D4584
 	.align 2, 0
 _080D45B0: .4byte 0x0203CB20
 _080D45B4: .4byte 0x00000804
-_080D45B8: .4byte gItemMenuIconsData_0855A67C
+_080D45B8: .4byte sBagSpriteTemplate
 	thumb_func_end AddBagVisualSprite
 
 	thumb_func_start SetBagVisualPocketId
@@ -239,9 +239,9 @@ AddSwitchPocketRotatingBallSprite: @ 0x080D46B8
 	.align 2, 0
 _080D46F8: .4byte 0x0203CB20
 _080D46FC: .4byte 0x00000805
-_080D4700: .4byte gItemMenuIconsData_0855A6D0
-_080D4704: .4byte gItemMenuIconsData_0855A6D8
-_080D4708: .4byte gItemMenuIconsData_0855A6E0
+_080D4700: .4byte sRotatingBallTable
+_080D4704: .4byte sRotatingBallPaletteTable
+_080D4708: .4byte sRotatingBallSpriteTemplate
 _080D470C: .4byte 0x020205AC
 	thumb_func_end AddSwitchPocketRotatingBallSprite
 
@@ -287,7 +287,7 @@ SpriteCB_SwitchPocketRotatingBallInit: @ 0x080D4734
 	ldr r0, _080D4758
 	b _080D475E
 	.align 2, 0
-_080D4758: .4byte gItemMenuIconsData_0855A6C8
+_080D4758: .4byte sRotatingBallAnimCmds
 _080D475C:
 	ldr r0, _080D4790
 _080D475E:
@@ -314,7 +314,7 @@ _080D475E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080D4790: .4byte gItemMenuIconsData_0855A6CC
+_080D4790: .4byte sRotatingBallAnimCmds_FullRotation
 _080D4794: .4byte 0x080D4799
 	thumb_func_end SpriteCB_SwitchPocketRotatingBallInit
 
@@ -581,7 +581,7 @@ CreateBerryTagSprite: @ 0x080D4958
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080D498C: .4byte gItemMenuIconsData_0855A71C
+_080D498C: .4byte sBerryPicSpriteTemplate
 	thumb_func_end CreateBerryTagSprite
 
 	thumb_func_start FreeBerryTagSpritePalette
@@ -664,6 +664,6 @@ CreateBerryFlavorCircleSprite: @ 0x080D4A10
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080D4A2C: .4byte gItemMenuIconsData_0855A940
+_080D4A2C: .4byte sBerryCheckCircleSpriteTemplate
 	thumb_func_end CreateBerryFlavorCircleSprite
 

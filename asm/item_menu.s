@@ -755,13 +755,13 @@ _081AAEFA:
 	b _081AAF1E
 	.align 2, 0
 _081AAF04: .4byte 0x03005AF0
-_081AAF08: .4byte gItemMenuData_0855A664
+_081AAF08: .4byte gBagMaleSpriteSheet
 _081AAF0C:
 	ldr r0, _081AAF14
 	bl LoadCompressedSpriteSheet
 	b _081AAF1E
 	.align 2, 0
-_081AAF14: .4byte gItemMenuData_0855A66C
+_081AAF14: .4byte gBagFemaleSpriteSheet
 _081AAF18:
 	ldr r0, _081AAF30
 	bl LoadCompressedSpritePalette
@@ -776,7 +776,7 @@ _081AAF22:
 	strh r0, [r1]
 	b _081AAF54
 	.align 2, 0
-_081AAF30: .4byte gItemMenuData_0855A674
+_081AAF30: .4byte gBagPaletteTable
 _081AAF34: .4byte 0x0203CB20
 _081AAF38: .4byte 0x00000834
 _081AAF3C:

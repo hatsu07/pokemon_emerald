@@ -449,7 +449,7 @@ _08177EBE:
 	strh r0, [r1]
 	b _08177EE4
 	.align 2, 0
-_08177EC8: .4byte gBerryTagScreenData_0855A91C
+_08177EC8: .4byte gBerryCheckCircleSpriteSheet
 _08177ECC: .4byte 0x0203B9C0
 _08177ED0: .4byte 0x00001808
 _08177ED4:
@@ -458,7 +458,7 @@ _08177ED4:
 	movs r0, #1
 	b _08177EE6
 	.align 2, 0
-_08177EE0: .4byte gBerryTagScreenData_0855A924
+_08177EE0: .4byte gBerryCheckCirclePaletteTable
 _08177EE4:
 	movs r0, #0
 _08177EE6:

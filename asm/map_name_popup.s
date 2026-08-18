@@ -261,7 +261,7 @@ ShowMapNamePopUpWindow: @ 0x080D4234
 	b _080D4276
 	.align 2, 0
 _080D4258: .4byte 0x02036FB8
-_080D425C: .4byte gMapNamePopupData_0855A074
+_080D425C: .4byte sBattlePyramid_MapHeaderStrings
 _080D4260:
 	mov r4, sp
 	adds r4, #0xf
@@ -279,7 +279,7 @@ _080D4276:
 	bl StringCopy
 	b _080D429C
 	.align 2, 0
-_080D4280: .4byte gMapNamePopupData_0855A074
+_080D4280: .4byte sBattlePyramid_MapHeaderStrings
 _080D4284: .4byte 0x03005AF0
 _080D4288: .4byte 0x00000CB2
 _080D428C:
@@ -561,12 +561,12 @@ _080D448E:
 	bl LoadPalette
 	b _080D44FE
 	.align 2, 0
-_080D44D8: .4byte gMapNamePopupData_08559FC0
-_080D44DC: .4byte gMapNamePopupData_08558860
+_080D44D8: .4byte sMapSectionToThemeId_JP
+_080D44DC: .4byte sMapPopUp_OutlineTable
 _080D44E0: .4byte 0x0000021D
 _080D44E4: .4byte 0x080D42FD
 _080D44E8: .4byte 0x02036FB8
-_080D44EC: .4byte gMapNamePopupData_08559FA0
+_080D44EC: .4byte sMapPopUp_Palette_Underwater
 _080D44F0:
 	lsls r0, r4, #5
 	ldr r1, _080D4524
@@ -593,7 +593,7 @@ _080D44FE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080D4524: .4byte gMapNamePopupData_08559EE0
-_080D4528: .4byte gMapNamePopupData_085571E0
+_080D4524: .4byte sMapPopUp_PaletteTable
+_080D4528: .4byte sMapPopUp_Table
 	thumb_func_end LoadMapNamePopUpWindowBg
 
