@@ -1,406 +1,604 @@
 	@ pret/pokeemerald-jp direct xref for 0x08570C04: water.s: AnimTask_CreateRaindrops
+	@ semantic battle-animation reconstruction: water
+	@ ROM range 0x08570C04-0x08571197
+.Lsemantic_range_08570C04:
 	.globl gWaterData_08570C04
 gWaterData_08570C04: @ 0x08570C04
-	@ analyzed canonical ROM range 0x08570C04-0x08570E4B
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x27832783 @ +0x0
-	.4byte gOamData_AffineOff_ObjNormal_16x32 @ +0x4
-	.4byte 0x08570C00 @ +0x8
-	.4byte 0 @ +0xC
-	.4byte gDummySpriteAffineAnimTable @ +0x10
-	.4byte sub_08107A6C @ +0x14
+gRainDropSpriteTemplate: @ 0x08570C04
+	@ SpriteTemplate: tileTag=0x2783, paletteTag=0x2783
+	.2byte 0x2783, 0x2783
+	.4byte gBattleAnimOam_084FD060 @ oam
+	.4byte 0x08570C00 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08107A6D @ callback (sub_08107A6C)
+
 	.globl gBubbleAffineAnim
 gBubbleAffineAnim: @ 0x08570C1C
-	rodata_affine_anim_frame -5, -5, 0x0A00, 0
-	rodata_affine_anim_frame 5, 5, 0x0A00, 0
-	semantic_affine_animcmd_jump 0
+	@ union AffineAnimCmd stream
+	.2byte 0xFFFB, 0xFFFB, 0x0A00, 0x0000 @ AFFINE_FRAME(-5, -5, rot=0x00, duration=0)
+	.2byte 0x0005, 0x0005, 0x0A00, 0x0000 @ AFFINE_FRAME(5, 5, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
+
 	.globl gBubbleAffineAnims
 gBubbleAffineAnims: @ 0x08570C34
-	semantic_affine_anim_table_entry gBubbleAffineAnim
+	@ AffineAnimCmd pointer table
+	.4byte gBubbleAffineAnim @ [0]
+
 	.globl gBubbleAnim
 gBubbleAnim: @ 0x08570C38
-	rodata_anim_frame 0, 1
-	rodata_anim_frame 4, 5
-	rodata_anim_frame 8, 5
-	rodata_anim_end
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
+	.2byte 0x0004, 0x0005 @ ANIMCMD_FRAME(4, 5)
+	.2byte 0x0008, 0x0005 @ ANIMCMD_FRAME(8, 5)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
 	.globl gBubbleAnims
 gBubbleAnims: @ 0x08570C48
-	semantic_anim_table_entry gBubbleAnim
+	@ AnimCmd pointer table
+	.4byte gBubbleAnim @ [0]
+
 	.globl gBubbleSpriteTemplate
 gBubbleSpriteTemplate: @ 0x08570C4C
-	rodata_sprite_template 0x27A2, 0x27A2, gOamData_AffineNormal_ObjBlend_16x16, gBubbleAnims, 0, gBubbleAffineAnims, sub_08107AB0
-	@ ANALYSIS: RAW_BLOCK size=0x48
-	.4byte 0x00010000 @ +0x60
-	.4byte 0x0000FFFF @ +0x64
-	.4byte 0x00010004 @ +0x68
-	.4byte 0x0000FFFF @ +0x6C
-	.4byte 0x08570C64 @ +0x70
-	.4byte 0x08570C6C @ +0x74
-	.4byte 0 @ +0x78
-	.4byte 0x00000100 @ +0x7C
-	.4byte 0x00600060 @ +0x80
-	.4byte 0x00000100 @ +0x84
-	.4byte 0x00007FFF @ +0x88
-	.4byte 0 @ +0x8C
-	.4byte 0x08570C7C @ +0x90
-	.4byte 0x279C279C @ +0x94
-	.4byte gOamData_AffineDouble_ObjNormal_8x16 @ +0x98
-	.4byte 0x08570C74 @ +0x9C
-	.4byte 0 @ +0xA0
-	.4byte 0x08570C94 @ +0xA4
-	.4byte sub_08107C9C @ +0xA8
-	@ ANALYSIS: RAW_BLOCK size=0x28
-	.4byte 0x00010000 @ +0xAC
-	.4byte 0x00010004 @ +0xB0
-	.4byte 0x00010008 @ +0xB4
-	.4byte 0x0001000C @ +0xB8
-	.4byte 0x0000FFFE @ +0xBC
-	.4byte 0x08570CB0 @ +0xC0
-	.4byte 0x27A527A5 @ +0xC4
-	.4byte gOamData_AffineOff_ObjBlend_16x16 @ +0xC8
-	.4byte 0x08570CC4 @ +0xCC
-	.4byte 0 @ +0xD0
-	.4byte gDummySpriteAffineAnimTable @ +0xD4
-	.4byte sub_08107E3C @ +0xD8
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x28132813 @ +0xDC
-	.4byte gOamData_AffineOff_ObjBlend_16x16 @ +0xE0
-	.4byte 0x08570CC4 @ +0xE4
-	.4byte 0 @ +0xE8
-	.4byte gDummySpriteAffineAnimTable @ +0xEC
-	.4byte sub_08107E3C @ +0xF0
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x28182818 @ +0xF4
-	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0xF8
-	.4byte gDummySpriteAnimTable @ +0xFC
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x100
-	.4byte gDummySpriteAffineAnimTable @ +0x104
-	.4byte sub_08107E3C @ +0x108
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x28192819 @ +0x10C
-	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x110
-	.4byte gDummySpriteAnimTable @ +0x114
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x118
-	.4byte gDummySpriteAffineAnimTable @ +0x11C
-	.4byte sub_08107E3C @ +0x120
-	@ ANALYSIS: RAW_BLOCK size=0x24
-	.4byte 0x00020010 @ +0x124
-	.4byte 0x00020020 @ +0x128
-	.4byte 0x00020030 @ +0x12C
-	.4byte 0x0000FFFE @ +0x130
-	.4byte 0x08570D28 @ +0x134
-	.4byte 0x272D272D @ +0x138
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x13C
-	.4byte 0x08570D38 @ +0x140
-	.4byte 0 @ +0x144
-	.4byte gDummySpriteAffineAnimTable @ +0x148
-	.4byte sub_08107E3C @ +0x14C
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x27B527B5 @ +0x150
-	.4byte gOamData_AffineDouble_ObjNormal_16x32 @ +0x154
-	.4byte gDummySpriteAnimTable @ +0x158
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0x15C
-	.4byte 0x0856F004 @ +0x160
-	.4byte sub_08107E3C @ +0x164
-	@ ANALYSIS: RAW_BLOCK size=0x4C
-	.4byte 0x00030003 @ +0x168
-	.4byte 0x0000320A @ +0x16C
-	.4byte 0 @ +0x170
-	.4byte 0x00000A00 @ +0x174
-	.4byte 0xFFECFFEC @ +0x178
-	.4byte 0x000014F6 @ +0x17C
-	.4byte 0x00007FFF @ +0x180
-	.4byte 0 @ +0x184
-	.4byte 0x01500150 @ +0x188
-	.4byte 0 @ +0x18C
-	.4byte 0x00007FFF @ +0x190
-	.4byte 0 @ +0x194
-	.4byte 0x08570D6C @ +0x198
-	.4byte 0x08570D8C @ +0x19C
-	.4byte 0x27A527A5 @ +0x1A0
-	.4byte gOamData_AffineDouble_ObjBlend_16x16 @ +0x1A4
-	.4byte 0x08570CC4 @ +0x1A8
-	.4byte 0 @ +0x1AC
-	.4byte 0x08570D9C @ +0x1B0
-	.4byte sub_08107F80 @ +0x1B4
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0x27A527A5 @ +0x1B8
-	.4byte gOamData_AffineDouble_ObjBlend_16x16 @ +0x1BC
-	.4byte 0x08570CC4 @ +0x1C0
-	.4byte 0 @ +0x1C4
-	.4byte 0x08570DA0 @ +0x1C8
-	.4byte sub_08108010 @ +0x1CC
-	@ ANALYSIS: RAW_BLOCK size=0x28
-	.4byte 0x00010000 @ +0x1D0
-	.4byte 0x0000FFFF @ +0x1D4
-	.4byte 0x00010004 @ +0x1D8
-	.4byte 0x0000FFFF @ +0x1DC
-	.4byte 0x08570DD4 @ +0x1E0
-	.4byte 0x08570DDC @ +0x1E4
-	.4byte 0x27AB27AB @ +0x1E8
-	.4byte gOamData_AffineOff_ObjBlend_16x16 @ +0x1EC
-	.4byte 0x08570DE4 @ +0x1F0
-	.4byte 0 @ +0x1F4
-	.4byte gDummySpriteAffineAnimTable @ +0x1F8
-	.4byte sub_080A7174 @ +0x1FC
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0x27AB27AB @ +0x200
-	.4byte gOamData_AffineDouble_ObjBlend_16x16 @ +0x204
-	.4byte 0x08570DE8 @ +0x208
-	.4byte 0 @ +0x20C
-	.4byte 0x08571DEC @ +0x210
-	.4byte sub_081080E4 @ +0x214
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x279D279D @ +0x218
-	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x21C
-	.4byte 0x0857169C @ +0x220
-	.4byte 0 @ +0x224
-	.4byte gDummySpriteAffineAnimTable @ +0x228
-	.4byte sub_08108120 @ +0x22C
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x27AB27AB @ +0x230
-	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x234
-	.4byte gDummySpriteAnimTable @ +0x238
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x23C
-	.4byte gDummySpriteAffineAnimTable @ +0x240
-	.4byte sub_08108884 @ +0x244
-	@ pret/pokeemerald-jp direct xref for 0x08570E4C: water.s: sub_08108C58, sub_08108F6C, sub_08109310
+gWaterBubbleProjectileSpriteTemplate: @ 0x08570C4C
+	@ SpriteTemplate: tileTag=0x27A2, paletteTag=0x27A2
+	.2byte 0x27A2, 0x27A2
+	.4byte gBattleAnimOam_AffineOn_ObjBlend_8x8 @ oam
+	.4byte gBubbleAnims @ anims
+	.4byte 0 @ images
+	.4byte gBubbleAffineAnims @ affineAnims
+	.4byte 0x08107AB1 @ callback (sub_08107AB0)
+
+sAnim_AuroraBeamRing_0_08570C64: @ 0x08570C64
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_AuroraBeamRing_1_08570C6C: @ 0x08570C6C
+	@ union AnimCmd stream
+	.2byte 0x0004, 0x0001 @ ANIMCMD_FRAME(4, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_AuroraBeamRing_08570C74: @ 0x08570C74
+	@ AnimCmd pointer table
+	.4byte sAnim_AuroraBeamRing_0_08570C64 @ [0]
+	.4byte sAnim_AuroraBeamRing_1_08570C6C @ [1]
+
+sAffineAnim_AuroraBeamRing_0_08570C7C: @ 0x08570C7C
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x0100, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x0060, 0x0060, 0x0100, 0x0000 @ AFFINE_FRAME(96, 96, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_AuroraBeamRing_08570C94: @ 0x08570C94
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_AuroraBeamRing_0_08570C7C @ [0]
+
+gAuroraBeamRingSpriteTemplate: @ 0x08570C98
+	@ SpriteTemplate: tileTag=0x279C, paletteTag=0x279C
+	.2byte 0x279C, 0x279C
+	.4byte gOamData_AffineDouble_ObjNormal_8x16 @ oam
+	.4byte sAnims_AuroraBeamRing_08570C74 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_AuroraBeamRing_08570C94 @ affineAnims
+	.4byte 0x08107C9D @ callback (sub_08107C9C)
+
+sAnim_HydroPumpOrb_0_08570CB0: @ 0x08570CB0
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
+	.2byte 0x0004, 0x0001 @ ANIMCMD_FRAME(4, 1)
+	.2byte 0x0008, 0x0001 @ ANIMCMD_FRAME(8, 1)
+	.2byte 0x000C, 0x0001 @ ANIMCMD_FRAME(12, 1)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnims_HydroPumpOrb_08570CC4: @ 0x08570CC4
+	@ AnimCmd pointer table
+	.4byte sAnim_HydroPumpOrb_0_08570CB0 @ [0]
+
+gHydroPumpOrbSpriteTemplate: @ 0x08570CC8
+	@ SpriteTemplate: tileTag=0x27A5, paletteTag=0x27A5
+	.2byte 0x27A5, 0x27A5
+	.4byte gOamData_AffineOff_ObjBlend_16x16 @ oam
+	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08107E3D @ callback (sub_08107E3C)
+
+gMudShotOrbSpriteTemplate: @ 0x08570CE0
+	@ SpriteTemplate: tileTag=0x2813, paletteTag=0x2813
+	.2byte 0x2813, 0x2813
+	.4byte gOamData_AffineOff_ObjBlend_16x16 @ oam
+	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08107E3D @ callback (sub_08107E3C)
+
+gSignalBeamRedOrbSpriteTemplate: @ 0x08570CF8
+	@ SpriteTemplate: tileTag=0x2818, paletteTag=0x2818
+	.2byte 0x2818, 0x2818
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08107E3D @ callback (sub_08107E3C)
+
+gSignalBeamGreenOrbSpriteTemplate: @ 0x08570D10
+	@ SpriteTemplate: tileTag=0x2819, paletteTag=0x2819
+	.2byte 0x2819, 0x2819
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08107E3D @ callback (sub_08107E3C)
+
+sAnim_FlamethrowerFlame_0_08570D28: @ 0x08570D28
+	@ union AnimCmd stream
+	.2byte 0x0010, 0x0002 @ ANIMCMD_FRAME(16, 2)
+	.2byte 0x0020, 0x0002 @ ANIMCMD_FRAME(32, 2)
+	.2byte 0x0030, 0x0002 @ ANIMCMD_FRAME(48, 2)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnims_FlamethrowerFlame_08570D38: @ 0x08570D38
+	@ AnimCmd pointer table
+	.4byte sAnim_FlamethrowerFlame_0_08570D28 @ [0]
+
+gFlamethrowerFlameSpriteTemplate: @ 0x08570D3C
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_FlamethrowerFlame_08570D38 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08107E3D @ callback (sub_08107E3C)
+
+gPsywaveRingSpriteTemplate: @ 0x08570D54
+	@ SpriteTemplate: tileTag=0x27B5, paletteTag=0x27B5
+	.2byte 0x27B5, 0x27B5
+	.4byte gBattleAnimOam_084FD120 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gSoundWaveAffineAnims @ affineAnims
+	.4byte 0x08107E3D @ callback (sub_08107E3C)
+
+sAffineAnim_HydroCannonCharge_0_08570D6C: @ 0x08570D6C
+	@ union AffineAnimCmd stream
+	.2byte 0x0003, 0x0003, 0x320A, 0x0000 @ AFFINE_FRAME(3, 3, rot=0x00, duration=0)
+	.2byte 0x0000, 0x0000, 0x0A00, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0xFFEC, 0xFFEC, 0x14F6, 0x0000 @ AFFINE_FRAME(-20, -20, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_HydroCannonBeam_0_08570D8C: @ 0x08570D8C
+	@ union AffineAnimCmd stream
+	.2byte 0x0150, 0x0150, 0x0000, 0x0000 @ AFFINE_FRAME(336, 336, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_HydroCannonCharge_08570D9C: @ 0x08570D9C
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_HydroCannonCharge_0_08570D6C @ [0]
+
+sAffineAnims_HydroCannonBeam_08570DA0: @ 0x08570DA0
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_HydroCannonBeam_0_08570D8C @ [0]
+
+gHydroCannonChargeSpriteTemplate: @ 0x08570DA4
+	@ SpriteTemplate: tileTag=0x27A5, paletteTag=0x27A5
+	.2byte 0x27A5, 0x27A5
+	.4byte gOamData_AffineDouble_ObjBlend_16x16 @ oam
+	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_HydroCannonCharge_08570D9C @ affineAnims
+	.4byte 0x08107F81 @ callback (sub_08107F80)
+
+gHydroCannonBeamSpriteTemplate: @ 0x08570DBC
+	@ SpriteTemplate: tileTag=0x27A5, paletteTag=0x27A5
+	.2byte 0x27A5, 0x27A5
+	.4byte gOamData_AffineDouble_ObjBlend_16x16 @ oam
+	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_HydroCannonBeam_08570DA0 @ affineAnims
+	.4byte 0x08108011 @ callback (sub_08108010)
+
+sAnim_WaterGunProjectile_0_08570DD4: @ 0x08570DD4
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_WaterGunDroplet_0_08570DDC: @ 0x08570DDC
+	@ union AnimCmd stream
+	.2byte 0x0004, 0x0001 @ ANIMCMD_FRAME(4, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_WaterGunProjectile_08570DE4: @ 0x08570DE4
+	@ AnimCmd pointer table
+	.4byte sAnim_WaterGunProjectile_0_08570DD4 @ [0]
+
+sAnims_WaterGunDroplet_08570DE8: @ 0x08570DE8
+	@ AnimCmd pointer table
+	.4byte sAnim_WaterGunDroplet_0_08570DDC @ [0]
+
+gWaterGunProjectileSpriteTemplate: @ 0x08570DEC
+	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
+	.2byte 0x27AB, 0x27AB
+	.4byte gOamData_AffineOff_ObjBlend_16x16 @ oam
+	.4byte sAnims_WaterGunProjectile_08570DE4 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x080A7175 @ callback (sub_080A7174)
+
+gWaterGunDropletSpriteTemplate: @ 0x08570E04
+	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
+	.2byte 0x27AB, 0x27AB
+	.4byte gOamData_AffineDouble_ObjBlend_16x16 @ oam
+	.4byte sAnims_WaterGunDroplet_08570DE8 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_WaterGunDroplet_08571DEC @ affineAnims
+	.4byte 0x081080E5 @ callback (sub_081080E4)
+
+gSmallBubblePairSpriteTemplate: @ 0x08570E1C
+	@ SpriteTemplate: tileTag=0x279D, paletteTag=0x279D
+	.2byte 0x279D, 0x279D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
+	.4byte sAnims_SmallBubblePair_0857169C @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08108121 @ callback (sub_08108120)
+
+gSmallDriftingBubblesSpriteTemplate: @ 0x08570E34
+	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
+	.2byte 0x27AB, 0x27AB
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08108885 @ callback (sub_08108884)
+
 	.globl gWaterData_08570E4C
 gWaterData_08570E4C: @ 0x08570E4C
-	@ analyzed canonical ROM range 0x08570E4C-0x08570EF3
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08570E4C size=0x4
-	.byte 0x1C, 0x28, 0x1C, 0x28
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08570E50 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_8x8
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08570E54 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08570E58 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08570E5C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08570E60 size=0x4 source=v54_multi_pointer
-	.4byte sub_08108D6C
-	@ ANALYSIS: RAW_BLOCK size=0x7C
-	@ ANALYSIS: SOURCE_RANGE addr=0x08570E64 size=0x7C
-	.byte 0x08, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x09, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x04, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x64, 0x0E, 0x57, 0x08, 0x6C, 0x0E, 0x57, 0x08
-	.byte 0x74, 0x0E, 0x57, 0x08, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0xF6, 0xFF, 0xF6, 0xFF
-	.byte 0x00, 0x0F, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xE0, 0x00, 0xE0, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0xF8, 0xFF, 0xF8, 0xFF, 0x00, 0x0F, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0x50, 0x01, 0x50, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0x00, 0x0F, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x88, 0x0E, 0x57, 0x08
-	.byte 0xA0, 0x0E, 0x57, 0x08, 0xB8, 0x0E, 0x57, 0x08, 0xAB, 0x27, 0xAB, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08570EE0 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_8x8
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08570EE4 size=0x8
-	.byte 0x7C, 0x0E, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08570EEC size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08570EF0 size=0x4 source=v54_multi_pointer
-	.4byte sub_08109430
-	@ pret/pokeemerald-jp direct xref for 0x08570EF4: water.s: sub_081095A4
+gSmallWaterOrbSpriteTemplate: @ 0x08570E4C
+	@ SpriteTemplate: tileTag=0x281C, paletteTag=0x281C
+	.2byte 0x281C, 0x281C
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08108D6D @ callback (sub_08108D6C)
+
+sAnim_WaterPulseBubble_0_08570E64: @ 0x08570E64
+	@ union AnimCmd stream
+	.2byte 0x0008, 0x0001 @ ANIMCMD_FRAME(8, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_WaterPulseBubble_1_08570E6C: @ 0x08570E6C
+	@ union AnimCmd stream
+	.2byte 0x0009, 0x0001 @ ANIMCMD_FRAME(9, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag27AB_08570F0C_0_08570E74: @ 0x08570E74
+	@ union AnimCmd stream
+	.2byte 0x0004, 0x0001 @ ANIMCMD_FRAME(4, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_WaterPulseBubble_08570E7C: @ 0x08570E7C
+	@ AnimCmd pointer table
+	.4byte sAnim_WaterPulseBubble_0_08570E64 @ [0]
+	.4byte sAnim_WaterPulseBubble_1_08570E6C @ [1]
+
+sAnims_Tag27AB_08570F0C_08570E84: @ 0x08570E84
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag27AB_08570F0C_0_08570E74 @ [0]
+
+sAffineAnim_WaterPulseRingBubble_0_08570E88: @ 0x08570E88
+	@ union AffineAnimCmd stream
+	.2byte 0x0100, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
+	.2byte 0xFFF6, 0xFFF6, 0x0F00, 0x0000 @ AFFINE_FRAME(-10, -10, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_WaterPulseRingBubble_1_08570EA0: @ 0x08570EA0
+	@ union AffineAnimCmd stream
+	.2byte 0x00E0, 0x00E0, 0x0000, 0x0000 @ AFFINE_FRAME(224, 224, rot=0x00, duration=0)
+	.2byte 0xFFF8, 0xFFF8, 0x0F00, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag27AB_08570F0C_0_08570EB8: @ 0x08570EB8
+	@ union AffineAnimCmd stream
+	.2byte 0x0150, 0x0150, 0x0000, 0x0000 @ AFFINE_FRAME(336, 336, rot=0x00, duration=0)
+	.2byte 0x0000, 0x0000, 0x0F00, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_WaterPulseRingBubble_08570ED0: @ 0x08570ED0
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_WaterPulseRingBubble_0_08570E88 @ [0]
+	.4byte sAffineAnim_WaterPulseRingBubble_1_08570EA0 @ [1]
+
+sAffineAnims_Tag27AB_08570F0C_08570ED8: @ 0x08570ED8
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27AB_08570F0C_0_08570EB8 @ [0]
+
+gWaterPulseBubbleSpriteTemplate: @ 0x08570EDC
+	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
+	.2byte 0x27AB, 0x27AB
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
+	.4byte sAnims_WaterPulseBubble_08570E7C @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08109431 @ callback (sub_08109430)
+
 	.globl gWaterData_08570EF4
 gWaterData_08570EF4: @ 0x08570EF4
-	@ analyzed canonical ROM range 0x08570EF4-0x08571197
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0x27AB27AB @ +0x0
-	.4byte gOamData_AffineNormal_ObjNormal_8x8 @ +0x4
-	.4byte 0x08570E7C @ +0x8
-	.4byte 0 @ +0xC
-	.4byte 0x08570ED0 @ +0x10
-	.4byte sub_081094A4 @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0x27AB27AB @ +0x18
-	.4byte gOamData_AffineNormal_ObjNormal_16x16 @ +0x1C
-	.4byte 0x08570E84 @ +0x20
-	.4byte 0 @ +0x24
-	.4byte 0x08570ED8 @ +0x28
-	.4byte sub_080A87AC @ +0x2C
-	@ ANALYSIS: RAW_BLOCK size=0x38
-	.4byte 0x00040010 @ +0x30
-	.4byte 0x00040020 @ +0x34
-	.4byte 0x00040030 @ +0x38
-	.4byte 0x0000FFFE @ +0x3C
-	.4byte 0x00C40010 @ +0x40
-	.4byte 0x00C40020 @ +0x44
-	.4byte 0x00C40030 @ +0x48
-	.4byte 0x0000FFFE @ +0x4C
-	.4byte 0x08570F24 @ +0x50
-	.4byte 0x08570F34 @ +0x54
-	.4byte 0x272D272D @ +0x58
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x5C
-	.4byte 0x08570F44 @ +0x60
-	.4byte 0 @ +0x64
-	.4byte gDummySpriteAffineAnimTable @ +0x68
-	.4byte sub_08109718 @ +0x6C
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x272D272D @ +0x70
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x74
-	.4byte 0x08570F44 @ +0x78
-	.4byte 0 @ +0x7C
-	.4byte gDummySpriteAffineAnimTable @ +0x80
-	.4byte sub_08109758 @ +0x84
-	@ ANALYSIS: RAW_BLOCK size=0x74
-	.4byte 0x00030000 @ +0x88
-	.4byte 0x00030010 @ +0x8C
-	.4byte 0x00030020 @ +0x90
-	.4byte 0x00030030 @ +0x94
-	.4byte 0x00030040 @ +0x98
-	.4byte 0x00030050 @ +0x9C
-	.4byte 0x00030060 @ +0xA0
-	.4byte 0x00030070 @ +0xA4
-	.4byte 0x0000FFFE @ +0xA8
-	.4byte 0x08570F7C @ +0xAC
-	.4byte 0x00050000 @ +0xB0
-	.4byte 0x00050010 @ +0xB4
-	.4byte 0x00050020 @ +0xB8
-	.4byte 0x00050030 @ +0xBC
-	.4byte 0x00050040 @ +0xC0
-	.4byte 0x0000FFFE @ +0xC4
-	.4byte 0x08570FA4 @ +0xC8
-	.4byte 0x01000032 @ +0xCC
-	.4byte 0 @ +0xD0
-	.4byte 0x00000020 @ +0xD4
-	.4byte 0x00000700 @ +0xD8
-	.4byte 0x00007FFF @ +0xDC
-	.4byte 0 @ +0xE0
-	.4byte 0x08570FC0 @ +0xE4
-	.4byte 0x27312731 @ +0xE8
-	.4byte gOamData_AffineNormal_ObjNormal_32x32 @ +0xEC
-	.4byte 0x08570FA0 @ +0xF0
-	.4byte 0 @ +0xF4
-	.4byte 0x08570FD8 @ +0xF8
-	.4byte sub_0810980C @ +0xFC
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x27312731 @ +0x100
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x104
-	.4byte 0x08570FA0 @ +0x108
-	.4byte 0 @ +0x10C
-	.4byte gDummySpriteAffineAnimTable @ +0x110
-	.4byte sub_0810980C @ +0x114
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x27332733 @ +0x118
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x11C
-	.4byte 0x08570FBC @ +0x120
-	.4byte 0 @ +0x124
-	.4byte gDummySpriteAffineAnimTable @ +0x128
-	.4byte sub_0810979C @ +0x12C
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x272D272D @ +0x130
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x134
-	.4byte 0x08570FBC @ +0x138
-	.4byte 0 @ +0x13C
-	.4byte gDummySpriteAffineAnimTable @ +0x140
-	.4byte sub_0810979C @ +0x144
-	@ ANALYSIS: RAW_BLOCK size=0x24
-	.4byte 0x00060010 @ +0x148
-	.4byte 0x00060020 @ +0x14C
-	.4byte 0x00060030 @ +0x150
-	.4byte 0x0000FFFE @ +0x154
-	.4byte 0x0857103C @ +0x158
-	.4byte 0x272D272D @ +0x15C
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x160
-	.4byte 0x0857104C @ +0x164
-	.4byte 0 @ +0x168
-	.4byte gDummySpriteAffineAnimTable @ +0x16C
-	.4byte sub_081098B4 @ +0x170
-	@ ANALYSIS: RAW_BLOCK size=0x24
-	.4byte 0x00500050 @ +0x174
-	.4byte 0 @ +0x178
-	.4byte 0x00020002 @ +0x17C
-	.4byte 0x0000010A @ +0x180
-	.4byte 0x00017FFE @ +0x184
-	.4byte 0 @ +0x188
-	.4byte 0x08571068 @ +0x18C
-	.4byte 0x27AD27AD @ +0x190
-	.4byte gOamData_AffineNormal_ObjBlend_32x32 @ +0x194
-	.4byte gDummySpriteAnimTable @ +0x198
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0x19C
-	.4byte 0x08571080 @ +0x1A0
-	.4byte sub_081099BC @ +0x1A4
-	@ ANALYSIS: RAW_BLOCK size=0x24
-	.4byte 0x00040000 @ +0x1A8
-	.4byte 0x00040010 @ +0x1AC
-	.4byte 0x00040020 @ +0x1B0
-	.4byte 0x00040030 @ +0x1B4
-	.4byte 0x00040040 @ +0x1B8
-	.4byte 0x0000FFFE @ +0x1BC
-	.4byte 0x0857109C @ +0x1C0
-	.4byte 0x272D272D @ +0x1C4
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x1C8
-	.4byte gDummySpriteAnimTable @ +0x1CC
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1D0
-	.4byte gDummySpriteAffineAnimTable @ +0x1D4
-	.4byte TranslateAnimSpriteToTargetMonLocation @ +0x1D8
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x272D272D @ +0x1DC
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x1E0
-	.4byte 0x085710B4 @ +0x1E4
-	.4byte 0 @ +0x1E8
-	.4byte gDummySpriteAffineAnimTable @ +0x1EC
-	.4byte AnimEmberFlare @ +0x1F0
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x272D272D @ +0x1F4
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x1F8
-	.4byte 0x085710B4 @ +0x1FC
-	.4byte 0 @ +0x200
-	.4byte gDummySpriteAffineAnimTable @ +0x204
-	.4byte sub_08109A50 @ +0x208
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x272D272D @ +0x20C
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x210
-	.4byte 0x085710B4 @ +0x214
-	.4byte 0 @ +0x218
-	.4byte gDummySpriteAffineAnimTable @ +0x21C
-	.4byte AnimFireRing @ +0x220
-	@ ANALYSIS: RAW_BLOCK size=0x48
-	.4byte 0x00060020 @ +0x224
-	.4byte 0x00060030 @ +0x228
-	.4byte 0x0000FFFE @ +0x22C
-	.4byte 0x08571118 @ +0x230
-	.4byte 0 @ +0x234
-	.4byte 0x00000100 @ +0x238
-	.4byte 0x00007FFF @ +0x23C
-	.4byte 0 @ +0x240
-	.4byte 0x00A000A0 @ +0x244
-	.4byte 0 @ +0x248
-	.4byte 0x00007FFF @ +0x24C
-	.4byte 0 @ +0x250
-	.4byte 0x08571128 @ +0x254
-	.4byte 0x08571138 @ +0x258
-	.4byte 0x272D272D @ +0x25C
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x260
-	.4byte 0x08571124 @ +0x264
-	.4byte 0 @ +0x268
-	.4byte gDummySpriteAffineAnimTable @ +0x26C
-	.4byte AnimFireCross @ +0x270
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x272D272D @ +0x274
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x278
-	.4byte 0x085710B4 @ +0x27C
-	.4byte 0 @ +0x280
-	.4byte gDummySpriteAffineAnimTable @ +0x284
-	.4byte sub_08109BF4 @ +0x288
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x272D272D @ +0x28C
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x290
-	.4byte 0x085710B4 @ +0x294
-	.4byte 0 @ +0x298
-	.4byte gDummySpriteAffineAnimTable @ +0x29C
-	.4byte sub_080A87AC @ +0x2A0
-	@ pret/pokeemerald-jp direct xref for 0x08571198: fire.s: sub_0810A004
+gWaterPulseRingBubbleSpriteTemplate: @ 0x08570EF4
+	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
+	.2byte 0x27AB, 0x27AB
+	.4byte gOamData_AffineNormal_ObjNormal_8x8 @ oam
+	.4byte sAnims_WaterPulseBubble_08570E7C @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_WaterPulseRingBubble_08570ED0 @ affineAnims
+	.4byte 0x081094A5 @ callback (sub_081094A4)
+
+sSpriteTemplate_Tag27AB_08570F0C: @ 0x08570F0C
+	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
+	.2byte 0x27AB, 0x27AB
+	.4byte gBattleAnimOam_084FD078 @ oam
+	.4byte sAnims_Tag27AB_08570F0C_08570E84 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27AB_08570F0C_08570ED8 @ affineAnims
+	.4byte 0x080A87AD @ callback (sub_080A87AC)
+
+sAnim_Tag272D_08570F4C_0_08570F24: @ 0x08570F24
+	@ union AnimCmd stream
+	.2byte 0x0010, 0x0004 @ ANIMCMD_FRAME(16, 4)
+	.2byte 0x0020, 0x0004 @ ANIMCMD_FRAME(32, 4)
+	.2byte 0x0030, 0x0004 @ ANIMCMD_FRAME(48, 4)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnim_Tag272D_08570F4C_1_08570F34: @ 0x08570F34
+	@ union AnimCmd stream
+	.2byte 0x0010, 0x00C4 @ ANIMCMD_FRAME(16, 196)
+	.2byte 0x0020, 0x00C4 @ ANIMCMD_FRAME(32, 196)
+	.2byte 0x0030, 0x00C4 @ ANIMCMD_FRAME(48, 196)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnims_Tag272D_08570F4C_08570F44: @ 0x08570F44
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag272D_08570F4C_0_08570F24 @ [0]
+	.4byte sAnim_Tag272D_08570F4C_1_08570F34 @ [1]
+
+sSpriteTemplate_Tag272D_08570F4C: @ 0x08570F4C
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag272D_08570F4C_08570F44 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08109719 @ callback (sub_08109718)
+
+sSpriteTemplate_Tag272D_08570F64: @ 0x08570F64
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag272D_08570F4C_08570F44 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08109759 @ callback (sub_08109758)
+
+sAnim_Tag2731_08570FDC_0_08570F7C: @ 0x08570F7C
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0003 @ ANIMCMD_FRAME(0, 3)
+	.2byte 0x0010, 0x0003 @ ANIMCMD_FRAME(16, 3)
+	.2byte 0x0020, 0x0003 @ ANIMCMD_FRAME(32, 3)
+	.2byte 0x0030, 0x0003 @ ANIMCMD_FRAME(48, 3)
+	.2byte 0x0040, 0x0003 @ ANIMCMD_FRAME(64, 3)
+	.2byte 0x0050, 0x0003 @ ANIMCMD_FRAME(80, 3)
+	.2byte 0x0060, 0x0003 @ ANIMCMD_FRAME(96, 3)
+	.2byte 0x0070, 0x0003 @ ANIMCMD_FRAME(112, 3)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnims_Tag2731_08570FDC_08570FA0: @ 0x08570FA0
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag2731_08570FDC_0_08570F7C @ [0]
+
+sAnim_Tag2733_0857100C_0_08570FA4: @ 0x08570FA4
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0005 @ ANIMCMD_FRAME(0, 5)
+	.2byte 0x0010, 0x0005 @ ANIMCMD_FRAME(16, 5)
+	.2byte 0x0020, 0x0005 @ ANIMCMD_FRAME(32, 5)
+	.2byte 0x0030, 0x0005 @ ANIMCMD_FRAME(48, 5)
+	.2byte 0x0040, 0x0005 @ ANIMCMD_FRAME(64, 5)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnims_Tag2733_0857100C_08570FBC: @ 0x08570FBC
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag2733_0857100C_0_08570FA4 @ [0]
+
+sAffineAnim_Tag2731_08570FDC_0_08570FC0: @ 0x08570FC0
+	@ union AffineAnimCmd stream
+	.2byte 0x0032, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(50, 256, rot=0x00, duration=0)
+	.2byte 0x0020, 0x0000, 0x0700, 0x0000 @ AFFINE_FRAME(32, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag2731_08570FDC_08570FD8: @ 0x08570FD8
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag2731_08570FDC_0_08570FC0 @ [0]
+
+sSpriteTemplate_Tag2731_08570FDC: @ 0x08570FDC
+	@ SpriteTemplate: tileTag=0x2731, paletteTag=0x2731
+	.2byte 0x2731, 0x2731
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_64x64 @ oam
+	.4byte sAnims_Tag2731_08570FDC_08570FA0 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag2731_08570FDC_08570FD8 @ affineAnims
+	.4byte 0x0810980D @ callback (sub_0810980C)
+
+sSpriteTemplate_Tag2731_08570FF4: @ 0x08570FF4
+	@ SpriteTemplate: tileTag=0x2731, paletteTag=0x2731
+	.2byte 0x2731, 0x2731
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag2731_08570FDC_08570FA0 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810980D @ callback (sub_0810980C)
+
+sSpriteTemplate_Tag2733_0857100C: @ 0x0857100C
+	@ SpriteTemplate: tileTag=0x2733, paletteTag=0x2733
+	.2byte 0x2733, 0x2733
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag2733_0857100C_08570FBC @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810979D @ callback (sub_0810979C)
+
+sSpriteTemplate_Tag272D_08571024: @ 0x08571024
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag2733_0857100C_08570FBC @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810979D @ callback (sub_0810979C)
+
+sAnim_Tag272D_08571050_0_0857103C: @ 0x0857103C
+	@ union AnimCmd stream
+	.2byte 0x0010, 0x0006 @ ANIMCMD_FRAME(16, 6)
+	.2byte 0x0020, 0x0006 @ ANIMCMD_FRAME(32, 6)
+	.2byte 0x0030, 0x0006 @ ANIMCMD_FRAME(48, 6)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnims_Tag272D_08571050_0857104C: @ 0x0857104C
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag272D_08571050_0_0857103C @ [0]
+
+sSpriteTemplate_Tag272D_08571050: @ 0x08571050
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag272D_08571050_0857104C @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x081098B5 @ callback (sub_081098B4)
+
+sAffineAnim_Tag27AD_08571084_0_08571068: @ 0x08571068
+	@ union AffineAnimCmd stream
+	.2byte 0x0050, 0x0050, 0x0000, 0x0000 @ AFFINE_FRAME(80, 80, rot=0x00, duration=0)
+	.2byte 0x0002, 0x0002, 0x010A, 0x0000 @ AFFINE_FRAME(2, 2, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0001, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(1)
+
+sAffineAnims_Tag27AD_08571084_08571080: @ 0x08571080
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27AD_08571084_0_08571068 @ [0]
+
+sSpriteTemplate_Tag27AD_08571084: @ 0x08571084
+	@ SpriteTemplate: tileTag=0x27AD, paletteTag=0x27AD
+	.2byte 0x27AD, 0x27AD
+	.4byte gBattleAnimOam_084FD1A0 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27AD_08571084_08571080 @ affineAnims
+	.4byte 0x081099BD @ callback (sub_081099BC)
+
+sAnim_Tag272D_085710D0_0_0857109C: @ 0x0857109C
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0004 @ ANIMCMD_FRAME(0, 4)
+	.2byte 0x0010, 0x0004 @ ANIMCMD_FRAME(16, 4)
+	.2byte 0x0020, 0x0004 @ ANIMCMD_FRAME(32, 4)
+	.2byte 0x0030, 0x0004 @ ANIMCMD_FRAME(48, 4)
+	.2byte 0x0040, 0x0004 @ ANIMCMD_FRAME(64, 4)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnims_Tag272D_085710D0_085710B4: @ 0x085710B4
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag272D_085710D0_0_0857109C @ [0]
+
+sSpriteTemplate_Tag272D_085710B8: @ 0x085710B8
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x080A70E9 @ callback (TranslateAnimSpriteToTargetMonLocation)
+
+sSpriteTemplate_Tag272D_085710D0: @ 0x085710D0
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag272D_085710D0_085710B4 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x081099E9 @ callback (AnimEmberFlare)
+
+sSpriteTemplate_Tag272D_085710E8: @ 0x085710E8
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag272D_085710D0_085710B4 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08109A51 @ callback (sub_08109A50)
+
+sSpriteTemplate_Tag272D_08571100: @ 0x08571100
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag272D_085710D0_085710B4 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08109A6D @ callback (AnimFireRing)
+
+sAnim_Tag272D_08571150_0_08571118: @ 0x08571118
+	@ union AnimCmd stream
+	.2byte 0x0020, 0x0006 @ ANIMCMD_FRAME(32, 6)
+	.2byte 0x0030, 0x0006 @ ANIMCMD_FRAME(48, 6)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnims_Tag272D_08571150_08571124: @ 0x08571124
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag272D_08571150_0_08571118 @ [0]
+
+sBattleAnimData_08571128: @ 0x08571128
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x10; no stronger object type proven
+	.4byte 0x00000000
+	.4byte 0x00000100
+	.4byte 0x00007FFF
+	.4byte 0x00000000
+
+sBattleAnimData_08571138: @ 0x08571138
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x18; no stronger object type proven
+	.4byte 0x00A000A0
+	.4byte 0x00000000
+	.4byte 0x00007FFF
+	.4byte 0x00000000
+	.4byte sBattleAnimData_08571128
+	.4byte sBattleAnimData_08571138
+
+sSpriteTemplate_Tag272D_08571150: @ 0x08571150
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag272D_08571150_08571124 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08109BB5 @ callback (AnimFireCross)
+
+sSpriteTemplate_Tag272D_08571168: @ 0x08571168
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag272D_085710D0_085710B4 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08109BF5 @ callback (sub_08109BF4)
+
+sSpriteTemplate_Tag272D_08571180: @ 0x08571180
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag272D_085710D0_085710B4 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x080A87AD @ callback (sub_080A87AC)
+
+	.if (. - .Lsemantic_range_08570C04) != 0x594
+	.error "semantic range 0x08570C04 size mismatch"
+	.endif
 	.globl gFireData_08571198
 gFireData_08571198: @ 0x08571198
 	@ analyzed canonical ROM range 0x08571198-0x085711AF
@@ -590,199 +788,322 @@ gElectricData_08571424:
 sSpriteTemplate_08571424: @ 0x08571424
 	rodata_sprite_template 0x27BD, 0x27BD, gOamData_AffineOff_ObjNormal_32x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_0810B27C
 	@ pret/pokeemerald-jp direct xref for 0x0857143C: electric.s: sub_0810B3C8
+	@ semantic battle-animation reconstruction: electric
+	@ ROM range 0x0857143C-0x0857174B
+.Lsemantic_range_0857143C:
 	.globl gElectricData_0857143C
 gElectricData_0857143C: @ 0x0857143C
-	@ analyzed canonical ROM range 0x0857143C-0x0857148B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x50
-	.byte 0x3A, 0xC4, 0xC8, 0xDC, 0x08, 0xC8, 0xF0, 0x38, 0x3A, 0xF6, 0xC6, 0x0A, 0x30, 0xEE, 0xF8, 0x38
-	.byte 0x10, 0xC8, 0xC6, 0xD6, 0x3A, 0x1E, 0xD0, 0x28, 0x0C, 0xD0, 0x30, 0xF4, 0xC8, 0x12, 0x30, 0x30
-	.byte 0x03, 0x00, 0x01, 0x00, 0x02, 0x00, 0x01, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01, 0x00
-	.byte 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x05, 0x00, 0x01, 0x00, 0x05, 0x00, 0x02, 0x00, 0x05, 0x00
-	.byte 0x03, 0x00, 0x05, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x5C, 0x14, 0x57, 0x08, 0x70, 0x14, 0x57, 0x08
-	@ pret/pokeemerald-jp direct xref for 0x0857148C: electric.s: sub_0810B3C8
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x20; no stronger object type proven
+	.4byte 0xDCC8C43A
+	.4byte 0x38F0C808
+	.4byte 0x0AC6F63A
+	.4byte 0x38F8EE30
+	.4byte 0xD6C6C810
+	.4byte 0x28D01E3A
+	.4byte 0xF430D00C
+	.4byte 0x303012C8
+
+sAnim_ElectricData_0857148C_0_0857145C: @ 0x0857145C
+	@ union AnimCmd stream
+	.2byte 0x0003, 0x0001 @ ANIMCMD_FRAME(3, 1)
+	.2byte 0x0002, 0x0001 @ ANIMCMD_FRAME(2, 1)
+	.2byte 0x0001, 0x0001 @ ANIMCMD_FRAME(1, 1)
+	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_ElectricData_0857148C_1_08571470: @ 0x08571470
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0005 @ ANIMCMD_FRAME(0, 5)
+	.2byte 0x0001, 0x0005 @ ANIMCMD_FRAME(1, 5)
+	.2byte 0x0002, 0x0005 @ ANIMCMD_FRAME(2, 5)
+	.2byte 0x0003, 0x0005 @ ANIMCMD_FRAME(3, 5)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_ElectricData_0857148C_08571484: @ 0x08571484
+	@ AnimCmd pointer table
+	.4byte sAnim_ElectricData_0857148C_0_0857145C @ [0]
+	.4byte sAnim_ElectricData_0857148C_1_08571470 @ [1]
+
 	.globl gElectricData_0857148C
 gElectricData_0857148C: @ 0x0857148C
-	@ analyzed canonical ROM range 0x0857148C-0x085715E3
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x0857148C size=0x4
-	.byte 0xE3, 0x27, 0xE3, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571490 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_8x8
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571494 size=0x8
-	.byte 0x84, 0x14, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857149C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085714A0 size=0x4 source=v54_multi_pointer
-	.4byte SpriteCallbackDummy
-	@ ANALYSIS: RAW_BLOCK size=0xA0
-	@ ANALYSIS: SOURCE_RANGE addr=0x085714A4 size=0xA0
-	.byte 0x10, 0x00, 0x10, 0x00, 0x00, 0x00, 0x00, 0x00, 0x04, 0x00, 0x04, 0x00, 0x00, 0x3C, 0x00, 0x00
-	.byte 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0xFD, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0xFC, 0xFF, 0xFC, 0xFF, 0x00, 0x05, 0x00, 0x00, 0x04, 0x00, 0x04, 0x00, 0x00, 0x05, 0x00, 0x00
-	.byte 0xFD, 0x7F, 0x0A, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0x10, 0x00, 0x10, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x08, 0x00, 0x00, 0x1E, 0x00, 0x00
-	.byte 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0xFC, 0xFF, 0xFC, 0xFF, 0x00, 0x05, 0x00, 0x00
-	.byte 0x04, 0x00, 0x04, 0x00, 0x00, 0x05, 0x00, 0x00, 0xFE, 0x7F, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0x10, 0x00, 0x10, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x08, 0x00, 0x00, 0x1E, 0x00, 0x00
-	.byte 0xF8, 0xFF, 0xF8, 0xFF, 0x00, 0x1E, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0xA4, 0x14, 0x57, 0x08, 0xE4, 0x14, 0x57, 0x08, 0x14, 0x15, 0x57, 0x08, 0xE4, 0x27, 0xE4, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571544 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineNormal_ObjBlend_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571548 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x0857154C size=0x8
-	.byte 0x00, 0x00, 0x00, 0x00, 0x34, 0x15, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571554 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810B528
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571558 size=0x1C
-	.byte 0x00, 0x00, 0x03, 0x00, 0x10, 0x00, 0x03, 0x00, 0x20, 0x00, 0x03, 0x00, 0x30, 0x00, 0x03, 0x00
-	.byte 0xFF, 0xFF, 0x00, 0x00, 0x58, 0x15, 0x57, 0x08, 0xE5, 0x27, 0xE5, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571574 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571578 size=0x8
-	.byte 0x6C, 0x15, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571580 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571584 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810B580
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571588 size=0x4
-	.byte 0xE4, 0x27, 0xE4, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857158C size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineNormal_ObjBlend_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571590 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571594 size=0x8
-	.byte 0x00, 0x00, 0x00, 0x00, 0x34, 0x15, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857159C size=0x4 source=v54_multi_pointer
-	.4byte sub_0810B5E8
-	@ ANALYSIS: RAW_BLOCK size=0x44
-	@ ANALYSIS: SOURCE_RANGE addr=0x085715A0 size=0x44
-	.byte 0x00, 0x00, 0x03, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x02, 0x00, 0x03, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x04, 0x00, 0x03, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x06, 0x00, 0x03, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0xA0, 0x15, 0x57, 0x08, 0xA8, 0x15, 0x57, 0x08, 0xB0, 0x15, 0x57, 0x08, 0xB8, 0x15, 0x57, 0x08
-	.byte 0x00, 0x01, 0x00, 0x01, 0x40, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0xD0, 0x15, 0x57, 0x08
-	@ pret/pokeemerald-jp direct xref for 0x085715E4: electric.s: sub_0810B9A4
+	@ SpriteTemplate: tileTag=0x27E3, paletteTag=0x27E3
+	.2byte 0x27E3, 0x27E3
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
+	.4byte sAnims_ElectricData_0857148C_08571484 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte gPriorityABattleAnimSpriteCallbackDummy @ callback (SpriteCallbackDummy)
+
+sAffineAnim_Tag27E4_08571540_0_085714A4: @ 0x085714A4
+	@ union AffineAnimCmd stream
+	.2byte 0x0010, 0x0010, 0x0000, 0x0000 @ AFFINE_FRAME(16, 16, rot=0x00, duration=0)
+	.2byte 0x0004, 0x0004, 0x3C00, 0x0000 @ AFFINE_FRAME(4, 4, rot=0x00, duration=0)
+	.2byte 0x0100, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
+	.2byte 0x7FFD, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_LOOP(0)
+	.2byte 0xFFFC, 0xFFFC, 0x0500, 0x0000 @ AFFINE_FRAME(-4, -4, rot=0x00, duration=0)
+	.2byte 0x0004, 0x0004, 0x0500, 0x0000 @ AFFINE_FRAME(4, 4, rot=0x00, duration=0)
+	.2byte 0x7FFD, 0x000A, 0x0000, 0x0000 @ AFFINEANIMCMD_LOOP(10)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag27E4_08571540_1_085714E4: @ 0x085714E4
+	@ union AffineAnimCmd stream
+	.2byte 0x0010, 0x0010, 0x0000, 0x0000 @ AFFINE_FRAME(16, 16, rot=0x00, duration=0)
+	.2byte 0x0008, 0x0008, 0x1E00, 0x0000 @ AFFINE_FRAME(8, 8, rot=0x00, duration=0)
+	.2byte 0x0100, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
+	.2byte 0xFFFC, 0xFFFC, 0x0500, 0x0000 @ AFFINE_FRAME(-4, -4, rot=0x00, duration=0)
+	.2byte 0x0004, 0x0004, 0x0500, 0x0000 @ AFFINE_FRAME(4, 4, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0003, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(3)
+
+sAffineAnim_Tag27E4_08571540_2_08571514: @ 0x08571514
+	@ union AffineAnimCmd stream
+	.2byte 0x0010, 0x0010, 0x0000, 0x0000 @ AFFINE_FRAME(16, 16, rot=0x00, duration=0)
+	.2byte 0x0008, 0x0008, 0x1E00, 0x0000 @ AFFINE_FRAME(8, 8, rot=0x00, duration=0)
+	.2byte 0xFFF8, 0xFFF8, 0x1E00, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag27E4_08571540_08571534: @ 0x08571534
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27E4_08571540_0_085714A4 @ [0]
+	.4byte sAffineAnim_Tag27E4_08571540_1_085714E4 @ [1]
+	.4byte sAffineAnim_Tag27E4_08571540_2_08571514 @ [2]
+
+sSpriteTemplate_Tag27E4_08571540: @ 0x08571540
+	@ SpriteTemplate: tileTag=0x27E4, paletteTag=0x27E4
+	.2byte 0x27E4, 0x27E4
+	.4byte gBattleAnimOam_084FD1A8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27E4_08571540_08571534 @ affineAnims
+	.4byte 0x0810B529 @ callback (sub_0810B528)
+
+sAnim_Tag27E5_08571570_0_08571558: @ 0x08571558
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0003 @ ANIMCMD_FRAME(0, 3)
+	.2byte 0x0010, 0x0003 @ ANIMCMD_FRAME(16, 3)
+	.2byte 0x0020, 0x0003 @ ANIMCMD_FRAME(32, 3)
+	.2byte 0x0030, 0x0003 @ ANIMCMD_FRAME(48, 3)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag27E5_08571570_0857156C: @ 0x0857156C
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag27E5_08571570_0_08571558 @ [0]
+
+sSpriteTemplate_Tag27E5_08571570: @ 0x08571570
+	@ SpriteTemplate: tileTag=0x27E5, paletteTag=0x27E5
+	.2byte 0x27E5, 0x27E5
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag27E5_08571570_0857156C @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810B581 @ callback (sub_0810B580)
+
+sSpriteTemplate_Tag27E4_08571588: @ 0x08571588
+	@ SpriteTemplate: tileTag=0x27E4, paletteTag=0x27E4
+	.2byte 0x27E4, 0x27E4
+	.4byte gBattleAnimOam_084FD1A8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27E4_08571540_08571534 @ affineAnims
+	.4byte 0x0810B5E9 @ callback (sub_0810B5E8)
+
+sAnim_ElectricData_085715E4_0_085715A0: @ 0x085715A0
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0003 @ ANIMCMD_FRAME(0, 3)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_ElectricData_085715E4_1_085715A8: @ 0x085715A8
+	@ union AnimCmd stream
+	.2byte 0x0002, 0x0003 @ ANIMCMD_FRAME(2, 3)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_ElectricData_085715E4_2_085715B0: @ 0x085715B0
+	@ union AnimCmd stream
+	.2byte 0x0004, 0x0003 @ ANIMCMD_FRAME(4, 3)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_ElectricData_085715E4_3_085715B8: @ 0x085715B8
+	@ union AnimCmd stream
+	.2byte 0x0006, 0x0003 @ ANIMCMD_FRAME(6, 3)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_ElectricData_085715E4_085715C0: @ 0x085715C0
+	@ AnimCmd pointer table
+	.4byte sAnim_ElectricData_085715E4_0_085715A0 @ [0]
+	.4byte sAnim_ElectricData_085715E4_1_085715A8 @ [1]
+	.4byte sAnim_ElectricData_085715E4_2_085715B0 @ [2]
+	.4byte sAnim_ElectricData_085715E4_3_085715B8 @ [3]
+
+sAffineAnim_ElectricData_085715E4_0_085715D0: @ 0x085715D0
+	@ union AffineAnimCmd stream
+	.2byte 0x0100, 0x0100, 0x0040, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_ElectricData_085715E4_085715E0: @ 0x085715E0
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_ElectricData_085715E4_0_085715D0 @ [0]
+
 	.globl gElectricData_085715E4
 gElectricData_085715E4: @ 0x085715E4
-	@ analyzed canonical ROM range 0x085715E4-0x08571613
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0x27112711 @ +0x0
-	.4byte gOamData_AffineDouble_ObjNormal_8x16 @ +0x4
-	.4byte 0x085715C0 @ +0x8
-	.4byte 0 @ +0xC
-	.4byte 0x085715E0 @ +0x10
-	.4byte sub_0810BA40 @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x27E427E4 @ +0x18
-	.4byte gOamData_AffineNormal_ObjBlend_64x64 @ +0x1C
-	.4byte gDummySpriteAnimTable @ +0x20
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0x24
-	.4byte 0x08571534 @ +0x28
-	.4byte sub_0810BA8C @ +0x2C
-	@ pret/pokeemerald-jp direct xref for 0x08571614: electric.s: sub_0810BC80
+	@ SpriteTemplate: tileTag=0x2711, paletteTag=0x2711
+	.2byte 0x2711, 0x2711
+	.4byte gOamData_AffineDouble_ObjNormal_8x16 @ oam
+	.4byte sAnims_ElectricData_085715E4_085715C0 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_ElectricData_085715E4_085715E0 @ affineAnims
+	.4byte 0x0810BA41 @ callback (sub_0810BA40)
+
+sSpriteTemplate_Tag27E4_085715FC: @ 0x085715FC
+	@ SpriteTemplate: tileTag=0x27E4, paletteTag=0x27E4
+	.2byte 0x27E4, 0x27E4
+	.4byte gBattleAnimOam_084FD1A8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27E4_08571540_08571534 @ affineAnims
+	.4byte 0x0810BA8D @ callback (sub_0810BA8C)
+
 	.globl gElectricData_08571614
 gElectricData_08571614: @ 0x08571614
-	@ analyzed canonical ROM range 0x08571614-0x0857174B
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x27112711 @ +0x0
-	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x4
-	.4byte gDummySpriteAnimTable @ +0x8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xC
-	.4byte gDummySpriteAffineAnimTable @ +0x10
-	.4byte sub_0810BD6C @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x18
-	.4byte 0x00450000 @ +0x18
-	.4byte 0x00450001 @ +0x1C
-	.4byte 0x0000FFFE @ +0x20
-	.4byte 0x0857162C @ +0x24
-	.4byte 0x279D279D @ +0x28
-	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x2C
-	.4byte gDummySpriteAnimTable @ +0x30
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x34
-	.4byte gDummySpriteAffineAnimTable @ +0x38
-	.4byte sub_0810BF14 @ +0x3C
-	@ ANALYSIS: RAW_BLOCK size=0x74
-	.4byte 0x00010000 @ +0x40
-	.4byte 0x0000FFFF @ +0x44
-	.4byte 0x00010004 @ +0x48
-	.4byte 0x0000FFFF @ +0x4C
-	.4byte 0x00010006 @ +0x50
-	.4byte 0x0000FFFF @ +0x54
-	.4byte 0x00010007 @ +0x58
-	.4byte 0x0000FFFF @ +0x5C
-	.4byte 0x00010008 @ +0x60
-	.4byte 0x0000FFFF @ +0x64
-	.4byte 0x0006000C @ +0x68
-	.4byte 0x0006000D @ +0x6C
-	.4byte 0x0000FFFE @ +0x70
-	.4byte 0x08571654 @ +0x74
-	.4byte 0x0857165C @ +0x78
-	.4byte 0x08571664 @ +0x7C
-	.4byte 0x0857166C @ +0x80
-	.4byte 0x08571674 @ +0x84
-	.4byte 0x0857167C @ +0x88
-	.4byte 0 @ +0x8C
-	.4byte 0x00000128 @ +0x90
-	.4byte 0x00007FFE @ +0x94
-	.4byte 0 @ +0x98
-	.4byte 0x085716A0 @ +0x9C
-	.4byte 0x279D279D @ +0xA0
-	.4byte gOamData_AffineDouble_ObjBlend_8x16 @ +0xA4
-	.4byte 0x0857168C @ +0xA8
-	.4byte 0 @ +0xAC
-	.4byte 0x085716B0 @ +0xB0
-	.4byte AnimIcePunchSwirlingParticle @ +0xB4
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x279D279D @ +0xB8
-	.4byte gOamData_AffineOff_ObjBlend_8x8 @ +0xBC
-	.4byte 0x08571690 @ +0xC0
-	.4byte 0 @ +0xC4
-	.4byte gDummySpriteAffineAnimTable @ +0xC8
-	.4byte AnimIcePunchSwirlingParticle @ +0xCC
-	@ ANALYSIS: RAW_BLOCK size=0x28
-	.4byte 0 @ +0xD0
-	.4byte 0x0000010A @ +0xD4
-	.4byte 0x00007FFE @ +0xD8
-	.4byte 0 @ +0xDC
-	.4byte 0x085716E4 @ +0xE0
-	.4byte 0x279D279D @ +0xE4
-	.4byte gOamData_AffineNormal_ObjBlend_8x16 @ +0xE8
-	.4byte 0x0857168C @ +0xEC
-	.4byte 0 @ +0xF0
-	.4byte 0x085716F4 @ +0xF4
-	.4byte AnimIceBeamParticle @ +0xF8
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x279D279D @ +0xFC
-	.4byte gOamData_AffineOff_ObjBlend_8x8 @ +0x100
-	.4byte 0x08571690 @ +0x104
-	.4byte 0 @ +0x108
-	.4byte gDummySpriteAffineAnimTable @ +0x10C
-	.4byte AnimIceBeamParticle @ +0x110
-	@ ANALYSIS: RAW_BLOCK size=0x24
-	.4byte 0x00CE00CE @ +0x114
-	.4byte 0 @ +0x118
-	.4byte 0x00050005 @ +0x11C
-	.4byte 0x00000A00 @ +0x120
-	.4byte 0 @ +0x124
-	.4byte 0x00000600 @ +0x128
-	.4byte 0x00007FFF @ +0x12C
-	.4byte 0 @ +0x130
-	.4byte 0x08571728 @ +0x134
-	@ pret/pokeemerald-jp direct xref for 0x0857174C: ice.s: AnimHailBegin
+	@ SpriteTemplate: tileTag=0x2711, paletteTag=0x2711
+	.2byte 0x2711, 0x2711
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810BD6D @ callback (sub_0810BD6C)
+
+sBattleAnimData_0857162C: @ 0x0857162C
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x10; no stronger object type proven
+	.4byte 0x00450000
+	.4byte 0x00450001
+	.4byte 0x0000FFFE
+	.4byte sBattleAnimData_0857162C
+
+sSpriteTemplate_Tag279D_0857163C: @ 0x0857163C
+	@ SpriteTemplate: tileTag=0x279D, paletteTag=0x279D
+	.2byte 0x279D, 0x279D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810BF15 @ callback (sub_0810BF14)
+
+sBattleAnimData_08571654: @ 0x08571654
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x8; no stronger object type proven
+	.4byte 0x00010000
+	.4byte 0x0000FFFF
+
+sAnim_Tag279D_085716B4_0_0857165C: @ 0x0857165C
+	@ union AnimCmd stream
+	.2byte 0x0004, 0x0001 @ ANIMCMD_FRAME(4, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag279D_085716CC_0_08571664: @ 0x08571664
+	@ union AnimCmd stream
+	.2byte 0x0006, 0x0001 @ ANIMCMD_FRAME(6, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag279D_085716CC_1_0857166C: @ 0x0857166C
+	@ union AnimCmd stream
+	.2byte 0x0007, 0x0001 @ ANIMCMD_FRAME(7, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag279D_085716CC_2_08571674: @ 0x08571674
+	@ union AnimCmd stream
+	.2byte 0x0008, 0x0001 @ ANIMCMD_FRAME(8, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_SmallBubblePair_0_0857167C: @ 0x0857167C
+	@ union AnimCmd stream
+	.2byte 0x000C, 0x0006 @ ANIMCMD_FRAME(12, 6)
+	.2byte 0x000D, 0x0006 @ ANIMCMD_FRAME(13, 6)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x4; no stronger object type proven
+	.4byte sBattleAnimData_08571654
+
+sAnims_Tag279D_085716B4_0857168C: @ 0x0857168C
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag279D_085716B4_0_0857165C @ [0]
+
+sAnims_Tag279D_085716CC_08571690: @ 0x08571690
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag279D_085716CC_0_08571664 @ [0]
+	.4byte sAnim_Tag279D_085716CC_1_0857166C @ [1]
+	.4byte sAnim_Tag279D_085716CC_2_08571674 @ [2]
+
+sAnims_SmallBubblePair_0857169C: @ 0x0857169C
+	@ AnimCmd pointer table
+	.4byte sAnim_SmallBubblePair_0_0857167C @ [0]
+
+sAffineAnim_Tag279D_085716B4_0_085716A0: @ 0x085716A0
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x0128, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
+
+sAffineAnims_Tag279D_085716B4_085716B0: @ 0x085716B0
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag279D_085716B4_0_085716A0 @ [0]
+
+sSpriteTemplate_Tag279D_085716B4: @ 0x085716B4
+	@ SpriteTemplate: tileTag=0x279D, paletteTag=0x279D
+	.2byte 0x279D, 0x279D
+	.4byte gOamData_AffineDouble_ObjBlend_8x16 @ oam
+	.4byte sAnims_Tag279D_085716B4_0857168C @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag279D_085716B4_085716B0 @ affineAnims
+	.4byte 0x0810C0FD @ callback (AnimIcePunchSwirlingParticle)
+
+sSpriteTemplate_Tag279D_085716CC: @ 0x085716CC
+	@ SpriteTemplate: tileTag=0x279D, paletteTag=0x279D
+	.2byte 0x279D, 0x279D
+	.4byte gOamData_AffineOff_ObjBlend_8x8 @ oam
+	.4byte sAnims_Tag279D_085716CC_08571690 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810C0FD @ callback (AnimIcePunchSwirlingParticle)
+
+sAffineAnim_Tag279D_085716F8_0_085716E4: @ 0x085716E4
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x010A, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
+
+sAffineAnims_Tag279D_085716F8_085716F4: @ 0x085716F4
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag279D_085716F8_0_085716E4 @ [0]
+
+sSpriteTemplate_Tag279D_085716F8: @ 0x085716F8
+	@ SpriteTemplate: tileTag=0x279D, paletteTag=0x279D
+	.2byte 0x279D, 0x279D
+	.4byte gOamData_AffineNormal_ObjBlend_8x16 @ oam
+	.4byte sAnims_Tag279D_085716B4_0857168C @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag279D_085716F8_085716F4 @ affineAnims
+	.4byte 0x0810C13D @ callback (AnimIceBeamParticle)
+
+sSpriteTemplate_Tag279D_08571710: @ 0x08571710
+	@ SpriteTemplate: tileTag=0x279D, paletteTag=0x279D
+	.2byte 0x279D, 0x279D
+	.4byte gOamData_AffineOff_ObjBlend_8x8 @ oam
+	.4byte sAnims_Tag279D_085716CC_08571690 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810C13D @ callback (AnimIceBeamParticle)
+
+sBattleAnimData_08571728: @ 0x08571728
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x24; no stronger object type proven
+	.4byte 0x00CE00CE
+	.4byte 0x00000000
+	.4byte 0x00050005
+	.4byte 0x00000A00
+	.4byte 0x00000000
+	.4byte 0x00000600
+	.4byte 0x00007FFF
+	.4byte 0x00000000
+	.4byte sBattleAnimData_08571728
+
+	.if (. - .Lsemantic_range_0857143C) != 0x310
+	.error "semantic range 0x0857143C size mismatch"
+	.endif
 	.globl gIceData_0857174C
 gIceData_0857174C:
 	.globl gBattleAnimSpriteTemplate_IceEffectParticle
@@ -851,1154 +1172,1543 @@ gBattleAnimSpriteTemplate_IceEffectParticle: @ 0x0857174C
 	.4byte gDummySpriteAffineAnimTable @ +0xEC
 	.4byte InitSwirlingFogAnim @ +0xF0
 	@ pret/pokeemerald-jp direct xref for 0x08571840: ice.s: AnimTask_Haze2
+	@ semantic battle-animation reconstruction: ice
+	@ ROM range 0x08571840-0x08572323
+.Lsemantic_range_08571840:
 	.globl gIceData_08571840
 gIceData_08571840: @ 0x08571840
-	@ analyzed canonical ROM range 0x08571840-0x0857186B
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x18
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571840 size=0x18
-	.byte 0x00, 0x01, 0x02, 0x02, 0x02, 0x02, 0x03, 0x04, 0x04, 0x04, 0x05, 0x06, 0x06, 0x06, 0x06, 0x07
-	.byte 0x08, 0x08, 0x08, 0x09, 0xAB, 0x27, 0xAB, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571858 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_16x16
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857185C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571860 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571864 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571868 size=0x4 source=v54_multi_pointer
-	.4byte AnimThrowMistBall
-	@ pret/pokeemerald-jp direct xref for 0x0857186C: ice.s: AnimTask_OverlayFogTiles
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x14; no stronger object type proven
+	.4byte 0x02020100
+	.4byte 0x04030202
+	.4byte 0x06050404
+	.4byte 0x07060606
+	.4byte 0x09080808
+
+sSpriteTemplate_Tag27AB_08571854: @ 0x08571854
+	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
+	.2byte 0x27AB, 0x27AB
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_16x16 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810CB41 @ callback (AnimThrowMistBall)
+
 	.globl gIceData_0857186C
 gIceData_0857186C: @ 0x0857186C
-	@ analyzed canonical ROM range 0x0857186C-0x08571897
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x18
-	@ ANALYSIS: SOURCE_RANGE addr=0x0857186C size=0x18
-	.byte 0x00, 0x01, 0x01, 0x01, 0x01, 0x02, 0x02, 0x02, 0x02, 0x03, 0x03, 0x03, 0x03, 0x03, 0x04, 0x04
-	.byte 0x04, 0x04, 0x04, 0x05, 0xBC, 0x27, 0xBC, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571884 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjBlend_32x16
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571888 size=0x8
-	.byte 0x0C, 0x18, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571890 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571894 size=0x4 source=v54_multi_pointer
-	.4byte InitPoisonGasCloudAnim
-	@ pret/pokeemerald-jp direct xref for 0x08571898: ice.s: GenerateHailParticle
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x14; no stronger object type proven
+	.4byte 0x01010100
+	.4byte 0x02020201
+	.4byte 0x03030302
+	.4byte 0x04040303
+	.4byte 0x05040404
+
+sSpriteTemplate_Tag27BC_08571880: @ 0x08571880
+	@ SpriteTemplate: tileTag=0x27BC, paletteTag=0x27BC
+	.2byte 0x27BC, 0x27BC
+	.4byte gBattleAnimOam_084FD160 @ oam
+	.4byte 0x0857180C @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810CDB1 @ callback (InitPoisonGasCloudAnim)
+
 	.globl gIceData_08571898
 gIceData_08571898: @ 0x08571898
-	@ analyzed canonical ROM range 0x08571898-0x0857190F
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x78
-	.2byte 0xE064, 0x2001, 0xE055, 0x0001, 0xE0F2, 0x1011, 0xE042, 0x1021
-	.2byte 0xE0B6, 0x0031, 0xE03C, 0x2001, 0xE0D6, 0x0011, 0xE071, 0x1001
-	.2byte 0xE0D2, 0x1031, 0xE026, 0x0021, 0x0100, 0x0100, 0x0000, 0x0000
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000, 0x00F0, 0x00F0, 0x0000, 0x0000
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000, 0x00E0, 0x00E0, 0x0000, 0x0000
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000, 0x0150, 0x0150, 0x0000, 0x0000
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000, 0x18C0, 0x0857, 0x18D0, 0x0857
-	.2byte 0x18E0, 0x0857, 0x18F0, 0x0857
-	@ pret/pokeemerald-jp direct xref for 0x08571910: ice.s: GenerateHailParticle
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x28; no stronger object type proven
+	.4byte 0x2001E064
+	.4byte 0x0001E055
+	.4byte 0x1011E0F2
+	.4byte 0x1021E042
+	.4byte 0x0031E0B6
+	.4byte 0x2001E03C
+	.4byte 0x0011E0D6
+	.4byte 0x1001E071
+	.4byte 0x1031E0D2
+	.4byte 0x0021E026
+
+sAffineAnim_IceData_08571910_0_085718C0: @ 0x085718C0
+	@ union AffineAnimCmd stream
+	.2byte 0x0100, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_IceData_08571910_1_085718D0: @ 0x085718D0
+	@ union AffineAnimCmd stream
+	.2byte 0x00F0, 0x00F0, 0x0000, 0x0000 @ AFFINE_FRAME(240, 240, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_IceData_08571910_2_085718E0: @ 0x085718E0
+	@ union AffineAnimCmd stream
+	.2byte 0x00E0, 0x00E0, 0x0000, 0x0000 @ AFFINE_FRAME(224, 224, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag2817_08571928_0_085718F0: @ 0x085718F0
+	@ union AffineAnimCmd stream
+	.2byte 0x0150, 0x0150, 0x0000, 0x0000 @ AFFINE_FRAME(336, 336, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_IceData_08571910_08571900: @ 0x08571900
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_IceData_08571910_0_085718C0 @ [0]
+	.4byte sAffineAnim_IceData_08571910_1_085718D0 @ [1]
+	.4byte sAffineAnim_IceData_08571910_2_085718E0 @ [2]
+
+sAffineAnims_Tag2817_08571928_0857190C: @ 0x0857190C
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag2817_08571928_0_085718F0 @ [0]
+
 	.globl gIceData_08571910
 gIceData_08571910: @ 0x08571910
-	@ analyzed canonical ROM range 0x08571910-0x08572323
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571910 size=0x4
-	.byte 0x17, 0x28, 0x17, 0x28
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571914 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineNormal_ObjNormal_16x16
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571918 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x0857191C size=0x8
-	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x19, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571924 size=0x4 source=v54_multi_pointer
-	.4byte AnimHailBegin
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571928 size=0x4
-	.byte 0x17, 0x28, 0x17, 0x28
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857192C size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineNormal_ObjNormal_16x16
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571930 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571934 size=0x8
-	.byte 0x00, 0x00, 0x00, 0x00, 0x0C, 0x19, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857193C size=0x4 source=v54_multi_pointer
-	.4byte sub_080A87AC
-	@ ANALYSIS: RAW_BLOCK size=0x8C
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571940 size=0x8C
-	.byte 0x00, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x10, 0x00, 0x04, 0x00, 0x20, 0x00, 0x04, 0x00
-	.byte 0x30, 0x00, 0x04, 0x00, 0x40, 0x00, 0x04, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x40, 0x19, 0x57, 0x08
-	.byte 0x48, 0x19, 0x57, 0x08, 0xE0, 0x00, 0xE0, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0x18, 0x01, 0x18, 0x01, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0x50, 0x01, 0x50, 0x01, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0x80, 0x01, 0x80, 0x01, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0xC0, 0x01, 0xC0, 0x01, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0x64, 0x19, 0x57, 0x08, 0x74, 0x19, 0x57, 0x08, 0x84, 0x19, 0x57, 0x08
-	.byte 0x94, 0x19, 0x57, 0x08, 0xA4, 0x19, 0x57, 0x08, 0x3B, 0x27, 0x3B, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085719CC size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineDouble_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	@ ANALYSIS: SOURCE_RANGE addr=0x085719D0 size=0xC
-	.byte 0x5C, 0x19, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00, 0xB4, 0x19, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085719DC size=0x4 source=v54_multi_pointer
-	.4byte InitIceBallAnim
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x085719E0 size=0x4
-	.byte 0x9D, 0x27, 0x9D, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085719E4 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_8x8
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x085719E8 size=0x8
-	.byte 0x90, 0x16, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085719F0 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085719F4 size=0x4 source=v54_multi_pointer
-	.4byte InitIceBallParticle
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x085719F8 size=0x4
-	.byte 0x42, 0x27, 0x42, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085719FC size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571A00 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571A04 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571A08 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571A0C size=0x4 source=v54_multi_pointer
-	.4byte unc_080B08A0
-	@ ANALYSIS: RAW_BLOCK size=0x40
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571A10 size=0x40
-	.byte 0x00, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x10, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x20, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x30, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x30, 0x00, 0x41, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x10, 0x1A, 0x57, 0x08, 0x18, 0x1A, 0x57, 0x08
-	.byte 0x20, 0x1A, 0x57, 0x08, 0x28, 0x1A, 0x57, 0x08, 0x30, 0x1A, 0x57, 0x08, 0x9F, 0x27, 0x9F, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571A50 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571A54 size=0x8
-	.byte 0x38, 0x1A, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571A5C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571A60 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810D6B8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571A64 size=0x4
-	.byte 0x9F, 0x27, 0x9F, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571A68 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571A6C size=0x8
-	.byte 0x38, 0x1A, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571A74 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571A78 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810D704
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571A7C size=0x4
-	.byte 0x9F, 0x27, 0x9F, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571A80 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571A84 size=0x8
-	.byte 0x38, 0x1A, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571A8C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571A90 size=0x4 source=v54_multi_pointer
-	.4byte AnimBasicFistOrFoot
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571A94 size=0x4
-	.byte 0x9F, 0x27, 0x9F, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571A98 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571A9C size=0x8
-	.byte 0x38, 0x1A, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571AA4 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571AA8 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810D780
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571AAC size=0x4
-	.byte 0x9F, 0x27, 0x9F, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571AB0 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571AB4 size=0x8
-	.byte 0x44, 0x1A, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571ABC size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571AC0 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810D95C
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571AC4 size=0x4
-	.byte 0x9F, 0x27, 0x9F, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571AC8 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571ACC size=0x8
-	.byte 0x3C, 0x1A, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571AD4 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571AD8 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810DA04
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571ADC size=0x20
-	.byte 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0xF8, 0xFF, 0xF8, 0xFF, 0x14, 0x01, 0x00, 0x00
-	.byte 0xFE, 0x7F, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0xDC, 0x1A, 0x57, 0x08, 0x9F, 0x27, 0x9F, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571AFC size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineDouble_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571B00 size=0xC
-	.byte 0x38, 0x1A, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00, 0xF4, 0x1A, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B0C size=0x4 source=v54_multi_pointer
-	.4byte AnimSpinningKickOrPunch
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571B10 size=0x20
-	.byte 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0xFC, 0xFF, 0xFC, 0xFF, 0x14, 0x01, 0x00, 0x00
-	.byte 0xFE, 0x7F, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10, 0x1B, 0x57, 0x08, 0x9F, 0x27, 0x9F, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B30 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineDouble_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571B34 size=0xC
-	.byte 0x38, 0x1A, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00, 0x28, 0x1B, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B40 size=0x4 source=v54_multi_pointer
-	.4byte AnimSpinningKickOrPunch
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571B44 size=0x4
-	.byte 0x9F, 0x27, 0x9F, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B48 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571B4C size=0x8
-	.byte 0x3C, 0x1A, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B54 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B58 size=0x4 source=v54_multi_pointer
-	.4byte AnimStompFoot
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571B5C size=0x4
-	.byte 0x59, 0x27, 0x59, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B60 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_16x16
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B64 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571B68 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B6C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B70 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810DBCC
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571B74 size=0x4
-	.byte 0xB7, 0x27, 0xB7, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B78 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjBlend_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B7C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571B80 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B84 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B88 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810DC5C
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571B8C size=0x4
-	.byte 0xE0, 0x27, 0xE0, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B90 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B94 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571B98 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571B9C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571BA0 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810DD44
-	@ ANALYSIS: RAW_BLOCK size=0x30
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571BA4 size=0x30
-	.byte 0x20, 0x00, 0x20, 0x00, 0x00, 0x00, 0x00, 0x00, 0x04, 0x00, 0x04, 0x00, 0x00, 0x40, 0x00, 0x00
-	.byte 0xFA, 0xFF, 0xFA, 0xFF, 0x00, 0x08, 0x00, 0x00, 0x06, 0x00, 0x06, 0x00, 0x00, 0x08, 0x00, 0x00
-	.byte 0xFE, 0x7F, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0xA4, 0x1B, 0x57, 0x08, 0xE4, 0x27, 0xE4, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571BD4 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineDouble_ObjBlend_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571BD8 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571BDC size=0x8
-	.byte 0x00, 0x00, 0x00, 0x00, 0xCC, 0x1B, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571BE4 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810DE58
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571BE8 size=0x4
-	.byte 0x11, 0x28, 0x11, 0x28
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571BEC size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_16x16
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571BF0 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571BF4 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571BF8 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571BFC size=0x4 source=v54_multi_pointer
-	.4byte sub_0810DF64
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571C00 size=0x4
-	.byte 0x10, 0x28, 0x10, 0x28
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571C04 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571C08 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571C0C size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571C10 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571C14 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810E0C4
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571C18 size=0x4
-	.byte 0x9F, 0x27, 0x9F, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571C1C size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571C20 size=0x8
-	.byte 0x38, 0x1A, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571C28 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571C2C size=0x4 source=v54_multi_pointer
-	.4byte sub_0810E1D4
-	@ ANALYSIS: RAW_BLOCK size=0x40
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571C30 size=0x40
-	.byte 0x00, 0x00, 0x04, 0x00, 0x10, 0x00, 0x04, 0x00, 0x20, 0x00, 0x04, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x00, 0x00, 0x84, 0x00, 0x10, 0x00, 0x84, 0x00, 0x20, 0x00, 0x84, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x00, 0x00, 0x44, 0x00, 0x10, 0x00, 0x44, 0x00, 0x20, 0x00, 0x44, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x30, 0x1C, 0x57, 0x08, 0x40, 0x1C, 0x57, 0x08, 0x50, 0x1C, 0x57, 0x08, 0x05, 0x28, 0x05, 0x28
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571C70 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571C74 size=0x8
-	.byte 0x60, 0x1C, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571C7C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571C80 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810E260
-	@ ANALYSIS: RAW_BLOCK size=0x34
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571C84 size=0x34
-	.byte 0x00, 0x00, 0x06, 0x00, 0x40, 0x00, 0x06, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0xC6, 0x00
-	.byte 0x40, 0x00, 0xC6, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x46, 0x00, 0x40, 0x00, 0x46, 0x00
-	.byte 0xFF, 0xFF, 0x00, 0x00, 0x84, 0x1C, 0x57, 0x08, 0x90, 0x1C, 0x57, 0x08, 0x9C, 0x1C, 0x57, 0x08
-	.byte 0x06, 0x28, 0x06, 0x28
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571CB8 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_64x64
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571CBC size=0x8
-	.byte 0xA8, 0x1C, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571CC4 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571CC8 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810E260
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571CCC size=0x20
-	.byte 0x00, 0x02, 0x00, 0x02, 0x00, 0x00, 0x00, 0x00, 0xE0, 0xFF, 0xE0, 0xFF, 0x00, 0x08, 0x00, 0x00
-	.byte 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xCC, 0x1C, 0x57, 0x08, 0x9F, 0x27, 0x9F, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571CEC size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineDouble_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571CF0 size=0xC
-	.byte 0x38, 0x1A, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00, 0xE4, 0x1C, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571CFC size=0x4 source=v54_multi_pointer
-	.4byte sub_0810E2CC
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571D00 size=0x1C
-	.byte 0x00, 0x00, 0x05, 0x00, 0x08, 0x00, 0x05, 0x00, 0x10, 0x00, 0x05, 0x00, 0x18, 0x00, 0x05, 0x00
-	.byte 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x1D, 0x57, 0x08, 0xA7, 0x27, 0xA7, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571D1C size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_16x32
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571D20 size=0x8
-	.byte 0x14, 0x1D, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571D28 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571D2C size=0x4 source=v54_multi_pointer
-	.4byte sub_080A7090
-	@ ANALYSIS: RAW_BLOCK size=0x60
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571D30 size=0x60
-	.byte 0x00, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x04, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x08, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x30, 0x1D, 0x57, 0x08, 0x38, 0x1D, 0x57, 0x08
-	.byte 0x40, 0x1D, 0x57, 0x08, 0x60, 0x01, 0x60, 0x01, 0x00, 0x00, 0x00, 0x00, 0xF6, 0xFF, 0xF6, 0xFF
-	.byte 0x00, 0x0A, 0x00, 0x00, 0x0A, 0x00, 0x0A, 0x00, 0x00, 0x0A, 0x00, 0x00, 0xFE, 0x7F, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0xEC, 0x00, 0xEC, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0x54, 0x1D, 0x57, 0x08, 0x74, 0x1D, 0x57, 0x08, 0xA6, 0x27, 0xA6, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571D90 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineDouble_ObjNormal_16x16
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571D94 size=0xC
-	.byte 0x48, 0x1D, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00, 0x84, 0x1D, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571DA0 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810E3FC
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571DA4 size=0x4
-	.byte 0xA6, 0x27, 0xA6, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571DA8 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineDouble_ObjNormal_16x16
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571DAC size=0xC
-	.byte 0x48, 0x1D, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00, 0x84, 0x1D, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571DB8 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810E47C
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571DBC size=0x4
-	.byte 0xA6, 0x27, 0xA6, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571DC0 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineNormal_ObjNormal_16x16
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571DC4 size=0xC
-	.byte 0x50, 0x1D, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00, 0x88, 0x1D, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571DD0 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810E520
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571DD4 size=0x20
-	.byte 0xF0, 0xFF, 0x10, 0x00, 0x00, 0x06, 0x00, 0x00, 0x10, 0x00, 0xF0, 0xFF, 0x00, 0x06, 0x00, 0x00
-	.byte 0xFE, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xD4, 0x1D, 0x57, 0x08, 0xA6, 0x27, 0xA6, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571DF4 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineDouble_ObjNormal_16x16
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571DF8 size=0xC
-	.byte 0x4C, 0x1D, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00, 0xEC, 0x1D, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571E04 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810E5A0
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571E08 size=0x20
-	.byte 0x9C, 0x00, 0x9C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x05, 0x00, 0x05, 0x00, 0x00, 0x14, 0x00, 0x00
-	.byte 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x1E, 0x57, 0x08, 0xA6, 0x27, 0xA6, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571E28 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineNormal_ObjNormal_16x16
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571E2C size=0xC
-	.byte 0x48, 0x1D, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00, 0x20, 0x1E, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571E38 size=0x4 source=v54_multi_pointer
-	.4byte AnimBubbleEffect
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571E3C size=0x4
-	.byte 0xAB, 0x27, 0xAB, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571E40 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineNormal_ObjBlend_16x16
-	@ ANALYSIS: RAW_BLOCK size=0xC
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571E44 size=0xC
-	.byte 0xE4, 0x0D, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00, 0x20, 0x1E, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571E50 size=0x4 source=v54_multi_pointer
-	.4byte AnimBubbleEffect
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571E54 size=0x4
-	.byte 0x19, 0x27, 0x19, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571E58 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571E5C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571E60 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571E64 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571E68 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810E6C0
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571E6C size=0x20
-	.byte 0x10, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x00, 0x18, 0x00, 0x00
-	.byte 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x6C, 0x1E, 0x57, 0x08, 0x19, 0x27, 0x19, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571E8C size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineNormal_ObjNormal_32x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571E90 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571E94 size=0x8
-	.byte 0x00, 0x00, 0x00, 0x00, 0x84, 0x1E, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571E9C size=0x4 source=v54_multi_pointer
-	.4byte sub_0810E7F8
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571EA0 size=0x1C
-	.byte 0x00, 0x00, 0x03, 0x00, 0x00, 0x00, 0x43, 0x00, 0x00, 0x00, 0x83, 0x00, 0x00, 0x00, 0xC3, 0x00
-	.byte 0xFE, 0xFF, 0x00, 0x00, 0xA0, 0x1E, 0x57, 0x08, 0xAA, 0x27, 0xAA, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571EBC size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x16
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571EC0 size=0x8
-	.byte 0xB4, 0x1E, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571EC8 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571ECC size=0x4 source=v54_multi_pointer
-	.4byte sub_0810E894
-	@ ANALYSIS: RAW_BLOCK size=0x58
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571ED0 size=0x58
-	.byte 0x10, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x28, 0x00, 0x00, 0x00, 0x00, 0x06, 0x00, 0x00
-	.byte 0x00, 0x00, 0xE0, 0xFF, 0x00, 0x05, 0x00, 0x00, 0xF0, 0xFF, 0x20, 0x00, 0x00, 0x0A, 0x00, 0x00
-	.byte 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xD0, 0x1E, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	.byte 0x32, 0x01, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0xD8, 0x01, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFC, 0x1E, 0x57, 0x08
-	.byte 0x0C, 0x1F, 0x57, 0x08, 0xAC, 0x27, 0xAC, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571F28 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineDouble_ObjNormal_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571F2C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571F30 size=0x8
-	.byte 0x00, 0x00, 0x00, 0x00, 0xF8, 0x1E, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571F38 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810E98C
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571F3C size=0x4
-	.byte 0xAC, 0x27, 0xAC, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571F40 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineNormal_ObjNormal_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571F44 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571F48 size=0x8
-	.byte 0x00, 0x00, 0x00, 0x00, 0x1C, 0x1F, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571F50 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810EA18
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571F54 size=0x1C
-	.byte 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x10, 0x00, 0x40, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x54, 0x1F, 0x57, 0x08, 0x5C, 0x1F, 0x57, 0x08, 0x1E, 0x28, 0x1E, 0x28
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571F70 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineNormal_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571F74 size=0x8
-	.byte 0x64, 0x1F, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571F7C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571F80 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810EB64
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571F84 size=0x4
-	.byte 0xAB, 0x27, 0xAB, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571F88 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_16x16
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571F8C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571F90 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571F94 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571F98 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810F29C
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571F9C size=0x20
-	.byte 0x00, 0x00, 0x01, 0x00, 0x08, 0x00, 0x01, 0x00, 0x10, 0x00, 0x01, 0x00, 0x08, 0x00, 0x41, 0x00
-	.byte 0x00, 0x00, 0x41, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x9C, 0x1F, 0x57, 0x08, 0xB2, 0x27, 0xB2, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571FBC size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x16
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571FC0 size=0x8
-	.byte 0xB4, 0x1F, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571FC8 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08571FCC size=0x4 source=v54_multi_pointer
-	.4byte sub_0810F2F0
-	@ ANALYSIS: RAW_BLOCK size=0x38
-	@ ANALYSIS: SOURCE_RANGE addr=0x08571FD0 size=0x38
-	.byte 0x10, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x28, 0x00, 0x00, 0x00, 0x00, 0x06, 0x00, 0x00
-	.byte 0x00, 0x00, 0xE0, 0xFF, 0x00, 0x05, 0x00, 0x00, 0xEC, 0xFF, 0x00, 0x00, 0x00, 0x07, 0x00, 0x00
-	.byte 0xEC, 0xFF, 0xEC, 0xFF, 0x00, 0x05, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0xD0, 0x1F, 0x57, 0x08, 0xAC, 0x27, 0xAC, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572008 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineDouble_ObjNormal_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857200C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572010 size=0x8
-	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x20, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572018 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810F484
-	@ ANALYSIS: RAW_BLOCK size=0x18
-	@ ANALYSIS: SOURCE_RANGE addr=0x0857201C size=0x18
-	.byte 0xA0, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0x1C, 0x20, 0x57, 0x08, 0xAC, 0x27, 0xAC, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572034 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineDouble_ObjNormal_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572038 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x0857203C size=0x8
-	.byte 0x00, 0x00, 0x00, 0x00, 0x2C, 0x20, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572044 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810F4E4
-	@ ANALYSIS: RAW_BLOCK size=0x30
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572048 size=0x30
-	.byte 0x10, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x28, 0x00, 0x00, 0x00, 0x00, 0x06, 0x00, 0x00
-	.byte 0x00, 0x00, 0xE0, 0xFF, 0x00, 0x05, 0x00, 0x00, 0xF0, 0xFF, 0x20, 0x00, 0x00, 0x0A, 0x00, 0x00
-	.byte 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x48, 0x20, 0x57, 0x08, 0xAC, 0x27, 0xAC, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572078 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineDouble_ObjNormal_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857207C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572080 size=0x8
-	.byte 0x00, 0x00, 0x00, 0x00, 0x70, 0x20, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572088 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810F578
-	@ ANALYSIS: RAW_BLOCK size=0x28
-	@ ANALYSIS: SOURCE_RANGE addr=0x0857208C size=0x28
-	.byte 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x20, 0x00, 0x00, 0x0C, 0x00, 0x00
-	.byte 0x00, 0x00, 0xE0, 0xFF, 0x00, 0x0B, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0x8C, 0x20, 0x57, 0x08, 0x20, 0x28, 0x20, 0x28
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085720B4 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineDouble_ObjNormal_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085720B8 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x085720BC size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085720C0 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085720C4 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810F664
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x085720C8 size=0x4
-	.byte 0x21, 0x28, 0x21, 0x28
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085720CC size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_8x8
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085720D0 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x085720D4 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085720D8 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085720DC size=0x4 source=v54_multi_pointer
-	.4byte sub_0810F748
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x085720E0 size=0x4
-	.byte 0xE4, 0x27, 0xE4, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085720E4 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjBlend_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085720E8 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x085720EC size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085720F0 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085720F4 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810F854
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x085720F8 size=0x4
-	.byte 0x2C, 0x28, 0x2C, 0x28
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085720FC size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineDouble_ObjNormal_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572100 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572104 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572108 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857210C size=0x4 source=v54_multi_pointer
-	.4byte sub_0810F8D4
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572110 size=0x20
-	.byte 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0xFE, 0xFF, 0xFE, 0xFF, 0xF6, 0x78, 0x00, 0x00
-	.byte 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10, 0x21, 0x57, 0x08, 0xD4, 0x27, 0xD4, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572130 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineNormal_ObjBlend_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572134 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572138 size=0x8
-	.byte 0x00, 0x00, 0x00, 0x00, 0x28, 0x21, 0x57, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572140 size=0x4 source=v54_multi_pointer
-	.4byte sub_080A7090
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572144 size=0x4
-	.byte 0xB6, 0x27, 0xB6, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572148 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjBlend_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857214C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572150 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572154 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572158 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810FA3C
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x0857215C size=0x4
-	.byte 0xB7, 0x27, 0xB7, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572160 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjBlend_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572164 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572168 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857216C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572170 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810FA3C
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572174 size=0x4
-	.byte 0xB8, 0x27, 0xB8, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572178 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjBlend_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857217C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572180 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572184 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572188 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810FA3C
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x0857218C size=0x4
-	.byte 0xB9, 0x27, 0xB9, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572190 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjBlend_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572194 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572198 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857219C size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085721A0 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810FA3C
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x085721A4 size=0x4
-	.byte 0xBA, 0x27, 0xBA, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085721A8 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjBlend_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085721AC size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x085721B0 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085721B4 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085721B8 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810FA3C
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	@ ANALYSIS: SOURCE_RANGE addr=0x085721BC size=0x20
-	.byte 0x00, 0x00, 0x03, 0x00, 0x10, 0x00, 0x03, 0x00, 0x20, 0x00, 0x03, 0x00, 0x30, 0x00, 0x03, 0x00
-	.byte 0x40, 0x00, 0x03, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0xBC, 0x21, 0x57, 0x08, 0x57, 0x27, 0x57, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085721DC size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x085721E0 size=0x8
-	.byte 0xD4, 0x21, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085721E8 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085721EC size=0x4 source=v54_multi_pointer
-	.4byte sub_0810FDDC
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	@ ANALYSIS: SOURCE_RANGE addr=0x085721F0 size=0x1C
-	.byte 0x00, 0x00, 0x05, 0x00, 0x04, 0x00, 0x05, 0x00, 0x08, 0x00, 0x05, 0x00, 0x0C, 0x00, 0x05, 0x00
-	.byte 0xFF, 0xFF, 0x00, 0x00, 0xF0, 0x21, 0x57, 0x08, 0x56, 0x27, 0x56, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857220C size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_16x16
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572210 size=0x8
-	.byte 0x04, 0x22, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572218 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857221C size=0x4 source=v54_multi_pointer
-	.4byte sub_0810FDDC
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572220 size=0x4
-	.byte 0xB3, 0x27, 0xB3, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572224 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_16x32
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572228 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x0857222C size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572230 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572234 size=0x4 source=v54_multi_pointer
-	.4byte TranslateAnimSpriteToTargetMonLocation
-	@ ANALYSIS: RAW_BLOCK size=0x8C
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572238 size=0x8C
-	.byte 0x08, 0x00, 0x7C, 0x00, 0x10, 0x00, 0x45, 0x00, 0x08, 0x00, 0x45, 0x00, 0x00, 0x00, 0x45, 0x00
-	.byte 0x08, 0x00, 0x56, 0x00, 0xFD, 0xFF, 0x00, 0x00, 0x10, 0x00, 0x45, 0x00, 0x08, 0x00, 0x45, 0x00
-	.byte 0x00, 0x00, 0x45, 0x00, 0x08, 0x00, 0x45, 0x00, 0xFD, 0xFF, 0x01, 0x00, 0x08, 0x00, 0x56, 0x00
-	.byte 0x18, 0x00, 0x43, 0x00, 0x20, 0x00, 0x43, 0x00, 0x28, 0x00, 0x56, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x08, 0x00, 0x3C, 0x00, 0x10, 0x00, 0x05, 0x00, 0x08, 0x00, 0x05, 0x00, 0x00, 0x00, 0x05, 0x00
-	.byte 0x08, 0x00, 0x16, 0x00, 0xFD, 0xFF, 0x00, 0x00, 0x10, 0x00, 0x05, 0x00, 0x08, 0x00, 0x05, 0x00
-	.byte 0x00, 0x00, 0x05, 0x00, 0x08, 0x00, 0x05, 0x00, 0xFD, 0xFF, 0x01, 0x00, 0x08, 0x00, 0x16, 0x00
-	.byte 0x18, 0x00, 0x03, 0x00, 0x20, 0x00, 0x03, 0x00, 0x28, 0x00, 0x16, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x38, 0x22, 0x57, 0x08, 0x78, 0x22, 0x57, 0x08, 0x71, 0x27, 0x71, 0x27
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085722C4 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_16x32
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	@ ANALYSIS: SOURCE_RANGE addr=0x085722C8 size=0x8
-	.byte 0xB8, 0x22, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085722D0 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085722D4 size=0x4 source=v54_multi_pointer
-	.4byte sub_0810FE84
-	@ ANALYSIS: RAW_BLOCK size=0x4C
-	@ ANALYSIS: SOURCE_RANGE addr=0x085722D8 size=0x4C
-	.byte 0x00, 0x00, 0x06, 0x00, 0x10, 0x00, 0x06, 0x00, 0x20, 0x00, 0x06, 0x00, 0x30, 0x00, 0x06, 0x00
-	.byte 0x40, 0x00, 0x06, 0x00, 0x50, 0x00, 0x06, 0x00, 0x60, 0x00, 0x12, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0xD8, 0x22, 0x57, 0x08, 0x00, 0x00, 0x00, 0x00, 0x04, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0xFC, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x04, 0x04, 0x00, 0x00, 0xFD, 0x7F, 0x02, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08572324: psychic.s: sub_0810FF90
+	@ SpriteTemplate: tileTag=0x2817, paletteTag=0x2817
+	.2byte 0x2817, 0x2817
+	.4byte gBattleAnimOam_084FD078 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_IceData_08571910_08571900 @ affineAnims
+	.4byte 0x0810D3A9 @ callback (AnimHailBegin)
+
+sSpriteTemplate_Tag2817_08571928: @ 0x08571928
+	@ SpriteTemplate: tileTag=0x2817, paletteTag=0x2817
+	.2byte 0x2817, 0x2817
+	.4byte gBattleAnimOam_084FD078 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag2817_08571928_0857190C @ affineAnims
+	.4byte 0x080A87AD @ callback (sub_080A87AC)
+
+sAnim_Tag273B_085719C8_0_08571940: @ 0x08571940
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag273B_085719C8_1_08571948: @ 0x08571948
+	@ union AnimCmd stream
+	.2byte 0x0010, 0x0004 @ ANIMCMD_FRAME(16, 4)
+	.2byte 0x0020, 0x0004 @ ANIMCMD_FRAME(32, 4)
+	.2byte 0x0030, 0x0004 @ ANIMCMD_FRAME(48, 4)
+	.2byte 0x0040, 0x0004 @ ANIMCMD_FRAME(64, 4)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag273B_085719C8_0857195C: @ 0x0857195C
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag273B_085719C8_0_08571940 @ [0]
+	.4byte sAnim_Tag273B_085719C8_1_08571948 @ [1]
+
+sAffineAnim_Tag273B_085719C8_0_08571964: @ 0x08571964
+	@ union AffineAnimCmd stream
+	.2byte 0x00E0, 0x00E0, 0x0000, 0x0000 @ AFFINE_FRAME(224, 224, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag273B_085719C8_1_08571974: @ 0x08571974
+	@ union AffineAnimCmd stream
+	.2byte 0x0118, 0x0118, 0x0000, 0x0000 @ AFFINE_FRAME(280, 280, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag273B_085719C8_2_08571984: @ 0x08571984
+	@ union AffineAnimCmd stream
+	.2byte 0x0150, 0x0150, 0x0000, 0x0000 @ AFFINE_FRAME(336, 336, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag273B_085719C8_3_08571994: @ 0x08571994
+	@ union AffineAnimCmd stream
+	.2byte 0x0180, 0x0180, 0x0000, 0x0000 @ AFFINE_FRAME(384, 384, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag273B_085719C8_4_085719A4: @ 0x085719A4
+	@ union AffineAnimCmd stream
+	.2byte 0x01C0, 0x01C0, 0x0000, 0x0000 @ AFFINE_FRAME(448, 448, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag273B_085719C8_085719B4: @ 0x085719B4
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag273B_085719C8_0_08571964 @ [0]
+	.4byte sAffineAnim_Tag273B_085719C8_1_08571974 @ [1]
+	.4byte sAffineAnim_Tag273B_085719C8_2_08571984 @ [2]
+	.4byte sAffineAnim_Tag273B_085719C8_3_08571994 @ [3]
+	.4byte sAffineAnim_Tag273B_085719C8_4_085719A4 @ [4]
+
+sSpriteTemplate_Tag273B_085719C8: @ 0x085719C8
+	@ SpriteTemplate: tileTag=0x273B, paletteTag=0x273B
+	.2byte 0x273B, 0x273B
+	.4byte gBattleAnimOam_084FD0E0 @ oam
+	.4byte sAnims_Tag273B_085719C8_0857195C @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag273B_085719C8_085719B4 @ affineAnims
+	.4byte 0x0810D4D9 @ callback (InitIceBallAnim)
+
+sSpriteTemplate_Tag279D_085719E0: @ 0x085719E0
+	@ SpriteTemplate: tileTag=0x279D, paletteTag=0x279D
+	.2byte 0x279D, 0x279D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
+	.4byte sAnims_Tag279D_085716CC_08571690 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810D59D @ callback (InitIceBallParticle)
+
+sSpriteTemplate_Tag2742_085719F8: @ 0x085719F8
+	@ SpriteTemplate: tileTag=0x2742, paletteTag=0x2742
+	.2byte 0x2742, 0x2742
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810D67D @ callback (unc_080B08A0)
+
+sAnim_Tag279F_08571A4C_0_08571A10: @ 0x08571A10
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag279F_08571AC4_0_08571A18: @ 0x08571A18
+	@ union AnimCmd stream
+	.2byte 0x0010, 0x0001 @ ANIMCMD_FRAME(16, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag279F_08571AC4_1_08571A20: @ 0x08571A20
+	@ union AnimCmd stream
+	.2byte 0x0020, 0x0001 @ ANIMCMD_FRAME(32, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag279F_08571AAC_0_08571A28: @ 0x08571A28
+	@ union AnimCmd stream
+	.2byte 0x0030, 0x0001 @ ANIMCMD_FRAME(48, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag279F_08571AAC_1_08571A30: @ 0x08571A30
+	@ union AnimCmd stream
+	.2byte 0x0030, 0x0041 @ ANIMCMD_FRAME(48, 65)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag279F_08571A4C_08571A38: @ 0x08571A38
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag279F_08571A4C_0_08571A10 @ [0]
+
+sAnims_Tag279F_08571AC4_08571A3C: @ 0x08571A3C
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag279F_08571AC4_0_08571A18 @ [0]
+	.4byte sAnim_Tag279F_08571AC4_1_08571A20 @ [1]
+
+sAnims_Tag279F_08571AAC_08571A44: @ 0x08571A44
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag279F_08571AAC_0_08571A28 @ [0]
+	.4byte sAnim_Tag279F_08571AAC_1_08571A30 @ [1]
+
+sSpriteTemplate_Tag279F_08571A4C: @ 0x08571A4C
+	@ SpriteTemplate: tileTag=0x279F, paletteTag=0x279F
+	.2byte 0x279F, 0x279F
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag279F_08571A4C_08571A38 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810D6B9 @ callback (sub_0810D6B8)
+
+sSpriteTemplate_Tag279F_08571A64: @ 0x08571A64
+	@ SpriteTemplate: tileTag=0x279F, paletteTag=0x279F
+	.2byte 0x279F, 0x279F
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag279F_08571A4C_08571A38 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810D705 @ callback (sub_0810D704)
+
+sSpriteTemplate_Tag279F_08571A7C: @ 0x08571A7C
+	@ SpriteTemplate: tileTag=0x279F, paletteTag=0x279F
+	.2byte 0x279F, 0x279F
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag279F_08571A4C_08571A38 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810D731 @ callback (AnimBasicFistOrFoot)
+
+sSpriteTemplate_Tag279F_08571A94: @ 0x08571A94
+	@ SpriteTemplate: tileTag=0x279F, paletteTag=0x279F
+	.2byte 0x279F, 0x279F
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag279F_08571A4C_08571A38 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810D781 @ callback (sub_0810D780)
+
+sSpriteTemplate_Tag279F_08571AAC: @ 0x08571AAC
+	@ SpriteTemplate: tileTag=0x279F, paletteTag=0x279F
+	.2byte 0x279F, 0x279F
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag279F_08571AAC_08571A44 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810D95D @ callback (sub_0810D95C)
+
+sSpriteTemplate_Tag279F_08571AC4: @ 0x08571AC4
+	@ SpriteTemplate: tileTag=0x279F, paletteTag=0x279F
+	.2byte 0x279F, 0x279F
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag279F_08571AC4_08571A3C @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810DA05 @ callback (sub_0810DA04)
+
+sAffineAnim_Tag279F_08571AF8_0_08571ADC: @ 0x08571ADC
+	@ union AffineAnimCmd stream
+	.2byte 0x0100, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
+	.2byte 0xFFF8, 0xFFF8, 0x0114, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0001, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(1)
+
+sAffineAnims_Tag279F_08571AF8_08571AF4: @ 0x08571AF4
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag279F_08571AF8_0_08571ADC @ [0]
+
+sSpriteTemplate_Tag279F_08571AF8: @ 0x08571AF8
+	@ SpriteTemplate: tileTag=0x279F, paletteTag=0x279F
+	.2byte 0x279F, 0x279F
+	.4byte gBattleAnimOam_084FD0E0 @ oam
+	.4byte sAnims_Tag279F_08571A4C_08571A38 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag279F_08571AF8_08571AF4 @ affineAnims
+	.4byte 0x0810DAC9 @ callback (AnimSpinningKickOrPunch)
+
+sAffineAnim_Tag279F_08571B2C_0_08571B10: @ 0x08571B10
+	@ union AffineAnimCmd stream
+	.2byte 0x0100, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
+	.2byte 0xFFFC, 0xFFFC, 0x0114, 0x0000 @ AFFINE_FRAME(-4, -4, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0001, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(1)
+
+sAffineAnims_Tag279F_08571B2C_08571B28: @ 0x08571B28
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag279F_08571B2C_0_08571B10 @ [0]
+
+sSpriteTemplate_Tag279F_08571B2C: @ 0x08571B2C
+	@ SpriteTemplate: tileTag=0x279F, paletteTag=0x279F
+	.2byte 0x279F, 0x279F
+	.4byte gBattleAnimOam_084FD0E0 @ oam
+	.4byte sAnims_Tag279F_08571A4C_08571A38 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag279F_08571B2C_08571B28 @ affineAnims
+	.4byte 0x0810DAC9 @ callback (AnimSpinningKickOrPunch)
+
+sSpriteTemplate_Tag279F_08571B44: @ 0x08571B44
+	@ SpriteTemplate: tileTag=0x279F, paletteTag=0x279F
+	.2byte 0x279F, 0x279F
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag279F_08571AC4_08571A3C @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810DB35 @ callback (AnimStompFoot)
+
+sSpriteTemplate_Tag2759_08571B5C: @ 0x08571B5C
+	@ SpriteTemplate: tileTag=0x2759, paletteTag=0x2759
+	.2byte 0x2759, 0x2759
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_16x16 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810DBCD @ callback (sub_0810DBCC)
+
+sSpriteTemplate_Tag27B7_08571B74: @ 0x08571B74
+	@ SpriteTemplate: tileTag=0x27B7, paletteTag=0x27B7
+	.2byte 0x27B7, 0x27B7
+	.4byte gBattleAnimOam_084FD148 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810DC5D @ callback (sub_0810DC5C)
+
+sSpriteTemplate_Tag27E0_08571B8C: @ 0x08571B8C
+	@ SpriteTemplate: tileTag=0x27E0, paletteTag=0x27E0
+	.2byte 0x27E0, 0x27E0
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810DD45 @ callback (sub_0810DD44)
+
+sAffineAnim_Tag27E4_08571BD0_0_08571BA4: @ 0x08571BA4
+	@ union AffineAnimCmd stream
+	.2byte 0x0020, 0x0020, 0x0000, 0x0000 @ AFFINE_FRAME(32, 32, rot=0x00, duration=0)
+	.2byte 0x0004, 0x0004, 0x4000, 0x0000 @ AFFINE_FRAME(4, 4, rot=0x00, duration=0)
+	.2byte 0xFFFA, 0xFFFA, 0x0800, 0x0000 @ AFFINE_FRAME(-6, -6, rot=0x00, duration=0)
+	.2byte 0x0006, 0x0006, 0x0800, 0x0000 @ AFFINE_FRAME(6, 6, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0002, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(2)
+
+sAffineAnims_Tag27E4_08571BD0_08571BCC: @ 0x08571BCC
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27E4_08571BD0_0_08571BA4 @ [0]
+
+sSpriteTemplate_Tag27E4_08571BD0: @ 0x08571BD0
+	@ SpriteTemplate: tileTag=0x27E4, paletteTag=0x27E4
+	.2byte 0x27E4, 0x27E4
+	.4byte gBattleAnimOam_084FD208 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27E4_08571BD0_08571BCC @ affineAnims
+	.4byte 0x0810DE59 @ callback (sub_0810DE58)
+
+sSpriteTemplate_Tag2811_08571BE8: @ 0x08571BE8
+	@ SpriteTemplate: tileTag=0x2811, paletteTag=0x2811
+	.2byte 0x2811, 0x2811
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_16x16 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810DF65 @ callback (sub_0810DF64)
+
+sSpriteTemplate_Tag2810_08571C00: @ 0x08571C00
+	@ SpriteTemplate: tileTag=0x2810, paletteTag=0x2810
+	.2byte 0x2810, 0x2810
+	.4byte gOamData_AffineOff_ObjNormal_64x64 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810E0C5 @ callback (sub_0810E0C4)
+
+sSpriteTemplate_Tag279F_08571C18: @ 0x08571C18
+	@ SpriteTemplate: tileTag=0x279F, paletteTag=0x279F
+	.2byte 0x279F, 0x279F
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag279F_08571A4C_08571A38 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810E1D5 @ callback (sub_0810E1D4)
+
+sAnim_Tag2805_08571C6C_0_08571C30: @ 0x08571C30
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0004 @ ANIMCMD_FRAME(0, 4)
+	.2byte 0x0010, 0x0004 @ ANIMCMD_FRAME(16, 4)
+	.2byte 0x0020, 0x0004 @ ANIMCMD_FRAME(32, 4)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag2805_08571C6C_1_08571C40: @ 0x08571C40
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0084 @ ANIMCMD_FRAME(0, 132)
+	.2byte 0x0010, 0x0084 @ ANIMCMD_FRAME(16, 132)
+	.2byte 0x0020, 0x0084 @ ANIMCMD_FRAME(32, 132)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag2805_08571C6C_2_08571C50: @ 0x08571C50
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0044 @ ANIMCMD_FRAME(0, 68)
+	.2byte 0x0010, 0x0044 @ ANIMCMD_FRAME(16, 68)
+	.2byte 0x0020, 0x0044 @ ANIMCMD_FRAME(32, 68)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag2805_08571C6C_08571C60: @ 0x08571C60
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag2805_08571C6C_0_08571C30 @ [0]
+	.4byte sAnim_Tag2805_08571C6C_1_08571C40 @ [1]
+	.4byte sAnim_Tag2805_08571C6C_2_08571C50 @ [2]
+
+sSpriteTemplate_Tag2805_08571C6C: @ 0x08571C6C
+	@ SpriteTemplate: tileTag=0x2805, paletteTag=0x2805
+	.2byte 0x2805, 0x2805
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag2805_08571C6C_08571C60 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810E261 @ callback (sub_0810E260)
+
+sAnim_Tag2806_08571CB4_0_08571C84: @ 0x08571C84
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0006 @ ANIMCMD_FRAME(0, 6)
+	.2byte 0x0040, 0x0006 @ ANIMCMD_FRAME(64, 6)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag2806_08571CB4_1_08571C90: @ 0x08571C90
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x00C6 @ ANIMCMD_FRAME(0, 198)
+	.2byte 0x0040, 0x00C6 @ ANIMCMD_FRAME(64, 198)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag2806_08571CB4_2_08571C9C: @ 0x08571C9C
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0046 @ ANIMCMD_FRAME(0, 70)
+	.2byte 0x0040, 0x0046 @ ANIMCMD_FRAME(64, 70)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag2806_08571CB4_08571CA8: @ 0x08571CA8
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag2806_08571CB4_0_08571C84 @ [0]
+	.4byte sAnim_Tag2806_08571CB4_1_08571C90 @ [1]
+	.4byte sAnim_Tag2806_08571CB4_2_08571C9C @ [2]
+
+sSpriteTemplate_Tag2806_08571CB4: @ 0x08571CB4
+	@ SpriteTemplate: tileTag=0x2806, paletteTag=0x2806
+	.2byte 0x2806, 0x2806
+	.4byte gOamData_AffineOff_ObjNormal_64x64 @ oam
+	.4byte sAnims_Tag2806_08571CB4_08571CA8 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810E261 @ callback (sub_0810E260)
+
+sAffineAnim_Tag279F_08571CE8_0_08571CCC: @ 0x08571CCC
+	@ union AffineAnimCmd stream
+	.2byte 0x0200, 0x0200, 0x0000, 0x0000 @ AFFINE_FRAME(512, 512, rot=0x00, duration=0)
+	.2byte 0xFFE0, 0xFFE0, 0x0800, 0x0000 @ AFFINE_FRAME(-32, -32, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag279F_08571CE8_08571CE4: @ 0x08571CE4
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag279F_08571CE8_0_08571CCC @ [0]
+
+sSpriteTemplate_Tag279F_08571CE8: @ 0x08571CE8
+	@ SpriteTemplate: tileTag=0x279F, paletteTag=0x279F
+	.2byte 0x279F, 0x279F
+	.4byte gBattleAnimOam_084FD0E0 @ oam
+	.4byte sAnims_Tag279F_08571A4C_08571A38 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag279F_08571CE8_08571CE4 @ affineAnims
+	.4byte 0x0810E2CD @ callback (sub_0810E2CC)
+
+sAnim_Tag27A7_08571D18_0_08571D00: @ 0x08571D00
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0005 @ ANIMCMD_FRAME(0, 5)
+	.2byte 0x0008, 0x0005 @ ANIMCMD_FRAME(8, 5)
+	.2byte 0x0010, 0x0005 @ ANIMCMD_FRAME(16, 5)
+	.2byte 0x0018, 0x0005 @ ANIMCMD_FRAME(24, 5)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag27A7_08571D18_08571D14: @ 0x08571D14
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag27A7_08571D18_0_08571D00 @ [0]
+
+sSpriteTemplate_Tag27A7_08571D18: @ 0x08571D18
+	@ SpriteTemplate: tileTag=0x27A7, paletteTag=0x27A7
+	.2byte 0x27A7, 0x27A7
+	.4byte gBattleAnimOam_084FD060 @ oam
+	.4byte sAnims_Tag27A7_08571D18_08571D14 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x080A7091 @ callback (sub_080A7090)
+
+sAnim_Tag27A6_08571D8C_0_08571D30: @ 0x08571D30
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag27A6_08571DF0_0_08571D38: @ 0x08571D38
+	@ union AnimCmd stream
+	.2byte 0x0004, 0x0001 @ ANIMCMD_FRAME(4, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag27A6_08571DBC_0_08571D40: @ 0x08571D40
+	@ union AnimCmd stream
+	.2byte 0x0008, 0x0001 @ ANIMCMD_FRAME(8, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag27A6_08571D8C_08571D48: @ 0x08571D48
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag27A6_08571D8C_0_08571D30 @ [0]
+
+sAnims_Tag27A6_08571DF0_08571D4C: @ 0x08571D4C
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag27A6_08571DF0_0_08571D38 @ [0]
+
+sAnims_Tag27A6_08571DBC_08571D50: @ 0x08571D50
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag27A6_08571DBC_0_08571D40 @ [0]
+
+sAffineAnim_Tag27A6_08571D8C_0_08571D54: @ 0x08571D54
+	@ union AffineAnimCmd stream
+	.2byte 0x0160, 0x0160, 0x0000, 0x0000 @ AFFINE_FRAME(352, 352, rot=0x00, duration=0)
+	.2byte 0xFFF6, 0xFFF6, 0x0A00, 0x0000 @ AFFINE_FRAME(-10, -10, rot=0x00, duration=0)
+	.2byte 0x000A, 0x000A, 0x0A00, 0x0000 @ AFFINE_FRAME(10, 10, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
+
+sAffineAnim_Tag27A6_08571DBC_0_08571D74: @ 0x08571D74
+	@ union AffineAnimCmd stream
+	.2byte 0x00EC, 0x00EC, 0x0000, 0x0000 @ AFFINE_FRAME(236, 236, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag27A6_08571D8C_08571D84: @ 0x08571D84
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27A6_08571D8C_0_08571D54 @ [0]
+
+sAffineAnims_Tag27A6_08571DBC_08571D88: @ 0x08571D88
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27A6_08571DBC_0_08571D74 @ [0]
+
+sSpriteTemplate_Tag27A6_08571D8C: @ 0x08571D8C
+	@ SpriteTemplate: tileTag=0x27A6, paletteTag=0x27A6
+	.2byte 0x27A6, 0x27A6
+	.4byte gBattleAnimOam_AffineDouble_ObjNormal_16x16 @ oam
+	.4byte sAnims_Tag27A6_08571D8C_08571D48 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27A6_08571D8C_08571D84 @ affineAnims
+	.4byte 0x0810E3FD @ callback (sub_0810E3FC)
+
+sSpriteTemplate_Tag27A6_08571DA4: @ 0x08571DA4
+	@ SpriteTemplate: tileTag=0x27A6, paletteTag=0x27A6
+	.2byte 0x27A6, 0x27A6
+	.4byte gBattleAnimOam_AffineDouble_ObjNormal_16x16 @ oam
+	.4byte sAnims_Tag27A6_08571D8C_08571D48 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27A6_08571D8C_08571D84 @ affineAnims
+	.4byte 0x0810E47D @ callback (sub_0810E47C)
+
+sSpriteTemplate_Tag27A6_08571DBC: @ 0x08571DBC
+	@ SpriteTemplate: tileTag=0x27A6, paletteTag=0x27A6
+	.2byte 0x27A6, 0x27A6
+	.4byte gBattleAnimOam_084FD078 @ oam
+	.4byte sAnims_Tag27A6_08571DBC_08571D50 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27A6_08571DBC_08571D88 @ affineAnims
+	.4byte 0x0810E521 @ callback (sub_0810E520)
+
+sAffineAnim_WaterGunDroplet_0_08571DD4: @ 0x08571DD4
+	@ union AffineAnimCmd stream
+	.2byte 0xFFF0, 0x0010, 0x0600, 0x0000 @ AFFINE_FRAME(-16, 16, rot=0x00, duration=0)
+	.2byte 0x0010, 0xFFF0, 0x0600, 0x0000 @ AFFINE_FRAME(16, -16, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
+
+sAffineAnims_WaterGunDroplet_08571DEC: @ 0x08571DEC
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_WaterGunDroplet_0_08571DD4 @ [0]
+
+sSpriteTemplate_Tag27A6_08571DF0: @ 0x08571DF0
+	@ SpriteTemplate: tileTag=0x27A6, paletteTag=0x27A6
+	.2byte 0x27A6, 0x27A6
+	.4byte gBattleAnimOam_AffineDouble_ObjNormal_16x16 @ oam
+	.4byte sAnims_Tag27A6_08571DF0_08571D4C @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_WaterGunDroplet_08571DEC @ affineAnims
+	.4byte 0x0810E5A1 @ callback (sub_0810E5A0)
+
+sAffineAnim_Tag27A6_08571E24_0_08571E08: @ 0x08571E08
+	@ union AffineAnimCmd stream
+	.2byte 0x009C, 0x009C, 0x0000, 0x0000 @ AFFINE_FRAME(156, 156, rot=0x00, duration=0)
+	.2byte 0x0005, 0x0005, 0x1400, 0x0000 @ AFFINE_FRAME(5, 5, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag27A6_08571E24_08571E20: @ 0x08571E20
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27A6_08571E24_0_08571E08 @ [0]
+
+sSpriteTemplate_Tag27A6_08571E24: @ 0x08571E24
+	@ SpriteTemplate: tileTag=0x27A6, paletteTag=0x27A6
+	.2byte 0x27A6, 0x27A6
+	.4byte gBattleAnimOam_084FD078 @ oam
+	.4byte sAnims_Tag27A6_08571D8C_08571D48 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27A6_08571E24_08571E20 @ affineAnims
+	.4byte 0x0810E615 @ callback (AnimBubbleEffect)
+
+sSpriteTemplate_Tag27AB_08571E3C: @ 0x08571E3C
+	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
+	.2byte 0x27AB, 0x27AB
+	.4byte gBattleAnimOam_AffineOn_ObjBlend_8x8 @ oam
+	.4byte sAnims_WaterGunProjectile_08570DE4 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27A6_08571E24_08571E20 @ affineAnims
+	.4byte 0x0810E615 @ callback (AnimBubbleEffect)
+
+sSpriteTemplate_Tag2719_08571E54: @ 0x08571E54
+	@ SpriteTemplate: tileTag=0x2719, paletteTag=0x2719
+	.2byte 0x2719, 0x2719
+	.4byte gOamData_AffineOff_ObjNormal_32x64 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810E6C1 @ callback (sub_0810E6C0)
+
+sAffineAnim_Tag2719_08571E88_0_08571E6C: @ 0x08571E6C
+	@ union AffineAnimCmd stream
+	.2byte 0x0010, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(16, 256, rot=0x00, duration=0)
+	.2byte 0x000A, 0x0000, 0x1800, 0x0000 @ AFFINE_FRAME(10, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag2719_08571E88_08571E84: @ 0x08571E84
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag2719_08571E88_0_08571E6C @ [0]
+
+sSpriteTemplate_Tag2719_08571E88: @ 0x08571E88
+	@ SpriteTemplate: tileTag=0x2719, paletteTag=0x2719
+	.2byte 0x2719, 0x2719
+	.4byte gBattleAnimOam_084FD0C8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag2719_08571E88_08571E84 @ affineAnims
+	.4byte 0x0810E7F9 @ callback (sub_0810E7F8)
+
+sAnim_Tag27AA_08571EB8_0_08571EA0: @ 0x08571EA0
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0003 @ ANIMCMD_FRAME(0, 3)
+	.2byte 0x0000, 0x0043 @ ANIMCMD_FRAME(0, 67)
+	.2byte 0x0000, 0x0083 @ ANIMCMD_FRAME(0, 131)
+	.2byte 0x0000, 0x00C3 @ ANIMCMD_FRAME(0, 195)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnims_Tag27AA_08571EB8_08571EB4: @ 0x08571EB4
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag27AA_08571EB8_0_08571EA0 @ [0]
+
+sSpriteTemplate_Tag27AA_08571EB8: @ 0x08571EB8
+	@ SpriteTemplate: tileTag=0x27AA, paletteTag=0x27AA
+	.2byte 0x27AA, 0x27AA
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x16 @ oam
+	.4byte sAnims_Tag27AA_08571EB8_08571EB4 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810E895 @ callback (sub_0810E894)
+
+sAffineAnim_Tag27AC_08571F24_0_08571ED0: @ 0x08571ED0
+	@ union AffineAnimCmd stream
+	.2byte 0x0010, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(16, 256, rot=0x00, duration=0)
+	.2byte 0x0028, 0x0000, 0x0600, 0x0000 @ AFFINE_FRAME(40, 0, rot=0x00, duration=0)
+	.2byte 0x0000, 0xFFE0, 0x0500, 0x0000 @ AFFINE_FRAME(0, -32, rot=0x00, duration=0)
+	.2byte 0xFFF0, 0x0020, 0x0A00, 0x0000 @ AFFINE_FRAME(-16, 32, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag27AC_08571F24_08571EF8: @ 0x08571EF8
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27AC_08571F24_0_08571ED0 @ [0]
+
+sAffineAnim_Tag27AC_08571F3C_0_08571EFC: @ 0x08571EFC
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x0132, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag27AC_08571F3C_1_08571F0C: @ 0x08571F0C
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x01D8, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag27AC_08571F3C_08571F1C: @ 0x08571F1C
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27AC_08571F3C_0_08571EFC @ [0]
+	.4byte sAffineAnim_Tag27AC_08571F3C_1_08571F0C @ [1]
+
+sSpriteTemplate_Tag27AC_08571F24: @ 0x08571F24
+	@ SpriteTemplate: tileTag=0x27AC, paletteTag=0x27AC
+	.2byte 0x27AC, 0x27AC
+	.4byte gBattleAnimOam_084FD0E8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27AC_08571F24_08571EF8 @ affineAnims
+	.4byte 0x0810E98D @ callback (sub_0810E98C)
+
+sSpriteTemplate_Tag27AC_08571F3C: @ 0x08571F3C
+	@ SpriteTemplate: tileTag=0x27AC, paletteTag=0x27AC
+	.2byte 0x27AC, 0x27AC
+	.4byte gOamData_AffineNormal_ObjNormal_64x64 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27AC_08571F3C_08571F1C @ affineAnims
+	.4byte 0x0810EA19 @ callback (sub_0810EA18)
+
+sAnim_Tag281E_08571F6C_0_08571F54: @ 0x08571F54
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0000 @ ANIMCMD_FRAME(0, 0)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag281E_08571F6C_1_08571F5C: @ 0x08571F5C
+	@ union AnimCmd stream
+	.2byte 0x0010, 0x0040 @ ANIMCMD_FRAME(16, 64)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag281E_08571F6C_08571F64: @ 0x08571F64
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag281E_08571F6C_0_08571F54 @ [0]
+	.4byte sAnim_Tag281E_08571F6C_1_08571F5C @ [1]
+
+sSpriteTemplate_Tag281E_08571F6C: @ 0x08571F6C
+	@ SpriteTemplate: tileTag=0x281E, paletteTag=0x281E
+	.2byte 0x281E, 0x281E
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_64x64 @ oam
+	.4byte sAnims_Tag281E_08571F6C_08571F64 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810EB65 @ callback (sub_0810EB64)
+
+sSpriteTemplate_Tag27AB_08571F84: @ 0x08571F84
+	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
+	.2byte 0x27AB, 0x27AB
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_16x16 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810F29D @ callback (sub_0810F29C)
+
+sAnim_Tag27B2_08571FB8_0_08571F9C: @ 0x08571F9C
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
+	.2byte 0x0008, 0x0001 @ ANIMCMD_FRAME(8, 1)
+	.2byte 0x0010, 0x0001 @ ANIMCMD_FRAME(16, 1)
+	.2byte 0x0008, 0x0041 @ ANIMCMD_FRAME(8, 65)
+	.2byte 0x0000, 0x0041 @ ANIMCMD_FRAME(0, 65)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag27B2_08571FB8_08571FB4: @ 0x08571FB4
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag27B2_08571FB8_0_08571F9C @ [0]
+
+sSpriteTemplate_Tag27B2_08571FB8: @ 0x08571FB8
+	@ SpriteTemplate: tileTag=0x27B2, paletteTag=0x27B2
+	.2byte 0x27B2, 0x27B2
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x16 @ oam
+	.4byte sAnims_Tag27B2_08571FB8_08571FB4 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810F2F1 @ callback (sub_0810F2F0)
+
+sAffineAnim_Tag27AC_08572004_0_08571FD0: @ 0x08571FD0
+	@ union AffineAnimCmd stream
+	.2byte 0x0010, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(16, 256, rot=0x00, duration=0)
+	.2byte 0x0028, 0x0000, 0x0600, 0x0000 @ AFFINE_FRAME(40, 0, rot=0x00, duration=0)
+	.2byte 0x0000, 0xFFE0, 0x0500, 0x0000 @ AFFINE_FRAME(0, -32, rot=0x00, duration=0)
+	.2byte 0xFFEC, 0x0000, 0x0700, 0x0000 @ AFFINE_FRAME(-20, 0, rot=0x00, duration=0)
+	.2byte 0xFFEC, 0xFFEC, 0x0500, 0x0000 @ AFFINE_FRAME(-20, -20, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag27AC_08572004_08572000: @ 0x08572000
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27AC_08572004_0_08571FD0 @ [0]
+
+sSpriteTemplate_Tag27AC_08572004: @ 0x08572004
+	@ SpriteTemplate: tileTag=0x27AC, paletteTag=0x27AC
+	.2byte 0x27AC, 0x27AC
+	.4byte gBattleAnimOam_084FD0E8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27AC_08572004_08572000 @ affineAnims
+	.4byte 0x0810F485 @ callback (sub_0810F484)
+
+sAffineAnim_Tag27AC_08572030_0_0857201C: @ 0x0857201C
+	@ union AffineAnimCmd stream
+	.2byte 0x00A0, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(160, 256, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag27AC_08572030_0857202C: @ 0x0857202C
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27AC_08572030_0_0857201C @ [0]
+
+sSpriteTemplate_Tag27AC_08572030: @ 0x08572030
+	@ SpriteTemplate: tileTag=0x27AC, paletteTag=0x27AC
+	.2byte 0x27AC, 0x27AC
+	.4byte gBattleAnimOam_084FD0E8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27AC_08572030_0857202C @ affineAnims
+	.4byte 0x0810F4E5 @ callback (sub_0810F4E4)
+
+sAffineAnim_Tag27AC_08572074_0_08572048: @ 0x08572048
+	@ union AffineAnimCmd stream
+	.2byte 0x0010, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(16, 256, rot=0x00, duration=0)
+	.2byte 0x0028, 0x0000, 0x0600, 0x0000 @ AFFINE_FRAME(40, 0, rot=0x00, duration=0)
+	.2byte 0x0000, 0xFFE0, 0x0500, 0x0000 @ AFFINE_FRAME(0, -32, rot=0x00, duration=0)
+	.2byte 0xFFF0, 0x0020, 0x0A00, 0x0000 @ AFFINE_FRAME(-16, 32, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag27AC_08572074_08572070: @ 0x08572070
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27AC_08572074_0_08572048 @ [0]
+
+sSpriteTemplate_Tag27AC_08572074: @ 0x08572074
+	@ SpriteTemplate: tileTag=0x27AC, paletteTag=0x27AC
+	.2byte 0x27AC, 0x27AC
+	.4byte gBattleAnimOam_084FD0E8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27AC_08572074_08572070 @ affineAnims
+	.4byte 0x0810F579 @ callback (sub_0810F578)
+
+sBattleAnimData_0857208C: @ 0x0857208C
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x24; no stronger object type proven
+	.4byte 0x00000100
+	.4byte 0x00000000
+	.4byte 0x00200000
+	.4byte 0x00000C00
+	.4byte 0xFFE00000
+	.4byte 0x00000B00
+	.4byte 0x00007FFF
+	.4byte 0x00000000
+	.4byte sBattleAnimData_0857208C
+
+sSpriteTemplate_Tag2820_085720B0: @ 0x085720B0
+	@ SpriteTemplate: tileTag=0x2820, paletteTag=0x2820
+	.2byte 0x2820, 0x2820
+	.4byte gBattleAnimOam_084FD0E8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810F665 @ callback (sub_0810F664)
+
+sSpriteTemplate_Tag2821_085720C8: @ 0x085720C8
+	@ SpriteTemplate: tileTag=0x2821, paletteTag=0x2821
+	.2byte 0x2821, 0x2821
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810F749 @ callback (sub_0810F748)
+
+sSpriteTemplate_Tag27E4_085720E0: @ 0x085720E0
+	@ SpriteTemplate: tileTag=0x27E4, paletteTag=0x27E4
+	.2byte 0x27E4, 0x27E4
+	.4byte gBattleAnimOam_084FD148 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810F855 @ callback (sub_0810F854)
+
+sSpriteTemplate_Tag282C_085720F8: @ 0x085720F8
+	@ SpriteTemplate: tileTag=0x282C, paletteTag=0x282C
+	.2byte 0x282C, 0x282C
+	.4byte gBattleAnimOam_084FD0E8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810F8D5 @ callback (sub_0810F8D4)
+
+sAffineAnim_Tag27D4_0857212C_0_08572110: @ 0x08572110
+	@ union AffineAnimCmd stream
+	.2byte 0x0100, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
+	.2byte 0xFFFE, 0xFFFE, 0x78F6, 0x0000 @ AFFINE_FRAME(-2, -2, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag27D4_0857212C_08572128: @ 0x08572128
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27D4_0857212C_0_08572110 @ [0]
+
+sSpriteTemplate_Tag27D4_0857212C: @ 0x0857212C
+	@ SpriteTemplate: tileTag=0x27D4, paletteTag=0x27D4
+	.2byte 0x27D4, 0x27D4
+	.4byte gBattleAnimOam_084FD1A8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27D4_0857212C_08572128 @ affineAnims
+	.4byte 0x080A7091 @ callback (sub_080A7090)
+
+sSpriteTemplate_Tag27B6_08572144: @ 0x08572144
+	@ SpriteTemplate: tileTag=0x27B6, paletteTag=0x27B6
+	.2byte 0x27B6, 0x27B6
+	.4byte gBattleAnimOam_084FD148 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810FA3D @ callback (sub_0810FA3C)
+
+sSpriteTemplate_Tag27B7_0857215C: @ 0x0857215C
+	@ SpriteTemplate: tileTag=0x27B7, paletteTag=0x27B7
+	.2byte 0x27B7, 0x27B7
+	.4byte gBattleAnimOam_084FD148 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810FA3D @ callback (sub_0810FA3C)
+
+sSpriteTemplate_Tag27B8_08572174: @ 0x08572174
+	@ SpriteTemplate: tileTag=0x27B8, paletteTag=0x27B8
+	.2byte 0x27B8, 0x27B8
+	.4byte gBattleAnimOam_084FD148 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810FA3D @ callback (sub_0810FA3C)
+
+sSpriteTemplate_Tag27B9_0857218C: @ 0x0857218C
+	@ SpriteTemplate: tileTag=0x27B9, paletteTag=0x27B9
+	.2byte 0x27B9, 0x27B9
+	.4byte gBattleAnimOam_084FD148 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810FA3D @ callback (sub_0810FA3C)
+
+sSpriteTemplate_Tag27BA_085721A4: @ 0x085721A4
+	@ SpriteTemplate: tileTag=0x27BA, paletteTag=0x27BA
+	.2byte 0x27BA, 0x27BA
+	.4byte gBattleAnimOam_084FD148 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810FA3D @ callback (sub_0810FA3C)
+
+sAnim_Tag2757_085721D8_0_085721BC: @ 0x085721BC
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0003 @ ANIMCMD_FRAME(0, 3)
+	.2byte 0x0010, 0x0003 @ ANIMCMD_FRAME(16, 3)
+	.2byte 0x0020, 0x0003 @ ANIMCMD_FRAME(32, 3)
+	.2byte 0x0030, 0x0003 @ ANIMCMD_FRAME(48, 3)
+	.2byte 0x0040, 0x0003 @ ANIMCMD_FRAME(64, 3)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag2757_085721D8_085721D4: @ 0x085721D4
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag2757_085721D8_0_085721BC @ [0]
+
+sSpriteTemplate_Tag2757_085721D8: @ 0x085721D8
+	@ SpriteTemplate: tileTag=0x2757, paletteTag=0x2757
+	.2byte 0x2757, 0x2757
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag2757_085721D8_085721D4 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810FDDD @ callback (sub_0810FDDC)
+
+sAnim_Tag2756_08572208_0_085721F0: @ 0x085721F0
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0005 @ ANIMCMD_FRAME(0, 5)
+	.2byte 0x0004, 0x0005 @ ANIMCMD_FRAME(4, 5)
+	.2byte 0x0008, 0x0005 @ ANIMCMD_FRAME(8, 5)
+	.2byte 0x000C, 0x0005 @ ANIMCMD_FRAME(12, 5)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag2756_08572208_08572204: @ 0x08572204
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag2756_08572208_0_085721F0 @ [0]
+
+sSpriteTemplate_Tag2756_08572208: @ 0x08572208
+	@ SpriteTemplate: tileTag=0x2756, paletteTag=0x2756
+	.2byte 0x2756, 0x2756
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_16x16 @ oam
+	.4byte sAnims_Tag2756_08572208_08572204 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810FDDD @ callback (sub_0810FDDC)
+
+sSpriteTemplate_Tag27B3_08572220: @ 0x08572220
+	@ SpriteTemplate: tileTag=0x27B3, paletteTag=0x27B3
+	.2byte 0x27B3, 0x27B3
+	.4byte gBattleAnimOam_084FD060 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x080A70E9 @ callback (TranslateAnimSpriteToTargetMonLocation)
+
+sAnim_Tag2771_085722C0_0_08572238: @ 0x08572238
+	@ union AnimCmd stream
+	.2byte 0x0008, 0x007C @ ANIMCMD_FRAME(8, 124)
+	.2byte 0x0010, 0x0045 @ ANIMCMD_FRAME(16, 69)
+	.2byte 0x0008, 0x0045 @ ANIMCMD_FRAME(8, 69)
+	.2byte 0x0000, 0x0045 @ ANIMCMD_FRAME(0, 69)
+	.2byte 0x0008, 0x0056 @ ANIMCMD_FRAME(8, 86)
+	.2byte 0xFFFD, 0x0000 @ ANIMCMD_LOOP(0)
+	.2byte 0x0010, 0x0045 @ ANIMCMD_FRAME(16, 69)
+	.2byte 0x0008, 0x0045 @ ANIMCMD_FRAME(8, 69)
+	.2byte 0x0000, 0x0045 @ ANIMCMD_FRAME(0, 69)
+	.2byte 0x0008, 0x0045 @ ANIMCMD_FRAME(8, 69)
+	.2byte 0xFFFD, 0x0001 @ ANIMCMD_LOOP(1)
+	.2byte 0x0008, 0x0056 @ ANIMCMD_FRAME(8, 86)
+	.2byte 0x0018, 0x0043 @ ANIMCMD_FRAME(24, 67)
+	.2byte 0x0020, 0x0043 @ ANIMCMD_FRAME(32, 67)
+	.2byte 0x0028, 0x0056 @ ANIMCMD_FRAME(40, 86)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag2771_085722C0_1_08572278: @ 0x08572278
+	@ union AnimCmd stream
+	.2byte 0x0008, 0x003C @ ANIMCMD_FRAME(8, 60)
+	.2byte 0x0010, 0x0005 @ ANIMCMD_FRAME(16, 5)
+	.2byte 0x0008, 0x0005 @ ANIMCMD_FRAME(8, 5)
+	.2byte 0x0000, 0x0005 @ ANIMCMD_FRAME(0, 5)
+	.2byte 0x0008, 0x0016 @ ANIMCMD_FRAME(8, 22)
+	.2byte 0xFFFD, 0x0000 @ ANIMCMD_LOOP(0)
+	.2byte 0x0010, 0x0005 @ ANIMCMD_FRAME(16, 5)
+	.2byte 0x0008, 0x0005 @ ANIMCMD_FRAME(8, 5)
+	.2byte 0x0000, 0x0005 @ ANIMCMD_FRAME(0, 5)
+	.2byte 0x0008, 0x0005 @ ANIMCMD_FRAME(8, 5)
+	.2byte 0xFFFD, 0x0001 @ ANIMCMD_LOOP(1)
+	.2byte 0x0008, 0x0016 @ ANIMCMD_FRAME(8, 22)
+	.2byte 0x0018, 0x0003 @ ANIMCMD_FRAME(24, 3)
+	.2byte 0x0020, 0x0003 @ ANIMCMD_FRAME(32, 3)
+	.2byte 0x0028, 0x0016 @ ANIMCMD_FRAME(40, 22)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag2771_085722C0_085722B8: @ 0x085722B8
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag2771_085722C0_0_08572238 @ [0]
+	.4byte sAnim_Tag2771_085722C0_1_08572278 @ [1]
+
+sSpriteTemplate_Tag2771_085722C0: @ 0x085722C0
+	@ SpriteTemplate: tileTag=0x2771, paletteTag=0x2771
+	.2byte 0x2771, 0x2771
+	.4byte gBattleAnimOam_084FD060 @ oam
+	.4byte sAnims_Tag2771_085722C0_085722B8 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810FE85 @ callback (sub_0810FE84)
+
+sAnim_Tag276D_08572328_0_085722D8: @ 0x085722D8
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0006 @ ANIMCMD_FRAME(0, 6)
+	.2byte 0x0010, 0x0006 @ ANIMCMD_FRAME(16, 6)
+	.2byte 0x0020, 0x0006 @ ANIMCMD_FRAME(32, 6)
+	.2byte 0x0030, 0x0006 @ ANIMCMD_FRAME(48, 6)
+	.2byte 0x0040, 0x0006 @ ANIMCMD_FRAME(64, 6)
+	.2byte 0x0050, 0x0006 @ ANIMCMD_FRAME(80, 6)
+	.2byte 0x0060, 0x0012 @ ANIMCMD_FRAME(96, 18)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag276D_08572328_085722F8: @ 0x085722F8
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag276D_08572328_0_085722D8 @ [0]
+
+sBattleAnimData_085722FC: @ 0x085722FC
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x28; no stronger object type proven
+	.4byte 0x00000000
+	.4byte 0x00000404
+	.4byte 0x00000000
+	.4byte 0x000008FC
+	.4byte 0x00000000
+	.4byte 0x00000404
+	.4byte 0x00027FFD
+	.4byte 0x00000000
+	.4byte 0x00007FFF
+	.4byte 0x00000000
+
+	.if (. - .Lsemantic_range_08571840) != 0xAE4
+	.error "semantic range 0x08571840 size mismatch"
+	.endif
+	@ semantic battle-animation reconstruction: psychic
+	@ ROM range 0x08572324-0x085727A3
+.Lsemantic_range_08572324:
 	.globl gPsychicData_08572324
 gPsychicData_08572324: @ 0x08572324
-	@ analyzed canonical ROM range 0x08572324-0x0857233F
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0x085722FC @ +0x0
-	.4byte 0x276D276D @ +0x4
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x8
-	.4byte 0x085722F8 @ +0xC
-	.4byte 0 @ +0x10
-	.4byte gDummySpriteAffineAnimTable @ +0x14
-	.4byte sub_0810FF00 @ +0x18
-	@ pret/pokeemerald-jp direct xref for 0x08572340: psychic.s: sub_08110024
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x4; no stronger object type proven
+	.4byte sBattleAnimData_085722FC
+
+sSpriteTemplate_Tag276D_08572328: @ 0x08572328
+	@ SpriteTemplate: tileTag=0x276D, paletteTag=0x276D
+	.2byte 0x276D, 0x276D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag276D_08572328_085722F8 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0810FF01 @ callback (sub_0810FF00)
+
 	.globl gPsychicData_08572340
 gPsychicData_08572340: @ 0x08572340
-	@ analyzed canonical ROM range 0x08572340-0x0857235F
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x20
-	.2byte 0xFFF8, 0x000A, 0x1000, 0x0000, 0x0012, 0xFFEE, 0x1000, 0x0000
-	.2byte 0xFFEC, 0x0010, 0x0800, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x08572360: psychic.s: sub_0811008C
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x20; no stronger object type proven
+	.4byte 0x000AFFF8
+	.4byte 0x00001000
+	.4byte 0xFFEE0012
+	.4byte 0x00001000
+	.4byte 0x0010FFEC
+	.4byte 0x00000800
+	.4byte 0x00007FFF
+	.4byte 0x00000000
+
 	.globl gPsychicData_08572360
 gPsychicData_08572360: @ 0x08572360
-	@ analyzed canonical ROM range 0x08572360-0x08572377
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x18
-	.2byte 0x0040, 0xFFFC, 0x1400, 0x0000, 0x0000, 0x0000, 0xC800, 0x0000
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x08572378: psychic.s: sub_08110224
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x18; no stronger object type proven
+	.4byte 0xFFFC0040
+	.4byte 0x00001400
+	.4byte 0x00000000
+	.4byte 0x0000C800
+	.4byte 0x00007FFF
+	.4byte 0x00000000
+
 	.globl gPsychicData_08572378
 gPsychicData_08572378: @ 0x08572378
-	@ analyzed canonical ROM range 0x08572378-0x08572447
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572378 size=0x4
-	.byte 0x09, 0x28, 0x09, 0x28
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857237C size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjBlend_16x16
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572380 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572384 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572388 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857238C size=0x4 source=v54_multi_pointer
-	.4byte SpriteCallbackDummy
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x08572390 size=0x4
-	.byte 0x0A, 0x28, 0x0A, 0x28
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572394 size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_64x64
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08572398 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	@ ANALYSIS: SOURCE_RANGE addr=0x0857239C size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085723A0 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085723A4 size=0x4 source=v54_multi_pointer
-	.4byte sub_081103F8
-	@ ANALYSIS: RAW_BLOCK size=0xA0
-	@ ANALYSIS: SOURCE_RANGE addr=0x085723A8 size=0xA0
-	.byte 0xF8, 0xFF, 0xF8, 0xFF, 0x00, 0x08, 0x00, 0x00, 0x08, 0x00, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
-	.byte 0xFE, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xF0, 0x00, 0xF0, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0xF8, 0xFF, 0xF8, 0xFF, 0x00, 0x06, 0x00, 0x00, 0x08, 0x00, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
-	.byte 0xF8, 0xFF, 0xF8, 0xFF, 0x00, 0x02, 0x00, 0x00, 0xFE, 0x7F, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0xD0, 0x00, 0xD0, 0x00, 0x00, 0x00, 0x00, 0x00, 0xF8, 0xFF, 0xF8, 0xFF, 0x00, 0x04, 0x00, 0x00
-	.byte 0x08, 0x00, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00, 0xF8, 0xFF, 0xF8, 0xFF, 0x00, 0x04, 0x00, 0x00
-	.byte 0xFE, 0x7F, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0xB0, 0x00, 0xB0, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0xF8, 0xFF, 0xF8, 0xFF, 0x00, 0x02, 0x00, 0x00, 0x08, 0x00, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
-	.byte 0xF8, 0xFF, 0xF8, 0xFF, 0x00, 0x06, 0x00, 0x00, 0xFE, 0x7F, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0xA8, 0x23, 0x57, 0x08, 0xC0, 0x23, 0x57, 0x08, 0xE8, 0x23, 0x57, 0x08, 0x10, 0x24, 0x57, 0x08
-	@ pret/pokeemerald-jp direct xref for 0x08572448: psychic.s: sub_0811058C
+	@ SpriteTemplate: tileTag=0x2809, paletteTag=0x2809
+	.2byte 0x2809, 0x2809
+	.4byte gOamData_AffineOff_ObjBlend_16x16 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte gPriorityABattleAnimSpriteCallbackDummy @ callback (SpriteCallbackDummy)
+
+sSpriteTemplate_Tag280A_08572390: @ 0x08572390
+	@ SpriteTemplate: tileTag=0x280A, paletteTag=0x280A
+	.2byte 0x280A, 0x280A
+	.4byte gOamData_AffineOff_ObjNormal_64x64 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x081103F9 @ callback (sub_081103F8)
+
+sAffineAnim_PsychicData_08572448_0_085723A8: @ 0x085723A8
+	@ union AffineAnimCmd stream
+	.2byte 0xFFF8, 0xFFF8, 0x0800, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
+	.2byte 0x0008, 0x0008, 0x0800, 0x0000 @ AFFINE_FRAME(8, 8, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
+
+sAffineAnim_PsychicData_08572448_1_085723C0: @ 0x085723C0
+	@ union AffineAnimCmd stream
+	.2byte 0x00F0, 0x00F0, 0x0000, 0x0000 @ AFFINE_FRAME(240, 240, rot=0x00, duration=0)
+	.2byte 0xFFF8, 0xFFF8, 0x0600, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
+	.2byte 0x0008, 0x0008, 0x0800, 0x0000 @ AFFINE_FRAME(8, 8, rot=0x00, duration=0)
+	.2byte 0xFFF8, 0xFFF8, 0x0200, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0001, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(1)
+
+sAffineAnim_PsychicData_08572448_2_085723E8: @ 0x085723E8
+	@ union AffineAnimCmd stream
+	.2byte 0x00D0, 0x00D0, 0x0000, 0x0000 @ AFFINE_FRAME(208, 208, rot=0x00, duration=0)
+	.2byte 0xFFF8, 0xFFF8, 0x0400, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
+	.2byte 0x0008, 0x0008, 0x0800, 0x0000 @ AFFINE_FRAME(8, 8, rot=0x00, duration=0)
+	.2byte 0xFFF8, 0xFFF8, 0x0400, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0001, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(1)
+
+sAffineAnim_PsychicData_08572448_3_08572410: @ 0x08572410
+	@ union AffineAnimCmd stream
+	.2byte 0x00B0, 0x00B0, 0x0000, 0x0000 @ AFFINE_FRAME(176, 176, rot=0x00, duration=0)
+	.2byte 0xFFF8, 0xFFF8, 0x0200, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
+	.2byte 0x0008, 0x0008, 0x0800, 0x0000 @ AFFINE_FRAME(8, 8, rot=0x00, duration=0)
+	.2byte 0xFFF8, 0xFFF8, 0x0600, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0001, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(1)
+
+sAffineAnims_PsychicData_08572448_08572438: @ 0x08572438
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_PsychicData_08572448_0_085723A8 @ [0]
+	.4byte sAffineAnim_PsychicData_08572448_1_085723C0 @ [1]
+	.4byte sAffineAnim_PsychicData_08572448_2_085723E8 @ [2]
+	.4byte sAffineAnim_PsychicData_08572448_3_08572410 @ [3]
+
 	.globl gPsychicData_08572448
 gPsychicData_08572448: @ 0x08572448
-	@ analyzed canonical ROM range 0x08572448-0x085727A3
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x280B280B @ +0x0
-	.4byte gOamData_AffineNormal_ObjNormal_16x16 @ +0x4
-	.4byte gDummySpriteAnimTable @ +0x8
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0xC
-	.4byte 0x08572438 @ +0x10
-	.4byte sub_08110640 @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x24
-	.4byte 0x00200020 @ +0x18
-	.4byte 0 @ +0x1C
-	.4byte 0x00040004 @ +0x20
-	.4byte 0x00007800 @ +0x24
-	.4byte 0x00017FFF @ +0x28
-	.4byte 0 @ +0x2C
-	.4byte 0x08572460 @ +0x30
-	.4byte 0x281B281B @ +0x34
-	.4byte gOamData_AffineDouble_ObjBlend_64x64 @ +0x38
-	.4byte gDummySpriteAnimTable @ +0x3C
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0x40
-	.4byte 0x08572478 @ +0x44
-	.4byte sub_080A7090 @ +0x48
-	@ ANALYSIS: RAW_BLOCK size=0x78
-	.4byte 0x00200020 @ +0x4C
-	.4byte 0 @ +0x50
-	.4byte 0x00100010 @ +0x54
-	.4byte 0x00001100 @ +0x58
-	.4byte 0x00007FFD @ +0x5C
-	.4byte 0 @ +0x60
-	.4byte 0xFFF8FFF8 @ +0x64
-	.4byte 0x00000A00 @ +0x68
-	.4byte 0x00080008 @ +0x6C
-	.4byte 0x00000A00 @ +0x70
-	.4byte 0x00047FFD @ +0x74
-	.4byte 0 @ +0x78
-	.4byte 0x00007FFD @ +0x7C
-	.4byte 0 @ +0x80
-	.4byte 0xFFF0FFF0 @ +0x84
-	.4byte 0x00000500 @ +0x88
-	.4byte 0x00100010 @ +0x8C
-	.4byte 0x00000500 @ +0x90
-	.4byte 0x00077FFD @ +0x94
-	.4byte 0 @ +0x98
-	.4byte 0x00007FFF @ +0x9C
-	.4byte 0 @ +0xA0
-	.4byte 0x0018FFEC @ +0xA4
-	.4byte 0x00000F00 @ +0xA8
-	.4byte 0x00007FFF @ +0xAC
-	.4byte 0 @ +0xB0
-	.4byte 0x08572494 @ +0xB4
-	.4byte 0x085724EC @ +0xB8
-	.4byte 0x27E427E4 @ +0xBC
-	.4byte gOamData_AffineDouble_ObjBlend_64x64 @ +0xC0
-	.4byte gDummySpriteAnimTable @ +0xC4
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0xC8
-	.4byte 0x085724FC @ +0xCC
-	.4byte sub_08110A90 @ +0xD0
-	@ ANALYSIS: RAW_BLOCK size=0x44
-	.4byte 0x01000100 @ +0xD4
-	.4byte 0x0000001E @ +0xD8
-	.4byte 0x00007FFF @ +0xDC
-	.4byte 0 @ +0xE0
-	.4byte 0x01000100 @ +0xE4
-	.4byte 0x0000009D @ +0xE8
-	.4byte 0x00007FFF @ +0xEC
-	.4byte 0 @ +0xF0
-	.4byte 0x01000100 @ +0xF4
-	.4byte 0x0000005E @ +0xF8
-	.4byte 0x00007FFF @ +0xFC
-	.4byte 0 @ +0x100
-	.4byte 0x0857251C @ +0x104
-	.4byte 0x0857252C @ +0x108
-	.4byte 0x0857253C @ +0x10C
-	.4byte 0x27A927A9 @ +0x110
-	.4byte gOamData_AffineDouble_ObjNormal_32x16 @ +0x114
-	.4byte gDummySpriteAnimTable @ +0x118
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0x11C
-	.4byte 0x0857254C @ +0x120
-	.4byte sub_08110BB8 @ +0x124
-	@ ANALYSIS: RAW_BLOCK size=0x44
-	.4byte 0 @ +0x128
-	.4byte 0x000001DF @ +0x12C
-	.4byte 0x00007FFF @ +0x130
-	.4byte 0 @ +0x134
-	.4byte 0 @ +0x138
-	.4byte 0x00000160 @ +0x13C
-	.4byte 0x00007FFF @ +0x140
-	.4byte 0 @ +0x144
-	.4byte 0 @ +0x148
-	.4byte 0x000001A0 @ +0x14C
-	.4byte 0x00007FFF @ +0x150
-	.4byte 0 @ +0x154
-	.4byte 0x08572570 @ +0x158
-	.4byte 0x08572580 @ +0x15C
-	.4byte 0x08572590 @ +0x160
-	.4byte 0x27B127B1 @ +0x164
-	.4byte gOamData_AffineNormal_ObjNormal_16x16 @ +0x168
-	.4byte gDummySpriteAnimTable @ +0x16C
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0x170
-	.4byte 0x085725A0 @ +0x174
-	.4byte sub_08110C88 @ +0x178
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x27C427C4 @ +0x17C
-	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x180
-	.4byte gDummySpriteAnimTable @ +0x184
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x188
-	.4byte gDummySpriteAffineAnimTable @ +0x18C
-	.4byte AnimTranslateWebThread @ +0x190
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x27C327C3 @ +0x194
-	.4byte gOamData_AffineOff_ObjNormal_64x32 @ +0x198
-	.4byte gDummySpriteAnimTable @ +0x19C
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1A0
-	.4byte gDummySpriteAffineAnimTable @ +0x1A4
-	.4byte sub_08110E04 @ +0x1A8
-	@ ANALYSIS: RAW_BLOCK size=0x24
-	.4byte 0x00100010 @ +0x1AC
-	.4byte 0 @ +0x1B0
-	.4byte 0x00060006 @ +0x1B4
-	.4byte 0x00000100 @ +0x1B8
-	.4byte 0x00017FFE @ +0x1BC
-	.4byte 0 @ +0x1C0
-	.4byte 0x085725F4 @ +0x1C4
-	.4byte 0x27C527C5 @ +0x1C8
-	.4byte gOamData_AffineDouble_ObjBlend_64x64 @ +0x1CC
-	.4byte gDummySpriteAnimTable @ +0x1D0
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0x1D4
-	.4byte 0x0857260C @ +0x1D8
-	.4byte sub_08110ECC @ +0x1DC
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x27B127B1 @ +0x1E0
-	.4byte gOamData_AffineNormal_ObjNormal_16x16 @ +0x1E4
-	.4byte gDummySpriteAnimTable @ +0x1E8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1EC
-	.4byte gDummySpriteAffineAnimTable @ +0x1F0
-	.4byte AnimTranslateStinger @ +0x1F4
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x27B127B1 @ +0x1F8
-	.4byte gOamData_AffineNormal_ObjNormal_16x16 @ +0x1FC
-	.4byte gDummySpriteAnimTable @ +0x200
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x204
-	.4byte gDummySpriteAffineAnimTable @ +0x208
-	.4byte AnimMissileArc @ +0x20C
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x28162816 @ +0x210
-	.4byte gOamData_AffineNormal_ObjNormal_32x32 @ +0x214
-	.4byte gDummySpriteAnimTable @ +0x218
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x21C
-	.4byte gDummySpriteAffineAnimTable @ +0x220
-	.4byte AnimMissileArc @ +0x224
-	@ ANALYSIS: RAW_BLOCK size=0x44
-	.4byte 0x00100010 @ +0x228
-	.4byte 0 @ +0x22C
-	.4byte 0x00080008 @ +0x230
-	.4byte 0x00001200 @ +0x234
-	.4byte 0x00007FFD @ +0x238
-	.4byte 0 @ +0x23C
-	.4byte 0xFFFBFFFB @ +0x240
-	.4byte 0x00000800 @ +0x244
-	.4byte 0x00050005 @ +0x248
-	.4byte 0x00000800 @ +0x24C
-	.4byte 0x00057FFD @ +0x250
-	.4byte 0 @ +0x254
-	.4byte 0x00007FFF @ +0x258
-	.4byte 0 @ +0x25C
-	.4byte 0x08572670 @ +0x260
-	.4byte 0x27E427E4 @ +0x264
-	.4byte gOamData_AffineNormal_ObjBlend_64x64 @ +0x268
-	.4byte gDummySpriteAnimTable @ +0x26C
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0x270
-	.4byte 0x085726A8 @ +0x274
-	.4byte sub_081111E4 @ +0x278
-	@ ANALYSIS: RAW_BLOCK size=0x34
-	.4byte 0x00010020 @ +0x27C
-	.4byte 0x0000FFFF @ +0x280
-	.4byte 0x00010030 @ +0x284
-	.4byte 0x0000FFFF @ +0x288
-	.4byte 0x00010040 @ +0x28C
-	.4byte 0x0000FFFF @ +0x290
-	.4byte 0x085726C4 @ +0x294
-	.4byte 0x085726CC @ +0x298
-	.4byte 0x085726D4 @ +0x29C
-	.4byte 0x274A274A @ +0x2A0
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x2A4
-	.4byte 0x085726DC @ +0x2A8
-	.4byte 0 @ +0x2AC
-	.4byte gDummySpriteAffineAnimTable @ +0x2B0
-	.4byte sub_08111240 @ +0x2B4
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x274A274A @ +0x2B8
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x2BC
-	.4byte 0x085726DC @ +0x2C0
-	.4byte 0 @ +0x2C4
-	.4byte gDummySpriteAffineAnimTable @ +0x2C8
-	.4byte sub_08111304 @ +0x2CC
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x275A275A @ +0x2D0
-	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x2D4
-	.4byte gDummySpriteAnimTable @ +0x2D8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x2DC
-	.4byte gDummySpriteAffineAnimTable @ +0x2E0
-	.4byte sub_08111388 @ +0x2E4
-	@ ANALYSIS: RAW_BLOCK size=0x38
-	.4byte 0x00C000C0 @ +0x2E8
-	.4byte 0 @ +0x2EC
-	.4byte 0xFFFD0002 @ +0x2F0
-	.4byte 0x00000500 @ +0x2F4
-	.4byte 0x0003FFFE @ +0x2F8
-	.4byte 0x00000500 @ +0x2FC
-	.4byte 0x00017FFE @ +0x300
-	.4byte 0 @ +0x304
-	.4byte 0x08572730 @ +0x308
-	.4byte 0x27A527A5 @ +0x30C
-	.4byte gOamData_AffineNormal_ObjBlend_16x16 @ +0x310
-	.4byte 0x08570CC4 @ +0x314
-	.4byte 0 @ +0x318
-	.4byte 0x08572750 @ +0x31C
-	.4byte sub_08111388 @ +0x320
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x272D272D @ +0x324
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x328
-	.4byte 0x085710B4 @ +0x32C
-	.4byte 0 @ +0x330
-	.4byte gDummySpriteAffineAnimTable @ +0x334
-	.4byte sub_08111388 @ +0x338
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x28152815 @ +0x33C
-	.4byte gOamData_AffineOff_ObjNormal_32x16 @ +0x340
-	.4byte gDummySpriteAnimTable @ +0x344
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x348
-	.4byte gDummySpriteAffineAnimTable @ +0x34C
-	.4byte AnimDirtParticleAcrossScreen @ +0x350
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x400900F0 @ +0x354
-	.4byte 0x40890010 @ +0x358
-	@ pret/pokeemerald-jp direct xref for 0x085727A4: rock.s: AnimDirtParticleAcrossScreen
+	@ SpriteTemplate: tileTag=0x280B, paletteTag=0x280B
+	.2byte 0x280B, 0x280B
+	.4byte gBattleAnimOam_084FD078 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_PsychicData_08572448_08572438 @ affineAnims
+	.4byte 0x08110641 @ callback (sub_08110640)
+
+sAffineAnim_Tag281B_0857247C_0_08572460: @ 0x08572460
+	@ union AffineAnimCmd stream
+	.2byte 0x0020, 0x0020, 0x0000, 0x0000 @ AFFINE_FRAME(32, 32, rot=0x00, duration=0)
+	.2byte 0x0004, 0x0004, 0x7800, 0x0000 @ AFFINE_FRAME(4, 4, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0001, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag281B_0857247C_08572478: @ 0x08572478
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag281B_0857247C_0_08572460 @ [0]
+
+sSpriteTemplate_Tag281B_0857247C: @ 0x0857247C
+	@ SpriteTemplate: tileTag=0x281B, paletteTag=0x281B
+	.2byte 0x281B, 0x281B
+	.4byte gBattleAnimOam_084FD208 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag281B_0857247C_08572478 @ affineAnims
+	.4byte 0x080A7091 @ callback (sub_080A7090)
+
+sAffineAnim_Tag27E4_08572504_0_08572494: @ 0x08572494
+	@ union AffineAnimCmd stream
+	.2byte 0x0020, 0x0020, 0x0000, 0x0000 @ AFFINE_FRAME(32, 32, rot=0x00, duration=0)
+	.2byte 0x0010, 0x0010, 0x1100, 0x0000 @ AFFINE_FRAME(16, 16, rot=0x00, duration=0)
+	.2byte 0x7FFD, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_LOOP(0)
+	.2byte 0xFFF8, 0xFFF8, 0x0A00, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
+	.2byte 0x0008, 0x0008, 0x0A00, 0x0000 @ AFFINE_FRAME(8, 8, rot=0x00, duration=0)
+	.2byte 0x7FFD, 0x0004, 0x0000, 0x0000 @ AFFINEANIMCMD_LOOP(4)
+	.2byte 0x7FFD, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_LOOP(0)
+	.2byte 0xFFF0, 0xFFF0, 0x0500, 0x0000 @ AFFINE_FRAME(-16, -16, rot=0x00, duration=0)
+	.2byte 0x0010, 0x0010, 0x0500, 0x0000 @ AFFINE_FRAME(16, 16, rot=0x00, duration=0)
+	.2byte 0x7FFD, 0x0007, 0x0000, 0x0000 @ AFFINEANIMCMD_LOOP(7)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag27E4_08572504_1_085724EC: @ 0x085724EC
+	@ union AffineAnimCmd stream
+	.2byte 0xFFEC, 0x0018, 0x0F00, 0x0000 @ AFFINE_FRAME(-20, 24, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag27E4_08572504_085724FC: @ 0x085724FC
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27E4_08572504_0_08572494 @ [0]
+	.4byte sAffineAnim_Tag27E4_08572504_1_085724EC @ [1]
+
+sSpriteTemplate_Tag27E4_08572504: @ 0x08572504
+	@ SpriteTemplate: tileTag=0x27E4, paletteTag=0x27E4
+	.2byte 0x27E4, 0x27E4
+	.4byte gBattleAnimOam_084FD208 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27E4_08572504_085724FC @ affineAnims
+	.4byte 0x08110A91 @ callback (sub_08110A90)
+
+sAffineAnim_Tag27A9_08572558_0_0857251C: @ 0x0857251C
+	@ union AffineAnimCmd stream
+	.2byte 0x0100, 0x0100, 0x001E, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag27A9_08572558_1_0857252C: @ 0x0857252C
+	@ union AffineAnimCmd stream
+	.2byte 0x0100, 0x0100, 0x009D, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag27A9_08572558_2_0857253C: @ 0x0857253C
+	@ union AffineAnimCmd stream
+	.2byte 0x0100, 0x0100, 0x005E, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag27A9_08572558_0857254C: @ 0x0857254C
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27A9_08572558_0_0857251C @ [0]
+	.4byte sAffineAnim_Tag27A9_08572558_1_0857252C @ [1]
+	.4byte sAffineAnim_Tag27A9_08572558_2_0857253C @ [2]
+
+sSpriteTemplate_Tag27A9_08572558: @ 0x08572558
+	@ SpriteTemplate: tileTag=0x27A9, paletteTag=0x27A9
+	.2byte 0x27A9, 0x27A9
+	.4byte gOamData_AffineDouble_ObjNormal_32x16 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27A9_08572558_0857254C @ affineAnims
+	.4byte 0x08110BB9 @ callback (sub_08110BB8)
+
+sAffineAnim_Tag27B1_085725AC_0_08572570: @ 0x08572570
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x01DF, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag27B1_085725AC_1_08572580: @ 0x08572580
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x0160, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag27B1_085725AC_2_08572590: @ 0x08572590
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x01A0, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag27B1_085725AC_085725A0: @ 0x085725A0
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27B1_085725AC_0_08572570 @ [0]
+	.4byte sAffineAnim_Tag27B1_085725AC_1_08572580 @ [1]
+	.4byte sAffineAnim_Tag27B1_085725AC_2_08572590 @ [2]
+
+sSpriteTemplate_Tag27B1_085725AC: @ 0x085725AC
+	@ SpriteTemplate: tileTag=0x27B1, paletteTag=0x27B1
+	.2byte 0x27B1, 0x27B1
+	.4byte gBattleAnimOam_084FD078 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27B1_085725AC_085725A0 @ affineAnims
+	.4byte 0x08110C89 @ callback (sub_08110C88)
+
+sSpriteTemplate_Tag27C4_085725C4: @ 0x085725C4
+	@ SpriteTemplate: tileTag=0x27C4, paletteTag=0x27C4
+	.2byte 0x27C4, 0x27C4
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08110D35 @ callback (AnimTranslateWebThread)
+
+sSpriteTemplate_Tag27C3_085725DC: @ 0x085725DC
+	@ SpriteTemplate: tileTag=0x27C3, paletteTag=0x27C3
+	.2byte 0x27C3, 0x27C3
+	.4byte gOamData_AffineOff_ObjNormal_64x32 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08110E05 @ callback (sub_08110E04)
+
+sAffineAnim_Tag27C5_08572610_0_085725F4: @ 0x085725F4
+	@ union AffineAnimCmd stream
+	.2byte 0x0010, 0x0010, 0x0000, 0x0000 @ AFFINE_FRAME(16, 16, rot=0x00, duration=0)
+	.2byte 0x0006, 0x0006, 0x0100, 0x0000 @ AFFINE_FRAME(6, 6, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0001, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(1)
+
+sAffineAnims_Tag27C5_08572610_0857260C: @ 0x0857260C
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27C5_08572610_0_085725F4 @ [0]
+
+sSpriteTemplate_Tag27C5_08572610: @ 0x08572610
+	@ SpriteTemplate: tileTag=0x27C5, paletteTag=0x27C5
+	.2byte 0x27C5, 0x27C5
+	.4byte gBattleAnimOam_084FD208 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27C5_08572610_0857260C @ affineAnims
+	.4byte 0x08110ECD @ callback (sub_08110ECC)
+
+sSpriteTemplate_Tag27B1_08572628: @ 0x08572628
+	@ SpriteTemplate: tileTag=0x27B1, paletteTag=0x27B1
+	.2byte 0x27B1, 0x27B1
+	.4byte gBattleAnimOam_084FD078 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08110F71 @ callback (AnimTranslateStinger)
+
+sSpriteTemplate_Tag27B1_08572640: @ 0x08572640
+	@ SpriteTemplate: tileTag=0x27B1, paletteTag=0x27B1
+	.2byte 0x27B1, 0x27B1
+	.4byte gBattleAnimOam_084FD078 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x081110A1 @ callback (AnimMissileArc)
+
+sSpriteTemplate_Tag2816_08572658: @ 0x08572658
+	@ SpriteTemplate: tileTag=0x2816, paletteTag=0x2816
+	.2byte 0x2816, 0x2816
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_64x64 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x081110A1 @ callback (AnimMissileArc)
+
+sAffineAnim_Tag27E4_085726AC_0_08572670: @ 0x08572670
+	@ union AffineAnimCmd stream
+	.2byte 0x0010, 0x0010, 0x0000, 0x0000 @ AFFINE_FRAME(16, 16, rot=0x00, duration=0)
+	.2byte 0x0008, 0x0008, 0x1200, 0x0000 @ AFFINE_FRAME(8, 8, rot=0x00, duration=0)
+	.2byte 0x7FFD, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_LOOP(0)
+	.2byte 0xFFFB, 0xFFFB, 0x0800, 0x0000 @ AFFINE_FRAME(-5, -5, rot=0x00, duration=0)
+	.2byte 0x0005, 0x0005, 0x0800, 0x0000 @ AFFINE_FRAME(5, 5, rot=0x00, duration=0)
+	.2byte 0x7FFD, 0x0005, 0x0000, 0x0000 @ AFFINEANIMCMD_LOOP(5)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag27E4_085726AC_085726A8: @ 0x085726A8
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27E4_085726AC_0_08572670 @ [0]
+
+sSpriteTemplate_Tag27E4_085726AC: @ 0x085726AC
+	@ SpriteTemplate: tileTag=0x27E4, paletteTag=0x27E4
+	.2byte 0x27E4, 0x27E4
+	.4byte gBattleAnimOam_084FD1A8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27E4_085726AC_085726A8 @ affineAnims
+	.4byte 0x081111E5 @ callback (sub_081111E4)
+
+sAnim_Tag274A_085726E8_0_085726C4: @ 0x085726C4
+	@ union AnimCmd stream
+	.2byte 0x0020, 0x0001 @ ANIMCMD_FRAME(32, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag274A_085726E8_1_085726CC: @ 0x085726CC
+	@ union AnimCmd stream
+	.2byte 0x0030, 0x0001 @ ANIMCMD_FRAME(48, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag274A_085726E8_2_085726D4: @ 0x085726D4
+	@ union AnimCmd stream
+	.2byte 0x0040, 0x0001 @ ANIMCMD_FRAME(64, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag274A_085726E8_085726DC: @ 0x085726DC
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag274A_085726E8_0_085726C4 @ [0]
+	.4byte sAnim_Tag274A_085726E8_1_085726CC @ [1]
+	.4byte sAnim_Tag274A_085726E8_2_085726D4 @ [2]
+
+sSpriteTemplate_Tag274A_085726E8: @ 0x085726E8
+	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
+	.2byte 0x274A, 0x274A
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag274A_085726E8_085726DC @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08111241 @ callback (sub_08111240)
+
+sSpriteTemplate_Tag274A_08572700: @ 0x08572700
+	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
+	.2byte 0x274A, 0x274A
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag274A_085726E8_085726DC @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08111305 @ callback (sub_08111304)
+
+sSpriteTemplate_Tag275A_08572718: @ 0x08572718
+	@ SpriteTemplate: tileTag=0x275A, paletteTag=0x275A
+	.2byte 0x275A, 0x275A
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08111389 @ callback (sub_08111388)
+
+sAffineAnim_Tag27A5_08572754_0_08572730: @ 0x08572730
+	@ union AffineAnimCmd stream
+	.2byte 0x00C0, 0x00C0, 0x0000, 0x0000 @ AFFINE_FRAME(192, 192, rot=0x00, duration=0)
+	.2byte 0x0002, 0xFFFD, 0x0500, 0x0000 @ AFFINE_FRAME(2, -3, rot=0x00, duration=0)
+	.2byte 0xFFFE, 0x0003, 0x0500, 0x0000 @ AFFINE_FRAME(-2, 3, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0001, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(1)
+
+sAffineAnims_Tag27A5_08572754_08572750: @ 0x08572750
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27A5_08572754_0_08572730 @ [0]
+
+sSpriteTemplate_Tag27A5_08572754: @ 0x08572754
+	@ SpriteTemplate: tileTag=0x27A5, paletteTag=0x27A5
+	.2byte 0x27A5, 0x27A5
+	.4byte gBattleAnimOam_AffineOn_ObjBlend_8x8 @ oam
+	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27A5_08572754_08572750 @ affineAnims
+	.4byte 0x08111389 @ callback (sub_08111388)
+
+sSpriteTemplate_Tag272D_0857276C: @ 0x0857276C
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag272D_085710D0_085710B4 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08111389 @ callback (sub_08111388)
+
+sSpriteTemplate_Tag2815_08572784: @ 0x08572784
+	@ SpriteTemplate: tileTag=0x2815, paletteTag=0x2815
+	.2byte 0x2815, 0x2815
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x16 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0811169D @ callback (AnimDirtParticleAcrossScreen)
+
+sBattleAnimData_0857279C: @ 0x0857279C
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x8; no stronger object type proven
+	.4byte 0x400900F0
+	.4byte 0x40890010
+
+	.if (. - .Lsemantic_range_08572324) != 0x480
+	.error "semantic range 0x08572324 size mismatch"
+	.endif
+	@ semantic battle-animation reconstruction: rock_a
+	@ ROM range 0x085727A4-0x085727F3
+.Lsemantic_range_085727A4:
 	.globl gRockData_085727A4
 gRockData_085727A4: @ 0x085727A4
-	@ analyzed canonical ROM range 0x085727A4-0x085727F3
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x50
-	.2byte 0x0002, 0x0000, 0x279C, 0x0857, 0x0000, 0x0001, 0xFFFF, 0x0000
-	.2byte 0x0010, 0x0001, 0xFFFF, 0x0000, 0x0020, 0x0001, 0xFFFF, 0x0000
-	.2byte 0x0030, 0x0001, 0xFFFF, 0x0000, 0x0040, 0x0001, 0xFFFF, 0x0000
-	.2byte 0x0050, 0x0001, 0xFFFF, 0x0000, 0x27AC, 0x0857, 0x27B4, 0x0857
-	.2byte 0x27BC, 0x0857, 0x27C4, 0x0857, 0x27CC, 0x0857, 0x27D4, 0x0857
-	@ pret/pokeemerald-jp direct xref for 0x085727F4: intro.s: CreateGroudonRockSprites
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x8; no stronger object type proven
+	.4byte 0x00000002
+	.4byte sBattleAnimData_0857279C
+
+sAnim_Tag274A_0857283C_0_085727AC: @ 0x085727AC
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag274A_0857283C_1_085727B4: @ 0x085727B4
+	@ union AnimCmd stream
+	.2byte 0x0010, 0x0001 @ ANIMCMD_FRAME(16, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag274A_085728C4_0_085727BC: @ 0x085727BC
+	@ union AnimCmd stream
+	.2byte 0x0020, 0x0001 @ ANIMCMD_FRAME(32, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag274A_085728C4_1_085727C4: @ 0x085727C4
+	@ union AnimCmd stream
+	.2byte 0x0030, 0x0001 @ ANIMCMD_FRAME(48, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag274A_085728AC_0_085727CC: @ 0x085727CC
+	@ union AnimCmd stream
+	.2byte 0x0040, 0x0001 @ ANIMCMD_FRAME(64, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag274A_085728AC_1_085727D4: @ 0x085727D4
+	@ union AnimCmd stream
+	.2byte 0x0050, 0x0001 @ ANIMCMD_FRAME(80, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag274A_0857283C_085727DC: @ 0x085727DC
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag274A_0857283C_0_085727AC @ [0]
+	.4byte sAnim_Tag274A_0857283C_1_085727B4 @ [1]
+
+sAnims_Tag274A_085728C4_085727E4: @ 0x085727E4
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag274A_085728C4_0_085727BC @ [0]
+	.4byte sAnim_Tag274A_085728C4_1_085727C4 @ [1]
+
+sAnims_Tag274A_085728AC_085727EC: @ 0x085727EC
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag274A_085728AC_0_085727CC @ [0]
+	.4byte sAnim_Tag274A_085728AC_1_085727D4 @ [1]
+
+	.if (. - .Lsemantic_range_085727A4) != 0x50
+	.error "semantic range 0x085727A4 size mismatch"
+	.endif
 	.globl gIntroData_085727F4
 gIntroData_085727F4:
 	@ analyzed canonical ROM range 0x085727F4-0x0857280B
@@ -2012,540 +2722,718 @@ gRockData_0857280C: @ 0x0857280C
 sSpriteTemplate_0857280C: @ 0x0857280C
 	rodata_sprite_template 0x275A, 0x275A, gOamData_AffineOff_ObjNormal_8x8, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08111B6C
 	@ pret/pokeemerald-jp direct xref for 0x08572824: rock.s: sub_08111A64
+	@ semantic battle-animation reconstruction: rock_b
+	@ ROM range 0x08572824-0x0857299B
+.Lsemantic_range_08572824:
 	.globl gRockData_08572824
 gRockData_08572824: @ 0x08572824
-	@ analyzed canonical ROM range 0x08572824-0x0857299B
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x274A274A @ +0x0
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x4
-	.4byte gDummySpriteAnimTable @ +0x8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xC
-	.4byte gDummySpriteAffineAnimTable @ +0x10
-	.4byte sub_08111B6C @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x274A274A @ +0x18
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x1C
-	.4byte 0x085727DC @ +0x20
-	.4byte 0 @ +0x24
-	.4byte gDummySpriteAffineAnimTable @ +0x28
-	.4byte sub_08111BD8 @ +0x2C
-	@ ANALYSIS: RAW_BLOCK size=0x3C
-	.4byte 0 @ +0x30
-	.4byte 0x000005FB @ +0x34
-	.4byte 0x00007FFE @ +0x38
-	.4byte 0 @ +0x3C
-	.4byte 0 @ +0x40
-	.4byte 0x00000505 @ +0x44
-	.4byte 0x00007FFE @ +0x48
-	.4byte 0 @ +0x4C
-	.4byte 0x08572854 @ +0x50
-	.4byte 0x08572864 @ +0x54
-	.4byte 0x274A274A @ +0x58
-	.4byte gOamData_AffineNormal_ObjNormal_32x32 @ +0x5C
-	.4byte 0x085727DC @ +0x60
-	.4byte 0 @ +0x64
-	.4byte 0x08572874 @ +0x68
-	.4byte sub_08111C68 @ +0x6C
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0x274A274A @ +0x70
-	.4byte gOamData_AffineNormal_ObjNormal_32x32 @ +0x74
-	.4byte 0x085727DC @ +0x78
-	.4byte 0 @ +0x7C
-	.4byte 0x08572874 @ +0x80
-	.4byte sub_08111C94 @ +0x84
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0x274A274A @ +0x88
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x8C
-	.4byte 0x085727EC @ +0x90
-	.4byte 0 @ +0x94
-	.4byte 0x08572874 @ +0x98
-	.4byte AnimMoveTwisterParticle @ +0x9C
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0x274A274A @ +0xA0
-	.4byte gOamData_AffineNormal_ObjNormal_32x32 @ +0xA4
-	.4byte 0x085727E4 @ +0xA8
-	.4byte 0 @ +0xAC
-	.4byte 0x08572874 @ +0xB0
-	.4byte sub_080A87AC @ +0xB4
-	@ ANALYSIS: RAW_BLOCK size=0x24
-	.4byte 0x001E001E @ +0xB8
-	.4byte 0x0000050A @ +0xBC
-	.4byte 0xFFE2FFE2 @ +0xC0
-	.4byte 0x0000050A @ +0xC4
-	.4byte 0x00007FFE @ +0xC8
-	.4byte 0 @ +0xCC
-	.4byte 0x085728DC @ +0xD0
-	.4byte 0x271D271D @ +0xD4
-	.4byte gOamData_AffineDouble_ObjNormal_16x16 @ +0xD8
-	.4byte gDummySpriteAnimTable @ +0xDC
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0xE0
-	.4byte 0x085728F4 @ +0xE4
-	.4byte sub_08111E5C @ +0xE8
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x271D271D @ +0xEC
-	.4byte gOamData_AffineOff_ObjBlend_16x16 @ +0xF0
-	.4byte gDummySpriteAnimTable @ +0xF4
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xF8
-	.4byte gDummySpriteAffineAnimTable @ +0xFC
-	.4byte sub_08112044 @ +0x100
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	.4byte 0 @ +0x104
-	.4byte 0x0000010A @ +0x108
-	.4byte 0x00007FFE @ +0x10C
-	.4byte 0 @ +0x110
-	.4byte 0x08572928 @ +0x114
-	.4byte 0x27C027C0 @ +0x118
-	.4byte gOamData_AffineNormal_ObjNormal_32x32 @ +0x11C
-	.4byte gDummySpriteAnimTable @ +0x120
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0x124
-	.4byte 0x08572938 @ +0x128
-	.4byte InitAnimShadowBall @ +0x12C
-	@ ANALYSIS: RAW_BLOCK size=0x2C
-	.4byte 0x00020000 @ +0x130
-	.4byte 0x00020008 @ +0x134
-	.4byte 0x00020010 @ +0x138
-	.4byte 0x00020018 @ +0x13C
-	.4byte 0x00020020 @ +0x140
-	.4byte 0x0000FFFF @ +0x144
-	.4byte 0x08572954 @ +0x148
-	.4byte 0x27C127C1 @ +0x14C
-	.4byte gOamData_AffineOff_ObjNormal_16x32 @ +0x150
-	.4byte 0x0857296C @ +0x154
-	.4byte 0 @ +0x158
-	.4byte gDummySpriteAffineAnimTable @ +0x15C
-	.4byte sub_081123EC @ +0x160
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0x02000200 @ +0x164
-	.4byte 0 @ +0x168
-	.4byte 0x00007FFF @ +0x16C
-	.4byte 0 @ +0x170
-	.4byte 0x08572988 @ +0x174
-	@ pret/pokeemerald-jp direct xref for 0x0857299C: ghost.s: sub_08112C14
+	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
+	.2byte 0x274A, 0x274A
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08111B6D @ callback (sub_08111B6C)
+
+sSpriteTemplate_Tag274A_0857283C: @ 0x0857283C
+	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
+	.2byte 0x274A, 0x274A
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag274A_0857283C_085727DC @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08111BD9 @ callback (sub_08111BD8)
+
+sAffineAnim_Tag274A_0857287C_0_08572854: @ 0x08572854
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x05FB, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
+
+sAffineAnim_Tag274A_0857287C_1_08572864: @ 0x08572864
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x0505, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
+
+sAffineAnims_Tag274A_0857287C_08572874: @ 0x08572874
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag274A_0857287C_0_08572854 @ [0]
+	.4byte sAffineAnim_Tag274A_0857287C_1_08572864 @ [1]
+
+sSpriteTemplate_Tag274A_0857287C: @ 0x0857287C
+	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
+	.2byte 0x274A, 0x274A
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_64x64 @ oam
+	.4byte sAnims_Tag274A_0857283C_085727DC @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag274A_0857287C_08572874 @ affineAnims
+	.4byte 0x08111C69 @ callback (sub_08111C68)
+
+sSpriteTemplate_Tag274A_08572894: @ 0x08572894
+	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
+	.2byte 0x274A, 0x274A
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_64x64 @ oam
+	.4byte sAnims_Tag274A_0857283C_085727DC @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag274A_0857287C_08572874 @ affineAnims
+	.4byte 0x08111C95 @ callback (sub_08111C94)
+
+sSpriteTemplate_Tag274A_085728AC: @ 0x085728AC
+	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
+	.2byte 0x274A, 0x274A
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag274A_085728AC_085727EC @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag274A_0857287C_08572874 @ affineAnims
+	.4byte 0x080FFAB9 @ callback (AnimMoveTwisterParticle)
+
+sSpriteTemplate_Tag274A_085728C4: @ 0x085728C4
+	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
+	.2byte 0x274A, 0x274A
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_64x64 @ oam
+	.4byte sAnims_Tag274A_085728C4_085727E4 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag274A_0857287C_08572874 @ affineAnims
+	.4byte 0x080A87AD @ callback (sub_080A87AC)
+
+sAffineAnim_Tag271D_085728F8_0_085728DC: @ 0x085728DC
+	@ union AffineAnimCmd stream
+	.2byte 0x001E, 0x001E, 0x050A, 0x0000 @ AFFINE_FRAME(30, 30, rot=0x00, duration=0)
+	.2byte 0xFFE2, 0xFFE2, 0x050A, 0x0000 @ AFFINE_FRAME(-30, -30, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
+
+sAffineAnims_Tag271D_085728F8_085728F4: @ 0x085728F4
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag271D_085728F8_0_085728DC @ [0]
+
+sSpriteTemplate_Tag271D_085728F8: @ 0x085728F8
+	@ SpriteTemplate: tileTag=0x271D, paletteTag=0x271D
+	.2byte 0x271D, 0x271D
+	.4byte gBattleAnimOam_AffineDouble_ObjNormal_16x16 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag271D_085728F8_085728F4 @ affineAnims
+	.4byte 0x08111E5D @ callback (sub_08111E5C)
+
+sSpriteTemplate_Tag271D_08572910: @ 0x08572910
+	@ SpriteTemplate: tileTag=0x271D, paletteTag=0x271D
+	.2byte 0x271D, 0x271D
+	.4byte gOamData_AffineOff_ObjBlend_16x16 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08112045 @ callback (sub_08112044)
+
+sAffineAnim_Tag27C0_0857293C_0_08572928: @ 0x08572928
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x010A, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
+
+sAffineAnims_Tag27C0_0857293C_08572938: @ 0x08572938
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27C0_0857293C_0_08572928 @ [0]
+
+sSpriteTemplate_Tag27C0_0857293C: @ 0x0857293C
+	@ SpriteTemplate: tileTag=0x27C0, paletteTag=0x27C0
+	.2byte 0x27C0, 0x27C0
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_64x64 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27C0_0857293C_08572938 @ affineAnims
+	.4byte 0x08112231 @ callback (InitAnimShadowBall)
+
+sAnim_Tag27C1_08572970_0_08572954: @ 0x08572954
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0002 @ ANIMCMD_FRAME(0, 2)
+	.2byte 0x0008, 0x0002 @ ANIMCMD_FRAME(8, 2)
+	.2byte 0x0010, 0x0002 @ ANIMCMD_FRAME(16, 2)
+	.2byte 0x0018, 0x0002 @ ANIMCMD_FRAME(24, 2)
+	.2byte 0x0020, 0x0002 @ ANIMCMD_FRAME(32, 2)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag27C1_08572970_0857296C: @ 0x0857296C
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag27C1_08572970_0_08572954 @ [0]
+
+sSpriteTemplate_Tag27C1_08572970: @ 0x08572970
+	@ SpriteTemplate: tileTag=0x27C1, paletteTag=0x27C1
+	.2byte 0x27C1, 0x27C1
+	.4byte gBattleAnimOam_084FD060 @ oam
+	.4byte sAnims_Tag27C1_08572970_0857296C @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x081123ED @ callback (sub_081123EC)
+
+sBattleAnimData_08572988: @ 0x08572988
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x14; no stronger object type proven
+	.4byte 0x02000200
+	.4byte 0x00000000
+	.4byte 0x00007FFF
+	.4byte 0x00000000
+	.4byte sBattleAnimData_08572988
+
+	.if (. - .Lsemantic_range_08572824) != 0x178
+	.error "semantic range 0x08572824 size mismatch"
+	.endif
+	@ semantic battle-animation reconstruction: ghost
+	@ ROM range 0x0857299C-0x08572F3B
+.Lsemantic_range_0857299C:
 	.globl gGhostData_0857299C
 gGhostData_0857299C: @ 0x0857299C
-	@ analyzed canonical ROM range 0x0857299C-0x08572A13
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x27CC27CC @ +0x0
-	.4byte gOamData_AffineOff_ObjBlend_64x32 @ +0x4
-	.4byte gDummySpriteAnimTable @ +0x8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xC
-	.4byte gDummySpriteAffineAnimTable @ +0x10
-	.4byte sub_08112AB4 @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x27D727D7 @ +0x18
-	.4byte gOamData_AffineOff_ObjBlend_32x16 @ +0x1C
-	.4byte gDummySpriteAnimTable @ +0x20
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x24
-	.4byte gDummySpriteAffineAnimTable @ +0x28
-	.4byte sub_08113240 @ +0x2C
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x27D827D8 @ +0x30
-	.4byte gOamData_AffineOff_ObjBlend_32x32 @ +0x34
-	.4byte gDummySpriteAnimTable @ +0x38
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x3C
-	.4byte gDummySpriteAffineAnimTable @ +0x40
-	.4byte sub_081133C8 @ +0x44
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x27ED27ED @ +0x48
-	.4byte gOamData_AffineOff_ObjBlend_32x32 @ +0x4C
-	.4byte gDummySpriteAnimTable @ +0x50
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x54
-	.4byte gDummySpriteAffineAnimTable @ +0x58
-	.4byte sub_081133C8 @ +0x5C
-	@ ANALYSIS: RAW_BLOCK size=0x18
-	.4byte 0x00040000 @ +0x60
-	.4byte 0x00040008 @ +0x64
-	.4byte 0x00040010 @ +0x68
-	.4byte 0x00040018 @ +0x6C
-	.4byte 0x0000FFFE @ +0x70
-	.4byte 0x085729FC @ +0x74
-	@ pret/pokeemerald-jp direct xref for 0x08572A14: ghost.s: sub_08113560
+	@ SpriteTemplate: tileTag=0x27CC, paletteTag=0x27CC
+	.2byte 0x27CC, 0x27CC
+	.4byte gOamData_AffineOff_ObjBlend_64x32 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08112AB5 @ callback (sub_08112AB4)
+
+sSpriteTemplate_Tag27D7_085729B4: @ 0x085729B4
+	@ SpriteTemplate: tileTag=0x27D7, paletteTag=0x27D7
+	.2byte 0x27D7, 0x27D7
+	.4byte gBattleAnimOam_084FD160 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08113241 @ callback (sub_08113240)
+
+sSpriteTemplate_Tag27D8_085729CC: @ 0x085729CC
+	@ SpriteTemplate: tileTag=0x27D8, paletteTag=0x27D8
+	.2byte 0x27D8, 0x27D8
+	.4byte gBattleAnimOam_084FD140 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x081133C9 @ callback (sub_081133C8)
+
+sSpriteTemplate_Tag27ED_085729E4: @ 0x085729E4
+	@ SpriteTemplate: tileTag=0x27ED, paletteTag=0x27ED
+	.2byte 0x27ED, 0x27ED
+	.4byte gBattleAnimOam_084FD140 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x081133C9 @ callback (sub_081133C8)
+
+sAnim_GhostData_08572A14_0_085729FC: @ 0x085729FC
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0004 @ ANIMCMD_FRAME(0, 4)
+	.2byte 0x0008, 0x0004 @ ANIMCMD_FRAME(8, 4)
+	.2byte 0x0010, 0x0004 @ ANIMCMD_FRAME(16, 4)
+	.2byte 0x0018, 0x0004 @ ANIMCMD_FRAME(24, 4)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnims_GhostData_08572A14_08572A10: @ 0x08572A10
+	@ AnimCmd pointer table
+	.4byte sAnim_GhostData_08572A14_0_085729FC @ [0]
+
 	.globl gGhostData_08572A14
 gGhostData_08572A14: @ 0x08572A14
-	@ analyzed canonical ROM range 0x08572A14-0x08572F3B
-	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x280D280D @ +0x0
-	.4byte gOamData_AffineOff_ObjBlend_16x32 @ +0x4
-	.4byte 0x08572A10 @ +0x8
-	.4byte 0 @ +0xC
-	.4byte gDummySpriteAffineAnimTable @ +0x10
-	.4byte sub_081136EC @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x18
-	.4byte gDummyOamData @ +0x1C
-	.4byte gDummySpriteAnimTable @ +0x20
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x24
-	.4byte gDummySpriteAffineAnimTable @ +0x28
-	.4byte sub_081137B0 @ +0x2C
-	@ ANALYSIS: RAW_BLOCK size=0x2C
-	.4byte 0x00040000 @ +0x30
-	.4byte 0x00040010 @ +0x34
-	.4byte 0x00040020 @ +0x38
-	.4byte 0x00040030 @ +0x3C
-	.4byte 0x00040040 @ +0x40
-	.4byte 0x0000FFFE @ +0x44
-	.4byte 0x08572A44 @ +0x48
-	.4byte 0x272D272D @ +0x4C
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x50
-	.4byte 0x08572A5C @ +0x54
-	.4byte 0 @ +0x58
-	.4byte gDummySpriteAffineAnimTable @ +0x5C
-	.4byte sub_081138B4 @ +0x60
-	@ ANALYSIS: RAW_BLOCK size=0x74
-	.4byte 0x00030010 @ +0x64
-	.4byte 0x00030020 @ +0x68
-	.4byte 0x00030030 @ +0x6C
-	.4byte 0x0000FFFE @ +0x70
-	.4byte 0x00C30010 @ +0x74
-	.4byte 0x00C30020 @ +0x78
-	.4byte 0x00C30030 @ +0x7C
-	.4byte 0x0000FFFE @ +0x80
-	.4byte 0x08572A78 @ +0x84
-	.4byte 0x08572A88 @ +0x88
-	.4byte 0x00500050 @ +0x8C
-	.4byte 0x0000007F @ +0x90
-	.4byte 0x000D000D @ +0x94
-	.4byte 0x00006400 @ +0x98
-	.4byte 0x00007FFF @ +0x9C
-	.4byte 0 @ +0xA0
-	.4byte 0x00500050 @ +0xA4
-	.4byte 0 @ +0xA8
-	.4byte 0x000D000D @ +0xAC
-	.4byte 0x00006400 @ +0xB0
-	.4byte 0x00007FFF @ +0xB4
-	.4byte 0 @ +0xB8
-	.4byte 0x08572AA0 @ +0xBC
-	.4byte 0x08572AB8 @ +0xC0
-	.4byte 0x272D272D @ +0xC4
-	.4byte gOamData_AffineDouble_ObjNormal_32x32 @ +0xC8
-	.4byte 0x08572A98 @ +0xCC
-	.4byte 0 @ +0xD0
-	.4byte 0x08572AD0 @ +0xD4
-	.4byte sub_08113A74 @ +0xD8
-	@ ANALYSIS: RAW_BLOCK size=0x2C
-	.4byte 0x00050000 @ +0xDC
-	.4byte 0x00050010 @ +0xE0
-	.4byte 0x00050020 @ +0xE4
-	.4byte 0x00050030 @ +0xE8
-	.4byte 0x00050040 @ +0xEC
-	.4byte 0x0000FFFF @ +0xF0
-	.4byte 0x08572AF0 @ +0xF4
-	.4byte 0x27332733 @ +0xF8
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0xFC
-	.4byte 0x08572B08 @ +0x100
-	.4byte 0 @ +0x104
-	.4byte gDummySpriteAffineAnimTable @ +0x108
-	.4byte sub_08113A04 @ +0x10C
-	@ ANALYSIS: RAW_BLOCK size=0x54
-	.4byte 0x00030010 @ +0x110
-	.4byte 0x00030020 @ +0x114
-	.4byte 0x00030030 @ +0x118
-	.4byte 0x0000FFFE @ +0x11C
-	.4byte 0x08572B24 @ +0x120
-	.4byte 0x08572B24 @ +0x124
-	.4byte 0x00640064 @ +0x128
-	.4byte 0x0000017F @ +0x12C
-	.4byte 0x00007FFF @ +0x130
-	.4byte 0 @ +0x134
-	.4byte 0x00640064 @ +0x138
-	.4byte 0x00000100 @ +0x13C
-	.4byte 0x00007FFF @ +0x140
-	.4byte 0 @ +0x144
-	.4byte 0x08572B3C @ +0x148
-	.4byte 0x08572B4C @ +0x14C
-	.4byte 0x272D272D @ +0x150
-	.4byte gOamData_AffineDouble_ObjNormal_32x32 @ +0x154
-	.4byte 0x08572B34 @ +0x158
-	.4byte 0 @ +0x15C
-	.4byte 0x08572B5C @ +0x160
-	.4byte sub_08113A74 @ +0x164
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x28092809 @ +0x168
-	.4byte gOamData_AffineOff_ObjNormal_16x16 @ +0x16C
-	.4byte gDummySpriteAnimTable @ +0x170
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x174
-	.4byte gDummySpriteAffineAnimTable @ +0x178
-	.4byte sub_08113AA0 @ +0x17C
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0x272D272D @ +0x180
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x184
-	.4byte 0x08572A5C @ +0x188
-	.4byte 0 @ +0x18C
-	.4byte gDummySpriteAffineAnimTable @ +0x190
-	.4byte sub_08113E3C @ +0x194
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x271F271F @ +0x198
-	.4byte gOamData_AffineOff_ObjNormal_16x16 @ +0x19C
-	.4byte gDummySpriteAnimTable @ +0x1A0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x1A4
-	.4byte gDummySpriteAffineAnimTable @ +0x1A8
-	.4byte sub_08114124 @ +0x1AC
-	@ ANALYSIS: RAW_BLOCK size=0xA8
-	.4byte 0 @ +0x1B0
-	.4byte 0x00000100 @ +0x1B4
-	.4byte 0x00007FFF @ +0x1B8
-	.4byte 0 @ +0x1BC
-	.4byte 0 @ +0x1C0
-	.4byte 0x00000120 @ +0x1C4
-	.4byte 0x00007FFF @ +0x1C8
-	.4byte 0 @ +0x1CC
-	.4byte 0 @ +0x1D0
-	.4byte 0x00000140 @ +0x1D4
-	.4byte 0x00007FFF @ +0x1D8
-	.4byte 0 @ +0x1DC
-	.4byte 0 @ +0x1E0
-	.4byte 0x00000160 @ +0x1E4
-	.4byte 0x00007FFF @ +0x1E8
-	.4byte 0 @ +0x1EC
-	.4byte 0 @ +0x1F0
-	.4byte 0x00000180 @ +0x1F4
-	.4byte 0x00007FFF @ +0x1F8
-	.4byte 0 @ +0x1FC
-	.4byte 0 @ +0x200
-	.4byte 0x000001A0 @ +0x204
-	.4byte 0x00007FFF @ +0x208
-	.4byte 0 @ +0x20C
-	.4byte 0 @ +0x210
-	.4byte 0x000001C0 @ +0x214
-	.4byte 0x00007FFF @ +0x218
-	.4byte 0 @ +0x21C
-	.4byte 0 @ +0x220
-	.4byte 0x000001E0 @ +0x224
-	.4byte 0x00007FFF @ +0x228
-	.4byte 0 @ +0x22C
-	.4byte 0x08572BC4 @ +0x230
-	.4byte 0x08572BD4 @ +0x234
-	.4byte 0x08572BE4 @ +0x238
-	.4byte 0x08572BF4 @ +0x23C
-	.4byte 0x08572C04 @ +0x240
-	.4byte 0x08572C14 @ +0x244
-	.4byte 0x08572C24 @ +0x248
-	.4byte 0x08572C34 @ +0x24C
-	.4byte 0x279B279B @ +0x250
-	.4byte gOamData_AffineNormal_ObjBlend_64x64 @ +0x254
-	.4byte gDummySpriteAnimTable @ +0x258
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0x25C
-	.4byte 0x08572C44 @ +0x260
-	.4byte sub_0811422C @ +0x264
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x27A127A1 @ +0x268
-	.4byte gOamData_AffineNormal_ObjBlend_64x64 @ +0x26C
-	.4byte gDummySpriteAnimTable @ +0x270
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0x274
-	.4byte 0x08572C44 @ +0x278
-	.4byte sub_0811422C @ +0x27C
-	@ ANALYSIS: RAW_BLOCK size=0x40
-	.4byte 0x00C000C0 @ +0x280
-	.4byte 0x00000050 @ +0x284
-	.4byte 0 @ +0x288
-	.4byte 0x000008FE @ +0x28C
-	.4byte 0x00007FFF @ +0x290
-	.4byte 0 @ +0x294
-	.4byte 0x00C000C0 @ +0x298
-	.4byte 0x000000B0 @ +0x29C
-	.4byte 0 @ +0x2A0
-	.4byte 0x00000802 @ +0x2A4
-	.4byte 0x00007FFF @ +0x2A8
-	.4byte 0 @ +0x2AC
-	.4byte 0x08572C94 @ +0x2B0
-	.4byte 0x08572CAC @ +0x2B4
-	.4byte 0x27AB27AB @ +0x2B8
-	.4byte gOamData_AffineNormal_ObjNormal_16x16 @ +0x2BC
-	.4byte gDummySpriteAnimTable @ +0x2C0
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0x2C4
-	.4byte 0x08572CC4 @ +0x2C8
-	.4byte sub_081142E0 @ +0x2CC
-	@ ANALYSIS: RAW_BLOCK size=0x48
-	.4byte 0x00040000 @ +0x2D0
-	.4byte 0x00040010 @ +0x2D4
-	.4byte 0x00040020 @ +0x2D8
-	.4byte 0x00040030 @ +0x2DC
-	.4byte 0x00040040 @ +0x2E0
-	.4byte 0x0000FFFF @ +0x2E4
-	.4byte 0x00440000 @ +0x2E8
-	.4byte 0x00440010 @ +0x2EC
-	.4byte 0x00440020 @ +0x2F0
-	.4byte 0x00440030 @ +0x2F4
-	.4byte 0x00440040 @ +0x2F8
-	.4byte 0x0000FFFF @ +0x2FC
-	.4byte 0x08572CE4 @ +0x300
-	.4byte 0x08572CFC @ +0x304
-	.4byte 0x27372737 @ +0x308
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x30C
-	.4byte 0x08572D14 @ +0x310
-	.4byte 0 @ +0x314
-	.4byte gDummySpriteAffineAnimTable @ +0x318
-	.4byte sub_08114D0C @ +0x31C
-	@ ANALYSIS: RAW_BLOCK size=0x30
-	.4byte 0 @ +0x320
-	.4byte 0x0000010F @ +0x324
-	.4byte 0x00007FFE @ +0x328
-	.4byte 0 @ +0x32C
-	.4byte 0 @ +0x330
-	.4byte 0x00000114 @ +0x334
-	.4byte 0x00007FFE @ +0x338
-	.4byte 0 @ +0x33C
-	.4byte 0x08572D34 @ +0x340
-	.4byte 0x08572D44 @ +0x344
-	.4byte 0x27102710 @ +0x348
-	.4byte gOamData_AffineNormal_ObjNormal_32x32 @ +0x34C
-	.4byte gDummySpriteAnimTable @ +0x350
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0x354
-	.4byte 0x08572D54 @ +0x358
-	.4byte AnimBonemerangProjectile @ +0x35C
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x27102710 @ +0x360
-	.4byte gOamData_AffineNormal_ObjNormal_32x32 @ +0x364
-	.4byte gDummySpriteAnimTable @ +0x368
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0 @ +0x36C
-	.4byte 0x08572D58 @ +0x370
-	.4byte AnimBoneHitProjectile @ +0x374
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x275A275A @ +0x378
-	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x37C
-	.4byte gDummySpriteAnimTable @ +0x380
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x384
-	.4byte gDummySpriteAffineAnimTable @ +0x388
-	.4byte AnimDirtScatter @ +0x38C
-	@ ANALYSIS: RAW_BLOCK size=0x1C
-	.4byte 0x00010001 @ +0x390
-	.4byte 0x0000FFFF @ +0x394
-	.4byte 0x08572DA4 @ +0x398
-	.4byte 0x275A275A @ +0x39C
-	.4byte gOamData_AffineOff_ObjNormal_16x16 @ +0x3A0
-	.4byte 0x08572DAC @ +0x3A4
-	.4byte 0 @ +0x3A8
-	.4byte gDummySpriteAffineAnimTable @ +0x3AC
-	.4byte AnimDirtScatter @ +0x3B0
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x275A275A @ +0x3B4
-	.4byte gOamData_AffineOff_ObjNormal_16x16 @ +0x3B8
-	.4byte gDummySpriteAnimTable @ +0x3BC
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x3C0
-	.4byte gDummySpriteAffineAnimTable @ +0x3C4
-	.4byte AnimMudSportDirt @ +0x3C8
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x275A275A @ +0x3CC
-	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x3D0
-	.4byte gDummySpriteAnimTable @ +0x3D4
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x3D8
-	.4byte gDummySpriteAffineAnimTable @ +0x3DC
-	.4byte AnimFissureDirtPlumeParticle @ +0x3E0
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x28292829 @ +0x3E4
-	.4byte gOamData_AffineOff_ObjNormal_32x16 @ +0x3E8
-	.4byte gDummySpriteAnimTable @ +0x3EC
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x3F0
-	.4byte gDummySpriteAffineAnimTable @ +0x3F4
-	.4byte AnimDigDirtMound @ +0x3F8
-	@ ANALYSIS: RAW_BLOCK size=0x40
-	.4byte 0x00080000 @ +0x3FC
-	.4byte 0x00080004 @ +0x400
-	.4byte 0x00480000 @ +0x404
-	.4byte 0x00080008 @ +0x408
-	.4byte 0x0000FFFE @ +0x40C
-	.4byte 0x00480000 @ +0x410
-	.4byte 0x00080004 @ +0x414
-	.4byte 0x00080000 @ +0x418
-	.4byte 0x00080008 @ +0x41C
-	.4byte 0x0000FFFE @ +0x420
-	.4byte 0x08572E10 @ +0x424
-	.4byte 0x08572E24 @ +0x428
-	.4byte 0x27592759 @ +0x42C
-	.4byte gOamData_AffineOff_ObjNormal_16x16 @ +0x430
-	.4byte 0x08572E38 @ +0x434
-	.4byte 0 @ +0x438
-	.4byte gDummySpriteAffineAnimTable @ +0x43C
-	.4byte AnimConfusionDuck @ +0x440
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x444
-	.4byte gDummyOamData @ +0x448
-	.4byte gDummySpriteAnimTable @ +0x44C
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x450
-	.4byte gDummySpriteAffineAnimTable @ +0x454
-	.4byte AnimSimplePaletteBlend @ +0x458
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x45C
-	.4byte gDummyOamData @ +0x460
-	.4byte gDummySpriteAnimTable @ +0x464
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x468
-	.4byte gDummySpriteAffineAnimTable @ +0x46C
-	.4byte sub_081160F4 @ +0x470
-	@ ANALYSIS: RAW_BLOCK size=0x2C
-	.4byte 0x00030000 @ +0x474
-	.4byte 0x00030010 @ +0x478
-	.4byte 0x00030020 @ +0x47C
-	.4byte 0x00030030 @ +0x480
-	.4byte 0x00030040 @ +0x484
-	.4byte 0x0000FFFE @ +0x488
-	.4byte 0x08572E88 @ +0x48C
-	.4byte 0x27572757 @ +0x490
-	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x494
-	.4byte 0x08572EA0 @ +0x498
-	.4byte 0 @ +0x49C
-	.4byte gDummySpriteAffineAnimTable @ +0x4A0
-	.4byte sub_08116204 @ +0x4A4
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x4A8
-	.4byte gDummyOamData @ +0x4AC
-	.4byte gDummySpriteAnimTable @ +0x4B0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x4B4
-	.4byte gDummySpriteAffineAnimTable @ +0x4B8
-	.4byte sub_081168F4 @ +0x4BC
-	@ ANALYSIS: RAW_BLOCK size=0x68
-	.4byte 0 @ +0x4C0
-	.4byte 0x00000800 @ +0x4C4
-	.4byte 0x00007FFF @ +0x4C8
-	.4byte 0 @ +0x4CC
-	.4byte 0x00D800D8 @ +0x4D0
-	.4byte 0 @ +0x4D4
-	.4byte 0 @ +0x4D8
-	.4byte 0x00000800 @ +0x4DC
-	.4byte 0x00007FFF @ +0x4E0
-	.4byte 0 @ +0x4E4
-	.4byte 0x00B000B0 @ +0x4E8
-	.4byte 0 @ +0x4EC
-	.4byte 0 @ +0x4F0
-	.4byte 0x00000800 @ +0x4F4
-	.4byte 0x00007FFF @ +0x4F8
-	.4byte 0 @ +0x4FC
-	.4byte 0x00800080 @ +0x500
-	.4byte 0 @ +0x504
-	.4byte 0 @ +0x508
-	.4byte 0x00000800 @ +0x50C
-	.4byte 0x00007FFF @ +0x510
-	.4byte 0 @ +0x514
-	.4byte 0x08572ED4 @ +0x518
-	.4byte 0x08572EE4 @ +0x51C
-	.4byte 0x08572EFC @ +0x520
-	.4byte 0x08572F14 @ +0x524
-	@ pret/pokeemerald-jp direct xref for 0x08572F3C: fight.s: sub_0810D780
+	@ SpriteTemplate: tileTag=0x280D, paletteTag=0x280D
+	.2byte 0x280D, 0x280D
+	.4byte gOamData_AffineOff_ObjBlend_16x32 @ oam
+	.4byte sAnims_GhostData_08572A14_08572A10 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x081136ED @ callback (sub_081136EC)
+
+sSpriteTemplate_Tag0000_08572A2C: @ 0x08572A2C
+	@ SpriteTemplate: tileTag=0x0000, paletteTag=0x0000
+	.2byte 0x0000, 0x0000
+	.4byte gDummyOamData @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x081137B1 @ callback (sub_081137B0)
+
+sAnim_Tag272D_08572A60_0_08572A44: @ 0x08572A44
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0004 @ ANIMCMD_FRAME(0, 4)
+	.2byte 0x0010, 0x0004 @ ANIMCMD_FRAME(16, 4)
+	.2byte 0x0020, 0x0004 @ ANIMCMD_FRAME(32, 4)
+	.2byte 0x0030, 0x0004 @ ANIMCMD_FRAME(48, 4)
+	.2byte 0x0040, 0x0004 @ ANIMCMD_FRAME(64, 4)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnims_Tag272D_08572A60_08572A5C: @ 0x08572A5C
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag272D_08572A60_0_08572A44 @ [0]
+
+sSpriteTemplate_Tag272D_08572A60: @ 0x08572A60
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag272D_08572A60_08572A5C @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x081138B5 @ callback (sub_081138B4)
+
+sAnim_Tag272D_08572AD8_0_08572A78: @ 0x08572A78
+	@ union AnimCmd stream
+	.2byte 0x0010, 0x0003 @ ANIMCMD_FRAME(16, 3)
+	.2byte 0x0020, 0x0003 @ ANIMCMD_FRAME(32, 3)
+	.2byte 0x0030, 0x0003 @ ANIMCMD_FRAME(48, 3)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnim_Tag272D_08572AD8_1_08572A88: @ 0x08572A88
+	@ union AnimCmd stream
+	.2byte 0x0010, 0x00C3 @ ANIMCMD_FRAME(16, 195)
+	.2byte 0x0020, 0x00C3 @ ANIMCMD_FRAME(32, 195)
+	.2byte 0x0030, 0x00C3 @ ANIMCMD_FRAME(48, 195)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnims_Tag272D_08572AD8_08572A98: @ 0x08572A98
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag272D_08572AD8_0_08572A78 @ [0]
+	.4byte sAnim_Tag272D_08572AD8_1_08572A88 @ [1]
+
+sAffineAnim_Tag272D_08572AD8_0_08572AA0: @ 0x08572AA0
+	@ union AffineAnimCmd stream
+	.2byte 0x0050, 0x0050, 0x007F, 0x0000 @ AFFINE_FRAME(80, 80, rot=0x00, duration=0)
+	.2byte 0x000D, 0x000D, 0x6400, 0x0000 @ AFFINE_FRAME(13, 13, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag272D_08572AD8_1_08572AB8: @ 0x08572AB8
+	@ union AffineAnimCmd stream
+	.2byte 0x0050, 0x0050, 0x0000, 0x0000 @ AFFINE_FRAME(80, 80, rot=0x00, duration=0)
+	.2byte 0x000D, 0x000D, 0x6400, 0x0000 @ AFFINE_FRAME(13, 13, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag272D_08572AD8_08572AD0: @ 0x08572AD0
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag272D_08572AD8_0_08572AA0 @ [0]
+	.4byte sAffineAnim_Tag272D_08572AD8_1_08572AB8 @ [1]
+
+sSpriteTemplate_Tag272D_08572AD8: @ 0x08572AD8
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_084FD0E0 @ oam
+	.4byte sAnims_Tag272D_08572AD8_08572A98 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag272D_08572AD8_08572AD0 @ affineAnims
+	.4byte 0x08113A75 @ callback (sub_08113A74)
+
+sAnim_Tag2733_08572B0C_0_08572AF0: @ 0x08572AF0
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0005 @ ANIMCMD_FRAME(0, 5)
+	.2byte 0x0010, 0x0005 @ ANIMCMD_FRAME(16, 5)
+	.2byte 0x0020, 0x0005 @ ANIMCMD_FRAME(32, 5)
+	.2byte 0x0030, 0x0005 @ ANIMCMD_FRAME(48, 5)
+	.2byte 0x0040, 0x0005 @ ANIMCMD_FRAME(64, 5)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag2733_08572B0C_08572B08: @ 0x08572B08
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag2733_08572B0C_0_08572AF0 @ [0]
+
+sSpriteTemplate_Tag2733_08572B0C: @ 0x08572B0C
+	@ SpriteTemplate: tileTag=0x2733, paletteTag=0x2733
+	.2byte 0x2733, 0x2733
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag2733_08572B0C_08572B08 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08113A05 @ callback (sub_08113A04)
+
+sAnim_Tag272D_08572B64_0_08572B24: @ 0x08572B24
+	@ union AnimCmd stream
+	.2byte 0x0010, 0x0003 @ ANIMCMD_FRAME(16, 3)
+	.2byte 0x0020, 0x0003 @ ANIMCMD_FRAME(32, 3)
+	.2byte 0x0030, 0x0003 @ ANIMCMD_FRAME(48, 3)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnims_Tag272D_08572B64_08572B34: @ 0x08572B34
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag272D_08572B64_0_08572B24 @ [0]
+	.4byte sAnim_Tag272D_08572B64_0_08572B24 @ [1]
+
+sAffineAnim_Tag272D_08572B64_0_08572B3C: @ 0x08572B3C
+	@ union AffineAnimCmd stream
+	.2byte 0x0064, 0x0064, 0x017F, 0x0000 @ AFFINE_FRAME(100, 100, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag272D_08572B64_1_08572B4C: @ 0x08572B4C
+	@ union AffineAnimCmd stream
+	.2byte 0x0064, 0x0064, 0x0100, 0x0000 @ AFFINE_FRAME(100, 100, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag272D_08572B64_08572B5C: @ 0x08572B5C
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag272D_08572B64_0_08572B3C @ [0]
+	.4byte sAffineAnim_Tag272D_08572B64_1_08572B4C @ [1]
+
+sSpriteTemplate_Tag272D_08572B64: @ 0x08572B64
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_084FD0E0 @ oam
+	.4byte sAnims_Tag272D_08572B64_08572B34 @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag272D_08572B64_08572B5C @ affineAnims
+	.4byte 0x08113A75 @ callback (sub_08113A74)
+
+sSpriteTemplate_Tag2809_08572B7C: @ 0x08572B7C
+	@ SpriteTemplate: tileTag=0x2809, paletteTag=0x2809
+	.2byte 0x2809, 0x2809
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_16x16 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08113AA1 @ callback (sub_08113AA0)
+
+sSpriteTemplate_Tag272D_08572B94: @ 0x08572B94
+	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
+	.2byte 0x272D, 0x272D
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag272D_08572A60_08572A5C @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08113E3D @ callback (sub_08113E3C)
+
+sSpriteTemplate_Tag271F_08572BAC: @ 0x08572BAC
+	@ SpriteTemplate: tileTag=0x271F, paletteTag=0x271F
+	.2byte 0x271F, 0x271F
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_16x16 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08114125 @ callback (sub_08114124)
+
+sAffineAnim_Tag279B_08572C64_0_08572BC4: @ 0x08572BC4
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x0100, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag279B_08572C64_1_08572BD4: @ 0x08572BD4
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x0120, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag279B_08572C64_2_08572BE4: @ 0x08572BE4
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x0140, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag279B_08572C64_3_08572BF4: @ 0x08572BF4
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x0160, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag279B_08572C64_4_08572C04: @ 0x08572C04
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x0180, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag279B_08572C64_5_08572C14: @ 0x08572C14
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x01A0, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag279B_08572C64_6_08572C24: @ 0x08572C24
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x01C0, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag279B_08572C64_7_08572C34: @ 0x08572C34
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x01E0, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag279B_08572C64_08572C44: @ 0x08572C44
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag279B_08572C64_0_08572BC4 @ [0]
+	.4byte sAffineAnim_Tag279B_08572C64_1_08572BD4 @ [1]
+	.4byte sAffineAnim_Tag279B_08572C64_2_08572BE4 @ [2]
+	.4byte sAffineAnim_Tag279B_08572C64_3_08572BF4 @ [3]
+	.4byte sAffineAnim_Tag279B_08572C64_4_08572C04 @ [4]
+	.4byte sAffineAnim_Tag279B_08572C64_5_08572C14 @ [5]
+	.4byte sAffineAnim_Tag279B_08572C64_6_08572C24 @ [6]
+	.4byte sAffineAnim_Tag279B_08572C64_7_08572C34 @ [7]
+
+sSpriteTemplate_Tag279B_08572C64: @ 0x08572C64
+	@ SpriteTemplate: tileTag=0x279B, paletteTag=0x279B
+	.2byte 0x279B, 0x279B
+	.4byte gBattleAnimOam_084FD1A8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag279B_08572C64_08572C44 @ affineAnims
+	.4byte 0x0811422D @ callback (sub_0811422C)
+
+sSpriteTemplate_Tag27A1_08572C7C: @ 0x08572C7C
+	@ SpriteTemplate: tileTag=0x27A1, paletteTag=0x27A1
+	.2byte 0x27A1, 0x27A1
+	.4byte gBattleAnimOam_084FD1A8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag279B_08572C64_08572C44 @ affineAnims
+	.4byte 0x0811422D @ callback (sub_0811422C)
+
+sAffineAnim_Tag27AB_08572CCC_0_08572C94: @ 0x08572C94
+	@ union AffineAnimCmd stream
+	.2byte 0x00C0, 0x00C0, 0x0050, 0x0000 @ AFFINE_FRAME(192, 192, rot=0x00, duration=0)
+	.2byte 0x0000, 0x0000, 0x08FE, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnim_Tag27AB_08572CCC_1_08572CAC: @ 0x08572CAC
+	@ union AffineAnimCmd stream
+	.2byte 0x00C0, 0x00C0, 0x00B0, 0x0000 @ AFFINE_FRAME(192, 192, rot=0x00, duration=0)
+	.2byte 0x0000, 0x0000, 0x0802, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+sAffineAnims_Tag27AB_08572CCC_08572CC4: @ 0x08572CC4
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag27AB_08572CCC_0_08572C94 @ [0]
+	.4byte sAffineAnim_Tag27AB_08572CCC_1_08572CAC @ [1]
+
+sSpriteTemplate_Tag27AB_08572CCC: @ 0x08572CCC
+	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
+	.2byte 0x27AB, 0x27AB
+	.4byte gBattleAnimOam_084FD078 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag27AB_08572CCC_08572CC4 @ affineAnims
+	.4byte 0x081142E1 @ callback (sub_081142E0)
+
+sAnim_Tag2737_08572D1C_0_08572CE4: @ 0x08572CE4
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0004 @ ANIMCMD_FRAME(0, 4)
+	.2byte 0x0010, 0x0004 @ ANIMCMD_FRAME(16, 4)
+	.2byte 0x0020, 0x0004 @ ANIMCMD_FRAME(32, 4)
+	.2byte 0x0030, 0x0004 @ ANIMCMD_FRAME(48, 4)
+	.2byte 0x0040, 0x0004 @ ANIMCMD_FRAME(64, 4)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnim_Tag2737_08572D1C_1_08572CFC: @ 0x08572CFC
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0044 @ ANIMCMD_FRAME(0, 68)
+	.2byte 0x0010, 0x0044 @ ANIMCMD_FRAME(16, 68)
+	.2byte 0x0020, 0x0044 @ ANIMCMD_FRAME(32, 68)
+	.2byte 0x0030, 0x0044 @ ANIMCMD_FRAME(48, 68)
+	.2byte 0x0040, 0x0044 @ ANIMCMD_FRAME(64, 68)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag2737_08572D1C_08572D14: @ 0x08572D14
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag2737_08572D1C_0_08572CE4 @ [0]
+	.4byte sAnim_Tag2737_08572D1C_1_08572CFC @ [1]
+
+sSpriteTemplate_Tag2737_08572D1C: @ 0x08572D1C
+	@ SpriteTemplate: tileTag=0x2737, paletteTag=0x2737
+	.2byte 0x2737, 0x2737
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag2737_08572D1C_08572D14 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08114D0D @ callback (sub_08114D0C)
+
+sAffineAnim_Tag2710_08572D5C_0_08572D34: @ 0x08572D34
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x010F, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
+
+sAffineAnim_Tag2710_08572D74_0_08572D44: @ 0x08572D44
+	@ union AffineAnimCmd stream
+	.2byte 0x0000, 0x0000, 0x0114, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
+
+sAffineAnims_Tag2710_08572D5C_08572D54: @ 0x08572D54
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag2710_08572D5C_0_08572D34 @ [0]
+
+sAffineAnims_Tag2710_08572D74_08572D58: @ 0x08572D58
+	@ AffineAnimCmd pointer table
+	.4byte sAffineAnim_Tag2710_08572D74_0_08572D44 @ [0]
+
+sSpriteTemplate_Tag2710_08572D5C: @ 0x08572D5C
+	@ SpriteTemplate: tileTag=0x2710, paletteTag=0x2710
+	.2byte 0x2710, 0x2710
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_64x64 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag2710_08572D5C_08572D54 @ affineAnims
+	.4byte 0x081151E5 @ callback (AnimBonemerangProjectile)
+
+sSpriteTemplate_Tag2710_08572D74: @ 0x08572D74
+	@ SpriteTemplate: tileTag=0x2710, paletteTag=0x2710
+	.2byte 0x2710, 0x2710
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_64x64 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte sAffineAnims_Tag2710_08572D74_08572D58 @ affineAnims
+	.4byte 0x081152CD @ callback (AnimBoneHitProjectile)
+
+sSpriteTemplate_Tag275A_08572D8C: @ 0x08572D8C
+	@ SpriteTemplate: tileTag=0x275A, paletteTag=0x275A
+	.2byte 0x275A, 0x275A
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08115341 @ callback (AnimDirtScatter)
+
+sAnim_Tag275A_08572DB0_0_08572DA4: @ 0x08572DA4
+	@ union AnimCmd stream
+	.2byte 0x0001, 0x0001 @ ANIMCMD_FRAME(1, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+sAnims_Tag275A_08572DB0_08572DAC: @ 0x08572DAC
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag275A_08572DB0_0_08572DA4 @ [0]
+
+sSpriteTemplate_Tag275A_08572DB0: @ 0x08572DB0
+	@ SpriteTemplate: tileTag=0x275A, paletteTag=0x275A
+	.2byte 0x275A, 0x275A
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_16x16 @ oam
+	.4byte sAnims_Tag275A_08572DB0_08572DAC @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08115341 @ callback (AnimDirtScatter)
+
+sSpriteTemplate_Tag275A_08572DC8: @ 0x08572DC8
+	@ SpriteTemplate: tileTag=0x275A, paletteTag=0x275A
+	.2byte 0x275A, 0x275A
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_16x16 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x081153D1 @ callback (AnimMudSportDirt)
+
+sSpriteTemplate_Tag275A_08572DE0: @ 0x08572DE0
+	@ SpriteTemplate: tileTag=0x275A, paletteTag=0x275A
+	.2byte 0x275A, 0x275A
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x081159F1 @ callback (AnimFissureDirtPlumeParticle)
+
+sSpriteTemplate_Tag2829_08572DF8: @ 0x08572DF8
+	@ SpriteTemplate: tileTag=0x2829, paletteTag=0x2829
+	.2byte 0x2829, 0x2829
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x16 @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08115A95 @ callback (AnimDigDirtMound)
+
+sAnim_Tag2759_08572E40_0_08572E10: @ 0x08572E10
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0008 @ ANIMCMD_FRAME(0, 8)
+	.2byte 0x0004, 0x0008 @ ANIMCMD_FRAME(4, 8)
+	.2byte 0x0000, 0x0048 @ ANIMCMD_FRAME(0, 72)
+	.2byte 0x0008, 0x0008 @ ANIMCMD_FRAME(8, 8)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnim_Tag2759_08572E40_1_08572E24: @ 0x08572E24
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0048 @ ANIMCMD_FRAME(0, 72)
+	.2byte 0x0004, 0x0008 @ ANIMCMD_FRAME(4, 8)
+	.2byte 0x0000, 0x0008 @ ANIMCMD_FRAME(0, 8)
+	.2byte 0x0008, 0x0008 @ ANIMCMD_FRAME(8, 8)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnims_Tag2759_08572E40_08572E38: @ 0x08572E38
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag2759_08572E40_0_08572E10 @ [0]
+	.4byte sAnim_Tag2759_08572E40_1_08572E24 @ [1]
+
+sSpriteTemplate_Tag2759_08572E40: @ 0x08572E40
+	@ SpriteTemplate: tileTag=0x2759, paletteTag=0x2759
+	.2byte 0x2759, 0x2759
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_16x16 @ oam
+	.4byte sAnims_Tag2759_08572E40_08572E38 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08115F7D @ callback (AnimConfusionDuck)
+
+sSpriteTemplate_Tag0000_08572E58: @ 0x08572E58
+	@ SpriteTemplate: tileTag=0x0000, paletteTag=0x0000
+	.2byte 0x0000, 0x0000
+	.4byte gDummyOamData @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x0811604D @ callback (AnimSimplePaletteBlend)
+
+sSpriteTemplate_Tag0000_08572E70: @ 0x08572E70
+	@ SpriteTemplate: tileTag=0x0000, paletteTag=0x0000
+	.2byte 0x0000, 0x0000
+	.4byte gDummyOamData @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x081160F5 @ callback (sub_081160F4)
+
+sAnim_Tag2757_08572EA4_0_08572E88: @ 0x08572E88
+	@ union AnimCmd stream
+	.2byte 0x0000, 0x0003 @ ANIMCMD_FRAME(0, 3)
+	.2byte 0x0010, 0x0003 @ ANIMCMD_FRAME(16, 3)
+	.2byte 0x0020, 0x0003 @ ANIMCMD_FRAME(32, 3)
+	.2byte 0x0030, 0x0003 @ ANIMCMD_FRAME(48, 3)
+	.2byte 0x0040, 0x0003 @ ANIMCMD_FRAME(64, 3)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+
+sAnims_Tag2757_08572EA4_08572EA0: @ 0x08572EA0
+	@ AnimCmd pointer table
+	.4byte sAnim_Tag2757_08572EA4_0_08572E88 @ [0]
+
+sSpriteTemplate_Tag2757_08572EA4: @ 0x08572EA4
+	@ SpriteTemplate: tileTag=0x2757, paletteTag=0x2757
+	.2byte 0x2757, 0x2757
+	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
+	.4byte sAnims_Tag2757_08572EA4_08572EA0 @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x08116205 @ callback (sub_08116204)
+
+sSpriteTemplate_Tag0000_08572EBC: @ 0x08572EBC
+	@ SpriteTemplate: tileTag=0x0000, paletteTag=0x0000
+	.2byte 0x0000, 0x0000
+	.4byte gDummyOamData @ oam
+	.4byte gDummySpriteAnimTable @ anims
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte 0x081168F5 @ callback (sub_081168F4)
+
+sBattleAnimData_08572ED4: @ 0x08572ED4
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x10; no stronger object type proven
+	.4byte 0x00000000
+	.4byte 0x00000800
+	.4byte 0x00007FFF
+	.4byte 0x00000000
+
+sBattleAnimData_08572EE4: @ 0x08572EE4
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x18; no stronger object type proven
+	.4byte 0x00D800D8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000800
+	.4byte 0x00007FFF
+	.4byte 0x00000000
+
+sBattleAnimData_08572EFC: @ 0x08572EFC
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x18; no stronger object type proven
+	.4byte 0x00B000B0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000800
+	.4byte 0x00007FFF
+	.4byte 0x00000000
+
+sBattleAnimData_08572F14: @ 0x08572F14
+	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x28; no stronger object type proven
+	.4byte 0x00800080
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000800
+	.4byte 0x00007FFF
+	.4byte 0x00000000
+	.4byte sBattleAnimData_08572ED4
+	.4byte sBattleAnimData_08572EE4
+	.4byte sBattleAnimData_08572EFC
+	.4byte sBattleAnimData_08572F14
+
+	.if (. - .Lsemantic_range_0857299C) != 0x5A0
+	.error "semantic range 0x0857299C size mismatch"
+	.endif
 	.globl gFightData_08572F3C
 gFightData_08572F3C:
 	.globl gBattleAnimSpriteTemplate_BasicHit
