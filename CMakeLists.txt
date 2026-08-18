@@ -138,7 +138,8 @@ list(APPEND GRAPHICS_RELATIVE_OUTPUTS
     "build/graphics/fonts/font_tiles.4bpp.lz"
     "build/graphics/slot_machine/menu.tilemap.inc"
     "build/graphics/slot_machine/info_box.tilemap.inc"
-    "build/graphics/slot_machine/reel_time_window.tilemap.inc")
+    "build/graphics/slot_machine/reel_time_window.tilemap.inc"
+    "build/graphics/berry_blender/center_map.tilemap.inc")
 
 list(REMOVE_DUPLICATES GRAPHICS_RELATIVE_OUTPUTS)
 list(SORT GRAPHICS_RELATIVE_OUTPUTS)
@@ -3350,6 +3351,73 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # END BATTLE ENVIRONMENT EXACT ASSET PIPELINE
 
     # BEGIN SEMANTIC JP UI EXACT ASSET PIPELINE
+    # BEGIN BERRY BLENDER UNCOMPRESSED SEMANTIC ASSETS
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/berry_blender/(center_palette|outer_palette|unused_palette|misc_palette|arrow_palette)[.]gbapal$")
+        string(REGEX REPLACE
+            "^build/graphics/berry_blender/(.+)[.]gbapal$" "\\1"
+            BERRY_BLENDER_PAL_STEM "${RELATIVE_OUTPUT}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/berry_blender/${BERRY_BLENDER_PAL_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/berry_blender/(arrow|arrow_old|score_symbols|particles|countdown_numbers|start)[.]4bpp$")
+        string(REGEX REPLACE
+            "^build/graphics/berry_blender/(.+)[.]4bpp$" "\\1"
+            BERRY_BLENDER_GFX_STEM "${RELATIVE_OUTPUT}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/berry_blender/${BERRY_BLENDER_GFX_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/berry_blender/center_map.tilemap.inc")
+        # data/data.o includes this generated ASM directly.  The generic
+        # per-output custom-command scanner does not reliably order that
+        # include before data/data.o, so generate this one at configure time.
+        # It is deliberately not registered as a build OUTPUT, therefore
+        # --clean-first does not remove it before assembly.
+        set(INPUT_CSV
+            "${CMAKE_SOURCE_DIR}/graphics/berry_blender/center_map.tilemap.csv")
+        set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
+            "${INPUT_CSV}"
+            "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py")
+        file(MAKE_DIRECTORY "${OUTPUT_DIR}")
+        execute_process(
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py"
+                "${INPUT_CSV}" "${OUTPUT_ABS}"
+                --expected-entries 512
+            RESULT_VARIABLE BERRY_BLENDER_CENTER_MAP_RESULT
+            OUTPUT_VARIABLE BERRY_BLENDER_CENTER_MAP_STDOUT
+            ERROR_VARIABLE BERRY_BLENDER_CENTER_MAP_STDERR)
+        if(NOT BERRY_BLENDER_CENTER_MAP_RESULT EQUAL 0)
+            message(FATAL_ERROR
+                "Failed to generate Berry Blender center tilemap at configure time: "
+                "${BERRY_BLENDER_CENTER_MAP_STDERR}")
+        endif()
+    # END BERRY BLENDER UNCOMPRESSED SEMANTIC ASSETS
+
     elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/berry_blender/outer.4bpp.lz")
         add_custom_command(
             OUTPUT "${OUTPUT_ABS}"

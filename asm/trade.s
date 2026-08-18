@@ -8164,11 +8164,11 @@ sub_0807ABCC: @ 0x0807ABCC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807ACB4: .4byte gTradeData_0830D294
+_0807ACB4: .4byte gTradeBgTemplates
 _0807ACB8: .4byte 0x08C00530
 _0807ACBC: .4byte 0x0201C000
 _0807ACC0: .4byte 0x08C004EC
-_0807ACC4: .4byte gTradeData_0830D27C
+_0807ACC4: .4byte gTradeWindowTemplates
 	thumb_func_end sub_0807ABCC
 
 	thumb_func_start sub_0807ACC8
@@ -13898,7 +13898,7 @@ _0807E06E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807E078: .4byte gTradeData_0830D2A4
+_0807E078: .4byte gTradeSpriteMotionYDeltaTable
 _0807E07C: .4byte 0x0807E085
 _0807E080: .4byte 0x0000FFFF
 	thumb_func_end sub_0807E010
@@ -13950,7 +13950,7 @@ _0807E0D6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807E0DC: .4byte gTradeData_0830D2A4
+_0807E0DC: .4byte gTradeSpriteMotionYDeltaTable
 _0807E0E0: .4byte 0x02031F40
 	thumb_func_end sub_0807E084
 
@@ -14025,7 +14025,7 @@ _0807E164:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807E16C: .4byte gTradeData_0830D2A4
+_0807E16C: .4byte gTradeSpriteMotionYDeltaTable
 _0807E170: .4byte 0x08007141
 	thumb_func_end sub_0807E0E4
 
@@ -15274,7 +15274,7 @@ c3_08054588: @ 0x0807EC48
 	b _0807EC96
 	.align 2, 0
 _0807EC80: .4byte 0x03005B68
-_0807EC84: .4byte gTradeData_0830D310
+_0807EC84: .4byte gTradeWirelessSignalAnimSteps
 _0807EC88: .4byte sWirelessSignalSend_Pal
 _0807EC8C:
 	movs r0, #0x80
@@ -15341,7 +15341,7 @@ _0807ECD0:
 	b _0807ED16
 	.align 2, 0
 _0807ED08: .4byte sWirelessSignalRecv_Pal
-_0807ED0C: .4byte gTradeData_0830D310
+_0807ED0C: .4byte gTradeWirelessSignalAnimSteps
 _0807ED10:
 	ldrh r0, [r4, #2]
 	adds r0, #1

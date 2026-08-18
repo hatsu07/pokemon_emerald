@@ -3471,7 +3471,7 @@ _0813F9E4:
 _0813FA20: .4byte gBattlePointerTable_Rom_5AB3DC
 _0813FA24: .4byte 0x02022AE0
 _0813FA28: .4byte 0x03005B60
-_0813FA2C: .4byte gEvolutionSceneData_0830D28C
+_0813FA2C: .4byte gEvolutionSceneWindowTemplate
 _0813FA30: .4byte 0x02023FD6
 _0813FA34:
 	bl Menu_ProcessInputNoWrapClearOnChoose

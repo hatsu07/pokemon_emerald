@@ -148,8 +148,8 @@ _0807F28C:
 	bl LoadPalette
 	b _0807F39A
 	.align 2, 0
-_0807F2B0: .4byte gBerryBlenderData_0830D374
-_0807F2B4: .4byte gBerryBlenderData_0830D354
+_0807F2B0: .4byte gBerryBlenderCenterTilemap
+_0807F2B4: .4byte gBerryBlenderCenterPalette
 _0807F2B8:
 	ldr r0, [r5]
 	ldr r1, _0807F2DC
@@ -240,7 +240,7 @@ _0807F378:
 	bl LoadPalette
 	b _0807F39A
 	.align 2, 0
-_0807F384: .4byte gBerryBlenderData_0830D774
+_0807F384: .4byte gBerryBlenderOuterPalette
 _0807F388:
 	ldr r0, _0807F3A8
 	bl LoadSpriteSheet
@@ -257,9 +257,9 @@ _0807F39E:
 	strb r0, [r1, #1]
 	b _0807F400
 	.align 2, 0
-_0807F3A8: .4byte gBerryBlenderData_0830F9B0
-_0807F3AC: .4byte gBerryBlenderData_0830FAC8
-_0807F3B0: .4byte gBerryBlenderData_0830FA28
+_0807F3A8: .4byte gBerryBlenderPlayerArrowSpriteSheet
+_0807F3AC: .4byte gBerryBlenderParticlesSpriteSheet
+_0807F3B0: .4byte gBerryBlenderScoreSymbolsSpriteSheet
 _0807F3B4: .4byte 0x02031F44
 _0807F3B8:
 	ldr r0, _0807F3E8
@@ -282,10 +282,10 @@ _0807F3B8:
 	movs r0, #1
 	b _0807F402
 	.align 2, 0
-_0807F3E8: .4byte gBerryBlenderData_0830FB14
-_0807F3EC: .4byte gBerryBlenderData_0830FB48
-_0807F3F0: .4byte gBerryBlenderData_0830F9C0
-_0807F3F4: .4byte gBerryBlenderData_0830F9B8
+_0807F3E8: .4byte gBerryBlenderCountdownNumbersSpriteSheet
+_0807F3EC: .4byte gBerryBlenderStartSpriteSheet
+_0807F3F0: .4byte gBerryBlenderPlayerArrowSpritePalette
+_0807F3F4: .4byte gBerryBlenderMiscSpritePalette
 _0807F3F8: .4byte 0x02031F44
 _0807F3FC: .4byte 0x000011B8
 _0807F400:
