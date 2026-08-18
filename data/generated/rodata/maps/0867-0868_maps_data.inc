@@ -554,22 +554,26 @@ sAnims_Tag272D_08571150_08571124: @ 0x08571124
 	.4byte sAnim_Tag272D_08571150_0_08571118 @ [0]
 
 sBattleAnimData_08571128: @ 0x08571128
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x10; no stronger object type proven
-	.4byte 0x00000000
-	.4byte 0x00000100
-	.4byte 0x00007FFF
-	.4byte 0x00000000
+	@ semanticized v110: canonical static data at 0x08571128, size=0x10
+sAffineAnim_FireBlastUnused_0:
+	.2byte 0x0000, 0x0000
+	.byte 0x00, 0x01
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, 0, 0, 1)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sBattleAnimData_08571138: @ 0x08571138
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x18; no stronger object type proven
-	.4byte 0x00A000A0
-	.4byte 0x00000000
-	.4byte 0x00007FFF
-	.4byte 0x00000000
-	.4byte sBattleAnimData_08571128
-	.4byte sBattleAnimData_08571138
+	@ semanticized v110: canonical static data at 0x08571138, size=0x18
+sAffineAnim_FireBlastUnused_1:
+	.2byte 0x00A0, 0x00A0
+	.byte 0x00, 0x00
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(160, 160, 0, 0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+sAffineAnims_FireBlastUnused: @ 0x08571148
+	.4byte sAffineAnim_FireBlastUnused_0
+	.4byte sAffineAnim_FireBlastUnused_1
 
 sSpriteTemplate_Tag272D_08571150: @ 0x08571150
+gFireBlastCrossSpriteTemplate:
 	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
 	.2byte 0x272D, 0x272D
 	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
@@ -793,15 +797,24 @@ sSpriteTemplate_08571424: @ 0x08571424
 .Lsemantic_range_0857143C:
 	.globl gElectricData_0857143C
 gElectricData_0857143C: @ 0x0857143C
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x20; no stronger object type proven
-	.4byte 0xDCC8C43A
-	.4byte 0x38F0C808
-	.4byte 0x0AC6F63A
-	.4byte 0x38F8EE30
-	.4byte 0xD6C6C810
-	.4byte 0x28D01E3A
-	.4byte 0xF430D00C
-	.4byte 0x303012C8
+	@ semanticized v110: canonical static data at 0x0857143C, size=0x20
+sElectricChargingParticleCoordOffsets:
+	.byte 0x3A, 0xC4 @ {  58, -60 }
+	.byte 0xC8, 0xDC @ { -56, -36 }
+	.byte 0x08, 0xC8 @ {   8, -56 }
+	.byte 0xF0, 0x38 @ { -16,  56 }
+	.byte 0x3A, 0xF6 @ {  58, -10 }
+	.byte 0xC6, 0x0A @ { -58,  10 }
+	.byte 0x30, 0xEE @ {  48, -18 }
+	.byte 0xF8, 0x38 @ {  -8,  56 }
+	.byte 0x10, 0xC8 @ {  16, -56 }
+	.byte 0xC6, 0xD6 @ { -58, -42 }
+	.byte 0x3A, 0x1E @ {  58,  30 }
+	.byte 0xD0, 0x28 @ { -48,  40 }
+	.byte 0x0C, 0xD0 @ {  12, -48 }
+	.byte 0x30, 0xF4 @ {  48, -12 }
+	.byte 0xC8, 0x12 @ { -56,  18 }
+	.byte 0x30, 0x30 @ {  48,  48 }
 
 sAnim_ElectricData_0857148C_0_0857145C: @ 0x0857145C
 	@ union AnimCmd stream
@@ -972,13 +985,16 @@ gElectricData_08571614: @ 0x08571614
 	.4byte 0x0810BD6D @ callback (sub_0810BD6C)
 
 sBattleAnimData_0857162C: @ 0x0857162C
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x10; no stronger object type proven
-	.4byte 0x00450000
-	.4byte 0x00450001
-	.4byte 0x0000FFFE
-	.4byte sBattleAnimData_0857162C
+	@ semanticized v110: canonical static data at 0x0857162C, size=0x10
+sAnim_UnusedIceCrystalThrow:
+	.2byte 0x0000, 0x0045 @ ANIMCMD_FRAME(0, 5, hFlip=TRUE)
+	.2byte 0x0001, 0x0045 @ ANIMCMD_FRAME(1, 5, hFlip=TRUE)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+sAnims_UnusedIceCrystalThrow: @ 0x08571638
+	.4byte sAnim_UnusedIceCrystalThrow
 
 sSpriteTemplate_Tag279D_0857163C: @ 0x0857163C
+sUnusedIceCrystalThrowSpriteTemplate:
 	@ SpriteTemplate: tileTag=0x279D, paletteTag=0x279D
 	.2byte 0x279D, 0x279D
 	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
@@ -988,63 +1004,76 @@ sSpriteTemplate_Tag279D_0857163C: @ 0x0857163C
 	.4byte 0x0810BF15 @ callback (sub_0810BF14)
 
 sBattleAnimData_08571654: @ 0x08571654
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x8; no stronger object type proven
-	.4byte 0x00010000
-	.4byte 0x0000FFFF
+	@ semanticized v110: canonical static data at 0x08571654, size=0x8
+sAnim_IceCrystalLargeChunk:
+	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
 sAnim_Tag279D_085716B4_0_0857165C: @ 0x0857165C
+sAnim_IceCrystalLarge:
 	@ union AnimCmd stream
 	.2byte 0x0004, 0x0001 @ ANIMCMD_FRAME(4, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
 sAnim_Tag279D_085716CC_0_08571664: @ 0x08571664
+sAnim_IceCrystalSmall:
 	@ union AnimCmd stream
 	.2byte 0x0006, 0x0001 @ ANIMCMD_FRAME(6, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
 sAnim_Tag279D_085716CC_1_0857166C: @ 0x0857166C
+sAnim_Snowball:
 	@ union AnimCmd stream
 	.2byte 0x0007, 0x0001 @ ANIMCMD_FRAME(7, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
 sAnim_Tag279D_085716CC_2_08571674: @ 0x08571674
+sAnim_BlizzardIceCrystal:
 	@ union AnimCmd stream
 	.2byte 0x0008, 0x0001 @ ANIMCMD_FRAME(8, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
 sAnim_SmallBubblePair_0_0857167C: @ 0x0857167C
+sAnim_SmallBubblePair:
 	@ union AnimCmd stream
 	.2byte 0x000C, 0x0006 @ ANIMCMD_FRAME(12, 6)
 	.2byte 0x000D, 0x0006 @ ANIMCMD_FRAME(13, 6)
 	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
 
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x4; no stronger object type proven
-	.4byte sBattleAnimData_08571654
+	@ semanticized v110: canonical static data at 0x08571688, size=0x4
+sAnims_IceCrystalLargeChunk:
+	.4byte sAnim_IceCrystalLargeChunk
 
 sAnims_Tag279D_085716B4_0857168C: @ 0x0857168C
+sAnims_IceCrystalLarge:
 	@ AnimCmd pointer table
 	.4byte sAnim_Tag279D_085716B4_0_0857165C @ [0]
 
 sAnims_Tag279D_085716CC_08571690: @ 0x08571690
+sAnims_IceCrystalSmall:
 	@ AnimCmd pointer table
 	.4byte sAnim_Tag279D_085716CC_0_08571664 @ [0]
 	.4byte sAnim_Tag279D_085716CC_1_0857166C @ [1]
 	.4byte sAnim_Tag279D_085716CC_2_08571674 @ [2]
 
 sAnims_SmallBubblePair_0857169C: @ 0x0857169C
+gAnims_SmallBubblePair:
 	@ AnimCmd pointer table
 	.4byte sAnim_SmallBubblePair_0_0857167C @ [0]
 
 sAffineAnim_Tag279D_085716B4_0_085716A0: @ 0x085716A0
+sAffineAnim_IceCrystalSpiralInwardLarge:
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x0128, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
 
 sAffineAnims_Tag279D_085716B4_085716B0: @ 0x085716B0
+sAffineAnims_IceCrystalSpiralInwardLarge:
 	@ AffineAnimCmd pointer table
 	.4byte sAffineAnim_Tag279D_085716B4_0_085716A0 @ [0]
 
 sSpriteTemplate_Tag279D_085716B4: @ 0x085716B4
+gIceCrystalSpiralInwardLarge:
 	@ SpriteTemplate: tileTag=0x279D, paletteTag=0x279D
 	.2byte 0x279D, 0x279D
 	.4byte gOamData_AffineDouble_ObjBlend_8x16 @ oam
@@ -1054,6 +1083,7 @@ sSpriteTemplate_Tag279D_085716B4: @ 0x085716B4
 	.4byte 0x0810C0FD @ callback (AnimIcePunchSwirlingParticle)
 
 sSpriteTemplate_Tag279D_085716CC: @ 0x085716CC
+gIceCrystalSpiralInwardSmall:
 	@ SpriteTemplate: tileTag=0x279D, paletteTag=0x279D
 	.2byte 0x279D, 0x279D
 	.4byte gOamData_AffineOff_ObjBlend_8x8 @ oam
@@ -1063,15 +1093,18 @@ sSpriteTemplate_Tag279D_085716CC: @ 0x085716CC
 	.4byte 0x0810C0FD @ callback (AnimIcePunchSwirlingParticle)
 
 sAffineAnim_Tag279D_085716F8_0_085716E4: @ 0x085716E4
+sAffineAnim_IceBeamInnerCrystal:
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x010A, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
 
 sAffineAnims_Tag279D_085716F8_085716F4: @ 0x085716F4
+sAffineAnims_IceBeamInnerCrystal:
 	@ AffineAnimCmd pointer table
 	.4byte sAffineAnim_Tag279D_085716F8_0_085716E4 @ [0]
 
 sSpriteTemplate_Tag279D_085716F8: @ 0x085716F8
+gIceBeamInnerCrystalSpriteTemplate:
 	@ SpriteTemplate: tileTag=0x279D, paletteTag=0x279D
 	.2byte 0x279D, 0x279D
 	.4byte gOamData_AffineNormal_ObjBlend_8x16 @ oam
@@ -1081,6 +1114,7 @@ sSpriteTemplate_Tag279D_085716F8: @ 0x085716F8
 	.4byte 0x0810C13D @ callback (AnimIceBeamParticle)
 
 sSpriteTemplate_Tag279D_08571710: @ 0x08571710
+gIceBeamOuterCrystalSpriteTemplate:
 	@ SpriteTemplate: tileTag=0x279D, paletteTag=0x279D
 	.2byte 0x279D, 0x279D
 	.4byte gOamData_AffineOff_ObjBlend_8x8 @ oam
@@ -1090,16 +1124,20 @@ sSpriteTemplate_Tag279D_08571710: @ 0x08571710
 	.4byte 0x0810C13D @ callback (AnimIceBeamParticle)
 
 sBattleAnimData_08571728: @ 0x08571728
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x24; no stronger object type proven
-	.4byte 0x00CE00CE
-	.4byte 0x00000000
-	.4byte 0x00050005
-	.4byte 0x00000A00
-	.4byte 0x00000000
-	.4byte 0x00000600
-	.4byte 0x00007FFF
-	.4byte 0x00000000
-	.4byte sBattleAnimData_08571728
+	@ semanticized v110: canonical static data at 0x08571728, size=0x24
+sAffineAnim_IceCrystalHit:
+	.2byte 0x00CE, 0x00CE
+	.byte 0x00, 0x00
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(206, 206, 0, 0)
+	.2byte 0x0005, 0x0005
+	.byte 0x00, 0x0A
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(5, 5, 0, 10)
+	.2byte 0x0000, 0x0000
+	.byte 0x00, 0x06
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, 0, 0, 6)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+sAffineAnims_IceCrystalHit: @ 0x08571748
+	.4byte sAffineAnim_IceCrystalHit
 
 	.if (. - .Lsemantic_range_0857143C) != 0x310
 	.error "semantic range 0x0857143C size mismatch"
@@ -1108,6 +1146,7 @@ sBattleAnimData_08571728: @ 0x08571728
 gIceData_0857174C:
 	.globl gBattleAnimSpriteTemplate_IceEffectParticle
 gBattleAnimSpriteTemplate_IceEffectParticle: @ 0x0857174C
+gIceCrystalHitLargeSpriteTemplate:
 	@ analyzed canonical ROM range 0x0857174C-0x0857183F
 	@ pointer/nullable table
 	.4byte 0x279D279D @ +0x0
@@ -1177,14 +1216,13 @@ gBattleAnimSpriteTemplate_IceEffectParticle: @ 0x0857174C
 .Lsemantic_range_08571840:
 	.globl gIceData_08571840
 gIceData_08571840: @ 0x08571840
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x14; no stronger object type proven
-	.4byte 0x02020100
-	.4byte 0x04030202
-	.4byte 0x06050404
-	.4byte 0x07060606
-	.4byte 0x09080808
+	@ semanticized v110: canonical static data at 0x08571840, size=0x14
+sHazeBlendAmounts:
+	.byte 0, 1, 2, 2, 2, 2, 3, 4, 4, 4
+	.byte 5, 6, 6, 6, 6, 7, 8, 8, 8, 9
 
 sSpriteTemplate_Tag27AB_08571854: @ 0x08571854
+gMistBallSpriteTemplate:
 	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
 	.2byte 0x27AB, 0x27AB
 	.4byte gBattleAnimOam_AffineOff_ObjNormal_16x16 @ oam
@@ -1195,14 +1233,13 @@ sSpriteTemplate_Tag27AB_08571854: @ 0x08571854
 
 	.globl gIceData_0857186C
 gIceData_0857186C: @ 0x0857186C
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x14; no stronger object type proven
-	.4byte 0x01010100
-	.4byte 0x02020201
-	.4byte 0x03030302
-	.4byte 0x04040303
-	.4byte 0x05040404
+	@ semanticized v110: canonical static data at 0x0857186C, size=0x14
+sMistBlendAmounts:
+	.byte 0, 1, 1, 1, 1, 2, 2, 2, 2, 3
+	.byte 3, 3, 3, 3, 4, 4, 4, 4, 4, 5
 
 sSpriteTemplate_Tag27BC_08571880: @ 0x08571880
+gPoisonGasCloudSpriteTemplate:
 	@ SpriteTemplate: tileTag=0x27BC, paletteTag=0x27BC
 	.2byte 0x27BC, 0x27BC
 	.4byte gBattleAnimOam_084FD160 @ oam
@@ -1213,17 +1250,19 @@ sSpriteTemplate_Tag27BC_08571880: @ 0x08571880
 
 	.globl gIceData_08571898
 gIceData_08571898: @ 0x08571898
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x28; no stronger object type proven
-	.4byte 0x2001E064
-	.4byte 0x0001E055
-	.4byte 0x1011E0F2
-	.4byte 0x1021E042
-	.4byte 0x0031E0B6
-	.4byte 0x2001E03C
-	.4byte 0x0011E0D6
-	.4byte 0x1001E071
-	.4byte 0x1031E0D2
-	.4byte 0x0021E026
+	@ semanticized v110: canonical static data at 0x08571898, size=0x28
+sHailCoordData:
+	@ packed HailStruct {x:10, y:10, bPosition:8, type:4}
+	.4byte 0x2001E064 @ x=100, y=120, bPosition=0, type=2
+	.4byte 0x0001E055 @ x=85, y=120, bPosition=0, type=0
+	.4byte 0x1011E0F2 @ x=242, y=120, bPosition=1, type=1
+	.4byte 0x1021E042 @ x=66, y=120, bPosition=2, type=1
+	.4byte 0x0031E0B6 @ x=182, y=120, bPosition=3, type=0
+	.4byte 0x2001E03C @ x=60, y=120, bPosition=0, type=2
+	.4byte 0x0011E0D6 @ x=214, y=120, bPosition=1, type=0
+	.4byte 0x1001E071 @ x=113, y=120, bPosition=0, type=1
+	.4byte 0x1031E0D2 @ x=210, y=120, bPosition=3, type=1
+	.4byte 0x0021E026 @ x=38, y=120, bPosition=2, type=0
 
 sAffineAnim_IceData_08571910_0_085718C0: @ 0x085718C0
 	@ union AffineAnimCmd stream
@@ -2008,18 +2047,23 @@ sSpriteTemplate_Tag27AC_08572074: @ 0x08572074
 	.4byte 0x0810F579 @ callback (sub_0810F578)
 
 sBattleAnimData_0857208C: @ 0x0857208C
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x24; no stronger object type proven
-	.4byte 0x00000100
-	.4byte 0x00000000
-	.4byte 0x00200000
-	.4byte 0x00000C00
-	.4byte 0xFFE00000
-	.4byte 0x00000B00
-	.4byte 0x00007FFF
-	.4byte 0x00000000
-	.4byte sBattleAnimData_0857208C
+	@ semanticized v110: canonical static data at 0x0857208C, size=0x24
+sAffineAnim_UnusedFlyBallStretch:
+	.2byte 0x0100, 0x0000
+	.byte 0x00, 0x00
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(256, 0, 0, 0)
+	.2byte 0x0000, 0x0020
+	.byte 0x00, 0x0C
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, 32, 0, 12)
+	.2byte 0x0000, 0xFFE0
+	.byte 0x00, 0x0B
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, -32, 0, 11)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+sAffineAnims_UnusedFlyBallStretch: @ 0x085720AC
+	.4byte sAffineAnim_UnusedFlyBallStretch
 
 sSpriteTemplate_Tag2820_085720B0: @ 0x085720B0
+gDiveWaterSplashSpriteTemplate:
 	@ SpriteTemplate: tileTag=0x2820, paletteTag=0x2820
 	.2byte 0x2820, 0x2820
 	.4byte gBattleAnimOam_084FD0E8 @ oam
@@ -2239,17 +2283,19 @@ sAnims_Tag276D_08572328_085722F8: @ 0x085722F8
 	.4byte sAnim_Tag276D_08572328_0_085722D8 @ [0]
 
 sBattleAnimData_085722FC: @ 0x085722FC
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x28; no stronger object type proven
-	.4byte 0x00000000
-	.4byte 0x00000404
-	.4byte 0x00000000
-	.4byte 0x000008FC
-	.4byte 0x00000000
-	.4byte 0x00000404
-	.4byte 0x00027FFD
-	.4byte 0x00000000
-	.4byte 0x00007FFF
-	.4byte 0x00000000
+	@ semanticized v110: canonical static data at 0x085722FC, size=0x28
+sAffineAnim_QuestionMark:
+	.2byte 0x0000, 0x0000
+	.byte 0x04, 0x04
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, 0, 4, 4)
+	.2byte 0x0000, 0x0000
+	.byte 0xFC, 0x08
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, 0, -4, 8)
+	.2byte 0x0000, 0x0000
+	.byte 0x04, 0x04
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, 0, 4, 4)
+	.2byte 0x7FFD, 0x0002, 0x0000, 0x0000 @ AFFINEANIMCMD_LOOP(2)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 	.if (. - .Lsemantic_range_08571840) != 0xAE4
 	.error "semantic range 0x08571840 size mismatch"
@@ -2259,10 +2305,12 @@ sBattleAnimData_085722FC: @ 0x085722FC
 .Lsemantic_range_08572324:
 	.globl gPsychicData_08572324
 gPsychicData_08572324: @ 0x08572324
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x4; no stronger object type proven
-	.4byte sBattleAnimData_085722FC
+	@ semanticized v110: canonical static data at 0x08572324, size=0x4
+sAffineAnims_QuestionMark:
+	.4byte sAffineAnim_QuestionMark
 
 sSpriteTemplate_Tag276D_08572328: @ 0x08572328
+gQuestionMarkSpriteTemplate:
 	@ SpriteTemplate: tileTag=0x276D, paletteTag=0x276D
 	.2byte 0x276D, 0x276D
 	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
@@ -2273,25 +2321,30 @@ sSpriteTemplate_Tag276D_08572328: @ 0x08572328
 
 	.globl gPsychicData_08572340
 gPsychicData_08572340: @ 0x08572340
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x20; no stronger object type proven
-	.4byte 0x000AFFF8
-	.4byte 0x00001000
-	.4byte 0xFFEE0012
-	.4byte 0x00001000
-	.4byte 0x0010FFEC
-	.4byte 0x00000800
-	.4byte 0x00007FFF
-	.4byte 0x00000000
+	@ semanticized v110: canonical static data at 0x08572340, size=0x20
+sAffineAnim_MeditateStretchAttacker:
+	.2byte 0xFFF8, 0x000A
+	.byte 0x00, 0x10
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(-8, 10, 0, 16)
+	.2byte 0x0012, 0xFFEE
+	.byte 0x00, 0x10
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(18, -18, 0, 16)
+	.2byte 0xFFEC, 0x0010
+	.byte 0x00, 0x08
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(-20, 16, 0, 8)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 	.globl gPsychicData_08572360
 gPsychicData_08572360: @ 0x08572360
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x18; no stronger object type proven
-	.4byte 0xFFFC0040
-	.4byte 0x00001400
-	.4byte 0x00000000
-	.4byte 0x0000C800
-	.4byte 0x00007FFF
-	.4byte 0x00000000
+	@ semanticized v110: canonical static data at 0x08572360, size=0x18
+sAffineAnim_Teleport:
+	.2byte 0x0040, 0xFFFC
+	.byte 0x00, 0x14
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(64, -4, 0, 20)
+	.2byte 0x0000, 0x0000
+	.byte 0x00, 0xC8
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, 0, 0, -56)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 	.globl gPsychicData_08572378
 gPsychicData_08572378: @ 0x08572378
@@ -2645,9 +2698,12 @@ sSpriteTemplate_Tag2815_08572784: @ 0x08572784
 	.4byte 0x0811169D @ callback (AnimDirtParticleAcrossScreen)
 
 sBattleAnimData_0857279C: @ 0x0857279C
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x8; no stronger object type proven
-	.4byte 0x400900F0
-	.4byte 0x40890010
+	@ semanticized v110: canonical static data at 0x0857279C, size=0x8
+sFlyingSandSubsprites:
+	.byte 0xF0, 0x00
+	.2byte 0x4009 @ x=-16, y=0, 32x16, tileOffset=0, priority=1
+	.byte 0x10, 0x00
+	.2byte 0x4089 @ x=16,  y=0, 32x16, tileOffset=8, priority=1
 
 	.if (. - .Lsemantic_range_08572324) != 0x480
 	.error "semantic range 0x08572324 size mismatch"
@@ -2657,9 +2713,10 @@ sBattleAnimData_0857279C: @ 0x0857279C
 .Lsemantic_range_085727A4:
 	.globl gRockData_085727A4
 gRockData_085727A4: @ 0x085727A4
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x8; no stronger object type proven
-	.4byte 0x00000002
-	.4byte sBattleAnimData_0857279C
+	@ semanticized v110: canonical static data at 0x085727A4, size=0x8
+sFlyingSandSubspriteTable:
+	.byte 2, 0, 0, 0 @ subspriteCount + ABI padding
+	.4byte sFlyingSandSubsprites
 
 sAnim_Tag274A_0857283C_0_085727AC: @ 0x085727AC
 	@ union AnimCmd stream
@@ -2864,12 +2921,14 @@ sSpriteTemplate_Tag27C1_08572970: @ 0x08572970
 	.4byte 0x081123ED @ callback (sub_081123EC)
 
 sBattleAnimData_08572988: @ 0x08572988
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x14; no stronger object type proven
-	.4byte 0x02000200
-	.4byte 0x00000000
-	.4byte 0x00007FFF
-	.4byte 0x00000000
-	.4byte sBattleAnimData_08572988
+	@ semanticized v110: canonical static data at 0x08572988, size=0x14
+sAffineAnim_GhostUnused:
+	.2byte 0x0200, 0x0200
+	.byte 0x00, 0x00
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(512, 512, 0, 0)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+sAffineAnims_GhostUnused: @ 0x08572998
+	.4byte sAffineAnim_GhostUnused
 
 	.if (. - .Lsemantic_range_08572824) != 0x178
 	.error "semantic range 0x08572824 size mismatch"
@@ -3394,42 +3453,50 @@ sSpriteTemplate_Tag0000_08572EBC: @ 0x08572EBC
 	.4byte 0x081168F5 @ callback (sub_081168F4)
 
 sBattleAnimData_08572ED4: @ 0x08572ED4
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x10; no stronger object type proven
-	.4byte 0x00000000
-	.4byte 0x00000800
-	.4byte 0x00007FFF
-	.4byte 0x00000000
+	@ semanticized v110: canonical static data at 0x08572ED4, size=0x10
+sAffineAnim_HitSplat_0:
+	.2byte 0x0000, 0x0000
+	.byte 0x00, 0x08
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, 0, 0, 8)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sBattleAnimData_08572EE4: @ 0x08572EE4
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x18; no stronger object type proven
-	.4byte 0x00D800D8
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000800
-	.4byte 0x00007FFF
-	.4byte 0x00000000
+	@ semanticized v110: canonical static data at 0x08572EE4, size=0x18
+sAffineAnim_HitSplat_1:
+	.2byte 0x00D8, 0x00D8
+	.byte 0x00, 0x00
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(216, 216, 0, 0)
+	.2byte 0x0000, 0x0000
+	.byte 0x00, 0x08
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, 0, 0, 8)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sBattleAnimData_08572EFC: @ 0x08572EFC
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x18; no stronger object type proven
-	.4byte 0x00B000B0
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000800
-	.4byte 0x00007FFF
-	.4byte 0x00000000
+	@ semanticized v110: canonical static data at 0x08572EFC, size=0x18
+sAffineAnim_HitSplat_2:
+	.2byte 0x00B0, 0x00B0
+	.byte 0x00, 0x00
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(176, 176, 0, 0)
+	.2byte 0x0000, 0x0000
+	.byte 0x00, 0x08
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, 0, 0, 8)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sBattleAnimData_08572F14: @ 0x08572F14
-	@ ANALYSIS: STRUCTURED_RESIDUAL size=0x28; no stronger object type proven
-	.4byte 0x00800080
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000800
-	.4byte 0x00007FFF
-	.4byte 0x00000000
-	.4byte sBattleAnimData_08572ED4
-	.4byte sBattleAnimData_08572EE4
-	.4byte sBattleAnimData_08572EFC
-	.4byte sBattleAnimData_08572F14
+	@ semanticized v110: canonical static data at 0x08572F14, size=0x28
+sAffineAnim_HitSplat_3:
+	.2byte 0x0080, 0x0080
+	.byte 0x00, 0x00
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(128, 128, 0, 0)
+	.2byte 0x0000, 0x0000
+	.byte 0x00, 0x08
+	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, 0, 0, 8)
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+sAffineAnims_HitSplat: @ 0x08572F2C
+	.4byte sAffineAnim_HitSplat_0
+	.4byte sAffineAnim_HitSplat_1
+	.4byte sAffineAnim_HitSplat_2
+	.4byte sAffineAnim_HitSplat_3
 
 	.if (. - .Lsemantic_range_0857299C) != 0x5A0
 	.error "semantic range 0x0857299C size mismatch"
@@ -3438,6 +3505,7 @@ sBattleAnimData_08572F14: @ 0x08572F14
 gFightData_08572F3C:
 	.globl gBattleAnimSpriteTemplate_BasicHit
 gBattleAnimSpriteTemplate_BasicHit: @ 0x08572F3C
+gBasicHitSplatSpriteTemplate:
 	@ analyzed canonical ROM range 0x08572F3C-0x08572F6B
 	@ pointer/nullable table
 	.4byte 0x27972797 @ +0x0
