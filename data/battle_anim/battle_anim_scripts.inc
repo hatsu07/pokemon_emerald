@@ -6289,20 +6289,20 @@ Move_NATURE_POWER:
 	ba_monbg ANIM_DEF_PARTNER
 	ba_setalpha 12, 8
 	ba_createsprite 0x08572EBC, ANIM_ATTACKER, 2, 4, 1, 10, 1
-	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, 20, 32, -48, 50, 2
-	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, 0, 32, -38, 25, 5
-	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, 32, 32, -28, 40, 3
-	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, -20, 32, -48, 50, 2
-	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, 20, 32, -28, 60, 1
-	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, 0, 32, -28, 30, 4
+	ba_createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2, 20, 32, -48, 50, 2
+	ba_createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2, 0, 32, -38, 25, 5
+	ba_createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2, 32, 32, -28, 40, 3
+	ba_createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2, -20, 32, -48, 50, 2
+	ba_createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2, 20, 32, -28, 60, 1
+	ba_createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2, 0, 32, -28, 30, 4
 	ba_createvisualtask AnimTask_ShakeMon2, 2, 0, 1, 0, 30, 1
 	ba_playsewithpan 0x00AB, SOUND_PAN_ATTACKER
 	ba_delay 10
-	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, 15, 32, -48, 25, 5
-	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, -10, 32, -42, 30, 4
+	ba_createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2, 15, 32, -48, 25, 5
+	ba_createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2, -10, 32, -42, 30, 4
 	ba_delay 10
-	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, 0, 32, -42, 25, 5
-	ba_createsprite sSpriteTemplate_085727F4, ANIM_ATTACKER, 2, -25, 32, -48, 30, 4
+	ba_createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2, 0, 32, -42, 25, 5
+	ba_createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2, -25, 32, -48, 30, 4
 	ba_waitforvisualfinish
 	ba_createsprite 0x0855A9A0, ANIM_ATTACKER, 2, 0, 16, 0, 0, 4
 	ba_delay 3

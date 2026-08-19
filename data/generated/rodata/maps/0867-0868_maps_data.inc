@@ -1103,19 +1103,28 @@ gIceCrystalHitLargeSpriteTemplate:
 	.4byte AnimIceEffectParticle @ +0x2C
 	.4byte 0x279D279D @ +0x30
 	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x34
-	.4byte 0x08571694 @ +0x38
+	@ Semantic aliases proven against pinned pret/pokeemerald battle_anim_ice.c.
+	@ These .set directives emit no ROM bytes.
+	.set sAnims_Snowball, sAnims_IceCrystalSmall + 0x4
+	.set sAnims_BlizzardIceCrystal, sAnims_IceCrystalSmall + 0x8
+	.set sAnim_IceGroundSpike, gBattleAnimSpriteTemplate_IceEffectParticle + 0x78
+	.set sAnims_IceGroundSpike, gBattleAnimSpriteTemplate_IceEffectParticle + 0x98
+	.set sAnim_Cloud, gBattleAnimSpriteTemplate_IceEffectParticle + 0xB4
+	.set sAnims_Cloud, gBattleAnimSpriteTemplate_IceEffectParticle + 0xC0
+
+	.4byte sAnims_Snowball @ +0x38
 	.4byte 0 @ +0x3C
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte AnimSwirlingSnowball_Step1 @ +0x44
 	.4byte 0x279D279D @ +0x48
 	.4byte gOamData_AffineOff_ObjNormal_16x16 @ +0x4C
-	.4byte 0x08571698 @ +0x50
+	.4byte sAnims_BlizzardIceCrystal @ +0x50
 	.4byte 0 @ +0x54
 	.4byte gDummySpriteAffineAnimTable @ +0x58
 	.4byte AnimMoveParticleBeyondTarget @ +0x5C
 	.4byte 0x279D279D @ +0x60
 	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x64
-	.4byte 0x08571694 @ +0x68
+	.4byte sAnims_Snowball @ +0x68
 	.4byte 0 @ +0x6C
 	.4byte gDummySpriteAffineAnimTable @ +0x70
 	.4byte AnimMoveParticleBeyondTarget @ +0x74
@@ -1127,26 +1136,26 @@ gIceCrystalHitLargeSpriteTemplate:
 	.4byte 0x00050002 @ +0x8C
 	.4byte 0x00050000 @ +0x90
 	.4byte 0x0000FFFF @ +0x94
-	.4byte 0x085717C4 @ +0x98
+	.4byte sAnim_IceGroundSpike @ +0x98
 	.4byte 0x279E279E @ +0x9C
 	.4byte gOamData_AffineOff_ObjBlend_8x16 @ +0xA0
-	.4byte 0x085717E4 @ +0xA4
+	.4byte sAnims_IceGroundSpike @ +0xA4
 	.4byte 0 @ +0xA8
 	.4byte gDummySpriteAffineAnimTable @ +0xAC
 	.4byte AnimWaveFromCenterOfTarget @ +0xB0
 	.4byte 0x00080000 @ +0xB4
 	.4byte 0x00080008 @ +0xB8
 	.4byte 0x0000FFFE @ +0xBC
-	.4byte 0x08571800 @ +0xC0
+	.4byte sAnim_Cloud @ +0xC0
 	.4byte 0x27A027A0 @ +0xC4
 	.4byte gOamData_AffineOff_ObjBlend_32x16 @ +0xC8
-	.4byte 0x0857180C @ +0xCC
+	.4byte sAnims_Cloud @ +0xCC
 	.4byte 0 @ +0xD0
 	.4byte gDummySpriteAffineAnimTable @ +0xD4
 	.4byte InitSwirlingFogAnim @ +0xD8
 	.4byte 0x27BC27BC @ +0xDC
 	.4byte gOamData_AffineOff_ObjBlend_32x16 @ +0xE0
-	.4byte 0x0857180C @ +0xE4
+	.4byte sAnims_Cloud @ +0xE4
 	.4byte 0 @ +0xE8
 	.4byte gDummySpriteAffineAnimTable @ +0xEC
 	.4byte InitSwirlingFogAnim @ +0xF0
@@ -1178,7 +1187,7 @@ gPoisonGasCloudSpriteTemplate:
 	@ SpriteTemplate: tileTag=0x27BC, paletteTag=0x27BC
 	.2byte 0x27BC, 0x27BC
 	.4byte gBattleAnimOam_084FD160 @ oam
-	.4byte 0x0857180C @ anims
+	.4byte sAnims_Cloud @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte InitPoisonGasCloudAnim @ callback
@@ -2620,7 +2629,7 @@ sAnim_Tag274A_085728AC_1_085727D4: @ 0x085727D4
 	.2byte 0x0050, 0x0001 @ ANIMCMD_FRAME(80, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnims_Tag274A_0857283C_085727DC: @ 0x085727DC
+sAnims_BasicRock: @ 0x085727DC
 	@ AnimCmd pointer table
 	.4byte sAnim_Tag274A_0857283C_0_085727AC @ [0]
 	.4byte sAnim_Tag274A_0857283C_1_085727B4 @ [1]
@@ -2641,9 +2650,9 @@ sAnims_Tag274A_085728AC_085727EC: @ 0x085727EC
 	.globl gIntroData_085727F4
 gIntroData_085727F4:
 	@ analyzed canonical ROM range 0x085727F4-0x0857280B
-	.globl sSpriteTemplate_085727F4
-sSpriteTemplate_085727F4: @ 0x085727F4
-	rodata_sprite_template 0x274A, 0x274A, gOamData_AffineOff_ObjNormal_32x32, 0x085727DC, 0, gDummySpriteAffineAnimTable, AnimRaiseSprite
+	.globl gAncientPowerRockSpriteTemplate
+gAncientPowerRockSpriteTemplate: @ 0x085727F4
+	rodata_sprite_template 0x274A, 0x274A, gOamData_AffineOff_ObjNormal_32x32, sAnims_BasicRock, 0, gDummySpriteAffineAnimTable, AnimRaiseSprite
 	@ pret/pokeemerald-jp direct xref for 0x0857280C: rock.s: sub_08111A64
 	.globl gRockData_0857280C
 gRockData_0857280C: @ 0x0857280C
@@ -2668,7 +2677,7 @@ sSpriteTemplate_Tag274A_0857283C: @ 0x0857283C
 	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
 	.2byte 0x274A, 0x274A
 	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
-	.4byte sAnims_Tag274A_0857283C_085727DC @ anims
+	.4byte sAnims_BasicRock @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte 0x08111BD9 @ callback (sub_08111BD8)
@@ -2692,7 +2701,7 @@ sSpriteTemplate_Tag274A_0857287C: @ 0x0857287C
 	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
 	.2byte 0x274A, 0x274A
 	.4byte gBattleAnimOam_AffineOff_ObjNormal_64x64 @ oam
-	.4byte sAnims_Tag274A_0857283C_085727DC @ anims
+	.4byte sAnims_BasicRock @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag274A_0857287C_08572874 @ affineAnims
 	.4byte 0x08111C69 @ callback (sub_08111C68)
@@ -2701,7 +2710,7 @@ sSpriteTemplate_Tag274A_08572894: @ 0x08572894
 	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
 	.2byte 0x274A, 0x274A
 	.4byte gBattleAnimOam_AffineOff_ObjNormal_64x64 @ oam
-	.4byte sAnims_Tag274A_0857283C_085727DC @ anims
+	.4byte sAnims_BasicRock @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag274A_0857287C_08572874 @ affineAnims
 	.4byte 0x08111C95 @ callback (sub_08111C94)
@@ -3553,22 +3562,33 @@ sEasyChatScreenTemplates:
 	@ [01] BATTLE_START
 	.byte 0x01, 0x03, 0x02, 0x01
 	.4byte gText_Rom_5CBBBE
-	.4byte 0x085CB885
-	.4byte 0x085CB89B
+	@ Easy Chat semantic aliases.
+	@ The first two roles match pinned sEasyChatScreenTemplates.
+	@ Keyboard rows are JP-localized; keep neutral JP row names rather than US alphabet names.
+	@ These .set directives emit no ROM bytes.
+	.set gText_CombineSixWordsOrPhrases, gText_Rom_5CB877 + 0xE
+	.set gText_AndMakeAMessage, gText_Rom_5CB88E + 0xD
+	.set gText_EasyChatKeyboard_JPRow0, gText_Rom_5CBC22 + 0x6
+	.set gText_EasyChatKeyboard_JPRow1, gText_Rom_5CBC22 + 0x18
+	.set gText_EasyChatKeyboard_JPRow2, gText_Rom_5CBC22 + 0x28
+	.set gText_EasyChatKeyboard_JPRow3, gText_Rom_5CBC50 + 0x6
+
+	.4byte gText_CombineSixWordsOrPhrases
+	.4byte gText_AndMakeAMessage
 	.4byte gText_Rom_5CB91E
 	.4byte gText_Rom_5CB9B3
 	@ [02] BATTLE_WON
 	.byte 0x02, 0x03, 0x02, 0x01
 	.4byte gText_Rom_5CBBCB
-	.4byte 0x085CB885
-	.4byte 0x085CB89B
+	.4byte gText_CombineSixWordsOrPhrases
+	.4byte gText_AndMakeAMessage
 	.4byte gText_Rom_5CB931
 	.4byte gText_Rom_5CB9B3
 	@ [03] BATTLE_LOST
 	.byte 0x03, 0x03, 0x02, 0x01
 	.4byte gText_Rom_5CBBD7
-	.4byte 0x085CB885
-	.4byte 0x085CB89B
+	.4byte gText_CombineSixWordsOrPhrases
+	.4byte gText_AndMakeAMessage
 	.4byte gText_Rom_5CB944
 	.4byte gText_Rom_5CB9B3
 	@ [04] MAIL
@@ -3901,10 +3921,10 @@ sEasyChatClearControlText: @ 0x085743B4
 	.globl sEasyChatKeyboardRows
 sEasyChatKeyboardRows: @ 0x085743BC
 	@ Four JP-localized keyboard row strings; target labels remain address-derived.
-	.4byte 0x085CBC28
-	.4byte 0x085CBC3A
-	.4byte 0x085CBC4A
-	.4byte 0x085CBC56
+	.4byte gText_EasyChatKeyboard_JPRow0
+	.4byte gText_EasyChatKeyboard_JPRow1
+	.4byte gText_EasyChatKeyboard_JPRow2
+	.4byte gText_EasyChatKeyboard_JPRow3
 	@ pret/pokeemerald-jp direct xref for 0x085743CC: easy_chat.s: sub_0811E6A4
 	.globl sSpriteSheets
 sSpriteSheets: @ 0x085743CC
