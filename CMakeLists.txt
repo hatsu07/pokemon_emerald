@@ -139,7 +139,9 @@ list(APPEND GRAPHICS_RELATIVE_OUTPUTS
     "build/graphics/slot_machine/menu.tilemap.inc"
     "build/graphics/slot_machine/info_box.tilemap.inc"
     "build/graphics/slot_machine/reel_time_window.tilemap.inc"
-    "build/graphics/berry_blender/center_map.tilemap.inc")
+    "build/graphics/berry_blender/center_map.tilemap.inc"
+    "build/graphics/battle_anims/unused/water_gfx.4bpp"
+    "build/graphics/battle_anims/unused/water.tilemap.inc")
 
 list(REMOVE_DUPLICATES GRAPHICS_RELATIVE_OUTPUTS)
 list(SORT GRAPHICS_RELATIVE_OUTPUTS)
@@ -327,6 +329,49 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py"
             VERBATIM)
     # END SLOT MACHINE SEMANTIC TILEMAP PIPELINE
+
+    # BEGIN UNUSED WATER SEMANTIC ASSETS
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/battle_anims/unused/water_gfx.4bpp")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/water_gfx.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/battle_anims/unused/water.tilemap.inc")
+        # data/data.o directly includes this generated ASM, so create it at
+        # configure time. It is not a build OUTPUT and survives clean-first.
+        set(INPUT_CSV
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/water.tilemap.csv")
+        set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
+            "${INPUT_CSV}"
+            "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py")
+        file(MAKE_DIRECTORY "${OUTPUT_DIR}")
+        execute_process(
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py"
+                "${INPUT_CSV}" "${OUTPUT_ABS}"
+                --expected-entries 2048
+            RESULT_VARIABLE UNUSED_WATER_TILEMAP_RESULT
+            OUTPUT_VARIABLE UNUSED_WATER_TILEMAP_STDOUT
+            ERROR_VARIABLE UNUSED_WATER_TILEMAP_STDERR)
+        if(NOT UNUSED_WATER_TILEMAP_RESULT EQUAL 0)
+            message(FATAL_ERROR
+                "Failed to generate unused water tilemap at configure time: "
+                "${UNUSED_WATER_TILEMAP_STDERR}")
+        endif()
+    # END UNUSED WATER SEMANTIC ASSETS
 
     # BEGIN BATTLE TRANSITION EXACT PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES

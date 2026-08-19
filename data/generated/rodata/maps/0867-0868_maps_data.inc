@@ -8,7 +8,7 @@ gRainDropSpriteTemplate: @ 0x08570C04
 	@ SpriteTemplate: tileTag=0x2783, paletteTag=0x2783
 	.2byte 0x2783, 0x2783
 	.4byte gBattleAnimOam_084FD060 @ oam
-	.4byte 0x08570C00 @ anims
+	.4byte sAnims_RainDrop @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte 0x08107A6D @ callback (sub_08107A6C)
