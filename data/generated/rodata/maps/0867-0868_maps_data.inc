@@ -79,7 +79,7 @@ gAuroraBeamRingSpriteTemplate: @ 0x08570C98
 	.4byte 0 @ images
 	.4byte sAffineAnims_AuroraBeamRing @ affineAnims
 	.4byte AnimAuroraBeamRings @ callback
-sAnim_HydroPumpOrb_0_08570CB0: @ 0x08570CB0
+sAnim_WaterMudOrb: @ 0x08570CB0
 	@ union AnimCmd stream
 	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
 	.2byte 0x0004, 0x0001 @ ANIMCMD_FRAME(4, 1)
@@ -87,15 +87,15 @@ sAnim_HydroPumpOrb_0_08570CB0: @ 0x08570CB0
 	.2byte 0x000C, 0x0001 @ ANIMCMD_FRAME(12, 1)
 	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
 
-sAnims_HydroPumpOrb_08570CC4: @ 0x08570CC4
+gAnims_WaterMudOrb: @ 0x08570CC4
 	@ AnimCmd pointer table
-	.4byte sAnim_HydroPumpOrb_0_08570CB0 @ [0]
+	.4byte sAnim_WaterMudOrb @ [0]
 
 gHydroPumpOrbSpriteTemplate: @ 0x08570CC8
 	@ SpriteTemplate: tileTag=0x27A5, paletteTag=0x27A5
 	.2byte 0x27A5, 0x27A5
 	.4byte gOamData_AffineOff_ObjBlend_16x16 @ oam
-	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
+	.4byte gAnims_WaterMudOrb @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimToTargetInSinWave @ callback
@@ -103,7 +103,7 @@ gMudShotOrbSpriteTemplate: @ 0x08570CE0
 	@ SpriteTemplate: tileTag=0x2813, paletteTag=0x2813
 	.2byte 0x2813, 0x2813
 	.4byte gOamData_AffineOff_ObjBlend_16x16 @ oam
-	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
+	.4byte gAnims_WaterMudOrb @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimToTargetInSinWave @ callback
@@ -174,7 +174,7 @@ gHydroCannonChargeSpriteTemplate: @ 0x08570DA4
 	@ SpriteTemplate: tileTag=0x27A5, paletteTag=0x27A5
 	.2byte 0x27A5, 0x27A5
 	.4byte gOamData_AffineDouble_ObjBlend_16x16 @ oam
-	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
+	.4byte gAnims_WaterMudOrb @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_HydroCannonCharge @ affineAnims
 	.4byte AnimHydroCannonCharge @ callback
@@ -182,11 +182,11 @@ gHydroCannonBeamSpriteTemplate: @ 0x08570DBC
 	@ SpriteTemplate: tileTag=0x27A5, paletteTag=0x27A5
 	.2byte 0x27A5, 0x27A5
 	.4byte gOamData_AffineDouble_ObjBlend_16x16 @ oam
-	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
+	.4byte gAnims_WaterMudOrb @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_HydroCannonBeam @ affineAnims
 	.4byte AnimHydroCannonBeam @ callback
-sAnim_WaterGunProjectile_0_08570DD4: @ 0x08570DD4
+sAnim_WaterBubble: @ 0x08570DD4
 	@ union AnimCmd stream
 	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
@@ -196,9 +196,9 @@ sAnim_WaterGunDroplet: @ 0x08570DDC
 	.2byte 0x0004, 0x0001 @ ANIMCMD_FRAME(4, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnims_WaterGunProjectile_08570DE4: @ 0x08570DE4
+gAnims_WaterBubble: @ 0x08570DE4
 	@ AnimCmd pointer table
-	.4byte sAnim_WaterGunProjectile_0_08570DD4 @ [0]
+	.4byte sAnim_WaterBubble @ [0]
 
 sAnims_WaterGunDroplet: @ 0x08570DE8
 	@ AnimCmd pointer table
@@ -208,7 +208,7 @@ gWaterGunProjectileSpriteTemplate: @ 0x08570DEC
 	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
 	.2byte 0x27AB, 0x27AB
 	.4byte gOamData_AffineOff_ObjBlend_16x16 @ oam
-	.4byte sAnims_WaterGunProjectile_08570DE4 @ anims
+	.4byte gAnims_WaterBubble @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimThrowProjectile @ callback
@@ -1765,7 +1765,7 @@ sSpriteTemplate_Tag27AB_08571E3C: @ 0x08571E3C
 	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
 	.2byte 0x27AB, 0x27AB
 	.4byte gBattleAnimOam_AffineOn_ObjBlend_8x8 @ oam
-	.4byte sAnims_WaterGunProjectile_08570DE4 @ anims
+	.4byte gAnims_WaterBubble @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27A6_08571E24_08571E20 @ affineAnims
 	.4byte AnimBubbleEffect @ callback
@@ -2568,7 +2568,7 @@ sSpriteTemplate_Tag27A5_08572754: @ 0x08572754
 	@ SpriteTemplate: tileTag=0x27A5, paletteTag=0x27A5
 	.2byte 0x27A5, 0x27A5
 	.4byte gBattleAnimOam_AffineOn_ObjBlend_8x8 @ oam
-	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
+	.4byte gAnims_WaterMudOrb @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27A5_08572754_08572750 @ affineAnims
 	.4byte AnimParticleInVortex @ callback (AnimParticleInVortex)
