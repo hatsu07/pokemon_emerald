@@ -260,7 +260,7 @@ _080FBB18:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080FBB20: .4byte gFieldSpecialSceneData_0856A47C
+_080FBB20: .4byte sTruckCamera_HorizontalTable
 _080FBB24: .4byte 0x080FBB31
 _080FBB28: .4byte 0x03005AEC
 _080FBB2C: .4byte 0xFFFD0000
@@ -348,7 +348,7 @@ _080FBBC8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080FBBD4: .4byte gFieldSpecialSceneData_0856A47C
+_080FBBD4: .4byte sTruckCamera_HorizontalTable
 _080FBBD8: .4byte 0x03005AEC
 	thumb_func_end Task_Truck3
 
@@ -754,7 +754,7 @@ _080FBF08:
 	ldr r3, _080FBF18
 	b _080FBF22
 	.align 2, 0
-_080FBF18: .4byte gFieldSpecialSceneData_0856A48F
+_080FBF18: .4byte sSSTidalSailEastMovementScript
 _080FBF1C:
 	ldrb r1, [r6, #1]
 	ldrb r2, [r6]
@@ -766,7 +766,7 @@ _080FBF22:
 	strh r0, [r4]
 	b _080FBF52
 	.align 2, 0
-_080FBF30: .4byte gFieldSpecialSceneData_0856A491
+_080FBF30: .4byte sSSTidalSailWestMovementScript
 _080FBF34:
 	ldr r0, _080FBF58
 	bl FlagClear

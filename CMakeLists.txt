@@ -4782,7 +4782,7 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
         # gbagfx metatile dimensions must match the canonical field-effect
         # SpriteFrameImage layout. Assets not listed here use plain tile order.
         if(FIELD_EFFECT_GFX_STEM MATCHES
-                "^(sparkle|ripple|ash|arrow|unused_grass_3|jump_long_grass|unused_grass_frames_1_to_8|unused_grass_2|long_grass|tall_grass|short_grass|sand_footprints|deep_sand_footprints|bike_tire_tracks|unused_sand|jump_big_splash|water_surfacing|ash_puff|ash_launch|small_sparkle)$")
+                "^(sparkle|ripple|ash|arrow|unused_grass_3|jump_long_grass|unused_grass_frames_1_to_8|unused_grass_2|long_grass|tall_grass|short_grass|sand_footprints|deep_sand_footprints|bike_tire_tracks|unused_sand|jump_big_splash|water_surfacing|ash_puff|ash_launch|small_sparkle|secret_power_cave|secret_power_shrub|secret_power_tree)$")
             set(FIELD_EFFECT_GFX_ARGS -mwidth 2 -mheight 2)
         elseif(FIELD_EFFECT_GFX_STEM MATCHES
                 "^(ground_impact_dust|jump_tall_grass|sand_pile|jump_small_splash)$")
@@ -4790,6 +4790,8 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
         elseif(FIELD_EFFECT_GFX_STEM MATCHES
                 "^(tree_disguise|mountain_disguise|sand_disguise_placeholder|bubbles)$")
             set(FIELD_EFFECT_GFX_ARGS -mwidth 2 -mheight 4)
+        elseif(FIELD_EFFECT_GFX_STEM STREQUAL "record_mix_lights")
+            set(FIELD_EFFECT_GFX_ARGS -mwidth 4 -mheight 1)
         elseif(FIELD_EFFECT_GFX_STEM STREQUAL "surf_blob")
             set(FIELD_EFFECT_GFX_ARGS -mwidth 4 -mheight 4)
         endif()

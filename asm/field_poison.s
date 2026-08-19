@@ -821,7 +821,7 @@ _080FA41C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080FA428: .4byte gFieldPoisonData_08569552
+_080FA428: .4byte sGiftRibbonsMonDataIds
 _080FA42C: .4byte 0x03005AEC
 _080FA430: .4byte 0x000031A8
 _080FA434: .4byte 0x02024190

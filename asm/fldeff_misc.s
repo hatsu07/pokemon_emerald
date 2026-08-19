@@ -753,7 +753,7 @@ FldEff_SecretPowerCave: @ 0x080FA9AC
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080FA9EC: .4byte gFldeffMiscData_0856A1E4
+_080FA9EC: .4byte sSpriteTemplate_SecretPowerCave
 _080FA9F0: .4byte 0x020205AC
 _080FA9F4: .4byte 0x02037230
 _080FA9F8: .4byte 0x020388A8
@@ -932,7 +932,7 @@ _080FAB26:
 _080FAB30: .4byte 0x0203A80C
 _080FAB34: .4byte 0x00000FFF
 _080FAB38: .4byte 0x020388A8
-_080FAB3C: .4byte gFldeffMiscData_0856A1FC
+_080FAB3C: .4byte sSpriteTemplate_SecretPowerTree
 _080FAB40: .4byte 0x020205AC
 _080FAB44: .4byte 0x02037230
 	thumb_func_end FldEff_SecretPowerTree
@@ -1087,7 +1087,7 @@ FldEff_SecretPowerShrub: @ 0x080FAC1C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080FAC5C: .4byte gFldeffMiscData_0856A214
+_080FAC5C: .4byte sSpriteTemplate_SecretPowerShrub
 _080FAC60: .4byte 0x020205AC
 _080FAC64: .4byte 0x02037230
 _080FAC68: .4byte 0x020388A8
@@ -1948,7 +1948,7 @@ _080FB336:
 	bl CreateSprite
 	b _080FB3FC
 	.align 2, 0
-_080FB360: .4byte gFldeffMiscData_0856A270
+_080FB360: .4byte sSpriteTemplate_SandPillar
 _080FB364: .4byte 0x020205AC
 _080FB368: .4byte 0x02037230
 _080FB36C:
@@ -1970,7 +1970,7 @@ _080FB36C:
 	ldrb r2, [r2]
 	b _080FB3BC
 	.align 2, 0
-_080FB390: .4byte gFldeffMiscData_0856A270
+_080FB390: .4byte sSpriteTemplate_SandPillar
 _080FB394: .4byte 0x020205AC
 _080FB398: .4byte 0x02037230
 _080FB39C:
@@ -1995,7 +1995,7 @@ _080FB3BC:
 	bl CreateSprite
 	b _080FB3FC
 	.align 2, 0
-_080FB3C4: .4byte gFldeffMiscData_0856A270
+_080FB3C4: .4byte sSpriteTemplate_SandPillar
 _080FB3C8: .4byte 0x020205AC
 _080FB3CC: .4byte 0x02037230
 _080FB3D0: .4byte 0xFFF80000
@@ -2026,7 +2026,7 @@ _080FB3FC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080FB408: .4byte gFldeffMiscData_0856A270
+_080FB408: .4byte sSpriteTemplate_SandPillar
 _080FB40C: .4byte 0x020205AC
 _080FB410: .4byte 0x02037230
 	thumb_func_end FldEff_SandPillar
@@ -2628,8 +2628,8 @@ CreateRecordMixingSprite: @ 0x080FB87C
 	adds r0, r5, #0
 	b _080FB8DE
 	.align 2, 0
-_080FB8D0: .4byte gFldeffMiscData_0856A448
-_080FB8D4: .4byte gFldeffMiscData_0856A464
+_080FB8D0: .4byte sSpritePalette_RecordMixLights
+_080FB8D4: .4byte sSpriteTemplate_RecordMixLights
 _080FB8D8: .4byte 0x020205AC
 _080FB8DC:
 	movs r0, #0x40
@@ -2669,6 +2669,6 @@ _080FB908:
 	bx r0
 	.align 2, 0
 _080FB918: .4byte 0x020205AC
-_080FB91C: .4byte gFldeffMiscData_0856A464
+_080FB91C: .4byte sSpriteTemplate_RecordMixLights
 	thumb_func_end DestroyRecordMixingSprite
 
