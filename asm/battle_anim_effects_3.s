@@ -2162,7 +2162,7 @@ _0815B074:
 	strh r4, [r6, #8]
 	b _0815B16A
 	.align 2, 0
-_0815B08C: .4byte gBattleAnimEffects3Data_0856ECF8
+_0815B08C: .4byte gBattleAnimSpriteTemplate_FingerWag
 _0815B090: .4byte 0x020205AC
 _0815B094: .4byte 0x08007141
 _0815B098: .4byte gBattleAnimEffects3Data_085AD0A8
@@ -2266,7 +2266,7 @@ _0815B146:
 	b _0815B16A
 	.align 2, 0
 _0815B150: .4byte 0x020205AC
-_0815B154: .4byte gBattleAnimEffects3Data_0856ECF8
+_0815B154: .4byte gBattleAnimSpriteTemplate_FingerWag
 _0815B158: .4byte 0x0815B179
 _0815B15C:
 	movs r1, #0x14
