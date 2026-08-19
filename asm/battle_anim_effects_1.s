@@ -8356,8 +8356,8 @@ _0810301A:
 	.align 2, 0
 _0810302C: .4byte 0x02037C74
 _08103030: .4byte 0x020205AC
-_08103034: .4byte gBattleAnimEffects1Data_0856EAA0
-_08103038: .4byte gBattleAnimEffects1Data_0856EAD0
+_08103034: .4byte gBattleAnimSpriteTemplate_MoonlightMoon
+_08103038: .4byte gBattleAnimSpriteTemplate_MoonlightSparkle
 _0810303C:
 	ldrh r0, [r4, #0xa]
 	adds r0, #1
@@ -8964,7 +8964,7 @@ _081034CA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081034E8: .4byte gBattleAnimEffects1Data_0856EC04
+_081034E8: .4byte gMusicNotePaletteVariants
 _081034EC: .4byte 0x020377B4
 	thumb_func_end sub_08103438
 
@@ -8993,7 +8993,7 @@ _081034FA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08103520: .4byte gBattleAnimEffects1Data_0856EC04
+_08103520: .4byte gMusicNotePaletteVariants
 	thumb_func_end sub_081034F0
 
 	thumb_func_start sub_08103524
@@ -9041,7 +9041,7 @@ _08103560:
 	b _0810359E
 	.align 2, 0
 _0810357C: .4byte 0x020380BE
-_08103580: .4byte gBattleAnimEffects1Data_0856EC04
+_08103580: .4byte gMusicNotePaletteVariants
 _08103584:
 	ldr r4, _081035D4
 	ldrb r0, [r4]
@@ -9237,7 +9237,7 @@ _081036F6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081036FC: .4byte gBattleAnimEffects1Data_0856EC04
+_081036FC: .4byte gMusicNotePaletteVariants
 	thumb_func_end sub_08103634
 
 	thumb_func_start sub_08103700
@@ -9489,7 +9489,7 @@ _081038C4:
 	bx r0
 	.align 2, 0
 _081038F0: .4byte 0x020380BE
-_081038F4: .4byte gBattleAnimEffects1Data_0856EC04
+_081038F4: .4byte gMusicNotePaletteVariants
 _081038F8: .4byte 0x0000FFE0
 _081038FC: .4byte 0x08103901
 	thumb_func_end sub_08103878

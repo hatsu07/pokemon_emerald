@@ -1096,23 +1096,23 @@ gSlamImpactSpriteTemplate: @ 0x0856E4B4
 	.globl gVineWhipImpactSpriteTemplate
 gVineWhipImpactSpriteTemplate: @ 0x0856E4CC
 	rodata_sprite_template 0x282F, 0x282F, gOamData_AffineOff_ObjNormal_32x32, gSlamVineWhipAnims, 0, gDummySpriteAffineAnimTable, sub_081012A0
-	.globl gBattleAnimEffects1Anim_0856E4E4
-gBattleAnimEffects1Anim_0856E4E4: @ 0x0856E4E4
+	.globl sAnim_SlidingHit
+sAnim_SlidingHit: @ 0x0856E4E4
 	rodata_anim_frame 0, 4
 	rodata_anim_frame 16, 4
 	rodata_anim_frame 32, 4
 	rodata_anim_frame 48, 4
 	rodata_anim_frame 64, 5
 	rodata_anim_end
-	.globl gBattleAnimEffects1Anims_0856E4FC
-gBattleAnimEffects1Anims_0856E4FC: @ 0x0856E4FC
-	semantic_anim_table_entry gBattleAnimEffects1Anim_0856E4E4
+	.globl sAnims_SlidingHit
+sAnims_SlidingHit: @ 0x0856E4FC
+	semantic_anim_table_entry sAnim_SlidingHit
 	.globl gBattleAnimEffects1SpriteTemplate_2725
 gBattleAnimEffects1SpriteTemplate_2725: @ 0x0856E500
-	rodata_sprite_template 0x2725, 0x2725, gOamData_AffineOff_ObjNormal_32x32, gBattleAnimEffects1Anims_0856E4FC, 0, gDummySpriteAffineAnimTable, sub_08101248
+	rodata_sprite_template 0x2725, 0x2725, gOamData_AffineOff_ObjNormal_32x32, sAnims_SlidingHit, 0, gDummySpriteAffineAnimTable, sub_08101248
 	.globl gBattleAnimEffects1SpriteTemplate_2726
 gBattleAnimEffects1SpriteTemplate_2726: @ 0x0856E518
-	rodata_sprite_template 0x2726, 0x2726, gOamData_AffineOff_ObjNormal_32x32, gBattleAnimEffects1Anims_0856E4FC, 0, gDummySpriteAffineAnimTable, sub_08101248
+	rodata_sprite_template 0x2726, 0x2726, gOamData_AffineOff_ObjNormal_32x32, sAnims_SlidingHit, 0, gDummySpriteAffineAnimTable, sub_08101248
 	.globl gBattleAnimEffects1AffineAnim_Rot00
 gBattleAnimEffects1AffineAnim_Rot00: @ 0x0856E530
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x00, 0x00
@@ -1271,8 +1271,8 @@ gHealingSparkleSpriteTemplate: @ 0x0856E760
 	.globl gAromatherapySparkleSpriteTemplate
 gAromatherapySparkleSpriteTemplate: @ 0x0856E778
 	rodata_sprite_template 0x2741, 0x2741, gOamData_AffineOff_ObjNormal_32x32, gHealingSparkleAnims, 0, gDummySpriteAffineAnimTable, sub_08101BAC
-	.globl gBattleAnimEffects1Anim_0856E790
-gBattleAnimEffects1Anim_0856E790: @ 0x0856E790
+	.globl sAnim_BubbleBurst
+sAnim_BubbleBurst: @ 0x0856E790
 	rodata_anim_frame 0, 10
 	rodata_anim_frame 4, 10
 	rodata_anim_frame 8, 10
@@ -1282,8 +1282,8 @@ gBattleAnimEffects1Anim_0856E790: @ 0x0856E790
 	rodata_anim_frame 20, 5
 	rodata_anim_frame 24, 15
 	rodata_anim_end
-	.globl gBattleAnimEffects1Anim_0856E7B4
-gBattleAnimEffects1Anim_0856E7B4: @ 0x0856E7B4
+	.globl sAnim_BubbleBurst_Flipped
+sAnim_BubbleBurst_Flipped: @ 0x0856E7B4
 	rodata_anim_frame 0, 10, 1
 	rodata_anim_frame 4, 10, 1
 	rodata_anim_frame 8, 10, 1
@@ -1293,13 +1293,13 @@ gBattleAnimEffects1Anim_0856E7B4: @ 0x0856E7B4
 	rodata_anim_frame 20, 5, 1
 	rodata_anim_frame 24, 15, 1
 	rodata_anim_end
-	.globl gBattleAnimEffects1Anims_0856E7D8
-gBattleAnimEffects1Anims_0856E7D8: @ 0x0856E7D8
-	semantic_anim_table_entry gBattleAnimEffects1Anim_0856E790
-	semantic_anim_table_entry gBattleAnimEffects1Anim_0856E7B4
+	.globl sAnims_BubbleBurst
+sAnims_BubbleBurst: @ 0x0856E7D8
+	semantic_anim_table_entry sAnim_BubbleBurst
+	semantic_anim_table_entry sAnim_BubbleBurst_Flipped
 	.globl gBattleAnimEffects1SpriteTemplate_2730
 gBattleAnimEffects1SpriteTemplate_2730: @ 0x0856E7E0
-	rodata_sprite_template 0x2730, 0x2730, gOamData_AffineOff_ObjNormal_16x16, gBattleAnimEffects1Anims_0856E7D8, 0, gDummySpriteAffineAnimTable, sub_08101C90
+	rodata_sprite_template 0x2730, 0x2730, gOamData_AffineOff_ObjNormal_16x16, sAnims_BubbleBurst, 0, gDummySpriteAffineAnimTable, sub_08101C90
 	.globl gSleepZAnim
 gSleepZAnim: @ 0x0856E7F8
 	rodata_anim_frame 0, 40
@@ -1345,8 +1345,8 @@ gLockOnRingOffsets: @ 0x0856E8B4
 	.globl gPhysicalStrikeMovementSpriteTemplate
 gPhysicalStrikeMovementSpriteTemplate: @ 0x0856E8BC
 	rodata_sprite_template 0, 0, gDummyOamData, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08102190
-	.globl gBattleAnimEffects1SpriteTemplate_0856E8D4
-gBattleAnimEffects1SpriteTemplate_0856E8D4: @ 0x0856E8D4
+	.globl sTipMonSpriteTemplate
+sTipMonSpriteTemplate: @ 0x0856E8D4
 	rodata_sprite_template 0, 0, gDummyOamData, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_081023E0
 	.globl gSlashAnim_Sweep
 gSlashAnim_Sweep: @ 0x0856E8EC
@@ -1459,8 +1459,6 @@ gConversion2Anims: @ 0x0856EA84
 gConversion2SpriteTemplate: @ 0x0856EA88
 	rodata_sprite_template 0x2722, 0x2722, gOamData_AffineDouble_ObjBlend_8x8, gConversion2Anims, 0, gConversionAffineAnims, sub_08102B9C
 	@ pret/pokeemerald-jp direct xref for 0x0856EAA0: battle_anim_effects_1.s: sub_08102EF8
-	.globl gBattleAnimEffects1Data_0856EAA0
-gBattleAnimEffects1Data_0856EAA0:
 	.globl gBattleAnimSpriteTemplate_MoonlightMoon
 gBattleAnimSpriteTemplate_MoonlightMoon: @ 0x0856EAA0
 	rodata_sprite_template 0x27D2, 0x27D2, gOamData_AffineOff_ObjBlend_64x64, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08102D30
@@ -1475,13 +1473,9 @@ gMoonlightSparkleAnim: @ 0x0856EAB8
 gMoonlightSparkleAnims: @ 0x0856EACC
 	semantic_anim_table_entry gMoonlightSparkleAnim
 	@ pret/pokeemerald-jp direct xref for 0x0856EAD0: battle_anim_effects_1.s: sub_08102EF8
-	.globl gBattleAnimEffects1Data_0856EAD0
-gBattleAnimEffects1Data_0856EAD0:
 	.globl gBattleAnimSpriteTemplate_MoonlightSparkle
 gBattleAnimSpriteTemplate_MoonlightSparkle: @ 0x0856EAD0
 	rodata_sprite_template 0x27D3, 0x27D3, gOamData_AffineOff_ObjNormal_16x16, gMoonlightSparkleAnims, 0, gDummySpriteAffineAnimTable, sub_08102D90
-	.globl gBattleAnimEffects1Data_0856EAE8
-gBattleAnimEffects1Data_0856EAE8: @ 0x0856EAE8
 	.globl gHealingSparkleAnim_Tag272F
 gHealingSparkleAnim_Tag272F: @ 0x0856EAE8
 	rodata_anim_frame 0, 2
@@ -1502,8 +1496,6 @@ gHealingSparkleSpriteTemplate_Tag272F: @ 0x0856EB10
 	.globl gHornHitSpriteTemplate
 gHornHitSpriteTemplate: @ 0x0856EB28
 	rodata_sprite_template 0x2724, 0x2724, gOamData_AffineOff_ObjNormal_32x32, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08103094
-	.globl gBattleAnimEffects1Data_0856EB40
-gBattleAnimEffects1Data_0856EB40: @ 0x0856EB40
 	.globl gSuperFangAnim
 gSuperFangAnim: @ 0x0856EB40
 	rodata_anim_frame 0, 2
@@ -1517,8 +1509,6 @@ gSuperFangAnims: @ 0x0856EB54
 	.globl gSuperFangSpriteTemplate
 gSuperFangSpriteTemplate: @ 0x0856EB58
 	rodata_sprite_template 0x27D0, 0x27D0, gOamData_AffineOff_ObjNormal_32x32, gSuperFangAnims, 0, gDummySpriteAffineAnimTable, sub_0810341C
-	.globl gBattleAnimEffects1Data_0856EB70
-gBattleAnimEffects1Data_0856EB70: @ 0x0856EB70
 	.globl gSingMusicNoteAnim_0
 gSingMusicNoteAnim_0: @ 0x0856EB70
 	rodata_anim_frame 0, 10
@@ -1573,8 +1563,6 @@ gSingMusicNoteAffineAnims: @ 0x0856EBE8
 gSingMusicNoteSpriteTemplate: @ 0x0856EBEC
 	rodata_sprite_template 0x2758, 0x2758, gOamData_AffineDouble_ObjNormal_16x16, gSingMusicNoteAnims, 0, gSingMusicNoteAffineAnims, sub_08103524
 	@ pret/pokeemerald-jp direct xref for 0x0856EC04: battle_anim_effects_1.s: sub_08103438, sub_081034F0, sub_08103524, sub_08103634, sub_08103878
-	.globl gBattleAnimEffects1Data_0856EC04
-gBattleAnimEffects1Data_0856EC04: @ 0x0856EC04
 	.globl gMusicNotePaletteVariants
 gMusicNotePaletteVariants: @ 0x0856EC04
 	.2byte 0x2758, 0x7FFF, 0x735F, 0x6ADF, 0x623F, 0x59BF
