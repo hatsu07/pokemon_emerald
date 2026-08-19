@@ -957,7 +957,7 @@ gElectricData_08571614: @ 0x08571614
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x0810BD6D @ callback (sub_0810BD6C)
+	.4byte AnimShockWaveProgressingBolt @ callback (AnimShockWaveProgressingBolt)
 
 	@ semanticized v110: canonical static data at 0x0857162C, size=0x10
 sAnim_UnusedIceCrystalThrow:
@@ -3024,7 +3024,7 @@ sSpriteTemplate_Tag272D_08572B94: @ 0x08572B94
 	.4byte sAnims_Tag272D_08572A60_08572A5C @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08113E3D @ callback (sub_08113E3C)
+	.4byte AnimOverheatFlame @ callback (AnimOverheatFlame)
 
 sSpriteTemplate_Tag271F_08572BAC: @ 0x08572BAC
 	@ SpriteTemplate: tileTag=0x271F, paletteTag=0x271F
@@ -3314,7 +3314,7 @@ sSpriteTemplate_Tag0000_08572EBC: @ 0x08572EBC
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x081168F5 @ callback (sub_081168F4)
+	.4byte AnimShakeMonOrBattlePlatforms @ callback (AnimShakeMonOrBattlePlatforms)
 
 	@ semanticized v110: canonical static data at 0x08572ED4, size=0x10
 sAffineAnim_HitSplat_0:

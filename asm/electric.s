@@ -2543,8 +2543,8 @@ _0810BD64:
 	.align 2, 0
 	thumb_func_end sub_0810BC80
 
-	thumb_func_start sub_0810BD6C
-sub_0810BD6C: @ 0x0810BD6C
+	thumb_func_start AnimShockWaveProgressingBolt
+AnimShockWaveProgressingBolt: @ 0x0810BD6C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrh r0, [r4, #0x2e]
@@ -2577,7 +2577,7 @@ _0810BDA2:
 	bx r0
 	.align 2, 0
 _0810BDA8: .4byte 0x03005B60
-	thumb_func_end sub_0810BD6C
+	thumb_func_end AnimShockWaveProgressingBolt
 
 	thumb_func_start sub_0810BDAC
 sub_0810BDAC: @ 0x0810BDAC

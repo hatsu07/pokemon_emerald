@@ -1260,8 +1260,8 @@ _081168EC: .4byte 0x020205AC
 _081168F0: .4byte 0x03005AD0
 	thumb_func_end sub_081167E4
 
-	thumb_func_start sub_081168F4
-sub_081168F4: @ 0x081168F4
+	thumb_func_start AnimShakeMonOrBattlePlatforms
+AnimShakeMonOrBattlePlatforms: @ 0x081168F4
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r2, r4, #0
@@ -1344,7 +1344,7 @@ _08116980:
 _0811698C: .4byte 0x02021B3A
 _08116990: .4byte 0x020380BE
 _08116994: .4byte 0x08116999
-	thumb_func_end sub_081168F4
+	thumb_func_end AnimShakeMonOrBattlePlatforms
 
 	thumb_func_start sub_08116998
 sub_08116998: @ 0x08116998

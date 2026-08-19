@@ -793,8 +793,8 @@ _08113E34: .4byte 0x082FA8CC
 _08113E38: .4byte 0x020397C8
 	thumb_func_end sub_08113DC4
 
-	thumb_func_start sub_08113E3C
-sub_08113E3C: @ 0x08113E3C
+	thumb_func_start AnimOverheatFlame
+AnimOverheatFlame: @ 0x08113E3C
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -876,5 +876,5 @@ _08113EDC: .4byte 0x020380BE
 _08113EE0: .4byte 0x020380D6
 _08113EE4: .4byte 0x08113EED
 _08113EE8: .4byte 0x02039DCC
-	thumb_func_end sub_08113E3C
+	thumb_func_end AnimOverheatFlame
 
