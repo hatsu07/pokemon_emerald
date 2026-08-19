@@ -1768,8 +1768,6 @@ gSwordsDanceBladeSpriteTemplate: @ 0x0856EF64
 gSonicBoomProjectileSpriteTemplate: @ 0x0856EF7C
 	rodata_sprite_template 0x2713, 0x2713, gOamData_AffineDouble_ObjBlend_32x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, AnimSonicBoomProjectile
 	@ pret/pokeemerald-jp direct xref for 0x0856EF94: battle_anim_effects_2.s: sub_0810445C
-	.globl gBattleAnimEffects2Data_0856EF94
-gBattleAnimEffects2Data_0856EF94: @ 0x0856EF94
 	.globl gAirCutterProjectileSpriteTemplate
 gAirCutterProjectileSpriteTemplate: @ 0x0856EF94
 	rodata_sprite_template 0x2713, 0x2713, gOamData_AffineOff_ObjBlend_32x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_081042F4
@@ -1810,31 +1808,29 @@ gWaterPulseRingSpriteTemplate: @ 0x0856F054
 gEggBombProjectileSpriteTemplate: @ 0x0856F06C
 	rodata_sprite_template 0x27BF, 0x27BF, gOamData_AffineOff_ObjNormal_16x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_080A7174
 	@ pret/pokeemerald-jp direct xref for 0x0856F084: battle_anim_effects_2.s: sub_08104838
-	.globl gBattleAnimEffects2Data_0856F084
-gBattleAnimEffects2Data_0856F084: @ 0x0856F084
-	.globl gBattleAnimEffects2SpriteTemplate_Tag27C2
-gBattleAnimEffects2SpriteTemplate_Tag27C2: @ 0x0856F084
+	.globl sVoidLinesSpriteTemplate
+sVoidLinesSpriteTemplate: @ 0x0856F084
 	rodata_sprite_template 0x27C2, 0x27C2, gOamData_AffineOff_ObjBlend_64x64, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08104838
-	.globl gBattleAnimEffects2Anim_0856F09C
-gBattleAnimEffects2Anim_0856F09C: @ 0x0856F09C
+	.globl gCoinAnimCmds
+gCoinAnimCmds: @ 0x0856F09C
 	rodata_anim_frame 8, 1
 	rodata_anim_end
-	.globl gBattleAnimEffects2Anims_0856F0A4
-gBattleAnimEffects2Anims_0856F0A4: @ 0x0856F0A4
-	semantic_anim_table_entry gBattleAnimEffects2Anim_0856F09C
-	.globl gBattleAnimEffects2AffineAnim_0856F0A8
-gBattleAnimEffects2AffineAnim_0856F0A8: @ 0x0856F0A8
+	.globl gCoinAnimTable
+gCoinAnimTable: @ 0x0856F0A4
+	semantic_anim_table_entry gCoinAnimCmds
+	.globl gFallingCoinAffineAnimCmds
+gFallingCoinAffineAnimCmds: @ 0x0856F0A8
 	rodata_affine_anim_frame 0, 0, 0x010A, 0
 	semantic_affine_animcmd_jump 0
-	.globl gBattleAnimEffects2AffineAnims_0856F0B8
-gBattleAnimEffects2AffineAnims_0856F0B8: @ 0x0856F0B8
-	semantic_affine_anim_table_entry gBattleAnimEffects2AffineAnim_0856F0A8
-	.globl gBattleAnimEffects2SpriteTemplate_Tag2774
-gBattleAnimEffects2SpriteTemplate_Tag2774: @ 0x0856F0BC
-	rodata_sprite_template 0x2774, 0x2774, gOamData_AffineNormal_ObjNormal_16x16, gBattleAnimEffects2Anims_0856F0A4, 0, gDummySpriteAffineAnimTable, sub_081048D8
-	.globl gBattleAnimEffects2SpriteTemplate_Tag2774_Alt
-gBattleAnimEffects2SpriteTemplate_Tag2774_Alt: @ 0x0856F0D4
-	rodata_sprite_template 0x2774, 0x2774, gOamData_AffineNormal_ObjNormal_16x16, gBattleAnimEffects2Anims_0856F0A4, 0, gBattleAnimEffects2AffineAnims_0856F0B8, sub_0810498C
+	.globl gFallingCoinAffineAnimTable
+gFallingCoinAffineAnimTable: @ 0x0856F0B8
+	semantic_affine_anim_table_entry gFallingCoinAffineAnimCmds
+	.globl gCoinThrowSpriteTemplate
+gCoinThrowSpriteTemplate: @ 0x0856F0BC
+	rodata_sprite_template 0x2774, 0x2774, gOamData_AffineNormal_ObjNormal_16x16, gCoinAnimTable, 0, gDummySpriteAffineAnimTable, sub_081048D8
+	.globl gFallingCoinSpriteTemplate
+gFallingCoinSpriteTemplate: @ 0x0856F0D4
+	rodata_sprite_template 0x2774, 0x2774, gOamData_AffineNormal_ObjNormal_16x16, gCoinAnimTable, 0, gFallingCoinAffineAnimTable, sub_0810498C
 	.globl gBulletSeedAffineAnim
 gBulletSeedAffineAnim: @ 0x0856F0EC
 	rodata_affine_anim_frame 0, 0, 0x0114, 0
@@ -1895,8 +1891,6 @@ gGuillotinePincerAnims: @ 0x0856F1AC
 gGuillotinePincerSpriteTemplate: @ 0x0856F1B4
 	rodata_sprite_template 0x279A, 0x279A, gOamData_AffineOff_ObjBlend_32x32, gGuillotinePincerAnims, 0, gDummySpriteAffineAnimTable, Anim_GuillotinePincer
 	@ pret/pokeemerald-jp direct xref for 0x0856F1CC: battle_anim_effects_2.s: AnimTask_Splash, AnimTask_SplashStep
-	.globl gBattleAnimEffects2Data_0856F1CC
-gBattleAnimEffects2Data_0856F1CC: @ 0x0856F1CC
 	.globl gSplashAffineAnim
 gSplashAffineAnim: @ 0x0856F1CC
 	rodata_affine_anim_frame -6, 4, 0x0800, 0
@@ -1904,8 +1898,6 @@ gSplashAffineAnim: @ 0x0856F1CC
 	rodata_affine_anim_frame -4, 6, 0x0800, 0
 	rodata_affine_anim_end
 	@ pret/pokeemerald-jp direct xref for 0x0856F1EC: battle_anim_effects_2.s: sub_08105304
-	.globl gBattleAnimEffects2Data_0856F1EC
-gBattleAnimEffects2Data_0856F1EC: @ 0x0856F1EC
 	.globl gSwaggerBulkUpAffineAnim
 gSwaggerBulkUpAffineAnim: @ 0x0856F1EC
 	rodata_affine_anim_frame -4, -5, 0x0C00, 0
@@ -1945,8 +1937,6 @@ gAngerMarkAffineAnims: @ 0x0856F26C
 gAngerMarkSpriteTemplate: @ 0x0856F270
 	rodata_sprite_template 0x2767, 0x2767, gOamData_AffineNormal_ObjNormal_16x16, gDummySpriteAnimTable, 0, gAngerMarkAffineAnims, Anim_AngerMark
 	@ pret/pokeemerald-jp direct xref for 0x0856F288: battle_anim_effects_2.s: sub_08105488
-	.globl gBattleAnimEffects2Data_0856F288
-gBattleAnimEffects2Data_0856F288: @ 0x0856F288
 	.globl gGrowAndShrinkAffineAnim
 gGrowAndShrinkAffineAnim: @ 0x0856F288
 	rodata_affine_anim_frame -10, 9, 0x0700, 0
@@ -1958,36 +1948,34 @@ gGrowAndShrinkAffineAnim: @ 0x0856F288
 	.globl gSketchSpriteTemplate
 gSketchSpriteTemplate: @ 0x0856F2B8
 	rodata_sprite_template 0x2712, 0x2712, gOamData_AffineOff_ObjNormal_32x32, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_0810586C
-	.globl gBattleAnimEffects2SpriteTemplate_Tag27D5
-gBattleAnimEffects2SpriteTemplate_Tag27D5: @ 0x0856F2D0
+	.globl gSnoreZSpriteTemplate
+gSnoreZSpriteTemplate: @ 0x0856F2D0
 	rodata_sprite_template 0x27D5, 0x27D5, gOamData_AffineOff_ObjNormal_32x32, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_080A7200
-	.globl gBattleAnimEffects2Anim_0856F2E8
-gBattleAnimEffects2Anim_0856F2E8: @ 0x0856F2E8
+	.globl gExplosionAnimCmds
+gExplosionAnimCmds: @ 0x0856F2E8
 	rodata_anim_frame 0, 5
 	rodata_anim_frame 16, 5
 	rodata_anim_frame 32, 5
 	rodata_anim_frame 48, 5
 	rodata_anim_end
-	.globl gBattleAnimEffects2Anims_0856F2FC
-gBattleAnimEffects2Anims_0856F2FC: @ 0x0856F2FC
-	semantic_anim_table_entry gBattleAnimEffects2Anim_0856F2E8
-	.globl gBattleAnimEffects2SpriteTemplate_Tag27D6
-gBattleAnimEffects2SpriteTemplate_Tag27D6: @ 0x0856F300
-	rodata_sprite_template 0x27D6, 0x27D6, gOamData_AffineOff_ObjNormal_32x32, gBattleAnimEffects2Anims_0856F2FC, 0, gDummySpriteAffineAnimTable, sub_080A7090
-	.globl gBattleAnimEffects2Data_0856F318
-gBattleAnimEffects2Data_0856F318: @ 0x0856F318
-	.globl gBattleAnimEffects2AffineAnim_0856F318
-gBattleAnimEffects2AffineAnim_0856F318: @ 0x0856F318
+	.globl gExplosionAnimTable
+gExplosionAnimTable: @ 0x0856F2FC
+	semantic_anim_table_entry gExplosionAnimCmds
+	.globl gExplosionSpriteTemplate
+gExplosionSpriteTemplate: @ 0x0856F300
+	rodata_sprite_template 0x27D6, 0x27D6, gOamData_AffineOff_ObjNormal_32x32, gExplosionAnimTable, 0, gDummySpriteAffineAnimTable, sub_080A7090
+	.globl gSoftBoiledEggAffineAnimCmds1
+gSoftBoiledEggAffineAnimCmds1: @ 0x0856F318
 	rodata_affine_anim_frame 0, 0, 0x02F8, 0
 	rodata_affine_anim_frame 0, 0, 0x0408, 0
 	rodata_affine_anim_frame 0, 0, 0x02F8, 0
 	semantic_affine_animcmd_jump 0
-	.globl gBattleAnimEffects2AffineAnim_0856F338
-gBattleAnimEffects2AffineAnim_0856F338: @ 0x0856F338
+	.globl gSoftBoiledEggAffineAnimCmds2
+gSoftBoiledEggAffineAnimCmds2: @ 0x0856F338
 	rodata_affine_anim_frame 0x100, 0x100, 0, 0
 	rodata_affine_anim_end
-	.globl gBattleAnimEffects2AffineAnim_0856F348
-gBattleAnimEffects2AffineAnim_0856F348: @ 0x0856F348
+	.globl gSoftBoiledEggAffineAnimCmds3
+gSoftBoiledEggAffineAnimCmds3: @ 0x0856F348
 	rodata_affine_anim_frame -8, 4, 0x0800, 0
 	semantic_affine_animcmd_loop 0
 	rodata_affine_anim_frame 16, -8, 0x0800, 0
@@ -1998,60 +1986,58 @@ gBattleAnimEffects2AffineAnim_0856F348: @ 0x0856F348
 	rodata_affine_anim_end
 	.globl gSoftBoiledEggAffineAnims
 gSoftBoiledEggAffineAnims: @ 0x0856F388
-	semantic_affine_anim_table_entry gBattleAnimEffects2AffineAnim_0856F318
-	semantic_affine_anim_table_entry gBattleAnimEffects2AffineAnim_0856F338
-	semantic_affine_anim_table_entry gBattleAnimEffects2AffineAnim_0856F348
+	semantic_affine_anim_table_entry gSoftBoiledEggAffineAnimCmds1
+	semantic_affine_anim_table_entry gSoftBoiledEggAffineAnimCmds2
+	semantic_affine_anim_table_entry gSoftBoiledEggAffineAnimCmds3
 	.globl gSoftBoiledEggSpriteTemplate
 gSoftBoiledEggSpriteTemplate: @ 0x0856F394
 	rodata_sprite_template 0x27DA, 0x27DA, gOamData_AffineDouble_ObjBlend_32x32, gDummySpriteAnimTable, 0, gSoftBoiledEggAffineAnims, sub_08105D88
-	.globl gBattleAnimEffects2AffineAnim_0856F3AC
-gBattleAnimEffects2AffineAnim_0856F3AC: @ 0x0856F3AC
+	.globl gThinRingExpandingAffineAnimCmds1
+gThinRingExpandingAffineAnimCmds1: @ 0x0856F3AC
 	rodata_affine_anim_frame 0x10, 0x10, 0, 0
 	rodata_affine_anim_frame 0x10, 0x10, 0x1E00, 0
 	.2byte 0x7FFF, 1, 0, 0
-	.globl gBattleAnimEffects2AffineAnim_0856F3C4
-gBattleAnimEffects2AffineAnim_0856F3C4: @ 0x0856F3C4
+	.globl gThinRingExpandingAffineAnimCmds2
+gThinRingExpandingAffineAnimCmds2: @ 0x0856F3C4
 	rodata_affine_anim_frame 0x10, 0x10, 0, 0
 	rodata_affine_anim_frame 0x20, 0x20, 0x0F00, 0
 	.2byte 0x7FFF, 1, 0, 0
-	.globl gBattleAnimEffects2AffineAnim_0856F3DC
-gBattleAnimEffects2AffineAnim_0856F3DC: @ 0x0856F3DC
+	.globl gHyperVoiceRingAffineAnimCmds
+gHyperVoiceRingAffineAnimCmds: @ 0x0856F3DC
 	rodata_affine_anim_frame 0x10, 0x10, 0, 0
 	rodata_affine_anim_frame 11, 11, 0x2D00, 0
 	.2byte 0x7FFF, 1, 0, 0
-	.globl gBattleAnimEffects2AffineAnims_0856F3F4
-gBattleAnimEffects2AffineAnims_0856F3F4: @ 0x0856F3F4
-	semantic_affine_anim_table_entry gBattleAnimEffects2AffineAnim_0856F3AC
-	semantic_affine_anim_table_entry gBattleAnimEffects2AffineAnim_0856F3C4
-	.globl gBattleAnimEffects2AffineAnims_0856F3FC
-gBattleAnimEffects2AffineAnims_0856F3FC: @ 0x0856F3FC
-	semantic_affine_anim_table_entry gBattleAnimEffects2AffineAnim_0856F3DC
-	.globl gBattleAnimEffects2SpriteTemplate_Tag27DB
-gBattleAnimEffects2SpriteTemplate_Tag27DB: @ 0x0856F400
-	rodata_sprite_template 0x27DB, 0x27DB, gOamData_AffineDouble_ObjNormal_64x64, gDummySpriteAnimTable, 0, gBattleAnimEffects2AffineAnims_0856F3F4, sub_080A7090
-	.globl gBattleAnimEffects2AffineAnim_0856F418
-gBattleAnimEffects2AffineAnim_0856F418: @ 0x0856F418
+	.globl gThinRingExpandingAffineAnimTable
+gThinRingExpandingAffineAnimTable: @ 0x0856F3F4
+	semantic_affine_anim_table_entry gThinRingExpandingAffineAnimCmds1
+	semantic_affine_anim_table_entry gThinRingExpandingAffineAnimCmds2
+	.globl gHyperVoiceRingAffineAnimTable
+gHyperVoiceRingAffineAnimTable: @ 0x0856F3FC
+	semantic_affine_anim_table_entry gHyperVoiceRingAffineAnimCmds
+	.globl gThinRingExpandingSpriteTemplate
+gThinRingExpandingSpriteTemplate: @ 0x0856F400
+	rodata_sprite_template 0x27DB, 0x27DB, gOamData_AffineDouble_ObjNormal_64x64, gDummySpriteAnimTable, 0, gThinRingExpandingAffineAnimTable, sub_080A7090
+	.globl gThinRingShrinkingAffineAnimCmds
+gThinRingShrinkingAffineAnimCmds: @ 0x0856F418
 	rodata_affine_anim_frame 0x200, 0x200, 0, 0
 	rodata_affine_anim_frame -16, -16, 0x1E00, 0
 	.2byte 0x7FFF, 1, 0, 0
-	.globl gBattleAnimEffects2AffineAnims_0856F430
-gBattleAnimEffects2AffineAnims_0856F430: @ 0x0856F430
-	semantic_affine_anim_table_entry gBattleAnimEffects2AffineAnim_0856F418
-	.globl gBattleAnimEffects2SpriteTemplate_Tag27DB_F430
-gBattleAnimEffects2SpriteTemplate_Tag27DB_F430: @ 0x0856F434
-	rodata_sprite_template 0x27DB, 0x27DB, gOamData_AffineDouble_ObjBlend_64x64, gDummySpriteAnimTable, 0, gBattleAnimEffects2AffineAnims_0856F430, sub_080A7090
-	.globl gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105A14
-gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105A14: @ 0x0856F44C
-	rodata_sprite_template 0x27DB, 0x27DB, gOamData_AffineDouble_ObjBlend_64x64, gDummySpriteAnimTable, 0, gBattleAnimEffects2AffineAnims_0856F3F4, sub_08105A14
-	.globl gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105AF4
-gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105AF4: @ 0x0856F464
-	rodata_sprite_template 0x27DB, 0x27DB, gOamData_AffineDouble_ObjBlend_64x64, gDummySpriteAnimTable, 0, gBattleAnimEffects2AffineAnims_0856F3FC, sub_08105AF4
-	.globl gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105D38
-gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105D38: @ 0x0856F47C
-	rodata_sprite_template 0x27DB, 0x27DB, gOamData_AffineDouble_ObjBlend_64x64, gDummySpriteAnimTable, 0, gBattleAnimEffects2AffineAnims_0856F3F4, sub_08105D38
+	.globl gThinRingShrinkingAffineAnimTable
+gThinRingShrinkingAffineAnimTable: @ 0x0856F430
+	semantic_affine_anim_table_entry gThinRingShrinkingAffineAnimCmds
+	.globl gThinRingShrinkingSpriteTemplate
+gThinRingShrinkingSpriteTemplate: @ 0x0856F434
+	rodata_sprite_template 0x27DB, 0x27DB, gOamData_AffineDouble_ObjBlend_64x64, gDummySpriteAnimTable, 0, gThinRingShrinkingAffineAnimTable, sub_080A7090
+	.globl gBlendThinRingExpandingSpriteTemplate
+gBlendThinRingExpandingSpriteTemplate: @ 0x0856F44C
+	rodata_sprite_template 0x27DB, 0x27DB, gOamData_AffineDouble_ObjBlend_64x64, gDummySpriteAnimTable, 0, gThinRingExpandingAffineAnimTable, sub_08105A14
+	.globl gHyperVoiceRingSpriteTemplate
+gHyperVoiceRingSpriteTemplate: @ 0x0856F464
+	rodata_sprite_template 0x27DB, 0x27DB, gOamData_AffineDouble_ObjBlend_64x64, gDummySpriteAnimTable, 0, gHyperVoiceRingAffineAnimTable, sub_08105AF4
+	.globl gUproarRingSpriteTemplate
+gUproarRingSpriteTemplate: @ 0x0856F47C
+	rodata_sprite_template 0x27DB, 0x27DB, gOamData_AffineDouble_ObjBlend_64x64, gDummySpriteAnimTable, 0, gThinRingExpandingAffineAnimTable, sub_08105D38
 	@ pret/pokeemerald-jp direct xref for 0x0856F494: battle_anim_effects_2.s: sub_08105FCC
-	.globl gBattleAnimEffects2Data_0856F494
-gBattleAnimEffects2Data_0856F494: @ 0x0856F494
 	.globl gExtremeSpeedTaskAffineAnim
 gExtremeSpeedTaskAffineAnim: @ 0x0856F494
 	rodata_affine_anim_frame 0x60, -13, 0x0800, 0
@@ -2068,14 +2054,10 @@ gExtremeSpeedAfterimageAnim: @ 0x0856F4A4
 gExtremeSpeedAfterimageAnims: @ 0x0856F4BC
 	semantic_anim_table_entry gExtremeSpeedAfterimageAnim
 	@ pret/pokeemerald-jp direct xref for 0x0856F4C0: battle_anim_effects_2.s: sub_08106358
-	.globl gBattleAnimEffects2Data_0856F4C0
-gBattleAnimEffects2Data_0856F4C0: @ 0x0856F4C0
 	.globl gExtremeSpeedAfterimageSpriteTemplate
 gExtremeSpeedAfterimageSpriteTemplate: @ 0x0856F4C0
 	rodata_sprite_template 0x27DF, 0x27DF, gOamData_AffineOff_ObjNormal_16x16, gExtremeSpeedAfterimageAnims, 0, gDummySpriteAffineAnimTable, sub_08106498
 	@ pret/pokeemerald-jp direct xref for 0x0856F4D8: battle_anim_effects_2.s: sub_08106358
-	.globl gBattleAnimEffects2Data_0856F4D8
-gBattleAnimEffects2Data_0856F4D8: @ 0x0856F4D8
 	.globl gExtremeSpeedAfterimageOffsets
 gExtremeSpeedAfterimageOffsets: @ 0x0856F4D8
 	.byte 30, 28, -20, 24, 16, 26, -10, 28
@@ -2102,8 +2084,6 @@ gHealBellRingAnims: @ 0x0856F518
 gHealBellRingSpriteTemplate: @ 0x0856F51C
 	rodata_sprite_template 0x27DD, 0x27DD, gOamData_AffineOff_ObjNormal_32x32, gHealBellRingAnims, 0, gDummySpriteAffineAnimTable, sub_080A7090
 	@ pret/pokeemerald-jp direct xref for 0x0856F534: battle_anim_effects_2.s: sub_081065B0, sub_081065D8
-	.globl gBattleAnimEffects2Data_0856F534
-gBattleAnimEffects2Data_0856F534: @ 0x0856F534
 	.globl gHealBellPaletteTags
 gHealBellPaletteTags: @ 0x0856F534
 	.2byte 0x27DE, 0x270F, 0x270E, 0
@@ -2114,8 +2094,6 @@ gHealBellParticleSpriteTemplate: @ 0x0856F53C
 gCharmHeartSpriteTemplate: @ 0x0856F554
 	rodata_sprite_template 0x27E2, 0x27E2, gOamData_AffineOff_ObjNormal_16x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_081066B0
 	@ pret/pokeemerald-jp direct xref for 0x0856F56C: battle_anim_effects_2.s: sub_08106870, sub_08106900
-	.globl gBattleAnimEffects2Data_0856F56C
-gBattleAnimEffects2Data_0856F56C: @ 0x0856F56C
 	.globl gTrickTaskAffineAnim
 gTrickTaskAffineAnim: @ 0x0856F56C
 	rodata_affine_anim_frame 10, -13, 0x0A00, 0
@@ -2240,16 +2218,14 @@ gStruggleAnims: @ 0x0856F75C
 gStruggleSpriteTemplate: @ 0x0856F764
 	rodata_sprite_template 0x27E7, 0x27E7, gOamData_AffineOff_ObjNormal_32x32, gStruggleAnims, 0, gDummySpriteAffineAnimTable, sub_08107520
 	@ pret/pokeemerald-jp direct xref for 0x0856F77C: battle_anim_effects_2.s: sub_081075E0
-	.globl gBattleAnimEffects2Data_0856F77C
-gBattleAnimEffects2Data_0856F77C: @ 0x0856F77C
 	.globl gUproarTaskAffineAnim
 gUproarTaskAffineAnim: @ 0x0856F77C
 	rodata_affine_anim_frame -12, 8, 0x0400, 0
 	rodata_affine_anim_frame 20, -20, 0x0400, 0
 	rodata_affine_anim_frame -8, 12, 0x0400, 0
 	rodata_affine_anim_end
-	.globl gUproarRingSpriteTemplate
-gUproarRingSpriteTemplate: @ 0x0856F79C
+	.globl gJaggedMusicNoteSpriteTemplate
+gJaggedMusicNoteSpriteTemplate: @ 0x0856F79C
 	rodata_sprite_template 0x27F1, 0x27F1, gOamData_AffineOff_ObjNormal_32x32, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08107650
 	.globl gPerishSongNoteAffineAnim_0
 gPerishSongNoteAffineAnim_0: @ 0x0856F7B4

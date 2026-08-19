@@ -1124,19 +1124,19 @@ Move_SELF_DESTRUCT:
 	ba_end
 BattleAnimScript_0827942B: @ 0x0827942B
 	ba_playsewithpan 0x00B1, SOUND_PAN_ATTACKER
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, 0, 0, 0, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 0, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_ATTACKER
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, 24, -24, 0, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, 24, -24, 0, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_ATTACKER
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, -16, 16, 0, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, -16, 16, 0, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_ATTACKER
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, -24, -12, 0, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, -24, -12, 0, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_ATTACKER
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, 16, 16, 0, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, 16, 16, 0, 1
 	ba_delay 6
 	ba_return
 Move_SLAM:
@@ -1288,19 +1288,19 @@ Move_EXPLOSION:
 	ba_end
 BattleAnimScript_0827989E: @ 0x0827989E
 	ba_playsewithpan 0x00B2, SOUND_PAN_ATTACKER
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, 0, 0, 0, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 0, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B2, SOUND_PAN_ATTACKER
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, 24, -24, 0, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, 24, -24, 0, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B2, SOUND_PAN_ATTACKER
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, -16, 16, 0, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, -16, 16, 0, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B2, SOUND_PAN_ATTACKER
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, -24, -12, 0, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, -24, -12, 0, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B2, SOUND_PAN_ATTACKER
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, 16, 16, 0, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, 16, 16, 0, 1
 	ba_delay 6
 	ba_return
 Move_DEFENSE_CURL:
@@ -2882,7 +2882,7 @@ Move_MILK_DRINK:
 	ba_delay 20
 	ba_playsewithpan 0x008E, SOUND_PAN_ATTACKER
 	ba_waitforvisualfinish
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB, ANIM_ATTACKER, 3, 0, 0, 1, 0
+	ba_createsprite gThinRingExpandingSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 1, 0
 	ba_playsewithpan 0x00E1, SOUND_PAN_ATTACKER
 	ba_waitforvisualfinish
 	ba_clearmonbg ANIM_TARGET
@@ -3006,22 +3006,22 @@ Move_UPROAR:
 	ba_loadspritegfx 0x27DB
 	ba_monbg ANIM_DEF_PARTNER
 	ba_createvisualtask sub_081075E0, 2, 0
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105D38, ANIM_ATTACKER, 3, 0, 0, 0, 0, 31, 8
+	ba_createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 0, 0, 31, 8
 	ba_playsewithpan 0x00F1, SOUND_PAN_ATTACKER
-	ba_createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 2, 0, 29, -12, 0
-	ba_createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 2, 0, -12, -29, 1
+	ba_createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, 29, -12, 0
+	ba_createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, -12, -29, 1
 	ba_delay 16
 	ba_createvisualtask sub_081075E0, 2, 0
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105D38, ANIM_ATTACKER, 3, 0, 0, 0, 0, 31, 8
+	ba_createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 0, 0, 31, 8
 	ba_playsewithpan 0x00F1, SOUND_PAN_ATTACKER
-	ba_createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 2, 0, 12, -29, 1
-	ba_createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 2, 0, -29, -12, 0
+	ba_createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, 12, -29, 1
+	ba_createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, -29, -12, 0
 	ba_delay 16
 	ba_createvisualtask sub_081075E0, 2, 0
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105D38, ANIM_ATTACKER, 3, 0, 0, 0, 0, 31, 8
+	ba_createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 0, 0, 31, 8
 	ba_playsewithpan 0x00F1, SOUND_PAN_ATTACKER
-	ba_createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 2, 0, 24, -24, 1
-	ba_createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 2, 0, -24, -24, 0
+	ba_createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, 24, -24, 1
+	ba_createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, -24, -24, 0
 	ba_waitforvisualfinish
 	ba_clearmonbg ANIM_DEF_PARTNER
 	ba_end
@@ -3703,7 +3703,7 @@ Move_AROMATHERAPY:
 	ba_waitforvisualfinish
 	ba_playsewithpan 0x0066, SOUND_PAN_ATTACKER
 	ba_createsprite 0x08572E58, ANIM_ATTACKER, 0, 43, 3, 10, 0, 0x33ED
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105A14, ANIM_ATTACKER, 16, 0, 0, 0, 1
+	ba_createsprite gBlendThinRingExpandingSpriteTemplate, ANIM_ATTACKER, 16, 0, 0, 0, 1
 	ba_waitforvisualfinish
 	ba_end
 Move_FAKE_TEARS:
@@ -3998,13 +3998,13 @@ Move_CALM_MIND:
 	ba_waitforvisualfinish
 	ba_createvisualtask sub_08118034, 5, 1
 	ba_waitforvisualfinish
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB_F430, ANIM_ATTACKER, 40, 0, 0, 0, 0
+	ba_createsprite gThinRingShrinkingSpriteTemplate, ANIM_ATTACKER, 40, 0, 0, 0, 0
 	ba_playsewithpan 0x00B8, SOUND_PAN_ATTACKER
 	ba_delay 14
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB_F430, ANIM_ATTACKER, 40, 0, 0, 0, 0
+	ba_createsprite gThinRingShrinkingSpriteTemplate, ANIM_ATTACKER, 40, 0, 0, 0, 0
 	ba_playsewithpan 0x00B8, SOUND_PAN_ATTACKER
 	ba_delay 14
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB_F430, ANIM_ATTACKER, 40, 0, 0, 0, 0
+	ba_createsprite gThinRingShrinkingSpriteTemplate, ANIM_ATTACKER, 40, 0, 0, 0, 0
 	ba_playsewithpan 0x00B8, SOUND_PAN_ATTACKER
 	ba_waitforvisualfinish
 	ba_createvisualtask sub_08118034, 5, 0
@@ -4512,9 +4512,9 @@ BattleAnimScript_0827E502: @ 0x0827E502
 	ba_createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 7, 0, 1
 	ba_createvisualtask AnimTask_ShakeMon2, 2, 1, 4, 0, 7, 1
 	ba_createsprite 0x08572EBC, ANIM_ATTACKER, 2, 6, 1, 14, 0, 0
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D5, ANIM_ATTACKER, 2, 0, 0, -42, -38, 24, 0, 0
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D5, ANIM_ATTACKER, 2, 0, 0, 0, -42, 24, 0, 0
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D5, ANIM_ATTACKER, 2, 0, 0, 42, -38, 24, 0, 0
+	ba_createsprite gSnoreZSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, -42, -38, 24, 0, 0
+	ba_createsprite gSnoreZSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, -42, 24, 0, 0
+	ba_createsprite gSnoreZSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 42, -38, 24, 0, 0
 	ba_return
 Move_LIGHT_SCREEN:
 	ba_loadspritegfx 0x2756
@@ -6016,19 +6016,19 @@ Move_DYNAMIC_PUNCH:
 	ba_waitsound
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
 	ba_createvisualtask AnimTask_ShakeMon2, 5, 1, 5, 0, 28, 1
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, 0, 0, 1, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 1, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, 24, -24, 1, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, 24, -24, 1, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, -16, 16, 1, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, -16, 16, 1, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, -24, -12, 1, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, -24, -12, 1, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, 16, 16, 1, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, 16, 16, 1, 1
 	ba_waitforvisualfinish
 	ba_clearmonbg ANIM_DEF_PARTNER
 	ba_blendoff
@@ -6724,19 +6724,19 @@ Move_EGG_BOMB:
 	ba_createsprite gEggBombProjectileSpriteTemplate, ANIM_TARGET, 2, 10, 0, 0, 0, 25, -32
 	ba_waitforvisualfinish
 	ba_createvisualtask AnimTask_ShakeMon2, 2, 1, 4, 0, 16, 1
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_TARGET, 4, 6, 5, 1, 0
+	ba_createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 6, 5, 1, 0
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
 	ba_delay 3
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_TARGET, 4, -16, -15, 1, 0
+	ba_createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -16, -15, 1, 0
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
 	ba_delay 3
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_TARGET, 4, 16, -5, 1, 0
+	ba_createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 16, -5, 1, 0
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
 	ba_delay 3
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_TARGET, 4, -12, 18, 1, 0
+	ba_createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -12, 18, 1, 0
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
 	ba_delay 3
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_TARGET, 4, 0, 5, 1, 0
+	ba_createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 0, 5, 1, 0
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
 	ba_delay 3
 	ba_waitforvisualfinish
@@ -7065,9 +7065,9 @@ Move_SOFT_BOILED:
 	ba_delay 7
 	ba_playsewithpan 0x00A6, SOUND_PAN_ATTACKER
 	ba_createsprite 0x08572E58, ANIM_ATTACKER, 2, 31, 3, 10, 0, 0x7B0C
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB, ANIM_ATTACKER, 3, 31, 16, 0, 1
+	ba_createsprite gThinRingExpandingSpriteTemplate, ANIM_ATTACKER, 3, 31, 16, 0, 1
 	ba_delay 8
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB, ANIM_ATTACKER, 3, 31, 16, 0, 1
+	ba_createsprite gThinRingExpandingSpriteTemplate, ANIM_ATTACKER, 3, 31, 16, 0, 1
 	ba_delay 60
 	ba_setarg 0x07, 0xFFFF
 	ba_waitforvisualfinish
@@ -7117,12 +7117,12 @@ Move_HEAL_BELL:
 	ba_playsewithpan 0x0066, SOUND_PAN_ATTACKER
 	ba_createvisualtask sub_08116EB4, 10, 4, 3, 10, 0, 0x7B0C
 	ba_createvisualtask sub_08116E70, 10, 10, 3, 10, 0, 0x7FFF
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105A14, ANIM_ATTACKER, 16, 0, 0, 0, 1
+	ba_createsprite gBlendThinRingExpandingSpriteTemplate, ANIM_ATTACKER, 16, 0, 0, 0, 1
 	ba_end
 BattleAnimScript_0828247F: @ 0x0828247F
 	ba_createvisualtask sub_08116EB4, 10, 4, 3, 8, 0, 0x7B0C
 	ba_createvisualtask sub_08116E70, 10, 10, 3, 2, 10, 0x7FFF
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB, ANIM_ATTACKER, 40, 0, -24, 0, 1
+	ba_createsprite gThinRingExpandingSpriteTemplate, ANIM_ATTACKER, 40, 0, -24, 0, 1
 	ba_playsewithpan 0x00C3, SOUND_PAN_ATTACKER
 	ba_return
 Move_FAKE_OUT:
@@ -7243,19 +7243,19 @@ Move_PRESENT:
 BattleAnimScript_0828275B: @ 0x0828275B
 	ba_loadspritegfx 0x27D6
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_TARGET, 3, 0, 0, 1, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_TARGET, 3, 0, 0, 1, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_TARGET, 3, 24, -24, 1, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_TARGET, 3, 24, -24, 1, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_TARGET, 3, -16, 16, 1, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_TARGET, 3, -16, 16, 1, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_TARGET, 3, -24, -12, 1, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_TARGET, 3, -24, -12, 1, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_TARGET, 3, 16, 16, 1, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_TARGET, 3, 16, 16, 1, 1
 	ba_end
 BattleAnimScript_082827C6: @ 0x082827C6
 	ba_loadspritegfx 0x27D3
@@ -7821,7 +7821,7 @@ Move_REFRESH:
 	ba_waitforvisualfinish
 	ba_playsewithpan 0x0066, SOUND_PAN_ATTACKER
 	ba_createsprite 0x08572E58, ANIM_ATTACKER, 2, 31, 3, 10, 0, 0x7B0C
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB, ANIM_ATTACKER, 3, 0, 0, 0, 0
+	ba_createsprite gThinRingExpandingSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 0, 0
 	ba_end
 Move_BLAZE_KICK:
 	ba_loadspritegfx 0x2797
@@ -7856,7 +7856,7 @@ Move_HYPER_VOICE:
 BattleAnimScript_08283681: @ 0x08283681
 	ba_createsprite 0x08572E58, ANIM_ATTACKER, 2, 31, 3, 8, 0, 1023
 	ba_createvisualtask AnimTask_ScaleMonAndRestore, 5, -5, -5, 5, 0, 0
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB_Sub08105AF4, ANIM_ATTACKER, 0, 45, 0, 0, 0, 0, 0, 1
+	ba_createsprite gHyperVoiceRingSpriteTemplate, ANIM_ATTACKER, 0, 45, 0, 0, 0, 0, 0, 1
 	ba_createvisualtask AnimTask_ShakeMon2, 2, 1, 1, 0, 6, 1
 	ba_createvisualtask AnimTask_ShakeMon2, 2, 3, 1, 0, 6, 1
 	ba_createvisualtask sub_08116AF4, 2, 1, 0, 6, 1
@@ -9717,7 +9717,7 @@ General_HeldItemEffect:
 	ba_waitforvisualfinish
 	ba_playsewithpan 0x0066, SOUND_PAN_ATTACKER
 	ba_createsprite 0x08572E58, ANIM_ATTACKER, 2, 2, 3, 7, 0, 0x67F1
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27DB, ANIM_ATTACKER, 3, 0, 0, 0, 0
+	ba_createsprite gThinRingExpandingSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 0, 0
 	ba_waitforvisualfinish
 	ba_end
 General_SmokeballEscape:
@@ -9864,19 +9864,19 @@ General_DoomDesireHit:
 	ba_delay 25
 	ba_createvisualtask AnimTask_ShakeMonInPlace, 2, 1, 10, 0, 20, 1
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, 0, 0, 1, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 1, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, 24, -24, 1, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, 24, -24, 1, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, -16, 16, 1, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, -16, 16, 1, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, -24, -12, 1, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, -24, -12, 1, 1
 	ba_delay 6
 	ba_playsewithpan 0x00B1, SOUND_PAN_TARGET
-	ba_createsprite gBattleAnimEffects2SpriteTemplate_Tag27D6, ANIM_ATTACKER, 3, 16, 16, 1, 1
+	ba_createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, 16, 16, 1, 1
 	ba_waitforvisualfinish
 	ba_createsprite 0x08572E58, ANIM_ATTACKER, 2, 1, 3, 16, 0, 0x7FFF
 	ba_waitforvisualfinish
