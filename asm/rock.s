@@ -1045,19 +1045,19 @@ _08111A98:
 	movs r5, #0
 	b _08111AC0
 	.align 2, 0
-_08111AA0: .4byte gRockData_0857280C
+_08111AA0: .4byte gMoveTwisterParticleData
 _08111AA4:
 	ldr r3, _08111AAC
 	movs r5, #0x50
 	b _08111AC0
 	.align 2, 0
-_08111AAC: .4byte gRockData_08572824
+_08111AAC: .4byte gRolloutRockSpriteTemplate
 _08111AB0:
 	ldr r3, _08111AB8
 	movs r5, #0x40
 	b _08111AC0
 	.align 2, 0
-_08111AB8: .4byte gRockData_08572824
+_08111AB8: .4byte gRolloutRockSpriteTemplate
 _08111ABC:
 	ldr r3, _08111B5C
 	movs r5, #0x30
@@ -1140,7 +1140,7 @@ _08111B54:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08111B5C: .4byte gRockData_08572824
+_08111B5C: .4byte gRolloutRockSpriteTemplate
 _08111B60: .4byte 0x020205AC
 _08111B64: .4byte 0x000003FF
 _08111B68: .4byte 0xFFFFFC00

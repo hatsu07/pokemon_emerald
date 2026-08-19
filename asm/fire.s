@@ -1315,7 +1315,7 @@ _0810A106:
 	bx r0
 	.align 2, 0
 _0810A120: .4byte sEruptionLaunchRockSpeeds
-_0810A124: .4byte gFireData_08571198
+_0810A124: .4byte gWeatherBallIceDownData
 _0810A128: .4byte 0x020205AC
 _0810A12C: .4byte 0x000003FF
 _0810A130: .4byte 0xFFFFFC00

@@ -2595,7 +2595,7 @@ _0810D332:
 	movs r0, #1
 	b _0810D396
 	.align 2, 0
-_0810D38C: .4byte gIceData_08571910
+_0810D38C: .4byte gHailParticleSpriteTemplate
 _0810D390: .4byte 0x020205AC
 _0810D394:
 	movs r0, #0
@@ -2693,7 +2693,7 @@ _0810D436:
 	bl DestroySprite
 	b _0810D482
 	.align 2, 0
-_0810D448: .4byte gIceData_0857174C
+_0810D448: .4byte gIceCrystalHitLargeSpriteTemplateSpriteTemplate
 _0810D44C: .4byte 0x020205AC
 _0810D450: .4byte 0x0810D48D
 _0810D454:

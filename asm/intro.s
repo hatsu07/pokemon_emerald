@@ -2649,7 +2649,7 @@ _0816DF80:
 	.align 2, 0
 _0816DFCC: .4byte 0x020205AC
 _0816DFD0: .4byte sGroudonRockData
-_0816DFD4: .4byte gIntroData_085727F4
+_0816DFD4: .4byte gAncientPowerRockSpriteTemplateSpriteTemplate
 _0816DFD8: .4byte 0x0816DFDD
 	thumb_func_end CreateGroudonRockSprites
 

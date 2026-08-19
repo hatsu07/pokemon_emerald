@@ -1532,7 +1532,7 @@ _08110604:
 	strh r0, [r5, #8]
 	b _08110638
 	.align 2, 0
-_0811061C: .4byte gPsychicData_08572448
+_0811061C: .4byte gSkillSwapOrbSpriteTemplate
 _08110620: .4byte 0x020205AC
 _08110624:
 	ldrh r0, [r5, #0xa]

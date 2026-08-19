@@ -929,7 +929,7 @@ _0810B120:
 	lsls r3, r4, #0x10
 	b _0810B1A2
 	.align 2, 0
-_0810B130: .4byte gElectricData_0857140C
+_0810B130: .4byte gBattleAnimationEffectData
 _0810B134:
 	mov r0, ip
 	lsls r3, r0, #0x11
@@ -945,7 +945,7 @@ _0810B134:
 	asrs r2, r2, #0x10
 	b _0810B1A2
 	.align 2, 0
-_0810B150: .4byte gElectricData_0857140C
+_0810B150: .4byte gBattleAnimationEffectData
 _0810B154:
 	mov r3, ip
 	lsls r0, r3, #0x10
@@ -974,7 +974,7 @@ _0810B16A:
 	asrs r2, r2, #0x10
 	b _0810B1A2
 	.align 2, 0
-_0810B188: .4byte gElectricData_0857140C
+_0810B188: .4byte gBattleAnimationEffectData
 _0810B18C:
 	mov r1, ip
 	lsls r0, r1, #0x10
@@ -1002,7 +1002,7 @@ _0810B1A2:
 	lsrs r7, r0, #0x18
 	b _0810B1C8
 	.align 2, 0
-_0810B1BC: .4byte gElectricData_0857140C
+_0810B1BC: .4byte gBattleAnimationEffectData
 _0810B1C0:
 	mov r0, sb
 	bl DestroyAnimVisualTask
@@ -1159,7 +1159,7 @@ sub_0810B27C: @ 0x0810B27C
 	bx r0
 	.align 2, 0
 _0810B2E4: .4byte 0x020380BE
-_0810B2E8: .4byte gElectricData_08571424
+_0810B2E8: .4byte gElectricOrbsData
 _0810B2EC: .4byte 0x020205AC
 _0810B2F0: .4byte 0x000003FF
 _0810B2F4: .4byte 0xFFFFFC00
@@ -1389,7 +1389,7 @@ _0810B4A2:
 	b _0810B4D6
 	.align 2, 0
 _0810B4B0: .4byte 0x03005B60
-_0810B4B4: .4byte gElectricData_0857148C
+_0810B4B4: .4byte gElectricChargingParticlesSpriteTemplate
 _0810B4B8: .4byte 0x020205AC
 _0810B4BC: .4byte sElectricChargingParticleCoordOffsets
 _0810B4C0: .4byte 0x0810B511
@@ -2113,7 +2113,7 @@ _0810BA2C:
 	movs r0, #1
 	b _0810BA3A
 	.align 2, 0
-_0810BA30: .4byte gElectricData_085715E4
+_0810BA30: .4byte gVoltTackleBoltSpriteTemplate
 _0810BA34: .4byte 0x020205AC
 _0810BA38:
 	movs r0, #0
@@ -2525,7 +2525,7 @@ _0810BD34:
 	movs r0, #1
 	b _0810BD64
 	.align 2, 0
-_0810BD48: .4byte gElectricData_08571614
+_0810BD48: .4byte gShockWaveProgressingBoltSpriteTemplate
 _0810BD4C: .4byte 0x020205AC
 _0810BD50: .4byte 0x000003FF
 _0810BD54: .4byte 0xFFFFFC00

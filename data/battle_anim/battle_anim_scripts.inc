@@ -801,11 +801,11 @@ Move_THUNDER_WAVE:
 	ba_playsewithpan 0x008A, SOUND_PAN_TARGET
 	ba_delay 20
 	ba_loopsewithpan 0x0077, SOUND_PAN_TARGET, 10, 4
-	ba_createsprite sSpriteTemplate_08571424, ANIM_TARGET, 2, -16, -16
+	ba_createsprite gElectricOrbsSpriteTemplate, ANIM_TARGET, 2, -16, -16
 	ba_delay 4
-	ba_createsprite sSpriteTemplate_08571424, ANIM_TARGET, 2, -16, 0
+	ba_createsprite gElectricOrbsSpriteTemplate, ANIM_TARGET, 2, -16, 0
 	ba_delay 4
-	ba_createsprite sSpriteTemplate_08571424, ANIM_TARGET, 2, -16, 16
+	ba_createsprite gElectricOrbsSpriteTemplate, ANIM_TARGET, 2, -16, 16
 	ba_waitforvisualfinish
 	ba_createvisualtask sub_08116E70, 10, 1, 0, 6, 0, 0
 	ba_waitforvisualfinish
