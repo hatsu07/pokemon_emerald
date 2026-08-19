@@ -307,124 +307,124 @@ gRotatingGateSpriteAnimTable: @ 0x0856D994
 	.globl gRotatingGateSpriteAnimTable_Affine
 gRotatingGateSpriteAnimTable_Affine: @ 0x0856D998
 	semantic_anim_table_entry gRotatingGateSpriteAnim_Affine
-	.globl gRotatingGateAffineAnim_0856D99C
-gRotatingGateAffineAnim_0856D99C: @ 0x0856D99C
+	.globl sSpriteAffineAnim_Rotated0
+sSpriteAffineAnim_Rotated0: @ 0x0856D99C
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x00, 0x00
 	semantic_affine_animcmd_jump 0
-	.globl gRotatingGateAffineAnim_0856D9AC
-gRotatingGateAffineAnim_0856D9AC: @ 0x0856D9AC
+	.globl sSpriteAffineAnim_Rotated90
+sSpriteAffineAnim_Rotated90: @ 0x0856D9AC
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0xC0, 0x00
 	semantic_affine_animcmd_jump 0
-	.globl gRotatingGateAffineAnim_0856D9BC
-gRotatingGateAffineAnim_0856D9BC: @ 0x0856D9BC
+	.globl sSpriteAffineAnim_Rotated180
+sSpriteAffineAnim_Rotated180: @ 0x0856D9BC
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x80, 0x00
 	semantic_affine_animcmd_jump 0
-	.globl gRotatingGateAffineAnim_0856D9CC
-gRotatingGateAffineAnim_0856D9CC: @ 0x0856D9CC
+	.globl sSpriteAffineAnim_Rotated270
+sSpriteAffineAnim_Rotated270: @ 0x0856D9CC
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x40, 0x00
 	semantic_affine_animcmd_jump 0
-	.globl gRotatingGateAffineAnim_0856D9DC
-gRotatingGateAffineAnim_0856D9DC: @ 0x0856D9DC
+	.globl sSpriteAffineAnim_RotatingClockwise0to90
+sSpriteAffineAnim_RotatingClockwise0to90: @ 0x0856D9DC
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x00, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0xFC, 0x10
 	rodata_affine_anim_end
-	.globl gRotatingGateAffineAnim_0856D9F4
-gRotatingGateAffineAnim_0856D9F4: @ 0x0856D9F4
+	.globl sSpriteAffineAnim_RotatingClockwise90to180
+sSpriteAffineAnim_RotatingClockwise90to180: @ 0x0856D9F4
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0xC0, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0xFC, 0x10
 	rodata_affine_anim_end
-	.globl gRotatingGateAffineAnim_0856DA0C
-gRotatingGateAffineAnim_0856DA0C: @ 0x0856DA0C
+	.globl sSpriteAffineAnim_RotatingClockwise180to270
+sSpriteAffineAnim_RotatingClockwise180to270: @ 0x0856DA0C
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x80, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0xFC, 0x10
 	rodata_affine_anim_end
-	.globl gRotatingGateAffineAnim_0856DA24
-gRotatingGateAffineAnim_0856DA24: @ 0x0856DA24
+	.globl sSpriteAffineAnim_RotatingClockwise270to360
+sSpriteAffineAnim_RotatingClockwise270to360: @ 0x0856DA24
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x40, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0xFC, 0x10
 	rodata_affine_anim_end
-	.globl gRotatingGateAffineAnim_0856DA3C
-gRotatingGateAffineAnim_0856DA3C: @ 0x0856DA3C
+	.globl sSpriteAffineAnim_RotatingAnticlockwise360to270
+sSpriteAffineAnim_RotatingAnticlockwise360to270: @ 0x0856DA3C
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x00, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0x04, 0x10
 	rodata_affine_anim_end
-	.globl gRotatingGateAffineAnim_0856DA54
-gRotatingGateAffineAnim_0856DA54: @ 0x0856DA54
+	.globl sSpriteAffineAnim_RotatingAnticlockwise270to180
+sSpriteAffineAnim_RotatingAnticlockwise270to180: @ 0x0856DA54
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x40, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0x04, 0x10
 	rodata_affine_anim_end
-	.globl gRotatingGateAffineAnim_0856DA6C
-gRotatingGateAffineAnim_0856DA6C: @ 0x0856DA6C
+	.globl sSpriteAffineAnim_RotatingAnticlockwise180to90
+sSpriteAffineAnim_RotatingAnticlockwise180to90: @ 0x0856DA6C
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x80, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0x04, 0x10
 	rodata_affine_anim_end
-	.globl gRotatingGateAffineAnim_0856DA84
-gRotatingGateAffineAnim_0856DA84: @ 0x0856DA84
+	.globl sSpriteAffineAnim_RotatingAnticlockwise90to0
+sSpriteAffineAnim_RotatingAnticlockwise90to0: @ 0x0856DA84
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0xC0, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0x04, 0x10
 	rodata_affine_anim_end
-	.globl gRotatingGateAffineAnim_0856DA9C
-gRotatingGateAffineAnim_0856DA9C: @ 0x0856DA9C
+	.globl sSpriteAffineAnim_RotatingClockwise0to90Faster
+sSpriteAffineAnim_RotatingClockwise0to90Faster: @ 0x0856DA9C
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x00, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0xF8, 0x08
 	rodata_affine_anim_end
-	.globl gRotatingGateAffineAnim_0856DAB4
-gRotatingGateAffineAnim_0856DAB4: @ 0x0856DAB4
+	.globl sSpriteAffineAnim_RotatingClockwise90to180Faster
+sSpriteAffineAnim_RotatingClockwise90to180Faster: @ 0x0856DAB4
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0xC0, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0xF8, 0x08
 	rodata_affine_anim_end
-	.globl gRotatingGateAffineAnim_0856DACC
-gRotatingGateAffineAnim_0856DACC: @ 0x0856DACC
+	.globl sSpriteAffineAnim_RotatingClockwise180to270Faster
+sSpriteAffineAnim_RotatingClockwise180to270Faster: @ 0x0856DACC
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x80, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0xF8, 0x08
 	rodata_affine_anim_end
-	.globl gRotatingGateAffineAnim_0856DAE4
-gRotatingGateAffineAnim_0856DAE4: @ 0x0856DAE4
+	.globl sSpriteAffineAnim_RotatingClockwise270to360Faster
+sSpriteAffineAnim_RotatingClockwise270to360Faster: @ 0x0856DAE4
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x40, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0xF8, 0x08
 	rodata_affine_anim_end
-	.globl gRotatingGateAffineAnim_0856DAFC
-gRotatingGateAffineAnim_0856DAFC: @ 0x0856DAFC
+	.globl sSpriteAffineAnim_RotatingAnticlockwise360to270Faster
+sSpriteAffineAnim_RotatingAnticlockwise360to270Faster: @ 0x0856DAFC
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x00, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0x08, 0x08
 	rodata_affine_anim_end
-	.globl gRotatingGateAffineAnim_0856DB14
-gRotatingGateAffineAnim_0856DB14: @ 0x0856DB14
+	.globl sSpriteAffineAnim_RotatingAnticlockwise270to180Faster
+sSpriteAffineAnim_RotatingAnticlockwise270to180Faster: @ 0x0856DB14
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x40, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0x08, 0x08
 	rodata_affine_anim_end
-	.globl gRotatingGateAffineAnim_0856DB2C
-gRotatingGateAffineAnim_0856DB2C: @ 0x0856DB2C
+	.globl sSpriteAffineAnim_RotatingAnticlockwise180to90Faster
+sSpriteAffineAnim_RotatingAnticlockwise180to90Faster: @ 0x0856DB2C
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0x80, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0x08, 0x08
 	rodata_affine_anim_end
-	.globl gRotatingGateAffineAnim_0856DB44
-gRotatingGateAffineAnim_0856DB44: @ 0x0856DB44
+	.globl sSpriteAffineAnim_RotatingAnticlockwise90to0Faster
+sSpriteAffineAnim_RotatingAnticlockwise90to0Faster: @ 0x0856DB44
 	semantic_affine_animcmd_frame 0x0100, 0x0100, 0xC0, 0x00
 	semantic_affine_animcmd_frame 0, 0, 0x08, 0x08
 	rodata_affine_anim_end
 	.globl gRotatingGateAffineAnimTable
 gRotatingGateAffineAnimTable: @ 0x0856DB5C
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856D99C
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856D9AC
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856D9BC
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856D9CC
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DA3C
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DA84
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DA6C
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DA54
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856D9DC
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856D9F4
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DA0C
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DA24
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DAFC
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DB44
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DB2C
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DB14
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DA9C
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DAB4
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DACC
-	semantic_affine_anim_table_entry gRotatingGateAffineAnim_0856DAE4
+	semantic_affine_anim_table_entry sSpriteAffineAnim_Rotated0
+	semantic_affine_anim_table_entry sSpriteAffineAnim_Rotated90
+	semantic_affine_anim_table_entry sSpriteAffineAnim_Rotated180
+	semantic_affine_anim_table_entry sSpriteAffineAnim_Rotated270
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingAnticlockwise360to270
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingAnticlockwise90to0
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingAnticlockwise180to90
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingAnticlockwise270to180
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingClockwise0to90
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingClockwise90to180
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingClockwise180to270
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingClockwise270to360
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingAnticlockwise360to270Faster
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingAnticlockwise90to0Faster
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingAnticlockwise180to90Faster
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingAnticlockwise270to180Faster
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingClockwise0to90Faster
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingClockwise90to180Faster
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingClockwise180to270Faster
+	semantic_affine_anim_table_entry sSpriteAffineAnim_RotatingClockwise270to360Faster
 	@ pret/pokeemerald-jp direct xref for 0x0856DBAC: rotating_gate.s: RotatingGate_CreateGate
 	.globl gRotatingGateSpriteTemplate_64x64
 gRotatingGateSpriteTemplate_64x64: @ 0x0856DBAC
