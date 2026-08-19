@@ -661,6 +661,7 @@ gBattleAnimSpriteTemplate_ElectricSpark: @ 0x085712A4
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_0810A9F8 @ +0x14
+sAffineAnim_UnusedSpinningFist:
 	.4byte 0x01000100 @ +0x18
 	.4byte 0 @ +0x1C
 	.4byte 0 @ +0x20
@@ -669,13 +670,15 @@ gBattleAnimSpriteTemplate_ElectricSpark: @ 0x085712A4
 	.4byte 0x00003CF0 @ +0x2C
 	.4byte 0x00007FFF @ +0x30
 	.4byte 0 @ +0x34
-	.4byte 0x085712BC @ +0x38
+sAffineAnims_UnusedSpinningFist:
+	.4byte sAffineAnim_UnusedSpinningFist @ +0x38
 	.4byte 0x279F279F @ +0x3C
 	.4byte gOamData_AffineNormal_ObjNormal_32x32 @ +0x40
 	.4byte gDummySpriteAnimTable @ +0x44
 	.4byte 0 @ +0x48
-	.4byte 0x085712DC @ +0x4C
+	.4byte sAffineAnims_UnusedSpinningFist @ +0x4C
 	.4byte sub_0810AA64 @ +0x50
+sAnim_UnusedCirclingShock:
 	.4byte 0x00050000 @ +0x54
 	.4byte 0x00050010 @ +0x58
 	.4byte 0x00050020 @ +0x5C
@@ -683,10 +686,11 @@ gBattleAnimSpriteTemplate_ElectricSpark: @ 0x085712A4
 	.4byte 0x00050040 @ +0x64
 	.4byte 0x00050050 @ +0x68
 	.4byte 0x0000FFFE @ +0x6C
-	.4byte 0x085712F8 @ +0x70
+sAnims_UnusedCirclingShock:
+	.4byte sAnim_UnusedCirclingShock @ +0x70
 	.4byte 0x275F275F @ +0x74
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x78
-	.4byte 0x08571314 @ +0x7C
+	.4byte sAnims_UnusedCirclingShock @ +0x7C
 	.4byte 0 @ +0x80
 	.4byte gDummySpriteAffineAnimTable @ +0x84
 	.4byte sub_0810AAC4 @ +0x88
@@ -702,22 +706,27 @@ gBattleAnimSpriteTemplate_ElectricSpark: @ 0x085712A4
 	.4byte 0 @ +0xB0
 	.4byte gDummySpriteAffineAnimTable @ +0xB4
 	.4byte TranslateAnimSpriteToTargetMonLocation @ +0xB8
+sAffineAnim_FlashingSpark:
 	.4byte 0 @ +0xBC
 	.4byte 0x00000114 @ +0xC0
 	.4byte 0x00007FFE @ +0xC4
 	.4byte 0 @ +0xC8
-	.4byte 0x08571360 @ +0xCC
+sAffineAnims_FlashingSpark:
+	.4byte sAffineAnim_FlashingSpark @ +0xCC
 	.4byte 0x271B271B @ +0xD0
 	.4byte gOamData_AffineNormal_ObjNormal_16x16 @ +0xD4
 	.4byte gDummySpriteAnimTable @ +0xD8
 	.4byte 0 @ +0xDC
-	.4byte 0x08571370 @ +0xE0
+	.4byte sAffineAnims_FlashingSpark @ +0xE0
 	.4byte sub_0810ACBC @ +0xE4
+sAnim_ThunderboltOrb:
 	.4byte 0x00060000 @ +0xE8
 	.4byte 0x00060010 @ +0xEC
 	.4byte 0x00060020 @ +0xF0
 	.4byte 0x0000FFFE @ +0xF4
-	.4byte 0x0857138C @ +0xF8
+sAnims_ThunderboltOrb:
+	.4byte sAnim_ThunderboltOrb @ +0xF8
+sAffineAnim_ThunderboltOrb:
 	.4byte 0x00E800E8 @ +0xFC
 	.4byte 0 @ +0x100
 	.4byte 0xFFF8FFF8 @ +0x104
@@ -726,18 +735,19 @@ gBattleAnimSpriteTemplate_ElectricSpark: @ 0x085712A4
 	.4byte 0x00000A00 @ +0x110
 	.4byte 0x00017FFE @ +0x114
 	.4byte 0 @ +0x118
-	.4byte 0x085713A0 @ +0x11C
+sAffineAnims_ThunderboltOrb:
+	.4byte sAffineAnim_ThunderboltOrb @ +0x11C
 	.4byte 0x282A282A @ +0x120
 	.4byte gOamData_AffineNormal_ObjNormal_32x32 @ +0x124
-	.4byte 0x0857139C @ +0x128
+	.4byte sAnims_ThunderboltOrb @ +0x128
 	.4byte 0 @ +0x12C
-	.4byte 0x085713C0 @ +0x130
+	.4byte sAffineAnims_ThunderboltOrb @ +0x130
 	.4byte sub_0810AE0C @ +0x134
 	.4byte 0x271B271B @ +0x138
 	.4byte gOamData_AffineNormal_ObjNormal_16x16 @ +0x13C
 	.4byte gDummySpriteAnimTable @ +0x140
 	.4byte 0 @ +0x144
-	.4byte 0x08571370 @ +0x148
+	.4byte sAffineAnims_FlashingSpark @ +0x148
 	.4byte sub_0810AE78 @ +0x14C
 	.4byte 0x271B271B @ +0x150
 	.4byte gOamData_AffineOff_ObjNormal_16x16 @ +0x154
