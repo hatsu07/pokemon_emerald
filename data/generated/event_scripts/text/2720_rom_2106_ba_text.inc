@@ -52,7 +52,7 @@ EventScript_JP_08210715: @ 0x08210715
 	.byte 0x03
 	.2byte 0x0108
 	.2byte 0x0000
-	.4byte 0x08210814 @ gText_Rom_210814
+	.4byte gText_Rom_210814 @ gText_Rom_210814
 	goto EventScript_JP_08210746
 	.byte 0x02
 EventScript_JP_0821073C: @ 0x0821073C

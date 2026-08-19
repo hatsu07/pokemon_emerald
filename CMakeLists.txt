@@ -6090,7 +6090,7 @@ if(NOT Python3_EXECUTABLE)
 endif()
 
 set(MOVES_8117_EXACT_ROOT
-    "${CMAKE_SOURCE_DIR}/graphics/unknown/moves_8117_lz77")
+    "${CMAKE_SOURCE_DIR}/graphics/moves_8117_lz77")
 set(MOVES_8117_EXACT_MANIFEST
     "${MOVES_8117_EXACT_ROOT}/manifests/moves_8117_lz77_exact_plan.json")
 set(MOVES_8117_EXACT_OUTPUT_DIR

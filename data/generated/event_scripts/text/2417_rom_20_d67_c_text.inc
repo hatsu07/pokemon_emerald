@@ -84,7 +84,7 @@ EventScript_JP_0820D733: @ 0x0820D733
 	.byte 0x03
 	.2byte 0x024C
 	.2byte 0x0000
-	.4byte 0x0820DC40 @ gText_Rom_20DC40
+	.4byte gText_Rom_20DC40 @ gText_Rom_20DC40
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
@@ -106,7 +106,7 @@ EventScript_JP_0820D733: @ 0x0820D733
 	.byte 0x03
 	.2byte 0x024D
 	.2byte 0x0000
-	.4byte 0x0820DC6D @ gText_Rom_20DC6D
+	.4byte gText_Rom_20DC6D @ gText_Rom_20DC6D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0005
@@ -128,7 +128,7 @@ EventScript_JP_0820D733: @ 0x0820D733
 	.byte 0x03
 	.2byte 0x024E
 	.2byte 0x0000
-	.4byte 0x0820DC9C @ gText_Rom_20DC9C
+	.4byte gText_Rom_20DC9C @ gText_Rom_20DC9C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007

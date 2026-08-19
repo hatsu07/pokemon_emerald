@@ -491,14 +491,14 @@ gBerryPicTable: @ 0x0855A7C4
 	.globl gBerryCheckCircleSpriteSheet
 gBerryCheckCircleSpriteSheet: @ 0x0855A91C
 	@ Local JP Berry Check Circle gfx pointer.
-	.4byte 0x08D9C4F4
+	.4byte gBerryCheckCircle_Gfx
 	.2byte 0x0800
 	.2byte 0x2710
 
 	.globl gBerryCheckCirclePaletteTable
 gBerryCheckCirclePaletteTable: @ 0x0855A924
 	@ Local JP Berry Check Circle palette pointer.
-	.4byte 0x08D9C1AC
+	.4byte gBerryCheck_Pal
 	.2byte 0x2710
 	.2byte 0
 

@@ -374,7 +374,7 @@ EventScript_JP_081DDC73: @ 0x081DDC73
 	.byte 0x03
 	.2byte 0x0290
 	.2byte 0x0000
-	.4byte 0x081DE05D @ gText_Rom_1DE05D
+	.4byte gText_Rom_1DE05D @ gText_Rom_1DE05D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006

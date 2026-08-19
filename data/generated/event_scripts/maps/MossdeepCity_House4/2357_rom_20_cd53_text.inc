@@ -282,8 +282,8 @@ EventScript_JP_0820CFF6: @ 0x0820CFF6
 	.byte 0x00
 	.2byte 0x024A
 	.2byte 0x0000
-	.4byte 0x0820D475 @ gText_Rom_20D475
-	.4byte 0x0820D497 @ gText_Rom_20D497
+	.4byte gText_Rom_20D475 @ gText_Rom_20D475
+	.4byte gText_Rom_20D497 @ gText_Rom_20D497
 	loadword 0x00, gText_Rom_20D4A1
 	callstd 0x06
 	end
@@ -294,8 +294,8 @@ EventScript_JP_0820D00D: @ 0x0820D00D
 	.byte 0x00
 	.2byte 0x0016
 	.2byte 0x0000
-	.4byte 0x0820D4C0 @ gText_Rom_20D4C0
-	.4byte 0x0820D4E8 @ gText_Rom_20D4E8
+	.4byte gText_Rom_20D4C0 @ gText_Rom_20D4C0
+	.4byte gText_Rom_20D4E8 @ gText_Rom_20D4E8
 	loadword 0x00, gText_Rom_20D503
 	callstd 0x06
 	end
@@ -306,8 +306,8 @@ EventScript_JP_0820D024: @ 0x0820D024
 	.byte 0x00
 	.2byte 0x024B
 	.2byte 0x0000
-	.4byte 0x0820D524 @ gText_Rom_20D524
-	.4byte 0x0820D55A @ gText_Rom_20D55A
+	.4byte gText_Rom_20D524 @ gText_Rom_20D524
+	.4byte gText_Rom_20D55A @ gText_Rom_20D55A
 	loadword 0x00, gText_Rom_20D574
 	callstd 0x06
 	end
@@ -324,7 +324,7 @@ EventScript_JP_0820D03B: @ 0x0820D03B
 	.byte 0x03
 	.2byte 0x0074
 	.2byte 0x0000
-	.4byte 0x0820D5C7 @ gText_Rom_20D5C7
+	.4byte gText_Rom_20D5C7 @ gText_Rom_20D5C7
 	setflag 0x00BF
 	moveobjectoffscreen 0x0009
 	copyvar 0x8000, 0x800C

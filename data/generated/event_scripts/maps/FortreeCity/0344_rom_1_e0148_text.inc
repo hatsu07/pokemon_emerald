@@ -379,7 +379,7 @@ EventScript_JP_081E0513: @ 0x081E0513
 	.byte 0x03
 	.2byte 0x0299
 	.2byte 0x0000
-	.4byte 0x081E07B9 @ gText_Rom_1E07B9
+	.4byte gText_Rom_1E07B9 @ gText_Rom_1E07B9
 	goto EventScript_JP_081E0573
 	.byte 0x02
 EventScript_JP_081E0523: @ 0x081E0523
@@ -388,7 +388,7 @@ EventScript_JP_081E0523: @ 0x081E0523
 	.byte 0x03
 	.2byte 0x029A
 	.2byte 0x0000
-	.4byte 0x081E07B9 @ gText_Rom_1E07B9
+	.4byte gText_Rom_1E07B9 @ gText_Rom_1E07B9
 	goto EventScript_JP_081E0573
 	.byte 0x02
 EventScript_JP_081E0533: @ 0x081E0533
@@ -397,7 +397,7 @@ EventScript_JP_081E0533: @ 0x081E0533
 	.byte 0x03
 	.2byte 0x0298
 	.2byte 0x0000
-	.4byte 0x081E07B9 @ gText_Rom_1E07B9
+	.4byte gText_Rom_1E07B9 @ gText_Rom_1E07B9
 	goto EventScript_JP_081E0573
 	.byte 0x02
 EventScript_JP_081E0543: @ 0x081E0543
@@ -406,7 +406,7 @@ EventScript_JP_081E0543: @ 0x081E0543
 	.byte 0x03
 	.2byte 0x0296
 	.2byte 0x0000
-	.4byte 0x081E0A72 @ gText_Rom_1E0A72
+	.4byte gText_Rom_1E0A72 @ gText_Rom_1E0A72
 	goto EventScript_JP_081E05DF
 	.byte 0x02
 EventScript_JP_081E0553: @ 0x081E0553
@@ -415,7 +415,7 @@ EventScript_JP_081E0553: @ 0x081E0553
 	.byte 0x03
 	.2byte 0x0297
 	.2byte 0x0000
-	.4byte 0x081E0A72 @ gText_Rom_1E0A72
+	.4byte gText_Rom_1E0A72 @ gText_Rom_1E0A72
 	goto EventScript_JP_081E05DF
 	.byte 0x02
 EventScript_JP_081E0563: @ 0x081E0563
@@ -424,7 +424,7 @@ EventScript_JP_081E0563: @ 0x081E0563
 	.byte 0x03
 	.2byte 0x0295
 	.2byte 0x0000
-	.4byte 0x081E0A72 @ gText_Rom_1E0A72
+	.4byte gText_Rom_1E0A72 @ gText_Rom_1E0A72
 	goto EventScript_JP_081E05DF
 	.byte 0x02
 EventScript_JP_081E0573: @ 0x081E0573

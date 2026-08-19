@@ -1944,37 +1944,37 @@ sWindowTemplate_TradingBoardRequestType:
 sTradingBoardTypes: @ 0x082C21A4
 	.4byte gTypeNames @ TYPE_NORMAL
 	.4byte 0
-	.4byte 0x082EBCBA @ TYPE_FIRE
+	.4byte gTypeName_Fire @ TYPE_FIRE
 	.4byte 10
-	.4byte 0x082EBCBF @ TYPE_WATER
+	.4byte gTypeName_Water @ TYPE_WATER
 	.4byte 11
-	.4byte 0x082EBCC9 @ TYPE_ELECTRIC
+	.4byte gTypeName_Electric @ TYPE_ELECTRIC
 	.4byte 13
-	.4byte 0x082EBCC4 @ TYPE_GRASS
+	.4byte gTypeName_Grass @ TYPE_GRASS
 	.4byte 12
-	.4byte 0x082EBCD3 @ TYPE_ICE
+	.4byte gTypeName_Ice @ TYPE_ICE
 	.4byte 15
-	.4byte 0x082EBC9C @ TYPE_GROUND
+	.4byte gTypeName_Ground @ TYPE_GROUND
 	.4byte 4
-	.4byte 0x082EBCA1 @ TYPE_ROCK
+	.4byte gTypeName_Rock @ TYPE_ROCK
 	.4byte 5
-	.4byte 0x082EBC92 @ TYPE_FLYING
+	.4byte gTypeName_Flying @ TYPE_FLYING
 	.4byte 2
-	.4byte 0x082EBCCE @ TYPE_PSYCHIC
+	.4byte gTypeName_Psychic @ TYPE_PSYCHIC
 	.4byte 14
-	.4byte 0x082EBC8D @ TYPE_FIGHTING
+	.4byte gTypeName_Fighting @ TYPE_FIGHTING
 	.4byte 1
-	.4byte 0x082EBC97 @ TYPE_POISON
+	.4byte gTypeName_Poison @ TYPE_POISON
 	.4byte 3
-	.4byte 0x082EBCA6 @ TYPE_BUG
+	.4byte gTypeName_Bug @ TYPE_BUG
 	.4byte 6
-	.4byte 0x082EBCAB @ TYPE_GHOST
+	.4byte gTypeName_Ghost @ TYPE_GHOST
 	.4byte 7
-	.4byte 0x082EBCD8 @ TYPE_DRAGON
+	.4byte gTypeName_Dragon @ TYPE_DRAGON
 	.4byte 16
-	.4byte 0x082EBCB0 @ TYPE_STEEL
+	.4byte gTypeName_Steel @ TYPE_STEEL
 	.4byte 8
-	.4byte 0x082EBCDD @ TYPE_DARK
+	.4byte gTypeName_Dark @ TYPE_DARK
 	.4byte 17
 	.4byte gText_Rom_2C1D50 @ sText_Exit
 	.4byte 18

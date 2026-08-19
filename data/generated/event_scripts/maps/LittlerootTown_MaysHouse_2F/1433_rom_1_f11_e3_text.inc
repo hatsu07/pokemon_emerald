@@ -12307,8 +12307,8 @@ EventScript_JP_082022C6: @ 0x082022C6
 	.byte 0x01
 	.2byte 0x0109
 	.2byte 0x0000
-	.4byte 0x08202722 @ gText_Rom_202722
-	.4byte 0x082027A3 @ gText_Rom_2027A3
+	.4byte gText_Rom_202722 @ gText_Rom_202722
+	.4byte gText_Rom_2027A3 @ gText_Rom_2027A3
 	.4byte 0x082022FB @ EventScript_JP_082022FB
 	specialvar_ 0x800D, 0x0039
 	compare_var_to_value 0x800D, 0x0001
@@ -12352,9 +12352,9 @@ EventScript_JP_0820235D: @ 0x0820235D
 	.byte 0x07
 	.2byte 0x0109
 	.2byte 0x0000
-	.4byte 0x08202ACB @ gText_Rom_202ACB
-	.4byte 0x08202B2A @ gText_Rom_202B2A
-	.4byte 0x08202B8B @ gText_Rom_202B8B
+	.4byte gText_Rom_202ACB @ gText_Rom_202ACB
+	.4byte gText_Rom_202B2A @ gText_Rom_202B2A
+	.4byte gText_Rom_202B8B @ gText_Rom_202B8B
 	loadword 0x00, gText_Rom_202B41
 	callstd 0x06
 	end
@@ -12365,8 +12365,8 @@ EventScript_JP_08202378: @ 0x08202378
 	.byte 0x00
 	.2byte 0x0140
 	.2byte 0x0000
-	.4byte 0x08202612 @ gText_Rom_202612
-	.4byte 0x08202636 @ gText_Rom_202636
+	.4byte gText_Rom_202612 @ gText_Rom_202612
+	.4byte gText_Rom_202636 @ gText_Rom_202636
 	loadword 0x00, gText_Rom_202647
 	callstd 0x06
 	end
@@ -12377,8 +12377,8 @@ EventScript_JP_0820238F: @ 0x0820238F
 	.byte 0x00
 	.2byte 0x0141
 	.2byte 0x0000
-	.4byte 0x08202665 @ gText_Rom_202665
-	.4byte 0x0820268E @ gText_Rom_20268E
+	.4byte gText_Rom_202665 @ gText_Rom_202665
+	.4byte gText_Rom_20268E @ gText_Rom_20268E
 	loadword 0x00, gText_Rom_20269A
 	callstd 0x06
 	end
@@ -12389,8 +12389,8 @@ EventScript_JP_082023A6: @ 0x082023A6
 	.byte 0x00
 	.2byte 0x023B
 	.2byte 0x0000
-	.4byte 0x082026C0 @ gText_Rom_2026C0
-	.4byte 0x082026DB @ gText_Rom_2026DB
+	.4byte gText_Rom_2026C0 @ gText_Rom_2026C0
+	.4byte gText_Rom_2026DB @ gText_Rom_2026DB
 	loadword 0x00, gText_Rom_2026F4
 	callstd 0x06
 	end

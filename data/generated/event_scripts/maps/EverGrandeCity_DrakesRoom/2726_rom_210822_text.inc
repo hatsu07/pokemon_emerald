@@ -69,7 +69,7 @@ EventScript_JP_08210926: @ 0x08210926
 	.byte 0x03
 	.2byte 0x014F
 	.2byte 0x0000
-	.4byte 0x08210C82 @ gText_Rom_210C82
+	.4byte gText_Rom_210C82 @ gText_Rom_210C82
 	goto EventScript_JP_08210942
 	.byte 0x02
 EventScript_JP_08210942: @ 0x08210942

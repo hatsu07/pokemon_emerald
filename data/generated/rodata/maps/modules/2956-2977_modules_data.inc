@@ -117,7 +117,7 @@ sLandmarkInfo_085989C0: @ 0x085989C0
 	.2byte 0x089C
 	.2byte 0
 sLandmarkInfo_085989C8: @ 0x085989C8
-	.4byte 0x0859885D
+	.4byte gText_Rom_59885D
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_085989D0: @ 0x085989D0
@@ -125,7 +125,7 @@ sLandmarkInfo_085989D0: @ 0x085989D0
 	.2byte 0x089D
 	.2byte 0
 sLandmarkInfo_085989D8: @ 0x085989D8
-	.4byte 0x0859886E
+	.4byte gText_Rom_59886E
 	.2byte 0x089E
 	.2byte 0
 sLandmarkInfo_085989E0: @ 0x085989E0
@@ -141,7 +141,7 @@ sLandmarkInfo_085989F0: @ 0x085989F0
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_085989F8: @ 0x085989F8
-	.4byte 0x0859888F
+	.4byte gText_Rom_59888F
 	.2byte 0x08A0
 	.2byte 0
 sLandmarkInfo_08598A00: @ 0x08598A00
@@ -153,7 +153,7 @@ sLandmarkInfo_08598A08: @ 0x08598A08
 	.2byte 0x08A1
 	.2byte 0
 sLandmarkInfo_08598A10: @ 0x08598A10
-	.4byte 0x085988A8
+	.4byte gText_Rom_5988A8
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_08598A18: @ 0x08598A18
@@ -173,7 +173,7 @@ sLandmarkInfo_08598A30: @ 0x08598A30
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_08598A38: @ 0x08598A38
-	.4byte 0x085988D6
+	.4byte gText_Rom_5988D6
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_08598A40: @ 0x08598A40
@@ -181,7 +181,7 @@ sLandmarkInfo_08598A40: @ 0x08598A40
 	.2byte 0x08BA
 	.2byte 0
 sLandmarkInfo_08598A48: @ 0x08598A48
-	.4byte 0x085988EA
+	.4byte gText_Rom_5988EA
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_08598A50: @ 0x08598A50
@@ -257,7 +257,7 @@ sLandmarkInfo_08598AD8: @ 0x08598AD8
 	.2byte 0x08BB
 	.2byte 0
 sLandmarkInfo_08598AE0: @ 0x08598AE0
-	.4byte 0x08598948
+	.4byte gText_Rom_598948
 	.2byte 0x08BE
 	.2byte 0
 sLandmarkInfo_08598AE8: @ 0x08598AE8

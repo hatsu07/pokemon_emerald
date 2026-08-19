@@ -472,9 +472,9 @@ EventScript_JP_082541EE: @ 0x082541EE
 	.byte 0x06
 	.2byte 0x0033
 	.2byte 0x0000
-	.4byte 0x08252E99 @ gText_Rom_252E99
-	.4byte 0x08252F11 @ gText_Rom_252F11
-	.4byte 0x0825322F @ gText_Rom_25322F
+	.4byte gText_Rom_252E99 @ gText_Rom_252E99
+	.4byte gText_Rom_252F11 @ gText_Rom_252F11
+	.4byte gText_Rom_25322F @ gText_Rom_25322F
 	.4byte 0x0825436E @ EventScript_JP_0825436E
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
@@ -487,9 +487,9 @@ EventScript_JP_0825420E: @ 0x0825420E
 	.byte 0x06
 	.2byte 0x0033
 	.2byte 0x0000
-	.4byte 0x082532E3 @ gText_Rom_2532E3
-	.4byte 0x0825339D @ gText_Rom_25339D
-	.4byte 0x0825335D @ gText_Rom_25335D
+	.4byte gText_Rom_2532E3 @ gText_Rom_2532E3
+	.4byte gText_Rom_25339D @ gText_Rom_25339D
+	.4byte gText_Rom_25335D @ gText_Rom_25335D
 	.4byte 0x0825436E @ EventScript_JP_0825436E
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
@@ -502,9 +502,9 @@ EventScript_JP_0825422E: @ 0x0825422E
 	.byte 0x06
 	.2byte 0x0034
 	.2byte 0x0000
-	.4byte 0x08252ED4 @ gText_Rom_252ED4
-	.4byte 0x082532C0 @ gText_Rom_2532C0
-	.4byte 0x0825322F @ gText_Rom_25322F
+	.4byte gText_Rom_252ED4 @ gText_Rom_252ED4
+	.4byte gText_Rom_2532C0 @ gText_Rom_2532C0
+	.4byte gText_Rom_25322F @ gText_Rom_25322F
 	.4byte 0x082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
@@ -517,9 +517,9 @@ EventScript_JP_0825424E: @ 0x0825424E
 	.byte 0x06
 	.2byte 0x0034
 	.2byte 0x0000
-	.4byte 0x08253312 @ gText_Rom_253312
-	.4byte 0x082533BF @ gText_Rom_2533BF
-	.4byte 0x0825335D @ gText_Rom_25335D
+	.4byte gText_Rom_253312 @ gText_Rom_253312
+	.4byte gText_Rom_2533BF @ gText_Rom_2533BF
+	.4byte gText_Rom_25335D @ gText_Rom_25335D
 	.4byte 0x082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
@@ -532,9 +532,9 @@ EventScript_JP_0825426E: @ 0x0825426E
 	.byte 0x06
 	.2byte 0x0035
 	.2byte 0x0000
-	.4byte 0x08252ED4 @ gText_Rom_252ED4
-	.4byte 0x082532C0 @ gText_Rom_2532C0
-	.4byte 0x0825322F @ gText_Rom_25322F
+	.4byte gText_Rom_252ED4 @ gText_Rom_252ED4
+	.4byte gText_Rom_2532C0 @ gText_Rom_2532C0
+	.4byte gText_Rom_25322F @ gText_Rom_25322F
 	.4byte 0x082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
@@ -547,9 +547,9 @@ EventScript_JP_0825428E: @ 0x0825428E
 	.byte 0x06
 	.2byte 0x0035
 	.2byte 0x0000
-	.4byte 0x08253312 @ gText_Rom_253312
-	.4byte 0x082533BF @ gText_Rom_2533BF
-	.4byte 0x0825335D @ gText_Rom_25335D
+	.4byte gText_Rom_253312 @ gText_Rom_253312
+	.4byte gText_Rom_2533BF @ gText_Rom_2533BF
+	.4byte gText_Rom_25335D @ gText_Rom_25335D
 	.4byte 0x082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
@@ -562,9 +562,9 @@ EventScript_JP_082542AE: @ 0x082542AE
 	.byte 0x06
 	.2byte 0x0036
 	.2byte 0x0000
-	.4byte 0x08252ED4 @ gText_Rom_252ED4
-	.4byte 0x082532C0 @ gText_Rom_2532C0
-	.4byte 0x0825322F @ gText_Rom_25322F
+	.4byte gText_Rom_252ED4 @ gText_Rom_252ED4
+	.4byte gText_Rom_2532C0 @ gText_Rom_2532C0
+	.4byte gText_Rom_25322F @ gText_Rom_25322F
 	.4byte 0x082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
@@ -577,9 +577,9 @@ EventScript_JP_082542CE: @ 0x082542CE
 	.byte 0x06
 	.2byte 0x0036
 	.2byte 0x0000
-	.4byte 0x08253312 @ gText_Rom_253312
-	.4byte 0x082533BF @ gText_Rom_2533BF
-	.4byte 0x0825335D @ gText_Rom_25335D
+	.4byte gText_Rom_253312 @ gText_Rom_253312
+	.4byte gText_Rom_2533BF @ gText_Rom_2533BF
+	.4byte gText_Rom_25335D @ gText_Rom_25335D
 	.4byte 0x082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
@@ -592,9 +592,9 @@ EventScript_JP_082542EE: @ 0x082542EE
 	.byte 0x06
 	.2byte 0x0037
 	.2byte 0x0000
-	.4byte 0x08252ED4 @ gText_Rom_252ED4
-	.4byte 0x082532C0 @ gText_Rom_2532C0
-	.4byte 0x0825322F @ gText_Rom_25322F
+	.4byte gText_Rom_252ED4 @ gText_Rom_252ED4
+	.4byte gText_Rom_2532C0 @ gText_Rom_2532C0
+	.4byte gText_Rom_25322F @ gText_Rom_25322F
 	.4byte 0x082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
@@ -607,9 +607,9 @@ EventScript_JP_0825430E: @ 0x0825430E
 	.byte 0x06
 	.2byte 0x0037
 	.2byte 0x0000
-	.4byte 0x08253312 @ gText_Rom_253312
-	.4byte 0x082533BF @ gText_Rom_2533BF
-	.4byte 0x0825335D @ gText_Rom_25335D
+	.4byte gText_Rom_253312 @ gText_Rom_253312
+	.4byte gText_Rom_2533BF @ gText_Rom_2533BF
+	.4byte gText_Rom_25335D @ gText_Rom_25335D
 	.4byte 0x082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
@@ -622,9 +622,9 @@ EventScript_JP_0825432E: @ 0x0825432E
 	.byte 0x06
 	.2byte 0x0038
 	.2byte 0x0000
-	.4byte 0x08252ED4 @ gText_Rom_252ED4
-	.4byte 0x082532C0 @ gText_Rom_2532C0
-	.4byte 0x0825322F @ gText_Rom_25322F
+	.4byte gText_Rom_252ED4 @ gText_Rom_252ED4
+	.4byte gText_Rom_2532C0 @ gText_Rom_2532C0
+	.4byte gText_Rom_25322F @ gText_Rom_25322F
 	.4byte 0x082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
@@ -637,9 +637,9 @@ EventScript_JP_0825434E: @ 0x0825434E
 	.byte 0x06
 	.2byte 0x0038
 	.2byte 0x0000
-	.4byte 0x08253312 @ gText_Rom_253312
-	.4byte 0x082533BF @ gText_Rom_2533BF
-	.4byte 0x0825335D @ gText_Rom_25335D
+	.4byte gText_Rom_253312 @ gText_Rom_253312
+	.4byte gText_Rom_2533BF @ gText_Rom_2533BF
+	.4byte gText_Rom_25335D @ gText_Rom_25335D
 	.4byte 0x082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04

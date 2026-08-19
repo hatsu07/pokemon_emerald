@@ -4527,7 +4527,7 @@ sBerryTreeObjectEventGraphicsIdPointerTail_084E4E08: @ 0x084E4E08
 	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE
 	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE
 	.4byte sBerryTreeObjectEventGraphicsIds_084E4BFE
-	.4byte 0x084CFC0C
+	.4byte gFieldEffectObjectPalette0
 	.4byte 0x00001004
 	@ pret/pokeemerald-jp direct xref for 0x084E4E1C: faraway_island.s: sub_081D4110
 	.globl gFarawayIslandData_084E4E1C

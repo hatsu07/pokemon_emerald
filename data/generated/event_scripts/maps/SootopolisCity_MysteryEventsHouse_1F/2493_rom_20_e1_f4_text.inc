@@ -118,8 +118,8 @@ EventScript_JP_0820E31C: @ 0x0820E31C
 	.byte 0x01
 	.2byte 0x0110
 	.2byte 0x0000
-	.4byte 0x0820E56E @ gText_Rom_20E56E
-	.4byte 0x0820E65F @ gText_Rom_20E65F
+	.4byte gText_Rom_20E56E @ gText_Rom_20E56E
+	.4byte gText_Rom_20E65F @ gText_Rom_20E65F
 	.4byte 0x0820E35A @ EventScript_JP_0820E35A
 	specialvar_ 0x800D, 0x0039
 	compare_var_to_value 0x800D, 0x0001
@@ -191,9 +191,9 @@ EventScript_JP_0820E3FD: @ 0x0820E3FD
 	.byte 0x07
 	.2byte 0x0110
 	.2byte 0x0000
-	.4byte 0x0820E912 @ gText_Rom_20E912
-	.4byte 0x0820E97B @ gText_Rom_20E97B
-	.4byte 0x0820EA1D @ gText_Rom_20EA1D
+	.4byte gText_Rom_20E912 @ gText_Rom_20E912
+	.4byte gText_Rom_20E97B @ gText_Rom_20E97B
+	.4byte gText_Rom_20EA1D @ gText_Rom_20EA1D
 	loadword 0x00, gText_Rom_20E99E
 	callstd 0x06
 	end

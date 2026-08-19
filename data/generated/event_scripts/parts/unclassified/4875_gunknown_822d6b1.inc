@@ -55,8 +55,8 @@ EventScript_JP_0822D718: @ 0x0822D718
 	.byte 0x09
 	.2byte 0x01EE
 	.2byte 0x0000
-	.4byte 0x0822D756 @ gText_Rom_22D756
-	.4byte 0x0822D756 @ gText_Rom_22D756
+	.4byte gText_Rom_22D756 @ gText_Rom_22D756
+	.4byte gText_Rom_22D756 @ gText_Rom_22D756
 	setvar 0x8004, 0x000A
 	@ event command: special
 	.byte 0x25

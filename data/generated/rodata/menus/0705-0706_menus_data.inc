@@ -111,7 +111,7 @@ sVersionBannerRightSpriteTemplate:
 	rodata_sprite_template 0x03E8, 0x03E8, sVersionBannerRightOamData, sVersionBannerRightAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCB_VersionBannerRight
 	.globl sSpriteSheet_EmeraldVersion
 sSpriteSheet_EmeraldVersion:
-	.4byte 0x0851938C
+	.4byte gTitleScreenEmeraldVersion_Gfx
 	.2byte 0x1000, 0x03E8
 	.fill 8, 1, 0
 sOamData_CopyrightBanner: @ 0x0851ACF4
@@ -144,12 +144,12 @@ sStartCopyrightBannerSpriteTemplate:
 	rodata_sprite_template 0x03E9, 0x03E9, sOamData_CopyrightBanner, sStartCopyrightBannerAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCB_PressStartCopyrightBanner
 	.globl sSpriteSheet_PressStart
 sSpriteSheet_PressStart:
-	.4byte 0x085176F4
+	.4byte gTitleScreenPressStart_Gfx
 	.2byte 0x0520, 0x03E9
 	.fill 8, 1, 0
 	.globl sSpritePalette_PressStart
 sSpritePalette_PressStart:
-	.4byte 0x085176D4
+	.4byte gTitleScreenPressStart_Pal
 	.2byte 0x03E9, 0
 	.fill 8, 1, 0
 sPokemonLogoShineOamData: @ 0x0851ADAC
@@ -163,6 +163,6 @@ sPokemonLogoShineSpriteTemplate:
 	rodata_sprite_template 0x03EA, 0x03E9, sPokemonLogoShineOamData, sPokemonLogoShineAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCB_PokemonLogoShine
 	.globl sPokemonLogoShineSpriteSheet
 sPokemonLogoShineSpriteSheet:
-	.4byte 0x0851A598
+	.4byte gTitleScreenLogoShine_Gfx
 	.2byte 0x0800, 0x03EA
 	.fill 8, 1, 0

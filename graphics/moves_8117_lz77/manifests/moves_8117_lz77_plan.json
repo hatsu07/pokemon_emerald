@@ -4,7 +4,7 @@
   "branch": "issue27-fix_inc_files",
   "head": "0d2fc29c30b3a30f93c5be6aea1333816caeef2f",
   "target_file": "data/generated/rodata/moves/8117_moves_data.inc",
-  "output_root": "graphics/unknown/moves_8117_lz77",
+  "output_root": "graphics/moves_8117_lz77",
   "segments": [
     {
       "kind": "RAW_RANGE",
@@ -134,7 +134,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 48,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0000_rom_00C12AA4_w48h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0000_rom_00C12AA4_w48h64.4bpp",
       "png_rel": "graphics/battle_interface/unused_window3_jp.png",
       "roundtrip_ok": true
     },
@@ -155,7 +155,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0001_rom_00C12BE0_w64h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0001_rom_00C12BE0_w64h128.4bpp",
       "png_rel": "graphics/battle_interface/unused_window4_jp.png",
       "roundtrip_ok": true
     },
@@ -176,7 +176,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0002_rom_00C12E90_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0002_rom_00C12E90_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/fury_swipes.png",
       "roundtrip_ok": true
     },
@@ -197,7 +197,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0003_rom_00C1313C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0003_rom_00C1313C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/fury_swipes_palette.png",
       "roundtrip_ok": true
     },
@@ -218,7 +218,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 80,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0004_rom_00C13164_w64h80.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0004_rom_00C13164_w64h80.4bpp",
       "png_rel": "graphics/battle_anims/sprites/vine_2.png",
       "roundtrip_ok": true
     },
@@ -239,7 +239,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0005_rom_00C133A0_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0005_rom_00C133A0_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/vine_2_palette.png",
       "roundtrip_ok": true
     },
@@ -260,7 +260,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0006_rom_00C133BC_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0006_rom_00C133BC_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/teeth.png",
       "roundtrip_ok": true
     },
@@ -281,7 +281,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0007_rom_00C13554_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0007_rom_00C13554_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/teeth_palette.png",
       "roundtrip_ok": true
     },
@@ -302,7 +302,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0008_rom_00C13570_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0008_rom_00C13570_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/bone_2.png",
       "roundtrip_ok": true
     },
@@ -323,7 +323,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0009_rom_00C13800_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0009_rom_00C13800_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/bone_2_palette.png",
       "roundtrip_ok": true
     },
@@ -344,7 +344,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0010_rom_00C13828_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0010_rom_00C13828_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/white_bag.png",
       "roundtrip_ok": true
     },
@@ -365,7 +365,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0011_rom_00C1391C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0011_rom_00C1391C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/white_bag_palette.png",
       "roundtrip_ok": true
     },
@@ -386,7 +386,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 8,
       "height": 16,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0012_rom_00C13944_w8h16.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0012_rom_00C13944_w8h16.4bpp",
       "png_rel": "graphics/battle_anims/sprites/unknown.png",
       "roundtrip_ok": true
     },
@@ -407,7 +407,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0013_rom_00C13970_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0013_rom_00C13970_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/unknown_palette.png",
       "roundtrip_ok": true
     },
@@ -428,7 +428,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 24,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0014_rom_00C13994_w24h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0014_rom_00C13994_w24h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/purple_coral.png",
       "roundtrip_ok": true
     },
@@ -449,7 +449,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0015_rom_00C13A90_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0015_rom_00C13A90_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/purple_coral_palette.png",
       "roundtrip_ok": true
     },
@@ -470,7 +470,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 48,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0016_rom_00C13AAC_w48h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0016_rom_00C13AAC_w48h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/purple_droplet.png",
       "roundtrip_ok": true
     },
@@ -491,7 +491,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 48,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0017_rom_00C13BE8_w48h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0017_rom_00C13BE8_w48h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/shock_2.png",
       "roundtrip_ok": true
     },
@@ -512,7 +512,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0018_rom_00C13E80_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0018_rom_00C13E80_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/shock_2_palette.png",
       "roundtrip_ok": true
     },
@@ -533,7 +533,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0019_rom_00C13EA8_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0019_rom_00C13EA8_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/closing_eye_2.png",
       "roundtrip_ok": true
     },
@@ -554,7 +554,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0020_rom_00C13F94_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0020_rom_00C13F94_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/closing_eye_2_palette.png",
       "roundtrip_ok": true
     },
@@ -575,7 +575,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 16,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0021_rom_00C13FBC_w16h16.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0021_rom_00C13FBC_w16h16.4bpp",
       "png_rel": "graphics/battle_anims/sprites/metal_ball.png",
       "roundtrip_ok": true
     },
@@ -596,7 +596,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0022_rom_00C14024_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0022_rom_00C14024_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/metal_ball_palette.png",
       "roundtrip_ok": true
     },
@@ -617,7 +617,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0023_rom_00C14044_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0023_rom_00C14044_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/monster_doll.png",
       "roundtrip_ok": true
     },
@@ -638,7 +638,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0024_rom_00C141E4_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0024_rom_00C141E4_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/monster_doll_palette.png",
       "roundtrip_ok": true
     },
@@ -659,7 +659,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0025_rom_00C14208_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0025_rom_00C14208_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/whirlwind.png",
       "roundtrip_ok": true
     },
@@ -680,7 +680,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0026_rom_00C14474_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0026_rom_00C14474_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/whirlwind_palette.png",
       "roundtrip_ok": true
     },
@@ -701,7 +701,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 16,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0027_rom_00C14494_w16h16.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0027_rom_00C14494_w16h16.4bpp",
       "png_rel": "graphics/battle_anims/sprites/whirlwind_2.png",
       "roundtrip_ok": true
     },
@@ -722,7 +722,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 80,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0028_rom_00C144F8_w64h80.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0028_rom_00C144F8_w64h80.4bpp",
       "png_rel": "graphics/battle_anims/sprites/explosion_4.png",
       "roundtrip_ok": true
     },
@@ -743,7 +743,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0029_rom_00C148C8_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0029_rom_00C148C8_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/explosion_4_palette.png",
       "roundtrip_ok": true
     },
@@ -764,7 +764,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 40,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0030_rom_00C148F0_w32h40.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0030_rom_00C148F0_w32h40.4bpp",
       "png_rel": "graphics/battle_anims/sprites/explosion_5.png",
       "roundtrip_ok": true
     },
@@ -785,7 +785,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 40,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0031_rom_00C14A60_w32h40.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0031_rom_00C14A60_w32h40.4bpp",
       "png_rel": "graphics/battle_anims/sprites/tongue.png",
       "roundtrip_ok": true
     },
@@ -806,7 +806,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0032_rom_00C14B60_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0032_rom_00C14B60_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/tongue_palette.png",
       "roundtrip_ok": true
     },
@@ -827,7 +827,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0033_rom_00C14B80_w16h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0033_rom_00C14B80_w16h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/smoke.png",
       "roundtrip_ok": true
     },
@@ -848,7 +848,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0034_rom_00C14BFC_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0034_rom_00C14BFC_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/smoke_palette.png",
       "roundtrip_ok": true
     },
@@ -869,7 +869,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0035_rom_00C14C24_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0035_rom_00C14C24_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/smoke_2.png",
       "roundtrip_ok": true
     },
@@ -890,7 +890,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0036_rom_00C14CF4_w32h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0036_rom_00C14CF4_w32h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/blue_flames.png",
       "roundtrip_ok": true
     },
@@ -911,7 +911,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0037_rom_00C14F30_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0037_rom_00C14F30_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/blue_flames_palette.png",
       "roundtrip_ok": true
     },
@@ -932,7 +932,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0038_rom_00C14F58_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0038_rom_00C14F58_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/blue_flames_2.png",
       "roundtrip_ok": true
     },
@@ -953,7 +953,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 128,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0039_rom_00C1502C_w128h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0039_rom_00C1502C_w128h128.4bpp",
       "png_rel": "graphics/contest/japanese/composite_1.png",
       "roundtrip_ok": true
     },
@@ -974,7 +974,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0040_rom_00C15940_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0040_rom_00C15940_w32h32.4bpp",
       "png_rel": "graphics/contest/japanese/palette_palette.png",
       "roundtrip_ok": true
     },
@@ -993,7 +993,7 @@
       "raw_sha1": "94ec5720066efeb5c471deab5917f005a8bb2c9f",
       "compressed_sha1": "821b4c37233a33743f0a450f66848d48b53168ed",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0041_rom_00C15A44_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0041_rom_00C15A44_w64h64.4bpp",
       "png_rel": "graphics/contest/japanese/bg.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -1012,7 +1012,7 @@
       "raw_sha1": "8ab16cbb6cb646001f36475bb75f84a2d794c557",
       "compressed_sha1": "90f3520e30a48c1ebaca4972068fef7d9253d534",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0042_rom_00C15BC8_w64h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0042_rom_00C15BC8_w64h128.4bpp",
       "png_rel": "graphics/contest/japanese/windows.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -1033,7 +1033,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 128,
       "height": 256,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0043_rom_00C15E88_w128h256.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0043_rom_00C15E88_w128h256.4bpp",
       "png_rel": "graphics/contest/japanese/composite_2.png",
       "roundtrip_ok": true
     },
@@ -1054,7 +1054,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0044_rom_00C16E98_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0044_rom_00C16E98_w32h32.4bpp",
       "png_rel": "graphics/contest/interface_palette.png",
       "roundtrip_ok": true
     },
@@ -1073,7 +1073,7 @@
       "raw_sha1": "fba9d3afc6d2899f97a7951b5274a82995943f34",
       "compressed_sha1": "cf0bb24cf1eef3e824e36d67e49ff64ee22bc91a",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0045_rom_00C16FB0_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0045_rom_00C16FB0_w64h64.4bpp",
       "png_rel": "graphics/contest/audience.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -1092,7 +1092,7 @@
       "raw_sha1": "11fc73b7e819ca49b198f687c8d74af5aefd8f08",
       "compressed_sha1": "c5e59c3ae0f46991db33651e617a546f57b302e5",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0046_rom_00C17178_w64h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0046_rom_00C17178_w64h128.4bpp",
       "png_rel": "graphics/contest/interface.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -1111,7 +1111,7 @@
       "raw_sha1": "f1e38ca7b617388c9f9355c916cbf0e4ed3b026b",
       "compressed_sha1": "c4ebe7478873fa66f4f431cada536eac3bbd759b",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0047_rom_00C17418_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0047_rom_00C17418_w64h64.4bpp",
       "png_rel": "graphics/contest/japanese/interface.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -1130,7 +1130,7 @@
       "raw_sha1": "5bc14132c4d3a529c91f0ece6f56883afbe06171",
       "compressed_sha1": "91b1356ba890cabfb5276cc0d9028b278011f50e",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0048_rom_00C17524_w128h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0048_rom_00C17524_w128h128.4bpp",
       "png_rel": "graphics/contest/japanese/audience.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -1149,7 +1149,7 @@
       "raw_sha1": "9a6096f92c02db3a28bff548867dd184fa318931",
       "compressed_sha1": "0245f7c130dd8205cab0144534bf610b769a1d2d",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0049_rom_00C17988_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0049_rom_00C17988_w64h64.4bpp",
       "png_rel": "graphics/contest/curtain.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -1170,7 +1170,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 128,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0050_rom_00C17AB8_w128h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0050_rom_00C17AB8_w128h128.4bpp",
       "png_rel": "graphics/contest/interface.png",
       "roundtrip_ok": true
     },
@@ -1191,7 +1191,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 128,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0051_rom_00C18650_w128h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0051_rom_00C18650_w128h128.4bpp",
       "png_rel": "graphics/contest/audience.png",
       "roundtrip_ok": true
     },
@@ -1212,7 +1212,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 24,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0052_rom_00C192AC_w24h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0052_rom_00C192AC_w24h32.4bpp",
       "png_rel": "graphics/contest/faces.png",
       "roundtrip_ok": true
     },
@@ -1233,7 +1233,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 56,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0053_rom_00C193C8_w32h56.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0053_rom_00C193C8_w32h56.4bpp",
       "png_rel": "graphics/contest/judge_symbols.png",
       "roundtrip_ok": true
     },
@@ -1254,7 +1254,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0054_rom_00C1956C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0054_rom_00C1956C_pal.gbapal",
       "png_rel": "graphics/contest/judge_symbols_palette.png",
       "roundtrip_ok": true
     },
@@ -1275,7 +1275,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 48,
       "height": 48,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0055_rom_00C195B4_w48h48.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0055_rom_00C195B4_w48h48.4bpp",
       "png_rel": "graphics/contest/japanese/voltage.png",
       "roundtrip_ok": true
     },
@@ -1296,7 +1296,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0056_rom_00C196A4_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0056_rom_00C196A4_pal.gbapal",
       "png_rel": "graphics/contest/japanese/voltage_palette.png",
       "roundtrip_ok": true
     },
@@ -1317,7 +1317,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 128,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0057_rom_00C196CC_w128h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0057_rom_00C196CC_w128h128.4bpp",
       "png_rel": "graphics/contest/results_screen/tiles.png",
       "roundtrip_ok": true
     },
@@ -1336,7 +1336,7 @@
       "raw_sha1": "5266c31292917acf397f8998b8236f6b8eea5f9b",
       "compressed_sha1": "9590baadbb9cc1e519f6ac4f794ee6c9ffa6d7a8",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0058_rom_00C19F34_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0058_rom_00C19F34_w64h64.4bpp",
       "png_rel": "graphics/contest/results_screen/winner_banner.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -1355,7 +1355,7 @@
       "raw_sha1": "259d3a6fffd03a129088b64fc419fa5be389fe4b",
       "compressed_sha1": "7fe284bc1bff5c3eaf1e71cfe60da1441ad45e5b",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0059_rom_00C1A048_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0059_rom_00C1A048_w64h64.4bpp",
       "png_rel": "graphics/contest/results_screen/interface.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -1374,7 +1374,7 @@
       "raw_sha1": "c66377dfa56ada0a325d1315917e359695baa4c9",
       "compressed_sha1": "981c1e00277420ff63fbe679ac6b2284b903bfc6",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0060_rom_00C1A174_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0060_rom_00C1A174_w64h64.4bpp",
       "png_rel": "graphics/contest/results_screen/bg.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -1395,7 +1395,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0061_rom_00C1A2FC_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0061_rom_00C1A2FC_w32h32.4bpp",
       "png_rel": "graphics/contest/results_screen/tiles_palette.png",
       "roundtrip_ok": true
     },
@@ -1416,7 +1416,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0062_rom_00C1A3E8_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0062_rom_00C1A3E8_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/impact.png",
       "roundtrip_ok": true
     },
@@ -1437,7 +1437,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0063_rom_00C1A4C0_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0063_rom_00C1A4C0_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/impact_palette.png",
       "roundtrip_ok": true
     },
@@ -1458,7 +1458,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0064_rom_00C1A4D8_w16h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0064_rom_00C1A4D8_w16h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/particles.png",
       "roundtrip_ok": true
     },
@@ -1479,7 +1479,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0065_rom_00C1A588_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0065_rom_00C1A588_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/circle_impact.png",
       "roundtrip_ok": true
     },
@@ -1500,7 +1500,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0066_rom_00C1A5AC_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0066_rom_00C1A5AC_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/circle_impact_palette.png",
       "roundtrip_ok": true
     },
@@ -1521,7 +1521,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 80,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0067_rom_00C1A5D4_w64h80.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0067_rom_00C1A5D4_w64h80.4bpp",
       "png_rel": "graphics/battle_anims/sprites/scratch.png",
       "roundtrip_ok": true
     },
@@ -1542,7 +1542,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0068_rom_00C1A7D8_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0068_rom_00C1A7D8_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/sharp_teeth.png",
       "roundtrip_ok": true
     },
@@ -1563,7 +1563,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0069_rom_00C1A9C8_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0069_rom_00C1A9C8_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/sharp_teeth_palette.png",
       "roundtrip_ok": true
     },
@@ -1584,7 +1584,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0070_rom_00C1A9E8_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0070_rom_00C1A9E8_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/clamp.png",
       "roundtrip_ok": true
     },
@@ -1605,7 +1605,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0071_rom_00C1AB88_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0071_rom_00C1AB88_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/cut.png",
       "roundtrip_ok": true
     },
@@ -1626,7 +1626,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 24,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0072_rom_00C1ACD4_w16h24.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0072_rom_00C1ACD4_w16h24.4bpp",
       "png_rel": "graphics/battle_anims/sprites/rainbow_rings.png",
       "roundtrip_ok": true
     },
@@ -1647,7 +1647,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0073_rom_00C1AD54_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0073_rom_00C1AD54_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/rainbow_rings_palette.png",
       "roundtrip_ok": true
     },
@@ -1668,7 +1668,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 56,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0074_rom_00C1AD74_w16h56.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0074_rom_00C1AD74_w16h56.4bpp",
       "png_rel": "graphics/battle_anims/sprites/ice_crystal.png",
       "roundtrip_ok": true
     },
@@ -1689,7 +1689,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0075_rom_00C1AE7C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0075_rom_00C1AE7C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/ice_crystals_palette.png",
       "roundtrip_ok": true
     },
@@ -1710,7 +1710,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0076_rom_00C1AE9C_w16h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0076_rom_00C1AE9C_w16h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/ice_spikes.png",
       "roundtrip_ok": true
     },
@@ -1731,7 +1731,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0077_rom_00C1AEFC_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0077_rom_00C1AEFC_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/unused/old_beatup.png",
       "roundtrip_ok": true
     },
@@ -1752,7 +1752,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0078_rom_00C1AF98_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0078_rom_00C1AF98_pal.gbapal",
       "png_rel": "graphics/battle_anims/unused/old_beatup_palette.png",
       "roundtrip_ok": true
     },
@@ -1773,7 +1773,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 24,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0079_rom_00C1AFB4_w24h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0079_rom_00C1AFB4_w24h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/orbs.png",
       "roundtrip_ok": true
     },
@@ -1794,7 +1794,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0080_rom_00C1B0C8_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0080_rom_00C1B0C8_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/orbs_palette.png",
       "roundtrip_ok": true
     },
@@ -1815,7 +1815,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0081_rom_00C1B0F0_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0081_rom_00C1B0F0_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/water_orb.png",
       "roundtrip_ok": true
     },
@@ -1836,7 +1836,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0082_rom_00C1B1C0_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0082_rom_00C1B1C0_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/water_impact.png",
       "roundtrip_ok": true
     },
@@ -1857,7 +1857,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0083_rom_00C1B2A4_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0083_rom_00C1B2A4_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/water_impact_palette.png",
       "roundtrip_ok": true
     },
@@ -1878,7 +1878,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0084_rom_00C1B2C4_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0084_rom_00C1B2C4_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/brown_orb_palette.png",
       "roundtrip_ok": true
     },
@@ -1899,7 +1899,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 8,
       "height": 40,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0085_rom_00C1B2E4_w8h40.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0085_rom_00C1B2E4_w8h40.4bpp",
       "png_rel": "graphics/battle_anims/sprites/mud_san.png",
       "roundtrip_ok": true
     },
@@ -1920,7 +1920,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0086_rom_00C1B34C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0086_rom_00C1B34C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/mud_sand_palette.png",
       "roundtrip_ok": true
     },
@@ -1941,7 +1941,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 24,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0087_rom_00C1B370_w24h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0087_rom_00C1B370_w24h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/poison_bubble.png",
       "roundtrip_ok": true
     },
@@ -1962,7 +1962,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0088_rom_00C1B444_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0088_rom_00C1B444_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/poison_bubble_palette.png",
       "roundtrip_ok": true
     },
@@ -1983,7 +1983,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0089_rom_00C1B460_w32h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0089_rom_00C1B460_w32h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/toxic_bubble.png",
       "roundtrip_ok": true
     },
@@ -2004,7 +2004,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0090_rom_00C1B558_w16h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0090_rom_00C1B558_w16h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/horn_hit_2.png",
       "roundtrip_ok": true
     },
@@ -2025,7 +2025,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0091_rom_00C1B5C4_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0091_rom_00C1B5C4_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/horn_hit_2_palette.png",
       "roundtrip_ok": true
     },
@@ -2046,7 +2046,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0092_rom_00C1B5DC_w16h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0092_rom_00C1B5DC_w16h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/air_wave_2.png",
       "roundtrip_ok": true
     },
@@ -2067,7 +2067,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0093_rom_00C1B688_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0093_rom_00C1B688_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/air_wave_2_palette.png",
       "roundtrip_ok": true
     },
@@ -2088,7 +2088,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 40,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0094_rom_00C1B6A8_w16h40.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0094_rom_00C1B6A8_w16h40.4bpp",
       "png_rel": "graphics/battle_anims/sprites/small_bubbles.png",
       "roundtrip_ok": true
     },
@@ -2109,7 +2109,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0095_rom_00C1B770_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0095_rom_00C1B770_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/small_bubbles_palette.png",
       "roundtrip_ok": true
     },
@@ -2130,7 +2130,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0096_rom_00C1B790_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0096_rom_00C1B790_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/round_shadow.png",
       "roundtrip_ok": true
     },
@@ -2151,7 +2151,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0097_rom_00C1B9A8_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0097_rom_00C1B9A8_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/round_shadow_palette.png",
       "roundtrip_ok": true
     },
@@ -2172,7 +2172,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0098_rom_00C1B9D0_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0098_rom_00C1B9D0_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/sunlight.png",
       "roundtrip_ok": true
     },
@@ -2193,7 +2193,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0099_rom_00C1BA34_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0099_rom_00C1BA34_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/sunlight_palette.png",
       "roundtrip_ok": true
     },
@@ -2214,7 +2214,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0100_rom_00C1BA4C_w16h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0100_rom_00C1BA4C_w16h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/spore.png",
       "roundtrip_ok": true
     },
@@ -2235,7 +2235,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0101_rom_00C1BB14_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0101_rom_00C1BB14_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/spore_palette.png",
       "roundtrip_ok": true
     },
@@ -2256,7 +2256,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 8,
       "height": 40,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0102_rom_00C1BB38_w8h40.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0102_rom_00C1BB38_w8h40.4bpp",
       "png_rel": "graphics/battle_anims/sprites/flowe.png",
       "roundtrip_ok": true
     },
@@ -2277,7 +2277,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0103_rom_00C1BBB4_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0103_rom_00C1BBB4_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/flower_palette.png",
       "roundtrip_ok": true
     },
@@ -2298,7 +2298,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0104_rom_00C1BBDC_w16h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0104_rom_00C1BBDC_w16h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/razor_leaf.png",
       "roundtrip_ok": true
     },
@@ -2319,7 +2319,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0105_rom_00C1BC84_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0105_rom_00C1BC84_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/razor_leaf_palette.png",
       "roundtrip_ok": true
     },
@@ -2340,7 +2340,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0106_rom_00C1BCAC_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0106_rom_00C1BCAC_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/mist_cloud.png",
       "roundtrip_ok": true
     },
@@ -2361,7 +2361,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0107_rom_00C1BD24_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0107_rom_00C1BD24_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/mist_cloud_palette.png",
       "roundtrip_ok": true
     },
@@ -2382,7 +2382,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 8,
       "height": 24,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0108_rom_00C1BD44_w8h24.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0108_rom_00C1BD44_w8h24.4bpp",
       "png_rel": "graphics/battle_anims/unused/lights.png",
       "roundtrip_ok": true
     },
@@ -2403,7 +2403,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0109_rom_00C1BD6C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0109_rom_00C1BD6C_pal.gbapal",
       "png_rel": "graphics/battle_anims/unused/lights_palette.png",
       "roundtrip_ok": true
     },
@@ -2422,7 +2422,7 @@
       "raw_sha1": "e7052491ad2b22fe08a5f1c1751f44d22f517569",
       "compressed_sha1": "977df392c1b359bab72e35e9caa76e3d4e4e726e",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0110_rom_00C1BD84_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0110_rom_00C1BD84_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/unused/lights.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -2443,7 +2443,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 48,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0111_rom_00C1BE88_w32h48.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0111_rom_00C1BE88_w32h48.4bpp",
       "png_rel": "graphics/battle_anims/sprites/whirlwind_lines.png",
       "roundtrip_ok": true
     },
@@ -2464,7 +2464,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0112_rom_00C1BF0C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0112_rom_00C1BF0C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/whirlwind_lines_palette.png",
       "roundtrip_ok": true
     },
@@ -2485,7 +2485,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0113_rom_00C1BF2C_w16h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0113_rom_00C1BF2C_w16h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/gold_ring.png",
       "roundtrip_ok": true
     },
@@ -2506,7 +2506,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0114_rom_00C1BF8C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0114_rom_00C1BF8C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/gold_ring_palette.png",
       "roundtrip_ok": true
     },
@@ -2527,7 +2527,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0115_rom_00C1BFA4_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0115_rom_00C1BFA4_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/blue_ring_2_palette.png",
       "roundtrip_ok": true
     },
@@ -2548,7 +2548,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0116_rom_00C1BFBC_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0116_rom_00C1BFBC_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/purple_ring_palette.png",
       "roundtrip_ok": true
     },
@@ -2569,7 +2569,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0117_rom_00C1BFD4_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0117_rom_00C1BFD4_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/blue_ring_palette.png",
       "roundtrip_ok": true
     },
@@ -2590,7 +2590,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0118_rom_00C1BFEC_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0118_rom_00C1BFEC_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/green_light_wall.png",
       "roundtrip_ok": true
     },
@@ -2611,7 +2611,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0119_rom_00C1C2F8_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0119_rom_00C1C2F8_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/green_light_wall_palette.png",
       "roundtrip_ok": true
     },
@@ -2632,7 +2632,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0120_rom_00C1C318_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0120_rom_00C1C318_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/blue_light_wall_palette.png",
       "roundtrip_ok": true
     },
@@ -2653,7 +2653,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0121_rom_00C1C338_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0121_rom_00C1C338_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/red_light_wall_palette.png",
       "roundtrip_ok": true
     },
@@ -2674,7 +2674,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0122_rom_00C1C358_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0122_rom_00C1C358_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/gray_light_wall_palette.png",
       "roundtrip_ok": true
     },
@@ -2695,7 +2695,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0123_rom_00C1C378_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0123_rom_00C1C378_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/orange_light_wall_palette.png",
       "roundtrip_ok": true
     },
@@ -2716,7 +2716,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 16,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0124_rom_00C1C398_w16h16.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0124_rom_00C1C398_w16h16.4bpp",
       "png_rel": "graphics/battle_anims/sprites/black_ball_2.png",
       "roundtrip_ok": true
     },
@@ -2737,7 +2737,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0125_rom_00C1C3E4_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0125_rom_00C1C3E4_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/black_ball_2_palette.png",
       "roundtrip_ok": true
     },
@@ -2758,7 +2758,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0126_rom_00C1C40C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0126_rom_00C1C40C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/purple_gas_cloud_palette.png",
       "roundtrip_ok": true
     },
@@ -2779,7 +2779,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0127_rom_00C1C42C_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0127_rom_00C1C42C_w64h64.4bpp",
       "png_rel": "graphics/contest/judge.png",
       "roundtrip_ok": true
     },
@@ -2800,7 +2800,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0128_rom_00C1C700_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0128_rom_00C1C700_pal.gbapal",
       "png_rel": "graphics/contest/judge_palette.png",
       "roundtrip_ok": true
     },
@@ -2821,7 +2821,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 48,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0129_rom_00C1C728_w32h48.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0129_rom_00C1C728_w32h48.4bpp",
       "png_rel": "graphics/battle_anims/sprites/spar.png",
       "roundtrip_ok": true
     },
@@ -2842,7 +2842,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0130_rom_00C1C7DC_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0130_rom_00C1C7DC_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/spark_palette.png",
       "roundtrip_ok": true
     },
@@ -2863,7 +2863,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0131_rom_00C1C804_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0131_rom_00C1C804_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/spark_h.png",
       "roundtrip_ok": true
     },
@@ -2884,7 +2884,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 128,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0132_rom_00C1C88C_w128h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0132_rom_00C1C88C_w128h128.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/dark.png",
       "roundtrip_ok": true
     },
@@ -2905,7 +2905,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0133_rom_00C1CE84_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0133_rom_00C1CE84_pal.gbapal",
       "png_rel": "graphics/battle_anims/backgrounds/dark_palette.png",
       "roundtrip_ok": true
     },
@@ -2926,7 +2926,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0134_rom_00C1CEA4_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0134_rom_00C1CEA4_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/dark.tilemap.u16",
       "roundtrip_ok": true
     },
@@ -2947,7 +2947,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0135_rom_00C1D0F4_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0135_rom_00C1D0F4_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/masks/metal_shine.png",
       "roundtrip_ok": true
     },
@@ -2968,7 +2968,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0136_rom_00C1D230_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0136_rom_00C1D230_pal.gbapal",
       "png_rel": "graphics/battle_anims/masks/metal_shine_palette.png",
       "roundtrip_ok": true
     },
@@ -2987,7 +2987,7 @@
       "raw_sha1": "0baaecbeac6210d691e9997c51ebb0452fc67910",
       "compressed_sha1": "8b04cce55c477e32699a80a726e6cf04f6324371",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0137_rom_00C1D258_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0137_rom_00C1D258_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/masks/metal_shine.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -3008,7 +3008,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 48,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0138_rom_00C1D3CC_w48h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0138_rom_00C1D3CC_w48h64.4bpp",
       "png_rel": "graphics/battle_anims/unused/goosuto.png",
       "roundtrip_ok": true
     },
@@ -3029,7 +3029,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0139_rom_00C1D4DC_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0139_rom_00C1D4DC_pal.gbapal",
       "png_rel": "graphics/battle_anims/unused/goosuto_palette.png",
       "roundtrip_ok": true
     },
@@ -3048,7 +3048,7 @@
       "raw_sha1": "ebe74477b1b06ca60d4afeecdd25edd4dce86a82",
       "compressed_sha1": "84fd156976496b416a56a75614497364437a114b",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0140_rom_00C1D4F4_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0140_rom_00C1D4F4_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/unused/goosuto.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -3069,7 +3069,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0141_rom_00C1D644_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0141_rom_00C1D644_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/yellow_star.png",
       "roundtrip_ok": true
     },
@@ -3090,7 +3090,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0142_rom_00C1D6E4_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0142_rom_00C1D6E4_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/yellow_star_palette.png",
       "roundtrip_ok": true
     },
@@ -3111,7 +3111,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 16,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0143_rom_00C1D70C_w16h16.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0143_rom_00C1D70C_w16h16.4bpp",
       "png_rel": "graphics/battle_anims/sprites/large_fresh_egg.png",
       "roundtrip_ok": true
     },
@@ -3132,7 +3132,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0144_rom_00C1D770_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0144_rom_00C1D770_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/large_fresh_egg_palette.png",
       "roundtrip_ok": true
     },
@@ -3153,7 +3153,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0145_rom_00C1D798_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0145_rom_00C1D798_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/shadow_ball.png",
       "roundtrip_ok": true
     },
@@ -3174,7 +3174,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0146_rom_00C1D8F0_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0146_rom_00C1D8F0_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/shadow_ball_palette.png",
       "roundtrip_ok": true
     },
@@ -3195,7 +3195,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 40,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0147_rom_00C1D918_w40h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0147_rom_00C1D918_w40h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/lick.png",
       "roundtrip_ok": true
     },
@@ -3216,7 +3216,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0148_rom_00C1D9DC_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0148_rom_00C1D9DC_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/lick_palette.png",
       "roundtrip_ok": true
     },
@@ -3237,7 +3237,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0149_rom_00C1D9F4_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0149_rom_00C1D9F4_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/void_lines.png",
       "roundtrip_ok": true
     },
@@ -3258,7 +3258,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0150_rom_00C1DB5C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0150_rom_00C1DB5C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/void_lines_palette.png",
       "roundtrip_ok": true
     },
@@ -3279,7 +3279,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0151_rom_00C1DB84_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0151_rom_00C1DB84_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/string_palette.png",
       "roundtrip_ok": true
     },
@@ -3300,7 +3300,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0152_rom_00C1DBAC_w32h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0152_rom_00C1DBAC_w32h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/string.png",
       "roundtrip_ok": true
     },
@@ -3321,7 +3321,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 8,
       "height": 8,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0153_rom_00C1DC88_w8h8.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0153_rom_00C1DC88_w8h8.4bpp",
       "png_rel": "graphics/battle_anims/sprites/web_thread.png",
       "roundtrip_ok": true
     },
@@ -3342,7 +3342,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0154_rom_00C1DCA0_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0154_rom_00C1DCA0_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/spider_web.png",
       "roundtrip_ok": true
     },
@@ -3363,7 +3363,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0155_rom_00C1E030_w16h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0155_rom_00C1E030_w16h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/lightbulb.png",
       "roundtrip_ok": true
     },
@@ -3384,7 +3384,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0156_rom_00C1E0D4_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0156_rom_00C1E0D4_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/lightbulb_palette.png",
       "roundtrip_ok": true
     },
@@ -3405,7 +3405,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0157_rom_00C1E0FC_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0157_rom_00C1E0FC_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/slash.png",
       "roundtrip_ok": true
     },
@@ -3426,7 +3426,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0158_rom_00C1E374_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0158_rom_00C1E374_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/slash_palette.png",
       "roundtrip_ok": true
     },
@@ -3447,7 +3447,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0159_rom_00C1E39C_w32h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0159_rom_00C1E39C_w32h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/focus_energy.png",
       "roundtrip_ok": true
     },
@@ -3468,7 +3468,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0160_rom_00C1E4F0_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0160_rom_00C1E4F0_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/focus_energy_palette.png",
       "roundtrip_ok": true
     },
@@ -3489,7 +3489,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 80,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0161_rom_00C1E518_w64h80.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0161_rom_00C1E518_w64h80.4bpp",
       "png_rel": "graphics/battle_anims/sprites/sphere_to_cube.png",
       "roundtrip_ok": true
     },
@@ -3510,7 +3510,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0162_rom_00C1E92C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0162_rom_00C1E92C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/sphere_to_cube_palette.png",
       "roundtrip_ok": true
     },
@@ -3531,7 +3531,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0163_rom_00C1E954_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0163_rom_00C1E954_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/psychic.png",
       "roundtrip_ok": true
     },
@@ -3552,7 +3552,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0164_rom_00C1EB24_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0164_rom_00C1EB24_pal.gbapal",
       "png_rel": "graphics/battle_anims/backgrounds/psychic_palette.png",
       "roundtrip_ok": true
     },
@@ -3573,7 +3573,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 40,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0165_rom_00C1EB48_w40h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0165_rom_00C1EB48_w40h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/psychic.tilemap.u16",
       "roundtrip_ok": true
     },
@@ -3594,7 +3594,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0166_rom_00C1EC10_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0166_rom_00C1EC10_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/eye.png",
       "roundtrip_ok": true
     },
@@ -3615,7 +3615,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0167_rom_00C1EE00_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0167_rom_00C1EE00_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/eye_palette.png",
       "roundtrip_ok": true
     },
@@ -3636,7 +3636,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0168_rom_00C1EE20_w64h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0168_rom_00C1EE20_w64h128.4bpp",
       "png_rel": "graphics/battle_anims/sprites/tendrils.png",
       "roundtrip_ok": true
     },
@@ -3657,7 +3657,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0169_rom_00C1F1EC_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0169_rom_00C1F1EC_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/tendrils_palette.png",
       "roundtrip_ok": true
     },
@@ -3678,7 +3678,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0170_rom_00C1F210_w64h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0170_rom_00C1F210_w64h128.4bpp",
       "png_rel": "graphics/battle_interface/healthbox_singles_player.png",
       "roundtrip_ok": true
     },
@@ -3699,7 +3699,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0171_rom_00C1F4D0_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0171_rom_00C1F4D0_w64h64.4bpp",
       "png_rel": "graphics/battle_interface/healthbox_singles_opponent.png",
       "roundtrip_ok": true
     },
@@ -3720,7 +3720,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0172_rom_00C1F660_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0172_rom_00C1F660_w64h64.4bpp",
       "png_rel": "graphics/battle_interface/healthbox_doubles_player.png",
       "roundtrip_ok": true
     },
@@ -3741,7 +3741,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0173_rom_00C1F7F8_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0173_rom_00C1F7F8_w64h64.4bpp",
       "png_rel": "graphics/battle_interface/healthbox_doubles_opponent.png",
       "roundtrip_ok": true
     },
@@ -3762,7 +3762,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0174_rom_00C1F98C_w64h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0174_rom_00C1F98C_w64h128.4bpp",
       "png_rel": "graphics/battle_interface/healthbox_safari.png",
       "roundtrip_ok": true
     },
@@ -3783,7 +3783,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0175_rom_00C1FC04_w16h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0175_rom_00C1FC04_w16h32.4bpp",
       "png_rel": "graphics/unused/shadow.png",
       "roundtrip_ok": true
     },
@@ -3804,7 +3804,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0176_rom_00C1FC64_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0176_rom_00C1FC64_pal.gbapal",
       "png_rel": "graphics/unused/shadow_palette.png",
       "roundtrip_ok": true
     },
@@ -3825,7 +3825,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 40,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0177_rom_00C1FC78_w32h40.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0177_rom_00C1FC78_w32h40.4bpp",
       "png_rel": "graphics/battle_anims/sprites/lock_on.png",
       "roundtrip_ok": true
     },
@@ -3846,7 +3846,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0178_rom_00C1FD0C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0178_rom_00C1FD0C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/lock_on_palette.png",
       "roundtrip_ok": true
     },
@@ -3867,7 +3867,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0179_rom_00C1FD28_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0179_rom_00C1FD28_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/opening_eye.png",
       "roundtrip_ok": true
     },
@@ -3888,7 +3888,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0180_rom_00C1FF84_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0180_rom_00C1FF84_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/opening_eye_palette.png",
       "roundtrip_ok": true
     },
@@ -3909,7 +3909,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0181_rom_00C1FFA8_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0181_rom_00C1FFA8_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/round_white_halo.png",
       "roundtrip_ok": true
     },
@@ -3930,7 +3930,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0182_rom_00C20214_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0182_rom_00C20214_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/round_white_halo_palette.png",
       "roundtrip_ok": true
     },
@@ -3951,7 +3951,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0183_rom_00C2023C_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0183_rom_00C2023C_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/teal_alert.png",
       "roundtrip_ok": true
     },
@@ -3972,7 +3972,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0184_rom_00C202C0_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0184_rom_00C202C0_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/teal_alert_palette.png",
       "roundtrip_ok": true
     },
@@ -3993,7 +3993,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0185_rom_00C202E0_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0185_rom_00C202E0_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/fang_attack.png",
       "roundtrip_ok": true
     },
@@ -4014,7 +4014,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0186_rom_00C20560_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0186_rom_00C20560_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/fang_attack_palette.png",
       "roundtrip_ok": true
     },
@@ -4035,7 +4035,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0187_rom_00C20588_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0187_rom_00C20588_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/purple_hand_outline.png",
       "roundtrip_ok": true
     },
@@ -4056,7 +4056,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0188_rom_00C206E4_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0188_rom_00C206E4_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/purple_hand_outline_palette.png",
       "roundtrip_ok": true
     },
@@ -4077,7 +4077,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 8,
       "height": 24,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0189_rom_00C2070C_w8h24.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0189_rom_00C2070C_w8h24.4bpp",
       "png_rel": "graphics/battle_anims/masks/curse.png",
       "roundtrip_ok": true
     },
@@ -4096,7 +4096,7 @@
       "raw_sha1": "742814517e3fefa591db1d310afea646e81956d0",
       "compressed_sha1": "39f61c18aa0c946a1952ce4cd24296b32f74b6c9",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0190_rom_00C20728_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0190_rom_00C20728_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/masks/curse.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -4117,7 +4117,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0191_rom_00C20828_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0191_rom_00C20828_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/pencil.png",
       "roundtrip_ok": true
     },
@@ -4138,7 +4138,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0192_rom_00C2090C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0192_rom_00C2090C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/pencil_palette.png",
       "roundtrip_ok": true
     },
@@ -4159,7 +4159,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0193_rom_00C20934_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0193_rom_00C20934_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/spiral.png",
       "roundtrip_ok": true
     },
@@ -4180,7 +4180,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0194_rom_00C20CD8_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0194_rom_00C20CD8_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/spiral_palette.png",
       "roundtrip_ok": true
     },
@@ -4201,7 +4201,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0195_rom_00C20CF0_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0195_rom_00C20CF0_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/moon.png",
       "roundtrip_ok": true
     },
@@ -4222,7 +4222,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0196_rom_00C21028_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0196_rom_00C21028_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/moon_palette.png",
       "roundtrip_ok": true
     },
@@ -4243,7 +4243,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0197_rom_00C21050_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0197_rom_00C21050_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/green_sparkle.png",
       "roundtrip_ok": true
     },
@@ -4264,7 +4264,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0198_rom_00C21108_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0198_rom_00C21108_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/green_sparkle_palette.png",
       "roundtrip_ok": true
     },
@@ -4285,7 +4285,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0199_rom_00C21128_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0199_rom_00C21128_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/snore_z.png",
       "roundtrip_ok": true
     },
@@ -4306,7 +4306,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0200_rom_00C21298_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0200_rom_00C21298_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/snore_z_palette.png",
       "roundtrip_ok": true
     },
@@ -4327,7 +4327,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0201_rom_00C212C0_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0201_rom_00C212C0_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/explosion.png",
       "roundtrip_ok": true
     },
@@ -4348,7 +4348,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0202_rom_00C216B0_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0202_rom_00C216B0_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/explosion_palette.png",
       "roundtrip_ok": true
     },
@@ -4369,7 +4369,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0203_rom_00C216D8_w32h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0203_rom_00C216D8_w32h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/nail.png",
       "roundtrip_ok": true
     },
@@ -4390,7 +4390,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0204_rom_00C217A0_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0204_rom_00C217A0_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/nail_palette.png",
       "roundtrip_ok": true
     },
@@ -4411,7 +4411,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0205_rom_00C217BC_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0205_rom_00C217BC_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/ghostly_spirit.png",
       "roundtrip_ok": true
     },
@@ -4432,7 +4432,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0206_rom_00C218FC_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0206_rom_00C218FC_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/ghostly_spirit_palette.png",
       "roundtrip_ok": true
     },
@@ -4453,7 +4453,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 56,
       "height": 96,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0207_rom_00C21918_w56h96.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0207_rom_00C21918_w56h96.4bpp",
       "png_rel": "graphics/battle_anims/sprites/warm_rock.png",
       "roundtrip_ok": true
     },
@@ -4474,7 +4474,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0208_rom_00C21F88_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0208_rom_00C21F88_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/warm_rock_palette.png",
       "roundtrip_ok": true
     },
@@ -4495,7 +4495,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0209_rom_00C21FB0_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0209_rom_00C21FB0_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/punch_impact.png",
       "roundtrip_ok": true
     },
@@ -4516,7 +4516,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0210_rom_00C22124_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0210_rom_00C22124_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/punch_impact_palette.png",
       "roundtrip_ok": true
     },
@@ -4537,7 +4537,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 48,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0211_rom_00C2214C_w48h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0211_rom_00C2214C_w48h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/breaking_egg.png",
       "roundtrip_ok": true
     },
@@ -4558,7 +4558,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0212_rom_00C222B4_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0212_rom_00C222B4_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/breaking_egg_palette.png",
       "roundtrip_ok": true
     },
@@ -4579,7 +4579,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0213_rom_00C222D8_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0213_rom_00C222D8_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/thin_ring.png",
       "roundtrip_ok": true
     },
@@ -4600,7 +4600,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0214_rom_00C22484_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0214_rom_00C22484_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/thin_ring_palette.png",
       "roundtrip_ok": true
     },
@@ -4621,7 +4621,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0215_rom_00C224A8_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0215_rom_00C224A8_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/music_notes_2.png",
       "roundtrip_ok": true
     },
@@ -4642,7 +4642,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 8,
       "height": 40,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0216_rom_00C226B4_w8h40.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0216_rom_00C226B4_w8h40.4bpp",
       "png_rel": "graphics/battle_anims/sprites/music_notes_2_palette.png",
       "roundtrip_ok": true
     },
@@ -4663,7 +4663,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 48,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0217_rom_00C22748_w48h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0217_rom_00C22748_w48h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/bell.png",
       "roundtrip_ok": true
     },
@@ -4684,7 +4684,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0218_rom_00C2297C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0218_rom_00C2297C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/bell_palette.png",
       "roundtrip_ok": true
     },
@@ -4705,7 +4705,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 24,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0219_rom_00C229A0_w24h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0219_rom_00C229A0_w24h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/speed_dust.png",
       "roundtrip_ok": true
     },
@@ -4726,7 +4726,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0220_rom_00C22A6C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0220_rom_00C22A6C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/speed_dust_palette.png",
       "roundtrip_ok": true
     },
@@ -4747,7 +4747,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0221_rom_00C22A90_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0221_rom_00C22A90_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/torn_metal.png",
       "roundtrip_ok": true
     },
@@ -4768,7 +4768,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0222_rom_00C22E80_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0222_rom_00C22E80_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/thought_bubble.png",
       "roundtrip_ok": true
     },
@@ -4789,7 +4789,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0223_rom_00C23188_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0223_rom_00C23188_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/thought_bubble_palette.png",
       "roundtrip_ok": true
     },
@@ -4810,7 +4810,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0224_rom_00C231A8_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0224_rom_00C231A8_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/finger.png",
       "roundtrip_ok": true
     },
@@ -4831,7 +4831,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0225_rom_00C23298_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0225_rom_00C23298_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/finger_palette.png",
       "roundtrip_ok": true
     },
@@ -4852,7 +4852,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 16,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0226_rom_00C232BC_w16h16.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0226_rom_00C232BC_w16h16.4bpp",
       "png_rel": "graphics/battle_anims/sprites/magenta_heart.png",
       "roundtrip_ok": true
     },
@@ -4873,7 +4873,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0227_rom_00C23324_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0227_rom_00C23324_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/pink_heart_palette.png",
       "roundtrip_ok": true
     },
@@ -4894,7 +4894,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0228_rom_00C23344_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0228_rom_00C23344_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/magenta_heart_palette.png",
       "roundtrip_ok": true
     },
@@ -4915,7 +4915,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0229_rom_00C23364_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0229_rom_00C23364_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/red_heart_palette.png",
       "roundtrip_ok": true
     },
@@ -4936,7 +4936,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 128,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0230_rom_00C23384_w128h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0230_rom_00C23384_w128h128.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/attract.png",
       "roundtrip_ok": true
     },
@@ -4957,7 +4957,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0231_rom_00C23DF4_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0231_rom_00C23DF4_pal.gbapal",
       "png_rel": "graphics/battle_anims/backgrounds/attract_palette.png",
       "roundtrip_ok": true
     },
@@ -4976,7 +4976,7 @@
       "raw_sha1": "d8673483f591885be7d8f6a74025ede1b16fa36c",
       "compressed_sha1": "2f7f116e623d49e7df236ffdde7f78ae28b67205",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0232_rom_00C23E1C_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0232_rom_00C23E1C_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/attract.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -4997,7 +4997,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 16,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0233_rom_00C24098_w16h16.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0233_rom_00C24098_w16h16.4bpp",
       "png_rel": "graphics/battle_anims/sprites/red_orb.png",
       "roundtrip_ok": true
     },
@@ -5018,7 +5018,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0234_rom_00C24100_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0234_rom_00C24100_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/red_orb_palette.png",
       "roundtrip_ok": true
     },
@@ -5039,7 +5039,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0235_rom_00C24120_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0235_rom_00C24120_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/circle_of_light.png",
       "roundtrip_ok": true
     },
@@ -5060,7 +5060,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 16,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0236_rom_00C24354_w16h16.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0236_rom_00C24354_w16h16.4bpp",
       "png_rel": "graphics/battle_anims/sprites/electric_orbs.png",
       "roundtrip_ok": true
     },
@@ -5081,7 +5081,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0237_rom_00C243A4_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0237_rom_00C243A4_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/electricity.png",
       "roundtrip_ok": true
     },
@@ -5102,7 +5102,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0238_rom_00C24610_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0238_rom_00C24610_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/electric_orbs_palette.png",
       "roundtrip_ok": true
     },
@@ -5123,7 +5123,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 48,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0239_rom_00C24634_w48h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0239_rom_00C24634_w48h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/finger_2.png",
       "roundtrip_ok": true
     },
@@ -5144,7 +5144,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 48,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0240_rom_00C248C4_w48h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0240_rom_00C248C4_w48h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/movement_waves.png",
       "roundtrip_ok": true
     },
@@ -5165,7 +5165,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0241_rom_00C24A50_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0241_rom_00C24A50_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/movement_waves_palette.png",
       "roundtrip_ok": true
     },
@@ -5186,7 +5186,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0242_rom_00C24A74_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0242_rom_00C24A74_pal.gbapal",
       "png_rel": "graphics/battle_anims/backgrounds/scary_face_palette.png",
       "roundtrip_ok": true
     },
@@ -5207,7 +5207,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 80,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0243_rom_00C24A9C_w64h80.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0243_rom_00C24A9C_w64h80.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/scary_face.png",
       "roundtrip_ok": true
     },
@@ -5228,7 +5228,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0244_rom_00C24CCC_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0244_rom_00C24CCC_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/eye_sparkle_palette.png",
       "roundtrip_ok": true
     },
@@ -5249,7 +5249,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0245_rom_00C24CF4_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0245_rom_00C24CF4_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/eye_sparkle.png",
       "roundtrip_ok": true
     },
@@ -5270,7 +5270,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 16,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0246_rom_00C24DA0_w16h16.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0246_rom_00C24DA0_w16h16.4bpp",
       "png_rel": "graphics/battle_anims/sprites/anger.png",
       "roundtrip_ok": true
     },
@@ -5291,7 +5291,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0247_rom_00C24DF8_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0247_rom_00C24DF8_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/anger_palette.png",
       "roundtrip_ok": true
     },
@@ -5312,7 +5312,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 16,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0248_rom_00C24E20_w16h16.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0248_rom_00C24E20_w16h16.4bpp",
       "png_rel": "graphics/battle_anims/sprites/conversion.png",
       "roundtrip_ok": true
     },
@@ -5333,7 +5333,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0249_rom_00C24E5C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0249_rom_00C24E5C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/conversion_palette.png",
       "roundtrip_ok": true
     },
@@ -5354,7 +5354,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0250_rom_00C24E78_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0250_rom_00C24E78_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/angel_palette.png",
       "roundtrip_ok": true
     },
@@ -5375,7 +5375,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0251_rom_00C24EA0_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0251_rom_00C24EA0_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/angel.png",
       "roundtrip_ok": true
     },
@@ -5396,7 +5396,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0252_rom_00C24FCC_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0252_rom_00C24FCC_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/devil_palette.png",
       "roundtrip_ok": true
     },
@@ -5417,7 +5417,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0253_rom_00C24FEC_w32h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0253_rom_00C24FEC_w32h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/devil.png",
       "roundtrip_ok": true
     },
@@ -5438,7 +5438,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 80,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0254_rom_00C25250_w64h80.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0254_rom_00C25250_w64h80.4bpp",
       "png_rel": "graphics/battle_anims/sprites/swipe.png",
       "roundtrip_ok": true
     },
@@ -5459,7 +5459,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0255_rom_00C2553C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0255_rom_00C2553C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/swipe_palette.png",
       "roundtrip_ok": true
     },
@@ -5480,7 +5480,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0256_rom_00C25564_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0256_rom_00C25564_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/roots_palette.png",
       "roundtrip_ok": true
     },
@@ -5501,7 +5501,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0257_rom_00C25584_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0257_rom_00C25584_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/roots.png",
       "roundtrip_ok": true
     },
@@ -5522,7 +5522,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0258_rom_00C25818_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0258_rom_00C25818_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/item_bag_palette.png",
       "roundtrip_ok": true
     },
@@ -5543,7 +5543,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0259_rom_00C25838_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0259_rom_00C25838_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/item_bag.png",
       "roundtrip_ok": true
     },
@@ -5564,7 +5564,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0260_rom_00C25934_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0260_rom_00C25934_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/tri_attack_triangle_palette.png",
       "roundtrip_ok": true
     },
@@ -5585,7 +5585,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0261_rom_00C2595C_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0261_rom_00C2595C_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/tri_attack_triangle.png",
       "roundtrip_ok": true
     },
@@ -5606,7 +5606,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0262_rom_00C25BA0_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0262_rom_00C25BA0_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/letter_z_palette.png",
       "roundtrip_ok": true
     },
@@ -5627,7 +5627,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0263_rom_00C25BC0_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0263_rom_00C25BC0_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/letter_z.png",
       "roundtrip_ok": true
     },
@@ -5648,7 +5648,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0264_rom_00C25C68_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0264_rom_00C25C68_pal.gbapal",
       "png_rel": "graphics/battle_anims/backgrounds/impact_palette.png",
       "roundtrip_ok": true
     },
@@ -5669,7 +5669,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 128,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0265_rom_00C25C90_w128h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0265_rom_00C25C90_w128h128.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/impact.png",
       "roundtrip_ok": true
     },
@@ -5690,7 +5690,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 40,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0266_rom_00C269FC_w40h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0266_rom_00C269FC_w40h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/impact_opponent.tilemap.u16",
       "roundtrip_ok": true
     },
@@ -5711,7 +5711,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 40,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0267_rom_00C26EF8_w40h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0267_rom_00C26EF8_w40h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/impact_player.tilemap.u16",
       "roundtrip_ok": true
     },
@@ -5732,7 +5732,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 40,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0268_rom_00C273C8_w40h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0268_rom_00C273C8_w40h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/impact_contests.tilemap.u16",
       "roundtrip_ok": true
     },
@@ -5753,7 +5753,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0269_rom_00C27808_w32h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0269_rom_00C27808_w32h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/jagged_music_note.png",
       "roundtrip_ok": true
     },
@@ -5774,7 +5774,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0270_rom_00C2798C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0270_rom_00C2798C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/jagged_music_note_palette.png",
       "roundtrip_ok": true
     },
@@ -5795,7 +5795,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0271_rom_00C279B4_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0271_rom_00C279B4_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/spotlight.png",
       "roundtrip_ok": true
     },
@@ -5816,7 +5816,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 16,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0272_rom_00C27AFC_w16h16.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0272_rom_00C27AFC_w16h16.4bpp",
       "png_rel": "graphics/battle_anims/sprites/pokeball.png",
       "roundtrip_ok": true
     },
@@ -5837,7 +5837,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0273_rom_00C27B88_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0273_rom_00C27B88_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/pokeball_palette.png",
       "roundtrip_ok": true
     },
@@ -5858,7 +5858,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 48,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0274_rom_00C27BAC_w32h48.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0274_rom_00C27BAC_w32h48.4bpp",
       "png_rel": "graphics/battle_anims/sprites/rapid_spin.png",
       "roundtrip_ok": true
     },
@@ -5879,7 +5879,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0275_rom_00C27D68_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0275_rom_00C27D68_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/rapid_spin_palette.png",
       "roundtrip_ok": true
     },
@@ -5900,7 +5900,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0276_rom_00C27D90_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0276_rom_00C27D90_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/milk_bottle.png",
       "roundtrip_ok": true
     },
@@ -5921,7 +5921,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0277_rom_00C27EB0_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0277_rom_00C27EB0_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/milk_bottle_palette.png",
       "roundtrip_ok": true
     },
@@ -5942,7 +5942,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0278_rom_00C27ED8_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0278_rom_00C27ED8_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/wisp_fire.png",
       "roundtrip_ok": true
     },
@@ -5963,7 +5963,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0279_rom_00C28410_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0279_rom_00C28410_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/wisp_orb_palette.png",
       "roundtrip_ok": true
     },
@@ -5984,7 +5984,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 56,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0280_rom_00C28438_w32h56.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0280_rom_00C28438_w32h56.4bpp",
       "png_rel": "graphics/battle_anims/sprites/wisp_orb.png",
       "roundtrip_ok": true
     },
@@ -6005,7 +6005,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 24,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0281_rom_00C28608_w16h24.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0281_rom_00C28608_w16h24.4bpp",
       "png_rel": "graphics/battle_anims/sprites/gold_stars.png",
       "roundtrip_ok": true
     },
@@ -6026,7 +6026,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0282_rom_00C2868C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0282_rom_00C2868C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/gold_stars_palette.png",
       "roundtrip_ok": true
     },
@@ -6047,7 +6047,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0283_rom_00C286B4_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0283_rom_00C286B4_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/eclipsing_orb.png",
       "roundtrip_ok": true
     },
@@ -6068,7 +6068,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0284_rom_00C28874_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0284_rom_00C28874_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/eclipsing_orb_palette.png",
       "roundtrip_ok": true
     },
@@ -6089,7 +6089,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 16,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0285_rom_00C28898_w16h16.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0285_rom_00C28898_w16h16.4bpp",
       "png_rel": "graphics/battle_anims/sprites/pink_petal.png",
       "roundtrip_ok": true
     },
@@ -6110,7 +6110,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0286_rom_00C28900_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0286_rom_00C28900_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/pink_petal_palette.png",
       "roundtrip_ok": true
     },
@@ -6131,7 +6131,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 8,
       "height": 24,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0287_rom_00C28924_w8h24.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0287_rom_00C28924_w8h24.4bpp",
       "png_rel": "graphics/battle_anims/sprites/gray_orb.png",
       "roundtrip_ok": true
     },
@@ -6152,7 +6152,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0288_rom_00C28974_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0288_rom_00C28974_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/gray_orb_palette.png",
       "roundtrip_ok": true
     },
@@ -6173,7 +6173,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0289_rom_00C28990_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0289_rom_00C28990_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/blue_orb_palette.png",
       "roundtrip_ok": true
     },
@@ -6194,7 +6194,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0290_rom_00C289AC_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0290_rom_00C289AC_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/red_orb_2_palette.png",
       "roundtrip_ok": true
     },
@@ -6215,7 +6215,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0291_rom_00C289C8_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0291_rom_00C289C8_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/drill.png",
       "roundtrip_ok": true
     },
@@ -6236,7 +6236,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0292_rom_00C28B70_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0292_rom_00C28B70_pal.gbapal",
       "png_rel": "graphics/battle_anims/backgrounds/drill_palette.png",
       "roundtrip_ok": true
     },
@@ -6257,7 +6257,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0293_rom_00C28B98_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0293_rom_00C28B98_pal.gbapal",
       "png_rel": "graphics/battle_anims/backgrounds/sky_palette.png",
       "roundtrip_ok": true
     },
@@ -6278,7 +6278,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0294_rom_00C28BC0_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0294_rom_00C28BC0_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/drill.tilemap.u16",
       "roundtrip_ok": true
     },
@@ -6299,7 +6299,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0295_rom_00C28D50_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0295_rom_00C28D50_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/drill_contests.tilemap.u16",
       "roundtrip_ok": true
     },
@@ -6320,7 +6320,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0296_rom_00C28EDC_w64h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0296_rom_00C28EDC_w64h128.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/aurora.png",
       "roundtrip_ok": true
     },
@@ -6341,7 +6341,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0297_rom_00C29904_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0297_rom_00C29904_pal.gbapal",
       "png_rel": "graphics/battle_anims/backgrounds/aurora_palette.png",
       "roundtrip_ok": true
     },
@@ -6362,7 +6362,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0298_rom_00C29924_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0298_rom_00C29924_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/aurora.tilemap.u16",
       "roundtrip_ok": true
     },
@@ -6383,7 +6383,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0299_rom_00C29B28_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0299_rom_00C29B28_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/highspeed_opponent.tilemap.u16",
       "roundtrip_ok": true
     },
@@ -6404,7 +6404,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0300_rom_00C29E20_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0300_rom_00C29E20_pal.gbapal",
       "png_rel": "graphics/battle_anims/backgrounds/highspeed_palette.png",
       "roundtrip_ok": true
     },
@@ -6425,7 +6425,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0301_rom_00C29E40_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0301_rom_00C29E40_pal.gbapal",
       "png_rel": "graphics/battle_anims/backgrounds/bug_palette.png",
       "roundtrip_ok": true
     },
@@ -6446,7 +6446,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0302_rom_00C29E60_w64h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0302_rom_00C29E60_w64h128.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/highspeed.png",
       "roundtrip_ok": true
     },
@@ -6467,7 +6467,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0303_rom_00C2A3E0_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0303_rom_00C2A3E0_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/highspeed_player.tilemap.u16",
       "roundtrip_ok": true
     },
@@ -6488,7 +6488,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 40,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0304_rom_00C2A6D8_w32h40.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0304_rom_00C2A6D8_w32h40.4bpp",
       "png_rel": "graphics/battle_anims/masks/light_beam.png",
       "roundtrip_ok": true
     },
@@ -6509,7 +6509,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0305_rom_00C2A778_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0305_rom_00C2A778_pal.gbapal",
       "png_rel": "graphics/battle_anims/masks/light_beam_palette.png",
       "roundtrip_ok": true
     },
@@ -6528,7 +6528,7 @@
       "raw_sha1": "43d5d6199e104832c4f23ac888885ad626165715",
       "compressed_sha1": "29eebb549479c583c15beafe4f3277fbe8ea4326",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0306_rom_00C2A790_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0306_rom_00C2A790_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/masks/light_beam.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -6549,7 +6549,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0307_rom_00C2A8AC_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0307_rom_00C2A8AC_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/guillotine_opponent.tilemap.u16",
       "roundtrip_ok": true
     },
@@ -6570,7 +6570,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0308_rom_00C2AB74_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0308_rom_00C2AB74_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/guillotine_player.tilemap.u16",
       "roundtrip_ok": true
     },
@@ -6591,7 +6591,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0309_rom_00C2AE70_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0309_rom_00C2AE70_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/guillotine_contests.tilemap.u16",
       "roundtrip_ok": true
     },
@@ -6612,7 +6612,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 128,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0310_rom_00C2B100_w128h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0310_rom_00C2B100_w128h128.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/guillotine.png",
       "roundtrip_ok": true
     },
@@ -6633,7 +6633,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0311_rom_00C2BE68_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0311_rom_00C2BE68_pal.gbapal",
       "png_rel": "graphics/battle_anims/backgrounds/guillotine_palette.png",
       "roundtrip_ok": true
     },
@@ -6654,7 +6654,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 80,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0312_rom_00C2BE88_w80h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0312_rom_00C2BE88_w80h128.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/thunder.png",
       "roundtrip_ok": true
     },
@@ -6675,7 +6675,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0313_rom_00C2C824_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0313_rom_00C2C824_pal.gbapal",
       "png_rel": "graphics/battle_anims/backgrounds/thunder_palette.png",
       "roundtrip_ok": true
     },
@@ -6696,7 +6696,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0314_rom_00C2C84C_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0314_rom_00C2C84C_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/backgrounds/thunder.tilemap.u16",
       "roundtrip_ok": true
     },
@@ -6717,7 +6717,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 24,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0315_rom_00C2CB44_w24h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0315_rom_00C2CB44_w24h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/pain_split.png",
       "roundtrip_ok": true
     },
@@ -6738,7 +6738,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0316_rom_00C2CC28_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0316_rom_00C2CC28_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/pain_split_palette.png",
       "roundtrip_ok": true
     },
@@ -6759,7 +6759,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0317_rom_00C2CC50_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0317_rom_00C2CC50_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/hands_and_feet.png",
       "roundtrip_ok": true
     },
@@ -6780,7 +6780,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0318_rom_00C2CE80_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0318_rom_00C2CE80_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/hands_and_feet_palette.png",
       "roundtrip_ok": true
     },
@@ -6801,7 +6801,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 24,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0319_rom_00C2CE98_w24h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0319_rom_00C2CE98_w24h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/confetti.png",
       "roundtrip_ok": true
     },
@@ -6822,7 +6822,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0320_rom_00C2CF38_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0320_rom_00C2CF38_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/confetti_palette.png",
       "roundtrip_ok": true
     },
@@ -6843,7 +6843,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0321_rom_00C2CF60_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0321_rom_00C2CF60_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/substitute_palette.png",
       "roundtrip_ok": true
     },
@@ -6864,7 +6864,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0322_rom_00C2CF84_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0322_rom_00C2CF84_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/substitute.png",
       "roundtrip_ok": true
     },
@@ -6885,7 +6885,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0323_rom_00C2D1C4_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0323_rom_00C2D1C4_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/substitute_back.png",
       "roundtrip_ok": true
     },
@@ -6906,7 +6906,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0324_rom_00C2D3EC_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0324_rom_00C2D3EC_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/green_star.png",
       "roundtrip_ok": true
     },
@@ -6927,7 +6927,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0325_rom_00C2D4B0_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0325_rom_00C2D4B0_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/green_star_palette.png",
       "roundtrip_ok": true
     },
@@ -6948,7 +6948,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 8,
       "height": 136,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0326_rom_00C2D4CC_w8h136.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0326_rom_00C2D4CC_w8h136.4bpp",
       "png_rel": "graphics/misc/confetti.png",
       "roundtrip_ok": true
     },
@@ -6969,7 +6969,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0327_rom_00C2D5EC_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0327_rom_00C2D5EC_pal.gbapal",
       "png_rel": "graphics/misc/confetti_palette.png",
       "roundtrip_ok": true
     },
@@ -6990,7 +6990,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0328_rom_00C2D614_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0328_rom_00C2D614_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/pink_cloud.png",
       "roundtrip_ok": true
     },
@@ -7011,7 +7011,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0329_rom_00C2D750_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0329_rom_00C2D750_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/pink_cloud_palette.png",
       "roundtrip_ok": true
     },
@@ -7032,7 +7032,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 8,
       "height": 8,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0330_rom_00C2D774_w8h8.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0330_rom_00C2D774_w8h8.4bpp",
       "png_rel": "graphics/battle_anims/sprites/sweat_drop.png",
       "roundtrip_ok": true
     },
@@ -7053,7 +7053,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0331_rom_00C2D79C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0331_rom_00C2D79C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/sweat_drop_palette.png",
       "roundtrip_ok": true
     },
@@ -7074,7 +7074,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0332_rom_00C2D7C4_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0332_rom_00C2D7C4_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/stat_change/tiles.png",
       "roundtrip_ok": true
     },
@@ -7093,7 +7093,7 @@
       "raw_sha1": "93525026ce77defb8c67dea2aabfe1f9d3a9cff0",
       "compressed_sha1": "8d1a6d8380c7e15c330683658a93f1719e4b432b",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0333_rom_00C2D9D4_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0333_rom_00C2D9D4_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/stat_change/increase.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -7112,7 +7112,7 @@
       "raw_sha1": "a9d21975dd32e98f3b30d6893e710db073c5d3d8",
       "compressed_sha1": "2f5b3e2284f04a48a6278485b2fd9bf00b382b66",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0334_rom_00C2DAF0_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0334_rom_00C2DAF0_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/stat_change/decrease.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -7133,7 +7133,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0335_rom_00C2DC0C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0335_rom_00C2DC0C_pal.gbapal",
       "png_rel": "graphics/battle_anims/stat_change/defense_palette.png",
       "roundtrip_ok": true
     },
@@ -7154,7 +7154,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0336_rom_00C2DC2C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0336_rom_00C2DC2C_pal.gbapal",
       "png_rel": "graphics/battle_anims/stat_change/attack_palette.png",
       "roundtrip_ok": true
     },
@@ -7175,7 +7175,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0337_rom_00C2DC4C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0337_rom_00C2DC4C_pal.gbapal",
       "png_rel": "graphics/battle_anims/stat_change/accuracy_palette.png",
       "roundtrip_ok": true
     },
@@ -7196,7 +7196,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0338_rom_00C2DC6C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0338_rom_00C2DC6C_pal.gbapal",
       "png_rel": "graphics/battle_anims/stat_change/speed_palette.png",
       "roundtrip_ok": true
     },
@@ -7217,7 +7217,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0339_rom_00C2DC8C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0339_rom_00C2DC8C_pal.gbapal",
       "png_rel": "graphics/battle_anims/stat_change/multiple_palette.png",
       "roundtrip_ok": true
     },
@@ -7238,7 +7238,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0340_rom_00C2DCAC_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0340_rom_00C2DCAC_pal.gbapal",
       "png_rel": "graphics/battle_anims/stat_change/evasion_palette.png",
       "roundtrip_ok": true
     },
@@ -7259,7 +7259,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0341_rom_00C2DCCC_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0341_rom_00C2DCCC_pal.gbapal",
       "png_rel": "graphics/battle_anims/stat_change/sp_attack_palette.png",
       "roundtrip_ok": true
     },
@@ -7280,7 +7280,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0342_rom_00C2DCEC_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0342_rom_00C2DCEC_pal.gbapal",
       "png_rel": "graphics/battle_anims/stat_change/sp_defense_palette.png",
       "roundtrip_ok": true
     },
@@ -7301,7 +7301,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0343_rom_00C2DD0C_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0343_rom_00C2DD0C_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/masks/cure_bubbles.png",
       "roundtrip_ok": true
     },
@@ -7322,7 +7322,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0344_rom_00C2DE48_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0344_rom_00C2DE48_pal.gbapal",
       "png_rel": "graphics/battle_anims/masks/cure_bubbles_palette.png",
       "roundtrip_ok": true
     },
@@ -7341,7 +7341,7 @@
       "raw_sha1": "a310e2a95f42bfa68758ef95bb8cacd800a0131d",
       "compressed_sha1": "97da2835dd167e5446606c70114bcabcc4473678",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0345_rom_00C2DE68_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0345_rom_00C2DE68_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/masks/cure_bubbles.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -7362,7 +7362,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0346_rom_00C2DF84_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0346_rom_00C2DF84_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/purple_scratch_palette.png",
       "roundtrip_ok": true
     },
@@ -7383,7 +7383,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 48,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0347_rom_00C2DFAC_w48h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0347_rom_00C2DFAC_w48h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/purple_scratch.png",
       "roundtrip_ok": true
     },
@@ -7404,7 +7404,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 128,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0348_rom_00C2E150_w64h128.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0348_rom_00C2E150_w64h128.4bpp",
       "png_rel": "graphics/battle_anims/sprites/purple_swipe.png",
       "roundtrip_ok": true
     },
@@ -7425,7 +7425,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0349_rom_00C2E5F8_w32h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0349_rom_00C2E5F8_w32h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/guard_ring.png",
       "roundtrip_ok": true
     },
@@ -7446,7 +7446,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0350_rom_00C2E6D4_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0350_rom_00C2E6D4_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/guard_ring_palette.png",
       "roundtrip_ok": true
     },
@@ -7467,7 +7467,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0351_rom_00C2E6F0_w32h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0351_rom_00C2E6F0_w32h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/tag_hand.png",
       "roundtrip_ok": true
     },
@@ -7488,7 +7488,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0352_rom_00C2E8D4_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0352_rom_00C2E8D4_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/noise_line.png",
       "roundtrip_ok": true
     },
@@ -7509,7 +7509,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 56,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0353_rom_00C2EAF4_w16h56.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0353_rom_00C2EAF4_w16h56.4bpp",
       "png_rel": "graphics/battle_anims/masks/unused_level_up.png",
       "roundtrip_ok": true
     },
@@ -7528,7 +7528,7 @@
       "raw_sha1": "ccb90a7bf0939e99254d5260a932a1d582a3b7bc",
       "compressed_sha1": "5d45ddc662a443fd3296f4e27f255716c9bec9f9",
       "kind": "tilemap_csv_u16",
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0354_rom_00C2EB40_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0354_rom_00C2EB40_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/masks/unused_level_up.tilemap.csv",
       "roundtrip_ok": true
     },
@@ -7549,7 +7549,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0355_rom_00C2EC48_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0355_rom_00C2EC48_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/small_red_eye.png",
       "roundtrip_ok": true
     },
@@ -7570,7 +7570,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0356_rom_00C2EC60_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0356_rom_00C2EC60_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/small_red_eye_palette.png",
       "roundtrip_ok": true
     },
@@ -7591,7 +7591,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 16,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0357_rom_00C2EC78_w16h16.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0357_rom_00C2EC78_w16h16.4bpp",
       "png_rel": "graphics/battle_anims/sprites/hollow_orb.png",
       "roundtrip_ok": true
     },
@@ -7612,7 +7612,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0358_rom_00C2ECC8_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0358_rom_00C2ECC8_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/hollow_orb_palette.png",
       "roundtrip_ok": true
     },
@@ -7633,7 +7633,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0359_rom_00C2ECE8_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0359_rom_00C2ECE8_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/x_sign.png",
       "roundtrip_ok": true
     },
@@ -7654,7 +7654,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 16,
       "height": 16,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0360_rom_00C2EEDC_w16h16.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0360_rom_00C2EEDC_w16h16.4bpp",
       "png_rel": "graphics/battle_anims/sprites/bluegreen_orb.png",
       "roundtrip_ok": true
     },
@@ -7675,7 +7675,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0361_rom_00C2EF40_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0361_rom_00C2EF40_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/bluegreen_orb_palette.png",
       "roundtrip_ok": true
     },
@@ -7696,7 +7696,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0362_rom_00C2EF58_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0362_rom_00C2EF58_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/paw_print.png",
       "roundtrip_ok": true
     },
@@ -7717,7 +7717,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0363_rom_00C2F070_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0363_rom_00C2F070_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/paw_print_palette.png",
       "roundtrip_ok": true
     },
@@ -7738,7 +7738,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0364_rom_00C2F094_w32h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0364_rom_00C2F094_w32h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/purple_flame.png",
       "roundtrip_ok": true
     },
@@ -7759,7 +7759,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0365_rom_00C2F270_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0365_rom_00C2F270_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/purple_flame_palette.png",
       "roundtrip_ok": true
     },
@@ -7780,7 +7780,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0366_rom_00C2F298_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0366_rom_00C2F298_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/red_ball.png",
       "roundtrip_ok": true
     },
@@ -7801,7 +7801,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0367_rom_00C2F3D0_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0367_rom_00C2F3D0_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/red_ball_palette.png",
       "roundtrip_ok": true
     },
@@ -7822,7 +7822,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0368_rom_00C2F3F8_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0368_rom_00C2F3F8_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/smellingsalt_effect.png",
       "roundtrip_ok": true
     },
@@ -7843,7 +7843,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0369_rom_00C2F470_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0369_rom_00C2F470_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/smellingsalt_effect_palette.png",
       "roundtrip_ok": true
     },
@@ -7864,7 +7864,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 32,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0370_rom_00C2F484_w32h32.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0370_rom_00C2F484_w32h32.4bpp",
       "png_rel": "graphics/battle_anims/sprites/magnifying_glass.png",
       "roundtrip_ok": true
     },
@@ -7885,7 +7885,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0371_rom_00C2F56C_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0371_rom_00C2F56C_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/magnifying_glass_palette.png",
       "roundtrip_ok": true
     },
@@ -7906,7 +7906,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0372_rom_00C2F594_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0372_rom_00C2F594_w64h64.4bpp",
       "png_rel": "graphics/battle_anims/sprites/meteor.png",
       "roundtrip_ok": true
     },
@@ -7927,7 +7927,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0373_rom_00C2F920_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0373_rom_00C2F920_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/meteor_palette.png",
       "roundtrip_ok": true
     },
@@ -7948,7 +7948,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 32,
       "height": 40,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0374_rom_00C2F948_w32h40.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0374_rom_00C2F948_w32h40.4bpp",
       "png_rel": "graphics/battle_anims/sprites/flat_rock.png",
       "roundtrip_ok": true
     },
@@ -7969,7 +7969,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0375_rom_00C2FA64_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0375_rom_00C2FA64_pal.gbapal",
       "png_rel": "graphics/battle_anims/sprites/flat_rock_palette.png",
       "roundtrip_ok": true
     },
@@ -7990,7 +7990,7 @@
       "kind": "palette16",
       "width": 16,
       "height": 1,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0376_rom_00C2FA84_pal.gbapal",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0376_rom_00C2FA84_pal.gbapal",
       "png_rel": "graphics/battle_anims/unused/unknown_2_palette.png",
       "roundtrip_ok": true
     },
@@ -8011,7 +8011,7 @@
       "kind": "4bpp_tiles_preview",
       "width": 64,
       "height": 64,
-      "raw_rel": "graphics/unknown/moves_8117_lz77/raw/stream_0377_rom_00C2FAAC_w64h64.4bpp",
+      "raw_rel": "graphics/moves_8117_lz77/raw/stream_0377_rom_00C2FAAC_w64h64.4bpp",
       "png_rel": "graphics/pokemon/bulbasaur/front_still_jp.png",
       "roundtrip_ok": true
     }
