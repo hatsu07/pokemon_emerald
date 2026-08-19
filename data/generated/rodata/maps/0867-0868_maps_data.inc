@@ -1630,7 +1630,7 @@ sSpriteTemplate_Tag279F_08571CE8: @ 0x08571CE8
 	.4byte sAffineAnims_Tag279F_08571CE8_08571CE4 @ affineAnims
 	.4byte AnimFocusPunchFist @ callback (AnimFocusPunchFist)
 
-sAnim_Tag27A7_08571D18_0_08571D00: @ 0x08571D00
+sAnim_ToxicBubble: @ 0x08571D00
 	@ union AnimCmd stream
 	.2byte 0x0000, 0x0005 @ ANIMCMD_FRAME(0, 5)
 	.2byte 0x0008, 0x0005 @ ANIMCMD_FRAME(8, 5)
@@ -1638,15 +1638,15 @@ sAnim_Tag27A7_08571D18_0_08571D00: @ 0x08571D00
 	.2byte 0x0018, 0x0005 @ ANIMCMD_FRAME(24, 5)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnims_Tag27A7_08571D18_08571D14: @ 0x08571D14
+sAnims_ToxicBubble: @ 0x08571D14
 	@ AnimCmd pointer table
-	.4byte sAnim_Tag27A7_08571D18_0_08571D00 @ [0]
+	.4byte sAnim_ToxicBubble @ [0]
 
-sSpriteTemplate_Tag27A7_08571D18: @ 0x08571D18
+gToxicBubbleSpriteTemplate: @ 0x08571D18
 	@ SpriteTemplate: tileTag=0x27A7, paletteTag=0x27A7
 	.2byte 0x27A7, 0x27A7
 	.4byte gBattleAnimOam_084FD060 @ oam
-	.4byte sAnims_Tag27A7_08571D18_08571D14 @ anims
+	.4byte sAnims_ToxicBubble @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimSpriteOnMonPos @ callback
