@@ -3,8 +3,8 @@
 .text
 .syntax unified
 
-	thumb_func_start sub_0810A9F8
-sub_0810A9F8: @ 0x0810A9F8
+	thumb_func_start AnimLightning
+AnimLightning: @ 0x0810A9F8
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _0810AA18
@@ -42,10 +42,10 @@ _0810AA2C:
 	.align 2, 0
 _0810AA40: .4byte 0x020380BE
 _0810AA44: .4byte 0x0810AA49
-	thumb_func_end sub_0810A9F8
+	thumb_func_end AnimLightning
 
-	thumb_func_start sub_0810AA48
-sub_0810AA48: @ 0x0810AA48
+	thumb_func_start AnimLightning_Step
+AnimLightning_Step: @ 0x0810AA48
 	push {lr}
 	adds r2, r0, #0
 	adds r0, #0x3f
@@ -60,7 +60,7 @@ _0810AA5E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end sub_0810AA48
+	thumb_func_end AnimLightning_Step
 
 	thumb_func_start sub_0810AA64
 sub_0810AA64: @ 0x0810AA64
@@ -2726,7 +2726,7 @@ _0810BEA8:
 	movs r0, #0
 	b _0810BECE
 	.align 2, 0
-_0810BEC0: .4byte gBattleAnimSpriteTemplate_ElectricSpark
+_0810BEC0: .4byte gLightningSpriteTemplate
 _0810BEC4: .4byte 0x020205AC
 _0810BEC8: .4byte 0x0810BED5
 _0810BECC:

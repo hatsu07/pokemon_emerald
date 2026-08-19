@@ -8958,8 +8958,8 @@ fire.s
 0810a8b0 fire.s AnimTask_BlendBackground
 0810a8e4 fire.s sub_0810A8E4_jp
 electric.s
-0810a9f8 electric.s sub_0810A9F8_jp
-0810aa48 electric.s sub_0810AA48_jp
+0810a9f8 electric.s AnimLightning_jp
+0810aa48 electric.s AnimLightning_Step_jp
 0810aa64 electric.s sub_0810AA64_jp
 0810aaa8 electric.s sub_0810AAA8_jp
 0810aac4 electric.s sub_0810AAC4_jp

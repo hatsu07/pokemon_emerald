@@ -641,26 +641,26 @@ sShakeDirsPattern1: @ 0x08571278
 	.byte -1, 0, 1, 0, -1, 1, 0, -1, 0, 1, 0, -1, 0, 1, 0, 1
 	@ ElectricSpark AnimCmd sequence and one-entry animation table.
 	@ ANALYSIS: SEMANTIC_ANIM_CMD_TABLE addr=0x08571288 size=0x1C count=1
-sAnim_ElectricSpark_08571288: @ 0x08571288
+sAnim_Lightning: @ 0x08571288
 	rodata_anim_frame 0, 5
 	rodata_anim_frame 16, 5
 	rodata_anim_frame 32, 8
 	rodata_anim_frame 48, 5
 	rodata_anim_frame 64, 5
 	rodata_anim_end
-sAnims_ElectricSpark_085712A0: @ 0x085712A0
-	.4byte sAnim_ElectricSpark_08571288
+sAnims_BattleLightning: @ 0x085712A0
+	.4byte sAnim_Lightning
 	@ pret/pokeemerald-jp direct xref for 0x085712A4: electric.s: sub_0810BE64
-	.globl gBattleAnimSpriteTemplate_ElectricSpark
-gBattleAnimSpriteTemplate_ElectricSpark: @ 0x085712A4
+	.globl gLightningSpriteTemplate
+gLightningSpriteTemplate: @ 0x085712A4
 	@ analyzed canonical ROM range 0x085712A4-0x0857140B
 	@ pointer/nullable table
 	.4byte 0x27352735 @ +0x0
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x4
-	.4byte sAnims_ElectricSpark_085712A0 @ +0x8
+	.4byte sAnims_BattleLightning @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
-	.4byte sub_0810A9F8 @ +0x14
+	.4byte AnimLightning @ +0x14
 sAffineAnim_UnusedSpinningFist:
 	.4byte 0x01000100 @ +0x18
 	.4byte 0 @ +0x1C

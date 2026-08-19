@@ -4280,38 +4280,38 @@ Move_THUNDER:
 	ba_createvisualtask sub_08116760, 2, 257, 257, 257
 	ba_playsewithpan 0x008A, SOUND_PAN_TARGET
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 2, 16, -36
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 16, -36
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 2, 16, -20
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 16, -20
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 2, 16, 12
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 16, 12
 	ba_delay 20
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 6, -16, -32
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 6, -16, -32
 	ba_playsewithpan 0x008A, SOUND_PAN_TARGET
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 6, -16, -16
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 6, -16, -16
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 6, -16, 16
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 6, -16, 16
 	ba_playsewithpan 0x008A, SOUND_PAN_TARGET
 	ba_delay 5
 	ba_createvisualtask sub_08116760, 2, 257, 257, 257
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 2, 24, -32
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 24, -32
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 2, 24, -16
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 24, -16
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 2, 24, 16
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 24, 16
 	ba_delay 30
 	ba_createvisualtask sub_08116760, 2, 257, 257, 257
 	ba_delay 5
 	ba_createvisualtask sub_08116760, 2, 257, 257, 257
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 2, 0, -32
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -32
 	ba_playsewithpan 0x00DD, SOUND_PAN_TARGET
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 2, 0, -16
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -16
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 2, 0, 16
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, 16
 	ba_delay 10
 	ba_createvisualtask sub_08116760, 2, 257, 257, 257
 	ba_delay 1
@@ -4340,11 +4340,11 @@ Move_THUNDER_PUNCH:
 	ba_delay 1
 	ba_createvisualtask sub_08116760, 2, 257, 257, 257
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 2, 0, -48
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -48
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_ATTACKER, 2, 0, -16
+	ba_createsprite gLightningSpriteTemplate, ANIM_ATTACKER, 2, 0, -16
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_ATTACKER, 2, 0, 16
+	ba_createsprite gLightningSpriteTemplate, ANIM_ATTACKER, 2, 0, 16
 	ba_delay 1
 	ba_playsewithpan 0x00DD, SOUND_PAN_TARGET
 	ba_createvisualtask sub_08116760, 2, 257, 257, 257
@@ -7412,11 +7412,11 @@ Move_TRI_ATTACK:
 	ba_loadspritegfx 0x2735
 	ba_createvisualtask sub_08116760, 2, 257, 257, 257
 	ba_playsewithpan 0x00DD, SOUND_PAN_TARGET
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 2, 0, -48
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -48
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 2, 0, -16
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -16
 	ba_delay 1
-	ba_createsprite gBattleAnimSpriteTemplate_ElectricSpark, ANIM_TARGET, 2, 0, 16
+	ba_createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, 16
 	ba_delay 20
 	ba_createvisualtask sub_0810A8E4, 2, 20, 3, 1, 0
 	ba_delay 2
