@@ -3,8 +3,8 @@
 .text
 .syntax unified
 
-	thumb_func_start sub_0810BF14
-sub_0810BF14: @ 0x0810BF14
+	thumb_func_start AnimUnusedIceCrystalThrow
+AnimUnusedIceCrystalThrow: @ 0x0810BF14
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -194,7 +194,7 @@ _0810C05A:
 	bx r0
 	.align 2, 0
 _0810C094: .4byte 0x0810C099
-	thumb_func_end sub_0810BF14
+	thumb_func_end AnimUnusedIceCrystalThrow
 
 	thumb_func_start sub_0810C098
 sub_0810C098: @ 0x0810C098

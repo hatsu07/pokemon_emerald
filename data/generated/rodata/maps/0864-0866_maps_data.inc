@@ -1806,7 +1806,7 @@ gWaterPulseRingSpriteTemplate: @ 0x0856F054
 	rodata_sprite_template 0x2830, 0x2830, gOamData_AffineDouble_ObjNormal_16x32, gDummySpriteAnimTable, 0, gSoundWaveAffineAnims_PulseOnly, sub_081094E4
 	.globl gEggBombProjectileSpriteTemplate
 gEggBombProjectileSpriteTemplate: @ 0x0856F06C
-	rodata_sprite_template 0x27BF, 0x27BF, gOamData_AffineOff_ObjNormal_16x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_080A7174
+	rodata_sprite_template 0x27BF, 0x27BF, gOamData_AffineOff_ObjNormal_16x16, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, AnimThrowProjectile
 	@ pret/pokeemerald-jp direct xref for 0x0856F084: battle_anim_effects_2.s: sub_08104838
 	.globl sVoidLinesSpriteTemplate
 sVoidLinesSpriteTemplate: @ 0x0856F084

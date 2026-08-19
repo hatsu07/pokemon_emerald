@@ -98,8 +98,7 @@ gHydroPumpOrbSpriteTemplate: @ 0x08570CC8
 	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08107E3D @ callback (sub_08107E3C)
-
+	.4byte AnimToTargetInSinWave @ callback
 gMudShotOrbSpriteTemplate: @ 0x08570CE0
 	@ SpriteTemplate: tileTag=0x2813, paletteTag=0x2813
 	.2byte 0x2813, 0x2813
@@ -107,8 +106,7 @@ gMudShotOrbSpriteTemplate: @ 0x08570CE0
 	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08107E3D @ callback (sub_08107E3C)
-
+	.4byte AnimToTargetInSinWave @ callback
 gSignalBeamRedOrbSpriteTemplate: @ 0x08570CF8
 	@ SpriteTemplate: tileTag=0x2818, paletteTag=0x2818
 	.2byte 0x2818, 0x2818
@@ -116,8 +114,7 @@ gSignalBeamRedOrbSpriteTemplate: @ 0x08570CF8
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08107E3D @ callback (sub_08107E3C)
-
+	.4byte AnimToTargetInSinWave @ callback
 gSignalBeamGreenOrbSpriteTemplate: @ 0x08570D10
 	@ SpriteTemplate: tileTag=0x2819, paletteTag=0x2819
 	.2byte 0x2819, 0x2819
@@ -125,8 +122,7 @@ gSignalBeamGreenOrbSpriteTemplate: @ 0x08570D10
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08107E3D @ callback (sub_08107E3C)
-
+	.4byte AnimToTargetInSinWave @ callback
 sAnim_FlamethrowerFlame_0_08570D28: @ 0x08570D28
 	@ union AnimCmd stream
 	.2byte 0x0010, 0x0002 @ ANIMCMD_FRAME(16, 2)
@@ -145,8 +141,7 @@ gFlamethrowerFlameSpriteTemplate: @ 0x08570D3C
 	.4byte sAnims_FlamethrowerFlame_08570D38 @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08107E3D @ callback (sub_08107E3C)
-
+	.4byte AnimToTargetInSinWave @ callback
 gPsywaveRingSpriteTemplate: @ 0x08570D54
 	@ SpriteTemplate: tileTag=0x27B5, paletteTag=0x27B5
 	.2byte 0x27B5, 0x27B5
@@ -154,8 +149,7 @@ gPsywaveRingSpriteTemplate: @ 0x08570D54
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte gSoundWaveAffineAnims @ affineAnims
-	.4byte 0x08107E3D @ callback (sub_08107E3C)
-
+	.4byte AnimToTargetInSinWave @ callback
 sAffineAnim_HydroCannonCharge_0_08570D6C: @ 0x08570D6C
 	@ union AffineAnimCmd stream
 	.2byte 0x0003, 0x0003, 0x320A, 0x0000 @ AFFINE_FRAME(3, 3, rot=0x00, duration=0)
@@ -183,8 +177,7 @@ gHydroCannonChargeSpriteTemplate: @ 0x08570DA4
 	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_HydroCannonCharge_08570D9C @ affineAnims
-	.4byte 0x08107F81 @ callback (sub_08107F80)
-
+	.4byte AnimHydroCannonCharge @ callback
 gHydroCannonBeamSpriteTemplate: @ 0x08570DBC
 	@ SpriteTemplate: tileTag=0x27A5, paletteTag=0x27A5
 	.2byte 0x27A5, 0x27A5
@@ -192,8 +185,7 @@ gHydroCannonBeamSpriteTemplate: @ 0x08570DBC
 	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_HydroCannonBeam_08570DA0 @ affineAnims
-	.4byte 0x08108011 @ callback (sub_08108010)
-
+	.4byte AnimHydroCannonBeam @ callback
 sAnim_WaterGunProjectile_0_08570DD4: @ 0x08570DD4
 	@ union AnimCmd stream
 	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
@@ -219,8 +211,7 @@ gWaterGunProjectileSpriteTemplate: @ 0x08570DEC
 	.4byte sAnims_WaterGunProjectile_08570DE4 @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x080A7175 @ callback (sub_080A7174)
-
+	.4byte AnimThrowProjectile @ callback
 gWaterGunDropletSpriteTemplate: @ 0x08570E04
 	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
 	.2byte 0x27AB, 0x27AB
@@ -228,8 +219,7 @@ gWaterGunDropletSpriteTemplate: @ 0x08570E04
 	.4byte sAnims_WaterGunDroplet_08570DE8 @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_WaterGunDroplet_08571DEC @ affineAnims
-	.4byte 0x081080E5 @ callback (sub_081080E4)
-
+	.4byte AnimWaterGunDroplet @ callback
 gSmallBubblePairSpriteTemplate: @ 0x08570E1C
 	@ SpriteTemplate: tileTag=0x279D, paletteTag=0x279D
 	.2byte 0x279D, 0x279D
@@ -245,7 +235,7 @@ gSmallDriftingBubblesSpriteTemplate: @ 0x08570E34
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08108885 @ callback (sub_08108884)
+	.4byte AnimSmallDriftingBubbles @ callback
 	.globl gSmallWaterOrbSpriteTemplate
 gSmallWaterOrbSpriteTemplate: @ 0x08570E4C
 	@ SpriteTemplate: tileTag=0x281C, paletteTag=0x281C
@@ -313,7 +303,7 @@ gWaterPulseBubbleSpriteTemplate: @ 0x08570EDC
 	.4byte sAnims_WaterPulseBubble_08570E7C @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08109431 @ callback (sub_08109430)
+	.4byte AnimWaterPulseBubble @ callback
 	.globl gWaterPulseRingBubbleSpriteTemplate
 gWaterPulseRingBubbleSpriteTemplate: @ 0x08570EF4
 	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
@@ -322,8 +312,7 @@ gWaterPulseRingBubbleSpriteTemplate: @ 0x08570EF4
 	.4byte sAnims_WaterPulseBubble_08570E7C @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_WaterPulseRingBubble_08570ED0 @ affineAnims
-	.4byte 0x081094A5 @ callback (sub_081094A4)
-
+	.4byte AnimWaterPulseRingBubble @ callback
 sSpriteTemplate_Tag27AB_08570F0C: @ 0x08570F0C
 	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
 	.2byte 0x27AB, 0x27AB
@@ -975,8 +964,7 @@ sUnusedIceCrystalThrowSpriteTemplate:
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x0810BF15 @ callback (sub_0810BF14)
-
+	.4byte AnimUnusedIceCrystalThrow @ callback
 	@ semanticized v110: canonical static data at 0x08571654, size=0x8
 sAnim_IceCrystalLargeChunk:
 	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)

@@ -3871,8 +3871,8 @@ _080A716C: .4byte 0x080A67B5
 _080A7170: .4byte 0x080A34C5
 	thumb_func_end TranslateAnimSpriteToTargetMonLocation
 
-	thumb_func_start sub_080A7174
-sub_080A7174: @ 0x080A7174
+	thumb_func_start AnimThrowProjectile
+AnimThrowProjectile: @ 0x080A7174
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	movs r1, #1
@@ -3922,7 +3922,7 @@ _080A71D4: .4byte 0x020380D6
 _080A71D8: .4byte 0x020380BE
 _080A71DC: .4byte 0x020380D7
 _080A71E0: .4byte 0x080A71E5
-	thumb_func_end sub_080A7174
+	thumb_func_end AnimThrowProjectile
 
 	thumb_func_start sub_080A71E4
 sub_080A71E4: @ 0x080A71E4
