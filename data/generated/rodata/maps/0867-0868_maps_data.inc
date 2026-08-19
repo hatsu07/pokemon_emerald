@@ -218,7 +218,7 @@ gWaterGunDropletSpriteTemplate: @ 0x08570E04
 	.4byte gOamData_AffineDouble_ObjBlend_16x16 @ oam
 	.4byte sAnims_WaterGunDroplet @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_WaterGunDroplet_08571DEC @ affineAnims
+	.4byte gAffineAnims_Droplet @ affineAnims
 	.4byte AnimWaterGunDroplet @ callback
 gSmallBubblePairSpriteTemplate: @ 0x08570E1C
 	@ SpriteTemplate: tileTag=0x279D, paletteTag=0x279D
@@ -1650,116 +1650,110 @@ sSpriteTemplate_Tag27A7_08571D18: @ 0x08571D18
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimSpriteOnMonPos @ callback
-sAnim_Tag27A6_08571D8C_0_08571D30: @ 0x08571D30
+sAnim_PoisonProjectile: @ 0x08571D30
 	@ union AnimCmd stream
 	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnim_Tag27A6_08571DF0_0_08571D38: @ 0x08571D38
+sAnim_AcidPoisonDroplet: @ 0x08571D38
 	@ union AnimCmd stream
 	.2byte 0x0004, 0x0001 @ ANIMCMD_FRAME(4, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnim_Tag27A6_08571DBC_0_08571D40: @ 0x08571D40
+sAnim_SludgeBombHit: @ 0x08571D40
 	@ union AnimCmd stream
 	.2byte 0x0008, 0x0001 @ ANIMCMD_FRAME(8, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnims_Tag27A6_08571D8C_08571D48: @ 0x08571D48
-	@ AnimCmd pointer table
-	.4byte sAnim_Tag27A6_08571D8C_0_08571D30 @ [0]
+sAnims_PoisonProjectile: @ 0x08571D48
+	@ Canonical 3-entry AnimCmd pointer table.
+	.4byte sAnim_PoisonProjectile @ [0]
+	.4byte sAnim_AcidPoisonDroplet @ [1]
+	.4byte sAnim_SludgeBombHit @ [2]
 
-sAnims_Tag27A6_08571DF0_08571D4C: @ 0x08571D4C
-	@ AnimCmd pointer table
-	.4byte sAnim_Tag27A6_08571DF0_0_08571D38 @ [0]
-
-sAnims_Tag27A6_08571DBC_08571D50: @ 0x08571D50
-	@ AnimCmd pointer table
-	.4byte sAnim_Tag27A6_08571DBC_0_08571D40 @ [0]
-
-sAffineAnim_Tag27A6_08571D8C_0_08571D54: @ 0x08571D54
+sAffineAnim_PoisonProjectile: @ 0x08571D54
 	@ union AffineAnimCmd stream
 	.2byte 0x0160, 0x0160, 0x0000, 0x0000 @ AFFINE_FRAME(352, 352, rot=0x00, duration=0)
 	.2byte 0xFFF6, 0xFFF6, 0x0A00, 0x0000 @ AFFINE_FRAME(-10, -10, rot=0x00, duration=0)
 	.2byte 0x000A, 0x000A, 0x0A00, 0x0000 @ AFFINE_FRAME(10, 10, rot=0x00, duration=0)
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
 
-sAffineAnim_Tag27A6_08571DBC_0_08571D74: @ 0x08571D74
+sAffineAnim_SludgeBombHit: @ 0x08571D74
 	@ union AffineAnimCmd stream
 	.2byte 0x00EC, 0x00EC, 0x0000, 0x0000 @ AFFINE_FRAME(236, 236, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-sAffineAnims_Tag27A6_08571D8C_08571D84: @ 0x08571D84
+sAffineAnims_PoisonProjectile: @ 0x08571D84
 	@ AffineAnimCmd pointer table
-	.4byte sAffineAnim_Tag27A6_08571D8C_0_08571D54 @ [0]
+	.4byte sAffineAnim_PoisonProjectile @ [0]
 
-sAffineAnims_Tag27A6_08571DBC_08571D88: @ 0x08571D88
+sAffineAnims_SludgeBombHit: @ 0x08571D88
 	@ AffineAnimCmd pointer table
-	.4byte sAffineAnim_Tag27A6_08571DBC_0_08571D74 @ [0]
+	.4byte sAffineAnim_SludgeBombHit @ [0]
 
-sSpriteTemplate_Tag27A6_08571D8C: @ 0x08571D8C
+gSludgeProjectileSpriteTemplate: @ 0x08571D8C
 	@ SpriteTemplate: tileTag=0x27A6, paletteTag=0x27A6
 	.2byte 0x27A6, 0x27A6
 	.4byte gBattleAnimOam_AffineDouble_ObjNormal_16x16 @ oam
-	.4byte sAnims_Tag27A6_08571D8C_08571D48 @ anims
+	.4byte sAnims_PoisonProjectile @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_Tag27A6_08571D8C_08571D84 @ affineAnims
+	.4byte sAffineAnims_PoisonProjectile @ affineAnims
 	.4byte AnimSludgeProjectile @ callback (AnimSludgeProjectile)
 
-sSpriteTemplate_Tag27A6_08571DA4: @ 0x08571DA4
+gAcidPoisonBubbleSpriteTemplate: @ 0x08571DA4
 	@ SpriteTemplate: tileTag=0x27A6, paletteTag=0x27A6
 	.2byte 0x27A6, 0x27A6
 	.4byte gBattleAnimOam_AffineDouble_ObjNormal_16x16 @ oam
-	.4byte sAnims_Tag27A6_08571D8C_08571D48 @ anims
+	.4byte sAnims_PoisonProjectile @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_Tag27A6_08571D8C_08571D84 @ affineAnims
+	.4byte sAffineAnims_PoisonProjectile @ affineAnims
 	.4byte AnimAcidPoisonBubble @ callback (AnimAcidPoisonBubble)
 
-sSpriteTemplate_Tag27A6_08571DBC: @ 0x08571DBC
+gSludgeBombHitParticleSpriteTemplate: @ 0x08571DBC
 	@ SpriteTemplate: tileTag=0x27A6, paletteTag=0x27A6
 	.2byte 0x27A6, 0x27A6
 	.4byte gBattleAnimOam_084FD078 @ oam
-	.4byte sAnims_Tag27A6_08571DBC_08571D50 @ anims
+	.4byte sAnims_PoisonProjectile + 8 @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_Tag27A6_08571DBC_08571D88 @ affineAnims
+	.4byte sAffineAnims_SludgeBombHit @ affineAnims
 	.4byte AnimSludgeBombHitParticle @ callback (AnimSludgeBombHitParticle)
 
-sAffineAnim_WaterGunDroplet_0_08571DD4: @ 0x08571DD4
+sAffineAnim_AcidPoisonDroplet: @ 0x08571DD4
 	@ union AffineAnimCmd stream
 	.2byte 0xFFF0, 0x0010, 0x0600, 0x0000 @ AFFINE_FRAME(-16, 16, rot=0x00, duration=0)
 	.2byte 0x0010, 0xFFF0, 0x0600, 0x0000 @ AFFINE_FRAME(16, -16, rot=0x00, duration=0)
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
 
-sAffineAnims_WaterGunDroplet_08571DEC: @ 0x08571DEC
+gAffineAnims_Droplet: @ 0x08571DEC
 	@ AffineAnimCmd pointer table
-	.4byte sAffineAnim_WaterGunDroplet_0_08571DD4 @ [0]
+	.4byte sAffineAnim_AcidPoisonDroplet @ [0]
 
-sSpriteTemplate_Tag27A6_08571DF0: @ 0x08571DF0
+gAcidPoisonDropletSpriteTemplate: @ 0x08571DF0
 	@ SpriteTemplate: tileTag=0x27A6, paletteTag=0x27A6
 	.2byte 0x27A6, 0x27A6
 	.4byte gBattleAnimOam_AffineDouble_ObjNormal_16x16 @ oam
-	.4byte sAnims_Tag27A6_08571DF0_08571D4C @ anims
+	.4byte sAnims_PoisonProjectile + 4 @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_WaterGunDroplet_08571DEC @ affineAnims
+	.4byte gAffineAnims_Droplet @ affineAnims
 	.4byte AnimAcidPoisonDroplet @ callback (AnimAcidPoisonDroplet)
 
-sAffineAnim_Tag27A6_08571E24_0_08571E08: @ 0x08571E08
+sAffineAnim_Bubble: @ 0x08571E08
 	@ union AffineAnimCmd stream
 	.2byte 0x009C, 0x009C, 0x0000, 0x0000 @ AFFINE_FRAME(156, 156, rot=0x00, duration=0)
 	.2byte 0x0005, 0x0005, 0x1400, 0x0000 @ AFFINE_FRAME(5, 5, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-sAffineAnims_Tag27A6_08571E24_08571E20: @ 0x08571E20
+sAffineAnims_Bubble: @ 0x08571E20
 	@ AffineAnimCmd pointer table
-	.4byte sAffineAnim_Tag27A6_08571E24_0_08571E08 @ [0]
+	.4byte sAffineAnim_Bubble @ [0]
 
 sSpriteTemplate_Tag27A6_08571E24: @ 0x08571E24
 	@ SpriteTemplate: tileTag=0x27A6, paletteTag=0x27A6
 	.2byte 0x27A6, 0x27A6
 	.4byte gBattleAnimOam_084FD078 @ oam
-	.4byte sAnims_Tag27A6_08571D8C_08571D48 @ anims
+	.4byte sAnims_PoisonProjectile @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_Tag27A6_08571E24_08571E20 @ affineAnims
+	.4byte sAffineAnims_Bubble @ affineAnims
 	.4byte AnimBubbleEffect @ callback
 sSpriteTemplate_Tag27AB_08571E3C: @ 0x08571E3C
 	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
@@ -1767,7 +1761,7 @@ sSpriteTemplate_Tag27AB_08571E3C: @ 0x08571E3C
 	.4byte gBattleAnimOam_AffineOn_ObjBlend_8x8 @ oam
 	.4byte gAnims_WaterBubble @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_Tag27A6_08571E24_08571E20 @ affineAnims
+	.4byte sAffineAnims_Bubble @ affineAnims
 	.4byte AnimBubbleEffect @ callback
 gEllipticalGustSpriteTemplate: @ 0x08571E54
 	@ SpriteTemplate: tileTag=0x2719, paletteTag=0x2719
