@@ -1810,7 +1810,7 @@ _0810F466:
 _0810F470: .4byte 0x03005B60
 _0810F474: .4byte 0x0203809E
 _0810F478: .4byte 0x020380BE
-_0810F47C: .4byte gFlyingData_08572FCC
+_0810F47C: .4byte gBattleAnimSpriteTemplate_PiercingHit
 _0810F480: .4byte 0x020380D7
 	thumb_func_end sub_0810F3D8
 

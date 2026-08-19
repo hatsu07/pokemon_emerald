@@ -592,7 +592,7 @@ _081116EC:
 	.align 2, 0
 _0811170C: .4byte 0x0000FFC0
 _08111710: .4byte 0x020380BE
-_08111714: .4byte gRockData_085727A4
+_08111714: .4byte sFlyingSandSubspriteTable
 _08111718:
 	ldrh r1, [r5, #0x30]
 	ldrh r3, [r5, #0x34]

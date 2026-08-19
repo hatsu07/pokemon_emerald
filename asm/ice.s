@@ -1444,7 +1444,7 @@ _0810CA26:
 	strh r5, [r4, #0x1e]
 	b _0810CB2A
 	.align 2, 0
-_0810CA60: .4byte gIceData_08571840
+_0810CA60: .4byte sHazeBlendAmounts
 _0810CA64:
 	lsls r0, r4, #2
 	adds r0, r0, r4
@@ -1733,7 +1733,7 @@ _0810CC90:
 	strh r0, [r4, #0x1e]
 	b _0810CD9A
 	.align 2, 0
-_0810CCD0: .4byte gIceData_0857186C
+_0810CCD0: .4byte sMistBlendAmounts
 _0810CCD4:
 	lsls r0, r4, #2
 	adds r0, r0, r4
@@ -2489,7 +2489,7 @@ GenerateHailParticle: @ 0x0810D234
 	beq _0810D2E6
 	b _0810D332
 	.align 2, 0
-_0810D2AC: .4byte gIceData_08571898
+_0810D2AC: .4byte sHailCoordData
 _0810D2B0:
 	adds r0, r5, #0
 	movs r1, #1

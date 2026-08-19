@@ -1391,7 +1391,7 @@ _0810B4A2:
 _0810B4B0: .4byte 0x03005B60
 _0810B4B4: .4byte gElectricData_0857148C
 _0810B4B8: .4byte 0x020205AC
-_0810B4BC: .4byte gElectricData_0857143C
+_0810B4BC: .4byte sElectricChargingParticleCoordOffsets
 _0810B4C0: .4byte 0x0810B511
 _0810B4C4: .4byte 0x080A60A1
 _0810B4C8:
@@ -2726,7 +2726,7 @@ _0810BEA8:
 	movs r0, #0
 	b _0810BECE
 	.align 2, 0
-_0810BEC0: .4byte gElectricData_085712A4
+_0810BEC0: .4byte gBattleAnimSpriteTemplate_ElectricSpark
 _0810BEC4: .4byte 0x020205AC
 _0810BEC8: .4byte 0x0810BED5
 _0810BECC:

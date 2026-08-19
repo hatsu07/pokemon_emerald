@@ -72,7 +72,7 @@ _08107A5A:
 	.align 2, 0
 _08107A60: .4byte 0x03005B60
 _08107A64: .4byte 0x020380BE
-_08107A68: .4byte gWaterData_08570C04
+_08107A68: .4byte gRainDropSpriteTemplate
 	thumb_func_end AnimTask_CreateRaindrops
 
 	thumb_func_start sub_08107A6C
@@ -2512,7 +2512,7 @@ _08108D2A:
 	bx r0
 	.align 2, 0
 _08108D60: .4byte 0x020380D6
-_08108D64: .4byte gWaterData_08570E4C
+_08108D64: .4byte gSmallWaterOrbSpriteTemplate
 _08108D68: .4byte 0x020205AC
 	thumb_func_end sub_08108C58
 
@@ -2854,7 +2854,7 @@ _08108FC6:
 	bx r0
 	.align 2, 0
 _08108FF8: .4byte 0x082FA8CC
-_08108FFC: .4byte gWaterData_08570E4C
+_08108FFC: .4byte gSmallWaterOrbSpriteTemplate
 _08109000: .4byte 0x020205AC
 _08109004: .4byte 0x08109011
 _08109008: .4byte 0x41C64E6D
@@ -2942,7 +2942,7 @@ _081090A6:
 	bx r0
 	.align 2, 0
 _081090AC: .4byte 0x03005B60
-_081090B0: .4byte gWaterData_08572F6C
+_081090B0: .4byte gBattleAnimSpriteTemplate_WaterHit
 _081090B4: .4byte 0x020205AC
 _081090B8: .4byte 0x081090BD
 	thumb_func_end sub_08109010
@@ -3297,7 +3297,7 @@ _0810936A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08109370: .4byte gWaterData_08570E4C
+_08109370: .4byte gSmallWaterOrbSpriteTemplate
 _08109374: .4byte 0x020205AC
 _08109378: .4byte 0x0810937D
 	thumb_func_end sub_08109310
@@ -3691,7 +3691,7 @@ _08109632:
 	strh r1, [r4, #0x32]
 	b _08109682
 	.align 2, 0
-_08109674: .4byte gWaterData_08570EF4
+_08109674: .4byte gWaterPulseRingBubbleSpriteTemplate
 _08109678: .4byte 0x020205AC
 _0810967C: .4byte 0x020380D6
 _08109680:
@@ -3749,7 +3749,7 @@ _081096A8:
 	strh r1, [r4, #0x32]
 	b _081096FA
 	.align 2, 0
-_081096EC: .4byte gWaterData_08570EF4
+_081096EC: .4byte gWaterPulseRingBubbleSpriteTemplate
 _081096F0: .4byte 0x020205AC
 _081096F4: .4byte 0x020380D6
 _081096F8:

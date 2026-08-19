@@ -906,7 +906,7 @@ _0811758C: .4byte 0x02024190
 _08117590: .4byte 0x020380D6
 _08117594: .4byte gBattleAnimMaskTilemap_Curse
 _08117598: .4byte gBattleAnimMaskImage_Curse
-_0811759C: .4byte gBattleAnimUtilityFuncsData_08572FFC
+_0811759C: .4byte sCurseLinesPalette
 _081175A0: .4byte 0x02022ACC
 _081175A4: .4byte 0x020205AC
 _081175A8: .4byte 0x02022ACE

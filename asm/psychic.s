@@ -711,7 +711,7 @@ sub_0810FF90: @ 0x0810FF90
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0810FFBC: .4byte gPsychicData_08572324
+_0810FFBC: .4byte sAffineAnims_QuestionMark
 _0810FFC0: .4byte 0x0810FFC5
 	thumb_func_end sub_0810FF90
 
@@ -794,7 +794,7 @@ sub_08110024: @ 0x08110024
 	bx r0
 	.align 2, 0
 _08110054: .4byte 0x03005B60
-_08110058: .4byte gPsychicData_08572340
+_08110058: .4byte sAffineAnim_MeditateStretchAttacker
 _0811005C: .4byte 0x08110061
 	thumb_func_end sub_08110024
 
@@ -862,7 +862,7 @@ _081100C0:
 	.align 2, 0
 _081100D8: .4byte 0x03005B60
 _081100DC: .4byte 0x020380D6
-_081100E0: .4byte gPsychicData_08572360
+_081100E0: .4byte sAffineAnim_Teleport
 _081100E4: .4byte 0x081100E9
 	thumb_func_end sub_0811008C
 

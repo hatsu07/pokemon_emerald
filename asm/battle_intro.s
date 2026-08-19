@@ -30,7 +30,7 @@ _08118890:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_081188AC: .4byte gBattleIntroData_08572FFE
+_081188AC: .4byte gBattleAnimBgCntSet
 _081188B0: .4byte 0x02039DE0
 _081188B4: .4byte 0x081188B8
 _081188B8: @ jump table
@@ -139,7 +139,7 @@ _08118982:
 	bx r0
 	.align 2, 0
 _08118988: .4byte 0x02039DE0
-_0811898C: .4byte gBattleIntroData_08572FFE
+_0811898C: .4byte gBattleAnimBgCntSet
 	thumb_func_end SetAnimBgAttribute
 
 	thumb_func_start GetAnimBgAttribute
@@ -166,7 +166,7 @@ GetAnimBgAttribute: @ 0x08118990
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_081189BC: .4byte gBattleIntroData_08573002
+_081189BC: .4byte gBattleAnimBgCntGet
 _081189C0: .4byte 0x081189C4
 _081189C4: @ jump table
 	.4byte _081189E0 @ case 0
