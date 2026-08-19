@@ -228,8 +228,8 @@ sSpriteTemplate_085FA8A0: @ 0x085FA8A0
 	.globl gBattleU32Table_Rom_5FA8B8
 gBattleU32Table_Rom_5FA8B8: @ 0x085FA8B8
 	@ Resolved pointer table; original ROM range 0x5FA8B8..0x5FA8BF.
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte OFFSET_REG_NR13
 	@ pret/pokeemerald-jp direct xref for 0x085FA8C0: menu_specialized.s: sub_081D284C
 	.globl gMenuSpecializedData_085FA8C0

@@ -326,23 +326,23 @@ gTrainerCardData_08546724: @ 0x08546724
 gTrainerCardData_08546744: @ 0x08546744
 	@ analyzed canonical ROM range 0x08546744-0x08546757
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0x08545D4C @ +0x0
-	.4byte 0x08545E0C @ +0x4
-	.4byte 0x08545ECC @ +0x8
-	.4byte 0x08545F8C @ +0xC
-	.4byte 0x0854604C @ +0x10
+	@ ANALYSIS: POINTER_TABLE entries=5 size=0x14
+	.4byte 0x08545D4C
+	.4byte 0x08545E0C
+	.4byte 0x08545ECC
+	.4byte 0x08545F8C
+	.4byte 0x0854604C
 	@ pret/pokeemerald-jp direct xref for 0x08546758: trainer_card.s: SetCardBgsAndPals
 	.globl gTrainerCardData_08546758
 gTrainerCardData_08546758: @ 0x08546758
 	@ analyzed canonical ROM range 0x08546758-0x0854676B
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x14
-	.4byte 0x08545DAC @ +0x0
-	.4byte 0x08545E6C @ +0x4
-	.4byte 0x08545F2C @ +0x8
-	.4byte 0x08545FEC @ +0xC
-	.4byte 0x085460AC @ +0x10
+	@ ANALYSIS: POINTER_TABLE entries=5 size=0x14
+	.4byte 0x08545DAC
+	.4byte 0x08545E6C
+	.4byte 0x08545F2C
+	.4byte 0x08545FEC
+	.4byte 0x085460AC
 	@ pret/pokeemerald-jp direct xref for 0x0854676C: trainer_card.s: PrintBattleFacilityStringOnCard, PrintBerryCrushStringOnCard, PrintContestStringOnCard, PrintIdOnCard, PrintMoneyOnCard (+10 more)
 	.globl gTrainerCardData_0854676C
 gTrainerCardData_0854676C:

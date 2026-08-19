@@ -375,27 +375,27 @@ gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	.4byte 0x085CB1BD @ +0x0
 	.4byte 0 @ +0x4
 	.4byte gText_Rom_5CB1D0 @ +0x8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xC
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gText_Rom_5CB1E0 @ +0x10
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x14
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gText_Rom_5CB1ED @ +0x18
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.4byte 0 @ +0x1C
 	.4byte 0x085CB1FB @ +0x20
 	.4byte 0x00000001 @ +0x24
 	.4byte gText_Rom_5CB207 @ +0x28
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x2C
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gText_Rom_5CB21A @ +0x30
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.4byte 0 @ +0x34
 	.4byte 0x085CB22B @ +0x38
 	.4byte 0x00000001 @ +0x3C
 	.4byte gText_Rom_5CB236 @ +0x40
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x44
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gText_Rom_5CB245 @ +0x48
 	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0 @ +0x4C
@@ -404,33 +404,33 @@ gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	.4byte 0x085CB263 @ +0x58
 	.4byte 0x00000006 @ +0x5C
 	.4byte gText_Rom_5CB26C @ +0x60
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x64
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gText_Rom_5CB278 @ +0x68
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.4byte 0 @ +0x6C
 	.4byte 0x085CB28B @ +0x70
 	.4byte 0 @ +0x74
 	.4byte gText_Rom_5CB298 @ +0x78
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x7C
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gText_Rom_5CB2A9 @ +0x80
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x84
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gText_Rom_5CB2BB @ +0x88
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x8C
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gText_Rom_5CB2CE @ +0x90
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.4byte 0 @ +0x94
 	.4byte 0x085CB2DF @ +0x98
 	.4byte 0x00000001 @ +0x9C
 	.4byte gText_Rom_5CB2EB @ +0xA0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xA4
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gText_Rom_5CB2F9 @ +0xA8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xAC
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gText_Rom_5CB300 @ +0xB0
 	@ ANALYSIS: RAW_BLOCK size=0xC
 	.4byte 0 @ +0xB4
@@ -442,8 +442,8 @@ gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	.4byte 0x085CB31D @ +0xC8
 	.4byte 0x00000007 @ +0xCC
 	.4byte gText_Rom_5CB32A @ +0xD0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xD4
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gText_Rom_5CB337 @ +0xD8
 	@ ANALYSIS: RAW_BLOCK size=0x14
 	.4byte 0 @ +0xDC
@@ -452,8 +452,8 @@ gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	.4byte 0x085CB352 @ +0xE8
 	.4byte 0x00000007 @ +0xEC
 	.4byte gText_Rom_5CB35D @ +0xF0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xF4
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	@ pret/pokeemerald-jp direct xref for 0x0854CB14: pokemon_storage_system.s: ShowYesNoWindow
 	.globl gPokemonStorageSystemData_0854CB14
 gPokemonStorageSystemData_0854CB14: @ 0x0854CB14

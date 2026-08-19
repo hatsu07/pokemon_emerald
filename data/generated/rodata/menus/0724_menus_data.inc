@@ -39,16 +39,11 @@ gFieldEffectData_08535AFC: @ 0x08535AFC
 	.globl gMenuU32Table_Rom_535CFC
 gMenuU32Table_Rom_535CFC: @ 0x08535CFC
 	@ Resolved pointer table; original ROM range 0x535CFC..0x535D1B.
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte MAIN_RGB_WHITE
-	@ ANALYSIS: RAW_BLOCK size=0x18
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x18
+	.space 0x18, 0
 	@ pret/pokeemerald-jp direct xref for 0x08535D1C: field_effect.s: sub_080B7FCC
 	.globl gFieldEffectData_08535D1C
 gFieldEffectData_08535D1C: @ 0x08535D1C
@@ -640,9 +635,9 @@ FunctionPointerTable_JP_085371A0: @ 0x085371A0
 gFieldEffectData_085371F4: @ 0x085371F4
 	@ analyzed canonical ROM range 0x085371F4-0x085371FB
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x085371C4 @ +0x0
-	.4byte 0x085371DC @ +0x4
+	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
+	.4byte 0x085371C4
+	.4byte 0x085371DC
 	.globl gMenuPointerTable_Rom_5371FC
 gMenuPointerTable_Rom_5371FC: @ 0x085371FC
 	.4byte sub_080B8F5C

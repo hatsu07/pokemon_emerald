@@ -200,9 +200,9 @@ gMainMenuData_082D2A08: @ 0x082D2A08
 	.4byte gText_Rom_5C8F28 @ +0x10
 	.4byte gText_Rom_5C8F2E @ +0x14
 	.4byte gText_Rom_5C8F34 @ +0x18
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x085C8F3A @ +0x1C
-	.4byte 0x085C8F40 @ +0x20
+	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
+	.4byte 0x085C8F3A
+	.4byte 0x085C8F40
 	.4byte gText_Rom_5C8F46 @ +0x24
 	.4byte gText_Rom_5C8F4C @ +0x28
 	.4byte gText_Rom_5C8F52 @ +0x2C

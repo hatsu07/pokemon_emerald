@@ -107,9 +107,9 @@ gBattleMessageData_085AC146: @ 0x085AC146
 gBattleMessageData_085AC468: @ 0x085AC468
 	@ analyzed canonical ROM range 0x085AC468-0x085AC46F
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x085AC234 @ +0x0
-	.4byte 0x085AC354 @ +0x4
+	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
+	.4byte 0x085AC234
+	.4byte 0x085AC354
 	@ pret/pokeemerald-jp direct xref for 0x085AC470: battle_message.s: sub_0814FA04
 	.globl gBattleMessageData_085AC470
 gBattleMessageData_085AC470: @ 0x085AC470
@@ -197,16 +197,16 @@ gCableCarData_085AC9A4: @ 0x085AC9A4
 	.4byte 0x00010001 @ +0x0
 	.4byte 0x085AC98C @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xC
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_08150844 @ +0x14
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x00010002 @ +0x18
 	.4byte 0x085AC994 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x24
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte sub_08150844 @ +0x2C
 	@ pret/pokeemerald-jp direct xref for 0x085AC9D4: cable_car.s: LoadCableCarSprites
@@ -689,8 +689,8 @@ gBattleAnimEffects3Data_085AD2AC: @ 0x085AD2AC
 	.globl gBattleU32Table_Rom_5AD2B0
 gBattleU32Table_Rom_5AD2B0: @ 0x085AD2B0
 	@ Resolved pointer table; original ROM range 0x5AD2B0..0x5AD2B7.
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte ABILITY_RUN_AWAY
 	@ pret/pokeemerald-jp direct xref for 0x085AD2B8: battle_anim_effects_3.s: sub_0815C2E4
 	.globl gBattleAnimEffects3Data_085AD2B8
@@ -877,16 +877,16 @@ gBattleAnimEffects3Data_085AD5F4: @ 0x085AD5F4
 	.4byte 0x28082808 @ +0x0
 	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xC
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte AnimGlareEyeDot @ +0x14
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x280C280C @ +0x18
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x24
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte AnimAssistPawprint @ +0x2C
 	@ ANALYSIS: RAW_BLOCK size=0x30
@@ -919,8 +919,8 @@ gBattleAnimEffects3Data_085AD654: @ 0x085AD654
 	.4byte 0x28072807 @ +0x18
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x24
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte AnimSmellingSaltsHand @ +0x2C
 	@ pret/pokeemerald-jp direct xref for 0x085AD684: battle_anim_effects_3.s: AnimTask_SmellingSaltsSquish, AnimTask_SmellingSaltsSquishStep
@@ -938,56 +938,56 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte 0x280F280F @ +0x18
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x24
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte AnimSmellingSaltExclamation @ +0x2C
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x28072807 @ +0x30
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x34
 	.4byte gDummySpriteAnimTable @ +0x38
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x3C
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte AnimHelpingHandClap @ +0x44
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x28122812 @ +0x48
 	.4byte gOamData_AffineOff_ObjBlend_32x32 @ +0x4C
 	.4byte gDummySpriteAnimTable @ +0x50
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x54
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x58
 	.4byte AnimForesightMagnifyingGlass @ +0x5C
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27F927F9 @ +0x60
 	.4byte gOamData_AffineOff_ObjNormal_16x16 @ +0x64
 	.4byte gDummySpriteAnimTable @ +0x68
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x6C
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x70
 	.4byte AnimMeteorMashStar @ +0x74
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27F927F9 @ +0x78
 	.4byte gOamData_AffineOff_ObjNormal_16x16 @ +0x7C
 	.4byte gDummySpriteAnimTable @ +0x80
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x84
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x88
 	.4byte sub_08106A14 @ +0x8C
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x280A280A @ +0x90
 	.4byte gOamData_AffineOff_ObjNormal_64x64 @ +0x94
 	.4byte gDummySpriteAnimTable @ +0x98
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x9C
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0xA0
 	.4byte AnimBlockX @ +0xA4
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x27F027F0 @ +0xA8
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0xAC
 	.4byte gDummySpriteAnimTable @ +0xB0
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xB4
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0xB8
 	.4byte sub_0815FDB8 @ +0xBC
 	@ ANALYSIS: RAW_BLOCK size=0x5C

@@ -1389,17 +1389,16 @@ gPokemonStorageSystemData_085564A0: @ 0x085564A0
 gBattleU32Table_Rom_5564B8: @ 0x085564B8
 	@ Resolved pointer table; original ROM range 0x5564B8..0x5564DF.
 	.4byte HandleInput_InBox
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte HandleInput_InParty
 	.4byte TYPE_FIGHT
 	.4byte HandleInput_OnBox
 	.4byte TYPE_FLYING
 	.4byte HandleInput_OnButtons
 	.4byte TYPE_POISON
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0
-	.4byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x8
+	.space 0x8, 0
 	@ pret/pokeemerald-jp direct xref for 0x085564E0: pokemon_storage_system.s: sub_080CF490
 	.globl gPokemonStorageSystemData_085564E0
 gPokemonStorageSystemData_085564E0: @ 0x085564E0
@@ -1437,21 +1436,21 @@ sSpriteTemplate_08556564: @ 0x08556564
 gPokemonStorageSystemData_0855657C: @ 0x0855657C
 	@ analyzed canonical ROM range 0x0855657C-0x08556617
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x18
-	.4byte 0x085CB371 @ +0x0
-	.4byte 0x085CB378 @ +0x4
-	.4byte 0x085CB37F @ +0x8
-	.4byte 0x085CB38D @ +0xC
-	.4byte 0x085CB386 @ +0x10
-	.4byte 0x085CB394 @ +0x14
+	@ ANALYSIS: POINTER_TABLE entries=6 size=0x18
+	.4byte 0x085CB371
+	.4byte 0x085CB378
+	.4byte 0x085CB37F
+	.4byte 0x085CB38D
+	.4byte 0x085CB386
+	.4byte 0x085CB394
 	.4byte gText_Rom_5CB39B @ +0x18
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x085CB3A2 @ +0x1C
-	.4byte 0x085CB3A9 @ +0x20
+	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
+	.4byte 0x085CB3A2
+	.4byte 0x085CB3A9
 	.4byte gText_Rom_5CB3B7 @ +0x24
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x085CB3BC @ +0x28
-	.4byte 0x085CB3B0 @ +0x2C
+	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
+	.4byte 0x085CB3BC
+	.4byte 0x085CB3B0
 	.4byte gText_Rom_5CB3C3 @ +0x30
 	.4byte gText_Rom_5CB3C8 @ +0x34
 	.4byte gText_Rom_5CB3C8 @ +0x38

@@ -265,8 +265,8 @@ gMonAnimTriangleDownData: @ 0x085D381E
 	mon_anim_offset_step -2,  0, 12
 	mon_anim_offset_step  1, -1, 12
 	mon_anim_offset_step  0,  0,  0
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	.2byte 0 @ alignment
+	@ ANALYSIS: ZERO_PADDING size=0x2
+	.space 0x2, 0
 
 gBackAnimYellowFlashFastSteps: @ 0x085D382C
 	back_anim_yellow_flash_step FALSE,  1
@@ -457,9 +457,8 @@ gRecordedPlayerBufferCommands: @ 0x085D39D4
 gDummyPicData: @ 0x085D3AB8
 	.4byte NULL @ frames
 	.4byte NULL @ images
-	@ ANALYSIS: RAW_BLOCK size=0x3
-	.2byte 0 @ palette tag
-	.byte 0 @ sprite ID
+	@ ANALYSIS: ZERO_PADDING size=0x3
+	.space 0x3, 0
 	.byte FALSE @ active
 	.globl gPicSpriteOamDataNormal
 gPicSpriteOamDataNormal: @ 0x085D3AC4

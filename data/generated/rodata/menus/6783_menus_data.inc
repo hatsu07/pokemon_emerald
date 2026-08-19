@@ -338,8 +338,8 @@ gMirageTowerData_085E7FF0: @ 0x085E7FF0
 gMenuPointerTable_Rom_5E7FFC: @ 0x085E7FFC
 	@ analyzed canonical ROM range 0x085E7FFC-0x085E801B
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x0
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x4
 	.4byte MoveCeilingCrumbleSprite @ +0x8
 	@ ANALYSIS: RAW_BLOCK size=0x14

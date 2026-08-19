@@ -620,8 +620,8 @@ gDodrioBerryPickingData_082CEC8E: @ 0x082CEC8E
 	.globl gDodrioBerryPickingPointerTable_Rom_2CEC98
 gDodrioBerryPickingPointerTable_Rom_2CEC98: @ 0x082CEC98
 	@ Resolved pointer table; original ROM range 0x2CEC98..0x2CECE7.
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte sub_08029064
 	.4byte TYPE_FIGHT
 	.4byte sub_0802916C

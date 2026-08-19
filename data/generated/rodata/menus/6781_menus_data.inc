@@ -304,21 +304,21 @@ sPointerTable_085E14C0:
 gPartyMenuData_085E15F0: @ 0x085E15F0
 	@ analyzed canonical ROM range 0x085E15F0-0x085E1627
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x38
-	.4byte 0 @ +0x0
-	.4byte 0x085E15C8 @ +0x4
-	.4byte 0x085E15CB @ +0x8
-	.4byte 0x085E15CE @ +0xC
-	.4byte 0x085E15D3 @ +0x10
-	.4byte 0x085E15D6 @ +0x14
-	.4byte 0x085E15D9 @ +0x18
-	.4byte 0x085E15D1 @ +0x1C
-	.4byte 0x085E15DC @ +0x20
-	.4byte 0x085E15DF @ +0x24
-	.4byte 0x085E15E2 @ +0x28
-	.4byte 0x085E15E5 @ +0x2C
-	.4byte 0x085E15E8 @ +0x30
-	.4byte 0x085E15EB @ +0x34
+	@ ANALYSIS: POINTER_TABLE entries=14 size=0x38
+	.4byte 0
+	.4byte 0x085E15C8
+	.4byte 0x085E15CB
+	.4byte 0x085E15CE
+	.4byte 0x085E15D3
+	.4byte 0x085E15D6
+	.4byte 0x085E15D9
+	.4byte 0x085E15D1
+	.4byte 0x085E15DC
+	.4byte 0x085E15DF
+	.4byte 0x085E15E2
+	.4byte 0x085E15E5
+	.4byte 0x085E15E8
+	.4byte 0x085E15EB
 	@ pret/pokeemerald-jp direct xref for 0x085E1628: party_menu.s: sub_081B3054
 	.globl gPartyMenuData_085E1628
 gPartyMenuData_085E1628: @ 0x085E1628

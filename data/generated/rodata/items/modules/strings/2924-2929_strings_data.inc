@@ -664,8 +664,8 @@ gRouletteData_085973F8: @ 0x085973F8
 	.4byte 0x0005000B @ +0x0
 	.4byte 0x08596FA0 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xC
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
 	@ ANALYSIS: RAW_BLOCK size=0x8

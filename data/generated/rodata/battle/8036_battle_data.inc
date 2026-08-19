@@ -43,9 +43,9 @@ gTrainerHillData_085FB6A0: @ 0x085FB6A0
 gTrainerHillData_085FB8B8: @ 0x085FB8B8
 	@ analyzed canonical ROM range 0x085FB8B8-0x085FB8BF
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x085FB868 @ +0x0
-	.4byte 0x085FB890 @ +0x4
+	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
+	.4byte 0x085FB868
+	.4byte 0x085FB890
 	.globl gBattleDataBlock_Rom_5FB8C0
 gBattleDataBlock_Rom_5FB8C0: @ 0x085FB8C0
 	.space 0x20, 0x00

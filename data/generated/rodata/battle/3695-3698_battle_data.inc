@@ -176,8 +176,8 @@ gBattleU32Table_Rom_5C0C20: @ 0x085C0C20
 gPlayerPcData_085C0C28: @ 0x085C0C28
 	@ analyzed canonical ROM range 0x085C0C28-0x085C0C3F
 	@ semantic recovery: rodata; byte-verified against linked ROM
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 FunctionPointerTable_JP_085C0C2C: @ 0x085C0C2C
 	@ proven function-pointer table
 	.4byte ItemStorage_MoveCursor

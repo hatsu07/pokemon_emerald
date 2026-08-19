@@ -140,16 +140,11 @@ gUnionRoomChat_Background_Tilemap:
 	.globl gUnionRoomU32Table_Rom_2C56B4
 gUnionRoomU32Table_Rom_2C56B4: @ 0x082C56B4
 	@ Resolved pointer table; original ROM range 0x2C56B4..0x2C56D3.
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte MAIN_RGB_WHITE
-	@ ANALYSIS: RAW_BLOCK size=0x18
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x18
+	.space 0x18, 0
 	@ pret/pokeemerald-jp direct xref for 0x082C56D4: union_room_chat.s: sub_080203C0
 	.globl gUnionRoomChatData_082C56D4
 gUnionRoomChatData_082C56D4: @ 0x082C56D4
@@ -177,8 +172,8 @@ gUnionRoomChatData_082C5704: @ 0x082C5704
 	.globl gUnionRoomPointerTable_Rom_2C572C
 gUnionRoomPointerTable_Rom_2C572C: @ 0x082C572C
 	@ Resolved pointer table; original ROM range 0x2C572C..0x2C57D3.
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte sub_0801F468
 	.4byte TYPE_POISON
 	.4byte sub_0801F508
@@ -369,11 +364,11 @@ gUnionRoomChatData_082C5D74: @ 0x082C5D74
 gUnionRoomChatData_082C5DB4: @ 0x082C5DB4
 	@ analyzed canonical ROM range 0x082C5DB4-0x082C5DD3
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0 @ +0x0
-	.4byte 0x082C5D7C @ +0x4
-	.4byte 0x082C5DA4 @ +0x8
-	.4byte 0 @ +0xC
+	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
+	.4byte 0
+	.4byte 0x082C5D7C
+	.4byte 0x082C5DA4
+	.4byte 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
 	@ ANALYSIS: RAW_BLOCK size=0x8

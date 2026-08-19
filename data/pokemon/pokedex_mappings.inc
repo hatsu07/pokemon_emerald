@@ -1265,5 +1265,5 @@ sHoennToNationalOrder: @ 0x082EE940
 	.endif
 
 	@ 0x082EEC76-0x082EEC77 alignment
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	.2byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x2
+	.space 0x2, 0

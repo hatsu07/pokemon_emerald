@@ -346,8 +346,8 @@ gPokemonJumpData_082D1A00: @ 0x082D1A00
 	.globl gPokemonJumpPointerTable_Rom_2D1A18
 gPokemonJumpPointerTable_Rom_2D1A18: @ 0x082D1A18
 	@ Resolved pointer table; original ROM range 0x2D1A18..0x2D1A67.
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte sub_0802CE44
 	.4byte TYPE_FIGHT
 	.4byte sub_0802CFD8

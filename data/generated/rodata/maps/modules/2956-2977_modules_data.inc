@@ -409,8 +409,8 @@ gLandmarkData_08598C68: @ 0x08598C68
 	@ analyzed canonical ROM range 0x08598C68-0x08598DDF
 .macro landmark_table_entry mapsec, idx, candidates
 	.byte \mapsec, \idx
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	.2byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x2
+	.space 0x2, 0
 	.4byte \candidates
 .endm
 

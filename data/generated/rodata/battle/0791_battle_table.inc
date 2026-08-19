@@ -56,32 +56,32 @@ gContestData_08560A7C: @ 0x08560A7C
 	.4byte 0x4E224E22 @ +0x0
 	.4byte 0x08560A74 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xC
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x4E224E23 @ +0x18
 	.4byte 0x08560A74 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x24
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte SpriteCallbackDummy @ +0x2C
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x4E224E24 @ +0x30
 	.4byte 0x08560A74 @ +0x34
 	.4byte gDummySpriteAnimTable @ +0x38
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x3C
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte SpriteCallbackDummy @ +0x44
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.4byte 0x4E224E25 @ +0x48
 	.4byte 0x08560A74 @ +0x4C
 	.4byte gDummySpriteAnimTable @ +0x50
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x54
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x58
 	.4byte SpriteCallbackDummy @ +0x5C
 	@ ANALYSIS: RAW_BLOCK size=0x8
@@ -103,8 +103,8 @@ gContestData_08560AE4: @ 0x08560AE4
 	.4byte 0xABE0ABE1 @ +0x18
 	.4byte 0x08560AF4 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0x24
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte SpriteCallbackDummy @ +0x2C
 	@ pret/pokeemerald-jp direct xref for 0x08560B14: contest.s: CreateApplauseMeterSprite
@@ -133,8 +133,8 @@ gContestData_08560B2C: @ 0x08560B2C
 	.4byte 0xABE2ABE2 @ +0x0
 	.4byte 0x08560B24 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xC
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
 	@ ANALYSIS: RAW_BLOCK size=0x8

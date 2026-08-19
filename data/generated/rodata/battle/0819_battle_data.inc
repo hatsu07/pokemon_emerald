@@ -114,8 +114,8 @@ gShopData_085629C4: @ 0x085629C4
 gShopData_085629CC: @ 0x085629CC
 	@ analyzed canonical ROM range 0x085629CC-0x085629E3
 	@ semantic recovery: rodata; byte-verified against linked ROM
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 FunctionPointerTable_JP_085629D0: @ 0x085629D0
 	@ proven function-pointer table
 	.4byte BuyMenuPrintItemDescriptionAndShowItemIcon

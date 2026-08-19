@@ -286,8 +286,8 @@ gMapU8Table_Rom_568B98: @ 0x08568B98
 gMapU8Table_Rom_568BB4: @ 0x08568BB4
 	@ ANALYSIS: SOURCE_RANGE offset=0x568BB4, size=0x14
 	@ semanticized-mass: resolved embedded ROM pointers
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gText_Rom_254510 @ ROM pointer 0x08254510
 	.4byte gText_Rom_254759 @ ROM pointer 0x08254759
 	.4byte gText_Rom_254924 @ ROM pointer 0x08254924
@@ -756,8 +756,8 @@ gMapU8Table_Rom_5692A4: @ 0x085692A4
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xC1, 0x0B, 0xC1, 0x0B, 0x9C, 0x92, 0x56, 0x08
 	.4byte gDummySpriteAnimTable @ ROM pointer 0x082BF304
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ ROM pointer 0x082BF310
 	.4byte SpriteCallbackDummy @ ROM pointer 0x08007141
 	.globl gMapPointerTable_Rom_5692BC
@@ -799,8 +799,8 @@ gMapU8Table_Rom_56930C: @ 0x0856930C
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xC9, 0x0B, 0xC9, 0x0B, 0x04, 0x93, 0x56, 0x08
 	.4byte gDummySpriteAnimTable @ ROM pointer 0x082BF304
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ ROM pointer 0x082BF310
 	.4byte sub_080F7FF8 @ ROM pointer 0x080F7FF9
 	.globl gMapU8Table_Rom_569324
@@ -885,8 +885,8 @@ gMapU8Table_Rom_5694AC: @ 0x085694AC
 	@ ANALYSIS: RAW_BLOCK size=0x8
 	.byte 0xCE, 0x56, 0x00, 0x00, 0xA4, 0x94, 0x56, 0x08
 	.4byte gDummySpriteAnimTable @ ROM pointer 0x082BF304
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ ROM pointer 0x082BF310
 	.4byte SpriteCallbackDummy @ ROM pointer 0x08007141
 	.globl gMapU8Table_Rom_5694C4

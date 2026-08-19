@@ -29,8 +29,8 @@ gPokenavUnk4Data_085F41D0: @ 0x085F41D0
 	.4byte 0x000C0007 @ +0x0
 	.4byte 0x085F41C8 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xC
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_081CBAA0 @ +0x14
 	@ ANALYSIS: RAW_BLOCK size=0x8
@@ -183,9 +183,8 @@ gPokemonPointerTable_Rom_5F4D24: @ 0x085F4D24
 	@ Resolved pointer table; original ROM range 0x5F4D24..0x5F4D33.
 	.4byte gPokenavUnk4Data_085F4228
 	.4byte TYPE_WATER
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0
-	.4byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x8
+	.space 0x8, 0
 	@ pret/pokeemerald-jp direct xref for 0x085F4D34: pokenav_unk_4.s: sub_081CC170
 	.globl gPokenavUnk4Data_085F4D34
 gPokenavUnk4Data_085F4D34: @ 0x085F4D34

@@ -116,8 +116,8 @@ gPokemonU32Table_Rom_5E0900: @ 0x085E0900
 
 @ 0: SPECIES_NONE
 @ Original: 0x00000000
-    @ ANALYSIS: RAW_BLOCK size=0x4
-    .4byte 0
+    @ ANALYSIS: ZERO_PADDING size=0x4
+    .space 0x4, 0
 
 @ 1: SPECIES_BULBASAUR
 @ Original: 0x25B4409A
@@ -635,8 +635,8 @@ gPokemonU32Table_Rom_5E0900: @ 0x085E0900
 
 @ 129: SPECIES_MAGIKARP
 @ Original: 0x00000000
-    @ ANALYSIS: RAW_BLOCK size=0x4
-    .4byte 0
+    @ ANALYSIS: ZERO_PADDING size=0x4
+    .space 0x4, 0
 
 @ 130: SPECIES_GYARADOS
 @ Original: 0x019C4898
@@ -648,8 +648,8 @@ gPokemonU32Table_Rom_5E0900: @ 0x085E0900
 
 @ 132: SPECIES_DITTO
 @ Original: 0x00000000
-    @ ANALYSIS: RAW_BLOCK size=0x4
-    .4byte 0
+    @ ANALYSIS: ZERO_PADDING size=0x4
+    .space 0x4, 0
 
 @ 133: SPECIES_EEVEE
 @ Original: 0x03B44098
@@ -1062,8 +1062,8 @@ gPokemonU32Table_Rom_5E0900: @ 0x085E0900
 
 @ 235: SPECIES_SMEARGLE
 @ Original: 0x00000000
-    @ ANALYSIS: RAW_BLOCK size=0x4
-    .4byte 0
+    @ ANALYSIS: ZERO_PADDING size=0x4
+    .space 0x4, 0
 
 @ 236: SPECIES_TYROGUE
 @ Original: 0x03B460FC
@@ -1297,8 +1297,8 @@ gPokemonU32Table_Rom_5E0900: @ 0x085E0900
 
 @ 293: SPECIES_CASCOON
 @ Original: 0x00000000
-    @ ANALYSIS: RAW_BLOCK size=0x4
-    .4byte 0
+    @ ANALYSIS: ZERO_PADDING size=0x4
+    .space 0x4, 0
 
 @ 294: SPECIES_DUSTOX
 @ Original: 0x03944090
@@ -1566,8 +1566,8 @@ gPokemonU32Table_Rom_5E0900: @ 0x085E0900
 
 @ 360: SPECIES_WYNAUT
 @ Original: 0x00000000
-    @ ANALYSIS: RAW_BLOCK size=0x4
-    .4byte 0
+    @ ANALYSIS: ZERO_PADDING size=0x4
+    .space 0x4, 0
 
 @ 361: SPECIES_DUSKULL
 @ Original: 0x019E4498
@@ -1719,8 +1719,8 @@ gPokemonU32Table_Rom_5E0900: @ 0x085E0900
 
 @ 398: SPECIES_BELDUM
 @ Original: 0x00000000
-    @ ANALYSIS: RAW_BLOCK size=0x4
-    .4byte 0
+    @ ANALYSIS: ZERO_PADDING size=0x4
+    .space 0x4, 0
 
 @ 399: SPECIES_METANG
 @ Original: 0x2FFFF098

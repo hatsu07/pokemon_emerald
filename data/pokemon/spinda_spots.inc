@@ -22,5 +22,5 @@ gPokemonBinaryAsset_Rom_2EEC7A:
 
 	.byte 34, 26 @ spot 3: x, y
 	.incbin "build/graphics/pokemon/spinda/spots/spot_3.1bpp"
-	@ ANALYSIS: RAW_BLOCK size=0x2
-	.2byte 0x0000
+	@ ANALYSIS: ZERO_PADDING size=0x2
+	.space 0x2, 0

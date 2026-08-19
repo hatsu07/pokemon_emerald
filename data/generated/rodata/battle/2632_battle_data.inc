@@ -2,8 +2,8 @@
 gBattleU32Table_Rom_57AAA0: @ 0x0857AAA0
 	@ Resolved pointer table; original ROM range 0x57AAA0..0x57AAA7.
 	.4byte OAM_SIZE_3
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	@ pret/pokeemerald-jp direct xref for 0x0857AAA8: mon_markings.s: sub_081201A0
 	.globl gMonMarkingsData_0857AAA8
 gMonMarkingsData_0857AAA8: @ 0x0857AAA8
@@ -42,9 +42,9 @@ sPointerTable_0857AB00:
 gMonMarkingsData_0857AB38: @ 0x0857AB38
 	@ analyzed canonical ROM range 0x0857AB38-0x0857AB3F
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x8
-	.4byte 0x0857AB28 @ +0x0
-	.4byte 0x0857AB30 @ +0x4
+	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
+	.4byte 0x0857AB28
+	.4byte 0x0857AB30
 	@ pret/pokeemerald-jp direct xref for 0x0857AB40: mon_markings.s: sub_081204F4
 	.globl gMonMarkingsData_0857AB40
 gMonMarkingsData_0857AB40: @ 0x0857AB40
@@ -113,8 +113,8 @@ gBattlePointerTable_Rom_57AC34: @ 0x0857AC34
 	.globl gBattleU32Table_Rom_57AC54
 gBattleU32Table_Rom_57AC54: @ 0x0857AC54
 	@ Resolved pointer table; original ROM range 0x57AC54..0x57AC6B.
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte TYPE_GRASS
 	.4byte TYPE_ELECTRIC
 	.4byte PSR_IRQ_MODE

@@ -314,8 +314,8 @@ sPointerTable_0890F1EC:
 	.globl gBattleU32Table_Rom_90F21C
 gBattleU32Table_Rom_90F21C: @ 0x0890F21C
 	@ Resolved pointer table; original ROM range 0x90F21C..0x90F223.
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte ABILITY_PRESSURE
 	@ pret/pokeemerald-jp direct xref for 0x0890F224: libc.s: _setlocale_r
 	.globl gLibcData_0890F224

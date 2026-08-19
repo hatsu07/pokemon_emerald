@@ -4,8 +4,8 @@
 .align 2
 
 gPokedexU8Table_Rom_539C50:: @ 0x08539C50
-    @ ANALYSIS: RAW_BLOCK size=0x1
-    .byte 0xFF
+    @ ANALYSIS: FF_PADDING size=0x1
+    .fill 0x1, 1, 0xFF
 
 gNonePokedexText:: @ 0x08539C51
     @ semanticized-mass: charmap string (31 bytes including EOS)

@@ -605,11 +605,11 @@ gPokenavMainMenuData_085F1460: @ 0x085F1460
 gPokenavMainMenuData_085F14C8: @ 0x085F14C8
 	@ analyzed canonical ROM range 0x085F14C8-0x085F14EF
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x10
-	.4byte 0 @ +0x0
-	.4byte 0x085F1498 @ +0x4
-	.4byte 0x085F14C4 @ +0x8
-	.4byte 0 @ +0xC
+	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
+	.4byte 0
+	.4byte 0x085F1498
+	.4byte 0x085F14C4
+	.4byte 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCB_SpinningPokenav @ +0x14
 	@ ANALYSIS: RAW_BLOCK size=0x10
@@ -701,8 +701,8 @@ gPokenavMatchCallUiData_085F15E0: @ 0x085F15E0
 	.4byte 0x0014000A @ +0x0
 	.4byte 0x085F15D8 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.4byte 0 @ +0xC
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCB_MatchCallRightArrow @ +0x14
 	@ ANALYSIS: RAW_BLOCK size=0x8

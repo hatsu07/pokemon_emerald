@@ -53,8 +53,8 @@ gDecorationData_08581A94: @ 0x08581A94
 gDecorationData_08581AB4: @ 0x08581AB4
 	@ analyzed canonical ROM range 0x08581AB4-0x08581ACB
 	@ semantic recovery: rodata; byte-verified against linked ROM
-	@ ANALYSIS: RAW_BLOCK size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
+	@ ANALYSIS: ZERO_PADDING size=0x4
+	.space 0x4, 0
 FunctionPointerTable_JP_08581AB8: @ 0x08581AB8
 	@ proven function-pointer table
 	.4byte DecorationItemsMenu_OnCursorMove
