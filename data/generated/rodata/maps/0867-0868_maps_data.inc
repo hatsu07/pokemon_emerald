@@ -46,20 +46,20 @@ gWaterBubbleProjectileSpriteTemplate: @ 0x08570C4C
 	.4byte 0 @ images
 	.4byte gBubbleAffineAnims @ affineAnims
 	.4byte AnimWaterBubbleProjectile @ callback
-sAnim_AuroraBeamRing_0_08570C64: @ 0x08570C64
+sAnim_AuroraBeamRing_0: @ 0x08570C64
 	@ union AnimCmd stream
 	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnim_AuroraBeamRing_1_08570C6C: @ 0x08570C6C
+sAnim_AuroraBeamRing_1: @ 0x08570C6C
 	@ union AnimCmd stream
 	.2byte 0x0004, 0x0001 @ ANIMCMD_FRAME(4, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnims_AuroraBeamRing_08570C74: @ 0x08570C74
+sAnims_AuroraBeamRing: @ 0x08570C74
 	@ AnimCmd pointer table
-	.4byte sAnim_AuroraBeamRing_0_08570C64 @ [0]
-	.4byte sAnim_AuroraBeamRing_1_08570C6C @ [1]
+	.4byte sAnim_AuroraBeamRing_0 @ [0]
+	.4byte sAnim_AuroraBeamRing_1 @ [1]
 
 sAffineAnim_AuroraBeamRing_0_08570C7C: @ 0x08570C7C
 	@ union AffineAnimCmd stream
@@ -67,7 +67,7 @@ sAffineAnim_AuroraBeamRing_0_08570C7C: @ 0x08570C7C
 	.2byte 0x0060, 0x0060, 0x0100, 0x0000 @ AFFINE_FRAME(96, 96, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-sAffineAnims_AuroraBeamRing_08570C94: @ 0x08570C94
+sAffineAnims_AuroraBeamRing: @ 0x08570C94
 	@ AffineAnimCmd pointer table
 	.4byte sAffineAnim_AuroraBeamRing_0_08570C7C @ [0]
 
@@ -75,9 +75,9 @@ gAuroraBeamRingSpriteTemplate: @ 0x08570C98
 	@ SpriteTemplate: tileTag=0x279C, paletteTag=0x279C
 	.2byte 0x279C, 0x279C
 	.4byte gOamData_AffineDouble_ObjNormal_8x16 @ oam
-	.4byte sAnims_AuroraBeamRing_08570C74 @ anims
+	.4byte sAnims_AuroraBeamRing @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_AuroraBeamRing_08570C94 @ affineAnims
+	.4byte sAffineAnims_AuroraBeamRing @ affineAnims
 	.4byte AnimAuroraBeamRings @ callback
 sAnim_HydroPumpOrb_0_08570CB0: @ 0x08570CB0
 	@ union AnimCmd stream
@@ -130,7 +130,7 @@ sAnim_FlamethrowerFlame_0_08570D28: @ 0x08570D28
 	.2byte 0x0030, 0x0002 @ ANIMCMD_FRAME(48, 2)
 	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
 
-sAnims_FlamethrowerFlame_08570D38: @ 0x08570D38
+sAnims_FlamethrowerFlame: @ 0x08570D38
 	@ AnimCmd pointer table
 	.4byte sAnim_FlamethrowerFlame_0_08570D28 @ [0]
 
@@ -138,7 +138,7 @@ gFlamethrowerFlameSpriteTemplate: @ 0x08570D3C
 	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
 	.2byte 0x272D, 0x272D
 	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
-	.4byte sAnims_FlamethrowerFlame_08570D38 @ anims
+	.4byte sAnims_FlamethrowerFlame @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimToTargetInSinWave @ callback
@@ -162,11 +162,11 @@ sAffineAnim_HydroCannonBeam_0_08570D8C: @ 0x08570D8C
 	.2byte 0x0150, 0x0150, 0x0000, 0x0000 @ AFFINE_FRAME(336, 336, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-sAffineAnims_HydroCannonCharge_08570D9C: @ 0x08570D9C
+sAffineAnims_HydroCannonCharge: @ 0x08570D9C
 	@ AffineAnimCmd pointer table
 	.4byte sAffineAnim_HydroCannonCharge_0_08570D6C @ [0]
 
-sAffineAnims_HydroCannonBeam_08570DA0: @ 0x08570DA0
+sAffineAnims_HydroCannonBeam: @ 0x08570DA0
 	@ AffineAnimCmd pointer table
 	.4byte sAffineAnim_HydroCannonBeam_0_08570D8C @ [0]
 
@@ -176,7 +176,7 @@ gHydroCannonChargeSpriteTemplate: @ 0x08570DA4
 	.4byte gOamData_AffineDouble_ObjBlend_16x16 @ oam
 	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_HydroCannonCharge_08570D9C @ affineAnims
+	.4byte sAffineAnims_HydroCannonCharge @ affineAnims
 	.4byte AnimHydroCannonCharge @ callback
 gHydroCannonBeamSpriteTemplate: @ 0x08570DBC
 	@ SpriteTemplate: tileTag=0x27A5, paletteTag=0x27A5
@@ -184,7 +184,7 @@ gHydroCannonBeamSpriteTemplate: @ 0x08570DBC
 	.4byte gOamData_AffineDouble_ObjBlend_16x16 @ oam
 	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_HydroCannonBeam_08570DA0 @ affineAnims
+	.4byte sAffineAnims_HydroCannonBeam @ affineAnims
 	.4byte AnimHydroCannonBeam @ callback
 sAnim_WaterGunProjectile_0_08570DD4: @ 0x08570DD4
 	@ union AnimCmd stream
@@ -200,7 +200,7 @@ sAnims_WaterGunProjectile_08570DE4: @ 0x08570DE4
 	@ AnimCmd pointer table
 	.4byte sAnim_WaterGunProjectile_0_08570DD4 @ [0]
 
-sAnims_WaterGunDroplet_08570DE8: @ 0x08570DE8
+sAnims_WaterGunDroplet: @ 0x08570DE8
 	@ AnimCmd pointer table
 	.4byte sAnim_WaterGunDroplet_0_08570DDC @ [0]
 
@@ -216,7 +216,7 @@ gWaterGunDropletSpriteTemplate: @ 0x08570E04
 	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
 	.2byte 0x27AB, 0x27AB
 	.4byte gOamData_AffineDouble_ObjBlend_16x16 @ oam
-	.4byte sAnims_WaterGunDroplet_08570DE8 @ anims
+	.4byte sAnims_WaterGunDroplet @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_WaterGunDroplet_08571DEC @ affineAnims
 	.4byte AnimWaterGunDroplet @ callback
@@ -245,12 +245,12 @@ gSmallWaterOrbSpriteTemplate: @ 0x08570E4C
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimSmallWaterOrb @ callback
-sAnim_WaterPulseBubble_0_08570E64: @ 0x08570E64
+sAnim_WaterPulseBubble_0: @ 0x08570E64
 	@ union AnimCmd stream
 	.2byte 0x0008, 0x0001 @ ANIMCMD_FRAME(8, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnim_WaterPulseBubble_1_08570E6C: @ 0x08570E6C
+sAnim_WaterPulseBubble_1: @ 0x08570E6C
 	@ union AnimCmd stream
 	.2byte 0x0009, 0x0001 @ ANIMCMD_FRAME(9, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
@@ -260,22 +260,22 @@ sAnim_Tag27AB_08570F0C_0_08570E74: @ 0x08570E74
 	.2byte 0x0004, 0x0001 @ ANIMCMD_FRAME(4, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnims_WaterPulseBubble_08570E7C: @ 0x08570E7C
+sAnims_WaterPulseBubble: @ 0x08570E7C
 	@ AnimCmd pointer table
-	.4byte sAnim_WaterPulseBubble_0_08570E64 @ [0]
-	.4byte sAnim_WaterPulseBubble_1_08570E6C @ [1]
+	.4byte sAnim_WaterPulseBubble_0 @ [0]
+	.4byte sAnim_WaterPulseBubble_1 @ [1]
 
 sAnims_Tag27AB_08570F0C_08570E84: @ 0x08570E84
 	@ AnimCmd pointer table
 	.4byte sAnim_Tag27AB_08570F0C_0_08570E74 @ [0]
 
-sAffineAnim_WaterPulseRingBubble_0_08570E88: @ 0x08570E88
+sAffineAnim_WaterPulseRingBubble_0: @ 0x08570E88
 	@ union AffineAnimCmd stream
 	.2byte 0x0100, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
 	.2byte 0xFFF6, 0xFFF6, 0x0F00, 0x0000 @ AFFINE_FRAME(-10, -10, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-sAffineAnim_WaterPulseRingBubble_1_08570EA0: @ 0x08570EA0
+sAffineAnim_WaterPulseRingBubble_1: @ 0x08570EA0
 	@ union AffineAnimCmd stream
 	.2byte 0x00E0, 0x00E0, 0x0000, 0x0000 @ AFFINE_FRAME(224, 224, rot=0x00, duration=0)
 	.2byte 0xFFF8, 0xFFF8, 0x0F00, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
@@ -287,10 +287,10 @@ sAffineAnim_Tag27AB_08570F0C_0_08570EB8: @ 0x08570EB8
 	.2byte 0x0000, 0x0000, 0x0F00, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-sAffineAnims_WaterPulseRingBubble_08570ED0: @ 0x08570ED0
+sAffineAnims_WaterPulseRingBubble: @ 0x08570ED0
 	@ AffineAnimCmd pointer table
-	.4byte sAffineAnim_WaterPulseRingBubble_0_08570E88 @ [0]
-	.4byte sAffineAnim_WaterPulseRingBubble_1_08570EA0 @ [1]
+	.4byte sAffineAnim_WaterPulseRingBubble_0 @ [0]
+	.4byte sAffineAnim_WaterPulseRingBubble_1 @ [1]
 
 sAffineAnims_Tag27AB_08570F0C_08570ED8: @ 0x08570ED8
 	@ AffineAnimCmd pointer table
@@ -300,7 +300,7 @@ gWaterPulseBubbleSpriteTemplate: @ 0x08570EDC
 	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
 	.2byte 0x27AB, 0x27AB
 	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
-	.4byte sAnims_WaterPulseBubble_08570E7C @ anims
+	.4byte sAnims_WaterPulseBubble @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimWaterPulseBubble @ callback
@@ -309,9 +309,9 @@ gWaterPulseRingBubbleSpriteTemplate: @ 0x08570EF4
 	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
 	.2byte 0x27AB, 0x27AB
 	.4byte gOamData_AffineNormal_ObjNormal_8x8 @ oam
-	.4byte sAnims_WaterPulseBubble_08570E7C @ anims
+	.4byte sAnims_WaterPulseBubble @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_WaterPulseRingBubble_08570ED0 @ affineAnims
+	.4byte sAffineAnims_WaterPulseRingBubble @ affineAnims
 	.4byte AnimWaterPulseRingBubble @ callback
 sSpriteTemplate_Tag27AB_08570F0C: @ 0x08570F0C
 	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
