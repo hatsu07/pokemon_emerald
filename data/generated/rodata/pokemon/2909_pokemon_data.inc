@@ -292,87 +292,87 @@ gPokeblockSpokeblockData_085921FC: @ 0x085921FC
 gFldeffFlashData_08592214: @ 0x08592214
 	@ analyzed canonical ROM range 0x08592214-0x0859229B
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08592214 parent=gFldeffFlashData_08592214 offset=0x0 entropy=1.5 head=01040100
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x08592214 parent=gFldeffFlashData_08592214 offset=0x0 fromMapType=1 toMapType=4 fadeToType=1 fadeFromType=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08592214 size=0x4
-	.byte 0x01, 0x04, 0x01, 0x00
+	.byte 0x01, 0x04, 0x01, 0x00 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592218 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137618
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0859221C parent=gFldeffFlashData_08592214 offset=0x8 entropy=2.0 head=02040100
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x0859221C parent=gFldeffFlashData_08592214 offset=0x8 fromMapType=2 toMapType=4 fadeToType=1 fadeFromType=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x0859221C size=0x4
-	.byte 0x02, 0x04, 0x01, 0x00
+	.byte 0x02, 0x04, 0x01, 0x00 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592220 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137618
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08592224 parent=gFldeffFlashData_08592214 offset=0x10 entropy=2.0 head=03040100
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x08592224 parent=gFldeffFlashData_08592214 offset=0x10 fromMapType=3 toMapType=4 fadeToType=1 fadeFromType=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08592224 size=0x4
-	.byte 0x03, 0x04, 0x01, 0x00
+	.byte 0x03, 0x04, 0x01, 0x00 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592228 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137618
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0859222C parent=gFldeffFlashData_08592214 offset=0x18 entropy=2.0 head=05040100
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x0859222C parent=gFldeffFlashData_08592214 offset=0x18 fromMapType=5 toMapType=4 fadeToType=1 fadeFromType=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x0859222C size=0x4
-	.byte 0x05, 0x04, 0x01, 0x00
+	.byte 0x05, 0x04, 0x01, 0x00 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592230 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137618
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08592234 parent=gFldeffFlashData_08592214 offset=0x20 entropy=2.0 head=06040100
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x08592234 parent=gFldeffFlashData_08592214 offset=0x20 fromMapType=6 toMapType=4 fadeToType=1 fadeFromType=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08592234 size=0x4
-	.byte 0x06, 0x04, 0x01, 0x00
+	.byte 0x06, 0x04, 0x01, 0x00 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592238 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137618
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0859223C parent=gFldeffFlashData_08592214 offset=0x28 entropy=2.0 head=07040100
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x0859223C parent=gFldeffFlashData_08592214 offset=0x28 fromMapType=7 toMapType=4 fadeToType=1 fadeFromType=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x0859223C size=0x4
-	.byte 0x07, 0x04, 0x01, 0x00
+	.byte 0x07, 0x04, 0x01, 0x00 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592240 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137618
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08592244 parent=gFldeffFlashData_08592214 offset=0x30 entropy=2.0 head=08040100
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x08592244 parent=gFldeffFlashData_08592214 offset=0x30 fromMapType=8 toMapType=4 fadeToType=1 fadeFromType=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08592244 size=0x4
-	.byte 0x08, 0x04, 0x01, 0x00
+	.byte 0x08, 0x04, 0x01, 0x00 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592248 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137618
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0859224C parent=gFldeffFlashData_08592214 offset=0x38 entropy=2.0 head=09040100
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x0859224C parent=gFldeffFlashData_08592214 offset=0x38 fromMapType=9 toMapType=4 fadeToType=1 fadeFromType=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x0859224C size=0x4
-	.byte 0x09, 0x04, 0x01, 0x00
+	.byte 0x09, 0x04, 0x01, 0x00 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592250 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137618
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08592254 parent=gFldeffFlashData_08592214 offset=0x40 entropy=1.5 head=04010001
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x08592254 parent=gFldeffFlashData_08592214 offset=0x40 fromMapType=4 toMapType=1 fadeToType=0 fadeFromType=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x08592254 size=0x4
-	.byte 0x04, 0x01, 0x00, 0x01
+	.byte 0x04, 0x01, 0x00, 0x01 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592258 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137460
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0859225C parent=gFldeffFlashData_08592214 offset=0x48 entropy=2.0 head=04020001
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x0859225C parent=gFldeffFlashData_08592214 offset=0x48 fromMapType=4 toMapType=2 fadeToType=0 fadeFromType=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x0859225C size=0x4
-	.byte 0x04, 0x02, 0x00, 0x01
+	.byte 0x04, 0x02, 0x00, 0x01 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592260 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137460
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08592264 parent=gFldeffFlashData_08592214 offset=0x50 entropy=2.0 head=04030001
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x08592264 parent=gFldeffFlashData_08592214 offset=0x50 fromMapType=4 toMapType=3 fadeToType=0 fadeFromType=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x08592264 size=0x4
-	.byte 0x04, 0x03, 0x00, 0x01
+	.byte 0x04, 0x03, 0x00, 0x01 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592268 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137460
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0859226C parent=gFldeffFlashData_08592214 offset=0x58 entropy=2.0 head=04050001
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x0859226C parent=gFldeffFlashData_08592214 offset=0x58 fromMapType=4 toMapType=5 fadeToType=0 fadeFromType=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x0859226C size=0x4
-	.byte 0x04, 0x05, 0x00, 0x01
+	.byte 0x04, 0x05, 0x00, 0x01 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592270 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137460
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08592274 parent=gFldeffFlashData_08592214 offset=0x60 entropy=2.0 head=04060001
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x08592274 parent=gFldeffFlashData_08592214 offset=0x60 fromMapType=4 toMapType=6 fadeToType=0 fadeFromType=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x08592274 size=0x4
-	.byte 0x04, 0x06, 0x00, 0x01
+	.byte 0x04, 0x06, 0x00, 0x01 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592278 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137460
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0859227C parent=gFldeffFlashData_08592214 offset=0x68 entropy=2.0 head=04070001
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x0859227C parent=gFldeffFlashData_08592214 offset=0x68 fromMapType=4 toMapType=7 fadeToType=0 fadeFromType=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x0859227C size=0x4
-	.byte 0x04, 0x07, 0x00, 0x01
+	.byte 0x04, 0x07, 0x00, 0x01 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592280 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137460
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08592284 parent=gFldeffFlashData_08592214 offset=0x70 entropy=2.0 head=04080001
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x08592284 parent=gFldeffFlashData_08592214 offset=0x70 fromMapType=4 toMapType=8 fadeToType=0 fadeFromType=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x08592284 size=0x4
-	.byte 0x04, 0x08, 0x00, 0x01
+	.byte 0x04, 0x08, 0x00, 0x01 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592288 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137460
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0859228C parent=gFldeffFlashData_08592214 offset=0x78 entropy=2.0 head=04090001
+	@ ANALYSIS: MAP_PAIR_FADE_PARAMS size=0x4 addr=0x0859228C parent=gFldeffFlashData_08592214 offset=0x78 fromMapType=4 toMapType=9 fadeToType=0 fadeFromType=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x0859228C size=0x4
-	.byte 0x04, 0x09, 0x00, 0x01
+	.byte 0x04, 0x09, 0x00, 0x01 @ fromMapType, toMapType, fadeToType, fadeFromType
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08592290 size=0x4 source=v54_multi_pointer
 	.4byte sub_08137460
-	@ ANALYSIS: ZERO_BYTES size=0x8 addr=0x08592294 parent=gFldeffFlashData_08592214 offset=0x80
+	@ ANALYSIS: MAP_PAIR_FADE_TABLE_END size=0x8 addr=0x08592294 parent=gFldeffFlashData_08592214 offset=0x80
 	@ ANALYSIS: SOURCE_RANGE addr=0x08592294 size=0x8
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0859229C: fldeff_flash.s: sub_08137490, sub_0813757C, sub_08137648
