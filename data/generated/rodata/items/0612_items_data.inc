@@ -944,6 +944,8 @@ TilesetTiles_JP_08352E68: @ 0x08352E68
 	@ TilesetTiles, size=0x8000
 	.incbin "build/graphics/tilesets/057_08352e68/tiles.4bpp"
 
+	.globl gTilesetPalettes_SecretBase
+gTilesetPalettes_SecretBase:
 TilesetPalettes_JP_0835AE68: @ 0x0835AE68
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/057_08352e68/palettes.gbapal"

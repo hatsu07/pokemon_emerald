@@ -169,7 +169,7 @@ sSpriteTemplate_SandPillar: @ 0x0856A270
 	semantic_sprite_template 0xFFFF, 0x100E, sOam_SandPillar, sAnimTable_SandPillar, sPicTable_SandPillar, gDummySpriteAffineAnimTable, SpriteCB_SandPillar_0
 	.globl gSpritePalette_SandPillar
 gSpritePalette_SandPillar: @ 0x0856A288
-	.4byte 0x0835AF08 @ canonical gTilesetPalettes_SecretBase[5]
+	.4byte gTilesetPalettes_SecretBase + 0xA0 @ gTilesetPalettes_SecretBase[5]
 	.2byte 0x100E, 0
 
 sRecordMixLights_Gfx: @ 0x0856A290
@@ -201,7 +201,7 @@ sAnimTable_RecordMixLights: @ 0x0856A460
 
 	.globl sSpriteTemplate_RecordMixLights
 sSpriteTemplate_RecordMixLights: @ 0x0856A464
-	semantic_sprite_template 0xFFFF, 0x1000, 0x084E1958, sAnimTable_RecordMixLights, sPicTable_RecordMixLights, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	semantic_sprite_template 0xFFFF, 0x1000, gObjectEventBaseOam_32x8, sAnimTable_RecordMixLights, sPicTable_RecordMixLights, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 
 	.globl sTruckCamera_HorizontalTable
 sTruckCamera_HorizontalTable: @ 0x0856A47C
@@ -582,14 +582,14 @@ gMovePowderParticleAnim: @ 0x0856DCD4
 	.globl gMovePowderParticleAnims
 gMovePowderParticleAnims: @ 0x0856DCF8
 	semantic_anim_table_entry gMovePowderParticleAnim
-	.globl gMovePowderParticleSpriteTemplate_Tag2753
-gMovePowderParticleSpriteTemplate_Tag2753: @ 0x0856DCFC
+	.globl gSleepPowderParticleSpriteTemplate
+gSleepPowderParticleSpriteTemplate: @ 0x0856DCFC
 	rodata_sprite_template 0x2753, 0x2753, gOamData_AffineOff_ObjNormal_8x16, gMovePowderParticleAnims, 0, gDummySpriteAffineAnimTable, AnimMovePowderParticle
-	.globl gMovePowderParticleSpriteTemplate_Tag2754
-gMovePowderParticleSpriteTemplate_Tag2754: @ 0x0856DD14
+	.globl gStunSporeParticleSpriteTemplate
+gStunSporeParticleSpriteTemplate: @ 0x0856DD14
 	rodata_sprite_template 0x2754, 0x2754, gOamData_AffineOff_ObjNormal_8x16, gMovePowderParticleAnims, 0, gDummySpriteAffineAnimTable, AnimMovePowderParticle
-	.globl gMovePowderParticleSpriteTemplate_Tag2751
-gMovePowderParticleSpriteTemplate_Tag2751: @ 0x0856DD2C
+	.globl gPoisonPowderParticleSpriteTemplate
+gPoisonPowderParticleSpriteTemplate: @ 0x0856DD2C
 	rodata_sprite_template 0x2751, 0x2751, gOamData_AffineOff_ObjNormal_8x16, gMovePowderParticleAnims, 0, gDummySpriteAffineAnimTable, AnimMovePowderParticle
 	.globl gSolarbeamBigOrbAnim_Frame0
 gSolarbeamBigOrbAnim_Frame0: @ 0x0856DD44
@@ -668,8 +668,8 @@ gSolarbeamSmallOrbAffineAnim: @ 0x0856DE0C
 	.globl gSolarbeamSmallOrbAffineAnims
 gSolarbeamSmallOrbAffineAnims: @ 0x0856DE24
 	semantic_affine_anim_table_entry gSolarbeamSmallOrbAffineAnim
-	.globl gPowerAbsorptionOrbSpriteTemplate_Tag27FB
-gPowerAbsorptionOrbSpriteTemplate_Tag27FB: @ 0x0856DE28
+	.globl gStockpileAbsorptionOrbSpriteTemplate
+gStockpileAbsorptionOrbSpriteTemplate: @ 0x0856DE28
 	rodata_sprite_template 0x27FB, 0x27FB, gOamData_AffineDouble_ObjNormal_8x8, gDummySpriteAnimTable, 0, gSolarbeamSmallOrbAffineAnims, AnimPowerAbsorptionOrb
 	.globl gPowerAbsorptionOrbAffineAnim_Loop
 gPowerAbsorptionOrbAffineAnim_Loop: @ 0x0856DE40
@@ -778,8 +778,8 @@ gTranslateLinearSingleSineWaveAnim_Tag27B0: @ 0x0856DFA4
 	.globl gTranslateLinearSingleSineWaveAnims_Tag27B0
 gTranslateLinearSingleSineWaveAnims_Tag27B0: @ 0x0856DFB8
 	semantic_anim_table_entry gTranslateLinearSingleSineWaveAnim_Tag27B0
-	.globl gTranslateLinearSingleSineWaveSpriteTemplate_Tag27B0
-gTranslateLinearSingleSineWaveSpriteTemplate_Tag27B0: @ 0x0856DFBC
+	.globl gRazorLeafCutterSpriteTemplate
+gRazorLeafCutterSpriteTemplate: @ 0x0856DFBC
 	rodata_sprite_template 0x27B0, 0x27B0, gOamData_AffineOff_ObjNormal_32x16, gTranslateLinearSingleSineWaveAnims_Tag27B0, 0, gDummySpriteAffineAnimTable, AnimTranslateLinearSingleSineWave
 	.globl gTranslateLinearSingleSineWaveAffineAnim
 gTranslateLinearSingleSineWaveAffineAnim: @ 0x0856DFD4
@@ -788,8 +788,8 @@ gTranslateLinearSingleSineWaveAffineAnim: @ 0x0856DFD4
 	.globl gTranslateLinearSingleSineWaveAffineAnims
 gTranslateLinearSingleSineWaveAffineAnims: @ 0x0856DFE4
 	semantic_affine_anim_table_entry gTranslateLinearSingleSineWaveAffineAnim
-	.globl gTranslateLinearSingleSineWaveSpriteTemplate_Tag27BE
-gTranslateLinearSingleSineWaveSpriteTemplate_Tag27BE: @ 0x0856DFE8
+	.globl gSwiftStarSpriteTemplate
+gSwiftStarSpriteTemplate: @ 0x0856DFE8
 	rodata_sprite_template 0x27BE, 0x27BE, gOamData_AffineNormal_ObjNormal_32x32, gDummySpriteAnimTable, 0, gTranslateLinearSingleSineWaveAffineAnims, AnimTranslateLinearSingleSineWave
 	.globl gConstrictBindingAnim_Normal
 gConstrictBindingAnim_Normal: @ 0x0856E000
@@ -1107,11 +1107,11 @@ sAnim_SlidingHit: @ 0x0856E4E4
 	.globl sAnims_SlidingHit
 sAnims_SlidingHit: @ 0x0856E4FC
 	semantic_anim_table_entry sAnim_SlidingHit
-	.globl gBattleAnimEffects1SpriteTemplate_2725
-gBattleAnimEffects1SpriteTemplate_2725: @ 0x0856E500
+	.globl sSlidingHit1SpriteTemplate
+sSlidingHit1SpriteTemplate: @ 0x0856E500
 	rodata_sprite_template 0x2725, 0x2725, gOamData_AffineOff_ObjNormal_32x32, sAnims_SlidingHit, 0, gDummySpriteAffineAnimTable, sub_08101248
-	.globl gBattleAnimEffects1SpriteTemplate_2726
-gBattleAnimEffects1SpriteTemplate_2726: @ 0x0856E518
+	.globl sSlidingHit2SpriteTemplate
+sSlidingHit2SpriteTemplate: @ 0x0856E518
 	rodata_sprite_template 0x2726, 0x2726, gOamData_AffineOff_ObjNormal_32x32, sAnims_SlidingHit, 0, gDummySpriteAffineAnimTable, sub_08101248
 	.globl gBattleAnimEffects1AffineAnim_Rot00
 gBattleAnimEffects1AffineAnim_Rot00: @ 0x0856E530
@@ -1155,8 +1155,8 @@ gBattleAnimEffects1AffineAnims_RotationSet: @ 0x0856E5B0
 	semantic_affine_anim_table_entry gBattleAnimEffects1AffineAnim_RotA0
 	semantic_affine_anim_table_entry gBattleAnimEffects1AffineAnim_RotC0
 	semantic_affine_anim_table_entry gBattleAnimEffects1AffineAnim_RotE0
-	.globl gBattleAnimEffects1SpriteTemplate_279F
-gBattleAnimEffects1SpriteTemplate_279F: @ 0x0856E5D0
+	.globl sFlickeringPunchSpriteTemplate
+sFlickeringPunchSpriteTemplate: @ 0x0856E5D0
 	rodata_sprite_template 0x279F, 0x279F, gOamData_AffineNormal_ObjNormal_32x32, gDummySpriteAnimTable, 0, gBattleAnimEffects1AffineAnims_RotationSet, sub_081012E4
 	.globl gCuttingSliceAnim
 gCuttingSliceAnim: @ 0x0856E5E8
@@ -1297,8 +1297,8 @@ sAnim_BubbleBurst_Flipped: @ 0x0856E7B4
 sAnims_BubbleBurst: @ 0x0856E7D8
 	semantic_anim_table_entry sAnim_BubbleBurst
 	semantic_anim_table_entry sAnim_BubbleBurst_Flipped
-	.globl gBattleAnimEffects1SpriteTemplate_2730
-gBattleAnimEffects1SpriteTemplate_2730: @ 0x0856E7E0
+	.globl sBubbleBurstSpriteTemplate
+sBubbleBurstSpriteTemplate: @ 0x0856E7E0
 	rodata_sprite_template 0x2730, 0x2730, gOamData_AffineOff_ObjNormal_16x16, sAnims_BubbleBurst, 0, gDummySpriteAffineAnimTable, sub_08101C90
 	.globl gSleepZAnim
 gSleepZAnim: @ 0x0856E7F8
@@ -1490,8 +1490,8 @@ gHealingSparkleAnim_Tag272F: @ 0x0856EAE8
 	.globl gHealingSparkleAnims_Tag272F
 gHealingSparkleAnims_Tag272F: @ 0x0856EB0C
 	semantic_anim_table_entry gHealingSparkleAnim_Tag272F
-	.globl gHealingSparkleSpriteTemplate_Tag272F
-gHealingSparkleSpriteTemplate_Tag272F: @ 0x0856EB10
+	.globl gHealingBlueStarSpriteTemplate
+gHealingBlueStarSpriteTemplate: @ 0x0856EB10
 	rodata_sprite_template 0x272F, 0x272F, gOamData_AffineOff_ObjNormal_32x32, gHealingSparkleAnims_Tag272F, 0, gDummySpriteAffineAnimTable, sub_080A7090
 	.globl gHornHitSpriteTemplate
 gHornHitSpriteTemplate: @ 0x0856EB28
@@ -1713,7 +1713,7 @@ sVibrateBattlerBackSpriteTemplate: @ 0x0856EE84
 	rodata_sprite_template 0, 0, gDummyOamData, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08103DDC
 	.globl sMovingClampSpriteTemplate
 sMovingClampSpriteTemplate: @ 0x0856EE9C
-	rodata_sprite_template 0x27A1, 0x27A1, gOamData_AffineNormal_ObjBlend_64x64, gDummySpriteAnimTable, 0, 0x08572C44, sub_08103E70
+	rodata_sprite_template 0x27A1, 0x27A1, gOamData_AffineNormal_ObjBlend_64x64, gDummySpriteAnimTable, 0, gAffineAnims_Bite, sub_08103E70
 	.globl sAnim_SmallExplosion
 sAnim_SmallExplosion: @ 0x0856EEB4
 	rodata_anim_frame 0, 9
@@ -2247,8 +2247,8 @@ gPerishSongNoteAffineAnims: @ 0x0856F7E4
 	.globl gPerishSongMusicNoteSpriteTemplate
 gPerishSongMusicNoteSpriteTemplate: @ 0x0856F7F0
 	rodata_sprite_template 0x27DE, 0x27DE, gOamData_AffineNormal_ObjNormal_16x16, gSingMusicNoteAnims, 0, gPerishSongNoteAffineAnims, sub_081077B0
-	.globl gPerishSongMusicNoteSpriteTemplate_2
-gPerishSongMusicNoteSpriteTemplate_2: @ 0x0856F808
+	.globl gPerishSongMusicNote2SpriteTemplate
+gPerishSongMusicNote2SpriteTemplate: @ 0x0856F808
 	rodata_sprite_template 0x27DE, 0x27DE, gOamData_AffineNormal_ObjNormal_16x16, gSingMusicNoteAnims, 0, gPerishSongNoteAffineAnims, sub_08107750
 	.globl gSafeguardAffineAnim_0
 gSafeguardAffineAnim_0: @ 0x0856F820

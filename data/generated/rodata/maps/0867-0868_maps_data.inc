@@ -3196,7 +3196,7 @@ sAffineAnim_Tag279B_08572C64_7_08572C34: @ 0x08572C34
 	.2byte 0x0000, 0x0000, 0x01E0, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-sAffineAnims_Tag279B_08572C64_08572C44: @ 0x08572C44
+gAffineAnims_Bite: @ 0x08572C44
 	@ AffineAnimCmd pointer table
 	.4byte sAffineAnim_Tag279B_08572C64_0_08572BC4 @ [0]
 	.4byte sAffineAnim_Tag279B_08572C64_1_08572BD4 @ [1]
@@ -3213,7 +3213,7 @@ sSpriteTemplate_Tag279B_08572C64: @ 0x08572C64
 	.4byte gBattleAnimOam_084FD1A8 @ oam
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_Tag279B_08572C64_08572C44 @ affineAnims
+	.4byte gAffineAnims_Bite @ affineAnims
 	.4byte 0x0811422D @ callback (sub_0811422C)
 
 sSpriteTemplate_Tag27A1_08572C7C: @ 0x08572C7C
@@ -3222,7 +3222,7 @@ sSpriteTemplate_Tag27A1_08572C7C: @ 0x08572C7C
 	.4byte gBattleAnimOam_084FD1A8 @ oam
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_Tag279B_08572C64_08572C44 @ affineAnims
+	.4byte gAffineAnims_Bite @ affineAnims
 	.4byte 0x0811422D @ callback (sub_0811422C)
 
 sAffineAnim_Tag27AB_08572CCC_0_08572C94: @ 0x08572C94

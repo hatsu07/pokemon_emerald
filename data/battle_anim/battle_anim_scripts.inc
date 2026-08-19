@@ -7306,7 +7306,7 @@ Move_PERISH_SONG:
 	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 13, 3, 208
 	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 14, 3, 224
 	ba_createsprite gPerishSongMusicNoteSpriteTemplate, ANIM_ATTACKER, 4, 15, 0, 240
-	ba_createsprite gPerishSongMusicNoteSpriteTemplate_2, ANIM_ATTACKER, 4, 15, 0, 0
+	ba_createsprite gPerishSongMusicNote2SpriteTemplate, ANIM_ATTACKER, 4, 15, 0, 0
 	ba_delay 20
 	ba_panse_1B 0x00AD, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 2, 0
 	ba_delay 80
@@ -9340,24 +9340,24 @@ BattleAnimScript_08285F3B: @ 0x08285F3B
 	ba_return
 BattleAnimScript_08285F66: @ 0x08285F66
 	ba_playsewithpan 0x00B3, SOUND_PAN_ATTACKER
-	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_ATTACKER, 2, 0, -5, 0, 0
+	ba_createsprite gHealingBlueStarSpriteTemplate, ANIM_ATTACKER, 2, 0, -5, 0, 0
 	ba_delay 7
-	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_ATTACKER, 2, -15, 10, 0, 0
+	ba_createsprite gHealingBlueStarSpriteTemplate, ANIM_ATTACKER, 2, -15, 10, 0, 0
 	ba_delay 7
-	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_ATTACKER, 2, -15, -15, 0, 0
+	ba_createsprite gHealingBlueStarSpriteTemplate, ANIM_ATTACKER, 2, -15, -15, 0, 0
 	ba_delay 7
-	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_ATTACKER, 2, 10, -5, 0, 0
+	ba_createsprite gHealingBlueStarSpriteTemplate, ANIM_ATTACKER, 2, 10, -5, 0, 0
 	ba_delay 7
 	ba_return
 BattleAnimScript_08285FAF: @ 0x08285FAF
 	ba_playsewithpan 0x00B3, SOUND_PAN_TARGET
-	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_TARGET, 2, 0, -5, 1, 0
+	ba_createsprite gHealingBlueStarSpriteTemplate, ANIM_TARGET, 2, 0, -5, 1, 0
 	ba_delay 7
-	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_TARGET, 2, -15, 10, 1, 0
+	ba_createsprite gHealingBlueStarSpriteTemplate, ANIM_TARGET, 2, -15, 10, 1, 0
 	ba_delay 7
-	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_TARGET, 2, -15, -15, 1, 0
+	ba_createsprite gHealingBlueStarSpriteTemplate, ANIM_TARGET, 2, -15, -15, 1, 0
 	ba_delay 7
-	ba_createsprite gHealingSparkleSpriteTemplate_Tag272F, ANIM_TARGET, 2, 10, -5, 1, 0
+	ba_createsprite gHealingBlueStarSpriteTemplate, ANIM_TARGET, 2, 10, -5, 1, 0
 	ba_delay 7
 	ba_return
 BattleAnimScript_08285FF8: @ 0x08285FF8

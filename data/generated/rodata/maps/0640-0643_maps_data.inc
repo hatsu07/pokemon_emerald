@@ -2824,6 +2824,8 @@ sObjectEventOam_8x8: @ 0x084E1940
 	rodata_sprite_oam_data 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2, 0, 0x0000
 sObjectEventOam_16x16: @ 0x084E1950
 	rodata_sprite_oam_data 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 2, 0, 0x0000
+	.globl gObjectEventBaseOam_32x8
+gObjectEventBaseOam_32x8: @ 0x084E1958
 	rodata_sprite_oam_data 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 2, 0, 0x0000
 	rodata_sprite_oam_data 0, 0, 0, 0, 0, 1, 0, 0, 3, 0, 2, 0, 0x0000
 sObjectEventOam_16x32: @ 0x084E1968
