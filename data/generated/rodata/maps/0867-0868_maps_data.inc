@@ -2609,50 +2609,50 @@ sFlyingSandSubspriteTable:
 	.byte 2, 0, 0, 0 @ subspriteCount + ABI padding
 	.4byte sFlyingSandSubsprites
 
-sAnim_Tag274A_0857283C_0_085727AC: @ 0x085727AC
+sAnim_Rock_Biggest: @ 0x085727AC
 	@ union AnimCmd stream
 	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnim_Tag274A_0857283C_1_085727B4: @ 0x085727B4
+sAnim_Rock_Bigger: @ 0x085727B4
 	@ union AnimCmd stream
 	.2byte 0x0010, 0x0001 @ ANIMCMD_FRAME(16, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnim_Tag274A_085728C4_0_085727BC: @ 0x085727BC
+sAnim_Rock_Big: @ 0x085727BC
 	@ union AnimCmd stream
 	.2byte 0x0020, 0x0001 @ ANIMCMD_FRAME(32, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnim_Tag274A_085728C4_1_085727C4: @ 0x085727C4
+sAnim_Rock_Small: @ 0x085727C4
 	@ union AnimCmd stream
 	.2byte 0x0030, 0x0001 @ ANIMCMD_FRAME(48, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnim_Tag274A_085728AC_0_085727CC: @ 0x085727CC
+sAnim_Rock_Smaller: @ 0x085727CC
 	@ union AnimCmd stream
 	.2byte 0x0040, 0x0001 @ ANIMCMD_FRAME(64, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnim_Tag274A_085728AC_1_085727D4: @ 0x085727D4
+sAnim_Rock_Smallest: @ 0x085727D4
 	@ union AnimCmd stream
 	.2byte 0x0050, 0x0001 @ ANIMCMD_FRAME(80, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
 sAnims_BasicRock: @ 0x085727DC
 	@ AnimCmd pointer table
-	.4byte sAnim_Tag274A_0857283C_0_085727AC @ [0]
-	.4byte sAnim_Tag274A_0857283C_1_085727B4 @ [1]
+	.4byte sAnim_Rock_Biggest @ [0]
+	.4byte sAnim_Rock_Bigger @ [1]
 
 sAnims_Tag274A_085728C4_085727E4: @ 0x085727E4
 	@ AnimCmd pointer table
-	.4byte sAnim_Tag274A_085728C4_0_085727BC @ [0]
-	.4byte sAnim_Tag274A_085728C4_1_085727C4 @ [1]
+	.4byte sAnim_Rock_Big @ [0]
+	.4byte sAnim_Rock_Small @ [1]
 
 sAnims_Tag274A_085728AC_085727EC: @ 0x085727EC
 	@ AnimCmd pointer table
-	.4byte sAnim_Tag274A_085728AC_0_085727CC @ [0]
-	.4byte sAnim_Tag274A_085728AC_1_085727D4 @ [1]
+	.4byte sAnim_Rock_Smaller @ [0]
+	.4byte sAnim_Rock_Smallest @ [1]
 
 	.if (. - .Lsemantic_range_085727A4) != 0x50
 	.error "semantic range 0x085727A4 size mismatch"
@@ -2692,20 +2692,20 @@ sSpriteTemplate_Tag274A_0857283C: @ 0x0857283C
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimRockTomb @ callback (AnimRockTomb)
 
-sAffineAnim_Tag274A_0857287C_0_08572854: @ 0x08572854
+sAffineAnim_BasicRock_0: @ 0x08572854
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x05FB, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
 
-sAffineAnim_Tag274A_0857287C_1_08572864: @ 0x08572864
+sAffineAnim_BasicRock_1: @ 0x08572864
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x0505, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
 
-sAffineAnims_Tag274A_0857287C_08572874: @ 0x08572874
+sAffineAnims_BasicRock: @ 0x08572874
 	@ AffineAnimCmd pointer table
-	.4byte sAffineAnim_Tag274A_0857287C_0_08572854 @ [0]
-	.4byte sAffineAnim_Tag274A_0857287C_1_08572864 @ [1]
+	.4byte sAffineAnim_BasicRock_0 @ [0]
+	.4byte sAffineAnim_BasicRock_1 @ [1]
 
 sSpriteTemplate_Tag274A_0857287C: @ 0x0857287C
 	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
@@ -2713,7 +2713,7 @@ sSpriteTemplate_Tag274A_0857287C: @ 0x0857287C
 	.4byte gBattleAnimOam_AffineOff_ObjNormal_64x64 @ oam
 	.4byte sAnims_BasicRock @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_Tag274A_0857287C_08572874 @ affineAnims
+	.4byte sAffineAnims_BasicRock @ affineAnims
 	.4byte AnimRockBlastRock @ callback (AnimRockBlastRock)
 
 sSpriteTemplate_Tag274A_08572894: @ 0x08572894
@@ -2722,7 +2722,7 @@ sSpriteTemplate_Tag274A_08572894: @ 0x08572894
 	.4byte gBattleAnimOam_AffineOff_ObjNormal_64x64 @ oam
 	.4byte sAnims_BasicRock @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_Tag274A_0857287C_08572874 @ affineAnims
+	.4byte sAffineAnims_BasicRock @ affineAnims
 	.4byte AnimRockScatter @ callback (AnimRockScatter)
 
 sSpriteTemplate_Tag274A_085728AC: @ 0x085728AC
@@ -2731,7 +2731,7 @@ sSpriteTemplate_Tag274A_085728AC: @ 0x085728AC
 	.4byte gBattleAnimOam_AffineOff_ObjNormal_32x32 @ oam
 	.4byte sAnims_Tag274A_085728AC_085727EC @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_Tag274A_0857287C_08572874 @ affineAnims
+	.4byte sAffineAnims_BasicRock @ affineAnims
 	.4byte AnimMoveTwisterParticle @ callback
 sSpriteTemplate_Tag274A_085728C4: @ 0x085728C4
 	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
@@ -2739,7 +2739,7 @@ sSpriteTemplate_Tag274A_085728C4: @ 0x085728C4
 	.4byte gBattleAnimOam_AffineOff_ObjNormal_64x64 @ oam
 	.4byte sAnims_Tag274A_085728C4_085727E4 @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_Tag274A_0857287C_08572874 @ affineAnims
+	.4byte sAffineAnims_BasicRock @ affineAnims
 	.4byte AnimWeatherBallDown @ callback (AnimWeatherBallDown)
 
 sAffineAnim_Tag271D_085728F8_0_085728DC: @ 0x085728DC
