@@ -61,7 +61,7 @@ sAnims_AuroraBeamRing: @ 0x08570C74
 	.4byte sAnim_AuroraBeamRing_0 @ [0]
 	.4byte sAnim_AuroraBeamRing_1 @ [1]
 
-sAffineAnim_AuroraBeamRing_0_08570C7C: @ 0x08570C7C
+sAffineAnim_AuroraBeamRing: @ 0x08570C7C
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x0100, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x0060, 0x0060, 0x0100, 0x0000 @ AFFINE_FRAME(96, 96, rot=0x00, duration=0)
@@ -69,7 +69,7 @@ sAffineAnim_AuroraBeamRing_0_08570C7C: @ 0x08570C7C
 
 sAffineAnims_AuroraBeamRing: @ 0x08570C94
 	@ AffineAnimCmd pointer table
-	.4byte sAffineAnim_AuroraBeamRing_0_08570C7C @ [0]
+	.4byte sAffineAnim_AuroraBeamRing @ [0]
 
 gAuroraBeamRingSpriteTemplate: @ 0x08570C98
 	@ SpriteTemplate: tileTag=0x279C, paletteTag=0x279C
@@ -123,7 +123,7 @@ gSignalBeamGreenOrbSpriteTemplate: @ 0x08570D10
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimToTargetInSinWave @ callback
-sAnim_FlamethrowerFlame_0_08570D28: @ 0x08570D28
+sAnim_FlamethrowerFlame: @ 0x08570D28
 	@ union AnimCmd stream
 	.2byte 0x0010, 0x0002 @ ANIMCMD_FRAME(16, 2)
 	.2byte 0x0020, 0x0002 @ ANIMCMD_FRAME(32, 2)
@@ -132,7 +132,7 @@ sAnim_FlamethrowerFlame_0_08570D28: @ 0x08570D28
 
 sAnims_FlamethrowerFlame: @ 0x08570D38
 	@ AnimCmd pointer table
-	.4byte sAnim_FlamethrowerFlame_0_08570D28 @ [0]
+	.4byte sAnim_FlamethrowerFlame @ [0]
 
 gFlamethrowerFlameSpriteTemplate: @ 0x08570D3C
 	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
@@ -150,25 +150,25 @@ gPsywaveRingSpriteTemplate: @ 0x08570D54
 	.4byte 0 @ images
 	.4byte gSoundWaveAffineAnims @ affineAnims
 	.4byte AnimToTargetInSinWave @ callback
-sAffineAnim_HydroCannonCharge_0_08570D6C: @ 0x08570D6C
+sAffineAnim_HydroCannonCharge: @ 0x08570D6C
 	@ union AffineAnimCmd stream
 	.2byte 0x0003, 0x0003, 0x320A, 0x0000 @ AFFINE_FRAME(3, 3, rot=0x00, duration=0)
 	.2byte 0x0000, 0x0000, 0x0A00, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0xFFEC, 0xFFEC, 0x14F6, 0x0000 @ AFFINE_FRAME(-20, -20, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-sAffineAnim_HydroCannonBeam_0_08570D8C: @ 0x08570D8C
+sAffineAnim_HydroCannonBeam: @ 0x08570D8C
 	@ union AffineAnimCmd stream
 	.2byte 0x0150, 0x0150, 0x0000, 0x0000 @ AFFINE_FRAME(336, 336, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnims_HydroCannonCharge: @ 0x08570D9C
 	@ AffineAnimCmd pointer table
-	.4byte sAffineAnim_HydroCannonCharge_0_08570D6C @ [0]
+	.4byte sAffineAnim_HydroCannonCharge @ [0]
 
 sAffineAnims_HydroCannonBeam: @ 0x08570DA0
 	@ AffineAnimCmd pointer table
-	.4byte sAffineAnim_HydroCannonBeam_0_08570D8C @ [0]
+	.4byte sAffineAnim_HydroCannonBeam @ [0]
 
 gHydroCannonChargeSpriteTemplate: @ 0x08570DA4
 	@ SpriteTemplate: tileTag=0x27A5, paletteTag=0x27A5
@@ -191,7 +191,7 @@ sAnim_WaterGunProjectile_0_08570DD4: @ 0x08570DD4
 	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnim_WaterGunDroplet_0_08570DDC: @ 0x08570DDC
+sAnim_WaterGunDroplet: @ 0x08570DDC
 	@ union AnimCmd stream
 	.2byte 0x0004, 0x0001 @ ANIMCMD_FRAME(4, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
@@ -202,7 +202,7 @@ sAnims_WaterGunProjectile_08570DE4: @ 0x08570DE4
 
 sAnims_WaterGunDroplet: @ 0x08570DE8
 	@ AnimCmd pointer table
-	.4byte sAnim_WaterGunDroplet_0_08570DDC @ [0]
+	.4byte sAnim_WaterGunDroplet @ [0]
 
 gWaterGunProjectileSpriteTemplate: @ 0x08570DEC
 	@ SpriteTemplate: tileTag=0x27AB, paletteTag=0x27AB
