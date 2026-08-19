@@ -3,8 +3,8 @@
 .text
 .syntax unified
 
-	thumb_func_start sub_0810E6C0
-sub_0810E6C0: @ 0x0810E6C0
+	thumb_func_start AnimEllipticalGust
+AnimEllipticalGust: @ 0x0810E6C0
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #0
@@ -23,7 +23,7 @@ sub_0810E6C0: @ 0x0810E6C0
 	bx r0
 	.align 2, 0
 _0810E6E4: .4byte 0x0810E6E9
-	thumb_func_end sub_0810E6C0
+	thumb_func_end AnimEllipticalGust
 
 	thumb_func_start sub_0810E6E8
 sub_0810E6E8: @ 0x0810E6E8
@@ -433,8 +433,8 @@ _0810EA12:
 	.align 2, 0
 	thumb_func_end sub_0810E9D4
 
-	thumb_func_start sub_0810EA18
-sub_0810EA18: @ 0x0810EA18
+	thumb_func_start AnimFlyBallAttack
+AnimFlyBallAttack: @ 0x0810EA18
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0810EA40
@@ -492,7 +492,7 @@ _0810EA8C: .4byte 0x0000FFE0
 _0810EA90: .4byte 0x020380BE
 _0810EA94: .4byte 0x020380D7
 _0810EA98: .4byte 0x0810EA9D
-	thumb_func_end sub_0810EA18
+	thumb_func_end AnimFlyBallAttack
 
 	thumb_func_start sub_0810EA9C
 sub_0810EA9C: @ 0x0810EA9C

@@ -2123,8 +2123,8 @@ _0810BA3A:
 	bx r1
 	thumb_func_end sub_0810B9A4
 
-	thumb_func_start sub_0810BA40
-sub_0810BA40: @ 0x0810BA40
+	thumb_func_start AnimVoltTackleBolt
+AnimVoltTackleBolt: @ 0x0810BA40
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrh r0, [r4, #0x2e]
@@ -2161,7 +2161,7 @@ _0810BA80:
 	bx r0
 	.align 2, 0
 _0810BA88: .4byte 0x03005B60
-	thumb_func_end sub_0810BA40
+	thumb_func_end AnimVoltTackleBolt
 
 	thumb_func_start sub_0810BA8C
 sub_0810BA8C: @ 0x0810BA8C

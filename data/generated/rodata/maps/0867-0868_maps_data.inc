@@ -938,7 +938,7 @@ gElectricData_085715E4: @ 0x085715E4
 	.4byte sAnims_ElectricData_085715E4_085715C0 @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_ElectricData_085715E4_085715E0 @ affineAnims
-	.4byte 0x0810BA41 @ callback (sub_0810BA40)
+	.4byte AnimVoltTackleBolt @ callback (AnimVoltTackleBolt)
 
 sSpriteTemplate_Tag27E4_085715FC: @ 0x085715FC
 	@ SpriteTemplate: tileTag=0x27E4, paletteTag=0x27E4
@@ -1776,7 +1776,7 @@ sSpriteTemplate_Tag2719_08571E54: @ 0x08571E54
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x0810E6C1 @ callback (sub_0810E6C0)
+	.4byte AnimEllipticalGust @ callback (AnimEllipticalGust)
 
 sAffineAnim_Tag2719_08571E88_0_08571E6C: @ 0x08571E6C
 	@ union AffineAnimCmd stream
@@ -1860,7 +1860,7 @@ sSpriteTemplate_Tag27AC_08571F3C: @ 0x08571F3C
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27AC_08571F3C_08571F1C @ affineAnims
-	.4byte 0x0810EA19 @ callback (sub_0810EA18)
+	.4byte AnimFlyBallAttack @ callback (AnimFlyBallAttack)
 
 sAnim_Tag281E_08571F6C_0_08571F54: @ 0x08571F54
 	@ union AnimCmd stream
@@ -2768,7 +2768,7 @@ sSpriteTemplate_Tag271D_08572910: @ 0x08572910
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08112045 @ callback (sub_08112044)
+	.4byte AnimConfuseRayBallSpiral @ callback (AnimConfuseRayBallSpiral)
 
 sAffineAnim_Tag27C0_0857293C_0_08572928: @ 0x08572928
 	@ union AffineAnimCmd stream

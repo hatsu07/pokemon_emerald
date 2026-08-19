@@ -255,8 +255,8 @@ _0811203E:
 	bx r0
 	thumb_func_end sub_08111FB4
 
-	thumb_func_start sub_08112044
-sub_08112044: @ 0x08112044
+	thumb_func_start AnimConfuseRayBallSpiral
+AnimConfuseRayBallSpiral: @ 0x08112044
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #1
@@ -270,7 +270,7 @@ sub_08112044: @ 0x08112044
 	bx r0
 	.align 2, 0
 _08112060: .4byte 0x08112065
-	thumb_func_end sub_08112044
+	thumb_func_end AnimConfuseRayBallSpiral
 
 	thumb_func_start sub_08112064
 sub_08112064: @ 0x08112064
