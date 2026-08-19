@@ -1394,7 +1394,7 @@ sSpriteTemplate_Tag279F_08571A64: @ 0x08571A64
 	.4byte sAnims_Tag279F_08571A4C_08571A38 @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x0810D705 @ callback (sub_0810D704)
+	.4byte AnimJumpKick @ callback (AnimJumpKick)
 
 sSpriteTemplate_Tag279F_08571A7C: @ 0x08571A7C
 	@ SpriteTemplate: tileTag=0x279F, paletteTag=0x279F
@@ -2551,7 +2551,7 @@ sSpriteTemplate_Tag275A_08572718: @ 0x08572718
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08111389 @ callback (sub_08111388)
+	.4byte AnimParticleInVortex @ callback (AnimParticleInVortex)
 
 sAffineAnim_Tag27A5_08572754_0_08572730: @ 0x08572730
 	@ union AffineAnimCmd stream
@@ -2571,7 +2571,7 @@ sSpriteTemplate_Tag27A5_08572754: @ 0x08572754
 	.4byte sAnims_HydroPumpOrb_08570CC4 @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27A5_08572754_08572750 @ affineAnims
-	.4byte 0x08111389 @ callback (sub_08111388)
+	.4byte AnimParticleInVortex @ callback (AnimParticleInVortex)
 
 sSpriteTemplate_Tag272D_0857276C: @ 0x0857276C
 	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
@@ -2580,7 +2580,7 @@ sSpriteTemplate_Tag272D_0857276C: @ 0x0857276C
 	.4byte sAnims_Tag272D_085710D0_085710B4 @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08111389 @ callback (sub_08111388)
+	.4byte AnimParticleInVortex @ callback (AnimParticleInVortex)
 
 sSpriteTemplate_Tag2815_08572784: @ 0x08572784
 	@ SpriteTemplate: tileTag=0x2815, paletteTag=0x2815
@@ -2668,7 +2668,7 @@ gAncientPowerRockSpriteTemplate: @ 0x085727F4
 gRockData_0857280C: @ 0x0857280C
 	@ analyzed canonical ROM range 0x0857280C-0x08572823
 sSpriteTemplate_0857280C: @ 0x0857280C
-	rodata_sprite_template 0x275A, 0x275A, gOamData_AffineOff_ObjNormal_8x8, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08111B6C
+	rodata_sprite_template 0x275A, 0x275A, gOamData_AffineOff_ObjNormal_8x8, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, AnimRolloutParticle
 	@ pret/pokeemerald-jp direct xref for 0x08572824: rock.s: sub_08111A64
 	@ semantic battle-animation reconstruction: rock_b
 	@ ROM range 0x08572824-0x0857299B
@@ -2681,7 +2681,7 @@ gRockData_08572824: @ 0x08572824
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08111B6D @ callback (sub_08111B6C)
+	.4byte AnimRolloutParticle @ callback (AnimRolloutParticle)
 
 sSpriteTemplate_Tag274A_0857283C: @ 0x0857283C
 	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
@@ -2905,7 +2905,7 @@ sSpriteTemplate_Tag272D_08572A60: @ 0x08572A60
 	.4byte sAnims_Tag272D_08572A60_08572A5C @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x081138B5 @ callback (sub_081138B4)
+	.4byte AnimOutrageFlame @ callback (AnimOutrageFlame)
 
 sAnim_Tag272D_08572AD8_0_08572A78: @ 0x08572A78
 	@ union AnimCmd stream
@@ -2950,7 +2950,7 @@ sSpriteTemplate_Tag272D_08572AD8: @ 0x08572AD8
 	.4byte sAnims_Tag272D_08572AD8_08572A98 @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag272D_08572AD8_08572AD0 @ affineAnims
-	.4byte 0x08113A75 @ callback (sub_08113A74)
+	.4byte AnimDragonFireToTarget @ callback (AnimDragonFireToTarget)
 
 sAnim_Tag2733_08572B0C_0_08572AF0: @ 0x08572AF0
 	@ union AnimCmd stream
@@ -3007,7 +3007,7 @@ sSpriteTemplate_Tag272D_08572B64: @ 0x08572B64
 	.4byte sAnims_Tag272D_08572B64_08572B34 @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag272D_08572B64_08572B5C @ affineAnims
-	.4byte 0x08113A75 @ callback (sub_08113A74)
+	.4byte AnimDragonFireToTarget @ callback (AnimDragonFireToTarget)
 
 sSpriteTemplate_Tag2809_08572B7C: @ 0x08572B7C
 	@ SpriteTemplate: tileTag=0x2809, paletteTag=0x2809

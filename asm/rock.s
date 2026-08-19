@@ -158,8 +158,8 @@ _08111380: .4byte 0x080A5E35
 _08111384: .4byte 0x080A6015
 	thumb_func_end AnimRockFragment
 
-	thumb_func_start sub_08111388
-sub_08111388: @ 0x08111388
+	thumb_func_start AnimParticleInVortex
+AnimParticleInVortex: @ 0x08111388
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _081113A0
@@ -195,7 +195,7 @@ _081113AC:
 	.align 2, 0
 _081113C8: .4byte 0x020380BE
 _081113CC: .4byte 0x081113D1
-	thumb_func_end sub_08111388
+	thumb_func_end AnimParticleInVortex
 
 	thumb_func_start sub_081113D0
 sub_081113D0: @ 0x081113D0
@@ -1146,8 +1146,8 @@ _08111B64: .4byte 0x000003FF
 _08111B68: .4byte 0xFFFFFC00
 	thumb_func_end sub_08111A64
 
-	thumb_func_start sub_08111B6C
-sub_08111B6C: @ 0x08111B6C
+	thumb_func_start AnimRolloutParticle
+AnimRolloutParticle: @ 0x08111B6C
 	push {r4, lr}
 	adds r4, r0, #0
 	bl TranslateAnimHorizontalArc
@@ -1178,7 +1178,7 @@ _08111B9E:
 	.align 2, 0
 _08111BA4: .4byte 0x081118F5
 _08111BA8: .4byte 0x03005B60
-	thumb_func_end sub_08111B6C
+	thumb_func_end AnimRolloutParticle
 
 	thumb_func_start sub_08111BAC
 sub_08111BAC: @ 0x08111BAC

@@ -70,8 +70,8 @@ _0810D6FC: .4byte 0x020380BE
 _0810D700: .4byte 0x020380D6
 	thumb_func_end AnimSlideHandOrFootToTarget
 
-	thumb_func_start sub_0810D704
-sub_0810D704: @ 0x0810D704
+	thumb_func_start AnimJumpKick
+AnimJumpKick: @ 0x0810D704
 	push {r4, lr}
 	adds r4, r0, #0
 	bl IsContest
@@ -93,7 +93,7 @@ _0810D720:
 	bx r0
 	.align 2, 0
 _0810D72C: .4byte 0x020380BE
-	thumb_func_end sub_0810D704
+	thumb_func_end AnimJumpKick
 
 	thumb_func_start AnimBasicFistOrFoot
 AnimBasicFistOrFoot: @ 0x0810D730
