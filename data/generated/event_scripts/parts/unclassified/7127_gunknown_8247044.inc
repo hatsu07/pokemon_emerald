@@ -1044,7 +1044,7 @@ SharedMapScript_0824790F:
 	compare_var_to_value 0x8005, 0x0001
 	call_if 0x01, 0x08247B69
 	goto 0x08246FE5
-	@ ANALYSIS: RAW_BLOCK size=0x1
+	@ ANALYSIS: RAW_BLOCK size=0x1 addr=0x08247B5F parent=SharedMapScript_0824790F offset=0x250 entropy=-0.0 head=02
 	@ ANALYSIS: UNPROVEN_RAW addr=0x08247B5F
 	.byte 0x02
 	loadword 0x00, gText_Rom_248406

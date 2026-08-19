@@ -602,27 +602,27 @@ gRouletteData_08597304: @ 0x08597304
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08597304 size=0x4 source=v54_multi_pointer
 	.4byte gRouletteCredit_Gfx
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08597308 parent=gRouletteData_08597304 offset=0x4 entropy=1.5 head=00040700
 	@ ANALYSIS: SOURCE_RANGE addr=0x08597308 size=0x4
 	.byte 0x00, 0x04, 0x07, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0859730C size=0x4 source=v54_multi_pointer
 	.4byte gRouletteNumbers_Gfx
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08597310 parent=gRouletteData_08597304 offset=0xC entropy=2.0 head=80020800
 	@ ANALYSIS: SOURCE_RANGE addr=0x08597310 size=0x4
 	.byte 0x80, 0x02, 0x08, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08597314 size=0x4 source=v54_multi_pointer
 	.4byte gRouletteMultiplier_Gfx
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08597318 parent=gRouletteData_08597304 offset=0x14 entropy=1.5 head=00050900
 	@ ANALYSIS: SOURCE_RANGE addr=0x08597318 size=0x4
 	.byte 0x00, 0x05, 0x09, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0859731C size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_0859634C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08597320 parent=gRouletteData_08597304 offset=0x1C entropy=2.0 head=40010A00
 	@ ANALYSIS: SOURCE_RANGE addr=0x08597320 size=0x4
 	.byte 0x40, 0x01, 0x0A, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08597324 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_08596EDC
-	@ ANALYSIS: RAW_BLOCK size=0x70
+	@ ANALYSIS: RAW_BLOCK size=0x70 addr=0x08597328 parent=gRouletteData_08597304 offset=0x24 entropy=2.108 head=00020B00000000000000000000000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x08597328 size=0x70
 	.byte 0x00, 0x02, 0x0B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x02, 0x00, 0x00, 0x00, 0x04, 0x00, 0x00, 0x00, 0x06, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00
@@ -717,19 +717,19 @@ gRouletteData_085974FC: @ 0x085974FC
 gRouletteData_08597504: @ 0x08597504
 	@ analyzed canonical ROM range 0x08597504-0x0859752B
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x08597504 parent=gRouletteData_08597504 offset=0x0 entropy=2.75 head=06000200F4745908
 	@ ANALYSIS: SOURCE_RANGE addr=0x08597504 size=0x8
 	.byte 0x06, 0x00, 0x02, 0x00, 0xF4, 0x74, 0x59, 0x08
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0859750C size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x08597510 parent=gRouletteData_08597504 offset=0xC
 	@ ANALYSIS: SOURCE_RANGE addr=0x08597510 size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08597514 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08597518 size=0x4 source=v54_multi_pointer
 	.4byte sub_08143A68
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: RAW_BLOCK size=0x10 addr=0x0859751C parent=gRouletteData_08597504 offset=0x18 entropy=1.061 head=00000080000800000000008000080000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0859751C size=0x10
 	.byte 0x00, 0x00, 0x00, 0x80, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80, 0x00, 0x08, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0859752C: roulette.s: sub_08142CD8

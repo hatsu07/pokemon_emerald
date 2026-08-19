@@ -5,7 +5,7 @@ gPokemonSummaryScreenData_085ED40C: @ 0x085ED40C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085ED40C size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D971CC
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085ED410 parent=gPokemonSummaryScreenData_085ED40C offset=0x4 entropy=2.0 head=00173275
 	@ ANALYSIS: SOURCE_RANGE addr=0x085ED410 size=0x4
 	.byte 0x00, 0x17, 0x32, 0x75
 	@ pret/pokeemerald-jp direct xref for 0x085ED414: pokemon_summary_screen.s: CreateMoveTypeIcons
@@ -37,7 +37,7 @@ gPokemonSummaryScreenData_085ED4C4: @ 0x085ED4C4
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085ED4C4 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D97CBC
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085ED4C8 parent=gPokemonSummaryScreenData_085ED4C4 offset=0x4 entropy=2.0 head=00043075
 	@ ANALYSIS: SOURCE_RANGE addr=0x085ED4C8 size=0x4
 	.byte 0x00, 0x04, 0x30, 0x75
 	@ pret/pokeemerald-jp direct xref for 0x085ED4CC: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
@@ -47,7 +47,7 @@ gPokemonSummaryScreenData_085ED4CC: @ 0x085ED4CC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085ED4CC size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D97DB8
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085ED4D0 parent=gPokemonSummaryScreenData_085ED4CC offset=0x4 entropy=1.5 head=30750000
 	@ ANALYSIS: SOURCE_RANGE addr=0x085ED4D0 size=0x4
 	.byte 0x30, 0x75, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085ED4D4: pokemon_summary_screen.s: sub_081C4300
@@ -71,7 +71,7 @@ gPokemonSummaryScreenData_085ED548: @ 0x085ED548
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085ED548 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D96F44
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085ED54C parent=gPokemonSummaryScreenData_085ED548 offset=0x4 entropy=2.0 head=80033175
 	@ ANALYSIS: SOURCE_RANGE addr=0x085ED54C size=0x4
 	.byte 0x80, 0x03, 0x31, 0x75
 	@ pret/pokeemerald-jp direct xref for 0x085ED550: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
@@ -81,7 +81,7 @@ gPokemonSummaryScreenData_085ED550: @ 0x085ED550
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085ED550 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D971A4
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085ED554 parent=gPokemonSummaryScreenData_085ED550 offset=0x4 entropy=1.5 head=31750000
 	@ ANALYSIS: SOURCE_RANGE addr=0x085ED554 size=0x4
 	.byte 0x31, 0x75, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085ED558: pokemon_summary_screen.s: CreateSetStatusSprite
@@ -242,7 +242,7 @@ gBattlePyramidBagData_085EF81C: @ 0x085EF81C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085EF81C size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D9ABE4
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085EF820 parent=gBattlePyramidBagData_085EF81C offset=0x4 entropy=2.0 head=00082410
 	@ ANALYSIS: SOURCE_RANGE addr=0x085EF820 size=0x4
 	.byte 0x00, 0x08, 0x24, 0x10
 	@ pret/pokeemerald-jp direct xref for 0x085EF824: battle_pyramid_bag.s: sub_081C66B4
@@ -502,7 +502,7 @@ gPokenavMainMenuData_085F1410: @ 0x085F1410
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085F1410 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_085EFDC8
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F1414 parent=gPokenavMainMenuData_085F1410 offset=0x4 entropy=0.811 head=00100000
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1414 size=0x4
 	.byte 0x00, 0x10, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085F1418: pokenav_main_menu.s: InitPokenavMainMenuResources
@@ -519,7 +519,7 @@ gPokenavMainMenuData_085F1428: @ 0x085F1428
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085F1428 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_085F08B0
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F142C parent=gPokenavMainMenuData_085F1428 offset=0x4 entropy=1.5 head=000C0200
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F142C size=0x4
 	.byte 0x00, 0x0C, 0x02, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085F1430: pokenav_main_menu.s: LoadLeftHeaderGfxForMenu
@@ -529,32 +529,32 @@ gPokenavMainMenuData_085F1430: @ 0x085F1430
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1430 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F02BC
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F1434 parent=gPokenavMainMenuData_085F1430 offset=0x4 entropy=1.5 head=20000300
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1434 size=0x4
 	.byte 0x20, 0x00, 0x03, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1438 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F073C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F143C parent=gPokenavMainMenuData_085F1430 offset=0xC entropy=1.5 head=20000100
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F143C size=0x4
 	.byte 0x20, 0x00, 0x01, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1440 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F0598
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F1444 parent=gPokenavMainMenuData_085F1430 offset=0x14 entropy=1.5 head=20000200
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1444 size=0x4
 	.byte 0x20, 0x00, 0x02, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1448 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F0428
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F144C parent=gPokenavMainMenuData_085F1430 offset=0x1C entropy=1.5 head=20000400
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F144C size=0x4
 	.byte 0x20, 0x00, 0x04, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1450 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F08B0
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F1454 parent=gPokenavMainMenuData_085F1430 offset=0x24 entropy=0.811 head=20000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1454 size=0x4
 	.byte 0x20, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1458 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F08B0
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F145C parent=gPokenavMainMenuData_085F1430 offset=0x2C entropy=0.811 head=40000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F145C size=0x4
 	.byte 0x40, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085F1460: pokenav_main_menu.s: LoadLeftHeaderGfxForSubMenu
@@ -564,37 +564,37 @@ gPokenavMainMenuData_085F1460: @ 0x085F1460
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1460 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F0B24
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F1464 parent=gPokenavMainMenuData_085F1460 offset=0x4 entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1464 size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1468 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F0C8C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F146C parent=gPokenavMainMenuData_085F1460 offset=0xC entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F146C size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1470 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F0DEC
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F1474 parent=gPokenavMainMenuData_085F1460 offset=0x14 entropy=0.811 head=04000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1474 size=0x4
 	.byte 0x04, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1478 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F0F00
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F147C parent=gPokenavMainMenuData_085F1460 offset=0x1C entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F147C size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1480 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F1034
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F1484 parent=gPokenavMainMenuData_085F1460 offset=0x24 entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1484 size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1488 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F116C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x085F148C parent=gPokenavMainMenuData_085F1460 offset=0x2C
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F148C size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1490 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F1288
-	@ ANALYSIS: RAW_BLOCK size=0x34
+	@ ANALYSIS: RAW_BLOCK size=0x34 addr=0x085F1494 parent=gPokenavMainMenuData_085F1460 offset=0x34 entropy=2.321 head=00000000000000800000000000000800
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1494 size=0x34
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x00
 	.byte 0x10, 0x00, 0x08, 0x00, 0x20, 0x00, 0x08, 0x00, 0x30, 0x00, 0x08, 0x00, 0x40, 0x00, 0x08, 0x00
@@ -628,19 +628,19 @@ sSpriteTemplate_085F14F0: @ 0x085F14F0
 gPokenavMainMenuData_085F1508: @ 0x085F1508
 	@ analyzed canonical ROM range 0x085F1508-0x085F15A7
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x085F1508 parent=gPokenavMainMenuData_085F1508 offset=0x0 entropy=2.5 head=02000200E8145F08
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1508 size=0x8
 	.byte 0x02, 0x00, 0x02, 0x00, 0xE8, 0x14, 0x5F, 0x08
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1510 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x085F1514 parent=gPokenavMainMenuData_085F1508 offset=0xC
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1514 size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1518 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F151C size=0x4 source=v54_multi_pointer
 	.4byte SpriteCallbackDummy
-	@ ANALYSIS: RAW_BLOCK size=0x88
+	@ ANALYSIS: RAW_BLOCK size=0x88 addr=0x085F1520 parent=gPokenavMainMenuData_085F1508 offset=0x18 entropy=3.685 head=00006B42062500000000000000000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1520 size=0x88
 	.byte 0x00, 0x00, 0x6B, 0x42, 0x06, 0x25, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00

@@ -391,19 +391,19 @@ gFieldEffectData_08536EDC: @ 0x08536EDC
 gFieldEffectData_08536EF0: @ 0x08536EF0
 	@ analyzed canonical ROM range 0x08536EF0-0x08536F57
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08536EF0 parent=gFieldEffectData_08536EF0 offset=0x0 entropy=1.5 head=FFFF0610
 	@ ANALYSIS: SOURCE_RANGE addr=0x08536EF0 size=0x4
 	.byte 0xFF, 0xFF, 0x06, 0x10
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08536EF4 size=0x4 source=v54_multi_pointer
 	.4byte gFieldEffectData_08536EBC
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: POINTER_STRUCT_FRAGMENT size=0x8 addr=0x08536EF8 parent=gFieldEffectData_08536EF0 offset=0x8 dwords=2 rom_ptrs=2 ram_ptrs=0 nulls=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08536EF8 size=0x8
 	.byte 0xEC, 0x6E, 0x53, 0x08, 0xD4, 0x6E, 0x53, 0x08
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08536F00 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08536F04 size=0x4 source=v54_multi_pointer
 	.4byte SpriteCallbackDummy
-	@ ANALYSIS: RAW_BLOCK size=0x50
+	@ ANALYSIS: RAW_BLOCK size=0x50 addr=0x08536F08 parent=gFieldEffectData_08536EF0 offset=0x18 entropy=3.702 head=3C56530807100000DC5A530810100000
 	@ ANALYSIS: SOURCE_RANGE addr=0x08536F08 size=0x50
 	.byte 0x3C, 0x56, 0x53, 0x08, 0x07, 0x10, 0x00, 0x00, 0xDC, 0x5A, 0x53, 0x08, 0x10, 0x10, 0x00, 0x00
 	.byte 0x00, 0x40, 0x00, 0x80, 0x00, 0x00, 0x00, 0x00, 0x1C, 0x56, 0x53, 0x08, 0x20, 0x00, 0x00, 0x00

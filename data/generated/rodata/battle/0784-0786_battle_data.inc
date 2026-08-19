@@ -477,19 +477,19 @@ sSpriteTemplate_0854CB6C: @ 0x0854CB6C
 gPokemonStorageSystemData_0854CB84: @ 0x0854CB84
 	@ analyzed canonical ROM range 0x0854CB84-0x0854CBCB
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x0854CB84 parent=gPokemonStorageSystemData_0854CB84 offset=0x0 entropy=3.0 head=1200C0DA9CCB5408
 	@ ANALYSIS: SOURCE_RANGE addr=0x0854CB84 size=0x8
 	.byte 0x12, 0x00, 0xC0, 0xDA, 0x9C, 0xCB, 0x54, 0x08
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0854CB8C size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x0854CB90 parent=gPokemonStorageSystemData_0854CB84 offset=0xC
 	@ ANALYSIS: SOURCE_RANGE addr=0x0854CB90 size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0854CB94 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0854CB98 size=0x4 source=v54_multi_pointer
 	.4byte SpriteCallbackDummy
-	@ ANALYSIS: RAW_BLOCK size=0x30
+	@ ANALYSIS: RAW_BLOCK size=0x30 addr=0x0854CB9C parent=gPokemonStorageSystemData_0854CB84 offset=0x18 entropy=1.7 head=0000008000000000FEFFFEFF00780000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0854CB9C size=0x30
 	.byte 0x00, 0x00, 0x00, 0x80, 0x00, 0x00, 0x00, 0x00, 0xFE, 0xFF, 0xFE, 0xFF, 0x00, 0x78, 0x00, 0x00
 	.byte 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10, 0x00, 0x10, 0x00, 0x00, 0x00, 0x00, 0x00

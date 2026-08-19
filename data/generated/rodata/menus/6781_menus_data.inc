@@ -414,7 +414,7 @@ gPartyMenuData_085E17B0: @ 0x085E17B0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085E17B0 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D96C8C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085E17B4 parent=gPartyMenuData_085E17B0 offset=0x4 entropy=1.5 head=0004B004
 	@ ANALYSIS: SOURCE_RANGE addr=0x085E17B4 size=0x4
 	.byte 0x00, 0x04, 0xB0, 0x04
 	@ pret/pokeemerald-jp direct xref for 0x085E17B8: party_menu.s: LoadPartyMenuPokeballGfx
@@ -424,7 +424,7 @@ gPartyMenuData_085E17B8: @ 0x085E17B8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085E17B8 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D96F20
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085E17BC parent=gPartyMenuData_085E17B8 offset=0x4 entropy=1.5 head=B0040000
 	@ ANALYSIS: SOURCE_RANGE addr=0x085E17BC size=0x4
 	.byte 0xB0, 0x04, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085E17C0: party_menu.s: party_menu_link_mon_pokeball_object, party_menu_pokeball_object, sub_081B5BD4
@@ -447,7 +447,7 @@ gPartyMenuData_085E1828: @ 0x085E1828
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085E1828 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D96E0C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085E182C parent=gPartyMenuData_085E1828 offset=0x4 entropy=2.0 head=0003B104
 	@ ANALYSIS: SOURCE_RANGE addr=0x085E182C size=0x4
 	.byte 0x00, 0x03, 0xB1, 0x04
 	@ pret/pokeemerald-jp direct xref for 0x085E1830: party_menu.s: sub_081B5C14
@@ -471,7 +471,7 @@ gPartyMenuData_085E18B0: @ 0x085E18B0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085E18B0 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D96F44
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085E18B4 parent=gPartyMenuData_085E18B0 offset=0x4 entropy=1.5 head=0004B204
 	@ ANALYSIS: SOURCE_RANGE addr=0x085E18B4 size=0x4
 	.byte 0x00, 0x04, 0xB2, 0x04
 	@ pret/pokeemerald-jp direct xref for 0x085E18B8: party_menu.s: LoadPartyMenuAilmentGfx
@@ -481,7 +481,7 @@ gPartyMenuData_085E18B8: @ 0x085E18B8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085E18B8 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D971A4
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085E18BC parent=gPartyMenuData_085E18B8 offset=0x4 entropy=1.5 head=B2040000
 	@ ANALYSIS: SOURCE_RANGE addr=0x085E18BC size=0x4
 	.byte 0xB2, 0x04, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085E18C0: party_menu.s: party_menu_link_mon_status_condition_object, party_menu_status_condition_object

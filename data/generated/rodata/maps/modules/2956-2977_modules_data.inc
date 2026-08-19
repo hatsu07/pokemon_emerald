@@ -461,7 +461,7 @@ gLandmarkData_08598C68: @ 0x08598C68
 	landmark_table_entry 0x31, 0x01, sLandmarkList_08598C48
 	landmark_table_entry 0x31, 0x02, sLandmarkList_08598C50
 	landmark_table_entry 0x38, 0x02, sLandmarkList_08598C5C
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x08598DD8 parent=gLandmarkData_08598C68 offset=0x170 entropy=0.544 head=D500000000000000
 	.byte 0xD5, 0
 	.2byte 0
 	.4byte 0

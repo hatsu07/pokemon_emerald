@@ -73,19 +73,19 @@ gPokedexAreaScreenData_085939AC: @ 0x085939AC
 gPokedexAreaScreenData_085939BC: @ 0x085939BC
 	@ analyzed canonical ROM range 0x085939BC-0x08593A73
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x085939BC parent=gPokedexAreaScreenData_085939BC offset=0x0 entropy=2.5 head=02000200B4395908
 	@ ANALYSIS: SOURCE_RANGE addr=0x085939BC size=0x8
 	.byte 0x02, 0x00, 0x02, 0x00, 0xB4, 0x39, 0x59, 0x08
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085939C4 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x085939C8 parent=gPokedexAreaScreenData_085939BC offset=0xC
 	@ ANALYSIS: SOURCE_RANGE addr=0x085939C8 size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085939CC size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085939D0 size=0x4 source=v54_multi_pointer
 	.4byte SpriteCallbackDummy
-	@ ANALYSIS: RAW_BLOCK size=0xA0
+	@ ANALYSIS: RAW_BLOCK size=0xA0 addr=0x085939D4 parent=gPokedexAreaScreenData_085939BC offset=0x18 entropy=2.518 head=DA0200001F00DF189F737F4E3F67FF7F
 	@ ANALYSIS: SOURCE_RANGE addr=0x085939D4 size=0xA0
 	.byte 0xDA, 0x02, 0x00, 0x00, 0x1F, 0x00, 0xDF, 0x18, 0x9F, 0x73, 0x7F, 0x4E, 0x3F, 0x67, 0xFF, 0x7F
 	.byte 0xFF, 0x1B, 0xED, 0x7F, 0xF5, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -109,19 +109,19 @@ gPokedexAreaScreenData_08593A74: @ 0x08593A74
 gPokedexAreaScreenData_08593A84: @ 0x08593A84
 	@ analyzed canonical ROM range 0x08593A84-0x08593ABB
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x08593A84 parent=gPokedexAreaScreenData_08593A84 offset=0x0 entropy=2.5 head=030003007C3A5908
 	@ ANALYSIS: SOURCE_RANGE addr=0x08593A84 size=0x8
 	.byte 0x03, 0x00, 0x03, 0x00, 0x7C, 0x3A, 0x59, 0x08
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08593A8C size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x08593A90 parent=gPokedexAreaScreenData_08593A84 offset=0xC
 	@ ANALYSIS: SOURCE_RANGE addr=0x08593A90 size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08593A94 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08593A98 size=0x4 source=v54_multi_pointer
 	.4byte SpriteCallbackDummy
-	@ ANALYSIS: RAW_BLOCK size=0x20
+	@ ANALYSIS: RAW_BLOCK size=0x20 addr=0x08593A9C parent=gPokedexAreaScreenData_08593A84 offset=0x18 entropy=3.796 head=5E0200005B6F1F00FF3BE003E07F0000
 	@ ANALYSIS: SOURCE_RANGE addr=0x08593A9C size=0x20
 	.byte 0x5E, 0x02, 0x00, 0x00, 0x5B, 0x6F, 0x1F, 0x00, 0xFF, 0x3B, 0xE0, 0x03, 0xE0, 0x7F, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x5B, 0x6F, 0x4C, 0x35, 0x51, 0x62, 0xC5, 0x18, 0x0A, 0x3D

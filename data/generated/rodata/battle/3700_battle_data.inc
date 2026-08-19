@@ -205,7 +205,7 @@ sSpriteTemplate_BallOpenParticle_085C630C: @ 0x085C630C
 gBattleAnimSpecialData_085C63CC: @ 0x085C63CC
 	@ analyzed canonical ROM range 0x085C63CC-0x085C642F
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x2C
+	@ ANALYSIS: RAW_BLOCK size=0x2C addr=0x085C63CC parent=gBattleAnimSpecialData_085C63CC offset=0x0 entropy=4.67 head=DF7AF07AD753FF3F9772F5672C7B7E2B
 	@ ANALYSIS: SOURCE_RANGE addr=0x085C63CC size=0x2C
 	.byte 0xDF, 0x7A, 0xF0, 0x7A, 0xD7, 0x53, 0xFF, 0x3F, 0x97, 0x72, 0xF5, 0x67, 0x2C, 0x7B, 0x7E, 0x2B
 	.byte 0x1F, 0x43, 0xDD, 0x7B, 0x3F, 0x2A, 0x3F, 0x29, 0x00, 0x00, 0x01, 0x02, 0x03, 0x04, 0x01, 0x01
@@ -214,19 +214,19 @@ gBattleAnimSpecialData_085C63CC: @ 0x085C63CC
 	.4byte gOamData_AffineOff_ObjNormal_16x16
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085C63FC size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x085C6400 parent=gBattleAnimSpecialData_085C63CC offset=0x34
 	@ ANALYSIS: SOURCE_RANGE addr=0x085C6400 size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085C6404 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085C6408 size=0x4 source=v54_multi_pointer
 	.4byte sub_081730F0
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: RAW_BLOCK size=0x10 addr=0x085C640C parent=gBattleAnimSpecialData_085C63CC offset=0x40 entropy=3.125 head=40000100FFFF00000C645C084A274A27
 	@ ANALYSIS: SOURCE_RANGE addr=0x085C640C size=0x10
 	.byte 0x40, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x0C, 0x64, 0x5C, 0x08, 0x4A, 0x27, 0x4A, 0x27
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085C641C size=0x4 source=v54_multi_pointer
 	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: POINTER_STRUCT_FRAGMENT size=0x8 addr=0x085C6420 parent=gBattleAnimSpecialData_085C63CC offset=0x54 dwords=2 rom_ptrs=1 ram_ptrs=0 nulls=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x085C6420 size=0x8
 	.byte 0x14, 0x64, 0x5C, 0x08, 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085C6428 size=0x4 source=v54_multi_pointer

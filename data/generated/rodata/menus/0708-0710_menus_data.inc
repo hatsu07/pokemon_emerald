@@ -209,17 +209,17 @@ gFieldWeatherEffectData_0852A8F0: @ 0x0852A8F0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852A8F0 size=0x4 source=v54_multi_pointer
 	.4byte gWeatherRainTiles
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: RAW_BLOCK size=0xC addr=0x0852A8F4 parent=gFieldWeatherEffectData_0852A8F0 offset=0x4 entropy=1.418 head=000606120000000000040000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852A8F4 size=0xC
 	.byte 0x00, 0x06, 0x06, 0x12, 0x00, 0x00, 0x00, 0x00, 0x00, 0x04, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852A900 size=0x4 source=v54_multi_pointer
 	.4byte gWeatherSnow1Tiles
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852A904 parent=gFieldWeatherEffectData_0852A8F0 offset=0x14 entropy=0.811 head=20000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852A904 size=0x4
 	.byte 0x20, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852A908 size=0x4 source=v54_multi_pointer
 	.4byte gWeatherSnow2Tiles
-	@ ANALYSIS: RAW_BLOCK size=0x1C
+	@ ANALYSIS: RAW_BLOCK size=0x1C addr=0x0852A90C parent=gFieldWeatherEffectData_0852A8F0 offset=0x1C entropy=2.601 head=2000000000001000FFFF000001001000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852A90C size=0x1C
 	.byte 0x20, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x01, 0x00, 0x10, 0x00
 	.byte 0xFF, 0xFF, 0x00, 0x00, 0x10, 0xA9, 0x52, 0x08, 0x18, 0xA9, 0x52, 0x08
@@ -251,7 +251,7 @@ gFieldWeatherEffectData_0852A9CC: @ 0x0852A9CC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x0852A9CC size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gWeatherFogHorizontalTiles
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852A9D0 parent=gFieldWeatherEffectData_0852A9CC offset=0x4 entropy=2.0 head=00080112
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852A9D0 size=0x4
 	.byte 0x00, 0x08, 0x01, 0x12
 	@ pret/pokeemerald-jp direct xref for 0x0852A9D4: field_weather_effect.s: LoadAshSpriteSheet
@@ -299,7 +299,7 @@ gFieldWeatherEffectData_0852AA78: @ 0x0852AA78
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x0852AA78 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gWeatherSandstormTiles
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AA7C parent=gFieldWeatherEffectData_0852AA78 offset=0x4 entropy=2.0 head=000A0412
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AA7C size=0x4
 	.byte 0x00, 0x0A, 0x04, 0x12
 	@ pret/pokeemerald-jp direct xref for 0x0852AA80: field_weather_effect.s: CreateSwirlSandstormSprites
@@ -323,7 +323,7 @@ gFieldWeatherEffectData_0852AA94: @ 0x0852AA94
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x0852AA94 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gWeatherBubbleTiles
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AA98 parent=gFieldWeatherEffectData_0852AA94 offset=0x4 entropy=2.0 head=40000512
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AA98 size=0x4
 	.byte 0x40, 0x00, 0x05, 0x12
 	@ pret/pokeemerald-jp direct xref for 0x0852AA9C: field_weather_effect.s: CreateBubbleSprite
@@ -421,47 +421,47 @@ gBattleSetupData_0852AB48: @ 0x0852AB48
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AB48 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038868
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x0852AB4C parent=gBattleSetupData_0852AB48 offset=0x4
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AB4C size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AB50 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203886A
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AB54 parent=gBattleSetupData_0852AB48 offset=0xC entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AB54 size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AB58 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038870
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AB5C parent=gBattleSetupData_0852AB48 offset=0x14 entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AB5C size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AB60 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038874
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AB64 parent=gBattleSetupData_0852AB48 offset=0x1C entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AB64 size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AB68 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203887C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AB6C parent=gBattleSetupData_0852AB48 offset=0x24 entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AB6C size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AB70 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038884
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AB74 parent=gBattleSetupData_0852AB48 offset=0x2C entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AB74 size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AB78 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038888
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AB7C parent=gBattleSetupData_0852AB48 offset=0x34 entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AB7C size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AB80 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038890
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AB84 parent=gBattleSetupData_0852AB48 offset=0x3C entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AB84 size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AB88 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203888C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AB8C parent=gBattleSetupData_0852AB48 offset=0x44 entropy=0.811 head=06000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AB8C size=0x4
 	.byte 0x06, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0852AB90: battle_setup.s: BattleSetup_ConfigureTrainerBattle
@@ -471,47 +471,47 @@ gBattleSetupData_0852AB90: @ 0x0852AB90
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AB90 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038868
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x0852AB94 parent=gBattleSetupData_0852AB90 offset=0x4
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AB94 size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AB98 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203886A
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AB9C parent=gBattleSetupData_0852AB90 offset=0xC entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AB9C size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ABA0 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038870
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ABA4 parent=gBattleSetupData_0852AB90 offset=0x14 entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ABA4 size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ABA8 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038874
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ABAC parent=gBattleSetupData_0852AB90 offset=0x1C entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ABAC size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ABB0 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203887C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ABB4 parent=gBattleSetupData_0852AB90 offset=0x24 entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ABB4 size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ABB8 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038884
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ABBC parent=gBattleSetupData_0852AB90 offset=0x2C entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ABBC size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ABC0 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038888
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ABC4 parent=gBattleSetupData_0852AB90 offset=0x34 entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ABC4 size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ABC8 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038890
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ABCC parent=gBattleSetupData_0852AB90 offset=0x3C entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ABCC size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ABD0 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203888C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ABD4 parent=gBattleSetupData_0852AB90 offset=0x44 entropy=0.811 head=06000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ABD4 size=0x4
 	.byte 0x06, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0852ABD8: battle_setup.s: BattleSetup_ConfigureTrainerBattle
@@ -521,47 +521,47 @@ gBattleSetupData_0852ABD8: @ 0x0852ABD8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ABD8 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038868
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x0852ABDC parent=gBattleSetupData_0852ABD8 offset=0x4
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ABDC size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ABE0 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203886A
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ABE4 parent=gBattleSetupData_0852ABD8 offset=0xC entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ABE4 size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ABE8 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038870
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ABEC parent=gBattleSetupData_0852ABD8 offset=0x14 entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ABEC size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ABF0 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038874
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ABF4 parent=gBattleSetupData_0852ABD8 offset=0x1C entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ABF4 size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ABF8 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203887C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ABFC parent=gBattleSetupData_0852ABD8 offset=0x24 entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ABFC size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC00 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038884
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC04 parent=gBattleSetupData_0852ABD8 offset=0x2C entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC04 size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC08 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038888
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC0C parent=gBattleSetupData_0852ABD8 offset=0x34 entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC0C size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC10 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038890
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC14 parent=gBattleSetupData_0852ABD8 offset=0x3C entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC14 size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC18 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203888C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC1C parent=gBattleSetupData_0852ABD8 offset=0x44 entropy=0.811 head=06000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC1C size=0x4
 	.byte 0x06, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0852AC20: battle_setup.s: BattleSetup_ConfigureTrainerBattle
@@ -571,47 +571,47 @@ gBattleSetupData_0852AC20: @ 0x0852AC20
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC20 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038868
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x0852AC24 parent=gBattleSetupData_0852AC20 offset=0x4
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC24 size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC28 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203886A
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC2C parent=gBattleSetupData_0852AC20 offset=0xC entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC2C size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC30 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038870
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC34 parent=gBattleSetupData_0852AC20 offset=0x14 entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC34 size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC38 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038874
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC3C parent=gBattleSetupData_0852AC20 offset=0x1C entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC3C size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC40 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203887C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC44 parent=gBattleSetupData_0852AC20 offset=0x24 entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC44 size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC48 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038884
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC4C parent=gBattleSetupData_0852AC20 offset=0x2C entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC4C size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC50 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038888
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC54 parent=gBattleSetupData_0852AC20 offset=0x34 entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC54 size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC58 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038890
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC5C parent=gBattleSetupData_0852AC20 offset=0x3C entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC5C size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC60 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203888C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC64 parent=gBattleSetupData_0852AC20 offset=0x44 entropy=0.811 head=06000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC64 size=0x4
 	.byte 0x06, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0852AC68: battle_setup.s: BattleSetup_ConfigureTrainerBattle
@@ -621,47 +621,47 @@ gBattleSetupData_0852AC68: @ 0x0852AC68
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC68 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038868
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x0852AC6C parent=gBattleSetupData_0852AC68 offset=0x4
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC6C size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC70 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203886A
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC74 parent=gBattleSetupData_0852AC68 offset=0xC entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC74 size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC78 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038870
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC7C parent=gBattleSetupData_0852AC68 offset=0x14 entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC7C size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC80 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038874
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC84 parent=gBattleSetupData_0852AC68 offset=0x1C entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC84 size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC88 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203887C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC8C parent=gBattleSetupData_0852AC68 offset=0x24 entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC8C size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC90 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038884
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC94 parent=gBattleSetupData_0852AC68 offset=0x2C entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC94 size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AC98 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038888
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AC9C parent=gBattleSetupData_0852AC68 offset=0x34 entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AC9C size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ACA0 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038890
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ACA4 parent=gBattleSetupData_0852AC68 offset=0x3C entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ACA4 size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ACA8 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203888C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ACAC parent=gBattleSetupData_0852AC68 offset=0x44 entropy=0.811 head=06000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ACAC size=0x4
 	.byte 0x06, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0852ACB0: battle_setup.s: BattleSetup_ConfigureTrainerBattle
@@ -671,47 +671,47 @@ gBattleSetupData_0852ACB0: @ 0x0852ACB0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ACB0 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038868
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x0852ACB4 parent=gBattleSetupData_0852ACB0 offset=0x4
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ACB4 size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ACB8 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203886C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ACBC parent=gBattleSetupData_0852ACB0 offset=0xC entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ACBC size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ACC0 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038870
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ACC4 parent=gBattleSetupData_0852ACB0 offset=0x14 entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ACC4 size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ACC8 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038878
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ACCC parent=gBattleSetupData_0852ACB0 offset=0x1C entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ACCC size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ACD0 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038880
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ACD4 parent=gBattleSetupData_0852ACB0 offset=0x24 entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ACD4 size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ACD8 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038884
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ACDC parent=gBattleSetupData_0852ACB0 offset=0x2C entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ACDC size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ACE0 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038888
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ACE4 parent=gBattleSetupData_0852ACB0 offset=0x34 entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ACE4 size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ACE8 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038894
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ACEC parent=gBattleSetupData_0852ACB0 offset=0x3C entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ACEC size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ACF0 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203888C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852ACF4 parent=gBattleSetupData_0852ACB0 offset=0x44 entropy=0.811 head=06000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ACF4 size=0x4
 	.byte 0x06, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0852ACF8: battle_setup.s: BattleSetup_ConfigureTrainerBattle
@@ -721,47 +721,47 @@ gBattleSetupData_0852ACF8: @ 0x0852ACF8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852ACF8 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038868
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x0852ACFC parent=gBattleSetupData_0852ACF8 offset=0x4
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852ACFC size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AD00 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203886C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AD04 parent=gBattleSetupData_0852ACF8 offset=0xC entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AD04 size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AD08 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038870
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AD0C parent=gBattleSetupData_0852ACF8 offset=0x14 entropy=0.811 head=01000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AD0C size=0x4
 	.byte 0x01, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AD10 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038878
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AD14 parent=gBattleSetupData_0852ACF8 offset=0x1C entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AD14 size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AD18 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038880
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AD1C parent=gBattleSetupData_0852ACF8 offset=0x24 entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AD1C size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AD20 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038884
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AD24 parent=gBattleSetupData_0852ACF8 offset=0x2C entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AD24 size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AD28 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038888
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AD2C parent=gBattleSetupData_0852ACF8 offset=0x34 entropy=0.811 head=05000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AD2C size=0x4
 	.byte 0x05, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AD30 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_02038894
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AD34 parent=gBattleSetupData_0852ACF8 offset=0x3C entropy=0.811 head=02000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AD34 size=0x4
 	.byte 0x02, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852AD38 size=0x4 source=v54_multi_pointer
 	.4byte gEwram_JP_0203888C
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AD3C parent=gBattleSetupData_0852ACF8 offset=0x44 entropy=0.811 head=06000000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AD3C size=0x4
 	.byte 0x06, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0852AD40: battle_setup.s: CountBattledRematchTeams, DoesSomeoneWantRematchIn, GetLastBeatenRematchTrainerId, GetRematchTrainerId, GetTrainerMatchCallFlag (+6 more); gym_leader_rematch.s: GetRematchIndex; match_call.s: GetActiveMatchCallTrainerId, ...

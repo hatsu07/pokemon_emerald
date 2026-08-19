@@ -3,98 +3,98 @@
 gEasyChatData_08578D14: @ 0x08578D14
 	@ analyzed canonical ROM range 0x08578D14-0x08579D03
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x18
+	@ ANALYSIS: RAW_BLOCK size=0x18 addr=0x08578D14 parent=gEasyChatData_08578D14 offset=0x0 entropy=3.376 head=84455708CA00CA00A04757081B001500
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D14 size=0x18
 	.byte 0x84, 0x45, 0x57, 0x08, 0xCA, 0x00, 0xCA, 0x00, 0xA0, 0x47, 0x57, 0x08, 0x1B, 0x00, 0x15, 0x00
 	.byte 0x34, 0x4B, 0x57, 0x08, 0x6D, 0x00, 0x6D, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D2C size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Battle
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578D30 parent=gEasyChatData_08578D14 offset=0x1C entropy=1.0 head=3F003F00
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D30 size=0x4
 	.byte 0x3F, 0x00, 0x3F, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D34 size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Greetings
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578D38 parent=gEasyChatData_08578D14 offset=0x24 entropy=1.0 head=2A002A00
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D38 size=0x4
 	.byte 0x2A, 0x00, 0x2A, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D3C size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_People
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578D40 parent=gEasyChatData_08578D14 offset=0x2C entropy=1.0 head=4B004B00
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D40 size=0x4
 	.byte 0x4B, 0x00, 0x4B, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D44 size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Voices
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578D48 parent=gEasyChatData_08578D14 offset=0x34 entropy=1.0 head=3F003F00
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D48 size=0x4
 	.byte 0x3F, 0x00, 0x3F, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D4C size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Speech
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578D50 parent=gEasyChatData_08578D14 offset=0x3C entropy=1.0 head=3C003C00
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D50 size=0x4
 	.byte 0x3C, 0x00, 0x3C, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D54 size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Endings
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578D58 parent=gEasyChatData_08578D14 offset=0x44 entropy=1.0 head=45004500
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D58 size=0x4
 	.byte 0x45, 0x00, 0x45, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D5C size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Feelings
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578D60 parent=gEasyChatData_08578D14 offset=0x4C entropy=1.0 head=45004500
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D60 size=0x4
 	.byte 0x45, 0x00, 0x45, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D64 size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Conditions
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578D68 parent=gEasyChatData_08578D14 offset=0x54 entropy=1.0 head=45004500
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D68 size=0x4
 	.byte 0x45, 0x00, 0x45, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D6C size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Actions
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578D70 parent=gEasyChatData_08578D14 offset=0x5C entropy=1.0 head=4E004E00
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D70 size=0x4
 	.byte 0x4E, 0x00, 0x4E, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D74 size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Lifestyle
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578D78 parent=gEasyChatData_08578D14 offset=0x64 entropy=1.0 head=2D002D00
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D78 size=0x4
 	.byte 0x2D, 0x00, 0x2D, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D7C size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Hobbies
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578D80 parent=gEasyChatData_08578D14 offset=0x6C entropy=1.0 head=36003600
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D80 size=0x4
 	.byte 0x36, 0x00, 0x36, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D84 size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Time
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578D88 parent=gEasyChatData_08578D14 offset=0x74 entropy=1.0 head=2D002D00
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D88 size=0x4
 	.byte 0x2D, 0x00, 0x2D, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D8C size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Misc
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578D90 parent=gEasyChatData_08578D14 offset=0x7C entropy=1.0 head=2A002A00
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D90 size=0x4
 	.byte 0x2A, 0x00, 0x2A, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D94 size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Adjectives
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578D98 parent=gEasyChatData_08578D14 offset=0x84 entropy=1.0 head=24002400
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D98 size=0x4
 	.byte 0x24, 0x00, 0x24, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D9C size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Events
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578DA0 parent=gEasyChatData_08578D14 offset=0x8C entropy=1.0 head=1D001D00
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578DA0 size=0x4
 	.byte 0x1D, 0x00, 0x1D, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578DA4 size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Move1
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578DA8 parent=gEasyChatData_08578D14 offset=0x94 entropy=1.0 head=9A009A00
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578DA8 size=0x4
 	.byte 0x9A, 0x00, 0x9A, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578DAC size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Move2
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08578DB0 parent=gEasyChatData_08578D14 offset=0x9C entropy=1.0 head=C800C800
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578DB0 size=0x4
 	.byte 0xC8, 0x00, 0xC8, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578DB4 size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_TrendySaying
-	@ ANALYSIS: RAW_BLOCK size=0xF4C
+	@ ANALYSIS: RAW_BLOCK size=0xF4C addr=0x08578DB8 parent=gEasyChatData_08578D14 offset=0xA4 entropy=6.398 head=210021001C8B5708FB00FB00000C010C
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578DB8 size=0xF4C
 	.byte 0x21, 0x00, 0x21, 0x00, 0x1C, 0x8B, 0x57, 0x08, 0xFB, 0x00, 0xFB, 0x00, 0x00, 0x0C, 0x01, 0x0C
 	.byte 0x02, 0x0C, 0x03, 0x0C, 0x04, 0x0C, 0x05, 0x0C, 0x06, 0x0C, 0x07, 0x0C, 0x08, 0x0C, 0x55, 0x24

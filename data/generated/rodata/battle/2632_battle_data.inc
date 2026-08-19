@@ -214,7 +214,7 @@ gMailData_0857AEE4: @ 0x0857AEE4
 	.4byte gMailTiles_Orange
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AEEC size=0x4 source=v54_multi_pointer
 	.4byte gMailTilemap_Orange
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x0857AEF0 parent=gMailData_0857AEE4 offset=0xC entropy=2.75 head=C00200004A293967
 	@ ANALYSIS: SOURCE_RANGE addr=0x0857AEF0 size=0x8
 	.byte 0xC0, 0x02, 0x00, 0x00, 0x4A, 0x29, 0x39, 0x67
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AEF8 size=0x4 source=v54_multi_pointer
@@ -223,7 +223,7 @@ gMailData_0857AEE4: @ 0x0857AEE4
 	.4byte gMailTiles_Harbor
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF00 size=0x4 source=v54_multi_pointer
 	.4byte gMailTilemap_Harbor
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x0857AF04 parent=gMailData_0857AEE4 offset=0x20 entropy=2.75 head=E0020000FF7F3146
 	@ ANALYSIS: SOURCE_RANGE addr=0x0857AF04 size=0x8
 	.byte 0xE0, 0x02, 0x00, 0x00, 0xFF, 0x7F, 0x31, 0x46
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF0C size=0x4 source=v54_multi_pointer
@@ -232,7 +232,7 @@ gMailData_0857AEE4: @ 0x0857AEE4
 	.4byte gMailTiles_Glitter
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF14 size=0x4 source=v54_multi_pointer
 	.4byte gMailTilemap_Glitter
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x0857AF18 parent=gMailData_0857AEE4 offset=0x34 entropy=2.406 head=000400004A293967
 	@ ANALYSIS: SOURCE_RANGE addr=0x0857AF18 size=0x8
 	.byte 0x00, 0x04, 0x00, 0x00, 0x4A, 0x29, 0x39, 0x67
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF20 size=0x4 source=v54_multi_pointer
@@ -241,7 +241,7 @@ gMailData_0857AEE4: @ 0x0857AEE4
 	.4byte gMailTiles_Mech
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF28 size=0x4 source=v54_multi_pointer
 	.4byte gMailTilemap_Mech
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x0857AF2C parent=gMailData_0857AEE4 offset=0x48 entropy=2.75 head=E0010000FF7F3146
 	@ ANALYSIS: SOURCE_RANGE addr=0x0857AF2C size=0x8
 	.byte 0xE0, 0x01, 0x00, 0x00, 0xFF, 0x7F, 0x31, 0x46
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF34 size=0x4 source=v54_multi_pointer
@@ -250,7 +250,7 @@ gMailData_0857AEE4: @ 0x0857AEE4
 	.4byte gMailTiles_Wood
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF3C size=0x4 source=v54_multi_pointer
 	.4byte gMailTilemap_Wood
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x0857AF40 parent=gMailData_0857AEE4 offset=0x5C entropy=2.75 head=E0020000FF7F3146
 	@ ANALYSIS: SOURCE_RANGE addr=0x0857AF40 size=0x8
 	.byte 0xE0, 0x02, 0x00, 0x00, 0xFF, 0x7F, 0x31, 0x46
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF48 size=0x4 source=v54_multi_pointer
@@ -259,7 +259,7 @@ gMailData_0857AEE4: @ 0x0857AEE4
 	.4byte gMailTiles_Wave
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF50 size=0x4 source=v54_multi_pointer
 	.4byte gMailTilemap_Wave
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x0857AF54 parent=gMailData_0857AEE4 offset=0x70 entropy=2.406 head=000300004A293967
 	@ ANALYSIS: SOURCE_RANGE addr=0x0857AF54 size=0x8
 	.byte 0x00, 0x03, 0x00, 0x00, 0x4A, 0x29, 0x39, 0x67
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF5C size=0x4 source=v54_multi_pointer
@@ -268,7 +268,7 @@ gMailData_0857AEE4: @ 0x0857AEE4
 	.4byte gMailTiles_Bead
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF64 size=0x4 source=v54_multi_pointer
 	.4byte gMailTilemap_Bead
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x0857AF68 parent=gMailData_0857AEE4 offset=0x84 entropy=2.75 head=40010000FF7F3146
 	@ ANALYSIS: SOURCE_RANGE addr=0x0857AF68 size=0x8
 	.byte 0x40, 0x01, 0x00, 0x00, 0xFF, 0x7F, 0x31, 0x46
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF70 size=0x4 source=v54_multi_pointer
@@ -277,7 +277,7 @@ gMailData_0857AEE4: @ 0x0857AEE4
 	.4byte gMailTiles_Shadow
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF78 size=0x4 source=v54_multi_pointer
 	.4byte gMailTilemap_Shadow
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x0857AF7C parent=gMailData_0857AEE4 offset=0x98 entropy=2.406 head=00030000FF7F3146
 	@ ANALYSIS: SOURCE_RANGE addr=0x0857AF7C size=0x8
 	.byte 0x00, 0x03, 0x00, 0x00, 0xFF, 0x7F, 0x31, 0x46
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF84 size=0x4 source=v54_multi_pointer
@@ -286,7 +286,7 @@ gMailData_0857AEE4: @ 0x0857AEE4
 	.4byte gMailTiles_Tropic
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF8C size=0x4 source=v54_multi_pointer
 	.4byte gMailTilemap_Tropic
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x0857AF90 parent=gMailData_0857AEE4 offset=0xAC entropy=2.75 head=200200004A293967
 	@ ANALYSIS: SOURCE_RANGE addr=0x0857AF90 size=0x8
 	.byte 0x20, 0x02, 0x00, 0x00, 0x4A, 0x29, 0x39, 0x67
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AF98 size=0x4 source=v54_multi_pointer
@@ -295,7 +295,7 @@ gMailData_0857AEE4: @ 0x0857AEE4
 	.4byte gMailTiles_Dream
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AFA0 size=0x4 source=v54_multi_pointer
 	.4byte gMailTilemap_Dream
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x0857AFA4 parent=gMailData_0857AEE4 offset=0xC0 entropy=2.75 head=400300004A293967
 	@ ANALYSIS: SOURCE_RANGE addr=0x0857AFA4 size=0x8
 	.byte 0x40, 0x03, 0x00, 0x00, 0x4A, 0x29, 0x39, 0x67
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AFAC size=0x4 source=v54_multi_pointer
@@ -304,7 +304,7 @@ gMailData_0857AEE4: @ 0x0857AEE4
 	.4byte gMailTiles_Fab
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AFB4 size=0x4 source=v54_multi_pointer
 	.4byte gMailTilemap_Fab
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x0857AFB8 parent=gMailData_0857AEE4 offset=0xD4 entropy=2.75 head=A00200004A293967
 	@ ANALYSIS: SOURCE_RANGE addr=0x0857AFB8 size=0x8
 	.byte 0xA0, 0x02, 0x00, 0x00, 0x4A, 0x29, 0x39, 0x67
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AFC0 size=0x4 source=v54_multi_pointer
@@ -313,7 +313,7 @@ gMailData_0857AEE4: @ 0x0857AEE4
 	.4byte gMailTiles_Retro
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0857AFC8 size=0x4 source=v54_multi_pointer
 	.4byte gMailTilemap_Retro
-	@ ANALYSIS: RAW_BLOCK size=0x14
+	@ ANALYSIS: RAW_BLOCK size=0x14 addr=0x0857AFCC parent=gMailData_0857AEE4 offset=0xE8 entropy=2.646 head=200500004A2939670310000003100000
 	@ ANALYSIS: SOURCE_RANGE addr=0x0857AFCC size=0x14
 	.byte 0x20, 0x05, 0x00, 0x00, 0x4A, 0x29, 0x39, 0x67, 0x03, 0x10, 0x00, 0x00, 0x03, 0x10, 0x00, 0x00
 	.byte 0x03, 0x10, 0x00, 0x00

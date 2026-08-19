@@ -720,7 +720,7 @@ sSpriteTemplate_ReelTimeDuck: @ 0x08584D9C
 	.globl sSpriteTemplate_ReelTimeSmoke
 sSpriteTemplate_ReelTimeSmoke: @ 0x08584DB4
 	rodata_sprite_template 0xFFFF, 0x0004, 0x085849D0, 0x08584B7C, 0x08584A70, 0x08584C0C, sub_0812EE24
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x10 addr=0x08584DCC parent=sSpriteTemplate_DigitalDisplay_Reel offset=0x0 dwords=4 ptrish=3
 sSpriteTemplate_DigitalDisplay_Reel: @ 0x08584DCC
 	.4byte 0x0006FFFF @ +0x18
 	.4byte 0x085849C0 @ +0x1C
@@ -728,7 +728,7 @@ sSpriteTemplate_DigitalDisplay_Reel: @ 0x08584DCC
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte SpriteCallbackDummy @ +0x2C
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x10 addr=0x08584DE4 parent=sSpriteTemplate_DigitalDisplay_Time offset=0x0 dwords=4 ptrish=3
 sSpriteTemplate_DigitalDisplay_Time: @ 0x08584DE4
 	.4byte 0x0006FFFF @ +0x30
 	.4byte 0x085849C0 @ +0x34
@@ -736,7 +736,7 @@ sSpriteTemplate_DigitalDisplay_Time: @ 0x08584DE4
 	.4byte 0 @ +0x3C
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte SpriteCallbackDummy @ +0x44
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x10 addr=0x08584DFC parent=sSpriteTemplate_DigitalDisplay_Insert offset=0x0 dwords=4 ptrish=3
 sSpriteTemplate_DigitalDisplay_Insert: @ 0x08584DFC
 	.4byte 0x0006FFFF @ +0x48
 	.4byte 0x085849C0 @ +0x4C
@@ -744,7 +744,7 @@ sSpriteTemplate_DigitalDisplay_Insert: @ 0x08584DFC
 	.4byte 0 @ +0x54
 	.4byte gDummySpriteAffineAnimTable @ +0x58
 	.4byte SpriteCallbackDummy @ +0x5C
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x10 addr=0x08584E14 parent=sSpriteTemplate_DigitalDisplay_Stop offset=0x0 dwords=4 ptrish=3
 sSpriteTemplate_DigitalDisplay_Stop: @ 0x08584E14
 	.4byte 0x00060012 @ +0x60
 	.4byte 0x085849C0 @ +0x64
@@ -752,7 +752,7 @@ sSpriteTemplate_DigitalDisplay_Stop: @ 0x08584E14
 	.4byte 0 @ +0x6C
 	.4byte gDummySpriteAffineAnimTable @ +0x70
 	.4byte SpriteCallbackDummy @ +0x74
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x10 addr=0x08584E2C parent=sSpriteTemplate_DigitalDisplay_Win offset=0x0 dwords=4 ptrish=3
 sSpriteTemplate_DigitalDisplay_Win: @ 0x08584E2C
 	.4byte 0x0006FFFF @ +0x78
 	.4byte 0x085849F0 @ +0x7C
@@ -760,7 +760,7 @@ sSpriteTemplate_DigitalDisplay_Win: @ 0x08584E2C
 	.4byte 0 @ +0x84
 	.4byte gDummySpriteAffineAnimTable @ +0x88
 	.4byte SpriteCallbackDummy @ +0x8C
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x10 addr=0x08584E44 parent=sSpriteTemplate_DigitalDisplay_Lose offset=0x0 dwords=4 ptrish=3
 sSpriteTemplate_DigitalDisplay_Lose: @ 0x08584E44
 	.4byte 0x0006FFFF @ +0x90
 	.4byte 0x085849F0 @ +0x94
@@ -768,7 +768,7 @@ sSpriteTemplate_DigitalDisplay_Lose: @ 0x08584E44
 	.4byte 0 @ +0x9C
 	.4byte gDummySpriteAffineAnimTable @ +0xA0
 	.4byte SpriteCallbackDummy @ +0xA4
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x10 addr=0x08584E5C parent=sSpriteTemplate_DigitalDisplay_Bonus offset=0x0 dwords=4 ptrish=3
 sSpriteTemplate_DigitalDisplay_Bonus: @ 0x08584E5C
 	.4byte 0x00060013 @ +0xA8
 	.4byte 0x085849C0 @ +0xAC
@@ -776,7 +776,7 @@ sSpriteTemplate_DigitalDisplay_Bonus: @ 0x08584E5C
 	.4byte 0 @ +0xB4
 	.4byte gDummySpriteAffineAnimTable @ +0xB8
 	.4byte SpriteCallbackDummy @ +0xBC
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x10 addr=0x08584E74 parent=sSpriteTemplate_DigitalDisplay_Big offset=0x0 dwords=4 ptrish=3
 sSpriteTemplate_DigitalDisplay_Big: @ 0x08584E74
 	.4byte 0x00060014 @ +0xC0
 	.4byte 0x085849C0 @ +0xC4
@@ -784,7 +784,7 @@ sSpriteTemplate_DigitalDisplay_Big: @ 0x08584E74
 	.4byte 0 @ +0xCC
 	.4byte gDummySpriteAffineAnimTable @ +0xD0
 	.4byte SpriteCallbackDummy @ +0xD4
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x10 addr=0x08584E8C parent=sSpriteTemplate_DigitalDisplay_Reg offset=0x0 dwords=4 ptrish=3
 sSpriteTemplate_DigitalDisplay_Reg: @ 0x08584E8C
 	.4byte 0x00060015 @ +0xD8
 	.4byte 0x085849C0 @ +0xDC
@@ -792,7 +792,7 @@ sSpriteTemplate_DigitalDisplay_Reg: @ 0x08584E8C
 	.4byte 0 @ +0xE4
 	.4byte gDummySpriteAffineAnimTable @ +0xE8
 	.4byte SpriteCallbackDummy @ +0xEC
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x10 addr=0x08584EA4 parent=sSpriteTemplate_DigitalDisplay_AButton offset=0x0 dwords=4 ptrish=3
 sSpriteTemplate_DigitalDisplay_AButton: @ 0x08584EA4
 	.4byte 0x0006FFFF @ +0xF0
 	.4byte 0x085849E0 @ +0xF4
@@ -800,7 +800,7 @@ sSpriteTemplate_DigitalDisplay_AButton: @ 0x08584EA4
 	.4byte 0 @ +0xFC
 	.4byte gDummySpriteAffineAnimTable @ +0x100
 	.4byte SpriteCallbackDummy @ +0x104
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x10 addr=0x08584EBC parent=sSpriteTemplate_DigitalDisplay_Smoke offset=0x0 dwords=4 ptrish=3
 sSpriteTemplate_DigitalDisplay_Smoke: @ 0x08584EBC
 	.4byte 0x0006FFFF @ +0x108
 	.4byte 0x085849C0 @ +0x10C
@@ -808,7 +808,7 @@ sSpriteTemplate_DigitalDisplay_Smoke: @ 0x08584EBC
 	.4byte 0 @ +0x114
 	.4byte gDummySpriteAffineAnimTable @ +0x118
 	.4byte SpriteCallbackDummy @ +0x11C
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x10 addr=0x08584ED4 parent=sSpriteTemplate_DigitalDisplay_Number offset=0x0 dwords=4 ptrish=3
 sSpriteTemplate_DigitalDisplay_Number: @ 0x08584ED4
 	.4byte 0x0006FFFF @ +0x120
 	.4byte 0x085849D0 @ +0x124
@@ -816,7 +816,7 @@ sSpriteTemplate_DigitalDisplay_Number: @ 0x08584ED4
 	.4byte 0 @ +0x12C
 	.4byte gDummySpriteAffineAnimTable @ +0x130
 	.4byte SpriteCallbackDummy @ +0x134
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x10 addr=0x08584EEC parent=sSpriteTemplate_DigitalDisplay_Pokeball offset=0x0 dwords=4 ptrish=3
 sSpriteTemplate_DigitalDisplay_Pokeball: @ 0x08584EEC
 	.4byte 0x0006FFFF @ +0x138
 	.4byte 0x085849C0 @ +0x13C
@@ -824,7 +824,7 @@ sSpriteTemplate_DigitalDisplay_Pokeball: @ 0x08584EEC
 	.4byte 0 @ +0x144
 	.4byte gDummySpriteAffineAnimTable @ +0x148
 	.4byte SpriteCallbackDummy @ +0x14C
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x10 addr=0x08584F04 parent=sSpriteTemplate_DigitalDisplay_DPad offset=0x0 dwords=4 ptrish=3
 sSpriteTemplate_DigitalDisplay_DPad: @ 0x08584F04
 	.4byte 0x0006FFFF @ +0x150
 	.4byte 0x085849C0 @ +0x154

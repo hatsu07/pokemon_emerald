@@ -114,7 +114,7 @@ gContestData_08560B14: @ 0x08560B14
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x08560B14 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D8EAAC
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08560B18 parent=gContestData_08560B14 offset=0x4 entropy=2.0 head=0004E2AB
 	@ ANALYSIS: SOURCE_RANGE addr=0x08560B18 size=0x4
 	.byte 0x00, 0x04, 0xE2, 0xAB
 	@ pret/pokeemerald-jp direct xref for 0x08560B1C: contest.s: CreateApplauseMeterSprite
@@ -153,7 +153,7 @@ gContestData_08560B64: @ 0x08560B64
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x08560B64 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gContestJudgeGfx
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08560B68 parent=gContestData_08560B64 offset=0x4 entropy=2.0 head=0008214E
 	@ ANALYSIS: SOURCE_RANGE addr=0x08560B68 size=0x4
 	.byte 0x00, 0x08, 0x21, 0x4E
 	@ pret/pokeemerald-jp direct xref for 0x08560B6C: contest.s: sub_080DA884
@@ -163,7 +163,7 @@ gContestData_08560B6C: @ 0x08560B6C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x08560B6C size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gContestJudgeSymbolsGfx
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08560B70 parent=gContestData_08560B6C offset=0x4 entropy=2.0 head=8003E0AB
 	@ ANALYSIS: SOURCE_RANGE addr=0x08560B70 size=0x4
 	.byte 0x80, 0x03, 0xE0, 0xAB
 	@ pret/pokeemerald-jp direct xref for 0x08560B74: contest.s: sub_080DA884
@@ -173,7 +173,7 @@ gContestData_08560B74: @ 0x08560B74
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x08560B74 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gContestJudgeSymbolsPal
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08560B78 parent=gContestData_08560B74 offset=0x4 entropy=1.5 head=E0AB0000
 	@ ANALYSIS: SOURCE_RANGE addr=0x08560B78 size=0x4
 	.byte 0xE0, 0xAB, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08560B7C: contest.s: sub_080DA884
