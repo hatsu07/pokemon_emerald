@@ -413,7 +413,7 @@ sSpriteTemplate_085822E8: @ 0x085822E8
 gDecorationData_08582300: @ 0x08582300
 	@ analyzed canonical ROM range 0x08582300-0x08582A2C
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x72D
+	@ ANALYSIS: DECORATION_FRAGMENT size=0x72D addr=0x08582300 proof=exact_canonical_range parent=gDecorationData_08582300 offset=0x0 entropy=2.695 head=89A41208E17912080000000000000000
 	.byte 0x89, 0xA4, 0x12, 0x08, 0xE1, 0x79, 0x12, 0x08
 	.globl gSlotMachineReelSymbol1Tiles
 gSlotMachineReelSymbol1Tiles: @ 0x08582308

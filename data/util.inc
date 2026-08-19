@@ -14,7 +14,7 @@ sInvisibleSpriteTemplate: @ 0x082FAD34
 
 sSpriteDimensions: @ 0x082FAD4C
 	@ square: 8x8, 16x16, 32x32, 64x64 (in tiles)
-	@ ANALYSIS: RAW_BLOCK size=0x18
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x18 addr=0x082FAD4C proof=exact_label_segment_coverage parent=sSpriteDimensions offset=0x0 dwords=6 ptrish=3
 	.byte 1, 1, 2, 2, 4, 4, 8, 8
 	@ horizontal: 16x8, 32x8, 32x16, 64x32
 	.byte 2, 1, 4, 1, 4, 2, 8, 4
