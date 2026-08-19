@@ -1450,8 +1450,8 @@ sub_0810B510: @ 0x0810B510
 _0810B524: .4byte 0x0810B4DD
 	thumb_func_end sub_0810B510
 
-	thumb_func_start sub_0810B528
-sub_0810B528: @ 0x0810B528
+	thumb_func_start AnimGrowingChargeOrb
+AnimGrowingChargeOrb: @ 0x0810B528
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0810B53C
@@ -1491,7 +1491,7 @@ _0810B546:
 _0810B574: .4byte 0x020380D7
 _0810B578: .4byte 0x080A6015
 _0810B57C: .4byte 0x080A6085
-	thumb_func_end sub_0810B528
+	thumb_func_end AnimGrowingChargeOrb
 
 	thumb_func_start AnimElectricPuff
 AnimElectricPuff: @ 0x0810B580
@@ -1542,8 +1542,8 @@ _0810B5E0: .4byte 0x080A34C5
 _0810B5E4: .4byte 0x080A60A1
 	thumb_func_end AnimElectricPuff
 
-	thumb_func_start sub_0810B5E8
-sub_0810B5E8: @ 0x0810B5E8
+	thumb_func_start AnimVoltTackleOrbSlide
+AnimVoltTackleOrbSlide: @ 0x0810B5E8
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	movs r1, #1
@@ -1587,7 +1587,7 @@ _0810B636:
 	.align 2, 0
 _0810B640: .4byte 0x020380D6
 _0810B644: .4byte 0x0810B649
-	thumb_func_end sub_0810B5E8
+	thumb_func_end AnimVoltTackleOrbSlide
 
 	thumb_func_start sub_0810B648
 sub_0810B648: @ 0x0810B648
@@ -2163,8 +2163,8 @@ _0810BA80:
 _0810BA88: .4byte 0x03005B60
 	thumb_func_end AnimVoltTackleBolt
 
-	thumb_func_start sub_0810BA8C
-sub_0810BA8C: @ 0x0810BA8C
+	thumb_func_start AnimGrowingShockWaveOrb
+AnimGrowingShockWaveOrb: @ 0x0810BA8C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	movs r1, #0x2e
@@ -2212,7 +2212,7 @@ _0810BAE4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end sub_0810BA8C
+	thumb_func_end AnimGrowingShockWaveOrb
 
 	thumb_func_start sub_0810BAEC
 sub_0810BAEC: @ 0x0810BAEC

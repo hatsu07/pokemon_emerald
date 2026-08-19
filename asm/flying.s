@@ -165,8 +165,8 @@ _0810E7F0: .4byte 0x00000107
 _0810E7F4: .4byte 0x00000101
 	thumb_func_end sub_0810E768
 
-	thumb_func_start sub_0810E7F8
-sub_0810E7F8: @ 0x0810E7F8
+	thumb_func_start AnimGustToTarget
+AnimGustToTarget: @ 0x0810E7F8
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	movs r1, #1
@@ -222,7 +222,7 @@ _0810E868: .4byte 0x020380BE
 _0810E86C: .4byte 0x020380D7
 _0810E870: .4byte 0x080A6085
 _0810E874: .4byte 0x0810E879
-	thumb_func_end sub_0810E7F8
+	thumb_func_end AnimGustToTarget
 
 	thumb_func_start sub_0810E878
 sub_0810E878: @ 0x0810E878
@@ -357,8 +357,8 @@ _0810E984: .4byte 0x080A67B5
 _0810E988: .4byte 0x080A34C5
 	thumb_func_end AnimAirWaveCrescent
 
-	thumb_func_start sub_0810E98C
-sub_0810E98C: @ 0x0810E98C
+	thumb_func_start AnimFlyBallUp
+AnimFlyBallUp: @ 0x0810E98C
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #1
@@ -391,7 +391,7 @@ sub_0810E98C: @ 0x0810E98C
 _0810E9C8: .4byte 0x020380BE
 _0810E9CC: .4byte 0x0810E9D5
 _0810E9D0: .4byte 0x020205AC
-	thumb_func_end sub_0810E98C
+	thumb_func_end AnimFlyBallUp
 
 	thumb_func_start sub_0810E9D4
 sub_0810E9D4: @ 0x0810E9D4
@@ -1814,8 +1814,8 @@ _0810F47C: .4byte gBattleAnimSpriteTemplate_PiercingHit
 _0810F480: .4byte 0x020380D7
 	thumb_func_end sub_0810F3D8
 
-	thumb_func_start sub_0810F484
-sub_0810F484: @ 0x0810F484
+	thumb_func_start AnimBounceBallShrink
+AnimBounceBallShrink: @ 0x0810F484
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #0x2e
@@ -1864,10 +1864,10 @@ _0810F4DC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end sub_0810F484
+	thumb_func_end AnimBounceBallShrink
 
-	thumb_func_start sub_0810F4E4
-sub_0810F4E4: @ 0x0810F4E4
+	thumb_func_start AnimBounceBallLand
+AnimBounceBallLand: @ 0x0810F4E4
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #0x2e
@@ -1945,10 +1945,10 @@ _0810F56E:
 	bx r0
 	.align 2, 0
 _0810F574: .4byte 0x020205AC
-	thumb_func_end sub_0810F4E4
+	thumb_func_end AnimBounceBallLand
 
-	thumb_func_start sub_0810F578
-sub_0810F578: @ 0x0810F578
+	thumb_func_start AnimDiveBall
+AnimDiveBall: @ 0x0810F578
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #1
@@ -1981,7 +1981,7 @@ sub_0810F578: @ 0x0810F578
 _0810F5B4: .4byte 0x020380BE
 _0810F5B8: .4byte 0x0810F5C1
 _0810F5BC: .4byte 0x020205AC
-	thumb_func_end sub_0810F578
+	thumb_func_end AnimDiveBall
 
 	thumb_func_start sub_0810F5C0
 sub_0810F5C0: @ 0x0810F5C0

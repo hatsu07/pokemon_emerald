@@ -6785,8 +6785,8 @@ _080A87A4:
 	.align 2, 0
 	thumb_func_end sub_080A8750
 
-	thumb_func_start sub_080A87AC
-sub_080A87AC: @ 0x080A87AC
+	thumb_func_start AnimWeatherBallDown
+AnimWeatherBallDown: @ 0x080A87AC
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _080A87E4
@@ -6838,5 +6838,5 @@ _080A87FA:
 	.align 2, 0
 _080A8810: .4byte 0x080A67B5
 _080A8814: .4byte 0x080A34C5
-	thumb_func_end sub_080A87AC
+	thumb_func_end AnimWeatherBallDown
 

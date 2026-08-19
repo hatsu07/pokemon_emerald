@@ -3,8 +3,8 @@
 .text
 .syntax unified
 
-	thumb_func_start sub_08111E5C
-sub_08111E5C: @ 0x08111E5C
+	thumb_func_start AnimConfuseRayBallBounce
+AnimConfuseRayBallBounce: @ 0x08111E5C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r1, #1
@@ -49,7 +49,7 @@ sub_08111E5C: @ 0x08111E5C
 _08111EB8: .4byte 0x020380BE
 _08111EBC: .4byte 0x020380D7
 _08111EC0: .4byte 0x08111EC5
-	thumb_func_end sub_08111E5C
+	thumb_func_end AnimConfuseRayBallBounce
 
 	thumb_func_start sub_08111EC4
 sub_08111EC4: @ 0x08111EC4

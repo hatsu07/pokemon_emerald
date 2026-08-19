@@ -32,8 +32,8 @@ _0810D6B0: .4byte 0x080A5D79
 _0810D6B4: .4byte 0x080A34C5
 	thumb_func_end AnimUnusedHumanoidFoot
 
-	thumb_func_start sub_0810D6B8
-sub_0810D6B8: @ 0x0810D6B8
+	thumb_func_start AnimSlideHandOrFootToTarget
+AnimSlideHandOrFootToTarget: @ 0x0810D6B8
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r4, _0810D6FC
@@ -68,7 +68,7 @@ _0810D6E0:
 	.align 2, 0
 _0810D6FC: .4byte 0x020380BE
 _0810D700: .4byte 0x020380D6
-	thumb_func_end sub_0810D6B8
+	thumb_func_end AnimSlideHandOrFootToTarget
 
 	thumb_func_start sub_0810D704
 sub_0810D704: @ 0x0810D704
@@ -87,7 +87,7 @@ sub_0810D704: @ 0x0810D704
 	strh r1, [r0, #6]
 _0810D720:
 	adds r0, r4, #0
-	bl sub_0810D6B8
+	bl AnimSlideHandOrFootToTarget
 	pop {r4}
 	pop {r0}
 	bx r0
@@ -134,8 +134,8 @@ _0810D778: .4byte 0x080A5D79
 _0810D77C: .4byte 0x080A34C5
 	thumb_func_end AnimBasicFistOrFoot
 
-	thumb_func_start sub_0810D780
-sub_0810D780: @ 0x0810D780
+	thumb_func_start AnimFistOrFootRandomPos
+AnimFistOrFootRandomPos: @ 0x0810D780
 	push {r4, r5, r6, r7, lr}
 	mov r7, sb
 	mov r6, r8
@@ -317,7 +317,7 @@ _0810D8F8: .4byte gFightData_08572F3C
 _0810D8FC: .4byte 0x020205AC
 _0810D900: .4byte 0x08007141
 _0810D904: .4byte 0x0810D909
-	thumb_func_end sub_0810D780
+	thumb_func_end AnimFistOrFootRandomPos
 
 	thumb_func_start sub_0810D908
 sub_0810D908: @ 0x0810D908
@@ -365,8 +365,8 @@ _0810D954:
 	.align 2, 0
 	thumb_func_end sub_0810D908
 
-	thumb_func_start sub_0810D95C
-sub_0810D95C: @ 0x0810D95C
+	thumb_func_start AnimCrossChopHand
+AnimCrossChopHand: @ 0x0810D95C
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #1
@@ -409,7 +409,7 @@ _0810D992:
 	.align 2, 0
 _0810D9AC: .4byte 0x080A67B5
 _0810D9B0: .4byte 0x0810D9B5
-	thumb_func_end sub_0810D95C
+	thumb_func_end AnimCrossChopHand
 
 	thumb_func_start sub_0810D9B4
 sub_0810D9B4: @ 0x0810D9B4
@@ -453,8 +453,8 @@ _0810D9FC: .4byte 0x080A67B5
 _0810DA00: .4byte 0x080A34C5
 	thumb_func_end sub_0810D9B4
 
-	thumb_func_start sub_0810DA04
-sub_0810DA04: @ 0x0810DA04
+	thumb_func_start AnimSlidingKick
+AnimSlidingKick: @ 0x0810DA04
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r0, _0810DA80
@@ -520,7 +520,7 @@ _0810DA80: .4byte 0x020380D6
 _0810DA84: .4byte 0x020380D7
 _0810DA88: .4byte 0x020380BE
 _0810DA8C: .4byte 0x0810DA91
-	thumb_func_end sub_0810DA04
+	thumb_func_end AnimSlidingKick
 
 	thumb_func_start sub_0810DA90
 sub_0810DA90: @ 0x0810DA90
@@ -1467,8 +1467,8 @@ _0810E1C6:
 	.align 2, 0
 	thumb_func_end sub_0810E1B0
 
-	thumb_func_start sub_0810E1D4
-sub_0810E1D4: @ 0x0810E1D4
+	thumb_func_start AnimArmThrustHit
+AnimArmThrustHit: @ 0x0810E1D4
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r4, _0810E250
@@ -1534,7 +1534,7 @@ _0810E250: .4byte 0x020380D7
 _0810E254: .4byte 0x020380BE
 _0810E258: .4byte 0x020380D2
 _0810E25C: .4byte 0x0810E1B1
-	thumb_func_end sub_0810E1D4
+	thumb_func_end AnimArmThrustHit
 
 	thumb_func_start AnimRevengeScratch
 AnimRevengeScratch: @ 0x0810E260
@@ -1589,8 +1589,8 @@ _0810E2C4: .4byte 0x080A60A1
 _0810E2C8: .4byte 0x080A34C5
 	thumb_func_end AnimRevengeScratch
 
-	thumb_func_start sub_0810E2CC
-sub_0810E2CC: @ 0x0810E2CC
+	thumb_func_start AnimFocusPunchFist
+AnimFocusPunchFist: @ 0x0810E2CC
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r0, #0x3f
@@ -1622,7 +1622,7 @@ _0810E306:
 	pop {r4}
 	pop {r0}
 	bx r0
-	thumb_func_end sub_0810E2CC
+	thumb_func_end AnimFocusPunchFist
 
 	thumb_func_start sub_0810E30C
 sub_0810E30C: @ 0x0810E30C

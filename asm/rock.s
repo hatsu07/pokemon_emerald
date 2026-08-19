@@ -3,8 +3,8 @@
 .text
 .syntax unified
 
-	thumb_func_start sub_08111240
-sub_08111240: @ 0x08111240
+	thumb_func_start AnimFallingRock
+AnimFallingRock: @ 0x08111240
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r6, _081112AC
@@ -60,7 +60,7 @@ _081112B0: .4byte 0x020380D7
 _081112B4: .4byte 0x0000FFBA
 _081112B8: .4byte 0x081112C1
 _081112BC: .4byte 0x080A5D19
-	thumb_func_end sub_08111240
+	thumb_func_end AnimFallingRock
 
 	thumb_func_start sub_081112C0
 sub_081112C0: @ 0x081112C0
@@ -95,8 +95,8 @@ _081112FC: .4byte 0x080A6015
 _08111300: .4byte 0x080A5D19
 	thumb_func_end sub_081112C0
 
-	thumb_func_start sub_08111304
-sub_08111304: @ 0x08111304
+	thumb_func_start AnimRockFragment
+AnimRockFragment: @ 0x08111304
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r4, _0811132C
@@ -156,7 +156,7 @@ _0811133A:
 _0811137C: .4byte 0x020380BE
 _08111380: .4byte 0x080A5E35
 _08111384: .4byte 0x080A6015
-	thumb_func_end sub_08111304
+	thumb_func_end AnimRockFragment
 
 	thumb_func_start sub_08111388
 sub_08111388: @ 0x08111388
@@ -1207,8 +1207,8 @@ _08111BCE:
 _08111BD4: .4byte 0x020380A0
 	thumb_func_end sub_08111BAC
 
-	thumb_func_start sub_08111BD8
-sub_08111BD8: @ 0x08111BD8
+	thumb_func_start AnimRockTomb
+AnimRockTomb: @ 0x08111BD8
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _08111C10
@@ -1239,7 +1239,7 @@ sub_08111BD8: @ 0x08111BD8
 	.align 2, 0
 _08111C10: .4byte 0x020380BE
 _08111C14: .4byte 0x08111C19
-	thumb_func_end sub_08111BD8
+	thumb_func_end AnimRockTomb
 
 	thumb_func_start sub_08111C18
 sub_08111C18: @ 0x08111C18
@@ -1286,8 +1286,8 @@ _08111C62:
 	.align 2, 0
 	thumb_func_end sub_08111C18
 
-	thumb_func_start sub_08111C68
-sub_08111C68: @ 0x08111C68
+	thumb_func_start AnimRockBlastRock
+AnimRockBlastRock: @ 0x08111C68
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08111C90
@@ -1308,10 +1308,10 @@ _08111C84:
 	bx r0
 	.align 2, 0
 _08111C90: .4byte 0x020380D6
-	thumb_func_end sub_08111C68
+	thumb_func_end AnimRockBlastRock
 
-	thumb_func_start sub_08111C94
-sub_08111C94: @ 0x08111C94
+	thumb_func_start AnimRockScatter
+AnimRockScatter: @ 0x08111C94
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _08111CE0
@@ -1350,7 +1350,7 @@ sub_08111C94: @ 0x08111C94
 _08111CE0: .4byte 0x020380D7
 _08111CE4: .4byte 0x020380BE
 _08111CE8: .4byte 0x08111CED
-	thumb_func_end sub_08111C94
+	thumb_func_end AnimRockScatter
 
 	thumb_func_start sub_08111CEC
 sub_08111CEC: @ 0x08111CEC

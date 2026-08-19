@@ -13055,7 +13055,7 @@ gWeatherBallUpSpriteTemplate: @ 0x0851757C
 
 .globl gWeatherBallNormalDownSpriteTemplate
 gWeatherBallNormalDownSpriteTemplate: @ 0x08517594
-    semantic_sprite_template JP_ANIM_TAG_WEATHER_BALL, JP_ANIM_TAG_WEATHER_BALL, sOamData_AffineOff_ObjNormal_32x32, sAnims_WeatherBallNormal, 0, gDummySpriteAffineAnimTable, sub_080A87AC
+    semantic_sprite_template JP_ANIM_TAG_WEATHER_BALL, JP_ANIM_TAG_WEATHER_BALL, sOamData_AffineOff_ObjNormal_32x32, sAnims_WeatherBallNormal, 0, gDummySpriteAffineAnimTable, AnimWeatherBallDown
 
 .globl sAnim_SpinningSparkle
 sAnim_SpinningSparkle: @ 0x085175AC

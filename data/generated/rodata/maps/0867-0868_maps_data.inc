@@ -320,7 +320,7 @@ sSpriteTemplate_Tag27AB_08570F0C: @ 0x08570F0C
 	.4byte sAnims_Tag27AB_08570F0C_08570E84 @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27AB_08570F0C_08570ED8 @ affineAnims
-	.4byte 0x080A87AD @ callback (sub_080A87AC)
+	.4byte AnimWeatherBallDown @ callback (AnimWeatherBallDown)
 
 sAnim_Tag272D_08570F4C_0_08570F24: @ 0x08570F24
 	@ union AnimCmd stream
@@ -348,7 +348,7 @@ sSpriteTemplate_Tag272D_08570F4C: @ 0x08570F4C
 	.4byte sAnims_Tag272D_08570F4C_08570F44 @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08109719 @ callback (sub_08109718)
+	.4byte AnimFireSpiralInward @ callback (AnimFireSpiralInward)
 
 sSpriteTemplate_Tag272D_08570F64: @ 0x08570F64
 	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
@@ -357,7 +357,7 @@ sSpriteTemplate_Tag272D_08570F64: @ 0x08570F64
 	.4byte sAnims_Tag272D_08570F4C_08570F44 @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08109759 @ callback (sub_08109758)
+	.4byte AnimFireSpread @ callback (AnimFireSpread)
 
 sAnim_Tag2731_08570FDC_0_08570F7C: @ 0x08570F7C
 	@ union AnimCmd stream
@@ -421,7 +421,7 @@ sSpriteTemplate_Tag2733_0857100C: @ 0x0857100C
 	.4byte sAnims_Tag2733_0857100C_08570FBC @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x0810979D @ callback (sub_0810979C)
+	.4byte AnimFirePlume @ callback (AnimFirePlume)
 
 sSpriteTemplate_Tag272D_08571024: @ 0x08571024
 	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
@@ -430,7 +430,7 @@ sSpriteTemplate_Tag272D_08571024: @ 0x08571024
 	.4byte sAnims_Tag2733_0857100C_08570FBC @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x0810979D @ callback (sub_0810979C)
+	.4byte AnimFirePlume @ callback (AnimFirePlume)
 
 sAnim_Tag272D_08571050_0_0857103C: @ 0x0857103C
 	@ union AnimCmd stream
@@ -506,7 +506,7 @@ sSpriteTemplate_Tag272D_085710E8: @ 0x085710E8
 	.4byte sAnims_Tag272D_085710D0_085710B4 @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08109A51 @ callback (sub_08109A50)
+	.4byte AnimBurnFlame @ callback (AnimBurnFlame)
 
 sSpriteTemplate_Tag272D_08571100: @ 0x08571100
 	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
@@ -558,7 +558,7 @@ sSpriteTemplate_Tag272D_08571168: @ 0x08571168
 	.4byte sAnims_Tag272D_085710D0_085710B4 @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08109BF5 @ callback (sub_08109BF4)
+	.4byte AnimFireSpiralOutward @ callback (AnimFireSpiralOutward)
 
 sSpriteTemplate_Tag272D_08571180: @ 0x08571180
 	@ SpriteTemplate: tileTag=0x272D, paletteTag=0x272D
@@ -567,7 +567,7 @@ sSpriteTemplate_Tag272D_08571180: @ 0x08571180
 	.4byte sAnims_Tag272D_085710D0_085710B4 @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x080A87AD @ callback (sub_080A87AC)
+	.4byte AnimWeatherBallDown @ callback (AnimWeatherBallDown)
 
 	.if (. - .Lsemantic_range_08570C04) != 0x594
 	.error "semantic range 0x08570C04 size mismatch"
@@ -863,7 +863,7 @@ sSpriteTemplate_Tag27E4_08571540: @ 0x08571540
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27E4_08571540_08571534 @ affineAnims
-	.4byte 0x0810B529 @ callback (sub_0810B528)
+	.4byte AnimGrowingChargeOrb @ callback (AnimGrowingChargeOrb)
 
 sAnim_Tag27E5_08571570_0_08571558: @ 0x08571558
 	@ union AnimCmd stream
@@ -892,7 +892,7 @@ sSpriteTemplate_Tag27E4_08571588: @ 0x08571588
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27E4_08571540_08571534 @ affineAnims
-	.4byte 0x0810B5E9 @ callback (sub_0810B5E8)
+	.4byte AnimVoltTackleOrbSlide @ callback (AnimVoltTackleOrbSlide)
 
 sAnim_ElectricData_085715E4_0_085715A0: @ 0x085715A0
 	@ union AnimCmd stream
@@ -947,7 +947,7 @@ sSpriteTemplate_Tag27E4_085715FC: @ 0x085715FC
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27E4_08571540_08571534 @ affineAnims
-	.4byte 0x0810BA8D @ callback (sub_0810BA8C)
+	.4byte AnimGrowingShockWaveOrb @ callback (AnimGrowingShockWaveOrb)
 
 	.globl gElectricData_08571614
 gElectricData_08571614: @ 0x08571614
@@ -1262,7 +1262,7 @@ sSpriteTemplate_Tag2817_08571928: @ 0x08571928
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag2817_08571928_0857190C @ affineAnims
-	.4byte 0x080A87AD @ callback (sub_080A87AC)
+	.4byte AnimWeatherBallDown @ callback (AnimWeatherBallDown)
 
 sAnim_Tag273B_085719C8_0_08571940: @ 0x08571940
 	@ union AnimCmd stream
@@ -1385,7 +1385,7 @@ sSpriteTemplate_Tag279F_08571A4C: @ 0x08571A4C
 	.4byte sAnims_Tag279F_08571A4C_08571A38 @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x0810D6B9 @ callback (sub_0810D6B8)
+	.4byte AnimSlideHandOrFootToTarget @ callback (AnimSlideHandOrFootToTarget)
 
 sSpriteTemplate_Tag279F_08571A64: @ 0x08571A64
 	@ SpriteTemplate: tileTag=0x279F, paletteTag=0x279F
@@ -1411,7 +1411,7 @@ sSpriteTemplate_Tag279F_08571A94: @ 0x08571A94
 	.4byte sAnims_Tag279F_08571A4C_08571A38 @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x0810D781 @ callback (sub_0810D780)
+	.4byte AnimFistOrFootRandomPos @ callback (AnimFistOrFootRandomPos)
 
 sSpriteTemplate_Tag279F_08571AAC: @ 0x08571AAC
 	@ SpriteTemplate: tileTag=0x279F, paletteTag=0x279F
@@ -1420,7 +1420,7 @@ sSpriteTemplate_Tag279F_08571AAC: @ 0x08571AAC
 	.4byte sAnims_Tag279F_08571AAC_08571A44 @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x0810D95D @ callback (sub_0810D95C)
+	.4byte AnimCrossChopHand @ callback (AnimCrossChopHand)
 
 sSpriteTemplate_Tag279F_08571AC4: @ 0x08571AC4
 	@ SpriteTemplate: tileTag=0x279F, paletteTag=0x279F
@@ -1429,7 +1429,7 @@ sSpriteTemplate_Tag279F_08571AC4: @ 0x08571AC4
 	.4byte sAnims_Tag279F_08571AC4_08571A3C @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x0810DA05 @ callback (sub_0810DA04)
+	.4byte AnimSlidingKick @ callback (AnimSlidingKick)
 
 sAffineAnim_Tag279F_08571AF8_0_08571ADC: @ 0x08571ADC
 	@ union AffineAnimCmd stream
@@ -1542,7 +1542,7 @@ sSpriteTemplate_Tag279F_08571C18: @ 0x08571C18
 	.4byte sAnims_Tag279F_08571A4C_08571A38 @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x0810E1D5 @ callback (sub_0810E1D4)
+	.4byte AnimArmThrustHit @ callback (AnimArmThrustHit)
 
 sAnim_Tag2805_08571C6C_0_08571C30: @ 0x08571C30
 	@ union AnimCmd stream
@@ -1628,7 +1628,7 @@ sSpriteTemplate_Tag279F_08571CE8: @ 0x08571CE8
 	.4byte sAnims_Tag279F_08571A4C_08571A38 @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag279F_08571CE8_08571CE4 @ affineAnims
-	.4byte 0x0810E2CD @ callback (sub_0810E2CC)
+	.4byte AnimFocusPunchFist @ callback (AnimFocusPunchFist)
 
 sAnim_Tag27A7_08571D18_0_08571D00: @ 0x08571D00
 	@ union AnimCmd stream
@@ -1704,7 +1704,7 @@ sSpriteTemplate_Tag27A6_08571D8C: @ 0x08571D8C
 	.4byte sAnims_Tag27A6_08571D8C_08571D48 @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27A6_08571D8C_08571D84 @ affineAnims
-	.4byte 0x0810E3FD @ callback (sub_0810E3FC)
+	.4byte AnimSludgeProjectile @ callback (AnimSludgeProjectile)
 
 sSpriteTemplate_Tag27A6_08571DA4: @ 0x08571DA4
 	@ SpriteTemplate: tileTag=0x27A6, paletteTag=0x27A6
@@ -1713,7 +1713,7 @@ sSpriteTemplate_Tag27A6_08571DA4: @ 0x08571DA4
 	.4byte sAnims_Tag27A6_08571D8C_08571D48 @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27A6_08571D8C_08571D84 @ affineAnims
-	.4byte 0x0810E47D @ callback (sub_0810E47C)
+	.4byte AnimAcidPoisonBubble @ callback (AnimAcidPoisonBubble)
 
 sSpriteTemplate_Tag27A6_08571DBC: @ 0x08571DBC
 	@ SpriteTemplate: tileTag=0x27A6, paletteTag=0x27A6
@@ -1722,7 +1722,7 @@ sSpriteTemplate_Tag27A6_08571DBC: @ 0x08571DBC
 	.4byte sAnims_Tag27A6_08571DBC_08571D50 @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27A6_08571DBC_08571D88 @ affineAnims
-	.4byte 0x0810E521 @ callback (sub_0810E520)
+	.4byte AnimSludgeBombHitParticle @ callback (AnimSludgeBombHitParticle)
 
 sAffineAnim_WaterGunDroplet_0_08571DD4: @ 0x08571DD4
 	@ union AffineAnimCmd stream
@@ -1741,7 +1741,7 @@ sSpriteTemplate_Tag27A6_08571DF0: @ 0x08571DF0
 	.4byte sAnims_Tag27A6_08571DF0_08571D4C @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_WaterGunDroplet_08571DEC @ affineAnims
-	.4byte 0x0810E5A1 @ callback (sub_0810E5A0)
+	.4byte AnimAcidPoisonDroplet @ callback (AnimAcidPoisonDroplet)
 
 sAffineAnim_Tag27A6_08571E24_0_08571E08: @ 0x08571E08
 	@ union AffineAnimCmd stream
@@ -1795,7 +1795,7 @@ sSpriteTemplate_Tag2719_08571E88: @ 0x08571E88
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag2719_08571E88_08571E84 @ affineAnims
-	.4byte 0x0810E7F9 @ callback (sub_0810E7F8)
+	.4byte AnimGustToTarget @ callback (AnimGustToTarget)
 
 sAnim_Tag27AA_08571EB8_0_08571EA0: @ 0x08571EA0
 	@ union AnimCmd stream
@@ -1851,7 +1851,7 @@ sSpriteTemplate_Tag27AC_08571F24: @ 0x08571F24
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27AC_08571F24_08571EF8 @ affineAnims
-	.4byte 0x0810E98D @ callback (sub_0810E98C)
+	.4byte AnimFlyBallUp @ callback (AnimFlyBallUp)
 
 sSpriteTemplate_Tag27AC_08571F3C: @ 0x08571F3C
 	@ SpriteTemplate: tileTag=0x27AC, paletteTag=0x27AC
@@ -1934,7 +1934,7 @@ sSpriteTemplate_Tag27AC_08572004: @ 0x08572004
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27AC_08572004_08572000 @ affineAnims
-	.4byte 0x0810F485 @ callback (sub_0810F484)
+	.4byte AnimBounceBallShrink @ callback (AnimBounceBallShrink)
 
 sAffineAnim_Tag27AC_08572030_0_0857201C: @ 0x0857201C
 	@ union AffineAnimCmd stream
@@ -1952,7 +1952,7 @@ sSpriteTemplate_Tag27AC_08572030: @ 0x08572030
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27AC_08572030_0857202C @ affineAnims
-	.4byte 0x0810F4E5 @ callback (sub_0810F4E4)
+	.4byte AnimBounceBallLand @ callback (AnimBounceBallLand)
 
 sAffineAnim_Tag27AC_08572074_0_08572048: @ 0x08572048
 	@ union AffineAnimCmd stream
@@ -1973,7 +1973,7 @@ sSpriteTemplate_Tag27AC_08572074: @ 0x08572074
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27AC_08572074_08572070 @ affineAnims
-	.4byte 0x0810F579 @ callback (sub_0810F578)
+	.4byte AnimDiveBall @ callback (AnimDiveBall)
 
 	@ semanticized v110: canonical static data at 0x0857208C, size=0x24
 sAffineAnim_UnusedFlyBallStretch:
@@ -2533,7 +2533,7 @@ sSpriteTemplate_Tag274A_085726E8: @ 0x085726E8
 	.4byte sAnims_Tag274A_085726E8_085726DC @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08111241 @ callback (sub_08111240)
+	.4byte AnimFallingRock @ callback (AnimFallingRock)
 
 sSpriteTemplate_Tag274A_08572700: @ 0x08572700
 	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
@@ -2542,7 +2542,7 @@ sSpriteTemplate_Tag274A_08572700: @ 0x08572700
 	.4byte sAnims_Tag274A_085726E8_085726DC @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08111305 @ callback (sub_08111304)
+	.4byte AnimRockFragment @ callback (AnimRockFragment)
 
 sSpriteTemplate_Tag275A_08572718: @ 0x08572718
 	@ SpriteTemplate: tileTag=0x275A, paletteTag=0x275A
@@ -2690,7 +2690,7 @@ sSpriteTemplate_Tag274A_0857283C: @ 0x0857283C
 	.4byte sAnims_BasicRock @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x08111BD9 @ callback (sub_08111BD8)
+	.4byte AnimRockTomb @ callback (AnimRockTomb)
 
 sAffineAnim_Tag274A_0857287C_0_08572854: @ 0x08572854
 	@ union AffineAnimCmd stream
@@ -2714,7 +2714,7 @@ sSpriteTemplate_Tag274A_0857287C: @ 0x0857287C
 	.4byte sAnims_BasicRock @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag274A_0857287C_08572874 @ affineAnims
-	.4byte 0x08111C69 @ callback (sub_08111C68)
+	.4byte AnimRockBlastRock @ callback (AnimRockBlastRock)
 
 sSpriteTemplate_Tag274A_08572894: @ 0x08572894
 	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
@@ -2723,7 +2723,7 @@ sSpriteTemplate_Tag274A_08572894: @ 0x08572894
 	.4byte sAnims_BasicRock @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag274A_0857287C_08572874 @ affineAnims
-	.4byte 0x08111C95 @ callback (sub_08111C94)
+	.4byte AnimRockScatter @ callback (AnimRockScatter)
 
 sSpriteTemplate_Tag274A_085728AC: @ 0x085728AC
 	@ SpriteTemplate: tileTag=0x274A, paletteTag=0x274A
@@ -2740,7 +2740,7 @@ sSpriteTemplate_Tag274A_085728C4: @ 0x085728C4
 	.4byte sAnims_Tag274A_085728C4_085727E4 @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag274A_0857287C_08572874 @ affineAnims
-	.4byte 0x080A87AD @ callback (sub_080A87AC)
+	.4byte AnimWeatherBallDown @ callback (AnimWeatherBallDown)
 
 sAffineAnim_Tag271D_085728F8_0_085728DC: @ 0x085728DC
 	@ union AffineAnimCmd stream
@@ -2759,7 +2759,7 @@ sSpriteTemplate_Tag271D_085728F8: @ 0x085728F8
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag271D_085728F8_085728F4 @ affineAnims
-	.4byte 0x08111E5D @ callback (sub_08111E5C)
+	.4byte AnimConfuseRayBallBounce @ callback (AnimConfuseRayBallBounce)
 
 sSpriteTemplate_Tag271D_08572910: @ 0x08572910
 	@ SpriteTemplate: tileTag=0x271D, paletteTag=0x271D
