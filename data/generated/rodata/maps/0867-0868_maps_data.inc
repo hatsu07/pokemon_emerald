@@ -1264,12 +1264,12 @@ sSpriteTemplate_Tag2817_08571928: @ 0x08571928
 	.4byte sAffineAnims_Tag2817_08571928_0857190C @ affineAnims
 	.4byte AnimWeatherBallDown @ callback (AnimWeatherBallDown)
 
-sAnim_Tag273B_085719C8_0_08571940: @ 0x08571940
+sAnim_IceBallChunk_0: @ 0x08571940
 	@ union AnimCmd stream
 	.2byte 0x0000, 0x0001 @ ANIMCMD_FRAME(0, 1)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnim_Tag273B_085719C8_1_08571948: @ 0x08571948
+sAnim_IceBallChunk_1: @ 0x08571948
 	@ union AnimCmd stream
 	.2byte 0x0010, 0x0004 @ ANIMCMD_FRAME(16, 4)
 	.2byte 0x0020, 0x0004 @ ANIMCMD_FRAME(32, 4)
@@ -1277,53 +1277,53 @@ sAnim_Tag273B_085719C8_1_08571948: @ 0x08571948
 	.2byte 0x0040, 0x0004 @ ANIMCMD_FRAME(64, 4)
 	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
 
-sAnims_Tag273B_085719C8_0857195C: @ 0x0857195C
+sAnims_IceBallChunk: @ 0x0857195C
 	@ AnimCmd pointer table
-	.4byte sAnim_Tag273B_085719C8_0_08571940 @ [0]
-	.4byte sAnim_Tag273B_085719C8_1_08571948 @ [1]
+	.4byte sAnim_IceBallChunk_0 @ [0]
+	.4byte sAnim_IceBallChunk_1 @ [1]
 
-sAffineAnim_Tag273B_085719C8_0_08571964: @ 0x08571964
+sAffineAnim_IceBallChunk_0: @ 0x08571964
 	@ union AffineAnimCmd stream
 	.2byte 0x00E0, 0x00E0, 0x0000, 0x0000 @ AFFINE_FRAME(224, 224, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-sAffineAnim_Tag273B_085719C8_1_08571974: @ 0x08571974
+sAffineAnim_IceBallChunk_1: @ 0x08571974
 	@ union AffineAnimCmd stream
 	.2byte 0x0118, 0x0118, 0x0000, 0x0000 @ AFFINE_FRAME(280, 280, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-sAffineAnim_Tag273B_085719C8_2_08571984: @ 0x08571984
+sAffineAnim_IceBallChunk_2: @ 0x08571984
 	@ union AffineAnimCmd stream
 	.2byte 0x0150, 0x0150, 0x0000, 0x0000 @ AFFINE_FRAME(336, 336, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-sAffineAnim_Tag273B_085719C8_3_08571994: @ 0x08571994
+sAffineAnim_IceBallChunk_3: @ 0x08571994
 	@ union AffineAnimCmd stream
 	.2byte 0x0180, 0x0180, 0x0000, 0x0000 @ AFFINE_FRAME(384, 384, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-sAffineAnim_Tag273B_085719C8_4_085719A4: @ 0x085719A4
+sAffineAnim_IceBallChunk_4: @ 0x085719A4
 	@ union AffineAnimCmd stream
 	.2byte 0x01C0, 0x01C0, 0x0000, 0x0000 @ AFFINE_FRAME(448, 448, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-sAffineAnims_Tag273B_085719C8_085719B4: @ 0x085719B4
+sAffineAnims_IceBallChunk: @ 0x085719B4
 	@ AffineAnimCmd pointer table
-	.4byte sAffineAnim_Tag273B_085719C8_0_08571964 @ [0]
-	.4byte sAffineAnim_Tag273B_085719C8_1_08571974 @ [1]
-	.4byte sAffineAnim_Tag273B_085719C8_2_08571984 @ [2]
-	.4byte sAffineAnim_Tag273B_085719C8_3_08571994 @ [3]
-	.4byte sAffineAnim_Tag273B_085719C8_4_085719A4 @ [4]
+	.4byte sAffineAnim_IceBallChunk_0 @ [0]
+	.4byte sAffineAnim_IceBallChunk_1 @ [1]
+	.4byte sAffineAnim_IceBallChunk_2 @ [2]
+	.4byte sAffineAnim_IceBallChunk_3 @ [3]
+	.4byte sAffineAnim_IceBallChunk_4 @ [4]
 
-sSpriteTemplate_Tag273B_085719C8: @ 0x085719C8
+gIceBallChunkSpriteTemplate: @ 0x085719C8
 	@ SpriteTemplate: tileTag=0x273B, paletteTag=0x273B
 	.2byte 0x273B, 0x273B
 	.4byte gBattleAnimOam_084FD0E0 @ oam
-	.4byte sAnims_Tag273B_085719C8_0857195C @ anims
+	.4byte sAnims_IceBallChunk @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_Tag273B_085719C8_085719B4 @ affineAnims
+	.4byte sAffineAnims_IceBallChunk @ affineAnims
 	.4byte InitIceBallAnim @ callback
-sSpriteTemplate_Tag279D_085719E0: @ 0x085719E0
+gIceBallImpactShardSpriteTemplate: @ 0x085719E0
 	@ SpriteTemplate: tileTag=0x279D, paletteTag=0x279D
 	.2byte 0x279D, 0x279D
 	.4byte gBattleAnimOam_AffineOff_ObjNormal_8x8 @ oam
