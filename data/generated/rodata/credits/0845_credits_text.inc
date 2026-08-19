@@ -7,5 +7,5 @@ gText_Rom_566D7E: @ 0x08566D7E
 gRecordMixingData_08566D89: @ 0x08566D89
 	@ analyzed canonical ROM range 0x08566D89-0x08566D8E
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x6
+	@ ANALYSIS: U8_DATA size=0x6 bytes=6
 	.byte 0xD0, 0xC9, 0xC3, 0xBD, 0xBF, 0xB0

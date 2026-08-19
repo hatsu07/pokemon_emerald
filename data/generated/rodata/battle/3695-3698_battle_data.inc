@@ -110,14 +110,14 @@ gBattlePointerTable_Rom_5C0B98: @ 0x085C0B98
 gPlayerPcData_085C0BB8: @ 0x085C0BB8
 	@ analyzed canonical ROM range 0x085C0BB8-0x085C0BBB
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x00, 0x01, 0x02, 0x03
 	@ pret/pokeemerald-jp direct xref for 0x085C0BBC: player_pc.s: PlayerPC
 	.globl gPlayerPcData_085C0BBC
 gPlayerPcData_085C0BBC: @ 0x085C0BBC
 	@ analyzed canonical ROM range 0x085C0BBC-0x085C0BBF
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x00, 0x01, 0x03, 0x00
 	.globl gBattlePointerTable_Rom_5C0BC0
 gBattlePointerTable_Rom_5C0BC0: @ 0x085C0BC0
@@ -134,7 +134,7 @@ gBattlePointerTable_Rom_5C0BC0: @ 0x085C0BC0
 gPlayerPcData_085C0BE0: @ 0x085C0BE0
 	@ analyzed canonical ROM range 0x085C0BE0-0x085C0BE7
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x000D, 0x0001, 0x0000, 0x0000
 	.globl gBattlePointerTable_Rom_5C0BE8
 gBattlePointerTable_Rom_5C0BE8: @ 0x085C0BE8
@@ -151,21 +151,21 @@ gBattlePointerTable_Rom_5C0BE8: @ 0x085C0BE8
 gPlayerPcData_085C0C08: @ 0x085C0C08
 	@ analyzed canonical ROM range 0x085C0C08-0x085C0C0F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0100, 0x0901, 0x0F06, 0x0001
 	@ pret/pokeemerald-jp direct xref for 0x085C0C10: player_pc.s: InitPlayerPCMenu
 	.globl gPlayerPcData_085C0C10
 gPlayerPcData_085C0C10: @ 0x085C0C10
 	@ analyzed canonical ROM range 0x085C0C10-0x085C0C17
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0100, 0x0901, 0x0F08, 0x0001
 	@ pret/pokeemerald-jp direct xref for 0x085C0C18: player_pc.s: InitItemStorageMenu
 	.globl gPlayerPcData_085C0C18
 gPlayerPcData_085C0C18: @ 0x085C0C18
 	@ analyzed canonical ROM range 0x085C0C18-0x085C0C1F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0100, 0x0A01, 0x0F08, 0x0001
 	.globl gBattleU32Table_Rom_5C0C20
 gBattleU32Table_Rom_5C0C20: @ 0x085C0C20
@@ -188,7 +188,7 @@ FunctionPointerTable_JP_085C0C2C: @ 0x085C0C2C
 gPlayerPcData_085C0C40: @ 0x085C0C40
 	@ analyzed canonical ROM range 0x085C0C40-0x085C0C67
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x28
+	@ ANALYSIS: U16_TABLE size=0x28 entries=20
 	.2byte 0x0F00, 0x0E01, 0x0F12, 0x0051, 0x0100, 0x0C0D, 0x0F06, 0x014D
 	.2byte 0x0100, 0x0308, 0x0F03, 0x01A7, 0x0100, 0x0901, 0x0F02, 0x0195
 	.2byte 0x0700, 0x0609, 0x0F02, 0x01B0
@@ -197,14 +197,14 @@ gPlayerPcData_085C0C40: @ 0x085C0C40
 gPlayerPcData_085C0C68: @ 0x085C0C68
 	@ analyzed canonical ROM range 0x085C0C68-0x085C0C6F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0800, 0x0507, 0x0F04, 0x01BC
 	@ pret/pokeemerald-jp direct xref for 0x085C0C70: player_pc.s: sub_0816BE14
 	.globl gPlayerPcData_085C0C70
 gPlayerPcData_085C0C70: @ 0x085C0C70
 	@ analyzed canonical ROM range 0x085C0C70-0x085C0C73
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x01, 0x03, 0x02, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085C0C74: credits.s: sub_08176B24; intro.s: LoadCopyrightGraphics
 	.include "data/intro/copyright_assets.inc"

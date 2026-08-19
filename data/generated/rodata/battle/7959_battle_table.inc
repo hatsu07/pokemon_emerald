@@ -79,29 +79,29 @@ gBattleU32Table_Rom_5F7A80: @ 0x085F7A80
 gPokenavMatchCallDataData_085F7A94: @ 0x085F7A94
 	@ analyzed canonical ROM range 0x085F7A94-0x085F7AF3
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x004B0007 @ +0x0
 	.4byte 0x0000FFFF @ +0x4
 	.4byte gText_Rom_5CC79E @ +0x8
 	.4byte gText_Rom_5CC7AE @ +0xC
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U32_TABLE size=0x4 entries=1
 	.4byte 0x085CC7BD @ +0x10
 	.4byte gText_Rom_5CC7CC @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x004B0007 @ +0x18
 	.4byte 0x000004F6 @ +0x1C
 	.4byte gText_Rom_5CC79E @ +0x20
 	.4byte gText_Rom_5CC7AE @ +0x24
 	.4byte gText_Rom_5CC7DB @ +0x28
 	.4byte gText_Rom_5CC7EA @ +0x2C
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x003C0002 @ +0x30
 	.4byte 0x0000FFFF @ +0x34
 	.4byte gText_Rom_5CC7F7 @ +0x38
 	.4byte gText_Rom_5CC807 @ +0x3C
 	.4byte gText_Rom_5CC817 @ +0x40
 	.4byte gText_Rom_5CC827 @ +0x44
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x003F0003 @ +0x48
 	.4byte 0x0000FFFF @ +0x4C
 	.4byte gText_Rom_5CC836 @ +0x50
@@ -113,7 +113,7 @@ gPokenavMatchCallDataData_085F7A94: @ 0x085F7A94
 gMenuSpecializedData_085F7AF4: @ 0x085F7AF4
 	@ analyzed canonical ROM range 0x085F7AF4-0x085F7B0B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x18
+	@ ANALYSIS: U16_TABLE size=0x18 entries=12
 	.2byte 0x0100, 0x0801, 0x0F02, 0x0008, 0x1500, 0x0801, 0x0F12, 0x0018
 	.2byte 0x0100, 0x0B01, 0x0F08, 0x0018
 	@ pret/pokeemerald-jp direct xref for 0x085F7B0C: menu_specialized.s: sub_081D1704
@@ -121,14 +121,14 @@ gMenuSpecializedData_085F7AF4: @ 0x085F7AF4
 gMenuSpecializedData_085F7B0C: @ 0x085F7B0C
 	@ analyzed canonical ROM range 0x085F7B0C-0x085F7B17
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x0040, 0x0400, 0x0001, 0xA660, 0x0001, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085F7B18: menu_specialized.s: sub_081D1D70
 	.globl gMenuSpecializedData_085F7B18
 gMenuSpecializedData_085F7B18: @ 0x085F7B18
 	@ analyzed canonical ROM range 0x085F7B18-0x085F7C17
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x100
+	@ ANALYSIS: U16_TABLE size=0x100 entries=128
 	.2byte 0x0504, 0x0706, 0x0908, 0x0A09, 0x0B0A, 0x0C0B, 0x0D0C, 0x0D0D
 	.2byte 0x0E0D, 0x0E0E, 0x0F0E, 0x0F0F, 0x100F, 0x1010, 0x1010, 0x1110
 	.2byte 0x1111, 0x1111, 0x1211, 0x1212, 0x1212, 0x1312, 0x1313, 0x1313
@@ -150,7 +150,7 @@ gMenuSpecializedData_085F7B18: @ 0x085F7B18
 gMenuSpecializedData_085F7C18: @ 0x085F7C18
 	@ analyzed canonical ROM range 0x085F7C18-0x085F7C47
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x30
+	@ ANALYSIS: U16_TABLE size=0x30 entries=24
 	.2byte 0x0101, 0x1201, 0x0F0C, 0x000A, 0x0101, 0x1201, 0x0F0C, 0x00E2
 	.2byte 0x1501, 0x0801, 0x0F0C, 0x01BA, 0x0401, 0x160F, 0x0F04, 0x021A
 	.2byte 0x1600, 0x0508, 0x0F04, 0x0272, 0x00FF, 0x0000, 0x0000, 0x0000
@@ -159,6 +159,6 @@ gMenuSpecializedData_085F7C18: @ 0x085F7C18
 gMenuSpecializedData_085F7C48: @ 0x085F7C48
 	@ analyzed canonical ROM range 0x085F7C48-0x085F7C4F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x1600, 0x0508, 0x0F04, 0x0272
 	.globl gText_Rom_5F7C50

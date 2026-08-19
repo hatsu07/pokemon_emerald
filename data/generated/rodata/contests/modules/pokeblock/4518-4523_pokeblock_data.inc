@@ -13,7 +13,7 @@ gText_Rom_5C985C: @ 0x085C985C
 gPokeblockSpokeblockData_085C9864: @ 0x085C9864
 	@ analyzed canonical ROM range 0x085C9864-0x085C9868
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x5
+	@ ANALYSIS: U8_DATA size=0x5 bytes=5
 	.byte 0xF9, 0x05, 0xFD, 0x02, 0xFF
 
 	@ src/pokeblock.c:135 sText_ThrowAwayVar1

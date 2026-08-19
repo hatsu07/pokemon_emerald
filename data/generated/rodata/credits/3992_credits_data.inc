@@ -3,21 +3,21 @@
 gOptionMenuData_085C8C08: @ 0x085C8C08
 	@ analyzed canonical ROM range 0x085C8C08-0x085C8C0F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x01F4, 0x0000, 0x1261, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085C8C10: option_menu.s: InitDiplomaWindow
 	.globl gOptionMenuData_085C8C10
 gOptionMenuData_085C8C10: @ 0x085C8C10
 	@ analyzed canonical ROM range 0x085C8C10-0x085C8C1F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U16_TABLE size=0x10 entries=8
 	.2byte 0x0800, 0x0D02, 0x0F10, 0x0001, 0x00FF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085C8C20: option_menu.s: PrintDiplomaText
 	.globl gOptionMenuData_085C8C20
 gOptionMenuData_085C8C20: @ 0x085C8C20
 	@ analyzed canonical ROM range 0x085C8C20-0x085C8C23
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x00, 0x02, 0x03, 0x00
 	.globl gText_ExpandedPlaceholder_Empty
 gText_ExpandedPlaceholder_Empty: @ 0x085C8C24

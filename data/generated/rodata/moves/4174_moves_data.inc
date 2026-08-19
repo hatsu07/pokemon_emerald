@@ -3,6 +3,6 @@
 gPokedexData_085C8FDB: @ 0x085C8FDB
 	@ analyzed canonical ROM range 0x085C8FDB-0x085C8FDC
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x2
+	@ ANALYSIS: U8_DATA size=0x2 bytes=2
 	.byte 0x14, 0xFF
 	.globl gText_Rom_5C8FDD

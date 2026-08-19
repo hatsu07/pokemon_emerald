@@ -3,14 +3,14 @@
 gEreaderHelpersData_085FAEF4: @ 0x085FAEF4
 	@ analyzed canonical ROM range 0x085FAEF4-0x085FAF03
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U8_DATA size=0x10 bytes=16
 	.byte 0x63, 0x65, 0x72, 0x65, 0x61, 0x64, 0x65, 0x72, 0x5F, 0x74, 0x6F, 0x6F, 0x6C, 0x2E, 0x63, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085FAF04: ereader_helpers.s: TryWriteTrainerHill_r
 	.globl gEreaderHelpersData_085FAF04
 gEreaderHelpersData_085FAF04: @ 0x085FAF04
 	@ analyzed canonical ROM range 0x085FAF04-0x085FAF17
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x14
+	@ ANALYSIS: U8_DATA size=0x14 bytes=20
 	.byte 0x74, 0x74, 0x64, 0x61, 0x74, 0x61, 0x2D, 0x3E, 0x64, 0x75, 0x6D, 0x6D, 0x79, 0x20, 0x3D, 0x3D
 	.byte 0x20, 0x30, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085FAF18: ereader_helpers.s: TryWriteTrainerHill_r
@@ -18,28 +18,28 @@ gEreaderHelpersData_085FAF04: @ 0x085FAF04
 gEreaderHelpersData_085FAF18: @ 0x085FAF18
 	@ analyzed canonical ROM range 0x085FAF18-0x085FAF27
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U8_DATA size=0x10 bytes=16
 	.byte 0x74, 0x74, 0x64, 0x61, 0x74, 0x61, 0x2D, 0x3E, 0x69, 0x64, 0x20, 0x3D, 0x3D, 0x20, 0x30, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085FAF28: faraway_island.s: GetMewMoveDirection
 	.globl gFarawayIslandData_085FAF28
 gFarawayIslandData_085FAF28: @ 0x085FAF28
 	@ analyzed canonical ROM range 0x085FAF28-0x085FAF29
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x2
+	@ ANALYSIS: U8_DATA size=0x2 bytes=2
 	.byte 0x15, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085FAF2A: faraway_island.s: GetMewMoveDirection
 	.globl gFarawayIslandData_085FAF2A
 gFarawayIslandData_085FAF2A: @ 0x085FAF2A
 	@ analyzed canonical ROM range 0x085FAF2A-0x085FAF37
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xE
+	@ ANALYSIS: U16_TABLE size=0xE entries=7
 	.2byte 0x0010, 0x0019, 0x0010, 0x0010, 0x0011, 0x0014, 0x0014
 	@ pret/pokeemerald-jp direct xref for 0x085FAF38: trainer_hill.s: SetUpDataStruct
 	.globl gTrainerHillData_085FAF38
 gTrainerHillData_085FAF38: @ 0x085FAF38
 	@ analyzed canonical ROM range 0x085FAF38-0x085FAF9F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x68
+	@ ANALYSIS: U16_TABLE size=0x68 entries=52
 	.2byte 0x0104, 0x0002, 0x0000, 0x0000, 0x0000, 0x0000, 0x8A5C, 0x9869
 	.2byte 0xFFFF, 0xFFFF, 0x012B, 0x0000, 0x020B, 0x0A24, 0x0C00, 0x0A38
 	.2byte 0x0A00, 0x1016, 0x020B, 0x0A24, 0x0639, 0x1034, 0x1011, 0x0C06

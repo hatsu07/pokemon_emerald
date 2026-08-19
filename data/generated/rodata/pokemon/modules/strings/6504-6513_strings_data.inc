@@ -13,7 +13,7 @@ gText_Rom_5CCE36: @ 0x085CCE36
 gPokemonJumpData_085CCE52: @ 0x085CCE52
 	@ analyzed canonical ROM range 0x085CCE52-0x085CCE64
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x13
+	@ ANALYSIS: U8_DATA size=0x13 bytes=19
 	.byte 0xF7, 0x00, 0x37, 0x00, 0x02, 0x50, 0x4B, 0x02, 0x16, 0xFE, 0x15, 0x50, 0x13, 0x0C, 0x1F, 0x50
 	.byte 0x10, 0xAB, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085CCE65: pokemon_jump.s: sub_0802D5EC
@@ -21,7 +21,7 @@ gPokemonJumpData_085CCE52: @ 0x085CCE52
 gPokemonJumpData_085CCE65: @ 0x085CCE65
 	@ analyzed canonical ROM range 0x085CCE65-0x085CCE70
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U8_DATA size=0xC bytes=12
 	.byte 0xF7, 0x00, 0x1A, 0x00, 0x02, 0x50, 0x4B, 0x02, 0x44, 0x0D, 0xB0, 0xFF
 
 	@ src/strings.c:837 gText_WantToPlayAgain (+1 aliases)

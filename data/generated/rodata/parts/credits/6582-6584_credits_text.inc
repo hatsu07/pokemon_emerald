@@ -54,7 +54,7 @@ gQuizLadyQuestionPointers: @ 0x085D3C04
 	quiz_lady_question_pointer 15, gQuizLadyQuestion15
 	.globl gQuizLadyAnswers
 gQuizLadyAnswers: @ 0x085D3C44
-	@ ANALYSIS: RAW_BLOCK size=0x20
+	@ ANALYSIS: U16_TABLE size=0x20 entries=16
 	.2byte 0x013A, 0x016F, 0x2A43, 0x1802
 	.2byte 0x262D, 0x1814, 0x2202, 0x1A01
 	.2byte 0x1C13, 0x0A09, 0x0115, 0x017C

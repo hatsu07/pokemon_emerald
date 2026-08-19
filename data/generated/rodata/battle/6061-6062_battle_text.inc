@@ -9,6 +9,6 @@ gText_Rom_5CC339: @ 0x085CC339
 gTrainerCardData_085CC33C: @ 0x085CC33C
 	@ analyzed canonical ROM range 0x085CC33C-0x085CC340
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x5
+	@ ANALYSIS: U8_DATA size=0x5 bytes=5
 	.byte 0xF0, 0xFF, 0x13, 0x2E, 0xFF
 	.globl gText_Rom_5CC341

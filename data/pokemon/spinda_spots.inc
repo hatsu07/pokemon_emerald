@@ -2,7 +2,7 @@
 
 	.globl gSpindaSpotGraphics
 gSpindaSpotGraphics: @ 0x082EEC78
-	@ ANALYSIS: RAW_BLOCK size=0x2
+	@ ANALYSIS: U8_DATA size=0x2 bytes=2
 	.byte 16, 7 @ spot 0: x, y
 	.globl gPokemonBinaryAsset_Rom_2EEC7A
 gPokemonBinaryAsset_Rom_2EEC7A:

@@ -90,7 +90,7 @@ gText_Rom_5CA25C: @ 0x085CA25C
 gPartyMenuData_085CA273: @ 0x085CA273
 	@ analyzed canonical ROM range 0x085CA273-0x085CA275
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x3
+	@ ANALYSIS: U8_DATA size=0x3 bytes=3
 	.byte 0xFC, 0x09, 0xFF
 
 	@ src/strings.c:357 gJPText_AreYouSureYouWantToSpinTradeMon

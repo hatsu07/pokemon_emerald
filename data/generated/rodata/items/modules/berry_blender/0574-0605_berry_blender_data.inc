@@ -57,7 +57,7 @@ gText_Rom_30F847: @ 0x0830F847
 gBerryBlenderData_0830F849: @ 0x0830F849
 	@ analyzed canonical ROM range 0x0830F849-0x0830F84C
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0xFE, 0xFF, 0x00, 0xFF
 
 	@ src/berry_blender.c:309 sText_Ranking
@@ -109,14 +109,14 @@ gText_Rom_30F860: @ 0x0830F860
 gBerryBlenderData_0830F864: @ 0x0830F864
 	@ analyzed canonical ROM range 0x0830F864-0x0830F86F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x01FC, 0x0000, 0x10C9, 0x0000, 0x0A82, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0830F870: berry_blender.s: InitBerryBlenderWindows
 	.globl gBerryBlenderData_0830F870
 gBerryBlenderData_0830F870: @ 0x0830F870
 	@ analyzed canonical ROM range 0x0830F870-0x0830F8A7
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x38
+	@ ANALYSIS: U16_TABLE size=0x38 entries=28
 	.2byte 0x0100, 0x0706, 0x0E02, 0x0028, 0x1600, 0x0706, 0x0E02, 0x0036
 	.2byte 0x0100, 0x070C, 0x0E02, 0x0044, 0x1600, 0x070C, 0x0E02, 0x0052
 	.2byte 0x0400, 0x160F, 0x0E04, 0x0060, 0x0500, 0x1503, 0x0E0E, 0x0060
@@ -126,49 +126,49 @@ gBerryBlenderData_0830F870: @ 0x0830F870
 gBerryBlenderData_0830F8A8: @ 0x0830F8A8
 	@ analyzed canonical ROM range 0x0830F8A8-0x0830F8AF
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x1500, 0x0509, 0x0E04, 0x00B8
 	@ pret/pokeemerald-jp direct xref for 0x0830F8B0: berry_blender.s: sub_08080CA4
 	.globl gBerryBlenderData_0830F8B0
 gBerryBlenderData_0830F8B0: @ 0x0830F8B0
 	@ analyzed canonical ROM range 0x0830F8B0-0x0830F8B7
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U8_DATA size=0x8 bytes=8
 	.byte 0xFF, 0xFF, 0x01, 0xFF, 0xFF, 0x01, 0x01, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x0830F8B8: berry_blender.s: sub_0807F500, sub_0807FA20, sub_080802F0, sub_08080CA4
 	.globl gBerryBlenderData_0830F8B8
 gBerryBlenderData_0830F8B8: @ 0x0830F8B8
 	@ analyzed canonical ROM range 0x0830F8B8-0x0830F8BF
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U8_DATA size=0x8 bytes=8
 	.byte 0x48, 0x20, 0xA8, 0x20, 0x48, 0x80, 0xA8, 0x80
 	@ pret/pokeemerald-jp direct xref for 0x0830F8C0: berry_blender.s: sub_0807FA20, sub_08080154, sub_080802F0
 	.globl gBerryBlenderData_0830F8C0
 gBerryBlenderData_0830F8C0: @ 0x0830F8C0
 	@ analyzed canonical ROM range 0x0830F8C0-0x0830F8CB
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x00FF, 0xFF01, 0x00FF, 0x0201, 0x0100, 0x0302
 	@ pret/pokeemerald-jp direct xref for 0x0830F8CC: berry_blender.s: sub_0807FA20, sub_080802F0
 	.globl gBerryBlenderData_0830F8CC
 gBerryBlenderData_0830F8CC: @ 0x0830F8CC
 	@ analyzed canonical ROM range 0x0830F8CC-0x0830F8D3
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U8_DATA size=0x8 bytes=8
 	.byte 0x00, 0x00, 0x00, 0xC0, 0x00, 0x40, 0x00, 0x80
 	@ pret/pokeemerald-jp direct xref for 0x0830F8D4: berry_blender.s: sub_0807FA20, sub_080802F0
 	.globl gBerryBlenderData_0830F8D4
 gBerryBlenderData_0830F8D4: @ 0x0830F8D4
 	@ analyzed canonical ROM range 0x0830F8D4-0x0830F8D6
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x3
+	@ ANALYSIS: U8_DATA size=0x3 bytes=3
 	.byte 0x01, 0x01, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0830F8D7: berry_blender.s: sub_0808002C, sub_080809EC, sub_08080B14
 	.globl gBerryBlenderData_0830F8D7
 gBerryBlenderData_0830F8D7: @ 0x0830F8D7
 	@ analyzed canonical ROM range 0x0830F8D7-0x0830F8DB
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x5
+	@ ANALYSIS: U8_DATA size=0x5 bytes=5
 	.byte 0x20, 0xE0, 0x60, 0xA0, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0830F8DC: berry_blender.s: sub_080802F0
 	.globl gBerryBlenderData_0830F8DC
@@ -213,7 +213,7 @@ gBerryBlenderPlayerArrowSpritePalette: @ 0x0830F9C0
 gBerryBlenderData_0830F9C8: @ 0x0830F9C8
 	@ analyzed canonical ROM range 0x0830F9C8-0x0830FA27
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x60
+	@ ANALYSIS: U16_TABLE size=0x60 entries=48
 	.2byte 0xB5D1, 0x3018, 0xF8E8, 0x0830, 0xF980, 0x0830, 0x0000, 0x0000
 	.2byte 0xF310, 0x082B, 0x2E15, 0x0808, 0x0000, 0x4000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0014, 0xFFFF, 0x0000, 0x0004, 0x0054, 0xFFFF, 0x0000
@@ -230,7 +230,7 @@ gBerryBlenderScoreSymbolsSpriteSheet: @ 0x0830FA28
 gBerryBlenderData_0830FA30: @ 0x0830FA30
 	@ analyzed canonical ROM range 0x0830FA30-0x0830FAC7
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x98
+	@ ANALYSIS: U16_TABLE size=0x98 entries=76
 	.2byte 0xBEF8, 0xB5D2, 0xF9E0, 0x0830, 0xFA18, 0x0830, 0x0000, 0x0000
 	.2byte 0xF310, 0x082B, 0x2985, 0x0808, 0x0000, 0x0000, 0x0400, 0x0000
 	.2byte 0x0000, 0x0003, 0x0001, 0x0004, 0x0003, 0x0005, 0x0001, 0x0004
@@ -251,7 +251,7 @@ gBerryBlenderParticlesSpriteSheet: @ 0x0830FAC8
 gBerryBlenderData_0830FAD0: @ 0x0830FAD0
 	@ analyzed canonical ROM range 0x0830FAD0-0x0830FB13
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x44
+	@ ANALYSIS: U8_DATA size=0x44 bytes=68
 	.byte 0xA0, 0x5B, 0xD2, 0xB5, 0x48, 0xFA, 0x30, 0x08, 0xB4, 0xFA, 0x30, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x41, 0x71, 0x00, 0x08, 0x00, 0x00, 0x00, 0x80, 0x00, 0x04, 0x00, 0x00
 	.byte 0x20, 0x00, 0x1E, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x10, 0x00, 0x1E, 0x00, 0xFF, 0xFF, 0x00, 0x00
@@ -267,7 +267,7 @@ gBerryBlenderCountdownNumbersSpriteSheet: @ 0x0830FB14
 gBerryBlenderData_0830FB1C: @ 0x0830FB1C
 	@ analyzed canonical ROM range 0x0830FB1C-0x0830FB47
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x2C
+	@ ANALYSIS: U8_DATA size=0x2C bytes=44
 	.byte 0x39, 0x30, 0xD2, 0xB5, 0xE8, 0xFA, 0x30, 0x08, 0x08, 0xFB, 0x30, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x2D, 0x2A, 0x08, 0x08, 0x00, 0x40, 0x00, 0xC0, 0x00, 0x04, 0x00, 0x00
 	.byte 0x00, 0x00, 0x1E, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x3C, 0xFB, 0x30, 0x08
@@ -287,7 +287,7 @@ sSpriteTemplate_0830FB50: @ 0x0830FB50
 gBerryBlenderData_0830FB68: @ 0x0830FB68
 	@ analyzed canonical ROM range 0x0830FB68-0x0830FB8F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x28
+	@ ANALYSIS: U16_TABLE size=0x28 entries=20
 	.2byte 0xFFF6, 0x0014, 0x000A, 0x0002, 0x0001, 0x00FA, 0x0014, 0x000A
 	.2byte 0xFFFE, 0x0001, 0xFFF6, 0x008C, 0x000A, 0x0002, 0xFFFF, 0x00FA
 	.2byte 0x008C, 0x000A, 0xFFFE, 0xFFFF
@@ -296,7 +296,7 @@ gBerryBlenderData_0830FB68: @ 0x0830FB68
 gBerryBlenderData_0830FB90: @ 0x0830FB90
 	@ analyzed canonical ROM range 0x0830FB90-0x0830FBAD
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x1E
+	@ ANALYSIS: U16_TABLE size=0x1E entries=15
 	.2byte 0x0304, 0x0002, 0x0304, 0x0001, 0x0204, 0x0001, 0x0203, 0x0001
 	.2byte 0x0302, 0x0301, 0x0204, 0x0004, 0x0003, 0x0401, 0x0201
 	@ pret/pokeemerald-jp direct xref for 0x0830FBAE: berry_blender.s: Blender_SetOpponentsBerryData
@@ -304,21 +304,21 @@ gBerryBlenderData_0830FB90: @ 0x0830FB90
 gBerryBlenderData_0830FBAE: @ 0x0830FBAE
 	@ analyzed canonical ROM range 0x0830FBAE-0x0830FBB2
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x5
+	@ ANALYSIS: U8_DATA size=0x5 bytes=5
 	.byte 0x1E, 0x1F, 0x20, 0x21, 0x22
 	@ pret/pokeemerald-jp direct xref for 0x0830FBB3: berry_blender.s: sub_08080D8C
 	.globl gBerryBlenderData_0830FBB3
 gBerryBlenderData_0830FBB3: @ 0x0830FBB3
 	@ analyzed canonical ROM range 0x0830FBB3-0x0830FBB7
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x5
+	@ ANALYSIS: U8_DATA size=0x5 bytes=5
 	.byte 0x01, 0x01, 0x02, 0x03, 0x04
 	@ pret/pokeemerald-jp direct xref for 0x0830FBB8: berry_blender.s: Blender_CalculatePokeblock
 	.globl gBerryBlenderData_0830FBB8
 gBerryBlenderData_0830FBB8: @ 0x0830FBB8
 	@ analyzed canonical ROM range 0x0830FBB8-0x0830FBC7
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U16_TABLE size=0x10 entries=8
 	.2byte 0x161C, 0x1A13, 0x0E19, 0x0B0D, 0x1507, 0x0A0B, 0x0F03, 0xFF08
 
 	@ src/berry_blender.c:314 sText_SavingDontTurnOff2

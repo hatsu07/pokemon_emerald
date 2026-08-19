@@ -139,7 +139,7 @@ gText_Rom_5C8E5C: @ 0x085C8E5C
 gHallOfFameData_085C8E68: @ 0x085C8E68
 	@ analyzed canonical ROM range 0x085C8E68-0x085C8E74
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0xD
+	@ ANALYSIS: U8_DATA size=0xD bytes=13
 	.byte 0xF8, 0x0A, 0x04, 0x27, 0x48, 0x00, 0xF8, 0x00, 0x12, 0x38, 0x00, 0xF8, 0x01
 	.globl gText_Rom_5C8E75
 gText_Rom_5C8E75: @ 0x085C8E75
@@ -156,7 +156,7 @@ gText_Rom_5C8E75: @ 0x085C8E75
 gHallOfFameData_085C8E7C: @ 0x085C8E7C
 	@ analyzed canonical ROM range 0x085C8E7C-0x085C8E85
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xA
+	@ ANALYSIS: U16_TABLE size=0xA entries=5
 	.2byte 0x0AF8, 0x2704, 0x0048, 0x00F8, 0x01F8
 	.globl gText_Rom_5C8E86
 gText_Rom_5C8E86: @ 0x085C8E86

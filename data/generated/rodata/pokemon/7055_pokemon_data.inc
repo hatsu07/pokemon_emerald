@@ -30,7 +30,7 @@ gPokemonPointerTable_Rom_5ECE24: @ 0x085ECE24
 gPokemonSummaryScreenData_085ECE88: @ 0x085ECE88
 	@ analyzed canonical ROM range 0x085ECE88-0x085ECFBB
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x134
+	@ ANALYSIS: U16_TABLE size=0x134 entries=154
 	.2byte 0x01F0, 0x0000, 0x13B9, 0x0000, 0x239A, 0x0000, 0x33DB, 0x0000
 	.2byte 0x0004, 0x0004, 0x0004, 0x0004, 0x0004, 0x0004, 0x0817, 0x0817
 	.2byte 0x0817, 0x000B, 0x0804, 0x0804, 0x0804, 0x0804, 0x0804, 0x0804
@@ -56,7 +56,7 @@ gPokemonSummaryScreenData_085ECE88: @ 0x085ECE88
 gPokemonSummaryScreenData_085ECFBC: @ 0x085ECFBC
 	@ analyzed canonical ROM range 0x085ECFBC-0x085ED033
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x78
+	@ ANALYSIS: U16_TABLE size=0x78 entries=60
 	.2byte 0x0026, 0x0027, 0x0027, 0x0027, 0x0027, 0x0034, 0x0034, 0x0034
 	.2byte 0x0034, 0x0034, 0x0034, 0x0034, 0x0027, 0x0027, 0x0027, 0x0027
 	.2byte 0x0027, 0x0027, 0x0027, 0x0028, 0x0036, 0x0037, 0x0037, 0x0037
@@ -70,42 +70,42 @@ gPokemonSummaryScreenData_085ECFBC: @ 0x085ECFBC
 gPokemonSummaryScreenData_085ED034: @ 0x085ED034
 	@ analyzed canonical ROM range 0x085ED034-0x085ED03F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0xCE98, 0x085E, 0x0001, 0x020A, 0x1100, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085ED040: pokemon_summary_screen.s: sub_081C19A8, sub_081C1A24
 	.globl gPokemonSummaryScreenData_085ED040
 gPokemonSummaryScreenData_085ED040: @ 0x085ED040
 	@ analyzed canonical ROM range 0x085ED040-0x085ED04B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0xCE98, 0x085E, 0x0001, 0x020A, 0x3100, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085ED04C: pokemon_summary_screen.s: sub_081C16D8, sub_081C1754
 	.globl gPokemonSummaryScreenData_085ED04C
 gPokemonSummaryScreenData_085ED04C: @ 0x085ED04C
 	@ analyzed canonical ROM range 0x085ED04C-0x085ED057
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0xCEC0, 0x085E, 0x0000, 0x0709, 0x2D01, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085ED058: pokemon_summary_screen.s: sub_081C1830, sub_081C18B4
 	.globl gPokemonSummaryScreenData_085ED058
 gPokemonSummaryScreenData_085ED058: @ 0x085ED058
 	@ analyzed canonical ROM range 0x085ED058-0x085ED063
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0xCF3E, 0x085E, 0x0000, 0x0709, 0x2D01, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085ED064: pokemon_summary_screen.s: sub_081C02E8
 	.globl gPokemonSummaryScreenData_085ED064
 gPokemonSummaryScreenData_085ED064: @ 0x085ED064
 	@ analyzed canonical ROM range 0x085ED064-0x085ED06B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0200, 0x0103, 0x0504, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085ED06C: pokemon_summary_screen.s: ResetWindows
 	.globl gPokemonSummaryScreenData_085ED06C
 gPokemonSummaryScreenData_085ED06C: @ 0x085ED06C
 	@ analyzed canonical ROM range 0x085ED06C-0x085ED113
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xA8
+	@ ANALYSIS: U16_TABLE size=0xA8 entries=84
 	.2byte 0x0100, 0x0900, 0x0602, 0x0001, 0x0100, 0x0900, 0x0602, 0x0013
 	.2byte 0x0100, 0x0600, 0x0602, 0x0025, 0x0100, 0x0700, 0x0602, 0x0031
 	.2byte 0x1800, 0x0500, 0x0702, 0x003F, 0x1800, 0x0600, 0x0702, 0x0049
@@ -122,7 +122,7 @@ gPokemonSummaryScreenData_085ED06C: @ 0x085ED06C
 gPokemonSummaryScreenData_085ED114: @ 0x085ED114
 	@ analyzed canonical ROM range 0x085ED114-0x085ED133
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x20
+	@ ANALYSIS: U16_TABLE size=0x20 entries=16
 	.2byte 0x0E00, 0x0704, 0x0602, 0x015B, 0x1800, 0x0504, 0x0602, 0x0169
 	.2byte 0x0B00, 0x1209, 0x0604, 0x0173, 0x0B00, 0x120E, 0x0604, 0x01BB
 	@ pret/pokeemerald-jp direct xref for 0x085ED134: pokemon_summary_screen.s: PrintExpPointsNextLevel, PrintHeldItemName, PrintRibbonCount, ShowPokemonSummaryScreenSet40EF, sub_081C303C
@@ -130,7 +130,7 @@ gPokemonSummaryScreenData_085ED114: @ 0x085ED114
 gPokemonSummaryScreenData_085ED134: @ 0x085ED134
 	@ analyzed canonical ROM range 0x085ED134-0x085ED15B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x28
+	@ ANALYSIS: U16_TABLE size=0x28 entries=20
 	.2byte 0x0B00, 0x0904, 0x0602, 0x015B, 0x1500, 0x0804, 0x0602, 0x016D
 	.2byte 0x0F00, 0x0707, 0x0606, 0x017D, 0x1A00, 0x0307, 0x0606, 0x01A7
 	.2byte 0x1500, 0x080E, 0x0604, 0x01B9
@@ -139,7 +139,7 @@ gPokemonSummaryScreenData_085ED134: @ 0x085ED134
 gPokemonSummaryScreenData_085ED15C: @ 0x085ED15C
 	@ analyzed canonical ROM range 0x085ED15C-0x085ED17B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x20
+	@ ANALYSIS: U16_TABLE size=0x20 entries=16
 	.2byte 0x0F00, 0x0704, 0x060A, 0x015B, 0x1700, 0x0604, 0x080A, 0x01A1
 	.2byte 0x0B00, 0x120F, 0x0604, 0x01DD, 0x0600, 0x030F, 0x0604, 0x0225
 	@ pret/pokeemerald-jp direct xref for 0x085ED17C: pokemon_summary_screen.s: SummaryScreen_PrintTextOnWindow
@@ -147,7 +147,7 @@ gPokemonSummaryScreenData_085ED15C: @ 0x085ED15C
 gPokemonSummaryScreenData_085ED17C: @ 0x085ED17C
 	@ analyzed canonical ROM range 0x085ED17C-0x085ED222
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0xA7
+	@ ANALYSIS: U8_DATA size=0xA7 bytes=167
 	.byte 0x00, 0x01, 0x02, 0x00, 0x03, 0x04, 0x00, 0x05, 0x06, 0x00, 0x07, 0x08, 0x00, 0x09, 0x0A, 0x00
 	.byte 0x0B, 0x0C, 0x00, 0x0D, 0x0E, 0x00, 0x07, 0x08, 0x0D, 0x0F, 0x0E, 0x00, 0x01, 0x02, 0x00, 0x03
 	.byte 0x04, 0x00, 0x05, 0x06, 0x00, 0x07, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -164,7 +164,7 @@ gPokemonSummaryScreenData_085ED17C: @ 0x085ED17C
 gPokemonSummaryScreenData_085ED223: @ 0x085ED223
 	@ analyzed canonical ROM range 0x085ED223-0x085ED2A3
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x81
+	@ ANALYSIS: U8_DATA size=0x81 bytes=129
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xDD, 0x00, 0x00, 0xDD, 0xDD
 	.byte 0x00, 0xD0, 0xFD, 0xFF, 0x00, 0xD0, 0xFD, 0xEE, 0x00, 0xDD, 0xFD, 0xFF, 0x00, 0xDD, 0xFD, 0xEE
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x0D, 0x00, 0x00, 0x00, 0xDD, 0x0D, 0x00, 0x00

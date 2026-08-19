@@ -1,6 +1,6 @@
 	.globl gSineTable
 gSineTable: @ 0x082FA8CC
-	@ ANALYSIS: RAW_BLOCK size=0x280
+	@ ANALYSIS: U16_TABLE size=0x280 entries=320
 	.2byte 0, 6, 12, 18, 25, 31, 37, 43
 	.2byte 49, 56, 62, 68, 74, 80, 86, 92
 	.2byte 97, 103, 109, 115, 120, 126, 131, 136
@@ -44,7 +44,7 @@ gSineTable: @ 0x082FA8CC
 
 	.globl gSineDegreeTable
 gSineDegreeTable: @ 0x082FAB4C
-	@ ANALYSIS: RAW_BLOCK size=0x168
+	@ ANALYSIS: U16_TABLE size=0x168 entries=180
 	.2byte 0, 71, 143, 214, 286, 357, 428, 499
 	.2byte 570, 641, 711, 782, 852, 921, 991, 1060
 	.2byte 1129, 1198, 1266, 1334, 1401, 1468, 1534, 1600

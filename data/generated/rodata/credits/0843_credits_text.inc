@@ -3,7 +3,7 @@
 gRecordMixingData_08566D42: @ 0x08566D42
 	@ analyzed canonical ROM range 0x08566D42-0x08566D45
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0xBC, 0xC1, 0xC7, 0xFF
 	.globl gText_Rom_566D46
 gText_Rom_566D46: @ 0x08566D46
@@ -32,5 +32,5 @@ sSoundDriverTestLargeWindowTemplates: @ 0x08566D64
 gRecordMixingData_08566D74: @ 0x08566D74
 	@ analyzed canonical ROM range 0x08566D74-0x08566D79
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x6
+	@ ANALYSIS: U8_DATA size=0x6 bytes=6
 	.byte 0xBC, 0x9A, 0x60, 0x7E, 0x44, 0x00

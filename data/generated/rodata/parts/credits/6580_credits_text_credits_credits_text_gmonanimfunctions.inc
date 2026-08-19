@@ -468,7 +468,7 @@ gPicSpriteOamDataAffine: @ 0x085D3ACC
 	rodata_sprite_oam_data 0, 1, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0
 	.globl gContestLadyMonGfxIds
 gContestLadyMonGfxIds: @ 0x085D3AD4
-	@ ANALYSIS: RAW_BLOCK size=0xA
+	@ ANALYSIS: U16_TABLE size=0xA entries=5
 	.2byte 98  @ CONTEST_COOL
 	.2byte 203 @ CONTEST_BEAUTY
 	.2byte 220 @ CONTEST_CUTE
@@ -476,7 +476,7 @@ gContestLadyMonGfxIds: @ 0x085D3AD4
 	.2byte 209 @ CONTEST_TOUGH
 	.globl gLilycoveLadyGfxIds
 gLilycoveLadyGfxIds: @ 0x085D3ADE
-	@ ANALYSIS: RAW_BLOCK size=0x6
+	@ ANALYSIS: U16_TABLE size=0x6 entries=3
 	.2byte 26 @ Quiz Lady
 	.2byte 20 @ Favor Lady
 	.2byte 10 @ Contest Lady

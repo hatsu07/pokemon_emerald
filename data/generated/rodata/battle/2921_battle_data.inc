@@ -3,7 +3,7 @@
 gPokedexAreaScreenData_0859381C: @ 0x0859381C
 	@ analyzed canonical ROM range 0x0859381C-0x0859383B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x20
+	@ ANALYSIS: U16_TABLE size=0x20 entries=16
 	.2byte 0x0000, 0x463F, 0x39DF, 0x6B5F, 0x211F, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	@ semantic exact asset for 0x0859383C: sAreaGlow_Gfx
@@ -18,28 +18,28 @@ sAreaGlow_Gfx:
 gPokedexAreaScreenData_08593970: @ 0x08593970
 	@ analyzed canonical ROM range 0x08593970-0x08593971
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x2
+	@ ANALYSIS: U8_DATA size=0x2 bytes=2
 	.byte 0x68, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x08593972: pokedex_area_screen.s: SetSpecialMapHasMon
 	.globl gPokedexAreaScreenData_08593972
 gPokedexAreaScreenData_08593972: @ 0x08593972
 	@ analyzed canonical ROM range 0x08593972-0x08593977
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x6
+	@ ANALYSIS: U8_DATA size=0x6 bytes=6
 	.byte 0xCB, 0x00, 0xCC, 0x00, 0xCD, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08593978: pokedex_area_screen.s: FindMapsWithMon
 	.globl gPokedexAreaScreenData_08593978
 gPokedexAreaScreenData_08593978: @ 0x08593978
 	@ analyzed canonical ROM range 0x08593978-0x08593983
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x0148, 0x0000, 0x0022, 0x019C, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08593984: pokedex_area_screen.s: SetSpecialMapHasMon
 	.globl gPokedexAreaScreenData_08593984
 gPokedexAreaScreenData_08593984: @ 0x08593984
 	@ analyzed canonical ROM range 0x08593984-0x0859399F
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x1C
+	@ ANALYSIS: U32_TABLE size=0x1C entries=7
 	.4byte 0x08BE0055 @ +0x0
 	.4byte 0x08A70044 @ +0x4
 	.4byte 0x08DD00D2 @ +0x8
@@ -52,21 +52,21 @@ gPokedexAreaScreenData_08593984: @ 0x08593984
 gPokedexAreaScreenData_085939A0: @ 0x085939A0
 	@ analyzed canonical ROM range 0x085939A0-0x085939A3
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x03, 0x20, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085939A4: pokedex_area_screen.s: CreateAreaMarkerSprites
 	.globl gPokedexAreaScreenData_085939A4
 gPokedexAreaScreenData_085939A4: @ 0x085939A4
 	@ analyzed canonical ROM range 0x085939A4-0x085939AB
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x39F4, 0x0859, 0x0080, 0x0002
 	@ pret/pokeemerald-jp direct xref for 0x085939AC: pokedex_area_screen.s: CreateAreaMarkerSprites
 	.globl gPokedexAreaScreenData_085939AC
 gPokedexAreaScreenData_085939AC: @ 0x085939AC
 	@ analyzed canonical ROM range 0x085939AC-0x085939BB
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U16_TABLE size=0x10 entries=8
 	.2byte 0x39D4, 0x0859, 0x0002, 0x0000, 0x0000, 0x4000, 0x0400, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085939BC: pokedex_area_screen.s: CreateAreaMarkerSprites
 	.globl gPokedexAreaScreenData_085939BC
@@ -102,7 +102,7 @@ gPokedexAreaScreenData_085939BC: @ 0x085939BC
 gPokedexAreaScreenData_08593A74: @ 0x08593A74
 	@ analyzed canonical ROM range 0x08593A74-0x08593A83
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U16_TABLE size=0x10 entries=8
 	.2byte 0x3A9C, 0x0859, 0x0003, 0x0000, 0x0000, 0x8000, 0x0400, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08593A84: pokedex_area_screen.s: CreateAreaUnknownSprites
 	.globl gPokedexAreaScreenData_08593A84
@@ -163,7 +163,7 @@ sBgAnim_Outer_Tilemap:
 gEvolutionSceneData_08594D50: @ 0x08594D50
 	@ analyzed canonical ROM range 0x08594D50-0x085953EF
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x6A0
+	@ ANALYSIS: U8_DATA size=0x6A0 bytes=1696
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -275,7 +275,7 @@ gEvolutionSceneData_08594D50: @ 0x08594D50
 gEvolutionSceneData_085953F0: @ 0x085953F0
 	@ analyzed canonical ROM range 0x085953F0-0x0859542F
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x40
+	@ ANALYSIS: U8_DATA size=0x40 bytes=64
 	.byte 0x00, 0x00, 0x42, 0x08, 0x83, 0x10, 0xC5, 0x18, 0x06, 0x25, 0x48, 0x2D, 0x89, 0x39, 0xCB, 0x41
 	.byte 0x0D, 0x4A, 0x4E, 0x56, 0x90, 0x5E, 0xD1, 0x6A, 0x13, 0x73, 0x55, 0x7F, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x68, 0x35, 0x89, 0x39, 0xAA, 0x41, 0xCB, 0x45, 0x0C, 0x4E, 0x2D, 0x52, 0x4E, 0x5A

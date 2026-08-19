@@ -17,7 +17,7 @@ gText_Rom_5C8FAC: @ 0x085C8FAC
 gPokedexData_085C8FB3: @ 0x085C8FB3
 	@ analyzed canonical ROM range 0x085C8FB3-0x085C8FBA
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U8_DATA size=0x8 bytes=8
 	.byte 0xAC, 0xAC, 0xAC, 0xB8, 0xAC, 0xDF, 0xDB, 0xFF
 	.globl gEasyChatRecord_Rom_5C8FBB
 gEasyChatRecord_Rom_5C8FBB: @ 0x085C8FBB

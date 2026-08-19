@@ -3,7 +3,7 @@
 gMenuU8Table_Rom_526DE8: @ 0x08526DE8
 	@ analyzed canonical ROM range 0x08526DE8-0x08526DEB
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0xF4, 0x80, 0x03, 0x02
 	.globl gMenuU32Table_Rom_526DEC
 gMenuU32Table_Rom_526DEC: @ 0x08526DEC
@@ -78,7 +78,7 @@ gMenuU32Table_Rom_526EDC: @ 0x08526EDC
 gFieldWeatherData_08526EEC: @ 0x08526EEC
 	@ analyzed canonical ROM range 0x08526EEC-0x08526F0B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x20
+	@ ANALYSIS: U16_TABLE size=0x20 entries=16
 	.2byte 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101, 0x0000
 	.2byte 0x0102, 0x0202, 0x0202, 0x0101, 0x0101, 0x0102, 0x0101, 0x0101
 	@ pret/pokeemerald-jp direct xref for 0x08526F0C: field_weather.s: StartWeather; ice.s: AnimTask_Haze1, AnimTask_LoadMistTiles
@@ -150,14 +150,14 @@ gWeatherSandstormTiles: @ 0x08529DEC
 gFieldWeatherEffectData_0852A7EC: @ 0x0852A7EC
 	@ analyzed canonical ROM range 0x0852A7EC-0x0852A7F7
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x0000, 0x0042, 0x0005, 0x0049, 0x000A, 0x004E
 	@ pret/pokeemerald-jp direct xref for 0x0852A7F8: field_weather_effect.s: CreateCloudSprites
 	.globl gFieldWeatherEffectData_0852A7F8
 gFieldWeatherEffectData_0852A7F8: @ 0x0852A7F8
 	@ analyzed canonical ROM range 0x0852A7F8-0x0852A813
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x1C
+	@ ANALYSIS: U8_DATA size=0x1C bytes=28
 	.byte 0x6C, 0x7F, 0x52, 0x08, 0x00, 0x08, 0x00, 0x12, 0x00, 0x04, 0x00, 0xC0, 0x00, 0x0C, 0x00, 0x00
 	.byte 0x00, 0x00, 0x10, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x08, 0xA8, 0x52, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0852A814: field_weather_effect.s: CreateCloudSprites
@@ -171,7 +171,7 @@ sSpriteTemplate_0852A814: @ 0x0852A814
 gFieldWeatherEffectData_0852A82C: @ 0x0852A82C
 	@ analyzed canonical ROM range 0x0852A82C-0x0852A8C7
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x9C
+	@ ANALYSIS: U16_TABLE size=0x9C entries=78
 	.2byte 0x0000, 0x0000, 0x0000, 0x00A0, 0x0000, 0x0040, 0x0090, 0x00E0
 	.2byte 0x0090, 0x0080, 0x0020, 0x0020, 0x0020, 0x00C0, 0x0020, 0x0060
 	.2byte 0x0048, 0x0080, 0x0048, 0x0020, 0x0048, 0x00C0, 0x00D8, 0x0060
@@ -193,14 +193,14 @@ sSpriteTemplate_0852A8C8: @ 0x0852A8C8
 gFieldWeatherEffectData_0852A8E0: @ 0x0852A8E0
 	@ analyzed canonical ROM range 0x0852A8E0-0x0852A8E7
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U8_DATA size=0x8 bytes=8
 	.byte 0x98, 0xFF, 0xD0, 0x00, 0x60, 0xFF, 0x40, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x0852A8E8: field_weather_effect.s: InitRainSpriteMovement, StartRainSpriteFall
 	.globl gFieldWeatherEffectData_0852A8E8
 gFieldWeatherEffectData_0852A8E8: @ 0x0852A8E8
 	@ analyzed canonical ROM range 0x0852A8E8-0x0852A8EF
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0012, 0x0007, 0x000C, 0x000A
 	@ pret/pokeemerald-jp direct xref for 0x0852A8F0: field_weather_effect.s: LoadRainSpriteSheet
 	.globl gFieldWeatherEffectData_0852A8F0
@@ -228,7 +228,7 @@ gFieldWeatherEffectData_0852A8F0: @ 0x0852A8F0
 gFieldWeatherEffectData_0852A928: @ 0x0852A928
 	@ analyzed canonical ROM range 0x0852A928-0x0852A9B3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8C
+	@ ANALYSIS: U16_TABLE size=0x8C entries=70
 	.2byte 0xFFFF, 0x1200, 0xA8F8, 0x0852, 0xA920, 0x0852, 0xA900, 0x0852
 	.2byte 0xF310, 0x082B, 0xCC09, 0x080A, 0x0000, 0x0006, 0x0006, 0x000C
 	.2byte 0x0012, 0x002A, 0x012C, 0x012C, 0x0400, 0xC000, 0x0800, 0x0000
@@ -259,7 +259,7 @@ gFieldWeatherEffectData_0852A9CC: @ 0x0852A9CC
 gFieldWeatherEffectData_0852A9D4: @ 0x0852A9D4
 	@ analyzed canonical ROM range 0x0852A9D4-0x0852A9F3
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x20
+	@ ANALYSIS: U8_DATA size=0x20 bytes=32
 	.byte 0xEC, 0x87, 0x52, 0x08, 0x00, 0x10, 0x02, 0x12, 0x00, 0x04, 0x00, 0xC0, 0x00, 0xF4, 0x00, 0x00
 	.byte 0x00, 0x00, 0x3C, 0x00, 0x40, 0x00, 0x3C, 0x00, 0xFE, 0xFF, 0x00, 0x00, 0xE4, 0xA9, 0x52, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0852A9F4: field_weather_effect.s: CreateAshSprites
@@ -273,7 +273,7 @@ sSpriteTemplate_0852A9F4: @ 0x0852A9F4
 gFieldWeatherEffectData_0852AA0C: @ 0x0852AA0C
 	@ analyzed canonical ROM range 0x0852AA0C-0x0852AA27
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x1C
+	@ ANALYSIS: U8_DATA size=0x1C bytes=28
 	.byte 0x6C, 0x6F, 0x52, 0x08, 0x00, 0x08, 0x03, 0x12, 0x00, 0x04, 0x00, 0xC0, 0x00, 0x08, 0x00, 0x00
 	.byte 0x00, 0x00, 0x10, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x1C, 0xAA, 0x52, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x0852AA28: field_weather_effect.s: CreateFog2Sprites
@@ -281,7 +281,7 @@ gFieldWeatherEffectData_0852AA0C: @ 0x0852AA0C
 gFieldWeatherEffectData_0852AA28: @ 0x0852AA28
 	@ analyzed canonical ROM range 0x0852AA28-0x0852AA5F
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x38
+	@ ANALYSIS: U8_DATA size=0x38 bytes=56
 	.byte 0x03, 0x12, 0x00, 0x12, 0x14, 0xAA, 0x52, 0x08, 0x24, 0xAA, 0x52, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0xF9, 0xDC, 0x0A, 0x08, 0x00, 0x04, 0x00, 0xC0, 0x00, 0x04, 0x00, 0x00
 	.byte 0x00, 0x00, 0x03, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x40, 0x00, 0x03, 0x00, 0xFF, 0xFF, 0x00, 0x00
@@ -307,14 +307,14 @@ gFieldWeatherEffectData_0852AA78: @ 0x0852AA78
 gFieldWeatherEffectData_0852AA80: @ 0x0852AA80
 	@ analyzed canonical ROM range 0x0852AA80-0x0852AA8B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x0000, 0x0078, 0x0050, 0x00A0, 0x0028, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0852AA8C: field_weather_effect.s: Bubbles_InitVars, Bubbles_Main
 	.globl gFieldWeatherEffectData_0852AA8C
 gFieldWeatherEffectData_0852AA8C: @ 0x0852AA8C
 	@ analyzed canonical ROM range 0x0852AA8C-0x0852AA93
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U8_DATA size=0x8 bytes=8
 	.byte 0x28, 0x5A, 0x3C, 0x5A, 0x02, 0x3C, 0x28, 0x1E
 	@ pret/pokeemerald-jp direct xref for 0x0852AA94: field_weather_effect.s: Bubbles_InitVars
 	.globl gFieldWeatherEffectData_0852AA94
@@ -331,7 +331,7 @@ gFieldWeatherEffectData_0852AA94: @ 0x0852AA94
 gFieldWeatherEffectData_0852AA9C: @ 0x0852AA9C
 	@ analyzed canonical ROM range 0x0852AA9C-0x0852AADF
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x44
+	@ ANALYSIS: U16_TABLE size=0x44 entries=34
 	.2byte 0x0078, 0x00A0, 0x0178, 0x00A0, 0x0028, 0x008C, 0x0128, 0x008C
 	.2byte 0x00B4, 0x0082, 0x01B4, 0x0082, 0x003C, 0x00A0, 0x01B4, 0x00A0
 	.2byte 0x00DC, 0x00B4, 0x01DC, 0x00B4, 0x000A, 0x005A, 0x010A, 0x005A
@@ -348,21 +348,21 @@ sSpriteTemplate_0852AAE0: @ 0x0852AAE0
 gFieldWeatherEffectData_0852AAF8: @ 0x0852AAF8
 	@ analyzed canonical ROM range 0x0852AAF8-0x0852AAFB
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x02, 0x03, 0x05, 0x03
 	@ pret/pokeemerald-jp direct xref for 0x0852AAFC: field_weather_effect.s: TranslateWeatherNum
 	.globl gFieldWeatherEffectData_0852AAFC
 gFieldWeatherEffectData_0852AAFC: @ 0x0852AAFC
 	@ analyzed canonical ROM range 0x0852AAFC-0x0852AAFF
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x02, 0x02, 0x03, 0x02
 	@ pret/pokeemerald-jp direct xref for 0x0852AB00: field_screen_effect.s: WriteFlashScanlineEffectBuffer, sub_080AF998
 	.globl gFieldScreenEffectData_0852AB00
 gFieldScreenEffectData_0852AB00: @ 0x0852AB00
 	@ analyzed canonical ROM range 0x0852AB00-0x0852AB13
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x14
+	@ ANALYSIS: U16_TABLE size=0x14 entries=10
 	.2byte 0x00C8, 0x0048, 0x0040, 0x0038, 0x0030, 0x0028, 0x0020, 0x0018
 	.2byte 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0852AB14: overworld.s: Overworld_SetFlashLevel, SetDefaultFlashLevel
@@ -370,49 +370,49 @@ gFieldScreenEffectData_0852AB00: @ 0x0852AB00
 gOverworldData_0852AB14: @ 0x0852AB14
 	@ analyzed canonical ROM range 0x0852AB14-0x0852AB17
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x08, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0852AB18: field_screen_effect.s: sub_080AFC14
 	.globl gFieldScreenEffectData_0852AB18
 gFieldScreenEffectData_0852AB18: @ 0x0852AB18
 	@ analyzed canonical ROM range 0x0852AB18-0x0852AB23
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x0040, 0x0400, 0x0001, 0xA260, 0x0001, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0852AB24: battle_setup.s: GetWildBattleTransition
 	.globl gBattleSetupData_0852AB24
 gBattleSetupData_0852AB24: @ 0x0852AB24
 	@ analyzed canonical ROM range 0x0852AB24-0x0852AB2B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0908, 0x0A05, 0x0A00, 0x0607
 	@ pret/pokeemerald-jp direct xref for 0x0852AB2C: battle_setup.s: GetTrainerBattleTransition
 	.globl gBattleSetupData_0852AB2C
 gBattleSetupData_0852AB2C: @ 0x0852AB2C
 	@ analyzed canonical ROM range 0x0852AB2C-0x0852AB33
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0B04, 0x0302, 0x0A00, 0x0601
 	@ pret/pokeemerald-jp direct xref for 0x0852AB34: battle_setup.s: sub_080B08F8
 	.globl gBattleSetupData_0852AB34
 gBattleSetupData_0852AB34: @ 0x0852AB34
 	@ analyzed canonical ROM range 0x0852AB34-0x0852AB3F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x1E1D, 0x201F, 0x2322, 0x2524, 0x2726, 0x2928
 	@ pret/pokeemerald-jp direct xref for 0x0852AB40: battle_setup.s: sub_080B08F8
 	.globl gBattleSetupData_0852AB40
 gBattleSetupData_0852AB40: @ 0x0852AB40
 	@ analyzed canonical ROM range 0x0852AB40-0x0852AB42
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x3
+	@ ANALYSIS: U8_DATA size=0x3 bytes=3
 	.byte 0x1F, 0x20, 0x21
 	@ pret/pokeemerald-jp direct xref for 0x0852AB43: battle_setup.s: sub_080B08F8
 	.globl gBattleSetupData_0852AB43
 gBattleSetupData_0852AB43: @ 0x0852AB43
 	@ analyzed canonical ROM range 0x0852AB43-0x0852AB47
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x5
+	@ ANALYSIS: U8_DATA size=0x5 bytes=5
 	.byte 0x1D, 0x1F, 0x20, 0x21, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0852AB48: battle_setup.s: BattleSetup_ConfigureTrainerBattle
 	.globl gBattleSetupData_0852AB48

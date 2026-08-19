@@ -24,7 +24,7 @@ gText_Rom_5CC9FA: @ 0x085CC9FA
 gBerryCrushData_085CCA04: @ 0x085CCA04
 	@ analyzed canonical ROM range 0x085CCA04-0x085CCA06
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x3
+	@ ANALYSIS: U8_DATA size=0x3 bytes=3
 	.byte 0xFD, 0x02, 0xFF
 	.globl gText_Rom_5CCA07
 gText_Rom_5CCA07: @ 0x085CCA07

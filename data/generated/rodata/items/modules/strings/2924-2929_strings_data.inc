@@ -17,14 +17,14 @@ gText_Rom_595446: @ 0x08595446
 gEvolutionSceneData_08595475: @ 0x08595475
 	@ analyzed canonical ROM range 0x08595475-0x08595484
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U16_TABLE size=0x10 entries=8
 	.2byte 0x0C00, 0x0601, 0x240D, 0x0205, 0x180D, 0x0201, 0x3125, 0x0601
 	@ pret/pokeemerald-jp direct xref for 0x08595485: evolution_scene.s: InitMovingBgValues
 	.globl gEvolutionSceneData_08595485
 gEvolutionSceneData_08595485: @ 0x08595485
 	@ analyzed canonical ROM range 0x08595485-0x085957A7
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x323
+	@ ANALYSIS: U8_DATA size=0x323 bytes=803
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x02, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x02, 0x03, 0x00, 0x00
@@ -81,7 +81,7 @@ gEvolutionSceneData_08595485: @ 0x08595485
 gRouletteData_085957A8: @ 0x085957A8
 	@ analyzed canonical ROM range 0x085957A8-0x085959A7
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x200
+	@ ANALYSIS: U8_DATA size=0x200 bytes=512
 	.byte 0x6A, 0x1A, 0xA5, 0x14, 0x8C, 0x39, 0xD5, 0x62, 0xFF, 0x7F, 0x3F, 0x17, 0xBF, 0x02, 0x9A, 0x22
 	.byte 0x99, 0x2A, 0xB1, 0x21, 0x70, 0x5F, 0xE9, 0x4E, 0xEE, 0x4A, 0xCF, 0x56, 0xC9, 0x39, 0xFF, 0x03
 	.byte 0xA9, 0x4D, 0xA5, 0x14, 0x8C, 0x39, 0x73, 0x52, 0xFF, 0x7F, 0x79, 0x66, 0xB4, 0x51, 0x15, 0x52
@@ -135,28 +135,28 @@ sWheel_Tilemap: @ 0x08595B4C
 gRouletteData_08595CEC: @ 0x08595CEC
 	@ analyzed canonical ROM range 0x08595CEC-0x08595CF7
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x01F8, 0x0000, 0x1241, 0x0000, 0x2A66, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08595CF8: roulette.s: sub_08140450
 	.globl gRouletteData_08595CF8
 gRouletteData_08595CF8: @ 0x08595CF8
 	@ analyzed canonical ROM range 0x08595CF8-0x08595CFF
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0300, 0x180F, 0x0F04, 0x00D6
 	@ pret/pokeemerald-jp direct xref for 0x08595D00: roulette.s: sub_08140C98, sub_08140E34, sub_08141108, sub_08141B88, sub_0814234C (+5 more)
 	.globl gRouletteData_08595D00
 gRouletteData_08595D00: @ 0x08595D00
 	@ analyzed canonical ROM range 0x08595D00-0x08595D0B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x00FF, 0x0700, 0x0007, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08595D0C: roulette.s: sub_08144AF0
 	.globl gRouletteData_08595D0C
 gRouletteData_08595D0C: @ 0x08595D0C
 	@ analyzed canonical ROM range 0x08595D0C-0x08595E8F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x184
+	@ ANALYSIS: U16_TABLE size=0x184 entries=194
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x140C, 0x1100, 0x0007, 0x0000
 	.2byte 0x0002, 0x0000, 0x0842, 0x0001, 0xE000, 0x0000, 0x240D, 0x1400
 	.2byte 0x0007, 0x0000, 0x0004, 0x0000, 0x1084, 0x0002, 0xE000, 0x0000
@@ -187,14 +187,14 @@ gRouletteData_08595D0C: @ 0x08595D0C
 gRouletteData_08595E90: @ 0x08595E90
 	@ analyzed canonical ROM range 0x08595E90-0x08595E93
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x00, 0x01, 0x06, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08595E94: roulette.s: sub_08142198, sub_08144AF0
 	.globl gRouletteData_08595E94
 gRouletteData_08595E94: @ 0x08595E94
 	@ analyzed canonical ROM range 0x08595E94-0x08595EEF
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x5C
+	@ ANALYSIS: U16_TABLE size=0x5C entries=46
 	.2byte 0x0040, 0x0000, 0x0301, 0x000C, 0x1000, 0x0000, 0x0502, 0x0012
 	.2byte 0x0000, 0x0004, 0x0703, 0x0009, 0x0200, 0x0000, 0x0904, 0x000B
 	.2byte 0x0800, 0x0000, 0x0B05, 0x0011, 0x0000, 0x0002, 0x0D06, 0x0008
@@ -206,14 +206,14 @@ gRouletteData_08595E94: @ 0x08595E94
 gRouletteData_08595EF0: @ 0x08595EF0
 	@ analyzed canonical ROM range 0x08595EF0-0x08595EF3
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x01, 0x03, 0x01, 0x06
 	@ pret/pokeemerald-jp direct xref for 0x08595EF4: roulette.s: sub_08140538, sub_08141254, sub_0814140C, sub_08143EE0, sub_08144330 (+6 more)
 	.globl gRouletteData_08595EF4
 gRouletteData_08595EF4: @ 0x08595EF4
 	@ analyzed canonical ROM range 0x08595EF4-0x08595F33
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x40
+	@ ANALYSIS: U16_TABLE size=0x40 entries=32
 	.2byte 0x3C01, 0x011E, 0x0001, 0x0000, 0x002D, 0x001E, 0x0001, 0x0000
 	.2byte 0x004B, 0x001B, 0x0018, 0x0000, 0x000A, 0x0168, 0x0000, 0xBF00
 	.2byte 0x1E03, 0x010F, 0x0000, 0x0000, 0x004B, 0x003C, 0x0002, 0x0000
@@ -223,7 +223,7 @@ gRouletteData_08595EF4: @ 0x08595EF4
 gRouletteData_08595F34: @ 0x08595F34
 	@ analyzed canonical ROM range 0x08595F34-0x08595F9B
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x68
+	@ ANALYSIS: U8_DATA size=0x68 bytes=104
 	.byte 0x00, 0x80, 0x05, 0x00, 0x01, 0x01, 0xFF, 0x48, 0x00, 0x80, 0x0A, 0x00, 0x01, 0x01, 0xFF, 0x48
 	.byte 0x00, 0x80, 0x15, 0x00, 0x01, 0x01, 0xFF, 0x48, 0x00, 0x80, 0x55, 0x00, 0x01, 0x01, 0xFF, 0x48
 	.byte 0x00, 0x80, 0x5A, 0x00, 0x01, 0x01, 0xFF, 0x48, 0x00, 0x80, 0x65, 0x00, 0x01, 0x01, 0xFF, 0x48
@@ -236,7 +236,7 @@ gRouletteData_08595F34: @ 0x08595F34
 gRouletteData_08595F9C: @ 0x08595F9C
 	@ analyzed canonical ROM range 0x08595F9C-0x08595FB3
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x18
+	@ ANALYSIS: U8_DATA size=0x18 bytes=24
 	.byte 0xFF, 0x53, 0x01, 0x01, 0x05, 0x1E, 0xFF, 0x4E, 0xFB, 0x7F, 0x06, 0x01, 0x05, 0x1E, 0xFF, 0x4E
 	.byte 0x7F, 0x7F, 0x0B, 0x01, 0x05, 0x1E, 0xFF, 0x4E
 	.globl gText_Rom_595FB4
@@ -262,35 +262,35 @@ gItemPointerTable_Rom_595FC4: @ 0x08595FC4
 gRouletteData_08595FCC: @ 0x08595FCC
 	@ analyzed canonical ROM range 0x08595FCC-0x08595FD1
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x6
+	@ ANALYSIS: U8_DATA size=0x6 bytes=6
 	.byte 0x98, 0x28, 0x6A, 0x1A, 0x98, 0x28
 	@ pret/pokeemerald-jp direct xref for 0x08595FD2: roulette.s: sub_08140D70
 	.globl gRouletteData_08595FD2
 gRouletteData_08595FD2: @ 0x08595FD2
 	@ analyzed canonical ROM range 0x08595FD2-0x08595FD5
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0xFB, 0x05, 0xFF, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x08595FD6: roulette.s: sub_0814140C
 	.globl gRouletteData_08595FD6
 gRouletteData_08595FD6: @ 0x08595FD6
 	@ analyzed canonical ROM range 0x08595FD6-0x08595FDF
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xA
+	@ ANALYSIS: U16_TABLE size=0xA entries=5
 	.2byte 0x0000, 0x00B4, 0x005A, 0x010E, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08595FE0: roulette.s: sub_08142198
 	.globl gRouletteData_08595FE0
 gRouletteData_08595FE0: @ 0x08595FE0
 	@ analyzed canonical ROM range 0x08595FE0-0x08595FEF
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U16_TABLE size=0x10 entries=8
 	.2byte 0x0842, 0x0001, 0x1084, 0x0002, 0x2108, 0x0004, 0x4210, 0x0008
 	@ pret/pokeemerald-jp direct xref for 0x08595FF0: roulette.s: sub_08142198
 	.globl gRouletteData_08595FF0
 gRouletteData_08595FF0: @ 0x08595FF0
 	@ analyzed canonical ROM range 0x08595FF0-0x08595FFB
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U8_DATA size=0xC bytes=12
 	.byte 0xE0, 0x03, 0x00, 0x00, 0x00, 0x7C, 0x00, 0x00, 0x00, 0x80, 0x0F, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08595FFC: roulette.s: sub_08142820
 	.globl gRouletteData_08595FFC
@@ -360,7 +360,7 @@ gLz77Asset_08596EDC: @ 0x08596EDC
 gRouletteData_08596F38: @ 0x08596F38
 	@ analyzed canonical ROM range 0x08596F38-0x08596FCF
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x98
+	@ ANALYSIS: U8_DATA size=0x98 bytes=152
 	.byte 0x04, 0x60, 0x59, 0x08, 0x01, 0x00, 0x00, 0x00, 0x24, 0x60, 0x59, 0x08, 0x02, 0x00, 0x00, 0x00
 	.byte 0x44, 0x60, 0x59, 0x08, 0x03, 0x00, 0x00, 0x00, 0x64, 0x60, 0x59, 0x08, 0x04, 0x00, 0x00, 0x00
 	.byte 0x84, 0x60, 0x59, 0x08, 0x05, 0x00, 0x00, 0x00, 0xA4, 0x60, 0x59, 0x08, 0x06, 0x00, 0x00, 0x00
@@ -376,7 +376,7 @@ gRouletteData_08596F38: @ 0x08596F38
 gRouletteData_08596FD0: @ 0x08596FD0
 	@ analyzed canonical ROM range 0x08596FD0-0x0859703B
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x6C
+	@ ANALYSIS: U8_DATA size=0x6C bytes=108
 	.byte 0x44, 0x69, 0x59, 0x08, 0x00, 0x0C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x20, 0x00, 0x00, 0x00
 	.byte 0x40, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x28, 0x00, 0x00, 0x00
 	.byte 0x30, 0x00, 0x00, 0x00, 0x50, 0x00, 0x00, 0x00, 0x10, 0x00, 0x00, 0x00, 0x18, 0x00, 0x00, 0x00
@@ -389,14 +389,14 @@ gRouletteData_08596FD0: @ 0x08596FD0
 gRouletteData_0859703C: @ 0x0859703C
 	@ analyzed canonical ROM range 0x0859703C-0x08597043
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U8_DATA size=0x8 bytes=8
 	.byte 0xE0, 0xE0, 0xDB, 0x08, 0x00, 0x16, 0x04, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08597044: roulette.s: sub_08142D9C
 	.globl gRouletteData_08597044
 gRouletteData_08597044: @ 0x08597044
 	@ analyzed canonical ROM range 0x08597044-0x085970BB
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x78
+	@ ANALYSIS: U16_TABLE size=0x78 entries=60
 	.2byte 0x67A0, 0x0859, 0x0400, 0x0005, 0x0000, 0x0000, 0x0010, 0x0000
 	.2byte 0x0020, 0x0000, 0x0030, 0x0000, 0x0040, 0x0000, 0x0050, 0x0000
 	.2byte 0x0060, 0x0000, 0x0070, 0x0000, 0x0080, 0x0000, 0x0090, 0x0000
@@ -410,28 +410,28 @@ gRouletteData_08597044: @ 0x08597044
 gRouletteData_085970BC: @ 0x085970BC
 	@ analyzed canonical ROM range 0x085970BC-0x0859711B
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080004 @ +0x0
 	.4byte 0x08596FA0 @ +0x4
 	.4byte 0x08597090 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_081439D8 @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080004 @ +0x18
 	.4byte 0x08596FA0 @ +0x1C
 	.4byte 0x08597094 @ +0x20
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte sub_081439D8 @ +0x2C
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080004 @ +0x30
 	.4byte 0x08596FA0 @ +0x34
 	.4byte 0x08597098 @ +0x38
 	.4byte 0 @ +0x3C
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte sub_081439D8 @ +0x44
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080004 @ +0x48
 	.4byte 0x08596FA0 @ +0x4C
 	.4byte 0x0859709C @ +0x50
@@ -443,21 +443,21 @@ gRouletteData_085970BC: @ 0x085970BC
 gRouletteData_0859711C: @ 0x0859711C
 	@ analyzed canonical ROM range 0x0859711C-0x08597163
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080004 @ +0x0
 	.4byte 0x08596FA0 @ +0x4
 	.4byte 0x085970A0 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_081439D8 @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080004 @ +0x18
 	.4byte 0x08596FA0 @ +0x1C
 	.4byte 0x085970A4 @ +0x20
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte sub_081439D8 @ +0x2C
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080004 @ +0x30
 	.4byte 0x08596FA0 @ +0x34
 	.4byte 0x085970A8 @ +0x38
@@ -469,28 +469,28 @@ gRouletteData_0859711C: @ 0x0859711C
 gRouletteData_08597164: @ 0x08597164
 	@ analyzed canonical ROM range 0x08597164-0x085971C3
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080005 @ +0x0
 	.4byte 0x08596FA8 @ +0x4
 	.4byte 0x085970AC @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_081439D8 @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080005 @ +0x18
 	.4byte 0x08596FA8 @ +0x1C
 	.4byte 0x085970B0 @ +0x20
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte sub_081439D8 @ +0x2C
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080005 @ +0x30
 	.4byte 0x08596FA8 @ +0x34
 	.4byte 0x085970B4 @ +0x38
 	.4byte 0 @ +0x3C
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte sub_081439D8 @ +0x44
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080005 @ +0x48
 	.4byte 0x08596FA8 @ +0x4C
 	.4byte 0x085970B8 @ +0x50
@@ -502,91 +502,91 @@ gRouletteData_08597164: @ 0x08597164
 gRouletteData_085971C4: @ 0x085971C4
 	@ analyzed canonical ROM range 0x085971C4-0x08597303
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00090000 @ +0x0
 	.4byte 0x08596FB0 @ +0x4
 	.4byte 0x0859700C @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_0814334C @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000A0000 @ +0x18
 	.4byte 0x08596FB0 @ +0x1C
 	.4byte 0x08597010 @ +0x20
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte sub_0814334C @ +0x2C
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000B0000 @ +0x30
 	.4byte 0x08596FB0 @ +0x34
 	.4byte 0x08597014 @ +0x38
 	.4byte 0 @ +0x3C
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte sub_0814334C @ +0x44
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000C0000 @ +0x48
 	.4byte 0x08596FB0 @ +0x4C
 	.4byte 0x08597018 @ +0x50
 	.4byte 0 @ +0x54
 	.4byte gDummySpriteAffineAnimTable @ +0x58
 	.4byte sub_0814334C @ +0x5C
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00090000 @ +0x60
 	.4byte 0x08596FB0 @ +0x64
 	.4byte 0x0859701C @ +0x68
 	.4byte 0 @ +0x6C
 	.4byte gDummySpriteAffineAnimTable @ +0x70
 	.4byte sub_0814334C @ +0x74
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000A0000 @ +0x78
 	.4byte 0x08596FB0 @ +0x7C
 	.4byte 0x08597020 @ +0x80
 	.4byte 0 @ +0x84
 	.4byte gDummySpriteAffineAnimTable @ +0x88
 	.4byte sub_0814334C @ +0x8C
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000B0000 @ +0x90
 	.4byte 0x08596FB0 @ +0x94
 	.4byte 0x08597024 @ +0x98
 	.4byte 0 @ +0x9C
 	.4byte gDummySpriteAffineAnimTable @ +0xA0
 	.4byte sub_0814334C @ +0xA4
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000C0000 @ +0xA8
 	.4byte 0x08596FB0 @ +0xAC
 	.4byte 0x08597028 @ +0xB0
 	.4byte 0 @ +0xB4
 	.4byte gDummySpriteAffineAnimTable @ +0xB8
 	.4byte sub_0814334C @ +0xBC
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00090000 @ +0xC0
 	.4byte 0x08596FB0 @ +0xC4
 	.4byte 0x0859702C @ +0xC8
 	.4byte 0 @ +0xCC
 	.4byte gDummySpriteAffineAnimTable @ +0xD0
 	.4byte sub_0814334C @ +0xD4
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000A0000 @ +0xD8
 	.4byte 0x08596FB0 @ +0xDC
 	.4byte 0x08597030 @ +0xE0
 	.4byte 0 @ +0xE4
 	.4byte gDummySpriteAffineAnimTable @ +0xE8
 	.4byte sub_0814334C @ +0xEC
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000B0000 @ +0xF0
 	.4byte 0x08596FB0 @ +0xF4
 	.4byte 0x08597034 @ +0xF8
 	.4byte 0 @ +0xFC
 	.4byte gDummySpriteAffineAnimTable @ +0x100
 	.4byte sub_0814334C @ +0x104
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000C0000 @ +0x108
 	.4byte 0x08596FB0 @ +0x10C
 	.4byte 0x08597038 @ +0x110
 	.4byte 0 @ +0x114
 	.4byte gDummySpriteAffineAnimTable @ +0x118
 	.4byte sub_0814334C @ +0x11C
-	@ ANALYSIS: RAW_BLOCK size=0x20
+	@ ANALYSIS: U32_TABLE size=0x20 entries=8
 	.4byte 0xC0004000 @ +0x120
 	.4byte 0x00000400 @ +0x124
 	.4byte 0x00008000 @ +0x128
@@ -660,7 +660,7 @@ sSpriteTemplate_085973E0: @ 0x085973E0
 gRouletteData_085973F8: @ 0x085973F8
 	@ analyzed canonical ROM range 0x085973F8-0x08597417
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x0005000B @ +0x0
 	.4byte 0x08596FA0 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
@@ -668,7 +668,7 @@ gRouletteData_085973F8: @ 0x085973F8
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x40000000 @ +0x18
 	.4byte 0x00000800 @ +0x1C
 	@ pret/pokeemerald-jp direct xref for 0x08597418: roulette.s: sub_08142CD8
@@ -676,7 +676,7 @@ gRouletteData_085973F8: @ 0x085973F8
 gRouletteData_08597418: @ 0x08597418
 	@ analyzed canonical ROM range 0x08597418-0x085974DB
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC4
+	@ ANALYSIS: U16_TABLE size=0xC4 entries=98
 	.2byte 0x6204, 0x0859, 0x0200, 0x000C, 0x0000, 0x0005, 0x0004, 0x0005
 	.2byte 0x0008, 0x0005, 0x0004, 0x0005, 0xFFFE, 0x0000, 0x0000, 0x000A
 	.2byte 0x0004, 0x000A, 0x0008, 0x000A, 0x0004, 0x000A, 0xFFFE, 0x0000
@@ -695,14 +695,14 @@ gRouletteData_08597418: @ 0x08597418
 gRouletteData_085974DC: @ 0x085974DC
 	@ analyzed canonical ROM range 0x085974DC-0x085974FB
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x0002000C @ +0x0
 	.4byte 0x08597410 @ +0x4
 	.4byte 0x085974B8 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0xC0000351 @ +0x18
 	.4byte 0x00000800 @ +0x1C
 	@ pret/pokeemerald-jp direct xref for 0x085974FC: roulette.s: sub_081439E8
@@ -710,7 +710,7 @@ gRouletteData_085974DC: @ 0x085974DC
 gRouletteData_085974FC: @ 0x085974FC
 	@ analyzed canonical ROM range 0x085974FC-0x08597503
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U8_DATA size=0x8 bytes=8
 	.byte 0x64, 0xDD, 0xDB, 0x08, 0x00, 0x08, 0x06, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08597504: roulette.s: sub_081439E8
 	.globl gRouletteData_08597504
@@ -737,7 +737,7 @@ gRouletteData_08597504: @ 0x08597504
 gRouletteData_0859752C: @ 0x0859752C
 	@ analyzed canonical ROM range 0x0859752C-0x085975AB
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x80
+	@ ANALYSIS: U16_TABLE size=0x80 entries=64
 	.2byte 0x63B0, 0x0859, 0x0E00, 0x000D, 0x0000, 0x0006, 0x0010, 0x0006
 	.2byte 0x0020, 0x0006, 0x0030, 0x0006, 0x0020, 0x0006, 0x0040, 0x0006
 	.2byte 0xFFFE, 0x0002, 0x0050, 0x000A, 0xFFFF, 0x0000, 0x0050, 0x004A
@@ -757,7 +757,7 @@ sSpriteTemplate_085975AC: @ 0x085975AC
 gRouletteData_085975C4: @ 0x085975C4
 	@ analyzed canonical ROM range 0x085975C4-0x085975F3
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x30
+	@ ANALYSIS: U8_DATA size=0x30 bytes=48
 	.byte 0x0D, 0x00, 0x07, 0x00, 0x24, 0x75, 0x59, 0x08, 0x94, 0x75, 0x59, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x10, 0xF3, 0x2B, 0x08, 0x61, 0x53, 0x14, 0x08, 0x00, 0x00, 0x00, 0x40, 0x00, 0x08, 0x00, 0x00
 	.byte 0x00, 0x40, 0x00, 0x80, 0x00, 0x08, 0x00, 0x00, 0x00, 0x41, 0x00, 0x80, 0x00, 0x08, 0x00, 0x00
@@ -766,7 +766,7 @@ gRouletteData_085975C4: @ 0x085975C4
 gRouletteData_085975F4: @ 0x085975F4
 	@ analyzed canonical ROM range 0x085975F4-0x0859766F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x7C
+	@ ANALYSIS: U16_TABLE size=0x7C entries=62
 	.2byte 0x6E44, 0x0859, 0x0180, 0x000E, 0x0080, 0x0080, 0x0000, 0x0000
 	.2byte 0x0002, 0x0002, 0x3C00, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
 	.2byte 0x0100, 0x0100, 0x0000, 0x0000, 0xFFFE, 0x0000, 0x0F00, 0x0000
@@ -780,14 +780,14 @@ gRouletteData_085975F4: @ 0x085975F4
 gRouletteData_08597670: @ 0x08597670
 	@ analyzed canonical ROM range 0x08597670-0x0859769F
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x0001000E @ +0x0
 	.4byte 0x085975DC @ +0x4
 	.4byte 0x08597668 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x0001000E @ +0x18
 	.4byte 0x085975E4 @ +0x1C
 	.4byte 0x0859766C @ +0x20
@@ -805,28 +805,28 @@ sSpriteTemplate_085976A0: @ 0x085976A0
 gRouletteData_085976B8: @ 0x085976B8
 	@ analyzed canonical ROM range 0x085976B8-0x085976BD
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x6
+	@ ANALYSIS: U8_DATA size=0x6 bytes=6
 	.byte 0x00, 0x01, 0x02, 0x03, 0x04, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085976BE: roulette.s: sub_081447A8
 	.globl gRouletteData_085976BE
 gRouletteData_085976BE: @ 0x085976BE
 	@ analyzed canonical ROM range 0x085976BE-0x085976C5
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0074, 0x002C, 0x0074, 0x0070
 	@ pret/pokeemerald-jp direct xref for 0x085976C6: roulette.s: sub_08144984
 	.globl gRouletteData_085976C6
 gRouletteData_085976C6: @ 0x085976C6
 	@ analyzed canonical ROM range 0x085976C6-0x085976CD
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U8_DATA size=0x8 bytes=8
 	.byte 0x00, 0x01, 0x54, 0x00, 0xF0, 0xFF, 0x54, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085976CE: roulette.s: sub_08144D3C, sub_08144E60, sub_08144F2C
 	.globl gRouletteData_085976CE
 gRouletteData_085976CE: @ 0x085976CE
 	@ analyzed canonical ROM range 0x085976CE-0x085976E1
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x14
+	@ ANALYSIS: U16_TABLE size=0x14 entries=10
 	.2byte 0x0907, 0x0808, 0x0709, 0x060A, 0x050B, 0x040C, 0x030D, 0x020E
 	.2byte 0x010F, 0x0010
 	@ pret/pokeemerald-jp direct xref for 0x085976E2: roulette.s: sub_08144D9C
@@ -834,7 +834,7 @@ gRouletteData_085976CE: @ 0x085976CE
 gRouletteData_085976E2: @ 0x085976E2
 	@ analyzed canonical ROM range 0x085976E2-0x085976F9
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x18
+	@ ANALYSIS: U16_TABLE size=0x18 entries=12
 	.2byte 0xFFFF, 0x0000, 0x0001, 0x0000, 0xFFFE, 0x0000, 0x0002, 0x0000
 	.2byte 0xFFFD, 0x0000, 0x0003, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085976FA: roulette.s: sub_081451A4, sub_081452E4
@@ -842,14 +842,14 @@ gRouletteData_085976E2: @ 0x085976E2
 gRouletteData_085976FA: @ 0x085976FA
 	@ analyzed canonical ROM range 0x085976FA-0x085976FB
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x2
+	@ ANALYSIS: U8_DATA size=0x2 bytes=2
 	.byte 0xFF, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x085976FC: roulette.s: sub_081451A4
 	.globl gRouletteData_085976FC
 gRouletteData_085976FC: @ 0x085976FC
 	@ analyzed canonical ROM range 0x085976FC-0x08597FCB
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8D0
+	@ ANALYSIS: U16_TABLE size=0x8D0 entries=1128
 	.2byte 0x0002, 0x0002, 0xFF02, 0xFF02, 0xFF02, 0xFF02, 0xFE02, 0xFE02
 	.2byte 0x0000, 0x3D7E, 0x523E, 0x671E, 0x7FFF, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
@@ -996,7 +996,7 @@ gRouletteData_085976FC: @ 0x085976FC
 gPokedexCryScreenData_08597FCC: @ 0x08597FCC
 	@ analyzed canonical ROM range 0x08597FCC-0x08597FEB
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x20
+	@ ANALYSIS: U8_DATA size=0x20 bytes=32
 	.byte 0x00, 0x00, 0x1B, 0x00, 0x42, 0x08, 0xC6, 0x18, 0xFE, 0x35, 0x4A, 0x29, 0x8C, 0x31, 0xCE, 0x39
 	.byte 0x10, 0x42, 0x52, 0x4A, 0x94, 0x52, 0xD6, 0x5A, 0x18, 0x63, 0x5A, 0x6B, 0x9C, 0x73, 0xFF, 0x7F
 	@ pret/pokeemerald-jp direct xref for 0x08597FEC: pokedex_cry_screen.s: sub_0814591C
@@ -1012,7 +1012,7 @@ sCryMeter_Gfx: @ 0x08597FEC
 gPokedexCryScreenData_08598324: @ 0x08598324
 	@ analyzed canonical ROM range 0x08598324-0x085987A3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x480
+	@ ANALYSIS: U16_TABLE size=0x480 entries=576
 	.2byte 0x0000, 0x0004, 0x0008, 0x000C, 0x0010, 0x0014, 0x0018, 0x001C
 	.2byte 0x0400, 0x0404, 0x0408, 0x040C, 0x0410, 0x0414, 0x0418, 0x041C
 	.2byte 0x0800, 0x0804, 0x0808, 0x080C, 0x0810, 0x0814, 0x0818, 0x081C
@@ -1090,7 +1090,7 @@ gPokedexCryScreenData_08598324: @ 0x08598324
 gPokedexCryScreenData_085987A4: @ 0x085987A4
 	@ analyzed canonical ROM range 0x085987A4-0x085987C3
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x20
+	@ ANALYSIS: U8_DATA size=0x20 bytes=32
 	.byte 0x00, 0x00, 0x00, 0x48, 0x00, 0x42, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x52, 0x7E, 0x73, 0x7E, 0xB5, 0x7E, 0xF7, 0x7E, 0x39, 0x7F, 0x7B, 0x7F, 0xBD, 0x7F, 0xFF, 0x7F
 	@ pret/pokeemerald-jp direct xref for 0x085987C4: pokedex_cry_screen.s: sub_08145420, sub_08145714
@@ -1098,7 +1098,7 @@ gPokedexCryScreenData_085987A4: @ 0x085987A4
 gPokedexCryScreenData_085987C4: @ 0x085987C4
 	@ analyzed canonical ROM range 0x085987C4-0x085987E3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x20
+	@ ANALYSIS: U16_TABLE size=0x20 entries=16
 	.2byte 0x1111, 0x1111, 0x2222, 0x2222, 0x1111, 0x1111, 0x2222, 0x2222
 	.2byte 0x1111, 0x1111, 0x2222, 0x2222, 0x1111, 0x1111, 0x2222, 0x2222
 	@ pret/pokeemerald-jp direct xref for 0x085987E4: pokedex_cry_screen.s: sub_08145774
@@ -1106,14 +1106,14 @@ gPokedexCryScreenData_085987C4: @ 0x085987C4
 gPokedexCryScreenData_085987E4: @ 0x085987E4
 	@ analyzed canonical ROM range 0x085987E4-0x085987E5
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x2
+	@ ANALYSIS: U8_DATA size=0x2 bytes=2
 	.byte 0xF0, 0x0F
 	@ pret/pokeemerald-jp direct xref for 0x085987E6: pokedex_cry_screen.s: sub_08145774
 	.globl gPokedexCryScreenData_085987E6
 gPokedexCryScreenData_085987E6: @ 0x085987E6
 	@ analyzed canonical ROM range 0x085987E6-0x0859881B
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x36
+	@ ANALYSIS: U8_DATA size=0x36 bytes=54
 	.byte 0x0F, 0x0E, 0x0D, 0x0C, 0x0B, 0x0A, 0x09, 0x08, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F
 	.byte 0xF0, 0xE0, 0xD0, 0xC0, 0xB0, 0xA0, 0x90, 0x80, 0x80, 0x90, 0xA0, 0xB0, 0xC0, 0xD0, 0xE0, 0xF0
 	.byte 0x00, 0x00, 0x00, 0x00, 0x1E, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x08, 0x88, 0x59, 0x08, 0xA0, 0x01
@@ -1129,14 +1129,14 @@ sSpriteTemplate_0859881C: @ 0x0859881C
 gPokedexCryScreenData_08598834: @ 0x08598834
 	@ analyzed canonical ROM range 0x08598834-0x08598843
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U16_TABLE size=0x10 entries=8
 	.2byte 0x772C, 0x0859, 0x0800, 0x2000, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08598844: pokedex_cry_screen.s: sub_0814591C
 	.globl gPokedexCryScreenData_08598844
 gPokedexCryScreenData_08598844: @ 0x08598844
 	@ analyzed canonical ROM range 0x08598844-0x08598857
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x14
+	@ ANALYSIS: U8_DATA size=0x14 bytes=20
 	.byte 0x0C, 0x77, 0x59, 0x08, 0x00, 0x20, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x6C, 0x77, 0x7C, 0xAE
 	.globl gText_Rom_598858

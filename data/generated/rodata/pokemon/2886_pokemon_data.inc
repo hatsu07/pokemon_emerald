@@ -37,7 +37,7 @@ gPokemonPointerTable_Rom_581A5C: @ 0x08581A5C
 gDecorationData_08581A74: @ 0x08581A74
 	@ analyzed canonical ROM range 0x08581A74-0x08581A93
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x20
+	@ ANALYSIS: U16_TABLE size=0x20 entries=16
 	.2byte 0x0100, 0x0901, 0x0F08, 0x0001, 0x0100, 0x0D01, 0x0D12, 0x0049
 	.2byte 0x1200, 0x0B01, 0x0F02, 0x0133, 0x1100, 0x0C0D, 0x0F06, 0x0149
 	@ pret/pokeemerald-jp direct xref for 0x08581A94: decoration.s: SecretBasePC_PrepMenuForSelectingStoredDecors, ShowDecorationCategoriesWindow
@@ -45,7 +45,7 @@ gDecorationData_08581A74: @ 0x08581A74
 gDecorationData_08581A94: @ 0x08581A94
 	@ analyzed canonical ROM range 0x08581A94-0x08581AB3
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x20
+	@ ANALYSIS: U8_DATA size=0x20 bytes=32
 	.byte 0x2E, 0x53, 0xFF, 0x7F, 0x8C, 0x31, 0x5A, 0x67, 0x9C, 0x73, 0x18, 0x63, 0x00, 0x00, 0xBD, 0x77
 	.byte 0x18, 0x63, 0x52, 0x4A, 0x1F, 0x00, 0x16, 0x00, 0x1F, 0x63, 0x4A, 0x7D, 0xC6, 0x58, 0x18, 0x7F
 	@ pret/pokeemerald-jp direct xref for 0x08581AB4: decoration.s: PrintDecorationItemMenuItems
@@ -301,7 +301,7 @@ sDecorTilemaps: @ 0x08582094
 gDecorationData_08582134: @ 0x08582134
 	@ analyzed canonical ROM range 0x08582134-0x0858216F
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x3C
+	@ ANALYSIS: U8_DATA size=0x3C bytes=60
 	.byte 0x00, 0x01, 0x78, 0x4E, 0x01, 0x02, 0x80, 0x4E, 0x01, 0x03, 0x90, 0x56, 0x01, 0x03, 0x90, 0x46
 	.byte 0x00, 0x02, 0x80, 0x46, 0x02, 0x02, 0x78, 0x46, 0x02, 0x03, 0x80, 0x56, 0x02, 0x03, 0x80, 0x36
 	.byte 0x00, 0x03, 0x90, 0x46, 0x01, 0x03, 0x90, 0x46, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00
@@ -323,7 +323,7 @@ sSpriteTemplate_08582188: @ 0x08582188
 gDecorationData_085821A0: @ 0x085821A0
 	@ analyzed canonical ROM range 0x085821A0-0x085821A7
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U8_DATA size=0x8 bytes=8
 	.byte 0xE0, 0xA6, 0x03, 0x02, 0xE5, 0x0B, 0x00, 0x00
 	.globl gPokemonPointerTable_Rom_5821A8
 gPokemonPointerTable_Rom_5821A8: @ 0x085821A8
@@ -344,21 +344,21 @@ gPokemonPointerTable_Rom_5821B8: @ 0x085821B8
 gDecorationData_085821C8: @ 0x085821C8
 	@ analyzed canonical ROM range 0x085821C8-0x085821CF
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0404, 0x0404, 0x0300, 0x0003
 	@ pret/pokeemerald-jp direct xref for 0x085821D0: decoration.s: GetDecorationElevation
 	.globl gDecorationData_085821D0
 gDecorationData_085821D0: @ 0x085821D0
 	@ analyzed canonical ROM range 0x085821D0-0x085821D7
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0404, 0x0404, 0x0400, 0x0003
 	@ pret/pokeemerald-jp direct xref for 0x085821D8: decoration.s: AddDecorationIconObjectFromEventObject
 	.globl gDecorationData_085821D8
 gDecorationData_085821D8: @ 0x085821D8
 	@ analyzed canonical ROM range 0x085821D8-0x0858222B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x54
+	@ ANALYSIS: U16_TABLE size=0x54 entries=42
 	.2byte 0x0004, 0x0008, 0x0010, 0x0020, 0x0010, 0x0008, 0x0010, 0x0020
 	.2byte 0x0040, 0x0020, 0x530E, 0x5B5F, 0x4B1F, 0x3A5B, 0x210F, 0x3D27
 	.2byte 0x30E5, 0x28A3, 0x1C82, 0x779B, 0x2F1F, 0x2E77, 0x2D9F, 0x2118
@@ -391,14 +391,14 @@ FunctionPointerTable_JP_08582234: @ 0x08582234
 gDecorationData_085822BC: @ 0x085822BC
 	@ analyzed canonical ROM range 0x085822BC-0x085822C3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x21EC, 0x0858, 0x0008, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085822C4: decoration.s: sub_0812A3A8
 	.globl gDecorationData_085822C4
 gDecorationData_085822C4: @ 0x085822C4
 	@ analyzed canonical ROM range 0x085822C4-0x085822E7
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x24
+	@ ANALYSIS: U16_TABLE size=0x24 entries=18
 	.2byte 0x220C, 0x0858, 0x0008, 0x0000, 0x0000, 0x4000, 0x0400, 0x0000
 	.2byte 0x0000, 0x0000, 0xFFFF, 0x0000, 0x22D4, 0x0858, 0x223C, 0x0858
 	.2byte 0x0080, 0x0000

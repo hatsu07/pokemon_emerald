@@ -69,7 +69,7 @@ gPokemonData_085A9D15:
 	.globl gPokemonData_085A9D15
 	@ analyzed canonical ROM range 0x085A9D15-0x085A9D25
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x11
+	@ ANALYSIS: U8_DATA size=0x11 bytes=17
 	.byte 0xFD, 0x2A, 0xFE, 0x0C, 0x2B, 0x02, 0x07, 0x28, 0x16, 0x00, 0x12, 0x12, 0x1F, 0x2A, 0x10, 0xAB
 	.byte 0xFF
 	.globl gText_Rom_5A9D26
@@ -86,7 +86,7 @@ gPokemonData_085A9D39:
 	.globl gPokemonData_085A9D39
 	@ analyzed canonical ROM range 0x085A9D39-0x085A9D45
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0xD
+	@ ANALYSIS: U8_DATA size=0xD bytes=13
 	.byte 0xFD, 0x0F, 0x1A, 0xFE, 0x1A, 0x28, 0x07, 0x50, 0x13, 0x02, 0x29, 0xAB, 0xFF
 	.globl gText_Rom_5A9D46
 gText_Rom_5A9D46: @ 0x085A9D46

@@ -384,7 +384,7 @@ gBattleTvMovePoints: @ 0x085D3294
 
 	.globl gBattleTvSpecialBattleStrings
 gBattleTvSpecialBattleStrings: @ 0x085D3304
-	@ ANALYSIS: RAW_BLOCK size=0x24
+	@ ANALYSIS: U16_TABLE size=0x24 entries=18
 	.2byte 151 @ STRINGID_PKMNPERISHCOUNTFELL
 	.2byte 178 @ STRINGID_PKMNWISHCAMETRUE
 	.2byte 188 @ STRINGID_PKMNLOSTPPGRUDGE

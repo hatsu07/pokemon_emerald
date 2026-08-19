@@ -30,5 +30,5 @@ gBattleScriptCommandsData_085AC04C: @ 0x085AC04C
 gBattleMessageData_085AC0B1: @ 0x085AC0B1
 	@ analyzed canonical ROM range 0x085AC0B1-0x085AC0C0
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U16_TABLE size=0x10 entries=8
 	.2byte 0x1CFD, 0x0019, 0x1DFD, 0x14FE, 0x0019, 0x360C, 0x4803, 0x0016

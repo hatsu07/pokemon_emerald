@@ -13,7 +13,7 @@ gText_Rom_4E8B84: @ 0x084E8B84
 gStartMenuData_084E8B94: @ 0x084E8B94
 	@ analyzed canonical ROM range 0x084E8B94-0x084E8B9B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0100, 0x0801, 0x0F04, 0x0008
 
 	@ src/strings.c:952 gText_BattlePyramidFloor

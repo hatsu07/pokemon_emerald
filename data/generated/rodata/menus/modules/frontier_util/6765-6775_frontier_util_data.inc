@@ -73,14 +73,14 @@ gMenuPointerTable_Rom_5DD53C: @ 0x085DD53C
 gFrontierUtilData_085DD564: @ 0x085DD564
 	@ analyzed canonical ROM range 0x085DD564-0x085DD569
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x6
+	@ ANALYSIS: U8_DATA size=0x6 bytes=6
 	.byte 0xA2, 0xFF, 0xA3, 0xFF, 0xA4, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085DD56A: frontier_util.s: CopyFrontierBrainTrainerName, PrintHyphens, sub_081A48F8
 	.globl gFrontierUtilData_085DD56A
 gFrontierUtilData_085DD56A: @ 0x085DD56A
 	@ analyzed canonical ROM range 0x085DD56A-0x085DD577
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xE
+	@ ANALYSIS: U16_TABLE size=0xE entries=7
 	.2byte 0x0325, 0x0326, 0x0327, 0x0328, 0x0329, 0x032A, 0x032B
 	.globl gText_Rom_5DD578
 gText_Rom_5DD578: @ 0x085DD578

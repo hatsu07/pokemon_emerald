@@ -415,7 +415,7 @@ sMonFrontAnimIdsTable: @ 0x082FA374
 	.byte ANIM_H_SLIDE_WOBBLE                    @ SPECIES_CHIMECHO
 
 sMonAnimationDelayTable: @ 0x082FA50F
-	@ ANALYSIS: RAW_BLOCK size=0x19B
+	@ ANALYSIS: U8_DATA size=0x19B bytes=411
 	.byte   0 @ SPECIES_BULBASAUR
 	.byte   0 @ SPECIES_IVYSAUR
 	.byte   0 @ SPECIES_VENUSAUR
@@ -842,7 +842,7 @@ gPPUpAddValues: @ 0x082FA6B2
 
 	.globl gStatStageRatios
 gStatStageRatios: @ 0x082FA6B6
-	@ ANALYSIS: RAW_BLOCK size=0x1A
+	@ ANALYSIS: U8_DATA size=0x1A bytes=26
 	.byte 10, 40 @ stage -6
 	.byte 10, 35 @ stage -5
 	.byte 10, 30 @ stage -4
@@ -862,7 +862,7 @@ sText_GameFreakJpn: @ 0x082FA6D0
 	.byte 0x00
 
 sDeoxysBaseStats: @ 0x082FA6D6
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 50 @ HP
 	.2byte 95 @ Attack
 	.2byte 90 @ Defense
@@ -942,15 +942,15 @@ sSecretBaseFacilityClasses: @ 0x082FA844
 	.byte FACILITY_CLASS_COOLTRAINER_F
 
 sGetMonDataEVConstants: @ 0x082FA84E
-	@ ANALYSIS: RAW_BLOCK size=0x6
+	@ ANALYSIS: U8_DATA size=0x6 bytes=6
 	.byte 0x1A, 0x1B, 0x1C, 0x1D, 0x1F, 0x1E
 
 sStatsToRaise: @ 0x082FA854
-	@ ANALYSIS: RAW_BLOCK size=0x6
+	@ ANALYSIS: U8_DATA size=0x6 bytes=6
 	.byte 0x01, 0x01, 0x03, 0x02, 0x04, 0x06
 
 sFriendshipEventModifiers: @ 0x082FA85A
-	@ ANALYSIS: RAW_BLOCK size=0x1C
+	@ ANALYSIS: U8_DATA size=0x1C bytes=28
 	.byte 5, 3, 2 @ friendship event 0
 	.byte 5, 3, 2 @ friendship event 1
 	.byte 1, 1, 0 @ friendship event 2

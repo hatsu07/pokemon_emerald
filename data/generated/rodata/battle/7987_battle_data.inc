@@ -3,14 +3,14 @@
 gMenuSpecializedData_085FA9C4: @ 0x085FA9C4
 	@ analyzed canonical ROM range 0x085FA9C4-0x085FA9C6
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x3
+	@ ANALYSIS: U8_DATA size=0x3 bytes=3
 	.byte 0xF9, 0x04, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085FA9C7: menu_specialized.s: DrawLevelUpWindowPg1
 	.globl gMenuSpecializedData_085FA9C7
 gMenuSpecializedData_085FA9C7: @ 0x085FA9C7
 	@ analyzed canonical ROM range 0x085FA9C7-0x085FA9CB
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x5
+	@ ANALYSIS: U8_DATA size=0x5 bytes=5
 	.byte 0xAE, 0xFF, 0x00, 0x00, 0x00
 	.globl gBattlePointerTable_Rom_5FA9CC
 gBattlePointerTable_Rom_5FA9CC: @ 0x085FA9CC
@@ -25,7 +25,7 @@ gBattlePointerTable_Rom_5FA9CC: @ 0x085FA9CC
 gEreaderHelpersData_085FA9E4: @ 0x085FA9E4
 	@ analyzed canonical ROM range 0x085FA9E4-0x085FAAC3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xE0
+	@ ANALYSIS: U16_TABLE size=0xE0 entries=112
 	.2byte 0x576F, 0xFF54, 0xFFFF, 0xFFFF, 0x010C, 0x0000, 0x142E, 0x0E0C
 	.2byte 0x1023, 0x0A47, 0x061F, 0x0E24, 0x0A48, 0x060F, 0x2722, 0x162C
 	.2byte 0x0607, 0x0C01, 0x0A47, 0x0606, 0x0E24, 0x1E00, 0x1219, 0x0C05

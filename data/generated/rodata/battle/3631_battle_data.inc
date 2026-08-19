@@ -3,7 +3,7 @@
 gBattleMessageData_085AC118: @ 0x085AC118
 	@ analyzed canonical ROM range 0x085AC118-0x085AC12C
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x15
+	@ ANALYSIS: U8_DATA size=0x15 bytes=21
 	.byte 0xFD, 0x20, 0x37, 0xFE, 0x0C, 0x36, 0x03, 0x48, 0x2D, 0x00, 0x0C, 0x06, 0x09, 0x13, 0x07, 0x10
 	.byte 0xAB, 0xFC, 0x08, 0x31, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085AC12D: battle_message.s: BufferStringBattle
@@ -11,7 +11,7 @@ gBattleMessageData_085AC118: @ 0x085AC118
 gBattleMessageData_085AC12D: @ 0x085AC12D
 	@ analyzed canonical ROM range 0x085AC12D-0x085AC145
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x19
+	@ ANALYSIS: U8_DATA size=0x19 bytes=25
 	.byte 0xFD, 0x20, 0x14, 0x00, 0xFD, 0x21, 0x37, 0xFE, 0x0C, 0x36, 0x03, 0x48, 0x2D, 0x00, 0x0C, 0x06
 	.byte 0x09, 0x13, 0x07, 0x10, 0xAB, 0xFC, 0x08, 0x31, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085AC146: battle_message.s: ChooseMoveUsedParticle, ChooseTypeOfMoveUsedString
@@ -115,14 +115,14 @@ gBattleMessageData_085AC468: @ 0x085AC468
 gBattleMessageData_085AC470: @ 0x085AC470
 	@ analyzed canonical ROM range 0x085AC470-0x085AC473
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x08, 0x04, 0x01, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085AC474: cable_car.s: CableCarMainCallback_Setup
 	.globl gCableCarData_085AC474
 gCableCarData_085AC474: @ 0x085AC474
 	@ analyzed canonical ROM range 0x085AC474-0x085AC483
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x10
+	@ ANALYSIS: U16_TABLE size=0x10 entries=8
 	.2byte 0x11C0, 0x0000, 0x21D1, 0x0000, 0x31E2, 0x0000, 0x01F3, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085AC484: cable_car.s: CableCarMainCallback_Setup
 	.globl gCableCarData_085AC484
@@ -156,7 +156,7 @@ sLz77Block_085AC760:
 gCableCarData_085AC924: @ 0x085AC924
 	@ analyzed canonical ROM range 0x085AC924-0x085AC937
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x14
+	@ ANALYSIS: U16_TABLE size=0x14 entries=10
 	.2byte 0x3000, 0x3001, 0x3002, 0x3003, 0x3004, 0x3005, 0x3006, 0x3007
 	.2byte 0x3008, 0x3009
 	@ pret/pokeemerald-jp direct xref for 0x085AC938: cable_car.s: CableCarMainCallback_Setup
@@ -166,7 +166,7 @@ gCableCarData_085AC938: @ 0x085AC938
 sLz77Block_085AC938:
 	@ analyzed canonical ROM range 0x085AC938-0x085AC95B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x24
+	@ ANALYSIS: U16_TABLE size=0x24 entries=18
 	.2byte 0x7810, 0x0000, 0x0A00, 0x0B30, 0x0C30, 0x0D30, 0x0130, 0x300E
 	.2byte 0x300F, 0x301E, 0xF01F, 0xFC03, 0x0300, 0x1BF0, 0x1BF0, 0x03F0
 	.2byte 0x1BF0, 0x0390
@@ -184,7 +184,7 @@ sCableCarSpriteSheets: @ 0x085AC95C
 gCableCarData_085AC97C: @ 0x085AC97C
 	@ analyzed canonical ROM range 0x085AC97C-0x085AC9A3
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x28
+	@ ANALYSIS: U16_TABLE size=0x28 entries=20
 	.2byte 0xA840, 0x08DB, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0300, 0xC000, 0x0800, 0x0000, 0x4300, 0x0000, 0x0800, 0x0000
 	.2byte 0x0300, 0x4000, 0x0800, 0x0000
@@ -193,7 +193,7 @@ gCableCarData_085AC97C: @ 0x085AC97C
 gCableCarData_085AC9A4: @ 0x085AC9A4
 	@ analyzed canonical ROM range 0x085AC9A4-0x085AC9D3
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x00010001 @ +0x0
 	.4byte 0x085AC98C @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
@@ -201,7 +201,7 @@ gCableCarData_085AC9A4: @ 0x085AC9A4
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_08150844 @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x00010002 @ +0x18
 	.4byte 0x085AC994 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
@@ -220,28 +220,28 @@ sSpriteTemplate_085AC9D4: @ 0x085AC9D4
 gCableCarData_085AC9EC: @ 0x085AC9EC
 	@ analyzed canonical ROM range 0x085AC9EC-0x085AC9ED
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x2
+	@ ANALYSIS: U8_DATA size=0x2 bytes=2
 	.byte 0x64, 0x69
 	@ pret/pokeemerald-jp direct xref for 0x085AC9EE: cable_car.s: LoadCableCarSprites
 	.globl gCableCarData_085AC9EE
 gCableCarData_085AC9EE: @ 0x085AC9EE
 	@ analyzed canonical ROM range 0x085AC9EE-0x085AC9F1
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x37, 0x1F, 0x20, 0x62
 	@ pret/pokeemerald-jp direct xref for 0x085AC9F2: cable_car.s: LoadCableCarSprites
 	.globl gCableCarData_085AC9F2
 gCableCarData_085AC9F2: @ 0x085AC9F2
 	@ analyzed canonical ROM range 0x085AC9F2-0x085AC9F9
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0000, 0x0050, 0x00F0, 0x0092
 	@ pret/pokeemerald-jp direct xref for 0x085AC9FA: cable_car.s: LoadCableCarSprites
 	.globl gCableCarData_085AC9FA
 gCableCarData_085AC9FA: @ 0x085AC9FA
 	@ analyzed canonical ROM range 0x085AC9FA-0x085AC9FF
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x6
+	@ ANALYSIS: U8_DATA size=0x6 bytes=6
 	.byte 0x00, 0x3C, 0x78, 0xAA, 0x00, 0x00
 	.globl gBattlePointerTable_Rom_5ACA00
 gBattlePointerTable_Rom_5ACA00: @ 0x085ACA00
@@ -252,7 +252,7 @@ gBattlePointerTable_Rom_5ACA00: @ 0x085ACA00
 gSaveData_085ACA08: @ 0x085ACA08
 	@ analyzed canonical ROM range 0x085ACA08-0x085ACA3F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x38
+	@ ANALYSIS: U16_TABLE size=0x38 entries=28
 	.2byte 0x0000, 0x0F2C, 0x0000, 0x0F80, 0x0F80, 0x0F80, 0x1F00, 0x0F80
 	.2byte 0x2E80, 0x0F08, 0x0000, 0x0F80, 0x0F80, 0x0F80, 0x1F00, 0x0F80
 	.2byte 0x2E80, 0x0F80, 0x3E00, 0x0F80, 0x4D80, 0x0F80, 0x5D00, 0x0F80
@@ -262,21 +262,21 @@ gSaveData_085ACA08: @ 0x085ACA08
 gFieldEffectHelpersData_085ACA40: @ 0x085ACA40
 	@ analyzed canonical ROM range 0x085ACA40-0x085ACA45
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x6
+	@ ANALYSIS: U8_DATA size=0x6 bytes=6
 	.byte 0x0C, 0x00, 0x1C, 0x00, 0x2C, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085ACA46: field_effect_helpers.s: FldEff_Shadow
 	.globl gFieldEffectHelpersData_085ACA46
 gFieldEffectHelpersData_085ACA46: @ 0x085ACA46
 	@ analyzed canonical ROM range 0x085ACA46-0x085ACA49
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x00, 0x01, 0x02, 0x03
 	@ pret/pokeemerald-jp direct xref for 0x085ACA4A: field_effect_helpers.s: FldEff_Shadow
 	.globl gFieldEffectHelpersData_085ACA4A
 gFieldEffectHelpersData_085ACA4A: @ 0x085ACA4A
 	@ analyzed canonical ROM range 0x085ACA4A-0x085ACA53
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xA
+	@ ANALYSIS: U16_TABLE size=0xA entries=5
 	.2byte 0x0004, 0x0004, 0x0004, 0x0010, 0x0000
 	.globl gBattleU32Table_Rom_5ACA54
 gBattleU32Table_Rom_5ACA54: @ 0x085ACA54
@@ -292,14 +292,14 @@ gBattleU32Table_Rom_5ACA5C: @ 0x085ACA5C
 gFieldEffectHelpersData_085ACA68: @ 0x085ACA68
 	@ analyzed canonical ROM range 0x085ACA68-0x085ACA71
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xA
+	@ ANALYSIS: U16_TABLE size=0xA entries=5
 	.2byte 0x0000, 0x0201, 0x0003, 0x0100, 0x0001
 	@ pret/pokeemerald-jp direct xref for 0x085ACA72: field_effect_helpers.s: CreateBobbingEffect
 	.globl gFieldEffectHelpersData_085ACA72
 gFieldEffectHelpersData_085ACA72: @ 0x085ACA72
 	@ analyzed canonical ROM range 0x085ACA72-0x085ACB07
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x96
+	@ ANALYSIS: U16_TABLE size=0x96 entries=75
 	.2byte 0x0003, 0x0007, 0x0201, 0x0202, 0x0202, 0x0202, 0x0202, 0x0102
 	.2byte 0x0202, 0x0201, 0x0102, 0x0202, 0x0201, 0x0101, 0x0102, 0x0201
 	.2byte 0x0101, 0x0102, 0x0201, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101
@@ -628,7 +628,7 @@ sSpriteTemplate_085AD1A8: @ 0x085AD1A8
 gBattleAnimEffects3Data_085AD1C0: @ 0x085AD1C0
 	@ analyzed canonical ROM range 0x085AD1C0-0x085AD1E7
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x28
+	@ ANALYSIS: U16_TABLE size=0x28 entries=20
 	.2byte 0x0008, 0xFFF8, 0x0C00, 0x0000, 0xFFF0, 0x0010, 0x0C00, 0x0000
 	.2byte 0x0008, 0xFFF8, 0x0C00, 0x0000, 0x7FFD, 0x0001, 0x0000, 0x0000
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000
@@ -659,7 +659,7 @@ gBattleAnimEffects3Data_085AD1E8: @ 0x085AD1E8
 gBattleAnimEffects3Data_085AD238: @ 0x085AD238
 	@ analyzed canonical ROM range 0x085AD238-0x085AD267
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x30
+	@ ANALYSIS: U16_TABLE size=0x30 entries=24
 	.2byte 0x0000, 0x0006, 0x1400, 0x0000, 0x0000, 0x0000, 0x1400, 0x0000
 	.2byte 0x0007, 0xFFE2, 0x0600, 0x0000, 0x0000, 0x0000, 0x1400, 0x0000
 	.2byte 0xFFFE, 0x0003, 0x1400, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
@@ -668,7 +668,7 @@ gBattleAnimEffects3Data_085AD238: @ 0x085AD238
 gBattleAnimEffects3Data_085AD268: @ 0x085AD268
 	@ analyzed canonical ROM range 0x085AD268-0x085AD293
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x2C
+	@ ANALYSIS: U16_TABLE size=0x2C entries=22
 	.2byte 0x18E8, 0x00FC, 0x0000, 0x0006, 0x0004, 0x0006, 0xFFFE, 0x0000
 	.2byte 0x0008, 0x0006, 0xFFFF, 0x0000, 0x000C, 0x0006, 0xFFFF, 0x0000
 	.2byte 0xD26C, 0x085A, 0xD278, 0x085A, 0xD280, 0x085A
@@ -684,7 +684,7 @@ sSpriteTemplate_085AD294: @ 0x085AD294
 gBattleAnimEffects3Data_085AD2AC: @ 0x085AD2AC
 	@ analyzed canonical ROM range 0x085AD2AC-0x085AD2AF
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x78, 0x50, 0x28, 0x00
 	.globl gBattleU32Table_Rom_5AD2B0
 gBattleU32Table_Rom_5AD2B0: @ 0x085AD2B0
@@ -837,7 +837,7 @@ gBattleAnimEffects3Data_085AD3F8: @ 0x085AD3F8
 gBattleAnimEffects3Data_085AD554: @ 0x085AD554
 	@ analyzed canonical ROM range 0x085AD554-0x085AD573
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x20
+	@ ANALYSIS: U16_TABLE size=0x20 entries=16
 	.2byte 0xFFF0, 0x0010, 0x0600, 0x0000, 0x0010, 0xFFF0, 0x0C00, 0x0000
 	.2byte 0xFFF0, 0x0010, 0x0600, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085AD574: battle_anim_effects_3.s: CreateSweatDroplets
@@ -873,7 +873,7 @@ gBattleAnimEffects3Data_085AD58C: @ 0x085AD58C
 gBattleAnimEffects3Data_085AD5F4: @ 0x085AD5F4
 	@ analyzed canonical ROM range 0x085AD5F4-0x085AD653
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x28082808 @ +0x0
 	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
@@ -881,7 +881,7 @@ gBattleAnimEffects3Data_085AD5F4: @ 0x085AD5F4
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte AnimGlareEyeDot @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x280C280C @ +0x18
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
@@ -889,7 +889,7 @@ gBattleAnimEffects3Data_085AD5F4: @ 0x085AD5F4
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte AnimAssistPawprint @ +0x2C
-	@ ANALYSIS: RAW_BLOCK size=0x30
+	@ ANALYSIS: U32_TABLE size=0x30 entries=12
 	.4byte 0 @ +0x30
 	.4byte 0x000018FC @ +0x34
 	.4byte 0x00007FFF @ +0x38
@@ -907,15 +907,15 @@ gBattleAnimEffects3Data_085AD5F4: @ 0x085AD5F4
 gBattleAnimEffects3Data_085AD654: @ 0x085AD654
 	@ analyzed canonical ROM range 0x085AD654-0x085AD683
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x280E280E @ +0x0
 	.4byte gOamData_AffineNormal_ObjNormal_32x32 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0 @ +0xC
 	.4byte 0x085AD64C @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x28072807 @ +0x18
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
@@ -928,7 +928,7 @@ gBattleAnimEffects3Data_085AD654: @ 0x085AD654
 gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	@ analyzed canonical ROM range 0x085AD684-0x085AD7CF
 	@ pointer/nullable table
-	@ ANALYSIS: RAW_BLOCK size=0x20
+	@ ANALYSIS: U32_TABLE size=0x20 entries=8
 	.4byte 0xFFF00000 @ +0x0
 	.4byte 0x00000600 @ +0x4
 	.4byte 0x00100000 @ +0x8
@@ -942,7 +942,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte AnimSmellingSaltExclamation @ +0x2C
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x28072807 @ +0x30
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x34
 	.4byte gDummySpriteAnimTable @ +0x38
@@ -950,7 +950,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte AnimHelpingHandClap @ +0x44
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x28122812 @ +0x48
 	.4byte gOamData_AffineOff_ObjBlend_32x32 @ +0x4C
 	.4byte gDummySpriteAnimTable @ +0x50
@@ -958,7 +958,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x58
 	.4byte AnimForesightMagnifyingGlass @ +0x5C
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x27F927F9 @ +0x60
 	.4byte gOamData_AffineOff_ObjNormal_16x16 @ +0x64
 	.4byte gDummySpriteAnimTable @ +0x68
@@ -966,7 +966,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x70
 	.4byte AnimMeteorMashStar @ +0x74
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x27F927F9 @ +0x78
 	.4byte gOamData_AffineOff_ObjNormal_16x16 @ +0x7C
 	.4byte gDummySpriteAnimTable @ +0x80
@@ -974,7 +974,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x88
 	.4byte sub_08106A14 @ +0x8C
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x280A280A @ +0x90
 	.4byte gOamData_AffineOff_ObjNormal_64x64 @ +0x94
 	.4byte gDummySpriteAnimTable @ +0x98
@@ -982,7 +982,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0xA0
 	.4byte AnimBlockX @ +0xA4
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x27F027F0 @ +0xA8
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0xAC
 	.4byte gDummySpriteAnimTable @ +0xB0
@@ -990,7 +990,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0xB8
 	.4byte sub_0815FDB8 @ +0xBC
-	@ ANALYSIS: RAW_BLOCK size=0x5C
+	@ ANALYSIS: U32_TABLE size=0x5C entries=23
 	.4byte 0x00040000 @ +0xC0
 	.4byte 0x00040040 @ +0xC4
 	.4byte 0x0000FFFF @ +0xC8
@@ -1015,7 +1015,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte 0 @ +0x114
 	.4byte 0x085AD784 @ +0x118
 	.4byte AnimKnockOffStrike @ +0x11C
-	@ ANALYSIS: RAW_BLOCK size=0x1C
+	@ ANALYSIS: U32_TABLE size=0x1C entries=7
 	.4byte 0 @ +0x120
 	.4byte 0x000040FC @ +0x124
 	.4byte 0x00007FFE @ +0x128
@@ -1024,7 +1024,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte 0x28262826 @ +0x134
 	.4byte gOamData_AffineNormal_ObjBlend_64x64 @ +0x138
 	.4byte gDummySpriteAnimTable @ +0x13C
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0 @ +0x140
 	.4byte 0x085AD7B4 @ +0x144
 	.4byte AnimRecycle @ +0x148
@@ -1033,7 +1033,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 gBattleAnimEffects3Data_085AD7D0: @ 0x085AD7D0
 	@ analyzed canonical ROM range 0x085AD7D0-0x085AD99F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x1D0
+	@ ANALYSIS: U16_TABLE size=0x1D0 entries=232
 	.2byte 0x0000, 0x0010, 0x0400, 0x0000, 0xFFFE, 0x0000, 0x0800, 0x0000
 	.2byte 0x0000, 0x0004, 0x0400, 0x0000, 0x0000, 0x0000, 0x1800, 0x0000
 	.2byte 0x0001, 0xFFFB, 0x1000, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000

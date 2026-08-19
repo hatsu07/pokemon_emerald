@@ -3,7 +3,7 @@
 gRecordMixingData_08566E00: @ 0x08566E00
 	@ analyzed canonical ROM range 0x08566E00-0x08566E3F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x40
+	@ ANALYSIS: U16_TABLE size=0x40 entries=32
 	.2byte 0x0000, 0x0000, 0x0183, 0x0000, 0x0000, 0x0000, 0x007F, 0x0000
 	.2byte 0xFF81, 0xFFFF, 0x007F, 0x0000, 0xFF80, 0xFFFF, 0x7F7F, 0x0000
 	.2byte 0x0000, 0x0000, 0xFFFF, 0x0000, 0x0000, 0x0000, 0x00FF, 0x0000
@@ -13,7 +13,7 @@ gRecordMixingData_08566E00: @ 0x08566E00
 gRecordMixingData_08566E40: @ 0x08566E40
 	@ analyzed canonical ROM range 0x08566E40-0x08566E57
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x18
+	@ ANALYSIS: U16_TABLE size=0x18 entries=12
 	.2byte 0x0001, 0x0000, 0x000A, 0x0000, 0x0064, 0x0000, 0x03E8, 0x0000
 	.2byte 0x2710, 0x0000, 0x86A0, 0x0001
 	@ pret/pokeemerald-jp direct xref for 0x08566E58: record_mixing.s: sub_080E9284, sub_080E94B8
@@ -21,35 +21,35 @@ gRecordMixingData_08566E40: @ 0x08566E40
 gRecordMixingData_08566E58: @ 0x08566E58
 	@ analyzed canonical ROM range 0x08566E58-0x08566E5C
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x5
+	@ ANALYSIS: U8_DATA size=0x5 bytes=5
 	.byte 0x3F, 0x00, 0xC0, 0x7F, 0x80
 	@ pret/pokeemerald-jp direct xref for 0x08566E5D: record_mixing.s: sub_080E91E4
 	.globl gRecordMixingData_08566E5D
 gRecordMixingData_08566E5D: @ 0x08566E5D
 	@ analyzed canonical ROM range 0x08566E5D-0x08566E5F
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x3
+	@ ANALYSIS: U8_DATA size=0x3 bytes=3
 	.byte 0xCD, 0xBF, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x08566E60: record_mixing.s: sub_080E91E4
 	.globl gRecordMixingData_08566E60
 gRecordMixingData_08566E60: @ 0x08566E60
 	@ analyzed canonical ROM range 0x08566E60-0x08566E63
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0xCA, 0xBB, 0xC8, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x08566E64: record_mixing.s: sub_080E94B8
 	.globl gRecordMixingData_08566E64
 gRecordMixingData_08566E64: @ 0x08566E64
 	@ analyzed canonical ROM range 0x08566E64-0x08566E68
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x5
+	@ ANALYSIS: U8_DATA size=0x5 bytes=5
 	.byte 0x00, 0x00, 0xC6, 0xCC, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x08566E69: record_mixing.s: sub_080E94B8
 	.globl gRecordMixingData_08566E69
 gRecordMixingData_08566E69: @ 0x08566E69
 	@ analyzed canonical ROM range 0x08566E69-0x08567D87
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0xF1F
+	@ ANALYSIS: U8_DATA size=0xF1F bytes=3871
 	.byte 0x00, 0x00, 0xCC, 0xC6, 0xFF, 0xCD, 0xCE, 0xC9, 0xCA, 0xFF, 0xC7, 0xCF, 0xCD, 0xAE, 0xBE, 0xCF
 	.byte 0xC7, 0xC7, 0xD3, 0xFF, 0xCD, 0xBF, 0xAE, 0xC5, 0xBB, 0xC3, 0xC0, 0xCF, 0xC5, 0xCF, 0xFF, 0xCD
 	.byte 0xBF, 0xAE, 0xCA, 0xBD, 0xAE, 0xC6, 0xC9, 0xC1, 0xC3, 0xC8, 0xFF, 0xCD, 0xBF, 0xAE, 0xCA, 0xBD

@@ -17,7 +17,7 @@ gText_Rom_5CCDF8: @ 0x085CCDF8
 gPokemonJumpData_085CCDFB: @ 0x085CCDFB
 	@ analyzed canonical ROM range 0x085CCDFB-0x085CCDFD
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x3
+	@ ANALYSIS: U8_DATA size=0x3 bytes=3
 	.byte 0x06, 0x02, 0xFF
 
 	@ src/strings.c:843 gText_PkmnJumpRecords

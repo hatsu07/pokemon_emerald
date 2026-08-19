@@ -16,7 +16,7 @@ gText_Rom_5DC21C: @ 0x085DC21C
 gApprenticeData_085DC228: @ 0x085DC228
 	@ analyzed canonical ROM range 0x085DC228-0x085DC23D
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x16
+	@ ANALYSIS: U16_TABLE size=0x16 entries=11
 	.2byte 0x0124, 0x0126, 0x0183, 0x012C, 0x0133, 0x012E, 0x012F, 0x007F
 	.2byte 0x00D6, 0x0182, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085DC23E: frontier_util.s: CopyFrontierTrainerText
@@ -24,7 +24,7 @@ gApprenticeData_085DC228: @ 0x085DC228
 gFrontierUtilData_085DC23E: @ 0x085DC23E
 	@ analyzed canonical ROM range 0x085DC23E-0x085DC24B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xE
+	@ ANALYSIS: U16_TABLE size=0xE entries=7
 	.2byte 0x0C0E, 0x0C16, 0x0C00, 0x0E39, 0x062E, 0x1010, 0x0000
 	.globl gText_Rom_5DC24C
 gText_Rom_5DC24C: @ 0x085DC24C

@@ -73,7 +73,7 @@ sDecideStop_NoBias: @ 0x08584474
 sReelStopShocks: @ 0x08584480
 	@ analyzed canonical ROM range 0x08584480-0x0858448B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xC
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x0002, 0x0004, 0x0004, 0x0004, 0x0008, 0x0000
 	.globl sDecideStop_Bias_Reel1_Bets
 sDecideStop_Bias_Reel1_Bets: @ 0x0858448C
@@ -110,7 +110,7 @@ sReelStopButtonTasks: @ 0x085844C8
 sReelButtonOffsets: @ 0x085844D4
 	@ analyzed canonical ROM range 0x085844D4-0x085844DB
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0005, 0x000A, 0x000F, 0x0000
 	.globl sPikaPowerBoltTasks
 sPikaPowerBoltTasks: @ 0x085844DC
@@ -123,12 +123,12 @@ sPikaPowerBoltTasks: @ 0x085844DC
 sPikaPowerTileTable: @ 0x085844EC
 	@ analyzed canonical ROM range 0x085844EC-0x085844ED
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x2
+	@ ANALYSIS: U8_DATA size=0x2 bytes=2
 	.byte 0x9E, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085844EE: slot_machine.s: sub_0812D3C4
 	@ analyzed canonical ROM range 0x085844EE-0x085844F7
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0xA
+	@ ANALYSIS: U16_TABLE size=0xA entries=5
 	.2byte 0x006E, 0x009F, 0x006F, 0x00AF, 0x007F
 	.globl sReelTimeTasks
 sReelTimeTasks: @ 0x085844F8
@@ -156,21 +156,21 @@ sReelTimeTasks: @ 0x085844F8
 sReelTimePikachuAnimIds: @ 0x08584544
 	@ analyzed canonical ROM range 0x08584544-0x08584547
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x4
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x01, 0x01, 0x02, 0x02
 	@ pret/pokeemerald-jp direct xref for 0x08584548: slot_machine.s: ReelTime_PikachuSpeedUp1
 	.globl sReelTimeBoltDelays
 sReelTimeBoltDelays: @ 0x08584548
 	@ analyzed canonical ROM range 0x08584548-0x0858454F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0040, 0x0030, 0x0018, 0x0008
 	@ pret/pokeemerald-jp direct xref for 0x08584550: slot_machine.s: ReelTime_PikachuSpeedUp1
 	.globl sPikachuAuraFlashDelays
 sPikachuAuraFlashDelays: @ 0x08584550
 	@ analyzed canonical ROM range 0x08584550-0x08584557
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x000A, 0x0008, 0x0006, 0x0004
 	.globl sInfoBoxTasks
 sInfoBoxTasks: @ 0x08584558

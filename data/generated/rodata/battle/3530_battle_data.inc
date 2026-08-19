@@ -3,5 +3,5 @@
 gBattleU8Table_Rom_5ABBC9: @ 0x085ABBC9
 	@ analyzed canonical ROM range 0x085ABBC9-0x085ABBD0
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8
+	@ ANALYSIS: U8_DATA size=0x8 bytes=8
 	.byte 0xFC, 0x05, 0x05, 0xFC, 0x04, 0x0D, 0x0E, 0x0F
