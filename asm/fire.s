@@ -125,8 +125,8 @@ _08109804: .4byte 0x020380BE
 _08109808: .4byte 0x08109879
 	thumb_func_end sub_0810979C
 
-	thumb_func_start sub_0810980C
-sub_0810980C: @ 0x0810980C
+	thumb_func_start AnimLargeFlame
+AnimLargeFlame: @ 0x0810980C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08109838
@@ -179,7 +179,7 @@ _08109858:
 	.align 2, 0
 _08109870: .4byte 0x020380BE
 _08109874: .4byte 0x08109879
-	thumb_func_end sub_0810980C
+	thumb_func_end AnimLargeFlame
 
 	thumb_func_start sub_08109878
 sub_08109878: @ 0x08109878
@@ -353,8 +353,8 @@ _081099B6:
 	bx r0
 	thumb_func_end sub_08109928
 
-	thumb_func_start sub_081099BC
-sub_081099BC: @ 0x081099BC
+	thumb_func_start AnimSunlight
+AnimSunlight: @ 0x081099BC
 	push {lr}
 	movs r1, #0
 	strh r1, [r0, #0x20]
@@ -374,7 +374,7 @@ sub_081099BC: @ 0x081099BC
 	.align 2, 0
 _081099E0: .4byte 0x080A67B5
 _081099E4: .4byte 0x080A34C5
-	thumb_func_end sub_081099BC
+	thumb_func_end AnimSunlight
 
 	thumb_func_start AnimEmberFlare
 AnimEmberFlare: @ 0x081099E8

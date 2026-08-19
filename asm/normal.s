@@ -344,8 +344,8 @@ _081161FA:
 _08116200: .4byte 0x02037C74
 	thumb_func_end sub_081161D4
 
-	thumb_func_start sub_08116204
-sub_08116204: @ 0x08116204
+	thumb_func_start AnimCirclingSparkle
+AnimCirclingSparkle: @ 0x08116204
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, _08116248
@@ -382,7 +382,7 @@ sub_08116204: @ 0x08116204
 _08116248: .4byte 0x020380BE
 _0811624C: .4byte 0x080A6015
 _08116250: .4byte 0x080A5C15
-	thumb_func_end sub_08116204
+	thumb_func_end AnimCirclingSparkle
 
 	thumb_func_start sub_08116254
 sub_08116254: @ 0x08116254

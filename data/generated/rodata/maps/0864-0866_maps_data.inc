@@ -1424,7 +1424,7 @@ gOctazookaInkAnims: @ 0x0856EA10
 	semantic_anim_table_entry gOctazookaInkAnim
 	.globl gOctazookaInkSpriteTemplate
 gOctazookaInkSpriteTemplate: @ 0x0856EA14
-	rodata_sprite_template 0x272E, 0x272E, gOamData_AffineOff_ObjNormal_32x32, gOctazookaInkAnims, 0, gDummySpriteAffineAnimTable, sub_080A7090
+	rodata_sprite_template 0x272E, 0x272E, gOamData_AffineOff_ObjNormal_32x32, gOctazookaInkAnims, 0, gDummySpriteAffineAnimTable, AnimSpriteOnMonPos
 	.globl gConversionAnim
 gConversionAnim: @ 0x0856EA2C
 	rodata_anim_frame 3, 5
@@ -1492,7 +1492,7 @@ gHealingSparkleAnims_Tag272F: @ 0x0856EB0C
 	semantic_anim_table_entry gHealingSparkleAnim_Tag272F
 	.globl gHealingBlueStarSpriteTemplate
 gHealingBlueStarSpriteTemplate: @ 0x0856EB10
-	rodata_sprite_template 0x272F, 0x272F, gOamData_AffineOff_ObjNormal_32x32, gHealingSparkleAnims_Tag272F, 0, gDummySpriteAffineAnimTable, sub_080A7090
+	rodata_sprite_template 0x272F, 0x272F, gOamData_AffineOff_ObjNormal_32x32, gHealingSparkleAnims_Tag272F, 0, gDummySpriteAffineAnimTable, AnimSpriteOnMonPos
 	.globl gHornHitSpriteTemplate
 gHornHitSpriteTemplate: @ 0x0856EB28
 	rodata_sprite_template 0x2724, 0x2724, gOamData_AffineOff_ObjNormal_32x32, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_08103094
@@ -1734,7 +1734,7 @@ sAffineAnims_SmallExplosion: @ 0x0856EEE4
 	semantic_affine_anim_table_entry sAffineAnim_SmallExplosion
 	.globl sSmallExplosionSpriteTemplate
 sSmallExplosionSpriteTemplate: @ 0x0856EEE8
-	rodata_sprite_template 0x2717, 0x2717, gOamData_AffineNormal_ObjNormal_32x32, sAnims_SmallExplosion, 0, sAffineAnims_SmallExplosion, sub_080A7090
+	rodata_sprite_template 0x2717, 0x2717, gOamData_AffineNormal_ObjNormal_32x32, sAnims_SmallExplosion, 0, sAffineAnims_SmallExplosion, AnimSpriteOnMonPos
 	.globl gKinesisZapEnergyAnim
 gKinesisZapEnergyAnim: @ 0x0856EF00
 	rodata_anim_frame 0, 3, 1
@@ -1963,7 +1963,7 @@ gExplosionAnimTable: @ 0x0856F2FC
 	semantic_anim_table_entry gExplosionAnimCmds
 	.globl gExplosionSpriteTemplate
 gExplosionSpriteTemplate: @ 0x0856F300
-	rodata_sprite_template 0x27D6, 0x27D6, gOamData_AffineOff_ObjNormal_32x32, gExplosionAnimTable, 0, gDummySpriteAffineAnimTable, sub_080A7090
+	rodata_sprite_template 0x27D6, 0x27D6, gOamData_AffineOff_ObjNormal_32x32, gExplosionAnimTable, 0, gDummySpriteAffineAnimTable, AnimSpriteOnMonPos
 	.globl gSoftBoiledEggAffineAnimCmds1
 gSoftBoiledEggAffineAnimCmds1: @ 0x0856F318
 	rodata_affine_anim_frame 0, 0, 0x02F8, 0
@@ -2016,7 +2016,7 @@ gHyperVoiceRingAffineAnimTable: @ 0x0856F3FC
 	semantic_affine_anim_table_entry gHyperVoiceRingAffineAnimCmds
 	.globl gThinRingExpandingSpriteTemplate
 gThinRingExpandingSpriteTemplate: @ 0x0856F400
-	rodata_sprite_template 0x27DB, 0x27DB, gOamData_AffineDouble_ObjNormal_64x64, gDummySpriteAnimTable, 0, gThinRingExpandingAffineAnimTable, sub_080A7090
+	rodata_sprite_template 0x27DB, 0x27DB, gOamData_AffineDouble_ObjNormal_64x64, gDummySpriteAnimTable, 0, gThinRingExpandingAffineAnimTable, AnimSpriteOnMonPos
 	.globl gThinRingShrinkingAffineAnimCmds
 gThinRingShrinkingAffineAnimCmds: @ 0x0856F418
 	rodata_affine_anim_frame 0x200, 0x200, 0, 0
@@ -2027,7 +2027,7 @@ gThinRingShrinkingAffineAnimTable: @ 0x0856F430
 	semantic_affine_anim_table_entry gThinRingShrinkingAffineAnimCmds
 	.globl gThinRingShrinkingSpriteTemplate
 gThinRingShrinkingSpriteTemplate: @ 0x0856F434
-	rodata_sprite_template 0x27DB, 0x27DB, gOamData_AffineDouble_ObjBlend_64x64, gDummySpriteAnimTable, 0, gThinRingShrinkingAffineAnimTable, sub_080A7090
+	rodata_sprite_template 0x27DB, 0x27DB, gOamData_AffineDouble_ObjBlend_64x64, gDummySpriteAnimTable, 0, gThinRingShrinkingAffineAnimTable, AnimSpriteOnMonPos
 	.globl gBlendThinRingExpandingSpriteTemplate
 gBlendThinRingExpandingSpriteTemplate: @ 0x0856F44C
 	rodata_sprite_template 0x27DB, 0x27DB, gOamData_AffineDouble_ObjBlend_64x64, gDummySpriteAnimTable, 0, gThinRingExpandingAffineAnimTable, sub_08105A14
@@ -2082,7 +2082,7 @@ gHealBellRingAnims: @ 0x0856F518
 	semantic_anim_table_entry gHealBellRingAnim
 	.globl gHealBellRingSpriteTemplate
 gHealBellRingSpriteTemplate: @ 0x0856F51C
-	rodata_sprite_template 0x27DD, 0x27DD, gOamData_AffineOff_ObjNormal_32x32, gHealBellRingAnims, 0, gDummySpriteAffineAnimTable, sub_080A7090
+	rodata_sprite_template 0x27DD, 0x27DD, gOamData_AffineOff_ObjNormal_32x32, gHealBellRingAnims, 0, gDummySpriteAffineAnimTable, AnimSpriteOnMonPos
 	@ pret/pokeemerald-jp direct xref for 0x0856F534: battle_anim_effects_2.s: sub_081065B0, sub_081065D8
 	.globl gHealBellPaletteTags
 gHealBellPaletteTags: @ 0x0856F534

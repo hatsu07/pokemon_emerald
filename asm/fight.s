@@ -3,8 +3,8 @@
 .text
 .syntax unified
 
-	thumb_func_start unc_080B08A0
-unc_080B08A0: @ 0x0810D67C
+	thumb_func_start AnimUnusedHumanoidFoot
+AnimUnusedHumanoidFoot: @ 0x0810D67C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _0810D6AC
@@ -30,7 +30,7 @@ unc_080B08A0: @ 0x0810D67C
 _0810D6AC: .4byte 0x020380BE
 _0810D6B0: .4byte 0x080A5D79
 _0810D6B4: .4byte 0x080A34C5
-	thumb_func_end unc_080B08A0
+	thumb_func_end AnimUnusedHumanoidFoot
 
 	thumb_func_start sub_0810D6B8
 sub_0810D6B8: @ 0x0810D6B8
@@ -684,8 +684,8 @@ _0810DBC4: .4byte 0x080A5D79
 _0810DBC8: .4byte 0x080A34C5
 	thumb_func_end AnimStompFootEnd
 
-	thumb_func_start sub_0810DBCC
-sub_0810DBCC: @ 0x0810DBCC
+	thumb_func_start AnimDizzyPunchDuck
+AnimDizzyPunchDuck: @ 0x0810DBCC
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #0x2e
@@ -757,10 +757,10 @@ _0810DC54:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end sub_0810DBCC
+	thumb_func_end AnimDizzyPunchDuck
 
-	thumb_func_start sub_0810DC5C
-sub_0810DC5C: @ 0x0810DC5C
+	thumb_func_start AnimBrickBreakWall
+AnimBrickBreakWall: @ 0x0810DC5C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0810DC70
@@ -813,7 +813,7 @@ _0810DC7A:
 _0810DCC0: .4byte 0x020380D7
 _0810DCC4: .4byte 0x020380BE
 _0810DCC8: .4byte 0x0810DCCD
-	thumb_func_end sub_0810DC5C
+	thumb_func_end AnimBrickBreakWall
 
 	thumb_func_start sub_0810DCCC
 sub_0810DCCC: @ 0x0810DCCC
@@ -884,8 +884,8 @@ _0810DD3C:
 _0810DD40: .4byte 0x0000FFFE
 	thumb_func_end sub_0810DCCC
 
-	thumb_func_start sub_0810DD44
-sub_0810DD44: @ 0x0810DD44
+	thumb_func_start AnimBrickBreakWallShard
+AnimBrickBreakWallShard: @ 0x0810DD44
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r6, _0810DD68
@@ -1000,7 +1000,7 @@ _0810DE22:
 	bx r0
 	.align 2, 0
 _0810DE28: .4byte 0x0810DE2D
-	thumb_func_end sub_0810DD44
+	thumb_func_end AnimBrickBreakWallShard
 
 	thumb_func_start sub_0810DE2C
 sub_0810DE2C: @ 0x0810DE2C
@@ -1028,8 +1028,8 @@ _0810DE54:
 	bx r0
 	thumb_func_end sub_0810DE2C
 
-	thumb_func_start sub_0810DE58
-sub_0810DE58: @ 0x0810DE58
+	thumb_func_start AnimSuperpowerOrb
+AnimSuperpowerOrb: @ 0x0810DE58
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0810DEA4
@@ -1101,7 +1101,7 @@ _0810DED0:
 _0810DEEC: .4byte 0x020380D7
 _0810DEF0: .4byte 0x020380D6
 _0810DEF4: .4byte 0x0810DEF9
-	thumb_func_end sub_0810DE58
+	thumb_func_end AnimSuperpowerOrb
 
 	thumb_func_start sub_0810DEF8
 sub_0810DEF8: @ 0x0810DEF8
@@ -1155,8 +1155,8 @@ _0810DF5C: .4byte 0x080A6015
 _0810DF60: .4byte 0x080A6861
 	thumb_func_end sub_0810DEF8
 
-	thumb_func_start sub_0810DF64
-sub_0810DF64: @ 0x0810DF64
+	thumb_func_start AnimSuperpowerRock
+AnimSuperpowerRock: @ 0x0810DF64
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r4, _0810DFB0
@@ -1198,7 +1198,7 @@ _0810DFB0: .4byte 0x020380BE
 _0810DFB4: .4byte 0x000003FF
 _0810DFB8: .4byte 0xFFFFFC00
 _0810DFBC: .4byte 0x0810DFC1
-	thumb_func_end sub_0810DF64
+	thumb_func_end AnimSuperpowerRock
 
 	thumb_func_start sub_0810DFC0
 sub_0810DFC0: @ 0x0810DFC0
@@ -1332,8 +1332,8 @@ _0810E0C0:
 	bx r0
 	thumb_func_end sub_0810E080
 
-	thumb_func_start sub_0810E0C4
-sub_0810E0C4: @ 0x0810E0C4
+	thumb_func_start AnimSuperpowerFireball
+AnimSuperpowerFireball: @ 0x0810E0C4
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0810E0F8
@@ -1443,7 +1443,7 @@ _0810E168:
 	.align 2, 0
 _0810E1A8: .4byte 0x080A34C5
 _0810E1AC: .4byte 0x080A6861
-	thumb_func_end sub_0810E0C4
+	thumb_func_end AnimSuperpowerFireball
 
 	thumb_func_start sub_0810E1B0
 sub_0810E1B0: @ 0x0810E1B0
@@ -1536,8 +1536,8 @@ _0810E258: .4byte 0x020380D2
 _0810E25C: .4byte 0x0810E1B1
 	thumb_func_end sub_0810E1D4
 
-	thumb_func_start sub_0810E260
-sub_0810E260: @ 0x0810E260
+	thumb_func_start AnimRevengeScratch
+AnimRevengeScratch: @ 0x0810E260
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _0810E278
@@ -1587,7 +1587,7 @@ _0810E2AE:
 _0810E2C0: .4byte 0x020380D6
 _0810E2C4: .4byte 0x080A60A1
 _0810E2C8: .4byte 0x080A34C5
-	thumb_func_end sub_0810E260
+	thumb_func_end AnimRevengeScratch
 
 	thumb_func_start sub_0810E2CC
 sub_0810E2CC: @ 0x0810E2CC

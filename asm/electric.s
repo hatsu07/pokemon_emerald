@@ -1493,8 +1493,8 @@ _0810B578: .4byte 0x080A6015
 _0810B57C: .4byte 0x080A6085
 	thumb_func_end sub_0810B528
 
-	thumb_func_start sub_0810B580
-sub_0810B580: @ 0x0810B580
+	thumb_func_start AnimElectricPuff
+AnimElectricPuff: @ 0x0810B580
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0810B594
@@ -1540,7 +1540,7 @@ _0810B5D8: .4byte 0x020380D7
 _0810B5DC: .4byte 0x020380BE
 _0810B5E0: .4byte 0x080A34C5
 _0810B5E4: .4byte 0x080A60A1
-	thumb_func_end sub_0810B580
+	thumb_func_end AnimElectricPuff
 
 	thumb_func_start sub_0810B5E8
 sub_0810B5E8: @ 0x0810B5E8

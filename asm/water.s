@@ -75,14 +75,14 @@ _08107A64: .4byte 0x020380BE
 _08107A68: .4byte gRainDropSpriteTemplate
 	thumb_func_end AnimTask_CreateRaindrops
 
-	thumb_func_start sub_08107A6C
-sub_08107A6C: @ 0x08107A6C
+	thumb_func_start AnimRainDrop
+AnimRainDrop: @ 0x08107A6C
 	ldr r1, _08107A74
 	str r1, [r0, #0x1c]
 	bx lr
 	.align 2, 0
 _08107A74: .4byte 0x08107A79
-	thumb_func_end sub_08107A6C
+	thumb_func_end AnimRainDrop
 
 	thumb_func_start sub_08107A78
 sub_08107A78: @ 0x08107A78
@@ -117,8 +117,8 @@ _08107AAA:
 	.align 2, 0
 	thumb_func_end sub_08107A78
 
-	thumb_func_start sub_08107AB0
-sub_08107AB0: @ 0x08107AB0
+	thumb_func_start AnimWaterBubbleProjectile
+AnimWaterBubbleProjectile: @ 0x08107AB0
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	ldr r5, _08107AD8
@@ -247,7 +247,7 @@ _08107BC0: .4byte 0x020380D7
 _08107BC4: .4byte 0x08007141
 _08107BC8: .4byte 0x020205AC
 _08107BCC: .4byte 0x08107BD1
-	thumb_func_end sub_08107AB0
+	thumb_func_end AnimWaterBubbleProjectile
 
 	thumb_func_start sub_08107BD0
 sub_08107BD0: @ 0x08107BD0
@@ -355,8 +355,8 @@ _08107C94: .4byte 0x080A5D79
 _08107C98: .4byte 0x080A6015
 	thumb_func_end sub_08107C80
 
-	thumb_func_start sub_08107C9C
-sub_08107C9C: @ 0x08107C9C
+	thumb_func_start AnimAuroraBeamRings
+AnimAuroraBeamRings: @ 0x08107C9C
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	movs r1, #1
@@ -424,7 +424,7 @@ _08107CD2:
 _08107D28: .4byte 0x020380BE
 _08107D2C: .4byte 0x020380D7
 _08107D30: .4byte 0x08107D35
-	thumb_func_end sub_08107C9C
+	thumb_func_end AnimAuroraBeamRings
 
 	thumb_func_start sub_08107D34
 sub_08107D34: @ 0x08107D34
@@ -938,8 +938,8 @@ _08108118: .4byte 0x080A67B5
 _0810811C: .4byte 0x080A34C5
 	thumb_func_end sub_081080E4
 
-	thumb_func_start sub_08108120
-sub_08108120: @ 0x08108120
+	thumb_func_start AnimSmallBubblePair
+AnimSmallBubblePair: @ 0x08108120
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08108138
@@ -969,7 +969,7 @@ _08108144:
 	.align 2, 0
 _08108154: .4byte 0x020380BE
 _08108158: .4byte 0x0810815D
-	thumb_func_end sub_08108120
+	thumb_func_end AnimSmallBubblePair
 
 	thumb_func_start sub_0810815C
 sub_0810815C: @ 0x0810815C
@@ -2477,7 +2477,7 @@ _08108CC2:
 	cmp r0, #0
 	beq _08108D24
 	adds r0, r5, #0
-	bl sub_08108D6C
+	bl AnimSmallWaterOrb
 _08108D24:
 	ldrh r0, [r7, #0xc]
 	adds r0, #1
@@ -2516,8 +2516,8 @@ _08108D64: .4byte gSmallWaterOrbSpriteTemplate
 _08108D68: .4byte 0x020205AC
 	thumb_func_end sub_08108C58
 
-	thumb_func_start sub_08108D6C
-sub_08108D6C: @ 0x08108D6C
+	thumb_func_start AnimSmallWaterOrb
+AnimSmallWaterOrb: @ 0x08108D6C
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #0x2e
@@ -2605,7 +2605,7 @@ _08108E0E:
 	bx r0
 	.align 2, 0
 _08108E14: .4byte 0x03005B60
-	thumb_func_end sub_08108D6C
+	thumb_func_end AnimSmallWaterOrb
 
 	thumb_func_start sub_08108E18
 sub_08108E18: @ 0x08108E18

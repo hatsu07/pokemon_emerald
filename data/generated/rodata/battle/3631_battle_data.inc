@@ -589,7 +589,7 @@ gBattleAnimEffects3Data_085AD0A8: @ 0x085AD0A8
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD150 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD154 size=0x4 source=v54_multi_pointer
-	.4byte sub_080A7090
+	.4byte AnimSpriteOnMonPos
 	@ pret/pokeemerald-jp direct xref for 0x085AD158: battle_anim_effects_3.s: sub_0815B274
 	.globl gBattleAnimEffects3Data_085AD158
 gBattleAnimEffects3Data_085AD158: @ 0x085AD158

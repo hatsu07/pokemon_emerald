@@ -3754,8 +3754,8 @@ GetBattlerAtPosition_: @ 0x080A707C
 	.align 2, 0
 	thumb_func_end GetBattlerAtPosition_
 
-	thumb_func_start sub_080A7090
-sub_080A7090: @ 0x080A7090
+	thumb_func_start AnimSpriteOnMonPos
+AnimSpriteOnMonPos: @ 0x080A7090
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #0x2e
@@ -3801,7 +3801,7 @@ _080A70E2:
 	pop {r4}
 	pop {r0}
 	bx r0
-	thumb_func_end sub_080A7090
+	thumb_func_end AnimSpriteOnMonPos
 
 	thumb_func_start TranslateAnimSpriteToTargetMonLocation
 TranslateAnimSpriteToTargetMonLocation: @ 0x080A70E8

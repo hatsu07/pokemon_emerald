@@ -251,8 +251,8 @@ _081139FC: .4byte 0x080A67B5
 _08113A00: .4byte 0x080A6015
 	thumb_func_end sub_08113950
 
-	thumb_func_start sub_08113A04
-sub_08113A04: @ 0x08113A04
+	thumb_func_start AnimDragonRageFirePlume
+AnimDragonRageFirePlume: @ 0x08113A04
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _08113A18
@@ -302,7 +302,7 @@ _08113A64: .4byte 0x020380D7
 _08113A68: .4byte 0x020380BE
 _08113A6C: .4byte 0x080A60A1
 _08113A70: .4byte 0x080A6015
-	thumb_func_end sub_08113A04
+	thumb_func_end AnimDragonRageFirePlume
 
 	thumb_func_start sub_08113A74
 sub_08113A74: @ 0x08113A74
@@ -327,8 +327,8 @@ _08113A8E:
 _08113A9C: .4byte 0x020380D6
 	thumb_func_end sub_08113A74
 
-	thumb_func_start sub_08113AA0
-sub_08113AA0: @ 0x08113AA0
+	thumb_func_start AnimDragonDanceOrb
+AnimDragonDanceOrb: @ 0x08113AA0
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	ldr r4, _08113AF4
@@ -393,7 +393,7 @@ _08113B02:
 	bx r0
 	.align 2, 0
 _08113B2C: .4byte 0x08113B31
-	thumb_func_end sub_08113AA0
+	thumb_func_end AnimDragonDanceOrb
 
 	thumb_func_start sub_08113B30
 sub_08113B30: @ 0x08113B30
