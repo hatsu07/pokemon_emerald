@@ -1094,7 +1094,7 @@ _0811026A:
 	beq _081102B6
 	b _0811030E
 	.align 2, 0
-_081102A8: .4byte gPsychicData_08572378
+_081102A8: .4byte gImprisonOrbSpriteTemplate
 _081102AC:
 	cmp r0, #2
 	beq _081102E0

@@ -1769,7 +1769,7 @@ sSpriteTemplate_Tag27AB_08571E3C: @ 0x08571E3C
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27A6_08571E24_08571E20 @ affineAnims
 	.4byte AnimBubbleEffect @ callback
-sSpriteTemplate_Tag2719_08571E54: @ 0x08571E54
+gEllipticalGustSpriteTemplate: @ 0x08571E54
 	@ SpriteTemplate: tileTag=0x2719, paletteTag=0x2719
 	.2byte 0x2719, 0x2719
 	.4byte gOamData_AffineOff_ObjNormal_32x64 @ oam
@@ -1829,20 +1829,20 @@ sAffineAnims_Tag27AC_08571F24_08571EF8: @ 0x08571EF8
 	@ AffineAnimCmd pointer table
 	.4byte sAffineAnim_Tag27AC_08571F24_0_08571ED0 @ [0]
 
-sAffineAnim_Tag27AC_08571F3C_0_08571EFC: @ 0x08571EFC
+sAffineAnim_FlyBallAttack_0: @ 0x08571EFC
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x0132, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-sAffineAnim_Tag27AC_08571F3C_1_08571F0C: @ 0x08571F0C
+sAffineAnim_FlyBallAttack_1: @ 0x08571F0C
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x01D8, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-sAffineAnims_Tag27AC_08571F3C_08571F1C: @ 0x08571F1C
+sAffineAnims_FlyBallAttack: @ 0x08571F1C
 	@ AffineAnimCmd pointer table
-	.4byte sAffineAnim_Tag27AC_08571F3C_0_08571EFC @ [0]
-	.4byte sAffineAnim_Tag27AC_08571F3C_1_08571F0C @ [1]
+	.4byte sAffineAnim_FlyBallAttack_0 @ [0]
+	.4byte sAffineAnim_FlyBallAttack_1 @ [1]
 
 sSpriteTemplate_Tag27AC_08571F24: @ 0x08571F24
 	@ SpriteTemplate: tileTag=0x27AC, paletteTag=0x27AC
@@ -1853,13 +1853,13 @@ sSpriteTemplate_Tag27AC_08571F24: @ 0x08571F24
 	.4byte sAffineAnims_Tag27AC_08571F24_08571EF8 @ affineAnims
 	.4byte AnimFlyBallUp @ callback (AnimFlyBallUp)
 
-sSpriteTemplate_Tag27AC_08571F3C: @ 0x08571F3C
+gFlyBallAttackSpriteTemplate: @ 0x08571F3C
 	@ SpriteTemplate: tileTag=0x27AC, paletteTag=0x27AC
 	.2byte 0x27AC, 0x27AC
 	.4byte gOamData_AffineNormal_ObjNormal_64x64 @ oam
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
-	.4byte sAffineAnims_Tag27AC_08571F3C_08571F1C @ affineAnims
+	.4byte sAffineAnims_FlyBallAttack @ affineAnims
 	.4byte AnimFlyBallAttack @ callback (AnimFlyBallAttack)
 
 sAnim_Tag281E_08571F6C_0_08571F54: @ 0x08571F54
@@ -2252,8 +2252,8 @@ sAffineAnim_Teleport:
 	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, 0, 0, -56)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
-	.globl gPsychicData_08572378
-gPsychicData_08572378: @ 0x08572378
+	.globl gImprisonOrbSpriteTemplate
+gImprisonOrbSpriteTemplate: @ 0x08572378
 	@ SpriteTemplate: tileTag=0x2809, paletteTag=0x2809
 	.2byte 0x2809, 0x2809
 	.4byte gOamData_AffineOff_ObjBlend_16x16 @ oam
@@ -2761,7 +2761,7 @@ sSpriteTemplate_Tag271D_085728F8: @ 0x085728F8
 	.4byte sAffineAnims_Tag271D_085728F8_085728F4 @ affineAnims
 	.4byte AnimConfuseRayBallBounce @ callback (AnimConfuseRayBallBounce)
 
-sSpriteTemplate_Tag271D_08572910: @ 0x08572910
+gConfuseRayBallSpiralSpriteTemplate: @ 0x08572910
 	@ SpriteTemplate: tileTag=0x271D, paletteTag=0x271D
 	.2byte 0x271D, 0x271D
 	.4byte gOamData_AffineOff_ObjBlend_16x16 @ oam
@@ -3277,7 +3277,7 @@ sSpriteTemplate_Tag0000_08572E58: @ 0x08572E58
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimSimplePaletteBlend @ callback
-sSpriteTemplate_Tag0000_08572E70: @ 0x08572E70
+gComplexPaletteBlendSpriteTemplate: @ 0x08572E70
 	@ SpriteTemplate: tileTag=0x0000, paletteTag=0x0000
 	.2byte 0x0000, 0x0000
 	.4byte gDummyOamData @ oam
@@ -3307,7 +3307,7 @@ sSpriteTemplate_Tag2757_08572EA4: @ 0x08572EA4
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimCirclingSparkle @ callback
-sSpriteTemplate_Tag0000_08572EBC: @ 0x08572EBC
+gShakeMonOrPlatformSpriteTemplate: @ 0x08572EBC
 	@ SpriteTemplate: tileTag=0x0000, paletteTag=0x0000
 	.2byte 0x0000, 0x0000
 	.4byte gDummyOamData @ oam
