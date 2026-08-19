@@ -202,8 +202,8 @@ _081160EA:
 _081160F0: .4byte 0x02037C74
 	thumb_func_end AnimSimplePaletteBlendStep
 
-	thumb_func_start sub_081160F4
-sub_081160F4: @ 0x081160F4
+	thumb_func_start AnimComplexPaletteBlend
+AnimComplexPaletteBlend: @ 0x081160F4
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r4, _08116140
@@ -242,7 +242,7 @@ sub_081160F4: @ 0x081160F4
 	.align 2, 0
 _08116140: .4byte 0x020380BE
 _08116144: .4byte 0x08116149
-	thumb_func_end sub_081160F4
+	thumb_func_end AnimComplexPaletteBlend
 
 	thumb_func_start sub_08116148
 sub_08116148: @ 0x08116148

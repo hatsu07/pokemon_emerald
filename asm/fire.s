@@ -216,8 +216,8 @@ _081098B0:
 	bx r0
 	thumb_func_end sub_08109878
 
-	thumb_func_start sub_081098B4
-sub_081098B4: @ 0x081098B4
+	thumb_func_start AnimUnusedSmallEmber
+AnimUnusedSmallEmber: @ 0x081098B4
 	push {r4, lr}
 	adds r4, r0, #0
 	bl SetSpriteCoordsToAnimAttackerCoords
@@ -272,7 +272,7 @@ _081098F2:
 	.align 2, 0
 _08109920: .4byte 0x020380BE
 _08109924: .4byte 0x08109929
-	thumb_func_end sub_081098B4
+	thumb_func_end AnimUnusedSmallEmber
 
 	thumb_func_start sub_08109928
 sub_08109928: @ 0x08109928

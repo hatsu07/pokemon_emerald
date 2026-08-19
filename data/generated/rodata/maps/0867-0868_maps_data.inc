@@ -450,7 +450,7 @@ sSpriteTemplate_Tag272D_08571050: @ 0x08571050
 	.4byte sAnims_Tag272D_08571050_0857104C @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x081098B5 @ callback (sub_081098B4)
+	.4byte AnimUnusedSmallEmber @ callback (AnimUnusedSmallEmber)
 
 sAffineAnim_Tag27AD_08571084_0_08571068: @ 0x08571068
 	@ union AffineAnimCmd stream
@@ -2423,7 +2423,7 @@ sSpriteTemplate_Tag27B1_085725AC: @ 0x085725AC
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte sAffineAnims_Tag27B1_085725AC_085725A0 @ affineAnims
-	.4byte 0x08110C89 @ callback (sub_08110C88)
+	.4byte AnimLeechLifeNeedle @ callback (AnimLeechLifeNeedle)
 
 sSpriteTemplate_Tag27C4_085725C4: @ 0x085725C4
 	@ SpriteTemplate: tileTag=0x27C4, paletteTag=0x27C4
@@ -3284,7 +3284,7 @@ sSpriteTemplate_Tag0000_08572E70: @ 0x08572E70
 	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0 @ images
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
-	.4byte 0x081160F5 @ callback (sub_081160F4)
+	.4byte AnimComplexPaletteBlend @ callback (AnimComplexPaletteBlend)
 
 sAnim_Tag2757_08572EA4_0_08572E88: @ 0x08572E88
 	@ union AnimCmd stream
