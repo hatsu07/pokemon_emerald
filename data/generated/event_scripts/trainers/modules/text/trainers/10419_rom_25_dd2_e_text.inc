@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1727 Route117_Text_DylanPostBattle
 	.globl gText_Rom_25DD2E
 gText_Rom_25DD2E: @ 0x0825DD2E
-	.string "まいったな……\pいまの しょうぶの あいだに\nビリに なっちゃったかも……?$"
+	.string "まいったな……\pいまの しょうぶの あいだに\nビリに なっちゃったかも……?{EOS}"
 	.if (. - gText_Rom_25DD2E) > 0x27
 	.error "gText_Rom_25DD2E may not grow beyond its original slot"
 	.endif

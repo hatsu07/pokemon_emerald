@@ -1,7 +1,7 @@
 	@ src/pokenav_match_call_data.c:380 pokenav_match_call_data_line_380
 	.globl gText_Rom_5F73CF
 gText_Rom_5F73CF: @ 0x085F73CF
-	.string "いわのゆうとうせい$"
+	.string "いわのゆうとうせい{EOS}"
 	.if (. - gText_Rom_5F73CF) > 0xa
 	.error "gText_Rom_5F73CF may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5F73CF: @ 0x085F73CF
 	@ src/pokenav_match_call_data.c:397 pokenav_match_call_data_line_397
 	.globl gText_Rom_5F73D9
 gText_Rom_5F73D9: @ 0x085F73D9
-	.string "ビッグなウェーブ$"
+	.string "ビッグなウェーブ{EOS}"
 	.if (. - gText_Rom_5F73D9) > 0x9
 	.error "gText_Rom_5F73D9 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5F73D9: @ 0x085F73D9
 	@ src/pokenav_match_call_data.c:414 pokenav_match_call_data_line_414
 	.globl gText_Rom_5F73E2
 gText_Rom_5F73E2: @ 0x085F73E2
-	.string "でんげきおやじ$"
+	.string "でんげきおやじ{EOS}"
 	.if (. - gText_Rom_5F73E2) > 0x8
 	.error "gText_Rom_5F73E2 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5F73E2: @ 0x085F73E2
 	@ src/pokenav_match_call_data.c:431 pokenav_match_call_data_line_431
 	.globl gText_Rom_5F73EA
 gText_Rom_5F73EA: @ 0x085F73EA
-	.string "じょうねつのひと$"
+	.string "じょうねつのひと{EOS}"
 	.if (. - gText_Rom_5F73EA) > 0x9
 	.error "gText_Rom_5F73EA may not grow beyond its original slot"
 	.endif
@@ -46,7 +46,7 @@ gText_Rom_5F73EA: @ 0x085F73EA
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5F73F3
 gText_Rom_5F73F3: @ 0x085F73F3
-	.string "せかいのとりつかい$"
+	.string "せかいのとりつかい{EOS}"
 	.if (. - gText_Rom_5F73F3) != 0xa
 	.error "gText_Rom_5F73F3 must retain its original byte length"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5F73F3: @ 0x085F73F3
 	@ src/pokenav_match_call_data.c:465 pokenav_match_call_data_line_465
 	.globl gText_Rom_5F73FD
 gText_Rom_5F73FD: @ 0x085F73FD
-	.string "しんぴてきなコンビ$"
+	.string "しんぴてきなコンビ{EOS}"
 	.if (. - gText_Rom_5F73FD) > 0xa
 	.error "gText_Rom_5F73FD may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_5F73FD: @ 0x085F73FD
 	@ src/pokenav_match_call_data.c:482 pokenav_match_call_data_line_482
 	.globl gText_Rom_5F7407
 gText_Rom_5F7407: @ 0x085F7407
-	.string "みわくのダンディ$"
+	.string "みわくのダンディ{EOS}"
 	.if (. - gText_Rom_5F7407) > 0x9
 	.error "gText_Rom_5F7407 may not grow beyond its original slot"
 	.endif

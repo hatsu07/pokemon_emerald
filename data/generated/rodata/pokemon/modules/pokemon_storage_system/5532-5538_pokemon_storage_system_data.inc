@@ -1,7 +1,7 @@
 	@ src/pokemon_storage_system.c:8096 pokemon_storage_system_line_8096
 	.globl gText_Rom_5CB3DD
 gText_Rom_5CB3DD: @ 0x085CB3DD
-	.string "ふうけい1$"
+	.string "ふうけい1{EOS}"
 	.if (. - gText_Rom_5CB3DD) > 0x6
 	.error "gText_Rom_5CB3DD may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CB3DD: @ 0x085CB3DD
 	@ src/pokemon_storage_system.c:8097 pokemon_storage_system_line_8097
 	.globl gText_Rom_5CB3E3
 gText_Rom_5CB3E3: @ 0x085CB3E3
-	.string "ふうけい2$"
+	.string "ふうけい2{EOS}"
 	.if (. - gText_Rom_5CB3E3) > 0x6
 	.error "gText_Rom_5CB3E3 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CB3E3: @ 0x085CB3E3
 	@ src/pokemon_storage_system.c:8098 pokemon_storage_system_line_8098
 	.globl gText_Rom_5CB3E9
 gText_Rom_5CB3E9: @ 0x085CB3E9
-	.string "ふうけい3$"
+	.string "ふうけい3{EOS}"
 	.if (. - gText_Rom_5CB3E9) > 0x6
 	.error "gText_Rom_5CB3E9 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5CB3E9: @ 0x085CB3E9
 	@ src/pokemon_storage_system.c:8099 pokemon_storage_system_line_8099
 	.globl gText_Rom_5CB3EF
 gText_Rom_5CB3EF: @ 0x085CB3EF
-	.string "エトセトラ$"
+	.string "エトセトラ{EOS}"
 	.if (. - gText_Rom_5CB3EF) > 0x6
 	.error "gText_Rom_5CB3EF may not grow beyond its original slot"
 	.endif

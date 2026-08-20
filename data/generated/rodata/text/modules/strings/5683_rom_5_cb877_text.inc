@@ -1,7 +1,7 @@
 	@ src/strings.c:543 gText_AndMakeYourProfile
 	.globl gText_Rom_5CB877
 gText_Rom_5CB877: @ 0x085CB877
-	.string "プロフィールを つくろう!$"
+	.string "プロフィールを つくろう!{EOS}"
 	.if (. - gText_Rom_5CB877) > 0xe
 	.error "gText_Rom_5CB877 may not grow beyond its original slot"
 	.endif

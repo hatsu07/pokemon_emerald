@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2819 Route126_Text_DeanDefeat (+1 aliases)
 	.globl gText_Rom_260BCC
 gText_Rom_260BCC: @ 0x08260BCC
-	.string "やられたか!?$"
+	.string "やられたか!?{EOS}"
 	.if (. - gText_Rom_260BCC) > 0x8
 	.error "gText_Rom_260BCC may not grow beyond its original slot"
 	.endif

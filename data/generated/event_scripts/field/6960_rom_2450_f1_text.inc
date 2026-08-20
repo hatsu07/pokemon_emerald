@@ -1,7 +1,7 @@
 	@ field-script:0x245BFE FieldScriptText_2450F1
 	.globl gText_Rom_2450F1
 gText_Rom_2450F1: @ 0x082450F1
-	.string "ちいさな　いりぐちを　はっけん！$"
+	.string "ちいさな　いりぐちを　はっけん！{EOS}"
 	.if (. - gText_Rom_2450F1) > 0x11
 	.error "gText_Rom_2450F1 may not grow beyond its original slot"
 	.endif

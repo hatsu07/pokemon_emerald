@@ -1,7 +1,7 @@
 	@ data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc:365 PlayersHouse_1F_Text_Vigoroth2
 	.globl gText_Rom_1EFCEB
 gText_Rom_1EFCEB: @ 0x081EFCEB
-	.string "ふごっ ふご ふご……$"
+	.string "ふごっ ふご ふご……{EOS}"
 	.if (. - gText_Rom_1EFCEB) > 0xc
 	.error "gText_Rom_1EFCEB may not grow beyond its original slot"
 	.endif

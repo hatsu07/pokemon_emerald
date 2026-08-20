@@ -1,7 +1,7 @@
 	@ src/battle_dome.c:962 battle_dome_line_962
 	.globl gText_Rom_274146
 gText_Rom_274146: @ 0x08274146
-	.string "バランスよく ポケモンを そだてている。$"
+	.string "バランスよく ポケモンを そだてている。{EOS}"
 	.if (. - gText_Rom_274146) > 0x15
 	.error "gText_Rom_274146 may not grow beyond its original slot"
 	.endif

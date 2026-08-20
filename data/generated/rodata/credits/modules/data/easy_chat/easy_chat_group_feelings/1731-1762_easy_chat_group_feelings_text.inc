@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_feelings.h:17 gEasyChatWord_Tries (+1 aliases)
 	.globl gText_Rom_576843
 gText_Rom_576843: @ 0x08576843
-	.string "がんばる$"
+	.string "がんばる{EOS}"
 	.if (. - gText_Rom_576843) > 0x5
 	.error "gText_Rom_576843 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_576843: @ 0x08576843
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_576848
 gText_Rom_576848: @ 0x08576848
-	.string "きがしない$"
+	.string "きがしない{EOS}"
 	.if (. - gText_Rom_576848) != 0x6
 	.error "gText_Rom_576848 must retain its original byte length"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_576848: @ 0x08576848
 	@ src/data/easy_chat/easy_chat_group_feelings.h:19 gEasyChatWord_Think (+1 aliases)
 	.globl gText_Rom_57684E
 gText_Rom_57684E: @ 0x0857684E
-	.string "きがする$"
+	.string "きがする{EOS}"
 	.if (. - gText_Rom_57684E) > 0x5
 	.error "gText_Rom_57684E may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_57684E: @ 0x0857684E
 	@ src/data/easy_chat/easy_chat_group_feelings.h:20 gEasyChatWord_Hear (+1 aliases)
 	.globl gText_Rom_576853
 gText_Rom_576853: @ 0x08576853
-	.string "ききたい$"
+	.string "ききたい{EOS}"
 	.if (. - gText_Rom_576853) > 0x5
 	.error "gText_Rom_576853 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_576853: @ 0x08576853
 	@ src/data/easy_chat/easy_chat_group_feelings.h:21 gEasyChatWord_Wants (+1 aliases)
 	.globl gText_Rom_576858
 gText_Rom_576858: @ 0x08576858
-	.string "きになる$"
+	.string "きになる{EOS}"
 	.if (. - gText_Rom_576858) > 0x5
 	.error "gText_Rom_576858 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_576858: @ 0x08576858
 	@ src/data/easy_chat/easy_chat_group_feelings.h:22 gEasyChatWord_Misheard (+1 aliases)
 	.globl gText_Rom_57685D
 gText_Rom_57685D: @ 0x0857685D
-	.string "きのせい$"
+	.string "きのせい{EOS}"
 	.if (. - gText_Rom_57685D) > 0x5
 	.error "gText_Rom_57685D may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_57685D: @ 0x0857685D
 	@ src/data/easy_chat/easy_chat_group_feelings.h:23 gEasyChatWord_Dislike (+1 aliases)
 	.globl gText_Rom_576862
 gText_Rom_576862: @ 0x08576862
-	.string "きらい$"
+	.string "きらい{EOS}"
 	.if (. - gText_Rom_576862) > 0x4
 	.error "gText_Rom_576862 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_576862: @ 0x08576862
 	@ src/data/easy_chat/easy_chat_group_feelings.h:24 gEasyChatWord_Angry (+1 aliases)
 	.globl gText_Rom_576866
 gText_Rom_576866: @ 0x08576866
-	.string "くやしい$"
+	.string "くやしい{EOS}"
 	.if (. - gText_Rom_576866) > 0x5
 	.error "gText_Rom_576866 may not grow beyond its original slot"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_576866: @ 0x08576866
 	@ src/data/easy_chat/easy_chat_group_feelings.h:25 gEasyChatWord_Anger (+1 aliases)
 	.globl gText_Rom_57686B
 gText_Rom_57686B: @ 0x0857686B
-	.string "くやしさ$"
+	.string "くやしさ{EOS}"
 	.if (. - gText_Rom_57686B) > 0x5
 	.error "gText_Rom_57686B may not grow beyond its original slot"
 	.endif
@@ -100,7 +100,7 @@ gText_Rom_57686B: @ 0x0857686B
 	@ src/data/easy_chat/easy_chat_group_feelings.h:26 gEasyChatWord_Scary (+1 aliases)
 	.globl gText_Rom_576870
 gText_Rom_576870: @ 0x08576870
-	.string "こわい$"
+	.string "こわい{EOS}"
 	.if (. - gText_Rom_576870) > 0x4
 	.error "gText_Rom_576870 may not grow beyond its original slot"
 	.endif
@@ -111,7 +111,7 @@ gText_Rom_576870: @ 0x08576870
 	@ src/data/easy_chat/easy_chat_group_feelings.h:27 gEasyChatWord_Lonesome (+1 aliases)
 	.globl gText_Rom_576874
 gText_Rom_576874: @ 0x08576874
-	.string "さみしい$"
+	.string "さみしい{EOS}"
 	.if (. - gText_Rom_576874) > 0x5
 	.error "gText_Rom_576874 may not grow beyond its original slot"
 	.endif
@@ -122,7 +122,7 @@ gText_Rom_576874: @ 0x08576874
 	@ src/data/easy_chat/easy_chat_group_feelings.h:28 gEasyChatWord_Disappoint (+1 aliases)
 	.globl gText_Rom_576879
 gText_Rom_576879: @ 0x08576879
-	.string "ざんねん$"
+	.string "ざんねん{EOS}"
 	.if (. - gText_Rom_576879) > 0x5
 	.error "gText_Rom_576879 may not grow beyond its original slot"
 	.endif
@@ -133,7 +133,7 @@ gText_Rom_576879: @ 0x08576879
 	@ src/data/easy_chat/easy_chat_group_feelings.h:29 gEasyChatWord_Joy (+1 aliases)
 	.globl gText_Rom_57687E
 gText_Rom_57687E: @ 0x0857687E
-	.string "しあわせ$"
+	.string "しあわせ{EOS}"
 	.if (. - gText_Rom_57687E) > 0x5
 	.error "gText_Rom_57687E may not grow beyond its original slot"
 	.endif
@@ -144,7 +144,7 @@ gText_Rom_57687E: @ 0x0857687E
 	@ src/data/easy_chat/easy_chat_group_feelings.h:30 gEasyChatWord_Gets (+1 aliases)
 	.globl gText_Rom_576883
 gText_Rom_576883: @ 0x08576883
-	.string "したい$"
+	.string "したい{EOS}"
 	.if (. - gText_Rom_576883) > 0x4
 	.error "gText_Rom_576883 may not grow beyond its original slot"
 	.endif
@@ -155,7 +155,7 @@ gText_Rom_576883: @ 0x08576883
 	@ src/data/easy_chat/easy_chat_group_feelings.h:31 gEasyChatWord_Never (+1 aliases)
 	.globl gText_Rom_576887
 gText_Rom_576887: @ 0x08576887
-	.string "したくない$"
+	.string "したくない{EOS}"
 	.if (. - gText_Rom_576887) > 0x6
 	.error "gText_Rom_576887 may not grow beyond its original slot"
 	.endif
@@ -166,7 +166,7 @@ gText_Rom_576887: @ 0x08576887
 	@ src/data/easy_chat/easy_chat_group_feelings.h:32 gEasyChatWord_Darn (+1 aliases)
 	.globl gText_Rom_57688D
 gText_Rom_57688D: @ 0x0857688D
-	.string "しまった$"
+	.string "しまった{EOS}"
 	.if (. - gText_Rom_57688D) > 0x5
 	.error "gText_Rom_57688D may not grow beyond its original slot"
 	.endif

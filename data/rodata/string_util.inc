@@ -17,11 +17,11 @@ sPowersOfTen: @ 0x082BF44C
 
 	.globl sBrailleSetFont
 sBrailleSetFont: @ 0x082BF474
-	.string "{FONT}{0x06}$"
+	.string "{FONT}{0x06}{EOS}"
 
 	.globl sBrailleGotoLine2
 sBrailleGotoLine2: @ 0x082BF478
-	.string "\n{SHIFT_DOWN}{0x02}$"
+	.string "\n{SHIFT_DOWN}{0x02}{EOS}"
 	.balign 4, 0
 
 	.globl sExpandPlaceholderFuncs

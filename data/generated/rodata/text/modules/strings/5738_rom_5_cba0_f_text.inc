@@ -1,7 +1,7 @@
 	@ src/strings.c:571 gText_SelectTheAnswerToTheQuiz
 	.globl gText_Rom_5CBA0F
 gText_Rom_5CBA0F: @ 0x085CBA0F
-	.string "クイズの こたえを えらぼう!$"
+	.string "クイズの こたえを えらぼう!{EOS}"
 	.if (. - gText_Rom_5CBA0F) > 0x10
 	.error "gText_Rom_5CBA0F may not grow beyond its original slot"
 	.endif

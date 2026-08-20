@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_House4/scripts.inc:28 SootopolisCity_House4_Text_Azumarill
 	.globl gText_Rom_20F64D
 gText_Rom_20F64D: @ 0x0820F64D
-	.string "マリルリ『まるりー$"
+	.string "マリルリ『まるりー{EOS}"
 	.if (. - gText_Rom_20F64D) > 0xa
 	.error "gText_Rom_20F64D may not grow beyond its original slot"
 	.endif

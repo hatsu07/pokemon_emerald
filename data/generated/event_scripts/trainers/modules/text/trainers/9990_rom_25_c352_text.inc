@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1103 Route112_Text_TrentDefeat (+1 aliases)
 	.globl gText_Rom_25C352
 gText_Rom_25C352: @ 0x0825C352
-	.string "あ……\nあしが つった……$"
+	.string "あ……\nあしが つった……{EOS}"
 	.if (. - gText_Rom_25C352) > 0xe
 	.error "gText_Rom_25C352 may not grow beyond its original slot"
 	.endif

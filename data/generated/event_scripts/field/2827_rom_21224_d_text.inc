@@ -1,7 +1,7 @@
 	@ field-script:0x21217A FieldScriptText_21224D
 	.globl gText_Rom_21224D
 gText_Rom_21224D: @ 0x0821224D
-	.string "『ちそうが　できるまで』\n『あめ　ふって　じめん　かたまる』\l『いしと　つちと　がんせきと』\pたくさんの　ほんが　ならんでる！$"
+	.string "『ちそうが　できるまで』\n『あめ　ふって　じめん　かたまる』\l『いしと　つちと　がんせきと』\pたくさんの　ほんが　ならんでる！{EOS}"
 	.if (. - gText_Rom_21224D) > 0x40
 	.error "gText_Rom_21224D may not grow beyond its original slot"
 	.endif

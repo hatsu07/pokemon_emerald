@@ -1,7 +1,7 @@
 	@ src/strings.c:1046 gText_Exit3 (+1 aliases)
 	.globl gText_Rom_5E8A2A
 gText_Rom_5E8A2A: @ 0x085E8A2A
-	.string "おわる$"
+	.string "おわる{EOS}"
 	.if (. - gText_Rom_5E8A2A) > 0x4
 	.error "gText_Rom_5E8A2A may not grow beyond its original slot"
 	.endif

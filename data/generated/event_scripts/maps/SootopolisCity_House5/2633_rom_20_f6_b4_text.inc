@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_House5/scripts.inc:15 SootopolisCity_House5_Text_BrotherUsedToStudySea
 	.globl gText_Rom_20F6B4
 gText_Rom_20F6B4: @ 0x0820F6B4
-	.string "おにいちゃん\nむかし うみの けんきゅうを してたんだ$"
+	.string "おにいちゃん\nむかし うみの けんきゅうを してたんだ{EOS}"
 	.if (. - gText_Rom_20F6B4) > 0x1c
 	.error "gText_Rom_20F6B4 may not grow beyond its original slot"
 	.endif

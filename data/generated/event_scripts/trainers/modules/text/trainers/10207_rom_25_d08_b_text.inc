@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1424 Route114_Text_AngelinaIntro (+1 aliases)
 	.globl gText_Rom_25D08B
 gText_Rom_25D08B: @ 0x0825D08B
-	.string "あなたの ポケモンって\nどの くらい しんか させてる?$"
+	.string "あなたの ポケモンって\nどの くらい しんか させてる?{EOS}"
 	.if (. - gText_Rom_25D08B) > 0x1d
 	.error "gText_Rom_25D08B may not grow beyond its original slot"
 	.endif

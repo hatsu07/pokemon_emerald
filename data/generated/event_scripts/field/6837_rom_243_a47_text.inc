@@ -1,7 +1,7 @@
 	@ field-script:0x20B1A6 FieldScriptText_243A47
 	.globl gText_Rom_243A47
 gText_Rom_243A47: @ 0x08243A47
-	.string "ミナモ　デパートへ　ようこそ！\pなんかいへ　いきますか？$"
+	.string "ミナモ　デパートへ　ようこそ！\pなんかいへ　いきますか？{EOS}"
 	.if (. - gText_Rom_243A47) > 0x1d
 	.error "gText_Rom_243A47 may not grow beyond its original slot"
 	.endif

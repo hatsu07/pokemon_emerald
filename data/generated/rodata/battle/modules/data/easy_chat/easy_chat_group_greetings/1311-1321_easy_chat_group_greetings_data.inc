@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_greetings.h:214 easy_chat_group_greetings_line_214
 	.globl gText_Rom_575509
 gText_Rom_575509: @ 0x08575509
-	.string "またね$"
+	.string "またね{EOS}"
 	.if (. - gText_Rom_575509) > 0x4
 	.error "gText_Rom_575509 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_575509: @ 0x08575509
 	@ src/data/easy_chat/easy_chat_group_greetings.h:220 easy_chat_group_greetings_line_220
 	.globl gText_Rom_57550D
 gText_Rom_57550D: @ 0x0857550D
-	.string "もしもし$"
+	.string "もしもし{EOS}"
 	.if (. - gText_Rom_57550D) > 0x5
 	.error "gText_Rom_57550D may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_57550D: @ 0x0857550D
 	@ src/data/easy_chat/easy_chat_group_greetings.h:226 easy_chat_group_greetings_line_226
 	.globl gText_Rom_575512
 gText_Rom_575512: @ 0x08575512
-	.string "やあ$"
+	.string "やあ{EOS}"
 	.if (. - gText_Rom_575512) > 0x3
 	.error "gText_Rom_575512 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_575512: @ 0x08575512
 	@ src/data/easy_chat/easy_chat_group_greetings.h:232 easy_chat_group_greetings_line_232
 	.globl gText_Rom_575515
 gText_Rom_575515: @ 0x08575515
-	.string "やっほー$"
+	.string "やっほー{EOS}"
 	.if (. - gText_Rom_575515) > 0x5
 	.error "gText_Rom_575515 may not grow beyond its original slot"
 	.endif
@@ -42,12 +42,12 @@ gText_Rom_575515: @ 0x08575515
 	.space 0x5 - (. - gText_Rom_575515)
 	.endif
 	@ Decoded text from ROM range: offset=0x57551A, size=0x3
-	.string "よう$"
+	.string "よう{EOS}"
 
 	@ src/data/easy_chat/easy_chat_group_greetings.h:244 easy_chat_group_greetings_line_244
 	.globl gText_Rom_57551D
 gText_Rom_57551D: @ 0x0857551D
-	.string "ようこそ$"
+	.string "ようこそ{EOS}"
 	.if (. - gText_Rom_57551D) > 0x5
 	.error "gText_Rom_57551D may not grow beyond its original slot"
 	.endif
@@ -58,7 +58,7 @@ gText_Rom_57551D: @ 0x0857551D
 	@ src/data/easy_chat/easy_chat_group_greetings.h:250 easy_chat_group_greetings_line_250
 	.globl gText_Rom_575522
 gText_Rom_575522: @ 0x08575522
-	.string "よろしく$"
+	.string "よろしく{EOS}"
 	.if (. - gText_Rom_575522) > 0x5
 	.error "gText_Rom_575522 may not grow beyond its original slot"
 	.endif

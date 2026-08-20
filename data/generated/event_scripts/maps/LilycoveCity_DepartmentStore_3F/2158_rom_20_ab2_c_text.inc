@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc:63 LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon
 	.globl gText_Rom_20AB2C
 gText_Rom_20AB2C: @ 0x0820AB2C
-	.string "ポケモンにね\nインドメタシンを あげたら\lすばやさが あがったの!$"
+	.string "ポケモンにね\nインドメタシンを あげたら\lすばやさが あがったの!{EOS}"
 	.if (. - gText_Rom_20AB2C) > 0x22
 	.error "gText_Rom_20AB2C may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/data/script_menu.h:1330 script_menu_line_1330 (+2 aliases)
 	.globl gText_Rom_5CBFE3
 gText_Rom_5CBFE3: @ 0x085CBFE3
-	.string "シングル$"
+	.string "シングル{EOS}"
 	.if (. - gText_Rom_5CBFE3) > 0x5
 	.error "gText_Rom_5CBFE3 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CBFE3: @ 0x085CBFE3
 	@ src/data/script_menu.h:1331 script_menu_line_1331 (+2 aliases)
 	.globl gText_Rom_5CBFE8
 gText_Rom_5CBFE8: @ 0x085CBFE8
-	.string "ダブル$"
+	.string "ダブル{EOS}"
 	.if (. - gText_Rom_5CBFE8) > 0x4
 	.error "gText_Rom_5CBFE8 may not grow beyond its original slot"
 	.endif

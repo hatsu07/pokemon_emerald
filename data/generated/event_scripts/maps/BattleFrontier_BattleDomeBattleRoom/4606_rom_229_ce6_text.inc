@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc:1170 BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker
 	.globl gText_Rom_229CE6
 gText_Rom_229CE6: @ 0x08229CE6
-	.string "しんぱんいん より\nはんていの けっかが でました!\pしょうしゃは\nなんと! なんと! なんと!\lわれらの スーパースター! ヒース です!\pおめでとう! そして ありがとう!!\nわれらの ドームスーパースター ヒース!!$"
+	.string "しんぱんいん より\nはんていの けっかが でました!\pしょうしゃは\nなんと! なんと! なんと!\lわれらの スーパースター! ヒース です!\pおめでとう! そして ありがとう!!\nわれらの ドームスーパースター ヒース!!{EOS}"
 	.if (. - gText_Rom_229CE6) > 0x70
 	.error "gText_Rom_229CE6 may not grow beyond its original slot"
 	.endif

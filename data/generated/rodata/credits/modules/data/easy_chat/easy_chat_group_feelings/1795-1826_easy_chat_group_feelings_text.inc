@@ -3,7 +3,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5768E7
 gText_Rom_5768E7: @ 0x085768E7
-	.string "つらかった$"
+	.string "つらかった{EOS}"
 	.if (. - gText_Rom_5768E7) != 0x6
 	.error "gText_Rom_5768E7 must retain its original byte length"
 	.endif
@@ -14,7 +14,7 @@ gText_Rom_5768E7: @ 0x085768E7
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5768ED
 gText_Rom_5768ED: @ 0x085768ED
-	.string "どうしよう$"
+	.string "どうしよう{EOS}"
 	.if (. - gText_Rom_5768ED) != 0x6
 	.error "gText_Rom_5768ED must retain its original byte length"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_5768ED: @ 0x085768ED
 	@ src/data/easy_chat/easy_chat_group_feelings.h:51 gEasyChatWord_Nice (+1 aliases)
 	.globl gText_Rom_5768F3
 gText_Rom_5768F3: @ 0x085768F3
-	.string "ナイス$"
+	.string "ナイス{EOS}"
 	.if (. - gText_Rom_5768F3) > 0x4
 	.error "gText_Rom_5768F3 may not grow beyond its original slot"
 	.endif
@@ -36,7 +36,7 @@ gText_Rom_5768F3: @ 0x085768F3
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5768F7
 gText_Rom_5768F7: @ 0x085768F7
-	.string "のみたい$"
+	.string "のみたい{EOS}"
 	.if (. - gText_Rom_5768F7) != 0x5
 	.error "gText_Rom_5768F7 must retain its original byte length"
 	.endif
@@ -46,7 +46,7 @@ gText_Rom_5768F7: @ 0x085768F7
 	@ src/data/easy_chat/easy_chat_group_feelings.h:53 gEasyChatWord_Surprise (+1 aliases)
 	.globl gText_Rom_5768FC
 gText_Rom_5768FC: @ 0x085768FC
-	.string "びっくり$"
+	.string "びっくり{EOS}"
 	.if (. - gText_Rom_5768FC) > 0x5
 	.error "gText_Rom_5768FC may not grow beyond its original slot"
 	.endif
@@ -57,7 +57,7 @@ gText_Rom_5768FC: @ 0x085768FC
 	@ src/data/easy_chat/easy_chat_group_feelings.h:54 gEasyChatWord_Fear (+1 aliases)
 	.globl gText_Rom_576901
 gText_Rom_576901: @ 0x08576901
-	.string "ふあん$"
+	.string "ふあん{EOS}"
 	.if (. - gText_Rom_576901) > 0x4
 	.error "gText_Rom_576901 may not grow beyond its original slot"
 	.endif
@@ -68,7 +68,7 @@ gText_Rom_576901: @ 0x08576901
 	@ src/data/easy_chat/easy_chat_group_feelings.h:55 gEasyChatWord_Want (+1 aliases)
 	.globl gText_Rom_576905
 gText_Rom_576905: @ 0x08576905
-	.string "ほしい$"
+	.string "ほしい{EOS}"
 	.if (. - gText_Rom_576905) > 0x4
 	.error "gText_Rom_576905 may not grow beyond its original slot"
 	.endif
@@ -79,7 +79,7 @@ gText_Rom_576905: @ 0x08576905
 	@ src/data/easy_chat/easy_chat_group_feelings.h:56 gEasyChatWord_Wait (+1 aliases)
 	.globl gText_Rom_576909
 gText_Rom_576909: @ 0x08576909
-	.string "まてない$"
+	.string "まてない{EOS}"
 	.if (. - gText_Rom_576909) > 0x5
 	.error "gText_Rom_576909 may not grow beyond its original slot"
 	.endif
@@ -90,7 +90,7 @@ gText_Rom_576909: @ 0x08576909
 	@ src/data/easy_chat/easy_chat_group_feelings.h:57 gEasyChatWord_Satisfied (+2 aliases)
 	.globl gText_Rom_57690E
 gText_Rom_57690E: @ 0x0857690E
-	.string "まんぞく$"
+	.string "まんぞく{EOS}"
 	.if (. - gText_Rom_57690E) > 0x5
 	.error "gText_Rom_57690E may not grow beyond its original slot"
 	.endif
@@ -101,7 +101,7 @@ gText_Rom_57690E: @ 0x0857690E
 	@ src/data/easy_chat/easy_chat_group_feelings.h:58 gEasyChatWord_See (+1 aliases)
 	.globl gText_Rom_576913
 gText_Rom_576913: @ 0x08576913
-	.string "みたい$"
+	.string "みたい{EOS}"
 	.if (. - gText_Rom_576913) > 0x4
 	.error "gText_Rom_576913 may not grow beyond its original slot"
 	.endif
@@ -113,19 +113,19 @@ gText_Rom_576913: @ 0x08576913
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_576917
 gText_Rom_576917: @ 0x08576917
-	.string "めずらしい$"
+	.string "めずらしい{EOS}"
 	.if (. - gText_Rom_576917) != 0x6
 	.error "gText_Rom_576917 must retain its original byte length"
 	.endif
 	.globl gText_Rom_576919
 	.set gText_Rom_576919, gText_Rom_576917 + 0x2
 	@ Decoded text from ROM range: offset=0x57691D, size=0x3
-	.string "やだ$"
+	.string "やだ{EOS}"
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:61 gEasyChatWord_Done (+1 aliases)
 	.globl gText_Rom_576920
 gText_Rom_576920: @ 0x08576920
-	.string "やったー$"
+	.string "やったー{EOS}"
 	.if (. - gText_Rom_576920) > 0x5
 	.error "gText_Rom_576920 may not grow beyond its original slot"
 	.endif
@@ -136,7 +136,7 @@ gText_Rom_576920: @ 0x08576920
 	@ src/data/easy_chat/easy_chat_group_feelings.h:62 gEasyChatWord_Danger (+1 aliases)
 	.globl gText_Rom_576925
 gText_Rom_576925: @ 0x08576925
-	.string "やばい$"
+	.string "やばい{EOS}"
 	.if (. - gText_Rom_576925) > 0x4
 	.error "gText_Rom_576925 may not grow beyond its original slot"
 	.endif
@@ -147,7 +147,7 @@ gText_Rom_576925: @ 0x08576925
 	@ src/data/easy_chat/easy_chat_group_feelings.h:63 gEasyChatWord_Defeated (+1 aliases)
 	.globl gText_Rom_576929
 gText_Rom_576929: @ 0x08576929
-	.string "やられた$"
+	.string "やられた{EOS}"
 	.if (. - gText_Rom_576929) > 0x5
 	.error "gText_Rom_576929 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/Route110_TrickHousePuzzle4/scripts.inc:57 Route110_TrickHousePuzzle4_Text_PaulaPostBattle
 	.globl gText_Rom_23ECC9
 gText_Rom_23ECC9: @ 0x0823ECC9
-	.string "さいごまで いった\nひとって いるのかしらね?$"
+	.string "さいごまで いった\nひとって いるのかしらね?{EOS}"
 	.if (. - gText_Rom_23ECC9) > 0x18
 	.error "gText_Rom_23ECC9 may not grow beyond its original slot"
 	.endif

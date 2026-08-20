@@ -1,7 +1,7 @@
 	@ src/battle_message.c:202 battle_message_line_202
 	.globl gText_Rom_5A96FC
 gText_Rom_5A96FC: @ 0x085A96FC
-	.string "{B_BUFF1}は {B_BUFF2}を\nおぼえずに おわった!\p$"
+	.string "{B_BUFF1}は {B_BUFF2}を\nおぼえずに おわった!\p{EOS}"
 	.if (. - gText_Rom_5A96FC) > 0x15
 	.error "gText_Rom_5A96FC may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5A96FC: @ 0x085A96FC
 	@ src/battle_message.c:491 battle_message_line_491
 	.globl gText_Rom_5A9711
 gText_Rom_5A9711: @ 0x085A9711
-	.string "つぎの ポケモンを つかいますか?$"
+	.string "つぎの ポケモンを つかいますか?{EOS}"
 	.if (. - gText_Rom_5A9711) > 0x12
 	.error "gText_Rom_5A9711 may not grow beyond its original slot"
 	.endif

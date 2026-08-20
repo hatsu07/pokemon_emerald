@@ -1,7 +1,7 @@
 	@ data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc:61 Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk (+1 aliases)
 	.globl gText_Rom_240690
 gText_Rom_240690: @ 0x08240690
-	.string "サイクリング ロードを\nあるいて すすむのは あぶない です!\lじてんしゃに のって きてください$"
+	.string "サイクリング ロードを\nあるいて すすむのは あぶない です!\lじてんしゃに のって きてください{EOS}"
 	.if (. - gText_Rom_240690) > 0x32
 	.error "gText_Rom_240690 may not grow beyond its original slot"
 	.endif

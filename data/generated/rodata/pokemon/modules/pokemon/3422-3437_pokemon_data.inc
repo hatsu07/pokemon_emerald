@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5AB057
 gText_Rom_5AB057: @ 0x085AB057
-	.string "たいりょく$"
+	.string "たいりょく{EOS}"
 	.if (. - gText_Rom_5AB057) != 0x6
 	.error "gText_Rom_5AB057 must retain its original byte length"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5AB057: @ 0x085AB057
 	@ asm/pokemon.s:10677 sub_0806C9E8
 	.globl gText_Rom_5AB05D
 gText_Rom_5AB05D: @ 0x085AB05D
-	.string "こうげきりょく$"
+	.string "こうげきりょく{EOS}"
 	.if (. - gText_Rom_5AB05D) > 0x8
 	.error "gText_Rom_5AB05D may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5AB05D: @ 0x085AB05D
 	@ asm/pokemon.s:10677 sub_0806C9E8
 	.globl gText_Rom_5AB065
 gText_Rom_5AB065: @ 0x085AB065
-	.string "ぼうぎょりょく$"
+	.string "ぼうぎょりょく{EOS}"
 	.if (. - gText_Rom_5AB065) > 0x8
 	.error "gText_Rom_5AB065 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5AB065: @ 0x085AB065
 	@ asm/pokemon.s:10677 sub_0806C9E8 (+5 aliases)
 	.globl gText_Rom_5AB06D
 gText_Rom_5AB06D: @ 0x085AB06D
-	.string "すばやさ$"
+	.string "すばやさ{EOS}"
 	.if (. - gText_Rom_5AB06D) > 0x5
 	.error "gText_Rom_5AB06D may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5AB06D: @ 0x085AB06D
 	@ asm/pokemon.s:10677 sub_0806C9E8 (+6 aliases)
 	.globl gText_Rom_5AB072
 gText_Rom_5AB072: @ 0x085AB072
-	.string "とくこう$"
+	.string "とくこう{EOS}"
 	.if (. - gText_Rom_5AB072) > 0x5
 	.error "gText_Rom_5AB072 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5AB072: @ 0x085AB072
 	@ asm/pokemon.s:10677 sub_0806C9E8 (+6 aliases)
 	.globl gText_Rom_5AB077
 gText_Rom_5AB077: @ 0x085AB077
-	.string "とくぼう$"
+	.string "とくぼう{EOS}"
 	.if (. - gText_Rom_5AB077) > 0x5
 	.error "gText_Rom_5AB077 may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_5AB077: @ 0x085AB077
 	@ asm/pokemon.s:10677 sub_0806C9E8 (+1 aliases)
 	.globl gText_Rom_5AB07C
 gText_Rom_5AB07C: @ 0x085AB07C
-	.string "めいちゅうりつ$"
+	.string "めいちゅうりつ{EOS}"
 	.if (. - gText_Rom_5AB07C) > 0x8
 	.error "gText_Rom_5AB07C may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_5AB07C: @ 0x085AB07C
 	@ asm/pokemon.s:10677 sub_0806C9E8 (+1 aliases)
 	.globl gText_Rom_5AB084
 gText_Rom_5AB084: @ 0x085AB084
-	.string "かいひりつ$"
+	.string "かいひりつ{EOS}"
 	.if (. - gText_Rom_5AB084) > 0x6
 	.error "gText_Rom_5AB084 may not grow beyond its original slot"
 	.endif

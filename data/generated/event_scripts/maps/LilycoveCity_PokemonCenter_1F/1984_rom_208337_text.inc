@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc:57 LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels
 	.globl gText_Rom_208337
 gText_Rom_208337: @ 0x08208337
-	.string "ひとの ポケモンを うばったり\nいんせきを よこどり していた\lろくでもない やつら……\pちかごろ すがたを みなくなったよ$"
+	.string "ひとの ポケモンを うばったり\nいんせきを よこどり していた\lろくでもない やつら……\pちかごろ すがたを みなくなったよ{EOS}"
 	.if (. - gText_Rom_208337) > 0x3f
 	.error "gText_Rom_208337 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_events.h:1 gEasyChatWord_Appeal (+3 aliases)
 	.globl gText_Rom_578420
 gText_Rom_578420: @ 0x08578420
-	.string "アピール$"
+	.string "アピール{EOS}"
 	.if (. - gText_Rom_578420) > 0x5
 	.error "gText_Rom_578420 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_578420: @ 0x08578420
 	@ src/data/easy_chat/easy_chat_group_events.h:2 gEasyChatWord_Events (+3 aliases)
 	.globl gText_Rom_578425
 gText_Rom_578425: @ 0x08578425
-	.string "イベント$"
+	.string "イベント{EOS}"
 	.if (. - gText_Rom_578425) > 0x5
 	.error "gText_Rom_578425 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_578425: @ 0x08578425
 	@ src/data/easy_chat/easy_chat_group_events.h:3 gEasyChatWord_StayAtHome (+1 aliases)
 	.globl gText_Rom_57842A
 gText_Rom_57842A: @ 0x0857842A
-	.string "おるすばん$"
+	.string "おるすばん{EOS}"
 	.if (. - gText_Rom_57842A) > 0x6
 	.error "gText_Rom_57842A may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_57842A: @ 0x0857842A
 	@ src/data/easy_chat/easy_chat_group_events.h:4 gEasyChatWord_Berry (+4 aliases)
 	.globl gText_Rom_578430
 gText_Rom_578430: @ 0x08578430
-	.string "きのみ$"
+	.string "きのみ{EOS}"
 	.if (. - gText_Rom_578430) > 0x4
 	.error "gText_Rom_578430 may not grow beyond its original slot"
 	.endif
@@ -46,7 +46,7 @@ gText_Rom_578430: @ 0x08578430
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_578434
 gText_Rom_578434: @ 0x08578434
-	.string "コンテスト$"
+	.string "コンテスト{EOS}"
 	.if (. - gText_Rom_578434) != 0x6
 	.error "gText_Rom_578434 must retain its original byte length"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_578434: @ 0x08578434
 	@ src/data/easy_chat/easy_chat_group_events.h:6 gEasyChatWord_Mc (+1 aliases)
 	.globl gText_Rom_57843A
 gText_Rom_57843A: @ 0x0857843A
-	.string "しかいしゃ$"
+	.string "しかいしゃ{EOS}"
 	.if (. - gText_Rom_57843A) > 0x6
 	.error "gText_Rom_57843A may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_57843A: @ 0x0857843A
 	@ src/data/easy_chat/easy_chat_group_events.h:7 gEasyChatWord_Judge (+1 aliases)
 	.globl gText_Rom_578440
 gText_Rom_578440: @ 0x08578440
-	.string "しんさいん$"
+	.string "しんさいん{EOS}"
 	.if (. - gText_Rom_578440) > 0x6
 	.error "gText_Rom_578440 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_578440: @ 0x08578440
 	@ src/data/easy_chat/easy_chat_group_events.h:8 gEasyChatWord_Super (+3 aliases)
 	.globl gText_Rom_578446
 gText_Rom_578446: @ 0x08578446
-	.string "スーパー$"
+	.string "スーパー{EOS}"
 	.if (. - gText_Rom_578446) > 0x5
 	.error "gText_Rom_578446 may not grow beyond its original slot"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_578446: @ 0x08578446
 	@ src/data/easy_chat/easy_chat_group_events.h:9 gEasyChatWord_Stage (+1 aliases)
 	.globl gText_Rom_57844B
 gText_Rom_57844B: @ 0x0857844B
-	.string "ステージ$"
+	.string "ステージ{EOS}"
 	.if (. - gText_Rom_57844B) > 0x5
 	.error "gText_Rom_57844B may not grow beyond its original slot"
 	.endif
@@ -100,7 +100,7 @@ gText_Rom_57844B: @ 0x0857844B
 	@ src/data/easy_chat/easy_chat_group_events.h:10 gEasyChatWord_HallOfFame (+2 aliases)
 	.globl gText_Rom_578450
 gText_Rom_578450: @ 0x08578450
-	.string "でんどういり$"
+	.string "でんどういり{EOS}"
 	.if (. - gText_Rom_578450) > 0x7
 	.error "gText_Rom_578450 may not grow beyond its original slot"
 	.endif
@@ -111,7 +111,7 @@ gText_Rom_578450: @ 0x08578450
 	@ src/data/easy_chat/easy_chat_group_events.h:11 gEasyChatWord_Evolution (+4 aliases)
 	.globl gText_Rom_578457
 gText_Rom_578457: @ 0x08578457
-	.string "ノーマル$"
+	.string "ノーマル{EOS}"
 	.if (. - gText_Rom_578457) > 0x5
 	.error "gText_Rom_578457 may not grow beyond its original slot"
 	.endif
@@ -122,7 +122,7 @@ gText_Rom_578457: @ 0x08578457
 	@ src/data/easy_chat/easy_chat_group_events.h:12 gEasyChatWord_Hyper (+3 aliases)
 	.globl gText_Rom_57845C
 gText_Rom_57845C: @ 0x0857845C
-	.string "ハイパー$"
+	.string "ハイパー{EOS}"
 	.if (. - gText_Rom_57845C) > 0x5
 	.error "gText_Rom_57845C may not grow beyond its original slot"
 	.endif
@@ -134,7 +134,7 @@ gText_Rom_57845C: @ 0x0857845C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_578461
 gText_Rom_578461: @ 0x08578461
-	.string "バトルタワー$"
+	.string "バトルタワー{EOS}"
 	.if (. - gText_Rom_578461) != 0x7
 	.error "gText_Rom_578461 must retain its original byte length"
 	.endif
@@ -145,7 +145,7 @@ gText_Rom_578461: @ 0x08578461
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_578468
 gText_Rom_578468: @ 0x08578468
-	.string "バトルリーダー$"
+	.string "バトルリーダー{EOS}"
 	.if (. - gText_Rom_578468) != 0x8
 	.error "gText_Rom_578468 must retain its original byte length"
 	.endif
@@ -156,7 +156,7 @@ gText_Rom_578468: @ 0x08578468
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_578470
 gText_Rom_578470: @ 0x08578470
-	.string "バトルルーム$"
+	.string "バトルルーム{EOS}"
 	.if (. - gText_Rom_578470) != 0x7
 	.error "gText_Rom_578470 must retain its original byte length"
 	.endif

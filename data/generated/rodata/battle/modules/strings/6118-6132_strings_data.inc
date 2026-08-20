@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CC45C
 gText_Rom_5CC45C: @ 0x085CC45C
-	.string "{STR_VAR_1} シングル$"
+	.string "{STR_VAR_1} シングル{EOS}"
 	.if (. - gText_Rom_5CC45C) != 0x8
 	.error "gText_Rom_5CC45C must retain its original byte length"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5CC45C: @ 0x085CC45C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CC464
 gText_Rom_5CC464: @ 0x085CC464
-	.string "{STR_VAR_1} ダブル$"
+	.string "{STR_VAR_1} ダブル{EOS}"
 	.if (. - gText_Rom_5CC464) != 0x7
 	.error "gText_Rom_5CC464 must retain its original byte length"
 	.endif
@@ -25,7 +25,7 @@ gText_Rom_5CC464: @ 0x085CC464
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CC46C
 gText_Rom_5CC46C: @ 0x085CC46C
-	.string "{STR_VAR_1} マルチ$"
+	.string "{STR_VAR_1} マルチ{EOS}"
 	.if (. - gText_Rom_5CC46C) != 0x7
 	.error "gText_Rom_5CC46C must retain its original byte length"
 	.endif
@@ -37,7 +37,7 @@ gText_Rom_5CC46C: @ 0x085CC46C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CC474
 gText_Rom_5CC474: @ 0x085CC474
-	.string "{STR_VAR_1} つうしん$"
+	.string "{STR_VAR_1} つうしん{EOS}"
 	.if (. - gText_Rom_5CC474) != 0x8
 	.error "gText_Rom_5CC474 must retain its original byte length"
 	.endif
@@ -49,7 +49,7 @@ gText_Rom_5CC474: @ 0x085CC474
 	@ src/strings.c:708 gText_Give
 	.globl gText_Rom_5CC47F
 gText_Rom_5CC47F: @ 0x085CC47F
-	.string "もたせるべき$"
+	.string "もたせるべき{EOS}"
 	.if (. - gText_Rom_5CC47F) > 0x7
 	.error "gText_Rom_5CC47F may not grow beyond its original slot"
 	.endif
@@ -60,7 +60,7 @@ gText_Rom_5CC47F: @ 0x085CC47F
 	@ src/strings.c:709 gText_NoNeed
 	.globl gText_Rom_5CC486
 gText_Rom_5CC486: @ 0x085CC486
-	.string "もたせない$"
+	.string "もたせない{EOS}"
 	.if (. - gText_Rom_5CC486) > 0x6
 	.error "gText_Rom_5CC486 may not grow beyond its original slot"
 	.endif

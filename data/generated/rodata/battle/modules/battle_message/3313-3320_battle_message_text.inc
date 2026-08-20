@@ -1,7 +1,7 @@
 	@ src/battle_message.c:405 battle_message_line_405
 	.globl gText_Rom_5AAB68
 gText_Rom_5AAB68: @ 0x085AAB68
-	.string "ひざしが よわくなった!$"
+	.string "ひざしが よわくなった!{EOS}"
 	.if (. - gText_Rom_5AAB68) > 0xd
 	.error "gText_Rom_5AAB68 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5AAB68: @ 0x085AAB68
 	@ src/battle_message.c:406 battle_message_line_406 (+1 aliases)
 	.globl gText_Rom_5AAB75
 gText_Rom_5AAB75: @ 0x085AAB75
-	.string "あられが ふりはじめた!$"
+	.string "あられが ふりはじめた!{EOS}"
 	.if (. - gText_Rom_5AAB75) > 0xd
 	.error "gText_Rom_5AAB75 may not grow beyond its original slot"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_5AAB75: @ 0x085AAB75
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5AAB82
 gText_Rom_5AAB82: @ 0x085AAB82
-	.string "あられが ふりつづいている$"
+	.string "あられが ふりつづいている{EOS}"
 	.if (. - gText_Rom_5AAB82) != 0xe
 	.error "gText_Rom_5AAB82 must retain its original byte length"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5AAB82: @ 0x085AAB82
 	@ src/battle_message.c:408 battle_message_line_408
 	.globl gText_Rom_5AAB90
 gText_Rom_5AAB90: @ 0x085AAB90
-	.string "あられが ふりやんだ!$"
+	.string "あられが ふりやんだ!{EOS}"
 	.if (. - gText_Rom_5AAB90) > 0xc
 	.error "gText_Rom_5AAB90 may not grow beyond its original slot"
 	.endif

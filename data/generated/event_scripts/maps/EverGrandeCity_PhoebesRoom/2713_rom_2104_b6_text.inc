@@ -1,7 +1,7 @@
 	@ data/maps/EverGrandeCity_PhoebesRoom/scripts.inc:67 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech
 	.globl gText_Rom_2104B6
 gText_Rom_2104B6: @ 0x082104B6
-	.string "あなたと ポケモンとの あいだにも\nたしかな きずなが あったのね\pそれが わからなかった\nアタシが まけたのは とうぜん\pウン あなたたちの きずなが\nどこまで つうじるか みてみたいな\lつぎの へやに すすみなよ$"
+	.string "あなたと ポケモンとの あいだにも\nたしかな きずなが あったのね\pそれが わからなかった\nアタシが まけたのは とうぜん\pウン あなたたちの きずなが\nどこまで つうじるか みてみたいな\lつぎの へやに すすみなよ{EOS}"
 	.if (. - gText_Rom_2104B6) > 0x6d
 	.error "gText_Rom_2104B6 may not grow beyond its original slot"
 	.endif

@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CACEC
 gText_Rom_5CACEC: @ 0x085CACEC
-	.string "だれかのパソコン$"
+	.string "だれかのパソコン{EOS}"
 	.if (. - gText_Rom_5CACEC) != 0x9
 	.error "gText_Rom_5CACEC must retain its original byte length"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5CACEC: @ 0x085CACEC
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CACF5
 gText_Rom_5CACF5: @ 0x085CACF5
-	.string "マユミのパソコン$"
+	.string "マユミのパソコン{EOS}"
 	.if (. - gText_Rom_5CACF5) != 0x9
 	.error "gText_Rom_5CACF5 must retain its original byte length"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_5CACF5: @ 0x085CACF5
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CACFE
 gText_Rom_5CACFE: @ 0x085CACFE
-	.string "{PLAYER}のパソコン$"
+	.string "{PLAYER}のパソコン{EOS}"
 	.if (. - gText_Rom_5CACFE) != 0x8
 	.error "gText_Rom_5CACFE must retain its original byte length"
 	.endif

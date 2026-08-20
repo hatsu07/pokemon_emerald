@@ -1,7 +1,7 @@
 	@ field-script:0x1EA66E FieldScriptText_1EADB1
 	.globl gText_Rom_1EADB1
 gText_Rom_1EADB1: @ 0x081EADB1
-	.string "あれから\nすなのとう　は　みえなく　なった\pやはり　げんえいのとう　だったのか……$"
+	.string "あれから\nすなのとう　は　みえなく　なった\pやはり　げんえいのとう　だったのか……{EOS}"
 	.if (. - gText_Rom_1EADB1) > 0x2a
 	.error "gText_Rom_1EADB1 may not grow beyond its original slot"
 	.endif

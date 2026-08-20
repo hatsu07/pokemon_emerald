@@ -1,7 +1,7 @@
 	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:129 Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle
 	.globl gText_Rom_23E2B7
 gText_Rom_23E2B7: @ 0x0823E2B7
-	.string "あなた つよいのね…\nジムリーダーに なれるんじゃない?$"
+	.string "あなた つよいのね…\nジムリーダーに なれるんじゃない?{EOS}"
 	.if (. - gText_Rom_23E2B7) > 0x1d
 	.error "gText_Rom_23E2B7 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:3101 Route129_Text_ClarenceDefeat (+1 aliases)
 	.globl gText_Rom_261673
 gText_Rom_261673: @ 0x08261673
-	.string "かつのって むずかしいなあ$"
+	.string "かつのって むずかしいなあ{EOS}"
 	.if (. - gText_Rom_261673) > 0xe
 	.error "gText_Rom_261673 may not grow beyond its original slot"
 	.endif

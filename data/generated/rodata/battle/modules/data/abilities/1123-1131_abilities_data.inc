@@ -1,7 +1,7 @@
 	@ src/data/abilities.h:143 abilities_line_143 (+1 aliases)
 	.globl gText_Rom_574B18
 gText_Rom_574B18: @ 0x08574B18
-	.string "もらいび$"
+	.string "もらいび{EOS}"
 	.if (. - gText_Rom_574B18) > 0x5
 	.error "gText_Rom_574B18 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_574B18: @ 0x08574B18
 	@ src/data/abilities.h:547 abilities_line_547 (+1 aliases)
 	.globl gText_Rom_574B1D
 gText_Rom_574B1D: @ 0x08574B1D
-	.string "やるき$"
+	.string "やるき{EOS}"
 	.if (. - gText_Rom_574B1D) > 0x4
 	.error "gText_Rom_574B1D may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_574B1D: @ 0x08574B1D
 	@ src/data/abilities.h:265 abilities_line_265 (+1 aliases)
 	.globl gText_Rom_574B21
 gText_Rom_574B21: @ 0x08574B21
-	.string "ようりょくそ$"
+	.string "ようりょくそ{EOS}"
 	.if (. - gText_Rom_574B21) > 0x7
 	.error "gText_Rom_574B21 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_574B21: @ 0x08574B21
 	@ src/data/abilities.h:563 abilities_line_563 (+1 aliases)
 	.globl gText_Rom_574B28
 gText_Rom_574B28: @ 0x08574B28
-	.string "ヨガパワー$"
+	.string "ヨガパワー{EOS}"
 	.if (. - gText_Rom_574B28) > 0x6
 	.error "gText_Rom_574B28 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_574B28: @ 0x08574B28
 	@ src/data/abilities.h:151 abilities_line_151 (+1 aliases)
 	.globl gText_Rom_574B2E
 gText_Rom_574B2E: @ 0x08574B2E
-	.string "りんぷん$"
+	.string "りんぷん{EOS}"
 	.if (. - gText_Rom_574B2E) > 0x5
 	.error "gText_Rom_574B2E may not grow beyond its original slot"
 	.endif

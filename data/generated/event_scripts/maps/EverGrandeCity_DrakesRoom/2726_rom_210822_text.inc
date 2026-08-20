@@ -1,7 +1,7 @@
 	@ data/maps/EverGrandeCity_DrakesRoom/scripts.inc:70 EverGrandeCity_DrakesRoom_Text_PostBattleSpeech
 	.globl gText_Rom_210822
 gText_Rom_210822: @ 0x08210822
-	.string "さすがは ここまで\nやってきた ポケモン トレーナー\lひつような もの わかっている ようだな\pそう! トレーナーに\nひつよう なのは ただしい こころ!\pポケモンは トレーナーの\nただしい こころに ふれて\lものごとの ぜんあくを はんだんし\lただしい こころに ふれて つよくなる!\pさあ つぎに すすめ!\nチャンピオンが まって おるぞ!!$"
+	.string "さすがは ここまで\nやってきた ポケモン トレーナー\lひつような もの わかっている ようだな\pそう! トレーナーに\nひつよう なのは ただしい こころ!\pポケモンは トレーナーの\nただしい こころに ふれて\lものごとの ぜんあくを はんだんし\lただしい こころに ふれて つよくなる!\pさあ つぎに すすめ!\nチャンピオンが まって おるぞ!!{EOS}"
 	.if (. - gText_Rom_210822) > 0xae
 	.error "gText_Rom_210822 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/MtPyre_4F/scripts.inc:19 MtPyre_5F_Text_AtsushiPostBattle
 	.globl gText_Rom_2168CE
 gText_Rom_2168CE: @ 0x082168CE
-	.string "もっと つよくならないと\nここに ねむる おししょうさまも\lあんしん できないよな……$"
+	.string "もっと つよくならないと\nここに ねむる おししょうさまも\lあんしん できないよな……{EOS}"
 	.if (. - gText_Rom_2168CE) > 0x2c
 	.error "gText_Rom_2168CE may not grow beyond its original slot"
 	.endif

@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: internal label.
 	.globl gText_Rom_5CCA79
 gText_Rom_5CCA79: @ 0x085CCA79
-	.string "   おすはやさ ランキング!$"
+	.string "   おすはやさ ランキング!{EOS}"
 	.if (. - gText_Rom_5CCA79) != 0x10
 	.error "gText_Rom_5CCA79 must retain its original byte length"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5CCA79: @ 0x085CCA79
 	@ Preserve exact byte length: internal label.
 	.globl gText_Rom_5CCA89
 gText_Rom_5CCA89: @ 0x085CCA89
-	.string "   {STR_VAR_1}にんよう$"
+	.string "   {STR_VAR_1}にんよう{EOS}"
 	.if (. - gText_Rom_5CCA89) != 0xa
 	.error "gText_Rom_5CCA89 must retain its original byte length"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_5CCA89: @ 0x085CCA89
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CCA93
 gText_Rom_5CCA93: @ 0x085CCA93
-	.string "てにいれた シンボル$"
+	.string "てにいれた シンボル{EOS}"
 	.if (. - gText_Rom_5CCA93) != 0xb
 	.error "gText_Rom_5CCA93 must retain its original byte length"
 	.endif
@@ -35,7 +35,7 @@ gText_Rom_5CCA93: @ 0x085CCA93
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CCA9E
 gText_Rom_5CCA9E: @ 0x085CCA9E
-	.string "たいせんの きろく$"
+	.string "たいせんの きろく{EOS}"
 	.if (. - gText_Rom_5CCA9E) != 0xa
 	.error "gText_Rom_5CCA9E must retain its original byte length"
 	.endif

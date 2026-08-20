@@ -1,7 +1,7 @@
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	.globl gText_Rom_24ACF4
 gText_Rom_24ACF4: @ 0x0824ACF4
-	.string "すごいアピールに　なるが　このあと\nさいごまで　なにも　できなくなる$"
+	.string "すごいアピールに　なるが　このあと\nさいごまで　なにも　できなくなる{EOS}"
 	.if (. - gText_Rom_24ACF4) > 0x23
 	.error "gText_Rom_24ACF4 may not grow beyond its original slot"
 	.endif

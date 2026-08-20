@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc:344 BattlePyramid_Text_EightItemsRemaining6
 	.globl gText_Rom_22E103
 gText_Rom_22E103: @ 0x0822E103
-	.string "どうぐは もっているかい?\pこの だんには\nどうぐが あと 8つは あるそうだよ$"
+	.string "どうぐは もっているかい?\pこの だんには\nどうぐが あと 8つは あるそうだよ{EOS}"
 	.if (. - gText_Rom_22E103) > 0x29
 	.error "gText_Rom_22E103 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:583 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsSinglesLv50
 	.globl gText_Rom_227AB0
 gText_Rom_227AB0: @ 0x08227AB0
-	.string "ぜんかい おこなわれた レベル50\nシングル バトルトーナメントの けっかだ!$"
+	.string "ぜんかい おこなわれた レベル50\nシングル バトルトーナメントの けっかだ!{EOS}"
 	.if (. - gText_Rom_227AB0) > 0x28
 	.error "gText_Rom_227AB0 may not grow beyond its original slot"
 	.endif

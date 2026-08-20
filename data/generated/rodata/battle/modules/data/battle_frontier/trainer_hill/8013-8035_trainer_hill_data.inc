@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: internal terminator.
 	.globl gText_Rom_5FAFA0
 gText_Rom_5FAFA0: @ 0x085FAFA0
-	.string "ジグザグマ$$$$$$"
+	.string "ジグザグマ{EOS}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}"
 	.if (. - gText_Rom_5FAFA0) != 0xb
 	.error "gText_Rom_5FAFA0 must retain its original byte length"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5FAFA0: @ 0x085FAFA0
 	.byte 0x00
 	.globl gText_Rom_5FAFCC
 gText_Rom_5FAFCC: @ 0x085FAFCC
-	.string "キノココ$$$$$$$"
+	.string "キノココ{EOS}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}"
 	.if (. - gText_Rom_5FAFCC) != 0xb
 	.error "gText_Rom_5FAFCC must retain its original byte length"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_5FAFCC: @ 0x085FAFCC
 	.byte 0x00
 	.globl gText_Rom_5FAFF8
 gText_Rom_5FAFF8: @ 0x085FAFF8
-	.string "サンド$$$$$$$$"
+	.string "サンド{EOS}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}"
 	.if (. - gText_Rom_5FAFF8) != 0xb
 	.error "gText_Rom_5FAFF8 must retain its original byte length"
 	.endif
@@ -55,7 +55,7 @@ gText_Rom_5FAFF8: @ 0x085FAFF8
 	.byte 0x0A, 0x00, 0x00, 0x00, 0x00
 	.globl gText_Rom_5FB168
 gText_Rom_5FB168: @ 0x085FB168
-	.string "キャモメ$$$$$$$"
+	.string "キャモメ{EOS}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}"
 	.if (. - gText_Rom_5FB168) != 0xb
 	.error "gText_Rom_5FB168 must retain its original byte length"
 	.endif
@@ -66,7 +66,7 @@ gText_Rom_5FB168: @ 0x085FB168
 	.byte 0x00
 	.globl gText_Rom_5FB194
 gText_Rom_5FB194: @ 0x085FB194
-	.string "ドンメル$$$$$$$"
+	.string "ドンメル{EOS}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}"
 	.if (. - gText_Rom_5FB194) != 0xb
 	.error "gText_Rom_5FB194 must retain its original byte length"
 	.endif
@@ -77,7 +77,7 @@ gText_Rom_5FB194: @ 0x085FB194
 	.byte 0x00
 	.globl gText_Rom_5FB1C0
 gText_Rom_5FB1C0: @ 0x085FB1C0
-	.string "アメタマ$$$$$$$"
+	.string "アメタマ{EOS}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}"
 	.if (. - gText_Rom_5FB1C0) != 0xb
 	.error "gText_Rom_5FB1C0 must retain its original byte length"
 	.endif
@@ -110,7 +110,7 @@ gText_Rom_5FB1C0: @ 0x085FB1C0
 	.byte 0x8A, 0x00, 0x00, 0x00, 0x00
 	.globl gText_Rom_5FB350
 gText_Rom_5FB350: @ 0x085FB350
-	.string "ラクライ$$$$$$$"
+	.string "ラクライ{EOS}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}"
 	.if (. - gText_Rom_5FB350) != 0xb
 	.error "gText_Rom_5FB350 must retain its original byte length"
 	.endif
@@ -121,7 +121,7 @@ gText_Rom_5FB350: @ 0x085FB350
 	.byte 0x00
 	.globl gText_Rom_5FB37C
 gText_Rom_5FB37C: @ 0x085FB37C
-	.string "ヘイガニ$$$$$$$"
+	.string "ヘイガニ{EOS}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}"
 	.if (. - gText_Rom_5FB37C) != 0xb
 	.error "gText_Rom_5FB37C must retain its original byte length"
 	.endif
@@ -132,7 +132,7 @@ gText_Rom_5FB37C: @ 0x085FB37C
 	.byte 0x00
 	.globl gText_Rom_5FB3A8
 gText_Rom_5FB3A8: @ 0x085FB3A8
-	.string "ヤジロン$$$$$$$"
+	.string "ヤジロン{EOS}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}"
 	.if (. - gText_Rom_5FB3A8) != 0xb
 	.error "gText_Rom_5FB3A8 must retain its original byte length"
 	.endif
@@ -163,7 +163,7 @@ gText_Rom_5FB3A8: @ 0x085FB3A8
 	.byte 0x0A, 0x80, 0x00, 0x00, 0x00
 	.globl gText_Rom_5FB518
 gText_Rom_5FB518: @ 0x085FB518
-	.string "タマザラシ$$$$$$"
+	.string "タマザラシ{EOS}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}"
 	.if (. - gText_Rom_5FB518) != 0xb
 	.error "gText_Rom_5FB518 must retain its original byte length"
 	.endif
@@ -174,7 +174,7 @@ gText_Rom_5FB518: @ 0x085FB518
 	.byte 0x00
 	.globl gText_Rom_5FB544
 gText_Rom_5FB544: @ 0x085FB544
-	.string "バネブー$$$$$$$"
+	.string "バネブー{EOS}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}"
 	.if (. - gText_Rom_5FB544) != 0xb
 	.error "gText_Rom_5FB544 must retain its original byte length"
 	.endif
@@ -185,7 +185,7 @@ gText_Rom_5FB544: @ 0x085FB544
 	.byte 0x00
 	.globl gText_Rom_5FB570
 gText_Rom_5FB570: @ 0x085FB570
-	.string "ポチエナ$$$$$$$"
+	.string "ポチエナ{EOS}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}{0xFF}"
 	.if (. - gText_Rom_5FB570) != 0xb
 	.error "gText_Rom_5FB570 must retain its original byte length"
 	.endif

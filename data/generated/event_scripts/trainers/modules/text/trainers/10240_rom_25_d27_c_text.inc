@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1472 Route115_Text_NobRegister
 	.globl gText_Rom_25D27C
 gText_Rom_25D27C: @ 0x0825D27C
-	.string "きみは すげえな!\nきたえなおして もういちど しょうぶだ!$"
+	.string "きみは すげえな!\nきたえなおして もういちど しょうぶだ!{EOS}"
 	.if (. - gText_Rom_25D27C) > 0x1f
 	.error "gText_Rom_25D27C may not grow beyond its original slot"
 	.endif

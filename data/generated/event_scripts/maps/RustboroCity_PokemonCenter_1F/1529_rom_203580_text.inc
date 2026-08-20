@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_PokemonCenter_1F/scripts.inc:37 RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor
 	.globl gText_Rom_203580
 gText_Rom_203580: @ 0x08203580
-	.string "となりの いえの おじさんが くれた\nひでんマシンで あたしの ポケモン\lほそい きを きることが できるんだ!$"
+	.string "となりの いえの おじさんが くれた\nひでんマシンで あたしの ポケモン\lほそい きを きることが できるんだ!{EOS}"
 	.if (. - gText_Rom_203580) > 0x39
 	.error "gText_Rom_203580 may not grow beyond its original slot"
 	.endif

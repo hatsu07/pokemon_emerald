@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_Gym/scripts.inc:171 RustboroCity_Gym_Text_MarcPostBattle
 	.globl gText_Rom_2026F4
 gText_Rom_2026F4: @ 0x082026F4
-	.string "わかくして いわタイプに\nめを つける なんて\lうちの ジムリーダーは センスが いいぜ!$"
+	.string "わかくして いわタイプに\nめを つける なんて\lうちの ジムリーダーは センスが いいぜ!{EOS}"
 	.if (. - gText_Rom_2026F4) > 0x2e
 	.error "gText_Rom_2026F4 may not grow beyond its original slot"
 	.endif

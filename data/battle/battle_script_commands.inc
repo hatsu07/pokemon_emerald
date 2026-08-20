@@ -617,5 +617,5 @@ sBattlePalaceNatureToFlavorTextId:
 	.byte 3 @ NATURE_QUIRKY: B_MSG_EAGER_FOR_MORE
 
 sText_TurnJpn: @ 0x082ECE95
-	.string "ターン$"
+	.string "ターン{EOS}"
 	.byte 0, 0, 0 @ alignment

@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:571 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain
 	.globl gText_Rom_22BCA6
 gText_Rom_22BCA6: @ 0x0822BCA6
-	.string "ウコン『ぐわはっはっ!\pこれからも ときどき あそびに こいよ!\nわしも きょうだいも まっとる からな!!$"
+	.string "ウコン『ぐわはっはっ!\pこれからも ときどき あそびに こいよ!\nわしも きょうだいも まっとる からな!!{EOS}"
 	.if (. - gText_Rom_22BCA6) > 0x37
 	.error "gText_Rom_22BCA6 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/strings.c:606 gText_FansQuestion
 	.globl gText_Rom_5CBC04
 gText_Rom_5CBC04: @ 0x085CBC04
-	.string "ファンのしつもん$"
+	.string "ファンのしつもん{EOS}"
 	.if (. - gText_Rom_5CBC04) > 0x9
 	.error "gText_Rom_5CBC04 may not grow beyond its original slot"
 	.endif

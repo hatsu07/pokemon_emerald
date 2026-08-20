@@ -1,7 +1,7 @@
 	@ src/strings.c:950 gText_SafariBallStock
 	.globl gText_Rom_4E8B84
 gText_Rom_4E8B84: @ 0x084E8B84
-	.string "サファリボール\nのこり {STR_VAR_1}コ$"
+	.string "サファリボール\nのこり {STR_VAR_1}コ{EOS}"
 	.if (. - gText_Rom_4E8B84) > 0x10
 	.error "gText_Rom_4E8B84 may not grow beyond its original slot"
 	.endif
@@ -19,7 +19,7 @@ gStartMenuData_084E8B94: @ 0x084E8B94
 	@ src/strings.c:952 gText_BattlePyramidFloor
 	.globl gText_Rom_4E8B9C
 gText_Rom_4E8B9C: @ 0x084E8B9C
-	.string "バトルピラミッド\n{STR_VAR_1}$"
+	.string "バトルピラミッド\n{STR_VAR_1}{EOS}"
 	.if (. - gText_Rom_4E8B9C) > 0xc
 	.error "gText_Rom_4E8B9C may not grow beyond its original slot"
 	.endif

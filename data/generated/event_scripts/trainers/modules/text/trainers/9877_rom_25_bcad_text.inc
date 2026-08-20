@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:947 Route111_Text_DustyRegister
 	.globl gText_Rom_25BCAD
 gText_Rom_25BCAD: @ 0x0825BCAD
-	.string "つよい ポケモンは さがしてないけど\nなぜだか ポケナビは おきにいり なんだ!$"
+	.string "つよい ポケモンは さがしてないけど\nなぜだか ポケナビは おきにいり なんだ!{EOS}"
 	.if (. - gText_Rom_25BCAD) > 0x29
 	.error "gText_Rom_25BCAD may not grow beyond its original slot"
 	.endif

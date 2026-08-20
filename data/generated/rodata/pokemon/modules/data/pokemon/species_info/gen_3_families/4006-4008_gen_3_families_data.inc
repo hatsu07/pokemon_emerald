@@ -1,7 +1,7 @@
 	@ src/data/pokemon/species_info/gen_3_families.h:12768 gen_3_families_line_12768 (+2 aliases)
 	.globl gText_Rom_5C8C4E
 gText_Rom_5C8C4E: @ 0x085C8C4E
-	.string "カイオーガ$"
+	.string "カイオーガ{EOS}"
 	.if (. - gText_Rom_5C8C4E) > 0x6
 	.error "gText_Rom_5C8C4E may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5C8C4E: @ 0x085C8C4E
 	@ src/data/pokemon/species_info/gen_3_families.h:12923 gen_3_families_line_12923 (+2 aliases)
 	.globl gText_Rom_5C8C54
 gText_Rom_5C8C54: @ 0x085C8C54
-	.string "グラードン$"
+	.string "グラードン{EOS}"
 	.if (. - gText_Rom_5C8C54) > 0x6
 	.error "gText_Rom_5C8C54 may not grow beyond its original slot"
 	.endif

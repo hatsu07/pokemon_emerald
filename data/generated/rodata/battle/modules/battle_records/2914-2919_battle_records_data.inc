@@ -1,7 +1,7 @@
 	@ asm/battle_records.s:701 ShowLinkBattleRecords
 	.globl gText_Rom_593801
 gText_Rom_593801: @ 0x08593801
-	.string "かち　　　　まけ　　　ひきわけ$"
+	.string "かち　　　　まけ　　　ひきわけ{EOS}"
 	.if (. - gText_Rom_593801) > 0x10
 	.error "gText_Rom_593801 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_593801: @ 0x08593801
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_593811
 gText_Rom_593811: @ 0x08593811
-	.string "ーーーーー$"
+	.string "ーーーーー{EOS}"
 	.if (. - gText_Rom_593811) != 0x6
 	.error "gText_Rom_593811 must retain its original byte length"
 	.endif
@@ -26,7 +26,7 @@ gText_Rom_593811: @ 0x08593811
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_593817
 gText_Rom_593817: @ 0x08593817
-	.string "----$"
+	.string "----{EOS}"
 	.if (. - gText_Rom_593817) != 0x5
 	.error "gText_Rom_593817 must retain its original byte length"
 	.endif

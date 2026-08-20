@@ -1,7 +1,7 @@
 	@ src/data/script_menu.h:9 gText_Info2 (+3 aliases)
 	.globl gText_Rom_5CAA9D
 gText_Rom_5CAA9D: @ 0x085CAA9D
-	.string "せつめい$"
+	.string "せつめい{EOS}"
 	.if (. - gText_Rom_5CAA9D) > 0x5
 	.error "gText_Rom_5CAA9D may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CAA9D: @ 0x085CAA9D
 	@ src/data/script_menu.h:65 script_menu_line_65
 	.globl gText_Rom_5CAAA2
 gText_Rom_5CAAA2: @ 0x085CAAA2
-	.string "マッハ$"
+	.string "マッハ{EOS}"
 	.if (. - gText_Rom_5CAAA2) > 0x4
 	.error "gText_Rom_5CAAA2 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CAAA2: @ 0x085CAAA2
 	@ src/data/script_menu.h:66 script_menu_line_66
 	.globl gText_Rom_5CAAA6
 gText_Rom_5CAAA6: @ 0x085CAAA6
-	.string "ダート$"
+	.string "ダート{EOS}"
 	.if (. - gText_Rom_5CAAA6) > 0x4
 	.error "gText_Rom_5CAAA6 may not grow beyond its original slot"
 	.endif
@@ -31,6 +31,6 @@ gText_Rom_5CAAA6: @ 0x085CAAA6
 	.space 0x4 - (. - gText_Rom_5CAAA6)
 	.endif
 	@ Decoded text from ROM range: offset=0x5CAAAA, size=0x6
-	.string "どく$"
-	.string "まひ$"
+	.string "どく{EOS}"
+	.string "まひ{EOS}"
 

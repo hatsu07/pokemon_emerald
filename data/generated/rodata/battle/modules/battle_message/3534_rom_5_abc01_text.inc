@@ -1,7 +1,7 @@
 	@ src/battle_message.c:1473 gText_BattleSwitchWhich4
 	.globl gText_Rom_5ABC01
 gText_Rom_5ABC01: @ 0x085ABC01
-	.string "{ESCAPE 4}$"
+	.string "{ESCAPE 4}{EOS}"
 	.if (. - gText_Rom_5ABC01) > 0x4
 	.error "gText_Rom_5ABC01 may not grow beyond its original slot"
 	.endif

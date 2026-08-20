@@ -1,7 +1,7 @@
 	@ field-script:0x242EF8 FieldScriptText_2439D6
 	.globl gText_Rom_2439D6
 gText_Rom_2439D6: @ 0x082439D6
-	.string "べんりなどうぐ　いろいろ　あります\n「フレンドリィショップ」$"
+	.string "べんりなどうぐ　いろいろ　あります\n「フレンドリィショップ」{EOS}"
 	.if (. - gText_Rom_2439D6) > 0x1f
 	.error "gText_Rom_2439D6 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1022 Route111_Text_BrookeRematchDefeat (+1 aliases)
 	.globl gText_Rom_25C04C
 gText_Rom_25C04C: @ 0x0825C04C
-	.string "いい わざを おぼえているのね!$"
+	.string "いい わざを おぼえているのね!{EOS}"
 	.if (. - gText_Rom_25C04C) > 0x11
 	.error "gText_Rom_25C04C may not grow beyond its original slot"
 	.endif

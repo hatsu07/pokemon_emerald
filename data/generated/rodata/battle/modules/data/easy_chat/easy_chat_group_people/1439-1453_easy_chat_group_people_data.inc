@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_people.h:406 easy_chat_group_people_line_406
 	.globl gText_Rom_575849
 gText_Rom_575849: @ 0x08575849
-	.string "わし$"
+	.string "わし{EOS}"
 	.if (. - gText_Rom_575849) > 0x3
 	.error "gText_Rom_575849 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_575849: @ 0x08575849
 	@ src/data/easy_chat/easy_chat_group_people.h:412 easy_chat_group_people_line_412
 	.globl gText_Rom_57584C
 gText_Rom_57584C: @ 0x0857584C
-	.string "わたくし$"
+	.string "わたくし{EOS}"
 	.if (. - gText_Rom_57584C) > 0x5
 	.error "gText_Rom_57584C may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_57584C: @ 0x0857584C
 	@ src/data/easy_chat/easy_chat_group_people.h:418 easy_chat_group_people_line_418
 	.globl gText_Rom_575851
 gText_Rom_575851: @ 0x08575851
-	.string "わたし$"
+	.string "わたし{EOS}"
 	.if (. - gText_Rom_575851) > 0x4
 	.error "gText_Rom_575851 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_575851: @ 0x08575851
 	@ src/data/easy_chat/easy_chat_group_people.h:424 easy_chat_group_people_line_424
 	.globl gText_Rom_575855
 gText_Rom_575855: @ 0x08575855
-	.string "わたしが$"
+	.string "わたしが{EOS}"
 	.if (. - gText_Rom_575855) > 0x5
 	.error "gText_Rom_575855 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_575855: @ 0x08575855
 	@ src/data/easy_chat/easy_chat_group_people.h:430 easy_chat_group_people_line_430
 	.globl gText_Rom_57585A
 gText_Rom_57585A: @ 0x0857585A
-	.string "わたしに$"
+	.string "わたしに{EOS}"
 	.if (. - gText_Rom_57585A) > 0x5
 	.error "gText_Rom_57585A may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_57585A: @ 0x0857585A
 	@ src/data/easy_chat/easy_chat_group_people.h:436 easy_chat_group_people_line_436
 	.globl gText_Rom_57585F
 gText_Rom_57585F: @ 0x0857585F
-	.string "わたしの$"
+	.string "わたしの{EOS}"
 	.if (. - gText_Rom_57585F) > 0x5
 	.error "gText_Rom_57585F may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_57585F: @ 0x0857585F
 	@ src/data/easy_chat/easy_chat_group_people.h:442 easy_chat_group_people_line_442
 	.globl gText_Rom_575864
 gText_Rom_575864: @ 0x08575864
-	.string "わたしは$"
+	.string "わたしは{EOS}"
 	.if (. - gText_Rom_575864) > 0x5
 	.error "gText_Rom_575864 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_575864: @ 0x08575864
 	@ src/data/easy_chat/easy_chat_group_people.h:448 easy_chat_group_people_line_448
 	.globl gText_Rom_575869
 gText_Rom_575869: @ 0x08575869
-	.string "わたしを$"
+	.string "わたしを{EOS}"
 	.if (. - gText_Rom_575869) > 0x5
 	.error "gText_Rom_575869 may not grow beyond its original slot"
 	.endif

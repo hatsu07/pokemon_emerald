@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity/scripts.inc:1078 RustboroCity_Text_PokemonChangeShape
 	.globl gText_Rom_1DF545
 gText_Rom_1DF545: @ 0x081DF545
-	.string "ポケモンの すがたが かわっちゃうの?\nいきなり かわると ビックリしちゃう!$"
+	.string "ポケモンの すがたが かわっちゃうの?\nいきなり かわると ビックリしちゃう!{EOS}"
 	.if (. - gText_Rom_1DF545) > 0x28
 	.error "gText_Rom_1DF545 may not grow beyond its original slot"
 	.endif

@@ -739,7 +739,7 @@ gResetRtcChooseTimeWindowTemplate: @ 0x084E8A64
 gText_Rom_4E8A6C: @ 0x084E8A6C
 gText_ResetRtcDaySuffix: @ 0x084E8A6C
 gResetRtcCursorStateInfoBase: @ 0x084E8A6C
-	.string "にち$"
+	.string "にち{EOS}"
 	.if (. - gText_Rom_4E8A6C) > 0x3
 	.error "gText_Rom_4E8A6C may not grow beyond its original slot"
 	.endif
@@ -750,12 +750,12 @@ gResetRtcCursorStateInfoBase: @ 0x084E8A6C
 	.globl gResetRtcScreenData_084E8A6F
 gResetRtcScreenData_084E8A6F: @ 0x084E8A6F
 gText_ResetRtcTimeColon: @ 0x084E8A6F
-	.string ":$"
+	.string ":{EOS}"
 
 	@ src/strings.c:134 gMenuText_Confirm (+2 aliases)
 	.globl gText_Rom_4E8A71
 gText_Rom_4E8A71: @ 0x084E8A71
-	.string "けってい$"
+	.string "けってい{EOS}"
 	.if (. - gText_Rom_4E8A71) > 0x5
 	.error "gText_Rom_4E8A71 may not grow beyond its original slot"
 	.endif

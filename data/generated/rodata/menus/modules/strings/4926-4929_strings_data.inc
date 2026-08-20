@@ -2,7 +2,7 @@
 	@ src/strings.c:416 gText_DelRegist
 	.globl gText_Rom_5CA69A
 gText_Rom_5CA69A: @ 0x085CA69A
-	.string "とうろく かいじょ$"
+	.string "とうろく かいじょ{EOS}"
 	.if (. - gText_Rom_5CA69A) > 0xa
 	.error "gText_Rom_5CA69A may not grow beyond its original slot"
 	.endif
@@ -14,7 +14,7 @@ gText_Rom_5CA69A: @ 0x085CA69A
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA6A4
 gText_Rom_5CA6A4: @ 0x085CA6A4
-	.string "{STR_VAR_3}{STR_VAR_1}/{STR_VAR_2}$"
+	.string "{STR_VAR_3}{STR_VAR_1}/{STR_VAR_2}{EOS}"
 	.if (. - gText_Rom_5CA6A4) != 0x8
 	.error "gText_Rom_5CA6A4 must retain its original byte length"
 	.endif

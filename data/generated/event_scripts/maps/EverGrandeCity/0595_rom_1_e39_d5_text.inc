@@ -1,7 +1,7 @@
 	@ data/maps/EverGrandeCity/scripts.inc:32 EverGrandeCity_Text_CitySign
 	.globl gText_Rom_1E39D5
 gText_Rom_1E39D5: @ 0x081E39D5
-	.string "ここは サイユウ シティ\nはなと うみと ポケモンの らくえん$"
+	.string "ここは サイユウ シティ\nはなと うみと ポケモンの らくえん{EOS}"
 	.if (. - gText_Rom_1E39D5) > 0x20
 	.error "gText_Rom_1E39D5 may not grow beyond its original slot"
 	.endif

@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5DC113
 gText_Rom_5DC113: @ 0x085DC113
-	.string "てばなすポケモン$"
+	.string "てばなすポケモン{EOS}"
 	.if (. - gText_Rom_5DC113) != 0x9
 	.error "gText_Rom_5DC113 must retain its original byte length"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5DC113: @ 0x085DC113
 	@ src/strings.c:1014 gText_Cancel3
 	.globl gText_Rom_5DC11C
 gText_Rom_5DC11C: @ 0x085DC11C
-	.string "ちゅうし$"
+	.string "ちゅうし{EOS}"
 	.if (. - gText_Rom_5DC11C) > 0x5
 	.error "gText_Rom_5DC11C may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5DC11C: @ 0x085DC11C
 	@ src/strings.c:1007 gText_Swap (+1 aliases)
 	.globl gText_Rom_5DC121
 gText_Rom_5DC121: @ 0x085DC121
-	.string "てばなす$"
+	.string "てばなす{EOS}"
 	.if (. - gText_Rom_5DC121) > 0x5
 	.error "gText_Rom_5DC121 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5DC121: @ 0x085DC121
 	@ src/strings.c:1016 gText_Accept (+1 aliases)
 	.globl gText_Rom_5DC126
 gText_Rom_5DC126: @ 0x085DC126
-	.string "うけとる$"
+	.string "うけとる{EOS}"
 	.if (. - gText_Rom_5DC126) > 0x5
 	.error "gText_Rom_5DC126 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5DC126: @ 0x085DC126
 	@ src/strings.c:1017 gText_AcceptThisPkmn
 	.globl gText_Rom_5DC12B
 gText_Rom_5DC12B: @ 0x085DC12B
-	.string "このポケモンを うけとりますか?$"
+	.string "このポケモンを うけとりますか?{EOS}"
 	.if (. - gText_Rom_5DC12B) > 0x11
 	.error "gText_Rom_5DC12B may not grow beyond its original slot"
 	.endif

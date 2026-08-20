@@ -1,7 +1,7 @@
 	@ asm/start_menu.s:361 ShowPyramidFloorWindow (+1 aliases)
 	.globl gText_Rom_4E8BA8
 gText_Rom_4E8BA8: @ 0x084E8BA8
-	.string "げんざい　1だんめ$"
+	.string "げんざい　1だんめ{EOS}"
 	.if (. - gText_Rom_4E8BA8) > 0xa
 	.error "gText_Rom_4E8BA8 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_4E8BA8: @ 0x084E8BA8
 	@ asm/start_menu.s:361 ShowPyramidFloorWindow (+1 aliases)
 	.globl gText_Rom_4E8BB2
 gText_Rom_4E8BB2: @ 0x084E8BB2
-	.string "げんざい　2だんめ$"
+	.string "げんざい　2だんめ{EOS}"
 	.if (. - gText_Rom_4E8BB2) > 0xa
 	.error "gText_Rom_4E8BB2 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_4E8BB2: @ 0x084E8BB2
 	@ asm/start_menu.s:361 ShowPyramidFloorWindow (+1 aliases)
 	.globl gText_Rom_4E8BBC
 gText_Rom_4E8BBC: @ 0x084E8BBC
-	.string "げんざい　3だんめ$"
+	.string "げんざい　3だんめ{EOS}"
 	.if (. - gText_Rom_4E8BBC) > 0xa
 	.error "gText_Rom_4E8BBC may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_4E8BBC: @ 0x084E8BBC
 	@ asm/start_menu.s:361 ShowPyramidFloorWindow (+1 aliases)
 	.globl gText_Rom_4E8BC6
 gText_Rom_4E8BC6: @ 0x084E8BC6
-	.string "げんざい　4だんめ$"
+	.string "げんざい　4だんめ{EOS}"
 	.if (. - gText_Rom_4E8BC6) > 0xa
 	.error "gText_Rom_4E8BC6 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_4E8BC6: @ 0x084E8BC6
 	@ asm/start_menu.s:361 ShowPyramidFloorWindow (+1 aliases)
 	.globl gText_Rom_4E8BD0
 gText_Rom_4E8BD0: @ 0x084E8BD0
-	.string "げんざい　5だんめ$"
+	.string "げんざい　5だんめ{EOS}"
 	.if (. - gText_Rom_4E8BD0) > 0xa
 	.error "gText_Rom_4E8BD0 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_4E8BD0: @ 0x084E8BD0
 	@ asm/start_menu.s:361 ShowPyramidFloorWindow (+1 aliases)
 	.globl gText_Rom_4E8BDA
 gText_Rom_4E8BDA: @ 0x084E8BDA
-	.string "げんざい　6だんめ$"
+	.string "げんざい　6だんめ{EOS}"
 	.if (. - gText_Rom_4E8BDA) > 0xa
 	.error "gText_Rom_4E8BDA may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_4E8BDA: @ 0x084E8BDA
 	@ asm/start_menu.s:361 ShowPyramidFloorWindow (+1 aliases)
 	.globl gText_Rom_4E8BE4
 gText_Rom_4E8BE4: @ 0x084E8BE4
-	.string "げんざい　7だんめ$"
+	.string "げんざい　7だんめ{EOS}"
 	.if (. - gText_Rom_4E8BE4) > 0xa
 	.error "gText_Rom_4E8BE4 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_4E8BE4: @ 0x084E8BE4
 	@ asm/start_menu.s:361 ShowPyramidFloorWindow (+1 aliases)
 	.globl gText_Rom_4E8BEE
 gText_Rom_4E8BEE: @ 0x084E8BEE
-	.string "げんざい　ちょうじょう$"
+	.string "げんざい　ちょうじょう{EOS}"
 	.if (. - gText_Rom_4E8BEE) > 0xc
 	.error "gText_Rom_4E8BEE may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/strings.c:1102 gText_PlayersBattleResults
 	.globl gText_Rom_5937E0
 gText_Rom_5937E0: @ 0x085937E0
-	.string "{PLAYER} の たいせん せいせき$"
+	.string "{PLAYER} の たいせん せいせき{EOS}"
 	.if (. - gText_Rom_5937E0) > 0xf
 	.error "gText_Rom_5937E0 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5937E0: @ 0x085937E0
 	@ src/strings.c:1103 gText_TotalRecordWLD
 	.globl gText_Rom_5937EF
 gText_Rom_5937EF: @ 0x085937EF
-	.string "{STR_VAR_1}しょう {STR_VAR_2}はい {STR_VAR_3}ひきわけ$"
+	.string "{STR_VAR_1}しょう {STR_VAR_2}はい {STR_VAR_3}ひきわけ{EOS}"
 	.if (. - gText_Rom_5937EF) > 0x12
 	.error "gText_Rom_5937EF may not grow beyond its original slot"
 	.endif

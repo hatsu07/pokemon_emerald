@@ -1,7 +1,7 @@
 	@ data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc:297 PlayersHouse_2F_Text_ItsAGameCube
 	.globl gText_Rom_1F0328
 gText_Rom_1F0328: @ 0x081F0328
-	.string "ゲームキューブが ある!\pコントローラの かわりに\nゲームボーイ アドバンスが つながってる!$"
+	.string "ゲームキューブが ある!\pコントローラの かわりに\nゲームボーイ アドバンスが つながってる!{EOS}"
 	.if (. - gText_Rom_1F0328) > 0x30
 	.error "gText_Rom_1F0328 may not grow beyond its original slot"
 	.endif

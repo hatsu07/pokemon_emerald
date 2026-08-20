@@ -1,7 +1,7 @@
 	@ src/strings.c:564 gText_IsAsShownOkay
 	.globl gText_Rom_5CB9B3
 gText_Rom_5CB9B3: @ 0x085CB9B3
-	.string "これで いいですか?$"
+	.string "これで いいですか?{EOS}"
 	.if (. - gText_Rom_5CB9B3) > 0xb
 	.error "gText_Rom_5CB9B3 may not grow beyond its original slot"
 	.endif

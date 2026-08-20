@@ -1,7 +1,7 @@
 	@ field-script:0x211E47 FieldScriptText_211EE0
 	.globl gText_Rom_211EE0
 gText_Rom_211EE0: @ 0x08211EE0
-	.string "そうかね……\nほんとうに　だいじょうぶ　かえ？\lえんりょ　しなくたって　いいんだよ$"
+	.string "そうかね……\nほんとうに　だいじょうぶ　かえ？\lえんりょ　しなくたって　いいんだよ{EOS}"
 	.if (. - gText_Rom_211EE0) > 0x2a
 	.error "gText_Rom_211EE0 may not grow beyond its original slot"
 	.endif

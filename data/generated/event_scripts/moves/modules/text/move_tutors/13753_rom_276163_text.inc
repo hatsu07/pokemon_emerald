@@ -1,7 +1,7 @@
 	@ data/text/move_tutors.inc:57 MoveTutor_Text_FuryCutterWhichMon
 	.globl gText_Rom_276163
 gText_Rom_276163: @ 0x08276163
-	.string "わーい!\nじゃ おぼえさせる ポケモンを おしえてね$"
+	.string "わーい!\nじゃ おぼえさせる ポケモンを おしえてね{EOS}"
 	.if (. - gText_Rom_276163) > 0x1b
 	.error "gText_Rom_276163 may not grow beyond its original slot"
 	.endif

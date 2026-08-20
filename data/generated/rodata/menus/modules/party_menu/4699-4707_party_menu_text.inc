@@ -1,7 +1,7 @@
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA036
 gText_Rom_5CA036: @ 0x085CA036
-	.string "ポケモンを　えらんで　ください$"
+	.string "ポケモンを　えらんで　ください{EOS}"
 	.if (. - gText_Rom_5CA036) > 0x10
 	.error "gText_Rom_5CA036 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CA036: @ 0x085CA036
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA046
 gText_Rom_5CA046: @ 0x085CA046
-	.string "どこに　いどうしますか？$"
+	.string "どこに　いどうしますか？{EOS}"
 	.if (. - gText_Rom_5CA046) > 0xd
 	.error "gText_Rom_5CA046 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CA046: @ 0x085CA046
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA053
 gText_Rom_5CA053: @ 0x085CA053
-	.string "どのポケモンに　おしえますか？$"
+	.string "どのポケモンに　おしえますか？{EOS}"
 	.if (. - gText_Rom_5CA053) > 0x10
 	.error "gText_Rom_5CA053 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5CA053: @ 0x085CA053
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA063
 gText_Rom_5CA063: @ 0x085CA063
-	.string "どのポケモンに　つかいますか？$"
+	.string "どのポケモンに　つかいますか？{EOS}"
 	.if (. - gText_Rom_5CA063) > 0x10
 	.error "gText_Rom_5CA063 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5CA063: @ 0x085CA063
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA073
 gText_Rom_5CA073: @ 0x085CA073
-	.string "どのポケモンに　もたせますか？$"
+	.string "どのポケモンに　もたせますか？{EOS}"
 	.if (. - gText_Rom_5CA073) > 0x10
 	.error "gText_Rom_5CA073 may not grow beyond its original slot"
 	.endif

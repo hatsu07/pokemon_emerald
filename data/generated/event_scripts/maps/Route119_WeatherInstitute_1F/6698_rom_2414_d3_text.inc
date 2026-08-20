@@ -1,7 +1,7 @@
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:130 Route119_WeatherInstitute_1F_Text_TakeRestInBed
 	.globl gText_Rom_2414D3
 gText_Rom_2414D3: @ 0x082414D3
-	.string "ベッドが ある……\nやすんでいこう$"
+	.string "ベッドが ある……\nやすんでいこう{EOS}"
 	.if (. - gText_Rom_2414D3) > 0x12
 	.error "gText_Rom_2414D3 may not grow beyond its original slot"
 	.endif

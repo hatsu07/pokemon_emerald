@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA925
 gText_Rom_5CA925: @ 0x085CA925
-	.string "これいじょう\nバッグに はいりません$"
+	.string "これいじょう\nバッグに はいりません{EOS}"
 	.if (. - gText_Rom_5CA925) != 0x13
 	.error "gText_Rom_5CA925 must retain its original byte length"
 	.endif
@@ -14,7 +14,7 @@ gText_Rom_5CA925: @ 0x085CA925
 	@ src/player_pc.c:176 sText_WithdrawHowManyItems
 	.globl gText_Rom_5CA938
 gText_Rom_5CA938: @ 0x085CA938
-	.string "{STR_VAR_1}を\nいくつ ひきだしますか?$"
+	.string "{STR_VAR_1}を\nいくつ ひきだしますか?{EOS}"
 	.if (. - gText_Rom_5CA938) > 0x11
 	.error "gText_Rom_5CA938 may not grow beyond its original slot"
 	.endif
@@ -25,7 +25,7 @@ gText_Rom_5CA938: @ 0x085CA938
 	@ src/player_pc.c:177 sText_WithdrawXItems
 	.globl gText_Rom_5CA949
 gText_Rom_5CA949: @ 0x085CA949
-	.string "{STR_VAR_1}を\n{STR_VAR_2}コ ひきだしました$"
+	.string "{STR_VAR_1}を\n{STR_VAR_2}コ ひきだしました{EOS}"
 	.if (. - gText_Rom_5CA949) > 0x10
 	.error "gText_Rom_5CA949 may not grow beyond its original slot"
 	.endif
@@ -36,7 +36,7 @@ gText_Rom_5CA949: @ 0x085CA949
 	@ src/player_pc.c:230 player_pc_line_230
 	.globl gText_Rom_5CA959
 gText_Rom_5CA959: @ 0x085CA959
-	.string "ないようを よむ$"
+	.string "ないようを よむ{EOS}"
 	.if (. - gText_Rom_5CA959) > 0x9
 	.error "gText_Rom_5CA959 may not grow beyond its original slot"
 	.endif
@@ -47,7 +47,7 @@ gText_Rom_5CA959: @ 0x085CA959
 	@ src/player_pc.c:231 player_pc_line_231
 	.globl gText_Rom_5CA962
 gText_Rom_5CA962: @ 0x085CA962
-	.string "バッグに もどす$"
+	.string "バッグに もどす{EOS}"
 	.if (. - gText_Rom_5CA962) > 0x9
 	.error "gText_Rom_5CA962 may not grow beyond its original slot"
 	.endif
@@ -59,7 +59,7 @@ gText_Rom_5CA962: @ 0x085CA962
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA96B
 gText_Rom_5CA96B: @ 0x085CA96B
-	.string "ポケモンに もたせる$"
+	.string "ポケモンに もたせる{EOS}"
 	.if (. - gText_Rom_5CA96B) != 0xb
 	.error "gText_Rom_5CA96B must retain its original byte length"
 	.endif

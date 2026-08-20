@@ -1,7 +1,7 @@
 	@ field-script:0x240AB8 FieldScriptText_240DF4
 	.globl gText_Rom_240DF4
 gText_Rom_240DF4: @ 0x08240DF4
-	.string "どれが　いいかね　ペコペコ$"
+	.string "どれが　いいかね　ペコペコ{EOS}"
 	.if (. - gText_Rom_240DF4) > 0xe
 	.error "gText_Rom_240DF4 may not grow beyond its original slot"
 	.endif

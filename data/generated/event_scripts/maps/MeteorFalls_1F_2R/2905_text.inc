@@ -1,7 +1,7 @@
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:128 MeteorFalls_1F_2R_Text_JayDefeat (+2 aliases)
 	.globl gText_Rom_2133EB
 gText_Rom_2133EB: @ 0x082133EB
-	.string "ハツ『おやおや\nまけましたよ じいさん$"
+	.string "ハツ『おやおや\nまけましたよ じいさん{EOS}"
 	.if (. - gText_Rom_2133EB) > 0x14
 	.error "gText_Rom_2133EB may not grow beyond its original slot"
 	.endif

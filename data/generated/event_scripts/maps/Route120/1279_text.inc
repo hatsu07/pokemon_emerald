@@ -1,7 +1,7 @@
 	@ data/maps/Route120/scripts.inc:393 Route120_Text_StevenGiveDevonScope
 	.globl gText_Rom_1EDF65
 gText_Rom_1EDF65: @ 0x081EDF65
-	.string "ダイゴ『なるほど\nきみの たたかいかた おもしろいね\pはじめて ムロで であった ときよりも\nポケモンも そだっているし……\pそうだね\nこの デボンスコープは きみに あげよう\pほかにも すがたを かくしている\nポケモンは いるかも しれないから$"
+	.string "ダイゴ『なるほど\nきみの たたかいかた おもしろいね\pはじめて ムロで であった ときよりも\nポケモンも そだっているし……\pそうだね\nこの デボンスコープは きみに あげよう\pほかにも すがたを かくしている\nポケモンは いるかも しれないから{EOS}"
 	.if (. - gText_Rom_1EDF65) > 0x7c
 	.error "gText_Rom_1EDF65 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/MtPyre_6F/scripts.inc:65 MtPyre_6F_Text_CedricPostBattle
 	.globl gText_Rom_216B14
 gText_Rom_216B14: @ 0x08216B14
-	.string "まいごの トレーナーは あわてて いるから\nかてる きが するんだよな\pずるいから もう やめとくよ……$"
+	.string "まいごの トレーナーは あわてて いるから\nかてる きが するんだよな\pずるいから もう やめとくよ……{EOS}"
 	.if (. - gText_Rom_216B14) > 0x35
 	.error "gText_Rom_216B14 may not grow beyond its original slot"
 	.endif

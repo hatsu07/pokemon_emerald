@@ -1,7 +1,7 @@
 	@ data/maps/Route105/scripts.inc:82 Route104_Text_RegisteredDadInPokenav
 	.globl gText_Rom_1E83B3
 gText_Rom_1E83B3: @ 0x081E83B3
-	.string "パパ　センリを\nポケナビに　とうろく　した!$"
+	.string "パパ　センリを\nポケナビに　とうろく　した!{EOS}"
 	.if (. - gText_Rom_1E83B3) > 0x17
 	.error "gText_Rom_1E83B3 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/strings.c:728 gText_QuitChatting
 	.globl gText_Rom_5CC62B
 gText_Rom_5CC62B: @ 0x085CC62B
-	.string "チャットを やめますか？$"
+	.string "チャットを やめますか？{EOS}"
 	.if (. - gText_Rom_5CC62B) > 0xd
 	.error "gText_Rom_5CC62B may not grow beyond its original slot"
 	.endif
@@ -9,12 +9,12 @@ gText_Rom_5CC62B: @ 0x085CC62B
 	.space 0xd - (. - gText_Rom_5CC62B)
 	.endif
 	@ Decoded text from ROM range: offset=0x5CC638, size=0xE
-	.string "どこに　とうろくしますか？$"
+	.string "どこに　とうろくしますか？{EOS}"
 
 	@ src/strings.c:730 gText_RegisterTextHere
 	.globl gText_Rom_5CC646
 gText_Rom_5CC646: @ 0x085CC646
-	.string "ここに とうろくしますか?$"
+	.string "ここに とうろくしますか?{EOS}"
 	.if (. - gText_Rom_5CC646) > 0xe
 	.error "gText_Rom_5CC646 may not grow beyond its original slot"
 	.endif
@@ -25,7 +25,7 @@ gText_Rom_5CC646: @ 0x085CC646
 	@ src/strings.c:731 gText_InputText
 	.globl gText_Rom_5CC654
 gText_Rom_5CC654: @ 0x085CC654
-	.string "ことばを いれて ください!$"
+	.string "ことばを いれて ください!{EOS}"
 	.if (. - gText_Rom_5CC654) > 0xf
 	.error "gText_Rom_5CC654 may not grow beyond its original slot"
 	.endif
@@ -35,12 +35,12 @@ gText_Rom_5CC654: @ 0x085CC654
 	.globl gText_Rom_5CC663
 gText_Rom_5CC663: @ 0x085CC663
 	@ Decoded text from ROM range: offset=0x5CC663, size=0xF
-	.string "{SE_M_HYPER_BEAM2}さんが　さんかしました！$"
+	.string "{SE_M_HYPER_BEAM2}さんが　さんかしました！{EOS}"
 
 	@ src/strings.c:733 gText_F700LeftChat
 	.globl gText_Rom_5CC672
 gText_Rom_5CC672: @ 0x085CC672
-	.string "{DYNAMIC 0}さんが ぬけました$"
+	.string "{DYNAMIC 0}さんが ぬけました{EOS}"
 	.if (. - gText_Rom_5CC672) > 0xc
 	.error "gText_Rom_5CC672 may not grow beyond its original slot"
 	.endif

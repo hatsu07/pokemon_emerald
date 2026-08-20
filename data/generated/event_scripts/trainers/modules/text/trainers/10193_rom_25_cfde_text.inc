@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1403 Route114_Text_IvyNotEnoughMons (+1 aliases)
 	.globl gText_Rom_25CFDE
 gText_Rom_25CFDE: @ 0x0825CFDE
-	.string "イヨ『ポケモン いっぴき だけなの?\nなんだか さみしい かんじ しちゃうね$"
+	.string "イヨ『ポケモン いっぴき だけなの?\nなんだか さみしい かんじ しちゃうね{EOS}"
 	.if (. - gText_Rom_25CFDE) > 0x27
 	.error "gText_Rom_25CFDE may not grow beyond its original slot"
 	.endif

@@ -12,15 +12,15 @@ gText_Rom_255F8A: @ 0x08255F8A
 	@ analyzed canonical ROM range 0x08255F90-0x08256053
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_08255F90: @ 0x08255F90
-	.string "だんさを　とびおりた$"
+	.string "だんさを　とびおりた{EOS}"
 EventText_JP_08255F9B: @ 0x08255F9B
-	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nだんさを　とびおりた　らしい!\p{STR_VAR_3}は　だんさを　みると\nとびおりずに　おれない　トレーナーだな!$"
+	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nだんさを　とびおりた　らしい!\p{STR_VAR_3}は　だんさを　みると\nとびおりずに　おれない　トレーナーだな!{EOS}"
 EventText_JP_08255FED: @ 0x08255FED
-	.string "でんせつの　テレビ　ウォッチャー$"
+	.string "でんせつの　テレビ　ウォッチャー{EOS}"
 EventText_JP_08255FFE: @ 0x08255FFE
-	.string "テレビを　みた$"
+	.string "テレビを　みた{EOS}"
 EventText_JP_08256006: @ 0x08256006
-	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nテレビを　みた　らしい!\p{STR_VAR_3}は\nテレビ　だいすき　トレーナーだな!$"
+	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nテレビを　みた　らしい!\p{STR_VAR_3}は\nテレビ　だいすき　トレーナーだな!{EOS}"
 	.byte 0x3D, 0x06, 0x2E, 0x2D, 0x00, 0x07, 0x16, 0x00, 0x0D, 0x29, 0x00
 	.globl gText_Rom_256054
 gText_Rom_256054: @ 0x08256054
@@ -35,9 +35,9 @@ gText_Rom_256054: @ 0x08256054
 	@ analyzed canonical ROM range 0x0825605A-0x082560BE
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_0825605A: @ 0x0825605A
-	.string "とけいを　みた$"
+	.string "とけいを　みた{EOS}"
 EventText_JP_08256062: @ 0x08256062
-	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nとけいを　みた　らしい!\p{STR_VAR_3}は　じかんを　きに　する\nきちょうめんな　トレーナーだな!$"
+	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nとけいを　みた　らしい!\p{STR_VAR_3}は　じかんを　きに　する\nきちょうめんな　トレーナーだな!{EOS}"
 	.byte 0x9F, 0x59, 0x73, 0x7E, 0x08, 0x3D, 0x16, 0x00, 0x01, 0x10, 0x28, 0x1F, 0x08, 0x50, 0x10, 0x00
 	.globl gText_Rom_2560BF
 gText_Rom_2560BF: @ 0x082560BF
@@ -52,9 +52,9 @@ gText_Rom_2560BF: @ 0x082560BF
 	@ analyzed canonical ROM range 0x082560C5-0x08256138
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_082560C5: @ 0x082560C5
-	.string "ポケモンくじで　あたった$"
+	.string "ポケモンくじで　あたった{EOS}"
 EventText_JP_082560D2: @ 0x082560D2
-	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nポケモンくじで　あたった　らしい!\p{STR_VAR_3}は　ポケモンを　こうかん　する\nともだちが　とても　おおい　トレーナーだ!$"
+	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nポケモンくじで　あたった　らしい!\p{STR_VAR_3}は　ポケモンを　こうかん　する\nともだちが　とても　おおい　トレーナーだ!{EOS}"
 	.byte 0x0F, 0x41, 0x13, 0x24, 0x2D, 0x00, 0x12, 0x06, 0x02, 0x0A, 0x15, 0x0D, 0x00
 	.globl gText_Rom_256139
 gText_Rom_256139: @ 0x08256139
@@ -69,9 +69,9 @@ gText_Rom_256139: @ 0x08256139
 	@ analyzed canonical ROM range 0x0825613F-0x082561AF
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_0825613F: @ 0x0825613F
-	.string "そだてやに　ポケモンを　あずけた$"
+	.string "そだてやに　ポケモンを　あずけた{EOS}"
 EventText_JP_08256150: @ 0x08256150
-	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nそだてやに　あずけた　らしい!\p{STR_VAR_3}は　とにかく　そだてまくる\nモーレツな　トレーナーに　ちがいない!$"
+	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nそだてやに　あずけた　らしい!\p{STR_VAR_3}は　とにかく　そだてまくる\nモーレツな　トレーナーに　ちがいない!{EOS}"
 	.byte 0x7B, 0xAE, 0x9D, 0x53, 0x82, 0x52, 0x00, 0x41, 0x02, 0x0D, 0x07, 0x00
 	.globl gText_Rom_2561B0
 gText_Rom_2561B0: @ 0x082561B0
@@ -86,9 +86,9 @@ gText_Rom_2561B0: @ 0x082561B0
 	@ analyzed canonical ROM range 0x082561B6-0x0825621D
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_082561B6: @ 0x082561B6
-	.string "ロープウェイに　のった$"
+	.string "ロープウェイに　のった{EOS}"
 EventText_JP_082561C2: @ 0x082561C2
-	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nロープウェイに　のった　らしい!\p{STR_VAR_3}は　うえに　したにと\nおおいそがしの　トレーナーだな!$"
+	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nロープウェイに　のった　らしい!\p{STR_VAR_3}は　うえに　したにと\nおおいそがしの　トレーナーだな!{EOS}"
 	.byte 0x05, 0x2E, 0x0E, 0x2E, 0x16, 0x00, 0x06, 0x26, 0x02, 0x43, 0x22, 0x19, 0x00
 	.globl gText_Rom_25621E
 gText_Rom_25621E: @ 0x0825621E
@@ -103,9 +103,9 @@ gText_Rom_25621E: @ 0x0825621E
 	@ analyzed canonical ROM range 0x08256224-0x08256361
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_08256224: @ 0x08256224
-	.string "おんせんに　はいった$"
+	.string "おんせんに　はいった{EOS}"
 EventText_JP_0825622F: @ 0x0825622F
-	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nおんせんに　はいった　らしい!\p{STR_VAR_3}は　きっと\nおはだが　ツルツルの　トレーナー　だろう!$"
+	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nおんせんに　はいった　らしい!\p{STR_VAR_3}は　きっと\nおはだが　ツルツルの　トレーナー　だろう!{EOS}"
 EventScript_JP_0825627D: @ 0x0825627D
 	lock
 	faceplayer

@@ -1,7 +1,7 @@
 	@ src/option_menu.c:75 gText_Option (+2 aliases)
 	.globl gText_Rom_4E8B72
 gText_Rom_4E8B72: @ 0x084E8B72
-	.string "せってい$"
+	.string "せってい{EOS}"
 	.if (. - gText_Rom_4E8B72) > 0x5
 	.error "gText_Rom_4E8B72 may not grow beyond its original slot"
 	.endif

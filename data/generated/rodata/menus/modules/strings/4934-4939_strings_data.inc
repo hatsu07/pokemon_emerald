@@ -1,7 +1,7 @@
 	@ src/strings.c:419 gText_PutAway
 	.globl gText_Rom_5CA6B4
 gText_Rom_5CA6B4: @ 0x085CA6B4
-	.string "グッズを もどす$"
+	.string "グッズを もどす{EOS}"
 	.if (. - gText_Rom_5CA6B4) > 0x9
 	.error "gText_Rom_5CA6B4 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5CA6B4: @ 0x085CA6B4
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA6BD
 gText_Rom_5CA6BD: @ 0x085CA6BD
-	.string "グッズを すてる$"
+	.string "グッズを すてる{EOS}"
 	.if (. - gText_Rom_5CA6BD) != 0x9
 	.error "gText_Rom_5CA6BD must retain its original byte length"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CA6BD: @ 0x085CA6BD
 	@ src/strings.c:421 gText_Color161Shadow161
 	.globl gText_Rom_5CA6C6
 gText_Rom_5CA6C6: @ 0x085CA6C6
-	.string "{COLOR 161}{SHADOW 161}$"
+	.string "{COLOR 161}{SHADOW 161}{EOS}"
 	.if (. - gText_Rom_5CA6C6) > 0x7
 	.error "gText_Rom_5CA6C6 may not grow beyond its original slot"
 	.endif

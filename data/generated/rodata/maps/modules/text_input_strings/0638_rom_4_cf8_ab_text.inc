@@ -1,7 +1,7 @@
 	@ src/text_input_strings.c:39 gText_UnionRoomChatKeyboard_z
 	.globl gText_Rom_4CF8AB
 gText_Rom_4CF8AB: @ 0x084CF8AB
-	.string "z    $"
+	.string "z    {EOS}"
 	.if (. - gText_Rom_4CF8AB) > 0x6
 	.error "gText_Rom_4CF8AB may not grow beyond its original slot"
 	.endif

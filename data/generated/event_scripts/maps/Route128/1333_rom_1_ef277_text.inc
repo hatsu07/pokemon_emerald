@@ -1,7 +1,7 @@
 	@ data/maps/Route128/scripts.inc:265 Route128_Text_StevenImGoingToSootopolis
 	.globl gText_Rom_1EF277
 gText_Rom_1EF277: @ 0x081EF277
-	.string "{PLAYER}{KUN}……\nきみが なにを する つもりか\lわからないけど ムリだけは するなよ\p……じゃあ\nボクは ルネに いくから$"
+	.string "{PLAYER}{KUN}……\nきみが なにを する つもりか\lわからないけど ムリだけは するなよ\p……じゃあ\nボクは ルネに いくから{EOS}"
 	.if (. - gText_Rom_1EF277) > 0x3d
 	.error "gText_Rom_1EF277 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/MossdeepCity_Mart/scripts.inc:45 MossdeepCity_Mart_Text_NetAndDiveBallsRare
 	.globl gText_Rom_20C681
 gText_Rom_20C681: @ 0x0820C681
-	.string "ネットボールと ダイブボールは\nここ トクサネでしか つくっていない\lめずらしい モンスターボール!\pネットボールは むしタイプや\nみずタイプの ポケモンに こうかてき!\pダイブボールは かいていに いる\nポケモンを つかまえ やすいんだ!$"
+	.string "ネットボールと ダイブボールは\nここ トクサネでしか つくっていない\lめずらしい モンスターボール!\pネットボールは むしタイプや\nみずタイプの ポケモンに こうかてき!\pダイブボールは かいていに いる\nポケモンを つかまえ やすいんだ!{EOS}"
 	.if (. - gText_Rom_20C681) > 0x79
 	.error "gText_Rom_20C681 may not grow beyond its original slot"
 	.endif

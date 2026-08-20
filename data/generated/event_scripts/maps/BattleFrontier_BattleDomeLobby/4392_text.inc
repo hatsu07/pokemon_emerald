@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:483 BattleFrontier_BattleDomeLobby_Text_SelectThreeMons
 	.globl gText_Rom_22767D
 gText_Rom_22767D: @ 0x0822767D
-	.string "それでは さんかする ポケモンを\n3ひき おえらび ください$"
+	.string "それでは さんかする ポケモンを\n3ひき おえらび ください{EOS}"
 	.if (. - gText_Rom_22767D) > 0x1f
 	.error "gText_Rom_22767D may not grow beyond its original slot"
 	.endif

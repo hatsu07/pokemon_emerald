@@ -1,7 +1,7 @@
 	@ field-script:0x26489B FieldScriptText_26509A
 	.globl gText_Rom_26509A
 gText_Rom_26509A: @ 0x0826509A
-	.string "だから　おねがい！\pあなたの　ポロック　ひとつで　いいから\nあたしたちに　ちょうだい！$"
+	.string "だから　おねがい！\pあなたの　ポロック　ひとつで　いいから\nあたしたちに　ちょうだい！{EOS}"
 	.if (. - gText_Rom_26509A) > 0x2c
 	.error "gText_Rom_26509A may not grow beyond its original slot"
 	.endif

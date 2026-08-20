@@ -1,7 +1,7 @@
 	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:384 MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle
 	.globl gText_Rom_20DCB7
 gText_Rom_20DCB7: @ 0x0820DCB7
-	.string "3にんも いて このザマか！$"
+	.string "3にんも いて このザマか！{EOS}"
 	.if (. - gText_Rom_20DCB7) > 0xf
 	.error "gText_Rom_20DCB7 may not grow beyond its original slot"
 	.endif

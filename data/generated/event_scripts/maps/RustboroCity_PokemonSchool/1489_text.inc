@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_PokemonSchool/scripts.inc:208 RustboroCity_PokemonSchool_Text_ExplainPoison
 	.globl gText_Rom_202E63
 gText_Rom_202E63: @ 0x08202E63
-	.string "どくを うけると\nたいりょくが へっていきます\pせんとうのあとも どくは のこるので\nあるくたびに たいりょくが へります\lどくけしで なおしましょう$"
+	.string "どくを うけると\nたいりょくが へっていきます\pせんとうのあとも どくは のこるので\nあるくたびに たいりょくが へります\lどくけしで なおしましょう{EOS}"
 	.if (. - gText_Rom_202E63) > 0x4c
 	.error "gText_Rom_202E63 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/map_name_popup.c:325 sText_Pyramid
 	.globl gText_Rom_567D88
 gText_Rom_567D88: @ 0x08567D88
-	.string "PYRAMID$"
+	.string "PYRAMID{EOS}"
 	.if (. - gText_Rom_567D88) > 0x8
 	.error "gText_Rom_567D88 may not grow beyond its original slot"
 	.endif

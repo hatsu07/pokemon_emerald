@@ -1,7 +1,7 @@
 	@ data/maps/AquaHideout_B2F/scripts.inc:104 AquaHideout_B2F_Text_Grunt4Defeat (+1 aliases)
 	.globl gText_Rom_218205
 gText_Rom_218205: @ 0x08218205
-	.string "まちくたびれて\nまけて やぶれて……$"
+	.string "まちくたびれて\nまけて やぶれて……{EOS}"
 	.if (. - gText_Rom_218205) > 0x13
 	.error "gText_Rom_218205 may not grow beyond its original slot"
 	.endif

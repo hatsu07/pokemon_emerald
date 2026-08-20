@@ -1,7 +1,7 @@
 	@ asm/pokemon_jump.s:7967 sub_0802E17C (+1 aliases)
 	.globl gText_Rom_5CCE0F
 gText_Rom_5CCE0F: @ 0x085CCE0F
-	.string "さいこう　ジャンプかいすう$"
+	.string "さいこう　ジャンプかいすう{EOS}"
 	.if (. - gText_Rom_5CCE0F) > 0xe
 	.error "gText_Rom_5CCE0F may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CCE0F: @ 0x085CCE0F
 	@ asm/pokemon_jump.s:7967 sub_0802E17C (+2 aliases)
 	.globl gText_Rom_5CCE1D
 gText_Rom_5CCE1D: @ 0x085CCE1D
-	.string "さいこう　とくてん$"
+	.string "さいこう　とくてん{EOS}"
 	.if (. - gText_Rom_5CCE1D) > 0xa
 	.error "gText_Rom_5CCE1D may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CCE1D: @ 0x085CCE1D
 	@ asm/pokemon_jump.s:7967 sub_0802E17C (+1 aliases)
 	.globl gText_Rom_5CCE27
 gText_Rom_5CCE27: @ 0x085CCE27
-	.string "れんぞく　EXCELLENT$"
+	.string "れんぞく　EXCELLENT{EOS}"
 	.if (. - gText_Rom_5CCE27) > 0xf
 	.error "gText_Rom_5CCE27 may not grow beyond its original slot"
 	.endif

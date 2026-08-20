@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:556 BattleFrontier_BattleTowerBattleRoom_Text_WishICouldBattleYouAgain
 	.globl gText_Rom_222729
 gText_Rom_222729: @ 0x08222729
-	.string "たのしかった……\pこんなに ポケモンバトルが\nたのしい なんて はじめて……\pまた あなたと たたかえると いいな……$"
+	.string "たのしかった……\pこんなに ポケモンバトルが\nたのしい なんて はじめて……\pまた あなたと たたかえると いいな……{EOS}"
 	.if (. - gText_Rom_222729) > 0x3c
 	.error "gText_Rom_222729 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2822 Route126_Text_DeanPostBattle
 	.globl gText_Rom_260BD4
 gText_Rom_260BD4: @ 0x08260BD4
-	.string "ルネシティの いりぐちが みつからん!\nどこに あるんだ?$"
+	.string "ルネシティの いりぐちが みつからん!\nどこに あるんだ?{EOS}"
 	.if (. - gText_Rom_260BD4) > 0x1e
 	.error "gText_Rom_260BD4 may not grow beyond its original slot"
 	.endif

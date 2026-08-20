@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:164 LilycoveCity_DepartmentStore_1F_Text_SpreadWordAboutWirelessComm
 	.globl gText_Rom_20A8FE
 gText_Rom_20A8FE: @ 0x0820A8FE
-	.string "むせん つうしんの たのしさを\nたくさんの ひとに つたえたいなー$"
+	.string "むせん つうしんの たのしさを\nたくさんの ひとに つたえたいなー{EOS}"
 	.if (. - gText_Rom_20A8FE) > 0x22
 	.error "gText_Rom_20A8FE may not grow beyond its original slot"
 	.endif

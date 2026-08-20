@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:275 LilycoveCity_LilycoveMuseum_2F_Text_ThesePaintingsOfYourPokemon
 	.globl gText_Rom_206898
 gText_Rom_206898: @ 0x08206898
-	.string "へえー! これって\nきみの ポケモンの えなんだ!\pそれって トレーナー として\nさいこうの しあわせ だよな!$"
+	.string "へえー! これって\nきみの ポケモンの えなんだ!\pそれって トレーナー として\nさいこうの しあわせ だよな!{EOS}"
 	.if (. - gText_Rom_206898) > 0x39
 	.error "gText_Rom_206898 may not grow beyond its original slot"
 	.endif

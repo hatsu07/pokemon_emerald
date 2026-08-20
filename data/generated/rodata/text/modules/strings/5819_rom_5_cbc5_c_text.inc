@@ -1,7 +1,7 @@
 	@ src/strings.c:90 gText_DexSearchAlphaVWX
 	.globl gText_Rom_5CBC5C
 gText_Rom_5CBC5C: @ 0x085CBC5C
-	.string "らりるれろ$"
+	.string "らりるれろ{EOS}"
 	.if (. - gText_Rom_5CBC5C) > 0x6
 	.error "gText_Rom_5CBC5C may not grow beyond its original slot"
 	.endif

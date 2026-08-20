@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:368 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver (+1 aliases)
 	.globl gText_Rom_228736
 gText_Rom_228736: @ 0x08228736
-	.string "けっしょう しんしゅつ\nおめでとう ございます\pつぎは ドームスーパースター ヒースさまに\nいどむ けっしょうせん です!\pじゅんびの ほうは いかがですか?$"
+	.string "けっしょう しんしゅつ\nおめでとう ございます\pつぎは ドームスーパースター ヒースさまに\nいどむ けっしょうせん です!\pじゅんびの ほうは いかがですか?{EOS}"
 	.if (. - gText_Rom_228736) > 0x50
 	.error "gText_Rom_228736 may not grow beyond its original slot"
 	.endif

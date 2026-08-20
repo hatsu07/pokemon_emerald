@@ -1,7 +1,7 @@
 	@ src/strings.c:926 gText_NumPlayerLink
 	.globl gText_Rom_52B230
 gText_Rom_52B230: @ 0x0852B230
-	.string "{STR_VAR_1}にん せつぞく$"
+	.string "{STR_VAR_1}にん せつぞく{EOS}"
 	.if (. - gText_Rom_52B230) > 0xa
 	.error "gText_Rom_52B230 may not grow beyond its original slot"
 	.endif
@@ -25,7 +25,7 @@ gCableClubData_0852B23F: @ 0x0852B23F
 	.byte 0x0B, 0x02, 0x0F, 0x46, 0x01
 	.globl gText_Rom_52B244
 gText_Rom_52B244: @ 0x0852B244
-	.string "ブロンズ$"
+	.string "ブロンズ{EOS}"
 	.if (. - gText_Rom_52B244) > 0x5
 	.error "gText_Rom_52B244 may not grow beyond its original slot"
 	.endif
@@ -36,7 +36,7 @@ gText_Rom_52B244: @ 0x0852B244
 	@ src/strings.c:928 gText_CopperCard
 	.globl gText_Rom_52B249
 gText_Rom_52B249: @ 0x0852B249
-	.string "カッパー$"
+	.string "カッパー{EOS}"
 	.if (. - gText_Rom_52B249) > 0x5
 	.error "gText_Rom_52B249 may not grow beyond its original slot"
 	.endif
@@ -47,7 +47,7 @@ gText_Rom_52B249: @ 0x0852B249
 	@ src/strings.c:929 gText_SilverCard
 	.globl gText_Rom_52B24E
 gText_Rom_52B24E: @ 0x0852B24E
-	.string "シルバー$"
+	.string "シルバー{EOS}"
 	.if (. - gText_Rom_52B24E) > 0x5
 	.error "gText_Rom_52B24E may not grow beyond its original slot"
 	.endif
@@ -58,7 +58,7 @@ gText_Rom_52B24E: @ 0x0852B24E
 	@ src/strings.c:930 gText_GoldCard
 	.globl gText_Rom_52B253
 gText_Rom_52B253: @ 0x0852B253
-	.string "ゴールド$"
+	.string "ゴールド{EOS}"
 	.if (. - gText_Rom_52B253) > 0x5
 	.error "gText_Rom_52B253 may not grow beyond its original slot"
 	.endif

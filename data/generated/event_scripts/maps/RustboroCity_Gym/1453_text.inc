@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_Gym/scripts.inc:167 RustboroCity_Gym_Text_MarcDefeat (+1 aliases)
 	.globl gText_Rom_2026DB
 gText_Rom_2026DB: @ 0x082026DB
-	.string "おおーっ!\nいきの いい ちょうせんしゃ だな!$"
+	.string "おおーっ!\nいきの いい ちょうせんしゃ だな!{EOS}"
 	.if (. - gText_Rom_2026DB) > 0x19
 	.error "gText_Rom_2026DB may not grow beyond its original slot"
 	.endif

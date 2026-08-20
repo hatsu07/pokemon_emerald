@@ -1,7 +1,7 @@
 	@ data/maps/MtPyre_1F/scripts.inc:44 MtPyre_1F_Text_RestingPlaceOfZigzagoon
 	.globl gText_Rom_216207
 gText_Rom_216207: @ 0x08216207
-	.string "ここには ぼくが たいせつに していた\nジグザグマが やすらかに ねむってる……$"
+	.string "ここには ぼくが たいせつに していた\nジグザグマが やすらかに ねむってる……{EOS}"
 	.if (. - gText_Rom_216207) > 0x29
 	.error "gText_Rom_216207 may not grow beyond its original slot"
 	.endif

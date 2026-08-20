@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_Flat1_2F/scripts.inc:117 RustboroCity_Flat1_2F_Text_ItsAPokemonPlushDoll
 	.globl gText_Rom_203BB9
 gText_Rom_203BB9: @ 0x08203BB9
-	.string "ポケモンの ぬいぐるみ だ!$"
+	.string "ポケモンの ぬいぐるみ だ!{EOS}"
 	.if (. - gText_Rom_203BB9) > 0xf
 	.error "gText_Rom_203BB9 may not grow beyond its original slot"
 	.endif

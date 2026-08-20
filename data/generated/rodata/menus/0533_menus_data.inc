@@ -142,16 +142,16 @@ sUnusedText_YesNo: @ 0x0830F674
 	.byte 0x1A, 0x02, 0x00, 0xFE @ はい　\n
 	.globl gBerryBlenderUnusedText_No
 gBerryBlenderUnusedText_No: @ 0x0830F678
-	.string "いいえ$"
+	.string "いいえ{EOS}"
 
 sUnusedText_2: @ 0x0830F67C
-	.string "▶$"
+	.string "▶{EOS}"
 
 sUnusedText_Space: @ 0x0830F67E
-	.string "　$"
+	.string "　{EOS}"
 
 sUnusedText_Terminating: @ 0x0830F680
-	.string "しゅうりょうまちです　　　$"
+	.string "しゅうりょうまちです　　　{EOS}"
 
 sUnusedText_LinkPartnerNotFound: @ 0x0830F68E
-	.string "あいてがみつからないようです\nもういちどやりなおしてください\p$"
+	.string "あいてがみつからないようです\nもういちどやりなおしてください\p{EOS}"

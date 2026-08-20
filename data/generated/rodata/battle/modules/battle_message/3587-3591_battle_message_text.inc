@@ -1,7 +1,7 @@
 	@ src/battle_message.c:1509 gText_WillChampionshipDreamComeTrue
 	.globl gText_Rom_5ABD5D
 gText_Rom_5ABD5D: @ 0x085ABD5D
-	.string "ひがんの はつ ゆうしょう なるか!?\p$"
+	.string "ひがんの はつ ゆうしょう なるか!?\p{EOS}"
 	.if (. - gText_Rom_5ABD5D) > 0x15
 	.error "gText_Rom_5ABD5D may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5ABD5D: @ 0x085ABD5D
 	@ src/battle_message.c:1510 gText_AFormerChampion
 	.globl gText_Rom_5ABD72
 gText_Rom_5ABD72: @ 0x085ABD72
-	.string "もと チャンピオン!\p$"
+	.string "もと チャンピオン!\p{EOS}"
 	.if (. - gText_Rom_5ABD72) > 0xc
 	.error "gText_Rom_5ABD72 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5ABD72: @ 0x085ABD72
 	@ src/battle_message.c:1511 gText_ThePreviousChampion
 	.globl gText_Rom_5ABD7E
 gText_Rom_5ABD7E: @ 0x085ABD7E
-	.string "ぜんかい チャンピオン!\p$"
+	.string "ぜんかい チャンピオン!\p{EOS}"
 	.if (. - gText_Rom_5ABD7E) > 0xe
 	.error "gText_Rom_5ABD7E may not grow beyond its original slot"
 	.endif

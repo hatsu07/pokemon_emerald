@@ -1,7 +1,7 @@
 	@ asm/contest_painting.s:426 PrintContestPaintingCaption (+3 aliases)
 	.globl gText_Rom_24C237
 gText_Rom_24C237: @ 0x0824C237
-	.string "かわいさ$"
+	.string "かわいさ{EOS}"
 	.if (. - gText_Rom_24C237) > 0x5
 	.error "gText_Rom_24C237 may not grow beyond its original slot"
 	.endif

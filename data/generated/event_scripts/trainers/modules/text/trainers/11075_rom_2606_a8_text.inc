@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2696 Route124_Text_DeclanPostBattle
 	.globl gText_Rom_2606A8
 gText_Rom_2606A8: @ 0x082606A8
-	.string "ビキニのおねえさんを さそって\nえんえいと しゃれこんで みようかな?$"
+	.string "ビキニのおねえさんを さそって\nえんえいと しゃれこんで みようかな?{EOS}"
 	.if (. - gText_Rom_2606A8) > 0x24
 	.error "gText_Rom_2606A8 may not grow beyond its original slot"
 	.endif

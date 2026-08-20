@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc:71 LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems
 	.globl gText_Rom_20A9EB
 gText_Rom_20A9EB: @ 0x0820A9EB
-	.string "これから とおい ところへ\nたびに いくからな\lここで どっさり どうぐを かっておくのさ$"
+	.string "これから とおい ところへ\nたびに いくからな\lここで どっさり どうぐを かっておくのさ{EOS}"
 	.if (. - gText_Rom_20A9EB) > 0x2e
 	.error "gText_Rom_20A9EB may not grow beyond its original slot"
 	.endif

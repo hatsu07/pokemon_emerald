@@ -1,7 +1,7 @@
 	@ data/maps/MtChimney/scripts.inc:851 MtChimney_Text_SawyerPostRematch
 	.globl gText_Rom_215ACF
 gText_Rom_215ACF: @ 0x08215ACF
-	.string "しかし ほんとに あついや……\nふく いっぱい きすぎちゃった かな$"
+	.string "しかし ほんとに あついや……\nふく いっぱい きすぎちゃった かな{EOS}"
 	.if (. - gText_Rom_215ACF) > 0x23
 	.error "gText_Rom_215ACF may not grow beyond its original slot"
 	.endif

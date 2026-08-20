@@ -2,7 +2,7 @@
 	@ asm/battle_message.s:3005 ChooseTypeOfMoveUsedString
 	.globl gText_Rom_5AB055
 gText_Rom_5AB055: @ 0x085AB055
-	.string "！$"
+	.string "！{EOS}"
 	.if (. - gText_Rom_5AB055) > 0x2
 	.error "gText_Rom_5AB055 may not grow beyond its original slot"
 	.endif

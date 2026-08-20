@@ -1,7 +1,7 @@
 	@ data/maps/GraniteCave_StevensRoom/scripts.inc:97 GraniteCave_StevensRoom_Text_OhBagIsFull
 	.globl gText_Rom_21425D
 gText_Rom_21425D: @ 0x0821425D
-	.string "バッグが いっぱい なのか……\nじゃあ しかたないね$"
+	.string "バッグが いっぱい なのか……\nじゃあ しかたないね{EOS}"
 	.if (. - gText_Rom_21425D) > 0x1b
 	.error "gText_Rom_21425D may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/SeafloorCavern_Entrance/scripts.inc:62 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort
 	.globl gText_Rom_2185E0
 gText_Rom_2185E0: @ 0x082185E0
-	.string "おまえ ごときが アクアだんに\nはむかおう だなんて\l100おくまんねん はえーんだよ!\pおまえにゃ マグマだんが おにあいさ!\p……そういえば トクサネの ちかくで\nマグマだんを みかけたっけな\pあいつら……\nほんっとーーに うみが にあわねえぜ!$"
+	.string "おまえ ごときが アクアだんに\nはむかおう だなんて\l100おくまんねん はえーんだよ!\pおまえにゃ マグマだんが おにあいさ!\p……そういえば トクサネの ちかくで\nマグマだんを みかけたっけな\pあいつら……\nほんっとーーに うみが にあわねえぜ!{EOS}"
 	.if (. - gText_Rom_2185E0) > 0x7e
 	.error "gText_Rom_2185E0 may not grow beyond its original slot"
 	.endif

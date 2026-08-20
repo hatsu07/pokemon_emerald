@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2657 Route124_Text_RoyPostBattle
 	.globl gText_Rom_260470
 gText_Rom_260470: @ 0x08260470
-	.string "コウ『オレの ねえちゃん\nおこると むちゃくちゃ こわいんだ……\pだから こいびと いないんだぜ……$"
+	.string "コウ『オレの ねえちゃん\nおこると むちゃくちゃ こわいんだ……\pだから こいびと いないんだぜ……{EOS}"
 	.if (. - gText_Rom_260470) > 0x33
 	.error "gText_Rom_260470 may not grow beyond its original slot"
 	.endif

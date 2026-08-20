@@ -13,9 +13,9 @@ gText_Rom_255D5D: @ 0x08255D5D
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08255D63: @ 0x08255D63
 EventText_JP_08255D63: @ 0x08255D63
-	.string "かいものを　した$"
+	.string "かいものを　した{EOS}"
 EventText_JP_08255D6C: @ 0x08255D6C
-	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nおみせで　かいものを　した　らしい!\p{STR_VAR_3}は　おみせに　はいると\nついつい　かいもの　する　トレーナーだな!$"
+	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nおみせで　かいものを　した　らしい!\p{STR_VAR_3}は　おみせに　はいると\nついつい　かいもの　する　トレーナーだな!{EOS}"
 	.byte 0x91, 0x53, 0x8D, 0x7E, 0x89, 0x00, 0x41, 0x02, 0x0D, 0x07, 0x00
 	.globl gText_Rom_255DCE
 gText_Rom_255DCE: @ 0x08255DCE

@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_actions.h:16 easy_chat_group_actions_line_16 (+1 aliases)
 	.globl gText_Rom_5E9519
 gText_Rom_5E9519: @ 0x085E9519
-	.string "あげる$"
+	.string "あげる{EOS}"
 	.if (. - gText_Rom_5E9519) > 0x4
 	.error "gText_Rom_5E9519 may not grow beyond its original slot"
 	.endif
@@ -16,7 +16,7 @@ gText_Rom_5E9519: @ 0x085E9519
 	.2byte 0xAE89, 0x147E
 	.globl gText_Rom_5E9551
 gText_Rom_5E9551: @ 0x085E9551
-	.string "あげる$"
+	.string "あげる{EOS}"
 	.if (. - gText_Rom_5E9551) > 0x4
 	.error "gText_Rom_5E9551 may not grow beyond its original slot"
 	.endif
@@ -51,7 +51,7 @@ gText_Rom_5E9551: @ 0x085E9551
 	.byte 0x00, 0x1F, 0x45, 0x2C, 0x0E, 0xFE, 0x06, 0x02, 0x1B, 0x28, 0x12, 0x2D, 0x00
 	.globl gText_Rom_5E96D2
 gText_Rom_5E96D2: @ 0x085E96D2
-	.string "あげる$"
+	.string "あげる{EOS}"
 	.if (. - gText_Rom_5E96D2) > 0x4
 	.error "gText_Rom_5E96D2 may not grow beyond its original slot"
 	.endif
@@ -69,7 +69,7 @@ gText_Rom_5E96D2: @ 0x085E96D2
 	.byte 0x0A, 0x22, 0x00, 0x06, 0x10, 0x08, 0x15, 0x28, 0xFE, 0x4A, 0x03, 0x38, 0x36, 0x2D, 0x00
 	.globl gText_Rom_5E9745
 gText_Rom_5E9745: @ 0x085E9745
-	.string "あげる$"
+	.string "あげる{EOS}"
 	.if (. - gText_Rom_5E9745) > 0x4
 	.error "gText_Rom_5E9745 may not grow beyond its original slot"
 	.endif
@@ -84,7 +84,7 @@ gText_Rom_5E9745: @ 0x085E9745
 	.byte 0x12, 0x2D, 0x00
 	.globl gText_Rom_5E977C
 gText_Rom_5E977C: @ 0x085E977C
-	.string "あげる$"
+	.string "あげる{EOS}"
 	.if (. - gText_Rom_5E977C) > 0x4
 	.error "gText_Rom_5E977C may not grow beyond its original slot"
 	.endif
@@ -102,7 +102,7 @@ gText_Rom_5E977C: @ 0x085E977C
 	.byte 0xFE, 0x1F, 0x45, 0x2C, 0x0C, 0x00, 0x0A, 0x2E, 0x27, 0x2E, 0x0B, 0x0E, 0x13
 	.globl gText_Rom_5E97ED
 gText_Rom_5E97ED: @ 0x085E97ED
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5E97ED) > 0x4
 	.error "gText_Rom_5E97ED may not grow beyond its original slot"
 	.endif
@@ -116,7 +116,7 @@ gText_Rom_5E97ED: @ 0x085E97ED
 	.byte 0x16, 0x00, 0x23, 0x39, 0x28, 0x0A, 0x2E, 0x44, 0xFE, 0x4A, 0x03, 0x38, 0x36, 0x2D, 0x00
 	.globl gText_Rom_5E9820
 gText_Rom_5E9820: @ 0x085E9820
-	.string "あげる$"
+	.string "あげる{EOS}"
 	.if (. - gText_Rom_5E9820) > 0x4
 	.error "gText_Rom_5E9820 may not grow beyond its original slot"
 	.endif
@@ -131,7 +131,7 @@ gText_Rom_5E9820: @ 0x085E9820
 	.byte 0xFE, 0x06, 0x08, 0x0C, 0x00, 0x4A, 0x03, 0x38, 0x36, 0x2D, 0x00
 	.globl gText_Rom_5E985F
 gText_Rom_5E985F: @ 0x085E985F
-	.string "あげる$"
+	.string "あげる{EOS}"
 	.if (. - gText_Rom_5E985F) > 0x4
 	.error "gText_Rom_5E985F may not grow beyond its original slot"
 	.endif
@@ -146,7 +146,7 @@ gText_Rom_5E985F: @ 0x085E985F
 	.byte 0xAE, 0x7E, 0x14
 	.globl gText_Rom_5E9896
 gText_Rom_5E9896: @ 0x085E9896
-	.string "あげる$"
+	.string "あげる{EOS}"
 	.if (. - gText_Rom_5E9896) > 0x4
 	.error "gText_Rom_5E9896 may not grow beyond its original slot"
 	.endif

@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5ABC78
 gText_Rom_5ABC78: @ 0x085ABC78
-	.string "ダメタマゴ$"
+	.string "ダメタマゴ{EOS}"
 	.if (. - gText_Rom_5ABC78) != 0x6
 	.error "gText_Rom_5ABC78 must retain its original byte length"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5ABC78: @ 0x085ABC78
 	@ src/battle_message.c:1492 gText_BattleWallyName (+8 aliases)
 	.globl gText_Rom_5ABC7E
 gText_Rom_5ABC7E: @ 0x085ABC7E
-	.string "ミツル$"
+	.string "ミツル{EOS}"
 	.if (. - gText_Rom_5ABC7E) > 0x4
 	.error "gText_Rom_5ABC7E may not grow beyond its original slot"
 	.endif
@@ -44,7 +44,7 @@ gBattleBgData_085ABC8E: @ 0x085ABC8E
 	@ asm/battle_message.s:2911 ChooseMoveUsedParticle
 	.globl gText_Rom_5ABC96
 gText_Rom_5ABC96: @ 0x085ABC96
-	.string "は$"
+	.string "は{EOS}"
 	.if (. - gText_Rom_5ABC96) > 0x2
 	.error "gText_Rom_5ABC96 may not grow beyond its original slot"
 	.endif
@@ -55,7 +55,7 @@ gText_Rom_5ABC96: @ 0x085ABC96
 	@ asm/battle_message.s:2922 ChooseMoveUsedParticle
 	.globl gText_Rom_5ABC98
 gText_Rom_5ABC98: @ 0x085ABC98
-	.string "の$"
+	.string "の{EOS}"
 	.if (. - gText_Rom_5ABC98) > 0x2
 	.error "gText_Rom_5ABC98 may not grow beyond its original slot"
 	.endif
@@ -81,7 +81,7 @@ gBattleMessageData_085ABC9A: @ 0x085ABC9A
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5ABD18
 gText_Rom_5ABD18: @ 0x085ABD18
-	.string "バトルトーナメント$"
+	.string "バトルトーナメント{EOS}"
 	.if (. - gText_Rom_5ABD18) != 0xa
 	.error "gText_Rom_5ABD18 must retain its original byte length"
 	.endif

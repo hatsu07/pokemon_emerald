@@ -1,7 +1,7 @@
 	@ field-script:0x1EB57E FieldScriptText_1EB7FA
 	.globl gText_Rom_1EB7FA
 gText_Rom_1EB7FA: @ 0x081EB7FA
-	.string "「マユミの　いえ」$"
+	.string "「マユミの　いえ」{EOS}"
 	.if (. - gText_Rom_1EB7FA) > 0xa
 	.error "gText_Rom_1EB7FA may not grow beyond its original slot"
 	.endif

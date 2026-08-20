@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_CuttersHouse/scripts.inc:30 RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees
 	.globl gText_Rom_203ED7
 gText_Rom_203ED7: @ 0x08203ED7
-	.string "この カナズミが おおきくなるとき\nおとうさん みんなの ために\lいあいぎりを つかって\lあたりを きりひらいたんだって!$"
+	.string "この カナズミが おおきくなるとき\nおとうさん みんなの ために\lいあいぎりを つかって\lあたりを きりひらいたんだって!{EOS}"
 	.if (. - gText_Rom_203ED7) > 0x3e
 	.error "gText_Rom_203ED7 may not grow beyond its original slot"
 	.endif

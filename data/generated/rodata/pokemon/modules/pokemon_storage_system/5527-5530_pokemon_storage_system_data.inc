@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CB3CD
 gText_Rom_5CB3CD: @ 0x085CB3CD
-	.string "とりかえる$"
+	.string "とりかえる{EOS}"
 	.if (. - gText_Rom_5CB3CD) != 0x6
 	.error "gText_Rom_5CB3CD must retain its original byte length"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CB3CD: @ 0x085CB3CD
 	@ src/pokemon_storage_system.c:8094 pokemon_storage_system_line_8094
 	.globl gText_Rom_5CB3D3
 gText_Rom_5CB3D3: @ 0x085CB3D3
-	.string "バッグへ$"
+	.string "バッグへ{EOS}"
 	.if (. - gText_Rom_5CB3D3) > 0x5
 	.error "gText_Rom_5CB3D3 may not grow beyond its original slot"
 	.endif

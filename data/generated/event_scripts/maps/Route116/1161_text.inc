@@ -1,7 +1,7 @@
 	@ data/maps/Route116/scripts.inc:359 Route116_Text_WantToDigTunnel
 	.globl gText_Rom_1EBFAA
 gText_Rom_1EBFAA: @ 0x081EBFAA
-	.string "ぬぉー!!\pトンネル ほりてー!!$"
+	.string "ぬぉー!!\pトンネル ほりてー!!{EOS}"
 	.if (. - gText_Rom_1EBFAA) > 0x12
 	.error "gText_Rom_1EBFAA may not grow beyond its original slot"
 	.endif

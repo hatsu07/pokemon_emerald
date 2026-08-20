@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_adjectives.h:160 easy_chat_group_adjectives_line_160
 	.globl gText_Rom_561BAA
 gText_Rom_561BAA: @ 0x08561BAA
-	.string "ブルブル$"
+	.string "ブルブル{EOS}"
 	.if (. - gText_Rom_561BAA) > 0x5
 	.error "gText_Rom_561BAA may not grow beyond its original slot"
 	.endif

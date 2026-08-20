@@ -1,7 +1,7 @@
 	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:412 RivalsHouse_1F_Text_DoYouHavePokemon
 	.globl gText_Rom_1F0ABD
 gText_Rom_1F0ABD: @ 0x081F0ABD
-	.string "わーい おとなりさんだ!\p{STR_VAR_1}は もう\nじぶんの ポケモン もってるの?$"
+	.string "わーい おとなりさんだ!\p{STR_VAR_1}は もう\nじぶんの ポケモン もってるの?{EOS}"
 	.if (. - gText_Rom_1F0ABD) > 0x25
 	.error "gText_Rom_1F0ABD may not grow beyond its original slot"
 	.endif

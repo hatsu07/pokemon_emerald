@@ -1,7 +1,7 @@
 	@ data/maps/AquaHideout_1F/scripts.inc:74 AquaHideout_1F_Text_Grunt1Defeat (+1 aliases)
 	.globl gText_Rom_217C84
 gText_Rom_217C84: @ 0x08217C84
-	.string "うーむ まけちまったかー!$"
+	.string "うーむ まけちまったかー!{EOS}"
 	.if (. - gText_Rom_217C84) > 0xe
 	.error "gText_Rom_217C84 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/berries.inc:210 SootopolisCity_Text_WhatKindOfWishInYourName
 	.globl gText_Rom_263FD5
 gText_Rom_263FD5: @ 0x08263FD5
-	.string "{STR_VAR_1}の なまえには\nどんな ねがいが こめられてるの?$"
+	.string "{STR_VAR_1}の なまえには\nどんな ねがいが こめられてるの?{EOS}"
 	.if (. - gText_Rom_263FD5) > 0x1c
 	.error "gText_Rom_263FD5 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_263FD5: @ 0x08263FD5
 	@ data/text/berries.inc:214 SootopolisCity_Text_LikeSeasonBornIn
 	.globl gText_Rom_263FF1
 gText_Rom_263FF1: @ 0x08263FF1
-	.string "はる なつ あき ふゆ\nはるに うまれると はるが すきで\lなつに うまれると なつが すきなのかな?$"
+	.string "はる なつ あき ふゆ\nはるに うまれると はるが すきで\lなつに うまれると なつが すきなのかな?{EOS}"
 	.if (. - gText_Rom_263FF1) > 0x34
 	.error "gText_Rom_263FF1 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_263FF1: @ 0x08263FF1
 	@ data/text/berries.inc:219 SootopolisCity_Text_ThenILoveAutumn
 	.globl gText_Rom_264025
 gText_Rom_264025: @ 0x08264025
-	.string "じゃあ キリは あきに うまれたから\nあきが だいすき!\p{STR_VAR_1}は いつが すき?$"
+	.string "じゃあ キリは あきに うまれたから\nあきが だいすき!\p{STR_VAR_1}は いつが すき?{EOS}"
 	.if (. - gText_Rom_264025) > 0x29
 	.error "gText_Rom_264025 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_264025: @ 0x08264025
 	@ data/text/berries.inc:224 SootopolisCity_Text_OhDoesntMatter
 	.globl gText_Rom_26404E
 gText_Rom_26404E: @ 0x0826404E
-	.string "そっか…\nかんけいないのか…\pしりたいことって たくさんあるなー$"
+	.string "そっか…\nかんけいないのか…\pしりたいことって たくさんあるなー{EOS}"
 	.if (. - gText_Rom_26404E) > 0x21
 	.error "gText_Rom_26404E may not grow beyond its original slot"
 	.endif

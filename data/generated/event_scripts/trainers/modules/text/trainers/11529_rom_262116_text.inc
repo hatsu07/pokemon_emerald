@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:3368 Route134_Text_AlexDefeat (+1 aliases)
 	.globl gText_Rom_262116
 gText_Rom_262116: @ 0x08262116
-	.string "また バテた……$"
+	.string "また バテた……{EOS}"
 	.if (. - gText_Rom_262116) > 0x9
 	.error "gText_Rom_262116 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_House3/scripts.inc:121 LilycoveCity_House3_Text_GoingToEnterContest
 	.globl gText_Rom_20A4F2
 gText_Rom_20A4F2: @ 0x0820A4F2
-	.string "ポケモンの たくましさ じまん したいから\nみんなで コンテスト してるんだ！$"
+	.string "ポケモンの たくましさ じまん したいから\nみんなで コンテスト してるんだ！{EOS}"
 	.if (. - gText_Rom_20A4F2) > 0x28
 	.error "gText_Rom_20A4F2 may not grow beyond its original slot"
 	.endif

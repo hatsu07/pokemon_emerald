@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CAF75
 gText_Rom_5CAF75: @ 0x085CAF75
-	.string "ポケモンのせいかく$"
+	.string "ポケモンのせいかく{EOS}"
 	.if (. - gText_Rom_5CAF75) != 0xa
 	.error "gText_Rom_5CAF75 must retain its original byte length"
 	.endif
@@ -14,7 +14,7 @@ gText_Rom_5CAF75: @ 0x085CAF75
 	@ src/strings.c:507 gText_PokemonMoves
 	.globl gText_Rom_5CAF7F
 gText_Rom_5CAF7F: @ 0x085CAF7F
-	.string "ポケモンのわざ$"
+	.string "ポケモンのわざ{EOS}"
 	.if (. - gText_Rom_5CAF7F) > 0x8
 	.error "gText_Rom_5CAF7F may not grow beyond its original slot"
 	.endif
@@ -26,7 +26,7 @@ gText_Rom_5CAF7F: @ 0x085CAF7F
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CAF87
 gText_Rom_5CAF87: @ 0x085CAF87
-	.string "ちからをはっきできない$"
+	.string "ちからをはっきできない{EOS}"
 	.if (. - gText_Rom_5CAF87) != 0xc
 	.error "gText_Rom_5CAF87 must retain its original byte length"
 	.endif
@@ -37,7 +37,7 @@ gText_Rom_5CAF87: @ 0x085CAF87
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CAF93
 gText_Rom_5CAF93: @ 0x085CAF93
-	.string "ピンチになったら$"
+	.string "ピンチになったら{EOS}"
 	.if (. - gText_Rom_5CAF93) != 0x9
 	.error "gText_Rom_5CAF93 must retain its original byte length"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/pokemon_storage_system.c:1073 pokemon_storage_system_line_1073
 	.globl gText_Rom_5CB300
 gText_Rom_5CB300: @ 0x085CB300
-	.string "メールを はずして ください!$"
+	.string "メールを はずして ください!{EOS}"
 	.if (. - gText_Rom_5CB300) > 0x10
 	.error "gText_Rom_5CB300 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CB300: @ 0x085CB300
 	@ src/pokemon_storage_system.c:1075 pokemon_storage_system_line_1075
 	.globl gText_Rom_5CB310
 gText_Rom_5CB310: @ 0x085CB310
-	.string "どうぐを もたせますか?$"
+	.string "どうぐを もたせますか?{EOS}"
 	.if (. - gText_Rom_5CB310) > 0xd
 	.error "gText_Rom_5CB310 may not grow beyond its original slot"
 	.endif
@@ -20,12 +20,12 @@ gText_Rom_5CB310: @ 0x085CB310
 	.space 0xd - (. - gText_Rom_5CB310)
 	.endif
 	@ Decoded text from ROM range: offset=0x5CB31D, size=0xD
-	.string "{SE_M_HYPER_BEAM2}を　バッグへいれた！$"
+	.string "{SE_M_HYPER_BEAM2}を　バッグへいれた！{EOS}"
 
 	@ src/pokemon_storage_system.c:1077 pokemon_storage_system_line_1077
 	.globl gText_Rom_5CB32A
 gText_Rom_5CB32A: @ 0x085CB32A
-	.string "バッグが いっぱいです!$"
+	.string "バッグが いっぱいです!{EOS}"
 	.if (. - gText_Rom_5CB32A) > 0xd
 	.error "gText_Rom_5CB32A may not grow beyond its original slot"
 	.endif
@@ -36,7 +36,7 @@ gText_Rom_5CB32A: @ 0x085CB32A
 	@ src/pokemon_storage_system.c:1078 pokemon_storage_system_line_1078
 	.globl gText_Rom_5CB337
 gText_Rom_5CB337: @ 0x085CB337
-	.string "どうぐを バッグに いれますか?$"
+	.string "どうぐを バッグに いれますか?{EOS}"
 	.if (. - gText_Rom_5CB337) > 0x11
 	.error "gText_Rom_5CB337 may not grow beyond its original slot"
 	.endif
@@ -44,13 +44,13 @@ gText_Rom_5CB337: @ 0x085CB337
 	.space 0x11 - (. - gText_Rom_5CB337)
 	.endif
 	@ Decoded text from ROM range: offset=0x5CB348, size=0x15
-	.string "{SE_M_HYPER_BEAM2}を　もたせた！$"
-	.string "{SE_M_HYPER_BEAM2}と　とりかえた！$"
+	.string "{SE_M_HYPER_BEAM2}を　もたせた！{EOS}"
+	.string "{SE_M_HYPER_BEAM2}と　とりかえた！{EOS}"
 
 	@ src/pokemon_storage_system.c:1081 pokemon_storage_system_line_1081
 	.globl gText_Rom_5CB35D
 gText_Rom_5CB35D: @ 0x085CB35D
-	.string "メールを あずかることは できません!$"
+	.string "メールを あずかることは できません!{EOS}"
 	.if (. - gText_Rom_5CB35D) > 0x14
 	.error "gText_Rom_5CB35D may not grow beyond its original slot"
 	.endif
@@ -64,7 +64,7 @@ gText_Rom_5CB35D: @ 0x085CB35D
 	.2byte 0x0000, 0x0AFF, 0x160A, 0x0805, 0xFF00
 	.globl gText_Rom_5CB39B
 gText_Rom_5CB39B: @ 0x085CB39B
-	.string "ようすをみる$"
+	.string "ようすをみる{EOS}"
 	.if (. - gText_Rom_5CB39B) > 0x7
 	.error "gText_Rom_5CB39B may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/data/moves_info.h:530 moves_info_line_530
 	.globl gText_Rom_5E8C8F
 gText_Rom_5E8C8F: @ 0x085E8C8F
-	.string "たたきつける$"
+	.string "たたきつける{EOS}"
 	.if (. - gText_Rom_5E8C8F) > 0x7
 	.error "gText_Rom_5E8C8F may not grow beyond its original slot"
 	.endif

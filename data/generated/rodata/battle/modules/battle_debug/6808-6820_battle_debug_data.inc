@@ -1,7 +1,7 @@
 	@ src/battle_debug.c:337 battle_debug_line_337 (+5 aliases)
 	.globl gText_Rom_5E84AD
 gText_Rom_5E84AD: @ 0x085E84AD
-	.string "こうげき$"
+	.string "こうげき{EOS}"
 	.if (. - gText_Rom_5E84AD) > 0x5
 	.error "gText_Rom_5E84AD may not grow beyond its original slot"
 	.endif
@@ -16,7 +16,7 @@ gText_Rom_5E84AD: @ 0x085E84AD
 	.2byte 0x0710, 0x0912, 0x0013
 	.globl gText_Rom_5E84E8
 gText_Rom_5E84E8: @ 0x085E84E8
-	.string "こうげき$"
+	.string "こうげき{EOS}"
 	.if (. - gText_Rom_5E84E8) > 0x5
 	.error "gText_Rom_5E84E8 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5E84E8: @ 0x085E84E8
 	.2byte 0x06A3, 0x0002, 0x2E2A, 0x0840, 0x0044
 	.globl gText_Rom_5E8557
 gText_Rom_5E8557: @ 0x085E8557
-	.string "こうげき$"
+	.string "こうげき{EOS}"
 	.if (. - gText_Rom_5E8557) > 0x5
 	.error "gText_Rom_5E8557 may not grow beyond its original slot"
 	.endif
@@ -49,7 +49,7 @@ gText_Rom_5E8557: @ 0x085E8557
 	.2byte 0x1450, 0x0C46, 0x0013
 	.globl gText_Rom_5E8592
 gText_Rom_5E8592: @ 0x085E8592
-	.string "こうげき$"
+	.string "こうげき{EOS}"
 	.if (. - gText_Rom_5E8592) > 0x5
 	.error "gText_Rom_5E8592 may not grow beyond its original slot"
 	.endif
@@ -77,7 +77,7 @@ gText_Rom_5E8592: @ 0x085E8592
 	.byte 0x02, 0xFE, 0x13, 0x07, 0x2D, 0x00, 0x12, 0x12, 0x02, 0x13, 0x00
 	.globl gText_Rom_5E86A2
 gText_Rom_5E86A2: @ 0x085E86A2
-	.string "こうげき$"
+	.string "こうげき{EOS}"
 	.if (. - gText_Rom_5E86A2) > 0x5
 	.error "gText_Rom_5E86A2 may not grow beyond its original slot"
 	.endif
@@ -92,7 +92,7 @@ gText_Rom_5E86A2: @ 0x085E86A2
 	.2byte 0x0002, 0x2E2A, 0x0840, 0x0044
 	.globl gText_Rom_5E86DF
 gText_Rom_5E86DF: @ 0x085E86DF
-	.string "こうげき$"
+	.string "こうげき{EOS}"
 	.if (. - gText_Rom_5E86DF) > 0x5
 	.error "gText_Rom_5E86DF may not grow beyond its original slot"
 	.endif
@@ -110,7 +110,7 @@ gText_Rom_5E86DF: @ 0x085E86DF
 	.2byte 0x0016, 0x0210, 0x1001, 0x0C28, 0x0013
 	.globl gText_Rom_5E874E
 gText_Rom_5E874E: @ 0x085E874E
-	.string "こうげき$"
+	.string "こうげき{EOS}"
 	.if (. - gText_Rom_5E874E) > 0x5
 	.error "gText_Rom_5E874E may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/berry_blender.c:278 sText_CommunicationStandby
 	.globl gText_Rom_30F78E
 gText_Rom_30F78E: @ 0x0830F78E
-	.string "つうしんたいきちゅうです$"
+	.string "つうしんたいきちゅうです{EOS}"
 	.if (. - gText_Rom_30F78E) > 0xd
 	.error "gText_Rom_30F78E may not grow beyond its original slot"
 	.endif
@@ -20,7 +20,7 @@ gBerryBlenderData_0830F79B: @ 0x0830F79B
 	@ src/berry_blender.c:280 sText_RunOutOfBerriesForBlending
 	.globl gText_Rom_30F7B2
 gText_Rom_30F7B2: @ 0x0830F7B2
-	.string "きのみブレンダーに いれる きのみが\nないので これいじょう できません\p$"
+	.string "きのみブレンダーに いれる きのみが\nないので これいじょう できません\p{EOS}"
 	.if (. - gText_Rom_30F7B2) > 0x26
 	.error "gText_Rom_30F7B2 may not grow beyond its original slot"
 	.endif
@@ -31,7 +31,7 @@ gText_Rom_30F7B2: @ 0x0830F7B2
 	@ src/berry_blender.c:281 sText_YourPokeblockCaseIsFull
 	.globl gText_Rom_30F7D8
 gText_Rom_30F7D8: @ 0x0830F7D8
-	.string "ポロックケースが いっぱいの ようです\p$"
+	.string "ポロックケースが いっぱいの ようです\p{EOS}"
 	.if (. - gText_Rom_30F7D8) > 0x15
 	.error "gText_Rom_30F7D8 may not grow beyond its original slot"
 	.endif
@@ -42,7 +42,7 @@ gText_Rom_30F7D8: @ 0x0830F7D8
 	@ src/berry_blender.c:282 sText_HasNoBerriesToPut
 	.globl gText_Rom_30F7ED
 gText_Rom_30F7ED: @ 0x0830F7ED
-	.string "は きのみブレンダーに\nいれる きのみがないようです$"
+	.string "は きのみブレンダーに\nいれる きのみがないようです{EOS}"
 	.if (. - gText_Rom_30F7ED) > 0x1b
 	.error "gText_Rom_30F7ED may not grow beyond its original slot"
 	.endif
@@ -53,7 +53,7 @@ gText_Rom_30F7ED: @ 0x0830F7ED
 	@ src/berry_blender.c:283 sText_ApostropheSPokeblockCaseIsFull
 	.globl gText_Rom_30F808
 gText_Rom_30F808: @ 0x0830F808
-	.string "は ポロックケースが\nいっぱいの ようです\p$"
+	.string "は ポロックケースが\nいっぱいの ようです\p{EOS}"
 	.if (. - gText_Rom_30F808) > 0x17
 	.error "gText_Rom_30F808 may not grow beyond its original slot"
 	.endif
@@ -64,7 +64,7 @@ gText_Rom_30F808: @ 0x0830F808
 	@ src/berry_blender.c:284 sText_BlendingResults
 	.globl gText_Rom_30F81F
 gText_Rom_30F81F: @ 0x0830F81F
-	.string "まぜたけっか$"
+	.string "まぜたけっか{EOS}"
 	.if (. - gText_Rom_30F81F) > 0x7
 	.error "gText_Rom_30F81F may not grow beyond its original slot"
 	.endif
@@ -72,12 +72,12 @@ gText_Rom_30F81F: @ 0x0830F81F
 	.space 0x7 - (. - gText_Rom_30F81F)
 	.endif
 	@ Decoded text from ROM range: offset=0x30F826, size=0x7
-	.string "いれた　たね$"
+	.string "いれた　たね{EOS}"
 
 	@ asm/berry_blender.s:7852 Blender_PrintBlendingResults
 	.globl gText_Rom_30F82D
 gText_Rom_30F82D: @ 0x0830F82D
-	.string "のみ$"
+	.string "のみ{EOS}"
 	.if (. - gText_Rom_30F82D) > 0x3
 	.error "gText_Rom_30F82D may not grow beyond its original slot"
 	.endif

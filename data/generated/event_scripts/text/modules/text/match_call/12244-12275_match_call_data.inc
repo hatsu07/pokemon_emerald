@@ -1,7 +1,7 @@
 	@ data/text/match_call.inc:268 MatchCall_PersonalizedText19
 	.globl gText_Rom_267091
 gText_Rom_267091: @ 0x08267091
-	.string "キャンプの たつじん\n{STR_VAR_1} だ!\pま こないだ ぼくが まけちゃったのは\nぼくの せんもんが キャンプだからね\lしかたが なかったのさ!\pかっても まけても\nキャンプで ポケモンしょうぶ するの\lぼく だいすき なんだ!\pまたこんど あいてを たのむよ\nあ キャンプも いっしょに しようぜ!$"
+	.string "キャンプの たつじん\n{STR_VAR_1} だ!\pま こないだ ぼくが まけちゃったのは\nぼくの せんもんが キャンプだからね\lしかたが なかったのさ!\pかっても まけても\nキャンプで ポケモンしょうぶ するの\lぼく だいすき なんだ!\pまたこんど あいてを たのむよ\nあ キャンプも いっしょに しようぜ!{EOS}"
 	.if (. - gText_Rom_267091) > 0x93
 	.error "gText_Rom_267091 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_267091: @ 0x08267091
 	@ data/text/match_call.inc:271 MatchCall_PersonalizedText20
 	.globl gText_Rom_267124
 gText_Rom_267124: @ 0x08267124
-	.string "おれ おれ {STR_VAR_1}!\pいやあ おれも ほかの やまにも\nのぼって みても いいんだけどさー\lえんとつやま みたいに\lきれいな おねいさん たちが\lいるか どうか わからんもんなー\pきれいな おねいさんが いっぱいの\nやまが あったら おしえて くれよ!\lえへへへ またなあ!$"
+	.string "おれ おれ {STR_VAR_1}!\pいやあ おれも ほかの やまにも\nのぼって みても いいんだけどさー\lえんとつやま みたいに\lきれいな おねいさん たちが\lいるか どうか わからんもんなー\pきれいな おねいさんが いっぱいの\nやまが あったら おしえて くれよ!\lえへへへ またなあ!{EOS}"
 	.if (. - gText_Rom_267124) > 0x89
 	.error "gText_Rom_267124 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_267124: @ 0x08267124
 	@ data/text/match_call.inc:274 MatchCall_PersonalizedText21
 	.globl gText_Rom_2671AD
 gText_Rom_2671AD: @ 0x082671AD
-	.string "…… …… ……\n…… …… ……\l{STR_VAR_1} です……\p…… …… ……\n…… …… ……\lきょうは それだけ……$"
+	.string "…… …… ……\n…… …… ……\l{STR_VAR_1} です……\p…… …… ……\n…… …… ……\lきょうは それだけ……{EOS}"
 	.if (. - gText_Rom_2671AD) > 0x38
 	.error "gText_Rom_2671AD may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_2671AD: @ 0x082671AD
 	@ data/text/match_call.inc:277 MatchCall_PersonalizedText22
 	.globl gText_Rom_2671E5
 gText_Rom_2671E5: @ 0x082671E5
-	.string "{STR_VAR_1}だよ… きょうは\nきみと はなす きが してたんだ\pきみに かちたい きもちは\nひましに つよくなる ばかりだよ\lきみ にも そんな あいてが いるだろ?\lそれが ぼくなら いいのにな\pきいて くれて ありがと またな!$"
+	.string "{STR_VAR_1}だよ… きょうは\nきみと はなす きが してたんだ\pきみに かちたい きもちは\nひましに つよくなる ばかりだよ\lきみ にも そんな あいてが いるだろ?\lそれが ぼくなら いいのにな\pきいて くれて ありがと またな!{EOS}"
 	.if (. - gText_Rom_2671E5) > 0x71
 	.error "gText_Rom_2671E5 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_2671E5: @ 0x082671E5
 	@ data/text/match_call.inc:280 MatchCall_PersonalizedText23
 	.globl gText_Rom_267256
 gText_Rom_267256: @ 0x08267256
-	.string "{STR_VAR_1}です\pつよい トレーナーが ちかくに いると\nなんとなく その そんざいを\lかんじる ことが あるの\pもしかしたら {PLAYER}{KUN}が\nわたしの そばを とおったの かもね?\pあいに きて くれるのを\nまっているわ! バーイ!$"
+	.string "{STR_VAR_1}です\pつよい トレーナーが ちかくに いると\nなんとなく その そんざいを\lかんじる ことが あるの\pもしかしたら {PLAYER}{KUN}が\nわたしの そばを とおったの かもね?\pあいに きて くれるのを\nまっているわ! バーイ!{EOS}"
 	.if (. - gText_Rom_267256) > 0x70
 	.error "gText_Rom_267256 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_267256: @ 0x08267256
 	@ data/text/match_call.inc:283 MatchCall_PersonalizedText24
 	.globl gText_Rom_2672C6
 gText_Rom_2672C6: @ 0x082672C6
-	.string "{STR_VAR_1}です\n{PLAYER}{KUN}は げんきそう ですな\pせかい かっこくを まわった わたしですが\nこの ちほうを たいへん きにいりました\lとうぶん いる つもりですよ\pそういう わけ ですから\nまた あえるかも しれませんね\pあなたの みごとな わざ\nわすれては おりませんよ\lまた おあいてを おねがいしますね$"
+	.string "{STR_VAR_1}です\n{PLAYER}{KUN}は げんきそう ですな\pせかい かっこくを まわった わたしですが\nこの ちほうを たいへん きにいりました\lとうぶん いる つもりですよ\pそういう わけ ですから\nまた あえるかも しれませんね\pあなたの みごとな わざ\nわすれては おりませんよ\lまた おあいてを おねがいしますね{EOS}"
 	.if (. - gText_Rom_2672C6) > 0x98
 	.error "gText_Rom_2672C6 may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_2672C6: @ 0x082672C6
 	@ data/text/match_call.inc:286 MatchCall_PersonalizedText25
 	.globl gText_Rom_26735E
 gText_Rom_26735E: @ 0x0826735E
-	.string "グスン {STR_VAR_1}……です\n……グスン\pきょう ツツジさんに\nおこられ ちゃった\pでも ツツジさんは\nなんで ボクが わるいのか\lちゃんと おしえて くれるから\lうらんだり しないよ!\pあしたも また いくんだ\nトレーナーズ スクール! えへ……\lじゃ またね!$"
+	.string "グスン {STR_VAR_1}……です\n……グスン\pきょう ツツジさんに\nおこられ ちゃった\pでも ツツジさんは\nなんで ボクが わるいのか\lちゃんと おしえて くれるから\lうらんだり しないよ!\pあしたも また いくんだ\nトレーナーズ スクール! えへ……\lじゃ またね!{EOS}"
 	.if (. - gText_Rom_26735E) > 0x81
 	.error "gText_Rom_26735E may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_26735E: @ 0x0826735E
 	@ data/text/match_call.inc:289 MatchCall_PersonalizedText26
 	.globl gText_Rom_2673DF
 gText_Rom_2673DF: @ 0x082673DF
-	.string "{STR_VAR_1} です!\pきのう ツツジさまに\nしょうぶ してもらったの!\pけっかは さんざん だったけど……\nツツジさまが あたしの あいてを\lしてくれた って いうことが\lすごく うれしいの!\lますます あこがれちゃうわ!\pいまから また もうべんきょうよ!\nだから さよなら!$"
+	.string "{STR_VAR_1} です!\pきのう ツツジさまに\nしょうぶ してもらったの!\pけっかは さんざん だったけど……\nツツジさまが あたしの あいてを\lしてくれた って いうことが\lすごく うれしいの!\lますます あこがれちゃうわ!\pいまから また もうべんきょうよ!\nだから さよなら!{EOS}"
 	.if (. - gText_Rom_2673DF) > 0x88
 	.error "gText_Rom_2673DF may not grow beyond its original slot"
 	.endif
@@ -90,7 +90,7 @@ gText_Rom_2673DF: @ 0x082673DF
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_267467
 gText_Rom_267467: @ 0x08267467
-	.string "ミホでーす!\nきょうも こうはいの リコと いっしょだよ\pもうね! リコも ポケモンも\nかわいくて しかたないの\lおとうとや いもうと みたいに\lずーっと めんどう みて あげたいな!\pあ リコ!\nパン かってきて くれた?\pえ? な なによ\nつかいっぱしり なんて させてないわよ!\lポケモン しょうぶで まけたから\lこれは ばつゲームなの!\pかわいい リコを\nこきつかうわけ ないでしょ!\lじゃ これから おやつだから バイバイ!$"
+	.string "ミホでーす!\nきょうも こうはいの リコと いっしょだよ\pもうね! リコも ポケモンも\nかわいくて しかたないの\lおとうとや いもうと みたいに\lずーっと めんどう みて あげたいな!\pあ リコ!\nパン かってきて くれた?\pえ? な なによ\nつかいっぱしり なんて させてないわよ!\lポケモン しょうぶで まけたから\lこれは ばつゲームなの!\pかわいい リコを\nこきつかうわけ ないでしょ!\lじゃ これから おやつだから バイバイ!{EOS}"
 	.if (. - gText_Rom_267467) != 0xda
 	.error "gText_Rom_267467 must retain its original byte length"
 	.endif
@@ -100,7 +100,7 @@ gText_Rom_267467: @ 0x08267467
 	@ data/text/match_call.inc:295 MatchCall_PersonalizedText28
 	.globl gText_Rom_267541
 gText_Rom_267541: @ 0x08267541
-	.string "ポケモン だいすき!\nだいすきクラブの {STR_VAR_1}です!\pきっ きいて くださいよ!\nわたしの ポケモンちゃんが なんと……!\lぐふ ぐふふふ\lこれいじょうは ひみつ!\lもー かわいすぎて くちに できない!\pああっ {STR_VAR_2}ちゃんが\nポロックを おねだりしてるー!\lかわいいぞーーーっ!\pわるいけど きみと\nはなしている ばあいじゃ ないぞ!\lまた こんど つづきを きいてくれ$"
+	.string "ポケモン だいすき!\nだいすきクラブの {STR_VAR_1}です!\pきっ きいて くださいよ!\nわたしの ポケモンちゃんが なんと……!\lぐふ ぐふふふ\lこれいじょうは ひみつ!\lもー かわいすぎて くちに できない!\pああっ {STR_VAR_2}ちゃんが\nポロックを おねだりしてるー!\lかわいいぞーーーっ!\pわるいけど きみと\nはなしている ばあいじゃ ないぞ!\lまた こんど つづきを きいてくれ{EOS}"
 	.if (. - gText_Rom_267541) > 0xba
 	.error "gText_Rom_267541 may not grow beyond its original slot"
 	.endif
@@ -111,7 +111,7 @@ gText_Rom_267541: @ 0x08267541
 	@ data/text/match_call.inc:298 MatchCall_PersonalizedText29
 	.globl gText_Rom_2675FB
 gText_Rom_2675FB: @ 0x082675FB
-	.string "おほほ!\pポケモンを じまん したくて しかたない\n{STR_VAR_1} ですわ!\pあなた おききに なって\nあたくしの {STR_VAR_2}ちゃん……\lほかの ひとに だっこされると\lピョンと にげだして\lあたくしの むねに とびこんでくるの!\pもう…… もう!\nこんな しあわせって ほかに あるかしら!\pああ しあわせだわ\nあなたにも しあわせを わけて あげられて\lよかったわ!\lでは しつれい するわね$"
+	.string "おほほ!\pポケモンを じまん したくて しかたない\n{STR_VAR_1} ですわ!\pあなた おききに なって\nあたくしの {STR_VAR_2}ちゃん……\lほかの ひとに だっこされると\lピョンと にげだして\lあたくしの むねに とびこんでくるの!\pもう…… もう!\nこんな しあわせって ほかに あるかしら!\pああ しあわせだわ\nあなたにも しあわせを わけて あげられて\lよかったわ!\lでは しつれい するわね{EOS}"
 	.if (. - gText_Rom_2675FB) > 0xbf
 	.error "gText_Rom_2675FB may not grow beyond its original slot"
 	.endif
@@ -122,7 +122,7 @@ gText_Rom_2675FB: @ 0x082675FB
 	@ data/text/match_call.inc:301 MatchCall_PersonalizedText30
 	.globl gText_Rom_2676BA
 gText_Rom_2676BA: @ 0x082676BA
-	.string "わたしは…… {STR_VAR_1}だ\pひとは わたしを たつじんと よぶ\nだが わたしは わかっている\lわたしだけの ちから では\lたつじん には なれない ことを\pポケモンの ちからが あってこそ\nトレーナーは たつじんに なれる!\pうむ……! わたしは いま\nすごく いいことを いった きがする!\lきもちがよい ままに わかれよう!$"
+	.string "わたしは…… {STR_VAR_1}だ\pひとは わたしを たつじんと よぶ\nだが わたしは わかっている\lわたしだけの ちから では\lたつじん には なれない ことを\pポケモンの ちからが あってこそ\nトレーナーは たつじんに なれる!\pうむ……! わたしは いま\nすごく いいことを いった きがする!\lきもちがよい ままに わかれよう!{EOS}"
 	.if (. - gText_Rom_2676BA) > 0xa2
 	.error "gText_Rom_2676BA may not grow beyond its original slot"
 	.endif
@@ -133,7 +133,7 @@ gText_Rom_2676BA: @ 0x082676BA
 	@ data/text/match_call.inc:304 MatchCall_PersonalizedText31
 	.globl gText_Rom_26775C
 gText_Rom_26775C: @ 0x0826775C
-	.string "{STR_VAR_1} じゃよ\nおんせんに つかって ごきげんだからねぇ\lこうして おはなし できて うれしいよ!\pあれから なんにんか\nわかい トレーナーさんと たたかったが\lおまえさんが いちばん つよかったよ!\pきっと としを とったら\nたつじんに なるじゃろうな!\lおっほっほっほ……$"
+	.string "{STR_VAR_1} じゃよ\nおんせんに つかって ごきげんだからねぇ\lこうして おはなし できて うれしいよ!\pあれから なんにんか\nわかい トレーナーさんと たたかったが\lおまえさんが いちばん つよかったよ!\pきっと としを とったら\nたつじんに なるじゃろうな!\lおっほっほっほ……{EOS}"
 	.if (. - gText_Rom_26775C) > 0x8a
 	.error "gText_Rom_26775C may not grow beyond its original slot"
 	.endif
@@ -144,7 +144,7 @@ gText_Rom_26775C: @ 0x0826775C
 	@ data/text/match_call.inc:307 MatchCall_PersonalizedText32
 	.globl gText_Rom_2677E6
 gText_Rom_2677E6: @ 0x082677E6
-	.string "わーい! {STR_VAR_1}でーす!\nげんきー?\pボクが ポケモン かてる ときって\nきのせいかも しれないけど\lたんパンの ちょうしが いいんだ!\pえ どういうこと かって?\nうーん うまく せつめい できないけど\lなんていう のかな……\lはき ごこちが サラっと してるんだ!\pで {PLAYER}{KUN}と しょうぶの ときは\nだいたい ベタっと してるんだよね……\p…… …… ……\nボクの はなし しんじた?\lえへへへ じゃあね バイバーイ!$"
+	.string "わーい! {STR_VAR_1}でーす!\nげんきー?\pボクが ポケモン かてる ときって\nきのせいかも しれないけど\lたんパンの ちょうしが いいんだ!\pえ どういうこと かって?\nうーん うまく せつめい できないけど\lなんていう のかな……\lはき ごこちが サラっと してるんだ!\pで {PLAYER}{KUN}と しょうぶの ときは\nだいたい ベタっと してるんだよね……\p…… …… ……\nボクの はなし しんじた?\lえへへへ じゃあね バイバーイ!{EOS}"
 	.if (. - gText_Rom_2677E6) > 0xd4
 	.error "gText_Rom_2677E6 may not grow beyond its original slot"
 	.endif
@@ -155,7 +155,7 @@ gText_Rom_2677E6: @ 0x082677E6
 	@ data/text/match_call.inc:310 MatchCall_PersonalizedText33
 	.globl gText_Rom_2678BA
 gText_Rom_2678BA: @ 0x082678BA
-	.string "うおーい!\n{STR_VAR_1}だぞーっ!\lきょうも ごうかいに\lつりを たのしんで いるぞーっ!\pうみ か かわ いがいに\nつりが できる ばしょって ないかーっ?\lどこでも つりが したくって\lうずうずするんだーっ!\pおっと つりいとが からまった!\nじゃ つりが できるところ\lさがしといてくれーっ! またなーっ!$"
+	.string "うおーい!\n{STR_VAR_1}だぞーっ!\lきょうも ごうかいに\lつりを たのしんで いるぞーっ!\pうみ か かわ いがいに\nつりが できる ばしょって ないかーっ?\lどこでも つりが したくって\lうずうずするんだーっ!\pおっと つりいとが からまった!\nじゃ つりが できるところ\lさがしといてくれーっ! またなーっ!{EOS}"
 	.if (. - gText_Rom_2678BA) > 0x99
 	.error "gText_Rom_2678BA may not grow beyond its original slot"
 	.endif
@@ -166,7 +166,7 @@ gText_Rom_2678BA: @ 0x082678BA
 	@ data/text/match_call.inc:313 MatchCall_PersonalizedText34
 	.globl gText_Rom_267953
 gText_Rom_267953: @ 0x08267953
-	.string "やあ! {STR_VAR_1} だけど\nどう のんびり やっている かい?\pボクはさ むかしから\nあせったり いそいだり するのが\lにがて なんだよね\lそれでも なぜか いまは\lトライアスリートを やっている……\pじんせい なにが おこるか\nわからないって ヤツだな! はは\pキミも いまは トレーナーだけど\nしょうらいは せんせい とか えかき とか\lよそうも つかない ことを\lやって いるの かもな!\pまー のんびり やれよ!\nじゃあなー$"
+	.string "やあ! {STR_VAR_1} だけど\nどう のんびり やっている かい?\pボクはさ むかしから\nあせったり いそいだり するのが\lにがて なんだよね\lそれでも なぜか いまは\lトライアスリートを やっている……\pじんせい なにが おこるか\nわからないって ヤツだな! はは\pキミも いまは トレーナーだけど\nしょうらいは せんせい とか えかき とか\lよそうも つかない ことを\lやって いるの かもな!\pまー のんびり やれよ!\nじゃあなー{EOS}"
 	.if (. - gText_Rom_267953) > 0xd6
 	.error "gText_Rom_267953 may not grow beyond its original slot"
 	.endif

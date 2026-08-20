@@ -1,7 +1,7 @@
 	@ src/strings.c:654 gText_Sour2
 	.globl gText_Rom_5CBFDF
 gText_Rom_5CBFDF: @ 0x085CBFDF
-	.string "すっぱ$"
+	.string "すっぱ{EOS}"
 	.if (. - gText_Rom_5CBFDF) > 0x4
 	.error "gText_Rom_5CBFDF may not grow beyond its original slot"
 	.endif

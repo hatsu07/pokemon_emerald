@@ -1,7 +1,7 @@
 	@ src/battle_dome.c:949 battle_dome_line_949
 	.globl gText_Rom_274021
 gText_Rom_274021: @ 0x08274021
-	.string "こうげきと とくぼうに ちからを いれていない!$"
+	.string "こうげきと とくぼうに ちからを いれていない!{EOS}"
 	.if (. - gText_Rom_274021) > 0x19
 	.error "gText_Rom_274021 may not grow beyond its original slot"
 	.endif

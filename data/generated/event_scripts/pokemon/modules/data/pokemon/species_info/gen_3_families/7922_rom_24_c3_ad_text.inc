@@ -1,7 +1,7 @@
 	@ src/data/pokemon/species_info/gen_3_families.h:2538 gen_3_families_line_2538 (+1 aliases)
 	.globl gText_Rom_24C3AD
 gText_Rom_24C3AD: @ 0x0824C3AD
-	.string "キャモメ$"
+	.string "キャモメ{EOS}"
 	.if (. - gText_Rom_24C3AD) > 0x5
 	.error "gText_Rom_24C3AD may not grow beyond its original slot"
 	.endif

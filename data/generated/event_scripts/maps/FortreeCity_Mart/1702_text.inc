@@ -1,7 +1,7 @@
 	@ data/maps/FortreeCity_Mart/scripts.inc:43 FortreeCity_Mart_Text_StockUpOnItems
 	.globl gText_Rom_204E45
 gText_Rom_204E45: @ 0x08204E45
-	.string "もしも ってことが あるかも しれないし\nどうぐは おおめに かうように してるのよ$"
+	.string "もしも ってことが あるかも しれないし\nどうぐは おおめに かうように してるのよ{EOS}"
 	.if (. - gText_Rom_204E45) > 0x2b
 	.error "gText_Rom_204E45 may not grow beyond its original slot"
 	.endif

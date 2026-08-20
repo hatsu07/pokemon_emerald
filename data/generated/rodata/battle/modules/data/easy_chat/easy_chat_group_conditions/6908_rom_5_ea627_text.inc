@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_conditions.h:250 easy_chat_group_conditions_line_250
 	.globl gText_Rom_5EA627
 gText_Rom_5EA627: @ 0x085EA627
-	.string "ちがう$"
+	.string "ちがう{EOS}"
 	.if (. - gText_Rom_5EA627) > 0x4
 	.error "gText_Rom_5EA627 may not grow beyond its original slot"
 	.endif

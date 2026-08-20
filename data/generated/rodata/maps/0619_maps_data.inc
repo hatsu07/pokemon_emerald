@@ -634,13 +634,13 @@ gFishingWaitRangeByRod: @ 0x0846F9C2
 	.globl gFieldPlayerAvatarData_0846F9C8
 gFieldPlayerAvatarData_0846F9C8: @ 0x0846F9C8
 gFishingEllipsisDotText: @ 0x0846F9C8
-	.string "・$"
+	.string "・{EOS}"
 	.if (. - gFishingEllipsisDotText) != 0x2
 	.error "gFishingEllipsisDotText must retain its original byte length"
 	.endif
 	.globl gFishingMonOnHookText
 gFishingMonOnHookText:
-	.string "ひいてる　ひいてる！！$"
+	.string "ひいてる　ひいてる！！{EOS}"
 	.if (. - gFishingMonOnHookText) != 0xC
 	.error "gFishingMonOnHookText must retain its original byte length"
 	.endif

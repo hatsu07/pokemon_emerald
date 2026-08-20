@@ -3,7 +3,7 @@
 sText_NamingScreenYourName:
 	.globl gText_Rom_565868
 gText_Rom_565868: @ 0x08565868
-	.string "あなた の なまえは?$"
+	.string "あなた の なまえは?{EOS}"
 	.if (. - gText_Rom_565868) > 0xc
 	.error "gText_Rom_565868 may not grow beyond its original slot"
 	.endif
@@ -16,7 +16,7 @@ gText_Rom_565868: @ 0x08565868
 sText_NamingScreenBoxName:
 	.globl gText_Rom_565874
 gText_Rom_565874: @ 0x08565874
-	.string "ボックス の なまえは?$"
+	.string "ボックス の なまえは?{EOS}"
 	.if (. - gText_Rom_565874) > 0xd
 	.error "gText_Rom_565874 may not grow beyond its original slot"
 	.endif
@@ -26,14 +26,14 @@ gText_Rom_565874: @ 0x08565874
 	@ Decoded text from ROM range: offset=0x565881, size=0xE
 	.globl sText_NamingScreenPokemonNickname
 sText_NamingScreenPokemonNickname: @ 0x08565881
-	.string "{STR_VAR_1}　の　ニックネームは？$"
+	.string "{STR_VAR_1}　の　ニックネームは？{EOS}"
 
 	@ src/naming_screen.c:2640 naming_screen_line_2640
 	.globl sText_NamingScreenTellHimTheWords
 sText_NamingScreenTellHimTheWords:
 	.globl gText_Rom_56588F
 gText_Rom_56588F: @ 0x0856588F
-	.string "おじさんに ことばを おしえよう$"
+	.string "おじさんに ことばを おしえよう{EOS}"
 	.if (. - gText_Rom_56588F) > 0x11
 	.error "gText_Rom_56588F may not grow beyond its original slot"
 	.endif
@@ -54,7 +54,7 @@ sText_NamingScreenControls: @ 0x085658A0
 sText_AlphabetUpperLower:
 	.globl gText_Rom_5658C1
 gText_Rom_5658C1: @ 0x085658C1
-	.string "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz！$"
+	.string "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz！{EOS}"
 	.if (. - gText_Rom_5658C1) > 0x36
 	.error "gText_Rom_5658C1 may not grow beyond its original slot"
 	.endif

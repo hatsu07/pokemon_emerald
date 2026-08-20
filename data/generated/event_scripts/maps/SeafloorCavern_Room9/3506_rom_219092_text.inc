@@ -1,7 +1,7 @@
 	@ data/maps/SeafloorCavern_Room9/scripts.inc:260 SeafloorCavern_Room9_Text_MaxieComeOnPlayer
 	.globl gText_Rom_219092
 gText_Rom_219092: @ 0x08219092
-	.string "マツブサ『{PLAYER}…… おまえも\nはやく そとに でるんだ!$"
+	.string "マツブサ『{PLAYER}…… おまえも\nはやく そとに でるんだ!{EOS}"
 	.if (. - gText_Rom_219092) > 0x1d
 	.error "gText_Rom_219092 may not grow beyond its original slot"
 	.endif

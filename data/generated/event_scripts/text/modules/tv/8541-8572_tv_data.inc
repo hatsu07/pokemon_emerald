@@ -2,7 +2,7 @@
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251CA3
 gText_Rom_251CA3: @ 0x08251CA3
-	.string "ぎんのたてを　みています！\pめを　まるーく　していますね$"
+	.string "ぎんのたてを　みています！\pめを　まるーく　していますね{EOS}"
 	.if (. - gText_Rom_251CA3) > 0x1d
 	.error "gText_Rom_251CA3 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_251CA3: @ 0x08251CA3
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251CC0
 gText_Rom_251CC0: @ 0x08251CC0
-	.string "ガラスのオブジェを　みています……\pあっ！\pさわっちゃいました……\pしもんを　ペタペタ　つけています$"
+	.string "ガラスのオブジェを　みています……\pあっ！\pさわっちゃいました……\pしもんを　ペタペタ　つけています{EOS}"
 	.if (. - gText_Rom_251CC0) > 0x33
 	.error "gText_Rom_251CC0 may not grow beyond its original slot"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_251CC0: @ 0x08251CC0
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251CF3
 gText_Rom_251CF3: @ 0x08251CF3
-	.string "テレビを　みています！\pかなりの　テレビっこ　みたいですねー$"
+	.string "テレビを　みています！\pかなりの　テレビっこ　みたいですねー{EOS}"
 	.if (. - gText_Rom_251CF3) > 0x1f
 	.error "gText_Rom_251CF3 may not grow beyond its original slot"
 	.endif
@@ -35,7 +35,7 @@ gText_Rom_251CF3: @ 0x08251CF3
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251D12
 gText_Rom_251D12: @ 0x08251D12
-	.string "どろだんごを　ふみつけましたー！\pとっても　うれしそうです$"
+	.string "どろだんごを　ふみつけましたー！\pとっても　うれしそうです{EOS}"
 	.if (. - gText_Rom_251D12) > 0x1e
 	.error "gText_Rom_251D12 may not grow beyond its original slot"
 	.endif
@@ -46,7 +46,7 @@ gText_Rom_251D12: @ 0x08251D12
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251D30
 gText_Rom_251D30: @ 0x08251D30
-	.string "……おや？\pとつぜん　バッグの　なかみを\nガサガサと　いじりだしましたよ！\pそして　{0xFD}{0x03}を\nとりだしたー！\p{0xFD}{0x03}を　もって\nスマイル！　スマイル！！\pテレビの　コマーシャル　みたいだー！$"
+	.string "……おや？\pとつぜん　バッグの　なかみを\nガサガサと　いじりだしましたよ！\pそして　{0xFD}{0x03}を\nとりだしたー！\p{0xFD}{0x03}を　もって\nスマイル！　スマイル！！\pテレビの　コマーシャル　みたいだー！{EOS}"
 	.if (. - gText_Rom_251D30) > 0x5e
 	.error "gText_Rom_251D30 may not grow beyond its original slot"
 	.endif
@@ -57,7 +57,7 @@ gText_Rom_251D30: @ 0x08251D30
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251D8E
 gText_Rom_251D8E: @ 0x08251D8E
-	.string "クッションを　つかんで……$"
+	.string "クッションを　つかんで……{EOS}"
 	.if (. - gText_Rom_251D8E) > 0xe
 	.error "gText_Rom_251D8E may not grow beyond its original slot"
 	.endif
@@ -68,7 +68,7 @@ gText_Rom_251D8E: @ 0x08251D8E
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251D9C
 gText_Rom_251D9C: @ 0x08251D9C
-	.string "たたいてます！\pだいぶ　ストレスが\nたまっている　のでしょうか？$"
+	.string "たたいてます！\pだいぶ　ストレスが\nたまっている　のでしょうか？{EOS}"
 	.if (. - gText_Rom_251D9C) > 0x21
 	.error "gText_Rom_251D9C may not grow beyond its original slot"
 	.endif
@@ -79,7 +79,7 @@ gText_Rom_251D9C: @ 0x08251D9C
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251DBD
 gText_Rom_251DBD: @ 0x08251DBD
-	.string "だきついたー！\pなにか　いいことでも　あった　のでしょうか？$"
+	.string "だきついたー！\pなにか　いいことでも　あった　のでしょうか？{EOS}"
 	.if (. - gText_Rom_251DBD) > 0x1f
 	.error "gText_Rom_251DBD may not grow beyond its original slot"
 	.endif
@@ -90,7 +90,7 @@ gText_Rom_251DBD: @ 0x08251DBD
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251DDC
 gText_Rom_251DDC: @ 0x08251DDC
-	.string "{0xFD}{0x02}さんと　はなしています！\pどうやら　ポケモンバトルを　やるようです\pそして……\pかったー！！\pうれしがっています$"
+	.string "{0xFD}{0x02}さんと　はなしています！\pどうやら　ポケモンバトルを　やるようです\pそして……\pかったー！！\pうれしがっています{EOS}"
 	.if (. - gText_Rom_251DDC) > 0x3b
 	.error "gText_Rom_251DDC may not grow beyond its original slot"
 	.endif
@@ -101,7 +101,7 @@ gText_Rom_251DDC: @ 0x08251DDC
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251E17
 gText_Rom_251E17: @ 0x08251E17
-	.string "{0xFD}{0x02}さんと　はなしています！\pどうやら　ポケモンバトルを　やるようです\pそして……\pまけたー！！\pがっかり　しています$"
+	.string "{0xFD}{0x02}さんと　はなしています！\pどうやら　ポケモンバトルを　やるようです\pそして……\pまけたー！！\pがっかり　しています{EOS}"
 	.if (. - gText_Rom_251E17) > 0x3c
 	.error "gText_Rom_251E17 may not grow beyond its original slot"
 	.endif
@@ -112,7 +112,7 @@ gText_Rom_251E17: @ 0x08251E17
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251E53
 gText_Rom_251E53: @ 0x08251E53
-	.string "{0xFD}{0x02}さんと　はなしています！\pどうやら　ポケモンバトルを　やるようです\pそして……\pいや　ことわった！\pたいせんを　ことわりました！\p{0xFD}{0x02}さんの　ことが\nきに　いらなかった　のでしょうか？$"
+	.string "{0xFD}{0x02}さんと　はなしています！\pどうやら　ポケモンバトルを　やるようです\pそして……\pいや　ことわった！\pたいせんを　ことわりました！\p{0xFD}{0x02}さんの　ことが\nきに　いらなかった　のでしょうか？{EOS}"
 	.if (. - gText_Rom_251E53) > 0x5f
 	.error "gText_Rom_251E53 may not grow beyond its original slot"
 	.endif
@@ -123,7 +123,7 @@ gText_Rom_251E53: @ 0x08251E53
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251EB2
 gText_Rom_251EB2: @ 0x08251EB2
-	.string "ポスターを　じーっと　みつめています！\pきに　いった　のでしょうか？\p……でも\nちょっと　めつきが　やばいですねー$"
+	.string "ポスターを　じーっと　みつめています！\pきに　いった　のでしょうか？\p……でも\nちょっと　めつきが　やばいですねー{EOS}"
 	.if (. - gText_Rom_251EB2) > 0x3a
 	.error "gText_Rom_251EB2 may not grow beyond its original slot"
 	.endif
@@ -134,7 +134,7 @@ gText_Rom_251EB2: @ 0x08251EB2
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251EEC
 gText_Rom_251EEC: @ 0x08251EEC
-	.string "おんぷマットに　のったー！\p……うーん\nふしぎな　きょくを　つくっちゃいました……$"
+	.string "おんぷマットに　のったー！\p……うーん\nふしぎな　きょくを　つくっちゃいました……{EOS}"
 	.if (. - gText_Rom_251EEC) > 0x2a
 	.error "gText_Rom_251EEC may not grow beyond its original slot"
 	.endif
@@ -145,7 +145,7 @@ gText_Rom_251EEC: @ 0x08251EEC
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251F16
 gText_Rom_251F16: @ 0x08251F16
-	.string "{0xFD}{0x02}さんと　はなしています！\pどうやら　ポケモンバトルを　やるようです\pそして……\pひきわけたー！\pふたりとも　とっても　くやしそうです$"
+	.string "{0xFD}{0x02}さんと　はなしています！\pどうやら　ポケモンバトルを　やるようです\pそして……\pひきわけたー！\pふたりとも　とっても　くやしそうです{EOS}"
 	.if (. - gText_Rom_251F16) > 0x45
 	.error "gText_Rom_251F16 may not grow beyond its original slot"
 	.endif
@@ -156,7 +156,7 @@ gText_Rom_251F16: @ 0x08251F16
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251F5B
 gText_Rom_251F5B: @ 0x08251F5B
-	.string "くるっとマットに　のったー！\pめが　まわった　ようです！\pクラクラ　しています$"
+	.string "くるっとマットに　のったー！\pめが　まわった　ようです！\pクラクラ　しています{EOS}"
 	.if (. - gText_Rom_251F5B) > 0x28
 	.error "gText_Rom_251F5B may not grow beyond its original slot"
 	.endif
@@ -167,7 +167,7 @@ gText_Rom_251F5B: @ 0x08251F5B
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+30 aliases)
 	.globl gText_Rom_251F83
 gText_Rom_251F83: @ 0x08251F83
-	.string "すなのおきものに　てを　ふれて……\pあっ！\pこわしちゃいましたー！\pかおが　すこし　ひきつっています$"
+	.string "すなのおきものに　てを　ふれて……\pあっ！\pこわしちゃいましたー！\pかおが　すこし　ひきつっています{EOS}"
 	.if (. - gText_Rom_251F83) > 0x33
 	.error "gText_Rom_251F83 may not grow beyond its original slot"
 	.endif

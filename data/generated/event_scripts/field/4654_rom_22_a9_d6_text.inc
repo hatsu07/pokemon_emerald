@@ -1,7 +1,7 @@
 	@ field-script:0x22A277 FieldScriptText_22A9D6
 	.globl gText_Rom_22A9D6
 gText_Rom_22A9D6: @ 0x0822A9D6
-	.string "あいてを　よわらせたり……\nじわじわ　せめて　くれるのは\lどんな　せいかくかな……\p……　いがいに　のうてんき　とか？\p……　まさかねぇ……$"
+	.string "あいてを　よわらせたり……\nじわじわ　せめて　くれるのは\lどんな　せいかくかな……\p……　いがいに　のうてんき　とか？\p……　まさかねぇ……{EOS}"
 	.if (. - gText_Rom_22A9D6) > 0x47
 	.error "gText_Rom_22A9D6 may not grow beyond its original slot"
 	.endif

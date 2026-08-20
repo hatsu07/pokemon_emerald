@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity/scripts.inc:664 LilycoveCity_Text_CitySign
 	.globl gText_Rom_1E11F4
 gText_Rom_1E11F4: @ 0x081E11F4
-	.string "ここは ミナモ シティ\nりくちの さいはて うみの はじまり$"
+	.string "ここは ミナモ シティ\nりくちの さいはて うみの はじまり{EOS}"
 	.if (. - gText_Rom_1E11F4) > 0x1f
 	.error "gText_Rom_1E11F4 may not grow beyond its original slot"
 	.endif

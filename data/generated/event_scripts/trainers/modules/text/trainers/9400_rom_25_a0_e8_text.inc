@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:260 Route104_Text_WinstonRematchIntro (+1 aliases)
 	.globl gText_Rom_25A0E8
 gText_Rom_25A0E8: @ 0x0825A0E8
-	.string "きみに まけてから いろいろ\nポケモンのこと べんきょう したんだ!$"
+	.string "きみに まけてから いろいろ\nポケモンのこと べんきょう したんだ!{EOS}"
 	.if (. - gText_Rom_25A0E8) > 0x23
 	.error "gText_Rom_25A0E8 may not grow beyond its original slot"
 	.endif

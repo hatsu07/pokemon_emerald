@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_actions.h:214 easy_chat_group_actions_line_214
 	.globl gText_Rom_5EB8F7
 gText_Rom_5EB8F7: @ 0x085EB8F7
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5EB8F7) > 0x4
 	.error "gText_Rom_5EB8F7 may not grow beyond its original slot"
 	.endif
@@ -41,7 +41,7 @@ gText_Rom_5EB8F7: @ 0x085EB8F7
 	.byte 0x2D
 	.globl gText_Rom_5EBABC
 gText_Rom_5EBABC: @ 0x085EBABC
-	.string "あげる$"
+	.string "あげる{EOS}"
 	.if (. - gText_Rom_5EBABC) > 0x4
 	.error "gText_Rom_5EBABC may not grow beyond its original slot"
 	.endif
@@ -62,7 +62,7 @@ gText_Rom_5EBABC: @ 0x085EBABC
 	.byte 0x03, 0x39, 0x2D, 0x00, 0x0A, 0x03, 0x06, 0x2E, 0x00, 0x0C, 0x13
 	.globl gText_Rom_5EBB5B
 gText_Rom_5EBB5B: @ 0x085EBB5B
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5EBB5B) > 0x4
 	.error "gText_Rom_5EBB5B may not grow beyond its original slot"
 	.endif
@@ -95,7 +95,7 @@ gText_Rom_5EBB5B: @ 0x085EBB5B
 	.byte 0x06, 0x09, 0x13
 	.globl gText_Rom_5EBCB2
 gText_Rom_5EBCB2: @ 0x085EBCB2
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5EBCB2) > 0x4
 	.error "gText_Rom_5EBCB2 may not grow beyond its original slot"
 	.endif
@@ -110,7 +110,7 @@ gText_Rom_5EBCB2: @ 0x085EBCB2
 	.byte 0x03, 0x0A, 0x14, 0x37, 0x00
 	.globl gText_Rom_5EBCEB
 gText_Rom_5EBCEB: @ 0x085EBCEB
-	.string "できる$"
+	.string "できる{EOS}"
 	.if (. - gText_Rom_5EBCEB) > 0x4
 	.error "gText_Rom_5EBCEB may not grow beyond its original slot"
 	.endif
@@ -145,7 +145,7 @@ gText_Rom_5EBCEB: @ 0x085EBCEB
 	.byte 0x00, 0xFE, 0x02, 0x2A, 0x06, 0x04, 0x29, 0x0A, 0x14, 0x37, 0x00
 	.globl gText_Rom_5EBE6A
 gText_Rom_5EBE6A: @ 0x085EBE6A
-	.string "できる$"
+	.string "できる{EOS}"
 	.if (. - gText_Rom_5EBE6A) > 0x4
 	.error "gText_Rom_5EBE6A may not grow beyond its original slot"
 	.endif
@@ -163,7 +163,7 @@ gText_Rom_5EBE6A: @ 0x085EBE6A
 	.byte 0x3D, 0x36, 0x03, 0x10, 0x02, 0x2D, 0xFE, 0x15, 0x05, 0x0C, 0x13
 	.globl gText_Rom_5EBED9
 gText_Rom_5EBED9: @ 0x085EBED9
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5EBED9) > 0x4
 	.error "gText_Rom_5EBED9 may not grow beyond its original slot"
 	.endif
@@ -182,7 +182,7 @@ gText_Rom_5EBED9: @ 0x085EBED9
 	.2byte 0x0016, 0x0612, 0x1350
 	.globl gText_Rom_5EBF53
 gText_Rom_5EBF53: @ 0x085EBF53
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5EBF53) > 0x4
 	.error "gText_Rom_5EBF53 may not grow beyond its original slot"
 	.endif

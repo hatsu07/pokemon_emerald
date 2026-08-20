@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:3116 Route130_Text_KatieIntro (+1 aliases)
 	.globl gText_Rom_2616FE
 gText_Rom_2616FE: @ 0x082616FE
-	.string "あおい うみ\nブルーな こころ\lいやされる……$"
+	.string "あおい うみ\nブルーな こころ\lいやされる……{EOS}"
 	.if (. - gText_Rom_2616FE) > 0x18
 	.error "gText_Rom_2616FE may not grow beyond its original slot"
 	.endif

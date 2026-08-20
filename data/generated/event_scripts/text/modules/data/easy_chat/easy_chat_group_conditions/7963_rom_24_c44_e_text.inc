@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_conditions.h:82 easy_chat_group_conditions_line_82
 	.globl gText_Rom_24C44E
 gText_Rom_24C44E: @ 0x0824C44E
-	.string "いない$"
+	.string "いない{EOS}"
 	.if (. - gText_Rom_24C44E) > 0x4
 	.error "gText_Rom_24C44E may not grow beyond its original slot"
 	.endif

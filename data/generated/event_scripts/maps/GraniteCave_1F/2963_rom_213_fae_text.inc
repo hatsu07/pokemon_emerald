@@ -1,7 +1,7 @@
 	@ data/maps/GraniteCave_1F/scripts.inc:23 GraniteCave_1F_Text_ExplainFlash
 	.globl gText_Rom_213FAE
 gText_Rom_213FAE: @ 0x08213FAE
-	.string "ひでん フラッシュを\nポケモンに おぼえさせて つかうとだな\pまっくらな どうくつも\nあかるく てらせるんだぞ!\pまあ つかうには ムロ ポケモンジムの\nジムバッジが ひつよう だがな$"
+	.string "ひでん フラッシュを\nポケモンに おぼえさせて つかうとだな\pまっくらな どうくつも\nあかるく てらせるんだぞ!\pまあ つかうには ムロ ポケモンジムの\nジムバッジが ひつよう だがな{EOS}"
 	.if (. - gText_Rom_213FAE) > 0x5d
 	.error "gText_Rom_213FAE may not grow beyond its original slot"
 	.endif

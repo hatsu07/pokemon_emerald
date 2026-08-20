@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:3023 Route128_Text_AlexaPostBattle
 	.globl gText_Rom_26139B
 gText_Rom_26139B: @ 0x0826139B
-	.string "ここまで きたんですもの\nいちど まけたからって あきらめない$"
+	.string "ここまで きたんですもの\nいちど まけたからって あきらめない{EOS}"
 	.if (. - gText_Rom_26139B) > 0x20
 	.error "gText_Rom_26139B may not grow beyond its original slot"
 	.endif

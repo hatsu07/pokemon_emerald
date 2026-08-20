@@ -1,7 +1,7 @@
 	@ data/maps/MauvilleCity/scripts.inc:616 MauvilleCity_Text_NurseHurtMonBackToHealth
 	.globl gText_Rom_1DE4C1
 gText_Rom_1DE4C1: @ 0x081DE4C1
-	.string "ポケモンしょうぶを するのも いいけど\pもしも じぶんの ポケモンが\nたたかいで きずついたり したなら\lやさしく いたわって あげなきゃね!$"
+	.string "ポケモンしょうぶを するのも いいけど\pもしも じぶんの ポケモンが\nたたかいで きずついたり したなら\lやさしく いたわって あげなきゃね!{EOS}"
 	.if (. - gText_Rom_1DE4C1) > 0x48
 	.error "gText_Rom_1DE4C1 may not grow beyond its original slot"
 	.endif

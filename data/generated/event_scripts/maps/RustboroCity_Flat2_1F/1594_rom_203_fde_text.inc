@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_Flat2_1F/scripts.inc:21 RustboroCity_Flat2_1F_Text_Skitty
 	.globl gText_Rom_203FDE
 gText_Rom_203FDE: @ 0x08203FDE
-	.string "エネコ『ぎゃー!!$"
+	.string "エネコ『ぎゃー!!{EOS}"
 	.if (. - gText_Rom_203FDE) > 0xa
 	.error "gText_Rom_203FDE may not grow beyond its original slot"
 	.endif

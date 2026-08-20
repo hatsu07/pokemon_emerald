@@ -1,7 +1,7 @@
 	@ data/maps/Route123/scripts.inc:196 Route123_Text_BerryMastersHouse
 	.globl gText_Rom_1EE790
 gText_Rom_1EE790: @ 0x081EE790
-	.string "「きのみ めいじんの いえ」$"
+	.string "「きのみ めいじんの いえ」{EOS}"
 	.if (. - gText_Rom_1EE790) > 0xf
 	.error "gText_Rom_1EE790 may not grow beyond its original slot"
 	.endif

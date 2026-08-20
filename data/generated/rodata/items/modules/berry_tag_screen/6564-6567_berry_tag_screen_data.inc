@@ -1,7 +1,7 @@
 	@ asm/berry_tag_screen.s:1746 GetEventLoadMessage
 	.globl gText_Rom_5CD159
 gText_Rom_5CD159: @ 0x085CD159
-	.string "できごとの　よみこみが\nせいじょうに　しゅうりょう　しました$"
+	.string "できごとの　よみこみが\nせいじょうに　しゅうりょう　しました{EOS}"
 	.if (. - gText_Rom_5CD159) > 0x1f
 	.error "gText_Rom_5CD159 may not grow beyond its original slot"
 	.endif
@@ -11,7 +11,7 @@ gText_Rom_5CD159: @ 0x085CD159
 
 	.globl gText_MysteryEventCannotConnect
 gText_MysteryEventCannotConnect: @ 0x085CD178
-	.string "せつぞく　できない　ききの　ようです\nただしい　ききと　やりなおしてください$"
+	.string "せつぞく　できない　ききの　ようです\nただしい　ききと　やりなおしてください{EOS}"
 	.if (. - gText_MysteryEventCannotConnect) != 0x27
 	.error "gText_MysteryEventCannotConnect must retain its original byte length"
 	.endif
@@ -21,7 +21,7 @@ gText_MysteryEventCannotConnect: @ 0x085CD178
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CD19F
 gText_Rom_5CD19F: @ 0x085CD19F
-	.string "エラーがはっせいしました\nしゅうりょうします$"
+	.string "エラーがはっせいしました\nしゅうりょうします{EOS}"
 	.if (. - gText_Rom_5CD19F) != 0x17
 	.error "gText_Rom_5CD19F must retain its original byte length"
 	.endif

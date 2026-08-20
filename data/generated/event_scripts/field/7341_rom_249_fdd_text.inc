@@ -1,7 +1,7 @@
 	@ field-script:0x2070A2 FieldScriptText_249FDD
 	.globl gText_Rom_249FDD
 gText_Rom_249FDD: @ 0x08249FDD
-	.string "もうしわけ　ないのですが\nおきゃくさまの　ポケモンですと\lこのランクには　まだ　しゅつじょう\lできないようです…$"
+	.string "もうしわけ　ないのですが\nおきゃくさまの　ポケモンですと\lこのランクには　まだ　しゅつじょう\lできないようです…{EOS}"
 	.if (. - gText_Rom_249FDD) > 0x39
 	.error "gText_Rom_249FDD may not grow beyond its original slot"
 	.endif

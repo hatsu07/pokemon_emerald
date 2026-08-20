@@ -1,7 +1,7 @@
 	@ field-script:0x2122DF FieldScriptText_212467
 	.globl gText_Rom_212467
 gText_Rom_212467: @ 0x08212467
-	.string "あ……\nそっちに　いくと　あぶないよ……\pほりまくって　いたら\nカベが　くずれて　しまったんだ……\pしたに　おおきな　くうどうが\nあるみたい　だけど……\lカセキも　なさそう　だから\lそのままに　してあるんだ……$"
+	.string "あ……\nそっちに　いくと　あぶないよ……\pほりまくって　いたら\nカベが　くずれて　しまったんだ……\pしたに　おおきな　くうどうが\nあるみたい　だけど……\lカセキも　なさそう　だから\lそのままに　してあるんだ……{EOS}"
 	.if (. - gText_Rom_212467) > 0x6a
 	.error "gText_Rom_212467 may not grow beyond its original slot"
 	.endif

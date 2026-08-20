@@ -1,7 +1,7 @@
 	@ src/strings.c:609 gText_Questionnaire
 	.globl gText_Rom_5CBC22
 gText_Rom_5CBC22: @ 0x085CBC22
-	.string "アンケート$"
+	.string "アンケート{EOS}"
 	.if (. - gText_Rom_5CBC22) > 0x6
 	.error "gText_Rom_5CBC22 may not grow beyond its original slot"
 	.endif

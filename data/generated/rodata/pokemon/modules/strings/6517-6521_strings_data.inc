@@ -1,7 +1,7 @@
 	@ src/strings.c:855 gText_2nd
 	.globl gText_Rom_5CCEBC
 gText_Rom_5CCEBC: @ 0x085CCEBC
-	.string "2い$"
+	.string "2い{EOS}"
 	.if (. - gText_Rom_5CCEBC) > 0x3
 	.error "gText_Rom_5CCEBC may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CCEBC: @ 0x085CCEBC
 	@ src/strings.c:856 gText_3rd
 	.globl gText_Rom_5CCEBF
 gText_Rom_5CCEBF: @ 0x085CCEBF
-	.string "3い$"
+	.string "3い{EOS}"
 	.if (. - gText_Rom_5CCEBF) > 0x3
 	.error "gText_Rom_5CCEBF may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CCEBF: @ 0x085CCEBF
 	@ src/strings.c:857 gText_4th
 	.globl gText_Rom_5CCEC2
 gText_Rom_5CCEC2: @ 0x085CCEC2
-	.string "4い$"
+	.string "4い{EOS}"
 	.if (. - gText_Rom_5CCEC2) > 0x3
 	.error "gText_Rom_5CCEC2 may not grow beyond its original slot"
 	.endif

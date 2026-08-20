@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_people.h:304 easy_chat_group_people_line_304 (+1 aliases)
 	.globl gText_Rom_5612EC
 gText_Rom_5612EC: @ 0x085612EC
-	.string "ちゃん$"
+	.string "ちゃん{EOS}"
 	.if (. - gText_Rom_5612EC) > 0x4
 	.error "gText_Rom_5612EC may not grow beyond its original slot"
 	.endif
@@ -32,7 +32,7 @@ gText_Rom_5612EC: @ 0x085612EC
 	.2byte 0x0000, 0x0000, 0xFFFF, 0x0000, 0x000C, 0x6096
 	.globl gText_Rom_56142C
 gText_Rom_56142C: @ 0x0856142C
-	.string "ちゃん$"
+	.string "ちゃん{EOS}"
 	.if (. - gText_Rom_56142C) > 0x4
 	.error "gText_Rom_56142C may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/data/text/ribbon_descriptions.h:10 gRibbonDescriptionPart2_HyperRank
 	.globl gText_Rom_5F5EC9
 gText_Rom_5F5EC9: @ 0x085F5EC9
-	.string "ハイパーランク ゆうしょう!$"
+	.string "ハイパーランク ゆうしょう!{EOS}"
 	.if (. - gText_Rom_5F5EC9) > 0xf
 	.error "gText_Rom_5F5EC9 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/data/region_map/region_map_entries.h:525 region_map_entries_line_525 (+1 aliases)
 	.globl gText_Rom_5CADF1
 gText_Rom_5CADF1: @ 0x085CADF1
-	.string "みなみのことう$"
+	.string "みなみのことう{EOS}"
 	.if (. - gText_Rom_5CADF1) > 0x8
 	.error "gText_Rom_5CADF1 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CADF1: @ 0x085CADF1
 	@ src/data/region_map/region_map_entries.h:1386 region_map_entries_line_1386 (+1 aliases)
 	.globl gText_Rom_5CADF9
 gText_Rom_5CADF9: @ 0x085CADF9
-	.string "たんじょうのしま$"
+	.string "たんじょうのしま{EOS}"
 	.if (. - gText_Rom_5CADF9) > 0x9
 	.error "gText_Rom_5CADF9 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CADF9: @ 0x085CADF9
 	@ src/data/region_map/region_map_entries.h:1393 region_map_entries_line_1393 (+1 aliases)
 	.globl gText_Rom_5CAE02
 gText_Rom_5CAE02: @ 0x085CAE02
-	.string "さいはてのことう$"
+	.string "さいはてのことう{EOS}"
 	.if (. - gText_Rom_5CAE02) > 0x9
 	.error "gText_Rom_5CAE02 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5CAE02: @ 0x085CAE02
 	@ src/data/region_map/region_map_entries.h:1463 region_map_entries_line_1463 (+1 aliases)
 	.globl gText_Rom_5CAE0B
 gText_Rom_5CAE0B: @ 0x085CAE0B
-	.string "へそのいわ$"
+	.string "へそのいわ{EOS}"
 	.if (. - gText_Rom_5CAE0B) > 0x6
 	.error "gText_Rom_5CAE0B may not grow beyond its original slot"
 	.endif

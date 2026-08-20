@@ -1,7 +1,7 @@
 	@ src/strings.c:753 gText_HatchedFromEgg
 	.globl gText_Rom_5CC874
 gText_Rom_5CC874: @ 0x085CC874
-	.string "タマゴが かえって\n{STR_VAR_1}が うまれた!$"
+	.string "タマゴが かえって\n{STR_VAR_1}が うまれた!{EOS}"
 	.if (. - gText_Rom_5CC874) > 0x14
 	.error "gText_Rom_5CC874 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5CC874: @ 0x085CC874
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CC888
 gText_Rom_5CC888: @ 0x085CC888
-	.string "うまれた {STR_VAR_1}に\nニックネームを つけますか？$"
+	.string "うまれた {STR_VAR_1}に\nニックネームを つけますか？{EOS}"
 	.if (. - gText_Rom_5CC888) != 0x18
 	.error "gText_Rom_5CC888 must retain its original byte length"
 	.endif

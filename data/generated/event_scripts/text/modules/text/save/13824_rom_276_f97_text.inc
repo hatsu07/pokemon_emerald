@@ -1,7 +1,7 @@
 	@ data/text/save.inc:10 gText_SavingDontTurnOff (+2 aliases)
 	.globl gText_Rom_276F97
 gText_Rom_276F97: @ 0x08276F97
-	.string "ポケモンレポートに かきこんでいます\nでんげんを きらないで ください$"
+	.string "ポケモンレポートに かきこんでいます\nでんげんを きらないで ください{EOS}"
 	.if (. - gText_Rom_276F97) > 0x24
 	.error "gText_Rom_276F97 may not grow beyond its original slot"
 	.endif

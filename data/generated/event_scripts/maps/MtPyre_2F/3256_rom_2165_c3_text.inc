@@ -1,7 +1,7 @@
 	@ data/maps/MtPyre_2F/scripts.inc:131 MtPyre_2F_Text_ZanderPostBattle
 	.globl gText_Rom_2165C3
 gText_Rom_2165C3: @ 0x082165C3
-	.string "な なにかが うごく たびに\nビクっと するよ\lここで しゅぎょう するんじゃ なかったよ$"
+	.string "な なにかが うごく たびに\nビクっと するよ\lここで しゅぎょう するんじゃ なかったよ{EOS}"
 	.if (. - gText_Rom_2165C3) > 0x2e
 	.error "gText_Rom_2165C3 may not grow beyond its original slot"
 	.endif

@@ -13,7 +13,7 @@ gText_Rom_23E1D9: @ 0x0823E1D9
 	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:108 Route110_TrickHousePuzzle2_Text_TedDefeat (+1 aliases)
 	.globl gText_Rom_23E1F1
 gText_Rom_23E1F1: @ 0x0823E1F1
-	.string "しょうぶ してたら\nよけい わかんなくなった!$"
+	.string "しょうぶ してたら\nよけい わかんなくなった!{EOS}"
 	.if (. - gText_Rom_23E1F1) > 0x18
 	.error "gText_Rom_23E1F1 may not grow beyond its original slot"
 	.endif

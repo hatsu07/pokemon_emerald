@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5AA746
 gText_Rom_5AA746: @ 0x085AA746
-	.string "{B_SCR_NAME_WITH_PREFIX}の {B_SCR_ABILITY}で\nひざしが つよくなった!$"
+	.string "{B_SCR_NAME_WITH_PREFIX}の {B_SCR_ABILITY}で\nひざしが つよくなった!{EOS}"
 	.if (. - gText_Rom_5AA746) != 0x15
 	.error "gText_Rom_5AA746 must retain its original byte length"
 	.endif
@@ -17,7 +17,7 @@ gText_Rom_5AA746: @ 0x085AA746
 	@ src/battle_message.c:504 battle_message_line_504
 	.globl gText_Rom_5AA797
 gText_Rom_5AA797: @ 0x085AA797
-	.string "{B_SCR_NAME_WITH_PREFIX}は {B_SCR_ABILITY}で\n{B_BUFF1}じょうたいが なおった!$"
+	.string "{B_SCR_NAME_WITH_PREFIX}は {B_SCR_ABILITY}で\n{B_BUFF1}じょうたいが なおった!{EOS}"
 	.if (. - gText_Rom_5AA797) > 0x17
 	.error "gText_Rom_5AA797 may not grow beyond its original slot"
 	.endif
@@ -25,12 +25,12 @@ gText_Rom_5AA797: @ 0x085AA797
 	.space 0x17 - (. - gText_Rom_5AA797)
 	.endif
 	@ Decoded text from ROM range: offset=0x5AA7AE, size=0xE
-	.string "ヘドロえきを　すいとった！$"
+	.string "ヘドロえきを　すいとった！{EOS}"
 
 	@ src/battle_message.c:469 battle_message_line_469
 	.globl gText_Rom_5AA7BC
 gText_Rom_5AA7BC: @ 0x085AA7BC
-	.string "{B_SCR_NAME_WITH_PREFIX}の すがたが\nへんかした!$"
+	.string "{B_SCR_NAME_WITH_PREFIX}の すがたが\nへんかした!{EOS}"
 	.if (. - gText_Rom_5AA7BC) > 0x10
 	.error "gText_Rom_5AA7BC may not grow beyond its original slot"
 	.endif

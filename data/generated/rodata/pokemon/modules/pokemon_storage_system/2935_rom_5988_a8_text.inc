@@ -1,7 +1,7 @@
 	@ src/pokemon_storage_system.c:8103 pokemon_storage_system_line_8103
 	.globl gText_Rom_5988A8
 gText_Rom_5988A8: @ 0x085988A8
-	.string "さばく$"
+	.string "さばく{EOS}"
 	.if (. - gText_Rom_5988A8) > 0x4
 	.error "gText_Rom_5988A8 may not grow beyond its original slot"
 	.endif
@@ -9,8 +9,8 @@ gText_Rom_5988A8: @ 0x085988A8
 	.space 0x4 - (. - gText_Rom_5988A8)
 	.endif
 	@ Decoded text from ROM range: offset=0x5988AC, size=0x2A
-	.string "カチヌキ　ファミリー$"
-	.string "ロープウェイのりば$"
-	.string "ガラスざいくのみせ$"
-	.string "てんきけんきゅうじょ$"
+	.string "カチヌキ　ファミリー{EOS}"
+	.string "ロープウェイのりば{EOS}"
+	.string "ガラスざいくのみせ{EOS}"
+	.string "てんきけんきゅうじょ{EOS}"
 

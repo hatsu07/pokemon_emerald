@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_actions.h:214 easy_chat_group_actions_line_214
 	.globl gText_Rom_5E9123
 gText_Rom_5E9123: @ 0x085E9123
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5E9123) > 0x4
 	.error "gText_Rom_5E9123 may not grow beyond its original slot"
 	.endif
@@ -16,7 +16,7 @@ gText_Rom_5E9123: @ 0x085E9123
 	.byte 0x18, 0x21, 0x27, 0x0E, 0x13
 	.globl gText_Rom_5E915C
 gText_Rom_5E915C: @ 0x085E915C
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5E915C) > 0x4
 	.error "gText_Rom_5E915C may not grow beyond its original slot"
 	.endif
@@ -31,7 +31,7 @@ gText_Rom_5E915C: @ 0x085E915C
 	.byte 0x46, 0x2A, 0x10, 0x01, 0x14, 0x1A, 0x00, 0x0A, 0x2E, 0x27, 0x2E, 0x0C, 0x13
 	.globl gText_Rom_5E919D
 gText_Rom_5E919D: @ 0x085E919D
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5E919D) > 0x4
 	.error "gText_Rom_5E919D may not grow beyond its original slot"
 	.endif
@@ -63,7 +63,7 @@ gText_Rom_5E919D: @ 0x085E919D
 	.2byte 0x130E
 	.globl gText_Rom_5E92E3
 gText_Rom_5E92E3: @ 0x085E92E3
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5E92E3) > 0x4
 	.error "gText_Rom_5E92E3 may not grow beyond its original slot"
 	.endif

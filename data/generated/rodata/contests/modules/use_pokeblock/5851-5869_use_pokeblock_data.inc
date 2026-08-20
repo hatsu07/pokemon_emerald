@@ -1,7 +1,7 @@
 	@ src/use_pokeblock.c:159 sText_GetsAPokeBlockQuestion
 	.globl gText_Rom_5CBD12
 gText_Rom_5CBD12: @ 0x085CBD12
-	.string "に ポロックを あげますか?$"
+	.string "に ポロックを あげますか?{EOS}"
 	.if (. - gText_Rom_5CBD12) > 0xf
 	.error "gText_Rom_5CBD12 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CBD12: @ 0x085CBD12
 	@ asm/use_pokeblock.s:1655 Pokeblock_BufferEnhancedStatText (+3 aliases)
 	.globl gText_Rom_5CBD21
 gText_Rom_5CBD21: @ 0x085CBD21
-	.string "かっこよさ$"
+	.string "かっこよさ{EOS}"
 	.if (. - gText_Rom_5CBD21) > 0x6
 	.error "gText_Rom_5CBD21 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CBD21: @ 0x085CBD21
 	@ asm/use_pokeblock.s:1655 Pokeblock_BufferEnhancedStatText (+3 aliases)
 	.globl gText_Rom_5CBD27
 gText_Rom_5CBD27: @ 0x085CBD27
-	.string "うつくしさ$"
+	.string "うつくしさ{EOS}"
 	.if (. - gText_Rom_5CBD27) > 0x6
 	.error "gText_Rom_5CBD27 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5CBD27: @ 0x085CBD27
 	@ asm/use_pokeblock.s:1655 Pokeblock_BufferEnhancedStatText (+3 aliases)
 	.globl gText_Rom_5CBD2D
 gText_Rom_5CBD2D: @ 0x085CBD2D
-	.string "かわいさ$"
+	.string "かわいさ{EOS}"
 	.if (. - gText_Rom_5CBD2D) > 0x5
 	.error "gText_Rom_5CBD2D may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5CBD2D: @ 0x085CBD2D
 	@ asm/use_pokeblock.s:1655 Pokeblock_BufferEnhancedStatText (+3 aliases)
 	.globl gText_Rom_5CBD32
 gText_Rom_5CBD32: @ 0x085CBD32
-	.string "かしこさ$"
+	.string "かしこさ{EOS}"
 	.if (. - gText_Rom_5CBD32) > 0x5
 	.error "gText_Rom_5CBD32 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5CBD32: @ 0x085CBD32
 	@ asm/use_pokeblock.s:1655 Pokeblock_BufferEnhancedStatText (+3 aliases)
 	.globl gText_Rom_5CBD37
 gText_Rom_5CBD37: @ 0x085CBD37
-	.string "たくましさ$"
+	.string "たくましさ{EOS}"
 	.if (. - gText_Rom_5CBD37) > 0x6
 	.error "gText_Rom_5CBD37 may not grow beyond its original slot"
 	.endif
@@ -68,7 +68,7 @@ gText_Rom_5CBD37: @ 0x085CBD37
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CBD3D
 gText_Rom_5CBD3D: @ 0x085CBD3D
-	.string "に　みがきが　かかった！$"
+	.string "に　みがきが　かかった！{EOS}"
 	.if (. - gText_Rom_5CBD3D) != 0xd
 	.error "gText_Rom_5CBD3D must retain its original byte length"
 	.endif
@@ -79,7 +79,7 @@ gText_Rom_5CBD3D: @ 0x085CBD3D
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CBD4A
 gText_Rom_5CBD4A: @ 0x085CBD4A
-	.string "なにも かわらなかった!$"
+	.string "なにも かわらなかった!{EOS}"
 	.if (. - gText_Rom_5CBD4A) != 0xd
 	.error "gText_Rom_5CBD4A must retain its original byte length"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_5CBD4A: @ 0x085CBD4A
 	@ src/use_pokeblock.c:162 sText_WontEatAnymore
 	.globl gText_Rom_5CBD57
 gText_Rom_5CBD57: @ 0x085CBD57
-	.string "もう これいじょう たべない みたい…$"
+	.string "もう これいじょう たべない みたい…{EOS}"
 	.if (. - gText_Rom_5CBD57) > 0x14
 	.error "gText_Rom_5CBD57 may not grow beyond its original slot"
 	.endif

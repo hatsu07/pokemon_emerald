@@ -1,7 +1,7 @@
 	@ field-script:0x211B88 FieldScriptText_211D95
 	.globl gText_Rom_211D95
 gText_Rom_211D95: @ 0x08211D95
-	.string "まごの　やつも　いまごろは\nポケモンリーグの　チャンピオンに\lちょうせん　しているの　じゃろうか？\pそれとも　わしの　まご　じゃから\nもう　チャンピオン　かもな……　ウヒヒ！$"
+	.string "まごの　やつも　いまごろは\nポケモンリーグの　チャンピオンに\lちょうせん　しているの　じゃろうか？\pそれとも　わしの　まご　じゃから\nもう　チャンピオン　かもな……　ウヒヒ！{EOS}"
 	.if (. - gText_Rom_211D95) > 0x58
 	.error "gText_Rom_211D95 may not grow beyond its original slot"
 	.endif

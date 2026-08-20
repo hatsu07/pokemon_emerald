@@ -1,7 +1,7 @@
 	@ data/maps/Route110_TrickHousePuzzle8/scripts.inc:33 Route110_TrickHousePuzzle8_Text_VincentIntro (+1 aliases)
 	.globl gText_Rom_240502
 gText_Rom_240502: @ 0x08240502
-	.string "ここまで こられる トレーナーは\nそうは いないよな!$"
+	.string "ここまで こられる トレーナーは\nそうは いないよな!{EOS}"
 	.if (. - gText_Rom_240502) > 0x1c
 	.error "gText_Rom_240502 may not grow beyond its original slot"
 	.endif

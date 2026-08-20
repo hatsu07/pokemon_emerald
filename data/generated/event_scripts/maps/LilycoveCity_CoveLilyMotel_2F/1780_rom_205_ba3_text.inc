@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc:92 LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy
 	.globl gText_Rom_205BA3
 gText_Rom_205BA3: @ 0x08205BA3
-	.string "エニシダ『コンテストに かつための\nせんりゃくを ねるのも\lつよい トレーナーに なるための\lほうほうの ひとつでは あるね$"
+	.string "エニシダ『コンテストに かつための\nせんりゃくを ねるのも\lつよい トレーナーに なるための\lほうほうの ひとつでは あるね{EOS}"
 	.if (. - gText_Rom_205BA3) > 0x3f
 	.error "gText_Rom_205BA3 may not grow beyond its original slot"
 	.endif

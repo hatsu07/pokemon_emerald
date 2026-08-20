@@ -1,7 +1,7 @@
 	@ src/battle_dome.c:941 battle_dome_line_941
 	.globl gText_Rom_273F63
 gText_Rom_273F63: @ 0x08273F63
-	.string "HPと こうげきに ちからを いれていない!$"
+	.string "HPと こうげきに ちからを いれていない!{EOS}"
 	.if (. - gText_Rom_273F63) > 0x17
 	.error "gText_Rom_273F63 may not grow beyond its original slot"
 	.endif

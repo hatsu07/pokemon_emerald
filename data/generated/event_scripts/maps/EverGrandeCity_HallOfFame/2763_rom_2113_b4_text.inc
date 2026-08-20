@@ -1,7 +1,7 @@
 	@ data/maps/EverGrandeCity_HallOfFame/scripts.inc:85 EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames
 	.globl gText_Rom_2113B4
 gText_Rom_2113B4: @ 0x082113B4
-	.string "ミクリ『さあ! ポケモン リーグを\nかちぬいた きみの なまえと\pともに たたかった きみの パートナーを\nこの マシンに きろく するのだ!$"
+	.string "ミクリ『さあ! ポケモン リーグを\nかちぬいた きみの なまえと\pともに たたかった きみの パートナーを\nこの マシンに きろく するのだ!{EOS}"
 	.if (. - gText_Rom_2113B4) > 0x48
 	.error "gText_Rom_2113B4 may not grow beyond its original slot"
 	.endif

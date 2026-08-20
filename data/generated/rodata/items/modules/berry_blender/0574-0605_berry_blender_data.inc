@@ -1,7 +1,7 @@
 	@ asm/berry_blender.s:7981 Blender_PrintBlendingResults
 	.globl gText_Rom_30F834
 gText_Rom_30F834: @ 0x0830F834
-	.string "ふん$"
+	.string "ふん{EOS}"
 	.if (. - gText_Rom_30F834) > 0x3
 	.error "gText_Rom_30F834 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_30F834: @ 0x0830F834
 	@ src/berry_blender.c:288 sText_Sec (+1 aliases)
 	.globl gText_Rom_30F837
 gText_Rom_30F837: @ 0x0830F837
-	.string "びょう$"
+	.string "びょう{EOS}"
 	.if (. - gText_Rom_30F837) > 0x4
 	.error "gText_Rom_30F837 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_30F837: @ 0x0830F837
 	@ src/berry_blender.c:289 sText_MaximumSpeed
 	.globl gText_Rom_30F83B
 gText_Rom_30F83B: @ 0x0830F83B
-	.string "さいこうそくど$"
+	.string "さいこうそくど{EOS}"
 	.if (. - gText_Rom_30F83B) > 0x8
 	.error "gText_Rom_30F83B may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_30F83B: @ 0x0830F83B
 	@ src/berry_blender.c:290 sText_RPM
 	.globl gText_Rom_30F843
 gText_Rom_30F843: @ 0x0830F843
-	.string "rpm$"
+	.string "rpm{EOS}"
 	.if (. - gText_Rom_30F843) > 0x4
 	.error "gText_Rom_30F843 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_30F843: @ 0x0830F843
 	@ asm/berry_blender.s:7807 Blender_PrintBlendingResults
 	.globl gText_Rom_30F847
 gText_Rom_30F847: @ 0x0830F847
-	.string ",$"
+	.string ",{EOS}"
 	.if (. - gText_Rom_30F847) > 0x2
 	.error "gText_Rom_30F847 may not grow beyond its original slot"
 	.endif
@@ -63,7 +63,7 @@ gBerryBlenderData_0830F849: @ 0x0830F849
 	@ src/berry_blender.c:309 sText_Ranking
 	.globl gText_Rom_30F84D
 gText_Rom_30F84D: @ 0x0830F84D
-	.string "ランキング$"
+	.string "ランキング{EOS}"
 	.if (. - gText_Rom_30F84D) > 0x6
 	.error "gText_Rom_30F84D may not grow beyond its original slot"
 	.endif
@@ -74,7 +74,7 @@ gText_Rom_30F84D: @ 0x0830F84D
 	@ src/berry_blender.c:310 sText_TheLevelIs (+1 aliases)
 	.globl gText_Rom_30F853
 gText_Rom_30F853: @ 0x0830F853
-	.string "レベル$"
+	.string "レベル{EOS}"
 	.if (. - gText_Rom_30F853) > 0x4
 	.error "gText_Rom_30F853 may not grow beyond its original slot"
 	.endif
@@ -85,7 +85,7 @@ gText_Rom_30F853: @ 0x0830F853
 	@ src/berry_blender.c:311 sText_TheFeelIs
 	.globl gText_Rom_30F857
 gText_Rom_30F857: @ 0x0830F857
-	.string "で なめらかさは$"
+	.string "で なめらかさは{EOS}"
 	.if (. - gText_Rom_30F857) > 0x9
 	.error "gText_Rom_30F857 may not grow beyond its original slot"
 	.endif
@@ -96,7 +96,7 @@ gText_Rom_30F857: @ 0x0830F857
 	@ asm/berry_blender.s:8215 Blender_PrintMadePokeblockString
 	.globl gText_Rom_30F860
 gText_Rom_30F860: @ 0x0830F860
-	.string "だ$"
+	.string "だ{EOS}"
 	.if (. - gText_Rom_30F860) > 0x2
 	.error "gText_Rom_30F860 may not grow beyond its original slot"
 	.endif
@@ -324,7 +324,7 @@ gBerryBlenderData_0830FBB8: @ 0x0830FBB8
 	@ src/berry_blender.c:314 sText_SavingDontTurnOff2
 	.globl gText_Rom_30FBC8
 gText_Rom_30FBC8: @ 0x0830FBC8
-	.string "ポケモンレポートに かきこんでいます    \nでんげんを きらないで ください      $"
+	.string "ポケモンレポートに かきこんでいます    \nでんげんを きらないで ください      {EOS}"
 	.if (. - gText_Rom_30FBC8) > 0x2e
 	.error "gText_Rom_30FBC8 may not grow beyond its original slot"
 	.endif
@@ -335,7 +335,7 @@ gText_Rom_30FBC8: @ 0x0830FBC8
 	@ src/berry_blender.c:917 sJPText_GoodTvReady
 	.globl gText_Rom_30FBF6
 gText_Rom_30FBF6: @ 0x0830FBF6
-	.string "\nいいTVができました $"
+	.string "\nいいTVができました {EOS}"
 	.if (. - gText_Rom_30FBF6) > 0xd
 	.error "gText_Rom_30FBF6 may not grow beyond its original slot"
 	.endif
@@ -346,7 +346,7 @@ gText_Rom_30FBF6: @ 0x0830FBF6
 	@ src/berry_blender.c:918 sJPText_BadTvReady
 	.globl gText_Rom_30FC03
 gText_Rom_30FC03: @ 0x0830FC03
-	.string "\nダメTVができました $"
+	.string "\nダメTVができました {EOS}"
 	.if (. - gText_Rom_30FC03) > 0xd
 	.error "gText_Rom_30FC03 may not grow beyond its original slot"
 	.endif
@@ -357,7 +357,7 @@ gText_Rom_30FC03: @ 0x0830FC03
 	@ src/berry_blender.c:919 berry_blender_line_919 (+2 aliases)
 	.globl gText_Rom_30FC10
 gText_Rom_30FC10: @ 0x0830FC10
-	.string "からい$"
+	.string "からい{EOS}"
 	.if (. - gText_Rom_30FC10) > 0x4
 	.error "gText_Rom_30FC10 may not grow beyond its original slot"
 	.endif
@@ -369,7 +369,7 @@ gText_Rom_30FC10: @ 0x0830FC10
 	@ src/berry_blender.c:919 berry_blender_line_919 (+2 aliases)
 	.globl gText_Rom_30FC15
 gText_Rom_30FC15: @ 0x0830FC15
-	.string "しぶい$"
+	.string "しぶい{EOS}"
 	.if (. - gText_Rom_30FC15) > 0x4
 	.error "gText_Rom_30FC15 may not grow beyond its original slot"
 	.endif
@@ -381,7 +381,7 @@ gText_Rom_30FC15: @ 0x0830FC15
 	@ src/berry_blender.c:919 berry_blender_line_919 (+3 aliases)
 	.globl gText_Rom_30FC1A
 gText_Rom_30FC1A: @ 0x0830FC1A
-	.string "あまい$"
+	.string "あまい{EOS}"
 	.if (. - gText_Rom_30FC1A) > 0x4
 	.error "gText_Rom_30FC1A may not grow beyond its original slot"
 	.endif
@@ -393,7 +393,7 @@ gText_Rom_30FC1A: @ 0x0830FC1A
 	@ src/berry_blender.c:919 berry_blender_line_919 (+2 aliases)
 	.globl gText_Rom_30FC1F
 gText_Rom_30FC1F: @ 0x0830FC1F
-	.string "にがい$"
+	.string "にがい{EOS}"
 	.if (. - gText_Rom_30FC1F) > 0x4
 	.error "gText_Rom_30FC1F may not grow beyond its original slot"
 	.endif

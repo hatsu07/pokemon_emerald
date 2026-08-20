@@ -1,7 +1,7 @@
 	@ src/pokemon_storage_system.c:870 pokemon_storage_system_line_870
 	.globl gText_Rom_5CB47A
 gText_Rom_5CB47A: @ 0x085CB47A
-	.string "ボックスに あずけている ポケモンを \nてもちに くわえる ことが できます $"
+	.string "ボックスに あずけている ポケモンを \nてもちに くわえる ことが できます {EOS}"
 	.if (. - gText_Rom_5CB47A) > 0x28
 	.error "gText_Rom_5CB47A may not grow beyond its original slot"
 	.endif
@@ -15,7 +15,7 @@ gText_Rom_5CB47A: @ 0x085CB47A
 	.byte 0x14, 0x37, 0x00, 0x44, 0x07, 0x1F, 0x0D, 0xFF
 	.globl gText_Rom_5CB4CA
 gText_Rom_5CB4CA: @ 0x085CB4CA
-	.string "ボックスに あずけている ポケモンや \nてもちの ポケモンを せいり できます$"
+	.string "ボックスに あずけている ポケモンや \nてもちの ポケモンを せいり できます{EOS}"
 	.if (. - gText_Rom_5CB4CA) > 0x28
 	.error "gText_Rom_5CB4CA may not grow beyond its original slot"
 	.endif
@@ -26,7 +26,7 @@ gText_Rom_5CB4CA: @ 0x085CB4CA
 	@ src/pokemon_storage_system.c:873 pokemon_storage_system_line_873
 	.globl gText_Rom_5CB4F2
 gText_Rom_5CB4F2: @ 0x085CB4F2
-	.string "ポケモンが もっている どうぐを\nせいり できます$"
+	.string "ポケモンが もっている どうぐを\nせいり できます{EOS}"
 	.if (. - gText_Rom_5CB4F2) > 0x1a
 	.error "gText_Rom_5CB4F2 may not grow beyond its original slot"
 	.endif
@@ -60,7 +60,7 @@ gPokemonStorageSystemData_085CB55C: @ 0x085CB55C
 	@ src/pokemon_storage_system.c:863 gText_Box
 	.globl gText_Rom_5CB584
 gText_Rom_5CB584: @ 0x085CB584
-	.string "ボックス$"
+	.string "ボックス{EOS}"
 	.if (. - gText_Rom_5CB584) > 0x5
 	.error "gText_Rom_5CB584 may not grow beyond its original slot"
 	.endif

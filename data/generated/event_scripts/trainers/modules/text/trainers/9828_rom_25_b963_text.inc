@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:875 Route110_Text_AlyssaIntro (+1 aliases)
 	.globl gText_Rom_25B963
 gText_Rom_25B963: @ 0x0825B963
-	.string "サイクリングロード から おちちゃった!\nはずかしい…… しょうぶで まぎらわすわ!$"
+	.string "サイクリングロード から おちちゃった!\nはずかしい…… しょうぶで まぎらわすわ!{EOS}"
 	.if (. - gText_Rom_25B963) > 0x2b
 	.error "gText_Rom_25B963 may not grow beyond its original slot"
 	.endif

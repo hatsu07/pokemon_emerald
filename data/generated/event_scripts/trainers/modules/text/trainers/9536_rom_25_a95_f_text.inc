@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:458 Route107_Text_DeniseDefeated (+1 aliases)
 	.globl gText_Rom_25A95F
 gText_Rom_25A95F: @ 0x0825A95F
-	.string "ヤダ もーっ!$"
+	.string "ヤダ もーっ!{EOS}"
 	.if (. - gText_Rom_25A95F) > 0x8
 	.error "gText_Rom_25A95F may not grow beyond its original slot"
 	.endif

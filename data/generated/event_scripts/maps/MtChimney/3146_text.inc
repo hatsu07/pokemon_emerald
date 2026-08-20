@@ -1,7 +1,7 @@
 	@ data/maps/MtChimney/scripts.inc:835 MtChimney_Text_SawyerPostBattle
 	.globl gText_Rom_215A45
 gText_Rom_215A45: @ 0x08215A45
-	.string "いまから あつい おねいさんたちを つれて\nフエンおんせん でも いこうかな$"
+	.string "いまから あつい おねいさんたちを つれて\nフエンおんせん でも いこうかな{EOS}"
 	.if (. - gText_Rom_215A45) > 0x27
 	.error "gText_Rom_215A45 may not grow beyond its original slot"
 	.endif

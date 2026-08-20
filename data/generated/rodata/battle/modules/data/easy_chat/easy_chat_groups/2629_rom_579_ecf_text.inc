@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_groups.h:176 easy_chat_groups_line_176
 	.globl gText_Rom_579ECF
 gText_Rom_579ECF: @ 0x08579ECF
-	.string "ポケモン2$"
+	.string "ポケモン2{EOS}"
 	.if (. - gText_Rom_579ECF) > 0x6
 	.error "gText_Rom_579ECF may not grow beyond its original slot"
 	.endif

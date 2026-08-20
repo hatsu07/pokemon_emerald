@@ -1,7 +1,7 @@
 	@ data/maps/Route116/scripts.inc:402 Route116_Text_NewBallAvailableAtMart
 	.globl gText_Rom_1EC1A8
 gText_Rom_1EC1A8: @ 0x081EC1A8
-	.string "あたらしい モンスターボールは\nカナズミの フレンドリィ ショップで\lうってますからね!\pぜひ つかって みてください!\nではでは……$"
+	.string "あたらしい モンスターボールは\nカナズミの フレンドリィ ショップで\lうってますからね!\pぜひ つかって みてください!\nではでは……{EOS}"
 	.if (. - gText_Rom_1EC1A8) > 0x44
 	.error "gText_Rom_1EC1A8 may not grow beyond its original slot"
 	.endif

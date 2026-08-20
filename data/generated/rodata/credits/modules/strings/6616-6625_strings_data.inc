@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5DBB98
 gText_Rom_5DBB98: @ 0x085DBB98
-	.string "ポケモンレンタル$"
+	.string "ポケモンレンタル{EOS}"
 	.if (. - gText_Rom_5DBB98) != 0x9
 	.error "gText_Rom_5DBB98 must retain its original byte length"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5DBB98: @ 0x085DBB98
 	@ src/strings.c:993 gText_SelectFirstPkmn
 	.globl gText_Rom_5DBBA1
 gText_Rom_5DBBA1: @ 0x085DBBA1
-	.string "1ばんめのポケモンを えらんでください$"
+	.string "1ばんめのポケモンを えらんでください{EOS}"
 	.if (. - gText_Rom_5DBBA1) > 0x14
 	.error "gText_Rom_5DBBA1 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5DBBA1: @ 0x085DBBA1
 	@ src/strings.c:994 gText_SelectSecondPkmn
 	.globl gText_Rom_5DBBB5
 gText_Rom_5DBBB5: @ 0x085DBBB5
-	.string "2ばんめのポケモンを えらんでください$"
+	.string "2ばんめのポケモンを えらんでください{EOS}"
 	.if (. - gText_Rom_5DBBB5) > 0x14
 	.error "gText_Rom_5DBBB5 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5DBBB5: @ 0x085DBBB5
 	@ src/strings.c:995 gText_SelectThirdPkmn
 	.globl gText_Rom_5DBBC9
 gText_Rom_5DBBC9: @ 0x085DBBC9
-	.string "3ばんめのポケモンを えらんでください$"
+	.string "3ばんめのポケモンを えらんでください{EOS}"
 	.if (. - gText_Rom_5DBBC9) > 0x14
 	.error "gText_Rom_5DBBC9 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5DBBC9: @ 0x085DBBC9
 	@ src/strings.c:996 gText_Rent
 	.globl gText_Rom_5DBBDD
 gText_Rom_5DBBDD: @ 0x085DBBDD
-	.string "レンタルする$"
+	.string "レンタルする{EOS}"
 	.if (. - gText_Rom_5DBBDD) > 0x7
 	.error "gText_Rom_5DBBDD may not grow beyond its original slot"
 	.endif

@@ -2,7 +2,7 @@
 	@ src/data/credits.h:152 sCreditsText_AkikoShinozaki
 	.globl gText_Rom_5C6FFC
 gText_Rom_5C6FFC: @ 0x085C6FFC
-	.string "しのざき あきこ$"
+	.string "しのざき あきこ{EOS}"
 	.if (. - gText_Rom_5C6FFC) > 0x9
 	.error "gText_Rom_5C6FFC may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5C6FFC: @ 0x085C6FFC
 	@ src/data/credits.h:153 sCreditsText_AstukoFujii
 	.globl gText_Rom_5C7005
 gText_Rom_5C7005: @ 0x085C7005
-	.string "ふじい あつこ$"
+	.string "ふじい あつこ{EOS}"
 	.if (. - gText_Rom_5C7005) > 0x8
 	.error "gText_Rom_5C7005 may not grow beyond its original slot"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_5C7005: @ 0x085C7005
 	@ src/data/credits.h:154 sCreditsText_NozomuSaito
 	.globl gText_Rom_5C700D
 gText_Rom_5C700D: @ 0x085C700D
-	.string "さいとう のぞむ$"
+	.string "さいとう のぞむ{EOS}"
 	.if (. - gText_Rom_5C700D) > 0x9
 	.error "gText_Rom_5C700D may not grow beyond its original slot"
 	.endif
@@ -35,7 +35,7 @@ gText_Rom_5C700D: @ 0x085C700D
 	@ src/data/credits.h:155 sCreditsText_KenkichiToyama
 	.globl gText_Rom_5C7016
 gText_Rom_5C7016: @ 0x085C7016
-	.string "とやま けんきち$"
+	.string "とやま けんきち{EOS}"
 	.if (. - gText_Rom_5C7016) > 0x9
 	.error "gText_Rom_5C7016 may not grow beyond its original slot"
 	.endif
@@ -46,7 +46,7 @@ gText_Rom_5C7016: @ 0x085C7016
 	@ src/data/credits.h:156 sCreditsText_SuguruNakatsui
 	.globl gText_Rom_5C701F
 gText_Rom_5C701F: @ 0x085C701F
-	.string "なかつい すぐる$"
+	.string "なかつい すぐる{EOS}"
 	.if (. - gText_Rom_5C701F) > 0x9
 	.error "gText_Rom_5C701F may not grow beyond its original slot"
 	.endif
@@ -57,7 +57,7 @@ gText_Rom_5C701F: @ 0x085C701F
 	@ src/data/credits.h:157 sCreditsText_YumiFunasaka
 	.globl gText_Rom_5C7028
 gText_Rom_5C7028: @ 0x085C7028
-	.string "ふなさか ゆみ$"
+	.string "ふなさか ゆみ{EOS}"
 	.if (. - gText_Rom_5C7028) > 0x8
 	.error "gText_Rom_5C7028 may not grow beyond its original slot"
 	.endif
@@ -68,7 +68,7 @@ gText_Rom_5C7028: @ 0x085C7028
 	@ src/data/credits.h:158 sCreditsText_NaokoYanase
 	.globl gText_Rom_5C7030
 gText_Rom_5C7030: @ 0x085C7030
-	.string "やなせ なおこ$"
+	.string "やなせ なおこ{EOS}"
 	.if (. - gText_Rom_5C7030) > 0x8
 	.error "gText_Rom_5C7030 may not grow beyond its original slot"
 	.endif
@@ -80,7 +80,7 @@ gText_Rom_5C7030: @ 0x085C7030
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C7038
 gText_Rom_5C7038: @ 0x085C7038
-	.string "スーパーマリオクラブ$"
+	.string "スーパーマリオクラブ{EOS}"
 	.if (. - gText_Rom_5C7038) != 0xb
 	.error "gText_Rom_5C7038 must retain its original byte length"
 	.endif
@@ -90,7 +90,7 @@ gText_Rom_5C7038: @ 0x085C7038
 	@ src/data/credits.h:160 sCreditsText_AtsushiTada
 	.globl gText_Rom_5C7043
 gText_Rom_5C7043: @ 0x085C7043
-	.string "ただ あつし$"
+	.string "ただ あつし{EOS}"
 	.if (. - gText_Rom_5C7043) > 0x7
 	.error "gText_Rom_5C7043 may not grow beyond its original slot"
 	.endif
@@ -101,7 +101,7 @@ gText_Rom_5C7043: @ 0x085C7043
 	@ src/data/credits.h:161 sCreditsText_TakahiroOhnishi
 	.globl gText_Rom_5C704A
 gText_Rom_5C704A: @ 0x085C704A
-	.string "おおにし たかひろ$"
+	.string "おおにし たかひろ{EOS}"
 	.if (. - gText_Rom_5C704A) > 0xa
 	.error "gText_Rom_5C704A may not grow beyond its original slot"
 	.endif
@@ -112,7 +112,7 @@ gText_Rom_5C704A: @ 0x085C704A
 	@ src/data/credits.h:162 sCreditsText_NorihideOkamura
 	.globl gText_Rom_5C7054
 gText_Rom_5C7054: @ 0x085C7054
-	.string "おかむら のりひで$"
+	.string "おかむら のりひで{EOS}"
 	.if (. - gText_Rom_5C7054) > 0xa
 	.error "gText_Rom_5C7054 may not grow beyond its original slot"
 	.endif
@@ -123,7 +123,7 @@ gText_Rom_5C7054: @ 0x085C7054
 	@ src/data/credits.h:163 sCreditsText_HiroNakamura
 	.globl gText_Rom_5C705E
 gText_Rom_5C705E: @ 0x085C705E
-	.string "なかむら ひろき$"
+	.string "なかむら ひろき{EOS}"
 	.if (. - gText_Rom_5C705E) > 0x9
 	.error "gText_Rom_5C705E may not grow beyond its original slot"
 	.endif
@@ -134,7 +134,7 @@ gText_Rom_5C705E: @ 0x085C705E
 	@ src/data/credits.h:164 sCreditsText_HiroyukiUesugi
 	.globl gText_Rom_5C7067
 gText_Rom_5C7067: @ 0x085C7067
-	.string "うえすぎ ひろゆき$"
+	.string "うえすぎ ひろゆき{EOS}"
 	.if (. - gText_Rom_5C7067) > 0xa
 	.error "gText_Rom_5C7067 may not grow beyond its original slot"
 	.endif
@@ -145,7 +145,7 @@ gText_Rom_5C7067: @ 0x085C7067
 	@ src/data/credits.h:165 sCreditsText_TerukiMurakawa
 	.globl gText_Rom_5C7071
 gText_Rom_5C7071: @ 0x085C7071
-	.string "むらかわ てるき$"
+	.string "むらかわ てるき{EOS}"
 	.if (. - gText_Rom_5C7071) > 0x9
 	.error "gText_Rom_5C7071 may not grow beyond its original slot"
 	.endif
@@ -156,7 +156,7 @@ gText_Rom_5C7071: @ 0x085C7071
 	@ src/data/credits.h:166 sCreditsText_AkiraKinashi
 	.globl gText_Rom_5C707A
 gText_Rom_5C707A: @ 0x085C707A
-	.string "きなし あきら$"
+	.string "きなし あきら{EOS}"
 	.if (. - gText_Rom_5C707A) > 0x8
 	.error "gText_Rom_5C707A may not grow beyond its original slot"
 	.endif

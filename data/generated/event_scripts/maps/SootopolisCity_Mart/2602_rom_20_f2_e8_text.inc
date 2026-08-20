@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_Mart/scripts.inc:64 SootopolisCity_Mart_Text_DidSomethingAwaken
 	.globl gText_Rom_20F2E8
 gText_Rom_20F2E8: @ 0x0820F2E8
-	.string "この てんき……\nなにかが めざめたのか……?$"
+	.string "この てんき……\nなにかが めざめたのか……?{EOS}"
 	.if (. - gText_Rom_20F2E8) > 0x18
 	.error "gText_Rom_20F2E8 may not grow beyond its original slot"
 	.endif

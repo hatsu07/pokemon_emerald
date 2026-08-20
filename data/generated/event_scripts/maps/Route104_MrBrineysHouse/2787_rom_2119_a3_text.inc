@@ -1,7 +1,7 @@
 	@ data/maps/Route104_MrBrineysHouse/scripts.inc:151 Route104_MrBrineysHouse_Text_Peeko
 	.globl gText_Rom_2119A3
 gText_Rom_2119A3: @ 0x082119A3
-	.string "ピーコちゃん『ピー ピひょろー!$"
+	.string "ピーコちゃん『ピー ピひょろー!{EOS}"
 	.if (. - gText_Rom_2119A3) > 0x11
 	.error "gText_Rom_2119A3 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ field-script:0x226A0B FieldScriptText_226BFD
 	.globl gText_Rom_226BFD
 gText_Rom_226BFD: @ 0x08226BFD
-	.string "つぎは　2くみめの　あいてです\nじゅんびは　いいですか？$"
+	.string "つぎは　2くみめの　あいてです\nじゅんびは　いいですか？{EOS}"
 	.if (. - gText_Rom_226BFD) > 0x1d
 	.error "gText_Rom_226BFD may not grow beyond its original slot"
 	.endif

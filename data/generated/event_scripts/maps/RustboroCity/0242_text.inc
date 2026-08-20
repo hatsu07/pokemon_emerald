@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity/scripts.inc:1073 RustboroCity_Text_PokemonCanChangeLookFromExp
 	.globl gText_Rom_1DF511
 gText_Rom_1DF511: @ 0x081DF511
-	.string "ポケモンって たたかいの けいけんを\nつんでいくと すがたかたち が\lかわっちゃうことが あるんだよ!$"
+	.string "ポケモンって たたかいの けいけんを\nつんでいくと すがたかたち が\lかわっちゃうことが あるんだよ!{EOS}"
 	.if (. - gText_Rom_1DF511) > 0x34
 	.error "gText_Rom_1DF511 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/data/trainers.h:16146 trainers_line_16146
 	.globl gText_Rom_56122C
 gText_Rom_56122C: @ 0x0856122C
-	.string "タロウ$"
+	.string "タロウ{EOS}"
 	.if (. - gText_Rom_56122C) > 0x4
 	.error "gText_Rom_56122C may not grow beyond its original slot"
 	.endif

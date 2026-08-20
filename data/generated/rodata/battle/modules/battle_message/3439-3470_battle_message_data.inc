@@ -1,7 +1,7 @@
 	@ src/battle_message.c:170 battle_message_line_170
 	.globl gText_Rom_5AB0AC
 gText_Rom_5AB0AC: @ 0x085AB0AC
-	.string "からすぎた！$"
+	.string "からすぎた！{EOS}"
 	.if (. - gText_Rom_5AB0AC) > 0x7
 	.error "gText_Rom_5AB0AC may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5AB0AC: @ 0x085AB0AC
 	@ src/battle_message.c:171 battle_message_line_171
 	.globl gText_Rom_5AB0B3
 gText_Rom_5AB0B3: @ 0x085AB0B3
-	.string "しぶすぎた！$"
+	.string "しぶすぎた！{EOS}"
 	.if (. - gText_Rom_5AB0B3) > 0x7
 	.error "gText_Rom_5AB0B3 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5AB0B3: @ 0x085AB0B3
 	@ src/battle_message.c:172 battle_message_line_172
 	.globl gText_Rom_5AB0BA
 gText_Rom_5AB0BA: @ 0x085AB0BA
-	.string "あますぎた！$"
+	.string "あますぎた！{EOS}"
 	.if (. - gText_Rom_5AB0BA) > 0x7
 	.error "gText_Rom_5AB0BA may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5AB0BA: @ 0x085AB0BA
 	@ src/battle_message.c:173 battle_message_line_173
 	.globl gText_Rom_5AB0C1
 gText_Rom_5AB0C1: @ 0x085AB0C1
-	.string "にがすぎた！$"
+	.string "にがすぎた！{EOS}"
 	.if (. - gText_Rom_5AB0C1) > 0x7
 	.error "gText_Rom_5AB0C1 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5AB0C1: @ 0x085AB0C1
 	@ src/battle_message.c:174 battle_message_line_174
 	.globl gText_Rom_5AB0C8
 gText_Rom_5AB0C8: @ 0x085AB0C8
-	.string "すっぱすぎた！$"
+	.string "すっぱすぎた！{EOS}"
 	.if (. - gText_Rom_5AB0C8) > 0x8
 	.error "gText_Rom_5AB0C8 may not grow beyond its original slot"
 	.endif
@@ -63,7 +63,7 @@ sPointerTable_085AB0D0:
 	.byte 0xC8, 0xB0, 0x5A, 0x08, 0xFD, 0x23, 0x1A, 0x00, 0xFE
 	.globl gText_Rom_5AB0E9
 gText_Rom_5AB0E9: @ 0x085AB0E9
-	.string "{B_LAST_ITEM}を つかった！$"
+	.string "{B_LAST_ITEM}を つかった！{EOS}"
 	.if (. - gText_Rom_5AB0E9) != 0xa
 	.error "gText_Rom_5AB0E9 must retain its original byte length"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_5AB0E9: @ 0x085AB0E9
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5AB0F9
 gText_Rom_5AB0F9: @ 0x085AB0F9
-	.string "{B_LAST_ITEM}を つかった！$"
+	.string "{B_LAST_ITEM}を つかった！{EOS}"
 	.if (. - gText_Rom_5AB0F9) != 0xa
 	.error "gText_Rom_5AB0F9 must retain its original byte length"
 	.endif
@@ -93,7 +93,7 @@ gText_Rom_5AB0F9: @ 0x085AB0F9
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5AB10B
 gText_Rom_5AB10B: @ 0x085AB10B
-	.string "{B_LAST_ITEM}を つかった！$"
+	.string "{B_LAST_ITEM}を つかった！{EOS}"
 	.if (. - gText_Rom_5AB10B) != 0xa
 	.error "gText_Rom_5AB10B must retain its original byte length"
 	.endif
@@ -105,7 +105,7 @@ gText_Rom_5AB10B: @ 0x085AB10B
 	@ src/battle_message.c:419 battle_message_line_419
 	.globl gText_Rom_5AB115
 gText_Rom_5AB115: @ 0x085AB115
-	.string "トレーナーに ボールを はじかれた!$"
+	.string "トレーナーに ボールを はじかれた!{EOS}"
 	.if (. - gText_Rom_5AB115) > 0x13
 	.error "gText_Rom_5AB115 may not grow beyond its original slot"
 	.endif
@@ -116,7 +116,7 @@ gText_Rom_5AB115: @ 0x085AB115
 	@ src/battle_message.c:420 battle_message_line_420
 	.globl gText_Rom_5AB128
 gText_Rom_5AB128: @ 0x085AB128
-	.string "ひとの ものを とったら どろぼう!$"
+	.string "ひとの ものを とったら どろぼう!{EOS}"
 	.if (. - gText_Rom_5AB128) > 0x13
 	.error "gText_Rom_5AB128 may not grow beyond its original slot"
 	.endif
@@ -129,7 +129,7 @@ gText_Rom_5AB128: @ 0x085AB128
 	.byte 0x0F, 0x03, 0x16, 0x15, 0x02, 0x40, 0xAB, 0xFF
 	.globl gText_Rom_5AB153
 gText_Rom_5AB153: @ 0x085AB153
-	.string "ポケモンに\nうまく あたらなかった!$"
+	.string "ポケモンに\nうまく あたらなかった!{EOS}"
 	.if (. - gText_Rom_5AB153) != 0x13
 	.error "gText_Rom_5AB153 must retain its original byte length"
 	.endif
@@ -139,7 +139,7 @@ gText_Rom_5AB153: @ 0x085AB153
 	@ src/battle_message.c:422 battle_message_line_422
 	.globl gText_Rom_5AB166
 gText_Rom_5AB166: @ 0x085AB166
-	.string "だめだ! ポケモンが\nボールから でてしまった!$"
+	.string "だめだ! ポケモンが\nボールから でてしまった!{EOS}"
 	.if (. - gText_Rom_5AB166) > 0x19
 	.error "gText_Rom_5AB166 may not grow beyond its original slot"
 	.endif
@@ -150,7 +150,7 @@ gText_Rom_5AB166: @ 0x085AB166
 	@ src/battle_message.c:423 battle_message_line_423
 	.globl gText_Rom_5AB17F
 gText_Rom_5AB17F: @ 0x085AB17F
-	.string "ああ!\nつかまえたと おもったのに!$"
+	.string "ああ!\nつかまえたと おもったのに!{EOS}"
 	.if (. - gText_Rom_5AB17F) > 0x13
 	.error "gText_Rom_5AB17F may not grow beyond its original slot"
 	.endif
@@ -161,7 +161,7 @@ gText_Rom_5AB17F: @ 0x085AB17F
 	@ src/battle_message.c:424 battle_message_line_424
 	.globl gText_Rom_5AB192
 gText_Rom_5AB192: @ 0x085AB192
-	.string "ざんねん!\nもうすこしで つかまえられたのに!$"
+	.string "ざんねん!\nもうすこしで つかまえられたのに!{EOS}"
 	.if (. - gText_Rom_5AB192) > 0x18
 	.error "gText_Rom_5AB192 may not grow beyond its original slot"
 	.endif

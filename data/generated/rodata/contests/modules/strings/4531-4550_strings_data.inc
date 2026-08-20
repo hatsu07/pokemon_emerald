@@ -1,7 +1,7 @@
 	@ src/strings.c:217 gText_ShopBuy
 	.globl gText_Rom_5C98BE
 gText_Rom_5C98BE: @ 0x085C98BE
-	.string "かいに きた$"
+	.string "かいに きた{EOS}"
 	.if (. - gText_Rom_5C98BE) > 0x7
 	.error "gText_Rom_5C98BE may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5C98BE: @ 0x085C98BE
 	@ src/strings.c:218 gText_ShopSell
 	.globl gText_Rom_5C98C5
 gText_Rom_5C98C5: @ 0x085C98C5
-	.string "うりに きた$"
+	.string "うりに きた{EOS}"
 	.if (. - gText_Rom_5C98C5) > 0x7
 	.error "gText_Rom_5C98C5 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5C98C5: @ 0x085C98C5
 	@ src/strings.c:219 gText_ShopQuit
 	.globl gText_Rom_5C98CC
 gText_Rom_5C98CC: @ 0x085C98CC
-	.string "なんでもないです$"
+	.string "なんでもないです{EOS}"
 	.if (. - gText_Rom_5C98CC) > 0x9
 	.error "gText_Rom_5C98CC may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5C98CC: @ 0x085C98CC
 	@ src/strings.c:222 gText_InBagVar1
 	.globl gText_Rom_5C98D5
 gText_Rom_5C98D5: @ 0x085C98D5
-	.string "もってるかず {STR_VAR_1}コ$"
+	.string "もってるかず {STR_VAR_1}コ{EOS}"
 	.if (. - gText_Rom_5C98D5) > 0xb
 	.error "gText_Rom_5C98D5 may not grow beyond its original slot"
 	.endif
@@ -46,7 +46,7 @@ gText_Rom_5C98D5: @ 0x085C98D5
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C98E0
 gText_Rom_5C98E0: @ 0x085C98E0
-	.string "かいもの を やめます$"
+	.string "かいもの を やめます{EOS}"
 	.if (. - gText_Rom_5C98E0) != 0xc
 	.error "gText_Rom_5C98E0 must retain its original byte length"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5C98E0: @ 0x085C98E0
 	@ src/strings.c:224 gText_Var1CertainlyHowMany
 	.globl gText_Rom_5C98EC
 gText_Rom_5C98EC: @ 0x085C98EC
-	.string "{STR_VAR_1} を\nいくつ おかいあげに なりますか?$"
+	.string "{STR_VAR_1} を\nいくつ おかいあげに なりますか?{EOS}"
 	.if (. - gText_Rom_5C98EC) > 0x17
 	.error "gText_Rom_5C98EC may not grow beyond its original slot"
 	.endif
@@ -75,7 +75,7 @@ gShopData_085C9903: @ 0x085C9903
 	@ src/strings.c:226 gText_Var1AndYouWantedVar2
 	.globl gText_Rom_5C991F
 gText_Rom_5C991F: @ 0x085C991F
-	.string "{STR_VAR_1}を {STR_VAR_2}コで\n{STR_VAR_3}円 おかいあげですか?$"
+	.string "{STR_VAR_1}を {STR_VAR_2}コで\n{STR_VAR_3}円 おかいあげですか?{EOS}"
 	.if (. - gText_Rom_5C991F) > 0x17
 	.error "gText_Rom_5C991F may not grow beyond its original slot"
 	.endif
@@ -86,7 +86,7 @@ gText_Rom_5C991F: @ 0x085C991F
 	@ src/strings.c:227 gText_Var1IsItThatllBeVar2
 	.globl gText_Rom_5C9936
 gText_Rom_5C9936: @ 0x085C9936
-	.string "{STR_VAR_1} だね!\n{STR_VAR_2}円 だけど かうかい?$"
+	.string "{STR_VAR_1} だね!\n{STR_VAR_2}円 だけど かうかい?{EOS}"
 	.if (. - gText_Rom_5C9936) > 0x15
 	.error "gText_Rom_5C9936 may not grow beyond its original slot"
 	.endif
@@ -97,7 +97,7 @@ gText_Rom_5C9936: @ 0x085C9936
 	@ src/strings.c:228 gText_YouWantedVar1ThatllBeVar2
 	.globl gText_Rom_5C994B
 gText_Rom_5C994B: @ 0x085C994B
-	.string "{STR_VAR_1} ですね!\n{STR_VAR_2}円 だけど かいますか?$"
+	.string "{STR_VAR_1} ですね!\n{STR_VAR_2}円 だけど かいますか?{EOS}"
 	.if (. - gText_Rom_5C994B) > 0x17
 	.error "gText_Rom_5C994B may not grow beyond its original slot"
 	.endif
@@ -109,7 +109,7 @@ gText_Rom_5C994B: @ 0x085C994B
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C9962
 gText_Rom_5C9962: @ 0x085C9962
-	.string "はい まいど!\nありがとう ございます$"
+	.string "はい まいど!\nありがとう ございます{EOS}"
 	.if (. - gText_Rom_5C9962) != 0x14
 	.error "gText_Rom_5C9962 must retain its original byte length"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc:58 LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves
 	.globl gText_Rom_20AC28
 gText_Rom_20AC28: @ 0x0820AC28
-	.string "わざマシン ぜんぶ ほしいけど\nポケモン 4つしか わざ おぼえないもんな$"
+	.string "わざマシン ぜんぶ ほしいけど\nポケモン 4つしか わざ おぼえないもんな{EOS}"
 	.if (. - gText_Rom_20AC28) > 0x26
 	.error "gText_Rom_20AC28 may not grow beyond its original slot"
 	.endif

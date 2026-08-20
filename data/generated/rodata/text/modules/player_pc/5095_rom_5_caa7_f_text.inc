@@ -1,7 +1,7 @@
 	@ src/player_pc.c:193 player_pc_line_193
 	.globl gText_Rom_5CAA7F
 gText_Rom_5CAA7F: @ 0x085CAA7F
-	.string "もようがえ$"
+	.string "もようがえ{EOS}"
 	.if (. - gText_Rom_5CAA7F) > 0x6
 	.error "gText_Rom_5CAA7F may not grow beyond its original slot"
 	.endif

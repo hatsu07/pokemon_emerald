@@ -1,7 +1,7 @@
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription
 	.globl gText_Rom_24B436
 gText_Rom_24B436: @ 0x0824B436
-	.string "しんさいんが　きたいを\nこめた　めで　みつめた！$"
+	.string "しんさいんが　きたいを\nこめた　めで　みつめた！{EOS}"
 	.if (. - gText_Rom_24B436) > 0x19
 	.error "gText_Rom_24B436 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/pokemon_storage_system.c:8102 pokemon_storage_system_line_8102
 	.globl gText_Rom_57C9A9
 gText_Rom_57C9A9: @ 0x0857C9A9
-	.string "シティ$"
+	.string "シティ{EOS}"
 	.if (. - gText_Rom_57C9A9) > 0x4
 	.error "gText_Rom_57C9A9 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_57C9A9: @ 0x0857C9A9
 	.byte 0x66, 0x97
 	.globl gText_Rom_57C9AF
 gText_Rom_57C9AF: @ 0x0857C9AF
-	.string "シティ$"
+	.string "シティ{EOS}"
 	.if (. - gText_Rom_57C9AF) > 0x4
 	.error "gText_Rom_57C9AF may not grow beyond its original slot"
 	.endif
@@ -25,7 +25,7 @@ gText_Rom_57C9AF: @ 0x0857C9AF
 	.byte 0x6A, 0x65, 0x91
 	.globl gText_Rom_57C9B6
 gText_Rom_57C9B6: @ 0x0857C9B6
-	.string "シティ$"
+	.string "シティ{EOS}"
 	.if (. - gText_Rom_57C9B6) > 0x4
 	.error "gText_Rom_57C9B6 may not grow beyond its original slot"
 	.endif
@@ -37,7 +37,7 @@ gText_Rom_57C9B6: @ 0x0857C9B6
 	.byte 0x5C, 0x55, 0x7E, 0x60, 0x53, 0x7E, 0xFF, 0x58, 0x61, 0x96
 	.globl gText_Rom_57C9C4
 gText_Rom_57C9C4: @ 0x0857C9C4
-	.string "シティ$"
+	.string "シティ{EOS}"
 	.if (. - gText_Rom_57C9C4) > 0x4
 	.error "gText_Rom_57C9C4 may not grow beyond its original slot"
 	.endif
@@ -49,7 +49,7 @@ gText_Rom_57C9C4: @ 0x0857C9C4
 	.byte 0x60, 0x6F, 0x71, 0x5C
 	.globl gText_Rom_57C9CC
 gText_Rom_57C9CC: @ 0x0857C9CC
-	.string "シティ$"
+	.string "シティ{EOS}"
 	.if (. - gText_Rom_57C9CC) > 0x4
 	.error "gText_Rom_57C9CC may not grow beyond its original slot"
 	.endif
@@ -61,7 +61,7 @@ gText_Rom_57C9CC: @ 0x0857C9CC
 	.byte 0x5E, 0x57, 0x61, 0x58
 	.globl gText_Rom_57C9D4
 gText_Rom_57C9D4: @ 0x0857C9D4
-	.string "シティ$"
+	.string "シティ{EOS}"
 	.if (. - gText_Rom_57C9D4) > 0x4
 	.error "gText_Rom_57C9D4 may not grow beyond its original slot"
 	.endif
@@ -74,7 +74,7 @@ gText_Rom_57C9D4: @ 0x0857C9D4
 	.byte 0x6F, 0x98, 0x57
 	.globl gText_Rom_57C9EB
 gText_Rom_57C9EB: @ 0x0857C9EB
-	.string "シティ$"
+	.string "シティ{EOS}"
 	.if (. - gText_Rom_57C9EB) > 0x4
 	.error "gText_Rom_57C9EB may not grow beyond its original slot"
 	.endif

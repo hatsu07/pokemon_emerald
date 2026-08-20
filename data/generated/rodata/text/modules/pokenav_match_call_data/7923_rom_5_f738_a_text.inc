@@ -1,7 +1,7 @@
 	@ src/pokenav_match_call_data.c:260 pokenav_match_call_data_line_260
 	.globl gText_Rom_5F738A
 gText_Rom_5F738A: @ 0x085F738A
-	.string "いしがかたいひと$"
+	.string "いしがかたいひと{EOS}"
 	.if (. - gText_Rom_5F738A) > 0x9
 	.error "gText_Rom_5F738A may not grow beyond its original slot"
 	.endif

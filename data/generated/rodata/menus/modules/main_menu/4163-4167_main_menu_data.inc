@@ -1,7 +1,7 @@
 	@ src/main_menu.c:522 main_menu_line_522
 	.globl gText_Rom_5C8F7C
 gText_Rom_5C8F7C: @ 0x085C8F7C
-	.string "モニカ$"
+	.string "モニカ{EOS}"
 	.if (. - gText_Rom_5C8F7C) > 0x4
 	.error "gText_Rom_5C8F7C may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5C8F7C: @ 0x085C8F7C
 	@ src/main_menu.c:523 main_menu_line_523
 	.globl gText_Rom_5C8F82
 gText_Rom_5C8F82: @ 0x085C8F82
-	.string "ユウメ$"
+	.string "ユウメ{EOS}"
 	.if (. - gText_Rom_5C8F82) > 0x4
 	.error "gText_Rom_5C8F82 may not grow beyond its original slot"
 	.endif
@@ -25,7 +25,7 @@ gText_Rom_5C8F82: @ 0x085C8F82
 	@ asm/main_menu.s:2379 Task_NewGameBirchSpeech_ThisIsAPokemon
 	.globl gText_Rom_5C8F88
 gText_Rom_5C8F88: @ 0x085C8F88
-	.string "ポケットモンスター\n……すなわち　ポケモン{PAUSE}{0x60}\p$"
+	.string "ポケットモンスター\n……すなわち　ポケモン{PAUSE}{0x60}\p{EOS}"
 	.if (. - gText_Rom_5C8F88) > 0x1a
 	.error "gText_Rom_5C8F88 may not grow beyond its original slot"
 	.endif

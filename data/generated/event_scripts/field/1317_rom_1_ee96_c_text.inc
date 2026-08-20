@@ -1,7 +1,7 @@
 	@ field-script:0x1EE7B1 FieldScriptText_1EE96C
 	.globl gText_Rom_1EE96C
 gText_Rom_1EE96C: @ 0x081EE96C
-	.string "「トレジャーハンターの　こや」$"
+	.string "「トレジャーハンターの　こや」{EOS}"
 	.if (. - gText_Rom_1EE96C) > 0x10
 	.error "gText_Rom_1EE96C may not grow beyond its original slot"
 	.endif

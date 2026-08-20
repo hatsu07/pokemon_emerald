@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1646 Route116_Text_SarahDefeat (+1 aliases)
 	.globl gText_Rom_25D9E7
 gText_Rom_25D9E7: @ 0x0825D9E7
-	.string "まあ\nこんなの はじめてですわ!$"
+	.string "まあ\nこんなの はじめてですわ!{EOS}"
 	.if (. - gText_Rom_25D9E7) > 0x11
 	.error "gText_Rom_25D9E7 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_voices.h:346 easy_chat_group_voices_line_346
 	.globl gText_Rom_4BE091
 gText_Rom_4BE091: @ 0x084BE091
-	.string "ラララ$"
+	.string "ラララ{EOS}"
 	.if (. - gText_Rom_4BE091) > 0x4
 	.error "gText_Rom_4BE091 may not grow beyond its original slot"
 	.endif
@@ -15,7 +15,7 @@ gObjectEventFrameGfx_JP_084BE095: @ 0x084BE095
 	.byte 0x88, 0xF7, 0xFF, 0xFF, 0xFF, 0xFF, 0xDF, 0x7F, 0x77, 0x77, 0x77, 0x7F
 	.globl gText_Rom_4BE0B1
 gText_Rom_4BE0B1: @ 0x084BE0B1
-	.string "ラララ$"
+	.string "ラララ{EOS}"
 	.if (. - gText_Rom_4BE0B1) > 0x4
 	.error "gText_Rom_4BE0B1 may not grow beyond its original slot"
 	.endif
@@ -29,7 +29,7 @@ gObjectEventFrameGfx_JP_084BE0B5: @ 0x084BE0B5
 	.byte 0xDD, 0xDD, 0xDD, 0xDD, 0xDD, 0xDD, 0xDD, 0x77, 0x77, 0x77, 0x77, 0x77
 	.globl gText_Rom_4BE0D1
 gText_Rom_4BE0D1: @ 0x084BE0D1
-	.string "ラララ$"
+	.string "ラララ{EOS}"
 	.if (. - gText_Rom_4BE0D1) > 0x4
 	.error "gText_Rom_4BE0D1 may not grow beyond its original slot"
 	.endif

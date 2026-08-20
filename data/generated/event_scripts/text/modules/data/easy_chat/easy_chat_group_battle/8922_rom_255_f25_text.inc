@@ -12,5 +12,5 @@ gText_Rom_255F25: @ 0x08255F25
 	@ analyzed canonical ROM range 0x08255F2A-0x08255F89
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_08255F2A: @ 0x08255F2A
-	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nリボンを　もらった　らしい!\p{STR_VAR_3}は　リボンを　あつめるのが\nとても　だいすきな　トレーナーだな!$"
+	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nリボンを　もらった　らしい!\p{STR_VAR_3}は　リボンを　あつめるのが\nとても　だいすきな　トレーナーだな!{EOS}"
 	.byte 0x41, 0x2E, 0x0B, 0x2D, 0x00, 0x14, 0x47, 0x05, 0x28, 0x1F, 0x08, 0x50, 0x10, 0x00

@@ -1,7 +1,7 @@
 	@ src/strings.c:622 gText_LyricsCantBeDeleted
 	.globl gText_Rom_5CBCEF
 gText_Rom_5CBCEF: @ 0x085CBCEF
-	.string "かしを けすことは できません!$"
+	.string "かしを けすことは できません!{EOS}"
 	.if (. - gText_Rom_5CBCEF) > 0x11
 	.error "gText_Rom_5CBCEF may not grow beyond its original slot"
 	.endif

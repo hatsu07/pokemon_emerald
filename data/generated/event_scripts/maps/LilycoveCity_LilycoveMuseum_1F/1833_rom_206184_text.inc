@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:230 LilycoveCity_LilycoveMuseum_1F_Text_MuseumTouristDestination
 	.globl gText_Rom_206184
 gText_Rom_206184: @ 0x08206184
-	.string "この びじゅつかんも すっかり ミナモの\n……いや ホウエンちほうの\lかんこう めいしょに なったねえ!\pきいた はなしだと\nひとりの トレーナーが 2かいの えを\lそろえて くれた らしいよ!$"
+	.string "この びじゅつかんも すっかり ミナモの\n……いや ホウエンちほうの\lかんこう めいしょに なったねえ!\pきいた はなしだと\nひとりの トレーナーが 2かいの えを\lそろえて くれた らしいよ!{EOS}"
 	.if (. - gText_Rom_206184) > 0x62
 	.error "gText_Rom_206184 may not grow beyond its original slot"
 	.endif

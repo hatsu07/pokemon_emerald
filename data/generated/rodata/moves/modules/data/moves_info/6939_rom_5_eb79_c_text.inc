@@ -1,7 +1,7 @@
 	@ src/data/moves_info.h:6328 moves_info_line_6328
 	.globl gText_Rom_5EB79C
 gText_Rom_5EB79C: @ 0x085EB79C
-	.string "たくわえる$"
+	.string "たくわえる{EOS}"
 	.if (. - gText_Rom_5EB79C) > 0x6
 	.error "gText_Rom_5EB79C may not grow beyond its original slot"
 	.endif

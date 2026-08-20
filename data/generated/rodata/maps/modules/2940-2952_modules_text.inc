@@ -1,7 +1,7 @@
 	@ src/data/region_map/region_map_entries.h:469 region_map_entries_line_469 (+1 aliases)
 	.globl gText_Rom_598908
 gText_Rom_598908: @ 0x08598908
-	.string "おくりびやま$"
+	.string "おくりびやま{EOS}"
 	.if (. - gText_Rom_598908) > 0x7
 	.error "gText_Rom_598908 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_598908: @ 0x08598908
 	@ src/data/region_map/region_map_entries.h:483 region_map_entries_line_483
 	.globl gText_Rom_59890F
 gText_Rom_59890F: @ 0x0859890F
-	.string "あさせのほらあな$"
+	.string "あさせのほらあな{EOS}"
 	.if (. - gText_Rom_59890F) > 0x9
 	.error "gText_Rom_59890F may not grow beyond its original slot"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_59890F: @ 0x0859890F
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_598918
 gText_Rom_598918: @ 0x08598918
-	.string "かいていどうくつ$"
+	.string "かいていどうくつ{EOS}"
 	.if (. - gText_Rom_598918) != 0x9
 	.error "gText_Rom_598918 must retain its original byte length"
 	.endif
@@ -35,20 +35,20 @@ gText_Rom_598918: @ 0x08598918
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_598921
 gText_Rom_598921: @ 0x08598921
-	.string "いしのどうくつ$"
+	.string "いしのどうくつ{EOS}"
 	.if (. - gText_Rom_598921) != 0x8
 	.error "gText_Rom_598921 must retain its original byte length"
 	.endif
 	.globl gText_Rom_598924
 	.set gText_Rom_598924, gText_Rom_598921 + 0x3
 	@ Decoded text from ROM range: offset=0x598929, size=0xD
-	.string "かいりゅう$"
-	.string "マユミのいえ$"
+	.string "かいりゅう{EOS}"
+	.string "マユミのいえ{EOS}"
 
 	@ src/data/region_map/region_map_entries.h:532 region_map_entries_line_532
 	.globl gText_Rom_598936
 gText_Rom_598936: @ 0x08598936
-	.string "ほのおのぬけみち$"
+	.string "ほのおのぬけみち{EOS}"
 	.if (. - gText_Rom_598936) > 0x9
 	.error "gText_Rom_598936 may not grow beyond its original slot"
 	.endif
@@ -59,7 +59,7 @@ gText_Rom_598936: @ 0x08598936
 	@ src/data/region_map/region_map_entries.h:546 region_map_entries_line_546
 	.globl gText_Rom_59893F
 gText_Rom_59893F: @ 0x0859893F
-	.string "デコボコさんどう$"
+	.string "デコボコさんどう{EOS}"
 	.if (. - gText_Rom_59893F) > 0x9
 	.error "gText_Rom_59893F may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/strings.c:610 gText_YouCannotQuitHere
 	.globl gText_Rom_5CBC62
 gText_Rom_5CBC62: @ 0x085CBC62
-	.string "ここでは とちゅうで$"
+	.string "ここでは とちゅうで{EOS}"
 	.if (. - gText_Rom_5CBC62) > 0xb
 	.error "gText_Rom_5CBC62 may not grow beyond its original slot"
 	.endif

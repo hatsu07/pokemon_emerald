@@ -1,7 +1,7 @@
 	@ data/maps/SlateportCity/scripts.inc:1134 SlateportCity_Text_CaptainsACelebrity
 	.globl gText_Rom_1DD185
 gText_Rom_1DD185: @ 0x081DD185
-	.string "テレビが しゅざいに くる なんて\nかんちょうも ゆうめいじん ですなあ!$"
+	.string "テレビが しゅざいに くる なんて\nかんちょうも ゆうめいじん ですなあ!{EOS}"
 	.if (. - gText_Rom_1DD185) > 0x26
 	.error "gText_Rom_1DD185 may not grow beyond its original slot"
 	.endif

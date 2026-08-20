@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:193 SootopolisCity_MysteryEventsHouse_1F_Text_BrilliantStandoff
 	.globl gText_Rom_2100AA
 gText_Rom_2100AA: @ 0x082100AA
-	.string "ひきわけ じゃったか!\pおたがい いっぽも ゆずらぬ\nすばらしい しょうぶ じゃったぞ!$"
+	.string "ひきわけ じゃったか!\pおたがい いっぽも ゆずらぬ\nすばらしい しょうぶ じゃったぞ!{EOS}"
 	.if (. - gText_Rom_2100AA) > 0x2d
 	.error "gText_Rom_2100AA may not grow beyond its original slot"
 	.endif
@@ -11,4 +11,4 @@ gText_Rom_2100AA: @ 0x082100AA
 	@ analyzed canonical ROM range 0x082100D7-0x082100D9
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_082100D7: @ 0x082100D7
-	.string "{STR_VAR_1}$"
+	.string "{STR_VAR_1}{EOS}"

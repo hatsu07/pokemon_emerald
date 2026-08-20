@@ -1,7 +1,7 @@
 	@ data/maps/Route116/scripts.inc:462 Route116_Text_TrainerTipsBagHasPockets
 	.globl gText_Rom_1EC3BD
 gText_Rom_1EC3BD: @ 0x081EC3BD
-	.string "おとくな けいじばん!!\pバッグには いくつかの ポケットが あり\nいれる どうぐの しゅるい によって\lそれぞれの ポケットに\lオートで ぶんるい されます\pまさに トレーナーの ひつじゅひん です!$"
+	.string "おとくな けいじばん!!\pバッグには いくつかの ポケットが あり\nいれる どうぐの しゅるい によって\lそれぞれの ポケットに\lオートで ぶんるい されます\pまさに トレーナーの ひつじゅひん です!{EOS}"
 	.if (. - gText_Rom_1EC3BD) > 0x66
 	.error "gText_Rom_1EC3BD may not grow beyond its original slot"
 	.endif

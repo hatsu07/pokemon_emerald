@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C8BF
 gText_Rom_57C8BF: @ 0x0857C8BF
-	.string "いしのどうくつ$"
+	.string "いしのどうくつ{EOS}"
 	.if (. - gText_Rom_57C8BF) != 0x8
 	.error "gText_Rom_57C8BF must retain its original byte length"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_57C8BF: @ 0x0857C8BF
 	@ src/data/region_map/region_map_entries.h:406 region_map_entries_line_406
 	.globl gText_Rom_57C8C7
 gText_Rom_57C8C7: @ 0x0857C8C7
-	.string "えんとつやま$"
+	.string "えんとつやま{EOS}"
 	.if (. - gText_Rom_57C8C7) > 0x7
 	.error "gText_Rom_57C8C7 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_57C8C7: @ 0x0857C8C7
 	@ src/data/region_map/region_map_entries.h:413 region_map_entries_line_413
 	.globl gText_Rom_57C8CE
 gText_Rom_57C8CE: @ 0x0857C8CE
-	.string "サファリゾーン$"
+	.string "サファリゾーン{EOS}"
 	.if (. - gText_Rom_57C8CE) > 0x8
 	.error "gText_Rom_57C8CE may not grow beyond its original slot"
 	.endif
@@ -35,7 +35,7 @@ gText_Rom_57C8CE: @ 0x0857C8CE
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C8D6
 gText_Rom_57C8D6: @ 0x0857C8D6
-	.string "バトルフロンティア$"
+	.string "バトルフロンティア{EOS}"
 	.if (. - gText_Rom_57C8D6) != 0xa
 	.error "gText_Rom_57C8D6 must retain its original byte length"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_57C8D6: @ 0x0857C8D6
 	@ src/data/region_map/region_map_entries.h:427 region_map_entries_line_427
 	.globl gText_Rom_57C8E0
 gText_Rom_57C8E0: @ 0x0857C8E0
-	.string "トウカのもり$"
+	.string "トウカのもり{EOS}"
 	.if (. - gText_Rom_57C8E0) > 0x7
 	.error "gText_Rom_57C8E0 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_57C8E0: @ 0x0857C8E0
 	@ src/data/region_map/region_map_entries.h:434 region_map_entries_line_434
 	.globl gText_Rom_57C8E7
 gText_Rom_57C8E7: @ 0x0857C8E7
-	.string "カナシダトンネル$"
+	.string "カナシダトンネル{EOS}"
 	.if (. - gText_Rom_57C8E7) > 0x9
 	.error "gText_Rom_57C8E7 may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_57C8E7: @ 0x0857C8E7
 	@ src/data/region_map/region_map_entries.h:441 region_map_entries_line_441
 	.globl gText_Rom_57C8F0
 gText_Rom_57C8F0: @ 0x0857C8F0
-	.string "すてられぶね$"
+	.string "すてられぶね{EOS}"
 	.if (. - gText_Rom_57C8F0) > 0x7
 	.error "gText_Rom_57C8F0 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_57C8F0: @ 0x0857C8F0
 	@ src/data/region_map/region_map_entries.h:448 region_map_entries_line_448
 	.globl gText_Rom_57C8F7
 gText_Rom_57C8F7: @ 0x0857C8F7
-	.string "ニューキンセツ$"
+	.string "ニューキンセツ{EOS}"
 	.if (. - gText_Rom_57C8F7) > 0x8
 	.error "gText_Rom_57C8F7 may not grow beyond its original slot"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_57C8F7: @ 0x0857C8F7
 	@ src/data/region_map/region_map_entries.h:455 region_map_entries_line_455
 	.globl gText_Rom_57C8FF
 gText_Rom_57C8FF: @ 0x0857C8FF
-	.string "りゅうせいのたき$"
+	.string "りゅうせいのたき{EOS}"
 	.if (. - gText_Rom_57C8FF) > 0x9
 	.error "gText_Rom_57C8FF may not grow beyond its original slot"
 	.endif
@@ -100,7 +100,7 @@ gText_Rom_57C8FF: @ 0x0857C8FF
 	@ src/data/region_map/region_map_entries.h:469 region_map_entries_line_469 (+1 aliases)
 	.globl gText_Rom_57C908
 gText_Rom_57C908: @ 0x0857C908
-	.string "おくりびやま$"
+	.string "おくりびやま{EOS}"
 	.if (. - gText_Rom_57C908) > 0x7
 	.error "gText_Rom_57C908 may not grow beyond its original slot"
 	.endif
@@ -114,7 +114,7 @@ gText_Rom_57C90F: @ 0x0857C90F
 	.byte 0xFD, 0x08, 0x41, 0x2E, 0x00
 	.globl gText_Rom_57C914
 gText_Rom_57C914: @ 0x0857C914
-	.string "アジト$"
+	.string "アジト{EOS}"
 	.if (. - gText_Rom_57C914) > 0x4
 	.error "gText_Rom_57C914 may not grow beyond its original slot"
 	.endif
@@ -125,7 +125,7 @@ gText_Rom_57C914: @ 0x0857C914
 	@ src/data/region_map/region_map_entries.h:483 region_map_entries_line_483
 	.globl gText_Rom_57C918
 gText_Rom_57C918: @ 0x0857C918
-	.string "あさせのほらあな$"
+	.string "あさせのほらあな{EOS}"
 	.if (. - gText_Rom_57C918) > 0x9
 	.error "gText_Rom_57C918 may not grow beyond its original slot"
 	.endif
@@ -137,7 +137,7 @@ gText_Rom_57C918: @ 0x0857C918
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C921
 gText_Rom_57C921: @ 0x0857C921
-	.string "かいていどうくつ$"
+	.string "かいていどうくつ{EOS}"
 	.if (. - gText_Rom_57C921) != 0x9
 	.error "gText_Rom_57C921 must retain its original byte length"
 	.endif

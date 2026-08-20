@@ -1,7 +1,7 @@
 	@ asm/union_room.s:9786 sub_0801727C
 	.globl gText_Rom_2C0644
 gText_Rom_2C0644: @ 0x082C0644
-	.string ":$"
+	.string ":{EOS}"
 	.if (. - gText_Rom_2C0644) > 0x2
 	.error "gText_Rom_2C0644 may not grow beyond its original slot"
 	.endif
@@ -12,13 +12,13 @@ gText_Rom_2C0644: @ 0x082C0644
 	.globl sText_ID
 sText_ID:
 	@ {ID} is encoded as F9 07.
-	.string "{ID}$"
+	.string "{ID}{EOS}"
 	.byte 0 @ alignment
 
 	@ asm/union_room.s:5239 sub_08014A50
 	.globl gText_Rom_2C064C
 gText_Rom_2C064C: @ 0x082C064C
-	.string "もういちど　さいしょから\nてつづきを　やりなおして　ください$"
+	.string "もういちど　さいしょから\nてつづきを　やりなおして　ください{EOS}"
 	.if (. - gText_Rom_2C064C) > 0x1f
 	.error "gText_Rom_2C064C may not grow beyond its original slot"
 	.endif
@@ -28,16 +28,16 @@ gText_Rom_2C064C: @ 0x082C064C
 	.space 0x1, 0x00
 	.globl sText_WirelessSearchCanceled
 sText_WirelessSearchCanceled:
-	.string "ジョイスポットの　けんさくを\nちゅうししました$"
+	.string "ジョイスポットの　けんさくを\nちゅうししました{EOS}"
 sText_AwaitingCommunication2:
 	@ Unused in the corresponding decomp source.
-	.string "ともだちからの　れんらくを\nまっています$"
+	.string "ともだちからの　れんらくを\nまっています{EOS}"
 	.space 3, 0 @ alignment
 
 	@ asm/union_room.s:233 sub_08012134
 	.globl gText_Rom_2C069C
 gText_Rom_2C069C: @ 0x082C069C
-	.string "{STR_VAR_1}！\nともだちからの　れんらくを　まっています$"
+	.string "{STR_VAR_1}！\nともだちからの　れんらくを　まっています{EOS}"
 	.if (. - gText_Rom_2C069C) > 0x19
 	.error "gText_Rom_2C069C may not grow beyond its original slot"
 	.endif
@@ -49,7 +49,7 @@ gText_Rom_2C069C: @ 0x082C069C
 	@ asm/union_room.s:574 sub_08012288
 	.globl gText_Rom_2C06B8
 gText_Rom_2C06B8: @ 0x082C06B8
-	.string "{STR_VAR_1}！　れんらくまち！\nにんずうが　そろったら　STARTボタン$"
+	.string "{STR_VAR_1}！　れんらくまち！\nにんずうが　そろったら　STARTボタン{EOS}"
 	.if (. - gText_Rom_2C06B8) > 0x21
 	.error "gText_Rom_2C06B8 may not grow beyond its original slot"
 	.endif
@@ -61,7 +61,7 @@ gText_Rom_2C06B8: @ 0x082C06B8
 	@ src/data/union_room.h:9 sJPText_SingleBattle
 	.globl gText_Rom_2C06DC
 gText_Rom_2C06DC: @ 0x082C06DC
-	.string "シングルバトルを かいさいする$"
+	.string "シングルバトルを かいさいする{EOS}"
 	.if (. - gText_Rom_2C06DC) > 0x10
 	.error "gText_Rom_2C06DC may not grow beyond its original slot"
 	.endif
@@ -72,7 +72,7 @@ gText_Rom_2C06DC: @ 0x082C06DC
 	@ src/data/union_room.h:10 sJPText_DoubleBattle
 	.globl gText_Rom_2C06EC
 gText_Rom_2C06EC: @ 0x082C06EC
-	.string "ダブルバトルを かいさいする$"
+	.string "ダブルバトルを かいさいする{EOS}"
 	.if (. - gText_Rom_2C06EC) > 0xf
 	.error "gText_Rom_2C06EC may not grow beyond its original slot"
 	.endif
@@ -84,7 +84,7 @@ gText_Rom_2C06EC: @ 0x082C06EC
 	@ src/data/union_room.h:11 sJPText_MultiBattle
 	.globl gText_Rom_2C06FC
 gText_Rom_2C06FC: @ 0x082C06FC
-	.string "マルチバトルを かいさいする$"
+	.string "マルチバトルを かいさいする{EOS}"
 	.if (. - gText_Rom_2C06FC) > 0xf
 	.error "gText_Rom_2C06FC may not grow beyond its original slot"
 	.endif
@@ -96,7 +96,7 @@ gText_Rom_2C06FC: @ 0x082C06FC
 	@ src/data/union_room.h:12 sJPText_TradePokemon
 	.globl gText_Rom_2C070C
 gText_Rom_2C070C: @ 0x082C070C
-	.string "ポケモンこうかんを かいさいする$"
+	.string "ポケモンこうかんを かいさいする{EOS}"
 	.if (. - gText_Rom_2C070C) > 0x11
 	.error "gText_Rom_2C070C may not grow beyond its original slot"
 	.endif
@@ -108,7 +108,7 @@ gText_Rom_2C070C: @ 0x082C070C
 	@ src/data/union_room.h:13 sJPText_Chat
 	.globl gText_Rom_2C0720
 gText_Rom_2C0720: @ 0x082C0720
-	.string "チャットを かいさいする$"
+	.string "チャットを かいさいする{EOS}"
 	.if (. - gText_Rom_2C0720) > 0xd
 	.error "gText_Rom_2C0720 may not grow beyond its original slot"
 	.endif
@@ -120,7 +120,7 @@ gText_Rom_2C0720: @ 0x082C0720
 	@ src/data/union_room.h:14 sJPText_DistWonderCard
 	.globl gText_Rom_2C0730
 gText_Rom_2C0730: @ 0x082C0730
-	.string "ふしぎなカードをくばる$"
+	.string "ふしぎなカードをくばる{EOS}"
 	.if (. - gText_Rom_2C0730) > 0xc
 	.error "gText_Rom_2C0730 may not grow beyond its original slot"
 	.endif
@@ -131,7 +131,7 @@ gText_Rom_2C0730: @ 0x082C0730
 	@ src/data/union_room.h:15 sJPText_DistWonderNews
 	.globl gText_Rom_2C073C
 gText_Rom_2C073C: @ 0x082C073C
-	.string "ふしぎなニュースをくばる$"
+	.string "ふしぎなニュースをくばる{EOS}"
 	.if (. - gText_Rom_2C073C) > 0xd
 	.error "gText_Rom_2C073C may not grow beyond its original slot"
 	.endif
@@ -143,7 +143,7 @@ gText_Rom_2C073C: @ 0x082C073C
 	@ src/data/union_room.h:16 sJPText_DistMysteryEvent
 	.globl gText_Rom_2C074C
 gText_Rom_2C074C: @ 0x082C074C
-	.string "ふしぎなできごとを かいさいする$"
+	.string "ふしぎなできごとを かいさいする{EOS}"
 	.if (. - gText_Rom_2C074C) > 0x11
 	.error "gText_Rom_2C074C may not grow beyond its original slot"
 	.endif
@@ -155,7 +155,7 @@ gText_Rom_2C074C: @ 0x082C074C
 	@ src/data/union_room.h:17 sJPText_HoldPokemonJump
 	.globl gText_Rom_2C0760
 gText_Rom_2C0760: @ 0x082C0760
-	.string "なわとびを かいさいする$"
+	.string "なわとびを かいさいする{EOS}"
 	.if (. - gText_Rom_2C0760) > 0xd
 	.error "gText_Rom_2C0760 may not grow beyond its original slot"
 	.endif
@@ -167,7 +167,7 @@ gText_Rom_2C0760: @ 0x082C0760
 	@ src/data/union_room.h:18 sJPText_HoldBerryCrush
 	.globl gText_Rom_2C0770
 gText_Rom_2C0770: @ 0x082C0770
-	.string "きのみマッシャーを かいさいする$"
+	.string "きのみマッシャーを かいさいする{EOS}"
 	.if (. - gText_Rom_2C0770) > 0x11
 	.error "gText_Rom_2C0770 may not grow beyond its original slot"
 	.endif
@@ -179,7 +179,7 @@ gText_Rom_2C0770: @ 0x082C0770
 	@ src/data/union_room.h:19 sJPText_HoldBerryPicking
 	.globl gText_Rom_2C0784
 gText_Rom_2C0784: @ 0x082C0784
-	.string "きのみどりを かいさいする$"
+	.string "きのみどりを かいさいする{EOS}"
 	.if (. - gText_Rom_2C0784) > 0xe
 	.error "gText_Rom_2C0784 may not grow beyond its original slot"
 	.endif
@@ -191,7 +191,7 @@ gText_Rom_2C0784: @ 0x082C0784
 	@ src/data/union_room.h:20 sJPText_HoldSpinTrade
 	.globl gText_Rom_2C0794
 gText_Rom_2C0794: @ 0x082C0794
-	.string "ぐるぐるこうかんを かいさいする$"
+	.string "ぐるぐるこうかんを かいさいする{EOS}"
 	.if (. - gText_Rom_2C0794) > 0x11
 	.error "gText_Rom_2C0794 may not grow beyond its original slot"
 	.endif
@@ -204,7 +204,7 @@ gText_Rom_2C0794: @ 0x082C0794
 	.globl gText_Rom_2C07A8
 gText_Rom_2C07A8: @ 0x082C07A8
 sJPText_HoldSpinShop:
-	.string "ぐるぐるショップを かいさいする$"
+	.string "ぐるぐるショップを かいさいする{EOS}"
 	.if (. - gText_Rom_2C07A8) > 0x11
 	.error "gText_Rom_2C07A8 may not grow beyond its original slot"
 	.endif
@@ -231,21 +231,21 @@ sJPLinkGroupActionTexts: @ 0x082C07BC, unused
 	.4byte gText_Rom_2C07A8 @ sJPText_HoldSpinShop
 
 sText_1PlayerNeeded: @ 0x082C07F4
-	.string "あと1にん\nひつよう$"
+	.string "あと1にん\nひつよう{EOS}"
 sText_2PlayersNeeded: @ 0x082C07FF
-	.string "あと2にん\nひつよう$"
+	.string "あと2にん\nひつよう{EOS}"
 sText_3PlayersNeeded: @ 0x082C080A
-	.string "あと3にん\nひつよう$"
+	.string "あと3にん\nひつよう{EOS}"
 sText_4PlayersNeeded: @ 0x082C0815
-	.string "あと4にん\nひつよう$"
+	.string "あと4にん\nひつよう{EOS}"
 sText_2PlayerMode: @ 0x082C0820
-	.string "2にん\nプレイ$"
+	.string "2にん\nプレイ{EOS}"
 sText_3PlayerMode: @ 0x082C0828
-	.string "3にん\nプレイ$"
+	.string "3にん\nプレイ{EOS}"
 sText_4PlayerMode: @ 0x082C0830
-	.string "4にん\nプレイ$"
+	.string "4にん\nプレイ{EOS}"
 sText_5PlayerMode: @ 0x082C0838
-	.string "5にん\nプレイ$"
+	.string "5にん\nプレイ{EOS}"
 	.globl sPlayersNeededOrModeTexts
 
 sPlayersNeededOrModeTexts: @ 0x082C0840, const u8 *[5][5]
@@ -265,7 +265,7 @@ sPlayersNeededOrModeTexts: @ 0x082C0840, const u8 *[5][5]
 	.globl gText_Rom_2C08A4
 gText_Rom_2C08A4: @ 0x082C08A4
 sText_BButtonCancel:
-	.string "{B_BUTTON}やめる$"
+	.string "{B_BUTTON}やめる{EOS}"
 	.if (. - gText_Rom_2C08A4) != 0x6
 	.error "gText_Rom_2C08A4 must retain its original byte length"
 	.endif
@@ -274,24 +274,24 @@ sText_BButtonCancel:
 
 	.space 2, 0 @ align sJPText_SearchingForParticipants
 sJPText_SearchingForParticipants: @ 0x082C08AC, unused
-	.string "ため\nさんかしゃ ぼしゅうちゅう です！$"
+	.string "ため\nさんかしゃ ぼしゅうちゅう です！{EOS}"
 	.space 3, 0 @ alignment
 	.globl sText_PlayerContactedYouForXAccept
 
 sText_PlayerContactedYouForXAccept: @ 0x082C08C4
-	.string "{STR_VAR_2}から れんらくあり！\n{STR_VAR_1}を しますか？$"
+	.string "{STR_VAR_2}から れんらくあり！\n{STR_VAR_1}を しますか？{EOS}"
 	.space 1, 0 @ alignment
 	.globl sText_PlayerContactedYouShareX
 
 sText_PlayerContactedYouShareX: @ 0x082C08DC
-	.string "{STR_VAR_2}から れんらくあり！\n{STR_VAR_1}を くばりますか？$"
+	.string "{STR_VAR_2}から れんらくあり！\n{STR_VAR_1}を くばりますか？{EOS}"
 	.space 3, 0 @ alignment
 
 	@ asm/union_room.s:1352 sub_08012AC4
 	.globl gText_Rom_2C08F8
 gText_Rom_2C08F8: @ 0x082C08F8
 sText_PlayerContactedYouAddToMembers:
-	.string "{STR_VAR_2}から　れんらくあり！\nメンバーに　しますか？$"
+	.string "{STR_VAR_2}から　れんらくあり！\nメンバーに　しますか？{EOS}"
 	.if (. - gText_Rom_2C08F8) > 0x19
 	.error "gText_Rom_2C08F8 may not grow beyond its original slot"
 	.endif
@@ -302,19 +302,19 @@ sText_PlayerContactedYouAddToMembers:
 	.globl sText_AreTheseMembersOK
 
 sText_AreTheseMembersOK: @ 0x082C0914
-	.string "{STR_VAR_1}！\nこの メンバーで よろしいですか？$"
+	.string "{STR_VAR_1}！\nこの メンバーで よろしいですか？{EOS}"
 	.space 2, 0 @ alignment
 	.globl sText_CancelModeWithTheseMembers
 
 sText_CancelModeWithTheseMembers: @ 0x082C092C
-	.string "この メンバーで {STR_VAR_1}を\nするのは やめますか？$"
+	.string "この メンバーで {STR_VAR_1}を\nするのは やめますか？{EOS}"
 	.space 3, 0 @ alignment
 
 	@ asm/union_room.s:931 sub_08012288
 	.globl gText_Rom_2C0948
 gText_Rom_2C0948: @ 0x082C0948
 sText_AnOKWasSentToPlayer:
-	.string "{STR_VAR_1}に　OKの\nへんじを　だしました$"
+	.string "{STR_VAR_1}に　OKの\nへんじを　だしました{EOS}"
 	.if (. - gText_Rom_2C0948) > 0x13
 	.error "gText_Rom_2C0948 may not grow beyond its original slot"
 	.endif
@@ -324,13 +324,13 @@ sText_AnOKWasSentToPlayer:
 
 	.space 1, 0 @ align sText_OtherTrainerUnavailableNow
 sText_OtherTrainerUnavailableNow: @ 0x082C095C
-	.string "あいての\nつごうが わるいみたい…\p$"
+	.string "あいての\nつごうが わるいみたい…\p{EOS}"
 	.space 1, 0 @ align sText_CantTransmitTrainerTooFar
 sText_CantTransmitTrainerTooFar: @ 0x082C0970
-	.string "まだ とおくの かたとは\nつうしんは できません\p$"
+	.string "まだ とおくの かたとは\nつうしんは できません\p{EOS}"
 	.space 2, 0 @ align sText_TrainersNotReadyYet
 sText_TrainersNotReadyYet: @ 0x082C098C
-	.string "あいての じゅんびが\nできていません\p$"
+	.string "あいての じゅんびが\nできていません\p{EOS}"
 	.globl sCantTransmitToTrainerTexts
 
 sCantTransmitToTrainerTexts: @ 0x082C09A0
@@ -339,10 +339,10 @@ sCantTransmitToTrainerTexts: @ 0x082C09A0
 	.globl sText_ModeWithTheseMembersWillBeCanceled
 
 sText_ModeWithTheseMembersWillBeCanceled: @ 0x082C09A8
-	.string "この メンバーで {STR_VAR_1}を\nするのは やめます{PAUSE 60}$"
+	.string "この メンバーで {STR_VAR_1}を\nするのは やめます{PAUSE 60}{EOS}"
 	.space 2, 0 @ align sText_MemberNoLongerAvailable
 sText_MemberNoLongerAvailable: @ 0x082C09C4
-	.string "つごうが わるくなってしまった\nメンバーが います\p$"
+	.string "つごうが わるくなってしまった\nメンバーが います\p{EOS}"
 	.space 1, 0 @ alignment
 	.globl sPlayerUnavailableTexts
 
@@ -350,14 +350,14 @@ sPlayerUnavailableTexts: @ 0x082C09E0
 	.4byte sText_OtherTrainerUnavailableNow
 	.4byte sText_MemberNoLongerAvailable
 sText_TrainerAppearsUnavailable: @ 0x082C09E8
-	.string "つごうが わるいみたい…\p$"
+	.string "つごうが わるいみたい…\p{EOS}"
 	.space 2, 0 @ alignment
 
 	@ asm/union_room.s:1506 sub_08012C60
 	.globl gText_Rom_2C09F8
 gText_Rom_2C09F8: @ 0x082C09F8
 sText_PlayerSentBackOK:
-	.string "{STR_VAR_1}から　OKとの\nへんじが　ありました！$"
+	.string "{STR_VAR_1}から　OKとの\nへんじが　ありました！{EOS}"
 	.if (. - gText_Rom_2C09F8) > 0x16
 	.error "gText_Rom_2C09F8 may not grow beyond its original slot"
 	.endif
@@ -370,7 +370,7 @@ sText_PlayerSentBackOK:
 	.globl gText_Rom_2C0A10
 gText_Rom_2C0A10: @ 0x082C0A10
 sText_PlayerOKdRegistration:
-	.string "{STR_VAR_1}から　メンバー　とうろく\nOKとの　れんらくが　きました！$"
+	.string "{STR_VAR_1}から　メンバー　とうろく\nOKとの　れんらくが　きました！{EOS}"
 	.if (. - gText_Rom_2C0A10) > 0x20
 	.error "gText_Rom_2C0A10 may not grow beyond its original slot"
 	.endif
@@ -379,14 +379,14 @@ sText_PlayerOKdRegistration:
 	.endif
 
 sText_PlayerRepliedNo: @ 0x082C0A30
-	.string "{STR_VAR_1}から NGとの\nへんじが きてしまいました…\p$"
+	.string "{STR_VAR_1}から NGとの\nへんじが きてしまいました…\p{EOS}"
 	.space 2, 0 @ alignment
 
 	@ asm/union_room.s:2354 sub_08012FEC
 	.globl gText_Rom_2C0A4C
 gText_Rom_2C0A4C: @ 0x082C0A4C
 sText_AwaitingOtherMembers:
-	.string "{STR_VAR_1}！\nほかの　メンバーを　まっています！$"
+	.string "{STR_VAR_1}！\nほかの　メンバーを　まっています！{EOS}"
 	.if (. - gText_Rom_2C0A4C) > 0x16
 	.error "gText_Rom_2C0A4C may not grow beyond its original slot"
 	.endif
@@ -397,10 +397,10 @@ sText_AwaitingOtherMembers:
 	.globl sText_QuitBeingMember
 
 sText_QuitBeingMember: @ 0x082C0A64
-	.string "メンバーから ぬけますか？$"
+	.string "メンバーから ぬけますか？{EOS}"
 	.space 2, 0 @ align sText_StoppedBeingMember
 sText_StoppedBeingMember: @ 0x082C0A74
-	.string "メンバーから ぬけました\p$"
+	.string "メンバーから ぬけました\p{EOS}"
 	.space 2, 0 @ alignment
 	.globl sPlayerDisconnectedTexts
 
@@ -420,7 +420,7 @@ sPlayerDisconnectedTexts: @ 0x082C0A84
 	.globl gText_Rom_2C0AAC
 gText_Rom_2C0AAC: @ 0x082C0AAC
 sText_WirelessLinkEstablished:
-	.string "ジョイスポットとの　せつぞくに\nせいこう　しました！$"
+	.string "ジョイスポットとの　せつぞくに\nせいこう　しました！{EOS}"
 	.if (. - gText_Rom_2C0AAC) > 0x1b
 	.error "gText_Rom_2C0AAC may not grow beyond its original slot"
 	.endif
@@ -431,14 +431,14 @@ sText_WirelessLinkEstablished:
 
 	.globl sText_WirelessLinkDropped
 sText_WirelessLinkDropped:
-	.string "ジョイスポットから　せつぞくを\nせつだん　されました…$"
+	.string "ジョイスポットから　せつぞくを\nせつだん　されました…{EOS}"
 	.globl sText_LinkWithFriendDropped
 sText_LinkWithFriendDropped:
-	.string "おともだちとの　つうしんが\nせつだん　されました…$"
+	.string "おともだちとの　つうしんが\nせつだん　されました…{EOS}"
 	.space 2, 0 @ align sText_PlayerRepliedNo2
 
 sText_PlayerRepliedNo2:
-	.string "{STR_VAR_1}から　NGとの\nへんじが　きてしまいました…$"
+	.string "{STR_VAR_1}から　NGとの\nへんじが　きてしまいました…{EOS}"
 	.space 3, 0 @ alignment
 	.globl sLinkDroppedTexts
 sLinkDroppedTexts:
@@ -454,10 +454,10 @@ sLinkDroppedTexts:
 	.4byte 0 @ RFU_STATUS_LEAVE_GROUP
 
 sText_DoYouWantXMode:
-	.string "{STR_VAR_2}を　したいのかい？$"
+	.string "{STR_VAR_2}を　したいのかい？{EOS}"
 
 sText_DoYouWantXMode2:
-	.string "{STR_VAR_2}で　いいかしら？$"
+	.string "{STR_VAR_2}で　いいかしら？{EOS}"
 	.byte 0 @ alignment
 
 sDoYouWantModeTexts:
@@ -471,7 +471,7 @@ sText_CommunicatingPleaseWait:
 	@ data/text/cable_club.inc:142 CableClub_Text_PleaseWait
 	.globl gText_Rom_2C0B6F
 gText_Rom_2C0B6F: @ 0x082C0B6F
-	.string "しょうしょう おまちください$"
+	.string "しょうしょう おまちください{EOS}"
 	.if (. - gText_Rom_2C0B6F) > 0xf
 	.error "gText_Rom_2C0B6F may not grow beyond its original slot"
 	.endif
@@ -484,19 +484,19 @@ gText_Rom_2C0B6F: @ 0x082C0B6F
 gText_Rom_2C0B80: @ 0x082C0B80
 	@ Continuation of sText_AwaitingPlayersResponseAboutTrade,
 	@ which starts in the preceding generated file.
-	.string "{STR_VAR_1}からの　こうかんの\nへんじを　まっています…$"
+	.string "{STR_VAR_1}からの　こうかんの\nへんじを　まっています…{EOS}"
 	.space 3, 0 @ align sText_Communicating
 
 sText_Communicating:
-	.string "はなしかけています{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・\n{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・$"
+	.string "はなしかけています{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・\n{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{EOS}"
 	.byte 0 @ alignment
 
 sText_CommunicatingWithPlayer:
-	.string "{STR_VAR_1}に　はなしかけています{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・\n{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・$"
+	.string "{STR_VAR_1}に　はなしかけています{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・\n{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{EOS}"
 	.byte 0 @ alignment
 
 sText_PleaseWaitAWhile:
-	.string "しょうしょうおまちください{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・\n{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・$"
+	.string "しょうしょうおまちください{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・\n{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{EOS}"
 	.byte 0 @ alignment
 	.globl sCommunicatingWaitTexts
 sCommunicatingWaitTexts:
@@ -505,19 +505,19 @@ sCommunicatingWaitTexts:
 	.4byte sText_PleaseWaitAWhile
 
 sText_HiDoSomethingMale:
-	.string "やあ！\nなにか　するかい？$"
+	.string "やあ！\nなにか　するかい？{EOS}"
 	.space 2, 0 @ align sText_HiDoSomethingFemale
 
 sText_HiDoSomethingFemale:
-	.string "こんにちは！\nなにか　する？$"
+	.string "こんにちは！\nなにか　する？{EOS}"
 	.byte 0 @ alignment
 
 sText_HiDoSomethingAgainMale:
-	.string "{STR_VAR_1}「やあ　また　あったね！\nこんどは　なにをする？$"
+	.string "{STR_VAR_1}「やあ　また　あったね！\nこんどは　なにをする？{EOS}"
 	.byte 0 @ alignment
 
 sText_HiDoSomethingAgainFemale:
-	.string "{STR_VAR_1}「あ！　{PLAYER}\nこんにちは！　また　なにかする？$"
+	.string "{STR_VAR_1}「あ！　{PLAYER}\nこんにちは！　また　なにかする？{EOS}"
 	.space 2, 0 @ alignment
 	.globl sHiDoSomethingTexts
 sHiDoSomethingTexts:
@@ -527,19 +527,19 @@ sHiDoSomethingTexts:
 	.4byte sText_HiDoSomethingAgainFemale
 
 sText_DoSomethingMale:
-	.string "なにか　するかい？$"
+	.string "なにか　するかい？{EOS}"
 	.space 2, 0 @ align sText_DoSomethingFemale
 
 sText_DoSomethingFemale:
-	.string "なにか　する？$"
+	.string "なにか　する？{EOS}"
 
 sText_DoSomethingAgainMale:
-	.string "{STR_VAR_1}「こんどは　なにをする？$"
+	.string "{STR_VAR_1}「こんどは　なにをする？{EOS}"
 	.byte 0 @ alignment
 
 sText_DoSomethingAgainFemale:
 	@ Unused in the corresponding decomp source.
-	.string "{STR_VAR_1}「また　なにかする？$"
+	.string "{STR_VAR_1}「また　なにかする？{EOS}"
 	.space 3, 0 @ alignment
 
 sDoSomethingTexts:
@@ -550,10 +550,10 @@ sDoSomethingTexts:
 	@ The final entry intentionally repeats the male string.
 
 sText_SomebodyHasContactedYou:
-	.string "だれかが\nはなしかけて　きました{PAUSE 60}$"
+	.string "だれかが\nはなしかけて　きました{PAUSE 60}{EOS}"
 
 sText_PlayerHasContactedYou:
-	.string "{STR_VAR_1}が\nはなしかけて　きました{PAUSE 60}$"
+	.string "{STR_VAR_1}が\nはなしかけて　きました{PAUSE 60}{EOS}"
 	.byte 0 @ alignment
 	.globl sPlayerContactedYouTexts
 sPlayerContactedYouTexts:
@@ -561,26 +561,26 @@ sPlayerContactedYouTexts:
 	.4byte sText_PlayerHasContactedYou
 
 sText_AwaitingResponseFromTrainer:
-	.string "あいての　へんじを\nまっています$"
+	.string "あいての　へんじを\nまっています{EOS}"
 	.space 3, 0 @ align sText_AwaitingResponseFromPlayer
 
 sText_AwaitingResponseFromPlayer:
-	.string "{STR_VAR_1}の　へんじを\nまっています$"
+	.string "{STR_VAR_1}の　へんじを\nまっています{EOS}"
 	.globl sAwaitingResponseTexts
 sAwaitingResponseTexts:
 	.4byte sText_AwaitingResponseFromTrainer
 	.4byte sText_AwaitingResponseFromPlayer
 	.globl sText_ShowTrainerCard
 sText_ShowTrainerCard:
-	.string "あいてが　トレーナーカードを\nみせて　きました\pこちらも　トレーナーカードを\nみせますか？$"
+	.string "あいてが　トレーナーカードを\nみせて　きました\pこちらも　トレーナーカードを\nみせますか？{EOS}"
 	.space 2, 0 @ alignment
 	.globl sText_BattleChallenge
 sText_BattleChallenge:
-	.string "あいてが　たいせんを\nもうしこんで　きました\pたいせん　しますか？$"
+	.string "あいてが　たいせんを\nもうしこんで　きました\pたいせん　しますか？{EOS}"
 	.space 2, 0 @ alignment
 	.globl sText_ChatInvitation
 sText_ChatInvitation:
-	.string "あいてが　チャット　に\nさそって　きました\pいっしょに　チャット\nしますか？$"
+	.string "あいてが　チャット　に\nさそって　きました\pいっしょに　チャット\nしますか？{EOS}"
 	.byte 0 @ alignment
 	.globl sText_OfferToTradeMon
 sText_OfferToTradeMon:
@@ -591,6 +591,6 @@ sText_OfferToTradeMon:
 	.byte 0xC6, 0xD0 @ "LV"
 	.string "{DYNAMIC 0}の　{DYNAMIC 1}　と\p"
 	.byte 0xC6, 0xD0 @ "LV"
-	.string "{DYNAMIC 2}の　{DYNAMIC 3}　の\nこうかん　もうしこみが　きています\pこうかん　しますか？$"
+	.string "{DYNAMIC 2}の　{DYNAMIC 3}　の\nこうかん　もうしこみが　きています\pこうかん　しますか？{EOS}"
 	.space 3, 0 @ alignment
 	@ Boundary of the next generated union-room data region.

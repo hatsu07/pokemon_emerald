@@ -1,7 +1,7 @@
 	@ src/pokemon_summary_screen.c:3875 sTextNatureNeutral
 	.globl gText_Rom_2BFEB4
 gText_Rom_2BFEB4: @ 0x082BFEB4
-	.string "{COLOR}{01}$"
+	.string "{COLOR}{01}{EOS}"
 	.if (. - gText_Rom_2BFEB4) > 0x4
 	.error "gText_Rom_2BFEB4 may not grow beyond its original slot"
 	.endif
@@ -363,7 +363,7 @@ sASCII_PokemonSioInfo:
 	.asciz "PokemonSioInfo"
 	.byte 0 @ alignment
 sJapaneseName_Akito:
-	.string "あきと$"
+	.string "あきと{EOS}"
 
 	.globl sASCII_LinkLossDisconnect
 sASCII_LinkLossDisconnect:

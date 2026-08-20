@@ -1,7 +1,7 @@
 	@ field-script:0x264763 FieldScriptText_264E73
 	.globl gText_Rom_264E73
 gText_Rom_264E73: @ 0x08264E73
-	.string "ねえ！　ねえ！　あなたも\nクイズ　つくって　みない？$"
+	.string "ねえ！　ねえ！　あなたも\nクイズ　つくって　みない？{EOS}"
 	.if (. - gText_Rom_264E73) > 0x1b
 	.error "gText_Rom_264E73 may not grow beyond its original slot"
 	.endif

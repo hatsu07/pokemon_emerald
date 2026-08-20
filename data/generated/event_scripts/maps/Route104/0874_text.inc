@@ -1,7 +1,7 @@
 	@ data/maps/Route104/scripts.inc:1063 Route104_Text_PrettyPetalFlowShop
 	.globl gText_Rom_1E7D98
 gText_Rom_1E7D98: @ 0x081E7D98
-	.string "「フラワーショップ　サン・トウカ」$"
+	.string "「フラワーショップ　サン・トウカ」{EOS}"
 	.if (. - gText_Rom_1E7D98) > 0x12
 	.error "gText_Rom_1E7D98 may not grow beyond its original slot"
 	.endif

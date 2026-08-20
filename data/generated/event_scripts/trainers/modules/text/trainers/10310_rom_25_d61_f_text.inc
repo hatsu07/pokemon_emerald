@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1565 Route116_Text_ClarkPostBattle
 	.globl gText_Rom_25D61F
 gText_Rom_25D61F: @ 0x0825D61F
-	.string "トンネルなど なくても かまわん\nやまおとこは やまが みち なのだ!$"
+	.string "トンネルなど なくても かまわん\nやまおとこは やまが みち なのだ!{EOS}"
 	.if (. - gText_Rom_25D61F) > 0x24
 	.error "gText_Rom_25D61F may not grow beyond its original slot"
 	.endif

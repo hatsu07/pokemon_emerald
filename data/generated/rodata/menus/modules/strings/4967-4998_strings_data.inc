@@ -1,7 +1,7 @@
 	@ src/strings.c:435 gText_Silver
 	.globl gText_Rom_5CA742
 gText_Rom_5CA742: @ 0x085CA742
-	.string "ぎん$"
+	.string "ぎん{EOS}"
 	.if (. - gText_Rom_5CA742) > 0x3
 	.error "gText_Rom_5CA742 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CA742: @ 0x085CA742
 	@ src/strings.c:436 gText_PlaceItHere
 	.globl gText_Rom_5CA745
 gText_Rom_5CA745: @ 0x085CA745
-	.string "ここに おきますか?$"
+	.string "ここに おきますか?{EOS}"
 	.if (. - gText_Rom_5CA745) > 0xb
 	.error "gText_Rom_5CA745 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CA745: @ 0x085CA745
 	@ src/strings.c:437 gText_CantBePlacedHere
 	.globl gText_Rom_5CA750
 gText_Rom_5CA750: @ 0x085CA750
-	.string "ここには おけません!$"
+	.string "ここには おけません!{EOS}"
 	.if (. - gText_Rom_5CA750) > 0xc
 	.error "gText_Rom_5CA750 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5CA750: @ 0x085CA750
 	@ src/strings.c:438 gText_CancelDecorating
 	.globl gText_Rom_5CA75C
 gText_Rom_5CA75C: @ 0x085CA75C
-	.string "おくのを やめますか?$"
+	.string "おくのを やめますか?{EOS}"
 	.if (. - gText_Rom_5CA75C) > 0xc
 	.error "gText_Rom_5CA75C may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5CA75C: @ 0x085CA75C
 	@ src/strings.c:439 gText_InUseAlready
 	.globl gText_Rom_5CA768
 gText_Rom_5CA768: @ 0x085CA768
-	.string "すでに おかれて います!$"
+	.string "すでに おかれて います!{EOS}"
 	.if (. - gText_Rom_5CA768) > 0xe
 	.error "gText_Rom_5CA768 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5CA768: @ 0x085CA768
 	@ src/strings.c:440 gText_NoMoreDecorations
 	.globl gText_Rom_5CA776
 gText_Rom_5CA776: @ 0x085CA776
-	.string "これいじょう おけません\nひみつきちに おけるのは {STR_VAR_1}こ までです$"
+	.string "これいじょう おけません\nひみつきちに おけるのは {STR_VAR_1}こ までです{EOS}"
 	.if (. - gText_Rom_5CA776) > 0x23
 	.error "gText_Rom_5CA776 may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_5CA776: @ 0x085CA776
 	@ src/strings.c:441 gText_NoMoreDecorations2
 	.globl gText_Rom_5CA799
 gText_Rom_5CA799: @ 0x085CA799
-	.string "これいじょう おけません\nへやに おけるのは {STR_VAR_1}こ までです$"
+	.string "これいじょう おけません\nへやに おけるのは {STR_VAR_1}こ までです{EOS}"
 	.if (. - gText_Rom_5CA799) > 0x20
 	.error "gText_Rom_5CA799 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_5CA799: @ 0x085CA799
 	@ src/strings.c:442 gText_MustBePlacedOnDesk
 	.globl gText_Rom_5CA7B9
 gText_Rom_5CA7B9: @ 0x085CA7B9
-	.string "ここには おけません!\nつくえの うえなどに おいてください!$"
+	.string "ここには おけません!\nつくえの うえなどに おいてください!{EOS}"
 	.if (. - gText_Rom_5CA7B9) > 0x20
 	.error "gText_Rom_5CA7B9 may not grow beyond its original slot"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_5CA7B9: @ 0x085CA7B9
 	@ src/strings.c:443 gText_CantPlaceInRoom
 	.globl gText_Rom_5CA7D9
 gText_Rom_5CA7D9: @ 0x085CA7D9
-	.string "この グッズは\nじぶんの へやには おけません!$"
+	.string "この グッズは\nじぶんの へやには おけません!{EOS}"
 	.if (. - gText_Rom_5CA7D9) > 0x19
 	.error "gText_Rom_5CA7D9 may not grow beyond its original slot"
 	.endif
@@ -100,7 +100,7 @@ gText_Rom_5CA7D9: @ 0x085CA7D9
 	@ src/strings.c:444 gText_CantThrowAwayInUse
 	.globl gText_Rom_5CA7F2
 gText_Rom_5CA7F2: @ 0x085CA7F2
-	.string "このグッズは おかれて いるので\nすてる ことが できません!$"
+	.string "このグッズは おかれて いるので\nすてる ことが できません!{EOS}"
 	.if (. - gText_Rom_5CA7F2) > 0x20
 	.error "gText_Rom_5CA7F2 may not grow beyond its original slot"
 	.endif
@@ -111,7 +111,7 @@ gText_Rom_5CA7F2: @ 0x085CA7F2
 	@ src/strings.c:445 gText_DecorationWillBeDiscarded
 	.globl gText_Rom_5CA812
 gText_Rom_5CA812: @ 0x085CA812
-	.string "{STR_VAR_1} は なくなりますが\nよろしい ですか?$"
+	.string "{STR_VAR_1} は なくなりますが\nよろしい ですか?{EOS}"
 	.if (. - gText_Rom_5CA812) > 0x17
 	.error "gText_Rom_5CA812 may not grow beyond its original slot"
 	.endif
@@ -122,7 +122,7 @@ gText_Rom_5CA812: @ 0x085CA812
 	@ src/strings.c:446 gText_DecorationThrownAway
 	.globl gText_Rom_5CA829
 gText_Rom_5CA829: @ 0x085CA829
-	.string "グッズを すてました!$"
+	.string "グッズを すてました!{EOS}"
 	.if (. - gText_Rom_5CA829) > 0xc
 	.error "gText_Rom_5CA829 may not grow beyond its original slot"
 	.endif
@@ -133,7 +133,7 @@ gText_Rom_5CA829: @ 0x085CA829
 	@ src/strings.c:447 gText_StopPuttingAwayDecorations
 	.globl gText_Rom_5CA835
 gText_Rom_5CA835: @ 0x085CA835
-	.string "もどすのを やめますか?$"
+	.string "もどすのを やめますか?{EOS}"
 	.if (. - gText_Rom_5CA835) > 0xd
 	.error "gText_Rom_5CA835 may not grow beyond its original slot"
 	.endif
@@ -144,7 +144,7 @@ gText_Rom_5CA835: @ 0x085CA835
 	@ src/strings.c:448 gText_NoDecorationHere
 	.globl gText_Rom_5CA842
 gText_Rom_5CA842: @ 0x085CA842
-	.string "ここに グッズは ありません!$"
+	.string "ここに グッズは ありません!{EOS}"
 	.if (. - gText_Rom_5CA842) > 0x10
 	.error "gText_Rom_5CA842 may not grow beyond its original slot"
 	.endif
@@ -155,7 +155,7 @@ gText_Rom_5CA842: @ 0x085CA842
 	@ src/strings.c:449 gText_ReturnDecorationToPC
 	.globl gText_Rom_5CA852
 gText_Rom_5CA852: @ 0x085CA852
-	.string "このグッズを パソコンに もどしますか?$"
+	.string "このグッズを パソコンに もどしますか?{EOS}"
 	.if (. - gText_Rom_5CA852) > 0x15
 	.error "gText_Rom_5CA852 may not grow beyond its original slot"
 	.endif
@@ -166,7 +166,7 @@ gText_Rom_5CA852: @ 0x085CA852
 	@ src/strings.c:450 gText_DecorationReturnedToPC
 	.globl gText_Rom_5CA867
 gText_Rom_5CA867: @ 0x085CA867
-	.string "グッズを パソコンに もどしました!$"
+	.string "グッズを パソコンに もどしました!{EOS}"
 	.if (. - gText_Rom_5CA867) > 0x13
 	.error "gText_Rom_5CA867 may not grow beyond its original slot"
 	.endif

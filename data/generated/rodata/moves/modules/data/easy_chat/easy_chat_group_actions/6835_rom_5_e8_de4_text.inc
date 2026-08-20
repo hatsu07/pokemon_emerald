@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_actions.h:214 easy_chat_group_actions_line_214
 	.globl gText_Rom_5E8DE4
 gText_Rom_5E8DE4: @ 0x085E8DE4
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5E8DE4) > 0x4
 	.error "gText_Rom_5E8DE4 may not grow beyond its original slot"
 	.endif

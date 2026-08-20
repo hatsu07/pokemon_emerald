@@ -1,7 +1,7 @@
 	@ data/maps/Route110_TrickHousePuzzle3/scripts.inc:328 Route110_TrickHousePuzzle3_Text_AlanDefeat (+1 aliases)
 	.globl gText_Rom_23EAF8
 gText_Rom_23EAF8: @ 0x0823EAF8
-	.string "いったい なぜ\nわしは まけて しまったんだろう……?$"
+	.string "いったい なぜ\nわしは まけて しまったんだろう……?{EOS}"
 	.if (. - gText_Rom_23EAF8) > 0x1c
 	.error "gText_Rom_23EAF8 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/JaggedPass/scripts.inc:215 JaggedPass_Text_EthanRematchDefeat (+1 aliases)
 	.globl gText_Rom_215F52
 gText_Rom_215F52: @ 0x08215F52
-	.string "やっぱり デコボコだと\nたたかいにくいよ……$"
+	.string "やっぱり デコボコだと\nたたかいにくいよ……{EOS}"
 	.if (. - gText_Rom_215F52) > 0x17
 	.error "gText_Rom_215F52 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1127 Route112_Text_LarryPostBattle
 	.globl gText_Rom_25C464
 gText_Rom_25C464: @ 0x0825C464
-	.string "おかあさんに あえなくて\nさみしいから ないてるんじゃ ないよ!\lぐすん……$"
+	.string "おかあさんに あえなくて\nさみしいから ないてるんじゃ ないよ!\lぐすん……{EOS}"
 	.if (. - gText_Rom_25C464) > 0x27
 	.error "gText_Rom_25C464 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_House1/scripts.inc:42 RustboroCity_House1_Text_YouDontWantToThatsOkay
 	.globl gText_Rom_203CF7
 gText_Rom_203CF7: @ 0x08203CF7
-	.string "あ いやなら いいけど……\nせっかく かわいい ポケモンなのに$"
+	.string "あ いやなら いいけど……\nせっかく かわいい ポケモンなのに{EOS}"
 	.if (. - gText_Rom_203CF7) > 0x20
 	.error "gText_Rom_203CF7 may not grow beyond its original slot"
 	.endif

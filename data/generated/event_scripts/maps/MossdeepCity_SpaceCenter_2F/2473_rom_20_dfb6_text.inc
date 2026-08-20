@@ -1,7 +1,7 @@
 	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:423 MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome
 	.globl gText_Rom_20DFB6
 gText_Rom_20DFB6: @ 0x0820DFB6
-	.string "ダイゴ『ふう あぶない ところ だった\n{PLAYER}{KUN} ありがとう\pちからを かしてくれた おれいに\nいいものを あげるから\lあとで いえまで きておくれ\pボクのいえは カナズミ じゃないよ\nこのしまに あるんだ$"
+	.string "ダイゴ『ふう あぶない ところ だった\n{PLAYER}{KUN} ありがとう\pちからを かしてくれた おれいに\nいいものを あげるから\lあとで いえまで きておくれ\pボクのいえは カナズミ じゃないよ\nこのしまに あるんだ{EOS}"
 	.if (. - gText_Rom_20DFB6) > 0x68
 	.error "gText_Rom_20DFB6 may not grow beyond its original slot"
 	.endif

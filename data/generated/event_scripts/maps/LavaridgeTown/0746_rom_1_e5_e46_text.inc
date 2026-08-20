@@ -1,7 +1,7 @@
 	@ data/maps/LavaridgeTown/scripts.inc:403 LavaridgeTown_Text_HerbShopSign
 	.globl gText_Rom_1E5E46
 gText_Rom_1E5E46: @ 0x081E5E46
-	.string "「ポケモン かんぽうやく」\nりょうやく くちに にがし!$"
+	.string "「ポケモン かんぽうやく」\nりょうやく くちに にがし!{EOS}"
 	.if (. - gText_Rom_1E5E46) > 0x1d
 	.error "gText_Rom_1E5E46 may not grow beyond its original slot"
 	.endif

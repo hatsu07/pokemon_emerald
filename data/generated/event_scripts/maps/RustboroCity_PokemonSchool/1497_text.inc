@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_PokemonSchool/scripts.inc:220 RustboroCity_PokemonSchool_Text_ExplainFreeze
 	.globl gText_Rom_202FA7
 gText_Rom_202FA7: @ 0x08202FA7
-	.string "こおって しまうと なにも できなくなります\pたたかい おわっても こおりついた ままです\nこおりなおしで とかしましょう$"
+	.string "こおって しまうと なにも できなくなります\pたたかい おわっても こおりついた ままです\nこおりなおしで とかしましょう{EOS}"
 	.if (. - gText_Rom_202FA7) > 0x3e
 	.error "gText_Rom_202FA7 may not grow beyond its original slot"
 	.endif

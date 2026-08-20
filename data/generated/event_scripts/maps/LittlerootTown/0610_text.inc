@@ -1,7 +1,7 @@
 	@ data/maps/LittlerootTown/scripts.inc:958 LittlerootTown_Text_CanUsePCToStoreItems
 	.globl gText_Rom_1E452C
 gText_Rom_1E452C: @ 0x081E452C
-	.string "パソコンを つかえば\nどうぐや ポケモンが ほぞん できるんだ!\pかがくの ちからって しびれるーっ!$"
+	.string "パソコンを つかえば\nどうぐや ポケモンが ほぞん できるんだ!\pかがくの ちからって しびれるーっ!{EOS}"
 	.if (. - gText_Rom_1E452C) > 0x34
 	.error "gText_Rom_1E452C may not grow beyond its original slot"
 	.endif

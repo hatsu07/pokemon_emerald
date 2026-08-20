@@ -1,7 +1,7 @@
 	@ data/maps/EverGrandeCity_SidneysRoom/scripts.inc:73 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech
 	.globl gText_Rom_21032F
 gText_Rom_21032F: @ 0x0821032F
-	.string "まけた おれから ひとこと\pおまえなら もっと さきに すすめるぜ\nさあ つぎの へやに いって\lたたかいを たのしんで きなよ!$"
+	.string "まけた おれから ひとこと\pおまえなら もっと さきに すすめるぜ\nさあ つぎの へやに いって\lたたかいを たのしんで きなよ!{EOS}"
 	.if (. - gText_Rom_21032F) > 0x42
 	.error "gText_Rom_21032F may not grow beyond its original slot"
 	.endif

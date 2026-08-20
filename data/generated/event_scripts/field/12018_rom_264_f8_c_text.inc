@@ -1,7 +1,7 @@
 	@ field-script:0x26482A FieldScriptText_264F8C
 	.globl gText_Rom_264F8C
 gText_Rom_264F8C: @ 0x08264F8C
-	.string "おつかれさまー！\pすてきな　クイズが　できたね！\pさっそく　チャレンジ　してくれる　ひとを\nさがしに　いって　くるね！$"
+	.string "おつかれさまー！\pすてきな　クイズが　できたね！\pさっそく　チャレンジ　してくれる　ひとを\nさがしに　いって　くるね！{EOS}"
 	.if (. - gText_Rom_264F8C) > 0x3c
 	.error "gText_Rom_264F8C may not grow beyond its original slot"
 	.endif

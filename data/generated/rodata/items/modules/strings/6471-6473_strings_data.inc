@@ -1,7 +1,7 @@
 	@ src/strings.c:827 gText_AnnouncingRankings
 	.globl gText_Rom_5CCD5A
 gText_Rom_5CCD5A: @ 0x085CCD5A
-	.string "じゅんいの はっぴょう!!$"
+	.string "じゅんいの はっぴょう!!{EOS}"
 	.if (. - gText_Rom_5CCD5A) > 0xe
 	.error "gText_Rom_5CCD5A may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CCD5A: @ 0x085CCD5A
 	@ src/strings.c:828 gText_AnnouncingPrizes
 	.globl gText_Rom_5CCD68
 gText_Rom_5CCD68: @ 0x085CCD68
-	.string "しょうひんの はっぴょう!!$"
+	.string "しょうひんの はっぴょう!!{EOS}"
 	.if (. - gText_Rom_5CCD68) > 0xf
 	.error "gText_Rom_5CCD68 may not grow beyond its original slot"
 	.endif

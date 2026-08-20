@@ -1,7 +1,7 @@
 	@ data/text/battle_tent.inc:431 VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules
 	.globl gText_Rom_22AEA7
 gText_Rom_22AEA7: @ 0x0822AEA7
-	.string "ポケモンの せいかくの なかには\nピンチに なることで もともとの\lせいかくとは ちがう タイプの\lわざを つかう ように\lなるものが あります\pピンチに なって すこし かわった\nこうどうを はじめた ポケモンには\lじゅうぶん ちゅうい しましょう$"
+	.string "ポケモンの せいかくの なかには\nピンチに なることで もともとの\lせいかくとは ちがう タイプの\lわざを つかう ように\lなるものが あります\pピンチに なって すこし かわった\nこうどうを はじめた ポケモンには\lじゅうぶん ちゅうい しましょう{EOS}"
 	.if (. - gText_Rom_22AEA7) > 0x7e
 	.error "gText_Rom_22AEA7 may not grow beyond its original slot"
 	.endif

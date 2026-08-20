@@ -1,7 +1,7 @@
 	@ src/strings.c:412 gText_ApostropheSBase
 	.globl gText_Rom_546F6B
 gText_Rom_546F6B: @ 0x08546F6B
-	.string " きち$"
+	.string " きち{EOS}"
 	.if (. - gText_Rom_546F6B) > 0x4
 	.error "gText_Rom_546F6B may not grow beyond its original slot"
 	.endif
@@ -216,7 +216,7 @@ gText_Rom_546F6B: @ 0x08546F6B
 	.byte 0x44, 0x03, 0xE0, 0x03, 0xF1, 0xF3, 0xC1, 0xFF, 0xDA, 0x51, 0xE7, 0x60, 0x07, 0xAA
 	.globl gText_Rom_547C2D
 gText_Rom_547C2D: @ 0x08547C2D
-	.string " きち$"
+	.string " きち{EOS}"
 	.if (. - gText_Rom_547C2D) > 0x4
 	.error "gText_Rom_547C2D may not grow beyond its original slot"
 	.endif

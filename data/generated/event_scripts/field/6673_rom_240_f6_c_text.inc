@@ -1,7 +1,7 @@
 	@ field-script:0x240C4A FieldScriptText_240F6C
 	.globl gText_Rom_240F6C
 gText_Rom_240F6C: @ 0x08240F6C
-	.string "おやかたが　はなすのに　あわせて\nビードロ　ふくと　たのしか！\pペコペコ！　ペコポコ！$"
+	.string "おやかたが　はなすのに　あわせて\nビードロ　ふくと　たのしか！\pペコペコ！　ペコポコ！{EOS}"
 	.if (. - gText_Rom_240F6C) > 0x2c
 	.error "gText_Rom_240F6C may not grow beyond its original slot"
 	.endif

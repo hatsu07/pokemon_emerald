@@ -1,7 +1,7 @@
 	@ src/strings.c:847 gText_AwesomeWonF701F700
 	.globl gText_Rom_5CCE36
 gText_Rom_5CCE36: @ 0x085CCE36
-	.string "せいせきが よかったので\n{DYNAMIC 0}を {DYNAMIC 1}こ プレゼント!$"
+	.string "せいせきが よかったので\n{DYNAMIC 0}を {DYNAMIC 1}こ プレゼント!{EOS}"
 	.if (. - gText_Rom_5CCE36) > 0x1c
 	.error "gText_Rom_5CCE36 may not grow beyond its original slot"
 	.endif
@@ -27,7 +27,7 @@ gPokemonJumpData_085CCE65: @ 0x085CCE65
 	@ src/strings.c:837 gText_WantToPlayAgain (+1 aliases)
 	.globl gText_Rom_5CCE71
 gText_Rom_5CCE71: @ 0x085CCE71
-	.string "もういちど あそびますか？$"
+	.string "もういちど あそびますか？{EOS}"
 	.if (. - gText_Rom_5CCE71) > 0xe
 	.error "gText_Rom_5CCE71 may not grow beyond its original slot"
 	.endif
@@ -39,7 +39,7 @@ gText_Rom_5CCE71: @ 0x085CCE71
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CCE7F
 gText_Rom_5CCE7F: @ 0x085CCE7F
-	.string "だれかがぬけました\nつうしんを しゅうりょうします$"
+	.string "だれかがぬけました\nつうしんを しゅうりょうします{EOS}"
 	.if (. - gText_Rom_5CCE7F) != 0x1a
 	.error "gText_Rom_5CCE7F must retain its original byte length"
 	.endif
@@ -49,7 +49,7 @@ gText_Rom_5CCE7F: @ 0x085CCE7F
 	@ src/strings.c:852 gText_CommunicationStandby4
 	.globl gText_Rom_5CCE99
 gText_Rom_5CCE99: @ 0x085CCE99
-	.string "つうしん たいきちゅう$"
+	.string "つうしん たいきちゅう{EOS}"
 	.if (. - gText_Rom_5CCE99) > 0xc
 	.error "gText_Rom_5CCE99 may not grow beyond its original slot"
 	.endif
@@ -60,7 +60,7 @@ gText_Rom_5CCE99: @ 0x085CCE99
 	@ src/strings.c:853 gText_LinkContestResults
 	.globl gText_Rom_5CCEA5
 gText_Rom_5CCEA5: @ 0x085CCEA5
-	.string "{PLAYER}の つうしん コンテスト せいせき$"
+	.string "{PLAYER}の つうしん コンテスト せいせき{EOS}"
 	.if (. - gText_Rom_5CCEA5) > 0x14
 	.error "gText_Rom_5CCEA5 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/Route109/scripts.inc:524 Route109_Text_TrainerTipsSign
 	.globl gText_Rom_1E8DEB
 gText_Rom_1E8DEB: @ 0x081E8DEB
-	.string "おとくな けいじばん!!\pポケモンの レベルが おなじ でも\nつよさまで おなじとは かぎりません!\pそれに トレーナーが そだてた\nポケモンの ほうが つよくなると\lいわれて います!$"
+	.string "おとくな けいじばん!!\pポケモンの レベルが おなじ でも\nつよさまで おなじとは かぎりません!\pそれに トレーナーが そだてた\nポケモンの ほうが つよくなると\lいわれて います!{EOS}"
 	.if (. - gText_Rom_1E8DEB) > 0x5e
 	.error "gText_Rom_1E8DEB may not grow beyond its original slot"
 	.endif

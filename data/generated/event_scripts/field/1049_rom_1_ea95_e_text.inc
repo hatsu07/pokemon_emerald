@@ -1,7 +1,7 @@
 	@ field-script:0x1EA485 FieldScriptText_1EA95E
 	.globl gText_Rom_1EA95E
 gText_Rom_1EA95E: @ 0x081EA95E
-	.string "あっそ！\nきが　むいたら　また　おいで！$"
+	.string "あっそ！\nきが　むいたら　また　おいで！{EOS}"
 	.if (. - gText_Rom_1EA95E) > 0x15
 	.error "gText_Rom_1EA95E may not grow beyond its original slot"
 	.endif

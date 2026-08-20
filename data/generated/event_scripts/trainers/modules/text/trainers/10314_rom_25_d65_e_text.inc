@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1571 Route116_Text_JoeyDefeat (+1 aliases)
 	.globl gText_Rom_25D65E
 gText_Rom_25D65E: @ 0x0825D65E
-	.string "あいたたたたっ! キズが できた!\nバンソーコー はらなきゃ!$"
+	.string "あいたたたたっ! キズが できた!\nバンソーコー はらなきゃ!{EOS}"
 	.if (. - gText_Rom_25D65E) > 0x20
 	.error "gText_Rom_25D65E may not grow beyond its original slot"
 	.endif

@@ -2,7 +2,7 @@
 	@ src/pokemon_storage_system.c:873 pokemon_storage_system_line_873
 	.globl gText_Rom_5CB46D
 gText_Rom_5CB46D: @ 0x085CB46D
-	.string "どうぐせいり$"
+	.string "どうぐせいり{EOS}"
 	.if (. - gText_Rom_5CB46D) > 0x7
 	.error "gText_Rom_5CB46D may not grow beyond its original slot"
 	.endif

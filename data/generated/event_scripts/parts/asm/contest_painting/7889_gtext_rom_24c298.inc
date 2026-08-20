@@ -1,7 +1,7 @@
 	@ asm/contest_painting.s:487 PrintContestPaintingCaption
 	.globl gText_Rom_24C298
 gText_Rom_24C298: @ 0x0824C298
-	.string "{0xFD}{0x02}　クンの　マブシイ\nキラキラ　スマイル$"
+	.string "{0xFD}{0x02}　クンの　マブシイ\nキラキラ　スマイル{EOS}"
 	.if (. - gText_Rom_24C298) > 0x16
 	.error "gText_Rom_24C298 may not grow beyond its original slot"
 	.endif

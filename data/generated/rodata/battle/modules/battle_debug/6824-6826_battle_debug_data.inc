@@ -1,7 +1,7 @@
 	@ src/battle_debug.c:337 battle_debug_line_337 (+5 aliases)
 	.globl gText_Rom_5E8911
 gText_Rom_5E8911: @ 0x085E8911
-	.string "こうげき$"
+	.string "こうげき{EOS}"
 	.if (. - gText_Rom_5E8911) > 0x5
 	.error "gText_Rom_5E8911 may not grow beyond its original slot"
 	.endif
@@ -16,7 +16,7 @@ gText_Rom_5E8911: @ 0x085E8911
 	.byte 0x2E, 0x40, 0x08, 0x44, 0x00
 	.globl gText_Rom_5E894B
 gText_Rom_5E894B: @ 0x085E894B
-	.string "こうげき$"
+	.string "こうげき{EOS}"
 	.if (. - gText_Rom_5E894B) > 0x5
 	.error "gText_Rom_5E894B may not grow beyond its original slot"
 	.endif

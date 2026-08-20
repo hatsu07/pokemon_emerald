@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_voices.h:316 easy_chat_group_voices_line_316
 	.globl gText_Rom_575CB4
 gText_Rom_575CB4: @ 0x08575CB4
-	.string "むきー!!$"
+	.string "むきー!!{EOS}"
 	.if (. - gText_Rom_575CB4) > 0x6
 	.error "gText_Rom_575CB4 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_575CB4: @ 0x08575CB4
 	@ src/data/easy_chat/easy_chat_group_voices.h:322 easy_chat_group_voices_line_322
 	.globl gText_Rom_575CBA
 gText_Rom_575CBA: @ 0x08575CBA
-	.string "むふふ$"
+	.string "むふふ{EOS}"
 	.if (. - gText_Rom_575CBA) > 0x4
 	.error "gText_Rom_575CBA may not grow beyond its original slot"
 	.endif
@@ -20,12 +20,12 @@ gText_Rom_575CBA: @ 0x08575CBA
 	.space 0x4 - (. - gText_Rom_575CBA)
 	.endif
 	@ Decoded text from ROM range: offset=0x575CBE, size=0x3
-	.string "むむ$"
+	.string "むむ{EOS}"
 
 	@ src/data/easy_chat/easy_chat_group_voices.h:334 easy_chat_group_voices_line_334
 	.globl gText_Rom_575CC1
 gText_Rom_575CC1: @ 0x08575CC1
-	.string "よーし$"
+	.string "よーし{EOS}"
 	.if (. - gText_Rom_575CC1) > 0x4
 	.error "gText_Rom_575CC1 may not grow beyond its original slot"
 	.endif
@@ -36,7 +36,7 @@ gText_Rom_575CC1: @ 0x08575CC1
 	@ src/data/easy_chat/easy_chat_group_voices.h:340 easy_chat_group_voices_line_340
 	.globl gText_Rom_575CC5
 gText_Rom_575CC5: @ 0x08575CC5
-	.string "よし!$"
+	.string "よし!{EOS}"
 	.if (. - gText_Rom_575CC5) > 0x4
 	.error "gText_Rom_575CC5 may not grow beyond its original slot"
 	.endif
@@ -47,7 +47,7 @@ gText_Rom_575CC5: @ 0x08575CC5
 	@ src/data/easy_chat/easy_chat_group_voices.h:346 easy_chat_group_voices_line_346
 	.globl gText_Rom_575CC9
 gText_Rom_575CC9: @ 0x08575CC9
-	.string "ラララ$"
+	.string "ラララ{EOS}"
 	.if (. - gText_Rom_575CC9) > 0x4
 	.error "gText_Rom_575CC9 may not grow beyond its original slot"
 	.endif
@@ -58,7 +58,7 @@ gText_Rom_575CC9: @ 0x08575CC9
 	@ src/data/easy_chat/easy_chat_group_voices.h:352 easy_chat_group_voices_line_352
 	.globl gText_Rom_575CCD
 gText_Rom_575CCD: @ 0x08575CCD
-	.string "わーい$"
+	.string "わーい{EOS}"
 	.if (. - gText_Rom_575CCD) > 0x4
 	.error "gText_Rom_575CCD may not grow beyond its original slot"
 	.endif
@@ -69,7 +69,7 @@ gText_Rom_575CCD: @ 0x08575CCD
 	@ src/data/easy_chat/easy_chat_group_voices.h:358 easy_chat_group_voices_line_358
 	.globl gText_Rom_575CD1
 gText_Rom_575CD1: @ 0x08575CD1
-	.string "わーん!!$"
+	.string "わーん!!{EOS}"
 	.if (. - gText_Rom_575CD1) > 0x6
 	.error "gText_Rom_575CD1 may not grow beyond its original slot"
 	.endif
@@ -77,12 +77,12 @@ gText_Rom_575CD1: @ 0x08575CD1
 	.space 0x6 - (. - gText_Rom_575CD1)
 	.endif
 	@ Decoded text from ROM range: offset=0x575CD7, size=0x3
-	.string "ワオ$"
+	.string "ワオ{EOS}"
 
 	@ src/data/easy_chat/easy_chat_group_voices.h:370 easy_chat_group_voices_line_370
 	.globl gText_Rom_575CDA
 gText_Rom_575CDA: @ 0x08575CDA
-	.string "わっ!!$"
+	.string "わっ!!{EOS}"
 	.if (. - gText_Rom_575CDA) > 0x5
 	.error "gText_Rom_575CDA may not grow beyond its original slot"
 	.endif

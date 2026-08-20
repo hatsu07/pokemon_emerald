@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:339 BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo (+1 aliases)
 	.globl gText_Rom_209CBE
 gText_Rom_209CBE: @ 0x08209CBE
-	.string "いきさきは どちら でしょう?$"
+	.string "いきさきは どちら でしょう?{EOS}"
 	.if (. - gText_Rom_209CBE) > 0x10
 	.error "gText_Rom_209CBE may not grow beyond its original slot"
 	.endif

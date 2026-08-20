@@ -1,7 +1,7 @@
 	@ data/text/cable_club.inc:244 CableClub_Text_PlayWhichBattleMode
 	.globl gText_Rom_248500
 gText_Rom_248500: @ 0x08248500
-	.string "どちらの たいせんを しますか?$"
+	.string "どちらの たいせんを しますか?{EOS}"
 	.if (. - gText_Rom_248500) > 0x11
 	.error "gText_Rom_248500 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_248500: @ 0x08248500
 	@ data/text/cable_club.inc:247 CableClub_Text_AccessRecordCorner
 	.globl gText_Rom_248511
 gText_Rom_248511: @ 0x08248511
-	.string "レコードコーナーを しますか?$"
+	.string "レコードコーナーを しますか?{EOS}"
 	.if (. - gText_Rom_248511) > 0x10
 	.error "gText_Rom_248511 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_248511: @ 0x08248511
 	@ data/text/cable_club.inc:250 CableClub_Text_UseBerryCrush
 	.globl gText_Rom_248521
 gText_Rom_248521: @ 0x08248521
-	.string "きのみクラッシュを しますか?$"
+	.string "きのみクラッシュを しますか?{EOS}"
 	.if (. - gText_Rom_248521) > 0x10
 	.error "gText_Rom_248521 may not grow beyond its original slot"
 	.endif
@@ -35,7 +35,7 @@ gText_Rom_248521: @ 0x08248521
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_248531
 gText_Rom_248531: @ 0x08248531
-	.string "たいせんには 3しゅるいの\nモードが あります\pシングルバトルは たたかいの ばに\nポケモンを 1ひきだして\lふたりで たいせんします\pダブルバトルは たたかいの ばに\nポケモンを 2ひきずつ だして\lふたりで たいせんします\pマルチバトルは たたかいの ばに\n4にんで ポケモンを 1ひきずつ\lだして 2たい2で たいせんします$"
+	.string "たいせんには 3しゅるいの\nモードが あります\pシングルバトルは たたかいの ばに\nポケモンを 1ひきだして\lふたりで たいせんします\pダブルバトルは たたかいの ばに\nポケモンを 2ひきずつ だして\lふたりで たいせんします\pマルチバトルは たたかいの ばに\n4にんで ポケモンを 1ひきずつ\lだして 2たい2で たいせんします{EOS}"
 	.if (. - gText_Rom_248531) != 0xa6
 	.error "gText_Rom_248531 must retain its original byte length"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_248531: @ 0x08248531
 	@ data/text/cable_club.inc:256 CableClub_Text_ChooseGroupLeaderOfTwo
 	.globl gText_Rom_2485D7
 gText_Rom_2485D7: @ 0x082485D7
-	.string "ふたりで はなしあって ひとりが\nリーダーに なってください\pもうひとりは グループにはいる を\nえらんでください$"
+	.string "ふたりで はなしあって ひとりが\nリーダーに なってください\pもうひとりは グループにはいる を\nえらんでください{EOS}"
 	.if (. - gText_Rom_2485D7) > 0x3a
 	.error "gText_Rom_2485D7 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_2485D7: @ 0x082485D7
 	@ data/text/cable_club.inc:259 CableClub_Text_ChooseGroupLeaderOfFour
 	.globl gText_Rom_248611
 gText_Rom_248611: @ 0x08248611
-	.string "4にんで はなしあって ひとりが\nグループリーダーに なってください\pほかの ひとは グループにはいる を\nえらんで ください$"
+	.string "4にんで はなしあって ひとりが\nグループリーダーに なってください\pほかの ひとは グループにはいる を\nえらんで ください{EOS}"
 	.if (. - gText_Rom_248611) > 0x40
 	.error "gText_Rom_248611 may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_248611: @ 0x08248611
 	@ data/text/cable_club.inc:262 CableClub_Text_ChooseGroupLeader
 	.globl gText_Rom_248651
 gText_Rom_248651: @ 0x08248651
-	.string "みんなで はなしあって ひとりが\nグループリーダーに なってください\pほかの ひとは グループにはいる を\nえらんでください$"
+	.string "みんなで はなしあって ひとりが\nグループリーダーに なってください\pほかの ひとは グループにはいる を\nえらんでください{EOS}"
 	.if (. - gText_Rom_248651) > 0x3f
 	.error "gText_Rom_248651 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_248651: @ 0x08248651
 	@ data/text/cable_club.inc:265 CableClub_Text_WelcomeUnionRoomEnter
 	.globl gText_Rom_248690
 gText_Rom_248690: @ 0x08248690
-	.string "ポケモン ワイヤレス クラブ\nユニオン ルームに ようこそ!\pこちらでは みしらぬ ともだちと\nやりとり できます\pへやに はいりますか?$"
+	.string "ポケモン ワイヤレス クラブ\nユニオン ルームに ようこそ!\pこちらでは みしらぬ ともだちと\nやりとり できます\pへやに はいりますか?{EOS}"
 	.if (. - gText_Rom_248690) > 0x46
 	.error "gText_Rom_248690 may not grow beyond its original slot"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_248690: @ 0x08248690
 	@ data/text/cable_club.inc:268 CableClub_Text_UnionRoomInfo
 	.globl gText_Rom_2486D6
 gText_Rom_2486D6: @ 0x082486D6
-	.string "ユニオン ルーム は あなたの\nちかくで ユニオン ルームに\lはいっている ひとが あらわれます\pかんたんな あいさつをしたり\pレベル30までの ポケモン2ひきで\n1たい1の たいせん\p2にんから 5にんまで どうじに\nおしゃべりが できる チャット\pそして とうろくしき\nポケモン こうかんが たのしめます\pへやに はいりますか?$"
+	.string "ユニオン ルーム は あなたの\nちかくで ユニオン ルームに\lはいっている ひとが あらわれます\pかんたんな あいさつをしたり\pレベル30までの ポケモン2ひきで\n1たい1の たいせん\p2にんから 5にんまで どうじに\nおしゃべりが できる チャット\pそして とうろくしき\nポケモン こうかんが たのしめます\pへやに はいりますか?{EOS}"
 	.if (. - gText_Rom_2486D6) > 0xa7
 	.error "gText_Rom_2486D6 may not grow beyond its original slot"
 	.endif
@@ -100,7 +100,7 @@ gText_Rom_2486D6: @ 0x082486D6
 	@ data/text/cable_club.inc:271 CableClub_Text_EnjoyUnionRoom
 	.globl gText_Rom_24877D
 gText_Rom_24877D: @ 0x0824877D
-	.string "それでは ユニオン ルームで\nおたのしみ ください$"
+	.string "それでは ユニオン ルームで\nおたのしみ ください{EOS}"
 	.if (. - gText_Rom_24877D) > 0x1a
 	.error "gText_Rom_24877D may not grow beyond its original slot"
 	.endif
@@ -111,7 +111,7 @@ gText_Rom_24877D: @ 0x0824877D
 	@ data/text/cable_club.inc:274 CableClub_Text_FirstTimeRightThisWay
 	.globl gText_Rom_248797
 gText_Rom_248797: @ 0x08248797
-	.string "こんにちは!\pワイヤレス つうしんが\nはじめての かたですね?\pわたくし あんないやくの\nアオナと もうします\pポケモンセンター 2かいの\nごあんないを いたしますので\lこちらへ どうぞ!$"
+	.string "こんにちは!\pワイヤレス つうしんが\nはじめての かたですね?\pわたくし あんないやくの\nアオナと もうします\pポケモンセンター 2かいの\nごあんないを いたしますので\lこちらへ どうぞ!{EOS}"
 	.if (. - gText_Rom_248797) > 0x5f
 	.error "gText_Rom_248797 may not grow beyond its original slot"
 	.endif
@@ -122,7 +122,7 @@ gText_Rom_248797: @ 0x08248797
 	@ data/text/cable_club.inc:277 CableClub_Text_ExplainWirelessClubFirstTime
 	.globl gText_Rom_2487F6
 gText_Rom_2487F6: @ 0x082487F6
-	.string "こちら 2かいには\nふたつの おへやが ございます\pひとつめは ひだりがわの おへや\nユニオン ルーム!\pあなたの ちかくで\nユニオン ルームに はいっている\lみしらぬ おともだちと\lいろいろな コミュニケーションが\lたのしめます!\pふたつめは みぎがわの おへや\nダイレクト コーナー!\pあなたの しっている おともだちと\nポケモンの こうかんや\lたいせん などを\lたのしむ ことが できます!\pもし ワイヤレスアダプタが\nつながって いない ばあいでも\pみぎがわの おへやで\nケーブル つうしんが たのしめます\pそれでは\pワイヤレス つうしんを\nたのしんで くださいね!$"
+	.string "こちら 2かいには\nふたつの おへやが ございます\pひとつめは ひだりがわの おへや\nユニオン ルーム!\pあなたの ちかくで\nユニオン ルームに はいっている\lみしらぬ おともだちと\lいろいろな コミュニケーションが\lたのしめます!\pふたつめは みぎがわの おへや\nダイレクト コーナー!\pあなたの しっている おともだちと\nポケモンの こうかんや\lたいせん などを\lたのしむ ことが できます!\pもし ワイヤレスアダプタが\nつながって いない ばあいでも\pみぎがわの おへやで\nケーブル つうしんが たのしめます\pそれでは\pワイヤレス つうしんを\nたのしんで くださいね!{EOS}"
 	.if (. - gText_Rom_2487F6) > 0x120
 	.error "gText_Rom_2487F6 may not grow beyond its original slot"
 	.endif
@@ -133,7 +133,7 @@ gText_Rom_2487F6: @ 0x082487F6
 	@ data/text/cable_club.inc:280 CableClub_Text_AskAboutLinking
 	.globl gText_Rom_248916
 gText_Rom_248916: @ 0x08248916
-	.string "こんにちは! {PLAYER}さん!\pポケモンセンター 2かいの\nあんないやく アオナです\pなにか つうしんで おこまりですか?$"
+	.string "こんにちは! {PLAYER}さん!\pポケモンセンター 2かいの\nあんないやく アオナです\pなにか つうしんで おこまりですか?{EOS}"
 	.if (. - gText_Rom_248916) > 0x3b
 	.error "gText_Rom_248916 may not grow beyond its original slot"
 	.endif
@@ -144,7 +144,7 @@ gText_Rom_248916: @ 0x08248916
 	@ data/text/cable_club.inc:283 CableClub_Text_ExplainWirelessClub
 	.globl gText_Rom_248951
 gText_Rom_248951: @ 0x08248951
-	.string "ポケモン ワイヤレス クラブでの\nあそびかたを せつめい します!\pこちら 2かいには\nふたつの おへやが ございます\pひとつめは ひだりがわの おへや\nユニオン ルーム!\pあなたの ちかくで\nユニオン ルームに はいっている\lみしらぬ おともだちと\lいろいろな コミュニケーションが\lたのしめます!\pふたつめは みぎがわの おへや\nダイレクト コーナー!\pあなたの しっている おともだちと\nポケモンの こうかんや\lたいせん などを\lたのしむ ことが できます!\pもし ユニオン ルームや\nダイレクト コーナーで\lおともだちが みつからない ときは\pもうすこし おともだちと\nちかづいて みて ください\pまた ワイヤレスアダプタが\nつながって いない ばあいでも\pみぎがわの おへやで\nケーブル つうしんが たのしめます\pそれでは\pワイヤレス つうしんを\nたのしんで くださいね!$"
+	.string "ポケモン ワイヤレス クラブでの\nあそびかたを せつめい します!\pこちら 2かいには\nふたつの おへやが ございます\pひとつめは ひだりがわの おへや\nユニオン ルーム!\pあなたの ちかくで\nユニオン ルームに はいっている\lみしらぬ おともだちと\lいろいろな コミュニケーションが\lたのしめます!\pふたつめは みぎがわの おへや\nダイレクト コーナー!\pあなたの しっている おともだちと\nポケモンの こうかんや\lたいせん などを\lたのしむ ことが できます!\pもし ユニオン ルームや\nダイレクト コーナーで\lおともだちが みつからない ときは\pもうすこし おともだちと\nちかづいて みて ください\pまた ワイヤレスアダプタが\nつながって いない ばあいでも\pみぎがわの おへやで\nケーブル つうしんが たのしめます\pそれでは\pワイヤレス つうしんを\nたのしんで くださいね!{EOS}"
 	.if (. - gText_Rom_248951) > 0x188
 	.error "gText_Rom_248951 may not grow beyond its original slot"
 	.endif
@@ -155,7 +155,7 @@ gText_Rom_248951: @ 0x08248951
 	@ data/text/cable_club.inc:286 CableClub_Text_HopeYouEnjoyWirelessSystem
 	.globl gText_Rom_248AD9
 gText_Rom_248AD9: @ 0x08248AD9
-	.string "ポケモン ワイヤレス クラブで\nおたのしみ ください$"
+	.string "ポケモン ワイヤレス クラブで\nおたのしみ ください{EOS}"
 	.if (. - gText_Rom_248AD9) > 0x1b
 	.error "gText_Rom_248AD9 may not grow beyond its original slot"
 	.endif
@@ -415,7 +415,7 @@ EventScript_JP_08248DB6: @ 0x08248DB6
 	.byte 0x24, 0x08, 0x69, 0x4F, 0x05, 0x00, 0x95, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6B, 0x16, 0x0B
 	.byte 0x80, 0x05, 0x00, 0x03
 EventText_JP_08248FEA: @ 0x08248FEA
-	.string "えツゼやくノぽせ　プパやくア　　ヒにさィせ　うゆア　ぬかィあ　ォあかィノぽさィぽパやくア　　ヒえツゼやくえ·パやくオす　ぁこ　ノぽさィぽパやくア　　ヒぬかィ$"
+	.string "えツゼやくノぽせ　プパやくア　　ヒにさィせ　うゆア　ぬかィあ　ォあかィノぽさィぽパやくア　　ヒえツゼやくえ·パやくオす　ぁこ　ノぽさィぽパやくア　　ヒぬかィ{EOS}"
 	.byte 0xFF, 0x2F, 0x0F, 0x00, 0x25, 0x3F, 0x01, 0x04, 0x46, 0x90, 0x24, 0x08, 0x03, 0x21, 0x88, 0x40
 	.byte 0x05, 0x00, 0x06, 0x01, 0x58, 0x90, 0x24, 0x08, 0x67, 0x23, 0xA2, 0x24, 0x08, 0x66, 0x03, 0x9B
 	.byte 0x23, 0xA2, 0x24, 0x08, 0x66, 0x03, 0x04, 0x9B, 0x90, 0x24, 0x08, 0x04, 0xE8, 0x90, 0x24, 0x08
@@ -484,28 +484,28 @@ EventText_JP_08248FEA: @ 0x08248FEA
 	.byte 0x04, 0x80, 0x64, 0x00, 0x06, 0x02, 0x59, 0x94, 0x24, 0x08, 0x16, 0x00, 0x40, 0x00, 0x00, 0x03
 	.byte 0x16, 0x00, 0x40, 0x01, 0x00, 0x03
 EventText_JP_0824945F: @ 0x0824945F
-	.string "に　ぞい　うに　ぞう　うに　ぞえ　うに　ぞお　うに　ぞか　うに　ぞき　うに　ぞく　うむあぞあ　かあ?デやくぽか　ぞパやくぁな　りせ　にあぞあ　ぬ　ぞ$"
+	.string "に　ぞい　うに　ぞう　うに　ぞえ　うに　ぞお　うに　ぞか　うに　ぞき　うに　ぞく　うむあぞあ　かあ?デやくぽか　ぞパやくぁな　りせ　にあぞあ　ぬ　ぞ{EOS}"
 	.byte 0xFF, 0x03
 EventText_JP_082494AC: @ 0x082494AC
-	.string "うむいぞあ　かあVデやくぽし　ぞパやくぁな　りせ　にいぞあ　ぬ　ぞ$"
+	.string "うむいぞあ　かあVデやくぽし　ぞパやくぁな　りせ　にいぞあ　ぬ　ぞ{EOS}"
 	.byte 0xFF, 0x03
 EventText_JP_082494D0: @ 0x082494D0
-	.string "うむうぞあ　かあäデやくぽき　ぞパやくぁな　りせ　にうぞあ　ぬ　ぞ$"
+	.string "うむうぞあ　かあäデやくぽき　ぞパやくぁな　りせ　にうぞあ　ぬ　ぞ{EOS}"
 	.byte 0xFF, 0x03
 EventText_JP_082494F4: @ 0x082494F4
-	.string "うむえぞあ　かあねドやくぽく　ぞパやくぁな　りせ　にえぞあ　ぬ　ぞ$"
+	.string "うむえぞあ　かあねドやくぽく　ぞパやくぁな　りせ　にえぞあ　ぬ　ぞ{EOS}"
 	.byte 0xFF, 0x03
 EventText_JP_08249518: @ 0x08249518
-	.string "うむおぞあ　かあざドやくぽけ　ぞパやくぁな　りせ　におぞあ　ぬ　ぞ$"
+	.string "うむおぞあ　かあざドやくぽけ　ぞパやくぁな　りせ　におぞあ　ぬ　ぞ{EOS}"
 	.byte 0xFF, 0x03
 EventText_JP_0824953C: @ 0x0824953C
-	.string "うむかぞあ　かあタドやくぽこ　ぞパやくぁな　りせ　にかぞあ　ぬ　ぞ$"
+	.string "うむかぞあ　かあタドやくぽこ　ぞパやくぁな　りせ　にかぞあ　ぬ　ぞ{EOS}"
 	.byte 0xFF, 0x03
 EventText_JP_08249560: @ 0x08249560
-	.string "うむきぞあ　かあャドやくぽさ　ぞパやくぁな　りせ　にきぞあ　ぬ　ぞ$"
+	.string "うむきぞあ　かあャドやくぽさ　ぞパやくぁな　りせ　にきぞあ　ぬ　ぞ{EOS}"
 	.byte 0xFF, 0x03
 EventText_JP_08249584: @ 0x08249584
-	.string "うむくぞあ　かあ7ドやくぽそ　ぞパやくぁな　りせ　にくぞあ　ぬ　ぞ$"
+	.string "うむくぞあ　かあ7ドやくぽそ　ぞパやくぁな　りせ　にくぞあ　ぬ　ぞ{EOS}"
 	.byte 0xFF, 0x03, 0x03, 0x68, 0x6C, 0x53, 0x0D, 0x00, 0x25, 0x40, 0x01, 0x04, 0x62, 0x8F, 0x24, 0x08
 	.byte 0x19, 0x00, 0x80, 0x06, 0x80, 0x21, 0x00, 0x80, 0x00, 0x00, 0x06, 0x01, 0xE8, 0x95, 0x24, 0x08
 	.byte 0x21, 0x00, 0x80, 0x01, 0x00, 0x06, 0x01, 0xFA, 0x95, 0x24, 0x08, 0x21, 0x00, 0x80, 0x02, 0x00
@@ -540,7 +540,7 @@ EventText_JP_08249584: @ 0x08249584
 	.byte 0x05, 0x00, 0x06, 0x01, 0xA7, 0x97, 0x24, 0x08, 0x0F, 0x00, 0xC1, 0xA3, 0x24, 0x08, 0x09, 0x04
 	.byte 0x03, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x9B, 0xC1, 0xA3, 0x24, 0x08, 0x66, 0x28, 0x1E, 0x00, 0x03
 EventText_JP_082497B6: @ 0x082497B6
-	.string "ゆぴ　の　ィおィむ　ィ　　かあwビやくむ　ィあ　かあÄビやくむ　ィい　かあ{DYNAMIC}ビやくむ　ィう　かあ{STRING}ビやくうにうぞう　うにうぞえ　うにうぞお　うにうぞせ　うゆぽ　ゆっ　ぬおィあ　ォあおィぬおィ$"
+	.string "ゆぴ　の　ィおィむ　ィ　　かあwビやくむ　ィあ　かあÄビやくむ　ィい　かあ{DYNAMIC}ビやくむ　ィう　かあ{STRING}ビやくうにうぞう　うにうぞえ　うにうぞお　うにうぞせ　うゆぽ　ゆっ　ぬおィあ　ォあおィぬおィ{EOS}"
 	.byte 0xFF, 0x04, 0x2F, 0x98, 0x24, 0x08, 0x4F, 0x03, 0x40, 0x4C, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00
 	.byte 0x2F, 0xDF, 0x00, 0x16, 0x01, 0x40, 0x00, 0x00, 0x03, 0x21, 0x88, 0x40, 0x05, 0x00, 0x06, 0x01
 	.byte 0x43, 0x98, 0x24, 0x08, 0x0F, 0x00, 0xD6, 0xA3, 0x24, 0x08, 0x09, 0x04, 0x03, 0x9B, 0xD6, 0xA3

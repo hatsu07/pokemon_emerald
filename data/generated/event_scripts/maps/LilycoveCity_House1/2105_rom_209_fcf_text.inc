@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_House1/scripts.inc:21 LilycoveCity_House1_Text_Kecleon
 	.globl gText_Rom_209FCF
 gText_Rom_209FCF: @ 0x08209FCF
-	.string "カクレオン『るろろ……?$"
+	.string "カクレオン『るろろ……?{EOS}"
 	.if (. - gText_Rom_209FCF) > 0xd
 	.error "gText_Rom_209FCF may not grow beyond its original slot"
 	.endif

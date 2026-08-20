@@ -1,7 +1,7 @@
 	@ src/pokedex_plus_hgss.c:160 sText_Stats_CatchRate_Medium
 	.globl gText_Rom_5CAAC1
 gText_Rom_5CAAC1: @ 0x085CAAC1
-	.string "ふつう$"
+	.string "ふつう{EOS}"
 	.if (. - gText_Rom_5CAAC1) > 0x4
 	.error "gText_Rom_5CAAC1 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ asm/frontier_util.s:5500 Print1PRecord
 	.globl gText_Rom_5DD50C
 gText_Rom_5DD50C: @ 0x085DD50C
-	.string "{0xFD}{0x03}れんしょう$"
+	.string "{0xFD}{0x03}れんしょう{EOS}"
 	.if (. - gText_Rom_5DD50C) > 0x8
 	.error "gText_Rom_5DD50C may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5DD50C: @ 0x085DD50C
 	@ asm/frontier_util.s:5500 Print1PRecord (+1 aliases)
 	.globl gText_Rom_5DD514
 gText_Rom_5DD514: @ 0x085DD514
-	.string "{0xFD}{0x03}れんぱ$"
+	.string "{0xFD}{0x03}れんぱ{EOS}"
 	.if (. - gText_Rom_5DD514) > 0x6
 	.error "gText_Rom_5DD514 may not grow beyond its original slot"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_5DD514: @ 0x085DD514
 	@ asm/frontier_util.s:5500 Print1PRecord (+1 aliases)
 	.globl gText_Rom_5DD51C
 gText_Rom_5DD51C: @ 0x085DD51C
-	.string "{0xFD}{0x03}へや　とっぱ$"
+	.string "{0xFD}{0x03}へや　とっぱ{EOS}"
 	.if (. - gText_Rom_5DD51C) > 0x9
 	.error "gText_Rom_5DD51C may not grow beyond its original slot"
 	.endif
@@ -36,7 +36,7 @@ gText_Rom_5DD51C: @ 0x085DD51C
 	@ asm/frontier_util.s:5500 Print1PRecord (+1 aliases)
 	.globl gText_Rom_5DD528
 gText_Rom_5DD528: @ 0x085DD528
-	.string "{0xFD}{0x03}にんぬき$"
+	.string "{0xFD}{0x03}にんぬき{EOS}"
 	.if (. - gText_Rom_5DD528) > 0x7
 	.error "gText_Rom_5DD528 may not grow beyond its original slot"
 	.endif
@@ -48,7 +48,7 @@ gText_Rom_5DD528: @ 0x085DD528
 	@ asm/frontier_util.s:5500 Print1PRecord (+1 aliases)
 	.globl gText_Rom_5DD530
 gText_Rom_5DD530: @ 0x085DD530
-	.string "{0xFD}{0x03}だん　せいは$"
+	.string "{0xFD}{0x03}だん　せいは{EOS}"
 	.if (. - gText_Rom_5DD530) > 0x9
 	.error "gText_Rom_5DD530 may not grow beyond its original slot"
 	.endif
@@ -84,7 +84,7 @@ gFrontierUtilData_085DD56A: @ 0x085DD56A
 	.2byte 0x0325, 0x0326, 0x0327, 0x0328, 0x0329, 0x032A, 0x032B
 	.globl gText_Rom_5DD578
 gText_Rom_5DD578: @ 0x085DD578
-	.string "ばヘらくヌヘらくモホらくぁホらくKヘらくちホらくZホらくっヘらくゲヘらくビホらくぱホらくiヘらくにホらく{0xF7}{0x6E}らくクヘらくブヘらく6ホらくケホらくÜヘらくひホらくたマらくソヘらく♂ヘらくMホらくヌホらくけホらくみホらくぉマらくリaスく…aスくデaスくRaスく　あああああああああああああ　あああ　あああああああああ　ああああああああああ　あああ　あ　　　　あ　あああ　あああああああああああああ　ああああ　　ああ　　　あ　ああああ　あああああ　ああ　　　ああ　あ　　　　　　　　　　　　　　　　　　あああああああああああああ　　　あ　あ　ああ　あ　ああ　　あ　　ああああ　ああ　　あああ　あ　ああ　　　ああ　あ　あ　あ　あ$"
+	.string "ばヘらくヌヘらくモホらくぁホらくKヘらくちホらくZホらくっヘらくゲヘらくビホらくぱホらくiヘらくにホらく{0xF7}{0x6E}らくクヘらくブヘらく6ホらくケホらくÜヘらくひホらくたマらくソヘらく♂ヘらくMホらくヌホらくけホらくみホらくぉマらくリaスく…aスくデaスくRaスく　あああああああああああああ　あああ　あああああああああ　ああああああああああ　あああ　あ　　　　あ　あああ　あああああああああああああ　ああああ　　ああ　　　あ　ああああ　あああああ　ああ　　　ああ　あ　　　　　　　　　　　　　　　　　　あああああああああああああ　　　あ　あ　ああ　あ　ああ　　あ　　ああああ　ああ　　あああ　あ　ああ　　　ああ　あ　あ　あ　あ{EOS}"
 	.if (. - gText_Rom_5DD578) != 0x137
 	.error "gText_Rom_5DD578 must retain its original byte length"
 	.endif

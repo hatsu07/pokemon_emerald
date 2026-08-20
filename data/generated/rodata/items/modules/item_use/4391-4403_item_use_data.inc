@@ -1,7 +1,7 @@
 	@ src/item_use.c:88 sText_CantDismountBike
 	.globl gText_Rom_5C957F
 gText_Rom_5C957F: @ 0x085C957F
-	.string "ここでは おりられない!{PAUSE_UNTIL_PRESS}$"
+	.string "ここでは おりられない!{PAUSE_UNTIL_PRESS}{EOS}"
 	.if (. - gText_Rom_5C957F) > 0xf
 	.error "gText_Rom_5C957F may not grow beyond its original slot"
 	.endif
@@ -21,7 +21,7 @@ gItemUseData_085C958E: @ 0x085C958E
 	@ src/item_use.c:90 sText_ItemFinderOnTop
 	.globl gText_Rom_5C95B6
 gText_Rom_5C95B6: @ 0x085C95B6
-	.string "マシンが あしもとで\nすごく はんのう しているぞ!{PAUSE_UNTIL_PRESS}$"
+	.string "マシンが あしもとで\nすごく はんのう しているぞ!{PAUSE_UNTIL_PRESS}{EOS}"
 	.if (. - gText_Rom_5C95B6) > 0x1d
 	.error "gText_Rom_5C95B6 may not grow beyond its original slot"
 	.endif
@@ -32,7 +32,7 @@ gText_Rom_5C95B6: @ 0x085C95B6
 	@ src/item_use.c:91 sText_ItemFinderNothing
 	.globl gText_Rom_5C95D3
 gText_Rom_5C95D3: @ 0x085C95D3
-	.string "…… …… ふう!\n…… なんにも はんのう しない{PAUSE_UNTIL_PRESS}$"
+	.string "…… …… ふう!\n…… なんにも はんのう しない{PAUSE_UNTIL_PRESS}{EOS}"
 	.if (. - gText_Rom_5C95D3) > 0x1d
 	.error "gText_Rom_5C95D3 may not grow beyond its original slot"
 	.endif
@@ -43,7 +43,7 @@ gText_Rom_5C95D3: @ 0x085C95D3
 	@ src/item_use.c:92 sText_CoinCase
 	.globl gText_Rom_5C95F0
 gText_Rom_5C95F0: @ 0x085C95F0
-	.string "あなたの コイン\n{STR_VAR_1}まい{PAUSE_UNTIL_PRESS}$"
+	.string "あなたの コイン\n{STR_VAR_1}まい{PAUSE_UNTIL_PRESS}{EOS}"
 	.if (. - gText_Rom_5C95F0) > 0x10
 	.error "gText_Rom_5C95F0 may not grow beyond its original slot"
 	.endif
@@ -54,7 +54,7 @@ gText_Rom_5C95F0: @ 0x085C95F0
 	@ src/item_use.c:94 sText_BootedUpTM
 	.globl gText_Rom_5C9600
 gText_Rom_5C9600: @ 0x085C9600
-	.string "わざマシンを きどうした!$"
+	.string "わざマシンを きどうした!{EOS}"
 	.if (. - gText_Rom_5C9600) > 0xe
 	.error "gText_Rom_5C9600 may not grow beyond its original slot"
 	.endif
@@ -65,7 +65,7 @@ gText_Rom_5C9600: @ 0x085C9600
 	@ src/item_use.c:95 sText_BootedUpHM
 	.globl gText_Rom_5C960E
 gText_Rom_5C960E: @ 0x085C960E
-	.string "ひでんマシンを きどうした!$"
+	.string "ひでんマシンを きどうした!{EOS}"
 	.if (. - gText_Rom_5C960E) > 0xf
 	.error "gText_Rom_5C960E may not grow beyond its original slot"
 	.endif
@@ -76,7 +76,7 @@ gText_Rom_5C960E: @ 0x085C960E
 	@ src/item_use.c:96 sText_TMHMContainedVar1
 	.globl gText_Rom_5C961D
 gText_Rom_5C961D: @ 0x085C961D
-	.string "なかには {STR_VAR_1}が\nきろくされていた!\p{STR_VAR_1}を\nポケモンに おぼえさせますか?$"
+	.string "なかには {STR_VAR_1}が\nきろくされていた!\p{STR_VAR_1}を\nポケモンに おぼえさせますか?{EOS}"
 	.if (. - gText_Rom_5C961D) > 0x27
 	.error "gText_Rom_5C961D may not grow beyond its original slot"
 	.endif

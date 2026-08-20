@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:288 BattleFrontier_BattleDomePreBattleRoom_Text_ChooseTwoMons
 	.globl gText_Rom_2284C0
 gText_Rom_2284C0: @ 0x082284C0
-	.string "それでは しあいに だす\nポケモンを 2ひき えらんでください$"
+	.string "それでは しあいに だす\nポケモンを 2ひき えらんでください{EOS}"
 	.if (. - gText_Rom_2284C0) > 0x20
 	.error "gText_Rom_2284C0 may not grow beyond its original slot"
 	.endif

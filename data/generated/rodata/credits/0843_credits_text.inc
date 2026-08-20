@@ -8,15 +8,15 @@ gRecordMixingData_08566D42: @ 0x08566D42
 	.globl gText_Rom_566D46
 gText_Rom_566D46: @ 0x08566D46
 	@ Decoded text from ROM range: offset=0x566D46, size=0x4
-	.string "SE　$"
+	.string "SE　{EOS}"
 	.globl gText_Rom_566D4A
 gText_Rom_566D4A: @ 0x08566D4A
 	@ Decoded text from ROM range: offset=0x566D4A, size=0xC
-	.string "L…UP　R…DOWN$"
+	.string "L…UP　R…DOWN{EOS}"
 	.globl gText_Rom_566D56
 gText_Rom_566D56: @ 0x08566D56
 	@ Decoded text from ROM range: offset=0x566D56, size=0xE
-	.string "R…DRIVERーTEST$"
+	.string "R…DRIVERーTEST{EOS}"
 	@ pret/pokeemerald-jp direct xref for 0x08566D64: record_mixing.s: sub_080E89EC
 	@ Large sound-driver-test window plus the dummy terminator.
 	.globl sSoundDriverTestLargeWindowTemplates

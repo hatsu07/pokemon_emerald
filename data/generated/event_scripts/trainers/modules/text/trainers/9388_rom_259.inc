@@ -13,7 +13,7 @@ gText_Rom_259FE9: @ 0x08259FE9
 	@ data/text/trainers.inc:242 Route104_Text_HaleyPostRematch
 	.globl gText_Rom_259FFC
 gText_Rom_259FFC: @ 0x08259FFC
-	.string "たたかうって じぶんで きめたから\nまけても すっきり してるわ!\p……もちろん まけて くやしいけどね$"
+	.string "たたかうって じぶんで きめたから\nまけても すっきり してるわ!\p……もちろん まけて くやしいけどね{EOS}"
 	.if (. - gText_Rom_259FFC) > 0x35
 	.error "gText_Rom_259FFC may not grow beyond its original slot"
 	.endif

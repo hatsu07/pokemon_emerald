@@ -1,7 +1,7 @@
 	@ data/maps/LittlerootTown/scripts.inc:1010 LittlerootTown_Text_BirchSomethingToShowYouAtLab
 	.globl gText_Rom_1E46EE
 gText_Rom_1E46EE: @ 0x081E46EE
-	.string "オダマキ『いやー {PLAYER}{KUN}!\nそれにしても みごと だったね\pさいしょに きみを みたときから\nただもの ではないと おもったけど\lまさか これほど とはねえ\pそうそう!\nきみに あげた ポケモンずかん\lまだ もってるよね?\pちょっと はなしが あるから\nいっしょに けんきゅうじょまで おいで$"
+	.string "オダマキ『いやー {PLAYER}{KUN}!\nそれにしても みごと だったね\pさいしょに きみを みたときから\nただもの ではないと おもったけど\lまさか これほど とはねえ\pそうそう!\nきみに あげた ポケモンずかん\lまだ もってるよね?\pちょっと はなしが あるから\nいっしょに けんきゅうじょまで おいで{EOS}"
 	.if (. - gText_Rom_1E46EE) > 0x94
 	.error "gText_Rom_1E46EE may not grow beyond its original slot"
 	.endif

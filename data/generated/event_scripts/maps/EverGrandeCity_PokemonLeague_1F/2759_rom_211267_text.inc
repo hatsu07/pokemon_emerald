@@ -1,7 +1,7 @@
 	@ data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc:128 EverGrandeCity_PokemonLeague_1F_Text_GoForth
 	.globl gText_Rom_211267
 gText_Rom_211267: @ 0x08211267
-	.string "トレーナーよ! おのれと\nポケモンを しんじて すすみたまえ!$"
+	.string "トレーナーよ! おのれと\nポケモンを しんじて すすみたまえ!{EOS}"
 	.if (. - gText_Rom_211267) > 0x20
 	.error "gText_Rom_211267 may not grow beyond its original slot"
 	.endif

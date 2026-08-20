@@ -1,7 +1,7 @@
 	@ field-script:0x21EAD2 FieldScriptText_26280D
 	.globl gText_Rom_26280D
 gText_Rom_26280D: @ 0x0826280D
-	.string "それでは　いってらっしゃい！\lなにか　ありましたら\nわたしに　こえを　かけて　くださいね$"
+	.string "それでは　いってらっしゃい！\lなにか　ありましたら\nわたしに　こえを　かけて　くださいね{EOS}"
 	.if (. - gText_Rom_26280D) > 0x2d
 	.error "gText_Rom_26280D may not grow beyond its original slot"
 	.endif

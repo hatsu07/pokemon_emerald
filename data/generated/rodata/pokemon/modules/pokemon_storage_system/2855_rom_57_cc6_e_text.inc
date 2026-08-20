@@ -1,7 +1,7 @@
 	@ src/pokemon_storage_system.c:8108 pokemon_storage_system_line_8108
 	.globl gText_Rom_57CC6E
 gText_Rom_57CC6E: @ 0x0857CC6E
-	.string "どうくつ$"
+	.string "どうくつ{EOS}"
 	.if (. - gText_Rom_57CC6E) > 0x5
 	.error "gText_Rom_57CC6E may not grow beyond its original slot"
 	.endif

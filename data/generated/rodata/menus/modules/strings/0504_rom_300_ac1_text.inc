@@ -1,7 +1,7 @@
 	@ src/strings.c:305 gText_ChoosePokemon
 	.globl gText_Rom_300AC1
 gText_Rom_300AC1: @ 0x08300AC1
-	.string "ポケモンを えらんで ください$"
+	.string "ポケモンを えらんで ください{EOS}"
 	.if (. - gText_Rom_300AC1) > 0x10
 	.error "gText_Rom_300AC1 may not grow beyond its original slot"
 	.endif

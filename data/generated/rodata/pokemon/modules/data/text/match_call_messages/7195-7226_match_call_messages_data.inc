@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5F2C0F
 gText_Rom_5F2C0F: @ 0x085F2C0F
-	.string "おおきくて たくましい$"
+	.string "おおきくて たくましい{EOS}"
 	.if (. - gText_Rom_5F2C0F) != 0xc
 	.error "gText_Rom_5F2C0F must retain its original byte length"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5F2C0F: @ 0x085F2C0F
 	@ src/data/text/match_call_messages.h:74 gText_MatchCallPokeManiac_Steve_Intro2
 	.globl gText_Rom_5F2C1B
 gText_Rom_5F2C1B: @ 0x085F2C1B
-	.string "ポケモンが さいこう……$"
+	.string "ポケモンが さいこう……{EOS}"
 	.if (. - gText_Rom_5F2C1B) > 0xd
 	.error "gText_Rom_5F2C1B may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5F2C1B: @ 0x085F2C1B
 	@ src/data/text/match_call_messages.h:76 gText_MatchCallSwimmer_Tony_Strategy
 	.globl gText_Rom_5F2C28
 gText_Rom_5F2C28: @ 0x085F2C28
-	.string "ぜんりょくで ぶつかる!$"
+	.string "ぜんりょくで ぶつかる!{EOS}"
 	.if (. - gText_Rom_5F2C28) > 0xd
 	.error "gText_Rom_5F2C28 may not grow beyond its original slot"
 	.endif
@@ -35,7 +35,7 @@ gText_Rom_5F2C28: @ 0x085F2C28
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5F2C35
 gText_Rom_5F2C35: @ 0x085F2C35
-	.string "いかした みずタイプ$"
+	.string "いかした みずタイプ{EOS}"
 	.if (. - gText_Rom_5F2C35) != 0xb
 	.error "gText_Rom_5F2C35 must retain its original byte length"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5F2C35: @ 0x085F2C35
 	@ src/data/text/match_call_messages.h:78 gText_MatchCallSwimmer_Tony_Intro1
 	.globl gText_Rom_5F2C40
 gText_Rom_5F2C40: @ 0x085F2C40
-	.string "およげない ときには$"
+	.string "およげない ときには{EOS}"
 	.if (. - gText_Rom_5F2C40) > 0xb
 	.error "gText_Rom_5F2C40 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5F2C40: @ 0x085F2C40
 	@ src/data/text/match_call_messages.h:79 gText_MatchCallSwimmer_Tony_Intro2
 	.globl gText_Rom_5F2C4B
 gText_Rom_5F2C4B: @ 0x085F2C4B
-	.string "きんトレ やってるぜ!$"
+	.string "きんトレ やってるぜ!{EOS}"
 	.if (. - gText_Rom_5F2C4B) > 0xc
 	.error "gText_Rom_5F2C4B may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_5F2C4B: @ 0x085F2C4B
 	@ src/data/text/match_call_messages.h:81 gText_MatchCallBlackBelt_Nob_Strategy
 	.globl gText_Rom_5F2C57
 gText_Rom_5F2C57: @ 0x085F2C57
-	.string "だげきワザで がんがん!$"
+	.string "だげきワザで がんがん!{EOS}"
 	.if (. - gText_Rom_5F2C57) > 0xd
 	.error "gText_Rom_5F2C57 may not grow beyond its original slot"
 	.endif
@@ -79,7 +79,7 @@ gText_Rom_5F2C57: @ 0x085F2C57
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5F2C64
 gText_Rom_5F2C64: @ 0x085F2C64
-	.string "かくとうタイプ$"
+	.string "かくとうタイプ{EOS}"
 	.if (. - gText_Rom_5F2C64) != 0x8
 	.error "gText_Rom_5F2C64 must retain its original byte length"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_5F2C64: @ 0x085F2C64
 	@ src/data/text/match_call_messages.h:83 gText_MatchCallBlackBelt_Nob_Intro1
 	.globl gText_Rom_5F2C6C
 gText_Rom_5F2C6C: @ 0x085F2C6C
-	.string "じまん じゃないけど$"
+	.string "じまん じゃないけど{EOS}"
 	.if (. - gText_Rom_5F2C6C) > 0xb
 	.error "gText_Rom_5F2C6C may not grow beyond its original slot"
 	.endif
@@ -100,7 +100,7 @@ gText_Rom_5F2C6C: @ 0x085F2C6C
 	@ src/data/text/match_call_messages.h:84 gText_MatchCallBlackBelt_Nob_Intro2
 	.globl gText_Rom_5F2C77
 gText_Rom_5F2C77: @ 0x085F2C77
-	.string "かわら10まい われるぜ!$"
+	.string "かわら10まい われるぜ!{EOS}"
 	.if (. - gText_Rom_5F2C77) > 0xe
 	.error "gText_Rom_5F2C77 may not grow beyond its original slot"
 	.endif
@@ -111,7 +111,7 @@ gText_Rom_5F2C77: @ 0x085F2C77
 	@ src/data/text/match_call_messages.h:86 gText_MatchCallBlackBelt_Koji_Strategy
 	.globl gText_Rom_5F2C85
 gText_Rom_5F2C85: @ 0x085F2C85
-	.string "からての ちからを みせてやる$"
+	.string "からての ちからを みせてやる{EOS}"
 	.if (. - gText_Rom_5F2C85) > 0x10
 	.error "gText_Rom_5F2C85 may not grow beyond its original slot"
 	.endif
@@ -122,7 +122,7 @@ gText_Rom_5F2C85: @ 0x085F2C85
 	@ src/data/text/match_call_messages.h:87 gText_MatchCallBlackBelt_Koji_Pokemon
 	.globl gText_Rom_5F2C95
 gText_Rom_5F2C95: @ 0x085F2C95
-	.string "おれの れんしゅう あいて!$"
+	.string "おれの れんしゅう あいて!{EOS}"
 	.if (. - gText_Rom_5F2C95) > 0xf
 	.error "gText_Rom_5F2C95 may not grow beyond its original slot"
 	.endif
@@ -133,7 +133,7 @@ gText_Rom_5F2C95: @ 0x085F2C95
 	@ src/data/text/match_call_messages.h:88 gText_MatchCallBlackBelt_Koji_Intro1
 	.globl gText_Rom_5F2CA4
 gText_Rom_5F2CA4: @ 0x085F2CA4
-	.string "おれと はだしで$"
+	.string "おれと はだしで{EOS}"
 	.if (. - gText_Rom_5F2CA4) > 0x9
 	.error "gText_Rom_5F2CA4 may not grow beyond its original slot"
 	.endif
@@ -144,7 +144,7 @@ gText_Rom_5F2CA4: @ 0x085F2CA4
 	@ src/data/text/match_call_messages.h:89 gText_MatchCallBlackBelt_Koji_Intro2
 	.globl gText_Rom_5F2CAD
 gText_Rom_5F2CAD: @ 0x085F2CAD
-	.string "かたりあって みないか?$"
+	.string "かたりあって みないか?{EOS}"
 	.if (. - gText_Rom_5F2CAD) > 0xd
 	.error "gText_Rom_5F2CAD may not grow beyond its original slot"
 	.endif
@@ -155,7 +155,7 @@ gText_Rom_5F2CAD: @ 0x085F2CAD
 	@ src/data/text/match_call_messages.h:91 gText_MatchCallGuitarist_Fernando_Strategy
 	.globl gText_Rom_5F2CBA
 gText_Rom_5F2CBA: @ 0x085F2CBA
-	.string "しびれる サウンド だゼ!$"
+	.string "しびれる サウンド だゼ!{EOS}"
 	.if (. - gText_Rom_5F2CBA) > 0xe
 	.error "gText_Rom_5F2CBA may not grow beyond its original slot"
 	.endif

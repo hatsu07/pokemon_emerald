@@ -1,7 +1,7 @@
 	@ data/text/tv.inc:31 BattleFrontier_BattleTowerLobby_Text_HowDidBattleTowerTurnOut
 	.globl gText_Rom_24CA3E
 gText_Rom_24CA3E: @ 0x0824CA3E
-	.string "ほんと!?\nありがとう!\lえっと それじゃあねぇ……\pこんかいの バトルタワーの\nたいせんは どうでしたか\pまんぞく でしたか!\nそれとも ふまん ですか!?$"
+	.string "ほんと!?\nありがとう!\lえっと それじゃあねぇ……\pこんかいの バトルタワーの\nたいせんは どうでしたか\pまんぞく でしたか!\nそれとも ふまん ですか!?{EOS}"
 	.if (. - gText_Rom_24CA3E) > 0x50
 	.error "gText_Rom_24CA3E may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_24CA3E: @ 0x0824CA3E
 	@ data/text/tv.inc:34 BattleFrontier_BattleTowerLobby_Text_SorryWeDisturbedYou
 	.globl gText_Rom_24CA8E
 gText_Rom_24CA8E: @ 0x0824CA8E
-	.string "あぁ!\nごめんなさい\pじゃあ またこんど バトルタワーに きたら\nきかせて くださいね$"
+	.string "あぁ!\nごめんなさい\pじゃあ またこんど バトルタワーに きたら\nきかせて くださいね{EOS}"
 	.if (. - gText_Rom_24CA8E) > 0x2c
 	.error "gText_Rom_24CA8E may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_24CA8E: @ 0x0824CA8E
 	@ data/text/tv.inc:37 BattleFrontier_BattleTowerLobby_Text_ObviousYouHadGreatBattle
 	.globl gText_Rom_24CABA
 gText_Rom_24CABA: @ 0x0824CABA
-	.string "さっすが!\pその まんぞくした かおを みれば\nどんなに いいしあいだったか\lわかりますよ!$"
+	.string "さっすが!\pその まんぞくした かおを みれば\nどんなに いいしあいだったか\lわかりますよ!{EOS}"
 	.if (. - gText_Rom_24CABA) > 0x2f
 	.error "gText_Rom_24CABA may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_24CABA: @ 0x0824CABA
 	@ data/text/tv.inc:40 BattleFrontier_BattleTowerLobby_Text_DifficultToMakeBattleTurnOutAsPlanned
 	.globl gText_Rom_24CAE9
 gText_Rom_24CAE9: @ 0x0824CAE9
-	.string "うーん そうですか……\pおもいどおりに しょうぶを するのって\nなかなか むずかしい ですからね……$"
+	.string "うーん そうですか……\pおもいどおりに しょうぶを するのって\nなかなか むずかしい ですからね……{EOS}"
 	.if (. - gText_Rom_24CAE9) > 0x33
 	.error "gText_Rom_24CAE9 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_24CAE9: @ 0x0824CAE9
 	@ data/text/tv.inc:43 BattleFrontier_BattleTowerLobby_Text_DescribeYourBattle
 	.globl gText_Rom_24CB1C
 gText_Rom_24CB1C: @ 0x0824CB1C
-	.string "あぁっ あと\nもう ひとつだけ いいですか?\pこの たたかいの かんそうを\nひとことで ビシッと きかせてください!$"
+	.string "あぁっ あと\nもう ひとつだけ いいですか?\pこの たたかいの かんそうを\nひとことで ビシッと きかせてください!{EOS}"
 	.if (. - gText_Rom_24CB1C) > 0x3b
 	.error "gText_Rom_24CB1C may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_24CB1C: @ 0x0824CB1C
 	@ data/text/tv.inc:46 BattleFrontier_BattleTowerLobby_Text_ThatsGreatLine
 	.globl gText_Rom_24CB57
 gText_Rom_24CB57: @ 0x0824CB57
-	.string "かっこいー!!\pいい きめゼリフ ですね\nつぎの たたかいも きたい してますよ\pそれでは また!$"
+	.string "かっこいー!!\pいい きめゼリフ ですね\nつぎの たたかいも きたい してますよ\pそれでは また!{EOS}"
 	.if (. - gText_Rom_24CB57) > 0x32
 	.error "gText_Rom_24CB57 may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_24CB57: @ 0x0824CB57
 	@ data/text/tv.inc:49 BattleFrontier_BattleTowerLobby_Text_SilentType
 	.globl gText_Rom_24CB89
 gText_Rom_24CB89: @ 0x0824CB89
-	.string "そうですか……\pでも なにも いわないのも\nまた かっこいいですね!\pそれじゃあ またの きかいに\nかんそうを きかせて ください!$"
+	.string "そうですか……\pでも なにも いわないのも\nまた かっこいいですね!\pそれじゃあ またの きかいに\nかんそうを きかせて ください!{EOS}"
 	.if (. - gText_Rom_24CB89) > 0x43
 	.error "gText_Rom_24CB89 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_24CB89: @ 0x0824CB89
 	@ data/text/tv.inc:52 BattleFrontier_BattleTowerLobby_Text_LookingForwardToNextBattle
 	.globl gText_Rom_24CBCC
 gText_Rom_24CBCC: @ 0x0824CBCC
-	.string "つぎの たたかいも\nきたい してますよ$"
+	.string "つぎの たたかいも\nきたい してますよ{EOS}"
 	.if (. - gText_Rom_24CBCC) > 0x14
 	.error "gText_Rom_24CBCC may not grow beyond its original slot"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_24CBCC: @ 0x0824CBCC
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+9 aliases)
 	.globl gText_Rom_24CBE0
 gText_Rom_24CBE0: @ 0x0824CBE0
-	.string "イヤー！\n『ブラボー　トレーナー』の　じかんだ！\pきょうは　バトルタワーに　ちょうせんした\n{0xFD}{0x02}さんの　しょうかいだー！\p{0xFD}{0x02}さんは　{0xFD}{0x03}を\nつかった　たたかいをして$"
+	.string "イヤー！\n『ブラボー　トレーナー』の　じかんだ！\pきょうは　バトルタワーに　ちょうせんした\n{0xFD}{0x02}さんの　しょうかいだー！\p{0xFD}{0x02}さんは　{0xFD}{0x03}を\nつかった　たたかいをして{EOS}"
 	.if (. - gText_Rom_24CBE0) > 0x54
 	.error "gText_Rom_24CBE0 may not grow beyond its original slot"
 	.endif
@@ -100,7 +100,7 @@ gText_Rom_24CBE0: @ 0x0824CBE0
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+9 aliases)
 	.globl gText_Rom_24CC34
 gText_Rom_24CC34: @ 0x0824CC34
-	.string "なんと　{0xFD}{0x02}の　へやで\n{0xFD}{0x03}れんしょう　という\lきろくを　うちたてたぞ！$"
+	.string "なんと　{0xFD}{0x02}の　へやで\n{0xFD}{0x03}れんしょう　という\lきろくを　うちたてたぞ！{EOS}"
 	.if (. - gText_Rom_24CC34) > 0x25
 	.error "gText_Rom_24CC34 may not grow beyond its original slot"
 	.endif
@@ -111,7 +111,7 @@ gText_Rom_24CC34: @ 0x0824CC34
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+9 aliases)
 	.globl gText_Rom_24CC59
 gText_Rom_24CC59: @ 0x0824CC59
-	.string "おしくも　{0xFD}{0x03}にんめで　たたかった\n{0xFD}{0x02}さんに　まけて　しまいました\lうーん！　ざんねんだねぇ\pでも　こんなはじめに　{0xFD}{0x02}さんに\nあたるとは　うんがないとしか　いえないよ\pさて　その　{0xFD}{0x02}さんとの\nしょうぶの　かんそうを　きいたところ$"
+	.string "おしくも　{0xFD}{0x03}にんめで　たたかった\n{0xFD}{0x02}さんに　まけて　しまいました\lうーん！　ざんねんだねぇ\pでも　こんなはじめに　{0xFD}{0x02}さんに\nあたるとは　うんがないとしか　いえないよ\pさて　その　{0xFD}{0x02}さんとの\nしょうぶの　かんそうを　きいたところ{EOS}"
 	.if (. - gText_Rom_24CC59) > 0x76
 	.error "gText_Rom_24CC59 may not grow beyond its original slot"
 	.endif
@@ -122,7 +122,7 @@ gText_Rom_24CC59: @ 0x0824CC59
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+9 aliases)
 	.globl gText_Rom_24CCCF
 gText_Rom_24CCCF: @ 0x0824CCCF
-	.string "さいごには　{0xFD}{0x02}さんの\n{0xFD}{0x03}を　みごとに　たおして\lしょうり　したんですねぇ\pいや　{0xFD}{0x02}さんに　かつなんて\nすごいとしか　いいようがないよ　まったく\pさて　そのしょうりを　つかんだ\nしゅんかんの　かんそうを　きいたところ$"
+	.string "さいごには　{0xFD}{0x02}さんの\n{0xFD}{0x03}を　みごとに　たおして\lしょうり　したんですねぇ\pいや　{0xFD}{0x02}さんに　かつなんて\nすごいとしか　いいようがないよ　まったく\pさて　そのしょうりを　つかんだ\nしゅんかんの　かんそうを　きいたところ{EOS}"
 	.if (. - gText_Rom_24CCCF) > 0x6f
 	.error "gText_Rom_24CCCF may not grow beyond its original slot"
 	.endif
@@ -133,7 +133,7 @@ gText_Rom_24CCCF: @ 0x0824CCCF
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+9 aliases)
 	.globl gText_Rom_24CD3E
 gText_Rom_24CD3E: @ 0x0824CD3E
-	.string "しかし　さいごに　とうじょうした\n{0xFD}{0x02}さんの　{0xFD}{0x03}に\lついに　まけて　しまったんですねぇ\pまあ　「{0xFD}{0x02}の　{0xFD}{0x03}」\nといえば　ゆうめいな　コンビ　ですからね\p……さて　その　ゆうめいじんとの\nしょうぶの　かんそうを　きいたところ$"
+	.string "しかし　さいごに　とうじょうした\n{0xFD}{0x02}さんの　{0xFD}{0x03}に\lついに　まけて　しまったんですねぇ\pまあ　「{0xFD}{0x02}の　{0xFD}{0x03}」\nといえば　ゆうめいな　コンビ　ですからね\p……さて　その　ゆうめいじんとの\nしょうぶの　かんそうを　きいたところ{EOS}"
 	.if (. - gText_Rom_24CD3E) > 0x72
 	.error "gText_Rom_24CD3E may not grow beyond its original slot"
 	.endif
@@ -144,7 +144,7 @@ gText_Rom_24CD3E: @ 0x0824CD3E
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+9 aliases)
 	.globl gText_Rom_24CDB0
 gText_Rom_24CDB0: @ 0x0824CDB0
-	.string "まんぞく　した！！\pと　すがすがしく　こたえてくれたよ\nさすがだぜ！\pまんぞくいく　たたかいが　できるなんて\nほんと　すごいよねぇ　まったく！\pその　まんぞくかんは　つぎの　ひとことを\nきいたとき　すべて　わかったよ$"
+	.string "まんぞく　した！！\pと　すがすがしく　こたえてくれたよ\nさすがだぜ！\pまんぞくいく　たたかいが　できるなんて\nほんと　すごいよねぇ　まったく！\pその　まんぞくかんは　つぎの　ひとことを\nきいたとき　すべて　わかったよ{EOS}"
 	.if (. - gText_Rom_24CDB0) > 0x6d
 	.error "gText_Rom_24CDB0 may not grow beyond its original slot"
 	.endif
@@ -155,7 +155,7 @@ gText_Rom_24CDB0: @ 0x0824CDB0
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+9 aliases)
 	.globl gText_Rom_24CE1D
 gText_Rom_24CE1D: @ 0x0824CE1D
-	.string "ふまんだった……\pと　びみょうに　おちこみながら\nこたえて　くれたよ\p……まあ　まんぞくいく　たたかいって\nなかなかできる　もんじゃないからねー\pそのときの　くやしさは\nつぎの　ひとことが　よくあらわしてるよ$"
+	.string "ふまんだった……\pと　びみょうに　おちこみながら\nこたえて　くれたよ\p……まあ　まんぞくいく　たたかいって\nなかなかできる　もんじゃないからねー\pそのときの　くやしさは\nつぎの　ひとことが　よくあらわしてるよ{EOS}"
 	.if (. - gText_Rom_24CE1D) > 0x69
 	.error "gText_Rom_24CE1D may not grow beyond its original slot"
 	.endif
@@ -166,7 +166,7 @@ gText_Rom_24CE1D: @ 0x0824CE1D
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+8 aliases)
 	.globl gText_Rom_24CE86
 gText_Rom_24CE86: @ 0x0824CE86
-	.string "なし$"
+	.string "なし{EOS}"
 	.if (. - gText_Rom_24CE86) > 0x3
 	.error "gText_Rom_24CE86 may not grow beyond its original slot"
 	.endif

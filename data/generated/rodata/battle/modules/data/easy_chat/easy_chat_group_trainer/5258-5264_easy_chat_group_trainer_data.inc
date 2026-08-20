@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_trainer.h:34 easy_chat_group_trainer_line_34 (+2 aliases)
 	.globl gText_Rom_5CADAE
 gText_Rom_5CADAE: @ 0x085CADAE
-	.string "ずかん$"
+	.string "ずかん{EOS}"
 	.if (. - gText_Rom_5CADAE) > 0x4
 	.error "gText_Rom_5CADAE may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CADAE: @ 0x085CADAE
 	@ src/data/easy_chat/easy_chat_group_trainer.h:88 easy_chat_group_trainer_line_88 (+7 aliases)
 	.globl gText_Rom_5CADB2
 gText_Rom_5CADB2: @ 0x085CADB2
-	.string "ポケモン$"
+	.string "ポケモン{EOS}"
 	.if (. - gText_Rom_5CADB2) > 0x5
 	.error "gText_Rom_5CADB2 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CADB2: @ 0x085CADB2
 	@ src/data/easy_chat/easy_chat_group_trainer.h:130 easy_chat_group_trainer_line_130 (+2 aliases)
 	.globl gText_Rom_5CADB7
 gText_Rom_5CADB7: @ 0x085CADB7
-	.string "バッグ$"
+	.string "バッグ{EOS}"
 	.if (. - gText_Rom_5CADB7) > 0x4
 	.error "gText_Rom_5CADB7 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5CADB7: @ 0x085CADB7
 	@ src/data/easy_chat/easy_chat_group_trainer.h:82 easy_chat_group_trainer_line_82 (+2 aliases)
 	.globl gText_Rom_5CADBB
 gText_Rom_5CADBB: @ 0x085CADBB
-	.string "ポケナビ$"
+	.string "ポケナビ{EOS}"
 	.if (. - gText_Rom_5CADBB) > 0x5
 	.error "gText_Rom_5CADBB may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc:82 EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou
 	.globl gText_Rom_211531
 gText_Rom_211531: @ 0x08211531
-	.string "エニシダ『{PLAYER}{KUN}\nついに ポケモンリーグだね!\lわたしも おうえん した かいがあったよ!\pもし {PLAYER}{KUN}が\nポケモンチャンピオンに なったら……\lそのときは また れんらく するからね\pじゃ……\n{PLAYER}{KUN} がんばってね!$"
+	.string "エニシダ『{PLAYER}{KUN}\nついに ポケモンリーグだね!\lわたしも おうえん した かいがあったよ!\pもし {PLAYER}{KUN}が\nポケモンチャンピオンに なったら……\lそのときは また れんらく するからね\pじゃ……\n{PLAYER}{KUN} がんばってね!{EOS}"
 	.if (. - gText_Rom_211531) > 0x71
 	.error "gText_Rom_211531 may not grow beyond its original slot"
 	.endif

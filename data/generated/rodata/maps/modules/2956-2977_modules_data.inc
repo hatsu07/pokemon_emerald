@@ -1,7 +1,7 @@
 	@ src/data/region_map/region_map_entries.h:581 region_map_entries_line_581
 	.globl gText_Rom_59895B
 gText_Rom_59895B: @ 0x0859895B
-	.string "こじまのよこあな$"
+	.string "こじまのよこあな{EOS}"
 	.if (. - gText_Rom_59895B) > 0x9
 	.error "gText_Rom_59895B may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_59895B: @ 0x0859895B
 	@ src/data/region_map/region_map_entries.h:588 region_map_entries_line_588
 	.globl gText_Rom_598964
 gText_Rom_598964: @ 0x08598964
-	.string "さばくいせき$"
+	.string "さばくいせき{EOS}"
 	.if (. - gText_Rom_598964) > 0x7
 	.error "gText_Rom_598964 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_598964: @ 0x08598964
 	@ src/data/region_map/region_map_entries.h:574 region_map_entries_line_574
 	.globl gText_Rom_59896B
 gText_Rom_59896B: @ 0x0859896B
-	.string "ひでりのいわと$"
+	.string "ひでりのいわと{EOS}"
 	.if (. - gText_Rom_59896B) > 0x8
 	.error "gText_Rom_59896B may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_59896B: @ 0x0859896B
 	@ src/data/region_map/region_map_entries.h:595 region_map_entries_line_595
 	.globl gText_Rom_598973
 gText_Rom_598973: @ 0x08598973
-	.string "こだいづか$"
+	.string "こだいづか{EOS}"
 	.if (. - gText_Rom_598973) > 0x6
 	.error "gText_Rom_598973 may not grow beyond its original slot"
 	.endif
@@ -50,12 +50,12 @@ gText_Rom_598982: @ 0x08598982
 	.byte 0x06, 0x0E, 0x07, 0x6F, 0x66, 0x51, 0x19, 0x02, 0x04, 0xFF
 	.globl gText_Rom_59898C
 gText_Rom_59898C: @ 0x0859898C
-	.string "ハンターのこや$"
+	.string "ハンターのこや{EOS}"
 	gText_Rom_598994: @ 0x08598994
 	.byte 0x6F, 0x89, 0x6F, 0x41, 0x2E
 	.globl gText_Rom_598999
 gText_Rom_598999: @ 0x08598999
-	.string "アジト$"
+	.string "アジト{EOS}"
 	.if (. - gText_Rom_598999) > 0x4
 	.error "gText_Rom_598999 may not grow beyond its original slot"
 	.endif
@@ -66,7 +66,7 @@ gText_Rom_598999: @ 0x08598999
 	@ src/data/region_map/region_map_entries.h:1379 region_map_entries_line_1379
 	.globl gText_Rom_59899D
 gText_Rom_59899D: @ 0x0859899D
-	.string "げんえいのとう$"
+	.string "げんえいのとう{EOS}"
 	.if (. - gText_Rom_59899D) > 0x8
 	.error "gText_Rom_59899D may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_59899D: @ 0x0859899D
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5989A5
 gText_Rom_5989A5: @ 0x085989A5
-	.string "へんげのどうくつ$"
+	.string "へんげのどうくつ{EOS}"
 	.if (. - gText_Rom_5989A5) != 0x9
 	.error "gText_Rom_5989A5 must retain its original byte length"
 	.endif
@@ -88,7 +88,7 @@ gText_Rom_5989A5: @ 0x085989A5
 	@ src/data/region_map/region_map_entries.h:1449 region_map_entries_line_1449
 	.globl gText_Rom_5989AE
 gText_Rom_5989AE: @ 0x085989AE
-	.string "さばくのちかどう$"
+	.string "さばくのちかどう{EOS}"
 	.if (. - gText_Rom_5989AE) > 0x9
 	.error "gText_Rom_5989AE may not grow beyond its original slot"
 	.endif
@@ -99,7 +99,7 @@ gText_Rom_5989AE: @ 0x085989AE
 	@ src/data/region_map/region_map_entries.h:1470 region_map_entries_line_1470
 	.globl gText_Rom_5989B7
 gText_Rom_5989B7: @ 0x085989B7
-	.string "トレーナーヒル$"
+	.string "トレーナーヒル{EOS}"
 	.if (. - gText_Rom_5989B7) > 0x8
 	.error "gText_Rom_5989B7 may not grow beyond its original slot"
 	.endif
@@ -523,7 +523,7 @@ gBattleTransitionMugshotTiles: @ 0x085995A0
 	.byte 0x77, 0x77, 0x77, 0x77, 0x77, 0x77, 0x77, 0x77, 0x77
 	.globl gText_Rom_599689
 gText_Rom_599689: @ 0x08599689
-	.string "ラララ$"
+	.string "ラララ{EOS}"
 	.if (. - gText_Rom_599689) > 0x4
 	.error "gText_Rom_599689 may not grow beyond its original slot"
 	.endif
@@ -1010,7 +1010,7 @@ gBattleTransitionKyogreTilesLz: @ 0x0859D5E4
 	.byte 0xB0, 0x27, 0xC2, 0xF2, 0x33, 0xB0, 0x01
 	.globl gText_Rom_59D8EB
 gText_Rom_59D8EB: @ 0x0859D8EB
-	.string "ラララ$"
+	.string "ラララ{EOS}"
 	.if (. - gText_Rom_59D8EB) > 0x4
 	.error "gText_Rom_59D8EB may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/event_ticket_1.inc:1 EventTicket_Text_ShowOldSeaMap
 	.globl gText_Rom_263476
 gText_Rom_263476: @ 0x08263476
-	.string "カイナいき れんらくせん……\pえ? この ちずの とおりに\nいってくれって?\pわたしでは よく わからないので\nおまちください$"
+	.string "カイナいき れんらくせん……\pえ? この ちずの とおりに\nいってくれって?\pわたしでは よく わからないので\nおまちください{EOS}"
 	.if (. - gText_Rom_263476) > 0x40
 	.error "gText_Rom_263476 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_263476: @ 0x08263476
 	@ data/text/event_ticket_1.inc:8 EventTicket_Text_ThatPass
 	.globl gText_Rom_2634B6
 gText_Rom_2634B6: @ 0x082634B6
-	.string "カイナいき れんらくせん……\pあら?\nその チケットは……!$"
+	.string "カイナいき れんらくせん……\pあら?\nその チケットは……!{EOS}"
 	.if (. - gText_Rom_2634B6) > 0x1f
 	.error "gText_Rom_2634B6 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_2634B6: @ 0x082634B6
 	@ data/text/event_ticket_1.inc:13 EventTicket_Text_ShowEonTicket
 	.globl gText_Rom_2634D5
 gText_Rom_2634D5: @ 0x082634D5
-	.string "ヘンテコな チケットを\nもってきたのは おまえさんか?\pおまえが いこうと しているのは\nみなみの はての ちっぽけな しま……\pそこでは なにが おこるのか\nだれも わからねえ……\lううむ ふなのりの ちが さわぐぜ!\pさあ のりな!$"
+	.string "ヘンテコな チケットを\nもってきたのは おまえさんか?\pおまえが いこうと しているのは\nみなみの はての ちっぽけな しま……\pそこでは なにが おこるのか\nだれも わからねえ……\lううむ ふなのりの ちが さわぐぜ!\pさあ のりな!{EOS}"
 	.if (. - gText_Rom_2634D5) > 0x77
 	.error "gText_Rom_2634D5 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_2634D5: @ 0x082634D5
 	@ data/text/event_ticket_1.inc:23 EventTicket_Text_SouthernIslandSailBack
 	.globl gText_Rom_26354C
 gText_Rom_26354C: @ 0x0826354C
-	.string "なにもねえ ちんけな しま だな……\nミナモへ かえるか?$"
+	.string "なにもねえ ちんけな しま だな……\nミナモへ かえるか?{EOS}"
 	.if (. - gText_Rom_26354C) > 0x1e
 	.error "gText_Rom_26354C may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_26354C: @ 0x0826354C
 	@ data/text/event_ticket_1.inc:27 EventTicket_Text_SailHome
 	.globl gText_Rom_26356A
 gText_Rom_26356A: @ 0x0826356A
-	.string "よし! かえると するか!$"
+	.string "よし! かえると するか!{EOS}"
 	.if (. - gText_Rom_26356A) > 0xe
 	.error "gText_Rom_26356A may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_26356A: @ 0x0826356A
 	@ data/text/event_ticket_1.inc:30 EventTicket_Text_AsYouLike
 	.globl gText_Rom_263578
 gText_Rom_263578: @ 0x08263578
-	.string "そうかい\nまあ すきにするが いいさ$"
+	.string "そうかい\nまあ すきにするが いいさ{EOS}"
 	.if (. - gText_Rom_263578) > 0x13
 	.error "gText_Rom_263578 may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_263578: @ 0x08263578
 	@ data/text/event_ticket_1.inc:34 SouthernIsland_Interior_Text_Sign
 	.globl gText_Rom_26358B
 gText_Rom_26358B: @ 0x0826358B
-	.string "すべての ゆめは もうひとつの げんじつ\nそれを わすれるべからず……$"
+	.string "すべての ゆめは もうひとつの げんじつ\nそれを わすれるべからず……{EOS}"
 	.if (. - gText_Rom_26358B) > 0x24
 	.error "gText_Rom_26358B may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_26358B: @ 0x0826358B
 	@ data/text/event_ticket_1.inc:38 SouthernIsland_Exterior_Text_Sign
 	.globl gText_Rom_2635AF
 gText_Rom_2635AF: @ 0x082635AF
-	.string "きおく かすみし ものは\nこころに きざみつける ことを のぞむ……$"
+	.string "きおく かすみし ものは\nこころに きざみつける ことを のぞむ……{EOS}"
 	.if (. - gText_Rom_2635AF) > 0x23
 	.error "gText_Rom_2635AF may not grow beyond its original slot"
 	.endif

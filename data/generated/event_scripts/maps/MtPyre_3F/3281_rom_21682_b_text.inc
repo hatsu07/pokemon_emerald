@@ -1,7 +1,7 @@
 	@ data/maps/MtPyre_3F/scripts.inc:92 MtPyre_3F_Text_GabriellePostRematch
 	.globl gText_Rom_21682B
 gText_Rom_21682B: @ 0x0821682B
-	.string "いまはもう いない ポケモン\nいま いっしょに いる ポケモン\pそれに\nこれから であう ポケモン……\pすべて たいせつな ポケモン なのよ\nおぼえて くれて いたのね$"
+	.string "いまはもう いない ポケモン\nいま いっしょに いる ポケモン\pそれに\nこれから であう ポケモン……\pすべて たいせつな ポケモン なのよ\nおぼえて くれて いたのね{EOS}"
 	.if (. - gText_Rom_21682B) > 0x55
 	.error "gText_Rom_21682B may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_House1/scripts.inc:37 SootopolisCity_House1_Text_Kecleon
 	.globl gText_Rom_20F3B7
 gText_Rom_20F3B7: @ 0x0820F3B7
-	.string "カクレオン『ぷー ぷひゃあー$"
+	.string "カクレオン『ぷー ぷひゃあー{EOS}"
 	.if (. - gText_Rom_20F3B7) > 0xf
 	.error "gText_Rom_20F3B7 may not grow beyond its original slot"
 	.endif

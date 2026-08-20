@@ -1,7 +1,7 @@
 	@ data/maps/MauvilleCity/scripts.inc:520 MauvilleCity_Text_WallyIllGoBackToVerdanturf
 	.globl gText_Rom_1DE085
 gText_Rom_1DE085: @ 0x081DE085
-	.string "ミツル『おじさん……\nぼく シダケに もどります$"
+	.string "ミツル『おじさん……\nぼく シダケに もどります{EOS}"
 	.if (. - gText_Rom_1DE085) > 0x19
 	.error "gText_Rom_1DE085 may not grow beyond its original slot"
 	.endif

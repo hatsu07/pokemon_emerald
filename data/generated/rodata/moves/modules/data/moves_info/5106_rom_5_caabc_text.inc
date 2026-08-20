@@ -1,7 +1,7 @@
 	@ src/data/moves_info.h:2252 moves_info_line_2252
 	.globl gText_Rom_5CAABC
 gText_Rom_5CAABC: @ 0x085CAABC
-	.string "どくどく$"
+	.string "どくどく{EOS}"
 	.if (. - gText_Rom_5CAABC) > 0x5
 	.error "gText_Rom_5CAABC may not grow beyond its original slot"
 	.endif

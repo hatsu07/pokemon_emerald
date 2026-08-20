@@ -1,7 +1,7 @@
 	@ src/data/abilities.h:59 abilities_line_59 (+1 aliases)
 	.globl gText_Rom_5749BB
 gText_Rom_5749BB: @ 0x085749BB
-	.string "じゅうなん$"
+	.string "じゅうなん{EOS}"
 	.if (. - gText_Rom_5749BB) > 0x6
 	.error "gText_Rom_5749BB may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5749BB: @ 0x085749BB
 	@ src/data/abilities.h:327 abilities_line_327 (+1 aliases)
 	.globl gText_Rom_5749C1
 gText_Rom_5749C1: @ 0x085749C1
-	.string "じりょく$"
+	.string "じりょく{EOS}"
 	.if (. - gText_Rom_5749C1) > 0x5
 	.error "gText_Rom_5749C1 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5749C1: @ 0x085749C1
 	@ src/data/abilities.h:555 abilities_line_555 (+1 aliases)
 	.globl gText_Rom_5749C6
 gText_Rom_5749C6: @ 0x085749C6
-	.string "しろいけむり$"
+	.string "しろいけむり{EOS}"
 	.if (. - gText_Rom_5749C6) > 0x7
 	.error "gText_Rom_5749C6 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5749C6: @ 0x085749C6
 	@ src/data/abilities.h:221 abilities_line_221 (+1 aliases)
 	.globl gText_Rom_5749CD
 gText_Rom_5749CD: @ 0x085749CD
-	.string "シンクロ$"
+	.string "シンクロ{EOS}"
 	.if (. - gText_Rom_5749CD) > 0x5
 	.error "gText_Rom_5749CD may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5749CD: @ 0x085749CD
 	@ src/data/abilities.h:498 abilities_line_498 (+1 aliases)
 	.globl gText_Rom_5749D2
 gText_Rom_5749D2: @ 0x085749D2
-	.string "しんりょく$"
+	.string "しんりょく{EOS}"
 	.if (. - gText_Rom_5749D2) > 0x6
 	.error "gText_Rom_5749D2 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5749D2: @ 0x085749D2
 	@ src/data/abilities.h:258 abilities_line_258 (+1 aliases)
 	.globl gText_Rom_5749D8
 gText_Rom_5749D8: @ 0x085749D8
-	.string "すいすい$"
+	.string "すいすい{EOS}"
 	.if (. - gText_Rom_5749D8) > 0x5
 	.error "gText_Rom_5749D8 may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_5749D8: @ 0x085749D8
 	@ src/data/abilities.h:349 abilities_line_349 (+1 aliases)
 	.globl gText_Rom_5749DD
 gText_Rom_5749DD: @ 0x085749DD
-	.string "すなおこし$"
+	.string "すなおこし{EOS}"
 	.if (. - gText_Rom_5749DD) > 0x6
 	.error "gText_Rom_5749DD may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_5749DD: @ 0x085749DD
 	@ src/data/abilities.h:67 abilities_line_67 (+1 aliases)
 	.globl gText_Rom_5749E3
 gText_Rom_5749E3: @ 0x085749E3
-	.string "すながくれ$"
+	.string "すながくれ{EOS}"
 	.if (. - gText_Rom_5749E3) > 0x6
 	.error "gText_Rom_5749E3 may not grow beyond its original slot"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_5749E3: @ 0x085749E3
 	@ src/data/abilities.h:392 abilities_line_392 (+1 aliases)
 	.globl gText_Rom_5749E9
 gText_Rom_5749E9: @ 0x085749E9
-	.string "するどいめ$"
+	.string "するどいめ{EOS}"
 	.if (. - gText_Rom_5749E9) > 0x6
 	.error "gText_Rom_5749E9 may not grow beyond its original slot"
 	.endif
@@ -101,7 +101,7 @@ gText_Rom_5749E9: @ 0x085749E9
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5749EF
 gText_Rom_5749EF: @ 0x085749EF
-	.string "せいしんりょく$"
+	.string "せいしんりょく{EOS}"
 	.if (. - gText_Rom_5749EF) != 0x8
 	.error "gText_Rom_5749EF must retain its original byte length"
 	.endif
@@ -112,7 +112,7 @@ gText_Rom_5749EF: @ 0x085749EF
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5749F7
 gText_Rom_5749F7: @ 0x085749F7
-	.string "せいでんき$"
+	.string "せいでんき{EOS}"
 	.if (. - gText_Rom_5749F7) != 0x6
 	.error "gText_Rom_5749F7 must retain its original byte length"
 	.endif

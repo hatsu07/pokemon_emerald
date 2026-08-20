@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_actions.h:16 easy_chat_group_actions_line_16 (+1 aliases)
 	.globl gText_Rom_5E9045
 gText_Rom_5E9045: @ 0x085E9045
-	.string "あげる$"
+	.string "あげる{EOS}"
 	.if (. - gText_Rom_5E9045) > 0x4
 	.error "gText_Rom_5E9045 may not grow beyond its original slot"
 	.endif

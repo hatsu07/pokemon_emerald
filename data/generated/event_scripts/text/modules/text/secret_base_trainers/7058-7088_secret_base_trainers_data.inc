@@ -1,7 +1,7 @@
 	@ data/text/secret_base_trainers.inc:139 SecretBase_Text_Trainer8PostBattle
 	.globl gText_Rom_24582B
 gText_Rom_24582B: @ 0x0824582B
-	.string "グッズあつめ まけないわよ!\nまた あそびに きてね!$"
+	.string "グッズあつめ まけないわよ!\nまた あそびに きてね!{EOS}"
 	.if (. - gText_Rom_24582B) > 0x1c
 	.error "gText_Rom_24582B may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_24582B: @ 0x0824582B
 	@ data/text/secret_base_trainers.inc:142 SecretBase_Text_Trainer8PreChampion
 	.globl gText_Rom_245847
 gText_Rom_245847: @ 0x08245847
-	.string "グッズを てにいれる ほうほうは\nいろいろ あるって はなしよ\pどっちが すてきな グッズを\nてにいれるか きょうそうね!$"
+	.string "グッズを てにいれる ほうほうは\nいろいろ あるって はなしよ\pどっちが すてきな グッズを\nてにいれるか きょうそうね!{EOS}"
 	.if (. - gText_Rom_245847) > 0x3e
 	.error "gText_Rom_245847 may not grow beyond its original slot"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_245847: @ 0x08245847
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_245885
 gText_Rom_245885: @ 0x08245885
-	.string "すきな ばしょを さがして\nすきな グッズを おく!\pすきな ポケモンを そだてて\nぼくも いっしょに つよくなる\pそんな ぼくと しょうぶ しよう!$"
+	.string "すきな ばしょを さがして\nすきな グッズを おく!\pすきな ポケモンを そだてて\nぼくも いっしょに つよくなる\pそんな ぼくと しょうぶ しよう!{EOS}"
 	.if (. - gText_Rom_245885) != 0x4c
 	.error "gText_Rom_245885 must retain its original byte length"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_245885: @ 0x08245885
 	@ data/text/secret_base_trainers.inc:148 SecretBase_Text_Trainer4AcceptBattle
 	.globl gText_Rom_2458D1
 gText_Rom_2458D1: @ 0x082458D1
-	.string "きみの じつりょくを みせてくれ!$"
+	.string "きみの じつりょくを みせてくれ!{EOS}"
 	.if (. - gText_Rom_2458D1) > 0x12
 	.error "gText_Rom_2458D1 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_2458D1: @ 0x082458D1
 	@ data/text/secret_base_trainers.inc:151 SecretBase_Text_Trainer4DeclineBattle
 	.globl gText_Rom_2458E3
 gText_Rom_2458E3: @ 0x082458E3
-	.string "まぁ そんな ときも あるよね!$"
+	.string "まぁ そんな ときも あるよね!{EOS}"
 	.if (. - gText_Rom_2458E3) > 0x11
 	.error "gText_Rom_2458E3 may not grow beyond its original slot"
 	.endif
@@ -57,7 +57,7 @@ gText_Rom_2458E3: @ 0x082458E3
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2458F4
 gText_Rom_2458F4: @ 0x082458F4
-	.string "きみの じつりょくは じゅうぶん わかった!$"
+	.string "きみの じつりょくは じゅうぶん わかった!{EOS}"
 	.if (. - gText_Rom_2458F4) != 0x17
 	.error "gText_Rom_2458F4 must retain its original byte length"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_2458F4: @ 0x082458F4
 	@ data/text/secret_base_trainers.inc:157 SecretBase_Text_Trainer4PostBattle
 	.globl gText_Rom_24590B
 gText_Rom_24590B: @ 0x0824590B
-	.string "きみも ぼくも もっと つよく なれる!\nおたがいに がんばろうね!$"
+	.string "きみも ぼくも もっと つよく なれる!\nおたがいに がんばろうね!{EOS}"
 	.if (. - gText_Rom_24590B) > 0x23
 	.error "gText_Rom_24590B may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_24590B: @ 0x0824590B
 	@ data/text/secret_base_trainers.inc:160 SecretBase_Text_Trainer4PreChampion
 	.globl gText_Rom_24592E
 gText_Rom_24592E: @ 0x0824592E
-	.string "すきな ばしょを さがして\nすきな ものを おく!\pすきな ポケモンを そだてて\nぼくも いっしょに つよくなる\pまいにち たのしいねー$"
+	.string "すきな ばしょを さがして\nすきな ものを おく!\pすきな ポケモンを そだてて\nぼくも いっしょに つよくなる\pまいにち たのしいねー{EOS}"
 	.if (. - gText_Rom_24592E) > 0x45
 	.error "gText_Rom_24592E may not grow beyond its original slot"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_24592E: @ 0x0824592E
 	@ data/text/secret_base_trainers.inc:163 SecretBase_Text_Trainer9Intro
 	.globl gText_Rom_245973
 gText_Rom_245973: @ 0x08245973
-	.string "グッズの しゅるいや おきかたを みれば\nそのひとが どんな センスの もちぬしか\lよーく わかるわね!\pわたしの センスは どうかしら?\nうふふっ なにも いえないって かんじね!\pしょうぶの センスも ためして みる?$"
+	.string "グッズの しゅるいや おきかたを みれば\nそのひとが どんな センスの もちぬしか\lよーく わかるわね!\pわたしの センスは どうかしら?\nうふふっ なにも いえないって かんじね!\pしょうぶの センスも ためして みる?{EOS}"
 	.if (. - gText_Rom_245973) > 0x70
 	.error "gText_Rom_245973 may not grow beyond its original slot"
 	.endif
@@ -101,7 +101,7 @@ gText_Rom_245973: @ 0x08245973
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2459E3
 gText_Rom_2459E3: @ 0x082459E3
-	.string "おもいっきり いくわよ!$"
+	.string "おもいっきり いくわよ!{EOS}"
 	.if (. - gText_Rom_2459E3) != 0xd
 	.error "gText_Rom_2459E3 must retain its original byte length"
 	.endif
@@ -112,7 +112,7 @@ gText_Rom_2459E3: @ 0x082459E3
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2459F0
 gText_Rom_2459F0: @ 0x082459F0
-	.string "いつでも わたしの センスを みせるわよ!$"
+	.string "いつでも わたしの センスを みせるわよ!{EOS}"
 	.if (. - gText_Rom_2459F0) != 0x16
 	.error "gText_Rom_2459F0 must retain its original byte length"
 	.endif
@@ -122,7 +122,7 @@ gText_Rom_2459F0: @ 0x082459F0
 	@ data/text/secret_base_trainers.inc:172 SecretBase_Text_Trainer9Defeated
 	.globl gText_Rom_245A06
 gText_Rom_245A06: @ 0x08245A06
-	.string "すごい さいのうね!\nそこしれぬ つよさを かんじたわ……$"
+	.string "すごい さいのうね!\nそこしれぬ つよさを かんじたわ……{EOS}"
 	.if (. - gText_Rom_245A06) > 0x1e
 	.error "gText_Rom_245A06 may not grow beyond its original slot"
 	.endif
@@ -133,7 +133,7 @@ gText_Rom_245A06: @ 0x08245A06
 	@ data/text/secret_base_trainers.inc:175 SecretBase_Text_Trainer9PostBattle
 	.globl gText_Rom_245A24
 gText_Rom_245A24: @ 0x08245A24
-	.string "わたしの センス どうだった?\nもっと センスを みがくわよー$"
+	.string "わたしの センス どうだった?\nもっと センスを みがくわよー{EOS}"
 	.if (. - gText_Rom_245A24) > 0x20
 	.error "gText_Rom_245A24 may not grow beyond its original slot"
 	.endif
@@ -144,7 +144,7 @@ gText_Rom_245A24: @ 0x08245A24
 	@ data/text/secret_base_trainers.inc:178 SecretBase_Text_Trainer9PreChampion
 	.globl gText_Rom_245A44
 gText_Rom_245A44: @ 0x08245A44
-	.string "グッズの しゅるいや おきかたを みれば\nそのひとが どんな センスの もちぬしか\lよーく わかるわね!\pわたしの センスは どうかしら?\nうふふっ なにも いえないって かんじね!$"
+	.string "グッズの しゅるいや おきかたを みれば\nそのひとが どんな センスの もちぬしか\lよーく わかるわね!\pわたしの センスは どうかしら?\nうふふっ なにも いえないって かんじね!{EOS}"
 	.if (. - gText_Rom_245A44) > 0x5c
 	.error "gText_Rom_245A44 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/FortreeCity/scripts.inc:151 FortreeCity_Text_GymSign
 	.globl gText_Rom_1E0148
 gText_Rom_1E0148: @ 0x081E0148
-	.string "ヒワマキ シティ ポケモンジム\nリーダー ナギ\lせかいに はばたく とりつかい!$"
+	.string "ヒワマキ シティ ポケモンジム\nリーダー ナギ\lせかいに はばたく とりつかい!{EOS}"
 	.if (. - gText_Rom_1E0148) > 0x29
 	.error "gText_Rom_1E0148 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/data/script_menu.h:770 script_menu_line_770
 	.globl gText_Rom_5A987D
 gText_Rom_5A987D: @ 0x085A987D
-	.string "かった！$"
+	.string "かった！{EOS}"
 	.if (. - gText_Rom_5A987D) > 0x5
 	.error "gText_Rom_5A987D may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2003 Route119_Text_JacksonRematchIntro (+1 aliases)
 	.globl gText_Rom_25E943
 gText_Rom_25E943: @ 0x0825E943
-	.string "ポケモンと いることで\nやせいを とりもどすのさ!$"
+	.string "ポケモンと いることで\nやせいを とりもどすのさ!{EOS}"
 	.if (. - gText_Rom_25E943) > 0x1a
 	.error "gText_Rom_25E943 may not grow beyond its original slot"
 	.endif

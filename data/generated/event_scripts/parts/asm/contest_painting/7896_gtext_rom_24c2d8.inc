@@ -1,7 +1,7 @@
 	@ asm/contest_painting.s:487 PrintContestPaintingCaption
 	.globl gText_Rom_24C2D8
 gText_Rom_24C2D8: @ 0x0824C2D8
-	.string "プリティー　{0xFD}{0x02}たんの\nおすまし　ショット$"
+	.string "プリティー　{0xFD}{0x02}たんの\nおすまし　ショット{EOS}"
 	.if (. - gText_Rom_24C2D8) > 0x16
 	.error "gText_Rom_24C2D8 may not grow beyond its original slot"
 	.endif

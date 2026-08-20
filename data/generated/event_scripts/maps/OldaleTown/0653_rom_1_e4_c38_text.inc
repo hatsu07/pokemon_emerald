@@ -1,7 +1,7 @@
 	@ data/maps/OldaleTown/scripts.inc:391 OldaleTown_Text_TownSign
 	.globl gText_Rom_1E4C38
 gText_Rom_1E4C38: @ 0x081E4C38
-	.string "ここは コトキ タウン\nなにかが かすかに はじまる ところ$"
+	.string "ここは コトキ タウン\nなにかが かすかに はじまる ところ{EOS}"
 	.if (. - gText_Rom_1E4C38) > 0x1f
 	.error "gText_Rom_1E4C38 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc:154 LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather
 	.globl gText_Rom_20AE30
 gText_Rom_20AE30: @ 0x0820AE30
-	.string "いまは てんきが あれてるから\nおくじょうに でられない みたい……$"
+	.string "いまは てんきが あれてるから\nおくじょうに でられない みたい……{EOS}"
 	.if (. - gText_Rom_20AE30) > 0x23
 	.error "gText_Rom_20AE30 may not grow beyond its original slot"
 	.endif

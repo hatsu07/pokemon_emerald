@@ -1,7 +1,7 @@
 	@ src/data/region_map/region_map_entries.h:1463 region_map_entries_line_1463 (+1 aliases)
 	.globl gText_Rom_57CC55
 gText_Rom_57CC55: @ 0x0857CC55
-	.string "へそのいわ$"
+	.string "へそのいわ{EOS}"
 	.if (. - gText_Rom_57CC55) > 0x6
 	.error "gText_Rom_57CC55 may not grow beyond its original slot"
 	.endif

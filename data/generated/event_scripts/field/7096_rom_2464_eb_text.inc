@@ -1,7 +1,7 @@
 	@ field-script:0x246595 FieldScriptText_2464EB
 	.globl gText_Rom_2464EB
 gText_Rom_2464EB: @ 0x082464EB
-	.string "あれ？\nそれいじょうは　もてない　みたいだよ\pまた　こんど　とりに　きてね！$"
+	.string "あれ？\nそれいじょうは　もてない　みたいだよ\pまた　こんど　とりに　きてね！{EOS}"
 	.if (. - gText_Rom_2464EB) > 0x27
 	.error "gText_Rom_2464EB may not grow beyond its original slot"
 	.endif

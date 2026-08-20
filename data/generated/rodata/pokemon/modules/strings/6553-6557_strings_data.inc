@@ -1,7 +1,7 @@
 	@ src/strings.c:874 gJPText_NewTrainerHasComeToHoenn
 	.globl gText_Rom_5CD01D
 gText_Rom_5CD01D: @ 0x085CD01D
-	.string "あらたな トレーナーが\nホウエンに やってきた!$"
+	.string "あらたな トレーナーが\nホウエンに やってきた!{EOS}"
 	.if (. - gText_Rom_5CD01D) > 0x19
 	.error "gText_Rom_5CD01D may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CD01D: @ 0x085CD01D
 	@ src/strings.c:875 gJPText_PleaseWaitAMoment
 	.globl gText_Rom_5CD036
 gText_Rom_5CD036: @ 0x085CD036
-	.string "しばらく おまちください$"
+	.string "しばらく おまちください{EOS}"
 	.if (. - gText_Rom_5CD036) > 0xd
 	.error "gText_Rom_5CD036 may not grow beyond its original slot"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_5CD036: @ 0x085CD036
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CD043
 gText_Rom_5CD043: @ 0x085CD043
-	.string "かきこみ エラー です\nデータが ほぞん できませんでした$"
+	.string "かきこみ エラー です\nデータが ほぞん できませんでした{EOS}"
 	.if (. - gText_Rom_5CD043) != 0x1e
 	.error "gText_Rom_5CD043 must retain its original byte length"
 	.endif

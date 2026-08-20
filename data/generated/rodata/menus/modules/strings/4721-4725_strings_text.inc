@@ -1,7 +1,7 @@
 	@ src/strings.c:315 gText_RestoreWhichMove
 	.globl gText_Rom_5CA0C1
 gText_Rom_5CA0C1: @ 0x085CA0C1
-	.string "どれを かいふくする?$"
+	.string "どれを かいふくする?{EOS}"
 	.if (. - gText_Rom_5CA0C1) > 0xc
 	.error "gText_Rom_5CA0C1 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CA0C1: @ 0x085CA0C1
 	@ src/strings.c:316 gText_BoostPp
 	.globl gText_Rom_5CA0CD
 gText_Rom_5CA0CD: @ 0x085CA0CD
-	.string "どれを ふやす?$"
+	.string "どれを ふやす?{EOS}"
 	.if (. - gText_Rom_5CA0CD) > 0x9
 	.error "gText_Rom_5CA0CD may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CA0CD: @ 0x085CA0CD
 	@ src/strings.c:317 gText_DoWhatWithItem
 	.globl gText_Rom_5CA0D6
 gText_Rom_5CA0D6: @ 0x085CA0D6
-	.string "もちものを どうしますか?$"
+	.string "もちものを どうしますか?{EOS}"
 	.if (. - gText_Rom_5CA0D6) > 0xe
 	.error "gText_Rom_5CA0D6 may not grow beyond its original slot"
 	.endif

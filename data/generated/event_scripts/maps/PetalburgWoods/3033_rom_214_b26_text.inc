@@ -1,7 +1,7 @@
 	@ data/maps/PetalburgWoods/scripts.inc:458 PetalburgWoods_Text_TrainerTipsPP
 	.globl gText_Rom_214B26
 gText_Rom_214B26: @ 0x08214B26
-	.string "おとくな けいじばん!!\pポケモンには ヒットポイントの ほかに\nわざを くりだす ちからの もと\lパワーポイント というものが あります\pわざの パワーポイントが なくなったときも\nポケモンセンターに いきましょう!$"
+	.string "おとくな けいじばん!!\pポケモンには ヒットポイントの ほかに\nわざを くりだす ちからの もと\lパワーポイント というものが あります\pわざの パワーポイントが なくなったときも\nポケモンセンターに いきましょう!{EOS}"
 	.if (. - gText_Rom_214B26) > 0x6e
 	.error "gText_Rom_214B26 may not grow beyond its original slot"
 	.endif

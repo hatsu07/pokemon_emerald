@@ -1,7 +1,7 @@
 	@ data/maps/Route119_House/scripts.inc:25 Route119_House_Text_Wingull
 	.globl gText_Rom_241C45
 gText_Rom_241C45: @ 0x08241C45
-	.string "キャモメ『ぴひょ?$"
+	.string "キャモメ『ぴひょ?{EOS}"
 	.if (. - gText_Rom_241C45) > 0xa
 	.error "gText_Rom_241C45 may not grow beyond its original slot"
 	.endif

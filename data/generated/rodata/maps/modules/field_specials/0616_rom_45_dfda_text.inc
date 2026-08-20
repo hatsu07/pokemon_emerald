@@ -3,7 +3,7 @@
 	.globl gText_Rom_45DFDA
 gText_Rom_45DFDA: @ 0x0845DFDA
 	.set MapHeader_JP_0845DFDC, gText_Rom_45DFDA + 2
-	.string "  ？$"
+	.string "  ？{EOS}"
 	.if (. - gText_Rom_45DFDA) != 0x4
 	.error "gText_Rom_45DFDA must remain exactly 4 bytes"
 	.endif

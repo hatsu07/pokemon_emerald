@@ -1,7 +1,7 @@
 	@ data/maps/MtPyre_5F/scripts.inc:20 MtPyre_4F_Text_TashaPostBattle
 	.globl gText_Rom_216954
 gText_Rom_216954: @ 0x08216954
-	.string "こわいもの みたさで\nここから はなれられないの……\pねえ……\nあなたも いっしょに いない……?$"
+	.string "こわいもの みたさで\nここから はなれられないの……\pねえ……\nあなたも いっしょに いない……?{EOS}"
 	.if (. - gText_Rom_216954) > 0x32
 	.error "gText_Rom_216954 may not grow beyond its original slot"
 	.endif

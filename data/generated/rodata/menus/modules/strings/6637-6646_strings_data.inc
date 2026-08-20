@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5DBC11
 gText_Rom_5DBC11: @ 0x085DBC11
-	.string "おなじポケモンは えらべません$"
+	.string "おなじポケモンは えらべません{EOS}"
 	.if (. - gText_Rom_5DBC11) != 0x10
 	.error "gText_Rom_5DBC11 must retain its original byte length"
 	.endif
@@ -186,7 +186,7 @@ sSpriteTemplate_085DC09C: @ 0x085DC09C
 	@ src/strings.c:1004 gText_PkmnSwap
 	.globl gText_Rom_5DC0B4
 gText_Rom_5DC0B4: @ 0x085DC0B4
-	.string "ポケモンこうかん     $"
+	.string "ポケモンこうかん     {EOS}"
 	.if (. - gText_Rom_5DC0B4) > 0xe
 	.error "gText_Rom_5DC0B4 may not grow beyond its original slot"
 	.endif
@@ -197,7 +197,7 @@ gText_Rom_5DC0B4: @ 0x085DC0B4
 	@ src/strings.c:1005 gText_SelectPkmnToSwap
 	.globl gText_Rom_5DC0C2
 gText_Rom_5DC0C2: @ 0x085DC0C2
-	.string "てばなすポケモンを えらんでください$"
+	.string "てばなすポケモンを えらんでください{EOS}"
 	.if (. - gText_Rom_5DC0C2) > 0x13
 	.error "gText_Rom_5DC0C2 may not grow beyond its original slot"
 	.endif
@@ -208,7 +208,7 @@ gText_Rom_5DC0C2: @ 0x085DC0C2
 	@ src/strings.c:1006 gText_SelectPkmnToAccept
 	.globl gText_Rom_5DC0D5
 gText_Rom_5DC0D5: @ 0x085DC0D5
-	.string "うけとるポケモンを えらんでください$"
+	.string "うけとるポケモンを えらんでください{EOS}"
 	.if (. - gText_Rom_5DC0D5) > 0x13
 	.error "gText_Rom_5DC0D5 may not grow beyond its original slot"
 	.endif
@@ -219,7 +219,7 @@ gText_Rom_5DC0D5: @ 0x085DC0D5
 	@ src/strings.c:1007 gText_Swap (+1 aliases)
 	.globl gText_Rom_5DC0E8
 gText_Rom_5DC0E8: @ 0x085DC0E8
-	.string "てばなす$"
+	.string "てばなす{EOS}"
 	.if (. - gText_Rom_5DC0E8) > 0x5
 	.error "gText_Rom_5DC0E8 may not grow beyond its original slot"
 	.endif

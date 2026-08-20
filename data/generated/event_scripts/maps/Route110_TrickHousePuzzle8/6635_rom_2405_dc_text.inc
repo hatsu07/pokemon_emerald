@@ -1,7 +1,7 @@
 	@ data/maps/Route110_TrickHousePuzzle8/scripts.inc:57 Route110_TrickHousePuzzle8_Text_LeroyPostBattle
 	.globl gText_Rom_2405DC
 gText_Rom_2405DC: @ 0x082405DC
-	.string "あなた みたいな ひとが きてくれて\nカラクリだいおうも まんぞく でしょうね!$"
+	.string "あなた みたいな ひとが きてくれて\nカラクリだいおうも まんぞく でしょうね!{EOS}"
 	.if (. - gText_Rom_2405DC) > 0x29
 	.error "gText_Rom_2405DC may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:872 Route110_Text_TimmyPostBattle
 	.globl gText_Rom_25B944
 gText_Rom_25B944: @ 0x0825B944
-	.string "つかまえた ばかりの ポケモンじゃ\nうまく たたかえないや!$"
+	.string "つかまえた ばかりの ポケモンじゃ\nうまく たたかえないや!{EOS}"
 	.if (. - gText_Rom_25B944) > 0x1f
 	.error "gText_Rom_25B944 may not grow beyond its original slot"
 	.endif

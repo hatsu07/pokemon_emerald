@@ -1,7 +1,7 @@
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	.globl gText_Rom_24B2D3
 gText_Rom_24B2D3: @ 0x0824B2D3
-	.string "つるぎのまい$"
+	.string "つるぎのまい{EOS}"
 	.if (. - gText_Rom_24B2D3) > 0x7
 	.error "gText_Rom_24B2D3 may not grow beyond its original slot"
 	.endif

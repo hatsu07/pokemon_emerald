@@ -1,7 +1,7 @@
 	@ src/battle_dome.c:996 battle_dome_line_996
 	.globl gText_Rom_2742A2
 gText_Rom_2742A2: @ 0x082742A2
-	.string "    けっしょうせん$"
+	.string "    けっしょうせん{EOS}"
 	.if (. - gText_Rom_2742A2) > 0xc
 	.error "gText_Rom_2742A2 may not grow beyond its original slot"
 	.endif
@@ -22,10 +22,10 @@ gText_Rom_2742A2: @ 0x082742A2
 	.byte 0x00, 0x03, 0x00, 0x04, 0x00, 0x02, 0x63, 0x01, 0x00, 0x04, 0x00, 0x04, 0x00, 0x63, 0x02, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x02
 EventText_JP_08274353: @ 0x08274353
-	.string "テあ　お　お　テい　　　　　いテあ　え　う　テい　え　え　いえぞ　　ロづらく　　にえィお　ゆ▶　むすィう　かあDづらくむすィか　かあDづらくむすィき　かあDづらくむすィく　かあNづらくケい　はゆにえぞあ　サ$"
+	.string "テあ　お　お　テい　　　　　いテあ　え　う　テい　え　え　いえぞ　　ロづらく　　にえィお　ゆ▶　むすィう　かあDづらくむすィか　かあDづらくむすィき　かあDづらくむすィく　かあNづらくケい　はゆにえぞあ　サ{EOS}"
 	.byte 0x00, 0x02, 0x02
 EventText_JP_082743BE: @ 0x082743BE
-	.string "にえぞあ　サ$"
+	.string "にえぞあ　サ{EOS}"
 	.byte 0x00, 0x02, 0x02, 0x16, 0x04, 0x40, 0x01, 0x00, 0x5B, 0xFF, 0x00, 0x02, 0x59, 0x01, 0x00, 0x1A
 	.byte 0x25, 0x02
 .globl EventScript_JP_082743D7

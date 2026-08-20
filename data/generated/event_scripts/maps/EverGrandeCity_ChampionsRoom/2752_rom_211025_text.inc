@@ -1,7 +1,7 @@
 	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:258 EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations
 	.globl gText_Rom_211025
 gText_Rom_211025: @ 0x08211025
-	.string "ユウキ『……えーっ!\n…… …… ……\n…… …… ……\pま しかたないか\nそういう きまり だもんな\p{PLAYER}! よかったな\nおめでとう!!$"
+	.string "ユウキ『……えーっ!\n…… …… ……\n…… …… ……\pま しかたないか\nそういう きまり だもんな\p{PLAYER}! よかったな\nおめでとう!!{EOS}"
 	.if (. - gText_Rom_211025) > 0x46
 	.error "gText_Rom_211025 may not grow beyond its original slot"
 	.endif

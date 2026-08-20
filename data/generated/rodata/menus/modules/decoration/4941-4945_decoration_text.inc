@@ -1,7 +1,7 @@
 	@ asm/decoration.s:326 PrintCurMainMenuDescription (+1 aliases)
 	.globl gText_Rom_5CA6CD
 gText_Rom_5CA6CD: @ 0x085CA6CD
-	.string "えらんだ　グッズを　へやに　おきます！$"
+	.string "えらんだ　グッズを　へやに　おきます！{EOS}"
 	.if (. - gText_Rom_5CA6CD) > 0x14
 	.error "gText_Rom_5CA6CD may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CA6CD: @ 0x085CA6CD
 	@ asm/decoration.s:326 PrintCurMainMenuDescription (+1 aliases)
 	.globl gText_Rom_5CA6E1
 gText_Rom_5CA6E1: @ 0x085CA6E1
-	.string "えらんだ　グッズを　パソコンに　もどします！$"
+	.string "えらんだ　グッズを　パソコンに　もどします！{EOS}"
 	.if (. - gText_Rom_5CA6E1) > 0x17
 	.error "gText_Rom_5CA6E1 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CA6E1: @ 0x085CA6E1
 	@ asm/decoration.s:326 PrintCurMainMenuDescription (+1 aliases)
 	.globl gText_Rom_5CA6F8
 gText_Rom_5CA6F8: @ 0x085CA6F8
-	.string "いらなくなった　グッズを　すてます！$"
+	.string "いらなくなった　グッズを　すてます！{EOS}"
 	.if (. - gText_Rom_5CA6F8) > 0x13
 	.error "gText_Rom_5CA6F8 may not grow beyond its original slot"
 	.endif

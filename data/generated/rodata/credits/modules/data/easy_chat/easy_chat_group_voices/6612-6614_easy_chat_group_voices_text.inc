@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_voices.h:346 easy_chat_group_voices_line_346
 	.globl gText_Rom_5D8140
 gText_Rom_5D8140: @ 0x085D8140
-	.string "ラララ$"
+	.string "ラララ{EOS}"
 	.if (. - gText_Rom_5D8140) > 0x4
 	.error "gText_Rom_5D8140 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5D8140: @ 0x085D8140
 	.byte 0x77, 0x77, 0x77, 0xEE, 0x77, 0x77, 0x77, 0x77
 	.globl gText_Rom_5D814C
 gText_Rom_5D814C: @ 0x085D814C
-	.string "ラララ$"
+	.string "ラララ{EOS}"
 	.if (. - gText_Rom_5D814C) > 0x4
 	.error "gText_Rom_5D814C may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1016 Route111_Text_BrookeRegister
 	.globl gText_Rom_25BFEC
 gText_Rom_25BFEC: @ 0x0825BFEC
-	.string "あなた みたいな つよいひとと\nおともだちに なりたいわ!$"
+	.string "あなた みたいな つよいひとと\nおともだちに なりたいわ!{EOS}"
 	.if (. - gText_Rom_25BFEC) > 0x1e
 	.error "gText_Rom_25BFEC may not grow beyond its original slot"
 	.endif

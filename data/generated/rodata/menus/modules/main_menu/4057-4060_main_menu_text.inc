@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C8DEC
 gText_Rom_5C8DEC: @ 0x085C8DEC
-	.string "プレイじかん$"
+	.string "プレイじかん{EOS}"
 	.if (. - gText_Rom_5C8DEC) != 0x7
 	.error "gText_Rom_5C8DEC must retain its original byte length"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5C8DEC: @ 0x085C8DEC
 	@ src/main_menu.c:277 gText_ContinueMenuBadges (+2 aliases)
 	.globl gText_Rom_5C8DF3
 gText_Rom_5C8DF3: @ 0x085C8DF3
-	.string "もっているバッジ$"
+	.string "もっているバッジ{EOS}"
 	.if (. - gText_Rom_5C8DF3) > 0x9
 	.error "gText_Rom_5C8DF3 may not grow beyond its original slot"
 	.endif

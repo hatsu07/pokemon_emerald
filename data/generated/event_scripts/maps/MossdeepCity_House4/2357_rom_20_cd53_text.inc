@@ -1,7 +1,7 @@
 	@ data/maps/MossdeepCity_House4/scripts.inc:54 MossdeepCity_House4_Text_Skitty
 	.globl gText_Rom_20CD53
 gText_Rom_20CD53: @ 0x0820CD53
-	.string "エネコ『みゃあん?$"
+	.string "エネコ『みゃあん?{EOS}"
 	.if (. - gText_Rom_20CD53) > 0xa
 	.error "gText_Rom_20CD53 may not grow beyond its original slot"
 	.endif

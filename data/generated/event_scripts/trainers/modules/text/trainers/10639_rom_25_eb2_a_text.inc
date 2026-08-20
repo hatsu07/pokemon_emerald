@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2048 Route119_Text_PhilPostBattle
 	.globl gText_Rom_25EB2A
 gText_Rom_25EB2A: @ 0x0825EB2A
-	.string "ぼくは ちいさい ころから\nとりポケモンに あこがれて いたんだ!$"
+	.string "ぼくは ちいさい ころから\nとりポケモンに あこがれて いたんだ!{EOS}"
 	.if (. - gText_Rom_25EB2A) > 0x22
 	.error "gText_Rom_25EB2A may not grow beyond its original slot"
 	.endif

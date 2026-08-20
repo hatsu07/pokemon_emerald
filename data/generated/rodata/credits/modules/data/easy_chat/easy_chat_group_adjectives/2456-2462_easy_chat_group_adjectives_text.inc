@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_adjectives.h:196 easy_chat_group_adjectives_line_196
 	.globl gText_Rom_57825A
 gText_Rom_57825A: @ 0x0857825A
-	.string "メラメラ$"
+	.string "メラメラ{EOS}"
 	.if (. - gText_Rom_57825A) > 0x5
 	.error "gText_Rom_57825A may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_57825A: @ 0x0857825A
 	@ src/data/easy_chat/easy_chat_group_adjectives.h:202 easy_chat_group_adjectives_line_202
 	.globl gText_Rom_57825F
 gText_Rom_57825F: @ 0x0857825F
-	.string "ラブラブ$"
+	.string "ラブラブ{EOS}"
 	.if (. - gText_Rom_57825F) > 0x5
 	.error "gText_Rom_57825F may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_57825F: @ 0x0857825F
 	@ src/data/easy_chat/easy_chat_group_adjectives.h:208 easy_chat_group_adjectives_line_208
 	.globl gText_Rom_578264
 gText_Rom_578264: @ 0x08578264
-	.string "るんるん$"
+	.string "るんるん{EOS}"
 	.if (. - gText_Rom_578264) > 0x5
 	.error "gText_Rom_578264 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_578264: @ 0x08578264
 	@ src/data/easy_chat/easy_chat_group_adjectives.h:214 easy_chat_group_adjectives_line_214
 	.globl gText_Rom_578269
 gText_Rom_578269: @ 0x08578269
-	.string "わくわく$"
+	.string "わくわく{EOS}"
 	.if (. - gText_Rom_578269) > 0x5
 	.error "gText_Rom_578269 may not grow beyond its original slot"
 	.endif

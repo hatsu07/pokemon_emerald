@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:650 Route109_Text_AustinaIntro (+1 aliases)
 	.globl gText_Rom_25B086
 gText_Rom_25B086: @ 0x0825B086
-	.string "うきわが ないと およげないけど\nポケモンなら だれにも まけないよ!$"
+	.string "うきわが ないと およげないけど\nポケモンなら だれにも まけないよ!{EOS}"
 	.if (. - gText_Rom_25B086) > 0x24
 	.error "gText_Rom_25B086 may not grow beyond its original slot"
 	.endif

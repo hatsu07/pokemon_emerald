@@ -1,7 +1,7 @@
 	@ src/strings.c:736 gText_ExitingChat
 	.globl gText_Rom_5CC697
 gText_Rom_5CC697: @ 0x085CC697
-	.string "さんかしゃが いなくなったので\nしゅうりょうします!$"
+	.string "さんかしゃが いなくなったので\nしゅうりょうします!{EOS}"
 	.if (. - gText_Rom_5CC697) > 0x1b
 	.error "gText_Rom_5CC697 may not grow beyond its original slot"
 	.endif
@@ -14,7 +14,7 @@ gText_Rom_5CC697: @ 0x085CC697
 	.byte 0x44, 0x00, 0x06, 0x02, 0x0B, 0x2E, 0x0C, 0x1F, 0x0D, 0xAB, 0xFF
 	.globl gText_Rom_5CC6CD
 gText_Rom_5CC6CD: @ 0x085CC6CD
-	.string "とうろくが かわりました\nポケモンレポートに かきこみますか?$"
+	.string "とうろくが かわりました\nポケモンレポートに かきこみますか?{EOS}"
 	.if (. - gText_Rom_5CC6CD) > 0x20
 	.error "gText_Rom_5CC6CD may not grow beyond its original slot"
 	.endif

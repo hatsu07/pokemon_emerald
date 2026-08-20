@@ -1,7 +1,7 @@
 	@ src/data/region_map/region_map_entries.h:413 region_map_entries_line_413
 	.globl gText_Rom_57CB2C
 gText_Rom_57CB2C: @ 0x0857CB2C
-	.string "サファリゾーン$"
+	.string "サファリゾーン{EOS}"
 	.if (. - gText_Rom_57CB2C) > 0x8
 	.error "gText_Rom_57CB2C may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_57CB2C: @ 0x0857CB2C
 	@ src/strings.c:623 gText_PokemonLeague
 	.globl gText_Rom_57CB34
 gText_Rom_57CB34: @ 0x0857CB34
-	.string "ポケモンリーグ$"
+	.string "ポケモンリーグ{EOS}"
 	.if (. - gText_Rom_57CB34) > 0x8
 	.error "gText_Rom_57CB34 may not grow beyond its original slot"
 	.endif
@@ -27,7 +27,7 @@ gText_Rom_57CB3C: @ 0x0857CB3C
 	.byte 0x59, 0x73, 0x7E
 	.globl gText_Rom_57CB4F
 gText_Rom_57CB4F: @ 0x0857CB4F
-	.string "タワー$"
+	.string "タワー{EOS}"
 	.if (. - gText_Rom_57CB4F) > 0x4
 	.error "gText_Rom_57CB4F may not grow beyond its original slot"
 	.endif

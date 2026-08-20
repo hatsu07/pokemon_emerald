@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1235 Route113_Text_ToriNotEnoughMons (+1 aliases)
 	.globl gText_Rom_25C8D3
 gText_Rom_25C8D3: @ 0x0825C8D3
-	.string "ナナ『あたしたち 2たい2で たたかいたいの\nそうしないと まけちゃうもん!$"
+	.string "ナナ『あたしたち 2たい2で たたかいたいの\nそうしないと まけちゃうもん!{EOS}"
 	.if (. - gText_Rom_25C8D3) > 0x27
 	.error "gText_Rom_25C8D3 may not grow beyond its original slot"
 	.endif

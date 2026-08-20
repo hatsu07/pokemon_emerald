@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2237 Route120_Text_CallieIntro (+1 aliases)
 	.globl gText_Rom_25F348
 gText_Rom_25F348: @ 0x0825F348
-	.string "よそみ してると ケガするよ!$"
+	.string "よそみ してると ケガするよ!{EOS}"
 	.if (. - gText_Rom_25F348) > 0x10
 	.error "gText_Rom_25F348 may not grow beyond its original slot"
 	.endif

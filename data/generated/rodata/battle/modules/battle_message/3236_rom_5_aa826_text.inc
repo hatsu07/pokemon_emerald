@@ -1,7 +1,7 @@
 	@ src/battle_message.c:499 battle_message_line_499
 	.globl gText_Rom_5AA826
 gText_Rom_5AA826: @ 0x085AA826
-	.string "{B_EFF_NAME_WITH_PREFIX}は {B_EFF_ABILITY}で\nひるまない!$"
+	.string "{B_EFF_NAME_WITH_PREFIX}は {B_EFF_ABILITY}で\nひるまない!{EOS}"
 	.if (. - gText_Rom_5AA826) > 0xf
 	.error "gText_Rom_5AA826 may not grow beyond its original slot"
 	.endif

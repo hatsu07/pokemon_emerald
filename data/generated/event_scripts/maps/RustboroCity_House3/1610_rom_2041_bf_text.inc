@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_House3/scripts.inc:29 RustboroCity_House3_Text_Pekachu
 	.globl gText_Rom_2041BF
 gText_Rom_2041BF: @ 0x082041BF
-	.string "ペカチュウ『ぺかー!$"
+	.string "ペカチュウ『ぺかー!{EOS}"
 	.if (. - gText_Rom_2041BF) > 0xb
 	.error "gText_Rom_2041BF may not grow beyond its original slot"
 	.endif

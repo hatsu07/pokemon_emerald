@@ -2,21 +2,21 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57CC9C
 gText_Rom_57CC9C: @ 0x0857CC9C
-	.string "へんげのどうくつ$"
+	.string "へんげのどうくつ{EOS}"
 	.if (. - gText_Rom_57CC9C) != 0x9
 	.error "gText_Rom_57CC9C must retain its original byte length"
 	.endif
 	.globl gText_Rom_57CCA0
 	.set gText_Rom_57CCA0, gText_Rom_57CC9C + 0x4
 	@ Decoded text from ROM range: offset=0x57CCA5, size=0x1C
-	.string "アスカナのせきしつ$"
-	.string "3のしま　よこあな$"
-	.string "アスカナのかぎ$"
+	.string "アスカナのせきしつ{EOS}"
+	.string "3のしま　よこあな{EOS}"
+	.string "アスカナのかぎ{EOS}"
 
 	@ src/data/region_map/region_map_entries.h:1386 region_map_entries_line_1386 (+1 aliases)
 	.globl gText_Rom_57CCC1
 gText_Rom_57CCC1: @ 0x0857CCC1
-	.string "たんじょうのしま$"
+	.string "たんじょうのしま{EOS}"
 	.if (. - gText_Rom_57CCC1) > 0x9
 	.error "gText_Rom_57CCC1 may not grow beyond its original slot"
 	.endif
@@ -24,21 +24,21 @@ gText_Rom_57CCC1: @ 0x0857CCC1
 	.space 0x9 - (. - gText_Rom_57CCC1)
 	.endif
 	@ Decoded text from ROM range: offset=0x57CCCA, size=0x52
-	.string "イレスのせきしつ$"
-	.string "ナザンのせきしつ$"
-	.string "ユゴのせきしつ$"
-	.string "アレボカのせきしつ$"
-	.string "コトーのせきしつ$"
-	.string "アヌザのせきしつ$"
-	.string "オリフのせきしつ$"
-	.string "ともしびおんせん$"
-	.string "あかみどりとくしゅ$"
+	.string "イレスのせきしつ{EOS}"
+	.string "ナザンのせきしつ{EOS}"
+	.string "ユゴのせきしつ{EOS}"
+	.string "アレボカのせきしつ{EOS}"
+	.string "コトーのせきしつ{EOS}"
+	.string "アヌザのせきしつ{EOS}"
+	.string "オリフのせきしつ{EOS}"
+	.string "ともしびおんせん{EOS}"
+	.string "あかみどりとくしゅ{EOS}"
 
 	@ src/data/region_map/region_map_entries.h:1365 region_map_entries_line_1365
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57CD1C
 gText_Rom_57CD1C: @ 0x0857CD1C
-	.string "アクアだん アジト$"
+	.string "アクアだん アジト{EOS}"
 	.if (. - gText_Rom_57CD1C) != 0xa
 	.error "gText_Rom_57CD1C must retain its original byte length"
 	.endif
@@ -49,7 +49,7 @@ gText_Rom_57CD1C: @ 0x0857CD1C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57CD26
 gText_Rom_57CD26: @ 0x0857CD26
-	.string "マグマだん アジト$"
+	.string "マグマだん アジト{EOS}"
 	.if (. - gText_Rom_57CD26) != 0xa
 	.error "gText_Rom_57CD26 must retain its original byte length"
 	.endif
@@ -59,7 +59,7 @@ gText_Rom_57CD26: @ 0x0857CD26
 	@ src/data/region_map/region_map_entries.h:1379 region_map_entries_line_1379
 	.globl gText_Rom_57CD30
 gText_Rom_57CD30: @ 0x0857CD30
-	.string "げんえいのとう$"
+	.string "げんえいのとう{EOS}"
 	.if (. - gText_Rom_57CD30) > 0x8
 	.error "gText_Rom_57CD30 may not grow beyond its original slot"
 	.endif
@@ -70,7 +70,7 @@ gText_Rom_57CD30: @ 0x0857CD30
 	@ src/data/region_map/region_map_entries.h:1393 region_map_entries_line_1393 (+1 aliases)
 	.globl gText_Rom_57CD38
 gText_Rom_57CD38: @ 0x0857CD38
-	.string "さいはてのことう$"
+	.string "さいはてのことう{EOS}"
 	.if (. - gText_Rom_57CD38) > 0x9
 	.error "gText_Rom_57CD38 may not grow beyond its original slot"
 	.endif
@@ -81,7 +81,7 @@ gText_Rom_57CD38: @ 0x0857CD38
 	@ src/data/region_map/region_map_entries.h:1400 region_map_entries_line_1400
 	.globl gText_Rom_57CD41
 gText_Rom_57CD41: @ 0x0857CD41
-	.string "アトリエのあな$"
+	.string "アトリエのあな{EOS}"
 	.if (. - gText_Rom_57CD41) > 0x8
 	.error "gText_Rom_57CD41 may not grow beyond its original slot"
 	.endif
@@ -93,7 +93,7 @@ gText_Rom_57CD41: @ 0x0857CD41
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57CD49
 gText_Rom_57CD49: @ 0x0857CD49
-	.string "うみのどうくつ$"
+	.string "うみのどうくつ{EOS}"
 	.if (. - gText_Rom_57CD49) != 0x8
 	.error "gText_Rom_57CD49 must retain its original byte length"
 	.endif
@@ -104,7 +104,7 @@ gText_Rom_57CD49: @ 0x0857CD49
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57CD51
 gText_Rom_57CD51: @ 0x0857CD51
-	.string "りくのどうくつ$"
+	.string "りくのどうくつ{EOS}"
 	.if (. - gText_Rom_57CD51) != 0x8
 	.error "gText_Rom_57CD51 must retain its original byte length"
 	.endif
@@ -114,7 +114,7 @@ gText_Rom_57CD51: @ 0x0857CD51
 	@ src/data/region_map/region_map_entries.h:1449 region_map_entries_line_1449
 	.globl gText_Rom_57CD59
 gText_Rom_57CD59: @ 0x0857CD59
-	.string "さばくのちかどう$"
+	.string "さばくのちかどう{EOS}"
 	.if (. - gText_Rom_57CD59) > 0x9
 	.error "gText_Rom_57CD59 may not grow beyond its original slot"
 	.endif
@@ -125,7 +125,7 @@ gText_Rom_57CD59: @ 0x0857CD59
 	@ src/data/region_map/region_map_entries.h:1470 region_map_entries_line_1470
 	.globl gText_Rom_57CD62
 gText_Rom_57CD62: @ 0x0857CD62
-	.string "トレーナーヒル$"
+	.string "トレーナーヒル{EOS}"
 	.if (. - gText_Rom_57CD62) > 0x8
 	.error "gText_Rom_57CD62 may not grow beyond its original slot"
 	.endif

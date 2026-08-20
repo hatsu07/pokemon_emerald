@@ -1,7 +1,7 @@
 	@ field-script:0x1EA914 FieldScriptText_1EAE67
 	.globl gText_Rom_1EAE67
 gText_Rom_1EAE67: @ 0x081EAE67
-	.string "{ESCAPE}{0x03}　トレーナーヒル　いりぐち\nかけあがれ！　あつき　トレーナーたち！$"
+	.string "{ESCAPE}{0x03}　トレーナーヒル　いりぐち\nかけあがれ！　あつき　トレーナーたち！{EOS}"
 	.if (. - gText_Rom_1EAE67) > 0x25
 	.error "gText_Rom_1EAE67 may not grow beyond its original slot"
 	.endif

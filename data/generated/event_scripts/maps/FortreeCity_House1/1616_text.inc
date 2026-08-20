@@ -1,7 +1,7 @@
 	@ data/maps/FortreeCity_House1/scripts.inc:49 FortreeCity_House1_Text_ThisIsntAMon
 	.globl gText_Rom_204305
 gText_Rom_204305: @ 0x08204305
-	.string "いやソレ\n{STR_VAR_1}じゃないでしょ$"
+	.string "いやソレ\n{STR_VAR_1}じゃないでしょ{EOS}"
 	.if (. - gText_Rom_204305) > 0xf
 	.error "gText_Rom_204305 may not grow beyond its original slot"
 	.endif

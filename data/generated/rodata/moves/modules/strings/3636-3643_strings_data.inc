@@ -1,7 +1,7 @@
 	@ src/strings.c:272 gText_PkmnLearnedMove3
 	.globl gText_Rom_5AD9C0
 gText_Rom_5AD9C0: @ 0x085AD9C0
-	.string "{STR_VAR_1}は あたらしく\n{STR_VAR_2}を おぼえた!$"
+	.string "{STR_VAR_1}は あたらしく\n{STR_VAR_2}を おぼえた!{EOS}"
 	.if (. - gText_Rom_5AD9C0) > 0x14
 	.error "gText_Rom_5AD9C0 may not grow beyond its original slot"
 	.endif
@@ -25,7 +25,7 @@ gMoveRelearnerData_085AD9D4: @ 0x085AD9D4
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5ADA27
 gText_Rom_5ADA27: @ 0x085ADA27
-	.string "それでは…… {STR_VAR_2}を\nおぼえるのを あきらめますか?$"
+	.string "それでは…… {STR_VAR_2}を\nおぼえるのを あきらめますか?{EOS}"
 	.if (. - gText_Rom_5ADA27) != 0x1b
 	.error "gText_Rom_5ADA27 must retain its original byte length"
 	.endif
@@ -40,7 +40,7 @@ gMoveRelearnerData_085ADA42: @ 0x085ADA42
 	.byte 0xFC, 0x08, 0x20
 	.globl gText_Rom_5ADA45
 gText_Rom_5ADA45: @ 0x085ADA45
-	.string "1 {PAUSE 15}2の {PAUSE 15}…{PAUSE 15}…{PAUSE 15}… {PAUSE 15}{PLAY_SE SE_BALL_BOUNCE_1}ポカン!\p$"
+	.string "1 {PAUSE 15}2の {PAUSE 15}…{PAUSE 15}…{PAUSE 15}… {PAUSE 15}{PLAY_SE SE_BALL_BOUNCE_1}ポカン!\p{EOS}"
 	.if (. - gText_Rom_5ADA45) > 0x22
 	.error "gText_Rom_5ADA45 may not grow beyond its original slot"
 	.endif
@@ -57,7 +57,7 @@ gMoveRelearnerData_085ADA67: @ 0x085ADA67
 	.2byte 0x022A, 0x0016, 0x0D2C, 0x102A, 0xFBAB, 0x0C0F, 0xB013, 0xFBAB
 	.globl gText_Rom_5ADA87
 gText_Rom_5ADA87: @ 0x085ADA87
-	.string "{STR_VAR_1}は あたらしく\n{STR_VAR_2}を おぼえた!$"
+	.string "{STR_VAR_1}は あたらしく\n{STR_VAR_2}を おぼえた!{EOS}"
 	.if (. - gText_Rom_5ADA87) > 0x14
 	.error "gText_Rom_5ADA87 may not grow beyond its original slot"
 	.endif
@@ -65,4 +65,4 @@ gText_Rom_5ADA87: @ 0x085ADA87
 	.space 0x14 - (. - gText_Rom_5ADA87)
 	.endif
 	@ Decoded text from ROM range: offset=0x5ADA9B, size=0x14
-	.string "{STR_VAR_1}は　{STR_VAR_2}を　おぼえずに　おわった！$"
+	.string "{STR_VAR_1}は　{STR_VAR_2}を　おぼえずに　おわった！{EOS}"

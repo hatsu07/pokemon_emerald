@@ -1,7 +1,7 @@
 	@ asm/dodrio_berry_picking.s:10321 sub_080293D4
 	.globl gText_Rom_5CCDE7
 gText_Rom_5CCDE7: @ 0x085CCDE7
-	.string "てん$"
+	.string "てん{EOS}"
 	.if (. - gText_Rom_5CCDE7) > 0x3
 	.error "gText_Rom_5CCDE7 may not grow beyond its original slot"
 	.endif

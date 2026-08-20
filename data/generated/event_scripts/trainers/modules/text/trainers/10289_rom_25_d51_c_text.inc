@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1538 Route115_Text_HelenePostBattle
 	.globl gText_Rom_25D51C
 gText_Rom_25D51C: @ 0x0825D51C
-	.string "あたしより つよい ひとなんて\nめったに あわないのに……\pわかった!\nあなた ジムリーダー でしょ!$"
+	.string "あたしより つよい ひとなんて\nめったに あわないのに……\pわかった!\nあなた ジムリーダー でしょ!{EOS}"
 	.if (. - gText_Rom_25D51C) > 0x34
 	.error "gText_Rom_25D51C may not grow beyond its original slot"
 	.endif

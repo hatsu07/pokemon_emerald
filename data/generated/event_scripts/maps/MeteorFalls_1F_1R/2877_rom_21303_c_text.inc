@@ -1,7 +1,7 @@
 	@ data/maps/MeteorFalls_1F_1R/scripts.inc:306 MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney
 	.globl gText_Rom_21303C
 gText_Rom_21303C: @ 0x0821303C
-	.string "ソライシ『それにしても マグマだんは\nいんせき なんか もっていって\lえんとつやまで\lなにする つもり なんだろう……?$"
+	.string "ソライシ『それにしても マグマだんは\nいんせき なんか もっていって\lえんとつやまで\lなにする つもり なんだろう……?{EOS}"
 	.if (. - gText_Rom_21303C) > 0x3d
 	.error "gText_Rom_21303C may not grow beyond its original slot"
 	.endif

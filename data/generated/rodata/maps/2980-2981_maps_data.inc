@@ -590,7 +590,7 @@ gMapPointerTable_Rom_5A86D4: @ 0x085A86D4
 	.globl gText_Rom_5A86F0
 gText_Rom_5A86F0: @ 0x085A86F0
 	@ Decoded text from ROM range: offset=0x5A86F0, size=0x4
-	.string "し　ä$"
+	.string "し　ä{EOS}"
 	@ pret/pokeemerald-jp direct xref for 0x085A86F4: battle_transition.s: sub_0814846C
 	.globl gBattleTransitionData_085A86F4
 gBattleTransitionData_085A86F4: @ 0x085A86F4

@@ -1,7 +1,7 @@
 	@ src/strings.c:892 gText_WinStreak
 	.globl gText_Rom_5DD41D
 gText_Rom_5DD41D: @ 0x085DD41D
-	.string "{STR_VAR_1}れんしょう$"
+	.string "{STR_VAR_1}れんしょう{EOS}"
 	.if (. - gText_Rom_5DD41D) > 0x8
 	.error "gText_Rom_5DD41D may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5DD41D: @ 0x085DD41D
 	@ src/strings.c:893 gText_Current
 	.globl gText_Rom_5DD425
 gText_Rom_5DD425: @ 0x085DD425
-	.string "げんざい$"
+	.string "げんざい{EOS}"
 	.if (. - gText_Rom_5DD425) > 0x5
 	.error "gText_Rom_5DD425 may not grow beyond its original slot"
 	.endif

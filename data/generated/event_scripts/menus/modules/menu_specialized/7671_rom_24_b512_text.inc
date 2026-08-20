@@ -1,7 +1,7 @@
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	.globl gText_Rom_24B512
 gText_Rom_24B512: @ 0x0824B512
-	.string "{0xFD}{0x02}の　{0xFD}{0x04}は\nいんしょうを　はねかえした！$"
+	.string "{0xFD}{0x02}の　{0xFD}{0x04}は\nいんしょうを　はねかえした！{EOS}"
 	.if (. - gText_Rom_24B512) > 0x17
 	.error "gText_Rom_24B512 may not grow beyond its original slot"
 	.endif
@@ -11,42 +11,42 @@ gText_Rom_24B512: @ 0x0824B512
 	@ analyzed canonical ROM range 0x0824B529-0x0824B70B
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_0824B529: @ 0x0824B529
-	.string "{STR_VAR_1}の\nアピールこうかが　なくなった!$"
+	.string "{STR_VAR_1}の\nアピールこうかが　なくなった!{EOS}"
 EventText_JP_0824B53D: @ 0x0824B53D
-	.string "スペシャル　アピールの\nこうかが　なくなった!$"
+	.string "スペシャル　アピールの\nこうかが　なくなった!{EOS}"
 EventText_JP_0824B555: @ 0x0824B555
-	.string "ぜんいんの　アピールを\nおなじくらいに　みせた!$"
+	.string "ぜんいんの　アピールを\nおなじくらいに　みせた!{EOS}"
 EventText_JP_0824B56E: @ 0x0824B56E
-	.string "{STR_VAR_2}の\nアピールを　ひくくみせた!$"
+	.string "{STR_VAR_2}の\nアピールを　ひくくみせた!{EOS}"
 EventText_JP_0824B580: @ 0x0824B580
-	.string "{STR_VAR_1}より　めだつ\nアピールを　ひくくみせた!$"
+	.string "{STR_VAR_1}より　めだつ\nアピールを　ひくくみせた!{EOS}"
 EventText_JP_0824B597: @ 0x0824B597
-	.string "{STR_VAR_2}の\nちゅうもくを　うばった!$"
+	.string "{STR_VAR_2}の\nちゅうもくを　うばった!{EOS}"
 EventText_JP_0824B5A8: @ 0x0824B5A8
-	.string "{STR_VAR_2}の\nアピールを　ひくくみせた!$"
+	.string "{STR_VAR_2}の\nアピールを　ひくくみせた!{EOS}"
 EventText_JP_0824B5BA: @ 0x0824B5BA
-	.string "みんなの　アピールを\nおおはばに　ひくくみせた!$"
+	.string "みんなの　アピールを\nおおはばに　ひくくみせた!{EOS}"
 EventText_JP_0824B5D3: @ 0x0824B5D3
-	.string "つぎの　{STR_VAR_1}の　アピールに\nきたいが　たかまった!$"
+	.string "つぎの　{STR_VAR_1}の　アピールに\nきたいが　たかまった!{EOS}"
 EventText_JP_0824B5ED: @ 0x0824B5ED
-	.string "{STR_VAR_1}より　めだっている\nアピールを　ひくくみせた!$"
+	.string "{STR_VAR_1}より　めだっている\nアピールを　ひくくみせた!{EOS}"
 EventText_JP_0824B607: @ 0x0824B607
-	.string "しんさいんの　すきなアピールを\nいつもより　ひくくみせた!$"
+	.string "しんさいんの　すきなアピールを\nいつもより　ひくくみせた!{EOS}"
 EventText_JP_0824B625: @ 0x0824B625
-	.string "じぶんいがいの　アピールを\nはんぶんの　できにみせた!$"
+	.string "じぶんいがいの　アピールを\nはんぶんの　できにみせた!{EOS}"
 EventText_JP_0824B641: @ 0x0824B641
-	.string "いままで　じゃまされた\nうっぷんを　はらして　めだった!$"
+	.string "いままで　じゃまされた\nうっぷんを　はらして　めだった!{EOS}"
 EventText_JP_0824B65E: @ 0x0824B65E
-	.string "もう　アピールに\nさんか　できなくなった!$"
+	.string "もう　アピールに\nさんか　できなくなった!{EOS}"
 EventText_JP_0824B674: @ 0x0824B674
-	.string "しんさいんの　こころに　うったえ\nすごい　アピールになった!$"
+	.string "しんさいんの　こころに　うったえ\nすごい　アピールになった!{EOS}"
 EventText_JP_0824B693: @ 0x0824B693
-	.string "つぎからの　アピールに\nすこし　きたいが　たかまった!$"
+	.string "つぎからの　アピールに\nすこし　きたいが　たかまった!{EOS}"
 EventText_JP_0824B6AF: @ 0x0824B6AF
-	.string "スペシャル　アピールがある\nかずだけ　めだった!$"
+	.string "スペシャル　アピールがある\nかずだけ　めだった!{EOS}"
 EventText_JP_0824B6C8: @ 0x0824B6C8
-	.string "{STR_VAR_1}と\nおなじくらい　めだった!$"
+	.string "{STR_VAR_1}と\nおなじくらい　めだった!{EOS}"
 EventText_JP_0824B6D9: @ 0x0824B6D9
-	.string "じゃまされた　アピールを\nさらに　めだたなくした!$"
+	.string "じゃまされた　アピールを\nさらに　めだたなくした!{EOS}"
 EventText_JP_0824B6F3: @ 0x0824B6F3
-	.string "ぜんいんの　アピールと\nおなじくらいに　みせた!$"
+	.string "ぜんいんの　アピールと\nおなじくらいに　みせた!{EOS}"

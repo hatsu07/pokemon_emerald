@@ -1,7 +1,7 @@
 	@ data/text/berries.inc:1 PetalburgCity_Gym_Text_GiveEnigmaBerry
 	.globl gText_Rom_2637C2
 gText_Rom_2637C2: @ 0x082637C2
-	.string "パパ『やあ {PLAYER}!\pめずらしい きのみを てに いれたから\nプレゼント するよ!$"
+	.string "パパ『やあ {PLAYER}!\pめずらしい きのみを てに いれたから\nプレゼント するよ!{EOS}"
 	.if (. - gText_Rom_2637C2) > 0x29
 	.error "gText_Rom_2637C2 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_2637C2: @ 0x082637C2
 	@ data/text/berries.inc:6 Route104_Text_PlantBerriesInSoilTakeThis
 	.globl gText_Rom_2637EB
 gText_Rom_2637EB: @ 0x082637EB
-	.string "ふかふかの つちに はえている きのみは\nじゆうに とっても よいのじゃが…\p1つだけ きのみを おなじ ばしょに うめる\nそれが れいぎと いうものじゃ\pほれ これを わけてやろう$"
+	.string "ふかふかの つちに はえている きのみは\nじゆうに とっても よいのじゃが…\p1つだけ きのみを おなじ ばしょに うめる\nそれが れいぎと いうものじゃ\pほれ これを わけてやろう{EOS}"
 	.if (. - gText_Rom_2637EB) > 0x5c
 	.error "gText_Rom_2637EB may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_2637EB: @ 0x082637EB
 	@ data/text/berries.inc:13 Route104_Text_TrainersOftenMakeMonHoldBerries
 	.globl gText_Rom_263847
 gText_Rom_263847: @ 0x08263847
-	.string "あんた みたところ トレーナーじゃろ?\pトレーナーは よく きのみを ポケモンに\nもたせとるわい\pふやすも つかうも あんた しだいじゃ$"
+	.string "あんた みたところ トレーナーじゃろ?\pトレーナーは よく きのみを ポケモンに\nもたせとるわい\pふやすも つかうも あんた しだいじゃ{EOS}"
 	.if (. - gText_Rom_263847) > 0x45
 	.error "gText_Rom_263847 may not grow beyond its original slot"
 	.endif
@@ -35,7 +35,7 @@ gText_Rom_263847: @ 0x08263847
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_26388C
 gText_Rom_26388C: @ 0x0826388C
-	.string "いつも みずを あげてたら\nたくさん はなが さいたんだ\pそしたら きのみも たくさん できた!\pはい!\nこれ あげる$"
+	.string "いつも みずを あげてたら\nたくさん はなが さいたんだ\pそしたら きのみも たくさん できた!\pはい!\nこれ あげる{EOS}"
 	.if (. - gText_Rom_26388C) != 0x3c
 	.error "gText_Rom_26388C must retain its original byte length"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_26388C: @ 0x0826388C
 	@ data/text/berries.inc:26 Route111_Text_GoingToTryToMakeDifferentColorBerries
 	.globl gText_Rom_2638C8
 gText_Rom_2638C8: @ 0x082638C8
-	.string "がんばって いろんな いろの\nきのみを そだてるんだ!\l{STR_VAR_1}も がんばってね!$"
+	.string "がんばって いろんな いろの\nきのみを そだてるんだ!\l{STR_VAR_1}も がんばってね!{EOS}"
 	.if (. - gText_Rom_2638C8) > 0x28
 	.error "gText_Rom_2638C8 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_2638C8: @ 0x082638C8
 	@ data/text/berries.inc:31 Route111_Text_WhatColorBerriesToLookForToday
 	.globl gText_Rom_2638F0
 gText_Rom_2638F0: @ 0x082638F0
-	.string "きょうは なにいろの きのみを\nさがそっかなー$"
+	.string "きょうは なにいろの きのみを\nさがそっかなー{EOS}"
 	.if (. - gText_Rom_2638F0) > 0x18
 	.error "gText_Rom_2638F0 may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_2638F0: @ 0x082638F0
 	@ data/text/berries.inc:35 Route114_Text_LoveUsingBerryCrushShareBerry
 	.globl gText_Rom_263908
 gText_Rom_263908: @ 0x08263908
-	.string "きのみクラッシュが だいすきだから\nきのみを あつめているんだ\pよかったら きみにも わけて あげるよ!$"
+	.string "きのみクラッシュが だいすきだから\nきのみを あつめているんだ\pよかったら きみにも わけて あげるよ!{EOS}"
 	.if (. - gText_Rom_263908) > 0x35
 	.error "gText_Rom_263908 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_263908: @ 0x08263908
 	@ data/text/berries.inc:40 Route114_Text_TryBerryCrushWithFriends
 	.globl gText_Rom_26393D
 gText_Rom_26393D: @ 0x0826393D
-	.string "きみも ともだちと\nきのみクラッシュ やってみなよ!$"
+	.string "きみも ともだちと\nきのみクラッシュ やってみなよ!{EOS}"
 	.if (. - gText_Rom_26393D) > 0x1b
 	.error "gText_Rom_26393D may not grow beyond its original slot"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_26393D: @ 0x0826393D
 	@ data/text/berries.inc:44 Route114_Text_FunToThinkAboutBerries
 	.globl gText_Rom_263958
 gText_Rom_263958: @ 0x08263958
-	.string "どの きのみを うめるか?\nきのみは つかうのか ふやすのか?\pって なやむのも また たのしいよ$"
+	.string "どの きのみを うめるか?\nきのみは つかうのか ふやすのか?\pって なやむのも また たのしいよ{EOS}"
 	.if (. - gText_Rom_263958) > 0x32
 	.error "gText_Rom_263958 may not grow beyond its original slot"
 	.endif
@@ -100,7 +100,7 @@ gText_Rom_263958: @ 0x08263958
 	@ data/text/berries.inc:49 Route120_Text_BerriesExpressionOfLoveIsntIt
 	.globl gText_Rom_26398A
 gText_Rom_26398A: @ 0x0826398A
-	.string "ひかりを いっぱい あびて\nそだつ きのみたち…\pそして きのみが げんきに そだつように\nじょうろで みずを あげる わたしたち…\pこれって あい だよね?$"
+	.string "ひかりを いっぱい あびて\nそだつ きのみたち…\pそして きのみが げんきに そだつように\nじょうろで みずを あげる わたしたち…\pこれって あい だよね?{EOS}"
 	.if (. - gText_Rom_26398A) > 0x50
 	.error "gText_Rom_26398A may not grow beyond its original slot"
 	.endif
@@ -112,7 +112,7 @@ gText_Rom_26398A: @ 0x0826398A
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2639DA
 gText_Rom_2639DA: @ 0x082639DA
-	.string "うん うん!\nやっぱ わかるひとには わかるよね\pこれ あげる$"
+	.string "うん うん!\nやっぱ わかるひとには わかるよね\pこれ あげる{EOS}"
 	.if (. - gText_Rom_2639DA) != 0x20
 	.error "gText_Rom_2639DA must retain its original byte length"
 	.endif
@@ -123,7 +123,7 @@ gText_Rom_2639DA: @ 0x082639DA
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2639FA
 gText_Rom_2639FA: @ 0x082639FA
-	.string "そっか……\nでも ちがうと かんじることも たいせつだね\pこれ あげる$"
+	.string "そっか……\nでも ちがうと かんじることも たいせつだね\pこれ あげる{EOS}"
 	.if (. - gText_Rom_2639FA) != 0x24
 	.error "gText_Rom_2639FA must retain its original byte length"
 	.endif
@@ -133,7 +133,7 @@ gText_Rom_2639FA: @ 0x082639FA
 	@ data/text/berries.inc:66 Route120_Text_BerryIsRareRaiseItWithCare
 	.globl gText_Rom_263A1E
 gText_Rom_263A1E: @ 0x08263A1E
-	.string "その きのみは めずらしいもの らしいから\nたいせつに そだててね!$"
+	.string "その きのみは めずらしいもの らしいから\nたいせつに そだててね!{EOS}"
 	.if (. - gText_Rom_263A1E) > 0x23
 	.error "gText_Rom_263A1E may not grow beyond its original slot"
 	.endif
@@ -144,7 +144,7 @@ gText_Rom_263A1E: @ 0x08263A1E
 	@ data/text/berries.inc:70 Route120_Text_IllGetMoreBerriesFromBerryMaster
 	.globl gText_Rom_263A41
 gText_Rom_263A41: @ 0x08263A41
-	.string "また きのみめいじんに もらって こようっと$"
+	.string "また きのみめいじんに もらって こようっと{EOS}"
 	.if (. - gText_Rom_263A41) > 0x17
 	.error "gText_Rom_263A41 may not grow beyond its original slot"
 	.endif
@@ -155,7 +155,7 @@ gText_Rom_263A41: @ 0x08263A41
 	@ data/text/berries.inc:73 LilycoveCity_Text_BerrySuitsYou
 	.globl gText_Rom_263A58
 gText_Rom_263A58: @ 0x08263A58
-	.string "やっぱり\pわたしに スーツが にあうように\nうみには しおかぜが にあうな\lそして きみには きのみが にあいそうだ……\pなんでだろうね?$"
+	.string "やっぱり\pわたしに スーツが にあうように\nうみには しおかぜが にあうな\lそして きみには きのみが にあいそうだ……\pなんでだろうね?{EOS}"
 	.if (. - gText_Rom_263A58) > 0x46
 	.error "gText_Rom_263A58 may not grow beyond its original slot"
 	.endif

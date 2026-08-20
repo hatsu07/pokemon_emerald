@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity/scripts.inc:1525 SootopolisCity_Text_DazzledByMentor
 	.globl gText_Rom_1E3943
 gText_Rom_1E3943: @ 0x081E3943
-	.string "ミクリ『わたしの ししょうの\nかれい かつ ゆうがな たたかいぶりに\lきっと きみは おどろく だろうよ!$"
+	.string "ミクリ『わたしの ししょうの\nかれい かつ ゆうがな たたかいぶりに\lきっと きみは おどろく だろうよ!{EOS}"
 	.if (. - gText_Rom_1E3943) > 0x36
 	.error "gText_Rom_1E3943 may not grow beyond its original slot"
 	.endif

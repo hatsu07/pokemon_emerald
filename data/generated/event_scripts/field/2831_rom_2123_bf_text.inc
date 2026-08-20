@@ -1,7 +1,7 @@
 	@ field-script:0x212323 FieldScriptText_2123BF
 	.globl gText_Rom_2123BF
 gText_Rom_2123BF: @ 0x082123BF
-	.string "きみも　カセキを　みつけたんだね……\nすてき……　うっとり　しちゃうよ……\pきみ　その　カセキ　どうするの……？\pきいた　はなしでは　デボンでは\nカセキを　ポケモンに　いきかえらせる\lけんきゅうを　している　そうだよ……\pぼくは　カセキが　すきだから\nそんなこと　しないけどね……$"
+	.string "きみも　カセキを　みつけたんだね……\nすてき……　うっとり　しちゃうよ……\pきみ　その　カセキ　どうするの……？\pきいた　はなしでは　デボンでは\nカセキを　ポケモンに　いきかえらせる\lけんきゅうを　している　そうだよ……\pぼくは　カセキが　すきだから\nそんなこと　しないけどね……{EOS}"
 	.if (. - gText_Rom_2123BF) > 0x8d
 	.error "gText_Rom_2123BF may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ field-script:0x24172F FieldScriptText_241B90
 	.globl gText_Rom_241B90
 gText_Rom_241B90: @ 0x08241B90
-	.string "いじょう　きしょうは\nもう　かんそく　されなく　なりました\pたまに　あめが　ふっても\nそれは　めぐみのあめと　いえるでしょう！$"
+	.string "いじょう　きしょうは\nもう　かんそく　されなく　なりました\pたまに　あめが　ふっても\nそれは　めぐみのあめと　いえるでしょう！{EOS}"
 	.if (. - gText_Rom_241B90) > 0x40
 	.error "gText_Rom_241B90 may not grow beyond its original slot"
 	.endif

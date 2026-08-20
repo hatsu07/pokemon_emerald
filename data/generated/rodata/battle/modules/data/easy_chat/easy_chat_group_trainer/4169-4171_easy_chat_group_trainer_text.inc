@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_trainer.h:88 easy_chat_group_trainer_line_88 (+7 aliases)
 	.globl gText_Rom_5C8FA7
 gText_Rom_5C8FA7: @ 0x085C8FA7
-	.string "ポケモン$"
+	.string "ポケモン{EOS}"
 	.if (. - gText_Rom_5C8FA7) > 0x5
 	.error "gText_Rom_5C8FA7 may not grow beyond its original slot"
 	.endif
@@ -11,7 +11,7 @@ gText_Rom_5C8FA7: @ 0x085C8FA7
 	.globl gText_Rom_5C8FAC
 gText_Rom_5C8FAC: @ 0x085C8FAC
 	@ Decoded text from ROM range: offset=0x5C8FAC, size=0x7
-	.string "？？？,？m$"
+	.string "？？？,？m{EOS}"
 	@ pret/pokeemerald-jp direct xref for 0x085C8FB3: pokedex.s: sub_080BE1C8
 	.globl gPokedexData_085C8FB3
 gPokedexData_085C8FB3: @ 0x085C8FB3
@@ -26,7 +26,7 @@ gEasyChatRecord_Rom_5C8FBB: @ 0x085C8FBB
 	@ src/data/easy_chat/easy_chat_group_trainer.h:88 easy_chat_group_trainer_line_88 (+7 aliases)
 	.globl gText_Rom_5C8FC0
 gText_Rom_5C8FC0: @ 0x085C8FC0
-	.string "ポケモン$"
+	.string "ポケモン{EOS}"
 	.if (. - gText_Rom_5C8FC0) > 0x5
 	.error "gText_Rom_5C8FC0 may not grow beyond its original slot"
 	.endif

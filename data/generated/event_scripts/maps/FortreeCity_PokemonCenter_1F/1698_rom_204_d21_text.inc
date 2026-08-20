@@ -1,7 +1,7 @@
 	@ data/maps/FortreeCity_PokemonCenter_1F/scripts.inc:36 FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav
 	.globl gText_Rom_204D21
 gText_Rom_204D21: @ 0x08204D21
-	.string "おっ ポケナビ もってるな!\nおれと おんなじ だ\pポケナビの エントリーコール つかうと\nもういちど しょうぶ したがってる\lトレーナーが わかったり\lいつでも はなしが できるってのが\lすぐれもの だよな! さすが デボンだぜ!$"
+	.string "おっ ポケナビ もってるな!\nおれと おんなじ だ\pポケナビの エントリーコール つかうと\nもういちど しょうぶ したがってる\lトレーナーが わかったり\lいつでも はなしが できるってのが\lすぐれもの だよな! さすが デボンだぜ!{EOS}"
 	.if (. - gText_Rom_204D21) > 0x75
 	.error "gText_Rom_204D21 may not grow beyond its original slot"
 	.endif

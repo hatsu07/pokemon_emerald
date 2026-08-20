@@ -1,7 +1,7 @@
 	@ data/maps/FortreeCity_Mart/scripts.inc:46 FortreeCity_Mart_Text_RareCandyMakesMonGrow
 	.globl gText_Rom_204E70
 gText_Rom_204E70: @ 0x08204E70
-	.string "ふしぎなアメを あげると\nポケモン いっきに そだって\lレベルが あがっちゃうんだ!$"
+	.string "ふしぎなアメを あげると\nポケモン いっきに そだって\lレベルが あがっちゃうんだ!{EOS}"
 	.if (. - gText_Rom_204E70) > 0x2b
 	.error "gText_Rom_204E70 may not grow beyond its original slot"
 	.endif

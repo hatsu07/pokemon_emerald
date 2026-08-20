@@ -1,7 +1,7 @@
 	@ field-script:0x1EC46F FieldScriptText_1EC7CD
 	.globl gText_Rom_1EC7CD
 gText_Rom_1EC7CD: @ 0x081EC7CD
-	.string "「ポケモン　そだてや」\nあなたの　ポケモン　そだてます$"
+	.string "「ポケモン　そだてや」\nあなたの　ポケモン　そだてます{EOS}"
 	.if (. - gText_Rom_1EC7CD) > 0x1c
 	.error "gText_Rom_1EC7CD may not grow beyond its original slot"
 	.endif

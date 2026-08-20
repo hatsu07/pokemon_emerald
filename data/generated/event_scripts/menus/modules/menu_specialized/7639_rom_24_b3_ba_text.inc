@@ -1,7 +1,7 @@
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription
 	.globl gText_Rom_24B3BA
 gText_Rom_24B3BA: @ 0x0824B3BA
-	.string "いつもより　うまく　いった！$"
+	.string "いつもより　うまく　いった！{EOS}"
 	.if (. - gText_Rom_24B3BA) > 0xf
 	.error "gText_Rom_24B3BA may not grow beyond its original slot"
 	.endif

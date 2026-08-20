@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:761 Route110_Text_BenjaminRematchDefeated (+1 aliases)
 	.globl gText_Rom_25B4C9
 gText_Rom_25B4C9: @ 0x0825B4C9
-	.string "べつに あせってないけど\nなぜだか まけて しまうな……$"
+	.string "べつに あせってないけど\nなぜだか まけて しまうな……{EOS}"
 	.if (. - gText_Rom_25B4C9) > 0x1d
 	.error "gText_Rom_25B4C9 may not grow beyond its original slot"
 	.endif

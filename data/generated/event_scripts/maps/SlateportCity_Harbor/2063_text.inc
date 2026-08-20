@@ -1,7 +1,7 @@
 	@ data/maps/SlateportCity_Harbor/scripts.inc:383 SlateportCity_Harbor_Text_FerryServiceUnavailable
 	.globl gText_Rom_209BC5
 gText_Rom_209BC5: @ 0x08209BC5
-	.string "えっ? ふね ですか?\pもうしわけ ございません げんざい\nれんらくせんは ないんです……$"
+	.string "えっ? ふね ですか?\pもうしわけ ございません げんざい\nれんらくせんは ないんです……{EOS}"
 	.if (. - gText_Rom_209BC5) > 0x2e
 	.error "gText_Rom_209BC5 may not grow beyond its original slot"
 	.endif

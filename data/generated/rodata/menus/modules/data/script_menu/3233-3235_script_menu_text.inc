@@ -1,7 +1,7 @@
 	@ src/data/script_menu.h:770 script_menu_line_770
 	.globl gText_Rom_5AA80C
 gText_Rom_5AA80C: @ 0x085AA80C
-	.string "かった！$"
+	.string "かった！{EOS}"
 	.if (. - gText_Rom_5AA80C) > 0x5
 	.error "gText_Rom_5AA80C may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5AA80C: @ 0x085AA80C
 	.2byte 0x13FD, 0x0019, 0x1AFD, 0xFE44, 0x1F03, 0x0008, 0x1F07, 0x1527
 	.globl gText_Rom_5AA821
 gText_Rom_5AA821: @ 0x085AA821
-	.string "かった！$"
+	.string "かった！{EOS}"
 	.if (. - gText_Rom_5AA821) > 0x5
 	.error "gText_Rom_5AA821 may not grow beyond its original slot"
 	.endif

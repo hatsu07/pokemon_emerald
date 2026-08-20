@@ -1,7 +1,7 @@
 	@ field-script:0x247020 FieldScriptText_243D1C
 	.globl gText_Rom_243D1C
 gText_Rom_243D1C: @ 0x08243D1C
-	.string "ちょうせいちゅうの　ようだ$"
+	.string "ちょうせいちゅうの　ようだ{EOS}"
 	.if (. - gText_Rom_243D1C) > 0xe
 	.error "gText_Rom_243D1C may not grow beyond its original slot"
 	.endif

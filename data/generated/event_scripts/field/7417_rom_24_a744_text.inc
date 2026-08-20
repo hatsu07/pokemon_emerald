@@ -1,7 +1,7 @@
 	@ field-script:0x206EDA FieldScriptText_24A744
 	.globl gText_Rom_24A744
 gText_Rom_24A744: @ 0x0824A744
-	.string "コンテストに\nさんか　しますか？$"
+	.string "コンテストに\nさんか　しますか？{EOS}"
 	.if (. - gText_Rom_24A744) > 0x11
 	.error "gText_Rom_24A744 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:512 Route108_Text_JeromePostBattle
 	.globl gText_Rom_25ABAB
 gText_Rom_25ABAB: @ 0x0825ABAB
-	.string "うみの ポケモンと あそぶことも\nおよいでいる ときの たのしみだね!$"
+	.string "うみの ポケモンと あそぶことも\nおよいでいる ときの たのしみだね!{EOS}"
 	.if (. - gText_Rom_25ABAB) > 0x24
 	.error "gText_Rom_25ABAB may not grow beyond its original slot"
 	.endif

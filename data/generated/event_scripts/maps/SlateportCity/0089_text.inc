@@ -1,7 +1,7 @@
 	@ data/maps/SlateportCity/scripts.inc:1142 SlateportCity_Text_MostInvaluableExperience
 	.globl gText_Rom_1DD1C1
 gText_Rom_1DD1C1: @ 0x081DD1C1
-	.string "マリ『なるほど なるほど それは\nきちょうな たいけんを なさいましたね……$"
+	.string "マリ『なるほど なるほど それは\nきちょうな たいけんを なさいましたね……{EOS}"
 	.if (. - gText_Rom_1DD1C1) > 0x27
 	.error "gText_Rom_1DD1C1 may not grow beyond its original slot"
 	.endif

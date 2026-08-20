@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2723 Route125_Text_StanPostBattle
 	.globl gText_Rom_26079C
 gText_Rom_26079C: @ 0x0826079C
-	.string "タッツーの みりょくに まいって\nおれも およぐように なったんだー!$"
+	.string "タッツーの みりょくに まいって\nおれも およぐように なったんだー!{EOS}"
 	.if (. - gText_Rom_26079C) > 0x24
 	.error "gText_Rom_26079C may not grow beyond its original slot"
 	.endif

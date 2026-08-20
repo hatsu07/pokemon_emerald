@@ -1,7 +1,7 @@
 	@ data/maps/DewfordTown/scripts.inc:705 DewfordTown_Text_YeahDefinitionOfInRightNow
 	.globl gText_Rom_1E5649
 gText_Rom_1E5649: @ 0x081E5649
-	.string "そうだろ!\pやっぱり いまは\n『{STR_VAR_1}』 だよね!$"
+	.string "そうだろ!\pやっぱり いまは\n『{STR_VAR_1}』 だよね!{EOS}"
 	.if (. - gText_Rom_1E5649) > 0x19
 	.error "gText_Rom_1E5649 may not grow beyond its original slot"
 	.endif

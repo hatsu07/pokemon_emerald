@@ -1,7 +1,7 @@
 	@ data/maps/MtChimney/scripts.inc:761 MtChimney_Text_ShelbyDefeat (+2 aliases)
 	.globl gText_Rom_2158AF
 gText_Rom_2158AF: @ 0x082158AF
-	.string "おんや まぁ\nたいした もんだよ$"
+	.string "おんや まぁ\nたいした もんだよ{EOS}"
 	.if (. - gText_Rom_2158AF) > 0x11
 	.error "gText_Rom_2158AF may not grow beyond its original slot"
 	.endif

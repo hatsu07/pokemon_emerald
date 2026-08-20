@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_House2/scripts.inc:27 SootopolisCity_House2_Text_OughtToVisitAndSee
 	.globl gText_Rom_20F45E
 gText_Rom_20F45E: @ 0x0820F45E
-	.string "そうですか……\nいちど いかれては どうでしょう……$"
+	.string "そうですか……\nいちど いかれては どうでしょう……{EOS}"
 	.if (. - gText_Rom_20F45E) > 0x1b
 	.error "gText_Rom_20F45E may not grow beyond its original slot"
 	.endif

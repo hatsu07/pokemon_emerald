@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2558 Route123_Text_EdDefeat (+1 aliases)
 	.globl gText_Rom_25FFFB
 gText_Rom_25FFFB: @ 0x0825FFFB
-	.string "きみの ポケモンも いいねぃ$"
+	.string "きみの ポケモンも いいねぃ{EOS}"
 	.if (. - gText_Rom_25FFFB) > 0xf
 	.error "gText_Rom_25FFFB may not grow beyond its original slot"
 	.endif

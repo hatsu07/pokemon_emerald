@@ -1,7 +1,7 @@
 	@ src/pokenav_menu_handler_gfx.c:272 pokenav_menu_handler_gfx_line_272
 	.globl gText_Rom_5CB589
 gText_Rom_5CB589: @ 0x085CB589
-	.string "ホウエンちほうの マップを みます$"
+	.string "ホウエンちほうの マップを みます{EOS}"
 	.if (. - gText_Rom_5CB589) > 0x12
 	.error "gText_Rom_5CB589 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CB589: @ 0x085CB589
 	@ src/pokenav_menu_handler_gfx.c:273 pokenav_menu_handler_gfx_line_273
 	.globl gText_Rom_5CB59B
 gText_Rom_5CB59B: @ 0x085CB59B
-	.string "ポケモンを くわしく しらべます$"
+	.string "ポケモンを くわしく しらべます{EOS}"
 	.if (. - gText_Rom_5CB59B) > 0x11
 	.error "gText_Rom_5CB59B may not grow beyond its original slot"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_5CB59B: @ 0x085CB59B
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CB5AC
 gText_Rom_5CB5AC: @ 0x085CB5AC
-	.string "とうろくした ひとを よびだします$"
+	.string "とうろくした ひとを よびだします{EOS}"
 	.if (. - gText_Rom_5CB5AC) != 0x12
 	.error "gText_Rom_5CB5AC must retain its original byte length"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5CB5AC: @ 0x085CB5AC
 	@ src/pokenav_menu_handler_gfx.c:275 pokenav_menu_handler_gfx_line_275
 	.globl gText_Rom_5CB5BE
 gText_Rom_5CB5BE: @ 0x085CB5BE
-	.string "てにいれた きねんリボンを みます$"
+	.string "てにいれた きねんリボンを みます{EOS}"
 	.if (. - gText_Rom_5CB5BE) > 0x12
 	.error "gText_Rom_5CB5BE may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5CB5BE: @ 0x085CB5BE
 	@ src/pokenav_menu_handler_gfx.c:276 pokenav_menu_handler_gfx_line_276
 	.globl gText_Rom_5CB5D0
 gText_Rom_5CB5D0: @ 0x085CB5D0
-	.string "ポケナビを しまいます$"
+	.string "ポケナビを しまいます{EOS}"
 	.if (. - gText_Rom_5CB5D0) > 0xc
 	.error "gText_Rom_5CB5D0 may not grow beyond its original slot"
 	.endif
@@ -57,7 +57,7 @@ gText_Rom_5CB5D0: @ 0x085CB5D0
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CB5DC
 gText_Rom_5CB5DC: @ 0x085CB5DC
-	.string "リボンを もっている ポケモンが いません$"
+	.string "リボンを もっている ポケモンが いません{EOS}"
 	.if (. - gText_Rom_5CB5DC) != 0x16
 	.error "gText_Rom_5CB5DC must retain its original byte length"
 	.endif

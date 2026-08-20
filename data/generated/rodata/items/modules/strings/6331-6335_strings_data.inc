@@ -1,7 +1,7 @@
 	@ src/strings.c:770 gText_PressingSpeed
 	.globl gText_Rom_5CC9F4
 gText_Rom_5CC9F4: @ 0x085CC9F4
-	.string "おすはやさ$"
+	.string "おすはやさ{EOS}"
 	.if (. - gText_Rom_5CC9F4) > 0x6
 	.error "gText_Rom_5CC9F4 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5CC9F4: @ 0x085CC9F4
 	@ Preserve exact byte length: internal label.
 	.globl gText_Rom_5CC9FA
 gText_Rom_5CC9FA: @ 0x085CC9FA
-	.string "  サラサラぐあい$"
+	.string "  サラサラぐあい{EOS}"
 	.if (. - gText_Rom_5CC9FA) != 0xa
 	.error "gText_Rom_5CC9FA must retain its original byte length"
 	.endif
@@ -28,7 +28,7 @@ gBerryCrushData_085CCA04: @ 0x085CCA04
 	.byte 0xFD, 0x02, 0xFF
 	.globl gText_Rom_5CCA07
 gText_Rom_5CCA07: @ 0x085CCA07
-	.string " ふん$"
+	.string " ふん{EOS}"
 	.if (. - gText_Rom_5CCA07) != 0x4
 	.error "gText_Rom_5CCA07 must retain its original byte length"
 	.endif

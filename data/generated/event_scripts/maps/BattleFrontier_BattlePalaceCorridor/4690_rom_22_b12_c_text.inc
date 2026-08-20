@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc:146 BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons
 	.globl gText_Rom_22B12C
 gText_Rom_22B12C: @ 0x0822B12C
-	.string "おお…… おぬしと ポケモンの あいだに\nつよい こころの きずなが みえる……$"
+	.string "おお…… おぬしと ポケモンの あいだに\nつよい こころの きずなが みえる……{EOS}"
 	.if (. - gText_Rom_22B12C) > 0x29
 	.error "gText_Rom_22B12C may not grow beyond its original slot"
 	.endif

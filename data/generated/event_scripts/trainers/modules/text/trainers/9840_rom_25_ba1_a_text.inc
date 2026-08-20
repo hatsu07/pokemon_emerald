@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:893 Route110_Text_KalebIntro (+1 aliases)
 	.globl gText_Rom_25BA1A
 gText_Rom_25BA1A: @ 0x0825BA1A
-	.string "かわいい ポケモンたちが\nたすけあう ところは かわいいぞーーっ!$"
+	.string "かわいい ポケモンたちが\nたすけあう ところは かわいいぞーーっ!{EOS}"
 	.if (. - gText_Rom_25BA1A) > 0x22
 	.error "gText_Rom_25BA1A may not grow beyond its original slot"
 	.endif

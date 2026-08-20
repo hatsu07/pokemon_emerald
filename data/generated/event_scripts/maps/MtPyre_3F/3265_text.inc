@@ -1,7 +1,7 @@
 	@ data/maps/MtPyre_3F/scripts.inc:53 MtPyre_3F_Text_KaylaDefeat (+1 aliases)
 	.globl gText_Rom_216715
 gText_Rom_216715: @ 0x08216715
-	.string "あっさり まけたわっ……!$"
+	.string "あっさり まけたわっ……!{EOS}"
 	.if (. - gText_Rom_216715) > 0xe
 	.error "gText_Rom_216715 may not grow beyond its original slot"
 	.endif

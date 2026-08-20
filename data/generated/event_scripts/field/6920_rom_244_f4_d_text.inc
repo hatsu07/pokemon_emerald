@@ -1,7 +1,7 @@
 	@ field-script:0x244DEA FieldScriptText_244F4D
 	.globl gText_Rom_244F4D
 gText_Rom_244F4D: @ 0x08244F4D
-	.string "{0xFD}{0x02}の　めが　でてきた！$"
+	.string "{0xFD}{0x02}の　めが　でてきた！{EOS}"
 	.if (. - gText_Rom_244F4D) > 0xd
 	.error "gText_Rom_244F4D may not grow beyond its original slot"
 	.endif

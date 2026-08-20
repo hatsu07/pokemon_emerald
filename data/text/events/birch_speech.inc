@@ -7,7 +7,7 @@
 	.globl gText_Birch_Welcome
 gText_Birch_Welcome::
 	@ 最初のセリフ（変更箇所）。オリジナル: いやー　おまたせ　おまたせ！
-	.string "いやー　おまたせ　おまたせ！\pポケットモンスターの　せかいへ\nようこそ！\pわたしの　なまえは　オダマキ！\pでも　みんな　からは\n「ポケモンはかせ」と　よばれて　いるよ！\p$"
+	.string "いやー　おまたせ　おまたせ！\pポケットモンスターの　せかいへ\nようこそ！\pわたしの　なまえは　オダマキ！\pでも　みんな　からは\n「ポケモンはかせ」と　よばれて　いるよ！\p{EOS}"
 	.if (. - gText_Birch_Welcome) > 0x56
 	.error "gText_Birch_Welcome may not grow beyond its original slot"
 	.endif
@@ -17,7 +17,7 @@ gText_Birch_Welcome::
 
 	.globl gText_Birch_Pokemon
 gText_Birch_Pokemon::
-	.string "ポケットモンスター\n……すなわち　ポケモン\p$"
+	.string "ポケットモンスター\n……すなわち　ポケモン\p{EOS}"
 	.if (. - gText_Birch_Pokemon) > 0x17
 	.error "gText_Birch_Pokemon may not grow beyond its original slot"
 	.endif
@@ -28,7 +28,7 @@ gText_Birch_Pokemon::
 	.globl gText_Birch_MainSpeech
 	.globl gText_Birch_MainSpeech
 gText_Birch_MainSpeech::
-	.string "この　せかいには\nポケモンと　よばれる　いきもの　たちが\lいたるところに　すんでいる！\pわれわれ　にんげんは\nポケモンと　なかよく　あそんだり\lたすけあって　しごとを　したり\pときには　ちからを　あわせて\nたたかったり　しながら\pいっしょに　くらして　いるんだ！\p……しかし　われわれは　ポケモンの\nすべてを　しっている　わけでは　ない\pポケモンの　ひみつは\nまだまだ　いっぱい　ある！\pその　ひみつを　ときあかす　ため\nわたしは　けんきゅうを　つづけている\lという　わけなんだ！\p$"
+	.string "この　せかいには\nポケモンと　よばれる　いきもの　たちが\lいたるところに　すんでいる！\pわれわれ　にんげんは\nポケモンと　なかよく　あそんだり\lたすけあって　しごとを　したり\pときには　ちからを　あわせて\nたたかったり　しながら\pいっしょに　くらして　いるんだ！\p……しかし　われわれは　ポケモンの\nすべてを　しっている　わけでは　ない\pポケモンの　ひみつは\nまだまだ　いっぱい　ある！\pその　ひみつを　ときあかす　ため\nわたしは　けんきゅうを　つづけている\lという　わけなんだ！\p{EOS}"
 	.if (. - gText_Birch_MainSpeech) > 0xf2
 	.error "gText_Birch_MainSpeech may not grow beyond its original slot"
 	.endif
@@ -39,7 +39,7 @@ gText_Birch_MainSpeech::
 	.globl gText_Birch_AndYouAre
 	.globl gText_Birch_AndYouAre
 gText_Birch_AndYouAre::
-	.string "ところで　きみは……？$"
+	.string "ところで　きみは……？{EOS}"
 	.if (. - gText_Birch_AndYouAre) > 0xc
 	.error "gText_Birch_AndYouAre may not grow beyond its original slot"
 	.endif
@@ -50,7 +50,7 @@ gText_Birch_AndYouAre::
 	.globl gText_Birch_BoyOrGirl
 	.globl gText_Birch_BoyOrGirl
 gText_Birch_BoyOrGirl::
-	.string "おとこのこ？\nそれとも　おんなのこ？$"
+	.string "おとこのこ？\nそれとも　おんなのこ？{EOS}"
 	.if (. - gText_Birch_BoyOrGirl) > 0x13
 	.error "gText_Birch_BoyOrGirl may not grow beyond its original slot"
 	.endif
@@ -61,7 +61,7 @@ gText_Birch_BoyOrGirl::
 	.globl gText_Birch_WhatsYourName
 	.globl gText_Birch_WhatsYourName
 gText_Birch_WhatsYourName::
-	.string "なまえも　おしえて　くれるかい！$"
+	.string "なまえも　おしえて　くれるかい！{EOS}"
 	.if (. - gText_Birch_WhatsYourName) > 0x11
 	.error "gText_Birch_WhatsYourName may not grow beyond its original slot"
 	.endif
@@ -72,7 +72,7 @@ gText_Birch_WhatsYourName::
 	.globl gText_Birch_SoItsPlayer
 	.globl gText_Birch_SoItsPlayer
 gText_Birch_SoItsPlayer::
-	.string "{PLAYER}{KUN}　だね？$"
+	.string "{PLAYER}{KUN}　だね？{EOS}"
 	.if (. - gText_Birch_SoItsPlayer) > 0x9
 	.error "gText_Birch_SoItsPlayer may not grow beyond its original slot"
 	.endif
@@ -83,7 +83,7 @@ gText_Birch_SoItsPlayer::
 	.globl gText_Birch_YourePlayer
 	.globl gText_Birch_YourePlayer
 gText_Birch_YourePlayer::
-	.string "……そうか！\pきみが　こんど　わたしの　すむ　まち\nミシロタウンに　ひっこして　くる\l{PLAYER}{KUN}　だったのか！\p$"
+	.string "……そうか！\pきみが　こんど　わたしの　すむ　まち\nミシロタウンに　ひっこして　くる\l{PLAYER}{KUN}　だったのか！\p{EOS}"
 	.if (. - gText_Birch_YourePlayer) > 0x38
 	.error "gText_Birch_YourePlayer may not grow beyond its original slot"
 	.endif
@@ -94,7 +94,7 @@ gText_Birch_YourePlayer::
 	.globl gText_Birch_AreYouReady
 	.globl gText_Birch_AreYouReady
 gText_Birch_AreYouReady::
-	.string "よーし　じゅんびは　いいかい？\pこれから　きみ　だけの　ものがたりが\nはじまろうと　している！\pゆめと　ぼうけんと　であいに　みちた\nポケットモンスターの　せかいへ\lゆうきを　もって　とびこんで　みてくれ！\pでは　また　あとで　あおう！\nけんきゅうじょで　まって　いるぞ！\p$"
+	.string "よーし　じゅんびは　いいかい？\pこれから　きみ　だけの　ものがたりが\nはじまろうと　している！\pゆめと　ぼうけんと　であいに　みちた\nポケットモンスターの　せかいへ\lゆうきを　もって　とびこんで　みてくれ！\pでは　また　あとで　あおう！\nけんきゅうじょで　まって　いるぞ！\p{EOS}"
 	.if (. - gText_Birch_AreYouReady) > 0x8b
 	.error "gText_Birch_AreYouReady may not grow beyond its original slot"
 	.endif

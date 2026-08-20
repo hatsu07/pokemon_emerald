@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_trendy_saying.h:196 easy_chat_group_trendy_saying_line_196
 	.globl gText_Rom_578989
 gText_Rom_578989: @ 0x08578989
-	.string "レッツラゴー$"
+	.string "レッツラゴー{EOS}"
 	.if (. - gText_Rom_578989) > 0x7
 	.error "gText_Rom_578989 may not grow beyond its original slot"
 	.endif

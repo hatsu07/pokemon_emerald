@@ -1,7 +1,7 @@
 	@ src/data/moves_info.h:504 moves_info_line_504
 	.globl gText_Rom_5E847C
 gText_Rom_5E847C: @ 0x085E847C
-	.string "しめつける$"
+	.string "しめつける{EOS}"
 	.if (. - gText_Rom_5E847C) > 0x6
 	.error "gText_Rom_5E847C may not grow beyond its original slot"
 	.endif

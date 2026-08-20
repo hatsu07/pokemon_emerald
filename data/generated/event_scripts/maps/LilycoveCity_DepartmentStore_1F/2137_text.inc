@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:150 LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill
 	.globl gText_Rom_20A7DA
 gText_Rom_20A7DA: @ 0x0820A7DA
-	.string "コンテストで ゆうしょうした ごほうびに\nマリルリに なにか かって あげるんだよ！$"
+	.string "コンテストで ゆうしょうした ごほうびに\nマリルリに なにか かって あげるんだよ！{EOS}"
 	.if (. - gText_Rom_20A7DA) > 0x2b
 	.error "gText_Rom_20A7DA may not grow beyond its original slot"
 	.endif

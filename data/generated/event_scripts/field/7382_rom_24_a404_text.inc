@@ -1,7 +1,7 @@
 	@ field-script:0x2499B4 FieldScriptText_24A404
 	.globl gText_Rom_24A404
 gText_Rom_24A404: @ 0x0824A404
-	.string "しかい『おめでとう　ございます！\nまた　さんか　してくださいね！$"
+	.string "しかい『おめでとう　ございます！\nまた　さんか　してくださいね！{EOS}"
 	.if (. - gText_Rom_24A404) > 0x21
 	.error "gText_Rom_24A404 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/MossdeepCity_PokemonCenter_2F/scripts.inc:25 MossdeepCity_PokemonCenter_2F_Text_Woman5
 	.globl gText_Rom_20C57A
 gText_Rom_20C57A: @ 0x0820C57A
-	.string "つうしん たいせんで かちまくって\nみんなに あたしの みりょくを\lアピールしたら ファンが ふえちゃうかな!$"
+	.string "つうしん たいせんで かちまくって\nみんなに あたしの みりょくを\lアピールしたら ファンが ふえちゃうかな!{EOS}"
 	.if (. - gText_Rom_20C57A) > 0x38
 	.error "gText_Rom_20C57A may not grow beyond its original slot"
 	.endif

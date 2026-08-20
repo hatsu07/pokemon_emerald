@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:521 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading (+7 aliases)
 	.globl gText_Rom_2758F8
 gText_Rom_2758F8: @ 0x082758F8
-	.string "どの せつめいを よみますか?$"
+	.string "どの せつめいを よみますか?{EOS}"
 	.if (. - gText_Rom_2758F8) > 0x10
 	.error "gText_Rom_2758F8 may not grow beyond its original slot"
 	.endif

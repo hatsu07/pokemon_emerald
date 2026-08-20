@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc:1092 BattleFrontier_BattleDomeBattleRoom_Text_SeeYourFrontierPass
 	.globl gText_Rom_2299DB
 gText_Rom_2299DB: @ 0x082299DB
-	.string "ヒース『きまり だからねっ!\nキミの フロンティアパスを かしてっ!!$"
+	.string "ヒース『きまり だからねっ!\nキミの フロンティアパスを かしてっ!!{EOS}"
 	.if (. - gText_Rom_2299DB) > 0x24
 	.error "gText_Rom_2299DB may not grow beyond its original slot"
 	.endif

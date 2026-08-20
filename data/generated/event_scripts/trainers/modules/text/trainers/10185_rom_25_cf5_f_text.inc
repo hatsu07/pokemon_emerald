@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1391 Route114_Text_TyraNotEnoughMons (+1 aliases)
 	.globl gText_Rom_25CF5F
 gText_Rom_25CF5F: @ 0x0825CF5F
-	.string "カヨ『うふふ!\nあたしたちと しょうぶ するなら\lポケモン いっぴきじゃ ダメなのよ!$"
+	.string "カヨ『うふふ!\nあたしたちと しょうぶ するなら\lポケモン いっぴきじゃ ダメなのよ!{EOS}"
 	.if (. - gText_Rom_25CF5F) > 0x2c
 	.error "gText_Rom_25CF5F may not grow beyond its original slot"
 	.endif

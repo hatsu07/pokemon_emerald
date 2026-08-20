@@ -1,7 +1,7 @@
 	@ asm/ereader_screen.s:535 sub_081D4704
 	.globl gText_Rom_5CCF2A
 gText_Rom_5CCF2A: @ 0x085CCF2A
-	.string "「ゲームボーイアドバンスとつうしん」\nを　せんたく　してください$"
+	.string "「ゲームボーイアドバンスとつうしん」\nを　せんたく　してください{EOS}"
 	.if (. - gText_Rom_5CCF2A) > 0x21
 	.error "gText_Rom_5CCF2A may not grow beyond its original slot"
 	.endif

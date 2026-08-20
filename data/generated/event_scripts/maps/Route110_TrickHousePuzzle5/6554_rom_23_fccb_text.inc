@@ -1,7 +1,7 @@
 	@ data/maps/Route110_TrickHousePuzzle5/scripts.inc:970 Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz3
 	.globl gText_Rom_23FCCB
 gText_Rom_23FCCB: @ 0x0823FCCB
-	.string "からくりニンギョウ 5ゴウ くいず!\pサイクリングロードの うえに\nトライアスリートは なんにん いた?$"
+	.string "からくりニンギョウ 5ゴウ くいず!\pサイクリングロードの うえに\nトライアスリートは なんにん いた?{EOS}"
 	.if (. - gText_Rom_23FCCB) > 0x35
 	.error "gText_Rom_23FCCB may not grow beyond its original slot"
 	.endif

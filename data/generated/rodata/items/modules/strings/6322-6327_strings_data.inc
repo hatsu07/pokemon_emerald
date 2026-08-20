@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CC9D9
 gText_Rom_5CC9D9: @ 0x085CC9D9
-	.string "   かい$"
+	.string "   かい{EOS}"
 	.if (. - gText_Rom_5CC9D9) != 0x6
 	.error "gText_Rom_5CC9D9 must retain its original byte length"
 	.endif
@@ -14,7 +14,7 @@ gText_Rom_5CC9D9: @ 0x085CC9D9
 	@ src/strings.c:768 gText_Var1Berry
 	.globl gText_Rom_5CC9E6
 gText_Rom_5CC9E6: @ 0x085CC9E6
-	.string "  {STR_VAR_1}のみ$"
+	.string "  {STR_VAR_1}のみ{EOS}"
 	.if (. - gText_Rom_5CC9E6) > 0x7
 	.error "gText_Rom_5CC9E6 may not grow beyond its original slot"
 	.endif
@@ -26,7 +26,7 @@ gText_Rom_5CC9E6: @ 0x085CC9E6
 	@ Preserve exact byte length: internal label, semantic suffix text pointer.
 	.globl gText_Rom_5CC9ED
 gText_Rom_5CC9ED: @ 0x085CC9ED
-	.string "   じかん$"
+	.string "   じかん{EOS}"
 	.if (. - gText_Rom_5CC9ED) != 0x7
 	.error "gText_Rom_5CC9ED must retain its original byte length"
 	.endif

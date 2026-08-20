@@ -1,7 +1,7 @@
 	@ src/strings.c:689 gText_WonContestsWFriends
 	.globl gText_Rom_5CC3D9
 gText_Rom_5CC3D9: @ 0x085CC3D9
-	.string "ともだちとコンテスト ゆうしょう$"
+	.string "ともだちとコンテスト ゆうしょう{EOS}"
 	.if (. - gText_Rom_5CC3D9) > 0x11
 	.error "gText_Rom_5CC3D9 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5CC3D9: @ 0x085CC3D9
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CC3EA
 gText_Rom_5CC3EA: @ 0x085CC3EA
-	.string "かちとった バトルポイント$"
+	.string "かちとった バトルポイント{EOS}"
 	.if (. - gText_Rom_5CC3EA) != 0xe
 	.error "gText_Rom_5CC3EA must retain its original byte length"
 	.endif
@@ -25,7 +25,7 @@ gText_Rom_5CC3EA: @ 0x085CC3EA
 	@ src/strings.c:691 gText_NumBP
 	.globl gText_Rom_5CC3F8
 gText_Rom_5CC3F8: @ 0x085CC3F8
-	.string "{STR_VAR_1}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}BP$"
+	.string "{STR_VAR_1}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}BP{EOS}"
 	.if (. - gText_Rom_5CC3F8) > 0xb
 	.error "gText_Rom_5CC3F8 may not grow beyond its original slot"
 	.endif

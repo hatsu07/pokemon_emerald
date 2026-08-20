@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1760 Route117_Text_MariaPostRematch
 	.globl gText_Rom_25DEC7
 gText_Rom_25DEC7: @ 0x0825DEC7
-	.string "あしたから また れんしゅう するから\nよかったら また しょうぶ してね!$"
+	.string "あしたから また れんしゅう するから\nよかったら また しょうぶ してね!{EOS}"
 	.if (. - gText_Rom_25DEC7) > 0x27
 	.error "gText_Rom_25DEC7 may not grow beyond its original slot"
 	.endif

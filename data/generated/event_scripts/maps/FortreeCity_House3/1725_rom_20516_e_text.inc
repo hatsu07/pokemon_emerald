@@ -1,7 +1,7 @@
 	@ data/maps/FortreeCity_House3/scripts.inc:15 FortreeCity_House3_Text_OhYouHavePokedex
 	.globl gText_Rom_20516E
 gText_Rom_20516E: @ 0x0820516E
-	.string "きみの もっている それ なに?\p…… …… ……\pへー ポケモンずかん っていうんだ?\nすごいねえ!$"
+	.string "きみの もっている それ なに?\p…… …… ……\pへー ポケモンずかん っていうんだ?\nすごいねえ!{EOS}"
 	.if (. - gText_Rom_20516E) > 0x34
 	.error "gText_Rom_20516E may not grow beyond its original slot"
 	.endif

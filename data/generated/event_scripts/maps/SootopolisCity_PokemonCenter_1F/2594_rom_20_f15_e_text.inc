@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc:55 SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends
 	.globl gText_Rom_20F15E
 gText_Rom_20F15E: @ 0x0820F15E
-	.string "ポケモンって\nあたしたちの ともだちじゃ…… ないの?\pどうして\nあんなふうに あばれて いるの?$"
+	.string "ポケモンって\nあたしたちの ともだちじゃ…… ないの?\pどうして\nあんなふうに あばれて いるの?{EOS}"
 	.if (. - gText_Rom_20F15E) > 0x32
 	.error "gText_Rom_20F15E may not grow beyond its original slot"
 	.endif

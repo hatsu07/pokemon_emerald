@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1649 Route116_Text_SarahPostBattle
 	.globl gText_Rom_25D9F8
 gText_Rom_25D9F8: @ 0x0825D9F8
-	.string "なにふじゆう ない くらし ですけど\nポケモンの ことだけは\lおもいどおりに なりません のね$"
+	.string "なにふじゆう ない くらし ですけど\nポケモンの ことだけは\lおもいどおりに なりません のね{EOS}"
 	.if (. - gText_Rom_25D9F8) > 0x30
 	.error "gText_Rom_25D9F8 may not grow beyond its original slot"
 	.endif

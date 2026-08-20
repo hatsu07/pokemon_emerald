@@ -1,7 +1,7 @@
 	@ data/maps/FortreeCity_House2/scripts.inc:62 FortreeCity_House2_Text_YouGuessedWrong
 	.globl gText_Rom_2050C0
 gText_Rom_2050C0: @ 0x082050C0
-	.string "ざんねん……\nはずれ じゃ……$"
+	.string "ざんねん……\nはずれ じゃ……{EOS}"
 	.if (. - gText_Rom_2050C0) > 0x10
 	.error "gText_Rom_2050C0 may not grow beyond its original slot"
 	.endif

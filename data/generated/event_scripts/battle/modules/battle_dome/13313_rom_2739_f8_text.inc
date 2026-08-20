@@ -1,7 +1,7 @@
 	@ src/battle_dome.c:868 battle_dome_line_868
 	.globl gText_Rom_2739F8
 gText_Rom_2739F8: @ 0x082739F8
-	.string "こんたいかいの へいきんてきな チーム。$"
+	.string "こんたいかいの へいきんてきな チーム。{EOS}"
 	.if (. - gText_Rom_2739F8) > 0x15
 	.error "gText_Rom_2739F8 may not grow beyond its original slot"
 	.endif

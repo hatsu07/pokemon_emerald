@@ -1,7 +1,7 @@
 	@ data/maps/MauvilleCity/scripts.inc:669 MauvilleCity_Text_BeenCheckingOutTV
 	.globl gText_Rom_1DE6DE
 gText_Rom_1DE6DE: @ 0x081DE6DE
-	.string "やあ!\nテレビは ちゃんと チェック してる?$"
+	.string "やあ!\nテレビは ちゃんと チェック してる?{EOS}"
 	.if (. - gText_Rom_1DE6DE) > 0x18
 	.error "gText_Rom_1DE6DE may not grow beyond its original slot"
 	.endif

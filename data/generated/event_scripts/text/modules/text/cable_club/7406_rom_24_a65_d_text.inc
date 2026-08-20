@@ -1,7 +1,7 @@
 	@ data/text/cable_club.inc:29 gText_PleaseWaitForLink
 	.globl gText_Rom_24A65D
 gText_Rom_24A65D: @ 0x0824A65D
-	.string "しょうしょう おまち ください\n……Bボタンで キャンセル$"
+	.string "しょうしょう おまち ください\n……Bボタンで キャンセル{EOS}"
 	.if (. - gText_Rom_24A65D) > 0x1e
 	.error "gText_Rom_24A65D may not grow beyond its original slot"
 	.endif
@@ -12,6 +12,6 @@ gText_Rom_24A65D: @ 0x0824A65D
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_0824A67B: @ 0x0824A67B
 EventText_JP_0824A67B: @ 0x0824A67B
-	.string "またの　さんかを　おまち　してます!$"
+	.string "またの　さんかを　おまち　してます!{EOS}"
 EventText_JP_0824A68E: @ 0x0824A68E
-	.string "つうしん　エラーです\nもう1ど　やりなおして　ください$"
+	.string "つうしん　エラーです\nもう1ど　やりなおして　ください{EOS}"

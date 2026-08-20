@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1187 Route113_Text_MadelineRematchIntro (+1 aliases)
 	.globl gText_Rom_25C6FB
 gText_Rom_25C6FB: @ 0x0825C6FB
-	.string "おひさしぶりね\nよろしかったら しょうぶ しません?$"
+	.string "おひさしぶりね\nよろしかったら しょうぶ しません?{EOS}"
 	.if (. - gText_Rom_25C6FB) > 0x1b
 	.error "gText_Rom_25C6FB may not grow beyond its original slot"
 	.endif

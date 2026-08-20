@@ -13,7 +13,7 @@ gText_Rom_25764E: @ 0x0825764E
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_082576A6: @ 0x082576A6
 EventText_JP_082576A6: @ 0x082576A6
-	.string "ややっ!\nその　ことばを　しっている　とは……\pという　ことは　きみも\nふしぎな　できごと　クラブの　なかま　だね!$"
+	.string "ややっ!\nその　ことばを　しっている　とは……\pという　ことは　きみも\nふしぎな　できごと　クラブの　なかま　だね!{EOS}"
 .globl EventScript_JP_082576E1
 EventScript_JP_082576E1: @ 0x082576E1
 	lock

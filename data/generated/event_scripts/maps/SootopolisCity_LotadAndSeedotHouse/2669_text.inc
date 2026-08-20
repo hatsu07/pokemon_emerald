@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:113 SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1 (+1 aliases)
 	.globl gText_Rom_20FC82
 gText_Rom_20FC82: @ 0x0820FC82
-	.string "{PLAYER}は\nきずぐすりを もらった!$"
+	.string "{PLAYER}は\nきずぐすりを もらった!{EOS}"
 	.if (. - gText_Rom_20FC82) > 0x11
 	.error "gText_Rom_20FC82 may not grow beyond its original slot"
 	.endif

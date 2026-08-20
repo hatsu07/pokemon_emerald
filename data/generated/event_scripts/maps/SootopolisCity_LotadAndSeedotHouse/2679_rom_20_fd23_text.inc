@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:153 SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory
 	.globl gText_Rom_20FD23
 gText_Rom_20FD23: @ 0x0820FD23
-	.string "しじょう さいだいの ハスボー!\n{STR_VAR_2}の {STR_VAR_3}cmのやつ!\pタネボーより おおきい ハスボー\nいつでも ぼしゅうちゅう!$"
+	.string "しじょう さいだいの ハスボー!\n{STR_VAR_2}の {STR_VAR_3}cmのやつ!\pタネボーより おおきい ハスボー\nいつでも ぼしゅうちゅう!{EOS}"
 	.if (. - gText_Rom_20FD23) > 0x3d
 	.error "gText_Rom_20FD23 may not grow beyond its original slot"
 	.endif

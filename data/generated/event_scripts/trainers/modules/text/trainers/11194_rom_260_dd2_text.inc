@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2873 Route126_Text_IsobelIntro (+1 aliases)
 	.globl gText_Rom_260DD2
 gText_Rom_260DD2: @ 0x08260DD2
-	.string "はなに かいすいが はいると\nすっごく つらいよね?$"
+	.string "はなに かいすいが はいると\nすっごく つらいよね?{EOS}"
 	.if (. - gText_Rom_260DD2) > 0x1b
 	.error "gText_Rom_260DD2 may not grow beyond its original slot"
 	.endif

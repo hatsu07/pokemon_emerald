@@ -1,7 +1,7 @@
 	@ field-script:0x245BC3 FieldScriptText_2450C8
 	.globl gText_Rom_2450C8
 gText_Rom_2450C8: @ 0x082450C8
-	.string "くさのかたまりを　どければ\nなかへ　はいれそう\pひみつのちからを　つかいますか？$"
+	.string "くさのかたまりを　どければ\nなかへ　はいれそう\pひみつのちからを　つかいますか？{EOS}"
 	.if (. - gText_Rom_2450C8) > 0x29
 	.error "gText_Rom_2450C8 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:3293 Route133_Text_DebraIntro (+1 aliases)
 	.globl gText_Rom_261E80
 gText_Rom_261E80: @ 0x08261E80
-	.string "わたしは かなしい おんな……\nながれ ながれて ここまで きたの……$"
+	.string "わたしは かなしい おんな……\nながれ ながれて ここまで きたの……{EOS}"
 	.if (. - gText_Rom_261E80) > 0x24
 	.error "gText_Rom_261E80 may not grow beyond its original slot"
 	.endif

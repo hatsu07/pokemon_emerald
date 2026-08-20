@@ -1,7 +1,7 @@
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:293 MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter
 	.globl gText_Rom_20D1DB
 gText_Rom_20D1DB: @ 0x0820D1DB
-	.string "マグマだんの やつらが\nこの うちゅうセンターを ねらっている\pだが そんなこと ぐらいで\nロケットの はっしゃを\lやめるわけには いかないんだ!$"
+	.string "マグマだんの やつらが\nこの うちゅうセンターを ねらっている\pだが そんなこと ぐらいで\nロケットの はっしゃを\lやめるわけには いかないんだ!{EOS}"
 	.if (. - gText_Rom_20D1DB) > 0x4a
 	.error "gText_Rom_20D1DB may not grow beyond its original slot"
 	.endif

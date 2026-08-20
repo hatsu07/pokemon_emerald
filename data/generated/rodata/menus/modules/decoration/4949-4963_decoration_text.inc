@@ -1,7 +1,7 @@
 	@ asm/decoration.s:769 PrintDecorationCategoryMenuItem (+1 aliases)
 	.globl gText_Rom_5CA719
 gText_Rom_5CA719: @ 0x085CA719
-	.string "つくえ$"
+	.string "つくえ{EOS}"
 	.if (. - gText_Rom_5CA719) > 0x4
 	.error "gText_Rom_5CA719 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CA719: @ 0x085CA719
 	@ asm/decoration.s:769 PrintDecorationCategoryMenuItem
 	.globl gText_Rom_5CA71D
 gText_Rom_5CA71D: @ 0x085CA71D
-	.string "いす$"
+	.string "いす{EOS}"
 	.if (. - gText_Rom_5CA71D) > 0x3
 	.error "gText_Rom_5CA71D may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CA71D: @ 0x085CA71D
 	@ asm/decoration.s:769 PrintDecorationCategoryMenuItem
 	.globl gText_Rom_5CA720
 gText_Rom_5CA720: @ 0x085CA720
-	.string "はちうえ$"
+	.string "はちうえ{EOS}"
 	.if (. - gText_Rom_5CA720) > 0x5
 	.error "gText_Rom_5CA720 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5CA720: @ 0x085CA720
 	@ asm/decoration.s:769 PrintDecorationCategoryMenuItem (+1 aliases)
 	.globl gText_Rom_5CA725
 gText_Rom_5CA725: @ 0x085CA725
-	.string "おきもの$"
+	.string "おきもの{EOS}"
 	.if (. - gText_Rom_5CA725) > 0x5
 	.error "gText_Rom_5CA725 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5CA725: @ 0x085CA725
 	@ asm/decoration.s:769 PrintDecorationCategoryMenuItem (+1 aliases)
 	.globl gText_Rom_5CA72A
 gText_Rom_5CA72A: @ 0x085CA72A
-	.string "マット$"
+	.string "マット{EOS}"
 	.if (. - gText_Rom_5CA72A) > 0x4
 	.error "gText_Rom_5CA72A may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5CA72A: @ 0x085CA72A
 	@ asm/decoration.s:769 PrintDecorationCategoryMenuItem (+1 aliases)
 	.globl gText_Rom_5CA72E
 gText_Rom_5CA72E: @ 0x085CA72E
-	.string "ポスター$"
+	.string "ポスター{EOS}"
 	.if (. - gText_Rom_5CA72E) > 0x5
 	.error "gText_Rom_5CA72E may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_5CA72E: @ 0x085CA72E
 	@ asm/decoration.s:769 PrintDecorationCategoryMenuItem (+2 aliases)
 	.globl gText_Rom_5CA733
 gText_Rom_5CA733: @ 0x085CA733
-	.string "ぬいぐるみ$"
+	.string "ぬいぐるみ{EOS}"
 	.if (. - gText_Rom_5CA733) > 0x6
 	.error "gText_Rom_5CA733 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_5CA733: @ 0x085CA733
 	@ asm/decoration.s:769 PrintDecorationCategoryMenuItem (+1 aliases)
 	.globl gText_Rom_5CA739
 gText_Rom_5CA739: @ 0x085CA739
-	.string "クッション$"
+	.string "クッション{EOS}"
 	.if (. - gText_Rom_5CA739) > 0x6
 	.error "gText_Rom_5CA739 may not grow beyond its original slot"
 	.endif

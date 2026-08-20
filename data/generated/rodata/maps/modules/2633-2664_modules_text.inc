@@ -1,7 +1,7 @@
 	@ src/data/region_map/region_map_entries.h:14 region_map_entries_line_14
 	.globl gText_Rom_57C6E0
 gText_Rom_57C6E0: @ 0x0857C6E0
-	.string "ミシロタウン$"
+	.string "ミシロタウン{EOS}"
 	.if (. - gText_Rom_57C6E0) > 0x7
 	.error "gText_Rom_57C6E0 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_57C6E0: @ 0x0857C6E0
 	@ src/data/region_map/region_map_entries.h:21 region_map_entries_line_21
 	.globl gText_Rom_57C6E7
 gText_Rom_57C6E7: @ 0x0857C6E7
-	.string "コトキタウン$"
+	.string "コトキタウン{EOS}"
 	.if (. - gText_Rom_57C6E7) > 0x7
 	.error "gText_Rom_57C6E7 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_57C6E7: @ 0x0857C6E7
 	@ src/data/region_map/region_map_entries.h:28 region_map_entries_line_28
 	.globl gText_Rom_57C6EE
 gText_Rom_57C6EE: @ 0x0857C6EE
-	.string "ムロタウン$"
+	.string "ムロタウン{EOS}"
 	.if (. - gText_Rom_57C6EE) > 0x6
 	.error "gText_Rom_57C6EE may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_57C6EE: @ 0x0857C6EE
 	@ src/data/region_map/region_map_entries.h:35 region_map_entries_line_35
 	.globl gText_Rom_57C6F4
 gText_Rom_57C6F4: @ 0x0857C6F4
-	.string "フエンタウン$"
+	.string "フエンタウン{EOS}"
 	.if (. - gText_Rom_57C6F4) > 0x7
 	.error "gText_Rom_57C6F4 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_57C6F4: @ 0x0857C6F4
 	@ src/data/region_map/region_map_entries.h:42 region_map_entries_line_42
 	.globl gText_Rom_57C6FB
 gText_Rom_57C6FB: @ 0x0857C6FB
-	.string "ハジツゲタウン$"
+	.string "ハジツゲタウン{EOS}"
 	.if (. - gText_Rom_57C6FB) > 0x8
 	.error "gText_Rom_57C6FB may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_57C6FB: @ 0x0857C6FB
 	@ src/data/region_map/region_map_entries.h:49 region_map_entries_line_49
 	.globl gText_Rom_57C703
 gText_Rom_57C703: @ 0x0857C703
-	.string "シダケタウン$"
+	.string "シダケタウン{EOS}"
 	.if (. - gText_Rom_57C703) > 0x7
 	.error "gText_Rom_57C703 may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_57C703: @ 0x0857C703
 	@ src/data/region_map/region_map_entries.h:56 region_map_entries_line_56
 	.globl gText_Rom_57C70A
 gText_Rom_57C70A: @ 0x0857C70A
-	.string "キナギタウン$"
+	.string "キナギタウン{EOS}"
 	.if (. - gText_Rom_57C70A) > 0x7
 	.error "gText_Rom_57C70A may not grow beyond its original slot"
 	.endif
@@ -79,7 +79,7 @@ gText_Rom_57C70A: @ 0x0857C70A
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C711
 gText_Rom_57C711: @ 0x0857C711
-	.string "トウカシティ$"
+	.string "トウカシティ{EOS}"
 	.if (. - gText_Rom_57C711) != 0x7
 	.error "gText_Rom_57C711 must retain its original byte length"
 	.endif
@@ -90,7 +90,7 @@ gText_Rom_57C711: @ 0x0857C711
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C718
 gText_Rom_57C718: @ 0x0857C718
-	.string "カイナシティ$"
+	.string "カイナシティ{EOS}"
 	.if (. - gText_Rom_57C718) != 0x7
 	.error "gText_Rom_57C718 must retain its original byte length"
 	.endif
@@ -101,7 +101,7 @@ gText_Rom_57C718: @ 0x0857C718
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C71F
 gText_Rom_57C71F: @ 0x0857C71F
-	.string "キンセツシティ$"
+	.string "キンセツシティ{EOS}"
 	.if (. - gText_Rom_57C71F) != 0x8
 	.error "gText_Rom_57C71F must retain its original byte length"
 	.endif
@@ -112,7 +112,7 @@ gText_Rom_57C71F: @ 0x0857C71F
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C727
 gText_Rom_57C727: @ 0x0857C727
-	.string "カナズミシティ$"
+	.string "カナズミシティ{EOS}"
 	.if (. - gText_Rom_57C727) != 0x8
 	.error "gText_Rom_57C727 must retain its original byte length"
 	.endif
@@ -123,7 +123,7 @@ gText_Rom_57C727: @ 0x0857C727
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C72F
 gText_Rom_57C72F: @ 0x0857C72F
-	.string "ヒワマキシティ$"
+	.string "ヒワマキシティ{EOS}"
 	.if (. - gText_Rom_57C72F) != 0x8
 	.error "gText_Rom_57C72F must retain its original byte length"
 	.endif
@@ -134,7 +134,7 @@ gText_Rom_57C72F: @ 0x0857C72F
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C737
 gText_Rom_57C737: @ 0x0857C737
-	.string "ミナモシティ$"
+	.string "ミナモシティ{EOS}"
 	.if (. - gText_Rom_57C737) != 0x7
 	.error "gText_Rom_57C737 must retain its original byte length"
 	.endif

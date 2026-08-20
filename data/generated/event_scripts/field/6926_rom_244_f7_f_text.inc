@@ -1,7 +1,7 @@
 	@ field-script:0x244E33 FieldScriptText_244F7F
 	.globl gText_Rom_244F7F
 gText_Rom_244F7F: @ 0x08244F7F
-	.string "とてもうつくしく$"
+	.string "とてもうつくしく{EOS}"
 	.if (. - gText_Rom_244F7F) > 0x9
 	.error "gText_Rom_244F7F may not grow beyond its original slot"
 	.endif

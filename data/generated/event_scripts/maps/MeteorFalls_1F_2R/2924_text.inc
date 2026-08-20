@@ -1,7 +1,7 @@
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:172 MeteorFalls_1F_2R_Text_JayPostRematch
 	.globl gText_Rom_213569
 gText_Rom_213569: @ 0x08213569
-	.string "ハツ『けっこんして 50ねん……\nいろんなことが ありましたねえ\pこれからも じいさんと いっしょに\nたのしいことが つづくと いいですわねえ$"
+	.string "ハツ『けっこんして 50ねん……\nいろんなことが ありましたねえ\pこれからも じいさんと いっしょに\nたのしいことが つづくと いいですわねえ{EOS}"
 	.if (. - gText_Rom_213569) > 0x48
 	.error "gText_Rom_213569 may not grow beyond its original slot"
 	.endif

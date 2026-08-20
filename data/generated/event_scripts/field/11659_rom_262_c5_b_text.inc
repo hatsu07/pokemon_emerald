@@ -1,7 +1,7 @@
 	@ field-script:0x21EB9A FieldScriptText_262C5B
 	.globl gText_Rom_262C5B
 gText_Rom_262C5B: @ 0x08262C5B
-	.string "あーん　ポケモンが\nなかなか　つかまらないわっ！\pこのままじゃ　にゅうじょうりょうの\nモトが　とれないわっ！$"
+	.string "あーん　ポケモンが\nなかなか　つかまらないわっ！\pこのままじゃ　にゅうじょうりょうの\nモトが　とれないわっ！{EOS}"
 	.if (. - gText_Rom_262C5B) > 0x37
 	.error "gText_Rom_262C5B may not grow beyond its original slot"
 	.endif

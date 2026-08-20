@@ -1,7 +1,7 @@
 	@ data/text/abnormal_weather.inc:1 gText_AbnormalWeatherEnded_Rain
 	.globl gText_Rom_2440BC
 gText_Rom_2440BC: @ 0x082440BC
-	.string "おおあめは おさまったようだ……$"
+	.string "おおあめは おさまったようだ……{EOS}"
 	.if (. - gText_Rom_2440BC) > 0x11
 	.error "gText_Rom_2440BC may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_2440BC: @ 0x082440BC
 	@ data/text/abnormal_weather.inc:4 gText_AbnormalWeatherEnded_Sun
 	.globl gText_Rom_2440CD
 gText_Rom_2440CD: @ 0x082440CD
-	.string "ひでりは おさまったようだ……$"
+	.string "ひでりは おさまったようだ……{EOS}"
 	.if (. - gText_Rom_2440CD) > 0x10
 	.error "gText_Rom_2440CD may not grow beyond its original slot"
 	.endif

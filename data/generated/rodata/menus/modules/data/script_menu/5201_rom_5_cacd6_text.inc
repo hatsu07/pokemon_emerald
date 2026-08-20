@@ -1,7 +1,7 @@
 	@ src/data/script_menu.h:1326 script_menu_line_1326
 	.globl gText_Rom_5CACD6
 gText_Rom_5CACD6: @ 0x085CACD6
-	.string "たいせつなもの$"
+	.string "たいせつなもの{EOS}"
 	.if (. - gText_Rom_5CACD6) > 0x8
 	.error "gText_Rom_5CACD6 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ field-script:0x212853 FieldScriptText_21299F
 	.globl gText_Rom_21299F
 gText_Rom_21299F: @ 0x0821299F
-	.string "なんでも　シダケ　までの\nトンネルが　つうじた　らしいぞ！\pねがい　つづければ\nいつかは　かなう　って　ことなんだな！$"
+	.string "なんでも　シダケ　までの\nトンネルが　つうじた　らしいぞ！\pねがい　つづければ\nいつかは　かなう　って　ことなんだな！{EOS}"
 	.if (. - gText_Rom_21299F) > 0x3c
 	.error "gText_Rom_21299F may not grow beyond its original slot"
 	.endif

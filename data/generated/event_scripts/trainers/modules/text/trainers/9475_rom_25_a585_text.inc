@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:368 Route105_Text_JosueIntro (+1 aliases)
 	.globl gText_Rom_25A585
 gText_Rom_25A585: @ 0x0825A585
-	.string "なれない およぎで つかれたー\nきばらしに ポケモンしょうぶ じゃい!$"
+	.string "なれない およぎで つかれたー\nきばらしに ポケモンしょうぶ じゃい!{EOS}"
 	.if (. - gText_Rom_25A585) > 0x24
 	.error "gText_Rom_25A585 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1604 Route116_Text_JerryRegister1 (+1 aliases)
 	.globl gText_Rom_25D80A
 gText_Rom_25D80A: @ 0x0825D80A
-	.string "ポケナビには トレーナーが\nとうろく できるん だって\lトレーナーズ スクールで ならったんだ!\pよく わからないから やってみてよ!$"
+	.string "ポケナビには トレーナーが\nとうろく できるん だって\lトレーナーズ スクールで ならったんだ!\pよく わからないから やってみてよ!{EOS}"
 	.if (. - gText_Rom_25D80A) > 0x44
 	.error "gText_Rom_25D80A may not grow beyond its original slot"
 	.endif

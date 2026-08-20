@@ -1,7 +1,7 @@
 	@ data/maps/FallarborTown/scripts.inc:75 FallarborTown_Text_MoveTutorSign
 	.globl gText_Rom_1E603A
 gText_Rom_1E603A: @ 0x081E603A
-	.string "「わざおしえマニアの いえ」\nポケモンの わざ おしえます!$"
+	.string "「わざおしえマニアの いえ」\nポケモンの わざ おしえます!{EOS}"
 	.if (. - gText_Rom_1E603A) > 0x1f
 	.error "gText_Rom_1E603A may not grow beyond its original slot"
 	.endif

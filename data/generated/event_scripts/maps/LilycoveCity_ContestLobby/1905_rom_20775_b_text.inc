@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:1022 LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily
 	.globl gText_Rom_20775B
 gText_Rom_20775B: @ 0x0820775B
-	.string "ママと パパと おねえちゃんと\n4にんで ポロックを つくったら\lすごく いいやつが できたんだ!\pきっと おおぜいで つくれば つくるほど\nなめらかで いい ポロックが できるんだよ!$"
+	.string "ママと パパと おねえちゃんと\n4にんで ポロックを つくったら\lすごく いいやつが できたんだ!\pきっと おおぜいで つくれば つくるほど\nなめらかで いい ポロックが できるんだよ!{EOS}"
 	.if (. - gText_Rom_20775B) > 0x5e
 	.error "gText_Rom_20775B may not grow beyond its original slot"
 	.endif

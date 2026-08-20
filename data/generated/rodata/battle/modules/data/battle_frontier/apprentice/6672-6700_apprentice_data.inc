@@ -1,7 +1,7 @@
 	@ src/data/battle_frontier/apprentice.h:300 apprentice_line_300
 	.globl gText_Rom_5DC21C
 gText_Rom_5DC21C: @ 0x085DC21C
-	.string "サダヒロ$"
+	.string "サダヒロ{EOS}"
 	.if (. - gText_Rom_5DC21C) > 0x5
 	.error "gText_Rom_5DC21C may not grow beyond its original slot"
 	.endif
@@ -28,7 +28,7 @@ gFrontierUtilData_085DC23E: @ 0x085DC23E
 	.2byte 0x0C0E, 0x0C16, 0x0C00, 0x0E39, 0x062E, 0x1010, 0x0000
 	.globl gText_Rom_5DC24C
 gText_Rom_5DC24C: @ 0x085DC24C
-	.string "ヒロオ$"
+	.string "ヒロオ{EOS}"
 	.if (. - gText_Rom_5DC24C) > 0x4
 	.error "gText_Rom_5DC24C may not grow beyond its original slot"
 	.endif
@@ -42,7 +42,7 @@ gText_Rom_5DC24C: @ 0x085DC24C
 	.2byte 0x062E, 0x1011, 0x0A1A, 0x0620, 0x1032, 0x0000
 	.globl gText_Rom_5DC27C
 gText_Rom_5DC27C: @ 0x085DC27C
-	.string "ケイジ$"
+	.string "ケイジ{EOS}"
 	.if (. - gText_Rom_5DC27C) > 0x4
 	.error "gText_Rom_5DC27C may not grow beyond its original slot"
 	.endif
@@ -59,7 +59,7 @@ gText_Rom_5DC27C: @ 0x085DC27C
 	.2byte 0x0E28, 0x201E, 0x1434, 0x1034, 0x1005, 0x0000
 	.globl gText_Rom_5DC2DC
 gText_Rom_5DC2DC: @ 0x085DC2DC
-	.string "ヨウカ$"
+	.string "ヨウカ{EOS}"
 	.if (. - gText_Rom_5DC2DC) > 0x4
 	.error "gText_Rom_5DC2DC may not grow beyond its original slot"
 	.endif
@@ -73,7 +73,7 @@ gText_Rom_5DC2DC: @ 0x085DC2DC
 	.2byte 0x0E0B, 0x0E14, 0x062E, 0x142F, 0x1044, 0x0000
 	.globl gText_Rom_5DC30C
 gText_Rom_5DC30C: @ 0x085DC30C
-	.string "ヤスシ$"
+	.string "ヤスシ{EOS}"
 	.if (. - gText_Rom_5DC30C) > 0x4
 	.error "gText_Rom_5DC30C may not grow beyond its original slot"
 	.endif
@@ -87,7 +87,7 @@ gText_Rom_5DC30C: @ 0x085DC30C
 	.2byte 0x1638, 0x0C01, 0x0823, 0x0C07, 0x0C01, 0x0000
 	.globl gText_Rom_5DC33C
 gText_Rom_5DC33C: @ 0x085DC33C
-	.string "ミサオ$"
+	.string "ミサオ{EOS}"
 	.if (. - gText_Rom_5DC33C) > 0x4
 	.error "gText_Rom_5DC33C may not grow beyond its original slot"
 	.endif
@@ -101,7 +101,7 @@ gText_Rom_5DC33C: @ 0x085DC33C
 	.2byte 0x123E, 0x0C07, 0x201E, 0x1011, 0x0C07, 0x0000
 	.globl gText_Rom_5DC36C
 gText_Rom_5DC36C: @ 0x085DC36C
-	.string "カズサ$"
+	.string "カズサ{EOS}"
 	.if (. - gText_Rom_5DC36C) > 0x4
 	.error "gText_Rom_5DC36C may not grow beyond its original slot"
 	.endif
@@ -115,7 +115,7 @@ gText_Rom_5DC36C: @ 0x085DC36C
 	.2byte 0x1034, 0x1023, 0x1032, 0x0C04, 0xFFFF, 0x0000
 	.globl gText_Rom_5DC39C
 gText_Rom_5DC39C: @ 0x085DC39C
-	.string "スミレ$"
+	.string "スミレ{EOS}"
 	.if (. - gText_Rom_5DC39C) > 0x4
 	.error "gText_Rom_5DC39C may not grow beyond its original slot"
 	.endif
@@ -129,7 +129,7 @@ gText_Rom_5DC39C: @ 0x085DC39C
 	.2byte 0x0620, 0x020E, 0x102B, 0x0C01, 0xFFFF, 0x0000
 	.globl gText_Rom_5DC3CC
 gText_Rom_5DC3CC: @ 0x085DC3CC
-	.string "アキノリ$"
+	.string "アキノリ{EOS}"
 	.if (. - gText_Rom_5DC3CC) > 0x5
 	.error "gText_Rom_5DC3CC may not grow beyond its original slot"
 	.endif
@@ -143,7 +143,7 @@ gText_Rom_5DC3CC: @ 0x085DC3CC
 	.byte 0x20, 0x34, 0x10, 0x0D, 0x20, 0x11, 0x10, 0x01, 0x0C, 0x00, 0x00
 	.globl gText_Rom_5DC3FC
 gText_Rom_5DC3FC: @ 0x085DC3FC
-	.string "トウゾウ$"
+	.string "トウゾウ{EOS}"
 	.if (. - gText_Rom_5DC3FC) > 0x5
 	.error "gText_Rom_5DC3FC may not grow beyond its original slot"
 	.endif
@@ -157,7 +157,7 @@ gText_Rom_5DC3FC: @ 0x085DC3FC
 	.byte 0x10, 0x03, 0x0E, 0x2C, 0x0E, 0x01, 0x0C, 0xFF, 0xFF, 0x00, 0x00
 	.globl gText_Rom_5DC42C
 gText_Rom_5DC42C: @ 0x085DC42C
-	.string "セイヤ$"
+	.string "セイヤ{EOS}"
 	.if (. - gText_Rom_5DC42C) > 0x4
 	.error "gText_Rom_5DC42C may not grow beyond its original slot"
 	.endif
@@ -171,7 +171,7 @@ gText_Rom_5DC42C: @ 0x085DC42C
 	.2byte 0x121F, 0x0E0A, 0x2813, 0x1013, 0x0C00, 0x0000
 	.globl gText_Rom_5DC45C
 gText_Rom_5DC45C: @ 0x085DC45C
-	.string "リュウジ$"
+	.string "リュウジ{EOS}"
 	.if (. - gText_Rom_5DC45C) > 0x5
 	.error "gText_Rom_5DC45C may not grow beyond its original slot"
 	.endif
@@ -185,7 +185,7 @@ gText_Rom_5DC45C: @ 0x085DC45C
 	.byte 0x06, 0x1D, 0x0E, 0x0C, 0x0E, 0x13, 0x10, 0x01, 0x0C, 0x00, 0x00
 	.globl gText_Rom_5DC48C
 gText_Rom_5DC48C: @ 0x085DC48C
-	.string "カツアキ$"
+	.string "カツアキ{EOS}"
 	.if (. - gText_Rom_5DC48C) > 0x5
 	.error "gText_Rom_5DC48C may not grow beyond its original slot"
 	.endif
@@ -199,7 +199,7 @@ gText_Rom_5DC48C: @ 0x085DC48C
 	.byte 0x0E, 0x11, 0x10, 0x3A, 0x06, 0x04, 0x0C, 0xFF, 0xFF, 0x00, 0x00
 	.globl gText_Rom_5DC4BC
 gText_Rom_5DC4BC: @ 0x085DC4BC
-	.string "トシミツ$"
+	.string "トシミツ{EOS}"
 	.if (. - gText_Rom_5DC4BC) > 0x5
 	.error "gText_Rom_5DC4BC may not grow beyond its original slot"
 	.endif
@@ -213,7 +213,7 @@ gText_Rom_5DC4BC: @ 0x085DC4BC
 	.byte 0x16, 0x40, 0x14, 0x43, 0x12, 0x2F, 0x14, 0x04, 0x0C, 0x00, 0x00
 	.globl gText_Rom_5DC4EC
 gText_Rom_5DC4EC: @ 0x085DC4EC
-	.string "ローウェン$"
+	.string "ローウェン{EOS}"
 	.if (. - gText_Rom_5DC4EC) > 0x6
 	.error "gText_Rom_5DC4EC may not grow beyond its original slot"
 	.endif

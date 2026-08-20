@@ -1,7 +1,7 @@
 	@ data/maps/Route116/scripts.inc:447 Route116_Text_RusturfTunnelSign (+1 aliases)
 	.globl gText_Rom_1E6350
 gText_Rom_1E6350: @ 0x081E6350
-	.string "カナズミと シダケを むすぶ\n「カナシダ トンネル」\pかいつう こうじは ちゅうしに なりました$"
+	.string "カナズミと シダケを むすぶ\n「カナシダ トンネル」\pかいつう こうじは ちゅうしに なりました{EOS}"
 	.if (. - gText_Rom_1E6350) > 0x31
 	.error "gText_Rom_1E6350 may not grow beyond its original slot"
 	.endif

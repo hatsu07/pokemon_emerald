@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_House6/scripts.inc:46 SootopolisCity_House6_Text_LovePlushDolls
 	.globl gText_Rom_20F7AA
 gText_Rom_20F7AA: @ 0x0820F7AA
-	.string "あたし ぬいぐるみ だいすき!$"
+	.string "あたし ぬいぐるみ だいすき!{EOS}"
 	.if (. - gText_Rom_20F7AA) > 0x10
 	.error "gText_Rom_20F7AA may not grow beyond its original slot"
 	.endif

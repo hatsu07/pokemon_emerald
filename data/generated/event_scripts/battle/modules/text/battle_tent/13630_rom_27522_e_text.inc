@@ -1,7 +1,7 @@
 	@ data/text/battle_tent.inc:190 VerdanturfTown_BattleTentLobby_Text_SelectThreeMons
 	.globl gText_Rom_27522E
 gText_Rom_27522E: @ 0x0827522E
-	.string "では ちょうせんする ポケモンを\n3ひき えらんでくれ$"
+	.string "では ちょうせんする ポケモンを\n3ひき えらんでくれ{EOS}"
 	.if (. - gText_Rom_27522E) > 0x1c
 	.error "gText_Rom_27522E may not grow beyond its original slot"
 	.endif

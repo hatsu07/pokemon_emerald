@@ -1,7 +1,7 @@
 	@ src/battle_message.c:197 battle_message_line_197
 	.globl gText_Rom_5A966F
 gText_Rom_5A966F: @ 0x085A966F
-	.string "{B_BUFF1}は あたらしく\n{B_BUFF2}を　おぼえたい………!\p$"
+	.string "{B_BUFF1}は あたらしく\n{B_BUFF2}を　おぼえたい………!\p{EOS}"
 	.if (. - gText_Rom_5A966F) > 0x19
 	.error "gText_Rom_5A966F may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5A966F: @ 0x085A966F
 	@ src/battle_message.c:198 battle_message_line_198
 	.globl gText_Rom_5A9688
 gText_Rom_5A9688: @ 0x085A9688
-	.string "しかし {B_BUFF1}は わざを 4つ\nおぼえるので せいいっぱいだ!\p$"
+	.string "しかし {B_BUFF1}は わざを 4つ\nおぼえるので せいいっぱいだ!\p{EOS}"
 	.if (. - gText_Rom_5A9688) > 0x20
 	.error "gText_Rom_5A9688 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5A9688: @ 0x085A9688
 	@ src/battle_message.c:199 battle_message_line_199
 	.globl gText_Rom_5A96A8
 gText_Rom_5A96A8: @ 0x085A96A8
-	.string "{B_BUFF2}の かわりに\nほかの わざを わすれさせますか?$"
+	.string "{B_BUFF2}の かわりに\nほかの わざを わすれさせますか?{EOS}"
 	.if (. - gText_Rom_5A96A8) > 0x1b
 	.error "gText_Rom_5A96A8 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5A96A8: @ 0x085A96A8
 	@ src/battle_message.c:200 battle_message_line_200
 	.globl gText_Rom_5A96C3
 gText_Rom_5A96C3: @ 0x085A96C3
-	.string "{B_BUFF1}は {B_BUFF2}の\nつかいかたを きれいに わすれた!\p$"
+	.string "{B_BUFF1}は {B_BUFF2}の\nつかいかたを きれいに わすれた!\p{EOS}"
 	.if (. - gText_Rom_5A96C3) > 0x1b
 	.error "gText_Rom_5A96C3 may not grow beyond its original slot"
 	.endif

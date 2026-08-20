@@ -1,7 +1,7 @@
 	@ src/battle_message.c:76 gText_StatRose
 	.globl gText_Rom_5AA877
 gText_Rom_5AA877: @ 0x085AA877
-	.string "あがった！$"
+	.string "あがった！{EOS}"
 	.if (. - gText_Rom_5AA877) > 0x6
 	.error "gText_Rom_5AA877 may not grow beyond its original slot"
 	.endif
@@ -9,12 +9,12 @@ gText_Rom_5AA877: @ 0x085AA877
 	.space 0x6 - (. - gText_Rom_5AA877)
 	.endif
 	@ Decoded text from ROM range: offset=0x5AA87D, size=0x6
-	.string "がくっと　$"
+	.string "がくっと　{EOS}"
 
 	@ src/battle_message.c:77 gText_StatFell
 	.globl gText_Rom_5AA883
 gText_Rom_5AA883: @ 0x085AA883
-	.string "さがった！$"
+	.string "さがった！{EOS}"
 	.if (. - gText_Rom_5AA883) > 0x6
 	.error "gText_Rom_5AA883 may not grow beyond its original slot"
 	.endif
@@ -39,7 +39,7 @@ gPokemonData_085AA894:
 	.byte 0x23, 0x03, 0x00, 0x0B, 0x37, 0x27, 0x15, 0x02, 0xAB, 0xFF
 	.globl gText_Rom_5AA8EE
 gText_Rom_5AA8EE: @ 0x085AA8EE
-	.string "きゅうしょに あたった！$"
+	.string "きゅうしょに あたった！{EOS}"
 	.if (. - gText_Rom_5AA8EE) > 0xd
 	.error "gText_Rom_5AA8EE may not grow beyond its original slot"
 	.endif
@@ -50,7 +50,7 @@ gText_Rom_5AA8EE: @ 0x085AA8EE
 	@ src/battle_message.c:382 battle_message_line_382
 	.globl gText_Rom_5AA8FB
 gText_Rom_5AA8FB: @ 0x085AA8FB
-	.string "いちげき ひっさつ！$"
+	.string "いちげき ひっさつ！{EOS}"
 	.if (. - gText_Rom_5AA8FB) > 0xb
 	.error "gText_Rom_5AA8FB may not grow beyond its original slot"
 	.endif

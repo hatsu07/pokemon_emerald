@@ -1,7 +1,7 @@
 	@ data/maps/SeafloorCavern_Room4/scripts.inc:29 SeafloorCavern_Room4_Text_Grunt4PostBattle
 	.globl gText_Rom_2189C4
 gText_Rom_2189C4: @ 0x082189C4
-	.string "このひとったら せんすいていに\nちずを わすれて きちゃったの!\pまったく たよりに なんないんだから!$"
+	.string "このひとったら せんすいていに\nちずを わすれて きちゃったの!\pまったく たよりに なんないんだから!{EOS}"
 	.if (. - gText_Rom_2189C4) > 0x35
 	.error "gText_Rom_2189C4 may not grow beyond its original slot"
 	.endif

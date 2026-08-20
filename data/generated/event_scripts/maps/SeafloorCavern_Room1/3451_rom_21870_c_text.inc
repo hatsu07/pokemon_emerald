@@ -1,7 +1,7 @@
 	@ data/maps/SeafloorCavern_Room1/scripts.inc:29 SeafloorCavern_Room1_Text_Grunt2PostBattle
 	.globl gText_Rom_21870C
 gText_Rom_21870C: @ 0x0821870C
-	.string "うばった せんすいていの のりごこち\nありゃ さいあく だな!\lとにかく せますぎ じゃねーか!$"
+	.string "うばった せんすいていの のりごこち\nありゃ さいあく だな!\lとにかく せますぎ じゃねーか!{EOS}"
 	.if (. - gText_Rom_21870C) > 0x31
 	.error "gText_Rom_21870C may not grow beyond its original slot"
 	.endif

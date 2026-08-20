@@ -3868,7 +3868,7 @@ gMenuRecord_Rom_300A99: @ 0x08300A99
 	.globl gText_Rom_300A9B
 gText_Rom_300A9B: @ 0x08300A9B
 	@ Decoded text from ROM range: offset=0x300A9B, size=0x3
-	.string "わざ$"
+	.string "わざ{EOS}"
 	@ pret/pokeemerald-jp direct xref for 0x08300A9E: trade.s: sub_08079564
 	.globl gTradeData_08300A9E
 gTradeData_08300A9E: @ 0x08300A9E

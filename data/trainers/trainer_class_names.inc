@@ -8,7 +8,7 @@
 gTrainerClassNames: @ 0x082E3564
 gText_Rom_2E3564: @ 0x082E3564
 sTrainerClassName_PKMN_TRAINER_1:
-	.string "ポケモントレーナー$"
+	.string "ポケモントレーナー{EOS}"
 	.if (. - gText_Rom_2E3564) != 0xa
 	.error "gText_Rom_2E3564 must retain its original byte length"
 	.endif
@@ -21,7 +21,7 @@ sTrainerClassName_PKMN_TRAINER_1:
 	.globl gText_Rom_2E356F
 gText_Rom_2E356F: @ 0x082E356F
 sTrainerClassName_PKMN_TRAINER_2:
-	.string "ポケモントレーナー$"
+	.string "ポケモントレーナー{EOS}"
 	.if (. - gText_Rom_2E356F) != 0xa
 	.error "gText_Rom_2E356F must retain its original byte length"
 	.endif
@@ -34,7 +34,7 @@ sTrainerClassName_PKMN_TRAINER_2:
 	.globl gText_Rom_2E357A
 gText_Rom_2E357A: @ 0x082E357A
 sTrainerClassName_HIKER:
-	.string "やまおとこ$"
+	.string "やまおとこ{EOS}"
 	.if (. - gText_Rom_2E357A) != 0x6
 	.error "gText_Rom_2E357A must retain its original byte length"
 	.endif
@@ -46,7 +46,7 @@ sTrainerClassName_HIKER:
 	.globl gText_Rom_2E3585
 gText_Rom_2E3585: @ 0x082E3585
 sTrainerClassName_TEAM_AQUA:
-	.string "アクアだん$"
+	.string "アクアだん{EOS}"
 	.if (. - gText_Rom_2E3585) > 0x6
 	.error "gText_Rom_2E3585 may not grow beyond its original slot"
 	.endif
@@ -60,7 +60,7 @@ sTrainerClassName_TEAM_AQUA:
 	.globl gText_Rom_2E3590
 gText_Rom_2E3590: @ 0x082E3590
 sTrainerClassName_PKMN_BREEDER:
-	.string "ポケモンブリーダー$"
+	.string "ポケモンブリーダー{EOS}"
 	.if (. - gText_Rom_2E3590) != 0xa
 	.error "gText_Rom_2E3590 must retain its original byte length"
 	.endif
@@ -73,7 +73,7 @@ sTrainerClassName_PKMN_BREEDER:
 	.globl gText_Rom_2E359B
 gText_Rom_2E359B: @ 0x082E359B
 sTrainerClassName_COOLTRAINER:
-	.string "エリートトレーナー$"
+	.string "エリートトレーナー{EOS}"
 	.if (. - gText_Rom_2E359B) != 0xa
 	.error "gText_Rom_2E359B must retain its original byte length"
 	.endif
@@ -85,7 +85,7 @@ sTrainerClassName_COOLTRAINER:
 	.globl gText_Rom_2E35A6
 gText_Rom_2E35A6: @ 0x082E35A6
 sTrainerClassName_BIRD_KEEPER:
-	.string "とりつかい$"
+	.string "とりつかい{EOS}"
 	.if (. - gText_Rom_2E35A6) > 0x6
 	.error "gText_Rom_2E35A6 may not grow beyond its original slot"
 	.endif
@@ -98,7 +98,7 @@ sTrainerClassName_BIRD_KEEPER:
 	.globl gText_Rom_2E35B1
 gText_Rom_2E35B1: @ 0x082E35B1
 sTrainerClassName_COLLECTOR:
-	.string "ポケモンコレクター$"
+	.string "ポケモンコレクター{EOS}"
 	.if (. - gText_Rom_2E35B1) > 0xa
 	.error "gText_Rom_2E35B1 may not grow beyond its original slot"
 	.endif
@@ -111,7 +111,7 @@ sTrainerClassName_COLLECTOR:
 	.globl gText_Rom_2E35BC
 gText_Rom_2E35BC: @ 0x082E35BC
 sTrainerClassName_SWIMMER_M:
-	.string "かいパンやろう$"
+	.string "かいパンやろう{EOS}"
 	.if (. - gText_Rom_2E35BC) > 0x8
 	.error "gText_Rom_2E35BC may not grow beyond its original slot"
 	.endif
@@ -124,7 +124,7 @@ sTrainerClassName_SWIMMER_M:
 	.globl gText_Rom_2E35C7
 gText_Rom_2E35C7: @ 0x082E35C7
 sTrainerClassName_TEAM_MAGMA:
-	.string "マグマだん$"
+	.string "マグマだん{EOS}"
 	.if (. - gText_Rom_2E35C7) > 0x6
 	.error "gText_Rom_2E35C7 may not grow beyond its original slot"
 	.endif
@@ -137,7 +137,7 @@ sTrainerClassName_TEAM_MAGMA:
 	.globl gText_Rom_2E35D2
 gText_Rom_2E35D2: @ 0x082E35D2
 sTrainerClassName_EXPERT:
-	.string "たつじん$"
+	.string "たつじん{EOS}"
 	.if (. - gText_Rom_2E35D2) > 0x5
 	.error "gText_Rom_2E35D2 may not grow beyond its original slot"
 	.endif
@@ -150,7 +150,7 @@ sTrainerClassName_EXPERT:
 	.globl gText_Rom_2E35DD
 gText_Rom_2E35DD: @ 0x082E35DD
 sTrainerClassName_AQUA_ADMIN:
-	.string "アクアだんかんぶ$"
+	.string "アクアだんかんぶ{EOS}"
 	.if (. - gText_Rom_2E35DD) > 0x9
 	.error "gText_Rom_2E35DD may not grow beyond its original slot"
 	.endif
@@ -163,7 +163,7 @@ sTrainerClassName_AQUA_ADMIN:
 	.globl gText_Rom_2E35E8
 gText_Rom_2E35E8: @ 0x082E35E8
 sTrainerClassName_BLACK_BELT:
-	.string "カラテおう$"
+	.string "カラテおう{EOS}"
 	.if (. - gText_Rom_2E35E8) > 0x6
 	.error "gText_Rom_2E35E8 may not grow beyond its original slot"
 	.endif
@@ -177,7 +177,7 @@ sTrainerClassName_BLACK_BELT:
 	.globl gText_Rom_2E35F3
 gText_Rom_2E35F3: @ 0x082E35F3
 sTrainerClassName_AQUA_LEADER:
-	.string "アクアだんリーダー$"
+	.string "アクアだんリーダー{EOS}"
 	.if (. - gText_Rom_2E35F3) != 0xa
 	.error "gText_Rom_2E35F3 must retain its original byte length"
 	.endif
@@ -189,7 +189,7 @@ sTrainerClassName_AQUA_LEADER:
 	.globl gText_Rom_2E35FE
 gText_Rom_2E35FE: @ 0x082E35FE
 sTrainerClassName_HEX_MANIAC:
-	.string "オカルトマニア$"
+	.string "オカルトマニア{EOS}"
 	.if (. - gText_Rom_2E35FE) > 0x8
 	.error "gText_Rom_2E35FE may not grow beyond its original slot"
 	.endif
@@ -203,7 +203,7 @@ sTrainerClassName_HEX_MANIAC:
 	.globl gText_Rom_2E3609
 gText_Rom_2E3609: @ 0x082E3609
 sTrainerClassName_AROMA_LADY:
-	.string "アロマなおねえさん$"
+	.string "アロマなおねえさん{EOS}"
 	.if (. - gText_Rom_2E3609) != 0xa
 	.error "gText_Rom_2E3609 must retain its original byte length"
 	.endif
@@ -215,7 +215,7 @@ sTrainerClassName_AROMA_LADY:
 	.globl gText_Rom_2E3614
 gText_Rom_2E3614: @ 0x082E3614
 sTrainerClassName_RUIN_MANIAC:
-	.string "いせきマニア$"
+	.string "いせきマニア{EOS}"
 	.if (. - gText_Rom_2E3614) > 0x7
 	.error "gText_Rom_2E3614 may not grow beyond its original slot"
 	.endif
@@ -228,7 +228,7 @@ sTrainerClassName_RUIN_MANIAC:
 	.globl gText_Rom_2E361F
 gText_Rom_2E361F: @ 0x082E361F
 sTrainerClassName_INTERVIEWER:
-	.string "インタビュアー$"
+	.string "インタビュアー{EOS}"
 	.if (. - gText_Rom_2E361F) > 0x8
 	.error "gText_Rom_2E361F may not grow beyond its original slot"
 	.endif
@@ -242,7 +242,7 @@ sTrainerClassName_INTERVIEWER:
 	.globl gText_Rom_2E362A
 gText_Rom_2E362A: @ 0x082E362A
 sTrainerClassName_TUBER_F:
-	.string "うきわガール$"
+	.string "うきわガール{EOS}"
 	.if (. - gText_Rom_2E362A) != 0x7
 	.error "gText_Rom_2E362A must retain its original byte length"
 	.endif
@@ -255,7 +255,7 @@ sTrainerClassName_TUBER_F:
 	.globl gText_Rom_2E3635
 gText_Rom_2E3635: @ 0x082E3635
 sTrainerClassName_TUBER_M:
-	.string "うきわボーイ$"
+	.string "うきわボーイ{EOS}"
 	.if (. - gText_Rom_2E3635) != 0x7
 	.error "gText_Rom_2E3635 must retain its original byte length"
 	.endif
@@ -267,7 +267,7 @@ sTrainerClassName_TUBER_M:
 	.globl gText_Rom_2E3640
 gText_Rom_2E3640: @ 0x082E3640
 sTrainerClassName_LADY:
-	.string "おじょうさま$"
+	.string "おじょうさま{EOS}"
 	.if (. - gText_Rom_2E3640) > 0x7
 	.error "gText_Rom_2E3640 may not grow beyond its original slot"
 	.endif
@@ -281,7 +281,7 @@ sTrainerClassName_LADY:
 	.globl gText_Rom_2E364B
 gText_Rom_2E364B: @ 0x082E364B
 sTrainerClassName_BEAUTY:
-	.string "おとなのおねえさん$"
+	.string "おとなのおねえさん{EOS}"
 	.if (. - gText_Rom_2E364B) != 0xa
 	.error "gText_Rom_2E364B must retain its original byte length"
 	.endif
@@ -293,7 +293,7 @@ sTrainerClassName_BEAUTY:
 	.globl gText_Rom_2E3656
 gText_Rom_2E3656: @ 0x082E3656
 sTrainerClassName_RICH_BOY:
-	.string "おぼっちゃま$"
+	.string "おぼっちゃま{EOS}"
 	.if (. - gText_Rom_2E3656) > 0x7
 	.error "gText_Rom_2E3656 may not grow beyond its original slot"
 	.endif
@@ -306,7 +306,7 @@ sTrainerClassName_RICH_BOY:
 	.globl gText_Rom_2E3661
 gText_Rom_2E3661: @ 0x082E3661
 sTrainerClassName_POKEMANIAC:
-	.string "かいじゅうマニア$"
+	.string "かいじゅうマニア{EOS}"
 	.if (. - gText_Rom_2E3661) > 0x9
 	.error "gText_Rom_2E3661 may not grow beyond its original slot"
 	.endif
@@ -319,7 +319,7 @@ sTrainerClassName_POKEMANIAC:
 	.globl gText_Rom_2E366C
 gText_Rom_2E366C: @ 0x082E366C
 sTrainerClassName_GUITARIST:
-	.string "ギタリスト$"
+	.string "ギタリスト{EOS}"
 	.if (. - gText_Rom_2E366C) > 0x6
 	.error "gText_Rom_2E366C may not grow beyond its original slot"
 	.endif
@@ -333,7 +333,7 @@ sTrainerClassName_GUITARIST:
 	.globl gText_Rom_2E3677
 gText_Rom_2E3677: @ 0x082E3677
 sTrainerClassName_KINDLER:
-	.string "キャンプファイヤー$"
+	.string "キャンプファイヤー{EOS}"
 	.if (. - gText_Rom_2E3677) != 0xa
 	.error "gText_Rom_2E3677 must retain its original byte length"
 	.endif
@@ -346,7 +346,7 @@ sTrainerClassName_KINDLER:
 	.globl gText_Rom_2E3682
 gText_Rom_2E3682: @ 0x082E3682
 sTrainerClassName_CAMPER:
-	.string "キャンプボーイ$"
+	.string "キャンプボーイ{EOS}"
 	.if (. - gText_Rom_2E3682) != 0x8
 	.error "gText_Rom_2E3682 must retain its original byte length"
 	.endif
@@ -359,7 +359,7 @@ sTrainerClassName_CAMPER:
 	.globl gText_Rom_2E368D
 gText_Rom_2E368D: @ 0x082E368D
 sTrainerClassName_PICNICKER:
-	.string "ピクニックガール$"
+	.string "ピクニックガール{EOS}"
 	.if (. - gText_Rom_2E368D) != 0x9
 	.error "gText_Rom_2E368D must retain its original byte length"
 	.endif
@@ -371,7 +371,7 @@ sTrainerClassName_PICNICKER:
 	.globl gText_Rom_2E3698
 gText_Rom_2E3698: @ 0x082E3698
 sTrainerClassName_BUG_MANIAC:
-	.string "こんちゅうマニア$"
+	.string "こんちゅうマニア{EOS}"
 	.if (. - gText_Rom_2E3698) > 0x9
 	.error "gText_Rom_2E3698 may not grow beyond its original slot"
 	.endif
@@ -384,7 +384,7 @@ sTrainerClassName_BUG_MANIAC:
 	.globl gText_Rom_2E36A3
 gText_Rom_2E36A3: @ 0x082E36A3
 sTrainerClassName_PSYCHIC:
-	.string "サイキッカー$"
+	.string "サイキッカー{EOS}"
 	.if (. - gText_Rom_2E36A3) > 0x7
 	.error "gText_Rom_2E36A3 may not grow beyond its original slot"
 	.endif
@@ -397,7 +397,7 @@ sTrainerClassName_PSYCHIC:
 	.globl gText_Rom_2E36AE
 gText_Rom_2E36AE: @ 0x082E36AE
 sTrainerClassName_GENTLEMAN:
-	.string "ジェントルマン$"
+	.string "ジェントルマン{EOS}"
 	.if (. - gText_Rom_2E36AE) > 0x8
 	.error "gText_Rom_2E36AE may not grow beyond its original slot"
 	.endif
@@ -410,7 +410,7 @@ sTrainerClassName_GENTLEMAN:
 	.globl gText_Rom_2E36B9
 gText_Rom_2E36B9: @ 0x082E36B9
 sTrainerClassName_ELITE_FOUR:
-	.string "してんのう$"
+	.string "してんのう{EOS}"
 	.if (. - gText_Rom_2E36B9) > 0x6
 	.error "gText_Rom_2E36B9 may not grow beyond its original slot"
 	.endif
@@ -424,7 +424,7 @@ sTrainerClassName_ELITE_FOUR:
 	.globl gText_Rom_2E36C4
 gText_Rom_2E36C4: @ 0x082E36C4
 sTrainerClassName_LEADER:
-	.string "ジムリーダー$"
+	.string "ジムリーダー{EOS}"
 	.if (. - gText_Rom_2E36C4) != 0x7
 	.error "gText_Rom_2E36C4 must retain its original byte length"
 	.endif
@@ -436,7 +436,7 @@ sTrainerClassName_LEADER:
 	.globl gText_Rom_2E36CF
 gText_Rom_2E36CF: @ 0x082E36CF
 sTrainerClassName_SCHOOL_KID:
-	.string "じゅくがえり$"
+	.string "じゅくがえり{EOS}"
 	.if (. - gText_Rom_2E36CF) > 0x7
 	.error "gText_Rom_2E36CF may not grow beyond its original slot"
 	.endif
@@ -449,7 +449,7 @@ sTrainerClassName_SCHOOL_KID:
 	.globl gText_Rom_2E36DA
 gText_Rom_2E36DA: @ 0x082E36DA
 sTrainerClassName_SR_AND_JR:
-	.string "センパイとコウハイ$"
+	.string "センパイとコウハイ{EOS}"
 	.if (. - gText_Rom_2E36DA) > 0xa
 	.error "gText_Rom_2E36DA may not grow beyond its original slot"
 	.endif
@@ -462,7 +462,7 @@ sTrainerClassName_SR_AND_JR:
 	.globl gText_Rom_2E36E5
 gText_Rom_2E36E5: @ 0x082E36E5
 sTrainerClassName_WINSTRATE:
-	.string "カチヌキさんち$"
+	.string "カチヌキさんち{EOS}"
 	.if (. - gText_Rom_2E36E5) > 0x8
 	.error "gText_Rom_2E36E5 may not grow beyond its original slot"
 	.endif
@@ -476,7 +476,7 @@ sTrainerClassName_WINSTRATE:
 	.globl gText_Rom_2E36F0
 gText_Rom_2E36F0: @ 0x082E36F0
 sTrainerClassName_POKEFAN:
-	.string "だいすきクラブ$"
+	.string "だいすきクラブ{EOS}"
 	.if (. - gText_Rom_2E36F0) != 0x8
 	.error "gText_Rom_2E36F0 must retain its original byte length"
 	.endif
@@ -488,7 +488,7 @@ sTrainerClassName_POKEFAN:
 	.globl gText_Rom_2E36FB
 gText_Rom_2E36FB: @ 0x082E36FB
 sTrainerClassName_YOUNGSTER:
-	.string "たんぱんこぞう$"
+	.string "たんぱんこぞう{EOS}"
 	.if (. - gText_Rom_2E36FB) > 0x8
 	.error "gText_Rom_2E36FB may not grow beyond its original slot"
 	.endif
@@ -501,7 +501,7 @@ sTrainerClassName_YOUNGSTER:
 	.globl gText_Rom_2E3706
 gText_Rom_2E3706: @ 0x082E3706
 sTrainerClassName_CHAMPION:
-	.string "チャンピオン$"
+	.string "チャンピオン{EOS}"
 	.if (. - gText_Rom_2E3706) > 0x7
 	.error "gText_Rom_2E3706 may not grow beyond its original slot"
 	.endif
@@ -514,7 +514,7 @@ sTrainerClassName_CHAMPION:
 	.globl gText_Rom_2E3711
 gText_Rom_2E3711: @ 0x082E3711
 sTrainerClassName_FISHERMAN:
-	.string "つりびと$"
+	.string "つりびと{EOS}"
 	.if (. - gText_Rom_2E3711) > 0x5
 	.error "gText_Rom_2E3711 may not grow beyond its original slot"
 	.endif
@@ -527,7 +527,7 @@ sTrainerClassName_FISHERMAN:
 	.globl gText_Rom_2E371C
 gText_Rom_2E371C: @ 0x082E371C
 sTrainerClassName_TRIATHLETE:
-	.string "トライアスリート$"
+	.string "トライアスリート{EOS}"
 	.if (. - gText_Rom_2E371C) > 0x9
 	.error "gText_Rom_2E371C may not grow beyond its original slot"
 	.endif
@@ -540,7 +540,7 @@ sTrainerClassName_TRIATHLETE:
 	.globl gText_Rom_2E3727
 gText_Rom_2E3727: @ 0x082E3727
 sTrainerClassName_DRAGON_TAMER:
-	.string "ドラゴンつかい$"
+	.string "ドラゴンつかい{EOS}"
 	.if (. - gText_Rom_2E3727) > 0x8
 	.error "gText_Rom_2E3727 may not grow beyond its original slot"
 	.endif
@@ -554,7 +554,7 @@ sTrainerClassName_DRAGON_TAMER:
 	.globl gText_Rom_2E3732
 gText_Rom_2E3732: @ 0x082E3732
 sTrainerClassName_NINJA_BOY:
-	.string "ニンジャごっこ$"
+	.string "ニンジャごっこ{EOS}"
 	.if (. - gText_Rom_2E3732) != 0x8
 	.error "gText_Rom_2E3732 must retain its original byte length"
 	.endif
@@ -567,7 +567,7 @@ sTrainerClassName_NINJA_BOY:
 	.globl gText_Rom_2E373D
 gText_Rom_2E373D: @ 0x082E373D
 sTrainerClassName_BATTLE_GIRL:
-	.string "バトルガール$"
+	.string "バトルガール{EOS}"
 	.if (. - gText_Rom_2E373D) != 0x7
 	.error "gText_Rom_2E373D must retain its original byte length"
 	.endif
@@ -580,7 +580,7 @@ sTrainerClassName_BATTLE_GIRL:
 	.globl gText_Rom_2E3748
 gText_Rom_2E3748: @ 0x082E3748
 sTrainerClassName_PARASOL_LADY:
-	.string "パラソルおねえさん$"
+	.string "パラソルおねえさん{EOS}"
 	.if (. - gText_Rom_2E3748) != 0xa
 	.error "gText_Rom_2E3748 must retain its original byte length"
 	.endif
@@ -593,7 +593,7 @@ sTrainerClassName_PARASOL_LADY:
 	.globl gText_Rom_2E3753
 gText_Rom_2E3753: @ 0x082E3753
 sTrainerClassName_SWIMMER_F:
-	.string "ビキニのおねえさん$"
+	.string "ビキニのおねえさん{EOS}"
 	.if (. - gText_Rom_2E3753) != 0xa
 	.error "gText_Rom_2E3753 must retain its original byte length"
 	.endif
@@ -606,7 +606,7 @@ sTrainerClassName_SWIMMER_F:
 	.globl gText_Rom_2E375E
 gText_Rom_2E375E: @ 0x082E375E
 sTrainerClassName_TWINS:
-	.string "ふたごちゃん$"
+	.string "ふたごちゃん{EOS}"
 	.if (. - gText_Rom_2E375E) != 0x7
 	.error "gText_Rom_2E375E must retain its original byte length"
 	.endif
@@ -618,7 +618,7 @@ sTrainerClassName_TWINS:
 	.globl gText_Rom_2E3769
 gText_Rom_2E3769: @ 0x082E3769
 sTrainerClassName_SAILOR:
-	.string "ふなのり$"
+	.string "ふなのり{EOS}"
 	.if (. - gText_Rom_2E3769) > 0x5
 	.error "gText_Rom_2E3769 may not grow beyond its original slot"
 	.endif
@@ -632,7 +632,7 @@ sTrainerClassName_SAILOR:
 	.globl gText_Rom_2E3774
 gText_Rom_2E3774: @ 0x082E3774
 sTrainerClassName_COOLTRAINER_2:
-	.string "エリートレーナー$"
+	.string "エリートレーナー{EOS}"
 	.if (. - gText_Rom_2E3774) != 0x9
 	.error "gText_Rom_2E3774 must retain its original byte length"
 	.endif
@@ -644,7 +644,7 @@ sTrainerClassName_COOLTRAINER_2:
 	.globl gText_Rom_2E377F
 gText_Rom_2E377F: @ 0x082E377F
 sTrainerClassName_MAGMA_ADMIN:
-	.string "マグマだんかんぶ$"
+	.string "マグマだんかんぶ{EOS}"
 	.if (. - gText_Rom_2E377F) > 0x9
 	.error "gText_Rom_2E377F may not grow beyond its original slot"
 	.endif
@@ -658,7 +658,7 @@ sTrainerClassName_MAGMA_ADMIN:
 	.globl gText_Rom_2E378A
 gText_Rom_2E378A: @ 0x082E378A
 sTrainerClassName_RIVAL:
-	.string "ポケモントレーナー$"
+	.string "ポケモントレーナー{EOS}"
 	.if (. - gText_Rom_2E378A) != 0xa
 	.error "gText_Rom_2E378A must retain its original byte length"
 	.endif
@@ -670,7 +670,7 @@ sTrainerClassName_RIVAL:
 	.globl gText_Rom_2E3795
 gText_Rom_2E3795: @ 0x082E3795
 sTrainerClassName_BUG_CATCHER:
-	.string "むしとりしょうねん$"
+	.string "むしとりしょうねん{EOS}"
 	.if (. - gText_Rom_2E3795) > 0xa
 	.error "gText_Rom_2E3795 may not grow beyond its original slot"
 	.endif
@@ -683,7 +683,7 @@ sTrainerClassName_BUG_CATCHER:
 	.globl gText_Rom_2E37A0
 gText_Rom_2E37A0: @ 0x082E37A0
 sTrainerClassName_PKMN_RANGER:
-	.string "ポケモンレンジャー$"
+	.string "ポケモンレンジャー{EOS}"
 	.if (. - gText_Rom_2E37A0) > 0xa
 	.error "gText_Rom_2E37A0 may not grow beyond its original slot"
 	.endif
@@ -697,7 +697,7 @@ sTrainerClassName_PKMN_RANGER:
 	.globl gText_Rom_2E37AB
 gText_Rom_2E37AB: @ 0x082E37AB
 sTrainerClassName_MAGMA_LEADER:
-	.string "マグマだんリーダー$"
+	.string "マグマだんリーダー{EOS}"
 	.if (. - gText_Rom_2E37AB) != 0xa
 	.error "gText_Rom_2E37AB must retain its original byte length"
 	.endif
@@ -709,7 +709,7 @@ sTrainerClassName_MAGMA_LEADER:
 	.globl gText_Rom_2E37B6
 gText_Rom_2E37B6: @ 0x082E37B6
 sTrainerClassName_LASS:
-	.string "ミニスカート$"
+	.string "ミニスカート{EOS}"
 	.if (. - gText_Rom_2E37B6) > 0x7
 	.error "gText_Rom_2E37B6 may not grow beyond its original slot"
 	.endif
@@ -722,7 +722,7 @@ sTrainerClassName_LASS:
 	.globl gText_Rom_2E37C1
 gText_Rom_2E37C1: @ 0x082E37C1
 sTrainerClassName_YOUNG_COUPLE:
-	.string "ラブラブカップル$"
+	.string "ラブラブカップル{EOS}"
 	.if (. - gText_Rom_2E37C1) > 0x9
 	.error "gText_Rom_2E37C1 may not grow beyond its original slot"
 	.endif
@@ -735,7 +735,7 @@ sTrainerClassName_YOUNG_COUPLE:
 	.globl gText_Rom_2E37CC
 gText_Rom_2E37CC: @ 0x082E37CC
 sTrainerClassName_OLD_COUPLE:
-	.string "きんこんしき$"
+	.string "きんこんしき{EOS}"
 	.if (. - gText_Rom_2E37CC) > 0x7
 	.error "gText_Rom_2E37CC may not grow beyond its original slot"
 	.endif
@@ -749,7 +749,7 @@ sTrainerClassName_OLD_COUPLE:
 	.globl gText_Rom_2E37D7
 gText_Rom_2E37D7: @ 0x082E37D7
 sTrainerClassName_SIS_AND_BRO:
-	.string "うみきょうだい$"
+	.string "うみきょうだい{EOS}"
 	.if (. - gText_Rom_2E37D7) != 0x8
 	.error "gText_Rom_2E37D7 must retain its original byte length"
 	.endif
@@ -761,7 +761,7 @@ sTrainerClassName_SIS_AND_BRO:
 	.globl gText_Rom_2E37E2
 gText_Rom_2E37E2: @ 0x082E37E2
 sTrainerClassName_SALON_MAIDEN:
-	.string "タワータイクーン$"
+	.string "タワータイクーン{EOS}"
 	.if (. - gText_Rom_2E37E2) > 0x9
 	.error "gText_Rom_2E37E2 may not grow beyond its original slot"
 	.endif
@@ -774,7 +774,7 @@ sTrainerClassName_SALON_MAIDEN:
 	.globl gText_Rom_2E37ED
 gText_Rom_2E37ED: @ 0x082E37ED
 sTrainerClassName_DOME_ACE:
-	.string "ドームスーパースター$"
+	.string "ドームスーパースター{EOS}"
 	.if (. - gText_Rom_2E37ED) > 0xb
 	.error "gText_Rom_2E37ED may not grow beyond its original slot"
 	.endif
@@ -786,7 +786,7 @@ sTrainerClassName_DOME_ACE:
 	.globl gText_Rom_2E37F8
 gText_Rom_2E37F8: @ 0x082E37F8
 sTrainerClassName_PALACE_MAVEN:
-	.string "パレスガーディアン$"
+	.string "パレスガーディアン{EOS}"
 	.if (. - gText_Rom_2E37F8) > 0xa
 	.error "gText_Rom_2E37F8 may not grow beyond its original slot"
 	.endif
@@ -799,7 +799,7 @@ sTrainerClassName_PALACE_MAVEN:
 	.globl gText_Rom_2E3803
 gText_Rom_2E3803: @ 0x082E3803
 sTrainerClassName_ARENA_TYCOON:
-	.string "アリーナキャプテン$"
+	.string "アリーナキャプテン{EOS}"
 	.if (. - gText_Rom_2E3803) > 0xa
 	.error "gText_Rom_2E3803 may not grow beyond its original slot"
 	.endif
@@ -812,7 +812,7 @@ sTrainerClassName_ARENA_TYCOON:
 	.globl gText_Rom_2E380E
 gText_Rom_2E380E: @ 0x082E380E
 sTrainerClassName_FACTORY_HEAD:
-	.string "ファクトリーヘッド$"
+	.string "ファクトリーヘッド{EOS}"
 	.if (. - gText_Rom_2E380E) > 0xa
 	.error "gText_Rom_2E380E may not grow beyond its original slot"
 	.endif
@@ -825,7 +825,7 @@ sTrainerClassName_FACTORY_HEAD:
 	.globl gText_Rom_2E3819
 gText_Rom_2E3819: @ 0x082E3819
 sTrainerClassName_PIKE_QUEEN:
-	.string "チューブクイーン$"
+	.string "チューブクイーン{EOS}"
 	.if (. - gText_Rom_2E3819) > 0x9
 	.error "gText_Rom_2E3819 may not grow beyond its original slot"
 	.endif
@@ -838,7 +838,7 @@ sTrainerClassName_PIKE_QUEEN:
 	.globl gText_Rom_2E3824
 gText_Rom_2E3824: @ 0x082E3824
 sTrainerClassName_PYRAMID_KING:
-	.string "ピラミッドキング$"
+	.string "ピラミッドキング{EOS}"
 	.if (. - gText_Rom_2E3824) > 0x9
 	.error "gText_Rom_2E3824 may not grow beyond its original slot"
 	.endif
@@ -852,7 +852,7 @@ sTrainerClassName_PYRAMID_KING:
 	.globl gText_Rom_2E382F
 gText_Rom_2E382F: @ 0x082E382F
 sTrainerClassName_RS_PROTAG:
-	.string "ポケモントレーナー$"
+	.string "ポケモントレーナー{EOS}"
 	.if (. - gText_Rom_2E382F) != 0xa
 	.error "gText_Rom_2E382F must retain its original byte length"
 	.endif

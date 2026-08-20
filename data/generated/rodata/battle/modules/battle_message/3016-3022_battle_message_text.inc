@@ -1,7 +1,7 @@
 	@ src/battle_message.c:228 battle_message_line_228
 	.globl gText_Rom_5A9935
 gText_Rom_5A9935: @ 0x085A9935
-	.string "{B_EFF_NAME_WITH_PREFIX}は\nこおりづけになった!$"
+	.string "{B_EFF_NAME_WITH_PREFIX}は\nこおりづけになった!{EOS}"
 	.if (. - gText_Rom_5A9935) > 0xf
 	.error "gText_Rom_5A9935 may not grow beyond its original slot"
 	.endif
@@ -14,7 +14,7 @@ gText_Rom_5A9935: @ 0x085A9935
 	.byte 0x09, 0x16, 0x15, 0x50, 0x10, 0xAB, 0xFF
 	.globl gText_Rom_5A995B
 gText_Rom_5A995B: @ 0x085A995B
-	.string "{B_ATK_NAME_WITH_PREFIX}は\nこおって しまって うごかない!$"
+	.string "{B_ATK_NAME_WITH_PREFIX}は\nこおって しまって うごかない!{EOS}"
 	.if (. - gText_Rom_5A995B) > 0x15
 	.error "gText_Rom_5A995B may not grow beyond its original slot"
 	.endif
@@ -28,7 +28,7 @@ gText_Rom_5A995B: @ 0x085A995B
 	.byte 0x0A, 0x05, 0x28, 0x37, 0xFE, 0xFD, 0x14, 0x44, 0x00, 0x14, 0x09, 0x10, 0xAB, 0xFF
 	.globl gText_Rom_5A999E
 gText_Rom_5A999E: @ 0x085A999E
-	.string "{B_EFF_NAME_WITH_PREFIX}は まひして\nわざが でにくくなった!$"
+	.string "{B_EFF_NAME_WITH_PREFIX}は まひして\nわざが でにくくなった!{EOS}"
 	.if (. - gText_Rom_5A999E) > 0x16
 	.error "gText_Rom_5A999E may not grow beyond its original slot"
 	.endif
@@ -41,7 +41,7 @@ gText_Rom_5A999E: @ 0x085A999E
 	.byte 0x00, 0x2C, 0x3C, 0x37, 0x00, 0x44, 0x16, 0x08, 0x08, 0x15, 0x50, 0x10, 0xAB, 0xFF
 	.globl gText_Rom_5A99D2
 gText_Rom_5A99D2: @ 0x085A99D2
-	.string "{B_ATK_NAME_WITH_PREFIX}は\nからだが しびれて うごけない$"
+	.string "{B_ATK_NAME_WITH_PREFIX}は\nからだが しびれて うごけない{EOS}"
 	.if (. - gText_Rom_5A99D2) > 0x14
 	.error "gText_Rom_5A99D2 may not grow beyond its original slot"
 	.endif

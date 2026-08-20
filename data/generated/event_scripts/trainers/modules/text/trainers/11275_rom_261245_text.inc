@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2993 Route128_Text_IsaiahPostRematch
 	.globl gText_Rom_261245
 gText_Rom_261245: @ 0x08261245
-	.string "あきらめなきゃ いつかは かてる\nサイユウシティにも たどりつく……!$"
+	.string "あきらめなきゃ いつかは かてる\nサイユウシティにも たどりつく……!{EOS}"
 	.if (. - gText_Rom_261245) > 0x24
 	.error "gText_Rom_261245 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_voices.h:346 easy_chat_group_voices_line_346
 	.globl gText_Rom_582A2D
 gText_Rom_582A2D: @ 0x08582A2D
-	.string "ラララ$"
+	.string "ラララ{EOS}"
 	.if (. - gText_Rom_582A2D) > 0x4
 	.error "gText_Rom_582A2D may not grow beyond its original slot"
 	.endif

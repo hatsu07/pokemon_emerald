@@ -1,7 +1,7 @@
 	@ src/data/trainers.h:16146 trainers_line_16146
 	.globl gText_Rom_56256B
 gText_Rom_56256B: @ 0x0856256B
-	.string "タロウ$"
+	.string "タロウ{EOS}"
 	.if (. - gText_Rom_56256B) > 0x4
 	.error "gText_Rom_56256B may not grow beyond its original slot"
 	.endif
@@ -49,7 +49,7 @@ gText_Rom_56256B: @ 0x0856256B
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.globl gText_Rom_5627B5
 gText_Rom_5627B5: @ 0x085627B5
-	.string "ユウゴ$"
+	.string "ユウゴ{EOS}"
 	.if (. - gText_Rom_5627B5) > 0x4
 	.error "gText_Rom_5627B5 may not grow beyond its original slot"
 	.endif

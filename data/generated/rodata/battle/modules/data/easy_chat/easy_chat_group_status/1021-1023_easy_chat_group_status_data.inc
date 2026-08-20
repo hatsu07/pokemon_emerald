@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_status.h:310 easy_chat_group_status_line_310
 	.globl gText_Rom_574A01
 gText_Rom_574A01: @ 0x08574A01
-	.string "たくましい$"
+	.string "たくましい{EOS}"
 	.if (. - gText_Rom_574A01) > 0x6
 	.error "gText_Rom_574A01 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_574A01: @ 0x08574A01
 	@ src/data/easy_chat/easy_chat_group_status.h:316 easy_chat_group_status_line_316 (+2 aliases)
 	.globl gText_Rom_574A07
 gText_Rom_574A07: @ 0x08574A07
-	.string "たくましさ$"
+	.string "たくましさ{EOS}"
 	.if (. - gText_Rom_574A07) > 0x6
 	.error "gText_Rom_574A07 may not grow beyond its original slot"
 	.endif

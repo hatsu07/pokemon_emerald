@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2405 Route123_Text_BraxtonIntro (+1 aliases)
 	.globl gText_Rom_25F9DA
 gText_Rom_25F9DA: @ 0x0825F9DA
-	.string "たくさん ジムの バッジを\nもっている みたいだね!\pほんとうに それだけの ちからが あるか\nたしかめさせて もらうよ!$"
+	.string "たくさん ジムの バッジを\nもっている みたいだね!\pほんとうに それだけの ちからが あるか\nたしかめさせて もらうよ!{EOS}"
 	.if (. - gText_Rom_25F9DA) > 0x3e
 	.error "gText_Rom_25F9DA may not grow beyond its original slot"
 	.endif

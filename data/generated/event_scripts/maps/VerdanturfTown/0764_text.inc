@@ -1,7 +1,7 @@
 	@ data/maps/VerdanturfTown/scripts.inc:64 VerdanturfTown_Text_ManTryingToDigTunnel
 	.globl gText_Rom_1E60F0
 gText_Rom_1E60F0: @ 0x081E60F0
-	.string "わたしの パパが いってたの\pこの トンネルって おーきな おとに\nはんのうして さわぎだす おくびょうな\lポケモンが いっぱい なんだって!\pだから かいはつ こうじ やめたんだけど\nおとこの ひとが ひとりで\lトンネルを ほろうと してるんだって!$"
+	.string "わたしの パパが いってたの\pこの トンネルって おーきな おとに\nはんのうして さわぎだす おくびょうな\lポケモンが いっぱい なんだって!\pだから かいはつ こうじ やめたんだけど\nおとこの ひとが ひとりで\lトンネルを ほろうと してるんだって!{EOS}"
 	.if (. - gText_Rom_1E60F0) > 0x7f
 	.error "gText_Rom_1E60F0 may not grow beyond its original slot"
 	.endif

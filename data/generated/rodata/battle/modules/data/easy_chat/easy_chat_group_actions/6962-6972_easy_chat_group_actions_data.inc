@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_actions.h:16 easy_chat_group_actions_line_16 (+1 aliases)
 	.globl gText_Rom_5EC063
 gText_Rom_5EC063: @ 0x085EC063
-	.string "あげる$"
+	.string "あげる{EOS}"
 	.if (. - gText_Rom_5EC063) > 0x4
 	.error "gText_Rom_5EC063 may not grow beyond its original slot"
 	.endif
@@ -58,7 +58,7 @@ gText_Rom_5EC063: @ 0x085EC063
 	.byte 0x19, 0x60, 0xAE, 0x7E, 0x00, 0x03, 0x3B, 0x09, 0x15, 0x08, 0x15, 0x50, 0x13
 	.globl gText_Rom_5EC344
 gText_Rom_5EC344: @ 0x085EC344
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5EC344) > 0x4
 	.error "gText_Rom_5EC344 may not grow beyond its original slot"
 	.endif
@@ -73,7 +73,7 @@ gText_Rom_5EC344: @ 0x085EC344
 	.2byte 0x1508, 0x1350
 	.globl gText_Rom_5EC37C
 gText_Rom_5EC37C: @ 0x085EC37C
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5EC37C) > 0x4
 	.error "gText_Rom_5EC37C may not grow beyond its original slot"
 	.endif
@@ -109,7 +109,7 @@ gText_Rom_5EC37C: @ 0x085EC37C
 	.2byte 0x370B, 0x1350
 	.globl gText_Rom_5EC504
 gText_Rom_5EC504: @ 0x085EC504
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5EC504) > 0x4
 	.error "gText_Rom_5EC504 may not grow beyond its original slot"
 	.endif
@@ -144,7 +144,7 @@ gText_Rom_5EC504: @ 0x085EC504
 	.2byte 0x034A, 0x3638, 0x0014, 0x0814, 0x034A, 0x002D
 	.globl gText_Rom_5EC684
 gText_Rom_5EC684: @ 0x085EC684
-	.string "あげる$"
+	.string "あげる{EOS}"
 	.if (. - gText_Rom_5EC684) > 0x4
 	.error "gText_Rom_5EC684 may not grow beyond its original slot"
 	.endif
@@ -166,7 +166,7 @@ gText_Rom_5EC684: @ 0x085EC684
 	.2byte 0x001A, 0x503F, 0x0210, 0x0016, 0x0926
 	.globl gText_Rom_5EC732
 gText_Rom_5EC732: @ 0x085EC732
-	.string "られない$"
+	.string "られない{EOS}"
 	.if (. - gText_Rom_5EC732) > 0x5
 	.error "gText_Rom_5EC732 may not grow beyond its original slot"
 	.endif

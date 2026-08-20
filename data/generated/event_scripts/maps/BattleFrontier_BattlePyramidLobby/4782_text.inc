@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc:586 BattleFrontier_BattlePyramidLobby_Text_HeldItemsMovedToBag
 	.globl gText_Rom_22CA3F
 gText_Rom_22CA3F: @ 0x0822CA3F
-	.string "もたせている どうぐは\nすべて {PLAYER}さんの バトルバッグに\lいれておきますぞ!$"
+	.string "もたせている どうぐは\nすべて {PLAYER}さんの バトルバッグに\lいれておきますぞ!{EOS}"
 	.if (. - gText_Rom_22CA3F) > 0x28
 	.error "gText_Rom_22CA3F may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA159
 gText_Rom_5CA159: @ 0x085CA159
-	.string "ポケモンか　もどるを　せんたく$"
+	.string "ポケモンか　もどるを　せんたく{EOS}"
 	.if (. - gText_Rom_5CA159) > 0x10
 	.error "gText_Rom_5CA159 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5CA159: @ 0x085CA159
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA169
 gText_Rom_5CA169: @ 0x085CA169
-	.string "ポケモンを　えらんで　けってい$"
+	.string "ポケモンを　えらんで　けってい{EOS}"
 	.if (. - gText_Rom_5CA169) != 0x10
 	.error "gText_Rom_5CA169 must retain its original byte length"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CA169: @ 0x085CA169
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA179
 gText_Rom_5CA179: @ 0x085CA179
-	.string "サイクリングを　たのしもう！$"
+	.string "サイクリングを　たのしもう！{EOS}"
 	.if (. - gText_Rom_5CA179) > 0xf
 	.error "gText_Rom_5CA179 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5CA179: @ 0x085CA179
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA188
 gText_Rom_5CA188: @ 0x085CA188
-	.string "すでに　つかっています！$"
+	.string "すでに　つかっています！{EOS}"
 	.if (. - gText_Rom_5CA188) > 0xd
 	.error "gText_Rom_5CA188 may not grow beyond its original slot"
 	.endif

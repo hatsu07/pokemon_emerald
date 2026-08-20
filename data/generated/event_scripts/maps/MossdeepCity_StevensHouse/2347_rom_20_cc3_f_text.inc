@@ -1,7 +1,7 @@
 	@ data/maps/MossdeepCity_StevensHouse/scripts.inc:175 MossdeepCity_StevensHouse_Text_CollectionOfRareRocks
 	.globl gText_Rom_20CC3F
 gText_Rom_20CC3F: @ 0x0820CC3F
-	.string "ダイゴの あつめた\nめずらしい いしが かざってある!$"
+	.string "ダイゴの あつめた\nめずらしい いしが かざってある!{EOS}"
 	.if (. - gText_Rom_20CC3F) > 0x1c
 	.error "gText_Rom_20CC3F may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:3155 Route131_Text_SusieDefeat (+1 aliases)
 	.globl gText_Rom_261893
 gText_Rom_261893: @ 0x08261893
-	.string "みかけに よらず\nつよいわねーっ!$"
+	.string "みかけに よらず\nつよいわねーっ!{EOS}"
 	.if (. - gText_Rom_261893) > 0x12
 	.error "gText_Rom_261893 may not grow beyond its original slot"
 	.endif

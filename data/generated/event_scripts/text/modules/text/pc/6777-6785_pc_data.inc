@@ -1,7 +1,7 @@
 	@ data/text/pc.inc:5 gText_WhichPCShouldBeAccessed
 	.globl gText_Rom_2436CD
 gText_Rom_2436CD: @ 0x082436CD
-	.string "どこの パソコンに せつぞく して\nつうしん しますか?$"
+	.string "どこの パソコンに せつぞく して\nつうしん しますか?{EOS}"
 	.if (. - gText_Rom_2436CD) > 0x1d
 	.error "gText_Rom_2436CD may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_2436CD: @ 0x082436CD
 	@ data/text/pc.inc:9 gText_AccessedSomeonesPC
 	.globl gText_Rom_2436EA
 gText_Rom_2436EA: @ 0x082436EA
-	.string "だれかの パソコンに せつぞく した!$"
+	.string "だれかの パソコンに せつぞく した!{EOS}"
 	.if (. - gText_Rom_2436EA) > 0x14
 	.error "gText_Rom_2436EA may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_2436EA: @ 0x082436EA
 	@ data/text/pc.inc:12 gText_StorageSystemOpened
 	.globl gText_Rom_2436FE
 gText_Rom_2436FE: @ 0x082436FE
-	.string "ポケモンの あずかり システムを\nよびだした!$"
+	.string "ポケモンの あずかり システムを\nよびだした!{EOS}"
 	.if (. - gText_Rom_2436FE) > 0x18
 	.error "gText_Rom_2436FE may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_2436FE: @ 0x082436FE
 	@ data/text/pc.inc:16 gText_AccessedPlayersPC
 	.globl gText_Rom_243716
 gText_Rom_243716: @ 0x08243716
-	.string "{PLAYER}の パソコンに せつぞくした!$"
+	.string "{PLAYER}の パソコンに せつぞくした!{EOS}"
 	.if (. - gText_Rom_243716) > 0x12
 	.error "gText_Rom_243716 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_243716: @ 0x08243716
 	@ data/text/pc.inc:19 gText_AccessedLanettesPC
 	.globl gText_Rom_243728
 gText_Rom_243728: @ 0x08243728
-	.string "マユミの パソコンに せつぞく した!$"
+	.string "マユミの パソコンに せつぞく した!{EOS}"
 	.if (. - gText_Rom_243728) > 0x14
 	.error "gText_Rom_243728 may not grow beyond its original slot"
 	.endif

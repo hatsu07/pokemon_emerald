@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_House4/scripts.inc:15 LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis
 	.globl gText_Rom_20A56C
 gText_Rom_20A56C: @ 0x0820A56C
-	.string "そういや トクサネと ルネの あいだには\nふかい ふかい かいこうが ある\p……そんな はなしも\nだれかが いってた ことなんだけど$"
+	.string "そういや トクサネと ルネの あいだには\nふかい ふかい かいこうが ある\p……そんな はなしも\nだれかが いってた ことなんだけど{EOS}"
 	.if (. - gText_Rom_20A56C) > 0x43
 	.error "gText_Rom_20A56C may not grow beyond its original slot"
 	.endif

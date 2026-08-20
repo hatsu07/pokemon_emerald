@@ -1,7 +1,7 @@
 	@ data/maps/RusturfTunnel/scripts.inc:466 RusturfTunnel_Text_MikePostBattle
 	.globl gText_Rom_213D9D
 gText_Rom_213D9D: @ 0x08213D9D
-	.string "ここって ポケモンを まもるため\nかいはつ こうじを やめたんだろ?\lそれって いい はなし だよな$"
+	.string "ここって ポケモンを まもるため\nかいはつ こうじを やめたんだろ?\lそれって いい はなし だよな{EOS}"
 	.if (. - gText_Rom_213D9D) > 0x33
 	.error "gText_Rom_213D9D may not grow beyond its original slot"
 	.endif

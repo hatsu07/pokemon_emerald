@@ -1,7 +1,7 @@
 	@ src/data/region_map/region_map_entries.h:574 region_map_entries_line_574
 	.globl gText_Rom_57C967
 gText_Rom_57C967: @ 0x0857C967
-	.string "ひでりのいわと$"
+	.string "ひでりのいわと{EOS}"
 	.if (. - gText_Rom_57C967) > 0x8
 	.error "gText_Rom_57C967 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_57C967: @ 0x0857C967
 	@ src/data/region_map/region_map_entries.h:581 region_map_entries_line_581
 	.globl gText_Rom_57C96F
 gText_Rom_57C96F: @ 0x0857C96F
-	.string "こじまのよこあな$"
+	.string "こじまのよこあな{EOS}"
 	.if (. - gText_Rom_57C96F) > 0x9
 	.error "gText_Rom_57C96F may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_57C96F: @ 0x0857C96F
 	@ src/data/region_map/region_map_entries.h:588 region_map_entries_line_588
 	.globl gText_Rom_57C978
 gText_Rom_57C978: @ 0x0857C978
-	.string "さばくいせき$"
+	.string "さばくいせき{EOS}"
 	.if (. - gText_Rom_57C978) > 0x7
 	.error "gText_Rom_57C978 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_57C978: @ 0x0857C978
 	@ src/data/region_map/region_map_entries.h:595 region_map_entries_line_595
 	.globl gText_Rom_57C97F
 gText_Rom_57C97F: @ 0x0857C97F
-	.string "こだいづか$"
+	.string "こだいづか{EOS}"
 	.if (. - gText_Rom_57C97F) > 0x6
 	.error "gText_Rom_57C97F may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_57C97F: @ 0x0857C97F
 	@ src/data/region_map/region_map_entries.h:602 region_map_entries_line_602
 	.globl gText_Rom_57C985
 gText_Rom_57C985: @ 0x0857C985
-	.string "トラックのなか$"
+	.string "トラックのなか{EOS}"
 	.if (. - gText_Rom_57C985) > 0x8
 	.error "gText_Rom_57C985 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_57C985: @ 0x0857C985
 	@ src/data/region_map/region_map_entries.h:609 region_map_entries_line_609 (+1 aliases)
 	.globl gText_Rom_57C98D
 gText_Rom_57C98D: @ 0x0857C98D
-	.string "そらのはしら$"
+	.string "そらのはしら{EOS}"
 	.if (. - gText_Rom_57C98D) > 0x7
 	.error "gText_Rom_57C98D may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_57C98D: @ 0x0857C98D
 	@ src/data/easy_chat/easy_chat_group_events.h:17 gEasyChatWord_SecretBase (+3 aliases)
 	.globl gText_Rom_57C994
 gText_Rom_57C994: @ 0x0857C994
-	.string "ひみつきち$"
+	.string "ひみつきち{EOS}"
 	.if (. - gText_Rom_57C994) > 0x6
 	.error "gText_Rom_57C994 may not grow beyond its original slot"
 	.endif

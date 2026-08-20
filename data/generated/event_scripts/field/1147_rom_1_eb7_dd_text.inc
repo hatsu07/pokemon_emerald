@@ -1,7 +1,7 @@
 	@ field-script:0x1EB575 FieldScriptText_1EB7DD
 	.globl gText_Rom_1EB7DD
 gText_Rom_1EB7DD: @ 0x081EB7DD
-	.string "「かせきマニアの　いえ」\nめずらしい　かせき　ください！$"
+	.string "「かせきマニアの　いえ」\nめずらしい　かせき　ください！{EOS}"
 	.if (. - gText_Rom_1EB7DD) > 0x1d
 	.error "gText_Rom_1EB7DD may not grow beyond its original slot"
 	.endif

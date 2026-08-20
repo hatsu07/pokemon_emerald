@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1448 Route115_Text_TimothyRematchDefeat (+1 aliases)
 	.globl gText_Rom_25D18D
 gText_Rom_25D18D: @ 0x0825D18D
-	.string "あいかわらずの つよさだ……!$"
+	.string "あいかわらずの つよさだ……!{EOS}"
 	.if (. - gText_Rom_25D18D) > 0x10
 	.error "gText_Rom_25D18D may not grow beyond its original slot"
 	.endif

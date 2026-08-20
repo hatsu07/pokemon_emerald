@@ -1,7 +1,7 @@
 	@ src/frontier_util.c:116 frontier_util_line_116
 	.globl gText_Rom_276D5F
 gText_Rom_276D5F: @ 0x08276D5F
-	.string "ありがとう……$"
+	.string "ありがとう……{EOS}"
 	.if (. - gText_Rom_276D5F) > 0x8
 	.error "gText_Rom_276D5F may not grow beyond its original slot"
 	.endif
@@ -11,26 +11,26 @@ gText_Rom_276D5F: @ 0x08276D5F
 	@ analyzed canonical ROM range 0x08276D67-0x08276E15
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_08276D67: @ 0x08276D67
-	.string "アッハッハッ!!　はずかしく　ないのっ!?\nみんなが　みてるよっ!!$"
+	.string "アッハッハッ!!　はずかしく　ないのっ!?\nみんなが　みてるよっ!!{EOS}"
 EventText_JP_08276D8A: @ 0x08276D8A
-	.string "クッ……　なんて　こと……$"
+	.string "クッ……　なんて　こと……{EOS}"
 EventText_JP_08276D98: @ 0x08276D98
-	.string "ドームスーパースターの\nなまえは　かざりじゃ　ないっ!!$"
+	.string "ドームスーパースターの\nなまえは　かざりじゃ　ないっ!!{EOS}"
 EventText_JP_08276DB5: @ 0x08276DB5
-	.string "アッハッハッ!!　ステキっ!!$"
+	.string "アッハッハッ!!　ステキっ!!{EOS}"
 EventText_JP_08276DC5: @ 0x08276DC5
-	.string "おつかれさん!\nイイ　べんきょうに　なったろ?$"
+	.string "おつかれさん!\nイイ　べんきょうに　なったろ?{EOS}"
 EventText_JP_08276DDD: @ 0x08276DDD
-	.string "イイねぇー!\nおめえ　わかってる　ねぇー!$"
+	.string "イイねぇー!\nおめえ　わかってる　ねぇー!{EOS}"
 EventText_JP_08276DF3: @ 0x08276DF3
-	.string "おいおいおいーー!!\nもう　おしまいかー?$"
+	.string "おいおいおいーー!!\nもう　おしまいかー?{EOS}"
 EventText_JP_08276E09: @ 0x08276E09
-	.string "なんだとぉ……$"
+	.string "なんだとぉ……{EOS}"
 EventText_JP_08276E11: @ 0x08276E11
-	.string "フン……$"
+	.string "フン……{EOS}"
 	.globl gText_Rom_276E16
 gText_Rom_276E16: @ 0x08276E16
-	.string "くっ……$"
+	.string "くっ……{EOS}"
 	.if (. - gText_Rom_276E16) > 0x5
 	.error "gText_Rom_276E16 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/data/moves_info.h:1741 moves_info_line_1741
 	.globl gText_Rom_5E9012
 gText_Rom_5E9012: @ 0x085E9012
-	.string "すいとる$"
+	.string "すいとる{EOS}"
 	.if (. - gText_Rom_5E9012) > 0x5
 	.error "gText_Rom_5E9012 may not grow beyond its original slot"
 	.endif

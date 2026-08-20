@@ -1,7 +1,7 @@
 	@ src/strings.c:402 gText_XNatureFatefulEncounter
 	.globl gText_Rom_5CA512
 gText_Rom_5CA512: @ 0x085CA512
-	.string "{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5}せいかく {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}のとき\nうんめいてきな であいを した$"
+	.string "{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5}せいかく {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}のとき\nうんめいてきな であいを した{EOS}"
 	.if (. - gText_Rom_5CA512) > 0x29
 	.error "gText_Rom_5CA512 may not grow beyond its original slot"
 	.endif
@@ -22,7 +22,7 @@ gPokemonSummaryScreenData_085CA53B: @ 0x085CA53B
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA563
 gText_Rom_5CA563: @ 0x085CA563
-	.string "{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5}せいかく$"
+	.string "{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5}せいかく{EOS}"
 	.if (. - gText_Rom_5CA563) != 0xd
 	.error "gText_Rom_5CA563 must retain its original byte length"
 	.endif
@@ -35,7 +35,7 @@ gText_Rom_5CA563: @ 0x085CA563
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA570
 gText_Rom_5CA570: @ 0x085CA570
-	.string "{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5}せいかく {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}のとき\nどこかで であった$"
+	.string "{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5}せいかく {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}のとき\nどこかで であった{EOS}"
 	.if (. - gText_Rom_5CA570) != 0x23
 	.error "gText_Rom_5CA570 must retain its original byte length"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5CA570: @ 0x085CA570
 	@ src/strings.c:406 gText_XNatureHatchedSomewhereAt
 	.globl gText_Rom_5CA593
 gText_Rom_5CA593: @ 0x085CA593
-	.string "{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5}せいかく {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}のとき\nどこかで かえった$"
+	.string "{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5}せいかく {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}のとき\nどこかで かえった{EOS}"
 	.if (. - gText_Rom_5CA593) > 0x23
 	.error "gText_Rom_5CA593 may not grow beyond its original slot"
 	.endif
@@ -57,7 +57,7 @@ gText_Rom_5CA593: @ 0x085CA593
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA5B6
 gText_Rom_5CA5B6: @ 0x085CA5B6
-	.string "そだてや ふうふ から もらった\nふしぎな ポケモンのタマゴ$"
+	.string "そだてや ふうふ から もらった\nふしぎな ポケモンのタマゴ{EOS}"
 	.if (. - gText_Rom_5CA5B6) != 0x1f
 	.error "gText_Rom_5CA5B6 must retain its original byte length"
 	.endif
@@ -68,7 +68,7 @@ gText_Rom_5CA5B6: @ 0x085CA5B6
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA5D5
 gText_Rom_5CA5D5: @ 0x085CA5D5
-	.string "ステキな ばしょで てにいれた\nふしぎな ふしぎな ポケモンのタマゴ$"
+	.string "ステキな ばしょで てにいれた\nふしぎな ふしぎな ポケモンのタマゴ{EOS}"
 	.if (. - gText_Rom_5CA5D5) != 0x23
 	.error "gText_Rom_5CA5D5 must retain its original byte length"
 	.endif
@@ -79,7 +79,7 @@ gText_Rom_5CA5D5: @ 0x085CA5D5
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA5F8
 gText_Rom_5CA5F8: @ 0x085CA5F8
-	.string "つうしんこうかんで てにいれた\nふしぎな ポケモンのタマゴ$"
+	.string "つうしんこうかんで てにいれた\nふしぎな ポケモンのタマゴ{EOS}"
 	.if (. - gText_Rom_5CA5F8) != 0x1e
 	.error "gText_Rom_5CA5F8 must retain its original byte length"
 	.endif
@@ -90,7 +90,7 @@ gText_Rom_5CA5F8: @ 0x085CA5F8
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA616
 gText_Rom_5CA616: @ 0x085CA616
-	.string "おんせんばあさん から もらった\nふしぎな ポケモンのタマゴ$"
+	.string "おんせんばあさん から もらった\nふしぎな ポケモンのタマゴ{EOS}"
 	.if (. - gText_Rom_5CA616) != 0x1f
 	.error "gText_Rom_5CA616 must retain its original byte length"
 	.endif
@@ -101,7 +101,7 @@ gText_Rom_5CA616: @ 0x085CA616
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA635
 gText_Rom_5CA635: @ 0x085CA635
-	.string "たびの おじさん から もらった\nふしぎな ポケモンのタマゴ$"
+	.string "たびの おじさん から もらった\nふしぎな ポケモンのタマゴ{EOS}"
 	.if (. - gText_Rom_5CA635) != 0x1f
 	.error "gText_Rom_5CA635 must retain its original byte length"
 	.endif
@@ -111,7 +111,7 @@ gText_Rom_5CA635: @ 0x085CA635
 	@ src/strings.c:412 gText_ApostropheSBase
 	.globl gText_Rom_5CA654
 gText_Rom_5CA654: @ 0x085CA654
-	.string " きち$"
+	.string " きち{EOS}"
 	.if (. - gText_Rom_5CA654) > 0x4
 	.error "gText_Rom_5CA654 may not grow beyond its original slot"
 	.endif
@@ -122,7 +122,7 @@ gText_Rom_5CA654: @ 0x085CA654
 	@ src/strings.c:413 gText_OkayToDeleteFromRegistry
 	.globl gText_Rom_5CA658
 gText_Rom_5CA658: @ 0x085CA658
-	.string "{STR_VAR_1} の とうろくを\nかいじょ しても よろしい ですか?$"
+	.string "{STR_VAR_1} の とうろくを\nかいじょ しても よろしい ですか?{EOS}"
 	.if (. - gText_Rom_5CA658) > 0x1e
 	.error "gText_Rom_5CA658 may not grow beyond its original slot"
 	.endif
@@ -133,7 +133,7 @@ gText_Rom_5CA658: @ 0x085CA658
 	@ src/strings.c:414 gText_RegisteredDataDeleted
 	.globl gText_Rom_5CA676
 gText_Rom_5CA676: @ 0x085CA676
-	.string "とうろくを かいじょ しました{PAUSE_UNTIL_PRESS}$"
+	.string "とうろくを かいじょ しました{PAUSE_UNTIL_PRESS}{EOS}"
 	.if (. - gText_Rom_5CA676) > 0x12
 	.error "gText_Rom_5CA676 may not grow beyond its original slot"
 	.endif
@@ -144,7 +144,7 @@ gText_Rom_5CA676: @ 0x085CA676
 	@ src/strings.c:415 gText_NoRegistry
 	.globl gText_Rom_5CA688
 gText_Rom_5CA688: @ 0x085CA688
-	.string "とうろく リストは ありません{PAUSE_UNTIL_PRESS}$"
+	.string "とうろく リストは ありません{PAUSE_UNTIL_PRESS}{EOS}"
 	.if (. - gText_Rom_5CA688) > 0x12
 	.error "gText_Rom_5CA688 may not grow beyond its original slot"
 	.endif

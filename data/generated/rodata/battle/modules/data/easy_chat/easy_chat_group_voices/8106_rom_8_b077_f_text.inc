@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_voices.h:40 easy_chat_group_voices_line_40
 	.globl gText_Rom_8B077F
 gText_Rom_8B077F: @ 0x088B077F
-	.string "………$"
+	.string "………{EOS}"
 	.if (. - gText_Rom_8B077F) > 0x4
 	.error "gText_Rom_8B077F may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:137 MeteorFalls_1F_2R_Text_JayNotEnoughMons (+2 aliases)
 	.globl gText_Rom_2135B1
 gText_Rom_2135B1: @ 0x082135B1
-	.string "ハツ『おやおや\nわかい トレーナーさん ですねえ\pわしらと しょうぶ してくれるのなら\nポケモンを もっと つれておいで$"
+	.string "ハツ『おやおや\nわかい トレーナーさん ですねえ\pわしらと しょうぶ してくれるのなら\nポケモンを もっと つれておいで{EOS}"
 	.if (. - gText_Rom_2135B1) > 0x3d
 	.error "gText_Rom_2135B1 may not grow beyond its original slot"
 	.endif

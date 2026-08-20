@@ -1,7 +1,7 @@
 	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:420 MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp
 	.globl gText_Rom_20DF75
 gText_Rom_20DF75: @ 0x0820DF75
-	.string "マツブサ『わかった……\nねんりょうは あきらめよう……\pわたしには ほかに たしかめ なければ\nならない ことが あるようだ……$"
+	.string "マツブサ『わかった……\nねんりょうは あきらめよう……\pわたしには ほかに たしかめ なければ\nならない ことが あるようだ……{EOS}"
 	.if (. - gText_Rom_20DF75) > 0x41
 	.error "gText_Rom_20DF75 may not grow beyond its original slot"
 	.endif

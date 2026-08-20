@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2267 Route121_Text_WalterDefeat (+1 aliases)
 	.globl gText_Rom_25F471
 gText_Rom_25F471: @ 0x0825F471
-	.string "おみごと ですな$"
+	.string "おみごと ですな{EOS}"
 	.if (. - gText_Rom_25F471) > 0x9
 	.error "gText_Rom_25F471 may not grow beyond its original slot"
 	.endif

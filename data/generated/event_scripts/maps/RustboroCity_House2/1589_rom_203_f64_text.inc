@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_House2/scripts.inc:15 RustboroCity_House2_Text_RoxanneKnowsALot
 	.globl gText_Rom_203F64
 gText_Rom_203F64: @ 0x08203F64
-	.string "ジムリーダーの ツツジ ねーちゃん\nすっごい ポケモン くわしくて\lすっごい ポケモン つよいんだから!$"
+	.string "ジムリーダーの ツツジ ねーちゃん\nすっごい ポケモン くわしくて\lすっごい ポケモン つよいんだから!{EOS}"
 	.if (. - gText_Rom_203F64) > 0x35
 	.error "gText_Rom_203F64 may not grow beyond its original slot"
 	.endif

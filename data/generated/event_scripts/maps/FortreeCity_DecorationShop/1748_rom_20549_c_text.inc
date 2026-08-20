@@ -1,7 +1,7 @@
 	@ data/maps/FortreeCity_DecorationShop/scripts.inc:59 FortreeCity_DecorationShop_Text_BuyingDeskForDolls
 	.globl gText_Rom_20549C
 gText_Rom_20549C: @ 0x0820549C
-	.string "すてきな つくえを かって そのうえに\nかわいい ぬいぐるみを ならべるんだ!\pそうしないと ひみつきちに おくとき\nつちで よごれたり トゲが ささって\lぬいぐるみが かわいそう だもん!$"
+	.string "すてきな つくえを かって そのうえに\nかわいい ぬいぐるみを ならべるんだ!\pそうしないと ひみつきちに おくとき\nつちで よごれたり トゲが ささって\lぬいぐるみが かわいそう だもん!{EOS}"
 	.if (. - gText_Rom_20549C) > 0x60
 	.error "gText_Rom_20549C may not grow beyond its original slot"
 	.endif

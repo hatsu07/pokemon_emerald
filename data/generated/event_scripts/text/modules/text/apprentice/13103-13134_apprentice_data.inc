@@ -73,7 +73,7 @@ gText_Rom_270EEF: @ 0x08270EEF
 	@ data/text/apprentice.inc:589 gText_ApprenticeWhichMon2
 	.globl gText_Rom_270F12
 gText_Rom_270F12: @ 0x08270F12
-	.string "{PLAYER}さん こんにちは!\nちょっと しつもん させて ください!\p{STR_VAR_1} と {STR_VAR_2} で\nどっちを つかうか なやんでるんです!\pどっちの ポケモンが\nつよいと おもいますか?$"
+	.string "{PLAYER}さん こんにちは!\nちょっと しつもん させて ください!\p{STR_VAR_1} と {STR_VAR_2} で\nどっちを つかうか なやんでるんです!\pどっちの ポケモンが\nつよいと おもいますか?{EOS}"
 	.if (. - gText_Rom_270F12) > 0x56
 	.error "gText_Rom_270F12 may not grow beyond its original slot"
 	.endif
@@ -84,7 +84,7 @@ gText_Rom_270F12: @ 0x08270F12
 	@ data/text/apprentice.inc:592 gText_ApprenticeMonThanks2
 	.globl gText_Rom_270F68
 gText_Rom_270F68: @ 0x08270F68
-	.string "{STR_VAR_1} ですね!\nわかりました!\pよし さっそく\nつよい {STR_VAR_1}を つかまえるぞ!\pじゃあ また!$"
+	.string "{STR_VAR_1} ですね!\nわかりました!\pよし さっそく\nつよい {STR_VAR_1}を つかまえるぞ!\pじゃあ また!{EOS}"
 	.if (. - gText_Rom_270F68) > 0x30
 	.error "gText_Rom_270F68 may not grow beyond its original slot"
 	.endif
@@ -95,7 +95,7 @@ gText_Rom_270F68: @ 0x08270F68
 	@ data/text/apprentice.inc:595 gText_ApprenticeWhichMon3
 	.globl gText_Rom_270F98
 gText_Rom_270F98: @ 0x08270F98
-	.string "{PLAYER}さん……!\nあの あたしの ことなんて\lどうせ わすれて しまいました よね\p……それでも いいです から\nそうだんに のって ください……\pあたし そだてたい ポケモン ひとつ\nじぶんで きめられなくって……\l{STR_VAR_1} か {STR_VAR_2}\lどちらかに する までは きまったけど\lそこで まよってしまって……\p{PLAYER}さん いやかも しれませんが\nあたしの かわりに きめてください!$"
+	.string "{PLAYER}さん……!\nあの あたしの ことなんて\lどうせ わすれて しまいました よね\p……それでも いいです から\nそうだんに のって ください……\pあたし そだてたい ポケモン ひとつ\nじぶんで きめられなくって……\l{STR_VAR_1} か {STR_VAR_2}\lどちらかに する までは きまったけど\lそこで まよってしまって……\p{PLAYER}さん いやかも しれませんが\nあたしの かわりに きめてください!{EOS}"
 	.if (. - gText_Rom_270F98) > 0xbb
 	.error "gText_Rom_270F98 may not grow beyond its original slot"
 	.endif
@@ -106,7 +106,7 @@ gText_Rom_270F98: @ 0x08270F98
 	@ data/text/apprentice.inc:598 gText_ApprenticeMonThanks3
 	.globl gText_Rom_271053
 gText_Rom_271053: @ 0x08271053
-	.string "あたし なんかの いうこと\n{STR_VAR_1}が きいて くれるか……\pでも やって みます!\pそのまえに つかまえられるか……\nいえ! がんばって みます\pありがとう ございます!$"
+	.string "あたし なんかの いうこと\n{STR_VAR_1}が きいて くれるか……\pでも やって みます!\pそのまえに つかまえられるか……\nいえ! がんばって みます\pありがとう ございます!{EOS}"
 	.if (. - gText_Rom_271053) > 0x55
 	.error "gText_Rom_271053 may not grow beyond its original slot"
 	.endif
@@ -117,7 +117,7 @@ gText_Rom_271053: @ 0x08271053
 	@ data/text/apprentice.inc:601 gText_ApprenticeWhichMon4
 	.globl gText_Rom_2710A8
 gText_Rom_2710A8: @ 0x082710A8
-	.string "{PLAYER}{KUN} よかった\nさがしに いこうと おもってたのよ!\pねえ わたしが つかう ポケモン\nあなたが きめて くれない?\pそうね……\n{STR_VAR_1}と {STR_VAR_2}だったら\lどっちが いいと おもう?$"
+	.string "{PLAYER}{KUN} よかった\nさがしに いこうと おもってたのよ!\pねえ わたしが つかう ポケモン\nあなたが きめて くれない?\pそうね……\n{STR_VAR_1}と {STR_VAR_2}だったら\lどっちが いいと おもう?{EOS}"
 	.if (. - gText_Rom_2710A8) > 0x5c
 	.error "gText_Rom_2710A8 may not grow beyond its original slot"
 	.endif
@@ -128,7 +128,7 @@ gText_Rom_2710A8: @ 0x082710A8
 	@ data/text/apprentice.inc:604 gText_ApprenticeMonThanks4 (+1 aliases)
 	.globl gText_Rom_271104
 gText_Rom_271104: @ 0x08271104
-	.string "{STR_VAR_1}ね ありがと!\n{PLAYER}{KUN}が きめた って おもえば\lまけても きが らくだわ!\pじゃあね\nまた そうだんに のってね!$"
+	.string "{STR_VAR_1}ね ありがと!\n{PLAYER}{KUN}が きめた って おもえば\lまけても きが らくだわ!\pじゃあね\nまた そうだんに のってね!{EOS}"
 	.if (. - gText_Rom_271104) > 0x3e
 	.error "gText_Rom_271104 may not grow beyond its original slot"
 	.endif
@@ -139,7 +139,7 @@ gText_Rom_271104: @ 0x08271104
 	@ data/text/apprentice.inc:607 gText_ApprenticeWhichMon5
 	.globl gText_Rom_271142
 gText_Rom_271142: @ 0x08271142
-	.string "あっれー\n{PLAYER}{KUN} じゃない げんき?\lオレは あいかわらず いそがしくてさ!\pポケモンも がんばりたいんだ けど\nどいつを つかうかも きまんなくてねー\pあのさ!\n{STR_VAR_1}って つよそう じゃん?\lでも {STR_VAR_2}も すてがたいよねー\p{PLAYER}{KUN} アドバイス してよ!\nどっちの ポケモンが イイかな?$"
+	.string "あっれー\n{PLAYER}{KUN} じゃない げんき?\lオレは あいかわらず いそがしくてさ!\pポケモンも がんばりたいんだ けど\nどいつを つかうかも きまんなくてねー\pあのさ!\n{STR_VAR_1}って つよそう じゃん?\lでも {STR_VAR_2}も すてがたいよねー\p{PLAYER}{KUN} アドバイス してよ!\nどっちの ポケモンが イイかな?{EOS}"
 	.if (. - gText_Rom_271142) > 0x93
 	.error "gText_Rom_271142 may not grow beyond its original slot"
 	.endif
@@ -150,7 +150,7 @@ gText_Rom_271142: @ 0x08271142
 	@ data/text/apprentice.inc:610 gText_ApprenticeMonThanks5
 	.globl gText_Rom_2711D5
 gText_Rom_2711D5: @ 0x082711D5
-	.string "オーケー わかった!\nじゃ なんとか じかん つくって\l{STR_VAR_1}を つかまえて みるぜ!\pオレは いい せんせいに であえたよな\nサンキュー! じゃ またな!$"
+	.string "オーケー わかった!\nじゃ なんとか じかん つくって\l{STR_VAR_1}を つかまえて みるぜ!\pオレは いい せんせいに であえたよな\nサンキュー! じゃ またな!{EOS}"
 	.if (. - gText_Rom_2711D5) > 0x4e
 	.error "gText_Rom_2711D5 may not grow beyond its original slot"
 	.endif
@@ -161,7 +161,7 @@ gText_Rom_2711D5: @ 0x082711D5
 	@ data/text/apprentice.inc:613 gText_ApprenticeWhichMon6
 	.globl gText_Rom_271223
 gText_Rom_271223: @ 0x08271223
-	.string "あっ わーい\n{PLAYER}さん じゃない!\lわたし さっそく ともだちに\lしりあいだって じまん しちゃったよ!\pねえねえ きょうも アドバイス おねがい!\nかんたんな こと だから ねっ!\pジャーン では しつもんです!\nわたしが そだてる なら!\l{STR_VAR_1}と {STR_VAR_2} さあどっち?$"
+	.string "あっ わーい\n{PLAYER}さん じゃない!\lわたし さっそく ともだちに\lしりあいだって じまん しちゃったよ!\pねえねえ きょうも アドバイス おねがい!\nかんたんな こと だから ねっ!\pジャーン では しつもんです!\nわたしが そだてる なら!\l{STR_VAR_1}と {STR_VAR_2} さあどっち?{EOS}"
 	.if (. - gText_Rom_271223) > 0x88
 	.error "gText_Rom_271223 may not grow beyond its original slot"
 	.endif
@@ -172,7 +172,7 @@ gText_Rom_271223: @ 0x08271223
 	@ data/text/apprentice.inc:616 gText_ApprenticeMonThanks6
 	.globl gText_Rom_2712AB
 gText_Rom_2712AB: @ 0x082712AB
-	.string "へっえー!\n{STR_VAR_1} と きますかぁ!\lシブイ おこたえ ありがとう!\pん きょうは こんなところ かな\nこんど また ここで あおうね!\lありがと!$"
+	.string "へっえー!\n{STR_VAR_1} と きますかぁ!\lシブイ おこたえ ありがとう!\pん きょうは こんなところ かな\nこんど また ここで あおうね!\lありがと!{EOS}"
 	.if (. - gText_Rom_2712AB) > 0x4a
 	.error "gText_Rom_2712AB may not grow beyond its original slot"
 	.endif
@@ -183,7 +183,7 @@ gText_Rom_2712AB: @ 0x082712AB
 	@ data/text/apprentice.inc:619 gText_ApprenticeWhichMon7
 	.globl gText_Rom_2712F5
 gText_Rom_2712F5: @ 0x082712F5
-	.string "まあ {PLAYER}さんでは?\nごきげんよう……!\pあなたに でしいり して わたくし\nすこし じしんが ついて まいりました!\lポケモンを さっそく そだてたいと\lおもって おりますの!\pそれでね {PLAYER}さんに\nわたしの ポケモンを\lきめていただく わけには まいりませんか?\p{STR_VAR_1}と {STR_VAR_2}……\nどちらの ポケモンが よろしいでしょう?$"
+	.string "まあ {PLAYER}さんでは?\nごきげんよう……!\pあなたに でしいり して わたくし\nすこし じしんが ついて まいりました!\lポケモンを さっそく そだてたいと\lおもって おりますの!\pそれでね {PLAYER}さんに\nわたしの ポケモンを\lきめていただく わけには まいりませんか?\p{STR_VAR_1}と {STR_VAR_2}……\nどちらの ポケモンが よろしいでしょう?{EOS}"
 	.if (. - gText_Rom_2712F5) > 0xa4
 	.error "gText_Rom_2712F5 may not grow beyond its original slot"
 	.endif

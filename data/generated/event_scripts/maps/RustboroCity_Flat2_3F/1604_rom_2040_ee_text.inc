@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_Flat2_3F/scripts.inc:15 RustboroCity_Flat2_3F_Text_PresidentsSonAlsoCollectsRareStones
 	.globl gText_Rom_2040EE
 gText_Rom_2040EE: @ 0x082040EE
-	.string "たしか むすこさんも\nめずらしい いしを あつめるのが\lしゅみ だったっけ……?$"
+	.string "たしか むすこさんも\nめずらしい いしを あつめるのが\lしゅみ だったっけ……?{EOS}"
 	.if (. - gText_Rom_2040EE) > 0x29
 	.error "gText_Rom_2040EE may not grow beyond its original slot"
 	.endif

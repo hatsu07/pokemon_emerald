@@ -1,7 +1,7 @@
 	@ data/text/pkmn_center_nurse.inc:1 gText_WouldYouLikeToRestYourPkmn
 	.globl gText_Rom_24373C
 gText_Rom_24373C: @ 0x0824373C
-	.string "おつかれさまです!\nポケモン センター です\pここでは ポケモンの\nたいりょく かいふくを します\pあなたの ポケモンを\nやすませて あげますか?$"
+	.string "おつかれさまです!\nポケモン センター です\pここでは ポケモンの\nたいりょく かいふくを します\pあなたの ポケモンを\nやすませて あげますか?{EOS}"
 	.if (. - gText_Rom_24373C) > 0x4a
 	.error "gText_Rom_24373C may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_24373C: @ 0x0824373C
 	@ data/text/pkmn_center_nurse.inc:9 gText_IllTakeYourPkmn
 	.globl gText_Rom_243786
 gText_Rom_243786: @ 0x08243786
-	.string "それでは\nおあずかり いたします!$"
+	.string "それでは\nおあずかり いたします!{EOS}"
 	.if (. - gText_Rom_243786) > 0x12
 	.error "gText_Rom_243786 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_243786: @ 0x08243786
 	@ data/text/pkmn_center_nurse.inc:13 gText_RestoredPkmnToFullHealth
 	.globl gText_Rom_243798
 gText_Rom_243798: @ 0x08243798
-	.string "おまちどおさま!\pおあずかり した ポケモンは\nみんな げんきに なりましたよ!$"
+	.string "おまちどおさま!\pおあずかり した ポケモンは\nみんな げんきに なりましたよ!{EOS}"
 	.if (. - gText_Rom_243798) > 0x29
 	.error "gText_Rom_243798 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_243798: @ 0x08243798
 	@ data/text/pkmn_center_nurse.inc:18 gText_WeHopeToSeeYouAgain (+1 aliases)
 	.globl gText_Rom_2437C1
 gText_Rom_2437C1: @ 0x082437C1
-	.string "またの\nごりようを おまち してます!$"
+	.string "またの\nごりようを おまち してます!{EOS}"
 	.if (. - gText_Rom_2437C1) > 0x14
 	.error "gText_Rom_2437C1 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_2437C1: @ 0x082437C1
 	@ data/text/pkmn_center_nurse.inc:22 gText_WelcomeCutShort
 	.globl gText_Rom_2437D5
 gText_Rom_2437D5: @ 0x082437D5
-	.string "おつかれさまです!\nポケモン センター です\pここでは ポケモンの\nたいりょく かいふくを します\pあなたの ポケモンを……$"
+	.string "おつかれさまです!\nポケモン センター です\pここでは ポケモンの\nたいりょく かいふくを します\pあなたの ポケモンを……{EOS}"
 	.if (. - gText_Rom_2437D5) > 0x3f
 	.error "gText_Rom_2437D5 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_2437D5: @ 0x082437D5
 	@ data/text/pkmn_center_nurse.inc:29 gText_NoticesGoldCard
 	.globl gText_Rom_243814
 gText_Rom_243814: @ 0x08243814
-	.string "そ それは……\nひょっとして ゴールドカード!?\pああ…… きんいろが まぶしい!\n4つの ほしが かがやかしい!\pわたしも これまでに\nシルバーカードの トレーナーさんなら\lなんにんか みてきましたが\lゴールドカードを おもちの かたは\l{PLAYER}さんが はじめて ですよ!\pさあ {PLAYER}さんの\nポケモンを やすませて あげましょう!$"
+	.string "そ それは……\nひょっとして ゴールドカード!?\pああ…… きんいろが まぶしい!\n4つの ほしが かがやかしい!\pわたしも これまでに\nシルバーカードの トレーナーさんなら\lなんにんか みてきましたが\lゴールドカードを おもちの かたは\l{PLAYER}さんが はじめて ですよ!\pさあ {PLAYER}さんの\nポケモンを やすませて あげましょう!{EOS}"
 	.if (. - gText_Rom_243814) > 0xa5
 	.error "gText_Rom_243814 may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_243814: @ 0x08243814
 	@ data/text/pkmn_center_nurse.inc:42 gText_YouWantTheUsual
 	.globl gText_Rom_2438B9
 gText_Rom_2438B9: @ 0x082438B9
-	.string "{PLAYER}さん おつかれさまです!\nいつもので よろしい ですね!$"
+	.string "{PLAYER}さん おつかれさまです!\nいつもので よろしい ですね!{EOS}"
 	.if (. - gText_Rom_2438B9) > 0x1f
 	.error "gText_Rom_2438B9 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_2438B9: @ 0x082438B9
 	@ data/text/pkmn_center_nurse.inc:46 gText_IllTakeYourPkmn2
 	.globl gText_Rom_2438D8
 gText_Rom_2438D8: @ 0x082438D8
-	.string "では おあずかりさせて いただきます!$"
+	.string "では おあずかりさせて いただきます!{EOS}"
 	.if (. - gText_Rom_2438D8) > 0x14
 	.error "gText_Rom_2438D8 may not grow beyond its original slot"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_2438D8: @ 0x082438D8
 	@ data/text/pkmn_center_nurse.inc:49 gText_ThankYouForWaiting
 	.globl gText_Rom_2438EC
 gText_Rom_2438EC: @ 0x082438EC
-	.string "たいへん おまたせ いたしました!$"
+	.string "たいへん おまたせ いたしました!{EOS}"
 	.if (. - gText_Rom_2438EC) > 0x12
 	.error "gText_Rom_2438EC may not grow beyond its original slot"
 	.endif
@@ -100,7 +100,7 @@ gText_Rom_2438EC: @ 0x082438EC
 	@ data/text/pkmn_center_nurse.inc:52 gText_WeHopeToSeeYouAgain2
 	.globl gText_Rom_2438FE
 gText_Rom_2438FE: @ 0x082438FE
-	.string "また いつでも おこしください!$"
+	.string "また いつでも おこしください!{EOS}"
 	.if (. - gText_Rom_2438FE) > 0x11
 	.error "gText_Rom_2438FE may not grow beyond its original slot"
 	.endif

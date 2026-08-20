@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity/scripts.inc:750 LilycoveCity_Text_HoneymoonVowToSeeRarePokemon
 	.globl gText_Rom_1E14F9
 gText_Rom_1E14F9: @ 0x081E14F9
-	.string "わたしたちの しんこん りょこうは\nかくちの めずらしい ポケモンを\lできるだけ たくさん みること なんです\pこの まちに とうちゃく したら\nいきなり めずらしい ポケモンが みられて\lとても ハッピー だわ!$"
+	.string "わたしたちの しんこん りょこうは\nかくちの めずらしい ポケモンを\lできるだけ たくさん みること なんです\pこの まちに とうちゃく したら\nいきなり めずらしい ポケモンが みられて\lとても ハッピー だわ!{EOS}"
 	.if (. - gText_Rom_1E14F9) > 0x6c
 	.error "gText_Rom_1E14F9 may not grow beyond its original slot"
 	.endif

@@ -2,7 +2,7 @@
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+10 aliases)
 	.globl gText_Rom_2527B1
 gText_Rom_2527B1: @ 0x082527B1
-	.string "{0xFD}{0x03}！\nかっこよかった　よー！$"
+	.string "{0xFD}{0x03}！\nかっこよかった　よー！{EOS}"
 	.if (. - gText_Rom_2527B1) > 0x10
 	.error "gText_Rom_2527B1 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_2527B1: @ 0x082527B1
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+10 aliases)
 	.globl gText_Rom_2527C1
 gText_Rom_2527C1: @ 0x082527C1
-	.string "{0xFD}{0x03}\nうつくしかった　よー！$"
+	.string "{0xFD}{0x03}\nうつくしかった　よー！{EOS}"
 	.if (. - gText_Rom_2527C1) > 0xf
 	.error "gText_Rom_2527C1 may not grow beyond its original slot"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_2527C1: @ 0x082527C1
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+10 aliases)
 	.globl gText_Rom_2527D0
 gText_Rom_2527D0: @ 0x082527D0
-	.string "{0xFD}{0x03}\nかわいかった　よー！$"
+	.string "{0xFD}{0x03}\nかわいかった　よー！{EOS}"
 	.if (. - gText_Rom_2527D0) > 0xe
 	.error "gText_Rom_2527D0 may not grow beyond its original slot"
 	.endif
@@ -35,7 +35,7 @@ gText_Rom_2527D0: @ 0x082527D0
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+10 aliases)
 	.globl gText_Rom_2527DE
 gText_Rom_2527DE: @ 0x082527DE
-	.string "{0xFD}{0x03}！\nかしこかった　よー！$"
+	.string "{0xFD}{0x03}！\nかしこかった　よー！{EOS}"
 	.if (. - gText_Rom_2527DE) > 0xf
 	.error "gText_Rom_2527DE may not grow beyond its original slot"
 	.endif
@@ -46,7 +46,7 @@ gText_Rom_2527DE: @ 0x082527DE
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+10 aliases)
 	.globl gText_Rom_2527ED
 gText_Rom_2527ED: @ 0x082527ED
-	.string "{0xFD}{0x03}！\nたくましかった　よー！$"
+	.string "{0xFD}{0x03}！\nたくましかった　よー！{EOS}"
 	.if (. - gText_Rom_2527ED) > 0x10
 	.error "gText_Rom_2527ED may not grow beyond its original slot"
 	.endif
@@ -57,7 +57,7 @@ gText_Rom_2527ED: @ 0x082527ED
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+10 aliases)
 	.globl gText_Rom_2527FD
 gText_Rom_2527FD: @ 0x082527FD
-	.string "かんきゃく『{0xFD}{0x03}の　アピールに\nもう　もえつきちゃい　ました！$"
+	.string "かんきゃく『{0xFD}{0x03}の　アピールに\nもう　もえつきちゃい　ました！{EOS}"
 	.if (. - gText_Rom_2527FD) > 0x20
 	.error "gText_Rom_2527FD may not grow beyond its original slot"
 	.endif
@@ -68,7 +68,7 @@ gText_Rom_2527FD: @ 0x082527FD
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+10 aliases)
 	.globl gText_Rom_25281D
 gText_Rom_25281D: @ 0x0825281D
-	.string "{0xFD}{0x03}！\nさいこうに　かっこいいー！$"
+	.string "{0xFD}{0x03}！\nさいこうに　かっこいいー！{EOS}"
 	.if (. - gText_Rom_25281D) > 0x12
 	.error "gText_Rom_25281D may not grow beyond its original slot"
 	.endif

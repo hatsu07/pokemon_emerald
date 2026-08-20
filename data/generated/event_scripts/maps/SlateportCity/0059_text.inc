@@ -1,7 +1,7 @@
 	@ data/maps/SlateportCity/scripts.inc:1063 SlateportCity_Text_ShouldveBroughtMyGameBoy
 	.globl gText_Rom_1DCECA
 gText_Rom_1DCECA: @ 0x081DCECA
-	.string "ぶつぶつぶつ……\pゲームボーイが あれば\nぎょうれつも たいくつ しないぜ\pぶつぶつぶつ……$"
+	.string "ぶつぶつぶつ……\pゲームボーイが あれば\nぎょうれつも たいくつ しないぜ\pぶつぶつぶつ……{EOS}"
 	.if (. - gText_Rom_1DCECA) > 0x2f
 	.error "gText_Rom_1DCECA may not grow beyond its original slot"
 	.endif

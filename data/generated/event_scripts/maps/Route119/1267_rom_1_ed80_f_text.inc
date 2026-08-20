@@ -1,7 +1,7 @@
 	@ data/maps/Route119/scripts.inc:603 Route119_Text_TrainerTipsDecoration
 	.globl gText_Rom_1ED80F
 gText_Rom_1ED80F: @ 0x081ED80F
-	.string "おとくな けいじばん!!\pひみつきち には グッズを\n16こ まで おけます!\pすきな グッズを えらんで\nあなただけの おきにいりの\lひみつきち を つくりましょう!$"
+	.string "おとくな けいじばん!!\pひみつきち には グッズを\n16こ まで おけます!\pすきな グッズを えらんで\nあなただけの おきにいりの\lひみつきち を つくりましょう!{EOS}"
 	.if (. - gText_Rom_1ED80F) > 0x55
 	.error "gText_Rom_1ED80F may not grow beyond its original slot"
 	.endif

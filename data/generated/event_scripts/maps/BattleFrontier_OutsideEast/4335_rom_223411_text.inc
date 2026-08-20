@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:333 BattleFrontier_OutsideEast_Text_StickyMonWithLongTail
 	.globl gText_Rom_223411
 gText_Rom_223411: @ 0x08223411
-	.string "ぼぼぼ ぼく みちゃったんだっ!!\pこのさきの いわ から しっぽが ながくって\nなんか ベタベタした ポケモンが\lぼくの こと じーっと のぞいてたんだっ!\pきっと こわい ポケモン だよーっ!!$"
+	.string "ぼぼぼ ぼく みちゃったんだっ!!\pこのさきの いわ から しっぽが ながくって\nなんか ベタベタした ポケモンが\lぼくの こと じーっと のぞいてたんだっ!\pきっと こわい ポケモン だよーっ!!{EOS}"
 	.if (. - gText_Rom_223411) > 0x64
 	.error "gText_Rom_223411 may not grow beyond its original slot"
 	.endif

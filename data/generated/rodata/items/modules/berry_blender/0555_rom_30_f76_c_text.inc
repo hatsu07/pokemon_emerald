@@ -1,7 +1,7 @@
 	@ src/berry_blender.c:275 berry_blender_line_275 (+1 aliases)
 	.globl gText_Rom_30F76C
 gText_Rom_30F76C: @ 0x0830F76C
-	.string "おばさん$"
+	.string "おばさん{EOS}"
 	.if (. - gText_Rom_30F76C) > 0x5
 	.error "gText_Rom_30F76C may not grow beyond its original slot"
 	.endif

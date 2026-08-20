@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity/scripts.inc:573 LilycoveCity_Text_GetLostMessingUpTraining
 	.globl gText_Rom_1E0DA6
 gText_Rom_1E0DA6: @ 0x081E0DA6
-	.string "……ん? なんだ おまえは?\pトレーニングの じゃまに なるから\nあっちに いっててくれ!$"
+	.string "……ん? なんだ おまえは?\pトレーニングの じゃまに なるから\nあっちに いっててくれ!{EOS}"
 	.if (. - gText_Rom_1E0DA6) > 0x2e
 	.error "gText_Rom_1E0DA6 may not grow beyond its original slot"
 	.endif

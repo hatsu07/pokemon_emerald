@@ -1,7 +1,7 @@
 	@ data/maps/MossdeepCity/scripts.inc:360 MossdeepCity_Text_SootopolisNewGymLeader
 	.globl gText_Rom_1E1C8D
 gText_Rom_1E1C8D: @ 0x081E1C8D
-	.string "あー あしもとが じゃぶじゃぶして\nきもちが いい……\pそうだ! じゃぶじゃぶ といえば\nルネシティ だけど\pあそこの ジム\nリーダーが かわった らしいね\pなんでも ミクリさんの\nおししょうさん だとか……$"
+	.string "あー あしもとが じゃぶじゃぶして\nきもちが いい……\pそうだ! じゃぶじゃぶ といえば\nルネシティ だけど\pあそこの ジム\nリーダーが かわった らしいね\pなんでも ミクリさんの\nおししょうさん だとか……{EOS}"
 	.if (. - gText_Rom_1E1C8D) > 0x69
 	.error "gText_Rom_1E1C8D may not grow beyond its original slot"
 	.endif

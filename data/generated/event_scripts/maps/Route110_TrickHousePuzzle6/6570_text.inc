@@ -1,7 +1,7 @@
 	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:66 Route110_TrickHousePuzzle6_Text_SebastianIntro (+1 aliases)
 	.globl gText_Rom_23FE65
 gText_Rom_23FE65: @ 0x0823FE65
-	.string "かいてん する とびらで\nめが まわってきた……$"
+	.string "かいてん する とびらで\nめが まわってきた……{EOS}"
 	.if (. - gText_Rom_23FE65) > 0x19
 	.error "gText_Rom_23FE65 may not grow beyond its original slot"
 	.endif

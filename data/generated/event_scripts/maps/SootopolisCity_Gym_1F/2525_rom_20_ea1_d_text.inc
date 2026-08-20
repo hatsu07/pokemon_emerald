@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:227 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons (+1 aliases)
 	.globl gText_Rom_20EA1D
 gText_Rom_20EA1D: @ 0x0820EA1D
-	.string "アダン『いつもの サイレンス……\nしずけさを とりもどした このジムに\pまたもや わかき タイフーンが\nうでだめしに あらわれましたね!\pいいですとも!\nなんどでも ユーの あいてを……\p……アハン?\nユーは たたかえる ポケモンを\l1ひきしか もっていない ようですね\pねがわくば 2ひき いじょうの\nポケモンを もってきて プリーズ$"
+	.string "アダン『いつもの サイレンス……\nしずけさを とりもどした このジムに\pまたもや わかき タイフーンが\nうでだめしに あらわれましたね!\pいいですとも!\nなんどでも ユーの あいてを……\p……アハン?\nユーは たたかえる ポケモンを\l1ひきしか もっていない ようですね\pねがわくば 2ひき いじょうの\nポケモンを もってきて プリーズ{EOS}"
 	.if (. - gText_Rom_20EA1D) > 0xa9
 	.error "gText_Rom_20EA1D may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/Route110_TrickHousePuzzle3/scripts.inc:331 Route110_TrickHousePuzzle3_Text_AlanPostBattle
 	.globl gText_Rom_23EB14
 gText_Rom_23EB14: @ 0x0823EB14
-	.string "いったい どれくらいの しかけが\nこの やしきに あるんだろう…?\pきみなら わかるかもな$"
+	.string "いったい どれくらいの しかけが\nこの やしきに あるんだろう…?\pきみなら わかるかもな{EOS}"
 	.if (. - gText_Rom_23EB14) > 0x2e
 	.error "gText_Rom_23EB14 may not grow beyond its original slot"
 	.endif

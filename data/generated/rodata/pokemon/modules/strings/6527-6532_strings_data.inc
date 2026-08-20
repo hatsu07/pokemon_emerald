@@ -1,7 +1,7 @@
 	@ src/strings.c:860 gJPText_MysteryGift
 	.globl gText_Rom_5CCED5
 gText_Rom_5CCED5: @ 0x085CCED5
-	.string "ふしぎなもらいもの$"
+	.string "ふしぎなもらいもの{EOS}"
 	.if (. - gText_Rom_5CCED5) > 0xa
 	.error "gText_Rom_5CCED5 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5CCED5: @ 0x085CCED5
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CCEDF
 gText_Rom_5CCEDF: @ 0x085CCEDF
-	.string "{A_BUTTON}けってい {B_BUTTON}やめる$"
+	.string "{A_BUTTON}けってい {B_BUTTON}やめる{EOS}"
 	.if (. - gText_Rom_5CCEDF) != 0xd
 	.error "gText_Rom_5CCEDF must retain its original byte length"
 	.endif
@@ -25,7 +25,7 @@ gText_Rom_5CCEDF: @ 0x085CCEDF
 	@ src/strings.c:862 gJPText_ReceiveMysteryGiftWithEReader
 	.globl gText_Rom_5CCEEC
 gText_Rom_5CCEEC: @ 0x085CCEEC
-	.string "カードeリーダー{PLUS} で\nふしぎなもらいものを よみこみます$"
+	.string "カードeリーダー{PLUS} で\nふしぎなもらいものを よみこみます{EOS}"
 	.if (. - gText_Rom_5CCEEC) > 0x1f
 	.error "gText_Rom_5CCEEC may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:478 BattleFrontier_BattleDomeLobby_Text_WhichLevelMode
 	.globl gText_Rom_22764D
 gText_Rom_22764D: @ 0x0822764D
-	.string "トーナメントには\nレベル50と オープンレベルと ありますが\lどちらに ちょうせん しますか?$"
+	.string "トーナメントには\nレベル50と オープンレベルと ありますが\lどちらに ちょうせん しますか?{EOS}"
 	.if (. - gText_Rom_22764D) > 0x30
 	.error "gText_Rom_22764D may not grow beyond its original slot"
 	.endif

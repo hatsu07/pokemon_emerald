@@ -1,7 +1,7 @@
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	.globl gText_Rom_24B311
 gText_Rom_24B311: @ 0x0824B311
-	.string "たくましい$"
+	.string "たくましい{EOS}"
 	.if (. - gText_Rom_24B311) > 0x6
 	.error "gText_Rom_24B311 may not grow beyond its original slot"
 	.endif

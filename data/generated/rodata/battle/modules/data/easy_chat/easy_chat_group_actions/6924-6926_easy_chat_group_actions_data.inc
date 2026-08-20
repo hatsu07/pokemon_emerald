@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_actions.h:214 easy_chat_group_actions_line_214
 	.globl gText_Rom_5EAD65
 gText_Rom_5EAD65: @ 0x085EAD65
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5EAD65) > 0x4
 	.error "gText_Rom_5EAD65 may not grow beyond its original slot"
 	.endif
@@ -30,7 +30,7 @@ gText_Rom_5EAD65: @ 0x085EAD65
 	.2byte 0x1500, 0x1350
 	.globl gText_Rom_5EAE7D
 gText_Rom_5EAE7D: @ 0x085EAE7D
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5EAE7D) > 0x4
 	.error "gText_Rom_5EAE7D may not grow beyond its original slot"
 	.endif

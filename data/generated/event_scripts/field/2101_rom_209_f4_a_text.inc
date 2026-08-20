@@ -1,7 +1,7 @@
 	@ field-script:0x209E5B FieldScriptText_209F4A
 	.globl gText_Rom_209F4A
 gText_Rom_209F4A: @ 0x08209F4A
-	.string "むむ！\p{0xFD}{0x02}は　なみのりを\nわすれたくない　ようじゃ！$"
+	.string "むむ！\p{0xFD}{0x02}は　なみのりを\nわすれたくない　ようじゃ！{EOS}"
 	.if (. - gText_Rom_209F4A) > 0x1c
 	.error "gText_Rom_209F4A may not grow beyond its original slot"
 	.endif

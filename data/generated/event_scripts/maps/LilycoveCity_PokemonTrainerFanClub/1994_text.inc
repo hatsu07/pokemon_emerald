@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:572 LilycoveCity_PokemonTrainerFanClub_Text_TrainersPowerIsOutOfTheOrdinary
 	.globl gText_Rom_208C38
 gText_Rom_208C38: @ 0x08208C38
-	.string "きみには わるいけど いま いちばん\nちゅうもくの トレーナーは\lまちがいなく {STR_VAR_1} だね！\pあの つよさは\nだたものじゃ ないよ$"
+	.string "きみには わるいけど いま いちばん\nちゅうもくの トレーナーは\lまちがいなく {STR_VAR_1} だね！\pあの つよさは\nだたものじゃ ないよ{EOS}"
 	.if (. - gText_Rom_208C38) > 0x42
 	.error "gText_Rom_208C38 may not grow beyond its original slot"
 	.endif

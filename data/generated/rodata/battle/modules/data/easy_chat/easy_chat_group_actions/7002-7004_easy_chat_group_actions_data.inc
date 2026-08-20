@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_actions.h:448 easy_chat_group_actions_line_448
 	.globl gText_Rom_5ECCE0
 gText_Rom_5ECCE0: @ 0x085ECCE0
-	.string "られない$"
+	.string "られない{EOS}"
 	.if (. - gText_Rom_5ECCE0) > 0x5
 	.error "gText_Rom_5ECCE0 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5ECCE0: @ 0x085ECCE0
 	.byte 0xA0, 0x14, 0x00, 0x0B, 0x37, 0x50, 0x13
 	.globl gText_Rom_5ECD8C
 gText_Rom_5ECD8C: @ 0x085ECD8C
-	.string "しまう$"
+	.string "しまう{EOS}"
 	.if (. - gText_Rom_5ECD8C) > 0x4
 	.error "gText_Rom_5ECD8C may not grow beyond its original slot"
 	.endif

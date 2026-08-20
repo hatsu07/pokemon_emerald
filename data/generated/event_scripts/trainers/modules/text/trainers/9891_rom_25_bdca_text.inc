@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:968 Route111_Text_IreneIntro (+1 aliases)
 	.globl gText_Rom_25BDCA
 gText_Rom_25BDCA: @ 0x0825BDCA
-	.string "どこに いくのか しらないけど\nちょっと しょうぶ してみない?$"
+	.string "どこに いくのか しらないけど\nちょっと しょうぶ してみない?{EOS}"
 	.if (. - gText_Rom_25BDCA) > 0x21
 	.error "gText_Rom_25BDCA may not grow beyond its original slot"
 	.endif

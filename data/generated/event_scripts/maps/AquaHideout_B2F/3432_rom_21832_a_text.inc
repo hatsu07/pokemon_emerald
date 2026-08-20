@@ -1,7 +1,7 @@
 	@ data/maps/AquaHideout_B2F/scripts.inc:125 AquaHideout_B2F_Text_Grunt8PostBattle
 	.globl gText_Rom_21832A
 gText_Rom_21832A: @ 0x0821832A
-	.string "これからは ポケモンしょうぶの\nコツも おぼえて おかないと なあ……$"
+	.string "これからは ポケモンしょうぶの\nコツも おぼえて おかないと なあ……{EOS}"
 	.if (. - gText_Rom_21832A) > 0x24
 	.error "gText_Rom_21832A may not grow beyond its original slot"
 	.endif

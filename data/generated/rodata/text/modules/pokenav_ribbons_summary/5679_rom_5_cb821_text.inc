@@ -1,7 +1,7 @@
 	@ src/pokenav_ribbons_summary.c:43 gText_RibbonsF700
 	.globl gText_Rom_5CB821
 gText_Rom_5CB821: @ 0x085CB821
-	.string "リボン {DYNAMIC 0}こ$"
+	.string "リボン {DYNAMIC 0}こ{EOS}"
 	.if (. - gText_Rom_5CB821) > 0x8
 	.error "gText_Rom_5CB821 may not grow beyond its original slot"
 	.endif

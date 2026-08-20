@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:3422 Route134_Text_HudsonDefeat (+1 aliases)
 	.globl gText_Rom_262358
 gText_Rom_262358: @ 0x08262358
-	.string "おー すごいな$"
+	.string "おー すごいな{EOS}"
 	.if (. - gText_Rom_262358) > 0x8
 	.error "gText_Rom_262358 may not grow beyond its original slot"
 	.endif

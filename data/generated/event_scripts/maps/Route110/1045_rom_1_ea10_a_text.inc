@@ -1,7 +1,7 @@
 	@ data/maps/Route110/scripts.inc:984 Route110_Text_KeepAnEyeOutForRival
 	.globl gText_Rom_1EA10A
 gText_Rom_1EA10A: @ 0x081EA10A
-	.string "オダマキ『{PLAYER}{KUN}……\p{RIVAL}のこと よろしく たのむよ\n…… …… ……\pじゃあ わたしは これで しつれいする\nまたな {PLAYER}{KUN}!$"
+	.string "オダマキ『{PLAYER}{KUN}……\p{RIVAL}のこと よろしく たのむよ\n…… …… ……\pじゃあ わたしは これで しつれいする\nまたな {PLAYER}{KUN}!{EOS}"
 	.if (. - gText_Rom_1EA10A) > 0x43
 	.error "gText_Rom_1EA10A may not grow beyond its original slot"
 	.endif

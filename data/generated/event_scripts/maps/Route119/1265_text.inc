@@ -1,7 +1,7 @@
 	@ data/maps/Route119/scripts.inc:600 Route119_Text_WeatherInstitute
 	.globl gText_Rom_1ED801
 gText_Rom_1ED801: @ 0x081ED801
-	.string "「てんき けんきゅうじょ」$"
+	.string "「てんき けんきゅうじょ」{EOS}"
 	.if (. - gText_Rom_1ED801) > 0xe
 	.error "gText_Rom_1ED801 may not grow beyond its original slot"
 	.endif

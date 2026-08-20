@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:752 Route110_Text_BenjaminPostBattle (+1 aliases)
 	.globl gText_Rom_25B45F
 gText_Rom_25B45F: @ 0x0825B45F
-	.string "あせらず のんびり いこうよ\nじかんは たっぷり あるからね!$"
+	.string "あせらず のんびり いこうよ\nじかんは たっぷり あるからね!{EOS}"
 	.if (. - gText_Rom_25B45F) > 0x20
 	.error "gText_Rom_25B45F may not grow beyond its original slot"
 	.endif

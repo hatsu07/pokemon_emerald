@@ -1,7 +1,7 @@
 	@ src/data/script_menu.h:156 script_menu_line_156
 	.globl gText_Rom_24C3F1
 gText_Rom_24C3F1: @ 0x0824C3F1
-	.string "やけどなおし$"
+	.string "やけどなおし{EOS}"
 	.if (. - gText_Rom_24C3F1) > 0x7
 	.error "gText_Rom_24C3F1 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_24C3F1: @ 0x0824C3F1
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24C3F8
 gText_Rom_24C3F8: @ 0x0824C3F8
-	.string "ハーバーメール$"
+	.string "ハーバーメール{EOS}"
 	.if (. - gText_Rom_24C3F8) != 0x8
 	.error "gText_Rom_24C3F8 must retain its original byte length"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_24C3F8: @ 0x0824C3F8
 	@ src/data/script_menu.h:158 script_menu_line_158 (+1 aliases)
 	.globl gText_Rom_24C400
 gText_Rom_24C400: @ 0x0824C400
-	.string "おなじねだん$"
+	.string "おなじねだん{EOS}"
 	.if (. - gText_Rom_24C400) > 0x7
 	.error "gText_Rom_24C400 may not grow beyond its original slot"
 	.endif
@@ -37,7 +37,7 @@ gText_Rom_24C400: @ 0x0824C400
 	@ src/data/script_menu.h:158 script_menu_line_158 (+1 aliases)
 	.globl gText_Rom_24C423
 gText_Rom_24C423: @ 0x0824C423
-	.string "おなじねだん$"
+	.string "おなじねだん{EOS}"
 	.if (. - gText_Rom_24C423) > 0x7
 	.error "gText_Rom_24C423 may not grow beyond its original slot"
 	.endif

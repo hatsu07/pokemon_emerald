@@ -1,7 +1,7 @@
 	@ src/strings.c:834 gText_FirstPlacePrize
 	.globl gText_Rom_5CCD86
 gText_Rom_5CCD86: @ 0x085CCD86
-	.string "1ばんに なった ひとに\n{DYNAMIC 0}を プレゼント!!$"
+	.string "1ばんに なった ひとに\n{DYNAMIC 0}を プレゼント!!{EOS}"
 	.if (. - gText_Rom_5CCD86) > 0x19
 	.error "gText_Rom_5CCD86 may not grow beyond its original slot"
 	.endif
@@ -11,7 +11,7 @@ gText_Rom_5CCD86: @ 0x085CCD86
 	.globl gText_Rom_5CCD9F
 gText_Rom_5CCD9F: @ 0x085CCD9F
 	@ Decoded text from ROM range: offset=0x5CCD9F, size=0xC
-	.string "{SE_M_HYPER_BEAM2}は　いっぱいです…$"
+	.string "{SE_M_HYPER_BEAM2}は　いっぱいです…{EOS}"
 	@ pret/pokeemerald-jp direct xref for 0x085CCDAB: dodrio_berry_picking.s: sub_080295A4
 	.globl gText_FilledStorageSpace
 gText_FilledStorageSpace: @ 0x085CCDAB
@@ -21,7 +21,7 @@ gText_FilledStorageSpace: @ 0x085CCDAB
 	.byte 0xAB, 0xFF
 	.globl gText_Rom_5CCDBD
 gText_Rom_5CCDBD: @ 0x085CCDBD
-	.string "もういちど あそびますか？$"
+	.string "もういちど あそびますか？{EOS}"
 	.if (. - gText_Rom_5CCDBD) > 0xe
 	.error "gText_Rom_5CCDBD may not grow beyond its original slot"
 	.endif
@@ -33,7 +33,7 @@ gText_Rom_5CCDBD: @ 0x085CCDBD
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CCDCB
 gText_Rom_5CCDCB: @ 0x085CCDCB
-	.string "だれかが ぬけました\nつうしんを しゅうりょう します$"
+	.string "だれかが ぬけました\nつうしんを しゅうりょう します{EOS}"
 	.if (. - gText_Rom_5CCDCB) != 0x1c
 	.error "gText_Rom_5CCDCB must retain its original byte length"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_actions.h:16 easy_chat_group_actions_line_16 (+1 aliases)
 	.globl gText_Rom_5ECC01
 gText_Rom_5ECC01: @ 0x085ECC01
-	.string "あげる$"
+	.string "あげる{EOS}"
 	.if (. - gText_Rom_5ECC01) > 0x4
 	.error "gText_Rom_5ECC01 may not grow beyond its original slot"
 	.endif
@@ -19,7 +19,7 @@ gText_Rom_5ECC01: @ 0x085ECC01
 	.2byte 0x073A, 0x0014, 0x460D, 0x0B24, 0x002D
 	.globl gText_Rom_5ECC6F
 gText_Rom_5ECC6F: @ 0x085ECC6F
-	.string "あげる$"
+	.string "あげる{EOS}"
 	.if (. - gText_Rom_5ECC6F) > 0x4
 	.error "gText_Rom_5ECC6F may not grow beyond its original slot"
 	.endif

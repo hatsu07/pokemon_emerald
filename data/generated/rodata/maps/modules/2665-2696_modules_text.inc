@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C73E
 gText_Rom_57C73E: @ 0x0857C73E
-	.string "トクサネシティ$"
+	.string "トクサネシティ{EOS}"
 	.if (. - gText_Rom_57C73E) != 0x8
 	.error "gText_Rom_57C73E must retain its original byte length"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_57C73E: @ 0x0857C73E
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C746
 gText_Rom_57C746: @ 0x0857C746
-	.string "ルネシティ$"
+	.string "ルネシティ{EOS}"
 	.if (. - gText_Rom_57C746) != 0x6
 	.error "gText_Rom_57C746 must retain its original byte length"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_57C746: @ 0x0857C746
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C74C
 gText_Rom_57C74C: @ 0x0857C74C
-	.string "サイユウシティ$"
+	.string "サイユウシティ{EOS}"
 	.if (. - gText_Rom_57C74C) != 0x8
 	.error "gText_Rom_57C74C must retain its original byte length"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_57C74C: @ 0x0857C74C
 	@ src/data/region_map/region_map_entries.h:126 region_map_entries_line_126
 	.globl gText_Rom_57C754
 gText_Rom_57C754: @ 0x0857C754
-	.string "101ばん どうろ$"
+	.string "101ばん どうろ{EOS}"
 	.if (. - gText_Rom_57C754) > 0xa
 	.error "gText_Rom_57C754 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_57C754: @ 0x0857C754
 	@ src/data/region_map/region_map_entries.h:133 region_map_entries_line_133
 	.globl gText_Rom_57C75E
 gText_Rom_57C75E: @ 0x0857C75E
-	.string "102ばん どうろ$"
+	.string "102ばん どうろ{EOS}"
 	.if (. - gText_Rom_57C75E) > 0xa
 	.error "gText_Rom_57C75E may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_57C75E: @ 0x0857C75E
 	@ src/data/region_map/region_map_entries.h:140 region_map_entries_line_140
 	.globl gText_Rom_57C768
 gText_Rom_57C768: @ 0x0857C768
-	.string "103ばん どうろ$"
+	.string "103ばん どうろ{EOS}"
 	.if (. - gText_Rom_57C768) > 0xa
 	.error "gText_Rom_57C768 may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_57C768: @ 0x0857C768
 	@ src/data/region_map/region_map_entries.h:147 region_map_entries_line_147
 	.globl gText_Rom_57C772
 gText_Rom_57C772: @ 0x0857C772
-	.string "104ばん どうろ$"
+	.string "104ばん どうろ{EOS}"
 	.if (. - gText_Rom_57C772) > 0xa
 	.error "gText_Rom_57C772 may not grow beyond its original slot"
 	.endif
@@ -79,7 +79,7 @@ gText_Rom_57C772: @ 0x0857C772
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C77C
 gText_Rom_57C77C: @ 0x0857C77C
-	.string "105ばん すいどう$"
+	.string "105ばん すいどう{EOS}"
 	.if (. - gText_Rom_57C77C) != 0xb
 	.error "gText_Rom_57C77C must retain its original byte length"
 	.endif
@@ -90,7 +90,7 @@ gText_Rom_57C77C: @ 0x0857C77C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C787
 gText_Rom_57C787: @ 0x0857C787
-	.string "106ばん すいどう$"
+	.string "106ばん すいどう{EOS}"
 	.if (. - gText_Rom_57C787) != 0xb
 	.error "gText_Rom_57C787 must retain its original byte length"
 	.endif
@@ -101,7 +101,7 @@ gText_Rom_57C787: @ 0x0857C787
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C792
 gText_Rom_57C792: @ 0x0857C792
-	.string "107ばん すいどう$"
+	.string "107ばん すいどう{EOS}"
 	.if (. - gText_Rom_57C792) != 0xb
 	.error "gText_Rom_57C792 must retain its original byte length"
 	.endif
@@ -112,7 +112,7 @@ gText_Rom_57C792: @ 0x0857C792
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C79D
 gText_Rom_57C79D: @ 0x0857C79D
-	.string "108ばん すいどう$"
+	.string "108ばん すいどう{EOS}"
 	.if (. - gText_Rom_57C79D) != 0xb
 	.error "gText_Rom_57C79D must retain its original byte length"
 	.endif
@@ -123,7 +123,7 @@ gText_Rom_57C79D: @ 0x0857C79D
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_57C7A8
 gText_Rom_57C7A8: @ 0x0857C7A8
-	.string "109ばん すいどう$"
+	.string "109ばん すいどう{EOS}"
 	.if (. - gText_Rom_57C7A8) != 0xb
 	.error "gText_Rom_57C7A8 must retain its original byte length"
 	.endif

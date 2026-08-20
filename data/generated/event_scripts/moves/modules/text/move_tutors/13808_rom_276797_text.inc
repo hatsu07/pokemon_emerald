@@ -1,7 +1,7 @@
 	@ data/text/move_tutors.inc:217 MoveTutor_Text_ExplosionDeclined
 	.globl gText_Rom_276797
 gText_Rom_276797: @ 0x08276797
-	.string "がーっ!\nイナカもん だからって ことわるなあ!$"
+	.string "がーっ!\nイナカもん だからって ことわるなあ!{EOS}"
 	.if (. - gText_Rom_276797) > 0x19
 	.error "gText_Rom_276797 may not grow beyond its original slot"
 	.endif

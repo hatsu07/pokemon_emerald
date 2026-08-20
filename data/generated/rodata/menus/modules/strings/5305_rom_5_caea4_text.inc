@@ -1,7 +1,7 @@
 	@ src/strings.c:468 gText_Lv50
 	.globl gText_Rom_5CAEA4
 gText_Rom_5CAEA4: @ 0x085CAEA4
-	.string "レベル50$"
+	.string "レベル50{EOS}"
 	.if (. - gText_Rom_5CAEA4) > 0x6
 	.error "gText_Rom_5CAEA4 may not grow beyond its original slot"
 	.endif

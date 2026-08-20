@@ -1,7 +1,7 @@
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription
 	.globl gText_Rom_24B41B
 gText_Rom_24B41B: @ 0x0824B41B
-	.string "めだっている　ポケモンと\nおなじくらい　がんばった！$"
+	.string "めだっている　ポケモンと\nおなじくらい　がんばった！{EOS}"
 	.if (. - gText_Rom_24B41B) > 0x1b
 	.error "gText_Rom_24B41B may not grow beyond its original slot"
 	.endif

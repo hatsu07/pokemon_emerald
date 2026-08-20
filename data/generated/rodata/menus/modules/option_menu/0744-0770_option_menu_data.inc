@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_53736C
 gText_Rom_53736C: @ 0x0853736C
-	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}おそい$"
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}おそい{EOS}"
 	.if (. - gText_Rom_53736C) != 0xa
 	.error "gText_Rom_53736C must retain its original byte length"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_53736C: @ 0x0853736C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_537376
 gText_Rom_537376: @ 0x08537376
-	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}ふつう$"
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}ふつう{EOS}"
 	.if (. - gText_Rom_537376) != 0xa
 	.error "gText_Rom_537376 must retain its original byte length"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_537376: @ 0x08537376
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_537380
 gText_Rom_537380: @ 0x08537380
-	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}はやい$"
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}はやい{EOS}"
 	.if (. - gText_Rom_537380) != 0xa
 	.error "gText_Rom_537380 must retain its original byte length"
 	.endif
@@ -49,7 +49,7 @@ gScanlineEffectData_08537393: @ 0x08537393
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_53739D
 gText_Rom_53739D: @ 0x0853739D
-	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}いれかえ$"
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}いれかえ{EOS}"
 	.if (. - gText_Rom_53739D) != 0xb
 	.error "gText_Rom_53739D must retain its original byte length"
 	.endif
@@ -59,7 +59,7 @@ gText_Rom_53739D: @ 0x0853739D
 	@ src/option_menu.c:82 gText_BattleStyleSet
 	.globl gText_Rom_5373A8
 gText_Rom_5373A8: @ 0x085373A8
-	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}かちぬき$"
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}かちぬき{EOS}"
 	.if (. - gText_Rom_5373A8) > 0xb
 	.error "gText_Rom_5373A8 may not grow beyond its original slot"
 	.endif
@@ -70,7 +70,7 @@ gText_Rom_5373A8: @ 0x085373A8
 	@ src/option_menu.c:83 gText_SoundMono
 	.globl gText_Rom_5373B3
 gText_Rom_5373B3: @ 0x085373B3
-	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}モノラル$"
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}モノラル{EOS}"
 	.if (. - gText_Rom_5373B3) > 0xb
 	.error "gText_Rom_5373B3 may not grow beyond its original slot"
 	.endif
@@ -81,7 +81,7 @@ gText_Rom_5373B3: @ 0x085373B3
 	@ src/option_menu.c:84 gText_SoundStereo
 	.globl gText_Rom_5373BE
 gText_Rom_5373BE: @ 0x085373BE
-	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}ステレオ$"
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}ステレオ{EOS}"
 	.if (. - gText_Rom_5373BE) > 0xb
 	.error "gText_Rom_5373BE may not grow beyond its original slot"
 	.endif
@@ -93,7 +93,7 @@ gText_Rom_5373BE: @ 0x085373BE
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5373C9
 gText_Rom_5373C9: @ 0x085373C9
-	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}タイプ$"
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}タイプ{EOS}"
 	.if (. - gText_Rom_5373C9) != 0xa
 	.error "gText_Rom_5373C9 must retain its original byte length"
 	.endif
@@ -103,7 +103,7 @@ gText_Rom_5373C9: @ 0x085373C9
 	@ src/option_menu.c:86 gText_FrameTypeNumber
 	.globl gText_Rom_5373D3
 gText_Rom_5373D3: @ 0x085373D3
-	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}$"
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}{EOS}"
 	.if (. - gText_Rom_5373D3) > 0x7
 	.error "gText_Rom_5373D3 may not grow beyond its original slot"
 	.endif
@@ -115,7 +115,7 @@ gText_Rom_5373D3: @ 0x085373D3
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5373DA
 gText_Rom_5373DA: @ 0x085373DA
-	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}ノーマル$"
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}ノーマル{EOS}"
 	.if (. - gText_Rom_5373DA) != 0xb
 	.error "gText_Rom_5373DA must retain its original byte length"
 	.endif
@@ -125,7 +125,7 @@ gText_Rom_5373DA: @ 0x085373DA
 	@ src/option_menu.c:88 gText_ButtonTypeLR
 	.globl gText_Rom_5373E5
 gText_Rom_5373E5: @ 0x085373E5
-	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}LR$"
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}LR{EOS}"
 	.if (. - gText_Rom_5373E5) > 0x9
 	.error "gText_Rom_5373E5 may not grow beyond its original slot"
 	.endif

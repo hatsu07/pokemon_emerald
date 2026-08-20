@@ -1,7 +1,7 @@
 	@ src/battle_message.c:456 battle_message_line_456
 	.globl gText_Rom_5AB336
 gText_Rom_5AB336: @ 0x085AB336
-	.string "{B_SCR_NAME_WITH_PREFIX}は {B_LAST_ITEM}で\nたいりょくを かいふくした!$"
+	.string "{B_SCR_NAME_WITH_PREFIX}は {B_LAST_ITEM}で\nたいりょくを かいふくした!{EOS}"
 	.if (. - gText_Rom_5AB336) > 0x17
 	.error "gText_Rom_5AB336 may not grow beyond its original slot"
 	.endif
@@ -16,7 +16,7 @@ gText_Rom_5AB336: @ 0x085AB336
 	.byte 0x45, 0x0C, 0x10, 0xAB, 0xFF
 	.globl gText_Rom_5AB382
 gText_Rom_5AB382: @ 0x085AB382
-	.string "{B_SCR_NAME_WITH_PREFIX}は {B_LAST_ITEM}で\nすこし かいふく$"
+	.string "{B_SCR_NAME_WITH_PREFIX}は {B_LAST_ITEM}で\nすこし かいふく{EOS}"
 	.if (. - gText_Rom_5AB382) != 0x11
 	.error "gText_Rom_5AB382 must retain its original byte length"
 	.endif
@@ -26,7 +26,7 @@ gText_Rom_5AB382: @ 0x085AB382
 	@ src/battle_message.c:460 battle_message_line_460
 	.globl gText_Rom_5AB393
 gText_Rom_5AB393: @ 0x085AB393
-	.string "{B_LAST_ITEM}の こうかで\n{B_CURRENT_MOVE}しか だすことができない!\p$"
+	.string "{B_LAST_ITEM}の こうかで\n{B_CURRENT_MOVE}しか だすことができない!\p{EOS}"
 	.if (. - gText_Rom_5AB393) > 0x1a
 	.error "gText_Rom_5AB393 may not grow beyond its original slot"
 	.endif
@@ -37,7 +37,7 @@ gText_Rom_5AB393: @ 0x085AB393
 	@ src/battle_message.c:461 battle_message_line_461
 	.globl gText_Rom_5AB3AD
 gText_Rom_5AB3AD: @ 0x085AB3AD
-	.string "{B_DEF_NAME_WITH_PREFIX}は {B_LAST_ITEM}で\nもちこたえた!$"
+	.string "{B_DEF_NAME_WITH_PREFIX}は {B_LAST_ITEM}で\nもちこたえた!{EOS}"
 	.if (. - gText_Rom_5AB3AD) > 0x10
 	.error "gText_Rom_5AB3AD may not grow beyond its original slot"
 	.endif
@@ -538,7 +538,7 @@ gBattleScriptCommandsData_085ABAEE: @ 0x085ABAEE
 	@ src/battle_message.c:1453 gText_PkmnIsEvolving
 	.globl gText_Rom_5ABAFC
 gText_Rom_5ABAFC: @ 0x085ABAFC
-	.string "……おや！？\n{STR_VAR_1}の　ようすが……！$"
+	.string "……おや！？\n{STR_VAR_1}の　ようすが……！{EOS}"
 	.if (. - gText_Rom_5ABAFC) > 0x13
 	.error "gText_Rom_5ABAFC may not grow beyond its original slot"
 	.endif
@@ -549,7 +549,7 @@ gText_Rom_5ABAFC: @ 0x085ABAFC
 	@ src/battle_message.c:1454 gText_CongratsPkmnEvolved
 	.globl gText_Rom_5ABB0F
 gText_Rom_5ABB0F: @ 0x085ABB0F
-	.string "おめでとう！ {STR_VAR_1}は\n{STR_VAR_2}に しんかした！{WAIT_SE}\p$"
+	.string "おめでとう！ {STR_VAR_1}は\n{STR_VAR_2}に しんかした！{WAIT_SE}\p{EOS}"
 	.if (. - gText_Rom_5ABB0F) > 0x19
 	.error "gText_Rom_5ABB0F may not grow beyond its original slot"
 	.endif

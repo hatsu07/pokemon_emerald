@@ -1,7 +1,7 @@
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA0E4
 gText_Rom_5CA0E4: @ 0x085CA0E4
-	.string "これでは　たたかえません！$"
+	.string "これでは　たたかえません！{EOS}"
 	.if (. - gText_Rom_5CA0E4) > 0xe
 	.error "gText_Rom_5CA0E4 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CA0E4: @ 0x085CA0E4
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA0F2
 gText_Rom_5CA0F2: @ 0x085CA0F2
-	.string "どのポケモンを　あずけますか？$"
+	.string "どのポケモンを　あずけますか？{EOS}"
 	.if (. - gText_Rom_5CA0F2) > 0x10
 	.error "gText_Rom_5CA0F2 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CA0F2: @ 0x085CA0F2
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA102
 gText_Rom_5CA102: @ 0x085CA102
-	.string "たいりょくが　たりません……$"
+	.string "たいりょくが　たりません……{EOS}"
 	.if (. - gText_Rom_5CA102) > 0xf
 	.error "gText_Rom_5CA102 may not grow beyond its original slot"
 	.endif
@@ -35,7 +35,7 @@ gText_Rom_5CA102: @ 0x085CA102
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA111
 gText_Rom_5CA111: @ 0x085CA111
-	.string "{0xFD}{0x02}ひき　そろっていません$"
+	.string "{0xFD}{0x02}ひき　そろっていません{EOS}"
 	.if (. - gText_Rom_5CA111) != 0xe
 	.error "gText_Rom_5CA111 must retain its original byte length"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5CA111: @ 0x085CA111
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA11F
 gText_Rom_5CA11F: @ 0x085CA11F
-	.string "おなじ　ポケモンが　います！$"
+	.string "おなじ　ポケモンが　います！{EOS}"
 	.if (. - gText_Rom_5CA11F) > 0xf
 	.error "gText_Rom_5CA11F may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5CA11F: @ 0x085CA11F
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA12E
 gText_Rom_5CA12E: @ 0x085CA12E
-	.string "おなじ　どうぐを　もってます$"
+	.string "おなじ　どうぐを　もってます{EOS}"
 	.if (. - gText_Rom_5CA12E) > 0xf
 	.error "gText_Rom_5CA12E may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_5CA12E: @ 0x085CA12E
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA13D
 gText_Rom_5CA13D: @ 0x085CA13D
-	.string "ながれが　はやくて　ダメだ！$"
+	.string "ながれが　はやくて　ダメだ！{EOS}"
 	.if (. - gText_Rom_5CA13D) > 0xf
 	.error "gText_Rom_5CA13D may not grow beyond its original slot"
 	.endif

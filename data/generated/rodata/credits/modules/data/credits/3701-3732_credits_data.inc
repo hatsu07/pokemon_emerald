@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C6CB4
 gText_Rom_5C6CB4: @ 0x085C6CB4
-	.string "ポケットモンスター エメラルド$"
+	.string "ポケットモンスター エメラルド{EOS}"
 	.if (. - gText_Rom_5C6CB4) != 0x10
 	.error "gText_Rom_5C6CB4 must retain its original byte length"
 	.endif
@@ -14,7 +14,7 @@ gText_Rom_5C6CB4: @ 0x085C6CB4
 	@ src/data/credits.h:67 sCreditsText_Credits
 	.globl gText_Rom_5C6CC4
 gText_Rom_5C6CC4: @ 0x085C6CC4
-	.string "スタッフリスト$"
+	.string "スタッフリスト{EOS}"
 	.if (. - gText_Rom_5C6CC4) > 0x8
 	.error "gText_Rom_5C6CC4 may not grow beyond its original slot"
 	.endif
@@ -26,7 +26,7 @@ gText_Rom_5C6CC4: @ 0x085C6CC4
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C6CCC
 gText_Rom_5C6CCC: @ 0x085C6CCC
-	.string "エグゼクティブ ディレクター$"
+	.string "エグゼクティブ ディレクター{EOS}"
 	.if (. - gText_Rom_5C6CCC) != 0xf
 	.error "gText_Rom_5C6CCC must retain its original byte length"
 	.endif
@@ -36,7 +36,7 @@ gText_Rom_5C6CCC: @ 0x085C6CCC
 	@ src/data/credits.h:69 sCreditsText_Director
 	.globl gText_Rom_5C6CDB
 gText_Rom_5C6CDB: @ 0x085C6CDB
-	.string "ディレクター$"
+	.string "ディレクター{EOS}"
 	.if (. - gText_Rom_5C6CDB) > 0x7
 	.error "gText_Rom_5C6CDB may not grow beyond its original slot"
 	.endif
@@ -48,7 +48,7 @@ gText_Rom_5C6CDB: @ 0x085C6CDB
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C6CE2
 gText_Rom_5C6CE2: @ 0x085C6CE2
-	.string "アート ディレクター$"
+	.string "アート ディレクター{EOS}"
 	.if (. - gText_Rom_5C6CE2) != 0xb
 	.error "gText_Rom_5C6CE2 must retain its original byte length"
 	.endif
@@ -59,7 +59,7 @@ gText_Rom_5C6CE2: @ 0x085C6CE2
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C6CED
 gText_Rom_5C6CED: @ 0x085C6CED
-	.string "バトル ディレクター$"
+	.string "バトル ディレクター{EOS}"
 	.if (. - gText_Rom_5C6CED) != 0xb
 	.error "gText_Rom_5C6CED must retain its original byte length"
 	.endif
@@ -70,7 +70,7 @@ gText_Rom_5C6CED: @ 0x085C6CED
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C6CF8
 gText_Rom_5C6CF8: @ 0x085C6CF8
-	.string "メイン プログラム$"
+	.string "メイン プログラム{EOS}"
 	.if (. - gText_Rom_5C6CF8) != 0xa
 	.error "gText_Rom_5C6CF8 must retain its original byte length"
 	.endif
@@ -81,7 +81,7 @@ gText_Rom_5C6CF8: @ 0x085C6CF8
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C6D02
 gText_Rom_5C6D02: @ 0x085C6D02
-	.string "バトル システム プログラム$"
+	.string "バトル システム プログラム{EOS}"
 	.if (. - gText_Rom_5C6D02) != 0xf
 	.error "gText_Rom_5C6D02 must retain its original byte length"
 	.endif
@@ -92,7 +92,7 @@ gText_Rom_5C6D02: @ 0x085C6D02
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C6D11
 gText_Rom_5C6D11: @ 0x085C6D11
-	.string "フィールド システム プログラム$"
+	.string "フィールド システム プログラム{EOS}"
 	.if (. - gText_Rom_5C6D11) != 0x11
 	.error "gText_Rom_5C6D11 must retain its original byte length"
 	.endif
@@ -102,7 +102,7 @@ gText_Rom_5C6D11: @ 0x085C6D11
 	@ src/data/credits.h:75 sCreditsText_Programmers
 	.globl gText_Rom_5C6D22
 gText_Rom_5C6D22: @ 0x085C6D22
-	.string "プログラム$"
+	.string "プログラム{EOS}"
 	.if (. - gText_Rom_5C6D22) > 0x6
 	.error "gText_Rom_5C6D22 may not grow beyond its original slot"
 	.endif
@@ -114,7 +114,7 @@ gText_Rom_5C6D22: @ 0x085C6D22
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C6D28
 gText_Rom_5C6D28: @ 0x085C6D28
-	.string "メイン グラフィック デザイン$"
+	.string "メイン グラフィック デザイン{EOS}"
 	.if (. - gText_Rom_5C6D28) != 0x10
 	.error "gText_Rom_5C6D28 must retain its original byte length"
 	.endif
@@ -127,7 +127,7 @@ gText_Rom_5C6D28: @ 0x085C6D28
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C6D38
 gText_Rom_5C6D38: @ 0x085C6D38
-	.string "グラフィック デザイン$"
+	.string "グラフィック デザイン{EOS}"
 	.if (. - gText_Rom_5C6D38) != 0xc
 	.error "gText_Rom_5C6D38 must retain its original byte length"
 	.endif

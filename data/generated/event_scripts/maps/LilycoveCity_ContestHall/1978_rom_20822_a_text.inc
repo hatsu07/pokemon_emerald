@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_ContestHall/scripts.inc:418 LilycoveCity_ContestHall_Text_SmartContestStage
 	.globl gText_Rom_20822A
 gText_Rom_20822A: @ 0x0820822A
-	.string "かしこさコンテスト ステージ\nインテリ ポケモンに トロトロ！$"
+	.string "かしこさコンテスト ステージ\nインテリ ポケモンに トロトロ！{EOS}"
 	.if (. - gText_Rom_20822A) > 0x20
 	.error "gText_Rom_20822A may not grow beyond its original slot"
 	.endif

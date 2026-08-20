@@ -20,38 +20,38 @@ sLinkTestDigitsGfx: @ 0x082BFB8C
 
 	.globl sText_Connecting
 sText_Connecting: @ 0x082BFDAC
-	.string "せつぞく ちゅうです$"
+	.string "せつぞく ちゅうです{EOS}"
 	.balign 4, 0
 
 	.globl sText_UnableToConnectPrefix
 sText_UnableToConnectPrefix: @ 0x082BFDB8
-	.string "せつぞく できません$"
+	.string "せつぞく できません{EOS}"
 	@ Decoded text from ROM range: offset=0x2BFDC3, size=0x20
-	.string "　かくにん　ちゅうです$"
-	.string "　かくにん　できました$"
-	.string "　かくにん　できません$"
+	.string "　かくにん　ちゅうです{EOS}"
+	.string "　かくにん　できました{EOS}"
+	.string "　かくにん　できません{EOS}"
 	@ Decoded text from ROM range: offset=0x2BFDE7, size=0x19
-	.string "　かくにん　を　かくにん$"
-	.string "かくにん　は　しっぱい$"
+	.string "　かくにん　を　かくにん{EOS}"
+	.string "かくにん　は　しっぱい{EOS}"
 
 	.globl gText_Rom_2BFE00
 gText_Rom_2BFE00: @ 0x082BFE00
 	@ Decoded text from ROM range: offset=0x2BFE00, size=0x50
-	.string "　　つうしん　エラーが　はっせいしました\n　　　しゅうへんきき　との　せつぞくを\n　　　　きちんと　かくにん　してから\n　　　でんげんを　いれなおしてください$"
+	.string "　　つうしん　エラーが　はっせいしました\n　　　しゅうへんきき　との　せつぞくを\n　　　　きちんと　かくにん　してから\n　　　でんげんを　いれなおしてください{EOS}"
 	.globl gText_Rom_2BFE50
 gText_Rom_2BFE50: @ 0x082BFE50
 	@ Decoded text from ROM range: offset=0x2BFE50, size=0x12
-	.string "つうしんエラーが　はっせいしました$"
+	.string "つうしんエラーが　はっせいしました{EOS}"
 	.globl gText_Rom_2BFE62
 gText_Rom_2BFE62: @ 0x082BFE62
 	@ Decoded text from ROM range: offset=0x2BFE62, size=0x2B
-	.string "　つうしんあいてと　ちかづいて　ください\nしょうがいぶつが　ないように　してください$"
+	.string "　つうしんあいてと　ちかづいて　ください\nしょうがいぶつが　ないように　してください{EOS}"
 	.globl gText_Rom_2BFE8D
 gText_Rom_2BFE8D: @ 0x082BFE8D
 	@ Decoded text from ROM range: offset=0x2BFE8D, size=0x12
-	.string "Aボタンで　うけつけに　もどります$"
+	.string "Aボタンで　うけつけに　もどります{EOS}"
 	.globl gText_Rom_2BFE9F
 gText_Rom_2BFE9F: @ 0x082BFE9F
 	@ Decoded text and trailing text-control bytes from ROM range: offset=0x2BFE9F, size=0x15
-	.string "Aボタンで　タイトルに　もどります$"
+	.string "Aボタンで　タイトルに　もどります{EOS}"
 	.string "{HIGHLIGHT}{TRANSPARENT}"

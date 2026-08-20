@@ -1,7 +1,7 @@
 	@ field-script:0x209B22 FieldScriptText_209D18
 	.globl gText_Rom_209D18
 gText_Rom_209D18: @ 0x08209D18
-	.string "やっと　れんらくせん　タイドリップごうが\nうんこう　するように　なったんだ！\pカイナの　ぞうせんじょの　みんな\nたいへん　だったろうな\lこれからは　おれが　いそがしくなるぞ！$"
+	.string "やっと　れんらくせん　タイドリップごうが\nうんこう　するように　なったんだ！\pカイナの　ぞうせんじょの　みんな\nたいへん　だったろうな\lこれからは　おれが　いそがしくなるぞ！{EOS}"
 	.if (. - gText_Rom_209D18) > 0x58
 	.error "gText_Rom_209D18 may not grow beyond its original slot"
 	.endif

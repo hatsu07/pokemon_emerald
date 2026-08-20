@@ -1,7 +1,7 @@
 	@ asm/contest.s:11851 sub_080DCBC0
 	.globl gText_Rom_24C0E1
 gText_Rom_24C0E1: @ 0x0824C0E1
-	.string "オロオロ$"
+	.string "オロオロ{EOS}"
 	.if (. - gText_Rom_24C0E1) > 0x5
 	.error "gText_Rom_24C0E1 may not grow beyond its original slot"
 	.endif

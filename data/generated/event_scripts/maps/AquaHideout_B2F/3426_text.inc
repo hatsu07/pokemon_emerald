@@ -1,7 +1,7 @@
 	@ data/maps/AquaHideout_B2F/scripts.inc:116 AquaHideout_B2F_Text_Grunt6PostBattle
 	.globl gText_Rom_218297
 gText_Rom_218297: @ 0x08218297
-	.string "そういえば…… マスターボールを\nどこに おいたのか わすれちゃったわ\pあれを まもっていないと\nリーダーに おこられるのよ……$"
+	.string "そういえば…… マスターボールを\nどこに おいたのか わすれちゃったわ\pあれを まもっていないと\nリーダーに おこられるのよ……{EOS}"
 	.if (. - gText_Rom_218297) > 0x41
 	.error "gText_Rom_218297 may not grow beyond its original slot"
 	.endif

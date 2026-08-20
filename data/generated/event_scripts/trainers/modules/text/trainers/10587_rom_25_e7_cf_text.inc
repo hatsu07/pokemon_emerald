@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1970 Route119_Text_DougPostBattle
 	.globl gText_Rom_25E7CF
 gText_Rom_25E7CF: @ 0x0825E7CF
-	.string "ボクらは モノマネサークル!\nたのしんで もらえたかな?$"
+	.string "ボクらは モノマネサークル!\nたのしんで もらえたかな?{EOS}"
 	.if (. - gText_Rom_25E7CF) > 0x1d
 	.error "gText_Rom_25E7CF may not grow beyond its original slot"
 	.endif

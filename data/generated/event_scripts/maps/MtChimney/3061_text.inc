@@ -1,7 +1,7 @@
 	@ data/maps/MtChimney/scripts.inc:640 MtChimney_Text_TeamAquaAlwaysMessingWithPlans
 	.globl gText_Rom_215428
 gText_Rom_215428: @ 0x08215428
-	.string "アクアだんの やつらめ……\nいちいち オレたちの じゃまを しやがって!$"
+	.string "アクアだんの やつらめ……\nいちいち オレたちの じゃまを しやがって!{EOS}"
 	.if (. - gText_Rom_215428) > 0x25
 	.error "gText_Rom_215428 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/battle_message.c:1516 gText_Mind
 	.globl gText_Rom_5ABDA3
 gText_Rom_5ABDA3: @ 0x085ABDA3
-	.string "こころ$"
+	.string "こころ{EOS}"
 	.if (. - gText_Rom_5ABDA3) > 0x4
 	.error "gText_Rom_5ABDA3 may not grow beyond its original slot"
 	.endif
@@ -11,12 +11,12 @@ gText_Rom_5ABDA3: @ 0x085ABDA3
 	.globl gText_Rom_5ABDA7
 gText_Rom_5ABDA7: @ 0x085ABDA7
 	@ Decoded text from ROM range: offset=0x5ABDA7, size=0x3
-	.string "わざ$"
+	.string "わざ{EOS}"
 
 	@ src/battle_message.c:1518 gText_Body
 	.globl gText_Rom_5ABDAA
 gText_Rom_5ABDAA: @ 0x085ABDAA
-	.string "からだ$"
+	.string "からだ{EOS}"
 	.if (. - gText_Rom_5ABDAA) > 0x4
 	.error "gText_Rom_5ABDAA may not grow beyond its original slot"
 	.endif
@@ -65,7 +65,7 @@ gBattleMessageData_085ABE13: @ 0x085ABE13
 	.byte 0x10, 0xAB, 0xFA
 	.globl gText_Rom_5ABE26
 gText_Rom_5ABE26: @ 0x085ABE26
-	.string "ゆけっ！ {B_PLAYER_MON1_NAME}！$"
+	.string "ゆけっ！ {B_PLAYER_MON1_NAME}！{EOS}"
 	.if (. - gText_Rom_5ABE26) > 0x9
 	.error "gText_Rom_5ABE26 may not grow beyond its original slot"
 	.endif
@@ -84,7 +84,7 @@ gBattleMessageData_085ABE2F:
 	.byte 0xFF
 	.globl gText_Rom_5ABE50
 gText_Rom_5ABE50: @ 0x085ABE50
-	.string "{B_ATK_NAME_WITH_PREFIX}は\nじぶんの ちからを はっき できない ようだ!$"
+	.string "{B_ATK_NAME_WITH_PREFIX}は\nじぶんの ちからを はっき できない ようだ!{EOS}"
 	.if (. - gText_Rom_5ABE50) > 0x1c
 	.error "gText_Rom_5ABE50 may not grow beyond its original slot"
 	.endif
@@ -92,12 +92,12 @@ gText_Rom_5ABE50: @ 0x085ABE50
 	.space 0x1c - (. - gText_Rom_5ABE50)
 	.endif
 	@ Decoded text from ROM range: offset=0x5ABE6C, size=0x13
-	.string "{B_SCR_NAME_WITH_PREFIX}の　めの　いろが　かわっていく！$"
+	.string "{B_SCR_NAME_WITH_PREFIX}の　めの　いろが　かわっていく！{EOS}"
 
 	@ src/battle_message.c:514 battle_message_line_514
 	.globl gText_Rom_5ABE7F
 gText_Rom_5ABE7F: @ 0x085ABE7F
-	.string "{B_SCR_NAME_WITH_PREFIX}は たいせいを たてなおしている!$"
+	.string "{B_SCR_NAME_WITH_PREFIX}は たいせいを たてなおしている!{EOS}"
 	.if (. - gText_Rom_5ABE7F) > 0x14
 	.error "gText_Rom_5ABE7F may not grow beyond its original slot"
 	.endif
@@ -108,7 +108,7 @@ gText_Rom_5ABE7F: @ 0x085ABE7F
 	@ src/battle_message.c:515 battle_message_line_515
 	.globl gText_Rom_5ABE93
 gText_Rom_5ABE93: @ 0x085ABE93
-	.string "{B_SCR_NAME_WITH_PREFIX}は ひくく うなり はじめた!$"
+	.string "{B_SCR_NAME_WITH_PREFIX}は ひくく うなり はじめた!{EOS}"
 	.if (. - gText_Rom_5ABE93) > 0x12
 	.error "gText_Rom_5ABE93 may not grow beyond its original slot"
 	.endif
@@ -119,7 +119,7 @@ gText_Rom_5ABE93: @ 0x085ABE93
 	@ src/battle_message.c:516 battle_message_line_516
 	.globl gText_Rom_5ABEA5
 gText_Rom_5ABEA5: @ 0x085ABEA5
-	.string "{B_SCR_NAME_WITH_PREFIX}は まだまだ やるきだ!$"
+	.string "{B_SCR_NAME_WITH_PREFIX}は まだまだ やるきだ!{EOS}"
 	.if (. - gText_Rom_5ABEA5) > 0xf
 	.error "gText_Rom_5ABEA5 may not grow beyond its original slot"
 	.endif
@@ -131,7 +131,7 @@ gText_Rom_5ABEA5: @ 0x085ABEA5
 	.2byte 0x016E, 0x016F, 0x0170, 0x0171
 	.globl gText_Rom_5ABEBC
 gText_Rom_5ABEBC: @ 0x085ABEBC
-	.string "しんぱん『あと 3ターンで けっちゃくが\nつかないと はんていに なります!$"
+	.string "しんぱん『あと 3ターンで けっちゃくが\nつかないと はんていに なります!{EOS}"
 	.if (. - gText_Rom_5ABEBC) > 0x27
 	.error "gText_Rom_5ABEBC may not grow beyond its original slot"
 	.endif
@@ -142,7 +142,7 @@ gText_Rom_5ABEBC: @ 0x085ABEBC
 	@ src/battle_message.c:1541 battle_message_line_1541
 	.globl gText_Rom_5ABEE3
 gText_Rom_5ABEE3: @ 0x085ABEE3
-	.string "しんぱん『そこまでーーー!\nこの たいけつは はんていに なります!$"
+	.string "しんぱん『そこまでーーー!\nこの たいけつは はんていに なります!{EOS}"
 	.if (. - gText_Rom_5ABEE3) > 0x23
 	.error "gText_Rom_5ABEE3 may not grow beyond its original slot"
 	.endif
@@ -153,7 +153,7 @@ gText_Rom_5ABEE3: @ 0x085ABEE3
 	@ src/battle_message.c:1542 battle_message_line_1542
 	.globl gText_Rom_5ABF06
 gText_Rom_5ABF06: @ 0x085ABF06
-	.string "しんぱん『はんてい その1! 「こころ」!\nせめる きもちを みせたもの!\p$"
+	.string "しんぱん『はんてい その1! 「こころ」!\nせめる きもちを みせたもの!\p{EOS}"
 	.if (. - gText_Rom_5ABF06) > 0x27
 	.error "gText_Rom_5ABF06 may not grow beyond its original slot"
 	.endif
@@ -164,7 +164,7 @@ gText_Rom_5ABF06: @ 0x085ABF06
 	@ src/battle_message.c:1543 battle_message_line_1543
 	.globl gText_Rom_5ABF2D
 gText_Rom_5ABF2D: @ 0x085ABF2D
-	.string "しんぱん『はんてい その2! 「わざ」!\nてきかくに わざを くりだしたもの!\p$"
+	.string "しんぱん『はんてい その2! 「わざ」!\nてきかくに わざを くりだしたもの!\p{EOS}"
 	.if (. - gText_Rom_5ABF2D) > 0x29
 	.error "gText_Rom_5ABF2D may not grow beyond its original slot"
 	.endif
@@ -175,7 +175,7 @@ gText_Rom_5ABF2D: @ 0x085ABF2D
 	@ src/battle_message.c:1544 battle_message_line_1544
 	.globl gText_Rom_5ABF56
 gText_Rom_5ABF56: @ 0x085ABF56
-	.string "しんぱん『はんてい その3! 「からだ」!\nあふれる たいりょくを もちえるもの!\p$"
+	.string "しんぱん『はんてい その3! 「からだ」!\nあふれる たいりょくを もちえるもの!\p{EOS}"
 	.if (. - gText_Rom_5ABF56) > 0x2b
 	.error "gText_Rom_5ABF56 may not grow beyond its original slot"
 	.endif
@@ -191,7 +191,7 @@ gText_Rom_5ABF56: @ 0x085ABF56
 	.byte 0x00, 0xFD, 0x06, 0xAB, 0xFB, 0xFF
 	.globl gText_Rom_5ABFC7
 gText_Rom_5ABFC7: @ 0x085ABFC7
-	.string "しんぱん『はんてい 3 たい 3\nひきわけーーー!\p$"
+	.string "しんぱん『はんてい 3 たい 3\nひきわけーーー!\p{EOS}"
 	.if (. - gText_Rom_5ABFC7) > 0x1b
 	.error "gText_Rom_5ABFC7 may not grow beyond its original slot"
 	.endif
@@ -203,7 +203,7 @@ gText_Rom_5ABFC7: @ 0x085ABFC7
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5ABFE2
 gText_Rom_5ABFE2: @ 0x085ABFE2
-	.string "{B_PLAYER_MON1_NAME}は はんていで\nあいての {B_OPPONENT_MON1_NAME}に かった！$"
+	.string "{B_PLAYER_MON1_NAME}は はんていで\nあいての {B_OPPONENT_MON1_NAME}に かった！{EOS}"
 	.if (. - gText_Rom_5ABFE2) != 0x18
 	.error "gText_Rom_5ABFE2 must retain its original byte length"
 	.endif
@@ -214,7 +214,7 @@ gText_Rom_5ABFE2: @ 0x085ABFE2
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5ABFFA
 gText_Rom_5ABFFA: @ 0x085ABFFA
-	.string "{B_PLAYER_MON1_NAME}は はんていで\nあいての {B_OPPONENT_MON1_NAME}に まけた！$"
+	.string "{B_PLAYER_MON1_NAME}は はんていで\nあいての {B_OPPONENT_MON1_NAME}に まけた！{EOS}"
 	.if (. - gText_Rom_5ABFFA) != 0x18
 	.error "gText_Rom_5ABFFA must retain its original byte length"
 	.endif

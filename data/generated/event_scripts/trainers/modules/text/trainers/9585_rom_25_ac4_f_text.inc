@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:530 Route108_Text_TaraPostBattle
 	.globl gText_Rom_25AC4F
 gText_Rom_25AC4F: @ 0x0825AC4F
-	.string "ウソでも いいから カワイイって いわれたい\nふくざつな おんなごころ……$"
+	.string "ウソでも いいから カワイイって いわれたい\nふくざつな おんなごころ……{EOS}"
 	.if (. - gText_Rom_25AC4F) > 0x26
 	.error "gText_Rom_25AC4F may not grow beyond its original slot"
 	.endif

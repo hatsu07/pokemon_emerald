@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_Gym_1F/scripts.inc:194 SootopolisCity_Gym_1F_Text_ReceivedRainBadge
 	.globl gText_Rom_20E729
 gText_Rom_20E729: @ 0x0820E729
-	.string "{PLAYER}は アダンから\nレインバッジを もらった!$"
+	.string "{PLAYER}は アダンから\nレインバッジを もらった!{EOS}"
 	.if (. - gText_Rom_20E729) > 0x18
 	.error "gText_Rom_20E729 may not grow beyond its original slot"
 	.endif

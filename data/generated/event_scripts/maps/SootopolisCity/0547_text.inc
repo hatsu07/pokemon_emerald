@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity/scripts.inc:1459 SootopolisCity_Text_CaveOfOriginSleepsToo
 	.globl gText_Rom_1E3148
 gText_Rom_1E3148: @ 0x081E3148
-	.string "ここは めざめのほこら……\pけれど わざわいが きえさった いま\nほこらも しずかに ねむるのです……$"
+	.string "ここは めざめのほこら……\pけれど わざわいが きえさった いま\nほこらも しずかに ねむるのです……{EOS}"
 	.if (. - gText_Rom_1E3148) > 0x34
 	.error "gText_Rom_1E3148 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ asm/field_specials.s:111 DetermineCyclingRoadResults
 	.globl gText_Rom_5CB025
 gText_Rom_5CB025: @ 0x085CB025
-	.string "かい$"
+	.string "かい{EOS}"
 	.if (. - gText_Rom_5CB025) > 0x3
 	.error "gText_Rom_5CB025 may not grow beyond its original slot"
 	.endif
@@ -16,7 +16,7 @@ gText_CyclingRoadTimesSuffix: @ 0x085CB028
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CB02A
 gText_Rom_5CB02A: @ 0x085CB02A
-	.string "おにいちゃん$"
+	.string "おにいちゃん{EOS}"
 	.if (. - gText_Rom_5CB02A) != 0x7
 	.error "gText_Rom_5CB02A must retain its original byte length"
 	.endif
@@ -27,7 +27,7 @@ gText_Rom_5CB02A: @ 0x085CB02A
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CB031
 gText_Rom_5CB031: @ 0x085CB031
-	.string "おねえちゃん$"
+	.string "おねえちゃん{EOS}"
 	.if (. - gText_Rom_5CB031) != 0x7
 	.error "gText_Rom_5CB031 must retain its original byte length"
 	.endif
@@ -37,7 +37,7 @@ gText_Rom_5CB031: @ 0x085CB031
 	@ src/field_specials.c:177 sText_Son
 	.globl gText_Rom_5CB038
 gText_Rom_5CB038: @ 0x085CB038
-	.string "むすこ$"
+	.string "むすこ{EOS}"
 	.if (. - gText_Rom_5CB038) > 0x4
 	.error "gText_Rom_5CB038 may not grow beyond its original slot"
 	.endif
@@ -48,7 +48,7 @@ gText_Rom_5CB038: @ 0x085CB038
 	@ src/field_specials.c:178 sText_Daughter
 	.globl gText_Rom_5CB03C
 gText_Rom_5CB03C: @ 0x085CB03C
-	.string "むすめ$"
+	.string "むすめ{EOS}"
 	.if (. - gText_Rom_5CB03C) > 0x4
 	.error "gText_Rom_5CB03C may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_Flat1_1F/scripts.inc:15 RustboroCity_Flat1_1F_Text_PokemonStrange
 	.globl gText_Rom_203755
 gText_Rom_203755: @ 0x08203755
-	.string "ほんとうに ポケモンって\nふしぎな いきもの なのね$"
+	.string "ほんとうに ポケモンって\nふしぎな いきもの なのね{EOS}"
 	.if (. - gText_Rom_203755) > 0x1b
 	.error "gText_Rom_203755 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity/scripts.inc:1242 RustboroCity_Text_DevonCorpBranchOfficeSign
 	.globl gText_Rom_1DFB7E
 gText_Rom_1DFB7E: @ 0x081DFB7E
-	.string "「デボン コーポレーション ぶんしつ」\pかんけいしゃ いがいの たちいりは\nどうぞ ごえんりょ ください!$"
+	.string "「デボン コーポレーション ぶんしつ」\pかんけいしゃ いがいの たちいりは\nどうぞ ごえんりょ ください!{EOS}"
 	.if (. - gText_Rom_1DFB7E) > 0x36
 	.error "gText_Rom_1DFB7E may not grow beyond its original slot"
 	.endif

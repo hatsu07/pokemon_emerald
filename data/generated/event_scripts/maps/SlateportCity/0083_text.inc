@@ -1,7 +1,7 @@
 	@ data/maps/SlateportCity/scripts.inc:1130 SlateportCity_Text_AmIOnTV
 	.globl gText_Rom_1DD166
 gText_Rom_1DD166: @ 0x081DD166
-	.string "みんなー! みてるかー!\nおれも テレビに うつってるかー?$"
+	.string "みんなー! みてるかー!\nおれも テレビに うつってるかー?{EOS}"
 	.if (. - gText_Rom_1DD166) > 0x1f
 	.error "gText_Rom_1DD166 may not grow beyond its original slot"
 	.endif

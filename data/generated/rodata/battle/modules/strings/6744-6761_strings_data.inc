@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5DD438
 gText_Rom_5DD438: @ 0x085DD438
-	.string "レンタル/こうかん$"
+	.string "レンタル/こうかん{EOS}"
 	.if (. - gText_Rom_5DD438) != 0xa
 	.error "gText_Rom_5DD438 must retain its original byte length"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5DD438: @ 0x085DD438
 	@ src/strings.c:897 gText_Total
 	.globl gText_Rom_5DD442
 gText_Rom_5DD442: @ 0x085DD442
-	.string "つうさん$"
+	.string "つうさん{EOS}"
 	.if (. - gText_Rom_5DD442) > 0x5
 	.error "gText_Rom_5DD442 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5DD442: @ 0x085DD442
 	@ src/strings.c:898 gText_ClearStreak
 	.globl gText_Rom_5DD447
 gText_Rom_5DD447: @ 0x085DD447
-	.string "{STR_VAR_1}れんぱ$"
+	.string "{STR_VAR_1}れんぱ{EOS}"
 	.if (. - gText_Rom_5DD447) > 0x6
 	.error "gText_Rom_5DD447 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5DD447: @ 0x085DD447
 	@ src/strings.c:899 gText_Championships
 	.globl gText_Rom_5DD44D
 gText_Rom_5DD44D: @ 0x085DD44D
-	.string "{STR_VAR_1}かい ゆうしょう$"
+	.string "{STR_VAR_1}かい ゆうしょう{EOS}"
 	.if (. - gText_Rom_5DD44D) > 0xb
 	.error "gText_Rom_5DD44D may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5DD44D: @ 0x085DD44D
 	@ src/strings.c:900 gText_RoomsCleared
 	.globl gText_Rom_5DD458
 gText_Rom_5DD458: @ 0x085DD458
-	.string "{STR_VAR_1}へや とっぱ$"
+	.string "{STR_VAR_1}へや とっぱ{EOS}"
 	.if (. - gText_Rom_5DD458) > 0x9
 	.error "gText_Rom_5DD458 may not grow beyond its original slot"
 	.endif
@@ -55,12 +55,12 @@ gText_Rom_5DD458: @ 0x085DD458
 	.globl gText_Rom_5DD461
 gText_Rom_5DD461: @ 0x085DD461
 	@ Decoded text from ROM range: offset=0x5DD461, size=0x9
-	.string "{B_COPY_VAR_1}かい　クリア$"
+	.string "{B_COPY_VAR_1}かい　クリア{EOS}"
 
 	@ src/strings.c:902 gText_KOsInARow
 	.globl gText_Rom_5DD46A
 gText_Rom_5DD46A: @ 0x085DD46A
-	.string "{STR_VAR_1}にんぬき$"
+	.string "{STR_VAR_1}にんぬき{EOS}"
 	.if (. - gText_Rom_5DD46A) > 0x7
 	.error "gText_Rom_5DD46A may not grow beyond its original slot"
 	.endif
@@ -71,7 +71,7 @@ gText_Rom_5DD46A: @ 0x085DD46A
 	@ src/strings.c:903 gText_TimesVar1
 	.globl gText_Rom_5DD471
 gText_Rom_5DD471: @ 0x085DD471
-	.string "{STR_VAR_1}かい$"
+	.string "{STR_VAR_1}かい{EOS}"
 	.if (. - gText_Rom_5DD471) > 0x5
 	.error "gText_Rom_5DD471 may not grow beyond its original slot"
 	.endif
@@ -82,7 +82,7 @@ gText_Rom_5DD471: @ 0x085DD471
 	@ src/strings.c:904 gText_FloorsCleared
 	.globl gText_Rom_5DD476
 gText_Rom_5DD476: @ 0x085DD476
-	.string "{STR_VAR_1}だん せいは$"
+	.string "{STR_VAR_1}だん せいは{EOS}"
 	.if (. - gText_Rom_5DD476) > 0x9
 	.error "gText_Rom_5DD476 may not grow beyond its original slot"
 	.endif
@@ -157,7 +157,7 @@ gFrontierUtilData_085DD4A4: @ 0x085DD4A4
 	.byte 0x00
 	.globl gText_Rom_5DD4F5
 gText_Rom_5DD4F5: @ 0x085DD4F5
-	.string "レベル50$"
+	.string "レベル50{EOS}"
 	.if (. - gText_Rom_5DD4F5) > 0x6
 	.error "gText_Rom_5DD4F5 may not grow beyond its original slot"
 	.endif

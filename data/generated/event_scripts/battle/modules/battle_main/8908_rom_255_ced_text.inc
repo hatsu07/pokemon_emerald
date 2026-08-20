@@ -12,7 +12,7 @@ gText_Rom_255CED: @ 0x08255CED
 	@ analyzed canonical ROM range 0x08255CF2-0x08255D5C
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_08255CF2: @ 0x08255CF2
-	.string "コンテストで　ゆうしょう　した$"
+	.string "コンテストで　ゆうしょう　した{EOS}"
 EventText_JP_08255D02: @ 0x08255D02
-	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nコンテストで　ゆうしょう　した　そうだ!\p{STR_VAR_3}は　とてつも　ない\nコンテスト　マスター　だろう!$"
+	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nコンテストで　ゆうしょう　した　そうだ!\p{STR_VAR_3}は　とてつも　ない\nコンテスト　マスター　だろう!{EOS}"
 	.byte 0x06, 0x02, 0x23, 0x19, 0x00, 0x41, 0x02, 0x0D, 0x07, 0x00

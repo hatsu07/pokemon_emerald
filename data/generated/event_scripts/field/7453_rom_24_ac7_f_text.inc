@@ -1,7 +1,7 @@
 	@ field-script:0x2496BE FieldScriptText_24AC7F
 	.globl gText_Rom_24AC7F
 gText_Rom_24AC7F: @ 0x0824AC7F
-	.string "2じ　しんさは　いよいよ\nおまちかねの　アピールタイム！\lわざで　アピール　しまくりましょうー！$"
+	.string "2じ　しんさは　いよいよ\nおまちかねの　アピールタイム！\lわざで　アピール　しまくりましょうー！{EOS}"
 	.if (. - gText_Rom_24AC7F) > 0x31
 	.error "gText_Rom_24AC7F may not grow beyond its original slot"
 	.endif

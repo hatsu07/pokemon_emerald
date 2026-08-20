@@ -1,7 +1,7 @@
 	@ field-script:0x2643A1 FieldScriptText_264A71
 	.globl gText_Rom_264A71
 gText_Rom_264A71: @ 0x08264A71
-	.string "わたし　おねだり　おねえさん……$"
+	.string "わたし　おねだり　おねえさん……{EOS}"
 	.if (. - gText_Rom_264A71) > 0x11
 	.error "gText_Rom_264A71 may not grow beyond its original slot"
 	.endif

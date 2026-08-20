@@ -1,7 +1,7 @@
 	@ data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc:432 PlayersHouse_1F_Text_StillUnknownPokemon
 	.globl gText_Rom_1EFF72
 gText_Rom_1EFF72: @ 0x081EFF72
-	.string "ママ『へえー まだまだ\nしられていない ポケモンは いるのねえ$"
+	.string "ママ『へえー まだまだ\nしられていない ポケモンは いるのねえ{EOS}"
 	.if (. - gText_Rom_1EFF72) > 0x20
 	.error "gText_Rom_1EFF72 may not grow beyond its original slot"
 	.endif

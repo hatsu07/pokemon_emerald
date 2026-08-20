@@ -1,7 +1,7 @@
 	@ src/battle_message.c:339 battle_message_line_339
 	.globl gText_Rom_5AA22A
 gText_Rom_5AA22A: @ 0x085AA22A
-	.string "しぜんのちからは\n{B_CURRENT_MOVE}に なった!$"
+	.string "しぜんのちからは\n{B_CURRENT_MOVE}に なった!{EOS}"
 	.if (. - gText_Rom_5AA22A) > 0x12
 	.error "gText_Rom_5AA22A may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5AA22A: @ 0x085AA22A
 	@ src/battle_message.c:340 battle_message_line_340
 	.globl gText_Rom_5AA23C
 gText_Rom_5AA23C: @ 0x085AA23C
-	.string "{B_ATK_NAME_WITH_PREFIX}の じょうたいいじょうが\nなおった!$"
+	.string "{B_ATK_NAME_WITH_PREFIX}の じょうたいいじょうが\nなおった!{EOS}"
 	.if (. - gText_Rom_5AA23C) > 0x15
 	.error "gText_Rom_5AA23C may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5AA23C: @ 0x085AA23C
 	@ src/battle_message.c:342 battle_message_line_342
 	.globl gText_Rom_5AA251
 gText_Rom_5AA251: @ 0x085AA251
-	.string "{B_DEF_NAME_WITH_PREFIX}は\nいちゃもんを つけられた!$"
+	.string "{B_DEF_NAME_WITH_PREFIX}は\nいちゃもんを つけられた!{EOS}"
 	.if (. - gText_Rom_5AA251) > 0x12
 	.error "gText_Rom_5AA251 may not grow beyond its original slot"
 	.endif
@@ -36,7 +36,7 @@ gText_Rom_5AA251: @ 0x085AA251
 	.byte 0x06, 0x22, 0x13, 0x02, 0x29, 0xAB, 0xFF
 	.globl gText_Rom_5AA27A
 gText_Rom_5AA27A: @ 0x085AA27A
-	.string "{B_DEF_NAME_WITH_PREFIX}は \nちょうはつに のってしまった!$"
+	.string "{B_DEF_NAME_WITH_PREFIX}は \nちょうはつに のってしまった!{EOS}"
 	.if (. - gText_Rom_5AA27A) > 0x15
 	.error "gText_Rom_5AA27A may not grow beyond its original slot"
 	.endif
@@ -49,7 +49,7 @@ gText_Rom_5AA27A: @ 0x085AA27A
 	.byte 0x10, 0x02, 0x0E, 0x02, 0x16, 0x00, 0x1A, 0x02, 0x50, 0x10, 0xAB, 0xFF
 	.globl gText_Rom_5AA2AB
 gText_Rom_5AA2AB: @ 0x085AA2AB
-	.string "{B_ATK_NAME_WITH_PREFIX}は おたがいの\nどうぐを いれかえた!$"
+	.string "{B_ATK_NAME_WITH_PREFIX}は おたがいの\nどうぐを いれかえた!{EOS}"
 	.if (. - gText_Rom_5AA2AB) > 0x16
 	.error "gText_Rom_5AA2AB may not grow beyond its original slot"
 	.endif
@@ -66,7 +66,7 @@ gText_Rom_5AA2AB: @ 0x085AA2AB
 	.byte 0x10, 0xAB, 0xFF, 0xFD, 0x0F, 0x1A, 0xFE, 0x18, 0x37, 0x02, 0x3B, 0x14
 	.globl gText_Rom_5AA31D
 gText_Rom_5AA31D: @ 0x085AA31D
-	.string "を した!$"
+	.string "を した!{EOS}"
 	.if (. - gText_Rom_5AA31D) > 0x6
 	.error "gText_Rom_5AA31D may not grow beyond its original slot"
 	.endif
@@ -77,7 +77,7 @@ gText_Rom_5AA31D: @ 0x085AA31D
 	@ src/battle_message.c:350 battle_message_line_350
 	.globl gText_Rom_5AA323
 gText_Rom_5AA323: @ 0x085AA323
-	.string "{B_BUFF1}の\nねがいごとが かなった!$"
+	.string "{B_BUFF1}の\nねがいごとが かなった!{EOS}"
 	.if (. - gText_Rom_5AA323) > 0x11
 	.error "gText_Rom_5AA323 may not grow beyond its original slot"
 	.endif
@@ -88,7 +88,7 @@ gText_Rom_5AA323: @ 0x085AA323
 	@ src/battle_message.c:351 battle_message_line_351
 	.globl gText_Rom_5AA334
 gText_Rom_5AA334: @ 0x085AA334
-	.string "{B_ATK_NAME_WITH_PREFIX}は ねを はった!$"
+	.string "{B_ATK_NAME_WITH_PREFIX}は ねを はった!{EOS}"
 	.if (. - gText_Rom_5AA334) > 0xc
 	.error "gText_Rom_5AA334 may not grow beyond its original slot"
 	.endif
@@ -99,7 +99,7 @@ gText_Rom_5AA334: @ 0x085AA334
 	@ src/battle_message.c:352 battle_message_line_352
 	.globl gText_Rom_5AA340
 gText_Rom_5AA340: @ 0x085AA340
-	.string "{B_ATK_NAME_WITH_PREFIX}は ねから\nようぶんを すいとった!$"
+	.string "{B_ATK_NAME_WITH_PREFIX}は ねから\nようぶんを すいとった!{EOS}"
 	.if (. - gText_Rom_5AA340) > 0x15
 	.error "gText_Rom_5AA340 may not grow beyond its original slot"
 	.endif
@@ -110,7 +110,7 @@ gText_Rom_5AA340: @ 0x085AA340
 	@ src/battle_message.c:353 battle_message_line_353
 	.globl gText_Rom_5AA355
 gText_Rom_5AA355: @ 0x085AA355
-	.string "{B_DEF_NAME_WITH_PREFIX}は ねを はって\nうごかない!$"
+	.string "{B_DEF_NAME_WITH_PREFIX}は ねを はって\nうごかない!{EOS}"
 	.if (. - gText_Rom_5AA355) > 0x12
 	.error "gText_Rom_5AA355 may not grow beyond its original slot"
 	.endif
@@ -121,7 +121,7 @@ gText_Rom_5AA355: @ 0x085AA355
 	@ src/battle_message.c:354 battle_message_line_354
 	.globl gText_Rom_5AA367
 gText_Rom_5AA367: @ 0x085AA367
-	.string "{B_ATK_NAME_WITH_PREFIX}は {B_DEF_NAME_WITH_PREFIX}の\nねむけを さそった!$"
+	.string "{B_ATK_NAME_WITH_PREFIX}は {B_DEF_NAME_WITH_PREFIX}の\nねむけを さそった!{EOS}"
 	.if (. - gText_Rom_5AA367) > 0x13
 	.error "gText_Rom_5AA367 may not grow beyond its original slot"
 	.endif
@@ -134,7 +134,7 @@ gText_Rom_5AA367: @ 0x085AA367
 	.byte 0x14, 0x0C, 0x10, 0xAB, 0xFF
 	.globl gText_Rom_5AA38F
 gText_Rom_5AA38F: @ 0x085AA38F
-	.string "{B_ATK_NAME_WITH_PREFIX}は おたがいの\nとくせいを いれかえた!$"
+	.string "{B_ATK_NAME_WITH_PREFIX}は おたがいの\nとくせいを いれかえた!{EOS}"
 	.if (. - gText_Rom_5AA38F) > 0x17
 	.error "gText_Rom_5AA38F may not grow beyond its original slot"
 	.endif
@@ -145,7 +145,7 @@ gText_Rom_5AA38F: @ 0x085AA38F
 	@ src/battle_message.c:357 battle_message_line_357
 	.globl gText_Rom_5AA3A6
 gText_Rom_5AA3A6: @ 0x085AA3A6
-	.string "{B_ATK_NAME_WITH_PREFIX}は あいての\nわざを ふういんした!$"
+	.string "{B_ATK_NAME_WITH_PREFIX}は あいての\nわざを ふういんした!{EOS}"
 	.if (. - gText_Rom_5AA3A6) > 0x15
 	.error "gText_Rom_5AA3A6 may not grow beyond its original slot"
 	.endif
@@ -156,7 +156,7 @@ gText_Rom_5AA3A6: @ 0x085AA3A6
 	@ src/battle_message.c:359 battle_message_line_359
 	.globl gText_Rom_5AA3BB
 gText_Rom_5AA3BB: @ 0x085AA3BB
-	.string "{B_ATK_NAME_WITH_PREFIX}は あいてに\nおんねんを かけようと している!$"
+	.string "{B_ATK_NAME_WITH_PREFIX}は あいてに\nおんねんを かけようと している!{EOS}"
 	.if (. - gText_Rom_5AA3BB) > 0x1b
 	.error "gText_Rom_5AA3BB may not grow beyond its original slot"
 	.endif
@@ -167,7 +167,7 @@ gText_Rom_5AA3BB: @ 0x085AA3BB
 	@ src/battle_message.c:360 battle_message_line_360
 	.globl gText_Rom_5AA3D6
 gText_Rom_5AA3D6: @ 0x085AA3D6
-	.string "{B_ATK_NAME_WITH_PREFIX}の {B_BUFF1}は\nおんねんで わざポイントが 0に なった!$"
+	.string "{B_ATK_NAME_WITH_PREFIX}の {B_BUFF1}は\nおんねんで わざポイントが 0に なった!{EOS}"
 	.if (. - gText_Rom_5AA3D6) > 0x1e
 	.error "gText_Rom_5AA3D6 may not grow beyond its original slot"
 	.endif
@@ -178,7 +178,7 @@ gText_Rom_5AA3D6: @ 0x085AA3D6
 	@ src/battle_message.c:361 battle_message_line_361
 	.globl gText_Rom_5AA3F4
 gText_Rom_5AA3F4: @ 0x085AA3F4
-	.string "{B_ATK_NAME_WITH_PREFIX}は\n{B_CURRENT_MOVE}に つつまれた!$"
+	.string "{B_ATK_NAME_WITH_PREFIX}は\n{B_CURRENT_MOVE}に つつまれた!{EOS}"
 	.if (. - gText_Rom_5AA3F4) > 0xf
 	.error "gText_Rom_5AA3F4 may not grow beyond its original slot"
 	.endif

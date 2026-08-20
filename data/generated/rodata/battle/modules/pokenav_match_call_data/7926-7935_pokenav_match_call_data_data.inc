@@ -1,7 +1,7 @@
 	@ src/pokenav_match_call_data.c:274 gText_MayBrendanMatchCallDesc
 	.globl gText_Rom_5F7397
 gText_Rom_5F7397: @ 0x085F7397
-	.string "おとなりさん$"
+	.string "おとなりさん{EOS}"
 	.if (. - gText_Rom_5F7397) > 0x7
 	.error "gText_Rom_5F7397 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5F7397: @ 0x085F7397
 	@ src/pokenav_match_call_data.c:208 pokenav_match_call_data_line_208
 	.globl gText_Rom_5F739E
 gText_Rom_5F739E: @ 0x085F739E
-	.string "つよくてたのもしい$"
+	.string "つよくてたのもしい{EOS}"
 	.if (. - gText_Rom_5F739E) > 0xa
 	.error "gText_Rom_5F739E may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5F739E: @ 0x085F739E
 	@ src/pokenav_match_call_data.c:245 pokenav_match_call_data_line_245
 	.globl gText_Rom_5F73A8
 gText_Rom_5F73A8: @ 0x085F73A8
-	.string "やさしくてきれい$"
+	.string "やさしくてきれい{EOS}"
 	.if (. - gText_Rom_5F73A8) > 0x9
 	.error "gText_Rom_5F73A8 may not grow beyond its original slot"
 	.endif
@@ -35,20 +35,20 @@ gText_Rom_5F73A8: @ 0x085F73A8
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5F73B1
 gText_Rom_5F73B1: @ 0x085F73B1
-	.string "ポケモンがだいすき$"
+	.string "ポケモンがだいすき{EOS}"
 	.if (. - gText_Rom_5F73B1) != 0xa
 	.error "gText_Rom_5F73B1 must retain its original byte length"
 	.endif
 	.globl gText_Rom_5F73B6
 	.set gText_Rom_5F73B6, gText_Rom_5F73B1 + 0x5
 	@ Decoded text from ROM range: offset=0x5F73BB, size=0x6
-	.string "パパ$"
-	.string "ママ$"
+	.string "パパ{EOS}"
+	.string "ママ{EOS}"
 
 	@ src/pokenav_match_call_data.c:360 pokenav_match_call_data_line_360
 	.globl gText_Rom_5F73C1
 gText_Rom_5F73C1: @ 0x085F73C1
-	.string "しんしゅつきぼつ$"
+	.string "しんしゅつきぼつ{EOS}"
 	.if (. - gText_Rom_5F73C1) > 0x9
 	.error "gText_Rom_5F73C1 may not grow beyond its original slot"
 	.endif

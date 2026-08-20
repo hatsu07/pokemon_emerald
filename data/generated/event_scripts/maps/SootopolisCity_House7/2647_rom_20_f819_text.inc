@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_House7/scripts.inc:15 SootopolisCity_House7_Text_CaveMadeToKeepSomething
 	.globl gText_Rom_20F819
 gText_Rom_20F819: @ 0x0820F819
-	.string "ルネと そとのせかいを つなぐ どうくつ\pまるで なにかを ここから ださないように\nつくられた みたい だわ……\p……かんがえすぎ かしら?$"
+	.string "ルネと そとのせかいを つなぐ どうくつ\pまるで なにかを ここから ださないように\nつくられた みたい だわ……\p……かんがえすぎ かしら?{EOS}"
 	.if (. - gText_Rom_20F819) > 0x48
 	.error "gText_Rom_20F819 may not grow beyond its original slot"
 	.endif

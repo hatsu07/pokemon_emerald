@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:119 SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot
 	.globl gText_Rom_20FAC8
 gText_Rom_20FAC8: @ 0x0820FAC8
-	.string "{STR_VAR_2}cmか……\pううむ わしは これより おおきい\nタネボーを みたこと あるな……$"
+	.string "{STR_VAR_2}cmか……\pううむ わしは これより おおきい\nタネボーを みたこと あるな……{EOS}"
 	.if (. - gText_Rom_20FAC8) > 0x2b
 	.error "gText_Rom_20FAC8 may not grow beyond its original slot"
 	.endif

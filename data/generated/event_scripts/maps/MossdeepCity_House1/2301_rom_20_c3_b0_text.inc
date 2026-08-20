@@ -1,7 +1,7 @@
 	@ data/maps/MossdeepCity_House1/scripts.inc:33 MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes
 	.globl gText_Rom_20C3B0
 gText_Rom_20C3B0: @ 0x0820C3B0
-	.string "だんなったら みただけで\nポケモンが すきな ポロック わかるのよ$"
+	.string "だんなったら みただけで\nポケモンが すきな ポロック わかるのよ{EOS}"
 	.if (. - gText_Rom_20C3B0) > 0x22
 	.error "gText_Rom_20C3B0 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_hobbies.h:268 easy_chat_group_hobbies_line_268
 	.globl gText_Rom_57798D
 gText_Rom_57798D: @ 0x0857798D
-	.string "ボード$"
+	.string "ボード{EOS}"
 	.if (. - gText_Rom_57798D) > 0x4
 	.error "gText_Rom_57798D may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_57798D: @ 0x0857798D
 	@ src/data/easy_chat/easy_chat_group_hobbies.h:274 easy_chat_group_hobbies_line_274 (+2 aliases)
 	.globl gText_Rom_577991
 gText_Rom_577991: @ 0x08577991
-	.string "ボール$"
+	.string "ボール{EOS}"
 	.if (. - gText_Rom_577991) > 0x4
 	.error "gText_Rom_577991 may not grow beyond its original slot"
 	.endif
@@ -20,12 +20,12 @@ gText_Rom_577991: @ 0x08577991
 	.space 0x4 - (. - gText_Rom_577991)
 	.endif
 	@ Decoded text from ROM range: offset=0x577995, size=0x3
-	.string "ほん$"
+	.string "ほん{EOS}"
 
 	@ src/data/easy_chat/easy_chat_group_hobbies.h:286 easy_chat_group_hobbies_line_286
 	.globl gText_Rom_577998
 gText_Rom_577998: @ 0x08577998
-	.string "まつり$"
+	.string "まつり{EOS}"
 	.if (. - gText_Rom_577998) > 0x4
 	.error "gText_Rom_577998 may not grow beyond its original slot"
 	.endif
@@ -36,7 +36,7 @@ gText_Rom_577998: @ 0x08577998
 	@ src/data/easy_chat/easy_chat_group_hobbies.h:292 easy_chat_group_hobbies_line_292
 	.globl gText_Rom_57799C
 gText_Rom_57799C: @ 0x0857799C
-	.string "まんが$"
+	.string "まんが{EOS}"
 	.if (. - gText_Rom_57799C) > 0x4
 	.error "gText_Rom_57799C may not grow beyond its original slot"
 	.endif
@@ -47,7 +47,7 @@ gText_Rom_57799C: @ 0x0857799C
 	@ src/data/easy_chat/easy_chat_group_hobbies.h:298 easy_chat_group_hobbies_line_298
 	.globl gText_Rom_5779A0
 gText_Rom_5779A0: @ 0x085779A0
-	.string "やすみ$"
+	.string "やすみ{EOS}"
 	.if (. - gText_Rom_5779A0) > 0x4
 	.error "gText_Rom_5779A0 may not grow beyond its original slot"
 	.endif
@@ -58,7 +58,7 @@ gText_Rom_5779A0: @ 0x085779A0
 	@ src/data/easy_chat/easy_chat_group_hobbies.h:304 easy_chat_group_hobbies_line_304
 	.globl gText_Rom_5779A4
 gText_Rom_5779A4: @ 0x085779A4
-	.string "よてい$"
+	.string "よてい{EOS}"
 	.if (. - gText_Rom_5779A4) > 0x4
 	.error "gText_Rom_5779A4 may not grow beyond its original slot"
 	.endif
@@ -69,7 +69,7 @@ gText_Rom_5779A4: @ 0x085779A4
 	@ src/data/easy_chat/easy_chat_group_hobbies.h:310 easy_chat_group_hobbies_line_310
 	.globl gText_Rom_5779A8
 gText_Rom_5779A8: @ 0x085779A8
-	.string "りゅうこう$"
+	.string "りゅうこう{EOS}"
 	.if (. - gText_Rom_5779A8) > 0x6
 	.error "gText_Rom_5779A8 may not grow beyond its original slot"
 	.endif
@@ -80,7 +80,7 @@ gText_Rom_5779A8: @ 0x085779A8
 	@ src/data/easy_chat/easy_chat_group_hobbies.h:316 easy_chat_group_hobbies_line_316
 	.globl gText_Rom_5779AE
 gText_Rom_5779AE: @ 0x085779AE
-	.string "りょこう$"
+	.string "りょこう{EOS}"
 	.if (. - gText_Rom_5779AE) > 0x5
 	.error "gText_Rom_5779AE may not grow beyond its original slot"
 	.endif
@@ -91,7 +91,7 @@ gText_Rom_5779AE: @ 0x085779AE
 	@ src/data/easy_chat/easy_chat_group_hobbies.h:322 easy_chat_group_hobbies_line_322
 	.globl gText_Rom_5779B3
 gText_Rom_5779B3: @ 0x085779B3
-	.string "ルック$"
+	.string "ルック{EOS}"
 	.if (. - gText_Rom_5779B3) > 0x4
 	.error "gText_Rom_5779B3 may not grow beyond its original slot"
 	.endif

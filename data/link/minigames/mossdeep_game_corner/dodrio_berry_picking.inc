@@ -205,7 +205,7 @@ sDodrioBerryPickingDebugBerryResults: @ 0x082CB3DC
 	.2byte 9999, 9999, 9999, 0
 	.globl gText_Rom_2CB404
 gText_Rom_2CB404: @ 0x082CB404
-	.string "あいうえおかき$"
+	.string "あいうえおかき{EOS}"
 	.if (. - gText_Rom_2CB404) > 0x8
 	.error "gText_Rom_2CB404 may not grow beyond its original slot"
 	.endif
@@ -216,7 +216,7 @@ gText_Rom_2CB404: @ 0x082CB404
 	@ src/dodrio_berry_picking.c:3065 sText_Letters
 	.globl gText_Rom_2CB40C
 gText_Rom_2CB40C: @ 0x082CB40C
-	.string "ABCDEFG$"
+	.string "ABCDEFG{EOS}"
 	.if (. - gText_Rom_2CB40C) > 0x8
 	.error "gText_Rom_2CB40C may not grow beyond its original slot"
 	.endif
@@ -227,7 +227,7 @@ gText_Rom_2CB40C: @ 0x082CB40C
 	@ src/dodrio_berry_picking.c:3066 sText_Digits
 	.globl gText_Rom_2CB414
 gText_Rom_2CB414: @ 0x082CB414
-	.string "0123456$"
+	.string "0123456{EOS}"
 	.if (. - gText_Rom_2CB414) > 0x8
 	.error "gText_Rom_2CB414 may not grow beyond its original slot"
 	.endif

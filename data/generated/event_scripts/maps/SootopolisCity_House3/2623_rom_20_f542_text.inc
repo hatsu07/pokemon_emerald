@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_House3/scripts.inc:31 SootopolisCity_House3_Text_TrainerFanClubWasWild
 	.globl gText_Rom_20F542
 gText_Rom_20F542: @ 0x0820F542
-	.string "ねっしんな ファンは ホウエン いがいの\nちいきからも やってくるの!\pあたしが ミナモの\nトレーナー ファンクラブに いったときも\lとっても すごかったもの!$"
+	.string "ねっしんな ファンは ホウエン いがいの\nちいきからも やってくるの!\pあたしが ミナモの\nトレーナー ファンクラブに いったときも\lとっても すごかったもの!{EOS}"
 	.if (. - gText_Rom_20F542) > 0x51
 	.error "gText_Rom_20F542 may not grow beyond its original slot"
 	.endif

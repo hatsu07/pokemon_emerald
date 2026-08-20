@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:471 BattleFrontier_BattleTowerLobby_Text_BattleRecordedOnPass
 	.globl gText_Rom_222412
 gText_Rom_222412: @ 0x08222412
-	.string "{PLAYER}の たたかいが\nフロンティアパスに きろく された!$"
+	.string "{PLAYER}の たたかいが\nフロンティアパスに きろく された!{EOS}"
 	.if (. - gText_Rom_222412) > 0x1d
 	.error "gText_Rom_222412 may not grow beyond its original slot"
 	.endif

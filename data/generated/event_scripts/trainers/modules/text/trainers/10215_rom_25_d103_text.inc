@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1436 Route115_Text_TimothyDefeat (+1 aliases)
 	.globl gText_Rom_25D103
 gText_Rom_25D103: @ 0x0825D103
-	.string "そうぞう いじょうの つよさだ……!$"
+	.string "そうぞう いじょうの つよさだ……!{EOS}"
 	.if (. - gText_Rom_25D103) > 0x13
 	.error "gText_Rom_25D103 may not grow beyond its original slot"
 	.endif

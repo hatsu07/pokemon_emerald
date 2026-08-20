@@ -3,7 +3,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C9825
 gText_Rom_5C9825: @ 0x085C9825
-	.string "くろいポロック$"
+	.string "くろいポロック{EOS}"
 	.if (. - gText_Rom_5C9825) != 0x8
 	.error "gText_Rom_5C9825 must retain its original byte length"
 	.endif
@@ -14,7 +14,7 @@ gText_Rom_5C9825: @ 0x085C9825
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C982D
 gText_Rom_5C982D: @ 0x085C982D
-	.string "しろいポロック$"
+	.string "しろいポロック{EOS}"
 	.if (. - gText_Rom_5C982D) != 0x8
 	.error "gText_Rom_5C982D must retain its original byte length"
 	.endif
@@ -25,7 +25,7 @@ gText_Rom_5C982D: @ 0x085C982D
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C9835
 gText_Rom_5C9835: @ 0x085C9835
-	.string "きんいろポロック$"
+	.string "きんいろポロック{EOS}"
 	.if (. - gText_Rom_5C9835) != 0x9
 	.error "gText_Rom_5C9835 must retain its original byte length"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/SlateportCity/scripts.inc:1338 SlateportCity_Text_TakingBattleTentChallenge
 	.globl gText_Rom_1DD93E
 gText_Rom_1DD93E: @ 0x081DD93E
-	.string "エニシダ『お おおっと\n{PLAYER}{KUN}か!\p……もしかして {PLAYER}{KUN}\nバトルテントに ちょうせん するのかい?\pうん! それは いいことだな!\nものすごく いいことだ!\lバトルテントには つよい トレーナーが\lとっても ふさわしい からね\pじゃ がんばってね!$"
+	.string "エニシダ『お おおっと\n{PLAYER}{KUN}か!\p……もしかして {PLAYER}{KUN}\nバトルテントに ちょうせん するのかい?\pうん! それは いいことだな!\nものすごく いいことだ!\lバトルテントには つよい トレーナーが\lとっても ふさわしい からね\pじゃ がんばってね!{EOS}"
 	.if (. - gText_Rom_1DD93E) > 0x80
 	.error "gText_Rom_1DD93E may not grow beyond its original slot"
 	.endif

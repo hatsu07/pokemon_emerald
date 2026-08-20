@@ -1,7 +1,7 @@
 	@ asm/record_mixing.s:3855 SanitizeEmeraldBattleTowerRecord
 	.globl gText_Rom_5CCECD
 gText_Rom_5CCECD: @ 0x085CCECD
-	.string "pokemon$"
+	.string "pokemon{EOS}"
 	.if (. - gText_Rom_5CCECD) > 0x8
 	.error "gText_Rom_5CCECD may not grow beyond its original slot"
 	.endif

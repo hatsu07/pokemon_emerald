@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:836 Route110_Text_DaleIntro (+1 aliases)
 	.globl gText_Rom_25B7EC
 gText_Rom_25B7EC: @ 0x0825B7EC
-	.string "ええーい!\nうしろから はなしかけるなー!$"
+	.string "ええーい!\nうしろから はなしかけるなー!{EOS}"
 	.if (. - gText_Rom_25B7EC) > 0x16
 	.error "gText_Rom_25B7EC may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:671 LilycoveCity_PokemonTrainerFanClub_Text_YourePowerfulButNotTrueStrength
 	.globl gText_Rom_20946B
 gText_Rom_20946B: @ 0x0820946B
-	.string "たしかに おぬしは\nとてつもなく つよいかも しれない\pじゃが！\nわしには わかる\pその つよさは まだ\nしんの つよさとは いわないのじゃ！\lしんの つよさとは！\p……\pじつは わしも\nよく わからんのじゃ$"
+	.string "たしかに おぬしは\nとてつもなく つよいかも しれない\pじゃが！\nわしには わかる\pその つよさは まだ\nしんの つよさとは いわないのじゃ！\lしんの つよさとは！\p……\pじつは わしも\nよく わからんのじゃ{EOS}"
 	.if (. - gText_Rom_20946B) > 0x69
 	.error "gText_Rom_20946B may not grow beyond its original slot"
 	.endif

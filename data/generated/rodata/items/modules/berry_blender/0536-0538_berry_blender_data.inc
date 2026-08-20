@@ -1,7 +1,7 @@
 	@ src/berry_blender.c:264 sText_BerryBlenderStart
 	.globl gText_Rom_30F6AE
 gText_Rom_30F6AE: @ 0x0830F6AE
-	.string "きのみブレンダーを きどうします\pバッグから きのみブレンダーに いれる\nきのみを えらんでください\p$"
+	.string "きのみブレンダーを きどうします\pバッグから きのみブレンダーに いれる\nきのみを えらんでください\p{EOS}"
 	.if (. - gText_Rom_30F6AE) > 0x34
 	.error "gText_Rom_30F6AE may not grow beyond its original slot"
 	.endif
@@ -9,11 +9,11 @@ gText_Rom_30F6AE: @ 0x0830F6AE
 	.space 0x34 - (. - gText_Rom_30F6AE)
 	.endif
 	@ Decoded text from ROM range: offset=0x30F6E2, size=0x19
-	.string "カッコイ$"
-	.string "カワイイ$"
-	.string "ウツクシ$"
-	.string "カシコイ$"
-	.string "タクマシ$"
+	.string "カッコイ{EOS}"
+	.string "カワイイ{EOS}"
+	.string "ウツクシ{EOS}"
+	.string "カシコイ{EOS}"
+	.string "タクマシ{EOS}"
 	@ pret/pokeemerald-jp direct xref for 0x0830F6FB: berry_blender.s: Blender_PrintMadePokeblockString
 	.globl gBerryBlenderData_0830F6FB
 gBerryBlenderData_0830F6FB: @ 0x0830F6FB
@@ -25,7 +25,7 @@ gBerryBlenderData_0830F6FB: @ 0x0830F6FB
 	@ src/berry_blender.c:266 sText_WasMade
 	.globl gText_Rom_30F6FD
 gText_Rom_30F6FD: @ 0x0830F6FD
-	.string " ができた！$"
+	.string " ができた！{EOS}"
 	.if (. - gText_Rom_30F6FD) > 0x7
 	.error "gText_Rom_30F6FD may not grow beyond its original slot"
 	.endif

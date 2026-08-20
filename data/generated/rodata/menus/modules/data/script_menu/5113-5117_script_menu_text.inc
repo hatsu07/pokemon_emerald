@@ -1,7 +1,7 @@
 	@ src/data/script_menu.h:637 script_menu_line_637 (+3 aliases)
 	.globl gText_Rom_5CAADB
 gText_Rom_5CAADB: @ 0x085CAADB
-	.string "いいえ$"
+	.string "いいえ{EOS}"
 	.if (. - gText_Rom_5CAADB) > 0x4
 	.error "gText_Rom_5CAADB may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CAADB: @ 0x085CAADB
 	@ src/data/script_menu.h:9 gText_Info2 (+3 aliases)
 	.globl gText_Rom_5CAADF
 gText_Rom_5CAADF: @ 0x085CAADF
-	.string "せつめい$"
+	.string "せつめい{EOS}"
 	.if (. - gText_Rom_5CAADF) > 0x5
 	.error "gText_Rom_5CAADF may not grow beyond its original slot"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_5CAADF: @ 0x085CAADF
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CAAE4
 gText_Rom_5CAAE4: @ 0x085CAAE4
-	.string "シングルバトル$"
+	.string "シングルバトル{EOS}"
 	.if (. - gText_Rom_5CAAE4) != 0x8
 	.error "gText_Rom_5CAAE4 must retain its original byte length"
 	.endif

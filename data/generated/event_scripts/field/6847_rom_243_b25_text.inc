@@ -1,7 +1,7 @@
 	@ field-script:0x2592C5 FieldScriptText_243B25
 	.globl gText_Rom_243B25
 gText_Rom_243B25: @ 0x08243B25
-	.string "つうしんは　キャンセルされました$"
+	.string "つうしんは　キャンセルされました{EOS}"
 	.if (. - gText_Rom_243B25) > 0x11
 	.error "gText_Rom_243B25 may not grow beyond its original slot"
 	.endif

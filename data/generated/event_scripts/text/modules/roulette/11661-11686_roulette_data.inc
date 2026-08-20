@@ -1,7 +1,7 @@
 	@ src/roulette.c:419 Roulette_Text_PlayMinimumWagerIsX
 	.globl gText_Rom_262CF3
 gText_Rom_262CF3: @ 0x08262CF3
-	.string "ここは レート{STR_VAR_1}の ルーレットだい です\nルーレットで あそびますか?$"
+	.string "ここは レート{STR_VAR_1}の ルーレットだい です\nルーレットで あそびますか?{EOS}"
 	.if (. - gText_Rom_262CF3) > 0x25
 	.error "gText_Rom_262CF3 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_262CF3: @ 0x08262CF3
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_262D18
 gText_Rom_262D18: @ 0x08262D18
-	.string "コインが たりません$"
+	.string "コインが たりません{EOS}"
 	.if (. - gText_Rom_262D18) != 0xb
 	.error "gText_Rom_262D18 must retain its original byte length"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_262D18: @ 0x08262D18
 	@ src/roulette.c:421 Roulette_Text_SpecialRateTable
 	.globl gText_Rom_262D23
 gText_Rom_262D23: @ 0x08262D23
-	.string "ほんじつ このだいでは\nレート アップ じっしちゅう!$"
+	.string "ほんじつ このだいでは\nレート アップ じっしちゅう!{EOS}"
 	.if (. - gText_Rom_262D23) > 0x1c
 	.error "gText_Rom_262D23 may not grow beyond its original slot"
 	.endif
@@ -35,7 +35,7 @@ gText_Rom_262D23: @ 0x08262D23
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_262D3F
 gText_Rom_262D3F: @ 0x08262D3F
-	.string "ベットする わくを じゅうじボタンで えらんで\nAボタンで けってい します$"
+	.string "ベットする わくを じゅうじボタンで えらんで\nAボタンで けってい します{EOS}"
 	.if (. - gText_Rom_262D3F) != 0x27
 	.error "gText_Rom_262D3F must retain its original byte length"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_262D3F: @ 0x08262D3F
 	@ src/roulette.c:423 Roulette_Text_ItsAHit
 	.globl gText_Rom_262D66
 gText_Rom_262D66: @ 0x08262D66
-	.string "あたりー!$"
+	.string "あたりー!{EOS}"
 	.if (. - gText_Rom_262D66) > 0x6
 	.error "gText_Rom_262D66 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_262D66: @ 0x08262D66
 	@ src/roulette.c:424 Roulette_Text_Jackpot
 	.globl gText_Rom_262D6C
 gText_Rom_262D6C: @ 0x08262D6C
-	.string "おおあたり!!$"
+	.string "おおあたり!!{EOS}"
 	.if (. - gText_Rom_262D6C) > 0x8
 	.error "gText_Rom_262D6C may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_262D6C: @ 0x08262D6C
 	@ src/roulette.c:425 Roulette_Text_NothingDoing
 	.globl gText_Rom_262D74
 gText_Rom_262D74: @ 0x08262D74
-	.string "はずれー$"
+	.string "はずれー{EOS}"
 	.if (. - gText_Rom_262D74) > 0x5
 	.error "gText_Rom_262D74 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_262D74: @ 0x08262D74
 	@ src/roulette.c:426 Roulette_Text_YouveWonXCoins
 	.globl gText_Rom_262D79
 gText_Rom_262D79: @ 0x08262D79
-	.string "おめでとう ございます!\nコイン {STR_VAR_1}まい はいります!$"
+	.string "おめでとう ございます!\nコイン {STR_VAR_1}まい はいります!{EOS}"
 	.if (. - gText_Rom_262D79) > 0x1d
 	.error "gText_Rom_262D79 may not grow beyond its original slot"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_262D79: @ 0x08262D79
 	@ src/roulette.c:427 Roulette_Text_NoCoinsLeft
 	.globl gText_Rom_262D96
 gText_Rom_262D96: @ 0x08262D96
-	.string "コインが なくなりました$"
+	.string "コインが なくなりました{EOS}"
 	.if (. - gText_Rom_262D96) > 0xd
 	.error "gText_Rom_262D96 may not grow beyond its original slot"
 	.endif
@@ -100,7 +100,7 @@ gText_Rom_262D96: @ 0x08262D96
 	@ src/roulette.c:428 Roulette_Text_KeepPlaying
 	.globl gText_Rom_262DA3
 gText_Rom_262DA3: @ 0x08262DA3
-	.string "つづけて あそびますか?$"
+	.string "つづけて あそびますか?{EOS}"
 	.if (. - gText_Rom_262DA3) > 0xd
 	.error "gText_Rom_262DA3 may not grow beyond its original slot"
 	.endif
@@ -112,7 +112,7 @@ gText_Rom_262DA3: @ 0x08262DA3
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_262DB0
 gText_Rom_262DB0: @ 0x08262DB0
-	.string "だいの うえの たまを\nクリア します$"
+	.string "だいの うえの たまを\nクリア します{EOS}"
 	.if (. - gText_Rom_262DB0) != 0x14
 	.error "gText_Rom_262DB0 must retain its original byte length"
 	.endif
@@ -125,7 +125,7 @@ gText_Rom_262DB0: @ 0x08262DB0
 	@ src/roulette.c:430 Roulette_Text_CoinCaseIsFull
 	.globl gText_Rom_262DD5
 gText_Rom_262DD5: @ 0x08262DD5
-	.string "コインが いっぱいです!\nけいひんと こうかん して ください$"
+	.string "コインが いっぱいです!\nけいひんと こうかん して ください{EOS}"
 	.if (. - gText_Rom_262DD5) > 0x20
 	.error "gText_Rom_262DD5 may not grow beyond its original slot"
 	.endif

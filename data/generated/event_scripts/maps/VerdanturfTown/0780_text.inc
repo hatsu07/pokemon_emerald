@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_1E632E
 gText_Rom_1E632E: @ 0x081E632E
-	.string "バトルテント シダケタウン かいじょう\nみまもれ! ポケモンバトル$"
+	.string "バトルテント シダケタウン かいじょう\nみまもれ! ポケモンバトル{EOS}"
 	.if (. - gText_Rom_1E632E) != 0x22
 	.error "gText_Rom_1E632E must retain its original byte length"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:141 SootopolisCity_Gym_B1F_Text_BriannaPostBattle
 	.globl gText_Rom_20EFB2
 gText_Rom_20EFB2: @ 0x0820EFB2
-	.string "あなたでは アダンさまには\nきっと はが たちませんわよ うふふ……$"
+	.string "あなたでは アダンさまには\nきっと はが たちませんわよ うふふ……{EOS}"
 	.if (. - gText_Rom_20EFB2) > 0x23
 	.error "gText_Rom_20EFB2 may not grow beyond its original slot"
 	.endif

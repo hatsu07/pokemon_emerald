@@ -1,7 +1,7 @@
 	@ src/data/abilities.h:214 abilities_line_214 (+1 aliases)
 	.globl gText_Rom_5DDC4D
 gText_Rom_5DDC4D: @ 0x085DDC4D
-	.string "ほうし$"
+	.string "ほうし{EOS}"
 	.if (. - gText_Rom_5DDC4D) > 0x4
 	.error "gText_Rom_5DDC4D may not grow beyond its original slot"
 	.endif

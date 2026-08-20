@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_voices.h:40 easy_chat_group_voices_line_40
 	.globl gText_Rom_8754B3
 gText_Rom_8754B3: @ 0x088754B3
-	.string "………$"
+	.string "………{EOS}"
 	.if (. - gText_Rom_8754B3) > 0x4
 	.error "gText_Rom_8754B3 may not grow beyond its original slot"
 	.endif
@@ -14,7 +14,7 @@ gText_Rom_8754B3: @ 0x088754B3
 	.byte 0x83, 0x42, 0x83, 0x45, 0x83, 0x49, 0x83, 0x4C, 0x83, 0x50, 0x86, 0xFF, 0x3B, 0x5C, 0xB0
 	.globl gText_Rom_8754D6
 gText_Rom_8754D6: @ 0x088754D6
-	.string "………$"
+	.string "………{EOS}"
 	.if (. - gText_Rom_8754D6) > 0x4
 	.error "gText_Rom_8754D6 may not grow beyond its original slot"
 	.endif
@@ -2253,7 +2253,7 @@ SongTrack_MUS_ROUTE120_05: @ 0x08876027
 	m4a_wait 0xB0 @ W96
 	.globl gText_Rom_876035
 gText_Rom_876035: @ 0x08876035
-	.string "………$"
+	.string "………{EOS}"
 	.if (. - gText_Rom_876035) > 0x4
 	.error "gText_Rom_876035 may not grow beyond its original slot"
 	.endif
@@ -2265,7 +2265,7 @@ gText_Rom_876035: @ 0x08876035
 	@ src/data/easy_chat/easy_chat_group_voices.h:40 easy_chat_group_voices_line_40
 	.globl gText_Rom_87603E
 gText_Rom_87603E: @ 0x0887603E
-	.string "………$"
+	.string "………{EOS}"
 	.if (. - gText_Rom_87603E) > 0x4
 	.error "gText_Rom_87603E may not grow beyond its original slot"
 	.endif

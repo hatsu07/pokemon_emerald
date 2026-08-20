@@ -1,7 +1,7 @@
 	@ src/data/text/match_call_messages.h:382 gText_MatchCallEliteFour_Drake_Pokemon
 	.globl gText_Rom_5F394E
 gText_Rom_5F394E: @ 0x085F394E
-	.string "ドラゴンタイプの そこぢから!$"
+	.string "ドラゴンタイプの そこぢから!{EOS}"
 	.if (. - gText_Rom_5F394E) > 0x10
 	.error "gText_Rom_5F394E may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5F394E: @ 0x085F394E
 	@ src/data/text/match_call_messages.h:383 gText_MatchCallEliteFour_Drake_Intro1
 	.globl gText_Rom_5F395E
 gText_Rom_5F395E: @ 0x085F395E
-	.string "いのちを すくって くれた$"
+	.string "いのちを すくって くれた{EOS}"
 	.if (. - gText_Rom_5F395E) > 0xe
 	.error "gText_Rom_5F395E may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5F395E: @ 0x085F395E
 	@ src/data/text/match_call_messages.h:384 gText_MatchCallEliteFour_Drake_Intro2
 	.globl gText_Rom_5F396C
 gText_Rom_5F396C: @ 0x085F396C
-	.string "ポケモンに すべてを そそぐ$"
+	.string "ポケモンに すべてを そそぐ{EOS}"
 	.if (. - gText_Rom_5F396C) > 0xf
 	.error "gText_Rom_5F396C may not grow beyond its original slot"
 	.endif
@@ -35,7 +35,7 @@ gText_Rom_5F396C: @ 0x085F396C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5F397B
 gText_Rom_5F397B: @ 0x085F397B
-	.string "つつしんで おあいて します$"
+	.string "つつしんで おあいて します{EOS}"
 	.if (. - gText_Rom_5F397B) != 0xf
 	.error "gText_Rom_5F397B must retain its original byte length"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5F397B: @ 0x085F397B
 	@ src/data/text/match_call_messages.h:387 gText_MatchCallChampion_Wallace_Pokemon
 	.globl gText_Rom_5F398A
 gText_Rom_5F398A: @ 0x085F398A
-	.string "ゆうがな ポケモンが すき$"
+	.string "ゆうがな ポケモンが すき{EOS}"
 	.if (. - gText_Rom_5F398A) > 0xe
 	.error "gText_Rom_5F398A may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5F398A: @ 0x085F398A
 	@ src/data/text/match_call_messages.h:388 gText_MatchCallChampion_Wallace_Intro1
 	.globl gText_Rom_5F3998
 gText_Rom_5F3998: @ 0x085F3998
-	.string "ちせいと うつくしさを$"
+	.string "ちせいと うつくしさを{EOS}"
 	.if (. - gText_Rom_5F3998) > 0xc
 	.error "gText_Rom_5F3998 may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_5F3998: @ 0x085F3998
 	@ src/data/text/match_call_messages.h:389 gText_MatchCallChampion_Wallace_Intro2
 	.globl gText_Rom_5F39A4
 gText_Rom_5F39A4: @ 0x085F39A4
-	.string "かねそなえた わたし……$"
+	.string "かねそなえた わたし……{EOS}"
 	.if (. - gText_Rom_5F39A4) > 0xd
 	.error "gText_Rom_5F39A4 may not grow beyond its original slot"
 	.endif

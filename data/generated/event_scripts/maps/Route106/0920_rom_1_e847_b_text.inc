@@ -1,7 +1,7 @@
 	@ data/maps/Route106/scripts.inc:44 Route106_Text_TrainerTips
 	.globl gText_Rom_1E847B
 gText_Rom_1E847B: @ 0x081E847B
-	.string "おとくな　けいじばん!!\pポケモンを　うまく　つりあげる　コツは\nビックリ　したら　Aボタン!$"
+	.string "おとくな　けいじばん!!\pポケモンを　うまく　つりあげる　コツは\nビックリ　したら　Aボタン!{EOS}"
 	.if (. - gText_Rom_1E847B) > 0x30
 	.error "gText_Rom_1E847B may not grow beyond its original slot"
 	.endif

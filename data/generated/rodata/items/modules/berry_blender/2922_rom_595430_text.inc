@@ -1,7 +1,7 @@
 	@ src/berry_blender.c:278 sText_CommunicationStandby
 	.globl gText_Rom_595430
 gText_Rom_595430: @ 0x08595430
-	.string "つうしんたいきちゅうです$"
+	.string "つうしんたいきちゅうです{EOS}"
 	.if (. - gText_Rom_595430) > 0xd
 	.error "gText_Rom_595430 may not grow beyond its original slot"
 	.endif

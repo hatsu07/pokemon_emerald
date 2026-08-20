@@ -1,7 +1,7 @@
 	@ src/main_menu.c:264 gText_MainMenuNewGame
 	.globl gText_Rom_5C8C70
 gText_Rom_5C8C70: @ 0x085C8C70
-	.string "さいしょから はじめる$"
+	.string "さいしょから はじめる{EOS}"
 	.if (. - gText_Rom_5C8C70) > 0xc
 	.error "gText_Rom_5C8C70 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5C8C70: @ 0x085C8C70
 	@ src/main_menu.c:265 gText_MainMenuContinue
 	.globl gText_Rom_5C8C7C
 gText_Rom_5C8C7C: @ 0x085C8C7C
-	.string "つづきから はじめる$"
+	.string "つづきから はじめる{EOS}"
 	.if (. - gText_Rom_5C8C7C) > 0xb
 	.error "gText_Rom_5C8C7C may not grow beyond its original slot"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_5C8C7C: @ 0x085C8C7C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C8C87
 gText_Rom_5C8C87: @ 0x085C8C87
-	.string "せっていを かえる$"
+	.string "せっていを かえる{EOS}"
 	.if (. - gText_Rom_5C8C87) != 0xa
 	.error "gText_Rom_5C8C87 must retain its original byte length"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5C8C87: @ 0x085C8C87
 	@ src/main_menu.c:267 gText_MainMenuMysteryGift (+1 aliases)
 	.globl gText_Rom_5C8C91
 gText_Rom_5C8C91: @ 0x085C8C91
-	.string "ふしぎな おくりもの$"
+	.string "ふしぎな おくりもの{EOS}"
 	.if (. - gText_Rom_5C8C91) > 0xb
 	.error "gText_Rom_5C8C91 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5C8C91: @ 0x085C8C91
 	@ src/main_menu.c:268 gText_MainMenuMysteryGift2
 	.globl gText_Rom_5C8C9C
 gText_Rom_5C8C9C: @ 0x085C8C9C
-	.string "ふしぎな もらいもの$"
+	.string "ふしぎな もらいもの{EOS}"
 	.if (. - gText_Rom_5C8C9C) > 0xb
 	.error "gText_Rom_5C8C9C may not grow beyond its original slot"
 	.endif
@@ -57,7 +57,7 @@ gText_Rom_5C8C9C: @ 0x085C8C9C
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C8CA7
 gText_Rom_5C8CA7: @ 0x085C8CA7
-	.string "ふしぎな できごと$"
+	.string "ふしぎな できごと{EOS}"
 	.if (. - gText_Rom_5C8CA7) != 0xa
 	.error "gText_Rom_5C8CA7 must retain its original byte length"
 	.endif
@@ -68,7 +68,7 @@ gText_Rom_5C8CA7: @ 0x085C8CA7
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C8CB1
 gText_Rom_5C8CB1: @ 0x085C8CB1
-	.string "ワイヤレスアダプタ が\nつながっていません$"
+	.string "ワイヤレスアダプタ が\nつながっていません{EOS}"
 	.if (. - gText_Rom_5C8CB1) != 0x16
 	.error "gText_Rom_5C8CB1 must retain its original byte length"
 	.endif
@@ -79,7 +79,7 @@ gText_Rom_5C8CB1: @ 0x085C8CB1
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C8CC7
 gText_Rom_5C8CC7: @ 0x085C8CC7
-	.string "ワイヤレスアダプタ を さしたまま\nふしぎなもらいもの は できません$"
+	.string "ワイヤレスアダプタ を さしたまま\nふしぎなもらいもの は できません{EOS}"
 	.if (. - gText_Rom_5C8CC7) != 0x24
 	.error "gText_Rom_5C8CC7 must retain its original byte length"
 	.endif
@@ -90,7 +90,7 @@ gText_Rom_5C8CC7: @ 0x085C8CC7
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C8CEB
 gText_Rom_5C8CEB: @ 0x085C8CEB
-	.string "ワイヤレスアダプタ を さしたまま\nふしぎなできごと は できません$"
+	.string "ワイヤレスアダプタ を さしたまま\nふしぎなできごと は できません{EOS}"
 	.if (. - gText_Rom_5C8CEB) != 0x23
 	.error "gText_Rom_5C8CEB must retain its original byte length"
 	.endif

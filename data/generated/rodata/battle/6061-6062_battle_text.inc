@@ -3,7 +3,7 @@
 	.globl gText_Rom_5CC339
 gText_Rom_5CC339: @ 0x085CC339
 	@ Decoded text from ROM range: offset=0x5CC339, size=0x3
-	.string "ひき$"
+	.string "ひき{EOS}"
 	@ pret/pokeemerald-jp direct xref for 0x085CC33C: trainer_card.s: PrintMoneyOnCard
 	.globl gTrainerCardData_085CC33C
 gTrainerCardData_085CC33C: @ 0x085CC33C

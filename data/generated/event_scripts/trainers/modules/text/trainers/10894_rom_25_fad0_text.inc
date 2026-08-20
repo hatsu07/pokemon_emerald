@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2426 Route123_Text_CameronDefeat (+2 aliases)
 	.globl gText_Rom_25FAD0
 gText_Rom_25FAD0: @ 0x0825FAD0
-	.string "しょんぼり……$"
+	.string "しょんぼり……{EOS}"
 	.if (. - gText_Rom_25FAD0) > 0x8
 	.error "gText_Rom_25FAD0 may not grow beyond its original slot"
 	.endif

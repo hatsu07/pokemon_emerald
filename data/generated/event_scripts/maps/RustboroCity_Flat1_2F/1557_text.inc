@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_Flat1_2F/scripts.inc:102 RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll (+1 aliases)
 	.globl gText_Rom_203A44
 gText_Rom_203A44: @ 0x08203A44
-	.string "{STR_VAR_1}\n{STR_VAR_1}\pうーん わらわないなあ\nこのこ クール なのかな$"
+	.string "{STR_VAR_1}\n{STR_VAR_1}\pうーん わらわないなあ\nこのこ クール なのかな{EOS}"
 	.if (. - gText_Rom_203A44) > 0x1f
 	.error "gText_Rom_203A44 may not grow beyond its original slot"
 	.endif

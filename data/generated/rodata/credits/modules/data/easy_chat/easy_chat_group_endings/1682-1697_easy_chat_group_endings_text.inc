@@ -2,7 +2,7 @@
 	@ src/data/easy_chat/easy_chat_group_endings.h:298 easy_chat_group_endings_line_298
 	.globl gText_Rom_57646D
 gText_Rom_57646D: @ 0x0857646D
-	.string "なんてね$"
+	.string "なんてね{EOS}"
 	.if (. - gText_Rom_57646D) > 0x5
 	.error "gText_Rom_57646D may not grow beyond its original slot"
 	.endif
@@ -15,26 +15,26 @@ gText_Rom_57646D: @ 0x0857646D
 gText_Rom_576472:
 	.globl gEasyChatWord_Endings_Ne
 gEasyChatWord_Endings_Ne: @ 0x08576472
-	.string "ね$"
+	.string "ね{EOS}"
 
 	.globl gEasyChatWord_Endings_Nee
 gEasyChatWord_Endings_Nee: @ 0x08576474
-	.string "ねー$"
+	.string "ねー{EOS}"
 
 	.globl gEasyChatWord_Endings_No
 gEasyChatWord_Endings_No: @ 0x08576477
-	.string "の$"
+	.string "の{EOS}"
 
 	.globl gEasyChatWord_Endings_NoQuestion
 gEasyChatWord_Endings_NoQuestion: @ 0x08576479
-	.string "の?$"
+	.string "の?{EOS}"
 
 	.if (. - gEasyChatWord_Endings_Ne) != 0xA
 	.error "Easy Chat Endings words 50-53 must retain their original 0xA-byte range"
 	.endif
 	.globl gText_Rom_57647C
 gText_Rom_57647C: @ 0x0857647C
-	.string "ばっかり$"
+	.string "ばっかり{EOS}"
 	.if (. - gText_Rom_57647C) > 0x5
 	.error "gText_Rom_57647C may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_57647C: @ 0x0857647C
 	@ src/data/easy_chat/easy_chat_group_endings.h:334 easy_chat_group_endings_line_334
 	.globl gText_Rom_576481
 gText_Rom_576481: @ 0x08576481
-	.string "まーす!$"
+	.string "まーす!{EOS}"
 	.if (. - gText_Rom_576481) > 0x5
 	.error "gText_Rom_576481 may not grow beyond its original slot"
 	.endif
@@ -53,12 +53,12 @@ gText_Rom_576481: @ 0x08576481
 	.space 0x5 - (. - gText_Rom_576481)
 	.endif
 	@ Decoded text from ROM range: offset=0x576486, size=0x3
-	.string "ます$"
+	.string "ます{EOS}"
 
 	@ src/data/easy_chat/easy_chat_group_endings.h:346 easy_chat_group_endings_line_346
 	.globl gText_Rom_576489
 gText_Rom_576489: @ 0x08576489
-	.string "ますわ$"
+	.string "ますわ{EOS}"
 	.if (. - gText_Rom_576489) > 0x4
 	.error "gText_Rom_576489 may not grow beyond its original slot"
 	.endif
@@ -69,7 +69,7 @@ gText_Rom_576489: @ 0x08576489
 	@ src/data/easy_chat/easy_chat_group_endings.h:352 easy_chat_group_endings_line_352
 	.globl gText_Rom_57648D
 gText_Rom_57648D: @ 0x0857648D
-	.string "ません$"
+	.string "ません{EOS}"
 	.if (. - gText_Rom_57648D) > 0x4
 	.error "gText_Rom_57648D may not grow beyond its original slot"
 	.endif
@@ -80,7 +80,7 @@ gText_Rom_57648D: @ 0x0857648D
 	@ src/data/easy_chat/easy_chat_group_endings.h:358 easy_chat_group_endings_line_358
 	.globl gText_Rom_576491
 gText_Rom_576491: @ 0x08576491
-	.string "みたいな$"
+	.string "みたいな{EOS}"
 	.if (. - gText_Rom_576491) > 0x5
 	.error "gText_Rom_576491 may not grow beyond its original slot"
 	.endif
@@ -88,15 +88,15 @@ gText_Rom_576491: @ 0x08576491
 	.space 0x5 - (. - gText_Rom_576491)
 	.endif
 	@ Decoded text from ROM range: offset=0x576496, size=0xC
-	.string "もの$"
-	.string "もん$"
-	.string "よ！$"
-	.string "よー$"
+	.string "もの{EOS}"
+	.string "もん{EOS}"
+	.string "よ！{EOS}"
+	.string "よー{EOS}"
 
 	@ src/data/easy_chat/easy_chat_group_endings.h:388 easy_chat_group_endings_line_388
 	.globl gText_Rom_5764A2
 gText_Rom_5764A2: @ 0x085764A2
-	.string "よーん$"
+	.string "よーん{EOS}"
 	.if (. - gText_Rom_5764A2) > 0x4
 	.error "gText_Rom_5764A2 may not grow beyond its original slot"
 	.endif
@@ -104,14 +104,14 @@ gText_Rom_5764A2: @ 0x085764A2
 	.space 0x4 - (. - gText_Rom_5764A2)
 	.endif
 	@ Decoded text from ROM range: offset=0x5764A6, size=0x9
-	.string "よね$"
-	.string "るよ$"
-	.string "わけ$"
+	.string "よね{EOS}"
+	.string "るよ{EOS}"
+	.string "わけ{EOS}"
 
 	@ src/data/easy_chat/easy_chat_group_endings.h:412 easy_chat_group_endings_line_412
 	.globl gText_Rom_5764AF
 gText_Rom_5764AF: @ 0x085764AF
-	.string "わよ!$"
+	.string "わよ!{EOS}"
 	.if (. - gText_Rom_5764AF) > 0x4
 	.error "gText_Rom_5764AF may not grow beyond its original slot"
 	.endif

@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_595446
 gText_Rom_595446: @ 0x08595446
-	.string "はい\nいいえ$"
+	.string "はい\nいいえ{EOS}"
 	.if (. - gText_Rom_595446) != 0x7
 	.error "gText_Rom_595446 must retain its original byte length"
 	.endif
@@ -261,7 +261,7 @@ gRouletteData_08595F9C: @ 0x08595F9C
 	.byte 0x7F, 0x7F, 0x0B, 0x01, 0x05, 0x1E, 0xFF, 0x4E
 	.globl gText_Rom_595FB4
 gText_Rom_595FB4: @ 0x08595FB4
-	.string "{STR_VAR_1}まい$"
+	.string "{STR_VAR_1}まい{EOS}"
 	.if (. - gText_Rom_595FB4) > 0x5
 	.error "gText_Rom_595FB4 may not grow beyond its original slot"
 	.endif
@@ -1199,7 +1199,7 @@ gPokedexCryScreenData_08598844: @ 0x08598844
 	.byte 0x6C, 0x77, 0x7C, 0xAE
 	.globl gText_Rom_598858
 gText_Rom_598858: @ 0x08598858
-	.string "ショップ$"
+	.string "ショップ{EOS}"
 	.if (. - gText_Rom_598858) > 0x5
 	.error "gText_Rom_598858 may not grow beyond its original slot"
 	.endif

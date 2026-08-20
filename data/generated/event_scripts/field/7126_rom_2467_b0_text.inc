@@ -1,7 +1,7 @@
 	@ field-script:0x245CE2 FieldScriptText_2467B0
 	.globl gText_Rom_2467B0
 gText_Rom_2467B0: @ 0x082467B0
-	.string "ひっこし　かんりょう！\pひみつのちからを　つかいますか？$"
+	.string "ひっこし　かんりょう！\pひみつのちからを　つかいますか？{EOS}"
 	.if (. - gText_Rom_2467B0) > 0x1d
 	.error "gText_Rom_2467B0 may not grow beyond its original slot"
 	.endif

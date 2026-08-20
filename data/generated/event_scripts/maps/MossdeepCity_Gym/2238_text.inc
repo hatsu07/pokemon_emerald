@@ -1,7 +1,7 @@
 	@ data/maps/MossdeepCity_Gym/scripts.inc:444 MossdeepCity_Gym_Text_NateDefeat (+1 aliases)
 	.globl gText_Rom_20BCB9
 gText_Rom_20BCB9: @ 0x0820BCB9
-	.string "こ これは これは!\nすばらしい たたかいかた ですな$"
+	.string "こ これは これは!\nすばらしい たたかいかた ですな{EOS}"
 	.if (. - gText_Rom_20BCB9) > 0x1c
 	.error "gText_Rom_20BCB9 may not grow beyond its original slot"
 	.endif

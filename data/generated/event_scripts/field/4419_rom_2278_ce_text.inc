@@ -1,7 +1,7 @@
 	@ field-script:0x226FAD FieldScriptText_2278CE
 	.globl gText_Rom_2278CE
 gText_Rom_2278CE: @ 0x082278CE
-	.string "バトルドームに　ごあんないする　まえに\nレポートを　かきますので　おまちください$"
+	.string "バトルドームに　ごあんないする　まえに\nレポートを　かきますので　おまちください{EOS}"
 	.if (. - gText_Rom_2278CE) > 0x29
 	.error "gText_Rom_2278CE may not grow beyond its original slot"
 	.endif

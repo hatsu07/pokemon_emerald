@@ -1,7 +1,7 @@
 	@ asm/naming_screen.s:3629 sub_080E3E7C
 	.globl gText_Rom_5C940A
 gText_Rom_5C940A: @ 0x085C940A
-	.string "♂$"
+	.string "♂{EOS}"
 	.if (. - gText_Rom_5C940A) > 0x2
 	.error "gText_Rom_5C940A may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5C940A: @ 0x085C940A
 	@ asm/naming_screen.s:3641 sub_080E3E7C
 	.globl gText_Rom_5C940C
 gText_Rom_5C940C: @ 0x085C940C
-	.string "♀$"
+	.string "♀{EOS}"
 	.if (. - gText_Rom_5C940C) > 0x2
 	.error "gText_Rom_5C940C may not grow beyond its original slot"
 	.endif

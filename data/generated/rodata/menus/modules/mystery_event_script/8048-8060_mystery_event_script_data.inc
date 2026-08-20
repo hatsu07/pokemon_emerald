@@ -1,7 +1,7 @@
 	@ asm/mystery_event_script.s:553 MEScrCmd_giveribbon
 	.globl gText_Rom_5FCB3D
 gText_Rom_5FCB3D: @ 0x085FCB3D
-	.string "てもちのポケモンに\nとくべつなリボンが　あたえられた！$"
+	.string "てもちのポケモンに\nとくべつなリボンが　あたえられた！{EOS}"
 	.if (. - gText_Rom_5FCB3D) > 0x1c
 	.error "gText_Rom_5FCB3D may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5FCB3D: @ 0x085FCB3D
 	@ asm/mystery_event_script.s:625 MEScrCmd_enableresetrtc
 	.globl gText_Rom_5FCB59
 gText_Rom_5FCB59: @ 0x085FCB59
-	.string "ずかんに　ぜんこくモードが\nついか　された！$"
+	.string "ずかんに　ぜんこくモードが\nついか　された！{EOS}"
 	.if (. - gText_Rom_5FCB59) > 0x17
 	.error "gText_Rom_5FCB59 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5FCB59: @ 0x085FCB59
 	@ asm/mystery_event_script.s:648 MEScrCmd_addrareword
 	.globl gText_Rom_5FCB70
 gText_Rom_5FCB70: @ 0x085FCB70
-	.string "めずらしい　ことばを　ついかしました$"
+	.string "めずらしい　ことばを　ついかしました{EOS}"
 	.if (. - gText_Rom_5FCB70) > 0x13
 	.error "gText_Rom_5FCB70 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5FCB70: @ 0x085FCB70
 	@ asm/mystery_event_script.s:785 MEScrCmd_givepokemon
 	.globl gText_Rom_5FCB83
 gText_Rom_5FCB83: @ 0x085FCB83
-	.string "{0xFD}{0x02}が　おくられてきた！$"
+	.string "{0xFD}{0x02}が　おくられてきた！{EOS}"
 	.if (. - gText_Rom_5FCB83) > 0xd
 	.error "gText_Rom_5FCB83 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5FCB83: @ 0x085FCB83
 	@ asm/mystery_event_script.s:733 MEScrCmd_givepokemon
 	.globl gText_Rom_5FCB90
 gText_Rom_5FCB90: @ 0x085FCB90
-	.string "てもちが　いっぱいなので\n{0xFD}{0x02}は　もらえなかった…$"
+	.string "てもちが　いっぱいなので\n{0xFD}{0x02}は　もらえなかった…{EOS}"
 	.if (. - gText_Rom_5FCB90) > 0x1a
 	.error "gText_Rom_5FCB90 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5FCB90: @ 0x085FCB90
 	@ asm/mystery_event_script.s:821 MEScrCmd_addtrainer
 	.globl gText_Rom_5FCBAA
 gText_Rom_5FCBAA: @ 0x085FCBAA
-	.string "あらたな　トレーナーが\nホウエンに　やってきた$"
+	.string "あらたな　トレーナーが\nホウエンに　やってきた{EOS}"
 	.if (. - gText_Rom_5FCBAA) > 0x18
 	.error "gText_Rom_5FCBAA may not grow beyond its original slot"
 	.endif
@@ -72,7 +72,7 @@ gText_Rom_5FCBAA: @ 0x085FCBAA
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5FCBDE
 gText_Rom_5FCBDE: @ 0x085FCBDE
-	.string "このデータは　このバージョンでは\nしよう　できません$"
+	.string "このデータは　このバージョンでは\nしよう　できません{EOS}"
 	.if (. - gText_Rom_5FCBDE) != 0x1b
 	.error "gText_Rom_5FCBDE must retain its original byte length"
 	.endif

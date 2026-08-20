@@ -4,6 +4,6 @@
 	.set gText_Rom_5CAD7E, gText_Rom_5CAD78 + 0x6
 	@ Charmap text. The final prefix intentionally has no terminator:
 	@ it shares the following gText_Rom_5CADA1 = "モード$" suffix.
-	.string "エメラルドモードについて$"
-	.string "グローバルモードについて$"
+	.string "エメラルドモードについて{EOS}"
+	.string "グローバルモードについて{EOS}"
 	.string "エメラルド"

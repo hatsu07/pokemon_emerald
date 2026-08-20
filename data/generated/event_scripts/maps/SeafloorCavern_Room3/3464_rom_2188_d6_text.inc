@@ -1,7 +1,7 @@
 	@ data/maps/SeafloorCavern_Room3/scripts.inc:29 SeafloorCavern_Room3_Text_Grunt5PostBattle
 	.globl gText_Rom_2188D6
 gText_Rom_2188D6: @ 0x082188D6
-	.string "オレたちが あたまの あがらない\nあの リーダーに\pよくも まあ おまえの ような\nこどもが さからえる もんだよな!\pもしかして おまえって\nとんでもないやつ…… なのか?$"
+	.string "オレたちが あたまの あがらない\nあの リーダーに\pよくも まあ おまえの ような\nこどもが さからえる もんだよな!\pもしかして おまえって\nとんでもないやつ…… なのか?{EOS}"
 	.if (. - gText_Rom_2188D6) > 0x58
 	.error "gText_Rom_2188D6 may not grow beyond its original slot"
 	.endif

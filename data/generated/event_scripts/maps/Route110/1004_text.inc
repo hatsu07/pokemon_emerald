@@ -1,7 +1,7 @@
 	@ data/maps/Route110/scripts.inc:885 Route110_Text_ChallengeReactionWorst
 	.globl gText_Rom_1E9D1D
 gText_Rom_1E9D1D: @ 0x081E9D1D
-	.string "うむむ…… うむむむ……\pきみには じてんしゃは むいていない かもな\nミスターカゼノに かえしたら どうだね?$"
+	.string "うむむ…… うむむむ……\pきみには じてんしゃは むいていない かもな\nミスターカゼノに かえしたら どうだね?{EOS}"
 	.if (. - gText_Rom_1E9D1D) > 0x39
 	.error "gText_Rom_1E9D1D may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/pokemon.c:158 pokemon_line_158
 	.globl gText_Rom_5ECDA4
 gText_Rom_5ECDA4: @ 0x085ECDA4
-	.string "がんばりや$"
+	.string "がんばりや{EOS}"
 	.if (. - gText_Rom_5ECDA4) > 0x6
 	.error "gText_Rom_5ECDA4 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5ECDA4: @ 0x085ECDA4
 	@ src/pokemon.c:170 pokemon_line_170
 	.globl gText_Rom_5ECDAA
 gText_Rom_5ECDAA: @ 0x085ECDAA
-	.string "さみしがり$"
+	.string "さみしがり{EOS}"
 	.if (. - gText_Rom_5ECDAA) > 0x6
 	.error "gText_Rom_5ECDAA may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5ECDAA: @ 0x085ECDAA
 	@ src/pokemon.c:182 pokemon_line_182
 	.globl gText_Rom_5ECDB0
 gText_Rom_5ECDB0: @ 0x085ECDB0
-	.string "ゆうかん$"
+	.string "ゆうかん{EOS}"
 	.if (. - gText_Rom_5ECDB0) > 0x5
 	.error "gText_Rom_5ECDB0 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5ECDB0: @ 0x085ECDB0
 	@ src/pokemon.c:194 pokemon_line_194
 	.globl gText_Rom_5ECDB5
 gText_Rom_5ECDB5: @ 0x085ECDB5
-	.string "いじっぱり$"
+	.string "いじっぱり{EOS}"
 	.if (. - gText_Rom_5ECDB5) > 0x6
 	.error "gText_Rom_5ECDB5 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5ECDB5: @ 0x085ECDB5
 	@ src/pokemon.c:206 pokemon_line_206
 	.globl gText_Rom_5ECDBB
 gText_Rom_5ECDBB: @ 0x085ECDBB
-	.string "やんちゃ$"
+	.string "やんちゃ{EOS}"
 	.if (. - gText_Rom_5ECDBB) > 0x5
 	.error "gText_Rom_5ECDBB may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5ECDBB: @ 0x085ECDBB
 	@ src/pokemon.c:218 pokemon_line_218
 	.globl gText_Rom_5ECDC0
 gText_Rom_5ECDC0: @ 0x085ECDC0
-	.string "ずぶとい$"
+	.string "ずぶとい{EOS}"
 	.if (. - gText_Rom_5ECDC0) > 0x5
 	.error "gText_Rom_5ECDC0 may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_5ECDC0: @ 0x085ECDC0
 	@ src/pokemon.c:230 pokemon_line_230
 	.globl gText_Rom_5ECDC5
 gText_Rom_5ECDC5: @ 0x085ECDC5
-	.string "すなお$"
+	.string "すなお{EOS}"
 	.if (. - gText_Rom_5ECDC5) > 0x4
 	.error "gText_Rom_5ECDC5 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_5ECDC5: @ 0x085ECDC5
 	@ src/pokemon.c:242 pokemon_line_242
 	.globl gText_Rom_5ECDC9
 gText_Rom_5ECDC9: @ 0x085ECDC9
-	.string "のんき$"
+	.string "のんき{EOS}"
 	.if (. - gText_Rom_5ECDC9) > 0x4
 	.error "gText_Rom_5ECDC9 may not grow beyond its original slot"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_5ECDC9: @ 0x085ECDC9
 	@ src/pokemon.c:254 pokemon_line_254
 	.globl gText_Rom_5ECDCD
 gText_Rom_5ECDCD: @ 0x085ECDCD
-	.string "わんぱく$"
+	.string "わんぱく{EOS}"
 	.if (. - gText_Rom_5ECDCD) > 0x5
 	.error "gText_Rom_5ECDCD may not grow beyond its original slot"
 	.endif
@@ -100,7 +100,7 @@ gText_Rom_5ECDCD: @ 0x085ECDCD
 	@ src/pokemon.c:266 pokemon_line_266
 	.globl gText_Rom_5ECDD2
 gText_Rom_5ECDD2: @ 0x085ECDD2
-	.string "のうてんき$"
+	.string "のうてんき{EOS}"
 	.if (. - gText_Rom_5ECDD2) > 0x6
 	.error "gText_Rom_5ECDD2 may not grow beyond its original slot"
 	.endif
@@ -112,7 +112,7 @@ gText_Rom_5ECDD2: @ 0x085ECDD2
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5ECDD8
 gText_Rom_5ECDD8: @ 0x085ECDD8
-	.string "おくびょう$"
+	.string "おくびょう{EOS}"
 	.if (. - gText_Rom_5ECDD8) != 0x6
 	.error "gText_Rom_5ECDD8 must retain its original byte length"
 	.endif
@@ -122,7 +122,7 @@ gText_Rom_5ECDD8: @ 0x085ECDD8
 	@ src/pokemon.c:290 pokemon_line_290
 	.globl gText_Rom_5ECDDE
 gText_Rom_5ECDDE: @ 0x085ECDDE
-	.string "せっかち$"
+	.string "せっかち{EOS}"
 	.if (. - gText_Rom_5ECDDE) > 0x5
 	.error "gText_Rom_5ECDDE may not grow beyond its original slot"
 	.endif
@@ -133,7 +133,7 @@ gText_Rom_5ECDDE: @ 0x085ECDDE
 	@ src/pokemon.c:302 pokemon_line_302
 	.globl gText_Rom_5ECDE3
 gText_Rom_5ECDE3: @ 0x085ECDE3
-	.string "まじめ$"
+	.string "まじめ{EOS}"
 	.if (. - gText_Rom_5ECDE3) > 0x4
 	.error "gText_Rom_5ECDE3 may not grow beyond its original slot"
 	.endif
@@ -144,7 +144,7 @@ gText_Rom_5ECDE3: @ 0x085ECDE3
 	@ src/pokemon.c:314 pokemon_line_314
 	.globl gText_Rom_5ECDE7
 gText_Rom_5ECDE7: @ 0x085ECDE7
-	.string "ようき$"
+	.string "ようき{EOS}"
 	.if (. - gText_Rom_5ECDE7) > 0x4
 	.error "gText_Rom_5ECDE7 may not grow beyond its original slot"
 	.endif
@@ -155,7 +155,7 @@ gText_Rom_5ECDE7: @ 0x085ECDE7
 	@ src/pokemon.c:326 pokemon_line_326
 	.globl gText_Rom_5ECDEB
 gText_Rom_5ECDEB: @ 0x085ECDEB
-	.string "むじゃき$"
+	.string "むじゃき{EOS}"
 	.if (. - gText_Rom_5ECDEB) > 0x5
 	.error "gText_Rom_5ECDEB may not grow beyond its original slot"
 	.endif
@@ -166,7 +166,7 @@ gText_Rom_5ECDEB: @ 0x085ECDEB
 	@ src/pokemon.c:338 pokemon_line_338
 	.globl gText_Rom_5ECDF0
 gText_Rom_5ECDF0: @ 0x085ECDF0
-	.string "ひかえめ$"
+	.string "ひかえめ{EOS}"
 	.if (. - gText_Rom_5ECDF0) > 0x5
 	.error "gText_Rom_5ECDF0 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/strings.c:615 gText_QuestionPressTheAButton
 	.globl gText_Rom_5CBC94
 gText_Rom_5CBC94: @ 0x085CBC94
-	.string "Aボタンを おしてね!$"
+	.string "Aボタンを おしてね!{EOS}"
 	.if (. - gText_Rom_5CBC94) > 0xc
 	.error "gText_Rom_5CBC94 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1385 Route114_Text_TyraDefeat (+1 aliases)
 	.globl gText_Rom_25CF2D
 gText_Rom_25CF2D: @ 0x0825CF2D
-	.string "カヨ『すごい たたかいかた!$"
+	.string "カヨ『すごい たたかいかた!{EOS}"
 	.if (. - gText_Rom_25CF2D) > 0xf
 	.error "gText_Rom_25CF2D may not grow beyond its original slot"
 	.endif

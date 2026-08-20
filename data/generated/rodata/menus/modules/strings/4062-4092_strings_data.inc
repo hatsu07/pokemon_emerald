@@ -1,7 +1,7 @@
 	@ src/strings.c:29 gText_AButton
 	.globl gText_Rom_5C8DFC
 gText_Rom_5C8DFC: @ 0x085C8DFC
-	.string "エーボタン$"
+	.string "エーボタン{EOS}"
 	.if (. - gText_Rom_5C8DFC) > 0x6
 	.error "gText_Rom_5C8DFC may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5C8DFC: @ 0x085C8DFC
 	@ src/strings.c:30 gText_BButton
 	.globl gText_Rom_5C8E02
 gText_Rom_5C8E02: @ 0x085C8E02
-	.string "ビーボタン$"
+	.string "ビーボタン{EOS}"
 	.if (. - gText_Rom_5C8E02) > 0x6
 	.error "gText_Rom_5C8E02 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5C8E02: @ 0x085C8E02
 	@ src/strings.c:31 gText_RButton
 	.globl gText_Rom_5C8E08
 gText_Rom_5C8E08: @ 0x085C8E08
-	.string "アールボタン$"
+	.string "アールボタン{EOS}"
 	.if (. - gText_Rom_5C8E08) > 0x7
 	.error "gText_Rom_5C8E08 may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5C8E08: @ 0x085C8E08
 	@ src/strings.c:32 gText_LButton
 	.globl gText_Rom_5C8E0F
 gText_Rom_5C8E0F: @ 0x085C8E0F
-	.string "エルボタン$"
+	.string "エルボタン{EOS}"
 	.if (. - gText_Rom_5C8E0F) > 0x6
 	.error "gText_Rom_5C8E0F may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5C8E0F: @ 0x085C8E0F
 	@ src/strings.c:33 gText_Start
 	.globl gText_Rom_5C8E15
 gText_Rom_5C8E15: @ 0x085C8E15
-	.string "スタートボタン$"
+	.string "スタートボタン{EOS}"
 	.if (. - gText_Rom_5C8E15) > 0x8
 	.error "gText_Rom_5C8E15 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5C8E15: @ 0x085C8E15
 	@ src/strings.c:34 gText_Select
 	.globl gText_Rom_5C8E1D
 gText_Rom_5C8E1D: @ 0x085C8E1D
-	.string "セレクトボタン$"
+	.string "セレクトボタン{EOS}"
 	.if (. - gText_Rom_5C8E1D) > 0x8
 	.error "gText_Rom_5C8E1D may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_5C8E1D: @ 0x085C8E1D
 	@ src/strings.c:35 gText_ControlPad
 	.globl gText_Rom_5C8E25
 gText_Rom_5C8E25: @ 0x085C8E25
-	.string "じゅうじボタン$"
+	.string "じゅうじボタン{EOS}"
 	.if (. - gText_Rom_5C8E25) > 0x8
 	.error "gText_Rom_5C8E25 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_5C8E25: @ 0x085C8E25
 	@ src/strings.c:36 gText_LButtonRButton
 	.globl gText_Rom_5C8E2D
 gText_Rom_5C8E2D: @ 0x085C8E2D
-	.string "Lボタン Rボタン$"
+	.string "Lボタン Rボタン{EOS}"
 	.if (. - gText_Rom_5C8E2D) > 0xa
 	.error "gText_Rom_5C8E2D may not grow beyond its original slot"
 	.endif
@@ -90,7 +90,7 @@ gText_Rom_5C8E2D: @ 0x085C8E2D
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C8E37
 gText_Rom_5C8E37: @ 0x085C8E37
-	.string " そうさ せつめい$"
+	.string " そうさ せつめい{EOS}"
 	.if (. - gText_Rom_5C8E37) != 0xa
 	.error "gText_Rom_5C8E37 must retain its original byte length"
 	.endif
@@ -102,7 +102,7 @@ gText_Rom_5C8E37: @ 0x085C8E37
 	@ src/strings.c:134 gMenuText_Confirm (+2 aliases)
 	.globl gText_Rom_5C8E4C
 gText_Rom_5C8E4C: @ 0x085C8E4C
-	.string "けってい$"
+	.string "けってい{EOS}"
 	.if (. - gText_Rom_5C8E4C) > 0x5
 	.error "gText_Rom_5C8E4C may not grow beyond its original slot"
 	.endif
@@ -114,7 +114,7 @@ gText_Rom_5C8E4C: @ 0x085C8E4C
 	@ src/strings.c:39 gText_Next
 	.globl gText_Rom_5C8E54
 gText_Rom_5C8E54: @ 0x085C8E54
-	.string "{A_BUTTON}つぎ$"
+	.string "{A_BUTTON}つぎ{EOS}"
 	.if (. - gText_Rom_5C8E54) > 0x5
 	.error "gText_Rom_5C8E54 may not grow beyond its original slot"
 	.endif
@@ -127,7 +127,7 @@ gText_Rom_5C8E54: @ 0x085C8E54
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C8E5C
 gText_Rom_5C8E5C: @ 0x085C8E5C
-	.string "{A_BUTTON}つぎ {B_BUTTON}もどる$"
+	.string "{A_BUTTON}つぎ {B_BUTTON}もどる{EOS}"
 	.if (. - gText_Rom_5C8E5C) != 0xb
 	.error "gText_Rom_5C8E5C must retain its original byte length"
 	.endif
@@ -143,7 +143,7 @@ gHallOfFameData_085C8E68: @ 0x085C8E68
 	.byte 0xF8, 0x0A, 0x04, 0x27, 0x48, 0x00, 0xF8, 0x00, 0x12, 0x38, 0x00, 0xF8, 0x01
 	.globl gText_Rom_5C8E75
 gText_Rom_5C8E75: @ 0x085C8E75
-	.string "おわる$"
+	.string "おわる{EOS}"
 	.if (. - gText_Rom_5C8E75) > 0x4
 	.error "gText_Rom_5C8E75 may not grow beyond its original slot"
 	.endif
@@ -160,7 +160,7 @@ gHallOfFameData_085C8E7C: @ 0x085C8E7C
 	.2byte 0x0AF8, 0x2704, 0x0048, 0x00F8, 0x01F8
 	.globl gText_Rom_5C8E86
 gText_Rom_5C8E86: @ 0x085C8E86
-	.string "おわる$"
+	.string "おわる{EOS}"
 	.if (. - gText_Rom_5C8E86) > 0x4
 	.error "gText_Rom_5C8E86 may not grow beyond its original slot"
 	.endif
@@ -173,7 +173,7 @@ gText_Rom_5C8E86: @ 0x085C8E86
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C8E8C
 gText_Rom_5C8E8C: @ 0x085C8E8C
-	.string "{A_BUTTON}おわる$"
+	.string "{A_BUTTON}おわる{EOS}"
 	.if (. - gText_Rom_5C8E8C) != 0x6
 	.error "gText_Rom_5C8E8C must retain its original byte length"
 	.endif

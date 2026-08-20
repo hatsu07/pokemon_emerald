@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_Flat2_2F/scripts.inc:30 RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo
 	.globl gText_Rom_204087
 gText_Rom_204087: @ 0x08204087
-	.string "おとうさんは かいしゃで おしごと!\pぼくも おおきく なったら\nデボンで はたらくんだ!$"
+	.string "おとうさんは かいしゃで おしごと!\pぼくも おおきく なったら\nデボンで はたらくんだ!{EOS}"
 	.if (. - gText_Rom_204087) > 0x2e
 	.error "gText_Rom_204087 may not grow beyond its original slot"
 	.endif

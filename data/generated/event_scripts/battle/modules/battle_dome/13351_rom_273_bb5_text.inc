@@ -1,7 +1,7 @@
 	@ src/battle_dome.c:892 battle_dome_line_892
 	.globl gText_Rom_273BB5
 gText_Rom_273BB5: @ 0x08273BB5
-	.string "うんに まかせた たたかいかたを このむ。$"
+	.string "うんに まかせた たたかいかたを このむ。{EOS}"
 	.if (. - gText_Rom_273BB5) > 0x16
 	.error "gText_Rom_273BB5 may not grow beyond its original slot"
 	.endif

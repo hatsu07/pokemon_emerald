@@ -1,7 +1,7 @@
 	@ data/maps/RusturfTunnel/scripts.inc:421 RusturfTunnel_Text_ComeAndGetSome
 	.globl gText_Rom_213991
 gText_Rom_213991: @ 0x08213991
-	.string "くるのか?\nくるなら こいよ!$"
+	.string "くるのか?\nくるなら こいよ!{EOS}"
 	.if (. - gText_Rom_213991) > 0x10
 	.error "gText_Rom_213991 may not grow beyond its original slot"
 	.endif

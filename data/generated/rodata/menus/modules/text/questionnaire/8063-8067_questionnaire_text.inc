@@ -1,7 +1,7 @@
 	@ data/text/questionnaire.inc:42 MysteryGift_Text_TryUsingItAtLilycovePort
 	.globl gText_Rom_5FD14B
 gText_Rom_5FD14B: @ 0x085FD14B
-	.string "ミナモシティの ふなつきば で\nつかえる ようですね\pぜひ ごりよう してみては\nいかがでしょうか?$"
+	.string "ミナモシティの ふなつきば で\nつかえる ようですね\pぜひ ごりよう してみては\nいかがでしょうか?{EOS}"
 	.if (. - gText_Rom_5FD14B) > 0x33
 	.error "gText_Rom_5FD14B may not grow beyond its original slot"
 	.endif
@@ -30,7 +30,7 @@ gText_Rom_5FD14B: @ 0x085FD14B
 	.byte 0x07, 0x1F, 0x0C, 0x10, 0xFF
 	.globl gText_Rom_5FD293
 gText_Rom_5FD293: @ 0x085FD293
-	.string "ミナモシティの ふなつきば で\nつかえる ようですね\pぜひ ごりよう してみては\nいかがでしょうか?$"
+	.string "ミナモシティの ふなつきば で\nつかえる ようですね\pぜひ ごりよう してみては\nいかがでしょうか?{EOS}"
 	.if (. - gText_Rom_5FD293) > 0x33
 	.error "gText_Rom_5FD293 may not grow beyond its original slot"
 	.endif
@@ -68,7 +68,7 @@ gText_Rom_5FD293: @ 0x085FD293
 	.byte 0x02, 0x3E, 0x37, 0xFA, 0x05, 0x08, 0x27, 0x2A, 0x13, 0x00, 0x07, 0x1F, 0x0C, 0x10, 0xFF
 	.globl gText_Rom_5FD475
 gText_Rom_5FD475: @ 0x085FD475
-	.string "ミナモシティの ふなつきば で\nつかえる ようですね\pぜひ ごりよう してみては\nいかがでしょうか?$"
+	.string "ミナモシティの ふなつきば で\nつかえる ようですね\pぜひ ごりよう してみては\nいかがでしょうか?{EOS}"
 	.if (. - gText_Rom_5FD475) > 0x33
 	.error "gText_Rom_5FD475 may not grow beyond its original slot"
 	.endif

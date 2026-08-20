@@ -1,7 +1,7 @@
 	@ data/maps/Route104/scripts.inc:1162 Route104_Text_BrendanPostBattle
 	.globl gText_Rom_1E813D
 gText_Rom_1E813D: @ 0x081E813D
-	.string "ユウキ『けっこう ポケモンの あつかい\nうまく なってきたな!\pでも たたかわせる だけじゃなくて\nそこの ハギろうじん みたいに\lポケモンと なかよくする ってのも\lだいじなこと なんだぜ!$"
+	.string "ユウキ『けっこう ポケモンの あつかい\nうまく なってきたな!\pでも たたかわせる だけじゃなくて\nそこの ハギろうじん みたいに\lポケモンと なかよくする ってのも\lだいじなこと なんだぜ!{EOS}"
 	.if (. - gText_Rom_1E813D) > 0x61
 	.error "gText_Rom_1E813D may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/battle_tent.inc:93 FallarborTown_BattleTentLobby_Text_WaitWhileSaveGame
 	.globl gText_Rom_274E34
 gText_Rom_274E34: @ 0x08274E34
-	.string "レポートを かきますので\nおまちくだされ!$"
+	.string "レポートを かきますので\nおまちくだされ!{EOS}"
 	.if (. - gText_Rom_274E34) > 0x16
 	.error "gText_Rom_274E34 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ field-script:0x21D543 FieldScriptText_24661D
 	.globl gText_Rom_24661D
 gText_Rom_24661D: @ 0x0824661D
-	.string "とうろく　できる　かずは\n10かしょ　まで　です\pどれか　かいじょ　すれば\nとうろく　できます$"
+	.string "とうろく　できる　かずは\n10かしょ　まで　です\pどれか　かいじょ　すれば\nとうろく　できます{EOS}"
 	.if (. - gText_Rom_24661D) > 0x30
 	.error "gText_Rom_24661D may not grow beyond its original slot"
 	.endif

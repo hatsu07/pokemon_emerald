@@ -1,7 +1,7 @@
 	@ src/strings.c:597 gText_CancelSelection
 	.globl gText_Rom_5CBBA8
 gText_Rom_5CBBA8: @ 0x085CBBA8
-	.string "もとにもどして いいですか?$"
+	.string "もとにもどして いいですか?{EOS}"
 	.if (. - gText_Rom_5CBBA8) > 0xf
 	.error "gText_Rom_5CBBA8 may not grow beyond its original slot"
 	.endif

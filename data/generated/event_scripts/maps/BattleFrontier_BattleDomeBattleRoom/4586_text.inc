@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc:1096 BattleFrontier_BattleDomeBattleRoom_Text_ReceivedTacticsSymbol
 	.globl gText_Rom_2299FF
 gText_Rom_2299FF: @ 0x082299FF
-	.string "フロンティアパスに\nタクティクスシンボルが きざまれた!$"
+	.string "フロンティアパスに\nタクティクスシンボルが きざまれた!{EOS}"
 	.if (. - gText_Rom_2299FF) > 0x1d
 	.error "gText_Rom_2299FF may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/MossdeepCity_House3/scripts.inc:40 MossdeepCity_House3_Text_GoAfterSeafloorPokemon
 	.globl gText_Rom_20C7F9
 gText_Rom_20C7F9: @ 0x0820C7F9
-	.string "すごいつりざおで\nかいていの ポケモンも つりあげろお!$"
+	.string "すごいつりざおで\nかいていの ポケモンも つりあげろお!{EOS}"
 	.if (. - gText_Rom_20C7F9) > 0x1d
 	.error "gText_Rom_20C7F9 may not grow beyond its original slot"
 	.endif

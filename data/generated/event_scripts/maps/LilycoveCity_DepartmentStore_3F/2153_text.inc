@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc:57 LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon
 	.globl gText_Rom_20AA89
 gText_Rom_20AA89: @ 0x0820AA89
-	.string "てっとりばやく ポケモンを つよくするなら\nどうぐを あたえるのが いちばん!\pタウリンなら こうげきりょく アップ!\nリゾチウムなら とくこう アップ だぜ!$"
+	.string "てっとりばやく ポケモンを つよくするなら\nどうぐを あたえるのが いちばん!\pタウリンなら こうげきりょく アップ!\nリゾチウムなら とくこう アップ だぜ!{EOS}"
 	.if (. - gText_Rom_20AA89) > 0x51
 	.error "gText_Rom_20AA89 may not grow beyond its original slot"
 	.endif

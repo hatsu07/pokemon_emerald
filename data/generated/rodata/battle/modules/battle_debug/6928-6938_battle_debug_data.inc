@@ -1,7 +1,7 @@
 	@ src/battle_debug.c:337 battle_debug_line_337 (+5 aliases)
 	.globl gText_Rom_5EAF5A
 gText_Rom_5EAF5A: @ 0x085EAF5A
-	.string "こうげき$"
+	.string "こうげき{EOS}"
 	.if (. - gText_Rom_5EAF5A) > 0x5
 	.error "gText_Rom_5EAF5A may not grow beyond its original slot"
 	.endif
@@ -19,7 +19,7 @@ gText_Rom_5EAF5A: @ 0x085EAF5A
 	.2byte 0x3F00, 0x282E, 0x0836, 0x0044
 	.globl gText_Rom_5EAFC7
 gText_Rom_5EAFC7: @ 0x085EAFC7
-	.string "こうげき$"
+	.string "こうげき{EOS}"
 	.if (. - gText_Rom_5EAFC7) > 0x5
 	.error "gText_Rom_5EAFC7 may not grow beyond its original slot"
 	.endif
@@ -51,7 +51,7 @@ gText_Rom_5EAFC7: @ 0x085EAFC7
 	.byte 0x02, 0x44, 0xFE, 0x12, 0x07, 0x41, 0x0C, 0x13, 0x00
 	.globl gText_Rom_5EB115
 gText_Rom_5EB115: @ 0x085EB115
-	.string "こうげき$"
+	.string "こうげき{EOS}"
 	.if (. - gText_Rom_5EB115) > 0x5
 	.error "gText_Rom_5EB115 may not grow beyond its original slot"
 	.endif
@@ -65,7 +65,7 @@ gText_Rom_5EB115: @ 0x085EB115
 	.2byte 0x0D19, 0x023B, 0x0200, 0x2D07, 0x021A, 0xFE13, 0x0713, 0x002D
 	.globl gText_Rom_5EB14A
 gText_Rom_5EB14A: @ 0x085EB14A
-	.string "こうげき$"
+	.string "こうげき{EOS}"
 	.if (. - gText_Rom_5EB14A) > 0x5
 	.error "gText_Rom_5EB14A may not grow beyond its original slot"
 	.endif
@@ -90,7 +90,7 @@ gText_Rom_5EB14A: @ 0x085EB14A
 	.2byte 0x2E13, 0x0E0B, 0xFE13, 0x0713, 0x002D
 	.globl gText_Rom_5EB229
 gText_Rom_5EB229: @ 0x085EB229
-	.string "こうげき$"
+	.string "こうげき{EOS}"
 	.if (. - gText_Rom_5EB229) > 0x5
 	.error "gText_Rom_5EB229 may not grow beyond its original slot"
 	.endif
@@ -136,7 +136,7 @@ gText_Rom_5EB229: @ 0x085EB229
 	.byte 0x05, 0x0A, 0x0C, 0x13, 0xFE, 0x13, 0x07, 0x2D, 0x00
 	.globl gText_Rom_5EB457
 gText_Rom_5EB457: @ 0x085EB457
-	.string "こうげき$"
+	.string "こうげき{EOS}"
 	.if (. - gText_Rom_5EB457) > 0x5
 	.error "gText_Rom_5EB457 may not grow beyond its original slot"
 	.endif

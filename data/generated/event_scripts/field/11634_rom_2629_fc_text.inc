@@ -1,7 +1,7 @@
 	@ field-script:0x21EA32 FieldScriptText_2629FC
 	.globl gText_Rom_2629FC
 gText_Rom_2629FC: @ 0x082629FC
-	.string "あるき　つかれたら　ちょっと　ひといき！\n「みんなの　きゅうけいじょ」$"
+	.string "あるき　つかれたら　ちょっと　ひといき！\n「みんなの　きゅうけいじょ」{EOS}"
 	.if (. - gText_Rom_2629FC) > 0x24
 	.error "gText_Rom_2629FC may not grow beyond its original slot"
 	.endif

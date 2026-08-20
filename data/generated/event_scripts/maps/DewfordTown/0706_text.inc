@@ -1,7 +1,7 @@
 	@ data/maps/DewfordTown/scripts.inc:702 DewfordTown_Text_HearOfAnyTrendsComeShareWithMe
 	.globl gText_Rom_1E5626
 gText_Rom_1E5626: @ 0x081E5626
-	.string "じゃあ あたらしい りゅうこうが あったら\nまた きかせて くれよ!$"
+	.string "じゃあ あたらしい りゅうこうが あったら\nまた きかせて くれよ!{EOS}"
 	.if (. - gText_Rom_1E5626) > 0x23
 	.error "gText_Rom_1E5626 may not grow beyond its original slot"
 	.endif

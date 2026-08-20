@@ -1,7 +1,7 @@
 	@ src/battle_dome.c:914 battle_dome_line_914
 	.globl gText_Rom_273D8E
 gText_Rom_273D8E: @ 0x08273D8E
-	.string "ダミーメッセージ4です。$"
+	.string "ダミーメッセージ4です。{EOS}"
 	.if (. - gText_Rom_273D8E) > 0xd
 	.error "gText_Rom_273D8E may not grow beyond its original slot"
 	.endif

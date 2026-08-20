@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CB6F1
 gText_Rom_5CB6F1: @ 0x085CB6F1
-	.string "もってる ポケモン$"
+	.string "もってる ポケモン{EOS}"
 	.if (. - gText_Rom_5CB6F1) != 0xa
 	.error "gText_Rom_5CB6F1 must retain its original byte length"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5CB6F1: @ 0x085CB6F1
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CB6FB
 gText_Rom_5CB6FB: @ 0x085CB6FB
-	.string "じこしょうかい$"
+	.string "じこしょうかい{EOS}"
 	.if (. - gText_Rom_5CB6FB) != 0x8
 	.error "gText_Rom_5CB6FB must retain its original byte length"
 	.endif

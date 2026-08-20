@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2000 Route119_Text_JacksonRegister
 	.globl gText_Rom_25E91F
 gText_Rom_25E91F: @ 0x0825E91F
-	.string "ちしきぶそくと わらわずに\nこんど また あいてを してやってくれよな$"
+	.string "ちしきぶそくと わらわずに\nこんど また あいてを してやってくれよな{EOS}"
 	.if (. - gText_Rom_25E91F) > 0x24
 	.error "gText_Rom_25E91F may not grow beyond its original slot"
 	.endif

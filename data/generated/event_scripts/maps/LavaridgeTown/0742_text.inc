@@ -1,7 +1,7 @@
 	@ data/maps/LavaridgeTown/scripts.inc:393 LavaridgeTown_Text_TownSign
 	.globl gText_Rom_1E5DFF
 gText_Rom_1E5DFF: @ 0x081E5DFF
-	.string "ここは フエン タウン\nポケセン おんせん よいところ$"
+	.string "ここは フエン タウン\nポケセン おんせん よいところ{EOS}"
 	.if (. - gText_Rom_1E5DFF) > 0x1c
 	.error "gText_Rom_1E5DFF may not grow beyond its original slot"
 	.endif

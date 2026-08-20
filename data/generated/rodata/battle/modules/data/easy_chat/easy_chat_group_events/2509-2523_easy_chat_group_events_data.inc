@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_events.h:22 gEasyChatWord_Ribbon (+1 aliases)
 	.globl gText_Rom_578494
 gText_Rom_578494: @ 0x08578494
-	.string "リボン$"
+	.string "リボン{EOS}"
 	.if (. - gText_Rom_578494) > 0x4
 	.error "gText_Rom_578494 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_578494: @ 0x08578494
 	@ src/data/easy_chat/easy_chat_group_events.h:23 gEasyChatWord_Crush (+1 aliases)
 	.globl gText_Rom_578498
 gText_Rom_578498: @ 0x08578498
-	.string "クラッシュ$"
+	.string "クラッシュ{EOS}"
 	.if (. - gText_Rom_578498) > 0x6
 	.error "gText_Rom_578498 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_578498: @ 0x08578498
 	@ src/data/easy_chat/easy_chat_group_events.h:24 gEasyChatWord_Direct (+1 aliases)
 	.globl gText_Rom_57849E
 gText_Rom_57849E: @ 0x0857849E
-	.string "ダイレクト$"
+	.string "ダイレクト{EOS}"
 	.if (. - gText_Rom_57849E) > 0x6
 	.error "gText_Rom_57849E may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_57849E: @ 0x0857849E
 	@ src/data/easy_chat/easy_chat_group_events.h:25 gEasyChatWord_Tower (+1 aliases)
 	.globl gText_Rom_5784A4
 gText_Rom_5784A4: @ 0x085784A4
-	.string "タワー$"
+	.string "タワー{EOS}"
 	.if (. - gText_Rom_5784A4) > 0x4
 	.error "gText_Rom_5784A4 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5784A4: @ 0x085784A4
 	@ src/data/easy_chat/easy_chat_group_events.h:26 gEasyChatWord_Union (+1 aliases)
 	.globl gText_Rom_5784A8
 gText_Rom_5784A8: @ 0x085784A8
-	.string "ユニオン$"
+	.string "ユニオン{EOS}"
 	.if (. - gText_Rom_5784A8) > 0x5
 	.error "gText_Rom_5784A8 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5784A8: @ 0x085784A8
 	@ src/data/easy_chat/easy_chat_group_events.h:27 gEasyChatWord_Room (+1 aliases)
 	.globl gText_Rom_5784AD
 gText_Rom_5784AD: @ 0x085784AD
-	.string "ルーム$"
+	.string "ルーム{EOS}"
 	.if (. - gText_Rom_5784AD) > 0x4
 	.error "gText_Rom_5784AD may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_5784AD: @ 0x085784AD
 	@ src/data/easy_chat/easy_chat_group_events.h:28 gEasyChatWord_Wireless (+1 aliases)
 	.globl gText_Rom_5784B1
 gText_Rom_5784B1: @ 0x085784B1
-	.string "ワイヤレス$"
+	.string "ワイヤレス{EOS}"
 	.if (. - gText_Rom_5784B1) > 0x6
 	.error "gText_Rom_5784B1 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_5784B1: @ 0x085784B1
 	@ src/data/easy_chat/easy_chat_group_events.h:29 gEasyChatWord_Frontier (+1 aliases)
 	.globl gText_Rom_5784B7
 gText_Rom_5784B7: @ 0x085784B7
-	.string "フロンティア$"
+	.string "フロンティア{EOS}"
 	.if (. - gText_Rom_5784B7) > 0x7
 	.error "gText_Rom_5784B7 may not grow beyond its original slot"
 	.endif

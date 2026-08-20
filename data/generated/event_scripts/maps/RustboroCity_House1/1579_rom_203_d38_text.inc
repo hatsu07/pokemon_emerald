@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_House1/scripts.inc:48 RustboroCity_House1_Text_AllSortsOfPlaces
 	.globl gText_Rom_203D38
 gText_Rom_203D38: @ 0x08203D38
-	.string "いろんな ばしょに\nいろんな ポケモンが いる\lいろんな ひとも いる\pそれが たのしみで わしも\nいろんな ところに でかけるのさ!$"
+	.string "いろんな ばしょに\nいろんな ポケモンが いる\lいろんな ひとも いる\pそれが たのしみで わしも\nいろんな ところに でかけるのさ!{EOS}"
 	.if (. - gText_Rom_203D38) > 0x44
 	.error "gText_Rom_203D38 may not grow beyond its original slot"
 	.endif

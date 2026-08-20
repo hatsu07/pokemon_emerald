@@ -1,7 +1,7 @@
 	@ src/strings.c:334 gText_AlreadyHoldingOne
 	.globl gText_Rom_5CA195
 gText_Rom_5CA195: @ 0x085CA195
-	.string "{STR_VAR_1}は\n{STR_VAR_2}を もっています$"
+	.string "{STR_VAR_1}は\n{STR_VAR_2}を もっています{EOS}"
 	.if (. - gText_Rom_5CA195) > 0xf
 	.error "gText_Rom_5CA195 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5CA195: @ 0x085CA195
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA1A4
 gText_Rom_5CA1A4: @ 0x085CA1A4
-	.string "つかえません$"
+	.string "つかえません{EOS}"
 	.if (. - gText_Rom_5CA1A4) != 0x7
 	.error "gText_Rom_5CA1A4 must retain its original byte length"
 	.endif
@@ -24,7 +24,7 @@ gText_Rom_5CA1A4: @ 0x085CA1A4
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA1AB
 gText_Rom_5CA1AB: @ 0x085CA1AB
-	.string "さんかしない$"
+	.string "さんかしない{EOS}"
 	.if (. - gText_Rom_5CA1AB) != 0x7
 	.error "gText_Rom_5CA1AB must retain its original byte length"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5CA1AB: @ 0x085CA1AB
 	@ src/strings.c:338 gText_First_PM
 	.globl gText_Rom_5CA1B2
 gText_Rom_5CA1B2: @ 0x085CA1B2
-	.string "いちばんめ$"
+	.string "いちばんめ{EOS}"
 	.if (. - gText_Rom_5CA1B2) > 0x6
 	.error "gText_Rom_5CA1B2 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5CA1B2: @ 0x085CA1B2
 	@ src/strings.c:339 gText_Second_PM
 	.globl gText_Rom_5CA1B8
 gText_Rom_5CA1B8: @ 0x085CA1B8
-	.string "にばんめ$"
+	.string "にばんめ{EOS}"
 	.if (. - gText_Rom_5CA1B8) > 0x5
 	.error "gText_Rom_5CA1B8 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5CA1B8: @ 0x085CA1B8
 	@ src/strings.c:340 gText_Third_PM
 	.globl gText_Rom_5CA1BD
 gText_Rom_5CA1BD: @ 0x085CA1BD
-	.string "さんばんめ$"
+	.string "さんばんめ{EOS}"
 	.if (. - gText_Rom_5CA1BD) > 0x6
 	.error "gText_Rom_5CA1BD may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_5CA1BD: @ 0x085CA1BD
 	@ src/strings.c:341 gText_Able2
 	.globl gText_Rom_5CA1C3
 gText_Rom_5CA1C3: @ 0x085CA1C3
-	.string "でられます$"
+	.string "でられます{EOS}"
 	.if (. - gText_Rom_5CA1C3) > 0x6
 	.error "gText_Rom_5CA1C3 may not grow beyond its original slot"
 	.endif
@@ -79,7 +79,7 @@ gText_Rom_5CA1C3: @ 0x085CA1C3
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA1C9
 gText_Rom_5CA1C9: @ 0x085CA1C9
-	.string "でられません$"
+	.string "でられません{EOS}"
 	.if (. - gText_Rom_5CA1C9) != 0x7
 	.error "gText_Rom_5CA1C9 must retain its original byte length"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_5CA1C9: @ 0x085CA1C9
 	@ src/strings.c:343 gText_Able3
 	.globl gText_Rom_5CA1D0
 gText_Rom_5CA1D0: @ 0x085CA1D0
-	.string "おぼえられる!$"
+	.string "おぼえられる!{EOS}"
 	.if (. - gText_Rom_5CA1D0) > 0x8
 	.error "gText_Rom_5CA1D0 may not grow beyond its original slot"
 	.endif
@@ -101,7 +101,7 @@ gText_Rom_5CA1D0: @ 0x085CA1D0
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA1D8
 gText_Rom_5CA1D8: @ 0x085CA1D8
-	.string "おぼえられない$"
+	.string "おぼえられない{EOS}"
 	.if (. - gText_Rom_5CA1D8) != 0x8
 	.error "gText_Rom_5CA1D8 must retain its original byte length"
 	.endif
@@ -111,7 +111,7 @@ gText_Rom_5CA1D8: @ 0x085CA1D8
 	@ src/strings.c:345 gText_Learned
 	.globl gText_Rom_5CA1E0
 gText_Rom_5CA1E0: @ 0x085CA1E0
-	.string "もうおぼえてる$"
+	.string "もうおぼえてる{EOS}"
 	.if (. - gText_Rom_5CA1E0) > 0x8
 	.error "gText_Rom_5CA1E0 may not grow beyond its original slot"
 	.endif
@@ -123,7 +123,7 @@ gText_Rom_5CA1E0: @ 0x085CA1E0
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA1E8
 gText_Rom_5CA1E8: @ 0x085CA1E8
-	.string "もっている$"
+	.string "もっている{EOS}"
 	.if (. - gText_Rom_5CA1E8) != 0x6
 	.error "gText_Rom_5CA1E8 must retain its original byte length"
 	.endif
@@ -134,7 +134,7 @@ gText_Rom_5CA1E8: @ 0x085CA1E8
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA1EE
 gText_Rom_5CA1EE: @ 0x085CA1EE
-	.string "もっていない$"
+	.string "もっていない{EOS}"
 	.if (. - gText_Rom_5CA1EE) != 0x7
 	.error "gText_Rom_5CA1EE must retain its original byte length"
 	.endif

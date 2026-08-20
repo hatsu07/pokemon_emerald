@@ -1,7 +1,7 @@
 	@ data/maps/Underwater_SeafloorCavern/scripts.inc:43 Underwater_SeafloorCavern_Text_SubExplorer1
 	.globl gText_Rom_2183F8
 gText_Rom_2183F8: @ 0x082183F8
-	.string "せんすいてい には\n「かいえん 1ごう」と かかれている\pアクアだんが カイナから\nうばって いった せんすいてい だ！\pアクアだんは\nここから うえに あがったみたいだ$"
+	.string "せんすいてい には\n「かいえん 1ごう」と かかれている\pアクアだんが カイナから\nうばって いった せんすいてい だ！\pアクアだんは\nここから うえに あがったみたいだ{EOS}"
 	.if (. - gText_Rom_2183F8) > 0x56
 	.error "gText_Rom_2183F8 may not grow beyond its original slot"
 	.endif

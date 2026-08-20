@@ -1,7 +1,7 @@
 	@ data/maps/JaggedPass/scripts.inc:263 JaggedPass_Text_AutumnPostBattle
 	.globl gText_Rom_2160DB
 gText_Rom_2160DB: @ 0x082160DB
-	.string "すこし のぼった ところにある\nおかしな でっぱりは なにかしら……?$"
+	.string "すこし のぼった ところにある\nおかしな でっぱりは なにかしら……?{EOS}"
 	.if (. - gText_Rom_2160DB) > 0x24
 	.error "gText_Rom_2160DB may not grow beyond its original slot"
 	.endif

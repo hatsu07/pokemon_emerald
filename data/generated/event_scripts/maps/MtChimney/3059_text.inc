@@ -1,7 +1,7 @@
 	@ data/maps/MtChimney/scripts.inc:636 MtChimney_Text_Grunt1PostBattle
 	.globl gText_Rom_215408
 gText_Rom_215408: @ 0x08215408
-	.string "あんた なんか うみに プカプカ\nうかんで いれば いいのよ!$"
+	.string "あんた なんか うみに プカプカ\nうかんで いれば いいのよ!{EOS}"
 	.if (. - gText_Rom_215408) > 0x20
 	.error "gText_Rom_215408 may not grow beyond its original slot"
 	.endif

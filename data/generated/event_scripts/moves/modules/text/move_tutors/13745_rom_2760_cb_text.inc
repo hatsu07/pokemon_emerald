@@ -1,7 +1,7 @@
 	@ data/text/move_tutors.inc:38 MoveTutor_Text_RolloutWhichMon
 	.globl gText_Rom_2760CB
 gText_Rom_2760CB: @ 0x082760CB
-	.string "えへへ いいよ!\nぼく そっくりの ポケモンだと いいな$"
+	.string "えへへ いいよ!\nぼく そっくりの ポケモンだと いいな{EOS}"
 	.if (. - gText_Rom_2760CB) > 0x1d
 	.error "gText_Rom_2760CB may not grow beyond its original slot"
 	.endif

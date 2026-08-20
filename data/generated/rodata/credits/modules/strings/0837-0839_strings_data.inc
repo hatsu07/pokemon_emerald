@@ -1,7 +1,7 @@
 	@ src/strings.c:990 gText_MixingRecords
 	.globl gText_Rom_566CA4
 gText_Rom_566CA4: @ 0x08566CA4
-	.string "レコードを まぜています$"
+	.string "レコードを まぜています{EOS}"
 	.if (. - gText_Rom_566CA4) > 0xd
 	.error "gText_Rom_566CA4 may not grow beyond its original slot"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_566CA4: @ 0x08566CA4
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_566CB1
 gText_Rom_566CB1: @ 0x08566CB1
-	.string "しゅうりょう しました\nおつかれさまでした$"
+	.string "しゅうりょう しました\nおつかれさまでした{EOS}"
 	.if (. - gText_Rom_566CB1) != 0x16
 	.error "gText_Rom_566CB1 must retain its original byte length"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:200 SootopolisCity_MysteryEventsHouse_1F_Text_ThatWasSuperlative
 	.globl gText_Rom_2100DA
 gText_Rom_2100DA: @ 0x082100DA
-	.string "みごと じゃったぞ!\pまるで わしの わかい ころを\nみている ようじゃわい!$"
+	.string "みごと じゃったぞ!\pまるで わしの わかい ころを\nみている ようじゃわい!{EOS}"
 	.if (. - gText_Rom_2100DA) > 0x28
 	.error "gText_Rom_2100DA may not grow beyond its original slot"
 	.endif
@@ -11,4 +11,4 @@ gText_Rom_2100DA: @ 0x082100DA
 	@ analyzed canonical ROM range 0x08210102-0x08210104
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_08210102: @ 0x08210102
-	.string "{STR_VAR_1}$"
+	.string "{STR_VAR_1}{EOS}"

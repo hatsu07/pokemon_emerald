@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CB606
 gText_Rom_5CB606: @ 0x085CB606
-	.string "てもちポケモンを くわしく しらべます$"
+	.string "てもちポケモンを くわしく しらべます{EOS}"
 	.if (. - gText_Rom_5CB606) != 0x14
 	.error "gText_Rom_5CB606 must retain its original byte length"
 	.endif
@@ -13,7 +13,7 @@ gText_Rom_5CB606: @ 0x085CB606
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CB61A
 gText_Rom_5CB61A: @ 0x085CB61A
-	.string "すべてのポケモンを くわしく しらべます$"
+	.string "すべてのポケモンを くわしく しらべます{EOS}"
 	.if (. - gText_Rom_5CB61A) != 0x15
 	.error "gText_Rom_5CB61A must retain its original byte length"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CB61A: @ 0x085CB61A
 	@ src/pokenav_menu_handler_gfx.c:279 pokenav_menu_handler_gfx_line_279
 	.globl gText_Rom_5CB62F
 gText_Rom_5CB62F: @ 0x085CB62F
-	.string "ポケナビの メニューに もどります$"
+	.string "ポケナビの メニューに もどります{EOS}"
 	.if (. - gText_Rom_5CB62F) > 0x12
 	.error "gText_Rom_5CB62F may not grow beyond its original slot"
 	.endif
@@ -34,7 +34,7 @@ gText_Rom_5CB62F: @ 0x085CB62F
 	@ src/pokenav_menu_handler_gfx.c:280 pokenav_menu_handler_gfx_line_280
 	.globl gText_Rom_5CB641
 gText_Rom_5CB641: @ 0x085CB641
-	.string "かっこいい ポケモンを みつけます$"
+	.string "かっこいい ポケモンを みつけます{EOS}"
 	.if (. - gText_Rom_5CB641) > 0x12
 	.error "gText_Rom_5CB641 may not grow beyond its original slot"
 	.endif
@@ -45,7 +45,7 @@ gText_Rom_5CB641: @ 0x085CB641
 	@ src/pokenav_menu_handler_gfx.c:281 pokenav_menu_handler_gfx_line_281
 	.globl gText_Rom_5CB653
 gText_Rom_5CB653: @ 0x085CB653
-	.string "うつくしい ポケモンを みつけます$"
+	.string "うつくしい ポケモンを みつけます{EOS}"
 	.if (. - gText_Rom_5CB653) > 0x12
 	.error "gText_Rom_5CB653 may not grow beyond its original slot"
 	.endif
@@ -56,7 +56,7 @@ gText_Rom_5CB653: @ 0x085CB653
 	@ src/pokenav_menu_handler_gfx.c:282 pokenav_menu_handler_gfx_line_282
 	.globl gText_Rom_5CB665
 gText_Rom_5CB665: @ 0x085CB665
-	.string "かわいい ポケモンを みつけます$"
+	.string "かわいい ポケモンを みつけます{EOS}"
 	.if (. - gText_Rom_5CB665) > 0x11
 	.error "gText_Rom_5CB665 may not grow beyond its original slot"
 	.endif
@@ -67,7 +67,7 @@ gText_Rom_5CB665: @ 0x085CB665
 	@ src/pokenav_menu_handler_gfx.c:283 pokenav_menu_handler_gfx_line_283
 	.globl gText_Rom_5CB676
 gText_Rom_5CB676: @ 0x085CB676
-	.string "かしこい ポケモンを みつけます$"
+	.string "かしこい ポケモンを みつけます{EOS}"
 	.if (. - gText_Rom_5CB676) > 0x11
 	.error "gText_Rom_5CB676 may not grow beyond its original slot"
 	.endif
@@ -78,7 +78,7 @@ gText_Rom_5CB676: @ 0x085CB676
 	@ src/pokenav_menu_handler_gfx.c:284 pokenav_menu_handler_gfx_line_284
 	.globl gText_Rom_5CB687
 gText_Rom_5CB687: @ 0x085CB687
-	.string "たくましい ポケモンを みつけます$"
+	.string "たくましい ポケモンを みつけます{EOS}"
 	.if (. - gText_Rom_5CB687) > 0x12
 	.error "gText_Rom_5CB687 may not grow beyond its original slot"
 	.endif
@@ -89,7 +89,7 @@ gText_Rom_5CB687: @ 0x085CB687
 	@ src/pokenav_menu_handler_gfx.c:285 pokenav_menu_handler_gfx_line_285
 	.globl gText_Rom_5CB699
 gText_Rom_5CB699: @ 0x085CB699
-	.string "コンディションの メニューに もどります$"
+	.string "コンディションの メニューに もどります{EOS}"
 	.if (. - gText_Rom_5CB699) > 0x15
 	.error "gText_Rom_5CB699 may not grow beyond its original slot"
 	.endif

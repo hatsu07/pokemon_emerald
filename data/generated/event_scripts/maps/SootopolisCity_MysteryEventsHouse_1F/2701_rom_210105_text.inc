@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:207 SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou
 	.globl gText_Rom_210105
 gText_Rom_210105: @ 0x08210105
-	.string "ざんねん じゃったのう\nじゃが よい しょうぶ じゃったぞ!\lつぎこそは かてると よいのう$"
+	.string "ざんねん じゃったのう\nじゃが よい しょうぶ じゃったぞ!\lつぎこそは かてると よいのう{EOS}"
 	.if (. - gText_Rom_210105) > 0x2f
 	.error "gText_Rom_210105 may not grow beyond its original slot"
 	.endif

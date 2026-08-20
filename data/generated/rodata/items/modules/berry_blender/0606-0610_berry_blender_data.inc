@@ -1,7 +1,7 @@
 	@ src/berry_blender.c:919 berry_blender_line_919 (+2 aliases)
 	.globl gText_Rom_30FC24
 gText_Rom_30FC24: @ 0x0830FC24
-	.string "すっぱい$"
+	.string "すっぱい{EOS}"
 	.if (. - gText_Rom_30FC24) > 0x5
 	.error "gText_Rom_30FC24 may not grow beyond its original slot"
 	.endif
@@ -33,7 +33,7 @@ gBerryBlenderData_0830FC33: @ 0x0830FC33
 	@ src/berry_blender.c:315 sText_BlenderMaxSpeedRecord
 	.globl gText_Rom_30FC38
 gText_Rom_30FC38: @ 0x0830FC38
-	.string "きのみブレンダー\nさいこうそくど ランキング！$"
+	.string "きのみブレンダー\nさいこうそくど ランキング！{EOS}"
 	.if (. - gText_Rom_30FC38) > 0x18
 	.error "gText_Rom_30FC38 may not grow beyond its original slot"
 	.endif
@@ -44,7 +44,7 @@ gText_Rom_30FC38: @ 0x0830FC38
 	@ src/berry_blender.c:316 sText_234Players
 	.globl gText_Rom_30FC50
 gText_Rom_30FC50: @ 0x0830FC50
-	.string "ふたり\nさんにん\nよにん$"
+	.string "ふたり\nさんにん\nよにん{EOS}"
 	.if (. - gText_Rom_30FC50) > 0xd
 	.error "gText_Rom_30FC50 may not grow beyond its original slot"
 	.endif

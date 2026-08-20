@@ -1,7 +1,7 @@
 	@ data/text/move_tutors.inc:225 MoveTutor_Text_ExplosionTaught
 	.globl gText_Rom_2767D7
 gText_Rom_2767D7: @ 0x082767D7
-	.string "いつも ポケモンに ばっか\nだいばくはつを おしえとって\lかんじんの ぼくは いつまでも\lばくはつ できん……\pでも ほんとは\nこのまちに いつまでも いたいから\lかも しれん……$"
+	.string "いつも ポケモンに ばっか\nだいばくはつを おしえとって\lかんじんの ぼくは いつまでも\lばくはつ できん……\pでも ほんとは\nこのまちに いつまでも いたいから\lかも しれん……{EOS}"
 	.if (. - gText_Rom_2767D7) > 0x5b
 	.error "gText_Rom_2767D7 may not grow beyond its original slot"
 	.endif

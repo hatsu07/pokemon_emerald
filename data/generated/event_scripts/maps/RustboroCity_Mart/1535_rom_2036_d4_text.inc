@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity_Mart/scripts.inc:73 RustboroCity_Mart_Text_GettingEscapeRopeJustInCase
 	.globl gText_Rom_2036D4
 gText_Rom_2036D4: @ 0x082036D4
-	.string "どうくつで まよった ときのため\nあなぬけのヒモを かっておこう っと！\pつかうと いっしゅんで\nいりぐちに もどれるもんね！$"
+	.string "どうくつで まよった ときのため\nあなぬけのヒモを かっておこう っと！\pつかうと いっしゅんで\nいりぐちに もどれるもんね！{EOS}"
 	.if (. - gText_Rom_2036D4) > 0x40
 	.error "gText_Rom_2036D4 may not grow beyond its original slot"
 	.endif

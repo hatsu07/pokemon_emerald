@@ -1,7 +1,7 @@
 	@ src/strings.c:89 gText_DexSearchAlphaSTU
 	.globl gText_Rom_5CBC50
 gText_Rom_5CBC50: @ 0x085CBC50
-	.string "まみむめも$"
+	.string "まみむめも{EOS}"
 	.if (. - gText_Rom_5CBC50) > 0x6
 	.error "gText_Rom_5CBC50 may not grow beyond its original slot"
 	.endif

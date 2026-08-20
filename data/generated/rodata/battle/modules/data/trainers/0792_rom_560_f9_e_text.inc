@@ -1,7 +1,7 @@
 	@ src/data/trainers.h:33929 trainers_line_33929
 	.globl gText_Rom_560F9E
 gText_Rom_560F9E: @ 0x08560F9E
-	.string "ヨシノリ$"
+	.string "ヨシノリ{EOS}"
 	.if (. - gText_Rom_560F9E) > 0x5
 	.error "gText_Rom_560F9E may not grow beyond its original slot"
 	.endif

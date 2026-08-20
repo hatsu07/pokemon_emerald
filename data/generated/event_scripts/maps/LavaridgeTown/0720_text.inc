@@ -1,7 +1,7 @@
 	@ data/maps/LavaridgeTown/scripts.inc:333 LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg
 	.globl gText_Rom_1E5BE6
 gText_Rom_1E5BE6: @ 0x081E5BE6
-	.string "タマゴと いっしょに\nたーっぷり あるいて おくれ!$"
+	.string "タマゴと いっしょに\nたーっぷり あるいて おくれ!{EOS}"
 	.if (. - gText_Rom_1E5BE6) > 0x1b
 	.error "gText_Rom_1E5BE6 may not grow beyond its original slot"
 	.endif

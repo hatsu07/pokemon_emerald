@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:1307 Route114_Text_ShaneDefeat (+1 aliases)
 	.globl gText_Rom_25CBCA
 gText_Rom_25CBCA: @ 0x0825CBCA
-	.string "つよすぎるーっ!$"
+	.string "つよすぎるーっ!{EOS}"
 	.if (. - gText_Rom_25CBCA) > 0x9
 	.error "gText_Rom_25CBCA may not grow beyond its original slot"
 	.endif

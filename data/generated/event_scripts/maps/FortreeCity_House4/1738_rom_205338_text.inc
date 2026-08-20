@@ -1,7 +1,7 @@
 	@ data/maps/FortreeCity_House4/scripts.inc:80 FortreeCity_House4_Text_Wingull (+1 aliases)
 	.globl gText_Rom_205338
 gText_Rom_205338: @ 0x08205338
-	.string "キャモメ『ぴひょー!$"
+	.string "キャモメ『ぴひょー!{EOS}"
 	.if (. - gText_Rom_205338) > 0xb
 	.error "gText_Rom_205338 may not grow beyond its original slot"
 	.endif

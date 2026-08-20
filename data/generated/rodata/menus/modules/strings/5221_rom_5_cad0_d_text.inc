@@ -1,7 +1,7 @@
 	@ src/strings.c:485 gText_LogOff
 	.globl gText_Rom_5CAD0D
 gText_Rom_5CAD0D: @ 0x085CAD0D
-	.string "スイッチをきる$"
+	.string "スイッチをきる{EOS}"
 	.if (. - gText_Rom_5CAD0D) > 0x8
 	.error "gText_Rom_5CAD0D may not grow beyond its original slot"
 	.endif

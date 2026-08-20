@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:245 LilycoveCity_LilycoveMuseum_2F_Text_KeepThisForYou
 	.globl gText_Rom_206729
 gText_Rom_206729: @ 0x08206729
-	.string "それでは また いらした ときに\nさしあげましょう$"
+	.string "それでは また いらした ときに\nさしあげましょう{EOS}"
 	.if (. - gText_Rom_206729) > 0x1a
 	.error "gText_Rom_206729 may not grow beyond its original slot"
 	.endif

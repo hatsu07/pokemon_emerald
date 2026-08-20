@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_endings.h:64 easy_chat_group_endings_line_64
 	.globl gText_Rom_5CD0FA
 gText_Rom_5CD0FA: @ 0x085CD0FA
-	.string "します$"
+	.string "します{EOS}"
 	.if (. - gText_Rom_5CD0FA) > 0x4
 	.error "gText_Rom_5CD0FA may not grow beyond its original slot"
 	.endif
@@ -19,7 +19,7 @@ gBerryTagScreenData_085CD0FE: @ 0x085CD0FE
 	.byte 0x00
 	.globl gText_Rom_5CD11F
 gText_Rom_5CD11F: @ 0x085CD11F
-	.string "します$"
+	.string "します{EOS}"
 	.if (. - gText_Rom_5CD11F) > 0x4
 	.error "gText_Rom_5CD11F may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2738 Route125_Text_SharonDefeat (+1 aliases)
 	.globl gText_Rom_260820
 gText_Rom_260820: @ 0x08260820
-	.string "まけた……$"
+	.string "まけた……{EOS}"
 	.if (. - gText_Rom_260820) > 0x6
 	.error "gText_Rom_260820 may not grow beyond its original slot"
 	.endif

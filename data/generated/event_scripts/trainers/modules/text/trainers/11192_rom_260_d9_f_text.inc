@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2870 Route126_Text_LeonardoPostBattle
 	.globl gText_Rom_260D9F
 gText_Rom_260D9F: @ 0x08260D9F
-	.string "なんでも れんしゅう すれば\nうまく なるんだ!\pキミも わかい うちから\nいろいろ やっておけよ!$"
+	.string "なんでも れんしゅう すれば\nうまく なるんだ!\pキミも わかい うちから\nいろいろ やっておけよ!{EOS}"
 	.if (. - gText_Rom_260D9F) > 0x33
 	.error "gText_Rom_260D9F may not grow beyond its original slot"
 	.endif

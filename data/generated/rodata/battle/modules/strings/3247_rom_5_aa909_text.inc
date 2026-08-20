@@ -1,7 +1,7 @@
 	@ src/strings.c:1126 gText_MoveRelearnerAndPoof
 	.globl gText_Rom_5AA909
 gText_Rom_5AA909: @ 0x085AA909
-	.string "1 {PAUSE 15}2の {PAUSE 15}…{PAUSE 15}…{PAUSE 15}… {PAUSE 15}{PLAY_SE SE_BALL_BOUNCE_1}ポカン!\p$"
+	.string "1 {PAUSE 15}2の {PAUSE 15}…{PAUSE 15}…{PAUSE 15}… {PAUSE 15}{PLAY_SE SE_BALL_BOUNCE_1}ポカン!\p{EOS}"
 	.if (. - gText_Rom_5AA909) > 0x22
 	.error "gText_Rom_5AA909 may not grow beyond its original slot"
 	.endif

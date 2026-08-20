@@ -1,7 +1,7 @@
 	@ src/data/script_menu.h:958 script_menu_line_958 (+1 aliases)
 	.globl gText_Rom_5FB902
 gText_Rom_5FB902: @ 0x085FB902
-	.string "2F$"
+	.string "2F{EOS}"
 	.if (. - gText_Rom_5FB902) > 0x3
 	.error "gText_Rom_5FB902 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5FB902: @ 0x085FB902
 	@ src/data/script_menu.h:957 script_menu_line_957 (+1 aliases)
 	.globl gText_Rom_5FB905
 gText_Rom_5FB905: @ 0x085FB905
-	.string "3F$"
+	.string "3F{EOS}"
 	.if (. - gText_Rom_5FB905) > 0x3
 	.error "gText_Rom_5FB905 may not grow beyond its original slot"
 	.endif

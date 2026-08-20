@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc:257 BattlePyramid_Text_OneItemRemaining2
 	.globl gText_Rom_22DC9E
 gText_Rom_22DC9E: @ 0x0822DC9E
-	.string "かった ごほうびに\nヒミツを おしえて あげちゃう!\pここには どうぐが\nあと 1つ おちているの$"
+	.string "かった ごほうびに\nヒミツを おしえて あげちゃう!\pここには どうぐが\nあと 1つ おちているの{EOS}"
 	.if (. - gText_Rom_22DC9E) > 0x32
 	.error "gText_Rom_22DC9E may not grow beyond its original slot"
 	.endif

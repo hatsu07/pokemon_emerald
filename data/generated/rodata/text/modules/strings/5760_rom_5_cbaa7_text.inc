@@ -1,7 +1,7 @@
 	@ src/strings.c:582 gText_AllTextBeingEditedWill
 	.globl gText_Rom_5CBAA7
 gText_Rom_5CBAA7: @ 0x085CBAA7
-	.string "へんしゅうちゅうの ことばを$"
+	.string "へんしゅうちゅうの ことばを{EOS}"
 	.if (. - gText_Rom_5CBAA7) > 0xf
 	.error "gText_Rom_5CBAA7 may not grow beyond its original slot"
 	.endif

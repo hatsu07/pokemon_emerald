@@ -1,7 +1,7 @@
 	@ src/strings.c:97 gText_DexSearchColorBrown
 	.globl gText_Rom_5C9191
 gText_Rom_5C9191: @ 0x085C9191
-	.string "ちゃいろ$"
+	.string "ちゃいろ{EOS}"
 	.if (. - gText_Rom_5C9191) > 0x5
 	.error "gText_Rom_5C9191 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5C9191: @ 0x085C9191
 	@ src/strings.c:98 gText_DexSearchColorPurple
 	.globl gText_Rom_5C9196
 gText_Rom_5C9196: @ 0x085C9196
-	.string "むらさき$"
+	.string "むらさき{EOS}"
 	.if (. - gText_Rom_5C9196) > 0x5
 	.error "gText_Rom_5C9196 may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5C9196: @ 0x085C9196
 	@ src/strings.c:99 gText_DexSearchColorGray
 	.globl gText_Rom_5C919B
 gText_Rom_5C919B: @ 0x085C919B
-	.string "はいいろ$"
+	.string "はいいろ{EOS}"
 	.if (. - gText_Rom_5C919B) > 0x5
 	.error "gText_Rom_5C919B may not grow beyond its original slot"
 	.endif
@@ -31,12 +31,12 @@ gText_Rom_5C919B: @ 0x085C919B
 	.space 0x5 - (. - gText_Rom_5C919B)
 	.endif
 	@ Decoded text from ROM range: offset=0x5C91A0, size=0x3
-	.string "しろ$"
+	.string "しろ{EOS}"
 
 	@ src/strings.c:101 gText_DexSearchColorPink
 	.globl gText_Rom_5C91A3
 gText_Rom_5C91A3: @ 0x085C91A3
-	.string "ピンク$"
+	.string "ピンク{EOS}"
 	.if (. - gText_Rom_5C91A3) > 0x4
 	.error "gText_Rom_5C91A3 may not grow beyond its original slot"
 	.endif
@@ -48,7 +48,7 @@ gText_Rom_5C91A3: @ 0x085C91A3
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C91A7
 gText_Rom_5C91A7: @ 0x085C91A7
-	.string "ホウエンちほう ばん ポケモンずかん$"
+	.string "ホウエンちほう ばん ポケモンずかん{EOS}"
 	.if (. - gText_Rom_5C91A7) != 0x13
 	.error "gText_Rom_5C91A7 must retain its original byte length"
 	.endif
@@ -61,7 +61,7 @@ gText_Rom_5C91A7: @ 0x085C91A7
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C91BA
 gText_Rom_5C91BA: @ 0x085C91BA
-	.string "ぜんこく ばん ポケモンずかん$"
+	.string "ぜんこく ばん ポケモンずかん{EOS}"
 	.if (. - gText_Rom_5C91BA) != 0x10
 	.error "gText_Rom_5C91BA must retain its original byte length"
 	.endif
@@ -74,7 +74,7 @@ gText_Rom_5C91BA: @ 0x085C91BA
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C91CA
 gText_Rom_5C91CA: @ 0x085C91CA
-	.string "ポケモンを\nばんごうじゅんで ひょうじ します$"
+	.string "ポケモンを\nばんごうじゅんで ひょうじ します{EOS}"
 	.if (. - gText_Rom_5C91CA) != 0x18
 	.error "gText_Rom_5C91CA must retain its original byte length"
 	.endif
@@ -85,7 +85,7 @@ gText_Rom_5C91CA: @ 0x085C91CA
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C91E2
 gText_Rom_5C91E2: @ 0x085C91E2
-	.string "みつけたポケモンの なまえを\nごじゅうおんじゅんで ひょうじ します$"
+	.string "みつけたポケモンの なまえを\nごじゅうおんじゅんで ひょうじ します{EOS}"
 	.if (. - gText_Rom_5C91E2) != 0x23
 	.error "gText_Rom_5C91E2 must retain its original byte length"
 	.endif
@@ -96,7 +96,7 @@ gText_Rom_5C91E2: @ 0x085C91E2
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C9205
 gText_Rom_5C9205: @ 0x085C9205
-	.string "つかまえたポケモンを\nおもい じゅんばんで ひょうじ します$"
+	.string "つかまえたポケモンを\nおもい じゅんばんで ひょうじ します{EOS}"
 	.if (. - gText_Rom_5C9205) != 0x1f
 	.error "gText_Rom_5C9205 must retain its original byte length"
 	.endif
@@ -107,7 +107,7 @@ gText_Rom_5C9205: @ 0x085C9205
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C9224
 gText_Rom_5C9224: @ 0x085C9224
-	.string "つかまえたポケモンを\nかるい じゅんばんで ひょうじ します$"
+	.string "つかまえたポケモンを\nかるい じゅんばんで ひょうじ します{EOS}"
 	.if (. - gText_Rom_5C9224) != 0x1f
 	.error "gText_Rom_5C9224 must retain its original byte length"
 	.endif
@@ -118,7 +118,7 @@ gText_Rom_5C9224: @ 0x085C9224
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C9243
 gText_Rom_5C9243: @ 0x085C9243
-	.string "つかまえたポケモンを\nしんちょうのたかい じゅんばんで ひょうじ します$"
+	.string "つかまえたポケモンを\nしんちょうのたかい じゅんばんで ひょうじ します{EOS}"
 	.if (. - gText_Rom_5C9243) != 0x25
 	.error "gText_Rom_5C9243 must retain its original byte length"
 	.endif
@@ -129,7 +129,7 @@ gText_Rom_5C9243: @ 0x085C9243
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5C9268
 gText_Rom_5C9268: @ 0x085C9268
-	.string "つかまえたポケモンを\nしんちょうのひくい じゅんばんで ひょうじ します$"
+	.string "つかまえたポケモンを\nしんちょうのひくい じゅんばんで ひょうじ します{EOS}"
 	.if (. - gText_Rom_5C9268) != 0x25
 	.error "gText_Rom_5C9268 must retain its original byte length"
 	.endif

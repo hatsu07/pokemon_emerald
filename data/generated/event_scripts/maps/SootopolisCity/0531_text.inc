@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity/scripts.inc:1435 SootopolisCity_Text_PrettyMonCameFromSky
 	.globl gText_Rom_1E2FBE
 gText_Rom_1E2FBE: @ 0x081E2FBE
-	.string "きれいな ポケモン\nおそらから おりて きた……$"
+	.string "きれいな ポケモン\nおそらから おりて きた……{EOS}"
 	.if (. - gText_Rom_1E2FBE) > 0x19
 	.error "gText_Rom_1E2FBE may not grow beyond its original slot"
 	.endif

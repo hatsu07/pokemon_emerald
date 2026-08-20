@@ -1,7 +1,7 @@
 	@ data/maps/SootopolisCity/scripts.inc:1441 SootopolisCity_Text_SootopolisDidntGetWrecked
 	.globl gText_Rom_1E2FEB
 gText_Rom_1E2FEB: @ 0x081E2FEB
-	.string "ルネシティ こわれないで すんだよー!$"
+	.string "ルネシティ こわれないで すんだよー!{EOS}"
 	.if (. - gText_Rom_1E2FEB) > 0x14
 	.error "gText_Rom_1E2FEB may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_House2/scripts.inc:24 LilycoveCity_House2_Text_SleepIsEssential
 	.globl gText_Rom_20A03E
 gText_Rom_20A03E: @ 0x0820A03E
-	.string "むにゃむにゃ……\pねる こは そだつ……\nねむって たいりょく かいふく……$"
+	.string "むにゃむにゃ……\pねる こは そだつ……\nねむって たいりょく かいふく……{EOS}"
 	.if (. - gText_Rom_20A03E) > 0x27
 	.error "gText_Rom_20A03E may not grow beyond its original slot"
 	.endif

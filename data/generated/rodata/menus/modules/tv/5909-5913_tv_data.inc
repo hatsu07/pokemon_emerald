@@ -1,7 +1,7 @@
 	@ asm/tv.s:14229 DoTVShow3CheersForPokeblocks
 	.globl gText_Rom_5CBFCA
 gText_Rom_5CBFCA: @ 0x085CBFCA
-	.string "まずい$"
+	.string "まずい{EOS}"
 	.if (. - gText_Rom_5CBFCA) > 0x4
 	.error "gText_Rom_5CBFCA may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5CBFCA: @ 0x085CBFCA
 	@ asm/tv.s:14237 DoTVShow3CheersForPokeblocks
 	.globl gText_Rom_5CBFCE
 gText_Rom_5CBFCE: @ 0x085CBFCE
-	.string "さいあく$"
+	.string "さいあく{EOS}"
 	.if (. - gText_Rom_5CBFCE) > 0x5
 	.error "gText_Rom_5CBFCE may not grow beyond its original slot"
 	.endif
@@ -23,7 +23,7 @@ gText_Rom_5CBFCE: @ 0x085CBFCE
 	@ asm/tv.s:14076 DoTVShow3CheersForPokeblocks
 	.globl gText_Rom_5CBFD3
 gText_Rom_5CBFD3: @ 0x085CBFD3
-	.string "から$"
+	.string "から{EOS}"
 	.if (. - gText_Rom_5CBFD3) > 0x3
 	.error "gText_Rom_5CBFD3 may not grow beyond its original slot"
 	.endif

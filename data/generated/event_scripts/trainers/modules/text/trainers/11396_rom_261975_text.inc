@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:3173 Route131_Text_ReliDefeat (+1 aliases)
 	.globl gText_Rom_261975
 gText_Rom_261975: @ 0x08261975
-	.string "アミ『きょうだいで ちからを あわせても\nかてなかったわ$"
+	.string "アミ『きょうだいで ちからを あわせても\nかてなかったわ{EOS}"
 	.if (. - gText_Rom_261975) > 0x1d
 	.error "gText_Rom_261975 may not grow beyond its original slot"
 	.endif

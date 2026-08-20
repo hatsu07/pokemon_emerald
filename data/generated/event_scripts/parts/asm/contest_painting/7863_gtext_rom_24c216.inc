@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24C216
 gText_Rom_24C216: @ 0x0824C216
-	.string "ハイパーランク$"
+	.string "ハイパーランク{EOS}"
 	.if (. - gText_Rom_24C216) != 0x8
 	.error "gText_Rom_24C216 must retain its original byte length"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2552 Route123_Text_AlbertoPostBattle
 	.globl gText_Rom_25FF9A
 gText_Rom_25FF9A: @ 0x0825FF9A
-	.string "しょうぶの あいだに ちらばった\nとりポケモンの ハネを あつめて\lぼうしを つくる つもりなんだ!$"
+	.string "しょうぶの あいだに ちらばった\nとりポケモンの ハネを あつめて\lぼうしを つくる つもりなんだ!{EOS}"
 	.if (. - gText_Rom_25FF9A) > 0x33
 	.error "gText_Rom_25FF9A may not grow beyond its original slot"
 	.endif

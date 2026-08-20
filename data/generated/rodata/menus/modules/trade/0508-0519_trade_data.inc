@@ -1,7 +1,7 @@
 	@ src/data/trade.h:49 sJPText_PressBButtonToQuit
 	.globl gText_Rom_300AEE
 gText_Rom_300AEE: @ 0x08300AEE
-	.string "Bボタン で もどります$"
+	.string "Bボタン で もどります{EOS}"
 	.if (. - gText_Rom_300AEE) > 0xd
 	.error "gText_Rom_300AEE may not grow beyond its original slot"
 	.endif
@@ -32,7 +32,7 @@ sPointerTable_08300B28:
 	.4byte sub_08079A5C @ +0xC
 	.globl gText_Rom_300B38
 gText_Rom_300B38: @ 0x08300B38
-	.string "{COLOR}{0x02}{HIGHLIGHT}{0x01}{SHADOW}{0x03}つうしんたいきちゅう！\nしばらくおまちください$"
+	.string "{COLOR}{0x02}{HIGHLIGHT}{0x01}{SHADOW}{0x03}つうしんたいきちゅう！\nしばらくおまちください{EOS}"
 	.if (. - gText_Rom_300B38) > 0x21
 	.error "gText_Rom_300B38 may not grow beyond its original slot"
 	.endif
@@ -43,7 +43,7 @@ gText_Rom_300B38: @ 0x08300B38
 	@ asm/trade.s:5988 sub_08079BD4
 	.globl gText_Rom_300B59
 gText_Rom_300B59: @ 0x08300B59
-	.string "{COLOR}{0x02}{HIGHLIGHT}{0x01}{SHADOW}{0x03}こうかんは\nキャンセル　されました！$"
+	.string "{COLOR}{0x02}{HIGHLIGHT}{0x01}{SHADOW}{0x03}こうかんは\nキャンセル　されました！{EOS}"
 	.if (. - gText_Rom_300B59) > 0x1c
 	.error "gText_Rom_300B59 may not grow beyond its original slot"
 	.endif
@@ -55,7 +55,7 @@ gText_Rom_300B59: @ 0x08300B59
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_300B75
 gText_Rom_300B75: @ 0x08300B75
-	.string "{COLOR}{0x02}{HIGHLIGHT}{0x01}{SHADOW}{0x03}そのポケモンを　こうかんすると\nせんとうできなくなっちゃうよ！$"
+	.string "{COLOR}{0x02}{HIGHLIGHT}{0x01}{SHADOW}{0x03}そのポケモンを　こうかんすると\nせんとうできなくなっちゃうよ！{EOS}"
 	.if (. - gText_Rom_300B75) != 0x29
 	.error "gText_Rom_300B75 must retain its original byte length"
 	.endif
@@ -65,7 +65,7 @@ gText_Rom_300B75: @ 0x08300B75
 	@ asm/trade.s:5988 sub_08079BD4
 	.globl gText_Rom_300B9E
 gText_Rom_300B9E: @ 0x08300B9E
-	.string "{COLOR}{0x02}{HIGHLIGHT}{0x01}{SHADOW}{0x03}ともだちの　しゅうりょうを\nまっています……$"
+	.string "{COLOR}{0x02}{HIGHLIGHT}{0x01}{SHADOW}{0x03}ともだちの　しゅうりょうを\nまっています……{EOS}"
 	.if (. - gText_Rom_300B9E) > 0x20
 	.error "gText_Rom_300B9E may not grow beyond its original slot"
 	.endif
@@ -76,7 +76,7 @@ gText_Rom_300B9E: @ 0x08300B9E
 	@ asm/trade.s:5988 sub_08079BD4
 	.globl gText_Rom_300BBE
 gText_Rom_300BBE: @ 0x08300BBE
-	.string "ともだちは　ポケモンの\nこうかんを　したいようです！$"
+	.string "ともだちは　ポケモンの\nこうかんを　したいようです！{EOS}"
 	.if (. - gText_Rom_300BBE) > 0x1b
 	.error "gText_Rom_300BBE may not grow beyond its original slot"
 	.endif

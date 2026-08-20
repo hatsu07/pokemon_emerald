@@ -1,7 +1,7 @@
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:336 BattleFrontier_BattleDomePreBattleRoom_Text_PlayersNextOpponentIsTrainer
 	.globl gText_Rom_22864D
 gText_Rom_22864D: @ 0x0822864D
-	.string "{PLAYER}さんの\nつぎの あいては このかた です$"
+	.string "{PLAYER}さんの\nつぎの あいては このかた です{EOS}"
 	.if (. - gText_Rom_22864D) > 0x17
 	.error "gText_Rom_22864D may not grow beyond its original slot"
 	.endif

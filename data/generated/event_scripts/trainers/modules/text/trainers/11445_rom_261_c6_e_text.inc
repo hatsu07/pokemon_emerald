@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:3242 Route132_Text_KiyoDefeat (+1 aliases)
 	.globl gText_Rom_261C6E
 gText_Rom_261C6E: @ 0x08261C6E
-	.string "まけた\nおまえさんには まけたわ$"
+	.string "まけた\nおまえさんには まけたわ{EOS}"
 	.if (. - gText_Rom_261C6E) > 0x11
 	.error "gText_Rom_261C6E may not grow beyond its original slot"
 	.endif

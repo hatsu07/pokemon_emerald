@@ -1,7 +1,7 @@
 	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:72 Route110_TrickHousePuzzle6_Text_SebastianPostBattle
 	.globl gText_Rom_23FE97
 gText_Rom_23FE97: @ 0x0823FE97
-	.string "キミは ぜんぜん へいき みたいだね\nそれとも ポーカーフェイス なの?$"
+	.string "キミは ぜんぜん へいき みたいだね\nそれとも ポーカーフェイス なの?{EOS}"
 	.if (. - gText_Rom_23FE97) > 0x25
 	.error "gText_Rom_23FE97 may not grow beyond its original slot"
 	.endif

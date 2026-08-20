@@ -1,7 +1,7 @@
 	@ data/maps/CaveOfOrigin_B1F/scripts.inc:77 CaveOfOrigin_B1F_Text_WellHeadToSkyPillar
 	.globl gText_Rom_219456
 gText_Rom_219456: @ 0x08219456
-	.string "ミクリ『そらのはしら……?\pそうか! そらのはしら だったか!\pよし {PLAYER}{KUN}\nこうしては いられない\lいますぐ そらのはしらへ いくぞ!$"
+	.string "ミクリ『そらのはしら……?\pそうか! そらのはしら だったか!\pよし {PLAYER}{KUN}\nこうしては いられない\lいますぐ そらのはしらへ いくぞ!{EOS}"
 	.if (. - gText_Rom_219456) > 0x46
 	.error "gText_Rom_219456 may not grow beyond its original slot"
 	.endif

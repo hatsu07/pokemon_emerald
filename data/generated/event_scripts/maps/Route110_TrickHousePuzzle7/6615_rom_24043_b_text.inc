@@ -1,7 +1,7 @@
 	@ data/maps/Route110_TrickHousePuzzle7/scripts.inc:371 Route110_TrickHousePuzzle7_Text_EverettPostBattle
 	.globl gText_Rom_24043B
 gText_Rom_24043B: @ 0x0824043B
-	.string "もし かったら いれかわって やれと\nおもって いたんだけどね$"
+	.string "もし かったら いれかわって やれと\nおもって いたんだけどね{EOS}"
 	.if (. - gText_Rom_24043B) > 0x20
 	.error "gText_Rom_24043B may not grow beyond its original slot"
 	.endif

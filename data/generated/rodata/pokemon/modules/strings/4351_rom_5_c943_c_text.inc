@@ -1,7 +1,7 @@
 	@ src/strings.c:155 gText_xVar1
 	.globl gText_Rom_5C943C
 gText_Rom_5C943C: @ 0x085C943C
-	.string "×{STR_VAR_1}$"
+	.string "×{STR_VAR_1}{EOS}"
 	.if (. - gText_Rom_5C943C) > 0x4
 	.error "gText_Rom_5C943C may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ src/strings.c:634 gText_CheckCompleted
 	.globl gText_Rom_5CBE20
 gText_Rom_5CBE20: @ 0x085CBE20
-	.string "けんさが しゅうりょうしました!\nもういちど レポートを かきこみます\nしばらくおまちください$"
+	.string "けんさが しゅうりょうしました!\nもういちど レポートを かきこみます\nしばらくおまちください{EOS}"
 	.if (. - gText_Rom_5CBE20) > 0x30
 	.error "gText_Rom_5CBE20 may not grow beyond its original slot"
 	.endif
@@ -31,7 +31,7 @@ gSaveFailedScreenData_085CBE90: @ 0x085CBE90
 	@ src/strings.c:638 gText_Ferry
 	.globl gText_Rom_5CBEBA
 gText_Rom_5CBEBA: @ 0x085CBEBA
-	.string "れんらくせん$"
+	.string "れんらくせん{EOS}"
 	.if (. - gText_Rom_5CBEBA) > 0x7
 	.error "gText_Rom_5CBEBA may not grow beyond its original slot"
 	.endif

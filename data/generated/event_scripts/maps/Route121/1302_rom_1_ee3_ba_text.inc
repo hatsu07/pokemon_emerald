@@ -1,7 +1,7 @@
 	@ data/maps/Route121/scripts.inc:185 Route121_Text_SafariZoneSign
 	.globl gText_Rom_1EE3BA
 gText_Rom_1EE3BA: @ 0x081EE3BA
-	.string "めずらしい ポケモン たくさん!\n「サファリゾーン」$"
+	.string "めずらしい ポケモン たくさん!\n「サファリゾーン」{EOS}"
 	.if (. - gText_Rom_1EE3BA) > 0x1b
 	.error "gText_Rom_1EE3BA may not grow beyond its original slot"
 	.endif

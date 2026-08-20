@@ -1,7 +1,7 @@
 	@ data/maps/PacifidlogTown/scripts.inc:39 PacifidlogTown_Text_TownSign
 	.globl gText_Rom_1E6499
 gText_Rom_1E6499: @ 0x081E6499
-	.string "ここは キナギ タウン\nあさひが みずべを てらす まち$"
+	.string "ここは キナギ タウン\nあさひが みずべを てらす まち{EOS}"
 	.if (. - gText_Rom_1E6499) > 0x1d
 	.error "gText_Rom_1E6499 may not grow beyond its original slot"
 	.endif

@@ -1,7 +1,7 @@
 	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:1007 LilycoveCity_ContestLobby_Text_MasterRankHereICome
 	.globl gText_Rom_207640
 gText_Rom_207640: @ 0x08207640
-	.string "いっ いよいよ\nマスターランクに でるぞ……\pおれの ポケモンちゃんが\nこのよで いちばん\lかわいいって ことを\lしょうめいする ときが きたんだ……\lうへへへへ$"
+	.string "いっ いよいよ\nマスターランクに でるぞ……\pおれの ポケモンちゃんが\nこのよで いちばん\lかわいいって ことを\lしょうめいする ときが きたんだ……\lうへへへへ{EOS}"
 	.if (. - gText_Rom_207640) > 0x52
 	.error "gText_Rom_207640 may not grow beyond its original slot"
 	.endif

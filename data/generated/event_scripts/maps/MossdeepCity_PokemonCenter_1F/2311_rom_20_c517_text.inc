@@ -1,7 +1,7 @@
 	@ data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc:29 MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves
 	.globl gText_Rom_20C517
 gText_Rom_20C517: @ 0x0820C517
-	.string "ポケモンの とくせいに よっては\nわざの いりょくが かわったり\lまったく きかなかったり するよ!$"
+	.string "ポケモンの とくせいに よっては\nわざの いりょくが かわったり\lまったく きかなかったり するよ!{EOS}"
 	.if (. - gText_Rom_20C517) > 0x33
 	.error "gText_Rom_20C517 may not grow beyond its original slot"
 	.endif

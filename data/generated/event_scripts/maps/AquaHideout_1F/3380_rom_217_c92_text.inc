@@ -1,7 +1,7 @@
 	@ data/maps/AquaHideout_1F/scripts.inc:77 AquaHideout_1F_Text_Grunt1PostBattle
 	.globl gText_Rom_217C92
 gText_Rom_217C92: @ 0x08217C92
-	.string "しょうぶには まけたが\nおれは やくめを はたしたのだ……$"
+	.string "しょうぶには まけたが\nおれは やくめを はたしたのだ……{EOS}"
 	.if (. - gText_Rom_217C92) > 0x1e
 	.error "gText_Rom_217C92 may not grow beyond its original slot"
 	.endif

@@ -2,7 +2,7 @@
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CB759
 gText_Rom_5CB759: @ 0x085CB759
-	.string "{B_BUTTON}やめる$"
+	.string "{B_BUTTON}やめる{EOS}"
 	.if (. - gText_Rom_5CB759) != 0x6
 	.error "gText_Rom_5CB759 must retain its original byte length"
 	.endif

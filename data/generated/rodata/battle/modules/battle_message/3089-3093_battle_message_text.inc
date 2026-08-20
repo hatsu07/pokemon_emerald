@@ -1,7 +1,7 @@
 	@ src/battle_message.c:286 battle_message_line_286
 	.globl gText_Rom_5A9E28
 gText_Rom_5A9E28: @ 0x085A9E28
-	.string "{B_ATK_NAME_WITH_PREFIX}は さわいでいる!$"
+	.string "{B_ATK_NAME_WITH_PREFIX}は さわいでいる!{EOS}"
 	.if (. - gText_Rom_5A9E28) > 0xc
 	.error "gText_Rom_5A9E28 may not grow beyond its original slot"
 	.endif
@@ -12,7 +12,7 @@ gText_Rom_5A9E28: @ 0x085A9E28
 	@ src/battle_message.c:287 battle_message_line_287
 	.globl gText_Rom_5A9E34
 gText_Rom_5A9E34: @ 0x085A9E34
-	.string "{B_ATK_NAME_WITH_PREFIX}は\nおとなしくなった$"
+	.string "{B_ATK_NAME_WITH_PREFIX}は\nおとなしくなった{EOS}"
 	.if (. - gText_Rom_5A9E34) > 0xd
 	.error "gText_Rom_5A9E34 may not grow beyond its original slot"
 	.endif
@@ -25,7 +25,7 @@ gText_Rom_5A9E34: @ 0x085A9E34
 	.byte 0x27, 0x15, 0x02, 0xAB, 0xFF
 	.globl gText_Rom_5A9E56
 gText_Rom_5A9E56: @ 0x085A9E56
-	.string "{B_ATK_NAME_WITH_PREFIX}は {B_BUFF1}つたくわえた!$"
+	.string "{B_ATK_NAME_WITH_PREFIX}は {B_BUFF1}つたくわえた!{EOS}"
 	.if (. - gText_Rom_5A9E56) > 0xe
 	.error "gText_Rom_5A9E56 may not grow beyond its original slot"
 	.endif

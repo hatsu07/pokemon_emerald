@@ -1,7 +1,7 @@
 	@ data/maps/RustboroCity/scripts.inc:1288 RustboroCity_Text_YouCanHave2On2Battle
 	.globl gText_Rom_1DFD5D
 gText_Rom_1DFD5D: @ 0x081DFD5D
-	.string "きみ しってる?\nふたりづれの トレーナーとじゃ なくても\l2たい2の しょうぶが できるんだ!\p2ひき いじょう ポケモンを もってるとき\nふたりの トレーナーと めが あえば\lしょうぶを どうじに いどんで くるよ!\pたった ひとりで ふたりを あいてに\nかてたら カッコいいよねー!$"
+	.string "きみ しってる?\nふたりづれの トレーナーとじゃ なくても\l2たい2の しょうぶが できるんだ!\p2ひき いじょう ポケモンを もってるとき\nふたりの トレーナーと めが あえば\lしょうぶを どうじに いどんで くるよ!\pたった ひとりで ふたりを あいてに\nかてたら カッコいいよねー!{EOS}"
 	.if (. - gText_Rom_1DFD5D) > 0x91
 	.error "gText_Rom_1DFD5D may not grow beyond its original slot"
 	.endif

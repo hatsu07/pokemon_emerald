@@ -1,7 +1,7 @@
 	@ src/data/easy_chat/easy_chat_group_endings.h:196 easy_chat_group_endings_line_196
 	.globl gText_Rom_5CD1E2
 gText_Rom_5CD1E2: @ 0x085CD1E2
-	.string "でした$"
+	.string "でした{EOS}"
 	.if (. - gText_Rom_5CD1E2) > 0x4
 	.error "gText_Rom_5CD1E2 may not grow beyond its original slot"
 	.endif
@@ -11,7 +11,7 @@ gText_Rom_5CD1E2: @ 0x085CD1E2
 
 	.globl gText_MysteryEventSaveSucceeded
 gText_MysteryEventSaveSucceeded: @ 0x085CD1E6
-	.string "セーブできました$"
+	.string "セーブできました{EOS}"
 	.if (. - gText_MysteryEventSaveSucceeded) != 0x9
 	.error "gText_MysteryEventSaveSucceeded must retain its original byte length"
 	.endif
@@ -27,7 +27,7 @@ gText_MysteryEventLoadFailed: @ 0x085CD1EF
 	@ src/data/easy_chat/easy_chat_group_endings.h:196 easy_chat_group_endings_line_196
 	.globl gText_Rom_5CD1F7
 gText_Rom_5CD1F7: @ 0x085CD1F7
-	.string "でした$"
+	.string "でした{EOS}"
 	.if (. - gText_Rom_5CD1F7) > 0x4
 	.error "gText_Rom_5CD1F7 may not grow beyond its original slot"
 	.endif

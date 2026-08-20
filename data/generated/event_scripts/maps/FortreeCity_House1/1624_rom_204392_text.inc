@@ -1,7 +1,7 @@
 	@ data/maps/FortreeCity_House1/scripts.inc:61 FortreeCity_House1_Text_Zigzagoon
 	.globl gText_Rom_204392
 gText_Rom_204392: @ 0x08204392
-	.string "ジグザグマ『グモモォ?$"
+	.string "ジグザグマ『グモモォ?{EOS}"
 	.if (. - gText_Rom_204392) > 0xc
 	.error "gText_Rom_204392 may not grow beyond its original slot"
 	.endif

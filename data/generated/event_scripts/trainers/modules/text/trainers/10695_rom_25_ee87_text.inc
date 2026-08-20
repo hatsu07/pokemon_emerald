@@ -1,7 +1,7 @@
 	@ data/text/trainers.inc:2132 Route120_Text_RobertRegister
 	.globl gText_Rom_25EE87
 gText_Rom_25EE87: @ 0x0825EE87
-	.string "キミって きたい できそうだなー!\nポケナビに とうろく しておきたい!$"
+	.string "キミって きたい できそうだなー!\nポケナビに とうろく しておきたい!{EOS}"
 	.if (. - gText_Rom_25EE87) > 0x25
 	.error "gText_Rom_25EE87 may not grow beyond its original slot"
 	.endif
