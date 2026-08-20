@@ -9482,7 +9482,7 @@ _0811F0B6:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811F0BC: .4byte gEasyChatData_08578D14
+_0811F0BC: .4byte gEasyChatGroups
 	thumb_func_end EasyChat_GetNumWordsInGroup
 
 	thumb_func_start sub_0811F0C0
@@ -9512,7 +9512,7 @@ sub_0811F0C0: @ 0x0811F0C0
 	.align 2, 0
 _0811F0EC: .4byte 0x0000FFFF
 _0811F0F0: .4byte 0x000001FF
-_0811F0F4: .4byte gEasyChatData_08578D14
+_0811F0F4: .4byte gEasyChatGroups
 _0811F0F8:
 	cmp r3, #0x15
 	bne _0811F11C
@@ -9595,7 +9595,7 @@ _0811F176:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811F17C: .4byte gEasyChatData_08578D14
+_0811F17C: .4byte gEasyChatGroups
 	thumb_func_end GetEasyChatWord
 
 	thumb_func_start CopyEasyChatWord
@@ -9865,7 +9865,7 @@ _0811F354:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811F368: .4byte gEasyChatData_08578D14
+_0811F368: .4byte gEasyChatGroups
 _0811F36C: .4byte 0x000001FF
 	thumb_func_end sub_0811F318
 
@@ -10277,7 +10277,7 @@ _0811F654:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811F65C: .4byte gEasyChatData_08578D14
+_0811F65C: .4byte gEasyChatGroups
 _0811F660: .4byte 0x0000FFFF
 	thumb_func_end sub_0811F5E8
 
@@ -10769,7 +10769,7 @@ _0811FA04:
 	adds r1, r0, r4
 	b _0811FA56
 	.align 2, 0
-_0811FA18: .4byte gEasyChatData_08579D04
+_0811FA18: .4byte gEasyChatWordListTable_JP
 _0811FA1C: .4byte 0x02039DEC
 _0811FA20: .4byte 0x0000FFFF
 _0811FA24:
@@ -10975,7 +10975,7 @@ _0811FB88:
 	blo _0811FB5E
 	b _0811FBF0
 	.align 2, 0
-_0811FB94: .4byte gEasyChatData_08578D14
+_0811FB94: .4byte gEasyChatGroups
 _0811FB98: .4byte 0x02039DEC
 _0811FB9C: .4byte 0x00002AE4
 _0811FBA0: .4byte 0x000001FF
@@ -11216,7 +11216,7 @@ _0811FD80:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811FD88: .4byte gEasyChatData_08578D14
+_0811FD88: .4byte gEasyChatGroups
 	thumb_func_end sub_0811FCB8
 
 	thumb_func_start GetFooterOptionXOffset

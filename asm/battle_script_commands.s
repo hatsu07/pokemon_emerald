@@ -19461,7 +19461,7 @@ _0804F844:
 	bl sub_0814FA04
 	b _0804F97C
 	.align 2, 0
-_0804F860: .4byte gBattleScriptCommandsData_085AC04C
+_0804F860: .4byte gStatusConditionStringsTable
 _0804F864: .4byte 0x02023EB8
 _0804F868: .4byte 0x02022AE0
 _0804F86C:
