@@ -9233,8 +9233,8 @@ _08144D20:
 _08144D38: .4byte 0x08144235
 	thumb_func_end sub_08144AF0
 
-	thumb_func_start sub_08144D3C
-sub_08144D3C: @ 0x08144D3C
+	thumb_func_start SpriteCB_ShroomishExit
+SpriteCB_ShroomishExit: @ 0x08144D3C
 	push {r4, lr}
 	adds r2, r0, #0
 	ldrh r0, [r2, #0x30]
@@ -9281,11 +9281,11 @@ _08144D8C:
 	bx r0
 	.align 2, 0
 _08144D94: .4byte 0x0203A854
-_08144D98: .4byte gRouletteData_085976CE
-	thumb_func_end sub_08144D3C
+_08144D98: .4byte sShroomishShadowAlphas
+	thumb_func_end SpriteCB_ShroomishExit
 
-	thumb_func_start sub_08144D9C
-sub_08144D9C: @ 0x08144D9C
+	thumb_func_start SpriteCB_ShroomishShakeScreen
+SpriteCB_ShroomishShakeScreen: @ 0x08144D9C
 	push {r4, lr}
 	sub sp, #0x18
 	adds r4, r0, #0
@@ -9349,7 +9349,7 @@ _08144DFA:
 	strb r0, [r3]
 	b _08144E4A
 	.align 2, 0
-_08144E18: .4byte gRouletteData_085976E2
+_08144E18: .4byte sShroomishScreenShakeOffsets
 _08144E1C: .4byte 0x02021B3A
 _08144E20:
 	ldr r1, _08144E54
@@ -9381,10 +9381,10 @@ _08144E4A:
 _08144E54: .4byte 0x02021B3A
 _08144E58: .4byte 0x020205AC
 _08144E5C: .4byte 0x0203A854
-	thumb_func_end sub_08144D9C
+	thumb_func_end SpriteCB_ShroomishShakeScreen
 
-	thumb_func_start sub_08144E60
-sub_08144E60: @ 0x08144E60
+	thumb_func_start SpriteCB_ShroomishFall
+SpriteCB_ShroomishFall: @ 0x08144E60
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldrh r0, [r5, #0x30]
@@ -9473,15 +9473,15 @@ _08144F0A:
 	.align 2, 0
 _08144F10: .4byte 0x3D1FBE77
 _08144F14: .4byte 0x0203A854
-_08144F18: .4byte gRouletteData_085976CE
+_08144F18: .4byte sShroomishShadowAlphas
 _08144F1C: .4byte 0x08144D3D
 _08144F20: .4byte 0x020205AC
 _08144F24: .4byte 0x0000FFFE
 _08144F28: .4byte 0x08144D9D
-	thumb_func_end sub_08144E60
+	thumb_func_end SpriteCB_ShroomishFall
 
-	thumb_func_start sub_08144F2C
-sub_08144F2C: @ 0x08144F2C
+	thumb_func_start SpriteCB_Shroomish
+SpriteCB_Shroomish: @ 0x08144F2C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r1, #0x3c
@@ -9544,7 +9544,7 @@ _08144F72:
 	.align 2, 0
 _08144FA4: .4byte sRouletteTables
 _08144FA8: .4byte 0x0203A854
-_08144FAC: .4byte gRouletteData_085976CE
+_08144FAC: .4byte sShroomishShadowAlphas
 _08144FB0:
 	ldr r5, _08144FF0
 	ldr r3, [r5]
@@ -9581,7 +9581,7 @@ _08144FD2:
 	b _0814500E
 	.align 2, 0
 _08144FF0: .4byte 0x0203A854
-_08144FF4: .4byte gRouletteData_085976CE
+_08144FF4: .4byte sShroomishShadowAlphas
 _08144FF8: .4byte sRouletteTables
 _08144FFC:
 	movs r0, #0x34
@@ -9632,7 +9632,7 @@ _08145050: .4byte sRouletteTables
 _08145054: .4byte 0x020205AC
 _08145058: .4byte 0x08144E61
 _0814505C: .4byte 0x08007141
-	thumb_func_end sub_08144F2C
+	thumb_func_end SpriteCB_Shroomish
 
 	thumb_func_start sub_08145060
 sub_08145060: @ 0x08145060
@@ -9804,8 +9804,8 @@ _0814519C: .4byte 0x0814507D
 _081451A0: .4byte 0x020205AC
 	thumb_func_end sub_081450FC
 
-	thumb_func_start sub_081451A4
-sub_081451A4: @ 0x081451A4
+	thumb_func_start SpriteCB_Taillow_FlyIn
+SpriteCB_Taillow_FlyIn: @ 0x081451A4
 	push {r4, r5, lr}
 	sub sp, #0x14
 	adds r4, r0, #0
@@ -9863,7 +9863,7 @@ sub_081451A4: @ 0x081451A4
 	bl m4aMPlayPanpotControl
 	b _081452D4
 	.align 2, 0
-_08145220: .4byte gRouletteData_085976FA
+_08145220: .4byte sTaillowHorizontalDirections
 _08145224: .4byte gRouletteData_085976FC
 _08145228: .4byte 0x0203A854
 _0814522C: .4byte 0x03007510
@@ -9955,10 +9955,10 @@ _081452D4:
 	.align 2, 0
 _081452DC: .4byte 0x0203A854
 _081452E0: .4byte 0x081450FD
-	thumb_func_end sub_081451A4
+	thumb_func_end SpriteCB_Taillow_FlyIn
 
-	thumb_func_start sub_081452E4
-sub_081452E4: @ 0x081452E4
+	thumb_func_start SpriteCB_TaillowShadow_FlyIn
+SpriteCB_TaillowShadow_FlyIn: @ 0x081452E4
 	push {r4, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -10006,7 +10006,7 @@ sub_081452E4: @ 0x081452E4
 	strb r0, [r2]
 	b _08145354
 	.align 2, 0
-_08145344: .4byte gRouletteData_085976FA
+_08145344: .4byte sTaillowHorizontalDirections
 _08145348: .4byte 0x0203A854
 _0814534C: .4byte 0x020205AC
 _08145350:
@@ -10019,7 +10019,7 @@ _08145354:
 	bx r0
 	.align 2, 0
 _0814535C: .4byte 0x08145061
-	thumb_func_end sub_081452E4
+	thumb_func_end SpriteCB_TaillowShadow_FlyIn
 
 	thumb_func_start sub_08145360
 sub_08145360: @ 0x08145360

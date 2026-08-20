@@ -4657,12 +4657,12 @@ _080C42A6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C42C4: .4byte 0x08546788
+_080C42C4: .4byte sTrainerCardFlipTasks
 _080C42C8: .4byte 0x03005B60
 	thumb_func_end sub_080C4294
 
-	thumb_func_start sub_080C42CC
-sub_080C42CC: @ 0x080C42CC
+	thumb_func_start Task_BeginCardFlip
+Task_BeginCardFlip: @ 0x080C42CC
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #1
@@ -4692,10 +4692,10 @@ _080C42F0:
 	bx r1
 	.align 2, 0
 _080C4308: .4byte 0x020388C8
-	thumb_func_end sub_080C42CC
+	thumb_func_end Task_BeginCardFlip
 
-	thumb_func_start sub_080C430C
-sub_080C430C: @ 0x080C430C
+	thumb_func_start Task_AnimateCardFlipDown
+Task_AnimateCardFlipDown: @ 0x080C430C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -4850,10 +4850,10 @@ _080C442C: .4byte 0x02039988
 _080C4430: .4byte 0x00007C94
 _080C4434: .4byte 0xFFFF0000
 _080C4438: .4byte 0x020388C8
-	thumb_func_end sub_080C430C
+	thumb_func_end Task_AnimateCardFlipDown
 
-	thumb_func_start sub_080C443C
-sub_080C443C: @ 0x080C443C
+	thumb_func_start Task_DrawFlippedCardSide
+Task_DrawFlippedCardSide: @ 0x080C443C
 	push {r4, r5, lr}
 	sub sp, #8
 	adds r5, r0, #0
@@ -4984,10 +4984,10 @@ _080C453C:
 	.align 2, 0
 _080C4548: .4byte 0x02039988
 _080C454C: .4byte 0x030031C4
-	thumb_func_end sub_080C443C
+	thumb_func_end Task_DrawFlippedCardSide
 
-	thumb_func_start sub_080C4550
-sub_080C4550: @ 0x080C4550
+	thumb_func_start Task_SetCardFlipped
+Task_SetCardFlipped: @ 0x080C4550
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r4, _080C45AC
@@ -5033,10 +5033,10 @@ _080C4582:
 _080C45AC: .4byte 0x02039988
 _080C45B0: .4byte 0x00000EE4
 _080C45B4: .4byte 0x00000584
-	thumb_func_end sub_080C4550
+	thumb_func_end Task_SetCardFlipped
 
-	thumb_func_start sub_080C45B8
-sub_080C45B8: @ 0x080C45B8
+	thumb_func_start Task_AnimateCardFlipUp
+Task_AnimateCardFlipUp: @ 0x080C45B8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -5189,10 +5189,10 @@ _080C46D4: .4byte 0x02039988
 _080C46D8: .4byte 0x00007C94
 _080C46DC: .4byte 0xFFFF0000
 _080C46E0: .4byte 0x020388C8
-	thumb_func_end sub_080C45B8
+	thumb_func_end Task_AnimateCardFlipUp
 
-	thumb_func_start sub_080C46E4
-sub_080C46E4: @ 0x080C46E4
+	thumb_func_start Task_EndCardFlip
+Task_EndCardFlip: @ 0x080C46E4
 	push {lr}
 	movs r0, #1
 	bl ShowBg
@@ -5210,7 +5210,7 @@ sub_080C46E4: @ 0x080C46E4
 	bx r1
 	.align 2, 0
 _080C470C: .4byte 0x080C4295
-	thumb_func_end sub_080C46E4
+	thumb_func_end Task_EndCardFlip
 
 	thumb_func_start ShowPlayerTrainerCard
 ShowPlayerTrainerCard: @ 0x080C4710
@@ -5555,7 +5555,7 @@ _080C49B0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C49B8: .4byte gTrainerCardData_08546780
+_080C49B8: .4byte sTrainerPicFacilityClass
 _080C49BC: .4byte 0x02039988
 _080C49C0: .4byte 0x00000516
 _080C49C4: .4byte sTrainerPicOffset

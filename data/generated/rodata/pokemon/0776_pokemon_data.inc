@@ -376,20 +376,21 @@ sTrainerPicOffset: @ 0x08546778
 	.byte 13, 4, 13, 4 @ Kanto: male/female {x,y}
 	.byte 1, 0, 1, 0   @ Hoenn: male/female {x,y}
 	@ pret/pokeemerald-jp direct xref for 0x08546780: trainer_card.s: sub_080C48F4
-	.globl gTrainerCardData_08546780
-gTrainerCardData_08546780: @ 0x08546780
-	@ analyzed canonical ROM range 0x08546780-0x08546787
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x8 bytes=8
-	.byte 0x4E, 0x4F, 0x50, 0x51, 0x3C, 0x3F, 0x00, 0x00
-	.globl gPokemonPointerTable_Rom_546788
-gPokemonPointerTable_Rom_546788: @ 0x08546788
-	.4byte sub_080C42CC
-	.4byte sub_080C430C
-	.4byte sub_080C443C
-	.4byte sub_080C4550
-	.4byte sub_080C45B8
-	.4byte sub_080C46E4
+	.globl sTrainerPicFacilityClass
+sTrainerPicFacilityClass: @ 0x08546780
+	@ Facility classes by card type and gender: FRLG, RS, Emerald.
+	.byte 0x4E, 0x4F @ FRLG: male, female
+	.byte 0x50, 0x51 @ RS: male, female
+	.byte 0x3C, 0x3F @ Emerald: male, female
+	.2byte 0x0000   @ alignment
+	.globl sTrainerCardFlipTasks
+sTrainerCardFlipTasks: @ 0x08546788
+	.4byte Task_BeginCardFlip
+	.4byte Task_AnimateCardFlipDown
+	.4byte Task_DrawFlippedCardSide
+	.4byte Task_SetCardFlipped
+	.4byte Task_AnimateCardFlipUp
+	.4byte Task_EndCardFlip
 	@ pret/pokeemerald-jp direct xref for 0x085467A0: trainer_card.s: sub_080C2BA4
 	.globl gTrainerCardData_085467A0
 gTrainerCardData_085467A0: @ 0x085467A0

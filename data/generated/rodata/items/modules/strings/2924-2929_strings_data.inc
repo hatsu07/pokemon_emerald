@@ -859,7 +859,7 @@ gRouletteData_08597670: @ 0x08597670
 	.4byte 0x0859766C @ +0x20
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
-	.4byte sub_08144F2C @ +0x2C
+	.4byte SpriteCB_Shroomish @ +0x2C
 	@ pret/pokeemerald-jp direct xref for 0x085976A0: roulette.s: sub_08144984
 	.globl gRouletteData_085976A0
 gRouletteData_085976A0: @ 0x085976A0
@@ -887,30 +887,22 @@ gRouletteData_085976C6: @ 0x085976C6
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x8 bytes=8
 	.byte 0x00, 0x01, 0x54, 0x00, 0xF0, 0xFF, 0x54, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x085976CE: roulette.s: sub_08144D3C, sub_08144E60, sub_08144F2C
-	.globl gRouletteData_085976CE
-gRouletteData_085976CE: @ 0x085976CE
-	@ analyzed canonical ROM range 0x085976CE-0x085976E1
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x14 entries=10
-	.2byte 0x0907, 0x0808, 0x0709, 0x060A, 0x050B, 0x040C, 0x030D, 0x020E
-	.2byte 0x010F, 0x0010
-	@ pret/pokeemerald-jp direct xref for 0x085976E2: roulette.s: sub_08144D9C
-	.globl gRouletteData_085976E2
-gRouletteData_085976E2: @ 0x085976E2
-	@ analyzed canonical ROM range 0x085976E2-0x085976F9
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x18 entries=12
-	.2byte 0xFFFF, 0x0000, 0x0001, 0x0000, 0xFFFE, 0x0000, 0x0002, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085976CE: roulette.s: SpriteCB_ShroomishExit, SpriteCB_ShroomishFall, SpriteCB_Shroomish
+	.globl sShroomishShadowAlphas
+sShroomishShadowAlphas: @ 0x085976CE
+	@ BLDCNT/BLDALPHA values used while the Shroomish shadow fades.
+	.2byte 0x0907, 0x0808, 0x0709, 0x060A, 0x050B
+	.2byte 0x040C, 0x030D, 0x020E, 0x010F, 0x0010
+	.globl sShroomishScreenShakeOffsets
+sShroomishScreenShakeOffsets: @ 0x085976E2
+	@ Three 4-step vertical screen-shake patterns for Shroomish.
+	.2byte 0xFFFF, 0x0000, 0x0001, 0x0000
+	.2byte 0xFFFE, 0x0000, 0x0002, 0x0000
 	.2byte 0xFFFD, 0x0000, 0x0003, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x085976FA: roulette.s: sub_081451A4, sub_081452E4
-	.globl gRouletteData_085976FA
-gRouletteData_085976FA: @ 0x085976FA
-	@ analyzed canonical ROM range 0x085976FA-0x085976FB
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x2 bytes=2
+	.globl sTaillowHorizontalDirections
+sTaillowHorizontalDirections: @ 0x085976FA
+	@ Shared horizontal direction multipliers: right approach=-1, left=+1.
 	.byte 0xFF, 0x01
-	@ pret/pokeemerald-jp direct xref for 0x085976FC: roulette.s: sub_081451A4
 	.globl gRouletteData_085976FC
 gRouletteData_085976FC: @ 0x085976FC
 	@ analyzed canonical ROM range 0x085976FC-0x08597FCB
