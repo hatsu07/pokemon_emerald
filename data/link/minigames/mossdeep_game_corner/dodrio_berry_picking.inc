@@ -464,150 +464,145 @@ sPointerTable_082CEAB4:
 	.byte 0x0C, 0xEB, 0x2C, 0x08, 0x14, 0xEB, 0x2C, 0x08, 0x1C, 0xEB, 0x2C, 0x08, 0x24, 0xEB, 0x2C, 0x08
 	.byte 0x2C, 0xEB, 0x2C, 0x08, 0x00, 0x00, 0x14, 0x00, 0xFE, 0xFF, 0x00, 0x00, 0x58, 0xEB, 0x2C, 0x08
 	@ pret/pokeemerald-jp direct xref for 0x082CEB64: dodrio_berry_picking.s: sub_080280D4
-	.globl gDodrioBerryPickingData_082CEB64
-gDodrioBerryPickingData_082CEB64: @ 0x082CEB64
-	@ analyzed canonical ROM range 0x082CEB64-0x082CEB6B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x8 bytes=8
-	.byte 0xBC, 0xB6, 0x2C, 0x08, 0x00, 0x00, 0x00, 0x00
+	.globl sDodrioBerryPickingNormalSpritePalette
+sDodrioBerryPickingNormalSpritePalette: @ 0x082CEB64
+	@ canonical role: SpritePalette for sDodrioNormal_Pal / PALTAG_DODRIO_NORMAL
+	.4byte 0x082CB6BC
+	.2byte 0
+	.2byte 0
 	@ pret/pokeemerald-jp direct xref for 0x082CEB6C: dodrio_berry_picking.s: sub_080280D4
-	.globl gDodrioBerryPickingData_082CEB6C
-gDodrioBerryPickingData_082CEB6C: @ 0x082CEB6C
-	@ analyzed canonical ROM range 0x082CEB6C-0x082CEB73
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x8 bytes=8
-	.byte 0xDC, 0xB6, 0x2C, 0x08, 0x01, 0x00, 0x00, 0x00
+	.globl sDodrioBerryPickingShinySpritePalette
+sDodrioBerryPickingShinySpritePalette: @ 0x082CEB6C
+	@ canonical role: SpritePalette for sDodrioShiny_Pal / PALTAG_DODRIO_SHINY
+	.4byte 0x082CB6DC
+	.2byte 1
+	.2byte 0
 	@ pret/pokeemerald-jp direct xref for 0x082CEB74: dodrio_berry_picking.s: sub_08028460
-	.globl gDodrioBerryPickingData_082CEB74
-gDodrioBerryPickingData_082CEB74: @ 0x082CEB74
-	@ analyzed canonical ROM range 0x082CEB74-0x082CEB7B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x8 bytes=8
-	.byte 0xFC, 0xB6, 0x2C, 0x08, 0x02, 0x00, 0x00, 0x00
+	.globl sDodrioBerryPickingStatusSpritePalette
+sDodrioBerryPickingStatusSpritePalette: @ 0x082CEB74
+	@ canonical role: SpritePalette for sStatus_Pal / PALTAG_STATUS
+	.4byte 0x082CB6FC
+	.2byte 2
+	.2byte 0
 	@ pret/pokeemerald-jp direct xref for 0x082CEB7C: dodrio_berry_picking.s: sub_08028460
-	.globl gDodrioBerryPickingData_082CEB7C
-gDodrioBerryPickingData_082CEB7C: @ 0x082CEB7C
-	@ analyzed canonical ROM range 0x082CEB7C-0x082CEB9F
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x24 bytes=36
-	.byte 0x01, 0x00, 0x02, 0x00, 0x74, 0xEA, 0x2C, 0x08, 0xE0, 0xEA, 0x2C, 0x08, 0x00, 0x00, 0x00, 0x00
-	.byte 0x10, 0xF3, 0x2B, 0x08, 0x0D, 0x84, 0x02, 0x08, 0xD4, 0x3E, 0x3F, 0x40, 0x41, 0x42, 0x43, 0x44
-	.byte 0x45, 0xFB, 0x00, 0x00
+	.globl sDodrioBerryPickingStatusSpriteTemplate
+sDodrioBerryPickingStatusSpriteTemplate: @ 0x082CEB7C
+	@ canonical role: status-bar SpriteTemplate, followed by canonical sUnusedSounds
+	rodata_sprite_template 0x0001, 0x0002, 0x082CEA74, 0x082CEAE0, 0, gDummySpriteAffineAnimTable, 0x0802840D
+	.globl sDodrioBerryPickingUnusedSounds
+sDodrioBerryPickingUnusedSounds: @ 0x082CEB94
+	@ canonical pret/pokeemerald: sUnusedSounds
+	.byte 0xD4, 0x3E, 0x3F, 0x40, 0x41, 0x42, 0x43, 0x44, 0x45, 0xFB
+	.balign 4, 0
 	@ pret/pokeemerald-jp direct xref for 0x082CEBA0: dodrio_berry_picking.s: sub_08028760
-	.globl gDodrioBerryPickingData_082CEBA0
-gDodrioBerryPickingData_082CEBA0: @ 0x082CEBA0
-	@ analyzed canonical ROM range 0x082CEBA0-0x082CEBA7
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x8 bytes=8
-	.byte 0x1C, 0xB7, 0x2C, 0x08, 0x03, 0x00, 0x00, 0x00
+	.globl sDodrioBerryPickingBerriesSpritePalette
+sDodrioBerryPickingBerriesSpritePalette: @ 0x082CEBA0
+	@ canonical role: SpritePalette for sBerries_Pal / PALTAG_BERRIES
+	.4byte 0x082CB71C
+	.2byte 3
+	.2byte 0
 	@ pret/pokeemerald-jp direct xref for 0x082CEBA8: dodrio_berry_picking.s: sub_080287B4
-	.globl gDodrioBerryPickingData_082CEBA8
-gDodrioBerryPickingData_082CEBA8: @ 0x082CEBA8
-	@ analyzed canonical ROM range 0x082CEBA8-0x082CEBAF
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x8 entries=4
-	.2byte 0x0058, 0x0080, 0x00A8, 0x00D0
+	.globl sDodrioBerryPickingBerryIconXCoords
+sDodrioBerryPickingBerryIconXCoords: @ 0x082CEBA8
+	@ canonical role: canonical sBerryIconXCoords
+	.2byte 88, 128, 168, 208
 	@ pret/pokeemerald-jp direct xref for 0x082CEBB0: dodrio_berry_picking.s: sub_080287B4
-	.globl gDodrioBerryPickingData_082CEBB0
-gDodrioBerryPickingData_082CEBB0: @ 0x082CEBB0
-	@ analyzed canonical ROM range 0x082CEBB0-0x082CEBC7
-sSpriteTemplate_082CEBB0: @ 0x082CEBB0
+	.globl sDodrioBerryPickingBerrySpriteTemplate
+sDodrioBerryPickingBerrySpriteTemplate: @ 0x082CEBB0
+	@ canonical role: falling berry SpriteTemplate
 	rodata_sprite_template 0x0002, 0x0003, 0x082CEA7C, 0x082CEB34, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x082CEBC8: dodrio_berry_picking.s: sub_080287B4
-	.globl gDodrioBerryPickingData_082CEBC8
-gDodrioBerryPickingData_082CEBC8: @ 0x082CEBC8
-	@ analyzed canonical ROM range 0x082CEBC8-0x082CEBDF
-sSpriteTemplate_082CEBC8: @ 0x082CEBC8
+	.globl sDodrioBerryPickingBerryIconSpriteTemplate
+sDodrioBerryPickingBerryIconSpriteTemplate: @ 0x082CEBC8
+	@ canonical role: results-screen berry icon SpriteTemplate
 	rodata_sprite_template 0x0002, 0x0003, 0x082CEA74, 0x082CEB34, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x082CEBE0: dodrio_berry_picking.s: sub_08028A20
-	.globl gDodrioBerryPickingData_082CEBE0
-gDodrioBerryPickingData_082CEBE0: @ 0x082CEBE0
-	@ analyzed canonical ROM range 0x082CEBE0-0x082CEBE1
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x2 bytes=2
-	.byte 0x1E, 0x14
+	.globl sDodrioBerryPickingCloudMoveDelays
+sDodrioBerryPickingCloudMoveDelays: @ 0x082CEBE0
+	@ canonical role: SpriteCB_Cloud moveDelays
+	.byte 30, 20
 	@ pret/pokeemerald-jp direct xref for 0x082CEBE2: dodrio_berry_picking.s: sub_08028A70, sub_08028B28
-	.globl gDodrioBerryPickingData_082CEBE2
-gDodrioBerryPickingData_082CEBE2: @ 0x082CEBE2
-	@ analyzed canonical ROM range 0x082CEBE2-0x082CEBEB
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0xA entries=5
-	.2byte 0x00E6, 0x0037, 0x001E, 0x004A, 0x0000
+	.globl sDodrioBerryPickingCloudStartCoords
+sDodrioBerryPickingCloudStartCoords: @ 0x082CEBE2
+	@ canonical role: canonical sCloudStartCoords
+	.2byte 230, 55
+	.2byte 30, 74
+	.balign 4, 0
 	@ pret/pokeemerald-jp direct xref for 0x082CEBEC: dodrio_berry_picking.s: sub_08028A70
-	.globl gDodrioBerryPickingData_082CEBEC
-gDodrioBerryPickingData_082CEBEC: @ 0x082CEBEC
-	@ analyzed canonical ROM range 0x082CEBEC-0x082CEBF3
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x8 bytes=8
-	.byte 0xF0, 0xB8, 0x2C, 0x08, 0x06, 0x00, 0x00, 0x00
+	.globl sDodrioBerryPickingCloudSpritePalette
+sDodrioBerryPickingCloudSpritePalette: @ 0x082CEBEC
+	@ canonical role: SpritePalette for sCloud_Pal / PALTAG_CLOUD
+	.4byte 0x082CB8F0
+	.2byte 6
+	.2byte 0
 	@ pret/pokeemerald-jp direct xref for 0x082CEBF4: dodrio_berry_picking.s: sub_08028A70
-	.globl gDodrioBerryPickingData_082CEBF4
-gDodrioBerryPickingData_082CEBF4: @ 0x082CEBF4
-	@ analyzed canonical ROM range 0x082CEBF4-0x082CEC0B
-sSpriteTemplate_082CEBF4: @ 0x082CEBF4
+	.globl sDodrioBerryPickingCloudSpriteTemplate
+sDodrioBerryPickingCloudSpriteTemplate: @ 0x082CEBF4
+	@ canonical role: cloud SpriteTemplate
 	rodata_sprite_template 0x0005, 0x0006, 0x082CEA84, 0x082CEB60, 0, gDummySpriteAffineAnimTable, sub_08028A20
 	@ pret/pokeemerald-jp direct xref for 0x082CEC0C: dodrio_berry_picking.s: sub_0802916C, sub_080293D4, sub_080295A4
-	.globl gDodrioBerryPickingData_082CEC0C
-gDodrioBerryPickingData_082CEC0C: @ 0x082CEC0C
-	@ analyzed canonical ROM range 0x082CEC0C-0x082CEC0E
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x3 bytes=3
-	.byte 0x01, 0x02, 0x03
+	.globl sDodrioBerryPickingTextColorTable
+sDodrioBerryPickingTextColorTable: @ 0x082CEC0C
+	@ canonical role: canonical sTextColorTable row COLORID_GRAY
+	.byte 1, 2, 3
 	@ pret/pokeemerald-jp direct xref for 0x082CEC0F: dodrio_berry_picking.s: sub_080295A4
-	.globl gDodrioBerryPickingData_082CEC0F
-gDodrioBerryPickingData_082CEC0F: @ 0x082CEC0F
-	@ analyzed canonical ROM range 0x082CEC0F-0x082CEC53
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x45 bytes=69
-	.byte 0x01, 0x04, 0x05, 0x01, 0x08, 0x09, 0x01, 0x06, 0x07, 0x0C, 0x06, 0x00, 0x00, 0x09, 0x0A, 0x00
-	.byte 0x00, 0x0F, 0x06, 0x00, 0x00, 0x0C, 0x06, 0x00, 0x00, 0x12, 0x0A, 0x00, 0x00, 0x06, 0x0A, 0x00
-	.byte 0x00, 0x09, 0x0A, 0x00, 0x00, 0x0F, 0x06, 0x00, 0x00, 0x15, 0x0A, 0x00, 0x00, 0x03, 0x06, 0x00
-	.byte 0x00, 0x0C, 0x06, 0x00, 0x00, 0x12, 0x0A, 0x00, 0x00, 0x17, 0x06, 0x00, 0x00, 0x01, 0x06, 0x00
-	.byte 0x00, 0x06, 0x0A, 0x00, 0x00
+	.globl sDodrioBerryPickingTextColorTableRed
+sDodrioBerryPickingTextColorTableRed: @ 0x082CEC0F
+	@ canonical role: interior alias: canonical sTextColorTable[COLORID_RED], then blue/green and name-window coordinates
+	.byte 1, 4, 5
+	.byte 1, 8, 9
+	.byte 1, 6, 7
+	.globl sDodrioBerryPickingNameWindowCoords1Player
+sDodrioBerryPickingNameWindowCoords1Player: @ 0x082CEC18
+	.byte 12, 6, 0, 0
+	.globl sDodrioBerryPickingNameWindowCoords2Players
+sDodrioBerryPickingNameWindowCoords2Players: @ 0x082CEC1C
+	.byte 9, 10, 0, 0, 15, 6, 0, 0
+	.globl sDodrioBerryPickingNameWindowCoords3Players
+sDodrioBerryPickingNameWindowCoords3Players: @ 0x082CEC24
+	.byte 12, 6, 0, 0, 18, 10, 0, 0, 6, 10, 0, 0
+	.globl sDodrioBerryPickingNameWindowCoords4Players
+sDodrioBerryPickingNameWindowCoords4Players: @ 0x082CEC30
+	.byte 9, 10, 0, 0, 15, 6, 0, 0, 21, 10, 0, 0, 3, 6, 0, 0
+	.globl sDodrioBerryPickingNameWindowCoords5Players
+sDodrioBerryPickingNameWindowCoords5Players: @ 0x082CEC40
+	.byte 12, 6, 0, 0, 18, 10, 0, 0, 23, 6, 0, 0, 1, 6, 0, 0
+	.byte 6, 10, 0, 0
 	@ pret/pokeemerald-jp direct xref for 0x082CEC54: dodrio_berry_picking.s: sub_0802916C
-	.globl gDodrioBerryPickingData_082CEC54
-gDodrioBerryPickingData_082CEC54: @ 0x082CEC54
-	@ confirmed contiguous ROM pointer table: 5 entries from this address
-sPointerTable_082CEC54:
-	@ analyzed canonical ROM range 0x082CEC54-0x082CEC67
-	@ pointer/nullable table
+	.globl sDodrioBerryPickingNameWindowCoords
+sDodrioBerryPickingNameWindowCoords: @ 0x082CEC54
+	@ canonical role: canonical sNameWindowCoords
 	.4byte 0x082CEC18 @ +0x0
 	.4byte 0x082CEC1C @ +0x4
 	.4byte 0x082CEC24 @ +0x8
 	.4byte 0x082CEC30 @ +0xC
 	.4byte 0x082CEC40 @ +0x10
-	.globl gDodrioBerryPickingPointerTable_Rom_2CEC68
-gDodrioBerryPickingPointerTable_Rom_2CEC68: @ 0x082CEC68
+	.globl sDodrioBerryPickingRankingTexts
+sDodrioBerryPickingRankingTexts: @ 0x082CEC68
+	@ canonical role: canonical sRankingTexts
 	.4byte gText_Rom_5CCD77
 	.4byte gText_Rom_5CCD7A
 	.4byte gText_Rom_5CCD7D
 	.4byte gText_Rom_5CCD80
 	.4byte gText_Rom_5CCD83
 	@ pret/pokeemerald-jp direct xref for 0x082CEC7C: dodrio_berry_picking.s: sub_080295A4
-	.globl gDodrioBerryPickingData_082CEC7C
-gDodrioBerryPickingData_082CEC7C: @ 0x082CEC7C
-	@ analyzed canonical ROM range 0x082CEC7C-0x082CEC83
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x8 entries=4
-	.2byte 0x005C, 0x0084, 0x00AC, 0x00DC
+	.globl sDodrioBerryPickingResultsXCoords
+sDodrioBerryPickingResultsXCoords: @ 0x082CEC7C
+	@ canonical role: canonical sResultsXCoords (JP values preserved)
+	.2byte 92, 132, 172, 220
 	@ pret/pokeemerald-jp direct xref for 0x082CEC84: dodrio_berry_picking.s: sub_080295A4
-	.globl gDodrioBerryPickingData_082CEC84
-gDodrioBerryPickingData_082CEC84: @ 0x082CEC84
-	@ analyzed canonical ROM range 0x082CEC84-0x082CEC8D
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0xA entries=5
-	.2byte 0x001E, 0x002D, 0x003C, 0x004B, 0x005A
+	.globl sDodrioBerryPickingResultsYCoords
+sDodrioBerryPickingResultsYCoords: @ 0x082CEC84
+	@ canonical role: canonical sResultsYCoords (JP values preserved)
+	.2byte 30, 45, 60, 75, 90
 	@ pret/pokeemerald-jp direct xref for 0x082CEC8E: dodrio_berry_picking.s: sub_080293D4
-	.globl gDodrioBerryPickingData_082CEC8E
-gDodrioBerryPickingData_082CEC8E: @ 0x082CEC8E
-	@ analyzed canonical ROM range 0x082CEC8E-0x082CEC97
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0xA entries=5
-	.2byte 0x000C, 0x001C, 0x002C, 0x003C, 0x004C
-	.globl gDodrioBerryPickingPointerTable_Rom_2CEC98
-gDodrioBerryPickingPointerTable_Rom_2CEC98: @ 0x082CEC98
-	@ Resolved pointer table; original ROM range 0x2CEC98..0x2CECE7.
-	@ ANALYSIS: ZERO_PADDING size=0x4
+	.globl sDodrioBerryPickingRankingYCoords
+sDodrioBerryPickingRankingYCoords: @ 0x082CEC8E
+	@ canonical role: canonical sRankingYCoords (JP values preserved)
+	.2byte 12, 28, 44, 60, 76
+	.globl sDodrioBerryPickingGfxFuncs
+sDodrioBerryPickingGfxFuncs: @ 0x082CEC98
+	@ canonical role: canonical sGfxFuncs
 	.space 0x4, 0
 	.4byte sub_08029064
 	.4byte TYPE_FIGHT

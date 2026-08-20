@@ -7679,8 +7679,8 @@ _08028114:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08028128: .4byte gDodrioBerryPickingData_082CEB64
-_0802812C: .4byte gDodrioBerryPickingData_082CEB6C
+_08028128: .4byte sDodrioBerryPickingNormalSpritePalette
+_0802812C: .4byte sDodrioBerryPickingShinySpritePalette
 _08028130: .4byte gDodrioBerryPickingData_082CD148
 	thumb_func_end sub_080280D4
 
@@ -8200,9 +8200,9 @@ _080284F0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08028500: .4byte gDodrioBerryPickingData_082CEB74
+_08028500: .4byte sDodrioBerryPickingStatusSpritePalette
 _08028504: .4byte gDodrioBerryPickingData_082CCF6C
-_08028508: .4byte gDodrioBerryPickingData_082CEB7C
+_08028508: .4byte sDodrioBerryPickingStatusSpriteTemplate
 _0802850C: .4byte 0x020229A8
 	thumb_func_end sub_08028460
 
@@ -8555,7 +8555,7 @@ _08028796:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080287AC: .4byte gDodrioBerryPickingData_082CEBA0
+_080287AC: .4byte sDodrioBerryPickingBerriesSpritePalette
 _080287B0: .4byte gDodrioBerryPickingData_082CB73C
 	thumb_func_end sub_08028760
 
@@ -8630,11 +8630,11 @@ _0802881C:
 	ldr r1, [r7, #0xc]
 	b _0802886C
 	.align 2, 0
-_08028844: .4byte gDodrioBerryPickingData_082CEBB0
-_08028848: .4byte gDodrioBerryPickingData_082CEBC8
+_08028844: .4byte sDodrioBerryPickingBerrySpriteTemplate
+_08028848: .4byte sDodrioBerryPickingBerryIconSpriteTemplate
 _0802884C: .4byte 0x0202296C
 _08028850: .4byte 0x02022998
-_08028854: .4byte gDodrioBerryPickingData_082CEBA8
+_08028854: .4byte sDodrioBerryPickingBerryIconXCoords
 _08028858:
 	lsls r0, r5, #1
 	add r0, r8
@@ -8920,7 +8920,7 @@ _08028A62:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08028A68: .4byte gDodrioBerryPickingData_082CEBE0
+_08028A68: .4byte sDodrioBerryPickingCloudMoveDelays
 _08028A6C: .4byte 0x02022964
 	thumb_func_end sub_08028A20
 
@@ -9003,10 +9003,10 @@ _08028AFE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08028B14: .4byte gDodrioBerryPickingData_082CEBEC
+_08028B14: .4byte sDodrioBerryPickingCloudSpritePalette
 _08028B18: .4byte gDodrioBerryPickingData_082CD000
-_08028B1C: .4byte gDodrioBerryPickingData_082CEBF4
-_08028B20: .4byte gDodrioBerryPickingData_082CEBE2
+_08028B1C: .4byte sDodrioBerryPickingCloudSpriteTemplate
+_08028B20: .4byte sDodrioBerryPickingCloudStartCoords
 _08028B24: .4byte 0x02022964
 	thumb_func_end sub_08028A70
 
@@ -9049,7 +9049,7 @@ _08028B38:
 	bx r0
 	.align 2, 0
 _08028B6C: .4byte 0x02022964
-_08028B70: .4byte gDodrioBerryPickingData_082CEBE2
+_08028B70: .4byte sDodrioBerryPickingCloudStartCoords
 _08028B74: .4byte 0x020205AC
 	thumb_func_end sub_08028B28
 
@@ -10014,14 +10014,14 @@ _080292E4:
 	adds r1, r1, r0
 	b _08029356
 	.align 2, 0
-_080292F0: .4byte gDodrioBerryPickingData_082CEC54
+_080292F0: .4byte sDodrioBerryPickingNameWindowCoords
 _080292F4: .4byte 0xFFFFFF00
 _080292F8: .4byte 0x00FFFFFF
 _080292FC: .4byte 0xFFFF00FF
 _08029300: .4byte 0x0000FFFF
 _08029304: .4byte 0x00003008
 _08029308: .4byte 0xFF00FFFF
-_0802930C: .4byte gDodrioBerryPickingData_082CEC0C
+_0802930C: .4byte sDodrioBerryPickingTextColorTable
 _08029310: .4byte 0x020229AC
 _08029314: .4byte 0x00003014
 _08029318:
@@ -10340,8 +10340,8 @@ _08029588: .4byte gDodrioBerryPickingData_082CECE8
 _0802958C: .4byte 0x00003009
 _08029590: .4byte 0x020229AC
 _08029594: .4byte 0x082CEC68
-_08029598: .4byte gDodrioBerryPickingData_082CEC8E
-_0802959C: .4byte gDodrioBerryPickingData_082CEC0C
+_08029598: .4byte sDodrioBerryPickingRankingYCoords
+_0802959C: .4byte sDodrioBerryPickingTextColorTable
 _080295A0: .4byte 0x085CCDE7
 	thumb_func_end sub_080293D4
 
@@ -10597,12 +10597,12 @@ _080297D4: .4byte 0x00003008
 _080297D8: .4byte 0x00003009
 _080297DC: .4byte 0x085CCD34
 _080297E0: .4byte 0x085CCD45
-_080297E4: .4byte gDodrioBerryPickingData_082CEC84
-_080297E8: .4byte gDodrioBerryPickingData_082CEC0C
+_080297E4: .4byte sDodrioBerryPickingResultsYCoords
+_080297E8: .4byte sDodrioBerryPickingTextColorTable
 _080297EC: .4byte 0x02021C7C
 _080297F0: .4byte 0x0000270F
-_080297F4: .4byte gDodrioBerryPickingData_082CEC7C
-_080297F8: .4byte gDodrioBerryPickingData_082CEC0F
+_080297F4: .4byte sDodrioBerryPickingResultsXCoords
+_080297F8: .4byte sDodrioBerryPickingTextColorTableRed
 _080297FC:
 	ldr r0, _0802986C
 	ldr r0, [r0]
@@ -10661,8 +10661,8 @@ _08029844:
 	.align 2, 0
 _0802986C: .4byte 0x020229AC
 _08029870: .4byte 0x00003009
-_08029874: .4byte gDodrioBerryPickingData_082CEC7C
-_08029878: .4byte gDodrioBerryPickingData_082CEC84
+_08029874: .4byte sDodrioBerryPickingResultsXCoords
+_08029878: .4byte sDodrioBerryPickingResultsYCoords
 _0802987C: .4byte 0x02021C7C
 _08029880: .4byte 0x00003008
 _08029884: .4byte 0x00003014
