@@ -177,9 +177,9 @@ gLz77Asset_08D7964C: @ 0x08D7964C
 gLz77Asset_08D798FC: @ 0x08D798FC
 	.incbin "build/assets/lz77_raw/08D798FC.bin.lz"
 	.byte 0x00
-	.globl gLz77Asset_08D79EB4
-gLz77Asset_08D79EB4: @ 0x08D79EB4
-	.incbin "build/assets/lz77_raw/08D79EB4.bin.lz"
+	.globl gBattleEnvironmentPalette_Underwater
+gBattleEnvironmentPalette_Underwater: @ 0x08D79EB4
+	.incbin "build/graphics/battle_environment/underwater/palette_rom_exact.gbapal.lz"
 	.byte 0x00, 0x00, 0x00
 	.globl gLz77Asset_08D79EFC
 gLz77Asset_08D79EFC: @ 0x08D79EFC

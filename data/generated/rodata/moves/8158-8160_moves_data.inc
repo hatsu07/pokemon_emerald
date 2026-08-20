@@ -42,9 +42,9 @@ sLz77Block_08D7BBB8:
 	@ ANALYSIS: 2 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
 	.incbin "build/assets/lz77_raw/08D7BBB8.bin.lz"
 	.byte 0x00
-	.globl gLz77Asset_08D7C1B0
-gLz77Asset_08D7C1B0: @ 0x08D7C1B0
-	.incbin "build/assets/lz77_raw/08D7C1B0.bin.lz"
+	.globl gBattleEnvironmentPalette_Cave
+gBattleEnvironmentPalette_Cave: @ 0x08D7C1B0
+	.incbin "build/graphics/battle_environment/cave/palette_rom_exact.gbapal.lz"
 	.byte 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08D7C1F8: battle_bg.s: DrawMainBattleBackground, LoadChosenBattleElement
 	.globl gBattleBgData_08D7C1F8

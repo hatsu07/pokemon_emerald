@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import argparse, hashlib, json, subprocess, sys, tempfile
+import argparse, hashlib, json, struct, subprocess, sys, tempfile
 from pathlib import Path
 from lz77_exact import FORMAT, repack_raw_with_plan
 
@@ -38,6 +38,35 @@ def gba_lz77_decompress(data: bytes) -> bytes:
                 src += 1
     return bytes(out)
 
+def png_plte_rgb555(path: Path, expected_entries: int) -> bytes:
+    data = path.read_bytes()
+    if data[:8] != b"\x89PNG\r\n\x1a\n":
+        raise ValueError(f"{path}: not PNG")
+    pos = 8
+    plte = None
+    while pos + 12 <= len(data):
+        n = struct.unpack(">I", data[pos:pos + 4])[0]
+        typ = data[pos + 4:pos + 8]
+        payload = data[pos + 8:pos + 8 + n]
+        pos += 12 + n
+        if typ == b"PLTE":
+            plte = payload
+        if typ == b"IEND":
+            break
+    if plte is None:
+        raise ValueError(f"{path}: PNG PLTE missing")
+    if len(plte) != expected_entries * 3:
+        raise ValueError(
+            f"{path}: expected {expected_entries} palette entries, "
+            f"got {len(plte) // 3}"
+        )
+    out = bytearray()
+    for i in range(0, len(plte), 3):
+        r, g, b = plte[i:i + 3]
+        value = (r >> 3) | ((g >> 3) << 5) | ((b >> 3) << 10)
+        out += struct.pack("<H", value)
+    return bytes(out)
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--manifest", required=True, type=Path)
@@ -69,6 +98,8 @@ def main():
                  str(source), str(rawp)],
                 check=True, cwd=a.repo, stdout=subprocess.DEVNULL)
             raw = rawp.read_bytes()
+    elif kind == "png_palette_rgb555":
+        raw = png_plte_rgb555(source, int(e["palette_entries"]))
     elif kind == "build_lz":
         raw = gba_lz77_decompress(source.read_bytes())
     elif kind == "build_raw":
