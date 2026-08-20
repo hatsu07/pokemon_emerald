@@ -350,20 +350,18 @@ gTrainerCardData_08546758: @ 0x08546758
 	.4byte 0x08545FEC
 	.4byte 0x085460AC
 	@ pret/pokeemerald-jp direct xref for 0x0854676C: trainer_card.s: PrintBattleFacilityStringOnCard, PrintBerryCrushStringOnCard, PrintContestStringOnCard, PrintIdOnCard, PrintMoneyOnCard (+10 more)
-	.globl gTrainerCardData_0854676C
-gTrainerCardData_0854676C:
-	.globl gTrainerCardData_0854676C
-	@ analyzed canonical ROM range 0x0854676C-0x0854676E
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x3 bytes=3
+	.globl sTrainerCardTextColors
+sTrainerCardTextColors:
+	@ Text colors used for normal Trainer Card text.
 	.byte 0x00, 0x02, 0x03
 	@ pret/pokeemerald-jp direct xref for 0x0854676F: trainer_card.s: PrintBattleFacilityStringOnCard, PrintBerryCrushStringOnCard, PrintContestStringOnCard, PrintIdOnCard, PrintPokeblockStringOnCard (+3 more)
-	.globl gTrainerCardData_0854676F
-gTrainerCardData_0854676F: @ 0x0854676F
-	@ analyzed canonical ROM range 0x0854676F-0x08546774
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x6 bytes=6
-	.byte 0x00, 0x04, 0x05, 0x00, 0x00, 0x00
+	.globl sTrainerCardStatColors
+sTrainerCardStatColors: @ 0x0854676F
+	@ Text colors used for highlighted Trainer Card statistics.
+	.byte 0x00, 0x04, 0x05
+	@ Unresolved adjacent bytes at 0x08546772-0x08546774; preserved literally.
+	@ ANALYSIS: U8_DATA size=0x3 bytes=3
+	.byte 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08546775: trainer_card.s: PrintBattleFacilityStringOnCard, PrintBerryCrushStringOnCard, PrintContestStringOnCard, PrintIdOnCard, PrintMoneyOnCard (+9 more)
 	.globl gTrainerCardData_08546775
 gTrainerCardData_08546775: @ 0x08546775
@@ -372,12 +370,11 @@ gTrainerCardData_08546775: @ 0x08546775
 	@ ANALYSIS: U8_DATA size=0x3 bytes=3
 	.byte 0x00, 0x01, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08546778: trainer_card.s: sub_080C48F4
-	.globl gTrainerCardData_08546778
-gTrainerCardData_08546778: @ 0x08546778
-	@ analyzed canonical ROM range 0x08546778-0x0854677F
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x8 entries=4
-	.2byte 0x040D, 0x040D, 0x0001, 0x0001
+	.globl sTrainerPicOffset
+sTrainerPicOffset: @ 0x08546778
+	@ Trainer portrait X/Y offsets by card origin and gender.
+	.byte 13, 4, 13, 4 @ Kanto: male/female {x,y}
+	.byte 1, 0, 1, 0   @ Hoenn: male/female {x,y}
 	@ pret/pokeemerald-jp direct xref for 0x08546780: trainer_card.s: sub_080C48F4
 	.globl gTrainerCardData_08546780
 gTrainerCardData_08546780: @ 0x08546780
@@ -412,7 +409,7 @@ gTrainerCardData_085467A2: @ 0x085467A2
 gTrainerCardData_085467A4: @ 0x085467A4
 	@ analyzed canonical ROM range 0x085467A4-0x085467AB
 	@ pointer/nullable table
-	.4byte gTrainerCardData_0854676C @ +0x0
+	.4byte sTrainerCardTextColors @ +0x0
 	@ ANALYSIS: U32_TABLE size=0x4 entries=1
 	.4byte 0x08546772 @ +0x4
 	@ pret/pokeemerald-jp direct xref for 0x085467AC: trainer_card.s: PrintMoneyOnCard

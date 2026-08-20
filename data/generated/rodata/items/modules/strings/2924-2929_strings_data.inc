@@ -183,37 +183,57 @@ gRouletteData_08595D0C: @ 0x08595D0C
 	.2byte 0x4C0B, 0x1A03, 0x0910, 0x0009, 0x0000, 0x0008, 0x0000, 0x0008
 	.2byte 0x2800, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08595E90: roulette.s: sub_08142198, sub_08142F3C, sub_08144330
-	.globl gRouletteData_08595E90
-gRouletteData_08595E90: @ 0x08595E90
-	@ analyzed canonical ROM range 0x08595E90-0x08595E93
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x4 bytes=4
-	.byte 0x00, 0x01, 0x06, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x08595E94: roulette.s: sub_08142198, sub_08144AF0
-	.globl gRouletteData_08595E94
-gRouletteData_08595E94: @ 0x08595E94
-	@ analyzed canonical ROM range 0x08595E94-0x08595EEF
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x5C entries=46
-	.2byte 0x0040, 0x0000, 0x0301, 0x000C, 0x1000, 0x0000, 0x0502, 0x0012
-	.2byte 0x0000, 0x0004, 0x0703, 0x0009, 0x0200, 0x0000, 0x0904, 0x000B
-	.2byte 0x0800, 0x0000, 0x0B05, 0x0011, 0x0000, 0x0002, 0x0D06, 0x0008
-	.2byte 0x0100, 0x0000, 0x0F07, 0x000E, 0x4000, 0x0000, 0x1108, 0x0010
-	.2byte 0x0000, 0x0001, 0x1309, 0x0007, 0x0080, 0x0000, 0x150A, 0x000D
-	.2byte 0x2000, 0x0000, 0x170B, 0x0013, 0x0000, 0x0008
+	.globl sRouletteSlots
+sRouletteSlots: @ 0x08595E90
+	@ struct RouletteSlot[12]: {id1, id2, gridSquare, padding, flag}.
+	@ slot 0
+	.byte 0, 1, 6, 0
+	.globl sRouletteSlotFlagsBase
+sRouletteSlotFlagsBase: @ 0x08595E94
+	@ Address of the first .flag field; later flags are 8 bytes apart.
+	.4byte 0x00000040
+	@ slot 1
+	.byte 1, 3, 12, 0
+	.4byte 0x00001000
+	@ slot 2
+	.byte 2, 5, 18, 0
+	.4byte 0x00040000
+	@ slot 3
+	.byte 3, 7, 9, 0
+	.4byte 0x00000200
+	@ slot 4
+	.byte 4, 9, 11, 0
+	.4byte 0x00000800
+	@ slot 5
+	.byte 5, 11, 17, 0
+	.4byte 0x00020000
+	@ slot 6
+	.byte 6, 13, 8, 0
+	.4byte 0x00000100
+	@ slot 7
+	.byte 7, 15, 14, 0
+	.4byte 0x00004000
+	@ slot 8
+	.byte 8, 17, 16, 0
+	.4byte 0x00010000
+	@ slot 9
+	.byte 9, 19, 7, 0
+	.4byte 0x00000080
+	@ slot 10
+	.byte 10, 21, 13, 0
+	.4byte 0x00002000
+	@ slot 11
+	.byte 11, 23, 19, 0
+	.4byte 0x00080000
 	@ pret/pokeemerald-jp direct xref for 0x08595EF0: roulette.s: Task_Roulette_0, sub_08140538, sub_08142AB8
-	.globl gRouletteData_08595EF0
-gRouletteData_08595EF0: @ 0x08595EF0
-	@ analyzed canonical ROM range 0x08595EF0-0x08595EF3
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x4 bytes=4
+	.globl sTableMinBets
+sTableMinBets: @ 0x08595EF0
+	@ Minimum-bet lookup: normal left/right tables, then special-rate left/right tables.
 	.byte 0x01, 0x03, 0x01, 0x06
 	@ pret/pokeemerald-jp direct xref for 0x08595EF4: roulette.s: sub_08140538, sub_08141254, sub_0814140C, sub_08143EE0, sub_08144330 (+6 more)
-	.globl gRouletteData_08595EF4
-gRouletteData_08595EF4: @ 0x08595EF4
-	@ analyzed canonical ROM range 0x08595EF4-0x08595F33
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x40 entries=32
+	.globl sRouletteTables
+sRouletteTables: @ 0x08595EF4
+	@ Two 32-byte RouletteTable records for the left and right tables.
 	.2byte 0x3C01, 0x011E, 0x0001, 0x0000, 0x002D, 0x001E, 0x0001, 0x0000
 	.2byte 0x004B, 0x001B, 0x0018, 0x0000, 0x000A, 0x0168, 0x0000, 0xBF00
 	.2byte 0x1E03, 0x010F, 0x0000, 0x0000, 0x004B, 0x003C, 0x0002, 0x0000

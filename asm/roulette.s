@@ -337,8 +337,8 @@ _08140572:
 _081405CC: .4byte gRouletteData_08595FCC
 _081405D0: .4byte 0x0203A854
 _081405D4: .4byte 0x02037280
-_081405D8: .4byte gRouletteData_08595EF4
-_081405DC: .4byte gRouletteData_08595EF0
+_081405D8: .4byte sRouletteTables
+_081405DC: .4byte sTableMinBets
 _081405E0: .4byte 0x020373B4
 _081405E4: .4byte 0x020377B4
 _081405E8:
@@ -1907,7 +1907,7 @@ _08141294:
 	b _08141402
 	.align 2, 0
 _081412A4: .4byte 0x03005A50
-_081412A8: .4byte gRouletteData_08595EF4
+_081412A8: .4byte sRouletteTables
 _081412AC:
 	movs r0, #3
 	ands r0, r1
@@ -1922,7 +1922,7 @@ _081412AC:
 	lsrs r0, r0, #1
 	b _08141402
 	.align 2, 0
-_081412C4: .4byte gRouletteData_08595EF4
+_081412C4: .4byte sRouletteTables
 _081412C8:
 	ldr r0, _081412D8
 	ldrb r1, [r3, #4]
@@ -1932,7 +1932,7 @@ _081412C8:
 	ldrb r0, [r1, #2]
 	b _08141402
 	.align 2, 0
-_081412D8: .4byte gRouletteData_08595EF4
+_081412D8: .4byte sRouletteTables
 _081412DC:
 	ldr r0, _08141308
 	ldrb r0, [r0, #2]
@@ -1958,7 +1958,7 @@ _081412F6:
 	b _08141402
 	.align 2, 0
 _08141308: .4byte 0x03005A50
-_0814130C: .4byte gRouletteData_08595EF4
+_0814130C: .4byte sRouletteTables
 _08141310:
 	movs r0, #1
 	ands r0, r1
@@ -1975,7 +1975,7 @@ _08141310:
 	lsrs r0, r0, #2
 	b _08141402
 	.align 2, 0
-_0814132C: .4byte gRouletteData_08595EF4
+_0814132C: .4byte sRouletteTables
 _08141330:
 	ldr r1, _08141344
 	ldr r0, [r5]
@@ -1987,7 +1987,7 @@ _08141330:
 	lsrs r0, r0, #1
 	b _08141402
 	.align 2, 0
-_08141344: .4byte gRouletteData_08595EF4
+_08141344: .4byte sRouletteTables
 _08141348:
 	ldr r0, _08141364
 	ldrb r0, [r0, #2]
@@ -2016,7 +2016,7 @@ _08141368:
 	lsrs r0, r0, #1
 	b _08141402
 	.align 2, 0
-_0814137C: .4byte gRouletteData_08595EF4
+_0814137C: .4byte sRouletteTables
 _08141380:
 	movs r0, #3
 	ands r0, r1
@@ -2034,7 +2034,7 @@ _08141380:
 	lsrs r0, r0, #1
 	b _08141402
 	.align 2, 0
-_081413A0: .4byte gRouletteData_08595EF4
+_081413A0: .4byte sRouletteTables
 _081413A4:
 	ldr r1, _081413B4
 	ldr r0, [r5]
@@ -2045,7 +2045,7 @@ _081413A4:
 	ldrb r0, [r0, #2]
 	b _08141402
 	.align 2, 0
-_081413B4: .4byte gRouletteData_08595EF4
+_081413B4: .4byte sRouletteTables
 _081413B8:
 	movs r0, #0x80
 	lsls r0, r0, #8
@@ -2063,7 +2063,7 @@ _081413B8:
 	ldrb r0, [r0, #2]
 	b _08141402
 	.align 2, 0
-_081413D8: .4byte gRouletteData_08595EF4
+_081413D8: .4byte sRouletteTables
 _081413DC:
 	ldr r1, _081413EC
 	ldr r0, [r5]
@@ -2074,7 +2074,7 @@ _081413DC:
 	ldrb r0, [r0, #1]
 	b _08141402
 	.align 2, 0
-_081413EC: .4byte gRouletteData_08595EF4
+_081413EC: .4byte sRouletteTables
 _081413F0:
 	ldr r1, _08141408
 	ldr r0, [r5]
@@ -2090,7 +2090,7 @@ _08141402:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08141408: .4byte gRouletteData_08595EF4
+_08141408: .4byte sRouletteTables
 	thumb_func_end sub_08141254
 
 	thumb_func_start sub_0814140C
@@ -2325,7 +2325,7 @@ _081415C0:
 	bx r0
 	.align 2, 0
 _081415F8: .4byte 0x0203A854
-_081415FC: .4byte gRouletteData_08595EF4
+_081415FC: .4byte sRouletteTables
 _08141600: .4byte 0x47800000
 _08141604: .4byte 0x40A00000
 _08141608: .4byte 0x3F000000
@@ -3894,8 +3894,8 @@ _08142290:
 	.align 2, 0
 _081422A0: .4byte 0x0203A854
 _081422A4: .4byte 0x03005B60
-_081422A8: .4byte gRouletteData_08595E90
-_081422AC: .4byte gRouletteData_08595E94
+_081422A8: .4byte sRouletteSlots
+_081422AC: .4byte sRouletteSlotFlagsBase
 	thumb_func_end sub_08142198
 
 	thumb_func_start sub_081422B0
@@ -4968,7 +4968,7 @@ _08142B28:
 	bx r0
 	.align 2, 0
 _08142B30: .4byte 0x03002360
-_08142B34: .4byte gRouletteData_08595EF0
+_08142B34: .4byte sTableMinBets
 _08142B38: .4byte 0x02037280
 _08142B3C: .4byte 0x02021C40
 _08142B40: .4byte 0x02021C7C
@@ -5043,7 +5043,7 @@ Task_Roulette_0: @ 0x08142B50
 	b _08142C7A
 	.align 2, 0
 _08142BD8: .4byte 0x03005B60
-_08142BDC: .4byte gRouletteData_08595EF0
+_08142BDC: .4byte sTableMinBets
 _08142BE0: .4byte 0x02037280
 _08142BE4: .4byte 0x02021C40
 _08142BE8: .4byte 0x08262D23
@@ -5531,7 +5531,7 @@ _08142F9E:
 	b _08142FF8
 	.align 2, 0
 _08142FD4: .4byte 0x0203A854
-_08142FD8: .4byte gRouletteData_08595E90
+_08142FD8: .4byte sRouletteSlots
 _08142FDC: .4byte 0x020205AC
 _08142FE0:
 	adds r0, r2, r4
@@ -7516,7 +7516,7 @@ _08143F08:
 	bl __divsf3
 	b _08143FC8
 	.align 2, 0
-_08143F60: .4byte gRouletteData_08595EF4
+_08143F60: .4byte sRouletteTables
 _08143F64: .4byte 0x0203A854
 _08143F68:
 	movs r1, #0x2e
@@ -7629,7 +7629,7 @@ _0814404C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0814405C: .4byte gRouletteData_08595EF4
+_0814405C: .4byte sRouletteTables
 _08144060: .4byte 0x0203A854
 _08144064: .4byte 0x40000000
 _08144068: .4byte 0x00000000
@@ -8056,7 +8056,7 @@ sub_08144330: @ 0x08144330
 	bl m4aSongNumStartOrChange
 	b _081444C4
 	.align 2, 0
-_081443BC: .4byte gRouletteData_08595E90
+_081443BC: .4byte sRouletteSlots
 _081443C0: .4byte 0x0203A854
 _081443C4: .4byte 0x08143D5D
 _081443C8:
@@ -8089,7 +8089,7 @@ _081443C8:
 	b _08144444
 	.align 2, 0
 _08144404: .4byte 0x00000000
-_08144408: .4byte gRouletteData_08595EF4
+_08144408: .4byte sRouletteTables
 _0814440C:
 	ldr r7, [r4]
 	adds r4, r7, #0
@@ -8139,8 +8139,8 @@ _08144444:
 	strh r0, [r6, #0x32]
 	b _081444B4
 	.align 2, 0
-_0814446C: .4byte gRouletteData_08595EF4
-_08144470: .4byte gRouletteData_08595E90
+_0814446C: .4byte sRouletteTables
+_08144470: .4byte sRouletteSlots
 _08144474: .4byte 0x0203A854
 _08144478:
 	strh r1, [r6, #0x2e]
@@ -8268,7 +8268,7 @@ _08144542:
 _08144570: .4byte 0x0203A854
 _08144574: .4byte 0x3F000000
 _08144578: .4byte 0x00000000
-_0814457C: .4byte gRouletteData_08595EF4
+_0814457C: .4byte sRouletteTables
 _08144580: .4byte 0x43800000
 _08144584: .4byte 0x08144331
 _08144588:
@@ -8753,7 +8753,7 @@ _0814496C: .4byte 0x0203A854
 _08144970: .4byte gRouletteData_085975AC
 _08144974: .4byte gRouletteData_08597670
 _08144978: .4byte 0x020205AC
-_0814497C: .4byte gRouletteData_08595EF4
+_0814497C: .4byte sRouletteTables
 _08144980: .4byte 0x0000FFFF
 	thumb_func_end sub_081447A8
 
@@ -8931,7 +8931,7 @@ _08144ADC: .4byte gRouletteData_085975C4
 _08144AE0: .4byte 0x0203A854
 _08144AE4: .4byte 0x020205AC
 _08144AE8: .4byte gRouletteData_085976A0
-_08144AEC: .4byte gRouletteData_08595EF4
+_08144AEC: .4byte sRouletteTables
 	thumb_func_end sub_08144984
 
 	thumb_func_start sub_08144AF0
@@ -9056,7 +9056,7 @@ _08144BB8:
 	.align 2, 0
 _08144BDC: .4byte 0x0203A854
 _08144BE0: .4byte 0x00000000
-_08144BE4: .4byte gRouletteData_08595EF4
+_08144BE4: .4byte sRouletteTables
 _08144BE8:
 	movs r0, #1
 	strh r0, [r7, #0x2e]
@@ -9210,7 +9210,7 @@ _08144CE4:
 	b _08144D20
 	.align 2, 0
 _08144D0C: .4byte gRouletteData_08595D0C
-_08144D10: .4byte gRouletteData_08595E94
+_08144D10: .4byte sRouletteSlotFlagsBase
 _08144D14:
 	ldr r0, [sp, #0x10]
 	mov r1, sb
@@ -9506,7 +9506,7 @@ sub_08144F2C: @ 0x08144F2C
 	b _08144F72
 	.align 2, 0
 _08144F58: .4byte 0x0203A854
-_08144F5C: .4byte gRouletteData_08595EF4
+_08144F5C: .4byte sRouletteTables
 _08144F60:
 	movs r0, #0x34
 	ldrsh r2, [r1, r0]
@@ -9542,7 +9542,7 @@ _08144F72:
 	strh r0, [r1, #0x34]
 	b _08145048
 	.align 2, 0
-_08144FA4: .4byte gRouletteData_08595EF4
+_08144FA4: .4byte sRouletteTables
 _08144FA8: .4byte 0x0203A854
 _08144FAC: .4byte gRouletteData_085976CE
 _08144FB0:
@@ -9582,7 +9582,7 @@ _08144FD2:
 	.align 2, 0
 _08144FF0: .4byte 0x0203A854
 _08144FF4: .4byte gRouletteData_085976CE
-_08144FF8: .4byte gRouletteData_08595EF4
+_08144FF8: .4byte sRouletteTables
 _08144FFC:
 	movs r0, #0x34
 	ldrsh r2, [r1, r0]
@@ -9628,7 +9628,7 @@ _08145048:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08145050: .4byte gRouletteData_08595EF4
+_08145050: .4byte sRouletteTables
 _08145054: .4byte 0x020205AC
 _08145058: .4byte 0x08144E61
 _0814505C: .4byte 0x08007141
@@ -10054,7 +10054,7 @@ sub_08145360: @ 0x08145360
 	b _081453D2
 	.align 2, 0
 _0814539C: .4byte 0x0203A854
-_081453A0: .4byte gRouletteData_08595EF4
+_081453A0: .4byte sRouletteTables
 _081453A4: .4byte 0x020205AC
 _081453A8:
 	movs r0, #0x34
@@ -10111,7 +10111,7 @@ _0814540A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08145410: .4byte gRouletteData_08595EF4
+_08145410: .4byte sRouletteTables
 _08145414: .4byte 0x020205AC
 _08145418: .4byte 0x081452E5
 _0814541C: .4byte 0x081451A5
