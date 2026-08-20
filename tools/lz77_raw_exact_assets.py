@@ -5,8 +5,29 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import re
 
 from lz77_exact import FORMAT, repack_raw_with_plan
+
+
+def read_text_u8(path: Path) -> bytes:
+    values: list[int] = []
+    for lineno, line in enumerate(path.read_text(encoding="ascii").splitlines(), 1):
+        line = line.split("#", 1)[0].strip()
+        if not line:
+            continue
+        for token in line.split():
+            if not re.fullmatch(r"[0-9A-Fa-f]{2}", token):
+                raise ValueError(f"{path}:{lineno}: invalid u8 token {token!r}")
+            values.append(int(token, 16))
+    return bytes(values)
+
+
+def read_raw_input(path: Path) -> bytes:
+    if path.suffix.lower() == ".u8":
+        return read_text_u8(path)
+    # Backward-compatible path for any external/manual use of this helper.
+    return path.read_bytes()
 
 
 def main() -> None:
@@ -24,7 +45,7 @@ def main() -> None:
         raise ValueError(f"unsupported manifest format: {obj.get('format')!r}")
 
     entry = obj["entries"][args.key]
-    raw = args.input.read_bytes()
+    raw = read_raw_input(args.input)
     expected_raw_sha = entry["decompressed_sha256"]
     actual_raw_sha = hashlib.sha256(raw).hexdigest()
 

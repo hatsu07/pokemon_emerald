@@ -1,0 +1,20 @@
+# Exact decompressed source for ROM LZ77 asset 0x082C79C4
+# Transitional raw source: semantic meaning/format is not implied by this file.
+# Keep this textual until the consumer proves a stronger PNG/palette/tilemap/data representation.
+# decompressed_size=200
+# decompressed_sha256=65a088c5ae6479f53e6bec5df18dfbec3245261822e8ccdad3f9b35a41cacc65
+# original_compressed_sha256=e5840713938b083b79d131096135ed2249526733dae1451da2e90339cda0b6d1
+
+4C 40 4C 40 4C 40 4C 40 4C 40 4C 40 4C 40 4C 40
+4C 40 4D 40 5C 40 5C 40 5C 40 5C 40 5C 40 5C 40
+5C 40 5C 40 5C 40 5D 40 4E 40 4E 40 4E 40 4E 40
+4E 40 4E 40 4E 40 4E 40 4E 40 4F 40 5E 40 5E 40
+5E 40 5E 40 5E 40 5E 40 5E 40 5E 40 5E 40 5F 40
+D9 60 D9 60 D9 60 D9 60 D9 60 D9 60 D9 60 D9 60
+D9 60 DA 60 E9 60 E9 60 E9 60 E9 60 E9 60 E9 60
+E9 60 E9 60 E9 60 EA 60 6E 44 6D 40 6D 40 6D 40
+6D 40 6D 40 6D 40 6D 40 6D 40 6D 40 7E 44 7D 40
+7D 40 7D 40 7D 40 7D 40 7D 40 7D 40 7D 40 7D 40
+DC 64 DB 60 DB 60 DB 60 DB 60 DB 60 DB 60 DB 60
+DB 60 DB 60 EC 64 EB 60 EB 60 EB 60 EB 60 EB 60
+EB 60 EB 60 EB 60 EB 60

@@ -131,6 +131,15 @@ foreach(SCAN_FILE IN LISTS GRAPHICS_SCAN_FILES)
         FOUND_GRAPHICS
         "${SCAN_CONTENT}")
     list(APPEND GRAPHICS_RELATIVE_OUTPUTS ${FOUND_GRAPHICS})
+
+    # Generic exact-LZ assets are also consumed through nested .incbin files.
+    # Register them in the same output/dependency list so data/data.o waits for
+    # their generated compressed streams during a completely fresh build.
+    string(REGEX MATCHALL
+        "build/assets/lz77_raw/[0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][.]bin[.]lz"
+        FOUND_LZ77_RAW
+        "${SCAN_CONTENT}")
+    list(APPEND GRAPHICS_RELATIVE_OUTPUTS ${FOUND_LZ77_RAW})
 endforeach()
 
 # Makefileでも明示的に依存していたフォント。
@@ -1805,12 +1814,12 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
 
     # BEGIN GENERIC RAW LZ77 EXACT PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES
-            "^build/assets/lz77_raw/([0-9A-Fa-f]{8})[.]bin[.]lz$")
+            "^build/assets/lz77_raw/([0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f])[.]bin[.]lz$")
         set(LZ77_RAW_KEY "${CMAKE_MATCH_1}")
         set(LZ77_RAW_MANIFEST
             "${CMAKE_SOURCE_DIR}/assets/lz77_raw/lz77_exact_plan.json")
         set(LZ77_RAW_INPUT
-            "${CMAKE_SOURCE_DIR}/assets/lz77_raw/${LZ77_RAW_KEY}.bin")
+            "${CMAKE_SOURCE_DIR}/assets/lz77_raw/u8/${LZ77_RAW_KEY}.u8")
         add_custom_command(
             OUTPUT "${OUTPUT_ABS}"
             COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
