@@ -621,7 +621,8 @@ gBattleDomeTourneyTreeLineSectionPointers: @ 0x085D678C
 	.globl gBattleDomeTourneyTreeLineSectionCounts
 gBattleDomeTourneyTreeLineSectionCounts: @ 0x085D688C
 	.rept 16
-	@ ANALYSIS: U8_DATA size=0x4 bytes=4
+	@ ANALYSIS: SEMANTIC_NUMERIC_BATTLE_DOME_TOURNEY_TREE_LINE_SECTION_COUNTS
+	@ 16 trainers x 4 rounds; each byte is the number of line sections for that trainer/round path.
 	.byte 4, 7, 11, 13
 	.endr
 	.if (. - gBattleDomeTourneyTreeLineSectionCounts) != (16 * 4)
