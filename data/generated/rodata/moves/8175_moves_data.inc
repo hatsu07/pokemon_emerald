@@ -26,14 +26,14 @@ sLz77Block_08DBA860:
 	.byte 0x00, 0x00
 	.globl gLz77Asset_08DBC238
 gLz77Asset_08DBC238: @ 0x08DBC238
-	.incbin "build/assets/lz77_raw/08DBC238.bin.lz"
+	.incbin "build/graphics/cable_car/cable_car_rom_exact.4bpp.lz"
 	.byte 0x00
 	.globl gLz77Asset_08DBC538
 gLz77Asset_08DBC538: @ 0x08DBC538
-	.incbin "build/assets/lz77_raw/08DBC538.bin.lz"
+	.incbin "build/graphics/cable_car/door_rom_exact.4bpp.lz"
 	.globl gLz77Asset_08DBC568
 gLz77Asset_08DBC568: @ 0x08DBC568
-	.incbin "build/assets/lz77_raw/08DBC568.bin.lz"
+	.incbin "build/graphics/cable_car/cable_rom_exact.4bpp.lz"
 	@ pret/pokeemerald-jp direct xref for 0x08DBC590: roulette.s: sub_08140694
 	.globl gRouletteMenu_Gfx
 gRouletteMenu_Gfx: @ 0x08DBC590

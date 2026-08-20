@@ -159,18 +159,18 @@ sLz77Block_082C6104:
 	.byte 0x00, 0x00
 	.globl gLz77Asset_082C6C14
 gLz77Asset_082C6C14: @ 0x082C6C14
-	.incbin "build/assets/lz77_raw/082C6C14.bin.lz"
+	.incbin "build/graphics/berry_crush/crusher_base_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00
 	.globl gLz77Asset_082C6F40
 gLz77Asset_082C6F40: @ 0x082C6F40
-	.incbin "build/assets/lz77_raw/082C6F40.bin.lz"
+	.incbin "build/graphics/berry_crush/impact_rom_exact.4bpp.lz"
 	.globl gLz77Asset_082C72BC
 gLz77Asset_082C72BC: @ 0x082C72BC
-	.incbin "build/assets/lz77_raw/082C72BC.bin.lz"
+	.incbin "build/graphics/berry_crush/sparkle_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00
 	.globl gLz77Asset_082C7408
 gLz77Asset_082C7408: @ 0x082C7408
-	.incbin "build/assets/lz77_raw/082C7408.bin.lz"
+	.incbin "build/graphics/berry_crush/timer_digits_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00
 	@ semantic exact asset for 0x082C74D4: sCrusherTop_Tilemap
 	.globl sCrusherTop_Tilemap

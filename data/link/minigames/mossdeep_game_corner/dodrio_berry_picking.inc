@@ -75,22 +75,22 @@ gLz77Asset_082C7FE4: @ 0x082C7FE4
 	.byte 0x00, 0x00, 0x00
 	.globl gLz77Asset_082C81B8
 gLz77Asset_082C81B8: @ 0x082C81B8
-	.incbin "build/assets/lz77_raw/082C81B8.bin.lz"
+	.incbin "build/graphics/dodrio_berry_picking/bg_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00
 	.globl gLz77Asset_082C8A48
 gLz77Asset_082C8A48: @ 0x082C8A48
-	.incbin "build/assets/lz77_raw/082C8A48.bin.lz"
+	.incbin "build/graphics/dodrio_berry_picking/tree_border_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00
 	.globl gLz77Asset_082C9814
 gLz77Asset_082C9814: @ 0x082C9814
-	.incbin "build/assets/lz77_raw/082C9814.bin.lz"
+	.incbin "build/graphics/dodrio_berry_picking/status_rom_exact.4bpp.lz"
 	.byte 0x00
 	.globl gLz77Asset_082C98A8
 gLz77Asset_082C98A8: @ 0x082C98A8
-	.incbin "build/assets/lz77_raw/082C98A8.bin.lz"
+	.incbin "build/graphics/dodrio_berry_picking/cloud_rom_exact.4bpp.lz"
 	.globl gLz77Asset_082C99F0
 gLz77Asset_082C99F0: @ 0x082C99F0
-	.incbin "build/assets/lz77_raw/082C99F0.bin.lz"
+	.incbin "build/graphics/dodrio_berry_picking/dodrio_rom_exact.4bpp.lz"
 	.globl gLz77Asset_082CAC0C
 gLz77Asset_082CAC0C: @ 0x082CAC0C
 	.incbin "build/assets/lz77_raw/082CAC0C.bin.lz"

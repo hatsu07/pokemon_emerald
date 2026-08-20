@@ -1,0 +1,22 @@
+{
+  "format": "pokemon-emerald-jp-lz77-semantic-exact-v2",
+  "entries": {
+    "build/graphics/berry_crush/crusher_base_rom_exact.4bpp.lz": {"key":"082C6C14","source_kind":"png","source":"graphics/berry_crush/crusher_base.png","width":64,"height":64},
+    "build/graphics/berry_crush/impact_rom_exact.4bpp.lz": {"key":"082C6F40","source_kind":"png","source":"graphics/berry_crush/impact.png","width":32,"height":224},
+    "build/graphics/berry_crush/sparkle_rom_exact.4bpp.lz": {"key":"082C72BC","source_kind":"png","source":"graphics/berry_crush/sparkle.png","width":16,"height":224},
+    "build/graphics/berry_crush/timer_digits_rom_exact.4bpp.lz": {"key":"082C7408","source_kind":"png","source":"graphics/berry_crush/timer_digits.png","width":8,"height":176},
+
+    "build/graphics/dodrio_berry_picking/bg_rom_exact.4bpp.lz": {"key":"082C81B8","source_kind":"build_lz","source":"build/graphics/dodrio_berry_picking/bg.4bpp.lz"},
+    "build/graphics/dodrio_berry_picking/tree_border_rom_exact.4bpp.lz": {"key":"082C8A48","source_kind":"build_lz","source":"build/graphics/dodrio_berry_picking/tree_border.4bpp.lz"},
+    "build/graphics/dodrio_berry_picking/status_rom_exact.4bpp.lz": {"key":"082C9814","source_kind":"build_lz","source":"build/graphics/dodrio_berry_picking/status.4bpp.lz"},
+    "build/graphics/dodrio_berry_picking/cloud_rom_exact.4bpp.lz": {"key":"082C98A8","source_kind":"build_lz","source":"build/graphics/dodrio_berry_picking/cloud.4bpp.lz"},
+    "build/graphics/dodrio_berry_picking/dodrio_rom_exact.4bpp.lz": {"key":"082C99F0","source_kind":"build_lz","source":"build/graphics/dodrio_berry_picking/dodrio.4bpp.lz"},
+
+    "build/graphics/pokenav/options/options_rom_exact.4bpp.lz": {"key":"085F1C90","source_kind":"png","source":"graphics/pokenav/options/options.png","width":128,"height":208},
+    "build/graphics/pokenav/blue_light_rom_exact.4bpp.lz": {"key":"085F268C","source_kind":"png","source":"graphics/pokenav/blue_light.png","width":32,"height":16},
+
+    "build/graphics/cable_car/cable_car_rom_exact.4bpp.lz": {"key":"08DBC238","source_kind":"build_raw","source":"build/graphics/object_events/pics/misc/cable_car.4bpp"},
+    "build/graphics/cable_car/door_rom_exact.4bpp.lz": {"key":"08DBC538","source_kind":"png","source":"graphics/cable_car/door.png","width":16,"height":8},
+    "build/graphics/cable_car/cable_rom_exact.4bpp.lz": {"key":"08DBC568","source_kind":"png","source":"graphics/cable_car/cable.png","width":16,"height":16}
+  }
+}
