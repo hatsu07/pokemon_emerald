@@ -251,9 +251,9 @@ gFieldWeatherEffectData_0852A9CC: @ 0x0852A9CC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x0852A9CC size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gWeatherFogHorizontalTiles
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852A9D0 parent=gFieldWeatherEffectData_0852A9CC offset=0x4 entropy=2.0 head=00080112
+	@ ANALYSIS: SPRITE_SHEET_META size=0x4 addr=0x0852A9D0 parent=gFieldWeatherEffectData_0852A9CC sheetSize=0x800 tag=0x1201
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852A9D0 size=0x4
-	.byte 0x00, 0x08, 0x01, 0x12
+	.2byte 0x800, 0x1201 @ size, tag
 	@ pret/pokeemerald-jp direct xref for 0x0852A9D4: field_weather_effect.s: LoadAshSpriteSheet
 	.globl gFieldWeatherEffectData_0852A9D4
 gFieldWeatherEffectData_0852A9D4: @ 0x0852A9D4
@@ -299,9 +299,9 @@ gFieldWeatherEffectData_0852AA78: @ 0x0852AA78
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x0852AA78 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gWeatherSandstormTiles
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AA7C parent=gFieldWeatherEffectData_0852AA78 offset=0x4 entropy=2.0 head=000A0412
+	@ ANALYSIS: SPRITE_SHEET_META size=0x4 addr=0x0852AA7C parent=gFieldWeatherEffectData_0852AA78 sheetSize=0xA00 tag=0x1204
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AA7C size=0x4
-	.byte 0x00, 0x0A, 0x04, 0x12
+	.2byte 0xA00, 0x1204 @ size, tag
 	@ pret/pokeemerald-jp direct xref for 0x0852AA80: field_weather_effect.s: CreateSwirlSandstormSprites
 	.globl gFieldWeatherEffectData_0852AA80
 gFieldWeatherEffectData_0852AA80: @ 0x0852AA80
@@ -323,9 +323,9 @@ gFieldWeatherEffectData_0852AA94: @ 0x0852AA94
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x0852AA94 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gWeatherBubbleTiles
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852AA98 parent=gFieldWeatherEffectData_0852AA94 offset=0x4 entropy=2.0 head=40000512
+	@ ANALYSIS: SPRITE_SHEET_META size=0x4 addr=0x0852AA98 parent=gFieldWeatherEffectData_0852AA94 sheetSize=0x40 tag=0x1205
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852AA98 size=0x4
-	.byte 0x40, 0x00, 0x05, 0x12
+	.2byte 0x40, 0x1205 @ size, tag
 	@ pret/pokeemerald-jp direct xref for 0x0852AA9C: field_weather_effect.s: CreateBubbleSprite
 	.globl gFieldWeatherEffectData_0852AA9C
 gFieldWeatherEffectData_0852AA9C: @ 0x0852AA9C

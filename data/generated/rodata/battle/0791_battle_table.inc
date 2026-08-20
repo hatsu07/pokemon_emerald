@@ -114,9 +114,9 @@ gContestData_08560B14: @ 0x08560B14
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x08560B14 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D8EAAC
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08560B18 parent=gContestData_08560B14 offset=0x4 entropy=2.0 head=0004E2AB
+	@ ANALYSIS: COMPRESSED_SPRITE_SHEET_META size=0x4 addr=0x08560B18 parent=gContestData_08560B14 sheetSize=0x400 tag=0xABE2
 	@ ANALYSIS: SOURCE_RANGE addr=0x08560B18 size=0x4
-	.byte 0x00, 0x04, 0xE2, 0xAB
+	.2byte 0x400, 0xABE2 @ size, tag
 	@ pret/pokeemerald-jp direct xref for 0x08560B1C: contest.s: CreateApplauseMeterSprite
 	.globl gContestData_08560B1C
 gContestData_08560B1C: @ 0x08560B1C
@@ -153,9 +153,9 @@ gContestData_08560B64: @ 0x08560B64
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x08560B64 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gContestJudgeGfx
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08560B68 parent=gContestData_08560B64 offset=0x4 entropy=2.0 head=0008214E
+	@ ANALYSIS: COMPRESSED_SPRITE_SHEET_META size=0x4 addr=0x08560B68 parent=gContestData_08560B64 sheetSize=0x800 tag=0x4E21
 	@ ANALYSIS: SOURCE_RANGE addr=0x08560B68 size=0x4
-	.byte 0x00, 0x08, 0x21, 0x4E
+	.2byte 0x800, 0x4E21 @ size, tag
 	@ pret/pokeemerald-jp direct xref for 0x08560B6C: contest.s: sub_080DA884
 	.globl gContestData_08560B6C
 gContestData_08560B6C: @ 0x08560B6C
@@ -163,9 +163,9 @@ gContestData_08560B6C: @ 0x08560B6C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x08560B6C size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gContestJudgeSymbolsGfx
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08560B70 parent=gContestData_08560B6C offset=0x4 entropy=2.0 head=8003E0AB
+	@ ANALYSIS: COMPRESSED_SPRITE_SHEET_META size=0x4 addr=0x08560B70 parent=gContestData_08560B6C sheetSize=0x380 tag=0xABE0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08560B70 size=0x4
-	.byte 0x80, 0x03, 0xE0, 0xAB
+	.2byte 0x380, 0xABE0 @ size, tag
 	@ pret/pokeemerald-jp direct xref for 0x08560B74: contest.s: sub_080DA884
 	.globl gContestData_08560B74
 gContestData_08560B74: @ 0x08560B74
@@ -173,9 +173,9 @@ gContestData_08560B74: @ 0x08560B74
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x08560B74 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gContestJudgeSymbolsPal
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08560B78 parent=gContestData_08560B74 offset=0x4 entropy=1.5 head=E0AB0000
+	@ ANALYSIS: COMPRESSED_SPRITE_PALETTE_META size=0x4 addr=0x08560B78 parent=gContestData_08560B74 tag=0xABE0 padding=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08560B78 size=0x4
-	.byte 0xE0, 0xAB, 0x00, 0x00
+	.2byte 0xABE0, 0 @ tag, padding
 	@ pret/pokeemerald-jp direct xref for 0x08560B7C: contest.s: sub_080DA884
 	.globl gContestData_08560B7C
 gContestData_08560B7C: @ 0x08560B7C
