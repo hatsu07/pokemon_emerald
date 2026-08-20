@@ -26,11 +26,15 @@ gAgbFlashData_0890ED54: @ 0x0890ED54
 	.4byte gIwram_JP_030075E4
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890ED84 size=0x4 source=v54_multi_pointer
 	.4byte gIwram_JP_030075E0
-	@ ANALYSIS: STRUCTURED_AGB_FLASH_DRIVER_DATA size=0x18 addr=0x0890ED88 parent=gAgbFlashData_0890ED54 encoding=TYPED_FIELDS pointerCells=0
-	@ ANALYSIS: SOURCE_RANGE addr=0x0890ED88 size=0x18
+	@ Flash write timeout table used by MX29L010 and DefaultFlash.
+	.globl mxMaxTime
+mxMaxTime:
 	.2byte 0x000A, 0xFFBD, 0x00C2, 0x000A, 0xFFBD, 0x00C2, 0x07D0, 0xFFBD @ +0x0
 	.2byte 0x00C2, 0x07D0, 0xFFBD, 0x00C2 @ +0x10
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890EDA0 size=0x4 source=v54_multi_pointer
+	@ struct FlashSetupInfo for Macronix MX29L010 (maker=0xC2, device=0x09).
+	.globl MX29L010
+MX29L010:
+	@ programFlashByte
 	.4byte ProgramFlashByte_MX
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890EDA4 size=0x4 source=v54_multi_pointer
 	.4byte ProgramFlashSector_MX
@@ -40,12 +44,20 @@ gAgbFlashData_0890ED54: @ 0x0890ED54
 	.4byte EraseFlashSector_MX
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890EDB0 size=0x4 source=v54_multi_pointer
 	.4byte WaitForFlashWrite_Common
-	@ ANALYSIS: STRUCTURED_AGB_FLASH_DRIVER_DATA size=0x1C addr=0x0890EDB4 parent=gAgbFlashData_0890ED54 encoding=TYPED_FIELDS pointerCells=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x0890EDB4 size=0x1C
-	.4byte 0x0890ED88 @ +0x0 ROM pointer; numeric preserved
-	.2byte 0x0000, 0x0002, 0x1000, 0x0000, 0x000C, 0x0020, 0x0000, 0x0000 @ +0x4
-	.2byte 0x0003, 0x0001, 0x09C2, 0x0000 @ +0x14
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890EDD0 size=0x4 source=v54_multi_pointer
+	.4byte mxMaxTime @ maxTime
+	.4byte 0x00020000 @ type.romSize = 131072
+	.4byte 0x00001000 @ type.sector.size = 4096
+	.2byte 0x000C @ type.sector.shift = 12
+	.2byte 0x0020 @ type.sector.count = 32
+	.2byte 0x0000 @ type.sector.top
+	.2byte 0x0000 @ alignment
+	.2byte 0x0003, 0x0001 @ type.wait[2]
+	.byte 0xC2, 0x09 @ type.ids.makerId/deviceId
+	.2byte 0x0000 @ alignment
+	@ struct FlashSetupInfo fallback entry; maker/device ID is zero terminator.
+	.globl DefaultFlash
+DefaultFlash:
+	@ programFlashByte
 	.4byte ProgramFlashByte_MX
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890EDD4 size=0x4 source=v54_multi_pointer
 	.4byte ProgramFlashSector_MX
@@ -55,11 +67,16 @@ gAgbFlashData_0890ED54: @ 0x0890ED54
 	.4byte EraseFlashSector_MX
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890EDE0 size=0x4 source=v54_multi_pointer
 	.4byte WaitForFlashWrite_Common
-	@ ANALYSIS: STRUCTURED_AGB_FLASH_DRIVER_DATA size=0x1C addr=0x0890EDE4 parent=gAgbFlashData_0890ED54 encoding=TYPED_FIELDS pointerCells=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x0890EDE4 size=0x1C
-	.4byte 0x0890ED88 @ +0x0 ROM pointer; numeric preserved
-	.2byte 0x0000, 0x0002, 0x1000, 0x0000, 0x000C, 0x0020, 0x0000, 0x0000 @ +0x4
-	.2byte 0x0003, 0x0001, 0x0000, 0x0000 @ +0x14
+	.4byte mxMaxTime @ maxTime
+	.4byte 0x00020000 @ type.romSize = 131072
+	.4byte 0x00001000 @ type.sector.size = 4096
+	.2byte 0x000C @ type.sector.shift = 12
+	.2byte 0x0020 @ type.sector.count = 32
+	.2byte 0x0000 @ type.sector.top
+	.2byte 0x0000 @ alignment
+	.2byte 0x0003, 0x0001 @ type.wait[2]
+	.byte 0x00, 0x00 @ terminator maker/device ID
+	.2byte 0x0000 @ alignment
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890EE00 size=0x4 source=v54_multi_pointer
 	.4byte gIwram_JP_030075F0
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890EE04 size=0x4 source=v54_multi_pointer
@@ -78,11 +95,15 @@ gAgbFlashData_0890ED54: @ 0x0890ED54
 	.4byte gIwram_JP_030075F0
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890EE20 size=0x4 source=v54_multi_pointer
 	.4byte gIwram_JP_030075F8
-	@ ANALYSIS: STRUCTURED_AGB_FLASH_DRIVER_DATA size=0x18 addr=0x0890EE24 parent=gAgbFlashData_0890ED54 encoding=TYPED_FIELDS pointerCells=0
-	@ ANALYSIS: SOURCE_RANGE addr=0x0890EE24 size=0x18
+	@ Flash write timeout table used by LE26FV10N1TS.
+	.globl leMaxTime
+leMaxTime:
 	.2byte 0x000A, 0xFFBD, 0x00C2, 0x000A, 0xFFBD, 0x00C2, 0x07D0, 0xFFBD @ +0x0
 	.2byte 0x00C2, 0x07D0, 0xFFBD, 0x00C2 @ +0x10
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890EE3C size=0x4 source=v54_multi_pointer
+	@ struct FlashSetupInfo for Sanyo LE26FV10N1TS (maker=0x62, device=0x13).
+	.globl LE26FV10N1TS
+LE26FV10N1TS:
+	@ programFlashByte
 	.4byte ProgramFlashByte_MX
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890EE40 size=0x4 source=v54_multi_pointer
 	.4byte ProgramFlashSector_MX
@@ -92,12 +113,20 @@ gAgbFlashData_0890ED54: @ 0x0890ED54
 	.4byte EraseFlashSector_MX
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890EE4C size=0x4 source=v54_multi_pointer
 	.4byte WaitForFlashWrite_Common
-	@ ANALYSIS: STRUCTURED_AGB_FLASH_DRIVER_DATA size=0x28 addr=0x0890EE50 parent=gAgbFlashData_0890ED54 encoding=TYPED_FIELDS pointerCells=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x0890EE50 size=0x28
-	.4byte 0x0890EE24 @ +0x0 ROM pointer; numeric preserved
-	.2byte 0x0000, 0x0002, 0x1000, 0x0000, 0x000C, 0x0020, 0x0000, 0x0000 @ +0x4
-	.2byte 0x0003, 0x0001, 0x1362, 0x0000, 0x4953, 0x5249, 0x4354, 0x565F @ +0x14
-	.2byte 0x3030, 0x0031 @ +0x24
+	.4byte leMaxTime @ maxTime
+	.4byte 0x00020000 @ type.romSize = 131072
+	.4byte 0x00001000 @ type.sector.size = 4096
+	.2byte 0x000C @ type.sector.shift = 12
+	.2byte 0x0020 @ type.sector.count = 32
+	.2byte 0x0000 @ type.sector.top
+	.2byte 0x0000 @ alignment
+	.2byte 0x0003, 0x0001 @ type.wait[2]
+	.byte 0x62, 0x13 @ type.ids.makerId/deviceId
+	.2byte 0x0000 @ alignment
+	@ SII RTC library version string immediately follows FlashSetupInfo.
+	.globl gAgbLibSiirtcVersion
+gAgbLibSiirtcVersion:
+	.byte 0x53, 0x49, 0x49, 0x52, 0x54, 0x43, 0x5F, 0x56, 0x30, 0x30, 0x31, 0x00 @ SIIRTC_V001 + NUL
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890EE78 size=0x4 source=v54_multi_pointer
 	.4byte gIwram_JP_03001A76
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890EE7C size=0x4 source=v54_multi_pointer

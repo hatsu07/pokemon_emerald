@@ -110,25 +110,23 @@ gPokedexAreaScreenData_08593A74: @ 0x08593A74
 gPokedexAreaScreenData_08593A84: @ 0x08593A84
 	@ analyzed canonical ROM range 0x08593A84-0x08593ABB
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: STRUCTURED_POKEDEX_AREA_SCREEN_DATA size=0x8 addr=0x08593A84 parent=gPokedexAreaScreenData_08593A84 encoding=TYPED_FIELDS pointerCells=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x08593A84 size=0x8
+	@ struct SpriteTemplate for the area-unknown marker sprite (24 bytes total).
+	.globl gPokedexAreaUnknownSpriteTemplate
+gPokedexAreaUnknownSpriteTemplate:
 	.2byte 0x0003, 0x0003 @ +0x0
 	.4byte 0x08593A7C @ +0x4 ROM pointer; numeric preserved
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08593A8C size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x08593A90 parent=gPokedexAreaScreenData_08593A84 offset=0xC
-	@ ANALYSIS: SOURCE_RANGE addr=0x08593A90 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
+	.4byte 0 @ images = NULL
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08593A94 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08593A98 size=0x4 source=v54_multi_pointer
 	.4byte SpriteCallbackDummy
-	@ ANALYSIS: STRUCTURED_POKEDEX_AREA_SCREEN_DATA size=0x20 addr=0x08593A9C parent=gPokedexAreaScreenData_08593A84 encoding=TYPED_FIELDS pointerCells=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x08593A9C size=0x20
-	.2byte 0x025E, 0x0000, 0x6F5B, 0x001F @ +0x0
-	.4byte 0x03E03BFF @ +0x8 RAM pointer; numeric preserved
-	.2byte 0x7FE0, 0x0000, 0x0000, 0x0000, 0x7FFF, 0x6F5B, 0x354C, 0x6251 @ +0xC
-	.2byte 0x18C5, 0x3D0A @ +0x1C
+	@ 16-color BGR555 OBJ palette used by the area-unknown marker sprite.
+	.globl gPokedexAreaUnknownPalette
+gPokedexAreaUnknownPalette:
+	.2byte 0x025E, 0x0000, 0x6F5B, 0x001F, 0x3BFF, 0x03E0, 0x7FE0, 0x0000
+	.2byte 0x0000, 0x0000, 0x7FFF, 0x6F5B, 0x354C, 0x6251, 0x18C5, 0x3D0A
 	@ pret/pokeemerald-jp direct xref for 0x08593ABC: pokedex_area_screen.s: LoadAreaUnknownGraphics
 	.globl gPokedexAreaScreenData_08593ABC
 gPokedexAreaScreenData_08593ABC: @ 0x08593ABC

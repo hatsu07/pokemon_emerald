@@ -1044,9 +1044,8 @@ SharedMapScript_0824790F:
 	compare_var_to_value 0x8005, 0x0001
 	call_if 0x01, 0x08247B69
 	goto 0x08246FE5
-	@ ANALYSIS: STRUCTURED_EVENT_SCRIPT_BYTECODE size=0x1 addr=0x08247B5F parent=SharedMapScript_0824790F encoding=BYTE_STREAM pointerCells=0
-	@ ANALYSIS: SOURCE_RANGE addr=0x08247B5F size=0x1
-	.byte 0x02 @ +0x0
+	@ End the shared map script before the sub-scripts at 0x08247B60/0x08247B69.
+	end
 	loadword 0x00, gText_Rom_248406
 	callstd 0x04
 	return

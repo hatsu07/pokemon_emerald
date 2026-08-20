@@ -714,31 +714,36 @@ gRouletteData_085974DC: @ 0x085974DC
 	@ pret/pokeemerald-jp direct xref for 0x085974FC: roulette.s: sub_081439E8
 	.globl gRouletteData_085974FC
 gRouletteData_085974FC: @ 0x085974FC
-	@ analyzed canonical ROM range 0x085974FC-0x08597503
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x8 bytes=8
-	.byte 0x64, 0xDD, 0xDB, 0x08, 0x00, 0x08, 0x06, 0x00
+	@ struct CompressedSpriteSheet for the roulette wheel center.
+	.globl gRouletteWheelCenterSpriteSheet
+gRouletteWheelCenterSpriteSheet:
+	.4byte 0x08DBDD64 @ data; JP-local asset pointer preserved
+	.2byte 0x0800 @ uncompressed size
+	.2byte 0x0006 @ tag
 	@ pret/pokeemerald-jp direct xref for 0x08597504: roulette.s: sub_081439E8
 	.globl gRouletteData_08597504
 gRouletteData_08597504: @ 0x08597504
 	@ analyzed canonical ROM range 0x08597504-0x0859752B
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: STRUCTURED_ROULETTE_UI_DATA size=0x8 addr=0x08597504 parent=gRouletteData_08597504 encoding=TYPED_FIELDS pointerCells=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x08597504 size=0x8
+	@ struct SpriteTemplate for the roulette wheel center (24 bytes total).
+	.globl gRouletteWheelCenterSpriteTemplate
+gRouletteWheelCenterSpriteTemplate:
 	.2byte 0x0006, 0x0002 @ +0x0
 	.4byte 0x085974F4 @ +0x4 ROM pointer; numeric preserved
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0859750C size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x08597510 parent=gRouletteData_08597504 offset=0xC
-	@ ANALYSIS: SOURCE_RANGE addr=0x08597510 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
+	.4byte 0 @ images = NULL
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08597514 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08597518 size=0x4 source=v54_multi_pointer
 	.4byte sub_08143A68
-	@ ANALYSIS: STRUCTURED_ROULETTE_UI_DATA size=0x10 addr=0x0859751C parent=gRouletteData_08597504 encoding=TYPED_FIELDS pointerCells=0
-	@ ANALYSIS: SOURCE_RANGE addr=0x0859751C size=0x10
-	.2byte 0x0000, 0x8000, 0x0800, 0x0000, 0x0000, 0x8000, 0x0800, 0x0000 @ +0x0
+	@ OamData for the two unstick helper Pokémon sprites.
+	.globl gRouletteShroomishOam
+gRouletteShroomishOam:
+	.2byte 0x0000, 0x8000, 0x0800, 0x0000
+	.globl gRouletteTaillowOam
+gRouletteTaillowOam:
+	.2byte 0x0000, 0x8000, 0x0800, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0859752C: roulette.s: sub_08142CD8
 	.globl gRouletteData_0859752C
 gRouletteData_0859752C: @ 0x0859752C

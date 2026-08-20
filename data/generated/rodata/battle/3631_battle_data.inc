@@ -808,42 +808,40 @@ gBattleAnimEffects3Data_085AD2B8: @ 0x085AD2B8
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3AC size=0x4 source=v54_multi_pointer
 	.4byte AnimPainSplitProjectile
-	@ ANALYSIS: STRUCTURED_BATTLE_ANIM_EFFECT_DATA size=0x4 addr=0x085AD3B0 parent=gBattleAnimEffects3Data_085AD2B8 encoding=TYPED_FIELDS pointerCells=0
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD3B0 size=0x4
+	@ struct SpriteTemplate gFlatterConfettiSpriteTemplate (24 bytes total).
+	.globl gFlatterConfettiSpriteTemplate
+gFlatterConfettiSpriteTemplate:
 	.2byte 0x2800, 0x2800 @ +0x0
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3B4 size=0x4 source=v54_multi_pointer
 	.4byte gOamData_AffineOff_ObjNormal_8x8
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3B8 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x085AD3BC parent=gBattleAnimEffects3Data_085AD2B8 offset=0x104
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD3BC size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
+	.4byte 0 @ images = NULL
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3C0 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3C4 size=0x4 source=v54_multi_pointer
 	.4byte AnimFlatterConfetti
-	@ ANALYSIS: STRUCTURED_BATTLE_ANIM_EFFECT_DATA size=0x4 addr=0x085AD3C8 parent=gBattleAnimEffects3Data_085AD2B8 encoding=TYPED_FIELDS pointerCells=0
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD3C8 size=0x4
+	@ struct SpriteTemplate gFlatterSpotlightSpriteTemplate (24 bytes total).
+	.globl gFlatterSpotlightSpriteTemplate
+gFlatterSpotlightSpriteTemplate:
 	.2byte 0x27F3, 0x27F3 @ +0x0
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3CC size=0x4 source=v54_multi_pointer
 	.4byte gOamData_AffineDouble_ObjNormal_64x64
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3D0 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: POINTER_STRUCT_FRAGMENT size=0x8 addr=0x085AD3D4 parent=gBattleAnimEffects3Data_085AD2B8 offset=0x11C dwords=2 rom_ptrs=1 ram_ptrs=0 nulls=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD3D4 size=0x8
-	.byte 0x00, 0x00, 0x00, 0x00, 0x2C, 0xD0, 0x5A, 0x08
+	.4byte 0 @ images = NULL
+	.4byte 0x085AD02C @ affineAnims; JP-local numeric pointer preserved
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3DC size=0x4 source=v54_multi_pointer
 	.4byte AnimFlatterSpotlight
-	@ ANALYSIS: STRUCTURED_BATTLE_ANIM_EFFECT_DATA size=0x4 addr=0x085AD3E0 parent=gBattleAnimEffects3Data_085AD2B8 encoding=TYPED_FIELDS pointerCells=0
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD3E0 size=0x4
+	@ struct SpriteTemplate gReversalOrbSpriteTemplate (24 bytes total).
+	.globl gReversalOrbSpriteTemplate
+gReversalOrbSpriteTemplate:
 	.2byte 0x27FC, 0x27FC @ +0x0
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3E4 size=0x4 source=v54_multi_pointer
 	.4byte gOamData_AffineOff_ObjNormal_8x8
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3E8 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x085AD3EC parent=gBattleAnimEffects3Data_085AD2B8 offset=0x134
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD3EC size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
+	.4byte 0 @ images = NULL
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3F0 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3F4 size=0x4 source=v54_multi_pointer

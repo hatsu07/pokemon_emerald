@@ -594,24 +594,37 @@ gPokenavMainMenuData_085F1460: @ 0x085F1460
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1490 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F1288
-	@ ANALYSIS: STRUCTURED_POKENAV_MAIN_MENU_DATA size=0x34 addr=0x085F1494 parent=gPokenavMainMenuData_085F1460 encoding=TYPED_FIELDS pointerCells=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085F1494 size=0x34
-	.2byte 0x0000, 0x0000, 0x0000, 0x8000, 0x0000, 0x0000, 0x0000, 0x0008 @ +0x0
-	.2byte 0x0010, 0x0008, 0x0020, 0x0008, 0x0030, 0x0008, 0x0040, 0x0008 @ +0x10
-	.2byte 0x0050, 0x0008, 0x0060, 0x0008, 0x0070, 0x0008, 0xFFFE, 0x0000 @ +0x20
-	.4byte 0x085F14A0 @ +0x30 ROM pointer; numeric preserved
+	@ 4-byte alignment/unused zero before the spinning Pokenav sprite OAM.
+	.space 0x4, 0
+	.globl gSpinningPokenavSpriteOam
+gSpinningPokenavSpriteOam:
+	.2byte 0x0000, 0x8000, 0x0000, 0x0000
+	.globl gSpinningPokenavAnims
+gSpinningPokenavAnims:
+	.2byte 0x0000, 0x0008 @ ANIMCMD_FRAME(0, 8)
+	.2byte 0x0010, 0x0008 @ ANIMCMD_FRAME(16, 8)
+	.2byte 0x0020, 0x0008 @ ANIMCMD_FRAME(32, 8)
+	.2byte 0x0030, 0x0008 @ ANIMCMD_FRAME(48, 8)
+	.2byte 0x0040, 0x0008 @ ANIMCMD_FRAME(64, 8)
+	.2byte 0x0050, 0x0008 @ ANIMCMD_FRAME(80, 8)
+	.2byte 0x0060, 0x0008 @ ANIMCMD_FRAME(96, 8)
+	.2byte 0x0070, 0x0008 @ ANIMCMD_FRAME(112, 8)
+	.2byte 0xFFFE, 0x0000 @ ANIMCMD_JUMP(0)
+	.globl gSpinningPokenavAnimTable
+gSpinningPokenavAnimTable:
+	.4byte gSpinningPokenavAnims
 	@ pret/pokeemerald-jp direct xref for 0x085F14C8: pokenav_main_menu.s: InitPokenavMainMenuResources
 	.globl gPokenavMainMenuData_085F14C8
 gPokenavMainMenuData_085F14C8: @ 0x085F14C8
-	@ analyzed canonical ROM range 0x085F14C8-0x085F14EF
-	@ pointer/nullable table
-	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
-	.4byte 0
-	.4byte 0x085F1498
-	.4byte 0x085F14C4
-	.4byte 0
-	.4byte gDummySpriteAffineAnimTable @ +0x10
-	.4byte SpriteCB_SpinningPokenav @ +0x14
+	@ struct SpriteTemplate for the spinning Pokenav icon.
+	.globl gSpinningPokenavSpriteTemplate
+gSpinningPokenavSpriteTemplate:
+	.2byte 0x0000, 0x0000 @ tileTag, paletteTag
+	.4byte gSpinningPokenavSpriteOam @ oam
+	.4byte gSpinningPokenavAnimTable @ anims
+	.4byte 0 @ images = NULL
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte SpriteCB_SpinningPokenav @ callback
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0xC0004000 @ +0x18
 	.4byte 0x00000400 @ +0x1C
@@ -628,15 +641,14 @@ sSpriteTemplate_085F14F0: @ 0x085F14F0
 gPokenavMainMenuData_085F1508: @ 0x085F1508
 	@ analyzed canonical ROM range 0x085F1508-0x085F15A7
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: STRUCTURED_POKENAV_MAIN_MENU_DATA size=0x8 addr=0x085F1508 parent=gPokenavMainMenuData_085F1508 encoding=TYPED_FIELDS pointerCells=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085F1508 size=0x8
+	@ struct SpriteTemplate for the submenu left header (24 bytes total).
+	.globl gPokenavSubmenuLeftHeaderSpriteTemplate
+gPokenavSubmenuLeftHeaderSpriteTemplate:
 	.2byte 0x0002, 0x0002 @ +0x0
 	.4byte 0x085F14E8 @ +0x4 ROM pointer; numeric preserved
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1510 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x085F1514 parent=gPokenavMainMenuData_085F1508 offset=0xC
-	@ ANALYSIS: SOURCE_RANGE addr=0x085F1514 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
+	.4byte 0 @ images = NULL
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1518 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F151C size=0x4 source=v54_multi_pointer
