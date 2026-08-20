@@ -654,7 +654,7 @@ _080712D8:
 	b _080713AA
 	.align 2, 0
 _08071300: .4byte 0x08C00530
-_08071304: .4byte 0x08C004EC
+_08071304: .4byte gBattleInterface_Textbox_Pal
 _08071308:
 	ldr r0, _0807131C
 	bl LoadSpriteSheet

@@ -1,9 +1,9 @@
 	
-	.globl sLz77Block_08C004EC
+	.globl gBattleInterface_Textbox_Pal
 	@ confirmed GBA LZ77 stream: compressed=0x43, decompressed=0x40
-sLz77Block_08C004EC:
+gBattleInterface_Textbox_Pal: @ 0x08C004EC
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08C004EC.bin.lz"
+	.incbin "build/graphics/battle_interface/textbox_palette_rom_exact.gbapal.lz"
 	.byte 0x00
 
 	.globl sLz77Block_08C00530

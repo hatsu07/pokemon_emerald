@@ -200,17 +200,17 @@ gStarterPokemonU8Table_Rom_58F812: @ 0x0858F812
 	.byte 0xBF, 0x5A, 0xE3, 0x20, 0x67, 0x31, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0xE9, 0x60
 	.byte 0x42, 0x08, 0x84, 0x10, 0xC6, 0x18, 0x08, 0x21, 0x4A, 0x29, 0x8C, 0x31, 0xCE, 0x39, 0x10, 0x42
 	.byte 0x52, 0x4A, 0x94, 0x52, 0xD6, 0x5A, 0x18, 0x63, 0x5A, 0x6B, 0x9C, 0x73, 0xFF, 0x7F
-	.globl sLz77Block_0858F890
+	.globl gBirchBagTilemap
 	@ confirmed GBA LZ77 stream: compressed=0x189, decompressed=0x500
-sLz77Block_0858F890:
+gBirchBagTilemap: @ 0x0858F890
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/0858F890.bin.lz"
+	.incbin "build/graphics/starter_choose/birch_bag_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00, 0x00
-	.globl sLz77Block_0858FA1C
+	.globl gBirchGrassTilemap
 	@ confirmed GBA LZ77 stream: compressed=0x1F7, decompressed=0x800
-sLz77Block_0858FA1C:
+gBirchGrassTilemap: @ 0x0858FA1C
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/0858FA1C.bin.lz"
+	.incbin "build/graphics/starter_choose/birch_grass_rom_exact.tilemap.lz"
 	.byte 0x00
 	.globl sLz77Block_0858FC14
 	@ confirmed GBA LZ77 stream: compressed=0xAA5, decompressed=0x2000
@@ -337,6 +337,6 @@ gStarterPokemonU8Table_Rom_590D88: @ 0x08590D88
 	.globl gStarterPokemonU8Table_Rom_590DA8
 gStarterPokemonU8Table_Rom_590DA8: @ 0x08590DA8
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.globl gLz77Asset_08590DA8
-gLz77Asset_08590DA8: @ 0x08590DA8
-	.incbin "build/assets/lz77_raw/08590DA8.bin.lz"
+	.globl gWallClockStart_Tilemap
+gWallClockStart_Tilemap: @ 0x08590DA8
+	.incbin "build/graphics/wallclock/start_rom_exact.tilemap.lz"

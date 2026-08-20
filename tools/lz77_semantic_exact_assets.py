@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import argparse, hashlib, json, struct, subprocess, sys, tempfile
+import argparse, hashlib, json, re, struct, subprocess, sys, tempfile
 from pathlib import Path
 from lz77_exact import FORMAT, repack_raw_with_plan
 
@@ -67,6 +67,19 @@ def png_plte_rgb555(path: Path, expected_entries: int) -> bytes:
         out += struct.pack("<H", value)
     return bytes(out)
 
+def read_u16_le_text(path: Path) -> bytes:
+    words = []
+    for lineno, line in enumerate(path.read_text(encoding="ascii").splitlines(), 1):
+        line = line.split("#", 1)[0]
+        for tok in line.split():
+            if not re.fullmatch(r"0x[0-9A-Fa-f]{4}", tok):
+                raise ValueError(f"{path}:{lineno}: invalid u16 token {tok!r}")
+            words.append(int(tok, 16))
+    out = bytearray()
+    for value in words:
+        out += struct.pack("<H", value)
+    return bytes(out)
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--manifest", required=True, type=Path)
@@ -100,6 +113,8 @@ def main():
             raw = rawp.read_bytes()
     elif kind == "png_palette_rgb555":
         raw = png_plte_rgb555(source, int(e["palette_entries"]))
+    elif kind == "u16_le_text":
+        raw = read_u16_le_text(source)
     elif kind == "build_lz":
         raw = gba_lz77_decompress(source.read_bytes())
     elif kind == "build_raw":

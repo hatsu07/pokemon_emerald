@@ -388,7 +388,7 @@ CB2_StartWallClock: @ 0x08134A3C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08134B64: .4byte 0x08590DA8
+_08134B64: .4byte gWallClockStart_Tilemap
 _08134B68: .4byte 0x06003800
 _08134B6C: .4byte 0x08134D05
 _08134B70: .4byte 0x03005B60

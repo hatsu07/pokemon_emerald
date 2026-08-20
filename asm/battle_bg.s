@@ -473,7 +473,7 @@ LoadBattleTextboxAndBackground: @ 0x080358F8
 	bx r0
 	.align 2, 0
 _08035930: .4byte 0x08C00530
-_08035934: .4byte 0x08C004EC
+_08035934: .4byte gBattleInterface_Textbox_Pal
 	thumb_func_end LoadBattleTextboxAndBackground
 
 	thumb_func_start sub_08035938
@@ -1604,7 +1604,7 @@ _08036284:
 	bl LoadCompressedPalette
 	b _080365AC
 	.align 2, 0
-_08036290: .4byte 0x08C004EC
+_08036290: .4byte gBattleInterface_Textbox_Pal
 _08036294:
 	ldr r0, _080362B0
 	ldr r1, [r0]

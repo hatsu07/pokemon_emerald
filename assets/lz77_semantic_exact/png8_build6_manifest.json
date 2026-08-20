@@ -148,6 +148,30 @@
       "key": "085DFC30",
       "source_kind": "png",
       "source": "graphics/list_menu/red_arrow_cursor.png"
+    },
+    "build/graphics/starter_choose/birch_bag_rom_exact.tilemap.lz": {
+      "key": "0858F890",
+      "source_kind": "u16_le_text",
+      "source": "graphics/starter_choose/birch_bag.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/starter_choose/birch_grass_rom_exact.tilemap.lz": {
+      "key": "0858FA1C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/starter_choose/birch_grass.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/wallclock/start_rom_exact.tilemap.lz": {
+      "key": "08590DA8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/wallclock/start.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_interface/textbox_palette_rom_exact.gbapal.lz": {
+      "key": "08C004EC",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_interface/textbox_palette.gbapal.u16",
+      "semantic_role": "palette"
     }
   }
 }

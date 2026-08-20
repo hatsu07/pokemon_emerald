@@ -8167,7 +8167,7 @@ sub_0807ABCC: @ 0x0807ABCC
 _0807ACB4: .4byte gTradeBgTemplates
 _0807ACB8: .4byte 0x08C00530
 _0807ACBC: .4byte 0x0201C000
-_0807ACC0: .4byte 0x08C004EC
+_0807ACC0: .4byte gBattleInterface_Textbox_Pal
 _0807ACC4: .4byte gTradeWindowTemplates
 	thumb_func_end sub_0807ABCC
 
