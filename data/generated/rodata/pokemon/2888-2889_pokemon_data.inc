@@ -108,9 +108,10 @@ sReelStopButtonTasks: @ 0x085844C8
 	@ pret/pokeemerald-jp direct xref for 0x085844D4: slot_machine.s: StopReelButton_Press, StopReelButton_Unpress
 	.globl sReelButtonOffsets
 sReelButtonOffsets: @ 0x085844D4
+	@ ANALYSIS: SEMANTIC_NUMERIC_REEL_BUTTON_OFFSETS
+	@ Slot-machine reel-button offset table; numeric offsets are the intended representation.
 	@ analyzed canonical ROM range 0x085844D4-0x085844DB
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0005, 0x000A, 0x000F, 0x0000
 	.globl sPikaPowerBoltTasks
 sPikaPowerBoltTasks: @ 0x085844DC
@@ -154,23 +155,26 @@ sReelTimeTasks: @ 0x085844F8
 	@ pret/pokeemerald-jp direct xref for 0x08584544: slot_machine.s: ReelTime_PikachuSpeedUp1
 	.globl sReelTimePikachuAnimIds
 sReelTimePikachuAnimIds: @ 0x08584544
+	@ ANALYSIS: SEMANTIC_NUMERIC_REEL_TIME_PIKACHU_ANIM_IDS
+	@ Slot-machine Reel Time Pikachu animation-ID table; numeric animation IDs are the intended representation.
 	@ analyzed canonical ROM range 0x08584544-0x08584547
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x01, 0x01, 0x02, 0x02
 	@ pret/pokeemerald-jp direct xref for 0x08584548: slot_machine.s: ReelTime_PikachuSpeedUp1
 	.globl sReelTimeBoltDelays
 sReelTimeBoltDelays: @ 0x08584548
+	@ ANALYSIS: SEMANTIC_NUMERIC_REEL_TIME_BOLT_DELAYS
+	@ Slot-machine Reel Time bolt delay table; numeric delay values are the intended representation.
 	@ analyzed canonical ROM range 0x08584548-0x0858454F
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0040, 0x0030, 0x0018, 0x0008
 	@ pret/pokeemerald-jp direct xref for 0x08584550: slot_machine.s: ReelTime_PikachuSpeedUp1
 	.globl sPikachuAuraFlashDelays
 sPikachuAuraFlashDelays: @ 0x08584550
+	@ ANALYSIS: SEMANTIC_NUMERIC_PIKACHU_AURA_FLASH_DELAYS
+	@ Slot-machine Pikachu aura-flash delay table; numeric delay values are the intended representation.
 	@ analyzed canonical ROM range 0x08584550-0x08584557
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x000A, 0x0008, 0x0006, 0x0004
 	.globl sInfoBoxTasks
 sInfoBoxTasks: @ 0x08584558

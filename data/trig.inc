@@ -45,7 +45,8 @@ gSineTable: @ 0x082FA8CC
 
 	.globl gSineDegreeTable
 gSineDegreeTable: @ 0x082FAB4C
-	@ ANALYSIS: U16_TABLE size=0x168 entries=180
+	@ ANALYSIS: SEMANTIC_NUMERIC_SINE_DEGREE_TABLE
+	@ Degree-indexed sine lookup table; numeric 16-bit values are the intended representation.
 	.2byte 0, 71, 143, 214, 286, 357, 428, 499
 	.2byte 570, 641, 711, 782, 852, 921, 991, 1060
 	.2byte 1129, 1198, 1266, 1334, 1401, 1468, 1534, 1600

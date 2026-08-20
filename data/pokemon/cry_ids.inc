@@ -1,7 +1,8 @@
 	.globl gSpeciesIdToCryId
 gSpeciesIdToCryId: @ 0x082EFFA4
+	@ ANALYSIS: SEMANTIC_NUMERIC_SPECIES_TO_CRY_ID_TABLE
+	@ Species-to-cry-ID lookup table; numeric 16-bit cry identifiers are the intended representation.
 	@ Hoenn species (SPECIES_TREECKO..SPECIES_CHIMECHO), one cry ID per entry.
-	@ ANALYSIS: U16_TABLE size=0x110 entries=136
 	.2byte 273 @ SPECIES_TREECKO
 	.2byte 274 @ SPECIES_GROVYLE
 	.2byte 275 @ SPECIES_SCEPTILE
