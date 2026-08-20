@@ -625,18 +625,52 @@ gRouletteData_08597304: @ 0x08597304
 	@ ANALYSIS: COMPRESSED_SPRITE_SHEET_META size=0x4 addr=0x08597328 parent=gRouletteData_08597304 offset=0x24 sheetSize=0x200 tag=0xB
 	@ ANALYSIS: SOURCE_RANGE addr=0x08597328 size=0x4
 	.2byte 0x200, 0xB @ size, tag
-	@ ANALYSIS: STRUCTURED_ROULETTE_UI_DATA size=0x6C addr=0x0859732C parent=gRouletteData_08597304 encoding=TYPED_FIELDS pointerCells=3
-	@ ANALYSIS: SOURCE_RANGE addr=0x0859732C size=0x6C
-	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0002, 0x0000 @ +0x0
-	.2byte 0x0004, 0x0000, 0x0006, 0x0000, 0x0008, 0x0000, 0x000A, 0x0000 @ +0x10
-	.2byte 0x000C, 0x0000, 0x000E, 0x0000, 0x0010, 0x0000, 0x0012, 0x0000 @ +0x20
-	.4byte 0x08597334 @ +0x30 ROM pointer; numeric preserved
-	.2byte 0x0000, 0x0000, 0x0008, 0x0000, 0x0010, 0x0000, 0x0018, 0x0000 @ +0x34
-	.2byte 0x0020, 0x0000, 0xFFFF, 0x0000 @ +0x44
-	.4byte 0x08597360 @ +0x4C ROM pointer; numeric preserved
-	.2byte 0x0000, 0x0000, 0x0002, 0x0000, 0x0004, 0x0000, 0x0006, 0x0000 @ +0x50
-	.2byte 0x0008, 0x0000, 0xFFFF, 0x0000 @ +0x60
-	.4byte 0x0859737C @ +0x68 ROM pointer; numeric preserved
+	@ Empty CompressedSpriteSheet entry terminating the preceding sheet array.
+	.4byte 0, 0
+
+	.globl gRouletteCreditDigitAnim
+gRouletteCreditDigitAnim: @ 0x08597334
+	.2byte 0x0000, 0x0000 @ digit 0
+	.2byte 0x0002, 0x0000 @ digit 1
+	.2byte 0x0004, 0x0000 @ digit 2
+	.2byte 0x0006, 0x0000 @ digit 3
+	.2byte 0x0008, 0x0000 @ digit 4
+	.2byte 0x000A, 0x0000 @ digit 5
+	.2byte 0x000C, 0x0000 @ digit 6
+	.2byte 0x000E, 0x0000 @ digit 7
+	.2byte 0x0010, 0x0000 @ digit 8
+	.2byte 0x0012, 0x0000 @ digit 9
+	@ Original ROM intentionally has no ANIMCMD_END here.
+
+	.globl gRouletteCreditDigitAnims
+gRouletteCreditDigitAnims: @ 0x0859735C
+	.4byte gRouletteCreditDigitAnim
+
+	.globl gRouletteMultiplierAnim
+gRouletteMultiplierAnim: @ 0x08597360
+	.2byte 0x0000, 0x0000
+	.2byte 0x0008, 0x0000
+	.2byte 0x0010, 0x0000
+	.2byte 0x0018, 0x0000
+	.2byte 0x0020, 0x0000
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+	.globl gRouletteMultiplierAnims
+gRouletteMultiplierAnims: @ 0x08597378
+	.4byte gRouletteMultiplierAnim
+
+	.globl gRouletteBallCounterAnim
+gRouletteBallCounterAnim: @ 0x0859737C
+	.2byte 0x0000, 0x0000
+	.2byte 0x0002, 0x0000
+	.2byte 0x0004, 0x0000
+	.2byte 0x0006, 0x0000
+	.2byte 0x0008, 0x0000
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+	.globl gRouletteBallCounterAnims
+gRouletteBallCounterAnims: @ 0x08597394
+	.4byte gRouletteBallCounterAnim
 	@ pret/pokeemerald-jp direct xref for 0x08597398: roulette.s: sub_081433E0
 	.globl gRouletteData_08597398
 gRouletteData_08597398: @ 0x08597398

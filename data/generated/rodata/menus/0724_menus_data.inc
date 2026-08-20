@@ -403,23 +403,48 @@ gNewGameBirchSpriteTemplate:
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08536F04 size=0x4 source=v54_multi_pointer
 	.4byte SpriteCallbackDummy
-	@ ANALYSIS: STRUCTURED_FIELD_EFFECT_SPRITE_DATA size=0x50 addr=0x08536F08 parent=gFieldEffectData_08536EF0 encoding=TYPED_FIELDS pointerCells=7
-	@ ANALYSIS: SOURCE_RANGE addr=0x08536F08 size=0x50
-	.4byte 0x0853563C @ +0x0 ROM pointer; numeric preserved
-	.2byte 0x1007, 0x0000 @ +0x4
-	.4byte 0x08535ADC @ +0x8 ROM pointer; numeric preserved
-	.2byte 0x1010, 0x0000, 0x4000, 0x8000, 0x0000, 0x0000 @ +0xC
-	.4byte 0x0853561C @ +0x18 ROM pointer; numeric preserved
-	.2byte 0x0020, 0x0000 @ +0x1C
-	.4byte 0x0853565C @ +0x20 ROM pointer; numeric preserved
-	.2byte 0x00C0, 0x0000 @ +0x24
-	.4byte 0x0853571C @ +0x28 ROM pointer; numeric preserved
-	.2byte 0x00C0, 0x0000 @ +0x2C
-	.4byte 0x085357DC @ +0x30 ROM pointer; numeric preserved
-	.2byte 0x0200, 0x0000 @ +0x34
-	.4byte 0x085359DC @ +0x38 ROM pointer; numeric preserved
-	.2byte 0x0200, 0x0000, 0xF8F4, 0x8001, 0xF804, 0x8020, 0x00F4, 0x8031 @ +0x3C
-	.2byte 0x0004, 0x8050 @ +0x4C
+	.globl gSpritePalette_PokeballGlow
+gSpritePalette_PokeballGlow: @ 0x08536F08
+	.4byte 0x0853563C @ palette data
+	.2byte 0x1007, 0 @ tag, padding
+
+	.globl gSpritePalette_HofMonitor
+gSpritePalette_HofMonitor: @ 0x08536F10
+	.4byte 0x08535ADC @ palette data
+	.2byte 0x1010, 0 @ tag, padding
+
+	.globl gFieldEffectOam_32x16
+gFieldEffectOam_32x16: @ 0x08536F18
+	.2byte 0x4000, 0x8000, 0x0000, 0x0000 @ OamData
+
+	.globl gFieldEffectPicTable_PokeballGlow
+gFieldEffectPicTable_PokeballGlow: @ 0x08536F20
+	.4byte 0x0853561C
+	.2byte 0x0020, 0 @ SpriteFrameImage data, size, padding
+
+	.globl gFieldEffectPicTable_PokecenterMonitor
+gFieldEffectPicTable_PokecenterMonitor: @ 0x08536F28
+	.4byte 0x0853565C
+	.2byte 0x00C0, 0
+	.4byte 0x0853571C
+	.2byte 0x00C0, 0
+
+	.globl gFieldEffectPicTable_HofMonitorBig
+gFieldEffectPicTable_HofMonitorBig: @ 0x08536F38
+	.4byte 0x085357DC
+	.2byte 0x0200, 0
+
+	.globl gFieldEffectPicTable_HofMonitorSmall
+gFieldEffectPicTable_HofMonitorSmall: @ 0x08536F40
+	.4byte 0x085359DC
+	.2byte 0x0200, 0
+
+	.globl gFieldEffectSubsprites_PokecenterMonitor
+gFieldEffectSubsprites_PokecenterMonitor: @ 0x08536F48
+	.byte 0xF4, 0xF8, 0x01, 0x80 @ Subsprite 0
+	.byte 0x04, 0xF8, 0x20, 0x80 @ Subsprite 1
+	.byte 0xF4, 0x00, 0x31, 0x80 @ Subsprite 2
+	.byte 0x04, 0x00, 0x50, 0x80 @ Subsprite 3
 	@ pret/pokeemerald-jp direct xref for 0x08536F58: field_effect.s: PokecenterHealEffectHelper
 	.globl gFieldEffectData_08536F58
 gFieldEffectData_08536F58: @ 0x08536F58
