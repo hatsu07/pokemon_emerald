@@ -222,20 +222,23 @@ gBattleAnimSpecialData_085C63CC: @ 0x085C63CC
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085C6408 size=0x4 source=v54_multi_pointer
 	.4byte sub_081730F0
-	@ ANALYSIS: STRUCTURED_BATTLE_ANIM_SPECIAL_DATA size=0x10 addr=0x085C640C parent=gBattleAnimSpecialData_085C63CC encoding=TYPED_FIELDS pointerCells=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085C640C size=0x10
-	.2byte 0x0040, 0x0001, 0xFFFF, 0x0000 @ +0x0
-	.4byte 0x085C640C @ +0x8 ROM pointer; numeric preserved
-	.2byte 0x274A, 0x274A @ +0xC
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085C641C size=0x4 source=v54_multi_pointer
-	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: POINTER_STRUCT_FRAGMENT size=0x8 addr=0x085C6420 parent=gBattleAnimSpecialData_085C63CC offset=0x54 dwords=2 rom_ptrs=1 ram_ptrs=0 nulls=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085C6420 size=0x8
-	.byte 0x14, 0x64, 0x5C, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085C6428 size=0x4 source=v54_multi_pointer
-	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085C642C size=0x4 source=v54_multi_pointer
-	.4byte sub_081730F0
+	.globl gBattleAnimSpecialSpriteAnim
+gBattleAnimSpecialSpriteAnim: @ 0x085C640C
+	.2byte 0x0040, 0x0001 @ ANIMCMD_FRAME(0x40, 1)
+	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+
+	.globl gBattleAnimSpecialSpriteAnimTable
+gBattleAnimSpecialSpriteAnimTable: @ 0x085C6414
+	.4byte gBattleAnimSpecialSpriteAnim
+
+	.globl gBattleAnimSpecialSpriteTemplate
+gBattleAnimSpecialSpriteTemplate: @ 0x085C6418
+	.2byte 0x274A, 0x274A @ tileTag, paletteTag
+	.4byte gOamData_AffineOff_ObjNormal_32x32 @ oam
+	.4byte gBattleAnimSpecialSpriteAnimTable @ anims
+	.4byte 0 @ images = NULL
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte sub_081730F0 @ callback
 	@ pret/pokeemerald-jp direct xref for 0x085C6430: hall_of_fame.s: sub_08174EB0
 	.globl gHallOfFameData_085C6430
 gHallOfFameData_085C6430: @ 0x085C6430

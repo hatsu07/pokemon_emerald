@@ -477,24 +477,29 @@ sSpriteTemplate_0854CB6C: @ 0x0854CB6C
 gPokemonStorageSystemData_0854CB84: @ 0x0854CB84
 	@ analyzed canonical ROM range 0x0854CB84-0x0854CBCB
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: STRUCTURED_POKEMON_STORAGE_UI_DATA size=0x8 addr=0x0854CB84 parent=gPokemonStorageSystemData_0854CB84 encoding=TYPED_FIELDS pointerCells=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x0854CB84 size=0x8
-	.2byte 0x0012, 0xDAC0 @ +0x0
-	.4byte 0x0854CB9C @ +0x4 ROM pointer; numeric preserved
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0854CB8C size=0x4 source=v54_multi_pointer
+	@ 24-byte SpriteTemplate copied by sub_080CBAA4 before CreateSprite.
+	.globl gPokemonStorageMonIconSpriteTemplate
+gPokemonStorageMonIconSpriteTemplate: @ 0x0854CB84
+	.2byte 0x0012, 0xDAC0 @ tileTag, paletteTag
+	.4byte gPokemonStorageMonIconOam @ oam
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x0854CB90 parent=gPokemonStorageSystemData_0854CB84 offset=0xC
-	@ ANALYSIS: SOURCE_RANGE addr=0x0854CB90 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0854CB94 size=0x4 source=v54_multi_pointer
+	.4byte 0 @ images = NULL
 	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0854CB98 size=0x4 source=v54_multi_pointer
 	.4byte SpriteCallbackDummy
-	@ ANALYSIS: STRUCTURED_POKEMON_STORAGE_UI_DATA size=0x30 addr=0x0854CB9C parent=gPokemonStorageSystemData_0854CB84 encoding=TYPED_FIELDS pointerCells=0
-	@ ANALYSIS: SOURCE_RANGE addr=0x0854CB9C size=0x30
-	.2byte 0x0000, 0x8000, 0x0000, 0x0000, 0xFFFE, 0xFFFE, 0x7800, 0x0000 @ +0x0
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000, 0x0010, 0x0010, 0x0000, 0x0000 @ +0x10
-	.2byte 0x0010, 0x0010, 0x0F00, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000 @ +0x20
+	.globl gPokemonStorageMonIconOam
+gPokemonStorageMonIconOam: @ 0x0854CB9C
+	.2byte 0x0000, 0x8000, 0x0000, 0x0000 @ OamData
+
+	.globl gPokemonStorageMonIconAffineAnim0
+gPokemonStorageMonIconAffineAnim0: @ 0x0854CBA4
+	.2byte 0xFFFE, 0xFFFE, 0x7800, 0x0000 @ AffineAnimCmd
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+
+	.globl gPokemonStorageMonIconAffineAnim1
+gPokemonStorageMonIconAffineAnim1: @ 0x0854CBB4
+	.2byte 0x0010, 0x0010, 0x0000, 0x0000 @ AffineAnimCmd
+	.2byte 0x0010, 0x0010, 0x0F00, 0x0000 @ AffineAnimCmd
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 	@ pret/pokeemerald-jp direct xref for 0x0854CBCC: pokemon_storage_system.s: sub_080CB788
 	.globl gPokemonStorageSystemData_0854CBCC
 gPokemonStorageSystemData_0854CBCC: @ 0x0854CBCC
