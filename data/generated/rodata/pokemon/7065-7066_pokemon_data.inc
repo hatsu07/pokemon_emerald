@@ -5,9 +5,9 @@ gPokemonSummaryScreenData_085ED40C: @ 0x085ED40C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085ED40C size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D971CC
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085ED410 parent=gPokemonSummaryScreenData_085ED40C offset=0x4 entropy=2.0 head=00173275
+	@ ANALYSIS: COMPRESSED_SPRITE_SHEET_META size=0x4 addr=0x085ED410 parent=gPokemonSummaryScreenData_085ED40C sheetSize=0x1700 tag=0x7532
 	@ ANALYSIS: SOURCE_RANGE addr=0x085ED410 size=0x4
-	.byte 0x00, 0x17, 0x32, 0x75
+	.2byte 0x1700, 0x7532 @ size, tag
 	@ pret/pokeemerald-jp direct xref for 0x085ED414: pokemon_summary_screen.s: CreateMoveTypeIcons
 	.globl gPokemonSummaryScreenData_085ED414
 gPokemonSummaryScreenData_085ED414: @ 0x085ED414
@@ -37,9 +37,9 @@ gPokemonSummaryScreenData_085ED4C4: @ 0x085ED4C4
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085ED4C4 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D97CBC
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085ED4C8 parent=gPokemonSummaryScreenData_085ED4C4 offset=0x4 entropy=2.0 head=00043075
+	@ ANALYSIS: COMPRESSED_SPRITE_SHEET_META size=0x4 addr=0x085ED4C8 parent=gPokemonSummaryScreenData_085ED4C4 sheetSize=0x400 tag=0x7530
 	@ ANALYSIS: SOURCE_RANGE addr=0x085ED4C8 size=0x4
-	.byte 0x00, 0x04, 0x30, 0x75
+	.2byte 0x400, 0x7530 @ size, tag
 	@ pret/pokeemerald-jp direct xref for 0x085ED4CC: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
 	.globl gPokemonSummaryScreenData_085ED4CC
 gPokemonSummaryScreenData_085ED4CC: @ 0x085ED4CC
@@ -47,9 +47,9 @@ gPokemonSummaryScreenData_085ED4CC: @ 0x085ED4CC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085ED4CC size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D97DB8
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085ED4D0 parent=gPokemonSummaryScreenData_085ED4CC offset=0x4 entropy=1.5 head=30750000
+	@ ANALYSIS: COMPRESSED_SPRITE_PALETTE_META size=0x4 addr=0x085ED4D0 parent=gPokemonSummaryScreenData_085ED4CC tag=0x7530 padding=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085ED4D0 size=0x4
-	.byte 0x30, 0x75, 0x00, 0x00
+	.2byte 0x7530, 0 @ tag, padding
 	@ pret/pokeemerald-jp direct xref for 0x085ED4D4: pokemon_summary_screen.s: sub_081C4300
 	.globl gPokemonSummaryScreenData_085ED4D4
 gPokemonSummaryScreenData_085ED4D4: @ 0x085ED4D4
@@ -71,9 +71,9 @@ gPokemonSummaryScreenData_085ED548: @ 0x085ED548
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085ED548 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D96F44
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085ED54C parent=gPokemonSummaryScreenData_085ED548 offset=0x4 entropy=2.0 head=80033175
+	@ ANALYSIS: COMPRESSED_SPRITE_SHEET_META size=0x4 addr=0x085ED54C parent=gPokemonSummaryScreenData_085ED548 sheetSize=0x380 tag=0x7531
 	@ ANALYSIS: SOURCE_RANGE addr=0x085ED54C size=0x4
-	.byte 0x80, 0x03, 0x31, 0x75
+	.2byte 0x380, 0x7531 @ size, tag
 	@ pret/pokeemerald-jp direct xref for 0x085ED550: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
 	.globl gPokemonSummaryScreenData_085ED550
 gPokemonSummaryScreenData_085ED550: @ 0x085ED550
@@ -81,9 +81,9 @@ gPokemonSummaryScreenData_085ED550: @ 0x085ED550
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085ED550 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D971A4
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085ED554 parent=gPokemonSummaryScreenData_085ED550 offset=0x4 entropy=1.5 head=31750000
+	@ ANALYSIS: COMPRESSED_SPRITE_PALETTE_META size=0x4 addr=0x085ED554 parent=gPokemonSummaryScreenData_085ED550 tag=0x7531 padding=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085ED554 size=0x4
-	.byte 0x31, 0x75, 0x00, 0x00
+	.2byte 0x7531, 0 @ tag, padding
 	@ pret/pokeemerald-jp direct xref for 0x085ED558: pokemon_summary_screen.s: CreateSetStatusSprite
 	.globl gPokemonSummaryScreenData_085ED558
 gPokemonSummaryScreenData_085ED558: @ 0x085ED558
@@ -242,9 +242,9 @@ gBattlePyramidBagData_085EF81C: @ 0x085EF81C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085EF81C size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_08D9ABE4
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085EF820 parent=gBattlePyramidBagData_085EF81C offset=0x4 entropy=2.0 head=00082410
+	@ ANALYSIS: COMPRESSED_SPRITE_SHEET_META size=0x4 addr=0x085EF820 parent=gBattlePyramidBagData_085EF81C sheetSize=0x800 tag=0x1024
 	@ ANALYSIS: SOURCE_RANGE addr=0x085EF820 size=0x4
-	.byte 0x00, 0x08, 0x24, 0x10
+	.2byte 0x800, 0x1024 @ size, tag
 	@ pret/pokeemerald-jp direct xref for 0x085EF824: battle_pyramid_bag.s: sub_081C66B4
 	.globl gBattlePyramidBagData_085EF824
 gBattlePyramidBagData_085EF824: @ 0x085EF824
