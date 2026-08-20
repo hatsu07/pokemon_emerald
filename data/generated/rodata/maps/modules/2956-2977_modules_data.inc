@@ -461,10 +461,9 @@ gLandmarkData_08598C68: @ 0x08598C68
 	landmark_table_entry 0x31, 0x01, sLandmarkList_08598C48
 	landmark_table_entry 0x31, 0x02, sLandmarkList_08598C50
 	landmark_table_entry 0x38, 0x02, sLandmarkList_08598C5C
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x08598DD8 parent=gLandmarkData_08598C68 offset=0x170 entropy=0.544 head=D500000000000000
-	.byte 0xD5, 0
-	.2byte 0
-	.4byte 0
+	@ ANALYSIS: STRUCTURED_LANDMARK_TABLE_DATA size=0x8 addr=0x08598DD8 parent=gLandmarkData_08598C68 encoding=TYPED_FIELDS pointerCells=0
+	@ ANALYSIS: SOURCE_RANGE addr=0x08598DD8 size=0x8
+	.2byte 0x00D5, 0x0000, 0x0000, 0x0000 @ +0x0
 .purgem landmark_table_entry
 	@ pret/pokeemerald-jp direct xref for 0x08598DE0: battle_transition.s: Phase2_BigPokeball_Func1
 	.globl gBattleTransitionData_08598DE0

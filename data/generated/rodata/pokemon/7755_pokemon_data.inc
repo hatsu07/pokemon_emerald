@@ -307,9 +307,9 @@ gPokenavUnk4Data_085F4D3C: @ 0x085F4D3C
 	.2byte 15, 1 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4DE8 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F491C
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x085F4DEC parent=gPokenavUnk4Data_085F4D3C offset=0xB0 entropy=1.299 head=0040004000040000
+	@ ANALYSIS: STRUCTURED_POKENAV_MAP_UI_DATA size=0x8 addr=0x085F4DEC parent=gPokenavUnk4Data_085F4D3C encoding=TYPED_FIELDS pointerCells=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4DEC size=0x8
-	.byte 0x00, 0x40, 0x00, 0x40, 0x00, 0x04, 0x00, 0x00
+	.2byte 0x4000, 0x4000, 0x0400, 0x0000 @ +0x0
 	@ pret/pokeemerald-jp direct xref for 0x085F4DF4: pokenav_unk_4.s: sub_081CC598
 	.globl gPokenavUnk4Data_085F4DF4
 gPokenavUnk4Data_085F4DF4: @ 0x085F4DF4

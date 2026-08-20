@@ -209,20 +209,22 @@ gFieldWeatherEffectData_0852A8F0: @ 0x0852A8F0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852A8F0 size=0x4 source=v54_multi_pointer
 	.4byte gWeatherRainTiles
-	@ ANALYSIS: RAW_BLOCK size=0xC addr=0x0852A8F4 parent=gFieldWeatherEffectData_0852A8F0 offset=0x4 entropy=1.418 head=000606120000000000040000
+	@ ANALYSIS: STRUCTURED_FIELD_WEATHER_EFFECT_DATA size=0xC addr=0x0852A8F4 parent=gFieldWeatherEffectData_0852A8F0 encoding=TYPED_FIELDS pointerCells=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852A8F4 size=0xC
-	.byte 0x00, 0x06, 0x06, 0x12, 0x00, 0x00, 0x00, 0x00, 0x00, 0x04, 0x00, 0x00
+	.2byte 0x0600, 0x1206, 0x0000, 0x0000, 0x0400, 0x0000 @ +0x0
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852A900 size=0x4 source=v54_multi_pointer
 	.4byte gWeatherSnow1Tiles
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x0852A904 parent=gFieldWeatherEffectData_0852A8F0 offset=0x14 entropy=0.811 head=20000000
+	@ ANALYSIS: STRUCTURED_FIELD_WEATHER_EFFECT_DATA size=0x4 addr=0x0852A904 parent=gFieldWeatherEffectData_0852A8F0 encoding=TYPED_FIELDS pointerCells=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852A904 size=0x4
-	.byte 0x20, 0x00, 0x00, 0x00
+	.2byte 0x0020, 0x0000 @ +0x0
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852A908 size=0x4 source=v54_multi_pointer
 	.4byte gWeatherSnow2Tiles
-	@ ANALYSIS: RAW_BLOCK size=0x1C addr=0x0852A90C parent=gFieldWeatherEffectData_0852A8F0 offset=0x1C entropy=2.601 head=2000000000001000FFFF000001001000
+	@ ANALYSIS: STRUCTURED_FIELD_WEATHER_EFFECT_DATA size=0x1C addr=0x0852A90C parent=gFieldWeatherEffectData_0852A8F0 encoding=TYPED_FIELDS pointerCells=2
 	@ ANALYSIS: SOURCE_RANGE addr=0x0852A90C size=0x1C
-	.byte 0x20, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x01, 0x00, 0x10, 0x00
-	.byte 0xFF, 0xFF, 0x00, 0x00, 0x10, 0xA9, 0x52, 0x08, 0x18, 0xA9, 0x52, 0x08
+	.2byte 0x0020, 0x0000, 0x0000, 0x0010, 0xFFFF, 0x0000, 0x0001, 0x0010 @ +0x0
+	.2byte 0xFFFF, 0x0000 @ +0x10
+	.4byte 0x0852A910 @ +0x14 ROM pointer; numeric preserved
+	.4byte 0x0852A918 @ +0x18 ROM pointer; numeric preserved
 	@ pret/pokeemerald-jp direct xref for 0x0852A928: field_weather_effect.s: CreateSnowflakeSprite
 	.globl gFieldWeatherEffectData_0852A928
 gFieldWeatherEffectData_0852A928: @ 0x0852A928
