@@ -71,9 +71,12 @@ sDecideStop_NoBias: @ 0x08584474
 	@ pret/pokeemerald-jp direct xref for 0x08584480: slot_machine.s: SlotReelAction_MoveToStop
 	.globl sReelStopShocks
 sReelStopShocks: @ 0x08584480
+	@ ANALYSIS: SEMANTIC_NUMERIC_REEL_STOP_SHOCKS
+	@ Five reel-stop shock magnitudes for 0..4 extra turns; the final zero u16 is alignment padding.
+	@ ANALYSIS: ZERO_PADDING
+	@ The final zero u16 pads the 10-byte canonical table to the next 4-byte boundary.
 	@ analyzed canonical ROM range 0x08584480-0x0858448B
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x0002, 0x0004, 0x0004, 0x0004, 0x0008, 0x0000
 	.globl sDecideStop_Bias_Reel1_Bets
 sDecideStop_Bias_Reel1_Bets: @ 0x0858448C

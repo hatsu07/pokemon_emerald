@@ -945,15 +945,20 @@ sSecretBaseFacilityClasses: @ 0x082FA844
 	.byte FACILITY_CLASS_COOLTRAINER_F
 
 sGetMonDataEVConstants: @ 0x082FA84E
-	@ ANALYSIS: U8_DATA size=0x6 bytes=6
+	@ ANALYSIS: SEMANTIC_NUMERIC_GET_MON_DATA_EV_CONSTANTS
+	@ MON_DATA EV field identifiers: HP, Atk, Def, Speed, Sp.Def, Sp.Atk.
 	.byte 0x1A, 0x1B, 0x1C, 0x1D, 0x1F, 0x1E
 
 sStatsToRaise: @ 0x082FA854
-	@ ANALYSIS: U8_DATA size=0x6 bytes=6
+	@ ANALYSIS: SEMANTIC_NUMERIC_STATS_TO_RAISE
+	@ Stat identifiers for stat-raising items: Atk, Atk, Speed, Def, Sp.Atk, Accuracy.
 	.byte 0x01, 0x01, 0x03, 0x02, 0x04, 0x06
 
 sFriendshipEventModifiers: @ 0x082FA85A
-	@ ANALYSIS: U8_DATA size=0x1C bytes=28
+	@ ANALYSIS: SEMANTIC_NUMERIC_FRIENDSHIP_EVENT_MODIFIERS
+	@ Nine friendship events x three friendship ranges; the final zero byte is alignment padding.
+	@ ANALYSIS: ZERO_PADDING
+	@ The final .byte 0 aligns the following u16 table and is not a friendship-event entry.
 	.byte 5, 3, 2 @ friendship event 0
 	.byte 5, 3, 2 @ friendship event 1
 	.byte 1, 1, 0 @ friendship event 2
