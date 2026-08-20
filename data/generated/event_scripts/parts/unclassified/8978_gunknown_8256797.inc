@@ -3,6 +3,8 @@
 EventScript_08256797: @ 0x08256797
 .globl EventScript_JP_08256797
 EventScript_JP_08256797: @ 0x08256797
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	dofieldeffect 0x0028
 	waitstate

@@ -44,6 +44,8 @@ EventScript_JP_08222A99: @ 0x08222A99
 	release
 	end
 EventScript_JP_08222AFC: @ 0x08222AFC
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setflag 0x01C6
 	goto 0x08244197
 	.byte 0x02

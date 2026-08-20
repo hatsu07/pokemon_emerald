@@ -3979,6 +3979,8 @@ gObjectEventGfxUnreferenced_JP_084BDC8C: @ 0x084BDC8C
 	.byte 0x98, 0x31, 0x15, 0x35, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xC9, 0x72
 	.globl gObjectEventFrame_JP_084BDCAC
 gObjectEventFrame_JP_084BDCAC: @ 0x084BDCAC
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_GFX
+	@ Object-event sprite frame graphics/data.
 	@ Overlapping ObjectEvent frame prefix; object gfx id 94 declares a 0x480-byte frame.
 	@ The declared range crosses text slots and payload gaps in later includes
 	@ (0x084BE091-0x084BE12B), so only the local prefix is kept here.

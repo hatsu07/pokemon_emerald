@@ -65,6 +65,8 @@ EventScript_JP_0820AED8: @ 0x0820AED8
 	end
 .globl EventScript_JP_0820AEE1
 EventScript_JP_0820AEE1: @ 0x0820AEE1
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	message gText_Rom_20B12E
 	waitmessage
@@ -72,6 +74,8 @@ EventScript_JP_0820AEE1: @ 0x0820AEE1
 	goto EventScript_JP_0820AEF2
 	.byte 0x02
 EventScript_JP_0820AEF2: @ 0x0820AEF2
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	multichoice 0x10, 0x00, 0x2A, 0x00
 	copyvar 0x4001, 0x800D
 	copyvar 0x8000, 0x4001
@@ -86,14 +90,20 @@ EventScript_JP_0820AEF2: @ 0x0820AEF2
 	goto EventScript_JP_0820B0AA
 	.byte 0x02
 EventScript_JP_0820AF30: @ 0x0820AF30
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x4000, 0x001A
 	goto EventScript_JP_0820AF7B
 	.byte 0x02
 EventScript_JP_0820AF3B: @ 0x0820AF3B
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x4000, 0x001B
 	goto EventScript_JP_0820AF7B
 	.byte 0x02
 EventScript_JP_0820AF46: @ 0x0820AF46
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x4000, 0x001C
 	goto EventScript_JP_0820AF7B
 	.byte 0x02
@@ -116,6 +126,8 @@ EventScript_JP_0820AF74: @ 0x0820AF74
 	takemoney 0x0000015E, 0x00
 	return
 EventScript_JP_0820AF7B: @ 0x0820AF7B
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	compare_var_to_value 0x4001, 0x0000
 	call_if 0x01, EventScript_JP_0820AF51
 	compare_var_to_value 0x4001, 0x0001
@@ -175,16 +187,22 @@ EventScript_JP_0820AF7B: @ 0x0820AF7B
 	goto EventScript_JP_0820B082
 	.byte 0x02
 EventScript_JP_0820B082: @ 0x0820B082
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	message gText_Rom_20B12E
 	waitmessage
 	goto EventScript_JP_0820AEF2
 	.byte 0x02
 EventScript_JP_0820B08E: @ 0x0820B08E
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_20B175
 	callstd 0x04
 	goto EventScript_JP_0820B0AA
 	.byte 0x02
 EventScript_JP_0820B09C: @ 0x0820B09C
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_243947
 	callstd 0x04
 	goto EventScript_JP_0820B0AA

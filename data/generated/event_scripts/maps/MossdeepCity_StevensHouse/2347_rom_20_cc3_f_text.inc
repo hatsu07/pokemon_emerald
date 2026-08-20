@@ -30,6 +30,8 @@ EventScript_JP_0820CC71: @ 0x0820CC71
 	end
 .globl EventScript_JP_0820CC7B
 EventScript_JP_0820CC7B: @ 0x0820CC7B
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	@ event command: special

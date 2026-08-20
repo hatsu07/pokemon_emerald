@@ -13,6 +13,8 @@ gText_Rom_20F819: @ 0x0820F819
 	.byte 0x00
 .globl EventScript_JP_0820F862
 EventScript_JP_0820F862: @ 0x0820F862
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0077
@@ -71,6 +73,8 @@ EventScript_JP_0820F8E9: @ 0x0820F8E9
 	end
 .globl EventScript_JP_0820F8F3
 EventScript_JP_0820F8F3: @ 0x0820F8F3
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0079
@@ -139,6 +143,8 @@ EventScript_JP_0820F984: @ 0x0820F984
 	end
 .globl EventScript_JP_0820F992
 EventScript_JP_0820F992: @ 0x0820F992
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0079

@@ -988,6 +988,8 @@ EventScript_JP_08257283: @ 0x08257283
 	end
 .globl EventScript_JP_08257290
 EventScript_JP_08257290: @ 0x08257290
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	checkflag 0x0865
@@ -1011,6 +1013,8 @@ EventScript_JP_082572A9: @ 0x082572A9
 	goto_if 0x01, EventScript_JP_08257342
 	end
 EventScript_JP_082572E8: @ 0x082572E8
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_257449
 	callstd 0x04
 	goto EventScript_JP_082572A9
@@ -1034,6 +1038,8 @@ EventScript_JP_08257322: @ 0x08257322
 	release
 	end
 EventScript_JP_0825732C: @ 0x0825732C
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0000
 	@ event command: special
 	.byte 0x25
@@ -1050,6 +1056,8 @@ EventScript_JP_08257342: @ 0x08257342
 	release
 	end
 EventScript_JP_0825734C: @ 0x0825734C
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_2575C0
 	callstd 0x04
 	goto EventScript_JP_0825735A
@@ -1069,6 +1077,8 @@ EventScript_JP_0825735A: @ 0x0825735A
 	goto_if 0x01, EventScript_JP_082573D3
 	end
 EventScript_JP_08257399: @ 0x08257399
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_257449
 	callstd 0x04
 	goto EventScript_JP_0825735A
@@ -1087,6 +1097,8 @@ EventScript_JP_082573A7: @ 0x082573A7
 	goto_if 0x01, EventScript_JP_0825732C
 	end
 EventScript_JP_082573D3: @ 0x082573D3
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_257624
 	callstd 0x04
 	release

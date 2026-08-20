@@ -21,6 +21,8 @@ EventScript_JP_0820A06B: @ 0x0820A06B
 	end
 .globl EventScript_JP_0820A074
 EventScript_JP_0820A074: @ 0x0820A074
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	loadword 0x00, gText_Rom_20A1C2

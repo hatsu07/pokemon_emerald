@@ -24,6 +24,8 @@ EventScript_JP_0820C3DC: @ 0x0820C3DC
 	end
 .globl EventScript_JP_0820C3E5
 EventScript_JP_0820C3E5: @ 0x0820C3E5
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	waitse
@@ -44,6 +46,8 @@ EventScript_JP_0820C3E5: @ 0x0820C3E5
 	release
 	end
 EventScript_JP_0820C418: @ 0x0820C418
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
@@ -53,6 +57,8 @@ EventScript_JP_0820C418: @ 0x0820C418
 	.2byte 0x0000
 	return
 EventScript_JP_0820C423: @ 0x0820C423
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003

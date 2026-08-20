@@ -2,6 +2,8 @@
 	@ analyzed canonical ROM range 0x08276CAF-0x08276D0B
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_08276CAF: @ 0x08276CAF
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	setvar 0x8004, 0x0007
 	@ event command: special

@@ -246,6 +246,8 @@ EventScript_JP_081E03A9: @ 0x081E03A9
 	end
 .globl EventScript_JP_081E03B2
 EventScript_JP_081E03B2: @ 0x081E03B2
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	checkflag 0x00DA
 	goto_if 0x01, EventScript_JP_081E03E5
@@ -428,6 +430,8 @@ EventScript_JP_081E0563: @ 0x081E0563
 	goto EventScript_JP_081E05DF
 	.byte 0x02
 EventScript_JP_081E0573: @ 0x081E0573
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_1E080D
 	callstd 0x04
 	setvar 0x800D, 0x0000
@@ -463,6 +467,8 @@ EventScript_JP_081E05D6: @ 0x081E05D6
 	callstd 0x04
 	return
 EventScript_JP_081E05DF: @ 0x081E05DF
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_1E0AAF
 	callstd 0x04
 	setvar 0x800D, 0x0000

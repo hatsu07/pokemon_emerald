@@ -18,6 +18,8 @@ MapScripts_JP_08210134: @ 0x08210134
 	.4byte MapScriptTable_JP_08210143
 	.byte 0
 EventScript_JP_0821013F: @ 0x0821013F
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0141
@@ -28,6 +30,8 @@ MapScriptTable_JP_08210143: @ 0x08210143
 	.4byte EventScript_JP_0821014D
 	.2byte 0
 EventScript_JP_0821014D: @ 0x0821014D
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
 	.byte 0x4F
@@ -83,6 +87,8 @@ EventScript_JP_082101B4: @ 0x082101B4
 	callstd 0x04
 	return
 EventScript_JP_082101C2: @ 0x082101C2
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x40C0, 0x0001
 	@ event command: special
 	.byte 0x25
@@ -91,6 +97,8 @@ EventScript_JP_082101C2: @ 0x082101C2
 	waitbuttonpress
 	return
 EventScript_JP_082101CD: @ 0x082101CD
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x40C0, 0x0002
 	@ event command: special
 	.byte 0x25

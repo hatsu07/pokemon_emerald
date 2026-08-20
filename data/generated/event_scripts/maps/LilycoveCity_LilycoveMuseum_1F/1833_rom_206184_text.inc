@@ -18,21 +18,29 @@ MapScripts_JP_082061E6: @ 0x082061E6
 	.4byte MapScriptTable_JP_082062AA
 	.byte 0
 EventScript_JP_082061F1: @ 0x082061F1
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	checkflag 0x00A0
 	goto_if 0x01, EventScript_JP_08206237
 	goto EventScript_JP_08206200
 	.byte 0x02
 EventScript_JP_08206200: @ 0x08206200
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	checkflag 0x00A1
 	goto_if 0x01, EventScript_JP_0820624F
 	goto EventScript_JP_0820620F
 	.byte 0x02
 EventScript_JP_0820620F: @ 0x0820620F
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	checkflag 0x00A2
 	goto_if 0x01, EventScript_JP_08206267
 	goto EventScript_JP_0820621E
 	.byte 0x02
 EventScript_JP_0820621E: @ 0x0820621E
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	checkflag 0x00A3
 	goto_if 0x01, EventScript_JP_0820627F
 	goto EventScript_JP_0820622D
@@ -42,21 +50,29 @@ EventScript_JP_0820622D: @ 0x0820622D
 	goto_if 0x01, EventScript_JP_08206297
 	end
 EventScript_JP_08206237: @ 0x08206237
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setmetatile 0x000A, 0x0006, 0x025E, 0x0001
 	setmetatile 0x000B, 0x0006, 0x025F, 0x0001
 	goto EventScript_JP_08206200
 	.byte 0x02
 EventScript_JP_0820624F: @ 0x0820624F
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setmetatile 0x0012, 0x0006, 0x025C, 0x0001
 	setmetatile 0x0013, 0x0006, 0x025D, 0x0001
 	goto EventScript_JP_0820620F
 	.byte 0x02
 EventScript_JP_08206267: @ 0x08206267
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setmetatile 0x000E, 0x000A, 0x0260, 0x0001
 	setmetatile 0x000F, 0x000A, 0x0261, 0x0001
 	goto EventScript_JP_0820621E
 	.byte 0x02
 EventScript_JP_0820627F: @ 0x0820627F
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setmetatile 0x0006, 0x000A, 0x025A, 0x0001
 	setmetatile 0x0007, 0x000A, 0x025B, 0x0001
 	goto EventScript_JP_0820622D
@@ -71,6 +87,8 @@ MapScriptTable_JP_082062AA: @ 0x082062AA
 	.4byte EventScript_JP_082062B4
 	.2byte 0
 EventScript_JP_082062B4: @ 0x082062B4
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
 	.byte 0x4F
@@ -154,6 +172,8 @@ EventScript_JP_08206366: @ 0x08206366
 	callstd 0x02
 	end
 EventScript_JP_0820636F: @ 0x0820636F
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
@@ -172,6 +192,8 @@ EventScript_JP_0820636F: @ 0x0820636F
 	goto EventScript_JP_08206396
 	.byte 0x02
 EventScript_JP_08206396: @ 0x08206396
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001

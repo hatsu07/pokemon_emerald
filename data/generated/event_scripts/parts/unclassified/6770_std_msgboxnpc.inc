@@ -850,6 +850,8 @@ EventScriptData_JP_08242DEA:
 	goto_if 0x01, .LResidualEvent_08242E15
 	goto .LResidualEvent_08242E15
 .LResidualEvent_08242E0F:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	.byte 0x25 @ special 0x001B; no matching SPECIAL_* constant proven
 	.2byte 0x001B
 	waitstate

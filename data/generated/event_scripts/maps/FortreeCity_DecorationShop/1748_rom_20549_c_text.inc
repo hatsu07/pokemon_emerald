@@ -13,6 +13,8 @@ gText_Rom_20549C: @ 0x0820549C
 	.byte 0x00
 .globl EventScript_JP_082054FD
 EventScript_JP_082054FD: @ 0x082054FD
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	checkflag 0x0864
 	goto_if 0x01, EventScript_JP_0820555E
@@ -40,6 +42,8 @@ EventScript_JP_082054FD: @ 0x082054FD
 	releaseall
 	end
 EventScript_JP_08205537: @ 0x08205537
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_2056BC
 	callstd 0x04
 	@ event command: applymovement
@@ -85,6 +89,8 @@ EventScript_JP_0820555E: @ 0x0820555E
 	end
 .globl EventScript_JP_08205585
 EventScript_JP_08205585: @ 0x08205585
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	playse 0x0015
 	@ event command: applymovement

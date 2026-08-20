@@ -31,6 +31,8 @@ MapScriptTable_JP_082112A1: @ 0x082112A1
 	.4byte EventScript_JP_082112AB
 	.2byte 0
 EventScript_JP_082112AB: @ 0x082112AB
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
 	.byte 0x4F
@@ -107,6 +109,8 @@ EventScript_JP_082112AB: @ 0x082112AB
 	goto_if 0x01, EventScript_JP_08211350
 	end
 EventScript_JP_08211344: @ 0x08211344
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setrespawn 0x0001
 	fadescreenspeed 0x01, 0x18
 	@ event command: special
@@ -116,6 +120,8 @@ EventScript_JP_08211344: @ 0x08211344
 	releaseall
 	end
 EventScript_JP_08211350: @ 0x08211350
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setrespawn 0x0002
 	fadescreenspeed 0x01, 0x18
 	@ event command: special

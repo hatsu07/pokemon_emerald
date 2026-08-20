@@ -3871,8 +3871,12 @@ sObjectEventSpritePalettes: @ 0x084E401C
 	rodata_sprite_palette gObjectEventPal_May, 0x1123
 	rodata_sprite_palette 0, 0
 sObjectEventPaletteTagList_084E413C: @ 0x084E413C
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	.2byte 0x1101, 0x1101, 0x1101, 0x1101
 sObjectEventPaletteTagList_084E4144: @ 0x084E4144
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	.2byte 0x1111, 0x1111, 0x1111, 0x1111
 sObjectEventPaletteTagList_084E414C: @ 0x084E414C
 	.2byte 0x1115, 0x1115, 0x1115, 0x1115
@@ -3890,24 +3894,44 @@ sPlayerObjectReflectionPaletteOverrides: @ 0x084E4154
 	.2byte 0x11FF, 0
 	.4byte 0
 sObjectEventPaletteTagList_084E4174: @ 0x084E4174
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	.2byte 0x110C, 0x110C, 0x110C, 0x110C
 sObjectEventPaletteTagList_084E417C: @ 0x084E417C
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	.2byte 0x110D, 0x110D, 0x110D, 0x110D
 sObjectEventPaletteTagList_084E4184: @ 0x084E4184
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	.2byte 0x110E, 0x110E, 0x110E, 0x110E
 sObjectEventPaletteTagList_084E418C: @ 0x084E418C
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	.2byte 0x1112, 0x1112, 0x1112, 0x1112
 sObjectEventPaletteTagList_084E4194: @ 0x084E4194
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	.2byte 0x1113, 0x1113, 0x1113, 0x1113
 sObjectEventPaletteTagList_084E419C: @ 0x084E419C
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	.2byte 0x1114, 0x1114, 0x1114, 0x1114
 sObjectEventPaletteTagList_084E41A4: @ 0x084E41A4
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	.2byte 0x111B, 0x111B, 0x111B, 0x111B
 sObjectEventPaletteTagList_084E41AC: @ 0x084E41AC
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	.2byte 0x1117, 0x1117, 0x1117, 0x1117
 sObjectEventPaletteTagList_084E41B4: @ 0x084E41B4
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	.2byte 0x1119, 0x1119, 0x1119, 0x1119
 sObjectEventPaletteTagList_084E41BC: @ 0x084E41BC
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	.2byte 0x1109, 0x1109, 0x1109, 0x1109
 sObjectEventPaletteTagList_084E41C4: @ 0x084E41C4
 	.2byte 0x111D, 0x111D, 0x111D, 0x111D
@@ -3945,10 +3969,16 @@ sSpecialObjectReflectionPaletteOverrides: @ 0x084E41CC
 	.2byte 0x11FF, 0
 	.4byte 0
 sObjectEventPaletteTagList_084E423C: @ 0x084E423C
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	.2byte 0x1100, 0x1101, 0x1103, 0x1104, 0x1105, 0x1106, 0x1107, 0x1108, 0x1109, 0x110A
 sObjectEventPaletteTagList_084E4250: @ 0x084E4250
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	.2byte 0x1100, 0x1101, 0x1103, 0x1104, 0x1105, 0x1106, 0x1107, 0x1108, 0x1109, 0x110A
 sObjectEventPaletteTagList_084E4264: @ 0x084E4264
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	.2byte 0x1100, 0x1101, 0x1103, 0x1104, 0x1105, 0x1106, 0x1107, 0x1108, 0x1109, 0x110A
 sObjectEventPaletteTagList_084E4278: @ 0x084E4278
 	.2byte 0x1100, 0x1101, 0x1103, 0x1104, 0x1105, 0x1106, 0x1107, 0x1108, 0x1109, 0x110A
@@ -4379,6 +4409,8 @@ gSpriteFrameImages_JP_084E4BAC: @ 0x084E4BAC
 	sprite_frame_image gObjectEventFrameGfx_JP_084CD66C, 0x100
 	sprite_frame_image gObjectEventFrameGfx_JP_084CD76C, 0x100
 sBerryTreePaletteSlots_084E4BF4: @ 0x084E4BF4
+	@ ANALYSIS: SEMANTIC_NUMERIC_BERRY_TREE_PALETTE_SLOTS
+	@ Berry-tree palette-slot lookup table.
 	@ berry tree palette slots indexed by growth stage
 	.byte 0x03, 0x04, 0x02, 0x02, 0x02, 0x3D, 0x3D, 0x3D, 0x3D, 0x3D
 sBerryTreeObjectEventGraphicsIds_084E4BFE: @ 0x084E4BFE
@@ -6655,9 +6687,13 @@ gMovementOffsetTable2: @ 0x084E6C0E
 	.byte 0x00, 0x00, 0xFF, 0x00, 0x00, 0xFF, 0x00, 0x00, 0xFF, 0x00, 0xFF, 0xFF, 0x00, 0xFF, 0xFF, 0x00
 	.byte 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFE
 sMovementOffsetSequence_084E6C56: @ 0x084E6C56
+	@ ANALYSIS: SEMANTIC_NUMERIC_MOVEMENT
+	@ Object-movement command bytecode/sequence; numeric bytes are movement commands and terminators.
 	.byte 0xFC, 0xFA, 0xF8, 0xF6, 0xF5, 0xF4, 0xF4, 0xF4
 	.byte 0xF5, 0xF6, 0xF7, 0xF8, 0xFA, 0xFC, 0x00, 0x00
 sMovementOffsetSequence_084E6C66: @ 0x084E6C66
+	@ ANALYSIS: SEMANTIC_NUMERIC_MOVEMENT
+	@ Object-movement command bytecode/sequence; numeric bytes are movement commands and terminators.
 	.byte 0x00, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xFA, 0xFA
 	.byte 0xFB, 0xFB, 0xFC, 0xFD, 0xFE, 0x00, 0x00, 0x00
 sMovementOffsetSequence_084E6C76: @ 0x084E6C76

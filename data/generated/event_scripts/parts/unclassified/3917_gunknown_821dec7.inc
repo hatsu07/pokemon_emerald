@@ -276,5 +276,7 @@ Movement_0821E0FB: @ 0x0821E0FB
 
 	.globl Movement_0821E102
 Movement_0821E102: @ 0x0821E102
+	@ ANALYSIS: SEMANTIC_NUMERIC_MOVEMENT_FRAGMENT
+	@ Object-movement command bytecode sequence.
 	.byte 0x0A, 0x0A, 0x26, 0xFE
 

@@ -537,6 +537,8 @@ EventScriptData_JP_0826439D:
 	goto .LStitchedEvent_08264761
 	end
 .LStitchedEvent_08264754:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	loadword 0x00, gText_Rom_264DFB
 	callstd 0x04
 	.byte 0x25 @ PROVEN_UNREFERENCED_STITCHED_EVENT_CMD special 0x017F; no matching SPECIAL_* constant
@@ -552,6 +554,8 @@ EventScriptData_JP_0826439D:
 	goto_if 0x01, .LStitchedEvent_08264780
 	end
 .LStitchedEvent_08264780:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	.byte 0x25 @ PROVEN_UNREFERENCED_STITCHED_EVENT_CMD special 0x018A; no matching SPECIAL_* constant
 	.2byte 0x018A
 	loadword 0x00, gText_Rom_264E8E
@@ -562,6 +566,8 @@ EventScriptData_JP_0826439D:
 	loadword 0x00, gText_Rom_264EA2
 	callstd 0x04
 .LStitchedEvent_08264795:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	fadescreen 0x01
 	setvar 0x800D, 0x0000
 	.byte 0x25 @ PROVEN_UNREFERENCED_STITCHED_EVENT_CMD special 0x0181; no matching SPECIAL_* constant
@@ -812,6 +818,8 @@ EventScriptData_JP_0826439D:
 	goto .LStitchedEvent_08264997
 	end
 .LStitchedEvent_08264986:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	.byte 0x25 @ PROVEN_UNREFERENCED_STITCHED_EVENT_CMD special 0x018D; no matching SPECIAL_* constant
 	.2byte 0x018D
 	loadword 0x00, gText_Rom_26512D

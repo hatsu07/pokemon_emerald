@@ -100,6 +100,8 @@ EventScript_JP_081E1607: @ 0x081E1607
 	end
 .globl EventScript_JP_081E1610
 EventScript_JP_081E1610: @ 0x081E1610
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
 	.byte 0x4F
@@ -335,6 +337,8 @@ EventScript_JP_081E174B: @ 0x081E174B
 	end
 .globl EventScript_JP_081E1754
 EventScript_JP_081E1754: @ 0x081E1754
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	loadword 0x00, gText_Rom_1E1BF8
@@ -351,6 +355,8 @@ EventScript_JP_081E1754: @ 0x081E1754
 	release
 	end
 EventScript_JP_081E177F: @ 0x081E177F
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
@@ -364,6 +370,8 @@ EventScript_JP_081E177F: @ 0x081E177F
 	.2byte 0x0000
 	return
 EventScript_JP_081E1791: @ 0x081E1791
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF

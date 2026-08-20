@@ -25,6 +25,8 @@ EventScript_JP_082035E1: @ 0x082035E1
 	goto_if 0x01, EventScript_JP_08203624
 	end
 EventScript_JP_082035FC: @ 0x082035FC
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	pokemart 0x0820360C
 	loadword 0x00, gText_Rom_243920
 	callstd 0x04

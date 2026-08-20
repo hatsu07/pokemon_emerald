@@ -749,6 +749,8 @@ gObjectEventFrameGfx_JP_084DD66C: @ 0x084DD66C
 	.incbin "build/graphics/object_events/pics/pokemon/ho_oh.4bpp", 0x200, 0x200 @ gObjectEventPic_HoOh frame slice
 	.globl gObjectEventPal_JP_084DD86C
 gObjectEventPal_JP_084DD86C: @ 0x084DD86C
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
+	@ Object-event sprite palette/tag data.
 	@ 16-color object-event palette
 	@ unreferenced payload gap: 0x084DD86C-0x084DD88B
 	.byte 0x0E, 0x53, 0x5F, 0x5B, 0xFE, 0x4A, 0x5B, 0x3A, 0x0F, 0x21, 0x7F, 0x27, 0xBA, 0x12, 0x90, 0x01

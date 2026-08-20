@@ -97,6 +97,8 @@ EventScriptData_JP_0824C559:
 	end
 	.globl EventScriptData_JP_0824C56F
 EventScriptData_JP_0824C56F:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	.byte 0x25 @ special 0x00AF; no matching SPECIAL_* constant found
 	.2byte 0x00AF
 	waitmessage

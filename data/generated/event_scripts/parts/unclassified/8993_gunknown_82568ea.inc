@@ -3,6 +3,8 @@
 EventScript_082568EA: @ 0x082568EA
 .globl EventScript_JP_082568EA
 EventScript_JP_082568EA: @ 0x082568EA
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	checkpartymove 0x0123
 	compare_var_to_value 0x800D, 0x0006
@@ -34,6 +36,8 @@ EventScript_JP_08256933: @ 0x08256933
 EventScript_08256935: @ 0x08256935
 .globl EventScript_JP_08256935
 EventScript_JP_08256935: @ 0x08256935
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	checkpartymove 0x0123
 	compare_var_to_value 0x800D, 0x0006
@@ -52,6 +56,8 @@ EventScript_JP_08256935: @ 0x08256935
 	.byte 0x02
 EventScript_08256974: @ 0x08256974
 EventScript_JP_08256974: @ 0x08256974
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	loadword 0x00, gText_Rom_2569CA
 	callstd 0x04

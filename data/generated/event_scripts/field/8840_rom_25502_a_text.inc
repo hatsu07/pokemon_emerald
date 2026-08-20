@@ -12,6 +12,8 @@ gText_Rom_25502A: @ 0x0825502A
 	@ analyzed canonical ROM range 0x08255064-0x08255185
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_08255064: @ 0x08255064
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	loadword 0x00, gText_Rom_254EB6
@@ -38,6 +40,8 @@ EventScript_JP_0825509D: @ 0x0825509D
 	release
 	end
 EventScript_JP_082550A7: @ 0x082550A7
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0071
@@ -63,11 +67,15 @@ EventScript_JP_082550E8: @ 0x082550E8
 	release
 	end
 EventScript_JP_082550F2: @ 0x082550F2
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	message gText_Rom_25502A
 	waitmessage
 	goto EventScript_JP_082550A7
 	.byte 0x02
 EventScript_JP_082550FE: @ 0x082550FE
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	message gText_Rom_254F01
 	waitmessage
 	goto EventScript_JP_082550A7
@@ -78,6 +86,8 @@ EventScript_JP_0825510A: @ 0x0825510A
 	release
 	end
 EventScript_JP_08255114: @ 0x08255114
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_254F78
 	callstd 0x04
 	@ event command: special
@@ -110,6 +120,8 @@ EventScript_JP_08255164: @ 0x08255164
 	release
 	end
 EventScript_JP_0825516E: @ 0x0825516E
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_254FE0
 	callstd 0x04
 	goto EventScript_JP_08255114

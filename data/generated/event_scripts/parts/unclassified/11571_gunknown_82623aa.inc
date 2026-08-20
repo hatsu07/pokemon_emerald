@@ -2,6 +2,8 @@
 	@ analyzed canonical ROM range 0x082623AA-0x082623CC
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_082623AA: @ 0x082623AA
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x40A4, 0x0001
 	@ event command: special
 	.byte 0x25
@@ -15,6 +17,8 @@ EventScript_JP_082623AA: @ 0x082623AA
 	.2byte 0x0005
 	.byte 0x02
 EventScript_JP_082623BB: @ 0x082623BB
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x40A4, 0x0001
 	@ event command: special
 	.byte 0x25
@@ -70,6 +74,8 @@ EventScript_JP_082623F9: @ 0x082623F9
 	@ analyzed canonical ROM range 0x0826240A-0x08262451
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_0826240A: @ 0x0826240A
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: special
 	.byte 0x25
@@ -83,6 +89,8 @@ EventScript_JP_0826240A: @ 0x0826240A
 	releaseall
 	end
 EventScript_JP_0826242E: @ 0x0826242E
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	fadescreen 0x01
 	@ event command: special
 	.byte 0x25

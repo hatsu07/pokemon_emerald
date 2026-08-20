@@ -11,6 +11,8 @@ gText_Rom_20E1F4: @ 0x0820E1F4
 	@ analyzed canonical ROM range 0x0820E223-0x0820E46A
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_0820E223: @ 0x0820E223
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	.byte 0x00
 MapScripts_JP_0820E224: @ 0x0820E224
 	@ map script dispatch table
@@ -30,6 +32,8 @@ EventScript_JP_0820E23F: @ 0x0820E23F
 	setstepcallback 0x04
 	end
 EventScript_JP_0820E242: @ 0x0820E242
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call EventScript_JP_0820E24B
 	@ event command: special
 	.byte 0x25
@@ -64,6 +68,8 @@ MapScriptTable_JP_0820E2A3: @ 0x0820E2A3
 	.4byte EventScript_JP_0820E301
 	.2byte 0
 EventScript_JP_0820E2C5: @ 0x0820E2C5
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	addvar 0x4022, 0x0001
 	delay 0x0028
 	playse 0x0028
@@ -73,6 +79,8 @@ EventScript_JP_0820E2C5: @ 0x0820E2C5
 	.2byte 0x008E
 	end
 EventScript_JP_0820E2D9: @ 0x0820E2D9
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	addvar 0x4022, 0x0001
 	delay 0x0028
 	playse 0x0028
@@ -82,6 +90,8 @@ EventScript_JP_0820E2D9: @ 0x0820E2D9
 	.2byte 0x008E
 	end
 EventScript_JP_0820E2ED: @ 0x0820E2ED
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	addvar 0x4022, 0x0001
 	delay 0x0028
 	playse 0x0028
@@ -91,6 +101,8 @@ EventScript_JP_0820E2ED: @ 0x0820E2ED
 	.2byte 0x008E
 	end
 EventScript_JP_0820E301: @ 0x0820E301
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	delay 0x0014
 	@ event command: applymovement
@@ -221,6 +233,8 @@ EventScript_JP_0820E437: @ 0x0820E437
 	.byte 0x02
 .globl EventScript_JP_0820E447
 EventScript_JP_0820E447: @ 0x0820E447
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	checkflag 0x086E
 	goto_if 0x01, EventScript_JP_0820E457

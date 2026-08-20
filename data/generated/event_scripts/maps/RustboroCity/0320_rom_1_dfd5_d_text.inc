@@ -92,6 +92,8 @@ EventScript_JP_081DFE7A: @ 0x081DFE7A
 	release
 	end
 EventScript_JP_081DFE8F: @ 0x081DFE8F
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_1E00E1
 	callstd 0x04
 	closemessage

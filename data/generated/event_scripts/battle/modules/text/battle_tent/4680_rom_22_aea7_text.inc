@@ -21,6 +21,8 @@ MapScriptTable_JP_0822AF2B: @ 0x0822AF2B
 	.4byte EventScript_JP_0822AF35
 	.2byte 0
 EventScript_JP_0822AF35: @ 0x0822AF35
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	delay 0x0010
 	@ event command: applymovement
 	.byte 0x4F
@@ -84,6 +86,8 @@ EventScript_JP_0822AF35: @ 0x0822AF35
 	waitdooranim
 	goto EventScript_JP_0822B003
 EventScript_JP_0822AFD5: @ 0x0822AFD5
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
@@ -111,6 +115,8 @@ EventScript_JP_0822AFD5: @ 0x0822AFD5
 	closedoor 0x000A, 0x0003
 	waitdooranim
 EventScript_JP_0822B003: @ 0x0822B003
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: warp
 	.byte 0x39
 	.byte 0x1A

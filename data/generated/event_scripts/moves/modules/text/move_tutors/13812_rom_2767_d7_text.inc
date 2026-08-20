@@ -12,6 +12,8 @@ gText_Rom_2767D7: @ 0x082767D7
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08276832: @ 0x08276832
 EventScript_JP_08276832: @ 0x08276832
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	checkflag 0x01B1
@@ -46,6 +48,8 @@ EventScript_JP_08276890: @ 0x08276890
 	end
 .globl EventScript_JP_0827689A
 EventScript_JP_0827689A: @ 0x0827689A
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	checkflag 0x01B2
@@ -78,6 +82,8 @@ EventScript_JP_082768F8: @ 0x082768F8
 	end
 .globl EventScript_JP_08276902
 EventScript_JP_08276902: @ 0x08276902
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	checkflag 0x01B3
@@ -110,6 +116,8 @@ EventScript_JP_08276960: @ 0x08276960
 	end
 .globl EventScript_JP_0827696A
 EventScript_JP_0827696A: @ 0x0827696A
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	checkflag 0x01B4
@@ -142,6 +150,8 @@ EventScript_JP_082769C8: @ 0x082769C8
 	end
 .globl EventScript_JP_082769D2
 EventScript_JP_082769D2: @ 0x082769D2
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	checkflag 0x01B5
@@ -174,6 +184,8 @@ EventScript_JP_08276A30: @ 0x08276A30
 	end
 .globl EventScript_JP_08276A3A
 EventScript_JP_08276A3A: @ 0x08276A3A
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	checkflag 0x01B6
@@ -206,6 +218,8 @@ EventScript_JP_08276A98: @ 0x08276A98
 	end
 .globl EventScript_JP_08276AA2
 EventScript_JP_08276AA2: @ 0x08276AA2
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	checkflag 0x01B7
@@ -238,6 +252,8 @@ EventScript_JP_08276B00: @ 0x08276B00
 	end
 .globl EventScript_JP_08276B0A
 EventScript_JP_08276B0A: @ 0x08276B0A
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	checkflag 0x01B8
@@ -270,6 +286,8 @@ EventScript_JP_08276B68: @ 0x08276B68
 	end
 .globl EventScript_JP_08276B72
 EventScript_JP_08276B72: @ 0x08276B72
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	checkflag 0x01B9
@@ -302,6 +320,8 @@ EventScript_JP_08276BD0: @ 0x08276BD0
 	end
 .globl EventScript_JP_08276BDA
 EventScript_JP_08276BDA: @ 0x08276BDA
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	checkflag 0x01BA
@@ -333,6 +353,8 @@ EventScript_JP_08276C38: @ 0x08276C38
 	release
 	end
 EventScript_JP_08276C42: @ 0x08276C42
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x01DA
@@ -342,6 +364,8 @@ EventScript_JP_08276C42: @ 0x08276C42
 	return
 EventScript_08276C49: @ 0x08276C49
 EventScript_JP_08276C49: @ 0x08276C49
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_275F5D
 	callstd 0x05
 	return

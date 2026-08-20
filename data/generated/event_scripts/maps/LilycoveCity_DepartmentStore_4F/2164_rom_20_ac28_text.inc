@@ -87,6 +87,8 @@ EventScript_JP_0820AD40: @ 0x0820AD40
 	end
 .globl EventScript_JP_0820AD49
 EventScript_JP_0820AD49: @ 0x0820AD49
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
 	.byte 0x4F

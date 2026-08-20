@@ -38,6 +38,8 @@ EventScript_JP_08211612: @ 0x08211612
 	return
 .globl EventScript_JP_08211629
 EventScript_JP_08211629: @ 0x08211629
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	checkflag 0x0093
@@ -49,6 +51,8 @@ EventScript_JP_08211629: @ 0x08211629
 	goto EventScript_JP_08211670
 	.byte 0x02
 EventScript_JP_0821164C: @ 0x0821164C
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setflag 0x0093
 	loadword 0x00, gText_Rom_211732
 	callstd 0x04
@@ -71,6 +75,8 @@ EventScript_JP_08211670: @ 0x08211670
 	goto_if 0x01, EventScript_JP_082116DF
 	end
 EventScript_JP_082116A3: @ 0x082116A3
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_21185C
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
@@ -78,6 +84,8 @@ EventScript_JP_082116A3: @ 0x082116A3
 	goto EventScript_JP_082116E9
 	.byte 0x02
 EventScript_JP_082116BC: @ 0x082116BC
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_2118C7
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000

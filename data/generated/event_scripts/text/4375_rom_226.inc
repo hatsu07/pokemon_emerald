@@ -14,6 +14,8 @@ MapScripts_JP_08226D8C: @ 0x08226D8C
 	.4byte MapScriptTable_JP_08226DA5
 	.byte 0
 EventScript_JP_08226D9C: @ 0x08226D9C
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0015
 	@ event command: special
 	.byte 0x25
@@ -42,12 +44,16 @@ MapScriptTable_JP_08226DB9: @ 0x08226DB9
 	.4byte EventScript_JP_08226EEA
 	.2byte 0
 EventScript_JP_08226DE3: @ 0x08226DE3
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0000
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00E7
 	end
 EventScript_JP_08226DEC: @ 0x08226DEC
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	loadword 0x00, gText_Rom_2277D7
 	callstd 0x04
@@ -80,6 +86,8 @@ EventScript_JP_08226DEC: @ 0x08226DEC
 	releaseall
 	end
 EventScript_JP_08226E45: @ 0x08226E45
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call 0x08221FB3
 	lockall
 	setvar 0x8004, 0x000A
@@ -95,6 +103,8 @@ EventScript_JP_08226E6B: @ 0x08226E6B
 	loadword 0x00, gText_Rom_227CCA
 	callstd 0x04
 EventScript_JP_08226E73: @ 0x08226E73
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_227D04
 	callstd 0x04
 	setvar 0x8004, 0x000B
@@ -143,6 +153,8 @@ EventScript_JP_08226E73: @ 0x08226E73
 	.2byte 0x0000
 	goto EventScript_JP_08226F3B
 EventScript_JP_08226EEA: @ 0x08226EEA
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	loadword 0x00, gText_Rom_22789C
 	callstd 0x04
@@ -179,6 +191,8 @@ EventScript_JP_08226EEA: @ 0x08226EEA
 	.byte 0x25
 	.2byte 0x0000
 EventScript_JP_08226F3B: @ 0x08226F3B
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x000D
 	setvar 0x8005, 0x0000
 	@ event command: special
@@ -239,6 +253,8 @@ EventScript_JP_08226FDF: @ 0x08226FDF
 	.byte 0x02
 .globl EventScript_JP_08226FF1
 EventScript_JP_08226FF1: @ 0x08226FF1
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	setvar 0x40CF, 0x0001
@@ -246,6 +262,8 @@ EventScript_JP_08226FF1: @ 0x08226FF1
 	goto EventScript_JP_08227003
 	.byte 0x02
 EventScript_JP_08227003: @ 0x08227003
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0027
@@ -270,6 +288,8 @@ EventScript_JP_0822701C: @ 0x0822701C
 	compare_var_to_value 0x8000, 0x007F
 	goto_if 0x01, EventScript_JP_0822720E
 EventScript_JP_08227069: @ 0x08227069
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	message gText_Rom_22764D
 	waitmessage
 	multichoice 0x11, 0x06, 0x18, 0x00
@@ -312,6 +332,8 @@ EventScript_JP_08227069: @ 0x08227069
 	compare_var_to_value 0x8000, 0x007F
 	goto_if 0x01, EventScript_JP_0822720B
 EventScript_JP_0822710A: @ 0x0822710A
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x4000, 0x0000
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0004
@@ -348,6 +370,8 @@ EventScript_JP_0822710A: @ 0x0822710A
 	.byte 0x25
 	.2byte 0x00E9
 EventScript_JP_0822716C: @ 0x0822716C
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0027
@@ -396,6 +420,8 @@ EventScript_JP_082271E7: @ 0x082271E7
 	callstd 0x04
 	goto EventScript_JP_08227216
 EventScript_JP_082271F4: @ 0x082271F4
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
@@ -404,6 +430,8 @@ EventScript_JP_082271F4: @ 0x082271F4
 	.2byte 0x00E7
 	goto EventScript_JP_0822720E
 EventScript_JP_0822720B: @ 0x0822720B
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028
@@ -414,6 +442,8 @@ EventScript_JP_08227216: @ 0x08227216
 	release
 	end
 EventScript_JP_08227218: @ 0x08227218
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	compare_var_to_value 0x40CE, 0x0000
 	call_if 0x01, EventScript_JP_08227287
 	compare_var_to_value 0x40CE, 0x0001
@@ -448,24 +478,32 @@ EventScript_JP_08227218: @ 0x08227218
 	waitdooranim
 	return
 EventScript_JP_08227287: @ 0x08227287
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
 	.4byte 0x082272EF @ Movement_JP_082272EF
 	return
 EventScript_JP_0822728F: @ 0x0822728F
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
 	.4byte 0x082272EF @ Movement_JP_082272EF
 	return
 EventScript_JP_08227297: @ 0x08227297
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
 	.4byte 0x082272F5 @ Movement_JP_082272F5
 	return
 EventScript_JP_0822729F: @ 0x0822729F
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
@@ -556,6 +594,8 @@ EventScript_JP_08227315: @ 0x08227315
 	end
 .globl EventScript_JP_0822732E
 EventScript_JP_0822732E: @ 0x0822732E
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0009
 	@ event command: special
@@ -625,6 +665,8 @@ EventScript_JP_082273C3: @ 0x082273C3
 	.byte 0x02, 0x02
 .globl EventScript_JP_082273DE
 EventScript_JP_082273DE: @ 0x082273DE
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	loadword 0x00, gText_Rom_227D5C
 	callstd 0x04
@@ -647,16 +689,22 @@ EventScript_JP_082273ED: @ 0x082273ED
 	goto_if 0x01, EventScript_JP_0822745F
 	end
 EventScript_JP_08227435: @ 0x08227435
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_227D84
 	callstd 0x04
 	goto EventScript_JP_082273ED
 	.byte 0x02
 EventScript_JP_08227443: @ 0x08227443
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_227DDA
 	callstd 0x04
 	goto EventScript_JP_082273ED
 	.byte 0x02
 EventScript_JP_08227451: @ 0x08227451
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_227E6C
 	callstd 0x04
 	goto EventScript_JP_082273ED

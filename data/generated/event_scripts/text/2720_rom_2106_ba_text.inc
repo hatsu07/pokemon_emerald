@@ -61,6 +61,8 @@ EventScript_JP_0821073C: @ 0x0821073C
 	release
 	end
 EventScript_JP_08210746: @ 0x08210746
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0000
 	@ event command: special
 	.byte 0x25

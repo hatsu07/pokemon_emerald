@@ -23,6 +23,8 @@ EventScript_JP_082563C4: @ 0x082563C4
 	goto_if 0x01, EventScript_JP_08256448
 	end
 EventScript_JP_082563E5: @ 0x082563E5
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x006A
@@ -32,6 +34,8 @@ EventScript_JP_082563E5: @ 0x082563E5
 	goto_if 0x01, EventScript_JP_08256452
 	end
 EventScript_JP_082563FF: @ 0x082563FF
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x006A
@@ -41,11 +45,15 @@ EventScript_JP_082563FF: @ 0x082563FF
 	goto_if 0x01, EventScript_JP_08256452
 	end
 EventScript_JP_08256419: @ 0x08256419
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_256397
 	callstd 0x04
 	goto EventScript_JP_08256427
 	.byte 0x02
 EventScript_JP_08256427: @ 0x08256427
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0069

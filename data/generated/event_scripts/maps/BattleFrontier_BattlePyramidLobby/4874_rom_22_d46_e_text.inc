@@ -36,6 +36,8 @@ EventScript_JP_0822D526: @ 0x0822D526
 	setvar 0x8007, 0x0037
 	setvar 0x800D, 0x0000
 EventScript_JP_0822D540: @ 0x0822D540
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00F0
@@ -46,6 +48,8 @@ EventScript_JP_0822D540: @ 0x0822D540
 	releaseall
 	end
 EventScript_JP_0822D558: @ 0x0822D558
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0197
@@ -56,6 +60,8 @@ EventScript_JP_0822D561: @ 0x0822D561
 	setvar 0x400E, 0x0001
 	end
 EventScript_JP_0822D56B: @ 0x0822D56B
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x000F
 	@ event command: special
 	.byte 0x25
@@ -102,6 +108,8 @@ EventScript_JP_0822D602: @ 0x0822D602
 	end
 	.globl EventScript_JP_0822D60B
 EventScript_JP_0822D60B: @ 0x0822D60B
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0004
@@ -115,6 +123,8 @@ EventScript_JP_0822D60B: @ 0x0822D60B
 	.byte 0x25
 	.2byte 0x00F0
 EventScript_JP_0822D62F: @ 0x0822D62F
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x000D
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
@@ -137,6 +147,8 @@ EventScript_JP_0822D62F: @ 0x0822D62F
 	.2byte 0x000D
 	.byte 0x27, 0x02
 EventScript_JP_0822D656: @ 0x0822D656
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0001
 	@ event command: special
@@ -167,6 +179,8 @@ EventScript_JP_0822D693: @ 0x0822D693
 	setvar 0x400F, 0x0001
 	end
 EventScript_JP_0822D69E: @ 0x0822D69E
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x000D
 	setvar 0x8005, 0x0020
 	setvar 0x8006, 0x0000

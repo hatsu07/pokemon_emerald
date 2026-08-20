@@ -109,10 +109,14 @@ gText_Rom_5989B7: @ 0x085989B7
 	@ analyzed canonical ROM range 0x085989BF-0x08598C67
 	@ one-byte alignment padding before the landmark info table
 sLandmarkInfoPadding_085989BF: @ 0x085989BF
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.byte 0x00
 
 	@ landmark display candidates: text pointer, visibility flag, padding
 sLandmarkInfo_085989C0: @ 0x085989C0
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x08598854
 	.2byte 0x089C
 	.2byte 0
@@ -121,6 +125,8 @@ sLandmarkInfo_085989C8: @ 0x085989C8
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_085989D0: @ 0x085989D0
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x08598864
 	.2byte 0x089D
 	.2byte 0
@@ -129,14 +135,20 @@ sLandmarkInfo_085989D8: @ 0x085989D8
 	.2byte 0x089E
 	.2byte 0
 sLandmarkInfo_085989E0: @ 0x085989E0
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x08598875
 	.2byte 0x089F
 	.2byte 0
 sLandmarkInfo_085989E8: @ 0x085989E8
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x0859887B
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_085989F0: @ 0x085989F0
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x08598884
 	.2byte 0xFFFF
 	.2byte 0
@@ -145,10 +157,14 @@ sLandmarkInfo_085989F8: @ 0x085989F8
 	.2byte 0x08A0
 	.2byte 0
 sLandmarkInfo_08598A00: @ 0x08598A00
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x08598897
 	.2byte 0x08A2
 	.2byte 0
 sLandmarkInfo_08598A08: @ 0x08598A08
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x0859889F
 	.2byte 0x08A1
 	.2byte 0
@@ -157,18 +173,26 @@ sLandmarkInfo_08598A10: @ 0x08598A10
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_08598A18: @ 0x08598A18
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x085988AC
 	.2byte 0x08A3
 	.2byte 0
 sLandmarkInfo_08598A20: @ 0x08598A20
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x085988B7
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_08598A28: @ 0x08598A28
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x085988C1
 	.2byte 0x08A4
 	.2byte 0
 sLandmarkInfo_08598A30: @ 0x08598A30
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x085988CB
 	.2byte 0xFFFF
 	.2byte 0
@@ -177,6 +201,8 @@ sLandmarkInfo_08598A38: @ 0x08598A38
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_08598A40: @ 0x08598A40
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x085988DF
 	.2byte 0x08BA
 	.2byte 0
@@ -185,10 +211,14 @@ sLandmarkInfo_08598A48: @ 0x08598A48
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_08598A50: @ 0x08598A50
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x085988F3
 	.2byte 0x08A6
 	.2byte 0
 sLandmarkInfo_08598A58: @ 0x08598A58
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x085988FC
 	.2byte 0xFFFF
 	.2byte 0
@@ -209,10 +239,14 @@ sLandmarkInfo_08598A78: @ 0x08598A78
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_08598A80: @ 0x08598A80
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x08598929
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_08598A88: @ 0x08598A88
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x0859892F
 	.2byte 0x08A5
 	.2byte 0
@@ -225,6 +259,8 @@ sLandmarkInfo_08598A98: @ 0x08598A98
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_08598AA0: @ 0x08598AA0
+	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
+	@ Region-map landmark metadata/lookup data.
 	.4byte 0x0859894F
 	.2byte 0x08C3
 	.2byte 0

@@ -32,6 +32,8 @@ EventScript_JP_082058AE: @ 0x082058AE
 	return
 EventScript_082058B7: @ 0x082058B7
 EventScript_JP_082058B7: @ 0x082058B7
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setflag 0x0002
 	playfanfare 0x0172
 	waitfanfare

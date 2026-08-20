@@ -40,6 +40,8 @@ MapScriptTable_JP_0820C852: @ 0x0820C852
 	.4byte EventScript_JP_0820C85C
 	.2byte 0
 EventScript_JP_0820C85C: @ 0x0820C85C
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
 	.byte 0x4F
@@ -113,6 +115,8 @@ Movement_JP_0820C8CD: @ 0x0820C8CD
 	step_end
 .globl EventScript_JP_0820C8D3
 EventScript_JP_0820C8D3: @ 0x0820C8D3
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	loadword 0x00, gText_Rom_20CAF7
 	callstd 0x05
@@ -126,6 +130,8 @@ EventScript_JP_0820C8ED: @ 0x0820C8ED
 	releaseall
 	end
 EventScript_JP_0820C8F7: @ 0x0820C8F7
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x4001, 0x018E
 	givemon 0x018E, 0x05, 0x0000, 0x00000000, 0x00000000, 0x00
 	compare_var_to_value 0x800D, 0x0000
@@ -135,6 +141,8 @@ EventScript_JP_0820C8F7: @ 0x0820C8F7
 	goto 0x0824423B
 	.byte 0x02
 EventScript_JP_0820C927: @ 0x0820C927
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call EventScript_JP_0820C97D
 	loadword 0x00, gText_Rom_243EDB
 	callstd 0x05
@@ -145,6 +153,8 @@ EventScript_JP_0820C927: @ 0x0820C927
 	goto EventScript_JP_0820C993
 	.byte 0x02
 EventScript_JP_0820C94F: @ 0x0820C94F
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call EventScript_JP_0820C97D
 	loadword 0x00, gText_Rom_243EDB
 	callstd 0x05
@@ -154,10 +164,14 @@ EventScript_JP_0820C94F: @ 0x0820C94F
 	goto EventScript_JP_0820C972
 	.byte 0x02
 EventScript_JP_0820C972: @ 0x0820C972
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call 0x082441CA
 	goto EventScript_JP_0820C993
 	.byte 0x02
 EventScript_JP_0820C97D: @ 0x0820C97D
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	bufferspeciesname 0x01, 0x018E
 	@ event command: removeobject
 	.byte 0x53
@@ -185,6 +199,8 @@ EventScript_JP_0820C9A4: @ 0x0820C9A4
 	end
 .globl EventScript_JP_0820C9AD
 EventScript_JP_0820C9AD: @ 0x0820C9AD
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	loadword 0x00, gText_Rom_20CB77
 	callstd 0x04

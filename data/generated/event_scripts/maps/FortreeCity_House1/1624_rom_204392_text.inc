@@ -18,6 +18,8 @@ MapScripts_JP_0820439E: @ 0x0820439E
 	.4byte MapScriptTable_JP_082043AD
 	.byte 0
 EventScript_JP_082043A9: @ 0x082043A9
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00C9
@@ -204,6 +206,8 @@ EventScript_JP_08204544: @ 0x08204544
 	.byte 0x02
 .globl EventScript_JP_08204554
 EventScript_JP_08204554: @ 0x08204554
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	checkflag 0x086C
 	goto_if 0x01, EventScript_JP_08204564

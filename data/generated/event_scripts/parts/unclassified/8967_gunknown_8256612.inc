@@ -3,12 +3,16 @@
 EventScript_08256612: @ 0x08256612
 .globl EventScript_JP_08256612
 EventScript_JP_08256612: @ 0x08256612
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	dofieldeffect 0x0002
 	waitstate
 	goto EventScript_JP_0825661D
 	.byte 0x02
 EventScript_JP_0825661D: @ 0x0825661D
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800F

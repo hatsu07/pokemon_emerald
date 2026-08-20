@@ -19,6 +19,8 @@ EventScript_JP_0820A5B0: @ 0x0820A5B0
 	end
 .globl EventScript_JP_0820A5B9
 EventScript_JP_0820A5B9: @ 0x0820A5B9
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	dotimebasedevents
@@ -113,6 +115,8 @@ EventScript_JP_0820A6B4: @ 0x0820A6B4
 	release
 	end
 EventScript_JP_0820A6BE: @ 0x0820A6BE
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_263357
 	callstd 0x04
 	goto EventScript_JP_0820A6CC
@@ -139,6 +143,8 @@ EventScript_JP_0820A6F1: @ 0x0820A6F1
 	callstd 0x04
 	return
 EventScript_JP_0820A6FA: @ 0x0820A6FA
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	copyvar 0x404D, 0x8004
 	copyvar 0x4045, 0x8005
 	goto EventScript_JP_0820A70A

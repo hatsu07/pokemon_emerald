@@ -13,6 +13,8 @@ gText_Rom_209D18: @ 0x08209D18
 	.byte 0x00
 .globl EventScript_JP_08209D71
 EventScript_JP_08209D71: @ 0x08209D71
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
 	.byte 0x4F
@@ -31,6 +33,8 @@ EventScript_JP_08209D71: @ 0x08209D71
 	releaseall
 	end
 EventScript_JP_08209DA1: @ 0x08209DA1
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_209EA5
 	callstd 0x04
 	@ event command: special
@@ -71,6 +75,8 @@ EventScript_JP_08209DA1: @ 0x08209DA1
 	releaseall
 	end
 EventScript_JP_08209E16: @ 0x08209E16
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0206
@@ -86,6 +92,8 @@ EventScript_JP_08209E16: @ 0x08209E16
 	releaseall
 	end
 EventScript_JP_08209E35: @ 0x08209E35
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00DE
@@ -104,6 +112,8 @@ EventScript_JP_08209E4C: @ 0x08209E4C
 	releaseall
 	end
 EventScript_JP_08209E56: @ 0x08209E56
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00DE

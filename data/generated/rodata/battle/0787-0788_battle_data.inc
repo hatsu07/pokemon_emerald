@@ -3,6 +3,8 @@
 gPokemonStorageSystemData_08551868: @ 0x08551868
 	@ confirmed contiguous ROM pointer table: 48 entries from this address
 sPointerTable_08551868:
+	@ ANALYSIS: SEMANTIC_NUMERIC_RAW_POINTER_TABLE
+	@ ROM pointer table stored as little-endian numeric bytes; target semantics remain to be named separately.
 	@ analyzed canonical ROM range 0x08551868-0x08555A3F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x14, 0xCC, 0x54, 0x08, 0x98, 0xD0, 0x54, 0x08, 0xD4, 0xCB, 0x54, 0x08, 0xB8, 0xD1, 0x54, 0x08

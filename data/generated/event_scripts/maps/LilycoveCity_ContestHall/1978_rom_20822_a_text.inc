@@ -18,10 +18,14 @@ MapScripts_JP_0820824A: @ 0x0820824A
 	.4byte SharedMapScript_0824790F
 	.byte 0
 EventScript_JP_08208255: @ 0x08208255
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setrespawn 0x0008
 	goto EventScript_JP_0820825E
 	.byte 0x02
 EventScript_JP_0820825E: @ 0x0820825E
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0169

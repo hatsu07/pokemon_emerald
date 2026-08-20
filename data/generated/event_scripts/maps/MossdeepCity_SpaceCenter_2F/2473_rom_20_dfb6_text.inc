@@ -20,6 +20,8 @@ MapScripts_JP_0820E01E: @ 0x0820E01E
 	.4byte 0x082468BC
 	.byte 0
 MapScriptTable_JP_0820E02E: @ 0x0820E02E
+	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_SCRIPT_TABLE
+	@ Map-script dispatch table; numeric fields encode script type/condition and target pointer.
 	@ conditional map script table
 	.2byte 0x4087, 0x0008
 	.4byte 0x082468AC

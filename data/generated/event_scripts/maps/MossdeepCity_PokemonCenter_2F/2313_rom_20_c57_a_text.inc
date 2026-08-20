@@ -14,6 +14,8 @@ EventScript_0820C5B2: @ 0x0820C5B2
 	.byte 0x00
 .globl EventScript_JP_0820C5B3
 EventScript_JP_0820C5B3: @ 0x0820C5B3
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	message gText_Rom_24390F

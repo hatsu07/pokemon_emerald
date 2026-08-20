@@ -562,6 +562,8 @@ gSongTable: @ 0x0863C2AC
 	song SongHeader_MUS_RG_TEACHY_TV_MENU, 0, 0 @ song 558
 
 M4aDummySongHeader_JP_0863D424: @ 0x0863D424
+	@ ANALYSIS: SEMANTIC_NUMERIC_M4A_DATA
+	@ m4a sound-driver lookup/header data; numeric representation is part of the audio format.
 	.byte 0x00, 0x00, 0x00, 0x00
 
 DirectSoundWaveData_JP_0863D428: @ 0x0863D428

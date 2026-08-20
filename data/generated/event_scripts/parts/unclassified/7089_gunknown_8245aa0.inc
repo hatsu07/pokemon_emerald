@@ -180,6 +180,8 @@ EventScriptData_JP_08245C30:
 	.2byte 0x0009
 	end
 .LResidualEvent_08245C5A:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	closemessage
 	setflag 0x0060
 	.byte 0x25 @ special 0x0018; no matching SPECIAL_* constant
@@ -1037,14 +1039,20 @@ EventScript_ShowMessage_08246316:
 	release
 	end
 .LClosedEvent_0824636C:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	.byte 0x25 @ PROVEN_UNREFERENCED_EVENT_CMD special 0x0160; no matching SPECIAL_* constant
 	.2byte 0x0160
 	return
 .LClosedEvent_08246370:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	.byte 0x25 @ PROVEN_UNREFERENCED_EVENT_CMD special 0x0161; no matching SPECIAL_* constant
 	.2byte 0x0161
 	return
 .LClosedEvent_08246374:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	.byte 0x25 @ PROVEN_UNREFERENCED_EVENT_CMD special 0x0162; no matching SPECIAL_* constant
 	.2byte 0x0162
 	return

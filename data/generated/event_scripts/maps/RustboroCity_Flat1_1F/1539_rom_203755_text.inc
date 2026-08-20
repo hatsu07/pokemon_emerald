@@ -21,6 +21,8 @@ EventScript_JP_08203771: @ 0x08203771
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_082037E4
 EventScript_JP_0820378E: @ 0x0820378E
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	.byte 0x25
 	.2byte 0x01FE
@@ -70,6 +72,8 @@ EventScript_JP_08203818: @ 0x08203818
 	release
 	end
 EventScript_JP_0820382F: @ 0x0820382F
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_2039FB
 	callstd 0x04
 	call EventScript_JP_0820386F

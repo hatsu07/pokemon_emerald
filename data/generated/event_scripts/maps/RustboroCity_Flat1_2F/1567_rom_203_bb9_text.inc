@@ -13,6 +13,8 @@ gText_Rom_203BB9: @ 0x08203BB9
 	.byte 0x00
 .globl EventScript_JP_08203BC9
 EventScript_JP_08203BC9: @ 0x08203BC9
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	checkflag 0x0099

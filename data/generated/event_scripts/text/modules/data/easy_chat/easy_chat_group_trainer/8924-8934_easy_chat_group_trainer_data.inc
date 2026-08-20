@@ -107,6 +107,8 @@ EventText_JP_08256224: @ 0x08256224
 EventText_JP_0825622F: @ 0x0825622F
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nおんせんに　はいった　らしい!\p{STR_VAR_3}は　きっと\nおはだが　ツルツルの　トレーナー　だろう!{EOS}"
 EventScript_JP_0825627D: @ 0x0825627D
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
 	setvar 0x8008, 0x0000
@@ -139,6 +141,8 @@ EventScript_JP_0825627D: @ 0x0825627D
 	goto_if 0x01, EventScript_JP_082562F0
 	goto EventScript_JP_08256342
 EventScript_JP_082562EA: @ 0x082562EA
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	goto EventScript_JP_0825634C
 	.byte 0x02
 EventScript_JP_082562F0: @ 0x082562F0
@@ -169,6 +173,8 @@ EventScript_JP_08256342: @ 0x08256342
 	release
 	end
 EventScript_JP_0825634C: @ 0x0825634C
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_2551B4
 	callstd 0x04
 	release

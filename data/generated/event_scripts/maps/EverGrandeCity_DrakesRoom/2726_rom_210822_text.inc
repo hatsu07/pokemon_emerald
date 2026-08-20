@@ -73,6 +73,8 @@ EventScript_JP_08210926: @ 0x08210926
 	goto EventScript_JP_08210942
 	.byte 0x02
 EventScript_JP_08210942: @ 0x08210942
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	playse 0x0008
 	setmetatile 0x0006, 0x0001, 0x0346, 0x0000
 	setmetatile 0x0006, 0x0002, 0x0347, 0x0000
@@ -105,6 +107,8 @@ EventScript_JP_082109A2: @ 0x082109A2
 	playbgm 0x01A5, 0x00
 	return
 EventScript_JP_082109A7: @ 0x082109A7
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_210D9B
 	callstd 0x04
 	delay 0x0028
@@ -129,6 +133,8 @@ EventScript_JP_082109A7: @ 0x082109A7
 	goto EventScript_JP_08210A11
 	.byte 0x02
 EventScript_JP_082109DC: @ 0x082109DC
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	loadword 0x00, gText_Rom_210DED
 	callstd 0x04
 	delay 0x0028
@@ -153,6 +159,8 @@ EventScript_JP_082109DC: @ 0x082109DC
 	goto EventScript_JP_08210A11
 	.byte 0x02
 EventScript_JP_08210A11: @ 0x08210A11
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	closemessage
 	@ event command: addobject
 	.byte 0x55
@@ -259,6 +267,8 @@ EventScript_JP_08210AD5: @ 0x08210AD5
 	callstd 0x04
 	return
 EventScript_JP_08210ADE: @ 0x08210ADE
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
@@ -275,6 +285,8 @@ EventScript_JP_08210ADE: @ 0x08210ADE
 	.2byte 0x0000
 	return
 EventScript_JP_08210AF3: @ 0x08210AF3
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002

@@ -40,10 +40,14 @@ EventScript_JP_082743E2: @ 0x082743E2
 	.byte 0x02
 .globl EventScript_JP_082743ED
 EventScript_JP_082743ED: @ 0x082743ED
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8007, 0x0002
 	goto EventScript_JP_082743F8
 	.byte 0x02
 EventScript_JP_082743F8: @ 0x082743F8
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0001
 	@ event command: special
@@ -97,6 +101,8 @@ EventScript_JP_082743F8: @ 0x082743F8
 	goto_if 0x01, EventScript_JP_082744B9
 	end
 EventScript_JP_082744B9: @ 0x082744B9
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
@@ -160,6 +166,8 @@ EventScript_JP_08274516: @ 0x08274516
 	end
 .globl EventScript_JP_0827452B
 EventScript_JP_0827452B: @ 0x0827452B
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0019
 	@ event command: special
 	.byte 0x25
@@ -203,6 +211,8 @@ EventScript_JP_0827452B: @ 0x0827452B
 	waitstate
 	end
 EventScript_JP_082745B1: @ 0x082745B1
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0018
 	setvar 0x8005, 0x0001
 	@ event command: special
@@ -210,6 +220,8 @@ EventScript_JP_082745B1: @ 0x082745B1
 	.2byte 0x00EF
 	return
 EventScript_JP_082745BF: @ 0x082745BF
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0018
 	setvar 0x8005, 0x0000
 	@ event command: special
@@ -217,6 +229,8 @@ EventScript_JP_082745BF: @ 0x082745BF
 	.2byte 0x00EF
 	return
 EventScript_JP_082745CD: @ 0x082745CD
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
@@ -314,6 +328,8 @@ EventScript_JP_08274696: @ 0x08274696
 	end
 	.globl EventScript_JP_082746AB
 EventScript_JP_082746AB: @ 0x082746AB
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0004
