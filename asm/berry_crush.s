@@ -1237,7 +1237,7 @@ _08021314:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08021324: .4byte gBerryCrushData_082C7A74
+_08021324: .4byte sBerryCrushPlayerBerrySpriteTags
 _08021328: .4byte gBerryCrushData_082C7BF8
 _0802132C: .4byte 0x020205AC
 _08021330: .4byte 0x0000FFF0
@@ -1354,7 +1354,7 @@ _08021404:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802140C: .4byte gBerryCrushData_082C7A74
+_0802140C: .4byte sBerryCrushPlayerBerrySpriteTags
 	thumb_func_end sub_080213D8
 
 	thumb_func_start sub_08021410
@@ -1473,7 +1473,7 @@ _080214DE:
 	ldrb r1, [r2]
 	b _080215CC
 	.align 2, 0
-_080214EC: .4byte gBerryCrushData_082C7A59
+_080214EC: .4byte sBerryCrushImpactCoordsYField
 _080214F0:
 	ldrh r0, [r6, #0x28]
 	movs r1, #3
@@ -1550,7 +1550,7 @@ _08021518:
 	.align 2, 0
 _08021584: .4byte 0x0802288D
 _08021588: .4byte 0x082C7A5E
-_0802158C: .4byte gBerryCrushData_082C7A5F
+_0802158C: .4byte sBerryCrushSparkleCoordsYField
 _08021590:
 	ldr r0, [r7]
 	movs r1, #0
@@ -1745,7 +1745,7 @@ _080216D6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080216F0: .4byte gBerryCrushData_082C5F64
+_080216F0: .4byte sBerryCrushPressingSpeedConversionTable
 _080216F4: .4byte 0x000F4240
 	thumb_func_end sub_08021674
 
@@ -1951,7 +1951,7 @@ _080217F4:
 	b _08021A0A
 	.align 2, 0
 _08021880: .4byte 0x02021C40
-_08021884: .4byte gBerryCrushData_082C7C40
+_08021884: .4byte sBerryCrushResultsTexts
 _08021888: .4byte gBerryCrushData_082C5EF0
 _0802188C:
 	ldr r1, [sp, #0x24]
@@ -2069,10 +2069,10 @@ _08021916:
 	b _08021A0A
 	.align 2, 0
 _08021974: .4byte 0x02021C40
-_08021978: .4byte gBerryCrushData_082C5F64
+_08021978: .4byte sBerryCrushPressingSpeedConversionTable
 _0802197C: .4byte 0x000F4240
 _08021980: .4byte 0x02021C54
-_08021984: .4byte gBerryCrushData_082C7C40
+_08021984: .4byte sBerryCrushResultsTexts
 _08021988: .4byte 0x02021C7C
 _0802198C: .4byte gBerryCrushData_082C5EF0
 _08021990:
@@ -2147,7 +2147,7 @@ _08021A0A:
 	.align 2, 0
 _08021A20: .4byte gBerries
 _08021A24: .4byte 0x02021C40
-_08021A28: .4byte gBerryCrushData_082C7C40
+_08021A28: .4byte sBerryCrushResultsTexts
 _08021A2C: .4byte 0x02021C7C
 _08021A30: .4byte gBerryCrushData_082C5EF0
 _08021A34: .4byte 0x02021C68
@@ -2490,7 +2490,7 @@ _08021D10: .4byte 0x085CCA08
 _08021D14: .4byte gBerryCrushData_085CCA04
 _08021D18: .4byte 0x085CC9F4
 _08021D1C: .4byte 0x085CCA20
-_08021D20: .4byte gBerryCrushData_082C5F64
+_08021D20: .4byte sBerryCrushPressingSpeedConversionTable
 _08021D24: .4byte 0x000F4240
 _08021D28: .4byte 0x085CCA18
 _08021D2C: .4byte gBerryCrushData_082C5EFF
@@ -2744,7 +2744,7 @@ _08021EF8:
 	movs r0, #5
 	b _08021F90
 	.align 2, 0
-_08021F3C: .4byte gBerryCrushData_082C7C40
+_08021F3C: .4byte sBerryCrushResultsTexts
 _08021F40: .4byte gBerryCrushData_082C5F5C
 _08021F44:
 	adds r0, r6, #0
@@ -3057,7 +3057,7 @@ _080221C0: .4byte 0x02021C7C
 _080221C4: .4byte 0x085CCA8C
 _080221C8: .4byte gBerryCrushData_082C5EF0
 _080221CC: .4byte 0x085CCA20
-_080221D0: .4byte gBerryCrushData_082C5F64
+_080221D0: .4byte sBerryCrushPressingSpeedConversionTable
 _080221D4: .4byte 0x000F4240
 _080221D8: .4byte 0x02021C54
 _080221DC: .4byte 0x085CCA18
@@ -3246,8 +3246,8 @@ _08022348:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08022350: .4byte gBerryCrushData_082C7A08
-_08022354: .4byte gBerryCrushData_082C7A1C
+_08022350: .4byte sBerryCrushPlayerIdToPosId
+_08022354: .4byte sBerryCrushPlayerCoords
 _08022358: .4byte gBerryCrushData_082C5F0C
 _0802235C: .4byte 0x000001A7
 	thumb_func_end sub_080222E8
@@ -3672,7 +3672,7 @@ _080226B0: .4byte gBerryCrushData_082C7BB0
 _080226B4: .4byte 0x082C7A5E
 _080226B8: .4byte gBerryCrushData_082C7BC8
 _080226BC: .4byte gBerryCrushData_082C7BE0
-_080226C0: .4byte gBerryCrushData_082C7C10
+_080226C0: .4byte sBerryCrushDigitObjTemplates
 	thumb_func_end sub_08022494
 
 	thumb_func_start sub_080226C4
@@ -4598,7 +4598,7 @@ _08022D8A:
 	str r0, [r5, #0x20]
 	b _08022DCC
 	.align 2, 0
-_08022DA4: .4byte gBerryCrushData_082C7CD4
+_08022DA4: .4byte sBerryCrushReceivedPlayerBitmasks
 _08022DA8: .4byte 0x0202207C
 _08022DAC: .4byte gBerryCrush_BerryData
 _08022DB0:
@@ -4837,7 +4837,7 @@ _08022F50:
 	b _08023048
 	.align 2, 0
 _08022F80: .4byte 0x00000125
-_08022F84: .4byte gBerryCrushData_082C5E84
+_08022F84: .4byte sBerryCrushIntroOutroVibrationData
 _08022F88:
 	ldr r7, _08023000
 	movs r0, #0x92
@@ -4897,7 +4897,7 @@ _08022F88:
 	strb r0, [r6]
 	b _0802304E
 	.align 2, 0
-_08023000: .4byte gBerryCrushData_082C5E84
+_08023000: .4byte sBerryCrushIntroOutroVibrationData
 _08023004: .4byte 0x00000125
 _08023008:
 	movs r0, #0
@@ -5139,7 +5139,7 @@ _0802312E:
 	strh r1, [r0]
 	b _080231EE
 	.align 2, 0
-_080231D4: .4byte gBerryCrushData_082C5E74
+_080231D4: .4byte sBerryCrushBitTable
 _080231D8: .4byte 0x03003130
 _080231DC:
 	subs r0, r7, r6
@@ -5258,7 +5258,7 @@ _08023268:
 	strb r2, [r0]
 	b _080232D0
 	.align 2, 0
-_080232B8: .4byte gBerryCrushData_082C5E7C
+_080232B8: .4byte sBerryCrushSyncPressBonus
 _080232BC:
 	adds r1, r5, #0
 	adds r1, #0x24
@@ -5376,7 +5376,7 @@ _08023360:
 	.align 2, 0
 _0802338C: .4byte 0x00000127
 _08023390: .4byte 0x00000125
-_08023394: .4byte gBerryCrushData_082C5EA8
+_08023394: .4byte sBerryCrushVibrationData
 _08023398:
 	movs r5, #0x92
 	lsls r5, r5, #1
@@ -5433,7 +5433,7 @@ _080233CC:
 	b _0802341C
 	.align 2, 0
 _080233FC: .4byte 0x00000125
-_08023400: .4byte gBerryCrushData_082C5EA8
+_08023400: .4byte sBerryCrushVibrationData
 _08023404: .4byte 0x00000127
 _08023408:
 	ldr r2, _08023424
@@ -5452,7 +5452,7 @@ _0802341C:
 	strb r1, [r0]
 	b _08023434
 	.align 2, 0
-_08023424: .4byte gBerryCrushData_082C5EA8
+_08023424: .4byte sBerryCrushVibrationData
 _08023428: .4byte 0x00000125
 _0802342C:
 	adds r1, r3, #0
@@ -5552,7 +5552,7 @@ _080234A0:
 	b _080234EC
 	.align 2, 0
 _080234DC: .4byte 0x03002360
-_080234E0: .4byte gBerryCrushData_082C7CD0
+_080234E0: .4byte sBerryCrushBigSparkleThresholds
 _080234E4:
 	ldrb r1, [r6]
 	movs r0, #0x11
@@ -5588,7 +5588,7 @@ _080234F8:
 	strb r0, [r6]
 	b _08023568
 	.align 2, 0
-_08023524: .4byte gBerryCrushData_082C7CC0
+_08023524: .4byte sBerryCrushSparkleThresholds
 _08023528:
 	adds r0, r3, #1
 	adds r0, r1, r0
@@ -6013,7 +6013,7 @@ _08023836:
 	.align 2, 0
 _08023864: .4byte 0x000003FF
 _08023868: .4byte 0x00000125
-_0802386C: .4byte gBerryCrushData_082C5E84
+_0802386C: .4byte sBerryCrushIntroOutroVibrationData
 _08023870:
 	ldr r7, _080238E8
 	movs r0, #0x92
@@ -6073,7 +6073,7 @@ _08023870:
 	strb r0, [r6]
 	b _0802394C
 	.align 2, 0
-_080238E8: .4byte gBerryCrushData_082C5E84
+_080238E8: .4byte sBerryCrushIntroOutroVibrationData
 _080238EC: .4byte 0x00000125
 _080238F0:
 	movs r0, #0
@@ -6373,7 +6373,7 @@ _08023B2C:
 	strb r0, [r6, #0xc]
 	b _08023DFC
 	.align 2, 0
-_08023B44: .4byte gBerryCrushData_082C7CD4
+_08023B44: .4byte sBerryCrushReceivedPlayerBitmasks
 _08023B48: .4byte 0x0202207C
 _08023B4C:
 	movs r0, #6
@@ -7151,7 +7151,7 @@ _0802413C:
 	bl sub_08022950
 	b _08024162
 	.align 2, 0
-_08024150: .4byte gBerryCrushData_082C7CD4
+_08024150: .4byte sBerryCrushReceivedPlayerBitmasks
 _08024154: .4byte 0x0202207C
 _08024158:
 	movs r0, #0x16
