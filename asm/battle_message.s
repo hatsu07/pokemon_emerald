@@ -2914,7 +2914,7 @@ _0814F930:
 	b _0814F95C
 	.align 2, 0
 _0814F944: .4byte 0x0203A874
-_0814F948: .4byte gBattleMessageData_085AC146
+_0814F948: .4byte sGrammarMoveUsedTable
 _0814F94C: .4byte 0x085ABC96
 _0814F950:
 	cmp r2, #4
@@ -2969,7 +2969,7 @@ _0814F99C:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_0814F9A8: .4byte gBattleMessageData_085AC146
+_0814F9A8: .4byte sGrammarMoveUsedTable
 _0814F9AC: .4byte 0x0203A874
 _0814F9B0: .4byte 0x0814F9B4
 _0814F9B4: @ jump table
