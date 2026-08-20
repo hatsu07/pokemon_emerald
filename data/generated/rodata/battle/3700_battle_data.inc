@@ -204,14 +204,36 @@ sSpriteTemplate_BallOpenParticle_085C630C: @ 0x085C630C
 	.globl gBattleAnimSpecialData_085C63CC
 gBattleAnimSpecialData_085C63CC: @ 0x085C63CC
 	@ analyzed canonical ROM range 0x085C63CC-0x085C642F
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: STRUCTURED_BATTLE_ANIM_SPECIAL_DATA size=0x2C addr=0x085C63CC parent=gBattleAnimSpecialData_085C63CC encoding=TYPED_FIELDS pointerCells=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085C63CC size=0x2C
-	.2byte 0x7ADF, 0x7AF0, 0x53D7, 0x3FFF, 0x7297, 0x67F5, 0x7B2C, 0x2B7E @ +0x0
-	.2byte 0x431F, 0x7BDD, 0x2A3F, 0x293F @ +0x10
-	.4byte 0x02010000 @ +0x18 RAM pointer; numeric preserved
-	.2byte 0x0403, 0x0101, 0x0100, 0x0503, 0x0506, 0x0004, 0x281D, 0x281D @ +0x1C
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085C63F8 size=0x4 source=v54_multi_pointer
+	@ gBallOpenFadeColors followed by the start of gPokeblockSpriteTemplate.
+	@ 12 Poké Ball open-fade colors followed by 8 intentional garbage RGB555
+	@ values retained by the original Emerald data layout.
+	.globl gBallOpenFadeColors
+gBallOpenFadeColors: @ 0x085C63CC
+	.2byte 0x7ADF @ BALL_POKE    RGB(31, 22, 30)
+	.2byte 0x7AF0 @ BALL_GREAT   RGB(16, 23, 30)
+	.2byte 0x53D7 @ BALL_SAFARI  RGB(23, 30, 20)
+	.2byte 0x3FFF @ BALL_ULTRA   RGB(31, 31, 15)
+	.2byte 0x7297 @ BALL_MASTER  RGB(23, 20, 28)
+	.2byte 0x67F5 @ BALL_NET     RGB(21, 31, 25)
+	.2byte 0x7B2C @ BALL_DIVE    RGB(12, 25, 30)
+	.2byte 0x2B7E @ BALL_NEST    RGB(30, 27, 10)
+	.2byte 0x431F @ BALL_REPEAT  RGB(31, 24, 16)
+	.2byte 0x7BDD @ BALL_TIMER   RGB(29, 30, 30)
+	.2byte 0x2A3F @ BALL_LUXURY  RGB(31, 17, 10)
+	.2byte 0x293F @ BALL_PREMIER RGB(31, 9, 10)
+	.2byte 0x0000 @ garbage: RGB_BLACK
+	.2byte 0x0201 @ garbage: RGB(1, 16, 0)
+	.2byte 0x0403 @ garbage: RGB(3, 0, 1)
+	.2byte 0x0101 @ garbage: RGB(1, 8, 0)
+	.2byte 0x0100 @ garbage: RGB(0, 8, 0)
+	.2byte 0x0503 @ garbage: RGB(3, 8, 1)
+	.2byte 0x0506 @ garbage: RGB(6, 8, 1)
+	.2byte 0x0004 @ garbage: RGB(4, 0, 0)
+
+	.globl gPokeblockSpriteTemplate
+gPokeblockSpriteTemplate: @ 0x085C63F4
+	.2byte 0x281D, 0x281D @ tileTag, paletteTag (ANIM_TAG_POKEBLOCK)
+@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085C63F8 size=0x4 source=v54_multi_pointer
 	.4byte gOamData_AffineOff_ObjNormal_16x16
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085C63FC size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
