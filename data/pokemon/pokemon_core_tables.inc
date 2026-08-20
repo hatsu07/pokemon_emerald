@@ -843,7 +843,8 @@ gPPUpAddValues: @ 0x082FA6B2
 
 	.globl gStatStageRatios
 gStatStageRatios: @ 0x082FA6B6
-	@ ANALYSIS: U8_DATA size=0x1A bytes=26
+	@ ANALYSIS: SEMANTIC_NUMERIC_STAT_STAGE_RATIOS
+	@ Battle stat-stage numerator/denominator ratios; numeric byte pairs are the intended representation.
 	.byte 10, 40 @ stage -6
 	.byte 10, 35 @ stage -5
 	.byte 10, 30 @ stage -4
@@ -863,7 +864,8 @@ sText_GameFreakJpn: @ 0x082FA6D0
 	.byte 0x00
 
 sDeoxysBaseStats: @ 0x082FA6D6
-	@ ANALYSIS: U16_TABLE size=0xC entries=6
+	@ ANALYSIS: SEMANTIC_NUMERIC_DEOXYS_BASE_STATS
+	@ Deoxys base-stat values for HP/Atk/Def/Speed/Sp.Atk/Sp.Def; numeric 16-bit values are the intended representation.
 	.2byte 50 @ HP
 	.2byte 95 @ Attack
 	.2byte 90 @ Defense
