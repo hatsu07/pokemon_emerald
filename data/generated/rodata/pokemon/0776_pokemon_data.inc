@@ -15,34 +15,40 @@ gPokedexData_085443CC: @ 0x085443CC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085443CC size=0x4 source=v54_multi_pointer
 	.4byte gPokedexData_08544260
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085443D0 parent=gPokedexData_085443CC offset=0x4 entropy=2.0 head=06070A00
+	@ ANALYSIS: POKEDEX_LIST_DESCRIPTOR_META size=0x4 addr=0x085443D0 parent=gPokedexData_085443CC scrollDataIndex=6 cursorDataIndex=7 entryCount=10
 	@ ANALYSIS: SOURCE_RANGE addr=0x085443D0 size=0x4
-	.byte 0x06, 0x07, 0x0A, 0x00
+	.byte 6, 7 @ scrollDataIndex, cursorDataIndex
+	.2byte 10 @ entryCount
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085443D4 size=0x4 source=v54_multi_pointer
 	.4byte gPokedexData_085442B8
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085443D8 parent=gPokedexData_085443CC offset=0xC entropy=2.0 head=08090B00
+	@ ANALYSIS: POKEDEX_LIST_DESCRIPTOR_META size=0x4 addr=0x085443D8 parent=gPokedexData_085443CC scrollDataIndex=8 cursorDataIndex=9 entryCount=11
 	@ ANALYSIS: SOURCE_RANGE addr=0x085443D8 size=0x4
-	.byte 0x08, 0x09, 0x0B, 0x00
+	.byte 8, 9 @ scrollDataIndex, cursorDataIndex
+	.2byte 11 @ entryCount
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085443DC size=0x4 source=v54_multi_pointer
 	.4byte gPokedexData_08544318
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085443E0 parent=gPokedexData_085443CC offset=0x14 entropy=2.0 head=0A0B1200
+	@ ANALYSIS: POKEDEX_LIST_DESCRIPTOR_META size=0x4 addr=0x085443E0 parent=gPokedexData_085443CC scrollDataIndex=10 cursorDataIndex=11 entryCount=18
 	@ ANALYSIS: SOURCE_RANGE addr=0x085443E0 size=0x4
-	.byte 0x0A, 0x0B, 0x12, 0x00
+	.byte 10, 11 @ scrollDataIndex, cursorDataIndex
+	.2byte 18 @ entryCount
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085443E4 size=0x4 source=v54_multi_pointer
 	.4byte gPokedexData_08544318
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085443E8 parent=gPokedexData_085443CC offset=0x1C entropy=2.0 head=0C0D1200
+	@ ANALYSIS: POKEDEX_LIST_DESCRIPTOR_META size=0x4 addr=0x085443E8 parent=gPokedexData_085443CC scrollDataIndex=12 cursorDataIndex=13 entryCount=18
 	@ ANALYSIS: SOURCE_RANGE addr=0x085443E8 size=0x4
-	.byte 0x0C, 0x0D, 0x12, 0x00
+	.byte 12, 13 @ scrollDataIndex, cursorDataIndex
+	.2byte 18 @ entryCount
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085443EC size=0x4 source=v54_multi_pointer
 	.4byte gPokemonPointerTable_Rom_544228
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085443F0 parent=gPokedexData_085443CC offset=0x24 entropy=2.0 head=04050600
+	@ ANALYSIS: POKEDEX_LIST_DESCRIPTOR_META size=0x4 addr=0x085443F0 parent=gPokedexData_085443CC scrollDataIndex=4 cursorDataIndex=5 entryCount=6
 	@ ANALYSIS: SOURCE_RANGE addr=0x085443F0 size=0x4
-	.byte 0x04, 0x05, 0x06, 0x00
+	.byte 4, 5 @ scrollDataIndex, cursorDataIndex
+	.2byte 6 @ entryCount
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085443F4 size=0x4 source=v54_multi_pointer
 	.4byte gPokemonPointerTable_Rom_544210
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085443F8 parent=gPokedexData_085443CC offset=0x2C entropy=1.5 head=02030200
+	@ ANALYSIS: POKEDEX_LIST_DESCRIPTOR_META size=0x4 addr=0x085443F8 parent=gPokedexData_085443CC scrollDataIndex=2 cursorDataIndex=3 entryCount=2
 	@ ANALYSIS: SOURCE_RANGE addr=0x085443F8 size=0x4
-	.byte 0x02, 0x03, 0x02, 0x00
+	.byte 2, 3 @ scrollDataIndex, cursorDataIndex
+	.2byte 2 @ entryCount
 	@ pret/pokeemerald-jp direct xref for 0x085443FC: pokedex.s: sub_080C0850
 	.globl gPokedexData_085443FC
 gPokedexData_085443FC: @ 0x085443FC

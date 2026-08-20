@@ -555,19 +555,19 @@ gPokedexData_08544134: @ 0x08544134
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08544134 size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5C9035
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08544138 parent=gPokedexData_08544134 offset=0x4 entropy=0.811 head=00000500
+	@ ANALYSIS: POKEDEX_TILEMAP_PALETTE_REGION size=0x4 addr=0x08544138 parent=gPokedexData_08544134 x=0 y=0 width=5 padding=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544138 size=0x4
-	.byte 0x00, 0x00, 0x05, 0x00
+	.byte 0, 0, 5, 0 @ x, y, width, padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0854413C size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5C9052
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08544140 parent=gPokedexData_08544134 offset=0xC entropy=1.5 head=06000500
+	@ ANALYSIS: POKEDEX_TILEMAP_PALETTE_REGION size=0x4 addr=0x08544140 parent=gPokedexData_08544134 x=6 y=0 width=5 padding=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544140 size=0x4
-	.byte 0x06, 0x00, 0x05, 0x00
+	.byte 6, 0, 5, 0 @ x, y, width, padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08544144 size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5C9066
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x08544148 parent=gPokedexData_08544134 offset=0x14 entropy=1.5 head=0C000500
+	@ ANALYSIS: POKEDEX_TILEMAP_PALETTE_REGION size=0x4 addr=0x08544148 parent=gPokedexData_08544134 x=12 y=0 width=5 padding=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544148 size=0x4
-	.byte 0x0C, 0x00, 0x05, 0x00
+	.byte 12, 0, 5, 0 @ x, y, width, padding
 	@ pret/pokeemerald-jp direct xref for 0x0854414C: pokedex.s: sub_080C1440, sub_080C16B8
 	.globl gPokedexData_0854414C
 gPokedexData_0854414C: @ 0x0854414C
@@ -575,39 +575,53 @@ gPokedexData_0854414C: @ 0x0854414C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0854414C size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5C9093
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x08544150 parent=gPokedexData_0854414C offset=0x4 entropy=1.906 head=00020505020C0000
+	@ ANALYSIS: POKEDEX_DUAL_TILEMAP_PALETTE_REGIONS size=0x8 addr=0x08544150 parent=gPokedexData_0854414C primary=0,2,5 secondary=5,2,12 padding=0,0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544150 size=0x8
-	.byte 0x00, 0x02, 0x05, 0x05, 0x02, 0x0C, 0x00, 0x00
+	.byte 0, 2, 5 @ primary x, y, width
+	.byte 5, 2, 12 @ secondary x, y, width
+	.byte 0, 0 @ padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08544158 size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5C90B7
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x0854415C parent=gPokedexData_0854414C offset=0x10 entropy=1.906 head=00040505040C0000
+	@ ANALYSIS: POKEDEX_DUAL_TILEMAP_PALETTE_REGIONS size=0x8 addr=0x0854415C parent=gPokedexData_0854414C primary=0,4,5 secondary=5,4,12 padding=0,0
 	@ ANALYSIS: SOURCE_RANGE addr=0x0854415C size=0x8
-	.byte 0x00, 0x04, 0x05, 0x05, 0x04, 0x0C, 0x00, 0x00
+	.byte 0, 4, 5 @ primary x, y, width
+	.byte 5, 4, 12 @ secondary x, y, width
+	.byte 0, 0 @ padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08544164 size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5C90D5
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x08544168 parent=gPokedexData_0854414C offset=0x1C entropy=1.561 head=0006050506060000
+	@ ANALYSIS: POKEDEX_DUAL_TILEMAP_PALETTE_REGIONS size=0x8 addr=0x08544168 parent=gPokedexData_0854414C primary=0,6,5 secondary=5,6,6 padding=0,0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544168 size=0x8
-	.byte 0x00, 0x06, 0x05, 0x05, 0x06, 0x06, 0x00, 0x00
+	.byte 0, 6, 5 @ primary x, y, width
+	.byte 5, 6, 6 @ secondary x, y, width
+	.byte 0, 0 @ padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08544170 size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5C90D5
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x08544174 parent=gPokedexData_0854414C offset=0x28 entropy=1.811 head=0006050B06060000
+	@ ANALYSIS: POKEDEX_DUAL_TILEMAP_PALETTE_REGIONS size=0x8 addr=0x08544174 parent=gPokedexData_0854414C primary=0,6,5 secondary=11,6,6 padding=0,0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544174 size=0x8
-	.byte 0x00, 0x06, 0x05, 0x0B, 0x06, 0x06, 0x00, 0x00
+	.byte 0, 6, 5 @ primary x, y, width
+	.byte 11, 6, 6 @ secondary x, y, width
+	.byte 0, 0 @ padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0854417C size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5C9081
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x08544180 parent=gPokedexData_0854414C offset=0x34 entropy=1.906 head=00080505080C0000
+	@ ANALYSIS: POKEDEX_DUAL_TILEMAP_PALETTE_REGIONS size=0x8 addr=0x08544180 parent=gPokedexData_0854414C primary=0,8,5 secondary=5,8,12 padding=0,0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544180 size=0x8
-	.byte 0x00, 0x08, 0x05, 0x05, 0x08, 0x0C, 0x00, 0x00
+	.byte 0, 8, 5 @ primary x, y, width
+	.byte 5, 8, 12 @ secondary x, y, width
+	.byte 0, 0 @ padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08544188 size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5C9071
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x0854418C parent=gPokedexData_0854414C offset=0x40 entropy=1.906 head=000A05050A0C0000
+	@ ANALYSIS: POKEDEX_DUAL_TILEMAP_PALETTE_REGIONS size=0x8 addr=0x0854418C parent=gPokedexData_0854414C primary=0,10,5 secondary=5,10,12 padding=0,0
 	@ ANALYSIS: SOURCE_RANGE addr=0x0854418C size=0x8
-	.byte 0x00, 0x0A, 0x05, 0x05, 0x0A, 0x0C, 0x00, 0x00
+	.byte 0, 10, 5 @ primary x, y, width
+	.byte 5, 10, 12 @ secondary x, y, width
+	.byte 0, 0 @ padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08544194 size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5C90F0
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x08544198 parent=gPokedexData_0854414C offset=0x4C entropy=1.061 head=000C050000000000
+	@ ANALYSIS: POKEDEX_DUAL_TILEMAP_PALETTE_REGIONS size=0x8 addr=0x08544198 parent=gPokedexData_0854414C primary=0,12,5 secondary=0,0,0 padding=0,0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544198 size=0x8
-	.byte 0x00, 0x0C, 0x05, 0x00, 0x00, 0x00, 0x00, 0x00
+	.byte 0, 12, 5 @ primary x, y, width
+	.byte 0, 0, 0 @ secondary x, y, width
+	.byte 0, 0 @ padding
 	@ pret/pokeemerald-jp direct xref for 0x085441A0: pokedex.s: sub_080C0C7C
 	.globl gPokedexData_085441A0
 gPokedexData_085441A0: @ 0x085441A0
