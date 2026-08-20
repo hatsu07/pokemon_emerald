@@ -11053,7 +11053,7 @@ _08029BE2:
 	adds r1, r1, r0
 	b _08029CA6
 	.align 2, 0
-_08029C08: .4byte gDodrioBerryPickingData_085CCDAB
+_08029C08: .4byte gText_FilledStorageSpace
 _08029C0C: .4byte 0x020229AC
 _08029C10: .4byte 0x00003009
 _08029C14: .4byte 0x02021C7C
@@ -12286,7 +12286,7 @@ _0802A61C:
 	bl LoadPalette
 	b _0802A67E
 	.align 2, 0
-_0802A628: .4byte gDodrioBerryPickingData_082CB67C
+_0802A628: .4byte sDodrioBerryPickingBgPalette
 _0802A62C:
 	bl reset_temp_tile_data_buffers
 	b _0802A67E

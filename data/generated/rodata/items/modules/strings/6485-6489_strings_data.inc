@@ -13,15 +13,12 @@ gText_Rom_5CCD9F: @ 0x085CCD9F
 	@ Decoded text from ROM range: offset=0x5CCD9F, size=0xC
 	.string "{SE_M_HYPER_BEAM2}は　いっぱいです…$"
 	@ pret/pokeemerald-jp direct xref for 0x085CCDAB: dodrio_berry_picking.s: sub_080295A4
-	.globl gDodrioBerryPickingData_085CCDAB
-gDodrioBerryPickingData_085CCDAB: @ 0x085CCDAB
-	@ analyzed canonical ROM range 0x085CCDAB-0x085CCDBC
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x12 bytes=18
+	.globl gText_FilledStorageSpace
+gText_FilledStorageSpace: @ 0x085CCDAB
+	@ canonical pret/pokeemerald: gText_FilledStorageSpace
+	@ JP-encoded text bytes; canonical semantic identity is proven.
 	.byte 0xF7, 0x00, 0x37, 0x00, 0x02, 0x50, 0x4B, 0x02, 0x16, 0x15, 0x50, 0x13, 0x0C, 0x1F, 0x50, 0x10
 	.byte 0xAB, 0xFF
-
-	@ src/strings.c:837 gText_WantToPlayAgain (+1 aliases)
 	.globl gText_Rom_5CCDBD
 gText_Rom_5CCDBD: @ 0x085CCDBD
 	.string "もういちど あそびますか？$"
