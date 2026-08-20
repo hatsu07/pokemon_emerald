@@ -415,7 +415,8 @@ sMonFrontAnimIdsTable: @ 0x082FA374
 	.byte ANIM_H_SLIDE_WOBBLE                    @ SPECIES_CHIMECHO
 
 sMonAnimationDelayTable: @ 0x082FA50F
-	@ ANALYSIS: U8_DATA size=0x19B bytes=411
+	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ANIMATION_DELAY_TABLE
+	@ Per-species Pokémon animation delay lookup table; numeric byte values are the intended representation.
 	.byte   0 @ SPECIES_BULBASAUR
 	.byte   0 @ SPECIES_IVYSAUR
 	.byte   0 @ SPECIES_VENUSAUR

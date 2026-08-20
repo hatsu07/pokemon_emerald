@@ -1,6 +1,7 @@
 	.globl gSineTable
 gSineTable: @ 0x082FA8CC
-	@ ANALYSIS: U16_TABLE size=0x280 entries=320
+	@ ANALYSIS: SEMANTIC_NUMERIC_SINE_TABLE
+	@ GBA fixed-point sine lookup table; numeric 16-bit samples are the intended representation.
 	.2byte 0, 6, 12, 18, 25, 31, 37, 43
 	.2byte 49, 56, 62, 68, 74, 80, 86, 92
 	.2byte 97, 103, 109, 115, 120, 126, 131, 136
