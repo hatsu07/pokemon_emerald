@@ -307,15 +307,15 @@ gPokenavUnk4Data_085F4D3C: @ 0x085F4D3C
 	.2byte 15, 1 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4DE8 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F491C
-	@ ANALYSIS: STRUCTURED_POKENAV_MAP_UI_DATA size=0x8 addr=0x085F4DEC parent=gPokenavUnk4Data_085F4D3C encoding=TYPED_FIELDS pointerCells=0
-	@ ANALYSIS: SOURCE_RANGE addr=0x085F4DEC size=0x8
-	.2byte 0x4000, 0x4000, 0x0400, 0x0000 @ +0x0
+	.globl gPokenavMapUiSpriteOam
+gPokenavMapUiSpriteOam: @ 0x085F4DEC
+	.2byte 0x4000, 0x4000, 0x0400, 0x0000 @ OamData
 	@ pret/pokeemerald-jp direct xref for 0x085F4DF4: pokenav_unk_4.s: sub_081CC598
 	.globl gPokenavUnk4Data_085F4DF4
 gPokenavUnk4Data_085F4DF4: @ 0x085F4DF4
 	@ analyzed canonical ROM range 0x085F4DF4-0x085F4E0B
 sSpriteTemplate_085F4DF4: @ 0x085F4DF4
-	rodata_sprite_template 0x0006, 0x000B, 0x085F4DEC, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_081CC634
+	rodata_sprite_template 0x0006, 0x000B, gPokenavMapUiSpriteOam, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_081CC634
 	@ pret/pokeemerald-jp direct xref for 0x085F4E0C: pokenav_unk_4.s: sub_081CD5F4
 	.globl gPokenavUnk4Data_085F4E0C
 gPokenavUnk4Data_085F4E0C: @ 0x085F4E0C

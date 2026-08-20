@@ -207,24 +207,34 @@ gFieldWeatherEffectData_0852A8E8: @ 0x0852A8E8
 gFieldWeatherEffectData_0852A8F0: @ 0x0852A8F0
 	@ analyzed canonical ROM range 0x0852A8F0-0x0852A927
 	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852A8F0 size=0x4 source=v54_multi_pointer
-	.4byte gWeatherRainTiles
-	@ ANALYSIS: STRUCTURED_FIELD_WEATHER_EFFECT_DATA size=0xC addr=0x0852A8F4 parent=gFieldWeatherEffectData_0852A8F0 encoding=TYPED_FIELDS pointerCells=0
-	@ ANALYSIS: SOURCE_RANGE addr=0x0852A8F4 size=0xC
-	.2byte 0x0600, 0x1206, 0x0000, 0x0000, 0x0400, 0x0000 @ +0x0
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852A900 size=0x4 source=v54_multi_pointer
+	.globl gWeatherRainSpriteSheet
+gWeatherRainSpriteSheet: @ 0x0852A8F0
+	.4byte gWeatherRainTiles @ data
+	.2byte 0x0600, 0x1206 @ SpriteSheet size, tag
+	.globl gWeatherSnowflakeSpriteOam
+gWeatherSnowflakeSpriteOam: @ 0x0852A8F8
+	.2byte 0x0000, 0x0000, 0x0400, 0x0000 @ 8x8, priority 1 OamData
+	.globl gWeatherSnowflakeSpriteImages
+gWeatherSnowflakeSpriteImages: @ 0x0852A900
 	.4byte gWeatherSnow1Tiles
-	@ ANALYSIS: STRUCTURED_FIELD_WEATHER_EFFECT_DATA size=0x4 addr=0x0852A904 parent=gFieldWeatherEffectData_0852A8F0 encoding=TYPED_FIELDS pointerCells=0
-	@ ANALYSIS: SOURCE_RANGE addr=0x0852A904 size=0x4
-	.2byte 0x0020, 0x0000 @ +0x0
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0852A908 size=0x4 source=v54_multi_pointer
+	.2byte 0x0020, 0x0000 @ image size, padding
 	.4byte gWeatherSnow2Tiles
-	@ ANALYSIS: STRUCTURED_FIELD_WEATHER_EFFECT_DATA size=0x1C addr=0x0852A90C parent=gFieldWeatherEffectData_0852A8F0 encoding=TYPED_FIELDS pointerCells=2
-	@ ANALYSIS: SOURCE_RANGE addr=0x0852A90C size=0x1C
-	.2byte 0x0020, 0x0000, 0x0000, 0x0010, 0xFFFF, 0x0000, 0x0001, 0x0010 @ +0x0
-	.2byte 0xFFFF, 0x0000 @ +0x10
-	.4byte 0x0852A910 @ +0x14 ROM pointer; numeric preserved
-	.4byte 0x0852A918 @ +0x18 ROM pointer; numeric preserved
+	.2byte 0x0020, 0x0000 @ image size, padding
+
+	.globl gWeatherSnowflakeAnimCmd0
+gWeatherSnowflakeAnimCmd0: @ 0x0852A910
+	.2byte 0, 16
+	.2byte 0xFFFF, 0 @ ANIMCMD_END
+
+	.globl gWeatherSnowflakeAnimCmd1
+gWeatherSnowflakeAnimCmd1: @ 0x0852A918
+	.2byte 1, 16
+	.2byte 0xFFFF, 0 @ ANIMCMD_END
+
+	.globl gWeatherSnowflakeAnimTable
+gWeatherSnowflakeAnimTable: @ 0x0852A920
+	.4byte gWeatherSnowflakeAnimCmd0
+	.4byte gWeatherSnowflakeAnimCmd1
 	@ pret/pokeemerald-jp direct xref for 0x0852A928: field_weather_effect.s: CreateSnowflakeSprite
 	.globl gFieldWeatherEffectData_0852A928
 gFieldWeatherEffectData_0852A928: @ 0x0852A928

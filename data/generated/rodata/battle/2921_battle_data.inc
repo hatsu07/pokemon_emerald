@@ -72,16 +72,14 @@ gPokedexAreaScreenData_085939AC: @ 0x085939AC
 	.globl gPokedexAreaScreenData_085939BC
 gPokedexAreaScreenData_085939BC: @ 0x085939BC
 	@ analyzed canonical ROM range 0x085939BC-0x08593A73
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: STRUCTURED_POKEDEX_AREA_SCREEN_DATA size=0x8 addr=0x085939BC parent=gPokedexAreaScreenData_085939BC encoding=TYPED_FIELDS pointerCells=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085939BC size=0x8
-	.2byte 0x0002, 0x0002 @ +0x0
-	.4byte 0x085939B4 @ +0x4 ROM pointer; numeric preserved
+	@ struct SpriteTemplate used by CreateAreaMarkerSprites (24 bytes total).
+	.globl gPokedexAreaMarkerSpriteTemplate
+gPokedexAreaMarkerSpriteTemplate: @ 0x085939BC
+	.2byte 0x0002, 0x0002 @ tileTag, paletteTag
+	.4byte 0x085939B4 @ oam; JP-local pointer preserved
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085939C4 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x085939C8 parent=gPokedexAreaScreenData_085939BC offset=0xC
-	@ ANALYSIS: SOURCE_RANGE addr=0x085939C8 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
+	.4byte 0 @ images = NULL
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085939CC size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085939D0 size=0x4 source=v54_multi_pointer
