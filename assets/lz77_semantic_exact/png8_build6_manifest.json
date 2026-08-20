@@ -133,6 +133,21 @@
       "source_kind": "png_palette_rgb555",
       "source": "graphics/battle_environment/cave/anim_tiles.png",
       "palette_entries": 48
+    },
+    "build/graphics/list_menu/scroll_indicator_arrow_rom_exact.4bpp.lz": {
+      "key": "085DFB80",
+      "source_kind": "png",
+      "source": "graphics/list_menu/scroll_indicator_arrow.png"
+    },
+    "build/graphics/list_menu/red_outline_cursor_rom_exact.4bpp.lz": {
+      "key": "085DFBF0",
+      "source_kind": "png",
+      "source": "graphics/list_menu/red_outline_cursor.png"
+    },
+    "build/graphics/list_menu/red_arrow_cursor_rom_exact.4bpp.lz": {
+      "key": "085DFC30",
+      "source_kind": "png",
+      "source": "graphics/list_menu/red_arrow_cursor.png"
     }
   }
 }

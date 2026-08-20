@@ -653,22 +653,22 @@ gMenuU8Table_Rom_5DFB60: @ 0x085DFB60
 	@ ANALYSIS: RAW_RANGE offset=0x5DFB60, size=0x20
 	.byte 0x8E, 0x62, 0x5F, 0x01, 0x90, 0x00, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C
 	.byte 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C
-	.globl sLz77Block_085DFB80
+	.globl gScrollIndicatorArrow_Gfx
 	@ confirmed GBA LZ77 stream: compressed=0x6E, decompressed=0x100
-sLz77Block_085DFB80:
+gScrollIndicatorArrow_Gfx:
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/085DFB80.bin.lz"
+	.incbin "build/graphics/list_menu/scroll_indicator_arrow_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00
-	.globl sLz77Block_085DFBF0
+	.globl gListMenuRedOutlineCursor_Gfx
 	@ confirmed GBA LZ77 stream: compressed=0x40, decompressed=0x100
-sLz77Block_085DFBF0:
+gListMenuRedOutlineCursor_Gfx:
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/085DFBF0.bin.lz"
-	.globl sLz77Block_085DFC30
+	.incbin "build/graphics/list_menu/red_outline_cursor_rom_exact.4bpp.lz"
+	.globl gListMenuRedArrowCursor_Gfx
 	@ confirmed GBA LZ77 stream: compressed=0x43, decompressed=0x80
-sLz77Block_085DFC30:
+gListMenuRedArrowCursor_Gfx:
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/085DFC30.bin.lz"
+	.incbin "build/graphics/list_menu/red_arrow_cursor_rom_exact.4bpp.lz"
 	.byte 0x00
 	.globl gMenuU8Table_Rom_5DFC74
 gMenuU8Table_Rom_5DFC74: @ 0x085DFC74
