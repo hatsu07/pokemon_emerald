@@ -2165,7 +2165,7 @@ _0815B074:
 _0815B08C: .4byte gBattleAnimSpriteTemplate_FingerWag
 _0815B090: .4byte 0x020205AC
 _0815B094: .4byte 0x08007141
-_0815B098: .4byte gBattleAnimEffects3Data_085AD0A8
+_0815B098: .4byte gTormentAttackerAffineAnimCmds
 _0815B09C:
 	adds r0, r6, #0
 	bl RunAffineAnimFromTaskData
@@ -2450,7 +2450,7 @@ _0815B298:
 	strh r0, [r4, #8]
 	b _0815B2CA
 	.align 2, 0
-_0815B2B4: .4byte gBattleAnimEffects3Data_085AD158
+_0815B2B4: .4byte DefenseCurlDeformMonAffineAnimCmds
 _0815B2B8:
 	adds r0, r4, #0
 	bl RunAffineAnimFromTaskData
@@ -2915,7 +2915,7 @@ AnimTask_StrongFrustrationGrowAndShrink: @ 0x0815B5F0
 	b _0815B642
 	.align 2, 0
 _0815B628: .4byte 0x03005B60
-_0815B62C: .4byte gBattleAnimEffects3Data_085AD1E8
+_0815B62C: .4byte gSpitUpDeformMonAffineAnimCmds
 _0815B630:
 	adds r0, r4, #0
 	bl RunAffineAnimFromTaskData
@@ -4510,7 +4510,7 @@ sub_0815C2E4: @ 0x0815C2E4
 	b _0815C336
 	.align 2, 0
 _0815C31C: .4byte 0x03005B60
-_0815C320: .4byte gBattleAnimEffects3Data_085AD2B8
+_0815C320: .4byte gStrongFrustrationAffineAnimCmds
 _0815C324:
 	adds r0, r4, #0
 	bl RunAffineAnimFromTaskData
@@ -6906,7 +6906,7 @@ AnimTask_DeepInhale: @ 0x0815D588
 	.align 2, 0
 _0815D5C0: .4byte 0x03005B60
 _0815D5C4: .4byte 0x020380BE
-_0815D5C8: .4byte gBattleAnimEffects3Data_085AD3F8
+_0815D5C8: .4byte gDeepInhaleAffineAnimCmds
 _0815D5CC: .4byte 0x0815D5D1
 	thumb_func_end AnimTask_DeepInhale
 
@@ -8108,7 +8108,7 @@ _0815DEE0:
 	b _0815DF02
 	.align 2, 0
 _0815DEE8: .4byte 0x03005B60
-_0815DEEC: .4byte gBattleAnimEffects3Data_085AD58C
+_0815DEEC: .4byte gFacadeBlendColors
 _0815DEF0:
 	ldrh r0, [r4, #0xc]
 	movs r1, #0x10

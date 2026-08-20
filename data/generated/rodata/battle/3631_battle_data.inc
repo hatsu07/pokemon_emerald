@@ -610,65 +610,82 @@ FunctionPointerTable_JP_085ACD28: @ 0x085ACD28
 	.byte 0x00, 0x00, 0x02, 0x00, 0x08, 0x00, 0x02, 0x00, 0x10, 0x00, 0x02, 0x00, 0xFE, 0xFF, 0x00, 0x00
 	.byte 0x7C, 0xD0, 0x5A, 0x08, 0xF5, 0x27, 0xF5, 0x27, 0x40, 0xD0, 0x4F, 0x08, 0x8C, 0xD0, 0x5A, 0x08
 	.byte 0x00, 0x00, 0x00, 0x00, 0x10, 0xF3, 0x2B, 0x08, 0x0D, 0xAC, 0x15, 0x08
-	@ pret/pokeemerald-jp direct xref for 0x085AD0A8: battle_anim_effects_3.s: sub_0815AF90
-	.globl gBattleAnimEffects3Data_085AD0A8
-gBattleAnimEffects3Data_085AD0A8: @ 0x085AD0A8
-	@ analyzed canonical ROM range 0x085AD0A8-0x085AD157
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: STRUCTURED_BATTLE_ANIM_EFFECT_DATA size=0x5C addr=0x085AD0A8 parent=gBattleAnimEffects3Data_085AD0A8 encoding=TYPED_FIELDS pointerCells=2
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD0A8 size=0x5C
-	.2byte 0xFFF4, 0x0008, 0x0400, 0x0000, 0x0014, 0xFFEC, 0x0400, 0x0000 @ +0x0
-	.2byte 0xFFF8, 0x000C, 0x0400, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000 @ +0x10
-	.2byte 0x0000, 0x0008, 0xFFFF, 0x0000 @ +0x20
-	.4byte 0x085AD0C8 @ +0x28 ROM pointer; numeric preserved
-	.2byte 0x0000, 0x0000, 0x2805, 0x0000, 0x0000, 0x0000, 0x0A0A, 0x0000 @ +0x2C
-	.2byte 0x0000, 0x0000, 0x0A0F, 0x0000, 0x0000, 0x0000, 0x2814, 0x0000 @ +0x3C
-	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ +0x4C
-	.4byte 0x085AD0D4 @ +0x54 ROM pointer; numeric preserved
-	.2byte 0x27F6, 0x27F6 @ +0x58
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD104 size=0x4 source=v54_multi_pointer
+	@ Torment attacker deformation used directly by the visual task.
+	.globl gTormentAttackerAffineAnimCmds
+gTormentAttackerAffineAnimCmds: @ 0x085AD0A8
+	.2byte 0xFFF4, 0x0008, 0x0400, 0x0000
+	.2byte 0x0014, 0xFFEC, 0x0400, 0x0000
+	.2byte 0xFFF8, 0x000C, 0x0400, 0x0000
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000
+
+	.globl gTriAttackTriangleAnimCmds
+gTriAttackTriangleAnimCmds: @ 0x085AD0C8
+	.2byte 0x0000, 0x0008
+	.2byte 0xFFFF, 0x0000
+
+	.globl gTriAttackTriangleAnimTable
+gTriAttackTriangleAnimTable: @ 0x085AD0D0
+	.4byte gTriAttackTriangleAnimCmds
+
+	.globl gTriAttackTriangleAffineAnimCmds
+gTriAttackTriangleAffineAnimCmds: @ 0x085AD0D4
+	.2byte 0x0000, 0x0000, 0x2805, 0x0000
+	.2byte 0x0000, 0x0000, 0x0A0A, 0x0000
+	.2byte 0x0000, 0x0000, 0x0A0F, 0x0000
+	.2byte 0x0000, 0x0000, 0x2814, 0x0000
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000
+
+	.globl gTriAttackTriangleAffineAnimTable
+gTriAttackTriangleAffineAnimTable: @ 0x085AD0FC
+	.4byte gTriAttackTriangleAffineAnimCmds
+
+	.globl gTriAttackTriangleSpriteTemplate
+gTriAttackTriangleSpriteTemplate: @ 0x085AD100
+	.2byte 0x27F6, 0x27F6
 	.4byte gOamData_AffineDouble_ObjNormal_64x64
-	@ ANALYSIS: POINTER_STRUCT_FRAGMENT size=0xC addr=0x085AD108 parent=gBattleAnimEffects3Data_085AD0A8 offset=0x60 dwords=3 rom_ptrs=2 ram_ptrs=0 nulls=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD108 size=0xC
-	.byte 0xD0, 0xD0, 0x5A, 0x08, 0x00, 0x00, 0x00, 0x00, 0xFC, 0xD0, 0x5A, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD114 size=0x4 source=v54_multi_pointer
+	.4byte gTriAttackTriangleAnimTable
+	.4byte 0
+	.4byte gTriAttackTriangleAffineAnimTable
 	.4byte sub_0815B1B8
-	@ ANALYSIS: STRUCTURED_BATTLE_ANIM_EFFECT_DATA size=0x2C addr=0x085AD118 parent=gBattleAnimEffects3Data_085AD0A8 encoding=TYPED_FIELDS pointerCells=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD118 size=0x2C
-	.2byte 0x0000, 0x0003, 0x0010, 0x0003, 0x0020, 0x0003, 0x0030, 0x0003 @ +0x0
-	.2byte 0x0020, 0x0043, 0x0010, 0x0043, 0x0000, 0x0043, 0xFFFD, 0x0001 @ +0x10
-	.2byte 0xFFFF, 0x0000 @ +0x20
-	.4byte 0x085AD118 @ +0x24 ROM pointer; numeric preserved
-	.2byte 0x27FA, 0x27FA @ +0x28
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD144 size=0x4 source=v54_multi_pointer
+	.globl gEclipsingOrbAnimCmds
+gEclipsingOrbAnimCmds: @ 0x085AD118
+	.2byte 0x0000, 0x0003
+	.2byte 0x0010, 0x0003
+	.2byte 0x0020, 0x0003
+	.2byte 0x0030, 0x0003
+	.2byte 0x0020, 0x0043
+	.2byte 0x0010, 0x0043
+	.2byte 0x0000, 0x0043
+	.2byte 0xFFFD, 0x0001
+	.2byte 0xFFFF, 0x0000
+
+	.globl gEclipsingOrbAnimTable
+gEclipsingOrbAnimTable: @ 0x085AD13C
+	.4byte gEclipsingOrbAnimCmds
+
+	.globl gEclipsingOrbSpriteTemplate
+gEclipsingOrbSpriteTemplate: @ 0x085AD140
+	.2byte 0x27FA, 0x27FA
 	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: POINTER_STRUCT_FRAGMENT size=0x8 addr=0x085AD148 parent=gBattleAnimEffects3Data_085AD0A8 offset=0xA0 dwords=2 rom_ptrs=1 ram_ptrs=0 nulls=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD148 size=0x8
-	.byte 0x3C, 0xD1, 0x5A, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD150 size=0x4 source=v54_multi_pointer
+	.4byte gEclipsingOrbAnimTable
+	.4byte 0
 	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD154 size=0x4 source=v54_multi_pointer
 	.4byte AnimSpriteOnMonPos
-	@ pret/pokeemerald-jp direct xref for 0x085AD158: battle_anim_effects_3.s: sub_0815B274
-	.globl gBattleAnimEffects3Data_085AD158
-gBattleAnimEffects3Data_085AD158: @ 0x085AD158
-	@ analyzed canonical ROM range 0x085AD158-0x085AD18F
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: STRUCTURED_BATTLE_ANIM_EFFECT_DATA size=0x24 addr=0x085AD158 parent=gBattleAnimEffects3Data_085AD158 encoding=TYPED_FIELDS pointerCells=0
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD158 size=0x24
-	.2byte 0xFFF4, 0x0014, 0x0800, 0x0000, 0x000C, 0xFFEC, 0x0800, 0x0000 @ +0x0
-	.2byte 0x7FFD, 0x0002, 0x0000, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000 @ +0x10
-	.2byte 0x27F2, 0x27F2 @ +0x20
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD17C size=0x4 source=v54_multi_pointer
+	@ Deformation run by AnimTask_DefenseCurlDeformMon.
+	.globl DefenseCurlDeformMonAffineAnimCmds
+DefenseCurlDeformMonAffineAnimCmds: @ 0x085AD158
+	.2byte 0xFFF4, 0x0014, 0x0800, 0x0000
+	.2byte 0x000C, 0xFFEC, 0x0800, 0x0000
+	.2byte 0x7FFD, 0x0002, 0x0000, 0x0000
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000
+
+	.globl gBatonPassPokeballSpriteTemplate
+gBatonPassPokeballSpriteTemplate: @ 0x085AD178
+	.2byte 0x27F2, 0x27F2
 	.4byte gOamData_AffineOff_ObjNormal_16x16
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD180 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x085AD184 parent=gBattleAnimEffects3Data_085AD158 offset=0x2C
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD184 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD188 size=0x4 source=v54_multi_pointer
+	.4byte 0
 	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD18C size=0x4 source=v54_multi_pointer
 	.4byte sub_0815B2D0
 	@ pret/pokeemerald-jp direct xref for 0x085AD190: battle_anim_special.s: sub_08172DD0
 	.globl gBattleAnimSpecialData_085AD190
@@ -691,27 +708,23 @@ gBattleAnimEffects3Data_085AD1C0: @ 0x085AD1C0
 	.2byte 0x0008, 0xFFF8, 0x0C00, 0x0000, 0xFFF0, 0x0010, 0x0C00, 0x0000
 	.2byte 0x0008, 0xFFF8, 0x0C00, 0x0000, 0x7FFD, 0x0001, 0x0000, 0x0000
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x085AD1E8: battle_anim_effects_3.s: AnimTask_StrongFrustrationGrowAndShrink
-	.globl gBattleAnimEffects3Data_085AD1E8
-gBattleAnimEffects3Data_085AD1E8: @ 0x085AD1E8
-	@ analyzed canonical ROM range 0x085AD1E8-0x085AD237
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: STRUCTURED_BATTLE_ANIM_EFFECT_DATA size=0x3C addr=0x085AD1E8 parent=gBattleAnimEffects3Data_085AD1E8 encoding=TYPED_FIELDS pointerCells=0
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD1E8 size=0x3C
-	.2byte 0x0000, 0x0006, 0x1400, 0x0000, 0x0000, 0x0000, 0x1400, 0x0000 @ +0x0
-	.2byte 0x0000, 0xFFEE, 0x0600, 0x0000, 0xFFEE, 0xFFEE, 0x0300, 0x0000 @ +0x10
-	.2byte 0x0000, 0x0000, 0x0F00, 0x0000, 0x0004, 0x0004, 0x0D00, 0x0000 @ +0x20
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000, 0x27FC, 0x27FC @ +0x30
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD224 size=0x4 source=v54_multi_pointer
+	.globl gSpitUpDeformMonAffineAnimCmds
+gSpitUpDeformMonAffineAnimCmds: @ 0x085AD1E8
+	.2byte 0x0000, 0x0006, 0x1400, 0x0000
+	.2byte 0x0000, 0x0000, 0x1400, 0x0000
+	.2byte 0x0000, 0xFFEE, 0x0600, 0x0000
+	.2byte 0xFFEE, 0xFFEE, 0x0300, 0x0000
+	.2byte 0x0000, 0x0000, 0x0F00, 0x0000
+	.2byte 0x0004, 0x0004, 0x0D00, 0x0000
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000
+
+	.globl gSwallowBlueOrbSpriteTemplate
+gSwallowBlueOrbSpriteTemplate: @ 0x085AD220
+	.2byte 0x27FC, 0x27FC
 	.4byte gOamData_AffineOff_ObjNormal_8x8
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD228 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x085AD22C parent=gBattleAnimEffects3Data_085AD1E8 offset=0x44
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD22C size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD230 size=0x4 source=v54_multi_pointer
+	.4byte 0
 	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD234 size=0x4 source=v54_multi_pointer
 	.4byte sub_0815B648
 	@ pret/pokeemerald-jp direct xref for 0x085AD238: battle_anim_effects_3.s: sub_0815B6B4
 	.globl gBattleAnimEffects3Data_085AD238
@@ -751,62 +764,83 @@ gBattleU32Table_Rom_5AD2B0: @ 0x085AD2B0
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
 	.4byte ABILITY_RUN_AWAY
-	@ pret/pokeemerald-jp direct xref for 0x085AD2B8: battle_anim_effects_3.s: sub_0815C2E4
-	.globl gBattleAnimEffects3Data_085AD2B8
-gBattleAnimEffects3Data_085AD2B8: @ 0x085AD2B8
-	@ analyzed canonical ROM range 0x085AD2B8-0x085AD3F7
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: STRUCTURED_BATTLE_ANIM_EFFECT_DATA size=0x24 addr=0x085AD2B8 parent=gBattleAnimEffects3Data_085AD2B8 encoding=TYPED_FIELDS pointerCells=0
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD2B8 size=0x24
-	.2byte 0x0000, 0xFFF1, 0x0700, 0x0000, 0x0000, 0x000F, 0x0700, 0x0000 @ +0x0
-	.2byte 0x7FFD, 0x0002, 0x0000, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000 @ +0x10
-	.2byte 0x2767, 0x2767 @ +0x20
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD2DC size=0x4 source=v54_multi_pointer
+	.globl gStrongFrustrationAffineAnimCmds
+gStrongFrustrationAffineAnimCmds: @ 0x085AD2B8
+	.2byte 0x0000, 0xFFF1, 0x0700, 0x0000
+	.2byte 0x0000, 0x000F, 0x0700, 0x0000
+	.2byte 0x7FFD, 0x0002, 0x0000, 0x0000
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000
+
+	.globl gWeakFrustrationAngerMarkSpriteTemplate
+gWeakFrustrationAngerMarkSpriteTemplate: @ 0x085AD2D8
+	.2byte 0x2767, 0x2767
 	.4byte gOamData_AffineOff_ObjNormal_16x16
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD2E0 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x085AD2E4 parent=gBattleAnimEffects3Data_085AD2B8 offset=0x2C
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD2E4 size=0x4
-	.byte 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD2E8 size=0x4 source=v54_multi_pointer
+	.4byte 0
 	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD2EC size=0x4 source=v54_multi_pointer
 	.4byte AnimWeakFrustrationAngerMark
-	@ ANALYSIS: STRUCTURED_BATTLE_ANIM_EFFECT_DATA size=0x60 addr=0x085AD2F0 parent=gBattleAnimEffects3Data_085AD2B8 encoding=TYPED_FIELDS pointerCells=3
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD2F0 size=0x60
-	.2byte 0x0000, 0x0008, 0x0001, 0x0008, 0x0002, 0x0008, 0x0003, 0x0008 @ +0x0
-	.2byte 0x0003, 0x0088, 0x0002, 0x0088, 0x0000, 0x0088, 0x0001, 0x0088 @ +0x10
-	.2byte 0xFFFE, 0x0000, 0x0000, 0x0048, 0x0001, 0x0048, 0x0002, 0x0048 @ +0x20
-	.2byte 0x0003, 0x0048, 0x0003, 0x00C8, 0x0002, 0x00C8, 0x0000, 0x00C8 @ +0x30
-	.2byte 0x0001, 0x00C8, 0xFFFE, 0x0000, 0x0000, 0x0008, 0xFFFF, 0x0000 @ +0x40
-	.4byte 0x085AD2F0 @ +0x50 ROM pointer; numeric preserved
-	.4byte 0x085AD314 @ +0x54 ROM pointer; numeric preserved
-	.4byte 0x085AD338 @ +0x58 ROM pointer; numeric preserved
-	.2byte 0x27FE, 0x27FE @ +0x5C
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD350 size=0x4 source=v54_multi_pointer
+	.globl gSweetScentPetalAnimCmds1
+gSweetScentPetalAnimCmds1: @ 0x085AD2F0
+	.2byte 0x0000, 0x0008, 0x0001, 0x0008
+	.2byte 0x0002, 0x0008, 0x0003, 0x0008
+	.2byte 0x0003, 0x0088, 0x0002, 0x0088
+	.2byte 0x0000, 0x0088, 0x0001, 0x0088
+	.2byte 0xFFFE, 0x0000
+
+	.globl gSweetScentPetalAnimCmds2
+gSweetScentPetalAnimCmds2: @ 0x085AD314
+	.2byte 0x0000, 0x0048, 0x0001, 0x0048
+	.2byte 0x0002, 0x0048, 0x0003, 0x0048
+	.2byte 0x0003, 0x00C8, 0x0002, 0x00C8
+	.2byte 0x0000, 0x00C8, 0x0001, 0x00C8
+	.2byte 0xFFFE, 0x0000
+
+	.globl gSweetScentPetalAnimCmds3
+gSweetScentPetalAnimCmds3: @ 0x085AD338
+	.2byte 0x0000, 0x0008
+	.2byte 0xFFFF, 0x0000
+
+	.globl gSweetScentPetalAnimCmdTable
+gSweetScentPetalAnimCmdTable: @ 0x085AD340
+	.4byte gSweetScentPetalAnimCmds1
+	.4byte gSweetScentPetalAnimCmds2
+	.4byte gSweetScentPetalAnimCmds3
+
+	.globl gSweetScentPetalSpriteTemplate
+gSweetScentPetalSpriteTemplate: @ 0x085AD34C
+	.2byte 0x27FE, 0x27FE
 	.4byte gOamData_AffineOff_ObjNormal_8x8
-	@ ANALYSIS: POINTER_STRUCT_FRAGMENT size=0x8 addr=0x085AD354 parent=gBattleAnimEffects3Data_085AD2B8 offset=0x9C dwords=2 rom_ptrs=1 ram_ptrs=0 nulls=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD354 size=0x8
-	.byte 0x40, 0xD3, 0x5A, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD35C size=0x4 source=v54_multi_pointer
+	.4byte gSweetScentPetalAnimCmdTable
+	.4byte 0
 	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD360 size=0x4 source=v54_multi_pointer
 	.4byte AnimSweetScentPetal
-	@ ANALYSIS: STRUCTURED_BATTLE_ANIM_EFFECT_DATA size=0x38 addr=0x085AD364 parent=gBattleAnimEffects3Data_085AD2B8 encoding=TYPED_FIELDS pointerCells=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD364 size=0x38
-	.2byte 0x180C, 0x1610, 0x1313, 0x1015, 0x0C17, 0x0716, 0x0413, 0x0110 @ +0x0
-	.2byte 0x000B, 0x0106, 0x0404, 0x0701, 0x0C00, 0x1102, 0x1304, 0x1608 @ +0x10
-	.2byte 0x0000, 0x0005, 0x0004, 0x0009, 0x0008, 0x0005, 0xFFFF, 0x0000 @ +0x20
-	.4byte 0x085AD384 @ +0x30 ROM pointer; numeric preserved
-	.2byte 0x27FF, 0x27FF @ +0x34
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD39C size=0x4 source=v54_multi_pointer
+	@ Unused 16-color palette retained in the original layout immediately
+	@ before the Pain Split animation data.
+	.globl gPainSplitUnusedPalette
+gPainSplitUnusedPalette: @ 0x085AD364
+	.2byte 0x180C, 0x1610, 0x1313, 0x1015
+	.2byte 0x0C17, 0x0716, 0x0413, 0x0110
+	.2byte 0x000B, 0x0106, 0x0404, 0x0701
+	.2byte 0x0C00, 0x1102, 0x1304, 0x1608
+
+	.globl gPainSplitAnimCmds
+gPainSplitAnimCmds: @ 0x085AD384
+	.2byte 0x0000, 0x0005
+	.2byte 0x0004, 0x0009
+	.2byte 0x0008, 0x0005
+	.2byte 0xFFFF, 0x0000
+
+	.globl gPainSplitAnimCmdTable
+gPainSplitAnimCmdTable: @ 0x085AD394
+	.4byte gPainSplitAnimCmds
+
+	.globl gPainSplitProjectileSpriteTemplate
+gPainSplitProjectileSpriteTemplate: @ 0x085AD398
+	.2byte 0x27FF, 0x27FF
 	.4byte gOamData_AffineOff_ObjNormal_16x16
-	@ ANALYSIS: POINTER_STRUCT_FRAGMENT size=0x8 addr=0x085AD3A0 parent=gBattleAnimEffects3Data_085AD2B8 offset=0xE8 dwords=2 rom_ptrs=1 ram_ptrs=0 nulls=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD3A0 size=0x8
-	.byte 0x94, 0xD3, 0x5A, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3A8 size=0x4 source=v54_multi_pointer
+	.4byte gPainSplitAnimCmdTable
+	.4byte 0
 	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3AC size=0x4 source=v54_multi_pointer
 	.4byte AnimPainSplitProjectile
 	@ struct SpriteTemplate gFlatterConfettiSpriteTemplate (24 bytes total).
 	.globl gFlatterConfettiSpriteTemplate
@@ -846,58 +880,92 @@ gReversalOrbSpriteTemplate:
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3F4 size=0x4 source=v54_multi_pointer
 	.4byte AnimReversalOrb
-	@ pret/pokeemerald-jp direct xref for 0x085AD3F8: battle_anim_effects_3.s: AnimTask_DeepInhale
-	.globl gBattleAnimEffects3Data_085AD3F8
-gBattleAnimEffects3Data_085AD3F8: @ 0x085AD3F8
-	@ analyzed canonical ROM range 0x085AD3F8-0x085AD553
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: STRUCTURED_BATTLE_ANIM_EFFECT_DATA size=0xA0 addr=0x085AD3F8 parent=gBattleAnimEffects3Data_085AD3F8 encoding=TYPED_FIELDS pointerCells=3
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD3F8 size=0xA0
-	.2byte 0x0010, 0x0000, 0x0400, 0x0000, 0x0000, 0xFFFD, 0x1000, 0x0000 @ +0x0
-	.2byte 0x0004, 0x0000, 0x0400, 0x0000, 0x0000, 0x0000, 0x1800, 0x0000 @ +0x10
-	.2byte 0xFFFB, 0x0003, 0x1000, 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000 @ +0x20
-	.2byte 0x0080, 0x0080, 0x0000, 0x0000, 0xFFF8, 0xFFF8, 0x0800, 0x0000 @ +0x30
-	.2byte 0x0008, 0x0008, 0x0800, 0x0000, 0x7FFE, 0x0000, 0x0000, 0x0000 @ +0x40
-	.2byte 0x00C0, 0x00C0, 0x0000, 0x0000, 0x0008, 0x0008, 0x0800, 0x0000 @ +0x50
-	.2byte 0xFFF8, 0xFFF8, 0x0800, 0x0000, 0x7FFE, 0x0000, 0x0000, 0x0000 @ +0x60
-	.2byte 0x0100, 0x0100, 0x0000, 0x0000, 0x0008, 0x0008, 0x0800, 0x0000 @ +0x70
-	.2byte 0xFFF8, 0xFFF8, 0x0800, 0x0000, 0x7FFE, 0x0000, 0x0000, 0x0000 @ +0x80
-	.4byte 0x085AD428 @ +0x90 ROM pointer; numeric preserved
-	.4byte 0x085AD448 @ +0x94 ROM pointer; numeric preserved
-	.4byte 0x085AD468 @ +0x98 ROM pointer; numeric preserved
-	.2byte 0x2802, 0x2802 @ +0x9C
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD498 size=0x4 source=v54_multi_pointer
+	.globl gDeepInhaleAffineAnimCmds
+gDeepInhaleAffineAnimCmds: @ 0x085AD3F8
+	.2byte 0x0010, 0x0000, 0x0400, 0x0000
+	.2byte 0x0000, 0xFFFD, 0x1000, 0x0000
+	.2byte 0x0004, 0x0000, 0x0400, 0x0000
+	.2byte 0x0000, 0x0000, 0x1800, 0x0000
+	.2byte 0xFFFB, 0x0003, 0x1000, 0x0000
+	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000
+
+	.globl gYawnCloudAffineAnimCmds1
+gYawnCloudAffineAnimCmds1: @ 0x085AD428
+	.2byte 0x0080, 0x0080, 0x0000, 0x0000
+	.2byte 0xFFF8, 0xFFF8, 0x0800, 0x0000
+	.2byte 0x0008, 0x0008, 0x0800, 0x0000
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000
+
+	.globl gYawnCloudAffineAnimCmds2
+gYawnCloudAffineAnimCmds2: @ 0x085AD448
+	.2byte 0x00C0, 0x00C0, 0x0000, 0x0000
+	.2byte 0x0008, 0x0008, 0x0800, 0x0000
+	.2byte 0xFFF8, 0xFFF8, 0x0800, 0x0000
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000
+
+	.globl gYawnCloudAffineAnimCmds3
+gYawnCloudAffineAnimCmds3: @ 0x085AD468
+	.2byte 0x0100, 0x0100, 0x0000, 0x0000
+	.2byte 0x0008, 0x0008, 0x0800, 0x0000
+	.2byte 0xFFF8, 0xFFF8, 0x0800, 0x0000
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000
+
+	.globl gYawnCloudAffineAnimTable
+gYawnCloudAffineAnimTable: @ 0x085AD488
+	.4byte gYawnCloudAffineAnimCmds1
+	.4byte gYawnCloudAffineAnimCmds2
+	.4byte gYawnCloudAffineAnimCmds3
+
+	.globl gYawnCloudSpriteTemplate
+gYawnCloudSpriteTemplate: @ 0x085AD494
+	.2byte 0x2802, 0x2802
 	.4byte gOamData_AffineNormal_ObjNormal_32x32
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD49C size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: POINTER_STRUCT_FRAGMENT size=0x8 addr=0x085AD4A0 parent=gBattleAnimEffects3Data_085AD3F8 offset=0xA8 dwords=2 rom_ptrs=1 ram_ptrs=0 nulls=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD4A0 size=0x8
-	.byte 0x00, 0x00, 0x00, 0x00, 0x88, 0xD4, 0x5A, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD4A8 size=0x4 source=v54_multi_pointer
+	.4byte 0
+	.4byte gYawnCloudAffineAnimTable
 	.4byte AnimYawnCloud
-	@ ANALYSIS: STRUCTURED_BATTLE_ANIM_EFFECT_DATA size=0x94 addr=0x085AD4AC parent=gBattleAnimEffects3Data_085AD3F8 encoding=TYPED_FIELDS pointerCells=4
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD4AC size=0x94
-	.2byte 0x0080, 0x0080, 0x0000, 0x0000, 0xFFFC, 0xFFFA, 0x1000, 0x0000 @ +0x0
-	.2byte 0x0004, 0x0006, 0x1000, 0x0000, 0x7FFE, 0x0000, 0x0000, 0x0000 @ +0x10
-	.2byte 0x00C0, 0x00C0, 0x0000, 0x0000, 0x0004, 0x0006, 0x1000, 0x0000 @ +0x20
-	.2byte 0xFFFC, 0xFFFA, 0x1000, 0x0000, 0x7FFE, 0x0000, 0x0000, 0x0000 @ +0x30
-	.2byte 0x0100, 0x0100, 0x0000, 0x0000, 0x0004, 0x0006, 0x1000, 0x0000 @ +0x40
-	.2byte 0xFFFC, 0xFFFA, 0x1000, 0x0000, 0x7FFE, 0x0000, 0x0000, 0x0000 @ +0x50
-	.2byte 0x0100, 0x0100, 0x0000, 0x0000, 0x0008, 0x000A, 0x1E00, 0x0000 @ +0x60
-	.2byte 0xFFF8, 0xFFF6, 0x1000, 0x0000, 0x7FFE, 0x0000, 0x0000, 0x0000 @ +0x70
-	.4byte 0x085AD4AC @ +0x80 ROM pointer; numeric preserved
-	.4byte 0x085AD4CC @ +0x84 ROM pointer; numeric preserved
-	.4byte 0x085AD4EC @ +0x88 ROM pointer; numeric preserved
-	.4byte 0x085AD50C @ +0x8C ROM pointer; numeric preserved
-	.2byte 0x2802, 0x2802 @ +0x90
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD540 size=0x4 source=v54_multi_pointer
+	.globl gSmokeBallEscapeCloudAffineAnimCmds1
+gSmokeBallEscapeCloudAffineAnimCmds1: @ 0x085AD4AC
+	.2byte 0x0080, 0x0080, 0x0000, 0x0000
+	.2byte 0xFFFC, 0xFFFA, 0x1000, 0x0000
+	.2byte 0x0004, 0x0006, 0x1000, 0x0000
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000
+
+	.globl gSmokeBallEscapeCloudAffineAnimCmds2
+gSmokeBallEscapeCloudAffineAnimCmds2: @ 0x085AD4CC
+	.2byte 0x00C0, 0x00C0, 0x0000, 0x0000
+	.2byte 0x0004, 0x0006, 0x1000, 0x0000
+	.2byte 0xFFFC, 0xFFFA, 0x1000, 0x0000
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000
+
+	.globl gSmokeBallEscapeCloudAffineAnimCmds3
+gSmokeBallEscapeCloudAffineAnimCmds3: @ 0x085AD4EC
+	.2byte 0x0100, 0x0100, 0x0000, 0x0000
+	.2byte 0x0004, 0x0006, 0x1000, 0x0000
+	.2byte 0xFFFC, 0xFFFA, 0x1000, 0x0000
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000
+
+	.globl gSmokeBallEscapeCloudAffineAnimCmds4
+gSmokeBallEscapeCloudAffineAnimCmds4: @ 0x085AD50C
+	.2byte 0x0100, 0x0100, 0x0000, 0x0000
+	.2byte 0x0008, 0x000A, 0x1E00, 0x0000
+	.2byte 0xFFF8, 0xFFF6, 0x1000, 0x0000
+	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000
+
+	.globl gSmokeBallEscapeCloudAffineAnimTable
+gSmokeBallEscapeCloudAffineAnimTable: @ 0x085AD52C
+	.4byte gSmokeBallEscapeCloudAffineAnimCmds1
+	.4byte gSmokeBallEscapeCloudAffineAnimCmds2
+	.4byte gSmokeBallEscapeCloudAffineAnimCmds3
+	.4byte gSmokeBallEscapeCloudAffineAnimCmds4
+
+	.globl gSmokeBallEscapeCloudSpriteTemplate
+gSmokeBallEscapeCloudSpriteTemplate: @ 0x085AD53C
+	.2byte 0x2802, 0x2802
 	.4byte gOamData_AffineDouble_ObjNormal_32x32
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD544 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
-	@ ANALYSIS: POINTER_STRUCT_FRAGMENT size=0x8 addr=0x085AD548 parent=gBattleAnimEffects3Data_085AD3F8 offset=0x150 dwords=2 rom_ptrs=1 ram_ptrs=0 nulls=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD548 size=0x8
-	.byte 0x00, 0x00, 0x00, 0x00, 0x2C, 0xD5, 0x5A, 0x08
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD550 size=0x4 source=v54_multi_pointer
+	.4byte 0
+	.4byte gSmokeBallEscapeCloudAffineAnimTable
 	.4byte AnimSmokeBallEscapeCloud
 	@ pret/pokeemerald-jp direct xref for 0x085AD554: battle_anim_effects_3.s: AnimTask_SquishAndSweatDroplets, AnimTask_SquishAndSweatDropletsStep
 	.globl gBattleAnimEffects3Data_085AD554
@@ -913,31 +981,39 @@ gBattleAnimEffects3Data_085AD574: @ 0x085AD574
 	@ analyzed canonical ROM range 0x085AD574-0x085AD58B
 sSpriteTemplate_085AD574: @ 0x085AD574
 	rodata_sprite_template 0x2803, 0x2803, gOamData_AffineOff_ObjNormal_8x8, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_0815DDF8
-	@ pret/pokeemerald-jp direct xref for 0x085AD58C: battle_anim_effects_3.s: AnimTask_FacadeColorBlendStep
-	.globl gBattleAnimEffects3Data_085AD58C
-gBattleAnimEffects3Data_085AD58C: @ 0x085AD58C
-	@ analyzed canonical ROM range 0x085AD58C-0x085AD5F3
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: STRUCTURED_BATTLE_ANIM_EFFECT_DATA size=0x54 addr=0x085AD58C parent=gBattleAnimEffects3Data_085AD58C encoding=TYPED_FIELDS pointerCells=4
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD58C size=0x54
-	.2byte 0x073C, 0x16BC, 0x225B, 0x2DDB, 0x3D5A, 0x48FA, 0x5479, 0x6419 @ +0x0
-	.2byte 0x5C19, 0x5019, 0x4019, 0x3419, 0x281A, 0x181A, 0x0C1A, 0x001B @ +0x10
-	.2byte 0x003B, 0x00BB, 0x013B, 0x019B @ +0x20
-	.4byte 0x027C021C @ +0x28 RAM pointer; numeric preserved
-	.4byte 0x037D02FC @ +0x2C RAM pointer; numeric preserved
-	.2byte 0x0000, 0x0003, 0x0010, 0x0003, 0xFFFE, 0x0000, 0x0020, 0x0003 @ +0x30
-	.2byte 0x0030, 0x0003, 0xFFFE, 0x0000 @ +0x40
-	.4byte 0x085AD5BC @ +0x48 ROM pointer; numeric preserved
-	.4byte 0x085AD5C8 @ +0x4C ROM pointer; numeric preserved
-	.2byte 0x2745, 0x2745 @ +0x50
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD5E0 size=0x4 source=v54_multi_pointer
+	.globl gFacadeBlendColors
+gFacadeBlendColors: @ 0x085AD58C
+	.2byte 0x073C, 0x16BC, 0x225B, 0x2DDB
+	.2byte 0x3D5A, 0x48FA, 0x5479, 0x6419
+	.2byte 0x5C19, 0x5019, 0x4019, 0x3419
+	.2byte 0x281A, 0x181A, 0x0C1A, 0x001B
+	.2byte 0x003B, 0x00BB, 0x013B, 0x019B
+	.2byte 0x021C, 0x027C, 0x02FC, 0x037D
+
+	.globl gRoarNoiseLineAnimCmds1
+gRoarNoiseLineAnimCmds1: @ 0x085AD5BC
+	.2byte 0x0000, 0x0003
+	.2byte 0x0010, 0x0003
+	.2byte 0xFFFE, 0x0000
+
+	.globl gRoarNoiseLineAnimCmds2
+gRoarNoiseLineAnimCmds2: @ 0x085AD5C8
+	.2byte 0x0020, 0x0003
+	.2byte 0x0030, 0x0003
+	.2byte 0xFFFE, 0x0000
+
+	.globl gRoarNoiseLineAnimTable
+gRoarNoiseLineAnimTable: @ 0x085AD5D4
+	.4byte gRoarNoiseLineAnimCmds1
+	.4byte gRoarNoiseLineAnimCmds2
+
+	.globl gRoarNoiseLineSpriteTemplate
+gRoarNoiseLineSpriteTemplate: @ 0x085AD5DC
+	.2byte 0x2745, 0x2745
 	.4byte gOamData_AffineOff_ObjNormal_32x32
-	@ ANALYSIS: POINTER_STRUCT_FRAGMENT size=0x8 addr=0x085AD5E4 parent=gBattleAnimEffects3Data_085AD58C offset=0x58 dwords=2 rom_ptrs=1 ram_ptrs=0 nulls=1
-	@ ANALYSIS: SOURCE_RANGE addr=0x085AD5E4 size=0x8
-	.byte 0xD4, 0xD5, 0x5A, 0x08, 0x00, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD5EC size=0x4 source=v54_multi_pointer
+	.4byte gRoarNoiseLineAnimTable
+	.4byte 0
 	.4byte gDummySpriteAffineAnimTable
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD5F0 size=0x4 source=v54_multi_pointer
 	.4byte AnimRoarNoiseLine
 	@ pret/pokeemerald-jp direct xref for 0x085AD5F4: battle_anim_effects_3.s: AnimTask_GlareEyeDotsStep
 	.globl gBattleAnimEffects3Data_085AD5F4
