@@ -219,55 +219,34 @@ gUnionRoomPointerTable_Rom_2C572C: @ 0x082C572C
 	.globl gUnionRoomChatData_082C57D4
 gUnionRoomChatData_082C57D4: @ 0x082C57D4
 	@ analyzed canonical ROM range 0x082C57D4-0x082C5857
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C57D4 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC62B
-	@ ANALYSIS: RAW_BLOCK size=0x14 addr=0x082C57D8 parent=gUnionRoomChatData_082C57D4 offset=0x4 entropy=2.161 head=010000010200000038C65C0801000001
-	@ ANALYSIS: SOURCE_RANGE addr=0x082C57D8 size=0x14
-	.byte 0x01, 0x00, 0x00, 0x01, 0x02, 0x00, 0x00, 0x00, 0x38, 0xC6, 0x5C, 0x08, 0x01, 0x00, 0x00, 0x01
-	.byte 0x02, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C57EC size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC646
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x082C57F0 parent=gUnionRoomChatData_082C57D4 offset=0x1C entropy=1.299 head=0100000102000000
-	@ ANALYSIS: SOURCE_RANGE addr=0x082C57F0 size=0x8
-	.byte 0x01, 0x00, 0x00, 0x01, 0x02, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C57F8 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC654
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x082C57FC parent=gUnionRoomChatData_082C57D4 offset=0x28 entropy=1.299 head=0100000102000000
-	@ ANALYSIS: SOURCE_RANGE addr=0x082C57FC size=0x8
-	.byte 0x01, 0x00, 0x00, 0x01, 0x02, 0x00, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5804 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC697
-	@ ANALYSIS: RAW_BLOCK size=0x14 addr=0x082C5808 parent=gUnionRoomChatData_082C57D4 offset=0x34 entropy=2.161 head=0200000102000000B2C65C0802000000
-	@ ANALYSIS: SOURCE_RANGE addr=0x082C5808 size=0x14
-	.byte 0x02, 0x00, 0x00, 0x01, 0x02, 0x00, 0x00, 0x00, 0xB2, 0xC6, 0x5C, 0x08, 0x02, 0x00, 0x00, 0x00
-	.byte 0x02, 0x01, 0x00, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C581C size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC6CD
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x082C5820 parent=gUnionRoomChatData_082C57D4 offset=0x4C entropy=1.5 head=0200000102000100
-	@ ANALYSIS: SOURCE_RANGE addr=0x082C5820 size=0x8
-	.byte 0x02, 0x00, 0x00, 0x01, 0x02, 0x00, 0x01, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5828 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC6ED
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x082C582C parent=gUnionRoomChatData_082C57D4 offset=0x58 entropy=1.5 head=0200000102000100
-	@ ANALYSIS: SOURCE_RANGE addr=0x082C582C size=0x8
-	.byte 0x02, 0x00, 0x00, 0x01, 0x02, 0x00, 0x01, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5834 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC70D
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x082C5838 parent=gUnionRoomChatData_082C57D4 offset=0x64 entropy=1.5 head=0200000102000100
-	@ ANALYSIS: SOURCE_RANGE addr=0x082C5838 size=0x8
-	.byte 0x02, 0x00, 0x00, 0x01, 0x02, 0x00, 0x01, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5840 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC731
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x082C5844 parent=gUnionRoomChatData_082C57D4 offset=0x70 entropy=1.561 head=0200000102010100
-	@ ANALYSIS: SOURCE_RANGE addr=0x082C5844 size=0x8
-	.byte 0x02, 0x00, 0x00, 0x01, 0x02, 0x01, 0x01, 0x00
-	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C584C size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC749
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x082C5850 parent=gUnionRoomChatData_082C57D4 offset=0x7C entropy=1.5 head=0200000102000100
-	@ ANALYSIS: SOURCE_RANGE addr=0x082C5850 size=0x8
-	.byte 0x02, 0x00, 0x00, 0x01, 0x02, 0x00, 0x01, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x082C5858: union_room_chat.s: sub_080200D8
+	@ ANALYSIS: UNION_ROOM_CHAT_MESSAGE_WINDOW_INFO_TABLE entries=11 stride=0xC layout=text_ptr,boxType,x,y,letterSpacing,lineSpacing,hasPlaceholders,useWiderBox,pad
+	.macro union_room_chat_message_window text, boxType, x, y, letterSpacing, lineSpacing, hasPlaceholders, useWiderBox
+		.4byte \text
+		.byte \boxType, \x, \y, \letterSpacing, \lineSpacing, \hasPlaceholders, \useWiderBox, 0
+	.endm
+	@ entry=0 addr=0x082C57D4 text=0x085CC62B
+	union_room_chat_message_window gText_Rom_5CC62B, 1, 0, 0, 1, 2, 0, 0
+	@ entry=1 addr=0x082C57E0 text=0x085CC638
+	union_room_chat_message_window 0x085CC638, 1, 0, 0, 1, 2, 0, 0
+	@ entry=2 addr=0x082C57EC text=0x085CC646
+	union_room_chat_message_window gText_Rom_5CC646, 1, 0, 0, 1, 2, 0, 0
+	@ entry=3 addr=0x082C57F8 text=0x085CC654
+	union_room_chat_message_window gText_Rom_5CC654, 1, 0, 0, 1, 2, 0, 0
+	@ entry=4 addr=0x082C5804 text=0x085CC697
+	union_room_chat_message_window gText_Rom_5CC697, 2, 0, 0, 1, 2, 0, 0
+	@ entry=5 addr=0x082C5810 text=0x085CC6B2
+	union_room_chat_message_window 0x085CC6B2, 2, 0, 0, 0, 2, 1, 0
+	@ entry=6 addr=0x082C581C text=0x085CC6CD
+	union_room_chat_message_window gText_Rom_5CC6CD, 2, 0, 0, 1, 2, 0, 1
+	@ entry=7 addr=0x082C5828 text=0x085CC6ED
+	union_room_chat_message_window gText_Rom_5CC6ED, 2, 0, 0, 1, 2, 0, 1
+	@ entry=8 addr=0x082C5834 text=0x085CC70D
+	union_room_chat_message_window gText_Rom_5CC70D, 2, 0, 0, 1, 2, 0, 1
+	@ entry=9 addr=0x082C5840 text=0x085CC731
+	union_room_chat_message_window gText_Rom_5CC731, 2, 0, 0, 1, 2, 1, 1
+	@ entry=10 addr=0x082C584C text=0x085CC749
+	union_room_chat_message_window gText_Rom_5CC749, 2, 0, 0, 1, 2, 0, 1
+	.purgem union_room_chat_message_window
 	.globl gUnionRoomChatData_082C5858
 gUnionRoomChatData_082C5858: @ 0x082C5858
 	@ analyzed canonical ROM range 0x082C5858-0x082C5889
@@ -288,9 +267,11 @@ gUnionRoomChatData_082C5858: @ 0x082C5858
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5880 size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5CC627
-	@ ANALYSIS: RAW_BLOCK size=0x6 addr=0x082C5884 parent=gUnionRoomChatData_082C5858 offset=0x2C entropy=1.252 head=000000001333
+	@ ANALYSIS: UNION_ROOM_CHAT_MENU_ACTION_CALLBACK_NULL size=0x4 addr=0x082C5884 entry=5
 	@ ANALYSIS: SOURCE_RANGE addr=0x082C5884 size=0x6
-	.byte 0x00, 0x00, 0x00, 0x00, 0x13, 0x33
+	.4byte 0 @ MenuAction callback union
+	@ ANALYSIS: U16_DATA size=0x2 addr=0x082C5888 value=0x3313
+	.2byte 0x3313
 	@ pret/pokeemerald-jp direct xref for 0x082C588A: union_room_chat.s: sub_080206C4
 	.globl gUnionRoomChatData_082C588A
 gUnionRoomChatData_082C588A: @ 0x082C588A
@@ -326,29 +307,29 @@ gUnionRoomChatData_082C5D4C: @ 0x082C5D4C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5D4C size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_082C58A8
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x082C5D50 parent=gUnionRoomChatData_082C5D4C offset=0x4 entropy=0.811 head=00100000
+	@ ANALYSIS: COMPRESSED_SPRITE_SHEET_META size=0x4 addr=0x082C5D50 parent=gUnionRoomChatData_082C5D4C entry=0 sheetSize=0x1000 tag=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x082C5D50 size=0x4
-	.byte 0x00, 0x10, 0x00, 0x00
+	.2byte 0x1000, 0 @ size, tag
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5D54 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_082C5B4C
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x082C5D58 parent=gUnionRoomChatData_082C5D4C offset=0xC entropy=1.5 head=40000100
+	@ ANALYSIS: COMPRESSED_SPRITE_SHEET_META size=0x4 addr=0x082C5D58 parent=gUnionRoomChatData_082C5D4C entry=1 sheetSize=0x40 tag=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x082C5D58 size=0x4
-	.byte 0x40, 0x00, 0x01, 0x00
+	.2byte 0x40, 1 @ size, tag
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5D5C size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_082C5B2C
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x082C5D60 parent=gUnionRoomChatData_082C5D4C offset=0x14 entropy=1.5 head=40000200
+	@ ANALYSIS: COMPRESSED_SPRITE_SHEET_META size=0x4 addr=0x082C5D60 parent=gUnionRoomChatData_082C5D4C entry=2 sheetSize=0x40 tag=2
 	@ ANALYSIS: SOURCE_RANGE addr=0x082C5D60 size=0x4
-	.byte 0x40, 0x00, 0x02, 0x00
+	.2byte 0x40, 2 @ size, tag
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5D64 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_082C5B78
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x082C5D68 parent=gUnionRoomChatData_082C5D4C offset=0x1C entropy=1.5 head=80000300
+	@ ANALYSIS: COMPRESSED_SPRITE_SHEET_META size=0x4 addr=0x082C5D68 parent=gUnionRoomChatData_082C5D4C entry=3 sheetSize=0x80 tag=3
 	@ ANALYSIS: SOURCE_RANGE addr=0x082C5D68 size=0x4
-	.byte 0x80, 0x00, 0x03, 0x00
+	.2byte 0x80, 3 @ size, tag
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5D6C size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_082C5BCC
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x082C5D70 parent=gUnionRoomChatData_082C5D4C offset=0x24 entropy=1.0 head=00040400
+	@ ANALYSIS: COMPRESSED_SPRITE_SHEET_META size=0x4 addr=0x082C5D70 parent=gUnionRoomChatData_082C5D4C entry=4 sheetSize=0x400 tag=4
 	@ ANALYSIS: SOURCE_RANGE addr=0x082C5D70 size=0x4
-	.byte 0x00, 0x04, 0x04, 0x00
+	.2byte 0x400, 4 @ size, tag
 	@ pret/pokeemerald-jp direct xref for 0x082C5D74: union_room_chat.s: sub_080205AC
 	.globl gUnionRoomChatData_082C5D74
 gUnionRoomChatData_082C5D74: @ 0x082C5D74
@@ -385,9 +366,10 @@ sSpriteTemplate_082C5DD4: @ 0x082C5DD4
 gUnionRoomChatData_082C5DEC: @ 0x082C5DEC
 	@ analyzed canonical ROM range 0x082C5DEC-0x082C5E43
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x082C5DEC parent=gUnionRoomChatData_082C5DEC offset=0x0 entropy=2.406 head=01000000CC5D2C08
+	@ ANALYSIS: SPRITE_TEMPLATE_HEADER size=0x8 addr=0x082C5DEC tileTag=1 paletteTag=0 oam=0x082C5DCC
 	@ ANALYSIS: SOURCE_RANGE addr=0x082C5DEC size=0x8
-	.byte 0x01, 0x00, 0x00, 0x00, 0xCC, 0x5D, 0x2C, 0x08
+	.2byte 1, 0 @ tileTag, paletteTag
+	.4byte 0x082C5DCC @ OamData pointer preserved numeric
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5DF4 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
 	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x082C5DF8 parent=gUnionRoomChatData_082C5DEC offset=0xC
@@ -397,12 +379,22 @@ gUnionRoomChatData_082C5DEC: @ 0x082C5DEC
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5E00 size=0x4 source=v54_multi_pointer
 	.4byte sub_0802080C
-	@ ANALYSIS: RAW_BLOCK size=0x40 addr=0x082C5E04 parent=gUnionRoomChatData_082C5DEC offset=0x18 entropy=2.752 head=00000040000800000040008000080000
+	@ ANALYSIS: UNION_ROOM_CHAT_RBUTTON_OAM_ANIMS size=0x40 addr=0x082C5E04 layout=oamIcon,oamLabel,4xAnimCmd,animTable
 	@ ANALYSIS: SOURCE_RANGE addr=0x082C5E04 size=0x40
-	.byte 0x00, 0x00, 0x00, 0x40, 0x00, 0x08, 0x00, 0x00, 0x00, 0x40, 0x00, 0x80, 0x00, 0x08, 0x00, 0x00
-	.byte 0x00, 0x00, 0x02, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x08, 0x00, 0x02, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x10, 0x00, 0x02, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x18, 0x00, 0x02, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x14, 0x5E, 0x2C, 0x08, 0x1C, 0x5E, 0x2C, 0x08, 0x24, 0x5E, 0x2C, 0x08, 0x2C, 0x5E, 0x2C, 0x08
+	@ ANALYSIS: OAM_DATA size=0x8 addr=0x082C5E04 role=RButtonIcon
+	.2byte 0x0000, 0x4000, 0x0800, 0x0000
+	@ ANALYSIS: OAM_DATA size=0x8 addr=0x082C5E0C role=RButtonLabel
+	.2byte 0x4000, 0x8000, 0x0800, 0x0000
+	@ ANALYSIS: ANIM_CMD_SEQUENCE size=0x8 addr=0x082C5E14 role=ToggleCase
+	.2byte 0x0000, 0x0002, 0xFFFF, 0x0000
+	@ ANALYSIS: ANIM_CMD_SEQUENCE size=0x8 addr=0x082C5E1C role=ToggleCaseDuplicate1
+	.2byte 0x0008, 0x0002, 0xFFFF, 0x0000
+	@ ANALYSIS: ANIM_CMD_SEQUENCE size=0x8 addr=0x082C5E24 role=ToggleCaseDuplicate2
+	.2byte 0x0010, 0x0002, 0xFFFF, 0x0000
+	@ ANALYSIS: ANIM_CMD_SEQUENCE size=0x8 addr=0x082C5E2C role=Register
+	.2byte 0x0018, 0x0002, 0xFFFF, 0x0000
+	@ ANALYSIS: ANIM_POINTER_TABLE size=0x10 addr=0x082C5E34 entries=4
+	.4byte 0x082C5E14, 0x082C5E1C, 0x082C5E24, 0x082C5E2C
 	@ pret/pokeemerald-jp direct xref for 0x082C5E44: union_room_chat.s: sub_08020838
 	.globl gUnionRoomChatData_082C5E44
 gUnionRoomChatData_082C5E44: @ 0x082C5E44
