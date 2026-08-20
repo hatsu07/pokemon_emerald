@@ -1158,7 +1158,7 @@ _08108282:
 	strh r0, [r7, #0xe]
 	b _0810835E
 	.align 2, 0
-_081082EC: .4byte gWaterData_08D8FB50
+_081082EC: .4byte gBattleAnimBackgroundImageMuddyWater_Pal
 _081082F0: .4byte 0x081085A9
 _081082F4: .4byte 0x03005B60
 _081082F8: .4byte 0x0000FFB0

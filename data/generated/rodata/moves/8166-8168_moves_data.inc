@@ -254,14 +254,13 @@ gLz77Asset_08D971CC: @ 0x08D971CC
 	.incbin "build/assets/lz77_raw/08D971CC.bin.lz"
 	.byte 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08D97C54: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
-	.globl gPokemonSummaryScreenData_08D97C54
-gPokemonSummaryScreenData_08D97C54: @ 0x08D97C54
+.globl gMoveTypes_Pal
+gMoveTypes_Pal: @ 0x08D97C54
 	@ confirmed GBA LZ77 stream: compressed=0x67, decompressed=0x60
-sLz77Block_08D97C54:
 	@ analyzed canonical ROM range 0x08D97C54-0x08D97DCF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 3 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D97C54.bin.lz"
+	.incbin "build/graphics/summary_screen/move_types_palette_rom_exact.gbapal.lz"
 	.byte 0x00
 	.globl gLz77Asset_08D97CBC
 gLz77Asset_08D97CBC: @ 0x08D97CBC
@@ -404,14 +403,13 @@ gBattlePyramidBagTilemap: @ 0x08D9AFFC
 	.error "gBattlePyramidBagTilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9B13C: battle_pyramid_bag.s: sub_081C4A40
-	.globl gBattlePyramidBagData_08D9B13C
-gBattlePyramidBagData_08D9B13C: @ 0x08D9B13C
+.globl gBattlePyramidBagInterface_Pal
+gBattlePyramidBagInterface_Pal: @ 0x08D9B13C
 	@ confirmed GBA LZ77 stream: compressed=0x28, decompressed=0x20
-sLz77Block_08D9B13C:
 	@ analyzed canonical ROM range 0x08D9B13C-0x08D9B1B3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 3 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D9B13C.bin.lz"
+	.incbin "build/graphics/battle_pyramid/bag_interface_palette_rom_exact.gbapal.lz"
 	.globl gLz77Asset_08D9B164
 gLz77Asset_08D9B164: @ 0x08D9B164
 	.incbin "build/assets/lz77_raw/08D9B164.bin.lz"

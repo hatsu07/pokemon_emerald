@@ -468,7 +468,7 @@ _081C4AC0:
 	bl LoadCompressedPalette
 	b _081C4AE0
 	.align 2, 0
-_081C4ACC: .4byte gBattlePyramidBagData_08D9B13C
+_081C4ACC: .4byte gBattlePyramidBagInterface_Pal
 _081C4AD0:
 	ldr r0, _081C4AD8
 	bl LoadCompressedSpriteSheet

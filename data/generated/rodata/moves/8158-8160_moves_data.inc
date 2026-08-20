@@ -228,14 +228,13 @@ gBattleEnvironmentPalette_StadiumWallace: @ 0x08D7E29C
 	.error "gBattleEnvironmentPalette_StadiumWallace compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D7E2D8: battle_bg.s: DrawMainBattleBackground
-	.globl gBattleBgData_08D7E2D8
-gBattleBgData_08D7E2D8: @ 0x08D7E2D8
+.globl gBattleEnvironmentPalette_Rayquaza
+gBattleEnvironmentPalette_Rayquaza: @ 0x08D7E2D8
 	@ confirmed GBA LZ77 stream: compressed=0x49, decompressed=0x60
-sLz77Block_08D7E2D8:
 	@ analyzed canonical ROM range 0x08D7E2D8-0x08D7FA9B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 7 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D7E2D8.bin.lz"
+	.incbin "build/graphics/battle_environment/sky/palette_rom_exact.gbapal.lz"
 	.byte 0x00, 0x00, 0x00
 	.globl gLz77Asset_08D7E324
 gLz77Asset_08D7E324: @ 0x08D7E324

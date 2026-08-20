@@ -31,14 +31,13 @@ gMenuPokeblock_Gfx: @ 0x08D9B4B4
 	.error "gMenuPokeblock_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9B6BC: pokeblock.spokeblock.s: sub_08135C88
-	.globl gPokeblockSpokeblockData_08D9B6BC
-gPokeblockSpokeblockData_08D9B6BC: @ 0x08D9B6BC
+.globl gMenuPokeblock_Pal
+gMenuPokeblock_Pal: @ 0x08D9B6BC
 	@ confirmed GBA LZ77 stream: compressed=0x6E, decompressed=0xC0
-sLz77Block_08D9B6BC:
 	@ analyzed canonical ROM range 0x08D9B6BC-0x08D9BA13
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 3 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D9B6BC.bin.lz"
+	.incbin "build/graphics/pokeblock/menu_palette_rom_exact.gbapal.lz"
 	.byte 0x00, 0x00
 	.globl gLz77Asset_08D9B72C
 gLz77Asset_08D9B72C: @ 0x08D9B72C

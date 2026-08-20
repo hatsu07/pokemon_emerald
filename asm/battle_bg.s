@@ -213,7 +213,7 @@ _08035690: .4byte gBattleEnvironmentTiles_Rayquaza
 _08035694: .4byte 0x06008000
 _08035698: .4byte gBattleBgData_08D7DCA8
 _0803569C: .4byte 0x0600D000
-_080356A0: .4byte gBattleBgData_08D7E2D8
+_080356A0: .4byte gBattleEnvironmentPalette_Rayquaza
 _080356A4:
 	movs r0, #8
 	ands r1, r0

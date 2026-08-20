@@ -172,6 +172,42 @@
       "source_kind": "u16_le_text",
       "source": "graphics/battle_interface/textbox_palette.gbapal.u16",
       "semantic_role": "palette"
+    },
+    "build/graphics/battle_environment/sky/palette_rom_exact.gbapal.lz": {
+      "key": "08D7E2D8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_environment/sky/palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/flying_dirt_palette_rom_exact.gbapal.lz": {
+      "key": "08D8DA9C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/flying_dirt_palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/backgrounds/muddy_water_palette_rom_exact.gbapal.lz": {
+      "key": "08D8FB50",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/muddy_water_palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/summary_screen/move_types_palette_rom_exact.gbapal.lz": {
+      "key": "08D97C54",
+      "source_kind": "u16_le_text",
+      "source": "graphics/summary_screen/move_types_palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_pyramid/bag_interface_palette_rom_exact.gbapal.lz": {
+      "key": "08D9B13C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_pyramid/bag_interface_palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/pokeblock/menu_palette_rom_exact.gbapal.lz": {
+      "key": "08D9B6BC",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokeblock/menu_palette.gbapal.u16",
+      "semantic_role": "palette"
     }
   }
 }

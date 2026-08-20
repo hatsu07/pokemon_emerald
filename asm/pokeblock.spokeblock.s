@@ -564,7 +564,7 @@ _08135D0C:
 	bl LoadCompressedPalette
 	b _08135D2E
 	.align 2, 0
-_08135D18: .4byte gPokeblockSpokeblockData_08D9B6BC
+_08135D18: .4byte gMenuPokeblock_Pal
 _08135D1C:
 	ldr r0, _08135D24
 	bl LoadCompressedSpriteSheet

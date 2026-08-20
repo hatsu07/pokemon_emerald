@@ -861,7 +861,7 @@ _081BF9C4:
 	movs r0, #1
 	b _081BF9EE
 	.align 2, 0
-_081BF9E0: .4byte gPokemonSummaryScreenData_08D97C54
+_081BF9E0: .4byte gMoveTypes_Pal
 _081BF9E4: .4byte 0x0203CBE8
 _081BF9E8: .4byte 0x000040F0
 _081BF9EC:

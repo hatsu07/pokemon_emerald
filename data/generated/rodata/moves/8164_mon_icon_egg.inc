@@ -1,12 +1,10 @@
 	@ pret/pokeemerald-jp direct xref for 0x08D8DA9C: rock.s: AnimTask_LoadSandstormBackground
-	.globl gRockData_08D8DA9C
-gRockData_08D8DA9C: @ 0x08D8DA9C
+sBattleAnimSpritePal_FlyingDirtData: @ 0x08D8DA9C
 	@ confirmed GBA LZ77 stream: compressed=0x26, decompressed=0x20
-sLz77Block_08D8DA9C:
 	@ analyzed canonical ROM range 0x08D8DA9C-0x08D8E97B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 9 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D8DA9C.bin.lz"
+	.incbin "build/graphics/battle_anims/sprites/flying_dirt_palette_rom_exact.gbapal.lz"
 	.byte 0x00, 0x00
 	.globl gLz77Asset_08D8DAC4
 gLz77Asset_08D8DAC4: @ 0x08D8DAC4
@@ -154,14 +152,13 @@ gLz77Asset_08D8FB30: @ 0x08D8FB30
 	.incbin "build/assets/lz77_raw/08D8FB30.bin.lz"
 	.byte 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08D8FB50: water.s: AnimTask_CreateSurfWave
-	.globl gWaterData_08D8FB50
-gWaterData_08D8FB50: @ 0x08D8FB50
+.globl gBattleAnimBackgroundImageMuddyWater_Pal
+gBattleAnimBackgroundImageMuddyWater_Pal: @ 0x08D8FB50
 	@ confirmed GBA LZ77 stream: compressed=0x24, decompressed=0x20
-sLz77Block_08D8FB50:
 	@ analyzed canonical ROM range 0x08D8FB50-0x08D8FC27
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 3 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D8FB50.bin.lz"
+	.incbin "build/graphics/battle_anims/backgrounds/muddy_water_palette_rom_exact.gbapal.lz"
 	.globl gLz77Asset_08D8FB74
 gLz77Asset_08D8FB74: @ 0x08D8FB74
 	.incbin "build/assets/lz77_raw/08D8FB74.bin.lz"
