@@ -502,9 +502,9 @@ gPokenavMainMenuData_085F1410: @ 0x085F1410
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085F1410 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_085EFDC8
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F1414 parent=gPokenavMainMenuData_085F1410 offset=0x4 entropy=0.811 head=00100000
+	@ ANALYSIS: COMPRESSED_SPRITE_SHEET_META size=0x4 addr=0x085F1414 parent=gPokenavMainMenuData_085F1410 sheetSize=0x1000 tag=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1414 size=0x4
-	.byte 0x00, 0x10, 0x00, 0x00
+	.2byte 0x1000, 0 @ size, tag
 	@ pret/pokeemerald-jp direct xref for 0x085F1418: pokenav_main_menu.s: InitPokenavMainMenuResources
 	.globl gPokenavMainMenuData_085F1418
 gPokenavMainMenuData_085F1418: @ 0x085F1418
@@ -519,9 +519,9 @@ gPokenavMainMenuData_085F1428: @ 0x085F1428
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: PROVEN_POINTER_FIELD addr=0x085F1428 size=0x4 source=v53_repeated_layout_exact_elf_symbol
 	.4byte gLz77Asset_085F08B0
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F142C parent=gPokenavMainMenuData_085F1428 offset=0x4 entropy=1.5 head=000C0200
+	@ ANALYSIS: COMPRESSED_SPRITE_SHEET_META size=0x4 addr=0x085F142C parent=gPokenavMainMenuData_085F1428 sheetSize=0xC00 tag=2
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F142C size=0x4
-	.byte 0x00, 0x0C, 0x02, 0x00
+	.2byte 0xC00, 2 @ size, tag
 	@ pret/pokeemerald-jp direct xref for 0x085F1430: pokenav_main_menu.s: LoadLeftHeaderGfxForMenu
 	.globl gPokenavMainMenuData_085F1430
 gPokenavMainMenuData_085F1430: @ 0x085F1430
@@ -529,34 +529,34 @@ gPokenavMainMenuData_085F1430: @ 0x085F1430
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1430 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F02BC
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F1434 parent=gPokenavMainMenuData_085F1430 offset=0x4 entropy=1.5 head=20000300
+	@ ANALYSIS: POKENAV_LEFT_HEADER_MENU_META size=0x4 addr=0x085F1434 parent=gPokenavMainMenuData_085F1430 offset=0x4 tileOffset=32 paletteIndex=3
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1434 size=0x4
-	.byte 0x20, 0x00, 0x03, 0x00
+	.2byte 32, 3 @ tileOffset, paletteIndex
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1438 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F073C
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F143C parent=gPokenavMainMenuData_085F1430 offset=0xC entropy=1.5 head=20000100
+	@ ANALYSIS: POKENAV_LEFT_HEADER_MENU_META size=0x4 addr=0x085F143C parent=gPokenavMainMenuData_085F1430 offset=0xC tileOffset=32 paletteIndex=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F143C size=0x4
-	.byte 0x20, 0x00, 0x01, 0x00
+	.2byte 32, 1 @ tileOffset, paletteIndex
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1440 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F0598
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F1444 parent=gPokenavMainMenuData_085F1430 offset=0x14 entropy=1.5 head=20000200
+	@ ANALYSIS: POKENAV_LEFT_HEADER_MENU_META size=0x4 addr=0x085F1444 parent=gPokenavMainMenuData_085F1430 offset=0x14 tileOffset=32 paletteIndex=2
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1444 size=0x4
-	.byte 0x20, 0x00, 0x02, 0x00
+	.2byte 32, 2 @ tileOffset, paletteIndex
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1448 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F0428
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F144C parent=gPokenavMainMenuData_085F1430 offset=0x1C entropy=1.5 head=20000400
+	@ ANALYSIS: POKENAV_LEFT_HEADER_MENU_META size=0x4 addr=0x085F144C parent=gPokenavMainMenuData_085F1430 offset=0x1C tileOffset=32 paletteIndex=4
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F144C size=0x4
-	.byte 0x20, 0x00, 0x04, 0x00
+	.2byte 32, 4 @ tileOffset, paletteIndex
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1450 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F08B0
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F1454 parent=gPokenavMainMenuData_085F1430 offset=0x24 entropy=0.811 head=20000000
+	@ ANALYSIS: POKENAV_LEFT_HEADER_MENU_META size=0x4 addr=0x085F1454 parent=gPokenavMainMenuData_085F1430 offset=0x24 tileOffset=32 paletteIndex=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1454 size=0x4
-	.byte 0x20, 0x00, 0x00, 0x00
+	.2byte 32, 0 @ tileOffset, paletteIndex
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1458 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F08B0
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F145C parent=gPokenavMainMenuData_085F1430 offset=0x2C entropy=0.811 head=40000000
+	@ ANALYSIS: POKENAV_LEFT_HEADER_MENU_META size=0x4 addr=0x085F145C parent=gPokenavMainMenuData_085F1430 offset=0x2C tileOffset=64 paletteIndex=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F145C size=0x4
-	.byte 0x40, 0x00, 0x00, 0x00
+	.2byte 64, 0 @ tileOffset, paletteIndex
 	@ pret/pokeemerald-jp direct xref for 0x085F1460: pokenav_main_menu.s: LoadLeftHeaderGfxForSubMenu
 	.globl gPokenavMainMenuData_085F1460
 gPokenavMainMenuData_085F1460: @ 0x085F1460
@@ -564,32 +564,32 @@ gPokenavMainMenuData_085F1460: @ 0x085F1460
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1460 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F0B24
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F1464 parent=gPokenavMainMenuData_085F1460 offset=0x4 entropy=0.811 head=01000000
+	@ ANALYSIS: POKENAV_LEFT_HEADER_SUBMENU_PALETTE_INDEX size=0x4 addr=0x085F1464 parent=gPokenavMainMenuData_085F1460 offset=0x4 paletteIndex=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1464 size=0x4
-	.byte 0x01, 0x00, 0x00, 0x00
+	.4byte 1 @ paletteIndex
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1468 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F0C8C
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F146C parent=gPokenavMainMenuData_085F1460 offset=0xC entropy=0.811 head=01000000
+	@ ANALYSIS: POKENAV_LEFT_HEADER_SUBMENU_PALETTE_INDEX size=0x4 addr=0x085F146C parent=gPokenavMainMenuData_085F1460 offset=0xC paletteIndex=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F146C size=0x4
-	.byte 0x01, 0x00, 0x00, 0x00
+	.4byte 1 @ paletteIndex
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1470 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F0DEC
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F1474 parent=gPokenavMainMenuData_085F1460 offset=0x14 entropy=0.811 head=04000000
+	@ ANALYSIS: POKENAV_LEFT_HEADER_SUBMENU_PALETTE_INDEX size=0x4 addr=0x085F1474 parent=gPokenavMainMenuData_085F1460 offset=0x14 paletteIndex=4
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1474 size=0x4
-	.byte 0x04, 0x00, 0x00, 0x00
+	.4byte 4 @ paletteIndex
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1478 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F0F00
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F147C parent=gPokenavMainMenuData_085F1460 offset=0x1C entropy=0.811 head=01000000
+	@ ANALYSIS: POKENAV_LEFT_HEADER_SUBMENU_PALETTE_INDEX size=0x4 addr=0x085F147C parent=gPokenavMainMenuData_085F1460 offset=0x1C paletteIndex=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F147C size=0x4
-	.byte 0x01, 0x00, 0x00, 0x00
+	.4byte 1 @ paletteIndex
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1480 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F1034
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F1484 parent=gPokenavMainMenuData_085F1460 offset=0x24 entropy=0.811 head=02000000
+	@ ANALYSIS: POKENAV_LEFT_HEADER_SUBMENU_PALETTE_INDEX size=0x4 addr=0x085F1484 parent=gPokenavMainMenuData_085F1460 offset=0x24 paletteIndex=2
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F1484 size=0x4
-	.byte 0x02, 0x00, 0x00, 0x00
+	.4byte 2 @ paletteIndex
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1488 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F116C
-	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x085F148C parent=gPokenavMainMenuData_085F1460 offset=0x2C
+	@ ANALYSIS: POKENAV_LEFT_HEADER_SUBMENU_PALETTE_INDEX size=0x4 addr=0x085F148C parent=gPokenavMainMenuData_085F1460 offset=0x2C paletteIndex=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F148C size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1490 size=0x4 source=v54_multi_pointer

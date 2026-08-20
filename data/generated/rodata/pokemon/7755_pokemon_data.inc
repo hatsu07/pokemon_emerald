@@ -197,114 +197,114 @@ gPokenavUnk4Data_085F4D34: @ 0x085F4D34
 gPokenavUnk4Data_085F4D3C: @ 0x085F4D3C
 	@ analyzed canonical ROM range 0x085F4D3C-0x085F4DF3
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x085F4D3C parent=gPokenavUnk4Data_085F4D3C offset=0x0
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4D3C parent=gPokenavUnk4Data_085F4D3C offset=0x0 key0=0 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4D3C size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4D40 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F482C
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4D44 parent=gPokenavUnk4Data_085F4D3C offset=0x8 entropy=0.811 head=01000000
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4D44 parent=gPokenavUnk4Data_085F4D3C offset=0x8 key0=1 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4D44 size=0x4
-	.byte 0x01, 0x00, 0x00, 0x00
+	.2byte 1, 0 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4D48 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F4758
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4D4C parent=gPokenavUnk4Data_085F4D3C offset=0x10 entropy=0.811 head=02000000
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4D4C parent=gPokenavUnk4Data_085F4D3C offset=0x10 key0=2 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4D4C size=0x4
-	.byte 0x02, 0x00, 0x00, 0x00
+	.2byte 2, 0 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4D50 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F485C
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4D54 parent=gPokenavUnk4Data_085F4D3C offset=0x18 entropy=0.811 head=03000000
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4D54 parent=gPokenavUnk4Data_085F4D3C offset=0x18 key0=3 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4D54 size=0x4
-	.byte 0x03, 0x00, 0x00, 0x00
+	.2byte 3, 0 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4D58 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F443C
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4D5C parent=gPokenavUnk4Data_085F4D3C offset=0x20 entropy=0.811 head=04000000
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4D5C parent=gPokenavUnk4Data_085F4D3C offset=0x20 key0=4 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4D5C size=0x4
-	.byte 0x04, 0x00, 0x00, 0x00
+	.2byte 4, 0 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4D60 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F4480
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4D64 parent=gPokenavUnk4Data_085F4D3C offset=0x28 entropy=0.811 head=05000000
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4D64 parent=gPokenavUnk4Data_085F4D3C offset=0x28 key0=5 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4D64 size=0x4
-	.byte 0x05, 0x00, 0x00, 0x00
+	.2byte 5, 0 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4D68 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F4960
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4D6C parent=gPokenavUnk4Data_085F4D3C offset=0x30 entropy=0.811 head=06000000
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4D6C parent=gPokenavUnk4Data_085F4D3C offset=0x30 key0=6 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4D6C size=0x4
-	.byte 0x06, 0x00, 0x00, 0x00
+	.2byte 6, 0 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4D70 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F466C
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4D74 parent=gPokenavUnk4Data_085F4D3C offset=0x38 entropy=0.811 head=07000000
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4D74 parent=gPokenavUnk4Data_085F4D3C offset=0x38 key0=7 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4D74 size=0x4
-	.byte 0x07, 0x00, 0x00, 0x00
+	.2byte 7, 0 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4D78 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F4A3C
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4D7C parent=gPokenavUnk4Data_085F4D3C offset=0x40 entropy=0.811 head=08000000
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4D7C parent=gPokenavUnk4Data_085F4D3C offset=0x40 key0=8 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4D7C size=0x4
-	.byte 0x08, 0x00, 0x00, 0x00
+	.2byte 8, 0 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4D80 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F4518
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4D84 parent=gPokenavUnk4Data_085F4D3C offset=0x48 entropy=1.5 head=08000100
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4D84 parent=gPokenavUnk4Data_085F4D3C offset=0x48 key0=8 key1=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4D84 size=0x4
-	.byte 0x08, 0x00, 0x01, 0x00
+	.2byte 8, 1 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4D88 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F4578
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4D8C parent=gPokenavUnk4Data_085F4D3C offset=0x50 entropy=0.811 head=09000000
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4D8C parent=gPokenavUnk4Data_085F4D3C offset=0x50 key0=9 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4D8C size=0x4
-	.byte 0x09, 0x00, 0x00, 0x00
+	.2byte 9, 0 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4D90 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F4704
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4D94 parent=gPokenavUnk4Data_085F4D3C offset=0x58 entropy=1.5 head=09000100
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4D94 parent=gPokenavUnk4Data_085F4D3C offset=0x58 key0=9 key1=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4D94 size=0x4
-	.byte 0x09, 0x00, 0x01, 0x00
+	.2byte 9, 1 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4D98 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F46AC
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4D9C parent=gPokenavUnk4Data_085F4D3C offset=0x60 entropy=0.811 head=0A000000
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4D9C parent=gPokenavUnk4Data_085F4D3C offset=0x60 key0=10 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4D9C size=0x4
-	.byte 0x0A, 0x00, 0x00, 0x00
+	.2byte 10, 0 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4DA0 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F45C4
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4DA4 parent=gPokenavUnk4Data_085F4D3C offset=0x68 entropy=1.5 head=0A000100
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4DA4 parent=gPokenavUnk4Data_085F4D3C offset=0x68 key0=10 key1=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4DA4 size=0x4
-	.byte 0x0A, 0x00, 0x01, 0x00
+	.2byte 10, 1 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4DA8 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F4618
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4DAC parent=gPokenavUnk4Data_085F4D3C offset=0x70 entropy=0.811 head=0B000000
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4DAC parent=gPokenavUnk4Data_085F4D3C offset=0x70 key0=11 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4DAC size=0x4
-	.byte 0x0B, 0x00, 0x00, 0x00
+	.2byte 11, 0 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4DB0 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F44C8
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4DB4 parent=gPokenavUnk4Data_085F4D3C offset=0x78 entropy=0.811 head=0C000000
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4DB4 parent=gPokenavUnk4Data_085F4D3C offset=0x78 key0=12 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4DB4 size=0x4
-	.byte 0x0C, 0x00, 0x00, 0x00
+	.2byte 12, 0 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4DB8 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F47D4
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4DBC parent=gPokenavUnk4Data_085F4D3C offset=0x80 entropy=1.5 head=0C000100
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4DBC parent=gPokenavUnk4Data_085F4D3C offset=0x80 key0=12 key1=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4DBC size=0x4
-	.byte 0x0C, 0x00, 0x01, 0x00
+	.2byte 12, 1 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4DC0 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F4788
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4DC4 parent=gPokenavUnk4Data_085F4D3C offset=0x88 entropy=0.811 head=0D000000
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4DC4 parent=gPokenavUnk4Data_085F4D3C offset=0x88 key0=13 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4DC4 size=0x4
-	.byte 0x0D, 0x00, 0x00, 0x00
+	.2byte 13, 0 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4DC8 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F49E0
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4DCC parent=gPokenavUnk4Data_085F4D3C offset=0x90 entropy=1.5 head=0D000100
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4DCC parent=gPokenavUnk4Data_085F4D3C offset=0x90 key0=13 key1=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4DCC size=0x4
-	.byte 0x0D, 0x00, 0x01, 0x00
+	.2byte 13, 1 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4DD0 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F4998
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4DD4 parent=gPokenavUnk4Data_085F4D3C offset=0x98 entropy=0.811 head=0E000000
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4DD4 parent=gPokenavUnk4Data_085F4D3C offset=0x98 key0=14 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4DD4 size=0x4
-	.byte 0x0E, 0x00, 0x00, 0x00
+	.2byte 14, 0 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4DD8 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F4894
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4DDC parent=gPokenavUnk4Data_085F4D3C offset=0xA0 entropy=0.811 head=0F000000
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4DDC parent=gPokenavUnk4Data_085F4D3C offset=0xA0 key0=15 key1=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4DDC size=0x4
-	.byte 0x0F, 0x00, 0x00, 0x00
+	.2byte 15, 0 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4DE0 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F48D4
-	@ ANALYSIS: RAW_BLOCK size=0x4 addr=0x085F4DE4 parent=gPokenavUnk4Data_085F4D3C offset=0xA8 entropy=1.5 head=0F000100
+	@ ANALYSIS: POKENAV_MAP_TILE_LOOKUP_KEYS size=0x4 addr=0x085F4DE4 parent=gPokenavUnk4Data_085F4D3C offset=0xA8 key0=15 key1=1
 	@ ANALYSIS: SOURCE_RANGE addr=0x085F4DE4 size=0x4
-	.byte 0x0F, 0x00, 0x01, 0x00
+	.2byte 15, 1 @ lookup key0, lookup key1
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F4DE8 size=0x4 source=v54_multi_pointer
 	.4byte gLz77Asset_085F491C
 	@ ANALYSIS: RAW_BLOCK size=0x8 addr=0x085F4DEC parent=gPokenavUnk4Data_085F4D3C offset=0xB0 entropy=1.299 head=0040004000040000
