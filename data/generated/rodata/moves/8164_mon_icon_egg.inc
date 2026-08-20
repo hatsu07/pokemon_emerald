@@ -197,5 +197,5 @@ gLz77Asset_08D91028: @ 0x08D91028
 	.incbin "build/assets/lz77_raw/08D91028.bin.lz"
 	.globl gLz77Asset_08D91050
 gLz77Asset_08D91050: @ 0x08D91050
-	.incbin "build/assets/lz77_raw/08D91050.bin.lz"
+	.incbin "build/graphics/battle_anims/backgrounds/exact_lz/impact_opponent_rom_exact.tilemap.lz"
 	.byte 0x00

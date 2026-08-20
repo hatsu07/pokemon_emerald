@@ -1,22 +1,126 @@
 {
   "format": "pokemon-emerald-jp-lz77-semantic-exact-v2",
   "entries": {
-    "build/graphics/berry_crush/crusher_base_rom_exact.4bpp.lz": {"key":"082C6C14","source_kind":"png","source":"graphics/berry_crush/crusher_base.png","width":64,"height":64},
-    "build/graphics/berry_crush/impact_rom_exact.4bpp.lz": {"key":"082C6F40","source_kind":"png","source":"graphics/berry_crush/impact.png","width":32,"height":224},
-    "build/graphics/berry_crush/sparkle_rom_exact.4bpp.lz": {"key":"082C72BC","source_kind":"png","source":"graphics/berry_crush/sparkle.png","width":16,"height":224},
-    "build/graphics/berry_crush/timer_digits_rom_exact.4bpp.lz": {"key":"082C7408","source_kind":"png","source":"graphics/berry_crush/timer_digits.png","width":8,"height":176},
-
-    "build/graphics/dodrio_berry_picking/bg_rom_exact.4bpp.lz": {"key":"082C81B8","source_kind":"build_lz","source":"build/graphics/dodrio_berry_picking/bg.4bpp.lz"},
-    "build/graphics/dodrio_berry_picking/tree_border_rom_exact.4bpp.lz": {"key":"082C8A48","source_kind":"build_lz","source":"build/graphics/dodrio_berry_picking/tree_border.4bpp.lz"},
-    "build/graphics/dodrio_berry_picking/status_rom_exact.4bpp.lz": {"key":"082C9814","source_kind":"build_lz","source":"build/graphics/dodrio_berry_picking/status.4bpp.lz"},
-    "build/graphics/dodrio_berry_picking/cloud_rom_exact.4bpp.lz": {"key":"082C98A8","source_kind":"build_lz","source":"build/graphics/dodrio_berry_picking/cloud.4bpp.lz"},
-    "build/graphics/dodrio_berry_picking/dodrio_rom_exact.4bpp.lz": {"key":"082C99F0","source_kind":"build_lz","source":"build/graphics/dodrio_berry_picking/dodrio.4bpp.lz"},
-
-    "build/graphics/pokenav/options/options_rom_exact.4bpp.lz": {"key":"085F1C90","source_kind":"png","source":"graphics/pokenav/options/options.png","width":128,"height":208},
-    "build/graphics/pokenav/blue_light_rom_exact.4bpp.lz": {"key":"085F268C","source_kind":"png","source":"graphics/pokenav/blue_light.png","width":32,"height":16},
-
-    "build/graphics/cable_car/cable_car_rom_exact.4bpp.lz": {"key":"08DBC238","source_kind":"build_raw","source":"build/graphics/object_events/pics/misc/cable_car.4bpp"},
-    "build/graphics/cable_car/door_rom_exact.4bpp.lz": {"key":"08DBC538","source_kind":"png","source":"graphics/cable_car/door.png","width":16,"height":8},
-    "build/graphics/cable_car/cable_rom_exact.4bpp.lz": {"key":"08DBC568","source_kind":"png","source":"graphics/cable_car/cable.png","width":16,"height":16}
+    "build/graphics/berry_crush/crusher_base_rom_exact.4bpp.lz": {
+      "key": "082C6C14",
+      "source_kind": "png",
+      "source": "graphics/berry_crush/crusher_base.png",
+      "width": 64,
+      "height": 64
+    },
+    "build/graphics/berry_crush/impact_rom_exact.4bpp.lz": {
+      "key": "082C6F40",
+      "source_kind": "png",
+      "source": "graphics/berry_crush/impact.png",
+      "width": 32,
+      "height": 224
+    },
+    "build/graphics/berry_crush/sparkle_rom_exact.4bpp.lz": {
+      "key": "082C72BC",
+      "source_kind": "png",
+      "source": "graphics/berry_crush/sparkle.png",
+      "width": 16,
+      "height": 224
+    },
+    "build/graphics/berry_crush/timer_digits_rom_exact.4bpp.lz": {
+      "key": "082C7408",
+      "source_kind": "png",
+      "source": "graphics/berry_crush/timer_digits.png",
+      "width": 8,
+      "height": 176
+    },
+    "build/graphics/dodrio_berry_picking/bg_rom_exact.4bpp.lz": {
+      "key": "082C81B8",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/bg.4bpp.lz"
+    },
+    "build/graphics/dodrio_berry_picking/tree_border_rom_exact.4bpp.lz": {
+      "key": "082C8A48",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/tree_border.4bpp.lz"
+    },
+    "build/graphics/dodrio_berry_picking/status_rom_exact.4bpp.lz": {
+      "key": "082C9814",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/status.4bpp.lz"
+    },
+    "build/graphics/dodrio_berry_picking/cloud_rom_exact.4bpp.lz": {
+      "key": "082C98A8",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/cloud.4bpp.lz"
+    },
+    "build/graphics/dodrio_berry_picking/dodrio_rom_exact.4bpp.lz": {
+      "key": "082C99F0",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/dodrio.4bpp.lz"
+    },
+    "build/graphics/pokenav/options/options_rom_exact.4bpp.lz": {
+      "key": "085F1C90",
+      "source_kind": "png",
+      "source": "graphics/pokenav/options/options.png",
+      "width": 128,
+      "height": 208
+    },
+    "build/graphics/pokenav/blue_light_rom_exact.4bpp.lz": {
+      "key": "085F268C",
+      "source_kind": "png",
+      "source": "graphics/pokenav/blue_light.png",
+      "width": 32,
+      "height": 16
+    },
+    "build/graphics/cable_car/cable_car_rom_exact.4bpp.lz": {
+      "key": "08DBC238",
+      "source_kind": "build_raw",
+      "source": "build/graphics/object_events/pics/misc/cable_car.4bpp"
+    },
+    "build/graphics/cable_car/door_rom_exact.4bpp.lz": {
+      "key": "08DBC538",
+      "source_kind": "png",
+      "source": "graphics/cable_car/door.png",
+      "width": 16,
+      "height": 8
+    },
+    "build/graphics/cable_car/cable_rom_exact.4bpp.lz": {
+      "key": "08DBC568",
+      "source_kind": "png",
+      "source": "graphics/cable_car/cable.png",
+      "width": 16,
+      "height": 16
+    },
+    "build/graphics/dodrio_berry_picking/bg_rom_exact.bin.lz": {
+      "key": "082CAC0C",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/bg.bin.lz"
+    },
+    "build/graphics/dodrio_berry_picking/tree_border_right_rom_exact.bin.lz": {
+      "key": "082CAE78",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/tree_border_right.bin.lz"
+    },
+    "build/graphics/dodrio_berry_picking/tree_border_left_rom_exact.bin.lz": {
+      "key": "082CB0C8",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/tree_border_left.bin.lz"
+    },
+    "build/graphics/battle_interface/level_up_banner_rom_exact.4bpp.lz": {
+      "key": "082ECC6C",
+      "source_kind": "build_lz",
+      "source": "build/graphics/battle_interface/level_up_banner.4bpp.lz"
+    },
+    "build/graphics/pokeblock/use_screen/condition_rom_exact.4bpp.lz": {
+      "key": "085F073C",
+      "source_kind": "build_lz",
+      "source": "build/graphics/pokeblock/use_screen/condition.4bpp.lz"
+    },
+    "build/graphics/pokemon/none/back_rom_exact.4bpp.lz": {
+      "key": "08C00758",
+      "source_kind": "build_lz",
+      "source": "build/graphics/pokemon/none/back.4bpp.lz"
+    },
+    "build/graphics/battle_anims/backgrounds/exact_lz/impact_opponent_rom_exact.tilemap.lz": {
+      "key": "08D91050",
+      "source_kind": "build_lz",
+      "source": "build/graphics/battle_anims/backgrounds/exact_lz/impact_opponent.tilemap.lz"
+    }
   }
 }

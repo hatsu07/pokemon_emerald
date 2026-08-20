@@ -93,15 +93,15 @@ gLz77Asset_082C99F0: @ 0x082C99F0
 	.incbin "build/graphics/dodrio_berry_picking/dodrio_rom_exact.4bpp.lz"
 	.globl gLz77Asset_082CAC0C
 gLz77Asset_082CAC0C: @ 0x082CAC0C
-	.incbin "build/assets/lz77_raw/082CAC0C.bin.lz"
+	.incbin "build/graphics/dodrio_berry_picking/bg_rom_exact.bin.lz"
 	.byte 0x00, 0x00, 0x00
 	.globl gLz77Asset_082CAE78
 gLz77Asset_082CAE78: @ 0x082CAE78
-	.incbin "build/assets/lz77_raw/082CAE78.bin.lz"
+	.incbin "build/graphics/dodrio_berry_picking/tree_border_right_rom_exact.bin.lz"
 	.byte 0x00, 0x00, 0x00
 	.globl gLz77Asset_082CB0C8
 gLz77Asset_082CB0C8: @ 0x082CB0C8
-	.incbin "build/assets/lz77_raw/082CB0C8.bin.lz"
+	.incbin "build/graphics/dodrio_berry_picking/tree_border_left_rom_exact.bin.lz"
 	.byte 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x082CB314: dodrio_berry_picking.s: sub_080260EC, sub_080264E4
 	.globl sDodrioBerryPickingBerryFallDelays

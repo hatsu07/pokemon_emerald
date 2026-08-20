@@ -389,7 +389,7 @@ sLz77Block_082ECC6C:
 	@ analyzed canonical ROM range 0x082ECC6C-0x082ECD43
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/082ECC6C.bin.lz"
+	.incbin "build/graphics/battle_interface/level_up_banner_rom_exact.4bpp.lz"
 	.byte 0x00, 0x3A, 0x3E, 0x3B, 0x3F, 0x3C, 0x3D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80, 0x00, 0x00, 0x00
 	.byte 0x00
 	.globl sSpriteTemplate_082ECD44

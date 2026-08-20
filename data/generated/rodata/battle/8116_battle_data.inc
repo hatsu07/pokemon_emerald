@@ -14,5 +14,5 @@ sLz77Block_08C00530:
 	.byte 0x00
 	.globl gLz77Asset_08C00758
 gLz77Asset_08C00758: @ 0x08C00758
-	.incbin "build/assets/lz77_raw/08C00758.bin.lz"
+	.incbin "build/graphics/pokemon/none/back_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00

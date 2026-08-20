@@ -152,7 +152,7 @@ list(APPEND GRAPHICS_RELATIVE_OUTPUTS
     "build/graphics/battle_anims/unused/water_gfx.4bpp"
     "build/graphics/battle_anims/unused/water.tilemap.inc")
 
-# BEGIN SEMANTIC14 EXACT LZ77 CONFIG
+# BEGIN SEMANTIC21 EXACT LZ77 CONFIG
 set(LZ77_SEMANTIC_EXACT_MANIFEST
     "${CMAKE_SOURCE_DIR}/assets/lz77_semantic_exact/png8_build6_manifest.json")
 set(LZ77_SEMANTIC_EXACT_OUTPUTS
@@ -170,6 +170,13 @@ set(LZ77_SEMANTIC_EXACT_OUTPUTS
     "build/graphics/cable_car/cable_car_rom_exact.4bpp.lz"
     "build/graphics/cable_car/door_rom_exact.4bpp.lz"
     "build/graphics/cable_car/cable_rom_exact.4bpp.lz"
+    "build/graphics/dodrio_berry_picking/bg_rom_exact.bin.lz"
+    "build/graphics/dodrio_berry_picking/tree_border_right_rom_exact.bin.lz"
+    "build/graphics/dodrio_berry_picking/tree_border_left_rom_exact.bin.lz"
+    "build/graphics/battle_interface/level_up_banner_rom_exact.4bpp.lz"
+    "build/graphics/pokeblock/use_screen/condition_rom_exact.4bpp.lz"
+    "build/graphics/pokemon/none/back_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/backgrounds/exact_lz/impact_opponent_rom_exact.tilemap.lz"
 )
 set(LZ77_SEMANTIC_PNG_SOURCES
     "${CMAKE_SOURCE_DIR}/graphics/berry_crush/crusher_base.png"
@@ -188,6 +195,15 @@ set(LZ77_SEMANTIC_BUILD_INPUTS
     "build/graphics/dodrio_berry_picking/cloud.4bpp.lz"
     "build/graphics/dodrio_berry_picking/dodrio.4bpp.lz"
     "build/graphics/object_events/pics/misc/cable_car.4bpp"
+    "build/graphics/dodrio_berry_picking/bg.bin.lz"
+    "build/graphics/dodrio_berry_picking/tree_border_right.bin.lz"
+    "build/graphics/dodrio_berry_picking/tree_border_left.bin.lz"
+    "build/graphics/battle_interface/level_up_banner.4bpp.lz"
+    "build/graphics/pokeblock/use_screen/condition.4bpp.lz"
+    "build/graphics/pokemon/none/back.4bpp.lz"
+)
+set(LZ77_SEMANTIC_EXTERNAL_BUILD_INPUTS
+    "build/graphics/battle_anims/backgrounds/exact_lz/impact_opponent.tilemap.lz"
 )
 set(LZ77_SEMANTIC_BUILD_INPUTS_ABS
     "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/bg.4bpp.lz"
@@ -196,13 +212,21 @@ set(LZ77_SEMANTIC_BUILD_INPUTS_ABS
     "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/cloud.4bpp.lz"
     "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/dodrio.4bpp.lz"
     "${CMAKE_SOURCE_DIR}/build/graphics/object_events/pics/misc/cable_car.4bpp"
+    "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/bg.bin.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/tree_border_right.bin.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/tree_border_left.bin.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/battle_interface/level_up_banner.4bpp.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/pokeblock/use_screen/condition.4bpp.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/pokemon/none/back.4bpp.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/battle_anims/backgrounds/exact_lz/impact_opponent.tilemap.lz"
 )
-# Exact wrapper outputs and their semantic build inputs must both have
-# add_graphics_rule() invoked after generic refs are replaced.
+# Exact wrapper outputs and ordinary semantic build inputs need
+# add_graphics_rule() registration. exact_lz external inputs already
+# have their own producer and remain wrapper dependencies only.
 list(APPEND GRAPHICS_RELATIVE_OUTPUTS
     ${LZ77_SEMANTIC_EXACT_OUTPUTS}
     ${LZ77_SEMANTIC_BUILD_INPUTS})
-# END SEMANTIC14 EXACT LZ77 CONFIG
+# END SEMANTIC21 EXACT LZ77 CONFIG
 
 list(REMOVE_DUPLICATES GRAPHICS_RELATIVE_OUTPUTS)
 list(SORT GRAPHICS_RELATIVE_OUTPUTS)
@@ -367,7 +391,7 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     set(OUTPUT_ABS "${CMAKE_SOURCE_DIR}/${RELATIVE_OUTPUT}")
     get_filename_component(OUTPUT_DIR "${OUTPUT_ABS}" DIRECTORY)
 
-    # BEGIN SEMANTIC14 EXACT LZ77 PIPELINE
+    # BEGIN SEMANTIC21 EXACT LZ77 PIPELINE
     list(FIND LZ77_SEMANTIC_EXACT_OUTPUTS
         "${RELATIVE_OUTPUT}" LZ77_SEMANTIC_EXACT_INDEX)
     if(NOT LZ77_SEMANTIC_EXACT_INDEX EQUAL -1)
@@ -392,7 +416,7 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
                 "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
-    # END SEMANTIC14 EXACT LZ77 PIPELINE
+    # END SEMANTIC21 EXACT LZ77 PIPELINE
 
     # BEGIN SLOT MACHINE SEMANTIC TILEMAP PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES

@@ -422,7 +422,7 @@ gLz77Asset_085F0598: @ 0x085F0598
 	.byte 0x00, 0x00
 	.globl gLz77Asset_085F073C
 gLz77Asset_085F073C: @ 0x085F073C
-	.incbin "build/assets/lz77_raw/085F073C.bin.lz"
+	.incbin "build/graphics/pokeblock/use_screen/condition_rom_exact.4bpp.lz"
 	.byte 0x00
 	.globl gLz77Asset_085F08B0
 gLz77Asset_085F08B0: @ 0x085F08B0
