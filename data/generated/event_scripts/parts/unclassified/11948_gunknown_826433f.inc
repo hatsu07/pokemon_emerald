@@ -524,6 +524,8 @@ EventScriptData_JP_0826439D:
 	goto .LStitchedEvent_0826472C
 	end
 .LStitchedEvent_0826472C:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	setvar 0x8005, 0x0000
 	.byte 0x25 @ PROVEN_UNREFERENCED_STITCHED_EVENT_CMD special 0x017C; no matching SPECIAL_* constant
 	.2byte 0x017C
@@ -777,6 +779,8 @@ EventScriptData_JP_0826439D:
 	@ ANALYSIS: PROVEN_UNREFERENCED_STITCHED_EVENT_CFG addr=0x08264904 raw_size=0xB4 commands=50 hard_stops=11
 	@ Full bytecode/CFG identity and split final pointer operand proven; runtime reachability is not claimed.
 .LStitchedEvent_08264904:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	callstd 0x04
 	.byte 0x25 @ PROVEN_UNREFERENCED_STITCHED_EVENT_CMD special 0x018F; no matching SPECIAL_* constant
 	.2byte 0x018F

@@ -167,6 +167,8 @@ EventScriptData_JP_08245C0A:
 	@ ANALYSIS: PROVEN_EVENT_MOVEMENT_MIX_WITH_CONSUMER addr=0x08245C30 event=0x33 movement=0x3
 	.globl EventScriptData_JP_08245C30
 EventScriptData_JP_08245C30:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	applymovement 0x00FF, .LMovement_JP_08245C63
 	waitmovement 0x0000
 	setvar 0x4097, 0x0001
@@ -1018,6 +1020,8 @@ EventScript_ShowMessage_08246316:
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08246331 size=0x47 commands=23 hard_stops=5
 	@ Full bytecode/CFG identity proven; runtime reachability is not claimed.
 .LClosedEvent_08246331:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	callstd 0x04
 	release
 	end

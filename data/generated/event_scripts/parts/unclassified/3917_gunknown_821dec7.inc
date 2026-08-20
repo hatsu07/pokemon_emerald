@@ -33,6 +33,8 @@ EventScriptData_JP_0821DEF4:
 	end
 	@ ANALYSIS: PROVEN_EVENT_CFG addr=0x0821DF0A size=0x48
 .LResidualEvent_0821DF0A:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	.byte 0x25 @ special 0x00CC; no matching SPECIAL_* constant
 	.2byte 0x00CC
 	setvar 0x40B4, 0x0008

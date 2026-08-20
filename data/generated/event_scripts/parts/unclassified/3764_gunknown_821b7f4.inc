@@ -529,6 +529,8 @@ SealedChamber_InnerRoom_MapScripts:
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0821BB43 size=0x57 commands=33 hard_stops=2
 	@ Full bytecode/CFG identity proven; runtime reachability is not claimed.
 .LClosedEvent_0821BB43:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	waitbuttonpress
 	hidebox2
 	checkflag 0x00E4

@@ -899,6 +899,8 @@ SharedMapScript_0824790F:
 	@ ANALYSIS: PROVEN_UNREFERENCED_STITCHED_EVENT_CFG addr=0x08247A2D raw_size=0x34 commands=14 hard_stops=2
 	@ Full bytecode/CFG identity and split final pointer operand proven; runtime reachability is not claimed.
 .LStitchedEvent_08247A2D:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
 	callstd 0x04
 	fadescreen 0x01
 	setvar 0x8005, 0x0001
