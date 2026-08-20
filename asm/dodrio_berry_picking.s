@@ -3254,7 +3254,7 @@ sub_0802602C: @ 0x0802602C
 	b _08026082
 	.align 2, 0
 _08026060: .4byte 0x0202294C
-_08026064: .4byte gDodrioBerryPickingData_082CB320
+_08026064: .4byte sDodrioBerryPickingTreeBorderXPos
 _08026068:
 	lsls r4, r2, #3
 	adds r1, r4, #0
@@ -3441,7 +3441,7 @@ _08026196:
 	.align 2, 0
 _080261C0: .4byte 0x0202294C
 _080261C4: .4byte 0x000031CC
-_080261C8: .4byte gDodrioBerryPickingData_082C7D28
+_080261C8: .4byte sDodrioBerryPickingActiveColumnMap
 _080261CC:
 	adds r0, r2, #1
 	lsls r0, r0, #0x18
@@ -3581,8 +3581,8 @@ _080262C8:
 	.align 2, 0
 _080262CC: .4byte 0x000031D4
 _080262D0: .4byte 0x0202294C
-_080262D4: .4byte gDodrioBerryPickingData_082C7D28
-_080262D8: .4byte gDodrioBerryPickingData_082CB314
+_080262D4: .4byte sDodrioBerryPickingActiveColumnMap
+_080262D8: .4byte sDodrioBerryPickingBerryFallDelays
 _080262DC: .4byte 0x000031B4
 _080262E0:
 	adds r0, r3, #0
@@ -3805,7 +3805,7 @@ _0802643E:
 	strb r1, [r0]
 	b _080264D2
 	.align 2, 0
-_08026490: .4byte gDodrioBerryPickingData_082C7E3B
+_08026490: .4byte sDodrioBerryPickingHeadToColumnMap
 _08026494: .4byte 0x000031D4
 _08026498:
 	movs r0, #1
@@ -3845,7 +3845,7 @@ _080264D4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080264DC: .4byte gDodrioBerryPickingData_082C7E3B
+_080264DC: .4byte sDodrioBerryPickingHeadToColumnMap
 _080264E0: .4byte 0x000031D4
 	thumb_func_end sub_080263FC
 
@@ -4016,7 +4016,7 @@ _08026624:
 	bl sub_080260EC
 	b _08026724
 	.align 2, 0
-_0802662C: .4byte gDodrioBerryPickingData_082CB314
+_0802662C: .4byte sDodrioBerryPickingBerryFallDelays
 _08026630: .4byte 0x000032E0
 _08026634:
 	cmp r0, #2
@@ -4210,7 +4210,7 @@ _08026768:
 	b _080267C4
 	.align 2, 0
 _080267B0: .4byte 0x0202294C
-_080267B4: .4byte gDodrioBerryPickingData_082C7D28
+_080267B4: .4byte sDodrioBerryPickingActiveColumnMap
 _080267B8: .4byte 0x000031A0
 _080267BC:
 	adds r0, r6, #0
@@ -4650,7 +4650,7 @@ _08026AC4:
 	b _08026AD6
 	.align 2, 0
 _08026AC8: .4byte 0x0202294C
-_08026ACC: .4byte gDodrioBerryPickingData_082C7D28
+_08026ACC: .4byte sDodrioBerryPickingActiveColumnMap
 _08026AD0: .4byte 0x000031BF
 _08026AD4:
 	movs r0, #0
@@ -4713,7 +4713,7 @@ _08026B36:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08026B44: .4byte gDodrioBerryPickingData_082CB328
+_08026B44: .4byte sDodrioBerryPickingDifficultyThresholds
 _08026B48: .4byte 0x0202294C
 	thumb_func_end sub_08026ADC
 
@@ -4734,7 +4734,7 @@ sub_08026B4C: @ 0x08026B4C
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_08026B68: .4byte gDodrioBerryPickingData_082C7ED4
+_08026B68: .4byte sDodrioBerryPickingPlayerIdAtColumn
 _08026B6C: .4byte 0x0202294C
 	thumb_func_end sub_08026B4C
 
@@ -4807,7 +4807,7 @@ _08026BD8:
 	b _08026C08
 	.align 2, 0
 _08026BF0: .4byte 0x0202294C
-_08026BF4: .4byte gDodrioBerryPickingData_082C7E86
+_08026BF4: .4byte sDodrioBerryPickingNeighborMap
 _08026BF8: .4byte gDodrioBerryPickingData_082C7F0B
 _08026BFC:
 	ldr r0, [r4]
@@ -5636,7 +5636,7 @@ _080271F6:
 	bx r0
 	.align 2, 0
 _08027214: .4byte 0x0202294C
-_08027218: .4byte gDodrioBerryPickingData_082CB330
+_08027218: .4byte sDodrioBerryPickingPrizeBerryIds
 	thumb_func_end sub_080271B0
 
 	thumb_func_start sub_0802721C
@@ -6032,7 +6032,7 @@ _080274AE:
 	b _080274F6
 	.align 2, 0
 _080274EC: .4byte 0x0202294C
-_080274F0: .4byte gDodrioBerryPickingData_082CB3B0
+_080274F0: .4byte sDodrioBerryPickingBerryScoreMultipliers
 _080274F4:
 	movs r0, #0
 _080274F6:
@@ -6585,7 +6585,7 @@ _080278BE:
 	movs r1, #3
 	b _080278FA
 	.align 2, 0
-_080278D4: .4byte gDodrioBerryPickingData_082CB3B8
+_080278D4: .4byte sDodrioBerryPickingRecordsWindowTemplate
 _080278D8:
 	bl IsDma3ManagerBusyWithBgCopy
 	lsls r0, r0, #0x18
@@ -6753,10 +6753,10 @@ _08027A2C: .4byte 0x00000212
 _08027A30: .4byte 0x0000021D
 _08027A34: .4byte 0x085CCCF5
 _08027A38: .4byte 0x02021C40
-_08027A3C: .4byte gDodrioBerryPickingData_082CB3CC
+_08027A3C: .4byte sDodrioBerryPickingRecordNumMaxDigits
 _08027A40: .4byte 0x082CB3C0
-_08027A44: .4byte gDodrioBerryPickingData_082CB3D0
-_08027A48: .4byte gDodrioBerryPickingData_082CB3D6
+_08027A44: .4byte sDodrioBerryPickingRecordTextYCoords
+_08027A48: .4byte sDodrioBerryPickingRecordNumYCoords
 	thumb_func_end sub_0802792C
 
 	thumb_func_start sub_08027A4C
@@ -6851,7 +6851,7 @@ _08027ADE:
 _08027AEC: .4byte 0x0202294C
 _08027AF0: .4byte 0x082CB41C
 _08027AF4: .4byte 0x020226A8
-_08027AF8: .4byte gDodrioBerryPickingData_082CB3DC
+_08027AF8: .4byte sDodrioBerryPickingDebugBerryResults
 	thumb_func_end sub_08027A64
 
 	thumb_func_start sub_08027AFC
