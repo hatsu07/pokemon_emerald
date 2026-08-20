@@ -151,7 +151,6 @@ EventScriptData_JP_0823D1AC:
 	@ Recovered proven split event command at 0x0823D1B9
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0823D1B9 raw_tail=0x1 continuation=0x4; reachability not claimed
 	message gText_Rom_23D64A
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0823D1BE original_size=0xE typed_bytes=0x1
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0823D1BE size=0xB source=v41_hidden_entry_bulk
 	@ waitfanfare @ 0x0823D1BE
 	waitfanfare

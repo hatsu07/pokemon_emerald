@@ -720,7 +720,6 @@ sSpriteTemplate_085973E0: @ 0x085973E0
 gRouletteData_085973F8: @ 0x085973F8
 	@ analyzed canonical ROM range 0x085973F8-0x08597417
 	@ pointer/nullable table
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x0005000B @ +0x0
 	.4byte 0x08596FA0 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
@@ -728,7 +727,6 @@ gRouletteData_085973F8: @ 0x085973F8
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x40000000 @ +0x18
 	.4byte 0x00000800 @ +0x1C
 	@ pret/pokeemerald-jp direct xref for 0x08597418: roulette.s: sub_08142CD8

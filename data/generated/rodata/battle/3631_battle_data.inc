@@ -208,7 +208,6 @@ gCableCarData_085AC97C: @ 0x085AC97C
 gCableCarData_085AC9A4: @ 0x085AC9A4
 	@ analyzed canonical ROM range 0x085AC9A4-0x085AC9D3
 	@ pointer/nullable table
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x00010001 @ +0x0
 	.4byte 0x085AC98C @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
@@ -216,7 +215,6 @@ gCableCarData_085AC9A4: @ 0x085AC9A4
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_08150844 @ +0x14
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x00010002 @ +0x18
 	.4byte 0x085AC994 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
@@ -981,7 +979,6 @@ gRoarNoiseLineSpriteTemplate: @ 0x085AD5DC
 gBattleAnimEffects3Data_085AD5F4: @ 0x085AD5F4
 	@ analyzed canonical ROM range 0x085AD5F4-0x085AD653
 	@ pointer/nullable table
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x28082808 @ +0x0
 	.4byte gOamData_AffineOff_ObjNormal_8x8 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
@@ -989,7 +986,6 @@ gBattleAnimEffects3Data_085AD5F4: @ 0x085AD5F4
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte AnimGlareEyeDot @ +0x14
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x280C280C @ +0x18
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
@@ -997,7 +993,6 @@ gBattleAnimEffects3Data_085AD5F4: @ 0x085AD5F4
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte AnimAssistPawprint @ +0x2C
-	@ ANALYSIS: U32_TABLE size=0x30 entries=12
 	.4byte 0 @ +0x30
 	.4byte 0x000018FC @ +0x34
 	.4byte 0x00007FFF @ +0x38
@@ -1015,15 +1010,12 @@ gBattleAnimEffects3Data_085AD5F4: @ 0x085AD5F4
 gBattleAnimEffects3Data_085AD654: @ 0x085AD654
 	@ analyzed canonical ROM range 0x085AD654-0x085AD683
 	@ pointer/nullable table
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x280E280E @ +0x0
 	.4byte gOamData_AffineNormal_ObjNormal_32x32 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0 @ +0xC
 	.4byte 0x085AD64C @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x28072807 @ +0x18
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
@@ -1036,7 +1028,6 @@ gBattleAnimEffects3Data_085AD654: @ 0x085AD654
 gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	@ analyzed canonical ROM range 0x085AD684-0x085AD7CF
 	@ pointer/nullable table
-	@ ANALYSIS: U32_TABLE size=0x20 entries=8
 	.4byte 0xFFF00000 @ +0x0
 	.4byte 0x00000600 @ +0x4
 	.4byte 0x00100000 @ +0x8
@@ -1050,7 +1041,6 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte AnimSmellingSaltExclamation @ +0x2C
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x28072807 @ +0x30
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x34
 	.4byte gDummySpriteAnimTable @ +0x38
@@ -1058,7 +1048,6 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte AnimHelpingHandClap @ +0x44
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x28122812 @ +0x48
 	.4byte gOamData_AffineOff_ObjBlend_32x32 @ +0x4C
 	.4byte gDummySpriteAnimTable @ +0x50
@@ -1066,7 +1055,6 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x58
 	.4byte AnimForesightMagnifyingGlass @ +0x5C
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x27F927F9 @ +0x60
 	.4byte gOamData_AffineOff_ObjNormal_16x16 @ +0x64
 	.4byte gDummySpriteAnimTable @ +0x68
@@ -1074,7 +1062,6 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x70
 	.4byte AnimMeteorMashStar @ +0x74
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x27F927F9 @ +0x78
 	.4byte gOamData_AffineOff_ObjNormal_16x16 @ +0x7C
 	.4byte gDummySpriteAnimTable @ +0x80
@@ -1082,7 +1069,6 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x88
 	.4byte sub_08106A14 @ +0x8C
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x280A280A @ +0x90
 	.4byte gOamData_AffineOff_ObjNormal_64x64 @ +0x94
 	.4byte gDummySpriteAnimTable @ +0x98
@@ -1090,7 +1076,6 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0xA0
 	.4byte AnimBlockX @ +0xA4
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x27F027F0 @ +0xA8
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0xAC
 	.4byte gDummySpriteAnimTable @ +0xB0
@@ -1098,7 +1083,6 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0xB8
 	.4byte sub_0815FDB8 @ +0xBC
-	@ ANALYSIS: U32_TABLE size=0x5C entries=23
 	.4byte 0x00040000 @ +0xC0
 	.4byte 0x00040040 @ +0xC4
 	.4byte 0x0000FFFF @ +0xC8
@@ -1123,7 +1107,6 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte 0 @ +0x114
 	.4byte 0x085AD784 @ +0x118
 	.4byte AnimKnockOffStrike @ +0x11C
-	@ ANALYSIS: U32_TABLE size=0x1C entries=7
 	.4byte 0 @ +0x120
 	.4byte 0x000040FC @ +0x124
 	.4byte 0x00007FFE @ +0x128
@@ -1132,7 +1115,6 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte 0x28262826 @ +0x134
 	.4byte gOamData_AffineNormal_ObjBlend_64x64 @ +0x138
 	.4byte gDummySpriteAnimTable @ +0x13C
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0 @ +0x140
 	.4byte 0x085AD7B4 @ +0x144
 	.4byte AnimRecycle @ +0x148

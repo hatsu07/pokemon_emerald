@@ -384,7 +384,6 @@ EventScriptData_JP_08245E85:
 	goto_if 0x01, 0x08245EF3
 	@ ANALYSIS: PROVEN_CROSS_BOUNDARY_EVENT addr=0x08245E9B
 	loadword 0x00, gText_Rom_245102
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08245EA1 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08245EA1 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08245EA1
 	callstd 0x05
@@ -409,7 +408,6 @@ EventScriptData_JP_08245E85:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08245ECE
 	goto 0x08246335
-	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x08245ED3 source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_2451B4
 	callstd 0x04
@@ -432,7 +430,6 @@ EventScript_ShowMessage_08245EDE:
 	@ Recovered proven split event command at 0x08245EF3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245EF3 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_245192
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08245EF9 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08245EF9 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08245EF9
 	callstd 0x04
@@ -449,7 +446,6 @@ EventScript_ShowMessage_08245EDE:
 	@ Recovered proven split event command at 0x08245F13
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245F13 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_2452EF
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08245F19 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08245F19 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08245F19
 	callstd 0x05
@@ -474,7 +470,6 @@ EventScript_ShowMessage_08245EDE:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08245F46
 	goto 0x08246335
-	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x08245F4B source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_2453A7
 	callstd 0x04
@@ -497,7 +492,6 @@ EventScript_ShowMessage_08245F56:
 	@ Recovered proven split event command at 0x08245F6B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245F6B raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_245383
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08245F71 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08245F71 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08245F71
 	callstd 0x04
@@ -514,7 +508,6 @@ EventScript_ShowMessage_08245F56:
 	@ Recovered proven split event command at 0x08245F8B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245F8B raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_2454D6
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08245F91 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08245F91 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08245F91
 	callstd 0x05
@@ -539,7 +532,6 @@ EventScript_ShowMessage_08245F56:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08245FBE
 	goto 0x08246335
-	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x08245FC3 source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_2455A0
 	callstd 0x04
@@ -562,7 +554,6 @@ EventScript_ShowMessage_08245FCE:
 	@ Recovered proven split event command at 0x08245FE3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245FE3 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_24556D
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08245FE9 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08245FE9 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08245FE9
 	callstd 0x04
@@ -579,7 +570,6 @@ EventScript_ShowMessage_08245FCE:
 	@ Recovered proven split event command at 0x08246003
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08246003 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_2456BC
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08246009 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08246009 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08246009
 	callstd 0x05
@@ -604,7 +594,6 @@ EventScript_ShowMessage_08245FCE:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08246036
 	goto 0x08246335
-	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x0824603B source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_24576B
 	callstd 0x04
@@ -627,7 +616,6 @@ EventScript_ShowMessage_08246046:
 	@ Recovered proven split event command at 0x0824605B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824605B raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_245748
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08246061 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08246061 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08246061
 	callstd 0x04
@@ -644,7 +632,6 @@ EventScript_ShowMessage_08246046:
 	@ Recovered proven split event command at 0x0824607B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824607B raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_245885
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08246081 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08246081 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08246081
 	callstd 0x05
@@ -669,7 +656,6 @@ EventScript_ShowMessage_08246046:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x082460AE
 	goto 0x08246335
-	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x082460B3 source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_24592E
 	callstd 0x04
@@ -692,7 +678,6 @@ EventScript_ShowMessage_082460BE:
 	@ Recovered proven split event command at 0x082460D3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082460D3 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_24590B
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x082460D9 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x082460D9 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x082460D9
 	callstd 0x04
@@ -709,7 +694,6 @@ EventScript_ShowMessage_082460BE:
 	@ Recovered proven split event command at 0x082460F3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082460F3 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_2451FC
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x082460F9 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x082460F9 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x082460F9
 	callstd 0x05
@@ -734,7 +718,6 @@ EventScript_ShowMessage_082460BE:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08246126
 	goto 0x08246335
-	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x0824612B source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_2452B2
 	callstd 0x04
@@ -757,7 +740,6 @@ EventScript_ShowMessage_08246136:
 	@ Recovered proven split event command at 0x0824614B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824614B raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_245292
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08246151 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08246151 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08246151
 	callstd 0x04
@@ -774,7 +756,6 @@ EventScript_ShowMessage_08246136:
 	@ Recovered proven split event command at 0x0824616B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824616B raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_2453EB
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08246171 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08246171 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08246171
 	callstd 0x05
@@ -799,7 +780,6 @@ EventScript_ShowMessage_08246136:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x0824619E
 	goto 0x08246335
-	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x082461A3 source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_245499
 	callstd 0x04
@@ -822,7 +802,6 @@ EventScript_ShowMessage_082461AE:
 	@ Recovered proven split event command at 0x082461C3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082461C3 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_245476
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x082461C9 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x082461C9 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x082461C9
 	callstd 0x04
@@ -839,7 +818,6 @@ EventScript_ShowMessage_082461AE:
 	@ Recovered proven split event command at 0x082461E3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082461E3 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_2455E1
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x082461E9 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x082461E9 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x082461E9
 	callstd 0x05
@@ -864,7 +842,6 @@ EventScript_ShowMessage_082461AE:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08246216
 	goto 0x08246335
-	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x0824621B source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_245685
 	callstd 0x04
@@ -887,7 +864,6 @@ EventScript_ShowMessage_08246226:
 	@ Recovered proven split event command at 0x0824623B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824623B raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_245665
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08246241 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08246241 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08246241
 	callstd 0x04
@@ -904,7 +880,6 @@ EventScript_ShowMessage_08246226:
 	@ Recovered proven split event command at 0x0824625B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824625B raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_2457A0
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08246261 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08246261 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08246261
 	callstd 0x05
@@ -929,7 +904,6 @@ EventScript_ShowMessage_08246226:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x0824628E
 	goto 0x08246335
-	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x08246293 source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_245847
 	callstd 0x04
@@ -952,7 +926,6 @@ EventScript_ShowMessage_0824629E:
 	@ Recovered proven split event command at 0x082462B3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082462B3 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_24582B
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x082462B9 original_size=0x1C typed_bytes=0x16
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x082462B9 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x082462B9
 	callstd 0x04
@@ -969,7 +942,6 @@ EventScript_ShowMessage_0824629E:
 	@ Recovered proven split event command at 0x082462D3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082462D3 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_245973
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x082462D9 original_size=0x54 typed_bytes=0xA
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x082462D9 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x082462D9
 	callstd 0x05
@@ -994,7 +966,6 @@ EventScript_ShowMessage_0824629E:
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08246306
 	goto 0x08246335
-	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x0824630B source=v47_hardstop_boundary
 	.byte 0x02
 	loadword 0x00, gText_Rom_245A44
 	callstd 0x04

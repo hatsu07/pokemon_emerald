@@ -194,7 +194,6 @@ gMainMenuData_082D2A08: @ 0x082D2A08
 	@ pointer/nullable table
 	.4byte gText_Rom_5C8F12 @ +0x0
 	.4byte gText_Rom_5C8F18 @ +0x4
-	@ ANALYSIS: U32_TABLE size=0x4 entries=1
 	.4byte 0x085C8F1E @ +0x8
 	.4byte gText_Rom_5C8F24 @ +0xC
 	.4byte gText_Rom_5C8F28 @ +0x10
@@ -208,7 +207,6 @@ gMainMenuData_082D2A08: @ 0x082D2A08
 	.4byte gText_Rom_5C8F52 @ +0x2C
 	.4byte gText_Rom_5C8F58 @ +0x30
 	.4byte gText_Rom_5C8F5E @ +0x34
-	@ ANALYSIS: U32_TABLE size=0x4 entries=1
 	.4byte 0x085C8F64 @ +0x38
 	.4byte gText_Rom_5C8F6A @ +0x3C
 	.4byte gText_Rom_5C8F70 @ +0x40

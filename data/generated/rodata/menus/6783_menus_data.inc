@@ -342,7 +342,6 @@ gMenuPointerTable_Rom_5E7FFC: @ 0x085E7FFC
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x4
 	.4byte MoveCeilingCrumbleSprite @ +0x8
-	@ ANALYSIS: U32_TABLE size=0x14 entries=5
 	.4byte 0x000C0000 @ +0xC
 	.4byte 0x0000FFFE @ +0x10
 	.4byte 0x085E8008 @ +0x14

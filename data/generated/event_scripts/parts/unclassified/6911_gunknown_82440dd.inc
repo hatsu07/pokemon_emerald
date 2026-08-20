@@ -7,7 +7,6 @@ EventScriptData_JP_082440DD: @ 0x082440DD
 	.globl EventScriptData_JP_082440E6
 EventScriptData_JP_082440E6: @ 0x082440E6
 	@ Embedded ROM bytes: file offset 0x2440E6, size 0x15F
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x082440E6 original_size=0x15F typed_bytes=0x159
 	lockall
 	.byte 0x25 @ special 0x00C7; no matching SPECIAL_* constant
 	.2byte 0x00C7

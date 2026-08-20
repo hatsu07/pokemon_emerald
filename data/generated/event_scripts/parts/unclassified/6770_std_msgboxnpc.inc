@@ -381,7 +381,6 @@ EventScriptData_JP_08242678: @ 0x08242678
 	setflag 0x0050
 	call EventScriptData_JP_08242537
 	end
-	@ ANALYSIS: RESIDUAL_CFG_RECOVERY addr=0x0824285B original_size=0x96 semantic_bytes=0x96
 	.globl EventScriptData_JP_0824285B
 EventScriptData_JP_0824285B:
 	.byte 0x25 @ special 0x0154; no matching SPECIAL_* constant
@@ -565,7 +564,6 @@ EventScriptData_JP_08242A21:
 	return
 	@ ANALYSIS: PROVEN_CROSS_BOUNDARY_EVENT addr=0x08242A27
 	message gText_Rom_2438D8
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08242A2C original_size=0x5C typed_bytes=0x5A
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242A2C size=0x1 source=v41_hidden_entry_bulk
 	@ return @ 0x08242A2C
 	return
@@ -626,7 +624,6 @@ EventScriptData_JP_08242A21:
 	@ Recovered proven split event command at 0x08242AAD
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242AAD raw_tail=0x1 continuation=0x4; reachability not claimed
 	message gText_Rom_2438FE
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08242AB2 original_size=0xC typed_bytes=0x9
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242AB2 size=0x1 source=v41_hidden_entry_bulk
 	@ return @ 0x08242AB2
 	return
@@ -656,7 +653,6 @@ EventScriptData_JP_08242A21:
 	@ Recovered proven split event command at 0x08242AD7
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242AD7 raw_tail=0x1 continuation=0x4; reachability not claimed
 	message gText_Rom_2437C1
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08242ADC original_size=0x34 typed_bytes=0x31
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242ADC size=0x1 source=v41_hidden_entry_bulk
 	@ return @ 0x08242ADC
 	return
@@ -1178,7 +1174,6 @@ EventScriptData_JP_0824311B: @ 0x0824311B
 	waitstate
 	releaseall
 	end
-	@ ANALYSIS: RESIDUAL_CFG_RECOVERY addr=0x0824312C original_size=0xAE semantic_bytes=0x9F
 	@ ANALYSIS: PROVEN_SHORT_EVENT_SCRIPTS addr=0x0824312C size=0xD
 .LResidualEvent_0824312C:
 	setflag 0x4001
@@ -1238,7 +1233,6 @@ EventScriptData_JP_082431C0:
 	goto_if 0x00, EventScript_JP_081F186D
 	@ ANALYSIS: PROVEN_CROSS_BOUNDARY_EVENT addr=0x082431D8
 	loadword 0x00, gText_Rom_262DF5
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x082431DE original_size=0x4C typed_bytes=0x21
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x082431DE size=0x29 commands=15 hard_stops=3
 	@ Full bytecode/CFG identity proven; runtime reachability is not claimed.
 .LClosedEvent_082431DE:
@@ -1295,7 +1289,6 @@ EventScriptData_JP_082431C0:
 	@ Recovered proven split event command at 0x0824325C
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824325C raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_26316A
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08243262 original_size=0x188 typed_bytes=0xDB
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08243262 size=0x3 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08243262
 	callstd 0x04
@@ -1484,7 +1477,6 @@ RusturfTunnel_Movement_082432D1: @ 0x082432D1
 	setwildbattle SPECIES_KECLEON, 30, ITEM_NONE
 
 	@ Embedded ROM bytes: file offset 0x243415, size 0x23C
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x08243415 original_size=0x23C typed_bytes=0x1C7
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08243415 size=0x2F source=v41_hidden_entry_bulk
 	@ setflag 0x08C1 @ 0x08243415
 	setflag 0x08C1
@@ -1515,7 +1507,6 @@ RusturfTunnel_Movement_082432D1: @ 0x082432D1
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08243444 size=0x5 source=v42_bulk
 	@ goto 0x08244197 @ 0x08243444
 	goto 0x08244197
-	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x08243449 source=v47_hardstop_boundary
 	.byte 0x02
 	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x0824344A size=0x16 source_backed=YES
 Movement_0824344A:

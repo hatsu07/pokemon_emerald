@@ -14,7 +14,6 @@ EventScriptData_JP_0821B7F4: @ 0x0821B7F4
 	playse 0x0014
 	setflag 0x08B1
 	end
-	@ ANALYSIS: RESIDUAL_CFG_RECOVERY addr=0x0821B834 original_size=0x75 semantic_bytes=0x73
 	lockall
 	checkflag 0x0003
 	call_if 0x01, EventScriptData_JP_0821B88A
@@ -68,7 +67,6 @@ EventScriptData_JP_0821B88A:
 	setwildbattle SPECIES_REGICE, 40, ITEM_NONE
 
 	@ Embedded ROM bytes: file offset 0x21B8AF, size 0xFC
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821B8AF original_size=0xFC typed_bytes=0x33
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x0821B8AF size=0x35 source=v41_hidden_entry_bulk
 	@ setflag 0x08C1 @ 0x0821B8AF
 	setflag 0x08C1
@@ -106,14 +104,12 @@ EventScriptData_JP_0821B88A:
 	setflag 0x01BC
 	@ goto 0x08244197 @ 0x0821B8E7
 	goto 0x08244197
-	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x0821B8EC source=v47_hardstop_boundary
 	.byte 0x02
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x0821B8ED size=0xA source=v43_v44
 	@ setvar 0x8004, 0x0192 @ 0x0821B8ED
 	setvar 0x8004, 0x0192
 	@ goto 0x082441A0 @ 0x0821B8F2
 	goto 0x082441A0
-	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x0821B8F7 source=v47_hardstop_boundary
 	.byte 0x02
 
 	@ ANALYSIS: PROVEN_MAPSCRIPTS_TABLE addr=0x0821B8F8 size=0x10 source=MapHeader_plus_8_v48
@@ -229,7 +225,6 @@ MapScript_0821B941: @ 0x0821B941
 
 	@ Embedded ROM bytes: file offset 0x21B9B1, size 0x38D
 	@ semanticized-mass: resolved embedded ROM pointers
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821B9B1 original_size=0x92 typed_bytes=0x1
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x0821B9B1 size=0x35 source=v41_hidden_entry_bulk
 	@ setflag 0x08C1 @ 0x0821B9B1
 	setflag 0x08C1
@@ -267,14 +262,12 @@ MapScript_0821B941: @ 0x0821B941
 	setflag 0x01BD
 	@ goto 0x08244197 @ 0x0821B9E9
 	goto 0x08244197
-	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x0821B9EE source=v47_hardstop_boundary
 	.byte 0x02
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x0821B9EF size=0xA source=v43_v44
 	@ setvar 0x8004, 0x0193 @ 0x0821B9EF
 	setvar 0x8004, 0x0193
 	@ goto 0x082441A0 @ 0x0821B9F4
 	goto 0x082441A0
-	@ ANALYSIS: CLASSIFIED_DEAD_END_BYTE addr=0x0821B9F9 source=v47_hardstop_boundary
 	.byte 0x02
 
 	@ ANALYSIS: PROVEN_MAPSCRIPTS_TABLE addr=0x0821B9FA size=0x6 source=MapHeader_plus_8_v48
@@ -351,7 +344,6 @@ MapScript_0821BA38: @ 0x0821BA38
 	@ Recovered proven split event command at 0x0821BA42
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BA42 raw_tail=0x1 continuation=0x4; reachability not claimed
 	braillemessage gText_Rom_2635D2
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BA47 original_size=0x6C typed_bytes=0x1
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BA47 size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BA47
 	waitbuttonpress
@@ -402,7 +394,6 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	@ Recovered proven split event command at 0x0821BAB2
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BAB2 raw_tail=0x1 continuation=0x4; reachability not claimed
 	braillemessage gText_Rom_2635E2
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BAB7 original_size=0x10 typed_bytes=0xB
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BAB7 size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BAB7
 	waitbuttonpress
@@ -422,7 +413,6 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	@ Recovered proven split event command at 0x0821BAC6
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BAC6 raw_tail=0x1 continuation=0x4; reachability not claimed
 	braillemessage gText_Rom_2635FA
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BACB original_size=0x10 typed_bytes=0xB
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BACB size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BACB
 	waitbuttonpress
@@ -442,7 +432,6 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	@ Recovered proven split event command at 0x0821BADA
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BADA raw_tail=0x1 continuation=0x4; reachability not claimed
 	braillemessage gText_Rom_263612
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BADF original_size=0x10 typed_bytes=0xB
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BADF size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BADF
 	waitbuttonpress
@@ -462,7 +451,6 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	@ Recovered proven split event command at 0x0821BAEE
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BAEE raw_tail=0x1 continuation=0x4; reachability not claimed
 	braillemessage gText_Rom_26362A
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BAF3 original_size=0x10 typed_bytes=0xB
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BAF3 size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BAF3
 	waitbuttonpress
@@ -482,7 +470,6 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	@ Recovered proven split event command at 0x0821BB02
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BB02 raw_tail=0x1 continuation=0x4; reachability not claimed
 	braillemessage gText_Rom_263640
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BB07 original_size=0x38 typed_bytes=0x32
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BB07 size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BB07
 	waitbuttonpress
@@ -525,7 +512,6 @@ SealedChamber_InnerRoom_MapScripts:
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BB3E raw_tail=0x1 continuation=0x4; reachability not claimed
 	braillemessage gText_Rom_263668
 	@ semanticized-mass: resolved embedded ROM pointers
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BB43 original_size=0x59 typed_bytes=0x1
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0821BB43 size=0x57 commands=33 hard_stops=2
 	@ Full bytecode/CFG identity proven; runtime reachability is not claimed.
 .LClosedEvent_0821BB43:
@@ -573,7 +559,6 @@ SealedChamber_InnerRoom_MapScripts:
 	@ Recovered proven split event command at 0x0821BB9B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BB9B raw_tail=0x1 continuation=0x4; reachability not claimed
 	braillemessage gText_Rom_263698
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BBA0 original_size=0x10 typed_bytes=0xB
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BBA0 size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BBA0
 	waitbuttonpress
@@ -593,7 +578,6 @@ SealedChamber_InnerRoom_MapScripts:
 	@ Recovered proven split event command at 0x0821BBAF
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BBAF raw_tail=0x1 continuation=0x4; reachability not claimed
 	braillemessage gText_Rom_2636DD
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BBB4 original_size=0x10 typed_bytes=0xB
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BBB4 size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BBB4
 	waitbuttonpress
@@ -613,7 +597,6 @@ SealedChamber_InnerRoom_MapScripts:
 	@ Recovered proven split event command at 0x0821BBC3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BBC3 raw_tail=0x1 continuation=0x4; reachability not claimed
 	braillemessage gText_Rom_26370F
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BBC8 original_size=0x98 typed_bytes=0xA
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BBC8 size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BBC8
 	waitbuttonpress
@@ -798,7 +781,6 @@ SkyPillar_Outside_MapScript_0821BC49:
 	@ Recovered proven split event command at 0x0821BCE1
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BCE1 raw_tail=0x2 continuation=0x4; reachability not claimed
 	loadword 0x00, gText_Rom_21BDD5
-	@ ANALYSIS: RAW_CFG_RECOVERY addr=0x0821BCE7 original_size=0x57 typed_bytes=0x1
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BCE7 size=0x31 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x0821BCE7
 	callstd 0x04

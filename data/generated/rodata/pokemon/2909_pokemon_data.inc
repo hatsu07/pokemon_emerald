@@ -742,7 +742,6 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	@ ANALYSIS: ZERO_PADDING size=0x24
 	.space 0x24, 0
 	.4byte gText_Rom_5CAFEF @ +0x300
-	@ ANALYSIS: U32_TABLE size=0x4 entries=1
 	.4byte 0x085CAF6C @ +0x304
 	.4byte gText_Rom_5CAF75 @ +0x308
 	.4byte gText_Rom_5CAF7F @ +0x30C

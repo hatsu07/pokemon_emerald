@@ -371,7 +371,6 @@ sSpriteTemplate_0854CA04: @ 0x0854CA04
 gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	@ analyzed canonical ROM range 0x0854CA1C-0x0854CB13
 	@ pointer/nullable table
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x085CB1BD @ +0x0
 	.4byte 0 @ +0x4
 	.4byte gText_Rom_5CB1D0 @ +0x8
@@ -381,7 +380,6 @@ gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
 	.4byte gText_Rom_5CB1ED @ +0x18
-	@ ANALYSIS: U32_TABLE size=0xC entries=3
 	.4byte 0 @ +0x1C
 	.4byte 0x085CB1FB @ +0x20
 	.4byte 0x00000001 @ +0x24
@@ -389,7 +387,6 @@ gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
 	.4byte gText_Rom_5CB21A @ +0x30
-	@ ANALYSIS: U32_TABLE size=0xC entries=3
 	.4byte 0 @ +0x34
 	.4byte 0x085CB22B @ +0x38
 	.4byte 0x00000001 @ +0x3C
@@ -397,7 +394,6 @@ gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
 	.4byte gText_Rom_5CB245 @ +0x48
-	@ ANALYSIS: U32_TABLE size=0x14 entries=5
 	.4byte 0 @ +0x4C
 	.4byte 0x085CB253 @ +0x50
 	.4byte 0x00000004 @ +0x54
@@ -407,7 +403,6 @@ gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
 	.4byte gText_Rom_5CB278 @ +0x68
-	@ ANALYSIS: U32_TABLE size=0xC entries=3
 	.4byte 0 @ +0x6C
 	.4byte 0x085CB28B @ +0x70
 	.4byte 0 @ +0x74
@@ -421,7 +416,6 @@ gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
 	.4byte gText_Rom_5CB2CE @ +0x90
-	@ ANALYSIS: U32_TABLE size=0xC entries=3
 	.4byte 0 @ +0x94
 	.4byte 0x085CB2DF @ +0x98
 	.4byte 0x00000001 @ +0x9C
@@ -432,12 +426,10 @@ gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
 	.4byte gText_Rom_5CB300 @ +0xB0
-	@ ANALYSIS: U32_TABLE size=0xC entries=3
 	.4byte 0 @ +0xB4
 	.4byte 0x085CB1FB @ +0xB8
 	.4byte 0x00000007 @ +0xBC
 	.4byte gText_Rom_5CB310 @ +0xC0
-	@ ANALYSIS: U32_TABLE size=0xC entries=3
 	.4byte 0 @ +0xC4
 	.4byte 0x085CB31D @ +0xC8
 	.4byte 0x00000007 @ +0xCC
@@ -445,7 +437,6 @@ gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
 	.4byte gText_Rom_5CB337 @ +0xD8
-	@ ANALYSIS: U32_TABLE size=0x14 entries=5
 	.4byte 0 @ +0xDC
 	.4byte 0x085CB348 @ +0xE0
 	.4byte 0x00000007 @ +0xE4

@@ -25,7 +25,6 @@ gPokenavUnk4Data_085F41B8: @ 0x085F41B8
 gPokenavUnk4Data_085F41D0: @ 0x085F41D0
 	@ analyzed canonical ROM range 0x085F41D0-0x085F41EF
 	@ pointer/nullable table
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x000C0007 @ +0x0
 	.4byte 0x085F41C8 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
@@ -33,7 +32,6 @@ gPokenavUnk4Data_085F41D0: @ 0x085F41D0
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_081CBAA0 @ +0x14
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0xC0000000 @ +0x18
 	.4byte 0x00000400 @ +0x1C
 	@ pret/pokeemerald-jp direct xref for 0x085F41F0: pokenav_unk_4.s: sub_081CBAC4

@@ -3,7 +3,6 @@
 gAgbFlashData_0890ED54: @ 0x0890ED54
 	@ analyzed canonical ROM range 0x0890ED54-0x0890EEA3
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: POINTER_STRUCT_FRAGMENT size=0xC addr=0x0890ED54 parent=gAgbFlashData_0890ED54 offset=0x0 dwords=3 rom_ptrs=3 ram_ptrs=0 nulls=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x0890ED54 size=0xC
 	.byte 0xA0, 0xED, 0x90, 0x08, 0x3C, 0xEE, 0x90, 0x08, 0xD0, 0xED, 0x90, 0x08
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0890ED60 size=0x4 source=v54_multi_pointer

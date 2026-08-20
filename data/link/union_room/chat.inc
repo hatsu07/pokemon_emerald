@@ -251,7 +251,6 @@ gUnionRoomChatData_082C57D4: @ 0x082C57D4
 gUnionRoomChatData_082C5858: @ 0x082C5858
 	@ analyzed canonical ROM range 0x082C5858-0x082C5889
 	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: POINTER_STRUCT_FRAGMENT size=0x18 addr=0x082C5858 parent=gUnionRoomChatData_082C5858 offset=0x0 dwords=6 rom_ptrs=3 ram_ptrs=0 nulls=3
 	@ ANALYSIS: SOURCE_RANGE addr=0x082C5858 size=0x18
 	.byte 0x10, 0xC6, 0x5C, 0x08, 0x00, 0x00, 0x00, 0x00, 0x15, 0xC6, 0x5C, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x1A, 0xC6, 0x5C, 0x08, 0x00, 0x00, 0x00, 0x00
@@ -270,7 +269,6 @@ gUnionRoomChatData_082C5858: @ 0x082C5858
 	@ ANALYSIS: UNION_ROOM_CHAT_MENU_ACTION_CALLBACK_NULL size=0x4 addr=0x082C5884 entry=5
 	@ ANALYSIS: SOURCE_RANGE addr=0x082C5884 size=0x6
 	.4byte 0 @ MenuAction callback union
-	@ ANALYSIS: U16_DATA size=0x2 addr=0x082C5888 value=0x3313
 	.2byte 0x3313
 	@ pret/pokeemerald-jp direct xref for 0x082C588A: union_room_chat.s: sub_080206C4
 	.globl gUnionRoomChatData_082C588A
@@ -352,7 +350,6 @@ gUnionRoomChatData_082C5DB4: @ 0x082C5DB4
 	.4byte 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x00008000 @ +0x18
 	.4byte 0x00000800 @ +0x1C
 	@ pret/pokeemerald-jp direct xref for 0x082C5DD4: union_room_chat.s: sub_08020780

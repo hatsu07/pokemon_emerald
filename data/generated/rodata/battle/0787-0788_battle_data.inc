@@ -1464,7 +1464,6 @@ gPokemonStorageSystemData_0855657C: @ 0x0855657C
 	.4byte gText_Rom_5CB3E9 @ +0x50
 	.4byte gText_Rom_5CB3EF @ +0x54
 	.4byte gText_Rom_5CB3F5 @ +0x58
-	@ ANALYSIS: U32_TABLE size=0x4 entries=1
 	.4byte 0x085CB3FA @ +0x5C
 	.4byte gText_Rom_5CB3FD @ +0x60
 	.4byte gText_Rom_5CB401 @ +0x64
@@ -1476,7 +1475,6 @@ gPokemonStorageSystemData_0855657C: @ 0x0855657C
 	.4byte gText_Rom_5CB41D @ +0x7C
 	.4byte gText_Rom_5CB421 @ +0x80
 	.4byte gText_Rom_5CB426 @ +0x84
-	@ ANALYSIS: U32_TABLE size=0x4 entries=1
 	.4byte 0x085CB429 @ +0x88
 	.4byte gText_Rom_5CB42C @ +0x8C
 	.4byte gText_Rom_5CB431 @ +0x90

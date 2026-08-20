@@ -718,7 +718,6 @@ gPokenavMatchCallUiData_085F15C8: @ 0x085F15C8
 gPokenavMatchCallUiData_085F15E0: @ 0x085F15E0
 	@ analyzed canonical ROM range 0x085F15E0-0x085F15FF
 	@ pointer/nullable table
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x0014000A @ +0x0
 	.4byte 0x085F15D8 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
@@ -726,7 +725,6 @@ gPokenavMatchCallUiData_085F15E0: @ 0x085F15E0
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCB_MatchCallRightArrow @ +0x14
-	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x00004000 @ +0x18
 	.4byte 0x00000800 @ +0x1C
 	@ pret/pokeemerald-jp direct xref for 0x085F1600: pokenav_match_call_ui.s: sub_081C86A4
