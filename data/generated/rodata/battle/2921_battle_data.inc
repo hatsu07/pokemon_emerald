@@ -1,9 +1,7 @@
 	@ pret/pokeemerald-jp direct xref for 0x0859381C: pokedex_area_screen.s: DrawAreaGlow
-	.globl gPokedexAreaScreenData_0859381C
-gPokedexAreaScreenData_0859381C: @ 0x0859381C
-	@ analyzed canonical ROM range 0x0859381C-0x0859383B
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x20 entries=16
+	.globl sAreaGlow_Pal
+sAreaGlow_Pal: @ 0x0859381C
+	@ 16-color BGR555 palette for the area-glow overlay.
 	.2byte 0x0000, 0x463F, 0x39DF, 0x6B5F, 0x211F, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	@ semantic exact asset for 0x0859383C: sAreaGlow_Gfx
@@ -14,74 +12,58 @@ sAreaGlow_Gfx:
 	.error "sAreaGlow_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08593970: pokedex_area_screen.s: FindMapsWithMon
-	.globl gPokedexAreaScreenData_08593970
-gPokedexAreaScreenData_08593970: @ 0x08593970
-	@ analyzed canonical ROM range 0x08593970-0x08593971
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x2 bytes=2
-	.byte 0x68, 0x01
+	.globl sSpeciesHiddenFromAreaScreen
+sSpeciesHiddenFromAreaScreen: @ 0x08593970
+	@ Species hidden from the Pokédex area screen (Wynaut / Mirage Island).
+	.2byte 0x0168
 	@ pret/pokeemerald-jp direct xref for 0x08593972: pokedex_area_screen.s: SetSpecialMapHasMon
-	.globl gPokedexAreaScreenData_08593972
-gPokedexAreaScreenData_08593972: @ 0x08593972
-	@ analyzed canonical ROM range 0x08593972-0x08593977
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x6 bytes=6
-	.byte 0xCB, 0x00, 0xCC, 0x00, 0xCD, 0x00
+	.globl sMovingRegionMapSections
+sMovingRegionMapSections: @ 0x08593972
+	@ Moving region-map sections: Marine Cave, Underwater Marine Cave, Terra Cave.
+	.2byte 0x00CB, 0x00CC, 0x00CD
 	@ pret/pokeemerald-jp direct xref for 0x08593978: pokedex_area_screen.s: FindMapsWithMon
-	.globl gPokedexAreaScreenData_08593978
-gPokedexAreaScreenData_08593978: @ 0x08593978
-	@ analyzed canonical ROM range 0x08593978-0x08593983
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0xC entries=6
-	.2byte 0x0148, 0x0000, 0x0022, 0x019C, 0x0000, 0x0000
+	.globl sFeebasData
+sFeebasData: @ 0x08593978
+	@ Special encounter rows: {species, mapGroup, mapNum}; NUM_SPECIES terminates.
+	.2byte 0x0148, 0x0000, 0x0022
+	.2byte 0x019C, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08593984: pokedex_area_screen.s: SetSpecialMapHasMon
-	.globl gPokedexAreaScreenData_08593984
-gPokedexAreaScreenData_08593984: @ 0x08593984
-	@ analyzed canonical ROM range 0x08593984-0x0859399F
-	@ pointer/nullable table
-	@ ANALYSIS: U32_TABLE size=0x1C entries=7
-	.4byte 0x08BE0055 @ +0x0
-	.4byte 0x08A70044 @ +0x4
-	.4byte 0x08DD00D2 @ +0x8
-	.4byte 0x007800C7 @ +0xC
-	.4byte 0x08DE00D1 @ +0x10
-	.4byte 0x08DF00CA @ +0x14
-	.4byte 0x000000D5 @ +0x18
+	.globl sLandmarkData
+sLandmarkData: @ 0x08593984
+	@ Landmark rows: {regionMapSectionId, discoveryFlag}; MAPSEC_NONE terminates.
+	.2byte 0x0055, 0x08BE
+	.2byte 0x0044, 0x08A7
+	.2byte 0x00D2, 0x08DD
+	.2byte 0x00C7, 0x0078
+	.2byte 0x00D1, 0x08DE
+	.2byte 0x00CA, 0x08DF
+	.2byte 0x00D5, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085939A0: pokedex_area_screen.s: Task_PokedexAreaScreen_0
-	.globl gPokedexAreaScreenData_085939A0
-gPokedexAreaScreenData_085939A0: @ 0x085939A0
-	@ analyzed canonical ROM range 0x085939A0-0x085939A3
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x4 bytes=4
+	.globl sPokedexAreaMapTemplate
+sPokedexAreaMapTemplate: @ 0x085939A0
+	@ struct PokedexAreaMapTemplate used by Task_ShowPokedexAreaScreen.
 	.byte 0x03, 0x20, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085939A4: pokedex_area_screen.s: CreateAreaMarkerSprites
-	.globl gPokedexAreaScreenData_085939A4
-gPokedexAreaScreenData_085939A4: @ 0x085939A4
-	@ analyzed canonical ROM range 0x085939A4-0x085939AB
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x8 entries=4
-	.2byte 0x39F4, 0x0859, 0x0080, 0x0002
+	.globl sAreaMarkerSpriteSheet
+sAreaMarkerSpriteSheet: @ 0x085939A4
+	@ struct SpriteSheet for circular special-area markers.
+	.4byte sAreaMarkerTiles
+	.2byte 0x0080, 0x0002 @ size, tag
 	@ pret/pokeemerald-jp direct xref for 0x085939AC: pokedex_area_screen.s: CreateAreaMarkerSprites
-	.globl gPokedexAreaScreenData_085939AC
-gPokedexAreaScreenData_085939AC: @ 0x085939AC
-	@ analyzed canonical ROM range 0x085939AC-0x085939BB
-	.globl gPokedexAreaMarkerSpritePalette
-gPokedexAreaMarkerSpritePalette: @ 0x085939AC
-	.4byte gPokedexAreaMarkerPalette
+	.globl sAreaMarkerSpritePalette
+sAreaMarkerSpritePalette: @ 0x085939AC
+	.4byte sAreaMarkerPalette
 	.2byte 0x0002, 0 @ tag, padding
 
-	.globl gPokedexAreaMarkerSpriteOam
-gPokedexAreaMarkerSpriteOam: @ 0x085939B4
+	.globl sAreaMarkerOamData
+sAreaMarkerOamData: @ 0x085939B4
 	.2byte 0x0000, 0x4000, 0x0400, 0x0000 @ 16x16, priority 1 OamData
 	@ pret/pokeemerald-jp direct xref for 0x085939BC: pokedex_area_screen.s: CreateAreaMarkerSprites
-	.globl gPokedexAreaScreenData_085939BC
-gPokedexAreaScreenData_085939BC: @ 0x085939BC
-	@ analyzed canonical ROM range 0x085939BC-0x08593A73
+	.globl sAreaMarkerSpriteTemplate
+sAreaMarkerSpriteTemplate: @ 0x085939BC
 	@ struct SpriteTemplate used by CreateAreaMarkerSprites (24 bytes total).
-	.globl gPokedexAreaMarkerSpriteTemplate
-gPokedexAreaMarkerSpriteTemplate: @ 0x085939BC
 	.2byte 0x0002, 0x0002 @ tileTag, paletteTag
-	.4byte gPokedexAreaMarkerSpriteOam @ oam
+	.4byte sAreaMarkerOamData @ oam
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085939C4 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
 	.4byte 0 @ images = NULL
@@ -89,13 +71,13 @@ gPokedexAreaMarkerSpriteTemplate: @ 0x085939BC
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085939D0 size=0x4 source=v54_multi_pointer
 	.4byte SpriteCallbackDummy
-	.globl gPokedexAreaMarkerPalette
-gPokedexAreaMarkerPalette: @ 0x085939D4
+	.globl sAreaMarkerPalette
+sAreaMarkerPalette: @ 0x085939D4
 	.2byte 0x02DA, 0x0000, 0x001F, 0x18DF, 0x739F, 0x4E7F, 0x673F, 0x7FFF
 	.2byte 0x1BFF, 0x7FED, 0x7FF5, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 
-	.globl gPokedexAreaMarkerTiles
-gPokedexAreaMarkerTiles: @ 0x085939F4
+	.globl sAreaMarkerTiles
+sAreaMarkerTiles: @ 0x085939F4
 	@ 0x80 bytes, 4bpp sprite tile data
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x2230
 	.2byte 0x0000, 0x4443, 0x3000, 0x4444, 0x2000, 0x4444, 0x2000, 0x4444
@@ -106,22 +88,21 @@ gPokedexAreaMarkerTiles: @ 0x085939F4
 	.2byte 0x4444, 0x0002, 0x4444, 0x0002, 0x4444, 0x0003, 0x3444, 0x0000
 	.2byte 0x0322, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x08593A74: pokedex_area_screen.s: LoadAreaUnknownGraphics
-	.globl gPokedexAreaScreenData_08593A74
-gPokedexAreaScreenData_08593A74: @ 0x08593A74
-	@ analyzed canonical ROM range 0x08593A74-0x08593A83
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x10 entries=8
-	.2byte 0x3A9C, 0x0859, 0x0003, 0x0000, 0x0000, 0x8000, 0x0400, 0x0000
+	.globl sAreaUnknownSpritePalette
+sAreaUnknownSpritePalette: @ 0x08593A74
+	@ struct SpritePalette for the "Area Unknown" sprites.
+	.4byte gPokedexAreaScreenAreaUnknown_Pal
+	.2byte 0x0003, 0x0000 @ tag, padding
+
+	.globl sAreaUnknownOamData
+sAreaUnknownOamData: @ 0x08593A7C
+	.2byte 0x0000, 0x8000, 0x0400, 0x0000 @ 32x32, priority 1 OamData
 	@ pret/pokeemerald-jp direct xref for 0x08593A84: pokedex_area_screen.s: CreateAreaUnknownSprites
-	.globl gPokedexAreaScreenData_08593A84
-gPokedexAreaScreenData_08593A84: @ 0x08593A84
-	@ analyzed canonical ROM range 0x08593A84-0x08593ABB
-	@ structured u8 payload; no safe higher-level semantic type was provable
+	.globl sAreaUnknownSpriteTemplate
+sAreaUnknownSpriteTemplate: @ 0x08593A84
 	@ struct SpriteTemplate for the area-unknown marker sprite (24 bytes total).
-	.globl gPokedexAreaUnknownSpriteTemplate
-gPokedexAreaUnknownSpriteTemplate:
 	.2byte 0x0003, 0x0003 @ +0x0
-	.4byte 0x08593A7C @ +0x4 ROM pointer; numeric preserved
+	.4byte sAreaUnknownOamData @ oam
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08593A8C size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
 	.4byte 0 @ images = NULL
@@ -130,15 +111,14 @@ gPokedexAreaUnknownSpriteTemplate:
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08593A98 size=0x4 source=v54_multi_pointer
 	.4byte SpriteCallbackDummy
 	@ 16-color BGR555 OBJ palette used by the area-unknown marker sprite.
-	.globl gPokedexAreaUnknownPalette
-gPokedexAreaUnknownPalette:
+	.globl gPokedexAreaScreenAreaUnknown_Pal
+gPokedexAreaScreenAreaUnknown_Pal:
 	.2byte 0x025E, 0x0000, 0x6F5B, 0x001F, 0x3BFF, 0x03E0, 0x7FE0, 0x0000
 	.2byte 0x0000, 0x0000, 0x7FFF, 0x6F5B, 0x354C, 0x6251, 0x18C5, 0x3D0A
 	@ pret/pokeemerald-jp direct xref for 0x08593ABC: pokedex_area_screen.s: LoadAreaUnknownGraphics
-	.globl gPokedexAreaScreenData_08593ABC
-gPokedexAreaScreenData_08593ABC: @ 0x08593ABC
+	.globl gPokedexAreaScreenAreaUnknown_Gfx
+gPokedexAreaScreenAreaUnknown_Gfx: @ 0x08593ABC
 	@ confirmed GBA LZ77 stream: compressed=0x1C2, decompressed=0x600
-sLz77Block_08593ABC:
 	@ analyzed canonical ROM range 0x08593ABC-0x08593C9F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal

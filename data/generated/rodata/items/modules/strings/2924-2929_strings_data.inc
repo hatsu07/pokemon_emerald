@@ -751,7 +751,7 @@ gRouletteData_085974FC: @ 0x085974FC
 	@ struct CompressedSpriteSheet for the roulette wheel center.
 	.globl gRouletteWheelCenterSpriteSheet
 gRouletteWheelCenterSpriteSheet:
-	.4byte 0x08DBDD64 @ data; JP-local asset pointer preserved
+	.4byte gRouletteCenter_Gfx @ data
 	.2byte 0x0800 @ uncompressed size
 	.2byte 0x0006 @ tag
 	@ pret/pokeemerald-jp direct xref for 0x08597504: roulette.s: sub_081439E8
