@@ -269,7 +269,7 @@ _0814E3A4:
 	b _0814E788
 	.align 2, 0
 _0814E3A8: .4byte 0x085AAF4B
-_0814E3AC: .4byte gBattleMessageData_085AAF8E
+_0814E3AC: .4byte sText_LinkPartnerSentOutPkmnGoPkmn
 _0814E3B0:
 	ldr r7, _0814E3B4
 	b _0814E788
@@ -306,7 +306,7 @@ _0814E3E4:
 	ldr r7, _0814E3F0
 	b _0814E788
 	.align 2, 0
-_0814E3F0: .4byte gBattleMessageData_085AAF06
+_0814E3F0: .4byte sText_TwoLinkTrainersSentOutPkmn
 _0814E3F4:
 	ldr r0, _0814E404
 	ands r1, r0
@@ -319,8 +319,8 @@ _0814E400:
 	b _0814E788
 	.align 2, 0
 _0814E404: .4byte 0x02000002
-_0814E408: .4byte gBattleMessageData_085AAEBA
-_0814E40C: .4byte gBattleMessageData_085AAEF3
+_0814E408: .4byte sText_Trainer1SentOutTwoPkmn
+_0814E40C: .4byte sText_LinkTrainerSentOutTwoPkmn
 _0814E410:
 	ldr r0, _0814E42C
 	ands r1, r0
@@ -340,8 +340,8 @@ _0814E428:
 	.align 2, 0
 _0814E42C: .4byte 0x02000002
 _0814E430: .4byte 0x0203886A
-_0814E434: .4byte gBattleMessageData_085AAEE4
-_0814E438: .4byte gBattleMessageData_085AAEA7
+_0814E434: .4byte sText_LinkTrainerSentOutPkmn
+_0814E438: .4byte sText_Trainer1SentOutPkmn
 _0814E43C:
 	mov r1, ip
 	ldrb r0, [r1]
@@ -414,13 +414,13 @@ _0814E4BC:
 	.align 2, 0
 _0814E4C0: .4byte 0x0203886A
 _0814E4C4: .4byte 0x02022C90
-_0814E4C8: .4byte gBattleMessageData_085AAFEB
-_0814E4CC: .4byte gBattleMessageData_085AAFFA
+_0814E4C8: .4byte sText_LinkTrainer1WithdrewPkmn
+_0814E4CC: .4byte sText_LinkTrainer2WithdrewPkmn
 _0814E4D0:
 	ldr r7, _0814E4D4
 	b _0814E788
 	.align 2, 0
-_0814E4D4: .4byte gBattleMessageData_085AAFD8
+_0814E4D4: .4byte sText_Trainer1WithdrewPkmn
 _0814E4D8:
 	mov r4, r8
 	ldrb r0, [r4, #0x17]
@@ -506,7 +506,7 @@ _0814E574:
 	.align 2, 0
 _0814E578: .4byte 0x0203886A
 _0814E57C: .4byte 0x085AAF24
-_0814E580: .4byte gBattleMessageData_085AAED1
+_0814E580: .4byte sText_Trainer1SentOutPkmn2
 _0814E584:
 	movs r0, #0x80
 	lsls r0, r0, #8
@@ -565,7 +565,7 @@ _0814E5EA:
 	.align 2, 0
 _0814E5F4: .4byte 0x02022C1C
 _0814E5F8: .4byte 0x082EACC4
-_0814E5FC: .4byte gBattleMessageData_085AB034
+_0814E5FC: .4byte sText_AttackerUsedX
 _0814E600:
 	ldr r4, _0814E640
 	ldrb r1, [r4]

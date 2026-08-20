@@ -141,50 +141,44 @@ gText_Rom_5AAE91: @ 0x085AAE91
 	.space 0x16 - (. - gText_Rom_5AAE91)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085AAEA7: battle_message.s: BufferStringBattle
-	.globl gBattleMessageData_085AAEA7
-gBattleMessageData_085AAEA7: @ 0x085AAEA7
-	@ analyzed canonical ROM range 0x085AAEA7-0x085AAEB9
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x13 bytes=19
+	.globl sText_Trainer1SentOutPkmn
+sText_Trainer1SentOutPkmn: @ 0x085AAEA7
+	@ canonical pret/pokeemerald semantic role: sText_Trainer1SentOutPkmn
+	@ exact JP encoded battle text bytes preserved
 	.byte 0xFD, 0x1C, 0x19, 0x00, 0xFD, 0x1D, 0x1A, 0xFE, 0xFD, 0x06, 0x2D, 0x00, 0x08, 0x28, 0x41, 0x0C
 	.byte 0x10, 0xAB, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085AAEBA: battle_message.s: BufferStringBattle
-	.globl gBattleMessageData_085AAEBA
-gBattleMessageData_085AAEBA: @ 0x085AAEBA
-	@ analyzed canonical ROM range 0x085AAEBA-0x085AAED0
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x17 bytes=23
+	.globl sText_Trainer1SentOutTwoPkmn
+sText_Trainer1SentOutTwoPkmn: @ 0x085AAEBA
+	@ canonical pret/pokeemerald semantic role: sText_Trainer1SentOutTwoPkmn
+	@ exact JP encoded battle text bytes preserved
 	.byte 0xFD, 0x1C, 0x19, 0x00, 0xFD, 0x1D, 0x1A, 0xFE, 0xFD, 0x06, 0x14, 0x00, 0xFD, 0x08, 0x2D, 0x00
 	.byte 0x08, 0x28, 0x41, 0x0C, 0x10, 0xAB, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085AAED1: battle_message.s: BufferStringBattle
-	.globl gBattleMessageData_085AAED1
-gBattleMessageData_085AAED1: @ 0x085AAED1
-	@ analyzed canonical ROM range 0x085AAED1-0x085AAEE3
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x13 bytes=19
+	.globl sText_Trainer1SentOutPkmn2
+sText_Trainer1SentOutPkmn2: @ 0x085AAED1
+	@ canonical pret/pokeemerald semantic role: sText_Trainer1SentOutPkmn2
+	@ exact JP encoded battle text bytes preserved
 	.byte 0xFD, 0x1C, 0x19, 0x00, 0xFD, 0x1D, 0x1A, 0xFE, 0xFD, 0x00, 0x2D, 0x00, 0x08, 0x28, 0x41, 0x0C
 	.byte 0x10, 0xAB, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085AAEE4: battle_message.s: BufferStringBattle
-	.globl gBattleMessageData_085AAEE4
-gBattleMessageData_085AAEE4: @ 0x085AAEE4
-	@ analyzed canonical ROM range 0x085AAEE4-0x085AAEF2
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0xF bytes=15
+	.globl sText_LinkTrainerSentOutPkmn
+sText_LinkTrainerSentOutPkmn: @ 0x085AAEE4
+	@ canonical pret/pokeemerald semantic role: sText_LinkTrainerSentOutPkmn
+	@ exact JP encoded battle text bytes preserved
 	.byte 0xFD, 0x20, 0x1A, 0xFE, 0xFD, 0x06, 0x2D, 0x00, 0x08, 0x28, 0x41, 0x0C, 0x10, 0xAB, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085AAEF3: battle_message.s: BufferStringBattle
-	.globl gBattleMessageData_085AAEF3
-gBattleMessageData_085AAEF3: @ 0x085AAEF3
-	@ analyzed canonical ROM range 0x085AAEF3-0x085AAF05
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x13 bytes=19
+	.globl sText_LinkTrainerSentOutTwoPkmn
+sText_LinkTrainerSentOutTwoPkmn: @ 0x085AAEF3
+	@ canonical pret/pokeemerald semantic role: sText_LinkTrainerSentOutTwoPkmn
+	@ exact JP encoded battle text bytes preserved
 	.byte 0xFD, 0x20, 0x1A, 0xFE, 0xFD, 0x06, 0x14, 0x00, 0xFD, 0x08, 0x2D, 0x00, 0x08, 0x28, 0x41, 0x0C
 	.byte 0x10, 0xAB, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085AAF06: battle_message.s: BufferStringBattle
-	.globl gBattleMessageData_085AAF06
-gBattleMessageData_085AAF06: @ 0x085AAF06
-	@ analyzed canonical ROM range 0x085AAF06-0x085AAF23
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x1E bytes=30
+	.globl sText_TwoLinkTrainersSentOutPkmn
+sText_TwoLinkTrainersSentOutPkmn: @ 0x085AAF06
+	@ canonical pret/pokeemerald semantic role: sText_TwoLinkTrainersSentOutPkmn
+	@ exact JP encoded battle text bytes preserved
 	.byte 0xFD, 0x20, 0x1A, 0x00, 0xFD, 0x0A, 0x2D, 0x00, 0x08, 0x28, 0x41, 0x0C, 0x10, 0xAB, 0xFE, 0xFD
 	.byte 0x21, 0x1A, 0x00, 0xFD, 0x0C, 0x2D, 0x00, 0x08, 0x28, 0x41, 0x0C, 0x10, 0xAB, 0xFF
 
