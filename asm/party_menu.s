@@ -5070,8 +5070,8 @@ UpdateSelectedPartyBox: @ 0x081B23E4
 	ldr r4, _081B2414
 	b _081B261A
 	.align 2, 0
-_081B2410: .4byte gPartyMenuData_085E13A9
-_081B2414: .4byte gPartyMenuData_085E1378
+_081B2410: .4byte sPartyBoxNoMonPalIds
+_081B2414: .4byte sPartyBoxNoMonPalOffsets
 _081B2418:
 	movs r0, #0x20
 	ands r0, r4
@@ -5084,7 +5084,7 @@ _081B2418:
 	ldr r5, _081B242C
 	b _081B25DE
 	.align 2, 0
-_081B242C: .4byte gPartyMenuData_085E1397
+_081B242C: .4byte sPartyBoxSelectedForActionPalIds1
 _081B2430:
 	ldr r5, _081B2468
 	ldrb r0, [r5]
@@ -5109,9 +5109,9 @@ _081B2430:
 	ldr r5, _081B2470
 	b _081B2612
 	.align 2, 0
-_081B2468: .4byte gPartyMenuData_085E1397
-_081B246C: .4byte gPartyMenuData_085E1372
-_081B2470: .4byte gPartyMenuData_085E13A6
+_081B2468: .4byte sPartyBoxSelectedForActionPalIds1
+_081B246C: .4byte sPartyBoxPalOffsets1
+_081B2470: .4byte sPartyBoxSelectedForActionPalIds2
 _081B2474:
 	movs r0, #0x10
 	ands r0, r4
@@ -5140,9 +5140,9 @@ _081B2474:
 	ldr r5, _081B24BC
 	b _081B2612
 	.align 2, 0
-_081B24B4: .4byte gPartyMenuData_085E1397
-_081B24B8: .4byte gPartyMenuData_085E1372
-_081B24BC: .4byte gPartyMenuData_085E13A6
+_081B24B4: .4byte sPartyBoxSelectedForActionPalIds1
+_081B24B8: .4byte sPartyBoxPalOffsets1
+_081B24BC: .4byte sPartyBoxSelectedForActionPalIds2
 _081B24C0:
 	movs r0, #4
 	ands r0, r4
@@ -5155,7 +5155,7 @@ _081B24C0:
 	ldr r5, _081B24D4
 	b _081B25DE
 	.align 2, 0
-_081B24D4: .4byte gPartyMenuData_085E1397
+_081B24D4: .4byte sPartyBoxSelectedForActionPalIds1
 _081B24D8:
 	ldr r5, _081B2510
 	ldrb r0, [r5]
@@ -5180,9 +5180,9 @@ _081B24D8:
 	ldr r5, _081B2518
 	b _081B2612
 	.align 2, 0
-_081B2510: .4byte gPartyMenuData_085E1397
-_081B2514: .4byte gPartyMenuData_085E1372
-_081B2518: .4byte gPartyMenuData_085E13A6
+_081B2510: .4byte sPartyBoxSelectedForActionPalIds1
+_081B2514: .4byte sPartyBoxPalOffsets1
+_081B2518: .4byte sPartyBoxSelectedForActionPalIds2
 _081B251C:
 	movs r0, #2
 	ands r0, r4
@@ -5195,7 +5195,7 @@ _081B251C:
 	ldr r5, _081B2530
 	b _081B25DE
 	.align 2, 0
-_081B2530: .4byte gPartyMenuData_085E1394
+_081B2530: .4byte sPartyBoxCurrSelectionFaintedPalIds
 _081B2534:
 	ldr r5, _081B256C
 	ldrb r0, [r5]
@@ -5220,9 +5220,9 @@ _081B2534:
 	ldr r5, _081B2574
 	b _081B2612
 	.align 2, 0
-_081B256C: .4byte gPartyMenuData_085E138B
-_081B2570: .4byte gPartyMenuData_085E1372
-_081B2574: .4byte gPartyMenuData_085E13A0
+_081B256C: .4byte sPartyBoxFaintedPalIds1
+_081B2570: .4byte sPartyBoxPalOffsets1
+_081B2574: .4byte sPartyBoxFaintedPalIds2
 _081B2578:
 	movs r0, #8
 	ands r0, r4
@@ -5235,7 +5235,7 @@ _081B2578:
 	ldr r5, _081B258C
 	b _081B25DE
 	.align 2, 0
-_081B258C: .4byte gPartyMenuData_085E1391
+_081B258C: .4byte sPartyBoxCurrSelectionMultiPalIds
 _081B2590:
 	ldr r5, _081B25C8
 	ldrb r0, [r5]
@@ -5260,9 +5260,9 @@ _081B2590:
 	ldr r5, _081B25D0
 	b _081B2612
 	.align 2, 0
-_081B25C8: .4byte gPartyMenuData_085E1388
-_081B25CC: .4byte gPartyMenuData_085E1372
-_081B25D0: .4byte gPartyMenuData_085E139D
+_081B25C8: .4byte sPartyBoxMultiPalIds1
+_081B25CC: .4byte sPartyBoxPalOffsets1
+_081B25D0: .4byte sPartyBoxMultiPalIds2
 _081B25D4:
 	movs r0, #1
 	ands r5, r0
@@ -5313,10 +5313,10 @@ _081B261A:
 	bl LoadPalette
 	b _081B26C0
 	.align 2, 0
-_081B2648: .4byte gPartyMenuData_085E138E
-_081B264C: .4byte gPartyMenuData_085E1372
-_081B2650: .4byte gPartyMenuData_085E13A3
-_081B2654: .4byte gPartyMenuData_085E1375
+_081B2648: .4byte sPartyBoxCurrSelectionPalIds1
+_081B264C: .4byte sPartyBoxPalOffsets1
+_081B2650: .4byte sPartyBoxCurrSelectionPalIds2
+_081B2654: .4byte sPartyBoxPalOffsets2
 _081B2658:
 	ldr r5, _081B26C8
 	ldrb r0, [r5]
@@ -5363,10 +5363,10 @@ _081B26C0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081B26C8: .4byte gPartyMenuData_085E1385
-_081B26CC: .4byte gPartyMenuData_085E1372
-_081B26D0: .4byte gPartyMenuData_085E139A
-_081B26D4: .4byte gPartyMenuData_085E1375
+_081B26C8: .4byte sPartyBoxEmptySlotPalIds1
+_081B26CC: .4byte sPartyBoxPalOffsets1
+_081B26D0: .4byte sPartyBoxEmptySlotPalIds2
+_081B26D4: .4byte sPartyBoxPalOffsets2
 	thumb_func_end UpdateSelectedPartyBox
 
 	thumb_func_start DisplayPartyPokemonBarDetail
@@ -5660,8 +5660,8 @@ _081B28E4:
 	bl DisplayPartyPokemonBarDetail
 	b _081B2956
 	.align 2, 0
-_081B2918: .4byte gPartyMenuData_085E137B
-_081B291C: .4byte gPartyMenuData_085E136E
+_081B2918: .4byte sGenderMalePalIds
+_081B291C: .4byte sGenderPalOffsets
 _081B2920: .4byte 0x085C940A
 _081B2924:
 	ldr r5, _081B2964
@@ -5692,8 +5692,8 @@ _081B2956:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081B2964: .4byte gPartyMenuData_085E137D
-_081B2968: .4byte gPartyMenuData_085E136E
+_081B2964: .4byte sGenderFemalePalIds
+_081B2968: .4byte sGenderPalOffsets
 _081B296C: .4byte 0x085C940C
 	thumb_func_end DisplayPartyPokemonGender
 
@@ -5934,7 +5934,7 @@ DisplayPartyPokemonHPBar: @ 0x081B2AF8
 	ldr r5, _081B2B40
 	b _081B2B46
 	.align 2, 0
-_081B2B40: .4byte gPartyMenuData_085E137F
+_081B2B40: .4byte sHPBarGreenPalIds
 _081B2B44:
 	ldr r5, _081B2B6C
 _081B2B46:
@@ -5953,8 +5953,8 @@ _081B2B46:
 	bl LoadPalette
 	b _081B2B98
 	.align 2, 0
-_081B2B6C: .4byte gPartyMenuData_085E1381
-_081B2B70: .4byte gPartyMenuData_085E1370
+_081B2B6C: .4byte sHPBarYellowPalIds
+_081B2B70: .4byte sHPBarPalOffsets
 _081B2B74:
 	ldr r5, _081B2C34
 	ldrb r0, [r5]
@@ -6044,8 +6044,8 @@ _081B2C1C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081B2C34: .4byte gPartyMenuData_085E1383
-_081B2C38: .4byte gPartyMenuData_085E1370
+_081B2C34: .4byte sHPBarRedPalIds
+_081B2C38: .4byte sHPBarPalOffsets
 	thumb_func_end DisplayPartyPokemonHPBar
 
 	thumb_func_start DisplayPartyPokemonOtherText
