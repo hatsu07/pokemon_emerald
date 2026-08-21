@@ -3617,7 +3617,7 @@ _08124804:
 	bl LZ77UnCompVram
 	b _081248A8
 	.align 2, 0
-_08124810: .4byte gRegionMapData_0857D580
+_08124810: .4byte sRegionMapFrameTilemapLZ
 _08124814: .4byte 0x0600F000
 _08124818:
 	ldr r0, _08124850

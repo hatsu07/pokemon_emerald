@@ -3568,7 +3568,7 @@ _0816E718: .4byte 0x00001C06
 _0816E71C: .4byte 0x0000FFB0
 _0816E720: .4byte gIntroClouds_Gfx
 _0816E724: .4byte 0x06004000
-_0816E728: .4byte gIntroData_08D8B6CC
+_0816E728: .4byte gIntroCloudsSun_Tilemap
 _0816E72C: .4byte 0x0600E000
 _0816E730: .4byte 0x03005B60
 _0816E734: .4byte 0x0816E739
@@ -3791,9 +3791,9 @@ Task_IntroLoadRayquazaLightningScene: @ 0x0816E89C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816E8FC: .4byte gIntroData_08D8C150
+_0816E8FC: .4byte gIntroRayquaza_Tilemap
 _0816E900: .4byte 0x0600E000
-_0816E904: .4byte gIntroData_08D8CCAC
+_0816E904: .4byte gIntroRayquazaClouds_Tilemap
 _0816E908: .4byte 0x0600C000
 _0816E90C: .4byte gIntroRayquaza_Gfx
 _0816E910: .4byte 0x06004000

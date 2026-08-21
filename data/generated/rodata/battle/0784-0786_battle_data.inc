@@ -178,14 +178,13 @@ sScrollingBg_Gfx:
 	.error "sScrollingBg_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0854BC94: pokemon_storage_system.s: SetScrollingBackground
-	.globl gPokemonStorageSystemData_0854BC94
-gPokemonStorageSystemData_0854BC94: @ 0x0854BC94
+.globl sScrollingBg_Tilemap
+sScrollingBg_Tilemap: @ 0x0854BC94
 	@ confirmed GBA LZ77 stream: compressed=0x10C, decompressed=0x800
-sLz77Block_0854BC94:
 	@ analyzed canonical ROM range 0x0854BC94-0x0854BDBF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/0854BC94.bin.lz"
+	.incbin "build/graphics/pokemon_storage/scrolling_bg_rom_exact.tilemap.lz"
 	.byte 0x60, 0x1D, 0x52, 0x56, 0xFF, 0x7F, 0x00, 0x00, 0x7B, 0x7B, 0xEB, 0x76, 0x94, 0x5A, 0x8C, 0x39
 	.byte 0x00, 0x00, 0x4A, 0x2D, 0xB7, 0x33, 0x74, 0x27, 0x94, 0x27, 0x96, 0x3B, 0x32, 0x1F, 0x52, 0x56
 	@ semantic exact asset for 0x0854BDC0: sDisplayMenu_Tilemap
@@ -253,14 +252,13 @@ gStorageSystemMenu_Gfx:
 	.error "gStorageSystemMenu_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0854C65C: pokemon_storage_system.s: sub_080C9F68
-	.globl gPokemonStorageSystemData_0854C65C
-gPokemonStorageSystemData_0854C65C: @ 0x0854C65C
+.globl gStorageSystemPartyMenu_Tilemap
+gStorageSystemPartyMenu_Tilemap: @ 0x0854C65C
 	@ confirmed GBA LZ77 stream: compressed=0xAF, decompressed=0x210
-sLz77Block_0854C65C:
 	@ analyzed canonical ROM range 0x0854C65C-0x0854C70B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/0854C65C.bin.lz"
+	.incbin "build/graphics/pokemon_storage/party_menu_rom_exact.tilemap.lz"
 	.byte 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0854C70C: pokemon_storage_system.s: sub_080C9F68
 	.globl gPokemonStorageSystemData_0854C70C

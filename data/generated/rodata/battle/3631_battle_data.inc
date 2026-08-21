@@ -140,14 +140,13 @@ gCableCarData_085AC474: @ 0x085AC474
 	@ ANALYSIS: U16_TABLE size=0x10 entries=8
 	.2byte 0x11C0, 0x0000, 0x21D1, 0x0000, 0x31E2, 0x0000, 0x01F3, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x085AC484: cable_car.s: CableCarMainCallback_Setup
-	.globl gCableCarData_085AC484
-gCableCarData_085AC484: @ 0x085AC484
+.globl sGround_Tilemap
+sGround_Tilemap: @ 0x085AC484
 	@ confirmed GBA LZ77 stream: compressed=0x158, decompressed=0x168
-sLz77Block_085AC484:
 	@ analyzed canonical ROM range 0x085AC484-0x085AC5DB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/085AC484.bin.lz"
+	.incbin "build/graphics/cable_car/ground_rom_exact.tilemap.lz"
 	@ pret/pokeemerald-jp direct xref for 0x085AC5DC: cable_car.s: CableCarMainCallback_Setup
 	.globl sTrees_Tilemap
 sTrees_Tilemap: @ 0x085AC5DC
@@ -157,14 +156,13 @@ sTrees_Tilemap: @ 0x085AC5DC
 	.error "sTrees_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085AC760: cable_car.s: CableCarMainCallback_Setup
-	.globl gCableCarData_085AC760
-gCableCarData_085AC760: @ 0x085AC760
+.globl sBgMountains_Tilemap
+sBgMountains_Tilemap: @ 0x085AC760
 	@ confirmed GBA LZ77 stream: compressed=0x1C2, decompressed=0x4B0
-sLz77Block_085AC760:
 	@ analyzed canonical ROM range 0x085AC760-0x085AC923
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/085AC760.bin.lz"
+	.incbin "build/graphics/cable_car/bg_mountains_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085AC924: cable_car.s: CableCarMainCallback_Setup
 	.globl gCableCarData_085AC924

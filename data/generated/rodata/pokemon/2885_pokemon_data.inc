@@ -340,14 +340,13 @@ sRegionMapFrameGfxLZ:
 	.error "sRegionMapFrameGfxLZ compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0857D580: region_map.s: MCB2_FlyMap
-	.globl gRegionMapData_0857D580
-gRegionMapData_0857D580: @ 0x0857D580
+.globl sRegionMapFrameTilemapLZ
+sRegionMapFrameTilemapLZ: @ 0x0857D580
 	@ confirmed GBA LZ77 stream: compressed=0xB5, decompressed=0x500
-sLz77Block_0857D580:
 	@ analyzed canonical ROM range 0x0857D580-0x0857D657
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/0857D580.bin.lz"
+	.incbin "build/graphics/pokenav/region_map/frame_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x1F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x39, 0x67, 0x00, 0x00, 0x00
 	.byte 0x00, 0x5F, 0x6F, 0x9F, 0x62, 0x98, 0x39, 0x10, 0x3E, 0x6C, 0x2D, 0xC6, 0x20, 0x00, 0x00, 0x00
 	.byte 0x00, 0xFF, 0x7F

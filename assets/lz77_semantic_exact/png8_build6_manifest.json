@@ -362,6 +362,54 @@
       "source_kind": "u16_le_text",
       "source": "graphics/battle_environment/underwater/anim_map.tilemap.u16",
       "semantic_role": "tilemap"
+    },
+    "build/graphics/pokemon_storage/scrolling_bg_rom_exact.tilemap.lz": {
+      "key": "0854BC94",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokemon_storage/scrolling_bg.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokemon_storage/party_menu_rom_exact.tilemap.lz": {
+      "key": "0854C65C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokemon_storage/party_menu.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokenav/region_map/frame_rom_exact.tilemap.lz": {
+      "key": "0857D580",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokenav/region_map/frame.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/cable_car/ground_rom_exact.tilemap.lz": {
+      "key": "085AC484",
+      "source_kind": "u16_le_text",
+      "source": "graphics/cable_car/ground.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/cable_car/bg_mountains_rom_exact.tilemap.lz": {
+      "key": "085AC760",
+      "source_kind": "u16_le_text",
+      "source": "graphics/cable_car/bg_mountains.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/intro/scene_3/clouds_sun_rom_exact.tilemap.lz": {
+      "key": "08D8B6CC",
+      "source_kind": "u16_le_text",
+      "source": "graphics/intro/scene_3/clouds_sun.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/intro/scene_3/rayquaza_rom_exact.tilemap.lz": {
+      "key": "08D8C150",
+      "source_kind": "u16_le_text",
+      "source": "graphics/intro/scene_3/rayquaza.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/intro/scene_3/rayquaza_clouds_rom_exact.tilemap.lz": {
+      "key": "08D8CCAC",
+      "source_kind": "u16_le_text",
+      "source": "graphics/intro/scene_3/rayquaza_clouds.tilemap.u16",
+      "semantic_role": "tilemap"
     }
   }
 }

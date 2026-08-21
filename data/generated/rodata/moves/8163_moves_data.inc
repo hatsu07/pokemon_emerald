@@ -43,14 +43,13 @@ gIntroCloudsRight_Tilemap:
 	.error "gIntroCloudsRight_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8B6CC: intro.s: Task_IntroLoadClouds1
-	.globl gIntroData_08D8B6CC
-gIntroData_08D8B6CC: @ 0x08D8B6CC
+.globl gIntroCloudsSun_Tilemap
+gIntroCloudsSun_Tilemap: @ 0x08D8B6CC
 	@ confirmed GBA LZ77 stream: compressed=0x124, decompressed=0x800
-sLz77Block_08D8B6CC:
 	@ analyzed canonical ROM range 0x08D8B6CC-0x08D8BA57
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 2 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D8B6CC.bin.lz"
+	.incbin "build/graphics/intro/scene_3/clouds_sun_rom_exact.tilemap.lz"
 	.globl gLz77Asset_08D8B7F0
 gLz77Asset_08D8B7F0: @ 0x08D8B7F0
 	.incbin "build/assets/lz77_raw/08D8B7F0.bin.lz"
@@ -69,14 +68,13 @@ gIntroRayquaza_Gfx:
 	.error "gIntroRayquaza_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8C150: intro.s: Task_IntroLoadRayquazaLightningScene
-	.globl gIntroData_08D8C150
-gIntroData_08D8C150: @ 0x08D8C150
+.globl gIntroRayquaza_Tilemap
+gIntroRayquaza_Tilemap: @ 0x08D8C150
 	@ confirmed GBA LZ77 stream: compressed=0x208, decompressed=0x800
-sLz77Block_08D8C150:
 	@ analyzed canonical ROM range 0x08D8C150-0x08D8C81B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 3 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D8C150.bin.lz"
+	.incbin "build/graphics/intro/scene_3/rayquaza_rom_exact.tilemap.lz"
 	.globl gLz77Asset_08D8C358
 gLz77Asset_08D8C358: @ 0x08D8C358
 	.incbin "build/assets/lz77_raw/08D8C358.bin.lz"
@@ -96,14 +94,13 @@ gIntroRayquazaClouds_Gfx:
 	.error "gIntroRayquazaClouds_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D8CCAC: intro.s: Task_IntroLoadRayquazaLightningScene
-	.globl gIntroData_08D8CCAC
-gIntroData_08D8CCAC: @ 0x08D8CCAC
+.globl gIntroRayquazaClouds_Tilemap
+gIntroRayquazaClouds_Tilemap: @ 0x08D8CCAC
 	@ confirmed GBA LZ77 stream: compressed=0x27A, decompressed=0x800
-sLz77Block_08D8CCAC:
 	@ analyzed canonical ROM range 0x08D8CCAC-0x08D8D3F3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 5 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D8CCAC.bin.lz"
+	.incbin "build/graphics/intro/scene_3/rayquaza_clouds_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00
 	.globl gLz77Asset_08D8CF28
 gLz77Asset_08D8CF28: @ 0x08D8CF28

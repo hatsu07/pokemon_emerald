@@ -5895,7 +5895,7 @@ SetScrollingBackground: @ 0x080C9860
 	.align 2, 0
 _080C988C: .4byte 0x00001F0F
 _080C9890: .4byte sScrollingBg_Gfx
-_080C9894: .4byte gPokemonStorageSystemData_0854BC94
+_080C9894: .4byte sScrollingBg_Tilemap
 _080C9898: .4byte 0x0600F800
 	thumb_func_end SetScrollingBackground
 
@@ -6801,7 +6801,7 @@ sub_080C9F68: @ 0x080C9F68
 	bl sub_080D21B8
 	b _080CA016
 	.align 2, 0
-_080C9FE0: .4byte gPokemonStorageSystemData_0854C65C
+_080C9FE0: .4byte gStorageSystemPartyMenu_Tilemap
 _080C9FE4: .4byte 0x020399A8
 _080C9FE8: .4byte gPokemonStorageSystemData_0854BF3C
 _080C9FEC: .4byte gPokemonStorageSystemData_0854C70C

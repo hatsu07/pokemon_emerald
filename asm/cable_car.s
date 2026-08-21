@@ -308,11 +308,11 @@ _0814FE72:
 	.align 2, 0
 _0814FEF4: .4byte sCableCarSpriteSheets
 _0814FEF8: .4byte gCableCarData_085AC97C
-_0814FEFC: .4byte gCableCarData_085AC484
+_0814FEFC: .4byte sGround_Tilemap
 _0814FF00: .4byte 0x0203A878
 _0814FF04: .4byte 0x000040FC
 _0814FF08: .4byte sTrees_Tilemap
-_0814FF0C: .4byte gCableCarData_085AC760
+_0814FF0C: .4byte sBgMountains_Tilemap
 _0814FF10: .4byte 0x00004104
 _0814FF14: .4byte gCableCarData_085AC938
 _0814FF18: .4byte 0x0000410C
