@@ -74,7 +74,7 @@ EventScript_JP_0822AF35: @ 0x0822AF35
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x0822B05C @ Movement_JP_0822B05C
+	.4byte Movement_JP_0822B05B + 0x1 @ Movement_JP_0822B05C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
@@ -104,7 +104,7 @@ EventScript_JP_0822AFD5: @ 0x0822AFD5
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x0822B05C @ Movement_JP_0822B05C
+	.4byte Movement_JP_0822B05B + 0x1 @ Movement_JP_0822B05C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF

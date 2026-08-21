@@ -989,7 +989,7 @@ SharedMapScript_0824790F:
 	@ applymovement 0x800F, 0x0824702C @ 0x08247B0A
 	.byte 0x4F
 	.2byte 0x800F
-	.4byte 0x0824702C
+	.4byte EventScript_JP_0824701E + 0xE
 	@ waitmovement 0x0000 @ 0x08247B11
 	.byte 0x51
 	.2byte 0x0000
@@ -998,7 +998,7 @@ SharedMapScript_0824790F:
 	@ applymovement 0x00FF, 0x0824703F @ 0x08247B15
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x0824703F
+	.4byte EventScript_JP_0824701E + 0x21
 	@ waitmovement 0x0000 @ 0x08247B1C
 	.byte 0x51
 	.2byte 0x0000

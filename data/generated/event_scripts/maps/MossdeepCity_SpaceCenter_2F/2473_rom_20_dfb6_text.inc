@@ -17,19 +17,19 @@ MapScripts_JP_0820E01E: @ 0x0820E01E
 	.byte 0x04
 	.4byte MapScriptTable_JP_0820E02E
 	.byte 0x01
-	.4byte 0x082468BC
+	.4byte CableClub_EventScript_MysteryGiftMan + 0xBB
 	.byte 0
 MapScriptTable_JP_0820E02E: @ 0x0820E02E
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_SCRIPT_TABLE
 	@ Map-script dispatch table; numeric fields encode script type/condition and target pointer.
 	@ conditional map script table
 	.2byte 0x4087, 0x0008
-	.4byte 0x082468AC
+	.4byte CableClub_EventScript_MysteryGiftMan + 0xAB
 	.2byte 0
 MapScriptTable_JP_0820E038: @ 0x0820E038
 	@ conditional map script table
 	.2byte 0x4087, 0x0008
-	.4byte 0x0824699B
+	.4byte CableClub_EventScript_MysteryGiftMan + 0x19A
 	.2byte 0
 .globl EventScript_JP_0820E042
 EventScript_JP_0820E042: @ 0x0820E042

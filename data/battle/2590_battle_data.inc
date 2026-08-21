@@ -103,7 +103,7 @@ gEasyChatGroups: @ 0x08578D14
 	.4byte gEasyChatGroup_TrendySaying
 	@ Final two entries of gEasyChatGroups.
 	.2byte 33, 33 @ EC_GROUP_TRENDY_SAYING: numWords, numEnabledWords
-	.4byte 0x08578B1C @ EC_GROUP_POKEMON_NATIONAL wordData (Pokemon2 group data)
+	.4byte gEasyChatGroup_TrendySaying + 0x18C @ EC_GROUP_POKEMON_NATIONAL wordData (Pokemon2 group data)
 	.2byte 251, 251 @ EC_GROUP_POKEMON_NATIONAL: numWords, numEnabledWords
 
 	@ Japanese Easy Chat search buckets consumed by sub_0811F9C8.

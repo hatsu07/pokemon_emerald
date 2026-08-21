@@ -521,7 +521,7 @@ sImageTable_ReelTimeShadow: @ 0x08584A30
 	.4byte gSlotMachineNumber9Tiles + 0xA00
 	.4byte 0x00000200 @ image[0] size
 sImageTable_ReelTimeNumberGap: @ 0x08584A38
-	.4byte 0x08584368
+	.4byte gSlotMachineReelBackground_Tilemap + 0x20
 	.4byte 0x00000040 @ image[0] size
 sImageTable_ReelTimeBolt: @ 0x08584A40
 	.4byte gSlotMachineNumber9Tiles + 0x400

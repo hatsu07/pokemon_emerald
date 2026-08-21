@@ -1616,7 +1616,7 @@ sText_BattleTowerOpenLv:
 	.space 0x1, 0x00
 	.globl sLinkGroupActivityNameTexts
 sLinkGroupActivityNameTexts:
-	.4byte 0x082C0640 @ ACTIVITY_NONE
+	.4byte sASCII_ChildParentSearch + 0x18 @ ACTIVITY_NONE
 	.4byte sText_SingleBattle @ ACTIVITY_BATTLE_SINGLE
 	.4byte sText_DoubleBattle @ ACTIVITY_BATTLE_DOUBLE
 	.4byte sText_MultiBattle @ ACTIVITY_BATTLE_MULTI
@@ -1629,16 +1629,16 @@ sLinkGroupActivityNameTexts:
 	.4byte sText_BerryCrush @ ACTIVITY_BERRY_CRUSH
 	.4byte sText_BerryPicking @ ACTIVITY_BERRY_PICK
 	.4byte sText_Search + 0x2 @ ACTIVITY_SEARCH: sText_Search + 2
-	.4byte 0x082C0640 @ ACTIVITY_SPIN_TRADE
+	.4byte sASCII_ChildParentSearch + 0x18 @ ACTIVITY_SPIN_TRADE
 	.4byte sText_BattleTowerOpenLv @ ACTIVITY_BATTLE_TOWER_OPEN
 	.4byte sText_RecordCorner @ ACTIVITY_RECORD_CORNER
 	.4byte sText_BerryBlender @ ACTIVITY_BERRY_BLENDER
-	.4byte 0x082C0640 @ ACTIVITY_ACCEPT
-	.4byte 0x082C0640 @ ACTIVITY_DECLINE
-	.4byte 0x082C0640 @ ACTIVITY_NPCTALK
-	.4byte 0x082C0640 @ ACTIVITY_PLYRTALK
-	.4byte 0x082C0640 @ unused activity
-	.4byte 0x082C0640 @ unused activity
+	.4byte sASCII_ChildParentSearch + 0x18 @ ACTIVITY_ACCEPT
+	.4byte sASCII_ChildParentSearch + 0x18 @ ACTIVITY_DECLINE
+	.4byte sASCII_ChildParentSearch + 0x18 @ ACTIVITY_NPCTALK
+	.4byte sASCII_ChildParentSearch + 0x18 @ ACTIVITY_PLYRTALK
+	.4byte sASCII_ChildParentSearch + 0x18 @ unused activity
+	.4byte sASCII_ChildParentSearch + 0x18 @ unused activity
 	.4byte sText_CoolContest @ ACTIVITY_CONTEST_COOL
 	.4byte sText_BeautyContest @ ACTIVITY_CONTEST_BEAUTY
 	.4byte sText_CuteContest @ ACTIVITY_CONTEST_CUTE
@@ -1801,15 +1801,15 @@ sWindowTemplate_NumPlayerMode:
 	.2byte 0x00C6 @ baseBlock
 
 sPossibleGroupMembersListMenuItems: @ 0x082C203C
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 0
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 1
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 2
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 3
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 4
 	.globl sListMenuTemplate_PossibleGroupMembers
 sListMenuTemplate_PossibleGroupMembers:
@@ -1839,37 +1839,37 @@ sWindowTemplate_PlayerNameAndId:
 	.2byte 0x00EE @ baseBlock
 
 sUnionRoomGroupsMenuItems: @ 0x082C208C
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 0
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 1
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 2
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 3
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 4
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 5
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 6
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 7
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 8
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 9
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 10
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 11
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 12
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 13
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 14
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 15
 	.globl sListMenuTemplate_UnionRoomGroups
 sListMenuTemplate_UnionRoomGroups:
@@ -2006,23 +2006,23 @@ sWindowTemplate_TradingBoardMain:
 	.2byte 0x0039 @ baseBlock
 
 sTradeBoardListMenuItems: @ 0x082C225C
-	.4byte 0x082C0640 @ LIST_HEADER
+	.4byte sASCII_ChildParentSearch + 0x18 @ LIST_HEADER
 	.4byte 0xFFFFFFFD
-	.4byte 0x082C0640 @ offer 0
+	.4byte sASCII_ChildParentSearch + 0x18 @ offer 0
 	.4byte 0
-	.4byte 0x082C0640 @ offer 1
+	.4byte sASCII_ChildParentSearch + 0x18 @ offer 1
 	.4byte 1
-	.4byte 0x082C0640 @ offer 2
+	.4byte sASCII_ChildParentSearch + 0x18 @ offer 2
 	.4byte 2
-	.4byte 0x082C0640 @ offer 3
+	.4byte sASCII_ChildParentSearch + 0x18 @ offer 3
 	.4byte 3
-	.4byte 0x082C0640 @ offer 4
+	.4byte sASCII_ChildParentSearch + 0x18 @ offer 4
 	.4byte 4
-	.4byte 0x082C0640 @ offer 5
+	.4byte sASCII_ChildParentSearch + 0x18 @ offer 5
 	.4byte 5
-	.4byte 0x082C0640 @ offer 6
+	.4byte sASCII_ChildParentSearch + 0x18 @ offer 6
 	.4byte 6
-	.4byte 0x082C0640 @ offer 7
+	.4byte sASCII_ChildParentSearch + 0x18 @ offer 7
 	.4byte 7
 	.4byte gText_Rom_2C1D54 @ sText_Exit2
 	.4byte 8
@@ -2045,37 +2045,37 @@ sWindowTemplate_Unused:
 	.2byte 0x0039 @ baseBlock
 
 sEmptyListMenuItems: @ 0x082C22CC
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 0
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 1
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 2
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 3
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 4
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 5
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 6
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 7
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 8
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 9
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 10
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 11
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 12
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 13
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 14
-	.4byte 0x082C0640 @ sText_EmptyString
+	.4byte sASCII_ChildParentSearch + 0x18 @ sText_EmptyString
 	.4byte 15
 
 sEmptyListMenuTemplate:
