@@ -8,26 +8,26 @@ sPointerTable_08551868:
 	@ analyzed canonical ROM range 0x08551868-0x08555A3F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ structured 48-entry ROM pointer table
-	.4byte 0x0854CC14 @ entry 0
-	.4byte 0x0854D098 @ entry 1
+	.4byte gLz77Asset_0854CC14
+	.4byte gLz77Asset_0854D098
 	.4byte 0x0854CBD4 @ entry 2
-	.4byte 0x0854D1B8 @ entry 3
-	.4byte 0x0854D4D0 @ entry 4
+	.4byte gLz77Asset_0854D1B8
+	.4byte gLz77Asset_0854D4D0
 	.4byte 0x0854D178 @ entry 5
-	.4byte 0x0854D5EC @ entry 6
-	.4byte 0x0854D9A0 @ entry 7
+	.4byte gLz77Asset_0854D5EC
+	.4byte gLz77Asset_0854D9A0
 	.4byte 0x0854D5AC @ entry 8
-	.4byte 0x0854DADC @ entry 9
-	.4byte 0x0854DEF0 @ entry 10
+	.4byte gLz77Asset_0854DADC
+	.4byte gLz77Asset_0854DEF0
 	.4byte 0x0854DA9C @ entry 11
-	.4byte 0x0854E034 @ entry 12
-	.4byte 0x0854E430 @ entry 13
+	.4byte gLz77Asset_0854E034
+	.4byte gLz77Asset_0854E430
 	.4byte 0x0854DFF4 @ entry 14
-	.4byte 0x0854E560 @ entry 15
-	.4byte 0x0854EA50 @ entry 16
+	.4byte gLz77Asset_0854E560
+	.4byte gLz77Asset_0854EA50
 	.4byte 0x0854E520 @ entry 17
-	.4byte 0x0854EBCC @ entry 18
-	.4byte 0x0854F02C @ entry 19
+	.4byte gLz77Asset_0854EBCC
+	.4byte gLz77Asset_0854F02C
 	.4byte 0x0854EB8C @ entry 20
 sWallpapers: @ 0x085518BC
 	@ WALLPAPER_FOREST index 0

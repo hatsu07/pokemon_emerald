@@ -197,7 +197,7 @@
 	.include "data/generated/rodata/battle/0782_battle_data.inc"
 	.include "data/generated/rodata/battle/modules/pokemon_storage_system/0783_rom_54_b258_text.inc"
 	.include "data/generated/rodata/battle/0784-0786_battle_data.inc"
-	.include "data/generated/rodata/battle/0787-0788_battle_data.inc"
+	.include "data/pokemon_storage/wallpaper_tables.inc"
 
 	.include "data/pokemon/icon_table.inc"
 	.include "data/generated/rodata/pokemon/0789-0790_pokemon_data.inc"
