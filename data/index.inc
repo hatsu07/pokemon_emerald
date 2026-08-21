@@ -500,7 +500,7 @@
 	.include "data/generated/rodata/pokemon/modules/data/easy_chat/easy_chat_group_time/2899_rom_5886_a4_text.inc"
 	.include "data/contest_painting/graphics.inc"
 	.include "data/generated/rodata/pokemon/modules/pokemon/starter_pokemon/2902_starter_pokemon_sprite_positions.inc"
-	.include "data/generated/rodata/pokemon/2903_pokemon_data.inc"
+	.include "data/wallclock/graphics.inc"
 	.include "data/generated/rodata/pokemon/modules/wallclock/2904_rom_591_c04_text.inc"
 	.include "data/generated/rodata/pokemon/2905_pokemon_definitions.inc"
 	.include "data/generated/rodata/pokemon/modules/strings/2906_rom_591_c15_text.inc"

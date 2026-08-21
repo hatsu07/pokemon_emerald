@@ -13,4 +13,3 @@ gWallClock_Gfx: @ 0x0859130C
 	.error "gWallClock_Gfx exact asset size mismatch"
 	.endif
 	.globl gText_Rom_591C04
-
