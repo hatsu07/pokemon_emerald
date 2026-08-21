@@ -89,13 +89,13 @@ sSpriteAnimTable_CutGrass: @ 0x085571B4
 	.globl sSpriteImageTable_CutGrass
 sSpriteImageTable_CutGrass: @ 0x085571B8
 	@ Local JP Cut Grass gfx pointer.
-	.4byte 0x084CF2AC
+	.4byte gObjectEventPal_JP_084CEC8C + 0x620
 	.4byte 0x20
 
 	.globl gSpritePalette_CutGrass
 gSpritePalette_CutGrass: @ 0x085571C0
 	@ Local JP Cut Grass palette pointer.
-	.4byte 0x084CF2EC
+	.4byte gObjectEventPal_JP_084CEC8C + 0x660
 	.2byte 0x1000
 	.2byte 0
 
