@@ -1,4 +1,4 @@
-FunctionPointerTable_JP_085E732C: @ 0x085E732C
+sPlayerPartnerBufferCommands: @ 0x085E732C
 	@ proven function-pointer table
 	.4byte PlayerPartnerHandleGetMonData
 	.4byte PlayerPartnerHandleGetRawMonData

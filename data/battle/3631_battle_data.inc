@@ -466,7 +466,7 @@ gBattleControllerSafariData_085ACD28: @ 0x085ACD28
 sPointerTable_085ACD28:
 	@ analyzed canonical ROM range 0x085ACD28-0x085AD0A7
 	@ semantic recovery: rodata; byte-verified against linked ROM
-FunctionPointerTable_JP_085ACD28: @ 0x085ACD28
+sSafariBufferCommands: @ 0x085ACD28
 	@ proven function-pointer table
 	.4byte SafariHandleGetMonData
 	.4byte SafariHandleGetRawMonData
@@ -821,7 +821,7 @@ gFlatterSpotlightSpriteTemplate:
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3D0 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
 	.4byte 0 @ images = NULL
-	.4byte FunctionPointerTable_JP_085ACD28 + 0x304 @ affineAnims; JP-local numeric pointer preserved
+	.4byte gBattleControllerSafariData_085ACD28 + 0x304 @ affineAnims; JP-local numeric pointer preserved
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3DC size=0x4 source=v54_multi_pointer
 	.4byte AnimFlatterSpotlight
 	@ struct SpriteTemplate gReversalOrbSpriteTemplate (24 bytes total).

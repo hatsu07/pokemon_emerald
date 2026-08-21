@@ -22,8 +22,7 @@ gMenuPointerTable_Rom_52B3E8: @ 0x0852B3E8
 sPointerTable_0852B418:
 	@ ANALYSIS: SOURCE_RANGE offset=0x52B418, size=0x48
 	@ semantic recovery: rodata; byte-verified against linked ROM
-.globl FunctionPointerTable_JP_0852B418
-FunctionPointerTable_JP_0852B418: @ 0x0852B418
+
 	@ proven function-pointer table
 	.4byte RevealHiddenTrainer
 	.4byte PopOutOfAshHiddenTrainer

@@ -55,7 +55,7 @@ gDecorationData_08581AB4: @ 0x08581AB4
 	@ semantic recovery: rodata; byte-verified against linked ROM
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
-FunctionPointerTable_JP_08581AB8: @ 0x08581AB8
+
 	@ proven function-pointer table
 	.4byte DecorationItemsMenu_OnCursorMove
 	.4byte sub_08127450
@@ -374,7 +374,7 @@ gPokemonPointerTable_Rom_58222C: @ 0x0858222C
 gDecorationData_08582234: @ 0x08582234
 	@ analyzed canonical ROM range 0x08582234-0x085822BB
 	@ semantic recovery: rodata; byte-verified against linked ROM
-FunctionPointerTable_JP_08582234: @ 0x08582234
+
 	@ proven function-pointer table
 	.4byte sub_0812A21C
 	.4byte sub_08129B24

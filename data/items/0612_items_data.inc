@@ -4,7 +4,7 @@
 gOverworldData_0830FD4C: @ 0x0830FD4C
 	@ analyzed canonical ROM range 0x0830FD4C-0x083B8093
 	@ pass3: fully recovered Tileset asset/header region; byte-verified
-FunctionPointerTable_JP_0830FD4C: @ 0x0830FD4C
+sMovementStatusHandler: @ 0x0830FD4C
 	.4byte MovementStatusHandler_EnterFreeMode
 	.4byte MovementStatusHandler_TryAdvanceScript
 

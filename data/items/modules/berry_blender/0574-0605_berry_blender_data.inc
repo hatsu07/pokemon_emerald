@@ -175,7 +175,7 @@ gBerryBlenderData_0830F8D7: @ 0x0830F8D7
 gBerryBlenderData_0830F8DC: @ 0x0830F8DC
 	@ analyzed canonical ROM range 0x0830F8DC-0x0830F9AF
 	@ semantic recovery: rodata; byte-verified against linked ROM
-FunctionPointerTable_JP_0830F8DC: @ 0x0830F8DC
+
 	@ proven function-pointer table
 	.4byte sub_080808C0
 	.4byte sub_080809EC

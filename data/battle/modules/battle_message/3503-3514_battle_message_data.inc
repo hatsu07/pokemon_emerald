@@ -59,10 +59,10 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	@ analyzed canonical ROM range 0x085AB3DC-0x085AB99F
 	@ pointer/nullable table
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
-	.4byte FunctionPointerTable_JP_085A9544 + 0xE4
-	.4byte FunctionPointerTable_JP_085A9544 + 0xE7
-	.4byte FunctionPointerTable_JP_085A9544 + 0x105
-	.4byte FunctionPointerTable_JP_085A9544 + 0x11A
+	.4byte gBattleControllerLinkPartnerData_085A9544 + 0xE4
+	.4byte gBattleControllerLinkPartnerData_085A9544 + 0xE7
+	.4byte gBattleControllerLinkPartnerData_085A9544 + 0x105
+	.4byte gBattleControllerLinkPartnerData_085A9544 + 0x11A
 	.4byte gText_Rom_5A966F @ +0x10
 	.4byte gText_Rom_5A9688 @ +0x14
 	.4byte gText_Rom_5A96A8 @ +0x18
@@ -404,8 +404,8 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
 	.4byte gText_Rom_5AA5C4 + 0x36
 	.4byte gText_Rom_5A9C6F + 0x31
-	.4byte FunctionPointerTable_JP_085A9544 + 0xFA
-	.4byte FunctionPointerTable_JP_085A9544 + 0xFD
+	.4byte gBattleControllerLinkPartnerData_085A9544 + 0xFA
+	.4byte gBattleControllerLinkPartnerData_085A9544 + 0xFD
 	.4byte gText_Rom_5AA746 @ +0x4FC
 	@ ANALYSIS: POINTER_TABLE entries=3 size=0xC
 	.4byte gText_Rom_5A9711 + 0x4E

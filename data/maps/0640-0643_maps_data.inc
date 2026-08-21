@@ -5902,7 +5902,7 @@ gMovementActionFuncTablePointers: @ 0x084E60A4
 	.4byte sMovementActionFuncs_Figure8 @ movement action 155
 	.4byte sMovementActionFuncs_FlyUp @ movement action 156
 	.4byte sMovementActionFuncs_FlyDown @ movement action 157
-FunctionPointerTable_JP_084E631C: @ 0x084E631C
+
 	@ proven function-pointer table
 sMovementActionFuncs_FaceDown: @ 0x084E631C
 	.4byte MovementAction_FaceDown_Step0
@@ -5997,7 +5997,7 @@ gEventObjectMovementData_084E6416:
 gMovementActionCoordUpdateOffsets2: @ 0x084E6416
 	@ sub_08093A34 indexes this as three signed halfwords.
 	.2byte 0, 0, 1
-FunctionPointerTable_JP_084E641C: @ 0x084E641C
+
 	@ proven function-pointer table
 sMovementActionFuncs_Jump2Down: @ 0x084E641C
 	.4byte MovementAction_Jump2Down_Step0

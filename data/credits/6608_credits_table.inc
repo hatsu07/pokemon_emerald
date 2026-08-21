@@ -33,7 +33,7 @@ gMatchCallData_085D7A28: @ 0x085D7A28
 sPointerTable_085D7A28:
 	@ analyzed canonical ROM range 0x085D7A28-0x085D7A53
 	@ semantic recovery: rodata; byte-verified against linked ROM
-FunctionPointerTable_JP_085D7A28: @ 0x085D7A28
+sPopulateMatchCallStringVarFuncs: @ 0x085D7A28
 	@ proven function-pointer table
 	.4byte PopulateTrainerName
 	.4byte PopulateMapName

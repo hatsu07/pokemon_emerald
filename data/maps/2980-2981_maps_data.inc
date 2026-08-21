@@ -645,7 +645,7 @@ gBattleTransitionData_085A8734: @ 0x085A8734
 	@ analyzed canonical ROM range 0x085A8734-0x085A87E7
 	@ semantic recovery: rodata; byte-verified against linked ROM
 gBattleTransitionRegisteelPhaseData: @ 0x085A8734
-FunctionPointerTable_JP_085A8734: @ 0x085A8734
+
 	@ proven function-pointer table
 	.4byte Phase2_RectangularSpiral_Func1
 	.4byte Phase2_RectangularSpiral_Func2
@@ -667,8 +667,8 @@ gBattleTransitionData_085A87E8: @ 0x085A87E8
 	@ analyzed canonical ROM range 0x085A87E8-0x085A87EF
 gBattleTransitionRectangularSpiralDataLists: @ 0x085A87E8
 	@ pointer/nullable table
-	.4byte FunctionPointerTable_JP_085A8734 + 0x74 @ +0x0
-	.4byte FunctionPointerTable_JP_085A8734 + 0x94 @ +0x4
+	.4byte gBattleTransitionRegisteelPhaseData + 0x74 @ +0x0
+	.4byte gBattleTransitionRegisteelPhaseData + 0x94 @ +0x4
 	.globl gMapU32Table_Rom_5A87F0
 gMapU32Table_Rom_5A87F0: @ 0x085A87F0
 	.4byte Phase2_WeatherTrio_Func1
@@ -742,7 +742,7 @@ gBattleTransitionData_085A88D4: @ 0x085A88D4
 	@ analyzed canonical ROM range 0x085A88D4-0x085A8917
 	@ semantic recovery: rodata; byte-verified against linked ROM
 gBattleTransitionMagmaPhaseData: @ 0x085A88D4
-FunctionPointerTable_JP_085A88D4: @ 0x085A88D4
+
 	@ proven function-pointer table
 	.4byte Phase1_TransitionAll_Func1
 	.4byte Phase1_TransitionAll_Func2
@@ -1057,7 +1057,7 @@ sPointerTable_085A9544:
 	@ analyzed canonical ROM range 0x085A9544-0x085A966E
 	@ semantic recovery: rodata; byte-verified against linked ROM
 gLinkPartnerBufferCommandHandlers: @ 0x085A9544
-FunctionPointerTable_JP_085A9544: @ 0x085A9544
+sLinkPartnerBufferCommands: @ 0x085A9544
 	@ proven function-pointer table
 	.4byte LinkPartnerHandleGetMonData
 	.4byte LinkPartnerHandleGetRawMonData

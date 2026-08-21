@@ -116,7 +116,7 @@ gShopData_085629CC: @ 0x085629CC
 	@ semantic recovery: rodata; byte-verified against linked ROM
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
-FunctionPointerTable_JP_085629D0: @ 0x085629D0
+
 	@ proven function-pointer table
 	.4byte BuyMenuPrintItemDescriptionAndShowItemIcon
 	.4byte CreateShopMenu

@@ -208,7 +208,7 @@ gPokeblockSpokeblockData_085920EB: @ 0x085920EB
 gPokeblockSpokeblockData_085920F0: @ 0x085920F0
 	@ analyzed canonical ROM range 0x085920F0-0x0859213B
 	@ semantic recovery: rodata; byte-verified against linked ROM
-FunctionPointerTable_JP_085920F0: @ 0x085920F0
+
 	@ proven function-pointer table
 	.4byte sub_08136BE8
 	.4byte sub_08136CC4

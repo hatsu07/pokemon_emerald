@@ -178,7 +178,7 @@ gPlayerPcData_085C0C28: @ 0x085C0C28
 	@ semantic recovery: rodata; byte-verified against linked ROM
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
-FunctionPointerTable_JP_085C0C2C: @ 0x085C0C2C
+
 	@ proven function-pointer table
 	.4byte ItemStorage_MoveCursor
 	.4byte fish4_goto_x5_or_x6

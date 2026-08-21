@@ -651,7 +651,7 @@ gFieldEffectData_085371A0: @ 0x085371A0
 sPointerTable_085371A0:
 	@ analyzed canonical ROM range 0x085371A0-0x085371F3
 	@ semantic recovery: rodata; byte-verified against linked ROM
-FunctionPointerTable_JP_085371A0: @ 0x085371A0
+
 	@ proven function-pointer table
 	.4byte sub_080B895C
 	.4byte sub_080B89B4
@@ -671,8 +671,8 @@ gFieldEffectData_085371F4: @ 0x085371F4
 	@ analyzed canonical ROM range 0x085371F4-0x085371FB
 	@ pointer/nullable table
 	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
-	.4byte FunctionPointerTable_JP_085371A0 + 0x24
-	.4byte FunctionPointerTable_JP_085371A0 + 0x3C
+	.4byte gFieldEffectData_085371A0 + 0x24
+	.4byte gFieldEffectData_085371A0 + 0x3C
 	.globl gMenuPointerTable_Rom_5371FC
 gMenuPointerTable_Rom_5371FC: @ 0x085371FC
 	.4byte sub_080B8F5C
@@ -698,7 +698,7 @@ gFieldEffectData_0853723C: @ 0x0853723C
 sPointerTable_0853723C:
 	@ analyzed canonical ROM range 0x0853723C-0x08537297
 	@ semantic recovery: rodata; byte-verified against linked ROM
-FunctionPointerTable_JP_0853723C: @ 0x0853723C
+
 	@ proven function-pointer table
 	.4byte sub_080B9380
 	.4byte sub_080B93AC

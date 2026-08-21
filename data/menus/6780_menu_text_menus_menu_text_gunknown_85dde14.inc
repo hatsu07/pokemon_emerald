@@ -428,7 +428,7 @@ gMenuU8Table_Rom_5DF7D4: @ 0x085DF7D4
 	@ semantic recovery: rodata; byte-verified against linked ROM
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
-FunctionPointerTable_JP_085DF7D8: @ 0x085DF7D8
+
 	@ proven function-pointer table
 	.4byte BagMenu_MoveCursorCallback
 	.4byte PrintItemQuantityPlusGFX
