@@ -7,5 +7,3 @@ gMenuPointerTable_Rom_537350: @ 0x08537350
 	.4byte gText_Rom_537345
 	.4byte gText_Rom_53733B
 	.4byte gText_Rom_537341
-	.globl gText_Rom_53736C
-
