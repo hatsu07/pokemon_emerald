@@ -5,27 +5,11 @@
   "num_entries": 412,
   "total_size": 11536,
   "table_end_rom_offset": "0x2f3a64",
-  "gunknown_82f0d65_remaining": 8768,
   "incbin_blocks": [
     {
       "label": "gSpeciesInfo",
       "offset": "0x2f0d54",
-      "size": 12
-    },
-    {
-      "label": "gPokemonDataBlock_Rom_2F0D60",
-      "offset": "0x2f0d60",
-      "size": 2
-    },
-    {
-      "label": "gPokemonDataBlock_Rom_2F0D62",
-      "offset": "0x2f0d62",
-      "size": 3
-    },
-    {
-      "label": "gPokemonDataBlock_Rom_2F0D65",
-      "offset": "0x2f0d65",
-      "size": 20287
+      "size": 11536
     }
   ],
   "struct_layout": {
