@@ -1,5 +1,3 @@
-	.globl gPokemonDataBlock_Rom_5430F0
-gPokemonDataBlock_Rom_5430F0: @ 0x085430F0
 	.space 0x20, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08543110: pokedex.s: sub_080BE0C0
 	.globl gPokedexData_08543110
@@ -790,6 +788,4 @@ gPokedexData_085443B0: @ 0x085443B0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x2 bytes=2
 	.byte 0x00, 0x01
-	.globl gPokemonDataBlock_Rom_5443B2
-gPokemonDataBlock_Rom_5443B2: @ 0x085443B2
 	.space 0x1, 0x00

@@ -1,5 +1,3 @@
-	.globl gMenuDataBlock_Rom_625814
-gMenuDataBlock_Rom_625814: @ 0x08625814
 	cry DirectSoundWaveData_Cry_000_JP_086CDE28 @ 0x08625814
 	cry DirectSoundWaveData_Cry_001_JP_086CEEB4 @ 0x08625820
 	cry DirectSoundWaveData_Cry_002_JP_086CFF44 @ 0x0862582C
@@ -128,8 +126,6 @@ gMenuDataBlock_Rom_625814: @ 0x08625814
 	cry DirectSoundWaveData_Cry_125_JP_08756AAC @ 0x08625DF0
 	cry DirectSoundWaveData_Cry_126_JP_08757A28 @ 0x08625DFC
 	cry DirectSoundWaveData_Cry_127_JP_08758684 @ 0x08625E08
-	.globl gMenuDataBlock_Rom_625E14
-gMenuDataBlock_Rom_625E14: @ 0x08625E14
 	cry DirectSoundWaveData_Cry_128_JP_087598D8 @ 0x08625E14
 	cry DirectSoundWaveData_Cry_129_JP_0875ABE0 @ 0x08625E20
 	cry DirectSoundWaveData_Cry_130_JP_0875C014 @ 0x08625E2C
@@ -258,8 +254,6 @@ gMenuDataBlock_Rom_625E14: @ 0x08625E14
 	cry DirectSoundWaveData_Cry_253_JP_087D3F38 @ 0x086263F0
 	cry DirectSoundWaveData_Cry_254_JP_087D4884 @ 0x086263FC
 	cry DirectSoundWaveData_Cry_255_JP_087D54E0 @ 0x08626408
-	.globl gMenuDataBlock_Rom_626414
-gMenuDataBlock_Rom_626414: @ 0x08626414
 	cry DirectSoundWaveData_Cry_256_JP_087D69E8 @ 0x08626414
 	cry DirectSoundWaveData_Cry_257_JP_087D7480 @ 0x08626420
 	cry DirectSoundWaveData_Cry_258_JP_087D80B0 @ 0x0862642C
@@ -388,14 +382,10 @@ gMenuDataBlock_Rom_626414: @ 0x08626414
 	cry DirectSoundWaveData_Cry_381_JP_08853BA8 @ 0x086269F0
 	cry DirectSoundWaveData_Cry_382_JP_088565B8 @ 0x086269FC
 	cry DirectSoundWaveData_Cry_383_JP_08856DDC @ 0x08626A08
-	.globl gMenuDataBlock_Rom_626A14
-gMenuDataBlock_Rom_626A14: @ 0x08626A14
 	cry DirectSoundWaveData_Cry_384_JP_08857EE4 @ 0x08626A14
 	cry DirectSoundWaveData_Cry_385_JP_088594DC @ 0x08626A20
 	cry DirectSoundWaveData_Cry_386_JP_0885A260 @ 0x08626A2C
 	cry DirectSoundWaveData_Cry_387_JP_0885B734 @ 0x08626A38
-	.globl gMenuDataBlock_Rom_626A44
-gMenuDataBlock_Rom_626A44: @ 0x08626A44
 	cry2 DirectSoundWaveData_Cry_000_JP_086CDE28 @ 0x08626A44
 	cry2 DirectSoundWaveData_Cry_001_JP_086CEEB4 @ 0x08626A50
 	cry2 DirectSoundWaveData_Cry_002_JP_086CFF44 @ 0x08626A5C
@@ -524,8 +514,6 @@ gMenuDataBlock_Rom_626A44: @ 0x08626A44
 	cry2 DirectSoundWaveData_Cry_125_JP_08756AAC @ 0x08627020
 	cry2 DirectSoundWaveData_Cry_126_JP_08757A28 @ 0x0862702C
 	cry2 DirectSoundWaveData_Cry_127_JP_08758684 @ 0x08627038
-	.globl gMenuDataBlock_Rom_627044
-gMenuDataBlock_Rom_627044: @ 0x08627044
 	cry2 DirectSoundWaveData_Cry_128_JP_087598D8 @ 0x08627044
 	cry2 DirectSoundWaveData_Cry_129_JP_0875ABE0 @ 0x08627050
 	cry2 DirectSoundWaveData_Cry_130_JP_0875C014 @ 0x0862705C
@@ -654,8 +642,6 @@ gMenuDataBlock_Rom_627044: @ 0x08627044
 	cry2 DirectSoundWaveData_Cry_253_JP_087D3F38 @ 0x08627620
 	cry2 DirectSoundWaveData_Cry_254_JP_087D4884 @ 0x0862762C
 	cry2 DirectSoundWaveData_Cry_255_JP_087D54E0 @ 0x08627638
-	.globl gMenuDataBlock_Rom_627644
-gMenuDataBlock_Rom_627644: @ 0x08627644
 	cry2 DirectSoundWaveData_Cry_256_JP_087D69E8 @ 0x08627644
 	cry2 DirectSoundWaveData_Cry_257_JP_087D7480 @ 0x08627650
 	cry2 DirectSoundWaveData_Cry_258_JP_087D80B0 @ 0x0862765C

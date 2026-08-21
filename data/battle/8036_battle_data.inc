@@ -46,8 +46,6 @@ gTrainerHillData_085FB8B8: @ 0x085FB8B8
 	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
 	.4byte gTrainerHillData_085FB6A0 + 0x1C8
 	.4byte gTrainerHillData_085FB6A0 + 0x1F0
-	.globl gBattleDataBlock_Rom_5FB8C0
-gBattleDataBlock_Rom_5FB8C0: @ 0x085FB8C0
 	.space 0x20, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085FB8E0: trainer_hill.s: PrintOnTrainerHillRecordsWindow
 	.globl gTrainerHillData_085FB8E0

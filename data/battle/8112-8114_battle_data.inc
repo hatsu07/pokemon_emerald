@@ -237,11 +237,7 @@ gLibgccData_0890F058: @ 0x0890F058
 	.2byte 0x0808, 0x0808, 0x0808, 0x0808, 0x0808, 0x0808, 0x0808, 0x0808
 	.2byte 0x0808, 0x0808, 0x0808, 0x0808, 0x0808, 0x0808, 0x0808, 0x0808
 	.2byte 0x0043, 0x0000
-	.globl gBattleDataBlock_Rom_90F15C
-gBattleDataBlock_Rom_90F15C: @ 0x0890F15C
 	.space 0x10, 0x20
-	.globl gBattleDataBlock_Rom_90F16C
-gBattleDataBlock_Rom_90F16C: @ 0x0890F16C
 	.space 0x10, 0x30
 	@ pret/pokeemerald-jp direct xref for 0x0890F17C: libc.s: _vfprintf_r
 	.globl gLibcData_0890F17C
@@ -473,6 +469,4 @@ gBattleU8Table_Rom_912454: @ 0x08912454
 gLz77Asset_08912744: @ 0x08912744
 	.incbin "build/assets/lz77_raw/08912744.bin.lz"
 	.byte 0x00, 0x00
-	.globl gBattleDataBlock_Rom_9158E0
-gBattleDataBlock_Rom_9158E0: @ 0x089158E0
 	.space 0x1EA720, 0xFF

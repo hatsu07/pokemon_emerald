@@ -787,6 +787,4 @@ sPokenavIcon_Gfx: @ 0x085D7608
 	.if (. - sPokenavIcon_Gfx) != 0x3E4
 	.error "sPokenavIcon_Gfx compressed size mismatch"
 	.endif
-	.globl gBattleDataBlock_Rom_5D79EC
-gBattleDataBlock_Rom_5D79EC: @ 0x085D79EC
 	.space 0x2, 0xB0

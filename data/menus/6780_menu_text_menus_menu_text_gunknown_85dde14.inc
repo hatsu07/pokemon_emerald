@@ -682,8 +682,6 @@ gMenuU8Table_Rom_5DFC74: @ 0x085DFC74
 gMenuU8Table_Rom_5DFCC2: @ 0x085DFCC2
 	@ ANALYSIS: RAW_RANGE offset=0x5DFCC2, size=0x4
 	.byte 0x05, 0x1A, 0xFF, 0xFF
-	.globl gMenuDataBlock_Rom_5DFCC6
-gMenuDataBlock_Rom_5DFCC6: @ 0x085DFCC6
 	.space 0x2, 0xFF
 	@ confirmed contiguous ROM pointer table: 756 entries from this address
 sPointerTable_085DFCC8:

@@ -383,8 +383,6 @@ gFldeffFlashData_0859229C: @ 0x0859229C
 	@ ANALYSIS: U16_TABLE size=0x20 entries=16
 	.2byte 0x7FFF, 0x7FFF, 0x7FFF, 0x7FFF, 0x7FFF, 0x7FFF, 0x7FFF, 0x7FFF
 	.2byte 0x7FFF, 0x7FFF, 0x7FFF, 0x7FFF, 0x7FFF, 0x7FFF, 0x7FFF, 0x7FFF
-	.globl gPokemonDataBlock_Rom_5922BC
-gPokemonDataBlock_Rom_5922BC: @ 0x085922BC
 	.space 0x20, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085922DC: fldeff_flash.s: sub_081376E8
 	.globl gFldeffFlashData_085922DC

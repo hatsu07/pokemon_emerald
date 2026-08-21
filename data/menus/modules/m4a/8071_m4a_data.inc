@@ -1,5 +1,3 @@
-	.globl gMenuDataBlock_Rom_627C44
-gMenuDataBlock_Rom_627C44: @ 0x08627C44
 	cry2 DirectSoundWaveData_Cry_384_JP_08857EE4 @ 0x08627C44
 	cry2 DirectSoundWaveData_Cry_385_JP_088594DC @ 0x08627C50
 	cry2 DirectSoundWaveData_Cry_386_JP_0885A260 @ 0x08627C5C

@@ -28,6 +28,4 @@ gMenuPointerTable_Rom_5FB91C: @ 0x085FB91C
 	.4byte sub_081D5E9C
 	.4byte nullsub_2
 	.4byte sub_081D5F08
-	.globl gMenuDataBlock_Rom_5FB960
-gMenuDataBlock_Rom_5FB960: @ 0x085FB960
 	.space 0x1, 0xAE
