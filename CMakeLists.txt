@@ -772,27 +772,21 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
 
     elseif("${RELATIVE_OUTPUT}" STREQUAL
             "build/graphics/battle_anims/unused/water.tilemap.inc")
-        # data/data.o directly includes this generated ASM, so create it at
-        # configure time. It is not a build OUTPUT and survives clean-first.
+        # data/data.o depends on GRAPHICS_OUTPUTS, so this direct include can
+        # be generated normally before assembly and rebuilt after distclean.
         set(INPUT_CSV
             "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/water.tilemap.csv")
-        set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
-            "${INPUT_CSV}"
-            "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py")
-        file(MAKE_DIRECTORY "${OUTPUT_DIR}")
-        execute_process(
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
             COMMAND "${Python3_EXECUTABLE}"
                 "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py"
                 "${INPUT_CSV}" "${OUTPUT_ABS}"
                 --expected-entries 2048
-            RESULT_VARIABLE UNUSED_WATER_TILEMAP_RESULT
-            OUTPUT_VARIABLE UNUSED_WATER_TILEMAP_STDOUT
-            ERROR_VARIABLE UNUSED_WATER_TILEMAP_STDERR)
-        if(NOT UNUSED_WATER_TILEMAP_RESULT EQUAL 0)
-            message(FATAL_ERROR
-                "Failed to generate unused water tilemap at configure time: "
-                "${UNUSED_WATER_TILEMAP_STDERR}")
-        endif()
+            DEPENDS
+                "${INPUT_CSV}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py"
+            VERBATIM)
     # END UNUSED WATER SEMANTIC ASSETS
 
     # BEGIN BATTLE TRANSITION EXACT PIPELINE
@@ -3859,30 +3853,21 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
 
     elseif("${RELATIVE_OUTPUT}" STREQUAL
             "build/graphics/berry_blender/center_map.tilemap.inc")
-        # data/data.o includes this generated ASM directly.  The generic
-        # per-output custom-command scanner does not reliably order that
-        # include before data/data.o, so generate this one at configure time.
-        # It is deliberately not registered as a build OUTPUT, therefore
-        # --clean-first does not remove it before assembly.
+        # data/data.o depends on GRAPHICS_OUTPUTS, so this direct include can
+        # be generated normally before assembly and rebuilt after distclean.
         set(INPUT_CSV
             "${CMAKE_SOURCE_DIR}/graphics/berry_blender/center_map.tilemap.csv")
-        set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
-            "${INPUT_CSV}"
-            "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py")
-        file(MAKE_DIRECTORY "${OUTPUT_DIR}")
-        execute_process(
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
             COMMAND "${Python3_EXECUTABLE}"
                 "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py"
                 "${INPUT_CSV}" "${OUTPUT_ABS}"
                 --expected-entries 512
-            RESULT_VARIABLE BERRY_BLENDER_CENTER_MAP_RESULT
-            OUTPUT_VARIABLE BERRY_BLENDER_CENTER_MAP_STDOUT
-            ERROR_VARIABLE BERRY_BLENDER_CENTER_MAP_STDERR)
-        if(NOT BERRY_BLENDER_CENTER_MAP_RESULT EQUAL 0)
-            message(FATAL_ERROR
-                "Failed to generate Berry Blender center tilemap at configure time: "
-                "${BERRY_BLENDER_CENTER_MAP_STDERR}")
-        endif()
+            DEPENDS
+                "${INPUT_CSV}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py"
+            VERBATIM)
     # END BERRY BLENDER UNCOMPRESSED SEMANTIC ASSETS
 
     elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/berry_blender/outer.4bpp.lz")
@@ -6262,6 +6247,47 @@ string(REPLACE
     "${CRT0_CONTENT}")
 file(WRITE "${GENERATED_CRT0}" "${CRT0_CONTENT}")
 
+# BEGIN MOVES 8117 LZ77 BUILD EXACT PIPELINE
+# The 378 exact streams are side effects of one validated batch. data/data.o
+# waits for the batch stamp, so every nested .incbin exists before assembly.
+# Unlike the former configure-time generation, this OUTPUT rule is recreated
+# by the normal build graph after distclean without a manual CMake configure.
+set(MOVES_8117_EXACT_ROOT
+    "${CMAKE_SOURCE_DIR}/graphics/moves_8117_lz77")
+set(MOVES_8117_EXACT_MANIFEST
+    "${MOVES_8117_EXACT_ROOT}/manifests/moves_8117_lz77_exact_plan.json")
+set(MOVES_8117_EXACT_OUTPUT_DIR
+    "${CMAKE_BINARY_DIR}/graphics/moves_8117/exact")
+set(MOVES_8117_EXACT_STAMP
+    "${MOVES_8117_EXACT_OUTPUT_DIR}/.moves_8117_exact.stamp")
+
+file(GLOB_RECURSE MOVES_8117_EXACT_EDITABLE_SOURCES
+    CONFIGURE_DEPENDS
+    "${CMAKE_SOURCE_DIR}/graphics/*.png"
+    "${CMAKE_SOURCE_DIR}/graphics/*.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/*.csv")
+
+add_custom_command(
+    OUTPUT "${MOVES_8117_EXACT_STAMP}"
+    COMMAND "${CMAKE_COMMAND}" -E make_directory
+        "${MOVES_8117_EXACT_OUTPUT_DIR}"
+    COMMAND
+        "${Python3_EXECUTABLE}"
+        "${CMAKE_SOURCE_DIR}/tools/moves_8117_exact_assets_batch.py"
+        --manifest "${MOVES_8117_EXACT_MANIFEST}"
+        --repo-root "${CMAKE_SOURCE_DIR}"
+        --output-dir "${MOVES_8117_EXACT_OUTPUT_DIR}"
+        --quiet
+    DEPENDS
+        ${MOVES_8117_EXACT_EDITABLE_SOURCES}
+        "${MOVES_8117_EXACT_MANIFEST}"
+        "${CMAKE_SOURCE_DIR}/tools/moves_8117_exact_assets.py"
+        "${CMAKE_SOURCE_DIR}/tools/moves_8117_exact_assets_batch.py"
+        "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+    WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
+    VERBATIM)
+# END MOVES 8117 LZ77 BUILD EXACT PIPELINE
+
 # ---------------------------------------------------------------------------
 # アセンブリ
 # ---------------------------------------------------------------------------
@@ -6383,7 +6409,9 @@ foreach(DATA_SOURCE IN LISTS DATA_SOURCES)
     endif()
 
     if(DATA_NAME STREQUAL "data")
-        list(APPEND DATA_OBJECT_DEPENDENCIES ${GRAPHICS_OUTPUTS})
+        list(APPEND DATA_OBJECT_DEPENDENCIES
+            ${GRAPHICS_OUTPUTS}
+            "${MOVES_8117_EXACT_STAMP}")
     endif()
 
     set(PREPROCESS_AND_ASSEMBLE
@@ -6496,60 +6524,3 @@ add_custom_target(distclean
         "${MAP_FILE}"
     COMMENT "Removing build outputs, including converted graphics and audio"
     VERBATIM)
-
-# BEGIN MOVES 8117 LZ77 CONFIGURE EXACT PIPELINE
-# These files are consumed by .incbin directives in
-# data/generated/rodata/moves/8117_moves_data.inc.
-#
-# Generate them during CMake configuration rather than as independent custom
-# command outputs. data/data.o contains the nested .inc file and the previous
-# per-output rules were not ordered before its assembler invocation.
-#
-# CMAKE_CONFIGURE_DEPENDS makes edits to PNG sources / exact plan / helpers
-# trigger automatic reconfigure before the next build.
-if(NOT Python3_EXECUTABLE)
-    find_package(Python3 REQUIRED COMPONENTS Interpreter)
-endif()
-
-set(MOVES_8117_EXACT_ROOT
-    "${CMAKE_SOURCE_DIR}/graphics/moves_8117_lz77")
-set(MOVES_8117_EXACT_MANIFEST
-    "${MOVES_8117_EXACT_ROOT}/manifests/moves_8117_lz77_exact_plan.json")
-set(MOVES_8117_EXACT_OUTPUT_DIR
-    "${CMAKE_BINARY_DIR}/graphics/moves_8117/exact")
-
-file(GLOB_RECURSE MOVES_8117_EXACT_EDITABLE_SOURCES
-    CONFIGURE_DEPENDS
-    "${CMAKE_SOURCE_DIR}/graphics/*.png"
-    "${CMAKE_SOURCE_DIR}/graphics/*.u16"
-    "${CMAKE_SOURCE_DIR}/graphics/*.csv")
-
-set_property(
-    DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
-    ${MOVES_8117_EXACT_EDITABLE_SOURCES}
-    "${MOVES_8117_EXACT_MANIFEST}"
-    "${CMAKE_SOURCE_DIR}/tools/moves_8117_exact_assets.py"
-    "${CMAKE_SOURCE_DIR}/tools/moves_8117_exact_assets_batch.py"
-    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py")
-
-execute_process(
-    COMMAND
-        "${Python3_EXECUTABLE}"
-        "${CMAKE_SOURCE_DIR}/tools/moves_8117_exact_assets_batch.py"
-        --manifest "${MOVES_8117_EXACT_MANIFEST}"
-        --repo-root "${CMAKE_SOURCE_DIR}"
-        --output-dir "${MOVES_8117_EXACT_OUTPUT_DIR}"
-        --quiet
-    WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
-    RESULT_VARIABLE MOVES_8117_EXACT_RESULT
-    OUTPUT_VARIABLE MOVES_8117_EXACT_STDOUT
-    ERROR_VARIABLE MOVES_8117_EXACT_STDERR)
-
-if(NOT MOVES_8117_EXACT_RESULT EQUAL 0)
-    message(FATAL_ERROR
-        "moves/8117 exact PNG asset generation failed "
-        "(exit ${MOVES_8117_EXACT_RESULT})\n"
-        "stdout:\n${MOVES_8117_EXACT_STDOUT}\n"
-        "stderr:\n${MOVES_8117_EXACT_STDERR}")
-endif()
-# END MOVES 8117 LZ77 CONFIGURE EXACT PIPELINE
