@@ -1,9 +1,7 @@
-	.globl gPokemonDataBlock_Rom_5443B8
-	.set gPokemonDataBlock_Rom_5443B8, gText_Rom_5443B3 + 0x5
 	@ Pokédex type-search IDs. TYPE_NONE (0xFF) is the shared byte at
-	@ gPokemonDataBlock_Rom_5443B8, supplied by the preceding text terminator.
+	@ gText_Rom_5443B3 + 0x5, supplied by the preceding text terminator.
 	.globl gPokedexSearchTypeIds
-	.set gPokedexSearchTypeIds, gPokemonDataBlock_Rom_5443B8
+	.set gPokedexSearchTypeIds, gText_Rom_5443B3 + 0x5
 	.byte TYPE_NORMAL, TYPE_FIGHT, TYPE_FLYING, TYPE_POISON, TYPE_GROUND, TYPE_ROCK
 	.byte TYPE_BUG, TYPE_GHOST, TYPE_STEEL, TYPE_FIRE, TYPE_WATER, TYPE_GRASS
 	.byte TYPE_ELECTRIC, TYPE_PSYCHIC, TYPE_ICE, TYPE_DRAGON, TYPE_DARK

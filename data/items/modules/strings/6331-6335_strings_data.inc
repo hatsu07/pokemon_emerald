@@ -17,8 +17,6 @@ gText_Rom_5CC9FA: @ 0x085CC9FA
 	.if (. - gText_Rom_5CC9FA) != 0xa
 	.error "gText_Rom_5CC9FA must retain its original byte length"
 	.endif
-	.globl gItemDataBlock_Rom_5CC9FC
-	.set gItemDataBlock_Rom_5CC9FC, gText_Rom_5CC9FA + 0x2
 	@ pret/pokeemerald-jp direct xref for 0x085CCA04: berry_crush.s: sub_08021ABC
 	.globl gBerryCrushData_085CCA04
 gBerryCrushData_085CCA04: @ 0x085CCA04

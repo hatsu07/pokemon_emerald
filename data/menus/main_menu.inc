@@ -42,8 +42,6 @@ sLz77Block_082D277C:
 	.set gMainMenuData_082D28A8, sBirchSpeechBgGradientPal + 2
 	.globl gMainMenuData_082D28A8
 
-	.globl gMenuDataBlock_Rom_2D28B6
-	.set gMenuDataBlock_Rom_2D28B6, sBirchSpeechBgGradientPal + 0x10
 
 	.globl sBirchSpeechBgGradientPal
 sBirchSpeechBgGradientPal: @ 0x082D28A6
