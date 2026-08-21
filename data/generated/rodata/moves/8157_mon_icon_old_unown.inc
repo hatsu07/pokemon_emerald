@@ -127,15 +127,13 @@ gBattleVSFrame_Pal: @ 0x08D77B88
 	.error "gBattleVSFrame_Pal compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D77BB0: battle_bg.s: DrawBattleEntryBackground
-	.globl gBattleBgData_08D77BB0
-gBattleBgData_08D77BB0:
-	.globl sLz77Block_08D77BB0
+.globl gVsLettersGfx
+gVsLettersGfx:
 	@ confirmed GBA LZ77 stream: compressed=0x25B, decompressed=0x1000
-sLz77Block_08D77BB0:
 	@ analyzed canonical ROM range 0x08D77BB0-0x08D7A1AB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 13 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D77BB0.bin.lz"
+	.incbin "build/graphics/battle_transitions/vs_rom_exact.4bpp.lz"
 	.byte 0x00
 	.globl gLz77Asset_08D77E0C
 gLz77Asset_08D77E0C: @ 0x08D77E0C

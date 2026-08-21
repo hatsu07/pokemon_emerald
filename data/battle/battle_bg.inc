@@ -47,7 +47,7 @@ sVsLetter_S_SpriteTemplate:
 
 	.globl sVsLettersSpriteSheet
 sVsLettersSpriteSheet:
-	.4byte sLz77Block_08D77BB0 @ gVsLettersGfx
+	.4byte gVsLettersGfx
 	.2byte 0x1000, 10000 @ size, TAG_VS_LETTERS
 
 	.globl gBattleBgTemplates

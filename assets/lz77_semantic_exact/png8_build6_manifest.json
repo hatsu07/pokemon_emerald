@@ -464,6 +464,12 @@
       "source_kind": "u16_le_text",
       "source": "graphics/shop/menu.tilemap.u16",
       "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_transitions/vs_rom_exact.4bpp.lz": {
+      "key": "08D77BB0",
+      "source_kind": "png",
+      "source": "graphics/battle_transitions/vs.png",
+      "semantic_role": "gfx4bpp"
     }
   }
 }

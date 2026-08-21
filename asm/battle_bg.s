@@ -1358,7 +1358,7 @@ DrawBattleEntryBackground: @ 0x08035FB8
 _0803603C: .4byte 0x02022C90
 _08036040: .4byte gBattleVSFrame_Gfx
 _08036044: .4byte 0x06004000
-_08036048: .4byte gBattleBgData_08D77BB0
+_08036048: .4byte gVsLettersGfx
 _0803604C: .4byte 0x06010000
 _08036050: .4byte gBattleVSFrame_Pal
 _08036054: .4byte 0x00005C04
