@@ -197,7 +197,7 @@ EventScriptData_JP_0821DEF4:
 	@ applymovement 0x0005, 0x0821E0E4 @ 0x0821E091
 	.byte 0x4F
 	.2byte 0x0005
-	.4byte 0x0821E0E4
+	.4byte Movement_0821E0E4
 	@ waitmovement 0x0000 @ 0x0821E098
 	.byte 0x51
 	.2byte 0x0000
@@ -217,15 +217,15 @@ EventScriptData_JP_0821DEF4:
 	@ applymovement 0x00FF, 0x0821E0F4 @ 0x0821E0AE
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x0821E0F4
+	.4byte Movement_0821E0F4
 	@ applymovement 0x0001, 0x0821E0FB @ 0x0821E0B5
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x0821E0FB
+	.4byte Movement_0821E0FB
 	@ applymovement 0x0005, 0x0821E0EC @ 0x0821E0BC
 	.byte 0x4F
 	.2byte 0x0005
-	.4byte 0x0821E0EC
+	.4byte Movement_0821E0EC
 	@ waitmovement 0x0000 @ 0x0821E0C3
 	.byte 0x51
 	.2byte 0x0000
@@ -239,7 +239,7 @@ EventScriptData_JP_0821DEF4:
 	@ applymovement 0x0001, 0x0821E102 @ 0x0821E0CD
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x0821E102
+	.4byte Movement_0821E102
 	@ waitmovement 0x0000 @ 0x0821E0D4
 	.byte 0x51
 	.2byte 0x0000
