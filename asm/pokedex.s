@@ -7138,7 +7138,7 @@ _080BE466:
 	bl CopyBgTilemapBufferToVram
 	b _080BE5EC
 	.align 2, 0
-_080BE484: .4byte 0x085C8FA2
+_080BE484: .4byte gPokedexData_085C8FA2
 _080BE488: .4byte 0x085C8FAC
 _080BE48C: .4byte gPokedexData_085C8FB3
 _080BE490: .4byte 0x08539C50
@@ -14128,4 +14128,3 @@ _080C1CB0: .4byte gPokedexData_08539AFC
 _080C1CB4: .4byte 0x020205AC
 _080C1CB8: .4byte 0x080C1B85
 	thumb_func_end sub_080C1C38
-

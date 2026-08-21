@@ -725,7 +725,7 @@
 	.include "data/generated/rodata/menus/modules/main_menu/4099-4130_main_menu_text.inc"
 	.include "data/generated/rodata/menus/modules/main_menu/4131-4162_main_menu_text.inc"
 	.include "data/generated/rodata/menus/modules/main_menu/4163-4167_main_menu_data.inc"
-	.include "data/generated/rodata/menus/4168_menus_definitions.inc"
+	.include "data/generated/rodata/menus/modules/pokedex/4168_pokedex_data.inc"
 	.include "data/generated/rodata/battle/modules/data/easy_chat/easy_chat_group_trainer/4169-4171_easy_chat_group_trainer_text.inc"
 	.include "data/generated/rodata/battle/4172_battle_data.inc"
 	.include "data/generated/rodata/moves/modules/data/moves_info/4173_rom_5_c8_fd6_text.inc"
