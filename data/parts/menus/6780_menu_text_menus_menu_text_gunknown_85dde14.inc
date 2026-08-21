@@ -351,24 +351,24 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22E8F1 @ ROM pointer 0x0822E8F1
 	.4byte gText_Rom_22E8D9 @ ROM pointer 0x0822E8D9
 	@ ANALYSIS: POINTER_TABLE entries=18 size=0x48
-	.4byte 0x085DF4B8
-	.4byte 0x085DF4C8
-	.4byte 0x085DF4EC
-	.4byte 0x085DF50C
-	.4byte 0x085DF51C
-	.4byte 0x085DF540
-	.4byte 0x085DF560
-	.4byte 0x085DF570
-	.4byte 0x085DF594
-	.4byte 0x085DF5B4
-	.4byte 0x085DF5C4
-	.4byte 0x085DF5E8
-	.4byte 0x085DF608
-	.4byte 0x085DF618
-	.4byte 0x085DF63C
-	.4byte 0x085DF65C
-	.4byte 0x085DF66C
-	.4byte 0x085DF690
+	.4byte gMenuU8Table_Rom_5DF454 + 0x64
+	.4byte gMenuU8Table_Rom_5DF454 + 0x74
+	.4byte gMenuU8Table_Rom_5DF454 + 0x98
+	.4byte gMenuU8Table_Rom_5DF454 + 0xB8
+	.4byte gMenuU8Table_Rom_5DF454 + 0xC8
+	.4byte gMenuU8Table_Rom_5DF454 + 0xEC
+	.4byte gMenuU8Table_Rom_5DF454 + 0x10C
+	.4byte gMenuU8Table_Rom_5DF454 + 0x11C
+	.4byte gMenuU8Table_Rom_5DF454 + 0x140
+	.4byte gMenuU8Table_Rom_5DF454 + 0x160
+	.4byte gMenuU8Table_Rom_5DF454 + 0x170
+	.4byte gMenuU8Table_Rom_5DF454 + 0x194
+	.4byte gMenuU8Table_Rom_5DF454 + 0x1B4
+	.4byte gMenuU8Table_Rom_5DF454 + 0x1C4
+	.4byte gMenuU8Table_Rom_5DF454 + 0x1E8
+	.4byte gMenuU8Table_Rom_5DF454 + 0x208
+	.4byte gMenuU8Table_Rom_5DF454 + 0x218
+	.4byte gMenuU8Table_Rom_5DF454 + 0x23C
 	.globl gMenuU8Table_Rom_5DF6F8
 gMenuU8Table_Rom_5DF6F8: @ 0x085DF6F8
 	@ ANALYSIS: RAW_RANGE offset=0x5DF6F8, size=0x18
@@ -600,8 +600,8 @@ gMenuU8Table_Rom_5DFAFC: @ 0x085DFAFC
 	@ semanticized-mass: resolved embedded ROM pointers
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
 	.4byte 0
-	.4byte 0x085DFAC4
-	.4byte 0x085DFAEC
+	.4byte gMenuU8Table_Rom_5DFAB4 + 0x10
+	.4byte gMenuU8Table_Rom_5DFAB4 + 0x38
 	.4byte 0
 	.4byte gDummySpriteAffineAnimTable @ ROM pointer 0x082BF310
 	.4byte SpriteCallback_ScrollIndicatorArrow @ ROM pointer 0x081AEF3D
@@ -643,8 +643,8 @@ gMenuU8Table_Rom_5DFB48: @ 0x085DFB48
 	@ semanticized-mass: resolved embedded ROM pointers
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
 	.4byte 0
-	.4byte 0x085DFB34
-	.4byte 0x085DFB44
+	.4byte gMenuU8Table_Rom_5DFB30 + 0x4
+	.4byte gMenuU8Table_Rom_5DFB30 + 0x14
 	.4byte 0
 	.4byte gDummySpriteAffineAnimTable @ ROM pointer 0x082BF310
 	.4byte SpriteCallback_RedArrowCursor @ ROM pointer 0x081AF709

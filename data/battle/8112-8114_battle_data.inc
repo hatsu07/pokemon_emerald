@@ -330,7 +330,7 @@ gLibcData_0890F1EC: @ 0x0890F1EC
 sPointerTable_0890F1EC:
 	@ analyzed canonical ROM range 0x0890F1EC-0x0890F21B
 	@ pointer/nullable table
-	.4byte 0x0890F220 @ +0x0
+	.4byte gBattleU32Table_Rom_90F21C + 0x4 @ +0x0
 	.4byte gBattleU32Table_Rom_90F21C @ +0x4
 	.4byte gBattleU32Table_Rom_90F21C @ +0x8
 	.4byte gBattleU32Table_Rom_90F21C @ +0xC

@@ -251,7 +251,7 @@ gMenuPointerTable_Rom_5E7FFC: @ 0x085E7FFC
 	.4byte MoveCeilingCrumbleSprite @ +0x8
 	.4byte 0x000C0000 @ +0xC
 	.4byte 0x0000FFFE @ +0x10
-	.4byte 0x085E8008 @ +0x14
+	.4byte gMenuPointerTable_Rom_5E7FFC + 0xC @ +0x14
 	.4byte 0x40000000 @ +0x18
 	.4byte 0 @ +0x1C
 	@ pret/pokeemerald-jp direct xref for 0x085E801C: mirage_tower.s: CreateCeilingCrumbleSprites
