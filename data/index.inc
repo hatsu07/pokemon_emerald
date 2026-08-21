@@ -171,7 +171,7 @@
 	.include "data/wild_encounters/wild_encounters.inc"
 
 	.include "data/generated/rodata/parts/menus/0721_menu_text_src_main_menu_gunknown_852d9f4.inc"
-	.include "data/generated/rodata/menus/0722_menus_data.inc"
+	.include "data/generated/rodata/menus/modules/wild_encounter/0722_wild_encounter_declarations.inc"
 	.include "data/generated/rodata/menus/0723_menus_data.inc"
 	.include "data/generated/rodata/menus/0724_menus_data.inc"
 	.include "data/generated/rodata/menus/modules/main_menu/0725_rom_537310_text.inc"
