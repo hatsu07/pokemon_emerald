@@ -83031,7 +83031,7 @@
         "tail": ""
       },
       "source_block_address": "0x085DFB80",
-      "source_file": "data/parts/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc"
+      "source_file": "data/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc"
     },
     "085DFBF0": {
       "address": "0x085DFBF0",
@@ -83136,7 +83136,7 @@
         "tail": ""
       },
       "source_block_address": "0x085DFBF0",
-      "source_file": "data/parts/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc"
+      "source_file": "data/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc"
     },
     "085DFC30": {
       "address": "0x085DFC30",
@@ -83225,7 +83225,7 @@
         "tail": ""
       },
       "source_block_address": "0x085DFC30",
-      "source_file": "data/parts/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc"
+      "source_file": "data/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc"
     },
     "085E2A20": {
       "address": "0x085E2A20",
@@ -122342,7 +122342,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F6734",
-      "source_file": "data/parts/ribbons/7918_ribbon_text_ribbons_ribbon_text_gunknown_85f628c.inc"
+      "source_file": "data/ribbons/7918_ribbon_text_ribbons_ribbon_text_gunknown_85f628c.inc"
     },
     "085F68FC": {
       "address": "0x085F68FC",
@@ -125011,7 +125011,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F6734",
-      "source_file": "data/parts/ribbons/7918_ribbon_text_ribbons_ribbon_text_gunknown_85f628c.inc"
+      "source_file": "data/ribbons/7918_ribbon_text_ribbons_ribbon_text_gunknown_85f628c.inc"
     },
     "085F7CB8": {
       "address": "0x085F7CB8",

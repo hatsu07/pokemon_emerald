@@ -73861,7 +73861,7 @@
       "flags": "0x2A 0xAC 0x4B 0xFF 0xFF 0xEB 0x1D 0x60",
       "label": "sAnalyzedGfx_085DFB80",
       "rom_address": "0x085DFB80",
-      "source": "data/parts/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc",
+      "source": "data/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc",
       "source_line": 755,
       "tail": "00 00"
     },
@@ -73961,7 +73961,7 @@
       "flags": "0x00 0x7D 0x7F 0xFF 0x80",
       "label": "sAnalyzedGfx_085DFBF0",
       "rom_address": "0x085DFBF0",
-      "source": "data/parts/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc",
+      "source": "data/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc",
       "source_line": 763,
       "tail": ""
     },
@@ -74045,7 +74045,7 @@
       "flags": "0x00 0x09 0xF9 0x43 0x7F",
       "label": "sAnalyzedGfx_085DFC30",
       "rom_address": "0x085DFC30",
-      "source": "data/parts/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc",
+      "source": "data/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc",
       "source_line": 771,
       "tail": "00"
     },
