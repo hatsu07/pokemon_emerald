@@ -85,84 +85,76 @@ sTrainerCardStickers_Gfx:
 	.error "sTrainerCardStickers_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08545390: trainer_card.s: LoadCardGfx
-	.globl gTrainerCardData_08545390
-gTrainerCardData_08545390: @ 0x08545390
+	.globl gHoennTrainerCardFront_Tilemap
+gHoennTrainerCardFront_Tilemap: @ 0x08545390
 	@ confirmed GBA LZ77 stream: compressed=0x19E, decompressed=0x4B0
-sLz77Block_08545390:
 	@ analyzed canonical ROM range 0x08545390-0x0854552F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08545390.bin.lz"
+	.incbin "build/graphics/trainer_card/front_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08545530: trainer_card.s: LoadCardGfx
-	.globl gTrainerCardData_08545530
-gTrainerCardData_08545530: @ 0x08545530
+	.globl gKantoTrainerCardFront_Tilemap
+gKantoTrainerCardFront_Tilemap: @ 0x08545530
 	@ confirmed GBA LZ77 stream: compressed=0x1B6, decompressed=0x4B0
-sLz77Block_08545530:
 	@ analyzed canonical ROM range 0x08545530-0x085456E7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08545530.bin.lz"
+	.incbin "build/graphics/trainer_card/frlg/front_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085456E8: trainer_card.s: LoadCardGfx
-	.globl gTrainerCardData_085456E8
-gTrainerCardData_085456E8: @ 0x085456E8
+	.globl gHoennTrainerCardBack_Tilemap
+gHoennTrainerCardBack_Tilemap: @ 0x085456E8
 	@ confirmed GBA LZ77 stream: compressed=0xDB, decompressed=0x4B0
-sLz77Block_085456E8:
 	@ analyzed canonical ROM range 0x085456E8-0x085457C3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/085456E8.bin.lz"
+	.incbin "build/graphics/trainer_card/back_rom_exact.tilemap.lz"
 	.byte 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085457C4: trainer_card.s: LoadCardGfx
-	.globl gTrainerCardData_085457C4
-gTrainerCardData_085457C4: @ 0x085457C4
+	.globl gKantoTrainerCardBack_Tilemap
+gKantoTrainerCardBack_Tilemap: @ 0x085457C4
 	@ confirmed GBA LZ77 stream: compressed=0x129, decompressed=0x4B0
-sLz77Block_085457C4:
 	@ analyzed canonical ROM range 0x085457C4-0x085458EF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/085457C4.bin.lz"
+	.incbin "build/graphics/trainer_card/frlg/back_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085458F0: trainer_card.s: LoadCardGfx
-	.globl gTrainerCardData_085458F0
-gTrainerCardData_085458F0: @ 0x085458F0
+	.globl gHoennTrainerCardFrontLink_Tilemap
+gHoennTrainerCardFrontLink_Tilemap: @ 0x085458F0
 	@ confirmed GBA LZ77 stream: compressed=0x17E, decompressed=0x4B0
-sLz77Block_085458F0:
 	@ analyzed canonical ROM range 0x085458F0-0x08545A6F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/085458F0.bin.lz"
+	.incbin "build/graphics/trainer_card/front_link_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08545A70: trainer_card.s: LoadCardGfx
-	.globl gTrainerCardData_08545A70
-gTrainerCardData_08545A70: @ 0x08545A70
+	.globl gKantoTrainerCardFrontLink_Tilemap
+gKantoTrainerCardFrontLink_Tilemap: @ 0x08545A70
 	@ confirmed GBA LZ77 stream: compressed=0x189, decompressed=0x4B0
-sLz77Block_08545A70:
 	@ analyzed canonical ROM range 0x08545A70-0x08545BFB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08545A70.bin.lz"
+	.incbin "build/graphics/trainer_card/frlg/front_link_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08545BFC: trainer_card.s: LoadCardGfx
-	.globl gTrainerCardData_08545BFC
-gTrainerCardData_08545BFC: @ 0x08545BFC
+	.globl gHoennTrainerCardBg_Tilemap
+gHoennTrainerCardBg_Tilemap: @ 0x08545BFC
 	@ confirmed GBA LZ77 stream: compressed=0x95, decompressed=0x4B0
-sLz77Block_08545BFC:
 	@ analyzed canonical ROM range 0x08545BFC-0x08545C93
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08545BFC.bin.lz"
+	.incbin "build/graphics/trainer_card/bg_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08545C94: trainer_card.s: LoadCardGfx
-	.globl gTrainerCardData_08545C94
-gTrainerCardData_08545C94: @ 0x08545C94
+	.globl gKantoTrainerCardBg_Tilemap
+gKantoTrainerCardBg_Tilemap: @ 0x08545C94
 	@ confirmed GBA LZ77 stream: compressed=0x95, decompressed=0x4B0
-sLz77Block_08545C94:
 	@ analyzed canonical ROM range 0x08545C94-0x0854610B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08545C94.bin.lz"
+	.incbin "build/graphics/trainer_card/frlg/bg_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00, 0x00, 0xFF, 0x7F, 0xFF, 0x7F, 0x8C, 0x31, 0x5A, 0x67, 0x3C, 0x04, 0xFF, 0x3A, 0x64
 	.byte 0x06, 0xD2, 0x4B, 0x46, 0x65, 0x14, 0x7B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x91, 0x39, 0xFF, 0x7F, 0xFC, 0x6F, 0x94, 0x52, 0xEF, 0x3D, 0x8C, 0x39, 0xE5

@@ -280,6 +280,54 @@
       "width": 32,
       "height": 96,
       "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/trainer_card/front_rom_exact.tilemap.lz": {
+      "key": "08545390",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/front.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/trainer_card/frlg/front_rom_exact.tilemap.lz": {
+      "key": "08545530",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/frlg/front.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/trainer_card/back_rom_exact.tilemap.lz": {
+      "key": "085456E8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/back.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/trainer_card/frlg/back_rom_exact.tilemap.lz": {
+      "key": "085457C4",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/frlg/back.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/trainer_card/front_link_rom_exact.tilemap.lz": {
+      "key": "085458F0",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/front_link.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/trainer_card/frlg/front_link_rom_exact.tilemap.lz": {
+      "key": "08545A70",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/frlg/front_link.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/trainer_card/bg_rom_exact.tilemap.lz": {
+      "key": "08545BFC",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/bg.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/trainer_card/frlg/bg_rom_exact.tilemap.lz": {
+      "key": "08545C94",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/frlg/bg.tilemap.u16",
+      "semantic_role": "tilemap"
     }
   }
 }

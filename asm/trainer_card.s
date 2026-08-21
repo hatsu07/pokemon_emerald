@@ -556,14 +556,14 @@ _080C213C:
 	.align 2, 0
 _080C2150: .4byte 0x02039988
 _080C2154: .4byte 0x00000516
-_080C2158: .4byte gTrainerCardData_08545BFC
+_080C2158: .4byte gHoennTrainerCardBg_Tilemap
 _080C215C: .4byte 0x00000EE4
 _080C2160:
 	ldr r0, _080C2168
 	ldr r2, _080C216C
 	b _080C227E
 	.align 2, 0
-_080C2168: .4byte gTrainerCardData_08545C94
+_080C2168: .4byte gKantoTrainerCardBg_Tilemap
 _080C216C: .4byte 0x00000EE4
 _080C2170:
 	ldr r0, _080C2184
@@ -579,14 +579,14 @@ _080C2170:
 	.align 2, 0
 _080C2184: .4byte 0x02039988
 _080C2188: .4byte 0x00000516
-_080C218C: .4byte gTrainerCardData_085456E8
+_080C218C: .4byte gHoennTrainerCardBack_Tilemap
 _080C2190: .4byte 0x00000A34
 _080C2194:
 	ldr r0, _080C219C
 	ldr r2, _080C21A0
 	b _080C227E
 	.align 2, 0
-_080C219C: .4byte gTrainerCardData_085457C4
+_080C219C: .4byte gKantoTrainerCardBack_Tilemap
 _080C21A0: .4byte 0x00000A34
 _080C21A4:
 	ldr r0, _080C21C0
@@ -605,13 +605,13 @@ _080C21A4:
 	.align 2, 0
 _080C21C0: .4byte 0x02039988
 _080C21C4: .4byte 0x00000516
-_080C21C8: .4byte gTrainerCardData_08545390
+_080C21C8: .4byte gHoennTrainerCardFront_Tilemap
 _080C21CC:
 	ldr r0, _080C21D4
 	ldr r2, _080C21D8
 	b _080C227E
 	.align 2, 0
-_080C21D4: .4byte gTrainerCardData_08545530
+_080C21D4: .4byte gKantoTrainerCardFront_Tilemap
 _080C21D8: .4byte 0x00000584
 _080C21DC:
 	ldr r2, _080C21EC
@@ -624,13 +624,13 @@ _080C21DC:
 	b _080C227E
 	.align 2, 0
 _080C21EC: .4byte 0x00000516
-_080C21F0: .4byte gTrainerCardData_085458F0
+_080C21F0: .4byte gHoennTrainerCardFrontLink_Tilemap
 _080C21F4:
 	ldr r0, _080C21FC
 	ldr r2, _080C2200
 	b _080C227E
 	.align 2, 0
-_080C21FC: .4byte gTrainerCardData_08545A70
+_080C21FC: .4byte gKantoTrainerCardFrontLink_Tilemap
 _080C2200: .4byte 0x00000584
 _080C2204:
 	ldr r0, _080C2218
