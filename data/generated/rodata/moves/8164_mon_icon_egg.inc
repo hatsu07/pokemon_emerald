@@ -14,16 +14,16 @@ gBattleAnimSpriteGfx_MetalSoundWaves: @ 0x08D8DAC4
 gBattleAnimSpritePal_MetalSoundWaves: @ 0x08D8DC80
 	.incbin "build/graphics/battle_anims/sprites/metal_sound_waves_palette_rom_exact.gbapal.lz"
 	.byte 0x00, 0x00
-	.globl gLz77Asset_08D8DC98
-gLz77Asset_08D8DC98: @ 0x08D8DC98
-	.incbin "build/assets/lz77_raw/08D8DC98.bin.lz"
+	.globl gBattleAnimBgImage_Ice
+gBattleAnimBgImage_Ice: @ 0x08D8DC98
+	.incbin "build/graphics/battle_anims/backgrounds/ice/tiles_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00
-	.globl gLz77Asset_08D8E608
-gLz77Asset_08D8E608: @ 0x08D8E608
-	.incbin "build/assets/lz77_raw/08D8E608.bin.lz"
-	.globl gLz77Asset_08D8E62C
-gLz77Asset_08D8E62C: @ 0x08D8E62C
-	.incbin "build/assets/lz77_raw/08D8E62C.bin.lz"
+	.globl gBattleAnimBgPalette_Ice
+gBattleAnimBgPalette_Ice: @ 0x08D8E608
+	.incbin "build/graphics/battle_anims/backgrounds/ice/palette_rom_exact.gbapal.lz"
+	.globl gBattleAnimBgTilemap_Ice
+gBattleAnimBgTilemap_Ice: @ 0x08D8E62C
+	.incbin "build/graphics/battle_anims/backgrounds/ice/tilemap_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00
 	.globl gBattleAnimSpriteGfx_IcicleSpear
 gBattleAnimSpriteGfx_IcicleSpear: @ 0x08D8E824
@@ -133,17 +133,17 @@ gBattleAnimSpriteGfx_Gem3: @ 0x08D8F238
 gBattleAnimSpritePal_Gem1: @ 0x08D8F3A0
 	.incbin "build/graphics/battle_anims/sprites/gem_1_palette_rom_exact.gbapal.lz"
 	.byte 0x00, 0x00
-	.globl gLz77Asset_08D8F3C8
-gLz77Asset_08D8F3C8: @ 0x08D8F3C8
-	.incbin "build/assets/lz77_raw/08D8F3C8.bin.lz"
+	.globl gBattleAnimBgImage_InAir
+gBattleAnimBgImage_InAir: @ 0x08D8F3C8
+	.incbin "build/graphics/battle_anims/backgrounds/in_air/tiles_rom_exact.4bpp.lz"
 	.byte 0x00
-	.globl gLz77Asset_08D8F524
-gLz77Asset_08D8F524: @ 0x08D8F524
-	.incbin "build/assets/lz77_raw/08D8F524.bin.lz"
+	.globl gBattleAnimBgPalette_InAir
+gBattleAnimBgPalette_InAir: @ 0x08D8F524
+	.incbin "build/graphics/battle_anims/backgrounds/in_air/palette_rom_exact.gbapal.lz"
 	.byte 0x00
-	.globl gLz77Asset_08D8F54C
-gLz77Asset_08D8F54C: @ 0x08D8F54C
-	.incbin "build/assets/lz77_raw/08D8F54C.bin.lz"
+	.globl gBattleAnimBgTilemap_InAir
+gBattleAnimBgTilemap_InAir: @ 0x08D8F54C
+	.incbin "build/graphics/battle_anims/backgrounds/in_air/tilemap_rom_exact.tilemap.lz"
 	.globl gBattleAnimSpriteGfx_Protect
 gBattleAnimSpriteGfx_Protect: @ 0x08D8F734
 	.incbin "build/graphics/battle_anims/sprites/protect_rom_exact.4bpp.lz"

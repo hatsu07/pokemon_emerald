@@ -898,6 +898,46 @@
       "source_kind": "u16_le_text",
       "source": "graphics/battle_anims/sprites/protect.gbapal.u16",
       "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/backgrounds/ice/tiles_rom_exact.4bpp.lz": {
+      "key": "08D8DC98",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/backgrounds/ice/tiles.png",
+      "width": 128,
+      "height": 64,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_anims/backgrounds/ice/palette_rom_exact.gbapal.lz": {
+      "key": "08D8E608",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/ice/palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/backgrounds/ice/tilemap_rom_exact.tilemap.lz": {
+      "key": "08D8E62C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/ice/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/backgrounds/in_air/tiles_rom_exact.4bpp.lz": {
+      "key": "08D8F3C8",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/backgrounds/in_air/tiles.png",
+      "width": 64,
+      "height": 32,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_anims/backgrounds/in_air/palette_rom_exact.gbapal.lz": {
+      "key": "08D8F524",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/in_air/palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/backgrounds/in_air/tilemap_rom_exact.tilemap.lz": {
+      "key": "08D8F54C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/in_air/tilemap.u16",
+      "semantic_role": "tilemap"
     }
   }
 }

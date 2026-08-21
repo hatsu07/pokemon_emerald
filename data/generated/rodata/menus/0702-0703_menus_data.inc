@@ -1095,17 +1095,11 @@ gBattleAnimPaletteTable: @ 0x084FDB58
 
 	@ Battle animation background assets (semantic absolute aliases).
 	.globl gBattleAnimBgImage_Ice
-	.set gBattleAnimBgImage_Ice, 0x08D8DC98
 	.globl gBattleAnimBgPalette_Ice
-	.set gBattleAnimBgPalette_Ice, 0x08D8E608
 	.globl gBattleAnimBgTilemap_Ice
-	.set gBattleAnimBgTilemap_Ice, 0x08D8E62C
 	.globl gBattleAnimBgImage_InAir
-	.set gBattleAnimBgImage_InAir, 0x08D8F3C8
 	.globl gBattleAnimBgPalette_InAir
-	.set gBattleAnimBgPalette_InAir, 0x08D8F524
 	.globl gBattleAnimBgTilemap_InAir
-	.set gBattleAnimBgTilemap_InAir, 0x08D8F54C
 	.globl gBattleAnimBgImage_Ghost
 	.set gBattleAnimBgImage_Ghost, 0x08D90028
 	.globl gBattleAnimBgPalette_Ghost
