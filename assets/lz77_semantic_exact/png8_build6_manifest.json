@@ -258,6 +258,28 @@
       "source_kind": "u16_le_text",
       "source": "graphics/pokenav/match_call/ui.tilemap.u16",
       "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_crush/text_windows_rom_exact.tilemap.lz": {
+      "key": "082C79C4",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_crush/text_windows.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/dodrio_berry_picking/berries_rom_exact.4bpp.lz": {
+      "key": "082CB73C",
+      "source_kind": "png",
+      "source": "graphics/dodrio_berry_picking/berries.png",
+      "width": 16,
+      "height": 144,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/pokedex/area_unknown_rom_exact.4bpp.lz": {
+      "key": "08593ABC",
+      "source_kind": "png",
+      "source": "graphics/pokedex/area_unknown.png",
+      "width": 32,
+      "height": 96,
+      "semantic_role": "sprite_gfx"
     }
   }
 }

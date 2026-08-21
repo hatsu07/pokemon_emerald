@@ -193,14 +193,13 @@ sBg_Tilemap:
 	.error "sBg_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x082C79C4: berry_crush.s: sub_08022434
-	.globl gBerryCrushData_082C79C4
-gBerryCrushData_082C79C4: @ 0x082C79C4
+.globl gBerryCrush_TextWindows_Tilemap
+gBerryCrush_TextWindows_Tilemap: @ 0x082C79C4
 	@ confirmed GBA LZ77 stream: compressed=0x42, decompressed=0xC8
-sLz77Block_082C79C4:
 	@ analyzed canonical ROM range 0x082C79C4-0x082C7A07
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/082C79C4.bin.lz"
+	.incbin "build/graphics/berry_crush/text_windows_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x082C7A08: berry_crush.s: sub_080222E8
 	.globl sBerryCrushPlayerIdToPosId

@@ -8556,7 +8556,7 @@ _08028796:
 	bx r0
 	.align 2, 0
 _080287AC: .4byte sDodrioBerryPickingBerriesSpritePalette
-_080287B0: .4byte gDodrioBerryPickingData_082CB73C
+_080287B0: .4byte sBerries_Gfx
 	thumb_func_end sub_08028760
 
 	thumb_func_start sub_080287B4

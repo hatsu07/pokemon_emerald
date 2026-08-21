@@ -3369,7 +3369,7 @@ sub_08022434: @ 0x08022434
 	bl LZ77UnCompWram
 	b _0802247E
 	.align 2, 0
-_08022448: .4byte gBerryCrushData_082C79C4
+_08022448: .4byte gBerryCrush_TextWindows_Tilemap
 _0802244C: .4byte 0x0201C000
 _08022450:
 	lsls r1, r5, #2
