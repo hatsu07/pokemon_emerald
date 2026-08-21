@@ -413,7 +413,6 @@ sFanfares: @ 0x084FCFC8
 	.globl gBattleAnimSpriteGfx_Protect
 	.globl gBattleAnimSpritePal_Protect
 	.globl gBattleAnimSpritePal_WhipHit
-	.set gBattleAnimSpritePal_WhipHit, 0x08D91000
 	.globl gBattleAnimSpritePal_SlamHit2
 	.set gBattleAnimSpritePal_SlamHit2, 0x08D92E78
 	.globl gBattleAnimSpriteGfx_SlamHit2
@@ -1101,13 +1100,9 @@ gBattleAnimPaletteTable: @ 0x084FDB58
 	.globl gBattleAnimBgPalette_InAir
 	.globl gBattleAnimBgTilemap_InAir
 	.globl gBattleAnimBgImage_Ghost
-	.set gBattleAnimBgImage_Ghost, 0x08D90028
 	.globl gBattleAnimBgPalette_Ghost
-	.set gBattleAnimBgPalette_Ghost, 0x08D90CF0
 	.globl gBattleAnimBgTilemap_Ghost
-	.set gBattleAnimBgTilemap_Ghost, 0x08D90D0C
 	.globl gBattleAnimBgPalette_SolarBeam
-	.set gBattleAnimBgPalette_SolarBeam, 0x08D91028
 	.globl gBattleAnimBgPalette_Cosmic
 	.set gBattleAnimBgPalette_Cosmic, 0x08D92AB4
 	.globl gBattleAnimBgImage_Cosmic

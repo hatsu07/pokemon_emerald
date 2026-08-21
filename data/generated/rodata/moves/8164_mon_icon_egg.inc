@@ -174,25 +174,26 @@ gMonIcon_Egg: @ 0x08D8FC28 [412]
 	.incbin "build/graphics/pokemon/egg/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D90028-0x08D9154B
 	@ confirmed GBA LZ77 stream: compressed=0xCC6, decompressed=0x2000
-sLz77Block_08D90028:
-	@ structured u8 payload; no safe higher-level semantic type was provable
+	.globl gBattleAnimBgImage_Ghost
+gBattleAnimBgImage_Ghost: @ 0x08D90028
+	@ structured 4bpp background tiles
 	@ ANALYSIS: 6 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D90028.bin.lz"
+	.incbin "build/graphics/battle_anims/backgrounds/ghost/tiles_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00
-	.globl gLz77Asset_08D90CF0
-gLz77Asset_08D90CF0: @ 0x08D90CF0
-	.incbin "build/assets/lz77_raw/08D90CF0.bin.lz"
+	.globl gBattleAnimBgPalette_Ghost
+gBattleAnimBgPalette_Ghost: @ 0x08D90CF0
+	.incbin "build/graphics/battle_anims/backgrounds/ghost/palette_rom_exact.gbapal.lz"
 	.byte 0x00
-	.globl gLz77Asset_08D90D0C
-gLz77Asset_08D90D0C: @ 0x08D90D0C
-	.incbin "build/assets/lz77_raw/08D90D0C.bin.lz"
+	.globl gBattleAnimBgTilemap_Ghost
+gBattleAnimBgTilemap_Ghost: @ 0x08D90D0C
+	.incbin "build/graphics/battle_anims/backgrounds/ghost/tilemap_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00, 0x00
-	.globl gLz77Asset_08D91000
-gLz77Asset_08D91000: @ 0x08D91000
-	.incbin "build/assets/lz77_raw/08D91000.bin.lz"
-	.globl gLz77Asset_08D91028
-gLz77Asset_08D91028: @ 0x08D91028
-	.incbin "build/assets/lz77_raw/08D91028.bin.lz"
+	.globl gBattleAnimSpritePal_WhipHit
+gBattleAnimSpritePal_WhipHit: @ 0x08D91000
+	.incbin "build/graphics/battle_anims/sprites/whip_hit_palette_rom_exact.gbapal.lz"
+	.globl gBattleAnimBgPalette_SolarBeam
+gBattleAnimBgPalette_SolarBeam: @ 0x08D91028
+	.incbin "build/graphics/battle_anims/backgrounds/solar_beam/palette_rom_exact.gbapal.lz"
 	.globl gLz77Asset_08D91050
 gLz77Asset_08D91050: @ 0x08D91050
 	.incbin "build/graphics/battle_anims/backgrounds/exact_lz/impact_opponent_rom_exact.tilemap.lz"

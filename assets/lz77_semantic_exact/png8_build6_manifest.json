@@ -938,6 +938,38 @@
       "source_kind": "u16_le_text",
       "source": "graphics/battle_anims/backgrounds/in_air/tilemap.u16",
       "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/backgrounds/ghost/tiles_rom_exact.4bpp.lz": {
+      "key": "08D90028",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/backgrounds/ghost/tiles.png",
+      "width": 128,
+      "height": 128,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_anims/backgrounds/ghost/palette_rom_exact.gbapal.lz": {
+      "key": "08D90CF0",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/ghost/palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/backgrounds/ghost/tilemap_rom_exact.tilemap.lz": {
+      "key": "08D90D0C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/ghost/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/sprites/whip_hit_palette_rom_exact.gbapal.lz": {
+      "key": "08D91000",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/whip_hit.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/backgrounds/solar_beam/palette_rom_exact.gbapal.lz": {
+      "key": "08D91028",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/solar_beam/palette.gbapal.u16",
+      "semantic_role": "palette"
     }
   }
 }
