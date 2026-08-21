@@ -119,8 +119,8 @@
     },
     "build/graphics/battle_anims/backgrounds/exact_lz/impact_opponent_rom_exact.tilemap.lz": {
       "key": "08D91050",
-      "source_kind": "build_lz",
-      "source": "build/graphics/battle_anims/backgrounds/exact_lz/impact_opponent.tilemap.lz"
+      "source_kind": "build_raw",
+      "source": "graphics/battle_anims/backgrounds/impact_opponent.tilemap.u16"
     },
     "build/graphics/battle_environment/underwater/palette_rom_exact.gbapal.lz": {
       "key": "08D79EB4",

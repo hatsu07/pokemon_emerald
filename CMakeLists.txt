@@ -458,6 +458,7 @@ set(LZ77_SEMANTIC_PNG_SOURCES
     "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/rayquaza_clouds.tilemap.u16"
     "${CMAKE_SOURCE_DIR}/graphics/trade/wireless_signal.tilemap.u16"
     "${CMAKE_SOURCE_DIR}/graphics/berry_blender/outer.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/impact_opponent.tilemap.u16"
     "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/fog.tilemap.u16"
     "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/scary_face_contest.tilemap.u16"
     "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/surf_contest.tilemap.u16"
@@ -518,9 +519,6 @@ set(LZ77_SEMANTIC_BUILD_INPUTS
     "build/graphics/pokeblock/use_screen/condition.4bpp.lz"
     "build/graphics/pokemon/none/back.4bpp.lz"
 )
-set(LZ77_SEMANTIC_EXTERNAL_BUILD_INPUTS
-    "build/graphics/battle_anims/backgrounds/exact_lz/impact_opponent.tilemap.lz"
-)
 set(LZ77_SEMANTIC_BUILD_INPUTS_ABS
     "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/bg.4bpp.lz"
     "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/tree_border.4bpp.lz"
@@ -534,7 +532,6 @@ set(LZ77_SEMANTIC_BUILD_INPUTS_ABS
     "${CMAKE_SOURCE_DIR}/build/graphics/battle_interface/level_up_banner.4bpp.lz"
     "${CMAKE_SOURCE_DIR}/build/graphics/pokeblock/use_screen/condition.4bpp.lz"
     "${CMAKE_SOURCE_DIR}/build/graphics/pokemon/none/back.4bpp.lz"
-    "${CMAKE_SOURCE_DIR}/build/graphics/battle_anims/backgrounds/exact_lz/impact_opponent.tilemap.lz"
 )
 list(APPEND GRAPHICS_RELATIVE_OUTPUTS
     ${LZ77_SEMANTIC_EXACT_OUTPUTS}
