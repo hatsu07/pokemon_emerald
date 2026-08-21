@@ -70,7 +70,7 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte 0x085A96DE @ +0x20
 	.4byte gText_Rom_5A96FC @ +0x24
 	@ ANALYSIS: POINTER_TABLE entries=8 size=0x20
-	.4byte 0x085AAD14
+	.4byte gText_Rom_5AACDC + 0x38
 	.4byte 0x085A9723
 	.4byte 0x085A9737
 	.4byte gText_Rom_5AA883 + 0x41
@@ -353,7 +353,7 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5AACBE @ +0x42C
 	.4byte gText_Rom_5AACCE @ +0x430
 	.4byte gText_Rom_5AACDC @ +0x434
-	.4byte 0x085AACE9 @ +0x438
+	.4byte gText_Rom_5AACDC + 0xD @ +0x438
 	.4byte gText_Rom_5AAD38 @ +0x43C
 	.4byte gText_Rom_5AAD47 @ +0x440
 	.4byte gText_Rom_5AAD5A @ +0x444

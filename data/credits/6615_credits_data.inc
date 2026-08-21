@@ -548,13 +548,13 @@ gBattleFactoryScreenData_085DBB38: @ 0x085DBB38
 	@ analyzed canonical ROM range 0x085DBB38-0x085DBB5F
 	@ pointer/nullable table
 	@ ANALYSIS: U32_TABLE size=0x28 entries=10
-	.4byte 0x085D9EB8 @ +0x0
+	.4byte gBattleFactoryScreenData_085D9C38 + 0x280 @ +0x0
 	.4byte 0x00650080 @ +0x4
-	.4byte 0x085D9F38 @ +0x8
+	.4byte gBattleFactoryScreenData_085D9C38 + 0x300 @ +0x8
 	.4byte 0x00660100 @ +0xC
-	.4byte 0x085DA038 @ +0x10
+	.4byte gBattleFactoryScreenData_085D9C38 + 0x400 @ +0x10
 	.4byte 0x00670100 @ +0x14
-	.4byte 0x085DA538 @ +0x18
+	.4byte gBattleFactoryScreenData_085D9C38 + 0x900 @ +0x18
 	.4byte 0x006D0800 @ +0x1C
 	.4byte 0 @ +0x20
 	.4byte 0 @ +0x24
@@ -573,9 +573,9 @@ gBattleFactoryScreenData_085DBB70: @ 0x085DBB70
 	.4byte gBattleFactoryScreenData_085D9C38 @ +0x0
 	@ ANALYSIS: U32_TABLE size=0x14 entries=5
 	.4byte 0x00000064 @ +0x4
-	.4byte 0x085D9C58 @ +0x8
+	.4byte gBattleFactoryScreenData_085D9C38 + 0x20 @ +0x8
 	.4byte 0x00000065 @ +0xC
-	.4byte 0x085D9C78 @ +0x10
+	.4byte gBattleFactoryScreenData_085D9C38 + 0x40 @ +0x10
 	.4byte 0x00000066 @ +0x14
 	.4byte gBattleFactoryScreenData_085DBB18 @ +0x18
 	@ ANALYSIS: U32_TABLE size=0xC entries=3
