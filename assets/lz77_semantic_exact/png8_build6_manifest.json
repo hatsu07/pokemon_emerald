@@ -328,6 +328,40 @@
       "source_kind": "u16_le_text",
       "source": "graphics/trainer_card/frlg/bg.tilemap.u16",
       "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_environment/water/tiles_rom_exact.4bpp.lz": {
+      "key": "08D7A1AC",
+      "source_kind": "png",
+      "source": "graphics/battle_environment/water/tiles.png",
+      "width": 128,
+      "height": 128,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_environment/water/map_rom_exact.tilemap.lz": {
+      "key": "08D7A7C4",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_environment/water/map.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_environment/cave/tiles_rom_exact.4bpp.lz": {
+      "key": "08D7BBB8",
+      "source_kind": "png",
+      "source": "graphics/battle_environment/cave/tiles.png",
+      "width": 128,
+      "height": 128,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_environment/cave/map_rom_exact.tilemap.lz": {
+      "key": "08D7C1F8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_environment/cave/map.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_environment/underwater/anim_map_rom_exact.tilemap.lz": {
+      "key": "08D7FF68",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_environment/underwater/anim_map.tilemap.u16",
+      "semantic_role": "tilemap"
     }
   }
 }

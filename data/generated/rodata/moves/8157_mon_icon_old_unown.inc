@@ -186,15 +186,13 @@ gLz77Asset_08D79EFC: @ 0x08D79EFC
 	.incbin "build/assets/lz77_raw/08D79EFC.bin.lz"
 	.byte 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08D7A1AC: battle_bg.s: DrawMainBattleBackground
-	.globl gBattleBgData_08D7A1AC
-gBattleBgData_08D7A1AC:
-	.globl sLz77Block_08D7A1AC
+.globl gBattleEnvironmentTiles_Water
+gBattleEnvironmentTiles_Water:
 	@ confirmed GBA LZ77 stream: compressed=0x5D2, decompressed=0x2000
-sLz77Block_08D7A1AC:
 	@ analyzed canonical ROM range 0x08D7A1AC-0x08D7A7C3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 2 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D7A1AC.bin.lz"
+	.incbin "build/graphics/battle_environment/water/tiles_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00
 	.globl gLz77Asset_08D7A780
 gLz77Asset_08D7A780: @ 0x08D7A780

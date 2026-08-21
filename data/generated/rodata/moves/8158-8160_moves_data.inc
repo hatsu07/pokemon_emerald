@@ -1,13 +1,11 @@
 	@ pret/pokeemerald-jp direct xref for 0x08D7A7C4: battle_bg.s: DrawMainBattleBackground, LoadChosenBattleElement
-	.globl gBattleBgData_08D7A7C4
-gBattleBgData_08D7A7C4:
-	.globl sLz77Block_08D7A7C4
+.globl gBattleEnvironmentTilemap_Water
+gBattleEnvironmentTilemap_Water:
 	@ confirmed GBA LZ77 stream: compressed=0x2AF, decompressed=0x1000
-sLz77Block_08D7A7C4:
 	@ analyzed canonical ROM range 0x08D7A7C4-0x08D7BBB7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 7 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D7A7C4.bin.lz"
+	.incbin "build/graphics/battle_environment/water/map_rom_exact.tilemap.lz"
 	.byte 0x00
 	.globl gLz77Asset_08D7AA74
 gLz77Asset_08D7AA74: @ 0x08D7AA74
@@ -32,30 +30,26 @@ gLz77Asset_08D7B908: @ 0x08D7B908
 	.incbin "build/assets/lz77_raw/08D7B908.bin.lz"
 	.byte 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08D7BBB8: battle_bg.s: DrawMainBattleBackground, LoadChosenBattleElement
-	.globl gBattleBgData_08D7BBB8
-gBattleBgData_08D7BBB8:
-	.globl sLz77Block_08D7BBB8
+.globl gBattleEnvironmentTiles_Cave
+gBattleEnvironmentTiles_Cave:
 	@ confirmed GBA LZ77 stream: compressed=0x5F7, decompressed=0x2000
-sLz77Block_08D7BBB8:
 	@ analyzed canonical ROM range 0x08D7BBB8-0x08D7C1F7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 2 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D7BBB8.bin.lz"
+	.incbin "build/graphics/battle_environment/cave/tiles_rom_exact.4bpp.lz"
 	.byte 0x00
 	.globl gBattleEnvironmentPalette_Cave
 gBattleEnvironmentPalette_Cave: @ 0x08D7C1B0
 	.incbin "build/graphics/battle_environment/cave/palette_rom_exact.gbapal.lz"
 	.byte 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08D7C1F8: battle_bg.s: DrawMainBattleBackground, LoadChosenBattleElement
-	.globl gBattleBgData_08D7C1F8
-gBattleBgData_08D7C1F8:
-	.globl sLz77Block_08D7C1F8
+.globl gBattleEnvironmentTilemap_Cave
+gBattleEnvironmentTilemap_Cave:
 	@ confirmed GBA LZ77 stream: compressed=0x2AF, decompressed=0x1000
-sLz77Block_08D7C1F8:
 	@ analyzed canonical ROM range 0x08D7C1F8-0x08D7C4E3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 2 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D7C1F8.bin.lz"
+	.incbin "build/graphics/battle_environment/cave/map_rom_exact.tilemap.lz"
 	.byte 0x00
 	.globl gLz77Asset_08D7C4A8
 gLz77Asset_08D7C4A8: @ 0x08D7C4A8
@@ -269,15 +263,13 @@ gBattleEnvironmentAnimTiles_Underwater: @ 0x08D7FA9C
 	.error "gBattleEnvironmentAnimTiles_Underwater compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D7FF68: battle_bg.s: DrawBattleEntryBackground
-	.globl gBattleBgData_08D7FF68
-gBattleBgData_08D7FF68:
-	.globl sLz77Block_08D7FF68
+.globl gBattleEnvironmentAnimTilemap_Underwater
+gBattleEnvironmentAnimTilemap_Underwater:
 	@ confirmed GBA LZ77 stream: compressed=0x18D, decompressed=0x800
-sLz77Block_08D7FF68:
 	@ analyzed canonical ROM range 0x08D7FF68-0x08D816B3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 7 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D7FF68.bin.lz"
+	.incbin "build/graphics/battle_environment/underwater/anim_map_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00, 0x00
 	.globl gLz77Asset_08D800F8
 gLz77Asset_08D800F8: @ 0x08D800F8

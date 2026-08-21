@@ -169,9 +169,9 @@ _08035608:
 	ldr r0, _08035638
 	b _080358A6
 	.align 2, 0
-_08035628: .4byte gBattleBgData_08D7BBB8
+_08035628: .4byte gBattleEnvironmentTiles_Cave
 _0803562C: .4byte 0x06008000
-_08035630: .4byte gBattleBgData_08D7C1F8
+_08035630: .4byte gBattleEnvironmentTilemap_Cave
 _08035634: .4byte 0x0600D000
 _08035638: .4byte gBattleEnvironmentPalette_Groudon
 _0803563C:
@@ -189,9 +189,9 @@ _0803563C:
 	ldr r0, _0803566C
 	b _080358A6
 	.align 2, 0
-_0803565C: .4byte gBattleBgData_08D7A1AC
+_0803565C: .4byte gBattleEnvironmentTiles_Water
 _08035660: .4byte 0x06008000
-_08035664: .4byte gBattleBgData_08D7A7C4
+_08035664: .4byte gBattleEnvironmentTilemap_Water
 _08035668: .4byte 0x0600D000
 _0803566C: .4byte gBattleEnvironmentPalette_Kyogre
 _08035670:
@@ -1451,7 +1451,7 @@ _08036114:
 	.align 2, 0
 _0803612C: .4byte gBattleEnvironmentAnimTiles_Underwater
 _08036130: .4byte 0x06004000
-_08036134: .4byte gBattleBgData_08D7FF68
+_08036134: .4byte gBattleEnvironmentAnimTilemap_Underwater
 _08036138:
 	movs r0, #0x80
 	lsls r0, r0, #0x17
@@ -1622,7 +1622,7 @@ _08036294:
 	.align 2, 0
 _080362B0: .4byte 0x02022C90
 _080362B4: .4byte 0x023F0902
-_080362B8: .4byte gBattleBgData_08D7BBB8
+_080362B8: .4byte gBattleEnvironmentTiles_Cave
 _080362BC:
 	movs r0, #8
 	ands r1, r0
@@ -1743,12 +1743,12 @@ _08036396:
 _080363AC: .4byte 0x02022C90
 _080363B0: .4byte 0x023F0902
 _080363B4: .4byte gGameVersion
-_080363B8: .4byte gBattleBgData_08D7C1F8
+_080363B8: .4byte gBattleEnvironmentTilemap_Cave
 _080363BC:
 	ldr r0, _080363C0
 	b _0803647E
 	.align 2, 0
-_080363C0: .4byte gBattleBgData_08D7A7C4
+_080363C0: .4byte gBattleEnvironmentTilemap_Water
 _080363C4:
 	movs r0, #8
 	ands r1, r0

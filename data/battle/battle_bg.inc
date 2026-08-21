@@ -139,11 +139,11 @@ sBattleEnvironmentTable:
 	.4byte 0x08D798FC @ gBattleEnvironmentTiles_Underwater
 	.4byte 0x08D79EFC @ gBattleEnvironmentTilemap_Underwater
 	.4byte gBattleEnvironmentAnimTiles_Underwater @ gBattleEnvironmentAnimTiles_Underwater
-	.4byte sLz77Block_08D7FF68 @ gBattleEnvironmentAnimTilemap_Underwater
+	.4byte gBattleEnvironmentAnimTilemap_Underwater @ gBattleEnvironmentAnimTilemap_Underwater
 	.4byte gBattleEnvironmentPalette_Underwater
 	@ BATTLE_ENVIRONMENT_WATER
-	.4byte sLz77Block_08D7A1AC @ gBattleEnvironmentTiles_Water
-	.4byte sLz77Block_08D7A7C4 @ gBattleEnvironmentTilemap_Water
+	.4byte gBattleEnvironmentTiles_Water @ gBattleEnvironmentTiles_Water
+	.4byte gBattleEnvironmentTilemap_Water @ gBattleEnvironmentTilemap_Water
 	.4byte 0x08D800F8 @ gBattleEnvironmentAnimTiles_Water
 	.4byte 0x08D80704 @ gBattleEnvironmentAnimTilemap_Water
 	.4byte 0x08D7A780 @ gBattleEnvironmentPalette_Water
@@ -160,8 +160,8 @@ sBattleEnvironmentTable:
 	.4byte 0x08D81520 @ gBattleEnvironmentAnimTilemap_Rock
 	.4byte 0x08D7B8CC @ gBattleEnvironmentPalette_Rock
 	@ BATTLE_ENVIRONMENT_CAVE
-	.4byte sLz77Block_08D7BBB8 @ gBattleEnvironmentTiles_Cave
-	.4byte sLz77Block_08D7C1F8 @ gBattleEnvironmentTilemap_Cave
+	.4byte gBattleEnvironmentTiles_Cave @ gBattleEnvironmentTiles_Cave
+	.4byte gBattleEnvironmentTilemap_Cave @ gBattleEnvironmentTilemap_Cave
 	.4byte gBattleEnvironmentAnimTiles_Cave @ gBattleEnvironmentAnimTiles_Cave
 	.4byte gBattleEnvironmentAnimTilemap_Cave @ gBattleEnvironmentAnimTilemap_Cave
 	.4byte gBattleEnvironmentPalette_Cave
