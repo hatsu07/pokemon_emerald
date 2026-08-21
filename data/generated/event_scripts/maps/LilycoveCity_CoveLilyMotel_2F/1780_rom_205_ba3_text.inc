@@ -25,7 +25,7 @@ EventScript_JP_08205BEC: @ 0x08205BEC
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte 0x08243621 @ PetalburgCity_Ext_FacePlayer
+	.4byte PetalburgCity_Ext_FacePlayer
 	message gText_Rom_205DBB
 	waitmessage
 	multichoice 0x14, 0x08, 0x10, 0x01
@@ -235,7 +235,7 @@ EventScript_JP_08205D55: @ 0x08205D55
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0008
-	.4byte 0x08243625 @ PetalburgCity_Ext_FaceOriginalDirection
+	.4byte PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
