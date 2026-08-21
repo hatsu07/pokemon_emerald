@@ -610,7 +610,7 @@ _08175876:
 	.align 2, 0
 _081758B8: .4byte 0x03002360
 _081758BC: .4byte 0x030030BC
-_081758C0: .4byte 0x0858FC14
+_081758C0: .4byte gBirchBackgroundTiles
 _081758C4: .4byte gBirchGrassTilemap
 _081758C8: .4byte 0x06003800
 _081758CC: .4byte 0x0858F812
@@ -4029,4 +4029,3 @@ _081773CA:
 	bx r0
 	.align 2, 0
 	thumb_func_end sub_08177214
-

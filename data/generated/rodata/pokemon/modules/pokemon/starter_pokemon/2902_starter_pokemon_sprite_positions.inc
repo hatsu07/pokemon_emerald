@@ -212,11 +212,11 @@ gBirchGrassTilemap: @ 0x0858FA1C
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
 	.incbin "build/graphics/starter_choose/birch_grass_rom_exact.tilemap.lz"
 	.byte 0x00
-	.globl sLz77Block_0858FC14
+	.globl gBirchBackgroundTiles
 	@ confirmed GBA LZ77 stream: compressed=0xAA5, decompressed=0x2000
-sLz77Block_0858FC14:
+gBirchBackgroundTiles: @ 0x0858FC14
 	@ ANALYSIS: 3 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/0858FC14.bin.lz"
+	.incbin "build/graphics/starter_choose/birch_background_tiles_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00
 	.globl gLz77Asset_085906BC
 gLz77Asset_085906BC: @ 0x085906BC

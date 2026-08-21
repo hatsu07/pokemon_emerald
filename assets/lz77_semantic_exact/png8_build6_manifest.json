@@ -710,6 +710,14 @@
       "source_kind": "u16_le_text",
       "source": "graphics/battle_interface/textbox_tilemap.u16",
       "semantic_role": "tilemap"
+    },
+    "build/graphics/starter_choose/birch_background_tiles_rom_exact.4bpp.lz": {
+      "key": "0858FC14",
+      "source_kind": "png",
+      "source": "graphics/starter_choose/birch_background_tiles.png",
+      "width": 128,
+      "height": 128,
+      "semantic_role": "bg_gfx"
     }
   }
 }

@@ -308,7 +308,7 @@ _081790B0: .4byte 0x040000D4
 _081790B4: .4byte 0x8100C000
 _081790B8: .4byte 0x85000100
 _081790BC: .4byte 0x81000200
-_081790C0: .4byte 0x0858FC14
+_081790C0: .4byte gBirchBackgroundTiles
 _081790C4: .4byte gBirchBagTilemap
 _081790C8: .4byte 0x06007000
 _081790CC: .4byte gBirchGrassTilemap
@@ -775,4 +775,3 @@ _08179498:
 	bx r1
 	.align 2, 0
 	thumb_func_end WipeSectors
-
