@@ -241,10 +241,10 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22E29F @ ROM pointer 0x0822E29F
 	.4byte gText_Rom_22E270 @ ROM pointer 0x0822E270
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
-	.4byte 0x0822D827
-	.4byte 0x0822D842
-	.4byte 0x0822D85D
-	.4byte 0x0822D878
+	.4byte EventText_JP_0822D827
+	.4byte EventText_JP_0822D842
+	.4byte EventText_JP_0822D85D
+	.4byte EventText_JP_0822D878
 	.4byte gText_Rom_22DCD0 @ ROM pointer 0x0822DCD0
 	.4byte gText_Rom_22DC9E @ ROM pointer 0x0822DC9E
 	.4byte gText_Rom_22DC6C @ ROM pointer 0x0822DC6C
@@ -263,10 +263,10 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22E401 @ ROM pointer 0x0822E401
 	.4byte gText_Rom_22E3D9 @ ROM pointer 0x0822E3D9
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
-	.4byte 0x0822D893
-	.4byte 0x0822D8A7
-	.4byte 0x0822D8BB
-	.4byte 0x0822D8CF
+	.4byte EventText_JP_0822D893
+	.4byte EventText_JP_0822D8A7
+	.4byte EventText_JP_0822D8BB
+	.4byte EventText_JP_0822D8CF
 	.4byte gText_Rom_22DE48 @ ROM pointer 0x0822DE48
 	.4byte gText_Rom_22DE1F @ ROM pointer 0x0822DE1F
 	.4byte gText_Rom_22DDF6 @ ROM pointer 0x0822DDF6
@@ -285,10 +285,10 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22E53B @ ROM pointer 0x0822E53B
 	.4byte gText_Rom_22E511 @ ROM pointer 0x0822E511
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
-	.4byte 0x0822D8E3
-	.4byte 0x0822D903
-	.4byte 0x0822D923
-	.4byte 0x0822D943
+	.4byte EventText_JP_0822D8E3
+	.4byte EventText_JP_0822D903
+	.4byte EventText_JP_0822D923
+	.4byte EventText_JP_0822D943
 	.4byte gText_Rom_22DFBD @ ROM pointer 0x0822DFBD
 	.4byte gText_Rom_22DF94 @ ROM pointer 0x0822DF94
 	.4byte gText_Rom_22DF6B @ ROM pointer 0x0822DF6B
@@ -307,10 +307,10 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22E681 @ ROM pointer 0x0822E681
 	.4byte gText_Rom_22E65A @ ROM pointer 0x0822E65A
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
-	.4byte 0x0822D963
-	.4byte 0x0822D977
-	.4byte 0x0822D98B
-	.4byte 0x0822D99F
+	.4byte EventText_JP_0822D963
+	.4byte EventText_JP_0822D977
+	.4byte EventText_JP_0822D98B
+	.4byte EventText_JP_0822D99F
 	.4byte gText_Rom_22E0E7 @ ROM pointer 0x0822E0E7
 	.4byte gText_Rom_22E0C7 @ ROM pointer 0x0822E0C7
 	.4byte gText_Rom_22E0A7 @ ROM pointer 0x0822E0A7
@@ -329,10 +329,10 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22E7B3 @ ROM pointer 0x0822E7B3
 	.4byte gText_Rom_22E78A @ ROM pointer 0x0822E78A
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
-	.4byte 0x0822D9B3
-	.4byte 0x0822D9C8
-	.4byte 0x0822D9DD
-	.4byte 0x0822D9F2
+	.4byte EventText_JP_0822D9B3
+	.4byte EventText_JP_0822D9C8
+	.4byte EventText_JP_0822D9DD
+	.4byte EventText_JP_0822D9F2
 	.4byte gText_Rom_22E24B @ ROM pointer 0x0822E24B
 	.4byte gText_Rom_22E222 @ ROM pointer 0x0822E222
 	.4byte gText_Rom_22E1F9 @ ROM pointer 0x0822E1F9

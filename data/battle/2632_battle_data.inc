@@ -167,8 +167,8 @@ gMauvilleOldManData_0857AE9C: @ 0x0857AE9C
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00000131 @ +0x0
 	.4byte MauvilleCity_PokemonCenter_1F_Text_RodeCableCarStory + 0x4F @ +0x4
-	.4byte 0x08256224 @ +0x8
-	.4byte 0x0825622F @ +0xC
+	.4byte EventText_JP_08256224 @ +0x8
+	.4byte EventText_JP_0825622F @ +0xC
 	.globl gBattleU32Table_Rom_57AEAC
 gBattleU32Table_Rom_57AEAC: @ 0x0857AEAC
 	@ Resolved pointer table; original ROM range 0x57AEAC..0x57AEB3.

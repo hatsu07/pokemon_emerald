@@ -102,8 +102,10 @@ gText_Rom_25621E: @ 0x0825621E
 	.endif
 	@ analyzed canonical ROM range 0x08256224-0x08256361
 	@ semantic recovery: script_data; byte-verified against linked ROM
+.globl EventText_JP_08256224
 EventText_JP_08256224: @ 0x08256224
 	.string "おんせんに　はいった{EOS}"
+.globl EventText_JP_0825622F
 EventText_JP_0825622F: @ 0x0825622F
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nおんせんに　はいった　らしい!\p{STR_VAR_3}は　きっと\nおはだが　ツルツルの　トレーナー　だろう!{EOS}"
 EventScript_JP_0825627D: @ 0x0825627D

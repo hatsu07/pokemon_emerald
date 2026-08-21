@@ -12,5 +12,6 @@ gText_Rom_24B4CB: @ 0x0824B4CB
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_0824B4DD: @ 0x0824B4DD
 	.string "つぎの　{STR_VAR_1}の　アピールに\nきたいが　たかまった!{EOS}"
+.globl EventText_JP_0824B4F7
 EventText_JP_0824B4F7: @ 0x0824B4F7
 	.string "{EOS}"

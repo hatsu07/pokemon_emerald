@@ -280,30 +280,30 @@ sPointerTable_08560CF4:
 	.4byte gText_Rom_24B4CB @ +0x14
 	.4byte gText_Rom_24B4F8 @ +0x18
 	.4byte gText_Rom_24B512 @ +0x1C
-	.4byte 0x0824B4F7 @ +0x20
-	.4byte 0x0824B529 @ +0x24
-	.4byte 0x0824B53D @ +0x28
-	.4byte 0x0824B555 @ +0x2C
-	.4byte 0x0824B56E @ +0x30
-	.4byte 0x0824B580 @ +0x34
-	.4byte 0x0824B597 @ +0x38
-	.4byte 0x0824B5A8 @ +0x3C
-	.4byte 0x0824B5BA @ +0x40
-	.4byte 0x0824B5D3 @ +0x44
-	.4byte 0x0824B5ED @ +0x48
-	.4byte 0x0824B607 @ +0x4C
-	.4byte 0x0824B625 @ +0x50
-	.4byte 0x0824B641 @ +0x54
-	.4byte 0x0824B65E @ +0x58
-	.4byte 0x0824B674 @ +0x5C
-	.4byte 0x0824B693 @ +0x60
-	.4byte 0x0824B6AF @ +0x64
-	.4byte 0x0824B6C8 @ +0x68
-	.4byte 0x0824B4F7 @ +0x6C
-	.4byte 0x0824B4F7 @ +0x70
-	.4byte 0x0824B4F7 @ +0x74
-	.4byte 0x0824B6D9 @ +0x78
-	.4byte 0x0824B6F3 @ +0x7C
+	.4byte EventText_JP_0824B4F7 @ +0x20
+	.4byte EventText_JP_0824B529 @ +0x24
+	.4byte EventText_JP_0824B53D @ +0x28
+	.4byte EventText_JP_0824B555 @ +0x2C
+	.4byte EventText_JP_0824B56E @ +0x30
+	.4byte EventText_JP_0824B580 @ +0x34
+	.4byte EventText_JP_0824B597 @ +0x38
+	.4byte EventText_JP_0824B5A8 @ +0x3C
+	.4byte EventText_JP_0824B5BA @ +0x40
+	.4byte EventText_JP_0824B5D3 @ +0x44
+	.4byte EventText_JP_0824B5ED @ +0x48
+	.4byte EventText_JP_0824B607 @ +0x4C
+	.4byte EventText_JP_0824B625 @ +0x50
+	.4byte EventText_JP_0824B641 @ +0x54
+	.4byte EventText_JP_0824B65E @ +0x58
+	.4byte EventText_JP_0824B674 @ +0x5C
+	.4byte EventText_JP_0824B693 @ +0x60
+	.4byte EventText_JP_0824B6AF @ +0x64
+	.4byte EventText_JP_0824B6C8 @ +0x68
+	.4byte EventText_JP_0824B4F7 @ +0x6C
+	.4byte EventText_JP_0824B4F7 @ +0x70
+	.4byte EventText_JP_0824B4F7 @ +0x74
+	.4byte EventText_JP_0824B6D9 @ +0x78
+	.4byte EventText_JP_0824B6F3 @ +0x7C
 	.globl gBattlePointerTable_Rom_560D74
 gBattlePointerTable_Rom_560D74: @ 0x08560D74
 	.4byte gText_Rom_24B70C
