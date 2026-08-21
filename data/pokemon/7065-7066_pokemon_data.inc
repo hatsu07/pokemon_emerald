@@ -475,13 +475,13 @@ gPokenavMainMenuData_085F13DC: @ 0x085F13DC
 sPointerTable_085F13DC:
 	@ analyzed canonical ROM range 0x085F13DC-0x085F140B
 	@ pointer/nullable table
-	.4byte 0x085CB703 @ +0x0
-	.4byte 0x085CB714 @ +0x4
+	.4byte gText_Rom_5CB6FB + 0x8 @ +0x0
+	.4byte gText_Rom_5CB6FB + 0x19 @ +0x4
 	.4byte gText_Rom_5CB71D + 0x4 @ +0x8
 	.4byte gText_Rom_5CB72A + 0x4 @ +0xC
 	.4byte gText_Rom_5CB73D + 0x4 @ +0x10
-	.4byte 0x085CB74F @ +0x14
-	.4byte 0x085CB75F @ +0x18
+	.4byte gText_Rom_5CB74B + 0x4 @ +0x14
+	.4byte gText_Rom_5CB759 + 0x6 @ +0x18
 	.4byte gText_Rom_5CB768 + 0x4 @ +0x1C
 	.4byte gText_Rom_5CB775 + 0x4 @ +0x20
 	.4byte gText_Rom_5CB77B + 0x4 @ +0x24

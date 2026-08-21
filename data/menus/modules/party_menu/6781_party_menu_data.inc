@@ -199,9 +199,9 @@ sPointerTable_085E14C0:
 	.4byte CursorCb_Cancel2 @ +0x4C
 	.4byte gText_Rom_5C9AA1 @ +0x50
 	.4byte CursorCb_SendMon @ +0x54
-	.4byte 0x085C9AA7 @ +0x58
+	.4byte gText_Rom_5C9AA1 + 0x6 @ +0x58
 	.4byte CursorCb_SendMon @ +0x5C
-	.4byte 0x085C9AC3 @ +0x60
+	.4byte gText_Rom_5C9AB5 + 0xE @ +0x60
 	.4byte CursorCb_Enter @ +0x64
 	.4byte gText_Rom_5C9AC9 @ +0x68
 	.4byte CursorCb_NoEntry @ +0x6C
@@ -209,9 +209,9 @@ sPointerTable_085E14C0:
 	.4byte CursorCb_Store @ +0x74
 	.4byte gText_Rom_5CA368 @ +0x78
 	.4byte CursorCb_Register @ +0x7C
-	.4byte 0x085C9AE0 @ +0x80
+	.4byte gText_Rom_5C9AD8 + 0x8 @ +0x80
 	.4byte CursorCb_Trade1 @ +0x84
-	.4byte 0x085C9AE0 @ +0x88
+	.4byte gText_Rom_5C9AD8 + 0x8 @ +0x88
 	.4byte CursorCb_Trade2 @ +0x8C
 	.4byte gText_Rom_5C93A7 @ +0x90
 	.4byte CursorCb_Toss @ +0x94

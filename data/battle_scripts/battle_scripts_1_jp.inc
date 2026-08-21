@@ -2598,6 +2598,7 @@ BattleScript_EFFECT_DRAGON_DANCE: @ 0x08288CB9
 	bs_waitmessage 0x0040
 	bs_goto 0x08286FD6
 
+.globl BattleScript_EFFECT_CAMOUFLAGE
 BattleScript_EFFECT_CAMOUFLAGE: @ 0x08288D1D
 	bs_attackcanceler
 	bs_attackstring

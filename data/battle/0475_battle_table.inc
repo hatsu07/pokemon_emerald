@@ -337,45 +337,45 @@ sSoundMovesTable:
 sPointerTable_082ECBA8:
 	@ analyzed canonical ROM range 0x082ECBA8-0x082ECC4B
 	@ pointer/nullable table
-	.4byte 0x082898F2 @ +0x0
-	.4byte 0x082898F2 @ +0x4
-	.4byte 0x0828990E @ +0x8
-	.4byte 0x0828991D @ +0xC
-	.4byte 0x0828992C @ +0x10
-	.4byte 0x0828993B @ +0x14
-	.4byte 0x08289951 @ +0x18
-	.4byte 0x0828996E @ +0x1C
-	.4byte 0x082898F2 @ +0x20
-	.4byte 0x082898F2 @ +0x24
-	.4byte 0x0828994A @ +0x28
-	.4byte 0x0828995E @ +0x2C
-	.4byte 0x082898F2 @ +0x30
-	.4byte 0x08289965 @ +0x34
-	.4byte 0x0828997C @ +0x38
-	.4byte 0x082898F2 @ +0x3C
-	.4byte 0x082898F2 @ +0x40
-	.4byte 0x082898F2 @ +0x44
-	.4byte 0x082898F2 @ +0x48
-	.4byte 0x082898F2 @ +0x4C
-	.4byte 0x082898F2 @ +0x50
-	.4byte 0x082898F2 @ +0x54
-	.4byte 0x082898F2 @ +0x58
-	.4byte 0x082898F2 @ +0x5C
-	.4byte 0x082898F2 @ +0x60
-	.4byte 0x082898F2 @ +0x64
-	.4byte 0x082898F2 @ +0x68
-	.4byte 0x082898F2 @ +0x6C
-	.4byte 0x082898F2 @ +0x70
-	.4byte 0x082898F2 @ +0x74
-	.4byte 0x082898F2 @ +0x78
-	.4byte 0x082898F2 @ +0x7C
-	.4byte 0x082898F2 @ +0x80
-	.4byte 0x082898F2 @ +0x84
-	.4byte 0x082898F2 @ +0x88
-	.4byte 0x082898F2 @ +0x8C
-	.4byte 0x082898F2 @ +0x90
-	.4byte 0x082898F2 @ +0x94
-	.4byte 0x0828997C @ +0x98
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x0
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x4
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBF1 @ +0x8
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC00 @ +0xC
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC0F @ +0x10
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC1E @ +0x14
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC34 @ +0x18
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC51 @ +0x1C
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x20
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x24
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC2D @ +0x28
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC41 @ +0x2C
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x30
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC48 @ +0x34
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC5F @ +0x38
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x3C
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x40
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x44
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x48
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x4C
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x50
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x54
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x58
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x5C
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x60
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x64
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x68
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x6C
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x70
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x74
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x78
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x7C
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x80
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x84
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x88
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x8C
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x90
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ +0x94
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC5F @ +0x98
 	.4byte 0x07030100 @ +0x9C
 	.4byte 0x003F1F0F @ +0xA0
 	@ analyzed canonical ROM range 0x082ECC4C-0x082ECC6B

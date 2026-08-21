@@ -54,17 +54,17 @@ sPointerTable_082C5180:
 	.4byte gText_Rom_5CC522 @ +0x18
 	.4byte gText_Rom_5CC522 + 0x6 @ +0x1C
 	.4byte gText_Rom_5CC52E @ +0x20
-	.4byte 0x085CC534 @ +0x24
-	.4byte 0x085CC53A @ +0x28
-	.4byte 0x085CC540 @ +0x2C
-	.4byte 0x085CC546 @ +0x30
-	.4byte 0x085CC54C @ +0x34
-	.4byte 0x085CC552 @ +0x38
-	.4byte 0x085CC558 @ +0x3C
-	.4byte 0x085CC55E @ +0x40
-	.4byte 0x085CC564 @ +0x44
-	.4byte 0x085CC56A @ +0x48
-	.4byte 0x085CC570 @ +0x4C
+	.4byte gText_Rom_5CC52E + 0x6 @ +0x24
+	.4byte gText_Rom_5CC52E + 0xC @ +0x28
+	.4byte gText_Rom_5CC52E + 0x12 @ +0x2C
+	.4byte gText_Rom_5CC52E + 0x18 @ +0x30
+	.4byte gText_Rom_5CC52E + 0x1E @ +0x34
+	.4byte gText_Rom_5CC52E + 0x24 @ +0x38
+	.4byte gText_Rom_5CC52E + 0x2A @ +0x3C
+	.4byte gText_Rom_5CC52E + 0x30 @ +0x40
+	.4byte gText_Rom_5CC52E + 0x36 @ +0x44
+	.4byte gText_Rom_5CC52E + 0x3C @ +0x48
+	.4byte gText_Rom_5CC52E + 0x42 @ +0x4C
 	.4byte gText_Rom_5CC576 @ +0x50
 	.4byte gText_Rom_5CC57C @ +0x54
 	.4byte gText_Rom_5CC582 @ +0x58
@@ -84,7 +84,7 @@ sPointerTable_082C5180:
 	.4byte gText_Rom_5CC5E6 @ +0x90
 	.4byte gText_Rom_5CC5F1 @ +0x94
 	.4byte gText_Rom_5CC5FC @ +0x98
-	.4byte 0x085CC607 @ +0x9C
+	.4byte gText_Rom_5CC5FC + 0xB @ +0x9C
 	@ pret/pokeemerald-jp direct xref for 0x082C5220: union_room_chat.s: sub_080202D0
 	.globl gUnionRoomChatData_082C5220
 gUnionRoomChatData_082C5220: @ 0x082C5220

@@ -9,10 +9,10 @@ gEasyChatGroups: @ 0x08578D14
 	.4byte sEasyChatJapaneseWordIdTable
 	.2byte 202, 202 @ numWords, numEnabledWords
 	@ EC_GROUP_TRAINER: wordData=gEasyChatGroup_Trainer (NUMERIC_POINTER_PRESERVED)
-	.4byte 0x085747A0
+	.4byte gText_Rom_57479A + 0x6
 	.2byte 27, 21 @ numWords, numEnabledWords
 	@ EC_GROUP_STATUS: wordData=gEasyChatGroup_Status (NUMERIC_POINTER_PRESERVED)
-	.4byte 0x08574B34
+	.4byte gText_Rom_574B2E + 0x6
 	.2byte 109, 109 @ numWords, numEnabledWords
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08578D2C size=0x4 source=v54_multi_pointer
 	.4byte gEasyChatGroup_Battle

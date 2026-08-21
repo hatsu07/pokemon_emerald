@@ -10,7 +10,7 @@ gStatusConditionStringsTable: @ 0x085AC04C
 	.4byte gText_Rom_5ABF56 + 0x2B @ status string index 5
 	.4byte gText_Rom_5ABF56 + 0x4E @ status string index 6
 	.4byte gText_Rom_5ABFC7 @ status string index 7
-	.4byte 0x085AC02C @ status string index 8
+	.4byte gText_Rom_5ABFFA + 0x32 @ status string index 8
 
 	@ JP battle text/control strings immediately following the status table.
 	@ The first four are externally pointed to from the preceding battle data;

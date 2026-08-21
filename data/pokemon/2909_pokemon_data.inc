@@ -742,7 +742,7 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	@ ANALYSIS: ZERO_PADDING size=0x24
 	.space 0x24, 0
 	.4byte gText_Rom_5CAFEF @ +0x300
-	.4byte 0x085CAF6C @ +0x304
+	.4byte gText_Rom_5CAF64 + 0x8 @ +0x304
 	.4byte gText_Rom_5CAF75 @ +0x308
 	.4byte gText_Rom_5CAF7F @ +0x30C
 	.4byte gText_Rom_5CAF87 @ +0x310
@@ -766,7 +766,7 @@ sPointerTable_08592A9C:
 	@ pointer/nullable table
 	.4byte gText_Rom_239047 @ +0x0
 	.4byte gText_Rom_23907B @ +0x4
-	.4byte 0x082390B5 @ +0x8
+	.4byte gText_Rom_23907B + 0x3A @ +0x8
 	.4byte gText_Rom_2390F5 @ +0xC
 	.4byte gText_Rom_239129 @ +0x10
 	.4byte gText_Rom_239162 @ +0x14

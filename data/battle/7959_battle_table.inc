@@ -4,27 +4,27 @@ gPokenavMatchCallDataData_085F79B4: @ 0x085F79B4
 	@ analyzed canonical ROM range 0x085F79B4-0x085F7A07
 	@ pointer/nullable table
 	@ ANALYSIS: POINTER_TABLE entries=21 size=0x54
-	.4byte 0x085F7488
-	.4byte 0x085F74FC
-	.4byte 0x085F7698
-	.4byte 0x085F7608
-	.4byte 0x085F76F8
-	.4byte 0x085F74E8
-	.4byte 0x085F7528
-	.4byte 0x085F7578
-	.4byte 0x085F774C
-	.4byte 0x085F7784
-	.4byte 0x085F77C0
-	.4byte 0x085F77FC
-	.4byte 0x085F7838
-	.4byte 0x085F7874
-	.4byte 0x085F78B0
-	.4byte 0x085F78EC
-	.4byte 0x085F7910
-	.4byte 0x085F7934
-	.4byte 0x085F7958
-	.4byte 0x085F797C
-	.4byte 0x085F79A0
+	.4byte gText_Rom_5F741D + 0x6B
+	.4byte gText_Rom_5F741D + 0xDF
+	.4byte gText_Rom_5F741D + 0x27B
+	.4byte gText_Rom_5F741D + 0x1EB
+	.4byte gText_Rom_5F741D + 0x2DB
+	.4byte gText_Rom_5F741D + 0xCB
+	.4byte gText_Rom_5F741D + 0x10B
+	.4byte gText_Rom_5F741D + 0x15B
+	.4byte gText_Rom_5F741D + 0x32F
+	.4byte gText_Rom_5F741D + 0x367
+	.4byte gText_Rom_5F741D + 0x3A3
+	.4byte gText_Rom_5F741D + 0x3DF
+	.4byte gText_Rom_5F741D + 0x41B
+	.4byte gText_Rom_5F741D + 0x457
+	.4byte gText_Rom_5F741D + 0x493
+	.4byte gText_Rom_5F741D + 0x4CF
+	.4byte gText_Rom_5F741D + 0x4F3
+	.4byte gText_Rom_5F741D + 0x517
+	.4byte gText_Rom_5F741D + 0x53B
+	.4byte gText_Rom_5F741D + 0x55F
+	.4byte gText_Rom_5F741D + 0x583
 	.globl gBattleU32Table_Rom_5F7A08
 gBattleU32Table_Rom_5F7A08: @ 0x085F7A08
 	.4byte MatchCallGetFlag_Type0

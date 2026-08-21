@@ -37,7 +37,7 @@ sPointerTable_084E8C2C:
 	.4byte StartMenuBagCallback @ +0x14
 	.4byte gText_Rom_4E8B65 @ +0x18
 	.4byte StartMenuPokeNavCallback @ +0x1C
-	.4byte 0x084E8B6A @ +0x20
+	.4byte gText_Rom_4E8B65 + 0x5 @ +0x20
 	.4byte StartMenuPlayerNameCallback @ +0x24
 	.4byte gText_Rom_4E8B6D @ +0x28
 	.4byte StartMenuSaveCallback @ +0x2C
@@ -47,7 +47,7 @@ sPointerTable_084E8C2C:
 	.4byte StartMenuExitCallback @ +0x3C
 	.4byte gText_Rom_4E8B7B @ +0x40
 	.4byte StartMenuSafariZoneRetireCallback @ +0x44
-	.4byte 0x084E8B6A @ +0x48
+	.4byte gText_Rom_4E8B65 + 0x5 @ +0x48
 	.4byte StartMenuLinkModePlayerNameCallback @ +0x4C
 	.4byte gText_Rom_4E8B80 @ +0x50
 	.4byte StartMenuSaveCallback @ +0x54

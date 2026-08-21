@@ -159,13 +159,13 @@ sLandmarkInfo_085989F8: @ 0x085989F8
 sLandmarkInfo_08598A00: @ 0x08598A00
 	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
 	@ Region-map landmark metadata/lookup data.
-	.4byte 0x08598897
+	.4byte gText_Rom_59888F + 0x8
 	.2byte 0x08A2
 	.2byte 0
 sLandmarkInfo_08598A08: @ 0x08598A08
 	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
 	@ Region-map landmark metadata/lookup data.
-	.4byte 0x0859889F
+	.4byte gText_Rom_59888F + 0x10
 	.2byte 0x08A1
 	.2byte 0
 sLandmarkInfo_08598A10: @ 0x08598A10
@@ -175,25 +175,25 @@ sLandmarkInfo_08598A10: @ 0x08598A10
 sLandmarkInfo_08598A18: @ 0x08598A18
 	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
 	@ Region-map landmark metadata/lookup data.
-	.4byte 0x085988AC
+	.4byte gText_Rom_5988A8 + 0x4
 	.2byte 0x08A3
 	.2byte 0
 sLandmarkInfo_08598A20: @ 0x08598A20
 	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
 	@ Region-map landmark metadata/lookup data.
-	.4byte 0x085988B7
+	.4byte gText_Rom_5988A8 + 0xF
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_08598A28: @ 0x08598A28
 	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
 	@ Region-map landmark metadata/lookup data.
-	.4byte 0x085988C1
+	.4byte gText_Rom_5988A8 + 0x19
 	.2byte 0x08A4
 	.2byte 0
 sLandmarkInfo_08598A30: @ 0x08598A30
 	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
 	@ Region-map landmark metadata/lookup data.
-	.4byte 0x085988CB
+	.4byte gText_Rom_5988A8 + 0x23
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_08598A38: @ 0x08598A38
@@ -213,13 +213,13 @@ sLandmarkInfo_08598A48: @ 0x08598A48
 sLandmarkInfo_08598A50: @ 0x08598A50
 	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
 	@ Region-map landmark metadata/lookup data.
-	.4byte 0x085988F3
+	.4byte gText_Rom_5988EA + 0x9
 	.2byte 0x08A6
 	.2byte 0
 sLandmarkInfo_08598A58: @ 0x08598A58
 	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
 	@ Region-map landmark metadata/lookup data.
-	.4byte 0x085988FC
+	.4byte gText_Rom_5988EA + 0x12
 	.2byte 0xFFFF
 	.2byte 0
 sLandmarkInfo_08598A60: @ 0x08598A60
@@ -261,7 +261,7 @@ sLandmarkInfo_08598A98: @ 0x08598A98
 sLandmarkInfo_08598AA0: @ 0x08598AA0
 	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
 	@ Region-map landmark metadata/lookup data.
-	.4byte 0x0859894F
+	.4byte gText_Rom_598948 + 0x7
 	.2byte 0x08C3
 	.2byte 0
 sLandmarkInfo_08598AA8: @ 0x08598AA8

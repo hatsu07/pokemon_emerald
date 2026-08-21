@@ -11,7 +11,7 @@ gText_Rom_45DFDA: @ 0x0845DFDA
 	@ continuation of MapHeader_JP_0845DFDC (first 2 bytes are AC FF from the string above)
 	.2byte 0x0841
 	.4byte Route110_TrickHousePuzzle2_MapEvents
-	.4byte 0x0823E04F
+	.4byte gText_Rom_23E03B + 0x14
 	.4byte 0
 	.2byte 0x01C0, 0x00F8
 	.byte 0x19, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00

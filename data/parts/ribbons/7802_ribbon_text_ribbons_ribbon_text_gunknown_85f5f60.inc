@@ -49,7 +49,7 @@ sPointerTable_085F5F60:
 	.4byte gText_Rom_5F5ED8 @ +0xA4
 	.4byte gText_Rom_5F5EE7 @ +0xA8
 	.4byte gText_Rom_5F5EF5 @ +0xAC
-	.4byte 0x085F5F03 @ +0xB0
+	.4byte gText_Rom_5F5EF5 + 0xE @ +0xB0
 	.4byte gText_Rom_5F5F13 @ +0xB4
 	.4byte gText_Rom_5F5F21 @ +0xB8
 	.4byte gText_Rom_5F5F31 @ +0xBC

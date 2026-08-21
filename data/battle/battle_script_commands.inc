@@ -347,45 +347,45 @@ sStatusFlagsForMoveEffects:
 	.globl gBattleScriptCommandsData_082ECBA8
 gBattleScriptCommandsData_082ECBA8: @ 0x082ECBA8
 sMoveEffectBS_Ptrs:
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x0828990E @ BattleScript_MoveEffectPoison
-	.4byte 0x0828991D @ BattleScript_MoveEffectBurn
-	.4byte 0x0828992C @ BattleScript_MoveEffectFreeze
-	.4byte 0x0828993B @ BattleScript_MoveEffectParalysis
-	.4byte 0x08289951 @ BattleScript_MoveEffectToxic
-	.4byte 0x0828996E @ BattleScript_MoveEffectConfusion
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x0828994A @ BattleScript_MoveEffectUproar
-	.4byte 0x0828995E @ BattleScript_MoveEffectPayDay
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x08289965 @ BattleScript_MoveEffectWrap
-	.4byte 0x0828997C @ BattleScript_MoveEffectRecoil
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x0828997C @ BattleScript_MoveEffectRecoil
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBF1 @ BattleScript_MoveEffectPoison
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC00 @ BattleScript_MoveEffectBurn
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC0F @ BattleScript_MoveEffectFreeze
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC1E @ BattleScript_MoveEffectParalysis
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC34 @ BattleScript_MoveEffectToxic
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC51 @ BattleScript_MoveEffectConfusion
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC2D @ BattleScript_MoveEffectUproar
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC41 @ BattleScript_MoveEffectPayDay
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC48 @ BattleScript_MoveEffectWrap
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC5F @ BattleScript_MoveEffectRecoil
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC5F @ BattleScript_MoveEffectRecoil
 
 sUnusedWinTemplate: @ 0x082ECC44
 	.byte 0, 1, 3, 7, 15, 31; .2byte 0x003F

@@ -67,17 +67,17 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5A9688 @ +0x14
 	.4byte gText_Rom_5A96A8 @ +0x18
 	.4byte gText_Rom_5A96C3 @ +0x1C
-	.4byte 0x085A96DE @ +0x20
+	.4byte gText_Rom_5A96C3 + 0x1B @ +0x20
 	.4byte gText_Rom_5A96FC @ +0x24
 	@ ANALYSIS: POINTER_TABLE entries=8 size=0x20
 	.4byte gText_Rom_5AACDC + 0x38
-	.4byte 0x085A9723
-	.4byte 0x085A9737
+	.4byte gText_Rom_5A9711 + 0x12
+	.4byte gText_Rom_5A9711 + 0x26
 	.4byte gText_Rom_5AA883 + 0x41
-	.4byte 0x085A974B
-	.4byte 0x085A9788
-	.4byte 0x085A979C
-	.4byte 0x085A97A7
+	.4byte gText_Rom_5A9711 + 0x3A
+	.4byte gText_Rom_5A9783 + 0x5
+	.4byte gText_Rom_5A9783 + 0x19
+	.4byte gText_Rom_5A9783 + 0x24
 	.4byte gText_Rom_5A97B2 @ +0x48
 	.4byte gText_Rom_5A97CB @ +0x4C
 	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
@@ -86,15 +86,15 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5A9824 @ +0x58
 	.4byte gText_Rom_5A982F @ +0x5C
 	@ ANALYSIS: POINTER_TABLE entries=9 size=0x24
-	.4byte 0x085A983D
-	.4byte 0x085A9853
+	.4byte gText_Rom_5A982F + 0xE
+	.4byte gText_Rom_5A982F + 0x24
 	.4byte gText_Rom_5A985E + 0x4
-	.4byte 0x085A9871
-	.4byte 0x085A9882
-	.4byte 0x085A988E
-	.4byte 0x085A98A2
-	.4byte 0x085A98B7
-	.4byte 0x085A98C9
+	.4byte gText_Rom_5A986D + 0x4
+	.4byte gText_Rom_5A987D + 0x5
+	.4byte gText_Rom_5A987D + 0x11
+	.4byte gText_Rom_5A987D + 0x25
+	.4byte gText_Rom_5A987D + 0x3A
+	.4byte gText_Rom_5A98C5 + 0x4
 	.4byte gText_Rom_5A98D7 @ +0x84
 	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
 	.4byte gText_Rom_5A98D7 + 0x13
@@ -110,7 +110,7 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5A999E @ +0xAC
 	.4byte gText_Rom_5A999E + 0x16 @ +0xB0
 	.4byte gText_Rom_5A99D2 @ +0xB4
-	.4byte 0x085A99E6 @ +0xB8
+	.4byte gText_Rom_5A99D2 + 0x14 @ +0xB8
 	.4byte gText_Rom_5A99F5 @ +0xBC
 	@ ANALYSIS: POINTER_TABLE entries=5 size=0x14
 	.4byte gText_Rom_5A99F5 + 0xE
@@ -145,7 +145,7 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5A9C11 + 0xF @ +0x12C
 	.4byte gText_Rom_5A9C33 @ +0x130
 	@ ANALYSIS: POINTER_TABLE entries=5 size=0x14
-	.4byte 0x085A9C45
+	.4byte gText_Rom_5A9C33 + 0x12
 	.4byte gText_Rom_5A9C6F + 0xB
 	.4byte gText_Rom_5A9C6F + 0x1C
 	.4byte gText_Rom_5A9C6F + 0x43
@@ -163,25 +163,25 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5A9D9F @ +0x170
 	.4byte gText_Rom_5A9DAE @ +0x174
 	.4byte gText_Rom_5A9DBE @ +0x178
-	.4byte 0x085A9DD4 @ +0x17C
+	.4byte gText_Rom_5A9DBE + 0x16 @ +0x17C
 	.4byte gText_Rom_5A9DE4 @ +0x180
 	@ ANALYSIS: POINTER_TABLE entries=3 size=0xC
-	.4byte 0x085A9DF1
-	.4byte 0x085A9E09
-	.4byte 0x085A9E1C
+	.4byte gText_Rom_5A9DE4 + 0xD
+	.4byte gText_Rom_5A9E04 + 0x5
+	.4byte gText_Rom_5A9E04 + 0x18
 	.4byte gText_Rom_5A9E28 @ +0x190
 	.4byte gText_Rom_5A9E34 @ +0x194
 	.4byte gText_Rom_5A9E34 + 0xD @ +0x198
 	.4byte gText_Rom_5A9E56 @ +0x19C
 	@ ANALYSIS: POINTER_TABLE entries=8 size=0x20
-	.4byte 0x085A9E64
-	.4byte 0x085A9E7C
-	.4byte 0x085A9E92
-	.4byte 0x085A9EA8
-	.4byte 0x085A9EB7
-	.4byte 0x085A9EC3
-	.4byte 0x085A9ED2
-	.4byte 0x085A9EE5
+	.4byte gText_Rom_5A9E56 + 0xE
+	.4byte gText_Rom_5A9E56 + 0x26
+	.4byte gText_Rom_5A9E56 + 0x3C
+	.4byte gText_Rom_5A9E56 + 0x52
+	.4byte gText_Rom_5A9E56 + 0x61
+	.4byte gText_Rom_5A9EBF + 0x4
+	.4byte gText_Rom_5A9EBF + 0x13
+	.4byte gText_Rom_5A9EBF + 0x26
 	.4byte gText_Rom_5A9EF4 @ +0x1C0
 	.4byte gText_Rom_5A9F04 @ +0x1C4
 	.4byte gText_Rom_5A9F14 @ +0x1C8
@@ -209,7 +209,7 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5AA071 @ +0x214
 	.4byte gText_Rom_5AA071 + 0x12 @ +0x218
 	.4byte gText_Rom_5AA0A6 @ +0x21C
-	.4byte 0x085AA0B3 @ +0x220
+	.4byte gText_Rom_5AA0A6 + 0xD @ +0x220
 	.4byte gText_Rom_5AA0C9 @ +0x224
 	.4byte gText_Rom_5AA0C9 + 0x15 @ +0x228
 	.4byte gText_Rom_5AA0F4 @ +0x22C
@@ -256,27 +256,27 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5AA3D6 @ +0x2C0
 	.4byte gText_Rom_5AA3F4 @ +0x2C4
 	@ ANALYSIS: POINTER_TABLE entries=3 size=0xC
-	.4byte 0x085AA403
-	.4byte 0x085AA41D
-	.4byte 0x085AA434
+	.4byte gText_Rom_5AA3F4 + 0xF
+	.4byte gText_Rom_5AA3F4 + 0x29
+	.4byte gText_Rom_5AA3F4 + 0x40
 	.4byte gText_Rom_5AA59C @ +0x2D4
 	.4byte gText_Rom_5AA59C + 0x14 @ +0x2D8
 	.4byte gText_Rom_5AA5C4 @ +0x2DC
 	@ ANALYSIS: POINTER_TABLE entries=10 size=0x28
-	.4byte 0x085AA5D4
-	.4byte 0x085AA5EA
-	.4byte 0x085AA611
-	.4byte 0x085AA625
-	.4byte 0x085AA634
-	.4byte 0x085AA648
-	.4byte 0x085AA65A
-	.4byte 0x085AA66B
+	.4byte gText_Rom_5AA5C4 + 0x10
+	.4byte gText_Rom_5AA5C4 + 0x26
+	.4byte gText_Rom_5AA60C + 0x5
+	.4byte gText_Rom_5AA60C + 0x19
+	.4byte gText_Rom_5AA60C + 0x28
+	.4byte gText_Rom_5AA60C + 0x3C
+	.4byte gText_Rom_5AA60C + 0x4E
+	.4byte gText_Rom_5AA60C + 0x5F
 	.4byte gText_Rom_5AA67E + 0x6
 	.4byte gText_Rom_5AA67E + 0x17
 	.4byte gText_Rom_5AA6B0 @ +0x308
 	.4byte gText_Rom_5AA6B0 + 0x16 @ +0x30C
 	.4byte gText_Rom_5AA6D9 @ +0x310
-	.4byte 0x085AA871 @ +0x314
+	.4byte gText_Rom_5AA86C + 0x5 @ +0x314
 	.4byte gText_Rom_5AA877 @ +0x318
 	.4byte gText_Rom_5AA877 + 0x6 @ +0x31C
 	.4byte gText_Rom_5AA883 @ +0x320
@@ -287,7 +287,7 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5AA883 + 0x36
 	.4byte gText_Rom_5AA8EE @ +0x334
 	.4byte gText_Rom_5AA8FB @ +0x338
-	.4byte 0x085AA906 @ +0x33C
+	.4byte gText_Rom_5AA8FB + 0xB @ +0x33C
 	.4byte gText_Rom_5AA92B @ +0x340
 	.4byte gText_Rom_5AA954 @ +0x344
 	.4byte gText_Rom_5AA964 @ +0x348
@@ -315,9 +315,9 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5AAB82 @ +0x3A0
 	.4byte gText_Rom_5AAB90 @ +0x3A4
 	@ ANALYSIS: POINTER_TABLE entries=3 size=0xC
-	.4byte 0x085AAB9C
+	.4byte gText_Rom_5AAB90 + 0xC
 	.4byte gText_Rom_5AABA9 + 0x5
-	.4byte 0x085AABC0
+	.4byte gText_Rom_5AABBB + 0x5
 	.4byte gText_Rom_5AABCF @ +0x3B4
 	.4byte gText_Rom_5AABE5 @ +0x3B8
 	.4byte gText_Rom_5AABF6 @ +0x3BC
@@ -378,10 +378,10 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5AB3AD @ +0x48C
 	.4byte gBattleMainData_085AB3BD @ +0x490
 	@ ANALYSIS: POINTER_TABLE entries=7 size=0x1C
-	.4byte 0x085AA6ED
-	.4byte 0x085AA6FD
-	.4byte 0x085AA721
-	.4byte 0x085AA732
+	.4byte gText_Rom_5AA6D9 + 0x14
+	.4byte gText_Rom_5AA6D9 + 0x24
+	.4byte gText_Rom_5AA6D9 + 0x48
+	.4byte gText_Rom_5AA72D + 0x5
 	.4byte gText_Rom_5AA746 + 0x15
 	.4byte gText_Rom_5AA746 + 0x28
 	.4byte gText_Rom_5AA746 + 0x3F
@@ -402,15 +402,15 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5AA883 + 0x1C
 	.4byte gText_Rom_5AA4B5 @ +0x4E8
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
-	.4byte 0x085AA5FA
+	.4byte gText_Rom_5AA5C4 + 0x36
 	.4byte gText_Rom_5A9C6F + 0x31
 	.4byte FunctionPointerTable_JP_085A9544 + 0xFA
 	.4byte FunctionPointerTable_JP_085A9544 + 0xFD
 	.4byte gText_Rom_5AA746 @ +0x4FC
 	@ ANALYSIS: POINTER_TABLE entries=3 size=0xC
-	.4byte 0x085A975F
+	.4byte gText_Rom_5A9711 + 0x4E
 	.4byte gText_Rom_5AB3AD + 0x12
-	.4byte 0x085AA7CC
+	.4byte gText_Rom_5AA7BC + 0x10
 	.4byte gText_Rom_5AA1E8 @ +0x50C
 	.4byte gText_Rom_5AA4B5 + 0x17 @ +0x510
 	.4byte gText_Rom_5A9711 @ +0x514
@@ -418,31 +418,31 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5AA970 + 0x10
 	.4byte gText_Rom_5AA970 + 0x2C
 	.4byte gText_Rom_5AA4EC @ +0x520
-	.4byte 0x085AA7F9 @ +0x524
+	.4byte gText_Rom_5AA7DF + 0x1A @ +0x524
 	.4byte gText_Rom_5AB31D @ +0x528
 	.4byte gText_Rom_5AB0F9 + 0xA @ +0x52C
 	.4byte gText_Rom_5AB26A @ +0x530
 	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
-	.4byte 0x085A977A
+	.4byte gText_Rom_5A9711 + 0x69
 	.4byte gText_Rom_5AA80C + 0x5
 	.4byte gText_Rom_5AA826 @ +0x53C
 	@ ANALYSIS: POINTER_TABLE entries=6 size=0x18
-	.4byte 0x085A9922
+	.4byte gText_Rom_5A990C + 0x16
 	.4byte gText_Rom_5AA883 + 0x56
-	.4byte 0x085AA70F
+	.4byte gText_Rom_5AA6D9 + 0x36
 	.4byte gText_Rom_5A9D80 + 0xE
 	.4byte gText_Rom_5A9B09 + 0x5C
 	.4byte gText_Rom_5A9B09 + 0x2B
 	.4byte gText_Rom_5AA501 @ +0x558
 	@ ANALYSIS: POINTER_TABLE entries=6 size=0x18
-	.4byte 0x085AA835
-	.4byte 0x085AA84B
+	.4byte gText_Rom_5AA826 + 0xF
+	.4byte gText_Rom_5AA826 + 0x25
 	.4byte gText_Rom_5A980F + 0x9
 	.4byte gText_Rom_5AA2AB + 0x16
 	.4byte gText_Rom_5AA2AB + 0x26
 	.4byte gText_Rom_5AA2AB + 0x36
 	.4byte gText_Rom_5AA50B @ +0x574
-	.4byte 0x085AA85D @ +0x578
+	.4byte gText_Rom_5AA826 + 0x37 @ +0x578
 	.4byte gBattleMessageData_085ABE2F @ +0x57C
 	.4byte gText_Rom_5ABE26 + 0x27 @ +0x580
 	.4byte gText_Rom_5ABE50 @ +0x584
@@ -453,7 +453,7 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5ABFE2 @ +0x598
 	.4byte gText_Rom_5ABFFA @ +0x59C
 	@ ANALYSIS: POINTER_TABLE entries=3 size=0xC
-	.4byte 0x085AC012
+	.4byte gText_Rom_5ABFFA + 0x18
 	.4byte sBattleStatusText_JP_0
 	.4byte sBattleStatusText_JP_1
 	.4byte gText_Rom_243E08 @ +0x5AC

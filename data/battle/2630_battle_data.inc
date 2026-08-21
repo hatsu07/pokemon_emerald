@@ -10,8 +10,8 @@ sPointerTable_08579ED8:
 	.4byte gText_Rom_579E77 @ +0x8
 	.4byte gText_Rom_579E7D @ +0xC
 	.4byte gText_Rom_579E81 @ +0x10
-	.4byte 0x08579E86 @ +0x14
-	.4byte 0x08579E89 @ +0x18
+	.4byte gText_Rom_579E81 + 0x5 @ +0x14
+	.4byte gText_Rom_579E81 + 0x8 @ +0x18
 	.4byte gText_Rom_579E8C @ +0x1C
 	.4byte gText_Rom_579E90 @ +0x20
 	.4byte gText_Rom_579E94 @ +0x24
@@ -25,7 +25,7 @@ sPointerTable_08579ED8:
 	.4byte gText_Rom_579EBB @ +0x44
 	.4byte gText_Rom_579EC0 @ +0x48
 	.4byte gText_Rom_579EC4 @ +0x4C
-	.4byte 0x08579EC8 @ +0x50
+	.4byte gText_Rom_579EC4 + 0x4 @ +0x50
 	.4byte gText_Rom_579ECF @ +0x54
 	@ pret/pokeemerald-jp direct xref for 0x08579F30: easy_chat.s: CopyEasyChatWord, GetEasyChatWordStringLength
 	.globl gEasyChatData_08579F30

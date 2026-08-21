@@ -114,21 +114,21 @@ sPointerTable_085F628C:
 	.4byte gText_Rom_5F61D6 @ +0x1A8
 	.4byte gText_Rom_5F6149 @ +0x1AC
 	.4byte gText_Rom_5F61E5 @ +0x1B0
-	.4byte 0x085F61F2 @ +0x1B4
+	.4byte gText_Rom_5F61E5 + 0xD @ +0x1B4
 	.4byte gText_Rom_5F61F3 @ +0x1B8
-	.4byte 0x085F61F2 @ +0x1BC
-	.4byte 0x085F6200 @ +0x1C0
-	.4byte 0x085F61F2 @ +0x1C4
+	.4byte gText_Rom_5F61E5 + 0xD @ +0x1BC
+	.4byte gText_Rom_5F61F3 + 0xD @ +0x1C0
+	.4byte gText_Rom_5F61E5 + 0xD @ +0x1C4
 	.4byte gText_Rom_5F620D @ +0x1C8
-	.4byte 0x085F61F2 @ +0x1CC
+	.4byte gText_Rom_5F61E5 + 0xD @ +0x1CC
 	.4byte gText_Rom_5F621A @ +0x1D0
-	.4byte 0x085F61F2 @ +0x1D4
+	.4byte gText_Rom_5F61E5 + 0xD @ +0x1D4
 	.4byte gText_Rom_5F6226 @ +0x1D8
-	.4byte 0x085F61F2 @ +0x1DC
+	.4byte gText_Rom_5F61E5 + 0xD @ +0x1DC
 	.4byte gText_Rom_5F6235 @ +0x1E0
-	.4byte 0x085F61F2 @ +0x1E4
+	.4byte gText_Rom_5F61E5 + 0xD @ +0x1E4
 	.4byte gText_Rom_5F6246 @ +0x1E8
-	.4byte 0x085F61F2 @ +0x1EC
+	.4byte gText_Rom_5F61E5 + 0xD @ +0x1EC
 	.4byte gText_Rom_5F6256 @ +0x1F0
 	.4byte gText_Rom_5F6262 @ +0x1F4
 	.4byte gText_Rom_5F6270 @ +0x1F8
