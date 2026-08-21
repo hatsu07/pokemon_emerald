@@ -193282,7 +193282,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D854AC",
-      "source_file": "data/parts/moves/8161_move_data_moves_move_data_gunknown_8d835a0.inc"
+      "source_file": "data/asset_streams/stream_08d835a0.inc"
     },
     "08D854CC": {
       "address": "0x08D854CC",
@@ -193615,7 +193615,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D854AC",
-      "source_file": "data/parts/moves/8161_move_data_moves_move_data_gunknown_8d835a0.inc"
+      "source_file": "data/asset_streams/stream_08d835a0.inc"
     },
     "08D85F34": {
       "address": "0x08D85F34",
@@ -243717,7 +243717,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D9B2E8",
-      "source_file": "data/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc"
+      "source_file": "data/asset_streams/stream_08d9b2c0.inc"
     },
     "08D9B428": {
       "address": "0x08D9B428",
@@ -243834,7 +243834,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D9B2E8",
-      "source_file": "data/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc"
+      "source_file": "data/asset_streams/stream_08d9b2c0.inc"
     },
     "08D9B6BC": {
       "address": "0x08D9B6BC",
@@ -243899,7 +243899,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D9B6BC",
-      "source_file": "data/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc"
+      "source_file": "data/asset_streams/stream_08d9b2c0.inc"
     },
     "08D9B72C": {
       "address": "0x08D9B72C",
@@ -244548,7 +244548,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D9B6BC",
-      "source_file": "data/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc"
+      "source_file": "data/asset_streams/stream_08d9b2c0.inc"
     },
     "08D9B9EC": {
       "address": "0x08D9B9EC",
@@ -244564,7 +244564,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D9B6BC",
-      "source_file": "data/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc"
+      "source_file": "data/asset_streams/stream_08d9b2c0.inc"
     },
     "08DBA860": {
       "address": "0x08DBA860",

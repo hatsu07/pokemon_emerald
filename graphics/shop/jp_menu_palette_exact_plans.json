@@ -9,7 +9,7 @@
       "flags": "0x00 0x00 0x00 0x00",
       "label": "sAnalyzedGfx_08D9B2C0",
       "rom_address": "0x08D9B2C0",
-      "source": "data/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc",
+      "source": "data/asset_streams/stream_08d9b2c0.inc",
       "source_line": 5,
       "tail": ""
     }
