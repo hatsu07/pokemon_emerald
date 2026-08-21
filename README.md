@@ -104,7 +104,7 @@
 - [x] テキスト分離後の Matching 確認（CMake の `compare` ターゲット）
 - [x] **テキスト一括抽出済みデータ**
   - [x] `script_data` セクションの全通常テキストを固定アドレスで抽出（`data/generated/event_scripts/`：6,741スロット）
-  - [x] `.rodata` セクションの全通常テキストを固定アドレスで抽出（`data/generated/rodata/`：6,158スロット）
+  - [x] `.rodata` セクションの全通常テキストを固定アドレスで抽出（`data/`：6,158スロット）
   - [x] 抽出結果の索引（`data/generated/event_scripts/index.inc`）
   - [x] 抽出状態での `compare` ターゲット一致確認
 - [x] ハックガイド作成（[docs/hacking.md](docs/hacking.md)）
@@ -112,7 +112,7 @@
 - [x] ROM構造の網羅的ドキュメント（[docs/rom_structure.md](docs/rom_structure.md)）
 - [x] フォント・グラフィック解析（[docs/font_graphics.md](docs/font_graphics.md)）
 - [x] イベント・スクリプト仕様の整理（[docs/event_scripts.md](docs/event_scripts.md)）
-- [x] **rodata テキスト/データの分割・構造化**（`data/generated/rodata/`）
+- [x] **rodata テキスト/データの分割・構造化**（`data/`）
   - [x] 戦闘データ（`battle/`）
   - [x] コンテストデータ（`contests/`）
   - [x] クレジットテキスト（`credits/`）
@@ -142,8 +142,8 @@
 - Phase 1 (Matching) 完了
 - SHA-1: `d7cf8f156ba9c455d164e1ea780a6bf1945465c2`（オリジナルと一致）
 - Phase 2: オダマキOP・ミシロタウンNPC 3件・オダマキ研究所テキスト 25件・ミシロタウン看板を `.string` 化
-- **全体テキスト抽出基盤 構築完了**: `script_data`（6,741スロット）と `.rodata`（6,158スロット）の全通常テキストを `data/generated/event_scripts/`、`data/generated/rodata/` に固定アドレスで抽出
-- **rodata テキスト/データの分割・構造化完了**: `data/generated/rodata/` 以下に戦闘・コンテスト・クレジット・アイテム・マップ・メニュー・技・ポケモン・リボンデータを分割・構造化
+- **全体テキスト抽出基盤 構築完了**: `script_data`（6,741スロット）と `.rodata`（6,158スロット）の全通常テキストを `data/generated/event_scripts/`、`data/` に固定アドレスで抽出
+- **rodata テキスト/データの分割・構造化完了**: `data/` 以下に戦闘・コンテスト・クレジット・アイテム・マップ・メニュー・技・ポケモン・リボンデータを分割・構造化
 - **主要ゲームデータを構造化**: `data/pokemon/`、`data/moves/`、`data/items/`、`data/abilities/`、`data/trainers/`、`data/wild_encounters/`、`data/decorations/`、`data/pokeball/` に編集可能な定義を配置
 - **`.rodata` 冒頭の機能別分割**: 旧 `data/rodata.inc` 相当の冒頭データを `data/rodata/main.inc`、`window.inc`、`text.inc`、`fonts.inc`、`sprite.inc` などへ分割。`sDummyWindowTemplate` は `.incbin` を使わない8バイトのフィールド定義に変換
 - テキスト編集方法は [docs/text_editing.md](docs/text_editing.md) に集約

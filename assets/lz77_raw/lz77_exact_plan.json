@@ -26711,7 +26711,7 @@
         "tail": ""
       },
       "source_block_address": "0x082ECC6C",
-      "source_file": "data/generated/rodata/battle/0475_battle_table.inc"
+      "source_file": "data/battle/0475_battle_table.inc"
     },
     "0830C794": {
       "address": "0x0830C794",
@@ -26964,7 +26964,7 @@
         "tail": ""
       },
       "source_block_address": "0x0830C794",
-      "source_file": "data/generated/rodata/menus/modules/trade/0524-0525_trade_data.inc"
+      "source_file": "data/menus/modules/trade/0524-0525_trade_data.inc"
     },
     "08537DB4": {
       "address": "0x08537DB4",
@@ -27029,7 +27029,7 @@
         "tail": ""
       },
       "source_block_address": "0x08537422",
-      "source_file": "data/generated/rodata/menus/modules/pokedex/0771_pokedex_data.inc"
+      "source_file": "data/menus/modules/pokedex/0771_pokedex_data.inc"
     },
     "08537E44": {
       "address": "0x08537E44",
@@ -27086,7 +27086,7 @@
         "tail": ""
       },
       "source_block_address": "0x08537422",
-      "source_file": "data/generated/rodata/menus/modules/pokedex/0771_pokedex_data.inc"
+      "source_file": "data/menus/modules/pokedex/0771_pokedex_data.inc"
     },
     "08537E8C": {
       "address": "0x08537E8C",
@@ -30727,7 +30727,7 @@
         "tail": ""
       },
       "source_block_address": "0x08537422",
-      "source_file": "data/generated/rodata/menus/modules/pokedex/0771_pokedex_data.inc"
+      "source_file": "data/menus/modules/pokedex/0771_pokedex_data.inc"
     },
     "085388EC": {
       "address": "0x085388EC",
@@ -33716,7 +33716,7 @@
         "tail": ""
       },
       "source_block_address": "0x08537422",
-      "source_file": "data/generated/rodata/menus/modules/pokedex/0771_pokedex_data.inc"
+      "source_file": "data/menus/modules/pokedex/0771_pokedex_data.inc"
     },
     "08545390": {
       "address": "0x08545390",
@@ -34081,7 +34081,7 @@
         "tail": ""
       },
       "source_block_address": "0x08545390",
-      "source_file": "data/generated/rodata/pokemon/0776_pokemon_data.inc"
+      "source_file": "data/pokemon/0776_pokemon_data.inc"
     },
     "08545530": {
       "address": "0x08545530",
@@ -34442,7 +34442,7 @@
         "tail": ""
       },
       "source_block_address": "0x08545530",
-      "source_file": "data/generated/rodata/pokemon/0776_pokemon_data.inc"
+      "source_file": "data/pokemon/0776_pokemon_data.inc"
     },
     "085456E8": {
       "address": "0x085456E8",
@@ -34743,7 +34743,7 @@
         "tail": ""
       },
       "source_block_address": "0x085456E8",
-      "source_file": "data/generated/rodata/pokemon/0776_pokemon_data.inc"
+      "source_file": "data/pokemon/0776_pokemon_data.inc"
     },
     "085457C4": {
       "address": "0x085457C4",
@@ -35056,7 +35056,7 @@
         "tail": ""
       },
       "source_block_address": "0x085457C4",
-      "source_file": "data/generated/rodata/pokemon/0776_pokemon_data.inc"
+      "source_file": "data/pokemon/0776_pokemon_data.inc"
     },
     "085458F0": {
       "address": "0x085458F0",
@@ -35401,7 +35401,7 @@
         "tail": ""
       },
       "source_block_address": "0x085458F0",
-      "source_file": "data/generated/rodata/pokemon/0776_pokemon_data.inc"
+      "source_file": "data/pokemon/0776_pokemon_data.inc"
     },
     "08545A70": {
       "address": "0x08545A70",
@@ -35754,7 +35754,7 @@
         "tail": ""
       },
       "source_block_address": "0x08545A70",
-      "source_file": "data/generated/rodata/pokemon/0776_pokemon_data.inc"
+      "source_file": "data/pokemon/0776_pokemon_data.inc"
     },
     "08545BFC": {
       "address": "0x08545BFC",
@@ -36039,7 +36039,7 @@
         "tail": ""
       },
       "source_block_address": "0x08545BFC",
-      "source_file": "data/generated/rodata/pokemon/0776_pokemon_data.inc"
+      "source_file": "data/pokemon/0776_pokemon_data.inc"
     },
     "08545C94": {
       "address": "0x08545C94",
@@ -36324,7 +36324,7 @@
         "tail": ""
       },
       "source_block_address": "0x08545C94",
-      "source_file": "data/generated/rodata/pokemon/0776_pokemon_data.inc"
+      "source_file": "data/pokemon/0776_pokemon_data.inc"
     },
     "0854BC94": {
       "address": "0x0854BC94",
@@ -36801,7 +36801,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854BC94",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854C65C": {
       "address": "0x0854C65C",
@@ -36954,7 +36954,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854C65C",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854CC14": {
       "address": "0x0854CC14",
@@ -37839,7 +37839,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854D098": {
       "address": "0x0854D098",
@@ -38016,7 +38016,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854D1B8": {
       "address": "0x0854D1B8",
@@ -38897,7 +38897,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854D4D0": {
       "address": "0x0854D4D0",
@@ -39090,7 +39090,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854D5EC": {
       "address": "0x0854D5EC",
@@ -40079,7 +40079,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854D9A0": {
       "address": "0x0854D9A0",
@@ -40312,7 +40312,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854DADC": {
       "address": "0x0854DADC",
@@ -41217,7 +41217,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854DEF0": {
       "address": "0x0854DEF0",
@@ -41454,7 +41454,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854E034": {
       "address": "0x0854E034",
@@ -42591,7 +42591,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854E430": {
       "address": "0x0854E430",
@@ -42784,7 +42784,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854E560": {
       "address": "0x0854E560",
@@ -43953,7 +43953,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854EA50": {
       "address": "0x0854EA50",
@@ -44182,7 +44182,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854EBCC": {
       "address": "0x0854EBCC",
@@ -45443,7 +45443,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854F02C": {
       "address": "0x0854F02C",
@@ -45640,7 +45640,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854F178": {
       "address": "0x0854F178",
@@ -46525,7 +46525,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854F550": {
       "address": "0x0854F550",
@@ -46706,7 +46706,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854F668": {
       "address": "0x0854F668",
@@ -47643,7 +47643,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854FA38": {
       "address": "0x0854FA38",
@@ -47836,7 +47836,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854FB78": {
       "address": "0x0854FB78",
@@ -48733,7 +48733,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854FE74": {
       "address": "0x0854FE74",
@@ -48986,7 +48986,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "0854FFC8": {
       "address": "0x0854FFC8",
@@ -49803,7 +49803,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "085503B0": {
       "address": "0x085503B0",
@@ -49996,7 +49996,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "085504E8": {
       "address": "0x085504E8",
@@ -50777,7 +50777,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "08550870": {
       "address": "0x08550870",
@@ -50982,7 +50982,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "085509A0": {
       "address": "0x085509A0",
@@ -51859,7 +51859,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "08550C68": {
       "address": "0x08550C68",
@@ -52092,7 +52092,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "08550DA8": {
       "address": "0x08550DA8",
@@ -52809,7 +52809,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "08551024": {
       "address": "0x08551024",
@@ -53018,7 +53018,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "08551164": {
       "address": "0x08551164",
@@ -53639,7 +53639,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "085513B8": {
       "address": "0x085513B8",
@@ -53836,7 +53836,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "085514BC": {
       "address": "0x085514BC",
@@ -54165,7 +54165,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "085515DC": {
       "address": "0x085515DC",
@@ -54358,7 +54358,7 @@
         "tail": ""
       },
       "source_block_address": "0x0854CBCC",
-      "source_file": "data/generated/rodata/battle/0784-0786_battle_data.inc"
+      "source_file": "data/battle/0784-0786_battle_data.inc"
     },
     "08565318": {
       "address": "0x08565318",
@@ -54919,7 +54919,7 @@
         "tail": ""
       },
       "source_block_address": "0x08565318",
-      "source_file": "data/generated/rodata/credits/0826_credits_data.inc"
+      "source_file": "data/credits/0826_credits_data.inc"
     },
     "085656C8": {
       "address": "0x085656C8",
@@ -55232,7 +55232,7 @@
         "tail": ""
       },
       "source_block_address": "0x085656C8",
-      "source_file": "data/generated/rodata/credits/0826_credits_data.inc"
+      "source_file": "data/credits/0826_credits_data.inc"
     },
     "08565790": {
       "address": "0x08565790",
@@ -55545,7 +55545,7 @@
         "tail": ""
       },
       "source_block_address": "0x085656C8",
-      "source_file": "data/generated/rodata/credits/0826_credits_data.inc"
+      "source_file": "data/credits/0826_credits_data.inc"
     },
     "085733D0": {
       "address": "0x085733D0",
@@ -56502,7 +56502,7 @@
         "tail": ""
       },
       "source_block_address": "0x0857333C",
-      "source_file": "data/generated/rodata/maps/0867-0868_maps_data.inc"
+      "source_file": "data/maps/0867-0868_maps_data.inc"
     },
     "085737F4": {
       "address": "0x085737F4",
@@ -57703,7 +57703,7 @@
         "tail": ""
       },
       "source_block_address": "0x0857333C",
-      "source_file": "data/generated/rodata/maps/0867-0868_maps_data.inc"
+      "source_file": "data/maps/0867-0868_maps_data.inc"
     },
     "08573B08": {
       "address": "0x08573B08",
@@ -58428,7 +58428,7 @@
         "tail": ""
       },
       "source_block_address": "0x0857333C",
-      "source_file": "data/generated/rodata/maps/0867-0868_maps_data.inc"
+      "source_file": "data/maps/0867-0868_maps_data.inc"
     },
     "08573D30": {
       "address": "0x08573D30",
@@ -58961,7 +58961,7 @@
         "tail": ""
       },
       "source_block_address": "0x0857333C",
-      "source_file": "data/generated/rodata/maps/0867-0868_maps_data.inc"
+      "source_file": "data/maps/0867-0868_maps_data.inc"
     },
     "0857D580": {
       "address": "0x0857D580",
@@ -59270,7 +59270,7 @@
         "tail": ""
       },
       "source_block_address": "0x0857D580",
-      "source_file": "data/generated/rodata/pokemon/2885_pokemon_data.inc"
+      "source_file": "data/pokemon/2885_pokemon_data.inc"
     },
     "0858F890": {
       "address": "0x0858F890",
@@ -59535,7 +59535,7 @@
         "tail": ""
       },
       "source_block_address": "0x0858F890",
-      "source_file": "data/generated/rodata/pokemon/modules/pokemon/starter_pokemon/2902_starter_pokemon_sprite_positions.inc"
+      "source_file": "data/pokemon/modules/pokemon/starter_pokemon/2902_starter_pokemon_sprite_positions.inc"
     },
     "0858FA1C": {
       "address": "0x0858FA1C",
@@ -60040,7 +60040,7 @@
         "tail": ""
       },
       "source_block_address": "0x0858FA1C",
-      "source_file": "data/generated/rodata/pokemon/modules/pokemon/starter_pokemon/2902_starter_pokemon_sprite_positions.inc"
+      "source_file": "data/pokemon/modules/pokemon/starter_pokemon/2902_starter_pokemon_sprite_positions.inc"
     },
     "0858FC14": {
       "address": "0x0858FC14",
@@ -63117,7 +63117,7 @@
         "tail": ""
       },
       "source_block_address": "0x0858FC14",
-      "source_file": "data/generated/rodata/pokemon/modules/pokemon/starter_pokemon/2902_starter_pokemon_sprite_positions.inc"
+      "source_file": "data/pokemon/modules/pokemon/starter_pokemon/2902_starter_pokemon_sprite_positions.inc"
     },
     "085906BC": {
       "address": "0x085906BC",
@@ -63966,7 +63966,7 @@
         "tail": ""
       },
       "source_block_address": "0x0858FC14",
-      "source_file": "data/generated/rodata/pokemon/modules/pokemon/starter_pokemon/2902_starter_pokemon_sprite_positions.inc"
+      "source_file": "data/pokemon/modules/pokemon/starter_pokemon/2902_starter_pokemon_sprite_positions.inc"
     },
     "085909DC": {
       "address": "0x085909DC",
@@ -64795,7 +64795,7 @@
         "tail": ""
       },
       "source_block_address": "0x0858FC14",
-      "source_file": "data/generated/rodata/pokemon/modules/pokemon/starter_pokemon/2902_starter_pokemon_sprite_positions.inc"
+      "source_file": "data/pokemon/modules/pokemon/starter_pokemon/2902_starter_pokemon_sprite_positions.inc"
     },
     "08590DA8": {
       "address": "0x08590DA8",
@@ -65016,7 +65016,7 @@
         "tail": ""
       },
       "source_block_address": "0x08590DA8",
-      "source_file": "data/generated/rodata/pokemon/modules/pokemon/starter_pokemon/2902_starter_pokemon_sprite_positions.inc"
+      "source_file": "data/pokemon/modules/pokemon/starter_pokemon/2902_starter_pokemon_sprite_positions.inc"
     },
     "08593ABC": {
       "address": "0x08593ABC",
@@ -65593,7 +65593,7 @@
         "tail": ""
       },
       "source_block_address": "0x08593ABC",
-      "source_file": "data/generated/rodata/battle/2921_battle_data.inc"
+      "source_file": "data/battle/2921_battle_data.inc"
     },
     "08596204": {
       "address": "0x08596204",
@@ -65978,7 +65978,7 @@
         "tail": ""
       },
       "source_block_address": "0x08595FFC",
-      "source_file": "data/generated/rodata/items/modules/strings/2924-2929_strings_data.inc"
+      "source_file": "data/items/modules/strings/2924-2929_strings_data.inc"
     },
     "0859634C": {
       "address": "0x0859634C",
@@ -66083,7 +66083,7 @@
         "tail": ""
       },
       "source_block_address": "0x08595FFC",
-      "source_file": "data/generated/rodata/items/modules/strings/2924-2929_strings_data.inc"
+      "source_file": "data/items/modules/strings/2924-2929_strings_data.inc"
     },
     "085963B0": {
       "address": "0x085963B0",
@@ -67348,7 +67348,7 @@
         "tail": ""
       },
       "source_block_address": "0x08595FFC",
-      "source_file": "data/generated/rodata/items/modules/strings/2924-2929_strings_data.inc"
+      "source_file": "data/items/modules/strings/2924-2929_strings_data.inc"
     },
     "085967A0": {
       "address": "0x085967A0",
@@ -67529,7 +67529,7 @@
         "tail": ""
       },
       "source_block_address": "0x08595FFC",
-      "source_file": "data/generated/rodata/items/modules/strings/2924-2929_strings_data.inc"
+      "source_file": "data/items/modules/strings/2924-2929_strings_data.inc"
     },
     "08596944": {
       "address": "0x08596944",
@@ -68566,7 +68566,7 @@
         "tail": ""
       },
       "source_block_address": "0x08595FFC",
-      "source_file": "data/generated/rodata/items/modules/strings/2924-2929_strings_data.inc"
+      "source_file": "data/items/modules/strings/2924-2929_strings_data.inc"
     },
     "08596E44": {
       "address": "0x08596E44",
@@ -68791,7 +68791,7 @@
         "tail": ""
       },
       "source_block_address": "0x08595FFC",
-      "source_file": "data/generated/rodata/items/modules/strings/2924-2929_strings_data.inc"
+      "source_file": "data/items/modules/strings/2924-2929_strings_data.inc"
     },
     "08596EDC": {
       "address": "0x08596EDC",
@@ -68952,7 +68952,7 @@
         "tail": ""
       },
       "source_block_address": "0x08595FFC",
-      "source_file": "data/generated/rodata/items/modules/strings/2924-2929_strings_data.inc"
+      "source_file": "data/items/modules/strings/2924-2929_strings_data.inc"
     },
     "085AC484": {
       "address": "0x085AC484",
@@ -69001,7 +69001,7 @@
         "tail": ""
       },
       "source_block_address": "0x085AC484",
-      "source_file": "data/generated/rodata/battle/3631_battle_data.inc"
+      "source_file": "data/battle/3631_battle_data.inc"
     },
     "085AC760": {
       "address": "0x085AC760",
@@ -69266,7 +69266,7 @@
         "tail": ""
       },
       "source_block_address": "0x085AC760",
-      "source_file": "data/generated/rodata/battle/3631_battle_data.inc"
+      "source_file": "data/battle/3631_battle_data.inc"
     },
     "085BEBC0": {
       "address": "0x085BEBC0",
@@ -69827,7 +69827,7 @@
         "tail": ""
       },
       "source_block_address": "0x085BEBC0",
-      "source_file": "data/generated/rodata/battle/3695-3698_battle_data.inc"
+      "source_file": "data/battle/3695-3698_battle_data.inc"
     },
     "085BED74": {
       "address": "0x085BED74",
@@ -71800,7 +71800,7 @@
         "tail": ""
       },
       "source_block_address": "0x085BEBC0",
-      "source_file": "data/generated/rodata/battle/3695-3698_battle_data.inc"
+      "source_file": "data/battle/3695-3698_battle_data.inc"
     },
     "085BF2EC": {
       "address": "0x085BF2EC",
@@ -72201,7 +72201,7 @@
         "tail": ""
       },
       "source_block_address": "0x085BEBC0",
-      "source_file": "data/generated/rodata/battle/3695-3698_battle_data.inc"
+      "source_file": "data/battle/3695-3698_battle_data.inc"
     },
     "085C0230": {
       "address": "0x085C0230",
@@ -72514,7 +72514,7 @@
         "tail": ""
       },
       "source_block_address": "0x085C0230",
-      "source_file": "data/generated/rodata/battle/3695-3698_battle_data.inc"
+      "source_file": "data/battle/3695-3698_battle_data.inc"
     },
     "085C0488": {
       "address": "0x085C0488",
@@ -72815,7 +72815,7 @@
         "tail": ""
       },
       "source_block_address": "0x085C0488",
-      "source_file": "data/generated/rodata/battle/3695-3698_battle_data.inc"
+      "source_file": "data/battle/3695-3698_battle_data.inc"
     },
     "085C0EF8": {
       "address": "0x085C0EF8",
@@ -73296,7 +73296,7 @@
         "tail": ""
       },
       "source_block_address": "0x085C0EF8",
-      "source_file": "data/generated/rodata/battle/3695-3698_battle_data.inc"
+      "source_file": "data/battle/3695-3698_battle_data.inc"
     },
     "085C1084": {
       "address": "0x085C1084",
@@ -75497,7 +75497,7 @@
         "tail": ""
       },
       "source_block_address": "0x085C0EF8",
-      "source_file": "data/generated/rodata/battle/3695-3698_battle_data.inc"
+      "source_file": "data/battle/3695-3698_battle_data.inc"
     },
     "085C4908": {
       "address": "0x085C4908",
@@ -80746,7 +80746,7 @@
         "tail": ""
       },
       "source_block_address": "0x085C4908",
-      "source_file": "data/generated/rodata/battle/3695-3698_battle_data.inc"
+      "source_file": "data/battle/3695-3698_battle_data.inc"
     },
     "085C547C": {
       "address": "0x085C547C",
@@ -80859,7 +80859,7 @@
         "tail": ""
       },
       "source_block_address": "0x085C4908",
-      "source_file": "data/generated/rodata/battle/3695-3698_battle_data.inc"
+      "source_file": "data/battle/3695-3698_battle_data.inc"
     },
     "085C54E8": {
       "address": "0x085C54E8",
@@ -81408,7 +81408,7 @@
         "tail": ""
       },
       "source_block_address": "0x085C4908",
-      "source_file": "data/generated/rodata/battle/3695-3698_battle_data.inc"
+      "source_file": "data/battle/3695-3698_battle_data.inc"
     },
     "085C5664": {
       "address": "0x085C5664",
@@ -82441,7 +82441,7 @@
         "tail": ""
       },
       "source_block_address": "0x085C4908",
-      "source_file": "data/generated/rodata/battle/3695-3698_battle_data.inc"
+      "source_file": "data/battle/3695-3698_battle_data.inc"
     },
     "085C5A00": {
       "address": "0x085C5A00",
@@ -82858,7 +82858,7 @@
         "tail": ""
       },
       "source_block_address": "0x085C4908",
-      "source_file": "data/generated/rodata/battle/3695-3698_battle_data.inc"
+      "source_file": "data/battle/3695-3698_battle_data.inc"
     },
     "085DFB80": {
       "address": "0x085DFB80",
@@ -83031,7 +83031,7 @@
         "tail": ""
       },
       "source_block_address": "0x085DFB80",
-      "source_file": "data/generated/rodata/parts/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc"
+      "source_file": "data/parts/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc"
     },
     "085DFBF0": {
       "address": "0x085DFBF0",
@@ -83136,7 +83136,7 @@
         "tail": ""
       },
       "source_block_address": "0x085DFBF0",
-      "source_file": "data/generated/rodata/parts/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc"
+      "source_file": "data/parts/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc"
     },
     "085DFC30": {
       "address": "0x085DFC30",
@@ -83225,7 +83225,7 @@
         "tail": ""
       },
       "source_block_address": "0x085DFC30",
-      "source_file": "data/generated/rodata/parts/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc"
+      "source_file": "data/parts/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc"
     },
     "085E2A20": {
       "address": "0x085E2A20",
@@ -87422,7 +87422,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
+      "source_file": "data/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E3610": {
       "address": "0x085E3610",
@@ -87883,7 +87883,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
+      "source_file": "data/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E3990": {
       "address": "0x085E3990",
@@ -91620,7 +91620,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
+      "source_file": "data/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E4494": {
       "address": "0x085E4494",
@@ -92049,7 +92049,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
+      "source_file": "data/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E47D0": {
       "address": "0x085E47D0",
@@ -95054,7 +95054,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
+      "source_file": "data/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E50D8": {
       "address": "0x085E50D8",
@@ -95547,7 +95547,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
+      "source_file": "data/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E539C": {
       "address": "0x085E539C",
@@ -98308,7 +98308,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
+      "source_file": "data/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E5BCC": {
       "address": "0x085E5BCC",
@@ -98801,7 +98801,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
+      "source_file": "data/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E5E68": {
       "address": "0x085E5E68",
@@ -101742,7 +101742,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
+      "source_file": "data/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E674C": {
       "address": "0x085E674C",
@@ -102223,7 +102223,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
+      "source_file": "data/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E69E8": {
       "address": "0x085E69E8",
@@ -104784,7 +104784,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
+      "source_file": "data/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E707C": {
       "address": "0x085E707C",
@@ -105245,7 +105245,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
+      "source_file": "data/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085EFC2C": {
       "address": "0x085EFC2C",
@@ -105754,7 +105754,7 @@
         "tail": ""
       },
       "source_block_address": "0x085EFC2C",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085EFDC8": {
       "address": "0x085EFDC8",
@@ -107203,7 +107203,7 @@
         "tail": ""
       },
       "source_block_address": "0x085EFC2C",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F01AC": {
       "address": "0x085F01AC",
@@ -107320,7 +107320,7 @@
         "tail": ""
       },
       "source_block_address": "0x085EFC2C",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F02BC": {
       "address": "0x085F02BC",
@@ -107877,7 +107877,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F021C",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F0428": {
       "address": "0x085F0428",
@@ -108442,7 +108442,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F021C",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F0598": {
       "address": "0x085F0598",
@@ -109051,7 +109051,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F021C",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F073C": {
       "address": "0x085F073C",
@@ -109612,7 +109612,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F021C",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F08B0": {
       "address": "0x085F08B0",
@@ -110569,7 +110569,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F021C",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F0B24": {
       "address": "0x085F0B24",
@@ -111002,7 +111002,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F021C",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F0C8C": {
       "address": "0x085F0C8C",
@@ -111431,7 +111431,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F021C",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F0DEC": {
       "address": "0x085F0DEC",
@@ -111768,7 +111768,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F021C",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F0F00": {
       "address": "0x085F0F00",
@@ -112137,7 +112137,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F021C",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F1034": {
       "address": "0x085F1034",
@@ -112494,7 +112494,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F021C",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F116C": {
       "address": "0x085F116C",
@@ -112839,7 +112839,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F021C",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F1288": {
       "address": "0x085F1288",
@@ -113240,7 +113240,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F021C",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F1AE0": {
       "address": "0x085F1AE0",
@@ -113541,7 +113541,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F1AE0",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F1C90": {
       "address": "0x085F1C90",
@@ -117566,7 +117566,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F1AE0",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F268C": {
       "address": "0x085F268C",
@@ -117683,7 +117683,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F1AE0",
-      "source_file": "data/generated/rodata/pokemon/7065-7066_pokemon_data.inc"
+      "source_file": "data/pokemon/7065-7066_pokemon_data.inc"
     },
     "085F3F74": {
       "address": "0x085F3F74",
@@ -117996,7 +117996,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F3F74",
-      "source_file": "data/generated/rodata/pokemon/7753_pokemon_table.inc"
+      "source_file": "data/pokemon/7753_pokemon_table.inc"
     },
     "085F4058": {
       "address": "0x085F4058",
@@ -118053,7 +118053,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F3F74",
-      "source_file": "data/generated/rodata/pokemon/7753_pokemon_table.inc"
+      "source_file": "data/pokemon/7753_pokemon_table.inc"
     },
     "085F4248": {
       "address": "0x085F4248",
@@ -118774,7 +118774,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F443C": {
       "address": "0x085F443C",
@@ -118871,7 +118871,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F4480": {
       "address": "0x085F4480",
@@ -118964,7 +118964,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F44C8": {
       "address": "0x085F44C8",
@@ -119069,7 +119069,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F4518": {
       "address": "0x085F4518",
@@ -119190,7 +119190,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F4578": {
       "address": "0x085F4578",
@@ -119291,7 +119291,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F45C4": {
       "address": "0x085F45C4",
@@ -119400,7 +119400,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F4618": {
       "address": "0x085F4618",
@@ -119509,7 +119509,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F466C": {
       "address": "0x085F466C",
@@ -119594,7 +119594,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F46AC": {
       "address": "0x085F46AC",
@@ -119703,7 +119703,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F4704": {
       "address": "0x085F4704",
@@ -119812,7 +119812,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F4758": {
       "address": "0x085F4758",
@@ -119897,7 +119897,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F4788": {
       "address": "0x085F4788",
@@ -119994,7 +119994,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F47D4": {
       "address": "0x085F47D4",
@@ -120119,7 +120119,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F482C": {
       "address": "0x085F482C",
@@ -120200,7 +120200,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F485C": {
       "address": "0x085F485C",
@@ -120289,7 +120289,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F4894": {
       "address": "0x085F4894",
@@ -120386,7 +120386,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F48D4": {
       "address": "0x085F48D4",
@@ -120475,7 +120475,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F491C": {
       "address": "0x085F491C",
@@ -120564,7 +120564,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F4960": {
       "address": "0x085F4960",
@@ -120657,7 +120657,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F4998": {
       "address": "0x085F4998",
@@ -120758,7 +120758,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F49E0": {
       "address": "0x085F49E0",
@@ -120871,7 +120871,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F4A3C": {
       "address": "0x085F4A3C",
@@ -121004,7 +121004,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F4A98": {
       "address": "0x085F4A98",
@@ -121913,7 +121913,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F4248",
-      "source_file": "data/generated/rodata/pokemon/7755_pokemon_data.inc"
+      "source_file": "data/pokemon/7755_pokemon_data.inc"
     },
     "085F6734": {
       "address": "0x085F6734",
@@ -122342,7 +122342,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F6734",
-      "source_file": "data/generated/rodata/parts/ribbons/7918_ribbon_text_ribbons_ribbon_text_gunknown_85f628c.inc"
+      "source_file": "data/parts/ribbons/7918_ribbon_text_ribbons_ribbon_text_gunknown_85f628c.inc"
     },
     "085F68FC": {
       "address": "0x085F68FC",
@@ -125011,7 +125011,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F6734",
-      "source_file": "data/generated/rodata/parts/ribbons/7918_ribbon_text_ribbons_ribbon_text_gunknown_85f628c.inc"
+      "source_file": "data/parts/ribbons/7918_ribbon_text_ribbons_ribbon_text_gunknown_85f628c.inc"
     },
     "085F7CB8": {
       "address": "0x085F7CB8",
@@ -126460,7 +126460,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F7C80",
-      "source_file": "data/generated/rodata/battle/7975_battle_data.inc"
+      "source_file": "data/battle/7975_battle_data.inc"
     },
     "085F80DC": {
       "address": "0x085F80DC",
@@ -128213,7 +128213,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F7C80",
-      "source_file": "data/generated/rodata/battle/7975_battle_data.inc"
+      "source_file": "data/battle/7975_battle_data.inc"
     },
     "085F85C8": {
       "address": "0x085F85C8",
@@ -129242,7 +129242,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F7C80",
-      "source_file": "data/generated/rodata/battle/7975_battle_data.inc"
+      "source_file": "data/battle/7975_battle_data.inc"
     },
     "085F88E4": {
       "address": "0x085F88E4",
@@ -131203,7 +131203,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F7C80",
-      "source_file": "data/generated/rodata/battle/7975_battle_data.inc"
+      "source_file": "data/battle/7975_battle_data.inc"
     },
     "085F8E50": {
       "address": "0x085F8E50",
@@ -131660,7 +131660,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F7C80",
-      "source_file": "data/generated/rodata/battle/7975_battle_data.inc"
+      "source_file": "data/battle/7975_battle_data.inc"
     },
     "085F8F84": {
       "address": "0x085F8F84",
@@ -132117,7 +132117,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F7C80",
-      "source_file": "data/generated/rodata/battle/7975_battle_data.inc"
+      "source_file": "data/battle/7975_battle_data.inc"
     },
     "085F90B0": {
       "address": "0x085F90B0",
@@ -132614,7 +132614,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F7C80",
-      "source_file": "data/generated/rodata/battle/7975_battle_data.inc"
+      "source_file": "data/battle/7975_battle_data.inc"
     },
     "085F9220": {
       "address": "0x085F9220",
@@ -133075,7 +133075,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F7C80",
-      "source_file": "data/generated/rodata/battle/7975_battle_data.inc"
+      "source_file": "data/battle/7975_battle_data.inc"
     },
     "085F9350": {
       "address": "0x085F9350",
@@ -134036,7 +134036,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F7C80",
-      "source_file": "data/generated/rodata/battle/7975_battle_data.inc"
+      "source_file": "data/battle/7975_battle_data.inc"
     },
     "085F95C4": {
       "address": "0x085F95C4",
@@ -135057,7 +135057,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F7C80",
-      "source_file": "data/generated/rodata/battle/7975_battle_data.inc"
+      "source_file": "data/battle/7975_battle_data.inc"
     },
     "085F98AC": {
       "address": "0x085F98AC",
@@ -135750,7 +135750,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F7C80",
-      "source_file": "data/generated/rodata/battle/7975_battle_data.inc"
+      "source_file": "data/battle/7975_battle_data.inc"
     },
     "085FA278": {
       "address": "0x085FA278",
@@ -137079,7 +137079,7 @@
         "tail": ""
       },
       "source_block_address": "0x085F7C80",
-      "source_file": "data/generated/rodata/battle/7975_battle_data.inc"
+      "source_file": "data/battle/7975_battle_data.inc"
     },
     "08912744": {
       "address": "0x08912744",
@@ -143920,7 +143920,7 @@
         "tail": ""
       },
       "source_block_address": "0x08912454",
-      "source_file": "data/generated/rodata/battle/8112-8114_battle_data.inc"
+      "source_file": "data/battle/8112-8114_battle_data.inc"
     },
     "08C004EC": {
       "address": "0x08C004EC",
@@ -143949,7 +143949,7 @@
         "tail": ""
       },
       "source_block_address": "0x08C004EC",
-      "source_file": "data/generated/rodata/battle/8116_battle_data.inc"
+      "source_file": "data/battle/8116_battle_data.inc"
     },
     "08C00530": {
       "address": "0x08C00530",
@@ -144902,7 +144902,7 @@
         "tail": ""
       },
       "source_block_address": "0x08C00530",
-      "source_file": "data/generated/rodata/battle/8116_battle_data.inc"
+      "source_file": "data/battle/8116_battle_data.inc"
     },
     "08C00758": {
       "address": "0x08C00758",
@@ -145811,7 +145811,7 @@
         "tail": ""
       },
       "source_block_address": "0x08C00530",
-      "source_file": "data/generated/rodata/battle/8116_battle_data.inc"
+      "source_file": "data/battle/8116_battle_data.inc"
     },
     "08D77BB0": {
       "address": "0x08D77BB0",
@@ -146928,7 +146928,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D77BB0",
-      "source_file": "data/generated/rodata/moves/8157_mon_icon_old_unown.inc"
+      "source_file": "data/moves/8157_mon_icon_old_unown.inc"
     },
     "08D77E0C": {
       "address": "0x08D77E0C",
@@ -149341,7 +149341,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D77BB0",
-      "source_file": "data/generated/rodata/moves/8157_mon_icon_old_unown.inc"
+      "source_file": "data/moves/8157_mon_icon_old_unown.inc"
     },
     "08D783BC": {
       "address": "0x08D783BC",
@@ -149378,7 +149378,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D77BB0",
-      "source_file": "data/generated/rodata/moves/8157_mon_icon_old_unown.inc"
+      "source_file": "data/moves/8157_mon_icon_old_unown.inc"
     },
     "08D783F4": {
       "address": "0x08D783F4",
@@ -150275,7 +150275,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D77BB0",
-      "source_file": "data/generated/rodata/moves/8157_mon_icon_old_unown.inc"
+      "source_file": "data/moves/8157_mon_icon_old_unown.inc"
     },
     "08D786A4": {
       "address": "0x08D786A4",
@@ -152944,7 +152944,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D77BB0",
-      "source_file": "data/generated/rodata/moves/8157_mon_icon_old_unown.inc"
+      "source_file": "data/moves/8157_mon_icon_old_unown.inc"
     },
     "08D78D1C": {
       "address": "0x08D78D1C",
@@ -152985,7 +152985,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D77BB0",
-      "source_file": "data/generated/rodata/moves/8157_mon_icon_old_unown.inc"
+      "source_file": "data/moves/8157_mon_icon_old_unown.inc"
     },
     "08D78D5C": {
       "address": "0x08D78D5C",
@@ -153882,7 +153882,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D77BB0",
-      "source_file": "data/generated/rodata/moves/8157_mon_icon_old_unown.inc"
+      "source_file": "data/moves/8157_mon_icon_old_unown.inc"
     },
     "08D7900C": {
       "address": "0x08D7900C",
@@ -156355,7 +156355,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D77BB0",
-      "source_file": "data/generated/rodata/moves/8157_mon_icon_old_unown.inc"
+      "source_file": "data/moves/8157_mon_icon_old_unown.inc"
     },
     "08D79604": {
       "address": "0x08D79604",
@@ -156392,7 +156392,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D77BB0",
-      "source_file": "data/generated/rodata/moves/8157_mon_icon_old_unown.inc"
+      "source_file": "data/moves/8157_mon_icon_old_unown.inc"
     },
     "08D7964C": {
       "address": "0x08D7964C",
@@ -157289,7 +157289,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D77BB0",
-      "source_file": "data/generated/rodata/moves/8157_mon_icon_old_unown.inc"
+      "source_file": "data/moves/8157_mon_icon_old_unown.inc"
     },
     "08D798FC": {
       "address": "0x08D798FC",
@@ -159694,7 +159694,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D77BB0",
-      "source_file": "data/generated/rodata/moves/8157_mon_icon_old_unown.inc"
+      "source_file": "data/moves/8157_mon_icon_old_unown.inc"
     },
     "08D79EB4": {
       "address": "0x08D79EB4",
@@ -159731,7 +159731,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D77BB0",
-      "source_file": "data/generated/rodata/moves/8157_mon_icon_old_unown.inc"
+      "source_file": "data/moves/8157_mon_icon_old_unown.inc"
     },
     "08D79EFC": {
       "address": "0x08D79EFC",
@@ -160628,7 +160628,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D77BB0",
-      "source_file": "data/generated/rodata/moves/8157_mon_icon_old_unown.inc"
+      "source_file": "data/moves/8157_mon_icon_old_unown.inc"
     },
     "08D7A1AC": {
       "address": "0x08D7A1AC",
@@ -163033,7 +163033,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7A1AC",
-      "source_file": "data/generated/rodata/moves/8157_mon_icon_old_unown.inc"
+      "source_file": "data/moves/8157_mon_icon_old_unown.inc"
     },
     "08D7A780": {
       "address": "0x08D7A780",
@@ -163074,7 +163074,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7A1AC",
-      "source_file": "data/generated/rodata/moves/8157_mon_icon_old_unown.inc"
+      "source_file": "data/moves/8157_mon_icon_old_unown.inc"
     },
     "08D7A7C4": {
       "address": "0x08D7A7C4",
@@ -163971,7 +163971,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7A7C4",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7AA74": {
       "address": "0x08D7AA74",
@@ -166360,7 +166360,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7A7C4",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7B01C": {
       "address": "0x08D7B01C",
@@ -166393,7 +166393,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7A7C4",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7B05C": {
       "address": "0x08D7B05C",
@@ -167290,7 +167290,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7A7C4",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7B30C": {
       "address": "0x08D7B30C",
@@ -169687,7 +169687,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7A7C4",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7B8CC": {
       "address": "0x08D7B8CC",
@@ -169716,7 +169716,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7A7C4",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7B908": {
       "address": "0x08D7B908",
@@ -170613,7 +170613,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7A7C4",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7BBB8": {
       "address": "0x08D7BBB8",
@@ -173050,7 +173050,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7BBB8",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7C1B0": {
       "address": "0x08D7C1B0",
@@ -173087,7 +173087,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7BBB8",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7C1F8": {
       "address": "0x08D7C1F8",
@@ -173984,7 +173984,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7C1F8",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7C4A8": {
       "address": "0x08D7C4A8",
@@ -174017,7 +174017,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7C1F8",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7DCA8": {
       "address": "0x08D7DCA8",
@@ -174914,7 +174914,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7DCA8",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7DF58": {
       "address": "0x08D7DF58",
@@ -174947,7 +174947,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7DCA8",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7E2D8": {
       "address": "0x08D7E2D8",
@@ -174996,7 +174996,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7E2D8",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7E324": {
       "address": "0x08D7E324",
@@ -177481,7 +177481,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7E2D8",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7E8AC": {
       "address": "0x08D7E8AC",
@@ -177922,7 +177922,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7E2D8",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7EA68": {
       "address": "0x08D7EA68",
@@ -180987,7 +180987,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7E2D8",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7F178": {
       "address": "0x08D7F178",
@@ -181400,7 +181400,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7E2D8",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7F3B0": {
       "address": "0x08D7F3B0",
@@ -183709,7 +183709,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7E2D8",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7F8F4": {
       "address": "0x08D7F8F4",
@@ -184234,7 +184234,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7E2D8",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D7FF68": {
       "address": "0x08D7FF68",
@@ -184795,7 +184795,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7FF68",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D800F8": {
       "address": "0x08D800F8",
@@ -187352,7 +187352,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7FF68",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D80704": {
       "address": "0x08D80704",
@@ -187801,7 +187801,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7FF68",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D808A8": {
       "address": "0x08D808A8",
@@ -190018,7 +190018,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7FF68",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D80DF4": {
       "address": "0x08D80DF4",
@@ -190479,7 +190479,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7FF68",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D80F40": {
       "address": "0x08D80F40",
@@ -192764,7 +192764,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7FF68",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D81520": {
       "address": "0x08D81520",
@@ -193249,7 +193249,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D7FF68",
-      "source_file": "data/generated/rodata/moves/8158-8160_moves_data.inc"
+      "source_file": "data/moves/8158-8160_moves_data.inc"
     },
     "08D854AC": {
       "address": "0x08D854AC",
@@ -193282,7 +193282,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D854AC",
-      "source_file": "data/generated/rodata/parts/moves/8161_move_data_moves_move_data_gunknown_8d835a0.inc"
+      "source_file": "data/parts/moves/8161_move_data_moves_move_data_gunknown_8d835a0.inc"
     },
     "08D854CC": {
       "address": "0x08D854CC",
@@ -193615,7 +193615,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D854AC",
-      "source_file": "data/generated/rodata/parts/moves/8161_move_data_moves_move_data_gunknown_8d835a0.inc"
+      "source_file": "data/parts/moves/8161_move_data_moves_move_data_gunknown_8d835a0.inc"
     },
     "08D85F34": {
       "address": "0x08D85F34",
@@ -193976,7 +193976,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D85F34",
-      "source_file": "data/generated/rodata/moves/8162_intro_credits.inc"
+      "source_file": "data/moves/8162_intro_credits.inc"
     },
     "08D86114": {
       "address": "0x08D86114",
@@ -194973,7 +194973,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D85F34",
-      "source_file": "data/generated/rodata/moves/8162_intro_credits.inc"
+      "source_file": "data/moves/8162_intro_credits.inc"
     },
     "08D86534": {
       "address": "0x08D86534",
@@ -197854,7 +197854,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D85F34",
-      "source_file": "data/generated/rodata/moves/8162_intro_credits.inc"
+      "source_file": "data/moves/8162_intro_credits.inc"
     },
     "08D8B6CC": {
       "address": "0x08D8B6CC",
@@ -198339,7 +198339,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8B6CC",
-      "source_file": "data/generated/rodata/moves/8163_moves_data.inc"
+      "source_file": "data/moves/8163_moves_data.inc"
     },
     "08D8B7F0": {
       "address": "0x08D8B7F0",
@@ -199352,7 +199352,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8B6CC",
-      "source_file": "data/generated/rodata/moves/8163_moves_data.inc"
+      "source_file": "data/moves/8163_moves_data.inc"
     },
     "08D8C150": {
       "address": "0x08D8C150",
@@ -199805,7 +199805,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8C150",
-      "source_file": "data/generated/rodata/moves/8163_moves_data.inc"
+      "source_file": "data/moves/8163_moves_data.inc"
     },
     "08D8C358": {
       "address": "0x08D8C358",
@@ -200230,7 +200230,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8C150",
-      "source_file": "data/generated/rodata/moves/8163_moves_data.inc"
+      "source_file": "data/moves/8163_moves_data.inc"
     },
     "08D8C5A8": {
       "address": "0x08D8C5A8",
@@ -200627,7 +200627,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8C150",
-      "source_file": "data/generated/rodata/moves/8163_moves_data.inc"
+      "source_file": "data/moves/8163_moves_data.inc"
     },
     "08D8CCAC": {
       "address": "0x08D8CCAC",
@@ -201044,7 +201044,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8CCAC",
-      "source_file": "data/generated/rodata/moves/8163_moves_data.inc"
+      "source_file": "data/moves/8163_moves_data.inc"
     },
     "08D8CF28": {
       "address": "0x08D8CF28",
@@ -201641,7 +201641,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8CCAC",
-      "source_file": "data/generated/rodata/moves/8163_moves_data.inc"
+      "source_file": "data/moves/8163_moves_data.inc"
     },
     "08D8D114": {
       "address": "0x08D8D114",
@@ -202014,7 +202014,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8CCAC",
-      "source_file": "data/generated/rodata/moves/8163_moves_data.inc"
+      "source_file": "data/moves/8163_moves_data.inc"
     },
     "08D8D1EC": {
       "address": "0x08D8D1EC",
@@ -202287,7 +202287,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8CCAC",
-      "source_file": "data/generated/rodata/moves/8163_moves_data.inc"
+      "source_file": "data/moves/8163_moves_data.inc"
     },
     "08D8D288": {
       "address": "0x08D8D288",
@@ -202552,7 +202552,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8CCAC",
-      "source_file": "data/generated/rodata/moves/8163_moves_data.inc"
+      "source_file": "data/moves/8163_moves_data.inc"
     },
     "08D8DA9C": {
       "address": "0x08D8DA9C",
@@ -202573,7 +202573,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8DA9C",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8DAC4": {
       "address": "0x08D8DAC4",
@@ -203106,7 +203106,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8DA9C",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8DC80": {
       "address": "0x08D8DC80",
@@ -203127,7 +203127,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8DA9C",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8DC98": {
       "address": "0x08D8DC98",
@@ -205056,7 +205056,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8DA9C",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8E608": {
       "address": "0x08D8E608",
@@ -205081,7 +205081,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8DA9C",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8E62C": {
       "address": "0x08D8E62C",
@@ -205546,7 +205546,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8DA9C",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8E824": {
       "address": "0x08D8E824",
@@ -205739,7 +205739,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8DA9C",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8E8F8": {
       "address": "0x08D8E8F8",
@@ -205760,7 +205760,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8DA9C",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8E920": {
       "address": "0x08D8E920",
@@ -205869,7 +205869,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8DA9C",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8EA1C": {
       "address": "0x08D8EA1C",
@@ -205902,7 +205902,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8E9FC",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8EA3C": {
       "address": "0x08D8EA3C",
@@ -205927,7 +205927,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8E9FC",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8EA54": {
       "address": "0x08D8EA54",
@@ -205948,7 +205948,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8E9FC",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8EA6C": {
       "address": "0x08D8EA6C",
@@ -205969,7 +205969,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8E9FC",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8EA8C": {
       "address": "0x08D8EA8C",
@@ -205990,7 +205990,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8E9FC",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8EAAC": {
       "address": "0x08D8EAAC",
@@ -206399,7 +206399,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8E9FC",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8EC78": {
       "address": "0x08D8EC78",
@@ -207064,7 +207064,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8EBD8",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8EE94": {
       "address": "0x08D8EE94",
@@ -207085,7 +207085,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8EBD8",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8EEB8": {
       "address": "0x08D8EEB8",
@@ -207106,7 +207106,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8EBD8",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8EEE0": {
       "address": "0x08D8EEE0",
@@ -207195,7 +207195,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8EBD8",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8EF34": {
       "address": "0x08D8EF34",
@@ -207216,7 +207216,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8EBD8",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8EF4C": {
       "address": "0x08D8EF4C",
@@ -207757,7 +207757,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8EBD8",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8F0CC": {
       "address": "0x08D8F0CC",
@@ -208342,7 +208342,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8EBD8",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8F238": {
       "address": "0x08D8F238",
@@ -208891,7 +208891,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8EBD8",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8F3A0": {
       "address": "0x08D8F3A0",
@@ -208912,7 +208912,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8EBD8",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8F3C8": {
       "address": "0x08D8F3C8",
@@ -209305,7 +209305,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8EBD8",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8F524": {
       "address": "0x08D8F524",
@@ -209326,7 +209326,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8EBD8",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8F54C": {
       "address": "0x08D8F54C",
@@ -210095,7 +210095,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8EBD8",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8F734": {
       "address": "0x08D8F734",
@@ -211524,7 +211524,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8EBD8",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8FB30": {
       "address": "0x08D8FB30",
@@ -211545,7 +211545,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8EBD8",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8FB50": {
       "address": "0x08D8FB50",
@@ -211570,7 +211570,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8FB50",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8FB74": {
       "address": "0x08D8FB74",
@@ -211647,7 +211647,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8FB50",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D8FBA4": {
       "address": "0x08D8FBA4",
@@ -211820,7 +211820,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D8FB50",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D90028": {
       "address": "0x08D90028",
@@ -217197,7 +217197,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D90028",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D90CF0": {
       "address": "0x08D90CF0",
@@ -217218,7 +217218,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D90028",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D90D0C": {
       "address": "0x08D90D0C",
@@ -217591,7 +217591,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D90028",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D91000": {
       "address": "0x08D91000",
@@ -217607,7 +217607,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D90028",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D91028": {
       "address": "0x08D91028",
@@ -217623,7 +217623,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D90028",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D91050": {
       "address": "0x08D91050",
@@ -217844,7 +217844,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D90028",
-      "source_file": "data/generated/rodata/moves/8164_mon_icon_egg.inc"
+      "source_file": "data/moves/8164_mon_icon_egg.inc"
     },
     "08D927A0": {
       "address": "0x08D927A0",
@@ -218341,7 +218341,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D927A0",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D92AB4": {
       "address": "0x08D92AB4",
@@ -218357,7 +218357,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D927A0",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D92ADC": {
       "address": "0x08D92ADC",
@@ -218778,7 +218778,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D927A0",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D92D3C": {
       "address": "0x08D92D3C",
@@ -219291,7 +219291,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D927A0",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D92E78": {
       "address": "0x08D92E78",
@@ -219312,7 +219312,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D927A0",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D92EA0": {
       "address": "0x08D92EA0",
@@ -220833,7 +220833,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D927A0",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D93294": {
       "address": "0x08D93294",
@@ -221290,7 +221290,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93294",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D9340C": {
       "address": "0x08D9340C",
@@ -221311,7 +221311,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93294",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D93428": {
       "address": "0x08D93428",
@@ -221568,7 +221568,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93294",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D93914": {
       "address": "0x08D93914",
@@ -222041,7 +222041,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D93AF8": {
       "address": "0x08D93AF8",
@@ -222114,7 +222114,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D93B38": {
       "address": "0x08D93B38",
@@ -222135,7 +222135,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D93B50": {
       "address": "0x08D93B50",
@@ -222204,7 +222204,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D93B90": {
       "address": "0x08D93B90",
@@ -222225,7 +222225,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D93BA8": {
       "address": "0x08D93BA8",
@@ -222246,7 +222246,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D93BC0": {
       "address": "0x08D93BC0",
@@ -222267,7 +222267,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D93BD8": {
       "address": "0x08D93BD8",
@@ -222976,7 +222976,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D93DE4": {
       "address": "0x08D93DE4",
@@ -222997,7 +222997,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D93E00": {
       "address": "0x08D93E00",
@@ -223086,7 +223086,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D93E4C": {
       "address": "0x08D93E4C",
@@ -223107,7 +223107,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D93E68": {
       "address": "0x08D93E68",
@@ -223280,7 +223280,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D93FF0": {
       "address": "0x08D93FF0",
@@ -223301,7 +223301,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D94010": {
       "address": "0x08D94010",
@@ -224218,7 +224218,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D94304": {
       "address": "0x08D94304",
@@ -224239,7 +224239,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D94320": {
       "address": "0x08D94320",
@@ -225136,7 +225136,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D9460C": {
       "address": "0x08D9460C",
@@ -226125,7 +226125,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D94988": {
       "address": "0x08D94988",
@@ -226146,7 +226146,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D949A4": {
       "address": "0x08D949A4",
@@ -226311,7 +226311,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D94A44": {
       "address": "0x08D94A44",
@@ -226332,7 +226332,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D93914",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D96358": {
       "address": "0x08D96358",
@@ -227233,7 +227233,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D96358",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D9664C": {
       "address": "0x08D9664C",
@@ -227254,7 +227254,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D96358",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D96674": {
       "address": "0x08D96674",
@@ -227667,7 +227667,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D96358",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D96788": {
       "address": "0x08D96788",
@@ -227688,7 +227688,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D96358",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D96B54": {
       "address": "0x08D96B54",
@@ -228185,7 +228185,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D96B54",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D96C8C": {
       "address": "0x08D96C8C",
@@ -228654,7 +228654,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D96B54",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D96E0C": {
       "address": "0x08D96E0C",
@@ -228951,7 +228951,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D96B54",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D96F20": {
       "address": "0x08D96F20",
@@ -228972,7 +228972,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D96B54",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D96F44": {
       "address": "0x08D96F44",
@@ -229625,7 +229625,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D96B54",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D971A4": {
       "address": "0x08D971A4",
@@ -229641,7 +229641,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D96B54",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D971CC": {
       "address": "0x08D971CC",
@@ -233026,7 +233026,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D96B54",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D97C54": {
       "address": "0x08D97C54",
@@ -233051,7 +233051,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D97C54",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D97CBC": {
       "address": "0x08D97CBC",
@@ -233428,7 +233428,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D97C54",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D97DB8": {
       "address": "0x08D97DB8",
@@ -233453,7 +233453,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D97C54",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D98E8C": {
       "address": "0x08D98E8C",
@@ -233994,7 +233994,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D98E8C",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D99030": {
       "address": "0x08D99030",
@@ -237907,7 +237907,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D98E8C",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D99BAC": {
       "address": "0x08D99BAC",
@@ -241892,7 +241892,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D98E8C",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D9A70C": {
       "address": "0x08D9A70C",
@@ -241908,7 +241908,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D98E8C",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D9AA84": {
       "address": "0x08D9AA84",
@@ -242421,7 +242421,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D9AA84",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D9ABE4": {
       "address": "0x08D9ABE4",
@@ -243074,7 +243074,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D9AA84",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D9B13C": {
       "address": "0x08D9B13C",
@@ -243090,7 +243090,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D9B13C",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D9B164": {
       "address": "0x08D9B164",
@@ -243191,7 +243191,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D9B13C",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D9B1A4": {
       "address": "0x08D9B1A4",
@@ -243216,7 +243216,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D9B13C",
-      "source_file": "data/generated/rodata/moves/8166-8168_moves_data.inc"
+      "source_file": "data/moves/8166-8168_moves_data.inc"
     },
     "08D9B2E8": {
       "address": "0x08D9B2E8",
@@ -243717,7 +243717,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D9B2E8",
-      "source_file": "data/generated/rodata/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc"
+      "source_file": "data/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc"
     },
     "08D9B428": {
       "address": "0x08D9B428",
@@ -243834,7 +243834,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D9B2E8",
-      "source_file": "data/generated/rodata/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc"
+      "source_file": "data/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc"
     },
     "08D9B6BC": {
       "address": "0x08D9B6BC",
@@ -243899,7 +243899,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D9B6BC",
-      "source_file": "data/generated/rodata/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc"
+      "source_file": "data/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc"
     },
     "08D9B72C": {
       "address": "0x08D9B72C",
@@ -244548,7 +244548,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D9B6BC",
-      "source_file": "data/generated/rodata/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc"
+      "source_file": "data/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc"
     },
     "08D9B9EC": {
       "address": "0x08D9B9EC",
@@ -244564,7 +244564,7 @@
         "tail": ""
       },
       "source_block_address": "0x08D9B6BC",
-      "source_file": "data/generated/rodata/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc"
+      "source_file": "data/parts/moves/8169_move_data_moves_move_data_gunknown_8d9b2c0.inc"
     },
     "08DBA860": {
       "address": "0x08DBA860",
@@ -252569,7 +252569,7 @@
         "tail": ""
       },
       "source_block_address": "0x08DBA860",
-      "source_file": "data/generated/rodata/moves/8175_moves_data.inc"
+      "source_file": "data/moves/8175_moves_data.inc"
     },
     "08DBC238": {
       "address": "0x08DBC238",
@@ -253322,7 +253322,7 @@
         "tail": ""
       },
       "source_block_address": "0x08DBA860",
-      "source_file": "data/generated/rodata/moves/8175_moves_data.inc"
+      "source_file": "data/moves/8175_moves_data.inc"
     },
     "08DBC538": {
       "address": "0x08DBC538",
@@ -253379,7 +253379,7 @@
         "tail": ""
       },
       "source_block_address": "0x08DBA860",
-      "source_file": "data/generated/rodata/moves/8175_moves_data.inc"
+      "source_file": "data/moves/8175_moves_data.inc"
     },
     "08DBC568": {
       "address": "0x08DBC568",
@@ -253444,7 +253444,7 @@
         "tail": ""
       },
       "source_block_address": "0x08DBA860",
-      "source_file": "data/generated/rodata/moves/8175_moves_data.inc"
+      "source_file": "data/moves/8175_moves_data.inc"
     }
   },
   "format": "pokeemerald-jp-exact-lz77-plan-v1"

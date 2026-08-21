@@ -8,8 +8,8 @@ import re
 from pathlib import Path
 
 
-FRAME_REFS = Path("data/generated/rodata/maps/0640-0643_maps_data.inc")
-FIELD_OBJECT_TILES = Path("data/generated/rodata/maps/0625_maps_data.inc")
+FRAME_REFS = Path("data/maps/0640-0643_maps_data.inc")
+FIELD_OBJECT_TILES = Path("data/maps/0625_maps_data.inc")
 LABEL_ROOT = Path("data/generated/rodata")
 FIELD_TILES_BIN = "build/graphics/analyzed/field_object_tiles_846fa4c.4bpp"
 FIELD_TILES_START = 0x0846FA4C

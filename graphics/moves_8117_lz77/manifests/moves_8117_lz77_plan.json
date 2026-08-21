@@ -3,7 +3,7 @@
   "repo": "/home/arash/workspaces/pokemon_emerald",
   "branch": "issue27-fix_inc_files",
   "head": "0d2fc29c30b3a30f93c5be6aea1333816caeef2f",
-  "target_file": "data/generated/rodata/moves/8117_moves_data.inc",
+  "target_file": "data/moves/8117_moves_data.inc",
   "output_root": "graphics/moves_8117_lz77",
   "segments": [
     {

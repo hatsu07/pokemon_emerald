@@ -10,7 +10,7 @@
       "is_secondary": false,
       "callback": "InitTilesetAnim_General",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43910
       },
       "labels": {
@@ -50,7 +50,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_Fallarbor",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43914
       },
       "labels": {
@@ -90,7 +90,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_BattleFrontierOutsideEast",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43918
       },
       "labels": {
@@ -130,7 +130,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_BattleFrontierOutsideWest",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43922
       },
       "labels": {
@@ -170,7 +170,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_BattlePyramid",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43926
       },
       "labels": {
@@ -210,7 +210,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_Mauville",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43930
       },
       "labels": {
@@ -250,7 +250,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_BikeShop",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43934
       },
       "labels": {
@@ -290,7 +290,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_Fortree",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43938
       },
       "labels": {
@@ -330,7 +330,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_Lilycove",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43942
       },
       "labels": {
@@ -370,7 +370,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_Mossdeep",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43946
       },
       "labels": {
@@ -410,7 +410,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_Petalburg",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43950
       },
       "labels": {
@@ -450,7 +450,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_Cave",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43954
       },
       "labels": {
@@ -490,7 +490,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_Pacifidlog",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43958
       },
       "labels": {
@@ -530,7 +530,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_Dewford",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43962
       },
       "labels": {
@@ -570,7 +570,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_EverGrande",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43966
       },
       "labels": {
@@ -610,7 +610,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_Lavaridge",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43970
       },
       "labels": {
@@ -650,7 +650,7 @@
       "is_secondary": false,
       "callback": "InitTilesetAnim_Building",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43974
       },
       "labels": {
@@ -690,7 +690,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43978
       },
       "labels": {
@@ -730,7 +730,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43982
       },
       "labels": {
@@ -770,7 +770,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_MauvilleGym",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43986
       },
       "labels": {
@@ -810,7 +810,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43990
       },
       "labels": {
@@ -850,7 +850,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43994
       },
       "labels": {
@@ -890,7 +890,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 43998
       },
       "labels": {
@@ -930,7 +930,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44002
       },
       "labels": {
@@ -970,7 +970,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44006
       },
       "labels": {
@@ -1010,7 +1010,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44010
       },
       "labels": {
@@ -1050,7 +1050,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44014
       },
       "labels": {
@@ -1090,7 +1090,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44018
       },
       "labels": {
@@ -1130,7 +1130,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44022
       },
       "labels": {
@@ -1170,7 +1170,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44026
       },
       "labels": {
@@ -1210,7 +1210,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_Slateport",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44030
       },
       "labels": {
@@ -1250,7 +1250,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44034
       },
       "labels": {
@@ -1290,7 +1290,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44038
       },
       "labels": {
@@ -1330,7 +1330,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44042
       },
       "labels": {
@@ -1370,7 +1370,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44046
       },
       "labels": {
@@ -1410,7 +1410,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44050
       },
       "labels": {
@@ -1450,7 +1450,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44054
       },
       "labels": {
@@ -1490,7 +1490,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44058
       },
       "labels": {
@@ -1530,7 +1530,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44062
       },
       "labels": {
@@ -1570,7 +1570,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44066
       },
       "labels": {
@@ -1610,7 +1610,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44070
       },
       "labels": {
@@ -1650,7 +1650,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44074
       },
       "labels": {
@@ -1690,7 +1690,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44078
       },
       "labels": {
@@ -1730,7 +1730,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44082
       },
       "labels": {
@@ -1770,7 +1770,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_EliteFour",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44086
       },
       "labels": {
@@ -1810,7 +1810,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44090
       },
       "labels": {
@@ -1850,7 +1850,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_SootopolisGym",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44094
       },
       "labels": {
@@ -1890,7 +1890,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44098
       },
       "labels": {
@@ -1930,7 +1930,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44102
       },
       "labels": {
@@ -1970,7 +1970,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44106
       },
       "labels": {
@@ -2010,7 +2010,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44110
       },
       "labels": {
@@ -2050,7 +2050,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_Rustboro",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44114
       },
       "labels": {
@@ -2090,7 +2090,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44118
       },
       "labels": {
@@ -2130,7 +2130,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44122
       },
       "labels": {
@@ -2170,7 +2170,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44126
       },
       "labels": {
@@ -2210,7 +2210,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44130
       },
       "labels": {
@@ -2250,7 +2250,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44134
       },
       "labels": {
@@ -2290,7 +2290,7 @@
       "is_secondary": false,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0612_items_data.inc",
+        "file": "data/items/0612_items_data.inc",
         "line": 44138
       },
       "labels": {
@@ -2330,7 +2330,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_Underwater",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 13
       },
       "labels": {
@@ -2370,7 +2370,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 17
       },
       "labels": {
@@ -2410,7 +2410,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 21
       },
       "labels": {
@@ -2450,7 +2450,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_BattleDome",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 25
       },
       "labels": {
@@ -2490,7 +2490,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 29
       },
       "labels": {
@@ -2530,7 +2530,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 33
       },
       "labels": {
@@ -2570,7 +2570,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 37
       },
       "labels": {
@@ -2610,7 +2610,7 @@
       "is_secondary": true,
       "callback": "InitTilesetAnim_Sootopolis",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 41
       },
       "labels": {
@@ -2650,7 +2650,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 45
       },
       "labels": {
@@ -2690,7 +2690,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 49
       },
       "labels": {
@@ -2730,7 +2730,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 53
       },
       "labels": {
@@ -2770,7 +2770,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 57
       },
       "labels": {
@@ -2810,7 +2810,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 61
       },
       "labels": {
@@ -2850,7 +2850,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 65
       },
       "labels": {
@@ -2890,7 +2890,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 69
       },
       "labels": {
@@ -2930,7 +2930,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 73
       },
       "labels": {
@@ -2970,7 +2970,7 @@
       "is_secondary": true,
       "callback": "0",
       "source": {
-        "file": "data/generated/rodata/items/0614_items_data.inc",
+        "file": "data/items/0614_items_data.inc",
         "line": 77
       },
       "labels": {

@@ -8,7 +8,7 @@ import struct
 from pathlib import Path
 
 
-DEFAULT_INPUT = Path("data/generated/rodata/maps/0640-0643_maps_data.inc")
+DEFAULT_INPUT = Path("data/maps/0640-0643_maps_data.inc")
 ROM = Path("baserom.gba")
 START = 0x084E1900
 OAM_START = 0x084E1940

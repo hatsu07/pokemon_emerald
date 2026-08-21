@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 ROM = Path("baserom.gba")
-TARGET = Path("data/generated/rodata/maps/0640-0643_maps_data.inc")
+TARGET = Path("data/maps/0640-0643_maps_data.inc")
 GRAPHICS_START = 0x084E428C
 PIC_BLOCK_START = 0x084E429C
 PIC_TABLE_START = 0x084E4C04

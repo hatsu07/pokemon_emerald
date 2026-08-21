@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 ROM = Path("baserom.gba")
-TARGET = Path("data/generated/rodata/maps/0640-0643_maps_data.inc")
+TARGET = Path("data/maps/0640-0643_maps_data.inc")
 LABEL_ROOT = Path("data/generated/rodata")
 SPRITE_PALETTES_START = 0x084E401C
 PLAYER_REFLECTION_START = 0x084E4154

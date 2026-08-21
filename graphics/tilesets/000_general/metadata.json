@@ -6,7 +6,7 @@
   "is_secondary": false,
   "callback": "InitTilesetAnim_General",
   "source": {
-    "file": "data/generated/rodata/items/0612_items_data.inc",
+    "file": "data/items/0612_items_data.inc",
     "line": 43910
   },
   "labels": {

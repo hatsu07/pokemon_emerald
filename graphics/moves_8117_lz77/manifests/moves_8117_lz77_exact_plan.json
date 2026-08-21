@@ -1,7 +1,7 @@
 {
   "format": "pokeemerald-jp-exact-lz77-plan-v1",
   "source_format": "pokeemerald-jp-unresolved-lz77-png-plan-v1",
-  "target_file": "data/generated/rodata/moves/8117_moves_data.inc",
+  "target_file": "data/moves/8117_moves_data.inc",
   "asset_root": "graphics/moves_8117_lz77",
   "rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
   "extraction_head": "0d2fc29c30b3a30f93c5be6aea1333816caeef2f",

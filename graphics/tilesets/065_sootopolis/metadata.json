@@ -6,7 +6,7 @@
   "is_secondary": true,
   "callback": "InitTilesetAnim_Sootopolis",
   "source": {
-    "file": "data/generated/rodata/items/0614_items_data.inc",
+    "file": "data/items/0614_items_data.inc",
     "line": 41
   },
   "labels": {

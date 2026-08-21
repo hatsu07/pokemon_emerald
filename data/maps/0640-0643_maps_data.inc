@@ -6764,6 +6764,6 @@ gTextWindowFrameTiles_1: @ 0x084E6E00
 	@ Editable 24x24 indexed PNG; 9 row-major 4bpp tiles.
 	.incbin "build/graphics/ui/text_window/frame_01.4bpp"
 gTextWindowFrameTiles_2: @ 0x084E6F20
-	@ Continues in data/generated/rodata/maps/modules/0644-0650_modules_data.inc at 0x084E6F3F.
+	@ Continues in data/maps/modules/0644-0650_modules_data.inc at 0x084E6F3F.
 	@ First 0x1F bytes of the split frame-2 build product.
 	.incbin "build/graphics/ui/text_window/frame_02.4bpp", 0, 0x1F

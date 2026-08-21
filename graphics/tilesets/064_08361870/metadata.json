@@ -6,7 +6,7 @@
   "is_secondary": true,
   "callback": "0",
   "source": {
-    "file": "data/generated/rodata/items/0614_items_data.inc",
+    "file": "data/items/0614_items_data.inc",
     "line": 37
   },
   "labels": {
