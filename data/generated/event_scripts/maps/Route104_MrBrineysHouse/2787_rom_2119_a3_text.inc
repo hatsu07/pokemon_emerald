@@ -190,7 +190,7 @@ EventScript_JP_08211B94: @ 0x08211B94
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8008
-	.4byte 0x08243625 @ PetalburgCity_Ext_FaceOriginalDirection
+	.4byte PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
