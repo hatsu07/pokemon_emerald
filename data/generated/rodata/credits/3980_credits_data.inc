@@ -137,7 +137,7 @@ gLotteryCornerData_085C7A34: @ 0x085C7A34
 	.globl gLotteryCornerData_085C7A74
 gLotteryCornerData_085C7A74:
 	.globl sDiplomaTilemap
-	@ exact GBA LZ77 for Pokedex Diploma from editable graphics/diploma/tilemap.tilemap.u16: compressed=0x73C, decompressed=0x1000
+	@ exact GBA LZ77 for Pokedex Diploma from editable graphics/diploma/tilemap.u16: compressed=0x73C, decompressed=0x1000
 sDiplomaTilemap:
 	@ canonical ROM range 0x085C7A74-0x085C81AF
 	.incbin "build/graphics/diploma/tilemap.bin.lz"

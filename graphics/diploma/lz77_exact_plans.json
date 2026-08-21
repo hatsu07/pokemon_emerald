@@ -782,7 +782,7 @@
       "label": "sDiplomaTilemap",
       "rom_address": "0x085C7A74",
       "source": "src/diploma.c",
-      "source_asset": "graphics/diploma/tilemap.tilemap.u16",
+      "source_asset": "graphics/diploma/tilemap.u16",
       "source_line": 310,
       "tail": "00"
     },

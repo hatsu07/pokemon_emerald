@@ -1215,7 +1215,7 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     elseif("${RELATIVE_OUTPUT}" STREQUAL
             "build/graphics/cave_transition/tilemap.bin.lz")
         set(CAVE_TRANSITION_INPUT
-            "${CMAKE_SOURCE_DIR}/graphics/cave_transition/tilemap.tilemap.u16")
+            "${CMAKE_SOURCE_DIR}/graphics/cave_transition/tilemap.u16")
         set(CAVE_TRANSITION_PLAN
             "${CMAKE_SOURCE_DIR}/graphics/cave_transition/lz77_exact_plans.json")
         add_custom_command(
@@ -3688,8 +3688,8 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
                 repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
                 --stem "gDomeTourneyInfoCard_Tilemap"
-                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card_tilemap.tilemap.u16" "${OUTPUT_ABS}"
-            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card_tilemap.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card_tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card_tilemap.u16"
                     "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
                     "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
@@ -4426,7 +4426,7 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
         set(DIPLOMA_PLAN
             "${CMAKE_SOURCE_DIR}/graphics/diploma/lz77_exact_plans.json")
         set(DIPLOMA_INPUT
-            "${CMAKE_SOURCE_DIR}/graphics/diploma/tilemap.tilemap.u16")
+            "${CMAKE_SOURCE_DIR}/graphics/diploma/tilemap.u16")
 
         add_custom_command(
             OUTPUT "${OUTPUT_ABS}"
