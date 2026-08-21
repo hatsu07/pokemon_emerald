@@ -161,8 +161,6 @@ gPokenavUnk4Data_085F4CFC: @ 0x085F4CFC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x11F5, 0x0000, 0x206A, 0x0000, 0x3402, 0x0000
-	.globl gPokemonPointerTable_Rom_5F4D08
-gPokemonPointerTable_Rom_5F4D08: @ 0x085F4D08
 	.4byte NULL
 	.4byte sub_081CBF9C
 	.4byte sub_081CBFCC
@@ -175,8 +173,6 @@ gPokenavUnk4Data_085F4D1C: @ 0x085F4D1C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x8 bytes=8
 	.byte 0x98, 0x4A, 0x5F, 0x08, 0x00, 0x08, 0x06, 0x00
-	.globl gPokemonPointerTable_Rom_5F4D24
-gPokemonPointerTable_Rom_5F4D24: @ 0x085F4D24
 	@ Resolved pointer table; original ROM range 0x5F4D24..0x5F4D33.
 	.4byte gPokenavUnk4Data_085F4228
 	.4byte TYPE_WATER
@@ -419,8 +415,6 @@ gPokenavUnk4Data_085F5988: @ 0x085F5988
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0D01, 0x031C, 0x0F02, 0x0040
-	.globl gPokemonPointerTable_Rom_5F5990
-gPokemonPointerTable_Rom_5F5990: @ 0x085F5990
 	.4byte NULL
 	.4byte sub_081CDADC
 	.4byte sub_081CDA30
@@ -428,16 +422,12 @@ gPokemonPointerTable_Rom_5F5990: @ 0x085F5990
 	.4byte sub_081CDD44
 	.4byte sub_081CDE1C
 	.4byte sub_081CDE60
-	.globl gPokemonU32Table_Rom_5F59AC
-gPokemonU32Table_Rom_5F59AC: @ 0x085F59AC
 	@ Resolved pointer table; original ROM range 0x5F59AC..0x5F59BF.
 	.4byte MAP_NUM_ROUTE107
 	.4byte PSR_ABT_MODE
 	.4byte MAP_NUM_ROUTE109
 	.4byte MAP_NUM_ROUTE118
 	.4byte MAP_NUM_ROUTE132
-	.globl gPokemonPointerTable_Rom_5F59C0
-gPokemonPointerTable_Rom_5F59C0: @ 0x085F59C0
 	.4byte sub_081CE868
 	.4byte sub_081CE8F8
 	.4byte sub_081CE90C
@@ -486,8 +476,6 @@ gPokenavUnk4Data_085F5BA0: @ 0x085F5BA0
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x7A, 0x30, 0x00, 0x00
-	.globl gPokemonPointerTable_Rom_5F5BA4
-gPokemonPointerTable_Rom_5F5BA4: @ 0x085F5BA4
 	.4byte NULL
 	.4byte sub_081CECAC
 	.4byte sub_081CED14
@@ -502,8 +490,6 @@ gPokenavUnk4Data_085F5BC0: @ 0x085F5BC0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0101, 0x0706, 0x0102, 0x0014
-	.globl gPokemonPointerTable_Rom_5F5BC8
-gPokemonPointerTable_Rom_5F5BC8: @ 0x085F5BC8
 	.4byte sub_081CF260
 	.4byte sub_081CF300
 	.4byte sub_081CF314
@@ -551,8 +537,6 @@ gPokenavUnk4Data_085F5DA4: @ 0x085F5DA4
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x7A, 0x30, 0x00, 0x00
-	.globl gPokemonPointerTable_Rom_5F5DA8
-gPokemonPointerTable_Rom_5F5DA8: @ 0x085F5DA8
 	.4byte NULL
 	.4byte sub_081CF6D0
 	.4byte sub_081CF738

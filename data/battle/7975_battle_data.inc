@@ -225,8 +225,6 @@ gMenuSpecializedData_085FA8A0: @ 0x085FA8A0
 	@ analyzed canonical ROM range 0x085FA8A0-0x085FA8B7
 sSpriteTemplate_085FA8A0: @ 0x085FA8A0
 	rodata_sprite_template 0x0064, 0x0064, 0x085FA870, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	.globl gBattleU32Table_Rom_5FA8B8
-gBattleU32Table_Rom_5FA8B8: @ 0x085FA8B8
 	@ Resolved pointer table; original ROM range 0x5FA8B8..0x5FA8BF.
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0

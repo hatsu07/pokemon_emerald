@@ -123,8 +123,6 @@ sPartyBoxSelectedForActionPalIds2: @ 0x085E13A6
 sPartyBoxNoMonPalIds: @ 0x085E13A9
 	@ semantic Party Menu palette table; exact match to pret/pokeemerald src/data/party_menu.h
 	.byte 0x11, 0x1B, 0x1C
-	.globl gMenuPointerTable_Rom_5E13AC
-gMenuPointerTable_Rom_5E13AC: @ 0x085E13AC
 	.4byte gText_Rom_5CA036
 	.4byte gText_Rom_5CA159
 	.4byte gText_Rom_5CA169
@@ -288,8 +286,6 @@ gPartyMenuData_085E1636: @ 0x085E1636
 	@ ANALYSIS: U16_TABLE size=0x1E entries=15
 	.2byte 0x000F, 0x0094, 0x00F9, 0x0046, 0x0039, 0x0013, 0x0123, 0x007F
 	.2byte 0x0064, 0x005B, 0x0122, 0x00D0, 0x0087, 0x00E6, 0x000E
-	.globl gMenuPointerTable_Rom_5E1654
-gMenuPointerTable_Rom_5E1654: @ 0x085E1654
 	@ Resolved pointer table; original ROM range 0x5E1654..0x5E16C3.
 	.4byte SetUpFieldMove_Cut
 	.4byte TYPE_GHOST
@@ -444,8 +440,6 @@ gPartyMenuData_085E18C0: @ 0x085E18C0
 	@ analyzed canonical ROM range 0x085E18C0-0x085E18D7
 sSpriteTemplate_085E18C0: @ 0x085E18C0
 	rodata_sprite_template 0x04B2, 0x04B2, 0x085E1848, 0x085E1890, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	.globl gMenuPointerTable_Rom_5E18D8
-gMenuPointerTable_Rom_5E18D8: @ 0x085E18D8
 	@ Resolved pointer table; original ROM range 0x5E18D8..0x5E18F7.
 	.4byte DMA_SRC_FIXED
 	.4byte SECRET_BASE_METATILE_POWDER_SNOW_MAT_1

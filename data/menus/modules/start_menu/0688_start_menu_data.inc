@@ -1,5 +1,3 @@
-	.globl gMenuPointerTable_Rom_4E8BFC
-gMenuPointerTable_Rom_4E8BFC: @ 0x084E8BFC
 	.4byte gText_Rom_4E8BA8
 	.4byte gText_Rom_4E8BB2
 	.4byte gText_Rom_4E8BBC

@@ -422,8 +422,6 @@ gDoorAnimGraphicsTable:
 	.2byte 0
 	.byte 0, 0
 	.4byte 0, 0
-	.globl gMapU32Table_Rom_46F81C
-gMapU32Table_Rom_46F81C: @ 0x0846F81C
 	.4byte MetatileBehavior_IsTrickHouseSlipperyFloor
 	.4byte MetatileBehavior_IsIce
 	.4byte MetatileBehavior_IsWalkSouth
@@ -442,8 +440,6 @@ gMapU32Table_Rom_46F81C: @ 0x0846F81C
 	.4byte MetatileBehavior_IsSecretBaseJumpMat
 	.4byte MetatileBehavior_IsSecretBaseSpinMat
 	.4byte MetatileBehavior_IsMuddySlope
-	.globl gMapU32Table_Rom_46F864
-gMapU32Table_Rom_46F864: @ 0x0846F864
 	.4byte ForcedMovement_None
 	.4byte ForcedMovement_Slip
 	.4byte ForcedMovement_Slip
@@ -463,8 +459,6 @@ gMapU32Table_Rom_46F864: @ 0x0846F864
 	.4byte ForcedMovement_0xBB
 	.4byte ForcedMovement_0xBC
 	.4byte ForcedMovement_MuddySlope
-	.globl gMapU32Table_Rom_46F8B0
-gMapU32Table_Rom_46F8B0: @ 0x0846F8B0
 	.4byte PlayerNotOnBikeNotMoving
 	.4byte PlayerNotOnBikeTurningInPlace
 	.4byte PlayerNotOnBikeMoving
@@ -486,8 +480,6 @@ gAcroBikeMetatileCollisionTypeIds: @ 0x0846F8D0
 	.byte 0x0C @ vertical rail
 	.byte 0x0D @ horizontal rail
 	.byte 0x00, 0x00, 0x00 @ padding
-	.globl gMapU32Table_Rom_46F8D8
-gMapU32Table_Rom_46F8D8: @ 0x0846F8D8
 	.4byte PlayerAvatarTransition_Normal
 	.4byte PlayerAvatarTransition_MachBike
 	.4byte PlayerAvatarTransition_AcroBike
@@ -496,8 +488,6 @@ gMapU32Table_Rom_46F8D8: @ 0x0846F8D8
 	.4byte PlayerAvatarTransition_ReturnToField
 	.4byte PlayerAvatarTransition_Dummy
 	.4byte PlayerAvatarTransition_Dummy
-	.globl gMapU32Table_Rom_46F8F8
-gMapU32Table_Rom_46F8F8: @ 0x0846F8F8
 	.4byte MetatileBehavior_IsSouthArrowWarp
 	.4byte MetatileBehavior_IsNorthArrowWarp
 	.4byte MetatileBehavior_IsWestArrowWarp
@@ -566,22 +556,14 @@ gPlayerAvatarGraphicsIdToStateFlagTable: @ 0x0846F92C
 	.byte 0x5B, 0x04 @ acro bike
 	.byte 0x5C, 0x08 @ surfing
 	.byte 0x70, 0x10 @ underwater
-	.globl gMapU32Table_Rom_46F940
-gMapU32Table_Rom_46F940: @ 0x0846F940
 	.4byte MetatileBehavior_IsSouthArrowWarp
 	.4byte MetatileBehavior_IsNorthArrowWarp
 	.4byte MetatileBehavior_IsWestArrowWarp
 	.4byte MetatileBehavior_IsEastArrowWarp
-	.globl gMapPointerTable_Rom_46F950
-gMapPointerTable_Rom_46F950: @ 0x0846F950
 	.4byte sub_0808BD08
 	.4byte do_boulder_dust
 	.4byte sub_0808BDE8
-	.globl gMapU32Table_Rom_46F95C
-gMapU32Table_Rom_46F95C: @ 0x0846F95C
 	.4byte PlayerAvatar_DoSecretBaseMatJump
-	.globl gMapU32Table_Rom_46F960
-gMapU32Table_Rom_46F960: @ 0x0846F960
 	.4byte PlayerAvatar_SecretBaseMatSpinStep0
 	.4byte PlayerAvatar_SecretBaseMatSpinStep1
 	.4byte PlayerAvatar_SecretBaseMatSpinStep2
@@ -598,8 +580,6 @@ gFieldPlayerAvatarData_0846F974: @ 0x0846F974
 gSecretBaseSpinMatMovementActions: @ 0x0846F974
 	.byte 0x10, 0x10, 0x11, 0x12, 0x13
 	.byte 0x00, 0x00, 0x00 @ padding
-	.globl gMapU32Table_Rom_46F97C
-gMapU32Table_Rom_46F97C: @ 0x0846F97C
 	.4byte Fishing1
 	.4byte Fishing2
 	.4byte Fishing3

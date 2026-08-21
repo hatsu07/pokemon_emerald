@@ -3443,8 +3443,6 @@ gBattleAnimBgCntGet:
 	.byte 0x08, 0x0A, 0x0C, 0x0E
 	@ original alignment before sBattleIntroSlideFuncs
 	.byte 0x00, 0x00
-	.globl gMapU32Table_Rom_573008
-gMapU32Table_Rom_573008: @ 0x08573008
 sBattleIntroSlideFuncs:
 	.4byte BattleIntroSlide1
 	.4byte BattleIntroSlide1
@@ -3456,21 +3454,15 @@ sBattleIntroSlideFuncs:
 	.4byte BattleIntroSlide1
 	.4byte BattleIntroSlide3
 	.4byte BattleIntroSlide3
-	.globl gMapU32Table_Rom_573030
-gMapU32Table_Rom_573030: @ 0x08573030
 sMachBikeTransitions:
 	.4byte MachBikeTransition_FaceDirection
 	.4byte MachBikeTransition_TurnDirection
 	.4byte MachBikeTransition_TrySpeedUp
 	.4byte MachBikeTransition_TrySlowDown
-	.globl gMapU32Table_Rom_573040
-gMapU32Table_Rom_573040: @ 0x08573040
 sMachBikeSpeedCallbacks:
 	.4byte PlayerGoSpeed1
 	.4byte PlayerGoSpeed2
 	.4byte PlayerGoSpeed4
-	.globl gMapPointerTable_Rom_57304C
-gMapPointerTable_Rom_57304C: @ 0x0857304C
 sAcroBikeTransitions:
 	.4byte AcroBikeTransition_TurnJump
 	.4byte AcroBikeTransition_TurnDirection
@@ -3485,8 +3477,6 @@ sAcroBikeTransitions:
 	.4byte AcroBikeTransition_WheelieMoving
 	.4byte AcroBikeTransition_WheelieRisingMoving
 	.4byte AcroBikeTransition_WheelieLoweringMoving
-	.globl gMapU32Table_Rom_573080
-gMapU32Table_Rom_573080: @ 0x08573080
 sAcroBikeInputHandlers:
 	.4byte AcroBikeHandleInputNormal
 	.4byte AcroBikeHandleInputTurning
@@ -3540,8 +3530,6 @@ sAcroBikeTricksList:
 	.4byte sAcroBikeJumpTimerList
 	.4byte sAcroBikeJumpTimerList
 	.4byte 0x00000004
-	.globl gMapU32Table_Rom_573114
-gMapU32Table_Rom_573114: @ 0x08573114
 sQuizLadyEasyChatScreens:
 	@ Resolved pointer table; original ROM range 0x573114..0x573133.
 	.4byte ABILITY_LEVITATE

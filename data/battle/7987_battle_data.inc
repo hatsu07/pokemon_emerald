@@ -12,8 +12,6 @@ gMenuSpecializedData_085FA9C7: @ 0x085FA9C7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x5 bytes=5
 	.byte 0xAE, 0xFF, 0x00, 0x00, 0x00
-	.globl gBattlePointerTable_Rom_5FA9CC
-gBattlePointerTable_Rom_5FA9CC: @ 0x085FA9CC
 	.4byte gText_Rom_5FA9A4
 	.4byte gText_Rom_5FA9AB
 	.4byte gText_Rom_5FA9B0

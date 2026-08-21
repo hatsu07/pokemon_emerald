@@ -254,8 +254,6 @@ gCableCarData_085AC9FA: @ 0x085AC9FA
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x6 bytes=6
 	.byte 0x00, 0x3C, 0x78, 0xAA, 0x00, 0x00
-	.globl gBattlePointerTable_Rom_5ACA00
-gBattlePointerTable_Rom_5ACA00: @ 0x085ACA00
 	.4byte sub_08150A44
 	.4byte sub_08150AD0
 	@ pret/pokeemerald-jp direct xref for 0x085ACA08: save.s: UpdateSaveAddresses
@@ -289,12 +287,8 @@ gFieldEffectHelpersData_085ACA4A: @ 0x085ACA4A
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0xA entries=5
 	.2byte 0x0004, 0x0004, 0x0004, 0x0010, 0x0000
-	.globl gBattleU32Table_Rom_5ACA54
-gBattleU32Table_Rom_5ACA54: @ 0x085ACA54
 	.4byte FadeFootprintsTireTracks_Step0
 	.4byte FadeFootprintsTireTracks_Step1
-	.globl gBattleU32Table_Rom_5ACA5C
-gBattleU32Table_Rom_5ACA5C: @ 0x085ACA5C
 	.4byte UpdateAshFieldEffect_Step0
 	.4byte UpdateAshFieldEffect_Step1
 	.4byte UpdateAshFieldEffect_Step2
@@ -321,8 +315,6 @@ gFieldEffectHelpersData_085ACA72: @ 0x085ACA72
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x00FF
 	.2byte 0xFF00, 0x0000, 0x00FF, 0xFFFF, 0xFF00, 0x00FF, 0xFFFF, 0xFFFF
 	.2byte 0xFFFF, 0xFEFF, 0x0000
-	.globl gBattleU32Table_Rom_5ACB08
-gBattleU32Table_Rom_5ACB08: @ 0x085ACB08
 	.4byte ContestAICmd_score
 	.4byte ContestAICmd_get_turn
 	.4byte ContestAICmd_if_turn_less_than
@@ -715,8 +707,6 @@ gBattleAnimEffects3Data_085AD2AC: @ 0x085AD2AC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x78, 0x50, 0x28, 0x00
-	.globl gBattleU32Table_Rom_5AD2B0
-gBattleU32Table_Rom_5AD2B0: @ 0x085AD2B0
 	@ Resolved pointer table; original ROM range 0x5AD2B0..0x5AD2B7.
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0

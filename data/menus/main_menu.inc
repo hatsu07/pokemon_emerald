@@ -152,8 +152,6 @@ gMainMenuData_082D2980 = sBirchBgTemplate
 gMainMenuData_082D2984 = sScrollArrowsTemplate_MainMenu
 	.globl gMainMenuData_082D29A4
 gMainMenuData_082D29A4 = sSpriteAffineAnimTable_PlayerShrink
-	.globl gMenuPointerTable_Rom_2D29A8
-gMenuPointerTable_Rom_2D29A8: @ 0x082D29A8
 	.4byte gText_Rom_5C8E92
 	.4byte NULL
 	.4byte gText_Rom_5C8E96

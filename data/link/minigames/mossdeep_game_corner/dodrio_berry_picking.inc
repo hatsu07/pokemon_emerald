@@ -234,8 +234,6 @@ gText_Rom_2CB414: @ 0x082CB414
 	.if (. - gText_Rom_2CB414) < 0x8
 	.space 0x8 - (. - gText_Rom_2CB414)
 	.endif
-	.globl gDodrioBerryPickingPointerTable_Rom_2CB41C
-gDodrioBerryPickingPointerTable_Rom_2CB41C: @ 0x082CB41C
 	.4byte gText_Rom_2CB404
 	.4byte gText_Rom_2CB404
 	.4byte gText_Rom_2CB404

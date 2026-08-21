@@ -144,8 +144,6 @@ gPokeblockSpokeblockData_0859206C: @ 0x0859206C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x11F0, 0x0000, 0x01E1, 0x0000, 0x21DE, 0x0000
-	.globl gPokemonPointerTable_Rom_592078
-gPokemonPointerTable_Rom_592078: @ 0x08592078
 	.4byte NULL
 	.4byte gText_Rom_5C97C4
 	.4byte gText_Rom_5C97CC
@@ -161,8 +159,6 @@ gPokemonPointerTable_Rom_592078: @ 0x08592078
 	.4byte gText_Rom_5C9825
 	.4byte gText_Rom_5C982D
 	.4byte gText_Rom_5C9835
-	.globl gPokemonPointerTable_Rom_5920B4
-gPokemonPointerTable_Rom_5920B4: @ 0x085920B4
 	.4byte gText_Rom_5C93A3
 	.4byte sub_08136AC0
 	.4byte gText_Rom_5C93A7
@@ -499,8 +495,6 @@ gFieldSpecialsData_08592608: @ 0x08592608
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x1500, 0x0801, 0x0F04, 0x0008
-	.globl gPokemonPointerTable_Rom_592610
-gPokemonPointerTable_Rom_592610: @ 0x08592610
 	.4byte gText_Rom_5CB0B4
 	.4byte gText_Rom_5CB0AF
 	.4byte gText_Rom_5CB0AA
@@ -556,8 +550,6 @@ gFieldSpecialsData_08592686: @ 0x08592686
 	.2byte 0x0202, 0x0301, 0x0405, 0x0504, 0x0604, 0x0700, 0x0804, 0x090B
 	.2byte 0x0A05, 0x0B05, 0x0C02, 0x0D06, 0x0E03, 0x0F02, 0x100C, 0x100A
 	.2byte 0x1A35, 0x193C, 0xFFFF
-	.globl gPokemonPointerTable_Rom_5926AC
-gPokemonPointerTable_Rom_5926AC: @ 0x085926AC
 	.4byte gText_Rom_236C08
 	.4byte gText_Rom_236C60
 	.4byte gText_Rom_236CD0
@@ -787,8 +779,6 @@ sPointerTable_08592A9C:
 	.4byte gText_Rom_2394A8 @ +0x58
 	.4byte gText_Rom_2394E2 @ +0x5C
 	.4byte gText_Rom_2391A0 @ +0x60
-	.globl gPokemonPointerTable_Rom_592B00
-gPokemonPointerTable_Rom_592B00: @ 0x08592B00
 	.4byte gText_Rom_237AB5
 	.4byte gText_Rom_237B0D
 	.4byte gText_Rom_237B64
@@ -801,8 +791,6 @@ gPokemonPointerTable_Rom_592B00: @ 0x08592B00
 	.4byte gText_Rom_237DEA
 	.4byte gText_Rom_237E47
 	.4byte gText_Rom_237EA0
-	.globl gPokemonPointerTable_Rom_592B30
-gPokemonPointerTable_Rom_592B30: @ 0x08592B30
 	.4byte gText_Rom_237FD4
 	.4byte gText_Rom_23802A
 	.4byte gText_Rom_23807F
@@ -867,8 +855,6 @@ gFieldSpecialsData_08592BB8: @ 0x08592BB8
 	@ ANALYSIS: U16_TABLE size=0x14 entries=10
 	.2byte 0x00C8, 0x00B4, 0x00B7, 0x00B9, 0x00B3, 0x00BA, 0x00BB, 0x00C4
 	.2byte 0x00C6, 0xFFFF
-	.globl gPokemonPointerTable_Rom_592BCC
-gPokemonPointerTable_Rom_592BCC: @ 0x08592BCC
 	.4byte gText_Rom_236701
 	.4byte gText_Rom_23671C
 	.4byte gText_Rom_23673C
@@ -880,16 +866,12 @@ gPokemonPointerTable_Rom_592BCC: @ 0x08592BCC
 	.4byte gText_Rom_2367F7
 	.4byte gText_Rom_236817
 	.4byte gText_Exit
-	.globl gPokemonPointerTable_Rom_592BF8
-gPokemonPointerTable_Rom_592BF8: @ 0x08592BF8
 	.4byte gText_Rom_236836
 	.4byte gText_Rom_236836
 	.4byte gText_Rom_236836
 	.4byte gText_Rom_236836
 	.4byte gText_Rom_236836
 	.4byte gText_Exit
-	.globl gPokemonPointerTable_Rom_592C10
-gPokemonPointerTable_Rom_592C10: @ 0x08592C10
 	.4byte gText_Rom_236854
 	.4byte gText_Rom_236866
 	.4byte gText_Rom_236878
@@ -897,8 +879,6 @@ gPokemonPointerTable_Rom_592C10: @ 0x08592C10
 	.4byte gText_Rom_23689C
 	.4byte gText_Rom_2368AE
 	.4byte gText_Exit
-	.globl gPokemonPointerTable_Rom_592C2C
-gPokemonPointerTable_Rom_592C2C: @ 0x08592C2C
 	.4byte gText_Rom_2368C1
 	.4byte gText_Rom_2368E5
 	.4byte gText_Rom_236904
@@ -932,8 +912,6 @@ gFieldSpecialsData_08592C7C: @ 0x08592C7C
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0100, 0x0A07, 0x0F06, 0x0020
-	.globl gPokemonPointerTable_Rom_592C84
-gPokemonPointerTable_Rom_592C84: @ 0x08592C84
 	.4byte gText_Rom_23A00F
 	.4byte gText_Rom_23A02B
 	.4byte gText_Rom_23A049
@@ -945,8 +923,6 @@ gPokemonPointerTable_Rom_592C84: @ 0x08592C84
 	.4byte gText_Rom_23A0F2
 	.4byte gText_Rom_23A10D
 	.4byte gText_Exit
-	.globl gPokemonPointerTable_Rom_592CB0
-gPokemonPointerTable_Rom_592CB0: @ 0x08592CB0
 	.4byte gText_Rom_23A127
 	.4byte gText_Rom_23A13B
 	.4byte gText_Rom_23A158

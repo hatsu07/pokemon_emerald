@@ -1772,8 +1772,6 @@ gBattleFrontierMons: @ 0x085B8700
 	.if (. - gBattleFrontierMons) != 0x3720
 	.error "gBattleFrontierMons size mismatch"
 	.endif
-	.globl gBattleU16Table_Rom_5B8700
-	.set gBattleU16Table_Rom_5B8700, gBattleFrontierMons
 
 	@ pret/pokeemerald-jp direct xref for 0x085BBE20: apprentice.s: Script_SetPlayerApprenticeTrainerGfxId, sub_081A1418; battle_tower.s: FacilityClassToGraphicsId, FillEReaderTrainerWithPlayerData, GetBattleFacilityTrainerGfxId, SetBattleFacilityTrainerGfxId, sub_08163E0C
 	.include "data/battle_frontier/battle_tower_tables.inc"

@@ -990,14 +990,6 @@ sStevenMons: @ 0x085BC614
 	@ authoritative after assembly.
 
 	@ Compatibility aliases for previous auto-generated labels.
-	.globl gBattleU16Table_Rom_5BBE20
-	.set gBattleU16Table_Rom_5BBE20, gTowerMaleFacilityClasses
-	.globl gBattleU16Table_Rom_5BBE3E
-	.set gBattleU16Table_Rom_5BBE3E, gTowerFemaleFacilityClasses
-	.globl gBattleU16Table_Rom_5BBE52
-	.set gBattleU16Table_Rom_5BBE52, gTowerMaleTrainerGfxIds
-	.globl gBattleU16Table_Rom_5BBE70
-	.set gBattleU16Table_Rom_5BBE70, gTowerFemaleTrainerGfxIds
 	.globl gBattleTowerData_085BBE84
 	.set gBattleTowerData_085BBE84, sRubyFacilityClassToEmerald
 	.globl gBattleTowerData_085BC444

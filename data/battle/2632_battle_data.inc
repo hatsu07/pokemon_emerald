@@ -1,5 +1,3 @@
-	.globl gBattleU32Table_Rom_57AAA0
-gBattleU32Table_Rom_57AAA0: @ 0x0857AAA0
 	@ Resolved pointer table; original ROM range 0x57AAA0..0x57AAA7.
 	.4byte OAM_SIZE_3
 	@ ANALYSIS: ZERO_PADDING size=0x4
@@ -90,8 +88,6 @@ gMauvilleOldManData_0857AC08: @ 0x0857AC08
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x201E, 0x1A1A, 0x0A0F, 0x201A, 0x2696, 0x26A5
-	.globl gBattlePointerTable_Rom_57AC14
-gBattlePointerTable_Rom_57AC14: @ 0x0857AC14
 	.4byte gText_Rom_2593C5
 	.4byte gText_Rom_2593CF
 	.4byte gText_Rom_2593D9
@@ -100,8 +96,6 @@ gBattlePointerTable_Rom_57AC14: @ 0x0857AC14
 	.4byte gText_Rom_2593FB
 	.4byte gText_Rom_259407
 	.4byte gText_Rom_259412
-	.globl gBattlePointerTable_Rom_57AC34
-gBattlePointerTable_Rom_57AC34: @ 0x0857AC34
 	.4byte gText_Rom_25942A
 	.4byte gText_Rom_259445
 	.4byte gText_Rom_259461
@@ -110,8 +104,6 @@ gBattlePointerTable_Rom_57AC34: @ 0x0857AC34
 	.4byte gText_Rom_2594C5
 	.4byte gText_Rom_2594DF
 	.4byte gText_Rom_2594F8
-	.globl gBattleU32Table_Rom_57AC54
-gBattleU32Table_Rom_57AC54: @ 0x0857AC54
 	@ Resolved pointer table; original ROM range 0x57AC54..0x57AC6B.
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
@@ -169,8 +161,6 @@ gMauvilleOldManData_0857AE9C: @ 0x0857AE9C
 	.4byte MauvilleCity_PokemonCenter_1F_Text_RodeCableCarStory + 0x4F @ +0x4
 	.4byte EventText_JP_08256224 @ +0x8
 	.4byte EventText_JP_0825622F @ +0xC
-	.globl gBattleU32Table_Rom_57AEAC
-gBattleU32Table_Rom_57AEAC: @ 0x0857AEAC
 	@ Resolved pointer table; original ROM range 0x57AEAC..0x57AEB3.
 	.4byte ABILITY_TRACE
 	.4byte TYPE_STEEL
@@ -392,8 +382,6 @@ gMenuHelpersData_0857B0F4: @ 0x0857B0F4
 	.4byte gMailData_0857B0B4 + 0x4 @ +0x4
 	.4byte gMailData_0857B0B4 + 0x24 @ +0x8
 	.4byte 0 @ +0xC
-	.globl gBattlePointerTable_Rom_57B104
-gBattlePointerTable_Rom_57B104: @ 0x0857B104
 	.4byte gDummySpriteAffineAnimTable
 	.4byte SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x0857B10C: heal_location.s: GetHealLocationIndexByMap

@@ -25,8 +25,6 @@ gCastformFrontSpriteCoords: @ 0x084FE684
 	.if (. - gCastformFrontSpriteCoords) != 0x10
 	.error "gCastformFrontSpriteCoords size mismatch"
 	.endif
-	.globl gMenuU16Table_Rom_4FE684
-	.set gMenuU16Table_Rom_4FE684, gCastformFrontSpriteCoords
 
 	@ Castform opponent-side sprite elevation for Normal/Fire/Water/Ice.
 	.globl sCastformElevations

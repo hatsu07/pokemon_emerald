@@ -4029,8 +4029,6 @@ gBattleFrontierTrainers: @ 0x085B4A10
 
 	@ Compatibility aliases for legacy auto-generated labels.
 	@ These aliases emit no bytes; canonical source above owns the data.
-	.globl gMoveU8Table_Rom_5ADBF4
-	.set gMoveU8Table_Rom_5ADBF4, gBattleFrontierHeldItems + 0x0
 	.globl gText_Rom_5B0BE9
 	.set gText_Rom_5B0BE9, gBattleFrontierHeldItems + 0x2FF5
 	.globl gText_Rom_5B0C2D
@@ -4039,8 +4037,6 @@ gBattleFrontierTrainers: @ 0x085B4A10
 	.set gText_Rom_5B0C71, gBattleFrontierHeldItems + 0x307D
 	.globl gText_Rom_5B0CB5
 	.set gText_Rom_5B0CB5, gBattleFrontierHeldItems + 0x30C1
-	.globl gMoveU8Table_Rom_5B4A10
-	.set gMoveU8Table_Rom_5B4A10, gBattleFrontierHeldItems + 0x6E1C
 	.globl gText_Rom_5B4A3B
 	.set gText_Rom_5B4A3B, gBattleFrontierHeldItems + 0x6E47
 	.globl gText_Rom_5B4B81

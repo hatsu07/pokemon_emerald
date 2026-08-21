@@ -29,8 +29,6 @@ gPokemonJumpData_082CECF0: @ 0x082CECF0
 	.2byte 0x016B, 0x0002, 0x016F, 0x0002, 0x0153, 0x0002, 0x0141, 0x0002
 	.2byte 0x015F, 0x0000, 0x014C, 0x0002, 0x0158, 0x0002, 0x0186, 0x0001
 	.2byte 0x0168, 0x0000, 0x015A, 0x0000, 0x0175, 0x0001, 0x018B, 0x0001
-	.globl gPokemonJumpPointerTable_Rom_2CEE80
-gPokemonJumpPointerTable_Rom_2CEE80: @ 0x082CEE80
 	.4byte sub_0802AF3C
 	.4byte sub_0802AFC8
 	.4byte sub_0802B05C
@@ -40,8 +38,6 @@ gPokemonJumpPointerTable_Rom_2CEE80: @ 0x082CEE80
 	.4byte sub_0802B358
 	.4byte sub_0802B3AC
 	.4byte sub_0802B414
-	.globl gPokemonJumpPointerTable_Rom_2CEEA4
-gPokemonJumpPointerTable_Rom_2CEEA4: @ 0x082CEEA4
 	.4byte sub_0802AF90
 	.4byte sub_0802B010
 	.4byte sub_0802B0A8
@@ -343,8 +339,6 @@ gPokemonJumpData_082D1A00: @ 0x082D1A00
 	@ ANALYSIS: U16_TABLE size=0x18 entries=12
 	.2byte 0x1300, 0x0200, 0x0202, 0x0013, 0x0800, 0x0200, 0x0202, 0x0017
 	.2byte 0x00FF, 0x0000, 0x0000, 0x0000
-	.globl gPokemonJumpPointerTable_Rom_2D1A18
-gPokemonJumpPointerTable_Rom_2D1A18: @ 0x082D1A18
 	@ Resolved pointer table; original ROM range 0x2D1A18..0x2D1A67.
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0

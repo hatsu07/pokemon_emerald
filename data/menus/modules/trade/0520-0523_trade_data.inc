@@ -1,5 +1,3 @@
-	.globl gMenuPointerTable_Rom_300BDC
-gMenuPointerTable_Rom_300BDC: @ 0x08300BDC
 	.4byte gText_Rom_300B38
 	.4byte gText_Rom_300B59
 	.4byte gText_Rom_300B75

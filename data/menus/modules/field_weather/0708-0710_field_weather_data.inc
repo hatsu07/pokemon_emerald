@@ -5,8 +5,6 @@ gMenuU8Table_Rom_526DE8: @ 0x08526DE8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0xF4, 0x80, 0x03, 0x02
-	.globl gMenuU32Table_Rom_526DEC
-gMenuU32Table_Rom_526DEC: @ 0x08526DEC
 	.4byte None_Init
 	.4byte SetWeatherScreenFadeOut
 	.4byte None_Init
@@ -67,8 +65,6 @@ gMenuU32Table_Rom_526DEC: @ 0x08526DEC
 	.4byte Bubbles_Main
 	.4byte Bubbles_InitAll
 	.4byte Bubbles_Finish
-	.globl gMenuU32Table_Rom_526EDC
-gMenuU32Table_Rom_526EDC: @ 0x08526EDC
 	.4byte UpdateWeatherGammaShift
 	.4byte FadeInScreenWithWeather
 	.4byte DoNothing

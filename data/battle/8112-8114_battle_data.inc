@@ -351,8 +351,6 @@ gLibcData_0890F224: @ 0x0890F224
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x43, 0x00, 0x00, 0x00
-	.globl gBattleU32Table_Rom_90F228
-gBattleU32Table_Rom_90F228: @ 0x0890F228
 	@ Resolved pointer table; original ROM range 0x90F228..0x90F233.
 	.4byte TYPE_ROCK
 	.4byte MAP_NUM_ROUTE110
@@ -413,8 +411,6 @@ gMultiBootProgram_EReader_Start: @ 0x0890F374
 	.globl gMultiBootProgram_EReader_End
 gMultiBootProgram_EReader_End: @ 0x08912454
 	@ pret/pokeemerald-jp direct xref for 0x08912454: berry_fix_program.s: berry_fix_main; ereader_screen.s: sub_081D4704
-	.globl gBattleU8Table_Rom_912454
-gBattleU8Table_Rom_912454: @ 0x08912454
 	@ analyzed canonical ROM range 0x08912454-0x089158DF
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal

@@ -1,11 +1,7 @@
-	.globl gMenuU32Table_Rom_52B3D8
-gMenuU32Table_Rom_52B3D8: @ 0x0852B3D8
 	.4byte GetTrainerApproachDistanceSouth
 	.4byte GetTrainerApproachDistanceNorth
 	.4byte GetTrainerApproachDistanceWest
 	.4byte GetTrainerApproachDistanceEast
-	.globl gMenuPointerTable_Rom_52B3E8
-gMenuPointerTable_Rom_52B3E8: @ 0x0852B3E8
 	.4byte sub_080B38D0
 	.4byte TrainerExclamationMark
 	.4byte WaitTrainerExclamationMark
@@ -32,8 +28,6 @@ sPointerTable_0852B418:
 	.byte 0xD8, 0xB2, 0x52, 0x08, 0x80, 0x00, 0x00, 0x00, 0x58, 0xB3, 0x52, 0x08, 0x80, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x3C, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x01, 0x00, 0x3C, 0x00, 0xFF, 0xFF, 0x00, 0x00
 	.byte 0x48, 0xB4, 0x52, 0x08, 0x50, 0xB4, 0x52, 0x08
-	.globl gMenuU8Table_Rom_52B460
-gMenuU8Table_Rom_52B460: @ 0x0852B460
 	@ ANALYSIS: SOURCE_RANGE offset=0x52B460, size=0x18
 	@ semanticized-mass: resolved embedded ROM pointers
 	@ ANALYSIS: U8_DATA size=0x10 bytes=16

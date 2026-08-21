@@ -725,8 +725,6 @@ gBattleAnimScriptCmdTable: @ 0x084FE5A4
 	.4byte sub_080A550C @ opcode 0x2F; Cmd_stopsound
 
 	@ Compatibility / upstream table aliases.
-	.globl gMenuPointerTable_Rom_4FE5A4
-	.set gMenuPointerTable_Rom_4FE5A4, gBattleAnimScriptCmdTable
 	.globl sScriptCmdTable
 	.set sScriptCmdTable, gBattleAnimScriptCmdTable
 

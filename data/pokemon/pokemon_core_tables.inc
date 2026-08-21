@@ -978,8 +978,6 @@ sHMMoves: @ 0x082FA876
 
 sAlteringCaveWildMonHeldItems: @ 0x082FA888
 	.2byte SPECIES_NONE @ species 0
-	.globl gPokemonU16Table_Rom_2FA88A
-gPokemonU16Table_Rom_2FA88A:
 	.2byte ITEM_IMPORTANCE_NONE @ item 0
 	.2byte SPECIES_MAREEP                , ITEM_GANLON_BERRY
 	.2byte SPECIES_PINECO                , ITEM_APICOT_BERRY

@@ -1,5 +1,3 @@
-	.globl gPokemonPointerTable_Rom_5AB08C
-gPokemonPointerTable_Rom_5AB08C: @ 0x085AB08C
 	.4byte gText_Rom_5AB057
 	.4byte gText_Rom_5AB05D
 	.4byte gText_Rom_5AB065

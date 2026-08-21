@@ -9,8 +9,6 @@ sPointerTable_085FB90C:
 	.4byte gText_Rom_5FB902 @ +0x4
 	.4byte gText_Rom_5FB905 @ +0x8
 	.4byte gText_Rom_5FB905 + 0x3 @ +0xC
-	.globl gMenuPointerTable_Rom_5FB91C
-gMenuPointerTable_Rom_5FB91C: @ 0x085FB91C
 	.4byte TrainerHillStartChallenge
 	.4byte sub_081D4F2C
 	.4byte sub_081D4F78

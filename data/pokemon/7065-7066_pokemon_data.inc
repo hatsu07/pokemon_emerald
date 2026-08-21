@@ -153,8 +153,6 @@ sPyramidBagListMenuTemplate: @ 0x085EF710
 	@ then fills items, totalItems and maxShowed at runtime.
 	@ Preserve JP packed fields exactly (not canonical EN initializer values).
 	rodata_list_menu_template 0, PyramidBagMoveCursorFunc, PrintItemQuantity, 0, 0, 0, 0, 8, 0, 2, 2, 0, 3, 0, 0, 0, 1, 0
-	.globl gPokemonPointerTable_Rom_5EF728
-gPokemonPointerTable_Rom_5EF728: @ 0x085EF728
 	.4byte gText_Rom_5C93A3
 	.4byte BagAction_UseOnField
 	.4byte gText_Rom_5C93A7
@@ -195,8 +193,6 @@ gBattlePyramidBagData_085EF760: @ 0x085EF760
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x03, 0x00, 0x00, 0x00
-	.globl gPokemonU32Table_Rom_5EF764
-gPokemonU32Table_Rom_5EF764: @ 0x085EF764
 	.4byte TossItem
 	.4byte DontTossItem
 	@ pret/pokeemerald-jp direct xref for 0x085EF76C: battle_pyramid_bag.s: PrintOnWindow_Font1
@@ -251,8 +247,6 @@ gBattlePyramidBagData_085EF824: @ 0x085EF824
 	@ analyzed canonical ROM range 0x085EF824-0x085EF83B
 sSpriteTemplate_085EF824: @ 0x085EF824
 	rodata_sprite_template 0x1024, 0x1024, 0x085EF7C8, 0x085EF7D8, 0, 0x085EF814, SpriteCallbackDummy
-	.globl gPokemonPointerTable_Rom_5EF83C
-gPokemonPointerTable_Rom_5EF83C: @ 0x085EF83C
 	.4byte sub_081C8A44
 	.4byte sub_081C8BC8
 	.4byte sub_081C90D0
@@ -676,8 +670,6 @@ gPokenavMatchCallUiData_085F15A8: @ 0x085F15A8
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x00, 0x02, 0x05, 0x00
-	.globl gPokemonPointerTable_Rom_5F15AC
-gPokemonPointerTable_Rom_5F15AC: @ 0x085F15AC
 	.4byte gText_Rom_5CB6EC
 	.4byte gText_Rom_5CB6F1
 	.4byte gText_Rom_5CB6FB
@@ -851,8 +843,6 @@ gPokenavUnk2Data_085F26FC: @ 0x085F26FC
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x10F5, 0x0000, 0x217A, 0x0000, 0x31FF, 0x0000
-	.globl gPokemonPointerTable_Rom_5F2708
-gPokemonPointerTable_Rom_5F2708: @ 0x085F2708
 	.4byte NULL
 	.4byte sub_081C9418
 	.4byte sub_081C9454
@@ -938,8 +928,6 @@ gPokenavUnk2Data_085F2834: @ 0x085F2834
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0401, 0x1611, 0x0102, 0x0008
-	.globl gPokemonPointerTable_Rom_5F283C
-gPokemonPointerTable_Rom_5F283C: @ 0x085F283C
 	.4byte gText_Rom_5CB589
 	.4byte gText_Rom_5CB59B
 	.4byte gText_Rom_5CB5AC

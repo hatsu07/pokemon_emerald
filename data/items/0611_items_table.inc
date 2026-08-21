@@ -47,13 +47,9 @@ gOverworldData_0830FD08: @ 0x0830FD08
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x0040, 0x0400, 0x0001, 0xA260, 0x0001, 0x0000
-	.globl gItemU32Table_Rom_30FD14
-gItemU32Table_Rom_30FD14: @ 0x0830FD14
 	.4byte MovementEventModeCB_Normal
 	.4byte MovementEventModeCB_Ignored
 	.4byte MovementEventModeCB_Normal_2
-	.globl gItemU32Table_Rom_30FD20
-gItemU32Table_Rom_30FD20: @ 0x0830FD20
 	.4byte FacingHandler_DoNothing
 	.4byte FacingHandler_DpadMovement
 	.4byte FacingHandler_DpadMovement

@@ -1,5 +1,3 @@
-	.globl gUnionRoomPointerTable_Rom_2C5064
-gUnionRoomPointerTable_Rom_2C5064: @ 0x082C5064
 	.4byte sub_0801DDD0
 	.4byte sub_0801DE54
 	.4byte sub_0801DF44
@@ -137,8 +135,6 @@ gUnionRoomChat_Background_Tilemap:
 	.if (. - gUnionRoomChat_Background_Tilemap) != 0xF8
 	.error "gUnionRoomChat_Background_Tilemap compressed size mismatch"
 	.endif
-	.globl gUnionRoomU32Table_Rom_2C56B4
-gUnionRoomU32Table_Rom_2C56B4: @ 0x082C56B4
 	@ Resolved pointer table; original ROM range 0x2C56B4..0x2C56D3.
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
@@ -169,8 +165,6 @@ gUnionRoomChatData_082C5704: @ 0x082C5704
 	.2byte 0x0803, 0x1501, 0x0F12, 0x0001, 0x0901, 0x0F12, 0x0C02, 0x0074
 	.2byte 0x0001, 0x0602, 0x070E, 0x0020, 0x0100, 0x0702, 0x0E0A, 0x0013
 	.2byte 0x00FF, 0x0000, 0x0000, 0x0000
-	.globl gUnionRoomPointerTable_Rom_2C572C
-gUnionRoomPointerTable_Rom_2C572C: @ 0x082C572C
 	@ Resolved pointer table; original ROM range 0x2C572C..0x2C57D3.
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0

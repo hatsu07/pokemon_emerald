@@ -98,8 +98,6 @@ gBattleAnimSpecialData_085C6270: @ 0x085C6270
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0xC entries=6
 	.2byte 0x0000, 0x0500, 0x0201, 0x0302, 0x0505, 0x0404
-	.globl gBattleU32Table_Rom_5C627C
-gBattleU32Table_Rom_5C627C: @ 0x085C627C
 	.4byte PokeBallOpenParticleAnimation
 	.4byte GreatBallOpenParticleAnimation
 	.4byte SafariBallOpenParticleAnimation

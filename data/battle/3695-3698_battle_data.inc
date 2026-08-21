@@ -30,8 +30,6 @@
 	.byte 0x00, 0x00, 0x00
 	.include "data/pokeblock/use_screen_tables.inc"
 
-	.globl gBattlePointerTable_Rom_5C0AA4
-gBattlePointerTable_Rom_5C0AA4: @ 0x085C0AA4
 	.4byte WallyHandleGetMonData
 	.4byte sub_081691C8
 	.4byte WallyHandleSetMonData
@@ -89,14 +87,10 @@ gBattlePointerTable_Rom_5C0AA4: @ 0x085C0AA4
 	.4byte WallyHandleResetActionMoveSelection
 	.4byte WallyHandleCmd55
 	.4byte SpriteCB_Null7
-	.globl gBattlePointerTable_Rom_5C0B88
-gBattlePointerTable_Rom_5C0B88: @ 0x085C0B88
 	.4byte gText_Rom_5CA8EC
 	.4byte gText_Rom_5CA8DA
 	.4byte gText_Rom_5CA900
 	.4byte gText_Rom_5C9423
-	.globl gBattlePointerTable_Rom_5C0B98
-gBattlePointerTable_Rom_5C0B98: @ 0x085C0B98
 	.4byte gText_Rom_5CA8AC
 	.4byte PlayerPC_ItemStorage
 	.4byte gText_Rom_5CA8B5
@@ -119,8 +113,6 @@ gPlayerPcData_085C0BBC: @ 0x085C0BBC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x00, 0x01, 0x03, 0x00
-	.globl gBattlePointerTable_Rom_5C0BC0
-gBattlePointerTable_Rom_5C0BC0: @ 0x085C0BC0
 	.4byte gText_Rom_5CA8C7
 	.4byte ItemStorage_Withdraw
 	.4byte gText_Rom_5CA8BD
@@ -136,8 +128,6 @@ gPlayerPcData_085C0BE0: @ 0x085C0BE0
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x000D, 0x0001, 0x0000, 0x0000
-	.globl gBattlePointerTable_Rom_5C0BE8
-gBattlePointerTable_Rom_5C0BE8: @ 0x085C0BE8
 	.4byte gText_Rom_5CA959
 	.4byte Mailbox_DoMailRead
 	.4byte gText_Rom_5CA962
@@ -167,8 +157,6 @@ gPlayerPcData_085C0C18: @ 0x085C0C18
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x0100, 0x0A01, 0x0F08, 0x0001
-	.globl gBattleU32Table_Rom_5C0C20
-gBattleU32Table_Rom_5C0C20: @ 0x085C0C20
 	.4byte ItemStorage_ResumeInputFromYesToss
 	.4byte ItemStorage_ResumeInputFromNoToss
 	@ pret/pokeemerald-jp direct xref for 0x085C0C28: player_pc.s: ItemStorage_RefreshListMenu

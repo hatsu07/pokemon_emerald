@@ -3,7 +3,6 @@
 
 .align 2
 
-gPokedexU8Table_Rom_539C50:: @ 0x08539C50
     @ ANALYSIS: FF_PADDING size=0x1
     .fill 0x1, 1, 0xFF
 

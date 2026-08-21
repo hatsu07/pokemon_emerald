@@ -14,8 +14,6 @@ gBattleTentData_085E198C: @ 0x085E198C
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x08, 0x00, 0x00, 0x00
-	.globl gMenuPointerTable_Rom_5E1990
-gMenuPointerTable_Rom_5E1990: @ 0x085E1990
 	.4byte sub_081B9840
 	.4byte sub_081B9894
 	.4byte sub_081B98B0
@@ -30,8 +28,6 @@ gBattleTentData_085E19AC: @ 0x085E19AC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x15, 0x00, 0x00, 0x00
-	.globl gMenuPointerTable_Rom_5E19B0
-gMenuPointerTable_Rom_5E19B0: @ 0x085E19B0
 	.4byte sub_081B99C8
 	.4byte sub_081B9A1C
 	.4byte sub_081B9A38

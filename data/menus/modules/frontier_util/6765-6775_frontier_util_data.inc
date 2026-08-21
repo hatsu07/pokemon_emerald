@@ -56,8 +56,6 @@ gText_Rom_5DD530: @ 0x085DD530
 	.space 0x9 - (. - gText_Rom_5DD530)
 	.endif
 	.space 0x3, 0x00
-	.globl gMenuPointerTable_Rom_5DD53C
-gMenuPointerTable_Rom_5DD53C: @ 0x085DD53C
 	.4byte gText_Rom_5DD50C
 	.4byte gText_Rom_5DD50C
 	.4byte gText_Rom_5DD50C

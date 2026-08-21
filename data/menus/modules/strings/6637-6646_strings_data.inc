@@ -9,8 +9,6 @@ gText_Rom_5DBC11: @ 0x085DBC11
 	.globl gText_Rom_5DBC1D
 	.set gText_Rom_5DBC1D, gText_Rom_5DBC11 + 0xc
 	.space 0x3, 0x00
-	.globl gMenuU32Table_Rom_5DBC24
-gMenuU32Table_Rom_5DBC24: @ 0x085DBC24
 	.4byte Select_OptionSummary
 	.4byte Select_OptionRentDeselect
 	.4byte Select_OptionOthers

@@ -1,5 +1,3 @@
-	.globl gBattlePointerTable_Rom_5DC158
-gBattlePointerTable_Rom_5DC158: @ 0x085DC158
 	.4byte sub_0819F000
 	.4byte sub_0819EFB8
 	.4byte sub_0819F020
@@ -42,8 +40,6 @@ gBattleFactoryScreenData_085DC1D1: @ 0x085DC1D1
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x3 bytes=3
 	.byte 0x00, 0x04, 0x00
-	.globl gBattleU32Table_Rom_5DC1D4
-gBattleU32Table_Rom_5DC1D4: @ 0x085DC1D4
 	@ Resolved pointer table; original ROM range 0x5DC1D4..0x5DC1F3.
 	.4byte TYPE_FIGHT
 	.4byte Swap_ActionMon
@@ -53,8 +49,6 @@ gBattleU32Table_Rom_5DC1D4: @ 0x085DC1D4
 	.4byte Swap_ActionMon
 	.4byte TYPE_POISON
 	.4byte Swap_ActionCancel
-	.globl gBattleU32Table_Rom_5DC1F4
-gBattleU32Table_Rom_5DC1F4: @ 0x085DC1F4
 	@ Resolved pointer table; original ROM range 0x5DC1F4..0x5DC21B.
 	.4byte TYPE_FIGHT
 	.4byte Swap_ActionMon
