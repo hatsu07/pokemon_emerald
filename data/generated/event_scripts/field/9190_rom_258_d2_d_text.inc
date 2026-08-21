@@ -132,7 +132,7 @@ EventScript_JP_08258E7D: @ 0x08258E7D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte 0x08243625 @ PetalburgCity_Ext_FaceOriginalDirection
+	.4byte PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
@@ -214,11 +214,11 @@ EventScript_JP_08258F4E: @ 0x08258F4E
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte 0x08243625 @ PetalburgCity_Ext_FaceOriginalDirection
+	.4byte PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0011
-	.4byte 0x08243625 @ PetalburgCity_Ext_FaceOriginalDirection
+	.4byte PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8008
