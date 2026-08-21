@@ -89,14 +89,14 @@ EventScript_JP_081F0B96: @ 0x081F0B96
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x0824361B @ PetalburgCity_Ext_ExclamationMark
+	.4byte PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x0824361D @ PetalburgCity_Ext_Delay48
+	.4byte PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -131,7 +131,7 @@ EventScript_JP_081F0C06: @ 0x081F0C06
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x08243627 @ PetalburgCity_Ext_WallyFaceLeft
+	.4byte PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -163,7 +163,7 @@ EventScript_JP_081F0C35: @ 0x081F0C35
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x08243627 @ PetalburgCity_Ext_WallyFaceLeft
+	.4byte PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -195,7 +195,7 @@ EventScript_JP_081F0C64: @ 0x081F0C64
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x08243629 @ PetalburgCity_Ext_WalkInPlaceFasterUp
+	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -223,7 +223,7 @@ EventScript_JP_081F0C8C: @ 0x081F0C8C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x08243627 @ PetalburgCity_Ext_WallyFaceLeft
+	.4byte PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -374,7 +374,7 @@ EventScript_JP_081F0D43: @ 0x081F0D43
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800F
-	.4byte 0x08243621 @ PetalburgCity_Ext_FacePlayer
+	.4byte PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
