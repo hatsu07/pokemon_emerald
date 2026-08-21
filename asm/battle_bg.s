@@ -472,7 +472,7 @@ LoadBattleTextboxAndBackground: @ 0x080358F8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08035930: .4byte 0x08C00530
+_08035930: .4byte gBattleInterface_Textbox_Tilemap
 _08035934: .4byte gBattleInterface_Textbox_Pal
 	thumb_func_end LoadBattleTextboxAndBackground
 
@@ -1596,7 +1596,7 @@ _0803626A:
 	bl CopyBgTilemapBufferToVram
 	b _080365AC
 	.align 2, 0
-_08036280: .4byte 0x08C00530
+_08036280: .4byte gBattleInterface_Textbox_Tilemap
 _08036284:
 	ldr r0, _08036290
 	movs r1, #0
@@ -1994,4 +1994,3 @@ _080365AC:
 	pop {r1}
 	bx r1
 	thumb_func_end LoadChosenBattleElement
-

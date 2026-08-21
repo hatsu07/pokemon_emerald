@@ -8165,7 +8165,7 @@ sub_0807ABCC: @ 0x0807ABCC
 	bx r0
 	.align 2, 0
 _0807ACB4: .4byte gTradeBgTemplates
-_0807ACB8: .4byte 0x08C00530
+_0807ACB8: .4byte gBattleInterface_Textbox_Tilemap
 _0807ACBC: .4byte 0x0201C000
 _0807ACC0: .4byte gBattleInterface_Textbox_Pal
 _0807ACC4: .4byte gTradeWindowTemplates
@@ -15872,4 +15872,3 @@ _0807F152:
 _0807F168: .4byte 0x030027A0
 _0807F16C: .4byte 0x0807EAA1
 	thumb_func_end sub_0807EE9C
-

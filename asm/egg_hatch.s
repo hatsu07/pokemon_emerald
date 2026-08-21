@@ -653,7 +653,7 @@ _080712D8:
 	bl LoadCompressedPalette
 	b _080713AA
 	.align 2, 0
-_08071300: .4byte 0x08C00530
+_08071300: .4byte gBattleInterface_Textbox_Tilemap
 _08071304: .4byte gBattleInterface_Textbox_Pal
 _08071308:
 	ldr r0, _0807131C

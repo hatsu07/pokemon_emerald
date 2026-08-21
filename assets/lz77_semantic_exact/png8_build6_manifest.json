@@ -704,6 +704,12 @@
       "width": 64,
       "height": 256,
       "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_interface/textbox_tilemap_rom_exact.tilemap.lz": {
+      "key": "08C00530",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_interface/textbox_tilemap.u16",
+      "semantic_role": "tilemap"
     }
   }
 }
