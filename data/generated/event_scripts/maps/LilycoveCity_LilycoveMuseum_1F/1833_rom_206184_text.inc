@@ -93,7 +93,7 @@ EventScript_JP_082062B4: @ 0x082062B4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x08243621 @ PetalburgCity_Ext_FacePlayer
+	.4byte PetalburgCity_Ext_FacePlayer
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
@@ -122,7 +122,7 @@ EventScript_JP_082062B4: @ 0x082062B4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x08243621 @ PetalburgCity_Ext_FacePlayer
+	.4byte PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -177,7 +177,7 @@ EventScript_JP_0820636F: @ 0x0820636F
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x08243621 @ PetalburgCity_Ext_FacePlayer
+	.4byte PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -197,7 +197,7 @@ EventScript_JP_08206396: @ 0x08206396
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x08243621 @ PetalburgCity_Ext_FacePlayer
+	.4byte PetalburgCity_Ext_FacePlayer
 	loadword 0x00, gText_Rom_20670F
 	callstd 0x04
 	setorcopyvar 0x8000, 0x002C

@@ -462,11 +462,11 @@ EventScript_JP_0822B607: @ 0x0822B607
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x0824362B @ PetalburgCity_Ext_WalkInPlaceFasterRight
+	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte 0x0824362B @ PetalburgCity_Ext_WalkInPlaceFasterRight
+	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -538,11 +538,11 @@ EventScript_JP_0822B6C4: @ 0x0822B6C4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x0824362B @ PetalburgCity_Ext_WalkInPlaceFasterRight
+	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte 0x0824362B @ PetalburgCity_Ext_WalkInPlaceFasterRight
+	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000

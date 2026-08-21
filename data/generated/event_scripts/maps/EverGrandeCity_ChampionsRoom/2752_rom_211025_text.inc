@@ -187,7 +187,7 @@ EventScript_JP_082111BB: @ 0x082111BB
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800F
-	.4byte 0x08243621 @ PetalburgCity_Ext_FacePlayer
+	.4byte PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -197,7 +197,7 @@ EventScript_JP_082111BB: @ 0x082111BB
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800F
-	.4byte 0x08243625 @ PetalburgCity_Ext_FaceOriginalDirection
+	.4byte PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
