@@ -152,7 +152,7 @@ list(APPEND GRAPHICS_RELATIVE_OUTPUTS
     "build/graphics/battle_anims/unused/water_gfx.4bpp"
     "build/graphics/battle_anims/unused/water.tilemap.inc")
 
-# BEGIN SEMANTIC117 EXACT LZ77 CONFIG
+# BEGIN SEMANTIC137 EXACT LZ77 CONFIG
 set(LZ77_SEMANTIC_EXACT_MANIFEST
     "${CMAKE_SOURCE_DIR}/assets/lz77_semantic_exact/png8_build6_manifest.json")
 set(LZ77_SEMANTIC_EXACT_OUTPUTS
@@ -190,6 +190,26 @@ set(LZ77_SEMANTIC_EXACT_OUTPUTS
     "build/graphics/battle_interface/textbox_tilemap_rom_exact.tilemap.lz"
     "build/graphics/battle_environment/sky/palette_rom_exact.gbapal.lz"
     "build/graphics/battle_anims/sprites/flying_dirt_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/metal_sound_waves_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/metal_sound_waves_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/icicle_spear_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/icicle_spear_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/glowy_red_orb_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/glowy_red_orb_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/glowy_green_orb_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/sleep_powder_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/stun_spore_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/splash_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/splash_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/sweat_bead_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/pokeblock_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/pokeblock_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/gem_1_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/gem_2_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/gem_3_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/gem_1_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/protect_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/protect_palette_rom_exact.gbapal.lz"
     "build/graphics/battle_anims/sprites/flying_dirt_palette_rom_exact.gbapal.lz"
     "build/graphics/battle_anims/backgrounds/muddy_water_palette_rom_exact.gbapal.lz"
     "build/graphics/summary_screen/move_types_palette_rom_exact.gbapal.lz"
@@ -296,6 +316,26 @@ set(LZ77_SEMANTIC_PNG_SOURCES
     "${CMAKE_SOURCE_DIR}/graphics/battle_interface/textbox_tilemap.u16"
     "${CMAKE_SOURCE_DIR}/graphics/battle_environment/sky/palette.gbapal.u16"
     "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/flying_dirt.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/metal_sound_waves.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/metal_sound_waves.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/icicle_spear.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/icicle_spear.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/glowy_red_orb.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/glowy_red_orb.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/glowy_green_orb.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/sleep_powder.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/stun_spore.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/splash.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/splash.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/sweat_bead.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/pokeblock.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/pokeblock.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/gem_1.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/gem_2.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/gem_3.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/gem_1.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/protect.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/protect.gbapal.u16"
     "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/flying_dirt_palette.gbapal.u16"
     "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/muddy_water_palette.gbapal.u16"
     "${CMAKE_SOURCE_DIR}/graphics/summary_screen/move_types_palette.gbapal.u16"
@@ -415,7 +455,7 @@ set(LZ77_SEMANTIC_BUILD_INPUTS_ABS
 list(APPEND GRAPHICS_RELATIVE_OUTPUTS
     ${LZ77_SEMANTIC_EXACT_OUTPUTS}
     ${LZ77_SEMANTIC_BUILD_INPUTS})
-# END SEMANTIC117 EXACT LZ77 CONFIG
+# END SEMANTIC137 EXACT LZ77 CONFIG
 
 list(REMOVE_DUPLICATES GRAPHICS_RELATIVE_OUTPUTS)
 list(SORT GRAPHICS_RELATIVE_OUTPUTS)
@@ -580,7 +620,7 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     set(OUTPUT_ABS "${CMAKE_SOURCE_DIR}/${RELATIVE_OUTPUT}")
     get_filename_component(OUTPUT_DIR "${OUTPUT_ABS}" DIRECTORY)
 
-    # BEGIN SEMANTIC117 EXACT LZ77 PIPELINE
+    # BEGIN SEMANTIC137 EXACT LZ77 PIPELINE
     list(FIND LZ77_SEMANTIC_EXACT_OUTPUTS
         "${RELATIVE_OUTPUT}" LZ77_SEMANTIC_EXACT_INDEX)
     if(NOT LZ77_SEMANTIC_EXACT_INDEX EQUAL -1)
@@ -605,7 +645,7 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
                 "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
-    # END SEMANTIC117 EXACT LZ77 PIPELINE
+    # END SEMANTIC137 EXACT LZ77 PIPELINE
 
     # BEGIN SLOT MACHINE SEMANTIC TILEMAP PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES

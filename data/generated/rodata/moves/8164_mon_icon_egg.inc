@@ -7,12 +7,12 @@ gBattleAnimSpritePal_FlyingDirt: @ 0x08D8DA9C
 	@ ANALYSIS: 9 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
 	.incbin "build/graphics/battle_anims/sprites/flying_dirt_palette_rom_exact.gbapal.lz"
 	.byte 0x00, 0x00
-	.globl gLz77Asset_08D8DAC4
-gLz77Asset_08D8DAC4: @ 0x08D8DAC4
-	.incbin "build/assets/lz77_raw/08D8DAC4.bin.lz"
-	.globl gLz77Asset_08D8DC80
-gLz77Asset_08D8DC80: @ 0x08D8DC80
-	.incbin "build/assets/lz77_raw/08D8DC80.bin.lz"
+	.globl gBattleAnimSpriteGfx_MetalSoundWaves
+gBattleAnimSpriteGfx_MetalSoundWaves: @ 0x08D8DAC4
+	.incbin "build/graphics/battle_anims/sprites/metal_sound_waves_rom_exact.4bpp.lz"
+	.globl gBattleAnimSpritePal_MetalSoundWaves
+gBattleAnimSpritePal_MetalSoundWaves: @ 0x08D8DC80
+	.incbin "build/graphics/battle_anims/sprites/metal_sound_waves_palette_rom_exact.gbapal.lz"
 	.byte 0x00, 0x00
 	.globl gLz77Asset_08D8DC98
 gLz77Asset_08D8DC98: @ 0x08D8DC98
@@ -25,13 +25,13 @@ gLz77Asset_08D8E608: @ 0x08D8E608
 gLz77Asset_08D8E62C: @ 0x08D8E62C
 	.incbin "build/assets/lz77_raw/08D8E62C.bin.lz"
 	.byte 0x00, 0x00
-	.globl gLz77Asset_08D8E824
-gLz77Asset_08D8E824: @ 0x08D8E824
-	.incbin "build/assets/lz77_raw/08D8E824.bin.lz"
+	.globl gBattleAnimSpriteGfx_IcicleSpear
+gBattleAnimSpriteGfx_IcicleSpear: @ 0x08D8E824
+	.incbin "build/graphics/battle_anims/sprites/icicle_spear_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00
-	.globl gLz77Asset_08D8E8F8
-gLz77Asset_08D8E8F8: @ 0x08D8E8F8
-	.incbin "build/assets/lz77_raw/08D8E8F8.bin.lz"
+	.globl gBattleAnimSpritePal_IcicleSpear
+gBattleAnimSpritePal_IcicleSpear: @ 0x08D8E8F8
+	.incbin "build/graphics/battle_anims/sprites/icicle_spear_palette_rom_exact.gbapal.lz"
 	.byte 0x00, 0x00
 	.globl gLz77Asset_08D8E920
 gLz77Asset_08D8E920: @ 0x08D8E920
@@ -59,25 +59,25 @@ gContestData_08D8E9FC: @ 0x08D8E9FC
 	@ ANALYSIS: 6 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
 	.byte 0x77, 0x77, 0x77, 0x77, 0xF8, 0xFF, 0xFF, 0x8F, 0xFF, 0x8F, 0xF8, 0xFF, 0xFF, 0x88, 0xFF, 0x8F
 	.byte 0x88, 0xF8, 0x8F, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0xF8, 0x8F, 0x88, 0x99, 0xF9, 0x9F, 0x99
-	.globl gLz77Asset_08D8EA1C
-gLz77Asset_08D8EA1C: @ 0x08D8EA1C
-	.incbin "build/assets/lz77_raw/08D8EA1C.bin.lz"
+	.globl gBattleAnimSpriteGfx_GlowyRedOrb
+gBattleAnimSpriteGfx_GlowyRedOrb: @ 0x08D8EA1C
+	.incbin "build/graphics/battle_anims/sprites/glowy_red_orb_rom_exact.4bpp.lz"
 	.byte 0x00
-	.globl gLz77Asset_08D8EA3C
-gLz77Asset_08D8EA3C: @ 0x08D8EA3C
-	.incbin "build/assets/lz77_raw/08D8EA3C.bin.lz"
+	.globl gBattleAnimSpritePal_GlowyRedOrb
+gBattleAnimSpritePal_GlowyRedOrb: @ 0x08D8EA3C
+	.incbin "build/graphics/battle_anims/sprites/glowy_red_orb_palette_rom_exact.gbapal.lz"
 	.byte 0x00, 0x00, 0x00
-	.globl gLz77Asset_08D8EA54
-gLz77Asset_08D8EA54: @ 0x08D8EA54
-	.incbin "build/assets/lz77_raw/08D8EA54.bin.lz"
+	.globl gBattleAnimSpritePal_GlowyGreenOrb
+gBattleAnimSpritePal_GlowyGreenOrb: @ 0x08D8EA54
+	.incbin "build/graphics/battle_anims/sprites/glowy_green_orb_palette_rom_exact.gbapal.lz"
 	.byte 0x00, 0x00
-	.globl gLz77Asset_08D8EA6C
-gLz77Asset_08D8EA6C: @ 0x08D8EA6C
-	.incbin "build/assets/lz77_raw/08D8EA6C.bin.lz"
+	.globl gBattleAnimSpritePal_SleepPowder
+gBattleAnimSpritePal_SleepPowder: @ 0x08D8EA6C
+	.incbin "build/graphics/battle_anims/sprites/sleep_powder_palette_rom_exact.gbapal.lz"
 	.byte 0x00
-	.globl gLz77Asset_08D8EA8C
-gLz77Asset_08D8EA8C: @ 0x08D8EA8C
-	.incbin "build/assets/lz77_raw/08D8EA8C.bin.lz"
+	.globl gBattleAnimSpritePal_StunSpore
+gBattleAnimSpritePal_StunSpore: @ 0x08D8EA8C
+	.incbin "build/graphics/battle_anims/sprites/stun_spore_palette_rom_exact.gbapal.lz"
 	.byte 0x00
 	.globl gLz77Asset_08D8EAAC
 gLz77Asset_08D8EAAC: @ 0x08D8EAAC
@@ -99,39 +99,39 @@ gContestData_08D8EBD8: @ 0x08D8EBD8
 	.byte 0x33, 0x33, 0x33, 0x33, 0x11, 0x11, 0x11, 0x11, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x72, 0x09, 0xFE, 0x3A, 0x7F, 0x3B, 0xFF, 0x4F, 0xDF, 0x0C, 0x5A, 0x00, 0x7E, 0x6E
 	.byte 0x1F, 0x2C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.globl gLz77Asset_08D8EC78
-gLz77Asset_08D8EC78: @ 0x08D8EC78
-	.incbin "build/assets/lz77_raw/08D8EC78.bin.lz"
+	.globl gBattleAnimSpriteGfx_Splash
+gBattleAnimSpriteGfx_Splash: @ 0x08D8EC78
+	.incbin "build/graphics/battle_anims/sprites/splash_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00
-	.globl gLz77Asset_08D8EE94
-gLz77Asset_08D8EE94: @ 0x08D8EE94
-	.incbin "build/assets/lz77_raw/08D8EE94.bin.lz"
-	.globl gLz77Asset_08D8EEB8
-gLz77Asset_08D8EEB8: @ 0x08D8EEB8
-	.incbin "build/assets/lz77_raw/08D8EEB8.bin.lz"
+	.globl gBattleAnimSpritePal_Splash
+gBattleAnimSpritePal_Splash: @ 0x08D8EE94
+	.incbin "build/graphics/battle_anims/sprites/splash_palette_rom_exact.gbapal.lz"
+	.globl gBattleAnimSpriteGfx_SweatBead
+gBattleAnimSpriteGfx_SweatBead: @ 0x08D8EEB8
+	.incbin "build/graphics/battle_anims/sprites/sweat_bead_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00
-	.globl gLz77Asset_08D8EEE0
-gLz77Asset_08D8EEE0: @ 0x08D8EEE0
-	.incbin "build/assets/lz77_raw/08D8EEE0.bin.lz"
+	.globl gBattleAnimSpriteGfx_Pokeblock
+gBattleAnimSpriteGfx_Pokeblock: @ 0x08D8EEE0
+	.incbin "build/graphics/battle_anims/sprites/pokeblock_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00
-	.globl gLz77Asset_08D8EF34
-gLz77Asset_08D8EF34: @ 0x08D8EF34
-	.incbin "build/assets/lz77_raw/08D8EF34.bin.lz"
+	.globl gBattleAnimSpritePal_Pokeblock
+gBattleAnimSpritePal_Pokeblock: @ 0x08D8EF34
+	.incbin "build/graphics/battle_anims/sprites/pokeblock_palette_rom_exact.gbapal.lz"
 	.byte 0x00, 0x00
-	.globl gLz77Asset_08D8EF4C
-gLz77Asset_08D8EF4C: @ 0x08D8EF4C
-	.incbin "build/assets/lz77_raw/08D8EF4C.bin.lz"
+	.globl gBattleAnimSpriteGfx_Gem1
+gBattleAnimSpriteGfx_Gem1: @ 0x08D8EF4C
+	.incbin "build/graphics/battle_anims/sprites/gem_1_rom_exact.4bpp.lz"
 	.byte 0x00
-	.globl gLz77Asset_08D8F0CC
-gLz77Asset_08D8F0CC: @ 0x08D8F0CC
-	.incbin "build/assets/lz77_raw/08D8F0CC.bin.lz"
+	.globl gBattleAnimSpriteGfx_Gem2
+gBattleAnimSpriteGfx_Gem2: @ 0x08D8F0CC
+	.incbin "build/graphics/battle_anims/sprites/gem_2_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00
-	.globl gLz77Asset_08D8F238
-gLz77Asset_08D8F238: @ 0x08D8F238
-	.incbin "build/assets/lz77_raw/08D8F238.bin.lz"
-	.globl gLz77Asset_08D8F3A0
-gLz77Asset_08D8F3A0: @ 0x08D8F3A0
-	.incbin "build/assets/lz77_raw/08D8F3A0.bin.lz"
+	.globl gBattleAnimSpriteGfx_Gem3
+gBattleAnimSpriteGfx_Gem3: @ 0x08D8F238
+	.incbin "build/graphics/battle_anims/sprites/gem_3_rom_exact.4bpp.lz"
+	.globl gBattleAnimSpritePal_Gem1
+gBattleAnimSpritePal_Gem1: @ 0x08D8F3A0
+	.incbin "build/graphics/battle_anims/sprites/gem_1_palette_rom_exact.gbapal.lz"
 	.byte 0x00, 0x00
 	.globl gLz77Asset_08D8F3C8
 gLz77Asset_08D8F3C8: @ 0x08D8F3C8
@@ -144,13 +144,13 @@ gLz77Asset_08D8F524: @ 0x08D8F524
 	.globl gLz77Asset_08D8F54C
 gLz77Asset_08D8F54C: @ 0x08D8F54C
 	.incbin "build/assets/lz77_raw/08D8F54C.bin.lz"
-	.globl gLz77Asset_08D8F734
-gLz77Asset_08D8F734: @ 0x08D8F734
-	.incbin "build/assets/lz77_raw/08D8F734.bin.lz"
+	.globl gBattleAnimSpriteGfx_Protect
+gBattleAnimSpriteGfx_Protect: @ 0x08D8F734
+	.incbin "build/graphics/battle_anims/sprites/protect_rom_exact.4bpp.lz"
 	.byte 0x00
-	.globl gLz77Asset_08D8FB30
-gLz77Asset_08D8FB30: @ 0x08D8FB30
-	.incbin "build/assets/lz77_raw/08D8FB30.bin.lz"
+	.globl gBattleAnimSpritePal_Protect
+gBattleAnimSpritePal_Protect: @ 0x08D8FB30
+	.incbin "build/graphics/battle_anims/sprites/protect_palette_rom_exact.gbapal.lz"
 	.byte 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08D8FB50: water.s: AnimTask_CreateSurfWave
 .globl gBattleAnimBackgroundImageMuddyWater_Pal

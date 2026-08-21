@@ -758,6 +758,146 @@
       "width": 128,
       "height": 128,
       "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_anims/sprites/metal_sound_waves_rom_exact.4bpp.lz": {
+      "key": "08D8DAC4",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/metal_sound_waves.png",
+      "width": 64,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/metal_sound_waves_palette_rom_exact.gbapal.lz": {
+      "key": "08D8DC80",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/metal_sound_waves.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/icicle_spear_rom_exact.4bpp.lz": {
+      "key": "08D8E824",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/icicle_spear.png",
+      "width": 32,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/icicle_spear_palette_rom_exact.gbapal.lz": {
+      "key": "08D8E8F8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/icicle_spear.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/glowy_red_orb_rom_exact.4bpp.lz": {
+      "key": "08D8EA1C",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/glowy_red_orb.png",
+      "width": 8,
+      "height": 8,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/glowy_red_orb_palette_rom_exact.gbapal.lz": {
+      "key": "08D8EA3C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/glowy_red_orb.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/glowy_green_orb_palette_rom_exact.gbapal.lz": {
+      "key": "08D8EA54",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/glowy_green_orb.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/sleep_powder_palette_rom_exact.gbapal.lz": {
+      "key": "08D8EA6C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/sleep_powder.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/stun_spore_palette_rom_exact.gbapal.lz": {
+      "key": "08D8EA8C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/stun_spore.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/splash_rom_exact.4bpp.lz": {
+      "key": "08D8EC78",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/splash.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/splash_palette_rom_exact.gbapal.lz": {
+      "key": "08D8EE94",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/splash.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/sweat_bead_rom_exact.4bpp.lz": {
+      "key": "08D8EEB8",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/sweat_bead.png",
+      "width": 8,
+      "height": 8,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/pokeblock_rom_exact.4bpp.lz": {
+      "key": "08D8EEE0",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/pokeblock.png",
+      "width": 16,
+      "height": 16,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/pokeblock_palette_rom_exact.gbapal.lz": {
+      "key": "08D8EF34",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/pokeblock.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/gem_1_rom_exact.4bpp.lz": {
+      "key": "08D8EF4C",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/gem_1.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/gem_2_rom_exact.4bpp.lz": {
+      "key": "08D8F0CC",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/gem_2.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/gem_3_rom_exact.4bpp.lz": {
+      "key": "08D8F238",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/gem_3.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/gem_1_palette_rom_exact.gbapal.lz": {
+      "key": "08D8F3A0",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/gem_1.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/protect_rom_exact.4bpp.lz": {
+      "key": "08D8F734",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/protect.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/protect_palette_rom_exact.gbapal.lz": {
+      "key": "08D8FB30",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/protect.gbapal.u16",
+      "semantic_role": "palette"
     }
   }
 }

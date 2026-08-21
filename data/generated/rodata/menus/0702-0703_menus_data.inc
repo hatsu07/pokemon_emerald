@@ -393,45 +393,25 @@ sFanfares: @ 0x084FCFC8
 .globl gBattleAnimSpriteGfx_FlyingDirt
 	.globl gBattleAnimSpritePal_FlyingDirt
 	.globl gBattleAnimSpriteGfx_MetalSoundWaves
-	.set gBattleAnimSpriteGfx_MetalSoundWaves, 0x08D8DAC4
 	.globl gBattleAnimSpritePal_MetalSoundWaves
-	.set gBattleAnimSpritePal_MetalSoundWaves, 0x08D8DC80
 	.globl gBattleAnimSpriteGfx_IcicleSpear
-	.set gBattleAnimSpriteGfx_IcicleSpear, 0x08D8E824
 	.globl gBattleAnimSpritePal_IcicleSpear
-	.set gBattleAnimSpritePal_IcicleSpear, 0x08D8E8F8
 	.globl gBattleAnimSpriteGfx_GlowyRedOrb
-	.set gBattleAnimSpriteGfx_GlowyRedOrb, 0x08D8EA1C
 	.globl gBattleAnimSpritePal_GlowyRedOrb
-	.set gBattleAnimSpritePal_GlowyRedOrb, 0x08D8EA3C
 	.globl gBattleAnimSpritePal_GlowyGreenOrb
-	.set gBattleAnimSpritePal_GlowyGreenOrb, 0x08D8EA54
 	.globl gBattleAnimSpritePal_SleepPowder
-	.set gBattleAnimSpritePal_SleepPowder, 0x08D8EA6C
 	.globl gBattleAnimSpritePal_StunSpore
-	.set gBattleAnimSpritePal_StunSpore, 0x08D8EA8C
 	.globl gBattleAnimSpriteGfx_Splash
-	.set gBattleAnimSpriteGfx_Splash, 0x08D8EC78
 	.globl gBattleAnimSpritePal_Splash
-	.set gBattleAnimSpritePal_Splash, 0x08D8EE94
 	.globl gBattleAnimSpriteGfx_SweatBead
-	.set gBattleAnimSpriteGfx_SweatBead, 0x08D8EEB8
 	.globl gBattleAnimSpriteGfx_Pokeblock
-	.set gBattleAnimSpriteGfx_Pokeblock, 0x08D8EEE0
 	.globl gBattleAnimSpritePal_Pokeblock
-	.set gBattleAnimSpritePal_Pokeblock, 0x08D8EF34
 	.globl gBattleAnimSpriteGfx_Gem1
-	.set gBattleAnimSpriteGfx_Gem1, 0x08D8EF4C
 	.globl gBattleAnimSpriteGfx_Gem2
-	.set gBattleAnimSpriteGfx_Gem2, 0x08D8F0CC
 	.globl gBattleAnimSpriteGfx_Gem3
-	.set gBattleAnimSpriteGfx_Gem3, 0x08D8F238
 	.globl gBattleAnimSpritePal_Gem1
-	.set gBattleAnimSpritePal_Gem1, 0x08D8F3A0
 	.globl gBattleAnimSpriteGfx_Protect
-	.set gBattleAnimSpriteGfx_Protect, 0x08D8F734
 	.globl gBattleAnimSpritePal_Protect
-	.set gBattleAnimSpritePal_Protect, 0x08D8FB30
 	.globl gBattleAnimSpritePal_WhipHit
 	.set gBattleAnimSpritePal_WhipHit, 0x08D91000
 	.globl gBattleAnimSpritePal_SlamHit2
