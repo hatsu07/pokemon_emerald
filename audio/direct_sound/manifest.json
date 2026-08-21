@@ -7399,7 +7399,7 @@
     },
     {
       "label": "DirectSoundWaveData_Instrument_000_JP_0863D428",
-      "source": "data/generated/rodata/menus/8073_menus_data.inc",
+      "source": "data/generated/rodata/menus/modules/m4a/8073_m4a_data.inc",
       "source_line": 576,
       "source_bin": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_000_JP_0863D428.bin",
       "wav": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_000_JP_0863D428.wav",
@@ -7421,7 +7421,7 @@
     },
     {
       "label": "DirectSoundWaveData_Instrument_001_JP_0863DACC",
-      "source": "data/generated/rodata/menus/8073_menus_data.inc",
+      "source": "data/generated/rodata/menus/modules/m4a/8073_m4a_data.inc",
       "source_line": 582,
       "source_bin": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_001_JP_0863DACC.bin",
       "wav": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_001_JP_0863DACC.wav",
@@ -7443,7 +7443,7 @@
     },
     {
       "label": "DirectSoundWaveData_Instrument_002_JP_0863E2C4",
-      "source": "data/generated/rodata/menus/8073_menus_data.inc",
+      "source": "data/generated/rodata/menus/modules/m4a/8073_m4a_data.inc",
       "source_line": 588,
       "source_bin": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_002_JP_0863E2C4.bin",
       "wav": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_002_JP_0863E2C4.wav",
@@ -7465,7 +7465,7 @@
     },
     {
       "label": "DirectSoundWaveData_Instrument_003_JP_0863EE90",
-      "source": "data/generated/rodata/menus/8073_menus_data.inc",
+      "source": "data/generated/rodata/menus/modules/m4a/8073_m4a_data.inc",
       "source_line": 594,
       "source_bin": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_003_JP_0863EE90.bin",
       "wav": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_003_JP_0863EE90.wav",
@@ -7487,7 +7487,7 @@
     },
     {
       "label": "DirectSoundWaveData_Instrument_004_JP_0863FDC8",
-      "source": "data/generated/rodata/menus/8073_menus_data.inc",
+      "source": "data/generated/rodata/menus/modules/m4a/8073_m4a_data.inc",
       "source_line": 600,
       "source_bin": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_004_JP_0863FDC8.bin",
       "wav": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_004_JP_0863FDC8.wav",
@@ -7509,7 +7509,7 @@
     },
     {
       "label": "DirectSoundWaveData_Instrument_005_JP_08640A3C",
-      "source": "data/generated/rodata/menus/8073_menus_data.inc",
+      "source": "data/generated/rodata/menus/modules/m4a/8073_m4a_data.inc",
       "source_line": 606,
       "source_bin": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_005_JP_08640A3C.bin",
       "wav": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_005_JP_08640A3C.wav",
@@ -7531,7 +7531,7 @@
     },
     {
       "label": "DirectSoundWaveData_Instrument_006_JP_08641F0C",
-      "source": "data/generated/rodata/menus/8073_menus_data.inc",
+      "source": "data/generated/rodata/menus/modules/m4a/8073_m4a_data.inc",
       "source_line": 612,
       "source_bin": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_006_JP_08641F0C.bin",
       "wav": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_006_JP_08641F0C.wav",
@@ -7553,7 +7553,7 @@
     },
     {
       "label": "DirectSoundWaveData_Instrument_007_JP_086435BC",
-      "source": "data/generated/rodata/menus/8073_menus_data.inc",
+      "source": "data/generated/rodata/menus/modules/m4a/8073_m4a_data.inc",
       "source_line": 618,
       "source_bin": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_007_JP_086435BC.bin",
       "wav": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_007_JP_086435BC.wav",
@@ -7575,7 +7575,7 @@
     },
     {
       "label": "DirectSoundWaveData_Instrument_008_JP_08644900",
-      "source": "data/generated/rodata/menus/8073_menus_data.inc",
+      "source": "data/generated/rodata/menus/modules/m4a/8073_m4a_data.inc",
       "source_line": 624,
       "source_bin": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_008_JP_08644900.bin",
       "wav": "audio/direct_sound/8073_menus_data/DirectSoundWaveData_Instrument_008_JP_08644900.wav",
