@@ -986,6 +986,46 @@
       "width": 64,
       "height": 16,
       "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/backgrounds/cosmic/palette_rom_exact.gbapal.lz": {
+      "key": "08D92AB4",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/cosmic/palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/backgrounds/cosmic/tiles_rom_exact.4bpp.lz": {
+      "key": "08D92ADC",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/backgrounds/cosmic/tiles.png",
+      "width": 64,
+      "height": 32,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_anims/backgrounds/cosmic/tilemap_rom_exact.tilemap.lz": {
+      "key": "08D92D3C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/cosmic/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/backgrounds/fissure/tiles_rom_exact.4bpp.lz": {
+      "key": "08D94010",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/backgrounds/fissure/tiles.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_anims/backgrounds/fissure/palette_rom_exact.gbapal.lz": {
+      "key": "08D94304",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/fissure/palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/backgrounds/fissure/tilemap_rom_exact.tilemap.lz": {
+      "key": "08D94320",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/fissure/tilemap.u16",
+      "semantic_role": "tilemap"
     }
   }
 }

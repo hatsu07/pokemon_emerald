@@ -1104,17 +1104,11 @@ gBattleAnimPaletteTable: @ 0x084FDB58
 	.globl gBattleAnimBgTilemap_Ghost
 	.globl gBattleAnimBgPalette_SolarBeam
 	.globl gBattleAnimBgPalette_Cosmic
-	.set gBattleAnimBgPalette_Cosmic, 0x08D92AB4
 	.globl gBattleAnimBgImage_Cosmic
-	.set gBattleAnimBgImage_Cosmic, 0x08D92ADC
 	.globl gBattleAnimBgTilemap_Cosmic
-	.set gBattleAnimBgTilemap_Cosmic, 0x08D92D3C
 	.globl gBattleAnimBgImage_Fissure
-	.set gBattleAnimBgImage_Fissure, 0x08D94010
 	.globl gBattleAnimBgPalette_Fissure
-	.set gBattleAnimBgPalette_Fissure, 0x08D94304
 	.globl gBattleAnimBgTilemap_Fissure
-	.set gBattleAnimBgTilemap_Fissure, 0x08D94320
 
 	@ struct BattleAnimBackground { image, palette, tilemap }
 	.macro battle_anim_bg_entry image:req, palette:req, tilemap:req

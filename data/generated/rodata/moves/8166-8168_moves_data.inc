@@ -16,16 +16,16 @@ gBerryBlenderOuter_Tilemap: @ 0x08D927A0
 	@ ANALYSIS: 6 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
 	.incbin "build/graphics/berry_blender/outer_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00, 0x00
-	.globl gLz77Asset_08D92AB4
-gLz77Asset_08D92AB4: @ 0x08D92AB4
-	.incbin "build/assets/lz77_raw/08D92AB4.bin.lz"
-	.globl gLz77Asset_08D92ADC
-gLz77Asset_08D92ADC: @ 0x08D92ADC
-	.incbin "build/assets/lz77_raw/08D92ADC.bin.lz"
+	.globl gBattleAnimBgPalette_Cosmic
+gBattleAnimBgPalette_Cosmic: @ 0x08D92AB4
+	.incbin "build/graphics/battle_anims/backgrounds/cosmic/palette_rom_exact.gbapal.lz"
+	.globl gBattleAnimBgImage_Cosmic
+gBattleAnimBgImage_Cosmic: @ 0x08D92ADC
+	.incbin "build/graphics/battle_anims/backgrounds/cosmic/tiles_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00
-	.globl gLz77Asset_08D92D3C
-gLz77Asset_08D92D3C: @ 0x08D92D3C
-	.incbin "build/assets/lz77_raw/08D92D3C.bin.lz"
+	.globl gBattleAnimBgTilemap_Cosmic
+gBattleAnimBgTilemap_Cosmic: @ 0x08D92D3C
+	.incbin "build/graphics/battle_anims/backgrounds/cosmic/tilemap_rom_exact.tilemap.lz"
 	.globl gLz77Asset_08D92E78
 gLz77Asset_08D92E78: @ 0x08D92E78
 	.incbin "build/assets/lz77_raw/08D92E78.bin.lz"
@@ -121,17 +121,17 @@ gLz77Asset_08D93E68: @ 0x08D93E68
 gLz77Asset_08D93FF0: @ 0x08D93FF0
 	.incbin "build/assets/lz77_raw/08D93FF0.bin.lz"
 	.byte 0x00, 0x00, 0x00
-	.globl gLz77Asset_08D94010
-gLz77Asset_08D94010: @ 0x08D94010
-	.incbin "build/assets/lz77_raw/08D94010.bin.lz"
+	.globl gBattleAnimBgImage_Fissure
+gBattleAnimBgImage_Fissure: @ 0x08D94010
+	.incbin "build/graphics/battle_anims/backgrounds/fissure/tiles_rom_exact.4bpp.lz"
 	.byte 0x00
-	.globl gLz77Asset_08D94304
-gLz77Asset_08D94304: @ 0x08D94304
-	.incbin "build/assets/lz77_raw/08D94304.bin.lz"
+	.globl gBattleAnimBgPalette_Fissure
+gBattleAnimBgPalette_Fissure: @ 0x08D94304
+	.incbin "build/graphics/battle_anims/backgrounds/fissure/palette_rom_exact.gbapal.lz"
 	.byte 0x00, 0x00
-	.globl gLz77Asset_08D94320
-gLz77Asset_08D94320: @ 0x08D94320
-	.incbin "build/assets/lz77_raw/08D94320.bin.lz"
+	.globl gBattleAnimBgTilemap_Fissure
+gBattleAnimBgTilemap_Fissure: @ 0x08D94320
+	.incbin "build/graphics/battle_anims/backgrounds/fissure/tilemap_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00
 	.globl gLz77Asset_08D9460C
 gLz77Asset_08D9460C: @ 0x08D9460C
