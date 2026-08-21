@@ -3850,30 +3850,3 @@ gTradeData_08300A8A: @ 0x08300A8A
 	.byte 0xFF, 0xFC, 0x01, 0x01, 0xFC, 0x02, 0x00, 0xFC, 0x03, 0x02, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x08300A95: daycare.s: AppendGenderSymbol
 	.globl gDaycareData_08300A95
-gDaycareData_08300A95: @ 0x08300A95
-	@ analyzed canonical ROM range 0x08300A95-0x08300A96
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x2 bytes=2
-	.byte 0xB5, 0xFF
-	@ pret/pokeemerald-jp direct xref for 0x08300A97: daycare.s: AppendGenderSymbol
-	.globl gDaycareData_08300A97
-gDaycareData_08300A97: @ 0x08300A97
-	@ analyzed canonical ROM range 0x08300A97-0x08300A98
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x2 bytes=2
-	.byte 0xB6, 0xFF
-	.globl gMenuRecord_Rom_300A99
-gMenuRecord_Rom_300A99: @ 0x08300A99
-	.space 0x2, 0xFF
-	.globl gText_Rom_300A9B
-gText_Rom_300A9B: @ 0x08300A9B
-	@ Decoded text from ROM range: offset=0x300A9B, size=0x3
-	.string "わざ{EOS}"
-	@ pret/pokeemerald-jp direct xref for 0x08300A9E: trade.s: sub_08079564
-	.globl gTradeData_08300A9E
-gTradeData_08300A9E: @ 0x08300A9E
-	@ analyzed canonical ROM range 0x08300A9E-0x08300A9F
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x2 bytes=2
-	.byte 0xFE, 0xFF
-	.globl gText_Rom_300AA0
