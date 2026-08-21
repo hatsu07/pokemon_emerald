@@ -717,7 +717,7 @@ EventScript_JP_082543B7: @ 0x082543B7
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8005
-	.4byte 0x08243629 @ PetalburgCity_Ext_WalkInPlaceFasterUp
+	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -732,7 +732,7 @@ EventScript_JP_082543C9: @ 0x082543C9
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8005
-	.4byte 0x08243627 @ PetalburgCity_Ext_WallyFaceLeft
+	.4byte PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
