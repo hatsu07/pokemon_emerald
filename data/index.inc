@@ -115,7 +115,7 @@
 	.include "data/generated/rodata/items/modules/berry_blender/0606-0610_berry_blender_data.inc"
 	.include "data/generated/rodata/items/0611_items_table.inc"
 	.include "data/generated/rodata/items/0612_items_data.inc"
-	.include "data/generated/rodata/items/0613_items_data.inc"
+	.include "data/decorations/secret_base_tileset_pointer.inc"
 	.include "data/generated/rodata/items/0614_items_data.inc"
 	.include "data/generated/rodata/items/0615_items_data.inc"
 
