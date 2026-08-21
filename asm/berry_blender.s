@@ -210,7 +210,7 @@ _0807F32C:
 	ldr r1, [r5]
 	b _0807F39E
 	.align 2, 0
-_0807F340: .4byte gBerryBlenderData_08D927A0
+_0807F340: .4byte gBerryBlenderOuter_Tilemap
 _0807F344: .4byte 0x000011B8
 _0807F348:
 	ldr r0, [r5]
@@ -232,7 +232,7 @@ _0807F348:
 	b _0807F39E
 	.align 2, 0
 _0807F370: .4byte 0x000011B8
-_0807F374: .4byte gBerryBlenderData_08D927A0
+_0807F374: .4byte gBerryBlenderOuter_Tilemap
 _0807F378:
 	ldr r0, _0807F384
 	movs r1, #0x80

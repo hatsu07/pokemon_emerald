@@ -410,6 +410,60 @@
       "source_kind": "u16_le_text",
       "source": "graphics/intro/scene_3/rayquaza_clouds.tilemap.u16",
       "semantic_role": "tilemap"
+    },
+    "build/graphics/trade/wireless_signal_rom_exact.tilemap.lz": {
+      "key": "0830C794",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trade/wireless_signal.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_blender/outer_rom_exact.tilemap.lz": {
+      "key": "08D927A0",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_blender/outer.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/backgrounds/fog_rom_exact.tilemap.lz": {
+      "key": "08D93294",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/fog.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/backgrounds/scary_face_contest_rom_exact.tilemap.lz": {
+      "key": "08D93914",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/scary_face_contest.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/backgrounds/surf_contest_rom_exact.tilemap.lz": {
+      "key": "08D96358",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/surf_contest.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/party_menu/bg_rom_exact.tilemap.lz": {
+      "key": "08D96B54",
+      "source_kind": "u16_le_text",
+      "source": "graphics/party_menu/bg.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/summary_screen/page_info_egg_rom_exact.tilemap.lz": {
+      "key": "08D98E8C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/summary_screen/page_info_egg.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/bag/menu_rom_exact.tilemap.lz": {
+      "key": "08D9AA84",
+      "source_kind": "u16_le_text",
+      "source": "graphics/bag/menu.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/shop/menu_rom_exact.tilemap.lz": {
+      "key": "08D9B2E8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/shop/menu.tilemap.u16",
+      "semantic_role": "tilemap"
     }
   }
 }

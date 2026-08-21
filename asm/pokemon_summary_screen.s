@@ -737,7 +737,7 @@ _081BF8C0:
 	ldr r1, [r4]
 	b _081BF9AA
 	.align 2, 0
-_081BF8D0: .4byte gPokemonSummaryScreenData_08D98E8C
+_081BF8D0: .4byte gSummaryPage_InfoEgg_Tilemap
 _081BF8D4: .4byte 0x000008BC
 _081BF8D8:
 	ldr r0, _081BF8E8

@@ -8,14 +8,13 @@ gBerryBlenderOuter_Gfx: @ 0x08D91D6C
 	.error "gBerryBlenderOuter_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D927A0: berry_blender.s: LoadBerryBlenderGfx
-	.globl gBerryBlenderData_08D927A0
-gBerryBlenderData_08D927A0: @ 0x08D927A0
+.globl gBerryBlenderOuter_Tilemap
+gBerryBlenderOuter_Tilemap: @ 0x08D927A0
 	@ confirmed GBA LZ77 stream: compressed=0x311, decompressed=0x800
-sLz77Block_08D927A0:
 	@ analyzed canonical ROM range 0x08D927A0-0x08D93293
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 6 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D927A0.bin.lz"
+	.incbin "build/graphics/berry_blender/outer_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00, 0x00
 	.globl gLz77Asset_08D92AB4
 gLz77Asset_08D92AB4: @ 0x08D92AB4
@@ -35,14 +34,13 @@ gLz77Asset_08D92E78: @ 0x08D92E78
 gLz77Asset_08D92EA0: @ 0x08D92EA0
 	.incbin "build/assets/lz77_raw/08D92EA0.bin.lz"
 	@ pret/pokeemerald-jp direct xref for 0x08D93294: ice.s: AnimTask_Haze1, AnimTask_LoadMistTiles
-	.globl gIceData_08D93294
-gIceData_08D93294: @ 0x08D93294
+.globl gBattleAnimFogTilemap
+gBattleAnimFogTilemap: @ 0x08D93294
 	@ confirmed GBA LZ77 stream: compressed=0x176, decompressed=0x800
-sLz77Block_08D93294:
 	@ analyzed canonical ROM range 0x08D93294-0x08D9354B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 3 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D93294.bin.lz"
+	.incbin "build/graphics/battle_anims/backgrounds/fog_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00
 	.globl gLz77Asset_08D9340C
 gLz77Asset_08D9340C: @ 0x08D9340C
@@ -68,14 +66,13 @@ gBattleAnimBgTilemap_ScaryFaceOpponent: @ 0x08D93730
 	.error "gBattleAnimBgTilemap_ScaryFaceOpponent compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D93914: battle_anim_effects_2.s: sub_08106D48
-	.globl gBattleAnimEffects2Data_08D93914
-gBattleAnimEffects2Data_08D93914: @ 0x08D93914
+.globl gBattleAnimBgTilemap_ScaryFaceContest
+gBattleAnimBgTilemap_ScaryFaceContest: @ 0x08D93914
 	@ confirmed GBA LZ77 stream: compressed=0x1E2, decompressed=0x800
-sLz77Block_08D93914:
 	@ analyzed canonical ROM range 0x08D93914-0x08D94A6B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 20 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D93914.bin.lz"
+	.incbin "build/graphics/battle_anims/backgrounds/scary_face_contest_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00
 	.globl gLz77Asset_08D93AF8
 gLz77Asset_08D93AF8: @ 0x08D93AF8
@@ -185,14 +182,13 @@ gBattleAnimBgTilemap_SurfPlayer: @ 0x08D96084
 	.error "gBattleAnimBgTilemap_SurfPlayer compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D96358: water.s: AnimTask_CreateSurfWave
-	.globl gWaterData_08D96358
-gWaterData_08D96358: @ 0x08D96358
+.globl gBattleAnimBgTilemap_SurfContest
+gBattleAnimBgTilemap_SurfContest: @ 0x08D96358
 	@ confirmed GBA LZ77 stream: compressed=0x2F2, decompressed=0x1000
-sLz77Block_08D96358:
 	@ analyzed canonical ROM range 0x08D96358-0x08D9679F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 4 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D96358.bin.lz"
+	.incbin "build/graphics/battle_anims/backgrounds/surf_contest_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00
 	.globl gLz77Asset_08D9664C
 gLz77Asset_08D9664C: @ 0x08D9664C
@@ -224,14 +220,13 @@ gPartyMenuBg_Pal: @ 0x08D96A68
 	.error "gPartyMenuBg_Pal compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D96B54: party_menu.s: AllocPartyMiscGfx
-	.globl gPartyMenuData_08D96B54
-gPartyMenuData_08D96B54: @ 0x08D96B54
+.globl gPartyMenuBg_Tilemap
+gPartyMenuBg_Tilemap: @ 0x08D96B54
 	@ confirmed GBA LZ77 stream: compressed=0x138, decompressed=0x800
-sLz77Block_08D96B54:
 	@ analyzed canonical ROM range 0x08D96B54-0x08D97C53
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 7 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D96B54.bin.lz"
+	.incbin "build/graphics/party_menu/bg_rom_exact.tilemap.lz"
 	.globl gLz77Asset_08D96C8C
 gLz77Asset_08D96C8C: @ 0x08D96C8C
 	.incbin "build/assets/lz77_raw/08D96C8C.bin.lz"
@@ -324,14 +319,13 @@ gSummaryPage_ContestMoves_Tilemap: @ 0x08D98D14
 	.error "gSummaryPage_ContestMoves_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D98E8C: pokemon_summary_screen.s: SummaryScreen_DecompressGraphics
-	.globl gPokemonSummaryScreenData_08D98E8C
-gPokemonSummaryScreenData_08D98E8C: @ 0x08D98E8C
+.globl gSummaryPage_InfoEgg_Tilemap
+gSummaryPage_InfoEgg_Tilemap: @ 0x08D98E8C
 	@ confirmed GBA LZ77 stream: compressed=0x1A3, decompressed=0x800
-sLz77Block_08D98E8C:
 	@ analyzed canonical ROM range 0x08D98E8C-0x08D9A733
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 4 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D98E8C.bin.lz"
+	.incbin "build/graphics/summary_screen/page_info_egg_rom_exact.tilemap.lz"
 	.byte 0x00
 	.globl gLz77Asset_08D99030
 gLz77Asset_08D99030: @ 0x08D99030
@@ -371,14 +365,13 @@ gBagScreen_Gfx: @ 0x08D9A7CC
 	.error "gBagScreen_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9AA84: item_menu.s: LoadBagMenu_Graphics
-	.globl gItemMenuData_08D9AA84
-gItemMenuData_08D9AA84: @ 0x08D9AA84
+.globl gBagScreen_GfxTileMap
+gBagScreen_GfxTileMap: @ 0x08D9AA84
 	@ confirmed GBA LZ77 stream: compressed=0x15D, decompressed=0x800
-sLz77Block_08D9AA84:
 	@ analyzed canonical ROM range 0x08D9AA84-0x08D9AFC7
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 2 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D9AA84.bin.lz"
+	.incbin "build/graphics/bag/menu_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00, 0x00
 	.globl gLz77Asset_08D9ABE4
 gLz77Asset_08D9ABE4: @ 0x08D9ABE4

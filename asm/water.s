@@ -1095,7 +1095,7 @@ _0810823A:
 	bl LoadCompressedPalette
 	b _08108282
 	.align 2, 0
-_08108264: .4byte gWaterData_08D96358
+_08108264: .4byte gBattleAnimBgTilemap_SurfContest
 _08108268: .4byte gBattleAnimBgImage_Surf
 _0810826C: .4byte 0x020380BE
 _08108270: .4byte gBattleAnimBgPalette_Surf

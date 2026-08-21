@@ -6339,7 +6339,7 @@ _08106D8A:
 _08106DB8: .4byte 0x00003F42
 _08106DBC: .4byte 0x02022ACC
 _08106DC0: .4byte 0x02022ACE
-_08106DC4: .4byte gBattleAnimEffects2Data_08D93914
+_08106DC4: .4byte gBattleAnimBgTilemap_ScaryFaceContest
 _08106DC8:
 	ldr r0, _08106DE4
 	ldrb r0, [r0]

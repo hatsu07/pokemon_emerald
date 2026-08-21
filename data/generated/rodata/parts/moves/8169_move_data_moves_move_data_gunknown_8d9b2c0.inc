@@ -7,14 +7,13 @@ gShopMenu_Pal: @ 0x08D9B2C0
 	.error "gShopMenu_Pal compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08D9B2E8: shop.s: BuyMenuDecompressBgGraphics
-	.globl gShopData_08D9B2E8
-gShopData_08D9B2E8: @ 0x08D9B2E8
+.globl gShopMenu_Tilemap
+gShopMenu_Tilemap: @ 0x08D9B2E8
 	@ confirmed GBA LZ77 stream: compressed=0x13E, decompressed=0x800
-sLz77Block_08D9B2E8:
 	@ analyzed canonical ROM range 0x08D9B2E8-0x08D9B4B3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 2 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D9B2E8.bin.lz"
+	.incbin "build/graphics/shop/menu_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00
 	.globl gShopMenuMoney_Gfx
 gShopMenuMoney_Gfx: @ 0x08D9B428

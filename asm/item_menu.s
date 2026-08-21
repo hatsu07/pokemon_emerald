@@ -710,7 +710,7 @@ _081AAE88:
 	ldr r1, [r4]
 	b _081AAF22
 	.align 2, 0
-_081AAEA4: .4byte gItemMenuData_08D9AA84
+_081AAEA4: .4byte gBagScreen_GfxTileMap
 _081AAEA8: .4byte 0x0203CB20
 _081AAEAC:
 	bl IsWallysBag

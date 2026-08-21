@@ -8814,7 +8814,7 @@ _0807B258:
 _0807B260: .4byte sWirelessSignalNone_Pal
 _0807B264: .4byte sWirelessSignal_Gfx
 _0807B268: .4byte 0x06004000
-_0807B26C: .4byte gTradeData_0830C794
+_0807B26C: .4byte sWirelessSignal_Tilemap
 _0807B270: .4byte 0x06009000
 _0807B274: .4byte 0x02031F40
 _0807B278:

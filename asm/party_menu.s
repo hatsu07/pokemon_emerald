@@ -742,7 +742,7 @@ _081B0310:
 	bl LZDecompressVram
 	b _081B0372
 	.align 2, 0
-_081B0328: .4byte gPartyMenuData_08D96B54
+_081B0328: .4byte gPartyMenuBg_Tilemap
 _081B032C: .4byte 0x0203CBB0
 _081B0330:
 	ldr r0, _081B0350
