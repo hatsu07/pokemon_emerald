@@ -1,28 +1,3 @@
-	@ pret/pokeemerald-jp direct xref for 0x085E72E4: unk_81BAD84.s: sub_081BAA20
-	.globl gUnk81BAD84Data_085E72E4
-gUnk81BAD84Data_085E72E4: @ 0x085E72E4
-	@ confirmed contiguous ROM pointer table: 75 entries from this address
-sPointerTable_085E72E4:
-	@ analyzed canonical ROM range 0x085E72E4-0x085E732B
-	@ pointer/nullable table
-	.4byte 0x085E2A20 @ +0x0
-	.4byte 0x085E3610 @ +0x4
-	.4byte 0x085E29E0 @ +0x8
-	.4byte 0x085E3990 @ +0xC
-	.4byte 0x085E4494 @ +0x10
-	.4byte 0x085E3930 @ +0x14
-	.4byte 0x085E47D0 @ +0x18
-	.4byte 0x085E50D8 @ +0x1C
-	.4byte 0x085E4790 @ +0x20
-	.4byte 0x085E539C @ +0x24
-	.4byte 0x085E5BCC @ +0x28
-	.4byte 0x085E535C @ +0x2C
-	.4byte 0x085E5E68 @ +0x30
-	.4byte 0x085E674C @ +0x34
-	.4byte 0x085E5E28 @ +0x38
-	.4byte 0x085E69E8 @ +0x3C
-	.4byte 0x085E707C @ +0x40
-	.4byte 0x085E69A8 @ +0x44
 	@ pret/pokeemerald-jp direct xref for 0x085E732C: battle_controller_player_partner.s: PlayerPartnerBufferRunCommand
 	.globl gBattleControllerPlayerPartnerData_085E732C
 gBattleControllerPlayerPartnerData_085E732C: @ 0x085E732C

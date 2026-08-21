@@ -596,6 +596,90 @@
       "source_kind": "u16_le_text",
       "source": "graphics/pokemon_storage/wallpapers/beach/tilemap.tilemap.u16",
       "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_fix_program/screen_0/tiles_rom_exact.4bpp.lz": {
+      "key": "085E2A20",
+      "source_kind": "png",
+      "source": "graphics/berry_fix_program/screen_0/tiles.png",
+      "width": 128,
+      "height": 136,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/berry_fix_program/screen_0/tilemap_rom_exact.tilemap.lz": {
+      "key": "085E3610",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_fix_program/screen_0/tilemap.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_fix_program/screen_1/tiles_rom_exact.4bpp.lz": {
+      "key": "085E3990",
+      "source_kind": "png",
+      "source": "graphics/berry_fix_program/screen_1/tiles.png",
+      "width": 176,
+      "height": 88,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/berry_fix_program/screen_1/tilemap_rom_exact.tilemap.lz": {
+      "key": "085E4494",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_fix_program/screen_1/tilemap.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_fix_program/screen_2/tiles_rom_exact.4bpp.lz": {
+      "key": "085E47D0",
+      "source_kind": "png",
+      "source": "graphics/berry_fix_program/screen_2/tiles.png",
+      "width": 128,
+      "height": 96,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/berry_fix_program/screen_2/tilemap_rom_exact.tilemap.lz": {
+      "key": "085E50D8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_fix_program/screen_2/tilemap.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_fix_program/screen_3/tiles_rom_exact.4bpp.lz": {
+      "key": "085E539C",
+      "source_kind": "png",
+      "source": "graphics/berry_fix_program/screen_3/tiles.png",
+      "width": 128,
+      "height": 96,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/berry_fix_program/screen_3/tilemap_rom_exact.tilemap.lz": {
+      "key": "085E5BCC",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_fix_program/screen_3/tilemap.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_fix_program/screen_4/tiles_rom_exact.4bpp.lz": {
+      "key": "085E5E68",
+      "source_kind": "png",
+      "source": "graphics/berry_fix_program/screen_4/tiles.png",
+      "width": 128,
+      "height": 96,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/berry_fix_program/screen_4/tilemap_rom_exact.tilemap.lz": {
+      "key": "085E674C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_fix_program/screen_4/tilemap.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_fix_program/screen_5/tiles_rom_exact.4bpp.lz": {
+      "key": "085E69E8",
+      "source_kind": "png",
+      "source": "graphics/berry_fix_program/screen_5/tiles.png",
+      "width": 664,
+      "height": 16,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/berry_fix_program/screen_5/tilemap_rom_exact.tilemap.lz": {
+      "key": "085E707C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_fix_program/screen_5/tilemap.tilemap.u16",
+      "semantic_role": "tilemap"
     }
   }
 }

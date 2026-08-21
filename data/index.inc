@@ -1603,6 +1603,7 @@
 	.include "data/generated/rodata/parts/menus/6780_menu_text_menus_menu_text_gunknown_85dde14.inc"
 	.include "data/generated/rodata/menus/6781_menus_data.inc"
 	.include "data/generated/rodata/menus/6782_menus_data.inc"
+	.include "data/berry_fix_program/graphics.inc"
 	.include "data/generated/rodata/menus/6783_menus_data.inc"
 	.include "data/generated/rodata/battle/modules/battle_debug/6784-6790_battle_debug_data.inc"
 	.include "data/generated/rodata/menus/modules/data/script_menu/6791_rom_5_e816_b_text.inc"
