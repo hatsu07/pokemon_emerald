@@ -16,15 +16,6 @@
 .globl gIntroLightning_Pal
 .set gIntroLightning_Pal, gIntroData_08D8BA58 - 0x20
 
-.globl gIntroVolbeat_Gfx
-.set gIntroVolbeat_Gfx, sLz77Block_08D85F34
-
-.globl gIntroTorchic_Gfx
-.set gIntroTorchic_Gfx, gLz77Asset_08D86114
-
-.globl gIntroManectric_Gfx
-.set gIntroManectric_Gfx, gLz77Asset_08D86534
-
 .globl gIntroVolbeat_Pal
 .set gIntroVolbeat_Pal, gIntroCreditsFlygonPalette - 0x60
 

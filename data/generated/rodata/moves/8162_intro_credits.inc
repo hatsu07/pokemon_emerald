@@ -3,17 +3,20 @@ gIntroCreditsFlygonPalette: @ 0x08D85F14
 	.incbin "build/graphics/intro_credits/intro_flygon_palette.gbapal"
 	@ analyzed canonical ROM range 0x08D85F34-0x08D8700F
 	@ confirmed GBA LZ77 stream: compressed=0x1DD, decompressed=0x400
-sLz77Block_08D85F34:
-	@ structured u8 payload; no safe higher-level semantic type was provable
+	.globl gIntroVolbeat_Gfx
+gIntroVolbeat_Gfx: @ 0x08D85F34
+	@ exact GBA LZ77 from editable graphics/intro/scene_static/volbeat.png
 	@ ANALYSIS: 3 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08D85F34.bin.lz"
+	.incbin "build/graphics/intro/scene_static/volbeat_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00
-	.globl gLz77Asset_08D86114
-gLz77Asset_08D86114: @ 0x08D86114
-	.incbin "build/assets/lz77_raw/08D86114.bin.lz"
-	.globl gLz77Asset_08D86534
-gLz77Asset_08D86534: @ 0x08D86534
-	.incbin "build/assets/lz77_raw/08D86534.bin.lz"
+	.globl gIntroTorchic_Gfx
+gIntroTorchic_Gfx: @ 0x08D86114
+	@ exact GBA LZ77 from editable graphics/intro/scene_static/torchic.png
+	.incbin "build/graphics/intro/scene_static/torchic_rom_exact.4bpp.lz"
+	.globl gIntroManectric_Gfx
+gIntroManectric_Gfx: @ 0x08D86534
+	@ exact GBA LZ77 from editable graphics/intro/scene_static/manectric.png
+	.incbin "build/graphics/intro/scene_static/manectric_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00
 	.globl gIntroCreditsFlygonGfx
 gIntroCreditsFlygonGfx: @ 0x08D87010

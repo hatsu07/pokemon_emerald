@@ -680,6 +680,30 @@
       "source_kind": "u16_le_text",
       "source": "graphics/berry_fix_program/screen_5/tilemap.tilemap.u16",
       "semantic_role": "tilemap"
+    },
+    "build/graphics/intro/scene_static/volbeat_rom_exact.4bpp.lz": {
+      "key": "08D85F34",
+      "source_kind": "png",
+      "source": "graphics/intro/scene_static/volbeat.png",
+      "width": 64,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/intro/scene_static/torchic_rom_exact.4bpp.lz": {
+      "key": "08D86114",
+      "source_kind": "png",
+      "source": "graphics/intro/scene_static/torchic.png",
+      "width": 64,
+      "height": 96,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/intro/scene_static/manectric_rom_exact.4bpp.lz": {
+      "key": "08D86534",
+      "source_kind": "png",
+      "source": "graphics/intro/scene_static/manectric.png",
+      "width": 64,
+      "height": 256,
+      "semantic_role": "sprite_gfx"
     }
   }
 }
