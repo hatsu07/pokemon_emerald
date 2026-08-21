@@ -6,7 +6,7 @@ gEasyChatGroups: @ 0x08578D14
 	@ ANALYSIS: EASY_CHAT_GROUP_ENTRIES size=0x18 addr=0x08578D14 entries=3 layout=wordData_ptr,numWords_u16,numEnabledWords_u16
 	@ ANALYSIS: SOURCE_RANGE addr=0x08578D14 size=0x18
 	@ EC_GROUP_POKEMON: wordData=gEasyChatGroup_Pokemon (NUMERIC_POINTER_PRESERVED)
-	.4byte 0x08574584
+	.4byte sEasyChatJapaneseWordIdTable
 	.2byte 202, 202 @ numWords, numEnabledWords
 	@ EC_GROUP_TRAINER: wordData=gEasyChatGroup_Trainer (NUMERIC_POINTER_PRESERVED)
 	.4byte 0x085747A0
