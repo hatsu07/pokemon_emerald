@@ -98,7 +98,7 @@ sSmokescreenImpactSpriteTemplate:
 gBattleGfxSfxUtilData_082ED028:
 	.globl gSpriteSheet_EnemyShadow
 gSpriteSheet_EnemyShadow: @ 0x082ED028
-	.4byte 0x08D8FB74 @ gEnemyMonShadow_Gfx
+	.4byte gEnemyMonShadow_Gfx
 	.2byte 0x0080, 0xD759 @ size, GFXTAG_SHADOW
 sOamData_EnemyShadow: @ 0x082ED030
 	.2byte 0x4000

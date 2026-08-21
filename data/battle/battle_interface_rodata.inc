@@ -1,5 +1,6 @@
 @ Semantic addresses for battle-interface assets not yet exported across objects.
-.set BattleInterface_BallStatusBarGfx, 0x08D8FBA4 @ gBattleInterface_BallStatusBarGfx
+.globl gBattleInterface_BallStatusBarGfx
+.set BattleInterface_BallStatusBarGfx, gBattleInterface_BallStatusBarGfx
 .set BattleInterface_BallDisplayPal, 0x08C11BC4 @ gBattleInterface_BallDisplayPal
 .set BattleInterface_StatusSummaryBallGfx, 0x08C12424 @ gHealthboxElementsGfxTable[HEALTHBOX_GFX_STATUS_BALL]
 

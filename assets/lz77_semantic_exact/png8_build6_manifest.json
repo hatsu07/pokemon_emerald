@@ -970,6 +970,22 @@
       "source_kind": "u16_le_text",
       "source": "graphics/battle_anims/backgrounds/solar_beam/palette.gbapal.u16",
       "semantic_role": "palette"
+    },
+    "build/graphics/battle_interface/enemy_shadow_rom_exact.4bpp.lz": {
+      "key": "08D8FB74",
+      "source_kind": "png",
+      "source": "graphics/battle_interface/enemy_shadow.png",
+      "width": 16,
+      "height": 16,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_interface/ball_status_bar_rom_exact.4bpp.lz": {
+      "key": "08D8FBA4",
+      "source_kind": "png",
+      "source": "graphics/battle_interface/ball_status_bar.png",
+      "width": 64,
+      "height": 16,
+      "semantic_role": "sprite_gfx"
     }
   }
 }

@@ -160,13 +160,13 @@ gBattleAnimBackgroundImageMuddyWater_Pal: @ 0x08D8FB50
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 3 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
 	.incbin "build/graphics/battle_anims/backgrounds/muddy_water_palette_rom_exact.gbapal.lz"
-	.globl gLz77Asset_08D8FB74
-gLz77Asset_08D8FB74: @ 0x08D8FB74
-	.incbin "build/assets/lz77_raw/08D8FB74.bin.lz"
+	.globl gEnemyMonShadow_Gfx
+gEnemyMonShadow_Gfx: @ 0x08D8FB74
+	.incbin "build/graphics/battle_interface/enemy_shadow_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00
-	.globl gLz77Asset_08D8FBA4
-gLz77Asset_08D8FBA4: @ 0x08D8FBA4
-	.incbin "build/assets/lz77_raw/08D8FBA4.bin.lz"
+	.globl gBattleInterface_BallStatusBarGfx
+gBattleInterface_BallStatusBarGfx: @ 0x08D8FBA4
+	.incbin "build/graphics/battle_interface/ball_status_bar_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00
 
 	.globl gMonIcon_Egg
