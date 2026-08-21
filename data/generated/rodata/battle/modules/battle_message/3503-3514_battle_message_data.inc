@@ -454,15 +454,15 @@ gBattlePointerTable_Rom_5AB3DC: @ 0x085AB3DC
 	.4byte gText_Rom_5ABFFA @ +0x59C
 	@ ANALYSIS: POINTER_TABLE entries=3 size=0xC
 	.4byte 0x085AC012
-	.4byte 0x085AC070
-	.4byte 0x085AC087
+	.4byte sBattleStatusText_JP_0
+	.4byte sBattleStatusText_JP_1
 	.4byte gText_Rom_243E08 @ +0x5AC
 	.4byte gText_Rom_243E2A @ +0x5B0
 	.4byte gText_Rom_243E4C @ +0x5B4
 	.4byte gText_Rom_243E80 @ +0x5B8
 	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
-	.4byte 0x085AC098
-	.4byte 0x085AC09B
+	.4byte sBattleStatusText_JP_2
+	.4byte sBattleStatusText_JP_3
 	@ pret/pokeemerald-jp direct xref for 0x085AB9A0: battle_script_commands.s: atk0F_resultmessage
 	.globl gBattleScriptCommandsData_085AB9A0
 gBattleScriptCommandsData_085AB9A0: @ 0x085AB9A0
