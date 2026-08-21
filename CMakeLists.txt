@@ -152,7 +152,7 @@ list(APPEND GRAPHICS_RELATIVE_OUTPUTS
     "build/graphics/battle_anims/unused/water_gfx.4bpp"
     "build/graphics/battle_anims/unused/water.tilemap.inc")
 
-# BEGIN SEMANTIC36 EXACT LZ77 CONFIG
+# BEGIN SEMANTIC43 EXACT LZ77 CONFIG
 set(LZ77_SEMANTIC_EXACT_MANIFEST
     "${CMAKE_SOURCE_DIR}/assets/lz77_semantic_exact/png8_build6_manifest.json")
 set(LZ77_SEMANTIC_EXACT_OUTPUTS
@@ -192,6 +192,13 @@ set(LZ77_SEMANTIC_EXACT_OUTPUTS
     "build/graphics/summary_screen/move_types_palette_rom_exact.gbapal.lz"
     "build/graphics/battle_pyramid/bag_interface_palette_rom_exact.gbapal.lz"
     "build/graphics/pokeblock/menu_palette_rom_exact.gbapal.lz"
+    "build/graphics/berry_crush/crusher_rom_exact.4bpp.lz"
+    "build/graphics/pokenav/device_outline_rom_exact.tilemap.lz"
+    "build/graphics/pokenav/region_map/zoom_tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokenav/ribbons/icons_rom_exact.4bpp.lz"
+    "build/graphics/cable_car/bg_rom_exact.4bpp.lz"
+    "build/graphics/pokenav/header_rom_exact.tilemap.lz"
+    "build/graphics/pokenav/match_call/ui_rom_exact.tilemap.lz"
 )
 set(LZ77_SEMANTIC_PNG_SOURCES
     "${CMAKE_SOURCE_DIR}/graphics/berry_crush/crusher_base.png"
@@ -217,6 +224,13 @@ set(LZ77_SEMANTIC_PNG_SOURCES
     "${CMAKE_SOURCE_DIR}/graphics/summary_screen/move_types_palette.gbapal.u16"
     "${CMAKE_SOURCE_DIR}/graphics/battle_pyramid/bag_interface_palette.gbapal.u16"
     "${CMAKE_SOURCE_DIR}/graphics/pokeblock/menu_palette.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_crush/crusher.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokenav/device_outline.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/zoom_tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokenav/ribbons/icons.png"
+    "${CMAKE_SOURCE_DIR}/graphics/cable_car/bg.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokenav/header.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokenav/match_call/ui.tilemap.u16"
 )
 set(LZ77_SEMANTIC_BUILD_INPUTS
     "build/graphics/dodrio_berry_picking/bg.4bpp.lz"
@@ -253,7 +267,7 @@ set(LZ77_SEMANTIC_BUILD_INPUTS_ABS
 list(APPEND GRAPHICS_RELATIVE_OUTPUTS
     ${LZ77_SEMANTIC_EXACT_OUTPUTS}
     ${LZ77_SEMANTIC_BUILD_INPUTS})
-# END SEMANTIC36 EXACT LZ77 CONFIG
+# END SEMANTIC43 EXACT LZ77 CONFIG
 
 list(REMOVE_DUPLICATES GRAPHICS_RELATIVE_OUTPUTS)
 list(SORT GRAPHICS_RELATIVE_OUTPUTS)
@@ -418,7 +432,7 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     set(OUTPUT_ABS "${CMAKE_SOURCE_DIR}/${RELATIVE_OUTPUT}")
     get_filename_component(OUTPUT_DIR "${OUTPUT_ABS}" DIRECTORY)
 
-    # BEGIN SEMANTIC36 EXACT LZ77 PIPELINE
+    # BEGIN SEMANTIC43 EXACT LZ77 PIPELINE
     list(FIND LZ77_SEMANTIC_EXACT_OUTPUTS
         "${RELATIVE_OUTPUT}" LZ77_SEMANTIC_EXACT_INDEX)
     if(NOT LZ77_SEMANTIC_EXACT_INDEX EQUAL -1)
@@ -443,7 +457,7 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
                 "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
             VERBATIM)
-    # END SEMANTIC36 EXACT LZ77 PIPELINE
+    # END SEMANTIC43 EXACT LZ77 PIPELINE
 
     # BEGIN SLOT MACHINE SEMANTIC TILEMAP PIPELINE
     elseif("${RELATIVE_OUTPUT}" MATCHES

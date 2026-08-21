@@ -175,7 +175,7 @@ _081CAB0C:
 _081CAB64: .4byte gPokenavUnk4Data_085F412C
 _081CAB68: .4byte sMatchCallUI_Gfx
 _081CAB6C: .4byte 0x00001024
-_081CAB70: .4byte gPokenavUnk4Data_085F3F74
+_081CAB70: .4byte sMatchCallUI_Tilemap
 _081CAB74: .4byte gPokenavUnk4Data_085F3EB0
 _081CAB78:
 	bl free_temp_tile_data_buffers_if_possible
@@ -3163,7 +3163,7 @@ sub_081CC170: @ 0x081CC170
 	.align 2, 0
 _081CC21C: .4byte 0x01000400
 _081CC220: .4byte gPokenavUnk4Data_085F4D34
-_081CC224: .4byte gPokenavUnk4Data_085F4248
+_081CC224: .4byte sRegionMapCityZoomTiles_Gfx
 _081CC228: .4byte gPokenavUnk4Data_085F4208
 _081CC22C: .4byte gPokenavUnk4Data_085F4228
 _081CC230: .4byte 0xFFFFA000

@@ -374,14 +374,13 @@ gPokenavHeader_Gfx:
 	.error "gPokenavHeader_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085EFC2C: pokenav_main_menu.s: LoopedTask_InitPokenavMenu
-	.globl gPokenavMainMenuData_085EFC2C
-gPokenavMainMenuData_085EFC2C: @ 0x085EFC2C
+.globl gPokenavHeader_Tilemap
+gPokenavHeader_Tilemap: @ 0x085EFC2C
 	@ confirmed GBA LZ77 stream: compressed=0x17B, decompressed=0x800
-sLz77Block_085EFC2C:
 	@ analyzed canonical ROM range 0x085EFC2C-0x085F021B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 3 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/085EFC2C.bin.lz"
+	.incbin "build/graphics/pokenav/header_rom_exact.tilemap.lz"
 	.byte 0x00, 0xFF, 0x7F, 0x95, 0x15, 0x55, 0x4A, 0xB6, 0x56, 0x1F, 0x3B, 0xFE, 0x31, 0x94, 0x66, 0x8C
 	.byte 0x79, 0xFF, 0x7F, 0xC1, 0x7E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x39, 0x6B, 0xB5
 	.byte 0x5E
@@ -818,14 +817,13 @@ sPokenavDeviceBgTiles:
 	.error "sPokenavDeviceBgTiles compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085F1AE0: pokenav_unk_2.s: sub_081C91BC
-	.globl gPokenavUnk2Data_085F1AE0
-gPokenavUnk2Data_085F1AE0: @ 0x085F1AE0
+.globl sPokenavDeviceBgTilemap
+sPokenavDeviceBgTilemap: @ 0x085F1AE0
 	@ confirmed GBA LZ77 stream: compressed=0x10D, decompressed=0x500
-sLz77Block_085F1AE0:
 	@ analyzed canonical ROM range 0x085F1AE0-0x085F26FB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 3 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/085F1AE0.bin.lz"
+	.incbin "build/graphics/pokenav/device_outline_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x7F, 0x4A, 0x25, 0xB5, 0x56, 0x1E, 0x1B, 0xBF, 0x33, 0x5C
 	.byte 0x02, 0x00, 0x00, 0x04, 0x37, 0xF2, 0x33, 0x29, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0xFF, 0x7F, 0x00, 0x00, 0xFF, 0x7F, 0x4A, 0x25, 0xB5, 0x56, 0x1E, 0x1B, 0xBF, 0x33, 0x5C

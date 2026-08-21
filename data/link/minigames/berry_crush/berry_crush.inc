@@ -148,14 +148,13 @@ gBerryCrushData_082C5F84: @ 0x082C5F84
 	.byte 0x00, 0x00, 0x72, 0x53, 0x94, 0x57, 0xB6, 0x5F, 0xD8, 0x67, 0xFA, 0x6F, 0xFD, 0x77, 0xB9, 0x7D
 	.byte 0x55, 0x6D, 0x52, 0x4A, 0xEF, 0x3D, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0xF6, 0x5E, 0xFF, 0x7F
 	@ pret/pokeemerald-jp direct xref for 0x082C6104: berry_crush.s: sub_08020D74
-	.globl gBerryCrushData_082C6104
-gBerryCrushData_082C6104: @ 0x082C6104
+.globl gBerryCrush_Crusher_Gfx
+gBerryCrush_Crusher_Gfx: @ 0x082C6104
 	@ confirmed GBA LZ77 stream: compressed=0xB0E, decompressed=0x2000
-sLz77Block_082C6104:
 	@ analyzed canonical ROM range 0x082C6104-0x082C74D3
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 5 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/082C6104.bin.lz"
+	.incbin "build/graphics/berry_crush/crusher_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00
 	.globl gLz77Asset_082C6C14
 gLz77Asset_082C6C14: @ 0x082C6C14

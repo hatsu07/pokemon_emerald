@@ -966,7 +966,7 @@ _081D01C2:
 	movs r0, #1
 	b _081D026C
 	.align 2, 0
-_081D0214: .4byte gPokenavUnk10Data_085F6734
+_081D0214: .4byte sRibbonIconsSmall_Gfx
 _081D0218: .4byte 0x0000081C
 _081D021C: .4byte gPokenavUnk10Data_085F6674
 _081D0220: .4byte gPokenavUnk10Data_085F6714

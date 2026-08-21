@@ -58,14 +58,13 @@ gPokenavUnk4Data_085F4228:
 	.byte 0x00, 0x00, 0x00, 0x00, 0x1F, 0x02, 0x1F, 0x21, 0x70, 0x7A, 0x42, 0x7C, 0x32, 0x4A, 0xFF, 0x7F
 	.byte 0x00, 0x03, 0x16, 0x36, 0x1B, 0x70, 0xF3, 0x7F, 0x9C, 0x73, 0x8E, 0x14, 0x08, 0x26, 0x19, 0x2A
 	@ pret/pokeemerald-jp direct xref for 0x085F4248: pokenav_unk_4.s: sub_081CC170
-	.globl gPokenavUnk4Data_085F4248
-gPokenavUnk4Data_085F4248: @ 0x085F4248
+.globl sRegionMapCityZoomTiles_Gfx
+sRegionMapCityZoomTiles_Gfx: @ 0x085F4248
 	@ confirmed GBA LZ77 stream: compressed=0x1F3, decompressed=0x800
-sLz77Block_085F4248:
 	@ analyzed canonical ROM range 0x085F4248-0x085F4CFB
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 24 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/085F4248.bin.lz"
+	.incbin "build/graphics/pokenav/region_map/zoom_tiles_rom_exact.4bpp.lz"
 	.byte 0x00
 	.globl gLz77Asset_085F443C
 gLz77Asset_085F443C: @ 0x085F443C

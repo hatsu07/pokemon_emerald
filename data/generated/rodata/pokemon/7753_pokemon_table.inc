@@ -350,14 +350,13 @@ sMatchCallUI_Gfx:
 	.error "sMatchCallUI_Gfx compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085F3F74: pokenav_unk_4.s: sub_081CAAC8
-	.globl gPokenavUnk4Data_085F3F74
-gPokenavUnk4Data_085F3F74: @ 0x085F3F74
+.globl sMatchCallUI_Tilemap
+sMatchCallUI_Tilemap: @ 0x085F3F74
 	@ confirmed GBA LZ77 stream: compressed=0xC3, decompressed=0x500
-sLz77Block_085F3F74:
 	@ analyzed canonical ROM range 0x085F3F74-0x085F407F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 2 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/085F3F74.bin.lz"
+	.incbin "build/graphics/pokenav/match_call/ui_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00, 0x00, 0x12, 0x53, 0x06, 0x25, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00

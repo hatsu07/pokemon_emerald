@@ -15,14 +15,13 @@ gCableCarData_08DBA7C0: @ 0x08DBA7C0
 	.byte 0x00, 0x00, 0xFF, 0x7F, 0x74, 0x6F, 0x2C, 0x46, 0xD1, 0x5A, 0x10, 0x46, 0x8C, 0x3D, 0x28, 0x35
 	.byte 0xC5, 0x2C, 0x31, 0x7B, 0xAC, 0x76, 0xFF, 0x4B, 0x5D, 0x2B, 0xBA, 0x0A, 0xB6, 0x01, 0x11, 0x01
 	@ pret/pokeemerald-jp direct xref for 0x08DBA860: cable_car.s: CableCarMainCallback_Setup
-	.globl gCableCarData_08DBA860
-gCableCarData_08DBA860: @ 0x08DBA860
+.globl gCableCarBg_Gfx
+gCableCarBg_Gfx: @ 0x08DBA860
 	@ confirmed GBA LZ77 stream: compressed=0x19D6, decompressed=0x4000
-sLz77Block_08DBA860:
 	@ analyzed canonical ROM range 0x08DBA860-0x08DBC58F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 4 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/08DBA860.bin.lz"
+	.incbin "build/graphics/cable_car/bg_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00
 	.globl gLz77Asset_08DBC238
 gLz77Asset_08DBC238: @ 0x08DBC238

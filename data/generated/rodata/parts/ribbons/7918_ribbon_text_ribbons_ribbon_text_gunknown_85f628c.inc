@@ -180,14 +180,13 @@ gPokenavUnk10Data_085F6714: @ 0x085F6714
 	.byte 0x00, 0x03, 0x3F, 0x6F, 0x00, 0x00, 0x39, 0x67, 0x00, 0x00, 0x65, 0x7F, 0x60, 0x55, 0x9F, 0x66
 	.byte 0x72, 0x10, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085F6734: pokenav_unk_10.s: sub_081D011C
-	.globl gPokenavUnk10Data_085F6734
-gPokenavUnk10Data_085F6734: @ 0x085F6734
+.globl sRibbonIconsSmall_Gfx
+sRibbonIconsSmall_Gfx: @ 0x085F6734
 	@ confirmed GBA LZ77 stream: compressed=0x1C5, decompressed=0x300
-sLz77Block_085F6734:
 	@ analyzed canonical ROM range 0x085F6734-0x085F7213
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 2 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.incbin "build/assets/lz77_raw/085F6734.bin.lz"
+	.incbin "build/graphics/pokenav/ribbons/icons_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00
 	.globl gLz77Asset_085F68FC
 gLz77Asset_085F68FC: @ 0x085F68FC

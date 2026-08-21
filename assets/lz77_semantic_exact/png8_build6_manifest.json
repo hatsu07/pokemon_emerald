@@ -208,6 +208,56 @@
       "source_kind": "u16_le_text",
       "source": "graphics/pokeblock/menu_palette.gbapal.u16",
       "semantic_role": "palette"
+    },
+    "build/graphics/berry_crush/crusher_rom_exact.4bpp.lz": {
+      "key": "082C6104",
+      "source_kind": "png",
+      "source": "graphics/berry_crush/crusher.png",
+      "width": 128,
+      "height": 128,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/pokenav/device_outline_rom_exact.tilemap.lz": {
+      "key": "085F1AE0",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokenav/device_outline.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokenav/region_map/zoom_tiles_rom_exact.4bpp.lz": {
+      "key": "085F4248",
+      "source_kind": "png",
+      "source": "graphics/pokenav/region_map/zoom_tiles.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/pokenav/ribbons/icons_rom_exact.4bpp.lz": {
+      "key": "085F6734",
+      "source_kind": "png",
+      "source": "graphics/pokenav/ribbons/icons.png",
+      "width": 8,
+      "height": 192,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/cable_car/bg_rom_exact.4bpp.lz": {
+      "key": "08DBA860",
+      "source_kind": "png",
+      "source": "graphics/cable_car/bg.png",
+      "width": 128,
+      "height": 256,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/pokenav/header_rom_exact.tilemap.lz": {
+      "key": "085EFC2C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokenav/header.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokenav/match_call/ui_rom_exact.tilemap.lz": {
+      "key": "085F3F74",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokenav/match_call/ui.tilemap.u16",
+      "semantic_role": "tilemap"
     }
   }
 }

@@ -296,7 +296,7 @@ _081C92A6:
 	b _081C9282
 	.align 2, 0
 _081C92D0: .4byte sPokenavDeviceBgTiles
-_081C92D4: .4byte gPokenavUnk2Data_085F1AE0
+_081C92D4: .4byte sPokenavDeviceBgTilemap
 _081C92D8: .4byte gPokenavUnk2Data_085F1838
 _081C92DC:
 	bl free_temp_tile_data_buffers_if_possible

@@ -751,7 +751,7 @@ _08020EEA:
 	bl decompress_and_copy_tile_data_to_vram
 	b _08021028
 	.align 2, 0
-_08020F14: .4byte gBerryCrushData_082C6104
+_08020F14: .4byte gBerryCrush_Crusher_Gfx
 _08020F18:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18

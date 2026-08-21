@@ -152,7 +152,7 @@ _081C6F70:
 	b _081C6FEC
 	.align 2, 0
 _081C6FB0: .4byte gPokenavHeader_Gfx
-_081C6FB4: .4byte gPokenavMainMenuData_085EFC2C
+_081C6FB4: .4byte gPokenavHeader_Tilemap
 _081C6FB8: .4byte gPokenavMainMenuData_085EF9E0
 _081C6FBC:
 	bl free_temp_tile_data_buffers_if_possible

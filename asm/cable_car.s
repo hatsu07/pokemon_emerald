@@ -318,7 +318,7 @@ _0814FF14: .4byte gCableCarData_085AC938
 _0814FF18: .4byte 0x0000410C
 _0814FF1C: .4byte 0x00004108
 _0814FF20: .4byte gCableCarData_085AC924
-_0814FF24: .4byte gCableCarData_08DBA860
+_0814FF24: .4byte gCableCarBg_Gfx
 _0814FF28: .4byte 0x03002360
 _0814FF2C:
 	bl free_temp_tile_data_buffers_if_possible
