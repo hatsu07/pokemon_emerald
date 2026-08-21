@@ -52,7 +52,7 @@ sPointerTable_082C5180:
 	.4byte gText_Rom_5CC516 @ +0x10
 	.4byte gText_Rom_5CC51C @ +0x14
 	.4byte gText_Rom_5CC522 @ +0x18
-	.4byte 0x085CC528 @ +0x1C
+	.4byte gText_Rom_5CC522 + 0x6 @ +0x1C
 	.4byte gText_Rom_5CC52E @ +0x20
 	.4byte 0x085CC534 @ +0x24
 	.4byte 0x085CC53A @ +0x28
@@ -70,7 +70,7 @@ sPointerTable_082C5180:
 	.4byte gText_Rom_5CC582 @ +0x58
 	.4byte gText_Rom_5CC588 @ +0x5C
 	.4byte gText_Rom_5CC58E @ +0x60
-	.4byte 0x085CC594 @ +0x64
+	.4byte gText_Rom_5CC58E + 0x6 @ +0x64
 	.4byte gText_Rom_5CC59A @ +0x68
 	.4byte gText_Rom_5CC5A0 @ +0x6C
 	.4byte 0 @ +0x70
@@ -80,7 +80,7 @@ sPointerTable_082C5180:
 	.4byte gText_Rom_5CC5BC @ +0x80
 	.4byte gText_Rom_5CC5C7 @ +0x84
 	.4byte gText_Rom_5CC5D0 @ +0x88
-	.4byte 0x085CC5DB @ +0x8C
+	.4byte gText_Rom_5CC5D0 + 0xB @ +0x8C
 	.4byte gText_Rom_5CC5E6 @ +0x90
 	.4byte gText_Rom_5CC5F1 @ +0x94
 	.4byte gText_Rom_5CC5FC @ +0x98

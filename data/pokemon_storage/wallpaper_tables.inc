@@ -1486,12 +1486,12 @@ gPokemonStorageSystemData_0855657C: @ 0x0855657C
 	@ analyzed canonical ROM range 0x0855657C-0x08556617
 	@ pointer/nullable table
 	@ ANALYSIS: POINTER_TABLE entries=6 size=0x18
-	.4byte 0x085CB371
-	.4byte 0x085CB378
-	.4byte 0x085CB37F
-	.4byte 0x085CB38D
-	.4byte 0x085CB386
-	.4byte 0x085CB394
+	.4byte gText_Rom_5CB35D + 0x14
+	.4byte gText_Rom_5CB35D + 0x1B
+	.4byte gText_Rom_5CB35D + 0x22
+	.4byte gText_Rom_5CB35D + 0x30
+	.4byte gText_Rom_5CB35D + 0x29
+	.4byte gText_Rom_5CB35D + 0x37
 	.4byte gText_Rom_5CB39B @ +0x18
 	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
 	.4byte 0x085CB3A2
@@ -1522,7 +1522,7 @@ gPokemonStorageSystemData_0855657C: @ 0x0855657C
 	.4byte gText_Rom_5CB41D @ +0x7C
 	.4byte gText_Rom_5CB421 @ +0x80
 	.4byte gText_Rom_5CB426 @ +0x84
-	.4byte 0x085CB429 @ +0x88
+	.4byte gText_Rom_5CB426 + 0x3 @ +0x88
 	.4byte gText_Rom_5CB42C @ +0x8C
 	.4byte gText_Rom_5CB431 @ +0x90
 	.4byte gText_Rom_5CB436 @ +0x94

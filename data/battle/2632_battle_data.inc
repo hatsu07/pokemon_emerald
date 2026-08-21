@@ -43,8 +43,8 @@ gMonMarkingsData_0857AB38: @ 0x0857AB38
 	@ analyzed canonical ROM range 0x0857AB38-0x0857AB3F
 	@ pointer/nullable table
 	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
-	.4byte 0x0857AB28
-	.4byte 0x0857AB30
+	.4byte gMonMarkingsData_0857AB00 + 0x28
+	.4byte gMonMarkingsData_0857AB00 + 0x30
 	@ pret/pokeemerald-jp direct xref for 0x0857AB40: mon_markings.s: sub_081204F4
 	.globl gMonMarkingsData_0857AB40
 gMonMarkingsData_0857AB40: @ 0x0857AB40

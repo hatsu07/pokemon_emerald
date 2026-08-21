@@ -477,16 +477,16 @@ sPointerTable_085F13DC:
 	@ pointer/nullable table
 	.4byte 0x085CB703 @ +0x0
 	.4byte 0x085CB714 @ +0x4
-	.4byte 0x085CB721 @ +0x8
-	.4byte 0x085CB72E @ +0xC
-	.4byte 0x085CB741 @ +0x10
+	.4byte gText_Rom_5CB71D + 0x4 @ +0x8
+	.4byte gText_Rom_5CB72A + 0x4 @ +0xC
+	.4byte gText_Rom_5CB73D + 0x4 @ +0x10
 	.4byte 0x085CB74F @ +0x14
 	.4byte 0x085CB75F @ +0x18
-	.4byte 0x085CB76C @ +0x1C
-	.4byte 0x085CB779 @ +0x20
-	.4byte 0x085CB77F @ +0x24
-	.4byte 0x085CB78E @ +0x28
-	.4byte 0x085CB79C @ +0x2C
+	.4byte gText_Rom_5CB768 + 0x4 @ +0x1C
+	.4byte gText_Rom_5CB775 + 0x4 @ +0x20
+	.4byte gText_Rom_5CB77B + 0x4 @ +0x24
+	.4byte gText_Rom_5CB78A + 0x4 @ +0x28
+	.4byte gText_Rom_5CB798 + 0x4 @ +0x2C
 	@ pret/pokeemerald-jp direct xref for 0x085F140C: pokenav_main_menu.s: sub_081C7364
 	.globl gPokenavMainMenuData_085F140C
 gPokenavMainMenuData_085F140C: @ 0x085F140C

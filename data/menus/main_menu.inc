@@ -169,7 +169,7 @@ sPointerTable_082D29B8:
 	@ pointer/nullable table
 	.4byte gText_Rom_5C8E9A @ +0x0
 	.4byte gText_Rom_5C8EA0 @ +0x4
-	.4byte 0x085C8EA6 @ +0x8
+	.4byte gText_Rom_5C8EA0 + 0x6 @ +0x8
 	.4byte gText_Rom_5C8EAC @ +0xC
 	.4byte gText_Rom_5C8EB2 @ +0x10
 	.4byte gText_Rom_5C8EB8 @ +0x14
@@ -177,7 +177,7 @@ sPointerTable_082D29B8:
 	.4byte gText_Rom_5C8EC4 @ +0x1C
 	.4byte gText_Rom_5C8ECA @ +0x20
 	.4byte gText_Rom_5C8ED0 @ +0x24
-	.4byte 0x085C8ED6 @ +0x28
+	.4byte gText_Rom_5C8ED0 + 0x6 @ +0x28
 	.4byte gText_Rom_5C8EDC @ +0x2C
 	.4byte gText_Rom_5C8EE2 @ +0x30
 	.4byte gText_Rom_5C8EE8 @ +0x34
@@ -194,20 +194,20 @@ gMainMenuData_082D2A08: @ 0x082D2A08
 	@ pointer/nullable table
 	.4byte gText_Rom_5C8F12 @ +0x0
 	.4byte gText_Rom_5C8F18 @ +0x4
-	.4byte 0x085C8F1E @ +0x8
+	.4byte gText_Rom_5C8F18 + 0x6 @ +0x8
 	.4byte gText_Rom_5C8F24 @ +0xC
 	.4byte gText_Rom_5C8F28 @ +0x10
 	.4byte gText_Rom_5C8F2E @ +0x14
 	.4byte gText_Rom_5C8F34 @ +0x18
 	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
-	.4byte 0x085C8F3A
-	.4byte 0x085C8F40
+	.4byte gText_Rom_5C8F34 + 0x6
+	.4byte gText_Rom_5C8F34 + 0xC
 	.4byte gText_Rom_5C8F46 @ +0x24
 	.4byte gText_Rom_5C8F4C @ +0x28
 	.4byte gText_Rom_5C8F52 @ +0x2C
 	.4byte gText_Rom_5C8F58 @ +0x30
 	.4byte gText_Rom_5C8F5E @ +0x34
-	.4byte 0x085C8F64 @ +0x38
+	.4byte gText_Rom_5C8F5E + 0x6 @ +0x38
 	.4byte gText_Rom_5C8F6A @ +0x3C
 	.4byte gText_Rom_5C8F70 @ +0x40
 	.4byte gText_Rom_5C8F76 @ +0x44

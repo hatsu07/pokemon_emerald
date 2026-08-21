@@ -260,19 +260,19 @@ gPartyMenuData_085E15F0: @ 0x085E15F0
 	@ pointer/nullable table
 	@ ANALYSIS: POINTER_TABLE entries=14 size=0x38
 	.4byte 0
-	.4byte 0x085E15C8
-	.4byte 0x085E15CB
-	.4byte 0x085E15CE
-	.4byte 0x085E15D3
-	.4byte 0x085E15D6
-	.4byte 0x085E15D9
-	.4byte 0x085E15D1
-	.4byte 0x085E15DC
-	.4byte 0x085E15DF
-	.4byte 0x085E15E2
-	.4byte 0x085E15E5
-	.4byte 0x085E15E8
-	.4byte 0x085E15EB
+	.4byte gPartyMenuData_085E14C0 + 0x108
+	.4byte gPartyMenuData_085E14C0 + 0x10B
+	.4byte gPartyMenuData_085E14C0 + 0x10E
+	.4byte gPartyMenuData_085E14C0 + 0x113
+	.4byte gPartyMenuData_085E14C0 + 0x116
+	.4byte gPartyMenuData_085E14C0 + 0x119
+	.4byte gPartyMenuData_085E14C0 + 0x111
+	.4byte gPartyMenuData_085E14C0 + 0x11C
+	.4byte gPartyMenuData_085E14C0 + 0x11F
+	.4byte gPartyMenuData_085E14C0 + 0x122
+	.4byte gPartyMenuData_085E14C0 + 0x125
+	.4byte gPartyMenuData_085E14C0 + 0x128
+	.4byte gPartyMenuData_085E14C0 + 0x12B
 	@ pret/pokeemerald-jp direct xref for 0x085E1628: party_menu.s: sub_081B3054
 	.globl gPartyMenuData_085E1628
 gPartyMenuData_085E1628: @ 0x085E1628

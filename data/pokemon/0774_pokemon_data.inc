@@ -717,9 +717,9 @@ sPointerTable_085442B8:
 	.4byte 0x085C928D @ +0x0
 	.4byte gText_Rom_5C928E @ +0x4
 	.4byte 0x085C928D @ +0x8
-	.4byte 0x085C9180 @ +0xC
+	.4byte gText_Rom_5C9179 + 0x7 @ +0xC
 	.4byte 0x085C928D @ +0x10
-	.4byte 0x085C9183 @ +0x14
+	.4byte gText_Rom_5C9179 + 0xA @ +0x14
 	.4byte 0x085C928D @ +0x18
 	.4byte gText_Rom_5C9186 @ +0x1C
 	.4byte 0x085C928D @ +0x20
@@ -733,7 +733,7 @@ sPointerTable_085442B8:
 	.4byte 0x085C928D @ +0x40
 	.4byte gText_Rom_5C919B @ +0x44
 	.4byte 0x085C928D @ +0x48
-	.4byte 0x085C91A0 @ +0x4C
+	.4byte gText_Rom_5C919B + 0x5 @ +0x4C
 	.4byte 0x085C928D @ +0x50
 	.4byte gText_Rom_5C91A3 @ +0x54
 	.4byte 0 @ +0x58

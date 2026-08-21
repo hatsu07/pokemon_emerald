@@ -369,7 +369,7 @@ sSpriteTemplate_0854CA04: @ 0x0854CA04
 gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	@ analyzed canonical ROM range 0x0854CA1C-0x0854CB13
 	@ pointer/nullable table
-	.4byte 0x085CB1BD @ +0x0
+	.4byte gText_Rom_5CB1B9 + 0x4 @ +0x0
 	.4byte 0 @ +0x4
 	.4byte gText_Rom_5CB1D0 @ +0x8
 	@ ANALYSIS: ZERO_PADDING size=0x4
@@ -379,30 +379,30 @@ gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	.space 0x4, 0
 	.4byte gText_Rom_5CB1ED @ +0x18
 	.4byte 0 @ +0x1C
-	.4byte 0x085CB1FB @ +0x20
+	.4byte gText_Rom_5CB1ED + 0xE @ +0x20
 	.4byte 0x00000001 @ +0x24
 	.4byte gText_Rom_5CB207 @ +0x28
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
 	.4byte gText_Rom_5CB21A @ +0x30
 	.4byte 0 @ +0x34
-	.4byte 0x085CB22B @ +0x38
+	.4byte gText_Rom_5CB21A + 0x11 @ +0x38
 	.4byte 0x00000001 @ +0x3C
 	.4byte gText_Rom_5CB236 @ +0x40
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
 	.4byte gText_Rom_5CB245 @ +0x48
 	.4byte 0 @ +0x4C
-	.4byte 0x085CB253 @ +0x50
+	.4byte gText_Rom_5CB245 + 0xE @ +0x50
 	.4byte 0x00000004 @ +0x54
-	.4byte 0x085CB263 @ +0x58
+	.4byte gText_Rom_5CB245 + 0x1E @ +0x58
 	.4byte 0x00000006 @ +0x5C
 	.4byte gText_Rom_5CB26C @ +0x60
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
 	.4byte gText_Rom_5CB278 @ +0x68
 	.4byte 0 @ +0x6C
-	.4byte 0x085CB28B @ +0x70
+	.4byte gText_Rom_5CB278 + 0x13 @ +0x70
 	.4byte 0 @ +0x74
 	.4byte gText_Rom_5CB298 @ +0x78
 	@ ANALYSIS: ZERO_PADDING size=0x4
@@ -415,7 +415,7 @@ gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	.space 0x4, 0
 	.4byte gText_Rom_5CB2CE @ +0x90
 	.4byte 0 @ +0x94
-	.4byte 0x085CB2DF @ +0x98
+	.4byte gText_Rom_5CB2CE + 0x11 @ +0x98
 	.4byte 0x00000001 @ +0x9C
 	.4byte gText_Rom_5CB2EB @ +0xA0
 	@ ANALYSIS: ZERO_PADDING size=0x4
@@ -425,20 +425,20 @@ gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
 	.space 0x4, 0
 	.4byte gText_Rom_5CB300 @ +0xB0
 	.4byte 0 @ +0xB4
-	.4byte 0x085CB1FB @ +0xB8
+	.4byte gText_Rom_5CB1ED + 0xE @ +0xB8
 	.4byte 0x00000007 @ +0xBC
 	.4byte gText_Rom_5CB310 @ +0xC0
 	.4byte 0 @ +0xC4
-	.4byte 0x085CB31D @ +0xC8
+	.4byte gText_Rom_5CB310 + 0xD @ +0xC8
 	.4byte 0x00000007 @ +0xCC
 	.4byte gText_Rom_5CB32A @ +0xD0
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
 	.4byte gText_Rom_5CB337 @ +0xD8
 	.4byte 0 @ +0xDC
-	.4byte 0x085CB348 @ +0xE0
+	.4byte gText_Rom_5CB337 + 0x11 @ +0xE0
 	.4byte 0x00000007 @ +0xE4
-	.4byte 0x085CB352 @ +0xE8
+	.4byte gText_Rom_5CB337 + 0x1B @ +0xE8
 	.4byte 0x00000007 @ +0xEC
 	.4byte gText_Rom_5CB35D @ +0xF0
 	@ ANALYSIS: ZERO_PADDING size=0x4

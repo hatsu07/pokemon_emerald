@@ -85,7 +85,7 @@ gPokenavMatchCallDataData_085F7A94: @ 0x085F7A94
 	.4byte gText_Rom_5CC79E @ +0x8
 	.4byte gText_Rom_5CC7AE @ +0xC
 	@ ANALYSIS: U32_TABLE size=0x4 entries=1
-	.4byte 0x085CC7BD @ +0x10
+	.4byte gText_Rom_5CC7AE + 0xF @ +0x10
 	.4byte gText_Rom_5CC7CC @ +0x14
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x004B0007 @ +0x18

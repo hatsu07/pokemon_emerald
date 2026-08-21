@@ -415,10 +415,10 @@ gPokemonJumpData_082D1AEC: @ 0x082D1AEC
 sPointerTable_082D1AEC:
 	@ analyzed canonical ROM range 0x082D1AEC-0x082D1AFB
 	@ pointer/nullable table
-	.4byte 0x082D1AD0 @ +0x0
-	.4byte 0x082D1AD4 @ +0x4
-	.4byte 0x082D1ADA @ +0x8
-	.4byte 0x082D1AE2 @ +0xC
+	.4byte gPokemonJumpData_082D1AC0 + 0x10 @ +0x0
+	.4byte gPokemonJumpData_082D1AC0 + 0x14 @ +0x4
+	.4byte gPokemonJumpData_082D1AC0 + 0x1A @ +0x8
+	.4byte gPokemonJumpData_082D1AC0 + 0x22 @ +0xC
 	@ pret/pokeemerald-jp direct xref for 0x082D1AFC: pokemon_jump.s: sub_0802E0DC
 	.globl gPokemonJumpData_082D1AFC
 gPokemonJumpData_082D1AFC: @ 0x082D1AFC

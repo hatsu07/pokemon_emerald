@@ -26,9 +26,9 @@ gTradeData_08300B28: @ 0x08300B28
 sPointerTable_08300B28:
 	@ analyzed canonical ROM range 0x08300B28-0x08300B37
 	@ pointer/nullable table
-	.4byte 0x08300B14 @ +0x0
+	.4byte gTradeData_08300AFC + 0x18 @ +0x0
 	.4byte sub_08079A38 @ +0x4
-	.4byte 0x08300B1D @ +0x8
+	.4byte gTradeData_08300AFC + 0x21 @ +0x8
 	.4byte sub_08079A5C @ +0xC
 	.globl gText_Rom_300B38
 gText_Rom_300B38: @ 0x08300B38
