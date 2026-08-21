@@ -3509,6 +3509,8 @@ _08008004: .4byte 0x03000B70
 
 	thumb_func_start ChangeSpriteAffineAnimIfDifferent
 ChangeSpriteAffineAnimIfDifferent: @ 0x08008008
+.globl ChangeSpriteAffineAnimIfDifferent_CodeAddress
+ChangeSpriteAffineAnimIfDifferent_CodeAddress:
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	lsls r1, r1, #0x18

@@ -248,7 +248,7 @@ sPointerTable_085E14C0:
 	.4byte 0x0C020002 @ +0x110
 	.4byte 0x000D0200 @ +0x114
 	.4byte 0x02000E02 @ +0x118
-	.4byte 0x08090504 @ +0x11C
+	.4byte MovementType_FaceDownRightAndLeft_CodeAddress + 4 @ +0x11C
 	.4byte 0x000F0907 @ +0x120
 	.4byte 0x02001002 @ +0x124
 	.4byte 0x05020011 @ +0x128

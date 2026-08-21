@@ -5,15 +5,15 @@ gMPlayJumpTableTemplate: @ 0x085FD500
 sPointerTable_085FD500:
 	@ analyzed canonical ROM range 0x085FD500-0x085FD58F
 	@ pointer/nullable table
-	.4byte 0x0828DDA5 @ original ROM word; false-positive semantic pointer `ply_fine`
-	.4byte 0x0828DE15 @ original ROM word; false-positive semantic pointer `ply_goto`
+	.4byte ply_fine + 1 @ original ROM word; false-positive semantic pointer `ply_fine`
+	.4byte ply_goto + 1 @ original ROM word; false-positive semantic pointer `ply_goto`
 	.4byte ply_patt @ original ROM word; false-positive semantic pointer `ply_patt`
 	.4byte ply_pend @ original ROM word; false-positive semantic pointer `ply_pend`
 	.4byte ply_rept @ original ROM word; false-positive semantic pointer `ply_rept`
-	.4byte 0x0828DDA5 @ original ROM word; false-positive semantic pointer `ply_fine`
-	.4byte 0x0828DDA5 @ original ROM word; false-positive semantic pointer `ply_fine`
-	.4byte 0x0828DDA5 @ original ROM word; false-positive semantic pointer `ply_fine`
-	.4byte 0x0828DDA5 @ original ROM word; false-positive semantic pointer `ply_fine`
+	.4byte ply_fine + 1 @ original ROM word; false-positive semantic pointer `ply_fine`
+	.4byte ply_fine + 1 @ original ROM word; false-positive semantic pointer `ply_fine`
+	.4byte ply_fine + 1 @ original ROM word; false-positive semantic pointer `ply_fine`
+	.4byte ply_fine + 1 @ original ROM word; false-positive semantic pointer `ply_fine`
 	.4byte ply_prio @ original ROM word; false-positive semantic pointer `ply_prio`
 	.4byte ply_tempo @ original ROM word; false-positive semantic pointer `ply_tempo`
 	.4byte ply_keysh @ original ROM word; false-positive semantic pointer `ply_keysh`
@@ -26,14 +26,14 @@ sPointerTable_085FD500:
 	.4byte ply_lfodl @ original ROM word; false-positive semantic pointer `ply_lfodl`
 	.4byte ply_mod @ original ROM word; false-positive semantic pointer `ply_mod`
 	.4byte ply_modt @ original ROM word; false-positive semantic pointer `ply_modt`
-	.4byte 0x0828DDA5 @ original ROM word; false-positive semantic pointer `ply_fine`
-	.4byte 0x0828DDA5 @ original ROM word; false-positive semantic pointer `ply_fine`
+	.4byte ply_fine + 1 @ original ROM word; false-positive semantic pointer `ply_fine`
+	.4byte ply_fine + 1 @ original ROM word; false-positive semantic pointer `ply_fine`
 	.4byte ply_tune @ original ROM word; false-positive semantic pointer `ply_tune`
-	.4byte 0x0828DDA5 @ original ROM word; false-positive semantic pointer `ply_fine`
-	.4byte 0x0828DDA5 @ original ROM word; false-positive semantic pointer `ply_fine`
-	.4byte 0x0828DDA5 @ original ROM word; false-positive semantic pointer `ply_fine`
+	.4byte ply_fine + 1 @ original ROM word; false-positive semantic pointer `ply_fine`
+	.4byte ply_fine + 1 @ original ROM word; false-positive semantic pointer `ply_fine`
+	.4byte ply_fine + 1 @ original ROM word; false-positive semantic pointer `ply_fine`
 	.4byte ply_port @ original ROM word; false-positive semantic pointer `ply_port`
-	.4byte 0x0828DDA5 @ original ROM word; false-positive semantic pointer `ply_fine`
+	.4byte ply_fine + 1 @ original ROM word; false-positive semantic pointer `ply_fine`
 	.4byte ply_endtie @ original ROM word; false-positive semantic pointer `ply_endtie`
 	.4byte SampleFreqSet @ +0x78
 	.4byte TrackStop @ +0x7C

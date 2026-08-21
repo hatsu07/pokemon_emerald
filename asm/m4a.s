@@ -750,6 +750,7 @@ _0828DD9E:
 	str r1, [r0, #0x2c]
 _0828DDA2:
 	bx lr
+.globl ply_fine
 ply_fine:
 	push {r4, r5, lr}
 	adds r5, r1, #0
@@ -828,6 +829,7 @@ sub_0828DE0A: @ 0x0828DE0A
 	ldrb r3, [r2]
 	b _0828DDEE
 	.align 2, 0
+.globl ply_goto
 ply_goto:
 	push {lr}
 _0828DE16:

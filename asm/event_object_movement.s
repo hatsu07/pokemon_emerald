@@ -7820,6 +7820,8 @@ _080904FC: .4byte gEventObjectMovementData_084E5CD4
 
 	thumb_func_start MovementType_FaceDownRightAndLeft
 MovementType_FaceDownRightAndLeft: @ 0x08090500
+.globl MovementType_FaceDownRightAndLeft_CodeAddress
+MovementType_FaceDownRightAndLeft_CodeAddress:
 	push {lr}
 	adds r1, r0, #0
 	movs r0, #0x2e
