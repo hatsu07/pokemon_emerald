@@ -671,8 +671,8 @@ gFieldEffectData_085371F4: @ 0x085371F4
 	@ analyzed canonical ROM range 0x085371F4-0x085371FB
 	@ pointer/nullable table
 	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
-	.4byte 0x085371C4
-	.4byte 0x085371DC
+	.4byte FunctionPointerTable_JP_085371A0 + 0x24
+	.4byte FunctionPointerTable_JP_085371A0 + 0x3C
 	.globl gMenuPointerTable_Rom_5371FC
 gMenuPointerTable_Rom_5371FC: @ 0x085371FC
 	.4byte sub_080B8F5C

@@ -123,8 +123,8 @@ gBattleMessageData_085AC468: @ 0x085AC468
 	@ analyzed canonical ROM range 0x085AC468-0x085AC46F
 	@ pointer/nullable table
 	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
-	.4byte 0x085AC234
-	.4byte 0x085AC354
+	.4byte sTextOnWindowsInfo_Normal + 0x2
+	.4byte sTextOnWindowsInfo_Arena + 0x2
 	@ pret/pokeemerald-jp direct xref for 0x085AC470: battle_message.s: sub_0814FA04
 	.globl gBattleMessageData_085AC470
 gBattleMessageData_085AC470: @ 0x085AC470
@@ -821,7 +821,7 @@ gFlatterSpotlightSpriteTemplate:
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3D0 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
 	.4byte 0 @ images = NULL
-	.4byte 0x085AD02C @ affineAnims; JP-local numeric pointer preserved
+	.4byte FunctionPointerTable_JP_085ACD28 + 0x304 @ affineAnims; JP-local numeric pointer preserved
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085AD3DC size=0x4 source=v54_multi_pointer
 	.4byte AnimFlatterSpotlight
 	@ struct SpriteTemplate gReversalOrbSpriteTemplate (24 bytes total).
@@ -1001,8 +1001,8 @@ gBattleAnimEffects3Data_085AD5F4: @ 0x085AD5F4
 	.4byte 0x00001804 @ +0x4C
 	.4byte 0x00007FFF @ +0x50
 	.4byte 0 @ +0x54
-	.4byte 0x085AD624 @ +0x58
-	.4byte 0x085AD634 @ +0x5C
+	.4byte gBattleAnimEffects3Data_085AD5F4 + 0x30 @ +0x58
+	.4byte gBattleAnimEffects3Data_085AD5F4 + 0x40 @ +0x5C
 	@ pret/pokeemerald-jp direct xref for 0x085AD654: battle_anim_effects_3.s: AnimTask_BarrageBall
 	.globl gBattleAnimEffects3Data_085AD654
 gBattleAnimEffects3Data_085AD654: @ 0x085AD654
@@ -1012,7 +1012,7 @@ gBattleAnimEffects3Data_085AD654: @ 0x085AD654
 	.4byte gOamData_AffineNormal_ObjNormal_32x32 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
 	.4byte 0 @ +0xC
-	.4byte 0x085AD64C @ +0x10
+	.4byte gBattleAnimEffects3Data_085AD5F4 + 0x58 @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
 	.4byte 0x28072807 @ +0x18
 	.4byte gOamData_AffineOff_ObjNormal_32x32 @ +0x1C
@@ -1084,7 +1084,7 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte 0x00040000 @ +0xC0
 	.4byte 0x00040040 @ +0xC4
 	.4byte 0x0000FFFF @ +0xC8
-	.4byte 0x085AD744 @ +0xCC
+	.4byte gBattleAnimEffects3Data_085AD684 + 0xC0 @ +0xCC
 	.4byte 0x01000100 @ +0xD0
 	.4byte 0 @ +0xD4
 	.4byte 0 @ +0xD8
@@ -1097,24 +1097,24 @@ gBattleAnimEffects3Data_085AD684: @ 0x085AD684
 	.4byte 0x00000804 @ +0xF4
 	.4byte 0x00007FFF @ +0xF8
 	.4byte 0 @ +0xFC
-	.4byte 0x085AD754 @ +0x100
-	.4byte 0x085AD76C @ +0x104
+	.4byte gBattleAnimEffects3Data_085AD684 + 0xD0 @ +0x100
+	.4byte gBattleAnimEffects3Data_085AD684 + 0xE8 @ +0x104
 	.4byte 0x28252825 @ +0x108
 	.4byte gOamData_AffineNormal_ObjNormal_64x64 @ +0x10C
-	.4byte 0x085AD750 @ +0x110
+	.4byte gBattleAnimEffects3Data_085AD684 + 0xCC @ +0x110
 	.4byte 0 @ +0x114
-	.4byte 0x085AD784 @ +0x118
+	.4byte gBattleAnimEffects3Data_085AD684 + 0x100 @ +0x118
 	.4byte AnimKnockOffStrike @ +0x11C
 	.4byte 0 @ +0x120
 	.4byte 0x000040FC @ +0x124
 	.4byte 0x00007FFE @ +0x128
 	.4byte 0 @ +0x12C
-	.4byte 0x085AD7A4 @ +0x130
+	.4byte gBattleAnimEffects3Data_085AD684 + 0x120 @ +0x130
 	.4byte 0x28262826 @ +0x134
 	.4byte gOamData_AffineNormal_ObjBlend_64x64 @ +0x138
 	.4byte gDummySpriteAnimTable @ +0x13C
 	.4byte 0 @ +0x140
-	.4byte 0x085AD7B4 @ +0x144
+	.4byte gBattleAnimEffects3Data_085AD684 + 0x130 @ +0x144
 	.4byte AnimRecycle @ +0x148
 	@ pret/pokeemerald-jp direct xref for 0x085AD7D0: battle_anim_effects_3.s: AnimTask_SlackOffSquish
 	.globl gBattleAnimEffects3Data_085AD7D0

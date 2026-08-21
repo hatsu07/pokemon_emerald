@@ -505,45 +505,45 @@ sOam_64x64: @ 0x085849F8
 
 	@ Static SpriteFrameImage tables
 sImageTable_ReelTimeNumbers: @ 0x08584A00
-	.4byte 0x08583448
+	.4byte gSlotMachineNumber9Tiles + 0x100
 	.4byte 0x00000080 @ image[0] size
-	.4byte 0x085834C8
+	.4byte gSlotMachineNumber9Tiles + 0x180
 	.4byte 0x00000080 @ image[1] size
-	.4byte 0x08583548
+	.4byte gSlotMachineNumber9Tiles + 0x200
 	.4byte 0x00000080 @ image[2] size
-	.4byte 0x085835C8
+	.4byte gSlotMachineNumber9Tiles + 0x280
 	.4byte 0x00000080 @ image[3] size
-	.4byte 0x08583648
+	.4byte gSlotMachineNumber9Tiles + 0x300
 	.4byte 0x00000080 @ image[4] size
-	.4byte 0x085836C8
+	.4byte gSlotMachineNumber9Tiles + 0x380
 	.4byte 0x00000080 @ image[5] size
 sImageTable_ReelTimeShadow: @ 0x08584A30
-	.4byte 0x08583D48
+	.4byte gSlotMachineNumber9Tiles + 0xA00
 	.4byte 0x00000200 @ image[0] size
 sImageTable_ReelTimeNumberGap: @ 0x08584A38
 	.4byte 0x08584368
 	.4byte 0x00000040 @ image[0] size
 sImageTable_ReelTimeBolt: @ 0x08584A40
-	.4byte 0x08583748
+	.4byte gSlotMachineNumber9Tiles + 0x400
 	.4byte 0x00000100 @ image[0] size
-	.4byte 0x08583848
+	.4byte gSlotMachineNumber9Tiles + 0x500
 	.4byte 0x00000100 @ image[1] size
 sImageTable_ReelTimePikachuAura: @ 0x08584A50
-	.4byte 0x08583F48
+	.4byte gSlotMachineNumber9Tiles + 0xC00
 	.4byte 0x00000400 @ image[0] size
 sImageTable_ReelTimeExplosion: @ 0x08584A58
-	.4byte 0x08583948
+	.4byte gSlotMachineNumber9Tiles + 0x600
 	.4byte 0x00000200 @ image[0] size
-	.4byte 0x08583B48
+	.4byte gSlotMachineNumber9Tiles + 0x800
 	.4byte 0x00000200 @ image[1] size
 sImageTable_ReelTimeDuck: @ 0x08584A68
-	.4byte 0x085833A8
+	.4byte gSlotMachineNumber9Tiles + 0x60
 	.4byte 0x00000020 @ image[0] size
 sImageTable_ReelTimeSmoke: @ 0x08584A70
-	.4byte 0x085833C8
+	.4byte gSlotMachineNumber9Tiles + 0x80
 	.4byte 0x00000080 @ image[0] size
 sImageTable_PikaPowerBolt: @ 0x08584A78
-	.4byte 0x08583388
+	.4byte gSlotMachineNumber9Tiles + 0x40
 	.4byte 0x00000020 @ image[0] size
 
 	@ Sprite animation command arrays

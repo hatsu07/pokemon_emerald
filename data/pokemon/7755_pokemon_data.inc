@@ -26,7 +26,7 @@ gPokenavUnk4Data_085F41D0: @ 0x085F41D0
 	@ analyzed canonical ROM range 0x085F41D0-0x085F41EF
 	@ pointer/nullable table
 	.4byte 0x000C0007 @ +0x0
-	.4byte 0x085F41C8 @ +0x4
+	.4byte gPokenavUnk4Data_085F41B8 + 0x10 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0

@@ -468,21 +468,21 @@ sPointerTable_082CEAB4:
 	.globl sDodrioBerryPickingNormalSpritePalette
 sDodrioBerryPickingNormalSpritePalette: @ 0x082CEB64
 	@ canonical role: SpritePalette for sDodrioNormal_Pal / PALTAG_DODRIO_NORMAL
-	.4byte 0x082CB6BC
+	.4byte sDodrioBerryPickingBgPalette + 0x40
 	.2byte 0
 	.2byte 0
 	@ pret/pokeemerald-jp direct xref for 0x082CEB6C: dodrio_berry_picking.s: sub_080280D4
 	.globl sDodrioBerryPickingShinySpritePalette
 sDodrioBerryPickingShinySpritePalette: @ 0x082CEB6C
 	@ canonical role: SpritePalette for sDodrioShiny_Pal / PALTAG_DODRIO_SHINY
-	.4byte 0x082CB6DC
+	.4byte sDodrioBerryPickingBgPalette + 0x60
 	.2byte 1
 	.2byte 0
 	@ pret/pokeemerald-jp direct xref for 0x082CEB74: dodrio_berry_picking.s: sub_08028460
 	.globl sDodrioBerryPickingStatusSpritePalette
 sDodrioBerryPickingStatusSpritePalette: @ 0x082CEB74
 	@ canonical role: SpritePalette for sStatus_Pal / PALTAG_STATUS
-	.4byte 0x082CB6FC
+	.4byte sDodrioBerryPickingBgPalette + 0x80
 	.2byte 2
 	.2byte 0
 	@ pret/pokeemerald-jp direct xref for 0x082CEB7C: dodrio_berry_picking.s: sub_08028460
@@ -499,7 +499,7 @@ sDodrioBerryPickingUnusedSounds: @ 0x082CEB94
 	.globl sDodrioBerryPickingBerriesSpritePalette
 sDodrioBerryPickingBerriesSpritePalette: @ 0x082CEBA0
 	@ canonical role: SpritePalette for sBerries_Pal / PALTAG_BERRIES
-	.4byte 0x082CB71C
+	.4byte sDodrioBerryPickingBgPalette + 0xA0
 	.2byte 3
 	.2byte 0
 	@ pret/pokeemerald-jp direct xref for 0x082CEBA8: dodrio_berry_picking.s: sub_080287B4
@@ -533,7 +533,7 @@ sDodrioBerryPickingCloudStartCoords: @ 0x082CEBE2
 	.globl sDodrioBerryPickingCloudSpritePalette
 sDodrioBerryPickingCloudSpritePalette: @ 0x082CEBEC
 	@ canonical role: SpritePalette for sCloud_Pal / PALTAG_CLOUD
-	.4byte 0x082CB8F0
+	.4byte sBerries_Gfx + 0x1B4
 	.2byte 6
 	.2byte 0
 	@ pret/pokeemerald-jp direct xref for 0x082CEBF4: dodrio_berry_picking.s: sub_08028A70

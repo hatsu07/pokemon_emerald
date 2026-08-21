@@ -282,11 +282,11 @@ EventScript_JP_0822B454: @ 0x0822B454
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x0822B7D2 @ Movement_JP_0822B7D2
+	.4byte Movement_JP_0822B7CD + 0x5 @ Movement_JP_0822B7D2
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte 0x0822B7D2 @ Movement_JP_0822B7D2
+	.4byte Movement_JP_0822B7CD + 0x5 @ Movement_JP_0822B7D2
 	closemessage
 	goto EventScript_JP_0822B1FF
 EventScript_JP_0822B468: @ 0x0822B468
@@ -362,11 +362,11 @@ EventScript_JP_0822B546: @ 0x0822B546
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x0822B7D2 @ Movement_JP_0822B7D2
+	.4byte Movement_JP_0822B7CD + 0x5 @ Movement_JP_0822B7D2
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte 0x0822B7D2 @ Movement_JP_0822B7D2
+	.4byte Movement_JP_0822B7CD + 0x5 @ Movement_JP_0822B7D2
 	setobjectxyperm 0x0002, 0x000F, 0x0001
 	@ event command: addobject
 	.byte 0x55

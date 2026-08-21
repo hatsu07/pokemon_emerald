@@ -667,8 +667,8 @@ gBattleTransitionData_085A87E8: @ 0x085A87E8
 	@ analyzed canonical ROM range 0x085A87E8-0x085A87EF
 gBattleTransitionRectangularSpiralDataLists: @ 0x085A87E8
 	@ pointer/nullable table
-	.4byte 0x085A87A8 @ +0x0
-	.4byte 0x085A87C8 @ +0x4
+	.4byte FunctionPointerTable_JP_085A8734 + 0x74 @ +0x0
+	.4byte FunctionPointerTable_JP_085A8734 + 0x94 @ +0x4
 	.globl gMapU32Table_Rom_5A87F0
 gMapU32Table_Rom_5A87F0: @ 0x085A87F0
 	.4byte Phase2_WeatherTrio_Func1
@@ -758,29 +758,29 @@ gBattleTransitionPokeballFieldEffectResources: @ 0x085A8918
 	@ pointer/nullable table
 	.4byte 0x1009FFFF @ +0x0
 	.4byte sObjectEventOam_32x32 @ +0x4
-	.4byte 0x085A88EC @ +0x8
-	.4byte 0x085A88DC @ +0xC
-	.4byte 0x085A8910 @ +0x10
+	.4byte gBattleTransitionMagmaPhaseData + 0x18 @ +0x8
+	.4byte gBattleTransitionMagmaPhaseData + 0x8 @ +0xC
+	.4byte gBattleTransitionMagmaPhaseData + 0x3C @ +0x10
 	.4byte sub_081471FC @ +0x14
 	.4byte 0xC0000000 @ +0x18
 	.4byte 0 @ +0x1C
-	.4byte 0x08599780 @ +0x20
+	.4byte gBattleTransitionMugshotTiles_Continuation + 0xF3 @ +0x20
 	.4byte 0x00000800 @ +0x24
-	.4byte 0x08599F80 @ +0x28
+	.4byte gBattleTransitionMugshotTiles_Continuation + 0x8F3 @ +0x28
 	.4byte 0x00000800 @ +0x2C
 	.4byte 0x00010000 @ +0x30
 	.4byte 0x0000FFFF @ +0x34
-	.4byte 0x085A8948 @ +0x38
+	.4byte gBattleTransitionPokeballFieldEffectResources + 0x30 @ +0x38
 	.4byte 0x100AFFFF @ +0x3C
-	.4byte 0x085A8930 @ +0x40
-	.4byte 0x085A8950 @ +0x44
-	.4byte 0x085A8938 @ +0x48
+	.4byte gBattleTransitionPokeballFieldEffectResources + 0x18 @ +0x40
+	.4byte gBattleTransitionPokeballFieldEffectResources + 0x38 @ +0x44
+	.4byte gBattleTransitionPokeballFieldEffectResources + 0x20 @ +0x48
 	.4byte gDummySpriteAffineAnimTable @ +0x4C
 	.4byte sub_08148440 @ +0x50
 	.4byte 0x100AFFFF @ +0x54
-	.4byte 0x085A8930 @ +0x58
-	.4byte 0x085A8950 @ +0x5C
-	.4byte 0x085A8940 @ +0x60
+	.4byte gBattleTransitionPokeballFieldEffectResources + 0x18 @ +0x58
+	.4byte gBattleTransitionPokeballFieldEffectResources + 0x38 @ +0x5C
+	.4byte gBattleTransitionPokeballFieldEffectResources + 0x28 @ +0x60
 	.4byte gDummySpriteAffineAnimTable @ +0x64
 	.4byte sub_08148440 @ +0x68
 	@ pret/pokeemerald-jp direct xref for 0x085A8984: battle_transition.s: Phase2_BigPokeball_Func1, Phase2_GridSquares_Func1, Phase2_PokeballsTrail_Func1, Phase2_RectangularSpiral_Func1
@@ -814,11 +814,11 @@ sPointerTable_085A8A8C:
 	@ analyzed canonical ROM range 0x085A8A8C-0x085A8A9F
 gBattleTransitionMugshotPaletteGroupPointers: @ 0x085A8A8C
 	@ pointer/nullable table
-	.4byte 0x085A89AC @ +0x0
-	.4byte 0x085A89CC @ +0x4
-	.4byte 0x085A89EC @ +0x8
-	.4byte 0x085A8A0C @ +0xC
-	.4byte 0x085A8A2C @ +0x10
+	.4byte gBattleTransitionSharedPalettes + 0x28 @ +0x0
+	.4byte gBattleTransitionSharedPalettes + 0x48 @ +0x4
+	.4byte gBattleTransitionSharedPalettes + 0x68 @ +0x8
+	.4byte gBattleTransitionSharedPalettes + 0x88 @ +0xC
+	.4byte gBattleTransitionSharedPalettes + 0xA8 @ +0x10
 	@ pret/pokeemerald-jp direct xref for 0x085A8AA0: battle_transition.s: Phase2_Mugshot_Func2
 	.globl gBattleTransitionData_085A8AA0
 gBattleTransitionData_085A8AA0: @ 0x085A8AA0

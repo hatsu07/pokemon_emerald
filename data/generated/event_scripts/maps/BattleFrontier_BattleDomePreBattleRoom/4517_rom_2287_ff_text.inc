@@ -121,7 +121,7 @@ EventScript_JP_0822890E: @ 0x0822890E
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000D
-	.4byte 0x08229307 @ Movement_JP_08229307
+	.4byte Movement_JP_08229301 + 0x6 @ Movement_JP_08229307
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000F

@@ -1628,7 +1628,7 @@ sLinkGroupActivityNameTexts:
 	.4byte sText_PokemonJump @ ACTIVITY_POKEMON_JUMP
 	.4byte sText_BerryCrush @ ACTIVITY_BERRY_CRUSH
 	.4byte sText_BerryPicking @ ACTIVITY_BERRY_PICK
-	.4byte 0x082C1DE0 @ ACTIVITY_SEARCH: sText_Search + 2
+	.4byte sText_Search + 0x2 @ ACTIVITY_SEARCH: sText_Search + 2
 	.4byte 0x082C0640 @ ACTIVITY_SPIN_TRADE
 	.4byte sText_BattleTowerOpenLv @ ACTIVITY_BATTLE_TOWER_OPEN
 	.4byte sText_RecordCorner @ ACTIVITY_RECORD_CORNER

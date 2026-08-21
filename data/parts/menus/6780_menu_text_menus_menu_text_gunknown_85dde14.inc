@@ -1081,8 +1081,8 @@ gMenuU8Table_Rom_5E08AC: @ 0x085E08AC
 	@ semanticized-mass: resolved embedded ROM pointers
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
 	.4byte 0
-	.4byte 0x085E0898
-	.4byte 0x085E08A8
+	.4byte gItemIconTable + 0xBD0
+	.4byte gItemIconTable + 0xBE0
 	.4byte 0
 	.4byte gDummySpriteAffineAnimTable @ ROM pointer 0x082BF310
 	.4byte SpriteCallbackDummy @ ROM pointer 0x08007141

@@ -644,7 +644,7 @@ gPokenavMainMenuData_085F1508: @ 0x085F1508
 	.globl gPokenavSubmenuLeftHeaderSpriteTemplate
 gPokenavSubmenuLeftHeaderSpriteTemplate:
 	.2byte 0x0002, 0x0002 @ +0x0
-	.4byte 0x085F14E8 @ +0x4 ROM pointer; numeric preserved
+	.4byte gSpinningPokenavSpriteTemplate + 0x20 @ +0x4 ROM pointer; numeric preserved
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085F1510 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
 	.4byte 0 @ images = NULL
@@ -897,40 +897,40 @@ gPokenavUnk2Data_085F27AC: @ 0x085F27AC
 	@ analyzed canonical ROM range 0x085F27AC-0x085F2833
 	@ pointer/nullable table
 	@ ANALYSIS: U32_TABLE size=0x88 entries=34
-	.4byte 0x085F2774 @ +0x0
-	.4byte 0x085F2778 @ +0x4
-	.4byte 0x085F2784 @ +0x8
+	.4byte gPokenavUnk2Data_085F273C + 0x38 @ +0x0
+	.4byte gPokenavUnk2Data_085F273C + 0x3C @ +0x4
+	.4byte gPokenavUnk2Data_085F273C + 0x48 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte 0 @ +0x10
 	.4byte 0 @ +0x14
 	.4byte 0x0014002A @ +0x18
-	.4byte 0x085F2774 @ +0x1C
-	.4byte 0x085F2778 @ +0x20
-	.4byte 0x085F277C @ +0x24
-	.4byte 0x085F2784 @ +0x28
+	.4byte gPokenavUnk2Data_085F273C + 0x38 @ +0x1C
+	.4byte gPokenavUnk2Data_085F273C + 0x3C @ +0x20
+	.4byte gPokenavUnk2Data_085F273C + 0x40 @ +0x24
+	.4byte gPokenavUnk2Data_085F273C + 0x48 @ +0x28
 	.4byte 0 @ +0x2C
 	.4byte 0 @ +0x30
 	.4byte 0x0014002A @ +0x34
-	.4byte 0x085F2774 @ +0x38
-	.4byte 0x085F2778 @ +0x3C
-	.4byte 0x085F277C @ +0x40
-	.4byte 0x085F2780 @ +0x44
-	.4byte 0x085F2784 @ +0x48
+	.4byte gPokenavUnk2Data_085F273C + 0x38 @ +0x38
+	.4byte gPokenavUnk2Data_085F273C + 0x3C @ +0x3C
+	.4byte gPokenavUnk2Data_085F273C + 0x40 @ +0x40
+	.4byte gPokenavUnk2Data_085F273C + 0x44 @ +0x44
+	.4byte gPokenavUnk2Data_085F273C + 0x48 @ +0x48
 	.4byte 0 @ +0x4C
 	.4byte 0x00140038 @ +0x50
-	.4byte 0x085F2788 @ +0x54
-	.4byte 0x085F278C @ +0x58
-	.4byte 0x085F27A4 @ +0x5C
+	.4byte gPokenavUnk2Data_085F273C + 0x4C @ +0x54
+	.4byte gPokenavUnk2Data_085F273C + 0x50 @ +0x58
+	.4byte gPokenavUnk2Data_085F273C + 0x68 @ +0x5C
 	.4byte 0 @ +0x60
 	.4byte 0 @ +0x64
 	.4byte 0 @ +0x68
 	.4byte 0x00100028 @ +0x6C
-	.4byte 0x085F2790 @ +0x70
-	.4byte 0x085F2794 @ +0x74
-	.4byte 0x085F2798 @ +0x78
-	.4byte 0x085F279C @ +0x7C
-	.4byte 0x085F27A0 @ +0x80
-	.4byte 0x085F27A4 @ +0x84
+	.4byte gPokenavUnk2Data_085F273C + 0x54 @ +0x70
+	.4byte gPokenavUnk2Data_085F273C + 0x58 @ +0x74
+	.4byte gPokenavUnk2Data_085F273C + 0x5C @ +0x78
+	.4byte gPokenavUnk2Data_085F273C + 0x60 @ +0x7C
+	.4byte gPokenavUnk2Data_085F273C + 0x64 @ +0x80
+	.4byte gPokenavUnk2Data_085F273C + 0x68 @ +0x84
 	@ pret/pokeemerald-jp direct xref for 0x085F2834: pokenav_unk_2.s: sub_081C9E8C
 	.globl gPokenavUnk2Data_085F2834
 gPokenavUnk2Data_085F2834: @ 0x085F2834
@@ -978,11 +978,11 @@ gPokenavUnk2Data_085F28B4: @ 0x085F28B4
 	@ pointer/nullable table
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x00040003 @ +0x0
-	.4byte 0x085F287C @ +0x4
+	.4byte gPokenavUnk2Data_085F2877 + 0x5 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0 @ +0xC
-	.4byte 0x085F28AC @ +0x10
+	.4byte gPokenavUnk2Data_085F2877 + 0x35 @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x80004000 @ +0x18

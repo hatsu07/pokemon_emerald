@@ -452,7 +452,7 @@ sFlyMapWindowTemplates: @ 0x0857D7E0
 
 	.globl sFlyTargetIconsSpritePalette
 sFlyTargetIconsSpritePalette: @ 0x0857D800
-	.4byte 0x0857D638
+	.4byte sRegionMapFrameTilemapLZ + 0xB8
 	.2byte 0x0002
 	.2byte 0x0000
 

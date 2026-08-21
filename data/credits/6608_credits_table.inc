@@ -69,9 +69,9 @@ sPointerTable_085D7AA0:
 	@ analyzed canonical ROM range 0x085D7AA0-0x085D7AAF
 	@ pointer/nullable table
 	.4byte gText_Rom_680867 @ +0x0
-	.4byte 0x086A0869 @ +0x4
-	.4byte 0x086C086B @ +0x8
-	.4byte 0x086E086D @ +0xC
+	.4byte DirectSoundWaveData_Instrument_063_JP_086A0804 + 0x65 @ +0x4
+	.4byte DirectSoundWaveData_Instrument_084_JP_086BFD08 + 0xB63 @ +0x8
+	.4byte DirectSoundWaveData_Cry_019_JP_086E0160 + 0x70D @ +0xC
 	.globl gCreditsPointerTable_Rom_5D7AB0
 gCreditsPointerTable_Rom_5D7AB0: @ 0x085D7AB0
 	.4byte gText_Rom_262E5F

@@ -265,7 +265,7 @@ sAnims_CableEnd: @ 0x0830D034
 
 	.globl sSpriteSheet_CableEnd
 sSpriteSheet_CableEnd: @ 0x0830D038
-	.4byte 0x08303B04 @ exact JP cable-end sheet data pointer
+	.4byte sLinkMonShadow_Gfx + 0x200 @ exact JP cable-end sheet data pointer
 	.2byte 0x0100 @ size
 	.2byte 0x15B2 @ GFX tag
 

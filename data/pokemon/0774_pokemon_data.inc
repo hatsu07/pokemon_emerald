@@ -37,14 +37,14 @@ gPokedexData_08543150: @ 0x08543150
 	.globl gMonFootprintTable
 gMonFootprintTable: @ 0x08543168
 	@ 413 species-indexed footprint pointers through SPECIES_EGG.
-	.4byte 0x08C30444 @ [SPECIES_NONE]
-	.4byte 0x08C30444 @ [SPECIES_BULBASAUR]
-	.4byte 0x08C30FB4 @ [SPECIES_IVYSAUR]
-	.4byte 0x08C31E80 @ [SPECIES_VENUSAUR]
-	.4byte 0x08C32834 @ [SPECIES_CHARMANDER]
-	.4byte 0x08C3332C @ [SPECIES_CHARMELEON]
-	.4byte 0x08C34108 @ [SPECIES_CHARIZARD]
-	.4byte 0x08C34AD4 @ [SPECIES_SQUIRTLE]
+	.4byte gMonIcon_None + 0x400 @ [SPECIES_NONE]
+	.4byte gMonIcon_None + 0x400 @ [SPECIES_BULBASAUR]
+	.4byte gMonIcon_Ivysaur + 0x400 @ [SPECIES_IVYSAUR]
+	.4byte gMonIcon_Venusaur + 0x400 @ [SPECIES_VENUSAUR]
+	.4byte gMonIcon_Charmander + 0x400 @ [SPECIES_CHARMANDER]
+	.4byte gMonIcon_Charmeleon + 0x400 @ [SPECIES_CHARMELEON]
+	.4byte gMonIcon_Charizard + 0x400 @ [SPECIES_CHARIZARD]
+	.4byte gMonIcon_Squirtle + 0x400 @ [SPECIES_SQUIRTLE]
 	.4byte gMonFootprint_Wartortle @ [SPECIES_WARTORTLE]
 	.4byte gMonFootprint_Blastoise @ [SPECIES_BLASTOISE]
 	.4byte gMonFootprint_Caterpie @ [SPECIES_CATERPIE]
@@ -288,7 +288,7 @@ gMonFootprintTable: @ 0x08543168
 	.4byte gMonFootprint_Tyranitar @ [SPECIES_TYRANITAR]
 	.4byte gMonFootprint_Lugia @ [SPECIES_LUGIA]
 	.4byte gMonFootprint_HoOh @ [SPECIES_HO_OH]
-	.4byte 0x08CDD39C @ [SPECIES_CELEBI]
+	.4byte gMonIcon_Celebi + 0x400 @ [SPECIES_CELEBI]
 	.4byte gMonFootprint_OldUnownB @ [SPECIES_OLD_UNOWN_B]
 	.4byte gMonFootprint_OldUnownC @ [SPECIES_OLD_UNOWN_C]
 	.4byte gMonFootprint_OldUnownD @ [SPECIES_OLD_UNOWN_D]
@@ -448,8 +448,8 @@ gMonFootprintTable: @ 0x08543168
 	.4byte gMonFootprint_Latios @ [SPECIES_LATIOS]
 	.4byte gMonFootprint_Jirachi @ [SPECIES_JIRACHI]
 	.4byte 0x08D43C9C @ [SPECIES_DEOXYS_NORMAL]
-	.4byte 0x08D445CC @ [SPECIES_CHIMECHO]
-	.4byte 0x08C30444 @ [SPECIES_EGG]
+	.4byte gMonIcon_Chimecho + 0x400 @ [SPECIES_CHIMECHO]
+	.4byte gMonIcon_None + 0x400 @ [SPECIES_EGG]
 sPokedexUiPalettes: @ 0x085437DC, 4 banks x 16 RGB555 colors
 	rodata_rgb5 15, 16,  0 @ [00] raw=0x020F
 	.globl sPokedexUiPalettes_Continuation

@@ -237,11 +237,11 @@ gMenuSpecializedData_085FA8C0: @ 0x085FA8C0
 	@ analyzed canonical ROM range 0x085FA8C0-0x085FA8DF
 	@ pointer/nullable table
 	@ ANALYSIS: U32_TABLE size=0x20 entries=8
-	.4byte 0x085F9B18 @ +0x0
+	.4byte gLz77Asset_085F98AC + 0x26C @ +0x0
 	.4byte 0x00650100 @ +0x4
-	.4byte 0x085F9C18 @ +0x8
+	.4byte gLz77Asset_085F98AC + 0x36C @ +0x8
 	.4byte 0x00670020 @ +0xC
-	.4byte 0x085F9C38 @ +0x10
+	.4byte gLz77Asset_085F98AC + 0x38C @ +0x10
 	.4byte 0x00660100 @ +0x14
 	.4byte 0 @ +0x18
 	.4byte 0 @ +0x1C

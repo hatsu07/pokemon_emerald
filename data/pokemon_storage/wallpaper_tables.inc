@@ -13,22 +13,22 @@ sPointerTable_08551868:
 	.4byte 0x0854CBD4 @ entry 2
 	.4byte gLz77Asset_0854D1B8
 	.4byte gLz77Asset_0854D4D0
-	.4byte 0x0854D178 @ entry 5
+	.4byte gLz77Asset_0854D098 + 0xE0 @ entry 5
 	.4byte gLz77Asset_0854D5EC
 	.4byte gLz77Asset_0854D9A0
-	.4byte 0x0854D5AC @ entry 8
+	.4byte gLz77Asset_0854D4D0 + 0xDC @ entry 8
 	.4byte gLz77Asset_0854DADC
 	.4byte gLz77Asset_0854DEF0
-	.4byte 0x0854DA9C @ entry 11
+	.4byte gLz77Asset_0854D9A0 + 0xFC @ entry 11
 	.4byte gLz77Asset_0854E034
 	.4byte gLz77Asset_0854E430
-	.4byte 0x0854DFF4 @ entry 14
+	.4byte gLz77Asset_0854DEF0 + 0x104 @ entry 14
 	.4byte gLz77Asset_0854E560
 	.4byte gLz77Asset_0854EA50
-	.4byte 0x0854E520 @ entry 17
+	.4byte gLz77Asset_0854E430 + 0xF0 @ entry 17
 	.4byte gLz77Asset_0854EBCC
 	.4byte gLz77Asset_0854F02C
-	.4byte 0x0854EB8C @ entry 20
+	.4byte gLz77Asset_0854EA50 + 0x13C @ entry 20
 sWallpapers: @ 0x085518BC
 	@ WALLPAPER_FOREST index 0
 	.4byte sWallpaperTiles_Forest
@@ -1171,54 +1171,54 @@ gPokemonStorageSystemData_08555A40: @ 0x08555A40
 sPointerTable_08555A40:
 	@ analyzed canonical ROM range 0x08555A40-0x08555AFF
 	@ pointer/nullable table
-	.4byte 0x085519E8 @ +0x0
-	.4byte 0x08551BDC @ +0x4
-	.4byte 0x085519A8 @ +0x8
-	.4byte 0x08551D34 @ +0xC
-	.4byte 0x08551FB0 @ +0x10
-	.4byte 0x08551CF4 @ +0x14
-	.4byte 0x0855211C @ +0x18
-	.4byte 0x08552378 @ +0x1C
-	.4byte 0x085520DC @ +0x20
-	.4byte 0x085524C4 @ +0x24
-	.4byte 0x085526B0 @ +0x28
-	.4byte 0x08552484 @ +0x2C
-	.4byte 0x085527E0 @ +0x30
-	.4byte 0x085529B0 @ +0x34
-	.4byte 0x085527A0 @ +0x38
-	.4byte 0x08552AE8 @ +0x3C
-	.4byte 0x08552D50 @ +0x40
-	.4byte 0x08552AA8 @ +0x44
-	.4byte 0x08552EC4 @ +0x48
-	.4byte 0x08553104 @ +0x4C
-	.4byte 0x08552E84 @ +0x50
-	.4byte 0x08553258 @ +0x54
-	.4byte 0x08553468 @ +0x58
-	.4byte 0x08553218 @ +0x5C
-	.4byte 0x085535BC @ +0x60
-	.4byte 0x08553768 @ +0x64
-	.4byte 0x0855357C @ +0x68
-	.4byte 0x08553884 @ +0x6C
-	.4byte 0x08553AD8 @ +0x70
-	.4byte 0x08553844 @ +0x74
-	.4byte 0x08553C14 @ +0x78
-	.4byte 0x08553E00 @ +0x7C
-	.4byte 0x08553BD4 @ +0x80
-	.4byte 0x08553F38 @ +0x84
-	.4byte 0x0855416C @ +0x88
-	.4byte 0x08553EF8 @ +0x8C
-	.4byte 0x085542D4 @ +0x90
-	.4byte 0x085545B4 @ +0x94
-	.4byte 0x08554294 @ +0x98
-	.4byte 0x08554738 @ +0x9C
-	.4byte 0x08554984 @ +0xA0
-	.4byte 0x085546F8 @ +0xA4
-	.4byte 0x08554ABC @ +0xA8
-	.4byte 0x08554D7C @ +0xAC
-	.4byte 0x08554A7C @ +0xB0
-	.4byte 0x08554EDC @ +0xB4
-	.4byte 0x08555124 @ +0xB8
-	.4byte 0x08554E9C @ +0xBC
+	.4byte sWallpapers + 0x12C @ +0x0
+	.4byte sWallpapers + 0x320 @ +0x4
+	.4byte sWallpapers + 0xEC @ +0x8
+	.4byte sWallpapers + 0x478 @ +0xC
+	.4byte sWallpapers + 0x6F4 @ +0x10
+	.4byte sWallpapers + 0x438 @ +0x14
+	.4byte sWallpapers + 0x860 @ +0x18
+	.4byte sWallpapers + 0xABC @ +0x1C
+	.4byte sWallpapers + 0x820 @ +0x20
+	.4byte sWallpapers + 0xC08 @ +0x24
+	.4byte sWallpapers + 0xDF4 @ +0x28
+	.4byte sWallpapers + 0xBC8 @ +0x2C
+	.4byte sWallpapers + 0xF24 @ +0x30
+	.4byte sWallpapers + 0x10F4 @ +0x34
+	.4byte sWallpapers + 0xEE4 @ +0x38
+	.4byte sWallpapers + 0x122C @ +0x3C
+	.4byte sWallpapers + 0x1494 @ +0x40
+	.4byte sWallpapers + 0x11EC @ +0x44
+	.4byte sWallpapers + 0x1608 @ +0x48
+	.4byte sWallpapers + 0x1848 @ +0x4C
+	.4byte sWallpapers + 0x15C8 @ +0x50
+	.4byte sWallpapers + 0x199C @ +0x54
+	.4byte sWallpapers + 0x1BAC @ +0x58
+	.4byte sWallpapers + 0x195C @ +0x5C
+	.4byte sWallpapers + 0x1D00 @ +0x60
+	.4byte sWallpapers + 0x1EAC @ +0x64
+	.4byte sWallpapers + 0x1CC0 @ +0x68
+	.4byte sWallpapers + 0x1FC8 @ +0x6C
+	.4byte sWallpapers + 0x221C @ +0x70
+	.4byte sWallpapers + 0x1F88 @ +0x74
+	.4byte sWallpapers + 0x2358 @ +0x78
+	.4byte sWallpapers + 0x2544 @ +0x7C
+	.4byte sWallpapers + 0x2318 @ +0x80
+	.4byte sWallpapers + 0x267C @ +0x84
+	.4byte sWallpapers + 0x28B0 @ +0x88
+	.4byte sWallpapers + 0x263C @ +0x8C
+	.4byte sWallpapers + 0x2A18 @ +0x90
+	.4byte sWallpapers + 0x2CF8 @ +0x94
+	.4byte sWallpapers + 0x29D8 @ +0x98
+	.4byte sWallpapers + 0x2E7C @ +0x9C
+	.4byte sWallpapers + 0x30C8 @ +0xA0
+	.4byte sWallpapers + 0x2E3C @ +0xA4
+	.4byte sWallpapers + 0x3200 @ +0xA8
+	.4byte sWallpapers + 0x34C0 @ +0xAC
+	.4byte sWallpapers + 0x31C0 @ +0xB0
+	.4byte sWallpapers + 0x3620 @ +0xB4
+	.4byte sWallpapers + 0x3868 @ +0xB8
+	.4byte sWallpapers + 0x35E0 @ +0xBC
 	@ pret/pokeemerald-jp direct xref for 0x08555B00: pokemon_storage_system.s: LoadWallpaperGfx
 	.globl sWaldaWallpaperIcons
 sWaldaWallpaperIcons: @ 0x08555B00
