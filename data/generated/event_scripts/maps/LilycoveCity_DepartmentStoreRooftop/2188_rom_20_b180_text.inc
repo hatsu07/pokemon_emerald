@@ -234,7 +234,7 @@ EventScript_JP_0820B401: @ 0x0820B401
 	.4byte gText_Rom_20BE42 @ gText_Rom_20BE42
 	.4byte gText_Rom_20BF1C @ gText_Rom_20BF1C
 	.4byte gText_Rom_20C0D6 @ gText_Rom_20C0D6
-	.4byte 0x0820B43A @ EventScript_JP_0820B43A
+	.4byte EventScript_JP_0820B43A @ EventScript_JP_0820B43A
 	specialvar_ 0x800D, 0x0039
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820B4E7

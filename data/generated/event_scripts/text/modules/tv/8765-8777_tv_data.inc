@@ -505,7 +505,7 @@ EventScript_JP_082541EE: @ 0x082541EE
 	.4byte gText_Rom_252E99 @ gText_Rom_252E99
 	.4byte gText_Rom_252F11 @ gText_Rom_252F11
 	.4byte gText_Rom_25322F @ gText_Rom_25322F
-	.4byte 0x0825436E @ EventScript_JP_0825436E
+	.4byte EventScript_JP_0825436E @ EventScript_JP_0825436E
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
 	release
@@ -520,7 +520,7 @@ EventScript_JP_0825420E: @ 0x0825420E
 	.4byte gText_Rom_2532E3 @ gText_Rom_2532E3
 	.4byte gText_Rom_25339D @ gText_Rom_25339D
 	.4byte gText_Rom_25335D @ gText_Rom_25335D
-	.4byte 0x0825436E @ EventScript_JP_0825436E
+	.4byte EventScript_JP_0825436E @ EventScript_JP_0825436E
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
 	release
@@ -535,7 +535,7 @@ EventScript_JP_0825422E: @ 0x0825422E
 	.4byte gText_Rom_252ED4 @ gText_Rom_252ED4
 	.4byte gText_Rom_2532C0 @ gText_Rom_2532C0
 	.4byte gText_Rom_25322F @ gText_Rom_25322F
-	.4byte 0x082543DB @ EventScript_JP_082543DB
+	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
 	release
@@ -550,7 +550,7 @@ EventScript_JP_0825424E: @ 0x0825424E
 	.4byte gText_Rom_253312 @ gText_Rom_253312
 	.4byte gText_Rom_2533BF @ gText_Rom_2533BF
 	.4byte gText_Rom_25335D @ gText_Rom_25335D
-	.4byte 0x082543DB @ EventScript_JP_082543DB
+	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
 	release
@@ -565,7 +565,7 @@ EventScript_JP_0825426E: @ 0x0825426E
 	.4byte gText_Rom_252ED4 @ gText_Rom_252ED4
 	.4byte gText_Rom_2532C0 @ gText_Rom_2532C0
 	.4byte gText_Rom_25322F @ gText_Rom_25322F
-	.4byte 0x082543DB @ EventScript_JP_082543DB
+	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
 	release
@@ -580,7 +580,7 @@ EventScript_JP_0825428E: @ 0x0825428E
 	.4byte gText_Rom_253312 @ gText_Rom_253312
 	.4byte gText_Rom_2533BF @ gText_Rom_2533BF
 	.4byte gText_Rom_25335D @ gText_Rom_25335D
-	.4byte 0x082543DB @ EventScript_JP_082543DB
+	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
 	release
@@ -595,7 +595,7 @@ EventScript_JP_082542AE: @ 0x082542AE
 	.4byte gText_Rom_252ED4 @ gText_Rom_252ED4
 	.4byte gText_Rom_2532C0 @ gText_Rom_2532C0
 	.4byte gText_Rom_25322F @ gText_Rom_25322F
-	.4byte 0x082543DB @ EventScript_JP_082543DB
+	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
 	release
@@ -610,7 +610,7 @@ EventScript_JP_082542CE: @ 0x082542CE
 	.4byte gText_Rom_253312 @ gText_Rom_253312
 	.4byte gText_Rom_2533BF @ gText_Rom_2533BF
 	.4byte gText_Rom_25335D @ gText_Rom_25335D
-	.4byte 0x082543DB @ EventScript_JP_082543DB
+	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
 	release
@@ -625,7 +625,7 @@ EventScript_JP_082542EE: @ 0x082542EE
 	.4byte gText_Rom_252ED4 @ gText_Rom_252ED4
 	.4byte gText_Rom_2532C0 @ gText_Rom_2532C0
 	.4byte gText_Rom_25322F @ gText_Rom_25322F
-	.4byte 0x082543DB @ EventScript_JP_082543DB
+	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
 	release
@@ -640,7 +640,7 @@ EventScript_JP_0825430E: @ 0x0825430E
 	.4byte gText_Rom_253312 @ gText_Rom_253312
 	.4byte gText_Rom_2533BF @ gText_Rom_2533BF
 	.4byte gText_Rom_25335D @ gText_Rom_25335D
-	.4byte 0x082543DB @ EventScript_JP_082543DB
+	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
 	release
@@ -655,7 +655,7 @@ EventScript_JP_0825432E: @ 0x0825432E
 	.4byte gText_Rom_252ED4 @ gText_Rom_252ED4
 	.4byte gText_Rom_2532C0 @ gText_Rom_2532C0
 	.4byte gText_Rom_25322F @ gText_Rom_25322F
-	.4byte 0x082543DB @ EventScript_JP_082543DB
+	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
 	release
@@ -670,7 +670,7 @@ EventScript_JP_0825434E: @ 0x0825434E
 	.4byte gText_Rom_253312 @ gText_Rom_253312
 	.4byte gText_Rom_2533BF @ gText_Rom_2533BF
 	.4byte gText_Rom_25335D @ gText_Rom_25335D
-	.4byte 0x082543DB @ EventScript_JP_082543DB
+	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
 	release
@@ -702,7 +702,7 @@ EventScript_JP_082543AC: @ 0x082543AC
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8004
-	.4byte 0x08254465 @ Movement_JP_08254465
+	.4byte Movement_JP_08254465 @ Movement_JP_08254465
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -713,7 +713,7 @@ EventScript_JP_082543B7: @ 0x082543B7
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8004
-	.4byte 0x08254467 @ Movement_JP_08254467
+	.4byte Movement_JP_08254467 @ Movement_JP_08254467
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8005
@@ -728,7 +728,7 @@ EventScript_JP_082543C9: @ 0x082543C9
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8004
-	.4byte 0x08254469 @ Movement_JP_08254469
+	.4byte Movement_JP_08254469 @ Movement_JP_08254469
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8005

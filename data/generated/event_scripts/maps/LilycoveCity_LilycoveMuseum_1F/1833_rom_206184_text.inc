@@ -97,7 +97,7 @@ EventScript_JP_082062B4: @ 0x082062B4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x0820630D @ Movement_JP_0820630D
+	.4byte Movement_JP_0820630D @ Movement_JP_0820630D
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -106,14 +106,14 @@ EventScript_JP_082062B4: @ 0x082062B4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x0820630F @ Movement_JP_0820630F
+	.4byte Movement_JP_0820630F @ Movement_JP_0820630F
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x0820630F @ Movement_JP_0820630F
+	.4byte Movement_JP_0820630F @ Movement_JP_0820630F
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -129,7 +129,7 @@ EventScript_JP_082062B4: @ 0x082062B4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x0820630D @ Movement_JP_0820630D
+	.4byte Movement_JP_0820630D @ Movement_JP_0820630D
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -186,7 +186,7 @@ EventScript_JP_0820636F: @ 0x0820636F
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x0820630F @ Movement_JP_0820630F
+	.4byte Movement_JP_0820630F @ Movement_JP_0820630F
 	loadword 0x00, gText_Rom_20668E
 	callstd 0x04
 	goto EventScript_JP_08206396

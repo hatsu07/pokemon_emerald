@@ -314,21 +314,21 @@ sBagAffineAnimCmds: @ 0x0855A65C
 	.globl gBagMaleSpriteSheet
 gBagMaleSpriteSheet: @ 0x0855A664
 	@ Local JP male bag gfx pointer.
-	.4byte 0x08D99030
+	.4byte gLz77Asset_08D99030
 	.2byte 0x3000
 	.2byte 0x0064
 
 	.globl gBagFemaleSpriteSheet
 gBagFemaleSpriteSheet: @ 0x0855A66C
 	@ Local JP female bag gfx pointer.
-	.4byte 0x08D99BAC
+	.4byte gLz77Asset_08D99BAC
 	.2byte 0x3000
 	.2byte 0x0064
 
 	.globl gBagPaletteTable
 gBagPaletteTable: @ 0x0855A674
 	@ Local JP bag palette pointer.
-	.4byte 0x08D9A70C
+	.4byte gLz77Asset_08D9A70C
 	.2byte 0x0064
 	.2byte 0
 

@@ -1919,7 +1919,7 @@ sWindowTemplate_RegisterForTrade:
 sRegisterForTradeListMenuItems: @ 0x082C216C
 	.4byte gText_Rom_5CA368 @ gText_Register
 	.4byte 1
-	.4byte 0x082C1D58 @ sText_Info
+	.4byte sText_Info @ sText_Info
 	.4byte 2
 	.4byte gText_Rom_2C1D50 @ sText_Exit
 	.4byte 3

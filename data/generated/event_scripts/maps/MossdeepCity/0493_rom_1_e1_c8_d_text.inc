@@ -230,7 +230,7 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte 0x081E2102 @ Movement_JP_081E2102
+	.4byte Movement_JP_081E2102 @ Movement_JP_081E2102
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -263,11 +263,11 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte 0x081E2252 @ Movement_JP_081E2252
+	.4byte Movement_JP_081E2252 @ Movement_JP_081E2252
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte 0x081E227F @ Movement_JP_081E227F
+	.4byte Movement_JP_081E227F @ Movement_JP_081E227F
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -282,11 +282,11 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte 0x081E2269 @ Movement_JP_081E2269
+	.4byte Movement_JP_081E2269 @ Movement_JP_081E2269
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte 0x081E228A @ Movement_JP_081E228A
+	.4byte Movement_JP_081E228A @ Movement_JP_081E228A
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -295,11 +295,11 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte 0x081E225C @ Movement_JP_081E225C
+	.4byte Movement_JP_081E225C @ Movement_JP_081E225C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte 0x081E2277 @ Movement_JP_081E2277
+	.4byte Movement_JP_081E2277 @ Movement_JP_081E2277
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -314,11 +314,11 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte 0x081E2269 @ Movement_JP_081E2269
+	.4byte Movement_JP_081E2269 @ Movement_JP_081E2269
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte 0x081E228A @ Movement_JP_081E228A
+	.4byte Movement_JP_081E228A @ Movement_JP_081E228A
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -327,11 +327,11 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte 0x081E2252 @ Movement_JP_081E2252
+	.4byte Movement_JP_081E2252 @ Movement_JP_081E2252
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte 0x081E227F @ Movement_JP_081E227F
+	.4byte Movement_JP_081E227F @ Movement_JP_081E227F
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -346,11 +346,11 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte 0x081E2269 @ Movement_JP_081E2269
+	.4byte Movement_JP_081E2269 @ Movement_JP_081E2269
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte 0x081E228A @ Movement_JP_081E228A
+	.4byte Movement_JP_081E228A @ Movement_JP_081E228A
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -360,15 +360,15 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte 0x081E2270 @ Movement_JP_081E2270
+	.4byte Movement_JP_081E2270 @ Movement_JP_081E2270
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte 0x081E2291 @ Movement_JP_081E2291
+	.4byte Movement_JP_081E2291 @ Movement_JP_081E2291
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte 0x081E210F @ Movement_JP_081E210F
+	.4byte Movement_JP_081E210F @ Movement_JP_081E210F
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -419,7 +419,7 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte 0x081E223E @ Movement_JP_081E223E
+	.4byte Movement_JP_081E223E @ Movement_JP_081E223E
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -452,11 +452,11 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte 0x081E2252 @ Movement_JP_081E2252
+	.4byte Movement_JP_081E2252 @ Movement_JP_081E2252
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte 0x081E227F @ Movement_JP_081E227F
+	.4byte Movement_JP_081E227F @ Movement_JP_081E227F
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -471,11 +471,11 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte 0x081E2269 @ Movement_JP_081E2269
+	.4byte Movement_JP_081E2269 @ Movement_JP_081E2269
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte 0x081E228A @ Movement_JP_081E228A
+	.4byte Movement_JP_081E228A @ Movement_JP_081E228A
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -484,11 +484,11 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte 0x081E225C @ Movement_JP_081E225C
+	.4byte Movement_JP_081E225C @ Movement_JP_081E225C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte 0x081E2277 @ Movement_JP_081E2277
+	.4byte Movement_JP_081E2277 @ Movement_JP_081E2277
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -503,11 +503,11 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte 0x081E2269 @ Movement_JP_081E2269
+	.4byte Movement_JP_081E2269 @ Movement_JP_081E2269
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte 0x081E228A @ Movement_JP_081E228A
+	.4byte Movement_JP_081E228A @ Movement_JP_081E228A
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -516,11 +516,11 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte 0x081E2252 @ Movement_JP_081E2252
+	.4byte Movement_JP_081E2252 @ Movement_JP_081E2252
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte 0x081E227F @ Movement_JP_081E227F
+	.4byte Movement_JP_081E227F @ Movement_JP_081E227F
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -535,11 +535,11 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte 0x081E2269 @ Movement_JP_081E2269
+	.4byte Movement_JP_081E2269 @ Movement_JP_081E2269
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte 0x081E228A @ Movement_JP_081E228A
+	.4byte Movement_JP_081E228A @ Movement_JP_081E228A
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -549,15 +549,15 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte 0x081E2270 @ Movement_JP_081E2270
+	.4byte Movement_JP_081E2270 @ Movement_JP_081E2270
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte 0x081E2291 @ Movement_JP_081E2291
+	.4byte Movement_JP_081E2291 @ Movement_JP_081E2291
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte 0x081E2248 @ Movement_JP_081E2248
+	.4byte Movement_JP_081E2248 @ Movement_JP_081E2248
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -701,7 +701,7 @@ EventScript_JP_081E22B8: @ 0x081E22B8
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte 0x081E2102 @ Movement_JP_081E2102
+	.4byte Movement_JP_081E2102 @ Movement_JP_081E2102
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -732,7 +732,7 @@ EventScript_JP_081E22B8: @ 0x081E22B8
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte 0x081E24FD @ Movement_JP_081E24FD
+	.4byte Movement_JP_081E24FD @ Movement_JP_081E24FD
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -762,7 +762,7 @@ EventScript_JP_081E22B8: @ 0x081E22B8
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte 0x081E24F5 @ Movement_JP_081E24F5
+	.4byte Movement_JP_081E24F5 @ Movement_JP_081E24F5
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -797,7 +797,7 @@ EventScript_JP_081E2368: @ 0x081E2368
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte 0x081E223E @ Movement_JP_081E223E
+	.4byte Movement_JP_081E223E @ Movement_JP_081E223E
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -827,11 +827,11 @@ EventScript_JP_081E2368: @ 0x081E2368
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte 0x081E24FD @ Movement_JP_081E24FD
+	.4byte Movement_JP_081E24FD @ Movement_JP_081E24FD
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x081E2502 @ Movement_JP_081E2502
+	.4byte Movement_JP_081E2502 @ Movement_JP_081E2502
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -861,7 +861,7 @@ EventScript_JP_081E2368: @ 0x081E2368
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte 0x081E24F5 @ Movement_JP_081E24F5
+	.4byte Movement_JP_081E24F5 @ Movement_JP_081E24F5
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1302,11 +1302,11 @@ EventScript_JP_081E2866: @ 0x081E2866
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte 0x081E296E @ Movement_JP_081E296E
+	.4byte Movement_JP_081E296E @ Movement_JP_081E296E
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x081E29A8 @ Movement_JP_081E29A8
+	.4byte Movement_JP_081E29A8 @ Movement_JP_081E29A8
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1314,18 +1314,18 @@ EventScript_JP_081E2866: @ 0x081E2866
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x081E29DB @ Movement_JP_081E29DB
+	.4byte Movement_JP_081E29DB @ Movement_JP_081E29DB
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte 0x081E29DE @ Movement_JP_081E29DE
+	.4byte Movement_JP_081E29DE @ Movement_JP_081E29DE
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x081E29E9 @ Movement_JP_081E29E9
+	.4byte Movement_JP_081E29E9 @ Movement_JP_081E29E9
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1336,7 +1336,7 @@ EventScript_JP_081E2866: @ 0x081E2866
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x081E29F4 @ Movement_JP_081E29F4
+	.4byte Movement_JP_081E29F4 @ Movement_JP_081E29F4
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1354,11 +1354,11 @@ EventScript_JP_081E28DD: @ 0x081E28DD
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte 0x081E2901 @ Movement_JP_081E2901
+	.4byte Movement_JP_081E2901 @ Movement_JP_081E2901
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x081E2926 @ Movement_JP_081E2926
+	.4byte Movement_JP_081E2926 @ Movement_JP_081E2926
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1369,11 +1369,11 @@ EventScript_JP_081E28EF: @ 0x081E28EF
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte 0x081E2901 @ Movement_JP_081E2901
+	.4byte Movement_JP_081E2901 @ Movement_JP_081E2901
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x081E294A @ Movement_JP_081E294A
+	.4byte Movement_JP_081E294A @ Movement_JP_081E294A
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1816,7 +1816,7 @@ EventScript_JP_081E2B4C: @ 0x081E2B4C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0012
-	.4byte 0x081E2B86 @ Movement_JP_081E2B86
+	.4byte Movement_JP_081E2B86 @ Movement_JP_081E2B86
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1829,7 +1829,7 @@ EventScript_JP_081E2B5F: @ 0x081E2B5F
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0012
-	.4byte 0x081E2B89 @ Movement_JP_081E2B89
+	.4byte Movement_JP_081E2B89 @ Movement_JP_081E2B89
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000

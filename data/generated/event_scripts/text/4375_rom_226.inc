@@ -451,7 +451,7 @@ EventScript_JP_08227218: @ 0x08227218
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x082272EF @ Movement_JP_082272EF
+	.4byte Movement_JP_082272EF @ Movement_JP_082272EF
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -467,7 +467,7 @@ EventScript_JP_08227218: @ 0x08227218
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x082272F8 @ Movement_JP_082272F8
+	.4byte Movement_JP_082272F8 @ Movement_JP_082272F8
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -483,7 +483,7 @@ EventScript_JP_08227287: @ 0x08227287
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x082272EF @ Movement_JP_082272EF
+	.4byte Movement_JP_082272EF @ Movement_JP_082272EF
 	return
 EventScript_JP_0822728F: @ 0x0822728F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -491,7 +491,7 @@ EventScript_JP_0822728F: @ 0x0822728F
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
-	.4byte 0x082272EF @ Movement_JP_082272EF
+	.4byte Movement_JP_082272EF @ Movement_JP_082272EF
 	return
 EventScript_JP_08227297: @ 0x08227297
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -499,7 +499,7 @@ EventScript_JP_08227297: @ 0x08227297
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte 0x082272F5 @ Movement_JP_082272F5
+	.4byte Movement_JP_082272F5 @ Movement_JP_082272F5
 	return
 EventScript_JP_0822729F: @ 0x0822729F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -507,7 +507,7 @@ EventScript_JP_0822729F: @ 0x0822729F
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
-	.4byte 0x082272F5 @ Movement_JP_082272F5
+	.4byte Movement_JP_082272F5 @ Movement_JP_082272F5
 	return
 EventScript_JP_082272A7: @ 0x082272A7
 	loadword 0x00, gText_Rom_227461

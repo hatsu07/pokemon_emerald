@@ -16,7 +16,7 @@ EventScript_JP_0825661D: @ 0x0825661D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800F
-	.4byte 0x0825662C @ Movement_JP_0825662C
+	.4byte Movement_JP_0825662C @ Movement_JP_0825662C
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000

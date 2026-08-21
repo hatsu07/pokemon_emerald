@@ -43,7 +43,7 @@ EventScript_JP_082043BB: @ 0x082043BB
 	.2byte 0x0000
 	.4byte gText_Rom_2048B1 @ gText_Rom_2048B1
 	.4byte gText_Rom_204936 @ gText_Rom_204936
-	.4byte 0x082043F0 @ EventScript_JP_082043F0
+	.4byte EventScript_JP_082043F0 @ EventScript_JP_082043F0
 	specialvar_ 0x800D, 0x0039
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08204480

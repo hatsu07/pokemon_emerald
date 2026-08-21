@@ -118,47 +118,47 @@ gBattleWindowTemplates: @ 0x082EB9F8
 	.globl sBattleEnvironmentTable
 sBattleEnvironmentTable:
 	@ BATTLE_ENVIRONMENT_GRASS
-	.4byte 0x08D77E0C @ gBattleEnvironmentTiles_TallGrass
-	.4byte 0x08D783F4 @ gBattleEnvironmentTilemap_TallGrass
-	.4byte 0x08D7E324 @ gBattleEnvironmentAnimTiles_TallGrass
-	.4byte 0x08D7E8AC @ gBattleEnvironmentAnimTilemap_TallGrass
-	.4byte 0x08D783BC @ gBattleEnvironmentPalette_TallGrass
+	.4byte gLz77Asset_08D77E0C @ gBattleEnvironmentTiles_TallGrass
+	.4byte gLz77Asset_08D783F4 @ gBattleEnvironmentTilemap_TallGrass
+	.4byte gLz77Asset_08D7E324 @ gBattleEnvironmentAnimTiles_TallGrass
+	.4byte gLz77Asset_08D7E8AC @ gBattleEnvironmentAnimTilemap_TallGrass
+	.4byte gLz77Asset_08D783BC @ gBattleEnvironmentPalette_TallGrass
 	@ BATTLE_ENVIRONMENT_LONG_GRASS
-	.4byte 0x08D786A4 @ gBattleEnvironmentTiles_LongGrass
-	.4byte 0x08D78D5C @ gBattleEnvironmentTilemap_LongGrass
-	.4byte 0x08D7EA68 @ gBattleEnvironmentAnimTiles_LongGrass
-	.4byte 0x08D7F178 @ gBattleEnvironmentAnimTilemap_LongGrass
-	.4byte 0x08D78D1C @ gBattleEnvironmentPalette_LongGrass
+	.4byte gLz77Asset_08D786A4 @ gBattleEnvironmentTiles_LongGrass
+	.4byte gLz77Asset_08D78D5C @ gBattleEnvironmentTilemap_LongGrass
+	.4byte gLz77Asset_08D7EA68 @ gBattleEnvironmentAnimTiles_LongGrass
+	.4byte gLz77Asset_08D7F178 @ gBattleEnvironmentAnimTilemap_LongGrass
+	.4byte gLz77Asset_08D78D1C @ gBattleEnvironmentPalette_LongGrass
 	@ BATTLE_ENVIRONMENT_SAND
-	.4byte 0x08D7900C @ gBattleEnvironmentTiles_Sand
-	.4byte 0x08D7964C @ gBattleEnvironmentTilemap_Sand
-	.4byte 0x08D7F3B0 @ gBattleEnvironmentAnimTiles_Sand
-	.4byte 0x08D7F8F4 @ gBattleEnvironmentAnimTilemap_Sand
-	.4byte 0x08D79604 @ gBattleEnvironmentPalette_Sand
+	.4byte gLz77Asset_08D7900C @ gBattleEnvironmentTiles_Sand
+	.4byte gLz77Asset_08D7964C @ gBattleEnvironmentTilemap_Sand
+	.4byte gLz77Asset_08D7F3B0 @ gBattleEnvironmentAnimTiles_Sand
+	.4byte gLz77Asset_08D7F8F4 @ gBattleEnvironmentAnimTilemap_Sand
+	.4byte gLz77Asset_08D79604 @ gBattleEnvironmentPalette_Sand
 	@ BATTLE_ENVIRONMENT_UNDERWATER
-	.4byte 0x08D798FC @ gBattleEnvironmentTiles_Underwater
-	.4byte 0x08D79EFC @ gBattleEnvironmentTilemap_Underwater
+	.4byte gLz77Asset_08D798FC @ gBattleEnvironmentTiles_Underwater
+	.4byte gLz77Asset_08D79EFC @ gBattleEnvironmentTilemap_Underwater
 	.4byte gBattleEnvironmentAnimTiles_Underwater @ gBattleEnvironmentAnimTiles_Underwater
 	.4byte gBattleEnvironmentAnimTilemap_Underwater @ gBattleEnvironmentAnimTilemap_Underwater
 	.4byte gBattleEnvironmentPalette_Underwater
 	@ BATTLE_ENVIRONMENT_WATER
 	.4byte gBattleEnvironmentTiles_Water @ gBattleEnvironmentTiles_Water
 	.4byte gBattleEnvironmentTilemap_Water @ gBattleEnvironmentTilemap_Water
-	.4byte 0x08D800F8 @ gBattleEnvironmentAnimTiles_Water
-	.4byte 0x08D80704 @ gBattleEnvironmentAnimTilemap_Water
-	.4byte 0x08D7A780 @ gBattleEnvironmentPalette_Water
+	.4byte gLz77Asset_08D800F8 @ gBattleEnvironmentAnimTiles_Water
+	.4byte gLz77Asset_08D80704 @ gBattleEnvironmentAnimTilemap_Water
+	.4byte gLz77Asset_08D7A780 @ gBattleEnvironmentPalette_Water
 	@ BATTLE_ENVIRONMENT_POND
-	.4byte 0x08D7AA74 @ gBattleEnvironmentTiles_PondWater
-	.4byte 0x08D7B05C @ gBattleEnvironmentTilemap_PondWater
-	.4byte 0x08D808A8 @ gBattleEnvironmentAnimTiles_PondWater
-	.4byte 0x08D80DF4 @ gBattleEnvironmentAnimTilemap_PondWater
-	.4byte 0x08D7B01C @ gBattleEnvironmentPalette_PondWater
+	.4byte gLz77Asset_08D7AA74 @ gBattleEnvironmentTiles_PondWater
+	.4byte gLz77Asset_08D7B05C @ gBattleEnvironmentTilemap_PondWater
+	.4byte gLz77Asset_08D808A8 @ gBattleEnvironmentAnimTiles_PondWater
+	.4byte gLz77Asset_08D80DF4 @ gBattleEnvironmentAnimTilemap_PondWater
+	.4byte gLz77Asset_08D7B01C @ gBattleEnvironmentPalette_PondWater
 	@ BATTLE_ENVIRONMENT_MOUNTAIN
-	.4byte 0x08D7B30C @ gBattleEnvironmentTiles_Rock
-	.4byte 0x08D7B908 @ gBattleEnvironmentTilemap_Rock
-	.4byte 0x08D80F40 @ gBattleEnvironmentAnimTiles_Rock
-	.4byte 0x08D81520 @ gBattleEnvironmentAnimTilemap_Rock
-	.4byte 0x08D7B8CC @ gBattleEnvironmentPalette_Rock
+	.4byte gLz77Asset_08D7B30C @ gBattleEnvironmentTiles_Rock
+	.4byte gLz77Asset_08D7B908 @ gBattleEnvironmentTilemap_Rock
+	.4byte gLz77Asset_08D80F40 @ gBattleEnvironmentAnimTiles_Rock
+	.4byte gLz77Asset_08D81520 @ gBattleEnvironmentAnimTilemap_Rock
+	.4byte gLz77Asset_08D7B8CC @ gBattleEnvironmentPalette_Rock
 	@ BATTLE_ENVIRONMENT_CAVE
 	.4byte gBattleEnvironmentTiles_Cave @ gBattleEnvironmentTiles_Cave
 	.4byte gBattleEnvironmentTilemap_Cave @ gBattleEnvironmentTilemap_Cave
@@ -170,10 +170,10 @@ sBattleEnvironmentTable:
 	.4byte gBattleEnvironmentTilemap_Building @ gBattleEnvironmentTilemap_Building
 	.4byte gBattleEnvironmentAnimTiles_Building @ gBattleEnvironmentAnimTiles_Building
 	.4byte gBattleEnvironmentAnimTilemap_Building @ gBattleEnvironmentAnimTilemap_Building
-	.4byte 0x08D7DF58 @ gBattleEnvironmentPalette_Building
+	.4byte gLz77Asset_08D7DF58 @ gBattleEnvironmentPalette_Building
 	@ BATTLE_ENVIRONMENT_PLAIN
 	.4byte gBattleEnvironmentTiles_Building @ gBattleEnvironmentTiles_Building
 	.4byte gBattleEnvironmentTilemap_Building @ gBattleEnvironmentTilemap_Building
 	.4byte gBattleEnvironmentAnimTiles_Building @ gBattleEnvironmentAnimTiles_Building
 	.4byte gBattleEnvironmentAnimTilemap_Building @ gBattleEnvironmentAnimTilemap_Building
-	.4byte 0x08D7C4A8 @ gBattleEnvironmentPalette_Plain
+	.4byte gLz77Asset_08D7C4A8 @ gBattleEnvironmentPalette_Plain

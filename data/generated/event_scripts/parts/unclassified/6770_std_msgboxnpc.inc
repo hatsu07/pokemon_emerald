@@ -1340,7 +1340,7 @@ RusturfTunnel_EventScript_RemoveObstacles_08243299:
 	@ applymovement 0x00FF, 0x082432D1 @ 0x082432C3
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x082432D1
+	.4byte RusturfTunnel_Movement_082432D1
 	@ waitmovement 0x0000 @ 0x082432CA
 	.byte 0x51
 	.2byte 0x0000

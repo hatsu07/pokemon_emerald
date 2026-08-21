@@ -108,7 +108,7 @@ EventScript_JP_0820E301: @ 0x0820E301
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte 0x0820E31A @ Movement_JP_0820E31A
+	.4byte Movement_JP_0820E31A @ Movement_JP_0820E31A
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -132,7 +132,7 @@ EventScript_JP_0820E31C: @ 0x0820E31C
 	.2byte 0x0000
 	.4byte gText_Rom_20E56E @ gText_Rom_20E56E
 	.4byte gText_Rom_20E65F @ gText_Rom_20E65F
-	.4byte 0x0820E35A @ EventScript_JP_0820E35A
+	.4byte EventScript_JP_0820E35A @ EventScript_JP_0820E35A
 	specialvar_ 0x800D, 0x0039
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820E3FD
