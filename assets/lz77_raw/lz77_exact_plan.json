@@ -26964,7 +26964,7 @@
         "tail": ""
       },
       "source_block_address": "0x0830C794",
-      "source_file": "data/generated/rodata/menus/0524-0525_menus_data.inc"
+      "source_file": "data/generated/rodata/menus/modules/trade/0524-0525_trade_data.inc"
     },
     "08537DB4": {
       "address": "0x08537DB4",
@@ -87422,7 +87422,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/6782_menus_data.inc"
+      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E3610": {
       "address": "0x085E3610",
@@ -87883,7 +87883,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/6782_menus_data.inc"
+      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E3990": {
       "address": "0x085E3990",
@@ -91620,7 +91620,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/6782_menus_data.inc"
+      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E4494": {
       "address": "0x085E4494",
@@ -92049,7 +92049,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/6782_menus_data.inc"
+      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E47D0": {
       "address": "0x085E47D0",
@@ -95054,7 +95054,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/6782_menus_data.inc"
+      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E50D8": {
       "address": "0x085E50D8",
@@ -95547,7 +95547,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/6782_menus_data.inc"
+      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E539C": {
       "address": "0x085E539C",
@@ -98308,7 +98308,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/6782_menus_data.inc"
+      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E5BCC": {
       "address": "0x085E5BCC",
@@ -98801,7 +98801,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/6782_menus_data.inc"
+      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E5E68": {
       "address": "0x085E5E68",
@@ -101742,7 +101742,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/6782_menus_data.inc"
+      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E674C": {
       "address": "0x085E674C",
@@ -102223,7 +102223,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/6782_menus_data.inc"
+      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E69E8": {
       "address": "0x085E69E8",
@@ -104784,7 +104784,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/6782_menus_data.inc"
+      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085E707C": {
       "address": "0x085E707C",
@@ -105245,7 +105245,7 @@
         "tail": ""
       },
       "source_block_address": "0x085E19E0",
-      "source_file": "data/generated/rodata/menus/6782_menus_data.inc"
+      "source_file": "data/generated/rodata/menus/modules/unk_text_util_2/6782_unk_text_util_2_data.inc"
     },
     "085EFC2C": {
       "address": "0x085EFC2C",
