@@ -1391,6 +1391,7 @@
 	.include "data/generated/rodata/contests/6143_contests_definitions.inc"
 	.include "data/generated/rodata/contests/modules/strings/6144-6154_strings_data.inc"
 	.include "data/generated/rodata/contests/6155_contests_data.inc"
+	.include "data/battle_interface/nickname_healthbox_data.inc"
 	.include "data/generated/rodata/battle/modules/battle_interface/6156_rom_5_cc4_ee_text.inc"
 	.include "data/generated/rodata/battle/6157_battle_definitions.inc"
 	.include "data/generated/rodata/battle/modules/strings/6158-6178_strings_data.inc"
