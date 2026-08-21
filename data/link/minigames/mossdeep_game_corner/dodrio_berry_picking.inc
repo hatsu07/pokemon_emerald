@@ -573,11 +573,11 @@ sDodrioBerryPickingNameWindowCoords5Players: @ 0x082CEC40
 	.globl sDodrioBerryPickingNameWindowCoords
 sDodrioBerryPickingNameWindowCoords: @ 0x082CEC54
 	@ canonical role: canonical sNameWindowCoords
-	.4byte 0x082CEC18 @ +0x0
-	.4byte 0x082CEC1C @ +0x4
-	.4byte 0x082CEC24 @ +0x8
-	.4byte 0x082CEC30 @ +0xC
-	.4byte 0x082CEC40 @ +0x10
+	.4byte sDodrioBerryPickingNameWindowCoords1Player @ +0x0
+	.4byte sDodrioBerryPickingNameWindowCoords2Players @ +0x4
+	.4byte sDodrioBerryPickingNameWindowCoords3Players @ +0x8
+	.4byte sDodrioBerryPickingNameWindowCoords4Players @ +0xC
+	.4byte sDodrioBerryPickingNameWindowCoords5Players @ +0x10
 	.globl sDodrioBerryPickingRankingTexts
 sDodrioBerryPickingRankingTexts: @ 0x082CEC68
 	@ canonical role: canonical sRankingTexts
