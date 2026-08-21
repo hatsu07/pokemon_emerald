@@ -757,7 +757,7 @@ gBattleTransitionData_085A8918: @ 0x085A8918
 gBattleTransitionPokeballFieldEffectResources: @ 0x085A8918
 	@ pointer/nullable table
 	.4byte 0x1009FFFF @ +0x0
-	.4byte 0x084E1970 @ +0x4
+	.4byte sObjectEventOam_32x32 @ +0x4
 	.4byte 0x085A88EC @ +0x8
 	.4byte 0x085A88DC @ +0xC
 	.4byte 0x085A8910 @ +0x10
