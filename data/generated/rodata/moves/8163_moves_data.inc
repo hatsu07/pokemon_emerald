@@ -50,9 +50,9 @@ gIntroCloudsSun_Tilemap: @ 0x08D8B6CC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: 2 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
 	.incbin "build/graphics/intro/scene_3/clouds_sun_rom_exact.tilemap.lz"
-	.globl gLz77Asset_08D8B7F0
-gLz77Asset_08D8B7F0: @ 0x08D8B7F0
-	.incbin "build/assets/lz77_raw/08D8B7F0.bin.lz"
+	.globl gIntroLightning_Gfx
+gIntroLightning_Gfx: @ 0x08D8B7F0
+	.incbin "build/graphics/intro/scene_static/lightning_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0xE9, 0x56, 0xFF, 0x4B, 0x5F, 0x03, 0xF9, 0x1A, 0xFF, 0x7F, 0x2A, 0x25, 0xAE, 0x29
 	.byte 0x32, 0x32, 0xD6, 0x3A, 0x5A, 0x43, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00
@@ -102,23 +102,23 @@ gIntroRayquazaClouds_Tilemap: @ 0x08D8CCAC
 	@ ANALYSIS: 5 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
 	.incbin "build/graphics/intro/scene_3/rayquaza_clouds_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00
-	.globl gLz77Asset_08D8CF28
-gLz77Asset_08D8CF28: @ 0x08D8CF28
-	.incbin "build/assets/lz77_raw/08D8CF28.bin.lz"
+	.globl gIntroBubbles_Gfx
+gIntroBubbles_Gfx: @ 0x08D8CF28
+	.incbin "build/graphics/intro/scene_static/bubbles_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x4D, 0x32, 0xA0, 0x28, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0xB1, 0x7E, 0x4D, 0x6E, 0xEA, 0x5D, 0x86, 0x4D, 0x23, 0x3D, 0xC0, 0x30
 	.byte 0x16, 0x00
-	.globl gLz77Asset_08D8D114
-gLz77Asset_08D8D114: @ 0x08D8D114
-	.incbin "build/assets/lz77_raw/08D8D114.bin.lz"
+	.globl gIntroFlygonSilhouette_Gfx
+gIntroFlygonSilhouette_Gfx: @ 0x08D8D114
+	.incbin "build/graphics/intro/scene_static/flygon_silhouette_rom_exact.4bpp.lz"
 	.byte 0x00
-	.globl gLz77Asset_08D8D1EC
-gLz77Asset_08D8D1EC: @ 0x08D8D1EC
-	.incbin "build/assets/lz77_raw/08D8D1EC.bin.lz"
+	.globl gIntroSparkle_Gfx
+gIntroSparkle_Gfx: @ 0x08D8D1EC
+	.incbin "build/graphics/intro/scene_static/sparkle_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00
-	.globl gLz77Asset_08D8D288
-gLz77Asset_08D8D288: @ 0x08D8D288
-	.incbin "build/assets/lz77_raw/08D8D288.bin.lz"
+	.globl gBattleAnimSpriteGfx_FlyingDirt
+gBattleAnimSpriteGfx_FlyingDirt: @ 0x08D8D288
+	.incbin "build/graphics/battle_anims/sprites/flying_dirt_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08D8D3F4: rock.s: AnimTask_LoadSandstormBackground
 	.globl gRockData_08D8D3F4

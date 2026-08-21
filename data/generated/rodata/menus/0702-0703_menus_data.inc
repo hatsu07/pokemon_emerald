@@ -391,9 +391,7 @@ sFanfares: @ 0x084FCFC8
 	.globl gBattleAnimSpritePal_MudUnk
 	.globl gBattleAnimSpriteGfx_RainDrops
 .globl gBattleAnimSpriteGfx_FlyingDirt
-	.set gBattleAnimSpriteGfx_FlyingDirt, 0x08D8D288
 	.globl gBattleAnimSpritePal_FlyingDirt
-	.set gBattleAnimSpritePal_FlyingDirt, 0x08D8DA9C
 	.globl gBattleAnimSpriteGfx_MetalSoundWaves
 	.set gBattleAnimSpriteGfx_MetalSoundWaves, 0x08D8DAC4
 	.globl gBattleAnimSpritePal_MetalSoundWaves

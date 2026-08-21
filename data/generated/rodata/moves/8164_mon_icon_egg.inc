@@ -1,5 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x08D8DA9C: rock.s: AnimTask_LoadSandstormBackground
-sBattleAnimSpritePal_FlyingDirtData: @ 0x08D8DA9C
+	.globl gBattleAnimSpritePal_FlyingDirt
+gBattleAnimSpritePal_FlyingDirt: @ 0x08D8DA9C
 	@ confirmed GBA LZ77 stream: compressed=0x26, decompressed=0x20
 	@ analyzed canonical ROM range 0x08D8DA9C-0x08D8E97B
 	@ structured u8 payload; no safe higher-level semantic type was provable

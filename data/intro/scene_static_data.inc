@@ -11,7 +11,6 @@
 
 @ Semantic aliases for already-owned graphics/palette storage.
 .globl gIntroSparkle_Gfx
-.set gIntroSparkle_Gfx, gLz77Asset_08D8D1EC
 
 .globl gIntroLightning_Pal
 .set gIntroLightning_Pal, gIntroData_08D8BA58 - 0x20
@@ -26,7 +25,6 @@
 .set gIntroManectric_Pal, gIntroCreditsFlygonPalette - 0x20
 
 .globl gIntroLightning_Gfx
-.set gIntroLightning_Gfx, gLz77Asset_08D8B7F0
 
 sUnusedData: @ 0x085C5AEC
 	.byte 0x02, 0x03, 0x04, 0x05, 0x01, 0x01, 0x01, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x02, 0x0D
@@ -215,10 +213,9 @@ sSpriteTemplate_Lightning: @ 0x085C5D00
 @ ROM 0x085C5D18-0x085C5E77.
 
 .globl gIntroBubbles_Gfx
-.set gIntroBubbles_Gfx, gLz77Asset_08D8CF28
 
 .globl gIntroBubbles_Pal
-.set gIntroBubbles_Pal, gLz77Asset_08D8D114 - 0x20
+.set gIntroBubbles_Pal, gIntroFlygonSilhouette_Gfx - 0x20
 
 .globl sGroudonRockData
 sGroudonRockData: @ 0x085C5D18
@@ -527,7 +524,6 @@ sAffineAnims_GameFreak: @ 0x085C5FEC
 .set INTRO_TAG_RAYQUAZA_ORB,        2003
 
 .globl gIntroFlygonSilhouette_Gfx
-.set gIntroFlygonSilhouette_Gfx, gLz77Asset_08D8D114
 
 .globl sGameFreakLettersMoveSpeed
 sGameFreakLettersMoveSpeed: @ 0x085C5FFC

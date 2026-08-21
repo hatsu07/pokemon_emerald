@@ -185,6 +185,14 @@
       "source": "graphics/battle_anims/sprites/flying_dirt_palette.gbapal.u16",
       "semantic_role": "palette"
     },
+    "build/graphics/battle_anims/sprites/flying_dirt_rom_exact.4bpp.lz": {
+      "key": "08D8D288",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/flying_dirt.png",
+      "width": 32,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
     "build/graphics/battle_anims/backgrounds/muddy_water_palette_rom_exact.gbapal.lz": {
       "key": "08D8FB50",
       "source_kind": "u16_le_text",
@@ -703,6 +711,38 @@
       "source": "graphics/intro/scene_static/manectric.png",
       "width": 64,
       "height": 256,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/intro/scene_static/lightning_rom_exact.4bpp.lz": {
+      "key": "08D8B7F0",
+      "source_kind": "png",
+      "source": "graphics/intro/scene_static/lightning.png",
+      "width": 64,
+      "height": 96,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/intro/scene_static/bubbles_rom_exact.4bpp.lz": {
+      "key": "08D8CF28",
+      "source_kind": "png",
+      "source": "graphics/intro/scene_static/bubbles.png",
+      "width": 64,
+      "height": 48,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/intro/scene_static/flygon_silhouette_rom_exact.4bpp.lz": {
+      "key": "08D8D114",
+      "source_kind": "png",
+      "source": "graphics/intro/scene_static/flygon_silhouette.png",
+      "width": 64,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/intro/scene_static/sparkle_rom_exact.4bpp.lz": {
+      "key": "08D8D1EC",
+      "source_kind": "png",
+      "source": "graphics/intro/scene_static/sparkle.png",
+      "width": 64,
+      "height": 32,
       "semantic_role": "sprite_gfx"
     },
     "build/graphics/battle_interface/textbox_tilemap_rom_exact.tilemap.lz": {
