@@ -414,51 +414,28 @@ sFanfares: @ 0x084FCFC8
 	.globl gBattleAnimSpritePal_Protect
 	.globl gBattleAnimSpritePal_WhipHit
 	.globl gBattleAnimSpritePal_SlamHit2
-	.set gBattleAnimSpritePal_SlamHit2, 0x08D92E78
 	.globl gBattleAnimSpriteGfx_SlamHit2
-	.set gBattleAnimSpriteGfx_SlamHit2, 0x08D92EA0
 	.globl gBattleAnimSpritePal_WeatherBall
-	.set gBattleAnimSpritePal_WeatherBall, 0x08D9340C
 	.globl gBattleAnimSpriteGfx_WeatherBall
-	.set gBattleAnimSpriteGfx_WeatherBall, 0x08D93428
 	.globl gBattleAnimSpriteGfx_Hail
-	.set gBattleAnimSpriteGfx_Hail, 0x08D93AF8
 	.globl gBattleAnimSpritePal_Hail
-	.set gBattleAnimSpritePal_Hail, 0x08D93B38
 	.globl gBattleAnimSpriteGfx_GreenSpike
-	.set gBattleAnimSpriteGfx_GreenSpike, 0x08D93B50
 	.globl gBattleAnimSpritePal_GreenSpike
-	.set gBattleAnimSpritePal_GreenSpike, 0x08D93B90
 	.globl gBattleAnimSpritePal_WhiteCircleOfLight
-	.set gBattleAnimSpritePal_WhiteCircleOfLight, 0x08D93BA8
 	.globl gBattleAnimSpritePal_GlowyBlueOrb
-	.set gBattleAnimSpritePal_GlowyBlueOrb, 0x08D93BC0
 	.globl gBattleAnimSpriteGfx_Recycle
-	.set gBattleAnimSpriteGfx_Recycle, 0x08D93BD8
 	.globl gBattleAnimSpritePal_Recycle
-	.set gBattleAnimSpritePal_Recycle, 0x08D93DE4
 	.globl gBattleAnimSpriteGfx_RedParticles
-	.set gBattleAnimSpriteGfx_RedParticles, 0x08D93E00
 	.globl gBattleAnimSpritePal_RedParticles
-	.set gBattleAnimSpritePal_RedParticles, 0x08D93E4C
 	.globl gBattleAnimSpriteGfx_DirtMound
-	.set gBattleAnimSpriteGfx_DirtMound, 0x08D93E68
 	.globl gBattleAnimSpritePal_DirtMound
-	.set gBattleAnimSpritePal_DirtMound, 0x08D93FF0
 	.globl gBattleAnimSpriteGfx_Bird
-	.set gBattleAnimSpriteGfx_Bird, 0x08D9460C
 	.globl gBattleAnimSpritePal_Bird
-	.set gBattleAnimSpritePal_Bird, 0x08D94988
 	.globl gBattleAnimSpriteGfx_CrossImpact
-	.set gBattleAnimSpriteGfx_CrossImpact, 0x08D949A4
 	.globl gBattleAnimSpritePal_CrossImpact
-	.set gBattleAnimSpritePal_CrossImpact, 0x08D94A44
 	.globl gBattleAnimSpritePal_Slash2
-	.set gBattleAnimSpritePal_Slash2, 0x08D9664C
 	.globl gBattleAnimSpriteGfx_WhiteShadow
-	.set gBattleAnimSpriteGfx_WhiteShadow, 0x08D96674
 	.globl gBattleAnimSpritePal_WhiteShadow
-	.set gBattleAnimSpritePal_WhiteShadow, 0x08D96788
 	.globl gBattleAnimSpritePal_Shock3
 	.set gBattleAnimSpritePal_Shock3, 0x08DBA3F4
 	.globl gBattleAnimSpriteGfx_Shock3

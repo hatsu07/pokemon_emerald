@@ -1,9 +1,0 @@
-# Exact decompressed source for ROM LZ77 asset 0x08D92E78
-# Transitional raw source: semantic meaning/format is not implied by this file.
-# Keep this textual until the consumer proves a stronger PNG/palette/tilemap/data representation.
-# decompressed_size=32
-# decompressed_sha256=1c37863663e6d1e67c0f7d8e11c0269d387eb934e03269132cdad97496dcfed2
-# original_compressed_sha256=1d061e59d5e0c0a99e1c8a410fda8b07c1d7212650929ba95fde21b5295e4481
-
-00 00 FF 7F FF 67 FF 53 FF 3F FF 2B FF 17 1F 13
-5F 0E 9F 09 DF 04 1F 00 13 00 00 00 00 00 00 00

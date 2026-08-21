@@ -1026,6 +1026,164 @@
       "source_kind": "u16_le_text",
       "source": "graphics/battle_anims/backgrounds/fissure/tilemap.u16",
       "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/sprites/slam_hit_2_palette_rom_exact.gbapal.lz": {
+      "key": "08D92E78",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/slam_hit_2.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/slam_hit_2_rom_exact.4bpp.lz": {
+      "key": "08D92EA0",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/slam_hit_2.png",
+      "width": 128,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/weather_ball_palette_rom_exact.gbapal.lz": {
+      "key": "08D9340C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/weather_ball.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/weather_ball_rom_exact.4bpp.lz": {
+      "key": "08D93428",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/weather_ball.png",
+      "width": 32,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/hail_rom_exact.4bpp.lz": {
+      "key": "08D93AF8",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/hail.png",
+      "width": 16,
+      "height": 16,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/hail_palette_rom_exact.gbapal.lz": {
+      "key": "08D93B38",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/hail.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/green_spike_rom_exact.4bpp.lz": {
+      "key": "08D93B50",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/green_spike.png",
+      "width": 16,
+      "height": 16,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/green_spike_palette_rom_exact.gbapal.lz": {
+      "key": "08D93B90",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/green_spike.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/white_circle_of_light_palette_rom_exact.gbapal.lz": {
+      "key": "08D93BA8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/white_circle_of_light.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/glowy_blue_orb_palette_rom_exact.gbapal.lz": {
+      "key": "08D93BC0",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/glowy_blue_orb.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/recycle_rom_exact.4bpp.lz": {
+      "key": "08D93BD8",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/recycle.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/recycle_palette_rom_exact.gbapal.lz": {
+      "key": "08D93DE4",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/recycle.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/red_particles_rom_exact.4bpp.lz": {
+      "key": "08D93E00",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/red_particles.png",
+      "width": 40,
+      "height": 8,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/red_particles_palette_rom_exact.gbapal.lz": {
+      "key": "08D93E4C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/red_particles.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/dirt_mound_rom_exact.4bpp.lz": {
+      "key": "08D93E68",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/dirt_mound.png",
+      "width": 32,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/dirt_mound_palette_rom_exact.gbapal.lz": {
+      "key": "08D93FF0",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/dirt_mound.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/bird_rom_exact.4bpp.lz": {
+      "key": "08D9460C",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/bird.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/bird_palette_rom_exact.gbapal.lz": {
+      "key": "08D94988",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/bird.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/cross_impact_rom_exact.4bpp.lz": {
+      "key": "08D949A4",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/cross_impact.png",
+      "width": 32,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/cross_impact_palette_rom_exact.gbapal.lz": {
+      "key": "08D94A44",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/cross_impact.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/slash_2_palette_rom_exact.gbapal.lz": {
+      "key": "08D9664C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/slash_2.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/white_shadow_rom_exact.4bpp.lz": {
+      "key": "08D96674",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/white_shadow.png",
+      "width": 64,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/white_shadow_palette_rom_exact.gbapal.lz": {
+      "key": "08D96788",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/white_shadow.gbapal.u16",
+      "semantic_role": "palette"
     }
   }
 }
