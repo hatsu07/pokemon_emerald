@@ -345,8 +345,8 @@ gUnionRoomChatData_082C5DB4: @ 0x082C5DB4
 	@ pointer/nullable table
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
 	.4byte 0
-	.4byte 0x082C5D7C
-	.4byte 0x082C5DA4
+	.4byte gUnionRoomChatData_082C5D74 + 0x8
+	.4byte gUnionRoomChatData_082C5D74 + 0x30
 	.4byte 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
@@ -366,7 +366,7 @@ gUnionRoomChatData_082C5DEC: @ 0x082C5DEC
 	@ ANALYSIS: SPRITE_TEMPLATE_HEADER size=0x8 addr=0x082C5DEC tileTag=1 paletteTag=0 oam=0x082C5DCC
 	@ ANALYSIS: SOURCE_RANGE addr=0x082C5DEC size=0x8
 	.2byte 1, 0 @ tileTag, paletteTag
-	.4byte 0x082C5DCC @ OamData pointer preserved numeric
+	.4byte gUnionRoomChatData_082C5DB4 + 0x18 @ OamData pointer preserved numeric
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5DF4 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
 	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x082C5DF8 parent=gUnionRoomChatData_082C5DEC offset=0xC
@@ -391,7 +391,7 @@ gUnionRoomChatData_082C5DEC: @ 0x082C5DEC
 	@ ANALYSIS: ANIM_CMD_SEQUENCE size=0x8 addr=0x082C5E2C role=Register
 	.2byte 0x0018, 0x0002, 0xFFFF, 0x0000
 	@ ANALYSIS: ANIM_POINTER_TABLE size=0x10 addr=0x082C5E34 entries=4
-	.4byte 0x082C5E14, 0x082C5E1C, 0x082C5E24, 0x082C5E2C
+	.4byte gUnionRoomChatData_082C5DEC + 0x28, gUnionRoomChatData_082C5DEC + 0x30, gUnionRoomChatData_082C5DEC + 0x38, gUnionRoomChatData_082C5DEC + 0x40
 	@ pret/pokeemerald-jp direct xref for 0x082C5E44: union_room_chat.s: sub_08020838
 	.globl gUnionRoomChatData_082C5E44
 gUnionRoomChatData_082C5E44: @ 0x082C5E44

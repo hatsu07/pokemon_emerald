@@ -207,14 +207,14 @@ gCableCarData_085AC9A4: @ 0x085AC9A4
 	@ analyzed canonical ROM range 0x085AC9A4-0x085AC9D3
 	@ pointer/nullable table
 	.4byte 0x00010001 @ +0x0
-	.4byte 0x085AC98C @ +0x4
+	.4byte gCableCarData_085AC97C + 0x10 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_08150844 @ +0x14
 	.4byte 0x00010002 @ +0x18
-	.4byte 0x085AC994 @ +0x1C
+	.4byte gCableCarData_085AC97C + 0x18 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0

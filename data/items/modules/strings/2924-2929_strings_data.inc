@@ -432,29 +432,29 @@ gRouletteData_085970BC: @ 0x085970BC
 	@ pointer/nullable table
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080004 @ +0x0
-	.4byte 0x08596FA0 @ +0x4
-	.4byte 0x08597090 @ +0x8
+	.4byte gRouletteData_08596F38 + 0x68 @ +0x4
+	.4byte gRouletteData_08597044 + 0x4C @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_081439D8 @ +0x14
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080004 @ +0x18
-	.4byte 0x08596FA0 @ +0x1C
-	.4byte 0x08597094 @ +0x20
+	.4byte gRouletteData_08596F38 + 0x68 @ +0x1C
+	.4byte gRouletteData_08597044 + 0x50 @ +0x20
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte sub_081439D8 @ +0x2C
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080004 @ +0x30
-	.4byte 0x08596FA0 @ +0x34
-	.4byte 0x08597098 @ +0x38
+	.4byte gRouletteData_08596F38 + 0x68 @ +0x34
+	.4byte gRouletteData_08597044 + 0x54 @ +0x38
 	.4byte 0 @ +0x3C
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte sub_081439D8 @ +0x44
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080004 @ +0x48
-	.4byte 0x08596FA0 @ +0x4C
-	.4byte 0x0859709C @ +0x50
+	.4byte gRouletteData_08596F38 + 0x68 @ +0x4C
+	.4byte gRouletteData_08597044 + 0x58 @ +0x50
 	.4byte 0 @ +0x54
 	.4byte gDummySpriteAffineAnimTable @ +0x58
 	.4byte sub_081439D8 @ +0x5C
@@ -465,22 +465,22 @@ gRouletteData_0859711C: @ 0x0859711C
 	@ pointer/nullable table
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080004 @ +0x0
-	.4byte 0x08596FA0 @ +0x4
-	.4byte 0x085970A0 @ +0x8
+	.4byte gRouletteData_08596F38 + 0x68 @ +0x4
+	.4byte gRouletteData_08597044 + 0x5C @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_081439D8 @ +0x14
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080004 @ +0x18
-	.4byte 0x08596FA0 @ +0x1C
-	.4byte 0x085970A4 @ +0x20
+	.4byte gRouletteData_08596F38 + 0x68 @ +0x1C
+	.4byte gRouletteData_08597044 + 0x60 @ +0x20
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte sub_081439D8 @ +0x2C
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080004 @ +0x30
-	.4byte 0x08596FA0 @ +0x34
-	.4byte 0x085970A8 @ +0x38
+	.4byte gRouletteData_08596F38 + 0x68 @ +0x34
+	.4byte gRouletteData_08597044 + 0x64 @ +0x38
 	.4byte 0 @ +0x3C
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte sub_081439D8 @ +0x44
@@ -491,29 +491,29 @@ gRouletteData_08597164: @ 0x08597164
 	@ pointer/nullable table
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080005 @ +0x0
-	.4byte 0x08596FA8 @ +0x4
-	.4byte 0x085970AC @ +0x8
+	.4byte gRouletteData_08596F38 + 0x70 @ +0x4
+	.4byte gRouletteData_08597044 + 0x68 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_081439D8 @ +0x14
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080005 @ +0x18
-	.4byte 0x08596FA8 @ +0x1C
-	.4byte 0x085970B0 @ +0x20
+	.4byte gRouletteData_08596F38 + 0x70 @ +0x1C
+	.4byte gRouletteData_08597044 + 0x6C @ +0x20
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte sub_081439D8 @ +0x2C
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080005 @ +0x30
-	.4byte 0x08596FA8 @ +0x34
-	.4byte 0x085970B4 @ +0x38
+	.4byte gRouletteData_08596F38 + 0x70 @ +0x34
+	.4byte gRouletteData_08597044 + 0x70 @ +0x38
 	.4byte 0 @ +0x3C
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte sub_081439D8 @ +0x44
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00080005 @ +0x48
-	.4byte 0x08596FA8 @ +0x4C
-	.4byte 0x085970B8 @ +0x50
+	.4byte gRouletteData_08596F38 + 0x70 @ +0x4C
+	.4byte gRouletteData_08597044 + 0x74 @ +0x50
 	.4byte 0 @ +0x54
 	.4byte gDummySpriteAffineAnimTable @ +0x58
 	.4byte sub_081439D8 @ +0x5C
@@ -524,85 +524,85 @@ gRouletteData_085971C4: @ 0x085971C4
 	@ pointer/nullable table
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00090000 @ +0x0
-	.4byte 0x08596FB0 @ +0x4
-	.4byte 0x0859700C @ +0x8
+	.4byte gRouletteData_08596F38 + 0x78 @ +0x4
+	.4byte gRouletteData_08596FD0 + 0x3C @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte sub_0814334C @ +0x14
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000A0000 @ +0x18
-	.4byte 0x08596FB0 @ +0x1C
-	.4byte 0x08597010 @ +0x20
+	.4byte gRouletteData_08596F38 + 0x78 @ +0x1C
+	.4byte gRouletteData_08596FD0 + 0x40 @ +0x20
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte sub_0814334C @ +0x2C
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000B0000 @ +0x30
-	.4byte 0x08596FB0 @ +0x34
-	.4byte 0x08597014 @ +0x38
+	.4byte gRouletteData_08596F38 + 0x78 @ +0x34
+	.4byte gRouletteData_08596FD0 + 0x44 @ +0x38
 	.4byte 0 @ +0x3C
 	.4byte gDummySpriteAffineAnimTable @ +0x40
 	.4byte sub_0814334C @ +0x44
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000C0000 @ +0x48
-	.4byte 0x08596FB0 @ +0x4C
-	.4byte 0x08597018 @ +0x50
+	.4byte gRouletteData_08596F38 + 0x78 @ +0x4C
+	.4byte gRouletteData_08596FD0 + 0x48 @ +0x50
 	.4byte 0 @ +0x54
 	.4byte gDummySpriteAffineAnimTable @ +0x58
 	.4byte sub_0814334C @ +0x5C
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00090000 @ +0x60
-	.4byte 0x08596FB0 @ +0x64
-	.4byte 0x0859701C @ +0x68
+	.4byte gRouletteData_08596F38 + 0x78 @ +0x64
+	.4byte gRouletteData_08596FD0 + 0x4C @ +0x68
 	.4byte 0 @ +0x6C
 	.4byte gDummySpriteAffineAnimTable @ +0x70
 	.4byte sub_0814334C @ +0x74
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000A0000 @ +0x78
-	.4byte 0x08596FB0 @ +0x7C
-	.4byte 0x08597020 @ +0x80
+	.4byte gRouletteData_08596F38 + 0x78 @ +0x7C
+	.4byte gRouletteData_08596FD0 + 0x50 @ +0x80
 	.4byte 0 @ +0x84
 	.4byte gDummySpriteAffineAnimTable @ +0x88
 	.4byte sub_0814334C @ +0x8C
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000B0000 @ +0x90
-	.4byte 0x08596FB0 @ +0x94
-	.4byte 0x08597024 @ +0x98
+	.4byte gRouletteData_08596F38 + 0x78 @ +0x94
+	.4byte gRouletteData_08596FD0 + 0x54 @ +0x98
 	.4byte 0 @ +0x9C
 	.4byte gDummySpriteAffineAnimTable @ +0xA0
 	.4byte sub_0814334C @ +0xA4
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000C0000 @ +0xA8
-	.4byte 0x08596FB0 @ +0xAC
-	.4byte 0x08597028 @ +0xB0
+	.4byte gRouletteData_08596F38 + 0x78 @ +0xAC
+	.4byte gRouletteData_08596FD0 + 0x58 @ +0xB0
 	.4byte 0 @ +0xB4
 	.4byte gDummySpriteAffineAnimTable @ +0xB8
 	.4byte sub_0814334C @ +0xBC
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x00090000 @ +0xC0
-	.4byte 0x08596FB0 @ +0xC4
-	.4byte 0x0859702C @ +0xC8
+	.4byte gRouletteData_08596F38 + 0x78 @ +0xC4
+	.4byte gRouletteData_08596FD0 + 0x5C @ +0xC8
 	.4byte 0 @ +0xCC
 	.4byte gDummySpriteAffineAnimTable @ +0xD0
 	.4byte sub_0814334C @ +0xD4
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000A0000 @ +0xD8
-	.4byte 0x08596FB0 @ +0xDC
-	.4byte 0x08597030 @ +0xE0
+	.4byte gRouletteData_08596F38 + 0x78 @ +0xDC
+	.4byte gRouletteData_08596FD0 + 0x60 @ +0xE0
 	.4byte 0 @ +0xE4
 	.4byte gDummySpriteAffineAnimTable @ +0xE8
 	.4byte sub_0814334C @ +0xEC
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000B0000 @ +0xF0
-	.4byte 0x08596FB0 @ +0xF4
-	.4byte 0x08597034 @ +0xF8
+	.4byte gRouletteData_08596F38 + 0x78 @ +0xF4
+	.4byte gRouletteData_08596FD0 + 0x64 @ +0xF8
 	.4byte 0 @ +0xFC
 	.4byte gDummySpriteAffineAnimTable @ +0x100
 	.4byte sub_0814334C @ +0x104
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x000C0000 @ +0x108
-	.4byte 0x08596FB0 @ +0x10C
-	.4byte 0x08597038 @ +0x110
+	.4byte gRouletteData_08596F38 + 0x78 @ +0x10C
+	.4byte gRouletteData_08596FD0 + 0x68 @ +0x110
 	.4byte 0 @ +0x114
 	.4byte gDummySpriteAffineAnimTable @ +0x118
 	.4byte sub_0814334C @ +0x11C
@@ -721,7 +721,7 @@ gRouletteData_085973F8: @ 0x085973F8
 	@ analyzed canonical ROM range 0x085973F8-0x08597417
 	@ pointer/nullable table
 	.4byte 0x0005000B @ +0x0
-	.4byte 0x08596FA0 @ +0x4
+	.4byte gRouletteData_08596F38 + 0x68 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
@@ -755,8 +755,8 @@ gRouletteData_085974DC: @ 0x085974DC
 	@ pointer/nullable table
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x0002000C @ +0x0
-	.4byte 0x08597410 @ +0x4
-	.4byte 0x085974B8 @ +0x8
+	.4byte gRouletteData_085973F8 + 0x18 @ +0x4
+	.4byte gRouletteData_08597418 + 0xA0 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
@@ -781,7 +781,7 @@ gRouletteData_08597504: @ 0x08597504
 	.globl gRouletteWheelCenterSpriteTemplate
 gRouletteWheelCenterSpriteTemplate:
 	.2byte 0x0006, 0x0002 @ +0x0
-	.4byte 0x085974F4 @ +0x4 ROM pointer; numeric preserved
+	.4byte gRouletteData_085974DC + 0x18 @ +0x4 ROM pointer; numeric preserved
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0859750C size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAnimTable
 	.4byte 0 @ images = NULL
@@ -846,15 +846,15 @@ gRouletteData_08597670: @ 0x08597670
 	@ pointer/nullable table
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x0001000E @ +0x0
-	.4byte 0x085975DC @ +0x4
-	.4byte 0x08597668 @ +0x8
+	.4byte gRouletteData_085975C4 + 0x18 @ +0x4
+	.4byte gRouletteData_085975F4 + 0x74 @ +0x8
 	.4byte 0 @ +0xC
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x0001000E @ +0x18
-	.4byte 0x085975E4 @ +0x1C
-	.4byte 0x0859766C @ +0x20
+	.4byte gRouletteData_085975C4 + 0x20 @ +0x1C
+	.4byte gRouletteData_085975F4 + 0x78 @ +0x20
 	.4byte 0 @ +0x24
 	.4byte gDummySpriteAffineAnimTable @ +0x28
 	.4byte SpriteCB_Shroomish @ +0x2C

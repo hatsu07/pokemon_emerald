@@ -397,8 +397,8 @@ gNewGameBirchSpriteTemplate:
 	.2byte 0xFFFF, 0x1006 @ +0x0
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08536EF4 size=0x4 source=v54_multi_pointer
 	.4byte gFieldEffectData_08536EBC
-	.4byte 0x08536EEC @ anims; JP-local pointer preserved
-	.4byte 0x08536ED4 @ images; JP-local pointer preserved
+	.4byte gFieldEffectData_08536EDC + 0x10 @ anims; JP-local pointer preserved
+	.4byte gFieldEffectData_08536EBC + 0x18 @ images; JP-local pointer preserved
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08536F00 size=0x4 source=v54_multi_pointer
 	.4byte gDummySpriteAffineAnimTable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08536F04 size=0x4 source=v54_multi_pointer

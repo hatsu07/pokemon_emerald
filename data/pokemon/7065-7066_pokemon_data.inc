@@ -718,7 +718,7 @@ gPokenavMatchCallUiData_085F15E0: @ 0x085F15E0
 	@ analyzed canonical ROM range 0x085F15E0-0x085F15FF
 	@ pointer/nullable table
 	.4byte 0x0014000A @ +0x0
-	.4byte 0x085F15D8 @ +0x4
+	.4byte gPokenavMatchCallUiData_085F15C8 + 0x10 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0

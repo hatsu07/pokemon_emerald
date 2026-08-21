@@ -300,7 +300,7 @@ sRegionMapCursorAnimTable: @ 0x0857D4E8
 
 	.globl sRegionMapCursorSpritePalette
 sRegionMapCursorSpritePalette: @ 0x0857D4F0
-	.4byte 0x0857B1BC
+	.4byte gHealLocationData_0857B10C + 0xB0
 	.2byte 0x0000
 	.2byte 0x0000
 

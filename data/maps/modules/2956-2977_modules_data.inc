@@ -117,7 +117,7 @@ sLandmarkInfoPadding_085989BF: @ 0x085989BF
 sLandmarkInfo_085989C0: @ 0x085989C0
 	@ ANALYSIS: SEMANTIC_NUMERIC_LANDMARK
 	@ Region-map landmark metadata/lookup data.
-	.4byte 0x08598854
+	.4byte gPokedexCryScreenData_08598844 + 0x10
 	.2byte 0x089C
 	.2byte 0
 sLandmarkInfo_085989C8: @ 0x085989C8

@@ -238,8 +238,8 @@ gMirageTowerData_085E7FF0: @ 0x085E7FF0
 	@ pointer/nullable table
 	@ ANALYSIS: U32_TABLE size=0xC entries=3
 	.4byte 0xFFFF0FA0 @ +0x0
-	.4byte 0x085E7FE8 @ +0x4
-	.4byte 0x085E7FE4 @ +0x8
+	.4byte gMirageTowerData_085E7FD4 + 0x14 @ +0x4
+	.4byte gMirageTowerData_085E7FD4 + 0x10 @ +0x8
 	@ pret/pokeemerald-jp direct xref for 0x085E7FFC: menu_specialized.s: MoveRelearnerMenuLoadContestMoveDescription; pokemon_summary_screen.s: PrintMoveDetails
 	.globl gMenuPointerTable_Rom_5E7FFC
 gMenuPointerTable_Rom_5E7FFC: @ 0x085E7FFC

@@ -90,9 +90,9 @@ gCreditsData_085C79BC: @ 0x085C79BC
 	@ analyzed canonical ROM range 0x085C79BC-0x085C79C7
 	@ pointer/nullable table
 	@ ANALYSIS: POINTER_TABLE entries=3 size=0xC
-	.4byte 0x085C798C
-	.4byte 0x085C79A0
-	.4byte 0x085C79B4
+	.4byte gCreditsData_085C797C + 0x10
+	.4byte gCreditsData_085C797C + 0x24
+	.4byte gCreditsData_085C797C + 0x38
 	@ pret/pokeemerald-jp direct xref for 0x085C79C8: credits.s: sub_081757EC
 	.globl gCreditsData_085C79C8
 gCreditsData_085C79C8: @ 0x085C79C8

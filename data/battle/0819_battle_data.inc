@@ -39,35 +39,35 @@ gContestData_08562910: @ 0x08562910
 	@ pointer/nullable table
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x80E880E8 @ +0x0
-	.4byte 0x085628C8 @ +0x4
+	.4byte gContestData_085628A8 + 0x20 @ +0x4
 	.4byte gDummySpriteAnimTable @ +0x8
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0 @ +0xC
-	.4byte 0x08562908 @ +0x10
+	.4byte gContestData_085628A8 + 0x60 @ +0x10
 	.4byte SpriteCallbackDummy @ +0x14
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x80E980E9 @ +0x18
-	.4byte 0x085628C8 @ +0x1C
+	.4byte gContestData_085628A8 + 0x20 @ +0x1C
 	.4byte gDummySpriteAnimTable @ +0x20
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0 @ +0x24
-	.4byte 0x08562908 @ +0x28
+	.4byte gContestData_085628A8 + 0x60 @ +0x28
 	.4byte SpriteCallbackDummy @ +0x2C
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x80EA80EA @ +0x30
-	.4byte 0x085628C8 @ +0x34
+	.4byte gContestData_085628A8 + 0x20 @ +0x34
 	.4byte gDummySpriteAnimTable @ +0x38
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0 @ +0x3C
-	.4byte 0x08562908 @ +0x40
+	.4byte gContestData_085628A8 + 0x60 @ +0x40
 	.4byte SpriteCallbackDummy @ +0x44
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x80EB80EB @ +0x48
-	.4byte 0x085628C8 @ +0x4C
+	.4byte gContestData_085628A8 + 0x20 @ +0x4C
 	.4byte gDummySpriteAnimTable @ +0x50
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0 @ +0x54
-	.4byte 0x08562908 @ +0x58
+	.4byte gContestData_085628A8 + 0x60 @ +0x58
 	.4byte SpriteCallbackDummy @ +0x5C
 	@ pret/pokeemerald-jp direct xref for 0x08562970: contest.s: Contest_GetMoveExcitement
 	.globl gContestData_08562970

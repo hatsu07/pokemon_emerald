@@ -10,7 +10,7 @@ sPointerTable_08551868:
 	@ structured 48-entry ROM pointer table
 	.4byte gLz77Asset_0854CC14
 	.4byte gLz77Asset_0854D098
-	.4byte 0x0854CBD4 @ entry 2
+	.4byte gPokemonStorageSystemData_0854CBCC + 0x8 @ entry 2
 	.4byte gLz77Asset_0854D1B8
 	.4byte gLz77Asset_0854D4D0
 	.4byte gLz77Asset_0854D098 + 0xE0 @ entry 5

@@ -23,16 +23,16 @@ gMonMarkingsData_0857AB00: @ 0x0857AB00
 sPointerTable_0857AB00:
 	@ analyzed canonical ROM range 0x0857AB00-0x0857AB37
 	@ pointer/nullable table
-	.4byte 0x0857AAB0 @ +0x0
-	.4byte 0x0857AAB8 @ +0x4
-	.4byte 0x0857AAC0 @ +0x8
-	.4byte 0x0857AAC8 @ +0xC
-	.4byte 0x0857AAD0 @ +0x10
-	.4byte 0x0857AAD8 @ +0x14
-	.4byte 0x0857AAE0 @ +0x18
-	.4byte 0x0857AAE8 @ +0x1C
-	.4byte 0x0857AAF0 @ +0x20
-	.4byte 0x0857AAF8 @ +0x24
+	.4byte gMonMarkingsData_0857AAA8 + 0x8 @ +0x0
+	.4byte gMonMarkingsData_0857AAA8 + 0x10 @ +0x4
+	.4byte gMonMarkingsData_0857AAA8 + 0x18 @ +0x8
+	.4byte gMonMarkingsData_0857AAA8 + 0x20 @ +0xC
+	.4byte gMonMarkingsData_0857AAA8 + 0x28 @ +0x10
+	.4byte gMonMarkingsData_0857AAA8 + 0x30 @ +0x14
+	.4byte gMonMarkingsData_0857AAA8 + 0x38 @ +0x18
+	.4byte gMonMarkingsData_0857AAA8 + 0x40 @ +0x1C
+	.4byte gMonMarkingsData_0857AAA8 + 0x48 @ +0x20
+	.4byte gMonMarkingsData_0857AAA8 + 0x50 @ +0x24
 	.4byte 0x00050000 @ +0x28
 	.4byte 0x0000FFFF @ +0x2C
 	.4byte 0x00050040 @ +0x30
@@ -67,22 +67,22 @@ gMonMarkingsData_0857ABC8: @ 0x0857ABC8
 sPointerTable_0857ABC8:
 	@ analyzed canonical ROM range 0x0857ABC8-0x0857AC07
 	@ pointer/nullable table
-	.4byte 0x0857AB48 @ +0x0
-	.4byte 0x0857AB50 @ +0x4
-	.4byte 0x0857AB58 @ +0x8
-	.4byte 0x0857AB60 @ +0xC
-	.4byte 0x0857AB68 @ +0x10
-	.4byte 0x0857AB70 @ +0x14
-	.4byte 0x0857AB78 @ +0x18
-	.4byte 0x0857AB80 @ +0x1C
-	.4byte 0x0857AB88 @ +0x20
-	.4byte 0x0857AB90 @ +0x24
-	.4byte 0x0857AB98 @ +0x28
-	.4byte 0x0857ABA0 @ +0x2C
-	.4byte 0x0857ABA8 @ +0x30
-	.4byte 0x0857ABB0 @ +0x34
-	.4byte 0x0857ABB8 @ +0x38
-	.4byte 0x0857ABC0 @ +0x3C
+	.4byte gMonMarkingsData_0857AB40 + 0x8 @ +0x0
+	.4byte gMonMarkingsData_0857AB40 + 0x10 @ +0x4
+	.4byte gMonMarkingsData_0857AB40 + 0x18 @ +0x8
+	.4byte gMonMarkingsData_0857AB40 + 0x20 @ +0xC
+	.4byte gMonMarkingsData_0857AB40 + 0x28 @ +0x10
+	.4byte gMonMarkingsData_0857AB40 + 0x30 @ +0x14
+	.4byte gMonMarkingsData_0857AB40 + 0x38 @ +0x18
+	.4byte gMonMarkingsData_0857AB40 + 0x40 @ +0x1C
+	.4byte gMonMarkingsData_0857AB40 + 0x48 @ +0x20
+	.4byte gMonMarkingsData_0857AB40 + 0x50 @ +0x24
+	.4byte gMonMarkingsData_0857AB40 + 0x58 @ +0x28
+	.4byte gMonMarkingsData_0857AB40 + 0x60 @ +0x2C
+	.4byte gMonMarkingsData_0857AB40 + 0x68 @ +0x30
+	.4byte gMonMarkingsData_0857AB40 + 0x70 @ +0x34
+	.4byte gMonMarkingsData_0857AB40 + 0x78 @ +0x38
+	.4byte gMonMarkingsData_0857AB40 + 0x80 @ +0x3C
 	@ pret/pokeemerald-jp direct xref for 0x0857AC08: mauville_old_man.s: SetupBard
 	.globl gMauvilleOldManData_0857AC08
 gMauvilleOldManData_0857AC08: @ 0x0857AC08
@@ -389,8 +389,8 @@ gMenuHelpersData_0857B0F4: @ 0x0857B0F4
 	@ pointer/nullable table
 	@ ANALYSIS: U32_TABLE size=0x10 entries=4
 	.4byte 0x006D006D @ +0x0
-	.4byte 0x0857B0B8 @ +0x4
-	.4byte 0x0857B0D8 @ +0x8
+	.4byte gMailData_0857B0B4 + 0x4 @ +0x4
+	.4byte gMailData_0857B0B4 + 0x24 @ +0x8
 	.4byte 0 @ +0xC
 	.globl gBattlePointerTable_Rom_57B104
 gBattlePointerTable_Rom_57B104: @ 0x0857B104
