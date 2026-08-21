@@ -405,12 +405,12 @@ gNewGameBirchSpriteTemplate:
 	.4byte SpriteCallbackDummy
 	.globl gSpritePalette_PokeballGlow
 gSpritePalette_PokeballGlow: @ 0x08536F08
-	.4byte 0x0853563C @ palette data
+	.4byte sPokeballGlow_Pal @ palette data
 	.2byte 0x1007, 0 @ tag, padding
 
 	.globl gSpritePalette_HofMonitor
 gSpritePalette_HofMonitor: @ 0x08536F10
-	.4byte 0x08535ADC @ palette data
+	.4byte sHofMonitor_Pal @ palette data
 	.2byte 0x1010, 0 @ tag, padding
 
 	.globl gFieldEffectOam_32x16
@@ -419,24 +419,24 @@ gFieldEffectOam_32x16: @ 0x08536F18
 
 	.globl gFieldEffectPicTable_PokeballGlow
 gFieldEffectPicTable_PokeballGlow: @ 0x08536F20
-	.4byte 0x0853561C
+	.4byte sPokeballGlow_Gfx
 	.2byte 0x0020, 0 @ SpriteFrameImage data, size, padding
 
 	.globl gFieldEffectPicTable_PokecenterMonitor
 gFieldEffectPicTable_PokecenterMonitor: @ 0x08536F28
-	.4byte 0x0853565C
+	.4byte sPokecenterMonitor0_Gfx
 	.2byte 0x00C0, 0
-	.4byte 0x0853571C
+	.4byte sPokecenterMonitor1_Gfx
 	.2byte 0x00C0, 0
 
 	.globl gFieldEffectPicTable_HofMonitorBig
 gFieldEffectPicTable_HofMonitorBig: @ 0x08536F38
-	.4byte 0x085357DC
+	.4byte sHofMonitorBig_Gfx
 	.2byte 0x0200, 0
 
 	.globl gFieldEffectPicTable_HofMonitorSmall
 gFieldEffectPicTable_HofMonitorSmall: @ 0x08536F40
-	.4byte 0x085359DC
+	.4byte sHofMonitorSmall_Gfx
 	.2byte 0x0200, 0
 
 	.globl gFieldEffectSubsprites_PokecenterMonitor
