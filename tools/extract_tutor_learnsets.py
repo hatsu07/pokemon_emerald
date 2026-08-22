@@ -253,8 +253,8 @@ def create_output(
         "",
         "    .align 2",
         "",
-        "    .globl gPokemonU16Table_Rom_5E08C4",
-        "gPokemonU16Table_Rom_5E08C4: @ 0x085E08C4",
+        "    .globl gTutorMoves",
+        "gTutorMoves: @ 0x085E08C4",
     ])
 
     for move_id in tutor_move_ids:
@@ -272,8 +272,8 @@ def create_output(
         "",
         "    .align 2",
         "",
-        "    .globl gPokemonU32Table_Rom_5E0900",
-        "gPokemonU32Table_Rom_5E0900: @ 0x085E0900",
+        "    .globl sTutorLearnsets",
+        "sTutorLearnsets: @ 0x085E0900",
     ])
 
     valid_mask = (1 << NUM_TUTOR_MOVES) - 1

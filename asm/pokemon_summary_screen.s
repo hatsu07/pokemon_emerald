@@ -5624,7 +5624,7 @@ _081C2022:
 	b _081C2094
 	.align 2, 0
 _081C2078: .4byte 0x02021C40
-_081C207C: .4byte gContestU8Table_Rom_5C940E
+_081C207C: .4byte gText_Level
 _081C2080: .4byte 0x02021C54
 _081C2084:
 	str r4, [sp]

@@ -5538,7 +5538,7 @@ DisplayPartyPokemonLevel: @ 0x081B27DC
 	.align 2, 0
 _081B281C: .4byte 0x02021C54
 _081B2820: .4byte 0x02021C40
-_081B2824: .4byte gContestU8Table_Rom_5C940E
+_081B2824: .4byte gText_Level
 	thumb_func_end DisplayPartyPokemonLevel
 
 	thumb_func_start DisplayPartyPokemonGenderNidoranCheck

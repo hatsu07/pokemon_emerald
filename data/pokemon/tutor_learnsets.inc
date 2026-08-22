@@ -76,8 +76,8 @@
 
     .align 2
 
-    .globl gPokemonU16Table_Rom_5E08C4
-gPokemonU16Table_Rom_5E08C4: @ 0x085E08C4
+    .globl gTutorMoves
+gTutorMoves: @ 0x085E08C4
     .2byte MOVE_MEGA_PUNCH
     .2byte MOVE_SWORDS_DANCE
     .2byte MOVE_MEGA_KICK
@@ -111,8 +111,8 @@ gPokemonU16Table_Rom_5E08C4: @ 0x085E08C4
 
     .align 2
 
-    .globl gPokemonU32Table_Rom_5E0900
-gPokemonU32Table_Rom_5E0900: @ 0x085E0900
+    .globl sTutorLearnsets
+sTutorLearnsets: @ 0x085E0900
 
 @ 0: SPECIES_NONE
 @ Original: 0x00000000
@@ -157,7 +157,7 @@ gPokemonU32Table_Rom_5E0900: @ 0x085E0900
 
 @ 10: SPECIES_CATERPIE
 @ Original: 0x00000000
-    @ ANALYSIS: ZERO_BYTES size=0x8 addr=0x085E0928 parent=gPokemonU32Table_Rom_5E0900 offset=0x28
+    @ ANALYSIS: ZERO_BYTES size=0x8 addr=0x085E0928 parent=sTutorLearnsets offset=0x28
     .4byte 0
 
 @ 11: SPECIES_METAPOD
@@ -170,7 +170,7 @@ gPokemonU32Table_Rom_5E0900: @ 0x085E0900
 
 @ 13: SPECIES_WEEDLE
 @ Original: 0x00000000
-    @ ANALYSIS: ZERO_BYTES size=0x8 addr=0x085E0934 parent=gPokemonU32Table_Rom_5E0900 offset=0x34
+    @ ANALYSIS: ZERO_BYTES size=0x8 addr=0x085E0934 parent=sTutorLearnsets offset=0x34
     .4byte 0
 
 @ 14: SPECIES_KAKUNA
@@ -925,7 +925,7 @@ gPokemonU32Table_Rom_5E0900: @ 0x085E0900
 
 @ 201: SPECIES_UNOWN
 @ Original: 0x00000000
-    @ ANALYSIS: ZERO_BYTES size=0x8 addr=0x085E0C24 parent=gPokemonU32Table_Rom_5E0900 offset=0x324
+    @ ANALYSIS: ZERO_BYTES size=0x8 addr=0x085E0C24 parent=sTutorLearnsets offset=0x324
     .4byte 0
 
 @ 202: SPECIES_WOBBUFFET
@@ -1131,7 +1131,7 @@ gPokemonU32Table_Rom_5E0900: @ 0x085E0900
 
 @ 252: SPECIES_OLD_UNOWN_B
 @ Original: 0x00000000
-    @ ANALYSIS: ZERO_BYTES size=0x64 addr=0x085E0CF0 parent=gPokemonU32Table_Rom_5E0900 offset=0x3F0
+    @ ANALYSIS: ZERO_BYTES size=0x64 addr=0x085E0CF0 parent=sTutorLearnsets offset=0x3F0
     .4byte 0
 
 @ 253: SPECIES_OLD_UNOWN_C
@@ -1284,7 +1284,7 @@ gPokemonU32Table_Rom_5E0900: @ 0x085E0900
 
 @ 290: SPECIES_WURMPLE
 @ Original: 0x00000000
-    @ ANALYSIS: ZERO_BYTES size=0x8 addr=0x085E0D88 parent=gPokemonU32Table_Rom_5E0900 offset=0x488
+    @ ANALYSIS: ZERO_BYTES size=0x8 addr=0x085E0D88 parent=sTutorLearnsets offset=0x488
     .4byte 0
 
 @ 291: SPECIES_SILCOON

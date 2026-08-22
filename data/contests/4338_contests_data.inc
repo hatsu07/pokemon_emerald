@@ -1,6 +1,6 @@
 	@ pret/pokeemerald-jp direct xref for 0x085C940E: party_menu.s: DisplayPartyPokemonLevel; pokemon_summary_screen.s: Summary_PrintNotEggInfo
-	.globl gContestU8Table_Rom_5C940E
-gContestU8Table_Rom_5C940E: @ 0x085C940E
+	.globl gText_Level
+gText_Level: @ 0x085C940E
 	@ analyzed canonical ROM range 0x085C940E-0x085C9410
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x3 bytes=3
