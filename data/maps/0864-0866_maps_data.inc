@@ -1566,10 +1566,40 @@ gSingMusicNoteSpriteTemplate: @ 0x0856EBEC
 	@ pret/pokeemerald-jp direct xref for 0x0856EC04: battle_anim_effects_1.s: sub_08103438, sub_081034F0, sub_08103524, sub_08103634, sub_08103878
 	.globl gMusicNotePaletteVariants
 gMusicNotePaletteVariants: @ 0x0856EC04
-	.2byte 0x2758, 0x7FFF, 0x735F, 0x6ADF, 0x623F, 0x59BF
-	.2byte 0x2771, 0x7FFF, 0x6BF9, 0x57F4, 0x43EF, 0x33EA
-	.2byte 0x27C9, 0x7FFF, 0x63FF, 0x47FF, 0x2BFF, 0x0FFF
-	.2byte 0x27BF, 0x7FFF, 0x7F9A, 0x7F55, 0x7F10, 0x7ECC
+	@ Four palette variants, six BGR555 colors per variant.
+	@ Stored as explicit 5-bit RGB components rather than opaque u16 colors.
+	.macro jp_music_note_color red5, green5, blue5, alpha=0
+		.2byte ((\red5) & 31) | (((\green5) & 31) << 5) | (((\blue5) & 31) << 10) | (((\alpha) & 1) << 15)
+	.endm
+
+	@ palette variant 0
+	jp_music_note_color 24, 26, 9, 0
+	jp_music_note_color 31, 31, 31, 0
+	jp_music_note_color 31, 26, 28, 0
+	jp_music_note_color 31, 22, 26, 0
+	jp_music_note_color 31, 17, 24, 0
+	jp_music_note_color 31, 13, 22, 0
+	@ palette variant 1
+	jp_music_note_color 17, 27, 9, 0
+	jp_music_note_color 31, 31, 31, 0
+	jp_music_note_color 25, 31, 26, 0
+	jp_music_note_color 20, 31, 21, 0
+	jp_music_note_color 15, 31, 16, 0
+	jp_music_note_color 10, 31, 12, 0
+	@ palette variant 2
+	jp_music_note_color 9, 30, 9, 0
+	jp_music_note_color 31, 31, 31, 0
+	jp_music_note_color 31, 31, 24, 0
+	jp_music_note_color 31, 31, 17, 0
+	jp_music_note_color 31, 31, 10, 0
+	jp_music_note_color 31, 31, 3, 0
+	@ palette variant 3
+	jp_music_note_color 31, 29, 9, 0
+	jp_music_note_color 31, 31, 31, 0
+	jp_music_note_color 26, 28, 31, 0
+	jp_music_note_color 21, 26, 31, 0
+	jp_music_note_color 16, 24, 31, 0
+	jp_music_note_color 12, 22, 31, 0
 	.globl gTeeterDanceMusicNoteSpriteTemplate
 gTeeterDanceMusicNoteSpriteTemplate: @ 0x0856EC34
 	rodata_sprite_template 0x2758, 0x2758, gOamData_AffineDouble_ObjNormal_16x16, gSingMusicNoteAnims, 0, gSingMusicNoteAffineAnims, sub_08103700

@@ -926,120 +926,186 @@ sSubsprites_ReelTimeNumberGap: @ 0x08584FB4
 sSubspriteTable_ReelTimeNumberGap: @ 0x08584FC0
 	.byte 0x03, 0x00, 0x00, 0x00
 	.4byte sSubsprites_ReelTimeNumberGap
+@ Semantic struct Subsprite / SubspriteTable emitters.
+@ struct Subsprite:
+@   s8 x, s8 y, shape:2, size:2, tileOffset:10, priority:2
+.set SLOT_SUBSPRITE_SHAPE_SQUARE,     0
+.set SLOT_SUBSPRITE_SHAPE_HORIZONTAL, 1
+.set SLOT_SUBSPRITE_SHAPE_VERTICAL,   2
+.set SLOT_SUBSPRITE_SIZE_0, 0
+.set SLOT_SUBSPRITE_SIZE_1, 1
+.set SLOT_SUBSPRITE_SIZE_2, 2
+.set SLOT_SUBSPRITE_SIZE_3, 3
+
+.macro slot_machine_subsprite x, y, shape, size, tile_offset, priority
+	.byte \x, \y
+	.2byte ((\shape) & 3) | (((\size) & 3) << 2) | (((\tile_offset) & 0x3FF) << 4) | (((\priority) & 3) << 14)
+.endm
+
+.macro slot_machine_subsprite_table count, subsprites
+	.byte \count, 0, 0, 0
+	.4byte \subsprites
+.endm
+
 sSubsprites_DigitalDisplay_Reel: @ 0x08584FC8
-	.byte 0xE0, 0xE8, 0x0D, 0xC0, 0xE0, 0x08, 0x05, 0xC2
-	.byte 0x00, 0x08, 0x45, 0xC2, 0xE0, 0x10, 0x85, 0xC2, 0x00, 0x10, 0xC5, 0xC2
+	slot_machine_subsprite -32, -24, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_3, 0, 3
+	slot_machine_subsprite -32, 8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 32, 3
+	slot_machine_subsprite 0, 8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 36, 3
+	slot_machine_subsprite -32, 16, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 40, 3
+	slot_machine_subsprite 0, 16, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 44, 3
 sSubspriteTable_DigitalDisplay_Reel: @ 0x08584FDC
-	.byte 0x05, 0x00, 0x00, 0x00
-	.byte 0xC8, 0x4F, 0x58, 0x08
+	slot_machine_subsprite_table 5, sSubsprites_DigitalDisplay_Reel
 sSubsprites_DigitalDisplay_Time: @ 0x08584FE4
-	.byte 0xE0, 0xF8, 0x05, 0xC0, 0x00, 0xF8, 0x45, 0xC0, 0xE0, 0x00, 0x85, 0xC0
-	.byte 0x00, 0x00, 0xC5, 0xC0
+	slot_machine_subsprite -32, -8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 0, 3
+	slot_machine_subsprite 0, -8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 4, 3
+	slot_machine_subsprite -32, 0, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 8, 3
+	slot_machine_subsprite 0, 0, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 12, 3
 sSubspriteTable_DigitalDisplay_Time: @ 0x08584FF4
-	.byte 0x04, 0x00, 0x00, 0x00, 0xE4, 0x4F, 0x58, 0x08
+	slot_machine_subsprite_table 4, sSubsprites_DigitalDisplay_Time
 sSubsprites_DigitalDisplay_Insert: @ 0x08584FFC
-	.byte 0xE0, 0xF8, 0x05, 0xC0
-	.byte 0x00, 0xF8, 0x45, 0xC0, 0xE0, 0x00, 0x85, 0xC0, 0x00, 0x00, 0xC5, 0xC0
+	slot_machine_subsprite -32, -8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 0, 3
+	slot_machine_subsprite 0, -8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 4, 3
+	slot_machine_subsprite -32, 0, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 8, 3
+	slot_machine_subsprite 0, 0, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 12, 3
 sSubspriteTable_DigitalDisplay_Insert: @ 0x0858500C
-	.byte 0x04, 0x00, 0x00, 0x00
-	.byte 0xFC, 0x4F, 0x58, 0x08
+	slot_machine_subsprite_table 4, sSubsprites_DigitalDisplay_Insert
 sSubsprites_DigitalDisplay_Unused1: @ 0x08585014
-	.byte 0xE0, 0xF8, 0x05, 0xC0, 0x00, 0xF8, 0x45, 0xC0, 0xE0, 0x00, 0x85, 0xC0
-	.byte 0x00, 0x00, 0xC5, 0xC0
+	slot_machine_subsprite -32, -8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 0, 3
+	slot_machine_subsprite 0, -8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 4, 3
+	slot_machine_subsprite -32, 0, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 8, 3
+	slot_machine_subsprite 0, 0, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 12, 3
 sSubspriteTable_DigitalDisplay_Unused1: @ 0x08585024
-	.byte 0x04, 0x00, 0x00, 0x00, 0x14, 0x50, 0x58, 0x08
+	slot_machine_subsprite_table 4, sSubsprites_DigitalDisplay_Unused1
 sSubsprites_DigitalDisplay_Win: @ 0x0858502C
-	.byte 0xE0, 0xF4, 0x05, 0xC0
-	.byte 0x00, 0xF4, 0x45, 0xC0, 0xE0, 0xFC, 0x85, 0xC0, 0x00, 0xFC, 0xC5, 0xC0, 0xE0, 0x04, 0x05, 0xC1
-	.byte 0x00, 0x04, 0x45, 0xC1
+	slot_machine_subsprite -32, -12, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 0, 3
+	slot_machine_subsprite 0, -12, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 4, 3
+	slot_machine_subsprite -32, -4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 8, 3
+	slot_machine_subsprite 0, -4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 12, 3
+	slot_machine_subsprite -32, 4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 16, 3
+	slot_machine_subsprite 0, 4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 20, 3
 sSubspriteTable_DigitalDisplay_Win: @ 0x08585044
-	.byte 0x06, 0x00, 0x00, 0x00, 0x2C, 0x50, 0x58, 0x08
+	slot_machine_subsprite_table 6, sSubsprites_DigitalDisplay_Win
 sSubsprites_DigitalDisplay_SmokeBig: @ 0x0858504C
-	.byte 0xF0, 0xF0, 0x08, 0xC0
+	slot_machine_subsprite -16, -16, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_2, 0, 3
 sSubsprites_DigitalDisplay_SmokeSmall: @ 0x08585050
-	.byte 0xF8, 0xF8, 0x04, 0xC1
+	slot_machine_subsprite -8, -8, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_1, 16, 3
 sSubspriteTable_DigitalDisplay_Smoke: @ 0x08585054
-	.byte 0x01, 0x00, 0x00, 0x00, 0x4C, 0x50, 0x58, 0x08, 0x01, 0x00, 0x00, 0x00
-	.byte 0x50, 0x50, 0x58, 0x08
+	slot_machine_subsprite_table 1, sSubsprites_DigitalDisplay_SmokeBig
+	slot_machine_subsprite_table 1, sSubsprites_DigitalDisplay_SmokeSmall
 sSubsprites_DigitalDisplay_Pokeball: @ 0x08585064
-	.byte 0xE8, 0xE8, 0x05, 0xC0, 0x08, 0xE8, 0x41, 0xC0, 0xE8, 0xF0, 0x65, 0xC0
-	.byte 0x08, 0xF0, 0xA1, 0xC0, 0xE8, 0xF8, 0xC5, 0xC0, 0x08, 0xF8, 0x01, 0xC1, 0xE8, 0x00, 0x25, 0xC1
-	.byte 0x08, 0x00, 0x61, 0xC1, 0xE8, 0x08, 0x85, 0xC1, 0x08, 0x08, 0xC1, 0xC1, 0xE8, 0x10, 0xE5, 0xC1
-	.byte 0x08, 0x10, 0x21, 0xC2
+	slot_machine_subsprite -24, -24, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 0, 3
+	slot_machine_subsprite 8, -24, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 4, 3
+	slot_machine_subsprite -24, -16, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 6, 3
+	slot_machine_subsprite 8, -16, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 10, 3
+	slot_machine_subsprite -24, -8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 12, 3
+	slot_machine_subsprite 8, -8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 16, 3
+	slot_machine_subsprite -24, 0, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 18, 3
+	slot_machine_subsprite 8, 0, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 22, 3
+	slot_machine_subsprite -24, 8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 24, 3
+	slot_machine_subsprite 8, 8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 28, 3
+	slot_machine_subsprite -24, 16, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_1, 30, 3
+	slot_machine_subsprite 8, 16, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 34, 3
 sSubspriteTable_DigitalDisplay_Pokeball: @ 0x08585094
-	.byte 0x0C, 0x00, 0x00, 0x00, 0x64, 0x50, 0x58, 0x08
+	slot_machine_subsprite_table 12, sSubsprites_DigitalDisplay_Pokeball
 sSubsprites_DigitalDisplay_DPad: @ 0x0858509C
-	.byte 0xF0, 0xF4, 0x09, 0xC0
-	.byte 0xF0, 0x04, 0x81, 0xC0, 0x00, 0x04, 0xA1, 0xC0
+	slot_machine_subsprite -16, -12, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_2, 0, 3
+	slot_machine_subsprite -16, 4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 8, 3
+	slot_machine_subsprite 0, 4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 10, 3
 sSubspriteTable_DigitalDisplay_DPad: @ 0x085850A8
-	.byte 0x03, 0x00, 0x00, 0x00, 0x9C, 0x50, 0x58, 0x08
+	slot_machine_subsprite_table 3, sSubsprites_DigitalDisplay_DPad
 sSubsprites_DigitalDisplay_StopS: @ 0x085850B0
-	.byte 0xF8, 0xF8, 0x01, 0xC0, 0xF8, 0x00, 0x81, 0xC0
+	slot_machine_subsprite -8, -8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 0, 3
+	slot_machine_subsprite -8, 0, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 8, 3
 sSubspriteTable_DigitalDisplay_StopS: @ 0x085850B8
-	.byte 0x02, 0x00, 0x00, 0x00, 0xB0, 0x50, 0x58, 0x08
+	slot_machine_subsprite_table 2, sSubsprites_DigitalDisplay_StopS
 sSubsprites_DigitalDisplay_StopT: @ 0x085850C0
-	.byte 0xF8, 0xF8, 0x21, 0xC0, 0xF8, 0x00, 0xA1, 0xC0
+	slot_machine_subsprite -8, -8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 2, 3
+	slot_machine_subsprite -8, 0, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 10, 3
 sSubspriteTable_DigitalDisplay_StopT: @ 0x085850C8
-	.byte 0x02, 0x00, 0x00, 0x00, 0xC0, 0x50, 0x58, 0x08
+	slot_machine_subsprite_table 2, sSubsprites_DigitalDisplay_StopT
 sSubsprites_DigitalDisplay_StopO: @ 0x085850D0
-	.byte 0xF8, 0xF8, 0x41, 0xC0, 0xF8, 0x00, 0xC1, 0xC0
+	slot_machine_subsprite -8, -8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 4, 3
+	slot_machine_subsprite -8, 0, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 12, 3
 sSubspriteTable_DigitalDisplay_StopO: @ 0x085850D8
-	.byte 0x02, 0x00, 0x00, 0x00, 0xD0, 0x50, 0x58, 0x08
+	slot_machine_subsprite_table 2, sSubsprites_DigitalDisplay_StopO
 sSubsprites_DigitalDisplay_StopP: @ 0x085850E0
-	.byte 0xF8, 0xF8, 0x61, 0xC0, 0xF8, 0x00, 0xE1, 0xC0
+	slot_machine_subsprite -8, -8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 6, 3
+	slot_machine_subsprite -8, 0, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 14, 3
 sSubspriteTable_DigitalDisplay_StopP: @ 0x085850E8
-	.byte 0x02, 0x00, 0x00, 0x00, 0xE0, 0x50, 0x58, 0x08
+	slot_machine_subsprite_table 2, sSubsprites_DigitalDisplay_StopP
 sSubsprites_DigitalDisplay_BonusB: @ 0x085850F0
-	.byte 0xF8, 0xF8, 0x01, 0xC0, 0xF8, 0x00, 0x81, 0xC0
+	slot_machine_subsprite -8, -8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 0, 3
+	slot_machine_subsprite -8, 0, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 8, 3
 sSubspriteTable_DigitalDisplay_BonusB: @ 0x085850F8
-	.byte 0x02, 0x00, 0x00, 0x00, 0xF0, 0x50, 0x58, 0x08
+	slot_machine_subsprite_table 2, sSubsprites_DigitalDisplay_BonusB
 sSubsprites_DigitalDisplay_BonusO: @ 0x08585100
-	.byte 0xFC, 0xF8, 0x20, 0xC0, 0xFC, 0x00, 0xA0, 0xC0
+	slot_machine_subsprite -4, -8, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 2, 3
+	slot_machine_subsprite -4, 0, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 10, 3
 sSubspriteTable_DigitalDisplay_BonusO: @ 0x08585108
-	.byte 0x02, 0x00, 0x00, 0x00, 0x00, 0x51, 0x58, 0x08
+	slot_machine_subsprite_table 2, sSubsprites_DigitalDisplay_BonusO
 sSubsprites_DigitalDisplay_BonusN: @ 0x08585110
-	.byte 0xF8, 0xF8, 0x31, 0xC0, 0xF8, 0x00, 0xB1, 0xC0
+	slot_machine_subsprite -8, -8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 3, 3
+	slot_machine_subsprite -8, 0, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 11, 3
 sSubspriteTable_DigitalDisplay_BonusN: @ 0x08585118
-	.byte 0x02, 0x00, 0x00, 0x00, 0x10, 0x51, 0x58, 0x08
+	slot_machine_subsprite_table 2, sSubsprites_DigitalDisplay_BonusN
 sSubsprites_DigitalDisplay_BonusU: @ 0x08585120
-	.byte 0xFC, 0xF8, 0x50, 0xC0, 0xFC, 0x00, 0xD0, 0xC0
+	slot_machine_subsprite -4, -8, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 5, 3
+	slot_machine_subsprite -4, 0, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 13, 3
 sSubspriteTable_DigitalDisplay_BonusU: @ 0x08585128
-	.byte 0x02, 0x00, 0x00, 0x00, 0x20, 0x51, 0x58, 0x08
+	slot_machine_subsprite_table 2, sSubsprites_DigitalDisplay_BonusU
 sSubsprites_DigitalDisplay_BonusS: @ 0x08585130
-	.byte 0xF8, 0xF8, 0x61, 0xC0, 0xF8, 0x00, 0xE1, 0xC0
+	slot_machine_subsprite -8, -8, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 6, 3
+	slot_machine_subsprite -8, 0, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 14, 3
 sSubspriteTable_DigitalDisplay_BonusS: @ 0x08585138
-	.byte 0x02, 0x00, 0x00, 0x00, 0x30, 0x51, 0x58, 0x08
+	slot_machine_subsprite_table 2, sSubsprites_DigitalDisplay_BonusS
 sSubsprites_DigitalDisplay_BigB: @ 0x08585140
-	.byte 0xF4, 0xF4, 0x01, 0xC0, 0x04, 0xF4, 0x20, 0xC0, 0xF4, 0xFC, 0x81, 0xC0, 0x04, 0xFC, 0xA0, 0xC0
-	.byte 0xF4, 0x04, 0x01, 0xC1, 0x04, 0x04, 0x20, 0xC1
+	slot_machine_subsprite -12, -12, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 0, 3
+	slot_machine_subsprite 4, -12, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 2, 3
+	slot_machine_subsprite -12, -4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 8, 3
+	slot_machine_subsprite 4, -4, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 10, 3
+	slot_machine_subsprite -12, 4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 16, 3
+	slot_machine_subsprite 4, 4, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 18, 3
 sSubspriteTable_DigitalDisplay_BigB: @ 0x08585158
-	.byte 0x06, 0x00, 0x00, 0x00, 0x40, 0x51, 0x58, 0x08
+	slot_machine_subsprite_table 6, sSubsprites_DigitalDisplay_BigB
 sSubsprites_DigitalDisplay_BigI: @ 0x08585160
-	.byte 0xF8, 0xF4, 0x31, 0xC0, 0xF8, 0xFC, 0xB1, 0xC0, 0xF8, 0x04, 0x31, 0xC1
+	slot_machine_subsprite -8, -12, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 3, 3
+	slot_machine_subsprite -8, -4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 11, 3
+	slot_machine_subsprite -8, 4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 19, 3
 sSubspriteTable_DigitalDisplay_BigI: @ 0x0858516C
-	.byte 0x03, 0x00, 0x00, 0x00
-	.byte 0x60, 0x51, 0x58, 0x08
+	slot_machine_subsprite_table 3, sSubsprites_DigitalDisplay_BigI
 sSubsprites_DigitalDisplay_BigG: @ 0x08585174
-	.byte 0xF4, 0xF4, 0x51, 0xC0, 0x04, 0xF4, 0x70, 0xC0, 0xF4, 0xFC, 0xD1, 0xC0
-	.byte 0x04, 0xFC, 0xF0, 0xC0, 0xF4, 0x04, 0x51, 0xC1, 0x04, 0x04, 0x70, 0xC1
+	slot_machine_subsprite -12, -12, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 5, 3
+	slot_machine_subsprite 4, -12, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 7, 3
+	slot_machine_subsprite -12, -4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 13, 3
+	slot_machine_subsprite 4, -4, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 15, 3
+	slot_machine_subsprite -12, 4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 21, 3
+	slot_machine_subsprite 4, 4, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 23, 3
 sSubspriteTable_DigitalDisplay_BigG: @ 0x0858518C
-	.byte 0x06, 0x00, 0x00, 0x00
-	.byte 0x74, 0x51, 0x58, 0x08
+	slot_machine_subsprite_table 6, sSubsprites_DigitalDisplay_BigG
 sSubsprites_DigitalDisplay_RegR: @ 0x08585194
-	.byte 0xF4, 0xF4, 0x01, 0xC0, 0x04, 0xF4, 0x20, 0xC0, 0xF4, 0xFC, 0x81, 0xC0
-	.byte 0x04, 0xFC, 0xA0, 0xC0, 0xF4, 0x04, 0x01, 0xC1, 0x04, 0x04, 0x20, 0xC1
+	slot_machine_subsprite -12, -12, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 0, 3
+	slot_machine_subsprite 4, -12, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 2, 3
+	slot_machine_subsprite -12, -4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 8, 3
+	slot_machine_subsprite 4, -4, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 10, 3
+	slot_machine_subsprite -12, 4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 16, 3
+	slot_machine_subsprite 4, 4, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 18, 3
 sSubspriteTable_DigitalDisplay_RegR: @ 0x085851AC
-	.byte 0x06, 0x00, 0x00, 0x00
-	.byte 0x94, 0x51, 0x58, 0x08
+	slot_machine_subsprite_table 6, sSubsprites_DigitalDisplay_RegR
 sSubsprites_DigitalDisplay_RegE: @ 0x085851B4
-	.byte 0xF8, 0xF4, 0x31, 0xC0, 0xF8, 0xFC, 0xB1, 0xC0, 0xF8, 0x04, 0x31, 0xC1
+	slot_machine_subsprite -8, -12, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 3, 3
+	slot_machine_subsprite -8, -4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 11, 3
+	slot_machine_subsprite -8, 4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 19, 3
 sSubspriteTable_DigitalDisplay_RegE: @ 0x085851C0
-	.byte 0x03, 0x00, 0x00, 0x00, 0xB4, 0x51, 0x58, 0x08
+	slot_machine_subsprite_table 3, sSubsprites_DigitalDisplay_RegE
 sSubsprites_DigitalDisplay_RegG: @ 0x085851C8
-	.byte 0xF4, 0xF4, 0x51, 0xC0, 0x04, 0xF4, 0x70, 0xC0
-	.byte 0xF4, 0xFC, 0xD1, 0xC0, 0x04, 0xFC, 0xF0, 0xC0, 0xF4, 0x04, 0x51, 0xC1, 0x04, 0x04, 0x70, 0xC1
+	slot_machine_subsprite -12, -12, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 5, 3
+	slot_machine_subsprite 4, -12, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 7, 3
+	slot_machine_subsprite -12, -4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 13, 3
+	slot_machine_subsprite 4, -4, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 15, 3
+	slot_machine_subsprite -12, 4, SLOT_SUBSPRITE_SHAPE_HORIZONTAL, SLOT_SUBSPRITE_SIZE_0, 21, 3
+	slot_machine_subsprite 4, 4, SLOT_SUBSPRITE_SHAPE_SQUARE, SLOT_SUBSPRITE_SIZE_0, 23, 3
 sSubspriteTable_DigitalDisplay_RegG: @ 0x085851E0
-	.byte 0x06, 0x00, 0x00, 0x00, 0xC8, 0x51, 0x58, 0x08
+	slot_machine_subsprite_table 6, sSubsprites_DigitalDisplay_RegG
 	@ pret/pokeemerald-jp direct xref for 0x085851E8: slot_machine.s: sub_0812EFEC
 	.globl sSpriteTemplates_DigitalDisplay
 sSpriteTemplates_DigitalDisplay: @ 0x085851E8
