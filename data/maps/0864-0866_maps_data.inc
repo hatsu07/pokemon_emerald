@@ -482,6 +482,7 @@ gFortreeGymRotatingGateCollisionOffsets: @ 0x0856DC3C
 	@ pret/pokeemerald-jp direct xref for 0x0856DC5C: rotating_gate.s: RotatingGate_CanRotate, RotatingGate_HasArm
 	.globl gRotatingGateArmLayoutTable
 gRotatingGateArmLayoutTable: @ 0x0856DC5C
+	@ ANALYSIS: SEMANTIC_NUMERIC_ROTATING_GATE_LAYOUT_TABLE
 	@ analyzed canonical ROM range 0x0856DC5C-0x0856DCBB
 	.byte 1, 0, 1, 0, 0, 0, 0, 0
 	.byte 1, 1, 1, 0, 0, 0, 0, 0

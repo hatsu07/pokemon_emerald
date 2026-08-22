@@ -226,6 +226,7 @@ gRegionMapEntries: @ 0x0857CD6C
 
 	.globl sRegionMap_SpecialPlaceLocations
 sRegionMap_SpecialPlaceLocations: @ 0x0857D414
+	@ ANALYSIS: SEMANTIC_NUMERIC_REGION_MAP_LOCATION_TABLE
 	@ 24 {special map section, displayed map section} pairs; final pair is the sentinel.
 	.2byte 0x00CE, 0x0014 @ pair 0
 	.2byte 0x0032, 0x0027 @ pair 1

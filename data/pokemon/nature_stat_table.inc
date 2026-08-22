@@ -4,6 +4,7 @@
 
 	.globl gNatureStatTable
 gNatureStatTable: @ 0x082EF1A0
+	@ ANALYSIS: SEMANTIC_NUMERIC_NATURE_STAT_TABLE
 	.byte  0,  0,  0,  0,  0 @ Hardy  / がんばりや
 	.byte  1, -1,  0,  0,  0 @ Lonely / さみしがり
 	.byte  1,  0, -1,  0,  0 @ Brave  / ゆうかん

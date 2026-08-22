@@ -199,6 +199,7 @@ sAnims_LinkMonGlow: @ 0x0830CF94
 
 	.globl sAffineAnim_LinkMonGlow
 sAffineAnim_LinkMonGlow: @ 0x0830CF98
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0xFFF6, 0xFFF6, 0x0500, 0x0000, 0x000A, 0x000A, 0x0500, 0x0000
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000
 
@@ -326,6 +327,7 @@ sLinkMonShadow_Pal: @ 0x0830D0E8
 
 	.globl sAffineAnim_CrossingMonPic
 sAffineAnim_CrossingMonPic: @ 0x0830D100
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0xFF00, 0x0100, 0x0000, 0x0000, 0x7FFE, 0x0000, 0x0000, 0x0000
 
 	.globl sAffineAnims_CrossingMonPics
@@ -334,6 +336,7 @@ sAffineAnims_CrossingMonPics: @ 0x0830D110
 
 	.globl sIngameTrades
 sIngameTrades: @ 0x0830D114
+	@ ANALYSIS: SEMANTIC_NUMERIC_INGAME_TRADE_TABLE
 	@ Four JP InGameTrade records, stride 0x3C.
 	@ trade 0
 	.byte 0x5E, 0x98, 0x7E, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 @ nickname[11]

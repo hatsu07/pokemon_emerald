@@ -1,6 +1,7 @@
 	.globl gMetatileBehaviorAttributes
 	.globl gMetatileBehaviorAttributes
 gMetatileBehaviorAttributes:
+	@ ANALYSIS: SEMANTIC_NUMERIC_METATILE_BEHAVIOR_TABLE
 	@ One flag byte per metatile behavior (0xF0 entries).
 	@ bit0=encounters, bit1=surfable, bit2=traversable/unused.
 	.byte 0x04, 0x00, 0x05, 0x05, 0x00, 0x01, 0x05, 0x04, 0x05, 0x04, 0x04, 0x05, 0x04, 0x04, 0x04, 0x04

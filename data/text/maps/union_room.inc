@@ -1750,6 +1750,7 @@ sWindowTemplate_BButtonCancel:
 	.2byte 0x0008 @ baseBlock
 	.globl sLinkGroupToActivityAndCapacity
 sLinkGroupToActivityAndCapacity:
+	@ ANALYSIS: SEMANTIC_NUMERIC_UNION_ROOM_ACTIVITY_TABLE
 	.4byte 0x00000201 @ LINK_GROUP_SINGLE_BATTLE
 	.4byte 0x00000202 @ LINK_GROUP_DOUBLE_BATTLE
 	.4byte 0x00000403 @ LINK_GROUP_MULTI_BATTLE
@@ -1942,6 +1943,7 @@ sWindowTemplate_TradingBoardRequestType:
 	.2byte 0x0001 @ baseBlock
 
 sTradingBoardTypes: @ 0x082C21A4
+	@ ANALYSIS: SEMANTIC_NUMERIC_UNION_ROOM_TRADING_TABLE
 	.4byte gTypeNames @ TYPE_NORMAL
 	.4byte 0
 	.4byte gTypeName_Fire @ TYPE_FIRE

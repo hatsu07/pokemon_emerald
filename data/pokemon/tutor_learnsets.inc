@@ -113,6 +113,7 @@ gTutorMoves: @ 0x085E08C4
 
     .globl sTutorLearnsets
 sTutorLearnsets: @ 0x085E0900
+	@ ANALYSIS: SEMANTIC_NUMERIC_TUTOR_LEARNSET_TABLE
 
 @ 0: SPECIES_NONE
 @ Original: 0x00000000

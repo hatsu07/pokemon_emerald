@@ -7,6 +7,7 @@ gTradeBgTemplates: @ 0x0830D294
 
 	.globl gTradeSpriteMotionYDeltaTable
 gTradeSpriteMotionYDeltaTable: @ 0x0830D2A4
+	@ ANALYSIS: SEMANTIC_NUMERIC_TRADE_SPRITE_MOTION_TABLE
 	@ Signed per-frame Y deltas used by trade-animation phases.
 	.byte 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3
 	.byte 4, 4, 4, 4, -4, -4, -4, -3, -3, -3, -3, -2, -2, -2, -2, -1, -1, -1

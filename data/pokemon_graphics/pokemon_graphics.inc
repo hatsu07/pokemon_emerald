@@ -35,6 +35,7 @@ gEnemyMonElevation: @ 0x082D965C
 	.byte 0x00, 0x00, 0x06, 0x06, 0x06, 0x0C, 0x08, 0x0C
 
 sFrontAnimCmd_Species000_1: @ 0x082D97F8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 0, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -42,6 +43,7 @@ sFrontAnimCmd_Species000_1: @ 0x082D97F8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species001_1: @ 0x082D9808
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 1, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -49,6 +51,7 @@ sFrontAnimCmd_Species001_1: @ 0x082D9808
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species002_1: @ 0x082D9818
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 2, animation slot 1.
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0x0001, 0x0024 @ frame=1, duration=36
@@ -56,6 +59,7 @@ sFrontAnimCmd_Species002_1: @ 0x082D9818
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species003_1: @ 0x082D9828
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 3, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x0019 @ frame=1, duration=25
@@ -63,6 +67,7 @@ sFrontAnimCmd_Species003_1: @ 0x082D9828
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species004_1: @ 0x082D9838
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 4, animation slot 1.
 	.2byte 0x0000, 0x0002 @ frame=0, duration=2
 	.2byte 0x0001, 0x002E @ frame=1, duration=46
@@ -70,6 +75,7 @@ sFrontAnimCmd_Species004_1: @ 0x082D9838
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species005_1: @ 0x082D9848
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 5, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x0019 @ frame=1, duration=25
@@ -77,12 +83,14 @@ sFrontAnimCmd_Species005_1: @ 0x082D9848
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species006_1: @ 0x082D9858
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 6, animation slot 1.
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species007_1: @ 0x082D9864
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 7, animation slot 1.
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
@@ -90,6 +98,7 @@ sFrontAnimCmd_Species007_1: @ 0x082D9864
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species008_1: @ 0x082D9874
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 8, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -97,6 +106,7 @@ sFrontAnimCmd_Species008_1: @ 0x082D9874
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species009_1: @ 0x082D9884
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 9, animation slot 1.
 	.2byte 0x0000, 0x0032 @ frame=0, duration=50
 	.2byte 0x0001, 0x0019 @ frame=1, duration=25
@@ -106,6 +116,7 @@ sFrontAnimCmd_Species009_1: @ 0x082D9884
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species010_1: @ 0x082D989C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 10, animation slot 1.
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
@@ -118,12 +129,14 @@ sFrontAnimCmd_Species010_1: @ 0x082D989C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species011_1: @ 0x082D98C0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 11, animation slot 1.
 	.2byte 0x0001, 0x002D @ frame=1, duration=45
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species012_1: @ 0x082D98CC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 12, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
@@ -141,6 +154,7 @@ sFrontAnimCmd_Species012_1: @ 0x082D98CC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species013_1: @ 0x082D9904
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 13, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -152,6 +166,7 @@ sFrontAnimCmd_Species013_1: @ 0x082D9904
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species014_1: @ 0x082D9924
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 14, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
@@ -167,6 +182,7 @@ sFrontAnimCmd_Species014_1: @ 0x082D9924
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species015_1: @ 0x082D9954
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 15, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x0023 @ frame=1, duration=35
@@ -176,6 +192,7 @@ sFrontAnimCmd_Species015_1: @ 0x082D9954
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species016_1: @ 0x082D996C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 16, animation slot 1.
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
@@ -192,6 +209,7 @@ sFrontAnimCmd_Species016_1: @ 0x082D996C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species017_1: @ 0x082D99A0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 17, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -201,6 +219,7 @@ sFrontAnimCmd_Species017_1: @ 0x082D99A0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species018_1: @ 0x082D99B8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 18, animation slot 1.
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -209,6 +228,7 @@ sFrontAnimCmd_Species018_1: @ 0x082D99B8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species019_1: @ 0x082D99CC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 19, animation slot 1.
 	.2byte 0x0000, 0x0003 @ frame=0, duration=3
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
@@ -217,6 +237,7 @@ sFrontAnimCmd_Species019_1: @ 0x082D99CC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species020_1: @ 0x082D99E0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 20, animation slot 1.
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
@@ -233,6 +254,7 @@ sFrontAnimCmd_Species020_1: @ 0x082D99E0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species021_1: @ 0x082D9A14
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 21, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
@@ -253,6 +275,7 @@ sFrontAnimCmd_Species021_1: @ 0x082D9A14
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species022_1: @ 0x082D9A58
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 22, animation slot 1.
 	.2byte 0x0001, 0x0007 @ frame=1, duration=7
 	.2byte 0x0000, 0x0007 @ frame=0, duration=7
@@ -265,6 +288,7 @@ sFrontAnimCmd_Species022_1: @ 0x082D9A58
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species023_1: @ 0x082D9A7C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 23, animation slot 1.
 	.2byte 0x0001, 0x0008 @ frame=1, duration=8
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
@@ -275,6 +299,7 @@ sFrontAnimCmd_Species023_1: @ 0x082D9A7C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species024_1: @ 0x082D9A98
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 24, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x0023 @ frame=1, duration=35
@@ -282,6 +307,7 @@ sFrontAnimCmd_Species024_1: @ 0x082D9A98
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species025_1: @ 0x082D9AA8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 25, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -291,6 +317,7 @@ sFrontAnimCmd_Species025_1: @ 0x082D9AA8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species025_2: @ 0x082D9AC0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 25, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -299,6 +326,7 @@ sFrontAnimCmd_Species025_2: @ 0x082D9AC0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species026_1: @ 0x082D9AD4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 26, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -308,6 +336,7 @@ sFrontAnimCmd_Species026_1: @ 0x082D9AD4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species026_2: @ 0x082D9AEC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 26, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -316,6 +345,7 @@ sFrontAnimCmd_Species026_2: @ 0x082D9AEC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species027_1: @ 0x082D9B00
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 27, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -325,6 +355,7 @@ sFrontAnimCmd_Species027_1: @ 0x082D9B00
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species027_2: @ 0x082D9B18
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 27, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -333,6 +364,7 @@ sFrontAnimCmd_Species027_2: @ 0x082D9B18
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species028_1: @ 0x082D9B2C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 28, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -342,6 +374,7 @@ sFrontAnimCmd_Species028_1: @ 0x082D9B2C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species028_2: @ 0x082D9B44
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 28, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -350,6 +383,7 @@ sFrontAnimCmd_Species028_2: @ 0x082D9B44
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species029_1: @ 0x082D9B58
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 29, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
@@ -363,18 +397,21 @@ sFrontAnimCmd_Species029_1: @ 0x082D9B58
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species030_1: @ 0x082D9B80
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 30, animation slot 1.
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species031_1: @ 0x082D9B8C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 31, animation slot 1.
 	.2byte 0x0001, 0x002D @ frame=1, duration=45
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species032_1: @ 0x082D9B98
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 32, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -382,6 +419,7 @@ sFrontAnimCmd_Species032_1: @ 0x082D9B98
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species033_1: @ 0x082D9BA8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 33, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -389,6 +427,7 @@ sFrontAnimCmd_Species033_1: @ 0x082D9BA8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species034_1: @ 0x082D9BB8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 34, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
@@ -397,6 +436,7 @@ sFrontAnimCmd_Species034_1: @ 0x082D9BB8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species035_1: @ 0x082D9BCC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 35, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -404,6 +444,7 @@ sFrontAnimCmd_Species035_1: @ 0x082D9BCC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species036_1: @ 0x082D9BDC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 36, animation slot 1.
 	.2byte 0x0001, 0x001B @ frame=1, duration=27
 	.2byte 0x0000, 0x001B @ frame=0, duration=27
@@ -414,6 +455,7 @@ sFrontAnimCmd_Species036_1: @ 0x082D9BDC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species037_1: @ 0x082D9BF8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 37, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -423,6 +465,7 @@ sFrontAnimCmd_Species037_1: @ 0x082D9BF8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species037_2: @ 0x082D9C10
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 37, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -431,6 +474,7 @@ sFrontAnimCmd_Species037_2: @ 0x082D9C10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species038_1: @ 0x082D9C24
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 38, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -440,6 +484,7 @@ sFrontAnimCmd_Species038_1: @ 0x082D9C24
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species038_2: @ 0x082D9C3C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 38, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -448,6 +493,7 @@ sFrontAnimCmd_Species038_2: @ 0x082D9C3C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species039_1: @ 0x082D9C50
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 39, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -457,6 +503,7 @@ sFrontAnimCmd_Species039_1: @ 0x082D9C50
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species039_2: @ 0x082D9C68
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 39, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -465,6 +512,7 @@ sFrontAnimCmd_Species039_2: @ 0x082D9C68
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species040_1: @ 0x082D9C7C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 40, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -474,6 +522,7 @@ sFrontAnimCmd_Species040_1: @ 0x082D9C7C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species040_2: @ 0x082D9C94
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 40, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -482,6 +531,7 @@ sFrontAnimCmd_Species040_2: @ 0x082D9C94
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species041_1: @ 0x082D9CA8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 41, animation slot 1.
 	.2byte 0x0000, 0x0003 @ frame=0, duration=3
 	.2byte 0x0001, 0x0003 @ frame=1, duration=3
@@ -499,6 +549,7 @@ sFrontAnimCmd_Species041_1: @ 0x082D9CA8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species042_1: @ 0x082D9CE0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 42, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
@@ -522,6 +573,7 @@ sFrontAnimCmd_Species042_1: @ 0x082D9CE0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species043_1: @ 0x082D9D30
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 43, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000B @ frame=1, duration=11
@@ -533,6 +585,7 @@ sFrontAnimCmd_Species043_1: @ 0x082D9D30
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species044_1: @ 0x082D9D50
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 44, animation slot 1.
 	.2byte 0x0000, 0x0015 @ frame=0, duration=21
 	.2byte 0x0001, 0x002D @ frame=1, duration=45
@@ -541,6 +594,7 @@ sFrontAnimCmd_Species044_1: @ 0x082D9D50
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species045_1: @ 0x082D9D64
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 45, animation slot 1.
 	.2byte 0x0000, 0x0007 @ frame=0, duration=7
 	.2byte 0x0001, 0x0015 @ frame=1, duration=21
@@ -550,6 +604,7 @@ sFrontAnimCmd_Species045_1: @ 0x082D9D64
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species046_1: @ 0x082D9D7C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 46, animation slot 1.
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
@@ -570,6 +625,7 @@ sFrontAnimCmd_Species046_1: @ 0x082D9D7C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species047_1: @ 0x082D9DC0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 47, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -580,6 +636,7 @@ sFrontAnimCmd_Species047_1: @ 0x082D9DC0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species048_1: @ 0x082D9DDC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 48, animation slot 1.
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
@@ -590,6 +647,7 @@ sFrontAnimCmd_Species048_1: @ 0x082D9DDC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species049_1: @ 0x082D9DF8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 49, animation slot 1.
 	.2byte 0x0001, 0x0004 @ frame=1, duration=4
 	.2byte 0x0000, 0x0004 @ frame=0, duration=4
@@ -616,6 +674,7 @@ sFrontAnimCmd_Species049_1: @ 0x082D9DF8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species050_1: @ 0x082D9E54
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 50, animation slot 1.
 	.2byte 0x0000, 0x0019 @ frame=0, duration=25
 	.2byte 0x0001, 0x0023 @ frame=1, duration=35
@@ -623,6 +682,7 @@ sFrontAnimCmd_Species050_1: @ 0x082D9E54
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species051_1: @ 0x082D9E64
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 51, animation slot 1.
 	.2byte 0x0001, 0x0023 @ frame=1, duration=35
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -637,6 +697,7 @@ sFrontAnimCmd_Species051_1: @ 0x082D9E64
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species052_1: @ 0x082D9E90
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 52, animation slot 1.
 	.2byte 0x0001, 0x0008 @ frame=1, duration=8
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
@@ -647,12 +708,14 @@ sFrontAnimCmd_Species052_1: @ 0x082D9E90
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species053_1: @ 0x082D9EAC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 53, animation slot 1.
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species054_1: @ 0x082D9EB8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 54, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -662,6 +725,7 @@ sFrontAnimCmd_Species054_1: @ 0x082D9EB8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species054_2: @ 0x082D9ED0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 54, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -670,6 +734,7 @@ sFrontAnimCmd_Species054_2: @ 0x082D9ED0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species055_1: @ 0x082D9EE4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 55, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -679,6 +744,7 @@ sFrontAnimCmd_Species055_1: @ 0x082D9EE4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species055_2: @ 0x082D9EFC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 55, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -687,6 +753,7 @@ sFrontAnimCmd_Species055_2: @ 0x082D9EFC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species056_1: @ 0x082D9F10
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 56, animation slot 1.
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
@@ -697,6 +764,7 @@ sFrontAnimCmd_Species056_1: @ 0x082D9F10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species057_1: @ 0x082D9F2C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 57, animation slot 1.
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
@@ -707,6 +775,7 @@ sFrontAnimCmd_Species057_1: @ 0x082D9F2C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species058_1: @ 0x082D9F48
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 58, animation slot 1.
 	.2byte 0x0001, 0x0008 @ frame=1, duration=8
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
@@ -717,6 +786,7 @@ sFrontAnimCmd_Species058_1: @ 0x082D9F48
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species059_1: @ 0x082D9F64
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 59, animation slot 1.
 	.2byte 0x0001, 0x0008 @ frame=1, duration=8
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
@@ -727,6 +797,7 @@ sFrontAnimCmd_Species059_1: @ 0x082D9F64
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species060_1: @ 0x082D9F80
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 60, animation slot 1.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -734,6 +805,7 @@ sFrontAnimCmd_Species060_1: @ 0x082D9F80
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species061_1: @ 0x082D9F90
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 61, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x0019 @ frame=1, duration=25
@@ -743,12 +815,14 @@ sFrontAnimCmd_Species061_1: @ 0x082D9F90
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species062_1: @ 0x082D9FA8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 62, animation slot 1.
 	.2byte 0x0001, 0x002D @ frame=1, duration=45
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species063_1: @ 0x082D9FB4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 63, animation slot 1.
 	.2byte 0x0000, 0x0007 @ frame=0, duration=7
 	.2byte 0x0001, 0x0015 @ frame=1, duration=21
@@ -758,6 +832,7 @@ sFrontAnimCmd_Species063_1: @ 0x082D9FB4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species064_1: @ 0x082D9FCC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 64, animation slot 1.
 	.2byte 0x0000, 0x000C @ frame=0, duration=12
 	.2byte 0x0001, 0x002D @ frame=1, duration=45
@@ -765,6 +840,7 @@ sFrontAnimCmd_Species064_1: @ 0x082D9FCC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species065_1: @ 0x082D9FDC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 65, animation slot 1.
 	.2byte 0x0000, 0x0009 @ frame=0, duration=9
 	.2byte 0x0001, 0x0036 @ frame=1, duration=54
@@ -772,6 +848,7 @@ sFrontAnimCmd_Species065_1: @ 0x082D9FDC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species066_1: @ 0x082D9FEC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 66, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -783,6 +860,7 @@ sFrontAnimCmd_Species066_1: @ 0x082D9FEC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species067_1: @ 0x082DA00C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 67, animation slot 1.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0001, 0x002C @ frame=1, duration=44
@@ -790,6 +868,7 @@ sFrontAnimCmd_Species067_1: @ 0x082DA00C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species068_1: @ 0x082DA01C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 68, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000B @ frame=1, duration=11
@@ -801,6 +880,7 @@ sFrontAnimCmd_Species068_1: @ 0x082DA01C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species069_1: @ 0x082DA03C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 69, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x0019 @ frame=1, duration=25
@@ -808,6 +888,7 @@ sFrontAnimCmd_Species069_1: @ 0x082DA03C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species070_1: @ 0x082DA04C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 70, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x0019 @ frame=1, duration=25
@@ -819,6 +900,7 @@ sFrontAnimCmd_Species070_1: @ 0x082DA04C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species071_1: @ 0x082DA06C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 71, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -830,6 +912,7 @@ sFrontAnimCmd_Species071_1: @ 0x082DA06C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species072_1: @ 0x082DA08C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 72, animation slot 1.
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -839,6 +922,7 @@ sFrontAnimCmd_Species072_1: @ 0x082DA08C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species073_1: @ 0x082DA0A4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 73, animation slot 1.
 	.2byte 0x0000, 0x0013 @ frame=0, duration=19
 	.2byte 0x0001, 0x0023 @ frame=1, duration=35
@@ -848,6 +932,7 @@ sFrontAnimCmd_Species073_1: @ 0x082DA0A4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species074_1: @ 0x082DA0BC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 74, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0024 @ frame=1, duration=36
@@ -855,6 +940,7 @@ sFrontAnimCmd_Species074_1: @ 0x082DA0BC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species075_1: @ 0x082DA0CC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 75, animation slot 1.
 	.2byte 0x0000, 0x0010 @ frame=0, duration=16
 	.2byte 0x0001, 0x0010 @ frame=1, duration=16
@@ -864,6 +950,7 @@ sFrontAnimCmd_Species075_1: @ 0x082DA0CC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species076_1: @ 0x082DA0E4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 76, animation slot 1.
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
 	.2byte 0x0001, 0x001F @ frame=1, duration=31
@@ -873,12 +960,14 @@ sFrontAnimCmd_Species076_1: @ 0x082DA0E4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species077_1: @ 0x082DA0FC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 77, animation slot 1.
 	.2byte 0x0001, 0x002D @ frame=1, duration=45
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species078_1: @ 0x082DA108
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 78, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
@@ -886,6 +975,7 @@ sFrontAnimCmd_Species078_1: @ 0x082DA108
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species079_1: @ 0x082DA118
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 79, animation slot 1.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
@@ -893,6 +983,7 @@ sFrontAnimCmd_Species079_1: @ 0x082DA118
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species080_1: @ 0x082DA128
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 80, animation slot 1.
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
 	.2byte 0x0001, 0x002D @ frame=1, duration=45
@@ -900,6 +991,7 @@ sFrontAnimCmd_Species080_1: @ 0x082DA128
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species081_1: @ 0x082DA138
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 81, animation slot 1.
 	.2byte 0x0000, 0x001C @ frame=0, duration=28
 	.2byte 0x0001, 0x001C @ frame=1, duration=28
@@ -909,6 +1001,7 @@ sFrontAnimCmd_Species081_1: @ 0x082DA138
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species082_1: @ 0x082DA150
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 82, animation slot 1.
 	.2byte 0x0000, 0x000E @ frame=0, duration=14
 	.2byte 0x0001, 0x000E @ frame=1, duration=14
@@ -920,6 +1013,7 @@ sFrontAnimCmd_Species082_1: @ 0x082DA150
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species083_1: @ 0x082DA170
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 83, animation slot 1.
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
@@ -936,6 +1030,7 @@ sFrontAnimCmd_Species083_1: @ 0x082DA170
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species084_1: @ 0x082DA1A4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 84, animation slot 1.
 	.2byte 0x0000, 0x0012 @ frame=0, duration=18
 	.2byte 0x0001, 0x0012 @ frame=1, duration=18
@@ -945,6 +1040,7 @@ sFrontAnimCmd_Species084_1: @ 0x082DA1A4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species085_1: @ 0x082DA1BC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 85, animation slot 1.
 	.2byte 0x0000, 0x000C @ frame=0, duration=12
 	.2byte 0x0001, 0x000C @ frame=1, duration=12
@@ -958,6 +1054,7 @@ sFrontAnimCmd_Species085_1: @ 0x082DA1BC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species086_1: @ 0x082DA1E4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 86, animation slot 1.
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
@@ -970,6 +1067,7 @@ sFrontAnimCmd_Species086_1: @ 0x082DA1E4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species087_1: @ 0x082DA208
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 87, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -977,6 +1075,7 @@ sFrontAnimCmd_Species087_1: @ 0x082DA208
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species088_1: @ 0x082DA218
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 88, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -986,6 +1085,7 @@ sFrontAnimCmd_Species088_1: @ 0x082DA218
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species088_2: @ 0x082DA230
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 88, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -994,6 +1094,7 @@ sFrontAnimCmd_Species088_2: @ 0x082DA230
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species089_1: @ 0x082DA244
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 89, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -1003,6 +1104,7 @@ sFrontAnimCmd_Species089_1: @ 0x082DA244
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species089_2: @ 0x082DA25C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 89, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1011,6 +1113,7 @@ sFrontAnimCmd_Species089_2: @ 0x082DA25C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species090_1: @ 0x082DA270
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 90, animation slot 1.
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
@@ -1019,6 +1122,7 @@ sFrontAnimCmd_Species090_1: @ 0x082DA270
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species091_1: @ 0x082DA284
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 91, animation slot 1.
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
@@ -1039,6 +1143,7 @@ sFrontAnimCmd_Species091_1: @ 0x082DA284
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species092_1: @ 0x082DA2C8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 92, animation slot 1.
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -1046,6 +1151,7 @@ sFrontAnimCmd_Species092_1: @ 0x082DA2C8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species093_1: @ 0x082DA2D8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 93, animation slot 1.
 	.2byte 0x0001, 0x0008 @ frame=1, duration=8
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
@@ -1055,6 +1161,7 @@ sFrontAnimCmd_Species093_1: @ 0x082DA2D8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species094_1: @ 0x082DA2F0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 94, animation slot 1.
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
@@ -1062,6 +1169,7 @@ sFrontAnimCmd_Species094_1: @ 0x082DA2F0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species095_1: @ 0x082DA300
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 95, animation slot 1.
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -1069,6 +1177,7 @@ sFrontAnimCmd_Species095_1: @ 0x082DA300
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species096_1: @ 0x082DA310
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 96, animation slot 1.
 	.2byte 0x0001, 0x000C @ frame=1, duration=12
 	.2byte 0x0000, 0x000C @ frame=0, duration=12
@@ -1079,6 +1188,7 @@ sFrontAnimCmd_Species096_1: @ 0x082DA310
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species097_1: @ 0x082DA32C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 97, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -1090,6 +1200,7 @@ sFrontAnimCmd_Species097_1: @ 0x082DA32C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species098_1: @ 0x082DA34C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 98, animation slot 1.
 	.2byte 0x0001, 0x0008 @ frame=1, duration=8
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
@@ -1100,6 +1211,7 @@ sFrontAnimCmd_Species098_1: @ 0x082DA34C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species099_1: @ 0x082DA368
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 99, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -1113,6 +1225,7 @@ sFrontAnimCmd_Species099_1: @ 0x082DA368
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species100_1: @ 0x082DA390
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 100, animation slot 1.
 	.2byte 0x0000, 0x0004 @ frame=0, duration=4
 	.2byte 0x0001, 0x0019 @ frame=1, duration=25
@@ -1122,6 +1235,7 @@ sFrontAnimCmd_Species100_1: @ 0x082DA390
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species101_1: @ 0x082DA3A8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 101, animation slot 1.
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -1131,6 +1245,7 @@ sFrontAnimCmd_Species101_1: @ 0x082DA3A8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species102_1: @ 0x082DA3C0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 102, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -1144,12 +1259,14 @@ sFrontAnimCmd_Species102_1: @ 0x082DA3C0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species103_1: @ 0x082DA3E8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 103, animation slot 1.
 	.2byte 0x0001, 0x0023 @ frame=1, duration=35
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species104_1: @ 0x082DA3F4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 104, animation slot 1.
 	.2byte 0x0001, 0x000E @ frame=1, duration=14
 	.2byte 0x0000, 0x000E @ frame=0, duration=14
@@ -1160,6 +1277,7 @@ sFrontAnimCmd_Species104_1: @ 0x082DA3F4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species105_1: @ 0x082DA410
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 105, animation slot 1.
 	.2byte 0x0001, 0x000E @ frame=1, duration=14
 	.2byte 0x0000, 0x000E @ frame=0, duration=14
@@ -1170,12 +1288,14 @@ sFrontAnimCmd_Species105_1: @ 0x082DA410
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species106_1: @ 0x082DA42C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 106, animation slot 1.
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species107_1: @ 0x082DA438
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 107, animation slot 1.
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
@@ -1188,6 +1308,7 @@ sFrontAnimCmd_Species107_1: @ 0x082DA438
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species108_1: @ 0x082DA45C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 108, animation slot 1.
 	.2byte 0x0000, 0x001C @ frame=0, duration=28
 	.2byte 0x0001, 0x0020 @ frame=1, duration=32
@@ -1195,6 +1316,7 @@ sFrontAnimCmd_Species108_1: @ 0x082DA45C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species109_1: @ 0x082DA46C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 109, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -1204,6 +1326,7 @@ sFrontAnimCmd_Species109_1: @ 0x082DA46C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species109_2: @ 0x082DA484
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 109, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1212,6 +1335,7 @@ sFrontAnimCmd_Species109_2: @ 0x082DA484
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species110_1: @ 0x082DA498
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 110, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -1221,6 +1345,7 @@ sFrontAnimCmd_Species110_1: @ 0x082DA498
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species110_2: @ 0x082DA4B0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 110, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1229,6 +1354,7 @@ sFrontAnimCmd_Species110_2: @ 0x082DA4B0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species111_1: @ 0x082DA4C4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 111, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -1238,6 +1364,7 @@ sFrontAnimCmd_Species111_1: @ 0x082DA4C4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species111_2: @ 0x082DA4DC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 111, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1246,6 +1373,7 @@ sFrontAnimCmd_Species111_2: @ 0x082DA4DC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species112_1: @ 0x082DA4F0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 112, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -1255,6 +1383,7 @@ sFrontAnimCmd_Species112_1: @ 0x082DA4F0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species112_2: @ 0x082DA508
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 112, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1263,6 +1392,7 @@ sFrontAnimCmd_Species112_2: @ 0x082DA508
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species113_1: @ 0x082DA51C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 113, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -1270,6 +1400,7 @@ sFrontAnimCmd_Species113_1: @ 0x082DA51C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species114_1: @ 0x082DA52C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 114, animation slot 1.
 	.2byte 0x0001, 0x0009 @ frame=1, duration=9
 	.2byte 0x0000, 0x0009 @ frame=0, duration=9
@@ -1284,6 +1415,7 @@ sFrontAnimCmd_Species114_1: @ 0x082DA52C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species115_1: @ 0x082DA558
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 115, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1292,6 +1424,7 @@ sFrontAnimCmd_Species115_1: @ 0x082DA558
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species116_1: @ 0x082DA56C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 116, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -1301,6 +1434,7 @@ sFrontAnimCmd_Species116_1: @ 0x082DA56C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species116_2: @ 0x082DA584
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 116, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1309,6 +1443,7 @@ sFrontAnimCmd_Species116_2: @ 0x082DA584
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species117_1: @ 0x082DA598
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 117, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -1318,6 +1453,7 @@ sFrontAnimCmd_Species117_1: @ 0x082DA598
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species117_2: @ 0x082DA5B0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 117, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1326,6 +1462,7 @@ sFrontAnimCmd_Species117_2: @ 0x082DA5B0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species118_1: @ 0x082DA5C4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 118, animation slot 1.
 	.2byte 0x0000, 0x0010 @ frame=0, duration=16
 	.2byte 0x0001, 0x0010 @ frame=1, duration=16
@@ -1339,6 +1476,7 @@ sFrontAnimCmd_Species118_1: @ 0x082DA5C4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species119_1: @ 0x082DA5EC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 119, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -1348,6 +1486,7 @@ sFrontAnimCmd_Species119_1: @ 0x082DA5EC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species120_1: @ 0x082DA604
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 120, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -1357,6 +1496,7 @@ sFrontAnimCmd_Species120_1: @ 0x082DA604
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species120_2: @ 0x082DA61C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 120, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1365,6 +1505,7 @@ sFrontAnimCmd_Species120_2: @ 0x082DA61C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species121_1: @ 0x082DA630
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 121, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -1374,6 +1515,7 @@ sFrontAnimCmd_Species121_1: @ 0x082DA630
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species121_2: @ 0x082DA648
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 121, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1382,6 +1524,7 @@ sFrontAnimCmd_Species121_2: @ 0x082DA648
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species122_1: @ 0x082DA65C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 122, animation slot 1.
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
@@ -1392,6 +1535,7 @@ sFrontAnimCmd_Species122_1: @ 0x082DA65C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species123_1: @ 0x082DA678
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 123, animation slot 1.
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
@@ -1404,6 +1548,7 @@ sFrontAnimCmd_Species123_1: @ 0x082DA678
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species124_1: @ 0x082DA69C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 124, animation slot 1.
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1413,6 +1558,7 @@ sFrontAnimCmd_Species124_1: @ 0x082DA69C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species125_1: @ 0x082DA6B4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 125, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1421,12 +1567,14 @@ sFrontAnimCmd_Species125_1: @ 0x082DA6B4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species126_1: @ 0x082DA6C8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 126, animation slot 1.
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species127_1: @ 0x082DA6D4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 127, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -1436,6 +1584,7 @@ sFrontAnimCmd_Species127_1: @ 0x082DA6D4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species127_2: @ 0x082DA6EC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 127, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1444,6 +1593,7 @@ sFrontAnimCmd_Species127_2: @ 0x082DA6EC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species128_1: @ 0x082DA700
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 128, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
@@ -1452,6 +1602,7 @@ sFrontAnimCmd_Species128_1: @ 0x082DA700
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species129_1: @ 0x082DA714
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 129, animation slot 1.
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
 	.2byte 0x0001, 0x0008 @ frame=1, duration=8
@@ -1465,6 +1616,7 @@ sFrontAnimCmd_Species129_1: @ 0x082DA714
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species130_1: @ 0x082DA73C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 130, animation slot 1.
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
 	.2byte 0x0001, 0x0020 @ frame=1, duration=32
@@ -1472,12 +1624,14 @@ sFrontAnimCmd_Species130_1: @ 0x082DA73C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species131_1: @ 0x082DA74C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 131, animation slot 1.
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species132_1: @ 0x082DA758
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 132, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1486,30 +1640,35 @@ sFrontAnimCmd_Species132_1: @ 0x082DA758
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species133_1: @ 0x082DA76C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 133, animation slot 1.
 	.2byte 0x0001, 0x0021 @ frame=1, duration=33
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species134_1: @ 0x082DA778
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 134, animation slot 1.
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species135_1: @ 0x082DA784
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 135, animation slot 1.
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species136_1: @ 0x082DA790
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 136, animation slot 1.
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species137_1: @ 0x082DA79C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 137, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1518,6 +1677,7 @@ sFrontAnimCmd_Species137_1: @ 0x082DA79C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species138_1: @ 0x082DA7B0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 138, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1530,6 +1690,7 @@ sFrontAnimCmd_Species138_1: @ 0x082DA7B0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species139_1: @ 0x082DA7D4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 139, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1538,6 +1699,7 @@ sFrontAnimCmd_Species139_1: @ 0x082DA7D4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species140_1: @ 0x082DA7E8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 140, animation slot 1.
 	.2byte 0x0001, 0x0008 @ frame=1, duration=8
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
@@ -1550,6 +1712,7 @@ sFrontAnimCmd_Species140_1: @ 0x082DA7E8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species141_1: @ 0x082DA80C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 141, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1558,6 +1721,7 @@ sFrontAnimCmd_Species141_1: @ 0x082DA80C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species142_1: @ 0x082DA820
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 142, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x0019 @ frame=0, duration=25
@@ -1566,6 +1730,7 @@ sFrontAnimCmd_Species142_1: @ 0x082DA820
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species143_1: @ 0x082DA834
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 143, animation slot 1.
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
@@ -1573,6 +1738,7 @@ sFrontAnimCmd_Species143_1: @ 0x082DA834
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species144_1: @ 0x082DA844
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 144, animation slot 1.
 	.2byte 0x0001, 0x0019 @ frame=1, duration=25
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
@@ -1581,6 +1747,7 @@ sFrontAnimCmd_Species144_1: @ 0x082DA844
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species145_1: @ 0x082DA858
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 145, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1589,6 +1756,7 @@ sFrontAnimCmd_Species145_1: @ 0x082DA858
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species146_1: @ 0x082DA86C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 146, animation slot 1.
 	.2byte 0x0001, 0x0003 @ frame=1, duration=3
 	.2byte 0x0000, 0x0003 @ frame=0, duration=3
@@ -1625,6 +1793,7 @@ sFrontAnimCmd_Species146_1: @ 0x082DA86C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species147_1: @ 0x082DA8F0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 147, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -1632,6 +1801,7 @@ sFrontAnimCmd_Species147_1: @ 0x082DA8F0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species148_1: @ 0x082DA900
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 148, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1640,6 +1810,7 @@ sFrontAnimCmd_Species148_1: @ 0x082DA900
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species149_1: @ 0x082DA914
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 149, animation slot 1.
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -1647,12 +1818,14 @@ sFrontAnimCmd_Species149_1: @ 0x082DA914
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species150_1: @ 0x082DA924
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 150, animation slot 1.
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species151_1: @ 0x082DA930
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 151, animation slot 1.
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
@@ -1660,6 +1833,7 @@ sFrontAnimCmd_Species151_1: @ 0x082DA930
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species152_1: @ 0x082DA940
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 152, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -1667,18 +1841,21 @@ sFrontAnimCmd_Species152_1: @ 0x082DA940
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species153_1: @ 0x082DA950
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 153, animation slot 1.
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species154_1: @ 0x082DA95C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 154, animation slot 1.
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species155_1: @ 0x082DA968
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 155, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1687,18 +1864,21 @@ sFrontAnimCmd_Species155_1: @ 0x082DA968
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species156_1: @ 0x082DA97C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 156, animation slot 1.
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species157_1: @ 0x082DA988
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 157, animation slot 1.
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species158_1: @ 0x082DA994
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 158, animation slot 1.
 	.2byte 0x0001, 0x0008 @ frame=1, duration=8
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
@@ -1709,12 +1889,14 @@ sFrontAnimCmd_Species158_1: @ 0x082DA994
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species159_1: @ 0x082DA9B0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 159, animation slot 1.
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species160_1: @ 0x082DA9BC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 160, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1723,6 +1905,7 @@ sFrontAnimCmd_Species160_1: @ 0x082DA9BC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species161_1: @ 0x082DA9D0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 161, animation slot 1.
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
@@ -1731,12 +1914,14 @@ sFrontAnimCmd_Species161_1: @ 0x082DA9D0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species162_1: @ 0x082DA9E4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 162, animation slot 1.
 	.2byte 0x0001, 0x0023 @ frame=1, duration=35
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species163_1: @ 0x082DA9F0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 163, animation slot 1.
 	.2byte 0x0001, 0x0007 @ frame=1, duration=7
 	.2byte 0x0000, 0x0007 @ frame=0, duration=7
@@ -1753,12 +1938,14 @@ sFrontAnimCmd_Species163_1: @ 0x082DA9F0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species164_1: @ 0x082DAA24
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 164, animation slot 1.
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species165_1: @ 0x082DAA30
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 165, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1767,6 +1954,7 @@ sFrontAnimCmd_Species165_1: @ 0x082DAA30
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species166_1: @ 0x082DAA44
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 166, animation slot 1.
 	.2byte 0x0001, 0x0003 @ frame=1, duration=3
 	.2byte 0x0000, 0x0003 @ frame=0, duration=3
@@ -1797,6 +1985,7 @@ sFrontAnimCmd_Species166_1: @ 0x082DAA44
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species167_1: @ 0x082DAAB0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 167, animation slot 1.
 	.2byte 0x0001, 0x0006 @ frame=1, duration=6
 	.2byte 0x0000, 0x0006 @ frame=0, duration=6
@@ -1809,6 +1998,7 @@ sFrontAnimCmd_Species167_1: @ 0x082DAAB0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species168_1: @ 0x082DAAD4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 168, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1817,6 +2007,7 @@ sFrontAnimCmd_Species168_1: @ 0x082DAAD4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species169_1: @ 0x082DAAE8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 169, animation slot 1.
 	.2byte 0x0000, 0x0002 @ frame=0, duration=2
 	.2byte 0x0001, 0x0002 @ frame=1, duration=2
@@ -1838,6 +2029,7 @@ sFrontAnimCmd_Species169_1: @ 0x082DAAE8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species170_1: @ 0x082DAB30
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 170, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -1847,6 +2039,7 @@ sFrontAnimCmd_Species170_1: @ 0x082DAB30
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species170_2: @ 0x082DAB48
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 170, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1855,6 +2048,7 @@ sFrontAnimCmd_Species170_2: @ 0x082DAB48
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species171_1: @ 0x082DAB5C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 171, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -1864,6 +2058,7 @@ sFrontAnimCmd_Species171_1: @ 0x082DAB5C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species171_2: @ 0x082DAB74
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 171, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1872,6 +2067,7 @@ sFrontAnimCmd_Species171_2: @ 0x082DAB74
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species172_1: @ 0x082DAB88
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 172, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -1881,6 +2077,7 @@ sFrontAnimCmd_Species172_1: @ 0x082DAB88
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species172_2: @ 0x082DABA0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 172, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1889,6 +2086,7 @@ sFrontAnimCmd_Species172_2: @ 0x082DABA0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species173_1: @ 0x082DABB4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 173, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1897,6 +2095,7 @@ sFrontAnimCmd_Species173_1: @ 0x082DABB4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species174_1: @ 0x082DABC8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 174, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -1906,6 +2105,7 @@ sFrontAnimCmd_Species174_1: @ 0x082DABC8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species174_2: @ 0x082DABE0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 174, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1914,6 +2114,7 @@ sFrontAnimCmd_Species174_2: @ 0x082DABE0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species175_1: @ 0x082DABF4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 175, animation slot 1.
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
@@ -1921,6 +2122,7 @@ sFrontAnimCmd_Species175_1: @ 0x082DABF4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species176_1: @ 0x082DAC04
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 176, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -1928,6 +2130,7 @@ sFrontAnimCmd_Species176_1: @ 0x082DAC04
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species177_1: @ 0x082DAC14
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 177, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -1937,6 +2140,7 @@ sFrontAnimCmd_Species177_1: @ 0x082DAC14
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species177_2: @ 0x082DAC2C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 177, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1945,6 +2149,7 @@ sFrontAnimCmd_Species177_2: @ 0x082DAC2C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species178_1: @ 0x082DAC40
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 178, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x002D @ frame=1, duration=45
@@ -1956,6 +2161,7 @@ sFrontAnimCmd_Species178_1: @ 0x082DAC40
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species178_2: @ 0x082DAC60
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 178, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -1964,6 +2170,7 @@ sFrontAnimCmd_Species178_2: @ 0x082DAC60
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species179_1: @ 0x082DAC74
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 179, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1974,6 +2181,7 @@ sFrontAnimCmd_Species179_1: @ 0x082DAC74
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species180_1: @ 0x082DAC90
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 180, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -1982,6 +2190,7 @@ sFrontAnimCmd_Species180_1: @ 0x082DAC90
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species181_1: @ 0x082DACA4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 181, animation slot 1.
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -1989,6 +2198,7 @@ sFrontAnimCmd_Species181_1: @ 0x082DACA4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species182_1: @ 0x082DACB4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 182, animation slot 1.
 	.2byte 0x0000, 0x0016 @ frame=0, duration=22
 	.2byte 0x0001, 0x0016 @ frame=1, duration=22
@@ -2000,6 +2210,7 @@ sFrontAnimCmd_Species182_1: @ 0x082DACB4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species183_1: @ 0x082DACD4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 183, animation slot 1.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0001, 0x002C @ frame=1, duration=44
@@ -2009,6 +2220,7 @@ sFrontAnimCmd_Species183_1: @ 0x082DACD4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species184_1: @ 0x082DACEC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 184, animation slot 1.
 	.2byte 0x0000, 0x0016 @ frame=0, duration=22
 	.2byte 0x0001, 0x0016 @ frame=1, duration=22
@@ -2018,6 +2230,7 @@ sFrontAnimCmd_Species184_1: @ 0x082DACEC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species185_1: @ 0x082DAD04
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 185, animation slot 1.
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
@@ -2028,6 +2241,7 @@ sFrontAnimCmd_Species185_1: @ 0x082DAD04
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species186_1: @ 0x082DAD20
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 186, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -2038,6 +2252,7 @@ sFrontAnimCmd_Species186_1: @ 0x082DAD20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species187_1: @ 0x082DAD3C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 187, animation slot 1.
 	.2byte 0x0001, 0x0019 @ frame=1, duration=25
 	.2byte 0x0000, 0x0019 @ frame=0, duration=25
@@ -2046,6 +2261,7 @@ sFrontAnimCmd_Species187_1: @ 0x082DAD3C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species188_1: @ 0x082DAD50
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 188, animation slot 1.
 	.2byte 0x0001, 0x000C @ frame=1, duration=12
 	.2byte 0x0000, 0x000C @ frame=0, duration=12
@@ -2058,6 +2274,7 @@ sFrontAnimCmd_Species188_1: @ 0x082DAD50
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species189_1: @ 0x082DAD74
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 189, animation slot 1.
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
 	.2byte 0x0000, 0x0019 @ frame=0, duration=25
@@ -2068,12 +2285,14 @@ sFrontAnimCmd_Species189_1: @ 0x082DAD74
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species190_1: @ 0x082DAD90
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 190, animation slot 1.
 	.2byte 0x0001, 0x0023 @ frame=1, duration=35
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species191_1: @ 0x082DAD9C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 191, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -2082,6 +2301,7 @@ sFrontAnimCmd_Species191_1: @ 0x082DAD9C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species192_1: @ 0x082DADB0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 192, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -2089,6 +2309,7 @@ sFrontAnimCmd_Species192_1: @ 0x082DADB0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species193_1: @ 0x082DADC0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 193, animation slot 1.
 	.2byte 0x0001, 0x0002 @ frame=1, duration=2
 	.2byte 0x0000, 0x0002 @ frame=0, duration=2
@@ -2115,6 +2336,7 @@ sFrontAnimCmd_Species193_1: @ 0x082DADC0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species194_1: @ 0x082DAE1C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 194, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -2122,12 +2344,14 @@ sFrontAnimCmd_Species194_1: @ 0x082DAE1C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species195_1: @ 0x082DAE2C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 195, animation slot 1.
 	.2byte 0x0001, 0x0020 @ frame=1, duration=32
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species196_1: @ 0x082DAE38
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 196, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0019 @ frame=1, duration=25
@@ -2135,18 +2359,21 @@ sFrontAnimCmd_Species196_1: @ 0x082DAE38
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species197_1: @ 0x082DAE48
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 197, animation slot 1.
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species198_1: @ 0x082DAE54
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 198, animation slot 1.
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species199_1: @ 0x082DAE60
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 199, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -2154,6 +2381,7 @@ sFrontAnimCmd_Species199_1: @ 0x082DAE60
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species200_1: @ 0x082DAE70
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 200, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -2168,6 +2396,7 @@ sFrontAnimCmd_Species200_1: @ 0x082DAE70
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species201_1: @ 0x082DAE9C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 201, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -2175,6 +2404,7 @@ sFrontAnimCmd_Species201_1: @ 0x082DAE9C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species202_1: @ 0x082DAEAC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 202, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -2184,6 +2414,7 @@ sFrontAnimCmd_Species202_1: @ 0x082DAEAC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species202_2: @ 0x082DAEC4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 202, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -2192,6 +2423,7 @@ sFrontAnimCmd_Species202_2: @ 0x082DAEC4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species203_1: @ 0x082DAED8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 203, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -2203,6 +2435,7 @@ sFrontAnimCmd_Species203_1: @ 0x082DAED8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species203_2: @ 0x082DAEF8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 203, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -2211,6 +2444,7 @@ sFrontAnimCmd_Species203_2: @ 0x082DAEF8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species204_1: @ 0x082DAF0C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 204, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -2223,6 +2457,7 @@ sFrontAnimCmd_Species204_1: @ 0x082DAF0C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species205_1: @ 0x082DAF30
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 205, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -2231,6 +2466,7 @@ sFrontAnimCmd_Species205_1: @ 0x082DAF30
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species206_1: @ 0x082DAF44
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 206, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
@@ -2239,12 +2475,14 @@ sFrontAnimCmd_Species206_1: @ 0x082DAF44
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species207_1: @ 0x082DAF58
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 207, animation slot 1.
 	.2byte 0x0001, 0x0011 @ frame=1, duration=17
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species208_1: @ 0x082DAF64
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 208, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
@@ -2255,18 +2493,21 @@ sFrontAnimCmd_Species208_1: @ 0x082DAF64
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species209_1: @ 0x082DAF80
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 209, animation slot 1.
 	.2byte 0x0001, 0x0020 @ frame=1, duration=32
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species210_1: @ 0x082DAF8C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 210, animation slot 1.
 	.2byte 0x0001, 0x0023 @ frame=1, duration=35
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species211_1: @ 0x082DAF98
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 211, animation slot 1.
 	.2byte 0x0001, 0x0008 @ frame=1, duration=8
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
@@ -2278,12 +2519,14 @@ sFrontAnimCmd_Species211_1: @ 0x082DAF98
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species212_1: @ 0x082DAFB8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 212, animation slot 1.
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species213_1: @ 0x082DAFC4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 213, animation slot 1.
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
@@ -2291,6 +2534,7 @@ sFrontAnimCmd_Species213_1: @ 0x082DAFC4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species214_1: @ 0x082DAFD4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 214, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -2300,6 +2544,7 @@ sFrontAnimCmd_Species214_1: @ 0x082DAFD4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species214_2: @ 0x082DAFEC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 214, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -2308,24 +2553,28 @@ sFrontAnimCmd_Species214_2: @ 0x082DAFEC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species215_1: @ 0x082DB000
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 215, animation slot 1.
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species216_1: @ 0x082DB00C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 216, animation slot 1.
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species217_1: @ 0x082DB018
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 217, animation slot 1.
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species218_1: @ 0x082DB024
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 218, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -2335,6 +2584,7 @@ sFrontAnimCmd_Species218_1: @ 0x082DB024
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species218_2: @ 0x082DB03C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 218, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -2343,6 +2593,7 @@ sFrontAnimCmd_Species218_2: @ 0x082DB03C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species219_1: @ 0x082DB050
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 219, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -2352,6 +2603,7 @@ sFrontAnimCmd_Species219_1: @ 0x082DB050
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species219_2: @ 0x082DB068
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 219, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -2360,6 +2612,7 @@ sFrontAnimCmd_Species219_2: @ 0x082DB068
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species220_1: @ 0x082DB07C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 220, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -2368,6 +2621,7 @@ sFrontAnimCmd_Species220_1: @ 0x082DB07C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species221_1: @ 0x082DB090
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 221, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -2376,6 +2630,7 @@ sFrontAnimCmd_Species221_1: @ 0x082DB090
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species222_1: @ 0x082DB0A4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 222, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -2385,6 +2640,7 @@ sFrontAnimCmd_Species222_1: @ 0x082DB0A4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species222_2: @ 0x082DB0BC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 222, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -2393,6 +2649,7 @@ sFrontAnimCmd_Species222_2: @ 0x082DB0BC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species223_1: @ 0x082DB0D0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 223, animation slot 1.
 	.2byte 0x0001, 0x0008 @ frame=1, duration=8
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
@@ -2401,6 +2658,7 @@ sFrontAnimCmd_Species223_1: @ 0x082DB0D0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species224_1: @ 0x082DB0E4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 224, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -2409,6 +2667,7 @@ sFrontAnimCmd_Species224_1: @ 0x082DB0E4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species225_1: @ 0x082DB0F8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 225, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -2417,6 +2676,7 @@ sFrontAnimCmd_Species225_1: @ 0x082DB0F8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species226_1: @ 0x082DB10C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 226, animation slot 1.
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
@@ -2425,6 +2685,7 @@ sFrontAnimCmd_Species226_1: @ 0x082DB10C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species227_1: @ 0x082DB120
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 227, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -2434,6 +2695,7 @@ sFrontAnimCmd_Species227_1: @ 0x082DB120
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species227_2: @ 0x082DB138
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 227, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -2442,6 +2704,7 @@ sFrontAnimCmd_Species227_2: @ 0x082DB138
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species228_1: @ 0x082DB14C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 228, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -2450,12 +2713,14 @@ sFrontAnimCmd_Species228_1: @ 0x082DB14C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species229_1: @ 0x082DB160
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 229, animation slot 1.
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species230_1: @ 0x082DB16C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 230, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -2465,6 +2730,7 @@ sFrontAnimCmd_Species230_1: @ 0x082DB16C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species230_2: @ 0x082DB184
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 230, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -2473,6 +2739,7 @@ sFrontAnimCmd_Species230_2: @ 0x082DB184
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species231_1: @ 0x082DB198
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 231, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -2484,6 +2751,7 @@ sFrontAnimCmd_Species231_1: @ 0x082DB198
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species231_2: @ 0x082DB1B8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 231, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -2492,6 +2760,7 @@ sFrontAnimCmd_Species231_2: @ 0x082DB1B8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species232_1: @ 0x082DB1CC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 232, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -2503,6 +2772,7 @@ sFrontAnimCmd_Species232_1: @ 0x082DB1CC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species232_2: @ 0x082DB1EC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 232, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -2511,6 +2781,7 @@ sFrontAnimCmd_Species232_2: @ 0x082DB1EC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species233_1: @ 0x082DB200
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 233, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -2520,12 +2791,14 @@ sFrontAnimCmd_Species233_1: @ 0x082DB200
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species234_1: @ 0x082DB218
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 234, animation slot 1.
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species235_1: @ 0x082DB224
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 235, animation slot 1.
 	.2byte 0x0001, 0x000C @ frame=1, duration=12
 	.2byte 0x0000, 0x000C @ frame=0, duration=12
@@ -2534,12 +2807,14 @@ sFrontAnimCmd_Species235_1: @ 0x082DB224
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species236_1: @ 0x082DB238
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 236, animation slot 1.
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species237_1: @ 0x082DB244
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 237, animation slot 1.
 	.2byte 0x0000, 0x0004 @ frame=0, duration=4
 	.2byte 0x0001, 0x0004 @ frame=1, duration=4
@@ -2555,6 +2830,7 @@ sFrontAnimCmd_Species237_1: @ 0x082DB244
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species238_1: @ 0x082DB274
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 238, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -2565,6 +2841,7 @@ sFrontAnimCmd_Species238_1: @ 0x082DB274
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species239_1: @ 0x082DB290
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 239, animation slot 1.
 	.2byte 0x0001, 0x0032 @ frame=1, duration=50
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
@@ -2572,6 +2849,7 @@ sFrontAnimCmd_Species239_1: @ 0x082DB290
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species240_1: @ 0x082DB2A0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 240, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -2583,18 +2861,21 @@ sFrontAnimCmd_Species240_1: @ 0x082DB2A0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species241_1: @ 0x082DB2C0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 241, animation slot 1.
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species242_1: @ 0x082DB2CC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 242, animation slot 1.
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species243_1: @ 0x082DB2D8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 243, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -2603,18 +2884,21 @@ sFrontAnimCmd_Species243_1: @ 0x082DB2D8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species244_1: @ 0x082DB2EC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 244, animation slot 1.
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species245_1: @ 0x082DB2F8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 245, animation slot 1.
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species246_1: @ 0x082DB304
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 246, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
@@ -2623,12 +2907,14 @@ sFrontAnimCmd_Species246_1: @ 0x082DB304
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species247_1: @ 0x082DB318
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 247, animation slot 1.
 	.2byte 0x0001, 0x0028 @ frame=1, duration=40
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species248_1: @ 0x082DB324
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 248, animation slot 1.
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
@@ -2637,18 +2923,21 @@ sFrontAnimCmd_Species248_1: @ 0x082DB324
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species249_1: @ 0x082DB338
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 249, animation slot 1.
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species250_1: @ 0x082DB344
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 250, animation slot 1.
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species251_1: @ 0x082DB350
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 251, animation slot 1.
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
@@ -2657,6 +2946,7 @@ sFrontAnimCmd_Species251_1: @ 0x082DB350
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species252_1: @ 0x082DB364
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 252, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -2664,6 +2954,7 @@ sFrontAnimCmd_Species252_1: @ 0x082DB364
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species277_1: @ 0x082DB374
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 277, animation slot 1.
 	.2byte 0x0000, 0x0006 @ frame=0, duration=6
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -2673,6 +2964,7 @@ sFrontAnimCmd_Species277_1: @ 0x082DB374
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species278_1: @ 0x082DB38C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 278, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x0012 @ frame=1, duration=18
@@ -2682,6 +2974,7 @@ sFrontAnimCmd_Species278_1: @ 0x082DB38C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species279_1: @ 0x082DB3A4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 279, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x001A @ frame=1, duration=26
@@ -2689,6 +2982,7 @@ sFrontAnimCmd_Species279_1: @ 0x082DB3A4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species280_1: @ 0x082DB3B4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 280, animation slot 1.
 	.2byte 0x0000, 0x0007 @ frame=0, duration=7
 	.2byte 0x0001, 0x0004 @ frame=1, duration=4
@@ -2700,6 +2994,7 @@ sFrontAnimCmd_Species280_1: @ 0x082DB3B4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species281_1: @ 0x082DB3D4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 281, animation slot 1.
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
 	.2byte 0x0001, 0x0019 @ frame=1, duration=25
@@ -2707,6 +3002,7 @@ sFrontAnimCmd_Species281_1: @ 0x082DB3D4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species282_1: @ 0x082DB3E4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 282, animation slot 1.
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0x0001, 0x0019 @ frame=1, duration=25
@@ -2716,6 +3012,7 @@ sFrontAnimCmd_Species282_1: @ 0x082DB3E4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species282_2: @ 0x082DB3FC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 282, animation slot 2.
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0x0002, 0x0008 @ frame=2, duration=8
@@ -2723,17 +3020,20 @@ sFrontAnimCmd_Species282_2: @ 0x082DB3FC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species282_3: @ 0x082DB40C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 282, animation slot 3.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0002, 0x000A @ frame=2, duration=10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species282_4: @ 0x082DB418
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 282, animation slot 4.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species283_1: @ 0x082DB420
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 283, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x0008 @ frame=1, duration=8
@@ -2743,6 +3043,7 @@ sFrontAnimCmd_Species283_1: @ 0x082DB420
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species284_1: @ 0x082DB438
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 284, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
@@ -2756,6 +3057,7 @@ sFrontAnimCmd_Species284_1: @ 0x082DB438
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species285_1: @ 0x082DB460
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 285, animation slot 1.
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
 	.2byte 0x0001, 0x002C @ frame=1, duration=44
@@ -2765,6 +3067,7 @@ sFrontAnimCmd_Species285_1: @ 0x082DB460
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species286_1: @ 0x082DB478
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 286, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x002C @ frame=1, duration=44
@@ -2772,6 +3075,7 @@ sFrontAnimCmd_Species286_1: @ 0x082DB478
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species287_1: @ 0x082DB488
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 287, animation slot 1.
 	.2byte 0x0000, 0x001B @ frame=0, duration=27
 	.2byte 0x0001, 0x0006 @ frame=1, duration=6
@@ -2781,6 +3085,7 @@ sFrontAnimCmd_Species287_1: @ 0x082DB488
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species288_1: @ 0x082DB4A0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 288, animation slot 1.
 	.2byte 0x0000, 0x001B @ frame=0, duration=27
 	.2byte 0x0001, 0x0006 @ frame=1, duration=6
@@ -2790,6 +3095,7 @@ sFrontAnimCmd_Species288_1: @ 0x082DB4A0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species289_1: @ 0x082DB4B8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 289, animation slot 1.
 	.2byte 0x0000, 0x000E @ frame=0, duration=14
 	.2byte 0x0001, 0x000E @ frame=1, duration=14
@@ -2799,6 +3105,7 @@ sFrontAnimCmd_Species289_1: @ 0x082DB4B8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species290_1: @ 0x082DB4D0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 290, animation slot 1.
 	.2byte 0x0000, 0x0016 @ frame=0, duration=22
 	.2byte 0x0001, 0x0023 @ frame=1, duration=35
@@ -2806,6 +3113,7 @@ sFrontAnimCmd_Species290_1: @ 0x082DB4D0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species291_1: @ 0x082DB4E0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 291, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0019 @ frame=1, duration=25
@@ -2813,11 +3121,13 @@ sFrontAnimCmd_Species291_1: @ 0x082DB4E0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species291_2: @ 0x082DB4F0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 291, animation slot 2.
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species292_1: @ 0x082DB4F8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 292, animation slot 1.
 	.2byte 0x0000, 0x0002 @ frame=0, duration=2
 	.2byte 0x0001, 0x0002 @ frame=1, duration=2
@@ -2831,11 +3141,13 @@ sFrontAnimCmd_Species292_1: @ 0x082DB4F8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species292_2: @ 0x082DB520
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 292, animation slot 2.
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species293_1: @ 0x082DB528
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 293, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -2845,11 +3157,13 @@ sFrontAnimCmd_Species293_1: @ 0x082DB528
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species293_2: @ 0x082DB540
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 293, animation slot 2.
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species294_1: @ 0x082DB548
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 294, animation slot 1.
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
@@ -2869,11 +3183,13 @@ sFrontAnimCmd_Species294_1: @ 0x082DB548
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species294_2: @ 0x082DB588
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 294, animation slot 2.
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species295_1: @ 0x082DB590
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 295, animation slot 1.
 	.2byte 0x0000, 0x0016 @ frame=0, duration=22
 	.2byte 0x0001, 0x0037 @ frame=1, duration=55
@@ -2881,6 +3197,7 @@ sFrontAnimCmd_Species295_1: @ 0x082DB590
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species296_1: @ 0x082DB5A0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 296, animation slot 1.
 	.2byte 0x0000, 0x0006 @ frame=0, duration=6
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -2890,6 +3207,7 @@ sFrontAnimCmd_Species296_1: @ 0x082DB5A0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species297_1: @ 0x082DB5B8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 297, animation slot 1.
 	.2byte 0x0000, 0x0016 @ frame=0, duration=22
 	.2byte 0x0001, 0x0016 @ frame=1, duration=22
@@ -2901,6 +3219,7 @@ sFrontAnimCmd_Species297_1: @ 0x082DB5B8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species298_1: @ 0x082DB5D8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 298, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -2914,6 +3233,7 @@ sFrontAnimCmd_Species298_1: @ 0x082DB5D8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species299_1: @ 0x082DB600
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 299, animation slot 1.
 	.2byte 0x0000, 0x0007 @ frame=0, duration=7
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -2927,6 +3247,7 @@ sFrontAnimCmd_Species299_1: @ 0x082DB600
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species300_1: @ 0x082DB628
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 300, animation slot 1.
 	.2byte 0x0000, 0x0007 @ frame=0, duration=7
 	.2byte 0x0001, 0x0023 @ frame=1, duration=35
@@ -2934,6 +3255,7 @@ sFrontAnimCmd_Species300_1: @ 0x082DB628
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species301_1: @ 0x082DB638
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 301, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0016 @ frame=1, duration=22
@@ -2943,6 +3265,7 @@ sFrontAnimCmd_Species301_1: @ 0x082DB638
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species302_1: @ 0x082DB650
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 302, animation slot 1.
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
@@ -2965,6 +3288,7 @@ sFrontAnimCmd_Species302_1: @ 0x082DB650
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species303_1: @ 0x082DB69C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 303, animation slot 1.
 	.2byte 0x0000, 0x0021 @ frame=0, duration=33
 	.2byte 0x0001, 0x0021 @ frame=1, duration=33
@@ -2974,6 +3298,7 @@ sFrontAnimCmd_Species303_1: @ 0x082DB69C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species304_1: @ 0x082DB6B4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 304, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -2987,6 +3312,7 @@ sFrontAnimCmd_Species304_1: @ 0x082DB6B4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species305_1: @ 0x082DB6DC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 305, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x0012 @ frame=1, duration=18
@@ -2994,6 +3320,7 @@ sFrontAnimCmd_Species305_1: @ 0x082DB6DC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species306_1: @ 0x082DB6EC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 306, animation slot 1.
 	.2byte 0x0000, 0x0006 @ frame=0, duration=6
 	.2byte 0x0001, 0x0006 @ frame=1, duration=6
@@ -3009,6 +3336,7 @@ sFrontAnimCmd_Species306_1: @ 0x082DB6EC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species307_1: @ 0x082DB71C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 307, animation slot 1.
 	.2byte 0x0000, 0x0006 @ frame=0, duration=6
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -3018,6 +3346,7 @@ sFrontAnimCmd_Species307_1: @ 0x082DB71C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species309_1: @ 0x082DB734
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 309, animation slot 1.
 	.2byte 0x0000, 0x0011 @ frame=0, duration=17
 	.2byte 0x0001, 0x0017 @ frame=1, duration=23
@@ -3025,6 +3354,7 @@ sFrontAnimCmd_Species309_1: @ 0x082DB734
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species310_1: @ 0x082DB744
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 310, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
@@ -3038,6 +3368,7 @@ sFrontAnimCmd_Species310_1: @ 0x082DB744
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species311_1: @ 0x082DB76C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 311, animation slot 1.
 	.2byte 0x0000, 0x0006 @ frame=0, duration=6
 	.2byte 0x0001, 0x0012 @ frame=1, duration=18
@@ -3047,11 +3378,13 @@ sFrontAnimCmd_Species311_1: @ 0x082DB76C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species311_2: @ 0x082DB784
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 311, animation slot 2.
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species312_1: @ 0x082DB78C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 312, animation slot 1.
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
 	.2byte 0x0001, 0x0008 @ frame=1, duration=8
@@ -3065,11 +3398,13 @@ sFrontAnimCmd_Species312_1: @ 0x082DB78C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species312_2: @ 0x082DB7B4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 312, animation slot 2.
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species313_1: @ 0x082DB7BC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 313, animation slot 1.
 	.2byte 0x0000, 0x0016 @ frame=0, duration=22
 	.2byte 0x0001, 0x0016 @ frame=1, duration=22
@@ -3081,6 +3416,7 @@ sFrontAnimCmd_Species313_1: @ 0x082DB7BC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species314_1: @ 0x082DB7DC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 314, animation slot 1.
 	.2byte 0x0000, 0x001A @ frame=0, duration=26
 	.2byte 0x0001, 0x0030 @ frame=1, duration=48
@@ -3088,6 +3424,7 @@ sFrontAnimCmd_Species314_1: @ 0x082DB7DC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species315_1: @ 0x082DB7EC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 315, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0023 @ frame=1, duration=35
@@ -3095,6 +3432,7 @@ sFrontAnimCmd_Species315_1: @ 0x082DB7EC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species316_1: @ 0x082DB7FC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 316, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x002E @ frame=1, duration=46
@@ -3102,6 +3440,7 @@ sFrontAnimCmd_Species316_1: @ 0x082DB7FC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species317_1: @ 0x082DB80C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 317, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x0012 @ frame=1, duration=18
@@ -3111,6 +3450,7 @@ sFrontAnimCmd_Species317_1: @ 0x082DB80C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species318_1: @ 0x082DB824
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 318, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3122,6 +3462,7 @@ sFrontAnimCmd_Species318_1: @ 0x082DB824
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species319_1: @ 0x082DB844
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 319, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3133,6 +3474,7 @@ sFrontAnimCmd_Species319_1: @ 0x082DB844
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species320_1: @ 0x082DB864
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 320, animation slot 1.
 	.2byte 0x0000, 0x001B @ frame=0, duration=27
 	.2byte 0x0001, 0x001B @ frame=1, duration=27
@@ -3144,6 +3486,7 @@ sFrontAnimCmd_Species320_1: @ 0x082DB864
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species321_1: @ 0x082DB884
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 321, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3153,6 +3496,7 @@ sFrontAnimCmd_Species321_1: @ 0x082DB884
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species322_1: @ 0x082DB89C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 322, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -3162,6 +3506,7 @@ sFrontAnimCmd_Species322_1: @ 0x082DB89C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species323_1: @ 0x082DB8B4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 323, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3179,6 +3524,7 @@ sFrontAnimCmd_Species323_1: @ 0x082DB8B4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species324_1: @ 0x082DB8EC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 324, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3196,6 +3542,7 @@ sFrontAnimCmd_Species324_1: @ 0x082DB8EC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species325_1: @ 0x082DB924
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 325, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3205,6 +3552,7 @@ sFrontAnimCmd_Species325_1: @ 0x082DB924
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species326_1: @ 0x082DB93C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 326, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3216,6 +3564,7 @@ sFrontAnimCmd_Species326_1: @ 0x082DB93C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species327_1: @ 0x082DB95C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 327, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3225,6 +3574,7 @@ sFrontAnimCmd_Species327_1: @ 0x082DB95C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species328_1: @ 0x082DB974
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 328, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3236,6 +3586,7 @@ sFrontAnimCmd_Species328_1: @ 0x082DB974
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species329_1: @ 0x082DB994
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 329, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3247,6 +3598,7 @@ sFrontAnimCmd_Species329_1: @ 0x082DB994
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species330_1: @ 0x082DB9B4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 330, animation slot 1.
 	.2byte 0x0000, 0x0006 @ frame=0, duration=6
 	.2byte 0x0001, 0x0006 @ frame=1, duration=6
@@ -3260,6 +3612,7 @@ sFrontAnimCmd_Species330_1: @ 0x082DB9B4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species331_1: @ 0x082DB9DC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 331, animation slot 1.
 	.2byte 0x0000, 0x0006 @ frame=0, duration=6
 	.2byte 0x0001, 0x0006 @ frame=1, duration=6
@@ -3273,6 +3626,7 @@ sFrontAnimCmd_Species331_1: @ 0x082DB9DC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species332_1: @ 0x082DBA04
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 332, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3282,6 +3636,7 @@ sFrontAnimCmd_Species332_1: @ 0x082DBA04
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species333_1: @ 0x082DBA1C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 333, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3293,6 +3648,7 @@ sFrontAnimCmd_Species333_1: @ 0x082DBA1C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species334_1: @ 0x082DBA3C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 334, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3304,6 +3660,7 @@ sFrontAnimCmd_Species334_1: @ 0x082DBA3C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species335_1: @ 0x082DBA5C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 335, animation slot 1.
 	.2byte 0x0000, 0x0007 @ frame=0, duration=7
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -3317,6 +3674,7 @@ sFrontAnimCmd_Species335_1: @ 0x082DBA5C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species336_1: @ 0x082DBA84
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 336, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -3325,6 +3683,7 @@ sFrontAnimCmd_Species336_1: @ 0x082DBA84
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species337_1: @ 0x082DBA98
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 337, animation slot 1.
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
 	.2byte 0x0001, 0x0019 @ frame=1, duration=25
@@ -3334,6 +3693,7 @@ sFrontAnimCmd_Species337_1: @ 0x082DBA98
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species338_1: @ 0x082DBAB0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 338, animation slot 1.
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
 	.2byte 0x0001, 0x0021 @ frame=1, duration=33
@@ -3343,6 +3703,7 @@ sFrontAnimCmd_Species338_1: @ 0x082DBAB0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species339_1: @ 0x082DBAC8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 339, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3352,6 +3713,7 @@ sFrontAnimCmd_Species339_1: @ 0x082DBAC8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species340_1: @ 0x082DBAE0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 340, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3363,6 +3725,7 @@ sFrontAnimCmd_Species340_1: @ 0x082DBAE0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species341_1: @ 0x082DBB00
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 341, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x002B @ frame=1, duration=43
@@ -3375,6 +3738,7 @@ sFrontAnimCmd_Species341_1: @ 0x082DBB00
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species342_1: @ 0x082DBB24
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 342, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3384,6 +3748,7 @@ sFrontAnimCmd_Species342_1: @ 0x082DBB24
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species343_1: @ 0x082DBB3C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 343, animation slot 1.
 	.2byte 0x0000, 0x0002 @ frame=0, duration=2
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -3393,6 +3758,7 @@ sFrontAnimCmd_Species343_1: @ 0x082DBB3C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species344_1: @ 0x082DBB54
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 344, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3408,6 +3774,7 @@ sFrontAnimCmd_Species344_1: @ 0x082DBB54
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species345_1: @ 0x082DBB84
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 345, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3417,6 +3784,7 @@ sFrontAnimCmd_Species345_1: @ 0x082DBB84
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species346_1: @ 0x082DBB9C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 346, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3426,6 +3794,7 @@ sFrontAnimCmd_Species346_1: @ 0x082DBB9C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species347_1: @ 0x082DBBB4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 347, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3435,6 +3804,7 @@ sFrontAnimCmd_Species347_1: @ 0x082DBBB4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species348_1: @ 0x082DBBCC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 348, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -3444,6 +3814,7 @@ sFrontAnimCmd_Species348_1: @ 0x082DBBCC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species348_2: @ 0x082DBBE4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 348, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -3452,6 +3823,7 @@ sFrontAnimCmd_Species348_2: @ 0x082DBBE4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species349_1: @ 0x082DBBF8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 349, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -3461,6 +3833,7 @@ sFrontAnimCmd_Species349_1: @ 0x082DBBF8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species349_2: @ 0x082DBC10
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 349, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -3469,6 +3842,7 @@ sFrontAnimCmd_Species349_2: @ 0x082DBC10
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species350_1: @ 0x082DBC24
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 350, animation slot 1.
 	.2byte 0x0000, 0x000C @ frame=0, duration=12
 	.2byte 0x0001, 0x000C @ frame=1, duration=12
@@ -3480,6 +3854,7 @@ sFrontAnimCmd_Species350_1: @ 0x082DBC24
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species351_1: @ 0x082DBC44
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 351, animation slot 1.
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -3495,6 +3870,7 @@ sFrontAnimCmd_Species351_1: @ 0x082DBC44
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species352_1: @ 0x082DBC74
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 352, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3504,6 +3880,7 @@ sFrontAnimCmd_Species352_1: @ 0x082DBC74
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species353_1: @ 0x082DBC8C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 353, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -3513,6 +3890,7 @@ sFrontAnimCmd_Species353_1: @ 0x082DBC8C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species354_1: @ 0x082DBCA4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 354, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -3522,6 +3900,7 @@ sFrontAnimCmd_Species354_1: @ 0x082DBCA4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species355_1: @ 0x082DBCBC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 355, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -3533,6 +3912,7 @@ sFrontAnimCmd_Species355_1: @ 0x082DBCBC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species356_1: @ 0x082DBCDC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 356, animation slot 1.
 	.2byte 0x0000, 0x0016 @ frame=0, duration=22
 	.2byte 0x0001, 0x0002 @ frame=1, duration=2
@@ -3540,6 +3920,7 @@ sFrontAnimCmd_Species356_1: @ 0x082DBCDC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species357_1: @ 0x082DBCEC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 357, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000B @ frame=1, duration=11
@@ -3551,6 +3932,7 @@ sFrontAnimCmd_Species357_1: @ 0x082DBCEC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species358_1: @ 0x082DBD0C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 358, animation slot 1.
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -3562,6 +3944,7 @@ sFrontAnimCmd_Species358_1: @ 0x082DBD0C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species358_2: @ 0x082DBD2C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 358, animation slot 2.
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0x0002, 0x0008 @ frame=2, duration=8
@@ -3572,6 +3955,7 @@ sFrontAnimCmd_Species358_2: @ 0x082DBD2C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species359_1: @ 0x082DBD48
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 359, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x0014 @ frame=1, duration=20
@@ -3581,6 +3965,7 @@ sFrontAnimCmd_Species359_1: @ 0x082DBD48
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species359_2: @ 0x082DBD60
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 359, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -3589,6 +3974,7 @@ sFrontAnimCmd_Species359_2: @ 0x082DBD60
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species360_1: @ 0x082DBD74
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 360, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3598,6 +3984,7 @@ sFrontAnimCmd_Species360_1: @ 0x082DBD74
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species361_1: @ 0x082DBD8C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 361, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3607,6 +3994,7 @@ sFrontAnimCmd_Species361_1: @ 0x082DBD8C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species362_1: @ 0x082DBDA4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 362, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3616,6 +4004,7 @@ sFrontAnimCmd_Species362_1: @ 0x082DBDA4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species363_1: @ 0x082DBDBC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 363, animation slot 1.
 	.2byte 0x0000, 0x0012 @ frame=0, duration=18
 	.2byte 0x0001, 0x002C @ frame=1, duration=44
@@ -3623,6 +4012,7 @@ sFrontAnimCmd_Species363_1: @ 0x082DBDBC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species364_1: @ 0x082DBDCC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 364, animation slot 1.
 	.2byte 0x0000, 0x000D @ frame=0, duration=13
 	.2byte 0x0001, 0x0016 @ frame=1, duration=22
@@ -3633,6 +4023,7 @@ sFrontAnimCmd_Species364_1: @ 0x082DBDCC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species365_1: @ 0x082DBDE8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 365, animation slot 1.
 	.2byte 0x0000, 0x000D @ frame=0, duration=13
 	.2byte 0x0001, 0x0007 @ frame=1, duration=7
@@ -3644,6 +4035,7 @@ sFrontAnimCmd_Species365_1: @ 0x082DBDE8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species366_1: @ 0x082DBE08
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 366, animation slot 1.
 	.2byte 0x0000, 0x0016 @ frame=0, duration=22
 	.2byte 0x0001, 0x0016 @ frame=1, duration=22
@@ -3655,6 +4047,7 @@ sFrontAnimCmd_Species366_1: @ 0x082DBE08
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species367_1: @ 0x082DBE28
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 367, animation slot 1.
 	.2byte 0x0000, 0x000E @ frame=0, duration=14
 	.2byte 0x0001, 0x000E @ frame=1, duration=14
@@ -3664,6 +4057,7 @@ sFrontAnimCmd_Species367_1: @ 0x082DBE28
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species368_1: @ 0x082DBE40
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 368, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -3672,6 +4066,7 @@ sFrontAnimCmd_Species368_1: @ 0x082DBE40
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species369_1: @ 0x082DBE54
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 369, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3681,6 +4076,7 @@ sFrontAnimCmd_Species369_1: @ 0x082DBE54
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species370_1: @ 0x082DBE6C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 370, animation slot 1.
 	.2byte 0x0000, 0x0009 @ frame=0, duration=9
 	.2byte 0x0001, 0x0009 @ frame=1, duration=9
@@ -3695,6 +4091,7 @@ sFrontAnimCmd_Species370_1: @ 0x082DBE6C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species371_1: @ 0x082DBE98
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 371, animation slot 1.
 	.2byte 0x0000, 0x0009 @ frame=0, duration=9
 	.2byte 0x0001, 0x0009 @ frame=1, duration=9
@@ -3704,6 +4101,7 @@ sFrontAnimCmd_Species371_1: @ 0x082DBE98
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species372_1: @ 0x082DBEB0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 372, animation slot 1.
 	.2byte 0x0000, 0x0009 @ frame=0, duration=9
 	.2byte 0x0001, 0x002C @ frame=1, duration=44
@@ -3711,6 +4109,7 @@ sFrontAnimCmd_Species372_1: @ 0x082DBEB0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species373_1: @ 0x082DBEC0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 373, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3720,6 +4119,7 @@ sFrontAnimCmd_Species373_1: @ 0x082DBEC0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species374_1: @ 0x082DBED8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 374, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3729,6 +4129,7 @@ sFrontAnimCmd_Species374_1: @ 0x082DBED8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species375_1: @ 0x082DBEF0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 375, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3738,6 +4139,7 @@ sFrontAnimCmd_Species375_1: @ 0x082DBEF0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species376_1: @ 0x082DBF08
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 376, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3747,6 +4149,7 @@ sFrontAnimCmd_Species376_1: @ 0x082DBF08
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species377_1: @ 0x082DBF20
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 377, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3758,6 +4161,7 @@ sFrontAnimCmd_Species377_1: @ 0x082DBF20
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species378_1: @ 0x082DBF40
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 378, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3769,6 +4173,7 @@ sFrontAnimCmd_Species378_1: @ 0x082DBF40
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species379_1: @ 0x082DBF60
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 379, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3780,6 +4185,7 @@ sFrontAnimCmd_Species379_1: @ 0x082DBF60
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species380_1: @ 0x082DBF80
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 380, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3791,6 +4197,7 @@ sFrontAnimCmd_Species380_1: @ 0x082DBF80
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species381_1: @ 0x082DBFA0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 381, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3800,6 +4207,7 @@ sFrontAnimCmd_Species381_1: @ 0x082DBFA0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species382_1: @ 0x082DBFB8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 382, animation slot 1.
 	.2byte 0x0000, 0x0021 @ frame=0, duration=33
 	.2byte 0x0001, 0x002C @ frame=1, duration=44
@@ -3809,6 +4217,7 @@ sFrontAnimCmd_Species382_1: @ 0x082DBFB8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species383_1: @ 0x082DBFD0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 383, animation slot 1.
 	.2byte 0x0000, 0x000C @ frame=0, duration=12
 	.2byte 0x0001, 0x001D @ frame=1, duration=29
@@ -3818,6 +4227,7 @@ sFrontAnimCmd_Species383_1: @ 0x082DBFD0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species384_1: @ 0x082DBFE8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 384, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x002C @ frame=1, duration=44
@@ -3825,26 +4235,31 @@ sFrontAnimCmd_Species384_1: @ 0x082DBFE8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species385_1: @ 0x082DBFF8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 385, animation slot 1.
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species385_2: @ 0x082DC000
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 385, animation slot 2.
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species385_3: @ 0x082DC008
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 385, animation slot 3.
 	.2byte 0x0002, 0x0001 @ frame=2, duration=1
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species385_4: @ 0x082DC010
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 385, animation slot 4.
 	.2byte 0x0003, 0x0001 @ frame=3, duration=1
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species386_1: @ 0x082DC018
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 386, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000B @ frame=1, duration=11
@@ -3856,6 +4271,7 @@ sFrontAnimCmd_Species386_1: @ 0x082DC018
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species387_1: @ 0x082DC038
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 387, animation slot 1.
 	.2byte 0x0000, 0x0016 @ frame=0, duration=22
 	.2byte 0x0001, 0x0016 @ frame=1, duration=22
@@ -3865,6 +4281,7 @@ sFrontAnimCmd_Species387_1: @ 0x082DC038
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species388_1: @ 0x082DC050
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 388, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3874,6 +4291,7 @@ sFrontAnimCmd_Species388_1: @ 0x082DC050
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species389_1: @ 0x082DC068
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 389, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3885,6 +4303,7 @@ sFrontAnimCmd_Species389_1: @ 0x082DC068
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species390_1: @ 0x082DC088
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 390, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3896,6 +4315,7 @@ sFrontAnimCmd_Species390_1: @ 0x082DC088
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species391_1: @ 0x082DC0A8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 391, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3905,6 +4325,7 @@ sFrontAnimCmd_Species391_1: @ 0x082DC0A8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species392_1: @ 0x082DC0C0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 392, animation slot 1.
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
 	.2byte 0x0001, 0x0019 @ frame=1, duration=25
@@ -3912,6 +4333,7 @@ sFrontAnimCmd_Species392_1: @ 0x082DC0C0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species393_1: @ 0x082DC0D0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 393, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x0027 @ frame=1, duration=39
@@ -3919,6 +4341,7 @@ sFrontAnimCmd_Species393_1: @ 0x082DC0D0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species394_1: @ 0x082DC0E0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 394, animation slot 1.
 	.2byte 0x0000, 0x0003 @ frame=0, duration=3
 	.2byte 0x0001, 0x0003 @ frame=1, duration=3
@@ -3936,6 +4359,7 @@ sFrontAnimCmd_Species394_1: @ 0x082DC0E0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species395_1: @ 0x082DC118
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 395, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3945,6 +4369,7 @@ sFrontAnimCmd_Species395_1: @ 0x082DC118
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species396_1: @ 0x082DC130
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 396, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -3954,6 +4379,7 @@ sFrontAnimCmd_Species396_1: @ 0x082DC130
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species397_1: @ 0x082DC148
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 397, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -3963,6 +4389,7 @@ sFrontAnimCmd_Species397_1: @ 0x082DC148
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species398_1: @ 0x082DC160
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 398, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -3972,6 +4399,7 @@ sFrontAnimCmd_Species398_1: @ 0x082DC160
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species399_1: @ 0x082DC178
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 399, animation slot 1.
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
 	.2byte 0x0001, 0x0008 @ frame=1, duration=8
@@ -3981,6 +4409,7 @@ sFrontAnimCmd_Species399_1: @ 0x082DC178
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species400_1: @ 0x082DC190
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 400, animation slot 1.
 	.2byte 0x0000, 0x0010 @ frame=0, duration=16
 	.2byte 0x0001, 0x0010 @ frame=1, duration=16
@@ -3990,6 +4419,7 @@ sFrontAnimCmd_Species400_1: @ 0x082DC190
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species401_1: @ 0x082DC1A8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 401, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -3999,6 +4429,7 @@ sFrontAnimCmd_Species401_1: @ 0x082DC1A8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species401_2: @ 0x082DC1C0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 401, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -4007,6 +4438,7 @@ sFrontAnimCmd_Species401_2: @ 0x082DC1C0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species402_1: @ 0x082DC1D4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 402, animation slot 1.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -4016,6 +4448,7 @@ sFrontAnimCmd_Species402_1: @ 0x082DC1D4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species403_1: @ 0x082DC1EC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 403, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -4025,6 +4458,7 @@ sFrontAnimCmd_Species403_1: @ 0x082DC1EC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species403_2: @ 0x082DC204
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 403, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -4033,6 +4467,7 @@ sFrontAnimCmd_Species403_2: @ 0x082DC204
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species404_1: @ 0x082DC218
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 404, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -4042,6 +4477,7 @@ sFrontAnimCmd_Species404_1: @ 0x082DC218
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species404_2: @ 0x082DC230
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 404, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -4050,6 +4486,7 @@ sFrontAnimCmd_Species404_2: @ 0x082DC230
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species405_1: @ 0x082DC244
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 405, animation slot 1.
 	.2byte 0x0000, 0x000B @ frame=0, duration=11
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -4059,6 +4496,7 @@ sFrontAnimCmd_Species405_1: @ 0x082DC244
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species405_2: @ 0x082DC25C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 405, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -4067,6 +4505,7 @@ sFrontAnimCmd_Species405_2: @ 0x082DC25C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species406_1: @ 0x082DC270
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 406, animation slot 1.
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0x0001, 0x0008 @ frame=1, duration=8
@@ -4076,6 +4515,7 @@ sFrontAnimCmd_Species406_1: @ 0x082DC270
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species406_2: @ 0x082DC288
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 406, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -4084,6 +4524,7 @@ sFrontAnimCmd_Species406_2: @ 0x082DC288
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species407_1: @ 0x082DC29C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 407, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -4093,6 +4534,7 @@ sFrontAnimCmd_Species407_1: @ 0x082DC29C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species407_2: @ 0x082DC2B4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 407, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -4101,6 +4543,7 @@ sFrontAnimCmd_Species407_2: @ 0x082DC2B4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species408_1: @ 0x082DC2C8
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 408, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -4110,6 +4553,7 @@ sFrontAnimCmd_Species408_1: @ 0x082DC2C8
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species408_2: @ 0x082DC2E0
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 408, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -4118,6 +4562,7 @@ sFrontAnimCmd_Species408_2: @ 0x082DC2E0
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species409_1: @ 0x082DC2F4
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 409, animation slot 1.
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -4132,6 +4577,7 @@ sFrontAnimCmd_Species409_1: @ 0x082DC2F4
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species409_2: @ 0x082DC320
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 409, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -4140,6 +4586,7 @@ sFrontAnimCmd_Species409_2: @ 0x082DC320
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species410_1: @ 0x082DC334
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 410, animation slot 1.
 	.2byte 0x0000, 0x0010 @ frame=0, duration=16
 	.2byte 0x0001, 0x0010 @ frame=1, duration=16
@@ -4149,6 +4596,7 @@ sFrontAnimCmd_Species410_1: @ 0x082DC334
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species410_2: @ 0x082DC34C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 410, animation slot 2.
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
@@ -4157,6 +4605,7 @@ sFrontAnimCmd_Species410_2: @ 0x082DC34C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species411_1: @ 0x082DC360
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 411, animation slot 1.
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0001, 0x000F @ frame=1, duration=15
@@ -4170,6 +4619,7 @@ sFrontAnimCmd_Species411_1: @ 0x082DC360
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species412_1: @ 0x082DC388
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 412, animation slot 1.
 	.2byte 0x0000, 0x0006 @ frame=0, duration=6
 	.2byte 0x0001, 0x0006 @ frame=1, duration=6
@@ -4178,6 +4628,7 @@ sFrontAnimCmd_Species412_1: @ 0x082DC388
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species413_1: @ 0x082DC39C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 413, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4185,6 +4636,7 @@ sFrontAnimCmd_Species413_1: @ 0x082DC39C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species414_1: @ 0x082DC3AC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 414, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4192,6 +4644,7 @@ sFrontAnimCmd_Species414_1: @ 0x082DC3AC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species415_1: @ 0x082DC3BC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 415, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4199,6 +4652,7 @@ sFrontAnimCmd_Species415_1: @ 0x082DC3BC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species416_1: @ 0x082DC3CC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 416, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4206,6 +4660,7 @@ sFrontAnimCmd_Species416_1: @ 0x082DC3CC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species417_1: @ 0x082DC3DC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 417, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4213,6 +4668,7 @@ sFrontAnimCmd_Species417_1: @ 0x082DC3DC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species418_1: @ 0x082DC3EC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 418, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4220,6 +4676,7 @@ sFrontAnimCmd_Species418_1: @ 0x082DC3EC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species419_1: @ 0x082DC3FC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 419, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4227,6 +4684,7 @@ sFrontAnimCmd_Species419_1: @ 0x082DC3FC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species420_1: @ 0x082DC40C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 420, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4234,6 +4692,7 @@ sFrontAnimCmd_Species420_1: @ 0x082DC40C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species421_1: @ 0x082DC41C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 421, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4241,6 +4700,7 @@ sFrontAnimCmd_Species421_1: @ 0x082DC41C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species422_1: @ 0x082DC42C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 422, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4248,6 +4708,7 @@ sFrontAnimCmd_Species422_1: @ 0x082DC42C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species423_1: @ 0x082DC43C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 423, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4255,6 +4716,7 @@ sFrontAnimCmd_Species423_1: @ 0x082DC43C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species424_1: @ 0x082DC44C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 424, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4262,6 +4724,7 @@ sFrontAnimCmd_Species424_1: @ 0x082DC44C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species425_1: @ 0x082DC45C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 425, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4269,6 +4732,7 @@ sFrontAnimCmd_Species425_1: @ 0x082DC45C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species426_1: @ 0x082DC46C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 426, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4276,6 +4740,7 @@ sFrontAnimCmd_Species426_1: @ 0x082DC46C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species427_1: @ 0x082DC47C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 427, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4283,6 +4748,7 @@ sFrontAnimCmd_Species427_1: @ 0x082DC47C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species428_1: @ 0x082DC48C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 428, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4290,6 +4756,7 @@ sFrontAnimCmd_Species428_1: @ 0x082DC48C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species429_1: @ 0x082DC49C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 429, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4297,6 +4764,7 @@ sFrontAnimCmd_Species429_1: @ 0x082DC49C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species430_1: @ 0x082DC4AC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 430, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4304,6 +4772,7 @@ sFrontAnimCmd_Species430_1: @ 0x082DC4AC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species431_1: @ 0x082DC4BC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 431, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4311,6 +4780,7 @@ sFrontAnimCmd_Species431_1: @ 0x082DC4BC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species432_1: @ 0x082DC4CC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 432, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4318,6 +4788,7 @@ sFrontAnimCmd_Species432_1: @ 0x082DC4CC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species433_1: @ 0x082DC4DC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 433, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4325,6 +4796,7 @@ sFrontAnimCmd_Species433_1: @ 0x082DC4DC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species434_1: @ 0x082DC4EC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 434, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4332,6 +4804,7 @@ sFrontAnimCmd_Species434_1: @ 0x082DC4EC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species435_1: @ 0x082DC4FC
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 435, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4339,6 +4812,7 @@ sFrontAnimCmd_Species435_1: @ 0x082DC4FC
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species436_1: @ 0x082DC50C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 436, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4346,6 +4820,7 @@ sFrontAnimCmd_Species436_1: @ 0x082DC50C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species437_1: @ 0x082DC51C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 437, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4353,6 +4828,7 @@ sFrontAnimCmd_Species437_1: @ 0x082DC51C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species438_1: @ 0x082DC52C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 438, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
@@ -4360,6 +4836,7 @@ sFrontAnimCmd_Species438_1: @ 0x082DC52C
 	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sFrontAnimCmd_Species439_1: @ 0x082DC53C
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_FRONT_ANIM_TABLE
 	@ First referenced by species index 439, animation slot 1.
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
 	.2byte 0x0001, 0x001E @ frame=1, duration=30

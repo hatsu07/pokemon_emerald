@@ -1082,6 +1082,7 @@ sWirelessStatusHeaderTexts:
 	.4byte gText_PeopleInUnionRoom
 	.4byte gText_PeopleCommunicating
 sWirelessStatusActivityGroupInfo:
+	@ ANALYSIS: SEMANTIC_NUMERIC_WIRELESS_STATUS_TABLE
 	.byte 0x01, 0x01, 2 @ BATTLE_SINGLE, BATTLE, 2
 	.byte 0x02, 0x01, 2 @ BATTLE_DOUBLE, BATTLE, 2
 	.byte 0x03, 0x01, 4 @ BATTLE_MULTI, BATTLE, 4
@@ -1753,6 +1754,7 @@ sServerScript_HasNews: @ 0x082C4DA4
 	.4byte 0x7 @ flag / size
 	.4byte 0
 sServerScript_SendNews: @ 0x082C4DD4
+	@ ANALYSIS: SEMANTIC_NUMERIC_MYSTERY_GIFT_SERVER_SCRIPT
 	.4byte 18 @ SVR_LOAD_CLIENT_SCRIPT
 	.4byte 0x28 @ flag / size
 	.4byte sClientScript_SaveNews
@@ -1787,6 +1789,7 @@ sServerScript_SendNews: @ 0x082C4DD4
 	.4byte 0x3 @ flag / size
 	.4byte 0
 sServerScript_SendCard: @ 0x082C4E58
+	@ ANALYSIS: SEMANTIC_NUMERIC_MYSTERY_GIFT_SERVER_SCRIPT
 	.4byte 18 @ SVR_LOAD_CLIENT_SCRIPT
 	.4byte 0x30 @ flag / size
 	.4byte sClientScript_SaveCard
@@ -1857,6 +1860,7 @@ sServerScript_NothingSent: @ 0x082C4F30
 	.4byte 0x0 @ flag / size
 	.4byte 0
 gMysteryGiftServerScript_SendWonderNews: @ 0x082C4F60
+	@ ANALYSIS: SEMANTIC_NUMERIC_MYSTERY_GIFT_SERVER_SCRIPT
 	.4byte 27 @ SVR_COPY_SAVED_NEWS
 	.4byte 0x0 @ flag / size
 	.4byte 0
@@ -1882,6 +1886,7 @@ gMysteryGiftServerScript_SendWonderNews: @ 0x082C4F60
 	.4byte 0x0 @ flag / size
 	.4byte sServerScript_SendNews
 gMysteryGiftServerScript_SendWonderCard: @ 0x082C4FC0
+	@ ANALYSIS: SEMANTIC_NUMERIC_MYSTERY_GIFT_SERVER_SCRIPT
 	.4byte 26 @ SVR_COPY_SAVED_CARD
 	.4byte 0x0 @ flag / size
 	.4byte 0

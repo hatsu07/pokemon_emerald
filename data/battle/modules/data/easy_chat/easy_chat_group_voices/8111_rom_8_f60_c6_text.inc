@@ -71072,6 +71072,7 @@ SongTrack_MUS_RG_TEACHY_TV_MENU_04: @ 0x0890EC7F
 	m4a_running_eot_key 0x00 @ EOT (running status)
 	.globl SongHeader_MUS_RG_TEACHY_TV_MENU
 SongHeader_MUS_RG_TEACHY_TV_MENU: @ 0x0890ECBC
+	@ ANALYSIS: SEMANTIC_NUMERIC_SONG_HEADER
 	@ M4A song header: song 558 (MUS_RG_TEACHY_TV_MENU)
 	m4a_song_header 4, 0, 0, 0xB2, VoiceGroup_JP_0863A508
 	.4byte SongTrack_MUS_RG_TEACHY_TV_MENU_01

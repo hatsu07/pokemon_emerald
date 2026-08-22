@@ -62,6 +62,7 @@ sAnims_AuroraBeamRing: @ 0x08570C74
 	.4byte sAnim_AuroraBeamRing_1 @ [1]
 
 sAffineAnim_AuroraBeamRing: @ 0x08570C7C
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x0100, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x0060, 0x0060, 0x0100, 0x0000 @ AFFINE_FRAME(96, 96, rot=0x00, duration=0)
@@ -151,6 +152,7 @@ gPsywaveRingSpriteTemplate: @ 0x08570D54
 	.4byte gSoundWaveAffineAnims @ affineAnims
 	.4byte AnimToTargetInSinWave @ callback
 sAffineAnim_HydroCannonCharge: @ 0x08570D6C
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0003, 0x0003, 0x320A, 0x0000 @ AFFINE_FRAME(3, 3, rot=0x00, duration=0)
 	.2byte 0x0000, 0x0000, 0x0A00, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
@@ -158,6 +160,7 @@ sAffineAnim_HydroCannonCharge: @ 0x08570D6C
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_HydroCannonBeam: @ 0x08570D8C
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0150, 0x0150, 0x0000, 0x0000 @ AFFINE_FRAME(336, 336, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
@@ -270,18 +273,21 @@ sAnims_WeatherBallIceDown: @ 0x08570E84
 	.4byte sAnim_WeatherBallIceDown_0 @ [0]
 
 sAffineAnim_WaterPulseRingBubble_0: @ 0x08570E88
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0100, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
 	.2byte 0xFFF6, 0xFFF6, 0x0F00, 0x0000 @ AFFINE_FRAME(-10, -10, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_WaterPulseRingBubble_1: @ 0x08570EA0
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x00E0, 0x00E0, 0x0000, 0x0000 @ AFFINE_FRAME(224, 224, rot=0x00, duration=0)
 	.2byte 0xFFF8, 0xFFF8, 0x0F00, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_WeatherBallIceDown_0: @ 0x08570EB8
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0150, 0x0150, 0x0000, 0x0000 @ AFFINE_FRAME(336, 336, rot=0x00, duration=0)
 	.2byte 0x0000, 0x0000, 0x0F00, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
@@ -389,6 +395,7 @@ sAnims_FirePlume: @ 0x08570FBC
 	.4byte sAnim_FirePlume_0 @ [0]
 
 sAffineAnim_LargeFlame_0: @ 0x08570FC0
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0032, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(50, 256, rot=0x00, duration=0)
 	.2byte 0x0020, 0x0000, 0x0700, 0x0000 @ AFFINE_FRAME(32, 0, rot=0x00, duration=0)
@@ -453,6 +460,7 @@ sUnusedSmallEmberSpriteTemplate: @ 0x08571050
 	.4byte AnimUnusedSmallEmber @ callback (AnimUnusedSmallEmber)
 
 sAffineAnim_Sunlight_0: @ 0x08571068
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0050, 0x0050, 0x0000, 0x0000 @ AFFINE_FRAME(80, 80, rot=0x00, duration=0)
 	.2byte 0x0002, 0x0002, 0x010A, 0x0000 @ AFFINE_FRAME(2, 2, rot=0x00, duration=0)
@@ -528,6 +536,7 @@ sAnims_FireCross: @ 0x08571124
 
 	@ semanticized v110: canonical static data at 0x08571128, size=0x10
 sAffineAnim_FireBlastUnused_0:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0000, 0x0000
 	.byte 0x00, 0x01
 	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, 0, 0, 1)
@@ -535,6 +544,7 @@ sAffineAnim_FireBlastUnused_0:
 
 	@ semanticized v110: canonical static data at 0x08571138, size=0x18
 sAffineAnim_FireBlastUnused_1:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x00A0, 0x00A0
 	.byte 0x00, 0x00
 	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(160, 160, 0, 0)
@@ -662,6 +672,7 @@ gLightningSpriteTemplate: @ 0x085712A4
 	.4byte gDummySpriteAffineAnimTable @ +0x10
 	.4byte AnimLightning @ +0x14
 sAffineAnim_UnusedSpinningFist:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.4byte 0x01000100 @ +0x18
 	.4byte 0 @ +0x1C
 	.4byte 0 @ +0x20
@@ -707,6 +718,7 @@ sAnims_UnusedCirclingShock:
 	.4byte gDummySpriteAffineAnimTable @ +0xB4
 	.4byte TranslateAnimSpriteToTargetMonLocation @ +0xB8
 sAffineAnim_FlashingSpark:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.4byte 0 @ +0xBC
 	.4byte 0x00000114 @ +0xC0
 	.4byte 0x00007FFE @ +0xC4
@@ -727,6 +739,7 @@ sAnim_ThunderboltOrb:
 sAnims_ThunderboltOrb:
 	.4byte sAnim_ThunderboltOrb @ +0xF8
 sAffineAnim_ThunderboltOrb:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.4byte 0x00E800E8 @ +0xFC
 	.4byte 0 @ +0x100
 	.4byte 0xFFF8FFF8 @ +0x104
@@ -824,6 +837,7 @@ gElectricChargingParticlesSpriteTemplate: @ 0x0857148C
 	.4byte gPriorityABattleAnimSpriteCallbackDummy @ callback (SpriteCallbackDummy)
 
 sAffineAnim_CircleOfLight_0: @ 0x085714A4
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0010, 0x0010, 0x0000, 0x0000 @ AFFINE_FRAME(16, 16, rot=0x00, duration=0)
 	.2byte 0x0004, 0x0004, 0x3C00, 0x0000 @ AFFINE_FRAME(4, 4, rot=0x00, duration=0)
@@ -835,6 +849,7 @@ sAffineAnim_CircleOfLight_0: @ 0x085714A4
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_CircleOfLight_1: @ 0x085714E4
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0010, 0x0010, 0x0000, 0x0000 @ AFFINE_FRAME(16, 16, rot=0x00, duration=0)
 	.2byte 0x0008, 0x0008, 0x1E00, 0x0000 @ AFFINE_FRAME(8, 8, rot=0x00, duration=0)
@@ -844,6 +859,7 @@ sAffineAnim_CircleOfLight_1: @ 0x085714E4
 	.2byte 0x7FFE, 0x0003, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(3)
 
 sAffineAnim_CircleOfLight_2: @ 0x08571514
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0010, 0x0010, 0x0000, 0x0000 @ AFFINE_FRAME(16, 16, rot=0x00, duration=0)
 	.2byte 0x0008, 0x0008, 0x1E00, 0x0000 @ AFFINE_FRAME(8, 8, rot=0x00, duration=0)
@@ -922,6 +938,7 @@ sAnims_VoltTackleBolt: @ 0x085715C0
 	.4byte sAnim_VoltTackleBolt_3 @ [3]
 
 sAffineAnim_VoltTackleBolt: @ 0x085715D0
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0100, 0x0100, 0x0040, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
@@ -1025,6 +1042,7 @@ gAnims_SmallBubblePair:
 	.4byte sAnim_SmallBubblePair @ [0]
 
 sAffineAnim_IceCrystalSpiralInwardLarge:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x0128, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
@@ -1050,6 +1068,7 @@ gIceCrystalSpiralInwardSmall:
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimIcePunchSwirlingParticle @ callback
 sAffineAnim_IceBeamInnerCrystal:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x010A, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
@@ -1076,6 +1095,7 @@ gIceBeamOuterCrystalSpriteTemplate:
 	.4byte AnimIceBeamParticle @ callback
 	@ semanticized v110: canonical static data at 0x08571728, size=0x24
 sAffineAnim_IceCrystalHit:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x00CE, 0x00CE
 	.byte 0x00, 0x00
 	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(206, 206, 0, 0)
@@ -1217,21 +1237,25 @@ sHailCoordData:
 	.4byte 0x0021E026 @ x=38, y=120, bPosition=2, type=0
 
 sAffineAnim_HailParticle_0: @ 0x085718C0
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0100, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_HailParticle_1: @ 0x085718D0
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x00F0, 0x00F0, 0x0000, 0x0000 @ AFFINE_FRAME(240, 240, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_HailParticle_2: @ 0x085718E0
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x00E0, 0x00E0, 0x0000, 0x0000 @ AFFINE_FRAME(224, 224, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_WeatherBallIceDown: @ 0x085718F0
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0150, 0x0150, 0x0000, 0x0000 @ AFFINE_FRAME(336, 336, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
@@ -1283,26 +1307,31 @@ sAnims_IceBallChunk: @ 0x0857195C
 	.4byte sAnim_IceBallChunk_1 @ [1]
 
 sAffineAnim_IceBallChunk_0: @ 0x08571964
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x00E0, 0x00E0, 0x0000, 0x0000 @ AFFINE_FRAME(224, 224, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_IceBallChunk_1: @ 0x08571974
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0118, 0x0118, 0x0000, 0x0000 @ AFFINE_FRAME(280, 280, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_IceBallChunk_2: @ 0x08571984
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0150, 0x0150, 0x0000, 0x0000 @ AFFINE_FRAME(336, 336, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_IceBallChunk_3: @ 0x08571994
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0180, 0x0180, 0x0000, 0x0000 @ AFFINE_FRAME(384, 384, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_IceBallChunk_4: @ 0x085719A4
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x01C0, 0x01C0, 0x0000, 0x0000 @ AFFINE_FRAME(448, 448, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
@@ -1432,6 +1461,7 @@ sSlidingKickSpriteTemplate: @ 0x08571AC4
 	.4byte AnimSlidingKick @ callback (AnimSlidingKick)
 
 sAffineAnim_SpinningKickOrPunch_0: @ 0x08571ADC
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0100, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
 	.2byte 0xFFF8, 0xFFF8, 0x0114, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
@@ -1450,6 +1480,7 @@ sSpinningKickOrPunchSpriteTemplate: @ 0x08571AF8
 	.4byte sAffineAnims_SpinningKickOrPunch @ affineAnims
 	.4byte AnimSpinningKickOrPunch @ callback
 sAffineAnim_SpinningKickOrPunch_0_2: @ 0x08571B10
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0100, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
 	.2byte 0xFFFC, 0xFFFC, 0x0114, 0x0000 @ AFFINE_FRAME(-4, -4, rot=0x00, duration=0)
@@ -1500,6 +1531,7 @@ sBrickBreakWallShardSpriteTemplate: @ 0x08571B8C
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimBrickBreakWallShard @ callback
 sAffineAnim_SuperpowerOrb_0: @ 0x08571BA4
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0020, 0x0020, 0x0000, 0x0000 @ AFFINE_FRAME(32, 32, rot=0x00, duration=0)
 	.2byte 0x0004, 0x0004, 0x4000, 0x0000 @ AFFINE_FRAME(4, 4, rot=0x00, duration=0)
@@ -1612,6 +1644,7 @@ sRevengeScratchSpriteTemplate_2: @ 0x08571CB4
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimRevengeScratch @ callback
 sAffineAnim_FocusPunchFist_0: @ 0x08571CCC
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0200, 0x0200, 0x0000, 0x0000 @ AFFINE_FRAME(512, 512, rot=0x00, duration=0)
 	.2byte 0xFFE0, 0xFFE0, 0x0800, 0x0000 @ AFFINE_FRAME(-32, -32, rot=0x00, duration=0)
@@ -1672,6 +1705,7 @@ sAnims_PoisonProjectile: @ 0x08571D48
 	.4byte sAnim_SludgeBombHit @ [2]
 
 sAffineAnim_PoisonProjectile: @ 0x08571D54
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0160, 0x0160, 0x0000, 0x0000 @ AFFINE_FRAME(352, 352, rot=0x00, duration=0)
 	.2byte 0xFFF6, 0xFFF6, 0x0A00, 0x0000 @ AFFINE_FRAME(-10, -10, rot=0x00, duration=0)
@@ -1679,6 +1713,7 @@ sAffineAnim_PoisonProjectile: @ 0x08571D54
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
 
 sAffineAnim_SludgeBombHit: @ 0x08571D74
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x00EC, 0x00EC, 0x0000, 0x0000 @ AFFINE_FRAME(236, 236, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
@@ -1719,6 +1754,7 @@ gSludgeBombHitParticleSpriteTemplate: @ 0x08571DBC
 	.4byte AnimSludgeBombHitParticle @ callback (AnimSludgeBombHitParticle)
 
 sAffineAnim_AcidPoisonDroplet: @ 0x08571DD4
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0xFFF0, 0x0010, 0x0600, 0x0000 @ AFFINE_FRAME(-16, 16, rot=0x00, duration=0)
 	.2byte 0x0010, 0xFFF0, 0x0600, 0x0000 @ AFFINE_FRAME(16, -16, rot=0x00, duration=0)
@@ -1738,6 +1774,7 @@ gAcidPoisonDropletSpriteTemplate: @ 0x08571DF0
 	.4byte AnimAcidPoisonDroplet @ callback (AnimAcidPoisonDroplet)
 
 sAffineAnim_Bubble: @ 0x08571E08
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x009C, 0x009C, 0x0000, 0x0000 @ AFFINE_FRAME(156, 156, rot=0x00, duration=0)
 	.2byte 0x0005, 0x0005, 0x1400, 0x0000 @ AFFINE_FRAME(5, 5, rot=0x00, duration=0)
@@ -1773,6 +1810,7 @@ gEllipticalGustSpriteTemplate: @ 0x08571E54
 	.4byte AnimEllipticalGust @ callback (AnimEllipticalGust)
 
 sAffineAnim_GustToTarget_0: @ 0x08571E6C
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0010, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(16, 256, rot=0x00, duration=0)
 	.2byte 0x000A, 0x0000, 0x1800, 0x0000 @ AFFINE_FRAME(10, 0, rot=0x00, duration=0)
@@ -1812,6 +1850,7 @@ sAirWaveCrescentSpriteTemplate: @ 0x08571EB8
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimAirWaveCrescent @ callback
 sAffineAnim_FlyBallUp_0: @ 0x08571ED0
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0010, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(16, 256, rot=0x00, duration=0)
 	.2byte 0x0028, 0x0000, 0x0600, 0x0000 @ AFFINE_FRAME(40, 0, rot=0x00, duration=0)
@@ -1824,11 +1863,13 @@ sAffineAnims_FlyBallUp: @ 0x08571EF8
 	.4byte sAffineAnim_FlyBallUp_0 @ [0]
 
 sAffineAnim_FlyBallAttack_0: @ 0x08571EFC
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x0132, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_FlyBallAttack_1: @ 0x08571F0C
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x01D8, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
@@ -1909,6 +1950,7 @@ sWhirlwindLineSpriteTemplate: @ 0x08571FB8
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimWhirlwindLine @ callback
 sAffineAnim_BounceBallShrink_0: @ 0x08571FD0
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0010, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(16, 256, rot=0x00, duration=0)
 	.2byte 0x0028, 0x0000, 0x0600, 0x0000 @ AFFINE_FRAME(40, 0, rot=0x00, duration=0)
@@ -1931,6 +1973,7 @@ sBounceBallShrinkSpriteTemplate: @ 0x08572004
 	.4byte AnimBounceBallShrink @ callback (AnimBounceBallShrink)
 
 sAffineAnim_BounceBallLand_0: @ 0x0857201C
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x00A0, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(160, 256, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
@@ -1949,6 +1992,7 @@ sBounceBallLandSpriteTemplate: @ 0x08572030
 	.4byte AnimBounceBallLand @ callback (AnimBounceBallLand)
 
 sAffineAnim_DiveBall_0: @ 0x08572048
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0010, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(16, 256, rot=0x00, duration=0)
 	.2byte 0x0028, 0x0000, 0x0600, 0x0000 @ AFFINE_FRAME(40, 0, rot=0x00, duration=0)
@@ -1971,6 +2015,7 @@ sDiveBallSpriteTemplate: @ 0x08572074
 
 	@ semanticized v110: canonical static data at 0x0857208C, size=0x24
 sAffineAnim_UnusedFlyBallStretch:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0100, 0x0000
 	.byte 0x00, 0x00
 	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(256, 0, 0, 0)
@@ -2017,6 +2062,7 @@ sSkyAttackBirdSpriteTemplate: @ 0x085720F8
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimSkyAttackBird @ callback
 sAffineAnim_Spiral_0: @ 0x08572110
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0100, 0x0100, 0x0000, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
 	.2byte 0xFFFE, 0xFFFE, 0x78F6, 0x0000 @ AFFINE_FRAME(-2, -2, rot=0x00, duration=0)
@@ -2191,6 +2237,7 @@ sAnims_QuestionMark: @ 0x085722F8
 
 	@ semanticized v110: canonical static data at 0x085722FC, size=0x28
 sAffineAnim_QuestionMark:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0000, 0x0000
 	.byte 0x04, 0x04
 	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, 0, 4, 4)
@@ -2225,6 +2272,7 @@ gQuestionMarkSpriteTemplate:
 	@ semanticized v110: canonical static data at 0x08572340, size=0x20
 	.globl sAffineAnim_MeditateStretchAttacker
 sAffineAnim_MeditateStretchAttacker:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0xFFF8, 0x000A
 	.byte 0x00, 0x10
 	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(-8, 10, 0, 16)
@@ -2238,6 +2286,7 @@ sAffineAnim_MeditateStretchAttacker:
 	@ semanticized v110: canonical static data at 0x08572360, size=0x18
 	.globl sAffineAnim_Teleport
 sAffineAnim_Teleport:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0040, 0xFFFC
 	.byte 0x00, 0x14
 	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(64, -4, 0, 20)
@@ -2265,12 +2314,14 @@ sRedXSpriteTemplate: @ 0x08572390
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimRedX @ callback
 sAffineAnim_SkillSwapOrb_0: @ 0x085723A8
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0xFFF8, 0xFFF8, 0x0800, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
 	.2byte 0x0008, 0x0008, 0x0800, 0x0000 @ AFFINE_FRAME(8, 8, rot=0x00, duration=0)
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
 
 sAffineAnim_SkillSwapOrb_1: @ 0x085723C0
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x00F0, 0x00F0, 0x0000, 0x0000 @ AFFINE_FRAME(240, 240, rot=0x00, duration=0)
 	.2byte 0xFFF8, 0xFFF8, 0x0600, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
@@ -2279,6 +2330,7 @@ sAffineAnim_SkillSwapOrb_1: @ 0x085723C0
 	.2byte 0x7FFE, 0x0001, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(1)
 
 sAffineAnim_SkillSwapOrb_2: @ 0x085723E8
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x00D0, 0x00D0, 0x0000, 0x0000 @ AFFINE_FRAME(208, 208, rot=0x00, duration=0)
 	.2byte 0xFFF8, 0xFFF8, 0x0400, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
@@ -2287,6 +2339,7 @@ sAffineAnim_SkillSwapOrb_2: @ 0x085723E8
 	.2byte 0x7FFE, 0x0001, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(1)
 
 sAffineAnim_SkillSwapOrb_3: @ 0x08572410
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x00B0, 0x00B0, 0x0000, 0x0000 @ AFFINE_FRAME(176, 176, rot=0x00, duration=0)
 	.2byte 0xFFF8, 0xFFF8, 0x0200, 0x0000 @ AFFINE_FRAME(-8, -8, rot=0x00, duration=0)
@@ -2311,6 +2364,7 @@ gSkillSwapOrbSpriteTemplate: @ 0x08572448
 	.4byte sAffineAnims_SkillSwapOrb @ affineAnims
 	.4byte AnimSkillSwapOrb @ callback
 sAffineAnim_WhiteCircleOfLight_0: @ 0x08572460
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0020, 0x0020, 0x0000, 0x0000 @ AFFINE_FRAME(32, 32, rot=0x00, duration=0)
 	.2byte 0x0004, 0x0004, 0x7800, 0x0000 @ AFFINE_FRAME(4, 4, rot=0x00, duration=0)
@@ -2329,6 +2383,7 @@ sWhiteCircleOfLightSpriteTemplate: @ 0x0857247C
 	.4byte sAffineAnims_WhiteCircleOfLight @ affineAnims
 	.4byte AnimSpriteOnMonPos @ callback
 sAffineAnim_PsychoBoost_0: @ 0x08572494
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0020, 0x0020, 0x0000, 0x0000 @ AFFINE_FRAME(32, 32, rot=0x00, duration=0)
 	.2byte 0x0010, 0x0010, 0x1100, 0x0000 @ AFFINE_FRAME(16, 16, rot=0x00, duration=0)
@@ -2343,6 +2398,7 @@ sAffineAnim_PsychoBoost_0: @ 0x08572494
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_PsychoBoost_1: @ 0x085724EC
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0xFFEC, 0x0018, 0x0F00, 0x0000 @ AFFINE_FRAME(-20, 24, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
@@ -2361,16 +2417,19 @@ sPsychoBoostSpriteTemplate: @ 0x08572504
 	.4byte sAffineAnims_PsychoBoost @ affineAnims
 	.4byte AnimPsychoBoost @ callback
 sAffineAnim_MegahornHorn_0: @ 0x0857251C
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0100, 0x0100, 0x001E, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_MegahornHorn_1: @ 0x0857252C
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0100, 0x0100, 0x009D, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_MegahornHorn_2: @ 0x0857253C
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0100, 0x0100, 0x005E, 0x0000 @ AFFINE_FRAME(256, 256, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
@@ -2390,16 +2449,19 @@ sMegahornHornSpriteTemplate: @ 0x08572558
 	.4byte sAffineAnims_MegahornHorn @ affineAnims
 	.4byte AnimMegahornHorn @ callback
 sAffineAnim_LeechLifeNeedle_0: @ 0x08572570
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x01DF, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_LeechLifeNeedle_1: @ 0x08572580
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x0160, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_LeechLifeNeedle_2: @ 0x08572590
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x01A0, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
@@ -2436,6 +2498,7 @@ sStringWrapSpriteTemplate: @ 0x085725DC
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimStringWrap @ callback
 sAffineAnim_SpiderWeb_0: @ 0x085725F4
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0010, 0x0010, 0x0000, 0x0000 @ AFFINE_FRAME(16, 16, rot=0x00, duration=0)
 	.2byte 0x0006, 0x0006, 0x0100, 0x0000 @ AFFINE_FRAME(6, 6, rot=0x00, duration=0)
@@ -2478,6 +2541,7 @@ sMissileArcSpriteTemplate_2: @ 0x08572658
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimMissileArc @ callback
 sAffineAnim_TailGlowOrb_0: @ 0x08572670
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0010, 0x0010, 0x0000, 0x0000 @ AFFINE_FRAME(16, 16, rot=0x00, duration=0)
 	.2byte 0x0008, 0x0008, 0x1200, 0x0000 @ AFFINE_FRAME(8, 8, rot=0x00, duration=0)
@@ -2548,6 +2612,7 @@ sParticleInVortexSpriteTemplate: @ 0x08572718
 	.4byte AnimParticleInVortex @ callback (AnimParticleInVortex)
 
 sAffineAnim_ParticleInVortex_0: @ 0x08572730
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x00C0, 0x00C0, 0x0000, 0x0000 @ AFFINE_FRAME(192, 192, rot=0x00, duration=0)
 	.2byte 0x0002, 0xFFFD, 0x0500, 0x0000 @ AFFINE_FRAME(2, -3, rot=0x00, duration=0)
@@ -2687,11 +2752,13 @@ gRockTombRockSpriteTemplate: @ 0x0857283C
 	.4byte AnimRockTomb @ callback (AnimRockTomb)
 
 sAffineAnim_BasicRock_0: @ 0x08572854
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x05FB, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
 
 sAffineAnim_BasicRock_1: @ 0x08572864
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x0505, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
@@ -2737,6 +2804,7 @@ sWeatherBallIceDownSpriteTemplate_4: @ 0x085728C4
 	.4byte AnimWeatherBallDown @ callback (AnimWeatherBallDown)
 
 sAffineAnim_ConfuseRayBallBounce_0: @ 0x085728DC
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x001E, 0x001E, 0x050A, 0x0000 @ AFFINE_FRAME(30, 30, rot=0x00, duration=0)
 	.2byte 0xFFE2, 0xFFE2, 0x050A, 0x0000 @ AFFINE_FRAME(-30, -30, rot=0x00, duration=0)
@@ -2765,6 +2833,7 @@ gConfuseRayBallSpiralSpriteTemplate: @ 0x08572910
 	.4byte AnimConfuseRayBallSpiral @ callback (AnimConfuseRayBallSpiral)
 
 sAffineAnim_AnimShadowBall_0: @ 0x08572928
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x010A, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
@@ -2804,6 +2873,7 @@ sLickSpriteTemplate: @ 0x08572970
 	.4byte AnimLick @ callback
 	@ semanticized v110: canonical static data at 0x08572988, size=0x14
 sAffineAnim_GhostUnused:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0200, 0x0200
 	.byte 0x00, 0x00
 	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(512, 512, 0, 0)
@@ -2921,12 +2991,14 @@ sAnims_DragonFireToTarget: @ 0x08572A98
 	.4byte sAnim_DragonFireToTarget_1 @ [1]
 
 sAffineAnim_DragonFireToTarget_0: @ 0x08572AA0
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0050, 0x0050, 0x007F, 0x0000 @ AFFINE_FRAME(80, 80, rot=0x00, duration=0)
 	.2byte 0x000D, 0x000D, 0x6400, 0x0000 @ AFFINE_FRAME(13, 13, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_DragonFireToTarget_1: @ 0x08572AB8
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0050, 0x0050, 0x0000, 0x0000 @ AFFINE_FRAME(80, 80, rot=0x00, duration=0)
 	.2byte 0x000D, 0x000D, 0x6400, 0x0000 @ AFFINE_FRAME(13, 13, rot=0x00, duration=0)
@@ -2980,11 +3052,13 @@ sAnims_DragonFireToTarget_2: @ 0x08572B34
 	.4byte sAnim_DragonFireToTarget_0_2 @ [1]
 
 sAffineAnim_DragonFireToTarget_0_2: @ 0x08572B3C
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0064, 0x0064, 0x017F, 0x0000 @ AFFINE_FRAME(100, 100, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_DragonFireToTarget_1_2: @ 0x08572B4C
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0064, 0x0064, 0x0100, 0x0000 @ AFFINE_FRAME(100, 100, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
@@ -3029,41 +3103,49 @@ sUnusedBagStealSpriteTemplate: @ 0x08572BAC
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimUnusedBagSteal @ callback
 sAffineAnim_Bite_0: @ 0x08572BC4
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x0100, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_Bite_1: @ 0x08572BD4
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x0120, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_Bite_2: @ 0x08572BE4
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x0140, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_Bite_3: @ 0x08572BF4
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x0160, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_Bite_4: @ 0x08572C04
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x0180, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_Bite_5: @ 0x08572C14
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x01A0, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_Bite_6: @ 0x08572C24
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x01C0, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_Bite_7: @ 0x08572C34
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x01E0, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
@@ -3096,12 +3178,14 @@ gClampJawSpriteTemplate: @ 0x08572C7C
 	.4byte gAffineAnims_Bite @ affineAnims
 	.4byte AnimBite @ callback
 sAffineAnim_TearDrop_0: @ 0x08572C94
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x00C0, 0x00C0, 0x0050, 0x0000 @ AFFINE_FRAME(192, 192, rot=0x00, duration=0)
 	.2byte 0x0000, 0x0000, 0x08FE, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
 
 sAffineAnim_TearDrop_1: @ 0x08572CAC
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x00C0, 0x00C0, 0x00B0, 0x0000 @ AFFINE_FRAME(192, 192, rot=0x00, duration=0)
 	.2byte 0x0000, 0x0000, 0x0802, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
@@ -3152,11 +3236,13 @@ sClawSlashSpriteTemplate: @ 0x08572D1C
 	.4byte gDummySpriteAffineAnimTable @ affineAnims
 	.4byte AnimClawSlash @ callback
 sAffineAnim_BonemerangProjectile_0: @ 0x08572D34
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x010F, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
 
 sAffineAnim_BoneHitProjectile_0: @ 0x08572D44
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	@ union AffineAnimCmd stream
 	.2byte 0x0000, 0x0000, 0x0114, 0x0000 @ AFFINE_FRAME(0, 0, rot=0x00, duration=0)
 	.2byte 0x7FFE, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(0)
@@ -3312,6 +3398,7 @@ gShakeMonOrPlatformSpriteTemplate: @ 0x08572EBC
 
 	@ semanticized v110: canonical static data at 0x08572ED4, size=0x10
 sAffineAnim_HitSplat_0:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0000, 0x0000
 	.byte 0x00, 0x08
 	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(0, 0, 0, 8)
@@ -3319,6 +3406,7 @@ sAffineAnim_HitSplat_0:
 
 	@ semanticized v110: canonical static data at 0x08572EE4, size=0x18
 sAffineAnim_HitSplat_1:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x00D8, 0x00D8
 	.byte 0x00, 0x00
 	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(216, 216, 0, 0)
@@ -3329,6 +3417,7 @@ sAffineAnim_HitSplat_1:
 
 	@ semanticized v110: canonical static data at 0x08572EFC, size=0x18
 sAffineAnim_HitSplat_2:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x00B0, 0x00B0
 	.byte 0x00, 0x00
 	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(176, 176, 0, 0)
@@ -3339,6 +3428,7 @@ sAffineAnim_HitSplat_2:
 
 	@ semanticized v110: canonical static data at 0x08572F14, size=0x28
 sAffineAnim_HitSplat_3:
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0080, 0x0080
 	.byte 0x00, 0x00
 	.2byte 0x0000 @ AFFINEANIMCMD_FRAME(128, 128, 0, 0)
@@ -3498,6 +3588,7 @@ sAcroBikeJumpTimerList:
 	@ pret/pokeemerald-jp direct xref for 0x085730A4: bike.s: AcroBike_GetJumpDirection
 	.globl sAcroBikeTricksList
 sAcroBikeTricksList:
+	@ ANALYSIS: SEMANTIC_NUMERIC_ACRO_BIKE_TABLE
 	@ Four BikeHistoryInputInfo records; field semantics follow bike.c.
 	@ trick 0: direction=1 key=0x2 masks=0xF/0xF
 	.4byte 0x00000001
@@ -3544,6 +3635,7 @@ sQuizLadyEasyChatScreens:
 	@ pret/pokeemerald-jp direct xref for 0x08573134: easy_chat.s: EasyChat_AllocateResources, FooterHasFourOptions, GetEachChatScreenTemplateId, GetEasyChatConfirmText, GetEasyChatInstructionsText (+3 more)
 	.globl sEasyChatScreenTemplates
 sEasyChatScreenTemplates:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EASY_CHAT_SCREEN_TABLE
 	@ 21 x EasyChatScreenTemplate, stride 0x18.
 	@ [00] PROFILE
 	.byte 0x00, 0x02, 0x02, 0x00

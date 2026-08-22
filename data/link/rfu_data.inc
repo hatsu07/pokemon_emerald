@@ -71,6 +71,7 @@ sWirelessLinkIconPic: @ 0x082BFF9C, LZ-compressed 4bpp graphics
 
 	.globl sWireless_ASCIItoRSETable
 sWireless_ASCIItoRSETable:
+	@ ANALYSIS: SEMANTIC_NUMERIC_CHARACTER_CONVERSION_TABLE
 	@ 256-entry ASCII -> Pokémon RSE character-code conversion table.
 	@ indexes 0x00-0x0F
 	.byte 0xFF, 0x95, 0x96, 0x97, 0x98, 0x99, 0x9A, 0x37, 0x38, 0x39, 0x3A, 0x3B, 0x3C, 0x3D, 0x3E, 0x3F
@@ -107,6 +108,7 @@ sWireless_ASCIItoRSETable:
 
 	.globl sWireless_RSEtoASCIITable
 sWireless_RSEtoASCIITable:
+	@ ANALYSIS: SEMANTIC_NUMERIC_CHARACTER_CONVERSION_TABLE
 	@ 256-entry Pokémon RSE character-code -> ASCII conversion table.
 	@ indexes 0x00-0x0F
 	.byte 0x20, 0x86, 0x87, 0x88, 0x89, 0x8A, 0x8B, 0x8C, 0x8D, 0x8E, 0x8F, 0x90, 0x91, 0x92, 0x93, 0x94

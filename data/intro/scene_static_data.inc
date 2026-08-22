@@ -241,6 +241,7 @@ sSpritePalette_Bubbles: @ 0x085C5D4C
 
 .globl sKyogreBubbleData
 sKyogreBubbleData: @ 0x085C5D5C
+	@ ANALYSIS: SEMANTIC_NUMERIC_KYOGRE_SCENE_TABLE
 	@ Set 1: Kyogre body. x, y, delay.
 	.2byte 66, 64, 1
 	.2byte 96, 96, 8

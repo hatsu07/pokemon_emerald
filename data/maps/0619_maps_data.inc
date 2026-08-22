@@ -206,6 +206,7 @@ gDoorAnimPalettes_TrainerHillRoofElevator: @ 0x0846F58C
 	.globl gDoorAnimGraphicsTable
 	.globl gDoorAnimGraphicsTable
 gDoorAnimGraphicsTable:
+	@ ANALYSIS: SEMANTIC_NUMERIC_DOOR_ANIMATION_TABLE
 	@ entry 0
 	.2byte 0x0021
 	.byte 0, 1

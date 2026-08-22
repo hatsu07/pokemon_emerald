@@ -560,6 +560,7 @@ sBallCatchBonuses:
 gBattleGfxSfxUtilData_082ECE18:
 	.globl gBattlePalaceNatureToMoveGroupLikelihood
 gBattlePalaceNatureToMoveGroupLikelihood: @ 0x082ECE18
+	@ ANALYSIS: SEMANTIC_NUMERIC_BATTLE_PALACE_NATURE_TABLE
 	.byte 61, 68, 61, 68 @ NATURE_HARDY
 	.byte 20, 45, 84, 92 @ NATURE_LONELY
 	.byte 70, 85, 32, 92 @ NATURE_BRAVE

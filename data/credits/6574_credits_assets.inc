@@ -84,6 +84,7 @@ gSaveFailedClockGraphics: @ 0x085CD284
 
 	.globl gRegicePuzzleRequiredPositions
 gRegicePuzzleRequiredPositions: @ 0x085CD314
+	@ ANALYSIS: SEMANTIC_NUMERIC_REGICE_PUZZLE_TABLE
 	.byte  4, 21 @  0
 	.byte  5, 21 @  1
 	.byte  6, 21 @  2

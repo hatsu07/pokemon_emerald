@@ -190,6 +190,7 @@ sRouletteSlots: @ 0x08595E90
 	.byte 0, 1, 6, 0
 	.globl sRouletteSlotFlagsBase
 sRouletteSlotFlagsBase: @ 0x08595E94
+	@ ANALYSIS: SEMANTIC_NUMERIC_ROULETTE_TABLE
 	@ Address of the first .flag field; later flags are 8 bytes apart.
 	.4byte 0x00000040
 	@ slot 1
