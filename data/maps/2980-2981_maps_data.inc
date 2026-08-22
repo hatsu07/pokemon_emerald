@@ -268,8 +268,8 @@ gBattleTransitionData_085A7690: @ 0x085A7690
 gBattleTransitionPhase29_30Palette: @ 0x085A7690
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color BGR555 palette loaded by Phase2_29_Func1 and Phase2_30_Func1
-	.byte 0x0C, 0x4B, 0xFF, 0x7F, 0x56, 0x7F, 0x25, 0x7E, 0xEE, 0x41, 0x1E, 0x48, 0x7A, 0x48, 0xD7, 0x48
-	.byte 0x54, 0x49, 0xB0, 0x49, 0x0D, 0x4A, 0x8A, 0x4A, 0xE6, 0x4A, 0x43, 0x4B, 0xC0, 0x4B, 0x00, 0x00
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/battle_transitions/gBattleTransitionPhase29_30Palette.gbapal"
 	@ pret/pokeemerald-jp direct xref for 0x085A76B0: battle_transition.s: Phase2_29_Func1, Phase2_30_Func1
 	.globl sFrontierLogo_Tileset
 sFrontierLogo_Tileset: @ 0x085A76B0
@@ -293,8 +293,8 @@ gBattleTransitionData_085A8028: @ 0x085A8028
 gBattleTransitionPhase31_32_33Palette: @ 0x085A8028
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color BGR555 palette loaded by Phase2_31/32/33 setup
-	.byte 0x0C, 0x30, 0xFF, 0x7F, 0x56, 0x7F, 0x25, 0x7E, 0xEE, 0x41, 0xFF, 0x7F, 0x56, 0x7F, 0x25, 0x7E
-	.byte 0xFF, 0x7F, 0x1F, 0x00, 0xDB, 0x6F, 0x98, 0x67, 0x55, 0x63, 0x12, 0x5B, 0xCF, 0x56, 0x00, 0x00
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/battle_transitions/gBattleTransitionPhase31_32_33Palette.gbapal"
 	@ pret/pokeemerald-jp direct xref for 0x085A8048: battle_transition.s: Phase2_31_Func1, Phase2_32_Func1, Phase2_33_Func1
 	.globl sFrontierSquares_FilledBg_Tileset
 sFrontierSquares_FilledBg_Tileset: @ 0x085A8048

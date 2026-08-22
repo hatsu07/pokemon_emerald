@@ -69,8 +69,8 @@ gSaveFailedClockFrameData: @ 0x085CD24C
 	.globl gSaveFailedClockPalette
 gSaveFailedClockPalette: @ 0x085CD264
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
-	.2byte 0x2E2C, 0x0000, 0x1CE7, 0x3DEF, 0x5EF7, 0x7FFF, 0x151F, 0x0000
-	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/save_failed/gSaveFailedClockPalette.gbapal"
 	.if (. - gSaveFailedClockPalette) != 0x20
 	.error "gSaveFailedClockPalette must contain 16 colors"
 	.endif

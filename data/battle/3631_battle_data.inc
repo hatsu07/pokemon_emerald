@@ -767,10 +767,8 @@ gSweetScentPetalSpriteTemplate: @ 0x085AD34C
 	.globl gPainSplitUnusedPalette
 gPainSplitUnusedPalette: @ 0x085AD364
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
-	.2byte 0x180C, 0x1610, 0x1313, 0x1015
-	.2byte 0x0C17, 0x0716, 0x0413, 0x0110
-	.2byte 0x000B, 0x0106, 0x0404, 0x0701
-	.2byte 0x0C00, 0x1102, 0x1304, 0x1608
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/battle_anim/gPainSplitUnusedPalette.gbapal"
 
 	.globl gPainSplitAnimCmds
 gPainSplitAnimCmds: @ 0x085AD384

@@ -333,8 +333,8 @@ sMapSecIdsOffMap: @ 0x0857D524
 sRegionMapFramePal: @ 0x0857D528
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color Region Map frame palette.
-	.2byte 0x0000, 0x7FB9, 0x7F58, 0x318C, 0x6739, 0x01F7, 0x0000, 0x6ACF
-	.2byte 0x55C0, 0x4524, 0x0ABF, 0x08FF, 0x1575, 0x0000, 0x0000, 0x7FFF
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/region_map/sRegionMapFramePal.gbapal"
 
 	.globl sRegionMapFrameGfxLZ
 sRegionMapFrameGfxLZ:

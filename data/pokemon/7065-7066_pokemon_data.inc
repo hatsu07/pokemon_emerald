@@ -650,8 +650,8 @@ gPokenavSubmenuLeftHeaderSpriteTemplate:
 	.globl gMatchCallRightArrowPal
 gMatchCallRightArrowPal: @ 0x085F1520
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
-	.2byte 0x0000, 0x426B, 0x2506, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
-	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/match_call/gMatchCallRightArrowPal.gbapal"
 
 	@ GBA LZ77-compressed Match Call right-arrow sprite graphics.
 	@ compressed=0x68 bytes; decompressed=0xC0 bytes.

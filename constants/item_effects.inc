@@ -54,3 +54,22 @@
 .set ITEM6_HEAL_PP_FULL,     0x7F
 .set ITEM6_ADD_EV,            10
 .set ITEM6_SUBTRACT_EV,      -10
+
+@ Semantic scalar values used by item-effect argument arrays.
+.set ITEM_EFFECT_NONE,                       0
+.set ITEM_EFFECT_VITAMIN_FRIENDSHIP_LOW,     5
+.set ITEM_EFFECT_VITAMIN_FRIENDSHIP_MID,     3
+.set ITEM_EFFECT_VITAMIN_FRIENDSHIP_HIGH,    2
+.set ITEM_EFFECT_STAT_BOOST_FRIENDSHIP,      1
+.set ITEM_EFFECT_EV_BERRY_FRIENDSHIP_LOW,   10
+.set ITEM_EFFECT_EV_BERRY_FRIENDSHIP_MID,    5
+.set ITEM_EFFECT_EV_BERRY_FRIENDSHIP_HIGH,   2
+.set ITEM_EFFECT_RECOVER_10,                 10
+.set ITEM_EFFECT_RECOVER_30,                 30
+@ These are encoded field values; ITEM0_/ITEM1_/ITEM2_ above are masks.
+.set ITEM_EFFECT_DIRE_HIT_VALUE,       (1 << 5)
+.set ITEM_EFFECT_X_ATTACK_VALUE,       1
+.set ITEM_EFFECT_X_DEFEND_VALUE,       (1 << 4)
+.set ITEM_EFFECT_X_SPEED_VALUE,        1
+.set ITEM_EFFECT_X_ACCURACY_VALUE,     (1 << 4)
+.set ITEM_EFFECT_X_SPATK_VALUE,        1

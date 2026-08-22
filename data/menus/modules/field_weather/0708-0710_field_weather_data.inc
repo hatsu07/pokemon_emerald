@@ -82,7 +82,7 @@ gFieldWeatherData_08526EEC: @ 0x08526EEC
 gFogPalette: @ 0x08526F0C
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color fog palette used by field weather and battle animation fog backgrounds
-	.2byte 0x0000, 0x7F95, 0x7F2E, 0x7EC9, 0x4A52, 0x6318, 0x6B5A, 0x6F7B
-	.2byte 0x5294, 0x7C1F, 0x7C1F, 0x7C1F, 0x5AD6, 0x739C, 0x7BDE, 0x7FFF
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/weather/gFogPalette.gbapal"
 
 	.globl gCloudsWeatherPalette

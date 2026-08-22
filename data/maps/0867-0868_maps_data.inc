@@ -3832,8 +3832,8 @@ sTriangleCursor_Gfx: @ 0x08573390
 
 sEasyChatUnreferencedPalette: @ 0x085733B0
 	@ v105: palette-like 16-color data, but no exact xref. Name intentionally neutral.
-	.2byte 0x4BFF, 0x001F, 0x001F, 0x109F, 0x1CFF, 0x253F, 0x2D7F, 0x39DF
-	.2byte 0x421F, 0x4E7F, 0x56BF, 0x5EFF, 0x6B5F, 0x739F, 0x7FFF, 0x0000
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/easy_chat/sEasyChatUnreferencedPalette.gbapal"
 gEasyChatRectangleCursor_Gfx: @ 0x085733D0
 	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
 	.incbin "build/graphics/easy_chat/rectangle_cursor.4bpp.lz"
@@ -3901,8 +3901,8 @@ gEasyChatButtonWindow_Gfx: @ 0x08573B08
 
 sRSInterviewFrame_Pal: @ 0x08573D10
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
-	.2byte 0x0000, 0x5FFF, 0x67BD, 0x4B1A, 0x6FFF, 0x0000, 0x0000, 0x0000
-	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/ui/sRSInterviewFrame_Pal.gbapal"
 sRSInterviewFrame_Gfx: @ 0x08573D30
 	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
 	.incbin "build/graphics/easy_chat/interview_frame.4bpp.lz"
@@ -3937,15 +3937,15 @@ gEasyChatWindow_Tilemap: @ 0x085740E4
 	.globl sTextInputFrameOrange_Pal
 sTextInputFrameOrange_Pal: @ 0x0857423C
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
-	.2byte 0x530E, 0x3AFF, 0x1E3F, 0x0199, 0x0000, 0x0000, 0x0000, 0x0000
-	.2byte 0x0000, 0x0000, 0x5BBF, 0x6BFF, 0x39CE, 0x5AF6, 0x6F5B, 0x7FFF
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/ui/sTextInputFrameOrange_Pal.gbapal"
 
 	@ pret/pokeemerald-jp direct xref for 0x0857425C: easy_chat.s: sub_0811D814
 	.globl sTextInputFrameGreen_Pal
 sTextInputFrameGreen_Pal: @ 0x0857425C
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
-	.2byte 0x530E, 0x47F7, 0x3793, 0x2ECF, 0x7F56, 0x72D1, 0x562E, 0x0000
-	.2byte 0x421F, 0x295D, 0x5BBF, 0x6BFF, 0x39CE, 0x5AF6, 0x6F5B, 0x7FFF
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/ui/sTextInputFrameGreen_Pal.gbapal"
 	@ pret/pokeemerald-jp direct xref for 0x0857427C: easy_chat.s: sub_0811C868
 	.globl sTextInputFrame_Gfx
 sTextInputFrame_Gfx: @ 0x0857427C

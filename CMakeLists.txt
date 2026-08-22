@@ -830,7 +830,27 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             DEPENDS "${INPUT_PNG}" "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
                     "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
             VERBATIM)
-    # END SEMANTIC PALETTE PNG PIPELINE BATCH2
+        # BEGIN SEMANTIC PALETTE PNG PIPELINE BATCH3
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/semantic_palettes/([A-Za-z0-9_]+)/([A-Za-z0-9_]+)[.]gbapal$")
+        set(PALETTE_CATEGORY "${CMAKE_MATCH_1}")
+        set(PALETTE_STEM "${CMAKE_MATCH_2}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/semantic_palettes/${PALETTE_CATEGORY}/${PALETTE_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+    # END SEMANTIC PALETTE PNG PIPELINE BATCH3
+
+# END SEMANTIC PALETTE PNG PIPELINE BATCH2
 
 
     # BEGIN UNUSED WATER SEMANTIC ASSETS

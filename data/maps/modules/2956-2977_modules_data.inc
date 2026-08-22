@@ -887,8 +887,8 @@ gBattleTransitionData_0859A960: @ 0x0859A960
 gBattleTransitionAquaMagmaPalette: @ 0x0859A960
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color BGR555 palette loaded to slot 0xF0 by Aqua and Magma transitions
-	.2byte 0x0000, 0x0000, 0x35AD, 0x5294, 0x6739, 0x2108, 0x0000, 0x0000
-	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x2493, 0x3D5C, 0x7FFF
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/battle_transitions/gBattleTransitionAquaMagmaPalette.gbapal"
 	@ pret/pokeemerald-jp direct xref for 0x0859A980: battle_transition.s: Phase2_Aqua_Func1
 	.globl sTeamAqua_Tileset
 sTeamAqua_Tileset: @ 0x0859A980
@@ -941,8 +941,8 @@ gBattleTransitionData_0859BD64: @ 0x0859BD64
 gBattleTransitionRegicePalette: @ 0x0859BD64
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color BGR555 palette loaded to slot 0xF0 by Phase2_Regice_Func2
-	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
-	.2byte 0x035B, 0x00E7, 0x01EF, 0x02F7, 0x03FF, 0x2BFF, 0x57FF, 0x7FFF
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/battle_transitions/gBattleTransitionRegicePalette.gbapal"
 	@ pret/pokeemerald-jp direct xref for 0x0859BD84: battle_transition.s: Phase2_Registeel_Func2
 	.globl gBattleTransitionData_0859BD84
 gBattleTransitionData_0859BD84: @ 0x0859BD84
@@ -950,8 +950,8 @@ gBattleTransitionData_0859BD84: @ 0x0859BD84
 gBattleTransitionRegisteelPalette: @ 0x0859BD84
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color BGR555 palette loaded to slot 0xF0 by Phase2_Registeel_Func2
-	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
-	.2byte 0x001F, 0x0000, 0x0011, 0x0018, 0x001F, 0x211F, 0x463F, 0x7FFF
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/battle_transitions/gBattleTransitionRegisteelPalette.gbapal"
 	@ pret/pokeemerald-jp direct xref for 0x0859BDA4: battle_transition.s: Phase2_Regirock_Func2
 	.globl gBattleTransitionData_0859BDA4
 gBattleTransitionData_0859BDA4: @ 0x0859BDA4
@@ -959,8 +959,8 @@ gBattleTransitionData_0859BDA4: @ 0x0859BDA4
 gBattleTransitionRegirockPalette: @ 0x0859BDA4
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color BGR555 palette loaded to slot 0xF0 by Phase2_Regirock_Func2
-	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
-	.2byte 0x025A, 0x0000, 0x00C9, 0x0193, 0x027C, 0x2AFD, 0x577E, 0x7FFF
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/battle_transitions/gBattleTransitionRegirockPalette.gbapal"
 	@ pret/pokeemerald-jp direct xref for 0x0859BDC4: battle_transition.s: Phase2_Regice_Func2
 	.globl gBattleTransitionData_0859BDC4
 gBattleTransitionData_0859BDC4: @ 0x0859BDC4

@@ -76,8 +76,8 @@ sAreaMarkerSpriteTemplate: @ 0x085939BC
 	.globl sAreaMarkerPalette
 sAreaMarkerPalette: @ 0x085939D4
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
-	.2byte 0x02DA, 0x0000, 0x001F, 0x18DF, 0x739F, 0x4E7F, 0x673F, 0x7FFF
-	.2byte 0x1BFF, 0x7FED, 0x7FF5, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/pokedex/sAreaMarkerPalette.gbapal"
 
 	.globl sAreaMarkerTiles
 sAreaMarkerTiles: @ 0x085939F4
