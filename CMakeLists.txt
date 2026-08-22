@@ -697,6 +697,12 @@ set(REMAINING_A52_EXACT_SOURCES
 )
 # END REMAINING A52 EXACT OUTPUT LIST
 
+
+# BEGIN TRAINER HILL RECORDS PLAIN BIN OUTPUT BATCH13
+list(APPEND GRAPHICS_RELATIVE_OUTPUTS
+    "build/graphics/trainer_hill/records_window.bin")
+# END TRAINER HILL RECORDS PLAIN BIN OUTPUT BATCH13
+
 macro(add_graphics_rule RELATIVE_OUTPUT)
     set(OUTPUT_ABS "${CMAKE_SOURCE_DIR}/${RELATIVE_OUTPUT}")
     get_filename_component(OUTPUT_DIR "${OUTPUT_ABS}" DIRECTORY)
@@ -732,6 +738,54 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # BEGIN WALLPAPER ICON EXACT LZ77 BATCH10
     # BEGIN TRAINER BACK PALETTE EXACT LZ77 BATCH11
     # BEGIN MON MARKINGS PNG PIPELINE BATCH12
+    # BEGIN TRAINER HILL RECORDS ASSETS BATCH13
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/trainer_hill/records_window[.](4bpp|gbapal|bin)$")
+        set(TRAINER_HILL_RECORDS_EXT "${CMAKE_MATCH_1}")
+        set(TRAINER_HILL_RECORDS_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trainer_hill/records_window.png")
+        set(TRAINER_HILL_RECORDS_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/trainer_hill/records_window.tilemap.u16")
+        if("${TRAINER_HILL_RECORDS_EXT}" STREQUAL "4bpp")
+            add_custom_command(
+                OUTPUT "${OUTPUT_ABS}"
+                COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+                COMMAND "${Python3_EXECUTABLE}"
+                    "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                    --gbagfx "${GBAGFX}"
+                    "${TRAINER_HILL_RECORDS_PNG}"
+                    "${OUTPUT_ABS}"
+                DEPENDS "${TRAINER_HILL_RECORDS_PNG}"
+                        "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                        "${GBAGFX}"
+                VERBATIM)
+        elseif("${TRAINER_HILL_RECORDS_EXT}" STREQUAL "gbapal")
+            add_custom_command(
+                OUTPUT "${OUTPUT_ABS}"
+                COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+                COMMAND "${Python3_EXECUTABLE}"
+                    "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+                    --colors 16
+                    "${TRAINER_HILL_RECORDS_PNG}"
+                    "${OUTPUT_ABS}"
+                DEPENDS "${TRAINER_HILL_RECORDS_PNG}"
+                        "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+                VERBATIM)
+        else()
+            add_custom_command(
+                OUTPUT "${OUTPUT_ABS}"
+                COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+                COMMAND "${Python3_EXECUTABLE}"
+                    "${CMAKE_SOURCE_DIR}/tools/u16_text_to_binary.py"
+                    --expected-words 1024
+                    "${TRAINER_HILL_RECORDS_TILEMAP}"
+                    "${OUTPUT_ABS}"
+                DEPENDS "${TRAINER_HILL_RECORDS_TILEMAP}"
+                        "${CMAKE_SOURCE_DIR}/tools/u16_text_to_binary.py"
+                VERBATIM)
+        endif()
+    # END TRAINER HILL RECORDS ASSETS BATCH13
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/interface/(mon_markings_menu|mon_markings)[.](4bpp|gbapal)$")
         set(MON_MARKINGS_STEM "${CMAKE_MATCH_1}")
