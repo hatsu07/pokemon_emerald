@@ -3588,40 +3588,28 @@ sAcroBikeJumpTimerList:
 	@ pret/pokeemerald-jp direct xref for 0x085730A4: bike.s: AcroBike_GetJumpDirection
 	.globl sAcroBikeTricksList
 sAcroBikeTricksList:
-	@ ANALYSIS: SEMANTIC_NUMERIC_ACRO_BIKE_TABLE
-	@ Four BikeHistoryInputInfo records; field semantics follow bike.c.
-	@ trick 0: direction=1 key=0x2 masks=0xF/0xF
-	.4byte 0x00000001
-	.4byte 0x00000002
-	.4byte 0x0000000F
-	.4byte 0x0000000F
-	.4byte sAcroBikeJumpTimerList
-	.4byte sAcroBikeJumpTimerList
-	.4byte 0x00000001
-	@ trick 1: direction=2 key=0x2 masks=0xF/0xF
-	.4byte 0x00000002
-	.4byte 0x00000002
-	.4byte 0x0000000F
-	.4byte 0x0000000F
-	.4byte sAcroBikeJumpTimerList
-	.4byte sAcroBikeJumpTimerList
-	.4byte 0x00000002
-	@ trick 2: direction=3 key=0x2 masks=0xF/0xF
-	.4byte 0x00000003
-	.4byte 0x00000002
-	.4byte 0x0000000F
-	.4byte 0x0000000F
-	.4byte sAcroBikeJumpTimerList
-	.4byte sAcroBikeJumpTimerList
-	.4byte 0x00000003
-	@ trick 3: direction=4 key=0x2 masks=0xF/0xF
-	.4byte 0x00000004
-	.4byte 0x00000002
-	.4byte 0x0000000F
-	.4byte 0x0000000F
-	.4byte sAcroBikeJumpTimerList
-	.4byte sAcroBikeJumpTimerList
-	.4byte 0x00000004
+	@ BikeHistoryInputInfo records matching pret/pokeemerald bike.c.
+	.set JP_ACRO_DIR_SOUTH, 1
+	.set JP_ACRO_DIR_NORTH, 2
+	.set JP_ACRO_DIR_WEST,  3
+	.set JP_ACRO_DIR_EAST,  4
+	.set JP_ACRO_B_BUTTON,  2
+	.set JP_ACRO_HISTORY_LAST_ENTRY_MASK, 0xF
+
+	.macro jp_acro_bike_trick direction
+		.4byte \direction
+		.4byte JP_ACRO_B_BUTTON
+		.4byte JP_ACRO_HISTORY_LAST_ENTRY_MASK
+		.4byte JP_ACRO_HISTORY_LAST_ENTRY_MASK
+		.4byte sAcroBikeJumpTimerList
+		.4byte sAcroBikeJumpTimerList
+		.4byte \direction
+	.endm
+
+	jp_acro_bike_trick JP_ACRO_DIR_SOUTH
+	jp_acro_bike_trick JP_ACRO_DIR_NORTH
+	jp_acro_bike_trick JP_ACRO_DIR_WEST
+	jp_acro_bike_trick JP_ACRO_DIR_EAST
 sQuizLadyEasyChatScreens:
 	@ Resolved pointer table; original ROM range 0x573114..0x573133.
 	.4byte ABILITY_LEVITATE
