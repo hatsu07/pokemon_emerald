@@ -742,6 +742,26 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # BEGIN POKEMON STORAGE CURSOR ASSETS BATCH14
     # BEGIN STORAGE CHOOSE BOX ASSETS BATCH15
     # BEGIN STORAGE WAVEFORM ASSETS BATCH16
+    # BEGIN STORAGE ITEM INFO FRAME BATCH17
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokemon_storage/item_info_frame.4bpp")
+        set(STORAGE_ITEM_INFO_FRAME_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/item_info_frame.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                "${STORAGE_ITEM_INFO_FRAME_PNG}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${STORAGE_ITEM_INFO_FRAME_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+    # END STORAGE ITEM INFO FRAME BATCH17
+
     elseif("${RELATIVE_OUTPUT}" STREQUAL
             "build/graphics/pokemon_storage/waveform.4bpp")
         set(STORAGE_WAVEFORM_PNG

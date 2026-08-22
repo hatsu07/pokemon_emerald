@@ -18144,7 +18144,7 @@ _080CF7FA:
 _080CF800: .4byte 0x020399A8
 _080CF804: .4byte 0x00000CAC
 _080CF808: .4byte 0x00000C74
-_080CF80C: .4byte gPokemonStorageSystemData_0855657C
+_080CF80C: .4byte sPokemonStorageMenuTexts
 _080CF810: .4byte 0x00000CAD
 	thumb_func_end SetMenuText
 
@@ -18427,7 +18427,7 @@ sub_080CFA04: @ 0x080CFA04
 	.align 2, 0
 _080CFA40: .4byte 0x02039A20
 _080CFA44: .4byte 0x00000974
-_080CFA48: .4byte gPokemonStorageSystemData_08556618
+_080CFA48: .4byte sPokemonStorageWindowTemplate_MultiMove
 _080CFA4C: .4byte 0x020399A8
 _080CFA50:
 	movs r0, #0
@@ -20010,7 +20010,7 @@ _080D05DE:
 _080D05FC: .4byte 0x020399A8
 _080D0600: .4byte 0x03000F78
 _080D0604: .4byte 0xFFFF0000
-_080D0608: .4byte gPokemonStorageSystemData_0855676C
+_080D0608: .4byte sPokemonStorageSpriteTemplate_ItemIcon
 _080D060C: .4byte 0x00002208
 _080D0610: .4byte 0x06010000
 _080D0614: .4byte 0xFFFFDACB
@@ -21407,7 +21407,7 @@ sub_080D10B8: @ 0x080D10B8
 	.align 2, 0
 _080D10E0: .4byte 0x020399A8
 _080D10E4: .4byte 0x00002236
-_080D10E8: .4byte gPokemonStorageSystemData_08556620
+_080D10E8: .4byte sPokemonStorageItemInfoFrame_Gfx
 	thumb_func_end sub_080D10B8
 
 	thumb_func_start sub_080D10EC
