@@ -162,10 +162,12 @@ gBattleAnimBackgroundImageMuddyWater_Pal: @ 0x08D8FB50
 	.incbin "build/graphics/battle_anims/backgrounds/muddy_water_palette_rom_exact.gbapal.lz"
 	.globl gEnemyMonShadow_Gfx
 gEnemyMonShadow_Gfx: @ 0x08D8FB74
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
 	.incbin "build/graphics/battle_interface/enemy_shadow_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00
 	.globl gBattleInterface_BallStatusBarGfx
 gBattleInterface_BallStatusBarGfx: @ 0x08D8FBA4
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
 	.incbin "build/graphics/battle_interface/ball_status_bar_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00
 

@@ -1,6 +1,7 @@
 	@ Six JP-only bytes following the 22-entry table.
 	.byte 0xF7, 0x00, 0xAF, 0xF7, 0x01, 0xFF
 sTextboxBorder_Pal:
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.2byte 0x4A52 @ RGB5(18, 18, 18)
 	.2byte 0x7EF2 @ RGB5(18, 23, 31)
 	.2byte 0x7F93 @ RGB5(19, 28, 31)

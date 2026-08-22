@@ -97,9 +97,11 @@ gFrontierPassMapAndCardZoomedOut_Tilemap: @ 0x08549B58
 	.endif
 	.globl gFrontierPassCancelButton_Tilemap
 gFrontierPassCancelButton_Tilemap: @ 0x08549DB8
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILEMAP_ASSET
 	.2byte 0x0039, 0x003A, 0x003B, 0x003C, 0x003D, 0x003E, 0x0049, 0x004A, 0x004B, 0x004C, 0x004D, 0x004E
 	.globl gFrontierPassCancelButtonHighlighted_Tilemap
 gFrontierPassCancelButtonHighlighted_Tilemap: @ 0x08549DD0
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILEMAP_ASSET
 	.2byte 0x0003, 0x0004, 0x0005, 0x0006, 0x0007, 0x0008, 0x000A, 0x000B, 0x000C, 0x000D, 0x000E, 0x000F
 	.globl gFrontierPassBattleRecord_Tilemap
 gFrontierPassBattleRecord_Tilemap: @ 0x08549DE8

@@ -179,18 +179,21 @@ sPointerTable_0858F7F4:
 	.globl gBirchBagTilemap
 	@ confirmed GBA LZ77 stream: compressed=0x189, decompressed=0x500
 gBirchBagTilemap: @ 0x0858F890
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILEMAP_ASSET
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
 	.incbin "build/graphics/starter_choose/birch_bag_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00, 0x00
 	.globl gBirchGrassTilemap
 	@ confirmed GBA LZ77 stream: compressed=0x1F7, decompressed=0x800
 gBirchGrassTilemap: @ 0x0858FA1C
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILEMAP_ASSET
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
 	.incbin "build/graphics/starter_choose/birch_grass_rom_exact.tilemap.lz"
 	.byte 0x00
 	.globl gBirchBackgroundTiles
 	@ confirmed GBA LZ77 stream: compressed=0xAA5, decompressed=0x2000
 gBirchBackgroundTiles: @ 0x0858FC14
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
 	@ ANALYSIS: 3 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
 	.incbin "build/graphics/starter_choose/birch_background_tiles_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00

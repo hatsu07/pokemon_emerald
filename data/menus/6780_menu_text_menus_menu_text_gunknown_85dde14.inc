@@ -536,6 +536,7 @@ gMenuU8Table_Rom_5DFB30: @ 0x085DFB30
 	.globl gScrollIndicatorArrow_Gfx
 	@ confirmed GBA LZ77 stream: compressed=0x6E, decompressed=0x100
 gScrollIndicatorArrow_Gfx:
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
 	.incbin "build/graphics/list_menu/scroll_indicator_arrow_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00
@@ -547,6 +548,7 @@ gListMenuRedOutlineCursor_Gfx:
 	.globl gListMenuRedArrowCursor_Gfx
 	@ confirmed GBA LZ77 stream: compressed=0x43, decompressed=0x80
 gListMenuRedArrowCursor_Gfx:
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
 	@ ANALYSIS: 1 exact LZ77 asset extracted from this former raw block; non-LZ residual bytes remain literal
 	.incbin "build/graphics/list_menu/red_arrow_cursor_rom_exact.4bpp.lz"
 	.byte 0x00

@@ -201,11 +201,13 @@ gBerryBlenderPlayerArrowSpriteSheet: @ 0x0830F9B0
 	.2byte 0xB5D1 @ tag
 	.globl gBerryBlenderMiscSpritePalette
 gBerryBlenderMiscSpritePalette: @ 0x0830F9B8
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.4byte gBerryBlenderMiscPalette
 	.2byte 0xB5D2 @ tag
 	.2byte 0x0000 @ padding
 	.globl gBerryBlenderPlayerArrowSpritePalette
 gBerryBlenderPlayerArrowSpritePalette: @ 0x0830F9C0
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.4byte gBerryBlenderArrowPalette
 	.2byte 0x3018 @ tag
 	.2byte 0x0000 @ padding

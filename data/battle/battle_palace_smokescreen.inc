@@ -44,6 +44,7 @@ sSmokescreenImpactSpriteSheet:
 	.globl gSmokescreenData_082ECFB0
 gSmokescreenData_082ECFB0: @ 0x082ECFB0
 sSmokescreenImpactSpritePalette:
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.4byte gSmokescreenImpactPalette @ gSmokescreenImpactPalette
 	.4byte 0x0000D6EB @ TAG_SMOKESCREEN
 sOamData_SmokescreenImpact: @ 0x082ECFB8

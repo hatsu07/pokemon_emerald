@@ -5,6 +5,7 @@ gIntroCreditsFlygonPalette: @ 0x08D85F14
 	@ confirmed GBA LZ77 stream: compressed=0x1DD, decompressed=0x400
 	.globl gIntroVolbeat_Gfx
 gIntroVolbeat_Gfx: @ 0x08D85F34
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
 	@ exact GBA LZ77 from editable graphics/intro/scene_static/volbeat.png
 	@ ANALYSIS: 3 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
 	.incbin "build/graphics/intro/scene_static/volbeat_rom_exact.4bpp.lz"
@@ -15,6 +16,7 @@ gIntroTorchic_Gfx: @ 0x08D86114
 	.incbin "build/graphics/intro/scene_static/torchic_rom_exact.4bpp.lz"
 	.globl gIntroManectric_Gfx
 gIntroManectric_Gfx: @ 0x08D86534
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
 	@ exact GBA LZ77 from editable graphics/intro/scene_static/manectric.png
 	.incbin "build/graphics/intro/scene_static/manectric_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00

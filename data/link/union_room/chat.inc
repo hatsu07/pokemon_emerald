@@ -131,6 +131,7 @@ gUnionRoomChat_Background_Gfx:
 	@ semantic exact asset for 0x082C55BC: gUnionRoomChat_Background_Tilemap
 	.globl gUnionRoomChat_Background_Tilemap
 gUnionRoomChat_Background_Tilemap:
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILEMAP_ASSET
 	.incbin "build/graphics/union_room_chat/background.bin.lz"
 	.if (. - gUnionRoomChat_Background_Tilemap) != 0xF8
 	.error "gUnionRoomChat_Background_Tilemap compressed size mismatch"

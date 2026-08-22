@@ -45,6 +45,7 @@ sLz77Block_082D277C:
 
 	.globl sBirchSpeechBgGradientPal
 sBirchSpeechBgGradientPal: @ 0x082D28A6
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.incbin "build/graphics/main_menu/birch_speech_bg_gradient.gbapal"
 	.if (. - sBirchSpeechBgGradientPal) != 0x20
 	.error "sBirchSpeechBgGradientPal size mismatch"

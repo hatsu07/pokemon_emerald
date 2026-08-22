@@ -3,6 +3,7 @@
 
 	.globl sMonFrame_Pal
 sMonFrame_Pal: @ 0x085BF880
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.2byte 0x0000, 0x7E70, 0x398C, 0xFFFF, 0x7B77, 0x7B77, 0x7FBB, 0x4A10
 	.2byte 0x62D7, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 
@@ -16,6 +17,7 @@ sMonFrame_Gfx: @ 0x085BF8C0
 
 	.globl sMonFrame_Tilemap
 sMonFrame_Tilemap: @ 0x085BF9A0
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILEMAP_ASSET
 	.incbin "build/graphics/pokeblock/use_screen/mon_frame.bin.lz"
 
 	@ 0x085BFA49-0x085BFA4B: alignment after sMonFrame_Tilemap
@@ -23,6 +25,7 @@ sMonFrame_Tilemap: @ 0x085BF9A0
 
 	.globl gUsePokeblockGraph_Pal
 gUsePokeblockGraph_Pal: @ 0x085BFA4C
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.2byte 0x0000, 0x398C, 0x4A10, 0x7E70, 0x62D7, 0x3B8E, 0x7FBB, 0x327F
 	.2byte 0x7FFE, 0x5B5F, 0x1FDF, 0x5BFF, 0x5FFA, 0x7F7F, 0x6ABF, 0x7B77
 
@@ -34,6 +37,7 @@ gUsePokeblockGraph_Pal: @ 0x085BFA4C
 
 	.globl gUsePokeblockGraph_Gfx
 gUsePokeblockGraph_Gfx: @ 0x085BFAAC
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
 	.incbin "build/graphics/pokeblock/use_screen/graph.4bpp.lz"
 
 	@ 0x085C022D-0x085C022F: alignment after graph gfx
@@ -41,6 +45,7 @@ gUsePokeblockGraph_Gfx: @ 0x085BFAAC
 
 	.globl gUsePokeblockGraph_Tilemap
 gUsePokeblockGraph_Tilemap: @ 0x085C0230
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILEMAP_ASSET
 	.incbin "build/graphics/pokeblock/use_screen/graph.bin.lz"
 
 	@ 0x085C03BF-0x085C040F: unresolved residual after graph tilemap stream
@@ -53,6 +58,7 @@ gUsePokeblockGraph_Tilemap: @ 0x085C0230
 
 	.globl sNatureWindowTilemap
 sNatureWindowTilemap: @ 0x085C0410
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILEMAP_ASSET
 	.2byte 0x22F6, 0x22F6, 0x22F6, 0x22F6, 0x22F6, 0x22F6, 0x22F6, 0x22F6
 	.2byte 0x22F6, 0x22F6, 0x26F5, 0x2285, 0x2285, 0x2285, 0x2285, 0x2285
 	.2byte 0x2285, 0x2285, 0x2285, 0x2285, 0x2285, 0x22FA, 0x2285, 0x2285
@@ -66,6 +72,7 @@ sNatureWindowTilemap: @ 0x085C0410
 
 	.globl sGraphData_Tilemap
 sGraphData_Tilemap: @ 0x085C0488
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILEMAP_ASSET
 	.incbin "build/graphics/pokeblock/use_screen/graph_data.bin.lz"
 
 	@ 0x085C052A-0x085C052B: alignment/residual before legacy PokéNav outline

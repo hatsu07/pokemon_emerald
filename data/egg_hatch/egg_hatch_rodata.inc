@@ -16,6 +16,7 @@ sEggHatchTiles: @ 0x082FC122
 	.incbin "build/graphics/pokemon/egg/hatch.4bpp"
 
 sEggShardTiles: @ 0x082FC922
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
 	.incbin "build/graphics/pokemon/egg/shard.4bpp"
 	.2byte 0 @ alignment
 

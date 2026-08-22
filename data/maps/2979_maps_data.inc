@@ -3,6 +3,7 @@
 gBattleTransitionData_0859F150: @ 0x0859F150
 	@ analyzed canonical ROM range 0x0859F150-0x085A668F
 gBattleTransitionRayquazaTilemap: @ 0x0859F150
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILEMAP_ASSET
 	@ CpuSet source for Phase2_Rayquaza_Func3; first 0x1000 bytes copied in that step.
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000

@@ -800,6 +800,7 @@ gResetRtcCursorTiles_1: @ 0x084E8ADC
 	.incbin "build/graphics/ui/reset_rtc/cursor_1.4bpp"
 
 gResetRtcCursorPalette: @ 0x084E8AFC
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ Only the first colors are distinct; LoadSpritePalette copies through the following compact sprite tables.
 	.2byte 0x0000, 0x001F, 0x2529, 0x0000
 

@@ -25,6 +25,7 @@ sWirelessCloseup_Map: @ 0x0830BBE4
 	@ pret/pokeemerald-jp direct xref for 0x0830BCE4: trade.s: c3_08054588
 	.globl sWirelessSignalSend_Pal
 sWirelessSignalSend_Pal: @ 0x0830BCE4
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16 wireless-signal palette animation frames, 16 colors per frame.
 	@ frame 0
 	.2byte 0x0000, 0x7FFF, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
@@ -77,6 +78,7 @@ sWirelessSignalSend_Pal: @ 0x0830BCE4
 
 	.globl sWirelessSignalRecv_Pal
 sWirelessSignalRecv_Pal: @ 0x0830BEE4
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16 wireless-signal palette animation frames, 16 colors per frame.
 	@ frame 0
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
@@ -129,6 +131,7 @@ sWirelessSignalRecv_Pal: @ 0x0830BEE4
 
 	.globl sWirelessSignalNone_Pal
 sWirelessSignalNone_Pal: @ 0x0830C0E4
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ Static no-signal palette loaded before the wireless animation.
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
@@ -171,6 +174,7 @@ sPokeBallSpriteSheet: @ 0x0830CF5C
 
 	.globl sPokeBallSpritePalette
 sPokeBallSpritePalette: @ 0x0830CF64
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.4byte sPokeball_Pal
 	.2byte 0x15B6 @ palette tag
 	.2byte 0x0000 @ padding
@@ -315,6 +319,7 @@ sSpriteTemplate_GbaScreenFlash_Short: @ 0x0830D0D0
 	@ pret/pokeemerald-jp direct xref for 0x0830D0E8: trade.s: sub_0807A4EC
 	.globl sLinkMonShadow_Pal
 sLinkMonShadow_Pal: @ 0x0830D0E8
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 12 palette colors stepped one at a time by sub_0807A4EC.
 	.2byte 0x7F12, 0x7F12, 0x7F12, 0x7FFF, 0x7FFF, 0x7FFF, 0x7F12, 0x7F12
 	.2byte 0x7F12, 0x7FFF, 0x7FFF, 0x7FFF

@@ -765,6 +765,7 @@ gSweetScentPetalSpriteTemplate: @ 0x085AD34C
 	@ before the Pain Split animation data.
 	.globl gPainSplitUnusedPalette
 gPainSplitUnusedPalette: @ 0x085AD364
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.2byte 0x180C, 0x1610, 0x1313, 0x1015
 	.2byte 0x0C17, 0x0716, 0x0413, 0x0110
 	.2byte 0x000B, 0x0106, 0x0404, 0x0701

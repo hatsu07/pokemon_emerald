@@ -300,6 +300,7 @@ sRegionMapCursorAnimTable: @ 0x0857D4E8
 
 	.globl sRegionMapCursorSpritePalette
 sRegionMapCursorSpritePalette: @ 0x0857D4F0
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.4byte gHealLocationData_0857B10C + 0xB0
 	.2byte 0x0000
 	.2byte 0x0000
@@ -329,6 +330,7 @@ sMapSecIdsOffMap: @ 0x0857D524
 
 	.globl sRegionMapFramePal
 sRegionMapFramePal: @ 0x0857D528
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color Region Map frame palette.
 	.2byte 0x0000, 0x7FB9, 0x7F58, 0x318C, 0x6739, 0x01F7, 0x0000, 0x6ACF
 	.2byte 0x55C0, 0x4524, 0x0ABF, 0x08FF, 0x1575, 0x0000, 0x0000, 0x7FFF
@@ -353,6 +355,7 @@ sRegionMapFrameTilemapLZ: @ 0x0857D580
 	@ semantic exact asset for 0x0857D658: sFlyTargetIcons_Gfx
 	.globl sFlyTargetIcons_Gfx
 sFlyTargetIcons_Gfx:
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
 	.incbin "build/graphics/pokenav/region_map/fly_target_icons.4bpp.lz"
 	.if (. - sFlyTargetIcons_Gfx) != 0xD4
 	.error "sFlyTargetIcons_Gfx compressed size mismatch"
@@ -452,6 +455,7 @@ sFlyMapWindowTemplates: @ 0x0857D7E0
 
 	.globl sFlyTargetIconsSpritePalette
 sFlyTargetIconsSpritePalette: @ 0x0857D800
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.4byte sRegionMapFrameTilemapLZ + 0xB8
 	.2byte 0x0002
 	.2byte 0x0000

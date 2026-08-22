@@ -1090,44 +1090,53 @@ sSlotMachineSpriteSheets: @ 0x085852B8
 	@ Slot machine reel background source pointer and palette cluster
 	.globl sReelBackground_Tilemap
 sReelBackground_Tilemap: @ 0x08585368
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILEMAP_ASSET
 	.4byte gSlotMachineReelBackground_Tilemap
 	.globl gSlotMachineReelSymbols_Pal
 gSlotMachineReelSymbols_Pal: @ 0x0858536C
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color GBA palette
 	.2byte 0x7FFF, 0x3DEF, 0x5AF7, 0x7FFF, 0x7C00, 0x7DC2, 0x7E8E, 0x268E
 	.2byte 0x27B3, 0x001F, 0x017F, 0x025F, 0x127B, 0x13BF, 0x2D8C, 0x2108
 	.globl gSlotMachineReelTimePikachu_Pal
 gSlotMachineReelTimePikachu_Pal: @ 0x0858538C
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color GBA palette
 	.2byte 0x56B9, 0x7FFF, 0x3FFF, 0x03BF, 0x02FD, 0x0238, 0x0150, 0x7C1F
 	.2byte 0x7C1F, 0x7C1F, 0x253F, 0x001C, 0x0016, 0x35AD, 0x0842, 0x7C1F
 	.globl gSlotMachineReelTimeMisc_Pal
 gSlotMachineReelTimeMisc_Pal: @ 0x085853AC
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color GBA palette
 	.2byte 0x5755, 0x7FFF, 0x7C1F, 0x4791, 0x4BB2, 0x4BB2, 0x5FD7, 0x5BD6
 	.2byte 0x5FD7, 0x57A7, 0x4AA0, 0x21A0, 0x7C1F, 0x4E52, 0x356B, 0x20A5
 	.globl gSlotMachineReelTimeMachine_Pal
 gSlotMachineReelTimeMachine_Pal: @ 0x085853CC
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color GBA palette
 	.2byte 0x62B5, 0x7FFF, 0x63FF, 0x03BE, 0x0277, 0x012C, 0x29BF, 0x2137
 	.2byte 0x18F1, 0x57A7, 0x4AA0, 0x21A0, 0x7C1F, 0x4E52, 0x356B, 0x20A5
 	.globl gSlotMachineMisc_Pal
 gSlotMachineMisc_Pal: @ 0x085853EC
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color GBA palette
 	.2byte 0x3D08, 0x7FFF, 0x4BBF, 0x035F, 0x02BF, 0x0134, 0x7C1F, 0x7C1F
 	.2byte 0x7C1F, 0x7C1F, 0x7C1F, 0x6F7B, 0x6739, 0x5694, 0x356B, 0x20A5
 	.globl gSlotMachineReelTimeExplosion_Pal
 gSlotMachineReelTimeExplosion_Pal: @ 0x0858540C
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color GBA palette
 	.2byte 0x0000, 0x013C, 0x029F, 0x017C, 0x0F9F, 0x021F, 0x379F, 0x53FF
 	.2byte 0x7FFF, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F
 	.globl gSlotMachineDigitalDisplay_Pal
 gSlotMachineDigitalDisplay_Pal: @ 0x0858542C
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color GBA palette
 	.2byte 0x2D8C, 0x0AFF, 0x0010, 0x0918, 0x0918, 0x0918, 0x0918, 0x7C1F
 	.2byte 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x0000
 	.globl gSlotMachineMenu_Pal
 gSlotMachineMenu_Pal: @ 0x0858544C
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ slot machine menu palette; LoadPalette size 0xA0
 	.2byte 0x0000, 0x18E7, 0x739C, 0x7FFF, 0x5750, 0x25E6, 0x36AB, 0x7C1F
 	.2byte 0x36AB, 0x169F, 0x1D9F, 0x4F1F, 0x00F5, 0x0D00, 0x2D8C, 0x0000
@@ -1146,22 +1155,27 @@ sUnusedColors: @ 0x085854EC
 	.2byte 0x01FD, 0x01FD
 	.globl sMiddleRowLit_Pal
 sMiddleRowLit_Pal: @ 0x08585500
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ lit match-line color
 	.2byte 0x7F91
 	.globl sTopRowLit_Pal
 sTopRowLit_Pal: @ 0x08585502
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ lit match-line color
 	.2byte 0x43BF
 	.globl sBottomRowt_Pal
 sBottomRowt_Pal: @ 0x08585504
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ lit match-line color
 	.2byte 0x43BF
 	.globl sNWSEDiagLit_Pal
 sNWSEDiagLit_Pal: @ 0x08585506
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ lit match-line color
 	.2byte 0x4ABF
 	.globl sNESWDiagLit_Pal
 sNESWDiagLit_Pal: @ 0x08585508
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ lit match-line color
 	.2byte 0x4ABF
 	.align 2, 0
@@ -1192,16 +1206,19 @@ sMatchLinesPerBet: @ 0x0858553F
 	.byte 1, 2, 2
 	.globl sFlashingLightsInside_Pal
 sFlashingLightsInside_Pal: @ 0x08585542
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ flashing lights 16-color palette
 	.2byte 0x6F7B, 0x7FFF, 0x5750, 0x43FF, 0x22DF, 0x7FFF, 0x43FF, 0x43FF
 	.2byte 0x22DF, 0x22DF, 0x017F, 0x017F, 0x00BB, 0x7C1F, 0x0013, 0x0000
 	.globl sFlashingLightsMiddle_Pal
 sFlashingLightsMiddle_Pal: @ 0x08585562
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ flashing lights 16-color palette
 	.2byte 0x6F7B, 0x7FFF, 0x5750, 0x22DF, 0x017F, 0x43FF, 0x22DF, 0x7FFF
 	.2byte 0x43FF, 0x43FF, 0x22DF, 0x22DF, 0x017F, 0x7C1F, 0x0013, 0x0000
 	.globl sFlashingLightsOutside_Pal
 sFlashingLightsOutside_Pal: @ 0x08585582
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ flashing lights 16-color palette
 	.2byte 0x6F7B, 0x7FFF, 0x5750, 0x017F, 0x00BB, 0x22DF, 0x017F, 0x43FF
 	.2byte 0x22DF, 0x7FFF, 0x43FF, 0x43FF, 0x22DF, 0x7C1F, 0x0013, 0x0000
@@ -1213,19 +1230,23 @@ sFlashingLightsPalTable: @ 0x085855A4
 	.4byte sFlashingLightsOutside_Pal
 	.globl sSlotMachineMenu_Pal
 sSlotMachineMenu_Pal: @ 0x085855B0
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.4byte gSlotMachineMenu_Pal + 0x20 @ +16 u16 colors
 	.globl sPokeballShining0_Pal
 sPokeballShining0_Pal: @ 0x085855B4
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ digital display Poke Ball shining palette
 	.2byte 0x2D8C, 0x0AFF, 0x0010, 0x0AFF, 0x0918, 0x0918, 0x0918, 0x7C1F
 	.2byte 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x0000
 	.globl sPokeballShining1_Pal
 sPokeballShining1_Pal: @ 0x085855D4
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ digital display Poke Ball shining palette
 	.2byte 0x2D8C, 0x0AFF, 0x0010, 0x0918, 0x0AFF, 0x0918, 0x0918, 0x7C1F
 	.2byte 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x0000
 	.globl sPokeballShining2_Pal
 sPokeballShining2_Pal: @ 0x085855F4
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ digital display Poke Ball shining palette
 	.2byte 0x2D8C, 0x0AFF, 0x0010, 0x0918, 0x0918, 0x0AFF, 0x0918, 0x7C1F
 	.2byte 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x0000
@@ -1237,9 +1258,11 @@ sPokeballShiningPalTable: @ 0x08585614
 	.4byte gSlotMachineDigitalDisplay_Pal @ normal
 	.globl sDigitalDisplay_Pal
 sDigitalDisplay_Pal: @ 0x08585624
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.4byte gSlotMachineDigitalDisplay_Pal
 	.globl sUnkPalette
 sUnkPalette: @ 0x08585628
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ [1] RGB_WHITEALPHA; [3] RGB(8, 8, 8)
 	.2byte 0x0000, 0xFFFF, 0x0000, 0x2108, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
@@ -1306,5 +1329,6 @@ gSlotMachineInfoBox_Tilemap: @ 0x08588154
 	@ Empty tile used to clear the Reel Time window
 	.globl sEmptyTilemap
 sEmptyTilemap: @ 0x08588604
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILEMAP_ASSET
 	.2byte 0x0000
 .globl gText_Rom_588606

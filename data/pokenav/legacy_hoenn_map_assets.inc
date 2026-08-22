@@ -25,6 +25,7 @@ gLegacyPokenavHoennMapMisc_Gfx_Jp: @ 0x085BED74
 
 	.globl gLegacyPokenavHoennMap_Tilemap
 gLegacyPokenavHoennMap_Tilemap: @ 0x085BF2EC
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILEMAP_ASSET
 	.incbin "build/graphics/pokenav/legacy/hoenn_map.bin.lz"
 	.if (. - gLegacyPokenavHoennMap_Tilemap) != 0x14E
 	.error "gLegacyPokenavHoennMap_Tilemap compressed size mismatch"

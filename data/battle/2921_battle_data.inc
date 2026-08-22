@@ -1,6 +1,7 @@
 	@ pret/pokeemerald-jp direct xref for 0x0859381C: pokedex_area_screen.s: DrawAreaGlow
 	.globl sAreaGlow_Pal
 sAreaGlow_Pal: @ 0x0859381C
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color BGR555 palette for the area-glow overlay.
 	.2byte 0x0000, 0x463F, 0x39DF, 0x6B5F, 0x211F, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
@@ -52,6 +53,7 @@ sAreaMarkerSpriteSheet: @ 0x085939A4
 	@ pret/pokeemerald-jp direct xref for 0x085939AC: pokedex_area_screen.s: CreateAreaMarkerSprites
 	.globl sAreaMarkerSpritePalette
 sAreaMarkerSpritePalette: @ 0x085939AC
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.4byte sAreaMarkerPalette
 	.2byte 0x0002, 0 @ tag, padding
 
@@ -73,11 +75,13 @@ sAreaMarkerSpriteTemplate: @ 0x085939BC
 	.4byte SpriteCallbackDummy
 	.globl sAreaMarkerPalette
 sAreaMarkerPalette: @ 0x085939D4
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.2byte 0x02DA, 0x0000, 0x001F, 0x18DF, 0x739F, 0x4E7F, 0x673F, 0x7FFF
 	.2byte 0x1BFF, 0x7FED, 0x7FF5, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 
 	.globl sAreaMarkerTiles
 sAreaMarkerTiles: @ 0x085939F4
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
 	@ 0x80 bytes, 4bpp sprite tile data
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x2230
 	.2byte 0x0000, 0x4443, 0x3000, 0x4444, 0x2000, 0x4444, 0x2000, 0x4444
@@ -90,6 +94,7 @@ sAreaMarkerTiles: @ 0x085939F4
 	@ pret/pokeemerald-jp direct xref for 0x08593A74: pokedex_area_screen.s: LoadAreaUnknownGraphics
 	.globl sAreaUnknownSpritePalette
 sAreaUnknownSpritePalette: @ 0x08593A74
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ struct SpritePalette for the "Area Unknown" sprites.
 	.4byte gPokedexAreaScreenAreaUnknown_Pal
 	.2byte 0x0003, 0x0000 @ tag, padding
@@ -113,6 +118,7 @@ sAreaUnknownSpriteTemplate: @ 0x08593A84
 	@ 16-color BGR555 OBJ palette used by the area-unknown marker sprite.
 	.globl gPokedexAreaScreenAreaUnknown_Pal
 gPokedexAreaScreenAreaUnknown_Pal:
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.2byte 0x025E, 0x0000, 0x6F5B, 0x001F, 0x3BFF, 0x03E0, 0x7FE0, 0x0000
 	.2byte 0x0000, 0x0000, 0x7FFF, 0x6F5B, 0x354C, 0x6251, 0x18C5, 0x3D0A
 	@ pret/pokeemerald-jp direct xref for 0x08593ABC: pokedex_area_screen.s: LoadAreaUnknownGraphics

@@ -14,6 +14,7 @@ gLegacyPokenavOutline_Pal: @ 0x085C052C
 
 	.globl gLegacyPokenavOutline_Gfx
 gLegacyPokenavOutline_Gfx: @ 0x085C054C
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
 	.incbin "build/graphics/pokenav/legacy/outline.4bpp.lz"
 	.if (. - gLegacyPokenavOutline_Gfx) != 0x20F
 	.error "gLegacyPokenavOutline_Gfx stream size mismatch"
@@ -22,6 +23,7 @@ gLegacyPokenavOutline_Gfx: @ 0x085C054C
 
 	.globl gLegacyPokenavOutline_Tilemap
 gLegacyPokenavOutline_Tilemap: @ 0x085C075C
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILEMAP_ASSET
 	.incbin "build/graphics/pokenav/legacy/outline.bin.lz"
 	.if (. - gLegacyPokenavOutline_Tilemap) != 0x165
 	.error "gLegacyPokenavOutline_Tilemap stream size mismatch"
