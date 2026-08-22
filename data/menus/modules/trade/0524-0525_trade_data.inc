@@ -25,50 +25,20 @@ sWirelessCloseup_Map: @ 0x0830BBE4
 	@ pret/pokeemerald-jp direct xref for 0x0830BCE4: trade.s: c3_08054588
 	.globl sWirelessSignalSend_Pal
 sWirelessSignalSend_Pal: @ 0x0830BCE4
-	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
-	@ 16 wireless-signal palette animation frames, 16 colors per frame.
-	@ frame 0
-	@ Editable palette PNG: 16 row(s), 16 colors per row.
-	.incbin "build/graphics/semantic_palettes/trade/sWirelessSignalSend_Pal.gbapal"
-	@ frame 1
-	@ frame 2
-	@ frame 3
-	@ frame 4
-	@ frame 5
-	@ frame 6
-	@ frame 7
-	@ frame 8
-	@ frame 9
-	@ frame 10
-	@ frame 11
-	@ frame 12
-	@ frame 13
-	@ frame 14
-	@ frame 15
-
+	@ 16 animation frames x 16 BGR555 colors.
+	@ Editable source: 16 rows; one palette frame per row.
+	.incbin "build/graphics/semantic_palettes/trade/wireless_signal_send.gbapal"
+	.if (. - sWirelessSignalSend_Pal) != 0x200
+	.error "sWirelessSignalSend_Pal size mismatch"
+	.endif
 	.globl sWirelessSignalRecv_Pal
 sWirelessSignalRecv_Pal: @ 0x0830BEE4
-	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
-	@ 16 wireless-signal palette animation frames, 16 colors per frame.
-	@ frame 0
-	@ Editable palette PNG: 16 row(s), 16 colors per row.
-	.incbin "build/graphics/semantic_palettes/trade/sWirelessSignalRecv_Pal.gbapal"
-	@ frame 1
-	@ frame 2
-	@ frame 3
-	@ frame 4
-	@ frame 5
-	@ frame 6
-	@ frame 7
-	@ frame 8
-	@ frame 9
-	@ frame 10
-	@ frame 11
-	@ frame 12
-	@ frame 13
-	@ frame 14
-	@ frame 15
-
+	@ 16 animation frames x 16 BGR555 colors.
+	@ Editable source: 16 rows; one palette frame per row.
+	.incbin "build/graphics/semantic_palettes/trade/wireless_signal_recv.gbapal"
+	.if (. - sWirelessSignalRecv_Pal) != 0x200
+	.error "sWirelessSignalRecv_Pal size mismatch"
+	.endif
 	.globl sWirelessSignalNone_Pal
 sWirelessSignalNone_Pal: @ 0x0830C0E4
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
