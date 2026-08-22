@@ -261,6 +261,7 @@ TilesetTiles_JP_0833C9E0: @ 0x0833C9E0
 	.incbin "build/graphics/tilesets/031_0833c9e0/tiles.4bpp.lz"
 
 TilesetPalettes_JP_0833D428: @ 0x0833D428
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_PALETTE_ASSET
 	@ TilesetPalettes, size=0x780
 	.incbin "build/graphics/tilesets/031_0833c9e0/palettes.gbapal"
 	.2byte 0x4010, 0x000A, 0x0033, 0xF000, 0x9001, 0xFF01, 0xF0FF, 0x9001
@@ -353,6 +354,7 @@ TilesetPalettes_JP_0833D428: @ 0x0833D428
 	.2byte 0xF001, 0x0001, 0xF100, 0x70D1, 0x1201, 0xF07D, 0x8001, 0x21B0
 
 TilesetPalettes_JP_0833DBA8: @ 0x0833DBA8
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_PALETTE_ASSET
 	@ TilesetPalettes, size=0x724
 	.incbin "build/graphics/tilesets/032_0833ffc0/palettes.gbapal"
 	.2byte 0x4010, 0x000A, 0x0033, 0xF000, 0x9001, 0xFF01, 0xF0FF, 0x9001
@@ -440,6 +442,7 @@ TilesetPalettes_JP_0833DBA8: @ 0x0833DBA8
 	.2byte 0x001F, 0x0000
 
 TilesetPalettes_JP_0833E2CC: @ 0x0833E2CC
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_PALETTE_ASSET
 	@ TilesetPalettes, size=0x768
 	.incbin "build/graphics/tilesets/033_08340a20/palettes.gbapal"
 	.2byte 0x4010, 0x000A, 0x0033, 0xF000, 0x9001, 0xFF01, 0xF0FF, 0x9001
@@ -531,6 +534,7 @@ TilesetPalettes_JP_0833E2CC: @ 0x0833E2CC
 	.2byte 0x0401, 0xF0E1, 0xC014, 0x0021
 
 TilesetPalettes_JP_0833EA34: @ 0x0833EA34
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_PALETTE_ASSET
 	@ TilesetPalettes, size=0x61C
 	.incbin "build/graphics/tilesets/034_08341480/palettes.gbapal"
 	.2byte 0x4010, 0x000A, 0x0033, 0xF000, 0x9001, 0xFF01, 0xF0FF, 0x9001
@@ -601,6 +605,7 @@ TilesetPalettes_JP_0833EA34: @ 0x0833EA34
 	.2byte 0x2277, 0x0286, 0xF088, 0xC01A, 0xC767, 0x1F10
 
 TilesetPalettes_JP_0833F050: @ 0x0833F050
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_PALETTE_ASSET
 	@ TilesetPalettes, size=0x738
 	.incbin "build/graphics/tilesets/035_08341ee0/palettes.gbapal"
 	.2byte 0x4010, 0x000A, 0x0033, 0xF000, 0x9001, 0xFF01, 0xF0FF, 0x9001
@@ -689,6 +694,7 @@ TilesetPalettes_JP_0833F050: @ 0x0833F050
 	.2byte 0xB75F, 0xF063, 0xB01F, 0x001F
 
 TilesetPalettes_JP_0833F788: @ 0x0833F788
+	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_PALETTE_ASSET
 	@ TilesetPalettes, size=0x638
 	.incbin "build/graphics/tilesets/036_08342940/palettes.gbapal"
 	.2byte 0x4010, 0x000A, 0x0033, 0xF000, 0x9001, 0xFF01, 0xF0FF, 0x9001

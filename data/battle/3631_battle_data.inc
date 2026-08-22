@@ -459,6 +459,7 @@ sPointerTable_085ACD28:
 	@ analyzed canonical ROM range 0x085ACD28-0x085AD0A7
 	@ semantic recovery: rodata; byte-verified against linked ROM
 sSafariBufferCommands: @ 0x085ACD28
+	@ ANALYSIS: SEMANTIC_NUMERIC_SAFARI_COMMAND_TABLE
 	@ proven function-pointer table
 	.4byte SafariHandleGetMonData
 	.4byte SafariHandleGetRawMonData

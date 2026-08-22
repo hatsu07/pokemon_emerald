@@ -16,6 +16,7 @@ gMonShinyPalette_Bulbasaur:
   .globl gMonIcon_Bulbasaur
 gMonIcon_None: @ 0x08C30044 [000]
 gMonIcon_Bulbasaur: @ 0x08C30044 [001]
+	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ICON_ASSET
   .incbin "build/graphics/pokemon/bulbasaur/icon.4bpp"
 
   @ 用途未確定
@@ -96,6 +97,7 @@ gMonShinyPalette_Ivysaur:
 
   .globl gMonIcon_Ivysaur
 gMonIcon_Ivysaur:
+	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ICON_ASSET
   .incbin "build/graphics/pokemon/ivysaur/icon.4bpp"
   @ ANALYSIS: RAW_RANGE offset=0xC30FB4, size=0x5AC
   .byte 0x00, 0x00, 0x00, 0x00, 0x10, 0xB0, 0xF0, 0xF8, 0x00, 0x00, 0x00, 0x01, 0x11, 0x1B, 0x1F, 0x3F
@@ -204,6 +206,7 @@ gMonShinyPalette_Venusaur:
 
   .globl gMonIcon_Venusaur
 gMonIcon_Venusaur:
+	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ICON_ASSET
   .incbin "build/graphics/pokemon/venusaur/icon.4bpp"
   @ ANALYSIS: RAW_RANGE offset=0xC31E80, size=0x2D0
   .byte 0x00, 0x00, 0x00, 0x90, 0xB0, 0xF8, 0xF8, 0xFC, 0x00, 0x00, 0x01, 0x13, 0x1B, 0x3F, 0x3F, 0x7F
@@ -266,6 +269,7 @@ gMonShinyPalette_Charmander:
 
   .globl gMonIcon_Charmander
 gMonIcon_Charmander:
+	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ICON_ASSET
   .incbin "build/graphics/pokemon/charmander/icon.4bpp"
   @ ANALYSIS: RAW_RANGE offset=0xC32834, size=0x3C8
   .byte 0x00, 0x00, 0x00, 0x00, 0x20, 0xA0, 0xE0, 0xE0, 0x00, 0x00, 0x00, 0x01, 0x09, 0x0B, 0x0F, 0x0F
@@ -344,6 +348,7 @@ gMonShinyPalette_Charmeleon:
 
   .globl gMonIcon_Charmeleon
 gMonIcon_Charmeleon:
+	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ICON_ASSET
   .incbin "build/graphics/pokemon/charmeleon/icon.4bpp"
   @ ANALYSIS: RAW_RANGE offset=0xC3332C, size=0x570
   .byte 0x00, 0x00, 0x00, 0x00, 0x90, 0xB0, 0xF0, 0xF0, 0x00, 0x00, 0x01, 0x01, 0x13, 0x1B, 0x1F, 0x1F
@@ -448,6 +453,7 @@ gMonShinyPalette_Charizard:
 
   .globl gMonIcon_Charizard
 gMonIcon_Charizard:
+	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ICON_ASSET
   .incbin "build/graphics/pokemon/charizard/icon.4bpp"
   @ ANALYSIS: RAW_RANGE offset=0xC34108, size=0x2FC
   .byte 0x00, 0x00, 0x00, 0x90, 0xB0, 0xF8, 0xF8, 0xF8, 0x00, 0x01, 0x01, 0x13, 0x1B, 0x3F, 0x3F, 0x3F
@@ -513,6 +519,7 @@ gMonShinyPalette_Squirtle:
 
   .globl gMonIcon_Squirtle
 gMonIcon_Squirtle:
+	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ICON_ASSET
   .incbin "build/graphics/pokemon/squirtle/icon.4bpp"
   @ ANALYSIS: RAW_RANGE offset=0xC34AD4, size=0x39C
   .byte 0x00, 0x00, 0x00, 0x00, 0x80, 0xD0, 0xF0, 0xF0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x05, 0x07, 0x07

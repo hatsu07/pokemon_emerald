@@ -319,6 +319,7 @@ gObjectEventFrameGfx_JP_084D6C4C: @ 0x084D6C4C
 	.incbin "build/graphics/object_events/pics/misc/moving_box.4bpp", 0x0, 0x80 @ gObjectEventPic_MovingBox frame slice
 	.globl gObjectEventPal_JP_084D6CCC
 gObjectEventPal_JP_084D6CCC: @ 0x084D6CCC
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
 	@ 16-color object-event palette
 	@ unreferenced payload gap: 0x084D6CCC-0x084D6CEB
 	.byte 0x0E, 0x53, 0x10, 0x4A, 0xCE, 0x41, 0x8C, 0x41, 0xFF, 0x7F, 0x1F, 0x7C, 0xE7, 0x18, 0x28, 0x35
@@ -373,6 +374,7 @@ gObjectEventFrameGfx_JP_084D77EC: @ 0x084D77EC
 	.incbin "build/graphics/object_events/pics/pokemon/mew.4bpp", 0x800, 0x100 @ gObjectEventPic_Mew frame slice
 	.globl gObjectEventPal_JP_084D78EC
 gObjectEventPal_JP_084D78EC: @ 0x084D78EC
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
 	@ 16-color object-event palette
 	@ unreferenced payload gap: 0x084D78EC-0x084D790B
 	.byte 0x0E, 0x53, 0x5F, 0x63, 0x1F, 0x4B, 0x5B, 0x3A, 0xB5, 0x2D, 0xBF, 0x25, 0xF8, 0x1C, 0x10, 0x21
@@ -451,6 +453,7 @@ gObjectEventFrameGfx_JP_084D8A0C: @ 0x084D8A0C
 	.incbin "build/graphics/object_events/pics/people/leaf.4bpp", 0x800, 0x100 @ gObjectEventPic_Leaf frame slice
 	.globl gObjectEventPal_JP_084D8B0C
 gObjectEventPal_JP_084D8B0C: @ 0x084D8B0C
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
 	@ 16-color object-event palette
 	@ unreferenced payload gap: 0x084D8B0C-0x084D8B2B
 	.byte 0x0E, 0x53, 0xD6, 0x5A, 0x52, 0x4A, 0x6B, 0x31, 0xE7, 0x24, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C
@@ -461,6 +464,7 @@ gObjectEventFrameGfx_JP_084D8B2C: @ 0x084D8B2C
 	.incbin "build/graphics/object_events/pics/misc/birth_island_stone.4bpp", 0x0, 0x200 @ gObjectEventPic_BirthIslandStone frame slice
 	.globl gObjectEventPal_JP_084D8D2C
 gObjectEventPal_JP_084D8D2C: @ 0x084D8D2C
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
 	@ 16-color object-event palette
 	@ unreferenced payload gap: 0x084D8D2C-0x084D8D4B
 	.byte 0x0E, 0x53, 0x3E, 0x3A, 0x99, 0x25, 0x56, 0x1D, 0xED, 0x00, 0x2F, 0x63, 0x0A, 0x3E, 0x04, 0x1D
@@ -735,6 +739,7 @@ gObjectEventFrameGfx_JP_084DD24C: @ 0x084DD24C
 	.incbin "build/graphics/object_events/pics/pokemon/lugia.4bpp", 0x200, 0x200 @ gObjectEventPic_Lugia frame slice
 	.globl gObjectEventPal_JP_084DD44C
 gObjectEventPal_JP_084DD44C: @ 0x084DD44C
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
 	@ 16-color object-event palette
 	@ unreferenced payload gap: 0x084DD44C-0x084DD46B
 	.byte 0x0E, 0x53, 0x5F, 0x5B, 0xFE, 0x4A, 0x5B, 0x3A, 0x0F, 0x21, 0x9F, 0x5A, 0xBA, 0x3D, 0x11, 0x29

@@ -24,6 +24,7 @@ gMonBackPic_Egg:
   .globl gMonShinyPalette_Egg
 gMonPalette_Egg:
 gMonShinyPalette_Egg:
+	@ ANALYSIS: SEMANTIC_NUMERIC_MON_PALETTE_ASSET
   .incbin "build/graphics/pokemon/egg/shiny_palette.gbapal.lz"
  
   @ ANALYSIS: RAW_RANGE offset=0xD447BD, size=0x1DB

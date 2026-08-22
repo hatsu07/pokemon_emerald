@@ -24,6 +24,7 @@ gBattleTransitionGroudon_Tilemap: @ 0x0859E538
 gBattleTransitionData_0859E850: @ 0x0859E850
 	@ analyzed canonical ROM range 0x0859E850-0x0859E98F
 gBattleTransitionKyogreIntroPaletteFrames: @ 0x0859E850
+	@ ANALYSIS: SEMANTIC_NUMERIC_BATTLE_TRANSITION_PALETTE
 	@ 10 16-color BGR555 palette frames loaded to palette slot 0xF0 by Phase2_Kyogre_Func4
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x001B, 0x0016, 0x0011, 0x000D
 	.2byte 0x0000, 0x0009, 0x000D, 0x0011, 0x0016, 0x001B, 0x001F, 0x0000
@@ -50,6 +51,7 @@ gBattleTransitionKyogreIntroPaletteFrames: @ 0x0859E850
 gBattleTransitionData_0859E990: @ 0x0859E990
 	@ analyzed canonical ROM range 0x0859E990-0x0859EB4F
 gBattleTransitionKyogreFadePaletteFrames: @ 0x0859E990
+	@ ANALYSIS: SEMANTIC_NUMERIC_BATTLE_TRANSITION_PALETTE
 	@ 14 16-color BGR555 palette frames loaded to palette slot 0xF0 by Phase2_Kyogre_Func5
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
@@ -84,6 +86,7 @@ gBattleTransitionKyogreFadePaletteFrames: @ 0x0859E990
 gBattleTransitionData_0859EB50: @ 0x0859EB50
 	@ analyzed canonical ROM range 0x0859EB50-0x0859ED4F
 gBattleTransitionGroudonIntroPaletteFrames: @ 0x0859EB50
+	@ ANALYSIS: SEMANTIC_NUMERIC_BATTLE_TRANSITION_PALETTE
 	@ 16-color BGR555 palette frames loaded to palette slot 0xF0 by Phase2_Groudon_Func4
 	.byte 0x00, 0x00, 0x00, 0x7C, 0xE9, 0x7D, 0xA8, 0x71, 0x67, 0x69, 0x46, 0x61, 0x05, 0x59, 0x05, 0x59
 	.byte 0x46, 0x61, 0x67, 0x69, 0xA8, 0x71, 0xE9, 0x7D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -122,6 +125,7 @@ gBattleTransitionGroudonIntroPaletteFrames: @ 0x0859EB50
 gBattleTransitionData_0859ED50: @ 0x0859ED50
 	@ analyzed canonical ROM range 0x0859ED50-0x0859EF4F
 gBattleTransitionGroudonFadePaletteFrames: @ 0x0859ED50
+	@ ANALYSIS: SEMANTIC_NUMERIC_BATTLE_TRANSITION_PALETTE
 	@ 16-color BGR555 palette frames loaded to palette slot 0xF0 by Phase2_Groudon_Func5
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -160,6 +164,7 @@ gBattleTransitionGroudonFadePaletteFrames: @ 0x0859ED50
 gBattleTransitionData_0859EF50: @ 0x0859EF50
 	@ analyzed canonical ROM range 0x0859EF50-0x0859EFEF
 gBattleTransitionRayquazaPaletteFrames: @ 0x0859EF50
+	@ ANALYSIS: SEMANTIC_NUMERIC_BATTLE_TRANSITION_PALETTE
 	@ first 5 16-color BGR555 palette frames; Phase2_Rayquaza_Func5 continues at frame 5 below
 	.2byte 0x0000, 0x0000, 0x03FF, 0x039C, 0x02B5, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
@@ -176,6 +181,7 @@ gBattleTransitionRayquazaPaletteFrames: @ 0x0859EF50
 gBattleTransitionData_0859EFF0: @ 0x0859EFF0
 	@ analyzed canonical ROM range 0x0859EFF0-0x0859F14F
 gBattleTransitionRayquazaPaletteFrames_Frame5: @ 0x0859EFF0
+	@ ANALYSIS: SEMANTIC_NUMERIC_BATTLE_TRANSITION_PALETTE
 	@ remaining 11 16-color BGR555 palette frames; direct initial load target for Phase2_Rayquaza_Func3
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x03FF, 0x03FF, 0x03FF, 0x03FF
 	.2byte 0x039C, 0x02B5, 0x0000, 0x0000, 0x0000, 0x0000, 0x014A, 0x0000

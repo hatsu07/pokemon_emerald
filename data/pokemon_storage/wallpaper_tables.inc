@@ -30,6 +30,7 @@ sPointerTable_08551868:
 	.4byte gLz77Asset_0854F02C
 	.4byte gLz77Asset_0854EA50 + 0x13C @ entry 20
 sWallpapers: @ 0x085518BC
+	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TABLE
 	@ WALLPAPER_FOREST index 0
 	.4byte sWallpaperTiles_Forest
 	.4byte sWallpaperTilemap_Forest

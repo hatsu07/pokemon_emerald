@@ -5,6 +5,7 @@
 	.globl gExperienceTables
 gExperienceTables: @ 0x082F00B4
 sExperienceTable_MediumFast: @ 0x082F00B4 - Medium Fast
+	@ ANALYSIS: SEMANTIC_NUMERIC_EXPERIENCE_TABLE
 	.4byte 0x00000000, 0x00000001, 0x00000008, 0x0000001B @ levels 0-3
 	.4byte 0x00000040, 0x0000007D, 0x000000D8, 0x00000157 @ levels 4-7
 	.4byte 0x00000200, 0x000002D9, 0x000003E8, 0x00000533 @ levels 8-11
@@ -33,6 +34,7 @@ sExperienceTable_MediumFast: @ 0x082F00B4 - Medium Fast
 	.4byte 0x000F4240 @ levels 100-100
 
 sExperienceTable_Erratic: @ 0x082F0248 - Erratic
+	@ ANALYSIS: SEMANTIC_NUMERIC_EXPERIENCE_TABLE
 	.4byte 0x00000000, 0x00000001, 0x0000000F, 0x00000034 @ levels 0-3
 	.4byte 0x0000007A, 0x000000ED, 0x00000196, 0x0000027D @ levels 4-7
 	.4byte 0x000003AE, 0x0000052E, 0x00000708, 0x00000941 @ levels 8-11
@@ -61,6 +63,7 @@ sExperienceTable_Erratic: @ 0x082F0248 - Erratic
 	.4byte 0x000927C0 @ levels 100-100
 
 sExperienceTable_Fluctuating: @ 0x082F03DC - Fluctuating
+	@ ANALYSIS: SEMANTIC_NUMERIC_EXPERIENCE_TABLE
 	.4byte 0x00000000, 0x00000001, 0x00000004, 0x0000000D @ levels 0-3
 	.4byte 0x00000020, 0x00000041, 0x00000070, 0x000000B2 @ levels 4-7
 	.4byte 0x00000114, 0x00000189, 0x0000021C, 0x000002E9 @ levels 8-11
@@ -89,6 +92,7 @@ sExperienceTable_Fluctuating: @ 0x082F03DC - Fluctuating
 	.4byte 0x00190640 @ levels 100-100
 
 sExperienceTable_MediumSlow: @ 0x082F0570 - Medium Slow
+	@ ANALYSIS: SEMANTIC_NUMERIC_EXPERIENCE_TABLE
 	.4byte 0x00000000, 0x00000001, 0x00000009, 0x00000039 @ levels 0-3
 	.4byte 0x00000060, 0x00000087, 0x000000B3, 0x000000EC @ levels 4-7
 	.4byte 0x0000013A, 0x000001A3, 0x00000230, 0x000002E6 @ levels 8-11
@@ -117,6 +121,7 @@ sExperienceTable_MediumSlow: @ 0x082F0570 - Medium Slow
 	.4byte 0x00102C14 @ levels 100-100
 
 sExperienceTable_Fast: @ 0x082F0704 - Fast
+	@ ANALYSIS: SEMANTIC_NUMERIC_EXPERIENCE_TABLE
 	.4byte 0x00000000, 0x00000001, 0x00000006, 0x00000015 @ levels 0-3
 	.4byte 0x00000033, 0x00000064, 0x000000AC, 0x00000112 @ levels 4-7
 	.4byte 0x00000199, 0x00000247, 0x00000320, 0x00000428 @ levels 8-11
@@ -145,6 +150,7 @@ sExperienceTable_Fast: @ 0x082F0704 - Fast
 	.4byte 0x000C3500 @ levels 100-100
 
 sExperienceTable_Slow: @ 0x082F0898 - Slow
+	@ ANALYSIS: SEMANTIC_NUMERIC_EXPERIENCE_TABLE
 	.4byte 0x00000000, 0x00000001, 0x0000000A, 0x00000021 @ levels 0-3
 	.4byte 0x00000050, 0x0000009C, 0x0000010E, 0x000001AC @ levels 4-7
 	.4byte 0x00000280, 0x0000038F, 0x000004E2, 0x0000067F @ levels 8-11
@@ -173,6 +179,7 @@ sExperienceTable_Slow: @ 0x082F0898 - Slow
 	.4byte 0x001312D0 @ levels 100-100
 
 sExperienceTable_UnusedMediumFast6: @ 0x082F0A2C - Unused JP duplicate of Medium Fast (index 6)
+	@ ANALYSIS: SEMANTIC_NUMERIC_EXPERIENCE_TABLE
 	.4byte 0x00000000, 0x00000001, 0x00000008, 0x0000001B @ levels 0-3
 	.4byte 0x00000040, 0x0000007D, 0x000000D8, 0x00000157 @ levels 4-7
 	.4byte 0x00000200, 0x000002D9, 0x000003E8, 0x00000533 @ levels 8-11
@@ -201,6 +208,7 @@ sExperienceTable_UnusedMediumFast6: @ 0x082F0A2C - Unused JP duplicate of Medium
 	.4byte 0x000F4240 @ levels 100-100
 
 sExperienceTable_UnusedMediumFast7: @ 0x082F0BC0 - Unused JP duplicate of Medium Fast (index 7)
+	@ ANALYSIS: SEMANTIC_NUMERIC_EXPERIENCE_TABLE
 	.4byte 0x00000000, 0x00000001, 0x00000008, 0x0000001B @ levels 0-3
 	.4byte 0x00000040, 0x0000007D, 0x000000D8, 0x00000157 @ levels 4-7
 	.4byte 0x00000200, 0x000002D9, 0x000003E8, 0x00000533 @ levels 8-11

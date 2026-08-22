@@ -56,6 +56,7 @@ gDecorationData_08581AB4: @ 0x08581AB4
 	@ Decoration icon graphics / palette pairs
 	.globl gDecorIconTable
 gDecorIconTable: @ 0x08581ACC
+	@ ANALYSIS: SEMANTIC_NUMERIC_DECOR_ICON_TABLE
 	@ 121 entries, indexed by decoration id
 	.4byte gItemIcon_QuestionMark, gItemIconPalette_QuestionMark @ DECOR_NONE
 	.4byte 0, 0 @ decoration index 1

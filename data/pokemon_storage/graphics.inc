@@ -603,6 +603,7 @@ sWallpaperTiles_City: @ 0x0854F668
 	.byte 0x00, 0x00
 	.globl sWallpaperTilemap_City
 sWallpaperTilemap_City: @ 0x0854FA38
+	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TILEMAP
 	.incbin "build/graphics/pokemon_storage/wallpapers/city/tilemap_rom_exact.tilemap.lz"
 	.byte 0x00
 	.globl sWallpaperPalettes_Desert
@@ -618,6 +619,7 @@ sWallpaperTiles_Desert: @ 0x0854FB78
 	.byte 0x00, 0x00, 0x00
 	.globl sWallpaperTilemap_Desert
 sWallpaperTilemap_Desert: @ 0x0854FE74
+	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TILEMAP
 	.incbin "build/graphics/pokemon_storage/wallpapers/desert/tilemap_rom_exact.tilemap.lz"
 	.byte 0x00
 	.globl sWallpaperPalettes_Savanna
@@ -672,6 +674,7 @@ sWallpaperTiles_Snow: @ 0x08550DA8
 	.byte 0x00, 0x00, 0x00
 	.globl sWallpaperTilemap_Snow
 sWallpaperTilemap_Snow: @ 0x08551024
+	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TILEMAP
 	.incbin "build/graphics/pokemon_storage/wallpapers/snow/tilemap_rom_exact.tilemap.lz"
 	.byte 0x00, 0x00, 0x00
 	.globl sWallpaperPalettes_Cave
@@ -687,6 +690,7 @@ sWallpaperTiles_Cave: @ 0x08551164
 	.byte 0x00, 0x00, 0x00
 	.globl sWallpaperTilemap_Cave
 sWallpaperTilemap_Cave: @ 0x085513B8
+	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TILEMAP
 	.incbin "build/graphics/pokemon_storage/wallpapers/cave/tilemap_rom_exact.tilemap.lz"
 	.byte 0x00
 	.globl sWallpaperPalettes_Beach
@@ -702,6 +706,7 @@ sWallpaperTiles_Beach: @ 0x085514BC
 	.byte 0x00, 0x00, 0x00
 	.globl sWallpaperTilemap_Beach
 sWallpaperTilemap_Beach: @ 0x085515DC
+	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TILEMAP
 	.incbin "build/graphics/pokemon_storage/wallpapers/beach/tilemap_rom_exact.tilemap.lz"
 	.byte 0x00, 0xAD, 0x22, 0xAE, 0x22, 0xAF, 0x22, 0xB0, 0x22, 0xB1, 0x22, 0xB2, 0x22, 0xB3, 0x22, 0xB4
 	.byte 0x22, 0xB5, 0x22, 0xB6, 0x22, 0xAE, 0x22, 0xB7, 0x22, 0xB8, 0x22, 0xB9, 0x22, 0xBA, 0x22, 0xBB

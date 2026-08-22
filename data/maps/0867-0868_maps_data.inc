@@ -4064,6 +4064,7 @@ sSpriteTemplate_ScrollIndicator: @ 0x0857456C
 	rodata_sprite_template 0x0002, 0x0002, sOamData_ScrollIndicator, sAnims_TwoFrame, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 
 sEasyChatJapaneseWordIdTable: @ 0x08574584
+	@ ANALYSIS: SEMANTIC_NUMERIC_EASY_CHAT_WORD_ID_TABLE
 	@ v105 proof: 202 unique u16 values, no interior xref.
 	@ Semantic role remains JP-specific/unproven; keep scalar IDs without guessing a US name.
 	.2byte 0x0187, 0x0124, 0x0164, 0x0077, 0x0118, 0x0186, 0x0178, 0x0137

@@ -10,6 +10,7 @@ gText_Rom_4BE0F1: @ 0x084BE0F1
 	.endif
 	@ analyzed canonical ROM range 0x084BE0F5-0x084CF8AA
 gObjectEventFrameGfx_JP_084BE0F5: @ 0x084BE0F5
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_GRAPHICS
 	@ Object-event / field-effect 4bpp frame payloads proven by struct SpriteFrameImage references.
 	@ 0x084BE0F5-0x084BE12B also lies inside the declared 0x084BDCAC ObjectEvent frame range.
 	.byte 0xFF, 0xFF, 0xFF, 0xFF, 0xDF, 0x88, 0xFD, 0xFF, 0x68, 0x88, 0x86, 0xFF, 0x87, 0x66, 0x78, 0xFF
@@ -18,6 +19,7 @@ gObjectEventFrameGfx_JP_084BE0F5: @ 0x084BE0F5
 	.byte 0xDD, 0xDD, 0x0D, 0xDF, 0xDD, 0xDD, 0x0D
 	.globl gObjectEventPal_JP_084BE12C
 gObjectEventPal_JP_084BE12C: @ 0x084BE12C
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
 	@ 16-color object-event palette
 	.byte 0x0E, 0x53, 0xF0, 0x32, 0xF0, 0x32, 0xF0, 0x32, 0xF0
 	.byte 0x32, 0x9B, 0x77, 0xB4, 0x62, 0xED, 0x4D, 0x27, 0x3D, 0x8B, 0x7E, 0x8B, 0x7D, 0x08, 0x61, 0x08
@@ -44,6 +46,7 @@ gObjectEventFrameGfx_JP_084BE94C: @ 0x084BE94C
 	.incbin "build/graphics/object_events/pics/pokemon/vigoroth.4bpp", 0x800, 0x200 @ gObjectEventPic_Vigoroth frame slice
 	.globl gObjectEventPal_JP_084BEB4C
 gObjectEventPal_JP_084BEB4C: @ 0x084BEB4C
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
 	@ 16-color object-event palette
 	@ unreferenced payload gap: 0x084BEB4C-0x084BEB6B
 	.byte 0x0E, 0x53, 0xBD, 0x77, 0x39, 0x5F, 0xB5, 0x46, 0xAE, 0x25, 0x94, 0x4E, 0x31, 0x42, 0xEE, 0x39
@@ -90,6 +93,7 @@ gObjectEventFrameGfx_JP_084BFBEC: @ 0x084BFBEC
 	.incbin "build/graphics/object_events/pics/pokemon/enemy_zigzagoon.4bpp", 0x1000, 0x200 @ gObjectEventPic_EnemyZigzagoon frame slice
 	.globl gObjectEventPal_JP_084BFDEC
 gObjectEventPal_JP_084BFDEC: @ 0x084BFDEC
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
 	@ 16-color object-event palette
 	@ unreferenced payload gap: 0x084BFDEC-0x084BFE0B
 	.byte 0x0E, 0x53, 0x7F, 0x67, 0xDD, 0x52, 0x19, 0x3A, 0x6F, 0x29, 0x32, 0x4E, 0xAE, 0x3D, 0x07, 0x29
@@ -132,6 +136,7 @@ gObjectEventFrameGfx_JP_084C0E0C: @ 0x084C0E0C
 	.incbin "build/graphics/object_events/pics/pokemon/poochyena.4bpp", 0x1000, 0x200 @ gObjectEventPic_Poochyena frame slice
 	.globl gObjectEventPal_JP_084C100C
 gObjectEventPal_JP_084C100C: @ 0x084C100C
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
 	@ 16-color object-event palette
 	@ unreferenced payload gap: 0x084C100C-0x084C102B
 	.byte 0x0E, 0x53, 0x7F, 0x67, 0x9B, 0x4A, 0x19, 0x3A, 0x6F, 0x29, 0x32, 0x4E, 0xAE, 0x3D, 0x07, 0x29
@@ -142,6 +147,7 @@ gObjectEventFrameGfx_JP_084C102C: @ 0x084C102C
 	.incbin "build/graphics/object_events/pics/misc/cable_car.4bpp", 0x0, 0x800 @ gObjectEventPic_CableCar frame slice
 	.globl gObjectEventPal_JP_084C182C
 gObjectEventPal_JP_084C182C: @ 0x084C182C
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
 	@ 16-color object-event palette
 	@ unreferenced payload gap: 0x084C182C-0x084C184B
 	.byte 0x00, 0x00, 0xFF, 0x7F, 0x74, 0x6F, 0x2C, 0x46, 0xD1, 0x5A, 0x10, 0x46, 0x8C, 0x3D, 0x28, 0x35
@@ -152,6 +158,7 @@ gObjectEventFrameGfx_JP_084C184C: @ 0x084C184C
 	.incbin "build/graphics/object_events/pics/misc/ss_tidal.4bpp", 0x0, 0x780 @ gObjectEventPic_SSTidal frame slice
 	.globl gObjectEventPal_JP_084C1FCC
 gObjectEventPal_JP_084C1FCC: @ 0x084C1FCC
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
 	@ 16-color object-event palette
 	@ unreferenced payload gap: 0x084C1FCC-0x084CDE6B
 	.byte 0xE0, 0x61, 0xDD, 0x7F, 0x9B, 0x77, 0x37, 0x73, 0x93, 0x5E, 0x31, 0x4E, 0x8C, 0x3D, 0x28, 0x35
@@ -934,6 +941,7 @@ gObjectEventFrameGfx_JP_084CD66C: @ 0x084CD66C
 	.incbin "build/graphics/object_events/pics/berry_trees/tamato.4bpp", 0x400, 0x100 @ gObjectEventPic_TamatoBerryTree frame slice
 	.globl gObjectEventFrameGfx_JP_084CD76C
 gObjectEventFrameGfx_JP_084CD76C: @ 0x084CD76C
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_GRAPHICS
 	@ 4bpp frame payload; byte size = 0x100 from SpriteFrameImage
 	.incbin "build/graphics/object_events/pics/berry_trees/tamato.4bpp", 0x500, 0x100 @ gObjectEventPic_TamatoBerryTree frame slice
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
@@ -1062,6 +1070,7 @@ gObjectEventFrameGfx_JP_084CEA6C: @ 0x084CEA6C
 	.incbin "build/graphics/object_events/pics/people/quinty_plump.4bpp", 0xC00, 0x200 @ gObjectEventPic_QuintyPlump frame slice
 	.globl gObjectEventPal_JP_084CEC6C
 gObjectEventPal_JP_084CEC6C: @ 0x084CEC6C
+	@ ANALYSIS: SEMANTIC_NUMERIC_OBJECT_EVENT_PALETTE
 	@ 16-color object-event palette
 	@ unreferenced payload gap: 0x084CEC6C-0x084CF8AA
 	.byte 0x00, 0x00, 0xA5, 0x10, 0xA5, 0x14, 0x6B, 0x29, 0x31, 0x3A, 0xD6, 0x52, 0x7A, 0x0A, 0x1D, 0x0B

@@ -12,6 +12,7 @@ gText_Rom_578989: @ 0x08578989
 	@ struct EasyChatWordInfo[]; format verified against every 12-byte record
 	.globl gEasyChatGroup_TrendySaying
 gEasyChatGroup_TrendySaying: @ 0x08578990
+	@ ANALYSIS: SEMANTIC_NUMERIC_EASY_CHAT_GROUP
 	easy_chat_word_info gText_Rom_5788E0, 0, 1 @ word 0
 	easy_chat_word_info gText_Rom_5788E5, 1, 1 @ word 1
 	easy_chat_word_info gText_Rom_5788EC, 2, 1 @ word 2

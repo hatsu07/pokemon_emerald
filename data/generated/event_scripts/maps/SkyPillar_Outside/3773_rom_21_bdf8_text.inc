@@ -31,6 +31,7 @@ gText_Rom_21BDF8: @ 0x0821BDF8
 	.byte 0x96, 0x01, 0x02, 0x00, 0x28, 0x28, 0x00, 0xC5
 
 gRayquazaStaticEncounter::
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	setwildbattle SPECIES_RAYQUAZA, 70, ITEM_NONE
 
 	@ Embedded ROM bytes: file offset 0x21BFA3, size 0x12D
