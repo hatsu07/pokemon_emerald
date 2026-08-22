@@ -17,6 +17,7 @@ sys.path.insert(
 )
 
 from lz77_exact import repack_raw_with_plan
+from png_to_palette import png_to_gba_palette
 
 
 def load_manifest(path: Path) -> dict:
@@ -223,6 +224,7 @@ def main() -> None:
             "8bpp",
             "pal",
             "u16",
+            "pngpal",
         ],
     )
 
@@ -270,9 +272,14 @@ def main() -> None:
             Path(args.input),
             raw_size // 2,
         )
-    else:
+    elif args.command == "u16":
         raw = parse_u16(
             Path(args.input)
+        )
+    else:
+        raw = png_to_gba_palette(
+            Path(args.input),
+            color_count=raw_size // 2,
         )
 
     if len(raw) != raw_size:

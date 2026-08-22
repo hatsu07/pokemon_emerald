@@ -1829,15 +1829,16 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/rayquaza_scene/scene_3/bg[.]gbapal[.]lz$")
         set(INPUT_PAL
-            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_3/bg.pal.inc")
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_3/bg_palette.png")
         set(RAY_SCENE3_PLAN
             "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_3/rayquaza_scene3_lz77_plan.json")
+        # Editable RGB palette PNG; pngpal restores exact BGR555 before exact LZ77 repack.
         add_custom_command(
             OUTPUT "${OUTPUT_ABS}"
             COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
             COMMAND "${Python3_EXECUTABLE}"
                 "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene3_exact_assets.py"
-                u16
+                pngpal
                 --manifest "${RAY_SCENE3_PLAN}"
                 --key "bg_pal"
                 "${INPUT_PAL}" "${OUTPUT_ABS}"
@@ -2020,15 +2021,16 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/rayquaza_scene/scene_5/bg[.]gbapal[.]lz$")
         set(INPUT_PAL
-            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_5/bg.pal.inc")
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_5/bg_palette.png")
         set(RAY_SCENE5_PLAN
             "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_5/rayquaza_scene5_lz77_plan.json")
+        # Editable RGB palette PNG; pngpal restores exact BGR555 before exact LZ77 repack.
         add_custom_command(
             OUTPUT "${OUTPUT_ABS}"
             COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
             COMMAND "${Python3_EXECUTABLE}"
                 "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene5_exact_assets.py"
-                u16
+                pngpal
                 --manifest "${RAY_SCENE5_PLAN}"
                 --key "bg_pal"
                 "${INPUT_PAL}" "${OUTPUT_ABS}"

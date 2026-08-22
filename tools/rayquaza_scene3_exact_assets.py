@@ -13,6 +13,7 @@ from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from lz77_exact import repack_raw_with_plan
+from png_to_palette import png_to_gba_palette
 
 
 def load_manifest(path: Path) -> dict:
@@ -80,7 +81,7 @@ def parse_u16(path: Path) -> bytes:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("command", choices=["4bpp", "u16"])
+    ap.add_argument("command", choices=["4bpp", "u16", "pngpal"])
     ap.add_argument("--manifest", required=True)
     ap.add_argument("--key", required=True)
     ap.add_argument("input")
@@ -97,8 +98,13 @@ def main() -> None:
         raw = encode_4bpp(Path(args.input), pixel_bytes)
         extra = int(meta.get("extra_zero_bytes", 0))
         raw += b"\0" * extra
-    else:
+    elif args.command == "u16":
         raw = parse_u16(Path(args.input))
+    else:
+        raw = png_to_gba_palette(
+            Path(args.input),
+            color_count=raw_size // 2,
+        )
 
     if len(raw) != raw_size:
         raise ValueError(
