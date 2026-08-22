@@ -736,6 +736,7 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
 
     # BEGIN SLOT MACHINE SEMANTIC TILEMAP PIPELINE
     # BEGIN WALLPAPER ICON EXACT LZ77 BATCH10
+    # EXPANDED WALLPAPER ICON SET BATCH18
     # BEGIN TRAINER BACK PALETTE EXACT LZ77 BATCH11
     # BEGIN MON MARKINGS PNG PIPELINE BATCH12
     # BEGIN TRAINER HILL RECORDS ASSETS BATCH13
@@ -981,7 +982,7 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # END TRAINER BACK PALETTE EXACT LZ77 BATCH11
 
     elseif("${RELATIVE_OUTPUT}" MATCHES
-            "^build/graphics/pokemon_storage/wallpapers/icons/(cross|bolt|plusle)_rom_exact[.]4bpp[.]lz$")
+            "^build/graphics/pokemon_storage/wallpapers/icons/(cross|bolt|plusle|aqua|heart|five_star|brick|four_star|asterisk|dot|line_circle|pokeball|maze|footprint|big_asterisk|circle|koffing|ribbon|four_circles|lotad|crystal|pichu|diglett|luvdisc|star_in_circle|spinda|latis|minun|togepi|magma)_rom_exact[.]4bpp[.]lz$")
         set(WALLPAPER_ICON_STEM "${CMAKE_MATCH_1}")
         set(WALLPAPER_ICON_INPUT
             "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/icons/${WALLPAPER_ICON_STEM}.png")
