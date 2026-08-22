@@ -1,0 +1,19 @@
+{
+  "entries": {
+    "leaf": {
+      "backrefs": [],
+      "compressed_size": 40,
+      "decompressed_size": 32,
+      "flags": "0x00 0x00 0x00 0x00",
+      "tail": ""
+    },
+    "red": {
+      "backrefs": [],
+      "compressed_size": 40,
+      "decompressed_size": 32,
+      "flags": "0x00 0x00 0x00 0x00",
+      "tail": ""
+    }
+  },
+  "format": "pokeemerald-jp-exact-lz77-plan-v1"
+}

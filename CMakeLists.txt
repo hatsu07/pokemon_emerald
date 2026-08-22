@@ -730,6 +730,32 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
 
     # BEGIN SLOT MACHINE SEMANTIC TILEMAP PIPELINE
     # BEGIN WALLPAPER ICON EXACT LZ77 BATCH10
+    # BEGIN TRAINER BACK PALETTE EXACT LZ77 BATCH11
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/trainers/back_pics/(red|leaf)_palette_rom_exact[.]gbapal[.]lz$")
+        set(TRAINER_BACK_PAL_STEM "${CMAKE_MATCH_1}")
+        set(TRAINER_BACK_PAL_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/trainers/back_pics/${TRAINER_BACK_PAL_STEM}_palette.png")
+        set(TRAINER_BACK_PAL_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/trainers/back_pics/trainer_back_palettes_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/trainer_back_palette_exact.py"
+                --manifest "${TRAINER_BACK_PAL_PLAN}"
+                --stem "${TRAINER_BACK_PAL_STEM}"
+                "${TRAINER_BACK_PAL_INPUT}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${TRAINER_BACK_PAL_INPUT}"
+                "${TRAINER_BACK_PAL_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/trainer_back_palette_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+    # END TRAINER BACK PALETTE EXACT LZ77 BATCH11
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/pokemon_storage/wallpapers/icons/(cross|bolt|plusle)_rom_exact[.]4bpp[.]lz$")
         set(WALLPAPER_ICON_STEM "${CMAKE_MATCH_1}")
