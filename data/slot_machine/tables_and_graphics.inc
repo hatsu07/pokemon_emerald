@@ -589,59 +589,109 @@ sImageTable_PikaPowerBolt: @ 0x08584A78
 	.4byte 0x00000020 @ image[0] size
 
 	@ Sprite animation command arrays
+	@ Semantic GBA Sprite AnimCmd emitters.
+	@ Each command is {u16 frame, u16 duration}.
+	.macro slot_machine_anim_frame frame, duration
+		.2byte \frame, \duration
+	.endm
+
+	.macro slot_machine_anim_end
+		.2byte 0xFFFF, 0
+	.endm
+
+	.macro slot_machine_anim_jump target
+		.2byte 0xFFFE, \target
+	.endm
+
 sAnim_SingleFrame: @ 0x08584A80
-	.byte 0x00, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 0, 1
+	slot_machine_anim_end
 sAnim_ReelTimeDuck: @ 0x08584A88
-	.byte 0x00, 0x00, 0x01, 0x00, 0xFE, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 0, 1
+	slot_machine_anim_jump 0
 sAnim_ReelTimePikachu_Still: @ 0x08584A90
-	.byte 0x00, 0x00, 0x10, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 0, 16
+	slot_machine_anim_end
 sAnim_ReelTimePikachu_ChargingSlow: @ 0x08584A98
-	.byte 0x01, 0x00, 0x10, 0x00, 0x00, 0x00, 0x10, 0x00, 0xFE, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 1, 16
+	slot_machine_anim_frame 0, 16
+	slot_machine_anim_jump 0
 sAnim_ReelTimePikachu_ChargingMedium: @ 0x08584AA4
-	.byte 0x01, 0x00, 0x08, 0x00, 0x00, 0x00, 0x08, 0x00, 0xFE, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 1, 8
+	slot_machine_anim_frame 0, 8
+	slot_machine_anim_jump 0
 sAnim_ReelTimePikachu_ChargingFast: @ 0x08584AB0
-	.byte 0x01, 0x00, 0x04, 0x00, 0x00, 0x00, 0x04, 0x00, 0xFE, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 1, 4
+	slot_machine_anim_frame 0, 4
+	slot_machine_anim_jump 0
 sAnim_ReelTimePikachu_Cheering: @ 0x08584ABC
-	.byte 0x02, 0x00, 0x20, 0x00, 0x03, 0x00, 0x20, 0x00, 0xFE, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 2, 32
+	slot_machine_anim_frame 3, 32
+	slot_machine_anim_jump 0
 sAnim_ReelTimePikachu_FellOver: @ 0x08584AC8
-	.byte 0x04, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 4, 1
+	slot_machine_anim_end
 sAnim_ReelTimeNumber_0: @ 0x08584AD0
-	.byte 0x00, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 0, 1
+	slot_machine_anim_end
 sAnim_ReelTimeNumber_1: @ 0x08584AD8
-	.byte 0x01, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 1, 1
+	slot_machine_anim_end
 sAnim_ReelTimeNumber_2: @ 0x08584AE0
-	.byte 0x02, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 2, 1
+	slot_machine_anim_end
 sAnim_ReelTimeNumber_3: @ 0x08584AE8
-	.byte 0x03, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 3, 1
+	slot_machine_anim_end
 sAnim_ReelTimeNumber_4: @ 0x08584AF0
-	.byte 0x04, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 4, 1
+	slot_machine_anim_end
 sAnim_ReelTimeNumber_5: @ 0x08584AF8
-	.byte 0x05, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 5, 1
+	slot_machine_anim_end
 sAnim_ReelTimeBolt: @ 0x08584B00
-	.byte 0x00, 0x00, 0x04, 0x00, 0x01, 0x00, 0x04, 0x00, 0xFE, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 0, 4
+	slot_machine_anim_frame 1, 4
+	slot_machine_anim_jump 0
 sAnim_ReelTimeExplosion: @ 0x08584B0C
-	.byte 0x00, 0x00, 0x10, 0x00, 0x01, 0x00, 0x10, 0x00, 0xFE, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 0, 16
+	slot_machine_anim_frame 1, 16
+	slot_machine_anim_jump 0
 sAnim_DigitalDisplay_AButton_Flashing: @ 0x08584B18
-	.byte 0x00, 0x00, 0x1E, 0x00, 0x01, 0x00, 0x1E, 0x00, 0xFE, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 0, 30
+	slot_machine_anim_frame 1, 30
+	slot_machine_anim_jump 0
 sAnim_DigitalDisplay_AButton_Static: @ 0x08584B24
-	.byte 0x01, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 1, 1
+	slot_machine_anim_end
 sAnim_DigitalDisplay_DPad_Flashing: @ 0x08584B2C
-	.byte 0x00, 0x00, 0x1E, 0x00, 0x01, 0x00, 0x1E, 0x00, 0xFE, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 0, 30
+	slot_machine_anim_frame 1, 30
+	slot_machine_anim_jump 0
 sAnim_DigitalDisplay_Pokeball_Rocking: @ 0x08584B38
-	.byte 0x00, 0x00, 0x10, 0x00, 0x01, 0x00, 0x10, 0x00, 0x00, 0x00, 0x10, 0x00, 0x01, 0x00, 0x50, 0x00
-	.byte 0xFE, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 0, 16
+	slot_machine_anim_frame 1, 16
+	slot_machine_anim_frame 0, 16
+	slot_machine_anim_frame 1, 80
+	slot_machine_anim_jump 0
 sAnim_DigitalDisplay_Pokeball_Static: @ 0x08584B4C
-	.byte 0x00, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 0, 1
+	slot_machine_anim_end
 sAnim_DigitalDisplay_Number_1: @ 0x08584B54
-	.byte 0x00, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 0, 1
+	slot_machine_anim_end
 sAnim_DigitalDisplay_Number_2: @ 0x08584B5C
-	.byte 0x01, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 1, 1
+	slot_machine_anim_end
 sAnim_DigitalDisplay_Number_3: @ 0x08584B64
-	.byte 0x02, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 2, 1
+	slot_machine_anim_end
 sAnim_DigitalDisplay_Number_4: @ 0x08584B6C
-	.byte 0x03, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 3, 1
+	slot_machine_anim_end
 sAnim_DigitalDisplay_Number_5: @ 0x08584B74
-	.byte 0x04, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	slot_machine_anim_frame 4, 1
+	slot_machine_anim_end
 
 	@ Sprite animation pointer tables
 sAnims_SingleFrame: @ 0x08584B7C
@@ -887,45 +937,74 @@ sSpriteTemplate_DigitalDisplay_DPad: @ 0x08584F04
 	.globl sSpriteTemplate_PikaPowerBolt
 sSpriteTemplate_PikaPowerBolt: @ 0x08584F1C
 	rodata_sprite_template 0xFFFF, 0x0004, 0x085849C0, 0x08584B7C, 0x08584A78, 0x08584C60, sub_0812EF64
+	@ Semantic ReelTime Subsprite emitters.
+	.set REELTIME_SUBSPRITE_SHAPE_SQUARE,     0
+	.set REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, 1
+	.set REELTIME_SUBSPRITE_SHAPE_VERTICAL,   2
+	.set REELTIME_SUBSPRITE_SIZE_0, 0
+	.set REELTIME_SUBSPRITE_SIZE_1, 1
+	.set REELTIME_SUBSPRITE_SIZE_2, 2
+	.set REELTIME_SUBSPRITE_SIZE_3, 3
+
+	.macro slot_machine_reeltime_subsprite x, y, shape, size, tile_offset, priority
+		.byte \x, \y
+		.2byte ((\shape) & 3) | (((\size) & 3) << 2) | (((\tile_offset) & 0x3FF) << 4) | (((\priority) & 3) << 14)
+	.endm
+
+	.macro slot_machine_reeltime_subsprite_table count, subsprites
+		.byte \count, 0, 0, 0
+		.4byte \subsprites
+	.endm
+
 sSubsprites_ReelBackground: @ 0x08584F34
-	.byte 0xC0, 0xC0, 0x0C, 0xC0, 0x00, 0xC0, 0x0C, 0xC0
-	.byte 0xC0, 0x00, 0x0C, 0xC0, 0x00, 0x00, 0x0C, 0xC0
+	slot_machine_reeltime_subsprite -64, -64, REELTIME_SUBSPRITE_SHAPE_SQUARE, REELTIME_SUBSPRITE_SIZE_3, 0, 3
+	slot_machine_reeltime_subsprite 0, -64, REELTIME_SUBSPRITE_SHAPE_SQUARE, REELTIME_SUBSPRITE_SIZE_3, 0, 3
+	slot_machine_reeltime_subsprite -64, 0, REELTIME_SUBSPRITE_SHAPE_SQUARE, REELTIME_SUBSPRITE_SIZE_3, 0, 3
+	slot_machine_reeltime_subsprite 0, 0, REELTIME_SUBSPRITE_SHAPE_SQUARE, REELTIME_SUBSPRITE_SIZE_3, 0, 3
 	.globl sSubspriteTable_ReelBackground
 sSubspriteTable_ReelBackground: @ 0x08584F44
-	.byte 0x04, 0x00, 0x00, 0x00
-	.4byte sSubsprites_ReelBackground
+	slot_machine_reeltime_subsprite_table 4, sSubsprites_ReelBackground
 sSubsprites_ReelTimeMachineAntennae: @ 0x08584F4C
-	.byte 0xE0, 0xF4, 0x05, 0x40, 0x00, 0xF4, 0x45, 0x40, 0xE0, 0xFC, 0x85, 0x40, 0x00, 0xFC, 0xC5, 0x40
-	.byte 0xE0, 0x04, 0x05, 0x41, 0x00, 0x04, 0x45, 0x41
+	slot_machine_reeltime_subsprite -32, -12, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 0, 1
+	slot_machine_reeltime_subsprite 0, -12, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 4, 1
+	slot_machine_reeltime_subsprite -32, -4, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 8, 1
+	slot_machine_reeltime_subsprite 0, -4, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 12, 1
+	slot_machine_reeltime_subsprite -32, 4, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 16, 1
+	slot_machine_reeltime_subsprite 0, 4, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 20, 1
 	.globl sSubspriteTable_ReelTimeMachineAntennae
 sSubspriteTable_ReelTimeMachineAntennae: @ 0x08584F64
-	.byte 0x06, 0x00, 0x00, 0x00
-	.4byte sSubsprites_ReelTimeMachineAntennae
+	slot_machine_reeltime_subsprite_table 6, sSubsprites_ReelTimeMachineAntennae
 sSubsprites_ReelTimeMachine: @ 0x08584F6C
-	.byte 0xE0, 0xEC, 0x0D, 0x40, 0xE0, 0x0C, 0x05, 0x42, 0x00, 0x0C, 0x45, 0x42
+	slot_machine_reeltime_subsprite -32, -20, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_3, 0, 1
+	slot_machine_reeltime_subsprite -32, 12, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 32, 1
+	slot_machine_reeltime_subsprite 0, 12, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 36, 1
 	.globl sSubspriteTable_ReelTimeMachine
 sSubspriteTable_ReelTimeMachine: @ 0x08584F78
-	.byte 0x03, 0x00, 0x00, 0x00
-	.4byte sSubsprites_ReelTimeMachine
+	slot_machine_reeltime_subsprite_table 3, sSubsprites_ReelTimeMachine
 sSubsprites_BrokenReelTimeMachine: @ 0x08584F80
-	.byte 0xE0, 0xE8, 0x0D, 0x40, 0xE0, 0x08, 0x05, 0x42, 0x00, 0x08, 0x45, 0x42, 0xE0, 0x10, 0x85, 0x42
-	.byte 0x00, 0x10, 0xC5, 0x42
+	slot_machine_reeltime_subsprite -32, -24, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_3, 0, 1
+	slot_machine_reeltime_subsprite -32, 8, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 32, 1
+	slot_machine_reeltime_subsprite 0, 8, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 36, 1
+	slot_machine_reeltime_subsprite -32, 16, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 40, 1
+	slot_machine_reeltime_subsprite 0, 16, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 44, 1
 	.globl sSubspriteTable_BrokenReelTimeMachine
 sSubspriteTable_BrokenReelTimeMachine: @ 0x08584F94
-	.byte 0x05, 0x00, 0x00, 0x00
-	.4byte sSubsprites_BrokenReelTimeMachine
+	slot_machine_reeltime_subsprite_table 5, sSubsprites_BrokenReelTimeMachine
 sSubsprites_ReelTimeShadow: @ 0x08584F9C
-	.byte 0xE0, 0xF8, 0x05, 0x40, 0x00, 0xF8, 0x45, 0x40, 0xE0, 0x00, 0x85, 0x40, 0x00, 0x00, 0xC5, 0x40
+	slot_machine_reeltime_subsprite -32, -8, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 0, 1
+	slot_machine_reeltime_subsprite 0, -8, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 4, 1
+	slot_machine_reeltime_subsprite -32, 0, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 8, 1
+	slot_machine_reeltime_subsprite 0, 0, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_1, 12, 1
 	.globl sSubspriteTable_ReelTimeShadow
 sSubspriteTable_ReelTimeShadow: @ 0x08584FAC
-	.byte 0x04, 0x00, 0x00, 0x00
-	.4byte sSubsprites_ReelTimeShadow
+	slot_machine_reeltime_subsprite_table 4, sSubsprites_ReelTimeShadow
 sSubsprites_ReelTimeNumberGap: @ 0x08584FB4
-	.byte 0xF8, 0xF4, 0x01, 0x40, 0xF8, 0xFC, 0x01, 0x40, 0xF8, 0x04, 0x01, 0x40
+	slot_machine_reeltime_subsprite -8, -12, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_0, 0, 1
+	slot_machine_reeltime_subsprite -8, -4, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_0, 0, 1
+	slot_machine_reeltime_subsprite -8, 4, REELTIME_SUBSPRITE_SHAPE_HORIZONTAL, REELTIME_SUBSPRITE_SIZE_0, 0, 1
 	.globl sSubspriteTable_ReelTimeNumberGap
 sSubspriteTable_ReelTimeNumberGap: @ 0x08584FC0
-	.byte 0x03, 0x00, 0x00, 0x00
-	.4byte sSubsprites_ReelTimeNumberGap
+	slot_machine_reeltime_subsprite_table 3, sSubsprites_ReelTimeNumberGap
 @ Semantic struct Subsprite / SubspriteTable emitters.
 @ struct Subsprite:
 @   s8 x, s8 y, shape:2, size:2, tileOffset:10, priority:2
